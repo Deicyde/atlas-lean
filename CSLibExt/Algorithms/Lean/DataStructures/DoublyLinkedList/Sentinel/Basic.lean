@@ -25,13 +25,7 @@ namespace Cslib.Algorithms.Lean.DoublyLinkedList
 
 universe u
 
-/-- **Circular doubly linked list with a sentinel.** Let $S$ be a store of $n$ slots indexed by
-$\{0, \dots, n-1\}$, each either empty or holding a node with a payload and optional next and
-previous indices. The store $S$ represents a circular list with sentinel $s$ and data nodes
-$x_1, \dots, x_k$ (a list of indices) when the $x_i$ are pairwise distinct and all differ from
-$s$; slot $s$ holds a node whose next index is $x_1$ and whose previous index is $x_k$ (both
-are $s$ when $k = 0$); and for every $i$ with $1 \le i \le k$, slot $x_i$ holds a node whose
-previous index is $x_{i-1}$ and whose next index is $x_{i+1}$, where $x_0 = x_{k+1} = s$. -/
+/-- Allocated circular sentinel and exact links at every ordered data-node split. -/
 def CircularRepresents {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (s : Fin capacity) (ids : List (Fin capacity)) : Prop :=
@@ -42,11 +36,7 @@ def CircularRepresents {α : Type u} {capacity : Nat}
       ids = before ++ a :: after → ∃ node, store.get a = some node ∧
         node.prev = some (before.getLastD s) ∧ node.next = some (after.headD s)
 
-/-- **Empty circular list with a sentinel.** Let $S$ be a store of $n$ slots indexed by
-$\{0, \dots, n-1\}$, each either empty or holding a node with a payload and optional next and
-previous indices, and let $s$ be an index. Then $S$ represents the empty circular list with
-sentinel $s$ if and only if slot $s$ holds a node whose next index and previous index are both
-$s$. -/
+/-- The empty circle consists of an allocated self-linked sentinel. -/
 public theorem CircularRepresents_nil {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity) (s : Fin capacity) :
     CircularRepresents store s [] ↔

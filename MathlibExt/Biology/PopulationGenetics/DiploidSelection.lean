@@ -146,7 +146,7 @@ private lemma diploidSelect_facts {p : ι → ℝ} {w : ι → ι → ℝ} (hp0 
     mul_nonneg (div_nonneg (add_nonneg (hw0 i j) (hw0 j i)) zero_le_two) (hp0 j))) hpos.le,
     fun i hi => by simp [diploidSelect, hi], sum_diploidSelect hpos.ne'⟩
 
-/-- **Mean fitness stays positive under diploid selection.** Mean fitness stays positive after one generation of diploid viability selection (for
+/-- Mean fitness stays positive after one generation of diploid viability selection (for
 nonnegative frequencies and fitnesses; normalization is not needed). -/
 theorem diploidMeanFitness_diploidSelect_pos {p : ι → ℝ} {w : ι → ι → ℝ}
     (hp0 : ∀ i, 0 ≤ p i) (hw0 : ∀ i j, 0 ≤ w i j)
@@ -324,7 +324,7 @@ theorem diploidMeanFitness_le_diploidMeanFitness_diploidSelect {p : ι → ℝ} 
   have hpos' := diploidMeanFitness_diploidSelect_pos hp0 hw0 hpos
   exact (Real.log_le_log_iff hpos hpos').1 (by linarith)
 
-/-- **Mean fitness is unchanged exactly at selection equilibria.** Mean fitness is unchanged by one generation of selection exactly when the allele
+/-- Mean fitness is unchanged by one generation of selection exactly when the allele
 frequencies are at an equilibrium of the selection map. -/
 theorem diploidMeanFitness_diploidSelect_eq_iff {p : ι → ℝ} {w : ι → ι → ℝ}
     (hp0 : ∀ i, 0 ≤ p i) (hp : ∑ i, p i = 1) (hw0 : ∀ i j, 0 ≤ w i j)
@@ -338,7 +338,7 @@ theorem diploidMeanFitness_diploidSelect_eq_iff {p : ι → ℝ} {w : ι → ι 
   rw [heq, sub_self] at h
   exact eq_of_relEntropy_eq_zero hs0 hp0 hsupp (by rw [hs1, hp]) (by linarith)
 
-/-- **Diploid selection strictly increases mean fitness off equilibria.** Away from equilibria, mean fitness strictly increases under diploid viability selection. -/
+/-- Away from equilibria, mean fitness strictly increases under diploid viability selection. -/
 theorem diploidMeanFitness_lt_diploidMeanFitness_diploidSelect {p : ι → ℝ} {w : ι → ι → ℝ}
     (hp0 : ∀ i, 0 ≤ p i) (hp : ∑ i, p i = 1) (hw0 : ∀ i j, 0 ≤ w i j)
     (hpos : 0 < diploidMeanFitness p w) (hne : diploidSelect p w ≠ p) :
@@ -349,7 +349,7 @@ theorem diploidMeanFitness_lt_diploidMeanFitness_diploidSelect {p : ι → ℝ} 
 
 /-! ### Two alleles: Wright's formula -/
 
-/-- **Derivative of two-allele mean fitness.** For two alleles with frequencies `(x, 1 - x)`, the mean fitness
+/-- For two alleles with frequencies `(x, 1 - x)`, the mean fitness
 `w̄(x) = x² w₀₀ + x (1 - x) (w₀₁ + w₁₀) + (1 - x)² w₁₁` has derivative `2 (m₀ - m₁)`, twice the
 difference of the marginal fitnesses. This holds for every real `x`. -/
 theorem hasDerivAt_diploidMeanFitness_two (w : Fin 2 → Fin 2 → ℝ) (x : ℝ) :

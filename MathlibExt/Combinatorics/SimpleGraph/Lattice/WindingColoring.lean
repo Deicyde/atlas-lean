@@ -52,11 +52,11 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Symmetry of a flip relation on lattice edges.** The flip relation is symmetric on lattice edges. -/
+/-- The flip relation is symmetric on lattice edges. -/
 def wcl_SymmFlip (flip : Site 2 → Site 2 → Prop) : Prop :=
   ∀ a b, (hypercubicLattice 2).Adj a b → (flip a b ↔ flip b a)
 
-/-- **Number of flips along a lattice walk.** The number of steps of the walk `w` that are flips (in either direction). -/
+/-- The number of steps of the walk `w` that are flips (in either direction). -/
 noncomputable def wcl_flipCount (flip : Site 2 → Site 2 → Prop) {x y : Site 2}
     (w : (hypercubicLattice 2).Walk x y) : ℕ := by
   classical
@@ -93,7 +93,7 @@ theorem wcl_flipCount_reverse (flip : Site 2 → Site 2 → Prop) {x y : Site 2}
   classical
   rw [wcl_flipCount, wcl_flipCount, SimpleGraph.Walk.edges_reverse, List.countP_reverse]
 
-/-- **Even-flip condition on closed lattice walks.** Every closed lattice walk has an even number of flips. -/
+/-- Every closed lattice walk has an even number of flips. -/
 def wcl_ClosedEven (flip : Site 2 → Site 2 → Prop) : Prop :=
   ∀ {x : Site 2} (w : (hypercubicLattice 2).Walk x x), Even (wcl_flipCount flip w)
 
@@ -106,11 +106,11 @@ theorem wcl_flipCount_parity_eq_of_closedEven (flip : Site 2 → Site 2 → Prop
   rcases hloop with ⟨k, hk⟩
   omega
 
-/-- **Chosen lattice walk between two faces.** A fixed lattice walk from `o` to `f`, chosen using connectedness of `ℤ²`. -/
+/-- A fixed lattice walk from `o` to `f`, chosen using connectedness of `ℤ²`. -/
 noncomputable def wcl_chosenWalk (o f : Site 2) : (hypercubicLattice 2).Walk o f :=
   (hypercubicLattice_two_reachable o f).some
 
-/-- **Face coloring by parity of flips.** The face coloring given by the parity of the number of flips along the chosen walk from `o`. -/
+/-- The face coloring given by the parity of the number of flips along the chosen walk from `o`. -/
 noncomputable def wcl_windingColoring (flip : Site 2 → Site 2 → Prop) (o : Site 2) :
     Site 2 → Prop :=
   fun f => Odd (wcl_flipCount flip (wcl_chosenWalk o f))
@@ -148,7 +148,7 @@ theorem wcl_windingColoring_compat (flip : Site 2 → Site 2 → Prop)
   · rw [ite_eq_right (fun hh => h (hor.mp hh)), add_zero]
     simp only [h, false_iff, not_iff]
 
-/-- **Cut flip relation of a lattice graph and a dual edge.** The cut flip relation: steps across a dual edge of `H` or across the extra dual edge `f0g0`. -/
+/-- The cut flip relation: steps across a dual edge of `H` or across the extra dual edge `f0g0`. -/
 def wcl_cutFlip (H : SimpleGraph (Site 2)) (f0 g0 : Site 2) (a b : Site 2) : Prop :=
   whc_isCross H a b ∨ s(a, b) = s(f0, g0)
 
@@ -220,7 +220,7 @@ theorem wcl_exists_cutColoring_iff_closedEven (H : SimpleGraph (Site 2)) (f0 g0 
     exact ⟨wcl_windingColoring (wcl_cutFlip H f0 g0) ![0, 0],
       wcl_windingColoring_isCutColoring H f0 g0 hce ![0, 0]⟩
 
-/-- **Closed walk around a unit square.** The closed walk around the unit square with corners `(0, 0)` and `(1, -1)`. -/
+/-- The closed walk around the unit square with corners `(0, 0)` and `(1, -1)`. -/
 noncomputable def wcl_squareLoop : (hypercubicLattice 2).Walk ![(0:ℤ), 0] ![(0:ℤ), 0] := by
   have a1 : (hypercubicLattice 2).Adj ![(0:ℤ), 0] ![(0:ℤ), -1] := by
     rw [hypercubicLattice_adj, Fin.sum_univ_two]; norm_num
@@ -316,7 +316,7 @@ theorem wcl_deleted_separated_of_closedEven (H : SimpleGraph (Site 2)) {f0 g0 : 
     tauto
   exact whc_deleted_separated H f0 g0 φ hcut hflank
 
-/-- **Cut coloring separating the ends of a dual edge.** For every graph `H` of `ℤ²` and dual edge `f0g0` such that the cut flip relation has even
+/-- For every graph `H` of `ℤ²` and dual edge `f0g0` such that the cut flip relation has even
 loops, there is a cut coloring distinguishing `f0` from `g0`, and `f0`, `g0` are disconnected
 in the face-region graph of `H` with `f0g0` deleted. -/
 def wcl_CorrectColoringResidue : Prop :=

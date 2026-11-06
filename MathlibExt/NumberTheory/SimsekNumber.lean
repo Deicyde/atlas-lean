@@ -15,38 +15,30 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- **Simsek numbers.** For natural numbers $n$ and $k$ and a complex number $\lambda$, the Simsek
-number $y_1(n, k; \lambda)$ is the complex number
-$$y_1(n, k; \lambda) = \frac{1}{k!} \sum_{j=0}^{k} \binom{k}{j} j^n \lambda^j,$$
-where $0^0 = 1$.
-
-Source: equation (snmf1) of https://cs.uwaterloo.ca/journals/JIS/VOL26/Oussi/oussi9.tex;
-phrase concept `jis_term_8eae8e670c41baff4a5d1101`,
-semantic concept `jis_sem_cadb2d3c6cc457809c98725c`,
-source statement `jis_018cebafcc5d365ff500f619`. -/
+/-- Simsek numbers `y_1(n, k; lam)` in explicit finite-sum form:
+    `(1 / k !) * ∑ j ∈ Finset.range (k + 1), C(k, j) * j ^ n * lam ^ j`.
+    Source: equation (snmf1) of https://cs.uwaterloo.ca/journals/JIS/VOL26/Oussi/oussi9.tex;
+    phrase concept `jis_term_8eae8e670c41baff4a5d1101`,
+    semantic concept `jis_sem_cadb2d3c6cc457809c98725c`,
+    source statement `jis_018cebafcc5d365ff500f619`. -/
 public noncomputable def simsekNumber (n k : Nat) (lam : ℂ) : ℂ :=
   ((k.factorial : ℂ))⁻¹ *
     ∑ j ∈ Finset.range (k + 1), (k.choose j : ℂ) * (((j : ℂ) ^ n) * (lam ^ j))
 
-/-- **Finite-sum formula for Simsek numbers.** For all natural numbers $n$ and $k$ and every
-complex number $\lambda$, the Simsek number satisfies
-$y_1(n, k; \lambda) = \frac{1}{k!} \sum_{j=0}^{k} \binom{k}{j} j^n \lambda^j$, where $0^0 = 1$. -/
+/-- Defining finite-sum formula for `simsekNumber`. -/
 public theorem simsekNumber_eq_sum (n k : Nat) (lam : ℂ) :
     simsekNumber n k lam =
       ((k.factorial : ℂ))⁻¹ *
         ∑ j ∈ Finset.range (k + 1), (k.choose j : ℂ) * (((j : ℂ) ^ n) * (lam ^ j)) :=
   rfl
 
-/-- **Simsek numbers with second index zero.** For every natural number $n$ and every complex
-number $\lambda$, the Simsek number $y_1(n, 0; \lambda)$ equals $0^n$; that is, it equals $1$
-when $n = 0$ and $0$ otherwise. -/
+/-- Boundary case `k = 0`: only the `j = 0` term survives. -/
 public theorem simsekNumber_zero_k (n : Nat) (lam : ℂ) :
     simsekNumber n 0 lam = (0 : ℂ) ^ n := by
   unfold simsekNumber
   simp
 
-/-- **Simsek numbers with both indices zero.** For every complex number $\lambda$, the Simsek
-number $y_1(0, 0; \lambda)$ equals $1$. -/
+/-- Boundary value at `n = 0` and `k = 0`. -/
 public theorem simsekNumber_zero_zero (lam : ℂ) :
     simsekNumber 0 0 lam = 1 := by
   unfold simsekNumber

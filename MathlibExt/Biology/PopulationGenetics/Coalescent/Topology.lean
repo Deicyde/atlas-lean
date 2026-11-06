@@ -61,26 +61,26 @@ open Finset MeasureTheory
 
 namespace MathlibExt.Biology.PopulationGenetics.Coalescent
 
-/-- **Unordered pairs of lineages.** The unordered pairs of lineages when there are `k` lineages labeled `0, …, k - 1`. -/
+/-- The unordered pairs of lineages when there are `k` lineages labeled `0, …, k - 1`. -/
 abbrev LineagePair (k : ℕ) : Type := {s : Finset (Fin k) // s.card = 2}
 
-/-- **Ranked labeled history.** A **ranked labeled history** of `n` labeled genes, encoded by its coalescence events: at
+/-- A **ranked labeled history** of `n` labeled genes, encoded by its coalescence events: at
 step `i < n - 1` there are `n - i` lineages and the step records the pair that merges (the
 merged lineage takes the smaller label; the others keep their relative order). -/
 abbrev RankedHistory (n : ℕ) : Type := (i : Fin (n - 1)) → LineagePair (n - i)
 
-/-- **Number of pairs of lineages.** The number of pairs of `k` lineages is `k.choose 2`. -/
+/-- The number of pairs of `k` lineages is `k.choose 2`. -/
 theorem card_lineagePair (k : ℕ) : Fintype.card (LineagePair k) = k.choose 2 := by
   rw [Fintype.card_finset_len, Fintype.card_fin]
 
 /-! ### Ancestral partitions of a history -/
 
-/-- **Merging two lineage blocks.** Merge the lineages (blocks of sampled genes) at positions `a < b` of a list of blocks: the
+/-- Merge the lineages (blocks of sampled genes) at positions `a < b` of a list of blocks: the
 merged block replaces position `a`, and position `b` is removed. -/
 def mergeBlocks {n : ℕ} (bs : List (Finset (Fin n))) (a b : ℕ) : List (Finset (Fin n)) :=
   (bs.set a (bs.getD a ∅ ∪ bs.getD b ∅)).eraseIdx b
 
-/-- **Lineage blocks after the first coalescence events.** The lineages (as blocks of sampled genes, indexed by lineage label) after the first `t`
+/-- The lineages (as blocks of sampled genes, indexed by lineage label) after the first `t`
 coalescence events of a history, starting from the singletons `{0}, …, {n - 1}`. -/
 def blocksAfter {n : ℕ} (h : RankedHistory n) (t : ℕ) : List (Finset (Fin n)) :=
   ((List.finRange (n - 1)).take t).foldl
@@ -89,19 +89,19 @@ def blocksAfter {n : ℕ} (h : RankedHistory n) (t : ℕ) : List (Finset (Fin n)
       mergeBlocks bs (s.min.getD 0) (s.max.getD 0))
     ((List.finRange n).map fun j => {j})
 
-/-- **Ancestral partitions along a history, indexed by lineage label.** The ancestral partitions of the sample along a history, as lists of blocks indexed by
+/-- The ancestral partitions of the sample along a history, as lists of blocks indexed by
 lineage label; entry `t` (for `t < n`) is the partition after `t` coalescence events. -/
 def blocksOf {n : ℕ} (h : RankedHistory n) : List (List (Finset (Fin n))) :=
   (List.range n).map (blocksAfter h)
 
-/-- **Ancestral partitions along a history as sets of blocks.** The ancestral partitions of the sample along a history, as sets of blocks (forgetting the
+/-- The ancestral partitions of the sample along a history, as sets of blocks (forgetting the
 lineage labels): the ranked labeled history in the sense of Edwards (1970). -/
 def partitionsOf {n : ℕ} (h : RankedHistory n) : List (Finset (Finset (Fin n))) :=
   (blocksOf h).map List.toFinset
 
 /-! ### Counting -/
 
-/-- **Product of pair counts times a power of two is $n!(n-1)!$.** `∏_{k=2}^n C(k, 2) * 2^{n-1} = n! (n - 1)!`. -/
+/-- `∏_{k=2}^n C(k, 2) * 2^{n-1} = n! (n - 1)!`. -/
 theorem prod_choose_two_mul_two_pow (n : ℕ) :
     (∏ k ∈ Icc 2 n, k.choose 2) * 2 ^ (n - 1) = n.factorial * (n - 1).factorial := by
   induction n with
@@ -123,7 +123,7 @@ theorem prod_choose_two_mul_two_pow (n : ℕ) :
         rw [ih, h2, Nat.factorial_succ]
         ring
 
-/-- **Reindexing the product of pair counts.** Reindexing: `∏_{i < n - 1} C(n - i, 2) = ∏_{k=2}^n C(k, 2)`. -/
+/-- Reindexing: `∏_{i < n - 1} C(n - i, 2) = ∏_{k=2}^n C(k, 2)`. -/
 theorem prod_fin_choose_two (n : ℕ) :
     ∏ i : Fin (n - 1), (n - (i : ℕ)).choose 2 = ∏ k ∈ Icc 2 n, k.choose 2 := by
   rw [Fin.prod_univ_eq_prod_range (fun i => (n - i).choose 2)]
@@ -164,7 +164,7 @@ instance (n : ℕ) : IsProbabilityMeasure (randomJoining n) := by
   unfold randomJoining
   infer_instance
 
-/-- **Every ranked history is equally likely under random joining.** Under random joining each history has probability `∏_{k=2}^n C(k, 2)⁻¹`. -/
+/-- Under random joining each history has probability `∏_{k=2}^n C(k, 2)⁻¹`. -/
 theorem randomJoining_singleton_eq_inv (n : ℕ) (h : RankedHistory n) :
     randomJoining n {h} = ((∏ k ∈ Icc 2 n, k.choose 2 : ℕ) : ENNReal)⁻¹ := by
   rw [randomJoining, ← Set.univ_pi_singleton, Measure.pi_pi]

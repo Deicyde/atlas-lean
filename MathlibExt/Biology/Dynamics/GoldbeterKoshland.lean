@@ -73,24 +73,24 @@ open scoped Topology
 
 namespace MathlibExt.Biology.Dynamics.GoldbeterKoshland
 
-/-- **Rate ratio at a given steady-state modified fraction.** The value of `V₁ / V₂` for which the mole fraction `W` of modified protein is at steady
+/-- The value of `V₁ / V₂` for which the mole fraction `W` of modified protein is at steady
 state (Goldbeter–Koshland 1981, Eq. 8): `W (1 - W + K₁) / ((1 - W) (W + K₂))`. Meaningful for
 `0 < W < 1` and `K₁, K₂ > 0`; at `W = 1` Lean's `a / 0 = 0` gives the junk value `0`. -/
 noncomputable def rateRatio (K₁ K₂ W : ℝ) : ℝ :=
   W * (1 - W + K₁) / ((1 - W) * (W + K₂))
 
-/-- **Goldbeter–Koshland function.** The **Goldbeter–Koshland function**: the steady-state mole fraction of modified protein
+/-- The **Goldbeter–Koshland function**: the steady-state mole fraction of modified protein
 when `V₁ / V₂ = v` (Goldbeter–Koshland 1981, Eq. 7, rationalized so that it also covers
 `v = 1`, Eq. 9). Meaningful for `v, K₁, K₂ > 0`. -/
 noncomputable def goldbeterKoshland (v K₁ K₂ : ℝ) : ℝ :=
   2 * v * K₂ / (√((v - 1 - K₁ - K₂ * v) ^ 2 + 4 * (v - 1) * v * K₂) - (v - 1 - K₁ - K₂ * v))
 
-/-- **Response coefficient of a covalent modification cycle.** The **response coefficient** `R_v`: the ratio of the values of `V₁ / V₂` giving 90% and 10%
+/-- The **response coefficient** `R_v`: the ratio of the values of `V₁ / V₂` giving 90% and 10%
 modified protein at steady state (Goldbeter–Koshland 1981). -/
 noncomputable def responseCoefficient (K₁ K₂ : ℝ) : ℝ :=
   rateRatio K₁ K₂ 0.9 / rateRatio K₁ K₂ 0.1
 
-/-- **Hill response function.** The fraction of a Hill response `Sⁿ / (Kⁿ + Sⁿ)` with half-saturation constant `K` and
+/-- The fraction of a Hill response `Sⁿ / (Kⁿ + Sⁿ)` with half-saturation constant `K` and
 Hill coefficient `n` (meaningful for `S, K > 0`, `n > 0`). -/
 noncomputable def hill (n K S : ℝ) : ℝ :=
   S ^ n / (K ^ n + S ^ n)
@@ -108,7 +108,7 @@ theorem steadyState_iff {V₁ V₂ K₁ K₂ W : ℝ} (hV₂ : 0 < V₂) (hK₁ 
   rw [div_eq_div_iff h2.ne' h3.ne', div_eq_div_iff hV₂.ne' (by positivity)]
   constructor <;> intro h <;> nlinarith [h]
 
-/-- **Rate ratio is strictly increasing in the modified fraction.** `rateRatio K₁ K₂` is strictly increasing on `(0, 1)` for `K₁, K₂ > 0`: it is the product
+/-- `rateRatio K₁ K₂` is strictly increasing on `(0, 1)` for `K₁, K₂ > 0`: it is the product
 of the positive increasing functions `W / (W + K₂)` and `1 + K₁ / (1 - W)`. -/
 theorem strictMonoOn_rateRatio {K₁ K₂ : ℝ} (hK₁ : 0 < K₁) (hK₂ : 0 < K₂) :
     StrictMonoOn (rateRatio K₁ K₂) (Ioo 0 1) := by
@@ -162,7 +162,7 @@ private theorem denom_pos {v K₁ K₂ : ℝ} (hv : 0 < v) (hK₁ : 0 < K₁) (h
     0 < √((v - 1 - K₁ - K₂ * v) ^ 2 + 4 * (v - 1) * v * K₂) - (v - 1 - K₁ - K₂ * v) :=
   sub_pos.2 (lt_sqrt_disc hv hK₁ hK₂)
 
-/-- **Goldbeter–Koshland function lies strictly between 0 and 1.** For `v, K₁, K₂ > 0` the Goldbeter–Koshland function lies in `(0, 1)`. -/
+/-- For `v, K₁, K₂ > 0` the Goldbeter–Koshland function lies in `(0, 1)`. -/
 theorem goldbeterKoshland_mem_Ioo {v K₁ K₂ : ℝ} (hv : 0 < v) (hK₁ : 0 < K₁) (hK₂ : 0 < K₂) :
     goldbeterKoshland v K₁ K₂ ∈ Ioo 0 1 := by
   have hd := denom_pos hv hK₁ hK₂
@@ -249,14 +249,14 @@ theorem responseCoefficient_eq {K₁ K₂ : ℝ} (hK₁ : -0.1 < K₁) (hK₂ : 
   rw [r9, r1, div_div_div_eq, div_eq_div_iff (by positivity) (by positivity)]
   ring
 
-/-- **Response coefficient exceeds 1.** For `K₁, K₂ > 0` the response coefficient exceeds `1`: the switch is never infinitely
+/-- For `K₁, K₂ > 0` the response coefficient exceeds `1`: the switch is never infinitely
 sharp. -/
 theorem one_lt_responseCoefficient {K₁ K₂ : ℝ} (hK₁ : 0 < K₁) (hK₂ : 0 < K₂) :
     1 < responseCoefficient K₁ K₂ := by
   rw [responseCoefficient_eq (by linarith) (by linarith), one_lt_div (by positivity)]
   nlinarith [mul_pos hK₁ hK₂]
 
-/-- **Response coefficient is below the Michaelis–Menten value 81.** For `K₁, K₂ > 0` the response coefficient is below the Michaelis–Menten value `81`. -/
+/-- For `K₁, K₂ > 0` the response coefficient is below the Michaelis–Menten value `81`. -/
 theorem responseCoefficient_lt_81 {K₁ K₂ : ℝ} (hK₁ : 0 < K₁) (hK₂ : 0 < K₂) :
     responseCoefficient K₁ K₂ < 81 := by
   rw [responseCoefficient_eq (by linarith) (by linarith), div_lt_iff₀ (by positivity)]

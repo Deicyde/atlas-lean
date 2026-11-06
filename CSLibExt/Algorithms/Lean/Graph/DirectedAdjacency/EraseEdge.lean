@@ -28,11 +28,7 @@ universe u
 variable {V : Type u} {graph : DirectedAdjacency V}
 variable {length : Nat} {source target left right : V}
 
-/-- **Erasing a directed edge.** Given a directed-adjacency graph $G$ and vertices $s$ and $t$,
-erasing the edge $s \to t$ gives the directed-adjacency graph with the same vertex enumeration as
-$G$ whose out-neighbour list at $s$ is the out-neighbour list of $s$ in $G$ with every occurrence
-of $t$ removed (the remaining entries keep their order), and whose out-neighbour list at every
-other vertex is the same as in $G$. -/
+/-- Remove every occurrence of the ordered edge `source → target`. -/
 def eraseEdge [DecidableEq V] (graph : DirectedAdjacency V)
     (source target : V) : DirectedAdjacency V where
   vertices := graph.vertices
@@ -44,37 +40,26 @@ def eraseEdge [DecidableEq V] (graph : DirectedAdjacency V)
     else
       graph.adjacency vertex
 
-/-- **Erasing an edge keeps the vertex enumeration.** For every directed-adjacency graph $G$ and
-vertices $s$ and $t$, the graph obtained from $G$ by erasing the edge $s \to t$ has the same
-vertex enumeration as $G$: the same list of vertices, in the same order. -/
+/-- Erasing an edge preserves the exact vertex enumeration. -/
 @[simp]
 theorem vertices_eraseEdge [DecidableEq V] :
     (eraseEdge graph source target).vertices = graph.vertices :=
   rfl
 
-/-- **Out-neighbours of the source after erasing an edge.** For every directed-adjacency graph
-$G$ and vertices $s$ and $t$, the out-neighbour list of $s$ in the graph obtained from $G$ by
-erasing the edge $s \to t$ is the out-neighbour list of $s$ in $G$ with every occurrence of $t$
-removed, the remaining entries kept in their original order. -/
+/-- At the selected source, erasure stably filters out every target occurrence. -/
 @[simp]
 theorem adjacency_eraseEdge_source [DecidableEq V] :
     (eraseEdge graph source target).adjacency source =
       (graph.adjacency source).filter (fun vertex => decide (vertex ≠ target)) := by
   simp [eraseEdge]
 
-/-- **Erasing an edge leaves the other out-neighbour lists unchanged.** For every
-directed-adjacency graph $G$ and vertices $s$, $t$ and $u$ with $u \ne s$, the out-neighbour
-list of $u$ in the graph obtained from $G$ by erasing the edge $s \to t$ equals the
-out-neighbour list of $u$ in $G$. -/
+/-- Erasing an edge leaves every other adjacency row exactly unchanged. -/
 theorem adjacency_eraseEdge_of_ne [DecidableEq V]
     (different : left ≠ source) :
     (eraseEdge graph source target).adjacency left = graph.adjacency left := by
   simp [eraseEdge, different]
 
-/-- **Edges after erasing an edge.** For every directed-adjacency graph $G$ and vertices $s$,
-$t$, $u$ and $v$, there is an edge from $u$ to $v$ in the graph obtained from $G$ by erasing
-the edge $s \to t$ if and only if there is an edge from $u$ to $v$ in $G$ and it is not the case
-that both $u = s$ and $v = t$. -/
+/-- Edge membership after erasure is original membership excluding the ordered pair. -/
 @[simp]
 theorem edge_eraseEdge [DecidableEq V] :
     (eraseEdge graph source target).Edge left right ↔
@@ -84,17 +69,13 @@ theorem edge_eraseEdge [DecidableEq V] :
     simp [Edge, eraseEdge]
   · simp [Edge, eraseEdge, selected]
 
-/-- **The erased edge is absent.** For every directed-adjacency graph $G$ and vertices $s$ and
-$t$, the Boolean edge lookup for $s \to t$ in the graph obtained from $G$ by erasing the edge
-$s \to t$ returns false. -/
+/-- Boolean lookup reports that the erased ordered edge is absent. -/
 @[simp]
 theorem hasEdge_eraseEdge_self [DecidableEq V] :
     (eraseEdge graph source target).hasEdge source target = false := by
   simp [hasEdge, eraseEdge]
 
-/-- **Erasing an edge twice gives the same out-neighbour lists.** For every directed-adjacency
-graph $G$ and vertices $s$ and $t$, erasing the edge $s \to t$ from $G$ and then erasing it
-again gives, at every vertex, the same out-neighbour list as erasing it once. -/
+/-- Repeating the same erasure leaves every observable adjacency row unchanged. -/
 theorem eraseEdge_idempotent [DecidableEq V] :
     (eraseEdge (eraseEdge graph source target) source target).adjacency =
       (eraseEdge graph source target).adjacency := by
@@ -104,10 +85,7 @@ theorem eraseEdge_idempotent [DecidableEq V] :
     simp [eraseEdge, List.filter_filter]
   · simp [eraseEdge, selected]
 
-/-- **Walks after erasing an edge are walks in the original graph.** For every
-directed-adjacency graph $G$, vertices $s$, $t$, $u$ and $v$, and natural number $n$, if there
-is a walk of length $n$ from $u$ to $v$ in the graph obtained from $G$ by erasing the edge
-$s \to t$, then there is a walk of length $n$ from $u$ to $v$ in $G$. -/
+/-- Every exact-length walk after erasure was already a walk in the original graph. -/
 theorem walk_eraseEdge_imp [DecidableEq V]
     (walk : Walk (eraseEdge graph source target) length left right) :
     Walk graph length left right :=
@@ -117,10 +95,7 @@ theorem walk_eraseEdge_imp [DecidableEq V]
         (left := a) (right := b)).mp edge |>.1)
     walk
 
-/-- **Reachability after erasing an edge implies reachability in the original graph.** For
-every directed-adjacency graph $G$ and vertices $s$, $t$, $u$ and $v$, if $v$ is reachable from
-$u$ in the graph obtained from $G$ by erasing the edge $s \to t$, then $v$ is reachable from $u$
-in $G$. -/
+/-- Reachability after erasure implies reachability in the original graph. -/
 theorem reachable_eraseEdge_imp [DecidableEq V]
     (reachable : (eraseEdge graph source target).Reachable left right) :
     graph.Reachable left right := by

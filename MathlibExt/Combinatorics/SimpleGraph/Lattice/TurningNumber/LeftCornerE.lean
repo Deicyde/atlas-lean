@@ -38,7 +38,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind StatMech.Ons
 
 variable {n : ℕ} [NeZero n]
 
-/-- **Corner weight at a left turn into the east direction.** At a left turn made of a south step followed by an east step, the corner weight of the interior
+/-- At a left turn made of a south step followed by an east step, the corner weight of the interior
   is `1` if the cell to the left of the walk is inside and `-1` otherwise. -/
 theorem cornerWeight_leftTurn_E (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (hn : 3 ≤ n) (i : Fin n)

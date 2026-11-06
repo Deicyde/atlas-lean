@@ -20,9 +20,7 @@ namespace MathlibExt.NumberTheory.PrimeCounting
 Brun's constant is the sum of the reciprocals of the primes in every twin-prime pair.
 -/
 
-/-- **Twin-prime reciprocal term.** For a natural number $p$, the twin-prime reciprocal term
-$t(p)$ is the real number $\frac{1}{p} + \frac{1}{p + 2}$ when $p$ and $p + 2$ are both prime,
-and $0$ otherwise.
+/-- The reciprocal contribution of the twin-prime pair whose smaller member is `p`.
 
 Source: teorth/optimizationproblems, “Brun's Constant,” `constants/81a.md`; the convention counts a
 prime once for every twin-prime pair containing it.
@@ -44,24 +42,16 @@ theorem brunTwinPrimeReciprocalTerm_eq (p : ℕ)
       (1 : ℝ) / (p : ℝ) + (1 : ℝ) / ((p + 2 : ℕ) : ℝ) := by
   simp [brunTwinPrimeReciprocalTerm, h]
 
-/-- **Summability of the twin-prime reciprocal terms.** For a natural number $p$, let $t(p)$ be
-$\frac{1}{p} + \frac{1}{p + 2}$ when $p$ and $p + 2$ are both prime and $0$ otherwise. Then the
-series $\sum_{p \ge 0} t(p)$ converges unconditionally in $\mathbb{R}$. -/
+/-- The twin-prime reciprocal terms are summable. -/
 theorem summable_brunTwinPrimeReciprocalTerm :
     Summable brunTwinPrimeReciprocalTerm := by
   exact BrunTwinPrimeReciprocalsWanted.brun_twin_prime_reciprocal_series_summable
 
-/-- **Brun's constant.** Brun's constant is the real number
-$B = \sum_{p} \left(\frac{1}{p} + \frac{1}{p + 2}\right)$, the sum over all primes $p$ such that
-$p + 2$ is also prime. A prime lying in two twin-prime pairs, such as $5$ in $(3, 5)$ and
-$(5, 7)$, is counted once for each pair. -/
+/-- Brun's constant, with a shared prime such as `5` counted once for each twin-prime pair. -/
 noncomputable def brunConstant : ℝ :=
   ∑' p : ℕ, brunTwinPrimeReciprocalTerm p
 
-/-- **Brun's constant is the sum of the twin-prime reciprocal series.** For a natural number $p$,
-let $t(p)$ be $\frac{1}{p} + \frac{1}{p + 2}$ when $p$ and $p + 2$ are both prime and $0$
-otherwise. Then the series $\sum_{p \ge 0} t(p)$ over the natural numbers converges
-unconditionally in $\mathbb{R}$, and its sum is Brun's constant. -/
+/-- The defining twin-prime reciprocal series has Brun's constant as its sum. -/
 theorem hasSum_brunConstant :
     HasSum brunTwinPrimeReciprocalTerm brunConstant :=
   summable_brunTwinPrimeReciprocalTerm.hasSum

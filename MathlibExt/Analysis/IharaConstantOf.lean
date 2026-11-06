@@ -37,15 +37,11 @@ unbounded but has `iharaConstantOf N = 1`, since its ratios are `0` at
 `g = 0` and `1` at every positive genus.
 -/
 
-/-- **Normalized Ihara ratio.** For a sequence $N : \mathbb{N} \to \mathbb{N}$ and
-$g \in \mathbb{N}$, the normalized ratio of $N$ at $g$ is the extended nonnegative real $N(g)/g$
-when $g > 0$, and $0$ when $g = 0$. -/
+/-- The normalized ratio `N g / g`, with the value at `g = 0` set to `0`. -/
 noncomputable def iharaRatio (N : ℕ → ℕ) (g : ℕ) : ENNReal :=
   if g = 0 then 0 else (N g : ENNReal) / (g : ENNReal)
 
-/-- **Abstract Ihara constant of a sequence.** For a sequence $N : \mathbb{N} \to \mathbb{N}$,
-the abstract Ihara constant of $N$ is $\limsup_{g \to \infty} N(g)/g \in [0, \infty]$, the limit
-superior as $g \to \infty$ of the normalized ratios of $N$. -/
+/-- The limsup of the normalized ratios associated with `N`. -/
 noncomputable def iharaConstantOf (N : ℕ → ℕ) : ENNReal :=
   Filter.limsup (iharaRatio N) atTop
 
@@ -56,27 +52,19 @@ theorem iharaRatio_of_pos (N : ℕ → ℕ) {g : ℕ} (hg : 0 < g) :
     iharaRatio N g = (N g : ENNReal) / (g : ENNReal) := by
   rw [iharaRatio, ite_eq_right hg.ne']
 
-/-- **Eventual ratio bounds bound the abstract Ihara constant.** Let
-$N : \mathbb{N} \to \mathbb{N}$ and $c \in [0, \infty]$. If the normalized ratio of $N$ at $g$ is
-at most $c$ for all sufficiently large $g$, then the abstract Ihara constant of $N$ is at most
-$c$. -/
+/-- An eventual bound on the normalized ratios bounds their limsup. -/
 theorem iharaConstantOf_le_of_eventually_ratio_le (N : ℕ → ℕ) {c : ENNReal}
     (h : ∀ᶠ g in atTop, iharaRatio N g ≤ c) :
     iharaConstantOf N ≤ c :=
   Filter.limsup_le_of_le (h := h)
 
-/-- **Lower bound for the Ihara constant from the normalized ratios.** Let
-$N : \mathbb{N} \to \mathbb{N}$, let $c \in [0, \infty]$, and for each $g \in \mathbb{N}$ let
-$r_N(g) \in [0, \infty]$ be the normalized ratio $N(g)/g$, with $r_N(0) = 0$. If $c \le r_N(g)$
-for infinitely many $g$, then $c \le \limsup_{g \to \infty} r_N(g)$, the Ihara constant of $N$. -/
+/-- A frequently attained lower bound on the ratios bounds the limsup below. -/
 theorem le_iharaConstantOf_of_frequently_ratio_le (N : ℕ → ℕ) {c : ENNReal}
     (h : ∃ᶠ g in atTop, c ≤ iharaRatio N g) :
     c ≤ iharaConstantOf N :=
   Filter.le_limsup_of_frequently_le h
 
-/-- **Linear upper bound on a normalized ratio.** Let $N : \mathbb{N} \to \mathbb{N}$,
-$g \in \mathbb{N}$ and $c \in [0, \infty]$. If $N(g) \le c \cdot g$ in $[0, \infty]$, then the
-normalized ratio of $N$ at $g$ is at most $c$. -/
+/-- A pointwise multiplicative upper bound controls one normalized ratio. -/
 theorem iharaRatio_le_of_le_mul (N : ℕ → ℕ) {c : ENNReal} {g : ℕ}
     (h : (N g : ENNReal) ≤ c * (g : ENNReal)) :
     iharaRatio N g ≤ c := by
@@ -85,9 +73,7 @@ theorem iharaRatio_le_of_le_mul (N : ℕ → ℕ) {c : ENNReal} {g : ℕ}
   · rw [iharaRatio, ite_eq_right hg]
     exact ENNReal.div_le_of_le_mul h
 
-/-- **Lower bound for one normalized Ihara ratio.** Let $N : \mathbb{N} \to \mathbb{N}$,
-$c \in [0, \infty]$ and $g > 0$ an integer. If $c \cdot g \le N(g)$ in $[0, \infty]$, then
-$c \le N(g)/g$, where the normalized ratio $N(g)/g$ is taken in $[0, \infty]$. -/
+/-- A pointwise multiplicative lower bound controls one normalized ratio. -/
 theorem le_iharaRatio_of_mul_le (N : ℕ → ℕ) {c : ENNReal} {g : ℕ}
     (hg : 0 < g) (h : c * (g : ENNReal) ≤ (N g : ENNReal)) :
     c ≤ iharaRatio N g := by
@@ -97,19 +83,15 @@ theorem le_iharaRatio_of_mul_le (N : ℕ → ℕ) {c : ENNReal} {g : ℕ}
   exact (ENNReal.le_div_iff_mul_le (Or.inl hg0)
     (Or.inl (ENNReal.natCast_ne_top g))).2 h
 
-/-- **Eventual linear upper bound on the abstract Ihara constant.** Let
-$N : \mathbb{N} \to \mathbb{N}$ and $c \in [0, \infty]$. If $N(g) \le c \cdot g$ in $[0, \infty]$
-for all sufficiently large $g$, then the abstract Ihara constant of $N$ is at most $c$. -/
+/-- An eventual linear upper bound gives the corresponding limsup bound. -/
 theorem iharaConstantOf_le_of_eventually_le (N : ℕ → ℕ) {c : ENNReal}
     (h : ∀ᶠ g in atTop, (N g : ENNReal) ≤ c * (g : ENNReal)) :
     iharaConstantOf N ≤ c :=
   iharaConstantOf_le_of_eventually_ratio_le N
     (h.mono fun _g hg => iharaRatio_le_of_le_mul N hg)
 
-/-- **Eventual affine upper bound on the abstract Ihara constant.** Let
-$N : \mathbb{N} \to \mathbb{N}$, $c \in [0, \infty]$ and $d \in [0, \infty)$. If
-$N(g) \le c \cdot g + d$ in $[0, \infty]$ for all sufficiently large $g$, then the abstract Ihara
-constant of $N$ is at most $c$. -/
+/-- An eventual affine upper bound `N g ≤ c * g + d`, with finite additive
+error `d`, gives the corresponding limsup bound. -/
 theorem iharaConstantOf_le_of_eventually_le_add (N : ℕ → ℕ) {c d : ENNReal}
     (hd : d ≠ ⊤)
     (h : ∀ᶠ g : ℕ in atTop, (N g : ENNReal) ≤ c * (g : ENNReal) + d) :
@@ -140,19 +122,14 @@ theorem iharaConstantOf_le_of_eventually_le_add (N : ℕ → ℕ) {c d : ENNReal
       add_le_add_right hdg _
     _ = (c + (ε : ENNReal)) * (g : ENNReal) := by rw [add_mul]
 
-/-- **Lower bound for the Ihara constant from a linear bound.** Let $N : \mathbb{N} \to \mathbb{N}$
-and $c \in [0, \infty]$. If there are infinitely many integers $g > 0$ with $c \cdot g \le N(g)$
-in $[0, \infty]$, then $c \le \limsup_{g \to \infty} N(g)/g$, the Ihara constant of $N$, where the
-ratio $N(g)/g$ is taken in $[0, \infty]$ and set to $0$ at $g = 0$. -/
+/-- A frequently attained linear lower bound gives a limsup lower bound. -/
 theorem le_iharaConstantOf_of_frequently_le (N : ℕ → ℕ) {c : ENNReal}
     (h : ∃ᶠ g : ℕ in atTop, 0 < g ∧ c * (g : ENNReal) ≤ (N g : ENNReal)) :
     c ≤ iharaConstantOf N :=
   le_iharaConstantOf_of_frequently_ratio_le N
     (h.mono fun _g hg => le_iharaRatio_of_mul_le N hg.1 hg.2)
 
-/-- **Monotonicity of the normalized ratio.** Let $N, M : \mathbb{N} \to \mathbb{N}$ and
-$g \in \mathbb{N}$. If $N(g) \le M(g)$, then the normalized ratio of $N$ at $g$ is at most the
-normalized ratio of $M$ at $g$. -/
+/-- The normalized ratio is monotone in the underlying counting sequence. -/
 theorem iharaRatio_mono {N M : ℕ → ℕ} {g : ℕ} (h : N g ≤ M g) :
     iharaRatio N g ≤ iharaRatio M g := by
   by_cases hg : g = 0
@@ -160,25 +137,18 @@ theorem iharaRatio_mono {N M : ℕ → ℕ} {g : ℕ} (h : N g ≤ M g) :
   · rw [iharaRatio, iharaRatio, ite_eq_right hg, ite_eq_right hg]
     exact ENNReal.div_le_div_right (by exact_mod_cast h) _
 
-/-- **Monotonicity of the abstract Ihara constant.** Let $N, M : \mathbb{N} \to \mathbb{N}$. If
-$N(g) \le M(g)$ for all sufficiently large $g$, then the abstract Ihara constant of $N$ is at
-most that of $M$. -/
+/-- The abstract Ihara constant is monotone under eventual domination. -/
 theorem iharaConstantOf_mono_of_eventually_le {N M : ℕ → ℕ}
     (h : ∀ᶠ g in atTop, N g ≤ M g) :
     iharaConstantOf N ≤ iharaConstantOf M :=
   Filter.limsup_le_limsup (h.mono fun g hg => iharaRatio_mono hg)
 
-/-- **The abstract Ihara constant ignores finitely many values.** Let
-$N, M : \mathbb{N} \to \mathbb{N}$. If $N(g) = M(g)$ for all sufficiently large $g$, then $N$ and
-$M$ have the same abstract Ihara constant. In particular, changing finitely many values of $N$
-does not change its abstract Ihara constant. -/
+/-- Changing finitely many values of `N` does not change the limsup. -/
 theorem iharaConstantOf_congr {N M : ℕ → ℕ} (h : N =ᶠ[atTop] M) :
     iharaConstantOf N = iharaConstantOf M :=
   Filter.limsup_congr (h.mono fun g hg => by simp [iharaRatio, hg])
 
-/-- **Agreement from an index onward preserves the abstract Ihara constant.** Let
-$N, M : \mathbb{N} \to \mathbb{N}$ and $G \in \mathbb{N}$. If $N(g) = M(g)$ for every $g \ge G$,
-then $N$ and $M$ have the same abstract Ihara constant. -/
+/-- Agreement from some index onward determines the abstract constant. -/
 theorem iharaConstantOf_eq_of_eventually_eq {N M : ℕ → ℕ} {G : ℕ}
     (h : ∀ g ≥ G, N g = M g) :
     iharaConstantOf N = iharaConstantOf M :=

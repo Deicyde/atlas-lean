@@ -16,7 +16,7 @@ namespace Complex
 
 noncomputable section
 
-/-- **Transcendental entire functions have infinitely many Taylor coefficients.** A transcendental entire function has infinitely many nonzero Taylor coefficients. -/
+/-- A transcendental entire function has infinitely many nonzero Taylor coefficients. -/
 theorem infinite_support_wimanTaylorCoefficient
     (f : ℂ → ℂ) (hf : Differentiable ℂ f)
     (htrans : IsTranscendental f) :

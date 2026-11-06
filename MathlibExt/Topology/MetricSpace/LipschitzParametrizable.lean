@@ -36,28 +36,21 @@ arbitrary Lipschitz map, which is all the N386 change of basis needs.
 
 @[expose] public section
 
-/-- **The unit cube.** For a natural number $d$, the closed unit cube $[0, 1]^d$ is the set of
-points $x \in \mathbb{R}^d$ with $0 \le x_i \le 1$ for every coordinate $i$. -/
+/-- The closed unit cube `[0, 1]^d`, as a set in `Fin d → ℝ`. -/
 def unitCube (d : ℕ) : Set (Fin d → ℝ) :=
   Set.Icc 0 1
 
-/-- **Lipschitz parametrizable sets.** Let $X$ be a metric space and $d$ a natural number. A set
-$B \subseteq X$ is $d$-Lipschitz parametrizable if there are a natural number $n$ (possibly $0$)
-and Lipschitz maps $f_1, \dots, f_n : [0, 1]^d \to X$ out of the closed unit cube
-$[0, 1]^d \subseteq \mathbb{R}^d$ such that $B$ equals the union of their images,
-$B = f_1([0, 1]^d) \cup \dots \cup f_n([0, 1]^d)$. -/
+/-- A set `B` is `d`-Lipschitz parametrizable if it equals the union of the
+ranges of finitely many Lipschitz maps out of the unit cube. -/
 def IsLipschitzParametrizable {X : Type*} [MetricSpace X] (d : ℕ) (B : Set X) : Prop :=
   ∃ (n : ℕ) (f : Fin n → (↥(unitCube d) → X)),
     (∀ i, ∃ K : NNReal, LipschitzWith K (f i)) ∧ B = ⋃ i, Set.range (f i)
 
-/-- **The origin lies in the unit cube.** For every natural number $d$, the origin of
-$\mathbb{R}^d$ lies in the closed unit cube $[0, 1]^d$. -/
+/-- The origin lies in the unit cube. -/
 theorem unitCube_zero_mem (d : ℕ) : (0 : Fin d → ℝ) ∈ unitCube d :=
   Set.mem_Icc.mpr ⟨le_rfl, fun _ => zero_le_one⟩
 
-/-- **The empty set is Lipschitz parametrizable.** Let $X$ be a metric space. For every natural
-number $d$, the empty subset of $X$ is $d$-Lipschitz parametrizable, via the empty family of
-maps. -/
+/-- The empty set is `d`-Lipschitz parametrizable, via the empty family. -/
 theorem isLipschitzParametrizable_empty {X : Type*} [MetricSpace X] (d : ℕ) :
     IsLipschitzParametrizable d (∅ : Set X) := by
   refine ⟨0, fun i => i.elim0, fun i => i.elim0, ?_⟩
@@ -68,9 +61,7 @@ theorem isLipschitzParametrizable_empty {X : Type*} [MetricSpace X] (d : ℕ) :
   obtain ⟨i, _, _⟩ := hx
   exact i.elim0
 
-/-- **Singletons are Lipschitz parametrizable.** Let $X$ be a metric space. For every natural
-number $d$ and every point $x \in X$, the set $\lbrace x \rbrace$ is $d$-Lipschitz parametrizable,
-via a single constant map. -/
+/-- Singletons are `d`-Lipschitz parametrizable, via one constant map. -/
 theorem isLipschitzParametrizable_singleton {X : Type*} [MetricSpace X] (d : ℕ)
     (x : X) : IsLipschitzParametrizable d ({x} : Set X) := by
   refine ⟨1, fun _ _ => x, fun _ => ⟨0, LipschitzWith.const' _⟩, ?_⟩
@@ -84,8 +75,7 @@ theorem isLipschitzParametrizable_singleton {X : Type*} [MetricSpace X] (d : ℕ
 
 namespace Finset
 
-/-- **Finsets are Lipschitz parametrizable.** Let $X$ be a metric space and $d$ a natural number.
-Every finite set $s$ of points of $X$, given as a finset, is $d$-Lipschitz parametrizable. -/
+/-- A finite set, coerced to a set, is `d`-Lipschitz parametrizable. -/
 theorem isLipschitzParametrizable_coe {X : Type*} [MetricSpace X] (d : ℕ)
     (s : Finset X) : IsLipschitzParametrizable d (↑s : Set X) := by
   refine ⟨Fintype.card ↥s, fun i _ => ((Fintype.equivFin ↥s).symm i : X),
@@ -104,8 +94,7 @@ end Finset
 
 namespace Set
 
-/-- **Finite sets are Lipschitz parametrizable.** Let $X$ be a metric space. Every finite set
-$B \subseteq X$ is $d$-Lipschitz parametrizable for every natural number $d$. -/
+/-- A finite set is `d`-Lipschitz parametrizable. -/
 theorem Finite.isLipschitzParametrizable {X : Type*} [MetricSpace X] {B : Set X}
     (hB : B.Finite) (d : ℕ) : IsLipschitzParametrizable d B := by
   obtain ⟨s, rfl⟩ := hB.exists_finset_coe
@@ -113,9 +102,8 @@ theorem Finite.isLipschitzParametrizable {X : Type*} [MetricSpace X] {B : Set X}
 
 end Set
 
-/-- **Lipschitz images of Lipschitz parametrizable sets.** Let $X$ and $Y$ be metric spaces,
-let $d$ be a natural number and let $f : X \to Y$ be a Lipschitz map. If a set $B \subseteq X$ is
-$d$-Lipschitz parametrizable, then its image $f(B) \subseteq Y$ is $d$-Lipschitz parametrizable. -/
+/-- The image of a `d`-Lipschitz parametrizable set under a Lipschitz map is
+`d`-Lipschitz parametrizable, by composing each chart with the map. -/
 theorem IsLipschitzParametrizable.image_lipschitzWith {X Y : Type*}
     [MetricSpace X] [MetricSpace Y] {d : ℕ} {B : Set X}
     (hB : IsLipschitzParametrizable d B) {f : X → Y} {K : NNReal}

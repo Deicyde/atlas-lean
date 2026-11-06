@@ -193,7 +193,7 @@ end GredPerfect
 
 universe u v w
 
-/-- **Reduced algebras stay reduced under base change over a perfect field.** Tensoring a reduced algebra with a field extension over a perfect field
+/-- Tensoring a reduced algebra with a field extension over a perfect field
 preserves reducedness. -/
 theorem Algebra.isReduced_tensorProduct_of_perfectField
     (k : Type u) [Field k] [PerfectField k] (A : Type v) [CommRing A] [Algebra k A]

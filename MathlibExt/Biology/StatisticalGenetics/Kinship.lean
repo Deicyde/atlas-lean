@@ -56,7 +56,7 @@ pairs of ancestral paths from the parents to `A` that meet only at `A`.
 
 namespace MathlibExt.Biology.StatisticalGenetics.Kinship
 
-/-- **Pedigree.** A pedigree on the individuals `Fin n`, numbered so that parents precede their children
+/-- A pedigree on the individuals `Fin n`, numbered so that parents precede their children
 (every finite pedigree, a finite DAG, has such a numbering). `parents i = some g` means that
 `g 0` is the father and `g 1` the mother of `i`; `parents i = none` means that `i` is a founder.
 Founders are unrelated and not inbred (their `2 n_F` gene copies are distinct). -/
@@ -70,24 +70,24 @@ namespace Pedigree
 
 variable {n : ℕ} (P : Pedigree n)
 
-/-- **Parent relation in a pedigree.** `a` is a parent of `b`. -/
+/-- `a` is a parent of `b`. -/
 def IsParent (a b : Fin n) : Prop := ∃ g, P.parents b = some g ∧ ∃ k, g k = a
 
-/-- **Ancestor relation in a pedigree.** `a` is an ancestor of `b` (a parent, a parent of a parent, …). -/
+/-- `a` is an ancestor of `b` (a parent, a parent of a parent, …). -/
 def IsAncestor : Fin n → Fin n → Prop := Relation.TransGen P.IsParent
 
-/-- **Pedigree without selfing.** No individual is the offspring of a selfing (father ≠ mother), as in Wright's setting of a
+/-- No individual is the offspring of a selfing (father ≠ mother), as in Wright's setting of a
 bisexual population. -/
 def NoSelfing : Prop := ∀ i g, P.parents i = some g → g 0 ≠ g 1
 
 /-! ### Gene dropping -/
 
-/-- **Gene-dropping outcome.** A gene-dropping outcome: `ω i k` is the Mendelian coin of the copy `(i, k)` (`k = 0` the
+/-- A gene-dropping outcome: `ω i k` is the Mendelian coin of the copy `(i, k)` (`k = 0` the
 paternal copy, `k = 1` the maternal copy), saying which copy (`0` or `1`) of the parent `g k`
 of `i` it inherits. Under gene dropping all `4 ^ n` outcomes are equally likely. -/
 abbrev Coins (n : ℕ) : Type := Fin n → Fin 2 → Fin 2
 
-/-- **Founder origin of a gene copy.** The founder copy from which the gene copy `c = (i, k)` descends under the gene-dropping
+/-- The founder copy from which the gene copy `c = (i, k)` descends under the gene-dropping
 outcome `ω`: a founder copy is its own origin; a copy of a non-founder descends from the copy
 `ω i k` of its parent `g k`. -/
 def origin (ω : Coins n) (c : Fin n × Fin 2) : Fin n × Fin 2 :=
@@ -97,23 +97,23 @@ def origin (ω : Coins n) (c : Fin n × Fin 2) : Fin n × Fin 2 :=
 termination_by c.1.val
 decreasing_by exact P.parents_lt c.1 g _h c.2
 
-/-- **Probability of identity by descent under gene dropping.** The probability, under gene dropping (independent fair Mendelian coins), that the gene
+/-- The probability, under gene dropping (independent fair Mendelian coins), that the gene
 copies `c` and `d` are identical by descent, i.e. descend from the same founder copy. -/
 noncomputable def ibd (c d : Fin n × Fin 2) : ℝ :=
   ((Finset.univ.filter fun ω : Coins n => P.origin ω c = P.origin ω d).card : ℝ) / 4 ^ n
 
-/-- **Kinship coefficient under gene dropping.** The kinship (coancestry) coefficient under gene dropping: the probability that a copy drawn
+/-- The kinship (coancestry) coefficient under gene dropping: the probability that a copy drawn
 at random from `i` and a copy drawn at random from `j` are identical by descent. -/
 noncomputable def geneDropKinship (i j : Fin n) : ℝ :=
   (∑ a : Fin 2, ∑ b : Fin 2, P.ibd (i, a) (j, b)) / 4
 
-/-- **Inbreeding coefficient under gene dropping.** The inbreeding coefficient under gene dropping: the probability that the two copies of `i`
+/-- The inbreeding coefficient under gene dropping: the probability that the two copies of `i`
 are identical by descent. -/
 noncomputable def inbreeding (i : Fin n) : ℝ := P.ibd (i, 0) (i, 1)
 
 /-! ### Malécot's recursion (the tabular method) -/
 
-/-- **Kinship coefficient by Malécot's recursion.** The kinship coefficient by Malécot's recursion, computed in the order of the numbering
+/-- The kinship coefficient by Malécot's recursion, computed in the order of the numbering
 (the tabular method): for `i < j`, `φ i j = (φ i f + φ i m) / 2` with `f, m` the parents of `j`
 and `φ i j = 0` if `j` is a founder; `φ i i = (1 + φ f m) / 2` with `f, m` the parents of `i`
 and `φ i i = 1 / 2` for a founder; symmetric for `j < i`. -/
@@ -138,52 +138,52 @@ decreasing_by
     simp only [Fin.lt_def, not_lt] at *
     omega
 
-/-- **Inbreeding coefficient by Malécot's recursion.** The inbreeding coefficient by Malécot's recursion: `F i = φ f m` for the parents `f, m` of
+/-- The inbreeding coefficient by Malécot's recursion: `F i = φ f m` for the parents `f, m` of
 `i`, and `F i = 0` for a founder. -/
 noncomputable def kinshipInbreeding (i : Fin n) : ℝ :=
   match P.parents i with
   | none => 0
   | some g => P.kinship (g 0) (g 1)
 
-/-- **Tabular kinship when the second individual is a later non-founder.** The tabular recursion for `i < j` with `j` a non-founder. -/
+/-- The tabular recursion for `i < j` with `j` a non-founder. -/
 theorem kinship_of_lt_of_parents_eq_some {i j : Fin n} {g : Fin 2 → Fin n} (hij : i < j)
     (h : P.parents j = some g) :
     P.kinship i j = (P.kinship i (g 0) + P.kinship i (g 1)) / 2 := by
   rw [kinship, dite_eq_right (not_lt.mpr hij.le), dite_eq_left hij]
   split <;> simp_all
 
-/-- **Tabular kinship when the second individual is a later founder.** The tabular recursion for `i < j` with `j` a founder. -/
+/-- The tabular recursion for `i < j` with `j` a founder. -/
 theorem kinship_of_lt_of_parents_eq_none {i j : Fin n} (hij : i < j)
     (h : P.parents j = none) : P.kinship i j = 0 := by
   rw [kinship, dite_eq_right (not_lt.mpr hij.le), dite_eq_left hij]
   split <;> simp_all
 
-/-- **Tabular self-kinship of a non-founder.** The tabular recursion on the diagonal for a non-founder: `φ i i = (1 + φ f m) / 2`. -/
+/-- The tabular recursion on the diagonal for a non-founder: `φ i i = (1 + φ f m) / 2`. -/
 theorem kinship_self_of_parents_eq_some {i : Fin n} {g : Fin 2 → Fin n}
     (h : P.parents i = some g) : P.kinship i i = (1 + P.kinship (g 0) (g 1)) / 2 := by
   rw [kinship, dite_eq_right (lt_irrefl i), dite_eq_right (lt_irrefl i)]
   split <;> simp_all
 
-/-- **Tabular self-kinship of a founder.** The tabular recursion on the diagonal for a founder: `φ i i = 1 / 2`. -/
+/-- The tabular recursion on the diagonal for a founder: `φ i i = 1 / 2`. -/
 theorem kinship_self_of_parents_eq_none {i : Fin n} (h : P.parents i = none) :
     P.kinship i i = 1 / 2 := by
   rw [kinship, dite_eq_right (lt_irrefl i), dite_eq_right (lt_irrefl i)]
   split <;> simp_all
 
-/-- **Tabular kinship when the first individual is a later non-founder.** The tabular recursion for `j < i` with `i` a non-founder. -/
+/-- The tabular recursion for `j < i` with `i` a non-founder. -/
 theorem kinship_of_gt_of_parents_eq_some {i j : Fin n} {g : Fin 2 → Fin n} (hji : j < i)
     (h : P.parents i = some g) :
     P.kinship i j = (P.kinship (g 0) j + P.kinship (g 1) j) / 2 := by
   rw [kinship, dite_eq_left hji]
   split <;> simp_all
 
-/-- **Tabular kinship when the first individual is a later founder.** The tabular recursion for `j < i` with `i` a founder. -/
+/-- The tabular recursion for `j < i` with `i` a founder. -/
 theorem kinship_of_gt_of_parents_eq_none {i j : Fin n} (hji : j < i)
     (h : P.parents i = none) : P.kinship i j = 0 := by
   rw [kinship, dite_eq_left hji]
   split <;> simp_all
 
-/-- **Symmetry of tabular kinship.** The tabular kinship is symmetric. -/
+/-- The tabular kinship is symmetric. -/
 theorem kinship_comm (i j : Fin n) : P.kinship i j = P.kinship j i := by
   induction hs : i.val + j.val using Nat.strong_induction_on generalizing i j with
   | _ s ih =>
@@ -210,7 +210,7 @@ theorem kinship_comm (i j : Fin n) : P.kinship i j = P.kinship j i := by
 
 /-! ### Wright's path formula -/
 
-/-- **Ancestral paths from an individual.** The ancestral paths from `i`: the lists `[i = v₀, v₁, …, v_k]` with each `v_{t+1}` a parent
+/-- The ancestral paths from `i`: the lists `[i = v₀, v₁, …, v_k]` with each `v_{t+1}` a parent
 of `v_t` (`k ≥ 0`; the path `[i]` has no edge). -/
 noncomputable def ancPaths (i : Fin n) : Finset (List (Fin n)) :=
   match h : P.parents i with
@@ -220,11 +220,11 @@ noncomputable def ancPaths (i : Fin n) : Finset (List (Fin n)) :=
 termination_by i.val
 decreasing_by exact P.parents_lt i g h k
 
-/-- **Ancestral paths ending at a given ancestor.** The ancestral paths from `i` that end at `A`. -/
+/-- The ancestral paths from `i` that end at `A`. -/
 noncomputable def pathsTo (i A : Fin n) : Finset (List (Fin n)) :=
   (P.ancPaths i).filter fun p => p.getLast? = some A
 
-/-- **Ancestral paths are nonempty with the starting individual as head.** Every path in `ancPaths i` starts at `i` and is nonempty. -/
+/-- Every path in `ancPaths i` starts at `i` and is nonempty. -/
 theorem head?_of_mem_ancPaths {i : Fin n} {p : List (Fin n)} (hp : p ∈ P.ancPaths i) :
     p.head? = some i := by
   rw [ancPaths] at hp
@@ -240,24 +240,24 @@ theorem head?_of_mem_ancPaths {i : Fin n} {p : List (Fin n)} (hp : p ∈ P.ancPa
 private theorem card_coins : Fintype.card (Coins n) = 4 ^ n := by
   simp [Coins]
 
-/-- **A founder gene copy is its own origin.** A founder copy is its own origin. -/
+/-- A founder copy is its own origin. -/
 theorem origin_of_parents_eq_none {c : Fin n × Fin 2} (h : P.parents c.1 = none) (ω : Coins n) :
     P.origin ω c = c := by
   rw [origin]; split <;> simp_all
 
-/-- **Origin of a gene copy of a non-founder.** A copy of a non-founder descends from the chosen copy of the corresponding parent. -/
+/-- A copy of a non-founder descends from the chosen copy of the corresponding parent. -/
 theorem origin_of_parents_eq_some {c : Fin n × Fin 2} {g : Fin 2 → Fin n}
     (h : P.parents c.1 = some g) (ω : Coins n) :
     P.origin ω c = P.origin ω (g c.2, ω c.1 c.2) := by
   rw [origin]; split <;> simp_all
 
-/-- **Ancestors precede their descendants.** Ancestors precede their descendants. -/
+/-- Ancestors precede their descendants. -/
 theorem IsAncestor.lt {a b : Fin n} (h : P.IsAncestor a b) : a < b := by
   induction h with
   | single h => obtain ⟨g, hg, k, rfl⟩ := h; exact P.parents_lt _ g hg k
   | tail _ h ih => obtain ⟨g, hg, k, rfl⟩ := h; exact ih.trans (P.parents_lt _ g hg k)
 
-/-- **Parents are ancestors.** A parent is an ancestor. -/
+/-- A parent is an ancestor. -/
 theorem isAncestor_of_parents_eq_some {i : Fin n} {g : Fin 2 → Fin n}
     (h : P.parents i = some g) (k : Fin 2) : P.IsAncestor (g k) i :=
   Relation.TransGen.single ⟨g, h, k, rfl⟩
@@ -373,18 +373,18 @@ private theorem flip_eq_of_lt {x i : Fin n} (l : Fin 2) (ω : Coins n) (hxi : i 
 
 /-! ### Gene dropping satisfies Malécot's recursion -/
 
-/-- **A gene copy is identical by descent with itself.** Two copies are identical by descent of themselves with probability `1`. -/
+/-- Two copies are identical by descent of themselves with probability `1`. -/
 theorem ibd_self (c : Fin n × Fin 2) : P.ibd c c = 1 := by
   have h : (4 : ℝ) ^ n ≠ 0 := by positivity
   simp only [ibd, Finset.filter_true, Finset.card_univ, card_coins]
   push_cast
   exact div_self h
 
-/-- **Symmetry of identity by descent.** Identity by descent is symmetric. -/
+/-- Identity by descent is symmetric. -/
 theorem ibd_comm (c d : Fin n × Fin 2) : P.ibd c d = P.ibd d c := by
   simp only [ibd, eq_comm]
 
-/-- **Malécot's recursion step for identity by descent.** One step of Malécot's recursion for identity by descent. -/
+/-- One step of Malécot's recursion for identity by descent. -/
 theorem ibd_of_parents_eq_some {i j : Fin n} {g : Fin 2 → Fin n} (hij : j ≠ i)
     (hanc : ¬ P.IsAncestor j i) (h : P.parents j = some g) (a b : Fin 2) :
     P.ibd (i, a) (j, b) = (P.ibd (i, a) (g b, 0) + P.ibd (i, a) (g b, 1)) / 2 := by
@@ -409,13 +409,13 @@ theorem ibd_of_parents_eq_some {i j : Fin n} {g : Fin 2 → Fin n} (hij : j ≠ 
   push_cast
   field_simp
 
-/-- **Self-kinship under gene dropping.** `φ i i = (1 + F i) / 2` under gene dropping. -/
+/-- `φ i i = (1 + F i) / 2` under gene dropping. -/
 theorem geneDropKinship_self (i : Fin n) :
     P.geneDropKinship i i = (1 + P.inbreeding i) / 2 := by
   simp only [geneDropKinship, inbreeding, Fin.sum_univ_two, P.ibd_self, P.ibd_comm (i, 1) (i, 0)]
   ring
 
-/-- **Founders are not inbred.** The inbreeding coefficient of a founder is `0`. -/
+/-- The inbreeding coefficient of a founder is `0`. -/
 theorem inbreeding_of_parents_eq_none {i : Fin n} (h : P.parents i = none) :
     P.inbreeding i = 0 := by
   have : (Finset.univ.filter fun ω : Coins n => P.origin ω (i, 0) = P.origin ω (i, 1)) = ∅ := by
@@ -484,7 +484,7 @@ theorem geneDropKinship_of_parents_eq_some {i j : Fin n} {g : Fin 2 → Fin n} (
   simp only [geneDropKinship, Fin.sum_univ_two, P.ibd_of_parents_eq_some hij hanc h]
   ring
 
-/-- **Zero kinship with an unrelated founder.** A founder `j ≠ i` that is not an ancestor of `i` has kinship `0` with `i`. -/
+/-- A founder `j ≠ i` that is not an ancestor of `i` has kinship `0` with `i`. -/
 theorem geneDropKinship_of_parents_eq_none {i j : Fin n} (hij : j ≠ i)
     (hanc : ¬ P.IsAncestor j i) (h : P.parents j = none) : P.geneDropKinship i j = 0 := by
   have h0 : ∀ a b : Fin 2, P.ibd (i, a) (j, b) = 0 := by
@@ -500,12 +500,12 @@ theorem geneDropKinship_of_parents_eq_none {i j : Fin n} (hij : j ≠ i)
     simp [ibd, this]
   simp [geneDropKinship, h0]
 
-/-- **Symmetry of gene-dropping kinship.** Gene-dropping kinship is symmetric. -/
+/-- Gene-dropping kinship is symmetric. -/
 theorem geneDropKinship_comm (i j : Fin n) : P.geneDropKinship i j = P.geneDropKinship j i := by
   simp only [geneDropKinship, Fin.sum_univ_two, P.ibd_comm (i, _) (j, _)]
   ring
 
-/-- **Malécot's recursion computes gene-dropping kinship.** The kinship coefficient computed by Malécot's recursion is the probability of identity by
+/-- The kinship coefficient computed by Malécot's recursion is the probability of identity by
 descent under gene dropping. -/
 theorem geneDropKinship_eq_kinship (i j : Fin n) :
     P.geneDropKinship i j = P.kinship i j := by
@@ -548,7 +548,7 @@ theorem geneDropKinship_eq_kinship (i j : Fin n) :
         ih _ (by have := lt0 hp 0; omega) (g 0) j rfl,
         ih _ (by have := lt0 hp 1; omega) (g 1) j rfl]
 
-/-- **Malécot's recursion computes the inbreeding coefficient.** The inbreeding coefficient computed by Malécot's recursion is the probability of identity
+/-- The inbreeding coefficient computed by Malécot's recursion is the probability of identity
 by descent of the two copies of `i` under gene dropping. -/
 theorem inbreeding_eq_kinshipInbreeding (i : Fin n) :
     P.inbreeding i = P.kinshipInbreeding i := by
@@ -559,12 +559,12 @@ theorem inbreeding_eq_kinshipInbreeding (i : Fin n) :
 
 /-! ### Wright's path formula: proof -/
 
-/-- **Ancestral paths from a founder.** The only ancestral path from a founder is `[i]`. -/
+/-- The only ancestral path from a founder is `[i]`. -/
 theorem mem_ancPaths_of_parents_eq_none {i : Fin n} (h : P.parents i = none)
     {p : List (Fin n)} : p ∈ P.ancPaths i ↔ p = [i] := by
   rw [ancPaths]; split <;> simp_all
 
-/-- **Ancestral paths from a non-founder.** The ancestral paths from a non-founder: `[i]` and `i :: q` for a path `q` from a parent. -/
+/-- The ancestral paths from a non-founder: `[i]` and `i :: q` for a path `q` from a parent. -/
 theorem mem_ancPaths_of_parents_eq_some {i : Fin n} {g : Fin 2 → Fin n}
     (h : P.parents i = some g) {p : List (Fin n)} :
     p ∈ P.ancPaths i ↔ p = [i] ∨ ∃ k, ∃ q ∈ P.ancPaths (g k), p = i :: q := by
@@ -583,7 +583,7 @@ theorem mem_ancPaths_of_parents_eq_some {i : Fin n} {g : Fin 2 → Fin n}
       · exact Or.inl h
       · exact Or.inr ⟨k, q, hq, rfl⟩
 
-/-- **Individuals on an ancestral path are its start or precede it.** Every individual on an ancestral path from `i` is `i` or precedes it. -/
+/-- Every individual on an ancestral path from `i` is `i` or precedes it. -/
 theorem le_of_mem_ancPaths {i : Fin n} {p : List (Fin n)} (hp : p ∈ P.ancPaths i) :
     ∀ v ∈ p, v ≤ i := by
   induction i using WellFoundedLT.induction generalizing p with
@@ -599,7 +599,7 @@ theorem le_of_mem_ancPaths {i : Fin n} {p : List (Fin n)} (hp : p ∈ P.ancPaths
       · exact le_rfl
       · exact (ih (g k) (P.parents_lt i g h k) hq v hv).trans (P.parents_lt i g h k).le
 
-/-- **Ancestral path as its start followed by a tail.** Every ancestral path from `i` starts with `i`. -/
+/-- Every ancestral path from `i` starts with `i`. -/
 theorem exists_eq_cons_of_mem_ancPaths {i : Fin n} {p : List (Fin n)}
     (hp : p ∈ P.ancPaths i) : ∃ q, p = i :: q := by
   have := P.head?_of_mem_ancPaths hp
@@ -609,7 +609,7 @@ theorem exists_eq_cons_of_mem_ancPaths {i : Fin n} {p : List (Fin n)}
     rw [List.head?_cons, Option.some.injEq] at this
     exact ⟨q, by rw [this]⟩
 
-/-- **An ancestral path returning to its start is trivial.** A path from `i` ending at `i` is `[i]`. -/
+/-- A path from `i` ending at `i` is `[i]`. -/
 theorem eq_singleton_of_mem_ancPaths {i : Fin n} {p : List (Fin n)} (hp : p ∈ P.ancPaths i)
     (hl : p.getLast? = some i) : p = [i] := by
   cases h : P.parents i with
@@ -713,7 +713,7 @@ private theorem sum_pathsTo_of_parents_eq_some (hP : P.NoSelfing) {j A : Fin n} 
     obtain ⟨r, rfl⟩ := P.exists_eq_cons_of_mem_ancPaths hq
     rw [List.getLast?_cons_cons]
 
-/-- **Trivial ancestral path.** `[i]` is an ancestral path from `i`. -/
+/-- `[i]` is an ancestral path from `i`. -/
 theorem singleton_mem_ancPaths (i : Fin n) : [i] ∈ P.ancPaths i := by
   cases h : P.parents i with
   | none => exact (P.mem_ancPaths_of_parents_eq_none h).mpr rfl

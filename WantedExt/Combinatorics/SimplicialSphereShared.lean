@@ -39,34 +39,22 @@ public import Mathlib
 
 namespace MathlibExt.Combinatorics.SimplicialSphereShared
 
-/-- **Finite simplicial sphere.** For a natural number $d$, a finite simplicial $(d-1)$-sphere
-is a geometric simplicial complex $K$ in the Euclidean space $\mathbb{R}^d$ with finitely many
-faces whose underlying space is homeomorphic to the unit sphere
-$S^{d-1} = \{x \in \mathbb{R}^d : \|x\| = 1\}$. -/
+/-- A finite geometric simplicial complex homeomorphic to the `(d-1)`-sphere. -/
 structure FiniteSimplicialSphere (d : ℕ) where
   K : Geometry.SimplicialComplex ℝ (EuclideanSpace ℝ (Fin d))
   finite_faces : K.faces.Finite
   sphere_homeomorph :
     Nonempty (K.space ≃ₜ Metric.sphere (0 : EuclideanSpace ℝ (Fin d)) 1)
 
-/-- **Face numbers of a simplicial sphere.** For a finite simplicial $(d-1)$-sphere $X$ and a
-natural number $k$, $f_k(X)$ is the number of $k$-dimensional faces of $X$, that is, of faces
-with exactly $k+1$ vertices. -/
+/-- Number of `k`-dimensional faces (faces with `k+1` vertices). -/
 noncomputable def faceCount {d : ℕ} (X : FiniteSimplicialSphere d) (k : ℕ) : ℕ :=
   {s : Finset (EuclideanSpace ℝ (Fin d)) | s ∈ X.K.faces ∧ s.card = k + 1}.ncard
 
-/-- **Extended face numbers.** For a finite simplicial $(d-1)$-sphere $X$ and a natural number
-$i$, the $i$-th extended face number of $X$ is $1$ if $i = 0$, and is the number $f_{i-1}(X)$ of
-$(i-1)$-dimensional faces of $X$ if $i \ge 1$. Thus it equals $f_{i-1}(X)$ under the convention
-$f_{-1}(X) = 1$. -/
+/-- Extended f-vector entry: `f_{-1} = 1`, then `f_{i-1}`. -/
 noncomputable def extendedFaceCount {d : ℕ} (X : FiniteSimplicialSphere d) (i : ℕ) : ℕ :=
   if i = 0 then 1 else faceCount X (i - 1)
 
-/-- **The h-vector of a simplicial sphere.** For a finite simplicial $(d-1)$-sphere $X$ and a
-natural number $j$,
-$$h_j(X) = \sum_{i=0}^{j} (-1)^{j-i} \binom{d-i}{j-i} f_{i-1}(X),$$
-where $f_{i-1}(X)$ is the number of $(i-1)$-dimensional faces of $X$ for $i \ge 1$,
-$f_{-1}(X) = 1$, and $d - i$ is read as $0$ when $i > d$. -/
+/-- The h-vector via the alternating binomial transform of the f-vector. -/
 noncomputable def hVector {d : ℕ} (X : FiniteSimplicialSphere d) (j : ℕ) : ℤ :=
   ∑ i ∈ Finset.range (j + 1),
     (-1 : ℤ) ^ (j - i) * (Nat.choose (d - i) (j - i) : ℤ) *

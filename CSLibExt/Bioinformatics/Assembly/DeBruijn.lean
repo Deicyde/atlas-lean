@@ -67,12 +67,12 @@ set_option autoImplicit false
 
 namespace Cslib.Bioinformatics.Assembly.DeBruijn
 
-/-- **The k-mers of a string.** The `k`-mers of `s` in order of position: the length-`k` windows `(s.drop i).take k`
+/-- The `k`-mers of `s` in order of position: the length-`k` windows `(s.drop i).take k`
 for `i + k ≤ |s|`. -/
 def kmers {α : Type*} (k : ℕ) (s : List α) : List (List α) :=
   (List.range (s.length + 1 - k)).map fun i => (s.drop i).take k
 
-/-- **Efficient executable computation of k-mers.** Executable form of `kmers`: the suffixes of `s` are generated once by `List.tails`, so the
+/-- Executable form of `kmers`: the suffixes of `s` are generated once by `List.tails`, so the
 cost is `O(|s| · k)` rather than the `Θ(|s|²)` of recomputing `s.drop i` for every `i`. The
 compiler uses it in place of `kmers` (`kmers_eq_kmersImpl`). -/
 def kmersImpl {α : Type*} (k : ℕ) (s : List α) : List (List α) :=
@@ -87,16 +87,16 @@ def kmersImpl {α : Type*} (k : ℕ) (s : List α) : List (List α) :=
   · intro i _ _
     simp [kmers, kmersImpl, List.getElem_tails]
 
-/-- **De Bruijn edge of a k-mer.** The edge of the de Bruijn multigraph contributed by a `k`-mer `w`: from its prefix
+/-- The edge of the de Bruijn multigraph contributed by a `k`-mer `w`: from its prefix
 `(k-1)`-mer `w.dropLast` to its suffix `(k-1)`-mer `w.tail`. -/
 def kmerEdge {α : Type*} (w : List α) : List α × List α := (w.dropLast, w.tail)
 
-/-- **De Bruijn multigraph of a string.** The de Bruijn multigraph of `s` (Pevzner–Tang–Waterman 2001) as its list of edge
+/-- The de Bruijn multigraph of `s` (Pevzner–Tang–Waterman 2001) as its list of edge
 occurrences: one edge per `k`-mer occurrence, in order of position. -/
 def deBruijnEdges {α : Type*} (k : ℕ) (s : List α) : List (List α × List α) :=
   (kmers k s).map kmerEdge
 
-/-- **String spelled by a walk of (k-1)-mers.** The string spelled by a walk of `(k-1)`-mers: the first vertex followed by the last letter of
+/-- The string spelled by a walk of `(k-1)`-mers: the first vertex followed by the last letter of
 each later vertex. -/
 def spell {α : Type*} : List (List α) → List α
   | [] => []
@@ -155,7 +155,7 @@ theorem zip_tail_kmers_perm {α : Type*} (k : ℕ) (hk : 1 ≤ k) (s : List α) 
     ((kmers (k - 1) s).zip (kmers (k - 1) s).tail).Perm (deBruijnEdges k s) := by
   exact List.Perm.of_eq (zip_tail_kmers k hk s)
 
-/-- **The (k-1)-mer walk of a string spells the string.** The `(k-1)`-mer walk of `s` spells `s` back (`2 ≤ k`, `k - 1 ≤ |s|`). -/
+/-- The `(k-1)`-mer walk of `s` spells `s` back (`2 ≤ k`, `k - 1 ≤ |s|`). -/
 theorem spell_kmers {α : Type*} (k : ℕ) (hk : 2 ≤ k) (s : List α) (hs : k - 1 ≤ s.length) :
     spell (kmers (k - 1) s) = s := by
   induction s with

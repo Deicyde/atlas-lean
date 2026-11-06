@@ -100,7 +100,7 @@ open Matrix Finset
 
 variable {m n k : Type*}
 
-/-- **Objective of nonnegative matrix factorization.** The NMF objective: the squared Frobenius distance `‖X - W H‖_F² = ∑ i j, (X i j - (W H) i j)²`
+/-- The NMF objective: the squared Frobenius distance `‖X - W H‖_F² = ∑ i j, (X i j - (W H) i j)²`
 between the data `X` and the product `W * H`. -/
 def objective [Fintype m] [Fintype n] [Fintype k]
     (X : Matrix m n ℝ) (W : Matrix m k ℝ) (H : Matrix k n ℝ) : ℝ :=
@@ -112,13 +112,13 @@ private lemma mul_nonneg_of_nonneg {l o p : Type*} [Fintype o] {A : Matrix l o �
     0 ≤ (A * B) i j :=
   Finset.sum_nonneg fun a _ => mul_nonneg (hA i a) (hB a j)
 
-/-- **Nonnegativity of the NMF objective.** The objective is nonnegative. -/
+/-- The objective is nonnegative. -/
 theorem objective_nonneg [Fintype m] [Fintype n] [Fintype k]
     (X : Matrix m n ℝ) (W : Matrix m k ℝ) (H : Matrix k n ℝ) :
     0 ≤ objective X W H :=
   sum_nonneg fun _ _ => sum_nonneg fun _ _ => sq_nonneg _
 
-/-- **The NMF objective is invariant under transposition.** Transposing exchanges the roles of `W` and `H`: `‖Xᵀ - Hᵀ Wᵀ‖² = ‖X - W H‖²`. -/
+/-- Transposing exchanges the roles of `W` and `H`: `‖Xᵀ - Hᵀ Wᵀ‖² = ‖X - W H‖²`. -/
 theorem objective_transpose [Fintype m] [Fintype n] [Fintype k]
     (X : Matrix m n ℝ) (W : Matrix m k ℝ) (H : Matrix k n ℝ) :
     objective Xᵀ Hᵀ Wᵀ = objective X W H := by
@@ -216,25 +216,25 @@ theorem exists_minimizer [Fintype m] [Fintype n] [Fintype k] (X : Matrix m n ℝ
 
 /-! ### Lee–Seung multiplicative updates -/
 
-/-- **Lee–Seung multiplicative update of H.** The Lee–Seung multiplicative update of `H` (Lee and Seung 2001, Theorem 1):
+/-- The Lee–Seung multiplicative update of `H` (Lee and Seung 2001, Theorem 1):
 `H a j ← H a j * (Wᵀ X) a j / (Wᵀ W H) a j`. An entry with a zero denominator becomes `0`
 (Lean's `x / 0 = 0`). -/
 noncomputable def updateH [Fintype m] [Fintype k]
     (X : Matrix m n ℝ) (W : Matrix m k ℝ) (H : Matrix k n ℝ) : Matrix k n ℝ :=
   Matrix.of fun a j => H a j * (Wᵀ * X) a j / (Wᵀ * W * H) a j
 
-/-- **Lee–Seung multiplicative update of W.** The Lee–Seung multiplicative update of `W` (Lee and Seung 2001, Theorem 1):
+/-- The Lee–Seung multiplicative update of `W` (Lee and Seung 2001, Theorem 1):
 `W i a ← W i a * (X Hᵀ) i a / (W H Hᵀ) i a`. An entry with a zero denominator becomes `0`. -/
 noncomputable def updateW [Fintype n] [Fintype k]
     (X : Matrix m n ℝ) (W : Matrix m k ℝ) (H : Matrix k n ℝ) : Matrix m k ℝ :=
   Matrix.of fun i a => W i a * (X * Hᵀ) i a / (W * H * Hᵀ) i a
 
-/-- **One sweep of the Lee–Seung algorithm.** One sweep of the Lee–Seung algorithm: update `H`, then update `W` using the new `H`. -/
+/-- One sweep of the Lee–Seung algorithm: update `H`, then update `W` using the new `H`. -/
 noncomputable def sweep [Fintype m] [Fintype n] [Fintype k]
     (X : Matrix m n ℝ) (p : Matrix m k ℝ × Matrix k n ℝ) : Matrix m k ℝ × Matrix k n ℝ :=
   (updateW X p.1 (updateH X p.1 p.2), updateH X p.1 p.2)
 
-/-- **The W update is the H update of the transposed problem.** The `W` update is the `H` update of the transposed problem. -/
+/-- The `W` update is the `H` update of the transposed problem. -/
 theorem updateW_eq_transpose [Fintype n] [Fintype k]
     (X : Matrix m n ℝ) (W : Matrix m k ℝ) (H : Matrix k n ℝ) :
     updateW X W H = (updateH Xᵀ Hᵀ Wᵀ)ᵀ := by
@@ -244,7 +244,7 @@ theorem updateW_eq_transpose [Fintype n] [Fintype k]
   ext i a
   simp only [updateW, updateH, of_apply, transpose_apply, transpose_transpose, h1, h2]
 
-/-- **The Lee–Seung H update preserves nonnegativity.** The `H` update keeps `H` nonnegative when `X`, `W`, `H` are nonnegative. -/
+/-- The `H` update keeps `H` nonnegative when `X`, `W`, `H` are nonnegative. -/
 theorem updateH_nonneg [Fintype m] [Fintype k]
     {X : Matrix m n ℝ} {W : Matrix m k ℝ} {H : Matrix k n ℝ}
     (hX : ∀ i j, 0 ≤ X i j) (hW : ∀ i a, 0 ≤ W i a) (hH : ∀ a j, 0 ≤ H a j) (a : k) (j : n) :
@@ -254,7 +254,7 @@ theorem updateH_nonneg [Fintype m] [Fintype k]
     mul_nonneg_of_nonneg (mul_nonneg_of_nonneg (fun a i => hW i a) hW) hH
   exact div_nonneg (mul_nonneg (hH a j) (hWX a j)) (hD a j)
 
-/-- **The Lee–Seung W update preserves nonnegativity.** The `W` update keeps `W` nonnegative when `X`, `W`, `H` are nonnegative. -/
+/-- The `W` update keeps `W` nonnegative when `X`, `W`, `H` are nonnegative. -/
 theorem updateW_nonneg [Fintype n] [Fintype k]
     {X : Matrix m n ℝ} {W : Matrix m k ℝ} {H : Matrix k n ℝ}
     (hX : ∀ i j, 0 ≤ X i j) (hW : ∀ i a, 0 ≤ W i a) (hH : ∀ a j, 0 ≤ H a j) (i : m) (a : k) :
@@ -393,7 +393,7 @@ theorem objective_updateW_le [Fintype m] [Fintype n] [Fintype k]
     transpose_transpose]
   exact objective_updateH_le (fun j a => hH a j) (fun a i => hW i a)
 
-/-- **A Lee–Seung sweep preserves nonnegativity.** One sweep keeps both factors nonnegative when `X ≥ 0`. -/
+/-- One sweep keeps both factors nonnegative when `X ≥ 0`. -/
 theorem sweep_nonneg [Fintype m] [Fintype n] [Fintype k]
     {X : Matrix m n ℝ} {p : Matrix m k ℝ × Matrix k n ℝ}
     (hX : ∀ i j, 0 ≤ X i j) (hW : ∀ i a, 0 ≤ p.1 i a) (hH : ∀ a j, 0 ≤ p.2 a j) :
@@ -428,17 +428,17 @@ theorem objective_sweep_iterate_antitone [Fintype m] [Fintype n] [Fintype k]
 
 /-! ### Stationarity at fixed points -/
 
-/-- **Gradient of the NMF objective with respect to H.** The gradient of the objective with respect to `H`: `2 (Wᵀ W H - Wᵀ X)`. -/
+/-- The gradient of the objective with respect to `H`: `2 (Wᵀ W H - Wᵀ X)`. -/
 def gradH [Fintype m] [Fintype k]
     (X : Matrix m n ℝ) (W : Matrix m k ℝ) (H : Matrix k n ℝ) : Matrix k n ℝ :=
   (2 : ℝ) • (Wᵀ * W * H - Wᵀ * X)
 
-/-- **Gradient of the NMF objective with respect to W.** The gradient of the objective with respect to `W`: `2 (W H Hᵀ - X Hᵀ)`. -/
+/-- The gradient of the objective with respect to `W`: `2 (W H Hᵀ - X Hᵀ)`. -/
 def gradW [Fintype n] [Fintype k]
     (X : Matrix m n ℝ) (W : Matrix m k ℝ) (H : Matrix k n ℝ) : Matrix m k ℝ :=
   (2 : ℝ) • (W * H * Hᵀ - X * Hᵀ)
 
-/-- **Partial derivative of the NMF objective in an entry of H.** `gradH X W H a j` is the partial derivative of the objective in the entry `H a j`. -/
+/-- `gradH X W H a j` is the partial derivative of the objective in the entry `H a j`. -/
 theorem hasDerivAt_objective_H [Fintype m] [Fintype n] [Fintype k] [DecidableEq k] [DecidableEq n]
     (X : Matrix m n ℝ)
     (W : Matrix m k ℝ) (H : Matrix k n ℝ) (a : k) (j : n) :
@@ -474,7 +474,7 @@ theorem hasDerivAt_objective_H [Fintype m] [Fintype n] [Fintype k] [DecidableEq 
   simp only [ite_true]
   ring
 
-/-- **Partial derivative of the NMF objective in an entry of W.** `gradW X W H i a` is the partial derivative of the objective in the entry `W i a`. -/
+/-- `gradW X W H i a` is the partial derivative of the objective in the entry `W i a`. -/
 theorem hasDerivAt_objective_W [Fintype m] [Fintype n] [Fintype k] [DecidableEq m] [DecidableEq k]
     (X : Matrix m n ℝ)
     (W : Matrix m k ℝ) (H : Matrix k n ℝ) (i : m) (a : k) :
@@ -523,7 +523,7 @@ theorem mul_gradW_eq_zero_of_updateW_eq [Fintype n] [Fintype k]
   · have h' := (div_eq_iff hD).mp h
     linear_combination (-2) * h'
 
-/-- **Karush–Kuhn–Tucker point of nonnegative matrix factorization.** The Karush–Kuhn–Tucker conditions of `min ‖X - W H‖_F²` subject to `W, H ≥ 0`: primal
+/-- The Karush–Kuhn–Tucker conditions of `min ‖X - W H‖_F²` subject to `W, H ≥ 0`: primal
 feasibility, dual feasibility (nonnegative gradients) and complementary slackness. -/
 structure IsKKTPoint [Fintype m] [Fintype n] [Fintype k]
     (X : Matrix m n ℝ) (W : Matrix m k ℝ) (H : Matrix k n ℝ) : Prop where
@@ -560,7 +560,7 @@ theorem isKKTPoint_of_sweep_eq [Fintype m] [Fintype n] [Fintype k]
 
 /-! ### Identifiability under separability -/
 
-/-- **Separable factor matrix.** `H` is separable: every factor `a` has a pure column, a column `j` of `H` equal to a
+/-- `H` is separable: every factor `a` has a pure column, a column `j` of `H` equal to a
 positive multiple of the unit vector `e_a`. For `X = W * H` this makes column `j` of `X` a
 positive multiple of column `a` of `W` (a sample containing only factor `a`). Applied to `Wᵀ`
 it says that every factor has a pure row of `W` (an "anchor" feature of factor `a` alone). -/
@@ -692,7 +692,7 @@ theorem eq_of_isSeparable [Fintype k] [DecidableEq k] {X : Matrix m n ℝ}
 
 /-! ### Nonnegative rank -/
 
-/-- **Nonnegative rank of a matrix.** The nonnegative rank of `X`: the least `r` such that `X = W * H` with `W : m × r` and
+/-- The nonnegative rank of `X`: the least `r` such that `X = W * H` with `W : m × r` and
 `H : r × n` entrywise nonnegative (Cohen and Rothblum 1993). If `X` has a negative entry no
 such factorization exists and the value is the junk value `sInf ∅ = 0`. -/
 noncomputable def nonnegRank (X : Matrix m n ℝ) : ℕ :=
@@ -710,13 +710,13 @@ private lemma exists_mul_eq_card [Fintype n] {X : Matrix m n ℝ} (hX : ∀ i j,
   ext i j
   simp [mul_apply]
 
-/-- **A nonnegative factorization bounds the nonnegative rank.** A nonnegative factorization with inner dimension `r` bounds the nonnegative rank by `r`. -/
+/-- A nonnegative factorization with inner dimension `r` bounds the nonnegative rank by `r`. -/
 theorem nonnegRank_le_of_mul_eq {r : ℕ} {X : Matrix m n ℝ} (W : Matrix m (Fin r) ℝ)
     (H : Matrix (Fin r) n ℝ) (hW : ∀ i a, 0 ≤ W i a) (hH : ∀ a j, 0 ≤ H a j) (hX : W * H = X) :
     nonnegRank X ≤ r := by
   exact Nat.sInf_le ⟨W, H, hW, hH, hX⟩
 
-/-- **Existence of a factorization of nonnegative-rank inner dimension.** A nonnegative matrix has a nonnegative factorization of inner dimension `nonnegRank X`. -/
+/-- A nonnegative matrix has a nonnegative factorization of inner dimension `nonnegRank X`. -/
 theorem exists_mul_eq_nonnegRank [Finite n] {X : Matrix m n ℝ} (hX : ∀ i j, 0 ≤ X i j) :
     ∃ (W : Matrix m (Fin (nonnegRank X)) ℝ) (H : Matrix (Fin (nonnegRank X)) n ℝ),
       (∀ i a, 0 ≤ W i a) ∧ (∀ a j, 0 ≤ H a j) ∧ W * H = X := by
@@ -726,7 +726,7 @@ theorem exists_mul_eq_nonnegRank [Finite n] {X : Matrix m n ℝ} (hX : ∀ i j, 
   have hS : S.Nonempty := ⟨Fintype.card n, exists_mul_eq_card hX⟩
   exact Nat.sInf_mem hS
 
-/-- **Nonnegative rank is at most the number of columns.** The nonnegative rank of a nonnegative matrix is at most its number of columns. -/
+/-- The nonnegative rank of a nonnegative matrix is at most its number of columns. -/
 theorem nonnegRank_le_card_width [Fintype n] {X : Matrix m n ℝ} (hX : ∀ i j, 0 ≤ X i j) :
     nonnegRank X ≤ Fintype.card n := by
   obtain ⟨W, H, hW, hH, hX'⟩ := exists_mul_eq_card hX
@@ -741,7 +741,7 @@ theorem rank_le_nonnegRank [Fintype n] {X : Matrix m n ℝ} (hX : ∀ i j, 0 ≤
 
 /-! ### Applications -/
 
-/-- **Column sums of a matrix product.** Column sums of a product: `∑ i, (W H) i j = ∑ a, (∑ i, W i a) H a j`. -/
+/-- Column sums of a product: `∑ i, (W H) i j = ∑ a, (∑ i, W i a) H a j`. -/
 theorem sum_mul_apply [Fintype m] [Fintype k] (W : Matrix m k ℝ) (H : Matrix k n ℝ) (j : n) :
     ∑ i, (W * H) i j = ∑ a, (∑ i, W i a) * H a j := by
   simp only [mul_apply]

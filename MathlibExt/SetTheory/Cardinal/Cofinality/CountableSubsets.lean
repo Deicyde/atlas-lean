@@ -64,16 +64,13 @@ namespace MetaMathlibExt
 
 -- Logic 37: Countable subsets of $\alpha$
 
-/-- **Countable subsets of a set.** [α]^ω or P_{ω₁}(α) is the set of countable subsets of α -/
+/-- [α]^ω or P_{ω₁}(α) is the set of countable subsets of α -/
 def CountableSubsets.{u} (α : Type u) : Set (Set α) := {x | x.Countable}
 
 -- Logic 39: Club in $[X]^\omega$
 
-/-- **Club families of countable sets.** Let $X$ be a set. A family $C$ of subsets of $X$ is club
-in the countable subsets of $X$ when every member of $C$ is countable (finite or countably
-infinite), every countable set $x \subseteq X$ is contained in some member of $C$, and for every
-sequence $x_0 \subseteq x_1 \subseteq x_2 \subseteq \cdots$ of members of $C$ the union
-$\bigcup_{n \in \mathbb{N}} x_n$ belongs to $C$.
+/-- C is club in [X]^ω if its members are countable, it is cofinal under ⊆ among the
+countable sets, and it is closed under unions of increasing ω-chains.
 -/
 structure IsClubOmega {α : Type*} (C : Set (Set α)) : Prop where
   mem_countable : ∀ x ∈ C, x.Countable
@@ -82,30 +79,20 @@ structure IsClubOmega {α : Type*} (C : Set (Set α)) : Prop where
 
 -- Logic 40: Stationarity in $[X]^\omega$
 
-/-- **Stationary families of countable sets.** Let $X$ be a set. A family $S$ of subsets of $X$ is
-stationary in the countable subsets of $X$ when $S$ meets every family $C$ that is club in the
-countable subsets of $X$, that is, some set belongs to both $S$ and $C$.
--/
+/-- S is stationary in [X]^ω if it meets every club. -/
 def IsStationaryOmega {α : Type*} (S : Set (Set α)) : Prop :=
   ∀ ⦃C : Set (Set α)⦄, IsClubOmega C → (S ∩ C).Nonempty
 
 -- Logic 41: Closure points
 
-/-- **Closure points of a finitary function.** Let $X$ be a set and let $F$ be a function
-assigning an element of $X$ to every finite subset of $X$. The closure points of $F$ are the
-countable (finite or countably infinite) sets $a \subseteq X$ such that $F(s) \in a$ for every
-finite set $s \subseteq a$.
--/
+/-- For a function F: [X]^{<ω}→ X, the set of closure points of F is {a∈ [X]^ω : F[a]⊆ a}. -/
 def ClosurePoints {α : Type*} (F : Finset α → α) : Set (Set α) :=
   {x | x.Countable ∧ ∀ s : Finset α, ↑s ⊆ x → F s ∈ x}
 
 -- Logic 51: Closure Points Sequence
 
-/-- **Closure points of a sequence of finitary functions.** Let $X$ be a set and let
-$(F_n)_{n \in \mathbb{N}}$ be a sequence of functions, each assigning an element of $X$ to every
-finite subset of $X$. The closure points of $(F_n)$ are the countable (finite or countably
-infinite) sets $x \subseteq X$ such that $F_n(s) \in x$ for every $n \in \mathbb{N}$ and every
-finite set $s \subseteq x$.
+/-- The closure points of a countable family F : ℕ → [X]^{<ω} → X: the countable x ⊆ X
+closed under every F(n) applied to their own finite subsets.
 -/
 def ClosurePointsSeq {α : Type*} (F : ℕ → Finset α → α) : Set (Set α) :=
   {x | x.Countable ∧ ∀ (n : ℕ) (s : Finset α), ↑s ⊆ x → F n s ∈ x}
@@ -131,7 +118,7 @@ def ClosurePointsSeq {α : Type*} (F : ℕ → Finset α → α) : Set (Set α) 
       [α]^ω.
 -/
 
-/-- **Closure points and clubs of countable subsets.** 1. Let F : Finset(α) → α. Then ClosurePointsSeq(λ n : ℕ,, F) =      ClosurePoints(F).   2. For
+/-- 1. Let F : Finset(α) → α. Then ClosurePointsSeq(λ n : ℕ,, F) =      ClosurePoints(F).   2. For
    every finitary operation F, ∅ ∉ ClosurePoints(F).   3. Let f : ℕ → 𝒫(α) with each f(n) countable.
    Then ⋃_{n ∈ ℕ} f(n)      is countable.   4. [α]^ω is club in [α]^ω.   5. ∅ is not stationary in
    [α]^ω.   6. If S is stationary in [α]^ω then S ≠ ∅.   7.

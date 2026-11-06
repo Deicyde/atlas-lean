@@ -96,7 +96,7 @@ open MathlibExt.Biology.PopulationGenetics.Diffusion.ChainLimit
 
 /-! ### The Wright–Fisher chain as an operator on continuous functions -/
 
-/-- **One generation of the neutral Wright–Fisher chain.** One generation of the neutral Wright–Fisher chain with `M` gene copies, acting on continuous
+/-- One generation of the neutral Wright–Fisher chain with `M` gene copies, acting on continuous
 functions of the allele frequency: `(wfStep M f)(x) = ∑_k f(k/M) C(M, k) x^k (1 - x)^(M - k)`,
 which for `M ≥ 1` is the expected value of `f` at the next frequency `Bin(M, x) / M` (the `M`-th
 Bernstein operator, Mathlib's `bernsteinApproximation`; the expectation is
@@ -121,26 +121,26 @@ noncomputable def wfStep (M : ℕ) : C(I, ℝ) →L[ℝ] C(I, ℝ) :=
             exact mul_le_mul_of_nonneg_left (f.norm_coe_le_norm _) bernstein_nonneg
         _ = ‖f‖ := by rw [← Finset.sum_mul, bernstein.probability, one_mul])
 
-/-- **Wright–Fisher step is the Bernstein operator.** `wfStep M` is the Bernstein approximation operator. -/
+/-- `wfStep M` is the Bernstein approximation operator. -/
 theorem wfStep_apply (M : ℕ) (f : C(I, ℝ)) : wfStep M f = bernsteinApproximation M f := rfl
 
-/-- **One Wright–Fisher generation is a sup-norm contraction.** One Wright–Fisher generation is a contraction for the sup norm. -/
+/-- One Wright–Fisher generation is a contraction for the sup norm. -/
 theorem norm_wfStep_le (M : ℕ) : ‖wfStep M‖ ≤ 1 :=
   LinearMap.mkContinuous_norm_le _ zero_le_one _
 
-/-- **One Wright–Fisher generation fixes constants.** One Wright–Fisher generation fixes the constant function `1`. -/
+/-- One Wright–Fisher generation fixes the constant function `1`. -/
 theorem wfStep_apply_one (M : ℕ) : wfStep M 1 = 1 := by
   ext x
   simp [wfStep_apply, bernsteinApproximation.apply, bernstein.probability]
 
-/-- **One Wright–Fisher generation preserves nonnegativity.** One Wright–Fisher generation maps nonnegative functions to nonnegative functions. -/
+/-- One Wright–Fisher generation maps nonnegative functions to nonnegative functions. -/
 theorem wfStep_nonneg (M : ℕ) {f : C(I, ℝ)} (hf : 0 ≤ f) : 0 ≤ wfStep M f := by
   refine ContinuousMap.le_def.2 fun x => ?_
   simp only [ContinuousMap.zero_apply, wfStep_apply, bernsteinApproximation.apply]
   exact Finset.sum_nonneg fun k _ =>
     smul_nonneg bernstein_nonneg (ContinuousMap.le_def.1 hf _)
 
-/-- **Iterated Wright–Fisher generations are sup-norm contractions.** Any number of Wright–Fisher generations is a contraction for the sup norm. -/
+/-- Any number of Wright–Fisher generations is a contraction for the sup norm. -/
 theorem norm_wfStep_pow_le (M m : ℕ) : ‖wfStep M ^ m‖ ≤ 1 := by
   induction m with
   | zero => exact ContinuousLinearMap.norm_id_le
@@ -279,7 +279,7 @@ theorem integral_binomial_div_pow (M n : ℕ) (hM : M ≠ 0) (x : I) :
     ← sum_binomial_mul_div_pow M n hM]
   simp only [smul_eq_mul]
 
-/-- **One Wright–Fisher generation acting on monomials.** One generation maps `x ^ n` to `∑_k wfLineageProb M n k x ^ k`. -/
+/-- One generation maps `x ^ n` to `∑_k wfLineageProb M n k x ^ k`. -/
 theorem wfStep_X_pow (M n : ℕ) (hM : M ≠ 0) :
     wfStep M ((X ^ n : ℝ[X]).toContinuousMapOn I) =
       (∑ k ∈ Finset.range (n + 1), C (wfLineageProb M n k) * X ^ k).toContinuousMapOn I := by
@@ -337,7 +337,7 @@ theorem wfStep_pow_X_pow (M m N : ℕ) (hM : M ≠ 0) (n : Fin (N + 1)) :
 
 /-! ### The dual semigroup on polynomials -/
 
-/-- **Dual moment polynomial of Kingman's coalescent.** The dual moment polynomial `∑_k P_t(n → k) X^k`, where for `t ≥ 0`,
+/-- The dual moment polynomial `∑_k P_t(n → k) X^k`, where for `t ≥ 0`,
 `P_t(n → k) = exp (t • G) n k` is the probability that `n` lineages of Kingman's coalescent have
 `k` ancestors time `t` earlier (time in units of `M = 2N` generations); evaluated at `x` it is
 `E_n[x^{A_t}]` for the block-counting process `A`. -/
@@ -345,13 +345,13 @@ noncomputable def dualMomentPoly (t : ℝ) (n : ℕ) : ℝ[X] :=
   ∑ k : Fin (n + 1),
     C (NormedSpace.exp (t • blockCountingGenerator n) (Fin.last n) k) * X ^ (k : ℕ)
 
-/-- **Wright–Fisher semigroup on polynomials by moment duality.** The neutral Wright–Fisher diffusion semigroup on polynomials, defined by moment duality on
+/-- The neutral Wright–Fisher diffusion semigroup on polynomials, defined by moment duality on
 the monomial basis: `polySemigroup t (X ^ n) = dualMomentPoly t n`. It is meaningful for
 `t ≥ 0`; the formula is defined, and the group law holds, for every real `t`. -/
 noncomputable def polySemigroup (t : ℝ) : ℝ[X] →ₗ[ℝ] ℝ[X] :=
   (Polynomial.basisMonomials ℝ).constr ℝ (dualMomentPoly t)
 
-/-- **Dual semigroup on a monomial.** The dual semigroup on a monomial is the dual moment polynomial. -/
+/-- The dual semigroup on a monomial is the dual moment polynomial. -/
 theorem polySemigroup_X_pow (t : ℝ) (n : ℕ) : polySemigroup t (X ^ n) = dualMomentPoly t n := by
   have h : (X ^ n : ℝ[X]) = basisMonomials ℝ n := by rw [coe_basisMonomials, X_pow_eq_monomial]
   rw [h, polySemigroup, Module.Basis.constr_basis]
@@ -384,7 +384,7 @@ private theorem dualMomentPoly_eq_sum_fin (t : ℝ) {n : ℕ} (k : Fin (n + 1)) 
   have hkj : k < ⟨j, hj⟩ := Fin.lt_def.2 (by simp; omega)
   rw [exp_smul_blockCountingGenerator_of_lt t hkj, C_0, zero_mul]
 
-/-- **Dual semigroup at time zero is the identity.** At time `0` the dual semigroup is the identity. -/
+/-- At time `0` the dual semigroup is the identity. -/
 theorem polySemigroup_zero : polySemigroup 0 = LinearMap.id := by
   refine (basisMonomials ℝ).ext fun n => ?_
   simp only [coe_basisMonomials, ← X_pow_eq_monomial, polySemigroup_X_pow, LinearMap.id_apply,
@@ -410,7 +410,7 @@ theorem polySemigroup_add (s t : ℝ) :
     smul_smul, C_mul']
   exact Finset.sum_comm
 
-/-- **Dual semigroup fixes the constant polynomial one.** The dual semigroup fixes the constant polynomial `1` (zero lineages stay zero). -/
+/-- The dual semigroup fixes the constant polynomial `1` (zero lineages stay zero). -/
 theorem polySemigroup_one (t : ℝ) : polySemigroup t 1 = 1 := by
   have hG : blockCountingGenerator 0 = 0 := by
     ext i j
@@ -483,7 +483,7 @@ theorem tendsto_wfStep_pow_floor_toContinuousMapOn (p : ℝ[X]) {t : ℝ} (ht : 
 
 /-! ### The semigroup on continuous functions -/
 
-/-- **Rescaled Wright–Fisher iterates form a Cauchy sequence.** For every continuous `f`, the sequence `(wfStep M)^⌊tM⌋ f` is Cauchy in `C([0, 1], ℝ)`: it
+/-- For every continuous `f`, the sequence `(wfStep M)^⌊tM⌋ f` is Cauchy in `C([0, 1], ℝ)`: it
 converges on the dense set of polynomials and the operators are contractions. -/
 theorem cauchySeq_wfStep_pow_floor (t : ℝ) (f : C(I, ℝ)) :
     CauchySeq fun M : ℕ => (wfStep M ^ ⌊t * M⌋₊) f := by
@@ -496,7 +496,7 @@ theorem cauchySeq_wfStep_pow_floor (t : ℝ) (f : C(I, ℝ)) :
   · simp only [floor_mul_eq_zero ht.le, pow_zero]
     exact cauchySeq_const _
 
-/-- **Neutral Wright–Fisher diffusion semigroup.** The neutral Wright–Fisher diffusion semigroup on `C([0, 1], ℝ)`, time in units of `M = 2N`
+/-- The neutral Wright–Fisher diffusion semigroup on `C([0, 1], ℝ)`, time in units of `M = 2N`
 generations: `wfSemigroup t f` is the uniform limit of `(wfStep M)^⌊tM⌋ f` as `M → ∞`
 (`tendsto_wfStep_pow_floor`). For `t < 0` it is the identity (a junk value: `⌊tM⌋₊ = 0`). -/
 noncomputable def wfSemigroup (t : ℝ) : C(I, ℝ) →L[ℝ] C(I, ℝ) :=
@@ -529,20 +529,20 @@ theorem tendsto_wfStep_pow_floor (t : ℝ) (f : C(I, ℝ)) :
 theorem norm_wfSemigroup_le (t : ℝ) : ‖wfSemigroup t‖ ≤ 1 :=
   LinearMap.mkContinuous_norm_le _ zero_le_one _
 
-/-- **Diffusion semigroup agrees with the dual semigroup on polynomials.** On polynomials the diffusion semigroup is the dual semigroup, for `t ≥ 0`. -/
+/-- On polynomials the diffusion semigroup is the dual semigroup, for `t ≥ 0`. -/
 theorem wfSemigroup_toContinuousMapOn {t : ℝ} (ht : 0 ≤ t) (p : ℝ[X]) :
     wfSemigroup t (p.toContinuousMapOn I) = (polySemigroup t p).toContinuousMapOn I :=
   tendsto_nhds_unique (tendsto_wfStep_pow_floor t _)
     (tendsto_wfStep_pow_floor_toContinuousMapOn p ht)
 
-/-- **Wright–Fisher semigroup at nonpositive times is the identity.** For `t ≤ 0`, `wfSemigroup t` is the identity (at `t = 0` by definition of a semigroup; for
+/-- For `t ≤ 0`, `wfSemigroup t` is the identity (at `t = 0` by definition of a semigroup; for
 `t < 0` this is a junk value of the definition). -/
 theorem wfSemigroup_of_nonpos {t : ℝ} (ht : t ≤ 0) : wfSemigroup t = 1 := by
   refine ContinuousLinearMap.ext fun f => tendsto_nhds_unique (tendsto_wfStep_pow_floor t f) ?_
   simp only [floor_mul_eq_zero ht, pow_zero, one_apply_eq_self]
   exact tendsto_const_nhds
 
-/-- **Wright–Fisher diffusion semigroup at time zero is the identity.** At time `0` the diffusion semigroup is the identity. -/
+/-- At time `0` the diffusion semigroup is the identity. -/
 @[simp]
 theorem wfSemigroup_zero : wfSemigroup 0 = 1 :=
   wfSemigroup_of_nonpos le_rfl
@@ -572,7 +572,7 @@ theorem wfSemigroup_add {s t : ℝ} (hs : 0 ≤ s) (ht : 0 ≤ t) :
 private theorem wfStep_pow_one (M m : ℕ) : (wfStep M ^ m) 1 = 1 := by
   exact ContinuousLinearMap.pow_apply_one (wfStep M) (wfStep_apply_one M) m
 
-/-- **Wright–Fisher diffusion semigroup fixes constants.** The diffusion semigroup fixes constants (it is Markov: total mass `1`). -/
+/-- The diffusion semigroup fixes constants (it is Markov: total mass `1`). -/
 theorem wfSemigroup_apply_one (t : ℝ) : wfSemigroup t 1 = 1 := by
   refine tendsto_nhds_unique (tendsto_wfStep_pow_floor t 1) ?_
   simp only [wfStep_pow_one]
@@ -657,11 +657,11 @@ theorem tendsto_wfSemigroup_nhdsGE_zero (f : C(I, ℝ)) :
     (nhdsWithin_le_nhds (s := Set.Ici 0))
   simpa [polySemigroup_zero] using this
 
-/-- **Neutral Wright–Fisher generator on polynomials.** The neutral Wright–Fisher generator on polynomials, `x (1 - x) / 2 · p''`. -/
+/-- The neutral Wright–Fisher generator on polynomials, `x (1 - x) / 2 · p''`. -/
 noncomputable def polyGenerator (p : ℝ[X]) : ℝ[X] :=
   C (1 / 2 : ℝ) * X * (1 - X) * derivative (derivative p)
 
-/-- **Polynomial generator agrees with the neutral Wright–Fisher generator.** `polyGenerator` is the neutral Wright–Fisher generator `generator 0` evaluated on `p`. -/
+/-- `polyGenerator` is the neutral Wright–Fisher generator `generator 0` evaluated on `p`. -/
 theorem eval_polyGenerator (p : ℝ[X]) (x : ℝ) :
     (polyGenerator p).eval x = generator 0 (fun y => p.eval y) x := by
   have h : deriv (fun y => p.eval y) = fun y => (derivative p).eval y :=

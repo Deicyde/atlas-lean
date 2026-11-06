@@ -67,7 +67,7 @@ section Profile
 
 variable {A : Type*}
 
-/-- **Profile log-odds score of a residue.** The profile log-odds score `log (p a / q a)` of residue `a`: `p` is the position-specific
+/-- The profile log-odds score `log (p a / q a)` of residue `a`: `p` is the position-specific
 profile probability (estimated from aligned homologs), `q` the background probability.
 Meaningful for `p a, q a > 0`; otherwise Lean's `log 0 = 0` and `x / 0 = 0` give junk. -/
 noncomputable def profileScore (p q : A → ℝ) (a : A) : ℝ :=
@@ -102,7 +102,7 @@ theorem sum_mul_profileScore_nonneg [Fintype A] {p q : A → ℝ} (hp : ∀ a, 0
   calc (0 : ℝ) = ∑ a, (p a - q a) := by rw [Finset.sum_sub_distrib, hp1, hq1, sub_self]
     _ ≤ _ := Finset.sum_le_sum fun a _ => h a
 
-/-- **Expected profile score under the background is nonpositive.** If `p` and `q` are probability vectors and `p` is positive, the expected score under the
+/-- If `p` and `q` are probability vectors and `p` is positive, the expected score under the
 background, `∑ q a log (p a / q a)`, is nonpositive. -/
 theorem sum_mul_profileScore_nonpos [Fintype A] {p q : A → ℝ} (hp : ∀ a, 0 < p a)
     (hq : ∀ a, 0 ≤ q a) (hp1 : ∑ a, p a = 1) (hq1 : ∑ a, q a = 1) :
@@ -119,19 +119,19 @@ theorem sum_mul_profileScore_nonpos [Fintype A] {p q : A → ℝ} (hp : ∀ a, 0
   calc ∑ a, q a * profileScore p q a ≤ ∑ a, (p a - q a) := Finset.sum_le_sum fun a _ => h a
     _ = 0 := by rw [Finset.sum_sub_distrib, hp1, hq1, sub_self]
 
-/-- **PSIC score difference of a substitution.** The PSIC score difference of a substitution from the wild-type residue `wt` to the mutant
+/-- The PSIC score difference of a substitution from the wild-type residue `wt` to the mutant
 residue `mt`: `profileScore p q wt - profileScore p q mt`. -/
 noncomputable def psicDifference (p q : A → ℝ) (wt mt : A) : ℝ :=
   profileScore p q wt - profileScore p q mt
 
-/-- **PSIC difference as a log ratio of likelihood ratios.** The PSIC difference is the log of the ratio of the two residues' likelihood ratios. -/
+/-- The PSIC difference is the log of the ratio of the two residues' likelihood ratios. -/
 theorem psicDifference_eq_log {p q : A → ℝ} {wt mt : A} (hp : ∀ a, 0 < p a)
     (hq : ∀ a, 0 < q a) :
     psicDifference p q wt mt = log ((p wt / q wt) / (p mt / q mt)) := by
   rw [psicDifference, profileScore, profileScore,
     log_div (div_pos (hp wt) (hq wt)).ne' (div_pos (hp mt) (hq mt)).ne']
 
-/-- **Positivity criterion for the PSIC difference.** The PSIC difference is positive iff the wild type is more enriched in the profile, relative
+/-- The PSIC difference is positive iff the wild type is more enriched in the profile, relative
 to background, than the mutant. -/
 theorem psicDifference_pos_iff {p q : A → ℝ} {wt mt : A} (hp : ∀ a, 0 < p a)
     (hq : ∀ a, 0 < q a) :
@@ -144,7 +144,7 @@ end Profile
 
 /-! ### Naive-Bayes combination of features -/
 
-/-- **Two-class naive Bayes model.** A two-class naive Bayes model: class *damaging* has prior `prior ∈ (0, 1)`, class *benign*
+/-- A two-class naive Bayes model: class *damaging* has prior `prior ∈ (0, 1)`, class *benign*
 the complement; each feature `j` takes values in the finite type `X j` with class-conditional
 probabilities `damaging j` and `benign j`, assumed positive; features are conditionally
 independent given the class. The tables are estimated from training data. -/
@@ -166,27 +166,27 @@ namespace NaiveBayes
 
 variable {ι : Type*} {X : ι → Type*} [∀ j, Fintype (X j)] [Fintype ι] (M : NaiveBayes ι X)
 
-/-- **Joint probability of class and features in naive Bayes.** The joint probability of class `c` (`true` = damaging) and feature values `x`:
+/-- The joint probability of class `c` (`true` = damaging) and feature values `x`:
 `π ∏ P_D(x_j)` or `(1 - π) ∏ P_B(x_j)`. -/
 noncomputable def joint (c : Bool) (x : ∀ j, X j) : ℝ :=
   if c then M.prior * ∏ j, M.damaging j (x j) else (1 - M.prior) * ∏ j, M.benign j (x j)
 
-/-- **Naive Bayes joint law is a probability law.** The joint law of class and features is a probability law. -/
+/-- The joint law of class and features is a probability law. -/
 theorem sum_joint [DecidableEq ι] : ∑ c, ∑ x, M.joint c x = 1 := by
   simp only [Fintype.sum_bool, joint, Bool.false_eq_true, ↓reduceIte, ← Finset.mul_sum,
     ← Fintype.prod_sum, M.sum_damaging, M.sum_benign, Finset.prod_const_one]
   ring
 
-/-- **Naive Bayes posterior probability of damage.** The posterior probability that the variant is damaging given feature values `x`
+/-- The posterior probability that the variant is damaging given feature values `x`
 (Bayes' rule on the joint law). -/
 noncomputable def posterior (x : ∀ j, X j) : ℝ :=
   M.joint true x / ∑ c, M.joint c x
 
-/-- **Log-likelihood ratio of a feature value.** The log-likelihood ratio `log (P_D(v) / P_B(v))` of value `v` of feature `j`. -/
+/-- The log-likelihood ratio `log (P_D(v) / P_B(v))` of value `v` of feature `j`. -/
 noncomputable def logLikelihoodRatio (j : ι) (v : X j) : ℝ :=
   log (M.damaging j v / M.benign j v)
 
-/-- **Naive Bayes score.** The naive-Bayes score: prior log-odds plus the features' log-likelihood ratios. -/
+/-- The naive-Bayes score: prior log-odds plus the features' log-likelihood ratios. -/
 noncomputable def score (x : ∀ j, X j) : ℝ :=
   log (M.prior / (1 - M.prior)) + ∑ j, M.logLikelihoodRatio j (x j)
 
@@ -210,7 +210,7 @@ theorem posterior_eq_sigmoid (x : ∀ j, X j) : M.posterior x = sigmoid (M.score
     Fintype.sum_bool]
   simp [joint]
 
-/-- **Naive Bayes posterior is strictly monotone in the score.** The posterior is strictly monotone in the score. -/
+/-- The posterior is strictly monotone in the score. -/
 theorem posterior_lt_posterior_iff (x y : ∀ j, X j) :
     M.posterior x < M.posterior y ↔ M.score x < M.score y := by
   rw [posterior_eq_sigmoid, posterior_eq_sigmoid, sigmoid_lt_iff]

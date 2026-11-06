@@ -55,7 +55,7 @@ open StatMech.Lattice
 
 variable {d : ℕ}
 
-/-- **Pairs of sites of a lattice box.** All unordered pairs of sites of `Λ_n` (containing the lattice edges of `Λ_n`). -/
+/-- All unordered pairs of sites of `Λ_n` (containing the lattice edges of `Λ_n`). -/
 noncomputable def boxEdgeFinset (d n : ℕ) : Finset (Sym2 (Site d)) :=
   ((boxFinset d n) ×ˢ (boxFinset d n)).image (fun p => s(p.1, p.2))
 
@@ -75,7 +75,7 @@ theorem coord_of_agree (n : ℕ) {ω ω' : ConfigSpace (Sym2 (Site d))}
   simp only [boxEdgeFinset, Finset.coe_image, Finset.coe_product, Set.mem_image, Set.mem_prod]
   exact ⟨(x, y), ⟨by simp [hx], by simp [hy]⟩, rfl⟩
 
-/-- **Box-crossing event.** The event that the origin is joined by an open path inside `Λ_n` to the vertex boundary of
+/-- The event that the origin is joined by an open path inside `Λ_n` to the vertex boundary of
 `Λ_n`. -/
 def boxCrossingEvent (d n : ℕ) : Set (ConfigSpace (Sym2 (Site d))) :=
   {ω | ∃ (x : Site d) (hx : x ∈ box d n), x ∈ vertexBoundary d n ∧
@@ -126,7 +126,7 @@ theorem boxCrossingEvent_isIncreasing (n : ℕ) : IsIncreasing (boxCrossingEvent
   rw [huv.2] at this
   exact le_antisymm (Bool.le_true _) this
 
-/-- **Box-crossing probability.** The probability of `boxCrossingEvent d n`. -/
+/-- The probability of `boxCrossingEvent d n`. -/
 noncomputable def boxCrossProb (d : ℕ) (p : ℝ≥0) (hp : p ≤ 1) (n : ℕ) : ℝ :=
   (bernoulliProductMeasure (E := Sym2 (Site d)) p hp).real (boxCrossingEvent d n)
 

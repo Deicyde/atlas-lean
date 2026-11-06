@@ -57,16 +57,16 @@ open scoped Topology
 
 namespace MathlibExt.Biology.Dynamics.Logistic
 
-/-- **Explicit solution of the logistic equation.** Explicit solution of the logistic equation `x' = r x (1 - x / K)` with `x 0 = x₀`:
+/-- Explicit solution of the logistic equation `x' = r x (1 - x / K)` with `x 0 = x₀`:
 `K x₀ e^{r t} / (K + x₀ (e^{r t} - 1))`. -/
 noncomputable def logistic (r K x₀ t : ℝ) : ℝ :=
   K * x₀ * exp (r * t) / (K + x₀ * (exp (r * t) - 1))
 
-/-- **Initial value of the logistic solution.** The logistic solution starts at `x₀` (for `K ≠ 0`). -/
+/-- The logistic solution starts at `x₀` (for `K ≠ 0`). -/
 theorem logistic_zero {r K : ℝ} (x₀ : ℝ) (hK : K ≠ 0) : logistic r K x₀ 0 = x₀ := by
   simp [logistic, hK]
 
-/-- **Positivity of the logistic solution's denominator.** In the biological domain (`K > 0`, `x₀ > 0`, `r t ≥ 0`, or `x₀ ≤ K`) the denominator of the
+/-- In the biological domain (`K > 0`, `x₀ > 0`, `r t ≥ 0`, or `x₀ ≤ K`) the denominator of the
 logistic solution is positive. -/
 theorem logistic_denom_pos {r K x₀ t : ℝ} (hK : 0 < K) (hx₀ : 0 < x₀)
     (h : 0 ≤ r * t ∨ x₀ ≤ K) : 0 < K + x₀ * (exp (r * t) - 1) := by
@@ -202,7 +202,7 @@ theorem logistic_transitTime {a r : ℝ} (ha : 0 < a) (ha1 : a < 1) (hr : r ≠ 
   rw [hden]
   field_simp
 
-/-- **Logistic transit time from $1/(2N)$ to $1 - 1/(2N)$.** The transit time from `1 / (2N)` to `1 - 1 / (2N)` is `(2 / r) log (2N - 1)`, for
+/-- The transit time from `1 / (2N)` to `1 - 1 / (2N)` is `(2 / r) log (2N - 1)`, for
 `N ≥ 1` and `r ≠ 0`. -/
 theorem logistic_transitTime_twoN {N : ℕ} (hN : 1 ≤ N) {r : ℝ} (hr : r ≠ 0) :
     logistic r 1 (1 / (2 * N)) (2 / r * log (2 * N - 1)) = 1 - 1 / (2 * N) := by
@@ -215,7 +215,7 @@ theorem logistic_transitTime_twoN {N : ℕ} (hN : 1 ≤ N) {r : ℝ} (hr : r ≠
     field_simp
   rwa [hq] at h
 
-/-- **Logistic solution is strictly increasing.** For `r > 0` and `0 < x₀ < K` the logistic solution is strictly increasing, so the transit
+/-- For `r > 0` and `0 < x₀ < K` the logistic solution is strictly increasing, so the transit
 time of `logistic_transitTime` is the unique time at which `1 - a` is reached. -/
 theorem strictMono_logistic {r K x₀ : ℝ} (hr : 0 < r) (hK : 0 < K) (hx₀ : 0 < x₀)
     (hx₀K : x₀ < K) : StrictMono (logistic r K x₀) := by

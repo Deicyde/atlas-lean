@@ -33,18 +33,14 @@ with `gⁿ = 1` for all `g`); generating a proper variety: `G` satisfies a nontr
 `w ≠ 1` of `FreeGroup ℕ` killed by every homomorphism to `G`.
 -/
 
-/-- **Kourovka Problem 17.79 (torsion groups of unbounded exponent in proper varieties).** The
-statement, asked by O. Macedońska, that there exists a finitely generated group $G$ in which every
-element has finite order, which has unbounded exponent (there is no $n \ge 1$ with $g^n = 1$ for
-all $g \in G$), and which satisfies a nontrivial law, that is, some element $w \ne 1$ of the free
-group $F$ on countably infinitely many generators is mapped to $1$ by every homomorphism
-$F \to G$ (equivalently, $G$ generates a proper variety of groups). -/
+/-- Kourovka 17.79 (O. Macedońska): there is a finitely generated torsion group of unbounded
+exponent that generates a proper variety, that is, satisfies a nontrivial law `w = 1`. -/
 def torsionUnboundedExponentProperVariety : Prop :=
   ∃ (G : Type) (_ : Group G), Group.FG G ∧ (∀ g : G, IsOfFinOrder g) ∧ Monoid.exponent G = 0 ∧
     ∃ w : FreeGroup ℕ, w ≠ 1 ∧ ∀ φ : FreeGroup ℕ →* G, φ w = 1
 
 /--
-**Periodic groups of unbounded exponent in a proper variety.** Resolved true: the Kourovka Archive answers 17.79 "Yes, moreover, there is a continuum of such
+Resolved true: the Kourovka Archive answers 17.79 "Yes, moreover, there is a continuum of such
 groups" (Atabekyan, 1986), and records Osin's example: a free group of the variety defined by `xⁿ y
 = y xⁿ` is a central extension of a free Burnside group of exponent `n` with free abelian centre of
 countable rank (Ashmanov-Olshanskii), and adding the relations `xᵢ^i = 1` for a basis `(xᵢ)` of the

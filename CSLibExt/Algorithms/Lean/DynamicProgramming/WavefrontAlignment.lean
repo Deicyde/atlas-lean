@@ -68,7 +68,7 @@ universe u
 
 variable {α : Type u}
 
-/-- **Linear gap penalties.** Linear gap penalties: match `0`, mismatch `mismatch ≥ 1`, each gap column `gap ≥ 1`. -/
+/-- Linear gap penalties: match `0`, mismatch `mismatch ≥ 1`, each gap column `gap ≥ 1`. -/
 structure LinearPenalties where
   /-- Cost of a column pairing two different letters. -/
   mismatch : ℕ
@@ -83,14 +83,14 @@ namespace LinearPenalties
 
 variable (P : LinearPenalties) [DecidableEq α]
 
-/-- **Cost of an alignment column under linear gap penalties.** The cost of one alignment column. -/
+/-- The cost of one alignment column. -/
 def columnCost : Option α × Option α → ℕ
   | (some a, some b) => if a = b then 0 else P.mismatch
   | (some _, none) => P.gap
   | (none, some _) => P.gap
   | (none, none) => 0
 
-/-- **Cost of an alignment under linear gap penalties.** The cost of an alignment: the sum of its column costs. -/
+/-- The cost of an alignment: the sum of its column costs. -/
 def cost (A : Alignment α) : ℕ := (A.map P.columnCost).sum
 
 end LinearPenalties
@@ -99,10 +99,10 @@ namespace Wavefront
 
 variable [DecidableEq α]
 
-/-- **Largest valid offset on a diagonal.** The largest valid offset on diagonal `k`: `h ≤ |ys|` and `v = h - k ≤ |xs|`. -/
+/-- The largest valid offset on diagonal `k`: `h ≤ |ys|` and `v = h - k ≤ |xs|`. -/
 def maxOffset (xs ys : List α) (k : ℤ) : ℤ := min (ys.length : ℤ) (xs.length + k)
 
-/-- **Fuelled extension of matches along a diagonal.** Follow matching letters along diagonal `k` from offset `h`, with fuel. -/
+/-- Follow matching letters along diagonal `k` from offset `h`, with fuel. -/
 def extend (xs ys : List α) (k : ℤ) : ℕ → ℤ → ℤ
   | 0, h => h
   | fuel + 1, h =>
@@ -110,10 +110,10 @@ def extend (xs ys : List α) (k : ℤ) : ℕ → ℤ → ℤ
         extend xs ys k fuel (h + 1)
       else h
 
-/-- **Match extension (slide) along a diagonal.** The match extension ("slide") along diagonal `k` from offset `h`. -/
+/-- The match extension ("slide") along diagonal `k` from offset `h`. -/
 def slide (xs ys : List α) (k h : ℤ) : ℤ := extend xs ys k (ys.length + 1) h
 
-/-- **Fuelled wavefront recurrence.** The wavefront recurrence with fuel (fuel `s + 1` suffices; see `wavefront`).
+/-- The wavefront recurrence with fuel (fuel `s + 1` suffices; see `wavefront`).
 `none` stands for an unreachable diagonal. Offsets proposed by an operation are clamped to the
 largest valid offset of the target diagonal before sliding. -/
 def wavefrontAux (P : LinearPenalties) (xs ys : List α) : ℕ → ℕ → ℤ → Option ℤ
@@ -133,7 +133,7 @@ def wavefrontAux (P : LinearPenalties) (xs ys : List α) : ℕ → ℕ → ℤ �
         (max fromMismatch (max fromInsertion fromDeletion)).map
           (fun h => slide xs ys k (min h (maxOffset xs ys k)))
 
-/-- **Furthest-reaching wavefront offset.** The furthest-reaching offset of score `s` on diagonal `k = h - v`. -/
+/-- The furthest-reaching offset of score `s` on diagonal `k = h - v`. -/
 def wavefront (P : LinearPenalties) (xs ys : List α) (s : ℕ) (k : ℤ) : Option ℤ :=
   wavefrontAux P xs ys (s + 1) s k
 
@@ -681,7 +681,7 @@ private theorem row_last (xs row : List α) (a : α) (v : ℕ) (hv : v ≤ xs.le
     List.getElem?_cons_zero, List.getElem?_take, ite_eq_left (by omega : row.length < v)]
     using ht.symm
 
-/-- **Soundness of the wavefront algorithm.** Soundness: a wavefront offset is a valid cell of its diagonal, reachable by an alignment
+/-- Soundness: a wavefront offset is a valid cell of its diagonal, reachable by an alignment
 of the corresponding prefixes with cost at most `s`. -/
 theorem wavefront_sound (P : LinearPenalties) (xs ys : List α) (s : ℕ) (k h : ℤ)
     (hw : wavefront P xs ys s k = some h) :
@@ -690,7 +690,7 @@ theorem wavefront_sound (P : LinearPenalties) (xs ys : List α) (s : ℕ) (k h :
   obtain ⟨hl, hu, ha, _⟩ := sound_good P xs ys s k h hw
   exact ⟨hl, hu, ha⟩
 
-/-- **Completeness of the wavefront algorithm.** Completeness: every alignment of a pair of prefixes is dominated on its diagonal by the
+/-- Completeness: every alignment of a pair of prefixes is dominated on its diagonal by the
 wavefront of its exact cost. -/
 theorem wavefront_complete (P : LinearPenalties) (xs ys : List α) (v h : ℕ)
     (hv : v ≤ xs.length) (hh : h ≤ ys.length) (A : Alignment α)
@@ -793,7 +793,7 @@ theorem wavefront_complete (P : LinearPenalties) (xs ys : List α) (v h : ℕ)
           left
           simp [show P.mismatch ≤ P.cost A + P.mismatch by omega, hj, hw]
 
-/-- **Exactness of the wavefront alignment algorithm.** The wavefront algorithm is exact: the end cell is reached by some score `s' ≤ s` iff some
+/-- The wavefront algorithm is exact: the end cell is reached by some score `s' ≤ s` iff some
 alignment of `xs` and `ys` costs at most `s`. Hence the least such `s` is the optimal cost. -/
 theorem exists_wavefront_end_iff (P : LinearPenalties) (xs ys : List α) (s : ℕ) :
     (∃ s' ≤ s, wavefront P xs ys s' ((ys.length : ℤ) - xs.length) = some ys.length) ↔
@@ -821,11 +821,11 @@ namespace LinearPenalties
 
 variable (P : LinearPenalties) [DecidableEq α]
 
-/-- **Substitution score from linear gap penalties.** The substitution score in the maximization convention of `nwScore`: `0` for a match and
+/-- The substitution score in the maximization convention of `nwScore`: `0` for a match and
 `-mismatch` for a mismatch (the gap score is `-gap`). -/
 def score (a b : α) : ℤ := if a = b then 0 else -(P.mismatch : ℤ)
 
-/-- **Alignment score is the negated linear-penalty cost.** Scores are negated costs. -/
+/-- Scores are negated costs. -/
 theorem alignmentScore_eq_neg_cost (A : Alignment α) :
     alignmentScore P.score (-(P.gap : ℤ)) A = -(P.cost A : ℤ) := by
   induction A with

@@ -51,46 +51,37 @@ set_option autoImplicit false
 
 namespace MathlibExt.NumberTheory.SuperMZumkellerWanted
 
-/-- **Product of the divisors.** For a natural number $n$, $T(n)$ is the product of all positive
-divisors of $n$. For $n = 0$ the set of divisors is taken to be empty, so $T(0) = 1$. -/
+/-- `T(n)`, the product of all positive divisors of `n`. -/
 def divisorProd (n : ℕ) : ℕ := ∏ d ∈ n.divisors, d
 
-/-- **Super-m-Zumkeller numbers.** For a natural number $n$, let $T(n)$ be the product of the
-positive divisors of $n$ (for $n = 0$ the divisor set is taken to be empty, so $T(0) = 1$).
-Then $n$ is *super-m-Zumkeller* if there is a set $A$ of positive divisors of $T(n)$ such that
-the product of the elements of $A$ equals the product of the positive divisors of $T(n)$ that
-are not in $A$; that is, the divisors of $T(n)$ split into two complementary sets, one of which
-may be empty, with equal products. -/
+/-- `n` is *super-m-Zumkeller* if the set of positive divisors
+of `T(n)` can be partitioned into two disjoint subsets with
+equal products. -/
 def IsSuperMZumkeller (n : ℕ) : Prop :=
   ∃ A : Finset ℕ, A ⊆ (divisorProd n).divisors ∧
     (∏ d ∈ A, d) = ∏ d ∈ (divisorProd n).divisors \ A, d
 
-/-- **$k$-m-perfect numbers.** For natural numbers $k$ and $n$, $n$ is $k$-m-perfect if
-$T(n) = n^k$, where $T(n)$ is the product of the divisors of $n$. -/
+/-- `n` is *`k`-m-perfect* if `T(n) = n^k`. -/
 def IsKMPerfect (k n : ℕ) : Prop := divisorProd n = n ^ k
 
-/-- **Square of the product of the divisors.** For every positive integer $n$, let $T(n)$ be the
-product of the positive divisors of $n$ and $\tau(n)$ their number. Then $T(n)^2 = n^{\tau(n)}$.
-
-The paper writes this as $T(n) = n^{\tau(n)/2}$.
+/-- **Lemma 1**: `T(n)^2 = n^{τ(n)}` (the paper writes
+`T(n) = n^{τ(n)/2}`).
 
 Source: Harish Patodia, "Super m-Zumkeller Numbers", Lemma 1. -/
 theorem_wanted divisorProd_sq (n : ℕ) (hn : 0 < n) :
     (divisorProd n) ^ 2 = n ^ (n.divisors.card)
 
-/-- **Super-m-Zumkeller numbers $n \ge 2$ have at least three divisors.** If a natural number
-$n \ge 2$ is super-m-Zumkeller, then the number $\tau(n)$ of positive divisors of $n$ satisfies
-$\tau(n) \ge 3$.
+/-- **Theorem 1**: a super-m-Zumkeller number `n ≥ 2` satisfies
+`τ(n) ≥ 3`.
 
 Source: Harish Patodia, "Super m-Zumkeller Numbers", Theorem 1. -/
 theorem_wanted three_le_card_divisors_of_isSuperMZumkeller (n : ℕ)
     (hn : 2 ≤ n) (h : IsSuperMZumkeller n) :
     3 ≤ n.divisors.card
 
-/-- **Criterion for super-m-Zumkeller numbers.** Let $n \ge 2$ be an integer, let $\tau(n)$ be the
-number of positive divisors of $n$ and $T(n)$ their product. Then $n$ is super-m-Zumkeller if and
-only if $8$ divides $\alpha \cdot \tau(n) \cdot \tau(T(n))$ for every prime $p$ dividing $n$,
-where $\alpha$ is the exponent of $p$ in $n$.
+/-- **Theorem 2**: for `n ≥ 2`, `n` is super-m-Zumkeller if and
+only if `8 ∣ α_i·τ(n)·τ(T(n))` for every prime exponent `α_i`
+of `n`.
 
 Source: Harish Patodia, "Super m-Zumkeller Numbers", Theorem 2. -/
 theorem_wanted isSuperMZumkeller_iff (n : ℕ) (hn : 2 ≤ n) :
@@ -99,9 +90,9 @@ theorem_wanted isSuperMZumkeller_iff (n : ℕ) (hn : 2 ≤ n) :
         8 ∣ (n.factorization p) * n.divisors.card *
           (divisorProd n).divisors.card
 
-/-- **Super-m-Zumkeller prime powers.** Let $p$ be a prime and $\alpha \ge 1$ an integer. Then
-$p^\alpha$ is super-m-Zumkeller if and only if
-$\alpha \equiv 0, 2, 5, 7, 8, 10, 13$ or $15 \pmod{16}$.
+/-- **Theorem 3**: for prime `p` and `α ≥ 1`, `p^α` is
+super-m-Zumkeller if and only if
+`α ≡ 0, 2, 5, 7, 8, 10, 13, or 15 (mod 16)`.
 
 Source: Harish Patodia, "Super m-Zumkeller Numbers", Theorem 3. -/
 theorem_wanted isSuperMZumkeller_prime_pow_iff (p : ℕ)
@@ -109,8 +100,8 @@ theorem_wanted isSuperMZumkeller_prime_pow_iff (p : ℕ)
     IsSuperMZumkeller (p ^ a) ↔
       a % 16 ∈ ({0, 2, 5, 7, 8, 10, 13, 15} : Finset ℕ)
 
-/-- **Products of at least three distinct primes are super-m-Zumkeller.** For every finite set
-$S$ of at least three primes, the product $\prod_{p \in S} p$ is super-m-Zumkeller.
+/-- **Corollary 1**: the product of `r ≥ 3` distinct primes is
+always super-m-Zumkeller.
 
 Source: Harish Patodia, "Super m-Zumkeller Numbers",
 Corollary 1. -/
@@ -118,11 +109,9 @@ theorem_wanted isSuperMZumkeller_prod_primes (s : Finset ℕ)
     (hs : ∀ p ∈ s, p.Prime) (hcard : 3 ≤ s.card) :
     IsSuperMZumkeller (∏ p ∈ s, p)
 
-/-- **Odd powers of $2$ times two distinct odd primes are super-m-Zumkeller.** Let $k$ be an odd
-natural number and let $p$ and $q$ be distinct odd primes. Then $2^k p q$ is super-m-Zumkeller.
-
-The primes are required to be odd because the paper's proof uses that this number has
-$(k+1) \cdot 2^2$ divisors.
+/-- **Corollary 2 (i)**: `2^k·p·q` with `p, q` distinct odd
+primes and `k` an odd positive integer is super-m-Zumkeller
+(the proof's `τ(n) = (k+1)2^r` forces the `p_i` to be odd).
 
 Source: Harish Patodia, "Super m-Zumkeller Numbers",
 Corollary 2. -/
@@ -131,12 +120,9 @@ theorem_wanted isSuperMZumkeller_two_pow_mul_two_primes (k : ℕ)
     (hp2 : p ≠ 2) (hq2 : q ≠ 2) (hpq : p ≠ q) :
     IsSuperMZumkeller ((2 : ℕ) ^ k * (p * q))
 
-/-- **Powers of $2$ times at least three distinct odd primes are super-m-Zumkeller.** Let $k$ be
-a natural number and $S$ a finite set of at least three odd primes. Then $2^k \prod_{p \in S} p$
-is super-m-Zumkeller.
-
-The primes are required to be odd because the paper's proof uses that this number has
-$(k+1)2^r$ divisors, where $r$ is the number of primes in $S$.
+/-- **Corollary 2 (ii)**: `2^k·(product of `r ≥ 3` distinct
+odd primes)` is super-m-Zumkeller for every `k` (the proof's
+`τ(n) = (k+1)2^r` forces the `p_i` to be odd).
 
 Source: Harish Patodia, "Super m-Zumkeller Numbers",
 Corollary 2. -/
@@ -145,18 +131,17 @@ theorem_wanted isSuperMZumkeller_two_pow_mul_prod_primes (k : ℕ)
     (hcard : 3 ≤ s.card) :
     IsSuperMZumkeller ((2 : ℕ) ^ k * ∏ p ∈ s, p)
 
-/-- **$k$-m-perfect numbers with $k$ a positive multiple of $4$ are super-m-Zumkeller.** Let
-$k \ge 2$ be a natural number with $k \equiv 0 \pmod 4$. Then every natural number that is
-$k$-m-perfect is super-m-Zumkeller.
+/-- **Theorem 6**: every `k`-m-perfect number with `k ≥ 2` and
+`k ≡ 0 (mod 4)` is super-m-Zumkeller.
 
 Source: Harish Patodia, "Super m-Zumkeller Numbers", Theorem 6. -/
 theorem_wanted isSuperMZumkeller_of_isKMPerfect (k n : ℕ)
     (hk : 2 ≤ k) (hk4 : k % 4 = 0) (h : IsKMPerfect k n) :
     IsSuperMZumkeller n
 
-/-- **$4$ is super-m-Zumkeller but not $k$-m-perfect for $k \ge 2$.** The number $4$ is
-super-m-Zumkeller, and for no natural number $k \ge 2$ is $4$ a $k$-m-perfect number. This is the
-paper's counterexample to the converse of Theorem 6.
+/-- **Theorem 6, failure of the converse**: `4` is
+super-m-Zumkeller but is not `k`-m-perfect for any `k ≥ 2`
+(the paper's counterexample).
 
 Source: Harish Patodia, "Super m-Zumkeller Numbers", Theorem 6. -/
 theorem_wanted isSuperMZumkeller_four_not_kmPerfect :

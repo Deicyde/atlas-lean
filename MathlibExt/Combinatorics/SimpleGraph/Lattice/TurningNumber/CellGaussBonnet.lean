@@ -43,7 +43,7 @@ private theorem mem_ins_iff (S : Finset (ℤ × ℤ)) (x y a b : ℤ) (hne : (a,
     ((a, b) : ℤ × ℤ) ∈ insert ((x, y) : ℤ × ℤ) S ↔ (a, b) ∈ S := by
   rw [Finset.mem_insert]; tauto
 
-/-- **Change of the pinch indicator at the bottom-left corner of a new cell.** Change of the pinch indicator at the bottom-left corner of a new cell. -/
+/-- Change of the pinch indicator at the bottom-left corner of a new cell. -/
 theorem pinch_diff_BL (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     pinchW (insert (x, y) S) (x, y) - pinchW S (x, y)
       = (if ((x - 1, y - 1) ∈ S ∧ (x - 1, y) ∉ S ∧ (x, y - 1) ∉ S) then (1 : ℤ) else 0)
@@ -57,7 +57,7 @@ theorem pinch_diff_BL (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) 
   by_cases hW : (x - 1, y) ∈ S <;> by_cases hSo : (x, y - 1) ∈ S <;>
     by_cases hSW : (x - 1, y - 1) ∈ S <;> simp_all
 
-/-- **Change of the pinch indicator at the bottom-right corner of a new cell.** Change of the pinch indicator at the bottom-right corner of a new cell. -/
+/-- Change of the pinch indicator at the bottom-right corner of a new cell. -/
 theorem pinch_diff_BR (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     pinchW (insert (x, y) S) (x + 1, y) - pinchW S (x + 1, y)
       = (if ((x + 1, y - 1) ∈ S ∧ (x + 1, y) ∉ S ∧ (x, y - 1) ∉ S) then (1 : ℤ) else 0)
@@ -74,7 +74,7 @@ theorem pinch_diff_BR (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) 
   by_cases hE : (x + 1, y) ∈ S <;> by_cases hSo : (x, y - 1) ∈ S <;>
     by_cases hSE : (x + 1, y - 1) ∈ S <;> simp_all
 
-/-- **Change of the pinch indicator at the top-left corner of a new cell.** Change of the pinch indicator at the top-left corner of a new cell. -/
+/-- Change of the pinch indicator at the top-left corner of a new cell. -/
 theorem pinch_diff_TL (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     pinchW (insert (x, y) S) (x, y + 1) - pinchW S (x, y + 1)
       = (if ((x - 1, y + 1) ∈ S ∧ (x, y + 1) ∉ S ∧ (x - 1, y) ∉ S) then (1 : ℤ) else 0)
@@ -88,7 +88,7 @@ theorem pinch_diff_TL (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) 
   by_cases hN : (x, y + 1) ∈ S <;> by_cases hW : (x - 1, y) ∈ S <;>
     by_cases hNW : (x - 1, y + 1) ∈ S <;> simp_all
 
-/-- **Change of the pinch indicator at the top-right corner of a new cell.** Change of the pinch indicator at the top-right corner of a new cell. -/
+/-- Change of the pinch indicator at the top-right corner of a new cell. -/
 theorem pinch_diff_TR (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     pinchW (insert (x, y) S) (x + 1, y + 1) - pinchW S (x + 1, y + 1)
       = (if ((x + 1, y + 1) ∈ S ∧ (x, y + 1) ∉ S ∧ (x + 1, y) ∉ S) then (1 : ℤ) else 0)
@@ -103,7 +103,7 @@ theorem pinch_diff_TR (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) 
   by_cases hN : (x, y + 1) ∈ S <;> by_cases hE : (x + 1, y) ∈ S <;>
     by_cases hNE : (x + 1, y + 1) ∈ S <;> simp_all
 
-/-- **Change of the pinch count in terms of eight neighbours.** The change of the pinch count when a cell is added, in terms of its eight neighbours. -/
+/-- The change of the pinch count when a cell is added, in terms of its eight neighbours. -/
 theorem pinch_jump_sum (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S) :
     (∑ v ∈ cornersOf (x, y), (pinchW (insert (x, y) S) v - pinchW S v))
       = pinchDelta (decide ((x + 1, y) ∈ S)) (decide ((x - 1, y) ∈ S)) (decide ((x, y + 1) ∈ S))
@@ -123,7 +123,7 @@ theorem pinch_jump_sum (S : Finset (ℤ × ℤ)) (x y : ℤ) (hc : (x, y) ∉ S)
     by_cases hNE : (x + 1, y + 1) ∈ S <;> by_cases hNW : (x - 1, y + 1) ∈ S <;>
     by_cases hSE : (x + 1, y - 1) ∈ S <;> by_cases hSW : (x - 1, y - 1) ∈ S <;> simp_all
 
-/-- **Cell Gauss–Bonnet formula.** Cell Gauss–Bonnet formula: for every finite set of unit cells, convex corners minus reflex
+/-- Cell Gauss–Bonnet formula: for every finite set of unit cells, convex corners minus reflex
   corners equals four times the Euler characteristic plus twice the number of pinch points. -/
 theorem cornerDiff_eq (S : Finset (ℤ × ℤ)) :
     cornerDiff S = 4 * eulerChar S + 2 * pinchCount S := by

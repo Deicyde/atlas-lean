@@ -38,31 +38,22 @@ C1b source repair. The legacy namespace is preserved for declaration identity.
 The source-specific known-result requests live in the downstream Wanted leaf.
 -/
 
-/-- **Overlap count of two finite sets of integers.** For finite sets $A, B \subseteq \mathbb{Z}$
-and an integer $k$, the overlap of $A$ and $B$ at $k$ is the number of pairs
-$(a, b) \in A \times B$ with $a - b = k$. -/
+/-- The number of solutions to `a - b = k` with `a ∈ A` and `b ∈ B`. -/
 def Overlap (A B : Finset ℤ) (k : ℤ) : ℕ :=
   ((A.product B).filter fun (a, b) => a - b = k).card
 
-/-- **Maximum overlap.** For finite sets $A, B \subseteq \mathbb{Z}$, the maximum overlap of $A$
-and $B$ is the natural number obtained as the supremum over all integers $k$ of
-$\#\{(a, b) \in A \times B : a - b = k\}$. -/
+/-- The maximum overlap over all integer differences. -/
 noncomputable def MaxOverlap (A B : Finset ℤ) : ℕ :=
   iSup (Overlap A B)
 
-/-- **Erdős minimum overlap function.** For a natural number $n$, $M(n)$ is the least value of
-the maximum overlap of $A$ and $B$, the supremum over $k \in \mathbb{Z}$ of
-$\#\{(a, b) \in A \times B : a - b = k\}$, taken over all pairs of disjoint finite sets
-$A, B \subseteq \mathbb{Z}$ with $A \cup B = \{1, \dots, 2n\}$ and $|A| = |B|$. -/
+/-- `M(n)`: the minimum maximum overlap over balanced splittings of `{1, …, 2n}`. -/
 noncomputable def M (n : ℕ) : ℕ :=
   sInf {MaxOverlap A B | (A : Finset ℤ) (B : Finset ℤ)
     (_disjoint : Disjoint A B)
     (_union : A ∪ B = Finset.Icc (1 : ℤ) (2 * n))
     (_same_card : A.card = B.card)}
 
-/-- **Overlaps are bounded by the maximum overlap.** For finite sets $A, B \subseteq \mathbb{Z}$
-and every integer $k$, the overlap $\#\{(a, b) \in A \times B : a - b = k\}$ is at most the
-maximum overlap of $A$ and $B$. -/
+ /-- Every overlap count is bounded by the maximum overlap. -/
 theorem Overlap_le_MaxOverlap (A B : Finset ℤ) (k : ℤ) :
     Overlap A B k ≤ MaxOverlap A B := by
   apply le_ciSup
@@ -70,10 +61,7 @@ theorem Overlap_le_MaxOverlap (A B : Finset ℤ) (k : ℤ) :
   rintro _ ⟨k, rfl⟩
   exact Finset.card_filter_le _ _
 
-/-- **The maximum overlap is attained.** For finite sets $A, B \subseteq \mathbb{Z}$ there is an
-integer $k$ such that the maximum overlap of $A$ and $B$, the supremum over $j \in \mathbb{Z}$
-of $\#\{(a, b) \in A \times B : a - b = j\}$, equals
-$\#\{(a, b) \in A \times B : a - b = k\}$. -/
+/-- The maximum overlap is attained at some difference. -/
 theorem MaxOverlap_attained (A B : Finset ℤ) :
     ∃ k : ℤ, MaxOverlap A B = Overlap A B k := by
   have hbdd : BddAbove (Set.range (Overlap A B)) := by
@@ -85,11 +73,7 @@ theorem MaxOverlap_attained (A B : Finset ℤ) :
   obtain ⟨k, hk⟩ := Nat.sSup_mem hne hbdd
   exact ⟨k, hk.symm⟩
 
-/-- **Balanced partitions of $\{1, \dots, 2n\}$ exist.** For every natural number $n$, the set of
-maximum overlaps of $A$ and $B$, taken over all pairs of disjoint finite sets of integers $A$ and
-$B$ with $A \cup B = \{1, \dots, 2n\}$ and $|A| = |B|$, is nonempty.
-
-For example, $A = \{1, \dots, n\}$ and $B = \{n + 1, \dots, 2n\}$ is such a pair. -/
+/-- Balanced partitions exist at every size: split `Icc 1 (2n)` in half. -/
 theorem balancedPartition_nonempty (n : ℕ) :
     {MaxOverlap A B | (A : Finset ℤ) (B : Finset ℤ)
       (_disjoint : Disjoint A B)
@@ -113,10 +97,7 @@ theorem balancedPartition_nonempty (n : ℕ) :
   · simp only [Int.card_Icc]
     congr 1 <;> omega
 
-/-- **The minimum overlap is attained.** For every natural number $n$ there are disjoint finite
-sets $A, B \subseteq \mathbb{Z}$ with $A \cup B = \{1, \dots, 2n\}$ and $|A| = |B|$ such that
-the minimum overlap $M(n)$ equals the maximum overlap of $A$ and $B$, the supremum over
-$k \in \mathbb{Z}$ of $\#\{(a, b) \in A \times B : a - b = k\}$. -/
+/-- `M n` is attained by a balanced partition. -/
 theorem M_attained (n : ℕ) :
     ∃ (A B : Finset ℤ), Disjoint A B ∧
       A ∪ B = Finset.Icc (1 : ℤ) (2 * n) ∧ A.card = B.card ∧
@@ -125,28 +106,18 @@ theorem M_attained (n : ℕ) :
     Nat.sInf_mem (balancedPartition_nonempty n)
   exact ⟨A, B, hd, hu, hc, hv.symm⟩
 
-/-- **The minimum overlap bounds every balanced partition.** Let $n$ be a natural number and let
-$A, B \subseteq \mathbb{Z}$ be disjoint finite sets with $A \cup B = \{1, \dots, 2n\}$ and
-$|A| = |B|$. Then the minimum overlap $M(n)$ is at most the maximum overlap of $A$ and $B$,
-the supremum over $k \in \mathbb{Z}$ of $\#\{(a, b) \in A \times B : a - b = k\}$. -/
+/-- `M n` bounds every balanced partition from below. -/
 theorem M_le_MaxOverlap (n : ℕ) (A B : Finset ℤ) (hd : Disjoint A B)
     (hu : A ∪ B = Finset.Icc (1 : ℤ) (2 * n)) (hc : A.card = B.card) :
     M n ≤ MaxOverlap A B :=
   Nat.sInf_le ⟨A, B, hd, hu, hc, rfl⟩
 
-/-- **Normalized minimum overlap.** For a natural number $N$, the normalized minimum overlap is
-the real number $M(N) / N$, where $M(N)$ is the Erdős minimum overlap function; for $N = 0$
-the quotient is $0$ by the convention $x / 0 = 0$. -/
+/-- The normalized minimum overlap `M(N) / N`. -/
 noncomputable def MinOverlapQuotient (N : ℕ) : ℝ :=
   (M N : ℝ) / N
 
-/-- **Universal asymptotic lower bound for discrete overlaps.** A real number $c$ is a
-universal asymptotic lower bound when for every $\varepsilon > 0$ there is a positive integer
-$N_0$ such that for every $N \ge N_0$ and all disjoint finite sets $A, B \subseteq \mathbb{Z}$
-with $A \cup B = \{1, \dots, 2N\}$ and $|A| = |B|$, some integer $x$ satisfies
-$(c - \varepsilon) N \le \#\{(a, b) \in A \times B : a - b = x\}$.
-
-The positive size threshold $N_0$ is chosen before the size $N$ and the partition. -/
+/-- Uniform asymptotic lower bounds for every balanced integer partition.
+The positive size threshold is chosen before the size and partition. -/
 def DiscreteUniversalLowerBound (c : ℝ) : Prop :=
   ∀ ε : ℝ, 0 < ε → ∃ N₀ : ℕ, 0 < N₀ ∧
     ∀ N : ℕ, N₀ ≤ N → ∀ A B : Finset ℤ,
@@ -160,44 +131,28 @@ theorem discreteUniversalLowerBound_zero : DiscreteUniversalLowerBound 0 := by
   refine ⟨0, le_trans ?_ (Nat.cast_nonneg _)⟩
   exact mul_nonpos_of_nonpos_of_nonneg (by linarith) (Nat.cast_nonneg N)
 
-/-- **Continuous support interval.** The support interval of the continuous minimum-overlap
-problem is the closed interval $[-1, 1]$ of real numbers.
-
-Functions in the continuous model are extended by zero outside this interval. -/
+/-- The source support interval for zero-extended continuous-model functions. -/
 def continuousSupportInterval : Set ℝ := Icc (-1) 1
 
-/-- **Translation interval of the continuous overlap model.** The translation interval of the
-continuous minimum-overlap model is the closed interval $[-2, 2] \subseteq \mathbb{R}$. -/
+/-- The source translation interval. -/
 def continuousTranslationInterval : Set ℝ := Icc (-2) 2
 
-/-- **Continuous overlap integrand.** For functions $f, g : \mathbb{R} \to \mathbb{R}$ and real
-numbers $x$ and $t$, the overlap integrand is $f(t)\,g(x + t)$. -/
+/-- The overlap integrand `f(t) * g(x+t)`. -/
 def continuousOverlapIntegrand (f g : ℝ → ℝ) (x t : ℝ) : ℝ :=
   f t * g (x + t)
 
-/-- **Continuous overlap.** For functions $f, g : \mathbb{R} \to \mathbb{R}$ and a translation
-$x \in \mathbb{R}$, the overlap of $f$ and $g$ at $x$ is $\int_{-1}^{1} f(t)\,g(x + t)\,dt$, the
-integral of the overlap integrand over the support interval $[-1, 1]$.
-
-The integral is the Lebesgue (Bochner) integral, which is $0$ when the integrand is not
-integrable. -/
+/-- The overlap at translation `x`. -/
 noncomputable def continuousOverlap (f g : ℝ → ℝ) (x : ℝ) : ℝ :=
   ∫ t in continuousSupportInterval, continuousOverlapIntegrand f g x t
 
-/-- **Continuous overlap values.** For functions $f, g : \mathbb{R} \to \mathbb{R}$, the set of
-overlap values of $f$ and $g$ is the image of the translation interval $[-2, 2]$ under the overlap
-$x \mapsto \int_{-1}^{1} f(t)\,g(x + t)\,dt$. -/
+/-- Overlap values over all source translations. -/
 def continuousOverlapValues (f g : ℝ → ℝ) : Set ℝ :=
   continuousOverlap f g '' continuousTranslationInterval
 
-/-- **Admissible pairs for the continuous minimum-overlap problem.** A pair of functions
-$f, g : \mathbb{R} \to \mathbb{R}$ is admissible when $f$ and $g$ are almost everywhere measurable
-with respect to Lebesgue measure, take values in $[0, 1]$ at every point, vanish at every point
-outside the support interval $[-1, 1]$, satisfy $f(t) + g(t) = 1$ for every $t \in [-1, 1]$, and
-satisfy $\int_{\mathbb{R}} f(t)\,dt = 1$.
-
-Since measurability is only required almost everywhere, Lebesgue-null modifications of Borel
-functions are included. Integrability and the bounds on the overlap follow from these conditions.
+/--
+The continuous source family, including Lebesgue-null modifications of Borel
+functions. Integrability and all overlap-range properties are consequences below,
+never caller-supplied assumptions.
 -/
 structure ContinuousAdmissible (f g : ℝ → ℝ) : Prop where
   measurable_f : AEMeasurable f volume
@@ -276,12 +231,7 @@ theorem ContinuousAdmissible.overlapValues_bddAbove {f g : ℝ → ℝ}
   intro y hy
   exact (h.overlapValues_mem_unit y hy).2
 
-/-- **Continuous pair score.** For functions $f, g : \mathbb{R} \to \mathbb{R}$, the pair score of
-$f$ and $g$ is the supremum of the overlap values $\int_{-1}^{1} f(t)\,g(x + t)\,dt$ over the
-translations $x \in [-2, 2]$.
-
-As with every supremum of real numbers here, it is $0$ when the set is not bounded above; for
-admissible pairs the overlap values lie in $[0, 1]$. -/
+/-- The source supremum over translations. -/
 noncomputable def continuousPairScore (f g : ℝ → ℝ) : ℝ :=
   sSup (continuousOverlapValues f g)
 
@@ -293,12 +243,7 @@ theorem continuousPairScore_mem_unit {f g : ℝ → ℝ}
       (le_csSup h.overlapValues_bddAbove hy)
   · exact csSup_le ⟨y, hy⟩ fun z hz => (h.overlapValues_mem_unit z hz).2
 
-/-- **Universal lower bound in the continuous overlap model.** Call a pair of functions
-$f, g : \mathbb{R} \to \mathbb{R}$ admissible when $f$ and $g$ are almost everywhere measurable,
-take values in $[0, 1]$, vanish outside $[-1, 1]$, satisfy $f + g = 1$ on $[-1, 1]$, and
-$\int_{\mathbb{R}} f = 1$, and let the pair score $S(f, g)$ be the supremum over $x \in [-2, 2]$
-of $\int_{-1}^{1} f(t)\, g(x + t)\, dt$. A real number $c$ is a universal lower bound when
-$c \le S(f, g)$ for every admissible pair $(f, g)$. -/
+/-- A constant lower-bounds the score of every source-admissible pair. -/
 def ContinuousUniversalLowerBound (c : ℝ) : Prop :=
   ∀ (f g : ℝ → ℝ), ContinuousAdmissible f g → c ≤ continuousPairScore f g
 
@@ -341,17 +286,11 @@ theorem continuousValidLowerBounds_bddAbove : BddAbove continuousValidLowerBound
     continuousHalfIndicator_admissible)
     (continuousPairScore_mem_unit continuousHalfIndicator_admissible).2
 
-/-- **The continuous Erdős minimum-overlap constant.** For an admissible pair $(f, g)$ let
-$S(f, g)$ be its pair score, the supremum over $x \in [-2, 2]$ of
-$\int_{-1}^{1} f(t)\,g(x + t)\,dt$. The continuous minimum-overlap constant $C_{1b}$ is the
-supremum of the set of real numbers $c$ such that $c \le S(f, g)$ for every admissible pair
-$(f, g)$.
-
-Source: Optimization Problems, Constant 1b. -/
+/-- The continuous Erdős minimum-overlap constant from Optimization Problem 1b. -/
 noncomputable def continuousMinimumOverlapConstant : ℝ :=
   sSup continuousValidLowerBounds
 
-/-- **Notation $C_{1b}$.** We write $C_{1b}$ for the continuous Erdős minimum-overlap constant. -/
+/-- Source notation `C₁ᵦ`. -/
 noncomputable abbrev C₁ᵦ : ℝ := continuousMinimumOverlapConstant
 
 theorem continuousMinimumOverlapConstant_isLUB :
@@ -390,11 +329,7 @@ private theorem continuousHalfIndicator_overlap_le_half (x : ℝ) :
         setIntegral_eq_integral_of_forall_compl_eq_zero h.zero_outside_f, h.integral_f]
       norm_num
 
-/-- **The continuous minimum-overlap constant is at most $1/2$.** The continuous Erdős
-minimum-overlap constant $C_{1b}$ satisfies $C_{1b} \le 1/2$.
-
-The bound is witnessed by the admissible pair $f = g$ with value $1/2$ on $[-1, 1]$ and $0$
-elsewhere. -/
+/-- The half-height support indicator bounds the universal minimum-overlap constant. -/
 theorem continuousMinimumOverlapConstant_le_half : C₁ᵦ ≤ (1 : ℝ) / 2 := by
   refine le_trans (continuousMinimumOverlapConstant_isUniversalLowerBound
     continuousHalfIndicator continuousHalfIndicator continuousHalfIndicator_admissible) ?_

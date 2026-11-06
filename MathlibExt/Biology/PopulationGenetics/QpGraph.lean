@@ -63,12 +63,12 @@ namespace MathlibExt.Biology.PopulationGenetics.QpGraph
 
 variable {ι E : Type*} [Fintype ι]
 
-/-- **Generalized least-squares qpGraph score S1.** The qpGraph score `S1(g) = -½ (g - f)ᵀ Q⁻¹ (g - f)` (Patterson et al. 2012, eq. 6) of
+/-- The qpGraph score `S1(g) = -½ (g - f)ᵀ Q⁻¹ (g - f)` (Patterson et al. 2012, eq. 6) of
 predicted statistics `g` against estimated statistics `f` with error covariance `Q`. -/
 noncomputable def scoreS1 [DecidableEq ι] (Q : Matrix ι ι ℝ) (f g : ι → ℝ) : ℝ :=
   -(1 / 2) * ((g - f) ⬝ᵥ (Q⁻¹ *ᵥ (g - f)))
 
-/-- **Least-squares qpGraph score S2.** The least-squares qpGraph score `S2(g) = -∑ᵢ (gᵢ - fᵢ)² / (Qᵢᵢ + λ)` (Patterson et al.
+/-- The least-squares qpGraph score `S2(g) = -∑ᵢ (gᵢ - fᵢ)² / (Qᵢᵢ + λ)` (Patterson et al.
 2012, eq. 7). A term with `Qᵢᵢ + λ = 0` is `0` by the convention `x / 0 = 0`. -/
 noncomputable def scoreS2 (Q : Matrix ι ι ℝ) (lam : ℝ) (f g : ι → ℝ) : ℝ :=
   -∑ i, (g i - f i) ^ 2 / (Q i i + lam)
@@ -77,7 +77,7 @@ private theorem mulVec_dotProduct {κ : Type*} [Fintype κ] (A : Matrix ι κ �
     (u : ι → ℝ) : (A *ᵥ v) ⬝ᵥ u = v ⬝ᵥ (Aᵀ *ᵥ u) := by
   rw [dotProduct_comm, dotProduct_mulVec, ← mulVec_transpose, dotProduct_comm]
 
-/-- **Basis independence of the qpGraph score S1.** `S1` is basis independent: under an invertible change of basis `A` of the statistics, with
+/-- `S1` is basis independent: under an invertible change of basis `A` of the statistics, with
 the covariance transformed to `A Q Aᵀ`, the score is unchanged. (The identity holds for every
 `Q`; for singular `Q` both sides are `0` by Mathlib's convention `Q⁻¹ = 0`.) -/
 theorem scoreS1_basis_change [DecidableEq ι] (A : Matrix ι ι ℝ) (hA : IsUnit A.det)
@@ -89,7 +89,7 @@ theorem scoreS1_basis_change [DecidableEq ι] (A : Matrix ι ι ℝ) (hA : IsUni
     mulVec_mulVec (g - f) A⁻¹ A, nonsing_inv_mul A hA, one_mulVec, mulVec_dotProduct,
     mulVec_mulVec, mul_nonsing_inv _ hAt, one_mulVec]
 
-/-- **The qpGraph score S2 depends on the basis.** `S2` is not basis independent (Patterson et al. 2012, after eq. 7): there are a positive
+/-- `S2` is not basis independent (Patterson et al. 2012, after eq. 7): there are a positive
 definite covariance `Q`, an invertible change of basis `A` and statistics `f`, `g` such that,
 for every `λ`, the score changes. -/
 theorem exists_scoreS2_basis_change_ne :
@@ -98,7 +98,7 @@ theorem exists_scoreS2_basis_change_ne :
   refine ⟨1, !![1, 1; 0, 1], 0, ![1, 0], PosDef.one, by simp [det_fin_two_of], fun lam => ?_⟩
   simp [scoreS2, mulVec, dotProduct, Matrix.mul_apply, Fin.sum_univ_two]
 
-/-- **Score S2 as score S1 with a diagonal covariance.** `S2` is twice `S1` with the covariance replaced by the diagonal matrix of the
+/-- `S2` is twice `S1` with the covariance replaced by the diagonal matrix of the
 `Qᵢᵢ + λ`, when these are nonzero. -/
 theorem scoreS2_eq_scoreS1_diagonal [DecidableEq ι] (Q : Matrix ι ι ℝ) (lam : ℝ)
     (h : ∀ i, Q i i + lam ≠ 0)
@@ -119,12 +119,12 @@ theorem scoreS2_eq_scoreS1_diagonal [DecidableEq ι] (Q : Matrix ι ι ℝ) (lam
   rw [hdot]
   ring
 
-/-- **qpGraph design matrix of basis f4 statistics.** The qpGraph design matrix of basis statistics `f4 (A i) (B i) (C i) (D i)` for lineage
+/-- The qpGraph design matrix of basis statistics `f4 (A i) (B i) (C i) (D i)` for lineage
 weights `w`: entry `(i, e)` is `(w Aᵢ e - w Bᵢ e) * (w Cᵢ e - w Dᵢ e)`. -/
 def designMatrix {ι E P : Type*} (w : P → E → ℝ) (A B C D : ι → P) : Matrix ι E ℝ :=
   fun i e => (w (A i) e - w (B i) e) * (w (C i) e - w (D i) e)
 
-/-- **Predicted f4 statistics are linear in the edge lengths.** In the drift model, with the admixture weights fixed, the predicted statistics are linear in
+/-- In the drift model, with the admixture weights fixed, the predicted statistics are linear in
 the edge lengths: `g = B ℓ` for the design matrix `B`. -/
 theorem f4_eq_designMatrix_mulVec {ι E Ω P : Type*} [Fintype E] {m : MeasurableSpace Ω}
     {μ : Measure Ω}
@@ -163,7 +163,7 @@ private theorem scoreS1_eq_sub [DecidableEq ι] [Fintype E] {Q : Matrix ι ι �
   rw [hxy, mulVec_add, add_dotProduct, dotProduct_add, dotProduct_add, hsym, hcross]
   ring
 
-/-- **Solutions of the normal equations maximize the score S1.** GLS maximizes `S1`: for positive definite `Q`, a solution `ℓ̂` of the normal equations
+/-- GLS maximizes `S1`: for positive definite `Q`, a solution `ℓ̂` of the normal equations
 `Bᵀ Q⁻¹ B ℓ̂ = Bᵀ Q⁻¹ f` maximizes `ℓ ↦ S1(B ℓ)` over all `ℓ`. -/
 theorem scoreS1_le_of_normal_eq [DecidableEq ι] [Fintype E] {Q : Matrix ι ι ℝ} (hQ : Q.PosDef)
     (B : Matrix ι E ℝ)
@@ -174,7 +174,7 @@ theorem scoreS1_le_of_normal_eq [DecidableEq ι] [Fintype E] {Q : Matrix ι ι �
   rw [star_trivial] at h
   linarith
 
-/-- **Uniqueness of the generalized least-squares maximizer.** Uniqueness of the GLS maximizer: for positive definite `Q` and a design matrix of full
+/-- Uniqueness of the GLS maximizer: for positive definite `Q` and a design matrix of full
 column rank (`B.mulVec` injective), a vector `ℓ` with the same score as a solution `ℓ̂` of the
 normal equations equals `ℓ̂`. -/
 theorem eq_of_scoreS1_eq [DecidableEq ι] [Fintype E] {Q : Matrix ι ι ℝ} (hQ : Q.PosDef)
@@ -190,7 +190,7 @@ theorem eq_of_scoreS1_eq [DecidableEq ι] [Fintype E] {Q : Matrix ι ι ℝ} (hQ
   rw [star_trivial] at hpos
   linarith
 
-/-- **Invertibility of the generalized least-squares Gram matrix.** For positive definite `Q` and a design matrix of full column rank, the GLS Gram matrix
+/-- For positive definite `Q` and a design matrix of full column rank, the GLS Gram matrix
 `Bᵀ Q⁻¹ B` is invertible. -/
 theorem isUnit_det_gram [DecidableEq ι] [Fintype E] [DecidableEq E] {Q : Matrix ι ι ℝ}
     (hQ : Q.PosDef) {B : Matrix ι E ℝ}
@@ -199,7 +199,7 @@ theorem isUnit_det_gram [DecidableEq ι] [Fintype E] [DecidableEq E] {Q : Matrix
   rw [conjTranspose_eq_transpose_of_trivial] at h
   exact isUnit_iff_ne_zero.mpr h.det_pos.ne'
 
-/-- **Closed-form generalized least-squares estimate of edge lengths.** The closed-form GLS estimate `ℓ̂ = (Bᵀ Q⁻¹ B)⁻¹ Bᵀ Q⁻¹ f` solves the normal equations when the
+/-- The closed-form GLS estimate `ℓ̂ = (Bᵀ Q⁻¹ B)⁻¹ Bᵀ Q⁻¹ f` solves the normal equations when the
 Gram matrix is invertible. -/
 theorem normal_eq_gls [DecidableEq ι] [Fintype E] [DecidableEq E] {Q : Matrix ι ι ℝ}
     {B : Matrix ι E ℝ} (h : IsUnit (Bᵀ * Q⁻¹ * B).det)

@@ -46,12 +46,12 @@ open Real Set
 
 namespace StatMech.Probability
 
-/-- **Left side of the one-variable p-biased inequality.** `((1-p) + p z)² + 4(q-1) p²(1-p)²(z - 1)²`: the left side of the `p`-biased two-point
+/-- `((1-p) + p z)² + 4(q-1) p²(1-p)²(z - 1)²`: the left side of the `p`-biased two-point
 inequality at `u = 1`, `v = z`. -/
 def pbt_g (p q z : ℝ) : ℝ :=
   ((1 - p) + p * z) ^ 2 + (q - 1) * 4 * p ^ 2 * (1 - p) ^ 2 * (z - 1) ^ 2
 
-/-- **Statement of the one-variable p-biased inequality.** The one-variable `p`-biased inequality: `pbt_g p q z ≤ ((1-p) + p z^q)^(2/q)` for `z ≥ 0`. -/
+/-- The one-variable `p`-biased inequality: `pbt_g p q z ≤ ((1-p) + p z^q)^(2/q)` for `z ≥ 0`. -/
 def pbt_OneVarCore (p q : ℝ) : Prop :=
   ∀ z : ℝ, 0 ≤ z → pbt_g p q z ≤ ((1 - p) + p * z ^ q) ^ (2 / q)
 
@@ -70,7 +70,7 @@ theorem pbt_OneVarCore_q_one (p : ℝ) : pbt_OneVarCore p 1 := by
   simp only [sub_self, zero_mul, add_zero, Real.rpow_one]
   rw [show (2:ℝ) / 1 = 2 by norm_num, Real.rpow_two]
 
-/-- **Left side of the p-biased two-point inequality.** The left side `((1-p) u + p v)² + 4(q-1) p²(1-p)²(u - v)²` of the `p`-biased two-point
+/-- The left side `((1-p) u + p v)² + 4(q-1) p²(1-p)²(u - v)²` of the `p`-biased two-point
 inequality. -/
 def pbt_lhs (p q u v : ℝ) : ℝ :=
   ((1 - p) * u + p * v) ^ 2 + (q - 1) * 4 * p ^ 2 * (1 - p) ^ 2 * (u - v) ^ 2
@@ -150,7 +150,7 @@ theorem pbt_value_nonneg_of_core {p q : ℝ} (hp0 : 0 ≤ p) (hp1 : p ≤ 1) (hq
       exact key
   · exact pbt_value_pos_of_core hp0 hp1 hq0 Hcore hu0 hv
 
-/-- **Reduction of the p-biased two-point inequality to one variable.** The `p`-biased two-point inequality, assuming the one-variable inequality for `p` and
+/-- The `p`-biased two-point inequality, assuming the one-variable inequality for `p` and
 `1 - p`. -/
 theorem pbt_two_point_value_of_core {p q : ℝ} (hp0 : 0 ≤ p) (hp1 : p ≤ 1)
     (hq1 : 1 ≤ q) (hq2 : q ≤ 2)

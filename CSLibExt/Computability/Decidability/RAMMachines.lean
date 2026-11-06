@@ -28,35 +28,30 @@ set_option autoImplicit false
 
 namespace Cslib.Decidability
 
-/-- **RAM addressing mode.** An addressing mode of a random-access machine specifies an operand
-by a natural number $n$ in one of three ways: immediate (the operand is the value $n$ itself),
-direct (the operand is the contents of register $n$), or indirect (the operand is the contents
-of the register whose index is the contents of register $n$).
-
+/-- A **RAM addressing mode**: immediate (the literal value `n` itself),
+direct (the contents of register `n`), or indirect (the contents of the
+register whose index is the contents of register `n`, i.e. `regs (regs n)`).
+The earlier version of this file mislabelled the immediate mode `dir` and
+the direct mode `ind`, and had no indirect mode; the three modes below are
+the Aho–Hopcroft–Ullman modes.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 inductive RAMAddr where
   | imm : ℕ → RAMAddr
   | dir : ℕ → RAMAddr
   | ind : ℕ → RAMAddr
 
-/-- **RAM store destination.** A store destination of a random-access machine names, by a
-natural number $n$, the register into which the accumulator is stored: either register $n$
-itself (direct) or the register whose index is the contents of register $n$ (indirect).
-
-An immediate operand is not a valid store destination.
-
+/-- A **RAM destination**: where a `store` writes the accumulator — either a
+statically named register, or the register whose index is the contents of a
+register (indirect store). The immediate mode is not a valid store
+destination.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 inductive RAMDest where
   | dir : ℕ → RAMDest
   | ind : ℕ → RAMDest
 
-/-- **RAM instruction.** An instruction of a random-access machine is one of the following: load
-an operand into the accumulator; store the accumulator into a store destination; add an operand
-to the accumulator; subtract an operand from the accumulator, truncating at $0$; jump to
-instruction $q$; jump to instruction $q$ if the accumulator is $0$; halt. Here an operand is given
-by a RAM addressing mode, a store destination is a RAM store destination, and the jump target $q$
-is a natural number.
-
+/-- A **RAM instruction**: load, store, add, saturating subtract, unconditional
+jump, jump-if-accumulator-zero, and halt. `store` takes a `RAMDest`, so
+both direct and indirect stores are available.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 inductive RAMInstr where
   | load : RAMAddr → RAMInstr
@@ -67,10 +62,7 @@ inductive RAMInstr where
   | jz : ℕ → RAMInstr
   | halt : RAMInstr
 
-/-- **RAM state.** A state of a random-access machine consists of a program counter in
-$\mathbb{N}$, an accumulator value in $\mathbb{N}$, and register contents, a function
-$\mathbb{N} \to \mathbb{N}$ giving the contents of each register.
-
+/-- A **RAM state**: program counter, accumulator, and register contents.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 structure RAMState where
   /-- The program counter. -/
@@ -80,10 +72,9 @@ structure RAMState where
   /-- The register contents. -/
   regs : ℕ → ℕ
 
-/-- **Value of a RAM operand.** In a RAM state with register contents $r$, an operand resolves to
-a natural number: the immediate operand $n$ resolves to $n$ itself, the direct operand $n$ to
-the contents $r(n)$ of register $n$, and the indirect operand $n$ to $r(r(n))$.
-
+/-- Resolve a RAM operand to a value in the given state: immediate is the
+literal, direct is the register contents, indirect is two register
+dereferences.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 def ramResolve (s : RAMState) (a : RAMAddr) : ℕ :=
   match a with
@@ -91,28 +82,17 @@ def ramResolve (s : RAMState) (a : RAMAddr) : ℕ :=
   | .dir r => s.regs r
   | .ind r => s.regs (s.regs r)
 
-/-- **Register written by a RAM store.** In a RAM state with register contents $r$, a store
-destination resolves to a register index: the direct destination $n$ resolves to $n$, and the
-indirect destination $n$ resolves to the contents $r(n)$ of register $n$.
-
+/-- Resolve a RAM store destination to the register index it writes: direct
+is the named register, indirect is the contents of the named register.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 def ramDestIndex (s : RAMState) (d : RAMDest) : ℕ :=
   match d with
   | .dir r => r
   | .ind r => s.regs r
 
-/-- **One step of a RAM machine.** Let $P = (P_0, \dots, P_{\ell-1})$ be a program of length
-$\ell$ and $s$ a state with program counter $p$, accumulator $a$ and register contents $r$. If
-$p \ge \ell$, the step leaves $s$ unchanged. Otherwise it executes $P_p$, where $v$ denotes
-the value of the instruction's operand in $s$: a load sets the accumulator to $v$, an add sets
-it to $a + v$, a subtract sets it to $\max(a - v, 0)$, and a store writes $a$ into the
-register that its destination resolves to in $s$; each of these also increases the program
-counter by $1$. A jump to $q$ sets the program counter to $q$; a jump-if-zero to $q$ sets it
-to $q$ if $a = 0$ and to $p + 1$ otherwise; a halt sets it to $\ell$. Nothing else changes.
-
-In particular, once the program counter is at least $\ell$ (for instance after a halt), every
-further step leaves the state unchanged.
-
+/-- One step of a RAM machine. The step is sticky at halting states
+(program counter past the end of the program, or a `halt` instruction),
+so iteration never fails.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 def ramStep (prog : List RAMInstr) (s : RAMState) : RAMState :=
   match prog[s.pc]? with
@@ -127,49 +107,34 @@ def ramStep (prog : List RAMInstr) (s : RAMState) : RAMState :=
   | some (.jz q) => { s with pc := if s.acc = 0 then q else s.pc + 1 }
   | some .halt => { s with pc := prog.length }
 
-/-- **Initial RAM state.** The initial state on inputs $x_0, \dots, x_{k-1}$ has program counter
-$0$ and accumulator $0$; register $i$ holds $x_i$ for $i < k$, and every other register holds
-$0$.
-
+/-- The initial RAM state on the given inputs (in registers `0, 1, …`).
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 def ramInit (inputs : List ℕ) : RAMState :=
   { pc := 0, acc := 0, regs := fun i ↦ inputs.getD i 0 }
 
-/-- **Bounded execution of a RAM machine.** For a program $P$, a natural number $t$ and a state
-$s$, the state after $t$ steps of $P$ from $s$ is obtained by applying one step of $P$ to $s$
-exactly $t$ times.
-
+/-- Bounded execution of a RAM machine: `t` steps from the initial state.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 def ramExecN (prog : List RAMInstr) (t : ℕ) (s : RAMState) : RAMState :=
   (ramStep prog)^[t] s
 
-/-- **Output of a RAM machine.** Let $P$ be a program of length $\ell$ and $x_0, \dots, x_{k-1}$
-inputs. Run $P$ from the initial state on these inputs. If for some $t$ the program counter
-after $t$ steps is at least $\ell$, the output of $P$ on these inputs is the accumulator after
-the least such number of steps; otherwise the output is undefined.
-
+/-- The output of a RAM machine: the accumulator once halted, undefined
+while still running.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 def ramEval (prog : List RAMInstr) (inputs : List ℕ) : Part ℕ :=
   Nat.rfindOpt fun t ↦
     let s := ramExecN prog t (ramInit inputs)
     if prog.length ≤ s.pc then some s.acc else Option.none
 
-/-- **A RAM step is sticky at halting states.** If the program counter of a state $s$ is at
-least the length of a program $P$, then one step of $P$ leaves $s$ unchanged.
-
-A halt instruction sets the program counter to the length of the program, so once a halt has
-been executed the state no longer changes.
-
+/-- **A RAM step is sticky at halting states**: past the end of the program
+the state does not change (a `halt` instruction jumps to the end, so it is
+sticky too).
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 theorem ramStep_sticky {prog : List RAMInstr} {s : RAMState}
     (h : prog.length ≤ s.pc) : ramStep prog s = s := by
   unfold ramStep
   rw [List.getElem?_eq_none_iff.2 h]
 
-/-- **RAM execution is stable once halted.** Let $P$ be a program of length $\ell$, $s$ a state
-and $t$ a natural number. If the program counter after $t$ steps of $P$ from $s$ is at least
-$\ell$, then the state after $t + 1$ steps of $P$ from $s$ equals the state after $t$ steps.
-
+/-- **Bounded execution is stable once halted**: one more step changes nothing.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 theorem ramExecN_stable {prog : List RAMInstr} {t : ℕ} {s : RAMState}
     (h : prog.length ≤ (ramExecN prog t s).pc) :
@@ -177,11 +142,7 @@ theorem ramExecN_stable {prog : List RAMInstr} {t : ℕ} {s : RAMState}
   simp only [ramExecN, Function.iterate_succ_apply']
   exact ramStep_sticky h
 
-/-- **RAM execution stays at its halted state.** Let $P$ be a program of length $\ell$, $s$ a
-state and $t_1 \le t_2$ natural numbers. If the program counter after $t_1$ steps of $P$ from
-$s$ is at least $\ell$, then the state after $t_2$ steps of $P$ from $s$ equals the state after
-$t_1$ steps.
-
+/-- **Bounded execution stays at its halted value.**
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 theorem ramExecN_eq_of_halted {prog : List RAMInstr} {t₁ t₂ : ℕ} {s : RAMState}
     (h : prog.length ≤ (ramExecN prog t₁ s).pc) (hle : t₁ ≤ t₂) :
@@ -197,11 +158,8 @@ theorem ramExecN_eq_of_halted {prog : List RAMInstr} {t₁ t₂ : ℕ} {s : RAMS
       rw [ih]; exact h
     rw [show t₁ + (k + 1) = t₁ + k + 1 from by omega, hstable, ih]
 
-/-- **Output membership for RAM machines.** Let $P$ be a program of length $\ell$, let
-$x_0, \dots, x_{k-1}$ be inputs and let $t$ and $y$ be natural numbers. If, after $t$ steps of
-$P$ from the initial state on these inputs, the program counter is at least $\ell$ and the
-accumulator equals $y$, then the output of $P$ on these inputs is defined and equals $y$.
-
+/-- **Output membership for RAM machines**: if the machine has halted by step
+`t` with accumulator `y`, then `y` is the evaluation result.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 theorem mem_ramEval_of_halted {prog : List RAMInstr} {inputs : List ℕ} {y : ℕ}
     {t : ℕ}
@@ -230,14 +188,8 @@ theorem mem_ramEval_of_halted {prog : List RAMInstr} {inputs : List ℕ} {y : �
   rw [ite_eq_left hhalt, hout]
   exact Option.mem_def.2 rfl
 
-/-- **RAM-decidable predicate.** A predicate $P$ on the natural numbers is RAM decidable when
-there is a RAM program, a finite list of RAM instructions, such that for every natural number $n$
-the program, started with $n$ in register $0$ and with the accumulator, the program counter and
-every other register at $0$, halts (its program counter reaches or passes the end of the
-program) with $1$ in the accumulator if $P(n)$ holds and with $0$ in the accumulator otherwise;
-that is, its RAM evaluation on the single input $n$ equals the characteristic function of $P$
-at $n$.
-
+/-- A predicate is **RAM decidable** when a RAM machine computes its
+characteristic function.
 Source: Aho–Hopcroft–Ullman, *The Design and Analysis of Computer Algorithms*, 1974, §1.2. -/
 def RAMDecidable (P : ℕ → Prop) : Prop :=
   ∃ prog : List RAMInstr, ∀ n, ramEval prog [n] = charFun P n

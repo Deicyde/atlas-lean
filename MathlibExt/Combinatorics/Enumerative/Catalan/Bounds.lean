@@ -24,7 +24,7 @@ Copyright 2026 Anthropic, PBC. Licensed under Apache 2.0 (see LICENSE).
 
 @[expose] public section
 
-/-- **Catalan numbers are at most $4^n$.** The `n`th Catalan number is at most `4 ^ n`. -/
+/-- The `n`th Catalan number is at most `4 ^ n`. -/
 theorem catalan_le_four_pow (n : ℕ) : catalan n ≤ 4 ^ n := by
   calc
     catalan n ≤ (n + 1) * catalan n := Nat.le_mul_of_pos_left _ (Nat.succ_pos n)

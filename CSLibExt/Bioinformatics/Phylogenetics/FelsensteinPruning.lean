@@ -69,7 +69,7 @@ namespace Cslib.Bioinformatics.Phylogenetics.FelsensteinPruning
 
 universe u v w
 
-/-- **Rooted binary tree with transition weights.** A rooted binary tree with leaf labels `L`; an internal node `node P l Q r` carries the
+/-- A rooted binary tree with leaf labels `L`; an internal node `node P l Q r` carries the
 transition weights `P` and `Q` (from the node's state to the child's state) on the edges to its
 left child `l` and right child `r`. -/
 inductive Tree (L : Type u) (S : Type v) (R : Type w) where
@@ -82,12 +82,12 @@ variable {L : Type u} {S : Type v} {R : Type w}
 
 namespace Tree
 
-/-- **Number of internal nodes of a tree.** The number of internal nodes. -/
+/-- The number of internal nodes. -/
 def numInternal : Tree L S R → ℕ
   | leaf _ => 0
   | node _ l _ r => numInternal l + numInternal r + 1
 
-/-- **Number of leaves of a tree.** The number of leaves. -/
+/-- The number of leaves. -/
 def numLeaves : Tree L S R → ℕ
   | leaf _ => 1
   | node _ l _ r => numLeaves l + numLeaves r
@@ -96,7 +96,7 @@ end Tree
 
 open Tree
 
-/-- **Labeling of the non-root nodes of a tree.** A labeling of the non-root nodes of a tree by states: at every internal node, the states of
+/-- A labeling of the non-root nodes of a tree by states: at every internal node, the states of
 its two children and labelings of the two subtrees. -/
 def Labeling : Tree L S R → Type v
   | leaf _ => PUnit
@@ -114,7 +114,7 @@ instance instFintypeLabeling [Fintype S] : (t : Tree L S R) → Fintype (Labelin
     letI := instFintypeLabeling r
     inferInstanceAs (Fintype ((S × Labeling l) × (S × Labeling r)))
 
-/-- **Number of labelings of a tree.** There are `|S| ^ (2 · #internal nodes)` labelings (one state for each non-root node), so the
+/-- There are `|S| ^ (2 · #internal nodes)` labelings (one state for each non-root node), so the
 brute-force sum `bruteLik` has exponentially many terms. -/
 theorem card_labeling [Fintype S] :
     ∀ t : Tree L S R, Fintype.card (Labeling t) = Fintype.card S ^ (2 * t.numInternal)
@@ -128,7 +128,7 @@ section Likelihood
 
 variable [CommSemiring R] (obs : L → S → R)
 
-/-- **Weight of a tree labeling.** The weight of a labeling given root state `s`: the product over all edges of the transition
+/-- The weight of a labeling given root state `s`: the product over all edges of the transition
 weight from the parent's state to the child's state, times the leaf weight `obs l` at the state
 of every leaf `l`. -/
 def weight : (t : Tree L S R) → S → Labeling t → R
@@ -138,26 +138,26 @@ def weight : (t : Tree L S R) → S → Labeling t → R
 
 variable [Fintype S]
 
-/-- **Brute-force likelihood given the root state.** The likelihood of the leaf data conditioned on root state `s`, by brute force: the sum of
+/-- The likelihood of the leaf data conditioned on root state `s`, by brute force: the sum of
 the weights of all labelings of the non-root nodes. -/
 def bruteLik (t : Tree L S R) (s : S) : R :=
   ∑ x : Labeling t, weight obs t s x
 
-/-- **Site likelihood of a phylogenetic tree.** The site likelihood with root distribution `π`: `∑ s, π s * bruteLik obs t s`. -/
+/-- The site likelihood with root distribution `π`: `∑ s, π s * bruteLik obs t s`. -/
 def likelihood (t : Tree L S R) (π : S → R) : R :=
   ∑ s, π s * bruteLik obs t s
 
-/-- **Felsenstein's pruning recursion.** Felsenstein's pruning recursion: the partial likelihood of the subtree `t` given state `s`
+/-- Felsenstein's pruning recursion: the partial likelihood of the subtree `t` given state `s`
 at its root. -/
 def prune : Tree L S R → S → R
   | leaf l, s => obs l s
   | node P l Q r, s => (∑ a, P s a * prune l a) * (∑ b, Q s b * prune r b)
 
-/-- **Brute-force likelihood at a leaf.** At a leaf, the brute-force likelihood is the leaf weight. -/
+/-- At a leaf, the brute-force likelihood is the leaf weight. -/
 theorem bruteLik_leaf (l : L) (s : S) : bruteLik obs (leaf l) s = obs l s := by
   simp [bruteLik, weight]
 
-/-- **Brute-force likelihood factors over subtrees.** The brute-force likelihood factors over the two subtrees of the root (the distributive law
+/-- The brute-force likelihood factors over the two subtrees of the root (the distributive law
 behind pruning). -/
 theorem bruteLik_node (P Q : S → S → R) (l r : Tree L S R) (s : S) :
     bruteLik obs (node P l Q r) s =
@@ -190,7 +190,7 @@ section Tabulated
 
 variable {n : ℕ} [CommSemiring R] (obs : L → Fin n → R)
 
-/-- **Tabulated Felsenstein pruning algorithm.** Felsenstein's pruning algorithm, tabulated on the states `Fin n`: the vector of partial
+/-- Felsenstein's pruning algorithm, tabulated on the states `Fin n`: the vector of partial
 likelihoods of each subtree is computed once, with `O(n²)` operations per internal node. -/
 def pruneTab : Tree L (Fin n) R → Vector R n
   | leaf l => Vector.ofFn (obs l)
@@ -199,14 +199,14 @@ def pruneTab : Tree L (Fin n) R → Vector R n
     let v := pruneTab r
     Vector.ofFn fun s => (∑ a, P s a * u[a]) * (∑ b, Q s b * v[b])
 
-/-- **Tabulated pruning computes the pruning recursion.** The tabulated algorithm computes the pruning recursion. -/
+/-- The tabulated algorithm computes the pruning recursion. -/
 theorem pruneTab_get : ∀ (t : Tree L (Fin n) R) (s : Fin n),
     (pruneTab obs t)[s] = prune obs t s
   | leaf l, s => by simp [pruneTab, prune]
   | node P l Q r, s => by
       simp [pruneTab, prune, pruneTab_get l, pruneTab_get r]
 
-/-- **Site likelihood from tabulated partial likelihoods.** The site likelihood from the tabulated partial likelihoods at the root. -/
+/-- The site likelihood from the tabulated partial likelihoods at the root. -/
 theorem likelihood_eq_sum_pruneTab (t : Tree L (Fin n) R) (π : Fin n → R) :
     likelihood obs t π = ∑ s, π s * (pruneTab obs t)[s] := by
   simp only [likelihood_eq_sum_prune, pruneTab_get]

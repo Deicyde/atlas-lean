@@ -71,7 +71,7 @@ open Finset MathlibExt.Biology.CancerGenomics.Absolute
 
 variable {ι : Type*} [Fintype ι]
 
-/-- **Posterior tail probability on a grid.** Posterior probability that the parameter `c i` exceeds `t`, for prior weights `prior` and
+/-- Posterior probability that the parameter `c i` exceeds `t`, for prior weights `prior` and
 likelihoods `lik i` of the observed data: `∑_{c i > t} prior i lik i / ∑_i prior i lik i`. -/
 noncomputable def tailRatio (prior lik c : ι → ℝ) (t : ℝ) : ℝ :=
   (∑ i with t < c i, prior i * lik i) / ∑ i, prior i * lik i
@@ -138,7 +138,7 @@ theorem binomPmf_mul_le_mul {n a a' : ℕ} {p p' : ℝ} (haa' : a ≤ a') (hp0 :
   · rw [binomPmf_eq_zero p ha', binomPmf_eq_zero p' ha']
     simp
 
-/-- **Posterior probability that the cancer cell fraction exceeds a threshold.** Landau et al.'s posterior probability that the CCF exceeds `t`, given `a` of `n` reads,
+/-- Landau et al.'s posterior probability that the CCF exceeds `t`, given `a` of `n` reads,
 purity `α`, copy number `q`, a prior `prior` on the grid points `grid k`:
 `∑_{grid k > t} π_k Binom(a | n, f(grid k)) / ∑_k π_k Binom(a | n, f(grid k))`, with
 `f(c) = α c / (α q + 2 (1 - α))`. -/
@@ -146,11 +146,11 @@ noncomputable def posteriorTail {m : ℕ} (prior grid : Fin m → ℝ) (α q : �
     (t : ℝ) : ℝ :=
   tailRatio prior (fun k => binomPmf n (somaticAF α q (grid k)) a) grid t
 
-/-- **Clonal call for a mutation.** Landau et al.'s clonal call: `P(CCF > t | a) > γ` (they take `t = 0.95`, `γ = 0.5`). -/
+/-- Landau et al.'s clonal call: `P(CCF > t | a) > γ` (they take `t = 0.95`, `γ = 0.5`). -/
 def IsClonal {m : ℕ} (prior grid : Fin m → ℝ) (α q : ℝ) (n a : ℕ) (t γ : ℝ) : Prop :=
   γ < posteriorTail prior grid α q n a t
 
-/-- **Grid model for the cancer cell fraction.** Hypotheses on the CCF grid model: purity `0 < α ≤ 1`, copy number `q > 0`, grid in
+/-- Hypotheses on the CCF grid model: purity `0 < α ≤ 1`, copy number `q > 0`, grid in
 `[0, q]` and within the defining CCF bound `≤ 1`, a nonnegative prior, and one grid point
 of positive prior weight whose allelic fraction lies strictly inside `(0, 1)` (this makes
 every posterior well defined). -/
@@ -164,7 +164,7 @@ structure GridModel {m : ℕ} (prior grid : Fin m → ℝ) (α q : ℝ) : Prop w
   prior_nonneg : ∀ k, 0 ≤ prior k
   exists_interior : ∃ k, 0 < prior k ∧ 0 < somaticAF α q (grid k) ∧ somaticAF α q (grid k) < 1
 
-/-- **Positivity of the grid posterior normalizer.** In a grid model every posterior normalizer `∑_k π_k Binom(a | n, f(grid k))`, `a ≤ n`,
+/-- In a grid model every posterior normalizer `∑_k π_k Binom(a | n, f(grid k))`, `a ≤ n`,
 is positive. -/
 theorem GridModel.normalizer_pos {m : ℕ} {prior grid : Fin m → ℝ} {α q : ℝ}
     (h : GridModel prior grid α q) {n a : ℕ} (ha : a ≤ n) :
@@ -213,7 +213,7 @@ theorem exists_threshold {m : ℕ} {prior grid : Fin m → ℝ} {α q : ℝ}
   · simp only [not_exists, not_and] at hex
     exact ⟨n + 1, fun a ha => ⟨fun hc => absurd hc (hex a ha), fun hle => by omega⟩⟩
 
-/-- **Maximum-likelihood cancer cell fraction.** The continuous maximum-likelihood CCF `ĉ = min 1 (a / (n κ))` for the allelic-fraction
+/-- The continuous maximum-likelihood CCF `ĉ = min 1 (a / (n κ))` for the allelic-fraction
 slope `κ = α / (α q + 2 (1 - α))`. Landau et al. (2013) use the grid posterior; this continuous
 maximizer over `[0, 1]` is derived here. -/
 noncomputable def ccfMLE (α q : ℝ) (n a : ℕ) : ℝ := min 1 ((a : ℝ) / n / somaticAF α q 1)

@@ -24,25 +24,23 @@ public import Mathlib.Analysis.Normed.Lp.MeasurableSpace
 
 namespace MathlibExt.MeasureTheory.ScottishBook169Wanted
 
-/-- **Congruent plane sets.** Two sets $E$ and $F$ in the Euclidean plane $\mathbb{R}^2$ are
-congruent when some isometry of the plane onto itself maps $E$ onto $F$. -/
+/-- Two plane sets are congruent when an isometry of the plane carries
+one onto the other. -/
 def AreCongruent (E F : Set (EuclideanSpace ℝ (Fin 2))) : Prop :=
   ∃ T : EuclideanSpace ℝ (Fin 2) ≃ᵢ EuclideanSpace ℝ (Fin 2), T '' E = F
 
-/-- **Congruence-invariant set functions on the plane.** A function $\mu$ that assigns to every
-subset of the Euclidean plane $\mathbb{R}^2$ a value in $[0, \infty]$ is congruence invariant when
-$\mu(E) = \mu(F)$ for all congruent plane sets $E$ and $F$. -/
+/-- `μ` is equal on congruent sets. -/
 def IsCongruenceInvariant (μ : Set (EuclideanSpace ℝ (Fin 2)) → ENNReal) : Prop :=
   ∀ E F : Set (EuclideanSpace ℝ (Fin 2)), AreCongruent E F → μ E = μ F
 
-/-- **Countably additive set function.** `μ` is countably additive on pairwise-disjoint families. This is the
+/-- `μ` is countably additive on pairwise-disjoint families. This is the
 countably-additive reading of "additive" in Problem 169; the typescript
 does not say whether finite or countable additivity is meant. -/
 def IsCountablyAdditive (μ : Set (EuclideanSpace ℝ (Fin 2)) → ENNReal) : Prop :=
   ∀ E : ℕ → Set (EuclideanSpace ℝ (Fin 2)),
     Pairwise fun i j => Disjoint (E i) (E j) → μ (⋃ i, E i) = ∑' i, μ (E i)
 
-/-- **Problem of a congruence-invariant countably additive plane measure.** The countably additive reading of Problem 169: there is a function
+/-- The countably additive reading of Problem 169: there is a function
 `μ`, defined for all plane sets, equal on congruent sets, countably
 additive, extending the Caratheodory linear measure (read as Lebesgue
 volume on measurable sets), with values in `[0, +∞]` (automatic for
@@ -54,7 +52,7 @@ def CountablyAdditiveCongruenceClaim : Prop :=
       μ E = MeasureTheory.volume E
 
 /--
-**No countably additive congruence-invariant measure on all plane sets.** The countably additive reading is false in ZFC. Sketch: let
+The countably additive reading is false in ZFC. Sketch: let
 `V₀ ⊆ [0,1]` meet each `ℚ`-coset of `ℝ` exactly once (Vitali selector)
 and put `V = V₀ × [0,1]`. Enumerating `ℚ ∩ [-1,1]` as `(qₙ)`, the
 translates `Tₙ = V + (qₙ, 0)` are pairwise disjoint, each congruent to

@@ -41,7 +41,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **$\ell^1$ norm of a vector in $\mathbb{Z}^2$.** The `ℓ¹` norm `|z 0| + |z 1|` of a vector of `ℤ²`. -/
+/-- The `ℓ¹` norm `|z 0| + |z 1|` of a vector of `ℤ²`. -/
 def unitWt (z : Site 2) : ℕ := ∑ i, (z i).natAbs
 
 theorem adj_iff_unitWt_sub (x y : Site 2) :
@@ -76,7 +76,7 @@ theorem unitWt_rot90Fun_dir (e : Dart) : unitWt (rot90Fun e.dir) = 1 := by
 theorem unitWt_neg_rot90Fun_dir (e : Dart) : unitWt (-rot90Fun e.dir) = 1 := by
   rw [unitWt_neg]; exact unitWt_rot90Fun_dir e
 
-/-- **Dart from a site in a unit direction.** The dart from `p` to `p + g`, for a unit vector `g`. -/
+/-- The dart from `p` to `p + g`, for a unit vector `g`. -/
 def mkDart (p g : Site 2) (hg : unitWt g = 1) : Dart where
   tail := p
   head := p + g
@@ -94,7 +94,7 @@ def mkDart (p g : Site 2) (hg : unitWt g = 1) : Dart where
     (mkDart p g hg).dir = g := by
   rw [Dart.dir_def, mkDart_head, mkDart_tail]; abel
 
-/-- **Boundary dart of a set of sites.** `e` is a boundary dart of `K`: it points from a site of `K` to a site outside `K`. -/
+/-- `e` is a boundary dart of `K`: it points from a site of `K` to a site outside `K`. -/
 def IsBoundaryDart (K : Set (Site 2)) (e : Dart) : Prop :=
   e.tail ∈ K ∧ e.head ∉ K
 
@@ -104,7 +104,7 @@ theorem IsBoundaryDart.tail_mem {K : Set (Site 2)} {e : Dart}
 theorem IsBoundaryDart.head_not_mem {K : Set (Site 2)} {e : Dart}
     (h : IsBoundaryDart K e) : e.head ∉ K := h.2
 
-/-- **Successor of a boundary dart.** The successor of the dart `e` along the boundary of `K`. Write `r` for `e.dir` rotated
+/-- The successor of the dart `e` along the boundary of `K`. Write `r` for `e.dir` rotated
 clockwise by a quarter turn. If `e.head + r ∈ K` (a reflex corner of `K`), the successor shares the
 head of `e`; if only `e.tail + r ∈ K`, it is the translate of `e` by `r`; otherwise (a convex corner
 of `K`) it starts at `e.tail` in direction `r`. -/

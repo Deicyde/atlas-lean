@@ -126,13 +126,9 @@ private lemma diff_eq_psi_sub (x : ℝ) (k : ℕ) :
   rw [hsin]
   ring
 
-/-- **Ramanujan's central-binomial sine series identity (Entry 31).** For real $y$ let
-$\psi(y) = \sum_{k \ge 0} \binom{2k}{k} \sin^{2k+1}(\pi y) / \bigl(2^{2k} (2k+1)^2\bigr)$. If
-$0 \le x \le 1/4$, then the series defining $\psi(1/2 - x)$, $\psi(2x)$ and $\psi(x)$ converge
-absolutely, $2 \cos(\pi x) > 0$, and
-$\psi(1/2 - x) + \tfrac12 \psi(2x) - \psi(x) = \tfrac{\pi}{2} \log(2 \cos(\pi x))$.
+/-- Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
 
-Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.
+Proves `Wanted` entry `ramanujan_part1_ch9_entry31_ramanujansum`.
 -/
 theorem ramanujan_part1_ch9_entry31_ramanujansum
     (x : ℝ) (hxLower : 0 ≤ x) (hxUpper : x ≤ 1 / 4) :

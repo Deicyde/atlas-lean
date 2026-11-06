@@ -33,14 +33,12 @@ References:
   [arXiv:2607.02738v1](https://arxiv.org/abs/2607.02738v1), lines 95–103.
 -/
 
-/-- **Carmichael numbers.** A natural number $n$ is a Carmichael number if $n > 1$, $n$ is not
-prime, and $a^n \equiv a \pmod{n}$ for every natural number $a$. -/
+/-- A composite natural number satisfying Fermat's congruence for every base. -/
 def Nat.IsCarmichaelNumber (n : ℕ) : Prop :=
   1 < n ∧ ¬n.Prime ∧ ∀ a : ℕ, a ^ n ≡ a [MOD n]
 
-/-- **Carmichael numbers via the residue ring.** A natural number $n$ is a Carmichael number if
-and only if $n > 1$, $n$ is not prime, and $x^n = x$ for every element $x$ of
-$\mathbb{Z}/n\mathbb{Z}$. -/
+/-- The universal congruence in the definition of a Carmichael number, expressed for every
+element of `ZMod n`. -/
 theorem Nat.isCarmichaelNumber_iff_zmod (n : ℕ) :
     Nat.IsCarmichaelNumber n ↔
       1 < n ∧ ¬n.Prime ∧ ∀ x : ZMod n, x ^ n = x := by
@@ -70,9 +68,8 @@ private lemma carmichael_prime_eq (p : ℕ) (hp : p.Prime) :
     simp only [pow_one] at h
     rw [h, Nat.totient_prime hp]
 
-/-- **Korselt's criterion.** A natural number $n > 1$ is a Carmichael number if and only if
-$n$ is squarefree, $p - 1$ divides $n - 1$ for every prime divisor $p$ of $n$, and $n$ is not
-prime. -/
+/-- **Korselt's criterion**: a positive composite natural number is a Carmichael number iff it is
+squarefree and `p - 1 ∣ n - 1` for every prime divisor `p` of `n`. -/
 theorem Nat.isCarmichaelNumber_iff_korselt (n : ℕ) (hn : 1 < n) :
     Nat.IsCarmichaelNumber n ↔
       Squarefree n ∧

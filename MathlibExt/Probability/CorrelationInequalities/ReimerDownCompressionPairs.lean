@@ -114,7 +114,7 @@ theorem dpairsCount_fiber_downDown_ineq (am an bm bn : Finset (Finset α)) :
              (dpairsCount_mono_right _ Finset.inter_subset_left)
   omega
 
-/-- **Down-compression does not decrease the disjoint-pair count.** Down-compressing both families at `i` does not decrease the number of disjoint pairs. -/
+/-- Down-compressing both families at `i` does not decrease the number of disjoint pairs. -/
 theorem dpairsCount_downDown_mono (𝒜 ℬ : Finset (Finset α)) (i : α) :
     dpairsCount 𝒜 ℬ ≤ dpairsCount (Down.compression i 𝒜) (Down.compression i ℬ) := by
   rw [dpairsCount_fiber_recursion 𝒜 ℬ i,
@@ -127,7 +127,7 @@ section Weighted
 
 variable [Fintype α]
 
-/-- **Weight kernel of disjoint pairs off a coordinate.** `fwt' w i S * fwt' w i T` for disjoint `S, T`, and `0` otherwise. -/
+/-- `fwt' w i S * fwt' w i T` for disjoint `S, T`, and `0` otherwise. -/
 noncomputable def pairKernel' (w : α → Bool → ℝ) (i : α) (S T : Finset α) : ℝ :=
   if Disjoint S T then fwt' w i S * fwt' w i T else 0
 
@@ -211,7 +211,7 @@ theorem wdpairs'_fiber_downDown_ineq {w : α → Bool → ℝ} (hw : ∀ x b, 0 
   linarith [key, mul_nonneg (mul_nonneg hw0 (sub_nonneg.mpr hdom)) (sub_nonneg.mpr hC2),
     mul_nonneg (mul_nonneg hw0 hw1) (sub_nonneg.mpr hMono)]
 
-/-- **Down-compression does not decrease weighted disjoint pairs.** Down-compressing both families at `i` does not decrease the weighted number of disjoint
+/-- Down-compressing both families at `i` does not decrease the weighted number of disjoint
 pairs when `w i true ≤ w i false`. -/
 theorem wdpairs_downDown_mono {w : α → Bool → ℝ} (hw : ∀ x b, 0 ≤ w x b) (i : α)
     (hdom : w i true ≤ w i false) (𝒜 ℬ : Finset (Finset α)) :
@@ -222,7 +222,7 @@ theorem wdpairs_downDown_mono {w : α → Bool → ℝ} (hw : ∀ x b, 0 ≤ w x
     downComp_nonMemberSubfamily i ℬ, downComp_memberSubfamily i ℬ]
   exact wdpairs'_fiber_downDown_ineq hw i hdom _ _ _ _
 
-/-- **Weighted down-compression monotonicity fails for general weights.** Without `w i true ≤ w i false`, `wdpairs_downDown_mono` can fail. -/
+/-- Without `w i true ≤ w i false`, `wdpairs_downDown_mono` can fail. -/
 theorem wdpairs_downDown_not_mono_general :
     ∃ (w : Fin 1 → Bool → ℝ) (𝒜 ℬ : Finset (Finset (Fin 1))) (i : Fin 1),
       (∀ x b, 0 ≤ w x b) ∧

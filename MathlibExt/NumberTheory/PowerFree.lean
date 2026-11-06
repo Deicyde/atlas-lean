@@ -26,41 +26,36 @@ monotonicity in the exponent, and that `2`-free is exactly squarefree.
 
 namespace Nat
 
-/-- **Power-free natural numbers.** Let $k$ be a natural number. A natural number $n$ is
-$k$-free when $k \ge 2$, $n > 0$, and $p^k$ does not divide $n$ for any prime $p$. -/
+/-- A natural number `n` is `k`-free if `2 ≤ k`, `0 < n`, and no prime
+`k`-th power divides `n`. -/
 def IsPowerFree (n k : ℕ) : Prop :=
   2 ≤ k ∧ 0 < n ∧ ∀ p : ℕ, p.Prime → ¬p ^ k ∣ n
 
-/-- **Characterization of power-free numbers.** For natural numbers $n$ and $k$, $n$ is $k$-free
-if and only if $k \ge 2$, $n > 0$, and $p^k$ does not divide $n$ for any prime $p$. -/
+/-- Transparent characterization of `IsPowerFree`. -/
 theorem isPowerFree_iff {n k : ℕ} :
     n.IsPowerFree k ↔ 2 ≤ k ∧ 0 < n ∧ ∀ p : ℕ, p.Prime → ¬p ^ k ∣ n :=
   Iff.rfl
 
-/-- **The exponent of a power-free number is at least two.** If a natural number $n$ is $k$-free,
-then $k \ge 2$. -/
+/-- The exponent restriction of a power-free number. -/
 theorem IsPowerFree.two_le {n k : ℕ} (h : n.IsPowerFree k) : 2 ≤ k :=
   h.1
 
-/-- **Power-free numbers are positive.** If a natural number $n$ is $k$-free, then $n > 0$. -/
+/-- Positivity of a power-free number. -/
 theorem IsPowerFree.pos {n k : ℕ} (h : n.IsPowerFree k) : 0 < n :=
   h.2.1
 
-/-- **A k-free number has no prime k-th power divisor.** If a natural number $n$ is $k$-free and
-$p$ is a prime, then $p^k$ does not divide $n$. -/
+/-- The prime-power exclusion of a power-free number. -/
 theorem IsPowerFree.not_dvd {n k p : ℕ} (h : n.IsPowerFree k)
     (hp : p.Prime) : ¬p ^ k ∣ n :=
   h.2.2 p hp
 
-/-- **Divisors of k-free numbers are k-free.** If a natural number $n$ is $k$-free and $m$ divides
-$n$, then $m$ is $k$-free. -/
+/-- Divisors of a power-free number are power-free at the same level. -/
 theorem IsPowerFree.of_dvd {m n k : ℕ} (h : n.IsPowerFree k)
     (hmn : m ∣ n) : m.IsPowerFree k :=
   ⟨h.two_le, Nat.pos_of_dvd_of_pos hmn h.pos,
     fun _ hp hdiv => h.not_dvd hp (hdiv.trans hmn)⟩
 
-/-- **Power-freeness is monotone in the exponent.** If a natural number $n$ is $k$-free and
-$k \le l$, then $n$ is $l$-free. -/
+/-- Monotonicity in the exponent: `k`-free implies `l`-free for `k ≤ l`. -/
 theorem IsPowerFree.mono {n k l : ℕ} (h : n.IsPowerFree k)
     (hkl : k ≤ l) : n.IsPowerFree l := by
   refine ⟨le_trans h.two_le hkl, h.pos, fun p hp hdiv => ?_⟩
@@ -70,8 +65,7 @@ theorem IsPowerFree.mono {n k l : ℕ} (h : n.IsPowerFree k)
     exact dvd_mul_right _ _
   exact h.not_dvd hp (hpk.trans hdiv)
 
-/-- **A natural number is 2-free if and only if it is squarefree.** For every natural number $n$,
-$n$ is $2$-free if and only if $n$ is squarefree, that is, $d^2$ divides $n$ only for $d = 1$. -/
+/-- `2`-free is exactly squarefree, via `Nat.squarefree_iff_prime_squarefree`. -/
 theorem isPowerFree_two {n : ℕ} : n.IsPowerFree 2 ↔ Squarefree n := by
   constructor
   · intro h

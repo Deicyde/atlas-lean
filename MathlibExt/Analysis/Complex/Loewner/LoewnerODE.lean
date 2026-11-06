@@ -44,7 +44,7 @@ open UpperHalfPlane (upperHalfPlaneSet isOpen_upperHalfPlaneSet)
 
 namespace StatMech.SLE
 
-/-- **Closed half-plane above a horizontal line.** The closed strip `{w ∈ ℂ : δ ≤ Im w}`. -/
+/-- The closed strip `{w ∈ ℂ : δ ≤ Im w}`. -/
 def loewnerStrip (δ : ℝ) : Set ℂ := {w : ℂ | δ ≤ w.im}
 
 @[simp] lemma mem_loewnerStrip {δ : ℝ} {w : ℂ} : w ∈ loewnerStrip δ ↔ δ ≤ w.im := Iff.rfl

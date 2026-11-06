@@ -45,7 +45,7 @@ namespace StatMech
 
 variable {E : Type*}
 
-/-- **Inhomogeneous Bernoulli product measure.** The product measure on `ConfigSpace E` under which coordinate `e` is open (`true`) with
+/-- The product measure on `ConfigSpace E` under which coordinate `e` is open (`true`) with
 probability `p e`, independently. -/
 noncomputable def inhomBernoulliProductMeasure (p : E → ℝ≥0)
     (hp : ∀ e, p e ≤ 1) : Measure (ConfigSpace E) :=
@@ -57,7 +57,7 @@ instance (p : E → ℝ≥0) (hp : ∀ e, p e ≤ 1) :
   unfold inhomBernoulliProductMeasure
   infer_instance
 
-/-- **Inhomogeneous Bernoulli product with constant parameter.** For a constant parameter, the inhomogeneous product is `bernoulliProductMeasure`. -/
+/-- For a constant parameter, the inhomogeneous product is `bernoulliProductMeasure`. -/
 theorem inhomBernoulliProductMeasure_const (p : ℝ≥0) (hp : p ≤ 1) :
     inhomBernoulliProductMeasure (E := E) (fun _ => p) (fun _ => hp)
       = bernoulliProductMeasure p hp := rfl
@@ -118,7 +118,7 @@ theorem inhom_real_eq_wprob [Fintype E] [DecidableEq E]
 
 set_option linter.unusedFintypeInType false in
 set_option linter.unusedDecidableInType false in
-/-- **BK inequality for inhomogeneous Bernoulli measures on a finite set.** The **BK inequality** for an inhomogeneous Bernoulli product measure on a finite set. -/
+/-- The **BK inequality** for an inhomogeneous Bernoulli product measure on a finite set. -/
 theorem inhom_bk_inequality [Fintype E] [DecidableEq E]
     (p : E → ℝ≥0) (hp : ∀ e, p e ≤ 1)
     {A B : Set (ConfigSpace E)} (hA : IsIncreasing A) (hB : IsIncreasing B) :
@@ -171,7 +171,7 @@ theorem inhom_coord_true_prob (p : E → ℝ≥0) (hp : ∀ e, p e ≤ 1) (e : E
   rw [Measure.real, happ, bernoulliMeasure_apply_true, ENNReal.coe_toReal]
 
 omit [DecidableEq E] in
-/-- **BK inequality for inhomogeneous measures on a countable set.** The BK inequality for an inhomogeneous Bernoulli product measure on a countable set, for
+/-- The BK inequality for an inhomogeneous Bernoulli product measure on a countable set, for
 increasing events depending on finitely many coordinates. -/
 theorem inhom_bk_of_finite_dependsOn (p : E → ℝ≥0) (hp : ∀ e, p e ≤ 1)
     {A B : Set (ConfigSpace E)} (F : Finset E)

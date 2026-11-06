@@ -20,23 +20,18 @@ namespace MathlibExt.Analysis.Series.RiemannRearrangementWanted
 
 open BigOperators
 
-/-- **Convergence of a series in order.** For a sequence $f : \mathbb{N} \to \mathbb{R}$ and
-$a \in \mathbb{R}$, the series $\sum_n f(n)$ converges in order to $a$ when its partial sums
-$\sum_{n=0}^{N-1} f(n)$ tend to $a$ as $N \to \infty$. -/
+/-- Ordinary ordered convergence via ordered partial sums:
+`Tendsto (fun N => ∑ n ∈ Finset.range N, f n) atTop (nhds a)`. -/
 def OrderedHasSum (f : ℕ → ℝ) (a : ℝ) : Prop :=
   Filter.Tendsto (fun N => ∑ n ∈ Finset.range N, f n) Filter.atTop (nhds a)
 
-/-- **Convergence in order via partial sums.** For a sequence $f : \mathbb{N} \to \mathbb{R}$ and
-$a \in \mathbb{R}$, the series $\sum_n f(n)$ converges in order to $a$ if and only if its partial
-sums $\sum_{n=0}^{N-1} f(n)$ tend to $a$ as $N \to \infty$. -/
+/-- `OrderedHasSum f a` unfolds to convergence of the ordered partial sums. -/
 theorem orderedHasSum_iff (f : ℕ → ℝ) (a : ℝ) :
     OrderedHasSum f a ↔
       Filter.Tendsto (fun N => ∑ n ∈ Finset.range N, f n) Filter.atTop (nhds a) :=
   Iff.rfl
 
-/-- **Terms of a convergent series tend to zero.** If $f : \mathbb{N} \to \mathbb{R}$ and the
-series $\sum_n f(n)$ converges in order to some $s \in \mathbb{R}$, then $f(n) \to 0$ as
-$n \to \infty$. -/
+/-- Convergent ordered series have vanishing terms. -/
 theorem orderedHasSum_tendsto_zero (f : ℕ → ℝ) (s : ℝ) (h : OrderedHasSum f s) :
     Filter.Tendsto f Filter.atTop (nhds 0) := by
   have hsucc' : Filter.Tendsto (fun N => N + 1) (Filter.atTop : Filter ℕ) Filter.atTop :=
@@ -1141,11 +1136,8 @@ private theorem greedy_tendsto (f : ℕ → ℝ) (a : ℝ)
     exact hmain k
 
 /--
-**Riemann rearrangement theorem.** Let $f : \mathbb{N} \to \mathbb{R}$ be such that the series
-$\sum_n f(n)$ converges in order to some real number, while the series $\sum_n |f(n)|$ is not
-summable. Then for every $a \in \mathbb{R}$ there is a permutation $\sigma$ of $\mathbb{N}$ such
-that the rearranged series $\sum_n f(\sigma(n))$ converges in order to $a$.
-
+Riemann rearrangement: a conditionally convergent real series can be rearranged to sum to any
+prescribed real number.
 Source: B. Riemann, Über die Darstellbarkeit einer Function durch eine trigonometrische Reihe,
 Habilitationsschrift (1854; published 1867).
 

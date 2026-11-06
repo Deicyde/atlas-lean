@@ -263,7 +263,7 @@ private theorem sq_le_of_forall_eps {A X D : ℝ} (hA : 0 ≤ A) (hX : 0 ≤ X) 
 
 /-! ### Integration by parts -/
 
-/-- **Integration-by-parts identity for Heisenberg's inequality.** The integration-by-parts identity underlying Heisenberg's inequality:
+/-- The integration-by-parts identity underlying Heisenberg's inequality:
 for real-valued Schwartz `f`, `∫ (f x)² = -2 * ∫ x * f x * f' x`. -/
 theorem schwartz_integral_sq_eq_neg_two_mul (f : 𝓢(ℝ, ℝ)) :
     ∫ x, (f x) ^ 2 = -2 * ∫ x, x * (f x * deriv f x) := by
@@ -730,7 +730,7 @@ open scoped FourierTransform
 
 namespace MathlibExt.Analysis.Fourier.HeisenbergUncertaintyFourierWanted
 
-/-- **Heisenberg uncertainty principle.** Denote by $\mathcal{S}(\mathbb{R})$ the Schwartz space on $\mathbb{R}$ consisting of all
+/-- Denote by $\mathcal{S}(\mathbb{R})$ the Schwartz space on $\mathbb{R}$ consisting of all
 complex-valued $C^\infty$ functions $f(x)$ on $\mathbb{R}$ such that
 \[
 \sup_{x\in\mathbb{R}} |x|^k \left|\frac{d^\ell f}{dx^\ell}(x)\right| < \infty

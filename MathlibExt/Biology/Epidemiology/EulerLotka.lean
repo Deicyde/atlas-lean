@@ -63,7 +63,7 @@ open MeasureTheory ProbabilityTheory Real
 
 namespace MathlibExt.Biology.Epidemiology.EulerLotka
 
-/-- **Reproductive number from growth rate and generation interval.** The **reproductive number** implied by growth rate `r` and generation-interval law `g`:
+/-- The **reproductive number** implied by growth rate `r` and generation-interval law `g`:
 `R = 1 / M_g(-r)` (Wallinga–Lipsitch 2007, eq. 2.9). -/
 noncomputable def reproductionNumber (g : Measure ℝ) (r : ℝ) : ℝ :=
   (mgf id g (-r))⁻¹
@@ -108,7 +108,7 @@ theorem renewal_exp_iff_reproductionNumber (g : Measure ℝ) [IsProbabilityMeasu
   · intro h; exact eq_inv_of_mul_eq_one_left h
   · intro h; rw [h, inv_mul_cancel₀ hM.ne']
 
-/-- **Positivity of the reproductive number.** The reproductive number is positive when `M_g(-r)` is finite. -/
+/-- The reproductive number is positive when `M_g(-r)` is finite. -/
 theorem reproductionNumber_pos (g : Measure ℝ) [IsProbabilityMeasure g] {r : ℝ}
     (hint : Integrable (fun a => exp (-r * a)) g) : 0 < reproductionNumber g r :=
   inv_pos.2 (mgf_pos (X := id) hint)

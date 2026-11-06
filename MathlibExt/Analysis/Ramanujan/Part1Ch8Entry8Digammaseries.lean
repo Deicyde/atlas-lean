@@ -71,11 +71,8 @@ def chapter8Digamma (z : ℂ) : ℂ :=
 def chapter8Entry8Term (a b : ℂ) (j : ℕ) : ℂ :=
   (-1 : ℂ) ^ j / (a + b * ((j + 1 : ℕ) : ℂ))
 
-/-- **Digamma as the logarithmic derivative of Gamma (used for Chapter 8, Entry 8).** For every
-complex number $z$, $\Gamma'(z)/\Gamma(z) = \psi(z)$, where $\psi$ is the digamma function.
-
-At the poles $z = 0, -1, -2, \dots$ the conventions $\Gamma(z) = 0$ and division by zero giving
-$0$ make both sides $0$, so the identity holds for every $z$. -/
+/-- `chapter8Digamma` agrees with Mathlib's `Complex.digamma`
+(`logDeriv Complex.Gamma`), definitionally. -/
 theorem chapter8Digamma_eq_Complex_digamma (z : ℂ) :
     chapter8Digamma z = Complex.digamma z := by
   simp [chapter8Digamma, Complex.digamma_def, logDeriv]
@@ -879,12 +876,9 @@ private lemma Sodd_limit (a b : ℂ) (hb : b ≠ 0)
   have hadd := heven.add hodd_term
   simpa using hadd
 
-/-- **Alternating series $\sum_{k \ge 1} (-1)^{k-1}/(a + kb)$ via the digamma function.** Let $a$
-and $b$ be complex numbers with $b \ne 0$ and $a + kb \ne 0$ for every integer $k \ge 1$, and let
-$\psi$ be the digamma function, the logarithmic derivative of $\Gamma$. Then the partial sums of
-$\sum_{k=1}^{\infty} \frac{(-1)^{k-1}}{a + kb}$ converge to
-$$\frac{1}{2b} \left(\psi\left(\frac{a+2b}{2b}\right) - \psi\left(\frac{a+b}{2b}\right)\right).$$
--/
+/-- Entry 8 sum stated with Mathlib's `Complex.digamma` and without the
+Gamma-nonvanishing hypotheses. `ramanujan_part1_ch8_entry8_digammaseries`
+follows from this by `chapter8Digamma_eq_Complex_digamma`. -/
 theorem ramanujan_part1_ch8_entry8_digammaseries_complex_digamma
     (a b : ℂ) (hb : b ≠ 0)
     (hdenom : ∀ j : ℕ, a + b * ((j + 1 : ℕ) : ℂ) ≠ 0) :
@@ -898,19 +892,9 @@ theorem ramanujan_part1_ch8_entry8_digammaseries_complex_digamma
     (Seven_limit a b hb hdenom (tail_tendsto a b hb hdenom))
     (Sodd_limit a b hb hdenom (Seven_limit a b hb hdenom (tail_tendsto a b hb hdenom)))
 
-/-- **Ramanujan's alternating digamma series (Chapter 8, Entry 8).** Let $a$ and $b$ be complex
-numbers with $b \ne 0$ and $a + kb \ne 0$ for every integer $k \ge 1$, suppose that
-$\Gamma\left(\frac{a+2b}{2b}\right) \ne 0$ and $\Gamma\left(\frac{a+b}{2b}\right) \ne 0$, and let
-$\psi(z) = \Gamma'(z)/\Gamma(z)$. Then the partial sums of
-$\sum_{k=1}^{\infty} \frac{(-1)^{k-1}}{a + kb}$ converge to
-$$\frac{1}{2b} \left(\psi\left(\frac{a+2b}{2b}\right) - \psi\left(\frac{a+b}{2b}\right)\right).$$
-
-Here $\Gamma$ takes the value $0$ at its poles $0, -1, -2, \dots$, so the two conditions on $\Gamma$
-say that these arguments are not poles; they already follow from the condition on $a + kb$.
+/-- Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
 
 Proves `Wanted` entry `ramanujan_part1_ch8_entry8_digammaseries`.
-
-Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
 -/
 theorem ramanujan_part1_ch8_entry8_digammaseries
     (a b : ℂ) (hb : b ≠ 0)

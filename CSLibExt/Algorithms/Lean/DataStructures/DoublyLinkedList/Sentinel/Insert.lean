@@ -70,15 +70,7 @@ private lemma y_next_after_prev {α : Type u} {n : Nat}
     simp only [get_set, ite_true, Option.get_some]
   · simp only [get_set, hxy, ite_false]
 
-/-- **Sentinel list insertion (LIST-INSERT′).** Let $S$ be a store of $n$ cells, each empty or
-holding a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is not
-NIL, and the cell $w$ it points to is allocated. Sentinel insertion of $x$ after $y$ performs four
-pointer assignments in order, each costing one time unit, and returns the resulting store: set
-the next pointer of $x$ to the next pointer of $y$; set the previous pointer of $x$ to $y$; set
-the previous pointer of the successor $w$ of $y$ to $x$; set the next pointer of $y$ to $x$.
-
-Each assignment reads the store left by the previous ones, so aliased cells see earlier writes.
-Unlike LIST-INSERT, there is no NIL test. -/
+/-- The four assignments of LIST-INSERT-prime, without a NIL branch. -/
 public def sentinelInsert {α : Type u} {n : Nat}
     (store : Vector (Option (Node α (Fin n))) n) (x y : Fin n)
     (hx : (store.get x).isSome) (hy : (store.get y).isSome)
@@ -136,12 +128,7 @@ private lemma first_two_store {α : Type u} {n : Nat}
 
 @[expose] public section
 
-/-- **Sentinel insertion takes four steps.** Let $S$ be a store of $n$ cells, each empty or holding
-a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is not NIL, and the
-cell it points to is allocated. Then sentinel insertion of $x$ after $y$ in $S$ costs exactly $4$
-time units, one per pointer assignment.
-
-This counts logical pointer assignments, not full RAM cost. -/
+/-- Same-run logical pointer assignments, not full RAM cost. -/
 public theorem sentinelInsert_time {α : Type u} {n : Nat}
     (store : Vector (Option (Node α (Fin n))) n) (x y : Fin n)
     (hx : (store.get x).isSome) (hy : (store.get y).isSome)
@@ -150,15 +137,7 @@ public theorem sentinelInsert_time {α : Type u} {n : Nat}
     (sentinelInsert store x y hx hy hn hs).time = 4 := by
   simp [sentinelInsert, TimeM.time_bind, TimeM.time_tick, TimeM.time_pure]
 
-/-- **The store after sentinel insertion.** Let $S$ be a store of $n$ cells, each empty or holding
-a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is not NIL, and the
-cell $w$ it points to is allocated; write $S[c]$ for the node at an allocated cell $c$. Then the
-store returned by sentinel insertion of $x$ after $y$ is obtained from $S$ by three updates, each
-applied to the result of the previous one: replace the content of $x$ by the node $S[x]$ with next
-pointer equal to the next pointer of $S[y]$ and previous pointer $y$; set the previous pointer of
-the node at $w$ to $x$; set the next pointer of the node at $y$ to $x$.
-
-No freshness or distinctness of $x$, $y$ and $w$ is assumed. -/
+/-- Complete carried-store characteristic, without freshness. -/
 public theorem sentinelInsert_ret {α : Type u} {n : Nat}
     (store : Vector (Option (Node α (Fin n))) n) (x y : Fin n)
     (hx : (store.get x).isSome) (hy : (store.get y).isSome)
@@ -238,16 +217,7 @@ private lemma ret_eq_listInsert {α : Type u} {n : Nat}
   have he : ((store.get y).get hy).next = some z := (Option.some_get hn).symm
   simp only [he, Option.get_some]
 
-/-- **Sentinel insertion, cell by cell.** Let $S$ be a store of $n$ cells, each empty or holding a
-node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is not NIL, and the
-cell it points to is allocated; write $S[c]$ for the node at an allocated cell $c$. Let $S'$ be
-the store returned by sentinel insertion of $x$ after $y$. Then for every cell $z$, the content of
-$z$ in $S'$ is obtained from its content in $S$ by three steps in order: if $z = x$, replace the
-content by the node $S[x]$ with next pointer equal to the next pointer of $S[y]$ and previous
-pointer $y$; if the next pointer of $S[y]$ is $z$, set the previous pointer to $x$; if $z = y$,
-set the next pointer to $x$. The last two steps leave an empty cell empty.
-
-No distinctness of $x$, $y$, $z$ and the successor of $y$ is assumed. -/
+/-- The source-ordered update at every cell, including aliased write targets. -/
 public theorem sentinelInsert_get {α : Type u} {n : Nat}
     (store : Vector (Option (Node α (Fin n))) n) (x y z : Fin n)
     (hx : (store.get x).isSome) (hy : (store.get y).isSome)
@@ -263,11 +233,7 @@ public theorem sentinelInsert_get {α : Type u} {n : Nat}
   simp only [ret_eq_listInsert]
   exact listInsert_get store x y z hx hy hs
 
-/-- **Sentinel insertion leaves other cells unchanged.** Let $S$ be a store of $n$ cells, each
-empty or holding a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is
-not NIL, and the cell it points to is allocated. Let $S'$ be the store returned by sentinel
-insertion of $x$ after $y$. If a cell $z$ differs from $x$ and from $y$, and the next pointer of
-$y$ in $S$ is not $z$, then $z$ has the same content in $S'$ as in $S$. -/
+/-- Cells outside the inserted node, predecessor and old successor are unchanged. -/
 public theorem sentinelInsert_frame {α : Type u} {n : Nat}
     (store : Vector (Option (Node α (Fin n))) n) (x y z : Fin n)
     (hx : (store.get x).isSome) (hy : (store.get y).isSome)
@@ -278,12 +244,7 @@ public theorem sentinelInsert_frame {α : Type u} {n : Nat}
   simp only [ret_eq_listInsert]
   exact listInsert_frame store x y z hx hy hs hxz hyz hsz
 
-/-- **Sentinel insertion preserves allocation.** Let $S$ be a store of $n$ cells, each empty or
-holding a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is not NIL,
-and the cell it points to is allocated. Let $S'$ be the store returned by sentinel insertion of
-$x$ after $y$. Then every cell $z$ is allocated in $S'$ if and only if it is allocated in $S$.
-
-No distinctness of $x$, $y$, $z$ and the successor of $y$ is assumed. -/
+/-- Insertion neither allocates nor deallocates a cell, even with aliased targets. -/
 public theorem sentinelInsert_allocated {α : Type u} {n : Nat}
     (store : Vector (Option (Node α (Fin n))) n) (x y z : Fin n)
     (hx : (store.get x).isSome) (hy : (store.get y).isSome)
@@ -294,11 +255,7 @@ public theorem sentinelInsert_allocated {α : Type u} {n : Nat}
   simp only [ret_eq_listInsert]
   exact listInsert_allocated store x y z hx hy hs
 
-/-- **Sentinel insertion preserves payloads.** Let $S$ be a store of $n$ cells, each empty or
-holding a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is not NIL,
-and the cell it points to is allocated. Let $S'$ be the store returned by sentinel insertion of
-$x$ after $y$. Then for every cell $z$, either $z$ is empty in both $S$ and $S'$, or it holds a
-node in both and the two nodes have the same payload, including keys and satellite data. -/
+/-- Every payload, including keys and satellite data, is preserved. -/
 public theorem sentinelInsert_payload {α : Type u} {n : Nat}
     (store : Vector (Option (Node α (Fin n))) n) (x y z : Fin n)
     (hx : (store.get x).isSome) (hy : (store.get y).isSome)
@@ -454,13 +411,7 @@ private lemma nodup_insert_split {α : Type u} (before after : List α) (x : α)
   · exact h.2.2 a ha b hb
 
 
-/-- **Sentinel insertion preserves the circular list.** Let $S$ be a store of $n$ cells, each
-empty or holding a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is
-not NIL, and the cell it points to is allocated. Suppose $S$ circularly represents the list $L$
-of cells with sentinel $s$, that $L$ is the concatenation of lists $B$ and $A$, and that $y$ is
-the last element of $B$, or $y = s$ if $B$ is empty. If $x \ne s$ and $x$ does not occur in $L$,
-then the store returned by sentinel insertion of $x$ after $y$ circularly represents, with
-sentinel $s$, the list consisting of the elements of $B$, then $x$, then the elements of $A$. -/
+/-- Inserting a fresh allocated identity preserves the exact circular list representation. -/
 public theorem sentinelInsert_circular {α : Type u} {n : Nat}
     (store : Vector (Option (Node α (Fin n))) n) (x y s : Fin n)
     (ids before after : List (Fin n))
@@ -601,15 +552,7 @@ public theorem sentinelInsert_circular {α : Type u} {n : Nat}
         simp only [hya, ite_false, hSucc]
 
 
-/-- **Sentinel insertion preserves a disjoint circular list.** Let $S$ be a store of $n$
-cells, each empty or holding a node, in which the cells $x$ and $y$ are allocated, the next
-pointer of $y$ is not NIL, and the cell it points to is allocated. Suppose $S$ circularly
-represents the list $L$ with sentinel $s$, that $L$ is the concatenation of lists $B$ and $A$,
-and that $y$ is the last element of $B$, or $y = s$ if $B$ is empty. Suppose $S$ also circularly
-represents the list $M$ with sentinel $t$, that no cell among $s$ and the elements of $L$ equals
-$t$ or an element of $M$, and that $x \ne t$ and $x$ does not occur in $M$. Then the store
-returned by sentinel insertion of $x$ after $y$ still circularly represents $M$ with sentinel
-$t$. -/
+/-- Insertion preserves a disjoint represented circle that excludes the inserted identity. -/
 public theorem sentinelInsert_disjoint_circular {α : Type u} {n : Nat}
     (store : Vector (Option (Node α (Fin n))) n) (x y s t : Fin n)
     (ids before after other : List (Fin n))

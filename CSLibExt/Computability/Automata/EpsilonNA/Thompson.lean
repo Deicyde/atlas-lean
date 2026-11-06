@@ -59,18 +59,13 @@ theorem isPath_cons_iff {σ : Type*} {M : εNFA α σ} {s u : σ} {c : Option α
 
 /-! ## Basic automata -/
 
-/-- **The ε-NFA with no states.** Over an alphabet $\alpha$, this is the ε-NFA whose set of
-states is empty; consequently it has no start states, no accepting states and no transitions. -/
+/-- The automaton with no states. -/
 def zeroAut : εNFA α Empty := ⟨fun s => s.elim, ∅, ∅⟩
 
-/-- **One-state automaton.** The ε-NFA over the alphabet $\alpha$ with a single state, which is both
-its start state and its accepting state, and no moves at all (neither letter moves nor
-ε-moves). -/
+/-- One state, start and accepting, and no moves. -/
 def oneAut : εNFA α Unit := ⟨fun _ _ => ∅, {()}, {()}⟩
 
-/-- **Single-letter automaton.** For a letter $a$ of the alphabet $\alpha$, this is the ε-NFA over
-$\alpha$ with two states, a start state and an accepting state, and a single move, which reads $a$
-and goes from the start state to the accepting state; it has no other moves and no ε-moves. -/
+/-- Two states, one move on `a` from the start state to the accepting one. -/
 def charAut (a : α) : εNFA α Bool :=
   ⟨fun s c => {t | s = false ∧ c = some a ∧ t = true}, {false}, {true}⟩
 
@@ -119,10 +114,7 @@ theorem accepts_charAut (a : α) : (charAut a).accepts = {[a]} := by
 
 variable {σ τ : Type*} (M : εNFA α σ) (N : εNFA α τ)
 
-/-- **Union of ε-NFAs.** Given ε-NFAs $M$ with state set $\sigma$ and $N$ with state set $\tau$ over
-the same alphabet, their union is the ε-NFA on the disjoint union $\sigma \sqcup \tau$ whose moves
-are the moves of $M$ and the moves of $N$, whose start states are the start states of $M$ and of
-$N$, and whose accepting states are the accepting states of $M$ and of $N$. -/
+/-- The union automaton on `σ ⊕ τ`. -/
 def union : εNFA α (σ ⊕ τ) where
   step
     | .inl s, c => .inl '' M.step s c
@@ -196,11 +188,8 @@ theorem accepts_union : (union M N).accepts = M.accepts + N.accepts := by
 /-! ## Concatenation -/
 
 variable (M N) in
-/-- **Concatenation of ε-NFAs.** Given ε-NFAs $M$ with state set $\sigma$ and $N$ with state set
-$\tau$ over the same alphabet, their concatenation is the ε-NFA on the disjoint union
-$\sigma \sqcup \tau$ whose moves are the moves of $M$, the moves of $N$, and an ε-move from every
-accepting state of $M$ to every start state of $N$. Its start states are the start states of $M$
-and its accepting states are the accepting states of $N$. -/
+/-- The concatenation automaton on `σ ⊕ τ`: `M`, then an ε-move from an accepting state of `M`
+to a start state of `N`, then `N`. -/
 def concat : εNFA α (σ ⊕ τ) where
   step
     | .inl s, c => .inl '' M.step s c ∪ {u | c = none ∧ s ∈ M.accept ∧ ∃ q ∈ N.start, u = .inr q}
@@ -279,10 +268,8 @@ theorem accepts_concat : (concat M N).accepts = M.accepts * N.accepts := by
 /-! ## Kleene star -/
 
 variable (M) in
-/-- **Kleene star of an ε-NFA.** Given an ε-NFA $M$ with state set $\sigma$, its star automaton has
-the states of $M$ together with one new state $q_0$, which is its only start state and its only
-accepting state. Its moves are the moves of $M$, an ε-move from $q_0$ to every start state of $M$,
-and an ε-move from every accepting state of $M$ to $q_0$. -/
+/-- The star automaton on `Option σ`: a new start and accepting state `none`, an ε-move from it
+to each start state of `M`, and an ε-move back to it from each accepting state of `M`. -/
 def star : εNFA α (Option σ) where
   step
     | none, c => {u | c = none ∧ ∃ q ∈ M.start, u = some q}
@@ -373,10 +360,7 @@ theorem accepts_star : (star M).accepts = M.accepts∗ := by
 
 /-! ## The construction -/
 
-/-- **States of Thompson's automaton.** The state set $S(r)$ of Thompson's automaton of a regular
-expression $r$ is defined by structural recursion: $S(0)$ is empty, $S(\varepsilon)$ has one
-element, $S(a)$ has two elements for a letter $a$, both $S(P + Q)$ and $S(PQ)$ are the disjoint
-union $S(P) \sqcup S(Q)$, and $S(P^*)$ is $S(P)$ together with one new element. -/
+/-- The states of the Thompson automaton of a regular expression. -/
 def State : RegularExpression α → Type
   | .zero => Empty
   | .epsilon => Unit
@@ -402,12 +386,7 @@ instance instFintypeState : (r : RegularExpression α) → Fintype (State r)
       haveI := instFintypeState P
       inferInstanceAs (Fintype (Option (State P)))
 
-/-- **Thompson's construction.** To each regular expression $r$ over an alphabet $\alpha$ it assigns
-an ε-NFA over $\alpha$ with state set $S(r)$, the states of Thompson's automaton of $r$, by
-structural recursion: $0$ goes to the automaton with no states, $\varepsilon$ to the one-state
-automaton, a letter $a$ to the single-letter automaton of $a$, $P + Q$ to the union of the
-automata of $P$ and $Q$, $PQ$ to their concatenation, and $P^*$ to the star automaton of the
-automaton of $P$. -/
+/-- **Thompson's construction.** -/
 def toεNFA : (r : RegularExpression α) → εNFA α (State r)
   | .zero => zeroAut
   | .epsilon => oneAut
@@ -433,11 +412,7 @@ theorem accepts_toεNFA (r : RegularExpression α) : (toεNFA r).accepts = r.mat
       change (star (toεNFA P)).accepts = P.matches'∗
       rw [accepts_star, hP]
 
-/-- **Thompson state count.** The state count $n(r)$ of a regular expression $r$ is defined by
-structural recursion: $n(0) = 0$, $n(\varepsilon) = 1$, $n(a) = 2$ for a letter $a$,
-$n(P + Q) = n(P) + n(Q)$, $n(PQ) = n(P) + n(Q)$ and $n(P^*) = n(P) + 1$.
-
-It is the number of states of Thompson's automaton of $r$. -/
+/-- The number of states of Thompson's automaton `toεNFA r`, by structural recursion. -/
 def numStates : RegularExpression α → ℕ
   | .zero => 0
   | .epsilon => 1
@@ -446,10 +421,7 @@ def numStates : RegularExpression α → ℕ
   | .comp P Q => numStates P + numStates Q
   | .star P => numStates P + 1
 
-/-- **Number of states of Thompson's automaton.** For every regular expression $r$, the number of
-states of Thompson's automaton of $r$ is $n(r)$, the Thompson state count of $r$: $n(0) = 0$,
-$n(\varepsilon) = 1$, $n(a) = 2$ for a letter $a$, $n(P + Q) = n(P) + n(Q)$, $n(PQ) = n(P) + n(Q)$
-and $n(P^*) = n(P) + 1$. -/
+/-- `numStates r` counts the states of Thompson's automaton. -/
 theorem card_state (r : RegularExpression α) : Fintype.card (State r) = numStates r := by
   induction r with
   | zero => exact Fintype.card_empty

@@ -53,13 +53,13 @@ namespace ProbabilityTheory
 
 variable {α : Type*} [MeasurableSpace α]
 
-/-- **U-statistic.** The U-statistic with kernel `h` of degree `m` on a sample `x` of size `n`: the average of
+/-- The U-statistic with kernel `h` of degree `m` on a sample `x` of size `n`: the average of
 `h (x ∘ f)` over the `n.descFactorial m` injective maps `f : Fin m ↪ Fin n`. For `m > n` there
 are no such maps and the value is `0` (Lean's `a / 0 = 0`). -/
 noncomputable def uStatistic {m n : ℕ} (h : (Fin m → α) → ℝ) (x : Fin n → α) : ℝ :=
   (∑ f : Fin m ↪ Fin n, h (x ∘ f)) / n.descFactorial m
 
-/-- **Hoeffding projection of a kernel.** Hoeffding's `c`-th projection of a kernel `h` of degree `m` under `μ`:
+/-- Hoeffding's `c`-th projection of a kernel `h` of degree `m` under `μ`:
 `h_c(y) = E h(y₁, …, y_c, X_{c+1}, …, X_m)` with `X_{c+1}, …, X_m` i.i.d. `μ`. -/
 noncomputable def hoeffdingProj (μ : Measure α) {m : ℕ} (h : (Fin m → α) → ℝ) (c : ℕ)
     (y : Fin c → α) : ℝ :=

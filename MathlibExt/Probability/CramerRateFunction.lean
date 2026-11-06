@@ -47,29 +47,29 @@ namespace MathlibExt.Probability.CramerRateFunction
 
 variable {Ω : Type*} {m0 : MeasurableSpace Ω} {μ : Measure Ω}
 
-/-- **Extended log moment generating function of a random vector.** Extended log moment: nonintegrable measurable exponential moments give `⊤`. -/
+/-- Extended log moment: nonintegrable measurable exponential moments give `⊤`. -/
 noncomputable def extendedLogMGFVec {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin d))
     (μ : Measure Ω) (t : EuclideanSpace ℝ (Fin d)) : EReal :=
   ENNReal.log (∫⁻ ω, ENNReal.ofReal (Real.exp ⟪t, X ω⟫_ℝ) ∂μ)
 
-/-- **Cramér rate function.** The canonical extended conjugate, converted with top preserved. -/
+/-- The canonical extended conjugate, converted with top preserved. -/
 noncomputable def cramerRateFunction {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin d))
     (μ : Measure Ω) (x : EuclideanSpace ℝ (Fin d)) : ℝ≥0∞ :=
   (MathlibExt.Probability.LegendreTransform.legendreTransform (extendedLogMGFVec X μ) x).toENNReal
 
-/-- **Log moment generating function vanishes at zero.** The canonical real log moment is zero at the zero direction. -/
+/-- The canonical real log moment is zero at the zero direction. -/
 theorem logMGFVec_zero {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin d))
     [IsProbabilityMeasure μ] :
     MathlibExt.Probability.CramerUpperBound.logMGFVec X μ 0 = 0 := by
   simp [MathlibExt.Probability.CramerUpperBound.logMGFVec]
 
-/-- **Log moment generating function of a constant vector.** The canonical real log moment of a constant vector. -/
+/-- The canonical real log moment of a constant vector. -/
 theorem logMGFVec_const {d : ℕ} (c : EuclideanSpace ℝ (Fin d))
     [IsProbabilityMeasure μ] (t : EuclideanSpace ℝ (Fin d)) :
     MathlibExt.Probability.CramerUpperBound.logMGFVec (fun _ => c) μ t = ⟪t, c⟫_ℝ := by
   simp [MathlibExt.Probability.CramerUpperBound.logMGFVec, integral_const, Measure.real]
 
-/-- **Extended log moment agrees with the real one at integrable directions.** Finite directions compose with the existing fixed-direction Chernoff API. -/
+/-- Finite directions compose with the existing fixed-direction Chernoff API. -/
 theorem extendedLogMGFVec_eq_coe_logMGFVec {d : ℕ}
     (X : Ω → EuclideanSpace ℝ (Fin d)) [IsProbabilityMeasure μ]
     {t : EuclideanSpace ℝ (Fin d)}
@@ -85,7 +85,7 @@ theorem extendedLogMGFVec_eq_coe_logMGFVec {d : ℕ}
     (Filter.Eventually.of_forall fun ω => Real.exp_nonneg _)]
   exact ENNReal.log_ofReal_of_pos hpos
 
-/-- **Extended log moment is infinite at non-integrable directions.** Measurability separates infinite moments from nonmeasurable totalized integrals. -/
+/-- Measurability separates infinite moments from nonmeasurable totalized integrals. -/
 theorem extendedLogMGFVec_eq_top_of_not_integrable {d : ℕ}
     (X : Ω → EuclideanSpace ℝ (Fin d)) (μ : Measure Ω)
     {t : EuclideanSpace ℝ (Fin d)}
@@ -100,12 +100,12 @@ theorem extendedLogMGFVec_eq_top_of_not_integrable {d : ℕ}
     exact lt_top_iff_ne_top.mpr h
   simp [extendedLogMGFVec, htop]
 
-/-- **Extended log moment vanishes at zero.** The zero direction has extended log moment zero under probability. -/
+/-- The zero direction has extended log moment zero under probability. -/
 theorem extendedLogMGFVec_zero {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin d))
     [IsProbabilityMeasure μ] : extendedLogMGFVec X μ 0 = 0 := by
   simp [extendedLogMGFVec]
 
-/-- **Extended log moment of a constant vector.** Extended log moments of constant vectors retain the exact inner product. -/
+/-- Extended log moments of constant vectors retain the exact inner product. -/
 theorem extendedLogMGFVec_const {d : ℕ} (c : EuclideanSpace ℝ (Fin d))
     [IsProbabilityMeasure μ] (t : EuclideanSpace ℝ (Fin d)) :
     extendedLogMGFVec (fun _ => c) μ t = ((⟪t, c⟫_ℝ : ℝ) : EReal) := by
@@ -126,7 +126,7 @@ private theorem toENNReal_iSup {ι : Sort*} (f : ι → EReal) :
     simpa using EReal.toENNReal_le_toENNReal h
   · exact iSup_le fun i => EReal.toENNReal_le_toENNReal (le_iSup f i)
 
-/-- **Cramér rate function as a supremum.** Supporting terms are obtained from the canonical conjugate, not a second transform. -/
+/-- Supporting terms are obtained from the canonical conjugate, not a second transform. -/
 theorem cramerRateFunction_eq_iSup {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin d))
     (μ : Measure Ω) (x : EuclideanSpace ℝ (Fin d)) :
     cramerRateFunction X μ x =
@@ -134,14 +134,14 @@ theorem cramerRateFunction_eq_iSup {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin
   unfold cramerRateFunction
   rw [MathlibExt.Probability.LegendreTransform.legendreTransform_eq_iSup, toENNReal_iSup]
 
-/-- **Extended Fenchel–Young inequality for the Cramér rate function.** Extended Fenchel–Young, valid for every measure and every direction. -/
+/-- Extended Fenchel–Young, valid for every measure and every direction. -/
 theorem le_cramerRateFunction {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin d))
     (μ : Measure Ω) (x t : EuclideanSpace ℝ (Fin d)) :
     (((⟪t, x⟫_ℝ : ℝ) : EReal) - extendedLogMGFVec X μ t).toENNReal ≤
       cramerRateFunction X μ x :=
   EReal.toENNReal_le_toENNReal MathlibExt.Probability.LegendreTransform.le_legendreTransform
 
-/-- **Fenchel–Young lower bound at integrable directions.** The original real supporting term remains valid at integrable directions. -/
+/-- The original real supporting term remains valid at integrable directions. -/
 theorem le_cramerRateFunction_of_integrable {d : ℕ}
     (X : Ω → EuclideanSpace ℝ (Fin d)) [IsProbabilityMeasure μ]
     (x t : EuclideanSpace ℝ (Fin d))
@@ -153,7 +153,7 @@ theorem le_cramerRateFunction_of_integrable {d : ℕ}
     EReal.real_coe_toENNReal] at h
   exact h
 
-/-- **Nonnegativity of the Legendre transform of the log moment.** Probability makes the canonical conjugate nonnegative via the zero direction. -/
+/-- Probability makes the canonical conjugate nonnegative via the zero direction. -/
 theorem legendreTransform_extendedLogMGFVec_nonneg {d : ℕ}
     (X : Ω → EuclideanSpace ℝ (Fin d)) [IsProbabilityMeasure μ]
     (x : EuclideanSpace ℝ (Fin d)) :
@@ -162,7 +162,7 @@ theorem legendreTransform_extendedLogMGFVec_nonneg {d : ℕ}
     (Λ := extendedLogMGFVec X μ) (x := x) (l := 0)
   simpa [extendedLogMGFVec_zero] using h
 
-/-- **Cramér rate function agrees with the extended conjugate.** Under probability the conversion preserves the entire nonnegative conjugate. -/
+/-- Under probability the conversion preserves the entire nonnegative conjugate. -/
 theorem coe_cramerRateFunction {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin d))
     [IsProbabilityMeasure μ] (x : EuclideanSpace ℝ (Fin d)) :
     ((cramerRateFunction X μ x : ℝ≥0∞) : EReal) =
@@ -198,7 +198,7 @@ private theorem lowerSemicontinuous_conjugate_toENNReal {d : ℕ}
     fun_prop
   exact hc.lowerSemicontinuous
 
-/-- **Lower semicontinuity of the Cramér rate function.** Converted canonical conjugates are lower semicontinuous for arbitrary input data. -/
+/-- Converted canonical conjugates are lower semicontinuous for arbitrary input data. -/
 theorem lowerSemicontinuous_cramerRateFunction {d : ℕ}
     (X : Ω → EuclideanSpace ℝ (Fin d)) (μ : Measure Ω) :
     LowerSemicontinuous (cramerRateFunction X μ) :=
@@ -270,7 +270,7 @@ private theorem convex_toENNReal_of_epigraph {d : ℕ}
         (mul_nonneg hb ENNReal.toReal_nonneg), ENNReal.ofReal_mul ha,
         ENNReal.ofReal_mul hb, ENNReal.ofReal_toReal hx, ENNReal.ofReal_toReal hy]
 
-/-- **Convexity of the Cramér rate function.** Convexity is transported from the actual canonical conjugate epigraph. -/
+/-- Convexity is transported from the actual canonical conjugate epigraph. -/
 theorem cramerRateFunction_convex {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin d))
     (μ : Measure Ω) {x y : EuclideanSpace ℝ (Fin d)} {a b : ℝ}
     (ha : 0 ≤ a) (hb : 0 ≤ b) (hab : a + b = 1) :
@@ -281,7 +281,7 @@ theorem cramerRateFunction_convex {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin 
     (MathlibExt.Probability.LegendreTransform.convex_epi_legendreTransform
       (extendedLogMGFVec X μ)) ha hb hab
 
-/-- **Cramér rate function is a convex rate function.** The existing LDP convex-rate structure is available without global MGF finiteness. -/
+/-- The existing LDP convex-rate structure is available without global MGF finiteness. -/
 theorem isConvexRateFunction_cramerRateFunction {d : ℕ}
     (X : Ω → EuclideanSpace ℝ (Fin d)) (μ : Measure Ω) :
     MathlibExt.Probability.LargeDeviationPrinciple.IsConvexRateFunction
@@ -289,7 +289,7 @@ theorem isConvexRateFunction_cramerRateFunction {d : ℕ}
   ⟨⟨lowerSemicontinuous_cramerRateFunction X μ⟩,
     fun _ _ _ _ ha hb hab => cramerRateFunction_convex X μ ha hb hab⟩
 
-/-- **Cramér rate function as a supremum when all moments are integrable.** With all moments integrable, the canonical real expression represents every direction. -/
+/-- With all moments integrable, the canonical real expression represents every direction. -/
 theorem cramerRateFunction_eq_iSup_of_integrable {d : ℕ}
     (X : Ω → EuclideanSpace ℝ (Fin d)) [IsProbabilityMeasure μ]
     (hInt : ∀ t : EuclideanSpace ℝ (Fin d), Integrable (fun ω => Real.exp ⟪t, X ω⟫_ℝ) μ)
@@ -324,7 +324,7 @@ private theorem iSup_ofReal_eq_ofReal_iSup {ι : Type*} [Nonempty ι]
     simp only [ENNReal.toReal_ofReal']
     exact hreal
 
-/-- **Cramér rate function as a real supremum under finite moments.** Physical finite-domain agreement: bounded real supporting values and integrable moments.
+/-- Physical finite-domain agreement: bounded real supporting values and integrable moments.
 The finiteness premise belongs to this corollary, not the corrected definitions. -/
 theorem cramerRateFunction_eq_ofReal_iSup {d : ℕ} (X : Ω → EuclideanSpace ℝ (Fin d))
     (μ : Measure Ω) [IsProbabilityMeasure μ]
@@ -337,7 +337,7 @@ theorem cramerRateFunction_eq_ofReal_iSup {d : ℕ} (X : Ω → EuclideanSpace �
   rw [cramerRateFunction_eq_iSup_of_integrable X hInt x]
   exact iSup_ofReal_eq_ofReal_iSup _ hbdd
 
-/-- **Cramér rate function vanishes at the mean.** The original integrable-vector and moment premises imply zero rate at the mean. -/
+/-- The original integrable-vector and moment premises imply zero rate at the mean. -/
 theorem cramerRateFunction_eq_zero_at_mean {d : ℕ}
     (X : Ω → EuclideanSpace ℝ (Fin d)) [IsProbabilityMeasure μ]
     (hX : Integrable X μ)
@@ -367,7 +367,7 @@ theorem cramerRateFunction_eq_zero_at_mean {d : ℕ}
   simp_rw [hterm]
   simp
 
-/-- **Cramér rate function of a constant law.** Constant laws retain zero at their center and top elsewhere,
+/-- Constant laws retain zero at their center and top elsewhere,
 including dimension zero. -/
 theorem cramerRateFunction_const {d : ℕ} (c : EuclideanSpace ℝ (Fin d))
     [IsProbabilityMeasure μ] :

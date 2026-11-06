@@ -25,31 +25,29 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- **Primes in the lower Oppermann interval.** For a natural number $n$, this is the number of
-primes $p$ with $n^2 - n \le p \le n^2$.
+/-- Number of primes in the closed interval `[n^2 - n, n^2]`.
 
-Source: concept `jis_sem_b1c5531b893b694777f2c1c5` (counting Oppermann primes), source statement
-`jis_6984ebbf83b6eb73fb1b156d`. -/
+Concept `jis_sem_b1c5531b893b694777f2c1c5` (counting Oppermann primes),
+source statement `jis_6984ebbf83b6eb73fb1b156d`: the count of primes in
+`[n^2 - n, n^2]`. Natural subtraction truncates `n ^ 2 - n` to `0` at
+`n = 0`; this is invisible to the `atTop` asymptotic. -/
 def oppermannLowerPrimeCount (n : ℕ) : ℕ :=
   ((Finset.Icc (n ^ 2 - n) (n ^ 2)).filter Nat.Prime).card
 
-/-- **Primes in the upper Oppermann interval.** For a natural number $n$, this is the number of
-primes $p$ with $n^2 \le p \le n^2 + n$.
+/-- Number of primes in the closed interval `[n^2, n^2 + n]`.
 
-Source: concept `jis_sem_b1c5531b893b694777f2c1c5` (counting Oppermann primes), source statement
-`jis_6984ebbf83b6eb73fb1b156d`. -/
+Concept `jis_sem_b1c5531b893b694777f2c1c5` (counting Oppermann primes),
+source statement `jis_6984ebbf83b6eb73fb1b156d`: the count of primes in
+`[n^2, n^2 + n]`. -/
 def oppermannUpperPrimeCount (n : ℕ) : ℕ :=
   ((Finset.Icc (n ^ 2) (n ^ 2 + n)).filter Nat.Prime).card
 
-/-- **Main term for the Oppermann prime counts.** For a natural number $n$, this is the real
-number $n / (2 \log n)$, where $\log$ is the natural logarithm. It is used as the asymptotic main
-term for the number of primes in each of the intervals $[n^2 - n, n^2]$ and $[n^2, n^2 + n]$.
+/-- Asymptotic main term `n / (2 log n)` for the Oppermann prime counts.
 
-For $n \le 1$ we have $\log n = 0$, and the value is $0$ by the convention that division by zero
-gives zero; this does not affect the asymptotics.
-
-Source: concept `jis_sem_b1c5531b893b694777f2c1c5` (counting Oppermann primes), source statement
-`jis_6984ebbf83b6eb73fb1b156d`. -/
+Concept `jis_sem_b1c5531b893b694777f2c1c5` (counting Oppermann primes),
+source statement `jis_6984ebbf83b6eb73fb1b156d`: the shared asymptotic for
+both Oppermann intervals. `Real.log n = 0` at `n = 0, 1`, so the term is
+junk-valued there; this is invisible to the `atTop` asymptotic. -/
 noncomputable def oppermannAsymptotic (n : ℕ) : ℝ :=
   (n : ℝ) / (2 * Real.log n)
 

@@ -39,14 +39,14 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind StatMech.Ons
 
 variable {n : ℕ} [NeZero n]
 
-/-- **Vertical steps separating two horizontal neighbour cells.** The vertical steps of the walk on the segment `{a + 1} × [b, b + 1]` separating the cells `(a,
+/-- The vertical steps of the walk on the segment `{a + 1} × [b, b + 1]` separating the cells `(a,
   b)` and `(a + 1, b)`. -/
 def straddleSet (d : Fin n → Fin 4) (a b : ℤ) : Finset (Fin n) :=
   Finset.univ.filter (fun k : Fin n =>
     isVertEdge (d k) ∧ (pos d k).1 = a + 1 ∧
       min ((pos d k).2) ((pos d (k + 1)).2) ≤ b ∧ b < max ((pos d k).2) ((pos d (k + 1)).2))
 
-/-- **Parity of upward crossings across a vertical segment.** The upward crossing counts of cells `(a, b)` and `(a + 1, b)` plus the number of steps between
+/-- The upward crossing counts of cells `(a, b)` and `(a + 1, b)` plus the number of steps between
   them is even. -/
 theorem upCross_hstep_gen (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (a b : ℤ) :
     upCross d a b + upCross d (a + 1) b + (straddleSet d a b).card
@@ -146,7 +146,7 @@ theorem upCross_hstep_gen (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) =
   have hRc : upCross d (a + 1) b = R.card := rfl
   rw [hLc, hRc, ← hcardU, hunion, hcardE]
 
-/-- **Ray parity across a vertical segment counts separating steps.** The ray parities of cells `(a, b)` and `(a + 1, b)` add up to the number of separating vertical
+/-- The ray parities of cells `(a, b)` and `(a + 1, b)` add up to the number of separating vertical
   steps mod `2`. -/
 theorem rayParity_hstep_gen (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (a b : ℤ) :
     rayParity d a b + rayParity d (a + 1) b = ((straddleSet d a b).card : ZMod 2) := by
@@ -160,7 +160,7 @@ theorem rayParity_hstep_gen (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i)
   rw [rayParity, rayParity, eq_neg_of_add_eq_zero_left hz]
   exact CharTwo.neg_eq _
 
-/-- **An odd number of vertical steps flips the ray parity.** An odd number of vertical steps between cells `(a, b)` and `(a + 1, b)` flips the ray parity. -/
+/-- An odd number of vertical steps between cells `(a, b)` and `(a + 1, b)` flips the ray parity. -/
 theorem rayParity_hflip (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (a b : ℤ)
     (hodd : (straddleSet d a b).card % 2 = 1) :
     rayParity d a b = rayParity d (a + 1) b + 1 := by

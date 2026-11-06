@@ -29,7 +29,7 @@ namespace LinearEquiv
 
 variable {F : Type*} [Field F]
 
-/-- **Evaluation of an affine function at two points.** Evaluation of the affine function `x ↦ slope * x + intercept` at two distinct points. -/
+/-- Evaluation of the affine function `x ↦ slope * x + intercept` at two distinct points. -/
 def affineEvaluation (theta theta' : F) (h : theta ≠ theta') : (F × F) ≃ₗ[F] (F × F) where
   toFun p := (p.1 * theta + p.2, p.1 * theta' + p.2)
   invFun p := ((p.1 - p.2) / (theta - theta'),

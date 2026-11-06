@@ -71,17 +71,14 @@ namespace Cslib.Algorithms.SAT.TwoSAT
 
 open Cslib.Logic.PL Cslib.Algorithms.Lean Cslib.Algorithms.Lean.StronglyConnectedComponents
 
-/-- **2-CNF formulas.** A CNF formula is a 2-CNF formula when each of its clauses, viewed as a
-list of literals, has length at most $2$ (repeated literals are counted with multiplicity). -/
+/-- A CNF formula in which every clause has at most two literals. -/
 def IsTwoCNF (φ : CNF) : Prop := ∀ C ∈ φ, C.length ≤ 2
 
 instance (φ : CNF) : Decidable (IsTwoCNF φ) := by
   unfold IsTwoCNF
   infer_instance
 
-/-- **Complement of a literal.** The complement of a literal $(x, b)$, with variable index
-$x \in \mathbb{N}$ and polarity $b$, is the literal $(x, \lnot b)$: same variable, opposite
-polarity. -/
+/-- The complementary literal. -/
 abbrev neg (l : Nat × Bool) : Nat × Bool := (l.1, !l.2)
 
 @[simp]
@@ -97,8 +94,7 @@ theorem satisfies_neg_iff {σ : Nat → Bool} {l : Nat × Bool} :
   obtain ⟨x, b⟩ := l
   cases b <;> cases h : σ x <;> simp [CNFLiteral.Satisfies, h]
 
-/-- **Clauses with at most two literals.** In a clause with at most two literals, any two different
-members $a$ and $b$ are all of its members: every member $c$ of the clause equals $a$ or $b$. -/
+/-- In a clause with at most two literals, two different members are all of its members. -/
 theorem eq_or_eq_of_length_le_two {C : CNFClause} (hC : C.length ≤ 2) {a b c : Nat × Bool}
     (ha : a ∈ C) (hb : b ∈ C) (hab : a ≠ b) (hc : c ∈ C) : c = a ∨ c = b := by
   match C, hC with
@@ -114,10 +110,8 @@ theorem eq_or_eq_of_length_le_two {C : CNFClause} (hC : C.length ≤ 2) {a b c :
 
 /-! ### The implication graph on literals -/
 
-/-- **Implication edge.** For a CNF formula $\varphi$ and literals $l$ and $m$, there is an
-implication edge from $l$ to $m$ when some clause of $\varphi$ contains both $\neg l$ and $m$,
-either as two different literals or with $m$ as its only literal (so a unit clause $m$ gives
-the edge from $\neg m$ to $m$). -/
+/-- Implication edge `l → m`: some clause contains `¬l` and `m`, either as two different
+literals or as its only literal (a unit clause `m` gives the edge `¬m → m`). -/
 def ImpEdge (φ : CNF) (l m : Nat × Bool) : Prop :=
   ∃ C ∈ φ, neg l ∈ C ∧ m ∈ C ∧ (neg l ≠ m ∨ ∀ c ∈ C, c = m)
 
@@ -125,17 +119,11 @@ instance (φ : CNF) (l m : Nat × Bool) : Decidable (ImpEdge φ l m) := by
   unfold ImpEdge
   infer_instance
 
-/-- **Reachability in the implication graph.** For a CNF formula $\varphi$, a literal $l$ reaches
-a literal $m$ when there is a path of zero or more implication edges of $\varphi$ from $l$ to
-$m$; that is, reachability is the reflexive-transitive closure of the implication edge
-relation. -/
+/-- Reachability in the implication graph. -/
 def ImpReach (φ : CNF) : Nat × Bool → Nat × Bool → Prop :=
   Relation.ReflTransGen (ImpEdge φ)
 
-/-- **Skew symmetry of the implication graph.** For a CNF formula $\varphi$ and literals $l$ and
-$m$, if the implication graph of $\varphi$ has an edge from $l$ to $m$, then it also has the
-contrapositive edge from $\lnot m$ to $\lnot l$, where $\lnot$ denotes the complementary
-literal. -/
+/-- **Skew symmetry**: an edge `l → m` has the contrapositive edge `¬m → ¬l`. -/
 theorem ImpEdge.skew {φ : CNF} {l m : Nat × Bool} (h : ImpEdge φ l m) :
     ImpEdge φ (neg m) (neg l) := by
   obtain ⟨C, hC, hl, hm, hor⟩ := h
@@ -151,10 +139,7 @@ theorem ImpReach.skew {φ : CNF} {l m : Nat × Bool} (h : ImpReach φ l m) :
   | refl => exact Relation.ReflTransGen.refl
   | tail _ e ih => exact Relation.ReflTransGen.head e.skew ih
 
-/-- **Satisfying assignments respect implication edges.** Let $\varphi$ be a 2-CNF formula and
-$\sigma$ an assignment of truth values to the variables that satisfies $\varphi$. If the
-implication graph of $\varphi$ has an edge from a literal $l$ to a literal $m$ and $\sigma$
-satisfies $l$, then $\sigma$ satisfies $m$. -/
+/-- Satisfying assignments of a 2-CNF formula are closed along implication edges. -/
 theorem satisfies_of_impEdge {φ : CNF} (h2 : IsTwoCNF φ) {σ : Nat → Bool}
     (hσ : φ.Satisfies σ) {l m : Nat × Bool} (h : ImpEdge φ l m)
     (hl : CNFLiteral.Satisfies σ l) : CNFLiteral.Satisfies σ m := by
@@ -176,12 +161,8 @@ theorem satisfies_of_impReach {φ : CNF} (h2 : IsTwoCNF φ) {σ : Nat → Bool}
 
 /-! ### Resolution derivations from a 2-CNF formula -/
 
-/-- **Resolution invariant of the implication graph.** A clause $C$ satisfies the invariant
-with respect to a CNF formula $\varphi$ when for every literal $a$ of $C$ there is a literal
-$b$ of $C$ such that the complementary literal $\lnot a$ reaches $b$ in the implication graph
-of $\varphi$ (by a path of zero or more edges).
-
-Every clause derivable from $\varphi$ by resolution satisfies this invariant. -/
+/-- The invariant of clauses derived by resolution: the complement of each literal reaches
+some literal of the clause. -/
 def Inv (φ : CNF) (C : CNFClause) : Prop := ∀ a ∈ C, ∃ b ∈ C, ImpReach φ (neg a) b
 
 theorem inv_of_mem {φ : CNF} {C : CNFClause} (hC : C ∈ φ) : Inv φ C := by
@@ -226,10 +207,8 @@ theorem inv_of_resolutionDerivable {φ : CNF} {C : CNFClause} (h : φ.Resolution
   | ax hC => exact inv_of_mem hC
   | resolve x _ _ hx hx' ihC ihD => exact inv_resolvent ihC ihD hx hx'
 
-/-- **Resolution refutations give contradictory cycles.** If a CNF formula $\varphi$ does not
-contain the empty clause and the empty clause is derivable from $\varphi$ by resolution, then
-there is a variable $x$ such that the literals $x$ and $\neg x$ reach each other in the
-implication graph of $\varphi$. -/
+/-- A resolution refutation of a formula without the empty clause yields a variable `x`
+with `x` and `¬x` reaching each other. -/
 theorem exists_contradictory_of_resolutionDerivable_nil {φ : CNF} (hnil : [] ∉ φ)
     (h : φ.ResolutionDerivable []) :
     ∃ x, ImpReach φ (x, true) (x, false) ∧ ImpReach φ (x, false) (x, true) := by
@@ -274,23 +253,15 @@ theorem cnfSat_iff_of_isTwoCNF {φ : CNF} (h2 : IsTwoCNF φ) :
 
 /-! ### The implication graph as a finite directed graph, and the SCC decision procedure -/
 
-/-- **Literals over the variables of a formula.** For a CNF formula $\varphi$, a literal over
-$\varphi$ is a pair $(x, b)$ of a variable index $x \in \mathbb{N}$ and a polarity
-$b \in \{\mathrm{true}, \mathrm{false}\}$ such that the variable $x$ occurs in $\varphi$.
-These literals are the vertices of the implication graph of $\varphi$. -/
+/-- Literals over the variables of `φ`: the vertices of the implication graph. -/
 abbrev Lit (φ : CNF) := {l : Nat × Bool // l.1 ∈ φ.vars}
 
 instance (φ : CNF) : Hashable (Lit φ) := ⟨fun l ↦ hash l.val⟩
 
-/-- **Complement of a literal over a formula.** For a CNF formula $\varphi$, the complement of a
-literal $(x, b)$ over the variables of $\varphi$ is the literal $(x, \lnot b)$, which is again a
-literal over the variables of $\varphi$. -/
+/-- The complementary literal over the same variable. -/
 def Lit.neg {φ : CNF} (l : Lit φ) : Lit φ := ⟨TwoSAT.neg l.val, l.prop⟩
 
-/-- **Duplicate-free list of the variables of a CNF formula.** For a CNF formula $\varphi$,
-this is the list of the variables occurring in the literals of $\varphi$, each exactly once,
-in the order of their last occurrences when the clauses of $\varphi$ and their literals are
-read from first to last. -/
+/-- The variables of `φ` as a list without repetition. -/
 def varList (φ : CNF) : List Nat := (φ.flatMap fun C ↦ C.map Prod.fst).dedup
 
 theorem mem_varList {φ : CNF} {x : Nat} : x ∈ varList φ ↔ x ∈ φ.vars := by
@@ -301,10 +272,7 @@ theorem mem_varList {φ : CNF} {x : Nat} : x ∈ varList φ ↔ x ∈ φ.vars :=
   · rintro ⟨C, hC, b, hl⟩
     exact ⟨C, hC, (x, b), hl, rfl⟩
 
-/-- **List of the literals of a CNF formula.** For a CNF formula $\varphi$, this is the list of
-all literals over the variables of $\varphi$, each appearing exactly once, arranged variable by
-variable: for each variable $x$ of $\varphi$, the positive literal $(x, \mathrm{true})$ is
-immediately followed by the negative literal $(x, \mathrm{false})$. -/
+/-- All literals over the variables of `φ`, without repetition. -/
 def litList (φ : CNF) : List (Lit φ) :=
   (varList φ).attach.flatMap fun x ↦
     [⟨(x.1, true), mem_varList.mp x.2⟩, ⟨(x.1, false), mem_varList.mp x.2⟩]
@@ -328,22 +296,12 @@ theorem nodup_litList (φ : CNF) : (litList φ).Nodup := by
   rcases hl with rfl | rfl <;> rcases hl' with h | h <;>
     exact congrArg (fun l : Lit φ ↦ l.val.1) h
 
-/-- **Successors in the implication graph.** Let $\varphi$ be a CNF formula and $l$ a literal
-over the variables of $\varphi$, and write $\neg l$ for the complementary literal. The
-successors of $l$ are the literals $m$ over the variables of $\varphi$ such that the
-implication graph of $\varphi$ has an edge from $l$ to $m$: some clause of $\varphi$ contains
-$\neg l$ and $m$, either as two different literals or as its only literal. They are listed
-without repetition, in the order of the list of all literals over the variables of $\varphi$. -/
+/-- The implication-graph successors of a literal. -/
 def successors (φ : CNF) (l : Lit φ) : List (Lit φ) :=
   (litList φ).filter fun m ↦ decide (ImpEdge φ l.val m.val)
 
-/-- **Adjacency table of the implication graph.** For a CNF formula $\varphi$, the hash map that
-sends each literal over the variables of $\varphi$ to the list of its implication-graph
-successors, that is, of the literals $m$ over the variables of $\varphi$ with an implication edge
-from it to $m$.
-
-The table is computed once so that the SCC traversal looks successor lists up in expected
-constant time. -/
+/-- The successor lists of all literals, computed once and stored in a hash map so that the
+SCC traversal looks them up in expected constant time. -/
 def adjacencyTable (φ : CNF) : Std.HashMap (Lit φ) (List (Lit φ)) :=
   Std.HashMap.ofList ((litList φ).map fun l ↦ (l, successors φ l))
 
@@ -353,10 +311,8 @@ theorem adjacencyTable_getD (φ : CNF) (l : Lit φ) :
     (List.mem_map.mpr ⟨l, mem_litList φ l, rfl⟩)
   exact List.pairwise_map.mpr ((nodup_litList φ).imp fun hne ↦ beq_eq_false_iff_ne.mpr hne)
 
-/-- **Implication graph as a finite directed graph.** For a CNF formula $\varphi$, the finite
-directed graph whose vertices are the literals over the variables of $\varphi$, listed without
-repetition, and whose out-neighbours of a literal $l$ are the literals $m$ over the variables of
-$\varphi$ with an implication edge from $l$ to $m$, read from the adjacency table of $\varphi$. -/
+/-- The implication graph of `φ` on the literals over its variables, with adjacency read
+from `adjacencyTable φ`. -/
 def implicationGraph (φ : CNF) : DirectedAdjacency (Lit φ) :=
   let table := adjacencyTable φ
   { vertices := litList φ
@@ -368,18 +324,13 @@ theorem implicationGraph_edge {φ : CNF} {l m : Lit φ} :
     (implicationGraph φ).Edge l m ↔ ImpEdge φ l.val m.val := by
   simp [DirectedAdjacency.Edge, implicationGraph, adjacencyTable_getD, successors, mem_litList]
 
-/-- **Implication edges end over variables of the formula.** For a CNF formula $\varphi$ and
-literals $l$ and $m$, if the implication graph of $\varphi$ has an edge from $l$ to $m$, then
-the variable of $m$ occurs in $\varphi$. -/
+/-- An implication edge ends at a literal over a variable of `φ`. -/
 theorem mem_vars_of_impEdge {φ : CNF} {l m : Nat × Bool} (h : ImpEdge φ l m) :
     m.1 ∈ φ.vars := by
   obtain ⟨C, hC, -, hm, -⟩ := h
   exact CNF.mem_vars.mpr ⟨C, hC, m.2, hm⟩
 
-/-- **Reachability in the finite implication graph.** For a CNF formula $\varphi$ and literals
-$l$ and $m$ over the variables of $\varphi$, $m$ is reachable from $l$ in the implication graph
-of $\varphi$, viewed as a finite directed graph on these literals, if and only if $l$ reaches $m$
-by implication edges of $\varphi$. -/
+/-- Reachability in `implicationGraph φ` is implication-graph reachability on literals. -/
 theorem implicationGraph_reachable_iff {φ : CNF} {l m : Lit φ} :
     (implicationGraph φ).Reachable l m ↔ ImpReach φ l.val m.val := by
   constructor
@@ -400,18 +351,13 @@ theorem implicationGraph_reachable_iff {φ : CNF} {l m : Lit φ} :
       exact ⟨mem_vars_of_impEdge e,
         hr.tail (implicationGraph_edge.mpr (show ImpEdge φ b c from e))⟩
 
-/-- **SCC-based 2-SAT decision procedure.** For a CNF formula $\varphi$, the procedure returns
-false if $\varphi$ contains the empty clause; otherwise it returns true if and only if no block
-of the strongly connected components computed for the implication graph of $\varphi$ contains a
-literal together with its complementary literal. -/
+/-- The 2-SAT decision procedure: reject an empty clause, then accept iff no SCC block of
+the implication graph contains a literal together with its complement. -/
 def decide2SAT (φ : CNF) : Bool :=
   !φ.contains [] &&
     (components (implicationGraph φ)).all fun block ↦ block.all fun l ↦ !block.contains l.neg
 
-/-- **A positive literal reaching its complement lies over a variable of the formula.** For a CNF
-formula $\varphi$ and a variable $x$, if the positive literal $(x, \mathrm{true})$ reaches the
-negative literal $(x, \mathrm{false})$ in the implication graph of $\varphi$, then $x$ occurs in
-$\varphi$. -/
+/-- A contradictory pair of literals involves a variable of the formula. -/
 theorem mem_vars_of_impReach_true_false {φ : CNF} {x : Nat}
     (h : ImpReach φ (x, true) (x, false)) : x ∈ φ.vars := by
   rcases Relation.ReflTransGen.cases_head h with heq | ⟨c, e, -⟩
@@ -445,9 +391,7 @@ theorem decide2SAT_eq_true_iff_aux (φ : CNF) :
     · exact h x ⟨h₂, h₁⟩
     · exact h x ⟨h₁, h₂⟩
 
-/-- **Correctness of the SCC-based 2-SAT procedure.** For every CNF formula $\varphi$ in which
-every clause has at most two literals, the SCC-based 2-SAT decision procedure returns true on
-$\varphi$ if and only if $\varphi$ is satisfiable. -/
+/-- **Correctness of the SCC-based 2-SAT procedure** on 2-CNF formulas. -/
 theorem decide2SAT_eq_true_iff {φ : CNF} (h2 : IsTwoCNF φ) :
     decide2SAT φ = true ↔ CNFSat φ := by
   rw [decide2SAT_eq_true_iff_aux, cnfSat_iff_of_isTwoCNF h2]

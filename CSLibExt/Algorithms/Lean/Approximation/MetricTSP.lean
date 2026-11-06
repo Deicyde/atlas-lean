@@ -56,75 +56,51 @@ universe u v
 
 variable {α : Type u} {R : Type v} [AddCommMonoid R] [LinearOrder R] [IsOrderedAddMonoid R]
 
-/-- **Metric cost function.** A cost function $d$ assigning to each pair of vertices a value in a
-linearly ordered additive commutative monoid is metric when, for all vertices $x$, $y$, $z$, it
-is symmetric, $d(x, y) = d(y, x)$, zero on the diagonal, $d(x, x) = 0$, nonnegative,
-$0 \le d(x, y)$, and satisfies the triangle inequality $d(x, z) \le d(x, y) + d(y, z)$. -/
+/-- Symmetric, zero on the diagonal, nonnegative, and satisfying the triangle inequality. -/
 structure IsMetricCost (d : α → α → R) : Prop where
   symm : ∀ x y, d x y = d y x
   self : ∀ x, d x x = 0
   nonneg : ∀ x y, 0 ≤ d x y
   triangle : ∀ x y z, d x z ≤ d x y + d y z
 
-/-- **Cost of a walk.** Let $d$ be a cost function on the vertices with values in an additive
-commutative monoid. For a vertex $x$ and a list $L = [y_1, \dots, y_n]$ of vertices, the cost of
-the walk from $x$ through $L$ is $d(x, y_1) + d(y_1, y_2) + \dots + d(y_{n-1}, y_n)$, and $0$
-when $L$ is empty. -/
+/-- The cost of walking from `x` through the vertices of `L` in order. -/
 def pathFrom (d : α → α → R) : α → List α → R
   | _, [] => 0
   | x, y :: L => d x y + pathFrom d y L
 
-/-- **Cost of a closed tour.** For a cost function $d$ on the vertices with values in an additive
-commutative monoid, the cost of the closed tour that visits $x_0, x_1, \dots, x_k$ in order and
-returns to its first vertex is $\sum_{i=1}^{k} d(x_{i-1}, x_i) + d(x_k, x_0)$. The empty tour
-costs $0$. -/
+/-- The cost of the closed tour visiting `H` in order and returning to its first vertex. -/
 def tourCost (d : α → α → R) : List α → R
   | [] => 0
   | h :: t => pathFrom d h (t ++ [h])
 
-/-- **Rooted forest in left-child right-sibling form.** A rooted forest with vertices in $\alpha$
-is either empty, or consists of a first tree with root $v$, whose subtrees form a forest (the
-children of $v$), followed by a forest of the remaining trees (the siblings of $v$). -/
+/-- A rooted forest in left-child right-sibling form: `cons v children siblings`. -/
 inductive Forest (α : Type u) where
   | nil : Forest α
   | cons (v : α) (children siblings : Forest α) : Forest α
 
 namespace Forest
 
-/-- **Preorder of a forest.** The list of the vertices of a forest in preorder: empty for the empty
-forest, and for a forest with first root $v$, children forest $C$ and sibling forest $S$, the
-vertex $v$, followed by the preorder of $C$, followed by the preorder of $S$.
-
-The preorder walk computes this list without appending lists. -/
+/-- The vertices of the forest in preorder (the specification; `preorderWalk` computes it
+without appending). -/
 def preorder : Forest α → List α
   | nil => []
   | cons v ch sib => v :: ch.preorder ++ sib.preorder
 
-/-- **Weight of a forest below a vertex.** For a cost function $d$ and a vertex $p$, the weight
-of a forest hanging below $p$ is the total cost of its tree edges: each top-level vertex $v$ is
-joined to $p$ by an edge of cost $d(p, v)$, and each vertex $u$ is joined to each of its children
-$c$ by an edge of cost $d(u, c)$. The empty forest has weight $0$. -/
+/-- The total cost of the tree edges when the forest hangs below the vertex `p`: each top-level
+vertex is joined to `p`, and each vertex to its children. -/
 def weight (d : α → α → R) (p : α) : Forest α → R
   | nil => 0
   | cons v ch sib => d p v + ch.weight d v + sib.weight d p
 
-/-- **Path as a forest.** The forest of a list $x_1, x_2, \dots, x_n$ of vertices is the path
-$x_1, x_2, \dots, x_n$: $x_1$ is its only top-level vertex and each $x_{i+1}$ is the only child
-of $x_i$. The empty list gives the empty forest. -/
+/-- The path `x₁, x₂, …` as a forest: each vertex is the only child of the previous one. -/
 def chain : List α → Forest α
   | [] => nil
   | x :: xs => cons x (chain xs) nil
 
 end Forest
 
-/-- **Preorder walk with an accumulator.** For a forest $F$ and a list $a$ of vertices, this is the
-timed computation defined as follows. On the empty forest it returns $a$ at no cost. On a forest
-with first root $v$, children forest $C$ and sibling forest $S$, it charges one time unit, walks
-$S$ with accumulator $a$ to get a list $b$, walks $C$ with accumulator $b$ to get a list $c$, and
-returns $v$ followed by $c$. It thus returns the vertices of $F$ in preorder followed by $a$, at
-one time unit per vertex of $F$.
-
-The accumulator means no list is ever appended, so the untimed work is linear as well. -/
+/-- The preorder walk of `F` followed by `acc`, one unit per vertex visited. The suffix
+accumulator keeps the host-language work linear: no list is appended. -/
 def preorderWalkAux : Forest α → List α → TimeM ℕ (List α)
   | .nil, acc => pure acc
   | .cons v ch sib, acc => do
@@ -133,15 +109,11 @@ def preorderWalkAux : Forest α → List α → TimeM ℕ (List α)
       let a ← preorderWalkAux ch b
       pure (v :: a)
 
-/-- **Preorder walk.** For a forest $F$, the preorder walk of $F$ is the preorder walk of $F$ with
-the empty list as accumulator: a timed computation that returns the vertices of $F$ in preorder,
-at one time unit per vertex. -/
+/-- The preorder walk, one unit per vertex visited. -/
 def preorderWalk (F : Forest α) : TimeM ℕ (List α) := preorderWalkAux F []
 
-/-- **The APPROX-TSP-TOUR algorithm.** CLRS `APPROX-TSP-TOUR`, steps 3 and 4: given a root $r$
-and a forest $F$ (the subtrees of a spanning tree with root $r$), return the tour that lists $r$
-followed by the vertices of $F$ in preorder. As a timed computation it charges one unit for $r$
-and one unit for each vertex visited by the preorder walk of $F$. -/
+/-- CLRS `APPROX-TSP-TOUR`, steps 3 and 4, on a spanning tree with root `r` and the forest `F` of
+its subtrees: the tour lists the vertices in preorder. -/
 def approxTSPTour (r : α) (F : Forest α) : TimeM ℕ (List α) := do
   ✓
   let w ← preorderWalk F
@@ -149,9 +121,6 @@ def approxTSPTour (r : α) (F : Forest α) : TimeM ℕ (List α) := do
 
 /-! ## The walk -/
 
-/-- **Result of the preorder walk with an accumulator.** For every forest $F$ and every list $a$
-of vertices, the preorder walk of $F$ with accumulator $a$ returns the vertices of $F$ in
-preorder followed by $a$. -/
 theorem preorderWalkAux_ret (F : Forest α) (acc : List α) :
     (preorderWalkAux F acc).ret = F.preorder ++ acc := by
   induction F generalizing acc with
@@ -179,9 +148,7 @@ theorem preorderWalk_time (F : Forest α) : (preorderWalk F).time = F.preorder.l
 theorem approxTSPTour_ret (r : α) (F : Forest α) : (approxTSPTour r F).ret = r :: F.preorder := by
   simp [approxTSPTour]
 
-/-- **Running time of `APPROX-TSP-TOUR`.** For every root $r$ and forest $F$, the running time of
-`APPROX-TSP-TOUR` on $r$ and $F$ equals the length of the list of $r$ followed by the vertices of
-$F$ in preorder: one unit per vertex of the returned tour. -/
+/-- One unit per vertex of the tour. -/
 @[simp]
 theorem approxTSPTour_time (r : α) (F : Forest α) :
     (approxTSPTour r F).time = (r :: F.preorder).length := by
@@ -200,11 +167,7 @@ theorem pathFrom_append (d : α → α → R) (x : α) (A B : List α) :
 
 variable {d : α → α → R}
 
-/-- **Changing the starting vertex of a walk.** Let $d$ be a cost function on the vertices with
-values in a linearly ordered additive commutative monoid, which is symmetric, zero on the
-diagonal, nonnegative, and satisfies the triangle inequality. For vertices $q$, $p$ and a list $L$
-of vertices, the cost of the walk from $q$ through $L$ is at most $d(q, p)$ plus the cost of the
-walk from $p$ through $L$. -/
+/-- Starting from `q` instead of `p` costs at most `d q p` more. -/
 theorem pathFrom_le_add (hd : IsMetricCost d) (q p : α) (L : List α) :
     pathFrom d q L ≤ d q p + pathFrom d p L := by
   cases L with
@@ -213,23 +176,15 @@ theorem pathFrom_le_add (hd : IsMetricCost d) (q p : α) (L : List α) :
       simp only [pathFrom, ← add_assoc]
       exact add_le_add (hd.triangle q p y) le_rfl
 
-/-- **Shortcutting a closed walk through its base point.** Let $d$ be a cost function on the
-vertices with values in a linearly ordered additive commutative monoid, which is symmetric, zero
-on the diagonal, nonnegative, and satisfies the triangle inequality. For a vertex $p$ and lists
-$A$, $B$ of vertices, the cost of the walk that starts at $p$, visits $A$ and then $B$ in order
-and returns to $p$ is at most the cost of the walk from $p$ through $A$ back to $p$ plus the cost
-of the walk from $p$ through $B$ back to $p$. -/
+/-- Shortcutting through `p`: a closed walk from `p` through `A` and then `B` costs at most the
+closed walk through `A` plus the closed walk through `B`. -/
 theorem pathFrom_append_append_le (hd : IsMetricCost d) (p : α) (A B : List α) :
     pathFrom d p (A ++ B ++ [p]) ≤ pathFrom d p (A ++ [p]) + pathFrom d p (B ++ [p]) := by
   rw [List.append_assoc, pathFrom_append, pathFrom_append d p A [p]]
   simp only [pathFrom, add_zero, add_assoc]
   exact add_le_add le_rfl (pathFrom_le_add hd _ p _)
 
-/-- **Rerouting the end of a walk.** Let $d$ be a cost function on the vertices with values in a
-linearly ordered additive commutative monoid, which is symmetric, zero on the diagonal,
-nonnegative, and satisfies the triangle inequality. For vertices $v$, $p$ and a list $C$ of
-vertices, the cost of the walk from $v$ through $C$ ending at $p$ is at most the cost of the walk
-from $v$ through $C$ ending back at $v$, plus $d(v, p)$. -/
+/-- Ending at `p` instead of returning to `v` costs at most `d v p` more. -/
 theorem pathFrom_append_singleton_le (hd : IsMetricCost d) (v p : α) (C : List α) :
     pathFrom d v (C ++ [p]) ≤ pathFrom d v (C ++ [v]) + d v p := by
   rw [pathFrom_append, pathFrom_append]
@@ -238,13 +193,8 @@ theorem pathFrom_append_singleton_le (hd : IsMetricCost d) (v p : α) (C : List 
 
 /-! ## The double-tree bound -/
 
-/-- **The closed preorder walk below a vertex costs at most twice the forest.** Let $d$ be a cost
-function on the vertices with values in a linearly ordered additive commutative monoid, which is
-symmetric, zero on the diagonal, nonnegative, and satisfies the triangle inequality. For a forest
-$F$ and a vertex $p$, let $w$ be the weight of $F$ hanging below $p$: the total cost of the edges
-joining $p$ to the top-level vertices of $F$ and each vertex of $F$ to its children. Then the cost
-of the walk that starts at $p$, visits the vertices of $F$ in preorder and returns to $p$ is at
-most $w + w$. -/
+/-- The closed walk from `p` through the preorder of a forest hanging below `p` costs at most twice
+the forest's edges. -/
 theorem pathFrom_preorder_le (hd : IsMetricCost d) (F : Forest α) (p : α) :
     pathFrom d p (F.preorder ++ [p]) ≤ F.weight d p + F.weight d p := by
   induction F generalizing p with
@@ -269,14 +219,7 @@ theorem pathFrom_preorder_le (hd : IsMetricCost d) (F : Forest α) (p : α) :
         _ = d p v + ch.weight d v + sib.weight d p + (d p v + ch.weight d v + sib.weight d p) := by
           abel
 
-/-- **The preorder tour costs at most twice the tree.** Let $d$ be a cost function on the
-vertices with values in a linearly ordered additive commutative monoid that is symmetric, zero on
-the diagonal, nonnegative and satisfies the triangle inequality. Let $T$ be a rooted tree with
-root $r$, given by the forest $F$ of the subtrees of $r$, and let $w(T)$ be its weight, the total
-cost of its edges. Then the closed tour that visits $r$, then the vertices of $F$ in preorder, and
-returns to $r$ costs at most $2\,w(T)$.
-
-Source: CLRS Theorem 35.2, first half. -/
+/-- CLRS Theorem 35.2, first half: the preorder tour of a tree costs at most twice the tree. -/
 theorem tourCost_preorder_le (hd : IsMetricCost d) (r : α) (F : Forest α) :
     tourCost d (r :: F.preorder) ≤ 2 • F.weight d r := by
   rw [two_nsmul]
@@ -284,8 +227,6 @@ theorem tourCost_preorder_le (hd : IsMetricCost d) (r : α) (F : Forest α) :
 
 /-! ## The spanning-tree lower bound -/
 
-/-- **Preorder of a path.** For every list $L$ of vertices, the preorder of the forest of $L$
-(the path through the vertices of $L$ in order) is $L$ itself. -/
 @[simp]
 theorem Forest.preorder_chain (xs : List α) : (Forest.chain xs).preorder = xs := by
   induction xs with
@@ -300,38 +241,19 @@ theorem Forest.weight_chain (d : α → α → R) (p : α) (xs : List α) :
   | nil => rfl
   | cons x xs ih => simp [Forest.chain, Forest.weight, pathFrom, ih]
 
-/-- **Rooted spanning tree of a vertex list.** The tree with root $r$ and subtree forest $F$ is a
-spanning tree of a list $V$ of vertices when the vertices of $V$ are distinct and the list of $r$
-followed by the vertices of $F$ in preorder is a permutation of $V$: the vertices of the tree are
-those of $V$, each exactly once. -/
+/-- `T = (r, F)` is a spanning tree of the list `V` of distinct vertices: its vertices are `V`,
+each once. -/
 def IsSpanning (V : List α) (r : α) (F : Forest α) : Prop := V.Nodup ∧ (r :: F.preorder).Perm V
 
-/-- **Minimum spanning tree of a vertex list.** Let $d$ be a cost function on the vertices with
-values in a linearly ordered additive commutative monoid. The tree with root $r$ and subtree
-forest $F$ is a minimum spanning tree of a list $V$ of vertices for $d$ when it is a spanning tree
-of $V$ (the vertices of $V$ are distinct and the list of $r$ followed by the vertices of $F$ in
-preorder is a permutation of $V$) and, for every vertex $r'$ and forest $F'$ such that the tree
-with root $r'$ and subtree forest $F'$ is a spanning tree of $V$, the weight of $F$ below $r$ is
-at most the weight of $F'$ below $r'$. -/
+/-- `T = (r, F)` is a minimum spanning tree of `V` for the costs `d`. -/
 def IsMinSpanning (d : α → α → R) (V : List α) (r : α) (F : Forest α) : Prop :=
   IsSpanning V r F ∧ ∀ r' F', IsSpanning V r' F' → F.weight d r ≤ F'.weight d r'
 
-/-- **Tour of a vertex list.** A list $H$ is a tour of a list $V$ of vertices when the vertices of
-$V$ are distinct and $H$ is a permutation of $V$: $H$ lists each vertex of $V$ exactly once and
-nothing else. -/
+/-- A tour of the list `V` of distinct vertices lists each of them once. -/
 def IsTour (V H : List α) : Prop := V.Nodup ∧ H.Perm V
 
-/-- **A minimum spanning tree costs at most any tour.** Let $d$ be a cost function on the
-vertices with values in a linearly ordered additive commutative monoid that is symmetric, zero on
-the diagonal, nonnegative and satisfies the triangle inequality. Let $V$ be a list of distinct
-vertices. Let $T$ be a minimum spanning tree of $V$ for $d$: a rooted tree whose vertices are the
-elements of $V$, each once, whose weight (the total cost of its edges) is at most that of every
-such tree. Let $H$ be a tour of $V$, a list that is a permutation of $V$. Then the weight of $T$
-is at most the cost of the closed tour $H$.
-
-A tour minus its closing edge is a spanning path, which is a spanning tree.
-
-Source: CLRS Theorem 35.2, second half. -/
+/-- CLRS Theorem 35.2, second half: a minimum spanning tree costs at most any tour, because a tour
+minus its closing edge is a spanning path. -/
 theorem weight_le_tourCost (hd : IsMetricCost d) {V : List α} {r : α} {F : Forest α}
     (hT : IsMinSpanning d V r F) {H : List α} (hH : IsTour V H) :
     F.weight d r ≤ tourCost d H := by
@@ -351,22 +273,13 @@ theorem weight_le_tourCost (hd : IsMetricCost d) {V : List α} {r : α} {F : For
 
 /-! ## The 2-approximation -/
 
-/-- **The approximate TSP tour is a tour.** Let $V$ be a list of distinct vertices, and let $r$
-and $F$ be such that $r$ followed by the vertices of the forest $F$ in preorder is a permutation
-of $V$ (the tree with root $r$ and subtree forest $F$ spans $V$). Then the list returned by
-`APPROX-TSP-TOUR` on $r$ and $F$ is a tour of $V$: it is a permutation of $V$. -/
+/-- The result is a tour. -/
 theorem approxTSPTour_isTour {V : List α} {r : α} {F : Forest α} (hT : IsSpanning V r F) :
     IsTour V (approxTSPTour r F).ret := by
   exact ⟨hT.1, by simpa using hT.2⟩
 
-/-- **APPROX-TSP-TOUR on a given minimum spanning tree costs at most twice any tour.** Let $d$ be a
-cost function on vertices with values in a linearly ordered additive commutative monoid that is
-symmetric, zero on the diagonal, nonnegative and satisfies the triangle inequality. Let $V$ be a
-list of vertices, let the tree with root $r$ and subtree forest $F$ be a minimum spanning tree of
-$V$ for $d$, and let $H$ be a tour of $V$. Then the cost under $d$ of the closed tour returned by
-`APPROX-TSP-TOUR` on $r$ and $F$ is at most twice the cost under $d$ of the closed tour $H$.
-
-Source: CLRS, third edition, Theorem 35.2. -/
+/-- CLRS Theorem 35.2: given a minimum spanning tree, `APPROX-TSP-TOUR` returns a tour costing at
+most twice any tour, in particular an optimal one. -/
 theorem approxTSPTour_two_approx (hd : IsMetricCost d) {V : List α} {r : α} {F : Forest α}
     (hT : IsMinSpanning d V r F) {H : List α} (hH : IsTour V H) :
     tourCost d (approxTSPTour r F).ret ≤ 2 • tourCost d H := by

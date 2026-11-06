@@ -43,9 +43,8 @@ namespace Cslib.Language
 
 variable {T : Type*}
 
-/-- **Right quotient of a language by a language.** For languages $L$ and $R$ over an alphabet $T$,
-the right quotient of $L$ by $R$ is the language of all words $x$ over $T$ such that the
-concatenation $xy$ lies in $L$ for some word $y \in R$. -/
+/-- The right quotient of `L` by `R`: the words `x` with `x ++ y ∈ L` for some `y ∈ R`. The
+quotient by a single word is `rightQuotient` (`Congruences/Quotients.lean`). -/
 def rightQuotientLang (L R : Language T) : Language T :=
   {x | ∃ y ∈ R, x ++ y ∈ L}
 
@@ -56,24 +55,15 @@ theorem mem_rightQuotientLang {L R : Language T} {x : List T} :
 
 namespace RightQuotientLang
 
-/-- **Words over the left copy of a doubled alphabet.** For an alphabet $T$, write $T \sqcup T$ for
-the disjoint union of a left and a right copy of $T$. This is the language over $T \sqcup T$ of the
-words obtained from a word $x$ over $T$ by replacing each letter with its left copy. -/
+/-- The words over the left copy. -/
 def leftWords : Language (T ⊕ T) :=
   {u | ∃ x : List T, u = x.map Sum.inl}
 
-/-- **Words of a language marked by the right copy.** For a language $R$ over an alphabet $T$, write
-$T \sqcup T$ for the disjoint union of a left and a right copy of $T$. This is the language over
-$T \sqcup T$ of the words obtained from a word $y \in R$ by replacing each letter with its right
-copy. -/
+/-- The words of `R`, marked by the right copy. -/
 def rightWords (R : Language T) : Language (T ⊕ T) :=
   {u | ∃ y ∈ R, u = y.map Sum.inr}
 
-/-- **Automaton for words over the left copy.** For an alphabet $T$, write $T \sqcup T$ for the
-disjoint union of a left and a right copy of $T$. This is the deterministic automaton over
-$T \sqcup T$ with the two states true and false, whose start state and only accepting state are
-true, and which moves from state $b$ on a letter $c$ to true exactly when $b$ is true and $c$ lies
-in the left copy, and to false otherwise. -/
+/-- Reads left letters only. -/
 def leftDFA : DFA (T ⊕ T) Bool :=
   ⟨fun b c => b && c.isLeft, true, {true}⟩
 
@@ -113,13 +103,7 @@ theorem leftWords_isRegular : (leftWords : Language (T ⊕ T)).IsRegular := by
 
 variable {σ : Type*} (D : DFA T σ)
 
-/-- **Automaton running a deterministic automaton on the right copy.** Let $D$ be a deterministic
-automaton over an alphabet $T$, and write $T \sqcup T$ for the disjoint union of a left and a right
-copy of $T$. This is the deterministic automaton over $T \sqcup T$ whose states are the states of
-$D$ together with one extra dead state $\bot$. From a state $p$ of $D$, on the right copy of a
-letter $a$ it moves to the state that $D$ reaches from $p$ on $a$; on a letter of the left copy,
-and from $\bot$ on any letter, it moves to $\bot$. Its start state is the start state of $D$, and
-its accepting states are the accepting states of $D$. -/
+/-- Runs `D` on right letters; a left letter leads to the dead state `none`. -/
 def rightDFA : DFA (T ⊕ T) (Option σ) where
   step o c := match o, c with
     | some p, .inr a => some (D.step p a)
@@ -182,9 +166,7 @@ theorem rightWords_isRegular {R : Language T} (hR : R.IsRegular) : (rightWords R
   · rintro ⟨y, hy, rfl⟩
     exact ⟨_, hy, (rightDFA_evalFrom_some D _ _ _).2 ⟨y, rfl, rfl⟩⟩
 
-/-- **Forgetting the copy of a letter.** For an alphabet $T$, write $T \sqcup T$ for the disjoint
-union of a left and a right copy of $T$. This map sends the left copy and the right copy of a
-letter $a \in T$ to the one-letter word $a$ over $T$. -/
+/-- Forget the copy. -/
 def unmark : T ⊕ T → List T :=
   Sum.elim (fun a => [a]) (fun a => [a])
 

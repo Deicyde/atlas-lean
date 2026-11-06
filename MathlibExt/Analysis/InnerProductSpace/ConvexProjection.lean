@@ -79,9 +79,9 @@ private theorem eq_of_isNearestPoint {K : Set F} (hKv : Convex ℝ K)
   eq_of_variational (variational_of_isNearestPoint hKv hpK hp)
     (variational_of_isNearestPoint hKv hqK hq) hpK hqK
 
-/-- **Existence and uniqueness of the nearest point.** Let $K$ be a nonempty complete convex
-subset of a real inner product space $F$. For every $x \in F$ there is exactly one $p \in K$
-with $\|x - p\| = \inf_{w \in K} \|x - w\|$, that is, exactly one point of $K$ nearest to $x$. -/
+/-- **Existence and uniqueness of the nearest point.** A nonempty complete
+convex set in a real inner product space has exactly one point nearest to
+each `x`. -/
 theorem exists_unique_nearest_point_of_complete_convex {K : Set F}
     (hKne : K.Nonempty) (hKc : IsComplete K) (hKv : Convex ℝ K) (x : F) :
     ∃! p, p ∈ K ∧ ‖x - p‖ = ⨅ w : K, ‖x - w‖ := by
@@ -89,9 +89,8 @@ theorem exists_unique_nearest_point_of_complete_convex {K : Set F}
   exact ⟨p, ⟨hpK, hp⟩, fun q hq =>
     (eq_of_isNearestPoint hKv hpK hq.1 hp hq.2).symm⟩
 
-/-- **Totalized existence of the convex projection.** For every subset $K$ of a real inner product
-space $F$ and every $x \in F$, there is a point $p \in F$ such that, if $K$ is nonempty, complete
-and convex, then $p \in K$ and $\|x - p\| = \inf_{w \in K} \|x - w\|$. -/
+/-- Totalized existence statement behind `convexProjection`: a point that
+is the nearest point whenever `K` satisfies the hypotheses. -/
 theorem exists_convexProjection_spec (K : Set F) (x : F) :
     ∃ p : F, (K.Nonempty → IsComplete K → Convex ℝ K →
       p ∈ K ∧ ‖x - p‖ = ⨅ w : K, ‖x - w‖) := by
@@ -101,49 +100,39 @@ theorem exists_convexProjection_spec (K : Set F) (x : F) :
     exact ⟨p, fun _ _ _ => ⟨hpK, hp⟩⟩
   · exact ⟨x, fun hne hc hcv => False.elim (h ⟨hne, hc, hcv⟩)⟩
 
-/-- **Nearest-point projection onto a convex set.** For a subset $K$ of a real inner product space
-$F$ and a point $x \in F$, the nearest-point projection $P_K(x)$ is a chosen point of $F$ such
-that, whenever $K$ is nonempty, complete and convex, $P_K(x) \in K$ and
-$\|x - P_K(x)\| = \inf_{w \in K} \|x - w\|$; it is then the unique point of $K$ nearest to $x$.
-When $K$ fails one of these hypotheses, the value of $P_K(x)$ is unspecified. -/
+/-- The nearest-point projection onto `K`: for a nonempty complete convex
+`K`, `convexProjection K x` is the unique point of `K` nearest to `x`.
+Outside those hypotheses its value is unspecified. The properties of this
+chosen function below assume them. -/
 noncomputable def convexProjection (K : Set F) (x : F) : F :=
   Classical.choose (exists_convexProjection_spec K x)
 
-/-- **Defining property of the convex projection.** Let $K$ be a nonempty complete convex subset
-of a real inner product space $F$, and let $P_K$ be the nearest-point projection onto $K$. For
-every $x \in F$, $P_K(x) \in K$ and $\|x - P_K(x)\| = \inf_{w \in K} \|x - w\|$. -/
+/-- The projection lies in `K` and attains the infimum of the distances. -/
 theorem convexProjection_spec {K : Set F} (hKne : K.Nonempty) (hKc : IsComplete K)
     (hKv : Convex ℝ K) (x : F) :
     convexProjection K x ∈ K ∧ ‖x - convexProjection K x‖ = ⨅ w : K, ‖x - w‖ :=
   Classical.choose_spec (exists_convexProjection_spec K x) hKne hKc hKv
 
-/-- **The convex projection lies in the set.** Let $K$ be a nonempty complete convex subset of a
-real inner product space $F$, and let $P_K$ be the nearest-point projection onto $K$. Then
-$P_K(x) \in K$ for every $x \in F$. -/
+/-- The projection lies in `K`. -/
 theorem convexProjection_mem {K : Set F} (hKne : K.Nonempty) (hKc : IsComplete K)
     (hKv : Convex ℝ K) (x : F) : convexProjection K x ∈ K :=
   (convexProjection_spec hKne hKc hKv x).1
 
-/-- **The convex projection minimizes the distance to the set.** Let $K$ be a nonempty complete
-convex subset of a real inner product space $F$, and let $P_K$ be the nearest-point projection
-onto $K$. Then $\|x - P_K(x)\| = \inf_{w \in K} \|x - w\|$ for every $x \in F$. -/
+/-- The projection attains the infimum of the distances to `K`. -/
 theorem convexProjection_norm_eq_iInf {K : Set F} (hKne : K.Nonempty)
     (hKc : IsComplete K) (hKv : Convex ℝ K) (x : F) :
     ‖x - convexProjection K x‖ = ⨅ w : K, ‖x - w‖ :=
   (convexProjection_spec hKne hKc hKv x).2
 
-/-- **Variational inequality for the convex projection.** Let $K$ be a nonempty complete convex
-subset of a real inner product space $F$, and let $P_K$ be the nearest-point projection onto $K$.
-For every $x \in F$ and every $w \in K$, $\langle x - P_K(x), w - P_K(x) \rangle \le 0$. -/
+/-- **Variational characterization of the projection:** `⟪x - P x, w - P x⟫ ≤ 0`
+for every `w ∈ K`. -/
 theorem convexProjection_variational {K : Set F} (hKne : K.Nonempty)
     (hKc : IsComplete K) (hKv : Convex ℝ K) (x : F) :
     ∀ w ∈ K, ⟪x - convexProjection K x, w - convexProjection K x⟫_ℝ ≤ 0 :=
   (norm_eq_iInf_iff_real_inner_le_zero hKv (convexProjection_mem hKne hKc hKv x)).mp
     (convexProjection_norm_eq_iInf hKne hKc hKv x)
 
-/-- **Nearest points coincide with the convex projection.** Let $K$ be a nonempty complete convex
-subset of a real inner product space $F$, let $P_K$ be the nearest-point projection onto $K$, and
-let $x \in F$. If $p \in K$ satisfies $\|x - p\| = \inf_{w \in K} \|x - w\|$, then $P_K(x) = p$. -/
+/-- Any nearest point equals the projection. -/
 theorem convexProjection_eq_of_isNearestPoint {K : Set F} (hKne : K.Nonempty)
     (hKc : IsComplete K) (hKv : Convex ℝ K) {x p : F} (hpK : p ∈ K)
     (hp : ‖x - p‖ = ⨅ w : K, ‖x - w‖) : convexProjection K x = p :=
@@ -161,9 +150,7 @@ private theorem iInf_eq_zero_of_mem {K : Set F} {x : F} (hx : x ∈ K) :
       ⟨0, Set.forall_mem_range.2 fun w => norm_nonneg _⟩ ⟨x, hx⟩
   simpa using h
 
-/-- **The convex projection fixes the points of the set.** Let $K$ be a nonempty complete convex
-subset of a real inner product space $F$, and let $P_K$ be the nearest-point projection onto $K$.
-Then $P_K(x) = x$ for every $x \in K$. -/
+/-- The projection fixes every point of `K`. -/
 theorem convexProjection_eq_self_of_mem {K : Set F} (hKne : K.Nonempty)
     (hKc : IsComplete K) (hKv : Convex ℝ K) {x : F} (hx : x ∈ K) :
     convexProjection K x = x := by
@@ -171,9 +158,7 @@ theorem convexProjection_eq_self_of_mem {K : Set F} (hKne : K.Nonempty)
   rw [sub_self, norm_zero]
   exact (iInf_eq_zero_of_mem hx).symm
 
-/-- **Idempotence of the convex projection.** Let $K$ be a nonempty complete convex subset of a
-real inner product space $F$, and let $P_K$ be the nearest-point projection onto $K$. Then
-$P_K(P_K(x)) = P_K(x)$ for every $x \in F$. -/
+/-- The projection is idempotent. -/
 theorem convexProjection_idem {K : Set F} (hKne : K.Nonempty) (hKc : IsComplete K)
     (hKv : Convex ℝ K) (x : F) :
     convexProjection K (convexProjection K x) = convexProjection K x :=
@@ -196,11 +181,8 @@ private theorem inner_sub_sub_nonneg_of_isNearestPoint {K : Set F} (hKv : Convex
   rw [hsub, hneg]
   linarith
 
-/-- **Nonexpansiveness of nearest-point selection.** Let $K$ be a convex subset of a real inner
-product space $F$, let $x, y \in F$, and let $p, q \in K$ satisfy
-$\|x - p\| = \inf_{w \in K} \|x - w\|$ and $\|y - q\| = \inf_{w \in K} \|y - w\|$, so that $p$
-is a point of $K$ nearest to $x$ and $q$ is a point of $K$ nearest to $y$. Then
-$\|p - q\| \le \|x - y\|$. -/
+/-- **Nonexpansiveness of nearest-point selection:** nearest points to `x`
+and `y` are no farther apart than `x` and `y`. -/
 theorem norm_sub_le_of_isNearestPoint {K : Set F} (hKv : Convex ℝ K)
     {x y p q : F} (hpK : p ∈ K) (hqK : q ∈ K)
     (hp : ‖x - p‖ = ⨅ w : K, ‖x - w‖)
@@ -219,11 +201,9 @@ theorem norm_sub_le_of_isNearestPoint {K : Set F} (hKv : Convex ℝ K)
       rw [← pow_two]; linarith
     exact le_of_mul_le_mul_right hle hpos
 
-/-- **Firm nonexpansiveness of nearest-point selection.** Let $K$ be a convex subset of a real
-inner product space $F$, let $x, y \in F$, and let $p, q \in K$ satisfy
-$\|x - p\| = \inf_{w \in K} \|x - w\|$ and $\|y - q\| = \inf_{w \in K} \|y - w\|$, so that $p$
-is a point of $K$ nearest to $x$ and $q$ is a point of $K$ nearest to $y$. Then
-$\|p - q\|^2 + \|(x - p) - (y - q)\|^2 \le \|x - y\|^2$. -/
+/-- **Firm nonexpansiveness of nearest-point selection:** the squared
+distance between nearest points plus the squared distance between the
+residuals is at most the squared distance between the original points. -/
 theorem norm_sub_sq_add_norm_sub_sq_le_of_isNearestPoint {K : Set F}
     (hKv : Convex ℝ K) {x y p q : F} (hpK : p ∈ K) (hqK : q ∈ K)
     (hp : ‖x - p‖ = ⨅ w : K, ‖x - w‖)
@@ -238,9 +218,7 @@ theorem norm_sub_sq_add_norm_sub_sq_le_of_isNearestPoint {K : Set F}
       = ⟪(x - p) - (y - q), p - q⟫_ℝ := real_inner_comm _ _
   linarith
 
-/-- **The convex projection is $1$-Lipschitz.** Let $K$ be a nonempty complete convex subset of a
-real inner product space $F$, and let $P_K$ be the nearest-point projection onto $K$. Then
-$\|P_K x - P_K y\| \le \|x - y\|$ for all $x, y \in F$, that is, $P_K$ is $1$-Lipschitz. -/
+/-- The projection onto a nonempty complete convex set is `1`-Lipschitz. -/
 theorem lipschitzWith_convexProjection {K : Set F} (hKne : K.Nonempty)
     (hKc : IsComplete K) (hKv : Convex ℝ K) :
     LipschitzWith 1 (convexProjection K) := by
@@ -251,10 +229,7 @@ theorem lipschitzWith_convexProjection {K : Set F} (hKne : K.Nonempty)
     (convexProjection_norm_eq_iInf hKne hKc hKv y)
   simpa only [NNReal.coe_one, one_mul, dist_eq_norm] using h
 
-/-- **Firm nonexpansiveness of the convex projection.** Let $K$ be a nonempty complete convex
-subset of a real inner product space $F$, and let $P_K$ be the nearest-point projection onto $K$.
-For all $x, y \in F$,
-$\|P_K(x) - P_K(y)\|^2 + \|(x - P_K(x)) - (y - P_K(y))\|^2 \le \|x - y\|^2$. -/
+/-- Firm nonexpansiveness of the projection map. -/
 theorem convexProjection_firmly_nonexpansive {K : Set F} (hKne : K.Nonempty)
     (hKc : IsComplete K) (hKv : Convex ℝ K) (x y : F) :
     ‖convexProjection K x - convexProjection K y‖ ^ 2 +

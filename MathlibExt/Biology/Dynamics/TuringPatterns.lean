@@ -109,30 +109,30 @@ open Matrix Filter Topology
 
 namespace MathlibExt.Biology.Dynamics.TuringPatterns
 
-/-- **Diffusion matrix of a two-species system.** The diffusion matrix `D = diag(d_u, d_v)` of a two-species reaction-diffusion system. -/
+/-- The diffusion matrix `D = diag(d_u, d_v)` of a two-species reaction-diffusion system. -/
 def diffusionMatrix (du dv : ℝ) : Matrix (Fin 2) (Fin 2) ℝ :=
   Matrix.diagonal ![du, dv]
 
-/-- **Mode matrix of a linearized reaction-diffusion system.** The mode matrix `J - k² D` governing the Fourier mode of wavenumber `k` of the linearized
+/-- The mode matrix `J - k² D` governing the Fourier mode of wavenumber `k` of the linearized
 system `w_t = D w_xx + J w`, where `J` is the Jacobian of the kinetics at the steady state
 (convention: `J i j` is the partial derivative of the `i`-th reaction term with respect to the
 `j`-th species, so `J = [[f_u, f_v], [g_u, g_v]]`). -/
 def modeMatrix (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv k : ℝ) : Matrix (Fin 2) (Fin 2) ℝ :=
   J - k ^ 2 • diffusionMatrix du dv
 
-/-- **Linearly unstable Fourier mode.** The Fourier mode of wavenumber `k` is *linearly unstable*: the mode matrix `J - k² D` has
+/-- The Fourier mode of wavenumber `k` is *linearly unstable*: the mode matrix `J - k² D` has
 a complex eigenvalue `μ` with `0 < Re μ`. -/
 def IsUnstableMode (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv k : ℝ) : Prop :=
   ∃ μ : ℂ, 0 < μ.re ∧ ∃ v : Fin 2 → ℂ, v ≠ 0 ∧
     (modeMatrix J du dv k).map (↑) *ᵥ v = μ • v
 
-/-- **Complex Fourier mode.** The complex Fourier mode `w(t, x) = e^{μ t} cos(k x) v` with growth rate `μ`, wavenumber `k`
+/-- The complex Fourier mode `w(t, x) = e^{μ t} cos(k x) v` with growth rate `μ`, wavenumber `k`
 and amplitude vector `v`. (The real part of a complex solution of the real linear system is a
 real solution.) -/
 noncomputable def fourierMode (μ : ℂ) (k : ℝ) (v : Fin 2 → ℂ) (t x : ℝ) : Fin 2 → ℂ :=
   (Complex.exp (μ * t) * (Real.cos (k * x) : ℂ)) • v
 
-/-- **Classical solution of the linearized reaction-diffusion system.** `w` is a classical solution of the linearized reaction-diffusion system
+/-- `w` is a classical solution of the linearized reaction-diffusion system
 `w_t = D w_xx + J w` on `ℝ × ℝ`: `w(t, ·)` is twice differentiable with first and second
 derivatives `wx`, `wxx`, and `w(·, x)` is differentiable with the prescribed time derivative. -/
 def IsLinearizedSolution (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv : ℝ)
@@ -142,31 +142,31 @@ def IsLinearizedSolution (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv : ℝ)
     HasDerivAt (fun s => w s x)
       ((diffusionMatrix du dv).map (↑) *ᵥ wxx t x + J.map (↑) *ᵥ w t x) t
 
-/-- **Dispersion polynomial.** The dispersion polynomial `h(q) = d_u d_v q² - (d_v f_u + d_u g_v) q + det J`, so that
+/-- The dispersion polynomial `h(q) = d_u d_v q² - (d_v f_u + d_u g_v) q + det J`, so that
 `det (J - k² D) = h(k²)` (`det_modeMatrix`). -/
 def dispersionDet (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv q : ℝ) : ℝ :=
   du * dv * q ^ 2 - (dv * J 0 0 + du * J 1 1) * q + J.det
 
-/-- **Squared critical wavenumber.** The squared critical wavenumber `k_c² = (d_v f_u + d_u g_v) / (2 d_u d_v)`, the minimizer
+/-- The squared critical wavenumber `k_c² = (d_v f_u + d_u g_v) / (2 d_u d_v)`, the minimizer
 of the dispersion polynomial (meaningful for `d_u, d_v > 0`; division by zero gives `0`). -/
 noncomputable def criticalWavenumberSq (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv : ℝ) : ℝ :=
   (dv * J 0 0 + du * J 1 1) / (2 * du * dv)
 
-/-- **Discriminant of the dispersion polynomial.** The discriminant `(d_v f_u + d_u g_v)² - 4 d_u d_v det J` of the dispersion polynomial. -/
+/-- The discriminant `(d_v f_u + d_u g_v)² - 4 d_u d_v det J` of the dispersion polynomial. -/
 def bandDiscriminant (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv : ℝ) : ℝ :=
   (dv * J 0 0 + du * J 1 1) ^ 2 - 4 * du * dv * J.det
 
-/-- **Lower end of the unstable wavenumber band.** Lower end `q₋ = (S - √Δ) / (2 d_u d_v)` of the unstable band of squared wavenumbers, where
+/-- Lower end `q₋ = (S - √Δ) / (2 d_u d_v)` of the unstable band of squared wavenumbers, where
 `S = d_v f_u + d_u g_v` and `Δ = bandDiscriminant` (meaningful when `0 < Δ`, `d_u, d_v > 0`). -/
 noncomputable def bandLower (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv : ℝ) : ℝ :=
   (dv * J 0 0 + du * J 1 1 - Real.sqrt (bandDiscriminant J du dv)) / (2 * du * dv)
 
-/-- **Upper end of the unstable wavenumber band.** Upper end `q₊ = (S + √Δ) / (2 d_u d_v)` of the unstable band of squared wavenumbers
+/-- Upper end `q₊ = (S + √Δ) / (2 d_u d_v)` of the unstable band of squared wavenumbers
 (meaningful when `0 < Δ`, `d_u, d_v > 0`). -/
 noncomputable def bandUpper (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv : ℝ) : ℝ :=
   (dv * J 0 0 + du * J 1 1 + Real.sqrt (bandDiscriminant J du dv)) / (2 * du * dv)
 
-/-- **Neumann wavenumber on an interval.** The Neumann wavenumber `k_n = n π / L` of the mode `cos(n π x / L)` on `[0, L]`.
+/-- The Neumann wavenumber `k_n = n π / L` of the mode `cos(n π x / L)` on `[0, L]`.
 Meaningful only for `0 < L`; at `L = 0` the totalized division gives `0`, so every
 labeled Neumann mode collapses to the homogeneous mode. -/
 noncomputable def neumannWavenumber (L : ℝ) (n : ℕ) : ℝ :=
@@ -174,12 +174,12 @@ noncomputable def neumannWavenumber (L : ℝ) (n : ℕ) : ℝ :=
 
 /-! ### The dispersion relation -/
 
-/-- **Trace of the mode matrix.** `tr (J - k² D) = tr J - k² (d_u + d_v)`. -/
+/-- `tr (J - k² D) = tr J - k² (d_u + d_v)`. -/
 theorem trace_modeMatrix (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv k : ℝ) :
     (modeMatrix J du dv k).trace = J.trace - k ^ 2 * (du + dv) := by
   simp [modeMatrix, diffusionMatrix, Matrix.trace_fin_two]
 
-/-- **Determinant of the mode matrix is the dispersion polynomial.** `det (J - k² D) = h(k²)`. -/
+/-- `det (J - k² D) = h(k²)`. -/
 theorem det_modeMatrix (J : Matrix (Fin 2) (Fin 2) ℝ) (du dv k : ℝ) :
     (modeMatrix J du dv k).det = dispersionDet J du dv (k ^ 2) := by
   simp [modeMatrix, dispersionDet, diffusionMatrix, Matrix.det_fin_two]
@@ -251,7 +251,7 @@ theorem exists_eigenvalue_re_pos_iff (M : Matrix (Fin 2) (Fin 2) ℝ) :
       · nlinarith [hs2]
       · ring
 
-/-- **Instability criterion for a Fourier mode via trace and determinant.** Mode `k` is unstable iff `0 < tr (J - k² D)` or `det (J - k² D) < 0`. -/
+/-- Mode `k` is unstable iff `0 < tr (J - k² D)` or `det (J - k² D) < 0`. -/
 theorem isUnstableMode_iff {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv k : ℝ} :
     IsUnstableMode J du dv k ↔
       0 < (modeMatrix J du dv k).trace ∨ (modeMatrix J du dv k).det < 0 :=
@@ -342,12 +342,12 @@ theorem fourierMode_isLinearizedSolution_iff (J : Matrix (Fin 2) (Fin 2) ℝ) (d
     rw [hpde]
     exact fourierMode_hasDerivAt_time μ k v t x
 
-/-- **Amplitude of a Fourier mode.** The amplitude of a Fourier mode: `‖w(t, 0)‖ = e^{Re μ · t} ‖v‖`. -/
+/-- The amplitude of a Fourier mode: `‖w(t, 0)‖ = e^{Re μ · t} ‖v‖`. -/
 theorem norm_fourierMode_zero (μ : ℂ) (k : ℝ) (v : Fin 2 → ℂ) (t : ℝ) :
     ‖fourierMode μ k v t 0‖ = Real.exp (μ.re * t) * ‖v‖ := by
   simp [fourierMode, norm_smul, Complex.norm_exp, Complex.mul_re]
 
-/-- **Fourier mode is largest at the origin.** `‖w(t, 0)‖` is the amplitude of the mode: `‖w(t, x)‖ ≤ ‖w(t, 0)‖` for every `x`. -/
+/-- `‖w(t, 0)‖` is the amplitude of the mode: `‖w(t, x)‖ ≤ ‖w(t, 0)‖` for every `x`. -/
 theorem norm_fourierMode_le (μ : ℂ) (k : ℝ) (v : Fin 2 → ℂ) (t x : ℝ) :
     ‖fourierMode μ k v t x‖ ≤ ‖fourierMode μ k v t 0‖ := by
   rw [norm_fourierMode_zero]
@@ -357,7 +357,7 @@ theorem norm_fourierMode_le (μ : ℂ) (k : ℝ) (v : Fin 2 → ℂ) (t x : ℝ)
   exact mul_le_mul_of_nonneg_right
     (mul_le_of_le_one_right (Real.exp_pos _).le (Real.abs_cos_le_one _)) (norm_nonneg _)
 
-/-- **Fourier mode grows unboundedly iff its growth rate is positive.** A nonzero Fourier mode grows without bound iff its growth rate has positive real part. -/
+/-- A nonzero Fourier mode grows without bound iff its growth rate has positive real part. -/
 theorem tendsto_norm_fourierMode_iff {v : Fin 2 → ℂ} (hv : v ≠ 0) (μ : ℂ) (k : ℝ) :
     Tendsto (fun t => ‖fourierMode μ k v t 0‖) atTop atTop ↔ 0 < μ.re := by
   simp_rw [norm_fourierMode_zero]
@@ -379,7 +379,7 @@ theorem isUnstableMode_iff_exists_growing {J : Matrix (Fin 2) (Fin 2) ℝ} {du d
 
 /-! ### Diffusion-driven instability -/
 
-/-- **Homogeneous mode is stable for stable kinetics.** The homogeneous mode `k = 0` is stable when the kinetics are stable (`tr J < 0`,
+/-- The homogeneous mode `k = 0` is stable when the kinetics are stable (`tr J < 0`,
 `0 < det J`). -/
 theorem not_isUnstableMode_zero {J : Matrix (Fin 2) (Fin 2) ℝ} (htr : J.trace < 0)
     (hdet : 0 < J.det) (du dv : ℝ) : ¬ IsUnstableMode J du dv 0 := by
@@ -388,7 +388,7 @@ theorem not_isUnstableMode_zero {J : Matrix (Fin 2) (Fin 2) ℝ} (htr : J.trace 
   push Not
   constructor <;> nlinarith
 
-/-- **Mode instability iff the dispersion polynomial is negative.** If `tr J < 0` and `d_u, d_v ≥ 0`, mode `k` is unstable iff `h(k²) < 0`. -/
+/-- If `tr J < 0` and `d_u, d_v ≥ 0`, mode `k` is unstable iff `h(k²) < 0`. -/
 theorem isUnstableMode_iff_dispersionDet_neg {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ}
     (htr : J.trace < 0) (hdu : 0 ≤ du) (hdv : 0 ≤ dv) (k : ℝ) :
     IsUnstableMode J du dv k ↔ dispersionDet J du dv (k ^ 2) < 0 := by
@@ -409,7 +409,7 @@ theorem turing_instability {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv k : ℝ} (htr
   ⟨not_isUnstableMode_zero htr hdet du dv,
     (isUnstableMode_iff_dispersionDet_neg htr hdu hdv k).2 (det_modeMatrix J du dv k ▸ hk)⟩
 
-/-- **Minimum value of the dispersion polynomial.** The value of the dispersion polynomial at its minimizer:
+/-- The value of the dispersion polynomial at its minimizer:
 `h(k_c²) = det J - (d_v f_u + d_u g_v)² / (4 d_u d_v)`. -/
 theorem dispersionDet_criticalWavenumberSq {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ}
     (hdu : 0 < du) (hdv : 0 < dv) :
@@ -419,7 +419,7 @@ theorem dispersionDet_criticalWavenumberSq {J : Matrix (Fin 2) (Fin 2) ℝ} {du 
   field_simp
   ring
 
-/-- **Critical squared wavenumber minimizes the dispersion polynomial.** The critical squared wavenumber minimizes the dispersion polynomial over all real `q`. -/
+/-- The critical squared wavenumber minimizes the dispersion polynomial over all real `q`. -/
 theorem dispersionDet_criticalWavenumberSq_le {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ}
     (hdu : 0 < du) (hdv : 0 < dv) (q : ℝ) :
     dispersionDet J du dv (criticalWavenumberSq J du dv) ≤ dispersionDet J du dv q := by
@@ -430,7 +430,7 @@ theorem dispersionDet_criticalWavenumberSq_le {J : Matrix (Fin 2) (Fin 2) ℝ} {
     ring
   nlinarith [mul_nonneg (mul_pos hdu hdv).le (sq_nonneg (q - criticalWavenumberSq J du dv))]
 
-/-- **Turing condition in squared form.** The Turing condition in squared form: `2 √(d_u d_v det J) < S` iff `0 < S` and
+/-- The Turing condition in squared form: `2 √(d_u d_v det J) < S` iff `0 < S` and
 `4 d_u d_v det J < S²`, where `S = d_v f_u + d_u g_v`. This holds for all real inputs: when
 `d_u d_v det J < 0`, `Real.sqrt` returns `0` and both sides reduce to `0 < S`. -/
 theorem two_mul_sqrt_lt_iff {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ} :
@@ -448,7 +448,7 @@ theorem two_mul_sqrt_lt_iff {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ} :
     have := (Real.sqrt_lt' (x := du * dv * J.det) (half_pos hS)).2 (by nlinarith)
     linarith
 
-/-- **Turing's criterion for diffusion-driven instability.** For `d_u, d_v > 0` and `0 < det J`, the dispersion polynomial is negative at some
+/-- For `d_u, d_v > 0` and `0 < det J`, the dispersion polynomial is negative at some
 `q ≥ 0` iff `2 √(d_u d_v det J) < d_v f_u + d_u g_v`. -/
 theorem exists_dispersionDet_neg_iff {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ}
     (hdu : 0 < du) (hdv : 0 < dv) (hdet : 0 < J.det) :
@@ -504,7 +504,7 @@ theorem exists_isUnstableMode_iff {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ}
     refine ⟨Real.sqrt q, (isUnstableMode_iff_dispersionDet_neg htr hdu.le hdv.le _).2 ?_⟩
     rwa [Real.sq_sqrt hq]
 
-/-- **Critical wavenumber is unstable under Turing's criterion.** Under Turing's criterion the critical wavenumber `k_c = √(k_c²)` is itself unstable (and
+/-- Under Turing's criterion the critical wavenumber `k_c = √(k_c²)` is itself unstable (and
 `0 < k_c²`). -/
 theorem isUnstableMode_sqrt_criticalWavenumberSq {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ}
     (hdu : 0 < du) (hdv : 0 < dv) (htr : J.trace < 0) (_hdet : 0 < J.det)
@@ -520,7 +520,7 @@ theorem isUnstableMode_sqrt_criticalWavenumberSq {J : Matrix (Fin 2) (Fin 2) ℝ
     lt_div_iff₀ (by positivity)]
   linarith
 
-/-- **Critical wavenumber at the Turing bifurcation threshold.** At the bifurcation threshold `d_v f_u + d_u g_v = 2 √(d_u d_v det J)` the critical
+/-- At the bifurcation threshold `d_v f_u + d_u g_v = 2 √(d_u d_v det J)` the critical
 squared wavenumber is `k_c² = √(det J / (d_u d_v))` and `h(k_c²) = 0`. -/
 theorem criticalWavenumberSq_of_threshold {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ}
     (hdu : 0 < du) (hdv : 0 < dv) (hdet : 0 ≤ J.det)
@@ -583,7 +583,7 @@ theorem lt_of_exists_isUnstableMode {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : �
 
 /-! ### Unstable band and finite domains -/
 
-/-- **Dispersion polynomial is negative exactly on the unstable band.** For `d_u, d_v > 0`, the dispersion polynomial is negative exactly on the open band
+/-- For `d_u, d_v > 0`, the dispersion polynomial is negative exactly on the open band
 `(q₋, q₊)`, which is nonempty iff the discriminant is positive. -/
 theorem dispersionDet_neg_iff {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ} (hdu : 0 < du)
     (hdv : 0 < dv) (q : ℝ) :
@@ -624,7 +624,7 @@ theorem dispersionDet_neg_iff {J : Matrix (Fin 2) (Fin 2) ℝ} {du dv : ℝ} (hd
     have hfactor : 0 < 4 * A := by positivity
     nlinarith only [hmul, hfactor]
 
-/-- **Neumann modes have zero flux at the boundary.** The Neumann mode `cos(k_n x)` has zero flux at both ends of `[0, L]`: the `x`-derivative of
+/-- The Neumann mode `cos(k_n x)` has zero flux at both ends of `[0, L]`: the `x`-derivative of
 the Fourier mode with wavenumber `k_n = n π / L` vanishes at `x = 0` and `x = L`. -/
 theorem hasDerivAt_fourierMode_neumannWavenumber {L : ℝ} (hL : L ≠ 0) (n : ℕ) (μ : ℂ)
     (v : Fin 2 → ℂ) (t : ℝ) :
@@ -649,7 +649,7 @@ theorem isUnstableMode_neumannWavenumber_iff {J : Matrix (Fin 2) (Fin 2) ℝ} {d
   rw [isUnstableMode_iff_dispersionDet_neg htr hdu.le hdv.le, dispersionDet_neg_iff hdu hdv]
   rfl
 
-/-- **Only finitely many Neumann modes are unstable.** Only finitely many Neumann modes are unstable on `[0, L]` (for `d_u, d_v, L > 0`, any `J`). -/
+/-- Only finitely many Neumann modes are unstable on `[0, L]` (for `d_u, d_v, L > 0`, any `J`). -/
 theorem finite_setOf_isUnstableMode_neumannWavenumber {J : Matrix (Fin 2) (Fin 2) ℝ}
     {du dv L : ℝ} (hdu : 0 < du) (hdv : 0 < dv) (hL : 0 < L) :
     {n : ℕ | IsUnstableMode J du dv (neumannWavenumber L n)}.Finite := by
@@ -708,7 +708,7 @@ theorem not_isUnstableMode_neumannWavenumber_of_le {J : Matrix (Fin 2) (Fin 2) �
     have : (Real.pi / L) ^ 2 ≤ (n * Real.pi / L) ^ 2 := pow_le_pow_left₀ hpl.le this 2
     linarith
 
-/-- **Long intervals have a squared Neumann wavenumber in any given band.** Every long enough interval has a squared Neumann wavenumber inside a given nonempty open band
+/-- Every long enough interval has a squared Neumann wavenumber inside a given nonempty open band
 `(qlo, qhi)` with `0 < qhi`: there is `L₀ > 0` such that for all `L ≥ L₀` some `(n π / L)²` lies
 in `(qlo, qhi)`. -/
 theorem exists_neumann_mem_band {qlo qhi : ℝ} (hlt : qlo < qhi) (hpos : 0 < qhi) :
@@ -776,28 +776,28 @@ theorem exists_isUnstableMode_neumannWavenumber {J : Matrix (Fin 2) (Fin 2) ℝ}
 
 /-! ### Schnakenberg kinetics -/
 
-/-- **Schnakenberg reaction kinetics.** Schnakenberg's reaction terms `(f, g) = (a - u + u² v, b - u² v)` as a map on
+/-- Schnakenberg's reaction terms `(f, g) = (a - u + u² v, b - u² v)` as a map on
 `x = (u, v) : Fin 2 → ℝ`, with source rates `a, b` (biologically `a, b > 0`). -/
 def schnakenberg (a b : ℝ) (x : Fin 2 → ℝ) : Fin 2 → ℝ :=
   ![a - x 0 + x 0 ^ 2 * x 1, b - x 0 ^ 2 * x 1]
 
-/-- **Steady state of the Schnakenberg kinetics.** The homogeneous steady state `(u₀, v₀) = (a + b, b / (a + b)²)` of the Schnakenberg
+/-- The homogeneous steady state `(u₀, v₀) = (a + b, b / (a + b)²)` of the Schnakenberg
 kinetics (meaningful for `a + b ≠ 0`; at `a + b = 0` the division gives the junk `v₀ = 0`). -/
 noncomputable def schnakenbergSteadyState (a b : ℝ) : Fin 2 → ℝ :=
   ![a + b, b / (a + b) ^ 2]
 
-/-- **Jacobian of the Schnakenberg kinetics at its steady state.** The Jacobian of the Schnakenberg kinetics at its steady state,
+/-- The Jacobian of the Schnakenberg kinetics at its steady state,
 `[[(b - a) / (a + b), (a + b)²], [-2 b / (a + b), -(a + b)²]]`. -/
 noncomputable def schnakenbergJacobian (a b : ℝ) : Matrix (Fin 2) (Fin 2) ℝ :=
   !![(b - a) / (a + b), (a + b) ^ 2; -(2 * b) / (a + b), -(a + b) ^ 2]
 
-/-- **Schnakenberg steady state is an equilibrium.** `(a + b, b / (a + b)²)` is a steady state of the Schnakenberg kinetics when `a + b ≠ 0`. -/
+/-- `(a + b, b / (a + b)²)` is a steady state of the Schnakenberg kinetics when `a + b ≠ 0`. -/
 theorem schnakenberg_steadyState {a b : ℝ} (hab : a + b ≠ 0) :
     schnakenberg a b (schnakenbergSteadyState a b) = 0 := by
   funext i
   fin_cases i <;> simp [schnakenberg, schnakenbergSteadyState] <;> field_simp <;> ring
 
-/-- **Computation of the Schnakenberg Jacobian at the steady state.** The Jacobian matrix of the Schnakenberg kinetics at the steady state is
+/-- The Jacobian matrix of the Schnakenberg kinetics at the steady state is
 `schnakenbergJacobian a b`. -/
 theorem jacobianMatrix_schnakenberg {a b : ℝ} (hab : a + b ≠ 0) :
     MetaMathlibExt.jacobianMatrix (schnakenberg a b) (schnakenbergSteadyState a b) =
@@ -823,14 +823,14 @@ theorem jacobianMatrix_schnakenberg {a b : ℝ} (hab : a + b ≠ 0) :
   · rw [((h2.const_mul ((a + b) ^ 2)).const_sub b).deriv]
     ring
 
-/-- **Determinant of the Schnakenberg Jacobian.** `det J = (a + b)²` for the Schnakenberg Jacobian (`a + b ≠ 0`). -/
+/-- `det J = (a + b)²` for the Schnakenberg Jacobian (`a + b ≠ 0`). -/
 theorem det_schnakenbergJacobian {a b : ℝ} (hab : a + b ≠ 0) :
     (schnakenbergJacobian a b).det = (a + b) ^ 2 := by
   rw [schnakenbergJacobian, Matrix.det_fin_two_of]
   field_simp
   ring
 
-/-- **Stability of the Schnakenberg steady state without diffusion.** The Schnakenberg steady state is stable without diffusion iff `b - a < (a + b)³`
+/-- The Schnakenberg steady state is stable without diffusion iff `b - a < (a + b)³`
 (for `0 < a + b`; then `0 < det J` automatically). -/
 theorem trace_schnakenbergJacobian_neg_iff {a b : ℝ} (hab : 0 < a + b) :
     (schnakenbergJacobian a b).trace < 0 ↔ b - a < (a + b) ^ 3 := by
@@ -862,23 +862,23 @@ theorem schnakenberg_turing_iff {a b d : ℝ} (hab : 0 < a + b) (hstab : b - a <
 
 /-! ### Gierer–Meinhardt kinetics -/
 
-/-- **Gierer–Meinhardt activator-inhibitor kinetics.** Gierer–Meinhardt activator-inhibitor kinetics in Murray's nondimensional form
+/-- Gierer–Meinhardt activator-inhibitor kinetics in Murray's nondimensional form
 `(f, g) = (a - b u + u² / v, u² - v)` on `x = (u, v)` (biologically `a, b > 0` and `u, v > 0`;
 at `v = 0` the division gives the junk `u² / 0 = 0`). -/
 noncomputable def giererMeinhardt (a b : ℝ) (x : Fin 2 → ℝ) : Fin 2 → ℝ :=
   ![a - b * x 0 + x 0 ^ 2 / x 1, x 0 ^ 2 - x 1]
 
-/-- **Steady state of the Gierer–Meinhardt kinetics.** The homogeneous steady state `(u₀, v₀) = ((a + 1) / b, ((a + 1) / b)²)` of the
+/-- The homogeneous steady state `(u₀, v₀) = ((a + 1) / b, ((a + 1) / b)²)` of the
 Gierer–Meinhardt kinetics (meaningful for `b ≠ 0`, `a + 1 ≠ 0`). -/
 noncomputable def giererMeinhardtSteadyState (a b : ℝ) : Fin 2 → ℝ :=
   ![(a + 1) / b, ((a + 1) / b) ^ 2]
 
-/-- **Jacobian of the Gierer–Meinhardt kinetics at its steady state.** The Jacobian of the Gierer–Meinhardt kinetics at its steady state,
+/-- The Jacobian of the Gierer–Meinhardt kinetics at its steady state,
 `[[b (1 - a) / (1 + a), -(b / (a + 1))²], [2 (a + 1) / b, -1]]`. -/
 noncomputable def giererMeinhardtJacobian (a b : ℝ) : Matrix (Fin 2) (Fin 2) ℝ :=
   !![b * (1 - a) / (1 + a), -(b / (a + 1)) ^ 2; 2 * (a + 1) / b, -1]
 
-/-- **Gierer–Meinhardt steady state is an equilibrium.** `((a + 1) / b, ((a + 1) / b)²)` is a steady state of the Gierer–Meinhardt kinetics when
+/-- `((a + 1) / b, ((a + 1) / b)²)` is a steady state of the Gierer–Meinhardt kinetics when
 `a + 1 ≠ 0` and `b ≠ 0`. -/
 theorem giererMeinhardt_steadyState {a b : ℝ} (ha : a + 1 ≠ 0) (hb : b ≠ 0) :
     giererMeinhardt a b (giererMeinhardtSteadyState a b) = 0 := by
@@ -890,7 +890,7 @@ theorem giererMeinhardt_steadyState {a b : ℝ} (ha : a + 1 ≠ 0) (hb : b ≠ 0
     ring
   · simp [giererMeinhardt, giererMeinhardtSteadyState]
 
-/-- **Computation of the Gierer–Meinhardt Jacobian at the steady state.** The Jacobian matrix of the Gierer–Meinhardt kinetics at the steady state is
+/-- The Jacobian matrix of the Gierer–Meinhardt kinetics at the steady state is
 `giererMeinhardtJacobian a b`. -/
 theorem jacobianMatrix_giererMeinhardt {a b : ℝ} (ha : a + 1 ≠ 0) (hb : b ≠ 0) :
     MetaMathlibExt.jacobianMatrix (giererMeinhardt a b) (giererMeinhardtSteadyState a b) =
@@ -920,7 +920,7 @@ theorem jacobianMatrix_giererMeinhardt {a b : ℝ} (ha : a + 1 ≠ 0) (hb : b �
     norm_num
     field_simp
 
-/-- **Determinant of the Gierer–Meinhardt Jacobian.** `det J = b` for the Gierer–Meinhardt Jacobian (`a + 1 ≠ 0`, `b ≠ 0`). -/
+/-- `det J = b` for the Gierer–Meinhardt Jacobian (`a + 1 ≠ 0`, `b ≠ 0`). -/
 theorem det_giererMeinhardtJacobian {a b : ℝ} (ha : a + 1 ≠ 0) (hb : b ≠ 0) :
     (giererMeinhardtJacobian a b).det = b := by
   have ha' : 1 + a ≠ 0 := by rwa [add_comm]
@@ -928,7 +928,7 @@ theorem det_giererMeinhardtJacobian {a b : ℝ} (ha : a + 1 ≠ 0) (hb : b ≠ 0
   field_simp
   ring
 
-/-- **Stability of the Gierer–Meinhardt steady state without diffusion.** The Gierer–Meinhardt steady state is stable without diffusion iff `b (1 - a) < 1 + a`
+/-- The Gierer–Meinhardt steady state is stable without diffusion iff `b (1 - a) < 1 + a`
 (for `0 < a + 1`; then `0 < det J = b` for `0 < b`). -/
 theorem trace_giererMeinhardtJacobian_neg_iff {a b : ℝ} (ha : 0 < a + 1) :
     (giererMeinhardtJacobian a b).trace < 0 ↔ b * (1 - a) < 1 + a := by

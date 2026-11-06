@@ -53,13 +53,13 @@ variable {ι 𝕜 : Type*} [RCLike 𝕜] {E : Type*}
 
 namespace MathlibExt.Analysis.InnerProductSpace.RieszBasis
 
-/-- **Riesz basis of a Hilbert space.** A family `f : ι → E` is a **Riesz basis** (with respect to the Hilbert basis
+/-- A family `f : ι → E` is a **Riesz basis** (with respect to the Hilbert basis
 `b`) if it is the image of `b` under a bounded invertible operator. -/
 def IsRieszBasis (b : HilbertBasis ι 𝕜 E) (f : ι → E) : Prop :=
   ∃ T : E ≃L[𝕜] E, ∀ i, T (b i) = f i
 
 omit [CompleteSpace E] in
-/-- **Riesz bases are linearly independent.** A Riesz basis is linearly independent. -/
+/-- A Riesz basis is linearly independent. -/
 theorem IsRieszBasis.linearIndependent {b : HilbertBasis ι 𝕜 E} {f : ι → E}
     (h : IsRieszBasis b f) : LinearIndependent 𝕜 f := by
   obtain ⟨T, hT⟩ := h
@@ -73,7 +73,7 @@ theorem IsRieszBasis.linearIndependent {b : HilbertBasis ι 𝕜 E} {f : ι → 
   exact hmap
 
 omit [CompleteSpace E] in
-/-- **Riesz bases have dense span.** A Riesz basis has dense span. -/
+/-- A Riesz basis has dense span. -/
 theorem IsRieszBasis.dense_span {b : HilbertBasis ι 𝕜 E} {f : ι → E}
     (h : IsRieszBasis b f) : (Submodule.span 𝕜 (Set.range f)).topologicalClosure = ⊤ := by
   obtain ⟨T, hT⟩ := h
@@ -102,7 +102,7 @@ theorem IsRieszBasis.dense_span {b : HilbertBasis ι 𝕜 E} {f : ι → E}
     exact T.surjective.range_eq
   exact SetLike.ext'_iff.mpr hTop
 
-/-- **Biorthogonal dual of a Riesz basis.** A Riesz basis admits a biorthogonal dual family with a reconstruction
+/-- A Riesz basis admits a biorthogonal dual family with a reconstruction
 formula: there is `g : ι → E` with `⟪f i, g j⟫ = if i = j then 1 else 0` and
 `x = ∑' i, ⟪g i, x⟫ • f i` for every `x`. The dual is `g j = (T⁻¹)† (b j)`
 for the operator `T` witnessing that `f` is a Riesz basis. -/

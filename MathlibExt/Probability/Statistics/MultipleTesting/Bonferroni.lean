@@ -41,7 +41,7 @@ open MeasureTheory
 
 variable {Ω : Type*} [MeasurableSpace Ω] {m : ℕ}
 
-/-- **Bonferroni rejection set.** The hypotheses rejected by the Bonferroni procedure at level `α`: those whose p-value is
+/-- The hypotheses rejected by the Bonferroni procedure at level `α`: those whose p-value is
 at most `α / m`. -/
 noncomputable def bonferroniRejections (α : ℝ) (p : Fin m → ℝ) : Finset (Fin m) :=
   Finset.univ.filter fun i => p i ≤ α / m

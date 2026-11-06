@@ -109,7 +109,7 @@ section Pulley
 
 variable {L : Type*} {S : Type*} [Fintype S]
 
-/-- **Reversible semigroup of transition matrices.** A family of transition matrices `P t`, indexed by branch length, is a **reversible
+/-- A family of transition matrices `P t`, indexed by branch length, is a **reversible
 semigroup** for the distribution `π`: it satisfies the Chapman–Kolmogorov equation and detailed
 balance `π a P t a b = π b P t b a`. With rows summing to `1`, detailed balance makes `π`
 stationary; the pulley principle uses only the two equations below. -/
@@ -119,14 +119,14 @@ structure IsReversibleSemigroup (π : S → ℝ) (P : ℝ → S → S → ℝ) :
   /-- Detailed balance with `π`. -/
   detailed_balance : ∀ t a b, π a * P t a b = π b * P t b a
 
-/-- **Partial likelihoods are invariant under swapping subtrees.** Swapping the two subtrees of a node does not change its partial likelihoods; with
+/-- Swapping the two subtrees of a node does not change its partial likelihoods; with
 `likelihood_node_comm` this lets the rerooting move `likelihood_reroot` reach either child. -/
 theorem prune_node_comm (obs : L → S → ℝ) (P Q : S → S → ℝ) (l r : Tree L S ℝ) :
     prune obs (node P l Q r) = prune obs (node Q r P l) := by
   funext s
   simp only [prune, mul_comm]
 
-/-- **Likelihood is invariant under swapping root subtrees.** Swapping the two subtrees of the root does not change the likelihood. -/
+/-- Swapping the two subtrees of the root does not change the likelihood. -/
 theorem likelihood_node_comm (obs : L → S → ℝ) (P Q : S → S → ℝ) (l r : Tree L S ℝ)
     (π : S → ℝ) : likelihood obs (node P l Q r) π = likelihood obs (node Q r P l) π := by
   simp only [likelihood_eq_sum_prune, prune, mul_comm (∑ a, P _ a * prune obs l a)]
@@ -187,7 +187,7 @@ theorem likelihood_reroot {π : S → ℝ} {P : ℝ → S → S → ℝ} (hP : I
     (fun x => (∑ z, P b x z * prune obs B z) * ∑ c, P (s₁ + s₂) x c * prune obs C c) a]
   exact Finset.sum_congr rfl fun x _ => by ring
 
-/-- **Reversible continuous-time models give reversible semigroups.** A reversible continuous-time model gives a reversible semigroup: if `π` is in detailed
+/-- A reversible continuous-time model gives a reversible semigroup: if `π` is in detailed
 balance with the generator `Q`, the transition functions `exp (t • Q)` form a reversible
 semigroup for `π`. -/
 theorem isReversibleSemigroup_ctmcTransition [DecidableEq S] {π : S → ℝ} {Q : Matrix S S ℝ}
@@ -205,7 +205,7 @@ section LogDet
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
-/-- **LogDet (paralinear) distance.** The **LogDet (paralinear) distance** of a joint distribution matrix `F`
+/-- The **LogDet (paralinear) distance** of a joint distribution matrix `F`
 (`F i j = ℙ(X = i, Y = j)`): `-log |det F| + (log det Π_X + log det Π_Y) / 2`, where the
 diagonal marginal matrices have determinants `∏ i, ∑ j, F i j` and `∏ j, ∑ i, F i j`. It is a
 distance only when `det F ≠ 0` and the marginals are positive; otherwise the value is Lean's
@@ -213,7 +213,7 @@ totalized logarithm (`log 0 = 0`). -/
 noncomputable def paralinear (F : Matrix ι ι ℝ) : ℝ :=
   -Real.log |F.det| + (Real.log (∏ i, ∑ j, F i j) + Real.log (∏ j, ∑ i, F i j)) / 2
 
-/-- **LogDet distance of a vertex to itself is zero.** The distance of a vertex to itself is `0`: the joint distribution of `X` with itself is the
+/-- The distance of a vertex to itself is `0`: the joint distribution of `X` with itself is the
 diagonal matrix of its (positive) marginal. -/
 theorem paralinear_diagonal {p : ι → ℝ} (hp : ∀ i, 0 < p i) : paralinear (diagonal p) = 0 := by
   have hpr : 0 < ∏ i, p i := Finset.prod_pos fun i _ => hp i
@@ -241,7 +241,7 @@ private lemma log_abs_mul {a b : ℝ} (ha : a ≠ 0) (hb : b ≠ 0) :
     Real.log |a * b| = Real.log |a| + Real.log |b| := by
   rw [abs_mul, Real.log_mul (abs_ne_zero.mpr ha) (abs_ne_zero.mpr hb)]
 
-/-- **Nonsingular transition matrices preserve positive distributions.** Under a nonnegative, nonsingular transition matrix, a positive distribution stays positive:
+/-- Under a nonnegative, nonsingular transition matrix, a positive distribution stays positive:
 every column of `M` has a positive entry. This puts the LogDet logarithms in their domain. -/
 theorem vecMul_pos {p : ι → ℝ} (hp : ∀ i, 0 < p i) {M : Matrix ι ι ℝ} (hM : ∀ i j, 0 ≤ M i j)
     (hdet : M.det ≠ 0) (j : ι) : 0 < (p ᵥ* M) j := by
@@ -312,7 +312,7 @@ theorem paralinear_chain_step {p : ι → ℝ} (hp : ∀ i, 0 < p i) {A B : Matr
     log_abs_mul hpr.ne' hAdet, log_abs_mul hqr.ne' hBdet, abs_of_pos hqr]
   ring
 
-/-- **Product of transition matrices along a path.** The product `M 0 * M 1 * ⋯ * M (n - 1)` of the transition matrices along the first `n`
+/-- The product `M 0 * M 1 * ⋯ * M (n - 1)` of the transition matrices along the first `n`
 edges of a path. -/
 def pathProd (M : ℕ → Matrix ι ι ℝ) : ℕ → Matrix ι ι ℝ
   | 0 => 1
@@ -394,12 +394,12 @@ end Sites
 
 section Zone
 
-/-- **Symmetric two-state model on a branch.** The **symmetric two-state model** on one branch: the state changes with probability `p`.
+/-- The **symmetric two-state model** on one branch: the state changes with probability `p`.
 As a model, `0 ≤ p ≤ 1/2`. -/
 def twoState (p : ℝ) (a b : Bool) : ℝ :=
   if a = b then 1 - p else p
 
-/-- **Four-taxon quartet tree model.** The quartet `((A, B), (C, D))` on the taxa `0 = A`, `1 = B`, `2 = C`, `3 = D`, with change
+/-- The quartet `((A, B), (C, D))` on the taxa `0 = A`, `1 = B`, `2 = C`, `3 = D`, with change
 probabilities `pA, pB, pC, pD` on the pendant edges and `pI` on the internal edge. The root
 sits at the `AB` end of the internal edge (the edge to the `AB` cherry vertex has change
 probability `0`); by the pulley principle its position does not matter. -/
@@ -407,11 +407,11 @@ def quartet (pA pB pC pD pI : ℝ) : Tree (Fin 4) Bool ℝ :=
   node (twoState 0) (node (twoState pA) (leaf 0) (twoState pB) (leaf 1)) (twoState pI)
     (node (twoState pC) (leaf 2) (twoState pD) (leaf 3))
 
-/-- **Leaf weights of a site pattern.** The leaf weights of a site pattern `σ`: the indicator of the observed state. -/
+/-- The leaf weights of a site pattern `σ`: the indicator of the observed state. -/
 def siteObs (σ : Fin 4 → Bool) (l : Fin 4) (s : Bool) : ℝ :=
   if s = σ l then 1 else 0
 
-/-- **Probability of a site pattern on a quartet.** The probability of the site pattern `σ` on the quartet, with the uniform root distribution
+/-- The probability of the site pattern `σ` on the quartet, with the uniform root distribution
 (the stationary distribution of the symmetric model). -/
 noncomputable def patternProb (pA pB pC pD pI : ℝ) (σ : Fin 4 → Bool) : ℝ :=
   likelihood (siteObs σ) (quartet pA pB pC pD pI) (fun _ => 1 / 2)
@@ -436,14 +436,14 @@ private lemma patternProb_eq (pA pB pC pD pI : ℝ) (σ : Fin 4 → Bool) :
   simp
   ring
 
-/-- **Site pattern probabilities sum to one.** The pattern probabilities sum to `1`, for all parameters. -/
+/-- The pattern probabilities sum to `1`, for all parameters. -/
 theorem sum_patternProb (pA pB pC pD pI : ℝ) :
     ∑ σ, patternProb pA pB pC pD pI σ = 1 := by
   simp only [sum_fun_four, patternProb_eq, Fintype.sum_bool, twoState, siteObs]
   simp
   ring
 
-/-- **Nonnegativity of site pattern probabilities.** The pattern probabilities are nonnegative for change probabilities in `[0, 1]`. -/
+/-- The pattern probabilities are nonnegative for change probabilities in `[0, 1]`. -/
 theorem patternProb_nonneg {pA pB pC pD pI : ℝ} (hA : pA ∈ Set.Icc 0 1) (hB : pB ∈ Set.Icc 0 1)
     (hC : pC ∈ Set.Icc 0 1) (hD : pD ∈ Set.Icc 0 1) (hI : pI ∈ Set.Icc 0 1)
     (σ : Fin 4 → Bool) : 0 ≤ patternProb pA pB pC pD pI σ := by
@@ -460,7 +460,7 @@ theorem patternProb_nonneg {pA pB pC pD pI : ℝ} (hA : pA ∈ Set.Icc 0 1) (hB 
     (mul_nonneg (hs hA u 0) (hs hB u 1)) (Finset.sum_nonneg fun v _ => ?_))
   exact mul_nonneg (ht hI u v) (mul_nonneg (hs hC v 2) (hs hD v 3))
 
-/-- **Site pattern supporting a split.** The site pattern `σ` **supports the split** `{a, b} | {c, d}`: `a, b` agree, `c, d` agree,
+/-- The site pattern `σ` **supports the split** `{a, b} | {c, d}`: `a, b` agree, `c, d` agree,
 and the two pairs differ (a parsimony-informative pattern for that split). -/
 def Supports (σ : Fin 4 → Bool) (a b c d : Fin 4) : Prop :=
   σ a = σ b ∧ σ c = σ d ∧ σ a ≠ σ c
@@ -468,7 +468,7 @@ def Supports (σ : Fin 4 → Bool) (a b c d : Fin 4) : Prop :=
 instance (σ : Fin 4 → Bool) (a b c d : Fin 4) : Decidable (Supports σ a b c d) :=
   inferInstanceAs (Decidable (_ ∧ _ ∧ _))
 
-/-- **Expected frequency of patterns supporting a split.** The expected frequency of the patterns supporting the split `{a, b} | {c, d}`. -/
+/-- The expected frequency of the patterns supporting the split `{a, b} | {c, d}`. -/
 noncomputable def splitFreq (pA pB pC pD pI : ℝ) (a b c d : Fin 4) : ℝ :=
   ∑ σ, if Supports σ a b c d then patternProb pA pB pC pD pI σ else 0
 
@@ -485,7 +485,7 @@ theorem splitFreq_wrong_sub_true (P Q : ℝ) :
   simp
   ring
 
-/-- **Wrong split against third split frequency difference.** The wrong split `AC | BD` against the third split `AD | BC`: the difference of expected
+/-- The wrong split `AC | BD` against the third split `AD | BC`: the difference of expected
 frequencies is `(1 - 2 Q) (P - Q) ^ 2`. -/
 theorem splitFreq_wrong_sub_third (P Q : ℝ) :
     splitFreq P Q P Q Q 0 2 1 3 - splitFreq P Q P Q Q 0 3 1 2 = (1 - 2 * Q) * (P - Q) ^ 2 := by
@@ -494,7 +494,7 @@ theorem splitFreq_wrong_sub_third (P Q : ℝ) :
   simp
   ring
 
-/-- **True split against third split frequency difference.** The true split `AB | CD` against the third split `AD | BC`: the difference of expected
+/-- The true split `AB | CD` against the third split `AD | BC`: the difference of expected
 frequencies is `Q (1 - 2 Q) (1 - 2 P)`. -/
 theorem splitFreq_true_sub_third (P Q : ℝ) :
     splitFreq P Q P Q Q 0 1 2 3 - splitFreq P Q P Q Q 0 3 1 2 =
@@ -506,17 +506,17 @@ theorem splitFreq_true_sub_third (P Q : ℝ) :
 
 open Parsimony
 
-/-- **Rooted quartet with unit costs.** The rooted quartet `((a, b), (c, d))` with unit costs, for Fitch's algorithm. -/
+/-- The rooted quartet `((a, b), (c, d))` with unit costs, for Fitch's algorithm. -/
 def quartetShape (a b c d : Fin 4) : Tree (Fin 4) Bool Parsimony.Cost :=
   node unitCost (node unitCost (leaf a) unitCost (leaf b)) unitCost
     (node unitCost (leaf c) unitCost (leaf d))
 
-/-- **Fitch parsimony score on a quartet.** The Fitch parsimony score of the site pattern `σ` on the quartet `((a, b), (c, d))`; it is
+/-- The Fitch parsimony score of the site pattern `σ` on the quartet `((a, b), (c, d))`; it is
 the small-parsimony score by `Parsimony.fitch_score_eq`. -/
 def parsimonyScore (a b c d : Fin 4) (σ : Fin 4 → Bool) : ℕ :=
   (fitch σ (quartetShape a b c d)).2
 
-/-- **Difference of parsimony scores of two quartets.** On four taxa, the parsimony scores of two quartets differ only on informative patterns: the
+/-- On four taxa, the parsimony scores of two quartets differ only on informative patterns: the
 score on `AB | CD` minus the score on `AC | BD` is `1` on patterns supporting `AC | BD`, `-1` on
 patterns supporting `AB | CD`, and `0` otherwise; likewise for `AD | BC`. -/
 theorem parsimonyScore_sub (σ : Fin 4 → Bool) :
@@ -527,7 +527,7 @@ theorem parsimonyScore_sub (σ : Fin 4 → Bool) :
   revert σ
   decide
 
-/-- **Expected Fitch parsimony score on a quartet.** The expected Fitch parsimony score of one site on the quartet `((a, b), (c, d))`. -/
+/-- The expected Fitch parsimony score of one site on the quartet `((a, b), (c, d))`. -/
 noncomputable def expectedScore (pA pB pC pD pI : ℝ) (a b c d : Fin 4) : ℝ :=
   ∑ σ, patternProb pA pB pC pD pI σ * parsimonyScore a b c d σ
 
@@ -609,7 +609,7 @@ section NJ
 
 open MathlibExt.Biology.Phylogenetics.JukesCantor NeighborJoining
 
-/-- **Jukes–Cantor transition matrix along a path.** The JC transition matrix along a path whose branch lengths are listed in `ts`: the product
+/-- The JC transition matrix along a path whose branch lengths are listed in `ts`: the product
 of the branch transition matrices `jcProb μ t`. -/
 noncomputable def jcPath (μ : ℝ) : List ℝ → Matrix (Fin 4) (Fin 4) ℝ
   | [] => 1
@@ -634,17 +634,17 @@ theorem jcDistance_jcPath (μ : ℝ) (ts : List ℝ) (i : Fin 4) :
   rw [jcPath_eq]
   exact jcDistance_pDiff μ ts.sum i
 
-/-- **Empirical p-distance.** The empirical p-distance of the taxa `x, y` over the first `n` sites of the alignment
+/-- The empirical p-distance of the taxa `x, y` over the first `n` sites of the alignment
 `seq` (`seq i x` is the base of taxon `x` at site `i`): the proportion of sites where they
 differ. -/
 noncomputable def pHat {X : Type*} (seq : ℕ → X → Fin 4) (n : ℕ) (x y : X) : ℝ :=
   (n : ℝ)⁻¹ * ∑ i ∈ range n, if seq i x = seq i y then 0 else 1
 
-/-- **Jukes–Cantor corrected empirical distance.** The JC-corrected empirical distance `jcDistance (pHat seq n x y)`. -/
+/-- The JC-corrected empirical distance `jcDistance (pHat seq n x y)`. -/
 noncomputable def jcHat {X : Type*} (seq : ℕ → X → Fin 4) (n : ℕ) (x y : X) : ℝ :=
   jcDistance (pHat seq n x y)
 
-/-- **Neighbor joining recovers a tree within a radius.** Neighbor joining **recovers the tree within radius `r`** of the dissimilarity `d`: every
+/-- Neighbor joining **recovers the tree within radius `r`** of the dissimilarity `d`: every
 complete run of neighbor joining on a symmetric dissimilarity `D` with zero diagonal and
 `|D x y - d x y| < r` for distinct taxa forms exactly the splits of the internal edges of
 `(G, ι)`. Atteson's theorem gives this for the path-length metric of a binary phylogenetic tree

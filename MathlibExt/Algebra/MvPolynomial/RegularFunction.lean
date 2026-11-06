@@ -40,22 +40,17 @@ variable {k : Type*} [CommSemiring k]
 variable {σ τ ι κ : Type*}
 
 variable (k σ τ) in
-/-- **Regular functions.** For a commutative semiring $k$ and index types $\sigma$ and $\tau$, a
-regular function from $k^\sigma$ to $k^\tau$ is a family $F = (F_t)_{t \in \tau}$ of polynomials
-in the variables $X_s$, $s \in \sigma$, with coefficients in $k$.
-
-The components are formal polynomials, not functions on $k^\sigma$. -/
+/-- The type of regular functions from $k^σ$ to $k^τ$. -/
 abbrev RegularFunction := τ → MvPolynomial σ k
 
 namespace RegularFunction
 
-/-- **Jacobian matrix of a regular function.** The Jacobian of a regular function
-$F = (F_j)_{j \in \tau}$ from $k^\sigma$ to $k^\tau$ is the $\tau \times \sigma$ matrix, with
-entries in the polynomial ring $k[X_i : i \in \sigma]$, whose entry in row $j$ and column $i$ is
-the formal partial derivative $\partial F_j / \partial X_i$.
+/-- The Jacobian of a vector valued polynomial function, viewed as a polynomial.
 
-Rows are indexed by the components and columns by the variables, following the usual matrix
-convention, so the Jacobian multiplies column vectors indexed by $\sigma$. -/
+The matrix is indexed as codomain by domain, following Mathlib's matrix
+convention: entry `(j, i)` is the partial derivative of the `j`-th component
+with respect to the `i`-th variable, so the Jacobian supports `Matrix.mulVec`
+and the standard chain-rule multiplication order. -/
 noncomputable def Jacobian (F : RegularFunction k σ τ) :
     Matrix τ σ (MvPolynomial σ k) :=
   Matrix.of fun j i => MvPolynomial.pderiv i (F j)
@@ -65,10 +60,7 @@ lemma Jacobian_apply (F : RegularFunction k σ τ) (j : τ) (i : σ) :
     F.Jacobian j i = MvPolynomial.pderiv i (F j) :=
   rfl
 
-/-- **Composition of regular functions.** For regular functions $G$ from $k^\tau$ to $k^\iota$
-and $F$ from $k^\sigma$ to $k^\tau$, the composition $G \circ F$ is the regular function from
-$k^\sigma$ to $k^\iota$ whose $i$-th component, for $i \in \iota$, is the polynomial obtained
-from $G_i$ by substituting $F_t$ for the variable $X_t$ for every $t \in \tau$. -/
+/-- The composition of two vector valued polynomial functions. -/
 noncomputable def comp
     (G : RegularFunction k τ ι) (F : RegularFunction k σ τ) :
     RegularFunction k σ ι :=
@@ -86,18 +78,12 @@ lemma comp_apply (G : RegularFunction k τ ι) (F : RegularFunction k σ τ) (i 
 lemma id_apply (i : σ) : id k σ i = MvPolynomial.X i :=
   rfl
 
-/-- **The identity is a left unit for composition.** For every regular function $F$ from
-$k^\sigma$ to $k^\tau$, composing the identity regular function on $k^\tau$, whose components
-are the variables $X_t$ for $t \in \tau$, with $F$ gives $F$, that is,
-$\mathrm{id} \circ F = F$. -/
+/-- Composing with the identity on the left is the identity. -/
 lemma id_comp (F : RegularFunction k σ τ) : (id k τ).comp F = F := by
   funext j
   simp
 
-/-- **The identity is a right unit for composition.** For every regular function $F$ from
-$k^\sigma$ to $k^\tau$, composing $F$ with the identity regular function on $k^\sigma$, whose
-components are the variables $X_s$ for $s \in \sigma$, gives $F$, that is,
-$F \circ \mathrm{id} = F$. -/
+/-- Composing with the identity on the right is the identity. -/
 lemma comp_id (F : RegularFunction k σ τ) : F.comp (id k σ) = F := by
   funext j
   simp only [comp_apply]
@@ -106,9 +92,7 @@ lemma comp_id (F : RegularFunction k σ τ) : F.comp (id k σ) = F := by
   rw [hid, MvPolynomial.bind₁_X_left]
   rfl
 
-/-- **Associativity of composition of regular functions.** For regular functions $H$ from
-$k^\iota$ to $k^\kappa$, $G$ from $k^\tau$ to $k^\iota$ and $F$ from $k^\sigma$ to $k^\tau$,
-we have $(H \circ G) \circ F = H \circ (G \circ F)$. -/
+/-- Composition of regular functions is associative. -/
 lemma comp_assoc (H : RegularFunction k ι κ) (G : RegularFunction k τ ι)
     (F : RegularFunction k σ τ) :
     (H.comp G).comp F = H.comp (G.comp F) := by
@@ -116,20 +100,13 @@ lemma comp_assoc (H : RegularFunction k ι κ) (G : RegularFunction k τ ι)
   simp only [comp_apply]
   exact MvPolynomial.bind₁_bind₁ G F (H i)
 
-/-- **Evaluation of a regular function at a point.** Let $k$ be a commutative semiring and let
-$S$ be a commutative $k$-algebra. For a regular function $F$ from $k^\sigma$ to $k^\tau$ and a
-point $a \in S^\sigma$, the evaluation of $F$ at $a$ is the point $F(a) \in S^\tau$ whose $t$-th
-coordinate, for $t \in \tau$, is the value of the polynomial $F_t$ at $a$, obtained by
-substituting $a_s$ for $X_s$ for every $s \in \sigma$. -/
+/-- The evaluation of a regular function `f` over `k` at some point `a`
+with coordinates in some algebra over `k`. -/
 noncomputable def aeval {σ τ : Type*} {S₁ : Type*} [CommSemiring S₁] [Algebra k S₁]
     (F : RegularFunction k σ τ) : (σ → S₁) → τ → S₁ :=
   fun a t ↦ MvPolynomial.aeval a (F t)
 
-/-- **Evaluation respects composition.** Let $k$ be a commutative semiring and let $S$ be a
-commutative $k$-algebra. For regular functions $G$ from $k^\tau$ to $k^\iota$ and $F$ from
-$k^\sigma$ to $k^\tau$ and every point $a \in S^\sigma$, write $F(a) \in S^\tau$ for the
-evaluation of $F$ at $a$. Then evaluating the composition $G \circ F$ at $a$ gives $G(F(a))$,
-the evaluation of $G$ at the point $F(a)$. -/
+/-- `aeval` is compatible with composition of regular functions. -/
 lemma comp_aeval
     {σ τ ι S₁ : Type*} [CommSemiring S₁] [Algebra k S₁]
     (G : RegularFunction k τ ι) (F : RegularFunction k σ τ)

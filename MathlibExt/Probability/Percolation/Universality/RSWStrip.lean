@@ -99,7 +99,7 @@ theorem sqrt_trick_max_real {a b s : ℝ} (ha1 : a ≤ 1) (hb1 : b ≤ 1)
     rw [Real.sqrt_sq h1a] at hsq
     rw [max_eq_left hba]; linarith
 
-/-- **Square-root trick.** The **square-root trick**: for a positively associated probability measure and increasing
+/-- The **square-root trick**: for a positively associated probability measure and increasing
 measurable `A`, `B`, `1 - √(1 - μ(A ∪ B)) ≤ max(μ(A), μ(B))`. -/
 theorem rsw_sqrt_trick {E : Type*} (μ : Measure (ConfigSpace E))
     [IsProbabilityMeasure μ] (hpa : PositivelyAssociated μ)
@@ -139,12 +139,12 @@ theorem hv_glue {ω : ConfigSpace (Sym2 (Site 2))} {a m m' b c d : ℤ}
   have e2 := Lattice.connectedWithin_mono_set ω hsubR hc2
   exact (e1.trans eV).trans e2
 
-/-- **Open connection inside an overlap rectangle.** An open path inside the overlap `rect m m' c d` from `p` to `q`. -/
+/-- An open path inside the overlap `rect m m' c d` from `p` to `q`. -/
 def OverlapConnection (ω : ConfigSpace (Sym2 (Site 2))) (m m' c d : ℤ)
     (p q : Site 2) (hp : p ∈ rect m m' c d) (hq : q ∈ rect m m' c d) : Prop :=
   ConnectedWithin 2 ω (rect m m' c d) ⟨p, hp⟩ ⟨q, hq⟩
 
-/-- **Connection event inside an overlap rectangle.** The event `OverlapConnection`. -/
+/-- The event `OverlapConnection`. -/
 def overlapConnectionEvent (m m' c d : ℤ) (p q : Site 2)
     (hp : p ∈ rect m m' c d) (hq : q ∈ rect m m' c d) :
     Set (ConfigSpace (Sym2 (Site 2))) :=
@@ -156,7 +156,7 @@ theorem overlapConnectionEvent_isIncreasing (m m' c d : ℤ) (p q : Site 2)
   intro ω ω' hωω' hω
   exact StatMech.TwoDim.connectedWithin_mono hωω' hω
 
-/-- **Measurability of the overlap connection event.** A connection event inside a rectangular overlap is measurable. -/
+/-- A connection event inside a rectangular overlap is measurable. -/
 theorem measurableSet_overlapConnectionEvent (m m' c d : ℤ) (p q : Site 2)
     (hp : p ∈ rect m m' c d) (hq : q ∈ rect m m' c d) :
     MeasurableSet (overlapConnectionEvent m m' c d p q hp hq) :=
@@ -204,7 +204,7 @@ theorem rsw_strip_glue (μ : Measure (ConfigSpace (Sym2 (Site 2))))
     _ ≤ μ.real (A ∩ B ∩ C) := h2
     _ ≤ μ.real (horizontalCrossingEvent a b c d) := measureReal_mono hsub
 
-/-- **Gluing horizontal crossings through a vertical overlap crossing.** For the configuration `ω`: horizontal crossings of `[a, m'] × [c, d]` and of `[m, b] × [c, d]`
+/-- For the configuration `ω`: horizontal crossings of `[a, m'] × [c, d]` and of `[m, b] × [c, d]`
 together with a vertical crossing of the overlap `[m, m'] × [c, d]` imply a horizontal crossing
 of `[a, b] × [c, d]`. -/
 def HVIntersectionProperty (ω : ConfigSpace (Sym2 (Site 2))) (a m m' b c d : ℤ) : Prop :=

@@ -70,33 +70,33 @@ open scoped _root_.lp _root_.InnerProduct _root_.InnerProductSpace ENNReal
 
 variable {𝕜 : Type*} [RCLike 𝕜]
 
-/-- **Uniformly bounded fibers of a map on the naturals.** The fibers of `ψ` are finite and uniformly bounded by `M`: every value
+/-- The fibers of `ψ` are finite and uniformly bounded by `M`: every value
 is taken at most `M` times. This is the boundedness hypothesis for the
 composition operator. -/
 def HasBoundedFibers (ψ : ℕ → ℕ) (M : ℕ) : Prop :=
   ∀ m, (ψ ⁻¹' {m}).Finite ∧ (ψ ⁻¹' {m}).ncard ≤ M
 
-/-- **Fiber cardinality of a map.** The number of preimages of `m` under `ψ`, defined for a finite fiber. -/
+/-- The number of preimages of `m` under `ψ`, defined for a finite fiber. -/
 noncomputable def fiberCard (ψ : ℕ → ℕ) (m : ℕ) (hfin : (ψ ⁻¹' {m}).Finite) : ℕ :=
   hfin.toFinset.card
 
-/-- **Fiber count agrees with set cardinality.** On its finite domain, the fiber count agrees with the standard natural cardinality. -/
+/-- On its finite domain, the fiber count agrees with the standard natural cardinality. -/
 @[simp] theorem fiberCard_eq_ncard (ψ : ℕ → ℕ) (m : ℕ) (hfin : (ψ ⁻¹' {m}).Finite) :
     fiberCard ψ m hfin = (ψ ⁻¹' {m}).ncard :=
   (Set.ncard_eq_toFinset_card _ hfin).symm
 
-/-- **Supremum of the fiber counts of a map.** The real supremum of the fiber counts of `ψ`, defined for uniformly bounded finite
+/-- The real supremum of the fiber counts of `ψ`, defined for uniformly bounded finite
 fibers. The bound in `hψ` ensures that the real-valued family is bounded above. -/
 noncomputable def fiberSup (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M) : ℝ :=
   ⨆ m, (fiberCard ψ m (hψ m).1 : ℝ)
 
-/-- **Fiber supremum as a supremum of cardinalities.** On its bounded finite domain, the fiber supremum agrees with the supremum of natural
+/-- On its bounded finite domain, the fiber supremum agrees with the supremum of natural
 cardinalities. Its value is independent of the chosen bound and evidence. -/
 theorem fiberSup_eq_iSup (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M) :
     fiberSup ψ hψ = ⨆ m, ((ψ ⁻¹' {m}).ncard : ℝ) := by
   simp only [fiberSup, fiberCard_eq_ncard]
 
-/-- **Precomposition of a sequence with a map.** The composition function: precompose a sequence with `ψ`. -/
+/-- The composition function: precompose a sequence with `ψ`. -/
 def compFun (ψ : ℕ → ℕ) (x : ℕ → 𝕜) (n : ℕ) : 𝕜 := x (ψ n)
 
 /-- The key estimate, at the level of finite partial sums: regrouping the
@@ -139,7 +139,7 @@ private theorem sum_finset_compFun_norm_sq_le (ψ : ℕ → ℕ)
         apply mul_le_mul_of_nonneg_left _ hB0
         exact hsum.sum_le_tsum _ (fun i _ => Real.rpow_nonneg (norm_nonneg _) _)
 
-/-- **Precomposition preserves square-summability.** The composed sequence of an `ℓ²` sequence is in `ℓ²`, under the bounded
+/-- The composed sequence of an `ℓ²` sequence is in `ℓ²`, under the bounded
 fibers hypothesis. -/
 theorem memℓp_compFun (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M)
     (x : ℓ²(ℕ, 𝕜)) : Memℓp (compFun ψ (x : ℕ → 𝕜)) 2 := by
@@ -152,7 +152,7 @@ theorem memℓp_compFun (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ 
   exact sum_finset_compFun_norm_sq_le ψ (fun m => (hψ m).1)
     (fun m => Nat.cast_le.mpr (hψ m).2) x s
 
-/-- **Squared-norm sum bound for a precomposed sequence.** The squared-norm sum of the composed sequence is at most `fiberSup ψ hψ`
+/-- The squared-norm sum of the composed sequence is at most `fiberSup ψ hψ`
 times the squared-norm sum of the original sequence. -/
 theorem tsum_compFun_norm_sq_le (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M)
     (x : ℓ²(ℕ, 𝕜)) :
@@ -166,7 +166,7 @@ theorem tsum_compFun_norm_sq_le (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFi
   exact Real.tsum_le_of_sum_le (fun n => Real.rpow_nonneg (norm_nonneg _) _)
     (fun s => sum_finset_compFun_norm_sq_le ψ (fun m => (hψ m).1) hB x s)
 
-/-- **Composition operator as a linear map.** The composition operator as a linear map. -/
+/-- The composition operator as a linear map. -/
 noncomputable def compLinMap (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M) :
     ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜) where
   toFun x := ⟨compFun ψ (x : ℕ → 𝕜), memℓp_compFun ψ hψ x⟩
@@ -179,12 +179,12 @@ noncomputable def compLinMap (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFiber
     funext i
     simp only [compFun, lp.coeFn_smul, Pi.smul_apply, smul_eq_mul, RingHom.id_apply]
 
-/-- **Pointwise action of the composition linear map.** Pointwise action of the composition linear map. -/
+/-- Pointwise action of the composition linear map. -/
 theorem compLinMap_apply (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M)
     (x : ℓ²(ℕ, 𝕜)) (i : ℕ) : compLinMap ψ hψ x i = (x : ℕ → 𝕜) (ψ i) :=
   rfl
 
-/-- **Squared-norm bound for the composition linear map.** The squared norm of `C_ψ x` is at most `fiberSup ψ hψ * ‖x‖²`. -/
+/-- The squared norm of `C_ψ x` is at most `fiberSup ψ hψ * ‖x‖²`. -/
 theorem norm_sq_compLinMap_apply_le (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M)
     (x : ℓ²(ℕ, 𝕜)) :
     ‖compLinMap ψ hψ x‖ ^ (2 : ℝ) ≤ fiberSup ψ hψ * ‖x‖ ^ (2 : ℝ) := by
@@ -205,14 +205,14 @@ theorem norm_sq_compLinMap_apply_le (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBound
   rw [htsum_c, ← htsum_x]
   exact tsum_compFun_norm_sq_le ψ hψ x
 
-/-- **Fiber supremum is nonnegative.** `fiberSup ψ hψ` is nonnegative. -/
+/-- `fiberSup ψ hψ` is nonnegative. -/
 theorem fiberSup_nonneg (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M) :
     0 ≤ fiberSup ψ hψ := by
   rw [fiberSup_eq_iSup]
   exact le_trans (Nat.cast_nonneg _)
     (le_ciSup ⟨(M : ℝ), fun _ ⟨k, hk⟩ => hk ▸ Nat.cast_le.mpr (hψ k).2⟩ 0)
 
-/-- **Norm bound for the composition linear map.** The composition operator is bounded by `√(fiberSup ψ hψ)`. -/
+/-- The composition operator is bounded by `√(fiberSup ψ hψ)`. -/
 theorem norm_compLinMap_apply_le (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M)
     (x : ℓ²(ℕ, 𝕜)) :
     ‖compLinMap ψ hψ x‖ ≤ Real.sqrt (fiberSup ψ hψ) * ‖x‖ := by
@@ -225,24 +225,24 @@ theorem norm_compLinMap_apply_le (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedF
     _ = Real.sqrt (fiberSup ψ hψ) * ‖x‖ := by
         rw [Real.sqrt_mul hS, Real.sqrt_sq (norm_nonneg _)]
 
-/-- **Bounded composition operator on $\ell^2$.** The composition operator as a bounded operator on `ℓ²(ℕ, 𝕜)`. -/
+/-- The composition operator as a bounded operator on `ℓ²(ℕ, 𝕜)`. -/
 noncomputable def compCLM (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M) :
     ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜) :=
   (compLinMap ψ hψ).mkContinuous (Real.sqrt (fiberSup ψ hψ))
     (norm_compLinMap_apply_le ψ hψ)
 
-/-- **Pointwise action of the bounded composition operator.** Pointwise action of the composition operator. -/
+/-- Pointwise action of the composition operator. -/
 theorem compCLM_apply (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M)
     (x : ℓ²(ℕ, 𝕜)) (i : ℕ) : compCLM (𝕜 := 𝕜) ψ hψ x i = (x : ℕ → 𝕜) (ψ i) :=
   rfl
 
-/-- **Vectorwise norm bound for the composition operator.** The composition operator is bounded by `√(fiberSup ψ hψ)` on every vector. -/
+/-- The composition operator is bounded by `√(fiberSup ψ hψ)` on every vector. -/
 theorem norm_compCLM_apply_le (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M)
     (x : ℓ²(ℕ, 𝕜)) :
     ‖compCLM (𝕜 := 𝕜) ψ hψ x‖ ≤ Real.sqrt (fiberSup ψ hψ) * ‖x‖ :=
   norm_compLinMap_apply_le ψ hψ x
 
-/-- **Operator-norm bound for the composition operator.** The operator norm of `C_ψ` is at most `√(fiberSup ψ hψ)`. -/
+/-- The operator norm of `C_ψ` is at most `√(fiberSup ψ hψ)`. -/
 theorem norm_compCLM_le (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M) :
     ‖compCLM (𝕜 := 𝕜) ψ hψ‖ ≤ Real.sqrt (fiberSup ψ hψ) := by
   show ‖(compLinMap ψ hψ).mkContinuous (Real.sqrt (fiberSup ψ hψ))
@@ -250,7 +250,7 @@ theorem norm_compCLM_le (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ 
   exact LinearMap.mkContinuous_norm_le _ (Real.sqrt_nonneg _)
     (norm_compLinMap_apply_le ψ hψ)
 
-/-- **Norm of the composition operator on a basis vector.** The norm of `C_ψ` applied to a standard basis vector is the square root
+/-- The norm of `C_ψ` applied to a standard basis vector is the square root
 of the corresponding fiber count. -/
 theorem norm_compCLM_single (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M) (m : ℕ) :
     ‖compCLM (𝕜 := 𝕜) ψ hψ (lp.single 2 m (1 : 𝕜))‖ =
@@ -292,7 +292,7 @@ theorem norm_compCLM_single (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers
   rw [Real.rpow_two] at htsum
   rw [← htsum, Real.sqrt_sq (norm_nonneg _)]
 
-/-- **Operator norm of a composition operator.** The operator norm of the composition operator:
+/-- The operator norm of the composition operator:
 `‖C_ψ‖ = √(fiberSup ψ hψ)`, the square root of the largest fiber count. -/
 theorem norm_compCLM (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M) :
     ‖compCLM (𝕜 := 𝕜) ψ hψ‖ = Real.sqrt (fiberSup ψ hψ) := by
@@ -321,7 +321,7 @@ theorem norm_compCLM (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M) 
         Real.sqrt_le_sqrt hle
     _ = ‖compCLM (𝕜 := 𝕜) ψ hψ‖ := Real.sqrt_sq hnn
 
-/-- **Adjoint of a composition operator is the fiber-sum operator.** The adjoint of the composition operator is the fiber-sum operator:
+/-- The adjoint of the composition operator is the fiber-sum operator:
 `((C_ψ)† y) m` is the sum of `y` over the fiber of `m`. -/
 theorem adjoint_compCLM_apply (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M)
     (y : ℓ²(ℕ, 𝕜)) (m : ℕ) :
@@ -360,7 +360,7 @@ theorem adjoint_compCLM_apply (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibe
   rw [h1] at h2
   exact h2
 
-/-- **Bounded fibers are preserved under composition.** Fiber bounds compose: the fibers of `ψ ∘ φ` are bounded by the product
+/-- Fiber bounds compose: the fibers of `ψ ∘ φ` are bounded by the product
 of the bounds. -/
 theorem hasBoundedFibers_comp {φ ψ : ℕ → ℕ} {Mφ Mψ : ℕ}
     (hφ : HasBoundedFibers φ Mφ) (hψ : HasBoundedFibers ψ Mψ) :
@@ -413,7 +413,7 @@ theorem hasBoundedFibers_comp {φ ψ : ℕ → ℕ} {Mφ Mψ : ℕ}
           rw [← Set.ncard_eq_toFinset_card _ (hψ m).1]
           exact (hψ m).2
 
-/-- **Composition of composition operators.** Composition of composition operators is composition of symbols in the
+/-- Composition of composition operators is composition of symbols in the
 reversed order: `C_φ ∘L C_ψ = C_{ψ ∘ φ}`. -/
 theorem compCLM_comp {φ ψ : ℕ → ℕ} {Mφ Mψ : ℕ}
     (hφ : HasBoundedFibers φ Mφ) (hψ : HasBoundedFibers ψ Mψ)
@@ -422,17 +422,17 @@ theorem compCLM_comp {φ ψ : ℕ → ℕ} {Mφ Mψ : ℕ}
   ext x n
   simp only [ContinuousLinearMap.comp_apply, compCLM_apply, Function.comp_apply]
 
-/-- **Composition operator of a pointwise identity symbol.** If `ψ` is pointwise the identity, `C_ψ` is the identity operator. -/
+/-- If `ψ` is pointwise the identity, `C_ψ` is the identity operator. -/
 theorem compCLM_eq_of_forall {ψ : ℕ → ℕ} {M : ℕ} (hψ : HasBoundedFibers ψ M)
     (h : ∀ n, ψ n = n) : compCLM (𝕜 := 𝕜) ψ hψ = 1 := by
   ext x n
   simp only [compCLM_apply, one_apply_eq_self, h]
 
-/-- **Composition operator of the identity is the identity.** `C_id` is the identity operator. -/
+/-- `C_id` is the identity operator. -/
 theorem compCLM_id {M : ℕ} (h : HasBoundedFibers id M) : compCLM (𝕜 := 𝕜) id h = 1 :=
   compCLM_eq_of_forall h (fun _ => rfl)
 
-/-- **Injective maps have fibers of size at most one.** An injective symbol has fibers of size at most one. -/
+/-- An injective symbol has fibers of size at most one. -/
 theorem hasBoundedFibers_of_injective {ψ : ℕ → ℕ} (hψ : Function.Injective ψ) :
     HasBoundedFibers ψ 1 := by
   intro m
@@ -448,11 +448,11 @@ theorem hasBoundedFibers_of_injective {ψ : ℕ → ℕ} (hψ : Function.Injecti
       exact hsub ha hb
     exact hle
 
-/-- **Permutations have fibers of size one.** A permutation symbol has fibers of size one. -/
+/-- A permutation symbol has fibers of size one. -/
 theorem hasBoundedFibers_equiv (e : ℕ ≃ ℕ) : HasBoundedFibers e 1 :=
   hasBoundedFibers_of_injective e.injective
 
-/-- **Adjoint of a composition operator with a permutation symbol.** The adjoint of the composition operator for a permutation symbol is the
+/-- The adjoint of the composition operator for a permutation symbol is the
 composition operator of the inverse permutation. -/
 theorem adjoint_compCLM_of_equiv (e : ℕ ≃ ℕ) :
     (compCLM (𝕜 := 𝕜) e (hasBoundedFibers_equiv e))†
@@ -471,7 +471,7 @@ theorem adjoint_compCLM_of_equiv (e : ℕ ≃ ℕ) :
       simp
   rw [hfinset, Finset.sum_singleton]
 
-/-- **Permutation composition operators are unitary.** A permutation symbol gives a unitary composition operator. -/
+/-- A permutation symbol gives a unitary composition operator. -/
 theorem compCLM_mem_unitary (e : ℕ ≃ ℕ) :
     compCLM (𝕜 := 𝕜) e (hasBoundedFibers_equiv e)
       ∈ unitary (ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)) := by
@@ -488,7 +488,7 @@ theorem compCLM_mem_unitary (e : ℕ ≃ ℕ) :
           (hasBoundedFibers_equiv e.symm)),
       compCLM_eq_of_forall _ (show ∀ n, (⇑e.symm ∘ ⇑e) n = n from fun n => Equiv.symm_apply_apply e n)]
 
-/-- **Composition operator is injective iff its symbol is surjective.** `C_ψ` is injective iff `ψ` is surjective: a missing value gives a
+/-- `C_ψ` is injective iff `ψ` is surjective: a missing value gives a
 basis vector in the kernel, and a surjective symbol lets every coordinate
 be read off from the image. -/
 theorem injective_compCLM_iff (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibers ψ M) :
@@ -521,7 +521,7 @@ theorem injective_compCLM_iff (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFibe
     rw [compCLM_apply, compCLM_apply, hn] at h1
     exact h1
 
-/-- **Composition operator is surjective iff its symbol is injective.** `C_ψ` is surjective iff `ψ` is injective: if `ψ a = ψ b` with
+/-- `C_ψ` is surjective iff `ψ` is injective: if `ψ a = ψ b` with
 `a ≠ b`, the `a`-th and `b`-th coordinates of every vector in the range
 agree, so `e_a` is not in the range; if `ψ` is injective, the preimage of
 `y` is obtained by applying the adjoint and reading off the fiber sums. -/
@@ -556,7 +556,7 @@ theorem surjective_compCLM_iff (ψ : ℕ → ℕ) {M : ℕ} (hψ : HasBoundedFib
         simp
     rw [hfinset, Finset.sum_singleton]
 
-/-- **Halving map has fibers of size at most two.** Halving pairs: the map `n ↦ n / 2` has fibers of size at most two. -/
+/-- Halving pairs: the map `n ↦ n / 2` has fibers of size at most two. -/
 theorem hasBoundedFibers_div_two : HasBoundedFibers (fun n => n / 2) 2 := by
   intro m
   have hsub : (fun n => n / 2) ⁻¹' {m} ⊆ {2 * m, 2 * m + 1} := by
@@ -575,7 +575,7 @@ theorem hasBoundedFibers_div_two : HasBoundedFibers (fun n => n / 2) 2 := by
         rw [Set.ncard_singleton] at h2
         exact h2
 
-/-- **Composition operators on $\ell^2$ are never compact.** A composition operator on `ℓ²(ℕ, 𝕜)` is never compact: the images of
+/-- A composition operator on `ℓ²(ℕ, 𝕜)` is never compact: the images of
 the basis vectors indexed by the (necessarily infinite) range of `ψ` are
 pairwise orthogonal and bounded below in norm, so they have no Cauchy
 subsequence. -/

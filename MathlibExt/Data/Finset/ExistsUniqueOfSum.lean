@@ -27,7 +27,7 @@ Copyright 2026 Anthropic, PBC. Licensed under Apache 2.0 (see LICENSE).
 
 namespace Finset
 
-/-- **Unique witnesses transported by finite-sum equality.** If every integer-valued sum over `T` pulls back to the corresponding sum over `s`, then a
+/-- If every integer-valued sum over `T` pulls back to the corresponding sum over `s`, then a
 property with a unique witness in `T` pulls back to a property with a unique witness in `s`. -/
 theorem existsUnique_of_sum_comp {α β : Type*} (s : Finset α) (T : Finset β) (i : α → β)
     (hsum : ∀ F : β → ℤ, ∑ a ∈ s, F (i a) = ∑ b ∈ T, F b)

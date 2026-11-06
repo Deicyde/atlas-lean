@@ -40,7 +40,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Boundary edges of a set of sites in $\mathbb{Z}^2$, as unordered pairs.** The edges of `ℤ²` with exactly one endpoint in `S`, as unordered pairs. -/
+/-- The edges of `ℤ²` with exactly one endpoint in `S`, as unordered pairs. -/
 noncomputable def bdEdgeSet2 (S : Set (Site 2)) : Set (Sym2 (Site 2)) := by
   classical
   exact {e | Sym2.lift ⟨fun x y => (x ∈ S ↔ y ∉ S), by
@@ -54,7 +54,7 @@ noncomputable def bdEdgeSet2 (S : Set (Site 2)) : Set (Sym2 (Site 2)) := by
   rw [Set.mem_ofPred_eq]
   rfl
 
-/-- **Cut lattice of a set of sites.** The square lattice with the boundary edges of `S` deleted. -/
+/-- The square lattice with the boundary edges of `S` deleted. -/
 noncomputable def cutLattice (S : Set (Site 2)) : SimpleGraph (Site 2) :=
   (hypercubicLattice 2).deleteEdges (bdEdgeSet2 S)
 
@@ -112,7 +112,7 @@ theorem cutLattice_reachable_of_connected (o : Site 2) {x : Site 2}
   obtain ⟨w⟩ := (hx : (openSubgraph 2 ω).Reachable o x)
   exact openWalk_to_cutLattice o w (self_mem_cluster ω o)
 
-/-- **Inside region of an open cluster in the cut lattice.** The sites reachable from `o` in the cut lattice of the open cluster of `o`. -/
+/-- The sites reachable from `o` in the cut lattice of the open cluster of `o`. -/
 def insideRegion (ω : ConfigSpace (Sym2 (Site 2))) (o : Site 2) : Set (Site 2) :=
   {x | (cutLattice (cluster 2 ω o)).Reachable o x}
 

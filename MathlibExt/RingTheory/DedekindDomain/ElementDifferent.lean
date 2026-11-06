@@ -69,21 +69,15 @@ variable (A K L : Type*) {B : Type*}
   [Algebra A B] [Algebra B L] [Algebra K L]
 
 open Classical in
-/-- **Element different.** Let $A$ be a commutative ring, $B$ a commutative $A$-algebra, $L$ a
-field that is a $B$-algebra, and $K$ a field with $L$ a $K$-algebra. For $\alpha \in B$, let
-$f \in A[X]$ be the minimal polynomial of $\alpha$ over $A$ (taken to be $0$ when $\alpha$ is not
-integral over $A$). The element different $\delta_{B/A}(\alpha) \in B$ is $f'(\alpha)$ when the
-image of $\alpha$ in $L$ generates $L$ as a $K$-algebra, and $0$ otherwise. -/
+/-- The element different `δ_{B/A}(α)`: `aeval α (derivative (minpoly A α))` when
+`algebraMap B L α` generates `L` over `K`, and `0` otherwise. -/
 noncomputable def elementDifferent (α : B) : B :=
   if Algebra.adjoin K {algebraMap B L α} = ⊤ then
     Polynomial.aeval α (Polynomial.derivative (minpoly A α))
   else 0
 
-/-- **Element different of a generator.** Let $A$ be a commutative ring, $B$ a commutative
-$A$-algebra, $L$ a field that is a $B$-algebra, and $K$ a field with $L$ a $K$-algebra. Let
-$\alpha \in B$ and let $f$ be the minimal polynomial of $\alpha$ over $A$ (taken to be $0$ when
-$\alpha$ is not integral over $A$). If the image of $\alpha$ in $L$ generates $L$ as a
-$K$-algebra, then the element different $\delta_{B/A}(\alpha)$ equals $f'(\alpha)$. -/
+/-- Primitive case: when `algebraMap B L α` generates `L` over `K`, the element
+different is `aeval α (derivative (minpoly A α))`. -/
 @[simp]
 theorem elementDifferent_of_adjoin_eq_top (α : B)
     (hα : Algebra.adjoin K {algebraMap B L α} = ⊤) :
@@ -93,10 +87,8 @@ theorem elementDifferent_of_adjoin_eq_top (α : B)
   unfold elementDifferent
   rw [ite_eq_left hα]
 
-/-- **Element different of a non-generator.** Let $A$ be a commutative ring, $B$ a commutative
-$A$-algebra, $L$ a field that is a $B$-algebra, and $K$ a field with $L$ a $K$-algebra. If
-$\alpha \in B$ and the image of $\alpha$ in $L$ does not generate $L$ as a $K$-algebra, then the
-element different $\delta_{B/A}(\alpha)$ is $0$. -/
+/-- Nonprimitive case: when `algebraMap B L α` does not generate `L` over `K`,
+the element different is `0`. -/
 @[simp]
 theorem elementDifferent_of_adjoin_ne_top (α : B)
     (hα : Algebra.adjoin K {algebraMap B L α} ≠ ⊤) :
@@ -105,12 +97,8 @@ theorem elementDifferent_of_adjoin_ne_top (α : B)
   unfold elementDifferent
   rw [ite_eq_right hα]
 
-/-- **Vanishing of the element different.** Let $A$ be a commutative ring, $B$ a commutative
-$A$-algebra, $L$ a field that is a $B$-algebra, and $K$ a field with $L$ a $K$-algebra. Let
-$\alpha \in B$ and let $f$ be the minimal polynomial of $\alpha$ over $A$ (taken to be $0$ when
-$\alpha$ is not integral over $A$). Then the element different $\delta_{B/A}(\alpha)$ is $0$ if
-and only if the image of $\alpha$ in $L$ does not generate $L$ as a $K$-algebra or
-$f'(\alpha) = 0$. -/
+/-- The element different vanishes iff either `α` is not primitive for `L / K`
+or the derivative of its minimal polynomial evaluates to zero at `α`. -/
 theorem elementDifferent_eq_zero_iff (α : B) :
     elementDifferent A K L α = 0 ↔
       Algebra.adjoin K {algebraMap B L α} ≠ ⊤ ∨
@@ -121,13 +109,8 @@ theorem elementDifferent_eq_zero_iff (α : B) :
   · simp [h]
   · simp [h]
 
-/-- **The element different lies in the different.** Let $A$ be an integrally closed domain with
-fraction field $K$, let $L$ be a finite separable extension of $K$, and let $B$ be the integral
-closure of $A$ in $L$, assumed to be a Dedekind domain with fraction field $L$ that is
-torsion-free as an $A$-module, with compatible algebra maps $A \to K \to L$ and
-$A \to B \to L$. If $\alpha \in B$ and the image of $\alpha$ in $L$ generates $L$ as a
-$K$-algebra, then the element different $\delta_{B/A}(\alpha)$ lies in the different ideal
-$\mathfrak{D}_{B/A}$ of $B$ over $A$. -/
+/-- The element different lies in `differentIdeal A B` in the primitive case,
+by Mathlib's `aeval_derivative_mem_differentIdeal`. -/
 theorem elementDifferent_mem_differentIdeal
     [Algebra A K] [Algebra A L] [IsScalarTower A K L] [IsScalarTower A B L]
     [IsDomain A] [IsFractionRing A K]
@@ -139,15 +122,8 @@ theorem elementDifferent_mem_differentIdeal
   rw [elementDifferent_of_adjoin_eq_top A K L α hα]
   exact aeval_derivative_mem_differentIdeal A K L α hα
 
-/-- **The different of a monogenic extension.** Let $A$ be an integrally closed domain with fraction
-field $K$, let $L$ be a finite separable extension of $K$, and let $B$ be the integral closure of
-$A$ in $L$, assumed to be a Dedekind domain with fraction field $L$ that is torsion-free as an
-$A$-module, with compatible algebra maps $A \to K \to L$ and $A \to B \to L$. If $\alpha \in B$
-generates $B$ as an $A$-algebra, that is $B = A[\alpha]$, and $f$ is the minimal polynomial of
-$\alpha$ over $A$, then the different ideal $\mathfrak{D}_{B/A}$ is the principal ideal
-$(f'(\alpha))$ of $B$.
-
-Source: Andrew V. Sutherland, 18.785 Number Theory I, Lecture 12, Proposition 12.24. -/
+/-- The different is principal generated by the derivative of the minimal polynomial,
+when `α` generates `B` as an `A`-algebra. -/
 theorem differentIdeal_eq_span_derivative_of_adjoin_eq_top
     [Algebra A K] [Algebra A L] [IsScalarTower A K L] [IsScalarTower A B L]
     [IsDomain A] [IsFractionRing A K]

@@ -50,7 +50,7 @@ namespace StatMech
 
 variable {α : Type*} [DecidableEq α]
 
-/-- **Encoding a pair of finsets in the doubled ground set.** The finset `inl '' S ∪ inr '' T` of `α ⊕ α`, encoding the pair `(S, T)`. -/
+/-- The finset `inl '' S ∪ inr '' T` of `α ⊕ α`, encoding the pair `(S, T)`. -/
 noncomputable def dbl (S T : Finset α) : Finset (α ⊕ α) :=
   S.map ⟨Sum.inl, Sum.inl_injective⟩ ∪ T.map ⟨Sum.inr, Sum.inr_injective⟩
 
@@ -87,7 +87,7 @@ lemma image_collapse_dbl (S T : Finset α) :
     · exact ⟨Sum.inl a, Or.inl ⟨a, ha, rfl⟩, rfl⟩
     · exact ⟨Sum.inr a, Or.inr ⟨a, ha, rfl⟩, rfl⟩
 
-/-- **Doubled family of disjoint pairs.** The family of `dbl S T` over disjoint pairs `S ∈ 𝒜`, `T ∈ ℬ`. -/
+/-- The family of `dbl S T` over disjoint pairs `S ∈ 𝒜`, `T ∈ ℬ`. -/
 noncomputable def boxDoubled (𝒜 ℬ : Finset (Finset α)) : Finset (Finset (α ⊕ α)) :=
   ((𝒜 ×ˢ ℬ).filter (fun p => Disjoint p.1 p.2)).image (fun p => dbl p.1 p.2)
 
@@ -99,7 +99,7 @@ lemma mem_boxDoubled (𝒜 ℬ : Finset (Finset α)) (U : Finset (α ⊕ α)) :
   · rintro ⟨S, T, ⟨⟨hS, hT⟩, hd⟩, rfl⟩; exact ⟨S, hS, T, hT, hd, rfl⟩
   · rintro ⟨S, hS, T, hT, hd, rfl⟩; exact ⟨S, T, ⟨⟨hS, hT⟩, hd⟩, rfl⟩
 
-/-- **Size of the doubled disjoint-pair family.** The size of `boxDoubled 𝒜 ℬ` is the number of disjoint pairs in `𝒜 × ℬ`. -/
+/-- The size of `boxDoubled 𝒜 ℬ` is the number of disjoint pairs in `𝒜 × ℬ`. -/
 theorem card_boxDoubled (𝒜 ℬ : Finset (Finset α)) :
     (boxDoubled 𝒜 ℬ).card = ((𝒜 ×ˢ ℬ).filter (fun p => Disjoint p.1 p.2)).card := by
   unfold boxDoubled
@@ -115,7 +115,7 @@ theorem boxFamily_eq_image_collapse_boxDoubled (𝒜 ℬ : Finset (Finset α)) :
   · rintro ⟨V, ⟨S, hS, T, hT, hd, rfl⟩, rfl⟩
     exact ⟨S, hS, T, hT, hd, (image_collapse_dbl S T).symm⟩
 
-/-- **Disjoint-union family is no larger than the doubled family.** `#(𝒜 ○ ℬ) ≤ #(boxDoubled 𝒜 ℬ)`: distinct disjoint pairs can have the same union. -/
+/-- `#(𝒜 ○ ℬ) ≤ #(boxDoubled 𝒜 ℬ)`: distinct disjoint pairs can have the same union. -/
 theorem card_boxFamily_le_boxDoubled (𝒜 ℬ : Finset (Finset α)) :
     (𝒜 ○ ℬ).card ≤ (boxDoubled 𝒜 ℬ).card := by
   rw [boxFamily_eq_image_collapse_boxDoubled]
@@ -128,7 +128,7 @@ theorem card_boxDoubled_le_mul (𝒜 ℬ : Finset (Finset α)) :
       ≤ (𝒜 ×ˢ ℬ).card := card_filter_le _ _
     _ = 𝒜.card * ℬ.card := card_product _ _
 
-/-- **Up-compression at a point of the doubled ground set.** Up-compression of a family on `α ⊕ α` at the point `a` (`UV.compression {a} ∅`). -/
+/-- Up-compression of a family on `α ⊕ α` at the point `a` (`UV.compression {a} ∅`). -/
 noncomputable def upComp (a : α ⊕ α) (𝒜 : Finset (Finset (α ⊕ α))) : Finset (Finset (α ⊕ α)) :=
   UV.compression {a} ∅ 𝒜
 
@@ -140,11 +140,11 @@ noncomputable def upComp (a : α ⊕ α) (𝒜 : Finset (Finset (α ⊕ α))) : 
     upComp a (upComp a 𝒜) = upComp a 𝒜 := by
   unfold upComp; exact UV.compression_idem _ _ _
 
-/-- **Down-compression at the left copy of a coordinate.** Down-compression at the left copy `inl i`. -/
+/-- Down-compression at the left copy `inl i`. -/
 noncomputable def downLeft (i : α) (𝒜 : Finset (Finset (α ⊕ α))) : Finset (Finset (α ⊕ α)) :=
   Down.compression (Sum.inl i) 𝒜
 
-/-- **Up-compression at the right copy of a coordinate.** Up-compression at the right copy `inr i`. -/
+/-- Up-compression at the right copy `inr i`. -/
 noncomputable def upRight (i : α) (𝒜 : Finset (Finset (α ⊕ α))) : Finset (Finset (α ⊕ α)) :=
   upComp (Sum.inr i) 𝒜
 
@@ -156,7 +156,7 @@ noncomputable def upRight (i : α) (𝒜 : Finset (Finset (α ⊕ α))) : Finset
     (upRight i 𝒜).card = 𝒜.card := by
   unfold upRight; exact upComp_card _ _
 
-/-- **Double compression at a coordinate.** Down-compression at `inl i` followed by up-compression at `inr i`. -/
+/-- Down-compression at `inl i` followed by up-compression at `inr i`. -/
 noncomputable def doubleCompress (i : α) (𝒜 : Finset (Finset (α ⊕ α))) :
     Finset (Finset (α ⊕ α)) :=
   upRight i (downLeft i 𝒜)
@@ -166,11 +166,11 @@ noncomputable def doubleCompress (i : α) (𝒜 : Finset (Finset (α ⊕ α))) :
   unfold doubleCompress
   rw [upRight_card, downLeft_card]
 
-/-- **Family closed under erasing the left copy.** `IsDownAtLeft i 𝒜`: `𝒜` is closed under erasing `inl i`. -/
+/-- `IsDownAtLeft i 𝒜`: `𝒜` is closed under erasing `inl i`. -/
 def IsDownAtLeft (i : α) (𝒜 : Finset (Finset (α ⊕ α))) : Prop :=
   ∀ s ∈ 𝒜, s.erase (Sum.inl i) ∈ 𝒜
 
-/-- **Family closed under inserting the right copy.** `IsUpAtRight i 𝒜`: `𝒜` is closed under inserting `inr i`. -/
+/-- `IsUpAtRight i 𝒜`: `𝒜` is closed under inserting `inr i`. -/
 def IsUpAtRight (i : α) (𝒜 : Finset (Finset (α ⊕ α))) : Prop :=
   ∀ s ∈ 𝒜, insert (Sum.inr i) s ∈ 𝒜
 

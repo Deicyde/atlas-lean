@@ -68,7 +68,7 @@ theorem openWalk_support_mem_cluster (o : Site 2) {y : Site 2}
     (w : (openSubgraph 2 ω).Walk o y) : ∀ z ∈ w.support, z ∈ cluster 2 ω o :=
   fun z hz => (w.takeUntil z hz).reachable
 
-/-- **Open cluster maps into the lattice minus its boundary edges.** The open subgraph on the cluster of `o` maps into the lattice with the boundary edges of the
+/-- The open subgraph on the cluster of `o` maps into the lattice with the boundary edges of the
 cluster removed. -/
 noncomputable def clusterOpenToBarrierHom (o : Site 2) :
     (openSubgraph 2 ω).induce (cluster 2 ω o) →g latticeMinusBarrier (cluster 2 ω o) where
@@ -101,7 +101,7 @@ theorem insideComponent_finite (o : Site 2) (hfin : (cluster 2 ω o).Finite) :
     ((latticeMinusBarrier (cluster 2 ω o)).connectedComponentMk o).supp.Finite :=
   hfin.subset (insideComponent_supp_subset_cluster (ω := ω) o)
 
-/-- **Box exterior maps into the lattice minus boundary edges.** The lattice on the exterior of a box disjoint from `K` maps into the lattice with the
+/-- The lattice on the exterior of a box disjoint from `K` maps into the lattice with the
 boundary edges of `K` removed. -/
 noncomputable def extToBarrierHom (K : Set (Site 2)) (R : ℕ) (hsub : exterior 2 R ⊆ Kᶜ) :
     (hypercubicLattice 2).induce (exterior 2 R) →g latticeMinusBarrier K where
@@ -154,7 +154,7 @@ theorem barrier_separates (S : Set (Site 2)) :
   ⟨fun _ _ h => barrier_sameSide_of_reachable S h,
    fun _ _ hx hy => not_reachable_latticeMinusBarrier S hx hy⟩
 
-/-- **Discrete Jordan separation for finite open clusters.** A discrete **Jordan separation** for a finite open cluster: removing its boundary edges
+/-- A discrete **Jordan separation** for a finite open cluster: removing its boundary edges
 leaves the cluster connected, the far exterior connected, and no path between the cluster and
 its complement. -/
 theorem discrete_jordan_separation (o : Site 2) (hfin : (cluster 2 ω o).Finite) :

@@ -41,10 +41,10 @@ open Polynomial
 
 noncomputable section
 
-/-- **Canonical sample paths of the raw Wright–Fisher process.** Canonical sample paths before continuous modification. -/
+/-- Canonical sample paths before continuous modification. -/
 abbrev SamplePath := NNReal → I
 
-/-- **Neutral Wright–Fisher transition kernel at nonnegative time.** The neutral Wright--Fisher transition kernel at nonnegative time. -/
+/-- The neutral Wright--Fisher transition kernel at nonnegative time. -/
 noncomputable def neutralKernel (t : NNReal) : Kernel I I :=
   wfTransitionKernel (t : ℝ)
 
@@ -57,14 +57,14 @@ noncomputable instance neutralKernel.instIsMarkovKernel (t : NNReal) :
 theorem neutralKernel_zero : neutralKernel 0 = (Kernel.id : Kernel I I) := by
   simp [neutralKernel]
 
-/-- **Chapman–Kolmogorov for the nonnegative-time Wright–Fisher kernel.** Chapman--Kolmogorov for the nonnegative-time specialization. -/
+/-- Chapman--Kolmogorov for the nonnegative-time specialization. -/
 theorem neutralKernel_add (s t : NNReal) :
     neutralKernel (s + t) = neutralKernel t ∘ₖ neutralKernel s := by
   simpa only [neutralKernel, NNReal.coe_add] using
     (wfTransitionKernel_add (s := (s : ℝ)) (t := (t : ℝ))
       s.coe_nonneg t.coe_nonneg)
 
-/-- **Canonical path measure of the raw Wright–Fisher process.** The canonical probability measure on `NNReal → I`. -/
+/-- The canonical probability measure on `NNReal → I`. -/
 noncomputable def rawMeasure (x : I) : Measure SamplePath :=
   pathMeasure neutralKernel neutralKernel_add x
 
@@ -73,7 +73,7 @@ noncomputable instance rawMeasure.instIsProbabilityMeasure (x : I) :
   unfold rawMeasure
   infer_instance
 
-/-- **Raw Wright–Fisher coordinate process.** The raw real-valued coordinate process, normalized at time zero on every
+/-- The raw real-valued coordinate process, normalized at time zero on every
 sample rather than merely almost surely. -/
 noncomputable def rawProcess (x : I) (t : NNReal) (ω : SamplePath) : ℝ :=
   if t = 0 then x else ω t
@@ -170,7 +170,7 @@ private theorem map_pair_finiteChainLaw
   rw [Kernel.compProd_apply_eq_compProd_sectR,
     Kernel.sectR_prodMkLeft]
 
-/-- **One-time marginals of the raw Wright–Fisher path measure.** One-time marginals of the canonical raw path measure. -/
+/-- One-time marginals of the canonical raw path measure. -/
 theorem map_eval_rawMeasure (x : I) (t : NNReal) :
     (rawMeasure x).map (fun ω => ω t) = neutralKernel t x := by
   let J : Finset NNReal := {t}
@@ -229,13 +229,13 @@ theorem map_eval_rawMeasure (x : I) (t : NNReal) :
       rw [rawMeasure, map_restrict_pathMeasure]
     _ = neutralKernel t x := hfinite
 
-/-- **Time-zero marginal of the raw path measure is the initial state.** The time-zero coordinate of the canonical path law is the prescribed
+/-- The time-zero coordinate of the canonical path law is the prescribed
 initial state. -/
 theorem map_eval_zero_rawMeasure (x : I) :
     (rawMeasure x).map (fun ω => ω 0) = Measure.dirac x := by
   rw [map_eval_rawMeasure, neutralKernel_zero, Kernel.id_apply]
 
-/-- **Two-time law of the raw Wright–Fisher path measure.** The ordered two-time law is the first marginal followed by the
+/-- The ordered two-time law is the first marginal followed by the
 transition over the time gap. -/
 theorem map_pair_rawMeasure_of_lt (x : I) {s t : NNReal} (hst : s < t) :
     (rawMeasure x).map (fun ω => (ω s, ω t)) =
@@ -317,7 +317,7 @@ theorem ae_eval_zero_eq (x : I) :
   apply HasLaw.ae_eq_of_dirac
   exact ⟨(measurable_pi_apply 0).aemeasurable, map_eval_zero_rawMeasure x⟩
 
-/-- **Normalized raw process agrees with the coordinates almost surely.** Exact normalization changes no fixed-time law. -/
+/-- Exact normalization changes no fixed-time law. -/
 theorem rawProcess_ae_eq_coordinate (x : I) (t : NNReal) :
     rawProcess x t =ᵐ[rawMeasure x] fun ω => ((ω t : I) : ℝ) := by
   by_cases ht : t = 0
@@ -433,7 +433,7 @@ private theorem edist_rpow_four_eq_ofReal_sub_pow (a b : ℝ) :
     ← ENNReal.ofReal_pow (abs_nonneg _), ← abs_pow,
     abs_of_nonneg (by positivity : 0 ≤ (a - b) ^ 4)]
 
-/-- **Kolmogorov constant for the Wright–Fisher continuity bound.** The explicit Kolmogorov constant `3/16`. -/
+/-- The explicit Kolmogorov constant `3/16`. -/
 def kolmogorovConstant : NNReal := ⟨3 / 16, by positivity⟩
 
 private theorem kolmogorov_rhs_eq (s t : NNReal) (hst : s ≤ t) :
@@ -469,7 +469,7 @@ private theorem kolmogorovCondition_rawProcess_of_lt
     _ = (kolmogorovConstant : ENNReal) * edist s t ^ (2 : ℝ) :=
       kolmogorov_rhs_eq s t hst.le
 
-/-- **Kolmogorov continuity condition for the raw Wright–Fisher process.** The normalized raw coordinate process satisfies the explicit fourth-moment
+/-- The normalized raw coordinate process satisfies the explicit fourth-moment
 Kolmogorov condition with `p=4`, `q=2`, and `M=3/16`. -/
 theorem isKolmogorovProcess_rawProcess (x : I) :
     IsKolmogorovProcess (rawProcess x) (rawMeasure x) 4 2
@@ -485,7 +485,7 @@ theorem isKolmogorovProcess_rawProcess (x : I) :
   · norm_num
   · norm_num
 
-/-- **Continuous realization of the raw Wright–Fisher process.** A selected continuous modification of the raw Wright--Fisher process,
+/-- A selected continuous modification of the raw Wright--Fisher process,
 with all pathwise properties stated on every sample. -/
 structure ContinuousRealization (x : I) where
   /-- The modified real-valued process. -/
@@ -501,7 +501,7 @@ structure ContinuousRealization (x : I) where
   /-- Every value lies in the allele-frequency interval. -/
   mem_Icc : ∀ t ω, process t ω ∈ Set.Icc (0 : ℝ) 1
 
-/-- **Continuous modification selected by Kolmogorov's theorem.** The continuous modification selected by Kolmogorov's theorem. -/
+/-- The continuous modification selected by Kolmogorov's theorem. -/
 noncomputable def continuousRealization (x : I) : ContinuousRealization x := by
   let h := exists_continuous_modification
     (isKolmogorovProcess_rawProcess x) (by norm_num : (1 : ℝ) < 2)
@@ -516,7 +516,7 @@ noncomputable def continuousRealization (x : I) : ContinuousRealization x := by
     exact hY.2.2.2.2 (Set.Icc (0 : ℝ) 1) isClosed_Icc ω
       (fun s => rawProcess_mem_Icc x s ω) t
 
-/-- **Continuous modified Wright–Fisher process.** The concrete continuous process used by the final realization. -/
+/-- The concrete continuous process used by the final realization. -/
 noncomputable def modifiedProcess (x : I) : NNReal → SamplePath → ℝ :=
   (continuousRealization x).process
 
@@ -541,7 +541,7 @@ theorem modifiedProcess_mem_Icc (x : I) (t : NNReal) (ω : SamplePath) :
     modifiedProcess x t ω ∈ Set.Icc (0 : ℝ) 1 :=
   (continuousRealization x).mem_Icc t ω
 
-/-- **Modified process has the raw finite-dimensional laws.** The modified process has the raw finite-dimensional laws, proved on each
+/-- The modified process has the raw finite-dimensional laws, proved on each
 finite set by intersecting its fixed-time modification events. -/
 theorem map_restrict_modified_eq_raw (x : I) (J : Finset NNReal) :
     (rawMeasure x).map
@@ -551,7 +551,7 @@ theorem map_restrict_modified_eq_raw (x : I) (J : Finset NNReal) :
   ProbabilityTheory.map_restrict_eq_of_forall_ae_eq
     (modifiedProcess_ae_eq_raw x) J
 
-/-- **Modified process has the canonical coordinate laws.** The modified finite-dimensional laws also equal the original canonical
+/-- The modified finite-dimensional laws also equal the original canonical
 coordinate laws after coercion from `I` to `ℝ`. -/
 theorem map_restrict_modified_eq_coordinate (x : I) (J : Finset NNReal) :
     (rawMeasure x).map

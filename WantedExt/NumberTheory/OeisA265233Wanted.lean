@@ -53,12 +53,11 @@ set_option autoImplicit false
 
 namespace MathlibExt.NumberTheory.OeisA265233Wanted
 
-/-- **The sequence A265233.** The sequence $(a_n)_{n \ge 0}$ of rational numbers is given by
-$a_0 = 1$, $a_1 = 1$, $a_2 = 7$, $a_3 = 56$ and, for every integer $N \ge 4$,
-
-$$N^2 a_N = (19N^2 - 19N + 6)\, a_{N-1} - 96 (N-1)^2 a_{N-2} + 144 (N-1)(N-2)\, a_{N-3}.$$
-
-Source: Juntao Jin, "An Explicit Formula and a Recurrence for OEIS A265233", Theorem 1(2). -/
+/-- OEIS A265233, defined over `ℚ` by the recurrence of
+the paper's Theorem 1(2) with its initial values
+`a_0 = 1`, `a_1 = 1`, `a_2 = 7`, `a_3 = 56`: for
+`N ≥ 4`, `N^2 a_N = (19N^2 - 19N + 6) a_{N-1}
+- 96(N-1)^2 a_{N-2} + 144(N-1)(N-2) a_{N-3}`. -/
 def a265233 : ℕ → ℚ
   | 0 => 1
   | 1 => 1
@@ -72,11 +71,10 @@ def a265233 : ℕ → ℚ
           a265233 (n + 1))
         / ((n : ℚ) + 4) ^ 2
 
-/-- **Explicit formula for A265233 in terms of Franel numbers.** Let $(a_n)_{n \ge 0}$ be the
-sequence A265233 and let $f_m = \sum_{k=0}^{m} \binom{m}{k}^3$ be the $m$-th Franel number. For
-every integer $n \ge 1$,
-
-$$a_n = \frac{1}{6} \sum_{m=0}^{n} \binom{n}{m} 4^{n-m} f_m.$$
+/-- **Theorem 1**(1): for `n ≥ 1`,
+`a_n = (1/6) ∑_{m=0}^{n} C(n, m) 4^{n-m} f_m`, where
+`f_m` is the Franel number
+`MetaMathlibExt.binomialPowerSeq 3 0 m`.
 
 Source: Juntao Jin, "An Explicit Formula and a
 Recurrence for OEIS A265233", Theorem 1. -/
@@ -85,9 +83,10 @@ theorem_wanted a265233_eq_sum_franel (n : ℕ) (hn : 1 ≤ n) :
       (Nat.choose n m : ℚ) * 4 ^ (n - m) *
         (MetaMathlibExt.binomialPowerSeq 3 0 m : ℚ)
 
-/-- **Franel numbers as diagonal coefficients.** For every natural number $m$, the coefficient of
-$x^m y^m z^m$ in the polynomial $\bigl((x + y)(y + z)(z + x)\bigr)^m \in \mathbb{Q}[x, y, z]$
-is the Franel number $f_m = \sum_{k=0}^{m} \binom{m}{k}^3$.
+/-- **Lemma 3**: for every `m ≥ 0`, the coefficient of
+`x^m y^m z^m` in `((x + y)(y + z)(z + x))^m` is the
+Franel number `f_m`
+(`MetaMathlibExt.binomialPowerSeq 3 0 m`).
 
 Source: Juntao Jin, "An Explicit Formula and a
 Recurrence for OEIS A265233", Lemma 3. -/
@@ -101,11 +100,10 @@ theorem_wanted coeff_pow_eq_franel (m : ℕ) :
         Finsupp.single (2 : Fin 3) m)
       = (MetaMathlibExt.binomialPowerSeq 3 0 m : ℚ)
 
-/-- **Generating function of A265233.** Let $(a_n)_{n \ge 0}$ be the sequence A265233 and let
-${}_2F_1$ be the Gauss hypergeometric function. For every real number $x$ with $|x| < 1/12$ and
-$|27x(1 - 4x)^2| < 1$,
-
-$$\sum_{n \ge 0} a_n x^n = \frac{{}_2F_1\bigl(\tfrac13, \tfrac23; 1; 27x(1 - 4x)^2\bigr) + 5}{6}.$$
+/-- **Corollary 2**(1): the ordinary generating function
+satisfies `∑_{n ≥ 0} a_n x^n
+= (₂F₁(1/3, 2/3; 1; 27x(1 - 4x)^2) + 5) / 6` on the
+common convergence domain.
 
 Source: Juntao Jin, "An Explicit Formula and a
 Recurrence for OEIS A265233", Corollary 2. -/
@@ -115,9 +113,8 @@ theorem_wanted tsum_a265233_eq (x : ℝ) (hx : |x| < 1 / 12)
       (ordinaryHypergeometric (1 / 3 : ℝ) (2 / 3 : ℝ) 1
         (27 * x * (1 - 4 * x) ^ 2) + 5) / 6
 
-/-- **Asymptotics of A265233.** The sequence $(a_n)_{n \ge 0}$ A265233 satisfies
-
-$$a_n \sim \frac{\sqrt{3}}{6\pi} \cdot \frac{12^n}{n} \quad \text{as } n \to \infty.$$
+/-- **Corollary 2**(2): `a_n ~ (√3 / (6π)) · 12^n / n`
+as `n → ∞`.
 
 Source: Juntao Jin, "An Explicit Formula and a
 Recurrence for OEIS A265233", Corollary 2. -/

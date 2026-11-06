@@ -168,7 +168,7 @@ private theorem exists_smoothOfRelativeDimension_of_preconnectedSpace
 end SmoothRelDimAux
 
 open AlgebraicGeometry CategoryTheory in
-/-- **Smooth maps from a preconnected scheme have constant relative dimension.** A smooth morphism from a preconnected scheme is smooth of some fixed
+/-- A smooth morphism from a preconnected scheme is smooth of some fixed
 relative dimension. -/
 theorem AlgebraicGeometry.Smooth.exists_smoothOfRelativeDimension_of_preconnectedSpace
     {X Y : Scheme.{u}} (f : X ⟶ Y) [Smooth f] [PreconnectedSpace X] :

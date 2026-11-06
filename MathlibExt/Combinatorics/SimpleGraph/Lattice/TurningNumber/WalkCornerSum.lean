@@ -33,7 +33,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind
 
 variable {n : ℕ} [NeZero n]
 
-/-- **Zero corner weight of the interior off the walk.** A lattice point off the walk has corner weight `0` for the interior. -/
+/-- A lattice point off the walk has corner weight `0` for the interior. -/
 theorem cornerWeight_zero_of_notMem_image (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (vx vy : ℤ) (hnv : ∀ k : Fin n, pos d k ≠ (vx, vy)) :
     cornerWeight (cornerCount (interiorCells d hclosed) (vx, vy)) = 0 := by
@@ -51,7 +51,7 @@ theorem cornerWeight_zero_of_notMem_image (d : Fin n → Fin 4) (hclosed : ∑ i
       exact_mod_cast this
     rw [this]; unfold cornerWeight; decide
 
-/-- **Corner defect of the interior as a sum over walk vertices.** For a simple closed walk, the corner defect of the interior is the sum of the corner weights at
+/-- For a simple closed walk, the corner defect of the interior is the sum of the corner weights at
   the walk vertices. -/
 theorem cornerDiff_interior_eq_walk_sum (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) :

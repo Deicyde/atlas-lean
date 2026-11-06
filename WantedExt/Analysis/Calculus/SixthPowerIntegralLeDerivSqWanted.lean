@@ -41,10 +41,14 @@ public import Mathlib
 
 namespace MathlibExt.Analysis.Calculus.SixthPowerIntegralLeDerivSqWanted
 
-/-- **Sixth-power integral bounded by the Dirichlet energy under $L^2$ normalization.** There is
-a constant $C_2 > 0$ such that every infinitely differentiable, compactly supported function
-$u : \mathbb{R} \to \mathbb{R}$ with $\int_{\mathbb{R}} u(t)^2 \, dt = 1$ satisfies
-$$\int_{\mathbb{R}} u(t)^6 \, dt \le C_2 \int_{\mathbb{R}} u'(t)^2 \, dt.$$
+/-- Prove that there is a constant $C_2 > 0$ such that
+\[
+\int_{-\infty}^{\infty} u^6(t) \, dt \le C_2 \int_{-\infty}^{\infty} (u')^2(t) \, dt
+\]
+for all $u \in C_c^\infty(\mathbb{R})$ satisfying
+\[
+\int_{-\infty}^{\infty} u^2(t) \, dt = 1.
+\]
 
 Source: MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Inequalities
 in real analysis), `benchmark/level2/ma_proofbench_l2_79.lean` at openbmb/ma-proofbench@31bab4c.

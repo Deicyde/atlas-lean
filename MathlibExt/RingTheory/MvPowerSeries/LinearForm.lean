@@ -27,7 +27,7 @@ assumption is imposed on `σ` or `b`, because each monomial has finite support.
 
 namespace MvPowerSeries
 
-/-- **Formal linear form in multivariate power series.** The formal linear form with variable coefficient family `b : σ → R`.
+/-- The formal linear form with variable coefficient family `b : σ → R`.
 
 Its coefficient at `d` is the sum of `b i` over the support of `d` when `d`
 has total degree one, and zero otherwise. -/
@@ -50,26 +50,26 @@ noncomputable def linearForm {σ R : Type*} [CommSemiring R] :
     · simp only [ite_eq_left h, Finset.mul_sum]
     · simp only [ite_eq_right h, mul_zero]
 
-/-- **Coefficient formula for a formal linear form.** The coefficient formula defining a formal linear form. -/
+/-- The coefficient formula defining a formal linear form. -/
 @[simp] theorem coeff_linearForm {σ R : Type*} [CommSemiring R]
     (b : σ → R) (d : σ →₀ ℕ) :
     coeff d (linearForm b) =
       if d.degree = 1 then ∑ i ∈ d.support, b i else 0 := rfl
 
-/-- **Coefficient of a single variable in a formal linear form.** The coefficient of variable `i` is the prescribed coefficient `b i`. -/
+/-- The coefficient of variable `i` is the prescribed coefficient `b i`. -/
 @[simp] theorem coeff_linearForm_single {σ R : Type*} [CommSemiring R]
     (b : σ → R) (i : σ) :
     coeff (Finsupp.single i 1) (linearForm b) = b i := by
   classical
   simp [Finsupp.degree_single]
 
-/-- **A formal linear form has zero constant coefficient.** A formal linear form has zero constant coefficient. -/
+/-- A formal linear form has zero constant coefficient. -/
 @[simp] theorem constantCoeff_linearForm {σ R : Type*} [CommSemiring R]
     (b : σ → R) : constantCoeff (linearForm b) = 0 := by
   rw [← coeff_zero_eq_constantCoeff_apply, coeff_linearForm]
   simp
 
-/-- **Partial derivative of a formal linear form.** The partial derivative of a formal linear form is its corresponding
+/-- The partial derivative of a formal linear form is its corresponding
 constant coefficient. -/
 @[simp] theorem pderiv_linearForm {σ R : Type*} [CommSemiring R]
     (b : σ → R) (i : σ) : pderiv i (linearForm b) = C (b i) := by
@@ -82,7 +82,7 @@ constant coefficient. -/
   · have hd : d.degree ≠ 0 := fun h0 => h ((Finsupp.degree_eq_zero_iff d).1 h0)
     rw [ite_eq_right (by omega), ite_eq_right h, zero_mul]
 
-/-- **Coefficient ring maps commute with formal linear forms.** Mapping the coefficient ring commutes with forming a formal linear form. -/
+/-- Mapping the coefficient ring commutes with forming a formal linear form. -/
 theorem map_linearForm {σ R S : Type*} [CommSemiring R] [CommSemiring S]
     (f : R →+* S) (b : σ → R) :
     map f (linearForm b) = linearForm (fun i => f (b i)) := by

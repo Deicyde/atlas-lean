@@ -15,13 +15,9 @@ import Mathlib.Geometry.Euclidean.Triangle
 
 namespace MetaMathlibExt
 
-/-- **Angle bisector theorem without distinctness hypotheses.** Let $A$, $B$, $C$, $D$ be points of
-a Euclidean affine space (a metric affine space over a real inner product space) with $A$, $B$, $C$
-affinely independent, so that $ABC$ is a nondegenerate triangle. If $D$ lies strictly between $B$
-and $C$ and $\angle BAD = \angle DAC$ (unoriented angles), then $BD / DC = AB / AC$.
-
-The hypotheses $A \ne B$, $A \ne C$ and $A \ne D$ of the usual statement are not needed: they
-follow from the others. -/
+/-- Forward direction of the angle bisector theorem, without the hypotheses `A ≠ B`, `A ≠ C`
+and `A ≠ D`, which follow from the others: if `AD` internally bisects angle `A` of triangle
+`ABC` with `D` strictly between `B` and `C`, then `BD / DC = AB / AC`. -/
 theorem angle_bisector_theorem_general {V P : Type*}
     [NormedAddCommGroup V] [InnerProductSpace ℝ V] [MetricSpace P]
     [NormedAddTorsor V P]
@@ -200,13 +196,9 @@ theorem angle_bisector_theorem_general {V P : Type*}
   linarith [hX]
 
 set_option linter.unusedVariables false in
-/-- **Angle bisector theorem.** Let $A$, $B$, $C$, $D$ be points of a Euclidean affine space (a
-metric affine space over a real inner product space) with $A$, $B$, $C$ affinely independent, so
-that $ABC$ is a nondegenerate triangle, and with $A \ne B$, $A \ne C$ and $A \ne D$. If $D$ lies
-strictly between $B$ and $C$ and $\angle BAD = \angle DAC$ (unoriented angles), then
-$BD / DC = AB / AC$.
-
-Source: https://en.wikipedia.org/wiki/Angle_bisector_theorem
+/-- Forward direction of the Angle bisector theorem: if `AD` internally bisects
+angle `A` of triangle `ABC` with `D` strictly between `B` and `C`, then
+`BD / DC = AB / AC`. Source: https://en.wikipedia.org/wiki/Angle_bisector_theorem
 (statement_id `angle-bisector-theorem`, required clause 1).
 It follows from `angle_bisector_theorem_general`; the hypotheses `hAB`, `hAC` and `hAD` are
 unused and keep the source's shape.
@@ -224,14 +216,9 @@ theorem angle_bisector_theorem {V P : Type*}
     dist B D / dist D C = dist A B / dist A C :=
   angle_bisector_theorem_general A B C D h_tri h_bet h_bis
 
-/-- **Converse of the angle bisector theorem without distinctness hypotheses.** Let $A$, $B$, $C$,
-$D$ be points of a Euclidean affine space (a metric affine space over a real inner product space)
-with $A$, $B$, $C$ affinely independent, so that $ABC$ is a nondegenerate triangle. If $D$ lies on
-the closed segment $BC$ and $BD / DC = AB / AC$, then $\angle BAD = \angle DAC$ (unoriented
-angles), that is, $D$ lies on the internal bisector of the angle at $A$.
-
-The hypotheses $A \ne B$, $A \ne C$ and $A \ne D$ of the usual statement are not needed: they
-follow from the others. -/
+/-- Converse of the angle bisector theorem, without the hypotheses `A ≠ B`, `A ≠ C` and
+`A ≠ D`, which follow from the others: a point `D` on segment `BC` dividing `BC` in the ratio
+`AB : AC` lies on the internal bisector of angle `A`. -/
 theorem angle_bisector_converse_general {V P : Type*}
     [NormedAddCommGroup V] [InnerProductSpace ℝ V] [MetricSpace P]
     [NormedAddTorsor V P]
@@ -368,13 +355,8 @@ theorem angle_bisector_converse_general {V P : Type*}
   rw [hcos]
 
 set_option linter.unusedVariables false in
-/-- **Converse of the angle bisector theorem.** Let $A$, $B$, $C$, $D$ be points of a Euclidean
-affine space (a metric affine space over a real inner product space) with $A$, $B$, $C$ affinely
-independent, so that $ABC$ is a nondegenerate triangle, and with $A \ne B$, $A \ne C$ and
-$A \ne D$. If $D$ lies on the closed segment $BC$ and $BD / DC = AB / AC$, then
-$\angle BAD = \angle DAC$ (unoriented angles), that is, $D$ lies on the internal bisector of the
-angle at $A$.
-
+/-- Converse of the Angle bisector theorem: a point `D` on segment `BC`
+dividing `BC` in the ratio `AB : AC` lies on the internal bisector of angle `A`.
 Source: https://en.wikipedia.org/wiki/Angle_bisector_theorem
 (statement_id `angle-bisector-theorem`, required clause 2).
 It follows from `angle_bisector_converse_general`; the hypotheses `hAB`, `hAC` and `hAD` are

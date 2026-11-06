@@ -43,51 +43,51 @@ open ConfigSpace
 
 variable {E : Type*}
 
-/-- **Agreement of configurations on a set.** `agreeOn K ω ω'`: the configurations `ω` and `ω'` take the same value at every coordinate of
+/-- `agreeOn K ω ω'`: the configurations `ω` and `ω'` take the same value at every coordinate of
 `K`. This is `Set.EqOn ω' ω K` (see `StatMech.agreeOn_iff_eqOn`). -/
 def agreeOn (K : Set E) (ω ω' : ConfigSpace E) : Prop := ∀ e ∈ K, ω' e = ω e
 
-/-- **Agreement on a set as pointwise equality.** `agreeOn` is the pointwise form of `Set.EqOn`. -/
+/-- `agreeOn` is the pointwise form of `Set.EqOn`. -/
 lemma agreeOn_iff_eqOn {K : Set E} {ω ω' : ConfigSpace E} : agreeOn K ω ω' ↔ Set.EqOn ω' ω K :=
   ⟨fun h _ he => h _ he, fun h _ he => h he⟩
 
-/-- **Reflexivity of agreement on a set.** Every configuration agrees with itself (`Set.eqOn_refl`). -/
+/-- Every configuration agrees with itself (`Set.eqOn_refl`). -/
 @[refl] lemma agreeOn_refl (K : Set E) (ω : ConfigSpace E) : agreeOn K ω ω :=
   fun _ _ => rfl
 
-/-- **Symmetry of agreement on a set.** `agreeOn` is symmetric (`Set.EqOn.symm`). -/
+/-- `agreeOn` is symmetric (`Set.EqOn.symm`). -/
 lemma agreeOn_symm {K : Set E} {ω ω' : ConfigSpace E} (h : agreeOn K ω ω') :
     agreeOn K ω' ω := fun e he => (h e he).symm
 
-/-- **Transitivity of agreement on a set.** `agreeOn` is transitive (`Set.EqOn.trans`). -/
+/-- `agreeOn` is transitive (`Set.EqOn.trans`). -/
 lemma agreeOn_trans {K : Set E} {ω ω' ω'' : ConfigSpace E}
     (h : agreeOn K ω ω') (h' : agreeOn K ω' ω'') : agreeOn K ω ω'' :=
   fun e he => (h' e he).trans (h e he)
 
-/-- **Agreement on a set restricts to subsets.** Agreement on a set implies agreement on any subset (`Set.EqOn.mono`). -/
+/-- Agreement on a set implies agreement on any subset (`Set.EqOn.mono`). -/
 lemma agreeOn_mono {K K' : Set E} (hKK' : K ⊆ K') {ω ω' : ConfigSpace E}
     (h : agreeOn K' ω ω') : agreeOn K ω ω' := fun e he => h e (hKK' he)
 
-/-- **Occurrence of an event on a coordinate set.** `OccursOn A K ω`: the event `A` occurs on the coordinate set `K` at `ω`, meaning that every
+/-- `OccursOn A K ω`: the event `A` occurs on the coordinate set `K` at `ω`, meaning that every
 configuration agreeing with `ω` on `K` lies in `A`. -/
 def OccursOn (A : Set (ConfigSpace E)) (K : Set E) (ω : ConfigSpace E) : Prop :=
   ∀ ω', agreeOn K ω ω' → ω' ∈ A
 
-/-- **An event occurring on a set contains the configuration.** If `A` occurs on some `K` at `ω`, then `ω ∈ A`. -/
+/-- If `A` occurs on some `K` at `ω`, then `ω ∈ A`. -/
 lemma OccursOn.mem_self {A : Set (ConfigSpace E)} {K : Set E} {ω : ConfigSpace E}
     (h : OccursOn A K ω) : ω ∈ A := h ω (agreeOn_refl K ω)
 
-/-- **Occurrence is monotone in the coordinate set.** Occurrence on `K` implies occurrence on any larger coordinate set. -/
+/-- Occurrence on `K` implies occurrence on any larger coordinate set. -/
 lemma OccursOn.mono {A : Set (ConfigSpace E)} {K K' : Set E} {ω : ConfigSpace E}
     (h : OccursOn A K ω) (hKK' : K ⊆ K') : OccursOn A K' ω :=
   fun ω' hω' => h ω' (agreeOn_mono hKK' hω')
 
-/-- **Occurrence is monotone in the event.** Occurrence of `A` on `K` implies occurrence of any larger event `B ⊇ A` on `K`. -/
+/-- Occurrence of `A` on `K` implies occurrence of any larger event `B ⊇ A` on `K`. -/
 lemma OccursOn.mono_event {A B : Set (ConfigSpace E)} {K : Set E}
     {ω : ConfigSpace E} (h : OccursOn A K ω) (hAB : A ⊆ B) : OccursOn B K ω :=
   fun ω' hω' => hAB (h ω' hω')
 
-/-- **Disjoint occurrence of events.** The *disjoint occurrence* `A □ B`: the configurations `ω` for which there are disjoint
+/-- The *disjoint occurrence* `A □ B`: the configurations `ω` for which there are disjoint
 coordinate sets `K` and `L` such that `A` occurs on `K` at `ω` and `B` occurs on `L` at `ω`. -/
 def disjointOccurrence (A B : Set (ConfigSpace E)) : Set (ConfigSpace E) :=
   {ω | ∃ K L : Set E, Disjoint K L ∧ OccursOn A K ω ∧ OccursOn B L ω}
@@ -95,23 +95,23 @@ def disjointOccurrence (A B : Set (ConfigSpace E)) : Set (ConfigSpace E) :=
 /-- Notation `A □ B` for `StatMech.disjointOccurrence A B`. -/
 scoped notation3:70 A " □ " B => disjointOccurrence A B
 
-/-- **Membership in a disjoint occurrence.** Membership in `A □ B` unfolded. -/
+/-- Membership in `A □ B` unfolded. -/
 lemma mem_disjointOccurrence {A B : Set (ConfigSpace E)} {ω : ConfigSpace E} :
     ω ∈ disjointOccurrence A B ↔
       ∃ K L : Set E, Disjoint K L ∧ OccursOn A K ω ∧ OccursOn B L ω :=
   Iff.rfl
 
-/-- **Notation for disjoint occurrence.** The notation `A □ B` unfolds to `disjointOccurrence A B`. -/
+/-- The notation `A □ B` unfolds to `disjointOccurrence A B`. -/
 lemma disjointOccurrence_notation (A B : Set (ConfigSpace E)) :
     (A □ B : Set (ConfigSpace E)) = disjointOccurrence A B := rfl
 
-/-- **Disjoint occurrence lies in the intersection.** Disjoint occurrence implies occurrence of both events: `A □ B ⊆ A ∩ B`. -/
+/-- Disjoint occurrence implies occurrence of both events: `A □ B ⊆ A ∩ B`. -/
 theorem disjointOccurrence_subset_inter (A B : Set (ConfigSpace E)) :
     disjointOccurrence A B ⊆ A ∩ B := by
   rintro ω ⟨K, L, _, hA, hB⟩
   exact ⟨hA.mem_self, hB.mem_self⟩
 
-/-- **Disjoint occurrence is symmetric.** Disjoint occurrence is symmetric: `A □ B = B □ A`. -/
+/-- Disjoint occurrence is symmetric: `A □ B = B □ A`. -/
 theorem disjointOccurrence_comm (A B : Set (ConfigSpace E)) :
     disjointOccurrence A B = disjointOccurrence B A := by
   ext ω
@@ -121,7 +121,7 @@ theorem disjointOccurrence_comm (A B : Set (ConfigSpace E)) :
   · rintro ⟨K, L, hKL, hB, hA⟩
     exact ⟨L, K, hKL.symm, hA, hB⟩
 
-/-- **Disjoint occurrence is monotone in both events.** Disjoint occurrence is monotone in both events. -/
+/-- Disjoint occurrence is monotone in both events. -/
 theorem disjointOccurrence_mono {A A' B B' : Set (ConfigSpace E)}
     (hA : A ⊆ A') (hB : B ⊆ B') :
     disjointOccurrence A B ⊆ disjointOccurrence A' B' := by

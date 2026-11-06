@@ -82,7 +82,7 @@ private lemma summable_expSeries {𝔸 : Type*} [NormedRing 𝔸] [NormedAlgebra
     Summable (fun n : ℕ => ((n.factorial : ℚ))⁻¹ • x ^ n) :=
   NormedSpace.expSeries_summable' x
 
-/-- **Norm of the exponential is bounded by the exponential of the norm.** The exponential is bounded by the real exponential of the norm. -/
+/-- The exponential is bounded by the real exponential of the norm. -/
 theorem norm_exp_le_exp_norm {𝔸 : Type*} [NormedRing 𝔸] [NormedAlgebra ℚ 𝔸]
     [NormOneClass 𝔸] (x : 𝔸) : ‖NormedSpace.exp x‖ ≤ Real.exp ‖x‖ := by
   have hexp : NormedSpace.exp x = ∑' n : ℕ, ((n.factorial : ℚ))⁻¹ • x ^ n := by
@@ -104,7 +104,7 @@ theorem norm_exp_le_exp_norm {𝔸 : Type*} [NormedRing 𝔸] [NormedAlgebra ℚ
         · exact summable_norm_expSeries x
         · exact Real.summable_pow_div_factorial ‖x‖
 
-/-- **First-order Taylor remainder bound for the exponential.** The Taylor remainder of `exp` at order one. -/
+/-- The Taylor remainder of `exp` at order one. -/
 theorem norm_exp_sub_one_sub_id_le (x : 𝔸) :
     ‖NormedSpace.exp x - 1 - x‖ ≤ ‖x‖ ^ 2 * Real.exp ‖x‖ := by
   have hsum := summable_expSeries x
@@ -156,7 +156,7 @@ theorem norm_exp_sub_one_sub_id_le (x : 𝔸) :
         · exact htail_norm
         · exact (Real.summable_pow_div_factorial ‖x‖).mul_left _
 
-/-- **One-step Trotter estimate.** The one-step Trotter estimate: `exp x * exp y` differs from
+/-- The one-step Trotter estimate: `exp x * exp y` differs from
 `exp (x + y)` by at most a quadratic expression in `‖x‖` and `‖y‖`. -/
 theorem norm_exp_mul_exp_sub_exp_add_le (x y : 𝔸) :
     ‖NormedSpace.exp x * NormedSpace.exp y - NormedSpace.exp (x + y)‖ ≤
@@ -208,7 +208,7 @@ theorem norm_exp_mul_exp_sub_exp_add_le (x y : 𝔸) :
   rw [hident]
   linarith
 
-/-- **Linear bound on differences of powers for the Trotter formula.** Powers differ at most linearly in the difference of the bases. The
+/-- Powers differ at most linearly in the difference of the bases. The
 `1` in the maximum is needed: without it the bound fails when the norms are
 `< 1`. -/
 theorem norm_pow_sub_pow_le {𝔸 : Type*} [NormedRing 𝔸] [NormOneClass 𝔸]
@@ -255,7 +255,7 @@ private lemma nsmul_ratInv_smul {𝔸 : Type*} [NormedRing 𝔸] [NormedAlgebra 
   rw [nsmul_eq_mul, Algebra.smul_def, ← map_natCast (algebraMap ℚ 𝔸) m,
     ← mul_assoc, ← map_mul, mul_inv_cancel₀ hm0, map_one, one_mul]
 
-/-- **Trotter product formula.** The **Trotter product formula** for bounded elements of a complete normed
+/-- The **Trotter product formula** for bounded elements of a complete normed
 algebra: `(exp (a / n) * exp (b / n)) ^ n → exp (a + b)` in norm. -/
 theorem tendsto_trotter_product (a b : 𝔸) :
     Tendsto (fun n : ℕ =>
@@ -439,7 +439,7 @@ theorem tendsto_trotter_product (a b : 𝔸) :
         have h := (div_lt_iff₀ hε).mp hN
         linarith
 
-/-- **Trotter product formula for commuting elements.** If `a` and `b` commute, the Trotter approximants are exactly
+/-- If `a` and `b` commute, the Trotter approximants are exactly
 `exp (a + b)` for every positive `n`. -/
 theorem trotter_product_of_commute {𝔸 : Type*} [NormedRing 𝔸] [NormedAlgebra ℚ 𝔸]
     [CompleteSpace 𝔸] {a b : 𝔸} (h : Commute a b) {n : ℕ} (hn : 0 < n) :

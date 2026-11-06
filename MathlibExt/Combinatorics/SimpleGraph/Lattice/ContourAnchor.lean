@@ -50,7 +50,7 @@ open StatMech.Percolation (anchorFinset origin)
 
 variable {ω : ConfigSpace (Sym2 (Site 2))}
 
-/-- **Site on the positive horizontal axis.** The site `(j, 0)` on the positive horizontal axis. -/
+/-- The site `(j, 0)` on the positive horizontal axis. -/
 def axisSite (j : ℕ) : Site 2 := ![(j : ℤ), 0]
 
 @[simp] theorem axisSite_zero_eq_origin : axisSite 0 = origin 2 := by
@@ -77,7 +77,7 @@ theorem exists_axisSite_not_mem_cluster (hfin : (cluster 2 ω (origin 2)).Finite
     Set.infinite_range_of_injective hinj
   exact hran (hfin.subset hsub)
 
-/-- **Axis site lies outside the origin cluster.** The site `(j + 1, 0)` is not in the open cluster of the origin. -/
+/-- The site `(j + 1, 0)` is not in the open cluster of the origin. -/
 def exitPred (ω : ConfigSpace (Sym2 (Site 2))) (j : ℕ) : Prop :=
   axisSite (j + 1) ∉ cluster 2 ω (origin 2)
 
@@ -89,7 +89,7 @@ theorem exitPred_exists (hfin : (cluster 2 ω (origin 2)).Finite) :
   | succ m => exact ⟨m, hk⟩
 
 open Classical in
-/-- **Exit index of a finite origin cluster.** For a finite origin cluster, the least `j` such that `(j + 1, 0)` is not in the cluster. -/
+/-- For a finite origin cluster, the least `j` such that `(j + 1, 0)` is not in the cluster. -/
 noncomputable def exitIndex (hfin : (cluster 2 ω (origin 2)).Finite) : ℕ := by
   classical
   exact Nat.find (exitPred_exists (ω := ω) hfin)
@@ -138,11 +138,11 @@ theorem axisExitEdge_isClosed (hfin : (cluster 2 ω (origin 2)).Finite) :
     ω s(axisSite (exitIndex (ω := ω) hfin), axisSite (exitIndex (ω := ω) hfin + 1)) = false :=
   cluster_edgeBoundary_isClosed (origin 2) (axisExitEdge_mem_edgeBoundary (ω := ω) hfin)
 
-/-- **Face above the exit edge.** The unit face directly above the exit edge from `(j, 0)` to `(j + 1, 0)`. -/
+/-- The unit face directly above the exit edge from `(j, 0)` to `(j + 1, 0)`. -/
 noncomputable def exitFaceUp (hfin : (cluster 2 ω (origin 2)).Finite) : Site 2 :=
   ![(exitIndex (ω := ω) hfin : ℤ), 0]
 
-/-- **Face below the exit edge.** The unit face directly below the exit edge from `(j, 0)` to `(j + 1, 0)`. -/
+/-- The unit face directly below the exit edge from `(j, 0)` to `(j + 1, 0)`. -/
 noncomputable def exitFaceDown (hfin : (cluster 2 ω (origin 2)).Finite) : Site 2 :=
   ![(exitIndex (ω := ω) hfin : ℤ), -1]
 
@@ -233,7 +233,7 @@ theorem exists_cycle_based_exitFaceUp (hfin : (cluster 2 ω (origin 2)).Finite) 
     c.fst_mem_support_of_mem_edges hedge
   exact ⟨c.rotate (exitFaceUp (ω := ω) hfin) hsup, hcyc.rotate hsup⟩
 
-/-- **Existence of an anchored dual cycle around the origin cluster.** Some cycle of the face-boundary graph of the origin cluster is based at the upper exit face
+/-- Some cycle of the face-boundary graph of the origin cluster is based at the upper exit face
 and is longer than the exit index. -/
 def AnchoredCycleExists (ω : ConfigSpace (Sym2 (Site 2)))
     (hfin : (cluster 2 ω (origin 2)).Finite) : Prop :=
@@ -249,7 +249,7 @@ theorem anchoredEnclosure_of_anchoredCycle (hfin : (cluster 2 ω (origin 2)).Fin
   exact ⟨exitFaceUp (ω := ω) hfin, c, hcyc,
     exitFaceUp_mem_anchorFinset (ω := ω) hfin hlen⟩
 
-/-- **Anchored dual cycles give the anchored enclosure property.** If every finite origin cluster has an anchored dual cycle (`AnchoredCycleExists`), then the
+/-- If every finite origin cluster has an anchored dual cycle (`AnchoredCycleExists`), then the
 anchored enclosure property `StatMech.Percolation.PcAnchoredEnclosure` holds. This reduces
 the Peierls bound to `AnchoredCycleExists`; it does not prove that hypothesis. -/
 theorem pcAnchoredEnclosure_of_anchoredCycle

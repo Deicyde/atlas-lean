@@ -442,7 +442,7 @@ private theorem exists_balanced_coloring_aux (c : Matrix ι ι ℕ) (hd : ∀ a,
     exact h6
   exact absurd (Nat.le_of_mul_le_mul_left hle hN) (not_le.2 hg)
 
-/-- **Balanced coloring of a weighted symmetric matrix.** A finite symmetric natural-valued matrix with zero diagonal and bounded row sums has a
+/-- A finite symmetric natural-valued matrix with zero diagonal and bounded row sums has a
 coloring with balanced fibers and bounded weight in every ordered color block. -/
 theorem exists_balanced_coloring (c : Matrix ι ι ℕ) (hd : ∀ a, c a a = 0)
     (hs : c.IsSymm) (P : ℕ) (hP : ∀ a, ∑ b, c a b ≤ P) (hK : 0 < K)
@@ -469,7 +469,7 @@ theorem exists_balanced_coloring (c : Matrix ι ι ℕ) (hd : ∀ a, c a a = 0)
     · simp [ha]
   simpa only [htotal, hblock'] using hblock γ γ'
 
-/-- **Balanced coloring with bounded off-diagonal block weight.** A finite symmetric natural-valued matrix with bounded off-diagonal row sums has a balanced
+/-- A finite symmetric natural-valued matrix with bounded off-diagonal row sums has a balanced
 coloring whose blocks between distinct colors have bounded off-diagonal weight. Diagonal entries
 are unrestricted and ignored. -/
 theorem exists_balanced_coloring_offDiagonal (c : Matrix ι ι ℕ) (hK : 2 ≤ K)
@@ -526,7 +526,7 @@ theorem exists_balanced_coloring_offDiagonal (c : Matrix ι ι ℕ) (hK : 2 ≤ 
 
 end Core
 
-/-- **Balanced off-diagonal coloring for matrices indexed by $\{0,\dots,n-1\}$.** The `Fin`-indexed form of `Matrix.exists_balanced_coloring_offDiagonal`. -/
+/-- The `Fin`-indexed form of `Matrix.exists_balanced_coloring_offDiagonal`. -/
 theorem exists_balanced_coloring_fin {K g : ℕ} (hK : 2 ≤ K) (hg : 3 * K ^ 8 ≤ g)
     (c : Matrix (Fin g) (Fin g) ℕ) (hs : c.IsSymm) (P : ℕ)
     (hP : ∀ a, ∑ b with b ≠ a, c a b ≤ P) :

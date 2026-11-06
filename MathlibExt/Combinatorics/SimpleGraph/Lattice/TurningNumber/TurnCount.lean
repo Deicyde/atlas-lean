@@ -41,13 +41,13 @@ open StatMech.Onsager.NoDoubleWind
 
 variable {n : ℕ} [NeZero n]
 
-/-- **Recursion for the x-coordinate of a closed walk.** The `x`-coordinate recursion of a closed walk. See also
+/-- The `x`-coordinate recursion of a closed walk. See also
   `StatMech.Onsager.WalkCrossing.fst_step`. -/
 theorem xco_succ (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n) :
     (pos d (k + 1)).1 = (pos d k).1 + (stepOf (d k)).1 := by
   rw [pos_succ d hclosed k]; rfl
 
-/-- **Recursion for the y-coordinate of a closed walk.** The `y`-coordinate recursion of a closed walk. See also
+/-- The `y`-coordinate recursion of a closed walk. See also
   `StatMech.Onsager.WalkCrossing.snd_step`. -/
 theorem yco_succ (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n) :
     (pos d (k + 1)).2 = (pos d k).2 + (stepOf (d k)).2 := by
@@ -63,7 +63,7 @@ theorem ystep_cases (w : Fin 4) :
     ((w = 0 ∨ w = 2) ∧ (stepOf w).2 = 0) := by
   fin_cases w <;> simp [stepOf]
 
-/-- **No east step leaves a rightmost vertex.** No east step leaves a vertex of maximal `x`-coordinate. -/
+/-- No east step leaves a vertex of maximal `x`-coordinate. -/
 theorem maxx_no_E_out (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n)
     (hmax : ∀ j : Fin n, (pos d j).1 ≤ (pos d k).1) : d k ≠ 0 := by
   intro hE
@@ -73,7 +73,7 @@ theorem maxx_no_E_out (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) 
   have := hmax (k + 1)
   omega
 
-/-- **No west step arrives at a rightmost vertex.** No west step arrives at a vertex of maximal `x`-coordinate. -/
+/-- No west step arrives at a vertex of maximal `x`-coordinate. -/
 theorem maxx_no_W_in (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n)
     (hmax : ∀ j : Fin n, (pos d j).1 ≤ (pos d k).1) : d (k - 1) ≠ 2 := by
   intro hW
@@ -84,7 +84,7 @@ theorem maxx_no_W_in (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (
   have := hmax (k - 1)
   omega
 
-/-- **No south step leaves a lowest vertex.** No south step leaves a vertex of minimal `y`-coordinate. -/
+/-- No south step leaves a vertex of minimal `y`-coordinate. -/
 theorem miny_no_S_out (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n)
     (hmin : ∀ j : Fin n, (pos d k).2 ≤ (pos d j).2) : d k ≠ 3 := by
   intro hS
@@ -94,7 +94,7 @@ theorem miny_no_S_out (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) 
   have := hmin (k + 1)
   omega
 
-/-- **No north step arrives at a lowest vertex.** No north step arrives at a vertex of minimal `y`-coordinate. -/
+/-- No north step arrives at a vertex of minimal `y`-coordinate. -/
 theorem miny_no_N_in (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n)
     (hmin : ∀ j : Fin n, (pos d k).2 ≤ (pos d j).2) : d (k - 1) ≠ 1 := by
   intro hN
@@ -105,11 +105,11 @@ theorem miny_no_N_in (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (
   have := hmin (k - 1)
   omega
 
-/-- **Number of left turns out of a given direction.** The number of left turns of `d` from direction `c` to direction `c + 1`. -/
+/-- The number of left turns of `d` from direction `c` to direction `c + 1`. -/
 def tcount (d : Fin n → Fin 4) (c : Fin 4) : ℕ :=
   (Finset.univ.filter (fun i : Fin n => d i = c ∧ d (i + 1) = c + 1)).card
 
-/-- **Number of straight continuations in a given direction.** The number of straight continuations of `d` in direction `c`. -/
+/-- The number of straight continuations of `d` in direction `c`. -/
 def scount (d : Fin n → Fin 4) (c : Fin 4) : ℕ :=
   (Finset.univ.filter (fun i : Fin n => d i = c ∧ d (i + 1) = c)).card
 
@@ -166,7 +166,7 @@ theorem dcount_in (d : Fin n → Fin 4)
     exact add_ne_left.mpr one_ne_zero (h2.1.symm.trans h1.1)
   rw [hunion, Finset.card_union_of_disjoint hdisj, tcount, scount]
 
-/-- **Every direction is left by equally many left turns.** In a direction sequence without right turns, every direction is left by the same number of left
+/-- In a direction sequence without right turns, every direction is left by the same number of left
   turns. -/
 theorem tcount_shift (d : Fin n → Fin 4)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) (c : Fin 4) :
@@ -200,7 +200,7 @@ theorem cc_eq_sum_tcount (d : Fin n → Fin 4) :
     refine ⟨?_, hc⟩
     rw [hnext, hc, add_sub_cancel_left]
 
-/-- **Left turns are four times the north-to-west turns.** In a direction sequence without right turns, the number of left turns is four times the number
+/-- In a direction sequence without right turns, the number of left turns is four times the number
   of north-to-west turns. -/
 theorem cc_eq_four_mul_tcount (d : Fin n → Fin 4)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) :
@@ -217,7 +217,7 @@ theorem two_le_tcount_one (d : Fin n → Fin 4)
   have := cc_eq_four_mul_tcount d hreflexfree
   omega
 
-/-- **Eight left turns give two north-then-west corners.** Eight or more left turns, without right turns, give two distinct north-then-west corners. -/
+/-- Eight or more left turns, without right turns, give two distinct north-then-west corners. -/
 theorem exists_two_top_corners (d : Fin n → Fin 4)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
     (h8 : 8 ≤ cc d) :
@@ -230,7 +230,7 @@ theorem exists_two_top_corners (d : Fin n → Fin 4)
   have e2 : (1 + 1 : Fin 4) = 2 := by decide
   exact ⟨a, b, hab, ha.2.1, by rw [ha.2.2, e2], hb.2.1, by rw [hb.2.2, e2]⟩
 
-/-- **A unique top corner forces fewer than eight left turns.** If the north-then-west corner is unique, a direction sequence without right turns has fewer than
+/-- If the north-then-west corner is unique, a direction sequence without right turns has fewer than
   eight left turns. -/
 theorem cc_lt_eight_of_uniqueTopCorner (d : Fin n → Fin 4)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)

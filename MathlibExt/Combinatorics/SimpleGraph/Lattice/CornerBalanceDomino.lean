@@ -47,7 +47,7 @@ namespace StatMech
 namespace Lattice
 
 open Classical in
-/-- **Number of straight steps in a boundary orbit.** The number of steps `i < p` in the boundary orbit of `e` with turn `0`. -/
+/-- The number of steps `i < p` in the boundary orbit of `e` with turn `0`. -/
 noncomputable def straightStepCount (K : Set (Site 2)) (e : Dart) (p : ℕ) : ℤ :=
   ((Finset.range p).filter (fun i => turnZ K ((dartNext K)^[i] e) = 0)).card
 
@@ -129,7 +129,7 @@ theorem turningIsFullRevolution_of_balance_eq_base (K : Set (Site 2))
     exact h
   rw [hbase, hbal]
 
-/-- **Corner balance of a simple lattice polygon.** The numbers of reflex and convex corners along the orbit of `a` differ by `4` or `-4`, the
+/-- The numbers of reflex and convex corners along the orbit of `a` differ by `4` or `-4`, the
 corner count of a simple lattice polygon. -/
 def SimplePolygonCornerBalance (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) :
     Prop :=
@@ -153,7 +153,7 @@ theorem unitCell_simplePolygonCornerBalance :
     SimplePolygonCornerBalance unitCell ucBase :=
   (simplePolygonCornerBalance_iff unitCell ucBase).mpr unitCell_turningIsFullRevolution
 
-/-- **Domino as a two-site set.** The two-site set `{(0, 0), (1, 0)}`. -/
+/-- The two-site set `{(0, 0), (1, 0)}`. -/
 noncomputable def domino : Set (Site 2) := {![0, 0], ![1, 0]}
 
 theorem domino_eq_insert : domino = insert (![0, 0] : Site 2) {![1, 0]} := rfl
@@ -183,17 +183,17 @@ theorem not_mem_domino (v : Site 2)
     (h : ¬ ((v 0 = 0 ∧ v 1 = 0) ∨ (v 0 = 1 ∧ v 1 = 0))) : v ∉ domino := by
   rw [mem_domino_coord_iff]; exact h
 
-/-- **Downward domino dart at the left site.** The boundary dart of the domino from `(0, 0)` downwards. -/
+/-- The boundary dart of the domino from `(0, 0)` downwards. -/
 noncomputable def dmD0 : Dart := mkDart ![0, 0] ![0, -1] unitWt_my
-/-- **Leftward domino dart at the left site.** The boundary dart of the domino from `(0, 0)` to the left. -/
+/-- The boundary dart of the domino from `(0, 0)` to the left. -/
 noncomputable def dmD1 : Dart := mkDart ![0, 0] ![-1, 0] unitWt_mx
-/-- **Upward domino dart at the left site.** The boundary dart of the domino from `(0, 0)` upwards. -/
+/-- The boundary dart of the domino from `(0, 0)` upwards. -/
 noncomputable def dmD2 : Dart := mkDart ![0, 0] ![0, 1] unitWt_py
-/-- **Upward domino dart at the right site.** The boundary dart of the domino from `(1, 0)` upwards. -/
+/-- The boundary dart of the domino from `(1, 0)` upwards. -/
 noncomputable def dmD3 : Dart := mkDart ![1, 0] ![0, 1] unitWt_py
-/-- **Rightward domino dart at the right site.** The boundary dart of the domino from `(1, 0)` to the right. -/
+/-- The boundary dart of the domino from `(1, 0)` to the right. -/
 noncomputable def dmD4 : Dart := mkDart ![1, 0] ![1, 0] unitWt_px
-/-- **Downward domino dart at the right site.** The boundary dart of the domino from `(1, 0)` downwards. -/
+/-- The boundary dart of the domino from `(1, 0)` downwards. -/
 noncomputable def dmD5 : Dart := mkDart ![1, 0] ![0, -1] unitWt_my
 
 theorem dmD0_tail : dmD0.tail = ![0, 0] := rfl
@@ -338,7 +338,7 @@ theorem domino_totalTurnZ_six : totalTurnZ domino dmD0 6 = -4 := by
     iterate_dmD_4, dmD4_turnZ, iterate_dmD_5, dmD5_turnZ]
   ring
 
-/-- **Base boundary dart of the domino.** The boundary dart `dmD0` of the domino, as an element of the subtype of boundary darts. -/
+/-- The boundary dart `dmD0` of the domino, as an element of the subtype of boundary darts. -/
 noncomputable def dmBase : {e : Dart // IsBoundaryDart domino e} := ⟨dmD0, dmD0_boundary⟩
 
 theorem dmBase_isPeriodicPt : Function.IsPeriodicPt (dartNextSub domino) 6 dmBase := by

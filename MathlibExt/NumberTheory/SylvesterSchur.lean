@@ -40,9 +40,7 @@ namespace Nat
 
 open SylvesterSchur
 
-/-- **Sylvester–Schur theorem.** Let $n$ and $k$ be natural numbers with $0 < k < n$. Then some
-prime $p > k$ divides the product $n(n+1)\cdots(n+k-1)$ of the $k$ consecutive integers starting
-at $n$. -/
+/-- Sylvester-Schur theorem in Mathlib's `Nat.ascFactorial` API form. -/
 theorem exists_prime_gt_and_dvd_ascFactorial {n k : ℕ} (hk : 0 < k) (hkn : k < n) :
     ∃ p : ℕ, p.Prime ∧ k < p ∧ p ∣ n.ascFactorial k := by
   obtain ⟨p, hp_prime, hp_gt, hp_dvd⟩ :=

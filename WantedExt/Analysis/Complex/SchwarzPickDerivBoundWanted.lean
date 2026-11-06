@@ -41,8 +41,7 @@ public import Mathlib
 
 namespace MathlibExt.Analysis.Complex.SchwarzPickDerivBoundWanted
 
-/-- **Schwarz–Pick lemma, derivative form.** Let $\mathbb{D}=\{z\in\mathbb{C}:|z|<1\}$ be the open
-unit disc. If $f:\mathbb{D}\to\mathbb{D}$ is holomorphic, then
+/-- Prove that if $f:\mathbb{D}\to\mathbb{D}$ is holomorphic, then
 
 \[
 \frac{|f'(z)|}{1-|f(z)|^2}\le \frac{1}{1-|z|^2}\qquad\text{for all } z\in\mathbb{D}.

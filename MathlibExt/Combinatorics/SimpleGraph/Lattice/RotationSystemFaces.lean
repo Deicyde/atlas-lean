@@ -62,7 +62,7 @@ theorem rsf_orbit_head_not_mem (C : Set (Site 2)) {e : Dart} (he : IsBoundaryDar
     ((dartNext C)^[k] e).head ∉ C :=
   (iterate_isBoundaryDart C _ he k).2
 
-/-- **Facial orbit of a boundary dart.** The orbit of a boundary dart of `C`, as a connected component of the successor graph on
+/-- The orbit of a boundary dart of `C`, as a connected component of the successor graph on
 boundary darts. -/
 noncomputable def rsf_facialOrbit (C : Set (Site 2)) (e : {d : Dart // IsBoundaryDart C d}) :
     (dartSuccGraph C).ConnectedComponent :=
@@ -159,7 +159,7 @@ theorem rsf_fcb_reachable_of_offSupportComponent_eq {a : Site 2}
   obtain ⟨p, hp⟩ := offSupport_reachable_to_offSupportWalk Vc hv u.2
   exact (fcb_induce_reachable_iff Vc).mpr ⟨p, hp⟩
 
-/-- **Boundary darts of a component off a closed walk.** The set of boundary darts of a connected component of the sites off the support of `Vc`. -/
+/-- The set of boundary darts of a connected component of the sites off the support of `Vc`. -/
 noncomputable def rsf_componentDarts {a : Site 2} (Vc : (hypercubicLattice 2).Walk a a) :
     (fcb_offComplGraph Vc).ConnectedComponent → Set Dart :=
   ConnectedComponent.lift
@@ -190,7 +190,7 @@ theorem rsf_componentCount_le_facialOrbitRange {a : Site 2} (Vc : (hypercubicLat
       = Nat.card (Set.range (rsf_componentDarts Vc)) :=
   (Nat.card_range_of_injective (rsf_componentDarts_injective Vc)).symm
 
-/-- **Facial orbits cover the components of the complement.** The boundary dart sets of the components of the complement of `Vc` are exactly the members of
+/-- The boundary dart sets of the components of the complement of `Vc` are exactly the members of
 `𝓕`. -/
 def rsf_FacialOrbitsCoverComponents {a : Site 2} (Vc : (hypercubicLattice 2).Walk a a)
     (𝓕 : Set (Set Dart)) : Prop :=

@@ -169,7 +169,7 @@ private theorem coeff_eq_of_ghost_eq (hpR : (p : R) ∈ nonZeroDivisors R) (n : 
 
 end WittGhostAux
 
-/-- **Ghost components determine Witt vector coefficients.** Ghost components determine Witt vector coefficients when `p` is a
+/-- Ghost components determine Witt vector coefficients when `p` is a
 non-zero-divisor. -/
 theorem WittVector.coeff_eq_coeff_of_forall_ghostComponent_eq {R : Type u}
     [CommRing R] (p : ℕ) [Fact p.Prime] (hp : (p : R) ∈ nonZeroDivisors R)
@@ -178,7 +178,7 @@ theorem WittVector.coeff_eq_coeff_of_forall_ghostComponent_eq {R : Type u}
     ∀ k < n, x.coeff k = y.coeff k :=
   WittGhostAux.coeff_eq_of_ghost_eq hp n x y h
 
-/-- **Ghost data compatible with a Frobenius lift come from a Witt vector.** Compatible ghost data with a Frobenius lift is realized by a Witt
+/-- Compatible ghost data with a Frobenius lift is realized by a Witt
 vector. -/
 theorem WittVector.exists_forall_ghostComponent_eq_of_sub_frobeniusLift_mem
     {R : Type u} [CommRing R] (p : ℕ) [Fact p.Prime] (σ : R →+* R)
@@ -321,7 +321,7 @@ private theorem main {p : ℕ} [Fact p.Prime] {F : Type u} [Field F] [Finite F] 
 
 end WittRigidAux
 
-/-- **Homomorphisms from Witt vectors over finite fields commute with Frobenius.** Ring homomorphisms out of Witt vectors over a finite field commute with
+/-- Ring homomorphisms out of Witt vectors over a finite field commute with
 Frobenius. -/
 theorem WittVector.ringHom_map_frobenius_of_finite (p : ℕ) [Fact p.Prime]
     {F : Type u} [Field F] [Finite F] [CharP F p] {k : Type v} [CommRing k] [CharP k p]
@@ -405,7 +405,7 @@ private theorem main (hp : (p : S) ∈ nonZeroDivisors S)
 
 end WittCoeffSpanAux
 
-/-- **Divisibility of Witt coefficients from divisible ghost components.** If a ghost component of a Witt vector is highly `p`-divisible and the
+/-- If a ghost component of a Witt vector is highly `p`-divisible and the
 reduction mod `p` is reduced, all lower coefficients lie in `(p)`. -/
 theorem WittVector.coeff_mem_span_of_ghostComponent_mem_span_pow_of_isReduced
     {S : Type u} [CommRing S] (p : ℕ) [Fact p.Prime] (hp : (p : S) ∈ nonZeroDivisors S)

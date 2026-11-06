@@ -36,22 +36,16 @@ open Filter MeasureTheory Set
 
 noncomputable section
 
-/-- **The maximum term tends to infinity along logarithmic radii.** Let $f$ be a transcendental
-entire function with Taylor coefficients $a_n$ at the origin and maximum term
-$\mu(r) = \sup_{n \ge 0} |a_n| |r|^n$. Then $\mu(e^x) \to \infty$ as $x \to \infty$. -/
+/-- The maximum Taylor term still tends to infinity along logarithmic radii. -/
 theorem tendsto_wimanMaximumTerm_exp_atTop
     (f : ℂ → ℂ) (hf : Differentiable ℂ f)
     (htrans : IsTranscendental f) :
     Tendsto (fun x : ℝ => wimanMaximumTerm f (Real.exp x)) atTop atTop :=
   (tendsto_wimanMaximumTerm_atTop f hf htrans).comp Real.tendsto_exp_atTop
 
-/-- **Wiman's inequality with exponent $2/3$ at arbitrarily large radii.** Let $f$ be a
-transcendental entire function with Taylor coefficients $a_n$ at the origin, maximum modulus
-$M(r) = \sup_{|z| = |r|} |f(z)|$ and maximum term $\mu(r) = \sup_{n \ge 0} |a_n| |r|^n$. Then
-for every real $R$ there is a real $r > R$ with $M(r) \le \mu(r) (\log \mu(r))^{2/3}$.
-
-Source: Filevych (2003), Matematychni Studii 20(2), 215–221. This is a strict corollary of,
-not the full theorem stated in, that paper. -/
+/-- For a transcendental entire function, Wiman radii with exponent `2 / 3`
+occur arbitrarily far out. This is a strict corollary of, not the full theorem
+stated in, Filevych (2003). -/
 theorem exists_wiman_radius_two_thirds
     (f : ℂ → ℂ) (hf : Differentiable ℂ f)
     (htrans : IsTranscendental f) (R : ℝ) :

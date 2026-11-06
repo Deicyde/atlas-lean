@@ -170,14 +170,11 @@ private theorem finite_of_finiteType_int {F : Type*} [Field F] [Algebra ℤ F]
       (Submodule.IsPrincipal.generator (RingHom.ker (algebraMap ℤ F))).natAbs)
 
 /--
-**Malcev's theorem on linear groups.** Let $K$ be a field and $n$ a natural number. Every finitely
-generated subgroup of the general linear group $\mathrm{GL}_n(K)$ is residually finite.
-
-Proves `Wanted` entry `malcev_residuallyFinite`.
-
-Source: A.
+Every finitely generated subgroup of `GL_n(K)` over a field `K` is residually finite. Source: A.
 I. Malcev, Mat. Sb. 8 (1940) 405–422; Wehrfritz, Infinite Linear Groups; Lean states subgroup `G ≤
 GL_n(K)` with `Group.FG G`.
+
+Proves `Wanted` entry `malcev_residuallyFinite`.
 -/
 theorem malcev_residuallyFinite
     {K : Type*} [Field K] {n : ℕ}

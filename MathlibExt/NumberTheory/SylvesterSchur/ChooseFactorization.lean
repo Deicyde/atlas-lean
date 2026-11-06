@@ -31,10 +31,8 @@ open Finset Nat
 
 /-! ### Binomial factorization bounds -/
 
-/-- **Truncating the prime factorization of a binomial coefficient.** Let $r \le N$ be natural
-numbers such that every prime divisor of $\binom{N}{r}$ is at most $r$. Then
-$\prod_{p=0}^{r} p^{v_p(\binom{N}{r})} = \binom{N}{r}$, where $v_p(m)$ is the exponent of $p$ in
-the prime factorization of $m$ (zero when $p$ is not prime). -/
+/-- If every prime divisor of `Nat.choose N r` is at most `r`, then the product formula for
+`Nat.choose N r` can be truncated from primes up to `N` to candidates up to `r`. -/
 theorem choose_eq_prod_small_prime_powers_of_no_large {N r : ℕ} (hrN : r ≤ N)
     (hsmall : ∀ p : ℕ, p.Prime → p ∣ Nat.choose N r → p ≤ r) :
     (∏ p ∈ Finset.range (r + 1), p ^ (Nat.choose N r).factorization p) =
@@ -56,9 +54,9 @@ theorem choose_eq_prod_small_prime_powers_of_no_large {N r : ℕ} (hrN : r ≤ N
             · rw [Nat.factorization_eq_zero_of_not_prime _ hp, pow_zero]
     _ = Nat.choose N r := Nat.prod_pow_factorization_choose N r hrN
 
-/-- **Prime-counting bound for binomial coefficients without large prime factors.** Let $0 < N$
-and $r \le N$ be natural numbers such that every prime divisor of $\binom{N}{r}$ is at most $r$.
-Then $\binom{N}{r} \le N^{\pi(r)}$, where $\pi(r)$ is the number of primes $p \le r$. -/
+/-- The same no-large-prime hypothesis gives the sharper Erdős factorization bound with exponent
+`Nat.primeCounting r`. The remaining hard part of the classical proof is to contradict this bound
+using lower estimates for the relevant binomial coefficient. -/
 theorem choose_le_top_pow_primeCounting_of_no_large {N r : ℕ} (hN : 0 < N) (hrN : r ≤ N)
     (hsmall : ∀ p : ℕ, p.Prime → p ∣ Nat.choose N r → p ≤ r) :
     Nat.choose N r ≤ N ^ Nat.primeCounting r := by
@@ -79,27 +77,23 @@ theorem choose_le_top_pow_primeCounting_of_no_large {N r : ℕ} (hN : 0 < N) (hr
           rw [Nat.primeCounting, ← Nat.primesBelow_card_eq_primeCounting' (r + 1),
             Nat.primesBelow]
 
-/-- **Elementary power bound for binomial coefficients without large prime factors.** Let
-$0 < N$ and $2 \le r \le N$ be natural numbers such that every prime divisor of $\binom{N}{r}$
-is at most $r$. Then $\binom{N}{r} \le N^{r-1}$. -/
+/-- Replacing `Nat.primeCounting r` by the elementary bound `r - 1` gives a slightly coarser
+version of the preceding no-large-prime estimate. -/
 theorem choose_le_top_pow_sub_one_of_no_large {N r : ℕ} (hN : 0 < N) (hr : 2 ≤ r)
     (hrN : r ≤ N) (hsmall : ∀ p : ℕ, p.Prime → p ∣ Nat.choose N r → p ≤ r) :
     Nat.choose N r ≤ N ^ (r - 1) := by
   exact (choose_le_top_pow_primeCounting_of_no_large hN hrN hsmall).trans
     (Nat.pow_le_pow_right hN (primeCounting_le_sub_one hr))
 
-/-- **Half-exponent bound for binomial coefficients without large prime factors.** Let $0 < N$
-and $r \le N$ be natural numbers such that every prime divisor of $\binom{N}{r}$ is at most $r$.
-Then $\binom{N}{r} \le N^{\lfloor r/2 \rfloor + 1}$. -/
+/-- Using the already-formalized prime-counting bound `π(r) ≤ r / 2 + 1` gives a sharper
+no-large-prime estimate. -/
 theorem choose_le_top_pow_half_add_one_of_no_large {N r : ℕ} (hN : 0 < N) (hrN : r ≤ N)
     (hsmall : ∀ p : ℕ, p.Prime → p ∣ Nat.choose N r → p ≤ r) :
     Nat.choose N r ≤ N ^ (r / 2 + 1) := by
   exact (choose_le_top_pow_primeCounting_of_no_large hN hrN hsmall).trans
     (Nat.pow_le_pow_right hN (primeCounting_le_half_add_one r))
 
-/-- **Three-eighths exponent bound for binomial coefficients without large prime factors.** Let
-$0 < N$ and $38 \le r \le N$ be natural numbers such that every prime divisor of
-$\binom{N}{r}$ is at most $r$. Then $\binom{N}{r} \le N^{\lfloor 3r/8 \rfloor}$. -/
+/-- Using the project `π(r) ≤ 3r/8` estimate gives the corresponding no-large-prime bound. -/
 theorem choose_le_top_pow_three_mul_div_eight_of_no_large {N r : ℕ} (hN : 0 < N)
     (hr : 38 ≤ r) (hrN : r ≤ N)
     (hsmall : ∀ p : ℕ, p.Prime → p ∣ Nat.choose N r → p ≤ r) :
@@ -244,11 +238,8 @@ private lemma choose_eq_prod_prime_factorization_layers {N r : ℕ} (hrN : r ≤
             (s := S) (p := fun p => j < (Nat.choose N r).factorization p)
             (f := fun p => p)).symm
 
-/-- **Erdős root-layer bound for binomial coefficients without large prime factors.** Let
-$0 < N$ and $r \le N$ be natural numbers such that every prime divisor of $\binom{N}{r}$ is at
-most $r$. Write $P(m)$ for the product of all primes $p \le m$ and let
-$L = \lfloor \log_2 N \rfloor$. Then
-$\binom{N}{r} \le \prod_{k=1}^{L} P(\lfloor N^{1/k} \rfloor)$. -/
+/-- Full Erdős prime-power layer bound. Under the no-large-prime hypothesis, the binomial
+coefficient is bounded by the product of primorials at successive roots of `N`. -/
 theorem choose_le_prod_primorial_nthRoot_of_no_large {N r : ℕ} (hN : 0 < N)
     (hrN : r ≤ N) (hsmall : ∀ p : ℕ, p.Prime → p ∣ Nat.choose N r → p ≤ r) :
     Nat.choose N r ≤
@@ -260,13 +251,8 @@ theorem choose_le_prod_primorial_nthRoot_of_no_large {N r : ℕ} (hN : 0 < N)
       (N := N) (r := r) (j := j) hN
     simpa [Finset.filter_filter, and_assoc, and_left_comm, and_comm] using hlayer
 
-/-- **Erdős layer bound for binomial coefficients without large prime factors.** Let $0 < N$ and
-$r \le N$ be natural numbers such that every prime divisor of $\binom{N}{r}$ is at most $r$.
-Write $P(m)$ for the product of all primes $p \le m$ and let $L = \lfloor \log_2 N \rfloor$. Then
-$\binom{N}{r} \le \prod_{k=1}^{L} a_k$, where $a_1 = P(r)$ and $a_k = P(\lfloor N^{1/k} \rfloor)$
-for $k \ge 2$.
-
-This matches the product estimate in Erdős's proof. -/
+/-- Sharpened full Erdős layer bound.  The first layer uses the no-large-prime cutoff `r`;
+subsequent layers use the root bounds.  This matches the product estimate in Erdős's proof. -/
 theorem choose_le_prod_erdos_layers_of_no_large {N r : ℕ} (hN : 0 < N)
     (hrN : r ≤ N) (hsmall : ∀ p : ℕ, p.Prime → p ∣ Nat.choose N r → p ≤ r) :
     Nat.choose N r ≤
@@ -283,11 +269,8 @@ theorem choose_le_prod_erdos_layers_of_no_large {N r : ℕ} (hN : 0 < N)
         (N := N) (r := r) (j := j) hN
       simpa [hj0, Finset.filter_filter, and_assoc, and_left_comm, and_comm] using hlayer
 
-/-- **Erdős layer bound with a one-third first layer.** Let $N \ge 6$ and $r$ be natural numbers
-with $2r \le N$ (hence $r \le N$) such that every prime divisor of $\binom{N}{r}$ is at most $r$.
-Write $P(m)$ for the product of all primes $p \le m$ and let $L = \lfloor \log_2 N \rfloor$. Then
-$\binom{N}{r} \le \prod_{k=1}^{L} a_k$, where $a_1 = P(\lfloor N/3 \rfloor)$ and
-$a_k = P(\lfloor N^{1/k} \rfloor)$ for $k \ge 2$. -/
+/-- Sharpened Erdős layer bound with the `N / 3` first layer. The first-layer cutoff follows
+from `Nat.factorization_choose_of_lt_three_mul`. -/
 theorem choose_le_prod_erdos_div_three_layers_of_no_large {N r : ℕ} (hN : 0 < N)
     (hrN : r ≤ N) (h2rN : 2 * r ≤ N) (hN6 : 6 ≤ N)
     (hsmall : ∀ p : ℕ, p.Prime → p ∣ Nat.choose N r → p ≤ r) :

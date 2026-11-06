@@ -34,8 +34,7 @@ open scoped ENNReal
 
 namespace Cslib.Algorithms.Lean.Matrix
 
-/-- **The sharp Freivalds example has a wrong product.** Let $A = B = (1)$ and $C = (0)$ be
-$1 \times 1$ matrices over $\mathbb{Z}/2\mathbb{Z}$. Then $AB \neq C$. -/
+/-- The sharpness inputs really have an incorrect matrix product. -/
 theorem freivalds_one_wrong :
     freivaldsMatrix
         (_root_.Vector.replicate 1 (_root_.Vector.replicate 1 (1 : ZMod 2))) *
@@ -47,10 +46,7 @@ theorem freivalds_one_wrong :
   have first := congrFun (congrFun equal 0) 0
   simp [freivaldsMatrix, _root_.Matrix.mul_apply, _root_.Vector.get_replicate] at first
 
-/-- **The sharp Freivalds example accepts exactly the zero seed.** Let $A = B = (1)$ and
-$C = (0)$ be $1 \times 1$ matrices over $\mathbb{Z}/2\mathbb{Z}$. For every seed
-$r \in (\mathbb{Z}/2\mathbb{Z})^1$, the Freivalds trial on $A$, $B$, $C$ with seed $r$, which
-compares $A(Br)$ with $Cr$, accepts if and only if the single entry $r_0$ of $r$ is $0$. -/
+/-- The actual one-by-one incorrect-product trial accepts exactly the zero bit. -/
 theorem freivaldsTrial_one_accept_iff (r : Fin 1 → ZMod 2) :
     (freivaldsTrial
       (_root_.Vector.replicate 1 (_root_.Vector.replicate 1 (1 : ZMod 2)))
@@ -69,9 +65,7 @@ theorem freivaldsTrial_one_accept_iff (r : Fin 1 → ZMod 2) :
     subst i
     simp [freivaldsMatrix, _root_.Matrix.mulVec_apply_eq_sum, zero]
 
-/-- **The sharp Freivalds example has exactly one accepted seed.** Let $A = B = (1)$ and
-$C = (0)$ be $1 \times 1$ matrices over $\mathbb{Z}/2\mathbb{Z}$. Exactly one seed
-$r \in (\mathbb{Z}/2\mathbb{Z})^1$ is accepted by the Freivalds trial on $A$, $B$, $C$. -/
+/-- Exactly one complete one-dimensional seed is accepted by the wrong-product trial. -/
 theorem freivaldsTrial_one_acceptanceCard :
     Fintype.card {r : Fin 1 → ZMod 2 //
       (freivaldsTrial
@@ -96,13 +90,7 @@ theorem freivaldsTrial_one_acceptanceCard :
   }
   exact Fintype.card_unique
 
-/-- **The sharp Freivalds example is accepted with probability one half.** Let $A = B = (1)$
-and $C = (0)$ be $1 \times 1$ matrices over $\mathbb{Z}/2\mathbb{Z}$. When the seed is drawn
-uniformly from $(\mathbb{Z}/2\mathbb{Z})^1$, the Freivalds trial on $A$, $B$, $C$ accepts with
-probability exactly $1/2$.
-
-Since $AB \neq C$, this shows that the bound $1/2$ on the probability that one trial accepts a
-wrong product cannot be improved. -/
+/-- The actual wrong-product trial attains the one-half error bound. -/
 theorem freivaldsTrialLaw_one_sharp :
     freivaldsTrialLaw
       (_root_.Vector.replicate 1 (_root_.Vector.replicate 1 (1 : ZMod 2)))
@@ -112,14 +100,7 @@ theorem freivaldsTrialLaw_one_sharp :
   rw [freivaldsTrialLaw_acceptance, freivaldsTrial_one_acceptanceCard]
   simp
 
-/-- **Exact acceptance probability of repeated trials on the sharp Freivalds example.** Let
-$A = B = (1)$ and $C = (0)$ be $1 \times 1$ matrices over $\mathbb{Z}/2\mathbb{Z}$, and let $k$
-be a natural number. Run $k$ Freivalds trials on $A$, $B$, $C$ with seeds drawn independently and
-uniformly from $(\mathbb{Z}/2\mathbb{Z})^1$, accepting exactly when every trial accepts. Then the
-run accepts with probability exactly $2^{-k}$.
-
-Since $AB \neq C$, the bound $2^{-k}$ on the probability that $k$ trials accept a wrong product
-cannot be improved. -/
+/-- The same incorrect inputs attain the repeated error bound for every trial count. -/
 theorem freivaldsRepeatLaw_one_sharp (k : Nat) :
     freivaldsRepeatLaw k
       (_root_.Vector.replicate 1 (_root_.Vector.replicate 1 (1 : ZMod 2)))

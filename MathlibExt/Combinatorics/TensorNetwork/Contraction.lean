@@ -32,7 +32,7 @@ open Finset
 
 variable {J J' σ τ : Type*}
 
-/-- **Merging vertices of a factored tensor network.** Merge vertices along `χ`, retaining source states and labels on their classes and padding all
+/-- Merge vertices along `χ`, retaining source states and labels on their classes and padding all
 other coordinates with the supplied defaults. -/
 def merge [Fintype J] [LinearOrder J] [LinearOrder J'] (N : Factored J σ τ)
     (χ : J → J') (defaultState : σ) (defaultLabel : τ) :
@@ -49,7 +49,7 @@ def merge [Fintype J] [LinearOrder J] [LinearOrder J'] (N : Factored J σ τ)
       N.f p.1 p.2 (z p.1) (t (if G < G' then p else p.swap))
   c G G' := ∑ p : J × J with χ p.1 = G ∧ χ p.2 = G', N.c p.1 p.2
 
-/-- **Interaction of merged classes in increasing order.** The interaction of two increasingly ordered classes is the product of all source interactions
+/-- The interaction of two increasingly ordered classes is the product of all source interactions
 crossing between them. -/
 theorem merge_interaction_lt [Fintype J] [LinearOrder J] [LinearOrder J']
     (N : Factored J σ τ) (χ : J → J') (defaultState : σ) (defaultLabel : τ)
@@ -69,7 +69,7 @@ theorem merge_interaction_lt [Fintype J] [LinearOrder J] [LinearOrder J']
     h.not_gt, ite_false, h2]
   rw [← Fintype.prod_sum_eq_sum_piFinsetOn_mul]
 
-/-- **Interaction of two distinct merged classes.** The interaction of two distinct classes is the product of all source interactions crossing
+/-- The interaction of two distinct classes is the product of all source interactions crossing
 between them, oriented from the first class to the second. -/
 theorem merge_interaction [Fintype J] [LinearOrder J] [LinearOrder J']
     (N : Factored J σ τ) (χ : J → J') (defaultState : σ) (defaultLabel : τ)
@@ -173,7 +173,7 @@ private theorem merge_summand [Fintype J] [LinearOrder J] [Fintype J'] [LinearOr
   rw [h1, h2, prod_orient χ F (fun p => N.interaction_comm _ _ _ _), mul_assoc,
     Finset.prod_filter_mul_prod_filter_not]
 
-/-- **Merging vertices preserves network value.** Merging along any map preserves the exact integer-valued network value. -/
+/-- Merging along any map preserves the exact integer-valued network value. -/
 theorem value_merge [Fintype J] [LinearOrder J] [Fintype J'] [LinearOrder J']
     (N : Factored J σ τ) (χ : J → J') (defaultState : σ) (defaultLabel : τ) :
     (N.merge χ defaultState defaultLabel).value = N.value := by
@@ -203,7 +203,7 @@ theorem value_merge [Fintype J] [LinearOrder J] [Fintype J'] [LinearOrder J']
   · intro z _
     exact merge_summand N χ defaultState defaultLabel z
 
-/-- **Number of states of a merged vertex.** The number of merged states is the product of the state-set sizes in the class. -/
+/-- The number of merged states is the product of the state-set sizes in the class. -/
 theorem card_merge_S [Fintype J] [LinearOrder J] [LinearOrder J']
     (N : Factored J σ τ) (χ : J → J') (defaultState : σ) (defaultLabel : τ)
     (G : J') :

@@ -78,7 +78,7 @@ section LinearAlgebra
 variable {𝕜 : Type*} [Field 𝕜] {E : Type*} [AddCommGroup E] [Module 𝕜 E]
 variable {T : Module.End 𝕜 E}
 
-/-- **Eigenvectors for nonzero eigenvalues lie in the range.** An eigenvector for a nonzero eigenvalue lies in the range: if
+/-- An eigenvector for a nonzero eigenvalue lies in the range: if
 `T v = μ • v` with `μ ≠ 0`, then `v = T (μ⁻¹ • v)`. -/
 theorem Module.End.eigenvector_mem_range_of_hasEigenvector {μ : 𝕜} {v : E}
     (h : T.HasEigenvector μ v) (hμ : μ ≠ 0) : v ∈ LinearMap.range T := by
@@ -86,7 +86,7 @@ theorem Module.End.eigenvector_mem_range_of_hasEigenvector {μ : 𝕜} {v : E}
   refine ⟨μ⁻¹ • v, ?_⟩
   rw [map_smul, hTv, smul_smul, inv_mul_cancel₀ hμ, one_smul]
 
-/-- **Independent eigenvectors for distinct nonzero eigenvalues.** Choose one eigenvector for each nonzero eigenvalue of `T`. The chosen
+/-- Choose one eigenvector for each nonzero eigenvalue of `T`. The chosen
 eigenvectors are linearly independent (eigenvectors for distinct eigenvalues)
 and all lie in the range of `T`. -/
 theorem Module.End.exists_linearIndependent_eigenvectors :
@@ -158,7 +158,7 @@ section Compactness
 variable {𝕜 : Type*} [RCLike 𝕜] {E : Type*} [NormedAddCommGroup E] [NormedSpace 𝕜 E]
   {T : E →L[𝕜] E}
 
-/-- **Finite-rank operators are compact.** A finite-rank operator is compact: it factors through its
+/-- A finite-rank operator is compact: it factors through its
 finite-dimensional range, and every continuous linear map out of a
 finite-dimensional (hence locally compact) space is compact. -/
 theorem isCompactOperator_of_finiteDimensional_range
@@ -192,7 +192,7 @@ section Spectrum
 variable {𝕜 : Type*} [RCLike 𝕜] {E : Type*} [NormedAddCommGroup E] [NormedSpace 𝕜 E]
   [CompleteSpace E] {T : E →L[𝕜] E}
 
-/-- **Nonzero spectral values of a finite-rank operator are eigenvalues.** The spectrum of a finite-rank operator is contained in
+/-- The spectrum of a finite-rank operator is contained in
 `{0} ∪ {eigenvalues}`: every nonzero spectral value is an eigenvalue, by
 the Fredholm alternative for compact operators. -/
 theorem spectrum_subset_insert_zero_hasEigenvalue
@@ -207,14 +207,14 @@ theorem spectrum_subset_insert_zero_hasEigenvalue
     rw [Set.mem_insert_iff]
     exact Or.inr (hiff.mpr hμ)
 
-/-- **Eigenvalues of a finite-rank operator lie in its spectrum.** Every eigenvalue of a finite-rank operator lies in its spectrum. -/
+/-- Every eigenvalue of a finite-rank operator lies in its spectrum. -/
 theorem hasEigenvalue_subset_spectrum :
     {μ | Module.End.HasEigenvalue (T : E →ₗ[𝕜] E) μ} ⊆ spectrum 𝕜 T := by
   intro μ hμ
   rw [ContinuousLinearMap.spectrum_eq]
   exact Module.End.HasEigenvalue.mem_spectrum hμ
 
-/-- **Spectrum of a finite-rank operator is finite.** The spectrum of a finite-rank operator is finite. -/
+/-- The spectrum of a finite-rank operator is finite. -/
 theorem finite_spectrum_of_finiteDimensional_range
     (hF : FiniteDimensional 𝕜 (LinearMap.range (T : E →ₗ[𝕜] E))) :
     (spectrum 𝕜 T).Finite := by
@@ -233,7 +233,7 @@ theorem finite_spectrum_of_finiteDimensional_range
       · exact Or.inr ⟨h, hμ0⟩
   exact (hfin.insert 0).subset hsub'
 
-/-- **Bound on the size of the spectrum of a finite-rank operator.** The spectrum of a finite-rank operator has at most
+/-- The spectrum of a finite-rank operator has at most
 `finrank (range T) + 1` points. -/
 theorem ncard_spectrum_le_finrank_range_add_one
     (hF : FiniteDimensional 𝕜 (LinearMap.range (T : E →ₗ[𝕜] E))) :

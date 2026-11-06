@@ -69,32 +69,32 @@ namespace MathlibExt.Biology.PopulationGenetics.Coalescent
 
 /-! ### Tajima's constants -/
 
-/-- **Tajima's constant $a_1$.** `a₁ = ∑_{i=1}^{n-1} 1/i` (Tajima 1989). -/
+/-- `a₁ = ∑_{i=1}^{n-1} 1/i` (Tajima 1989). -/
 def tajimaA1 (n : ℕ) : ℝ := ∑ i ∈ Ico 1 n, (i : ℝ)⁻¹
 
-/-- **Tajima's constant $a_2$.** `a₂ = ∑_{i=1}^{n-1} 1/i²` (Tajima 1989). -/
+/-- `a₂ = ∑_{i=1}^{n-1} 1/i²` (Tajima 1989). -/
 def tajimaA2 (n : ℕ) : ℝ := ∑ i ∈ Ico 1 n, ((i : ℝ) ^ 2)⁻¹
 
-/-- **Tajima's constant $b_1$.** `b₁ = (n + 1) / (3 (n - 1))` (Tajima 1989), for `n ≥ 2`. -/
+/-- `b₁ = (n + 1) / (3 (n - 1))` (Tajima 1989), for `n ≥ 2`. -/
 def tajimaB1 (n : ℕ) : ℝ := ((n : ℝ) + 1) / (3 * ((n : ℝ) - 1))
 
-/-- **Tajima's constant $b_2$.** `b₂ = 2 (n² + n + 3) / (9 n (n - 1))` (Tajima 1989), for `n ≥ 2`. -/
+/-- `b₂ = 2 (n² + n + 3) / (9 n (n - 1))` (Tajima 1989), for `n ≥ 2`. -/
 def tajimaB2 (n : ℕ) : ℝ := 2 * ((n : ℝ) ^ 2 + n + 3) / (9 * n * ((n : ℝ) - 1))
 
-/-- **Tajima's constant $c_1$.** `c₁ = b₁ - 1/a₁` (Tajima 1989), for `n ≥ 2`. -/
+/-- `c₁ = b₁ - 1/a₁` (Tajima 1989), for `n ≥ 2`. -/
 def tajimaC1 (n : ℕ) : ℝ := tajimaB1 n - 1 / tajimaA1 n
 
-/-- **Tajima's constant $c_2$.** `c₂ = b₂ - (n + 2)/(a₁ n) + a₂/a₁²` (Tajima 1989), for `n ≥ 2`. -/
+/-- `c₂ = b₂ - (n + 2)/(a₁ n) + a₂/a₁²` (Tajima 1989), for `n ≥ 2`. -/
 def tajimaC2 (n : ℕ) : ℝ :=
   tajimaB2 n - ((n : ℝ) + 2) / (tajimaA1 n * n) + tajimaA2 n / tajimaA1 n ^ 2
 
-/-- **Tajima's constant $e_1$.** `e₁ = c₁ / a₁` (Tajima 1989), for `n ≥ 2`. -/
+/-- `e₁ = c₁ / a₁` (Tajima 1989), for `n ≥ 2`. -/
 def tajimaE1 (n : ℕ) : ℝ := tajimaC1 n / tajimaA1 n
 
-/-- **Tajima's constant $e_2$.** `e₂ = c₂ / (a₁² + a₂)` (Tajima 1989), for `n ≥ 2`. -/
+/-- `e₂ = c₂ / (a₁² + a₂)` (Tajima 1989), for `n ≥ 2`. -/
 def tajimaE2 (n : ℕ) : ℝ := tajimaC2 n / (tajimaA1 n ^ 2 + tajimaA2 n)
 
-/-- **Tajima's $a_1$ is a harmonic number.** `a₁` is the harmonic number `H_{n-1}`. -/
+/-- `a₁` is the harmonic number `H_{n-1}`. -/
 theorem tajimaA1_eq_harmonic (n : ℕ) : tajimaA1 n = (harmonic (n - 1) : ℝ) := by
   induction n with
   | zero => simp [tajimaA1]
@@ -201,10 +201,10 @@ section Pairwise
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω} {μ : Measure Ω} {n : ℕ}
 
-/-- **Pairs of genes in a sample.** The pairs of genes in a sample of size `n`. -/
+/-- The pairs of genes in a sample of size `n`. -/
 abbrev samplePairs (n : ℕ) : Finset (Finset (Fin n)) := (univ : Finset (Fin n)).powersetCard 2
 
-/-- **Mean number of pairwise differences.** The mean number of pairwise differences `π = C(n, 2)⁻¹ ∑_{i<j} D_{ij}` (Tajima 1983), where
+/-- The mean number of pairwise differences `π = C(n, 2)⁻¹ ∑_{i<j} D_{ij}` (Tajima 1983), where
 `D s` is the number of sites at which the two sequences of the pair `s` differ. -/
 def meanPairDiff (n : ℕ) (D : Finset (Fin n) → Ω → ℝ) : Ω → ℝ :=
   fun ω => ((n.choose 2 : ℕ) : ℝ)⁻¹ * ∑ s ∈ samplePairs n, D s ω

@@ -20,9 +20,7 @@ public import Mathlib.SetTheory.Ordinal.Rank
 -- Source: Lean Definition Library (Airtable) records: Logic 6, Logic 7, Logic 22, Logic 38
 
 /-!
-# Trees in set theory
-
-Trees, the levels of a well-founded partial order, and normal trees at a cardinal.
+# `MathlibExt.SetTheory.Tree.Basic`
 
 ## References
 
@@ -34,7 +32,7 @@ namespace MetaMathlibExt
 
 -- Logic 6: Tree
 
-/-- **Tree (set theory).** A *tree* is a partially ordered set (T, <) iwith the property that for each x ∈ T, the set {  y
+/-- A *tree* is a partially ordered set (T, <) iwith the property that for each x ∈ T, the set {  y
 ∈ T : y < x  } of all predecessors of x is well-ordered by <).
 -/
 def IsTree.{u} (α : Type u) [PartialOrder α] [WellFoundedLT α] : Prop :=
@@ -42,7 +40,7 @@ def IsTree.{u} (α : Type u) [PartialOrder α] [WellFoundedLT α] : Prop :=
 
 -- Logic 7: Level of a well-founded partial ordering
 
-/-- **Level of a well-founded partial order.** For an ordinal α, the *α-th level* of a well-founded partial order (T, <) is Lev_α(T) = {  x ∈ T
+/-- For an ordinal α, the *α-th level* of a well-founded partial order (T, <) is Lev_α(T) = {  x ∈ T
 : ht(x) = α  }, the set of elements whose height equals α.
 -/
 def level.{u} (α : Type u) [PartialOrder α] [WellFoundedLT α] (a : Ordinal.{u}) : Set α :=
@@ -60,7 +58,7 @@ open Cardinal in
 
 -- Logic 38: Normal tree
 
-/-- **Normal tree at a cardinal.** Let κ be a cardinal and (α,≤) a well-founded partial order; for x∈α let rank(x) denote the rank
+/-- Let κ be a cardinal and (α,≤) a well-founded partial order; for x∈α let rank(x) denote the rank
 of x in the well-founded relation <. α is a *normal tree at κ* if:
 
 \begin{enumerate}

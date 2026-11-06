@@ -55,13 +55,13 @@ section Basic
 variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H]
   (A : H →L[ℂ] H)
 
-/-- **Nonzero scalar operators are units.** A nonzero scalar operator is a unit. -/
+/-- A nonzero scalar operator is a unit. -/
 theorem isUnit_smul_one (z : ℂ) (hz : z ≠ 0) : IsUnit (z • (1 : H →L[ℂ] H)) := by
   exact ⟨⟨z • (1 : H →L[ℂ] H), z⁻¹ • (1 : H →L[ℂ] H),
     by rw [smul_mul_smul, mul_one, mul_inv_cancel₀ hz, one_smul],
     by rw [smul_mul_smul, mul_one, inv_mul_cancel₀ hz, one_smul]⟩, rfl⟩
 
-/-- **Inverse of a scalar operator.** The ring inverse of a scalar operator is the scalar operator of the
+/-- The ring inverse of a scalar operator is the scalar operator of the
 inverse scalar. -/
 theorem ringInverse_smul_one (z : ℂ) :
     Ring.inverse (z • (1 : H →L[ℂ] H)) = z⁻¹ • (1 : H →L[ℂ] H) := by
@@ -72,14 +72,14 @@ theorem ringInverse_smul_one (z : ℂ) :
     apply Units.inv_eq_of_mul_eq_one_right
     rw [hunit.unit_spec, smul_mul_smul, mul_one, mul_inv_cancel₀ hz, one_smul]
 
-/-- **Cayley transform of an operator.** The Cayley transform of an operator `A`: `(A - i) * (A + i)⁻¹`. The
+/-- The Cayley transform of an operator `A`: `(A - i) * (A + i)⁻¹`. The
 factor `A + i • 1` is a unit when `A` is self-adjoint on a complete Hilbert space (see
 `isUnit_add_I_smul_one_of_isSelfAdjoint` below), in which case the ring
 inverse here is the genuine operator inverse. -/
 noncomputable def cayleyTransform : H →L[ℂ] H :=
   (A - Complex.I • (1 : H →L[ℂ] H)) * Ring.inverse (A + Complex.I • (1 : H →L[ℂ] H))
 
-/-- **Factors of the Cayley transform commute.** The two factors of the Cayley transform commute. -/
+/-- The two factors of the Cayley transform commute. -/
 theorem commute_sub_I_add_I :
     (A - Complex.I • (1 : H →L[ℂ] H)) * (A + Complex.I • (1 : H →L[ℂ] H))
       = (A + Complex.I • (1 : H →L[ℂ] H)) * (A - Complex.I • (1 : H →L[ℂ] H)) := by
@@ -102,7 +102,7 @@ section SelfAdjoint
 variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H]
   (A : H →L[ℂ] H)
 
-/-- **Self-adjoint operator minus a non-real scalar is invertible.** For a self-adjoint operator, `A - w • 1` is a unit whenever `w` has
+/-- For a self-adjoint operator, `A - w • 1` is a unit whenever `w` has
 nonzero imaginary part. The proof is the norm estimate
 `‖(A - w • 1) x‖ ≥ |w.im| * ‖x‖`, read off from the imaginary part of
 `⟪(A - w • 1) x, x⟫`. -/
@@ -125,26 +125,26 @@ theorem isUnit_sub_smul_one_of_isSelfAdjoint_of_im_ne_zero (hA : IsSelfAdjoint A
   show ‖x‖ ^ 2 * |w.im| ≤ ‖⟪(A - w • (1 : H →L[ℂ] H)) x, x⟫_ℂ‖
   exact hle
 
-/-- **Self-adjoint operator plus $i$ is invertible.** For a self-adjoint operator, `A + i • 1` is a unit. -/
+/-- For a self-adjoint operator, `A + i • 1` is a unit. -/
 theorem isUnit_add_I_smul_one_of_isSelfAdjoint (hA : IsSelfAdjoint A) :
     IsUnit (A + Complex.I • (1 : H →L[ℂ] H)) := by
   have h := isUnit_sub_smul_one_of_isSelfAdjoint_of_im_ne_zero A hA
     (w := -Complex.I) (by simp)
   rwa [neg_smul, sub_neg_eq_add] at h
 
-/-- **Self-adjoint operator minus $i$ is invertible.** For a self-adjoint operator, `A - i • 1` is a unit. -/
+/-- For a self-adjoint operator, `A - i • 1` is a unit. -/
 theorem isUnit_sub_I_smul_one_of_isSelfAdjoint (hA : IsSelfAdjoint A) :
     IsUnit (A - Complex.I • (1 : H →L[ℂ] H)) :=
   isUnit_sub_smul_one_of_isSelfAdjoint_of_im_ne_zero A hA (w := Complex.I) (by simp)
 
-/-- **Inverse of a self-adjoint operator plus $i$ is a unit.** The inverse of `A + i • 1` is a unit for self-adjoint `A`. -/
+/-- The inverse of `A + i • 1` is a unit for self-adjoint `A`. -/
 theorem isUnit_ringInverse_add_I_of_isSelfAdjoint (hA : IsSelfAdjoint A) :
     IsUnit (Ring.inverse (A + Complex.I • (1 : H →L[ℂ] H))) := by
   have hAdd := isUnit_add_I_smul_one_of_isSelfAdjoint A hA
   rw [← hAdd.unit_spec, Ring.inverse_unit]
   exact Units.isUnit _
 
-/-- **Adjoint of the Cayley transform.** The adjoint of the Cayley transform. -/
+/-- The adjoint of the Cayley transform. -/
 theorem star_cayleyTransform (hA : IsSelfAdjoint A) :
     star (cayleyTransform A)
       = Ring.inverse (A - Complex.I • (1 : H →L[ℂ] H))
@@ -165,7 +165,7 @@ theorem star_cayleyTransform (hA : IsSelfAdjoint A) :
             = A + Complex.I • (1 : H →L[ℂ] H) from by
           simp [star_sub, hA.star_eq, Complex.conj_I, sub_neg_eq_add]]
 
-/-- **Adjoint of the Cayley transform is a left inverse.** The Cayley transform of a self-adjoint operator satisfies `U† * U = 1`. -/
+/-- The Cayley transform of a self-adjoint operator satisfies `U† * U = 1`. -/
 theorem star_mul_self_cayleyTransform (hA : IsSelfAdjoint A) :
     star (cayleyTransform A) * cayleyTransform A = 1 := by
   have hAdd := isUnit_add_I_smul_one_of_isSelfAdjoint A hA
@@ -188,7 +188,7 @@ theorem star_mul_self_cayleyTransform (hA : IsSelfAdjoint A) :
     _ = 1 := by
         rw [Ring.inverse_mul_cancel _ hSub, Ring.mul_inverse_cancel _ hAdd, mul_one]
 
-/-- **Adjoint of the Cayley transform is a right inverse.** The Cayley transform of a self-adjoint operator satisfies `U * U† = 1`. -/
+/-- The Cayley transform of a self-adjoint operator satisfies `U * U† = 1`. -/
 theorem mul_star_self_cayleyTransform (hA : IsSelfAdjoint A) :
     cayleyTransform A * star (cayleyTransform A) = 1 := by
   have hAdd := isUnit_add_I_smul_one_of_isSelfAdjoint A hA
@@ -219,25 +219,25 @@ theorem mul_star_self_cayleyTransform (hA : IsSelfAdjoint A) :
     _ = 1 := by
         rw [Ring.mul_inverse_cancel _ hSub, Ring.inverse_mul_cancel _ hAdd, mul_one]
 
-/-- **Cayley transform of a self-adjoint operator is invertible.** The Cayley transform of a self-adjoint operator is a unit. -/
+/-- The Cayley transform of a self-adjoint operator is a unit. -/
 theorem isUnit_cayleyTransform (hA : IsSelfAdjoint A) : IsUnit (cayleyTransform A) := by
   show IsUnit ((A - Complex.I • (1 : H →L[ℂ] H))
     * Ring.inverse (A + Complex.I • (1 : H →L[ℂ] H)))
   exact IsUnit.mul (isUnit_sub_I_smul_one_of_isSelfAdjoint A hA)
     (isUnit_ringInverse_add_I_of_isSelfAdjoint A hA)
 
-/-- **Cayley transform of a self-adjoint operator is unitary.** The Cayley transform of a self-adjoint operator is unitary. -/
+/-- The Cayley transform of a self-adjoint operator is unitary. -/
 theorem mem_unitary_cayleyTransform (hA : IsSelfAdjoint A) :
     cayleyTransform A ∈ unitary (H →L[ℂ] H) :=
   (IsUnit.mem_unitary_iff_star_mul_self (isUnit_cayleyTransform A hA)).mpr
     (star_mul_self_cayleyTransform A hA)
 
-/-- **Cayley transform preserves norms of vectors.** The Cayley transform of a self-adjoint operator is an isometry. -/
+/-- The Cayley transform of a self-adjoint operator is an isometry. -/
 theorem norm_cayleyTransform_apply (hA : IsSelfAdjoint A) (x : H) :
     ‖cayleyTransform A x‖ = ‖x‖ :=
   ContinuousLinearMap.norm_map_of_mem_unitary (mem_unitary_cayleyTransform A hA) x
 
-/-- **Operator norm of the Cayley transform is one.** On a nontrivial space, the Cayley transform has operator norm `1`. -/
+/-- On a nontrivial space, the Cayley transform has operator norm `1`. -/
 theorem norm_cayleyTransform (hA : IsSelfAdjoint A) [Nontrivial H] :
     ‖cayleyTransform A‖ = 1 := by
   apply le_antisymm
@@ -252,7 +252,7 @@ theorem norm_cayleyTransform (hA : IsSelfAdjoint A) [Nontrivial H] :
       _ ≤ ‖cayleyTransform A‖ * ‖x‖ := ContinuousLinearMap.le_opNorm _ _
       _ = ‖cayleyTransform A‖ := by rw [hx, mul_one]
 
-/-- **Formula for one plus the Cayley transform.** `1 + U` is `2 • A` times the inverse of `A + i • 1`. -/
+/-- `1 + U` is `2 • A` times the inverse of `A + i • 1`. -/
 theorem one_add_cayleyTransform (hA : IsSelfAdjoint A) :
     1 + cayleyTransform A
       = (2 : ℂ) • A * Ring.inverse (A + Complex.I • (1 : H →L[ℂ] H)) := by
@@ -269,7 +269,7 @@ theorem one_add_cayleyTransform (hA : IsSelfAdjoint A) :
         congr 1
         module
 
-/-- **Formula for one minus the Cayley transform.** `1 - U` is `2 • (i • 1)` times the inverse of `A + i • 1`. -/
+/-- `1 - U` is `2 • (i • 1)` times the inverse of `A + i • 1`. -/
 theorem one_sub_cayleyTransform (hA : IsSelfAdjoint A) :
     1 - cayleyTransform A
       = (2 : ℂ) • (Complex.I • (1 : H →L[ℂ] H))
@@ -288,7 +288,7 @@ theorem one_sub_cayleyTransform (hA : IsSelfAdjoint A) :
         congr 1
         module
 
-/-- **One minus the Cayley transform is invertible.** `1 - U` is a unit for the Cayley transform of a self-adjoint operator:
+/-- `1 - U` is a unit for the Cayley transform of a self-adjoint operator:
 `1` is never in the spectrum of `U`. -/
 theorem isUnit_one_sub_cayleyTransform (hA : IsSelfAdjoint A) :
     IsUnit (1 - cayleyTransform A) := by
@@ -302,7 +302,7 @@ theorem isUnit_one_sub_cayleyTransform (hA : IsSelfAdjoint A) :
     by rw [smul_mul_smul, mul_one, mul_inv_cancel₀ hne, one_smul],
     by rw [smul_mul_smul, mul_one, inv_mul_cancel₀ hne, one_smul]⟩, rfl⟩
 
-/-- **Inverse Cayley formula.** The inverse Cayley formula: `A = i • (1 + U) * (1 - U)⁻¹`. -/
+/-- The inverse Cayley formula: `A = i • (1 + U) * (1 - U)⁻¹`. -/
 theorem eq_cayleyTransform_inv (hA : IsSelfAdjoint A) :
     A = Complex.I • (1 + cayleyTransform A) * Ring.inverse (1 - cayleyTransform A) := by
   have hIsUnitSub := isUnit_one_sub_cayleyTransform A hA
@@ -330,7 +330,7 @@ theorem eq_cayleyTransform_inv (hA : IsSelfAdjoint A) :
     _ = Complex.I • (1 + cayleyTransform A) * Ring.inverse (1 - cayleyTransform A) := by
         rw [key]
 
-/-- **Resolvent factorization for the Cayley transform.** The resolvent-type factorization behind the spectral mapping: for
+/-- The resolvent-type factorization behind the spectral mapping: for
 `μ ≠ 1` and `λ = i * (1 + μ) / (1 - μ)`,
 `μ • 1 - U = ((μ - 1) • (A - λ • 1)) * (A + i • 1)⁻¹`. -/
 theorem algebraMap_sub_cayleyTransform (hA : IsSelfAdjoint A) {μ : ℂ} (hμ : μ ≠ 1) :
@@ -373,13 +373,13 @@ theorem algebraMap_sub_cayleyTransform (hA : IsSelfAdjoint A) {μ : ℂ} (hμ : 
     _ = ((μ - 1) • (A - (Complex.I * (1 + μ) / (1 - μ)) • (1 : H →L[ℂ] H)))
           * Ring.inverse (A + Complex.I • (1 : H →L[ℂ] H)) := by rw [hclm]
 
-/-- **One is not in the spectrum of the Cayley transform.** `1` is never in the spectrum of the Cayley transform. -/
+/-- `1` is never in the spectrum of the Cayley transform. -/
 theorem one_notMem_spectrum_cayleyTransform (hA : IsSelfAdjoint A) :
     (1 : ℂ) ∉ spectrum ℂ (cayleyTransform A) := by
   rw [spectrum.mem_iff, map_one]
   exact fun h => h (isUnit_one_sub_cayleyTransform A hA)
 
-/-- **Spectral mapping for the Cayley transform, image direction.** The image direction of the spectral mapping: if `w` is in the spectrum
+/-- The image direction of the spectral mapping: if `w` is in the spectrum
 of `A`, then `(w - i) / (w + i)` is in the spectrum of `U`. -/
 theorem mem_spectrum_cayleyTransform_of_mem_spectrum (hA : IsSelfAdjoint A)
     {w : ℂ} (hw : w ∈ spectrum ℂ A) :
@@ -435,7 +435,7 @@ theorem mem_spectrum_cayleyTransform_of_mem_spectrum (hA : IsSelfAdjoint A)
   rw [Algebra.algebraMap_eq_smul_one, ← neg_sub]
   exact hunitA.neg
 
-/-- **Spectral mapping for the Cayley transform, preimage direction.** The preimage direction of the spectral mapping: every point of the
+/-- The preimage direction of the spectral mapping: every point of the
 spectrum of `U` is `(w - i) / (w + i)` for some `w` in the spectrum of `A`. -/
 theorem exists_mem_spectrum_of_mem_spectrum_cayleyTransform (hA : IsSelfAdjoint A)
     {μ : ℂ} (hμ : μ ∈ spectrum ℂ (cayleyTransform A)) :
@@ -477,7 +477,7 @@ theorem exists_mem_spectrum_of_mem_spectrum_cayleyTransform (hA : IsSelfAdjoint 
     exact hunit2
   exact ⟨w, hwmem, hμeq.symm⟩
 
-/-- **Spectrum of the Cayley transform.** The spectrum of the Cayley transform is the image of the spectrum of `A`
+/-- The spectrum of the Cayley transform is the image of the spectrum of `A`
 under the Möbius map `λ ↦ (λ - i) / (λ + i)`. -/
 theorem spectrum_cayleyTransform (hA : IsSelfAdjoint A) :
     spectrum ℂ (cayleyTransform A)
@@ -489,12 +489,12 @@ theorem spectrum_cayleyTransform (hA : IsSelfAdjoint A) :
   · rintro ⟨w, hw, rfl⟩
     exact mem_spectrum_cayleyTransform_of_mem_spectrum A hA hw
 
-/-- **Spectrum of the Cayley transform lies on the unit circle.** Points of the spectrum of the Cayley transform lie on the unit circle. -/
+/-- Points of the spectrum of the Cayley transform lie on the unit circle. -/
 theorem norm_eq_one_of_mem_spectrum_cayleyTransform (hA : IsSelfAdjoint A)
     {μ : ℂ} (hμ : μ ∈ spectrum ℂ (cayleyTransform A)) : ‖μ‖ = 1 := by
   exact spectrum.norm_eq_one_of_unitary (mem_unitary_cayleyTransform A hA) hμ
 
-/-- **Eigenvalues of the Cayley transform.** The eigenvalue correspondence: for `μ ≠ 1`, `μ` is an eigenvalue of the
+/-- The eigenvalue correspondence: for `μ ≠ 1`, `μ` is an eigenvalue of the
 Cayley transform `U` iff `i * (1 + μ) / (1 - μ)` is an eigenvalue of `A`. -/
 theorem hasEigenvalue_cayleyTransform_iff (hA : IsSelfAdjoint A) {μ : ℂ} (hμ : μ ≠ 1) :
     Module.End.HasEigenvalue ((cayleyTransform A : H →L[ℂ] H) : Module.End ℂ H) μ ↔

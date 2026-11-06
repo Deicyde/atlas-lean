@@ -45,23 +45,16 @@ reduction from every language in `NP`
 (`Cslib.CookLevin.PolyManyOneRed`).
 -/
 
-/-- **Exact-cardinality subset-sum instances.** An exact-cardinality subset-sum instance is a
-triple $(a, K, T)$ consisting of a list $a$ of natural numbers, a natural number $K$ (the
-cardinality) and a natural number $T$ (the target). -/
+/-- A cardinality-constrained subset-sum instance: numbers, cardinality K, target. -/
 abbrev CardinalitySubsetSumInstance := List ℕ × ℕ × ℕ
 
-/-- **Feasibility of an exact-cardinality subset-sum instance.** An exact-cardinality subset-sum
-instance $(a, K, T)$ is feasible when some subsequence of the list $a$ (entries kept in order, not
-necessarily contiguous) has exactly $K$ entries and sum $T$. -/
+/-- A sublist of exactly `K` numbers summing to the target. -/
 def CardinalitySubsetSumFeasible
     (i : CardinalitySubsetSumInstance) : Prop :=
   ∃ s : List ℕ, s.Sublist i.1 ∧ s.length = i.2.1 ∧ s.sum = i.2.2
 
 open Classical in
-/-- **Exact-cardinality subset sum as a decision problem.** The decision problem
-EXACT-CARDINALITY SUBSET SUM accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
-bitstring encoding, to an exact-cardinality subset-sum instance that is feasible; it rejects every
-bitstring that does not decode. -/
+/-- EXACT-CARDINALITY SUBSET SUM as a decision problem over bitstrings. -/
 noncomputable def cardinalitySubsetSumDec :
     MetaMathlibExt.ComplexityTheory.DecisionProblem := fun x =>
   match MetaMathlibExt.BitstringEncoding.bitDecode
@@ -69,11 +62,7 @@ noncomputable def cardinalitySubsetSumDec :
   | some i => decide (CardinalitySubsetSumFeasible i)
   | none => false
 
-/-- **EXACT-CARDINALITY SUBSET SUM is NP-complete.** The decision problem EXACT-CARDINALITY
-SUBSET SUM lies in NP, and every decision problem in NP has a polynomial-time many-one reduction
-to it.
-
-Source: M. R. Garey and D. S. Johnson,
+/-- **EXACT-CARDINALITY SUBSET SUM is NP-complete.** Source: M. R. Garey and D. S. Johnson,
 *Computers and Intractability* (1979), SUBSET SUM; NP-completeness via the zero-padding
 reduction from ordinary subset sum. -/
 public theorem_wanted cardinalitySubsetSum_npComplete :

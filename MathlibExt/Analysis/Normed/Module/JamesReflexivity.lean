@@ -677,11 +677,7 @@ private theorem james_exists_separator
   have hLΦpos : 0 < L Φ := hcpos.trans hcΦ
   exact ⟨L, hLΦpos, fun x ↦ hLzero _ ⟨x, rfl⟩⟩
 
-/-- **Finite-coordinate Goldstine theorem.** Let $X$ be a real normed space, write $X^*$ for
-its dual space of continuous linear functionals and $X^{**}$ for the dual of $X^*$, and let
-$T \in X^{**}$ with $\|T\| \le 1$. Then for every finite set $s \subseteq X^*$ and every real
-$\varepsilon > 0$ there is $x \in X$ with $\|x\| \le 1$ such that $|z(x) - T(z)| < \varepsilon$
-for every $z \in s$. -/
+/-- A finite-coordinate form of Goldstine's theorem for the real bidual unit ball. -/
 theorem _root_.NormedSpace.goldstine_finite
     {X : Type*} [NormedAddCommGroup X] [NormedSpace ℝ X]
     (T : StrongDual ℝ (StrongDual ℝ X)) (hT : ‖T‖ ≤ 1)
@@ -1192,22 +1188,17 @@ private theorem james_norm_attainment_of_surjective
       rw [hfx, hΦeval, RCLike.norm_ofReal, abs_of_nonneg (norm_nonneg f)]
 
 /--
-**James' reflexivity theorem.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $E$ be a
-Banach space over $\mathbb{K}$. The canonical embedding of $E$ into its bidual $E^{**}$ is
-surjective if and only if every continuous linear functional $f \colon E \to \mathbb{K}$ attains
-its norm on the closed unit ball, that is, there is $x \in E$ with $\|x\| \le 1$ and
-$|f(x)| = \|f\|$.
-
-Proof: The reverse implication uses the general real James convex-block argument, with Goldstine
-approximation and weak-star cluster hulls. Restriction of scalars transfers the result from real
-scalars to $\mathbb{K}$.
-
-Proves `Wanted` entry `james_reflexivity`.
-
-Source:
+For a Banach space over `ℝ` or `ℂ`, the canonical embedding into the bidual is surjective iff
+every continuous linear functional attains its norm on the closed unit ball. Source:
 R. C. James, Reflexivity and the Supremum of Linear Functionals, Ann. of Math. 66 (1957),
 DOI 10.2307/1970122; Bourbaki form; Lean states `RCLike` Banach case with norm-attainment
 equivalence for reflexivity.
+
+Proves `Wanted` entry `james_reflexivity`.
+
+Proof: The reverse implication uses the general real James convex-block argument, with Goldstine
+approximation and weak-star cluster hulls. Restriction of scalars transfers the result to `RCLike`
+fields.
 -/
 theorem james_reflexivity
     {𝕜 : Type*} [RCLike 𝕜]

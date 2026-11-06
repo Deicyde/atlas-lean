@@ -33,25 +33,25 @@ open Finset
 
 variable {J σ τ A : Type*}
 
-/-- **Ordered pairs representing unordered pairs.** Pairs `(a, b)` with `a < b`, representing unordered pairs once. -/
+/-- Pairs `(a, b)` with `a < b`, representing unordered pairs once. -/
 def orderedPairs (J : Type*) [Fintype J] [LinearOrder J] : Finset (J × J) :=
   univ.filter fun p => p.1 < p.2
 
-/-- **Membership in the ordered pairs.** Membership in `orderedPairs` is strict ordering of the two coordinates. -/
+/-- Membership in `orderedPairs` is strict ordering of the two coordinates. -/
 @[simp] theorem mem_orderedPairs [Fintype J] [LinearOrder J] (p : J × J) :
     p ∈ orderedPairs J ↔ p.1 < p.2 := by
   simp [orderedPairs]
 
-/-- **Ordered representative of an unordered pair.** The ordered representative `(min a b, max a b)` of the pair `{a, b}`. -/
+/-- The ordered representative `(min a b, max a b)` of the pair `{a, b}`. -/
 def pairIndex [LinearOrder J] (a b : J) : J × J :=
   (min a b, max a b)
 
-/-- **Edge labelings of the complete graph.** Complete-graph edge labelings, free on `orderedPairs` and default elsewhere. -/
+/-- Complete-graph edge labelings, free on `orderedPairs` and default elsewhere. -/
 def edgeLabelings (J : Type*) [Fintype J] [LinearOrder J]
     (labels : Finset A) (default : A) : Finset (J × J → A) :=
   Fintype.piFinsetOn (fun p : J × J => p.1 < p.2) (fun _ => labels) default
 
-/-- **Characterization of complete-graph edge labelings.** A labeling belongs to `edgeLabelings` exactly when active edges use allowed labels and all
+/-- A labeling belongs to `edgeLabelings` exactly when active edges use allowed labels and all
 other coordinates contain the default. -/
 @[simp] theorem mem_edgeLabelings [Fintype J] [LinearOrder J]
     (labels : Finset A) (default : A) (labeling : J × J → A) :
@@ -59,16 +59,16 @@ other coordinates contain the default. -/
       ∀ p, (p.1 < p.2 → labeling p ∈ labels) ∧ (¬p.1 < p.2 → labeling p = default) := by
   simp [edgeLabelings]
 
-/-- **Edge labels incident to a vertex.** Labels incident to `v`, indexed by the other endpoint. -/
+/-- Labels incident to `v`, indexed by the other endpoint. -/
 def incidentLabels [LinearOrder J] (labeling : J × J → A) (v : J) : J → A :=
   fun w => labeling (pairIndex v w)
 
-/-- **Integer-valued complete-graph tensor instance.** An integer-valued local tensor at each vertex. -/
+/-- An integer-valued local tensor at each vertex. -/
 abbrev Instance (J A : Type*) := J → (J → A) → ℤ
 
 namespace Instance
 
-/-- **Value of a complete-graph tensor instance.** The sum, over complete-graph edge labelings, of the product of local tensors. -/
+/-- The sum, over complete-graph edge labelings, of the product of local tensors. -/
 def value [Fintype J] [LinearOrder J] (labels : Finset A) (default : A)
     (R : Instance J A) : ℤ :=
   ∑ labeling ∈ edgeLabelings J labels default,
@@ -76,7 +76,7 @@ def value [Fintype J] [LinearOrder J] (labels : Finset A) (default : A)
 
 end Instance
 
-/-- **Integer-valued factored tensor network.** An integer-valued factored tensor network.
+/-- An integer-valued factored tensor network.
 
 Only `Θ a b` with `a < b` supplies labels. The factors `f a b` and `f b a` are the two
 sides of the same interaction. Capacities `c` are metadata used by `totalCapacity`, `Shaped`,
@@ -95,21 +95,21 @@ structure Factored (J σ τ : Type*) where
 
 namespace Factored
 
-/-- **Label set of an unordered vertex pair.** The label set of an unordered vertex pair. -/
+/-- The label set of an unordered vertex pair. -/
 def labelSet [LinearOrder J] (N : Factored J σ τ) (a b : J) : Finset τ :=
   N.Θ (min a b) (max a b)
 
-/-- **Label set is symmetric in its endpoints.** The label set is independent of endpoint order. -/
+/-- The label set is independent of endpoint order. -/
 theorem labelSet_comm [LinearOrder J] (N : Factored J σ τ) (a b : J) :
     N.labelSet a b = N.labelSet b a := by
   simp [labelSet, min_comm, max_comm]
 
-/-- **Interaction of two states in a factored network.** The interaction of two states, summed over their shared edge labels. -/
+/-- The interaction of two states, summed over their shared edge labels. -/
 def interaction [LinearOrder J] (N : Factored J σ τ)
     (a b : J) (z z' : σ) : ℤ :=
   ∑ θ ∈ N.labelSet a b, N.f a b z θ * N.f b a z' θ
 
-/-- **Interaction is symmetric under swapping endpoints.** Reading an interaction from the other endpoint swaps its states. -/
+/-- Reading an interaction from the other endpoint swaps its states. -/
 theorem interaction_comm [LinearOrder J] (N : Factored J σ τ)
     (a b : J) (z z' : σ) :
     N.interaction a b z z' = N.interaction b a z' z := by
@@ -117,17 +117,17 @@ theorem interaction_comm [LinearOrder J] (N : Factored J σ τ)
   rw [labelSet_comm]
   exact Finset.sum_congr rfl fun _ _ => mul_comm _ _
 
-/-- **Value of a factored tensor network.** The network value: sum over states of vertex weights times all pair interactions. -/
+/-- The network value: sum over states of vertex weights times all pair interactions. -/
 def value [Fintype J] [LinearOrder J] (N : Factored J σ τ) : ℤ :=
   ∑ z ∈ Fintype.piFinset N.S,
     (∏ a, N.W a (z a)) *
       ∏ p ∈ orderedPairs J, N.interaction p.1 p.2 (z p.1) (z p.2)
 
-/-- **Directed total capacity of a factored network.** The directed total capacity `Σ_{a ≠ b} c a b`; both orientations are counted. -/
+/-- The directed total capacity `Σ_{a ≠ b} c a b`; both orientations are counted. -/
 def totalCapacity [Fintype J] [DecidableEq J] (N : Factored J σ τ) : ℕ :=
   ∑ a, ∑ b ∈ univ.erase a, N.c a b
 
-/-- **Factored tensor network with shape parameter.** A network of shape parameter `P`: at most `2 ^ P` states per vertex, symmetric
+/-- A network of shape parameter `P`: at most `2 ^ P` states per vertex, symmetric
 capacities summing to at most `P` at each vertex, and at most `2 ^ c` labels per edge. -/
 structure Shaped [Fintype J] [LinearOrder J]
     (N : Factored J σ τ) (P : ℕ) : Prop where
@@ -136,7 +136,7 @@ structure Shaped [Fintype J] [LinearOrder J]
   sum_c : ∀ a, ∑ b ∈ univ.erase a, N.c a b ≤ P
   card_labelSet : ∀ a b, a ≠ b → (N.labelSet a b).card ≤ 2 ^ N.c a b
 
-/-- **Shaped tensor network with bounded entries.** A shaped network whose weights, factors and off-diagonal interactions are bounded by
+/-- A shaped network whose weights, factors and off-diagonal interactions are bounded by
 `2 ^ B` in absolute value. -/
 structure Sized [Fintype J] [LinearOrder J]
     (N : Factored J σ τ) (P B : ℕ) : Prop extends Shaped N P where

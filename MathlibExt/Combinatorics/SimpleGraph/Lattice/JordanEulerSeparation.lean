@@ -44,7 +44,7 @@ namespace Lattice
 
 variable {V : Type*}
 
-/-- **Bounded region count as cycle rank.** The number of bounded regions of a finite graph, defined as its cycle rank `nullity G`. -/
+/-- The number of bounded regions of a finite graph, defined as its cycle rank `nullity G`. -/
 noncomputable def jes_boundedRegionCount [Finite V] [DecidableEq V] (G : SimpleGraph V) : ℕ :=
   nullity G
 

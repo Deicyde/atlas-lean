@@ -146,7 +146,7 @@ private theorem ringKrullDim_le_of_perfectField {L : Type*} [Field L] {B : Type*
 
 end SmoothKrullDimAux
 
-/-- **Krull dimension does not increase along faithfully flat maps.** Krull dimension does not increase along faithfully flat ring maps. -/
+/-- Krull dimension does not increase along faithfully flat ring maps. -/
 theorem ringKrullDim_le_of_faithfullyFlat (R S : Type*) [CommRing R] [CommRing S]
     [Algebra R S] [Module.FaithfullyFlat R S] : ringKrullDim R ≤ ringKrullDim S := by
   change (⨆ p : LTSeries (PrimeSpectrum R), (p.length : WithBot ℕ∞)) ≤ _
@@ -157,7 +157,7 @@ theorem ringKrullDim_le_of_faithfullyFlat (R S : Type*) [CommRing R] [CommRing S
   calc ((l.length : WithBot ℕ∞)) = L'.length := by rw [hlen]
     _ ≤ Order.krullDim (PrimeSpectrum S) := Order.LTSeries.length_le_krullDim L'
 
-/-- **Krull dimension of a standard smooth algebra.** A standard smooth algebra of relative dimension `n` has Krull dimension
+/-- A standard smooth algebra of relative dimension `n` has Krull dimension
 at most `n`. -/
 theorem ringKrullDim_le_of_isStandardSmoothOfRelativeDimension
     {K : Type*} [Field K] {B : Type*} [CommRing B] [Algebra K B] (n : ℕ)
@@ -173,7 +173,7 @@ theorem ringKrullDim_le_of_isStandardSmoothOfRelativeDimension
 
 namespace SmoothKrullDimAux
 
-/-- **Krull dimension of a standard smooth algebra over a field.** A standard smooth algebra map from a field has Krull dimension at most
+/-- A standard smooth algebra map from a field has Krull dimension at most
 the relative dimension. -/
 theorem ringKrullDim_le_of_ringHom {R S : Type*} [CommRing R] [CommRing S] (hR : IsField R)
     (φ : R →+* S) (n : ℕ) (hφ : φ.IsStandardSmoothOfRelativeDimension n) :
@@ -207,7 +207,7 @@ private theorem topologicalKrullDim_le_of_forall_exists_isOpenEmbedding
 
 end SmoothKrullDimAux
 
-/-- **Dimension of a scheme smooth of relative dimension $n$.** A scheme smooth of relative dimension `n` over a field has topological
+/-- A scheme smooth of relative dimension `n` over a field has topological
 Krull dimension at most `n`. -/
 theorem AlgebraicGeometry.SmoothOfRelativeDimension.topologicalKrullDim_le
     {K : Type u} [Field K] {X : Scheme.{u}} (f : X ⟶ Spec (CommRingCat.of K)) (n : ℕ)

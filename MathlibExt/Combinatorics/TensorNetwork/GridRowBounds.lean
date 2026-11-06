@@ -241,7 +241,7 @@ private theorem abs_gridRowNetwork_interaction_le [Fintype ρ] [LinearOrder ρ]
   · simp only [Finset.card_univ, Fintype.card_coe]
     exact Nat.mul_le_mul_right b (card_orderedPairs_le_sq hγ)
 
-/-- **Capacity bound between grid rows.** The capacity between two grid rows is at most `g²mL` when every active rectangle is
+/-- The capacity between two grid rows is at most `g²mL` when every active rectangle is
 charged at most `2mL` and there are `g` columns. -/
 theorem gridRowNetwork_capacity_le [Fintype ρ] [LinearOrder ρ]
     [Fintype γ] [LinearOrder γ] [DecidableEq A]
@@ -257,7 +257,7 @@ theorem gridRowNetwork_capacity_le [Fintype ρ] [LinearOrder ρ]
   exact gridRowCapacity_bound hm γ hγ
     (fun k => cap ((min a b, max a b), k)) fun k => hcap _
 
-/-- **Shape bound for the grid row network.** The grid row network has shape `m g³ L` when both raw-state alphabets have at most
+/-- The grid row network has shape `m g³ L` when both raw-state alphabets have at most
 `2^L` elements and every rectangle label set and capacity obeys its declared bound. -/
 theorem gridRowNetwork_shaped [Fintype ρ] [LinearOrder ρ]
     [Fintype γ] [LinearOrder γ] [DecidableEq A]
@@ -292,7 +292,7 @@ theorem gridRowNetwork_shaped [Fintype ρ] [LinearOrder ρ]
     simp only [Factored.labelSet, gridRowNetwork, hγ, hlt, ↓reduceIte]
     exact card_gridRowLabels_le hγ labels hlabels cutLabels cap hcut (min a b, max a b)
 
-/-- **Size bound for the grid row network.** Under uniform raw tensor and factor bounds, the grid row network has exact source exponents
+/-- Under uniform raw tensor and factor bounds, the grid row network has exact source exponents
 `m g³ L` for shape and `g B + g² b` for integer magnitudes. -/
 theorem gridRowNetwork_sized [Fintype ρ] [LinearOrder ρ]
     [Fintype γ] [LinearOrder γ] [DecidableEq A]
@@ -357,7 +357,7 @@ theorem gridRowNetwork_sized [Fintype ρ] [LinearOrder ρ]
         top bottom cap G hfactor hG h z' z).trans
           (pow_le_pow_right₀ (by norm_num) (Nat.le_add_left _ _))
 
-/-- **Total capacity of the grid row network.** The directed total capacity consists of all vertical row edges plus twice the active
+/-- The directed total capacity consists of all vertical row edges plus twice the active
 rectangle capacity; diagonal row capacities are excluded. -/
 theorem gridRowNetwork_totalCapacity [Fintype ρ] [LinearOrder ρ]
     [Fintype γ] [LinearOrder γ] [DecidableEq A]

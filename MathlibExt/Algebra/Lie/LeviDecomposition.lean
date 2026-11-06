@@ -734,10 +734,8 @@ private theorem levi_lie_mem_HomVanishing_of_mem_scalarMaps
   have hxw : ⁅x, w⁆ = (⟨⁅x, w.1⁆, W.lie_mem w.2⟩ : W) := rfl
   rw [hxw, sub_self]
 
-/-- **Weyl's complete reducibility theorem.** Let $L$ be a finite-dimensional semisimple Lie
-algebra over a field $K$ of characteristic zero, and let $M$ be a finite-dimensional Lie module
-over $L$ and $K$. Then every Lie submodule $W$ of $M$ has a complement: there is a Lie submodule
-$U$ of $M$ with $W \cap U = 0$ and $W + U = M$. -/
+/-- Weyl's complete reducibility theorem for finite-dimensional modules over a
+semisimple Lie algebra in characteristic zero. -/
 public theorem _root_.LieModule.exists_isCompl_of_isSemisimple
     {K L M : Type*} [Field K] [CharZero K] [LieRing L]
     [LieAlgebra K L] [Module.Finite K L] [LieAlgebra.IsSemisimple K L]
@@ -1700,21 +1698,17 @@ private theorem levi_decomposition_aux
         rw [← hsx, hsZero, map_zero]
 
 /--
-**Levi decomposition.** Let $L$ be a finite-dimensional Lie algebra over a field $K$ of
-characteristic zero, and let $\operatorname{rad}(L)$ be its radical, the largest solvable ideal
-of $L$. Then there is a semisimple Lie subalgebra $S$ of $L$ (a Levi factor) such that
-$L = \operatorname{rad}(L) \oplus S$ as $K$-vector spaces, that is,
-$\operatorname{rad}(L) + S = L$ and $\operatorname{rad}(L) \cap S = 0$.
+Every finite-dimensional Lie algebra `L` over a field `K` of characteristic zero decomposes as
+`K`-vector spaces into its solvable radical `LieAlgebra.radical K L` plus a semisimple Levi factor
+`S : LieSubalgebra K L` with sum `⊤` and intersection `⊥`. Source: E. E. Levi, Atti Accad. Sci.
+Torino 1905 and A. I. Malcev, Izv. Akad. Nauk SSSR 1945; Bourbaki, Lie I; Lean states K-module
+direct sum form over char-zero fields.
 
 Proves `Wanted` entry `levi_decomposition`.
 
 Proof: Weyl's complete reducibility theorem is proved with the trace-form Casimir operator. The
 Levi factor is then constructed for an abelian radical and the general case follows by induction
 through the derived ideal of the radical.
-
-Source: E. E. Levi, Atti Accad. Sci.
-Torino 1905 and A. I. Malcev, Izv. Akad. Nauk SSSR 1945; Bourbaki, Lie I; Lean states K-module
-direct sum form over char-zero fields.
 -/
 public theorem levi_decomposition
     {K L : Type*} [Field K] [CharZero K] [LieRing L] [LieAlgebra K L]

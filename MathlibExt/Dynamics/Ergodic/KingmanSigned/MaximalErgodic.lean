@@ -49,7 +49,7 @@ namespace GarsiaMax
 
 variable {α : Type*} {T : α → α} {f : α → ℝ}
 
-/-- **Maximal Birkhoff partial sum.** The maximal Birkhoff sum `max_{1 ≤ n ≤ N} ∑_{k<n} f (T^[k] x)` over the first `N` times. -/
+/-- The maximal Birkhoff sum `max_{1 ≤ n ≤ N} ∑_{k<n} f (T^[k] x)` over the first `N` times. -/
 noncomputable def maxPartialSum (T : α → α) (f : α → ℝ) (N : ℕ) (hN : 1 ≤ N) (x : α) : ℝ :=
   (Finset.Icc 1 N).sup' (by rw [Finset.nonempty_Icc]; exact hN)
     (fun n => birkhoffSum T f n x)

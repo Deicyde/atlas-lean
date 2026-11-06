@@ -20,41 +20,32 @@ A shared vertex-connectivity predicate for finite simple graphs.
 
 namespace SimpleGraph
 
-/-- **$k$-vertex-connected graph.** Let $k$ be a natural number. A simple graph $G$ on a finite
-vertex set $V$ is $k$-vertex-connected if $V$ has more than $k$ elements and, for every set $S$ of
-fewer than $k$ vertices, the subgraph of $G$ induced on $V \setminus S$ is connected. -/
+/-- `IsVertexConnected k G` means that `G` has more than `k` vertices and
+stays connected after removing any set of fewer than `k` vertices. -/
 public def IsVertexConnected {V : Type*} [Fintype V] (k : ℕ) (G : SimpleGraph V) : Prop :=
   k < Fintype.card V ∧
     ∀ S : Finset V, S.card < k → (G.induce (S : Set V)ᶜ).Connected
 
-/-- **Characterization of $k$-vertex-connectivity by vertex deletion.** Let $k$ be a natural
-number and let $G$ be a simple graph on a finite vertex set $V$. Then $G$ is $k$-vertex-connected
-if and only if $V$ has more than $k$ elements and, for every set $S$ of fewer than $k$ vertices,
-the subgraph of $G$ induced on $V \setminus S$ is connected. -/
+/-- Characterization of vertex connectivity by deletion of small vertex sets. -/
 public theorem isVertexConnected_iff {V : Type*} [Fintype V] {k : ℕ} {G : SimpleGraph V} :
     G.IsVertexConnected k ↔
       k < Fintype.card V ∧
         ∀ S : Finset V, S.card < k → (G.induce (S : Set V)ᶜ).Connected :=
   Iff.rfl
 
-/-- **Vertex count of a $k$-vertex-connected graph.** Let $k$ be a natural number. If a simple
-graph $G$ on a finite vertex set $V$ is $k$-vertex-connected, then $V$ has more than $k$
-elements. -/
+/-- A `k`-vertex-connected graph has more than `k` vertices. -/
 public theorem IsVertexConnected.card_gt {V : Type*} [Fintype V] {k : ℕ}
     {G : SimpleGraph V} (hG : G.IsVertexConnected k) : k < Fintype.card V :=
   hG.1
 
-/-- **Deleting fewer than $k$ vertices from a $k$-vertex-connected graph.** Let $k$ be a natural
-number and let $G$ be a $k$-vertex-connected simple graph on a finite vertex set $V$. Then for
-every set $S$ of fewer than $k$ vertices, the subgraph of $G$ induced on $V \setminus S$ is
-connected. -/
+/-- Deleting fewer than `k` vertices from a `k`-vertex-connected graph leaves a connected
+induced graph. -/
 public theorem IsVertexConnected.connected_induce_compl {V : Type*} [Fintype V] {k : ℕ}
     {G : SimpleGraph V} (hG : G.IsVertexConnected k) (S : Finset V) (hS : S.card < k) :
     (G.induce (S : Set V)ᶜ).Connected :=
   hG.2 S hS
 
-/-- **A $k$-vertex-connected graph with $k \ge 1$ is connected.** Let $k \ge 1$ be a natural
-number. Every $k$-vertex-connected simple graph on a finite vertex set is connected. -/
+/-- A positively vertex-connected graph is connected. -/
 public theorem IsVertexConnected.connected {V : Type*} [Fintype V] {k : ℕ}
     {G : SimpleGraph V} (hG : G.IsVertexConnected k) (hk : 0 < k) : G.Connected := by
   have h := hG.connected_induce_compl ∅ (by simpa using hk)
@@ -64,18 +55,16 @@ public theorem IsVertexConnected.connected {V : Type*} [Fintype V] {k : ℕ}
   rw [hs] at h
   exact G.induceUnivIso.connected_iff.mp h
 
-/-- **Deleting one vertex from a $k$-vertex-connected graph with $k \ge 2$.** Let $k \ge 2$ be a
-natural number and let $G$ be a $k$-vertex-connected simple graph on a finite vertex set $V$.
-Then for every vertex $v$, the subgraph of $G$ induced on $V \setminus \{v\}$ is connected. -/
+/-- Deleting one vertex from a graph of vertex connectivity at least two leaves a connected
+induced graph. -/
 public theorem IsVertexConnected.connected_compl_singleton {V : Type*} [Fintype V] {k : ℕ}
     {G : SimpleGraph V} (hG : G.IsVertexConnected k) (hk : 1 < k) (v : V) :
     (G.induce (↑({v} : Finset V) : Set V)ᶜ).Connected := by
   classical
   exact hG.connected_induce_compl {v} (by simpa using hk)
 
-/-- **Characterization of 2-vertex-connected graphs.** A simple graph $G$ on a finite vertex set
-$V$ is 2-vertex-connected if and only if $V$ has more than two elements, $G$ is connected, and
-for every vertex $v$ the subgraph of $G$ induced on $V \setminus \{v\}$ is connected. -/
+/-- A finite graph is 2-vertex-connected exactly when it has at least three vertices, is
+connected, and stays connected after deleting each single vertex. -/
 public theorem isVertexConnected_two_iff {V : Type*} [Fintype V] {G : SimpleGraph V} :
     G.IsVertexConnected 2 ↔
       2 < Fintype.card V ∧ G.Connected ∧
@@ -96,8 +85,7 @@ public theorem isVertexConnected_two_iff {V : Type*} [Fintype V] {G : SimpleGrap
     · obtain ⟨v, rfl⟩ := Finset.card_eq_one.mp hone
       exact hdelete v
 
-/-- **Degrees in a 2-vertex-connected graph are at least two.** Every vertex of a 2-vertex-connected
-simple graph on a finite vertex set has degree at least two. -/
+/-- Every vertex of a finite 2-vertex-connected graph has degree at least two. -/
 public theorem IsVertexConnected.two_le_degree {V : Type*} [Fintype V]
     {G : SimpleGraph V} [DecidableRel G.Adj] (hG : G.IsVertexConnected 2) (v : V) :
     2 ≤ G.degree v := by
@@ -142,9 +130,7 @@ public theorem IsVertexConnected.two_le_degree {V : Type*} [Fintype V]
     2 = ({u, (z : V)} : Finset V).card := (Finset.card_pair huz).symm
     _ ≤ (G.neighborFinset v).card := Finset.card_le_card hsub
 
-/-- **Cycles through each vertex of a 2-vertex-connected graph.** Let $G$ be a 2-vertex-connected
-simple graph on a finite vertex set. Then for every vertex $x$ of $G$ there is a cycle in $G$
-that starts and ends at $x$. -/
+/-- Every vertex of a finite 2-vertex-connected graph lies on a cycle. -/
 public theorem IsVertexConnected.exists_cycle_through {V : Type*} [Fintype V]
     {G : SimpleGraph V} (hG : G.IsVertexConnected 2) (x : V) :
     ∃ c : G.Walk x x, c.IsCycle := by

@@ -40,32 +40,18 @@ variable {Γ Δ Ξ : List (Ty Base)}
 
 namespace Sub
 
-/-- **Identity substitution (simply typed lambda calculus).** For a context $\Gamma$, the identity
-substitution from $\Gamma$ to $\Gamma$ sends each variable of $\Gamma$ to the term consisting of
-that variable alone. -/
+/-- The identity substitution. -/
 def id : Sub Γ Γ := fun x ↦ .var x
 
-/-- **Substitution induced by a renaming (simply typed lambda calculus).** For contexts $\Gamma$
-and $\Delta$ and a type-preserving renaming $\rho$ from $\Gamma$ to $\Delta$, the induced
-substitution from $\Gamma$ to $\Delta$ sends each variable $x$ of $\Gamma$ to the term consisting
-of the variable $\rho(x)$ alone. -/
+/-- Turn a renaming into a substitution. -/
 def ofRen (ρ : Ren Γ Δ) : Sub Γ Δ := fun x ↦ .var (ρ x)
 
-/-- **Lifting a substitution under a binder (simply typed lambda calculus).** Write $A :: \Gamma$
-for the context $\Gamma$ extended by a newest variable of type $A$. Given a substitution $\sigma$
-from a context $\Gamma$ to a context $\Delta$ and a type $A$, its lift is the substitution from
-$A :: \Gamma$ to $A :: \Delta$ that sends the newest variable to the term consisting of the
-newest variable alone, and sends the successor of each variable $x$ of $\Gamma$ to the weakening
-of the term $\sigma(x)$ into the context $A :: \Delta$. -/
+/-- Extend a substitution under one binder. -/
 def lift (σ : Sub Γ Δ) : Sub (A :: Γ) (A :: Δ)
   | _, .zero => .var .zero
   | _, .succ x => Tm.weaken (σ x)
 
-/-- **Single-variable substitution (simply typed lambda calculus).** Write $A :: \Gamma$ for the
-context $\Gamma$ extended by a newest variable of type $A$. Given a term $a$ of type $A$ in
-context $\Gamma$, the single-variable substitution for $a$ is the substitution from
-$A :: \Gamma$ to $\Gamma$ that sends the newest variable to $a$ and sends the successor of each
-variable $x$ of $\Gamma$ to the term consisting of the variable $x$ alone. -/
+/-- Substitute the newest variable and leave all older variables unchanged. -/
 def single (a : Tm Γ A) : Sub (A :: Γ) Γ
   | _, .zero => a
   | _, .succ x => .var x
@@ -84,14 +70,7 @@ end Sub
 
 namespace Tm
 
-/-- **Simultaneous substitution (simply typed lambda calculus).** Given a substitution $\sigma$
-from a context $\Gamma$ to a context $\Delta$, the result $t[\sigma]$ of applying $\sigma$ to a
-term $t$ of type $A$ in context $\Gamma$ is the term of type $A$ in context $\Delta$ defined by
-recursion on $t$: $x[\sigma] = \sigma(x)$ for a variable $x$,
-$(f\,a)[\sigma] = f[\sigma]\,a[\sigma]$ for an application, and
-$(\lambda u)[\sigma] = \lambda\,(u[\sigma'])$ for an abstraction with body $u$, where
-$\sigma'$ is the lift of $\sigma$ under the binder. Because variables are de Bruijn indices, this
-substitution is capture-avoiding. -/
+/-- Simultaneous capture-avoiding substitution. -/
 def subst : {Γ Δ : List (Ty Base)} → Sub Γ Δ → {A : Ty Base} → Tm Γ A → Tm Δ A
   | _, _, σ, _, .var x => σ x
   | _, _, σ, _, .app f a => .app (subst σ f) (subst σ a)
@@ -141,12 +120,7 @@ theorem subst_ofRen (ρ : Ren Γ Δ) (t : Tm Γ A) :
         subst_congr (fun x ↦ by cases x <;> rfl) body
       rw [hlift, ih (ρ := Var.lift ρ)]
 
-/-- **Instantiating a binder body (simply typed lambda calculus).** Write $A :: \Gamma$ for the
-context $\Gamma$ extended by a newest variable of type $A$. Given a term $t$ of type $B$ in
-context $A :: \Gamma$ and a term $a$ of type $A$ in context $\Gamma$, the instantiation of $t$
-with $a$ is the term of type $B$ in context $\Gamma$ obtained by applying to $t$ the
-single-variable substitution for $a$, which replaces the newest variable by $a$ and leaves the
-older variables unchanged. -/
+/-- Replace the newest free variable by `a`. -/
 def instantiate (body : Tm (A :: Γ) B) (a : Tm Γ A) : Tm Γ B :=
   subst (Sub.single a) body
 

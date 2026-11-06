@@ -30,30 +30,20 @@ namespace JaccardLattice
 
 variable {L : Type*} [Lattice L]
 
-/-- **Modular valuation.** A function $f \colon L \to \mathbb{R}$ on a lattice $L$, with join
-$\vee$ and meet $\wedge$, is a modular valuation when
-$f(X) + f(Y) = f(X \vee Y) + f(X \wedge Y)$ for all $X, Y \in L$. -/
+/-- Modularity of a real-valued lattice valuation. -/
 def IsModularValuation (f : L → ℝ) : Prop :=
   ∀ X Y, f X + f Y = f (X ⊔ Y) + f (X ⊓ Y)
 
-/-- **Strictly positive valuation.** A function $f \colon L \to \mathbb{R}$ on a lattice
-$L$ is strictly positive when $f(X) > 0$ for every $X \in L$. -/
+/-- Strict positivity of a real-valued lattice valuation. -/
 def IsStrictlyPositive (f : L → ℝ) : Prop :=
   ∀ X, 0 < f X
 
-/-- **Gilbert condition.** A function $f \colon L \to \mathbb{R}$ on a lattice $L$, with join
-$\vee$ and meet $\wedge$, satisfies the Gilbert condition when
-$f(X \vee Z) + f(Z \vee Y) + f(X \wedge Y) \ge
-f(X \wedge Z) + f(Z \wedge Y) + f(X \vee Y \vee Z)$ for all $X, Y, Z \in L$. -/
+/-- Gilbert condition for a real-valued lattice valuation. -/
 def GilbertCondition (f : L → ℝ) : Prop :=
   ∀ X Y Z, f (X ⊔ Z) + f (Z ⊔ Y) + f (X ⊓ Y) ≥
     f (X ⊓ Z) + f (Z ⊓ Y) + f (X ⊔ Y ⊔ Z)
 
-/-- **Generalized Jaccard distance.** For a function $f \colon L \to \mathbb{R}$ on a lattice
-$L$ with join $\vee$ and meet $\wedge$, the Jaccard distance of $X, Y \in L$ is
-$d_f(X, Y) = 1 - f(X \wedge Y) / f(X \vee Y)$.
-
-Division by zero is taken to give $0$, so $d_f(X, Y) = 1$ when $f(X \vee Y) = 0$. -/
+/-- Generalized Jaccard distance from a real-valued lattice valuation. -/
 noncomputable def jaccardDist (f : L → ℝ) (X Y : L) : ℝ :=
   1 - f (X ⊓ Y) / f (X ⊔ Y)
 
@@ -131,28 +121,20 @@ private theorem gilbertCondition_of_modularAndMonotone {f : L → ℝ}
   have n3 : f (X ⊓ Y ⊓ Z) ≤ f (X ⊓ Y) := hmono inf_le_left
   linarith
 
-/-- **Characterization of the Gilbert condition.** A function $f \colon L \to \mathbb{R}$
-on a lattice $L$ satisfies the Gilbert condition if and only if $f$ is a modular valuation
-and is monotone, that is, $X \le Y$ implies $f(X) \le f(Y)$. -/
+/-- Gilbert condition holds iff the valuation is modular and monotone. -/
 theorem gilbertCondition_iff {f : L → ℝ} :
     GilbertCondition f ↔ IsModularValuation f ∧ Monotone f :=
   ⟨modularAndMonotone_of_gilbertCondition,
     fun h => gilbertCondition_of_modularAndMonotone h.1 h.2⟩
 
-/-- **Jaccard distance as a single quotient.** Let $f \colon L \to \mathbb{R}$ be a strictly
-positive function on a lattice $L$, with join $\vee$ and meet $\wedge$. Then for all
-$X, Y \in L$ the Jaccard distance of $X$ and $Y$ with respect to $f$ is
-$d_f(X, Y) = (f(X \vee Y) - f(X \wedge Y)) / f(X \vee Y)$. -/
+/-- Jaccard distance as a single ratio of join-minus-meet over join. -/
 theorem jaccardDist_eq_div {f : L → ℝ} (hpos : IsStrictlyPositive f) (X Y : L) :
     jaccardDist f X Y = (f (X ⊔ Y) - f (X ⊓ Y)) / f (X ⊔ Y) := by
   unfold jaccardDist
   have hne : f (X ⊔ Y) ≠ 0 := ne_of_gt (hpos _)
   rw [← div_self hne, ← sub_div]
 
-/-- **Jaccard triangle inequality under the Gilbert condition.** Let
-$f \colon L \to \mathbb{R}$ be a strictly positive function on a lattice $L$ that satisfies
-the Gilbert condition, and let $d_f$ be the Jaccard distance of $f$. Then
-$d_f(U, W) + d_f(W, V) \ge d_f(U, V)$ for all $U, V, W \in L$. -/
+/-- Triangle inequality for Jaccard distance under the Gilbert condition. -/
 theorem jaccardDist_triangle_of_gilbertCondition {f : L → ℝ}
     (hG : GilbertCondition f) (hpos : IsStrictlyPositive f) (U V W : L) :
     jaccardDist f U W + jaccardDist f W V ≥ jaccardDist f U V := by
@@ -196,10 +178,7 @@ theorem jaccardDist_triangle_of_gilbertCondition {f : L → ℝ}
     linarith
   linarith
 
-/-- **Triangle inequality for the generalized Jaccard distance.** Let
-$f \colon L \to \mathbb{R}$ be a strictly positive, monotone modular valuation on a lattice
-$L$, and let $d_f$ be the Jaccard distance of $f$. Then
-$d_f(U, W) + d_f(W, V) \ge d_f(U, V)$ for all $U, V, W \in L$. -/
+/-- Main triangle inequality for strictly positive monotone modular valuations. -/
 theorem jaccardDist_triangle {f : L → ℝ} (hM : IsModularValuation f)
     (hmono : Monotone f) (hpos : IsStrictlyPositive f) (U V W : L) :
     jaccardDist f U W + jaccardDist f W V ≥ jaccardDist f U V :=

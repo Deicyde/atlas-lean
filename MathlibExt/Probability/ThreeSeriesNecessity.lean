@@ -105,11 +105,11 @@ open ProbabilityTheory.KolmogorovThreeSeries
 
 variable {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω} [IsProbabilityMeasure μ]
 
-/-- **Pair of coordinates from two independent copies.** The pair of the `n`-th coordinates of two independent copies. -/
+/-- The pair of the `n`-th coordinates of two independent copies. -/
 def pairRV (Y : ℕ → Ω → ℝ) (n : ℕ) : Ω × Ω → ℝ × ℝ :=
   fun p => (Y n p.1, Y n p.2)
 
-/-- **Symmetrized random variable.** The symmetrized variable `Z n (ω, ω') = Y n ω - Y n ω'`. -/
+/-- The symmetrized variable `Z n (ω, ω') = Y n ω - Y n ω'`. -/
 def symmRV (Y : ℕ → Ω → ℝ) (n : ℕ) : Ω × Ω → ℝ :=
   (fun p : ℝ × ℝ => p.1 - p.2) ∘ pairRV Y n
 
@@ -249,7 +249,7 @@ theorem integrable_of_measurable_abs_le {f : Ω → ℝ} (hf : Measurable f) {C 
     rw [Real.norm_eq_abs]; exact (hC ω).trans (le_max_left _ _))
 
 omit [IsProbabilityMeasure μ] in
-/-- **Expectation of a product of independent functions factors.** If `f` and `g` are independent, the expectation of a product of functions of
+/-- If `f` and `g` are independent, the expectation of a product of functions of
 `f` and `g` factors. -/
 theorem integral_mul_of_indep_comp {f g : Ω → ℝ} (h : IndepFun f g μ)
     {φ ψ : ℝ → ℝ} (hφ : Measurable φ) (hψ : Measurable ψ)
@@ -258,7 +258,7 @@ theorem integral_mul_of_indep_comp {f g : Ω → ℝ} (h : IndepFun f g μ)
   have h' := (h.comp hφ hψ).integral_fun_mul_eq_mul_integral hf hg
   simpa only [Function.comp_apply] using h'
 
-/-- **Fourth-moment bound for sums of bounded independent variables.** Fourth-moment induction for sums of independent centered bounded random
+/-- Fourth-moment induction for sums of independent centered bounded random
 variables: `E[S⁴] ≤ 3 E[S²]² + B² E[S²]`, together with the variance-of-sum
 identity and `E[S] = 0`. -/
 theorem integral_pow_four_le {Z : ℕ → Ω → ℝ} (hZmeas : ∀ n, Measurable (Z n))

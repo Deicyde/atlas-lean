@@ -72,10 +72,10 @@ variable {Ω : Type*} [MeasurableSpace Ω] {k : ℕ}
 
 /-! ### Fisher's method -/
 
-/-- **Fisher's combined statistic.** Fisher's combined statistic `-2 ∑ log pᵢ` of `k` p-values. -/
+/-- Fisher's combined statistic `-2 ∑ log pᵢ` of `k` p-values. -/
 noncomputable def fisherStatistic (p : Fin k → ℝ) : ℝ := -2 * ∑ i, Real.log (p i)
 
-/-- **Minus twice the log of a uniform variable is chi-square.** `-2 log U` has the exponential law of rate `1/2`, i.e. chi-square with two degrees of
+/-- `-2 log U` has the exponential law of rate `1/2`, i.e. chi-square with two degrees of
 freedom, when `U` is uniform on `[0, 1]`. -/
 theorem hasLaw_neg_two_mul_log_uniform :
     HasLaw (fun u : ℝ => -2 * Real.log u) (gammaMeasure 1 (1 / 2))
@@ -124,7 +124,7 @@ theorem hasLaw_neg_two_mul_log_uniform :
     rw [hempty]
     simp
 
-/-- **Fisher's method for combining p-values.** Fisher (1932), §21.1: for `k ≥ 1` independent p-values, each uniform on `[0, 1]`, Fisher's
+/-- Fisher (1932), §21.1: for `k ≥ 1` independent p-values, each uniform on `[0, 1]`, Fisher's
 statistic `-2 ∑ log pᵢ` is chi-square with `2k` degrees of freedom. -/
 theorem hasLaw_fisherStatistic (hk : 0 < k) {μ : Measure Ω} [IsProbabilityMeasure μ]
     {p : Fin k → Ω → ℝ} (hlaw : ∀ i, HasLaw (p i) (volume.restrict (Set.Icc (0 : ℝ) 1)) μ)
@@ -180,11 +180,11 @@ private theorem variance_sum_mul {μ : Measure Ω} [IsProbabilityMeasure μ]
   rw [h]
   exact Finset.sum_congr rfl fun i _ => variance_const_mul (c i) (X i) μ
 
-/-- **Stouffer's weighted z statistic.** Stouffer's weighted z statistic `∑ wᵢ zᵢ / √(∑ wᵢ²)` of the study z-scores `zᵢ`. -/
+/-- Stouffer's weighted z statistic `∑ wᵢ zᵢ / √(∑ wᵢ²)` of the study z-scores `zᵢ`. -/
 noncomputable def stoufferStatistic (w z : Fin k → ℝ) : ℝ :=
   (∑ i, w i * z i) / √(∑ i, w i ^ 2)
 
-/-- **Stouffer's method.** Stouffer's method (Stouffer et al. 1949; Liptak 1958): for independent standard normal
+/-- Stouffer's method (Stouffer et al. 1949; Liptak 1958): for independent standard normal
 z-scores and a nonzero weight vector, the weighted z statistic is standard normal. -/
 theorem hasLaw_stoufferStatistic {μ : Measure Ω} [IsProbabilityMeasure μ] {w : Fin k → ℝ}
     (hw : w ≠ 0) {z : Fin k → Ω → ℝ} (hlaw : ∀ i, HasLaw (z i) (gaussianReal 0 1) μ)
@@ -219,7 +219,7 @@ theorem hasLaw_stoufferStatistic {μ : Measure Ω} [IsProbabilityMeasure μ] {w 
 
 /-! ### Inverse-variance weighting -/
 
-/-- **Inverse-variance weights.** The inverse-variance (fixed-effect) weights `vᵢ⁻¹ / ∑ⱼ vⱼ⁻¹` for study variances `v`. -/
+/-- The inverse-variance (fixed-effect) weights `vᵢ⁻¹ / ∑ⱼ vⱼ⁻¹` for study variances `v`. -/
 noncomputable def inverseVarianceWeights (v : Fin k → ℝ) (i : Fin k) : ℝ :=
   (v i)⁻¹ / ∑ j, (v j)⁻¹
 
@@ -227,13 +227,13 @@ private theorem sum_inv_pos {v : Fin k → ℝ} (hv : ∀ i, 0 < v i) (hk : 0 < 
     0 < ∑ j, (v j)⁻¹ :=
   Finset.sum_pos (fun i _ => inv_pos.2 (hv i)) ⟨⟨0, hk⟩, Finset.mem_univ _⟩
 
-/-- **Inverse-variance weights sum to one.** The inverse-variance weights sum to one. -/
+/-- The inverse-variance weights sum to one. -/
 theorem sum_inverseVarianceWeights {v : Fin k → ℝ} (hv : ∀ i, 0 < v i) (hk : 0 < k) :
     ∑ i, inverseVarianceWeights v i = 1 := by
   simp only [inverseVarianceWeights, ← Finset.sum_div]
   exact div_self (sum_inv_pos hv hk).ne'
 
-/-- **Variance of the inverse-variance-weighted average.** The variance `∑ wᵢ² vᵢ` of the inverse-variance-weighted average is `(∑ vᵢ⁻¹)⁻¹`. -/
+/-- The variance `∑ wᵢ² vᵢ` of the inverse-variance-weighted average is `(∑ vᵢ⁻¹)⁻¹`. -/
 theorem sum_sq_mul_inverseVarianceWeights {v : Fin k → ℝ} (hv : ∀ i, 0 < v i) (hk : 0 < k) :
     ∑ i, inverseVarianceWeights v i ^ 2 * v i = (∑ j, (v j)⁻¹)⁻¹ := by
   have hS := (sum_inv_pos hv hk).ne'
@@ -246,7 +246,7 @@ theorem sum_sq_mul_inverseVarianceWeights {v : Fin k → ℝ} (hv : ∀ i, 0 < v
   simp_rw [h, ← Finset.sum_div]
   field_simp
 
-/-- **Optimality of inverse-variance weights.** Optimality of inverse-variance weighting: for positive variances `v` and weights `c` summing
+/-- Optimality of inverse-variance weighting: for positive variances `v` and weights `c` summing
 to one, `∑ cᵢ² vᵢ ≥ (∑ vᵢ⁻¹)⁻¹`. The gap is `∑ vᵢ (cᵢ - wᵢ)²` for the inverse-variance
 weights `w`. -/
 theorem inv_sum_inv_le_sum_sq_mul {v : Fin k → ℝ} (hv : ∀ i, 0 < v i) {c : Fin k → ℝ}
@@ -275,7 +275,7 @@ theorem inv_sum_inv_le_sum_sq_mul {v : Fin k → ℝ} (hv : ∀ i, 0 < v i) {c :
     Finset.sum_nonneg fun i _ => mul_nonneg (hv i).le (sq_nonneg _)
   linarith
 
-/-- **Cochran's minimum-variance theorem for weighted averages.** Cochran (1954): for pairwise independent square-integrable estimates `X i` with positive
+/-- Cochran (1954): for pairwise independent square-integrable estimates `X i` with positive
 variances, the inverse-variance-weighted average has variance `(∑ Var[Xᵢ]⁻¹)⁻¹`, the smallest
 variance among all weighted averages `∑ cᵢ Xᵢ` with `∑ cᵢ = 1`. -/
 theorem variance_inverseVariance_le {μ : Measure Ω} [IsProbabilityMeasure μ]

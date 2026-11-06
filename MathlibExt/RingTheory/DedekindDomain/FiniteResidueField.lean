@@ -49,7 +49,7 @@ namespace IsDedekindDomain.HeightOneSpectrum
 
 variable {R : Type u} [CommRing R] [IsDedekindDomain R]
 
-/-- **Finite residue field of adic completion integers.** The residue field of the adic completion integers at a place with finite
+/-- The residue field of the adic completion integers at a place with finite
 residue field is finite. -/
 theorem finite_residueField_adicCompletionIntegers (K : Type v) [Field K] [Algebra R K]
     [IsFractionRing R K] (v : HeightOneSpectrum R) [Finite (R ⧸ v.asIdeal)] :

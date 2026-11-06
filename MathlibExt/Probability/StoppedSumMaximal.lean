@@ -360,7 +360,7 @@ private theorem integrable_stopped_partialSum_sq_of_integrable_tau {X : ℕ → 
     (Finset.mem_range.mpr (Nat.lt_succ_self (τ ω)))
 
 
-/-- **Predictable filtration of a sequence.** The "predictable" filtration associated to a sequence `X : ℕ → Ω → ℝ`:
+/-- The "predictable" filtration associated to a sequence `X : ℕ → Ω → ℝ`:
 `ℱ_k = σ(X_0, …, X_{k-1})`. Ported verbatim from v1 `WaldSecondEquation.lean`. -/
 noncomputable def predictableFiltration
     {Ω : Type*} (m : MeasurableSpace Ω) (X : ℕ → Ω → ℝ)
@@ -370,13 +370,13 @@ noncomputable def predictableFiltration
     MeasurableSpace.comap (X l') inferInstance) l (Nat.lt_of_lt_of_le hl hij)
   le' _k := iSup₂_le fun j _ => (hX_meas j).comap_le
 
-/-- **Predictable filtration at time zero is trivial.** The predictable filtration contains no observations at time zero. -/
+/-- The predictable filtration contains no observations at time zero. -/
 @[simp] theorem predictableFiltration_zero {X : ℕ → Ω → ℝ}
     (hX_meas : ∀ i, Measurable (X i)) :
     predictableFiltration m0 X hX_meas 0 = ⊥ := by
   simp [predictableFiltration]
 
-/-- **Successor step of the predictable filtration.** A successor step adds exactly the next observation to the predictable filtration. -/
+/-- A successor step adds exactly the next observation to the predictable filtration. -/
 theorem predictableFiltration_succ {X : ℕ → Ω → ℝ}
     (hX_meas : ∀ i, Measurable (X i)) (k : ℕ) :
     predictableFiltration m0 X hX_meas (k + 1) =

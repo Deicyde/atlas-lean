@@ -29,29 +29,29 @@ namespace MvPowerSeries
 
 variable {σ A : Type*} [CommRing A] [Algebra ℚ A]
 
-/-- **Partial sums of the exponential of a coefficient operator.** The first `N` operator iterates, `∑ n < N, 𝒪ⁿ / n!`, acting on the full input series. -/
+/-- The first `N` operator iterates, `∑ n < N, 𝒪ⁿ / n!`, acting on the full input series. -/
 noncomputable def expOperatorPartial (O : σ → A →ₗ[ℚ] A) (N : ℕ) :
     MvPowerSeries σ A →ₗ[ℚ] MvPowerSeries σ A :=
   ∑ n ∈ Finset.range N, (n.factorial : ℚ)⁻¹ • coefficientOperator O ^ n
 
-/-- **Partial operator exponential as a sum of function iterates.** The finite exponential sum agrees with the source's function-iterate formula. -/
+/-- The finite exponential sum agrees with the source's function-iterate formula. -/
 theorem expOperatorPartial_apply (O : σ → A →ₗ[ℚ] A) (N : ℕ)
     (f : MvPowerSeries σ A) :
     expOperatorPartial O N f =
       ∑ n ∈ Finset.range N, (n.factorial : ℚ)⁻¹ • (coefficientOperator O)^[n] f := by
   simp [expOperatorPartial, LinearMap.sum_apply, Module.End.coe_pow]
 
-/-- **Formal exponential of a coefficient operator.** The formal exponential: coefficient `d` uses operator iterates `n ≤ d.degree`. -/
+/-- The formal exponential: coefficient `d` uses operator iterates `n ≤ d.degree`. -/
 noncomputable def expOperator (O : σ → A →ₗ[ℚ] A) :
     MvPowerSeries σ A →ₗ[ℚ] MvPowerSeries σ A :=
   LinearMap.pi fun d => (LinearMap.proj d).comp (expOperatorPartial O (d.degree + 1))
 
-/-- **Defining coefficient formula of the operator exponential.** The defining iteration bound is exactly the source constructor's bound. -/
+/-- The defining iteration bound is exactly the source constructor's bound. -/
 @[simp] theorem coeff_expOperator_def (O : σ → A →ₗ[ℚ] A)
     (f : MvPowerSeries σ A) (d : σ →₀ ℕ) :
     coeff d (expOperator O f) = coeff d (expOperatorPartial O (d.degree + 1) f) := rfl
 
-/-- **Coefficients of the operator exponential via partial sums.** For `d.degree < N`, the first `N` operator iterates determine coefficient `d`. -/
+/-- For `d.degree < N`, the first `N` operator iterates determine coefficient `d`. -/
 theorem coeff_expOperator (O : σ → A →ₗ[ℚ] A) (f : MvPowerSeries σ A)
     {d : σ →₀ ℕ} {N : ℕ} (hd : d.degree < N) :
     coeff d (expOperator O f) = coeff d (expOperatorPartial O N f) := by
@@ -65,14 +65,14 @@ theorem coeff_expOperator (O : σ → A →ₗ[ℚ] A) (f : MvPowerSeries σ A)
   change (n.factorial : ℚ)⁻¹ • coeff d ((coefficientOperator O)^[n] f) = 0
   rw [hz, smul_zero]
 
-/-- **The operator exponential preserves the constant coefficient.** The formal exponential preserves every constant coefficient, including nonzero ones. -/
+/-- The formal exponential preserves every constant coefficient, including nonzero ones. -/
 @[simp] theorem constantCoeff_expOperator (O : σ → A →ₗ[ℚ] A)
     (f : MvPowerSeries σ A) : constantCoeff (expOperator O f) = constantCoeff f := by
   rw [← coeff_zero_eq_constantCoeff_apply, ← coeff_zero_eq_constantCoeff_apply,
     coeff_expOperator_def]
   simp [expOperatorPartial_apply]
 
-/-- **Operator exponential when the square of the operator vanishes.** If the second operator iterate vanishes on `f`, its exponential is `f + 𝒪 f`. -/
+/-- If the second operator iterate vanishes on `f`, its exponential is `f + 𝒪 f`. -/
 theorem expOperator_of_sq_zero (O : σ → A →ₗ[ℚ] A) {f : MvPowerSeries σ A}
     (hf : coefficientOperator O (coefficientOperator O f) = 0) :
     expOperator O f = f + coefficientOperator O f := by
@@ -86,12 +86,12 @@ theorem expOperator_of_sq_zero (O : σ → A →ₗ[ℚ] A) {f : MvPowerSeries �
     Finset.sum_eq_zero (fun n _ => by rw [hz, smul_zero])]
   simp [add_comm]
 
-/-- **The operator exponential fixes series annihilated by the operator.** The exponential fixes an input annihilated by the coefficient operator. -/
+/-- The exponential fixes an input annihilated by the coefficient operator. -/
 theorem expOperator_of_zero (O : σ → A →ₗ[ℚ] A) {f : MvPowerSeries σ A}
     (hf : coefficientOperator O f = 0) : expOperator O f = f := by
   rw [expOperator_of_sq_zero O (by rw [hf, map_zero]), hf, add_zero]
 
-/-- **Exponential of the zero coefficient-operator family is the identity.** The exponential of the zero coefficient-map family is the identity linear map. -/
+/-- The exponential of the zero coefficient-map family is the identity linear map. -/
 @[simp] theorem expOperator_zero_family :
     expOperator (fun _ : σ => (0 : A →ₗ[ℚ] A)) = LinearMap.id := by
   ext f d

@@ -307,10 +307,7 @@ private theorem mulLeftRight_bijective_of_central_simple
   exact ⟨hinj, hsurj⟩
 
 /--
-**Skolem–Noether theorem.** Let $k$ be a field and let $A$ be a finite-dimensional central
-simple algebra over $k$. Then every $k$-algebra automorphism $\sigma$ of $A$ is inner: there is
-a unit $u \in A^\times$ such that $\sigma(x) = u x u^{-1}$ for all $x \in A$.
-
+Every k-algebra automorphism of a finite-dimensional central simple algebra is inner.
 Source: T. Skolem, Zur Theorie der assoziativen Zahlensysteme, Skrifter Vidensk. Kristiania I
 (1927), no. 12; E. Noether, Nichtkommutative Algebra, Math. Z. 37 (1933), 514-541, DOI
 10.1007/BF01474591.

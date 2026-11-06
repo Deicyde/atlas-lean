@@ -20,10 +20,8 @@ open scoped SchwartzMap
 namespace MathlibExt.Analysis.Distribution.CauchyPrincipalValueWanted
 
 /--
-**Existence of the Cauchy principal value of $\varphi(x)/x$.** For every real-valued Schwartz
-function $\varphi$ on $\mathbb{R}$ there is a real number $L$ such that
-$\int_{\{x \in \mathbb{R} \,:\, |x| \ge \varepsilon\}} \varphi(x)/x \, dx \to L$ as
-$\varepsilon \to 0^+$, the integrals being taken with respect to Lebesgue measure.
+The Cauchy principal value of `φ(x)/x` exists for Schwartz `φ`: the symmetric-exclusion
+integrals converge as the exclusion radius tends to `0`.
 
 Sources: Mathlib `docs/undergrad.yaml`, section "Distribution calculus" /
 "Distributions on R^d" / entry "Cauchy principal values";

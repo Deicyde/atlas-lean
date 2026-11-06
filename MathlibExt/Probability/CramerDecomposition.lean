@@ -546,14 +546,11 @@ private lemma hasGaussianLaw_left_of_indep_add
   exact HasGaussianLaw.mk hX.aemeasurable hgauss
 
 /--
-**Cramér's decomposition theorem.** Let $X$ and $Y$ be measurable real random variables on a
-probability space. If $X$ and $Y$ are independent and $X + Y$ has a Gaussian law, then $X$ and
-$Y$ each have a Gaussian law. Here a Gaussian law may be degenerate, that is, a point mass.
-
-Proves `Wanted` entry `cramer_decomposition`.
-
+If independent real `X, Y` have Gaussian sum, each is Gaussian (degenerate allowed).
 Source: H. Cramér, "Über eine Eigenschaft der normalen Verteilungsfunktion", Mathematische
 Zeitschrift 41 (1936), 405–414, DOI 10.1007/BF01180430.
+
+Proves `Wanted` entry `cramer_decomposition`.
 -/
 theorem cramer_decomposition
     {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω} [IsProbabilityMeasure μ]

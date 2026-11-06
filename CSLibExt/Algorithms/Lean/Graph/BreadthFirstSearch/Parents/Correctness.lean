@@ -96,11 +96,7 @@ private lemma parentFinal_distance {V : Type u} [BEq V] [Hashable V] [LawfulBEq 
     (bfsWithParents_ret graph source)
   simpa only [bfsWithParents, TimeM.ret_bind, TimeM.ret_pure] using projection
 
-/-- **Each reachable vertex has a unique saved-parent chain.** Let $G$ be a finite directed graph
-given by adjacency lists, and let $s$ and $v$ be vertices with $v$ reachable from $s$ in $G$.
-There is exactly one list of vertices that starts at $s$, ends at $v$, and in which each vertex
-after the first has the preceding vertex as its saved parent in the breadth-first search forest
-of $G$ from $s$. -/
+/-- Every reachable vertex has exactly one endpoint-inclusive saved-parent chain. -/
 public theorem predecessor_chain_unique {V : Type u} [BEq V] [Hashable V] [LawfulBEq V]
     (graph : DirectedAdjacency V) (source vertex : V)
     (reachable : graph.Reachable source vertex) :
@@ -122,10 +118,7 @@ public theorem predecessor_chain_unique {V : Type u} [BEq V] [Hashable V] [Lawfu
     · simpa only [bfsWithParents, TimeM.ret_bind, TimeM.ret_pure] using otherLinked
     · exact linked
 
-/-- **Saved-parent chains are simple.** Let $G$ be a finite directed graph given by adjacency
-lists and let $s$ and $v$ be vertices. If a list of vertices starts at $s$, ends at $v$, and each
-of its vertices after the first has the preceding vertex as its saved parent in the breadth-first
-search forest of $G$ from $s$, then no vertex occurs twice in the list. -/
+/-- Every source-to-target chain in the saved predecessor relation is simple. -/
 public theorem predecessor_chain_nodup {V : Type u} [BEq V] [Hashable V] [LawfulBEq V]
     (graph : DirectedAdjacency V) (source vertex : V) (chain : List V)
     (linked : chain.IsChainFromTo
@@ -164,10 +157,7 @@ private lemma parentInvariant_transGen_lt {V : Type u} [BEq V] [Hashable V]
       simp only [Option.some.injEq] at same
       exact ⟨first, distance + 1, firstFound, childFound, by omega⟩
 
-/-- **The saved-parent relation is acyclic.** Let $G$ be a finite directed graph given by
-adjacency lists and let $s$ and $v$ be vertices. In the breadth-first search forest of $G$ from
-$s$, there is no sequence $v = x_0, x_1, \dots, x_k = v$ with $k \ge 1$ in which each $x_i$ is
-the saved parent of $x_{i+1}$. -/
+/-- The saved-parent relation has no nonempty directed cycle. -/
 public theorem predecessor_relation_acyclic {V : Type u} [BEq V] [Hashable V] [LawfulBEq V]
     (graph : DirectedAdjacency V) (source vertex : V) :
     ¬ Relation.TransGen
@@ -188,9 +178,7 @@ public theorem predecessor_relation_acyclic {V : Type u} [BEq V] [Hashable V] [L
   simp only [Option.some.injEq] at same
   omega
 
-/-- **Path reconstruction at the source.** For every breadth-first search forest $F$ and every
-vertex $s$, following the saved parents of $F$ from $s$ back to $s$ returns the one-vertex path
-$[s]$. This holds for every forest, including one whose discovery order is empty. -/
+/-- The saved-parent walker returns the singleton source path, including at zero fuel. -/
 public theorem BFSForest.pathTo?_source {V : Type u} [BEq V] [ReflBEq V]
     (forest : BFSForest V) (source : V) :
     (forest.pathTo? source source).ret = some [source] := by
@@ -339,10 +327,7 @@ private lemma parentFinal_unreachable {V : Type u} [BEq V] [Hashable V] [LawfulB
   exact followParents_none (bfsWithParents graph source).ret.predecessor source vertex
     (bfsWithParents graph source).ret.order.length decoratedPositive nonsource missing
 
-/-- **Path reconstruction fails exactly at unreachable vertices.** Let $G$ be a finite directed
-graph given by adjacency lists, and let $s$ and $v$ be vertices. Following the saved parents of the
-breadth-first search forest of $G$ from $s$ back from $v$ towards $s$ returns no path if and only
-if $v$ is not reachable from $s$ in $G$. -/
+/-- Parent reconstruction returns no path exactly for unreachable targets. -/
 public theorem BFSForest.pathTo?_eq_none_iff {V : Type u} [BEq V] [Hashable V] [LawfulBEq V]
     (graph : DirectedAdjacency V) (source vertex : V) :
     ((bfsWithParents graph source).ret.pathTo? source vertex).ret = none ↔
@@ -356,14 +341,7 @@ public theorem BFSForest.pathTo?_eq_none_iff {V : Type u} [BEq V] [Hashable V] [
   · intro unreachable
     rw [parentFinal_unreachable graph source vertex unreachable]
 
-/-- **Reconstructed BFS paths are shortest paths.** Let $G$ be a finite directed graph given by
-adjacency lists, let $s$ and $v$ be vertices, and suppose that following the saved parents of the
-breadth-first search forest of $G$ from $s$ back from $v$ returns a list $P$ of vertices. Then $P$
-starts at $s$ and ends at $v$, each vertex of $P$ after the first has the preceding vertex as its
-saved parent, $G$ has an edge from each vertex of $P$ to the next, no vertex occurs twice in $P$,
-breadth-first search from $s$ reports a distance $d$ for $v$ and $P$ has $d + 1$ vertices, and
-every list of vertices from $s$ to $v$ such that $G$ has an edge from each of its vertices to the
-next has at least as many vertices as $P$. -/
+/-- A returned path follows saved parents and graph edges, is simple and has minimal length. -/
 public theorem BFSForest.pathTo?_spec {V : Type u} [BEq V] [Hashable V] [LawfulBEq V]
     (graph : DirectedAdjacency V) (source vertex : V) (chain : List V)
     (returned : ((bfsWithParents graph source).ret.pathTo? source vertex).ret = some chain) :
@@ -444,11 +422,7 @@ private lemma parentFinal_missing_events {V : Type u} [BEq V] [Hashable V] [Lawf
   exact followEvents_missing (bfsWithParents graph source).ret.predecessor source vertex
     (bfsWithParents graph source).ret.order.length decoratedPositive nonsource missing
 
-/-- **Cost of path reconstruction for a reachable vertex.** Let $G$ be a finite directed graph
-given by adjacency lists, let $s$ and $v$ be vertices, and suppose breadth-first search from $s$
-reports distance $d$ for $v$. Following the saved parents of the breadth-first search forest of
-$G$ from $s$ back from $v$ costs exactly $3d + 2$, counting one unit for each comparison with $s$,
-each parent lookup and each vertex prepended to the path. -/
+/-- Reachable parent reconstruction has exactly the selected comparison/read/cons cost. -/
 public theorem BFSForest.pathTo?_time {V : Type u} [BEq V] [Hashable V] [LawfulBEq V]
     (graph : DirectedAdjacency V) (source vertex : V) (distance : Nat)
     (found : (bfs graph source).distance vertex = some distance) :
@@ -461,12 +435,7 @@ public theorem BFSForest.pathTo?_time {V : Type u} [BEq V] [Hashable V] [LawfulB
   have total : distance + 1 + distance + (distance + 1) = 3 * distance + 2 := by omega
   simpa only [BFSForest.pathTo?, total] using timing
 
-/-- **Cost of path reconstruction for an unreachable vertex.** Let $G$ be a finite directed graph
-given by adjacency lists, and let $s$ and $v$ be vertices with $v$ not reachable from $s$ in $G$.
-Following the saved parents of the breadth-first search forest of $G$ from $s$ back from $v$ costs
-exactly $2$, counting one unit for each comparison with $s$, each parent lookup and each vertex
-prepended to the path: one comparison of $v$ with $s$ and one lookup of the missing parent of
-$v$. -/
+/-- An unreachable target incurs one source comparison and one missing parent lookup. -/
 public theorem BFSForest.pathTo?_time_of_not_reachable
     {V : Type u} [BEq V] [Hashable V] [LawfulBEq V]
     (graph : DirectedAdjacency V) (source vertex : V)

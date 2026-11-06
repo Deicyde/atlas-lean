@@ -38,8 +38,7 @@ set_option autoImplicit false
 
 namespace Cslib.Algorithms.Lean.TimeM.Knapsack
 
-/-- **Knapsack item.** A zero-one knapsack item consists of a weight $w \in \mathbb{N}$ and a value
-$v \in \mathbb{N}$. -/
+/-- A zero-one knapsack item with a natural weight and value. -/
 structure Item where
   /-- Weight consumed when the item is selected. -/
   weight : Nat
@@ -47,9 +46,7 @@ structure Item where
   value : Nat
 deriving DecidableEq, Repr
 
-/-- **Knapsack result.** For a list of $n$ knapsack items, a knapsack result consists of a set
-$S \subseteq \{0, \dots, n - 1\}$ of item indices, the chosen items, and a natural number, the
-reported total value. -/
+/-- A knapsack result. `Finset` gives distinct indices and `Fin` keeps them in range. -/
 structure Result (items : List Item) where
   /-- Selected original item indices. -/
   chosen : Finset (Fin items.length)
@@ -57,21 +54,15 @@ structure Result (items : List Item) where
   value : Nat
 deriving DecidableEq
 
-/-- **Total weight of a knapsack selection.** For knapsack items $x_0, \dots, x_{n-1}$ with weights
-$w_i$ and a set $S \subseteq \{0, \dots, n - 1\}$ of item indices, the total weight of $S$ is
-$\sum_{i \in S} w_i$. -/
+/-- Total weight of the items at the selected indices. -/
 def totalWeight (items : List Item) (chosen : Finset (Fin items.length)) : Nat :=
   chosen.sum fun i => (items.get i).weight
 
-/-- **Total value of a knapsack selection.** For knapsack items $x_0, \dots, x_{n-1}$ with values
-$v_i$ and a set $S \subseteq \{0, \dots, n - 1\}$ of item indices, the total value of $S$ is
-$\sum_{i \in S} v_i$. -/
+/-- Total value of the items at the selected indices. -/
 def totalValue (items : List Item) (chosen : Finset (Fin items.length)) : Nat :=
   chosen.sum fun i => (items.get i).value
 
-/-- **Feasible knapsack selection.** For knapsack items $x_0, \dots, x_{n-1}$ with weights $w_i$
-and a capacity $W \in \mathbb{N}$, a set $S \subseteq \{0, \dots, n - 1\}$ of item indices is
-feasible when its total weight $\sum_{i \in S} w_i$ is at most $W$. -/
+/-- A selected set is feasible when its total weight does not exceed the capacity. -/
 def Feasible (items : List Item) (capacity : Nat)
     (chosen : Finset (Fin items.length)) : Prop :=
   totalWeight items chosen ≤ capacity
@@ -226,15 +217,7 @@ private theorem optimal_unique {items : List Item} {i capacity a b : Nat}
   have hba := ha.2 chosenB hwithinB hfeasibleB
   omega
 
-/-- **Bottom-up zero-one knapsack algorithm.** Given knapsack items $x_0, \dots, x_{n-1}$ with
-weights $w_i$ and values $v_i$ and a capacity $W \in \mathbb{N}$, the algorithm fills a table
-$V(i, c)$ for $0 \le i \le n$ and $0 \le c \le W$ by $V(0, c) = 0$ and, for $i < n$,
-$V(i + 1, c) = \max(V(i, c), V(i, c - w_i) + v_i)$ if $w_i \le c$ and $V(i + 1, c) = V(i, c)$
-otherwise. Starting from $c = W$, it then inspects the rows $i = n, n - 1, \dots, 1$: if
-$V(i, c) = V(i - 1, c)$ it skips item $i - 1$, and otherwise it selects index $i - 1$ and
-replaces $c$ by $c - w_{i-1}$. It returns the selected index set together with the value
-$V(n, W)$. Each of the $n(W + 1)$ cells of rows $1, \dots, n$ costs one tick, and each of the
-$n$ inspected rows costs one tick. -/
+/-- Bottom-up zero-one knapsack with one tick per table cell and reconstructed item row. -/
 def solve (items : List Item) (capacity : Nat) : TimeM Nat (Result items) :=
   let Row (n : Nat) := Subtype (fun row : Array Nat => row.size = n + 1)
   let rec @[reducible] buildRow (item : Item) (up : Row capacity) :
@@ -473,10 +456,8 @@ private theorem reconstruct_correct (items : List Item) (capacity : Nat)
         · rw [totalValue_insert items _ idx hnotmem, hvalue]
           omega
 
-/-- **Correctness of the zero-one knapsack algorithm.** For every list of knapsack items and every
-capacity $W \in \mathbb{N}$, let $S$ and $v$ be the index set and the reported value returned by
-the bottom-up knapsack algorithm. Then $S$ is feasible for $W$, $v$ is the total value of $S$,
-and every feasible set $T$ of item indices has total value at most $v$. -/
+/-- The returned set is feasible, its reported value is its value sum, and it is globally
+optimal among all feasible subsets of the input indices. -/
 theorem solve_correct (items : List Item) (capacity : Nat) :
     let result := (solve items capacity).ret
     Feasible items capacity result.chosen ∧
@@ -530,10 +511,7 @@ private theorem reconstruct_time (items : List Item) (capacity : Nat) (values : 
         rw [ih]
         omega
 
-/-- **Exact cost of the knapsack algorithm.** For every list of $n$ knapsack items and every
-capacity $W \in \mathbb{N}$, the bottom-up knapsack algorithm costs exactly $n(W + 1) + n$ ticks:
-one for each of the $n(W + 1)$ table cells it computes and one for each of the $n$ item rows it
-inspects during reconstruction. -/
+/-- The exact cost is one tick per table cell and one tick per reconstructed item row. -/
 theorem solve_time (items : List Item) (capacity : Nat) :
     (solve items capacity).time =
       items.length * (capacity + 1) + items.length := by
@@ -541,9 +519,7 @@ theorem solve_time (items : List Item) (capacity : Nat) :
     reconstruct_time, List.size_toArray]
   omega
 
-/-- **Pseudo-polynomial cost bound for knapsack.** For every list of $n$ knapsack items and every
-capacity $W \in \mathbb{N}$ with $W \ge 1$, the bottom-up knapsack algorithm costs at most $3nW$
-ticks. -/
+/-- For positive capacity, the exact pseudo-polynomial cost is at most `3 * n * W`. -/
 theorem solve_time_le_three_mul (items : List Item) (capacity : Nat)
     (hcapacity : 0 < capacity) :
     (solve items capacity).time ≤ 3 * (items.length * capacity) := by

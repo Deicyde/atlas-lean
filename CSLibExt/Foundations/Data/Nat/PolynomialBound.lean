@@ -33,7 +33,7 @@ Copyright 2026 Anthropic, PBC. Licensed under Apache 2.0 (see LICENSE).
 
 namespace Cslib
 
-/-- **Polynomial bounds with equal coefficient and exponent.** Polynomial growth is equivalent to a global bound whose coefficient equals its exponent. -/
+/-- Polynomial growth is equivalent to a global bound whose coefficient equals its exponent. -/
 theorem polynomiallyBounded_iff_le_mul_pow_self {f : ℕ → ℕ} :
     PolynomiallyBounded f ↔ ∃ c : ℕ, ∀ n, f n ≤ c * (n + 1) ^ c := by
   rw [polynomiallyBounded_iff_le]
@@ -69,19 +69,19 @@ private theorem bound_comp (c c' n : ℕ) :
     _ = (c * (c' + 1) ^ c) * (n + 1) ^ (c' * c) := by
       rw [mul_pow, pow_mul, mul_assoc]
 
-/-- **Constant functions are polynomially bounded.** Every constant natural-valued function is polynomially bounded. -/
+/-- Every constant natural-valued function is polynomially bounded. -/
 theorem const (a : ℕ) : PolynomiallyBounded (fun _ ↦ a) := by
   apply polynomiallyBounded_iff_le_mul_pow_self.2
   exact ⟨a, fun n ↦ Nat.le_mul_of_pos_right _ (Nat.pow_pos (Nat.succ_pos n))⟩
 
-/-- **The identity function is polynomially bounded.** The identity function on natural numbers is polynomially bounded. -/
+/-- The identity function on natural numbers is polynomially bounded. -/
 theorem id : PolynomiallyBounded (fun n ↦ n) := by
   apply polynomiallyBounded_iff_le_mul_pow_self.2
   refine ⟨1, fun n ↦ ?_⟩
   rw [pow_one, Nat.one_mul]
   exact Nat.le_succ n
 
-/-- **Sums of polynomially bounded functions are polynomially bounded.** A pointwise sum of polynomially bounded functions is polynomially bounded. -/
+/-- A pointwise sum of polynomially bounded functions is polynomially bounded. -/
 theorem add (hf : PolynomiallyBounded f) (hg : PolynomiallyBounded g) :
     PolynomiallyBounded (fun n ↦ f n + g n) := by
   obtain ⟨c, hc⟩ := polynomiallyBounded_iff_le_mul_pow_self.1 hf
@@ -93,7 +93,7 @@ theorem add (hf : PolynomiallyBounded f) (hg : PolynomiallyBounded g) :
     ((hc n).trans (bound_le le_rfl (Nat.le_add_right _ _)))
     ((hc' n).trans (bound_le le_rfl (Nat.le_add_left _ _)))
 
-/-- **Products of polynomially bounded functions are polynomially bounded.** A pointwise product of polynomially bounded functions is polynomially bounded. -/
+/-- A pointwise product of polynomially bounded functions is polynomially bounded. -/
 theorem mul (hf : PolynomiallyBounded f) (hg : PolynomiallyBounded g) :
     PolynomiallyBounded (fun n ↦ f n * g n) := by
   obtain ⟨c, hc⟩ := polynomiallyBounded_iff_le_mul_pow_self.1 hf
@@ -109,14 +109,14 @@ theorem mul (hf : PolynomiallyBounded f) (hg : PolynomiallyBounded g) :
     _ ≤ (c * c' + (c + c')) * (n + 1) ^ (c * c' + (c + c')) :=
       bound_le (Nat.le_add_right _ _) (Nat.le_add_left _ _)
 
-/-- **Powers of polynomially bounded functions are polynomially bounded.** A fixed pointwise power of a polynomially bounded function is polynomially bounded. -/
+/-- A fixed pointwise power of a polynomially bounded function is polynomially bounded. -/
 theorem pow (hf : PolynomiallyBounded f) (k : ℕ) :
     PolynomiallyBounded (fun n ↦ f n ^ k) := by
   induction k with
   | zero => simpa using const 1
   | succ k ih => simpa only [pow_succ] using ih.mul hf
 
-/-- **Compositions of polynomially bounded functions are polynomially bounded.** A composition of polynomially bounded functions is polynomially bounded. -/
+/-- A composition of polynomially bounded functions is polynomially bounded. -/
 theorem comp (hf : PolynomiallyBounded f) (hg : PolynomiallyBounded g) :
     PolynomiallyBounded (fun n ↦ f (g n)) := by
   obtain ⟨c, hc⟩ := polynomiallyBounded_iff_le_mul_pow_self.1 hf
@@ -132,7 +132,7 @@ theorem comp (hf : PolynomiallyBounded f) (hg : PolynomiallyBounded g) :
         (n + 1) ^ (c * (c' + 1) ^ c + c' * c) :=
       bound_le (Nat.le_add_right _ _) (Nat.le_add_left _ _)
 
-/-- **The normalized polynomial bound is polynomially bounded and monotone.** The normalized bound is itself polynomially bounded and monotone in its input. -/
+/-- The normalized bound is itself polynomially bounded and monotone in its input. -/
 theorem mono_bound (c : ℕ) :
     PolynomiallyBounded (fun n ↦ c * (n + 1) ^ c) ∧
       Monotone (fun n ↦ c * (n + 1) ^ c) := by

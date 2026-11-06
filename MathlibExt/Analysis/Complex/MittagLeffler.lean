@@ -31,22 +31,11 @@ section
 
 namespace MathlibExt.Analysis.Complex.MittagLefflerWanted
 
-/--
-**Principal part with finitely many coefficients.** For a point $s \in \mathbb{C}$ and a finitely
-supported sequence $c = (c_k)_{k \in \mathbb{N}}$ of complex coefficients, the principal part at
-$s$ with coefficients $c$ is the function $\mathbb{C} \to \mathbb{C}$ given by
-$z \mapsto \sum_k c_k (z - s)^{-(k+1)}$, the sum running over the finitely many $k$ with
-$c_k \neq 0$.
-
-At $z = s$ every term is taken to be $0$ (the convention $0^{-n} = 0$), so the function has value
-$0$ there.
--/
+/-- Finite principal part at `s` given by finitely supported `coeff`. -/
 noncomputable def principalPart (s : ℂ) (coeff : ℕ →₀ ℂ) (z : ℂ) : ℂ :=
   ∑ k ∈ coeff.support, coeff k * (z - s) ^ (-(↑k + 1) : ℤ)
 
-/-- **The principal part is analytic away from its pole.** For every $s \in \mathbb{C}$ and every
-finitely supported sequence $c$ of complex coefficients, the principal part at $s$ with
-coefficients $c$ is analytic at every point $z \neq s$. -/
+/-- Away from its pole `s`, the principal part is analytic. -/
 theorem principalPart_analyticAt (s : ℂ) (coeff : ℕ →₀ ℂ) (z : ℂ) (hz : z ≠ s) :
     AnalyticAt ℂ (principalPart s coeff) z := by
   unfold principalPart
@@ -111,9 +100,7 @@ private theorem exists_correction (s : ℂ) (coeff : ℕ →₀ ℂ) (weight : �
       (principalPart_differentiableOn_closedBall s coeff (3 * ‖s‖ / 4) (by linarith))
       (‖s‖ / 2) (by positivity) (by linarith) weight hw
 
-/-- **The principal part is meromorphic.** For every $s \in \mathbb{C}$ and every finitely
-supported sequence $c$ of complex coefficients, the principal part at $s$ with coefficients $c$ is
-meromorphic at every point of $\mathbb{C}$. -/
+/-- The principal part is meromorphic at every point. -/
 theorem principalPart_meromorphicAt (s : ℂ) (coeff : ℕ →₀ ℂ) (x : ℂ) :
     MeromorphicAt (principalPart s coeff) x := by
   unfold principalPart
@@ -123,12 +110,9 @@ theorem principalPart_meromorphicAt (s : ℂ) (coeff : ℕ →₀ ℂ) (x : ℂ)
     (((MeromorphicAt.id x).sub (MeromorphicAt.const s x)).zpow _)
 
 /--
-**Mittag-Leffler theorem, discrete-subspace form.** Let $S \subseteq \mathbb{C}$ be a closed set
-that is discrete in the subspace topology, and for each $s \in S$ let $c_s$ be a finitely supported
-sequence of complex coefficients. Then there is a function $f : \mathbb{C} \to \mathbb{C}$ that is
-holomorphic on $\mathbb{C} \setminus S$, meromorphic on all of $\mathbb{C}$, and such that for every
-$s \in S$ the difference between $f$ and the principal part at $s$ with coefficients $c_s$ is
-analytic at $s$.
+Mittag-Leffler: for a closed discrete `S ⊆ ℂ` and finite principal parts `coeff`, some `f : ℂ → ℂ`
+holomorphic on `Sᶜ` and meromorphic on `ℂ` has principal part `principalPart s (coeff s)` at each
+`s ∈ S`.
 -/
 theorem mittag_leffler_of_isDiscrete
     (S : Set ℂ) (hS_closed : IsClosed S)
@@ -281,19 +265,13 @@ theorem mittag_leffler_of_isDiscrete
   · exact (hdiffOn.analyticAt (hopen.mem_nhds hx)).meromorphicAt
 
 /--
-**Mittag-Leffler theorem.** Let $S \subseteq \mathbb{C}$ be a closed set such that every $z \in S$
-has a radius $\varepsilon > 0$ for which the punctured disk $\{w : 0 < |w - z| < \varepsilon\}$
-contains no point of $S$, and for each $s \in S$ let $c_s$ be a finitely supported sequence of
-complex coefficients. Then there is a function $f : \mathbb{C} \to \mathbb{C}$ that is holomorphic
-on $\mathbb{C} \setminus S$, meromorphic on all of $\mathbb{C}$, and such that for every $s \in S$
-the difference between $f$ and the principal part at $s$ with coefficients $c_s$ is analytic at
-$s$.
-
-Proves `Wanted` entry `mittag_leffler`.
-
-Source: Mittag-Leffler theorem, G. Mittag-Leffler, Acta Math. 4 (1884); see Rudin;
+For closed discrete `S ⊆ ℂ` and any `coeff : ↥S → ℕ →₀ ℂ`, there exists `f : ℂ → ℂ` holomorphic on
+`Sᶜ` and meromorphic on `ℂ` whose difference from `principalPart s.val (coeff s)` is analytic at
+each `s ∈ S`. Source: Mittag-Leffler theorem, G. Mittag-Leffler, Acta Math. 4 (1884); see Rudin;
 Lean is closed discrete S with punctured-ball isolation, prescribed finite principal parts via
 Finsupp, global meromorphic existence holomorphic on Sᶜ.
+
+Proves `Wanted` entry `mittag_leffler`.
 -/
 theorem mittag_leffler
     (S : Set ℂ) (hS_closed : IsClosed S)

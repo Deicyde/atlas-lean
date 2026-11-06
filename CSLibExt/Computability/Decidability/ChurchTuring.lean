@@ -40,12 +40,7 @@ namespace Cslib.Decidability
 
 open MetaMathlibExt.TM2Recursive (tm2Computable_of_computable)
 
-/-- **A URM-computable total function is computed by a multi-stack Turing machine.** Let
-$f : \mathbb{N} \to \mathbb{N}$. Suppose there is a URM program that, for every $n \in \mathbb{N}$,
-started with $n$ in register $0$ and all other registers $0$, halts with $f(n)$ in register $0$.
-Then there is a multi-stack Turing machine that computes $f$ with input and output numbers
-written in binary: started on the binary word of $n$, it halts with the binary word of $f(n)$.
-
+/-- **A URM-computable total function is computed by a multi-stack Turing machine.**
 Source: Sipser, *Introduction to the Theory of Computation*, 3rd ed., §3.1 (Church–Turing thesis) and §3.3 (equivalence of models). -/
 theorem urmComputable_to_tm2 {f : ℕ → ℕ}
     (h : Cslib.URM.Computable 1 fun inputs ↦ Part.some (f (inputs 0))) :
@@ -54,20 +49,14 @@ theorem urmComputable_to_tm2 {f : ℕ → ℕ}
     Cslib.URM.partrec_of_computable h
   exact tm2Computable_of_computable hpart
 
-/-- **URM-decidability implies multi-stack decidability.**
-Every predicate $P$ on $\mathbb{N}$ that is URM-decidable is decidable by a multi-stack Turing
-machine.
-
+/-- **A URM-decidable predicate is decidable by a multi-stack Turing machine.**
 Source: Sipser, *Introduction to the Theory of Computation*, 3rd ed.,
 §3.1 (Church–Turing thesis). -/
 theorem urmDecidable_to_tm2Decidable {P : ℕ → Prop} (h : Cslib.URM.Decidable P) :
     TM2Decidable P :=
   h.tm2Decidable
 
-/-- **URM-recognizability implies multi-stack recognizability.**
-Every predicate $P$ on $\mathbb{N}$ that is URM-recognizable is recognizable by a multi-stack
-Turing machine.
-
+/-- **A URM-recognizable predicate is recognizable by a multi-stack Turing machine.**
 Source: Sipser, *Introduction to the Theory of Computation*, 3rd ed.,
 §3.1 (Church–Turing thesis). -/
 theorem urmRecognizable_to_tm2Recognizable {P : ℕ → Prop} (h : Cslib.URM.Recognizable P) :

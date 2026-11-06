@@ -166,7 +166,7 @@ private theorem tendsto_integrandDist_pair {F : Filtration ℝ≥0 mΩ} {P : Mea
     (measurable_restrictIoc (An n).measurable_toProcess t)
     (measurable_restrictIoc (Kn n).measurable_toProcess t)).symm
 
-/-- **Itô isometry for Itô-approximable integrands.** The squared `L²(P ⊗ du)` distance between two Itô-approximable integrands is the squared
+/-- The squared `L²(P ⊗ du)` distance between two Itô-approximable integrands is the squared
 `L²(P)` distance between their Itô integrals. -/
 theorem integrandDist_eq_dist_sq_itoIntegralL2 {F : Filtration ℝ≥0 mΩ} {P : Measure Ω}
     {B : ℝ≥0 → Ω → ℝ} (hB : IsPreBrownianReal B P) (hBF : Adapted F B)

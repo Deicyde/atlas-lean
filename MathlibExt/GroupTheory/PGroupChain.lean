@@ -132,12 +132,11 @@ private theorem pChain_card (hG : IsPGroup p G) {n : ℕ} (hn : Nat.card G = p ^
     have hsub : n - i = (n - (i + 1)) + 1 := by omega
     rw [hsub, pow_succ', Nat.mul_div_cancel_left _ (Fact.out : p.Prime).pos]
 
-/-- **Composition series of finite p-groups.** Let $p$ be a prime and let $G$ be a finite
-$p$-group of order $p^n$. Then there are subgroups
-$G = H_0 \supseteq H_1 \supseteq \cdots \supseteq H_n = \{1\}$ such that for each $i < n$,
-$H_{i+1}$ is a normal subgroup of $H_i$ and there is a surjective homomorphism
-$H_i \to \mathbb{Z}/p\mathbb{Z}$ with kernel $H_{i+1}$. By the first isomorphism theorem,
-$H_i / H_{i+1} \cong \mathbb{Z}/p\mathbb{Z}$ for each $i < n$. -/
+/-- Every finite `p`-group of order `p ^ n` has a composition series
+`G = H 0 ⊃ H 1 ⊃ ⋯ ⊃ H n = ⊥` whose successive quotients are cyclic of order
+`p`: at step `i`, `H (i + 1)` is normal in `H i` and there is a surjective
+homomorphism `H i →* Multiplicative (ZMod p)` with kernel `H (i + 1)`, so by
+the first isomorphism theorem `H i ⧸ H (i + 1) ≃* Multiplicative (ZMod p)`. -/
 theorem exists_chain_zmod_p_quotients (hG : IsPGroup p G) {n : ℕ}
     (hn : Nat.card G = p ^ n) :
     ∃ H : Fin (n + 1) → Subgroup G,
@@ -194,8 +193,7 @@ theorem exists_chain_zmod_p_quotients (hG : IsPGroup p G) {n : ℕ}
       · rw [MonoidHom.ker_comp_of_injective (QuotientGroup.mk' _)
           e.toMonoidHom e.injective, QuotientGroup.ker_mk']
 
-/-- **Finite p-groups are solvable.** For every prime $p$, every finite $p$-group is
-solvable. -/
+/-- Every finite `p`-group is solvable. -/
 theorem isSolvable (hG : IsPGroup p G) : Group.IsSolvable G := by
   have : Group.IsNilpotent G := hG.isNilpotent
   infer_instance

@@ -59,7 +59,7 @@ end SmoothReducedAux
 
 namespace AlgebraicGeometry.Smooth
 
-/-- **Smooth morphisms preserve reducedness.** A smooth morphism with reduced locally Noetherian target has reduced source. -/
+/-- A smooth morphism with reduced locally Noetherian target has reduced source. -/
 theorem isReduced_of_isReduced_of_isLocallyNoetherian
     {X Y : Scheme.{u}} (f : X ⟶ Y) [Smooth f] [IsReduced Y] [IsLocallyNoetherian Y] :
     IsReduced X := by

@@ -47,7 +47,7 @@ and homomorphisms correspond bijectively to maximal ideals.
 
 @[expose] public section
 
-/-- **Counting algebra homomorphisms of a finite reduced algebra.** A finite reduced algebra over an algebraically closed field has
+/-- A finite reduced algebra over an algebraically closed field has
 `finrank` many algebra homomorphisms to the field. -/
 theorem AlgHom.natCard_eq_finrank_of_isReduced_of_isAlgClosed
     (K B : Type*) [Field K] [IsAlgClosed K] [CommRing B] [Algebra K B]

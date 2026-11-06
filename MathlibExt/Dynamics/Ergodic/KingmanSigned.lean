@@ -60,15 +60,15 @@ open Kingman BirkhoffAE KingmanAE KingmanFilling
 
 variable {α : Type*} [MeasurableSpace α] {μ : Measure α} {T : α → α} {X : ℕ → α → ℝ}
 
-/-- **Additive cocycle of Birkhoff sums of the first term.** The additive cocycle `n ↦ ∑_{k<n} X 1 ∘ T^[k]` (the Birkhoff sums of `X 1`). -/
+/-- The additive cocycle `n ↦ ∑_{k<n} X 1 ∘ T^[k]` (the Birkhoff sums of `X 1`). -/
 noncomputable def addCoc (T : α → α) (X : ℕ → α → ℝ) (n : ℕ) (x : α) : ℝ :=
   birkhoffSum T (X 1) n x
 
-/-- **Subadditivity defect of a cocycle.** The subadditivity defect `addCoc n - X n` (`0` at `n = 0`); it is nonnegative a.e. -/
+/-- The subadditivity defect `addCoc n - X n` (`0` at `n = 0`); it is nonnegative a.e. -/
 noncomputable def Zc (T : α → α) (X : ℕ → α → ℝ) (n : ℕ) (x : α) : ℝ :=
   if n = 0 then 0 else addCoc T X n x - X n x
 
-/-- **Negative subadditivity defect of a cocycle.** The negative defect `X n - addCoc n` (`0` at `n = 0`), a nonpositive subadditive cocycle. -/
+/-- The negative defect `X n - addCoc n` (`0` at `n = 0`), a nonpositive subadditive cocycle. -/
 noncomputable def Wc (T : α → α) (X : ℕ → α → ℝ) (n : ℕ) (x : α) : ℝ :=
   if n = 0 then 0 else X n x - addCoc T X n x
 
@@ -111,7 +111,7 @@ theorem integrable_Zc (h : SubadditiveCocycle T μ X) (n : ℕ) :
   rw [show Zc T X n = fun x => - Wc T X n x by funext x; rw [Wc_eq_neg]; ring]
   exact this.neg
 
-/-- **Negative defect is a subadditive cocycle.** The negative defect is a subadditive cocycle. -/
+/-- The negative defect is a subadditive cocycle. -/
 theorem Wc_subaddCocycle (h : SubadditiveCocycle T μ X) : SubadditiveCocycle T μ (Wc T X) := by
   refine ⟨h.measurePreserving, integrable_Wc h, ?_⟩
   intro m n
@@ -144,11 +144,11 @@ theorem Zc_nonneg_ae_all (h : SubadditiveCocycle T μ X) (n : ℕ) : 0 ≤ᵐ[μ
   · subst hn; filter_upwards with x; simp [Zc]
   · exact Zc_nonneg_ae h (by omega)
 
-/-- **Shifted subadditivity defect of a cocycle.** The shifted defect `X n + M n - addCoc n`, a subadditive cocycle for every `M`. -/
+/-- The shifted defect `X n + M n - addCoc n`, a subadditive cocycle for every `M`. -/
 noncomputable def Sc (T : α → α) (X : ℕ → α → ℝ) (M : ℝ) (n : ℕ) (x : α) : ℝ :=
   X n x + (M * n - addCoc T X n x)
 
-/-- **Truncated subadditivity defect of a cocycle.** The truncated defect `(Sc M n)⁺ = (M n - Zc n)⁺`, a nonnegative subadditive cocycle. -/
+/-- The truncated defect `(Sc M n)⁺ = (M n - Zc n)⁺`, a nonnegative subadditive cocycle. -/
 noncomputable def Vc (T : α → α) (X : ℕ → α → ℝ) (M : ℝ) (n : ℕ) (x : α) : ℝ :=
   (Sc T X M n x)⁺
 
@@ -170,7 +170,7 @@ theorem integrable_Sc (h : SubadditiveCocycle T μ X) (M : ℝ) (n : ℕ) :
 theorem integrable_Vc (h : SubadditiveCocycle T μ X) (M : ℝ) (n : ℕ) :
     Integrable (Vc T X M n) μ := (integrable_Sc h M n).pos_part
 
-/-- **Truncated defect is a nonnegative subadditive cocycle.** The truncated defect is a nonnegative subadditive cocycle. -/
+/-- The truncated defect is a nonnegative subadditive cocycle. -/
 theorem Vc_subaddCocycle (h : SubadditiveCocycle T μ X) (M : ℝ) :
     SubadditiveCocycle T μ (Vc T X M) := by
   refine ⟨h.measurePreserving, integrable_Vc h M, ?_⟩
@@ -226,7 +226,7 @@ theorem integral_Zc_div (h : SubadditiveCocycle T μ X) {n : ℕ} (hn : 1 ≤ n)
     mul_div_cancel_left₀ _ hn0]
 
 omit [IsFiniteMeasure μ] in
-/-- **Lower limit of the normalized defect is finite almost everywhere.** If the time constant is finite, `liminf_n Zc n / n < ∞` almost everywhere (Fatou). -/
+/-- If the time constant is finite, `liminf_n Zc n / n < ∞` almost everywhere (Fatou). -/
 theorem ae_liminf_lt_top (h : SubadditiveCocycle T μ X)
     (hbdd : BddBelow (Set.range fun n => SubadditiveCocycle.expSeq X μ n / n)) :
     ∀ᵐ x ∂μ, liminf (fun n => ENNReal.ofReal (Zc T X n x / n)) atTop < ∞ := by
@@ -314,7 +314,7 @@ theorem ae_tendsto_Zc_div (h : SubadditiveCocycle T μ X)
   exact pointwise_conv (fun n => Zc T X n x / n)
     (fun M => (M : ℝ) - kingmanLimit T (Vc T X (M : ℝ)) x) htrunc hltop
 
-/-- **Kingman's theorem: normalized cocycle converges almost everywhere.** If the time constant is finite, `X n / n` converges almost everywhere. -/
+/-- If the time constant is finite, `X n / n` converges almost everywhere. -/
 theorem ae_tendsto_X_div (h : SubadditiveCocycle T μ X)
     (hbdd : BddBelow (Set.range fun n => SubadditiveCocycle.expSeq X μ n / n)) :
     ∀ᵐ x ∂μ, ∃ L : ℝ, Tendsto (fun n => X n x / n) atTop (𝓝 L) := by
@@ -358,7 +358,7 @@ theorem kingman_ae_general (h : SubadditiveCocycle T μ X)
   filter_upwards [ae_tendsto_X_div h hbdd] with x ⟨L, hL⟩
   exact tendsto_X_div_kingmanLimit hL
 
-/-- **Kingman's subadditive ergodic theorem for nonnegative cocycles.** Kingman's theorem for nonnegative cocycles, with integrable and invariant limit: if `T`
+/-- Kingman's theorem for nonnegative cocycles, with integrable and invariant limit: if `T`
 preserves the finite measure `μ` and `X` is a nonnegative integrable subadditive cocycle, then
 `X n / n` converges a.e. to an integrable `T`-invariant function. This is
 `MathlibExt.Dynamics.Ergodic.KingmanWanted.kingman_subadditive` without its hypotheses that each

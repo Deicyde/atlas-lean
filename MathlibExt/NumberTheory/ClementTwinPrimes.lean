@@ -202,14 +202,13 @@ private theorem clement_aux_backward (k : ℕ) (hk : 4 ≤ k)
     omega
   exact ⟨hprime1, hprime3⟩
 
-/-- **Clement's criterion for twin primes.** For every natural number $p \ge 2$, the numbers
-$p$ and $p + 2$ are both prime if and only if
-$$4\bigl((p-1)! + 1\bigr) + p \equiv 0 \pmod{p(p+2)}.$$
+/-- Clement's criterion for twin primes (source-faithful statement).
 
-The hypothesis $p \ge 2$ is needed: the unqualified restatement in the Journal of Integer
-Sequences is false at $p = 1$.
+States that for a natural number `p` with `2 ≤ p`, `p` and `p + 2` are both
+prime if and only if `4 * ((p - 1)! + 1) + p` is `0` modulo `p * (p + 2)`.
 
-Proves `Wanted` entry `clement_twin_prime_criterion`.
+The `2 ≤ p` hypothesis is a required correction: the unqualified JIS
+restatement is false at `p = 1`.
 
 Source provenance (grounded ID `jis_grounded_f61a8741bce6c20e6c61e08b`):
 * JIS restatement: `https://cs.uwaterloo.ca/journals/JIS/VOL13/Schmidt/multifact.tex`,
@@ -218,6 +217,8 @@ Source provenance (grounded ID `jis_grounded_f61a8741bce6c20e6c61e08b`):
 * Corrected domain: M. Chaves, `Twin Primes and a Primality Test by Indivisibility`,
   arXiv:math/0211034v3, source lines 110-121, citing P. A. Clement,
   `Congruences for Sets of Primes`, Amer. Math. Monthly 56 (1949), 23.
+
+Proves `Wanted` entry `clement_twin_prime_criterion`.
 -/
 theorem clement_twin_prime_criterion :
     ∀ (p : ℕ), 2 ≤ p →

@@ -70,19 +70,19 @@ noncomputable section
 
 namespace MathlibExt.Biology.PopulationGenetics.McDonaldKreitman
 
-/-- **Smith–Eyre-Walker estimator of adaptive substitutions.** The Smith–Eyre-Walker estimator of the proportion of adaptive nonsynonymous
+/-- The Smith–Eyre-Walker estimator of the proportion of adaptive nonsynonymous
 substitutions, `α̂ = 1 - (D_s P_n) / (D_n P_s)`. -/
 def alphaHat (Dn Ds Pn Ps : ℝ) : ℝ := 1 - Ds * Pn / (Dn * Ps)
 
-/-- **Neutrality index.** The neutrality index `NI = (P_n / P_s) / (D_n / D_s)`. -/
+/-- The neutrality index `NI = (P_n / P_s) / (D_n / D_s)`. -/
 def neutralityIndex (Dn Ds Pn Ps : ℝ) : ℝ := Pn / Ps / (Dn / Ds)
 
-/-- **Adaptive proportion estimator equals one minus the neutrality index.** `α̂ = 1 - NI`, for all real counts (the junk values of division agree). -/
+/-- `α̂ = 1 - NI`, for all real counts (the junk values of division agree). -/
 theorem alphaHat_eq_one_sub_neutralityIndex (Dn Ds Pn Ps : ℝ) :
     alphaHat Dn Ds Pn Ps = 1 - neutralityIndex Dn Ds Pn Ps := by
   rw [alphaHat, neutralityIndex, div_div_div_eq, mul_comm Ds Pn, mul_comm Dn Ps]
 
-/-- **Expected-count model of the McDonald–Kreitman table.** Expected counts of the MK table without a slightly deleterious class (see the module
+/-- Expected counts of the MK table without a slightly deleterious class (see the module
 docstring): synonymous and nonsynonymous mutational targets `Ls`, `Ln`, neutral fraction `f₀`
 of nonsynonymous mutations, polymorphisms and neutral fixed differences per unit of neutral
 target `polyRate`, `divRate` (`θ_P`, `λ_D` in the module docstring), and `A` expected adaptive
@@ -112,19 +112,19 @@ namespace MKModel
 
 variable (M : MKModel)
 
-/-- **Expected synonymous polymorphisms.** Expected synonymous polymorphisms `E P_s = θ_P L_s`. -/
+/-- Expected synonymous polymorphisms `E P_s = θ_P L_s`. -/
 def EPs : ℝ := M.polyRate * M.Ls
 
-/-- **Expected nonsynonymous polymorphisms.** Expected nonsynonymous polymorphisms `E P_n = θ_P f₀ L_n`. -/
+/-- Expected nonsynonymous polymorphisms `E P_n = θ_P f₀ L_n`. -/
 def EPn : ℝ := M.polyRate * M.f₀ * M.Ln
 
-/-- **Expected synonymous fixed differences.** Expected synonymous fixed differences `E D_s = λ_D L_s`. -/
+/-- Expected synonymous fixed differences `E D_s = λ_D L_s`. -/
 def EDs : ℝ := M.divRate * M.Ls
 
-/-- **Expected nonsynonymous fixed differences.** Expected nonsynonymous fixed differences `E D_n = λ_D f₀ L_n + A`. -/
+/-- Expected nonsynonymous fixed differences `E D_n = λ_D f₀ L_n + A`. -/
 def EDn : ℝ := M.divRate * M.f₀ * M.Ln + M.A
 
-/-- **Proportion of adaptive nonsynonymous substitutions.** The proportion of nonsynonymous substitutions that are adaptive, `α = A / E D_n`. -/
+/-- The proportion of nonsynonymous substitutions that are adaptive, `α = A / E D_n`. -/
 def alpha : ℝ := M.A / M.EDn
 
 /-- **`α̂` at the expected counts is the proportion of adaptive substitutions**

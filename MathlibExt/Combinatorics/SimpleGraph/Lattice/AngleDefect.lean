@@ -51,14 +51,14 @@ open StatMech.CellEulerChar
 
 namespace StatMech.AngleDefect
 
-/-- **Four cells around a lattice vertex.** The four cells having `v` as a corner. -/
+/-- The four cells having `v` as a corner. -/
 def surroundCells (v : Vtx) : Finset Cell :=
   {(v.1 - 1, v.2 - 1), (v.1, v.2 - 1), (v.1 - 1, v.2), (v.1, v.2)}
 
-/-- **Cell degree of a lattice vertex.** The number of cells of `K` having `v` as a corner. -/
+/-- The number of cells of `K` having `v` as a corner. -/
 def cellDeg (K : Finset Cell) (v : Vtx) : ℕ := (surroundCells v ∩ K).card
 
-/-- **Edge degree of a lattice vertex.** The number of edges of the region `K` incident to `v`. -/
+/-- The number of edges of the region `K` incident to `v`. -/
 def edgeDeg (K : Finset Cell) (v : Vtx) : ℕ :=
   ((regEdges K).filter (fun e => v ∈ e)).card
 
@@ -162,7 +162,7 @@ theorem wad_edgeSum (K : Finset Cell) :
   rw [Finset.sum_congr rfl hinner, Finset.sum_const, smul_eq_mul]
   ring
 
-/-- **Angle defect at a lattice vertex.** The angle defect at `v`, in quarter turns: `4 - 2 · edgeDeg K v + cellDeg K v`. -/
+/-- The angle defect at `v`, in quarter turns: `4 - 2 · edgeDeg K v + cellDeg K v`. -/
 def defect (K : Finset Cell) (v : Vtx) : ℤ :=
   4 - 2 * (edgeDeg K v : ℤ) + (cellDeg K v : ℤ)
 
@@ -186,13 +186,13 @@ theorem wad_defect_eq_four_chi (K : Finset Cell) :
   unfold regChi
   ring
 
-/-- **Lattice edge to the right neighbour.** The lattice edge from `v` to its right neighbour. -/
+/-- The lattice edge from `v` to its right neighbour. -/
 def incidentEdgeR (v : Vtx) : Sym2 Vtx := s(v, (v.1 + 1, v.2))
-/-- **Lattice edge to the left neighbour.** The lattice edge from `v` to its left neighbour. -/
+/-- The lattice edge from `v` to its left neighbour. -/
 def incidentEdgeL (v : Vtx) : Sym2 Vtx := s(v, (v.1 - 1, v.2))
-/-- **Lattice edge to the upper neighbour.** The lattice edge from `v` to its upper neighbour. -/
+/-- The lattice edge from `v` to its upper neighbour. -/
 def incidentEdgeU (v : Vtx) : Sym2 Vtx := s(v, (v.1, v.2 + 1))
-/-- **Lattice edge to the lower neighbour.** The lattice edge from `v` to its lower neighbour. -/
+/-- The lattice edge from `v` to its lower neighbour. -/
 def incidentEdgeD (v : Vtx) : Sym2 Vtx := s(v, (v.1, v.2 - 1))
 
 theorem wad_edge_incident_cases {K : Finset Cell} {e : Sym2 Vtx} (he : e ∈ regEdges K)
@@ -370,15 +370,15 @@ theorem wad_defect_classify (K : Finset Cell) (v : Vtx) (hv : v ∈ regVerts K) 
     simp only [s1, s2, s3, s4, or_true, or_false,
       or_self, ↓reduceIte] at hcellposZ ⊢ <;> omega
 
-/-- **Number of convex corners of a lattice region.** The number of vertices of the region with defect `1` (convex corners). -/
+/-- The number of vertices of the region with defect `1` (convex corners). -/
 def wad_n1 (K : Finset Cell) : ℤ :=
   ((regVerts K).filter (fun v => defect K v = 1)).card
 
-/-- **Number of reflex corners of a lattice region.** The number of vertices of the region with defect `-1` (reflex corners). -/
+/-- The number of vertices of the region with defect `-1` (reflex corners). -/
 def wad_n3 (K : Finset Cell) : ℤ :=
   ((regVerts K).filter (fun v => defect K v = -1)).card
 
-/-- **Number of pinch points of a lattice region.** The number of vertices of the region with defect `-2` (pinch points, where two cells meet only
+/-- The number of vertices of the region with defect `-2` (pinch points, where two cells meet only
 at a corner). -/
 def wad_n2d (K : Finset Cell) : ℤ :=
   ((regVerts K).filter (fun v => defect K v = -2)).card

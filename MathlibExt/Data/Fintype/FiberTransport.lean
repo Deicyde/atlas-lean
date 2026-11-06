@@ -31,7 +31,7 @@ Copyright 2026 Anthropic, PBC. Licensed under Apache 2.0 (see LICENSE).
 
 namespace Fintype
 
-/-- **Labelings with equal fiber sizes differ by a permutation.** Two labelings of a finite type with equally sized fibers differ by a permutation. -/
+/-- Two labelings of a finite type with equally sized fibers differ by a permutation. -/
 theorem exists_perm_of_fiber {V C : Type*} [Fintype V] [DecidableEq C]
     (α β : V → C)
     (h : ∀ y, Fintype.card {x // α x = y} = Fintype.card {x // β x = y}) :
@@ -44,7 +44,7 @@ end Fintype
 
 namespace Finset
 
-/-- **Density bounds transfer through equal-fiber maps.** A density bound transfers through a map whose fibers over the target carrier all have the
+/-- A density bound transfers through a map whose fibers over the target carrier all have the
 same cardinality. -/
 theorem card_filter_le_of_fibers {Ω X : Type*} [DecidableEq X]
     (Ωs : Finset Ω) (f : Ω → X) (Xs : Finset X) (hf : Set.MapsTo f Ωs Xs)

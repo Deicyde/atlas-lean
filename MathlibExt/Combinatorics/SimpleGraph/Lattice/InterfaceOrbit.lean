@@ -142,7 +142,7 @@ theorem head_compl_of_exitDartsSameOrbit (hfin : (cluster 2 ω (origin 2)).Finit
     (exitDart (ω := ω) hfin) (leftExitDart (ω := ω) hfin)
     (exitDart_isBoundaryDart (ω := ω) hfin) (leftExitDart_isBoundaryDart (ω := ω) hfin) hn
 
-/-- **Boundary darts with heads in one component share an orbit.** Boundary darts of `K` whose heads lie in the same connected component of `Kᶜ` lie in the same
+/-- Boundary darts of `K` whose heads lie in the same connected component of `Kᶜ` lie in the same
 boundary orbit. -/
 def InterfaceConnected (K : Set (Site 2)) : Prop :=
   ∀ (e f : Dart) (he : IsBoundaryDart K e) (hf : IsBoundaryDart K f),

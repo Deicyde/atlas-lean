@@ -49,7 +49,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Induced subgraphs of locally finite graphs are locally finite.** An induced subgraph of a locally finite graph is locally finite. -/
+/-- An induced subgraph of a locally finite graph is locally finite. -/
 @[reducible]
 noncomputable def jeb_induceLF {V : Type*} (H : SimpleGraph V) [SimpleGraph.LocallyFinite H]
     (s : Set V) : SimpleGraph.LocallyFinite (H.induce s) := by
@@ -151,7 +151,7 @@ theorem jeb_support_finite_of_edgeSet {V : Type*} (H : SimpleGraph V) [Fintype H
   refine Set.Finite.biUnion H.edgeSet.toFinite (fun e _ => ?_)
   exact (e.toFinset : Set V).toFinite.subset (by intro x hx; simp_all [Sym2.mem_toFinset])
 
-/-- **Two odd-degree vertices lie in one component.** In a locally finite graph with finite support, two vertices of odd degree whose other
+/-- In a locally finite graph with finite support, two vertices of odd degree whose other
 vertices all have even degree lie in the same component (the handshake lemma applied to a
 component). -/
 theorem jeb_two_odd_reachable {V : Type*} (H : SimpleGraph V) [SimpleGraph.LocallyFinite H]
@@ -372,11 +372,11 @@ theorem jeb_correctWhitney_imageGraph (P : PlanarZ2Subgraph)
   jeb_correctWhitney_of_evenDegree (imageGraph P) (imageGraph_le_lattice P) p q f0 g0
     hpq hnpq hfg hshared hcc
 
-/-- **Even-degree image of a planar lattice subgraph.** Every site has even degree in the image of `P`. -/
+/-- Every site has even degree in the image of `P`. -/
 def jeb_EvenDegreeSubgraph (P : PlanarZ2Subgraph) : Prop :=
   jce_ClosedContour (imageGraph P).edgeSet
 
-/-- **Faithful discrete Jordan property for even-degree subgraphs.** Every `PlanarZ2Subgraph` with all degrees even satisfies `whc_FaithfulDiscreteJordan`. -/
+/-- Every `PlanarZ2Subgraph` with all degrees even satisfies `whc_FaithfulDiscreteJordan`. -/
 def jeb_FaithfulCountResidue : Prop :=
   ∀ (P : PlanarZ2Subgraph), jeb_EvenDegreeSubgraph P → whc_FaithfulDiscreteJordan P
 

@@ -71,7 +71,7 @@ open Finset Cslib.Bioinformatics.Phylogenetics.NeighborJoining
 
 variable {X : Type*} [DecidableEq X]
 
-/-- **Generalized Pauplin coefficient of a cherry tree.** The generalized Pauplin coefficient of the pair of clusters `u, v` in the tree `T_ab`
+/-- The generalized Pauplin coefficient of the pair of clusters `u, v` in the tree `T_ab`
 obtained from the star on `S` by joining `a` and `b`: `1/2` for `{a, b}`; `1/(2(|S| - 2))` when
 one of `u, v` is `a` or `b` and the other is not; `1/(|S| - 2)` when neither is. Values on the
 diagonal `u = v` are never used. -/
@@ -80,7 +80,7 @@ noncomputable def cherryCoeff (S : Finset (Finset X)) (a b u v : Finset X) : ℝ
   else if u = a ∨ u = b ∨ v = a ∨ v = b then 1 / (2 * ((S.card : ℝ) - 2))
   else 1 / ((S.card : ℝ) - 2)
 
-/-- **Balanced minimum-evolution length of a cherry tree.** The balanced minimum-evolution length of `T_ab` for the dissimilarity `D`:
+/-- The balanced minimum-evolution length of `T_ab` for the dissimilarity `D`:
 half the sum over ordered pairs of distinct clusters of `cherryCoeff S a b u v * D u v`, which
 is `∑_{u<v} cherryCoeff S a b u v * D u v` when `D` is symmetric. -/
 noncomputable def cherryLength (S : Finset (Finset X)) (D : Finset X → Finset X → ℝ)
@@ -192,7 +192,7 @@ theorem qCriterion_le_iff_cherryLength_le (S : Finset (Finset X))
   rw [cherryLength_eq S D hsymm hdiag hS ha hb hab, cherryLength_eq S D hsymm hdiag hS ha' hb' hab',
     div_le_div_iff_of_pos_right hk, add_le_add_iff_left]
 
-/-- **Neighbor joining preserves symmetry and zero diagonal.** Along a run of neighbor joining on a symmetric `d` with zero diagonal, the cluster
+/-- Along a run of neighbor joining on a symmetric `d` with zero diagonal, the cluster
 dissimilarity stays symmetric and vanishes on every current cluster. -/
 theorem NJRun.symm_diag [Fintype X] {d : X → X → ℝ} (hsymm : ∀ x y, d x y = d y x)
     (hdiag : ∀ x, d x x = 0) {S : Finset (Finset X)} {D : Finset X → Finset X → ℝ}

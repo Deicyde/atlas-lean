@@ -40,10 +40,7 @@ variable {Base : Type u}
 variable {A B : Ty Base}
 variable {Γ Δ : List (Ty Base)}
 
-/-- **Reflection commutes with renaming.** For every type $A$, every renaming $\rho$ from a
-context $\Gamma$ to a context $\Delta$, and every neutral term $n$ of type $A$ in context
-$\Gamma$, transporting the semantic value obtained by reflecting $n$ at type $A$ along $\rho$
-gives the reflection at type $A$ of the neutral term $n$ renamed by $\rho$. -/
+/-- Reflection commutes with transport to a future context. -/
 theorem reflect_rename (A : Ty Base) (ρ : Ren Γ Δ) (n : Ne Γ A) :
     Sem.rename ρ A (reflect A n) = reflect A (n.rename ρ) := by
   induction A with
@@ -54,12 +51,8 @@ theorem reflect_rename (A : Ty Base) (ρ : Ren Γ Δ) (n : Ne Γ A) :
       reflect B (.app ((n.rename ρ).rename σ) (quote A a))
     rw [Ne.rename_comp]
 
-/-- **The identity environment under a binder.** Let $\Gamma$ be a context, $A$ a type, and
-$\Gamma, A$ the context $\Gamma$ extended by a newest variable of type $A$. Transport the identity
-semantic environment of $\Gamma$ (which reflects each variable as a neutral value) along the
-weakening renaming from $\Gamma$ to $\Gamma, A$ that sends each variable to its successor, and
-extend the result by the reflection at type $A$ of the newest variable of $\Gamma, A$. The
-resulting semantic environment equals the identity semantic environment of $\Gamma, A$. -/
+/-- Extending the renamed identity environment with the reflected newest
+variable gives the identity environment under a binder. -/
 theorem SemEnv.cons_reflect_rename_identity :
     @SemEnv.cons Base A Γ (A :: Γ) (reflect A (.var .zero))
         (SemEnv.rename (.succ : Ren Γ (A :: Γ)) SemEnv.identity) =
@@ -71,10 +64,8 @@ theorem SemEnv.cons_reflect_rename_identity :
     simp only [SemEnv.cons_succ, SemEnv.rename_apply, SemEnv.identity]
     exact reflect_rename B .succ (.var x)
 
-/-- **Evaluation respects pointwise equal environments.** Let $t$ be a term of type $A$ in
-context $\Gamma$, and let $\xi$ and $\zeta$ be semantic environments interpreting the variables of
-$\Gamma$ in a context $\Delta$. If $\xi(x) = \zeta(x)$ for every variable $x$ of $\Gamma$, of any
-type, then evaluating $t$ in $\xi$ and evaluating $t$ in $\zeta$ give the same semantic value. -/
+/-- Evaluation depends only on the pointwise values of its semantic
+environment. -/
 theorem nbeEval_congr (t : Tm Γ A) {ξ ζ : SemEnv Δ Γ}
     (h : ∀ {B} (x : Var Γ B), ξ x = ζ x) : nbeEval t ξ = nbeEval t ζ := by
   induction t generalizing Δ with
@@ -91,9 +82,8 @@ theorem nbeEval_congr (t : Tm Γ A) {ξ ζ : SemEnv Δ Γ}
       simp only [SemEnv.cons_succ, SemEnv.rename_apply]
       rw [h x]
 
-/-- **Evaluating a neutral term reflects it.** For every neutral term $n$ of type $A$ in context
-$\Gamma$, evaluating the underlying term of $n$ in the identity semantic environment of $\Gamma$
-gives the reflection of $n$ at type $A$. -/
+/-- Evaluation of neutral syntax in the identity environment agrees with
+reflection. -/
 theorem nbeEval_ne_toTm (n : Ne Γ A) :
     nbeEval n.toTm SemEnv.identity = reflect A n := by
   exact Ne.rec
@@ -115,9 +105,7 @@ theorem nbeEval_ne_toTm (n : Ne Γ A) :
       exact ih)
     n
 
-/-- **Normal forms are fixed points of normalization.** For every beta-normal, eta-long normal
-form $n$ of type $A$ in context $\Gamma$, normalizing the underlying term of $n$ by evaluation
-returns the normal form $n$ itself. -/
+/-- Eta-long normal forms are fixed points of NbE normalization. -/
 @[simp] theorem normalizeNf_toTm (n : Nf Γ A) : normalizeNf n.toTm = n := by
   exact Nf.rec
     (motive_1 := fun {Γ A} n => nbeEval n.toTm SemEnv.identity = reflect A n)
@@ -138,43 +126,32 @@ returns the normal form $n$ itself. -/
       exact ih)
     n
 
-/-- **Renormalizing a computed normal form.** For every term $t$ of type $A$ in context
-$\Gamma$, normalizing the underlying term of the normal form that normalization by evaluation
-computes from $t$ gives the same term as normalizing $t$. -/
+/-- Normalizing the term underlying a computed normal form changes nothing. -/
 @[simp] theorem normalizeTm_normalizeNf (t : Tm Γ A) :
     normalizeTm (normalizeNf t).toTm = normalizeTm t := by
   simp only [normalizeTm, normalizeNf_toTm]
 
-/-- **Normalization by evaluation is idempotent.** For every term $t$ of type $A$ in context
-$\Gamma$, normalizing the normalized term of $t$ by evaluation gives the normalized term of $t$
-again. -/
+/-- NbE normalization is idempotent. -/
 @[simp] theorem normalizeTm_idem (t : Tm Γ A) :
     normalizeTm (normalizeTm t) = normalizeTm t := by
   exact normalizeTm_normalizeNf t
 
-/-- **Normalization fixes the terms of normal forms.** For every eta-long normal form $n$ of
-type $A$ in context $\Gamma$, normalizing the underlying term of $n$ returns that term
-unchanged. -/
+/-- A term already presented by an eta-long normal form normalizes to itself. -/
 @[simp] theorem normalizeTm_toTm (n : Nf Γ A) : normalizeTm n.toTm = n.toTm := by
   simp only [normalizeTm, normalizeNf_toTm]
 
-/-- **Erasing normal forms is injective.** For every context $\Gamma$ and type $A$, two
-eta-long normal forms of type $A$ in context $\Gamma$ with the same underlying term are equal.
-
-NbE gives an explicit left inverse, so no separate syntactic injectivity argument is
+/-- The erasure from eta-long normal forms to terms is injective.  NbE gives
+an explicit left inverse, so no separate syntactic injectivity argument is
 needed. -/
 theorem Nf.toTm_injective : Function.Injective (@Nf.toTm Base Γ A) := by
   intro n m h
   have := congrArg normalizeNf h
   simpa only [normalizeNf_toTm] using this
 
-/-- **Canonical terms.** A term $t$ of type $A$ in context $\Gamma$ is canonical when it is the
-underlying term of some beta-normal, eta-long normal form of type $A$ in context $\Gamma$. -/
+/-- A term is canonical when it is the erasure of an eta-long normal form. -/
 def IsCanonical (t : Tm Γ A) : Prop := ∃ n : Nf Γ A, n.toTm = t
 
-/-- **Canonical terms are the fixed points of normalization.** A term $t$ of type $A$ in context
-$\Gamma$ is canonical if and only if normalization by evaluation maps $t$ to itself, that is, the
-term underlying the normal form computed for $t$ is $t$. -/
+/-- Canonical terms are exactly the fixed points of normalization. -/
 theorem isCanonical_iff_normalizeTm_eq (t : Tm Γ A) :
     IsCanonical t ↔ normalizeTm t = t := by
   constructor
@@ -183,35 +160,26 @@ theorem isCanonical_iff_normalizeTm_eq (t : Tm Γ A) :
   · intro h
     exact ⟨normalizeNf t, h⟩
 
-/-- **Normalized terms are canonical.** For every term $t$ of type $A$ in context $\Gamma$, the
-term obtained by normalizing $t$ by evaluation is canonical. -/
+/-- Every result produced by the normalizer is canonical. -/
 theorem isCanonical_normalizeTm (t : Tm Γ A) : IsCanonical (normalizeTm t) :=
   (isCanonical_iff_normalizeTm_eq _).2 (normalizeTm_idem t)
 
-/-- **Renaming preserves canonical terms.** If a term $t$ of type $A$ in context $\Gamma$ is
-canonical, then for every renaming $\rho$ from $\Gamma$ to a context $\Delta$, the term
-obtained by renaming $t$ along $\rho$ is canonical. -/
+/-- Renaming preserves canonical syntax. -/
 theorem IsCanonical.rename {t : Tm Γ A} (h : IsCanonical t) (ρ : Ren Γ Δ) :
     IsCanonical (Tm.rename ρ t) := by
   rcases h with ⟨n, rfl⟩
   exact ⟨n.rename ρ, Nf.toTm_rename ρ n⟩
 
-/-- **Certified canonical terms.** For a context $\Gamma$ and a type $A$, a certified canonical
-term of type $A$ in context $\Gamma$ is a term $t$ of type $A$ in context $\Gamma$ together with a
-proof that $t$ is a fixed point of normalization by evaluation: the term underlying the normal
-form computed for $t$ is $t$ itself. -/
+/-- Terms certified to be fixed points of normalization. -/
 abbrev CanonicalTm (Γ : List (Ty Base)) (A : Ty Base) :=
   {t : Tm Γ A // normalizeTm t = t}
 
-/-- **Normal forms as canonical terms.** The canonical term of an eta-long normal form $n$ of
-type $A$ in context $\Gamma$ is the underlying term of $n$, certified to be a fixed point of
-normalization. -/
+/-- Regard an eta-long normal form as a certified canonical term. -/
 def Nf.toCanonicalTm (n : Nf Γ A) : CanonicalTm Γ A :=
   ⟨n.toTm, normalizeTm_toTm n⟩
 
-/-- **The normal form of a canonical term.** For a canonical term $t$ of type $A$ in context
-$\Gamma$, that is, a term that normalization returns unchanged, its normal form is the
-eta-long normal form that normalization by evaluation computes from $t$. -/
+/-- Recover the eta-long normal form represented by a certified canonical
+term. -/
 def CanonicalTm.toNf (t : CanonicalTm Γ A) : Nf Γ A := normalizeNf t.1
 
 @[simp] theorem CanonicalTm.toNf_toCanonicalTm (n : Nf Γ A) :
@@ -222,9 +190,7 @@ def CanonicalTm.toNf (t : CanonicalTm Γ A) : Nf Γ A := normalizeNf t.1
   apply Subtype.ext
   exact t.2
 
-/-- **Canonical terms have a unique normal form.** Let $t$ be a term of type $A$ in context
-$\Gamma$. If $t$ is canonical, then there is exactly one beta-normal, eta-long normal form of type
-$A$ in context $\Gamma$ whose underlying term is $t$. -/
+/-- A canonical term has a unique normal-form witness. -/
 theorem isCanonical_existsUniqueNf {t : Tm Γ A} (h : IsCanonical t) :
     ∃ n : Nf Γ A, n.toTm = t ∧ ∀ m : Nf Γ A, m.toTm = t → m = n := by
   rcases h with ⟨n, rfl⟩

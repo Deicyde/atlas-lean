@@ -49,12 +49,12 @@ open MeasureTheory ProbabilityTheory
 
 variable {Ω : Type*} [MeasurableSpace Ω] {m : ℕ}
 
-/-- **Valid p-value.** A real random variable `X` is a *valid* (super-uniform) p-value under `μ` if
+/-- A real random variable `X` is a *valid* (super-uniform) p-value under `μ` if
 `μ {X ≤ t} ≤ t` for every level `t ∈ [0, 1]`. Uniform p-values are the equality case. -/
 def IsValidPValue (μ : Measure Ω) (X : Ω → ℝ) : Prop :=
   ∀ t ∈ Set.Icc (0 : ℝ) 1, μ {ω | X ω ≤ t} ≤ ENNReal.ofReal t
 
-/-- **Uniform p-values are valid.** A p-value distributed uniformly on `[0, 1]` is valid. -/
+/-- A p-value distributed uniformly on `[0, 1]` is valid. -/
 theorem isValidPValue_of_hasLaw_uniform {μ : Measure Ω} {X : Ω → ℝ}
     (hX : HasLaw X (volume.restrict (Set.Icc (0 : ℝ) 1)) μ) : IsValidPValue μ X := by
   intro t ht
@@ -66,32 +66,32 @@ theorem isValidPValue_of_hasLaw_uniform {μ : Measure Ω} {X : Ω → ℝ}
         measure_mono fun x hx => ⟨hx.2.1, hx.1⟩
     _ = ENNReal.ofReal t := by simp
 
-/-- **Number of p-values below a threshold.** The number of p-values that are at most `t`. -/
+/-- The number of p-values that are at most `t`. -/
 noncomputable def numBelow (p : Fin m → ℝ) (t : ℝ) : ℕ :=
   (Finset.univ.filter fun i => p i ≤ t).card
 
-/-- **Number of p-values below a threshold is at most the total.** At most `m` p-values lie below any threshold. -/
+/-- At most `m` p-values lie below any threshold. -/
 theorem numBelow_le (p : Fin m → ℝ) (t : ℝ) : numBelow p t ≤ m := by
   simpa [numBelow] using Finset.card_filter_le Finset.univ fun i => p i ≤ t
 
-/-- **Number of p-values below a threshold is monotone.** `numBelow p` is monotone in the threshold. -/
+/-- `numBelow p` is monotone in the threshold. -/
 theorem numBelow_mono (p : Fin m → ℝ) {s t : ℝ} (hst : s ≤ t) : numBelow p s ≤ numBelow p t :=
   Finset.card_le_card fun i hi => by
     simp only [Finset.mem_filter, Finset.mem_univ, true_and] at hi ⊢
     exact hi.trans hst
 
-/-- **False discovery proportion.** The false discovery proportion of a rejection set `R` when `H0` is the set of true nulls:
+/-- The false discovery proportion of a rejection set `R` when `H0` is the set of true nulls:
 `|R ∩ H0| / max |R| 1` (zero when nothing is rejected). -/
 noncomputable def falseDiscoveryProportion (H0 R : Finset (Fin m)) : ℝ :=
   ((R ∩ H0).card : ℝ) / max (R.card : ℝ) 1
 
-/-- **False discovery proportion is nonnegative.** The false discovery proportion is nonnegative. -/
+/-- The false discovery proportion is nonnegative. -/
 theorem falseDiscoveryProportion_nonneg (H0 R : Finset (Fin m)) :
     0 ≤ falseDiscoveryProportion H0 R := by
   unfold falseDiscoveryProportion
   positivity
 
-/-- **False discovery proportion is at most one.** The false discovery proportion is at most one. -/
+/-- The false discovery proportion is at most one. -/
 theorem falseDiscoveryProportion_le_one (H0 R : Finset (Fin m)) :
     falseDiscoveryProportion H0 R ≤ 1 := by
   unfold falseDiscoveryProportion

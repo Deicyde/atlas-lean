@@ -124,7 +124,7 @@ theorem gronwall_dct (f f' : ℝ → ℝ) (a p : ℝ) (ha0 : 0 < a) (hap : a < p
   rw [ge_iff_le, div_le_iff₀ (by positivity)]
   nlinarith [hkey]
 
-/-- **One-arm probability as a function of a real density.** The one-arm probability `crossProb d t n` as a function of a real density `t` (`0` outside
+/-- The one-arm probability `crossProb d t n` as a function of a real density `t` (`0` outside
 `[0, 1]`). -/
 noncomputable def crossProbReal (d n : ℕ) (t : ℝ) : ℝ :=
   if ht : 0 ≤ t ∧ t ≤ 1 then crossProb d t.toNNReal (Real.toNNReal_le_one.mpr ht.2) n else 0
@@ -245,7 +245,7 @@ theorem pc_le_tildePc
     · subst hqeq1
       exact htheta_one hq1 hθ
 
-/-- **Equality of the Duminil-Copin–Tassion threshold and $p_c$.** `p̃_c = p_c`, assuming exponential decay on `tildePcSet`, `θ(1) ≠ 0`, and `θ(q) > 0` for
+/-- `p̃_c = p_c`, assuming exponential decay on `tildePcSet`, `θ(1) ≠ 0`, and `θ(q) > 0` for
 `p̃_c < q < 1`. -/
 theorem tildePc_eq_pc
     (htheta_one : ∀ h1 : (1 : ℝ≥0) ≤ 1, theta d 1 h1 ≠ 0)
@@ -255,7 +255,7 @@ theorem tildePc_eq_pc
     tildePc d = pc d :=
   le_antisymm (tildePc_le_pc hsub) (pc_le_tildePc htheta_one hmf)
 
-/-- **Sharpness of the phase transition, conditional form.** Sharpness of the phase transition, **conditional form**: from `p̃_c > 0`, `θ(1) ≠ 0`,
+/-- Sharpness of the phase transition, **conditional form**: from `p̃_c > 0`, `θ(1) ≠ 0`,
 exponential decay of the one-arm probability on `tildePcSet`, and the Duminil-Copin–Tassion
 differential inequality on `(p̃_c, q)` (with continuity and derivative hypotheses), conclude
 `p̃_c = p_c`, exponential decay on `tildePcSet`, and `θ(q) ≥ (q - p̃_c)/(q(1 - p̃_c))` for

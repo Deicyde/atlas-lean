@@ -42,12 +42,8 @@ namespace MathlibExt.Analysis.Integration
 
 variable {a b : ℝ}
 
-/-- **Common refinement of two tagged partitions.** Let $a, b$ be real numbers. For any two
-tagged partitions $T_1$ and $T_2$ of $[a, b]$, there is a tagged partition $T''$ of $[a, b]$
-that is a tagged refinement of both $T_1$ and $T_2$.
-
-The proof takes for $T''$ the partition whose points are the union of the points of $T_1$
-and $T_2$, with each tag at the left endpoint of its subinterval. -/
+/-- Any two tagged partitions of `[a, b]` have a common tagged refinement:
+the partition whose points are the union of both partitions' points. -/
 theorem TaggedPartition.exists_commonRefinement (T₁ T₂ : TaggedPartition a b) :
     ∃ T'' : TaggedPartition a b,
       Nonempty (T₁.IsTaggedRefinement T'') ∧ Nonempty (T₂.IsTaggedRefinement T'') := by

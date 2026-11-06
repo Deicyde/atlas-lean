@@ -51,7 +51,7 @@ theorem rot90Fun_four (x : Site 2) :
 theorem rot90Fun_iterate_four : rot90Fun ∘ rot90Fun ∘ rot90Fun ∘ rot90Fun = id := by
   funext x; exact rot90Fun_four x
 
-/-- **Dart of the square lattice.** An oriented edge of the square lattice: a pair of nearest-neighbour sites. This is the same data
+/-- An oriented edge of the square lattice: a pair of nearest-neighbour sites. This is the same data
 as Mathlib's `SimpleGraph.Dart` of `hypercubicLattice 2`; see
 `StatMech.Lattice.Dart.equivSimpleGraphDart`. -/
 structure Dart where
@@ -68,7 +68,7 @@ namespace Dart
     d = e := by
   cases d; cases e; cases ht; cases hh; rfl
 
-/-- **Reversal of a lattice dart.** The dart with tail and head exchanged. -/
+/-- The dart with tail and head exchanged. -/
 def rev (d : Dart) : Dart where
   tail := d.head
   head := d.tail
@@ -79,7 +79,7 @@ def rev (d : Dart) : Dart where
 
 @[simp] theorem rev_rev (d : Dart) : d.rev.rev = d := rfl
 
-/-- **Direction of a lattice dart.** The direction `head - tail` of a dart, one of the four unit vectors of `ℤ²`. -/
+/-- The direction `head - tail` of a dart, one of the four unit vectors of `ℤ²`. -/
 def dir (d : Dart) : Site 2 := d.head - d.tail
 
 @[simp] theorem dir_def (d : Dart) : d.dir = d.head - d.tail := rfl
@@ -87,7 +87,7 @@ def dir (d : Dart) : Site 2 := d.head - d.tail
 @[simp] theorem dir_rev (d : Dart) : d.rev.dir = - d.dir := by
   simp only [dir, rev_tail, rev_head]; abel
 
-/-- **Lattice darts agree with graph darts of the square lattice.** Lattice darts are exactly Mathlib's darts of the square lattice. -/
+/-- Lattice darts are exactly Mathlib's darts of the square lattice. -/
 def equivSimpleGraphDart : Dart ≃ (hypercubicLattice 2).Dart where
   toFun d := ⟨(d.tail, d.head), d.adj⟩
   invFun d := ⟨d.fst, d.snd, d.adj⟩
@@ -100,7 +100,7 @@ def equivSimpleGraphDart : Dart ≃ (hypercubicLattice 2).Dart where
 @[simp] theorem equivSimpleGraphDart_snd (d : Dart) :
     (equivSimpleGraphDart d).snd = d.head := rfl
 
-/-- **Dart correspondence respects reversal.** Reversing a lattice dart corresponds to `SimpleGraph.Dart.symm`. -/
+/-- Reversing a lattice dart corresponds to `SimpleGraph.Dart.symm`. -/
 theorem equivSimpleGraphDart_rev (d : Dart) :
     equivSimpleGraphDart d.rev = (equivSimpleGraphDart d).symm := rfl
 

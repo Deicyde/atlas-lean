@@ -126,7 +126,7 @@ private theorem measurable_pointMeasure (T : C(E, ℝ) →ₚ[ℝ] C(E, ℝ)) (h
           (continuous_pointProbabilityMeasure T hT).continuousAt hs
     exact measurable_of_Iio fun r => (hsc.isOpen_preimage r).measurableSet
 
-/-- **Representation of positive unital operators by Markov kernels.** A positive unital linear map from `C(E, ℝ)` to itself is represented by a Markov kernel.
+/-- A positive unital linear map from `C(E, ℝ)` to itself is represented by a Markov kernel.
 Continuity of the operator is unnecessary: each output already belongs to `C(E, ℝ)`. -/
 theorem exists_markovKernelOfPositiveLinearMap (T : C(E, ℝ) →ₚ[ℝ] C(E, ℝ))
     (hT : T 1 = 1) :
@@ -146,7 +146,7 @@ theorem exists_markovKernelOfPositiveOperator (T : C(E, ℝ) →P[ℝ] C(E, ℝ)
       ∀ (f : C(E, ℝ)) (x : E), ∫ y, f y ∂K x = T f x := by
   exact exists_markovKernelOfPositiveLinearMap T.toPositiveLinearMap hT
 
-/-- **Markov kernel of a positive unital operator.** The canonical chosen Markov kernel representing `T`. Its characterization theorem is
+/-- The canonical chosen Markov kernel representing `T`. Its characterization theorem is
 `integral_markovKernelOfPositiveOperator`; clients should use that theorem rather than unfold this
 definition. -/
 noncomputable def markovKernelOfPositiveOperator (T : C(E, ℝ) →P[ℝ] C(E, ℝ))
@@ -159,14 +159,14 @@ noncomputable instance isMarkovKernel_markovKernelOfPositiveOperator
     IsMarkovKernel (markovKernelOfPositiveOperator T hT) :=
   (exists_markovKernelOfPositiveOperator T hT).choose_spec.1
 
-/-- **Kernel of a positive operator represents it on continuous functions.** The chosen kernel represents `T` on every real-valued continuous function. -/
+/-- The chosen kernel represents `T` on every real-valued continuous function. -/
 @[simp]
 theorem integral_markovKernelOfPositiveOperator (T : C(E, ℝ) →P[ℝ] C(E, ℝ))
     (hT : T 1 = 1) (f : C(E, ℝ)) (x : E) :
     ∫ y, f y ∂markovKernelOfPositiveOperator T hT x = T f x :=
   (exists_markovKernelOfPositiveOperator T hT).choose_spec.2 f x
 
-/-- **Markov kernels are determined by integrals of continuous functions.** Two Markov kernels on a compact metrizable Borel space are equal when they integrate every
+/-- Two Markov kernels on a compact metrizable Borel space are equal when they integrate every
 real-valued continuous function equally at every starting state. -/
 theorem kernel_ext_of_forall_integral_continuous_eq {K L : Kernel E E}
     [IsMarkovKernel K] [IsMarkovKernel L]
@@ -177,7 +177,7 @@ theorem kernel_ext_of_forall_integral_continuous_eq {K L : Kernel E E}
   intro f
   exact h f.toContinuousMap x
 
-/-- **Identity operator gives the identity kernel.** The kernel represented by the identity operator is Mathlib's identity kernel. -/
+/-- The kernel represented by the identity operator is Mathlib's identity kernel. -/
 theorem markovKernelOfPositiveOperator_id :
     markovKernelOfPositiveOperator (PositiveContinuousLinearMap.id ℝ C(E, ℝ)) (by rfl) =
       (Kernel.id : Kernel E E) := by
@@ -186,14 +186,14 @@ theorem markovKernelOfPositiveOperator_id :
   rw [integral_markovKernelOfPositiveOperator, Kernel.id_apply]
   simp
 
-/-- **Identity operator kernel is pointwise Dirac.** Pointwise form of the identity theorem: every transition measure is Dirac. -/
+/-- Pointwise form of the identity theorem: every transition measure is Dirac. -/
 @[simp]
 theorem markovKernelOfPositiveOperator_id_apply (x : E) :
     markovKernelOfPositiveOperator (PositiveContinuousLinearMap.id ℝ C(E, ℝ)) (by rfl) x =
       Measure.dirac x := by
   rw [markovKernelOfPositiveOperator_id, Kernel.id_apply]
 
-/-- **Operator composition corresponds to kernel composition.** Operator composition is represented by canonical kernel composition. The order is reversed:
+/-- Operator composition is represented by canonical kernel composition. The order is reversed:
 `T.comp U` acts as `f ↦ T (U f)`, so the represented kernel first uses `K_T` and then `K_U`. -/
 theorem markovKernelOfPositiveOperator_comp (T U : C(E, ℝ) →P[ℝ] C(E, ℝ))
     (hT : T 1 = 1) (hU : U 1 = 1) :

@@ -60,7 +60,7 @@ open MathlibExt.Biology.Phylogenetics.TreeCount
 
 universe u
 
-/-- **Unrooted binary phylogenetic tree.** An **unrooted binary phylogenetic tree** on the taxa `X`: a finite tree `G` on a vertex
+/-- An **unrooted binary phylogenetic tree** on the taxa `X`: a finite tree `G` on a vertex
 type `V` whose degree-one vertices are labeled bijectively by `X` (`label`) and whose other
 vertices all have degree three. -/
 structure UnrootedBinaryTree (X : Type) : Type 1 where
@@ -81,14 +81,14 @@ structure UnrootedBinaryTree (X : Type) : Type 1 where
 
 attribute [instance] UnrootedBinaryTree.fintype UnrootedBinaryTree.decRel
 
-/-- **Isomorphism of unrooted binary phylogenetic trees.** Two unrooted binary phylogenetic trees are **isomorphic** when some graph isomorphism maps
+/-- Two unrooted binary phylogenetic trees are **isomorphic** when some graph isomorphism maps
 the leaf with each label to the leaf with the same label. -/
 def UnrootedBinaryTree.Iso {X : Type} (T T' : UnrootedBinaryTree X) : Prop :=
   ∃ e : T.G ≃g T'.G, ∀ x, e (T.label x) = T'.label x
 
 /-! ### Binary hierarchies -/
 
-/-- **Binary hierarchy on a finite set.** A **binary hierarchy** on a finite set `S`: a family of nonempty subsets of `S` containing
+/-- A **binary hierarchy** on a finite set `S`: a family of nonempty subsets of `S` containing
 `S` and every singleton, any two members nested or disjoint, and every member with at least two
 elements the disjoint union of two members. These are the cluster systems of the rooted binary
 phylogenetic trees on `S` (Semple & Steel 2003, Section 3.1). -/
@@ -376,7 +376,7 @@ private theorem equiv_of_clusterFinset_eq {α : Type u} [DecidableEq α] (s : Pl
         exact .trans _ _ _ (equiv_node (ihl r' hnl hnr' hcl) (ihr l' hnr hnl' hcr))
           (.rel _ _ (.root _ _))
 
-/-- **Binary hierarchy restricted below a member is a binary hierarchy.** The members of a binary hierarchy below a member form a binary hierarchy. -/
+/-- The members of a binary hierarchy below a member form a binary hierarchy. -/
 theorem isBinaryHierarchy_filter {α : Type u} [DecidableEq α] {S D : Finset α}
     {H : Finset (Finset α)} (hH : IsBinaryHierarchy S H) (hD : D ∈ H) :
     IsBinaryHierarchy D (H.filter (· ⊆ D)) := by
@@ -601,14 +601,14 @@ private theorem beyond_chain {V : Type} {G : SimpleGraph V} (hG : G.IsTree) {s x
 
 /-! ### Clusters of an unrooted tree seen from a leaf -/
 
-/-- **Cluster of a vertex seen from a leaf.** The **cluster** of a vertex `v` seen from the leaf labeled `a`: the taxa `x ≠ a` whose leaf
+/-- The **cluster** of a vertex `v` seen from the leaf labeled `a`: the taxa `x ≠ a` whose leaf
 lies beyond `v`, i.e. `v` is on the path from the leaf `a` to the leaf `x`. -/
 noncomputable def cluster {X : Type} [Fintype X] [DecidableEq X] (T : UnrootedBinaryTree X)
     (a : X) (v : T.V) : Finset X :=
   Finset.univ.filter fun x => x ≠ a ∧
     T.G.dist (T.label a) v + T.G.dist v (T.label x) = T.G.dist (T.label a) (T.label x)
 
-/-- **Cluster set of a tree seen from a leaf.** The clusters of all vertices seen from the leaf labeled `a`. (The cluster of the leaf `a`
+/-- The clusters of all vertices seen from the leaf labeled `a`. (The cluster of the leaf `a`
 itself is the set of all other taxa, which is also the cluster of its neighbor.) -/
 noncomputable def clusterSet {X : Type} [Fintype X] [DecidableEq X] (T : UnrootedBinaryTree X)
     (a : X) : Finset (Finset X) :=
@@ -625,7 +625,7 @@ private theorem dist_iso {V W : Type} {G : SimpleGraph V} {G' : SimpleGraph W}
     simp only [SimpleGraph.Walk.length_map] at this
     simpa [hp] using this
 
-/-- **Isomorphic trees have the same clusters.** Isomorphic trees have the same clusters. -/
+/-- Isomorphic trees have the same clusters. -/
 theorem clusterSet_eq_of_iso {X : Type} [Fintype X] [DecidableEq X]
     {T T' : UnrootedBinaryTree X} (h : T.Iso T') (a : X) :
     clusterSet T a = clusterSet T' a := by
@@ -780,7 +780,7 @@ private theorem exists_root_nbr {X : Type} [Fintype X] [DecidableEq X]
       exact this
     exact this ▸ hzb
 
-/-- **Clusters of an unrooted tree form a binary hierarchy.** The clusters of a tree seen from a leaf form a binary hierarchy on the other taxa
+/-- The clusters of a tree seen from a leaf form a binary hierarchy on the other taxa
 (Semple & Steel 2003, Section 3.1). -/
 theorem isBinaryHierarchy_clusterSet {X : Type} [Fintype X] [DecidableEq X]
     (T : UnrootedBinaryTree X) (a : X) :
@@ -1055,7 +1055,7 @@ private theorem matchVertex_adj {X : Type} [Fintype X] [DecidableEq X]
     rw [hw, ← hcu]; exact cluster_child_ne T' a hu's hc' hdc'
   exact no_cluster_between T a hv hd h₁ h₂ h₁' h₂'
 
-/-- **Clusters determine an unrooted binary tree.** Two trees with the same clusters seen from the leaf `a` are isomorphic: the clusters
+/-- Two trees with the same clusters seen from the leaf `a` are isomorphic: the clusters
 determine the tree. -/
 theorem iso_of_clusterSet_eq {X : Type} [Fintype X] [DecidableEq X]
     {T T' : UnrootedBinaryTree X} (a : X)
@@ -1522,7 +1522,7 @@ private theorem hier_subset_beyond {X : Type} [DecidableEq X] {S : Finset X}
     omega
   exact beyond_trans hG h1 h2
 
-/-- **Every binary hierarchy is a cluster set of a tree.** Every binary hierarchy on the taxa other than `a` is the cluster set, seen from the leaf
+/-- Every binary hierarchy on the taxa other than `a` is the cluster set, seen from the leaf
 `a`, of some unrooted binary phylogenetic tree (vertices: the leaf `a` and the members of the
 hierarchy; each member is joined to the smallest member strictly containing it). -/
 theorem exists_clusterSet_eq {X : Type} [Fintype X] [DecidableEq X] (a : X)
@@ -1604,7 +1604,7 @@ theorem exists_clusterSet_eq {X : Type} [Fintype X] [DecidableEq X] (a : X)
 
 /-! ### The count -/
 
-/-- **Unrooted binary trees correspond to binary hierarchies.** Unrooted binary phylogenetic trees up to label-preserving isomorphism correspond to the
+/-- Unrooted binary phylogenetic trees up to label-preserving isomorphism correspond to the
 binary hierarchies on the taxa other than `a`, by their clusters seen from the leaf `a`. -/
 noncomputable def quotEquivHierarchy {X : Type} [Fintype X] [DecidableEq X] (a : X) :
     Quot (UnrootedBinaryTree.Iso (X := X)) ≃
@@ -1622,7 +1622,7 @@ noncomputable def quotEquivHierarchy {X : Type} [Fintype X] [DecidableEq X] (a :
     obtain ⟨T, hT⟩ := exists_clusterSet_eq a H hH
     exact ⟨Quot.mk _ T, Subtype.ext hT⟩
 
-/-- **Number of unrooted binary phylogenetic trees.** The count `(2 n - 5)‼` of unrooted binary phylogenetic trees holds from `n = 2` taxa on:
+/-- The count `(2 n - 5)‼` of unrooted binary phylogenetic trees holds from `n = 2` taxa on:
 for `n = 2` the single tree is one edge and `2 · 2 - 5 = 0` in `ℕ`, `0‼ = 1` (the conventional
 value `(-1)‼ = 1`). For `n ≤ 1` there is no tree while the formula gives `1`. -/
 theorem nat_card_unrootedBinaryTree_of_two_le (n : ℕ) (hn : 2 ≤ n) :

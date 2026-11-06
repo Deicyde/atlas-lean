@@ -63,32 +63,32 @@ open Filter Topology Real
 
 namespace MathlibExt.Biology.Dynamics.Quasispecies
 
-/-- **Master-sequence vector field of the single-peak quasispecies.** The master-sequence vector field of the single-peak quasispecies without back mutation:
+/-- The master-sequence vector field of the single-peak quasispecies without back mutation:
 `x' = σ Q x - (σ x + (1 - x)) x`, where `σ` is the master fitness relative to the mutants and
 `Q` the probability of an error-free copy. Meaningful for `σ > 1`, `0 ≤ Q ≤ 1`,
 `0 ≤ x ≤ 1`; it is a polynomial and is defined for all reals. -/
 def masterField (σ Q x : ℝ) : ℝ :=
   σ * Q * x - (σ * x + (1 - x)) * x
 
-/-- **Interior equilibrium of the master-sequence frequency.** The interior equilibrium `x* = (σ Q - 1) / (σ - 1)` of the master frequency. For
+/-- The interior equilibrium `x* = (σ Q - 1) / (σ - 1)` of the master frequency. For
 `σ = 1` (no selective advantage) Lean's `x / 0 = 0` gives the junk value `0`; every result
 below assumes `1 < σ`. -/
 noncomputable def masterEquilibrium (σ Q : ℝ) : ℝ :=
   (σ * Q - 1) / (σ - 1)
 
-/-- **Master-sequence equation is logistic.** The master-sequence equation is logistic: `x' = x ((σ Q - 1) - (σ - 1) x)`. -/
+/-- The master-sequence equation is logistic: `x' = x ((σ Q - 1) - (σ - 1) x)`. -/
 theorem masterField_eq (σ Q x : ℝ) :
     masterField σ Q x = x * ((σ * Q - 1) - (σ - 1) * x) := by
   unfold masterField; ring
 
-/-- **Equilibria of the master-sequence frequency.** The equilibria of the master frequency are `0` and `x* = (σ Q - 1)/(σ - 1)`. -/
+/-- The equilibria of the master frequency are `0` and `x* = (σ Q - 1)/(σ - 1)`. -/
 theorem masterField_eq_zero_iff {σ Q x : ℝ} (hσ : 1 < σ) :
     masterField σ Q x = 0 ↔ x = 0 ∨ x = masterEquilibrium σ Q := by
   have h : σ - 1 ≠ 0 := by linarith
   rw [masterField_eq, mul_eq_zero, masterEquilibrium, eq_div_iff h]
   constructor <;> rintro (h1 | h1) <;> [left; right; left; right] <;> linarith
 
-/-- **Mutant frequency at the interior equilibrium.** The mutant frequency at the interior equilibrium is `1 - x* = σ (1 - Q)/(σ - 1)`. -/
+/-- The mutant frequency at the interior equilibrium is `1 - x* = σ (1 - Q)/(σ - 1)`. -/
 theorem one_sub_masterEquilibrium {σ : ℝ} (hσ : 1 < σ) (Q : ℝ) :
     1 - masterEquilibrium σ Q = σ * (1 - Q) / (σ - 1) := by
   have h : σ - 1 ≠ 0 := by linarith
@@ -100,7 +100,7 @@ theorem masterEquilibrium_pos_iff {σ : ℝ} (hσ : 1 < σ) (Q : ℝ) :
   rw [masterEquilibrium, div_pos_iff_of_pos_right (by linarith)]
   constructor <;> intro h <;> linarith
 
-/-- **Interior quasispecies equilibrium is at most 1.** For `σ > 1` and `Q ≤ 1` the interior equilibrium is at most `1`. -/
+/-- For `σ > 1` and `Q ≤ 1` the interior equilibrium is at most `1`. -/
 theorem masterEquilibrium_le_one {σ Q : ℝ} (hσ : 1 < σ) (hQ : Q ≤ 1) :
     masterEquilibrium σ Q ≤ 1 := by
   rw [masterEquilibrium, div_le_one (by linarith)]
@@ -116,7 +116,7 @@ theorem one_lt_mul_pow_iff {σ q : ℝ} (hσ : 0 < σ) (hq0 : 0 < q) (hq1 : q < 
     log_mul hσ.ne' (pow_pos hq0 L).ne', log_pow]
   constructor <;> intro h <;> nlinarith
 
-/-- **Continuity of the interior equilibrium in the copying fidelity.** The interior equilibrium depends continuously on `Q`, so any sequence of fidelities with
+/-- The interior equilibrium depends continuously on `Q`, so any sequence of fidelities with
 `Q_L → Qlim` has `x*(Q_L) → x*(Qlim)`. -/
 theorem tendsto_masterEquilibrium {σ : ℝ} {Q : ℕ → ℝ} {Qlim : ℝ}
     (hQ : Tendsto Q atTop (𝓝 Qlim)) :
@@ -132,7 +132,7 @@ theorem tendsto_masterEquilibrium_fidelity (σ μ : ℝ) :
   refine tendsto_masterEquilibrium ?_
   simpa [sub_eq_add_neg, neg_div] using Real.tendsto_one_add_div_pow_exp (-μ)
 
-/-- **Eigen's error threshold.** In the fixed-`q_L` limit the master sequence persists iff `μ < log σ`. -/
+/-- In the fixed-`q_L` limit the master sequence persists iff `μ < log σ`. -/
 theorem masterEquilibrium_exp_pos_iff {σ : ℝ} (hσ : 1 < σ) (μ : ℝ) :
     0 < masterEquilibrium σ (exp (-μ)) ↔ μ < log σ := by
   rw [masterEquilibrium_pos_iff hσ, ← exp_log (by linarith : (0 : ℝ) < σ), ← exp_add,

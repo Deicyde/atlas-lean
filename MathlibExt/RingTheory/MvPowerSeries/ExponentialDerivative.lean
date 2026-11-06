@@ -40,7 +40,7 @@ private theorem inv_factorial_succ_mul (n : ℕ) :
   have hn1 : (n : ℚ) + 1 ≠ 0 := by positivity
   field_simp
 
-/-- **Partial derivative of the truncated exponential.** The partial derivative of the finite exponential sum containing the terms `w ^ n / n!` for
+/-- The partial derivative of the finite exponential sum containing the terms `w ^ n / n!` for
 `n ≤ N` is the derivative of its exponent times the sum containing those terms for `n < N`. -/
 theorem pderiv_expTrunc (i : σ) (N : ℕ) (w : MvPowerSeries σ R) :
     pderiv i (expTrunc (N + 1) w) = pderiv i w * expTrunc N w := by
@@ -54,7 +54,7 @@ theorem pderiv_expTrunc (i : σ) (N : ℕ) (w : MvPowerSeries σ R) :
     ← Nat.cast_smul_eq_nsmul ℚ, smul_smul, inv_factorial_succ_mul,
     mul_smul_comm, mul_comm]
 
-/-- **Partial derivative of the formal exponential.** The partial derivative of the canonical exponential is the derivative of its exponent times
+/-- The partial derivative of the canonical exponential is the derivative of its exponent times
 the exponential. -/
 theorem pderiv_expOfConstantCoeffZero (i : σ) {w : MvPowerSeries σ R}
     (hw : constantCoeff w = 0) :

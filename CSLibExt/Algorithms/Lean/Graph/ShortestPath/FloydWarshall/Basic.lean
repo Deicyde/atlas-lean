@@ -28,12 +28,7 @@ set_option autoImplicit false
 
 namespace Cslib.Algorithms.Lean.FloydWarshall
 
-/-- **Weight of a vertex path in an extended-integer weight matrix.** Let $w$ assign to each
-ordered pair of vertices in $\{0, \dots, n-1\}$ a weight in $\mathbb{Z} \cup \{\infty\}$. The
-weight of a list of vertices $v_0, v_1, \dots, v_m$ with $m \ge 1$ is
-$w(v_0, v_1) + w(v_1, v_2) + \cdots + w(v_{m-1}, v_m)$, computed in $\mathbb{Z} \cup \{\infty\}$
-where adding $\infty$ gives $\infty$. The empty list and every single-vertex list have
-weight $0$. -/
+/-- Sum the direct weights along a vertex-list path. Empty and singleton lists have weight zero. -/
 def pathWeight {n : Nat} (weight : Fin n → Fin n → WithTop Int) :
     List (Fin n) → WithTop Int
   | [] => 0
@@ -41,30 +36,16 @@ def pathWeight {n : Nat} (weight : Fin n → Fin n → WithTop Int) :
   | source :: target :: rest =>
       weight source target + pathWeight weight (target :: rest)
 
-/-- **Finite-weight vertex path in a weight matrix.** Let $w$ assign to each ordered pair of
-vertices in $\{0, \dots, n-1\}$ a weight in $\mathbb{Z} \cup \{\infty\}$, and let $s$ and $t$ be
-vertices. A list of vertices $p$ is a weighted path from $s$ to $t$ when $p$ is nonempty, its
-first entry is $s$, its last entry is $t$, and $w(u, v) \ne \infty$ for every pair of consecutive
-entries $u, v$ of $p$. -/
+/-- A nonempty vertex list with the given endpoints and a finite weight on every edge. -/
 def IsWeightedPath {n : Nat} (weight : Fin n → Fin n → WithTop Int)
     (source target : Fin n) (path : List (Fin n)) : Prop :=
   path.IsChainFromTo (fun left right => weight left right ≠ ⊤) source target
 
-/-- **Intermediate vertices below a bound.** For a natural number $k$, a list of vertices in
-$\{0, \dots, n - 1\}$ has all its intermediate vertices below $k$ when every entry of the list
-other than its first and its last is less than $k$. -/
+/-- Every intermediate vertex in the path has value strictly below `k`. -/
 def InternalVerticesBelow {n : Nat} (k : Nat) (path : List (Fin n)) : Prop :=
   ∀ vertex ∈ path.tail.dropLast, vertex.val < k
 
-/-- **Stage-$k$ shortest-path weight.** Let $w$ assign to each ordered pair of vertices in
-$\{0, \dots, n-1\}$ a weight in $\mathbb{Z} \cup \{\infty\}$, let $k$ be a natural number, let
-$s$ and $t$ be vertices and let $d \in \mathbb{Z} \cup \{\infty\}$. A weighted path from $s$ to
-$t$ is a nonempty list of vertices that starts at $s$, ends at $t$ and has $w(u, v) \ne \infty$
-for every pair of consecutive vertices $u, v$; its weight is the sum of these values $w(u, v)$,
-and its intermediate vertices are all its entries except the first and the last. Then $d$ is the
-stage-$k$ shortest-path weight from $s$ to $t$ when $d$ is at most the weight of every weighted
-path from $s$ to $t$ whose intermediate vertices are all less than $k$, and either $d = \infty$ or
-some such path has weight exactly $d$. -/
+/-- `distance` is the minimum weight of paths whose intermediate vertices are below `k`. -/
 def IsStageShortestPathWeight {n : Nat} (weight : Fin n → Fin n → WithTop Int)
     (k : Nat) (source target : Fin n) (distance : WithTop Int) : Prop :=
   (∀ path, IsWeightedPath weight source target path → InternalVerticesBelow k path →
@@ -72,32 +53,21 @@ def IsStageShortestPathWeight {n : Nat} (weight : Fin n → Fin n → WithTop In
   (distance = ⊤ ∨ ∃ path, IsWeightedPath weight source target path ∧
     InternalVerticesBelow k path ∧ pathWeight weight path = distance)
 
-/-- **Negative cycles.** For an $n \times n$ matrix $w$ of weights in $\mathbb{Z} \cup \{+\infty\}$,
-a list of vertices $v_0, \dots, v_m$ is a negative cycle when $m \ge 1$, $v_m = v_0$, every
-weight $w_{v_i v_{i+1}}$ with $i < m$ is finite, the vertices $v_0, \dots, v_{m-1}$ are
-pairwise distinct, and the path weight $\sum_{i < m} w_{v_i v_{i+1}}$ is negative. -/
+/-- A closed, nonempty, simple vertex-list path of negative weight. -/
 def IsNegativeCycle {n : Nat} (weight : Fin n → Fin n → WithTop Int)
     (cycle : List (Fin n)) : Prop :=
   ∃ base, IsWeightedPath weight base base cycle ∧ 2 ≤ cycle.length ∧
     cycle.dropLast.Nodup ∧ pathWeight weight cycle < 0
 
-/-- **Matrices with a negative cycle.** An $n \times n$ matrix $w$ of weights in
-$\mathbb{Z} \cup \{+\infty\}$ has a negative cycle when some list of vertices is a negative
-cycle for $w$. -/
+/-- The direct-weight matrix contains a negative cycle. -/
 def HasNegativeCycle {n : Nat} (weight : Fin n → Fin n → WithTop Int) : Prop :=
   ∃ cycle, IsNegativeCycle weight cycle
 
-/-- **Weight matrices without negative cycles.** Let $w$ assign to each ordered pair of vertices
-in $\{0, \dots, n-1\}$ a weight in $\mathbb{Z} \cup \{\infty\}$. Then $w$ has no negative cycle
-when there is no list of vertices $v_0, v_1, \dots, v_m$ with $m \ge 1$ such that $v_m = v_0$,
-the vertices $v_0, \dots, v_{m-1}$ are pairwise distinct, $w(v_{i-1}, v_i) \ne \infty$ for
-$1 \le i \le m$, and $w(v_0, v_1) + \cdots + w(v_{m-1}, v_m) < 0$. -/
+/-- The direct-weight matrix contains no negative cycle. -/
 def NoNegativeCycle {n : Nat} (weight : Fin n → Fin n → WithTop Int) : Prop :=
   ¬HasNegativeCycle weight
 
-/-- **Floyd–Warshall cost record.** A cost record for the Floyd–Warshall algorithm is a pair of
-natural numbers: the number of initialization events (input matrix cells copied into the initial
-distance table) and the number of min-plus transition events (table entries updated). -/
+/-- Separate initialization and min-plus transition event counts. -/
 structure Cost where
   /-- Input matrix cells copied and diagonal-normalized. -/
   initializations : Nat
@@ -110,17 +80,10 @@ instance : Zero Cost := ⟨⟨0, 0⟩⟩
 instance : Add Cost := ⟨fun left right =>
   ⟨left.initializations + right.initializations, left.transitions + right.transitions⟩⟩
 
-/-- **Total Floyd–Warshall cost.** The total of a Floyd–Warshall cost record is its number of
-initialization events plus its number of min-plus transition events. -/
+/-- The sum of both abstract event counts. -/
 def Cost.total (cost : Cost) : Nat := cost.initializations + cost.transitions
 
-/-- **Floyd–Warshall algorithm.** Given an $n \times n$ matrix $w$ of weights in
-$\mathbb{Z} \cup \{+\infty\}$ indexed by the vertices $0, \dots, n - 1$, the Floyd–Warshall
-algorithm starts from the table with $d^{(0)}_{ii} = \min(w_{ii}, 0)$ and $d^{(0)}_{ij} = w_{ij}$
-for $i \ne j$, and for $k = 0, \dots, n - 1$ computes the table
-$d^{(k+1)}_{ij} = \min\bigl(d^{(k)}_{ij}, d^{(k)}_{ik} + d^{(k)}_{kj}\bigr)$. It returns the
-matrix $d^{(n)}$ together with its cost: one initialization event for each entry of $d^{(0)}$
-and one transition event for each entry of each table $d^{(k+1)}$. -/
+/-- Compute the all-pairs distance matrix by the bottom-up Floyd-Warshall recurrence. -/
 @[no_expose]
 def floydWarshall {n : Nat} (weight : Fin n → Fin n → WithTop Int) :
     TimeM Cost (Fin n → Fin n → WithTop Int) :=
@@ -169,9 +132,7 @@ def floydWarshall {n : Nat} (weight : Fin n → Fin n → WithTop Int) :
     let final ← runStages initial n (by omega)
     pure fun i j => tableGet final i j
 
-/-- **Negative-diagonal test.** For an $n \times n$ matrix $d$ with entries in
-$\mathbb{Z} \cup \{+\infty\}$, the negative-diagonal test on $d$ is the Boolean value that is
-true exactly when $d_{vv} < 0$ for some vertex $v$. -/
+/-- Report whether an extended-integer matrix has a negative diagonal entry. -/
 def hasNegativeDiagonal {n : Nat} (distance : Fin n → Fin n → WithTop Int) : Bool :=
   (List.finRange n).any fun vertex => decide (distance vertex vertex < 0)
 
@@ -298,9 +259,7 @@ private lemma runStages_transitions {n : Nat}
       rw [ih (by omega), buildStage_transitions]
       simp [Nat.succ_mul, pow_two]
 
-/-- **Initialization count of Floyd–Warshall.** For every $n$ and every $n \times n$ matrix of
-weights in $\mathbb{Z} \cup \{+\infty\}$, the Floyd–Warshall algorithm performs exactly $n^2$
-initialization events, one for each ordered pair of vertices. -/
+/-- Floyd-Warshall initializes exactly one cell for each ordered vertex pair. -/
 theorem floydWarshall_initializations {n : Nat} (weight : Fin n → Fin n → WithTop Int) :
     (floydWarshall weight).time.initializations = n ^ 2 := by
   simp only [floydWarshall, TimeM.time_bind, TimeM.time_pure, add_initializations,
@@ -308,9 +267,7 @@ theorem floydWarshall_initializations {n : Nat} (weight : Fin n → Fin n → Wi
   rw [buildInitial_initializations, runStages_initializations]
   simp [pow_two]
 
-/-- **Transition count of Floyd–Warshall.** For every $n$ and every $n \times n$ matrix of weights
-in $\mathbb{Z} \cup \{+\infty\}$, the Floyd–Warshall algorithm performs exactly $n^3$ min-plus
-transition events, one for each triple $(k, i, j)$ of vertices. -/
+/-- Floyd-Warshall executes exactly one transition for each `(k, i, j)` triple. -/
 theorem floydWarshall_transitions {n : Nat} (weight : Fin n → Fin n → WithTop Int) :
     (floydWarshall weight).time.transitions = n ^ 3 := by
   simp only [floydWarshall, TimeM.time_bind, TimeM.time_pure, add_transitions,
@@ -318,16 +275,12 @@ theorem floydWarshall_transitions {n : Nat} (weight : Fin n → Fin n → WithTo
   rw [buildInitial_transitions, runStages_transitions]
   simp [pow_succ, Nat.mul_assoc]
 
-/-- **Floyd–Warshall performs $n^2 + n^3$ steps.** For every $n$ and every $n \times n$ matrix of
-weights in $\mathbb{Z} \cup \{+\infty\}$, the total number of events counted by the Floyd–Warshall
-algorithm, initialization events plus min-plus transition events, is exactly $n^2 + n^3$. -/
+/-- The total abstract event count is `n^2 + n^3`. -/
 theorem floydWarshall_time {n : Nat} (weight : Fin n → Fin n → WithTop Int) :
     (floydWarshall weight).time.total = n ^ 2 + n ^ 3 := by
   rw [Cost.total, floydWarshall_initializations, floydWarshall_transitions]
 
-/-- **Characterization of the negative-diagonal test.** For every $n \times n$ matrix $d$ with
-entries in $\mathbb{Z} \cup \{+\infty\}$, the negative-diagonal test on $d$ returns true if and
-only if $d_{vv} < 0$ for some vertex $v$. -/
+/-- The Boolean detector is true exactly when some diagonal entry is negative. -/
 theorem hasNegativeDiagonal_eq_true_iff {n : Nat}
     (distance : Fin n → Fin n → WithTop Int) :
     hasNegativeDiagonal distance = true ↔ ∃ vertex, distance vertex vertex < 0 := by

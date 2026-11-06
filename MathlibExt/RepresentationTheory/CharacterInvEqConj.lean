@@ -49,9 +49,8 @@ namespace CharacterTheory
 universe u
 
 set_option linter.style.haveILetI false in
-/-- **Character values at inverses are complex conjugates.** Let $\rho$ be a representation of a
-finite group $G$ on a finite-dimensional complex vector space $V$, with character $\chi_\rho$.
-For every $g \in G$, $\chi_\rho(g^{-1}) = \overline{\chi_\rho(g)}$. -/
+/-- The character of a finite-dimensional complex representation of a finite
+group at `g⁻¹` is the complex conjugate of its value at `g`. -/
 theorem char_inv_eq_conj
     {G : Type u} [Group G] [Fintype G]
     {V : Type u} [AddCommGroup V] [Module ℂ V] [FiniteDimensional ℂ V]
@@ -127,10 +126,9 @@ theorem char_inv_eq_conj
     rw [hf_restr, hg_restr, ← hconj]
     simp [map_smul, LinearMap.trace_id, smul_eq_mul, map_mul, map_natCast]
 
-/-- **Character of the dual representation.** Let $\rho$ be a representation of a finite group
-$G$ on a finite-dimensional complex vector space $V$, and let $\rho^*$ be its dual representation.
-For every $g \in G$, the character of $\rho^*$ at $g$ is the complex conjugate of the character of
-$\rho$ at $g$: $\chi_{\rho^*}(g) = \overline{\chi_\rho(g)}$. -/
+/-- The character of the dual representation at `g` is the complex conjugate
+of the character of the original representation at `g`: combine
+`Representation.char_dual` with `char_inv_eq_conj`. -/
 theorem char_dual_eq_conj
     {G : Type u} [Group G] [Fintype G]
     {V : Type u} [AddCommGroup V] [Module ℂ V] [FiniteDimensional ℂ V]

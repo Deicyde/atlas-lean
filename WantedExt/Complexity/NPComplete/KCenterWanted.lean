@@ -47,23 +47,14 @@ reduction from every language in `NP`
 (`Cslib.CookLevin.PolyManyOneRed`).
 -/
 
-/-- **k-center instances.** An instance of generalized nonmetric k-center is a triple $(D, K, B)$
-of a finite list $D$ of rows, each a finite list of natural numbers (row $c$ lists the costs from
-client $c$ to the locations), and natural numbers $K$, the bound on the number of locations, and
-$B$, the radius. -/
+/-- A k-center instance: distance matrix, number of locations K, radius. -/
 abbrev KCenterInstance := List (List ℕ) × ℕ × ℕ
 
-/-- **Well-formed k-center instances.** A k-center instance $(D, K, B)$ is well formed when all
-rows of $D$ have the same length. -/
+/-- Well-formedness of an instance. -/
 def WellFormed (i : KCenterInstance) : Prop :=
   ∀ row ∈ i.1, ∀ row' ∈ i.1, row.length = row'.length
 
-/-- **Feasible k-center instances.** Let $(D, K, B)$ be a k-center instance with rows
-$D_0, \dots, D_{m-1}$, and let $n$ be the length of $D_0$, with $n = 0$ if $m = 0$. For $c < m$
-and a natural number $f$, write $D_c(f)$ for the entry of $D_c$ at position $f$, counting from
-$0$, and set $D_c(f) = 0$ if $D_c$ has at most $f$ entries. The instance is feasible when there
-is a set $S$ of at most $K$ locations $f < n$ such that every client $c < m$ has some $f \in S$
-with $D_c(f) \le B$. -/
+/-- At most `K` locations within radius `B` of every client. -/
 def KCenterFeasible
     (i : KCenterInstance) : Prop :=
   ∃ facilities : List ℕ, facilities.Nodup ∧ facilities.length ≤ i.2.1 ∧
@@ -73,10 +64,7 @@ def KCenterFeasible
         (i.1.getD c []).getD (assign.getD c 0) 0 ≤ i.2.2
 
 open Classical in
-/-- **Generalized nonmetric k-center as a decision problem.** This decision problem accepts a
-bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a k-center
-instance that is well formed and feasible; bitstrings that do not decode to an instance are
-rejected. -/
+/-- k-CENTER (GENERALIZED, NONMETRIC) as a decision problem over bitstrings. -/
 noncomputable def kCenterDec :
     MetaMathlibExt.ComplexityTheory.DecisionProblem := fun x =>
   match MetaMathlibExt.BitstringEncoding.bitDecode
@@ -84,11 +72,7 @@ noncomputable def kCenterDec :
   | some i => decide (WellFormed i ∧ KCenterFeasible i)
   | none => false
 
-/-- **k-CENTER (GENERALIZED, NONMETRIC) is NP-complete.** The decision problem of generalized
-nonmetric k-center on bitstrings is NP-complete: it belongs to NP, and every decision problem in
-NP has a polynomial-time many-one reduction to it.
-
-Source: O. Kariv and S. L. Hakimi,
+/-- **k-CENTER (GENERALIZED, NONMETRIC) is NP-complete.** Source: O. Kariv and S. L. Hakimi,
 "An algorithmic approach to network location problems. I: The p-centers", SIAM Journal on
 Applied Mathematics 37 (1979), 513-538. -/
 public theorem_wanted kCenter_npComplete :

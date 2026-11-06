@@ -26,10 +26,10 @@ as required by `ArithmeticFunction` (`map_zero'`).
 
 namespace ArithmeticFunction
 
-/-- **Alder's totient with second argument 2.** Alder's extension of Euler's totient with
-second argument $2$ is the arithmetic function $g : \mathbb{N} \to \mathbb{N}$ sending a
-natural number $k$ to the number of natural numbers $r < k$ with $\gcd(k, r) = 1$ and
-$\gcd(k, 2r+1) = 1$. In particular $g(0) = 0$, since there is no natural number $r < 0$. -/
+/-- Alder's extension of Euler's totient with second argument `2`.
+
+Counts `r < k` with `gcd(k,r)=1` and `gcd(k,2r+1)=1`.
+At `k = 0` the range is empty, with value `0`. -/
 def alderTotientTwo : ArithmeticFunction ℕ where
   toFun k :=
     ((Finset.range k).filter fun r =>
@@ -59,9 +59,8 @@ theorem alderTotientTwo_succ_apply (k : ℕ) :
       fun ⟨h1, h2⟩ => ⟨Nat.coprime_comm.mpr h1, Nat.coprime_comm.mpr h2⟩⟩
   rw [h, heq]
 
-/-- **Alder's totient at a successor as a count over an inclusive range.** For every natural
-number $k$, Alder's totient $g$ with second argument $2$ satisfies that $g(k+1)$ is the number
-of natural numbers $r \le k$ with $\gcd(r, k+1) = 1$ and $\gcd(2r+1, k+1) = 1$. -/
+/-- Inclusive `Iic` form of the shifted theorem, matching the source's
+`0 ≤ r ≤ k` range: `Finset.Iic k` with source-order predicates. -/
 theorem alderTotientTwo_succ_Iic_apply (k : ℕ) :
     alderTotientTwo (k + 1) =
       ((Finset.Iic k).filter fun r =>
@@ -77,9 +76,7 @@ theorem alderTotientTwo_zero : alderTotientTwo 0 = 0 :=
 theorem alderTotientTwo_one : alderTotientTwo 1 = 1 :=
   rfl
 
-/-- **Alder's totient with second argument $2$ is at most Euler's totient.** For every natural
-number $k$, Alder's totient $g(k)$ with second argument $2$ is at most Euler's totient
-$\varphi(k)$. -/
+/-- Alder's totient is bounded by Euler's totient, by inclusion of filters. -/
 theorem alderTotientTwo_le_totient (k : ℕ) :
     alderTotientTwo k ≤ Nat.totient k := by
   rw [alderTotientTwo_apply, Nat.totient_eq_card_coprime k]

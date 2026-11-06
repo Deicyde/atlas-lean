@@ -55,7 +55,7 @@ open scoped Nat
 
 namespace ProbabilityTheory
 
-/-- **Monotone likelihood ratio.** The likelihood family `L : ℕ → ℝ → ℝ` (observation, parameter) has a **monotone
+/-- The likelihood family `L : ℕ → ℝ → ℝ` (observation, parameter) has a **monotone
 likelihood ratio** on the parameter set `S`: `L` is nonnegative on `S`, and for
 observations `n ≤ m` and parameters `θ ≤ θ'` in `S`,
 `L m θ * L n θ' ≤ L n θ * L m θ'` (total positivity of order two). For positive
@@ -67,7 +67,7 @@ def HasMonotoneLikelihoodRatioOn (L : ℕ → ℝ → ℝ) (S : Set ℝ) : Prop 
     ∀ ⦃n m : ℕ⦄, n ≤ m → ∀ ⦃θ θ' : ℝ⦄, θ ∈ S → θ' ∈ S → θ ≤ θ' →
       L m θ * L n θ' ≤ L n θ * L m θ'
 
-/-- **Antitone likelihood ratio.** The likelihood family has an **antitone likelihood ratio** on `S`: `L` is nonnegative
+/-- The likelihood family has an **antitone likelihood ratio** on `S`: `L` is nonnegative
 on `S`, and for `n ≤ m` and `θ ≤ θ'` in `S`, `L n θ * L m θ' ≤ L m θ * L n θ'`.
 For positive likelihoods this says `θ ↦ L m θ / L n θ` is nonincreasing (larger counts
 favor smaller parameters). -/
@@ -137,7 +137,7 @@ theorem setIntegral_Ioi_mul_integral_le_of_hasAntitoneLR {μ : Measure ℝ}
   rw [hsplit m, hsplit n]
   nlinarith [hint2]
 
-/-- **Posterior tail probability.** Posterior probability of `{θ > t}` after observing `n`, by Bayes' formula for the prior
+/-- Posterior probability of `{θ > t}` after observing `n`, by Bayes' formula for the prior
 `μ` and likelihood `L`: `(∫_{θ > t} L n θ dμ) / ∫ L n θ dμ`. Meaningful when the marginal
 likelihood `∫ L n dμ` is positive (otherwise the division returns the junk value `0`), and a
 genuine posterior probability only when `L` is nonnegative (as in the MLR predicates:
@@ -169,12 +169,12 @@ theorem posteriorTail_anti_of_hasAntitoneLR {μ : Measure ℝ}
   rw [div_le_div_iff₀ hm hn]
   exact setIntegral_Ioi_mul_integral_le_of_hasAntitoneLR hμS hL hint hnm t
 
-/-- **Poisson likelihood.** Poisson likelihood with parameter-dependent mean `λ θ`:
+/-- Poisson likelihood with parameter-dependent mean `λ θ`:
 `L n θ = e^{-λ θ} λ θ ^ n / (n !)`. -/
 noncomputable def poissonLik (lam : ℝ → ℝ) (n : ℕ) (θ : ℝ) : ℝ :=
   exp (-lam θ) * lam θ ^ n / n !
 
-/-- **Poisson family with monotone mean has monotone likelihood ratio.** A Poisson family whose mean is nonnegative and monotone on `S` has a monotone likelihood
+/-- A Poisson family whose mean is nonnegative and monotone on `S` has a monotone likelihood
 ratio on `S`. -/
 theorem poissonLik_hasMLR {lam : ℝ → ℝ} {S : Set ℝ} (hmono : MonotoneOn lam S)
     (hnn : ∀ θ ∈ S, 0 ≤ lam θ) : HasMonotoneLikelihoodRatioOn (poissonLik lam) S := by
@@ -199,7 +199,7 @@ theorem poissonLik_hasMLR {lam : ℝ → ℝ} {S : Set ℝ} (hmono : MonotoneOn 
         mul_le_mul_of_nonneg_left key (by positivity)
     _ = exp (-lam θ) * lam θ ^ n / n ! * (exp (-lam θ') * lam θ' ^ m / m !) := by ring
 
-/-- **Poisson family with antitone mean has antitone likelihood ratio.** A Poisson family whose mean is nonnegative and antitone on `S` has an antitone likelihood
+/-- A Poisson family whose mean is nonnegative and antitone on `S` has an antitone likelihood
 ratio on `S`. -/
 theorem poissonLik_hasAntitoneLR {lam : ℝ → ℝ} {S : Set ℝ} (hanti : AntitoneOn lam S)
     (hnn : ∀ θ ∈ S, 0 ≤ lam θ) : HasAntitoneLikelihoodRatioOn (poissonLik lam) S := by
@@ -224,12 +224,12 @@ theorem poissonLik_hasAntitoneLR {lam : ℝ → ℝ} {S : Set ℝ} (hanti : Anti
         mul_le_mul_of_nonneg_left key (by positivity)
     _ = exp (-lam θ) * lam θ ^ m / m ! * (exp (-lam θ') * lam θ' ^ n / n !) := by ring
 
-/-- **Binomial likelihood.** Binomial likelihood with `N` trials and parameter-dependent success probability `p θ`:
+/-- Binomial likelihood with `N` trials and parameter-dependent success probability `p θ`:
 `L n θ = C(N, n) p θ ^ n (1 - p θ) ^ (N - n)` (zero for `n > N`, since `C(N, n) = 0`). -/
 noncomputable def binomialLik (N : ℕ) (p : ℝ → ℝ) (n : ℕ) (θ : ℝ) : ℝ :=
   (N.choose n : ℝ) * p θ ^ n * (1 - p θ) ^ (N - n)
 
-/-- **Binomial family has monotone likelihood ratio.** A binomial family whose success probability lies in `[0, 1]` and is monotone on `S` has a
+/-- A binomial family whose success probability lies in `[0, 1]` and is monotone on `S` has a
 monotone likelihood ratio on `S`. -/
 theorem binomialLik_hasMLR {N : ℕ} {p : ℝ → ℝ} {S : Set ℝ} (hmono : MonotoneOn p S)
     (hp : ∀ θ ∈ S, p θ ∈ Icc (0 : ℝ) 1) : HasMonotoneLikelihoodRatioOn (binomialLik N p) S := by

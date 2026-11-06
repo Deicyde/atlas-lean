@@ -49,25 +49,25 @@ open MeasureTheory ProbabilityTheory
 
 variable {m : ℕ}
 
-/-- **Benjamini–Hochberg step-up index.** The Benjamini–Hochberg step-up index: the largest `k ∈ {0, …, m}` such that at least `k`
+/-- The Benjamini–Hochberg step-up index: the largest `k ∈ {0, …, m}` such that at least `k`
 p-values are at most `q k / m` (`k = 0` always qualifies). -/
 noncomputable def bhIndex (q : ℝ) (p : Fin m → ℝ) : ℕ :=
   ((Finset.range (m + 1)).filter fun k : ℕ => k ≤ numBelow p (q * (k : ℝ) / m)).max'
     ⟨0, by simp⟩
 
-/-- **Benjamini–Hochberg rejection set.** The hypotheses rejected by the Benjamini–Hochberg procedure at level `q`: those whose
+/-- The hypotheses rejected by the Benjamini–Hochberg procedure at level `q`: those whose
 p-value is at most `q * bhIndex q p / m`. -/
 noncomputable def bhRejections (q : ℝ) (p : Fin m → ℝ) : Finset (Fin m) :=
   Finset.univ.filter fun i => p i ≤ q * bhIndex q p / m
 
-/-- **Benjamini–Hochberg index is at most the number of hypotheses.** The BH step-up index is at most `m`. -/
+/-- The BH step-up index is at most `m`. -/
 theorem bhIndex_le (q : ℝ) (p : Fin m → ℝ) : bhIndex q p ≤ m := by
   have h := Finset.max'_mem ((Finset.range (m + 1)).filter fun k : ℕ =>
     k ≤ numBelow p (q * (k : ℝ) / m)) ⟨0, by simp⟩
   simp only [Finset.mem_filter, Finset.mem_range] at h
   exact Nat.lt_succ_iff.1 h.1
 
-/-- **Benjamini–Hochberg index satisfies the step-up condition.** At the BH step-up index `k`, at least `k` p-values are at most `q k / m`. -/
+/-- At the BH step-up index `k`, at least `k` p-values are at most `q k / m`. -/
 theorem bhIndex_le_numBelow (q : ℝ) (p : Fin m → ℝ) :
     bhIndex q p ≤ numBelow p (q * bhIndex q p / m) := by
   have h := Finset.max'_mem ((Finset.range (m + 1)).filter fun k : ℕ =>
@@ -75,12 +75,12 @@ theorem bhIndex_le_numBelow (q : ℝ) (p : Fin m → ℝ) :
   simp only [Finset.mem_filter] at h
   exact h.2
 
-/-- **Maximality of the Benjamini–Hochberg index.** The BH step-up index is the largest `k ≤ m` with at least `k` p-values at most `q k / m`. -/
+/-- The BH step-up index is the largest `k ≤ m` with at least `k` p-values at most `q k / m`. -/
 theorem le_bhIndex {q : ℝ} {p : Fin m → ℝ} {k : ℕ} (hk : k ≤ m)
     (h : k ≤ numBelow p (q * k / m)) : k ≤ bhIndex q p :=
   Finset.le_max' _ k (by simpa [Nat.lt_succ_iff] using ⟨hk, h⟩)
 
-/-- **Number of Benjamini–Hochberg rejections.** The BH procedure at level `q ≥ 0` rejects exactly `bhIndex q p` hypotheses. -/
+/-- The BH procedure at level `q ≥ 0` rejects exactly `bhIndex q p` hypotheses. -/
 theorem card_bhRejections {q : ℝ} (hq : 0 ≤ q) (p : Fin m → ℝ) :
     (bhRejections q p).card = bhIndex q p := by
   change numBelow p (q * bhIndex q p / m) = bhIndex q p

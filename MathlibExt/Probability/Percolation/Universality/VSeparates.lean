@@ -42,7 +42,7 @@ namespace Universality
 open StatMech.Lattice
 open StatMech.RSW.Box
 
-/-- **Projection of an induced open subgraph to the lattice.** The graph homomorphism from the open subgraph induced on `R` to the lattice `ℤ²`
+/-- The graph homomorphism from the open subgraph induced on `R` to the lattice `ℤ²`
 (forgetting `R`). -/
 def projHom (ω : ConfigSpace (Sym2 (Site 2))) (R : Set (Site 2)) :
     (openSubgraphInduce 2 ω R) →g (hypercubicLattice 2) where
@@ -52,7 +52,7 @@ def projHom (ω : ConfigSpace (Sym2 (Site 2))) (R : Set (Site 2)) :
     simp only [openSubgraphInduce_adj] at hab
     exact openSubgraph_le ω hab
 
-/-- **Walk in an induced open subgraph as a lattice walk.** A walk in the open subgraph induced on `R`, mapped to a walk in the lattice `ℤ²`. -/
+/-- A walk in the open subgraph induced on `R`, mapped to a walk in the lattice `ℤ²`. -/
 def liftWalk (ω : ConfigSpace (Sym2 (Site 2))) (R : Set (Site 2)) {x y : R}
     (w : (openSubgraphInduce 2 ω R).Walk x y) :
     (hypercubicLattice 2).Walk (x : Site 2) (y : Site 2) :=
@@ -66,7 +66,7 @@ theorem liftWalk_support_mem (ω : ConfigSpace (Sym2 (Site 2))) (R : Set (Site 2
   obtain ⟨z', hz'_mem, hz'_eq⟩ := (List.mem_map).mp (hsupp ▸ hz)
   exact ⟨z', hz'_mem, hz'_eq⟩
 
-/-- **Half-plane left of a column.** The half-plane `{z ∈ ℤ² : z_0 ≤ k}`. -/
+/-- The half-plane `{z ∈ ℤ² : z_0 ≤ k}`. -/
 def colLeq (k : ℤ) : Set (Site 2) := {z | z 0 ≤ k}
 
 @[simp] theorem mem_colLeq (k : ℤ) (z : Site 2) : z ∈ colLeq k ↔ z 0 ≤ k := Iff.rfl

@@ -62,16 +62,7 @@ private lemma first_write_keeps_x {α : Type u} {n : Nat}
     simp only [ite_true]
   · simpa only [hpx, ite_false] using hx
 
-/-- **Deletion from a circular list with a sentinel.** Let $S$ be a node store with $c$ cells,
-each either empty or holding a node (a payload, an optional next address and an optional
-previous address in $\{0, \dots, c-1\}$). Let $x$ be an address whose cell holds a node $\nu$
-with previous address $p$ and next address $n$, where the cells at $p$ and $n$ are nonempty.
-Sentinel deletion of $x$ from $S$ is the timed computation that first sets the next address of
-the node at $p$ to $n$, at cost $1$, then sets the previous address of the node at $n$ in the
-resulting store to $p$, at cost $1$, and returns the store obtained.
-
-These dereferences are its only preconditions: it does not check that $x$ is not the sentinel
-or that $x$ lies on a represented list. -/
+/-- Both sentinel deletion assignments, with dereference validity only. -/
 public def sentinelDelete {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity) (x : Fin capacity)
     (hx : (store.get x).isSome)
@@ -113,12 +104,7 @@ public def sentinelDelete {α : Type u} {capacity : Nat}
   TimeM.tick 1
   pure (store1.set n.val (some { currentN with prev := currentX.prev }) n.isLt)
 
-/-- **Sentinel deletion takes two pointer assignments.** Let $S$ be a node store and $x$ an
-address whose cell holds a node with previous address $p$ and next address $n$, where the cells
-at $p$ and $n$ are nonempty. Then sentinel deletion of $x$ from $S$ has cost exactly $2$, one
-for each pointer assignment.
-
-This includes the alias cases in which $p$, $n$ and $x$ are not pairwise distinct. -/
+/-- Exactly two pointer assignments, including access-valid alias cases. -/
 public theorem sentinelDelete_time {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity) (x : Fin capacity)
     (hx : (store.get x).isSome)
@@ -129,11 +115,7 @@ public theorem sentinelDelete_time {α : Type u} {capacity : Nat}
     (sentinelDelete store x hx hp hn hprev hnext).time = 2 := by
   simp [sentinelDelete]
 
-/-- **The store returned by sentinel deletion.** Let $S$ be a node store and $x$ an address
-whose cell holds a node with previous address $p$ and next address $n$, where the cells at $p$
-and $n$ are nonempty. Let $S_1$ be $S$ with the node at $p$ replaced by a copy whose next
-address is $n$. Then sentinel deletion of $x$ from $S$ returns $S_1$ with the node of $S_1$ at
-$n$ replaced by a copy whose previous address is $p$. -/
+/-- The two carried record updates determine the complete returned store. -/
 public theorem sentinelDelete_ret {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity) (x : Fin capacity)
     (hx : (store.get x).isSome)
@@ -213,11 +195,7 @@ variable {α : Type u} {capacity : Nat}
   (hprev : ∀ p, ((store.get x).get hx).prev = some p → (store.get p).isSome)
   (hnext : ∀ n, ((store.get x).get hx).next = some n → (store.get n).isSome)
 
-/-- **Cells after sentinel deletion.** Let $S$ be a node store and $x$ an address whose cell
-holds a node with previous address $p$ and next address $n$, where the cells at $p$ and $n$ are
-nonempty. For every address $z$, let $C$ be the cell of $S$ at $z$ if $z \ne p$, and that cell
-with its next address set to $n$ if $z = p$. Then after sentinel deletion of $x$ from $S$ the
-cell at $z$ is $C$ if $z \ne n$, and $C$ with its previous address set to $p$ if $z = n$. -/
+/-- Every returned cell follows the predecessor write and then the carried successor write. -/
 public theorem sentinelDelete_get (z : Fin capacity) :
     (sentinelDelete store x hx hp hn hprev hnext).ret.get z =
       let nx := (store.get x).get hx
@@ -228,10 +206,7 @@ public theorem sentinelDelete_get (z : Fin capacity) :
   rw [sentinelDelete_ret_eq_listDelete]
   exact listDelete_get store none x hx hprev hnext z
 
-/-- **Sentinel deletion changes only the two neighbours.** Let $S$ be a node store and $x$ an
-address whose cell holds a node with previous address $p$ and next address $n$, where the cells
-at $p$ and $n$ are nonempty. For every address $z$ with $z \ne p$ and $z \ne n$, the cell at $z$
-after sentinel deletion of $x$ from $S$ equals the cell of $S$ at $z$. -/
+/-- Every complete cell outside the two updated neighbors is unchanged. -/
 public theorem sentinelDelete_frame (z : Fin capacity)
     (hzp : ((store.get x).get hx).prev ≠ some z)
     (hzn : ((store.get x).get hx).next ≠ some z) :
@@ -239,32 +214,21 @@ public theorem sentinelDelete_frame (z : Fin capacity)
   rw [sentinelDelete_ret_eq_listDelete]
   exact listDelete_frame store none x hx hprev hnext z hzp hzn
 
-/-- **Sentinel deletion preserves allocation.** Let $S$ be a node store and $x$ an address whose
-cell holds a node with previous address $p$ and next address $n$, where the cells at $p$ and $n$
-are nonempty. For every address $z$, the cell at $z$ after sentinel deletion of $x$ from $S$ is
-nonempty if and only if the cell of $S$ at $z$ is nonempty. -/
+/-- Both writes preserve the allocation status at every address. -/
 public theorem sentinelDelete_allocated (z : Fin capacity) :
     ((sentinelDelete store x hx hp hn hprev hnext).ret.get z).isSome =
       (store.get z).isSome := by
   rw [sentinelDelete_ret_eq_listDelete]
   exact listDelete_allocated store none x hx hprev hnext z
 
-/-- **Sentinel deletion preserves payloads.** Let $S$ be a node store and $x$ an address whose
-cell holds a node with previous address $p$ and next address $n$, where the cells at $p$ and $n$
-are nonempty. For every address $z$, the cell at $z$ after sentinel deletion of $x$ from $S$
-and the cell of $S$ at $z$ are either both empty or both hold nodes with the same payload.
-
-The payload includes any key and satellite data. -/
+/-- Every payload, including keys and satellite data, is preserved. -/
 public theorem sentinelDelete_payload (z : Fin capacity) :
     ((sentinelDelete store x hx hp hn hprev hnext).ret.get z).map Node.payload =
       (store.get z).map Node.payload := by
   rw [sentinelDelete_ret_eq_listDelete]
   exact listDelete_payload store none x hx hprev hnext z
 
-/-- **Sentinel deletion keeps the deleted node.** Let $S$ be a node store and $x$ an address
-whose cell holds a node with previous address $p$ and next address $n$, where the cells at $p$
-and $n$ are nonempty. The cell at $x$ after sentinel deletion of $x$ from $S$ equals the cell of
-$S$ at $x$, so the deleted node stays allocated and unchanged. -/
+/-- Unlinking retains the complete selected record. -/
 public theorem sentinelDelete_deleted_record :
     (sentinelDelete store x hx hp hn hprev hnext).ret.get x = store.get x := by
   rw [sentinelDelete_ret_eq_listDelete]
@@ -535,12 +499,7 @@ private lemma edge_transport {α : Type u} {capacity : Nat}
     · rw [returned_prev store x hx hp hn hprev hnext n]
       simp only [hpv, hnv, ite_true, hgetn, Option.map_some]
 
-/-- **Sentinel deletion removes a node from its circular list.** Let $S$ be a node store and $x$
-an address whose cell holds a node with previous address $p$ and next address $n$, where the
-cells at $p$ and $n$ are nonempty. If $S$ represents a circular doubly linked list with sentinel
-$s$ and data addresses $\ell$, and $x$ occurs in $\ell$, then the store returned by sentinel
-deletion of $x$ from $S$ represents a circular doubly linked list with sentinel $s$ and the
-list of data addresses obtained from $\ell$ by removing the first occurrence of $x$. -/
+/-- Deleting a data identity preserves the circle with exactly that identity erased. -/
 public theorem sentinelDelete_circular {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity) (x : Fin capacity)
     (hx : (store.get x).isSome)
@@ -574,13 +533,7 @@ public theorem sentinelDelete_circular {α : Type u} {capacity : Nat}
   refine ⟨rep.1.erase x, fun hm => rep.2.1 (List.erase_subset hm), ?_⟩
   simpa only [eraseEq, List.cons_append, List.append_assoc] using new
 
-/-- **Sentinel deletion preserves disjoint circular lists.** Let $S$ be a node store and $x$ an
-address whose cell holds a node with previous address $p$ and next address $n$, where the cells
-at $p$ and $n$ are nonempty. Suppose $S$ represents a circular doubly linked list with sentinel
-$s$ and data addresses $\ell$, with $x$ in $\ell$, and also one with sentinel $t$ and data
-addresses $m$, such that no address occurs both among $s$ and $\ell$ and among $t$ and $m$.
-Then the store returned by sentinel deletion of $x$ from $S$ still represents the circular
-doubly linked list with sentinel $t$ and data addresses $m$. -/
+/-- Deletion preserves any disjoint represented circle, including its sentinel. -/
 public theorem sentinelDelete_disjoint_circular {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity) (x : Fin capacity)
     (hx : (store.get x).isSome)

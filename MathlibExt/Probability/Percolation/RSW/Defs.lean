@@ -61,7 +61,7 @@ namespace Box
 open StatMech.Lattice
 open StatMech.TwoDim
 
-/-- **Integer rectangle in the plane lattice.** The rectangle `[a, b] × [c, d]` in `ℤ²`. -/
+/-- The rectangle `[a, b] × [c, d]` in `ℤ²`. -/
 def rect (a b c d : ℤ) : Set (Site 2) :=
   {x | a ≤ x 0 ∧ x 0 ≤ b ∧ c ≤ x 1 ∧ x 1 ≤ d}
 
@@ -135,7 +135,7 @@ private lemma connectedWithin_iff_chain {d : ℕ} (ω : ConfigSpace (Sym2 (Site 
   · rintro ⟨l, hchain, hlast⟩
     exact List.relationReflTransGen_of_exists_isChain_cons l hchain hlast
 
-/-- **Measurability of connection inside a set.** The event that two vertices are connected by an open path inside `S` is measurable. -/
+/-- The event that two vertices are connected by an open path inside `S` is measurable. -/
 theorem measurableSet_connectedWithin {d : ℕ} (S : Set (Site d)) (x y : S) :
     MeasurableSet {ω : ConfigSpace (Sym2 (Site d)) | ConnectedWithin d ω S x y} := by
   classical
@@ -164,16 +164,16 @@ theorem measurableSet_connectedWithin {d : ℕ} (S : Set (Site d)) (x y : S) :
   · rw [ite_eq_right h]
     exact MeasurableSet.empty
 
-/-- **Left side of a general lattice rectangle.** The left side `{a} × [c, d]` of `rect a b c d`. -/
+/-- The left side `{a} × [c, d]` of `rect a b c d`. -/
 def leftSide (a b c d : ℤ) : Set (Site 2) := {x | x ∈ rect a b c d ∧ x 0 = a}
 
-/-- **Right side of a general lattice rectangle.** The right side `{b} × [c, d]` of `rect a b c d`. -/
+/-- The right side `{b} × [c, d]` of `rect a b c d`. -/
 def rightSide (a b c d : ℤ) : Set (Site 2) := {x | x ∈ rect a b c d ∧ x 0 = b}
 
-/-- **Bottom side of a general lattice rectangle.** The bottom side `[a, b] × {c}` of `rect a b c d`. -/
+/-- The bottom side `[a, b] × {c}` of `rect a b c d`. -/
 def bottomSide (a b c d : ℤ) : Set (Site 2) := {x | x ∈ rect a b c d ∧ x 1 = c}
 
-/-- **Top side of a general lattice rectangle.** The top side `[a, b] × {d}` of `rect a b c d`. -/
+/-- The top side `[a, b] × {d}` of `rect a b c d`. -/
 def topSide (a b c d : ℤ) : Set (Site 2) := {x | x ∈ rect a b c d ∧ x 1 = d}
 
 @[simp] theorem mem_leftSide {a b c d : ℤ} {x : Site 2} :
@@ -190,23 +190,23 @@ theorem rightSide_subset {a b c d : ℤ} : rightSide a b c d ⊆ rect a b c d :=
 theorem bottomSide_subset {a b c d : ℤ} : bottomSide a b c d ⊆ rect a b c d := fun _ hx => hx.1
 theorem topSide_subset {a b c d : ℤ} : topSide a b c d ⊆ rect a b c d := fun _ hx => hx.1
 
-/-- **Open left–right crossing of a general rectangle.** An open left–right crossing of `rect a b c d` by a path inside the rectangle. -/
+/-- An open left–right crossing of `rect a b c d` by a path inside the rectangle. -/
 def HorizontalCrossing (ω : ConfigSpace (Sym2 (Site 2))) (a b c d : ℤ) : Prop :=
   ∃ (x : leftSide a b c d) (y : rightSide a b c d),
     ConnectedWithin 2 ω (rect a b c d)
       ⟨(x : Site 2), leftSide_subset x.2⟩ ⟨(y : Site 2), rightSide_subset y.2⟩
 
-/-- **Open bottom–top crossing of a general rectangle.** An open bottom–top crossing of `rect a b c d` by a path inside the rectangle. -/
+/-- An open bottom–top crossing of `rect a b c d` by a path inside the rectangle. -/
 def VerticalCrossing (ω : ConfigSpace (Sym2 (Site 2))) (a b c d : ℤ) : Prop :=
   ∃ (x : bottomSide a b c d) (y : topSide a b c d),
     ConnectedWithin 2 ω (rect a b c d)
       ⟨(x : Site 2), bottomSide_subset x.2⟩ ⟨(y : Site 2), topSide_subset y.2⟩
 
-/-- **Left–right crossing event of a general rectangle.** The event that `rect a b c d` has an open left–right crossing. -/
+/-- The event that `rect a b c d` has an open left–right crossing. -/
 def horizontalCrossingEvent (a b c d : ℤ) : Set (ConfigSpace (Sym2 (Site 2))) :=
   {ω | HorizontalCrossing ω a b c d}
 
-/-- **Bottom–top crossing event of a general rectangle.** The event that `rect a b c d` has an open bottom–top crossing. -/
+/-- The event that `rect a b c d` has an open bottom–top crossing. -/
 def verticalCrossingEvent (a b c d : ℤ) : Set (ConfigSpace (Sym2 (Site 2))) :=
   {ω | VerticalCrossing ω a b c d}
 
@@ -217,7 +217,7 @@ def verticalCrossingEvent (a b c d : ℤ) : Set (ConfigSpace (Sym2 (Site 2))) :=
     {ω : ConfigSpace (Sym2 (Site 2))} :
     ω ∈ verticalCrossingEvent a b c d ↔ VerticalCrossing ω a b c d := Iff.rfl
 
-/-- **Measurability of the left–right crossing event.** A left–right crossing event of a rectangle is measurable. -/
+/-- A left–right crossing event of a rectangle is measurable. -/
 theorem measurableSet_horizontalCrossingEvent (a b c d : ℤ) :
     MeasurableSet (horizontalCrossingEvent a b c d) := by
   have heq : horizontalCrossingEvent a b c d =
@@ -231,7 +231,7 @@ theorem measurableSet_horizontalCrossingEvent (a b c d : ℤ) :
     measurableSet_connectedWithin _
       ⟨(x : Site 2), leftSide_subset x.2⟩ ⟨(y : Site 2), rightSide_subset y.2⟩
 
-/-- **Measurability of the bottom–top crossing event.** A bottom–top crossing event of a rectangle is measurable. -/
+/-- A bottom–top crossing event of a rectangle is measurable. -/
 theorem measurableSet_verticalCrossingEvent (a b c d : ℤ) :
     MeasurableSet (verticalCrossingEvent a b c d) := by
   have heq : verticalCrossingEvent a b c d =
@@ -275,20 +275,20 @@ theorem horizontalCrossing_eq_twoDim (ω : ConfigSpace (Sym2 (Site 2))) (a b : �
     HorizontalCrossing ω 0 a 0 b ↔ TwoDim.HorizontalCrossing ω a b :=
   Iff.rfl
 
-/-- **Dual left–right crossing of a rectangle.** A left–right crossing of `rect a b c d` in the dual configuration `dualConfig ω` (an open
+/-- A left–right crossing of `rect a b c d` in the dual configuration `dualConfig ω` (an open
 crossing of the dual lattice, read through the primal coordinates of `dualConfig`). -/
 def DualHorizontalCrossing (ω : ConfigSpace (Sym2 (Site 2))) (a b c d : ℤ) : Prop :=
   HorizontalCrossing (dualConfig ω) a b c d
 
-/-- **Dual bottom–top crossing of a rectangle.** A bottom–top crossing of `rect a b c d` in the dual configuration `dualConfig ω`. -/
+/-- A bottom–top crossing of `rect a b c d` in the dual configuration `dualConfig ω`. -/
 def DualVerticalCrossing (ω : ConfigSpace (Sym2 (Site 2))) (a b c d : ℤ) : Prop :=
   VerticalCrossing (dualConfig ω) a b c d
 
-/-- **Dual left–right crossing event.** The event `DualHorizontalCrossing`. -/
+/-- The event `DualHorizontalCrossing`. -/
 def dualHorizontalCrossingEvent (a b c d : ℤ) : Set (ConfigSpace (Sym2 (Site 2))) :=
   {ω | DualHorizontalCrossing ω a b c d}
 
-/-- **Dual bottom–top crossing event.** The event `DualVerticalCrossing`. -/
+/-- The event `DualVerticalCrossing`. -/
 def dualVerticalCrossingEvent (a b c d : ℤ) : Set (ConfigSpace (Sym2 (Site 2))) :=
   {ω | DualVerticalCrossing ω a b c d}
 
@@ -317,7 +317,7 @@ theorem dualVerticalCrossingEvent_increasing {a b c d : ℤ}
     ω' ∈ dualVerticalCrossingEvent a b c d :=
   verticalCrossingEvent_increasing h hω
 
-/-- **Square annulus in the plane lattice.** The annulus `z + (Λ_{2n} \ Λ_n)`, where `Λ_n = [-n, n]²`. -/
+/-- The annulus `z + (Λ_{2n} \ Λ_n)`, where `Λ_n = [-n, n]²`. -/
 def annulus (z : Site 2) (n : ℕ) : Set (Site 2) :=
   (fun x => z + x) '' (box 2 (2 * n) \ box 2 n)
 
@@ -333,16 +333,16 @@ theorem annulus_subset_outer (z : Site 2) (n : ℕ) :
     annulus z n ⊆ (fun x => z + x) '' box 2 (2 * n) :=
   Set.image_mono Set.sdiff_subset
 
-/-- **Open circuit lying in an annulus.** The closed walk `w` is an open circuit all of whose vertices lie in `annulus z n`. -/
+/-- The closed walk `w` is an open circuit all of whose vertices lie in `annulus z n`. -/
 def IsAnnulusCircuit (ω : ConfigSpace (Sym2 (Site 2))) (z : Site 2) (n : ℕ)
     {v : Site 2} (w : (openSubgraph 2 ω).Walk v v) : Prop :=
   IsOpenCircuit 2 ω w ∧ ∀ u ∈ w.support, u ∈ annulus z n
 
-/-- **Existence of an open circuit in an annulus.** There is an open circuit inside `annulus z n`. -/
+/-- There is an open circuit inside `annulus z n`. -/
 def AnnulusCircuit (ω : ConfigSpace (Sym2 (Site 2))) (z : Site 2) (n : ℕ) : Prop :=
   ∃ (v : Site 2) (w : (openSubgraph 2 ω).Walk v v), IsAnnulusCircuit ω z n w
 
-/-- **Open circuit event in an annulus.** The event `AnnulusCircuit`. -/
+/-- The event `AnnulusCircuit`. -/
 def annulusCircuitEvent (z : Site 2) (n : ℕ) : Set (ConfigSpace (Sym2 (Site 2))) :=
   {ω | AnnulusCircuit ω z n}
 
@@ -350,21 +350,21 @@ def annulusCircuitEvent (z : Site 2) (n : ℕ) : Set (ConfigSpace (Sym2 (Site 2)
     {ω : ConfigSpace (Sym2 (Site 2))} :
     ω ∈ annulusCircuitEvent z n ↔ AnnulusCircuit ω z n := Iff.rfl
 
-/-- **Open circuit in an annulus centered at the origin.** There is an open circuit inside the annulus `Λ_{2n} \ Λ_n` centered at the origin. -/
+/-- There is an open circuit inside the annulus `Λ_{2n} \ Λ_n` centered at the origin. -/
 def AnnulusCircuit0 (ω : ConfigSpace (Sym2 (Site 2))) (n : ℕ) : Prop :=
   AnnulusCircuit ω (fun _ => 0) n
 
-/-- **Left–right crossing event of a box with given aspect ratio.** The left–right open crossing of the box `[0, ⌊αn⌋] × [0, n]` (aspect ratio `α`). -/
+/-- The left–right open crossing of the box `[0, ⌊αn⌋] × [0, n]` (aspect ratio `α`). -/
 noncomputable def boxCrossingEvent (α : ℝ) (n : ℕ) :
     Set (ConfigSpace (Sym2 (Site 2))) :=
   horizontalCrossingEvent 0 (⌊α * n⌋.toNat) 0 n
 
-/-- **Box-crossing property for a sequence of measures.** The box-crossing property for a sequence of set functions `μ n`: for every aspect ratio
+/-- The box-crossing property for a sequence of set functions `μ n`: for every aspect ratio
 `α > 0` there is `c > 0` with `μ n (boxCrossingEvent α n) ≥ c` for all `n`. -/
 def P5 (μ : ℕ → Set (ConfigSpace (Sym2 (Site 2))) → ℝ) : Prop :=
   ∀ α : ℝ, 0 < α → ∃ c : ℝ, 0 < c ∧ ∀ n : ℕ, c ≤ μ n (boxCrossingEvent α n)
 
-/-- **Uniform two-sided box-crossing property.** The uniform two-sided box-crossing property for a family `μ ξ n`: for every `α > 0` there is
+/-- The uniform two-sided box-crossing property for a family `μ ξ n`: for every `α > 0` there is
 `c > 0` with `c ≤ μ ξ n (boxCrossingEvent α n) ≤ 1 - c` for all `ξ` and `n`. -/
 def P5c {Ξ : Type*} (μ : Ξ → ℕ → Set (ConfigSpace (Sym2 (Site 2))) → ℝ) : Prop :=
   ∀ α : ℝ, 0 < α → ∃ c : ℝ, 0 < c ∧ ∀ (ξ : Ξ) (n : ℕ),

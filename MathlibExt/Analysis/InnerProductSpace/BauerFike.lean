@@ -160,7 +160,7 @@ private lemma isStarNormal_ringInverse_sub {A : H →L[ℂ] H} [IsStarNormal A] 
   exact inferInstance
 
 set_option linter.style.haveILetI false in
-/-- **Resolvent norm bound for a normal operator.** The resolvent norm bound for a normal operator: if `z` lies outside the
+/-- The resolvent norm bound for a normal operator: if `z` lies outside the
 spectrum of a normal `A`, then `‖(z • 1 - A)⁻¹‖ ≤ 1 / dist z (spectrum ℂ A)`. -/
 theorem norm_ringInverse_sub_smul_one_le {A : H →L[ℂ] H} [IsStarNormal A] {z : ℂ}
     (hz : z ∉ spectrum ℂ A) :
@@ -203,7 +203,7 @@ theorem norm_ringInverse_sub_smul_one_le {A : H →L[ℂ] H} [IsStarNormal A] {z
     exact hle
   exact hle'
 
-/-- **Bauer–Fike theorem.** The Bauer–Fike theorem: every point of the spectrum of `A + E` lies
+/-- The Bauer–Fike theorem: every point of the spectrum of `A + E` lies
 within `‖E‖` of the spectrum of a normal operator `A`. -/
 theorem infDist_le_norm_of_mem_spectrum_add {A E : H →L[ℂ] H} [IsStarNormal A]
     {μ : ℂ} (hμ : μ ∈ spectrum ℂ (A + E)) :
@@ -254,7 +254,7 @@ theorem infDist_le_norm_of_mem_spectrum_add {A E : H →L[ℂ] H} [IsStarNormal 
     exact hunitB.mul hunit1
   exact (spectrum.mem_iff.mp hμ) hunit
 
-/-- **Attained form of the Bauer–Fike theorem.** The attained form of Bauer–Fike: some eigenvalue-like point of the
+/-- The attained form of Bauer–Fike: some eigenvalue-like point of the
 spectrum of `A` is within `‖E‖` of `μ`. -/
 theorem exists_mem_spectrum_norm_sub_le {A E : H →L[ℂ] H} [IsStarNormal A]
     {μ : ℂ} (hμ : μ ∈ spectrum ℂ (A + E)) :
@@ -267,7 +267,7 @@ theorem exists_mem_spectrum_norm_sub_le {A E : H →L[ℂ] H} [IsStarNormal A]
   exact hbound
 
 set_option linter.style.haveILetI false in
-/-- **Hausdorff distance between spectra of self-adjoint perturbations.** For self-adjoint `A` and `A + E`, the Hausdorff distance of the two
+/-- For self-adjoint `A` and `A + E`, the Hausdorff distance of the two
 spectra is at most `‖E‖`. -/
 theorem hausdorffDist_spectrum_le_of_isSelfAdjoint {A E : H →L[ℂ] H}
     (hA : IsSelfAdjoint A) (hAE : IsSelfAdjoint (A + E)) :

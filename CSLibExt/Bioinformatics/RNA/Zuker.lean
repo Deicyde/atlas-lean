@@ -91,7 +91,7 @@ open Cslib.Bioinformatics.RNA.Nussinov Cslib.Bioinformatics.RNA.PartitionFunctio
 
 variable {B : Type*} (pair : B → B → Prop) (m : ℕ) (s : List B)
 
-/-- **Nearest-neighbor loop energy model.** A loop (nearest-neighbor) energy model: energies of hairpin loops closed by `(i, j)`, of
+/-- A loop (nearest-neighbor) energy model: energies of hairpin loops closed by `(i, j)`, of
 stacks, bulges and interior loops closed by `(i, j)` with inner pair `(k, l)`, and the affine
 multiloop parameters `a` (per multiloop), `b` (per branch) and `c` (per unpaired base). The
 exterior loop has energy `0`. Units: free energy, e.g. kcal/mol. -/
@@ -107,7 +107,7 @@ structure LoopEnergy where
   /-- Multiloop energy per unpaired base `c`. -/
   multiC : ℝ
 
-/-- **Strict enclosure of one base pair by another.** `q` lies strictly inside the pair `p`: `p.1 < q.1` and `q.2 < p.2`. -/
+/-- `q` lies strictly inside the pair `p`: `p.1 < q.1` and `q.2 < p.2`. -/
 def Encloses (p q : ℕ × ℕ) : Prop :=
   p.1 < q.1 ∧ q.2 < p.2
 
@@ -115,12 +115,12 @@ def Encloses (p q : ℕ × ℕ) : Prop :=
 instance (p q : ℕ × ℕ) : Decidable (Encloses p q) :=
   inferInstanceAs (Decidable (_ ∧ _))
 
-/-- **Branches of a loop closed by a base pair.** The branches of the loop closed by `p` in `P`: the pairs of `P` strictly inside `p` that
+/-- The branches of the loop closed by `p` in `P`: the pairs of `P` strictly inside `p` that
 are not strictly inside another pair of `P` strictly inside `p`. -/
 def branches (P : Finset (ℕ × ℕ)) (p : ℕ × ℕ) : Finset (ℕ × ℕ) :=
   P.filter fun q => Encloses p q ∧ ∀ r ∈ P, Encloses p r → ¬ Encloses r q
 
-/-- **Exterior branches of a secondary structure.** The exterior branches of `P`: the pairs not strictly inside any pair of `P`. -/
+/-- The exterior branches of `P`: the pairs not strictly inside any pair of `P`. -/
 def exteriorBranches (P : Finset (ℕ × ℕ)) : Finset (ℕ × ℕ) :=
   P.filter fun q => ∀ r ∈ P, ¬ Encloses r q
 
@@ -170,7 +170,7 @@ theorem existsUnique_closing_pair (P : Finset (ℕ × ℕ)) (hP : IsStructure pa
         unfold Encloses at h hqb
         omega
 
-/-- **Energy of the loop closed by a base pair.** The energy of the loop closed by `p = (i, j)` in `P`: a hairpin with no branch, a stack,
+/-- The energy of the loop closed by `p = (i, j)` in `P`: a hairpin with no branch, a stack,
 bulge or interior loop with one branch `(k, l)`, and the affine multiloop energy
 `a + b · r + c · u` with `r ≥ 2` branches and `u = (j - i - 1) - ∑ (l - k + 1)` unpaired
 bases. -/
@@ -184,7 +184,7 @@ noncomputable def loopEnergy (E : LoopEnergy) (P : Finset (ℕ × ℕ)) (p : ℕ
     E.multiA + E.multiB * br.card +
       E.multiC * ((p.2 - p.1 - 1 - ∑ q ∈ br, (q.2 - q.1 + 1) : ℕ) : ℝ)
 
-/-- **Free energy of a structure in the loop model.** The free energy of a structure in the loop model: the sum of the energies of the loops
+/-- The free energy of a structure in the loop model: the sum of the energies of the loops
 closed by its pairs (the exterior loop contributes `0`). -/
 noncomputable def freeEnergy (E : LoopEnergy) (P : Finset (ℕ × ℕ)) : ℝ :=
   ∑ p ∈ P, loopEnergy E P p
@@ -315,12 +315,12 @@ private theorem loopEnergy_congr (E : LoopEnergy) {P Q : Finset (ℕ × ℕ)} {p
     loopEnergy E P p = loopEnergy E Q p := by
   simp only [loopEnergy, branches_congr h]
 
-/-- **A pair with no branch closes a hairpin loop.** A pair with no branch closes a hairpin loop. -/
+/-- A pair with no branch closes a hairpin loop. -/
 theorem loopEnergy_eq_hairpin (E : LoopEnergy) {P : Finset (ℕ × ℕ)} {p : ℕ × ℕ}
     (h : branches P p = ∅) : loopEnergy E P p = E.hairpin p.1 p.2 := by
   simp [loopEnergy, h]
 
-/-- **A pair with one branch closes a stack, bulge or interior loop.** A pair with exactly one branch `q` closes a stack, bulge or interior loop with inner pair
+/-- A pair with exactly one branch `q` closes a stack, bulge or interior loop with inner pair
 `q`. -/
 theorem loopEnergy_eq_interior (E : LoopEnergy) {P : Finset (ℕ × ℕ)} {p q : ℕ × ℕ}
     (h : branches P p = {q}) : loopEnergy E P p = E.interior p.1 p.2 q.1 q.2 := by
@@ -330,7 +330,7 @@ theorem loopEnergy_eq_interior (E : LoopEnergy) {P : Finset (ℕ × ℕ)} {p q :
   simp only [loopEnergy, h1, one_ne_zero, ↓reduceIte, ↓reduceDIte]
   rw [← hc]
 
-/-- **A pair with two or more branches closes a multiloop.** A pair with at least two branches closes a multiloop with the affine energy. -/
+/-- A pair with at least two branches closes a multiloop with the affine energy. -/
 theorem loopEnergy_eq_multiloop (E : LoopEnergy) {P : Finset (ℕ × ℕ)} {p : ℕ × ℕ}
     (h : 2 ≤ (branches P p).card) : loopEnergy E P p = E.multiA + E.multiB * (branches P p).card +
       E.multiC * ((p.2 - p.1 - 1 - ∑ q ∈ branches P p, (q.2 - q.1 + 1) : ℕ) : ℝ) := by
@@ -851,7 +851,7 @@ noncomputable def zukerVW (E : LoopEnergy) : ℕ → ℕ → WithTop ℝ × With
   termination_by _ len => len
   decreasing_by all_goals omega
 
-/-- **Zuker exterior-loop recursion.** The exterior-loop recursion on the prefix `[0, len)`: `W(0) = 0` and
+/-- The exterior-loop recursion on the prefix `[0, len)`: `W(0) = 0` and
 `W(len + 1) = min (W(len), min_{i ≤ len} W(i) + V(i, len + 1 - i))` (the last base is unpaired,
 or closes an exterior branch `(i, len)`). -/
 noncomputable def zukerExterior (E : LoopEnergy) : ℕ → WithTop ℝ
@@ -863,7 +863,7 @@ noncomputable def zukerExterior (E : LoopEnergy) : ℕ → WithTop ℝ
   termination_by len => len
   decreasing_by all_goals omega
 
-/-- **Zuker minimum free energy.** Zuker's minimum free energy of `s`: the exterior recursion on the whole sequence. -/
+/-- Zuker's minimum free energy of `s`: the exterior recursion on the whole sequence. -/
 noncomputable def zukerMFE (E : LoopEnergy) : WithTop ℝ :=
   zukerExterior pair m s E s.length
 
@@ -1300,7 +1300,7 @@ theorem zukerMFE_eq_inf (E : LoopEnergy) :
       (structures pair m s).inf fun P => ((freeEnergy E P : ℝ) : WithTop ℝ) :=
   exterior_char E s.length
 
-/-- **Minimum free energy is at most zero.** The minimum free energy is at most `0`, the energy of the open chain (the empty
+/-- The minimum free energy is at most `0`, the energy of the open chain (the empty
 structure). -/
 theorem zukerMFE_le_zero (E : LoopEnergy) : zukerMFE pair m s E ≤ 0 := by
   rw [zukerMFE_eq_inf]

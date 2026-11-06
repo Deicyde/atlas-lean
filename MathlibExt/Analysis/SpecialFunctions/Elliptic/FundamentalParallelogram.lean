@@ -19,27 +19,17 @@ public import Mathlib.Analysis.SpecialFunctions.Elliptic.Weierstrass
 
 namespace PeriodPair
 
-/-- **Fundamental parallelogram.** Let $\omega_1, \omega_2$ be $\mathbb{R}$-linearly independent
-complex numbers and let $\alpha \in \mathbb{C}$. The fundamental parallelogram with vertex $\alpha$
-is the half-open parallelogram $\alpha + P$, where $P$ is the set of $z \in \mathbb{C}$ whose two
-coordinates in the $\mathbb{R}$-basis $\omega_1, \omega_2$ of $\mathbb{C}$ both lie in $[0, 1)$;
-that is, $P = \{t_1 \omega_1 + t_2 \omega_2 : t_1, t_2 \in [0, 1)\}$. -/
+/-- The fundamental parallelogram with vertex `α` spanned by the periods of `L`. -/
 noncomputable def fundamentalParallelogram (L : PeriodPair) (α : ℂ) : Set ℂ :=
   (α + ·) '' ZSpan.fundamentalDomain L.basis
 
-/-- **Fundamental parallelogram at the origin.** Let $\omega_1, \omega_2$ be $\mathbb{R}$-linearly
-independent complex numbers. The fundamental parallelogram with vertex $0$ equals the set of
-$z \in \mathbb{C}$ whose two coordinates in the $\mathbb{R}$-basis $\omega_1, \omega_2$ of
-$\mathbb{C}$ both lie in $[0, 1)$. -/
+/-- At the origin, the fundamental parallelogram is the standard fundamental domain. -/
 @[simp]
 theorem fundamentalParallelogram_zero (L : PeriodPair) :
     L.fundamentalParallelogram 0 = ZSpan.fundamentalDomain L.basis := by
   simp [fundamentalParallelogram]
 
-/-- **Coordinates in the period basis.** Let $\omega_1, \omega_2$ be $\mathbb{R}$-linearly
-independent complex numbers, so that they form a basis of $\mathbb{C}$ over $\mathbb{R}$. For all
-real numbers $t_1, t_2$, the first coordinate of $t_1 \omega_1 + t_2 \omega_2$ in this basis is
-$t_1$ and the second is $t_2$. -/
+/-- The coordinates of a linear combination of the two periods. -/
 lemma basis_repr_omega (L : PeriodPair) (t₁ t₂ : ℝ) (i : Fin 2) :
     L.basis.repr (t₁ • L.ω₁ + t₂ • L.ω₂) i = ![t₁, t₂] i := by
   rw [show t₁ • L.ω₁ + t₂ • L.ω₂ = t₁ • L.basis 0 + t₂ • L.basis 1 from by simp]
@@ -48,11 +38,7 @@ lemma basis_repr_omega (L : PeriodPair) (t₁ t₂ : ℝ) (i : Fin 2) :
   fin_cases i <;>
     simp [show (1 : Fin 2) ≠ 0 from by decide, show (0 : Fin 2) ≠ 1 from by decide]
 
-/-- **Membership in a fundamental parallelogram.** Let $\omega_1, \omega_2$ be
-$\mathbb{R}$-linearly independent complex numbers and let $\alpha, z \in \mathbb{C}$. Then $z$ lies
-in the fundamental parallelogram with vertex $\alpha$ if and only if there are real numbers
-$t_1, t_2$ with $0 \le t_1 < 1$ and $0 \le t_2 < 1$ such that
-$z = \alpha + t_1 \omega_1 + t_2 \omega_2$. -/
+/-- Membership in a fundamental parallelogram in terms of the two period coordinates. -/
 theorem mem_fundamentalParallelogram_iff (L : PeriodPair) {α z : ℂ} :
     z ∈ L.fundamentalParallelogram α ↔
       ∃ t₁ t₂ : ℝ, 0 ≤ t₁ ∧ t₁ < 1 ∧ 0 ≤ t₂ ∧ t₂ < 1 ∧

@@ -25,7 +25,7 @@ https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361
 
 namespace List
 
-/-- **Start position of a chunk in a split list.** A valid indexed chunk begins after the total length of the preceding chunks. -/
+/-- A valid indexed chunk begins after the total length of the preceding chunks. -/
 theorem getD_splitLengths {α : Type*} (xs : List α) (lengths : List ℕ) (fallback : List α)
     {i : ℕ} (hi : i < lengths.length) :
     (lengths.splitLengths xs).getD i fallback =
@@ -40,7 +40,7 @@ theorem getD_splitLengths {α : Type*} (xs : List α) (lengths : List ℕ) (fall
         ih (xs := xs.drop n) (by simpa using hi)]
       simp only [take_succ_cons, sum_cons, getElem_cons_succ, drop_drop]
 
-/-- **Named chunk lookup uses the first occurrence.** Looking up a named chunk uses the first occurrence of its name. -/
+/-- Looking up a named chunk uses the first occurrence of its name. -/
 theorem getD_splitLengths_map {ι α : Type*} [BEq ι] [LawfulBEq ι]
     (length : ι → ℕ) (names : List ι) (xs fallback : List α) {i : ι} (hi : i ∈ names) :
     ((names.map length).splitLengths xs).getD (names.idxOf i) fallback =
@@ -49,7 +49,7 @@ theorem getD_splitLengths_map {ι α : Type*} [BEq ι] [LawfulBEq ι]
   rw [getD_splitLengths xs (names.map length) fallback (by simpa)]
   rw [getElem_map, getElem_idxOf hidx]
 
-/-- **Splitting a list at a repeated width.** Splitting at a repeated width recovers the corresponding uniform chunk. -/
+/-- Splitting at a repeated width recovers the corresponding uniform chunk. -/
 theorem getD_splitLengths_replicate {α : Type*} (width count i : ℕ)
     (xs fallback : List α) (hi : i < count) :
     ((List.replicate count width).splitLengths xs).getD i fallback =
@@ -57,7 +57,7 @@ theorem getD_splitLengths_replicate {α : Type*} (width count i : ℕ)
   rw [getD_splitLengths xs (List.replicate count width) fallback (by simpa)]
   simp [take_replicate, Nat.min_eq_left hi.le]
 
-/-- **Equality of uniformly split lists from equal block extracts.** Lists of the same uniform-block length are equal when every block extract agrees. -/
+/-- Lists of the same uniform-block length are equal when every block extract agrees. -/
 theorem eq_of_extract_mul_eq {α : Type*} (width count : ℕ) (xs ys : List α)
     (hxs : xs.length = count * width) (hys : ys.length = count * width)
     (h : ∀ i < count,
@@ -82,7 +82,7 @@ theorem eq_of_extract_mul_eq {α : Type*} (width count : ℕ) (xs ys : List α)
           Nat.add_comm, Nat.add_left_comm] using hi'
     rw [← take_append_drop width xs, htake, hdrop, take_append_drop]
 
-/-- **Length of a concatenation of equal-length lists.** Concatenating `count` lists of length `width` has length `count * width`. -/
+/-- Concatenating `count` lists of length `width` has length `count * width`. -/
 theorem length_flatMap_range {α : Type*} (count width : ℕ) (blocks : ℕ → List α)
     (hblocks : ∀ i < count, (blocks i).length = width) :
     ((List.range count).flatMap blocks).length = count * width := by
@@ -114,7 +114,7 @@ private theorem extract_flatMap_getElem {α β : Type*} (width : ℕ) (items : L
       simpa [extract_eq_take_drop] using
         ih (fun item hi => hblocks item (mem_cons_of_mem _ hi)) (by simpa using hi)
 
-/-- **Extracting a member from a uniform-width concatenation.** A uniform-width extract of a concatenated family recovers that family member. -/
+/-- A uniform-width extract of a concatenated family recovers that family member. -/
 theorem extract_flatMap_range {α : Type*} (count width : ℕ) (blocks : ℕ → List α)
     (hblocks : ∀ i < count, (blocks i).length = width) {i : ℕ} (hi : i < count) :
     ((List.range count).flatMap blocks).extract (i * width) (i * width + width) =
@@ -123,7 +123,7 @@ theorem extract_flatMap_range {α : Type*} (count width : ℕ) (blocks : ℕ →
     (fun item hitem => hblocks item (mem_range.mp hitem)) (by simpa using hi)
   simpa only [getElem_range] using h
 
-/-- **Every equal-length list family is realized by its concatenation.** Every finite family of equal-length lists is realized by their concatenation. -/
+/-- Every finite family of equal-length lists is realized by their concatenation. -/
 theorem exists_length_eq_and_extract_eq {α : Type*} (width count : ℕ)
     (blocks : ℕ → List α) (hblocks : ∀ i < count, (blocks i).length = width) :
     ∃ xs : List α,

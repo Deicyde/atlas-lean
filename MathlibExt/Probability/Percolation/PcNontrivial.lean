@@ -143,7 +143,7 @@ theorem l1_getVert_le {ω : ConfigSpace (Sym2 (Site d))} {v : Site d}
         rw [q.getVert_of_length_le hk, q.getVert_of_length_le (by omega)]
       rw [h1]; exact le_trans ih (Nat.le_succ k)
 
-/-- **Vertices of a lattice path encoded by a step sequence.** The `k`-th vertex of the lattice path from the origin that takes step `±e_i` given by `g j`
+/-- The `k`-th vertex of the lattice path from the origin that takes step `±e_i` given by `g j`
 at time `j`. -/
 def vertOf (g : ℕ → Fin d × Bool) : ℕ → Site d
   | 0 => origin d
@@ -152,15 +152,15 @@ def vertOf (g : ℕ → Fin d × Bool) : ℕ → Site d
 theorem vertOf_succ (g : ℕ → Fin d × Bool) (k : ℕ) :
     vertOf g (k + 1) = coordShift (vertOf g k) (g k).1 (stepSign (g k).2) := rfl
 
-/-- **Edges of a lattice path encoded by a step sequence.** The `k`-th edge `{vertOf g k, vertOf g (k + 1)}` of the path encoded by `g`. -/
+/-- The `k`-th edge `{vertOf g k, vertOf g (k + 1)}` of the path encoded by `g`. -/
 def edgeOf (g : ℕ → Fin d × Bool) (k : ℕ) : Sym2 (Site d) :=
   s(vertOf g k, vertOf g (k + 1))
 
-/-- **Event that an encoded lattice path is open.** The event that the first `n` edges of the path encoded by `g` are open. -/
+/-- The event that the first `n` edges of the path encoded by `g` are open. -/
 def wordEvent (g : ℕ → Fin d × Bool) (n : ℕ) : Set (ConfigSpace (Sym2 (Site d))) :=
   {ω | ∀ k ∈ Finset.range n, ω (edgeOf g k) = true}
 
-/-- **Self-avoiding initial segment of an encoded lattice path.** The first `n + 1` vertices of the path encoded by `g` are distinct. -/
+/-- The first `n + 1` vertices of the path encoded by `g` are distinct. -/
 def goodWord (g : ℕ → Fin d × Bool) (n : ℕ) : Prop :=
   Set.InjOn (vertOf g) (Finset.range (n + 1))
 
@@ -196,7 +196,7 @@ theorem wordEvent_prob_good (p : ℝ≥0) (hp : p ≤ 1) (g : ℕ → Fin d × B
   congr 1
   rw [Finset.card_image_of_injOn (edgeOf_injOn g n hg), Finset.card_range]
 
-/-- **Step directions of an open walk from the origin.** The direction `(i, ±)` of the `k`-th step of an open walk from the origin (arbitrary past its
+/-- The direction `(i, ±)` of the `k`-th step of an open walk from the origin (arbitrary past its
 end). -/
 noncomputable def dirOf (hd : 0 < d) {ω : ConfigSpace (Sym2 (Site d))} {v : Site d}
     (q : (openSubgraph d ω).Walk (origin d) v) (k : ℕ) : Fin d × Bool := by
@@ -351,7 +351,7 @@ theorem le_pc_of_mem_subcriticalSet {p : ℝ≥0} (hp : p ∈ subcriticalSet d) 
     p ≤ pc d :=
   le_csSup subcriticalSet_bddAbove hp
 
-/-- **Positivity of the critical probability (Hammersley's bound).** `p_c(d) > 0` for bond percolation on `ℤ^d`, `d ≥ 1` (Hammersley 1957, by counting paths:
+/-- `p_c(d) > 0` for bond percolation on `ℤ^d`, `d ≥ 1` (Hammersley 1957, by counting paths:
 `p_c(d) ≥ 1/(2d)`). -/
 theorem pc_pos (hd : 0 < d) : 0 < pc d := by
   have hdpos : (0 : ℝ≥0) < d := by exact_mod_cast hd

@@ -46,25 +46,25 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Vertices of the grid $[-n, n]^2$.** The vertices of the grid `[-n, n]²`. -/
+/-- The vertices of the grid `[-n, n]²`. -/
 noncomputable def boxVerts (n : ℕ) : Finset (Site 2) :=
   (Finset.Icc (-(n : ℤ)) (n : ℤ) ×ˢ Finset.Icc (-(n : ℤ)) (n : ℤ)).image
     (fun p => ![p.1, p.2])
 
-/-- **Horizontal edges of the grid $[-n, n]^2$.** The horizontal edges of the grid `[-n, n]²`. -/
+/-- The horizontal edges of the grid `[-n, n]²`. -/
 noncomputable def hEdges (n : ℕ) : Finset (Sym2 (Site 2)) :=
   (Finset.Ico (-(n : ℤ)) (n : ℤ) ×ˢ Finset.Icc (-(n : ℤ)) (n : ℤ)).image
     (fun p => s(![p.1, p.2], ![p.1 + 1, p.2]))
 
-/-- **Vertical edges of the grid $[-n, n]^2$.** The vertical edges of the grid `[-n, n]²`. -/
+/-- The vertical edges of the grid `[-n, n]²`. -/
 noncomputable def vEdges (n : ℕ) : Finset (Sym2 (Site 2)) :=
   (Finset.Icc (-(n : ℤ)) (n : ℤ) ×ˢ Finset.Ico (-(n : ℤ)) (n : ℤ)).image
     (fun p => s(![p.1, p.2], ![p.1, p.2 + 1]))
 
-/-- **Edges of the grid $[-n, n]^2$.** The edges of the grid `[-n, n]²`. -/
+/-- The edges of the grid `[-n, n]²`. -/
 noncomputable def boxEdges (n : ℕ) : Finset (Sym2 (Site 2)) := hEdges n ∪ vEdges n
 
-/-- **Unit squares of the grid $[-n, n]^2$.** The unit squares of the grid `[-n, n]²`, labelled by their lower left corners. -/
+/-- The unit squares of the grid `[-n, n]²`, labelled by their lower left corners. -/
 noncomputable def boxCells (n : ℕ) : Finset (ℤ × ℤ) :=
   Finset.Ico (-(n : ℤ)) (n : ℤ) ×ˢ Finset.Ico (-(n : ℤ)) (n : ℤ)
 
@@ -225,13 +225,13 @@ theorem boxCells_card (n : ℕ) : (boxCells n).card = (2 * n) ^ 2 := by
   unfold boxCells
   rw [Finset.card_product, ico_card_n, sq]
 
-/-- **Number of faces of the grid $[-n, n]^2$.** The number of faces of the grid `[-n, n]²`: its unit squares and the unbounded face. -/
+/-- The number of faces of the grid `[-n, n]²`: its unit squares and the unbounded face. -/
 noncomputable def boxFaceCount (n : ℕ) : ℕ := (boxCells n).card + 1
 
 theorem boxFaceCount_eq (n : ℕ) : boxFaceCount n = (2 * n) ^ 2 + 1 := by
   rw [boxFaceCount, boxCells_card]
 
-/-- **Euler's formula for the grid graph $[-n, n]^2$.** Euler's formula `V - E + F = 2` for the planar grid graph `[-n, n]²`, with faces counted
+/-- Euler's formula `V - E + F = 2` for the planar grid graph `[-n, n]²`, with faces counted
 geometrically (unit squares plus the unbounded face). -/
 theorem box_euler (n : ℕ) :
     (boxVerts n).card + boxFaceCount n = (boxEdges n).card + 2 := by
@@ -252,7 +252,7 @@ theorem box_faceCount_eq_cyclomatic_add_one (n : ℕ) :
     rw [boxVerts_card, boxEdges_card]; nlinarith [Nat.zero_le n]
   omega
 
-/-- **Square lattice induced on the box $[-n, n]^2$.** The subgraph of the square lattice induced on the box `[-n, n]²`. -/
+/-- The subgraph of the square lattice induced on the box `[-n, n]²`. -/
 abbrev boxInduce (n : ℕ) := (hypercubicLattice 2).induce (box 2 n)
 
 theorem mem_box2 {n : ℕ} {a b : ℤ} (ha : a.natAbs ≤ n) (hb : b.natAbs ≤ n) :

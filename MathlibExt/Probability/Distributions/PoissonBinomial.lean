@@ -64,14 +64,14 @@ open scoped Nat
 
 namespace ProbabilityTheory
 
-/-- **Poisson-binomial mass function.** Poisson-binomial mass function of the number of successes among independent trials with
+/-- Poisson-binomial mass function of the number of successes among independent trials with
 success probabilities `p : Fin m → ℝ`:
 `∑_{A ⊆ [m], |A| = j} ∏_{i ∈ A} p i ∏_{i ∉ A} (1 - p i)`. A probability mass function when
 every `p i ∈ [0, 1]`; the algebraic identities below hold for all real `p`. -/
 noncomputable def poissonBinomialPMF {m : ℕ} (p : Fin m → ℝ) (j : ℕ) : ℝ :=
   ∑ A ∈ (univ : Finset (Fin m)).powersetCard j, (∏ i ∈ A, p i) * ∏ i ∈ univ \ A, (1 - p i)
 
-/-- **Upper tail of the Poisson-binomial law.** Upper tail `P(S ≥ k) = ∑_{k ≤ j ≤ m} P(S = j)` of the Poisson-binomial law (the mass
+/-- Upper tail `P(S ≥ k) = ∑_{k ≤ j ≤ m} P(S = j)` of the Poisson-binomial law (the mass
 function vanishes above `m`). -/
 noncomputable def poissonBinomialTail {m : ℕ} (p : Fin m → ℝ) (k : ℕ) : ℝ :=
   ∑ j ∈ Icc k m, poissonBinomialPMF p j
@@ -93,26 +93,26 @@ private theorem pbPoly_cons {m : ℕ} (a : ℝ) (q : Fin m → ℝ) :
     pbPoly (Fin.cons a q : Fin (m + 1) → ℝ) = (C a * X + C (1 - a)) * pbPoly q := by
   simp [pbPoly, Fin.prod_univ_succ]
 
-/-- **Nonnegativity of the Poisson-binomial mass function.** The Poisson-binomial mass function is nonnegative for probabilities in `[0, 1]`. -/
+/-- The Poisson-binomial mass function is nonnegative for probabilities in `[0, 1]`. -/
 theorem poissonBinomialPMF_nonneg {m : ℕ} {p : Fin m → ℝ} (hp : ∀ i, p i ∈ Set.Icc (0 : ℝ) 1)
     (j : ℕ) :
     0 ≤ poissonBinomialPMF p j :=
   sum_nonneg fun _ _ => mul_nonneg (prod_nonneg fun i _ => (hp i).1)
     (prod_nonneg fun i _ => sub_nonneg.mpr (hp i).2)
 
-/-- **Poisson-binomial mass vanishes above the number of trials.** The Poisson-binomial mass function vanishes above the number of trials. -/
+/-- The Poisson-binomial mass function vanishes above the number of trials. -/
 theorem poissonBinomialPMF_eq_zero_of_lt {m : ℕ} (p : Fin m → ℝ) {j : ℕ} (hj : m < j) :
     poissonBinomialPMF p j = 0 := by
   unfold poissonBinomialPMF
   rw [powersetCard_eq_empty.mpr (by simpa using hj), sum_empty]
 
-/-- **Poisson-binomial mass at zero after adding a trial.** Adding a trial with probability `a`: no successes requires a failure of the new trial. -/
+/-- Adding a trial with probability `a`: no successes requires a failure of the new trial. -/
 theorem poissonBinomialPMF_cons_zero {m : ℕ} (a : ℝ) (q : Fin m → ℝ) :
     poissonBinomialPMF (Fin.cons a q : Fin (m + 1) → ℝ) 0 = (1 - a) * poissonBinomialPMF q 0 := by
   rw [← coeff_pbPoly, ← coeff_pbPoly, pbPoly_cons, add_mul, coeff_add, mul_assoc, coeff_C_mul,
     coeff_X_mul_zero, mul_zero, zero_add, coeff_C_mul]
 
-/-- **First-step recurrence for the Poisson-binomial mass function.** Adding a trial with probability `a`: first-step decomposition of the mass function,
+/-- Adding a trial with probability `a`: first-step decomposition of the mass function,
 `P(S' = j + 1) = a P(S = j) + (1 - a) P(S = j + 1)`. -/
 theorem poissonBinomialPMF_cons_succ {m : ℕ} (a : ℝ) (q : Fin m → ℝ) (j : ℕ) :
     poissonBinomialPMF (Fin.cons a q : Fin (m + 1) → ℝ) (j + 1) =
@@ -120,7 +120,7 @@ theorem poissonBinomialPMF_cons_succ {m : ℕ} (a : ℝ) (q : Fin m → ℝ) (j 
   rw [← coeff_pbPoly, ← coeff_pbPoly, ← coeff_pbPoly, pbPoly_cons, add_mul, coeff_add, mul_assoc,
     coeff_C_mul, coeff_X_mul, coeff_C_mul]
 
-/-- **Poisson-binomial masses sum to one.** The Poisson-binomial masses sum to one (an identity for all real `p`; it is the expansion
+/-- The Poisson-binomial masses sum to one (an identity for all real `p`; it is the expansion
 of `∏ ((1 - p i) + p i) = 1`). -/
 theorem sum_poissonBinomialPMF {m : ℕ} (p : Fin m → ℝ) :
     ∑ j ∈ range (m + 1), poissonBinomialPMF p j = 1 := by
@@ -136,7 +136,7 @@ theorem sum_poissonBinomialPMF {m : ℕ} (p : Fin m → ℝ) :
         poissonBinomialPMF_eq_zero_of_lt _ (by omega : m < m + 1), add_zero, ih]
     linear_combination (1 - p 0) * h
 
-/-- **Peeling off the lowest term of the Poisson-binomial tail.** Peeling off the lowest term of the tail: `P(S ≥ k) = P(S = k) + P(S ≥ k + 1)`. -/
+/-- Peeling off the lowest term of the tail: `P(S ≥ k) = P(S = k) + P(S ≥ k + 1)`. -/
 theorem poissonBinomialTail_eq_add {m : ℕ} (q : Fin m → ℝ) (k : ℕ) :
     poissonBinomialTail q k = poissonBinomialPMF q k + poissonBinomialTail q (k + 1) := by
   unfold poissonBinomialTail
@@ -145,7 +145,7 @@ theorem poissonBinomialTail_eq_add {m : ℕ} (q : Fin m → ℝ) (k : ℕ) :
   · rw [poissonBinomialPMF_eq_zero_of_lt _ hk, Icc_eq_empty (by omega), Icc_eq_empty (by omega)]
     simp
 
-/-- **Poisson-binomial tail after adding a trial.** Adding a trial with probability `a` raises the upper tail by exactly `a P(S = k)`:
+/-- Adding a trial with probability `a` raises the upper tail by exactly `a P(S = k)`:
 `P(S' ≥ k + 1) = P(S ≥ k + 1) + a P(S = k)`. So the tail is affine in each trial's probability,
 with nonnegative slope a point mass of the remaining trials. -/
 theorem poissonBinomialTail_cons_succ {m : ℕ} (a : ℝ) (q : Fin m → ℝ) (k : ℕ) :
@@ -200,7 +200,7 @@ theorem poissonBinomialTail_mono {m : ℕ} {p q : Fin m → ℝ} (hp : ∀ i, p 
       nlinarith [ha.1, mul_le_mul_of_nonneg_left i1 ha.1,
         mul_le_mul_of_nonneg_left i2 (sub_nonneg.mpr ha1), mul_le_mul_of_nonneg_right hb hn]
 
-/-- **Poisson-binomial law with equal probabilities is binomial.** With equal probabilities the Poisson-binomial law is the binomial law. -/
+/-- With equal probabilities the Poisson-binomial law is the binomial law. -/
 theorem poissonBinomialPMF_const {m : ℕ} (a : ℝ) (j : ℕ) :
     poissonBinomialPMF (fun _ : Fin m => a) j = (m.choose j : ℝ) * a ^ j * (1 - a) ^ (m - j) := by
   unfold poissonBinomialPMF
@@ -224,7 +224,7 @@ theorem binomialTail_mono {n k : ℕ} {p q : ℝ} (hp : 0 ≤ p) (hpq : p ≤ q)
   exact poissonBinomialTail_mono (fun _ => ⟨hp, hpq.trans hq⟩) (fun _ => ⟨hp.trans hpq, hq⟩)
     (fun _ => hpq) k
 
-/-- **Binomial upper tail is monotone in the success probability.** The upper tail `Bin(n, p)([k, ∞))` of Mathlib's binomial law is monotone in `p`. -/
+/-- The upper tail `Bin(n, p)([k, ∞))` of Mathlib's binomial law is monotone in `p`. -/
 theorem binomial_real_Ici_mono (n k : ℕ) :
     Monotone fun p : unitInterval => (binomial n p).real (Set.Ici k) := by
   have hreal : ∀ p : unitInterval, (binomial n p).real (Set.Ici k) =
@@ -241,7 +241,7 @@ theorem binomial_real_Ici_mono (n k : ℕ) :
   rw [hreal, hreal]
   exact binomialTail_mono p.2.1 hpq q.2.2
 
-/-- **Tail of a sum of independent Bernoulli variables is Poisson-binomial.** For independent Bernoulli variables `X i` with parameters `p i`, the one-sided burden
+/-- For independent Bernoulli variables `X i` with parameters `p i`, the one-sided burden
 p-value `P(∑ X i ≥ k)` is the Poisson-binomial tail. -/
 theorem measure_le_sum_eq_poissonBinomialTail {m : ℕ}
     {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω} [IsProbabilityMeasure μ]

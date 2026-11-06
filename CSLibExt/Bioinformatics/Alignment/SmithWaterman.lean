@@ -62,7 +62,7 @@ open Cslib.Algorithms.Lean
 
 variable {α : Type*} (σ : α → α → ℤ) (gap : ℤ)
 
-/-- **Auxiliary row computation for the Smith–Waterman table.** The cells `H[i+1][j+1], H[i+1][j+2], …` of a row from the remaining letters `b :: ys` of the
+/-- The cells `H[i+1][j+1], H[i+1][j+2], …` of a row from the remaining letters `b :: ys` of the
 second sequence, the remaining cells `up :: prev` of the previous row, the previous row's cell
 `diag` to the upper left and the cell `left` just computed. A previous row that is too short ends
 the row early (this does not happen for rows of the table, `nextRow_eq`). -/
@@ -73,12 +73,12 @@ def nextRowAux (a : α) : List α → List ℤ → ℤ → ℤ → List ℤ
       max 0 (max (max (diag + σ a b) (up + gap)) (left + gap)) ::
         nextRowAux a ys prev up (max 0 (max (max (diag + σ a b) (up + gap)) (left + gap)))
 
-/-- **Next row of the Smith–Waterman table.** The row of the table for the prefix extended by `a`, from the previous row: `H[i+1][0] = 0`,
+/-- The row of the table for the prefix extended by `a`, from the previous row: `H[i+1][0] = 0`,
 then the recurrence left to right. -/
 def nextRow (a : α) (ys : List α) (prev : List ℤ) : List ℤ :=
   0 :: nextRowAux σ gap a ys prev.tail (prev.headD 0) 0
 
-/-- **Row-by-row filling of the Smith–Waterman table.** The Smith–Waterman table, filled row by row over the remaining letters of the first sequence:
+/-- The Smith–Waterman table, filled row by row over the remaining letters of the first sequence:
 `row` is the current row and `best` the largest cell of the earlier rows. -/
 def swTabAux (ys : List α) : List α → List ℤ → ℤ → ℤ
   | [], row, best => max best (listMax row)

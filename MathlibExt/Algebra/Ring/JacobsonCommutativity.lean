@@ -55,11 +55,9 @@ element (using `littleWedderburn`).
 
 variable {R : Type*} [Ring R]
 
-/-- **Prime two-sided ideal.** A two-sided ideal $P$ of a ring $R$ is prime if $P \ne R$ and,
-for all $a, b \in R$, if $a r b \in P$ for every $r \in R$, then $a \in P$ or $b \in P$.
-
-This is the noncommutative notion of primality; being completely prime ($P \ne R$, and
-$ab \in P$ forces $a \in P$ or $b \in P$) is stronger. -/
+/-- A two-sided ideal is prime if it is proper and `a * R * b ⊆ P` forces
+`a ∈ P` or `b ∈ P`. This is the noncommutative notion; Mathlib's
+`Ideal.IsPrime` is the (stronger) completely prime notion. -/
 def IsPrimeIdeal (P : TwoSidedIdeal R) : Prop :=
   P ≠ ⊤ ∧ ∀ a b : R, (∀ r : R, a * r * b ∈ P) → a ∈ P ∨ b ∈ P
 
@@ -94,8 +92,8 @@ private lemma eq_zero_of_pow_eq_zero {x : R} {m : ℕ}
   rw [hk, pow_add, hx, zero_mul] at hxN
   exact hxN.symm
 
-/-- **m-system.** A subset $M$ of a ring $R$ is an $m$-system if it is nonempty, does not
-contain $0$, and for all $a, b \in M$ there is some $r \in R$ with $a r b \in M$. -/
+/-- An `m`-system: a nonempty set avoiding `0`, closed under joining pairs
+through `R`. -/
 def IsMSystem (M : Set R) : Prop :=
   M.Nonempty ∧ 0 ∉ M ∧ ∀ a b : R, a ∈ M → b ∈ M → ∃ r : R, a * r * b ∈ M
 
@@ -1552,9 +1550,8 @@ private lemma herstein_of_torsion {D : Type*} [DivisionRing D] {p : ℕ}
     rw [commEnd_apply] at hdb
     exact sub_eq_zero.mp hdb
 
-/-- **Jacobson's commutativity theorem.** Let $R$ be a ring. If for every $x \in R$ there is a
-natural number $n > 1$ with $x^n = x$, then $R$ is commutative, that is, $xy = yx$ for all
-$x, y \in R$. -/
+/-- Jacobson's commutativity theorem: a ring in which every element
+satisfies `x ^ n = x` for some `n > 1` is commutative. -/
 public theorem jacobson_commutativity {R : Type*} [Ring R]
     (h : ∀ x : R, ∃ n : ℕ, 1 < n ∧ x ^ n = x) :
     ∀ x y : R, x * y = y * x := by

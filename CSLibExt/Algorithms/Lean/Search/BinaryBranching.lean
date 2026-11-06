@@ -40,7 +40,7 @@ namespace Cslib.Algorithms.Lean.BinaryBranching
 
 variable {σ : Type*} (step : σ → Option (σ × σ))
 
-/-- **Depth-cut frontier of a binary branching step.** The frontier below `s`, left to right, cut at depth `k`. At depth zero it is `[s]`,
+/-- The frontier below `s`, left to right, cut at depth `k`. At depth zero it is `[s]`,
 even when `step s` branches. Duplicate occurrences are retained. -/
 def leaves : ℕ → σ → List σ
   | 0, s => [s]
@@ -49,7 +49,7 @@ def leaves : ℕ → σ → List σ
     | none => [s]
     | some (l, h) => leaves k l ++ leaves k h
 
-/-- **One depth-first round of binary branching.** One depth-first round on `(stack, output)`. Terminal states are prepended to the output;
+/-- One depth-first round on `(stack, output)`. Terminal states are prepended to the output;
 a branching state is replaced by its left child followed by its right child. -/
 def round : List σ × List σ → List σ × List σ
   | ([], out) => ([], out)
@@ -58,7 +58,7 @@ def round : List σ × List σ → List σ × List σ
     | none => (r, s :: out)
     | some (l, h) => (l :: h :: r, out)
 
-/-- **Depth-cut frontiers are nonempty.** Every depth-cut frontier is nonempty. -/
+/-- Every depth-cut frontier is nonempty. -/
 theorem leaves_length_pos (k : ℕ) (s : σ) : 0 < (leaves step k s).length := by
   induction k generalizing s with
   | zero => simp [leaves]
@@ -71,7 +71,7 @@ theorem leaves_length_pos (k : ℕ) (s : σ) : 0 < (leaves step k s).length := b
       simp only [List.length_append]
       omega
 
-/-- **An empty work stack is fixed by every round.** An empty work stack is fixed by any number of rounds. -/
+/-- An empty work stack is fixed by any number of rounds. -/
 theorem round_nil_iterate (m : ℕ) (out : List σ) : (round step)^[m] ([], out) = ([], out) := by
   induction m with
   | zero => rfl
@@ -79,7 +79,7 @@ theorem round_nil_iterate (m : ℕ) (out : List σ) : (round step)^[m] ([], out)
     rw [Function.iterate_succ_apply]
     exact ih
 
-/-- **Exact round count for traversing a terminal frontier.** If every frontier occurrence is terminal, exactly `2 * length - 1` rounds process
+/-- If every frontier occurrence is terminal, exactly `2 * length - 1` rounds process
 the tree below `s`, preserving the tail `r` and prepending its reversed frontier to `out`.
 The terminal-frontier hypothesis is essential: a depth cut may contain branching states. -/
 theorem round_iterate (k : ℕ) (s : σ) (hk : ∀ x ∈ leaves step k s, step x = none) (r out : List σ) :
@@ -107,7 +107,7 @@ theorem round_iterate (k : ℕ) (s : σ) (hk : ∀ x ∈ leaves step k s, step x
         ih h (fun x hx => hk x (List.mem_append_right _ hx))]
       simp
 
-/-- **Enough rounds empty the stack and collect the frontier.** After at least `2 * length - 1` rounds from `[s]`, the stack is empty and all
+/-- After at least `2 * length - 1` rounds from `[s]`, the stack is empty and all
 terminal frontier occurrences have been collected in reverse order. -/
 theorem round_iterate_of_le (k : ℕ) (s : σ) (hk : ∀ x ∈ leaves step k s, step x = none) (R : ℕ)
     (hR : 2 * (leaves step k s).length - 1 ≤ R) :
@@ -116,7 +116,7 @@ theorem round_iterate_of_le (k : ℕ) (s : σ) (hk : ∀ x ∈ leaves step k s, 
   rw [Function.iterate_add_apply, round_iterate step k s hk, round_nil_iterate]
   simp
 
-/-- **Additive weight of the root is the sum over the frontier.** A natural-valued weight additive across each branch equals the sum of the frontier
+/-- A natural-valued weight additive across each branch equals the sum of the frontier
 weights, even when the frontier is cut before termination. -/
 theorem sum_leaves {σ : Type*} (step : σ → Option (σ × σ)) (f : σ → ℕ)
     (hf : ∀ s l h, step s = some (l, h) → f s = f l + f h)
@@ -135,7 +135,7 @@ section Map
 variable {σ ρ : Type*} {s₁ : σ → Option (σ × σ)} {s₂ : ρ → Option (ρ × ρ)}
   {f : σ → ρ}
 
-/-- **Commuting maps transport the ordered frontier.** A map commuting with both steps transports the ordered frontier, preserving multiplicity. -/
+/-- A map commuting with both steps transports the ordered frontier, preserving multiplicity. -/
 theorem leaves_map (h : ∀ x, s₂ (f x) = (s₁ x).map fun lh => (f lh.1, f lh.2))
     (d : ℕ) (x : σ) : leaves s₂ d (f x) = (leaves s₁ d x).map f := by
   induction d generalizing x with
@@ -149,7 +149,7 @@ theorem leaves_map (h : ∀ x, s₂ (f x) = (s₁ x).map fun lh => (f lh.1, f lh
       have h1 : s₂ (f x) = some (f lh.1, f lh.2) := by rw [h, h0]; rfl
       simp [leaves, h0, h1, ih]
 
-/-- **Commuting maps transport one depth-first round.** A commuting node map transports one stack round and its accumulated output. -/
+/-- A commuting node map transports one stack round and its accumulated output. -/
 theorem round_map (h : ∀ x, s₂ (f x) = (s₁ x).map fun lh => (f lh.1, f lh.2))
     (p : List σ × List σ) :
     round s₂ (p.1.map f, p.2.map f) = ((round s₁ p).1.map f, (round s₁ p).2.map f) := by
@@ -165,7 +165,7 @@ theorem round_map (h : ∀ x, s₂ (f x) = (s₁ x).map fun lh => (f lh.1, f lh.
       have h1 : s₂ (f x) = some (f lh.1, f lh.2) := by rw [h, h0]; rfl
       simp [round, h0, h1]
 
-/-- **Commuting maps transport any number of rounds.** A commuting node map transports any number of rounds. No injectivity is required. -/
+/-- A commuting node map transports any number of rounds. No injectivity is required. -/
 theorem round_iterate_map
     (h : ∀ x, s₂ (f x) = (s₁ x).map fun lh => (f lh.1, f lh.2))
     (i : ℕ) (p : List σ × List σ) :
@@ -178,7 +178,7 @@ theorem round_iterate_map
 
 end Map
 
-/-- **Weight-counting depth-first round.** One stack round accumulating natural weights rather than a list of terminal states.
+/-- One stack round accumulating natural weights rather than a list of terminal states.
 The previous count is retained, and each terminal occurrence contributes its weight. -/
 def roundCount {σ : Type*} (step : σ → Option (σ × σ)) (val : σ → ℕ) : List σ × ℕ → List σ × ℕ
   | ([], c) => ([], c)
@@ -187,7 +187,7 @@ def roundCount {σ : Type*} (step : σ → Option (σ × σ)) (val : σ → ℕ)
     | none => (r, c + val s)
     | some (l, h) => (l :: h :: r, c)
 
-/-- **Counting rounds project list-output rounds.** Counting rounds are the projection of list-output rounds to the sum of output weights. -/
+/-- Counting rounds are the projection of list-output rounds to the sum of output weights. -/
 theorem roundCount_iterate {σ : Type*} (step : σ → Option (σ × σ)) (val : σ → ℕ)
     (i : ℕ) (st out : List σ) :
     (roundCount step val)^[i] (st, (out.map val).sum) =
@@ -202,7 +202,7 @@ theorem roundCount_iterate {σ : Type*} (step : σ → Option (σ × σ)) (val :
       cases h0 : step s <;> simp [M, round, roundCount, h0, Nat.add_comm]
   exact (hs.iterate_right i (st, out)).symm
 
-/-- **Final count of counting rounds is the frontier weight.** With a terminal frontier and enough rounds, the final count is its total weight. -/
+/-- With a terminal frontier and enough rounds, the final count is its total weight. -/
 theorem roundCount_iterate_of_le {σ : Type*} (step : σ → Option (σ × σ)) (val : σ → ℕ)
     (d : ℕ) (s : σ)
     (hd : ∀ x ∈ leaves step d s, step x = none) (R : ℕ)
@@ -231,7 +231,7 @@ private theorem one_le_sum_choose (d h : ℕ) : 1 ≤ ∑ j ∈ range (h + 1), d
   rw [sum_range_succ']
   simp
 
-/-- **Binomial bound on the frontier size under depth and heavy budgets.** With at most `d` further depth steps and `h` further heavy steps, the frontier has
+/-- With at most `d` further depth steps and `h` further heavy steps, the frontier has
 at most `∑ j ∈ range (h + 1), d.choose j` occurrences. The source budget hypotheses
 are retained, including the strict heavy-budget inequality. -/
 theorem length_leaves_le (hb : ∀ s p t, G s p t → p ≤ D ∧ t ≤ T)
@@ -259,7 +259,7 @@ theorem length_leaves_le (hb : ∀ s p t, G s p t → p ≤ D ∧ t ≤ T)
       rw [List.length_append, sum_choose_succ]
       omega
 
-/-- **A large enough depth cut yields only terminal states.** A depth allowance covering the remaining depth budget produces only terminal states. -/
+/-- A depth allowance covering the remaining depth budget produces only terminal states. -/
 theorem step_eq_none_of_mem_leaves (hb : ∀ s p t, G s p t → p ≤ D ∧ t ≤ T)
     (hs : ∀ s p t l h, G s p t → step s = some (l, h) → G l (p + 1) t ∧ G h (p + 1) (t + q))
     (k : ℕ) (s : σ) (p t : ℕ) (hG : G s p t) (hk : D ≤ p + k) :
@@ -286,7 +286,7 @@ theorem step_eq_none_of_mem_leaves (hb : ∀ s p t, G s p t → p ≤ D ∧ t �
       · exact ih l (p + 1) t hl (by omega) x hx
       · exact ih r (p + 1) (t + q) hr (by omega) x hx
 
-/-- **Frontier occurrences satisfy the resource invariant.** Every frontier occurrence satisfies the resource invariant at some budgets. -/
+/-- Every frontier occurrence satisfies the resource invariant at some budgets. -/
 theorem exists_of_mem_leaves
     (hs : ∀ s p t l h, G s p t → step s = some (l, h) → G l (p + 1) t ∧ G h (p + 1) (t + q))
     (k : ℕ) (s : σ) (p t : ℕ) (hG : G s p t) : ∀ x ∈ leaves step k s, ∃ p' t', G x p' t' := by
@@ -307,7 +307,7 @@ theorem exists_of_mem_leaves
       · exact ih l (p + 1) t hl x hx
       · exact ih r (p + 1) (t + q) hr x hx
 
-/-- **Branch-split properties hold at the root iff at some leaf.** A property split by branches holds at the root iff it holds at some frontier occurrence. -/
+/-- A property split by branches holds at the root iff it holds at some frontier occurrence. -/
 theorem iff_exists_mem_leaves
     (hs : ∀ s p t l h, G s p t → step s = some (l, h) → G l (p + 1) t ∧ G h (p + 1) (t + q))
     (S : σ → Prop) (hS : ∀ s p t l h, G s p t → step s = some (l, h) → (S s ↔ S l ∨ S h))
@@ -350,7 +350,7 @@ private theorem StackOK.mem {st : List σ} (h : StackOK G st) : ∀ x ∈ st, �
       exact ⟨p, t, hG⟩
     · exact ih h.2 x hx
 
-/-- **Depth budget bounds the depth-first stack size.** The depth budget bounds the stack by `D + 1` at every round; each pending state
+/-- The depth budget bounds the stack by `D + 1` at every round; each pending state
 satisfies the resource invariant. This is a list-size bound, not a machine-space model. -/
 theorem stack_bound (hb : ∀ s p t, G s p t → p ≤ D ∧ t ≤ T)
     (hs : ∀ s p t l h, G s p t → step s = some (l, h) → G l (p + 1) t ∧ G h (p + 1) (t + q))
@@ -379,7 +379,7 @@ section Simulation
 variable {σ' : Type*} {step' : σ' → Option (σ' × σ')}
   {step : σ → Option (σ × σ)} {f : σ' → σ} {I : σ' → Prop}
 
-/-- **Invariant-restricted step transport of the frontier.** Step transport restricted to a preserved invariant transports the frontier and
+/-- Step transport restricted to a preserved invariant transports the frontier and
 records that all its occurrences satisfy the invariant. -/
 theorem leaves_sim (hsim : ∀ s, I s → (step' s).map (Prod.map f f) = step (f s))
     (hinv : ∀ s l h, I s → step' s = some (l, h) → I l ∧ I h) (k : ℕ) (s : σ') (hs : I s) :
@@ -411,7 +411,7 @@ section Totals
 
 variable {σ : Type*} (step : σ → Option (σ × σ))
 
-/-- **A round does not decrease pending plus collected occurrences.** One round does not decrease the combined number of pending and collected occurrences. -/
+/-- One round does not decrease the combined number of pending and collected occurrences. -/
 theorem total_le_round (st : List σ × List σ) :
     st.1.length + st.2.length ≤ (round step st).1.length + (round step st).2.length := by
   obtain ⟨_ | ⟨s, r⟩, out⟩ := st
@@ -425,7 +425,7 @@ private theorem total_mono (a : List σ × List σ) :
     simp only [Function.iterate_succ_apply']
     exact total_le_round step _
 
-/-- **Pending plus collected occurrences are bounded by the frontier length.** With a terminal frontier, pending and collected occurrences together never exceed
+/-- With a terminal frontier, pending and collected occurrences together never exceed
 its length, including before traversal is complete. -/
 theorem total_le_leaves (d : ℕ) (s : σ) (hd : ∀ x ∈ leaves step d s, step x = none) (i : ℕ) :
     ((round step)^[i] ([s], [])).1.length + ((round step)^[i] ([s], [])).2.length ≤
@@ -435,7 +435,7 @@ theorem total_le_leaves (d : ℕ) (s : σ) (hd : ∀ x ∈ leaves step d s, step
     (le_max_right i (2 * (leaves step d s).length - 1))] at h
   simpa using h
 
-/-- **Stack invariants hold for every collected leaf.** A property of every state ever on the stack holds of each collected leaf. -/
+/-- A property of every state ever on the stack holds of each collected leaf. -/
 theorem out_of_stack (P : σ → Prop) (s : σ)
     (h : ∀ i, ∀ x ∈ ((round step)^[i] ([s], [])).1, P x) (i : ℕ) :
     ∀ x ∈ ((round step)^[i] ([s], [])).2, P x := by
@@ -458,7 +458,7 @@ theorem out_of_stack (P : σ → Prop) (s : σ)
 
 end Totals
 
-/-- **Deepening the cut past a terminal frontier changes nothing.** Increasing a depth cut beyond a terminal frontier leaves the list unchanged. -/
+/-- Increasing a depth cut beyond a terminal frontier leaves the list unchanged. -/
 theorem leaves_eq_of_le {σ : Type*} (step : σ → Option (σ × σ)) (D₀ : ℕ) :
     ∀ (D : ℕ) (r : σ), D₀ ≤ D →
     (∀ x ∈ leaves step D₀ r, step x = none) → leaves step D r = leaves step D₀ r := by

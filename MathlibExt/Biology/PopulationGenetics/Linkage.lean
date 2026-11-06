@@ -64,22 +64,22 @@ private theorem sum_four (x : Bool × Bool → ℝ) :
   simp only [Fintype.sum_prod_type, Fintype.sum_bool]
   ring
 
-/-- **Allele frequency at the first locus.** The frequency `∑ b, x (a, b)` of allele `a` at the first locus. -/
+/-- The frequency `∑ b, x (a, b)` of allele `a` at the first locus. -/
 def alleleFreqFst (x : Bool × Bool → ℝ) (a : Bool) : ℝ := ∑ b, x (a, b)
 
-/-- **Allele frequency at the second locus.** The frequency `∑ a, x (a, b)` of allele `b` at the second locus. -/
+/-- The frequency `∑ a, x (a, b)` of allele `b` at the second locus. -/
 def alleleFreqSnd (x : Bool × Bool → ℝ) (b : Bool) : ℝ := ∑ a, x (a, b)
 
-/-- **Linkage disequilibrium of a two-locus gamete law.** The linkage disequilibrium `D = x_AB x_ab - x_Ab x_aB`. -/
+/-- The linkage disequilibrium `D = x_AB x_ab - x_Ab x_aB`. -/
 def linkageDiseq (x : Bool × Bool → ℝ) : ℝ :=
   x (true, true) * x (false, false) - x (true, false) * x (false, true)
 
-/-- **Random mating with recombination.** One generation of random mating with recombination fraction `r`:
+/-- One generation of random mating with recombination fraction `r`:
 `recombine r x g = (1 - r) x_g + r p_{g.1} q_{g.2}`. -/
 def recombine (r : ℝ) (x : Bool × Bool → ℝ) (g : Bool × Bool) : ℝ :=
   (1 - r) * x g + r * (alleleFreqFst x g.1 * alleleFreqSnd x g.2)
 
-/-- **Classical form of the recombination recursion.** The classical form of the recursion: coupling gametes (`AB`, `ab`) lose `r D` and repulsion
+/-- The classical form of the recursion: coupling gametes (`AB`, `ab`) lose `r D` and repulsion
 gametes (`Ab`, `aB`) gain `r D`. This identity holds for every real `r`; the biological domain
 is `0 ≤ r ≤ 1/2`. -/
 theorem recombine_eq_sub {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) (r : ℝ) (g : Bool × Bool) :
@@ -90,7 +90,7 @@ theorem recombine_eq_sub {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) (r : �
     simp only [recombine, alleleFreqFst, alleleFreqSnd, linkageDiseq, Fintype.sum_bool] <;>
     norm_num <;> linear_combination r * x (_, _) * hx
 
-/-- **Recombination preserves total gamete frequency.** Recombination keeps gamete frequencies summing to `1`. -/
+/-- Recombination keeps gamete frequencies summing to `1`. -/
 theorem sum_recombine {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) (r : ℝ) :
     ∑ g, recombine r x g = 1 := by
   rw [sum_four] at hx
@@ -98,13 +98,13 @@ theorem sum_recombine {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) (r : ℝ)
   linear_combination (1 - r + r * (x (true, true) + x (true, false) + x (false, true) +
     x (false, false) + 1)) * hx
 
-/-- **Recombination preserves nonnegativity of gamete frequencies.** Recombination keeps gamete frequencies nonnegative for `0 ≤ r ≤ 1`. -/
+/-- Recombination keeps gamete frequencies nonnegative for `0 ≤ r ≤ 1`. -/
 theorem recombine_nonneg {x : Bool × Bool → ℝ} (hx : ∀ g, 0 ≤ x g) {r : ℝ} (hr0 : 0 ≤ r)
     (hr1 : r ≤ 1) (g : Bool × Bool) : 0 ≤ recombine r x g :=
   add_nonneg (mul_nonneg (sub_nonneg.2 hr1) (hx g)) (mul_nonneg hr0 (mul_nonneg
     (Finset.sum_nonneg fun _ _ => hx _) (Finset.sum_nonneg fun _ _ => hx _)))
 
-/-- **Recombination preserves first-locus allele frequencies.** Allele frequencies at the first locus are unchanged by random mating (for every real
+/-- Allele frequencies at the first locus are unchanged by random mating (for every real
 `r`). -/
 theorem alleleFreqFst_recombine {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) (r : ℝ) (a : Bool) :
     alleleFreqFst (recombine r x) a = alleleFreqFst x a := by
@@ -112,7 +112,7 @@ theorem alleleFreqFst_recombine {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1)
   cases a <;> simp only [recombine, alleleFreqFst, alleleFreqSnd, Fintype.sum_bool] <;>
     linear_combination r * (x (_, true) + x (_, false)) * hx
 
-/-- **Recombination preserves second-locus allele frequencies.** Allele frequencies at the second locus are unchanged by random mating (for every real
+/-- Allele frequencies at the second locus are unchanged by random mating (for every real
 `r`). -/
 theorem alleleFreqSnd_recombine {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) (r : ℝ) (b : Bool) :
     alleleFreqSnd (recombine r x) b = alleleFreqSnd x b := by
@@ -120,7 +120,7 @@ theorem alleleFreqSnd_recombine {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1)
   cases b <;> simp only [recombine, alleleFreqFst, alleleFreqSnd, Fintype.sum_bool] <;>
     linear_combination r * (x (true, _) + x (false, _)) * hx
 
-/-- **Linkage disequilibrium decays by the factor $1 - r$.** Linkage disequilibrium decays by the factor `1 - r` per generation: `D' = (1 - r) D`
+/-- Linkage disequilibrium decays by the factor `1 - r` per generation: `D' = (1 - r) D`
 (for every real `r`). -/
 theorem linkageDiseq_recombine {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) (r : ℝ) :
     linkageDiseq (recombine r x) = (1 - r) * linkageDiseq x := by
@@ -133,7 +133,7 @@ theorem linkageDiseq_recombine {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) 
   linear_combination
     (-(r * (x (true, true) * x (false, false) - x (true, false) * x (false, true)))) * h
 
-/-- **Linkage disequilibrium after $t$ generations.** After `t` generations, `D_t = (1 - r)^t D_0`. -/
+/-- After `t` generations, `D_t = (1 - r)^t D_0`. -/
 theorem linkageDiseq_iterate {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) (r : ℝ) (t : ℕ) :
     linkageDiseq ((recombine r)^[t] x) = (1 - r) ^ t * linkageDiseq x := by
   have hsum : ∀ n : ℕ, ∑ g, (recombine r)^[n] x g = 1 := by
@@ -147,7 +147,7 @@ theorem linkageDiseq_iterate {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) (r
     rw [Function.iterate_succ_apply', linkageDiseq_recombine (hsum t), ih, pow_succ]
     ring
 
-/-- **Linkage disequilibrium tends to zero.** Linkage disequilibrium tends to `0` whenever `0 < r ≤ 1`; this contains the biological
+/-- Linkage disequilibrium tends to `0` whenever `0 < r ≤ 1`; this contains the biological
 range `0 < r ≤ 1/2`. For `r = 0` (complete linkage) `D` is constant. -/
 theorem tendsto_linkageDiseq_iterate {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) {r : ℝ}
     (hr0 : 0 < r) (hr1 : r ≤ 1) :
@@ -158,11 +158,11 @@ theorem tendsto_linkageDiseq_iterate {x : Bool × Bool → ℝ} (hx : ∑ g, x g
 
 /-! ### Haldane's map function -/
 
-/-- **Haldane's map function.** Haldane's map function `r(d) = (1 - e^{-2d}) / 2`: the recombination fraction between two
+/-- Haldane's map function `r(d) = (1 - e^{-2d}) / 2`: the recombination fraction between two
 loci at map distance `d` Morgans when crossovers form a Poisson process (no interference). -/
 noncomputable def haldane (d : ℝ) : ℝ := (1 - exp (-2 * d)) / 2
 
-/-- **Series for the probability of an odd Poisson count.** The probability that a Poisson count of mean `d` is odd, as a series:
+/-- The probability that a Poisson count of mean `d` is odd, as a series:
 `∑_{k odd} e^{-d} d^k / k! = (1 - e^{-2d}) / 2` (Haldane 1919). The series identity holds for
 every real `d`; it is a probability for `0 ≤ d`. -/
 theorem hasSum_poisson_odd (d : ℝ) :
@@ -187,7 +187,7 @@ theorem hasSum_poisson_odd (d : ℝ) :
       simpa only [range_two_mul_add_one, Set.mem_ofPred_eq] using hk
     simp only [ite_eq_right hodd]
 
-/-- **Haldane's map function from Poisson crossovers.** Haldane's map function (Haldane 1919): if the number of crossovers in an interval of map
+/-- Haldane's map function (Haldane 1919): if the number of crossovers in an interval of map
 length `d` Morgans is Poisson with mean `d`, the probability of an odd number of crossovers,
 i.e. of recombination between the ends of the interval, is `(1 - e^{-2d}) / 2`. -/
 theorem poissonMeasure_real_odd (d : ℝ≥0) :
@@ -208,19 +208,19 @@ theorem poissonMeasure_real_odd (d : ℝ≥0) :
   rw [hterms, ← ENNReal.ofReal_tsum_of_nonneg hnonneg hsum.summable, hsum.tsum_eq,
     ENNReal.toReal_ofReal (hsum.nonneg hnonneg)]
 
-/-- **Nonnegativity of Haldane's map function.** Haldane's map function is nonnegative at nonnegative distances. -/
+/-- Haldane's map function is nonnegative at nonnegative distances. -/
 theorem haldane_nonneg {d : ℝ} (hd : 0 ≤ d) : 0 ≤ haldane d := by
   have : exp (-2 * d) ≤ 1 := exp_le_one_iff.2 (by linarith)
   unfold haldane
   linarith
 
-/-- **Haldane's recombination fraction is below one half.** The recombination fraction is always below `1/2` (for every real `d`). -/
+/-- The recombination fraction is always below `1/2` (for every real `d`). -/
 theorem haldane_lt_half (d : ℝ) : haldane d < 1 / 2 := by
   unfold haldane
   have h := exp_pos (-2 * d)
   linarith
 
-/-- **Distant loci are unlinked in the limit.** Loci far apart are unlinked in the limit: `r → 1/2` as `d → ∞`. -/
+/-- Loci far apart are unlinked in the limit: `r → 1/2` as `d → ∞`. -/
 theorem tendsto_haldane_atTop : Tendsto haldane atTop (𝓝 (1 / 2)) := by
   have hlinear : Tendsto (fun d : ℝ => -2 * d) atTop atBot :=
     tendsto_id.const_mul_atTop_of_neg (by norm_num)
@@ -228,13 +228,13 @@ theorem tendsto_haldane_atTop : Tendsto haldane atTop (𝓝 (1 / 2)) := by
   change Tendsto (fun d : ℝ => (1 - exp (-2 * d)) / 2) atTop (𝓝 (1 / 2))
   simpa only [Function.comp_def, sub_zero] using (hexp.const_sub 1).div_const 2
 
-/-- **Inverse Haldane map function recovers map distance.** The inverse map function `d = -½ log(1 - 2r)` recovers the map distance. -/
+/-- The inverse map function `d = -½ log(1 - 2r)` recovers the map distance. -/
 theorem neg_half_log_haldane (d : ℝ) : -(1 / 2) * log (1 - 2 * haldane d) = d := by
   have : 1 - 2 * haldane d = exp (-2 * d) := by unfold haldane; ring
   rw [this, log_exp]
   ring
 
-/-- **Every recombination fraction below one half is attained.** Every `r < 1/2` is the recombination fraction at the distance `-½ log(1 - 2r)`. The
+/-- Every `r < 1/2` is the recombination fraction at the distance `-½ log(1 - 2r)`. The
 hypothesis keeps `log` on positive arguments: at `r = 1/2` the right side would use the junk
 value `log 0 = 0`. The distance is nonnegative exactly when `0 ≤ r`. -/
 theorem haldane_neg_half_log {r : ℝ} (hr : r < 1 / 2) :

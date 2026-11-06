@@ -40,14 +40,12 @@ homomorphism through the quotient and uses
 
 open Matrix
 
-/-- **Diagonal rotation.** For a real number $\theta$, the diagonal rotation through $\theta$ is
-the $2 \times 2$ complex diagonal matrix $\operatorname{diag}(e^{i\theta}, e^{-i\theta})$. -/
+/-- The diagonal rotation through angle `θ` in `SU₂`: the matrix
+`diag (exp (iθ), exp (-iθ))`. -/
 noncomputable def diagRotation (θ : ℝ) : Matrix (Fin 2) (Fin 2) ℂ :=
   !![Complex.exp (↑θ * Complex.I), 0; 0, Complex.exp (-(↑θ * Complex.I))]
 
-/-- **Diagonal rotations as diagonal matrices.** For every real number $\theta$, the diagonal
-rotation through $\theta$ is the diagonal matrix whose diagonal entries are $e^{i\theta}$ and
-$e^{-i\theta}$, in that order. -/
+/-- A diagonal rotation is a diagonal matrix. -/
 theorem diagRotation_eq_diagonal (θ : ℝ) : diagRotation θ =
     Matrix.diagonal ![Complex.exp (↑θ * Complex.I),
       Complex.exp (-(↑θ * Complex.I))] := by
@@ -69,8 +67,8 @@ theorem diagRotation_zero : diagRotation 0 = 1 := by
   ext i j
   fin_cases i <;> fin_cases j <;> simp
 
-/-- **Conjugate transpose of a diagonal rotation.** For every real number $\theta$, the conjugate
-transpose of the diagonal rotation through $\theta$ is the diagonal rotation through $-\theta$. -/
+/-- Conjugate-transpose of a diagonal rotation is the diagonal rotation
+through the negated angle. -/
 theorem star_diagRotation (θ : ℝ) : star (diagRotation θ) = diagRotation (-θ) := by
   rw [diagRotation_eq_diagonal, diagRotation_eq_diagonal, Matrix.star_eq_conjTranspose,
     Matrix.diagonal_conjTranspose]
@@ -78,9 +76,7 @@ theorem star_diagRotation (θ : ℝ) : star (diagRotation θ) = diagRotation (-�
   funext i
   fin_cases i <;> simp [← Complex.exp_conj]
 
-/-- **Diagonal rotations lie in $\mathrm{SU}(2)$.** For every real number $\theta$, the
-diagonal rotation through $\theta$ is a $2 \times 2$ complex matrix that is unitary and has
-determinant $1$, that is, it lies in $\mathrm{SU}(2)$. -/
+/-- Diagonal rotations lie in `SU₂`. -/
 theorem diagRotation_mem_specialUnitaryGroup (θ : ℝ) :
     diagRotation θ ∈ Matrix.specialUnitaryGroup (Fin 2) ℂ := by
   rw [Matrix.mem_specialUnitaryGroup_iff]
@@ -90,8 +86,7 @@ theorem diagRotation_mem_specialUnitaryGroup (θ : ℝ) :
   · rw [Matrix.det_fin_two]
     simp [diagRotation, ← Complex.exp_add]
 
-/-- **Diagonal rotation through a multiple of $2\pi$.** For every integer $n$, the diagonal
-rotation through $2\pi n$ is the $2 \times 2$ identity matrix. -/
+/-- A diagonal rotation through an integral multiple of `2π` is the identity. -/
 theorem diagRotation_int_mul_two_pi (n : ℤ) : diagRotation (n * (2 * Real.pi)) = 1 := by
   rw [diagRotation_eq_diagonal]
   have h1 : Complex.exp (↑n * (2 * ↑Real.pi) * Complex.I) = 1 := by
@@ -107,18 +102,14 @@ theorem diagRotation_int_mul_two_pi (n : ℤ) : diagRotation (n * (2 * Real.pi))
   funext i
   fin_cases i <;> simp [h1, h2]
 
-/-- **Diagonal rotations are $2\pi$-periodic.** For every real number $\theta$ and every integer
-$n$, the diagonal rotation through $\theta + 2\pi n$ equals the diagonal rotation through
-$\theta$. -/
+/-- The diagonal rotation through `θ + 2πn` is the same matrix as the
+diagonal rotation through `θ`. -/
 theorem diagRotation_add_int_mul_two_pi (θ : ℝ) (n : ℤ) :
     diagRotation (θ + n * (2 * Real.pi)) = diagRotation θ := by
   rw [← diagRotation_add, diagRotation_int_mul_two_pi, mul_one]
 
-/-- **Longitude subgroup.** The longitude subgroup of $\mathrm{SU}(2)$ is the subgroup of those
-elements of $\mathrm{SU}(2)$ that are the diagonal rotation through $\theta$ for some real number
-$\theta$.
-
-It is the longitude $\mathrm{Long}_i$ at the equator point $i$. -/
+/-- The fixed diagonal longitude subgroup of `SU₂`: the diagonal rotations.
+In the book this is `Long_i`, the longitude at the equator point `i`. -/
 def longitudeSubgroup : Subgroup (Matrix.specialUnitaryGroup (Fin 2) ℂ) where
   carrier := {M | ∃ θ : ℝ, (M : Matrix (Fin 2) (Fin 2) ℂ) = diagRotation θ}
   mul_mem' := by
@@ -134,33 +125,25 @@ def longitudeSubgroup : Subgroup (Matrix.specialUnitaryGroup (Fin 2) ℂ) where
       rw [← Matrix.star_eq_inv, Matrix.specialUnitaryGroup.coe_star]
     rw [ha, hθ, star_diagRotation]
 
-/-- **Diagonal rotation as a longitude element.** For a real number $\theta$, the diagonal
-rotation through $\theta$, regarded as an element of the longitude subgroup of
-$\mathrm{SU}(2)$. -/
+/-- The element of the longitude subgroup given by the diagonal rotation
+through `θ`. -/
 noncomputable def diagRotationToLongitude (θ : ℝ) : longitudeSubgroup :=
   ⟨⟨diagRotation θ, diagRotation_mem_specialUnitaryGroup θ⟩, ⟨θ, rfl⟩⟩
 
-/-- **Longitude elements multiply by adding angles.** For real numbers $a$ and $b$, in the
-longitude subgroup the product of the diagonal rotations through $a$ and through $b$ is the
-diagonal rotation through $a + b$. -/
+/-- Diagonal rotations compose by adding angles. -/
 theorem diagRotationToLongitude_mul (a b : ℝ) :
     diagRotationToLongitude a * diagRotationToLongitude b =
       diagRotationToLongitude (a + b) :=
   Subtype.ext (Subtype.ext (diagRotation_add a b))
 
-/-- **Equal rotation matrices give equal longitude elements.** For real numbers $a$ and $b$, if
-the diagonal rotations through $a$ and through $b$ are equal as matrices, then the elements of
-the longitude subgroup given by the diagonal rotations through $a$ and through $b$ are
-equal. -/
+/-- Two longitude elements with equal diagonal rotations are equal. -/
 theorem diagRotationToLongitude_eq_of_diagRotation_eq {a b : ℝ}
     (h : diagRotation a = diagRotation b) :
     diagRotationToLongitude a = diagRotationToLongitude b :=
   Subtype.ext (Subtype.ext h)
 
-/-- **The angle homomorphism into the longitude subgroup.** The homomorphism from the additive
-group $\mathbb{R}$ to the longitude subgroup, written additively, that sends a real number
-$\theta$ to the diagonal rotation through $\theta$, regarded as an element of the longitude
-subgroup. -/
+/-- The additive homomorphism `ℝ →+ Additive longitudeSubgroup` sending
+`θ` to the diagonal rotation through `θ`. -/
 noncomputable def diagRotationToLongitudeHom : ℝ →+ Additive longitudeSubgroup where
   toFun θ := Additive.ofMul (diagRotationToLongitude θ)
   map_zero' := by
@@ -172,12 +155,9 @@ noncomputable def diagRotationToLongitudeHom : ℝ →+ Additive longitudeSubgro
       Additive.ofMul (diagRotationToLongitude θ₁ * diagRotationToLongitude θ₂)
     exact congrArg Additive.ofMul (diagRotationToLongitude_mul θ₁ θ₂).symm
 
-/-- **Longitude map.** The longitude map is the group homomorphism from the circle group
-$\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, to the longitude subgroup of $\mathrm{SU}(2)$
-that sends the class of a real number $\theta$ to the diagonal rotation through $\theta$, that is,
-to $\cos\theta \cdot I + \sin\theta \cdot \operatorname{diag}(i, -i) =
-\operatorname{diag}(e^{i\theta}, e^{-i\theta})$, where $I$ is the $2 \times 2$ identity matrix.
-It is well defined because diagonal rotations are $2\pi$-periodic. -/
+/-- The longitude map `ℝ / 2πℤ → Long_i`, `θ ↦ cos θ • 1 + sin θ • diag (i, -i)`
+in matrix form: the diagonal rotation through `θ`, factored through the
+period `2π`. -/
 noncomputable def longitudeMap :
     Multiplicative (AddCircle (2 * Real.pi)) →* longitudeSubgroup :=
   AddMonoidHom.toMultiplicative
@@ -194,9 +174,8 @@ noncomputable def longitudeMap :
         congr 1
         exact Subtype.ext (Subtype.ext hdiag)))
 
-/-- **The longitude map on the class of an angle.** For every real number $\theta$, the longitude
-map sends the class of $\theta$ in $\mathbb{R}/2\pi\mathbb{Z}$ to the diagonal rotation through
-$\theta$, regarded as an element of the longitude subgroup. -/
+/-- The longitude map sends the class of `θ` to the diagonal rotation
+through `θ`. -/
 theorem longitudeMap_apply_ofAdd_mk (θ : ℝ) :
     longitudeMap (Multiplicative.ofAdd (↑θ : AddCircle (2 * Real.pi))) =
       diagRotationToLongitude θ := by
@@ -206,9 +185,8 @@ theorem longitudeMap_apply_ofAdd_mk (θ : ℝ) :
   rw [QuotientAddGroup.lift_mk]
   rfl
 
-/-- **When two diagonal rotations are equal.** For real numbers $a$ and $b$, the diagonal
-rotations through $a$ and through $b$ are equal if and only if $a = b + 2\pi n$ for some
-integer $n$. -/
+/-- Two diagonal rotations agree only if their angles differ by an
+integral multiple of `2π`. -/
 theorem diagRotation_eq_diagRotation_iff (a b : ℝ) :
     diagRotation a = diagRotation b ↔ ∃ n : ℤ, a = b + n * (2 * Real.pi) := by
   constructor
@@ -229,9 +207,7 @@ theorem diagRotation_eq_diagRotation_iff (a b : ℝ) :
   · rintro ⟨n, rfl⟩
     exact diagRotation_add_int_mul_two_pi b n
 
-/-- **Every point of $\mathbb{R}/2\pi\mathbb{Z}$ comes from a real angle.** Every element $x$ of
-the circle group $\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, is the class of some real
-number $a$. -/
+/-- Every element of the circle group is the class of a real angle. -/
 theorem exists_ofAdd_mk_eq (x : Multiplicative (AddCircle (2 * Real.pi))) :
     ∃ a : ℝ, x = Multiplicative.ofAdd (↑a : AddCircle (2 * Real.pi)) := by
   obtain ⟨a, ha⟩ := Quotient.exists_rep (Multiplicative.toAdd x)
@@ -241,11 +217,8 @@ theorem exists_ofAdd_mk_eq (x : Multiplicative (AddCircle (2 * Real.pi))) :
   congr 1
   exact ha.symm
 
-/-- **The longitude map is injective.** The longitude map from the circle group
-$\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, to the longitude subgroup of $\mathrm{SU}(2)$
-is injective.
-
-The angle class is recovered from the diagonal rotation via the complex exponential. -/
+/-- The quotient longitude map is injective: the angle class is recovered
+from the diagonal rotation via the exponential. -/
 theorem longitudeMap_injective : Function.Injective longitudeMap := by
   intro x y h
   obtain ⟨a, ha⟩ := exists_ofAdd_mk_eq x
@@ -260,9 +233,7 @@ theorem longitudeMap_injective : Function.Injective longitudeMap := by
   rw [hn]
   simp [zsmul_eq_mul]
 
-/-- **The longitude map is surjective.** The longitude map from the circle group
-$\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, to the longitude subgroup of $\mathrm{SU}(2)$
-is surjective: every element of the longitude subgroup is the image of some class. -/
+/-- The longitude map is surjective: every diagonal rotation is hit. -/
 theorem longitudeMap_surjective : Function.Surjective longitudeMap := by
   rintro ⟨M, hM⟩
   obtain ⟨θ, hθ⟩ := hM
@@ -270,16 +241,12 @@ theorem longitudeMap_surjective : Function.Surjective longitudeMap := by
   rw [longitudeMap_apply_ofAdd_mk]
   exact Subtype.ext (Subtype.ext hθ).symm
 
-/-- **The longitude map is bijective.** The longitude map from the circle group
-$\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, to the longitude subgroup of $\mathrm{SU}(2)$
-is bijective. -/
+/-- The longitude map is bijective. -/
 theorem longitudeMap_bijective : Function.Bijective longitudeMap :=
   ⟨longitudeMap_injective, longitudeMap_surjective⟩
 
-/-- **Isomorphism of the circle group with the longitude subgroup.** The group isomorphism from
-the circle group $\mathbb{R}/2\pi\mathbb{Z}$, written multiplicatively, onto the longitude
-subgroup of $\mathrm{SU}(2)$ given by the longitude map, which sends the class of a real number
-$\theta$ to the diagonal rotation through $\theta$. -/
+/-- The fixed diagonal longitude subgroup of `SU₂` is isomorphic to the circle group
+`ℝ / 2πℤ`. -/
 noncomputable def longitudeMulEquiv :
     Multiplicative (AddCircle (2 * Real.pi)) ≃* longitudeSubgroup :=
   MulEquiv.ofBijective longitudeMap longitudeMap_bijective

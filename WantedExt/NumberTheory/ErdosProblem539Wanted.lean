@@ -37,40 +37,24 @@ namespace MathlibExt.NumberTheory.ErdosProblem539Wanted
 checked against erdosproblems.com/539. The open `=Θ` problems are not ported.
 Status: resolved true (Erdős–Szemerédi `n^{1/2} ≪ h(n)`). -/
 
-/-- **Cofactor lower bound.** For natural numbers $n$ and $m$, $m$ is a cofactor lower bound for
-$n$ when, for every set $A$ of exactly $n$ positive integers, the set
-$\{a/\gcd(a,b) : a, b \in A\}$ has at least $m$ elements.
-
-Members of $A$ are required to be positive since the quotient $a/\gcd(a,b)$ is undefined at
-$a = b = 0$. -/
+/-- Every positive `n`-set has at least `m` cofactors. Members are required
+positive since the source quotient `a / (a, b)` is undefined at `(0, 0)`. -/
 def IsCofactorLowerBound (n m : ℕ) : Prop := ∀ A : Finset ℕ, A.card = n →
   (∀ a ∈ A, 0 < a) →
   m ≤ ((A ×ˢ A).image fun (a, b) ↦ a / a.gcd b).card
 
-/-- **Erdős cofactor threshold.** For a natural number $n$, the cofactor threshold $h(n)$ is the
-largest natural number $m$ such that for every set $A$ of exactly $n$ positive integers, the set
-$\{a/\gcd(a,b) : a, b \in A\}$ has at least $m$ elements. -/
+/-- Largest cofactor lower bound for `n`. -/
 noncomputable def cofactorThreshold (n : ℕ) : ℕ :=
   sSup {m | IsCofactorLowerBound n m}
 
-/-- **Statement of Erdős Problem 539.** Let $h(n)$ denote the cofactor threshold of $n$. The
-statement is that $\sqrt{n} = O(h(n))$ as $n \to \infty$, that is, there are a real constant $C$
-and an $n_0$ such that $\sqrt{n} \le C\,h(n)$ for all natural numbers $n \ge n_0$. -/
+/-- `√n` is big-O of the cofactor threshold. -/
 def conjecture : Prop :=
   (fun n : ℕ ↦ Real.sqrt (n : ℝ)) =O[atTop]
     fun n ↦ (cofactorThreshold n : ℝ)
 
 /--
-**Erdős Problem 539: square-root lower bound for the cofactor threshold.** For a natural number
-$n$, let $h(n)$ be the largest natural number $m$ such that for every set $A$ of exactly $n$
-positive integers, the set $\{a/\gcd(a,b) : a, b \in A\}$ has at least $m$ elements. Then
-$\sqrt{n} = O(h(n))$ as $n \to \infty$: there are a real constant $C$ and an $n_0$ such that
-$\sqrt{n} \le C\,h(n)$ for all natural numbers $n \ge n_0$.
-
-This lower bound was proved by Erdős and Szemerédi. The open problem of determining the exact
-order of growth of $h(n)$ is not part of this statement.
-
-Source: J.
+Resolved true: Proved by Erdos-Szemeredi (sqrt lower bound).  (The open Theta-asymptotic
+questions for the cofactor threshold remain unported; see formalization gaps.) Source: J.
 Schmitt, T. Gehrunger, J. Dekoninck, G. Bérczi, U. Kreitner, L. Price, D. Holmes, ProofCouncil:
 An LLM Agent for Solving Open Mathematical Problems, arXiv:2607.09474 (2026),
 https://arxiv.org/abs/2607.09474. Moved from `OpenConjectures/NumberTheory/ErdosProblem539`.

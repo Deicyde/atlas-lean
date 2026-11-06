@@ -44,7 +44,7 @@ open SimpleGraph Set
 
 namespace StatMech.Lattice
 
-/-- **Rotated region graph of a lattice subgraph.** The square lattice with the edge `crossEdge e` removed for every edge `e` of `G`. Since
+/-- The square lattice with the edge `crossEdge e` removed for every edge `e` of `G`. Since
 `crossEdge` is a global rotation, this is not the faithful dual complement; see
 `StatMech.Lattice.whb_faceRegion` for the version using `sharedPrimalEdge`. -/
 def regionGraph (G : SimpleGraph (Site 2)) : SimpleGraph (Site 2) where
@@ -62,7 +62,7 @@ def regionGraph (G : SimpleGraph (Site 2)) : SimpleGraph (Site 2) where
 theorem regionGraph_le_dual (G : SimpleGraph (Site 2)) :
     regionGraph G ≤ hypercubicLattice 2 := fun _ _ h => h.1
 
-/-- **Planar lattice subgraph of the square lattice.** A finite graph together with an injective map into `ℤ²` that sends edges to lattice edges. -/
+/-- A finite graph together with an injective map into `ℤ²` that sends edges to lattice edges. -/
 structure PlanarZ2Subgraph where
   /-- The vertex type. -/
   V : Type
@@ -79,7 +79,7 @@ structure PlanarZ2Subgraph where
 
 attribute [instance] PlanarZ2Subgraph.finV PlanarZ2Subgraph.decV
 
-/-- **Image of a planar lattice subgraph in the square lattice.** The image of a `PlanarZ2Subgraph` as a subgraph of the square lattice. -/
+/-- The image of a `PlanarZ2Subgraph` as a subgraph of the square lattice. -/
 noncomputable def imageGraph (P : PlanarZ2Subgraph) : SimpleGraph (Site 2) where
   Adj a b := ∃ x y : P.V, P.G.Adj x y ∧ P.emb x = a ∧ P.emb y = b
   symm := by
@@ -100,7 +100,7 @@ theorem imageGraph_le_lattice (P : PlanarZ2Subgraph) :
   rintro a b ⟨x, y, hadj, rfl, rfl⟩
   exact P.isSub hadj
 
-/-- **Geometric count of bounded regions.** The number of finite connected components of the region graph of `P`. -/
+/-- The number of finite connected components of the region graph of `P`. -/
 noncomputable def geometricRegionCount (P : PlanarZ2Subgraph) : ℕ :=
   Nat.card {c : (regionGraph (imageGraph P)).ConnectedComponent // c.supp.Finite}
 
@@ -152,7 +152,7 @@ theorem regionGraph_adj_of_exterior (P : PlanarZ2Subgraph) (R : ℕ)
     (regionGraph (imageGraph P)).Adj f g :=
   ⟨hadj, exterior_dual_edge_not_deleted P R hR hf⟩
 
-/-- **Box exterior embeds in the region graph.** Outside a box containing the image of `P`, the lattice embeds in the region graph. -/
+/-- Outside a box containing the image of `P`, the lattice embeds in the region graph. -/
 noncomputable def exteriorToRegionHom (P : PlanarZ2Subgraph) (R : ℕ)
     (hR : ∀ v : P.V, P.emb v ∈ box 2 R) :
     ((hypercubicLattice 2).induce (exterior 2 R)) →g (regionGraph (imageGraph P)) where

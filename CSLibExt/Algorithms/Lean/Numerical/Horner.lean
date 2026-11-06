@@ -37,12 +37,7 @@ namespace Cslib.Algorithms.Lean.TimeM
 
 variable {R : Type u} [CommSemiring R]
 
-/-- **Horner evaluation with operation count.** Let $R$ be a commutative semiring, let
-$x \in R$, and let $a_0, \dots, a_{n-1} \in R$ be coefficients listed in ascending order of
-degree. Horner evaluation starts with the accumulator $v = 0$ and, for $i = n-1, \dots, 0$
-in turn, replaces $v$ by $a_i + x v$, charging two operations (one multiplication and one
-addition) for each step. It returns the final accumulator together with the total number of
-operations charged, a natural number. -/
+/-- Execute Horner's nested evaluation on all coefficients, retaining their operation cost. -/
 def hornerEval {n : Nat} (x : R) (coefficients : Fin n → R) : TimeM Nat R :=
   (List.ofFn coefficients).foldrM (fun coefficient value => do
     ✓[2]
@@ -59,19 +54,14 @@ private theorem hornerFold_time (x : R) (coefficients : List R) :
       simp only [List.foldrM_cons, time_bind, time_tick, time_pure,
         Nat.add_zero, List.length_cons, ih, Nat.mul_add, Nat.mul_one]
 
-/-- **Horner evaluation uses $2n$ operations.** For every commutative semiring $R$, every
-$x \in R$ and all coefficients $a_0, \dots, a_{n-1} \in R$, Horner evaluation of
-$a_0, \dots, a_{n-1}$ at $x$ charges exactly $2n$ operations, one multiplication and one
-addition per coefficient. -/
+/-- Every coefficient executes exactly one multiplication and one addition. -/
 @[simp]
 theorem hornerEval_time {n : Nat} (x : R) (coefficients : Fin n → R) :
     (hornerEval x coefficients).time = 2 * n := by
   simpa only [hornerEval, List.length_ofFn] using
     hornerFold_time x (List.ofFn coefficients)
 
-/-- **Horner evaluation computes the coefficient sum.** For every commutative semiring $R$,
-every $x \in R$ and all coefficients $a_0, \dots, a_{n-1} \in R$, the value returned by Horner
-evaluation of $a_0, \dots, a_{n-1}$ at $x$ is $\sum_{i=0}^{n-1} a_i x^i$. -/
+/-- The actual fold returns the complete coefficient/power sum in the source order. -/
 theorem hornerEval_ret_eq_sum {n : Nat} (x : R) (coefficients : Fin n → R) :
     (hornerEval x coefficients).ret = ∑ i : Fin n, coefficients i * x ^ i.val := by
   induction n with
@@ -89,20 +79,14 @@ theorem hornerEval_ret_eq_sum {n : Nat} (x : R) (coefficients : Fin n → R) :
       simp only [Fin.val_succ, pow_succ]
       ac_rfl
 
-/-- **Horner evaluation is polynomial evaluation.** For every commutative semiring $R$,
-every $x \in R$ and all coefficients $a_0, \dots, a_{n-1} \in R$, the value returned by Horner
-evaluation of $a_0, \dots, a_{n-1}$ at $x$ equals $p(x)$, where
-$p = a_0 + a_1 X + \dots + a_{n-1} X^{n-1} \in R[X]$ is the polynomial with these
-coefficients. -/
+/-- Erasing the executed cost gives evaluation of the canonical coefficient polynomial. -/
 theorem hornerEval_ret_eq_eval [DecidableEq R] {n : Nat} (x : R)
     (coefficients : Fin n → R) :
     (hornerEval x coefficients).ret = (Polynomial.ofFn n coefficients).eval x := by
   rw [hornerEval_ret_eq_sum, Polynomial.ofFn_eq_sum_monomial, Polynomial.eval_finsetSum]
   simp only [Polynomial.eval_monomial]
 
-/-- **Horner evaluation of the empty coefficient list.** For every commutative semiring $R$
-and every $x \in R$, Horner evaluation at $x$ with no coefficients ($n = 0$) returns $0$
-and charges $0$ operations. -/
+/-- The total extension to no coefficients computes zero without arithmetic. -/
 @[simp]
 theorem hornerEval_empty (x : R) (coefficients : Fin 0 → R) :
     hornerEval x coefficients = ⟨0, 0⟩ := by
@@ -110,12 +94,7 @@ theorem hornerEval_empty (x : R) (coefficients : Fin 0 → R) :
   · simp [hornerEval_ret_eq_sum]
   · simp
 
-/-- **Horner evaluation of a constant polynomial.** For every commutative semiring $R$,
-every $x \in R$ and every single coefficient $a_0 \in R$ ($n = 1$), Horner evaluation of
-$a_0$ at $x$ returns $a_0$ and charges $2$ operations.
-
-The two operations are the multiplication $x \cdot 0$ and the addition $a_0 + x \cdot 0$,
-which are executed because the accumulator starts at zero. -/
+/-- Zero initialization retains the two executed operations for a constant polynomial. -/
 @[simp]
 theorem hornerEval_singleton (x : R) (coefficients : Fin 1 → R) :
     hornerEval x coefficients = ⟨coefficients 0, 2⟩ := by
@@ -123,9 +102,7 @@ theorem hornerEval_singleton (x : R) (coefficients : Fin 1 → R) :
   · simp [hornerEval_ret_eq_sum]
   · simp
 
-/-- **Horner evaluation at zero.** For every commutative semiring $R$ and all coefficients
-$a_0, \dots, a_n \in R$ (at least one coefficient), the value returned by Horner evaluation
-of $a_0, \dots, a_n$ at $x = 0$ is $a_0$. -/
+/-- At zero a nonempty coefficient vector returns its constant coefficient. -/
 @[simp]
 theorem hornerEval_zero {n : Nat} (coefficients : Fin (n + 1) → R) :
     (hornerEval 0 coefficients).ret = coefficients 0 := by

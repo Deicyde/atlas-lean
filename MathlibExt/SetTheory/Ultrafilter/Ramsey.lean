@@ -33,10 +33,8 @@ namespace MetaMathlibExt
 
 -- Logic 32: Ramsey ultrafilter
 
-/-- **Ramsey ultrafilter.** An ultrafilter $U$ on $\mathbb{N}$ is *Ramsey* if for every sequence
-$(A_n)_{n \in \mathbb{N}}$ of pairwise disjoint subsets of $\mathbb{N}$ whose union is
-$\mathbb{N}$ and such that $A_n \notin U$ for all $n$, there is $X \in U$ such that
-$X \cap A_n$ has at most one element for every $n$.
+/-- An ultrafilter U on ℕ is *Ramsey* if for every countable partition {Aₙ} of ℕ with Aₙ ∉ U for all
+n, there is X ∈ U with |X ∩ Aₙ| ≤ 1 for each n.
 -/
 def IsRamseyUltrafilter (U : Ultrafilter ℕ) : Prop :=
   ∀ A : ℕ → Set ℕ, Pairwise (Disjoint on A) → (⋃ n, A n) = univ → (∀ n, A n ∉ U) →

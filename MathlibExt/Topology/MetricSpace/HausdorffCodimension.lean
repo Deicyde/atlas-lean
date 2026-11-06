@@ -29,24 +29,16 @@ namespace Set
 
 variable {X : Type*} [EMetricSpace X]
 
-/-- **Lower bound on Hausdorff codimension.** Let $S$ be a subset of an extended metric space
-and let $n, c$ be natural numbers. The set $S$ has Hausdorff codimension at least $c$ in
-dimension $n$ if $S$ is empty or its Hausdorff dimension satisfies $\dim_H S + c \le n$, the
-inequality being taken in $[0, \infty]$.
-
-The empty-set case plays the role of the convention $\dim_H \emptyset = -\infty$. -/
+/-- `S` has Hausdorff codimension at least `c` in dimension `n`. -/
 def HasHausdorffCodimAtLeast (S : Set X) (n c : ℕ) : Prop :=
   S = ∅ ∨ dimH S + (c : ℝ≥0∞) ≤ (n : ℝ≥0∞)
 
-/-- **The empty set has every codimension.** In an extended metric space, the empty set has
-Hausdorff codimension at least $c$ in dimension $n$ for all natural numbers $n$ and $c$. -/
+/-- The empty set has every codimension. -/
 theorem hasHausdorffCodimAtLeast_empty (n c : ℕ) :
     (∅ : Set X).HasHausdorffCodimAtLeast n c :=
   Or.inl rfl
 
-/-- **Subsets inherit a codimension bound.** Let $T \subseteq S$ be subsets of an extended
-metric space and let $n, c$ be natural numbers. If $S$ has Hausdorff codimension at least $c$
-in dimension $n$, then so does $T$. -/
+/-- Codimension is monotone in the set. -/
 theorem HasHausdorffCodimAtLeast.mono {S T : Set X} {n c : ℕ}
     (hS : S.HasHausdorffCodimAtLeast n c) (hTS : T ⊆ S) :
     T.HasHausdorffCodimAtLeast n c := by
@@ -54,9 +46,7 @@ theorem HasHausdorffCodimAtLeast.mono {S T : Set X} {n c : ℕ}
   · exact Or.inl (Set.subset_empty_iff.mp hTS)
   · exact Or.inr (le_trans (add_le_add_left (dimH_mono hTS) _) h)
 
-/-- **Sets of codimension larger than the dimension are empty.** Let $S$ be a subset of an
-extended metric space and let $n < c$ be natural numbers. If $S$ has Hausdorff codimension at
-least $c$ in dimension $n$, then $S$ is empty. -/
+/-- If `n < c`, only the empty set has the codimension. -/
 theorem HasHausdorffCodimAtLeast.eq_empty_of_lt {S : Set X} {n c : ℕ}
     (hS : S.HasHausdorffCodimAtLeast n c) (hlt : n < c) : S = ∅ := by
   rcases hS with rfl | h
@@ -66,9 +56,7 @@ theorem HasHausdorffCodimAtLeast.eq_empty_of_lt {S : Set X} {n c : ℕ}
     have hcn : c ≤ n := by exact_mod_cast hle
     exact absurd hcn (by omega)
 
-/-- **A dimension bound gives a codimension bound.** Let $S$ be a subset of an extended metric
-space and let $c \le n$ be natural numbers. If the Hausdorff dimension of $S$ satisfies
-$\dim_H S \le n - c$, then $S$ has Hausdorff codimension at least $c$ in dimension $n$. -/
+/-- Sufficient `dimH` bound (with `c ≤ n`). -/
 theorem hasHausdorffCodimAtLeast_of_dimH_le {S : Set X} {n c : ℕ}
     (hcn : c ≤ n) (hdim : dimH S ≤ ((n - c : ℕ) : ℝ≥0∞)) :
     S.HasHausdorffCodimAtLeast n c := by
@@ -78,10 +66,7 @@ theorem hasHausdorffCodimAtLeast_of_dimH_le {S : Set X} {n c : ℕ}
   rw [hnc]
   exact add_le_add_left hdim _
 
-/-- **Characterization of Hausdorff codimension.** Let $S$ be a subset of an extended metric
-space and let $n, c$ be natural numbers. Then $S$ has Hausdorff codimension at least $c$ in
-dimension $n$ if and only if either $S$ is empty, or both $c \le n$ and the Hausdorff
-dimension of $S$ satisfies $\dim_H S \le n - c$. -/
+/-- Unfolding via truncated subtraction, requiring `c ≤ n`. -/
 theorem hasHausdorffCodimAtLeast_iff {S : Set X} {n c : ℕ} :
     S.HasHausdorffCodimAtLeast n c ↔
       S = ∅ ∨ (c ≤ n ∧ dimH S ≤ ((n - c : ℕ) : ℝ≥0∞)) := by

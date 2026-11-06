@@ -98,24 +98,24 @@ section Algorithm
 
 variable {X : Type*} [DecidableEq X]
 
-/-- **Initial cluster dissimilarity in neighbor joining.** The dissimilarity between clusters at the start of neighbor joining: on singletons,
+/-- The dissimilarity between clusters at the start of neighbor joining: on singletons,
 `initialDist d {x} {y} = d x y` (only singleton values are used). -/
 def initialDist (d : X → X → ℝ) (u v : Finset X) : ℝ :=
   ∑ x ∈ u, ∑ y ∈ v, d x y
 
-/-- **Neighbor-joining Q-criterion.** The Studier–Keppler form of the neighbor-joining criterion on the cluster set `S`:
+/-- The Studier–Keppler form of the neighbor-joining criterion on the cluster set `S`:
 `Q(a, b) = (|S| - 2) D a b - ∑_{c ∈ S} D a c - ∑_{c ∈ S} D b c`. -/
 def qCriterion (S : Finset (Finset X)) (D : Finset X → Finset X → ℝ) (a b : Finset X) : ℝ :=
   ((S.card : ℝ) - 2) * D a b - ∑ c ∈ S, D a c - ∑ c ∈ S, D b c
 
-/-- **Cluster dissimilarity after a neighbor-joining step.** The cluster dissimilarity after joining `a` and `b`: the new cluster `a ∪ b` is at
+/-- The cluster dissimilarity after joining `a` and `b`: the new cluster `a ∪ b` is at
 `(D a c + D b c - D a b) / 2` from every other cluster `c`, and at `0` from itself; other
 values are unchanged. -/
 noncomputable def joinDist (D : Finset X → Finset X → ℝ) (a b : Finset X) (u v : Finset X) : ℝ :=
   if u = a ∪ b then (if v = a ∪ b then 0 else (D a v + D b v - D a b) / 2)
   else if v = a ∪ b then (D a u + D b u - D a b) / 2 else D u v
 
-/-- **Runs of neighbor joining.** `NJRun d S D C`: some run of neighbor joining on the dissimilarity `d` reaches the cluster
+/-- `NJRun d S D C`: some run of neighbor joining on the dissimilarity `d` reaches the cluster
 set `S` with cluster dissimilarity `D`, having formed the clusters in `C`. A join is allowed
 while at least four clusters remain, for any pair of distinct clusters minimizing
 `qCriterion`. -/
@@ -134,7 +134,7 @@ end Algorithm
 
 /-! ### Binary phylogenetic trees and their splits -/
 
-/-- **Binary phylogenetic tree.** `G` with the taxon placement `ι` is a **binary phylogenetic `X`-tree**: `G` is a tree,
+/-- `G` with the taxon placement `ι` is a **binary phylogenetic `X`-tree**: `G` is a tree,
 `ι` is injective, the leaves (degree-one vertices) are exactly the taxa, and every other
 vertex has degree three. -/
 def IsBinaryPhylogeneticTree {X : Type*} {V : Type*} [Fintype V] (G : SimpleGraph V)
@@ -143,13 +143,13 @@ def IsBinaryPhylogeneticTree {X : Type*} {V : Type*} [Fintype V] (G : SimpleGrap
     ∀ v, v ∉ Set.range ι → G.degree v = 3
 
 open scoped Classical in
-/-- **Taxa on one side of a tree edge.** The taxa on the `a`-side of the edge `{a, b}`: those whose vertex is still joined to `a`
+/-- The taxa on the `a`-side of the edge `{a, b}`: those whose vertex is still joined to `a`
 once the edge `{a, b}` is deleted. -/
 noncomputable def side {X : Type*} [Fintype X] {V : Type*} (G : SimpleGraph V) (ι : X → V)
     (a b : V) : Finset X :=
   univ.filter fun z => (G.deleteEdges {s(a, b)}).Reachable (ι z) a
 
-/-- **Contribution of a split to the neighbor-joining score.** The contribution of one split `{A, Aᶜ}` to the neighbor-joining score of the pair `x, y`:
+/-- The contribution of one split `{A, Aᶜ}` to the neighbor-joining score of the pair `x, y`:
 the number of taxa on the far side of the split when `x, y` lie on the same side, and `1`
 when the split separates them. -/
 def splitGain {X : Type*} [Fintype X] [DecidableEq X] (A : Finset X) (x y : X) : ℝ :=
@@ -186,7 +186,7 @@ private lemma mem_side {X : Type*} [Fintype X] {V : Type*} {G : SimpleGraph V} {
   classical
   simp [side]
 
-/-- **Two sides of a tree edge partition the taxa.** In a tree, the two sides of an edge partition the taxa. -/
+/-- In a tree, the two sides of an edge partition the taxa. -/
 theorem side_swap {X : Type*} [Fintype X] [DecidableEq X] {V : Type*} {G : SimpleGraph V}
     {ι : X → V} (hG : G.IsTree) {a b : V} (hab : G.Adj a b) :
     side G ι b a = univ \ side G ι a b := by
@@ -199,7 +199,7 @@ theorem side_swap {X : Type*} [Fintype X] [DecidableEq X] {V : Type*} {G : Simpl
   · intro ha
     exact (reach_or hG.connected (ι z)).resolve_left ha
 
-/-- **Splits of two tree edges are compatible.** In a tree, the splits of any two edges are compatible: one side of the first edge lies
+/-- In a tree, the splits of any two edges are compatible: one side of the first edge lies
 inside one side of the second. -/
 theorem side_compat {X : Type*} [Fintype X] {V : Type*} {G : SimpleGraph V} {ι : X → V}
     (hG : G.IsTree) {a b c e : V} (hab : G.Adj a b) (hce : G.Adj c e) :
@@ -248,7 +248,7 @@ theorem side_compat {X : Type*} [Fintype X] {V : Type*} {G : SimpleGraph V} {ι 
     · exact Or.inr (Or.inr (Or.inl h))
     · exact Or.inr (Or.inr (Or.inr h))
 
-/-- **Leaf side of a pendant edge.** The leaf side of a pendant edge holds only the leaf's taxon. -/
+/-- The leaf side of a pendant edge holds only the leaf's taxon. -/
 theorem side_leaf {X : Type*} [Fintype X] {V : Type*} [Fintype V] {G : SimpleGraph V}
     [DecidableRel G.Adj] {ι : X → V} (hT : IsBinaryPhylogeneticTree G ι) {z : X} {b : V}
     (hb : G.Adj (ι z) b) : side G ι (ι z) b = {z} := by
@@ -316,7 +316,7 @@ private lemma side_subset {X : Type*} [Fintype X] {V : Type*} {G : SimpleGraph V
   rw [mem_side] at hz ⊢
   exact reach_of_reach hG hac hcb hz
 
-/-- **Every edge side of a binary phylogenetic tree is nonempty.** Every side of every edge of a binary phylogenetic tree holds a taxon. -/
+/-- Every side of every edge of a binary phylogenetic tree holds a taxon. -/
 theorem side_nonempty {X : Type*} [Fintype X] {V : Type*} [Fintype V] {G : SimpleGraph V}
     [DecidableRel G.Adj] {ι : X → V} (hT : IsBinaryPhylogeneticTree G ι) {a b : V}
     (hab : G.Adj a b) : (side G ι a b).Nonempty := by
@@ -352,7 +352,7 @@ theorem side_nonempty {X : Type*} [Fintype X] {V : Type*} [Fintype V] {G : Simpl
         simp only [Finset.mem_filter, Finset.mem_univ, true_and] at this
         exact not_reach hT.1 hc.symm this.symm
 
-/-- **Edge side at an internal vertex as a disjoint union.** At an internal vertex `a` with neighbor `b`, the `a`-side of `{a, b}` is the disjoint union
+/-- At an internal vertex `a` with neighbor `b`, the `a`-side of `{a, b}` is the disjoint union
 of the far sides of the other two edges at `a`. -/
 theorem side_eq_union {X : Type*} [Fintype X] [DecidableEq X] {V : Type*} [Fintype V]
     {G : SimpleGraph V} [DecidableRel G.Adj] {ι : X → V} (hT : IsBinaryPhylogeneticTree G ι)
@@ -783,7 +783,7 @@ theorem exists_eq_pair_of_isMax {X : Type*} [Fintype X] [DecidableEq X] {E : Typ
 
 /-! ### The Q-criterion as a sum over splits -/
 
-/-- **Q-criterion of two singleton clusters.** The Q-criterion of two singleton clusters at the start of neighbor joining:
+/-- The Q-criterion of two singleton clusters at the start of neighbor joining:
 `Q({x}, {y}) = (|X| - 2) d x y - ∑_z d x z - ∑_z d y z`. -/
 theorem qCriterion_singleton {X : Type*} [Fintype X] [DecidableEq X] (d : X → X → ℝ)
     (x y : X) :
@@ -1626,7 +1626,7 @@ private lemma inv_final {X : Type*} [Fintype X] [DecidableEq X] {E : Type*}
 
 /-! ### Assembly -/
 
-/-- **A singleton side is a pendant leaf side.** A side holding a single taxon `z` is the leaf side of `z`'s pendant edge. -/
+/-- A side holding a single taxon `z` is the leaf side of `z`'s pendant edge. -/
 theorem eq_of_side_eq_singleton {X : Type*} [Fintype X] {V : Type*}
     [Fintype V] {G : SimpleGraph V} [DecidableRel G.Adj] {ι : X → V}
     (hT : IsBinaryPhylogeneticTree G ι) {c a : V} (hca : G.Adj c a) {z : X}
@@ -1643,7 +1643,7 @@ theorem eq_of_side_eq_singleton {X : Type*} [Fintype X] {V : Type*}
     have := (side_nonempty hT h₂.symm).card_pos
     omega
 
-/-- **A two-taxon side forms a cherry.** If a side of the edge `{a, b}` is the pair `{x, y}`, then `a` is a common neighbor of the
+/-- If a side of the edge `{a, b}` is the pair `{x, y}`, then `a` is a common neighbor of the
 leaves `ι x` and `ι y`: they form a cherry. -/
 theorem adj_adj_of_side_eq_pair {X : Type*} [Fintype X] [DecidableEq X] {V : Type*}
     [Fintype V] {G : SimpleGraph V} [DecidableRel G.Adj] {ι : X → V}

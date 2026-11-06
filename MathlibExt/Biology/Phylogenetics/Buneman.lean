@@ -60,7 +60,7 @@ between the vertices of `x` and `y` is then `g x x + g y y - 2 g x y = d x y`.
 
 namespace MathlibExt.Biology.Phylogenetics.Buneman
 
-/-- **Tree metric.** `d` is a **tree metric**: there are a finite tree `G` on a vertex type `V`, positive edge
+/-- `d` is a **tree metric**: there are a finite tree `G` on a vertex type `V`, positive edge
 lengths `w`, and a placement `ι` of the taxa on vertices such that `d x y` is the total length
 of the (unique) path from `ι x` to `ι y`. -/
 def IsTreeMetric {X : Type*} (d : X → X → ℝ) : Prop :=
@@ -68,7 +68,7 @@ def IsTreeMetric {X : Type*} (d : X → X → ℝ) : Prop :=
     (ι : X → V), (∀ e ∈ G.edgeSet, 0 < w e) ∧
       ∀ x y (p : G.Walk (ι x) (ι y)), p.IsPath → d x y = (p.edges.map w).sum
 
-/-- **Four-point condition.** The **four-point condition**: `d x y + d z t ≤ max (d x z + d y t) (d x t + d y z)`. -/
+/-- The **four-point condition**: `d x y + d z t ≤ max (d x z + d y t) (d x t + d y z)`. -/
 def FourPointCondition {X : Type*} (d : X → X → ℝ) : Prop :=
   ∀ x y z t, d x y + d z t ≤ max (d x z + d y t) (d x t + d y z)
 

@@ -255,7 +255,7 @@ private theorem avg_exp_le (s : Finset ι) (c : ι → ℝ) {R : ℝ} (hR : 0 < 
   exact mul_le_mul_of_nonneg_right h3 (Real.exp_pos _).le
 
 /--
-**Hoeffding's bound for sampling without replacement.** Hoeffding's upper-tail bound for sampling without replacement, stated as a count.
+Hoeffding's upper-tail bound for sampling without replacement, stated as a count.
 
 Among the `n`-element subsets `S` of `s`, at most
 `exp (-2 * n * t ^ 2) * choose (#s) n` satisfy

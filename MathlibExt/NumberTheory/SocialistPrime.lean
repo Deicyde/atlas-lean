@@ -31,10 +31,9 @@ Equality of natural remainders is equivalent to congruence mod `p` for `p>0`.
 
 namespace Nat
 
-/-- **Socialist primes.** A natural number $p$ is a socialist prime if $p$ is prime, $p > 5$, and
-the factorials $2!, 3!, \ldots, (p-1)!$ have pairwise distinct remainders modulo $p$.
-
-Source: Trudgian, arXiv:1310.6403v2, line 24. -/
+/-- A natural number `p` is a socialist prime iff `p` is prime, `5 < p`,
+and the factorials `k! % p` for `k ∈ [2, p-1]` are pairwise distinct.
+Trudgian, arXiv:1310.6403v2, line 24. -/
 def IsSocialistPrime (p : ℕ) : Prop :=
   Nat.Prime p ∧ 5 < p ∧
     Set.Pairwise (Set.Icc 2 (p - 1)) (fun k l => k.factorial % p ≠ l.factorial % p)
@@ -49,9 +48,8 @@ theorem IsSocialistPrime.pairwise {p : ℕ} (h : IsSocialistPrime p) :
     Set.Pairwise (Set.Icc 2 (p - 1)) (fun k l => k.factorial % p ≠ l.factorial % p) :=
   h.2.2
 
-/-- **Distinct factorial residues modulo a socialist prime.** Let $p$ be a socialist prime. If $a$
-and $b$ are distinct natural numbers with $2 \le a \le p - 1$ and $2 \le b \le p - 1$, then
-$a!$ and $b!$ have different remainders modulo $p$. -/
+/-- Elimination for the pairwise clause: distinct indices in `[2,p-1]`
+have distinct factorial residues mod `p`. -/
 theorem IsSocialistPrime.factorial_mod_ne {p : ℕ} (h : IsSocialistPrime p)
     {a b : ℕ} (ha : a ∈ Set.Icc 2 (p - 1)) (hb : b ∈ Set.Icc 2 (p - 1))
     (hab : a ≠ b) : a.factorial % p ≠ b.factorial % p :=

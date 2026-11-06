@@ -31,9 +31,7 @@ public import Mathlib
 
 namespace MathlibExt.Geometry.CrystallographicShared
 
-/-- **Euclidean space $\mathbb{R}^d$.** For a natural number $d$, $E(d)$ is the $d$-dimensional
-Euclidean space $\mathbb{R}^d$, with coordinates indexed by $0, 1, \dots, d - 1$ and the standard
-inner product. -/
+/-- Euclidean space in dimension `d`. -/
 abbrev E (d : ℕ) := EuclideanSpace ℝ (Fin d)
 
 abbrev EuclideanIsom (d : ℕ) := E d ≃ᵃⁱ[ℝ] E d

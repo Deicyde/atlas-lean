@@ -80,24 +80,24 @@ open Filter
 
 namespace MathlibExt.Biology.PopulationGenetics.LuriaDelbruck
 
-/-- **Lea–Coulson clone-size law.** The **Lea–Coulson clone-size law** `P(size = j) = 1 / (j (j + 1))` for `j ≥ 1`
+/-- The **Lea–Coulson clone-size law** `P(size = j) = 1 / (j (j + 1))` for `j ≥ 1`
 (`P(size = 0) = 0`). -/
 noncomputable def cloneProb (j : ℕ) : ℝ :=
   if j = 0 then 0 else 1 / ((j : ℝ) * (j + 1))
 
-/-- **Convolution power of a sequence on the naturals.** The `k`-fold convolution power of a sequence on `ℕ`: `p^{*0} = δ₀` and
+/-- The `k`-fold convolution power of a sequence on `ℕ`: `p^{*0} = δ₀` and
 `p^{*(k+1)}(n) = ∑_{i ≤ n} p(i) p^{*k}(n - i)`. -/
 noncomputable def convPow (p : ℕ → ℝ) : ℕ → ℕ → ℝ
   | 0, n => if n = 0 then 1 else 0
   | k + 1, n => ∑ i ∈ range (n + 1), p i * convPow p k (n - i)
 
-/-- **Luria–Delbrück distribution.** The **Luria–Delbrück probability** of `n` mutants with expected mutation number `m`: the
+/-- The **Luria–Delbrück probability** of `n` mutants with expected mutation number `m`: the
 compound-Poisson law `∑_k e^{-m} m^k / k! · cloneProb^{*k}(n)`. Since clones have size at
 least `1`, only `k ≤ n` contribute. -/
 noncomputable def ldPmf (m : ℝ) (n : ℕ) : ℝ :=
   ∑ k ∈ range (n + 1), exp (-m) * m ^ k / k.factorial * convPow cloneProb k n
 
-/-- **Closed form of the clone-size generating function.** The clone-size generating function `h(z) = 1 + (1 / z - 1) log (1 - z)`. -/
+/-- The clone-size generating function `h(z) = 1 + (1 / z - 1) log (1 - z)`. -/
 noncomputable def clonePgf (z : ℝ) : ℝ :=
   1 + (1 / z - 1) * log (1 - z)
 
@@ -232,7 +232,7 @@ theorem integral_cloneSize {j : ℕ} (hj : 1 ≤ j) :
   field_simp
   ring
 
-/-- **The clone-size law sums to one.** The clone-size law sums to `1`. -/
+/-- The clone-size law sums to `1`. -/
 theorem hasSum_cloneProb : HasSum cloneProb 1 := by
   have hsum (N : ℕ) :
       ∑ i ∈ range N, cloneProb (i + 1) = 1 - 1 / (N + 1 : ℝ) := by
@@ -282,7 +282,7 @@ from the proportion of cultures with no mutants, `m = -log p₀`. -/
 theorem p0_method (m : ℝ) : m = -log (ldPmf m 0) := by
   rw [ldPmf_zero, log_exp, neg_neg]
 
-/-- **Nonnegativity of Luria–Delbrück probabilities.** The Luria–Delbrück probabilities are nonnegative for `m ≥ 0`. -/
+/-- The Luria–Delbrück probabilities are nonnegative for `m ≥ 0`. -/
 theorem ldPmf_nonneg {m : ℝ} (hm : 0 ≤ m) (n : ℕ) : 0 ≤ ldPmf m n := by
   unfold ldPmf
   apply sum_nonneg
@@ -290,7 +290,7 @@ theorem ldPmf_nonneg {m : ℝ} (hm : 0 ≤ m) (n : ℕ) : 0 ≤ ldPmf m n := by
   exact mul_nonneg (div_nonneg (mul_nonneg (exp_pos _).le (pow_nonneg hm _))
     (Nat.cast_nonneg _)) (convPow_nonneg cloneProb cloneProb_nonneg k n)
 
-/-- **The Luria–Delbrück probabilities sum to one.** The Luria–Delbrück probabilities sum to `1` (for `m ≥ 0`). -/
+/-- The Luria–Delbrück probabilities sum to `1` (for `m ≥ 0`). -/
 theorem hasSum_ldPmf {m : ℝ} (hm : 0 ≤ m) : HasSum (ldPmf m) 1 := by
   convert hasSum_compound cloneProb cloneProb_nonneg (by simp [cloneProb])
     hasSum_cloneProb hm using 1
@@ -312,7 +312,7 @@ theorem hasSum_ldPmf_mul_pow {m : ℝ} (hm : 0 ≤ m) {z : ℝ} (hz0 : 0 < z) (h
   unfold clonePgf
   ring
 
-/-- **Power form of the Lea–Coulson generating function.** The Lea–Coulson generating function in power form:
+/-- The Lea–Coulson generating function in power form:
 `exp (m (1 / z - 1) log (1 - z)) = (1 - z)^{m (1 - z) / z}` for `z < 1`, `z ≠ 0`. -/
 theorem exp_leaCoulson_eq_rpow (m : ℝ) {z : ℝ} (hz0 : z ≠ 0) (hz1 : z < 1) :
     exp (m * ((1 / z - 1) * log (1 - z))) = (1 - z) ^ (m * (1 - z) / z) := by

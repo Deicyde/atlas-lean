@@ -75,7 +75,7 @@ open Real Filter Topology Set
 
 namespace MathlibExt.Probability.LinearBirthDeath
 
-/-- **Kendall's extinction probability for the birth–death process.** Kendall's extinction probability `α t = P(X t = 0 | X 0 = 1)` of the linear birth–death
+/-- Kendall's extinction probability `α t = P(X t = 0 | X 0 = 1)` of the linear birth–death
 process with per-capita birth rate `b` and death rate `d`: `d (E - 1) / (b E - d)` with
 `E = exp ((b - d) t)` if `b ≠ d`, and `b t / (1 + b t)` if `b = d`. Meaningful for `0 ≤ b`,
 `0 ≤ d`, `0 ≤ t`. -/
@@ -83,13 +83,13 @@ noncomputable def extinctionProb (b d t : ℝ) : ℝ :=
   if b = d then b * t / (1 + b * t)
   else d * (exp ((b - d) * t) - 1) / (b * exp ((b - d) * t) - d)
 
-/-- **Kendall's geometric tail ratio.** Kendall's ratio `β t` of the geometric tail of the law of `X t`: `b (E - 1) / (b E - d)`
+/-- Kendall's ratio `β t` of the geometric tail of the law of `X t`: `b (E - 1) / (b E - d)`
 with `E = exp ((b - d) t)` if `b ≠ d`, and `b t / (1 + b t)` if `b = d`. -/
 noncomputable def geomRatio (b d t : ℝ) : ℝ :=
   if b = d then b * t / (1 + b * t)
   else b * (exp ((b - d) * t) - 1) / (b * exp ((b - d) * t) - d)
 
-/-- **Kendall's law of the linear birth–death process.** Kendall's law of the linear birth–death process at time `t` started from one individual:
+/-- Kendall's law of the linear birth–death process at time `t` started from one individual:
 `prob b d t 0 = α t` and `prob b d t (n + 1) = (1 - α t) (1 - β t) (β t) ^ n`. -/
 noncomputable def prob (b d t : ℝ) : ℕ → ℝ
   | 0 => extinctionProb b d t
@@ -206,11 +206,11 @@ private lemma extinctionProb_le_one {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) 
     extinctionProb b d t ≤ 1 := by
   linarith [one_sub_extinctionProb_pos hb hd ht]
 
-/-- **Linear birth–death law at time zero.** At time `0` the population is one individual: `prob b d 0 = δ₁`. -/
+/-- At time `0` the population is one individual: `prob b d 0 = δ₁`. -/
 theorem prob_zero_time (b d : ℝ) (n : ℕ) : prob b d 0 n = if n = 1 then 1 else 0 := by
   rcases n with _ | _ | n <;> simp [prob, extinctionProb, geomRatio]
 
-/-- **Nonnegativity of Kendall's probabilities.** Kendall's probabilities are nonnegative. -/
+/-- Kendall's probabilities are nonnegative. -/
 theorem prob_nonneg {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (ht : 0 ≤ t) (n : ℕ) :
     0 ≤ prob b d t n := by
   rcases n with _ | n
@@ -218,7 +218,7 @@ theorem prob_nonneg {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (ht : 0 ≤ t) (
   · exact mul_nonneg (mul_nonneg (one_sub_extinctionProb_pos hb hd ht).le
       (one_sub_geomRatio_pos hb hd ht).le) (pow_nonneg (geomRatio_nonneg hb ht) n)
 
-/-- **Kendall's probabilities sum to one.** Kendall's probabilities sum to `1`: no mass escapes to infinity. -/
+/-- Kendall's probabilities sum to `1`: no mass escapes to infinity. -/
 theorem hasSum_prob {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (ht : 0 ≤ t) :
     HasSum (prob b d t) 1 := by
   have h1 := one_sub_geomRatio_pos hb hd ht
@@ -230,7 +230,7 @@ theorem hasSum_prob {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (ht : 0 ≤ t) :
   · rw [mul_assoc, mul_inv_cancel₀ h1.ne', mul_one, Finset.sum_range_one]
     rfl
 
-/-- **Mean population size of the linear birth–death process.** The mean population size at time `t` started from one individual is
+/-- The mean population size at time `t` started from one individual is
 `E[X t] = exp ((b - d) t)` (Kendall 1948; Bailey 1964, ch. 8). -/
 theorem hasSum_mul_prob {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (ht : 0 ≤ t) :
     HasSum (fun n : ℕ ↦ (n : ℝ) * prob b d t n) (exp ((b - d) * t)) := by
@@ -318,7 +318,7 @@ private lemma hasDerivAt_geomRatio {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (
     field_simp
     ring
 
-/-- **Forward Kolmogorov equation for the empty state.** Forward Kolmogorov equation for state `0`: `p_0' = d p_1`. -/
+/-- Forward Kolmogorov equation for state `0`: `p_0' = d p_1`. -/
 theorem hasDerivAt_prob_zero {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (ht : 0 ≤ t) :
     HasDerivAt (fun s ↦ prob b d s 0) (d * prob b d t 1) t := by
   have := hasDerivAt_extinctionProb' hb hd ht
@@ -326,7 +326,7 @@ theorem hasDerivAt_prob_zero {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (ht : 0
   convert this using 1
   ring
 
-/-- **Forward Kolmogorov equation for positive states.** Forward Kolmogorov equation for state `n + 1`:
+/-- Forward Kolmogorov equation for state `n + 1`:
 `p_(n+1)' = b n p_n - (b + d) (n + 1) p_(n+1) + d (n + 2) p_(n+2)`. -/
 theorem hasDerivAt_prob_succ {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (ht : 0 ≤ t) (n : ℕ) :
     HasDerivAt (fun s ↦ prob b d s (n + 1))
@@ -347,7 +347,7 @@ theorem hasDerivAt_prob_succ {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (ht : 0
   · simp only [Nat.cast_add, Nat.cast_one, Nat.add_sub_cancel]
     linear_combination ((1 - α) * (1 - β) * β ^ n * ((n + 1) * (1 - β) - β)) * key
 
-/-- **Backward Kolmogorov equation for the extinction probability.** Backward Kolmogorov equation for the extinction probability:
+/-- Backward Kolmogorov equation for the extinction probability:
 `α' = d - (b + d) α + b α²` (Karlin–Taylor 1975, ch. 4). -/
 theorem hasDerivAt_extinctionProb {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (ht : 0 ≤ t) :
     HasDerivAt (extinctionProb b d)
@@ -355,7 +355,7 @@ theorem hasDerivAt_extinctionProb {b d t : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) (h
   convert hasDerivAt_extinctionProb' hb hd ht using 1
   linear_combination (-(1 - extinctionProb b d t)) * mul_extinctionProb b d t
 
-/-- **Uniqueness of the extinction probability solving the backward equation.** The extinction probability is the only `[0, 1]`-valued solution `q` on `[0, ∞)` of the
+/-- The extinction probability is the only `[0, 1]`-valued solution `q` on `[0, ∞)` of the
 backward equation `q' = d - (b + d) q + b q²` with `q 0 = 0`. -/
 theorem eq_extinctionProb_of_hasDerivWithinAt {b d : ℝ} (hb : 0 ≤ b) (hd : 0 ≤ d) {q : ℝ → ℝ}
     (hc : ContinuousOn q (Ici 0))
@@ -385,7 +385,7 @@ theorem eq_extinctionProb_of_hasDerivWithinAt {b d : ℝ} (hb : 0 ≤ b) (hd : 0
     (by rw [hq0]; simp [extinctionProb]) (a := 0) (b := t)
   exact this ⟨ht, le_rfl⟩
 
-/-- **Limiting extinction probability in the supercritical case.** Supercritical case: if `d < b`, the extinction probability tends to `d / b`. -/
+/-- Supercritical case: if `d < b`, the extinction probability tends to `d / b`. -/
 theorem tendsto_extinctionProb_of_lt {b d : ℝ} (hd : 0 ≤ d) (hdb : d < b) :
     Tendsto (extinctionProb b d) atTop (𝓝 (d / b)) := by
   have hb : 0 < b := hd.trans_lt hdb
@@ -403,7 +403,7 @@ theorem tendsto_extinctionProb_of_lt {b d : ℝ} (hd : 0 ≤ d) (hdb : d < b) :
   simp only [extinctionProb, hdb.ne', ↓reduceIte, exp_neg]
   field_simp
 
-/-- **Certain extinction in the critical and subcritical cases.** Critical and subcritical cases: if `b ≤ d` and `0 < d`, extinction is certain in the limit. -/
+/-- Critical and subcritical cases: if `b ≤ d` and `0 < d`, extinction is certain in the limit. -/
 theorem tendsto_extinctionProb_of_le {b d : ℝ} (hd : 0 < d) (hbd : b ≤ d) :
     Tendsto (extinctionProb b d) atTop (𝓝 1) := by
   rcases hbd.lt_or_eq with hbd | rfl

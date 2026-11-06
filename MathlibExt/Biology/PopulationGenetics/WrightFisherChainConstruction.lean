@@ -37,7 +37,7 @@ open MathlibExt.Probability.MarkovChainConstruction
 
 namespace MathlibExt.Biology.PopulationGenetics.WrightFisherChain
 
-/-- **Finite Wright–Fisher chain is absorbed almost surely.** The finite Wright–Fisher chain under the canonical Markov law almost surely
+/-- The finite Wright–Fisher chain under the canonical Markov law almost surely
 reaches an endpoint. The law and chain are not premises supplied by a caller. -/
 theorem measure_markovChainMeasure_exists_absorbed (M : ℕ) (i : Fin (M + 1)) :
     (markovChainMeasure (finiteChainKernel (wrightFisher M)) (Measure.dirac i))
@@ -46,7 +46,7 @@ theorem measure_markovChainMeasure_exists_absorbed (M : ℕ) (i : Fin (M + 1)) :
     (isFiniteMarkovChain_markovChainMeasure (wrightFisher M) i)
     (ae_eval_zero_markovChainMeasure (wrightFisher M) i)
 
-/-- **Fixation probability of the finite Wright–Fisher chain.** Under the canonical finite Wright–Fisher law, the probability of ever fixing
+/-- Under the canonical finite Wright–Fisher law, the probability of ever fixing
 at `M` equals the initial allele frequency `i / M`. -/
 theorem measureReal_markovChainMeasure_exists_eq_last {M : ℕ} (hM : 0 < M)
     (i : Fin (M + 1)) :
@@ -56,7 +56,7 @@ theorem measureReal_markovChainMeasure_exists_eq_last {M : ℕ} (hM : 0 < M)
     (isFiniteMarkovChain_markovChainMeasure (wrightFisher M) i)
     (ae_eval_zero_markovChainMeasure (wrightFisher M) i)
 
-/-- **Loss probability of an allele in the finite Wright–Fisher chain.** Under the canonical finite Wright–Fisher law, the probability of ever losing
+/-- Under the canonical finite Wright–Fisher law, the probability of ever losing
 the allele at `0` equals `1 - i / M`. -/
 theorem measureReal_markovChainMeasure_exists_eq_zero {M : ℕ} (hM : 0 < M)
     (i : Fin (M + 1)) :

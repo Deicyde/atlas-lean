@@ -62,7 +62,7 @@ section Finite
 
 variable {E : Type*} [Fintype E] [DecidableEq E]
 
-/-- **Bernoulli weight of a single edge.** The Bernoulli(`p`) weight of a single edge state: `p` for open, `1 - p` for closed. -/
+/-- The Bernoulli(`p`) weight of a single edge state: `p` for open, `1 - p` for closed. -/
 noncomputable def w1 (p : ℝ≥0) (hp : p ≤ 1) (b : Bool) : ℝ := (bernoulliMeasure p hp).real {b}
 
 theorem w1_sum (p : ℝ≥0) (hp : p ≤ 1) : (∑ b : Bool, w1 p hp b) = 1 := by
@@ -74,10 +74,10 @@ theorem w1_sum (p : ℝ≥0) (hp : p ≤ 1) : (∑ b : Bool, w1 p hp b) = 1 := b
     · intro a _; exact measurableSet_singleton a
   rw [h, probReal_univ]
 
-/-- **Product weight of an edge configuration.** The product weight `∏_e w1(ω_e)` of a configuration on a finite edge set. -/
+/-- The product weight `∏_e w1(ω_e)` of a configuration on a finite edge set. -/
 noncomputable def W (p : ℝ≥0) (hp : p ≤ 1) (ω : ConfigSpace E) : ℝ := ∏ e, w1 p hp (ω e)
 
-/-- **Expectation under Bernoulli product weights.** The expectation `∑_ω f(ω) W(ω)` of `f` under the Bernoulli(`p`) product weights on a finite
+/-- The expectation `∑_ω f(ω) W(ω)` of `f` under the Bernoulli(`p`) product weights on a finite
 edge set. -/
 noncomputable def wsum (p : ℝ≥0) (hp : p ≤ 1) (f : ConfigSpace E → ℝ) : ℝ :=
   ∑ ω : ConfigSpace E, f ω * W p hp ω
@@ -266,13 +266,13 @@ end Infinite
 
 variable {d : ℕ}
 
-/-- **Open cluster of a site inside a set.** The open cluster `C_S(o)` of `o` inside `S`: sites of `S` joined to `o` by an open path in
+/-- The open cluster `C_S(o)` of `o` inside `S`: sites of `S` joined to `o` by an open path in
 `S`. -/
 def clusterWithin (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) (S : Set (Site d)) (o : Site d) :
     Set (Site d) :=
   {y | ∃ (hy : y ∈ S) (ho : o ∈ S), ConnectedWithin d ω S ⟨o, ho⟩ ⟨y, hy⟩}
 
-/-- **Edges from a subset into a set.** The set of edges `{x, y}` with `x ∈ K` and `y ∈ S`. -/
+/-- The set of edges `{x, y}` with `x ∈ K` and `y ∈ S`. -/
 def incidentWithin (K S : Set (Site d)) : Set (Sym2 (Site d)) :=
   {e | ∃ x ∈ K, ∃ y ∈ S, e = s(x, y)}
 
@@ -350,7 +350,7 @@ theorem clusterWithin_congr {ω ω' : ConfigSpace (Sym2 (Site d))} {S : Set (Sit
     obtain ⟨_, ⟨w'⟩⟩ := walk_transfer hagree w hoK
     exact ⟨hyS, hoS', ⟨w'⟩⟩
 
-/-- **Event that the cluster of the origin inside a set equals a given set.** The event `{C_S(o) = K}` that the open cluster of `o` inside `S` is exactly `K`. -/
+/-- The event `{C_S(o) = K}` that the open cluster of `o` inside `S` is exactly `K`. -/
 def clusterEvent (d : ℕ) (S : Set (Site d)) (o : Site d) (K : Set (Site d)) :
     Set (ConfigSpace (Sym2 (Site d))) :=
   {ω | clusterWithin d ω S o = K}
@@ -372,7 +372,7 @@ theorem clusterEvent_iff {S : Set (Site d)} {o : Site d} {K : Set (Site d)} (hoS
   ⟨clusterEvent_congr hoS hagree,
    clusterEvent_congr hoS (fun e he => (hagree e he).symm)⟩
 
-/-- **Edges joining a finite set to a region.** The finite set of edges `{x, y}` with `x ∈ K` and `y ∈ S`. -/
+/-- The finite set of edges `{x, y}` with `x ∈ K` and `y ∈ S`. -/
 def incidentWithinFinset (K S : Finset (Site d)) : Finset (Sym2 (Site d)) :=
   (K ×ˢ S).image (fun p => s(p.1, p.2))
 
@@ -401,7 +401,7 @@ theorem clusterEvent_dependsOn {S : Finset (Site d)} {o : Site d} {K : Finset (S
   · rw [Set.indicator_of_mem hω, Set.indicator_of_mem (hiff.mp hω)]
   · rw [Set.indicator_of_notMem hω, Set.indicator_of_notMem (fun hc => hω (hiff.mpr hc))]
 
-/-- **Exploration independence of a cluster inside a set.** Exploration independence: for `K ⊆ S` finite and an event `B` depending only on edges in `U`,
+/-- Exploration independence: for `K ⊆ S` finite and an event `B` depending only on edges in `U`,
 disjoint from the edges between `K` and `S`, `ℙ_p(C_S(o) = K, B) = ℙ_p(C_S(o) = K) ℙ_p(B)`. -/
 theorem exploration_decomposition (p : ℝ≥0) (hp : p ≤ 1)
     (S : Finset (Site d)) (o : Site d) (hoS : o ∈ (S : Set (Site d))) (K : Finset (Site d))

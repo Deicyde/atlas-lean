@@ -26,17 +26,12 @@ subcase and completes the assembly over `IsFundamentalDiscriminant`.
 
 namespace MetaMathlibExt
 
-/-- **Jacobi symbol of $4m$ at an odd denominator.** For every integer $m$ and every odd natural
-number $p$, the Jacobi symbol $\left(\frac{4m}{p}\right)$ equals $\left(\frac{m}{p}\right)$. -/
+/-- At an odd denominator `p`, the factor `4` drops out. -/
 public theorem jacobiSym_four_mul_of_odd (m : ℤ) (p : ℕ) (hp_odd : Odd p) :
     jacobiSym (4 * m) p = jacobiSym m p := by
   rw [jacobiSym.mul_left, jacobiSym.at_four hp_odd, one_mul]
 
-/-- **Jacobi symbol of $2m$ at an odd denominator.** For every integer $m$ and every odd natural
-number $p$, the Jacobi symbol $\left(\frac{2m}{p}\right)$ equals
-$\chi_8(p) \left(\frac{m}{p}\right)$, where $\chi_8$ is the Dirichlet character modulo $8$ with
-$\chi_8(n) = 1$ for $n \equiv \pm 1 \pmod 8$, $\chi_8(n) = -1$ for $n \equiv \pm 3 \pmod 8$, and
-$\chi_8(n) = 0$ for even $n$. -/
+/-- One power of two down: the `χ₈ p` factor survives. -/
 public theorem jacobiSym_two_mul_of_odd (m : ℤ) (p : ℕ) (hp_odd : Odd p) :
     jacobiSym (2 * m) p = (ZMod.χ₈ p : ℤ) * jacobiSym m p := by
   have hsplit : jacobiSym (2 * m) p = jacobiSym 2 p * jacobiSym m p :=
@@ -45,7 +40,7 @@ public theorem jacobiSym_two_mul_of_odd (m : ℤ) (p : ℕ) (hp_odd : Odd p) :
     jacobiSym.at_two hp_odd
   rw [hsplit, hat]
 
-/-- **Kronecker–Jacobi bridge for 4m with m ≡ 3 mod 4.** Even `m % 4 = 3` subcase for odd `p`: reduce `4 * m` to `m`, identify
+/-- Even `m % 4 = 3` subcase for odd `p`: reduce `4 * m` to `m`, identify
 `kroneckerSym` with `jacobiSym` at odd denominators, then apply the `D % 4 = 3`
 bridge to `m` itself. Covers prime and composite odd denominators alike. -/
 public theorem

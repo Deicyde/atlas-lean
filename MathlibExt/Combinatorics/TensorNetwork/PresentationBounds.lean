@@ -28,7 +28,7 @@ open Finset
 
 variable {J σ τ A : Type*}
 
-/-- **Entry bound for a converted tensor instance.** A converted tensor entry is a sum of at most `2 ^ P` terms, each containing one weight and
+/-- A converted tensor entry is a sum of at most `2 ^ P` terms, each containing one weight and
 `Fintype.card J - 1` off-diagonal factors. -/
 theorem abs_toInstance_le [Fintype J] [LinearOrder J] [DecidableEq A]
     (N : Factored J σ τ) (D : J → J → Finset A) (dec : J → J → A → τ)

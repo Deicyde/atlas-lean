@@ -90,7 +90,7 @@ open MeasureTheory ProbabilityTheory Filter Finset ENNReal
 
 namespace MathlibExt.Probability.WaldCrossTerms
 
-/-- **Vanishing of a single cross term in Wald's second equation.** A single cross term `E[X_j · X_i · 1_{T > i}]` (with `j < i`) vanishes
+/-- A single cross term `E[X_j · X_i · 1_{T > i}]` (with `j < i`) vanishes
 when the `X_i` are identically distributed with zero mean and `X_i` is independent of
 `(X_j, 1_{T > i})`. -/
 theorem cross_pair_integral_zero
@@ -126,7 +126,7 @@ theorem cross_pair_integral_zero
     (hg_meas.mono (f.le i) le_rfl).aestronglyMeasurable
     ((hX_iid i 0).integrable_iff.mpr hX_int).aestronglyMeasurable, hmean_i, mul_zero]
 
-/-- **Vanishing of the cross terms in Wald's second equation.** The full cross-term contribution to `E[(S_T)^2]` vanishes:
+/-- The full cross-term contribution to `E[(S_T)^2]` vanishes:
 `E[∑_{i < T} ∑_{j < i} X_j X_i] = 0` for identically distributed, mean-zero variables,
 with each `X_i` independent of the filtration at time `i` and measurable at time
 `i + 1`, given absolute summability of the stopped cross-term series. -/
@@ -219,7 +219,7 @@ theorem wald_cross_terms_zero
       exact hprod.indicator hset
   simp only [each_zero, tsum_zero]
 
-/-- **Square of a finite sum as diagonal plus cross terms.** Algebraic identity expanding the square of a finite sum into diagonal and
+/-- Algebraic identity expanding the square of a finite sum into diagonal and
 cross-term contributions: `(∑_{i<n} f i)^2 = ∑_{i<n} (f i)^2 + 2 ∑_{i<n} ∑_{j<i} f j · f i`. -/
 theorem sum_sq_expansion (n : ℕ) (f : ℕ → ℝ) :
     (∑ i ∈ Finset.range n, f i) ^ 2 =
@@ -234,7 +234,7 @@ theorem sum_sq_expansion (n : ℕ) (f : ℕ → ℝ) :
       rw [mul_assoc]; congr 1; exact Finset.sum_mul (Finset.range n) f (f n)
     rw [h1]; linarith
 
-/-- **Cross terms vanish for a bounded stopping time.** The total cross-term contribution vanishes for a stopping time bounded
+/-- The total cross-term contribution vanishes for a stopping time bounded
 by a constant, with no extra summability or measurability hypotheses:
 the sums are finite, and every term past the bound is zero. -/
 theorem wald_cross_terms_zero_of_bounded

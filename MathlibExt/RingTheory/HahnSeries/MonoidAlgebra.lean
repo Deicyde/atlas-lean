@@ -37,7 +37,7 @@ section Finite
 
 variable [AddCommMonoid Γ] [PartialOrder Γ] [IsOrderedCancelAddMonoid Γ] [CommSemiring R]
 
-/-- **Embedding of a finite additive monoid algebra into Hahn series.** Embed a finite additive monoid algebra into Hahn series. -/
+/-- Embed a finite additive monoid algebra into Hahn series. -/
 noncomputable def ofAddMonoidAlgebra :
     AddMonoidAlgebra R Γ →+* HahnSeries Γ R := by
   let F : Multiplicative Γ →* HahnSeries Γ R :=
@@ -48,7 +48,7 @@ noncomputable def ofAddMonoidAlgebra :
         rw [single_mul_single, one_mul] }
   exact (AddMonoidAlgebra.lift R (HahnSeries Γ R) Γ F).toRingHom
 
-/-- **Monoid algebra embedding into Hahn series preserves coefficients.** The finite Hahn embedding preserves every coefficient. -/
+/-- The finite Hahn embedding preserves every coefficient. -/
 @[simp] theorem coeff_ofAddMonoidAlgebra (f : AddMonoidAlgebra R Γ) (g : Γ) :
     (ofAddMonoidAlgebra f).coeff g = f.coeff g := by
   induction f using AddMonoidAlgebra.induction_linear with
@@ -59,13 +59,13 @@ noncomputable def ofAddMonoidAlgebra :
       · simp [ofAddMonoidAlgebra, AddMonoidAlgebra.lift_single, h]
       · simp [ofAddMonoidAlgebra, AddMonoidAlgebra.lift_single, h]
 
-/-- **Monoid algebra embedding into Hahn series as a ring map.** The finite Hahn embedding is Mathlib's `ofFinsupp`, bundled as a ring homomorphism. -/
+/-- The finite Hahn embedding is Mathlib's `ofFinsupp`, bundled as a ring homomorphism. -/
 theorem ofAddMonoidAlgebra_apply (f : AddMonoidAlgebra R Γ) :
     ofAddMonoidAlgebra f = ofFinsupp f.coeff := by
   ext g
   simp
 
-/-- **Injectivity of the monoid algebra embedding into Hahn series.** The finite Hahn embedding is injective. -/
+/-- The finite Hahn embedding is injective. -/
 theorem ofAddMonoidAlgebra_injective :
     Function.Injective (ofAddMonoidAlgebra : AddMonoidAlgebra R Γ → HahnSeries Γ R) :=
   fun f₁ f₂ h => by
@@ -79,7 +79,7 @@ section Bivariate
 variable [CommSemiring R]
   [AddCommMonoid G] [AddCommMonoid H] [PartialOrder H] [IsOrderedCancelAddMonoid H]
 
-/-- **Embedding of a bivariate monoid algebra into Hahn series.** Embed a bivariate finite monoid algebra into Hahn series, with the second coordinate outer. -/
+/-- Embed a bivariate finite monoid algebra into Hahn series, with the second coordinate outer. -/
 noncomputable def ofBivariateAddMonoidAlgebra :
     AddMonoidAlgebra R (G × H) →+* HahnSeries H (AddMonoidAlgebra R G) :=
   (ofAddMonoidAlgebra (Γ := H) (R := AddMonoidAlgebra R G)).comp
@@ -87,7 +87,7 @@ noncomputable def ofBivariateAddMonoidAlgebra :
       (AddMonoidAlgebra.mapDomainRingEquiv R
         (AddEquiv.prodComm (M := G) (N := H))).toRingHom)
 
-/-- **Coefficients of the bivariate monoid algebra embedding.** The two coefficient projections of the bivariate embedding recover the original coefficient. -/
+/-- The two coefficient projections of the bivariate embedding recover the original coefficient. -/
 @[simp] theorem coeff_coeff_ofBivariateAddMonoidAlgebra
     (f : AddMonoidAlgebra R (G × H)) (g : G) (h : H) :
     ((ofBivariateAddMonoidAlgebra f).coeff h).coeff g = f.coeff (g, h) := by
@@ -99,7 +99,7 @@ noncomputable def ofBivariateAddMonoidAlgebra :
       by_cases hg : g = g' <;> by_cases hh : h = h' <;>
         simp [ofBivariateAddMonoidAlgebra, hg, hh]
 
-/-- **Injectivity of the bivariate monoid algebra embedding.** The bivariate finite Hahn embedding is injective. -/
+/-- The bivariate finite Hahn embedding is injective. -/
 theorem ofBivariateAddMonoidAlgebra_injective :
     Function.Injective
       (ofBivariateAddMonoidAlgebra :

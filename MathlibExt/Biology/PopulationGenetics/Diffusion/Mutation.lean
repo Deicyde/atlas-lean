@@ -76,18 +76,18 @@ open Real Set MeasureTheory ProbabilityTheory
 
 namespace MathlibExt.Biology.PopulationGenetics.Diffusion
 
-/-- **Wright–Fisher generator with two-way mutation.** The backward generator of the Wright–Fisher diffusion with two-way mutation, time in units of
+/-- The backward generator of the Wright–Fisher diffusion with two-way mutation, time in units of
 `2N` generations and scaled mutation rates `θ₁ = 4N u₁` (towards the allele) and `θ₂ = 4N u₂`
 (away from it): `(L f)(x) = x (1 - x) / 2 · f''(x) + (θ₁ (1 - x) - θ₂ x) / 2 · f'(x)`. -/
 noncomputable def mutationGenerator (θ₁ θ₂ : ℝ) (f : ℝ → ℝ) (x : ℝ) : ℝ :=
   x * (1 - x) / 2 * deriv (deriv f) x + (θ₁ * (1 - x) - θ₂ * x) / 2 * deriv f x
 
-/-- **Mutation generator without mutation is the neutral generator.** Without mutation the generator is the neutral Wright–Fisher generator `generator 0`. -/
+/-- Without mutation the generator is the neutral Wright–Fisher generator `generator 0`. -/
 theorem mutationGenerator_zero_zero (f : ℝ → ℝ) (x : ℝ) :
     mutationGenerator 0 0 f x = generator 0 f x := by
   simp [mutationGenerator, generator]
 
-/-- **Beta density as Wright's stationary density.** On `(0, 1)` the Beta`(θ₁, θ₂)` density is Wright's unnormalized density in the scaled rates
+/-- On `(0, 1)` the Beta`(θ₁, θ₂)` density is Wright's unnormalized density in the scaled rates
 `α = θ₁ / 2`, `β = θ₂ / 2`, divided by the Beta function `B(θ₁, θ₂)`. -/
 theorem betaPDFReal_eq_wrightDensity (θ₁ θ₂ : ℝ) {x : ℝ} (hx : x ∈ Ioo (0 : ℝ) 1) :
     betaPDFReal θ₁ θ₂ x = wrightDensity (θ₁ / 2) (θ₂ / 2) x / beta θ₁ θ₂ := by
@@ -95,7 +95,7 @@ theorem betaPDFReal_eq_wrightDensity (θ₁ θ₂ : ℝ) {x : ℝ} (hx : x ∈ I
     show 2 * (θ₂ / 2) - 1 = θ₂ - 1 by ring]
   ring
 
-/-- **Smoothness of the Beta density on the open unit interval.** The Beta`(θ₁, θ₂)` density is analytic (`C^ω`), in particular smooth, on `(0, 1)`, so the
+/-- The Beta`(θ₁, θ₂)` density is analytic (`C^ω`), in particular smooth, on `(0, 1)`, so the
 derivatives in `flux_betaPDFReal` and `forwardEquation_betaPDFReal` exist. -/
 theorem contDiffOn_betaPDFReal (θ₁ θ₂ : ℝ) :
     ContDiffOn ℝ ⊤ (betaPDFReal θ₁ θ₂) (Ioo 0 1) := by
@@ -203,7 +203,7 @@ private theorem contDiffOn_Icc_facts {f : ℝ → ℝ} (hf : ContDiffOn ℝ 2 f 
   · rw [hD.deriv_eq, derivWithin_of_mem_nhds hn]
   · exact hd1.hasDerivAt.congr_deriv (derivWithin_of_mem_nhds hn).symm
 
-/-- **Integrability of the mutation generator against the Beta density.** For `θ₁, θ₂ > 0` and `f` twice continuously differentiable on `[0, 1]`, `L f · π` is
+/-- For `θ₁, θ₂ > 0` and `f` twice continuously differentiable on `[0, 1]`, `L f · π` is
 integrable on `[0, 1]`, so the integral in `integral_mutationGenerator_mul_betaPDFReal` is a
 genuine (not junk) value. -/
 theorem intervalIntegrable_mutationGenerator_mul_betaPDFReal {θ₁ θ₂ : ℝ} (hθ₁ : 0 < θ₁)
@@ -260,7 +260,7 @@ theorem integral_mutationGenerator_mul_betaPDFReal {θ₁ θ₂ : ℝ} (hθ₁ :
     (intervalIntegrable_mutationGenerator_mul_betaPDFReal hθ₁ hθ₂ hf)]
   simp [zero_rpow hθ₁.ne', zero_rpow hθ₂.ne']
 
-/-- **Integrability of the mutation generator under Wright's stationary law.** For `θ₁, θ₂ > 0` and `f` twice continuously differentiable on `[0, 1]`, `L f` is integrable
+/-- For `θ₁, θ₂ > 0` and `f` twice continuously differentiable on `[0, 1]`, `L f` is integrable
 against Wright's stationary law `Beta(θ₁, θ₂)`. -/
 theorem integrable_mutationGenerator_betaMeasure {θ₁ θ₂ : ℝ} (hθ₁ : 0 < θ₁) (hθ₂ : 0 < θ₂)
     {f : ℝ → ℝ} (hf : ContDiffOn ℝ 2 f (Icc 0 1)) :
@@ -275,13 +275,13 @@ theorem integral_mutationGenerator_betaMeasure {θ₁ θ₂ : ℝ} (hθ₁ : 0 <
     ∫ x, mutationGenerator θ₁ θ₂ f x ∂(betaMeasure θ₁ θ₂) = 0 := by
   rw [integral_betaMeasure hθ₁ hθ₂, integral_mutationGenerator_mul_betaPDFReal hθ₁ hθ₂ hf]
 
-/-- **Mutation generator applied to the allele frequency.** The generator applied to the frequency itself is the mutation drift:
+/-- The generator applied to the frequency itself is the mutation drift:
 `L x = (θ₁ (1 - x) - θ₂ x) / 2`. -/
 theorem mutationGenerator_id (θ₁ θ₂ x : ℝ) :
     mutationGenerator θ₁ θ₂ id x = (θ₁ * (1 - x) - θ₂ * x) / 2 := by
   simp [mutationGenerator]
 
-/-- **Mutation generator applied to heterozygosity.** The generator applied to the heterozygosity `H(x) = 2x (1 - x)`:
+/-- The generator applied to the heterozygosity `H(x) = 2x (1 - x)`:
 `L H = -2x (1 - x) + (θ₁ (1 - x) - θ₂ x) (1 - 2x)` (drift decreases `H` at rate `1`, mutation
 restores it). -/
 theorem mutationGenerator_heterozygosity (θ₁ θ₂ x : ℝ) :
@@ -297,7 +297,7 @@ theorem mutationGenerator_heterozygosity (θ₁ θ₂ x : ℝ) :
   rw [mutationGenerator, hD, h2.deriv]
   ring
 
-/-- **Allele frequency after one generation of two-way mutation.** Allele frequency after one generation of two-way mutation, before random sampling: an `a`
+/-- Allele frequency after one generation of two-way mutation, before random sampling: an `a`
 copy mutates to `A` with probability `u₁` and an `A` copy to `a` with probability `u₂`, so the
 frequency `x` of `A` becomes `(1 - u₂) x + u₁ (1 - x) ∈ [0, 1]`. -/
 noncomputable def mutatedFreq (u₁ u₂ x : unitInterval) : unitInterval :=

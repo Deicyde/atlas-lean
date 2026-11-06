@@ -44,7 +44,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Cut-flip count along a walk.** The number of cut flips of `H` and `f0g0` along `w`; equal to
+/-- The number of cut flips of `H` and `f0g0` along `w`; equal to
 `wcl_flipCount (wcl_cutFlip H f0 g0) w`. -/
 noncomputable def jwn_cutCount (H : SimpleGraph (Site 2)) (f0 g0 : Site 2) {x y : Site 2}
     (w : (hypercubicLattice 2).Walk x y) : ℕ :=

@@ -43,14 +43,14 @@ namespace MathlibExt.Probability.Statistics.GeneralizedLeastSquares
 
 variable {m k : Type*} [Fintype m] [DecidableEq m] [Fintype k] [DecidableEq k]
 
-/-- **Generalized least-squares matrix.** The generalized least-squares matrix `(Xᵀ V⁻¹ X)⁻¹ Xᵀ V⁻¹`; `glsMatrix X V *ᵥ y` is the GLS
+/-- The generalized least-squares matrix `(Xᵀ V⁻¹ X)⁻¹ Xᵀ V⁻¹`; `glsMatrix X V *ᵥ y` is the GLS
 estimate of `b` in `y = X b + e` with `Cov e = V`. -/
 noncomputable def glsMatrix (X : Matrix m k ℝ) (V : Matrix m m ℝ) : Matrix k m ℝ :=
   (Xᵀ * V⁻¹ * X)⁻¹ * Xᵀ * V⁻¹
 
 variable {X : Matrix m k ℝ} {V : Matrix m m ℝ}
 
-/-- **Unbiasedness of the generalized least-squares estimator.** The GLS estimator is unbiased: `B X = 1` when `Xᵀ V⁻¹ X` is invertible. -/
+/-- The GLS estimator is unbiased: `B X = 1` when `Xᵀ V⁻¹ X` is invertible. -/
 theorem glsMatrix_mul_self (hX : IsUnit (Xᵀ * V⁻¹ * X)) : glsMatrix X V * X = 1 := by
   rw [glsMatrix, Matrix.mul_assoc, Matrix.mul_assoc, ← Matrix.mul_assoc Xᵀ,
     Matrix.nonsing_inv_mul _ ((Matrix.isUnit_iff_isUnit_det _).mp hX)]
@@ -65,7 +65,7 @@ private theorem transpose_inv_of_posDef (hV : V.PosDef) : (V⁻¹)ᵀ = V⁻¹ :
     simpa [conjTranspose_eq_transpose_of_trivial] using hV.isHermitian.eq
   rw [Matrix.transpose_nonsing_inv, h]
 
-/-- **Covariance of the generalized least-squares estimator.** The covariance of the GLS estimator: `B V Bᵀ = (Xᵀ V⁻¹ X)⁻¹`. -/
+/-- The covariance of the GLS estimator: `B V Bᵀ = (Xᵀ V⁻¹ X)⁻¹`. -/
 theorem glsMatrix_mul_mul_transpose (hV : V.PosDef) (hX : IsUnit (Xᵀ * V⁻¹ * X)) :
     glsMatrix X V * V * (glsMatrix X V)ᵀ = (Xᵀ * V⁻¹ * X)⁻¹ := by
   have hW : ((Xᵀ * V⁻¹ * X)⁻¹)ᵀ = (Xᵀ * V⁻¹ * X)⁻¹ := by

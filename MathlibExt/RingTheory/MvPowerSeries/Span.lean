@@ -41,7 +41,7 @@ span of the variables.
 
 open MvPowerSeries
 
-/-- **Membership in the span of a constant and initial variables.** A power series lies in the span of `C ϖ` and the first `k` variables
+/-- A power series lies in the span of `C ϖ` and the first `k` variables
 exactly when every coefficient of a monomial supported on the last `n - k`
 variables is divisible by `ϖ`. -/
 theorem MvPowerSeries.mem_span_C_sup_ofList_take_iff {R : Type*} [CommRing R]
@@ -151,7 +151,7 @@ theorem MvPowerSeries.mem_span_C_sup_ofList_take_iff {R : Type*} [CommRing R]
       have := j.isLt
       omega
 
-/-- **The variables span the kernel of the constant coefficient map.** The kernel of the constant coefficient map on multivariate power series
+/-- The kernel of the constant coefficient map on multivariate power series
 is the span of the variables. -/
 theorem MvPowerSeries.span_range_X_eq_ker_constantCoeff {R : Type*} [CommRing R] (n : ℕ) :
     Ideal.span (Set.range (X : Fin n → MvPowerSeries (Fin n) R)) =

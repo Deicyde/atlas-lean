@@ -71,22 +71,22 @@ number apply. -/
 def tajimaD (n : ℕ) (π S : ℝ) : ℝ :=
   (π - S / tajimaA1 n) / Real.sqrt (tajimaE1 n * S + tajimaE2 n * (S * (S - 1)))
 
-/-- **Tajima's $c_1$ vanishes for two genes.** For two genes `c₁ = 0`. -/
+/-- For two genes `c₁ = 0`. -/
 theorem tajimaC1_two : tajimaC1 2 = 0 := by
   simp [tajimaC1, tajimaB1, tajimaA1]
   norm_num
 
-/-- **Tajima's $c_2$ vanishes for two genes.** For two genes `c₂ = 0`. -/
+/-- For two genes `c₂ = 0`. -/
 theorem tajimaC2_two : tajimaC2 2 = 0 := by
   simp [tajimaC2, tajimaB2, tajimaA1, tajimaA2]
   norm_num
 
-/-- **Tajima's $c_1$ vanishes for three genes.** For three genes `c₁ = 0`. -/
+/-- For three genes `c₁ = 0`. -/
 theorem tajimaC1_three : tajimaC1 3 = 0 := by
   simp [tajimaC1, tajimaB1, tajimaA1, sum_Ico_succ_top]
   norm_num
 
-/-- **Tajima's $c_2$ vanishes for three genes.** For three genes `c₂ = 0`. -/
+/-- For three genes `c₂ = 0`. -/
 theorem tajimaC2_three : tajimaC2 3 = 0 := by
   simp [tajimaC2, tajimaB2, tajimaA1, tajimaA2, sum_Ico_succ_top]
   norm_num
@@ -141,7 +141,7 @@ private theorem c1_key {n : ℕ} (hn : 4 ≤ n) : 3 * ((n : ℝ) - 1) < ((n : �
     push_cast
     nlinarith
 
-/-- **Positivity of Tajima's $c_1$ for at least four genes.** `c₁ = (n + 1) / (3 (n - 1)) - 1 / a₁ > 0` for `n ≥ 4`. -/
+/-- `c₁ = (n + 1) / (3 (n - 1)) - 1 / a₁ > 0` for `n ≥ 4`. -/
 theorem tajimaC1_pos {n : ℕ} (hn : 4 ≤ n) : 0 < tajimaC1 n := by
   have hn' : (4 : ℝ) ≤ n := by exact_mod_cast hn
   have ha : 0 < tajimaA1 n := by
@@ -154,7 +154,7 @@ theorem tajimaC1_pos {n : ℕ} (hn : 4 ≤ n) : 0 < tajimaC1 n := by
   linarith
 
 
-/-- **Positivity of Tajima's $c_2$ for at least four genes.** `c₂ = b₂ - (n + 2) / (a₁ n) + a₂ / a₁² > 0` for `n ≥ 4`. -/
+/-- `c₂ = b₂ - (n + 2) / (a₁ n) + a₂ / a₁² > 0` for `n ≥ 4`. -/
 theorem tajimaC2_pos {n : ℕ} (hn : 4 ≤ n) : 0 < tajimaC2 n := by
   have hn' : (4 : ℝ) ≤ n := by exact_mod_cast hn
   have ha : 0 < tajimaA1 n := by
@@ -194,7 +194,7 @@ theorem tajimaC2_pos {n : ℕ} (hn : 4 ≤ n) : 0 < tajimaC2 n := by
   positivity
 
 
-/-- **Positivity of the denominator of Tajima's D.** The denominator of Tajima's `D` is well defined: `e₁ S + e₂ S (S - 1) > 0` for `n ≥ 4` and
+/-- The denominator of Tajima's `D` is well defined: `e₁ S + e₂ S (S - 1) > 0` for `n ≥ 4` and
 `S ≥ 1`. -/
 theorem tajimaVarEstimator_pos {n : ℕ} (hn : 4 ≤ n) {S : ℝ} (hS : 1 ≤ S) :
     0 < tajimaE1 n * S + tajimaE2 n * (S * (S - 1)) := by
@@ -208,7 +208,7 @@ theorem tajimaVarEstimator_pos {n : ℕ} (hn : 4 ≤ n) {S : ℝ} (hS : 1 ≤ S)
   have := mul_nonneg he2.le hSS
   nlinarith
 
-/-- **Chebyshev test of neutrality.** The rejection region of the **Chebyshev test of neutrality** at level `α` and hypothesized
+/-- The rejection region of the **Chebyshev test of neutrality** at level `α` and hypothesized
 `θ₀`: `|π - S / a₁| ≥ √((c₁ θ₀ + c₂ θ₀²) / α)`. -/
 def tajimaChebyshevTest (n : ℕ) (θ₀ α π S : ℝ) : Prop :=
   Real.sqrt ((tajimaC1 n * θ₀ + tajimaC2 n * θ₀ ^ 2) / α) ≤ |π - S / tajimaA1 n|

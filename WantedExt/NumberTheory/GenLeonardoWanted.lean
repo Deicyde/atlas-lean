@@ -19,11 +19,11 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- **Generalized Leonardo numbers.** For an integer $k$, the generalized Leonardo numbers
-$L_{k,0}, L_{k,1}, L_{k,2}, \ldots$ are the integers defined by $L_{k,0} = L_{k,1} = 1$ and
-$L_{k,n+2} = L_{k,n+1} + L_{k,n} + k$ for all $n \ge 0$.
-
-The paper takes $k$ positive; here $k$ may be any integer.
+/-- The generalized Leonardo numbers `L_{k,n}`: `L_{k,0} = L_{k,1} = 1` and
+`L_{k,n+2} = L_{k,n+1} + L_{k,n} + k`. The paper fixes `k` positive; the
+recurrence here is stated over `ℤ` (an intentional domain extension,
+bridged to the existing `p = 1` API by
+`genLeonardo_eq_leonardoPK_one` below).
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly 62.3 (2024), introduction. -/
@@ -32,17 +32,17 @@ public def genLeonardo (k : ℤ) : ℕ → ℤ
   | 1 => 1
   | n + 2 => genLeonardo k (n + 1) + genLeonardo k n + k
 
-/-- **Generalized Leonardo number of index two.** For every integer $k$, the generalized
-Leonardo number $L_{k,2}$ equals $2 + k$.
+/-- Characteristic value `L_{k,2} = 2 + k`.
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024). -/
 public theorem genLeonardo_two (k : ℤ) : genLeonardo k 2 = 2 + k := rfl
 
-/-- **Generalized Leonardo numbers as Leonardo $p$-numbers with $p = 1$.** For all natural numbers
-$k$ and $n$, the generalized Leonardo number $L_{k,n}$ equals the generalized Leonardo $p$-number
-$\mathcal{L}_{1,k}(n)$; both sequences start with $1, 1$ and satisfy the recurrence
-$a_{n+2} = a_{n+1} + a_n + k$.
+/-- Bridge to the existing generalized Leonardo `p`-number API: on
+natural `k`, `genLeonardo` agrees with `leonardoPK 1` from
+`WantedExt.NumberTheory.LeonardoPWanted` (initial values `1, 1` and
+the same recurrence). The `ℤ`-valued parameter here is the
+intentional extension beyond the paper's positive-`k` domain.
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*,
 Fibonacci Quarterly 62.3 (2024), introduction; Kusrini, Putra, and
@@ -52,13 +52,12 @@ public theorem_wanted genLeonardo_eq_leonardoPK_one (k n : ℕ) :
     genLeonardo (k : ℤ) n
       = MathlibExt.NumberTheory.LeonardoPWanted.leonardoPK 1 k n
 
-/-- **Dual generalized Leonardo numbers.** For an integer $k$, let $L_{k,n}$ denote the generalized
-Leonardo numbers. The dual generalized Leonardo numbers $M_{k,n}$, for natural numbers $n$, are
-defined by $M_{k,0} = 1 - k$ and $M_{k,n+1} = L_{k,n} + L_{k,n+2}$, so that
-$M_{k,n} = L_{k,n-1} + L_{k,n+1}$ for $n \ge 1$.
-
-This agrees with the paper's Definition 2.1, which sets $M_{k,0} = 1 - k$, $M_{k,1} = k + 3$, and
-$M_{k,n+1} = M_{k,n} + M_{k,n-1} + 2k$ for $n \ge 1$.
+/-- The dual generalized Leonardo numbers `M_{k,n}`: the paper's
+Definition 2.1 gives `M_{k,0} = 1 - k`, `M_{k,1} = k + 3`, and
+`M_{k,n+1} = M_{k,n} + M_{k,n-1} + 2k` for `n ≥ 1`; the paper's
+identity (2.1) gives `M_{k,n} = L_{k,n-1} + L_{k,n+1}`. The
+closed form used here agrees with Definition 2.1 on all `n` and
+with the paper's value table (checked for `k = 1` to `n = 14`).
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*,
 Fibonacci Quarterly 62.3 (2024), Definition 2.1 and identity (2.1). -/
@@ -66,8 +65,7 @@ public def genLeonardoCompanion (k : ℤ) : ℕ → ℤ
   | 0 => 1 - k
   | n + 1 => genLeonardo k n + genLeonardo k (n + 2)
 
-/-- **The dual generalized Leonardo number of index one.** For every integer $k$, the dual
-generalized Leonardo number $M_{k,1}$ equals $3 + k$.
+/-- Characteristic value `M_{k,1} = 3 + k`.
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024). -/
@@ -78,10 +76,8 @@ public theorem genLeonardoCompanion_one (k : ℤ) :
   rw [h0, genLeonardo_two]
   ring
 
-/-- **Product of a generalized Leonardo number and its dual.** Let $k$ be an integer, and let
-$L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual generalized Leonardo
-numbers. For every natural number $n$,
-$$L_{k,n} M_{k,n} = (k+1) L_{k,2n+1} - k L_{k,n+3} + k\,(2k+1).$$
+/-- The product identity `L_{k,n} * M_{k,n} = (k+1) * L_{k,2n+1} -
+k * L_{k,n+3} + k * (2k+1)`.
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024), Theorem 2.2 (`fq-2024-kuhapatanakul05292024-thm-2.2`). -/
@@ -90,10 +86,8 @@ public theorem_wanted genLeonardo_mul_companion (k : ℤ) (n : ℕ) :
       = (k + 1) * genLeonardo k (2 * n + 1) - k * genLeonardo k (n + 3)
         + k * (2 * k + 1)
 
-/-- **Cross-product identity for generalized Leonardo numbers.** Let $k$ be an integer, and let
-$L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual generalized Leonardo
-numbers. For every natural number $n \ge 1$,
-$$L_{k,n} M_{k,n+1} - L_{k,n+1} M_{k,n-1} = (k+1) L_{k,2n} - k L_{k,n} + k.$$
+/-- The cross-product identity `L_{k,n} * M_{k,n+1} - L_{k,n+1} * M_{k,n-1}
+= (k+1) * L_{k,2n} - k * L_{k,n} + k`.
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024), Theorem 2.3 (`fq-2024-kuhapatanakul05292024-thm-2.3`). -/
@@ -102,10 +96,8 @@ public theorem_wanted genLeonardo_cross (k : ℤ) (n : ℕ) (hn : 1 ≤ n) :
         - genLeonardo k (n + 1) * genLeonardoCompanion k (n - 1)
       = (k + 1) * genLeonardo k (2 * n) - k * genLeonardo k n + k
 
-/-- **Square-difference identity for generalized Leonardo numbers.** For every integer $k$ and
-every natural number $n \ge 1$, the generalized Leonardo numbers $L_{k,n}$ and the dual
-generalized Leonardo numbers $M_{k,n}$ satisfy
-$$M_{k,n}^2 - L_{k,n}^2 = 4 L_{k,n-1} L_{k,n+1} + 2k L_{k,n} + k^2.$$
+/-- The square-difference identity `M_{k,n}^2 - L_{k,n}^2 =
+4 * L_{k,n-1} * L_{k,n+1} + 2k * L_{k,n} + k^2`.
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024), Theorem 2.4 (`fq-2024-kuhapatanakul05292024-thm-2.4`). -/
@@ -114,14 +106,14 @@ public theorem_wanted genLeonardo_sq_sub_sq (k : ℤ) (n : ℕ) (hn : 1 ≤ n) :
       = 4 * genLeonardo k (n - 1) * genLeonardo k (n + 1)
         + 2 * k * genLeonardo k n + k ^ 2
 
-/-- **Shift identity for generalized Leonardo numbers.** Let $k$ be an integer and let $L_{k,n}$
-denote the generalized Leonardo numbers. For all natural numbers $m$, $n$, $t$ with
-$1 \le t \le n$ and $n + 1 \le m + t$,
-$$L_{k,m} L_{k,n} - L_{k,m+t} L_{k,n-t}
-= (-1)^{n-t+1} (L_{k,m+t-n-1} + k)(L_{k,t-1} + k) -
-k\,(L_{k,m} + L_{k,n} - L_{k,m+t} - L_{k,n-t}).$$
+/-- The shift identity
+`L_{k,m} L_{k,n} - L_{k,m+t} L_{k,n-t}
+= (-1)^{n-t+1} (L_{k,m-n+t-1} + k)(L_{k,t-1} + k)
+- k (L_{k,m} + L_{k,n} - L_{k,m+t} - L_{k,n-t})`.
 
-The paper also allows $t = 0$, reading $L_{k,-1}$ by extending the sequence to negative indices.
+Stated here for `1 ≤ t ≤ n` with `n + 1 ≤ m + t` so that all indices are
+nonnegative; the paper allows `t = 0` with `L_{k,-1}` read by backward
+extension.
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024), Theorem 2.5 (`fq-2024-kuhapatanakul05292024-thm-2.5`). -/
@@ -134,18 +126,17 @@ public theorem_wanted genLeonardo_shift (k : ℤ) (m n t : ℕ)
         - k * (genLeonardo k m + genLeonardo k n
           - genLeonardo k (m + t) - genLeonardo k (n - t))
 
-/-- **Sum-and-difference square identities for generalized Leonardo numbers.** For every
-integer $k$ and all natural numbers $m$, $n$ with $1 \le n < m$, the generalized Leonardo
-numbers $L_{k,n}$ satisfy
-$$L_{k,m+n}^2 - L_{k,m-n}^2 =
-(L_{k,2m+1} + k)(L_{k,2n-1} + k) - 2k (L_{k,m+n} - L_{k,m-n})$$
-and
-$$L_{k,m+n}^2 + L_{k,m-n-1}^2 =
-(L_{k,2m} + k)(L_{k,2n} + k) - 2k (L_{k,m+n} + L_{k,m-n-1}) - 2k^2.$$
+/-- The sum-and-difference square identities:
+`L_{k,m+n}^2 - L_{k,m-n}^2
+= (L_{k,2m+1} + k)(L_{k,2n-1} + k) - 2k (L_{k,m+n} - L_{k,m-n})` and
+`L_{k,m+n}^2 + L_{k,m-n-1}^2
+= (L_{k,2m} + k)(L_{k,2n} + k) - 2k (L_{k,m+n} + L_{k,m-n-1}) - 2k^2`.
 
-In the second identity the last term inside the parentheses is $L_{k,m-n-1}$. The paper as
-printed shows $L_{k,m-n}$ there, which is false: at $k = 1$, $m = 3$, $n = 1$ the printed
-identity reads $82 = 78$. The reading used here agrees with the paper's outline derivation.
+In part (ii) the last summand inside the parenthesis is read as
+`L_{k,m-n-1}`. The paper as printed shows `L_{k,m-n}` there, which is
+false: at `k = 1, m = 3, n = 1` the printed identity reads `82 = 78`.
+The reading used here agrees with the paper's outline derivation and
+was verified computationally for `k ∈ {0,1,2,3}`, `m ≤ 11`.
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024), Theorem 2.6 (`fq-2024-kuhapatanakul05292024-thm-2.6`). -/
@@ -159,16 +150,14 @@ public theorem_wanted genLeonardo_sq_sum_diff (k : ℤ) (m n : ℕ)
         - 2 * k * (genLeonardo k (m + n) + genLeonardo k (m - n - 1))
         - 2 * k ^ 2)
 
-/-- **Binomial convolution identities for generalized Leonardo numbers.** Let $k$ be an integer,
-and let $L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual generalized
-Leonardo numbers. For all natural numbers $n$ and $r$,
-$$\sum_{i=0}^{n} \binom{n}{i} L_{k,i+r} = L_{k,2n+r} - k\,(2^n - 1)$$
-and
-$$\sum_{i=0}^{n} \binom{n}{i} M_{k,i+r} = M_{k,2n+r} - 2k\,(2^n - 1).$$
+/-- The binomial-convolution identities
+`∑_i C(n,i) L_{k,i+r} = L_{k,2n+r} - k (2^n - 1)` and
+`∑_i C(n,i) M_{k,i+r} = M_{k,2n+r} - 2k (2^n - 1)`.
 
-Parts (iii) and (iv) of the paper's Theorem 3.1, alternating sums involving the index
-$L_{k,n-r-2}$, are false as printed: at $k = 1$, $n = 3$, $r = 1$, with the sequence extended to
-negative indices by the recurrence, the left side is $2$ and the printed right side is $-2$.
+Parts (iii) and (iv) of the paper's Theorem 3.1 (alternating sums)
+are not formalized: as printed they involve the backward index
+`L_{k,n-r-2}` and fail, for example at `k = 1, n = 3, r = 1` under
+the backward extension (left side `2`, printed right side `-2`).
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024), Theorem 3.1 (i),(ii)
@@ -179,15 +168,13 @@ public theorem_wanted genLeonardo_binomial_sum (k : ℤ) (n r : ℕ) :
     (∑ i ∈ Finset.range (n + 1), (Nat.choose n i : ℤ) * genLeonardoCompanion k (i + r)
       = genLeonardoCompanion k (2 * n + r) - 2 * k * (2 ^ n - 1))
 
-/-- **Even-order binomial identities for generalized Leonardo numbers.** Let $k$ be an integer,
-and let $L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual generalized
-Leonardo numbers. For all natural numbers $m$ and $r$,
-$$\sum_{i=0}^{2m} \binom{2m}{i} L_{k,2i+r} = 5^m L_{k,2m+r} + k\,(5^m - 2^{2m})$$
-and
-$$\sum_{i=0}^{2m} \binom{2m}{i} M_{k,2i+r} = 5^m M_{k,2m+r} + 2k\,(5^m - 2^{2m}).$$
+/-- The even-order binomial identities
+`∑_i C(2m,i) L_{k,2i+r} = 5^m L_{k,2m+r} + k (5^m - 2^{2m})` and
+`∑_i C(2m,i) M_{k,2i+r} = 5^m M_{k,2m+r} + 2k (5^m - 2^{2m})`.
 
-The paper's Theorem 3.2 also states identities of odd order $n$; as printed they are false (at
-$k = n = 1$, $r = 0$ the first odd identity reads $4 = 6$).
+This is the even case of the paper's Theorem 3.2; the odd case as
+printed is false (at `k = n = 1, r = 0` the first odd identity reads
+`4 = 6`) and is not formalized.
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024), Theorem 3.2, even case
@@ -200,14 +187,11 @@ public theorem_wanted genLeonardo_binomial_sum_two_mul (k : ℤ) (m r : ℕ) :
         (Nat.choose (2 * m) i : ℤ) * genLeonardoCompanion k (2 * i + r)
       = 5 ^ m * genLeonardoCompanion k (2 * m + r) + 2 * k * (5 ^ m - 2 ^ (2 * m)))
 
-/-- **Alternating binomial identities for generalized Leonardo numbers.** Let $k$ be an integer,
-and let $L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual generalized
-Leonardo numbers. For all natural numbers $n \ge 1$ and $r$,
-$$\sum_{i=0}^{n} \binom{n}{i} (-1)^{n-i} L_{k,2i+r} = L_{k,n+r} + k$$
-and
-$$\sum_{i=0}^{n} \binom{n}{i} (-1)^{n-i} M_{k,2i+r} = M_{k,n+r} + 2k.$$
-
-The hypothesis $n \ge 1$ is needed: for $n = 0$ the two sums equal $L_{k,r}$ and $M_{k,r}$.
+/-- The alternating binomial identities
+`∑_i C(n,i) (-1)^{n-i} L_{k,2i+r} = L_{k,n+r} + k` and
+`∑_i C(n,i) (-1)^{n-i} M_{k,2i+r} = M_{k,n+r} + 2k`, stated for `n ≥ 1`
+(both identities fail at `n = 0` as extracted, where the sums equal
+`L_{k,r}` and `M_{k,r}`).
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024), Theorem 3.3 (`fq-2024-kuhapatanakul05292024-thm-3.3`). -/
@@ -220,18 +204,14 @@ public theorem_wanted genLeonardo_binomial_alternating (k : ℤ) (n r : ℕ)
         (Nat.choose n i : ℤ) * (-1) ^ (n - i) * genLeonardoCompanion k (2 * i + r)
       = genLeonardoCompanion k (n + r) + 2 * k)
 
-/-- **Binomial identities with steps three and four for generalized Leonardo numbers.** Let $k$ be
-an integer, and let $L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual
-generalized Leonardo numbers. For all natural numbers $n$ and $r$,
-$$\sum_{i=0}^{n} \binom{n}{i} L_{k,3i+r} = 2^n L_{k,2n+r},$$
-$$\sum_{i=0}^{n} \binom{n}{i} M_{k,3i+r} = 2^n M_{k,2n+r},$$
-$$\sum_{i=0}^{n} \binom{n}{i} L_{k,4i+r} = 3^n L_{k,2n+r} + k\,(3^n - 2^n),$$
-and
-$$\sum_{i=0}^{n} \binom{n}{i} M_{k,4i+r} = 3^n M_{k,2n+r} + 2k\,(3^n - 2^n).$$
-
-Part (iv) of the paper's Theorem 3.4 prints the last term of the fourth identity as
-$k\,(3^n - 2^n)$, which is false at $k = n = 1$, $r = 0$; the coefficient $2k$ is the correct one,
-as in parts (ii) of Theorems 3.1–3.3.
+/-- The step-3 and step-4 binomial identities:
+`∑_i C(n,i) L_{k,3i+r} = 2^n L_{k,2n+r}`,
+`∑_i C(n,i) M_{k,3i+r} = 2^n M_{k,2n+r}`,
+`∑_i C(n,i) L_{k,4i+r} = 3^n L_{k,2n+r} + k (3^n - 2^n)`, and
+`∑_i C(n,i) M_{k,4i+r} = 3^n M_{k,2n+r} + 2k (3^n - 2^n)`
+(part (iv) as printed in the paper shows `k (3^n - 2^n)`, which is
+false at `k = n = 1, r = 0`; the factor `2k` used here is verified
+computationally, consistent with parts (ii) of Theorems 3.1–3.3).
 
 Source: Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci
 Quarterly (2024), Theorem 3.4 (`fq-2024-kuhapatanakul05292024-thm-3.4`). -/

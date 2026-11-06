@@ -34,19 +34,19 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind StatMech.Ons
 
 variable {n : ℕ} [NeZero n]
 
-/-- **A step changes the x-coordinate by at most one.** A step changes the `x`-coordinate by `0` or `±1`. -/
+/-- A step changes the `x`-coordinate by `0` or `±1`. -/
 theorem fst_step_bound (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n) :
     (pos d (k + 1)).1 = (pos d k).1 ∨ (pos d (k + 1)).1 = (pos d k).1 + 1 ∨
       (pos d (k + 1)).1 = (pos d k).1 - 1 := by
   have h := stepOf_fst (d k)
   rw [fst_step d hclosed k]; omega
 
-/-- **Number of crossings of a vertical line.** The number of horizontal steps of the walk crossing the vertical line `x = m + 1/2`. -/
+/-- The number of horizontal steps of the walk crossing the vertical line `x = m + 1/2`. -/
 def vertColCross (d : Fin n → Fin 4) (m : ℤ) : ℕ :=
   (Finset.univ.filter (fun k : Fin n =>
     isHorizEdge (d k) ∧ min ((pos d k).1) ((pos d (k + 1)).1) = m)).card
 
-/-- **A closed walk crosses a vertical line equally often left and right.** A walk crosses the line `x = m + 1/2` to the right as often as to the left. -/
+/-- A walk crosses the line `x = m + 1/2` to the right as often as to the left. -/
 theorem leftRight_card_eq (d : Fin n → Fin 4) (m : ℤ) :
     (Finset.univ.filter
         (fun k : Fin n => (pos d k).1 ≤ m ∧ m + 1 ≤ (pos d (k + 1)).1)).card
@@ -76,7 +76,7 @@ theorem leftRight_card_eq (d : Fin n → Fin 4) (m : ℤ) :
   rw [Finset.sum_sub_distrib, Finset.sum_boole, Finset.sum_boole, sub_eq_zero] at hsum
   exact_mod_cast hsum
 
-/-- **A closed walk crosses each vertical line an even number of times.** A closed walk crosses each vertical line `x = m + 1/2` an even number of times. -/
+/-- A closed walk crosses each vertical line `x = m + 1/2` an even number of times. -/
 theorem vertColCross_even (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (m : ℤ) :
     Even (vertColCross d m) := by
   classical

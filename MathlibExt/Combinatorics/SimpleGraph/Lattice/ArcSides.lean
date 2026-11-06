@@ -51,7 +51,7 @@ namespace Lattice
 open StatMech.RSW.Box
 open StatMech.Universality
 
-/-- **Rectangle lattice with an open cluster removed.** The square lattice restricted to the rectangle `[α, β] × [c, d]`, with the open cluster of
+/-- The square lattice restricted to the rectangle `[α, β] × [c, d]`, with the open cluster of
 `x_B` in the overlap rectangle removed. -/
 noncomputable def boxMinusP (ω : ConfigSpace (Sym2 (Site 2))) (α β m m' c d : ℤ)
     (xB : Site 2) (hxB : xB ∈ rect m m' c d) : SimpleGraph (Site 2) where
@@ -79,14 +79,14 @@ theorem boxMinusP_walk_dest (ω : ConfigSpace (Sym2 (Site 2))) (α β m m' c d :
   | nil => exact ⟨hx, hxP⟩
   | @cons a b e hab p ih => exact ih hab.2.2.1 hab.2.2.2.2
 
-/-- **Sites reachable from the left side of a rectangle.** The sites reachable from the left side of `[α, β] × [c, d]` inside the rectangle without
+/-- The sites reachable from the left side of `[α, β] × [c, d]` inside the rectangle without
 touching the open cluster of `x_B` in the overlap. -/
 def floodFromLeft (ω : ConfigSpace (Sym2 (Site 2))) (α β m m' c d : ℤ)
     (xB : Site 2) (hxB : xB ∈ rect m m' c d) : Set (Site 2) :=
   {z | ∃ x : Site 2, x ∈ rect α β c d ∧ x 0 = α ∧ x ∉ overlapComp ω m m' c d xB hxB ∧
         (boxMinusP ω α β m m' c d xB hxB).Reachable x z}
 
-/-- **Left region of a rectangle cut by an open cluster.** The left region: the left side of `[α, β] × [c, d]` together with `floodFromLeft`. -/
+/-- The left region: the left side of `[α, β] × [c, d]` together with `floodFromLeft`. -/
 def arcS_leftRegion (ω : ConfigSpace (Sym2 (Site 2))) (α β m m' c d : ℤ)
     (xB : Site 2) (hxB : xB ∈ rect m m' c d) : Set (Site 2) :=
   {z | z ∈ rect α β c d ∧ (z 0 = α ∨ z ∈ floodFromLeft ω α β m m' c d xB hxB)}
@@ -145,7 +145,7 @@ theorem arcS_leftRegion_bdEdge (ω : ConfigSpace (Sym2 (Site 2))) (α β m m' c 
   · have huL : u ∈ arcS_leftRegion ω α β m m' c d xB hxB := hbd.mpr hvL
     exact hvL ⟨hv, Or.inr (flood_step ω α β m m' c d xB hxB huL huP hadj hv hvP)⟩
 
-/-- **Condition that every left-right crossing meets the open cluster.** Every lattice path inside `[α, β] × [c, d]` from the left side to the right side meets the
+/-- Every lattice path inside `[α, β] × [c, d]` from the left side to the right side meets the
 open cluster of `x_B` in the overlap `[m, m'] × [c, d]`. This fails for some configurations
 (`StatMech.Lattice.tpc_arcS_twoPathsCross_false`). -/
 def ArcS_TwoPathsCross (ω : ConfigSpace (Sym2 (Site 2))) (α β m m' c d : ℤ)

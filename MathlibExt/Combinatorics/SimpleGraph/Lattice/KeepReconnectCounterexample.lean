@@ -43,11 +43,11 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Adjacency relation of the cut horizontal axis.** Both sites lie on the horizontal axis and the pair is not `{(0, 0), (1, 0)}`. -/
+/-- Both sites lie on the horizontal axis and the pair is not `{(0, 0), (1, 0)}`. -/
 def jkr_lineRel (a b : Site 2) : Prop :=
   a 1 = 0 ∧ b 1 = 0 ∧ ¬ ({a 0, b 0} = ({0, 1} : Finset ℤ))
 
-/-- **Horizontal axis with one edge removed.** The horizontal axis of `ℤ²` with the edge from `(0, 0)` to `(1, 0)` removed. -/
+/-- The horizontal axis of `ℤ²` with the edge from `(0, 0)` to `(1, 0)` removed. -/
 def jkr_lineH : SimpleGraph (Site 2) where
   Adj a b := (hypercubicLattice 2).Adj a b ∧ jkr_lineRel a b
   symm := by
@@ -133,7 +133,7 @@ theorem jkr_witness_ring :
       {s(![(0:ℤ), 0], ![(0:ℤ), -1])}).Reachable ![(0:ℤ), 0] ![(0:ℤ), -1] :=
   jwn_witness_ring
 
-/-- **Keep-reconnect residue for finite graphs.** For every graph `H` of `ℤ²` with finitely many edges and every lattice edge `pq` outside `H`
+/-- For every graph `H` of `ℤ²` with finitely many edges and every lattice edge `pq` outside `H`
 with dual edge `f0g0`: if `p` and `q` are disconnected in `H`, then `f0` and `g0` are
 connected in the face-region graph of `H` with `f0g0` deleted. -/
 def jkr_FiniteKeepReconnectResidue : Prop :=

@@ -1214,17 +1214,10 @@ private lemma catalanExp_tendsto_nat_pow_mul_of_diff_isBigO (e : ℕ → ℝ) (M
       field_simp
 
 /--
-**Bernoulli-polynomial expansion from a logarithmic difference equation.** Let $\alpha$, $\beta$
-and $c$ be real numbers and let $(u_n)$ be a real sequence with $u_n \to 0$ such that, for all
-sufficiently large $n$,
-$u_{n+1} - u_n = \log(1 + \alpha/(n + c)) - \log(1 + \beta/(n + c)) +
-(\beta - \alpha) \log(1 + 1/(n + c))$.
-Let $B_k(x)$ be the $k$-th Bernoulli polynomial and, for $j \ge 0$, put
-$a_j = (-1)^j \left(B_{j+2}(\alpha) - B_{j+2}(\beta)\right) / ((j + 1)(j + 2))$. Then for every
-natural number $M$, $(n + c)^M \left(u_n - \sum_{j=0}^{M-1} a_j (n + c)^{-(j+1)}\right) \to 0$
-as $n \to \infty$.
-
-The normalization $u_n \to 0$ fixes the otherwise undetermined additive constant.
+An all-orders Bernoulli-polynomial expansion obtained from a logarithmic
+first-difference equation. The normalization `u n → 0` fixes the otherwise
+undetermined additive constant. Its coefficients use Mathlib's
+`Polynomial.bernoulli`, evaluated by `Polynomial.aeval`.
 -/
 public theorem _root_.Real.tendsto_pow_mul_sub_bernoulli_sum_of_log_diff
     {u : ℕ → ℝ} (α β c : ℝ)
@@ -1470,13 +1463,8 @@ private lemma catalanExp_shifted_log_step (c : ℝ) :
   linear_combination hbase
 
 /--
-**All-orders logarithmic expansion of the Catalan numbers at a real shift.** Let $c$ be a real
-number, let $C_n$ be the $n$-th Catalan number and $B_k(x)$ the $k$-th Bernoulli polynomial, and
-for $j \ge 0$ put
-$a_j = (-1)^j \left(B_{j+2}(1/2 - c) - B_{j+2}(2 - c)\right) / ((j + 1)(j + 2))$.
-Then for every natural number $M$,
-$(n + c)^M \left(\log\left(C_n \sqrt{\pi (n + c)^3} / 4^n\right) -
-\sum_{j=0}^{M-1} a_j (n + c)^{-(j+1)}\right) \to 0$ as $n \to \infty$.
+The all-orders logarithmic asymptotic expansion of the Catalan numbers at an
+arbitrary real shift, with coefficients given by differences of Bernoulli polynomials.
 -/
 public theorem _root_.tendsto_pow_mul_log_catalan_sub_bernoulli_sum (c : ℝ) :
     ∀ M : ℕ,
@@ -1568,29 +1556,28 @@ private lemma catalanExp_second_sum_eq (E : ℕ → ℤ)
   convert hmul using 1
 
 /--
-**Stirling-type asymptotic expansions of the Catalan numbers.** Let $C_n$ be the $n$-th Catalan
-number and $B_k$ the $k$-th Bernoulli number, and let $(E_k)$ be a sequence of integers with
-$E_0 = 1$ and $\sum_{j=0}^{\lfloor n/2 \rfloor} \binom{n}{2j} E_{n-2j} = 0$ for every $n > 0$
-(these are the Euler numbers $1, 0, -1, 0, 5, \dots$). For $k \ge 1$ put
-$c_k = (-1)^{k+1} \left((2^{-k} - 2) B_{k+1} - k - 1\right) / (k (k + 1))$ and
-$d_k = 2^{-4k-2} (4 - E_{2k}) / k$. Then for every $m \ge 0$, as $n \to \infty$,
-$\log\left(C_n \, n \sqrt{\pi n} / 4^n\right) = \sum_{k=1}^{m} c_k n^{-k} + o(n^{-m})$ and,
-writing $x = n + 3/4$,
-$\log\left(C_n \sqrt{\pi x^3} / 4^n\right) = \sum_{k=1}^{m} d_k x^{-2k} + o(x^{-2m})$.
-
-The first coefficient is $c_1 = -9/8$, matching the classical expansion
-$C_n = \frac{4^n}{\sqrt{\pi} \, n^{3/2}} \left(1 - \frac{9}{8n} + \dots\right)$.
-
-Proof: The Catalan recurrence gives a logarithmic first-difference equation.
-Telescoping its Bernoulli-polynomial expansion yields both all-orders formulas.
-
-Proves `Wanted` entry `catalan_stirling_asymptotic_expansions`.
+The two Stirling-type asymptotic expansions of the Catalan numbers, in
+logarithmic form: with `C n = catalan n`, `log (C n * n * √(π * n) / 4 ^ n)`
+is asymptotic to `∑_{k=1}^{m} (-1)^{k+1} ((2^{-k} - 2) B_{k+1} - k - 1) /
+(k (k + 1)) n^{-k}` with remainder `o(n^{-m})` for every `m`, and
+`log (C n * √(π * (n + 3/4)^3) / 4 ^ n)` is asymptotic to
+`∑_{k=1}^{m} 2^{-4k-2} (4 - E_{2k}) / k (n + 3/4)^{-2k}` with remainder
+`o((n + 3/4)^{-2m})` for every `m`. The sequence `E` is pinned down by the
+Euler-number recurrence `E 0 = 1`, `∑_j C(n,2j) E_{n-2j} = 0` for `n > 0`
+(giving `E = 1, 0, -1, 0, 5, ...`), and `bernoulli` is the Bernoulli-number
+sequence. The `k = 1` term of the first expansion is `-9 / (8n)`, matching
+the classical `C_n = 4^n / (√π n^{3/2}) (1 - 9/(8n) + ...)`.
 
 Source: Neven Elezović, "Asymptotic Expansions of Central Binomial
 Coefficients and Catalan Numbers," Journal of Integer Sequences 17 (2014),
 Article 14.2.1, Catalan Stirling-type theorem (unlabeled, equation 42),
 lines 626–637,
 https://cs.uwaterloo.ca/journals/JIS/VOL17/Elezovic/elezovic5.tex
+
+Proves `Wanted` entry `catalan_stirling_asymptotic_expansions`.
+
+Proof: The Catalan recurrence gives a logarithmic first-difference equation.
+Telescoping its Bernoulli-polynomial expansion yields both all-orders formulas.
 -/
 public theorem catalan_stirling_asymptotic_expansions
     (E : ℕ → ℤ)

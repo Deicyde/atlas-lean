@@ -82,7 +82,7 @@ private lemma key_inequality {V : Type*} [SeminormedAddCommGroup V] [InnerProduc
   exact lt_of_pow_lt_pow_left₀ 2 (norm_nonneg _) hsq2
 
 /--
-**Sylvester–Gallai theorem.** Every finite non-collinear subset of the real Euclidean plane determines an ordinary line: two
+Every finite non-collinear subset of the real Euclidean plane determines an ordinary line: two
 points of the set such that no third point of the set is collinear with them.
 Source: J. J. Sylvester, Mathematical Question 11851, Educational Times 59 (1893) 98; L. M. Kelly, A
 resolution of the Sylvester–Gallai problem, Discrete Comput. Geom. 1 (1986) 101–104 standard

@@ -38,25 +38,25 @@ Encoding and the NP-completeness format follow
 `WantedExt/Complexity/NPComplete/SetCoverWanted.lean`.
 -/
 
-/-- **Instance of maximum n-times coverage.** An instance: `n`, the coverage rows of the overlays, element weights, `k`, `τ`. -/
+/-- An instance: `n`, the coverage rows of the overlays, element weights, `k`, `τ`. -/
 abbrev Instance := ℕ × List (List ℕ) × List ℕ × ℕ × ℕ
 
-/-- **Well-formed maximum n-times coverage instance.** Well-formedness: every row has one entry per element. -/
+/-- Well-formedness: every row has one entry per element. -/
 def WellFormed (i : Instance) : Prop :=
   ∀ row ∈ i.2.1, row.length = i.2.2.1.length
 
-/-- **Weight covered at least n times.** The weight of the elements covered at least `n` times by the rows `sub`. -/
+/-- The weight of the elements covered at least `n` times by the rows `sub`. -/
 def coveredWeight (n : ℕ) (sub : List (List ℕ)) (weights : List ℕ) : ℕ :=
   ((List.range weights.length).filter fun e => n ≤ (sub.map fun row => row.getD e 0).sum).foldr
     (fun e acc => weights.getD e 0 + acc) 0
 
-/-- **Feasibility for maximum n-times coverage.** At most `k` overlays cover weight at least `τ` at least `n` times. -/
+/-- At most `k` overlays cover weight at least `τ` at least `n` times. -/
 def Feasible (i : Instance) : Prop :=
   ∃ sub : List (List ℕ), sub.Sublist i.2.1 ∧ sub.length ≤ i.2.2.2.1 ∧
     i.2.2.2.2 ≤ coveredWeight i.1 sub i.2.2.1
 
 open Classical in
-/-- **Maximum n-times coverage decision problem.** MAXIMUM n-TIMES COVERAGE as a decision problem over bitstrings. -/
+/-- MAXIMUM n-TIMES COVERAGE as a decision problem over bitstrings. -/
 noncomputable def maxNTimesCoverageDec :
     MetaMathlibExt.ComplexityTheory.DecisionProblem := fun x =>
   match MetaMathlibExt.BitstringEncoding.bitDecode (α := Instance) x with

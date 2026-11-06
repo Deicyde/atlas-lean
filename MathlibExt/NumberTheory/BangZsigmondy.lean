@@ -58,9 +58,8 @@ positive indices `1 ≤ m < n`.
 
 namespace MetaMathlibExt
 
-/-- **Exceptional cases of Zsigmondy's theorem.** A triple $(a, b, n)$ of natural numbers is a
-Bang–Zsigmondy exceptional case when either $(a, b, n) = (2, 1, 6)$, or $n = 2$ and $a + b = 2^k$
-for some natural number $k$. -/
+/-- Concrete Bang–Zsigmondy exceptional case predicate: the sporadic exception
+`(a, b, n) = (2, 1, 6)`, or exponent two with `a + b` a power of two. -/
 public def IsBangZsigmondyExceptional (a b n : ℕ) : Prop :=
   (a = 2 ∧ b = 1 ∧ n = 6) ∨ (n = 2 ∧ ∃ k : ℕ, a + b = 2 ^ k)
 
@@ -1195,16 +1194,12 @@ private theorem zsSixContra {a b P : ℕ} (hP : Nat.Prime P)
     exact hab_nat
   exact hab21 ⟨ha2eq, hb1eq⟩
 
-/-- **Zsigmondy's theorem.** Let $a$, $b$ and $n$ be natural numbers with $0 < b < a$, $a$ and $b$
-coprime, and $n \ge 2$, and suppose that $(a, b, n)$ is not a Bang–Zsigmondy exceptional case:
-neither $(a, b, n) = (2, 1, 6)$, nor $n = 2$ with $a + b$ a power of two. Then $a^n - b^n$ has a
-primitive prime divisor, that is, a prime $p$ that divides $a^n - b^n$ and divides no $a^m - b^m$
-with $1 \le m < n$.
-
-Proves `Wanted` entry `bangZsigmondy_exists_primitivePrimeDivisor`.
-
+/-- General Bang–Zsigmondy existence of a primitive prime divisor of
+`a ^ n - b ^ n` (mathematical integer subtraction), outside the exceptional cases.
 Source: Bayarmagnai lines 133–137 invoke the general theorem, with the explicit
-exception families per Jones Theorem `Bang` lines 211–215. -/
+exception families per Jones Theorem `Bang` lines 211–215.
+
+Proves `Wanted` entry `bangZsigmondy_exists_primitivePrimeDivisor`. -/
 public theorem bangZsigmondy_exists_primitivePrimeDivisor {a b n : ℕ}
     (hbpos : 0 < b) (hba : b < a) (hcop : Nat.Coprime a b)
     (hn : 2 ≤ n) (hnexc : ¬ IsBangZsigmondyExceptional a b n) :

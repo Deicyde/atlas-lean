@@ -34,7 +34,7 @@ private theorem apply_pow_of_apply_eq_smul_sq (D : Derivation R A A) {r : R} {ep
   · rw [D.leibniz_pow, h, Nat.add_sub_cancel, smul_eq_mul, mul_smul_comm, ← pow_add,
       ← Nat.cast_smul_eq_nsmul R, smul_smul, mul_comm r]
 
-/-- **Iterated derivation of a power when $D\varepsilon = r\varepsilon^2$.** If `D epsilon = r • epsilon²`, then the `n`th iterate of `D` on `epsilon^m` has
+/-- If `D epsilon = r • epsilon²`, then the `n`th iterate of `D` on `epsilon^m` has
 coefficient `r^n` times the ascending factorial of `m`. The coefficient is not cancelled,
 so the formula remains valid in positive characteristic. -/
 theorem iterate_pow_of_apply_eq_smul_sq (D : Derivation R A A) (r : R) (epsilon : A)

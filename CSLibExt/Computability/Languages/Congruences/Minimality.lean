@@ -39,9 +39,8 @@ universe u v
 
 variable {Symbol : Type u} {State : Type v} {L : Language Symbol}
 
-/-- **Distinguishable words.** Let $L$ be a language over an alphabet $\Sigma$. Two words $x$ and
-$y$ over $\Sigma$ are distinguishable by $L$ when there is a word $z$ over $\Sigma$ such that
-exactly one of $xz$ and $yz$ belongs to $L$. -/
+/-- Two words are distinguished by `L` when some continuation gives different membership
+answers. -/
 def Distinguishable (L : Language Symbol) (x y : List Symbol) : Prop :=
   ∃ z, ¬(x ++ z ∈ L ↔ y ++ z ∈ L)
 
@@ -55,9 +54,8 @@ theorem not_distinguishable_iff_nerodeRel {x y : List Symbol} :
   rw [distinguishable_iff_not_nerodeRel]
   exact not_not
 
-/-- **Words reaching the same DFA state are Nerode equivalent.** Let $M$ be a DFA and let $L$ be
-the language it accepts. If $M$ reaches the same state from its start state on reading the words
-$x$ and $y$, then $x$ and $y$ are Nerode equivalent for $L$. -/
+/-- If two words reach the same state of a DFA, then the accepted language cannot distinguish
+them. -/
 theorem nerodeRel_of_eval_eq (M : DFA Symbol State) {x y : List Symbol}
     (hxy : M.eval x = M.eval y) : nerodeRel M.accepts x y := by
   rw [nerodeRel_iff]
@@ -67,18 +65,14 @@ theorem nerodeRel_of_eval_eq (M : DFA Symbol State) {x y : List Symbol}
     simpa only [DFA.eval] using hxy
   rw [hxy']
 
-/-- **Distinguishable words reach different DFA states.** Let $L$ be a language and let $M$ be
-a DFA that accepts exactly $L$. If two words $x$ and $y$ are distinguishable by $L$, then the
-states that $M$ reaches from its start state on reading $x$ and on reading $y$ are different. -/
+/-- Distinguishable words must reach different states in every DFA recognizing the language. -/
 theorem eval_ne_of_distinguishable (M : DFA Symbol State) (hM : M.accepts = L)
     {x y : List Symbol} (hxy : Distinguishable L x y) : M.eval x ≠ M.eval y := by
   intro h
   apply (distinguishable_iff_not_nerodeRel.mp hxy)
   simpa [hM] using nerodeRel_of_eval_eq M h
 
-/-- **Equivalent states of a DFA.** Two states $p$ and $q$ of a DFA $M$ are equivalent when
-they accept the same continuation language: for every word $z$, running $M$ from $p$ on $z$
-ends in an accepting state if and only if running $M$ from $q$ on $z$ does. -/
+/-- States are observationally equivalent when they accept the same continuation language. -/
 def StateEquivalent (M : DFA Symbol State) (p q : State) : Prop :=
   M.acceptsFrom p = M.acceptsFrom q
 
@@ -91,21 +85,14 @@ theorem stateEquivalent_iff {M : DFA Symbol State} {p q : State} :
   · intro h
     exact Set.ext h
 
-/-- **Nerode equivalence is equivalence of the reached states.** Let $M$ be a DFA and let $L$ be
-the language it accepts. Two words $x$ and $y$ are Nerode equivalent for $L$ if and only if the
-states that $M$ reaches from its start state on reading $x$ and on reading $y$ are
-observationally equivalent, that is, $M$ accepts the same language from both states. -/
+/-- Nerode equivalence of words is exactly observational equivalence of the states they reach. -/
 theorem nerodeRel_iff_stateEquivalent (M : DFA Symbol State) {x y : List Symbol} :
     nerodeRel M.accepts x y ↔ StateEquivalent M (M.eval x) (M.eval y) := by
   unfold nerodeRel StateEquivalent
   rw [Language.leftQuotient_accepts_apply, Language.leftQuotient_accepts_apply]
 
-/-- **Residual languages of reachable states.** For a DFA $M$ and a state $q$ of $M$, let $L_q$
-be the language of words $z$ such that running $M$ from $q$ on $z$ ends in an accepting state.
-The reachable residuals of $M$ form the set of the languages $L_q$ over all states $q$ that $M$
-reaches from its start state on some input word.
-
-This semantic state space forgets duplicate DFA states that accept the same continuations. -/
+/-- The residual languages represented by reachable states of `M`. This semantic state space
+forgets duplicate DFA states that accept the same continuations. -/
 def reachableResiduals (M : DFA Symbol State) : Set (Language Symbol) :=
   Set.range (M.acceptsFrom ∘ M.eval)
 
@@ -118,19 +105,14 @@ theorem reachableResiduals_eq (M : DFA Symbol State) (hM : M.accepts = L) :
     reachableResiduals M = Set.range L.leftQuotient := by
   rw [reachableResiduals_eq_range_leftQuotient, hM]
 
-/-- **Nerode classes correspond to reachable residuals.** Let $L$ be a language and let $M$ be
-a DFA that accepts exactly $L$. This is the bijection from the Nerode classes of $L$ to the
-reachable residuals of $M$, the languages accepted by $M$ from states it reaches from its start
-state. It sends the Nerode class of a word $x$ to the left quotient $\{z \mid xz \in L\}$, which
-is the language $M$ accepts from the state it reaches on reading $x$. -/
+/-- The semantic reachable-state space of any recognizing DFA has exactly the Nerode residuals. -/
 noncomputable def nerodeClassEquivReachableResiduals (M : DFA Symbol State)
     (hM : M.accepts = L) : NerodeClass L ≃ reachableResiduals M :=
   (nerodeClassEquivResidual L).trans
     (Equiv.cast
       (congrArg (fun s : Set (Language Symbol) ↦ ↥s) (reachableResiduals_eq M hM).symm))
 
-/-- **Representative of a Nerode class.** For a language $L$ and a Nerode class $q$ of $L$,
-the representative of $q$ is a word whose Nerode class is $q$, chosen once and for all. -/
+/-- A chosen representative word for a Nerode class. -/
 noncomputable def NerodeClass.representative (q : NerodeClass L) : List Symbol :=
   Quotient.out q
 
@@ -139,19 +121,13 @@ theorem nerodeClass_representative (q : NerodeClass L) :
     nerodeClass L q.representative = q := by
   exact Quotient.out_eq q
 
-/-- **Nerode classes to DFA states.** For a language $L$ and a DFA $M$ over the same alphabet,
-this map sends each Nerode class $q$ of $L$ to the state that $M$ reaches from its start
-state on the chosen representative of $q$.
-
-Unlike the canonical map from words to states, this does not claim that equivalent words reach
-equal states in a nonminimal DFA. -/
+/-- Send each Nerode class to the state reached by a chosen representative in `M`. Unlike the
+canonical map from words to states, this does not claim that equivalent words reach equal states
+in a nonminimal DFA. -/
 noncomputable def NerodeClass.toDFAState (M : DFA Symbol State) (q : NerodeClass L) : State :=
   M.eval q.representative
 
-/-- **Distinct Nerode classes reach distinct states.** Let $M$ be a DFA that accepts exactly
-the language $L$. Then the map sending each Nerode class of $L$ to the state that $M$ reaches
-from its start state on the chosen representative of the class is injective. In particular, $M$
-has at least one distinct state for each Nerode class. -/
+/-- Every recognizing DFA has at least one distinct state for each Nerode class. -/
 theorem NerodeClass.toDFAState_injective (M : DFA Symbol State) (hM : M.accepts = L) :
     Function.Injective (NerodeClass.toDFAState (L := L) M) := by
   intro p q hpq
@@ -160,18 +136,16 @@ theorem NerodeClass.toDFAState_injective (M : DFA Symbol State) (hM : M.accepts 
   apply (nerodeClass_eq_iff (L := L)).mpr
   simpa only [hM] using nerodeRel_of_eval_eq M hpq
 
-/-- **Nerode classes bound the number of DFA states.** Let $L$ be a language with finitely many
-Nerode classes, and let $M$ be a DFA with a finite set of states $Q$ that accepts exactly $L$.
-Then the number of Nerode classes of $L$ is at most $|Q|$. -/
+/-- The canonical Nerode automaton has no more states than any finite DFA recognizing `L`. -/
 theorem card_nerodeClass_le_card_state [Fintype (NerodeClass L)] [Fintype State]
     (M : DFA Symbol State) (hM : M.accepts = L) :
     Fintype.card (NerodeClass L) ≤ Fintype.card State :=
   Fintype.card_le_of_injective _ (NerodeClass.toDFAState_injective M hM)
 
-/-- **Myhill–Nerode lower bound via left quotients.** Let $L$ be a language and let $M$ be a DFA
-with a finite set of states $Q$ that accepts exactly $L$. For a word $x$, the left quotient of
-$L$ by $x$ is the language $\{z \mid xz \in L\}$. Then the number of distinct left quotients of
-$L$ is at most $|Q|$. -/
+/-- The `Nat.card` form of the Myhill–Nerode lower bound: the number of distinct left
+quotients of `L` is at most the number of states of any finite-state DFA accepting `L`.
+This is the statement formerly requested as `myhillNerode_minimal_state_count`; it follows
+from `nerodeClassEquivReachableResiduals` and `card_nerodeClass_le_card_state`. -/
 theorem natCard_range_leftQuotient_le_natCard_state [Finite State] (M : DFA Symbol State)
     (hM : M.accepts = L) :
     Nat.card (Set.range L.leftQuotient) ≤ Nat.card State := by
@@ -186,11 +160,8 @@ theorem natCard_range_leftQuotient_le_natCard_state [Finite State] (M : DFA Symb
   rw [← Nat.card_congr e, Nat.card_eq_fintype_card, Nat.card_eq_fintype_card]
   exact card_nerodeClass_le_card_state M hM
 
-/-- **Equality case of the Nerode state bound.** Let $L$ be a language with finitely many
-Nerode classes, and let $M$ be a DFA with a finite set of states $Q$ that accepts exactly $L$.
-Send each Nerode class of $L$ to the state that $M$ reaches from its start state on the chosen
-representative word of the class. Then the number of Nerode classes of $L$ equals $|Q|$ if and
-only if every state in $Q$ is the image of some Nerode class under this map. -/
+/-- For finite state spaces, equality in the Nerode lower bound is equivalent to the chosen
+class representatives reaching every state. -/
 theorem card_nerodeClass_eq_card_state_iff [Fintype (NerodeClass L)] [Fintype State]
     (M : DFA Symbol State) (hM : M.accepts = L) :
     Fintype.card (NerodeClass L) = Fintype.card State ↔
@@ -203,11 +174,8 @@ theorem card_nerodeClass_eq_card_state_iff [Fintype (NerodeClass L)] [Fintype St
   · intro hsurj
     exact Fintype.card_of_bijective ⟨hf, hsurj⟩
 
-/-- **Strict Nerode state bound.** Let $L$ be a language with finitely many Nerode classes, and
-let $M$ be a DFA with a finite set of states $Q$ that accepts exactly $L$. Send each Nerode
-class of $L$ to the state that $M$ reaches from its start state on the chosen representative
-word of the class. If some state in $Q$ is not the image of any Nerode class under this map,
-then the number of Nerode classes of $L$ is strictly less than $|Q|$. -/
+/-- A finite recognizing DFA with a state outside the image of the Nerode classes is strictly
+larger than the canonical quotient automaton. -/
 theorem card_nerodeClass_lt_card_state [Fintype (NerodeClass L)] [Fintype State]
     (M : DFA Symbol State) (hM : M.accepts = L)
     (hred : ¬Function.Surjective (NerodeClass.toDFAState (L := L) M)) :
@@ -215,11 +183,11 @@ theorem card_nerodeClass_lt_card_state [Fintype (NerodeClass L)] [Fintype State]
   Fintype.card_lt_of_injective_not_surjective _
     (NerodeClass.toDFAState_injective M hM) hred
 
-/-- **Reachable state of a DFA.** A state is reachable when some input word reaches it from the start state. -/
+/-- A state is reachable when some input word reaches it from the start state. -/
 def ReachableState (M : DFA Symbol State) (q : State) : Prop :=
   ∃ x, M.eval x = q
 
-/-- **Accessible DFA.** A DFA is accessible when every state is reachable. -/
+/-- A DFA is accessible when every state is reachable. -/
 def Accessible (M : DFA Symbol State) : Prop :=
   ∀ q, ReachableState M q
 

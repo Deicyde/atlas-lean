@@ -660,30 +660,21 @@ private lemma actual_time_expected_zero :
   simp_rw [actual_time_zero]
   exact integral_zero _ _
 
-/-- **Expected occupancy of a bucket in bucket sort.** Let $n \ge 1$ and let
-$\omega_0, \dots, \omega_{n-1}$ be independent random variables, each uniformly distributed on
-$[0, 1)$. For $i < n$, let $N_i$ be the number of indices $j < n$ with
-$\lfloor n \omega_j \rfloor = i$. Then $\mathbb{E}[N_i] = 1$. -/
+/-- Each actual floor bucket has mean occupancy one under independent continuous uniforms. -/
 public theorem bucketSort_occupancy_mean {n : ℕ} (hn : 0 < n) (i : Fin n) :
     (∫ ω : Fin n → ℝ, ((Array.ofFn ω).toList.countP
       (fun x => decide (Nat.floor ((n : ℝ) * x) = i.val)) : ℝ)
       ∂Measure.pi (fun _ : Fin n => cond (volume : Measure ℝ) (Ico 0 1))) = 1 :=
   occupancy_mean hn i
 
-/-- **Variance of a bucket's occupancy in bucket sort.** Let $n \ge 1$ and let
-$\omega_0, \dots, \omega_{n-1}$ be independent random variables, each uniformly distributed on
-$[0, 1)$. For $i < n$, let $N_i$ be the number of indices $j < n$ with
-$\lfloor n \omega_j \rfloor = i$. Then $\operatorname{Var}(N_i) = 1 - 1/n$. -/
+/-- Variance of the actual floor-bucket count in the continuous product model. -/
 public theorem bucketSort_occupancy_variance {n : ℕ} (hn : 0 < n) (i : Fin n) :
     variance (fun ω : Fin n → ℝ => ((Array.ofFn ω).toList.countP
       (fun x => decide (Nat.floor ((n : ℝ) * x) = i.val)) : ℝ))
       (Measure.pi (fun _ : Fin n => cond (volume : Measure ℝ) (Ico 0 1))) =
       1 - 1 / (n : ℝ) := occupancy_variance hn i
 
-/-- **Second moment of a bucket's occupancy in bucket sort.** Let $n \ge 1$ and let
-$\omega_0, \dots, \omega_{n-1}$ be independent random variables, each uniformly distributed on
-$[0, 1)$. For $i < n$, let $N_i$ be the number of indices $j < n$ with
-$\lfloor n \omega_j \rfloor = i$. Then $\mathbb{E}[N_i^2] = 2 - 1/n$. -/
+/-- Second moment of the actual floor-bucket count under independent continuous uniforms. -/
 public theorem bucketSort_occupancy_secondMoment {n : ℕ} (hn : 0 < n) (i : Fin n) :
     (∫ ω : Fin n → ℝ, ((Array.ofFn ω).toList.countP
       (fun x => decide (Nat.floor ((n : ℝ) * x) = i.val)) : ℝ) ^ 2
@@ -691,10 +682,7 @@ public theorem bucketSort_occupancy_secondMoment {n : ℕ} (hn : 0 < n) (i : Fin
       2 - 1 / (n : ℝ) := occupancy_second hn i
 
 open Classical in
-/-- **The running time of bucket sort is measurable.** For every $n$, the function
-$T : \mathbb{R}^n \to \mathbb{R}$ that maps $\omega = (\omega_0, \dots, \omega_{n-1})$ to the
-number of time steps that bucket sort charges on the array $(\omega_0, \dots, \omega_{n-1})$ if
-every $\omega_j$ lies in $[0, 1)$, and to $0$ otherwise, is measurable. -/
+/-- The actual conditional saved-bucket executor time is measurable, with no caller premise. -/
 public theorem bucketSort_time_measurable (n : ℕ) :
     Measurable (fun ω : Fin n → ℝ =>
       if hx : ∀ x ∈ (Array.ofFn ω).toList, x ∈ Ico 0 1 then
@@ -702,11 +690,7 @@ public theorem bucketSort_time_measurable (n : ℕ) :
   actual_time_measurable n
 
 open Classical in
-/-- **The running time of bucket sort is integrable.** For every $n$, let
-$T : \mathbb{R}^n \to \mathbb{R}$ map $\omega = (\omega_0, \dots, \omega_{n-1})$ to the number of
-time steps that bucket sort charges on the array $(\omega_0, \dots, \omega_{n-1})$ if every
-$\omega_j$ lies in $[0, 1)$, and to $0$ otherwise. Then $T$ is integrable with respect to the
-product of $n$ copies of the uniform distribution on $[0, 1)$. -/
+/-- The actual conditional saved-bucket executor time is integrable for every input size. -/
 public theorem bucketSort_time_integrable (n : ℕ) :
     Integrable (fun ω : Fin n → ℝ =>
       if hx : ∀ x ∈ (Array.ofFn ω).toList, x ∈ Ico 0 1 then
@@ -715,11 +699,7 @@ public theorem bucketSort_time_integrable (n : ℕ) :
   actual_time_integrable n
 
 open Classical in
-/-- **Lower bound on the expected time of bucket sort.** Let $n \ge 1$ and let
-$\omega = (\omega_0, \dots, \omega_{n-1})$ have independent coordinates, each uniformly
-distributed on $[0, 1)$. Let $T(\omega)$ be the number of time steps that bucket sort charges
-on the array $(\omega_0, \dots, \omega_{n-1})$ if every $\omega_j$ lies in $[0, 1)$, and
-$T(\omega) = 0$ otherwise. Then $5n \le \mathbb{E}[T]$. -/
+/-- Mandatory executed phase events give the continuous expected-time lower bound. -/
 public theorem bucketSort_time_expected_lower {n : ℕ} (hn : 0 < n) :
     5 * (n : ℝ) ≤ (∫ ω : Fin n → ℝ,
       (if hx : ∀ x ∈ (Array.ofFn ω).toList, x ∈ Ico 0 1 then
@@ -728,11 +708,7 @@ public theorem bucketSort_time_expected_lower {n : ℕ} (hn : 0 < n) :
   (actual_time_expected_bounds hn).1
 
 open Classical in
-/-- **Upper bound on the expected time of bucket sort.** Let $n \ge 1$ and let
-$\omega = (\omega_0, \dots, \omega_{n-1})$ have independent coordinates, each uniformly
-distributed on $[0, 1)$. Let $T(\omega)$ be the number of time steps that bucket sort charges
-on the array $(\omega_0, \dots, \omega_{n-1})$ if every $\omega_j$ lies in $[0, 1)$, and
-$T(\omega) = 0$ otherwise. Then $\mathbb{E}[T] \le 5n + (n - 1)/2$. -/
+/-- Actual insertion comparisons give the sharper continuous expected-time upper bound. -/
 public theorem bucketSort_time_expected_upper {n : ℕ} (hn : 0 < n) :
     (∫ ω : Fin n → ℝ,
       (if hx : ∀ x ∈ (Array.ofFn ω).toList, x ∈ Ico 0 1 then
@@ -741,9 +717,7 @@ public theorem bucketSort_time_expected_upper {n : ℕ} (hn : 0 < n) :
       5 * n + ((n : ℝ) - 1) / 2 := (actual_time_expected_bounds hn).2
 
 open Classical in
-/-- **Bucket sort on the empty input has expected time zero.** Let $T$ be the number of time
-steps that bucket sort charges on the empty array, the only input of length $n = 0$. Its
-expectation under the product of zero copies of the uniform distribution on $[0, 1)$ is $0$. -/
+/-- Empty continuous input has actual expected time zero. -/
 public theorem bucketSort_time_expected_zero :
     (∫ ω : Fin 0 → ℝ,
       (if hx : ∀ x ∈ (Array.ofFn ω).toList, x ∈ Ico 0 1 then
@@ -752,10 +726,7 @@ public theorem bucketSort_time_expected_zero :
   actual_time_expected_zero
 
 open Classical in
-/-- **Expected time of bucket sort on one input.** Let $\omega_0$ be uniformly distributed on
-$[0, 1)$, and let $T(\omega_0)$ be the number of time steps that bucket sort charges on the
-one-element array $(\omega_0)$ if $\omega_0 \in [0, 1)$, and $T(\omega_0) = 0$ otherwise.
-Then $\mathbb{E}[T] = 5$. -/
+/-- Singleton continuous input pays exactly the five executed phase events. -/
 public theorem bucketSort_time_expected_one :
     (∫ ω : Fin 1 → ℝ,
       (if hx : ∀ x ∈ (Array.ofFn ω).toList, x ∈ Ico 0 1 then
@@ -766,11 +737,7 @@ public theorem bucketSort_time_expected_one :
   exact le_antisymm hu hl
 
 open Classical in
-/-- **Bucket sort runs in expected linear time.** For each $n$, let
-$\omega = (\omega_0, \dots, \omega_{n-1})$ have independent coordinates, each uniformly
-distributed on $[0, 1)$. Let $T_n(\omega)$ be the number of time steps that bucket sort charges
-on the array $(\omega_0, \dots, \omega_{n-1})$ if every $\omega_j$ lies in $[0, 1)$, and
-$T_n(\omega) = 0$ otherwise. Then $\mathbb{E}[T_n] = \Theta(n)$ as $n \to \infty$. -/
+/-- The actual continuous expected saved-bucket execution time is Theta of input size. -/
 public theorem bucketSort_time_expected_isTheta :
     Asymptotics.IsTheta atTop
       (fun n : ℕ => ∫ ω : Fin n → ℝ,

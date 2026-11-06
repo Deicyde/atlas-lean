@@ -63,19 +63,19 @@ namespace BirkhoffAE
 
 variable {α : Type*} [MeasurableSpace α] {μ : Measure α} {T : α → α} {f : α → ℝ}
 
-/-- **Invariant set of a map.** `E` is invariant under `T`: `x ∈ E ↔ T x ∈ E`, i.e. `T ⁻¹' E = E`
+/-- `E` is invariant under `T`: `x ∈ E ↔ T x ∈ E`, i.e. `T ⁻¹' E = E`
 (see `isInvariantSet_iff_preimage_eq`). -/
 def IsInvariantSet (T : α → α) (E : Set α) : Prop := ∀ x, x ∈ E ↔ T x ∈ E
 
 omit [MeasurableSpace α] in
-/-- **Invariant set as a set equal to its preimage.** `IsInvariantSet T E` is the condition `T ⁻¹' E = E` used by Mathlib's `PreErgodic` and
+/-- `IsInvariantSet T E` is the condition `T ⁻¹' E = E` used by Mathlib's `PreErgodic` and
 `MeasurableSpace.invariants`. -/
 theorem isInvariantSet_iff_preimage_eq {E : Set α} : IsInvariantSet T E ↔ T ⁻¹' E = E := by
   simp only [IsInvariantSet, Set.ext_iff, Set.mem_preimage]
   exact forall_congr' fun x => Iff.comm
 
 omit [MeasurableSpace α] in
-/-- **Invariant set is invariant under every iterate.** An invariant set is invariant under every iterate. -/
+/-- An invariant set is invariant under every iterate. -/
 theorem IsInvariantSet.iterate {E : Set α} (hE : IsInvariantSet T E) (k : ℕ) (x : α) :
     x ∈ E ↔ T^[k] x ∈ E := by
   induction k with
@@ -260,16 +260,16 @@ theorem limsup_avg_le_comp (x : α) :
     exact ⟨N + 1, fun m hm => by
       have := hN (m - 1) (by omega); rwa [Nat.sub_add_cancel (by omega)] at this⟩
 
-/-- **Upper limit of Birkhoff averages.** The upper limit `limsup_n A_n f x` of the Birkhoff averages, in `EReal`. -/
+/-- The upper limit `limsup_n A_n f x` of the Birkhoff averages, in `EReal`. -/
 noncomputable def fStar (T : α → α) (f : α → ℝ) (x : α) : EReal :=
   limsup (fun n => ((birkhoffAverage ℝ T f n x : ℝ) : EReal)) atTop
 
-/-- **Lower limit of Birkhoff averages.** The lower limit `liminf_n A_n f x` of the Birkhoff averages, in `EReal`. -/
+/-- The lower limit `liminf_n A_n f x` of the Birkhoff averages, in `EReal`. -/
 noncomputable def fStarLow (T : α → α) (f : α → ℝ) (x : α) : EReal :=
   liminf (fun n => ((birkhoffAverage ℝ T f n x : ℝ) : EReal)) atTop
 
 omit [MeasurableSpace α] in
-/-- **Upper limit of Birkhoff averages is invariant.** The upper limit of the Birkhoff averages is `T`-invariant. -/
+/-- The upper limit of the Birkhoff averages is `T`-invariant. -/
 theorem fStar_comp (x : α) : fStar T f (T x) = fStar T f x :=
   le_antisymm (limsup_avg_comp_le x) (limsup_avg_le_comp x)
 
@@ -292,7 +292,7 @@ theorem fStarLow_comp (x : α) : fStarLow T f (T x) = fStarLow T f x := by
   rw [fStarLow_eq_neg_fStar_neg, fStarLow_eq_neg_fStar_neg, fStar_comp]
 
 open StatMech.GarsiaMax in
-/-- **Maximal ergodic inequality on an invariant set.** The maximal inequality on an invariant set: if every point of the invariant set `E` has
+/-- The maximal inequality on an invariant set: if every point of the invariant set `E` has
 some positive Birkhoff sum of `g`, then `∫_E g dμ ≥ 0`. -/
 theorem setIntegral_nonneg_of_invariant (hT : MeasurePreserving T μ μ) {g : α → ℝ}
     (hg : Integrable g μ) {E : Set α} (hEmeas : NullMeasurableSet E μ) (hEinv : IsInvariantSet T E)
@@ -401,7 +401,7 @@ theorem exists_birkhoffSum_sub_pos' {a : ℝ} {x : α} (hx : fStarLow T f x < (a
 
 variable [IsFiniteMeasure μ]
 
-/-- **Oscillation set of Birkhoff averages.** The invariant set `{f_* < a} ∩ {b < f*}` where the Birkhoff averages oscillate across
+/-- The invariant set `{f_* < a} ∩ {b < f*}` where the Birkhoff averages oscillate across
 `[a, b]`. -/
 def levelSet (T : α → α) (f : α → ℝ) (a b : ℝ) : Set α :=
   {x | fStarLow T f x < (a : EReal) ∧ (b : EReal) < fStar T f x}
@@ -446,7 +446,7 @@ theorem setIntegral_le_of_fStarLow_lt (hT : MeasurePreserving T μ μ) (hf : Int
       smul_eq_mul, mul_comm, Measure.real]
   linarith [hsplit ▸ hnn]
 
-/-- **Oscillation set of Birkhoff averages is null.** For `a < b` the oscillation set `levelSet T f a b` is null. -/
+/-- For `a < b` the oscillation set `levelSet T f a b` is null. -/
 theorem measure_levelSet_eq_zero (hT : MeasurePreserving T μ μ) (hf : Integrable f μ)
     {a b : ℝ} (hab : a < b) : μ (levelSet T f a b) = 0 := by
   set E := levelSet T f a b with hEdef
@@ -548,11 +548,11 @@ theorem fStarLow_ae_eq_fStar (hT : MeasurePreserving T μ μ) (hf : Integrable f
   simp only [Set.mem_ofPred_eq] at hx ⊢
   exact lt_of_le_of_ne (hle x) hx
 
-/-- **Birkhoff limit of a function.** The limit of the Birkhoff averages of `f` (defined as `f*` cast to `ℝ`; it is the limit
+/-- The limit of the Birkhoff averages of `f` (defined as `f*` cast to `ℝ`; it is the limit
 almost everywhere by `tendsto_birkhoffAverage_ae`). -/
 noncomputable def birkhoffLimit (T : α → α) (f : α → ℝ) (x : α) : ℝ := (fStar T f x).toReal
 
-/-- **Birkhoff averages converge almost everywhere to the Birkhoff limit.** The Birkhoff averages of an integrable `f` converge a.e. to `birkhoffLimit T f`. -/
+/-- The Birkhoff averages of an integrable `f` converge a.e. to `birkhoffLimit T f`. -/
 theorem tendsto_birkhoffAverage_ae (hT : MeasurePreserving T μ μ) (hf : Integrable f μ) :
     ∀ᵐ x ∂μ, Tendsto (fun n => birkhoffAverage ℝ T f n x) atTop (𝓝 (birkhoffLimit T f x)) := by
   filter_upwards [fStarLow_ae_eq_fStar hT hf, fStar_lt_top_ae hT hf, fStarLow_bot_lt_ae hT hf]
@@ -577,7 +577,7 @@ theorem aemeasurable_birkhoffLimit (hT : MeasurePreserving T μ μ) (hf : Integr
   (aemeasurable_fStar hT hf).ereal_toReal
 
 omit [IsFiniteMeasure μ] in
-/-- **Birkhoff averages are L1 contractions.** Birkhoff averages are `L¹`-contractions. See also
+/-- Birkhoff averages are `L¹`-contractions. See also
 `MathlibExt.Probability.BirkhoffErgodicL1.integral_norm_birkhoffAverage_sub_le`, the same bound
 for differences, stated with integrals of norms. -/
 theorem eLpNorm_birkhoffAverage_le (hT : MeasurePreserving T μ μ) (hf : Integrable f μ) (n : ℕ) :
@@ -615,7 +615,7 @@ theorem eLpNorm_birkhoffAverage_le (hT : MeasurePreserving T μ μ) (hf : Integr
           exact ENNReal.inv_mul_cancel (by exact_mod_cast hn.ne') (by simp)
         rw [h1, one_mul]
 
-/-- **Integrability of the Birkhoff limit.** The Birkhoff limit of an integrable function is integrable. -/
+/-- The Birkhoff limit of an integrable function is integrable. -/
 theorem integrable_birkhoffLimit (hT : MeasurePreserving T μ μ) (hf : Integrable f μ) :
     Integrable (birkhoffLimit T f) μ := by
   rw [← memLp_one_iff_integrable]
@@ -687,7 +687,7 @@ theorem ae_mem_setOf_lt_fStar {g : α → ℝ} {c : ℝ} (hc : c < 0)
   filter_upwards [hg0] with x hx
   rw [hx]; exact_mod_cast hc
 
-/-- **Birkhoff limit preserves integrals over invariant sets.** On every measurable invariant set `E`, `∫_E birkhoffLimit T f dμ = ∫_E f dμ`. -/
+/-- On every measurable invariant set `E`, `∫_E birkhoffLimit T f dμ = ∫_E f dμ`. -/
 theorem setIntegral_birkhoffLimit (hT : MeasurePreserving T μ μ) (hf : Integrable f μ) {E : Set α}
     (hEmeas : MeasurableSet E) (hEinv : IsInvariantSet T E) :
     ∫ x in E, f x ∂μ = ∫ x in E, birkhoffLimit T f x ∂μ := by
@@ -777,7 +777,7 @@ theorem measurable_invariants_birkhoffLimit (hT : Measurable T) {f₀ : α → �
     rw [hcomp]
   exact measurable_ereal_toReal.comp hfStar_inv
 
-/-- **Birkhoff limit is a conditional expectation on invariant sets.** The Birkhoff limit is the conditional expectation of `f` given the invariant σ-algebra. -/
+/-- The Birkhoff limit is the conditional expectation of `f` given the invariant σ-algebra. -/
 theorem birkhoffLimit_ae_eq_condExp (hT : MeasurePreserving T μ μ) (hf : Integrable f μ) :
     birkhoffLimit T f =ᵐ[μ] μ[f | MeasurableSpace.invariants T] := by
   have hm : MeasurableSpace.invariants T ≤ ‹MeasurableSpace α› := MeasurableSpace.invariants_le T
@@ -828,7 +828,7 @@ theorem tendsto_birkhoffAverage_condExp_ae (hT : MeasurePreserving T μ μ) (hf 
   rwa [hxeq] at hx
 
 omit [IsFiniteMeasure μ] in
-/-- **Birkhoff limit of an ergodic map is the space average.** For ergodic `T` on a probability space the Birkhoff limit is the constant `∫ f dμ`; this is
+/-- For ergodic `T` on a probability space the Birkhoff limit is the constant `∫ f dμ`; this is
 `MathlibExt.Dynamics.Ergodic.BirkhoffWanted.birkhoff_pointwise_ergodic` combined with
 `tendsto_birkhoffAverage_ae`. -/
 theorem birkhoffLimit_ae_eq_integral_of_ergodic [IsProbabilityMeasure μ] (hT : Ergodic T μ)

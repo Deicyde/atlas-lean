@@ -86,13 +86,13 @@ variable {𝕜 : Type*} [RCLike 𝕜]
 
 /-! ### Scalar multiples of canonical shift powers -/
 
-/-- **Coordinates of powers of a scaled backward shift.** Coordinate form of a power of a scalar multiple of the backward shift. -/
+/-- Coordinate form of a power of a scalar multiple of the backward shift. -/
 theorem smul_backwardCLM_pow_apply_coord (μ : 𝕜) (n : ℕ) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     (((μ • backwardCLM) ^ n) x) i = μ ^ n * (x : ℕ → 𝕜) (i + n) := by
   rw [Rolewicz.smul_backwardShiftCLM_pow_apply, lp.coeFn_smul, Pi.smul_apply, smul_eq_mul,
     ShiftFredholmIndex.backwardCLM_pow_apply]
 
-/-- **Powers of a scaled backward shift as operators.** A power of a scalar multiple of the backward shift, as an operator. -/
+/-- A power of a scalar multiple of the backward shift, as an operator. -/
 theorem smul_backwardCLM_pow (μ : 𝕜) (n : ℕ) :
     (μ • backwardCLM (𝕜 := 𝕜)) ^ n = μ ^ n • (backwardCLM (𝕜 := 𝕜) ^ n) := by
   apply ContinuousLinearMap.ext
@@ -108,38 +108,38 @@ private theorem isPeriodicPt_iff_pow_apply_eq (T : ℓ²(ℕ, 𝕜) →L[𝕜] �
   rw [← Module.End.pow_apply T.toLinearMap n x, ← ContinuousLinearMap.toLinearMap_pow]
   rfl
 
-/-- **Zero is a periodic point of every operator.** `0` is a periodic point of every period for every operator. -/
+/-- `0` is a periodic point of every period for every operator. -/
 theorem isPeriodicPoint_zero (T : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)) (n : ℕ) :
     Function.IsPeriodicPt (⇑T) n 0 := by
   exact (show Function.IsFixedPt (⇑T) 0 from map_zero T).isPeriodicPt n
 
 /-! ### The periodic approximant -/
 
-/-- **Periodic approximant of a truncated sequence.** The periodic extension of the truncation of `y` to its first `N`
+/-- The periodic extension of the truncation of `y` to its first `N`
 coordinates: the geometric series over forward shifts by blocks of
 length `N`, with coefficients `(μ⁻¹ ^ N) ^ m`. -/
 noncomputable def periodicApprox (μ : 𝕜) (N : ℕ) (y : ℓ²(ℕ, 𝕜)) : ℓ²(ℕ, 𝕜) :=
   ∑' m : ℕ, (μ⁻¹ ^ N) ^ m • ((shiftCLM ^ N) ^ m) (lpTrunc 2 N y)
 
-/-- **Geometric ratio of the periodic approximant is below 1.** The geometric ratio `‖μ⁻¹ ^ N‖` is `< 1` when `‖μ‖ > 1` and `N > 0`. -/
+/-- The geometric ratio `‖μ⁻¹ ^ N‖` is `< 1` when `‖μ‖ > 1` and `N > 0`. -/
 theorem norm_inv_pow_lt_one {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ} (hN : 0 < N) :
     ‖μ⁻¹ ^ N‖ < 1 := by
   rw [norm_pow, norm_inv]
   exact pow_lt_one₀ (by positivity) (inv_lt_one_of_one_lt₀ hμ) (Nat.ne_of_gt hN)
 
-/-- **Summability of the geometric bound for periodic approximants.** The geometric series bounding the periodic approximant terms is summable. -/
+/-- The geometric series bounding the periodic approximant terms is summable. -/
 theorem summable_geom_trunc {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ} (hN : 0 < N) (y : ℓ²(ℕ, 𝕜)) :
     Summable (fun m => ‖μ⁻¹ ^ N‖ ^ m * ‖lpTrunc 2 N y‖) :=
   (summable_geometric_of_lt_one (show (0 : ℝ) ≤ ‖μ⁻¹ ^ N‖ by positivity)
     (norm_inv_pow_lt_one hμ hN)).mul_right _
 
-/-- **Norm of a term of the periodic approximant.** The norm of a term of the periodic approximant. -/
+/-- The norm of a term of the periodic approximant. -/
 theorem norm_periodicApprox_term (μ : 𝕜) (N m : ℕ) (y : ℓ²(ℕ, 𝕜)) :
     ‖(μ⁻¹ ^ N) ^ m • ((shiftCLM ^ N) ^ m) (lpTrunc 2 N y)‖ =
       ‖μ⁻¹ ^ N‖ ^ m * ‖lpTrunc 2 N y‖ := by
   rw [norm_smul, norm_pow, ← pow_mul, Rolewicz.norm_forwardShiftCLM_pow_apply]
 
-/-- **Summability of the periodic approximant terms.** Summability of the terms of the periodic approximant. -/
+/-- Summability of the terms of the periodic approximant. -/
 theorem summable_periodicApprox_terms {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ} (hN : 0 < N)
     (y : ℓ²(ℕ, 𝕜)) :
     Summable (fun m => (μ⁻¹ ^ N) ^ m • ((shiftCLM ^ N) ^ m) (lpTrunc 2 N y)) := by
@@ -147,12 +147,12 @@ theorem summable_periodicApprox_terms {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ}
   intro m
   exact le_of_eq (norm_periodicApprox_term μ N m y)
 
-/-- **First term of the periodic approximant is the truncation.** The `m = 0` term of the periodic approximant is the truncation. -/
+/-- The `m = 0` term of the periodic approximant is the truncation. -/
 theorem periodicApprox_term_zero (μ : 𝕜) (N : ℕ) (y : ℓ²(ℕ, 𝕜)) :
     (μ⁻¹ ^ N) ^ 0 • ((shiftCLM ^ N) ^ 0) (lpTrunc 2 N y) = lpTrunc 2 N y := by
   simp
 
-/-- **Backward shift annihilates truncations after $N$ steps.** Applying the backward shift `N` times to a truncation gives `0`. -/
+/-- Applying the backward shift `N` times to a truncation gives `0`. -/
 theorem backwardCLM_pow_trunc (N : ℕ) (y : ℓ²(ℕ, 𝕜)) :
     (backwardCLM ^ N) (lpTrunc 2 N y) = 0 := by
   apply lp.ext
@@ -161,7 +161,7 @@ theorem backwardCLM_pow_trunc (N : ℕ) (y : ℓ²(ℕ, 𝕜)) :
     ite_eq_right (by omega : ¬ i + N < N)]
   simp
 
-/-- **Action of the scaled backward shift power on approximant terms.** How `(μ • B) ^ N` acts on a term of the periodic approximant:
+/-- How `(μ • B) ^ N` acts on a term of the periodic approximant:
 the `m = 0` term is killed, and every later term shifts down by one. -/
 theorem periodicApprox_step {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ}
     (y : ℓ²(ℕ, 𝕜)) (m : ℕ) : ((μ • backwardCLM) ^ N)
@@ -196,7 +196,7 @@ theorem periodicApprox_step {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ}
         (((shiftCLM ^ N) ^ (m - 1)) (lpTrunc 2 N y))
     rw [hshift, mul_comm ((μ⁻¹ ^ N) ^ m) (μ ^ N), hcancel]
 
-/-- **Summability of the shifted periodic approximant terms.** Summability of the terms of the periodic approximant after applying
+/-- Summability of the terms of the periodic approximant after applying
 `(μ • B) ^ N`. -/
 theorem summable_periodicApprox_map {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ} (hN : 0 < N)
     (y : ℓ²(ℕ, 𝕜)) : Summable (fun m => ((μ • backwardCLM) ^ N)
@@ -213,7 +213,7 @@ theorem summable_periodicApprox_map {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ} (
       _ = ‖(μ • backwardCLM (𝕜 := 𝕜)) ^ N‖ * (‖μ⁻¹ ^ N‖ ^ m * ‖lpTrunc 2 N y‖) := by
           rw [norm_periodicApprox_term]
 
-/-- **Periodic approximant is a periodic point.** The periodic approximant is periodic of period `N` when `‖μ‖ > 1`. -/
+/-- The periodic approximant is periodic of period `N` when `‖μ‖ > 1`. -/
 theorem periodicApprox_isPeriodicPoint {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ} (hN : 0 < N)
     (y : ℓ²(ℕ, 𝕜)) : Function.IsPeriodicPt (⇑(μ • backwardCLM)) N (periodicApprox μ N y) := by
   have hterm := summable_periodicApprox_terms hμ hN y
@@ -228,7 +228,7 @@ theorem periodicApprox_isPeriodicPoint {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ
     rw [periodicApprox_step hμ y (m + 1), ite_eq_right (by omega : ¬ m + 1 = 0),
       Nat.add_sub_cancel])
 
-/-- **Distance from the periodic approximant to the truncation.** The distance from the periodic approximant to the truncation is at
+/-- The distance from the periodic approximant to the truncation is at
 most the geometric tail `(r / (1 - r)) * ‖y‖`, where `r = ‖μ‖⁻¹ ^ N`. -/
 theorem norm_periodicApprox_sub_trunc {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ} (hN : 0 < N)
     (y : ℓ²(ℕ, 𝕜)) :
@@ -276,7 +276,7 @@ theorem norm_periodicApprox_sub_trunc {μ : 𝕜} (hμ : 1 < ‖μ‖) {N : ℕ}
 
 /-! ### Density of periodic points when `‖μ‖ > 1` -/
 
-/-- **Dense periodic points of the Rolewicz operator for $|\mu| > 1$.** The periodic points of `μ • B` are dense when `‖μ‖ > 1`. -/
+/-- The periodic points of `μ • B` are dense when `‖μ‖ > 1`. -/
 theorem dense_periodicPoints_of_one_lt_norm {μ : 𝕜} (hμ : 1 < ‖μ‖) :
     Dense (Function.periodicPts (⇑(μ • backwardCLM (𝕜 := 𝕜)))) := by
   change ∀ x, x ∈ closure (Function.periodicPts (⇑(μ • backwardCLM (𝕜 := 𝕜))))
@@ -316,7 +316,7 @@ theorem dense_periodicPoints_of_one_lt_norm {μ : 𝕜} (hμ : 1 < ‖μ‖) :
 
 /-! ### Only `0` is periodic when `‖μ‖ ≤ 1` -/
 
-/-- **Coordinate recurrence for periodic points of $\mu B$.** If `x` is periodic for `μ • B`, its coordinates satisfy
+/-- If `x` is periodic for `μ • B`, its coordinates satisfy
 `x k = μ ^ (n * m) * x (k + n * m)` for all `m`. -/
 theorem periodic_coord_iterate {μ : 𝕜} {n : ℕ} {x : ℓ²(ℕ, 𝕜)}
     (hx : Function.IsPeriodicPt (⇑(μ • backwardCLM)) n x) (k : ℕ) (m : ℕ) :
@@ -336,7 +336,7 @@ theorem periodic_coord_iterate {μ : 𝕜} {n : ℕ} {x : ℓ²(ℕ, 𝕜)}
         μ ^ n * (x : ℕ → 𝕜) (k + n * m + n) := step _
     rw [h2, ← Nat.add_assoc, ih, h1, ← mul_assoc, ← pow_add]
 
-/-- **Coordinates of an $\ell^2$ vector tend to zero.** The coordinates of an `ℓ²` vector tend to `0`. -/
+/-- The coordinates of an `ℓ²` vector tend to `0`. -/
 theorem tendsto_norm_coord (x : ℓ²(ℕ, 𝕜)) :
     Tendsto (fun j => ‖(x : ℕ → 𝕜) j‖) atTop (𝓝 0) := by
   have hsum : Summable (fun j => ‖(x : ℕ → 𝕜) j‖ ^ 2) := by
@@ -348,7 +348,7 @@ theorem tendsto_norm_coord (x : ℓ²(ℕ, 𝕜)) :
   rw [Real.sqrt_zero] at hsqrt
   exact hsqrt.congr (fun j => Real.sqrt_sq (norm_nonneg _))
 
-/-- **No nonzero periodic points of $\mu B$ when $|\mu| \le 1$.** The only periodic point of `μ • B` is `0` when `‖μ‖ ≤ 1`. -/
+/-- The only periodic point of `μ • B` is `0` when `‖μ‖ ≤ 1`. -/
 theorem eq_zero_of_isPeriodicPoint_of_norm_le_one {μ : 𝕜} (hμ : ‖μ‖ ≤ 1) {n : ℕ} (hn : 0 < n)
     {x : ℓ²(ℕ, 𝕜)} (hx : Function.IsPeriodicPt (⇑(μ • backwardCLM)) n x) : x = 0 := by
   apply lp.ext
@@ -374,7 +374,7 @@ theorem eq_zero_of_isPeriodicPoint_of_norm_le_one {μ : 𝕜} (hμ : ‖μ‖ �
 
 /-! ### The dichotomy -/
 
-/-- **Periodic points of $\mu B$ are dense iff $|\mu| > 1$.** The periodic points of `μ • B` are dense if and only if `‖μ‖ > 1`. -/
+/-- The periodic points of `μ • B` are dense if and only if `‖μ‖ > 1`. -/
 theorem dense_periodicPoints_iff (μ : 𝕜) :
     Dense (Function.periodicPts (⇑(μ • backwardCLM (𝕜 := 𝕜)))) ↔
       1 < ‖μ‖ := by

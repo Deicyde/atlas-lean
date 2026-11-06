@@ -27,56 +27,51 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- **Odd greedy choice.** For a rational number $r$ and a natural number $d$, $d$ is the odd
-greedy choice at $r$ when $r > 0$, $d$ is positive and odd, $1/d \le r$, and $d \le e$ for every
-positive odd natural number $e$ with $1/e \le r$. Equivalently, $1/d$ is the largest unit
-fraction with odd denominator that does not exceed $r$. -/
+/-- At a positive remainder `r`, `d` is the odd greedy choice: the smallest
+positive odd denominator whose unit fraction does not exceed `r`
+(equivalently, the largest admissible odd unit fraction `1 / d`). -/
 def IsOddGreedyChoice (r : ℚ) (d : ℕ) : Prop :=
   0 < r ∧ 0 < d ∧ Odd d ∧ (1 : ℚ) / (d : ℚ) ≤ r ∧
     ∀ e : ℕ, 0 < e → Odd e → (1 : ℚ) / (e : ℚ) ≤ r → d ≤ e
 
-/-- **The odd greedy choice needs a positive remainder.** If $d$ is the odd greedy choice at a
-rational number $r$, then $r > 0$. -/
+/-- The odd greedy choice is taken at a positive remainder. -/
 theorem IsOddGreedyChoice.pos_r {r : ℚ} {d : ℕ}
     (h : IsOddGreedyChoice r d) : 0 < r :=
   h.1
 
-/-- **The odd greedy choice is positive.** If $d$ is the odd greedy choice at a rational number
-$r$, then $d > 0$. -/
+/-- The odd greedy choice is a positive denominator. -/
 theorem IsOddGreedyChoice.pos_d {r : ℚ} {d : ℕ}
     (h : IsOddGreedyChoice r d) : 0 < d :=
   h.2.1
 
-/-- **The odd greedy choice is odd.** If $d$ is the odd greedy choice at a rational number $r$,
-then $d$ is odd. -/
+/-- The odd greedy choice is odd. -/
 theorem IsOddGreedyChoice.odd {r : ℚ} {d : ℕ}
     (h : IsOddGreedyChoice r d) : Odd d :=
   h.2.2.1
 
-/-- **The odd greedy unit fraction does not exceed the remainder.** If $d$ is the odd greedy
-choice at a rational number $r$, then $1/d \le r$. -/
+/-- The unit fraction of the odd greedy choice does not
+exceed the remainder. -/
 theorem IsOddGreedyChoice.inv_le {r : ℚ} {d : ℕ}
     (h : IsOddGreedyChoice r d) : (1 : ℚ) / (d : ℚ) ≤ r :=
   h.2.2.2.1
 
-/-- **The odd greedy choice is minimal.** If $d$ is the odd greedy choice at a rational number
-$r$, then $d \le e$ for every positive odd natural number $e$ with $1/e \le r$. -/
+/-- The odd greedy choice is the least admissible
+positive odd denominator. -/
 theorem IsOddGreedyChoice.min {r : ℚ} {d e : ℕ}
     (h : IsOddGreedyChoice r d) (he : 0 < e) (hodd : Odd e)
     (hle : (1 : ℚ) / (e : ℚ) ≤ r) : d ≤ e :=
   h.2.2.2.2 e he hodd hle
 
-/-- **Uniqueness of the odd greedy choice.** If $d$ and $d'$ are both odd greedy choices at the
-same rational number $r$, then $d = d'$. -/
+/-- The odd greedy choice at a given remainder is unique. -/
 theorem IsOddGreedyChoice.unique {r : ℚ} {d d' : ℕ}
     (h : IsOddGreedyChoice r d) (h' : IsOddGreedyChoice r d') :
     d = d' :=
   le_antisymm (h.min h'.pos_d h'.odd h'.inv_le)
     (h'.min h.pos_d h.odd h.inv_le)
 
-/-- **Characterization of the odd greedy choice.** A natural number $d$ is the odd greedy choice
-at a rational number $r$ if and only if $r > 0$ and $d$ is the least element of the set of
-positive odd natural numbers $e$ with $1/e \le r$. -/
+/-- `d` is the odd greedy choice at `r` iff `r` is positive and `d` is
+the least positive odd denominator whose unit fraction does not
+exceed `r`. -/
 theorem isOddGreedyChoice_iff {r : ℚ} {d : ℕ} :
     IsOddGreedyChoice r d ↔
       0 < r ∧ IsLeast {e : ℕ | 0 < e ∧ Odd e ∧ (1 : ℚ) / (e : ℚ) ≤ r} d := by

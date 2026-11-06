@@ -87,47 +87,47 @@ open scoped Topology
 
 namespace MathlibExt.Biology.PopulationGenetics.Diffusion
 
-/-- **Backward generator of the Wright–Fisher diffusion with selection.** The backward generator of the Wright–Fisher diffusion with genic selection, time in units
+/-- The backward generator of the Wright–Fisher diffusion with genic selection, time in units
 of `2N` generations and scaled selection coefficient `σ = 2Ns`:
 `(L_σ u)(x) = x (1 - x) / 2 · u''(x) + σ x (1 - x) · u'(x)`. -/
 noncomputable def generator (σ : ℝ) (u : ℝ → ℝ) (x : ℝ) : ℝ :=
   x * (1 - x) / 2 * deriv (deriv u) x + σ * x * (1 - x) * deriv u x
 
-/-- **Kimura's fixation probability.** Kimura's fixation probability of an allele at initial frequency `x` with scaled selection
+/-- Kimura's fixation probability of an allele at initial frequency `x` with scaled selection
 coefficient `σ = 2Ns`: `(1 - e^{-2σx}) / (1 - e^{-2σ})`, and `x` in the neutral case. -/
 noncomputable def kimuraFixation (σ x : ℝ) : ℝ :=
   if σ = 0 then x else (1 - exp (-2 * σ * x)) / (1 - exp (-2 * σ))
 
-/-- **Kimura–Ohta mean absorption time of a neutral allele.** Kimura–Ohta mean time to absorption (loss or fixation) of a neutral allele at frequency `x`,
+/-- Kimura–Ohta mean time to absorption (loss or fixation) of a neutral allele at frequency `x`,
 in units of `2N` generations: `-2 (x log x + (1 - x) log (1 - x))`. In generations this is
 `-4N (x ln x + (1 - x) ln (1 - x))`. -/
 noncomputable def meanAbsorptionTime (x : ℝ) : ℝ :=
   -2 * (x * log x + (1 - x) * log (1 - x))
 
-/-- **Wright's stationary density of the Wright–Fisher diffusion.** Wright's (unnormalized) stationary density of the Wright–Fisher diffusion with scaled
+/-- Wright's (unnormalized) stationary density of the Wright–Fisher diffusion with scaled
 mutation rates `α` (towards the allele) and `β` (away from it):
 `x ^ (2α - 1) (1 - x) ^ (2β - 1)` (real powers). -/
 noncomputable def wrightDensity (α β x : ℝ) : ℝ :=
   x ^ (2 * α - 1) * (1 - x) ^ (2 * β - 1)
 
-/-- **Slope constant of Kimura's fixation probability.** The constant `K σ` such that `(kimuraFixation σ)' x = K σ · e^{-2σx}`:
+/-- The constant `K σ` such that `(kimuraFixation σ)' x = K σ · e^{-2σx}`:
 `1` if `σ = 0`, and `2σ / (1 - e^{-2σ})` otherwise. -/
 noncomputable def kimuraSlope (σ : ℝ) : ℝ :=
   if σ = 0 then 1 else 2 * σ / (1 - exp (-2 * σ))
 
-/-- **Denominator of Kimura's formula is nonzero.** For `σ ≠ 0` the denominator `1 - e^{-2σ}` of Kimura's formula does not vanish. -/
+/-- For `σ ≠ 0` the denominator `1 - e^{-2σ}` of Kimura's formula does not vanish. -/
 theorem one_sub_exp_ne_zero {σ : ℝ} (hσ : σ ≠ 0) : 1 - exp (-2 * σ) ≠ 0 := by
   intro h
   have h' : exp (-2 * σ) = 1 := by linarith
   rw [exp_eq_one_iff] at h'
   exact hσ (by linarith)
 
-/-- **Kimura's fixation probability vanishes at frequency zero.** An allele that is absent is never fixed. -/
+/-- An allele that is absent is never fixed. -/
 @[simp]
 theorem kimuraFixation_zero_right (σ : ℝ) : kimuraFixation σ 0 = 0 := by
   simp [kimuraFixation]
 
-/-- **Kimura's fixation probability equals one at frequency one.** An allele that is already fixed stays fixed. -/
+/-- An allele that is already fixed stays fixed. -/
 @[simp]
 theorem kimuraFixation_one_right (σ : ℝ) : kimuraFixation σ 1 = 1 := by
   unfold kimuraFixation
@@ -135,12 +135,12 @@ theorem kimuraFixation_one_right (σ : ℝ) : kimuraFixation σ 1 = 1 := by
   · rfl
   · rw [mul_one, div_self (one_sub_exp_ne_zero h)]
 
-/-- **Neutral fixation probability equals the initial frequency.** Neutral case: the fixation probability equals the initial frequency. -/
+/-- Neutral case: the fixation probability equals the initial frequency. -/
 @[simp]
 theorem kimuraFixation_neutral (x : ℝ) : kimuraFixation 0 x = x := by
   simp [kimuraFixation]
 
-/-- **Slope constant of Kimura's formula is nonzero.** The slope constant of Kimura's formula never vanishes. -/
+/-- The slope constant of Kimura's formula never vanishes. -/
 theorem kimuraSlope_ne_zero (σ : ℝ) : kimuraSlope σ ≠ 0 := by
   unfold kimuraSlope
   split_ifs with h
@@ -151,7 +151,7 @@ private theorem hasDerivAt_exp_mul (c x : ℝ) :
     HasDerivAt (fun y => exp (c * y)) (exp (c * x) * c) x := by
   simpa only [mul_one] using ((hasDerivAt_id' x).const_mul c).exp
 
-/-- **Derivative of Kimura's fixation probability at a point.** The derivative of Kimura's fixation probability: `u'(x) = K σ · e^{-2σx}`. -/
+/-- The derivative of Kimura's fixation probability: `u'(x) = K σ · e^{-2σx}`. -/
 theorem hasDerivAt_kimuraFixation (σ x : ℝ) :
     HasDerivAt (kimuraFixation σ) (kimuraSlope σ * exp (-2 * σ * x)) x := by
   by_cases h : σ = 0
@@ -166,11 +166,11 @@ theorem hasDerivAt_kimuraFixation (σ x : ℝ) :
     simp only [kimuraSlope, h, ↓reduceIte]
     ring
 
-/-- **Continuity of Kimura's fixation probability.** Kimura's fixation probability is continuous in the initial frequency. -/
+/-- Kimura's fixation probability is continuous in the initial frequency. -/
 theorem continuous_kimuraFixation (σ : ℝ) : Continuous (kimuraFixation σ) :=
   continuous_iff_continuousAt.2 fun x => (hasDerivAt_kimuraFixation σ x).continuousAt
 
-/-- **Derivative of Kimura's fixation probability as a function.** The derivative of Kimura's fixation probability, as a function. -/
+/-- The derivative of Kimura's fixation probability, as a function. -/
 theorem deriv_kimuraFixation (σ : ℝ) :
     deriv (kimuraFixation σ) = fun y => kimuraSlope σ * exp (-2 * σ * y) :=
   funext fun y => (hasDerivAt_kimuraFixation σ y).deriv
@@ -277,7 +277,7 @@ theorem eq_kimuraFixation_of_contDiffOn {σ : ℝ} {u : ℝ → ℝ}
   exact eq_kimuraFixation_of_generator_eq_zero hcont h.1 (h.2.2.differentiableOn one_ne_zero)
     hgen h0 h1
 
-/-- **Nonnegativity of Kimura's fixation probability.** Kimura's fixation probability is nonnegative at nonnegative frequencies, for every
+/-- Kimura's fixation probability is nonnegative at nonnegative frequencies, for every
 selection coefficient `σ`. -/
 theorem kimuraFixation_nonneg (σ : ℝ) {y : ℝ} (hy : 0 ≤ y) : 0 ≤ kimuraFixation σ y := by
   unfold kimuraFixation
@@ -295,7 +295,7 @@ theorem kimuraFixation_nonneg (σ : ℝ) {y : ℝ} (hy : 0 ≤ y) : 0 ≤ kimura
     · have h := Real.exp_le_one_iff.mpr (show -2 * σ ≤ 0 by linarith)
       linarith
 
-/-- **Kimura's fixation probability is at most one.** Kimura's fixation probability is at most `1` at frequencies `y ≤ 1`, for every selection
+/-- Kimura's fixation probability is at most `1` at frequencies `y ≤ 1`, for every selection
 coefficient `σ`. -/
 theorem kimuraFixation_le_one (σ : ℝ) {y : ℝ} (hy : y ≤ 1) : kimuraFixation σ y ≤ 1 := by
   unfold kimuraFixation
@@ -315,12 +315,12 @@ theorem kimuraFixation_le_one (σ : ℝ) {y : ℝ} (hy : y ≤ 1) : kimuraFixati
     have h := Real.exp_le_exp.mpr (show -2 * σ ≤ -2 * σ * y by nlinarith)
     linarith
 
-/-- **Kimura's fixation probability lies in the unit interval.** Kimura's fixation probability is a probability on `[0, 1]`. -/
+/-- Kimura's fixation probability is a probability on `[0, 1]`. -/
 theorem kimuraFixation_mem_Icc (σ : ℝ) {x : ℝ} (hx : x ∈ Icc (0 : ℝ) 1) :
     kimuraFixation σ x ∈ Icc (0 : ℝ) 1 :=
   ⟨kimuraFixation_nonneg σ hx.1, kimuraFixation_le_one σ hx.2⟩
 
-/-- **Advantageous alleles fix more often than their initial frequency.** Advantageous alleles (`σ > 0`) are fixed with probability strictly larger than their
+/-- Advantageous alleles (`σ > 0`) are fixed with probability strictly larger than their
 initial frequency `x ∈ (0, 1)`. -/
 theorem lt_kimuraFixation {σ x : ℝ} (hσ : 0 < σ) (hx : x ∈ Ioo (0 : ℝ) 1) :
     x < kimuraFixation σ x := by
@@ -335,12 +335,12 @@ theorem lt_kimuraFixation {σ x : ℝ} (hσ : 0 < σ) (hx : x ∈ Ioo (0 : ℝ) 
   rw [show x * (-2 * σ) = -2 * σ * x by ring] at hconv
   linarith
 
-/-- **Neutral mean absorption time vanishes at frequency zero.** The neutral mean absorption time vanishes at `x = 0`. -/
+/-- The neutral mean absorption time vanishes at `x = 0`. -/
 @[simp]
 theorem meanAbsorptionTime_zero : meanAbsorptionTime 0 = 0 := by
   simp [meanAbsorptionTime]
 
-/-- **Neutral mean absorption time vanishes at frequency one.** The neutral mean absorption time vanishes at `x = 1`. -/
+/-- The neutral mean absorption time vanishes at `x = 1`. -/
 @[simp]
 theorem meanAbsorptionTime_one : meanAbsorptionTime 1 = 0 := by
   simp [meanAbsorptionTime]
@@ -348,7 +348,7 @@ theorem meanAbsorptionTime_one : meanAbsorptionTime 1 = 0 := by
 private theorem hasDerivAt_one_sub (x : ℝ) : HasDerivAt (fun z : ℝ => 1 - z) (-1) x := by
   simpa using (hasDerivAt_id' x).const_sub 1
 
-/-- **Derivative of the neutral mean absorption time.** On `(0, 1)`, `T'(x) = -2 (log x - log (1 - x))`. -/
+/-- On `(0, 1)`, `T'(x) = -2 (log x - log (1 - x))`. -/
 theorem hasDerivAt_meanAbsorptionTime {x : ℝ} (hx : x ∈ Ioo (0 : ℝ) 1) :
     HasDerivAt meanAbsorptionTime (-2 * (log x - log (1 - x))) x := by
   have hx0 : x ≠ 0 := hx.1.ne'
@@ -454,14 +454,14 @@ theorem integral_wrightDensity {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) :
   push_cast at hG hne
   rw [hG, mul_div_cancel_left₀ _ hne]
 
-/-- **Wright's density has finite positive total mass.** For `α, β > 0` Wright's density has a finite, positive total mass on `(0, 1)`. -/
+/-- For `α, β > 0` Wright's density has a finite, positive total mass on `(0, 1)`. -/
 theorem integral_wrightDensity_pos {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) :
     0 < ∫ x in (0 : ℝ)..1, wrightDensity α β x := by
   rw [integral_wrightDensity hα hβ]
   exact div_pos (mul_pos (Gamma_pos_of_pos (by linarith)) (Gamma_pos_of_pos (by linarith)))
     (Gamma_pos_of_pos (by linarith))
 
-/-- **Integrability of Wright's density on the unit interval.** For `α, β > 0` Wright's density is integrable on `[0, 1]`. -/
+/-- For `α, β > 0` Wright's density is integrable on `[0, 1]`. -/
 theorem intervalIntegrable_wrightDensity {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) :
     IntervalIntegrable (wrightDensity α β) MeasureTheory.volume 0 1 := by
   by_contra h

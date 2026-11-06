@@ -35,7 +35,7 @@ matrix `T` lies in `Γ₀(N)`.
 
 open scoped MatrixGroups
 
-/-- **1 is a strict period of Γ₀(N).** `1` is a strict period of `Γ₀(N)`: the translation matrix `T` lies in
+/-- `1` is a strict period of `Γ₀(N)`: the translation matrix `T` lies in
 `Γ₀(N)`, and the strict periods then contain the integer multiples of `1`. -/
 theorem CongruenceSubgroup.one_mem_strictPeriods_Gamma0 (N : ℕ) :
     (1 : ℝ) ∈ (Subgroup.map (Matrix.SpecialLinearGroup.mapGL ℝ)

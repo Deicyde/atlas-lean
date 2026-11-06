@@ -62,7 +62,7 @@ variable {E E' F F' : Type*}
   [NormedAddCommGroup F] [NormedSpace 𝕜 F]
   [NormedAddCommGroup F'] [NormedSpace 𝕜 F']
 
-/-- **Composition of direct sum operators is componentwise.** Composing direct sums is componentwise. -/
+/-- Composing direct sums is componentwise. -/
 theorem prodMap_comp {E'' F'' : Type*}
     [NormedAddCommGroup E''] [NormedSpace 𝕜 E'']
     [NormedAddCommGroup F''] [NormedSpace 𝕜 F'']
@@ -70,15 +70,15 @@ theorem prodMap_comp {E'' F'' : Type*}
     (T.prodMap S) ∘L (T'.prodMap S') = (T ∘L T').prodMap (S ∘L S') := by
   refine ContinuousLinearMap.ext fun ⟨x, y⟩ => rfl
 
-/-- **Direct sum of identity operators is the identity.** The identity direct sum is the identity. -/
+/-- The identity direct sum is the identity. -/
 theorem prodMap_one : (1 : E →L[𝕜] E).prodMap (1 : F →L[𝕜] F) = 1 := by
   refine ContinuousLinearMap.ext fun ⟨x, y⟩ => rfl
 
-/-- **Direct sum of zero operators is zero.** The zero direct sum is zero. -/
+/-- The zero direct sum is zero. -/
 theorem prodMap_zero : (0 : E →L[𝕜] E').prodMap (0 : F →L[𝕜] F') = 0 := by
   refine ContinuousLinearMap.ext fun ⟨x, y⟩ => rfl
 
-/-- **Scalar multiplication of a direct sum operator.** Scaling a direct sum scales both summands by the same factor. -/
+/-- Scaling a direct sum scales both summands by the same factor. -/
 theorem prodMap_smul (c : 𝕜) (T : E →L[𝕜] E') (S : F →L[𝕜] F') :
     (c • T).prodMap (c • S) = c • (T.prodMap S) := by
   refine ContinuousLinearMap.ext fun ⟨x, y⟩ => rfl
@@ -105,7 +105,7 @@ private theorem prodMap_comp_inr (T : E →L[𝕜] E') (S : F →L[𝕜] F') :
     (T.prodMap S) ∘L (inr 𝕜 E F) = (inr 𝕜 E' F') ∘L S := by
   refine ContinuousLinearMap.ext fun y => Prod.ext (map_zero T) rfl
 
-/-- **Operator norm of a direct sum is the maximum of the norms.** The operator norm of a direct sum is the maximum of the operator norms. -/
+/-- The operator norm of a direct sum is the maximum of the operator norms. -/
 theorem norm_prodMap (T : E →L[𝕜] E') (S : F →L[𝕜] F') :
     ‖T.prodMap S‖ = max ‖T‖ ‖S‖ := by
   apply le_antisymm
@@ -136,19 +136,19 @@ theorem norm_prodMap (T : E →L[𝕜] E') (S : F →L[𝕜] F') :
         norm_zero, max_eq_right (norm_nonneg (S y)), max_eq_right (norm_nonneg y)] at h
       exact h
 
-/-- **Kernel of a direct sum operator.** The kernel of a direct sum is the product of the kernels. -/
+/-- The kernel of a direct sum is the product of the kernels. -/
 theorem ker_prodMap (T : E →L[𝕜] E') (S : F →L[𝕜] F') :
     (T.prodMap S).ker = T.ker.prod S.ker := by
   show LinearMap.ker (T.prodMap S : (E × F) →ₗ[𝕜] (E' × F')) = _
   rw [ContinuousLinearMap.coe_prodMap, LinearMap.ker_prodMap]
 
-/-- **Range of a direct sum operator.** The range of a direct sum is the product of the ranges. -/
+/-- The range of a direct sum is the product of the ranges. -/
 theorem range_prodMap (T : E →L[𝕜] E') (S : F →L[𝕜] F') :
     (T.prodMap S).range = T.range.prod S.range := by
   show LinearMap.range (T.prodMap S : (E × F) →ₗ[𝕜] (E' × F')) = _
   rw [ContinuousLinearMap.coe_prodMap, LinearMap.range_prodMap]
 
-/-- **Invertibility of a direct sum operator.** A direct sum is a unit iff both summands are units. -/
+/-- A direct sum is a unit iff both summands are units. -/
 theorem isUnit_prodMap_iff (T : E →L[𝕜] E) (S : F →L[𝕜] F) :
     IsUnit (T.prodMap S) ↔ IsUnit T ∧ IsUnit S := by
   constructor
@@ -182,7 +182,7 @@ private theorem algebraMap_sub_prodMap (z : 𝕜) (T : E →L[𝕜] E) (S : F �
   refine ContinuousLinearMap.ext fun ⟨x, y⟩ => ?_
   simp [ContinuousLinearMap.coe_prodMap', Prod.map, Algebra.algebraMap_eq_smul_one]
 
-/-- **Spectrum of a direct sum operator is the union of spectra.** The spectrum of a direct sum is the union of the spectra. -/
+/-- The spectrum of a direct sum is the union of the spectra. -/
 theorem spectrum_prodMap (T : E →L[𝕜] E) (S : F →L[𝕜] F) :
     spectrum 𝕜 (T.prodMap S) = spectrum 𝕜 T ∪ spectrum 𝕜 S := by
   ext z
@@ -190,14 +190,14 @@ theorem spectrum_prodMap (T : E →L[𝕜] E) (S : F →L[𝕜] F) :
   rw [algebraMap_sub_prodMap, isUnit_prodMap_iff]
   exact not_and_or
 
-/-- **Resolvent set of a direct sum operator.** The resolvent set of a direct sum is the intersection of the resolvent sets. -/
+/-- The resolvent set of a direct sum is the intersection of the resolvent sets. -/
 theorem resolventSet_prodMap (T : E →L[𝕜] E) (S : F →L[𝕜] F) :
     resolventSet 𝕜 (T.prodMap S) = resolventSet 𝕜 T ∩ resolventSet 𝕜 S := by
   ext z
   simp only [spectrum.mem_resolventSet_iff, Set.mem_inter_iff]
   rw [algebraMap_sub_prodMap, isUnit_prodMap_iff]
 
-/-- **Compactness of a direct sum operator.** A direct sum is compact iff both summands are compact. -/
+/-- A direct sum is compact iff both summands are compact. -/
 theorem isCompactOperator_prodMap_iff (T : E →L[𝕜] E') (S : F →L[𝕜] F') :
     IsCompactOperator (T.prodMap S) ↔ IsCompactOperator T ∧ IsCompactOperator S := by
   constructor
@@ -343,7 +343,7 @@ private theorem isQuasiInverse_snd_of_prodMap
     rw [e]
     rwa [eid'] at h3'
 
-/-- **Fredholmness of a direct sum operator.** A direct sum is Fredholm iff both summands are Fredholm. -/
+/-- A direct sum is Fredholm iff both summands are Fredholm. -/
 theorem isFredholm_prodMap_iff [CompleteSpace 𝕜] (T : E →L[𝕜] E') (S : F →L[𝕜] F') :
     (T.prodMap S).IsFredholm ↔ T.IsFredholm ∧ S.IsFredholm := by
   simp only [ContinuousLinearMap.isFredholm_iff_exists_isQuasiInverse]
@@ -377,7 +377,7 @@ theorem isFredholm_prodMap_iff [CompleteSpace 𝕜] (T : E →L[𝕜] E') (S : F
         (LinearMap.FiniteRangeSetoid.equiv_iff_hasFiniteRange.mp hVS.2).fg_range
 
 set_option linter.style.haveILetI false in
-/-- **Fredholm index of a direct sum is additive.** The Fredholm index of a direct sum is the sum of the Fredholm indices. -/
+/-- The Fredholm index of a direct sum is the sum of the Fredholm indices. -/
 theorem index_prodMap [CompleteSpace 𝕜] (T : E →L[𝕜] E') (S : F →L[𝕜] F')
     (hT : T.IsFredholm) (hS : S.IsFredholm) :
     (T.prodMap S).index = T.index + S.index := by

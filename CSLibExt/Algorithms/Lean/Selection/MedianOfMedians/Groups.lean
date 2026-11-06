@@ -29,11 +29,7 @@ universe u
 
 namespace Cslib.Algorithms.Lean.TimeM
 
-/-- **Group medians for median-of-medians selection.** Given a list $xs$ over a linear
-order, split $xs$ into consecutive blocks of five elements, the last of which may be shorter.
-Sort each block $g$ by insertion sort and return, in block order, the entry at position
-$\lfloor (|g| - 1)/2 \rfloor$ (counting from $0$) of each sorted block, that is, its lower
-median. The cost is the total number of comparisons made by these insertion sorts. -/
+/-- Sort five-element groups and collect each group's lower median. -/
 def medianOfMediansGroups {α : Type u} [LinearOrder α] (xs : List α) :
     TimeM Nat (List α) :=
   let rec loop : List (List α) → TimeM Nat (List α)
@@ -67,8 +63,7 @@ private theorem medianOfMediansGroups_loop_time {α : Type u} [LinearOrder α]
       simp only [medianOfMediansGroups.loop, time_bind, List.map_cons, List.sum_cons]
       split <;> simp only [time_pure] <;> omega
 
-/-- **Comparison cost of the group medians.** For every list $xs$ of length $n$ over a linear
-order, computing the group medians of $xs$ takes at most $2n$ comparisons. -/
+/-- Group sorting spends at most two comparisons per input occurrence. -/
 theorem medianOfMediansGroups_time {α : Type u} [LinearOrder α] (xs : List α) :
     (medianOfMediansGroups xs).time ≤ 2 * xs.length := by
   have hgroups : ∀ group ∈ xs.toChunks 5, group.length ≤ 5 :=
@@ -99,8 +94,7 @@ private theorem medianOfMediansGroups_loop_mem {α : Type u} [LinearOrder α]
         · obtain ⟨other, hother, hx⟩ := ih hx
           exact ⟨other, by simp [hother], hx⟩
 
-/-- **Group medians come from the input.** For every list $xs$ over a linear order, every
-entry of the list of group medians of $xs$ is an element of $xs$. -/
+/-- Every returned group median is an occurrence from the original input. -/
 theorem medianOfMediansGroups_mem {α : Type u} [LinearOrder α] {xs : List α} {x : α}
     (hx : x ∈ (medianOfMediansGroups xs).ret) : x ∈ xs := by
   change x ∈ (medianOfMediansGroups.loop (xs.toChunks 5)).ret at hx
@@ -148,12 +142,7 @@ private theorem medianOfMediansGroups_loop_correct {α : Type u} [LinearOrder α
       simp only [medianOfMediansGroups.loop, ret_bind, hx, ret_pure]
       exact List.Forall₂.cons (insertionSort_getElem?_rank group _ hx) htail
 
-/-- **Group medians are lower medians of their blocks.** Let $xs$ be a list over a linear
-order, and let $g_1, \dots, g_m$ be its consecutive blocks of five elements, the last of which
-may be shorter. Then the list of group medians of $xs$ has the same length $m$, say
-$x_1, \dots, x_m$, and for each $i$, writing $k_i = \lfloor (|g_i| - 1)/2 \rfloor$ and counting
-elements of $g_i$ with multiplicity: $x_i$ belongs to $g_i$, at most $k_i$ elements of $g_i$
-are less than $x_i$, and more than $k_i$ elements of $g_i$ are less than or equal to $x_i$. -/
+/-- The actual grouping returns one duplicate-safe lower median for each column. -/
 theorem medianOfMediansGroups_correct {α : Type u} [LinearOrder α] (xs : List α) :
     List.Forall₂ (fun group x => x ∈ group ∧
       group.countP (fun y => decide (y < x)) ≤ (group.length - 1) / 2 ∧
@@ -162,9 +151,7 @@ theorem medianOfMediansGroups_correct {α : Type u} [LinearOrder α] (xs : List 
   exact medianOfMediansGroups_loop_correct (xs.toChunks 5)
     (fun group hgroup => List.ne_nil_of_mem_toChunks 5 xs group hgroup)
 
-/-- **Number of group medians.** For every list $xs$ of length $n$ over a linear order, the
-list of group medians of $xs$ has exactly $\lfloor (n + 4)/5 \rfloor = \lceil n/5 \rceil$
-entries. -/
+/-- The returned median list has the actual ceiling of the number of columns. -/
 theorem medianOfMediansGroups_length {α : Type u} [LinearOrder α] (xs : List α) :
     (medianOfMediansGroups xs).ret.length = (xs.length + 4) / 5 := by
   rw [← (medianOfMediansGroups_correct xs).length_eq]

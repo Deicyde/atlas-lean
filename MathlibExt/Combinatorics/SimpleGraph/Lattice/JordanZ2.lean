@@ -44,16 +44,16 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Lower left corner of the unit face at $(a, b)$.** The lower left corner `(a, b)` of the unit face `[a, a + 1] × [b, b + 1]`. -/
+/-- The lower left corner `(a, b)` of the unit face `[a, a + 1] × [b, b + 1]`. -/
 def faceCorner00 (a b : ℤ) : Site 2 := ![a, b]
 
-/-- **Lower right corner of the unit face at $(a, b)$.** The lower right corner `(a + 1, b)` of the unit face `[a, a + 1] × [b, b + 1]`. -/
+/-- The lower right corner `(a + 1, b)` of the unit face `[a, a + 1] × [b, b + 1]`. -/
 def faceCorner10 (a b : ℤ) : Site 2 := ![a + 1, b]
 
-/-- **Upper right corner of the unit face at $(a, b)$.** The upper right corner `(a + 1, b + 1)` of the unit face `[a, a + 1] × [b, b + 1]`. -/
+/-- The upper right corner `(a + 1, b + 1)` of the unit face `[a, a + 1] × [b, b + 1]`. -/
 def faceCorner11 (a b : ℤ) : Site 2 := ![a + 1, b + 1]
 
-/-- **Upper left corner of the unit face at $(a, b)$.** The upper left corner `(a, b + 1)` of the unit face `[a, a + 1] × [b, b + 1]`. -/
+/-- The upper left corner `(a, b + 1)` of the unit face `[a, a + 1] × [b, b + 1]`. -/
 def faceCorner01 (a b : ℤ) : Site 2 := ![a, b + 1]
 
 theorem faceAdj_bottom (a b : ℤ) :
@@ -72,7 +72,7 @@ theorem faceAdj_left (a b : ℤ) :
     (hypercubicLattice 2).Adj (faceCorner01 a b) (faceCorner00 a b) := by
   simp [faceCorner01, faceCorner00, hypercubicLattice_adj, Fin.sum_univ_two]
 
-/-- **Boundary indicator of an edge.** `1` if exactly one of `x` and `y` lies in `S`, and `0` otherwise. -/
+/-- `1` if exactly one of `x` and `y` lies in `S`, and `0` otherwise. -/
 noncomputable def bdInd (S : Set (Site 2)) (x y : Site 2) : ℕ := by
   classical exact if (x ∈ S ↔ y ∉ S) then 1 else 0
 
@@ -89,7 +89,7 @@ theorem bdInd_eq_one_iff (S : Set (Site 2)) {x y : Site 2}
   simp only [mem_edgeBoundary, hadj, true_and]
   by_cases h : (x ∈ S ↔ y ∉ S) <;> simp [h]
 
-/-- **Boundary degree of a unit face.** The number of the four edges of the unit face at `(a, b)` that have exactly one
+/-- The number of the four edges of the unit face at `(a, b)` that have exactly one
 endpoint
 in `S`. -/
 noncomputable def faceBoundaryDegree (S : Set (Site 2)) (a b : ℤ) : ℕ :=

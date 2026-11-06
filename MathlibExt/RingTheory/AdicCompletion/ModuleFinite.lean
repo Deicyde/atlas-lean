@@ -193,7 +193,7 @@ end AdicCompleteModuleFiniteAux
 
 namespace IsLocalRing
 
-/-- **Finite local extensions of adically complete rings are complete.** A finite local extension of an adically complete local ring is adically
+/-- A finite local extension of an adically complete local ring is adically
 complete at its maximal ideal. -/
 theorem isAdicComplete_of_module_finite {𝒪 : Type u} {T : Type v} [CommRing 𝒪]
     [IsNoetherianRing 𝒪] [IsLocalRing 𝒪] [IsAdicComplete (IsLocalRing.maximalIdeal 𝒪) 𝒪]

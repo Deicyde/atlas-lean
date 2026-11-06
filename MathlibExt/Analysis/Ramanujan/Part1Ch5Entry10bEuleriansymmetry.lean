@@ -33,13 +33,8 @@ open Finset
 
 noncomputable section
 
-/-- **Even-index Euler numbers.** The integers $E_0, E_2, E_4, \dots$ defined recursively by
-$E_0 = 1$ and $E_{2m} = -\sum_{k=0}^{m-1} \binom{2m}{2k} E_{2k}$ for $m \ge 1$; equivalently,
-$\sum_{k=0}^{m} \binom{2m}{2k} E_{2k}$ is $1$ for $m = 0$ and $0$ for $m \ge 1$. The value at
-$n$ is $E_{2n}$.
-
-The first values are $E_0 = 1$, $E_2 = -1$, $E_4 = 5$, $E_6 = -61$; the absolute values are the
-secant numbers. -/
+/-- Even Euler (secant) numbers `E_{2n}`, defined by the binomial recurrence
+`∑_{k = 0}^m (2m).choose (2k) * E_k = if m = 0 then 1 else 0`. -/
 def chapter5EulerEven (n : ℕ) : ℤ :=
   Nat.strongRec (motive := fun _ => ℤ)
     (fun m previous =>
@@ -47,14 +42,13 @@ def chapter5EulerEven (n : ℕ) : ℤ :=
       else -∑ k : Fin m,
         (Nat.choose (2 * m) (2 * k.val) : ℤ) * previous k.val k.isLt) n
 
-/-- **The initial even-index Euler number.** $E_0 = 1$. -/
+/-- The initial even Euler number: `E_0 = 1`. -/
 theorem chapter5EulerEven_zero : chapter5EulerEven 0 = 1 := by
   unfold chapter5EulerEven
   rw [Nat.strongRec_eq]
   simp
 
-/-- **Recursion for the even-index Euler numbers.** For every natural number $m \ge 1$,
-$E_{2m} = -\sum_{k=0}^{m-1} \binom{2m}{2k} E_{2k}$. -/
+/-- Unfolding of `E_m` for `m ≠ 0` as a signed binomial sum over earlier values. -/
 theorem chapter5EulerEven_step (m : ℕ) (hm : m ≠ 0) :
     chapter5EulerEven m =
       -∑ k : Fin m, (Nat.choose (2 * m) (2 * k.val) : ℤ) * chapter5EulerEven k.val := by
@@ -62,8 +56,8 @@ theorem chapter5EulerEven_step (m : ℕ) (hm : m ≠ 0) :
   simp only [hm, ↓reduceIte]
   rfl
 
-/-- **Binomial recurrence for the even-index Euler numbers.** For every natural number $m$,
-$\sum_{k=0}^{m} \binom{2m}{2k} E_{2k}$ is $1$ if $m = 0$ and $0$ if $m \ge 1$. -/
+/-- The defining binomial recurrence for even Euler numbers:
+`∑_{k = 0}^m (2m).choose (2k) * E_k` is `1` for `m = 0` and `0` otherwise. -/
 theorem chapter5EulerEven_recurrence (m : ℕ) :
     ∑ k ∈ Finset.range (m + 1),
       ((Nat.choose (2 * m) (2 * k) : ℕ) : ℤ) * chapter5EulerEven k =
@@ -653,11 +647,9 @@ private theorem coeff_XT_bernoulli (n : ℕ) (_hn : 1 ≤ n) :
   simp only [map_add, map_sub, hX0, h4, h2]
   ring
 
-/-- **Bernoulli numbers as a convolution of even-index Euler numbers.** For every natural number
-$n$, $2^{2n} (2^{2n} - 1) B_{2n} = 2n \sum_{k=0}^{n-1} \binom{2n-2}{2k} E_{2k} E_{2n-2k-2}$, where
-$B_m$ are the Bernoulli numbers and $E_{2k}$ are the even-index Euler numbers.
+/-- Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5.
 
-Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5.
+Proves `Wanted` entry `ramanujan_part1_ch5_entry10b_euleriansymmetry`.
 -/
 theorem ramanujan_part1_ch5_entry10b_euleriansymmetry (n : ℕ) :
     (2 : ℚ) ^ (2 * n) * ((2 : ℚ) ^ (2 * n) - 1) * bernoulli (2 * n) =

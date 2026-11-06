@@ -30,11 +30,7 @@ noncomputable section
 
 variable {m n : ℕ}
 
-/-- **Vector discrepancy.** For a real $m \times n$ matrix $A$, the vector discrepancy of $A$ is
-the infimum, over all families $u_1, \dots, u_n$ of unit vectors in the Euclidean space
-$\mathbb{R}^n$, of $\max_{1 \le i \le m} \lVert \sum_{j=1}^{n} A_{ij} u_j \rVert$ (taken to be $0$
-when $m = 0$), where $\lVert \cdot \rVert$ is the Euclidean norm; it is an element of
-$[0, \infty]$. -/
+/-- The infimum of the maximum Euclidean row norm over unit-vector colorings. -/
 def vectorDiscrepancy (A : Matrix (Fin m) (Fin n) ℝ) : ENNReal :=
   ⨅ u : {u : Fin n → EuclideanSpace ℝ (Fin n) // ∀ j, ‖u j‖ = 1},
     ENNReal.ofReal ‖fun i : Fin m => ∑ j, A i j • u.1 j‖
@@ -88,10 +84,7 @@ theorem vectorDiscrepancy_le_discrepancy (hn : 1 ≤ n)
     _ ≤ ENNReal.ofReal ‖fun i : Fin m => ∑ j, A i j • u j‖ := vectorDiscrepancy_le_coloring A u hu
     _ = discrepancy A := by rw [hnorm, hx]
 
-/-- **The vector discrepancy is attained.** Let $A$ be a real $m \times n$ matrix with $n \ge 1$.
-Then there are unit vectors $u_1, \dots, u_n$ in the Euclidean space $\mathbb{R}^n$ such that
-the vector discrepancy of $A$ equals $\max_{1 \le i \le m} \lVert \sum_{j=1}^{n} A_{ij} u_j \rVert$
-(taken to be $0$ when $m = 0$), where $\lVert \cdot \rVert$ is the Euclidean norm. -/
+/-- Compact unit-vector colorings attain the infimum in positive column dimension. -/
 theorem vectorDiscrepancy_attained (hn : 1 ≤ n)
     (A : Matrix (Fin m) (Fin n) ℝ) :
     ∃ u : Fin n → EuclideanSpace ℝ (Fin n), (∀ j, ‖u j‖ = 1) ∧

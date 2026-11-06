@@ -98,7 +98,7 @@ namespace ProbabilityTheory
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
-/-- **Progressive processes are jointly measurable.** A progressive process is jointly measurable in `(u, ω)` (reading `u : ℝ` through
+/-- A progressive process is jointly measurable in `(u, ω)` (reading `u : ℝ` through
 `Real.toNNReal`). -/
 theorem IsProgressive.measurable_toNNReal {F : Filtration ℝ≥0 mΩ} {H : ℝ≥0 → Ω → ℝ}
     (hH : IsProgressive F H) : Measurable fun p : ℝ × Ω ↦ H p.1.toNNReal p.2 := by
@@ -119,14 +119,14 @@ theorem IsProgressive.measurable_toNNReal {F : Filtration ℝ≥0 mΩ} {H : ℝ�
   rw [min_eq_left]
   exact (Nat.le_ceil _).trans (by exact_mod_cast hN)
 
-/-- **Truncation of a progressive process is progressive.** Truncating a progressive process at level `M` (Mathlib's `ProbabilityTheory.truncation`,
+/-- Truncating a progressive process at level `M` (Mathlib's `ProbabilityTheory.truncation`,
 which keeps the values in `(-M, M]` and sets the others to `0`) gives a progressive process. -/
 theorem IsProgressive.truncation {F : Filtration ℝ≥0 mΩ} {H : ℝ≥0 → Ω → ℝ}
     (hH : IsProgressive F H) (M : ℝ) : IsProgressive F (fun u ↦ truncation (H u) M) := by
   intro T
   exact (measurable_id.indicator measurableSet_Ioc).comp (hH T)
 
-/-- **Measurability of time averages of a progressive process.** For a progressive `H` and `b ≤ T`, the average of `u ↦ H u ω` over `[a, b]` is
+/-- For a progressive `H` and `b ≤ T`, the average of `u ↦ H u ω` over `[a, b]` is
 `F T`-measurable in `ω`. -/
 theorem IsProgressive.measurable_average_Icc {F : Filtration ℝ≥0 mΩ} {H : ℝ≥0 → Ω → ℝ}
     (hH : IsProgressive F H) {a b : ℝ} {T : ℝ≥0} (hbT : b ≤ T) :
@@ -169,7 +169,7 @@ private theorem abs_average_Icc_le {f : ℝ → ℝ} {C : ℝ} (hC : ∀ x, |f x
       ≤ (volume.real (Set.Icc a b))⁻¹ * (C * volume.real (Set.Icc a b)) := by gcongr
     _ = C := by field_simp
 
-/-- **Delayed-average approximation of a progressive process.** The **delayed-average approximation** of a progressive process `H` on `[0, t]`, truncated at
+/-- The **delayed-average approximation** of a progressive process `H` on `[0, t]`, truncated at
 level `M`, with `n + 1` intervals: on `(t_k, t_{k+1}]`, with `t_k = k t / (n + 1)`, it equals the
 average of `truncation (H ·) M` over `[t_{k-1}, t_k]` for `k ≥ 1`, and `0` for `k = 0`. For
 `M ≤ 0` the truncation, and hence the approximation, is `0`. -/
@@ -454,7 +454,7 @@ theorem isItoApproximable_of_isProgressive {P : Measure Ω} [IsFiniteMeasure P]
     tendsto_of_tendsto_of_tendsto_of_le_of_le tendsto_const_nhds
       ENNReal.tendsto_inv_nat_nhds_zero (fun _ ↦ bot_le) fun n ↦ (hK n).le⟩
 
-/-- **Square integrability of the Itô integral.** The Itô integral at each time is square integrable: it is a version of the element
+/-- The Itô integral at each time is square integrable: it is a version of the element
 `itoIntegralL2 P F B H t` of `L²(P)` (which is `0` when `H` is not Itô-approximable). -/
 theorem memLp_itoIntegral (P : Measure Ω) (F : Filtration ℝ≥0 mΩ) (B H : ℝ≥0 → Ω → ℝ)
     (t : ℝ≥0) : MemLp (itoIntegral P F B H t) 2 P :=

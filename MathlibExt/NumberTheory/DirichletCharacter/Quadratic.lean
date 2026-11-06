@@ -33,35 +33,27 @@ a Dirichlet character chi_D = (D / dot), namely ...".
 Stable ID: `candidate:a:ef6cab2596e5dbf9`. -/
 namespace MetaMathlibExt
 
-/-- **Fundamental discriminant.** An integer $D$ is a fundamental discriminant if either $D$ is
-squarefree and $D \equiv 1 \pmod 4$, or $D = 4m$ for some squarefree integer $m$ with
-$m \equiv 2 \pmod 4$ or $m \equiv 3 \pmod 4$.
-
-With this definition $D = 1$ is a fundamental discriminant and $D = 0$ is not. -/
+/-- Fundamental discriminant predicate from the source contract:
+either `D` is squarefree and congruent to `1` modulo `4`,
+or `D = 4 * m` with `m` squarefree and congruent to `2` or `3` modulo `4`.
+Includes `D = 1`, excludes `D = 0`. -/
 public def IsFundamentalDiscriminant (D : ℤ) : Prop :=
   (Squarefree D ∧ D % 4 = 1) ∨
     ∃ m : ℤ, D = 4 * m ∧ Squarefree m ∧ (m % 4 = 2 ∨ m % 4 = 3)
 
-/-- **Kronecker symbol at two.** For an integer $D$, the Kronecker symbol of $D$ at $2$ is $0$
-if $D$ is even, $1$ if $D \equiv \pm 1 \pmod 8$, and $-1$ if $D \equiv \pm 3 \pmod 8$. -/
+/-- Kronecker symbol at the prime two via the standard mod-eight rule. -/
 public def kroneckerAtTwo (D : ℤ) : ℤ :=
   if D % 2 = 0 then 0
   else if D % 8 = 1 ∨ D % 8 = 7 then 1
   else -1
 
-/-- **Kronecker symbol at a prime.** For an integer $D$ and a natural number $p$, the Kronecker
-symbol of $D$ at $p$ is the Kronecker symbol of $D$ at two if $p = 2$, the Legendre symbol
-$\left(\frac{D}{p}\right)$ if $p$ is an odd prime, and $0$ if $p$ is not prime. -/
+/-- Kronecker symbol at a prime: mod-eight rule at two, Legendre elsewhere. -/
 public def kroneckerAtPrime (D : ℤ) (p : ℕ) : ℤ :=
   if p = 2 then kroneckerAtTwo D
   else if h : p.Prime then @legendreSym p (Fact.mk h) D
   else 0
 
-/-- **Kronecker symbol.** For an integer $D$ and a natural number $n$, the Kronecker symbol
-$\left(\frac{D}{n}\right)$ is defined as follows. If $n = 0$, it is $1$ when $D = \pm 1$ and $0$
-otherwise. If $n \ge 1$ and $n = p_1 p_2 \cdots p_k$ is the factorization of $n$ into primes,
-listed with multiplicity, it is the product of the Kronecker symbols of $D$ at the primes
-$p_1, \ldots, p_k$ (the empty product $1$ when $n = 1$). -/
+/-- Positive-denominator Kronecker symbol, with multiplicity preserved. -/
 public def kroneckerSym (D : ℤ) (n : ℕ) : ℤ :=
   if n = 0 then if D.natAbs = 1 then 1 else 0
   else (n.primeFactorsList.map (kroneckerAtPrime D)).prod
@@ -85,9 +77,7 @@ public theorem kroneckerSym_two (D : ℤ) :
   rw [kroneckerSym, ite_eq_right (by decide), hlist]
   simp [kroneckerAtPrime]
 
-/-- **Kronecker symbol with a prime denominator.** For every integer $D$ and every prime $p$,
-the Kronecker symbol $\left(\frac{D}{p}\right)$ equals the Kronecker symbol of $D$ at the
-prime $p$. -/
+/-- Kronecker symbol at a prime lower argument reduces to the prime dispatcher. -/
 public theorem kroneckerSym_prime (D : ℤ) (p : ℕ) (hp : p.Prime) :
     kroneckerSym D p = kroneckerAtPrime D p := by
   have hne : p ≠ 0 := hp.ne_zero

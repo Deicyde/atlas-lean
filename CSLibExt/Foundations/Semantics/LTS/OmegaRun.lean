@@ -33,9 +33,7 @@ to multistep transitions and reachability, and suffix shifts of sequences.
 
 namespace Cslib.Semantics
 
-/-- **Shifted sequence.** For a sequence $s_0, s_1, s_2, \dots$ and a natural number $k$, the shift
-of the sequence by $k$ is the sequence whose $i$-th term is $s_{i+k}$; that is, the suffix
-starting at index $k$, re-indexed from $0$. -/
+/-- The suffix of a state sequence starting at index `k`. -/
 def shiftSeq {State : Type*} (ss : ℕ → State) (k : ℕ) : ℕ → State :=
   fun i => ss (i + k)
 
@@ -59,17 +57,12 @@ namespace LTS
 
 variable {State Label : Type*} (lts : LTS State Label)
 
-/-- **Finite run.** In a labelled transition system, a sequence of states $s_0, s_1, s_2, \dots$
-is a finite run of length $k$ when for every $i < k$ there is a label $a$ such that there is a
-transition from $s_i$ to $s_{i+1}$ labelled $a$.
-
-The states after index $k$ are unconstrained. -/
+/-- `ss` is a run prefix of length `k`, from `ss 0` to `ss k`; values
+beyond index `k` are unconstrained. -/
 def FiniteRun (ss : ℕ → State) (k : ℕ) : Prop :=
   ∀ i, i < k → ∃ label, lts.Tr (ss i) label (ss (i + 1))
 
-/-- **Infinite run.** In a labelled transition system, a sequence of states $s_0, s_1, s_2, \dots$
-is an infinite run when for every $i$ there is a label $a$ such that there is a transition from
-$s_i$ to $s_{i+1}$ labelled $a$. -/
+/-- `ss` is an infinite run: every consecutive pair is a transition. -/
 def OmegaRun (ss : ℕ → State) : Prop :=
   ∀ i, ∃ label, lts.Tr (ss i) label (ss (i + 1))
 
@@ -160,10 +153,9 @@ theorem finiteRun_shift {ss : ℕ → State} {j k : ℕ}
   rw [hidx]
   exact hstep
 
-/-- **Invariant principle for infinite runs.** Let $P$ be a predicate on the states of a labelled
-transition system such that, whenever $P(s)$ holds and there is a transition from $s$ to $t$ with
-some label, $P(t)$ holds. Then for every infinite run $s_0, s_1, s_2, \dots$ with $P(s_0)$, the
-predicate $P(s_k)$ holds for every $k$. -/
+/-- The invariant principle for infinite runs: a state predicate that
+holds initially and is preserved by every step holds at every position
+of the run. -/
 theorem forall_state_of_invariant {run : ℕ → State}
     (hrun : lts.OmegaRun run) {P : State → Prop} (h0 : P (run 0))
     (hstep : ∀ s t, P s → lts.UnlabelledTr s t → P t) :

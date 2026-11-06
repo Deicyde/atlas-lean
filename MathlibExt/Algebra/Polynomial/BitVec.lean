@@ -33,7 +33,7 @@ Copyright 2026 Anthropic, PBC. Licensed under Apache 2.0 (see LICENSE).
 
 namespace Polynomial
 
-/-- **Degree bound for a polynomial built from a coefficient list.** A polynomial built from a low-coefficient-first list has degree strictly less than the list
+/-- A polynomial built from a low-coefficient-first list has degree strictly less than the list
 length, including for an empty list and over a trivial semiring. -/
 theorem degree_ofCoeffList_lt {R : Type*} [Semiring R] (l : List R) :
     (ofCoeffList l).degree < (l.length : WithBot Nat) := by
@@ -41,7 +41,7 @@ theorem degree_ofCoeffList_lt {R : Type*} [Semiring R] (l : List R) :
   intro i hi
   rw [coeff_ofCoeffList, List.getD_eq_default _ _ hi]
 
-/-- **Reconstructing a polynomial from a fixed-width coefficient list.** Reconstruct a polynomial from any fixed-width list containing all its possibly nonzero
+/-- Reconstruct a polynomial from any fixed-width list containing all its possibly nonzero
 coefficients. -/
 theorem ofCoeffList_ofFn_coeff {R : Type*} [Semiring R] (p : Polynomial R) (s : Nat)
     (h : p.degree < (s : WithBot Nat)) :
@@ -54,7 +54,7 @@ theorem ofCoeffList_ofFn_coeff {R : Type*} [Semiring R] (p : Polynomial R) (s : 
     rw [degree_lt_iff_coeff_zero] at h
     exact (h i (Nat.le_of_not_gt hi)).symm
 
-/-- **Bitvector of the low coefficients of a binary polynomial.** Extract the lowest `s` binary coefficients of a polynomial as a fixed-width bitvector.
+/-- Extract the lowest `s` binary coefficients of a polynomial as a fixed-width bitvector.
 Coefficients at indices at least `s` are deliberately truncated. -/
 noncomputable def toBitVec (s : Nat) (p : Polynomial (ZMod 2)) : BitVec s :=
   (BitVec.ofBoolListLE (List.ofFn fun i : Fin s => decide (p.coeff i.val = 1))).cast
@@ -64,12 +64,12 @@ end Polynomial
 
 namespace BitVec
 
-/-- **Binary polynomial of a bitvector.** The polynomial over `ZMod 2` whose coefficient of `X ^ i` is the `i`-th least-significant
+/-- The polynomial over `ZMod 2` whose coefficient of `X ^ i` is the `i`-th least-significant
 bit of `w`. -/
 noncomputable def toPolynomial {s : Nat} (w : BitVec s) : Polynomial (ZMod 2) :=
   Polynomial.ofCoeffList (w.toBoolListLE.map fun b => if b then 1 else 0)
 
-/-- **Coefficients of the binary polynomial of a bitvector.** Every coefficient of the polynomial encoding is the corresponding least-significant bit;
+/-- Every coefficient of the polynomial encoding is the corresponding least-significant bit;
 indices outside the fixed width have coefficient zero. -/
 theorem coeff_toPolynomial {s : Nat} (w : BitVec s) (i : Nat) :
     w.toPolynomial.coeff i = if w.getLsbD i then 1 else 0 := by
@@ -81,7 +81,7 @@ theorem coeff_toPolynomial {s : Nat} (w : BitVec s) (i : Nat) :
       BitVec.getLsbD_of_ge w i (Nat.le_of_not_gt hi)]
     rfl
 
-/-- **Bitvector encoding recovers the original word.** Extracting the coefficients of an encoded word recovers the original fixed-width word. -/
+/-- Extracting the coefficients of an encoded word recovers the original fixed-width word. -/
 @[simp] theorem toBitVec_toPolynomial {s : Nat} (w : BitVec s) :
     w.toPolynomial.toBitVec s = w := by
   apply BitVec.eq_of_getLsbD_eq
@@ -100,7 +100,7 @@ private theorem if_decide_eq_one_zmod_two (c : ZMod 2) :
   revert c
   decide
 
-/-- **Polynomial encoding recovers a low-degree polynomial.** A polynomial whose degree is below the selected width is recovered after coefficient
+/-- A polynomial whose degree is below the selected width is recovered after coefficient
 extraction and fixed-width encoding. -/
 @[simp] theorem toPolynomial_toBitVec (s : Nat) (p : Polynomial (ZMod 2))
     (h : p.degree < (s : WithBot Nat)) : (p.toBitVec s).toPolynomial = p := by
@@ -119,7 +119,7 @@ end Polynomial
 
 namespace BitVec
 
-/-- **Bitwise xor corresponds to polynomial addition over $\mathbb{F}_2$.** Polynomial encoding turns bitwise xor into addition over `ZMod 2`; this is not the carried
+/-- Polynomial encoding turns bitwise xor into addition over `ZMod 2`; this is not the carried
 integer addition on bitvectors. -/
 theorem toPolynomial_xor {s : Nat} (x y : BitVec s) :
     (x ^^^ y).toPolynomial = x.toPolynomial + y.toPolynomial := by
@@ -129,18 +129,18 @@ theorem toPolynomial_xor {s : Nat} (x y : BitVec s) :
   generalize y.getLsbD i = yb
   cases xb <;> cases yb <;> decide
 
-/-- **Monic binary modulus of a fixed-width word.** The monic polynomial obtained by adjoining the width term `X ^ s` to the encoded lower
+/-- The monic polynomial obtained by adjoining the width term `X ^ s` to the encoded lower
 coefficients. -/
 noncomputable def monicModulus {s : Nat} (g : BitVec s) : Polynomial (ZMod 2) :=
   Polynomial.X ^ s + g.toPolynomial
 
-/-- **The binary modulus is monic.** The binary modulus associated to a fixed-width word is monic, including at width zero. -/
+/-- The binary modulus associated to a fixed-width word is monic, including at width zero. -/
 theorem monicModulus_monic {s : Nat} (g : BitVec s) : g.monicModulus.Monic := by
   apply Polynomial.monic_X_pow_add
   simpa [toPolynomial] using Polynomial.degree_ofCoeffList_lt
     (g.toBoolListLE.map fun b => if b then (1 : ZMod 2) else 0)
 
-/-- **Degree of the binary modulus.** The natural degree of the binary modulus is exactly the width of its lower coefficients. -/
+/-- The natural degree of the binary modulus is exactly the width of its lower coefficients. -/
 theorem monicModulus_natDegree {s : Nat} (g : BitVec s) : g.monicModulus.natDegree = s := by
   rw [monicModulus, add_comm]
   exact (Polynomial.natDegree_add_eq_right_of_degree_lt (by

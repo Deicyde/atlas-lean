@@ -22,9 +22,8 @@ is the union of other members of the family.
 
 namespace Finset
 
-/-- **Families in which no member is a union of other members.** A family $F$ of finite sets
-is union-free over its subfamilies if no member $A \in F$ is the union of a nonempty
-subfamily of $F$ that does not contain $A$. -/
+/-- A family `F` is union-free over a subfamily: no member is the union of
+other members. -/
 def SubfamilyUnionFree {α : Type*} [DecidableEq α]
     (F : Finset (Finset α)) : Prop :=
   ∀ A ∈ F, ∀ T ⊆ F.erase A, T.Nonempty → T.sup id ≠ A

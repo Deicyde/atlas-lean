@@ -31,10 +31,7 @@ namespace BurnsidePaqb
 variable {G : Type*} [Group G] [Fintype G]
 
 omit [Fintype G] in
-/-- **Character value as the sum of characteristic roots.** Let $\rho$ be a representation of a
-group $G$ on a finite-dimensional complex vector space, with character $\chi$, and let $g \in G$.
-Then $\chi(g)$ is the sum of the roots of the characteristic polynomial of $\rho(g)$, counted
-with multiplicity. -/
+/-- Character value as a sum of characteristic-polynomial roots. -/
 theorem character_eq_sum_roots {V : Type*} [AddCommGroup V] [Module ℂ V]
     [FiniteDimensional ℂ V] (ρ : Representation ℂ G V) (g : G) :
     ρ.character g = (ρ g).charpoly.roots.sum := by
@@ -42,11 +39,7 @@ theorem character_eq_sum_roots {V : Type*} [AddCommGroup V] [Module ℂ V]
   exact Module.End.trace_eq_sum_roots_charpoly_of_splits (IsAlgClosed.splits _)
 
 omit [Fintype G] in
-/-- **Characteristic roots are killed by the order of the element.** Let $G$ be a group, $V$ a
-finite-dimensional complex vector space, $\rho$ a representation of $G$ on $V$, and $g \in G$
-an element of order $n$, where $n = 0$ if $g$ has infinite order. Then every root $\mu$ of the
-characteristic polynomial of $\rho(g)$ satisfies $\mu^n = 1$; in particular, when $g$ has finite
-order, $\mu$ is a root of unity. -/
+/-- Each characteristic root of `ρ g` is a root of unity. -/
 theorem charpoly_root_pow_orderOf {V : Type*} [AddCommGroup V] [Module ℂ V]
     [FiniteDimensional ℂ V] (ρ : Representation ℂ G V) (g : G) (μ : ℂ)
     (hμ : μ ∈ (ρ g).charpoly.roots) : μ ^ orderOf g = 1 := by
@@ -70,10 +63,7 @@ theorem charpoly_root_pow_orderOf {V : Type*} [AddCommGroup V] [Module ℂ V]
   · exact absurd h hv0
 
 omit [Fintype G] in
-/-- **Eigenvalues of a finite group representation have modulus one.** Let $G$ be a finite
-group, $V$ a finite-dimensional complex vector space and $\rho$ a representation of $G$ on $V$.
-For every $g \in G$, every root $\mu$ of the characteristic polynomial of $\rho(g)$ satisfies
-$|\mu| = 1$. -/
+/-- Characteristic roots of `ρ g` have absolute value 1. -/
 theorem charpoly_root_norm_eq_one {V : Type*} [AddCommGroup V] [Module ℂ V]
     [FiniteDimensional ℂ V] [Finite G] (ρ : Representation ℂ G V) (g : G) (μ : ℂ)
     (hμ : μ ∈ (ρ g).charpoly.roots) : ‖μ‖ = 1 := by
@@ -83,22 +73,18 @@ theorem charpoly_root_norm_eq_one {V : Type*} [AddCommGroup V] [Module ℂ V]
     rw [← norm_pow, hpow, norm_one]
   exact (pow_eq_one_iff_of_nonneg (norm_nonneg μ) hm).mp hnorm
 
-/-- **Real part of a product with a conjugate.** For complex numbers $a$ and $b$,
-$\operatorname{Re} a \operatorname{Re} b + \operatorname{Im} a \operatorname{Im} b =
-\operatorname{Re}(a \bar{b})$. -/
+/-- Real part of a product with a conjugate, expanded. -/
 theorem re_mul_conj (a b : ℂ) :
     a.re * b.re + a.im * b.im = (a * starRingEnd ℂ b).re := by
   rw [Complex.mul_re, Complex.conj_re, Complex.conj_im]
   ring
 
-/-- **Product of a unit complex number with a conjugate unit.** For complex numbers $a$ and $b$
-with $|a| = |b| = 1$, we have $|a \bar{b}| = 1$. -/
+/-- A product of unit-modulus numbers with a conjugate has modulus 1. -/
 theorem norm_mul_conj_eq_one (a b : ℂ) (ha : ‖a‖ = 1) (hb : ‖b‖ = 1) :
     ‖a * starRingEnd ℂ b‖ = 1 := by
   rw [norm_mul, ha, Complex.norm_conj, hb, mul_one]
 
-/-- **Cancelling a unit-modulus conjugate.** Let $a, b \in \mathbb{C}$ with $|b| = 1$. If
-$a \bar{b} = 1$, then $a = b$. -/
+/-- If `a * conj b = 1` with both unit, then `a = b`. -/
 theorem eq_of_mul_conj_eq_one (a b : ℂ) (hb : ‖b‖ = 1)
     (h : a * starRingEnd ℂ b = 1) : a = b := by
   have h2 := congrArg (· * b) h
@@ -108,8 +94,7 @@ theorem eq_of_mul_conj_eq_one (a b : ℂ) (hb : ‖b‖ = 1)
   rw [hnsq, Complex.ofReal_one, mul_one, one_mul] at h2
   exact h2
 
-/-- **Real part of a unit complex number other than $1$.** If $w \in \mathbb{C}$ satisfies
-$|w| = 1$ and $w \neq 1$, then $\operatorname{Re} w < 1$. -/
+/-- Strict bound: real part of a non-1 unit complex is less than 1. -/
 theorem re_lt_one_of_ne_one (w : ℂ) (hw : ‖w‖ = 1) (hne : w ≠ 1) :
     w.re < 1 := by
   have hle : w.re ≤ 1 := by
@@ -128,9 +113,7 @@ theorem re_lt_one_of_ne_one (w : ℂ) (hw : ‖w‖ = 1) (hne : w ≠ 1) :
     exact ⟨hre1, by simp [him]⟩
   exact lt_of_le_of_ne hle hne'
 
-/-- **Strict triangle inequality for unit complex numbers.** Let $\mu_1, \dots, \mu_n$ be complex
-numbers with $|\mu_i| = 1$ for every $i$, not all equal. Then
-$\left|\sum_{i=1}^{n} \mu_i\right| < n$. -/
+/-- Strict triangle inequality for a sum of unit-modulus numbers, not all equal. -/
 theorem abs_sum_roots_of_unity_lt {n : ℕ} (μ : Fin n → ℂ)
     (hmod : ∀ i, ‖μ i‖ = 1) (hne : ∃ i j, μ i ≠ μ j) :
     ‖∑ i, μ i‖ < n := by
@@ -174,11 +157,7 @@ theorem abs_sum_roots_of_unity_lt {n : ℕ} (μ : Fin n → ℂ)
   exact hlt
 
 omit [Fintype G] in
-/-- **Character values are algebraic integers.** Let $\rho$ be a representation of a finite group
-$G$ on a finite-dimensional complex vector space, with character $\chi$. Then $\chi(g)$ is an
-algebraic integer for every $g \in G$.
-
-Each value $\chi(g)$ is a sum of roots of unity. -/
+/-- Character values are algebraic integers (sums of roots of unity). -/
 theorem character_isIntegral {V : Type*} [AddCommGroup V] [Module ℂ V]
     [FiniteDimensional ℂ V] [Finite G] (ρ : Representation ℂ G V) (g : G) :
     IsIntegral ℤ (ρ.character g) := by
@@ -188,12 +167,8 @@ theorem character_isIntegral {V : Type*} [AddCommGroup V] [Module ℂ V]
   rw [charpoly_root_pow_orderOf ρ g μ hμ]
   exact isIntegral_one
 
-/-- **Integrality of the normalized character value at a coprime class.** Let $G$ be a finite
-group, let $\rho$ be an irreducible representation of $G$ on a nonzero finite-dimensional complex
-vector space $V$, with character $\chi$, and let $g \in G$. If the size of the conjugacy class of
-$g$ is coprime to $\dim V$, then $\chi(g)/\chi(1)$ is an algebraic integer.
-
-Source: Bielefeld Theorem 5, integrality step. -/
+/-- Bielefeld Thm 5, integrality step: if `|C|` and `χ(1)` are coprime,
+then `χ(g)/χ(1)` is an algebraic integer. -/
 theorem charDivDeg_isIntegral_of_coprime {V : Type*} [AddCommGroup V] [Module ℂ V]
     [FiniteDimensional ℂ V] [Nontrivial V] (ρ : Representation ℂ G V)
     [Representation.IsIrreducible ρ] (g : G)
@@ -225,8 +200,7 @@ theorem charDivDeg_isIntegral_of_coprime {V : Type*} [AddCommGroup V] [Module �
   rw [key]
   exact ((isIntegral_intCast b).mul hω).add ((isIntegral_intCast a).mul hχ)
 
-/-- **Sum of two distinct unit complex numbers.** If $a$ and $b$ are distinct complex numbers
-with $|a| = |b| = 1$, then $|a + b| < 2$. -/
+/-- The sum of two distinct unit-modulus numbers has modulus `< 2`. -/
 theorem abs_add_two_ne_unit_lt_two {a b : ℂ} (ha : ‖a‖ = 1) (hb : ‖b‖ = 1)
     (hne : a ≠ b) : ‖a + b‖ < 2 := by
   have e : ‖a + b‖ ^ 2 = 2 + 2 * (a * starRingEnd ℂ b).re := by
@@ -252,10 +226,8 @@ theorem abs_add_two_ne_unit_lt_two {a b : ℂ} (ha : ‖a‖ = 1) (hb : ‖b‖ 
   have hlt := abs_lt_of_sq_lt_sq hsq (by norm_num)
   rwa [abs_of_nonneg hnn] at hlt
 
-/-- **Strict triangle inequality for unit complex numbers, multiset form.** Let $s$ be a finite
-multiset of complex numbers, each of absolute value $1$, containing two distinct elements. Then
-the absolute value of the sum of $s$ is strictly less than the number of elements of $s$,
-counted with multiplicity. -/
+/-- Strict triangle inequality for a multiset sum of unit-modulus numbers,
+not all equal. -/
 theorem abs_multiset_sum_lt (s : Multiset ℂ) (hunit : ∀ μ ∈ s, ‖μ‖ = 1)
     (hne : ∃ a ∈ s, ∃ b ∈ s, a ≠ b) : ‖s.sum‖ < s.card := by
   obtain ⟨a, ha, b, hb, hab⟩ := hne
@@ -289,10 +261,7 @@ theorem abs_multiset_sum_lt (s : Multiset ℂ) (hunit : ∀ μ ∈ s, ‖μ‖ =
     _ = (((t.card + 1 + 1 : ℕ)) : ℝ) := by push_cast; ring
 
 omit [Fintype G] in
-/-- **Number of characteristic roots of a representation matrix.** Let $G$ be a group, $V$ a
-finite-dimensional complex vector space, $\rho$ a representation of $G$ on $V$ and $g \in G$.
-The characteristic polynomial of $\rho(g)$ has exactly $\dim_{\mathbb{C}} V$ roots in
-$\mathbb{C}$, counted with multiplicity. -/
+/-- Characteristic roots are counted with multiplicity by the degree. -/
 theorem charpoly_roots_card {V : Type*} [AddCommGroup V] [Module ℂ V]
     [FiniteDimensional ℂ V] (ρ : Representation ℂ G V) (g : G) :
     (ρ g).charpoly.roots.card = Module.finrank ℂ V := by
@@ -301,10 +270,7 @@ theorem charpoly_roots_card {V : Type*} [AddCommGroup V] [Module ℂ V]
   rwa [LinearMap.charpoly_natDegree] at hcard
 
 omit [Fintype G] in
-/-- **Characteristic roots are not all equal below the degree.** Let $G$ be a finite group, let
-$\rho$ be a representation of $G$ on a nonzero finite-dimensional complex vector space $V$, with
-character $\chi$, and let $g \in G$. If $|\chi(g)| < \dim V$, then the characteristic polynomial
-of $\rho(g)$ has two distinct roots. -/
+/-- If `‖χ g‖ < degree`, the characteristic roots are not all equal. -/
 theorem char_roots_not_all_equal {V : Type*} [AddCommGroup V] [Module ℂ V]
     [FiniteDimensional ℂ V] [Nontrivial V] [Finite G] (ρ : Representation ℂ G V) (g : G)
     (hlt : ‖ρ.character g‖ < Module.finrank ℂ V) :
@@ -331,10 +297,7 @@ theorem char_roots_not_all_equal {V : Type*} [AddCommGroup V] [Module ℂ V]
   exact lt_irrefl _ hlt
 
 omit [Fintype G] in
-/-- **Character values lie in a cyclotomic field.** Let $\rho$ be a representation of a group $G$
-on a finite-dimensional complex vector space, with character $\chi$, and let $g \in G$ have
-finite order $m$. Then $\chi(g)$ lies in the subfield of $\mathbb{C}$ generated over $\mathbb{Q}$
-by the $m$-th roots of unity. -/
+/-- Character values lie in the cyclotomic field for `orderOf g`. -/
 theorem char_mem_cycSubfield {V : Type*} [AddCommGroup V] [Module ℂ V]
     [FiniteDimensional ℂ V] (ρ : Representation ℂ G V) (g : G)
     (hm : orderOf g ≠ 0) : ρ.character g ∈ cycSubfield (orderOf g) := by
@@ -343,11 +306,7 @@ theorem char_mem_cycSubfield {V : Type*} [AddCommGroup V] [Module ℂ V]
     mem_cycSubfield_of_pow_eq_one _ hm μ
       (charpoly_root_pow_orderOf ρ g μ hμ))
 
-/-- **Characteristic roots as elements of the cyclotomic field.** Let $m$ be a positive integer,
-let $\rho$ be a representation of a finite group $G$ on a finite-dimensional complex vector
-space $V$, and let $g \in G$ be such that every root $\mu$ of the characteristic polynomial of
-$\rho(g)$ satisfies $\mu^m = 1$. Each such root $\mu$ is regarded as an element of the subfield
-$K \subseteq \mathbb{C}$ obtained by adjoining the $m$-th roots of unity to $\mathbb{Q}$. -/
+/-- A characteristic root as an element of the cyclotomic field. -/
 noncomputable def conjRootElem (m : ℕ) (hm : m ≠ 0)
     {V : Type*} [AddCommGroup V] [Module ℂ V] [FiniteDimensional ℂ V]
     (ρ : Representation ℂ G V) (g : G)
@@ -356,15 +315,7 @@ noncomputable def conjRootElem (m : ℕ) (hm : m ≠ 0)
   ⟨x.1, mem_cycSubfield_of_pow_eq_one m hm x.1 (hmg x.1 x.2)⟩
 
 omit [Fintype G] in
-/-- **Field embeddings applied to character values.** Let $G$ be a group, $\rho$ a
-representation of $G$ on a finite-dimensional complex vector space $V$ with character $\chi$,
-let $m$ be a positive integer, and let $g \in G$ be such that every root $\mu$ of the
-characteristic polynomial of $\rho(g)$ satisfies $\mu^m = 1$. Let $K \subseteq \mathbb{C}$ be the
-field obtained by adjoining the $m$-th roots of unity to $\mathbb{Q}$, and suppose
-$\chi(g) \in K$. Then for every $\mathbb{Q}$-algebra homomorphism $\sigma : K \to \mathbb{C}$ we
-have $\sigma(\chi(g)) = \sum_\mu \sigma(\mu)$, where the sum runs over the roots $\mu$ of the
-characteristic polynomial of $\rho(g)$, counted with multiplicity, each regarded as an element
-of $K$. -/
+/-- An embedding sends the character value to the sum of conjugate roots. -/
 theorem embedding_char_eq_conj_sum (m : ℕ) (hm : m ≠ 0)
     {V : Type*} [AddCommGroup V] [Module ℂ V] [FiniteDimensional ℂ V]
     (ρ : Representation ℂ G V) (g : G)
@@ -400,12 +351,8 @@ theorem embedding_char_eq_conj_sum (m : ℕ) (hm : m ≠ 0)
   rw [key, map_multiset_sum, Multiset.map_map]
   rfl
 
-/-- **Character vanishing from coprimality and a strict norm bound.** Let $G$ be a finite group,
-let $\rho$ be an irreducible representation of $G$ on a nonzero finite-dimensional complex vector
-space $V$, with character $\chi$, and let $g \in G$. If the size of the conjugacy class of $g$ is
-coprime to $\dim V$ and $|\chi(g)| < \dim V$, then $\chi(g) = 0$.
-
-Source: Bielefeld Theorem 5, norm step. -/
+/-- Bielefeld Thm 5, norm step: coprime class size and `‖χ g‖ < degree`
+force `χ g = 0`. -/
 theorem char_eq_zero_of_coprime_of_norm_lt {V : Type*} [AddCommGroup V]
     [Module ℂ V] [FiniteDimensional ℂ V] [Nontrivial V]
     (ρ : Representation ℂ G V) [Representation.IsIrreducible ρ] (g : G)
@@ -527,15 +474,8 @@ theorem char_eq_zero_of_coprime_of_norm_lt {V : Type*} [AddCommGroup V]
   · exact h
   · exact absurd h hχ1ne
 
-/-- **Burnside's vanishing theorem for coprime class sizes.** Let $G$ be a finite group, let
-$\rho$ be an irreducible representation of $G$ on a nonzero finite-dimensional complex vector
-space $V$, with character $\chi$, and let $g \in G$. If the size of the conjugacy class of $g$
-is coprime to $\dim V$, then $|\chi(g)| = \dim V$ or $\chi(g) = 0$.
-
-Since $\chi(1) = \dim V$, the first alternative says that $g$ lies in the center $Z(\chi)$ of
-$\chi$, the set of $h \in G$ with $|\chi(h)| = \chi(1)$.
-
-Source: Bielefeld Theorem 5. -/
+/-- Bielefeld Theorem 5: if `|C|` and `χ(1)` are coprime, then either
+`g ∈ Z(χ)` or `χ` vanishes at `g`. -/
 theorem burnside_coprime_vanish {V : Type*} [AddCommGroup V]
     [Module ℂ V] [FiniteDimensional ℂ V] [Nontrivial V]
     (ρ : Representation ℂ G V) [Representation.IsIrreducible ρ] (g : G)

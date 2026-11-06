@@ -30,15 +30,10 @@ For every `α`, the fractional parts `{α * pₙ}` are not well-distributed.
 namespace MathlibExt.NumberTheory.ErdosProblem997Wanted
 
 open Classical in
-/-- **Well-distributed sequences.** A sequence $(x_m)_{m \in \mathbb{N}}$ of real numbers is
-well-distributed if for every $\varepsilon > 0$ there is a $K$ such that for all $k \ge K$, all
-$n \in \mathbb{N}$ and all real numbers $a, b$ with $0 \le a \le b \le 1$, the number $N$ of
-indices $m$ with $n < m \le n + k$ and $x_m \in [a, b)$ satisfies $|N - (b - a)k| < \varepsilon k$.
-
-No condition $x_m \in [0, 1)$ is imposed, so finite changes to a sequence do not affect this
-property.
-
-Source: EP-997 (Erdős Problem #997) [Erdős Problems]. -/
+/-- Well-distributed sequences (EP-997 (Erdős Problem #997) [Erdős Problems]):
+block frequencies converge uniformly to the lengths of half-open subintervals
+of `[0, 1)`. No pointwise range condition is imposed, so finite changes to a
+sequence do not affect this property. -/
 def WellDistributed (x : ℕ → ℝ) : Prop :=
   ∀ ε : ℝ, 0 < ε → ∀ᶠ k : ℕ in Filter.atTop, ∀ n : ℕ,
     ∀ a b : ℝ, 0 ≤ a → a ≤ b → b ≤ 1 →
@@ -46,34 +41,24 @@ def WellDistributed (x : ℕ → ℝ) : Prop :=
       let count := (Finset.Ioc n (n + k)).filter (fun m ↦ x m ∈ I)
       abs ((count.card : ℝ) - (b - a) * k) < ε * k
 
-/-- **Fractional parts of multiples of the primes.** For a real number $\alpha$, this is the
-sequence taking $n \in \mathbb{N}$ to the fractional part $\{\alpha p_n\} = \alpha p_n -
-\lfloor \alpha p_n \rfloor$, where $p_0 = 2, p_1 = 3, p_2 = 5, \dots$ are the primes in
-increasing order.
-
-Source: EP-997 (Erdős Problem #997) [Erdős Problems]. -/
+/-- Prime-indexed fractional parts (EP-997 (Erdős Problem #997) [Erdős Problems]):
+`primeFract α n` is the fractional part `{α * pₙ}`, where `(pₙ)` is the sequence
+of primes. -/
 noncomputable def primeFract (α : ℝ) (n : ℕ) : ℝ :=
   Int.fract (α * (Nat.nth Nat.Prime n : ℝ))
 
-/-- **Statement of Erdős Problem 997.** For every real number $\alpha$, the sequence
-$n \mapsto \{\alpha p_n\}$ of fractional parts of $\alpha$ times the primes
-$p_0 = 2, p_1 = 3, p_2 = 5, \dots$ is not well-distributed.
-
-Source: EP-997 (Erdős Problem #997) [Erdős Problems]. -/
+/-- Erdős Problem #997 (EP-997 (Erdős Problem #997) [Erdős Problems]): is it true
+that for every `α`, the sequence of fractional parts `{α * pₙ}` is not
+well-distributed? -/
 noncomputable def Statement : Prop :=
   ∀ α : ℝ, ¬ WellDistributed (primeFract α)
 
 /--
-**Erdős Problem 997 holds.** For every real number $\alpha$, the sequence
-$n \mapsto \{\alpha p_n\}$ of fractional parts of $\alpha$ times the primes
-$p_0 = 2, p_1 = 3, p_2 = 5, \dots$ is not well-distributed.
-
-Source: Boris Alexeev, Mark Putterman,
+Resolved true: Alexeev, Putterman, Sawhney, Sellke, and Valiant proved that the prime-indexed
+fractional-part sequence is never well-distributed. Source: Boris Alexeev, Mark Putterman,
 Mehtaab Sawhney, Mark Sellke, and Gregory Valiant, Short proofs in combinatorics and number
 theory, arXiv:2603.29961 (2026), https://arxiv.org/abs/2603.29961. Moved from
-`OpenConjectures/NumberTheory/ErdosProblem997`. Resolved true: Alexeev, Putterman, Sawhney,
-Sellke, and Valiant proved that the prime-indexed fractional-part sequence is never
-well-distributed.
+`OpenConjectures/NumberTheory/ErdosProblem997`.
 -/
 public theorem_wanted Statement_holds : Statement
 

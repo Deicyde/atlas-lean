@@ -57,7 +57,7 @@ set_option autoImplicit false
 
 namespace Cslib.Bioinformatics.RNA.Nussinov
 
-/-- **RNA secondary structure.** A secondary structure on `s` (Nussinov et al. 1978): a finite set of base pairs `(i, j)`,
+/-- A secondary structure on `s` (Nussinov et al. 1978): a finite set of base pairs `(i, j)`,
 each closing a hairpin with at least `m` unpaired positions strictly inside (`i + m < j`), joining
 complementary bases (`pair s[i] s[j]`, which also puts both positions inside `s`), with every
 position in at most one pair and no two pairs crossing (`i < k < j < l`). -/
@@ -73,7 +73,7 @@ structure IsStructure {B : Type*} (pair : B → B → Prop) (m : ℕ) (s : List 
   /-- No two pairs cross. -/
   noncrossing : ∀ p ∈ P, ∀ q ∈ P, ¬ (p.1 < q.1 ∧ q.1 < p.2 ∧ p.2 < q.2)
 
-/-- **Maximum of a list of natural numbers.** The largest of a list of naturals (`0` for the empty list). -/
+/-- The largest of a list of naturals (`0` for the empty list). -/
 def listMax (l : List ℕ) : ℕ := l.foldr max 0
 
 /-- **The Nussinov recursion**: the first base `a` of `a :: rest` is either unpaired, or paired

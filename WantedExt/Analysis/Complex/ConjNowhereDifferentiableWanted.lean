@@ -42,9 +42,7 @@ open scoped ComplexConjugate
 
 namespace MathlibExt.Analysis.Complex.ConjNowhereDifferentiableWanted
 
-/-- **Complex conjugation is nowhere complex-differentiable.** Let $f : \mathbb{C} \to \mathbb{C}$
-be the function $f(z) = \bar z$. Then $f$ is not complex-differentiable at any point
-$z \in \mathbb{C}$.
+/-- Show that $f:\mathbb{C}\to\mathbb{C}$, $z\mapsto \bar z$, is nowhere differentiable.
 
 Source: MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex
 variable; General properties of functions of one complex variable),

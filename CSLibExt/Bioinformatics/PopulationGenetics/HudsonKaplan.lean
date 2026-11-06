@@ -66,7 +66,7 @@ namespace Cslib.Bioinformatics.PopulationGenetics.HudsonKaplan
 
 variable {n s : ℕ} (M : Fin n → Fin s → Bool)
 
-/-- **Four-gamete condition for two sites.** Sites `i` and `j` show all four gametes: for every pair of alleles `(a, b)` some haplotype
+/-- Sites `i` and `j` show all four gametes: for every pair of alleles `(a, b)` some haplotype
 carries `a` at `i` and `b` at `j`. This reuses
 `Cslib.Bioinformatics.Phylogenetics.Splits.FourGametes` applied to the site columns
 `(M · i)` and `(M · j)`; it is not a second definition of the four-gamete predicate. -/
@@ -77,28 +77,28 @@ instance (i j : Fin s) : Decidable (FourGametes M i j) := by
   unfold FourGametes Cslib.Bioinformatics.Phylogenetics.Splits.FourGametes
   infer_instance
 
-/-- **Haplotypes carrying an allele at a site.** The haplotypes carrying allele `a` at site `i`; when `a` is the derived allele this is the
+/-- The haplotypes carrying allele `a` at site `i`; when `a` is the derived allele this is the
 clade defined by the mutation at `i`. -/
 def carriers (i : Fin s) (a : Bool) : Finset (Fin n) :=
   Finset.univ.filter fun r => M r i = a
 
-/-- **Breakpoint separating two sites.** A breakpoint `g` (a cut immediately to the left of site `g`) separates sites `i` and `j`
+/-- A breakpoint `g` (a cut immediately to the left of site `g`) separates sites `i` and `j`
 when `i < g ≤ j`. -/
 def Separates (g i j : Fin s) : Prop := i < g ∧ g ≤ j
 
-/-- **Valid set of recombination breakpoints.** A set `B` of breakpoints is valid for the sample `M` when it separates every pair of sites
+/-- A set `B` of breakpoints is valid for the sample `M` when it separates every pair of sites
 `i < j` showing all four gametes. -/
 def IsBreakpointSet (B : Finset (Fin s)) : Prop :=
   ∀ i j : Fin s, i < j → FourGametes M i j → ∃ g ∈ B, Separates g i j
 
-/-- **Disjoint family of four-gamete intervals.** A family `F` of site pairs `(i, j)` consists of four-gamete intervals (`i < j`, all four
+/-- A family `F` of site pairs `(i, j)` consists of four-gamete intervals (`i < j`, all four
 gametes at `i` and `j`) that are pairwise disjoint: of two distinct intervals, one ends at or
 before the start of the other, so no breakpoint separates both. -/
 def IsDisjointFamily (F : Finset (Fin s × Fin s)) : Prop :=
   (∀ x ∈ F, x.1 < x.2 ∧ FourGametes M x.1 x.2) ∧
     ∀ x ∈ F, ∀ y ∈ F, x ≠ y → x.2 ≤ y.1 ∨ y.2 ≤ x.1
 
-/-- **One step of the Hudson–Kaplan sweep.** One step of the sweep at right endpoint `j`. The list `acc` holds the intervals kept so far,
+/-- One step of the sweep at right endpoint `j`. The list `acc` holds the intervals kept so far,
 most recent first; the next interval must start at or after the right end of the most recent
 one (at or after site `0` if none was kept). Among the admissible four-gamete intervals ending
 at `j`, the shortest one is kept. -/
@@ -107,7 +107,7 @@ def sweepStep (acc : List (Fin s × Fin s)) (j : Fin s) : List (Fin s × Fin s) 
   let cands := Finset.univ.filter fun i : Fin s => last ≤ (i : ℕ) ∧ i < j ∧ FourGametes M i j
   if h : cands.Nonempty then (cands.max' h, j) :: acc else acc
 
-/-- **Hudson–Kaplan left-to-right sweep.** The intervals kept by Hudson and Kaplan's left-to-right sweep, most recent first. -/
+/-- The intervals kept by Hudson and Kaplan's left-to-right sweep, most recent first. -/
 def sweep : List (Fin s × Fin s) :=
   (List.finRange s).foldl (sweepStep M) []
 
@@ -221,11 +221,11 @@ private theorem sweep_snd_nodup {n s : ℕ} (M : Fin n → Fin s → Bool) :
     List.pairwise_map.mpr hstrict
   exact hm.nodup
 
-/-- **Intervals kept by the Hudson–Kaplan sweep are distinct.** The intervals kept by the sweep are distinct. -/
+/-- The intervals kept by the sweep are distinct. -/
 theorem nodup_sweep : (sweep M).Nodup := by
   exact List.Nodup.of_map Prod.snd (sweep_snd_nodup M)
 
-/-- **Hudson–Kaplan sweep yields disjoint four-gamete intervals.** The intervals kept by the sweep are pairwise disjoint four-gamete intervals. -/
+/-- The intervals kept by the sweep are pairwise disjoint four-gamete intervals. -/
 theorem isDisjointFamily_sweep : IsDisjointFamily M (sweep M).toFinset := by
   have h := (sweep_invariant M).1
   refine ⟨?_, ?_⟩
@@ -239,14 +239,14 @@ theorem isDisjointFamily_sweep : IsDisjointFamily M (sweep M).toFinset := by
     intro x hx y hy hne
     exact hp.forall (List.mem_toFinset.mp hx) (List.mem_toFinset.mp hy) hne
 
-/-- **Sweep cuts form a valid breakpoint set.** Cutting immediately to the left of the right endpoint of every kept interval gives a valid
+/-- Cutting immediately to the left of the right endpoint of every kept interval gives a valid
 breakpoint set. -/
 theorem isBreakpointSet_sweep : IsBreakpointSet M ((sweep M).map Prod.snd).toFinset := by
   intro i j hij hfour
   obtain ⟨x, hx, hsep⟩ := (sweep_invariant M).2 i j hij hfour
   exact ⟨x.2, List.mem_toFinset.mpr (List.mem_map.mpr ⟨x, hx, rfl⟩), hsep⟩
 
-/-- **The sweep yields exactly $R_m$ distinct breakpoints.** The right endpoints of the kept intervals are distinct, so there are `R_m` of them. -/
+/-- The right endpoints of the kept intervals are distinct, so there are `R_m` of them. -/
 theorem card_sweep_snd : ((sweep M).map Prod.snd).toFinset.card = rm M := by
   rw [List.toFinset_card_of_nodup (sweep_snd_nodup M), List.length_map]
   rfl
@@ -281,7 +281,7 @@ theorem rm_le_card_of_isBreakpointSet {B : Finset (Fin s)} (hB : IsBreakpointSet
   have h := card_le_card_of_isBreakpointSet M (isDisjointFamily_sweep M) hB
   rwa [List.toFinset_card_of_nodup (nodup_sweep M)] at h
 
-/-- **$R_m$ is the minimum size of a valid breakpoint set.** The bound is attained: some valid breakpoint set has exactly `R_m` points, so `R_m` is the
+/-- The bound is attained: some valid breakpoint set has exactly `R_m` points, so `R_m` is the
 minimum size of a valid breakpoint set. -/
 theorem exists_isBreakpointSet_card_eq_rm :
     ∃ B : Finset (Fin s), IsBreakpointSet M B ∧ B.card = rm M :=
@@ -292,13 +292,13 @@ theorem exists_isBreakpointSet_card_eq_rm :
 theorem card_le_rm {F : Finset (Fin s × Fin s)} (hF : IsDisjointFamily M F) : F.card ≤ rm M :=
   (card_le_card_of_isBreakpointSet M hF (isBreakpointSet_sweep M)).trans (card_sweep_snd M).le
 
-/-- **$R_m$ is the maximum number of disjoint four-gamete intervals.** The sweep attains the maximum: `R_m` is the largest size of a family of pairwise disjoint
+/-- The sweep attains the maximum: `R_m` is the largest size of a family of pairwise disjoint
 four-gamete intervals. -/
 theorem exists_isDisjointFamily_card_eq_rm :
     ∃ F : Finset (Fin s × Fin s), IsDisjointFamily M F ∧ F.card = rm M :=
   ⟨_, isDisjointFamily_sweep M, List.toFinset_card_of_nodup (nodup_sweep M)⟩
 
-/-- **Characterization of site pairs failing the four-gamete test.** Two sites miss one of the four gametes exactly when, for some choice of the alleles `a` at
+/-- Two sites miss one of the four gametes exactly when, for some choice of the alleles `a` at
 `i` and `b` at `j` (the derived alleles), the carrier sets are nested or disjoint, as two clades
 of one rooted tree are. -/
 theorem not_fourGametes_iff (i j : Fin s) :

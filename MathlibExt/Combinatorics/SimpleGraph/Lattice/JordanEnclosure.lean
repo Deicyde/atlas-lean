@@ -167,7 +167,7 @@ theorem reachable_deleteEdges_of_even (heven : ∀ x, Even (G.degree x))
   exact (Nat.even_add_one.mp hGeven) hHeven
 
 omit [DecidableEq V] in
-/-- **Every edge of a finite even-degree graph lies on a cycle.** In a finite graph in which every vertex has even degree, every edge lies on a cycle. See also
+/-- In a finite graph in which every vertex has even degree, every edge lies on a cycle. See also
 Mathlib's `SimpleGraph.adj_and_reachable_delete_edges_iff_exists_cycle`, which this combines
 with `StatMech.Lattice.reachable_deleteEdges_of_even`. -/
 theorem exists_cycle_through_edge_of_even (heven : ∀ x, Even (G.degree x))
@@ -218,7 +218,7 @@ theorem exists_cycle_through_edge_of_even_of_finite_support
 
 end EvenDegree
 
-/-- **Primal edge shared by adjacent faces.** The primal edge of `ℤ²` separating the adjacent unit faces with lower left corners `f` and
+/-- The primal edge of `ℤ²` separating the adjacent unit faces with lower left corners `f` and
 `g`. -/
 noncomputable def sharedPrimalEdge (f g : Site 2) : Sym2 (Site 2) := by
   classical
@@ -255,7 +255,7 @@ theorem sharedPrimalEdge_bottom (a b : ℤ) :
   simp only [Matrix.cons_val_zero, Matrix.cons_val_one]
   rw [show max b (b - 1) = b by omega]
 
-/-- **Boundary edge of a set.** The edge `e` has exactly one endpoint in `S`. -/
+/-- The edge `e` has exactly one endpoint in `S`. -/
 def bdEdge (S : Set (Site 2)) (e : Sym2 (Site 2)) : Prop := by
   classical
   exact Sym2.lift ⟨fun x y => (x ∈ S ↔ y ∉ S), by
@@ -291,7 +291,7 @@ theorem sharedPrimalEdge_comm_of_adj {f g : Site 2}
       omega
     rw [h1, max_comm]
 
-/-- **Face-boundary graph of a set.** The face-boundary graph of `S`: two adjacent faces are joined when the primal edge between
+/-- The face-boundary graph of `S`: two adjacent faces are joined when the primal edge between
 them has exactly one endpoint in `S`. Its edges are the dual edges crossing the boundary of
 `S`. -/
 def faceBoundaryGraph (S : Set (Site 2)) : SimpleGraph (Site 2) where
@@ -431,7 +431,7 @@ theorem degree_faceBoundaryGraph_even (S : Set (Site 2)) (f : Site 2) :
   rw [Nat.even_iff]
   exact faceBoundaryDegree_even S (f 0) (f 1)
 
-/-- **Four unit faces at a lattice site.** The four unit faces having the site `c` as a corner. -/
+/-- The four unit faces having the site `c` as a corner. -/
 def cornerFaces (c : Site 2) : Finset (Site 2) :=
   {![c 0 - 1, c 1 - 1], ![c 0 - 1, c 1], ![c 0, c 1 - 1], ![c 0, c 1]}
 

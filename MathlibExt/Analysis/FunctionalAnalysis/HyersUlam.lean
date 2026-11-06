@@ -57,11 +57,11 @@ namespace MathlibExt.Analysis.FunctionalAnalysis.HyersUlam
 variable {E F : Type*} [NormedAddCommGroup E] [NormedAddCommGroup F]
   [NormedSpace ℝ E] [NormedSpace ℝ F] [CompleteSpace F]
 
-/-- **Dyadic approximants in Hyers' proof.** The dyadic approximants `2 ^ (-n) • f (2 ^ n • x)` used in Hyers' proof. -/
+/-- The dyadic approximants `2 ^ (-n) • f (2 ^ n • x)` used in Hyers' proof. -/
 noncomputable def approx (f : E → F) (x : E) (n : ℕ) : F :=
   ((2 : ℝ) ^ n)⁻¹ • f ((2 : ℝ) ^ n • x)
 
-/-- **Norm of a natural-number multiple.** Norm of a natural-number multiple in a real normed space. -/
+/-- Norm of a natural-number multiple in a real normed space. -/
 theorem norm_nsmul_eq {G : Type*} [NormedAddCommGroup G] [NormedSpace ℝ G]
     (n : ℕ) (x : G) : ‖n • x‖ = (n : ℝ) * ‖x‖ := by
   rw [← Nat.cast_smul_eq_nsmul ℝ n x, norm_smul, Real.norm_natCast]

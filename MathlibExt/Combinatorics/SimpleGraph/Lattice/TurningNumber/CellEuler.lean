@@ -46,13 +46,13 @@ namespace StatMech.Onsager.CellEuler
 
 open Finset StatMech.Onsager.CellCount
 
-/-- **Corner defect of a set of unit cells.** The corner defect of `S`: the number of vertices with exactly one incident cell of `S` (convex
+/-- The corner defect of `S`: the number of vertices with exactly one incident cell of `S` (convex
   corners) minus the number with exactly three (reflex corners). -/
 def cornerDiff (S : Finset (ℤ × ℤ)) : ℤ :=
   ((cellVerts S).filter (fun v => cornerCount S v = 1)).card
     - ((cellVerts S).filter (fun v => cornerCount S v = 3)).card
 
-/-- **Corner count after adding a cell.** Adding a new cell `c` raises the corner count by one exactly at the corners of `c`. -/
+/-- Adding a new cell `c` raises the corner count by one exactly at the corners of `c`. -/
 theorem cornerCount_insert (S : Finset (ℤ × ℤ)) (c : ℤ × ℤ) (hc : c ∉ S) (v : ℤ × ℤ) :
     cornerCount (insert c S) v = cornerCount S v + (if v ∈ cornersOf c then 1 else 0) := by
   unfold cornerCount
@@ -63,17 +63,17 @@ theorem cornerCount_insert (S : Finset (ℤ × ℤ)) (c : ℤ × ℤ) (hc : c �
         simp only [Finset.mem_filter]; exact fun h' => hc h'.1)]
   · rw [ite_eq_right h, ite_eq_right h, add_zero]
 
-/-- **Vertices of a cell complex after adding a cell.** The vertices of `insert c S`. -/
+/-- The vertices of `insert c S`. -/
 theorem cellVerts_insert (S : Finset (ℤ × ℤ)) (c : ℤ × ℤ) :
     cellVerts (insert c S) = cornersOf c ∪ cellVerts S := by
   unfold cellVerts
   rw [Finset.biUnion_insert]
 
-/-- **Corner weight of a vertex.** The weight of a vertex with `k` incident cells in the corner defect: `1` if `k = 1`, `-1` if `k
+/-- The weight of a vertex with `k` incident cells in the corner defect: `1` if `k = 1`, `-1` if `k
   = 3`, and `0` otherwise. -/
 def cornerWeight (k : ℕ) : ℤ := (if k = 1 then 1 else 0) - (if k = 3 then 1 else 0)
 
-/-- **A lattice point has an incident cell iff it is a vertex.** A lattice point has an incident cell iff it is a vertex of `S`. -/
+/-- A lattice point has an incident cell iff it is a vertex of `S`. -/
 theorem cornerCount_pos_iff_mem (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) :
     0 < cornerCount S v ↔ v ∈ cellVerts S := by
   unfold cornerCount cellVerts
@@ -88,13 +88,13 @@ theorem cornerCount_pos_iff_mem (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) :
 
 theorem cornerWeight_zero : cornerWeight 0 = 0 := by unfold cornerWeight; decide
 
-/-- **Corner defect as a sum of vertex weights.** The corner defect as a sum of vertex weights. -/
+/-- The corner defect as a sum of vertex weights. -/
 theorem cornerDiff_eq_sum (S : Finset (ℤ × ℤ)) :
     cornerDiff S = ∑ v ∈ cellVerts S, cornerWeight (cornerCount S v) := by
   unfold cornerDiff cornerWeight
   rw [Finset.sum_sub_distrib, Finset.sum_boole, Finset.sum_boole]
 
-/-- **Change of the corner defect when a cell is added.** Change of the corner defect when a new cell is added. -/
+/-- Change of the corner defect when a new cell is added. -/
 theorem cornerDiff_insert (S : Finset (ℤ × ℤ)) (c : ℤ × ℤ) (hc : c ∉ S) :
     cornerDiff (insert c S)
       = cornerDiff S + ∑ v ∈ cornersOf c,
@@ -136,7 +136,7 @@ theorem cornerCount_singleton_eq_zero (c v : ℤ × ℤ) (hv : v ∉ cornersOf c
 theorem cellVerts_singleton (c : ℤ × ℤ) : cellVerts ({c} : Finset (ℤ × ℤ)) = cornersOf c := by
   unfold cellVerts; rw [Finset.singleton_biUnion]
 
-/-- **A single cell has corner defect 4.** A single cell has corner defect `4`. -/
+/-- A single cell has corner defect `4`. -/
 theorem cornerDiff_singleton (c : ℤ × ℤ) : cornerDiff ({c} : Finset (ℤ × ℤ)) = 4 := by
   unfold cornerDiff
   rw [cellVerts_singleton]
@@ -154,7 +154,7 @@ theorem cornerDiff_singleton (c : ℤ × ℤ) : cornerDiff ({c} : Finset (ℤ ×
   rw [hconv, hrefl, cornersOf_card, Finset.card_empty]
   decide
 
-/-- **Corner count as a count of the four surrounding cells.** The corner count at `v` counts the cells of `S` among the four cells around `v`. -/
+/-- The corner count at `v` counts the cells of `S` among the four cells around `v`. -/
 theorem cornerCount_eq_inter (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) :
     cornerCount S v
       = (S ∩ ({v, (v.1 - 1, v.2), (v.1, v.2 - 1), (v.1 - 1, v.2 - 1)} : Finset (ℤ × ℤ))).card := by
@@ -164,15 +164,15 @@ theorem cornerCount_eq_inter (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) :
   rw [Finset.mem_filter, Finset.mem_inter, mem_cornersOf_iff]
   simp only [mem_insert, mem_singleton]
 
-/-- **Four edges of a unit cell.** The four edges of cell `c`, each encoded by twice its midpoint. -/
+/-- The four edges of cell `c`, each encoded by twice its midpoint. -/
 def edgesOf (c : ℤ × ℤ) : Finset (ℤ × ℤ) :=
   {(2 * c.1 + 1, 2 * c.2), (2 * c.1 + 1, 2 * c.2 + 2),
     (2 * c.1, 2 * c.2 + 1), (2 * c.1 + 2, 2 * c.2 + 1)}
 
-/-- **Edges of a cell complex.** The edges of the cell complex `S`, encoded by doubled midpoints. -/
+/-- The edges of the cell complex `S`, encoded by doubled midpoints. -/
 def cellEdges (S : Finset (ℤ × ℤ)) : Finset (ℤ × ℤ) := S.biUnion edgesOf
 
-/-- **Euler characteristic of a cell complex.** The Euler characteristic `V - E + F` of the closed cell complex formed by the cells of `S`. -/
+/-- The Euler characteristic `V - E + F` of the closed cell complex formed by the cells of `S`. -/
 def eulerChar (S : Finset (ℤ × ℤ)) : ℤ :=
   ((cellVerts S).card : ℤ) - (cellEdges S).card + S.card
 
@@ -190,7 +190,7 @@ theorem cellEdges_insert (S : Finset (ℤ × ℤ)) (c : ℤ × ℤ) :
 theorem cellEdges_singleton (c : ℤ × ℤ) : cellEdges ({c} : Finset (ℤ × ℤ)) = edgesOf c := by
   unfold cellEdges; rw [Finset.singleton_biUnion]
 
-/-- **A single cell has Euler characteristic 1.** A single cell has Euler characteristic `1`. -/
+/-- A single cell has Euler characteristic `1`. -/
 theorem eulerChar_singleton (c : ℤ × ℤ) : eulerChar ({c} : Finset (ℤ × ℤ)) = 1 := by
   unfold eulerChar
   rw [cellVerts_singleton, cellEdges_singleton, cornersOf_card, edgesOf_card, Finset.card_singleton]
@@ -213,7 +213,7 @@ theorem eulerChar_insert_edgeDelta (S : Finset (ℤ × ℤ)) (c : ℤ × ℤ) :
       = ((edgesOf c \ cellEdges S).card : ℤ) := by
   rw [cellEdges_insert]; exact card_union_sub (edgesOf c) (cellEdges S)
 
-/-- **Change of the Euler characteristic when a cell is added.** Change of the Euler characteristic when a new cell is added: new vertices minus new edges plus
+/-- Change of the Euler characteristic when a new cell is added: new vertices minus new edges plus
   one. -/
 theorem eulerChar_insert (S : Finset (ℤ × ℤ)) (c : ℤ × ℤ) (hc : c ∉ S) :
     eulerChar (insert c S)

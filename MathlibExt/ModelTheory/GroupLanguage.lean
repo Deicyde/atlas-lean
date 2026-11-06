@@ -27,25 +27,19 @@ namespace FirstOrder.Language
 
 universe u
 
-/-- **Group function symbols.** The function symbols of the first-order language of groups,
-graded by arity, are a constant symbol for the identity (arity $0$), a symbol for inversion
-(arity $1$) and a symbol for multiplication (arity $2$); there are no others. -/
+/-- Function symbols of the first-order language of groups: the
+identity constant, inversion, and multiplication. -/
 inductive GroupFunction : ℕ → Type
   | one : GroupFunction 0
   | inv : GroupFunction 1
   | mul : GroupFunction 2
 
-/-- **The first-order language of groups.** The first-order language of groups has the group
-function symbols (a constant for the identity, a unary symbol for inversion and a binary symbol
-for multiplication) as its function symbols and no relation symbols. -/
+/-- The first-order language of groups. -/
 def groupLanguage : FirstOrder.Language where
   Functions := GroupFunction
   Relations := fun _ => Empty
 
-/-- **The canonical structure on a group.** For a group $G$, the canonical structure on $G$ for
-the first-order language of groups interprets the identity constant as the identity $1$ of $G$,
-inversion as $x \mapsto x^{-1}$ and multiplication as $(x, y) \mapsto xy$; there are no
-relation symbols to interpret. -/
+/-- The canonical `groupLanguage`-structure on a group. -/
 @[reducible]
 def groupLanguageStructure (G : Type u) [Group G] : groupLanguage.Structure G where
   funMap := fun {_} f x =>
@@ -55,32 +49,23 @@ def groupLanguageStructure (G : Type u) [Group G] : groupLanguage.Structure G wh
     | .mul => x 0 * x 1
   RelMap := fun {_} r => nomatch r
 
-/-- **The function symbols of the language of groups.** For every $n \in \mathbb{N}$, the
-$n$-ary function symbols of the first-order language of groups are exactly the group function
-symbols of arity $n$. -/
+/-- The function symbols of the group language are `GroupFunction`. -/
 theorem groupLanguage_functions (n : ℕ) :
     groupLanguage.Functions n = GroupFunction n := rfl
 
-/-- **The language of groups has no relation symbols.** For every $n \in \mathbb{N}$, the
-first-order language of groups has no $n$-ary relation symbols. -/
+/-- The group language has no relation symbols. -/
 theorem groupLanguage_relations (n : ℕ) :
     groupLanguage.Relations n = Empty := rfl
 
-/-- **Multiplication in the canonical structure.** For every group $G$ and every pair
-$(x_0, x_1)$ of elements of $G$, the multiplication symbol of the language of groups,
-interpreted in the canonical structure on $G$, sends $(x_0, x_1)$ to $x_0 x_1$. -/
+/-- Multiplication in the canonical structure is group multiplication. -/
 theorem groupLanguageStructure_mul (G : Type u) [Group G] (x : Fin 2 → G) :
     (groupLanguageStructure G).funMap GroupFunction.mul x = x 0 * x 1 := rfl
 
-/-- **Inversion in the canonical structure.** For every group $G$ and every one-element tuple
-$(x_0)$ of elements of $G$, the inversion symbol of the language of groups, interpreted in the
-canonical structure on $G$, sends $(x_0)$ to $x_0^{-1}$. -/
+/-- Inversion in the canonical structure is group inversion. -/
 theorem groupLanguageStructure_inv (G : Type u) [Group G] (x : Fin 1 → G) :
     (groupLanguageStructure G).funMap GroupFunction.inv x = (x 0)⁻¹ := rfl
 
-/-- **The identity in the canonical structure.** For every group $G$, the identity constant
-symbol of the language of groups, interpreted in the canonical structure on $G$, takes the value
-$1$ at the empty tuple, where $1$ is the identity of $G$. -/
+/-- The constant in the canonical structure is the identity. -/
 theorem groupLanguageStructure_one (G : Type u) [Group G] (x : Fin 0 → G) :
     (groupLanguageStructure G).funMap GroupFunction.one x = 1 := rfl
 

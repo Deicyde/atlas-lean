@@ -47,7 +47,7 @@ open Finset SimpleGraph
 open StatMech.CellEulerChar StatMech.AngleDefect
 open StatMech.Onsager.CellCount StatMech.Onsager.CellEuler
 
-/-- **Midpoint encoding of a lattice edge.** The lattice edge `{a, b}` encoded by the sum `a + b`, twice its midpoint; injective on unit
+/-- The lattice edge `{a, b}` encoded by the sum `a + b`, twice its midpoint; injective on unit
   edges. -/
 def edgeCode : Sym2 (ℤ × ℤ) → ℤ × ℤ :=
   Sym2.lift ⟨fun a b => (a.1 + b.1, a.2 + b.2), by
@@ -57,7 +57,7 @@ def edgeCode : Sym2 (ℤ × ℤ) → ℤ × ℤ :=
 @[simp] theorem edgeCode_mk (a b : ℤ × ℤ) :
     edgeCode s(a, b) = (a.1 + b.1, a.2 + b.2) := rfl
 
-/-- **Edge codes of a unit cell are its doubled edge midpoints.** The codes of the edges of a cell are `StatMech.Onsager.CellEuler.edgesOf`. -/
+/-- The codes of the edges of a cell are `StatMech.Onsager.CellEuler.edgesOf`. -/
 theorem image_cellEdges_edgeCode (c : Cell) :
     (StatMech.CellEulerChar.cellEdges c).image edgeCode = edgesOf c := by
   obtain ⟨x, y⟩ := c
@@ -117,14 +117,14 @@ theorem edgeCode_injOn_regEdges (S : Finset Cell) :
     simp only [Prod.mk.injEq] <;>
     omega
 
-/-- **Agreement of the two edge counts of a cell complex.** The two edge counts of a cell complex agree. -/
+/-- The two edge counts of a cell complex agree. -/
 theorem card_cellEdges_eq_regEdges (S : Finset Cell) :
     (StatMech.Onsager.CellEuler.cellEdges S).card = (regEdges S).card := by
   rw [← image_regEdges_edgeCode S, card_image_iff.mpr]
   intro e he f hf h
   exact edgeCode_injOn_regEdges S he hf h
 
-/-- **Agreement of the two vertex sets of a cell complex.** The two vertex sets of a cell complex agree. -/
+/-- The two vertex sets of a cell complex agree. -/
 theorem cellVerts_eq_regVerts (S : Finset Cell) :
     StatMech.Onsager.CellCount.cellVerts S = regVerts S := by
   ext v
@@ -141,16 +141,16 @@ theorem cellVerts_eq_regVerts (S : Finset Cell) :
     simp only [cornersOf, StatMech.CellEulerChar.cellVerts, mem_insert, mem_singleton] at hv ⊢
     omega
 
-/-- **Agreement of the two Euler characteristics of a cell complex.** The Euler characteristic `eulerChar` agrees with `StatMech.CellEulerChar.regChi`. -/
+/-- The Euler characteristic `eulerChar` agrees with `StatMech.CellEulerChar.regChi`. -/
 theorem eulerChar_eq_regChi (S : Finset Cell) : eulerChar S = regChi S := by
   unfold eulerChar regChi
   rw [cellVerts_eq_regVerts, card_cellEdges_eq_regEdges]
 
-/-- **Top edge of a unit cell.** The top edge of the cell `c`. -/
+/-- The top edge of the cell `c`. -/
 def topEdge (c : Cell) : Sym2 Vtx :=
   s((c.1, c.2 + 1), (c.1 + 1, c.2 + 1))
 
-/-- **Top edges of a set of cells.** The top edges of the cells of `S`. -/
+/-- The top edges of the cells of `S`. -/
 def topEdges (S : Finset Cell) : Finset (Sym2 Vtx) := S.image topEdge
 
 theorem topEdge_injective : Function.Injective topEdge := by
@@ -158,7 +158,7 @@ theorem topEdge_injective : Function.Injective topEdge := by
   simp only [topEdge, Sym2.eq_iff, Prod.mk.injEq] at h
   rcases h with h | h <;> simp_all; omega
 
-/-- **Distinct cells have distinct top edges.** Distinct cells have distinct top edges. -/
+/-- Distinct cells have distinct top edges. -/
 theorem card_topEdges (S : Finset Cell) : (topEdges S).card = S.card := by
   exact card_image_of_injective S topEdge_injective
 
@@ -167,7 +167,7 @@ theorem topEdges_subset_regEdges (S : Finset Cell) : topEdges S ⊆ regEdges S :
   obtain ⟨c, hc, rfl⟩ := mem_image.mp he
   exact mem_biUnion.mpr ⟨c, hc, by simp [topEdge, StatMech.CellEulerChar.cellEdges]⟩
 
-/-- **Open-top skeleton of a cell complex.** The 1-skeleton of the cell complex `S` with the top edge of every cell removed, as a simple
+/-- The 1-skeleton of the cell complex `S` with the top edge of every cell removed, as a simple
   graph on its vertices. -/
 def openTopSkeleton (S : Finset Cell) : SimpleGraph {v // v ∈ regVerts S} where
   Adj a b := s(a.1, b.1) ∈ regEdges S \ topEdges S
@@ -184,7 +184,7 @@ theorem mem_openTopSkeleton_edgeSet_iff (S : Finset Cell)
   induction e with
   | h a b => rfl
 
-/-- **Edges of the open-top skeleton.** The edges of `openTopSkeleton S` are the edges of `S` other than top edges. -/
+/-- The edges of `openTopSkeleton S` are the edges of `S` other than top edges. -/
 noncomputable def openTopEdgeEquiv (S : Finset Cell) :
     {e // e ∈ (openTopSkeleton S).edgeSet} ≃ {e // e ∈ regEdges S \ topEdges S} where
   toFun e := ⟨Sym2.map Subtype.val e.1,
@@ -205,14 +205,14 @@ theorem card_openTopSkeleton_edges (S : Finset Cell) :
     Nat.card (openTopSkeleton S).edgeSet = (regEdges S \ topEdges S).card := by
   rw [Nat.card_congr (openTopEdgeEquiv S), Nat.card_eq_fintype_card, Fintype.card_coe]
 
-/-- **Edge count bound for a connected open-top skeleton.** If the open-top skeleton is connected, it has at least as many edges as vertices minus one. -/
+/-- If the open-top skeleton is connected, it has at least as many edges as vertices minus one. -/
 theorem regVerts_card_le (S : Finset Cell) (hconn : (openTopSkeleton S).Connected) :
     (regVerts S).card ≤ (regEdges S \ topEdges S).card + 1 := by
   have h := hconn.card_vert_le_card_edgeSet_add_one
   rw [Nat.card_eq_fintype_card, Fintype.card_coe, card_openTopSkeleton_edges] at h
   exact h
 
-/-- **Regular Euler characteristic bound via the open-top skeleton.** If the open-top skeleton of `S` is connected, then `regChi S ≤ 1`. -/
+/-- If the open-top skeleton of `S` is connected, then `regChi S ≤ 1`. -/
 theorem regChi_le_one (S : Finset Cell) (hconn : (openTopSkeleton S).Connected) :
     regChi S ≤ 1 := by
   have hv := regVerts_card_le S hconn
@@ -221,7 +221,7 @@ theorem regChi_le_one (S : Finset Cell) (hconn : (openTopSkeleton S).Connected) 
   unfold regChi
   omega
 
-/-- **Euler characteristic bound via the open-top skeleton.** If the open-top skeleton of `S` is connected, then `eulerChar S ≤ 1`. See also
+/-- If the open-top skeleton of `S` is connected, then `eulerChar S ≤ 1`. See also
   `StatMech.Onsager.CellEulerFaithful.eulerChar_le_one_of_skeleton_connected`, which assumes
   connectivity of the full skeleton. -/
 theorem eulerChar_le_one (S : Finset Cell) (hconn : (openTopSkeleton S).Connected) :

@@ -25,7 +25,7 @@ Copyright 2026 Anthropic, PBC. Licensed under Apache 2.0 (see LICENSE).
 
 namespace List
 
-/-- **Pairwise relations on list products in lexicographic order.** The Cartesian product of two pairwise-related lists is pairwise-related in lexicographic
+/-- The Cartesian product of two pairwise-related lists is pairwise-related in lexicographic
 order. -/
 theorem Pairwise.product_lex {α β : Type*} {r₁ : α → α → Prop} {r₂ : β → β → Prop}
     {l₁ : List α} {l₂ : List β} (h₁ : l₁.Pairwise r₁) (h₂ : l₂.Pairwise r₂) :

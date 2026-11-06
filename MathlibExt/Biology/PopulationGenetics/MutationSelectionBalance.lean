@@ -83,10 +83,10 @@ namespace MathlibExt.Biology.PopulationGenetics.MutationSelectionBalance
 
 /-! ### The linear recursion -/
 
-/-- **Linear mutation–selection recursion.** One generation of the linear model: `x ↦ (1 - s) x + U`. -/
+/-- One generation of the linear model: `x ↦ (1 - s) x + U`. -/
 def linStep (s U x : ℝ) : ℝ := (1 - s) * x + U
 
-/-- **Closed-form orbit of the linear mutation–selection recursion.** Closed-form orbit: `x_t = U / s + (1 - s)^t (x_0 - U / s)`. -/
+/-- Closed-form orbit: `x_t = U / s + (1 - s)^t (x_0 - U / s)`. -/
 theorem linStep_iterate {s : ℝ} (hs : s ≠ 0) (U x : ℝ) (t : ℕ) :
     (linStep s U)^[t] x = U / s + (1 - s) ^ t * (x - U / s) := by
   induction t with
@@ -96,7 +96,7 @@ theorem linStep_iterate {s : ℝ} (hs : s ≠ 0) (U x : ℝ) (t : ℕ) :
     field_simp
     ring
 
-/-- **Unique fixed point $U/s$ of the linear recursion.** `U / s` is the unique fixed point. -/
+/-- `U / s` is the unique fixed point. -/
 theorem linStep_eq_self_iff {s : ℝ} (hs : s ≠ 0) (U x : ℝ) :
     linStep s U x = x ↔ x = U / s := by
   unfold linStep
@@ -116,7 +116,7 @@ theorem tendsto_linStep_iterate {s : ℝ} (hs0 : 0 < s) (hs2 : s < 2) (U x : ℝ
     tendsto_pow_atTop_nhds_zero_of_abs_lt_one (by rw [abs_lt]; constructor <;> linarith)
   simpa using (h.mul_const (x - U / s)).const_add (U / s)
 
-/-- **Fraction of de novo loss-of-function alleles.** The fraction of LoF alleles in the next generation that are new mutations, from
+/-- The fraction of LoF alleles in the next generation that are new mutations, from
 frequency `x`: `U / ((1 - s) x + U)`. -/
 noncomputable def deNovoFraction (s U x : ℝ) : ℝ := U / linStep s U x
 
@@ -128,26 +128,26 @@ theorem deNovoFraction_eq {s U : ℝ} (hs : s ≠ 0) (hU : U ≠ 0) :
 
 /-! ### The linear Wright–Fisher chain with arbitrary population sizes -/
 
-/-- **Binomial transition kernel for loss-of-function counts.** The transition probability from `i` LoF copies among `N` to `j` copies among `N'`: binomial
+/-- The transition probability from `i` LoF copies among `N` to `j` copies among `N'`: binomial
 sampling of `N'` copies with success probability `(1 - s)(i / N) + U`. -/
 noncomputable def kernel (s U : ℝ) (N N' : ℕ) (i : Fin (N + 1)) (j : Fin (N' + 1)) : ℝ :=
   (bernsteinPolynomial ℝ N' j).eval (linStep s U ((i : ℕ) / N))
 
-/-- **Mean loss-of-function frequency of a distribution.** The mean LoF frequency `∑ μ_i (i / N)` of a distribution `μ` on `Fin (N + 1)`. -/
+/-- The mean LoF frequency `∑ μ_i (i / N)` of a distribution `μ` on `Fin (N + 1)`. -/
 noncomputable def meanFreq (N : ℕ) (μ : Fin (N + 1) → ℝ) : ℝ := ∑ i, μ i * ((i : ℕ) / N)
 
-/-- **One generation of the chain on distributions.** One generation of the chain acting on distributions. -/
+/-- One generation of the chain acting on distributions. -/
 noncomputable def pushStep (s U : ℝ) (N N' : ℕ) (μ : Fin (N + 1) → ℝ) : Fin (N' + 1) → ℝ :=
   fun j => ∑ i, μ i * kernel s U N N' i j
 
-/-- **Rows of the transition kernel have total mass one.** The kernel rows have total mass one (for every real sampling probability). -/
+/-- The kernel rows have total mass one (for every real sampling probability). -/
 theorem sum_kernel (s U : ℝ) (N N' : ℕ) (i : Fin (N + 1)) : ∑ j, kernel s U N N' i j = 1 := by
   have h := congrArg (Polynomial.eval (linStep s U ((i : ℕ) / N))) (bernsteinPolynomial.sum ℝ N')
   rw [Polynomial.eval_finsetSum, Polynomial.eval_one] at h
   rw [← h, ← Fin.sum_univ_eq_sum_range (fun j => (bernsteinPolynomial ℝ N' j).eval _)]
   rfl
 
-/-- **Transition kernel entries are probabilities.** The kernel entries are probabilities when the sampling probability is in `[0, 1]`. -/
+/-- The kernel entries are probabilities when the sampling probability is in `[0, 1]`. -/
 theorem kernel_nonneg {s U : ℝ} {N N' : ℕ} {i : Fin (N + 1)}
     (h0 : 0 ≤ linStep s U ((i : ℕ) / N)) (h1 : linStep s U ((i : ℕ) / N) ≤ 1)
     (j : Fin (N' + 1)) : 0 ≤ kernel s U N N' i j := by
@@ -158,7 +158,7 @@ theorem kernel_nonneg {s U : ℝ} {N N' : ℕ} {i : Fin (N + 1)}
   have : 0 ≤ 1 - linStep s U ((i : ℕ) / N) := by linarith
   positivity
 
-/-- **Binomial mean of the transition kernel.** The binomial mean: `∑_j kernel(i, j) (j / N') = (1 - s)(i / N) + U` for `N' > 0`. -/
+/-- The binomial mean: `∑_j kernel(i, j) (j / N') = (1 - s)(i / N) + U` for `N' > 0`. -/
 theorem sum_kernel_mul (s U : ℝ) (N : ℕ) {N' : ℕ} (hN' : 0 < N') (i : Fin (N + 1)) :
     ∑ j, kernel s U N N' i j * ((j : ℕ) / N') = linStep s U ((i : ℕ) / N) := by
   set x := linStep s U ((i : ℕ) / N)
@@ -191,14 +191,14 @@ theorem meanFreq_pushStep (s U : ℝ) (N : ℕ) {N' : ℕ} (hN' : 0 < N') {μ : 
     ring
   · ring
 
-/-- **Pushing a distribution forward preserves total mass.** Pushing a distribution forward preserves total mass. -/
+/-- Pushing a distribution forward preserves total mass. -/
 theorem sum_pushStep (s U : ℝ) (N N' : ℕ) {μ : Fin (N + 1) → ℝ} (hμ : ∑ i, μ i = 1) :
     ∑ j, pushStep s U N N' μ j = 1 := by
   unfold pushStep
   rw [Finset.sum_comm]
   simp_rw [← Finset.mul_sum, sum_kernel, mul_one, hμ]
 
-/-- **Law of the loss-of-function count under any demography.** The law of the LoF count in generation `t` for population sizes `N t` (any demography),
+/-- The law of the LoF count in generation `t` for population sizes `N t` (any demography),
 started from `μ₀`. -/
 noncomputable def law (s U : ℝ) (N : ℕ → ℕ) (μ₀ : Fin (N 0 + 1) → ℝ) :
     (t : ℕ) → Fin (N t + 1) → ℝ
@@ -222,7 +222,7 @@ theorem meanFreq_law (s U : ℝ) {N : ℕ → ℕ} (hN : ∀ t, 0 < N t) {μ₀ 
     rw [Function.iterate_succ_apply', ← ih]
     exact meanFreq_pushStep s U _ (hN (t + 1)) (hmass t)
 
-/-- **Expected loss-of-function frequency converges to $U/s$.** The expected LoF frequency converges to `U / s` under any demography. -/
+/-- The expected LoF frequency converges to `U / s` under any demography. -/
 theorem tendsto_meanFreq_law {s : ℝ} (hs0 : 0 < s) (hs2 : s < 2) (U : ℝ) {N : ℕ → ℕ}
     (hN : ∀ t, 0 < N t) {μ₀ : Fin (N 0 + 1) → ℝ} (hμ₀ : ∑ i, μ₀ i = 1) :
     Tendsto (fun t => meanFreq (N t) (law s U N μ₀ t)) atTop (𝓝 (U / s)) := by
@@ -231,17 +231,17 @@ theorem tendsto_meanFreq_law {s : ℝ} (hs0 : 0 < s) (hs2 : s < 2) (U : ℝ) {N 
 
 /-! ### The diploid model -/
 
-/-- **Mean fitness under Hardy–Weinberg proportions.** Mean fitness under Hardy–Weinberg with LoF frequency `q` and fitnesses `1, 1 - s, 1 - t`:
+/-- Mean fitness under Hardy–Weinberg with LoF frequency `q` and fitnesses `1, 1 - s, 1 - t`:
 `1 - 2 q (1 - q) s - q² t`. -/
 def meanFitness (s t q : ℝ) : ℝ := 1 - 2 * q * (1 - q) * s - q ^ 2 * t
 
-/-- **Loss-of-function frequency after selection.** LoF frequency after selection: `q (1 - s (1 - q) - t q) / w̄`. -/
+/-- LoF frequency after selection: `q (1 - s (1 - q) - t q) / w̄`. -/
 noncomputable def selected (s t q : ℝ) : ℝ := q * (1 - s * (1 - q) - t * q) / meanFitness s t q
 
-/-- **One diploid generation of selection and mutation.** One generation: selection, then mutation of wild-type alleles at rate `U`. -/
+/-- One generation: selection, then mutation of wild-type alleles at rate `U`. -/
 noncomputable def diploidStep (s t U q : ℝ) : ℝ := (1 - U) * selected s t q + U
 
-/-- **Mean fitness under multiplicative fitness.** With multiplicative fitness, `w̄ = (1 - s q)²` for every `q`. -/
+/-- With multiplicative fitness, `w̄ = (1 - s q)²` for every `q`. -/
 theorem meanFitness_mult (s q : ℝ) : meanFitness s (2 * s - s ^ 2) q = (1 - s * q) ^ 2 := by
   unfold meanFitness; ring
 
@@ -257,7 +257,7 @@ theorem diploidStep_mult_fixed {s U : ℝ} (hs : s ≠ 0) (hU : U ≠ 1) :
   field_simp
   ring
 
-/-- **Mean fitness at the multiplicative mutation–selection equilibrium.** At the multiplicative equilibrium the mean fitness is `(1 - U)²`, independent of `s`.
+/-- At the multiplicative equilibrium the mean fitness is `(1 - U)²`, independent of `s`.
 Requires `U ≠ 1`, so that `U / s` is genuinely a fixed point (`diploidStep_mult_fixed`):
 for `U = 1` the point `U / s` is not an equilibrium. -/
 theorem meanFitness_mult_at_equilibrium {s U : ℝ} (hs : s ≠ 0) (hU : U ≠ 1) :
@@ -270,7 +270,7 @@ theorem load_mult_at_equilibrium {s U : ℝ} (hs : s ≠ 0) (hU : U ≠ 1) :
     1 - meanFitness s (2 * s - s ^ 2) (U / s) = 2 * U - U ^ 2 := by
   rw [meanFitness_mult_at_equilibrium hs hU]; ring
 
-/-- **Positivity of mean fitness for allele frequencies below one.** Mean fitness is positive for `0 ≤ q < 1` and `s, t ≤ 1` (nonnegative fitnesses). -/
+/-- Mean fitness is positive for `0 ≤ q < 1` and `s, t ≤ 1` (nonnegative fitnesses). -/
 theorem meanFitness_pos {s t q : ℝ} (hs : s ≤ 1) (ht : t ≤ 1) (hq0 : 0 ≤ q) (hq1 : q < 1) :
     0 < meanFitness s t q := by
   have : meanFitness s t q =

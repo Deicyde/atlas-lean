@@ -28,9 +28,7 @@ namespace Cslib.Logic.PL
 
 namespace CNFLiteral
 
-/-- **Satisfaction of a literal.** An assignment $v : \mathbb{N} \to \{\mathrm{true},
-\mathrm{false}\}$ satisfies a literal $(x, b)$, with variable $x \in \mathbb{N}$ and polarity
-$b \in \{\mathrm{true}, \mathrm{false}\}$, when $v(x) = b$. -/
+/-- A literal is satisfied when the assignment gives its variable its recorded polarity. -/
 def Satisfies (assignment : Nat → Bool) (literal : Nat × Bool) : Prop :=
   assignment literal.1 = literal.2
 
@@ -43,9 +41,7 @@ end CNFLiteral
 
 namespace CNFClause
 
-/-- **Satisfaction of a clause.** An assignment $v : \mathbb{N} \to \{\mathrm{true},
-\mathrm{false}\}$ satisfies a CNF clause $C$ when at least one literal of $C$ is satisfied by $v$,
-that is, $C$ contains a literal $(x, b)$ with $v(x) = b$. -/
+/-- A clause is satisfied when at least one of its literals is satisfied. -/
 def Satisfies (assignment : Nat → Bool) (clause : CNFClause) : Prop :=
   ∃ literal ∈ clause, CNFLiteral.Satisfies assignment literal
 
@@ -71,8 +67,7 @@ end CNFClause
 
 namespace CNF
 
-/-- **Satisfaction of a CNF formula.** An assignment $v : \mathbb{N} \to \{\mathrm{true},
-\mathrm{false}\}$ satisfies a CNF formula $\varphi$ when $v$ satisfies every clause of $\varphi$. -/
+/-- A CNF formula is satisfied when each of its clauses is satisfied. -/
 def Satisfies (assignment : Nat → Bool) (formula : CNF) : Prop :=
   ∀ clause ∈ formula, CNFClause.Satisfies assignment clause
 
@@ -99,9 +94,7 @@ theorem satisfies_append {assignment : Nat → Bool} {φ ψ : CNF} :
 
 end CNF
 
-/-- **Satisfiability means having a satisfying assignment.** A CNF formula $\varphi$ is
-satisfiable if and only if there is an assignment $v : \mathbb{N} \to \{\mathrm{true},
-\mathrm{false}\}$ that satisfies $\varphi$. -/
+/-- The named CNF semantics coincides with the pre-existing satisfiability predicate. -/
 theorem cnfSat_iff_exists_satisfies {formula : CNF} :
     CNFSat formula ↔ ∃ assignment, formula.Satisfies assignment := by
   constructor

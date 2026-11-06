@@ -402,7 +402,7 @@ private theorem integrable_sq_sub_eval_pi {p : ℕ} (θ : Fin p → ℝ) (i : Fi
     simpa using this
   exact hmap.integrable_comp_of_integrable hint
 
-/-- **Quadratic risk of the usual Gaussian mean estimator.** The quadratic risk of the usual estimator `X` of the mean of `N(θ, I_p)` is `p`. -/
+/-- The quadratic risk of the usual estimator `X` of the mean of `N(θ, I_p)` is `p`. -/
 theorem integral_sum_sq_sub_pi_gaussianReal {p : ℕ} (θ : Fin p → ℝ) :
     ∫ x, ∑ i, (x i - θ i) ^ 2 ∂(Measure.pi fun j => gaussianReal (θ j) 1) = p := by
   rw [integral_finsetSum _ fun i _ => integrable_sq_sub_eval_pi θ i]
@@ -453,7 +453,7 @@ theorem integral_sum_sq_add_sub_pi_gaussianReal {p : ℕ} (θ : Fin p → ℝ)
   rw [integral_add (hsq i) ((hst i).1.const_mul 2), integral_add (hsq i) ((hdi i).const_mul 2),
     integral_const_mul, integral_const_mul, (hst i).2]
 
-/-- **James–Stein estimator.** The James–Stein estimator `δ(x) = (1 - (p - 2) / ‖x‖²) x` of the mean of `N(θ, I_p)`. At
+/-- The James–Stein estimator `δ(x) = (1 - (p - 2) / ‖x‖²) x` of the mean of `N(θ, I_p)`. At
 `x = 0` the factor is `1` by Lean's `a / 0 = 0` convention, so `δ(0) = 0`. -/
 noncomputable def jamesStein {p : ℕ} (x : Fin p → ℝ) : Fin p → ℝ :=
   fun i => (1 - ((p : ℝ) - 2) / ∑ j, x j ^ 2) * x i

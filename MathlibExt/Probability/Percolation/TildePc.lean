@@ -48,14 +48,14 @@ open StatMech.Lattice
 
 variable {d : ℕ}
 
-/-- **Shift of a lattice site in one coordinate.** The site `x + δ e_i` obtained by moving `x` by `δ` in coordinate `i`. -/
+/-- The site `x + δ e_i` obtained by moving `x` by `δ` in coordinate `i`. -/
 def coordShift (x : Site d) (i : Fin d) (δ : ℤ) : Site d :=
   Function.update x i (x i + δ)
 
-/-- **Sign of a unit lattice step.** The unit step `+1` (for `true`) or `-1` (for `false`). -/
+/-- The unit step `+1` (for `true`) or `-1` (for `false`). -/
 def stepSign (b : Bool) : ℤ := if b then 1 else -1
 
-/-- **Oriented edge boundary of a finite lattice set.** The oriented edge boundary `∂S = {(x, x ± e_i) : x ∈ S, x ± e_i ∉ S}` of a finite set
+/-- The oriented edge boundary `∂S = {(x, x ± e_i) : x ∈ S, x ± e_i ∉ S}` of a finite set
 `S ⊆ ℤ^d`, as ordered pairs (inner endpoint first). -/
 noncomputable def boundaryEdges (d : ℕ) (S : Finset (Site d)) :
     Finset (Site d × Site d) := by
@@ -65,7 +65,7 @@ noncomputable def boundaryEdges (d : ℕ) (S : Finset (Site d)) :
         (fun t => coordShift t.1 t.2.1 (stepSign t.2.2) ∉ S)).image
       (fun t => (t.1, coordShift t.1 t.2.1 (stepSign t.2.2)))
 
-/-- **Size bound for the edge boundary.** The edge boundary of `S` has at most `2d |S|` elements. -/
+/-- The edge boundary of `S` has at most `2d |S|` elements. -/
 theorem card_boundaryEdges_le (S : Finset (Site d)) :
     (boundaryEdges d S).card ≤ S.card * (2 * d) := by
   classical
@@ -76,7 +76,7 @@ theorem card_boundaryEdges_le (S : Finset (Site d)) :
       Fintype.card_fin, Fintype.card_bool]
   exact le_of_eq (by ring)
 
-/-- **Probability of connection inside a set.** The probability `ℙ_p(0 ↔ x inside S)` that the origin and `x` are joined by an open path
+/-- The probability `ℙ_p(0 ↔ x inside S)` that the origin and `x` are joined by an open path
 using only vertices of `S`; it is `0` if `0 ∉ S` or `x ∉ S`. -/
 noncomputable def connWithinProb (d : ℕ) (p : ℝ≥0) (hp : p ≤ 1) (S : Finset (Site d))
     (x : Site d) : ℝ := by
@@ -99,7 +99,7 @@ theorem connWithinProb_nonneg (d : ℕ) (p : ℝ≥0) (hp : p ≤ 1) (S : Finset
     · exact le_refl 0
   · exact le_refl 0
 
-/-- **Duminil-Copin–Tassion quantity.** The Duminil-Copin–Tassion quantity `φ_p(S) = p ∑_{(x, y) ∈ ∂S} ℙ_p(0 ↔ x inside S)`. -/
+/-- The Duminil-Copin–Tassion quantity `φ_p(S) = p ∑_{(x, y) ∈ ∂S} ℙ_p(0 ↔ x inside S)`. -/
 noncomputable def phi (d : ℕ) (p : ℝ≥0) (hp : p ≤ 1) (S : Finset (Site d)) : ℝ :=
   (p : ℝ) * ∑ e ∈ boundaryEdges d S, connWithinProb d p hp S e.1
 
@@ -110,7 +110,7 @@ theorem phi_nonneg (d : ℕ) (p : ℝ≥0) (hp : p ≤ 1) (S : Finset (Site d)) 
   intro e _
   exact connWithinProb_nonneg d p hp S e.1
 
-/-- **Densities with a finite set of small Duminil-Copin–Tassion quantity.** The set of densities `p ∈ [0, 1]` for which some finite `S ∋ 0` has `φ_p(S) < 1`. -/
+/-- The set of densities `p ∈ [0, 1]` for which some finite `S ∋ 0` has `φ_p(S) < 1`. -/
 def tildePcSet (d : ℕ) : Set ℝ≥0 :=
   {p : ℝ≥0 | ∃ hp : p ≤ 1, ∃ S : Finset (Site d), origin d ∈ S ∧ phi d p hp S < 1}
 
@@ -120,7 +120,7 @@ theorem mem_tildePcSet {d : ℕ} {p : ℝ≥0} :
       ∃ hp : p ≤ 1, ∃ S : Finset (Site d), origin d ∈ S ∧ phi d p hp S < 1 :=
   Iff.rfl
 
-/-- **Duminil-Copin–Tassion threshold.** The Duminil-Copin–Tassion threshold `p̃_c(d) = sup {p : ∃ S ∋ 0 finite, φ_p(S) < 1}`. -/
+/-- The Duminil-Copin–Tassion threshold `p̃_c(d) = sup {p : ∃ S ∋ 0 finite, φ_p(S) < 1}`. -/
 noncomputable def tildePc (d : ℕ) : ℝ≥0 :=
   sSup (tildePcSet d)
 

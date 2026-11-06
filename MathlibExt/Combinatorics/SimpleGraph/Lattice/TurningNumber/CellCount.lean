@@ -38,19 +38,19 @@ namespace StatMech.Onsager.CellCount
 
 open Finset
 
-/-- **Four corners of a unit cell.** The four corners of the unit cell with lower-left corner `c`. -/
+/-- The four corners of the unit cell with lower-left corner `c`. -/
 def cornersOf (c : ℤ × ℤ) : Finset (ℤ × ℤ) :=
   {c, (c.1 + 1, c.2), (c.1, c.2 + 1), (c.1 + 1, c.2 + 1)}
 
-/-- **Corner count of a lattice point.** The number of cells of `S` having the lattice point `v` as a corner. -/
+/-- The number of cells of `S` having the lattice point `v` as a corner. -/
 def cornerCount (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) : ℕ :=
   (S.filter (fun c => v ∈ cornersOf c)).card
 
-/-- **Vertices of a cell complex.** The vertices of the cell complex `S`: all corners of its cells. -/
+/-- The vertices of the cell complex `S`: all corners of its cells. -/
 def cellVerts (S : Finset (ℤ × ℤ)) : Finset (ℤ × ℤ) :=
   S.biUnion cornersOf
 
-/-- **A unit cell has four distinct corners.** A cell has four distinct corners. -/
+/-- A cell has four distinct corners. -/
 theorem cornersOf_card (c : ℤ × ℤ) : (cornersOf c).card = 4 := by
   unfold cornersOf
   rw [Finset.card_insert_of_notMem (by simp only [mem_insert, mem_singleton, Prod.ext_iff]; omega),
@@ -58,7 +58,7 @@ theorem cornersOf_card (c : ℤ × ℤ) : (cornersOf c).card = 4 := by
       Finset.card_insert_of_notMem (by simp only [mem_singleton, Prod.ext_iff]; omega),
       card_singleton]
 
-/-- **Characterization of the corners of a unit cell.** `v` is a corner of `c` iff `c` is one of the four cells around `v`. -/
+/-- `v` is a corner of `c` iff `c` is one of the four cells around `v`. -/
 theorem mem_cornersOf_iff (c v : ℤ × ℤ) :
     v ∈ cornersOf c ↔
       c = v ∨ c = (v.1 - 1, v.2) ∨ c = (v.1, v.2 - 1) ∨ c = (v.1 - 1, v.2 - 1) := by
@@ -74,7 +74,7 @@ theorem mem_cornersOf_iff (c v : ℤ × ℤ) :
 private def candCells (v : ℤ × ℤ) : Finset (ℤ × ℤ) :=
   {v, (v.1 - 1, v.2), (v.1, v.2 - 1), (v.1 - 1, v.2 - 1)}
 
-/-- **At most four cells meet at a lattice point.** At most four cells meet at a lattice point. -/
+/-- At most four cells meet at a lattice point. -/
 theorem cornerCount_le_four (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) :
     cornerCount S v ≤ 4 := by
   unfold cornerCount
@@ -91,7 +91,7 @@ theorem cornerCount_le_four (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) :
   refine (Nat.add_le_add_right (Nat.add_le_add_right (card_insert_le _ _) 1) 1).trans ?_
   simp
 
-/-- **Double counting of cell–corner incidences.** Double counting of cell–corner incidences: `∑ v, cornerCount S v = 4 * S.card`. -/
+/-- Double counting of cell–corner incidences: `∑ v, cornerCount S v = 4 * S.card`. -/
 theorem sum_cornerCount (S : Finset (ℤ × ℤ)) :
     ∑ v ∈ cellVerts S, cornerCount S v = 4 * S.card := by
   unfold cornerCount

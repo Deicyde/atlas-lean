@@ -43,7 +43,7 @@ such a valuation subring is algebraically closed.
 
 @[expose] public section
 
-/-- **Monic polynomials have roots in valuation subrings of closed fields.** A monic polynomial over a valuation subring of an algebraically closed
+/-- A monic polynomial over a valuation subring of an algebraically closed
 field, of nonzero degree, has a root in the subring: take a root in the field,
 it is integral over the subring, and valuation subrings are integrally closed. -/
 theorem ValuationSubring.exists_root_mem_of_monic {K : Type*} [Field K] [IsAlgClosed K]
@@ -63,7 +63,7 @@ theorem ValuationSubring.exists_root_mem_of_monic {K : Type*} [Field K] [IsAlgCl
   rw [Polynomial.aeval_def, hyx]
   rwa [Polynomial.IsRoot, Polynomial.eval_map] at hx
 
-/-- **Residue field of a valuation subring of a closed field is closed.** The residue field of a valuation subring of an algebraically closed field
+/-- The residue field of a valuation subring of an algebraically closed field
 is algebraically closed: lift a monic irreducible polynomial to the valuation
 subring, take a root there, and reduce it back. -/
 theorem ValuationSubring.isAlgClosed_residueField {L : Type*} [Field L] [IsAlgClosed L]

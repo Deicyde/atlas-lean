@@ -106,7 +106,7 @@ theorem jkd_keepResidue_witness_square :
     replace h := SimpleGraph.reachable_bot.mp h
     exact jbc_v0_ne_v1 h
 
-/-- **Nine sites of a 3 by 3 grid.** The nine sites of `[0, 2]²`, indexed row by row. -/
+/-- The nine sites of `[0, 2]²`, indexed row by row. -/
 def jkd_gr9emb (i : Fin 9) : Site 2 :=
   match i with
   | 0 => ![0, 0] | 1 => ![1, 0] | 2 => ![2, 0]
@@ -115,13 +115,13 @@ def jkd_gr9emb (i : Fin 9) : Site 2 :=
 
 theorem jkd_gr9emb_inj : Function.Injective jkd_gr9emb := by decide +kernel
 
-/-- **Adjacency relation of the 3 by 3 grid.** Adjacency of the `3 × 3` grid on `Fin 9`, as a Boolean relation. -/
+/-- Adjacency of the `3 × 3` grid on `Fin 9`, as a Boolean relation. -/
 def jkd_gr9rel (i j : Fin 9) : Bool :=
   let ci := (i : ℕ) % 3; let ri := (i : ℕ) / 3
   let cj := (j : ℕ) % 3; let rj := (j : ℕ) / 3
   (ci == cj && (ri == rj + 1 || rj == ri + 1)) || (ri == rj && (ci == cj + 1 || cj == ci + 1))
 
-/-- **The 3 by 3 grid graph.** The `3 × 3` grid graph on `Fin 9`. -/
+/-- The `3 × 3` grid graph on `Fin 9`. -/
 def jkd_gr9G : SimpleGraph (Fin 9) where
   Adj i j := jkd_gr9rel i j
   symm := ⟨by intro i j h; revert h; revert i j; decide⟩
@@ -135,7 +135,7 @@ theorem jkd_gr9_isSub : ∀ ⦃i j : Fin 9⦄, jkd_gr9G.Adj i j →
   rw [hypercubicLattice_adj, Fin.sum_univ_two]
   revert h; fin_cases i <;> fin_cases j <;> simp [jkd_gr9rel, jkd_gr9emb]
 
-/-- **3 by 3 grid as a planar lattice subgraph.** The `3 × 3` grid as a `PlanarZ2Subgraph`. -/
+/-- The `3 × 3` grid as a `PlanarZ2Subgraph`. -/
 noncomputable def jkd_ringP : PlanarZ2Subgraph where
   V := Fin 9
   finV := inferInstance
@@ -144,10 +144,10 @@ noncomputable def jkd_ringP : PlanarZ2Subgraph where
   emb := ⟨jkd_gr9emb, jkd_gr9emb_inj⟩
   isSub := jkd_gr9_isSub
 
-/-- **Grid vertex $(0, 0)$.** The vertex `(0, 0)` of the grid. -/
+/-- The vertex `(0, 0)` of the grid. -/
 def jkd_r0 : Fin 9 := 0
 
-/-- **Grid vertex $(1, 0)$.** The vertex `(1, 0)` of the grid. -/
+/-- The vertex `(1, 0)` of the grid. -/
 def jkd_r1 : Fin 9 := 1
 
 theorem jkd_r0_ne_r1 : jkd_r0 ≠ jkd_r1 := by decide

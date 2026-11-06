@@ -84,7 +84,7 @@ namespace MathlibExt.Biology.Dynamics.ComplexBalanced
 
 variable {S ρ : Type*}
 
-/-- **Chemical reaction network.** A chemical reaction network on the species `S` with reactions indexed by `ρ`: reaction `r`
+/-- A chemical reaction network on the species `S` with reactions indexed by `ρ`: reaction `r`
 turns the source complex `src r` into the product complex `prod r` (stoichiometric
 coefficients). -/
 structure ReactionNetwork (S ρ : Type*) where
@@ -97,21 +97,21 @@ namespace ReactionNetwork
 
 variable (N : ReactionNetwork S ρ)
 
-/-- **Stoichiometric subspace.** The stoichiometric subspace: the span of the reaction vectors `prod r - src r`. -/
+/-- The stoichiometric subspace: the span of the reaction vectors `prod r - src r`. -/
 def stoichiometricSubspace : Submodule ℝ (S → ℝ) :=
   Submodule.span ℝ (Set.range fun r s => (N.prod r s : ℝ) - N.src r s)
 
-/-- **Mass-action vector field.** The mass-action vector field with rate constants `k`:
+/-- The mass-action vector field with rate constants `k`:
 `x ↦ ∑_r k r (∏_s x_s ^ (src r s)) (prod r - src r)`. -/
 noncomputable def massActionField [Fintype S] [Fintype ρ] (k : ρ → ℝ) (x : S → ℝ) :
     S → ℝ :=
   fun s => ∑ r, k r * (∏ s', x s' ^ N.src r s') * ((N.prod r s : ℝ) - N.src r s)
 
-/-- **Mass-action reaction rate.** The mass-action rate `k r * ∏_s c_s ^ (src r s)` of reaction `r` at concentrations `c`. -/
+/-- The mass-action rate `k r * ∏_s c_s ^ (src r s)` of reaction `r` at concentrations `c`. -/
 noncomputable def rate [Fintype S] (k : ρ → ℝ) (c : S → ℝ) (r : ρ) : ℝ :=
   k r * ∏ s, c s ^ N.src r s
 
-/-- **Complex-balanced concentrations.** Concentrations `c` are complex balanced for the rate constants `k`: at every complex `z`,
+/-- Concentrations `c` are complex balanced for the rate constants `k`: at every complex `z`,
 the total rate of the reactions with source `z` equals the total rate of the reactions with
 product `z`. (Complexes that occur in no reaction give `0 = 0`.)
 
@@ -120,19 +120,19 @@ def IsComplexBalanced [Fintype S] [Fintype ρ] (k : ρ → ℝ) (c : S → ℝ) 
   ∀ z : S → ℕ, ∑ r ∈ univ.filter (fun r => N.src r = z), N.rate k c r =
     ∑ r ∈ univ.filter (fun r => N.prod r = z), N.rate k c r
 
-/-- **Pseudo-Helmholtz function.** The pseudo-Helmholtz function `G(c) = ∑_s c_s (log c_s - log c*_s - 1)` relative to the
+/-- The pseudo-Helmholtz function `G(c) = ∑_s c_s (log c_s - log c*_s - 1)` relative to the
 reference concentrations `cstar` (Horn & Jackson 1972). It is meaningful for positive `c`
 and `cstar`; elsewhere `Real.log` takes junk values. -/
 noncomputable def pseudoHelmholtz [Fintype S] (cstar c : S → ℝ) : ℝ :=
   ∑ s, c s * (Real.log (c s) - Real.log (cstar s) - 1)
 
-/-- **Rate of change of the pseudo-Helmholtz function.** The rate of change of the pseudo-Helmholtz function along the mass-action vector field,
+/-- The rate of change of the pseudo-Helmholtz function along the mass-action vector field,
 `∑_s (log c_s - log c*_s) f_s(c)`: the derivative of `pseudoHelmholtz cstar` at `c > 0`
 applied to `massActionField k c` (`hasDerivAt_pseudoHelmholtz`). -/
 noncomputable def helmholtzRate [Fintype S] [Fintype ρ] (k : ρ → ℝ) (cstar c : S → ℝ) : ℝ :=
   ∑ s, (Real.log (c s) - Real.log (cstar s)) * N.massActionField k c s
 
-/-- **Complex balance exchanges source and product sums.** Complex balance at `c` rewrites the rate-weighted sum of any function of the products as
+/-- Complex balance at `c` rewrites the rate-weighted sum of any function of the products as
 the same sum over the sources (for all real `c` and `k`). -/
 theorem sum_rate_mul_prod_eq [Fintype S] [Fintype ρ] {k : ρ → ℝ} {c : S → ℝ}
     (h : N.IsComplexBalanced k c) (g : (S → ℕ) → ℝ) :
@@ -151,7 +151,7 @@ theorem sum_rate_mul_prod_eq [Fintype S] [Fintype ρ] {k : ρ → ℝ} {c : S �
     Finset.sum_congr rfl fun r hr => by rw [(Finset.mem_filter.1 hr).2]
   rw [h₁, h₂, ← Finset.sum_mul, ← Finset.sum_mul, h z]
 
-/-- **Complex-balanced states are equilibria.** A complex-balanced state is an equilibrium of the mass-action system (for all real `c`
+/-- A complex-balanced state is an equilibrium of the mass-action system (for all real `c`
 and `k`). Source: Horn & Jackson (1972). -/
 theorem massActionField_eq_zero_of_isComplexBalanced [Fintype S] [Fintype ρ] {k : ρ → ℝ}
     {c : S → ℝ} (h : N.IsComplexBalanced k c) : N.massActionField k c = 0 := by
@@ -493,7 +493,7 @@ theorem existsUnique_equilibrium_of_isComplexBalanced [Fintype S] [Fintype ρ] {
     simp only [Pi.sub_apply]
     ring
 
-/-- **Pseudo-Helmholtz function along positive mass-action solutions.** The pseudo-Helmholtz function has time derivative `helmholtzRate` along a solution of the
+/-- The pseudo-Helmholtz function has time derivative `helmholtzRate` along a solution of the
 mass-action system, at any time where the solution is positive. -/
 theorem hasDerivAt_pseudoHelmholtz [Fintype S] [Fintype ρ] {k : ρ → ℝ} (cstar : S → ℝ)
     {x : ℝ → S → ℝ} {t : ℝ} (hx : HasDerivAt x (N.massActionField k (x t)) t)

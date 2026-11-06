@@ -91,7 +91,7 @@ open Finset
 
 namespace MathlibExt.Biology.StatisticalGenetics.CovarianceRelatives
 
-/-- **Single-locus model under random union of gametes.** A single locus under random union of gametes: allele frequencies `p` on a finite allele
+/-- A single locus under random union of gametes: allele frequencies `p` on a finite allele
 set and symmetric genotypic values `g a b` (the mean phenotype of genotype `{a, b}`). -/
 structure LocusModel (A : Type*) [Fintype A] where
   /-- Allele frequencies. -/
@@ -106,30 +106,30 @@ namespace LocusModel
 
 variable {A : Type*} [Fintype A] (m : LocusModel A)
 
-/-- **Population mean genotypic value at a single locus.** The population mean genotypic value `μ = ∑ p_a p_b g(a, b)`. -/
+/-- The population mean genotypic value `μ = ∑ p_a p_b g(a, b)`. -/
 def mean : ℝ := ∑ a, ∑ b, m.p a * m.p b * m.g a b
 
-/-- **Fisher's average effect of an allele at a single locus.** Fisher's average effect of allele `a`: `α a = ∑_b p_b g(a, b) - μ`. -/
+/-- Fisher's average effect of allele `a`: `α a = ∑_b p_b g(a, b) - μ`. -/
 def alpha (a : A) : ℝ := ∑ b, m.p b * m.g a b - m.mean
 
-/-- **Dominance deviation at a single locus.** The dominance deviation `δ a b = g(a, b) - μ - α a - α b`. -/
+/-- The dominance deviation `δ a b = g(a, b) - μ - α a - α b`. -/
 def delta (a b : A) : ℝ := m.g a b - m.mean - m.alpha a - m.alpha b
 
-/-- **Genetic variance at a single locus.** The genetic variance `V_G = ∑ p_a p_b (g(a, b) - μ)²`. -/
+/-- The genetic variance `V_G = ∑ p_a p_b (g(a, b) - μ)²`. -/
 def varG : ℝ := ∑ a, ∑ b, m.p a * m.p b * (m.g a b - m.mean) ^ 2
 
-/-- **Additive variance at a single locus.** The additive variance `V_A = 2 ∑ p_a α_a²`. -/
+/-- The additive variance `V_A = 2 ∑ p_a α_a²`. -/
 def varA : ℝ := 2 * ∑ a, m.p a * m.alpha a ^ 2
 
-/-- **Dominance variance at a single locus.** The dominance variance `V_D = ∑ p_a p_b δ_{ab}²`. -/
+/-- The dominance variance `V_D = ∑ p_a p_b δ_{ab}²`. -/
 def varD : ℝ := ∑ a, ∑ b, m.p a * m.p b * m.delta a b ^ 2
 
-/-- **Average effects are centred.** Average effects are centred: `∑ p_a α_a = 0`. -/
+/-- Average effects are centred: `∑ p_a α_a = 0`. -/
 theorem sum_p_alpha : ∑ a, m.p a * m.alpha a = 0 := by
   simpa only [alpha, mean, FisherDecomposition.avgEffect, FisherDecomposition.meanValue]
     using FisherDecomposition.sum_mul_avgEffect m.sum_p m.g
 
-/-- **Dominance deviations are orthogonal to every allele.** Dominance deviations are orthogonal to every allele: `∑_b p_b δ_{ab} = 0`. -/
+/-- Dominance deviations are orthogonal to every allele: `∑_b p_b δ_{ab} = 0`. -/
 theorem sum_p_delta (a : A) : ∑ b, m.p b * m.delta a b = 0 := by
   simpa only [delta, alpha, mean, FisherDecomposition.domDev, FisherDecomposition.avgEffect,
     FisherDecomposition.meanValue]
@@ -187,12 +187,12 @@ theorem varG_eq : m.varG = m.varA + m.varD := by
     FisherDecomposition.avgEffect, FisherDecomposition.domDev]
     using FisherDecomposition.genVar_eq_addVar_add_domVar m.sum_p m.g_symm
 
-/-- **Nonnegativity of the single-locus additive variance.** The additive variance is nonnegative. -/
+/-- The additive variance is nonnegative. -/
 theorem varA_nonneg : 0 ≤ m.varA := by
   exact mul_nonneg (by norm_num) (sum_nonneg fun a _ ↦
     mul_nonneg (m.p_nonneg a) (sq_nonneg _))
 
-/-- **Nonnegativity of the single-locus dominance variance.** The dominance variance is nonnegative. -/
+/-- The dominance variance is nonnegative. -/
 theorem varD_nonneg : 0 ≤ m.varD := by
   exact sum_nonneg fun a _ ↦ sum_nonneg fun b _ ↦
     mul_nonneg (mul_nonneg (m.p_nonneg a) (m.p_nonneg b)) (sq_nonneg _)
@@ -206,7 +206,7 @@ theorem varD_le (c : ℝ) (h : A → ℝ) :
     FisherDecomposition.domDev, FisherDecomposition.avgEffect, FisherDecomposition.meanValue]
     using FisherDecomposition.domVar_le_sum_sq m.p_nonneg m.sum_p m.g_symm c h
 
-/-- **Mean product of genotypic values of two relatives.** The mean product of genotypic values of two non-inbred relatives that share `0`, `1`, `2`
+/-- The mean product of genotypic values of two non-inbred relatives that share `0`, `1`, `2`
 alleles identical by descent with probabilities `k₀, k₁, k₂`: given the IBD state, the
 non-shared alleles are independent draws from `p`. -/
 def relProd (k₀ k₁ k₂ : ℝ) : ℝ :=
@@ -292,7 +292,7 @@ theorem relCov_eq {k₀ k₁ k₂ : ℝ} (hk : k₀ + k₁ + k₂ = 1) :
 
 end LocusModel
 
-/-- **Cockerham–Kempthorne variance components.** Cockerham–Kempthorne variance components up to order `n`: `V i j = V_{A^i D^j}` is the
+/-- Cockerham–Kempthorne variance components up to order `n`: `V i j = V_{A^i D^j}` is the
 component of `i` additive and `j` dominance factors (`V 1 0 = V_A`, `V 0 1 = V_D`,
 `V 2 0 = V_AA`, …). They are nonnegative, there is no `(0, 0)` component, and the genetic
 covariance of relatives with `2φ` and `Δ` is `∑_{i, j ≤ n} (2φ)^i Δ^j V i j`. This structure
@@ -313,11 +313,11 @@ namespace CockerhamComponents
 
 variable (c : CockerhamComponents)
 
-/-- **Genetic covariance of relatives in Cockerham form.** The genetic covariance of relatives with coefficients `2φ = twoPhi` and `Δ = Δ`. -/
+/-- The genetic covariance of relatives with coefficients `2φ = twoPhi` and `Δ = Δ`. -/
 def cov (twoPhi Δ : ℝ) : ℝ :=
   ∑ i ∈ range (c.n + 1), ∑ j ∈ range (c.n + 1), twoPhi ^ i * Δ ^ j * c.V i j
 
-/-- **Additive variance of the Cockerham components.** The additive variance `V_A = V 1 0` (zero if `n = 0`). -/
+/-- The additive variance `V_A = V 1 0` (zero if `n = 0`). -/
 def varA : ℝ := if 1 ≤ c.n then c.V 1 0 else 0
 
 /-- **Falconer's estimator** under the ACE model, in covariance form: monozygotic twins have
@@ -325,7 +325,7 @@ def varA : ℝ := if 1 ≤ c.n then c.V 1 0 else 0
 common-environment covariance `C`; the estimator is `2 (Cov_MZ - Cov_DZ)`. -/
 noncomputable def falconer (C : ℝ) : ℝ := 2 * ((c.cov 1 1 + C) - (c.cov (1 / 2) (1 / 4) + C))
 
-/-- **Falconer's estimator in terms of Cockerham components.** Falconer's estimator is `V_A` plus the non-additive components weighted by
+/-- Falconer's estimator is `V_A` plus the non-additive components weighted by
 `2 (1 - 2^{-i} 4^{-j})` (derived from Cockerham's coefficients). -/
 theorem falconer_eq (C : ℝ) :
     c.falconer C = c.varA + ∑ i ∈ range (c.n + 1), ∑ j ∈ range (c.n + 1),
@@ -405,13 +405,13 @@ private theorem remainder_nonneg (c : CockerhamComponents) (i j : ℕ) :
   · exact le_refl 0
   · exact mul_nonneg (coefficient_nonneg i j) (c.V_nonneg i j)
 
-/-- **Phantom heritability inequality.** The phantom-heritability inequality in covariance form: `V_A ≤ 2 (Cov_MZ - Cov_DZ)`. -/
+/-- The phantom-heritability inequality in covariance form: `V_A ≤ 2 (Cov_MZ - Cov_DZ)`. -/
 theorem varA_le_falconer (C : ℝ) : c.varA ≤ c.falconer C := by
   rw [c.falconer_eq]
   exact le_add_of_nonneg_right (sum_nonneg fun i _ ↦ sum_nonneg fun j _ ↦
     remainder_nonneg c i j)
 
-/-- **Equality case of the phantom heritability inequality.** Equality holds iff every non-additive component of order `≤ n` vanishes. -/
+/-- Equality holds iff every non-additive component of order `≤ n` vanishes. -/
 theorem falconer_eq_varA_iff (C : ℝ) :
     c.falconer C = c.varA ↔
       ∀ i ∈ range (c.n + 1), ∀ j ∈ range (c.n + 1), (i, j) ≠ (1, 0) → c.V i j = 0 := by
@@ -453,7 +453,7 @@ namespace LocusModel
 
 variable {A : Type*} [Fintype A] (m : LocusModel A)
 
-/-- **Single-locus model as Cockerham components.** The one-locus model as Cockerham components of order `1`: `V 1 0 = V_A`, `V 0 1 = V_D`,
+/-- The one-locus model as Cockerham components of order `1`: `V 1 0 = V_A`, `V 0 1 = V_D`,
 `V 1 1 = 0`. -/
 def toComponents : CockerhamComponents where
   n := 1
@@ -471,7 +471,7 @@ def toComponents : CockerhamComponents where
         | (obtain ⟨rfl, rfl⟩ := Prod.mk.inj h2; omega)
         | rfl)
 
-/-- **Single-locus covariance between relatives in Cockerham form.** The one-locus covariance between relatives is the Cockerham form of `toComponents`. -/
+/-- The one-locus covariance between relatives is the Cockerham form of `toComponents`. -/
 theorem relCov_eq_cov {k₀ k₁ k₂ : ℝ} (hk : k₀ + k₁ + k₂ = 1) :
     m.relProd k₀ k₁ k₂ - m.mean ^ 2 = m.toComponents.cov (k₁ / 2 + k₂) k₂ := by
   rw [m.relCov_eq hk]

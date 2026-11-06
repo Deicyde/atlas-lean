@@ -36,27 +36,22 @@ group on two generators by the `d`-th term of its derived series. The question i
 endomorphism.
 -/
 
-/-- **Free soluble group of rank two.** The free soluble group of rank `2` and derived length `d`: the quotient `F₂ / F₂⁽ᵈ⁾` of the free
+/-- The free soluble group of rank `2` and derived length `d`: the quotient `F₂ / F₂⁽ᵈ⁾` of the free
 group on two generators by the `d`-th term of its derived series. -/
 abbrev FreeSolubleGroupRankTwo (d : ℕ) : Type :=
   FreeGroup (Fin 2) ⧸ derivedSeries (FreeGroup (Fin 2)) d
 
-/-- **Test element.** An element $u$ of a group $G$ is a test element of $G$ if every endomorphism
-$\varphi$ of $G$ with $\varphi(u) = u$ is bijective, that is, an automorphism of $G$. -/
+/-- `u` is a test element of `G`: every endomorphism of `G` fixing `u` is an automorphism. -/
 def IsTestElement {G : Type*} [Group G] (u : G) : Prop :=
   ∀ φ : G →* G, φ u = u → Function.Bijective φ
 
-/-- **Kourovka Problem 14.88 (test elements of free soluble groups of rank 2).** The statement that
-for every integer $d > 2$ the free soluble group $F_2 / F_2^{(d)}$ of rank $2$ and derived length
-$d$ has a test element, where $F_2$ is the free group on two generators and $F_2^{(d)}$ is the
-$d$-th term of its derived series.
-
-Kourovka Notebook Problem 14.88 is due to B. Fine and V. Shpilrain. -/
+/-- Kourovka 14.88 (B. Fine, V. Shpilrain): for every `d > 2` the free soluble group of rank `2` and
+derived length `d` has a test element. -/
 def freeSolubleRankTwoHasTestElement : Prop :=
   ∀ d : ℕ, 2 < d → ∃ u : FreeSolubleGroupRankTwo d, IsTestElement u
 
 /--
-**Free soluble groups of rank two have test elements.** Resolved true: the Kourovka Archive answers 14.88 "Yes, it does" (Timoshenko): for every `d > 2` the
+Resolved true: the Kourovka Archive answers 14.88 "Yes, it does" (Timoshenko): for every `d > 2` the
 free soluble group `F₂/F₂⁽ᵈ⁾` of rank `2` and derived length `d` has a test element. Source: E. I.
 Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st
 issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 14.88 (B. Fine, V. Shpilrain);

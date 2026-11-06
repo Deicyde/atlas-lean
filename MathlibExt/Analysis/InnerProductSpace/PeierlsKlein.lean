@@ -78,7 +78,7 @@ open Finset Matrix
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace ℂ E]
   [FiniteDimensional ℂ E]
 
-/-- **Convex differentiable functions lie above their tangent lines.** The first-order (tangent-line) characterization of a convex
+/-- The first-order (tangent-line) characterization of a convex
 differentiable function: the graph lies above every tangent line. -/
 theorem add_deriv_mul_sub_le_of_convexOn {f : ℝ → ℝ} {s : Set ℝ} {x y : ℝ} (hf : ConvexOn ℝ s f)
     (hf' : DifferentiableAt ℝ f x) (hx : x ∈ s) (hy : y ∈ s) :
@@ -169,7 +169,7 @@ theorem klein_inequality {n : ℕ} (hn : Module.finrank ℂ E = n)
         Finset.sum_le_sum fun i _ => hpt i
     _ ≤ ∑ j, f (hT.eigenvalues hn j) := hP
 
-/-- **Peierls' inequality for the exponential.** Peierls' inequality for the exponential function. -/
+/-- Peierls' inequality for the exponential function. -/
 theorem peierls_exp {n : ℕ} (hn : Module.finrank ℂ E = n)
     {T : E →ₗ[ℂ] E} (hT : T.IsSymmetric)
     (b : OrthonormalBasis (Fin n) ℂ E) :
@@ -177,7 +177,7 @@ theorem peierls_exp {n : ℕ} (hn : Module.finrank ℂ E = n)
       ≤ ∑ j, Real.exp (hT.eigenvalues hn j) :=
   peierls_inequality hn hT convexOn_exp (fun _ => Set.mem_univ _) b
 
-/-- **Klein's inequality for the square function.** Klein's inequality for `f x = x ^ 2`. -/
+/-- Klein's inequality for `f x = x ^ 2`. -/
 theorem klein_sq {n : ℕ} (hn : Module.finrank ℂ E = n)
     {T S : E →ₗ[ℂ] E} (hT : T.IsSymmetric) (hS : S.IsSymmetric)
     (b : OrthonormalBasis (Fin n) ℂ E) :
@@ -194,7 +194,7 @@ theorem klein_sq {n : ℕ} (hn : Module.finrank ℂ E = n)
     simp
   simpa only [hderiv] using h
 
-/-- **Eigenvalues of a positive semidefinite operator are nonnegative.** Eigenvalues of a positive semidefinite symmetric operator are
+/-- Eigenvalues of a positive semidefinite symmetric operator are
 nonnegative: an eigenvalue is the Rayleigh quotient at a unit
 eigenvector. -/
 theorem eigenvalues_nonneg_of_forall_nonneg_inner {n : ℕ} (hn : Module.finrank ℂ E = n)
@@ -209,7 +209,7 @@ theorem eigenvalues_nonneg_of_forall_nonneg_inner {n : ℕ} (hn : Module.finrank
   simp only [hnorm, one_pow, RCLike.ofReal_one, mul_one] at h
   exact h
 
-/-- **Eigenvalues of a positive definite operator are positive.** Eigenvalues of a positive definite symmetric operator are positive. -/
+/-- Eigenvalues of a positive definite symmetric operator are positive. -/
 theorem eigenvalues_pos_of_forall_pos_inner {n : ℕ} (hn : Module.finrank ℂ E = n)
     {T : E →ₗ[ℂ] E} (hT : T.IsSymmetric)
     (hTpos : ∀ x, x ≠ 0 → 0 < RCLike.re (inner (𝕜 := ℂ) x (T x))) (j : Fin n) :
@@ -226,7 +226,7 @@ theorem eigenvalues_pos_of_forall_pos_inner {n : ℕ} (hn : Module.finrank ℂ E
   simp only [hnorm, one_pow, RCLike.ofReal_one, mul_one] at h
   exact h
 
-/-- **Entropy tangent bound in an arbitrary orthonormal basis.** The entropy tangent bound in an arbitrary orthonormal basis. Its diagonal entries
+/-- The entropy tangent bound in an arbitrary orthonormal basis. Its diagonal entries
 need not align with the eigenvalues of `S`; `klein_entropy` supplies the aligned
 quantum-relative-entropy form. -/
 theorem klein_entropy_tangent {n : ℕ} (hn : Module.finrank ℂ E = n)
@@ -255,7 +255,7 @@ theorem klein_entropy_tangent {n : ℕ} (hn : Module.finrank ℂ E = n)
     fun i => Real.deriv_mul_log (ne_of_gt (hμSpos i))
   simpa only [hderiv] using h
 
-/-- **Klein's entropy inequality.** Klein's entropy inequality in the eigenbasis of `S`. The eigenvalue at index `i`
+/-- Klein's entropy inequality in the eigenbasis of `S`. The eigenvalue at index `i`
 is paired with its eigenvector, so this is the quantum-relative-entropy form up to
 the trace terms. In particular, its tangent correction vanishes when `T = S`. -/
 theorem klein_entropy {n : ℕ} (hn : Module.finrank ℂ E = n)

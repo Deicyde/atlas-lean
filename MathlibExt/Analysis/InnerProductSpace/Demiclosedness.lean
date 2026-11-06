@@ -125,7 +125,7 @@ theorem demiclosedness_of_lipschitzWith_one (T : E → E) (hT : LipschitzWith 1 
   simp only [add_zero, mul_zero] at hle_lim
   exact absurd hle_lim (not_le.mpr (sq_pos_of_pos hdpos))
 
-/-- **Fixed points of a nonexpansive map are weakly sequentially closed.** The fixed-point set of a nonexpansive map is weakly sequentially
+/-- The fixed-point set of a nonexpansive map is weakly sequentially
 closed: if every `u n` is a fixed point of `T` and `u n ⇀ x` weakly,
 then `T x = x`. -/
 theorem fixedPoint_of_weakly_tendsto_of_forall_fixedPoint (T : E → E)

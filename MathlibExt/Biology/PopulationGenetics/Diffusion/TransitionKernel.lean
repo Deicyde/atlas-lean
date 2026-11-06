@@ -36,7 +36,7 @@ namespace MathlibExt.Biology.PopulationGenetics.Diffusion.WrightFisherSemigroup
 open MathlibExt.Probability.PositiveOperatorKernel
 open MathlibExt.Biology.PopulationGenetics.Coalescent.KingmanBlockCounting
 
-/-- **Wright–Fisher semigroup as a positive operator.** The Wright–Fisher semigroup bundled as a positive continuous linear operator. -/
+/-- The Wright–Fisher semigroup bundled as a positive continuous linear operator. -/
 noncomputable def wfSemigroupPositive (t : ℝ) : C(I, ℝ) →P[ℝ] C(I, ℝ) :=
   PositiveContinuousLinearMap.mk
     (PositiveLinearMap.mk (wfSemigroup t).toLinearMap fun f g hfg => by
@@ -49,25 +49,25 @@ noncomputable def wfSemigroupPositive (t : ℝ) : C(I, ℝ) →P[ℝ] C(I, ℝ) 
       exact sub_nonneg.mp hx)
     (wfSemigroup t).continuous
 
-/-- **Action of the positive Wright–Fisher operator.** Bundling the operator as positive leaves its action on continuous functions unchanged. -/
+/-- Bundling the operator as positive leaves its action on continuous functions unchanged. -/
 @[simp]
 theorem wfSemigroupPositive_apply (t : ℝ) (f : C(I, ℝ)) :
     wfSemigroupPositive t f = wfSemigroup t f :=
   rfl
 
-/-- **Positive Wright–Fisher operator fixes constants.** The positive Wright–Fisher operator fixes the constant function `1`. -/
+/-- The positive Wright–Fisher operator fixes the constant function `1`. -/
 @[simp]
 theorem wfSemigroupPositive_apply_one (t : ℝ) : wfSemigroupPositive t 1 = 1 := by
   simpa only [wfSemigroupPositive_apply] using wfSemigroup_apply_one t
 
-/-- **Semigroup law for the positive Wright–Fisher operator.** The positive-operator form of the Wright–Fisher semigroup law. -/
+/-- The positive-operator form of the Wright–Fisher semigroup law. -/
 theorem wfSemigroupPositive_add {s t : ℝ} (hs : 0 ≤ s) (ht : 0 ≤ t) :
     wfSemigroupPositive (s + t) =
       (wfSemigroupPositive s).comp (wfSemigroupPositive t) := by
   ext f x
   simp [wfSemigroup_add hs ht]
 
-/-- **Transition kernel of the neutral Wright–Fisher diffusion.** The transition kernel of the neutral Wright–Fisher diffusion at time `t`. For nonnegative `t`
+/-- The transition kernel of the neutral Wright–Fisher diffusion at time `t`. For nonnegative `t`
 it is the probabilistic transition corresponding to `wfSemigroup t`; for negative `t`, both the
 operator and kernel are the identity junk value inherited from `wfSemigroup`. -/
 noncomputable def wfTransitionKernel (t : ℝ) : Kernel I I :=
@@ -79,14 +79,14 @@ noncomputable instance isMarkovKernel_wfTransitionKernel (t : ℝ) :
   rw [wfTransitionKernel]
   infer_instance
 
-/-- **Wright–Fisher transition kernel represents the semigroup.** Integration against the transition kernel agrees with the Wright–Fisher semigroup on every
+/-- Integration against the transition kernel agrees with the Wright–Fisher semigroup on every
 continuous test function and every initial allele frequency. -/
 @[simp]
 theorem integral_wfTransitionKernel (t : ℝ) (f : C(I, ℝ)) (x : I) :
     ∫ y, f y ∂wfTransitionKernel t x = wfSemigroup t f x := by
   rw [wfTransitionKernel, integral_markovKernelOfPositiveOperator, wfSemigroupPositive_apply]
 
-/-- **Wright–Fisher transition kernel is the identity at nonpositive times.** For nonpositive times, the Wright–Fisher transition is the identity kernel. -/
+/-- For nonpositive times, the Wright–Fisher transition is the identity kernel. -/
 theorem wfTransitionKernel_of_nonpos {t : ℝ} (ht : t ≤ 0) :
     wfTransitionKernel t = (Kernel.id : Kernel I I) := by
   apply kernel_ext_of_forall_integral_continuous_eq
@@ -94,17 +94,17 @@ theorem wfTransitionKernel_of_nonpos {t : ℝ} (ht : t ≤ 0) :
   rw [integral_wfTransitionKernel, wfSemigroup_of_nonpos ht, Kernel.id_apply]
   simp
 
-/-- **Wright–Fisher transition kernel is the identity at time zero.** At time zero the Wright–Fisher transition is the identity kernel. -/
+/-- At time zero the Wright–Fisher transition is the identity kernel. -/
 @[simp]
 theorem wfTransitionKernel_zero : wfTransitionKernel 0 = (Kernel.id : Kernel I I) :=
   wfTransitionKernel_of_nonpos le_rfl
 
-/-- **Wright–Fisher transitions at time zero are Dirac masses.** Pointwise identity law for the transition kernel at time zero. -/
+/-- Pointwise identity law for the transition kernel at time zero. -/
 @[simp]
 theorem wfTransitionKernel_zero_apply (x : I) : wfTransitionKernel 0 x = Measure.dirac x := by
   rw [wfTransitionKernel_zero, Kernel.id_apply]
 
-/-- **Chapman–Kolmogorov equation for the Wright–Fisher diffusion.** Chapman–Kolmogorov law for the Wright–Fisher transition kernels. With Mathlib's convention,
+/-- Chapman–Kolmogorov law for the Wright–Fisher transition kernels. With Mathlib's convention,
 `K_t ∘ₖ K_s` first evolves for time `s` and then for time `t`. -/
 theorem wfTransitionKernel_add {s t : ℝ} (hs : 0 ≤ s) (ht : 0 ≤ t) :
     wfTransitionKernel (s + t) = wfTransitionKernel t ∘ₖ wfTransitionKernel s := by
@@ -112,7 +112,7 @@ theorem wfTransitionKernel_add {s t : ℝ} (hs : 0 ≤ s) (ht : 0 ≤ t) :
   simp_rw [wfSemigroupPositive_add hs ht]
   exact markovKernelOfPositiveOperator_comp _ _ _ _
 
-/-- **Kernel form of Wright–Fisher moment duality.** Kernel form of Wright–Fisher moment duality: transition-kernel moments are the transition
+/-- Kernel form of Wright–Fisher moment duality: transition-kernel moments are the transition
 probabilities of Kingman's block-counting process. -/
 theorem integral_wfTransitionKernel_X_pow {t : ℝ} (ht : 0 ≤ t) (n : ℕ) (x : I) :
     ∫ y, ((Polynomial.X ^ n : Polynomial ℝ).toContinuousMapOn I) y ∂wfTransitionKernel t x =

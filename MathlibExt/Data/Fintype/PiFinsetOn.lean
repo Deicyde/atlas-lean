@@ -31,12 +31,12 @@ namespace Fintype
 
 variable {ι σ : Type*} [Fintype ι] [DecidableEq ι]
 
-/-- **Finite tuples with prescribed default values.** Finite tuples constrained on `P` and equal to a prescribed default elsewhere. -/
+/-- Finite tuples constrained on `P` and equal to a prescribed default elsewhere. -/
 def piFinsetOn (P : ι → Prop) [DecidablePred P] (T : ι → Finset σ) (d : σ) :
     Finset (ι → σ) :=
   piFinset fun i => if P i then T i else {d}
 
-/-- **Membership in default-padded finite tuples.** Membership gives the allowed values on the active indices and the default off them. -/
+/-- Membership gives the allowed values on the active indices and the default off them. -/
 @[simp] theorem mem_piFinsetOn (P : ι → Prop) [DecidablePred P]
     (T : ι → Finset σ) (d : σ) (t : ι → σ) :
     t ∈ piFinsetOn P T d ↔ ∀ i, (P i → t i ∈ T i) ∧ (¬P i → t i = d) := by
@@ -45,7 +45,7 @@ def piFinsetOn (P : ι → Prop) [DecidablePred P] (T : ι → Finset σ) (d : �
   refine forall_congr' fun i => ?_
   split_ifs with h <;> simp [h]
 
-/-- **Number of default-padded finite tuples.** Inactive coordinates contribute one choice, so only active coordinates enter the product. -/
+/-- Inactive coordinates contribute one choice, so only active coordinates enter the product. -/
 theorem card_piFinsetOn (P : ι → Prop) [DecidablePred P]
     (T : ι → Finset σ) (d : σ) :
     (piFinsetOn P T d).card = ∏ i with P i, (T i).card := by
@@ -54,7 +54,7 @@ theorem card_piFinsetOn (P : ι → Prop) [DecidablePred P]
   refine Finset.prod_congr rfl fun i _ => ?_
   split_ifs <;> simp
 
-/-- **Product of sums over default-padded tuples.** Distribute a product of finite sums over the default-padded tuples of choices. -/
+/-- Distribute a product of finite sums over the default-padded tuples of choices. -/
 theorem sum_piFinsetOn_prod {R : Type*} [CommSemiring R]
     (P : ι → Prop) [DecidablePred P] (T : ι → Finset σ) (d : σ) (H : ι → σ → R) :
     ∑ t ∈ piFinsetOn P T d, ∏ i with P i, H i (t i) =
@@ -67,7 +67,7 @@ theorem sum_piFinsetOn_prod {R : Type*} [CommSemiring R]
   refine Finset.prod_congr rfl fun i _ => ?_
   split_ifs with hi <;> simp
 
-/-- **Products of factorized functions over label tuples.** Products of factorized functions factor through the tuples of their labels. -/
+/-- Products of factorized functions factor through the tuples of their labels. -/
 theorem prod_sum_eq_sum_piFinsetOn_mul {R : Type*} [CommSemiring R]
     (P : ι → Prop) [DecidablePred P] (T : ι → Finset σ) (d : σ)
     (f g : ι → σ → R) :
@@ -76,7 +76,7 @@ theorem prod_sum_eq_sum_piFinsetOn_mul {R : Type*} [CommSemiring R]
   rw [← sum_piFinsetOn_prod P T d]
   simp only [Finset.prod_mul_distrib]
 
-/-- **Unique default completion of active coordinates.** Prescribed active coordinates have exactly one completion with the chosen default. -/
+/-- Prescribed active coordinates have exactly one completion with the chosen default. -/
 theorem existsUnique_piFinsetOn (P : ι → Prop) [DecidablePred P]
     (T : ι → Finset σ) (d : σ) (t : ι → σ) (ht : ∀ i, P i → t i ∈ T i) :
     ∃! b : ι → σ, b ∈ piFinsetOn P T d ∧ ∀ i, P i → b i = t i := by

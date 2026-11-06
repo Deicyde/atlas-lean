@@ -64,7 +64,7 @@ open StatMech.Percolation (origin percolationEvent mem_percolationEvent)
 
 variable {ω : ConfigSpace (Sym2 (Site 2))}
 
-/-- **Undirected lattice edge of a dart.** The undirected lattice edge underlying a dart. -/
+/-- The undirected lattice edge underlying a dart. -/
 def dartPrimalEdge (e : Dart) : Sym2 (Site 2) := s(e.tail, e.head)
 
 @[simp] theorem dartPrimalEdge_eq (e : Dart) : dartPrimalEdge e = s(e.tail, e.head) := rfl
@@ -77,7 +77,7 @@ theorem boundaryDart_primalEdge_isClosed (o : Site 2) {e : Dart}
     exact ⟨e.adj, iff_of_true he.1 he.2⟩
   exact cluster_edgeBoundary_isClosed o hbd
 
-/-- **Canonical contour of a finite origin cluster.** The canonical contour of a finite origin cluster: the closed walk around the boundary orbit
+/-- The canonical contour of a finite origin cluster: the closed walk around the boundary orbit
 of the exit dart on the positive axis. -/
 noncomputable def canonicalContour (hfin : (cluster 2 ω (origin 2)).Finite) :
     (dartSuccGraph (cluster 2 ω (origin 2))).Walk
@@ -111,7 +111,7 @@ theorem orbitDart_primalEdge_isClosed (hfin : (cluster 2 ω (origin 2)).Finite) 
       = false :=
   boundaryDart_primalEdge_isClosed (origin 2) (orbitDart_isBoundaryDart (ω := ω) hfin n)
 
-/-- **Darts of the canonical contour.** The darts of one period of the boundary orbit of the exit dart. -/
+/-- The darts of one period of the boundary orbit of the exit dart. -/
 noncomputable def canonicalContourDarts (hfin : (cluster 2 ω (origin 2)).Finite) : List Dart :=
   (List.range (dartOrbitPeriod (cluster 2 ω (origin 2))
       ⟨exitDart (ω := ω) hfin, exitDart_isBoundaryDart (ω := ω) hfin⟩)).map
@@ -128,12 +128,12 @@ theorem mem_canonicalContourDarts_iff (hfin : (cluster 2 ω (origin 2)).Finite) 
   · rintro ⟨k, hk, rfl⟩; exact ⟨k, List.mem_range.mp hk, rfl⟩
   · rintro ⟨k, hk, rfl⟩; exact ⟨k, List.mem_range.mpr hk, rfl⟩
 
-/-- **Primal edges of the canonical contour.** The primal edges of the canonical contour. -/
+/-- The primal edges of the canonical contour. -/
 noncomputable def canonicalPrimalEdgeFinset (hfin : (cluster 2 ω (origin 2)).Finite) :
     Finset (Sym2 (Site 2)) :=
   ((canonicalContourDarts (ω := ω) hfin).map dartPrimalEdge).toFinset
 
-/-- **Event that every edge of the canonical contour is closed.** The set of configurations in which every primal edge of the canonical contour of `ω` is
+/-- The set of configurations in which every primal edge of the canonical contour of `ω` is
 closed. -/
 def closedDartContourEvent (hfin : (cluster 2 ω (origin 2)).Finite) :
     Set (ConfigSpace (Sym2 (Site 2))) :=
@@ -225,7 +225,7 @@ theorem measure_closedDartContourEvent_period (p : ℝ≥0) (hp : p ≤ 1)
           ⟨exitDart (ω := ω) hfin, exitDart_isBoundaryDart (ω := ω) hfin⟩) := by
   rw [measure_closedDartContourEvent p hp hfin, canonicalPrimalEdgeFinset_card]
 
-/-- **Canonical contour is longer than the exit index.** The period of the canonical contour exceeds the exit index, the length condition of an
+/-- The period of the canonical contour exceeds the exit index, the length condition of an
 anchored enclosure. -/
 def CanonicalContourWinds (ω : ConfigSpace (Sym2 (Site 2)))
     (hfin : (cluster 2 ω (origin 2)).Finite) : Prop :=
@@ -233,7 +233,7 @@ def CanonicalContourWinds (ω : ConfigSpace (Sym2 (Site 2)))
     < dartOrbitPeriod (cluster 2 ω (origin 2))
         ⟨exitDart (ω := ω) hfin, exitDart_isBoundaryDart (ω := ω) hfin⟩
 
-/-- **Face walk along the first successors of a boundary dart.** The walk of faces to the left of the first `n` successors of a boundary dart. -/
+/-- The walk of faces to the left of the first `n` successors of a boundary dart. -/
 noncomputable def canonicalFaceWalkAux (K : Set (Site 2)) (e : Dart) (he : IsBoundaryDart K e) :
     (n : ℕ) → (faceBoundaryGraph K).Walk (dartFace e) (dartFace ((dartNext K)^[n] e))
   | 0 => SimpleGraph.Walk.nil
@@ -248,7 +248,7 @@ theorem canonicalFaceWalkAux_length (K : Set (Site 2)) (e : Dart) (he : IsBounda
   | zero => rfl
   | succ m ih => simp only [canonicalFaceWalkAux, SimpleGraph.Walk.length_concat, ih]
 
-/-- **Closed face walk of the canonical contour.** The closed walk of faces to the left of the darts of the canonical contour, based at the
+/-- The closed walk of faces to the left of the darts of the canonical contour, based at the
 upper exit face. -/
 noncomputable def canonicalFaceWalk (hfin : (cluster 2 ω (origin 2)).Finite) :
     (faceBoundaryGraph (cluster 2 ω (origin 2))).Walk
@@ -281,7 +281,7 @@ theorem canonicalFaceWalk_basepoint_mem_anchorFinset (hfin : (cluster 2 ω (orig
   rw [canonicalFaceWalk_length]
   exact exitFaceUp_mem_anchorFinset (ω := ω) hfin hwind
 
-/-- **$p_c(\mathbb{Z}^2) < 1$ via the canonical contour, assuming anchored cycles.** `p_c(ℤ²) < 1`, under the hypothesis that `AnchoredCycleExists` holds for every configuration
+/-- `p_c(ℤ²) < 1`, under the hypothesis that `AnchoredCycleExists` holds for every configuration
 with a finite origin cluster. The hypothesis is not proved here. -/
 theorem pc_lt_one_via_canonicalContour
     (hres : ∀ (ω : ConfigSpace (Sym2 (Site 2))) (hfin : (cluster 2 ω (origin 2)).Finite),

@@ -286,7 +286,7 @@ private theorem aesm_summand
   rw [heq]
   exact hXn_aesm.indicator hset
 
-/-- **Integrability of the stopped sum in Wald's equation.** Under Wald's hypotheses, the stopped sum is integrable. This reuses
+/-- Under Wald's hypotheses, the stopped sum is integrable. This reuses
 Wald's summable `L¹` series and applies Mathlib's sum measurability and norm bound. -/
 theorem wald_integrable_stopped_sum
     {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω} [IsProbabilityMeasure μ]

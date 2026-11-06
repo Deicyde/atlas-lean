@@ -16,23 +16,17 @@ namespace Complex
 
 noncomputable section
 
-/-- **Radial majorant.** For a function $f : \mathbb{C} \to \mathbb{C}$ with Taylor coefficients
-$a_n = f^{(n)}(0) / n!$ at the origin and a real number $r$, the radial majorant of $f$ at $r$ is
-$M_f(r) = \sum_{n \ge 0} |a_n| \, |r|^n$, the sum of the radial Taylor terms at radius $|r|$.
-By convention $M_f(r) = 0$ when this series diverges. -/
+/-- The positive radial majorant formed from the norms of the Taylor coefficients at radius
+`|r|`. -/
 def wimanMajorant (f : ℂ → ℂ) (r : ℝ) : ℝ :=
   ∑' n, wimanTerm f r n
 
-/-- **Radial Taylor terms are nonnegative.** For every function $f : \mathbb{C} \to \mathbb{C}$
-with Taylor coefficients $a_n = f^{(n)}(0) / n!$ at the origin, every real $r$ and every
-$n \in \mathbb{N}$, we have $0 \le |a_n| \, |r|^n$. -/
+/-- Every normalized radial Taylor term is nonnegative. -/
 theorem wimanTerm_nonneg (f : ℂ → ℂ) (r : ℝ) (n : ℕ) :
     0 ≤ wimanTerm f r n := by
   exact mul_nonneg (norm_nonneg _) (pow_nonneg (abs_nonneg r) _)
 
-/-- **Summability of the radial Taylor terms.** Let $f$ be an entire function with Taylor
-coefficients $a_n = f^{(n)}(0) / n!$ at the origin. For every real $r$, the series
-$\sum_{n \ge 0} |a_n| \, |r|^n$ converges. -/
+/-- The radial Taylor terms of an entire function are absolutely summable. -/
 theorem summable_wimanTerm
     (f : ℂ → ℂ) (hf : Differentiable ℂ f) (r : ℝ) :
     Summable (wimanTerm f r) := by
@@ -56,18 +50,12 @@ theorem summable_wimanTerm
   rw [hcoeff, wimanTerm, norm_mul, norm_pow]
   simp only [Complex.norm_real, Real.norm_eq_abs, abs_abs]
 
-/-- **The radial majorant is nonnegative.** For every function $f : \mathbb{C} \to \mathbb{C}$ with
-Taylor coefficients $a_n = f^{(n)}(0) / n!$ at the origin and every real number $r$, the radial
-majorant $M_f(r) = \sum_{n \ge 0} |a_n| \, |r|^n$ (taken to be $0$ when the series diverges)
-satisfies $0 \le M_f(r)$. -/
+/-- The normalized radial majorant is nonnegative. -/
 theorem wimanMajorant_nonneg (f : ℂ → ℂ) (r : ℝ) :
     0 ≤ wimanMajorant f r := by
   exact tsum_nonneg fun n => wimanTerm_nonneg f r n
 
-/-- **Each radial Taylor term is at most the radial majorant.** Let $f$ be an entire function with
-Taylor coefficients $a_n = f^{(n)}(0) / n!$ at the origin, and let
-$M_f(r) = \sum_{k \ge 0} |a_k| \, |r|^k$ be its radial majorant. For every real $r$ and every
-$n \in \mathbb{N}$, $|a_n| \, |r|^n \le M_f(r)$. -/
+/-- Each Taylor term is bounded by the radial majorant. -/
 theorem wimanTerm_le_wimanMajorant
     (f : ℂ → ℂ) (hf : Differentiable ℂ f) (r : ℝ) (n : ℕ) :
     wimanTerm f r n ≤ wimanMajorant f r := by

@@ -55,7 +55,7 @@ private theorem smul_iUnion_inv_smul {G X ι : Type*} [Group G] [MulAction G X]
   refine Set.iUnion_congr fun i => ?_
   rw [smul_smul]
 
-/-- **Fundamental domain for a subgroup of countable index.** From a fundamental domain for `Γ₁`, a countable union of inverse
+/-- From a fundamental domain for `Γ₁`, a countable union of inverse
 coset-representative translates gives a fundamental domain for a subgroup
 `Γ₂ ≤ Γ₁` of countable index. -/
 theorem MeasureTheory.IsFundamentalDomain.iUnion_inv_smul_of_leftCosetRepresentatives

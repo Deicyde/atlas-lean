@@ -58,17 +58,17 @@ namespace MathlibExt.Biology.CancerGenomics.SaturationPower
 
 open Finset Filter Topology MathlibExt.Biology.CancerGenomics.DetectionPower
 
-/-- **Saturation power of the binomial gene discovery test.** Power of the one-sided binomial test of Lawrence et al. (2014): the probability, when each
+/-- Power of the one-sided binomial test of Lawrence et al. (2014): the probability, when each
 of `N` patients is mutated with probability `p₁`, of observing a count `x` whose background
 p-value `ℙ_{p₀}(X ≥ x)` is at most `γ`. -/
 noncomputable def saturationPower (N : ℕ) (p₀ p₁ γ : ℝ) : ℝ :=
   ∑ x ∈ range (N + 1) with upperTail N p₀ x ≤ γ, binomPmf N p₁ x
 
-/-- **Background mutation probability per patient.** Background probability `p₀ = 1 - (1 - μ f_g)^(3L/4)` that a patient carries at least one
+/-- Background probability `p₀ = 1 - (1 - μ f_g)^(3L/4)` that a patient carries at least one
 non-silent background mutation in a gene of `L` coding bases (Lawrence et al. 2014). -/
 noncomputable def lawrenceP0 (μ fg L : ℝ) : ℝ := 1 - (1 - μ * fg) ^ (3 * L / 4)
 
-/-- **Signal mutation probability per patient.** Signal probability `p₁ = p₀ + r (1 - m)` for a gene mutated in a fraction `r` of patients
+/-- Signal probability `p₁ = p₀ + r (1 - m)` for a gene mutated in a fraction `r` of patients
 above background, with miss rate `m` (Lawrence et al. 2014). -/
 def lawrenceP1 (p₀ r m : ℝ) : ℝ := p₀ + r * (1 - m)
 
@@ -187,7 +187,7 @@ theorem eventually_le_saturationPower {p₀ p₁ γ β : ℝ} (hp₀ : 0 ≤ p�
   have := (tendsto_saturationPower hp₀ hp₀₁ hp₁ hγ).eventually (Ici_mem_nhds hβ)
   simpa using this
 
-/-- **Background mutation probability lies in [0, 1).** The background probability is a probability below one: `0 ≤ p₀ < 1` for
+/-- The background probability is a probability below one: `0 ≤ p₀ < 1` for
 `0 ≤ μ f_g < 1` and `L ≥ 0`. -/
 theorem lawrenceP0_mem {μ fg L : ℝ} (h0 : 0 ≤ μ * fg) (h1 : μ * fg < 1) (hL : 0 ≤ L) :
     0 ≤ lawrenceP0 μ fg L ∧ lawrenceP0 μ fg L < 1 := by
@@ -200,7 +200,7 @@ theorem lawrenceP0_mem {μ fg L : ℝ} (h0 : 0 ≤ μ * fg) (h1 : μ * fg < 1) (
   · have : 0 < (1 - μ * fg) ^ (3 * L / 4) := Real.rpow_pos_of_pos hb0 _
     linarith
 
-/-- **Driver genes raise the per-patient mutation probability.** A driver mutated above background raises the per-patient probability:
+/-- A driver mutated above background raises the per-patient probability:
 `p₀ < p₀ + r (1 - m)` for `r > 0` and `m < 1`. -/
 theorem lawrenceP0_lt_lawrenceP1 {p₀ r m : ℝ} (hr : 0 < r) (hm : m < 1) :
     p₀ < lawrenceP1 p₀ r m := by

@@ -36,7 +36,7 @@ open MathlibExt.Probability.MarkovChainConstruction
 
 namespace MathlibExt.Probability.FiniteMarkovChain
 
-/-- **Canonical Markov law started from a point starts there almost surely.** The canonical Markov law with initial distribution `dirac i` starts at `i`
+/-- The canonical Markov law with initial distribution `dirac i` starts at `i`
 almost surely. Its initial marginal is supplied by the existing construction. -/
 theorem ae_eval_zero_markovChainMeasure {M : ℕ} (P : StochasticMatrix M)
     (i : Fin (M + 1)) :
@@ -66,7 +66,7 @@ private theorem integral_finite_indicator {M : ℕ} (P : StochasticMatrix M)
     (finiteChainKernel_apply P k ({j} : Finset (Fin (M + 1))))
   simpa [ENNReal.toReal_ofReal (P.nonneg k j)] using h
 
-/-- **Canonical Markov law satisfies the finite Markov chain specification.** The coordinate process under the existing canonical matrix-derived Markov law
+/-- The coordinate process under the existing canonical matrix-derived Markov law
 satisfies the original finite-state Markov-chain specification on `Filtration.piLE`. -/
 theorem isFiniteMarkovChain_markovChainMeasure {M : ℕ} (P : StochasticMatrix M)
     (i : Fin (M + 1)) :

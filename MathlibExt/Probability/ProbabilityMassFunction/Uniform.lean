@@ -44,9 +44,7 @@ open scoped ENNReal
 
 variable {α : Type*}
 
-/-- **Uniform distribution on a finite set.** For a nonempty finite subset $s$ of a type $\alpha$,
-the uniform distribution on $s$ is the probability mass function on $\alpha$ that gives mass
-$1/|s|$ to each element of $s$ and mass $0$ to every other element of $\alpha$. -/
+/-- Equal mass on a nonempty finite set, with zero mass outside it. -/
 noncomputable def uniformFinset (s : Finset α) (hs : s.Nonempty) : PMF α := by
   classical
   refine ofFinset (fun a => if a ∈ s then (s.card : ℝ≥0∞)⁻¹ else 0) s ?_ ?_
@@ -66,9 +64,7 @@ open scoped Classical in
   classical
   rw [uniformFinset_apply, if_pos ha]
 
-/-- **Uniform distribution on a finite type.** For a nonempty finite type $\alpha$, the uniform
-distribution on $\alpha$ is the probability mass function on $\alpha$ that gives mass $1/|\alpha|$
-to every element of $\alpha$. -/
+/-- Equal mass on every element of a nonempty finite type. -/
 noncomputable def uniformFintype (α : Type*) [Fintype α] [Nonempty α] : PMF α :=
   ofFintype (fun _ => (Fintype.card α : ℝ≥0∞)⁻¹) (by
     simp only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul]
@@ -81,18 +77,13 @@ variable [Fintype α] [Nonempty α]
 @[simp] theorem uniformFintype_apply (a : α) :
     uniformFintype α a = (Fintype.card α : ℝ≥0∞)⁻¹ := rfl
 
-/-- **Uniform distribution on the whole finite type.** For a nonempty finite type $\alpha$, the
-uniform distribution on the finite set of all elements of $\alpha$ equals the uniform
-distribution on $\alpha$. -/
+/-- Sampling the full finite set agrees with sampling its ambient finite type. -/
 @[simp] theorem uniformFinset_univ :
     uniformFinset (Finset.univ : Finset α) Finset.univ_nonempty = uniformFintype α := by
   ext a
   simp
 
-/-- **Outer measure of an event under the uniform distribution.** Let $\alpha$ be a nonempty finite
-type. For every subset $s \subseteq \alpha$, the outer measure associated to the uniform
-distribution on $\alpha$ assigns to $s$ the value $|s| / |\alpha|$, computed in the extended
-nonnegative reals. -/
+/-- Outer measure is the fraction of outcomes belonging to the event. -/
 theorem toOuterMeasure_uniformFintype_apply (s : Set α) [Fintype s] :
     (uniformFintype α).toOuterMeasure s =
       (Fintype.card s : ℝ≥0∞) / (Fintype.card α : ℝ≥0∞) := by
@@ -102,10 +93,7 @@ theorem toOuterMeasure_uniformFintype_apply (s : Set α) [Fintype s] :
   rw [← Finset.sum_filter, Finset.sum_const, nsmul_eq_mul,
     ← Fintype.card_subtype (fun a => a ∈ s), div_eq_mul_inv]
 
-/-- **Probability of an event under the uniform distribution.** Let $\alpha$ be a nonempty finite
-type carrying a σ-algebra. For every measurable set $s \subseteq \alpha$, the probability measure
-associated to the uniform distribution on $\alpha$ gives $s$ the measure $|s| / |\alpha|$, computed
-in the extended nonnegative reals. -/
+/-- Every measurable event has its counting probability. -/
 theorem toMeasure_uniformFintype_apply (s : Set α) [MeasurableSpace α]
     (hs : MeasurableSet s) [Fintype s] :
     (uniformFintype α).toMeasure s =

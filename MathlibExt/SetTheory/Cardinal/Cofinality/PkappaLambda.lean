@@ -32,13 +32,13 @@ namespace MetaMathlibExt
 
 -- Logic 55: Subsets of $lambda$ of size less than $\kappa$
 
-/-- **Subsets of $\lambda$ of size less than $\kappa$.** P_κ(λ) := { x ⊆ λ ∣ |x| < κ } -/
+/-- P_κ(λ) := { x ⊆ λ ∣ |x| < κ } -/
 def powersetCardLT.{u} (κ lam : Cardinal.{u}) : Set (Set (Set.Iio lam.ord)) :=
   {x | #x < Cardinal.lift.{u+1} κ}
 
 -- Logic 56: Club in P_κ(λ)
 
-/-- **Club subset of $P_\kappa(\lambda)$.** C ⊆ P_κ(λ) is club iff
+/-- C ⊆ P_κ(λ) is club iff
 
 1. C is ⊆-cofinal: ∀ x ∈ P_κ(λ)  ∃ y ∈ C  (x ⊆ y), and
 1. C is closed under unions of nonempty ⊆-directed subfamilies of size < κ: for every nonempty

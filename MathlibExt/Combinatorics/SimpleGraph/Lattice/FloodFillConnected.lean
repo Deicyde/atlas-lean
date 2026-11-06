@@ -41,7 +41,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Square lattice with a set of vertices removed.** The square lattice with every vertex of `B` removed (edges with an endpoint in `B` deleted). -/
+/-- The square lattice with every vertex of `B` removed (edges with an endpoint in `B` deleted). -/
 def ffc_offSupportLattice (B : Set (Site 2)) : SimpleGraph (Site 2) where
   Adj x y := (hypercubicLattice 2).Adj x y ∧ x ∉ B ∧ y ∉ B
   symm := by
@@ -81,7 +81,7 @@ theorem ffc_project_walk {B : Set (Site 2)} {x y : Site 2}
     exact ffc_offSupportWalk_support w hx z hz
   · rw [SimpleGraph.Walk.support_mapLe_eq_support]
 
-/-- **Lattice walk avoiding a set, lifted to the reduced lattice.** A lattice walk avoiding `B`, viewed as a walk in `ffc_offSupportLattice B`. -/
+/-- A lattice walk avoiding `B`, viewed as a walk in `ffc_offSupportLattice B`. -/
 def ffc_lift_walk {B : Set (Site 2)} :
     ∀ {x y : Site 2} (p : (hypercubicLattice 2).Walk x y),
       (∀ z ∈ p.support, z ∉ B) → (ffc_offSupportLattice B).Walk x y
@@ -103,7 +103,7 @@ theorem ffc_reachable_iff_offSupportWalk {B : Set (Site 2)} {x y : Site 2} (hx :
   · rintro ⟨p, hp⟩
     exact ⟨ffc_lift_walk p hp⟩
 
-/-- **Flood fill avoiding a set of sites.** The flood fill of `seed` avoiding `B`: the sites reachable from `seed` in the lattice with
+/-- The flood fill of `seed` avoiding `B`: the sites reachable from `seed` in the lattice with
 `B` removed. -/
 def ffc_floodFill (B : Set (Site 2)) (seed : Site 2) : Set (Site 2) :=
   {z | (ffc_offSupportLattice B).Reachable seed z}

@@ -83,7 +83,7 @@ theorem pww_crossCount_eq_of_bdEdge_match (S T : Set (Site 2))
   simp only [decide_eq_true_eq]
   exact hbd e
 
-/-- **Set and walk interior share boundary edges.** The set `K` and the inside `jec_leftRegion Vc` of the closed walk `Vc` have the same boundary
+/-- The set `K` and the inside `jec_leftRegion Vc` of the closed walk `Vc` have the same boundary
 edges. -/
 def pww_BdEdgeMatch (K : Set (Site 2)) {a : Site 2} (Vc : (hypercubicLattice 2).Walk a a) : Prop :=
   ∀ e : Sym2 (Site 2), bdEdge K e ↔ bdEdge (jec_leftRegion Vc) e

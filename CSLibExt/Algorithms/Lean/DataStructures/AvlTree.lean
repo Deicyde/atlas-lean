@@ -39,11 +39,7 @@ universe u
 namespace Cslib.Algorithms.Lean
 namespace AvlTree
 
-/-- **Binary trees with cached heights.** For a type $\alpha$, a tree with cached heights over
-$\alpha$ (the underlying type of AVL trees) is either empty, or a node made of a natural
-number $h$ (its cached height), a left subtree, a key in $\alpha$ and a right subtree.
-
-The type does not require $h$ to equal the actual height of the node. -/
+/-- A binary tree with a cached height stored at each node. -/
 public inductive Tree (α : Type u) where
   | empty : Tree α
   | node (height : Nat) (left : Tree α) (key : α) (right : Tree α) : Tree α
@@ -51,17 +47,12 @@ deriving DecidableEq, Repr
 
 variable {α : Type u}
 
-/-- **Cached height of an AVL tree.** The cached height of the empty tree is $0$, and the cached
-height of a node is the height value stored at that node, so it is read off the root in
-constant time. -/
+/-- The cached height of a tree, read off the root in constant time. -/
 public def height : Tree α → Nat
   | .empty => 0
   | .node cached _ _ _ => cached
 
-/-- **AVL node with computed height.** Write $h(T)$ for the cached height at the root of a tree
-$T$, with $h$ of the empty tree equal to $0$. Given trees $L$ and $R$ and a key $k$, this is the
-node with left subtree $L$, key $k$ and right subtree $R$ whose cached height is
-$\max(h(L), h(R)) + 1$. -/
+/-- Construct a node whose cached height is computed from its children. -/
 public def mkNode (left : Tree α) (key : α) (right : Tree α) : Tree α :=
   .node (max (height left) (height right) + 1) left key right
 
@@ -76,32 +67,22 @@ public def mkNode (left : Tree α) (key : α) (right : Tree α) : Tree α :=
     height (mkNode left key right) = max (height left) (height right) + 1 :=
   rfl
 
-/-- **Correct cached heights.** The empty tree has correct cached heights. A node storing the
-height $c$, with left subtree $\ell$ and right subtree $r$, has correct cached heights when
-$\ell$ and $r$ have correct cached heights and $c = \max(h(\ell), h(r)) + 1$, where $h$ denotes
-the height cached at the root of a tree (and $0$ for the empty tree). -/
+/-- Cached heights agree with the defining recursion at every node. -/
 public def CacheCorrect : Tree α → Prop
   | .empty => True
   | .node cached left _ right =>
       CacheCorrect left ∧ CacheCorrect right ∧
         cached = max (height left) (height right) + 1
 
-/-- **AVL balance invariant.** The empty tree is balanced. A node with left subtree $\ell$ and
-right subtree $r$ is balanced when $\ell$ and $r$ are balanced and $h(\ell) \le h(r) + 1$ and
-$h(r) \le h(\ell) + 1$, where $h$ denotes the height cached at the root of a tree (and $0$ for the
-empty tree). Equivalently, at every node the balance factor $h(\ell) - h(r)$ lies in
-$\{-1, 0, 1\}$. -/
+/-- The AVL balance invariant: at every node, the heights of the two subtrees
+differ by at most one, so the balance factor lies in `{-1, 0, 1}`. -/
 public def Balanced : Tree α → Prop
   | .empty => True
   | .node _ left _ right =>
       Balanced left ∧ Balanced right ∧ height left ≤ height right + 1 ∧
         height right ≤ height left + 1
 
-/-- **Erasing the cached heights of an AVL tree.** Let $\alpha$ be a type. Erasing the cached
-heights sends a tree with cached heights over $\alpha$ to a binary tree over $\alpha$: the empty
-tree goes to the empty binary tree, and a node with height $h$, left subtree $L$, key $k$ and
-right subtree $R$ goes to the binary-tree node with key $k$ whose left and right subtrees are
-the erasures of $L$ and $R$. -/
+/-- Remove cached heights, yielding the underlying binary search tree. -/
 public def toBinaryTree : Tree α → BinaryTree α
   | .empty => .nil
   | .node _ left key right => .node key (toBinaryTree left) (toBinaryTree right)
@@ -121,10 +102,8 @@ public def toBinaryTree : Tree α → BinaryTree α
       .node key (toBinaryTree left) (toBinaryTree right) :=
   rfl
 
-/-- **Membership in an AVL tree.** A key $x$ belongs to a tree $T$ when $x$ belongs to the binary
-tree obtained from $T$ by erasing the cached heights. Equivalently, no key belongs to the empty
-tree, and $x$ belongs to a node with left subtree $L$, key $k$ and right subtree $R$ exactly when
-$x$ belongs to $L$, $x = k$, or $x$ belongs to $R$. -/
+/-- Structural membership, inherited from `BinarySearchTree` through
+`toBinaryTree`. -/
 public def Mem (x : α) (tree : Tree α) : Prop :=
   BinarySearchTree.Mem x (toBinaryTree tree)
 
@@ -143,32 +122,23 @@ public instance : Membership α (Tree α) :=
     x ∈ mkNode left key right ↔ x ∈ left ∨ x = key ∨ x ∈ right :=
   Iff.rfl
 
-/-- **Every key of an AVL tree satisfies a predicate.** For a predicate $p$ on keys and a tree $t$
-with cached heights, $\mathrm{All}(p, t)$ holds when $p$ holds at the key of every node of $t$. It
-is defined as the corresponding predicate on the plain binary tree obtained from $t$ by erasing
-its cached heights. -/
+/-- `All p tree` states that every key in `tree` satisfies `p`; it is
+`BinarySearchTree.All` of the cache-erased tree. -/
 public def All (p : α → Prop) (tree : Tree α) : Prop :=
   BinarySearchTree.All p (toBinaryTree tree)
 
-/-- **Ordered AVL trees.** Let $\alpha$ be a type with a relation $<$. A tree with cached
-heights over $\alpha$ is ordered when the binary tree obtained by erasing its cached heights
-is an ordered binary search tree: the empty tree is ordered, and a node with key $k$ is
-ordered when its left and right subtrees are ordered, every key of the left subtree is less
-than $k$, and every key of the right subtree is greater than $k$. -/
+/-- Every left key is smaller and every right key is larger, recursively; it is
+`BinarySearchTree.Ordered` of the cache-erased tree. -/
 public def Ordered [LT α] (tree : Tree α) : Prop :=
   BinarySearchTree.Ordered (toBinaryTree tree)
 
-/-- **Inorder traversal of an AVL tree onto a suffix.** Given a tree $t$ and a list $s$, this is
-the list of keys of $t$ in inorder (left subtree, root key, right subtree, recursively)
-followed by $s$. It is computed in linear time by the binary search tree traversal of $t$ with
-its cached heights erased. -/
+/-- Append the inorder traversal of a tree to an existing suffix in linear
+time; inherited from `BinarySearchTree` through `toBinaryTree`. -/
 public def inorderAux (tree : Tree α) (suffix : List α) : List α :=
   BinarySearchTree.inorderAux (toBinaryTree tree) suffix
 
-/-- **Inorder traversal of an AVL tree.** The inorder traversal of a tree $t$ lists its keys with
-the left subtree first, then the root key, then the right subtree, recursively. It is the
-binary search tree inorder traversal of $t$ with its cached heights erased, computed in linear
-time. -/
+/-- The linear-time inorder traversal of a tree, inherited from
+`BinarySearchTree` through `toBinaryTree`. -/
 public def inorder (tree : Tree α) : List α :=
   BinarySearchTree.inorder (toBinaryTree tree)
 
@@ -183,41 +153,31 @@ public def inorder (tree : Tree α) : List α :=
     inorder (mkNode left key right) = inorder left ++ key :: inorder right :=
   inorder_node key left right
 
-/-- **AVL membership is membership in the underlying binary tree.** A key $x$ lies in a tree $T$ if
-and only if $x$ lies in the binary tree obtained from $T$ by erasing the cached heights.
-
-This holds by definition. -/
+/-- Membership in an AVL tree is `BinarySearchTree` membership in its
+cache-erased tree, by definition. -/
 public theorem mem_toBinaryTree {x : α} {tree : Tree α} :
     x ∈ tree ↔ x ∈ toBinaryTree tree :=
   Iff.rfl
 
-/-- **The all-keys predicate is unchanged by erasing height caches.** For a predicate $p$ on keys
-and a tree $t$ with cached heights, $\mathrm{All}(p, t)$ holds if and only if $p$ holds at every
-key of the plain binary tree obtained from $t$ by erasing its cached heights. This holds by
-definition. -/
+/-- `All` on an AVL tree is `BinarySearchTree.All` of its cache-erased tree,
+by definition. -/
 public theorem all_toBinaryTree {p : α → Prop} {tree : Tree α} :
     All p tree ↔ BinarySearchTree.All p (toBinaryTree tree) :=
   Iff.rfl
 
-/-- **Order of an AVL tree via its underlying binary tree.** Let $\alpha$ be a type with a
-relation $<$. A tree $t$ with cached heights over $\alpha$ is ordered if and only if the
-binary tree obtained from $t$ by erasing the cached heights is an ordered binary search
-tree. -/
+/-- Ordering of an AVL tree is `BinarySearchTree.Ordered` of its cache-erased
+tree, by definition. -/
 public theorem ordered_toBinaryTree [LT α] {tree : Tree α} :
     Ordered tree ↔ BinarySearchTree.Ordered (toBinaryTree tree) :=
   Iff.rfl
 
-/-- **AVL inorder traversal agrees with the erased binary search tree.** For every AVL tree
-$t$, the inorder traversal of $t$ equals the binary search tree inorder traversal of the binary
-tree obtained from $t$ by erasing its cached heights; this holds by definition. -/
+/-- The inorder traversal of an AVL tree is the `BinarySearchTree` inorder
+traversal of its cache-erased tree, by definition. -/
 public theorem inorder_toBinaryTree (tree : Tree α) :
     inorder tree = BinarySearchTree.inorder (toBinaryTree tree) :=
   rfl
 
-/-- **Membership search in an AVL tree.** For a linearly ordered type $\alpha$ and a key $x$,
-the search for $x$ returns false on the empty tree; at a node with key $k$ it searches the left
-subtree if $x < k$, searches the right subtree if $k < x$, and returns true otherwise. The cached
-heights are ignored. -/
+/-- Search a tree by following comparisons from its root. -/
 public def contains [LinearOrder α] (x : α) : Tree α → Bool
   | .empty => false
   | .node _ left key right =>
@@ -225,20 +185,13 @@ public def contains [LinearOrder α] (x : α) : Tree α → Bool
       else if key < x then contains x right
       else true
 
-/-- **AVL rebalancing.** For trees $l$, $r$ with cached heights and a key $x$, write $h(T)$ for
-the cached height at the root of a tree $T$ (zero for the empty tree) and $N(A, y, B)$ for the
-node with left subtree $A$, key $y$, right subtree $B$ and cached height $\max(h(A), h(B)) + 1$.
-The node $\mathrm{balance}(l, x, r)$ is defined by cases. If $h(l) > h(r) + 1$ and $l$ has left
-subtree $A$, key $y$ and right subtree $B$, it is the single right rotation $N(A, y, N(B, x, r))$
-when $h(B) \le h(A)$, and otherwise, when $B$ has left subtree $B_1$, key $z$ and right subtree
-$B_2$, the left-right double rotation $N(N(A, y, B_1), z, N(B_2, x, r))$. Symmetrically, if
-$h(l) \le h(r) + 1$, $h(r) > h(l) + 1$ and $r$ has left subtree $A$, key $y$ and right subtree $B$,
-it is the single left rotation $N(N(l, x, A), y, B)$ when $h(A) \le h(B)$, and otherwise, when
-$A$ has left subtree $A_1$, key $z$ and right subtree $A_2$, the right-left double rotation
-$N(N(l, x, A_1), z, N(A_2, y, B))$. In every other case it is $N(l, x, r)$.
-
-For balanced children with correct cached heights whose heights differ by at most two, the result
-is balanced again. -/
+/--
+Rebuild a node from children whose heights differ by at most two, restoring the
+balance invariant. When the left child is too tall, a single right rotation is
+performed if the left-left grandchild is at least as tall as the left-right one,
+and a double left-right rotation otherwise; the right-heavy case is symmetric.
+Children that already differ by at most one are rebuilt with `mkNode`.
+-/
 public def balance (left : Tree α) (key : α) (right : Tree α) : Tree α :=
   if height right + 1 < height left then
     match left with
@@ -266,13 +219,8 @@ public def balance (left : Tree α) (key : α) (right : Tree α) : Tree α :=
     | .empty => mkNode left key right
   else mkNode left key right
 
-/-- **Insertion into an AVL tree.** Let the keys be linearly ordered, and write
-$\mathrm{balance}(L, k, R)$ for the AVL rebalancing of the node with left subtree $L$, key $k$ and
-right subtree $R$. Inserting $x$ into the empty tree gives the node with key $x$, two empty
-children and cached height $1$. Inserting $x$ into a node with left subtree $L$, key $k$ and right
-subtree $R$ gives $\mathrm{balance}(L', k, R)$, where $L'$ is the result of inserting $x$ into $L$,
-when $x < k$; it gives $\mathrm{balance}(L, k, R')$, where $R'$ is the result of inserting $x$
-into $R$, when $k < x$; and otherwise it returns the node unchanged. -/
+/-- Insert a key, leaving an existing equal key unchanged and rebalancing
+every node on the search path. -/
 public def insert [LinearOrder α] (x : α) : Tree α → Tree α
   | .empty => mkNode .empty x .empty
   | tree@(.node _ left key right) =>
@@ -280,36 +228,31 @@ public def insert [LinearOrder α] (x : α) : Tree α → Tree α
       else if key < x then balance left key (insert x right)
       else tree
 
-/-- **Building an AVL tree from a list.** For a linearly ordered type $\alpha$, the tree built
-from the empty list is the empty tree, and the tree built from a list with head $x$ and tail
-$xs$ is obtained by AVL insertion of $x$ into the tree built from $xs$. Thus the list is
-inserted from right to left, starting from the empty tree. -/
+/-- Build a tree by inserting the list from right to left. -/
 public def fromList [LinearOrder α] : List α → Tree α
   | [] => .empty
   | x :: xs => insert x (fromList xs)
 
-/-- **The all-keys predicate in terms of membership (AVL trees).** For a predicate $p$ on keys and
-a tree $t$ with cached heights, $\mathrm{All}(p, t)$ holds if and only if $p(x)$ holds for every
-$x \in t$, where $x \in t$ means that $x$ is the key of some node of $t$. -/
+/-- `All` is equivalent to universal quantification over structural
+membership; inherited from `BinarySearchTree`. -/
 public theorem all_iff_forall_mem {p : α → Prop} {tree : Tree α} :
     All p tree ↔ ∀ x, x ∈ tree → p x :=
   BinarySearchTree.all_iff_forall_mem
 
-/-- **Membership in the inorder traversal of an AVL tree.** A key $x$ occurs in the inorder
-traversal of a tree $T$ if and only if $x$ lies in $T$. -/
+/-- Inorder traversal contains exactly the structurally present keys;
+inherited from `BinarySearchTree`. -/
 public theorem mem_inorder {x : α} {tree : Tree α} :
     x ∈ inorder tree ↔ x ∈ tree :=
   BinarySearchTree.mem_inorder
 
-/-- **The inorder traversal of an ordered AVL tree is strictly increasing.** Let $\alpha$ be a
-linearly ordered type. If a tree $t$ with cached heights over $\alpha$ is ordered, then in
-the inorder traversal of $t$ every key is less than every key that comes after it. -/
+/-- The inorder traversal of an ordered tree is strictly increasing;
+inherited from `BinarySearchTree`. -/
 public theorem ordered_inorder [LinearOrder α] {tree : Tree α}
     (hTree : Ordered tree) : List.Pairwise (· < ·) (inorder tree) :=
   BinarySearchTree.ordered_inorder hTree
 
-/-- **The inorder traversal of an ordered AVL tree has no duplicates.** For a linearly ordered
-type $\alpha$, if an AVL tree is ordered, then its inorder traversal contains no key twice. -/
+/-- The inorder traversal of an ordered tree has no duplicate keys;
+inherited from `BinarySearchTree`. -/
 public theorem inorder_nodup [LinearOrder α] {tree : Tree α}
     (hTree : Ordered tree) : (inorder tree).Nodup :=
   BinarySearchTree.inorder_nodup hTree
@@ -323,20 +266,14 @@ private theorem All_mono {p q : α → Prop} (h : ∀ a, p a → q a) (tree : Tr
     All p (mkNode left key right) ↔ All p left ∧ p key ∧ All p right :=
   Iff.rfl
 
-/-- **The AVL node constructor preserves cached heights.** If two AVL trees $\ell$ and $r$ have
-correct cached heights, then for every key $k$ the node built from $\ell$, $k$ and $r$ by the
-smart constructor, which stores the height $\max(h(\ell), h(r)) + 1$ where $h$ denotes the height
-cached at the root (and $0$ for the empty tree), also has correct cached heights. -/
+/-- The smart constructor produces a node with a correct cached height. -/
 public theorem cacheCorrect_mkNode {key : α} {left right : Tree α}
     (hLeft : CacheCorrect left) (hRight : CacheCorrect right) :
     CacheCorrect (mkNode left key right) :=
   ⟨hLeft, hRight, rfl⟩
 
-/-- **The AVL node constructor preserves balance.** Let $\ell$ and $r$ be AVL trees that satisfy
-the AVL balance invariant, and write $h(\ell)$ and $h(r)$ for the heights cached at their roots
-(with height $0$ for the empty tree). If $h(\ell) \le h(r) + 1$ and $h(r) \le h(\ell) + 1$, then
-for every key $k$ the node built from $\ell$, $k$ and $r$ by the smart constructor, which stores
-the height $\max(h(\ell), h(r)) + 1$, satisfies the AVL balance invariant. -/
+/-- The smart constructor preserves the balance invariant when the children
+heights already differ by at most one. -/
 public theorem balanced_mkNode {key : α} {left right : Tree α}
     (hLeft : Balanced left) (hRight : Balanced right)
     (hLeftRight : height left ≤ height right + 1)
@@ -350,11 +287,8 @@ private theorem ordered_mkNode [LT α] {key : α} {left right : Tree α}
     Ordered (mkNode left key right) :=
   ⟨hLeft, hRight, hAllLeft, hAllRight⟩
 
-/-- **Rebalancing when the heights of the children differ by at most one.** Let $l$ and $r$ be
-trees with cached heights, let $x$ be a key, and write $h(T)$ for the cached height at the root
-of a tree $T$ (zero for the empty tree). If $h(l) \le h(r) + 1$ and $h(r) \le h(l) + 1$, then
-$\mathrm{balance}(l, x, r)$ is the node with left subtree $l$, key $x$, right subtree $r$ and
-cached height $\max(h(l), h(r)) + 1$; no rotation is performed. -/
+/-- If the two sides are already height-balanced against each other,
+`balance` is just `mkNode` (no rotation). -/
 public theorem balance_eq_mkNode_of_le {key : α} {left right : Tree α}
     (hLeft : height left ≤ height right + 1) (hRight : height right ≤ height left + 1) :
     balance left key right = mkNode left key right := by
@@ -362,12 +296,8 @@ public theorem balance_eq_mkNode_of_le {key : α} {left right : Tree α}
   simp only [show ¬(height right + 1 < height left) by omega,
     show ¬(height left + 1 < height right) by omega, ite_false]
 
-/-- **Single right rotation in AVL rebalancing.** Write $h(T)$ for the cached height at the root
-of a tree $T$ (zero for the empty tree), $\langle c; A, y, B \rangle$ for the node with cached
-height $c$, left subtree $A$, key $y$ and right subtree $B$, and $N(A, y, B)$ for the node
-$\langle \max(h(A), h(B)) + 1; A, y, B \rangle$. Let $A$, $B$, $R$ be trees with cached heights,
-let $x$, $y$ be keys and let $c$ be a natural number. If $h(R) + 1 < c$ and $h(B) \le h(A)$, then
-$\mathrm{balance}(\langle c; A, y, B \rangle, x, R) = N(A, y, N(B, x, R))$. -/
+/-- Left-heavy with a left-heavy (or even) left child: `balance` performs
+the single right rotation. -/
 public theorem balance_left_single {key leftKey : α} {cached : Nat}
     {leftLeft leftRight right : Tree α}
     (hTall : height right + 1 < cached) (hSingle : height leftRight ≤ height leftLeft) :
@@ -376,13 +306,8 @@ public theorem balance_left_single {key leftKey : α} {cached : Nat}
   unfold balance
   simp only [height_node, hTall, hSingle, ite_true]
 
-/-- **Left-right double rotation in AVL rebalancing.** Write $h(T)$ for the cached height at the
-root of a tree $T$ (zero for the empty tree), $\langle c; A, y, B \rangle$ for the node with
-cached height $c$, left subtree $A$, key $y$ and right subtree $B$, and $N(A, y, B)$ for the node
-$\langle \max(h(A), h(B)) + 1; A, y, B \rangle$. Let $A$, $B$, $C$, $R$ be trees with cached
-heights, let $x$, $y$, $z$ be keys and let $c$, $c'$ be natural numbers. If $h(R) + 1 < c$ and
-$h(A) < c'$, then $\mathrm{balance}(\langle c; A, y, \langle c'; B, z, C \rangle \rangle, x, R) =
-N(N(A, y, B), z, N(C, x, R))$. -/
+/-- Left-heavy with a right-heavy left child: `balance` performs the
+left-right double rotation. -/
 public theorem balance_left_double {key leftKey leftRightKey : α}
     {cached cachedRight : Nat}
     {leftLeft leftRightLeft leftRightRight right : Tree α}
@@ -395,12 +320,8 @@ public theorem balance_left_double {key leftKey leftRightKey : α}
   simp only [height_node, hTall, ite_true,
     show ¬(cachedRight ≤ height leftLeft) by omega, ite_false]
 
-/-- **Single left rotation in AVL rebalancing.** Write $h(T)$ for the cached height at the root of
-a tree $T$ (zero for the empty tree), $\langle c; A, y, B \rangle$ for the node with cached height
-$c$, left subtree $A$, key $y$ and right subtree $B$, and $N(A, y, B)$ for the node
-$\langle \max(h(A), h(B)) + 1; A, y, B \rangle$. Let $L$, $A$, $B$ be trees with cached heights,
-let $x$, $y$ be keys and let $c$ be a natural number. If $h(L) + 1 < c$ and $h(A) \le h(B)$, then
-$\mathrm{balance}(L, x, \langle c; A, y, B \rangle) = N(N(L, x, A), y, B)$. -/
+/-- Right-heavy with a right-heavy (or even) right child: `balance`
+performs the single left rotation. -/
 public theorem balance_right_single {key rightKey : α} {cached : Nat}
     {left rightLeft rightRight : Tree α}
     (hTall : height left + 1 < cached)
@@ -411,13 +332,8 @@ public theorem balance_right_single {key rightKey : α} {cached : Nat}
   simp only [height_node, show ¬(cached + 1 < height left) by omega, ite_false,
     hTall, ite_true, hSingle]
 
-/-- **Right-left double rotation in AVL rebalancing.** Write $h(T)$ for the cached height at the
-root of a tree $T$ (zero for the empty tree), $\langle c; A, y, B \rangle$ for the node with
-cached height $c$, left subtree $A$, key $y$ and right subtree $B$, and $N(A, y, B)$ for the node
-$\langle \max(h(A), h(B)) + 1; A, y, B \rangle$. Let $L$, $A$, $B$, $C$ be trees with cached
-heights, let $x$, $y$, $z$ be keys and let $c$, $c'$ be natural numbers. If $h(L) + 1 < c$ and
-$h(C) < c'$, then $\mathrm{balance}(L, x, \langle c; \langle c'; A, z, B \rangle, y, C \rangle) =
-N(N(L, x, A), z, N(B, y, C))$. -/
+/-- Right-heavy with a left-heavy right child: `balance` performs the
+right-left double rotation. -/
 public theorem balance_right_double {key rightKey rightLeftKey : α}
     {cached cachedLeft : Nat}
     {left rightLeftLeft rightLeftRight rightRight : Tree α}
@@ -431,9 +347,7 @@ public theorem balance_right_double {key rightKey rightLeftKey : α}
   simp only [height_node, show ¬(cached + 1 < height left) by omega, ite_false,
     hTall, ite_true, show ¬(cachedLeft ≤ height rightRight) by omega]
 
-/-- **AVL rebalancing preserves cached heights.** If two AVL trees $\ell$ and $r$ have correct
-cached heights, then for every key $k$ the tree produced by the rebalancing function from
-$\ell$, $k$ and $r$ also has correct cached heights. -/
+/-- Rebalancing preserves correct cached heights. -/
 public theorem cacheCorrect_balance {key : α} {left right : Tree α}
     (hLeft : CacheCorrect left) (hRight : CacheCorrect right) :
     CacheCorrect (balance left key right) := by
@@ -475,9 +389,7 @@ public theorem cacheCorrect_balance {key : α} {left right : Tree α}
     · rw [balance_eq_mkNode_of_le (by omega) (by omega)]
       exact cacheCorrect_mkNode hLeft hRight
 
-/-- **Upper bound on height after AVL rebalancing.** Let $l$ and $r$ be trees whose cached
-heights are correct at every node, and write $h$ for the cached height. Then for every key $k$,
-the rebalanced node $b$ built from $l$, $k$ and $r$ satisfies $h(b) \le \max(h(l), h(r)) + 1$. -/
+/-- Rebalancing adds at most one to the larger child height. -/
 public theorem height_balance_le {key : α} {left right : Tree α}
     (hLeft : CacheCorrect left) (hRight : CacheCorrect right) :
     height (balance left key right) ≤ max (height left) (height right) + 1 := by
@@ -522,11 +434,7 @@ public theorem height_balance_le {key : α} {left right : Tree α}
       simp only [height_mkNode]
       omega
 
-/-- **Rebalancing does not drop below the taller child.** Write $h(T)$ for the cached height at the
-root of a tree $T$, with $h$ of the empty tree equal to $0$, and write $\mathrm{balance}(L, k, R)$
-for the AVL rebalancing of the node with left subtree $L$, key $k$ and right subtree $R$. If $L$
-and $R$ are trees whose cached heights are correct at every node, then for every key $k$ we have
-$\max(h(L), h(R)) \le h(\mathrm{balance}(L, k, R))$. -/
+/-- Rebalancing does not drop below the larger child height. -/
 public theorem le_height_balance {key : α} {left right : Tree α}
     (hLeft : CacheCorrect left) (hRight : CacheCorrect right) :
     max (height left) (height right) ≤ height (balance left key right) := by
@@ -571,13 +479,8 @@ public theorem le_height_balance {key : α} {left right : Tree α}
       simp only [height_mkNode]
       omega
 
-/-- **AVL rebalancing yields a balanced tree.** Let $l$ and $r$ be trees whose cached heights are
-correct at every node and which are balanced (at every node the cached heights of the two
-subtrees differ by at most one), let $x$ be a key, and write $h(T)$ for the cached height at the
-root of a tree $T$ (zero for the empty tree). If $h(l) \le h(r) + 2$ and $h(r) \le h(l) + 2$,
-then $\mathrm{balance}(l, x, r)$ is balanced.
-
-One insertion step maintains this precondition. -/
+/-- Rebalancing children whose heights differ by at most two produces a
+balanced tree. This is the precondition that one insertion step maintains. -/
 public theorem balanced_balance {key : α} {left right : Tree α}
     (hCacheLeft : CacheCorrect left) (hCacheRight : CacheCorrect right)
     (hBalLeft : Balanced left) (hBalRight : Balanced right)
@@ -631,9 +534,7 @@ public theorem balanced_balance {key : α} {left right : Tree α}
     · rw [balance_eq_mkNode_of_le (by omega) (by omega)]
       exact balanced_mkNode hBalLeft hBalRight (by omega) (by omega)
 
-/-- **AVL rebalancing preserves the inorder traversal.** For all trees $l$ and $r$ and every
-key $k$, the inorder traversal of the rebalanced node built from $l$, $k$ and $r$ is the
-inorder traversal of $l$, followed by $k$, followed by the inorder traversal of $r$. -/
+/-- Rebalancing preserves the inorder traversal. -/
 public theorem inorder_balance {key : α} {left right : Tree α} :
     inorder (balance left key right) = inorder left ++ key :: inorder right := by
   by_cases hTallLeft : height right + 1 < height left
@@ -668,20 +569,13 @@ public theorem inorder_balance {key : α} {left right : Tree α} :
     · rw [balance_eq_mkNode_of_le (by omega) (by omega)]
       simp
 
-/-- **Membership after AVL rebalancing.** Write $\mathrm{balance}(L, k, R)$ for the AVL rebalancing
-of the node with left subtree $L$, key $k$ and right subtree $R$. For trees $L$ and $R$ and keys
-$k$ and $x$, the key $x$ lies in $\mathrm{balance}(L, k, R)$ if and only if $x$ lies in $L$,
-$x = k$, or $x$ lies in $R$. -/
+/-- Rebalancing preserves structural membership. -/
 public theorem mem_balance {x key : α} {left right : Tree α} :
     x ∈ balance left key right ↔ x ∈ left ∨ x = key ∨ x ∈ right := by
   rw [← mem_inorder, inorder_balance]
   simp [mem_inorder]
 
-/-- **Rebalancing an AVL node preserves the search-tree order.** Let $\alpha$ be a linearly
-ordered type, let $k \in \alpha$, and let $L$ and $R$ be ordered trees with cached heights
-over $\alpha$ such that every key of $L$ is less than $k$ and every key of $R$ is greater
-than $k$. Then the tree that rebalancing produces from left subtree $L$, key $k$ and right
-subtree $R$ is ordered. -/
+/-- Rebalancing preserves the search-tree ordering invariant. -/
 public theorem ordered_balance [LinearOrder α] {key : α} {left right : Tree α}
     (hOrdLeft : Ordered left) (hOrdRight : Ordered right)
     (hAllLeft : All (· < key) left) (hAllRight : All (key < ·) right) :
@@ -750,9 +644,7 @@ public theorem ordered_balance [LinearOrder α] {key : α} {left right : Tree α
     · rw [balance_eq_mkNode_of_le (by omega) (by omega)]
       exact ordered_mkNode hOrdLeft hOrdRight hAllLeft hAllRight
 
-/-- **AVL insertion preserves cached heights.** Let $\alpha$ be a linearly ordered type. If an
-AVL tree $t$ over $\alpha$ has correct cached heights, then for every $x \in \alpha$ the tree
-obtained by inserting $x$ into $t$ also has correct cached heights. -/
+/-- Insertion preserves correct cached heights. -/
 public theorem cacheCorrect_insert [LinearOrder α] {x : α} {tree : Tree α}
     (hTree : CacheCorrect tree) : CacheCorrect (insert x tree) := by
   induction tree with
@@ -770,9 +662,7 @@ public theorem cacheCorrect_insert [LinearOrder α] {x : α} {tree : Tree α}
         rw [hEq]
         exact ⟨hLeft, hRight, hCached⟩
 
-/-- **Upper bound on height after AVL insertion.** For a linearly ordered type $\alpha$, if a tree
-$t$ has correct cached heights at every node, then for every key $x$ the cached height of the
-tree obtained by inserting $x$ into $t$ is at most the cached height of $t$ plus one. -/
+/-- Insertion increases the cached height by at most one. -/
 public theorem height_insert_le [LinearOrder α] {x : α} {tree : Tree α}
     (hTree : CacheCorrect tree) : height (insert x tree) ≤ height tree + 1 := by
   induction tree with
@@ -798,11 +688,7 @@ public theorem height_insert_le [LinearOrder α] {x : α} {tree : Tree α}
         rw [hEq]
         omega
 
-/-- **Insertion does not lower the height.** Write $h(T)$ for the cached height at the root of a
-tree $T$, with $h$ of the empty tree equal to $0$. Let the keys be linearly ordered, and let $T$ be
-a tree whose cached heights are correct at every node and which satisfies the AVL balance
-invariant at every node. Then for every key $x$, if $T'$ is the tree obtained by inserting $x$
-into $T$, we have $h(T) \le h(T')$. -/
+/-- Insertion never decreases the cached height of a balanced tree. -/
 public theorem le_height_insert [LinearOrder α] {x : α} {tree : Tree α}
     (hCache : CacheCorrect tree) (hBal : Balanced tree) :
     height tree ≤ height (insert x tree) := by
@@ -841,10 +727,7 @@ public theorem le_height_insert [LinearOrder α] {x : α} {tree : Tree α}
         rw [hEq]
         omega
 
-/-- **AVL insertion preserves balance.** Let $\alpha$ be a linearly ordered type, let $t$ be an
-AVL tree over $\alpha$ and let $x \in \alpha$. If $t$ has correct cached heights and satisfies
-the AVL balance invariant, then the tree obtained by inserting $x$ into $t$ also satisfies the
-AVL balance invariant. -/
+/-- Insertion preserves the AVL balance invariant. -/
 public theorem balanced_insert [LinearOrder α] {x : α} {tree : Tree α}
     (hCache : CacheCorrect tree) (hBal : Balanced tree) :
     Balanced (insert x tree) := by
@@ -878,9 +761,7 @@ public theorem balanced_insert [LinearOrder α] {x : α} {tree : Tree α}
         rw [hEq]
         exact ⟨hBalL, hBalR, hBalA, hBalB⟩
 
-/-- **Membership after insertion into an AVL tree.** Let the keys be linearly ordered. A key $y$
-lies in the tree obtained by inserting $x$ into a tree $T$ if and only if $y = x$ or $y$ lies
-in $T$. -/
+/-- Inserting a key adds exactly that key to structural membership. -/
 public theorem mem_insert [LinearOrder α] {x y : α} {tree : Tree α} :
     y ∈ insert x tree ↔ y = x ∨ y ∈ tree := by
   induction tree with
@@ -913,9 +794,7 @@ private theorem all_insert [LinearOrder α] {p : α → Prop} {x : α} {tree : T
   · exact hx
   · exact hTree y hy
 
-/-- **AVL insertion preserves the search-tree order.** Let $\alpha$ be a linearly ordered type.
-For every key $x \in \alpha$ and every ordered tree $t$ with cached heights over $\alpha$, the
-tree obtained by inserting $x$ into $t$ is ordered. -/
+/-- Insertion preserves the strict search-tree invariant. -/
 public theorem ordered_insert [LinearOrder α] {x : α} {tree : Tree α}
     (hTree : Ordered tree) : Ordered (insert x tree) := by
   induction tree with
@@ -947,43 +826,35 @@ private theorem contains_eq_bstContains [LinearOrder α] (x : α) (tree : Tree �
         · simp [hLeft, hRight, ihRight]
         · simp [hLeft, hRight]
 
-/-- **Correctness of AVL search.** Let $\alpha$ be a linearly ordered type and let $t$ be an
-ordered AVL tree over $\alpha$. Then for every $x \in \alpha$, searching for $x$ in $t$ by
-following comparisons from the root returns true if and only if $x$ is a key of $t$. -/
+/-- Search is equivalent to structural membership for an ordered tree;
+inherited from `BinarySearchTree` through `toBinaryTree`. -/
 public theorem contains_eq_true_iff [LinearOrder α] {x : α} {tree : Tree α}
     (hTree : Ordered tree) : contains x tree = true ↔ x ∈ tree := by
   rw [contains_eq_bstContains]
   exact BinarySearchTree.contains_eq_true_iff hTree
 
-/-- **AVL trees built from a list have correct cached heights.** For every list $L$ over a
-linearly ordered type, the AVL tree built from $L$ by successive insertion has correct cached
-heights. -/
+/-- Trees built by insertion have correct caches. -/
 public theorem cacheCorrect_fromList [LinearOrder α] {xs : List α} :
     CacheCorrect (fromList xs) := by
   induction xs with
   | nil => trivial
   | cons x xs ih => exact cacheCorrect_insert ih
 
-/-- **AVL trees built from a list are balanced.** For every list $L$ over a linearly ordered
-type, the AVL tree built from $L$ by successive insertion satisfies the AVL balance invariant. -/
+/-- Trees built by insertion are balanced. -/
 public theorem balanced_fromList [LinearOrder α] {xs : List α} :
     Balanced (fromList xs) := by
   induction xs with
   | nil => trivial
   | cons x xs ih => exact balanced_insert cacheCorrect_fromList ih
 
-/-- **AVL trees built from a list are ordered.** Let $\alpha$ be a linearly ordered type. For
-every list $xs$ of elements of $\alpha$, the tree obtained from the empty tree by inserting
-the elements of $xs$ one at a time, from the last element to the first, is ordered. -/
+/-- Building a tree by insertion always produces an ordered tree. -/
 public theorem ordered_fromList [LinearOrder α] {xs : List α} :
     Ordered (fromList xs) := by
   induction xs with
   | nil => trivial
   | cons x xs ih => exact ordered_insert ih
 
-/-- **Membership in an AVL tree built from a list.** Let the keys be linearly ordered. A key lies
-in the tree obtained by inserting the entries of a list one at a time, from last to first, into
-the empty tree exactly when it is in the list. -/
+/-- A key is in a tree built from a list exactly when it is in the list. -/
 public theorem mem_fromList [LinearOrder α] {x : α} {xs : List α} :
     x ∈ fromList xs ↔ x ∈ xs := by
   induction xs with

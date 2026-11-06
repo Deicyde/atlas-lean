@@ -57,29 +57,21 @@ decodes the matrix and counts crossing edges, both polynomial-time) as a lemma
 before the APX-hardness argument.
 -/
 
-/-- **Vertex count of a MAX-CUT instance.** The vertex count of a MAX-CUT instance, a bitstring
-$x$ of length $|x|$, is $\lfloor \sqrt{|x|} \rfloor$.
-
+/-- The vertex count of a MAX-CUT instance: `⌊√|x|⌋`.
 Source: C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation,
 and complexity classes", Journal of Computer and System Sciences 43 (1991),
 425-440. -/
 def maxCutN (x : List Bool) : ℕ := Nat.sqrt x.length
 
-/-- **Feasible MAX-CUT solutions.** A bitstring $s$ is a feasible solution of a MAX-CUT instance
-$x$ exactly when the length of $s$ equals the vertex count $\lfloor \sqrt{|x|} \rfloor$ of $x$,
-so that $s$ has one bit per vertex.
-
+/-- Feasibility for MAX-CUT: the solution has one bit per vertex.
 Source: C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation,
 and complexity classes", Journal of Computer and System Sciences 43 (1991),
 425-440. -/
 def maxCutFeas (x s : List Bool) : Bool := decide (s.length = maxCutN x)
 
-/-- **Value of a MAX-CUT solution.** Let $x$ be a MAX-CUT instance with vertex count
-$n = \lfloor \sqrt{|x|} \rfloor$ and let $s$ be a bitstring, with bits indexed from $0$. If $s$
-is a feasible solution of $x$ (its length is $n$), the value of $s$ is the number, as a rational
-number, of pairs $(i, j)$ with $i < j < n$ such that bit $i n + j$ of $x$ is true and bits $i$
-and $j$ of $s$ differ; otherwise the value is $0$.
-
+/-- MAX-CUT value: the number of pairs `i < j < n` whose matrix bit is `true`
+and whose endpoints lie on opposite sides of the cut, `0` on infeasible
+solutions.
 Source: C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation,
 and complexity classes", Journal of Computer and System Sciences 43 (1991),
 425-440. -/
@@ -91,14 +83,7 @@ def maxCutVal (x s : List Bool) : ℚ :=
       (Finset.range (maxCutN x) ×ˢ Finset.range (maxCutN x))).card : ℚ)
   else 0
 
-/-- **MAX-CUT as an optimization problem.** MAX-CUT is the optimization problem whose instances
-are bitstrings $x$, read as an adjacency matrix on $n = \lfloor \sqrt{|x|} \rfloor$ vertices in
-which, for $i < j < n$, bit $i n + j$ of $x$ (bits indexed from $0$) says whether $\{i, j\}$ is
-an edge. Its feasible solutions for $x$ are the bitstrings of length $n$, one bit per vertex;
-the value of a feasible solution $s$ is the number of pairs $i < j < n$ that are edges and
-whose bits in $s$ differ, the value of an infeasible solution is $0$, and the polynomial bound
-on the length of feasible solutions is $p(m) = m$.
-
+/-- MAX-CUT as an optimization problem.
 Source: C. H. Papadimitriou and M. Yannakakis, "Optimization, approximation,
 and complexity classes", Journal of Computer and System Sciences 43 (1991),
 425-440. -/
@@ -123,10 +108,7 @@ noncomputable def maxCut : OptProblem where
   feas_nonempty := fun x => ⟨List.replicate (maxCutN x) false, by
     simp [maxCutFeas, List.length_replicate]⟩
 
-/-- **MAX-CUT has no PTAS unless P = NP.** If $\mathsf{P} \neq \mathsf{NP}$, then the
-optimization problem MAX-CUT does not admit a polynomial-time approximation scheme.
-
-Source: C. H. Papadimitriou and
+/-- **MAX-CUT has no PTAS unless P = NP.** Source: C. H. Papadimitriou and
 M. Yannakakis, "Optimization, approximation, and complexity classes", Journal
 of Computer and System Sciences 43 (1991), 425-440 (MAX-CUT is MAXSNP-complete,
 hence APX-hard); S. Arora and B. Barak, Computational Complexity: A Modern

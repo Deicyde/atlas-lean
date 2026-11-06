@@ -62,7 +62,7 @@ namespace MathlibExt.Biology.StatisticalGenetics.Relatedness
 
 variable {Ω : Type*} [MeasurableSpace Ω]
 
-/-- **Malécot's identity-by-descent model.** Malécot's identity-by-descent model at one biallelic locus, at the level of second
+/-- Malécot's identity-by-descent model at one biallelic locus, at the level of second
 moments. The individuals are `ι`; individual `i` carries the gene copies `(i, 0)` (paternal) and
 `(i, 1)` (maternal), and `allele c ∈ {0, 1}` indicates the reference allele on copy `c`. The
 reference allele has frequency `p ∈ (0, 1)` (a polymorphic locus), and `ibd c d` is the
@@ -98,23 +98,23 @@ namespace IBDModel
 
 variable {μ : Measure Ω} {ι : Type*} (D : IBDModel μ ι)
 
-/-- **Genotype of an individual at a biallelic locus.** The genotype (reference-allele count) `x_i ∈ {0, 1, 2}` of individual `i`. -/
+/-- The genotype (reference-allele count) `x_i ∈ {0, 1, 2}` of individual `i`. -/
 def genotype (i : ι) (ω : Ω) : ℝ := D.allele (i, 0) ω + D.allele (i, 1) ω
 
-/-- **Kinship coefficient.** The kinship coefficient `φ_ij`: the probability that a copy drawn at random from `i` and a
+/-- The kinship coefficient `φ_ij`: the probability that a copy drawn at random from `i` and a
 copy drawn at random from `j` are identical by descent. -/
 noncomputable def kinship (i j : ι) : ℝ := (∑ a : Fin 2, ∑ b : Fin 2, D.ibd (i, a) (j, b)) / 4
 
-/-- **Inbreeding coefficient.** The inbreeding coefficient `F_i`: the probability that the two copies of `i` are identical
+/-- The inbreeding coefficient `F_i`: the probability that the two copies of `i` are identical
 by descent. -/
 def inbreeding (i : ι) : ℝ := D.ibd (i, 0) (i, 1)
 
-/-- **Genetic relationship matrix entry.** The genetic relationship matrix entry of Yang et al. (2010) at one locus,
+/-- The genetic relationship matrix entry of Yang et al. (2010) at one locus,
 `A_ij = (x_i - 2p)(x_j - 2p) / (2p(1 - p))`. -/
 noncomputable def grm (i j : ι) (ω : Ω) : ℝ :=
   (D.genotype i ω - 2 * D.p) * (D.genotype j ω - 2 * D.p) / (2 * D.p * (1 - D.p))
 
-/-- **GCTA diagonal relationship estimator.** The diagonal estimator of GCTA (Yang et al. 2011) at one locus,
+/-- The diagonal estimator of GCTA (Yang et al. 2011) at one locus,
 `A_ii = 1 + (x_i² - (1 + 2p) x_i + 2p²) / (2p(1 - p))`. -/
 noncomputable def grmDiag (i : ι) (ω : Ω) : ℝ :=
   1 + (D.genotype i ω ^ 2 - (1 + 2 * D.p) * D.genotype i ω + 2 * D.p ^ 2) /
@@ -124,19 +124,19 @@ private theorem norm_allele_le (c : ι × Fin 2) (ω : Ω) : ‖D.allele c ω‖
   rcases D.allele_mem c ω with h | h <;> simp [h]
 
 variable [IsFiniteMeasure μ] in
-/-- **Integrability of allele indicators.** The allele indicators are integrable. -/
+/-- The allele indicators are integrable. -/
 theorem integrable_allele (c : ι × Fin 2) : Integrable (D.allele c) μ :=
   Integrable.of_bound (D.measurable_allele c).aestronglyMeasurable 1
     (ae_of_all _ (D.norm_allele_le c))
 
 variable [IsFiniteMeasure μ] in
-/-- **Integrability of products of allele indicators.** Products of allele indicators are integrable. -/
+/-- Products of allele indicators are integrable. -/
 theorem integrable_allele_mul (c d : ι × Fin 2) :
     Integrable (fun ω => D.allele c ω * D.allele d ω) μ :=
   (D.integrable_allele d).bdd_mul (D.measurable_allele c).aestronglyMeasurable
     (ae_of_all _ (D.norm_allele_le c))
 
-/-- **A gene copy is identical by descent with itself.** A gene copy is identical by descent with itself: `ibd c c = 1`. -/
+/-- A gene copy is identical by descent with itself: `ibd c c = 1`. -/
 theorem ibd_self (c : ι × Fin 2) : D.ibd c c = 1 := by
   have hsq : (fun ω => D.allele c ω * D.allele c ω) = D.allele c := by
     funext ω; rcases D.allele_mem c ω with h | h <;> simp [h]
@@ -148,7 +148,7 @@ theorem ibd_self (c : ι × Fin 2) : D.ibd c c = 1 := by
   · exact absurd h' hp
   · linarith
 
-/-- **Symmetry of identity by descent.** Identity by descent is symmetric. -/
+/-- Identity by descent is symmetric. -/
 theorem ibd_comm (c d : ι × Fin 2) : D.ibd c d = D.ibd d c := by
   have h1 := D.integral_allele_mul c d
   have h2 := D.integral_allele_mul d c
@@ -159,31 +159,31 @@ theorem ibd_comm (c d : ι × Fin 2) : D.ibd c d = D.ibd d c := by
   · exact absurd h' hp
   · linarith
 
-/-- **Self-kinship equals $(1 + F_i)/2$.** `φ_ii = (1 + F_i) / 2`. -/
+/-- `φ_ii = (1 + F_i) / 2`. -/
 theorem kinship_self (i : ι) : D.kinship i i = (1 + D.inbreeding i) / 2 := by
   simp only [kinship, inbreeding, Fin.sum_univ_two, D.ibd_self]
   rw [D.ibd_comm (i, 1) (i, 0)]
   ring
 
-/-- **Symmetry of kinship.** Kinship is symmetric. -/
+/-- Kinship is symmetric. -/
 theorem kinship_comm (i j : ι) : D.kinship i j = D.kinship j i := by
   simp only [kinship, Fin.sum_univ_two, D.ibd_comm (i, _) (j, _)]
   ring
 
 variable [IsProbabilityMeasure μ]
 
-/-- **Integrability of genotypes.** Genotypes are integrable. -/
+/-- Genotypes are integrable. -/
 theorem integrable_genotype (i : ι) : Integrable (D.genotype i) μ :=
   (D.integrable_allele _).add (D.integrable_allele _)
 
-/-- **Integrability of products of genotypes.** Products of genotypes are integrable. -/
+/-- Products of genotypes are integrable. -/
 theorem integrable_genotype_mul (i j : ι) :
     Integrable (fun ω => D.genotype i ω * D.genotype j ω) μ := by
   simp only [genotype, add_mul, mul_add]
   exact (((D.integrable_allele_mul _ _).add (D.integrable_allele_mul _ _)).add
     ((D.integrable_allele_mul _ _).add (D.integrable_allele_mul _ _)))
 
-/-- **Expected genotype equals $2p$.** `𝔼[x_i] = 2p`. -/
+/-- `𝔼[x_i] = 2p`. -/
 theorem integral_genotype (i : ι) : ∫ ω, D.genotype i ω ∂μ = 2 * D.p := by
   simp only [genotype]
   rw [integral_add (by exact (D.integrable_allele _))
@@ -191,7 +191,7 @@ theorem integral_genotype (i : ι) : ∫ ω, D.genotype i ω ∂μ = 2 * D.p := 
     D.integral_allele]
   ring
 
-/-- **Second moment of genotypes in terms of kinship.** `𝔼[x_i x_j] = 4p² + 4p(1 - p) φ_ij`. -/
+/-- `𝔼[x_i x_j] = 4p² + 4p(1 - p) φ_ij`. -/
 theorem integral_genotype_mul (i j : ι) :
     ∫ ω, D.genotype i ω * D.genotype j ω ∂μ =
       4 * D.p ^ 2 + 4 * D.p * (1 - D.p) * D.kinship i j := by
@@ -234,7 +234,7 @@ theorem integral_grm (i j : ι) : ∫ ω, D.grm i j ω ∂μ = 2 * D.kinship i j
   field_simp
   exact mul_div_cancel_left₀ _ hp
 
-/-- **Diagonal GRM entry is unbiased for $1 + F_i$.** The diagonal GRM entry is unbiased for `1 + F_i`: `𝔼[A_ii] = 1 + F_i`. -/
+/-- The diagonal GRM entry is unbiased for `1 + F_i`: `𝔼[A_ii] = 1 + F_i`. -/
 theorem integral_grm_self (i : ι) : ∫ ω, D.grm i i ω ∂μ = 1 + D.inbreeding i := by
   rw [integral_grm, kinship_self]
   ring

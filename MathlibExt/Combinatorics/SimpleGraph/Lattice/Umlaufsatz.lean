@@ -87,7 +87,7 @@ theorem orbitDart_injOn (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}
   exact Function.iterate_injOn_Iio_minimalPeriod (f := dartNextSub K) (x := a)
     (Set.mem_Iio.mpr (by rw [← hmp]; exact hi)) (Set.mem_Iio.mpr (by rw [← hmp]; exact hj)) hsub
 
-/-- **No-pinch condition for a boundary orbit.** Darts in one period of the orbit of `a` that have the same face also have the same direction. -/
+/-- Darts in one period of the orbit of `a` that have the same face also have the same direction. -/
 def OrbitFaceNoPinch (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) : Prop :=
   ∀ i ∈ Set.Iio (dartOrbitPeriod K a), ∀ j ∈ Set.Iio (dartOrbitPeriod K a),
     dartFace ((dartNext K)^[i] a.1) = dartFace ((dartNext K)^[j] a.1) →
@@ -144,7 +144,7 @@ theorem unitCell_orbitFace_injOn :
     simp only [e0, e1, e2, e3] at hab ⊢ <;>
     (exfalso; rw [funext_iff, Fin.forall_fin_two] at hab; simp at hab)
 
-/-- **Face loop around the unit cell.** The closed walk of faces around the unit cell, of length four. -/
+/-- The closed walk of faces around the unit cell, of length four. -/
 noncomputable def unitCellFaceLoop :
     (faceBoundaryGraph unitCell).Walk (dartFace ucDart0) (dartFace ucDart0) :=
   (dartOrbitFaceWalk unitCell ucDart0 ucDart0_boundary 4).copy rfl (by rw [iterate_ucDart_4])
@@ -191,7 +191,7 @@ theorem domino_orbitFace_injOn :
     simp only [e0, e1, e2, e3, e4, e5] at hab ⊢ <;>
     (exfalso; rw [funext_iff, Fin.forall_fin_two] at hab; simp at hab)
 
-/-- **Face loop around the domino.** The closed walk of faces around the domino, of length six. -/
+/-- The closed walk of faces around the domino, of length six. -/
 noncomputable def dominoFaceLoop :
     (faceBoundaryGraph domino).Walk (dartFace dmD0) (dartFace dmD0) :=
   (dartOrbitFaceWalk domino dmD0 dmD0_boundary 6).copy rfl (by rw [iterate_dmD_6])

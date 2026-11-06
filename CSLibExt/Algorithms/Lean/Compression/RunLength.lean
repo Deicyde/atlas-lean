@@ -32,14 +32,7 @@ namespace Cslib.Algorithms.Lean.RunLength
 
 @[expose] public section
 
-/-- **Run-length compression from a pending run.** For a bit $c$, a natural number $r$ and a
-finite bit list $w$, the compression $C(c, r, w)$ of $w$ from the pending run $(c, r)$ is the
-list of natural numbers defined by recursion on $w$. If $w$ is empty, $C(c, r, w)$ is the
-one-entry list $(r)$. If $w$ is a bit $b$ followed by a list $w'$, then $C(c, r, w)$ is $r$
-followed by $C(\lnot c, 1, w')$ when $b \ne c$; it is $255$, then $0$, followed by
-$C(c, 1, w')$ when $b = c$ and $r = 255$; otherwise it is $C(c, r + 1, w')$.
-
-Here $c$ is the bit of the current run and $r$ is its length so far. -/
+/-- Compress the remaining bits given the current run bit and its pending length. -/
 def compressFrom : Bool → Nat → List Bool → List Nat
   | _, run, [] => [run]
   | old, run, bit :: rest =>
@@ -47,32 +40,20 @@ def compressFrom : Bool → Nat → List Bool → List Nat
       else if run = 255 then 255 :: 0 :: compressFrom old 1 rest
       else compressFrom old (run + 1) rest
 
-/-- **Run-length compression.** The run-length compression of a finite bit list $w$ is
-$C(0, 0, w)$, the compression of $w$ from an empty pending run of zero bits. It lists the
-lengths of the maximal runs of $w$, alternating between zeros and ones and starting with a
-possibly empty run of zeros; a run of length $n > 255$ is written as
-$255, 0, 255, 0, \dots, 255, 0, m$ with $1 \le m \le 255$. -/
+/-- Compress a finite bit list into 8-bit run lengths, starting with zeros. -/
 def compress (bits : List Bool) : List Nat :=
   compressFrom false 0 bits
 
-/-- **Run-length expansion from a starting bit.** For a bit $c$ and a list $(n_1, \dots, n_k)$ of
-natural numbers, the expansion $E(c, (n_1, \dots, n_k))$ is the bit list obtained by
-concatenating, for $i = 1, \dots, k$ in order, $n_i$ copies of $c$ when $i$ is odd and $n_i$
-copies of $\lnot c$ when $i$ is even. -/
+/-- Expand counts into bits, alternating from the supplied starting bit. -/
 def expandFrom : Bool → List Nat → List Bool
   | _, [] => []
   | bit, count :: rest => List.replicate count bit ++ expandFrom (!bit) rest
 
-/-- **Run-length expansion.** The run-length expansion of a list $(n_1, \dots, n_k)$ of natural
-numbers is $E(0, (n_1, \dots, n_k))$, the expansion from the zero bit: the bit list obtained by
-concatenating, for $i = 1, \dots, k$ in order, $n_i$ zeros when $i$ is odd and $n_i$ ones when
-$i$ is even. -/
+/-- Expand 8-bit run lengths into bits, starting with zeros. -/
 def expand (counts : List Nat) : List Bool :=
   expandFrom false counts
 
-/-- **Compression from a short pending run emits counts at most 255.** For every bit $c$, every
-natural number $r \le 255$ and every finite bit list $w$, every entry of the compression
-$C(c, r, w)$ of $w$ from the pending run $(c, r)$ is at most $255$. -/
+/-- Every count emitted from a legal pending run fits in the 8-bit field. -/
 theorem compressFrom_le (old : Bool) (run : Nat) (legal : run ≤ 255) (bits : List Bool) :
     ∀ count ∈ compressFrom old run bits, count ≤ 255 := by
   induction bits generalizing old run with
@@ -97,14 +78,11 @@ theorem compressFrom_le (old : Bool) (run : Nat) (legal : run ≤ 255) (bits : L
           exact ih old (run + 1) (Nat.succ_le_of_lt (Nat.lt_of_le_of_ne legal notFull))
             count member
 
-/-- **Run lengths fit in 8 bits.** For every finite bit list $w$, every entry of the run-length
-compression of $w$ is at most $255$. -/
+/-- Every emitted run length fits in the source's 8-bit field. -/
 theorem compress_le (bits : List Bool) : ∀ count ∈ compress bits, count ≤ 255 :=
   compressFrom_le false 0 (Nat.zero_le 255) bits
 
-/-- **Length of an expansion from a starting bit.** For every bit $c$ and every list
-$(n_1, \dots, n_k)$ of natural numbers, the expansion $E(c, (n_1, \dots, n_k))$ has length
-$n_1 + \dots + n_k$. -/
+/-- Expansion emits exactly the summed number of bits, from either starting bit. -/
 theorem expandFrom_length (bit : Bool) (counts : List Nat) :
     (expandFrom bit counts).length = counts.sum := by
   induction counts generalizing bit with
@@ -112,14 +90,11 @@ theorem expandFrom_length (bit : Bool) (counts : List Nat) :
   | cons count rest ih =>
       rw [expandFrom, List.length_append, List.length_replicate, ih, List.sum_cons]
 
-/-- **Length of a run-length expansion.** For every list $(n_1, \dots, n_k)$ of natural numbers,
-the run-length expansion of $(n_1, \dots, n_k)$ has length $n_1 + \dots + n_k$. -/
+/-- The expanded output length is the sum of the run lengths. -/
 theorem expand_length (counts : List Nat) : (expand counts).length = counts.sum :=
   expandFrom_length false counts
 
-/-- **Expansion recovers the pending run and the input.** For every bit $c$, every natural
-number $r$ and every finite bit list $w$, the expansion from the starting bit $c$ of the
-compression $C(c, r, w)$ is the list of $r$ copies of $c$ followed by $w$. -/
+/-- Expansion inverts compression from any pending run state. -/
 theorem expandFrom_compressFrom (old : Bool) (run : Nat) (bits : List Bool) :
     expandFrom old (compressFrom old run bits) = List.replicate run old ++ bits := by
   induction bits generalizing old run with
@@ -157,8 +132,7 @@ theorem expandFrom_compressFrom (old : Bool) (run : Nat) (bits : List Bool) :
             rw [splitRun, List.append_assoc]
             rfl
 
-/-- **Run-length expansion inverts compression.** For every finite bit list $w$, the run-length
-expansion of the run-length compression of $w$ is $w$. -/
+/-- Expanding a compressed bit list returns the original input exactly. -/
 theorem expand_compress (bits : List Bool) : expand (compress bits) = bits := by
   have key := expandFrom_compressFrom false 0 bits
   show expandFrom false (compressFrom false 0 bits) = bits

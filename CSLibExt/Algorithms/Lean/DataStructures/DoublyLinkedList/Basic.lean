@@ -39,9 +39,7 @@ namespace Cslib.Algorithms.Lean.DoublyLinkedList
 
 universe u v
 
-/-- **Doubly linked list node.** A doubly linked list node with payloads in $\alpha$ and identities
-in $\iota$ consists of a payload in $\alpha$ (the key together with any satellite data), a next
-pointer and a previous pointer, each of which is either an identity in $\iota$ or NIL. -/
+/-- A node payload with next and previous identities; `none` denotes NIL. -/
 public structure Node (α : Type u) (ι : Type v) where
   /-- The full payload, including any key and satellite data. -/
   payload : α
@@ -51,13 +49,7 @@ public structure Node (α : Type u) (ι : Type v) where
   prev : Option ι
 deriving DecidableEq, Repr
 
-/-- **Store representing a doubly linked list.** Let a store assign to each identity below $n$
-either nothing or a doubly linked list node whose pointers are identities below $n$ or NIL, and
-let the head be an identity below $n$ or NIL. The store and head represent the list of identities
-$i_0, \dots, i_{k-1}$ when these identities are pairwise distinct, the head is $i_0$ (and NIL
-when $k = 0$), and for each $j < k$ the store entry at $i_j$ is a node whose previous pointer is
-NIL if $j = 0$ and $i_{j-1}$ otherwise, and whose next pointer is $i_{j+1}$ if $j + 1 < k$ and
-NIL otherwise. -/
+/-- An allocated doubly-linked list with exactly the distinct identities `ids`. -/
 public def Represents {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (ids : List (Fin capacity)) : Prop :=
@@ -74,15 +66,7 @@ private lemma vector_get_set {α : Type u} {n : Nat}
   rw [Vector.getElem_set]
   simp only [Fin.ext_iff]
 
-/-- **Prepending a node to a doubly linked list.** Let a store assign to each identity below $n$
-either nothing or a doubly linked list node whose pointers are identities below $n$ or NIL, let
-the head be an identity below $n$ or NIL, and let $x$ be an identity whose store entry is a node,
-where the store entry of the head is also a node when the head is not NIL. The procedure sets the
-next pointer of $x$ to the head, then sets the previous pointer of $x$ to NIL, then tests whether
-the head is NIL; if it is not, it sets the previous pointer of the node at the head (read after
-the two writes at $x$) to $x$. Finally it makes $x$ the new head and returns the updated store
-together with the head $x$. One time unit is charged for each pointer assignment and for the NIL
-test, so the cost is $4$ when the head is NIL and $5$ otherwise. -/
+/-- Prepend an already allocated node, following all five source lines in order. -/
 public def listPrepend {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -118,11 +102,7 @@ public def listPrepend {α : Type u} {capacity : Nat}
     TimeM.tick 1
     pure (store3, some x)
 
-/-- **Prepending makes the supplied node the head.** Fix a capacity $n$ and let $s$ be a store
-assigning to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an
-identity, and let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an
-identity, $s(\mathrm{head})$ is a node. Then the head returned by List Prepend on $s$,
-$\mathrm{head}$ and $x$ is $x$. -/
+/-- The last source assignment always makes the supplied node the new head. -/
 public theorem listPrepend_head {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -131,12 +111,7 @@ public theorem listPrepend_head {α : Type u} {capacity : Nat}
     (listPrepend store head x hx hh).ret.2 = some x := by
   cases head <;> simp [listPrepend]
 
-/-- **Exact cost of doubly linked list prepend.** Let a store assign to each identity below $n$
-either nothing or a doubly linked list node, let the head be an identity below $n$ or NIL, and let
-$x$ be an identity whose store entry is a node, where the store entry of the head is also a node
-when the head is not NIL. Then prepending $x$ costs exactly $5$ time units if the head is not NIL
-and exactly $4$ if it is NIL, counting one unit per pointer assignment and per NIL test of the
-old head. -/
+/-- Exact pointer-assignment/NIL-test events in the same execution. -/
 public theorem listPrepend_time {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -145,17 +120,7 @@ public theorem listPrepend_time {α : Type u} {capacity : Nat}
     (listPrepend store head x hx hh).time = if head.isSome then 5 else 4 := by
   cases head <;> simp [listPrepend]
 
-/-- **Result of doubly-linked list prepend.** Fix a capacity $n$ and let $s$ be a store assigning to
-each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an identity, and let
-$x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an identity,
-$s(\mathrm{head})$ is a node. Let $u$ be $s$ with the cell at $x$ replaced by the node $s(x)$ with
-next pointer $\mathrm{head}$ and previous pointer NIL. Then List Prepend on $s$, $\mathrm{head}$ and
-$x$ returns the head $x$ together with the store $u$ when $\mathrm{head}$ is NIL, and, when
-$\mathrm{head}$ is an identity $h$, together with the store obtained from $u$ by replacing its cell
-at $h$ with the node $u(h)$ with previous pointer $x$ (leaving the cell empty if $u(h)$ is
-nothing).
-
-This holds also when $h = x$. -/
+/-- Complete source update, including an aliased supplied node and old head. -/
 public theorem listPrepend_ret {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -179,13 +144,7 @@ public theorem listPrepend_ret {α : Type u} {capacity : Nat}
     exact congrArg (Option.map fun (node : Node α (Fin capacity)) =>
       { node with prev := some x }) (Option.some_get _)
 
-/-- **Cells after doubly-linked list prepend.** Fix a capacity $n$ and let $s$ be a store assigning
-to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an identity, and
-let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an identity,
-$s(\mathrm{head})$ is a node. Let $s'$ be the store returned by List Prepend on $s$, $\mathrm{head}$
-and $x$. For every identity $z$, let $c$ be the node $s(x)$ with next pointer $\mathrm{head}$ and
-previous pointer NIL if $z = x$, and $c = s(z)$ otherwise. Then $s'(z)$ is $c$ with previous pointer
-$x$ (nothing, if $c$ is nothing) when $\mathrm{head} = z$, and $s'(z) = c$ otherwise. -/
+/-- Pointwise source update; the old-head write follows the supplied-node writes. -/
 public theorem listPrepend_get {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -201,12 +160,7 @@ public theorem listPrepend_get {α : Type u} {capacity : Nat}
   | some h =>
     by_cases hz : h = z <;> by_cases xz : x = z <;> simp_all [vector_get_set]
 
-/-- **Doubly-linked list prepend leaves other cells unchanged.** Fix a capacity $n$ and let $s$ be a
-store assigning to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an
-identity, and let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an
-identity, $s(\mathrm{head})$ is a node. Let $s'$ be the store returned by List Prepend on $s$,
-$\mathrm{head}$ and $x$. Then $s'(z) = s(z)$ for every identity $z$ with $z \ne x$ and
-$\mathrm{head} \ne z$. -/
+/-- Every complete cell outside the two source-written identities is unchanged. -/
 public theorem listPrepend_frame {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -217,12 +171,7 @@ public theorem listPrepend_frame {α : Type u} {capacity : Nat}
   rw [listPrepend_get]
   simp only [xz, hz, ↓reduceIte]
 
-/-- **Doubly-linked list prepend preserves allocation.** Fix a capacity $n$ and let $s$ be a store
-assigning to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an
-identity, and let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an
-identity, $s(\mathrm{head})$ is a node. Let $s'$ be the store returned by List Prepend on $s$,
-$\mathrm{head}$ and $x$. Then for every identity $z$, $s'(z)$ is a node if and only if $s(z)$ is a
-node. -/
+/-- No source assignment allocates or frees a node, at any identity. -/
 public theorem listPrepend_allocated {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -235,12 +184,7 @@ public theorem listPrepend_allocated {α : Type u} {capacity : Nat}
     by_cases hz : head = some x <;> simp [hz, hx]
   · by_cases hz : head = some z <;> simp [xz, hz]
 
-/-- **Doubly-linked list prepend preserves payloads.** Fix a capacity $n$ and let $s$ be a store
-assigning to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an
-identity, and let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an
-identity, $s(\mathrm{head})$ is a node. Let $s'$ be the store returned by List Prepend on $s$,
-$\mathrm{head}$ and $x$. Then for every identity $z$, either $s(z)$ and $s'(z)$ are both nothing, or
-both are nodes with the same payload. -/
+/-- Every payload, including satellite data and duplicate keys, is preserved. -/
 public theorem listPrepend_payload {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -258,12 +202,7 @@ public theorem listPrepend_payload {α : Type u} {capacity : Nat}
   · by_cases hz : head = some z <;>
       simp only [xz, hz, ite_true, ite_false, Option.map_map, Function.comp_def]
 
-/-- **Pointers of the node prepended to a doubly-linked list.** Fix a capacity $n$ and let $s$ be a
-store assigning to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an
-identity, and let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an
-identity, $s(\mathrm{head})$ is a node. Suppose moreover that $\mathrm{head}$ is not $x$ (it may be
-NIL). Let $s'$ be the store returned by List Prepend on $s$, $\mathrm{head}$ and $x$. Then $s'(x)$
-is the node $s(x)$ with next pointer $\mathrm{head}$ and previous pointer NIL. -/
+/-- A supplied node distinct from the old head receives exactly both new pointers. -/
 public theorem listPrepend_node {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -274,12 +213,7 @@ public theorem listPrepend_node {α : Type u} {capacity : Nat}
   rw [listPrepend_get]
   simp only [ite_true, fresh, ite_false]
 
-/-- **Old head after doubly-linked list prepend.** Fix a capacity $n$ and let $s$ be a store
-assigning to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an
-identity, and let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an
-identity, $s(\mathrm{head})$ is a node. Suppose moreover that $\mathrm{head}$ is an identity $h$
-with $h \ne x$. Let $s'$ be the store returned by List Prepend on $s$, $\mathrm{head}$ and $x$.
-Then $s'(h)$ is the node $s(h)$ with previous pointer $x$. -/
+/-- A distinct old head changes only its previous pointer. -/
 public theorem listPrepend_oldHead {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -330,15 +264,7 @@ private lemma represents_later_not_head {α : Type u} {capacity : Nat}
   have eqi : 0 = j := rep.1.getElem_inj_iff.mp eqj
   omega
 
-/-- **Correctness of doubly-linked list prepend.** Fix a capacity $n$ and let $s$ be a store
-assigning to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an
-identity, and let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an
-identity, $s(\mathrm{head})$ is a node. Suppose moreover that $s$ with head $\mathrm{head}$
-represents a list $L = (\ell_1, \dots, \ell_k)$ of identities, that is, the $\ell_i$ are distinct,
-$\mathrm{head}$ is $\ell_1$ (NIL if $k = 0$), and each $s(\ell_i)$ is a node with previous pointer
-$\ell_{i-1}$ and next pointer $\ell_{i+1}$ (NIL past the ends of $L$), and that $x$ is not in $L$.
-Let $s'$ and $h'$ be the store and head returned by List Prepend on $s$, $\mathrm{head}$ and $x$.
-Then $s'$ with head $h'$ represents the list $(x, \ell_1, \dots, \ell_k)$. -/
+/-- Prepending a fresh allocated identity preserves all doubly-linked neighbours. -/
 public theorem listPrepend_represents {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -376,15 +302,7 @@ public theorem listPrepend_represents {α : Type u} {capacity : Nat}
       · simpa using hp
       · simpa [Nat.add_assoc] using hnext
 
-/-- **Doubly-linked list prepend preserves disjoint lists.** Fix a capacity $n$ and let $s$ be a
-store assigning to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an
-identity, and let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an
-identity, $s(\mathrm{head})$ is a node. Suppose moreover that $s$ with some head $o$ represents a
-list $L = (\ell_1, \dots, \ell_k)$ of identities, that is, the $\ell_i$ are distinct, $o$ is
-$\ell_1$ (NIL if $k = 0$), and each $s(\ell_i)$ is a node with previous pointer $\ell_{i-1}$ and
-next pointer $\ell_{i+1}$ (NIL past the ends of $L$), that $x$ is not in $L$, and that
-$\mathrm{head}$ is NIL or an identity not in $L$. Let $s'$ be the store returned by List Prepend on
-$s$, $\mathrm{head}$ and $x$. Then $s'$ with head $o$ also represents $L$. -/
+/-- A represented list outside the written identities keeps its complete invariant. -/
 public theorem listPrepend_disjoint_represents {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)
@@ -401,11 +319,7 @@ public theorem listPrepend_disjoint_represents {α : Type u} {capacity : Nat}
   have hd : head ≠ some otherIds[i] := fun he => disjoint _ he (List.getElem_mem hi)
   exact ⟨node, (listPrepend_frame store head x hx hh otherIds[i] xi hd).trans hn, hp, hnext⟩
 
-/-- **Uniform cost bound for doubly linked list prepend.** Let a store assign to each identity
-below $n$ either nothing or a doubly linked list node, let the head be an identity below $n$ or
-NIL, and let $x$ be an identity whose store entry is a node, where the store entry of the head is
-also a node when the head is not NIL. Then prepending $x$ costs at most $5$ time units, counting
-one unit per pointer assignment and per NIL test of the old head. -/
+/-- Uniform bound for the specified pointer-assignment/NIL-test event model. -/
 public theorem listPrepend_time_le {α : Type u} {capacity : Nat}
     (store : Vector (Option (Node α (Fin capacity))) capacity)
     (head : Option (Fin capacity)) (x : Fin capacity)

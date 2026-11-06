@@ -68,11 +68,7 @@ namespace Cslib.Logic.PL
 
 namespace CNF
 
-/-- **Disjunction of two CNFs.** For CNFs $\varphi = C_1 \land \dots \land C_m$ and
-$\psi = D_1 \land \dots \land D_n$, their disjunction is the CNF with one clause $C_i \lor D_j$
-(the literals of $C_i$ followed by those of $D_j$) for each pair $(i, j)$, listed with $i$ as the
-outer and $j$ as the inner index. It expresses $(\bigwedge_i C_i) \lor (\bigwedge_j D_j)$ as
-$\bigwedge_{i,j} (C_i \lor D_j)$. -/
+/-- The CNF of a disjunction: `(⋀ Cᵢ) ∨ (⋀ Dⱼ)` is `⋀ (Cᵢ ∨ Dⱼ)`. -/
 def disj (φ ψ : CNF) : CNF := φ.flatMap fun C ↦ ψ.map fun D ↦ C ++ D
 
 theorem satisfies_disj {σ : Nat → Bool} {φ ψ : CNF} :
@@ -101,23 +97,9 @@ namespace Proposition
 
 mutual
 
-/-- **Accumulating CNF builder.** Let $\iota$ number the atoms by natural numbers, read a literal
-$(n, p)$ as variable $n$ with polarity $p$, and write $1$ and $0$ for the polarities true and
-false. For a polarity $p$, a proposition $\varphi$ and a CNF $S$, the CNF
-$\mathcal{A}_p(\varphi, S)$ is defined by recursion on $\varphi$, together with the disjoining
-builder $\mathcal{O}_p$. For an atom $a$, $\mathcal{A}_p(a, S)$ is the unit clause
-$[(\iota(a), p)]$ followed by the clauses of $S$. Conjunction-like nodes thread the accumulator:
-$\mathcal{A}_1(A \land B, S) = \mathcal{A}_1(A, \mathcal{A}_1(B, S))$,
-$\mathcal{A}_0(A \lor B, S) = \mathcal{A}_0(A, \mathcal{A}_0(B, S))$ and
-$\mathcal{A}_0(A \to B, S) = \mathcal{A}_1(A, \mathcal{A}_0(B, S))$. Disjunction-like nodes go
-through $\mathcal{O}$: writing $X \mathbin{+\!\!+} S$ for the clauses of $X$ followed by those of
-$S$ and $[\,]$ for the empty CNF,
-$\mathcal{A}_1(A \lor B, S) = \mathcal{O}_1(A, \mathcal{A}_1(B, [\,])) \mathbin{+\!\!+} S$,
-$\mathcal{A}_1(A \to B, S) = \mathcal{O}_0(A, \mathcal{A}_1(B, [\,])) \mathbin{+\!\!+} S$ and
-$\mathcal{A}_0(A \land B, S) = \mathcal{O}_0(A, \mathcal{A}_0(B, [\,])) \mathbin{+\!\!+} S$.
-
-An assignment $\sigma$ satisfies $\mathcal{A}_p(\varphi, S)$ exactly when $\varphi$ has truth
-value $p$ under $\sigma \circ \iota$ and $\sigma$ satisfies $S$. -/
+/-- `cnfAcc ι pos A acc`: a CNF of `A` (if `pos`) or of its Boolean complement (if not),
+prepended to `acc`, with atom `a` as variable `ι a`. Conjunction-like nodes thread the
+accumulator; disjunction-like nodes go through `cnfOr`. -/
 def cnfAcc (ι : Atom → ℕ) : Bool → Proposition Atom → CNF → CNF
   | pos, atom a, acc => [(ι a, pos)] :: acc
   | true, and A B, acc => cnfAcc ι true A (cnfAcc ι true B acc)
@@ -127,23 +109,9 @@ def cnfAcc (ι : Atom → ℕ) : Bool → Proposition Atom → CNF → CNF
   | true, imp A B, acc => cnfOr ι false A (cnfAcc ι true B []) ++ acc
   | false, and A B, acc => cnfOr ι false A (cnfAcc ι false B []) ++ acc
 
-/-- **Disjoining CNF builder.** Let $\iota$ number the atoms by natural numbers, read a literal
-$(n, p)$ as variable $n$ with polarity $p$, and write $1$ and $0$ for the polarities true and
-false. For a polarity $p$, a proposition $\varphi$ and a CNF $S$, the CNF
-$\mathcal{O}_p(\varphi, S)$ is defined by recursion on $\varphi$, together with the accumulating
-CNF builder $\mathcal{A}_p$. Write $X \otimes S$ for the disjunction of two CNFs $X$ and $S$ and
-$[\,]$ for the empty CNF. For an atom $a$, $\mathcal{O}_p(a, S) = U \otimes S$, where $U$ is the
-CNF whose only clause is the unit clause $[(\iota(a), p)]$. Disjunction-like nodes are consumed
-from the left: $\mathcal{O}_1(A \lor B, S) = \mathcal{O}_1(A, \mathcal{O}_1(B, S))$,
-$\mathcal{O}_1(A \to B, S) = \mathcal{O}_0(A, \mathcal{O}_1(B, S))$ and
-$\mathcal{O}_0(A \land B, S) = \mathcal{O}_0(A, \mathcal{O}_0(B, S))$. Conjunction-like nodes go
-through $\mathcal{A}$:
-$\mathcal{O}_1(A \land B, S) = \mathcal{A}_1(A, \mathcal{A}_1(B, [\,])) \otimes S$,
-$\mathcal{O}_0(A \lor B, S) = \mathcal{A}_0(A, \mathcal{A}_0(B, [\,])) \otimes S$ and
-$\mathcal{O}_0(A \to B, S) = \mathcal{A}_1(A, \mathcal{A}_0(B, [\,])) \otimes S$.
-
-An assignment $\sigma$ satisfies $\mathcal{O}_p(\varphi, S)$ exactly when $\varphi$ has truth
-value $p$ under $\sigma \circ \iota$ or $\sigma$ satisfies $S$. -/
+/-- `cnfOr ι pos A S`: a CNF of `A` (or its complement) disjoined with the CNF `S`. A chain
+of disjunction-like nodes is consumed from the left, so each step distributes one disjunct
+over the CNF built so far, whatever the nesting. -/
 def cnfOr (ι : Atom → ℕ) : Bool → Proposition Atom → CNF → CNF
   | true, or A B, S => cnfOr ι true A (cnfOr ι true B S)
   | true, imp A B, S => cnfOr ι false A (cnfOr ι true B S)
@@ -155,31 +123,17 @@ def cnfOr (ι : Atom → ℕ) : Bool → Proposition Atom → CNF → CNF
 
 end
 
-/-- **CNF of a proposition at a polarity.** Let $\iota$ number the atoms by natural numbers. For a
-polarity $p$ and a proposition $\varphi$, the CNF of $\varphi$ at polarity $p$ is the result of the
-accumulating CNF builder at polarity $p$ on $\varphi$ with the empty CNF as accumulator; the atom
-$a$ becomes the variable $\iota(a)$.
-
-An assignment $\sigma$ satisfies it exactly when $\varphi$ has truth value $p$ under
-$\sigma \circ \iota$, so it is a CNF of $\varphi$ when $p$ is true and of the Boolean complement of
-$\varphi$ when $p$ is false. Only the requested polarity is built: a proposition already in
-conjunctive normal form gets a CNF of linear size at polarity true, although the CNF of its
-complement can be exponentially larger. -/
+/-- A CNF of `A` (if `pos`) or of its Boolean complement (if not), with atom `a` as variable
+`ι a`. Each call builds only the polarity it is asked for: a CNF-shaped input gets a linear
+`cnfOf ι true`, even though its complement is exponential. -/
 def cnfOf (ι : Atom → ℕ) (pos : Bool) (A : Proposition Atom) : CNF := cnfAcc ι pos A []
 
-/-- **CNF of a proposition.** Let $\iota$ number the atoms by natural numbers. The CNF of a
-proposition $A$ is its CNF at polarity true, with the atom $a$ as the variable $\iota(a)$.
-
-An assignment $\sigma$ satisfies it exactly when $A$ is true under $\sigma \circ \iota$. -/
+/-- A CNF equivalent to `A`. -/
 def toCNF (ι : Atom → ℕ) (A : Proposition Atom) : CNF := cnfOf ι true A
 
-/-- **CNF of the complement of a proposition.** Let $\iota$ number the atoms by natural numbers.
-The complement CNF of a proposition $A$ is its CNF at polarity false, with the atom $a$ as the
-variable $\iota(a)$.
-
-An assignment $\sigma$ satisfies it exactly when $A$ is false under $\sigma \circ \iota$. This is
-not the negation $\lnot A$, which is $A \to \bot$ with $\bot$ an atom: that proposition can be
-true together with $A$ when the atom $\bot$ is true. -/
+/-- A CNF of the Boolean complement of `A`: it holds exactly when `A` is false
+(`satisfies_toNegCNF_iff`). This is not upstream's `¬A = A → ⊥`, which can be true when
+`A` is, if the atom `⊥` is true. -/
 def toNegCNF (ι : Atom → ℕ) (A : Proposition Atom) : CNF := cnfOf ι false A
 
 theorem satisfies_cnfAcc_cnfOr (ι : Atom → ℕ) (A : Proposition Atom) (σ : Nat → Bool) :
@@ -213,10 +167,7 @@ theorem satisfies_cnfOf (ι : Atom → ℕ) (pos : Bool) (A : Proposition Atom) 
   rw [cnfOf, (satisfies_cnfAcc_cnfOr ι A σ pos [] []).1]
   simp
 
-/-- **Equivalent CNF.** Let $\iota$ number the atoms by natural numbers. For every proposition $A$
-and every assignment $\sigma$ of Boolean values to the natural-number variables, the CNF of $A$
-built with atom $a$ as variable $\iota(a)$ is satisfied by $\sigma$ if and only if $A$ evaluates
-to true under the valuation $\sigma \circ \iota$ of the atoms. -/
+/-- **Equivalent CNF**: `A.toCNF ι` is satisfied by `σ` iff `A` is true under `σ ∘ ι`. -/
 theorem satisfies_toCNF_iff (ι : Atom → ℕ) (A : Proposition Atom) (σ : Nat → Bool) :
     (A.toCNF ι).Satisfies σ ↔ A.evalBool (σ ∘ ι) = true :=
   satisfies_cnfOf ι true A σ
@@ -225,11 +176,8 @@ theorem satisfies_toNegCNF_iff (ι : Atom → ℕ) (A : Proposition Atom) (σ : 
     (A.toNegCNF ι).Satisfies σ ↔ A.evalBool (σ ∘ ι) = false :=
   satisfies_cnfOf ι false A σ
 
-/-- **Satisfiability of a CNF with falsum false.** Let the atoms have a distinguished atom $\bot$
-and let $\iota$ be an injective numbering of the atoms by natural numbers. For every proposition
-$A$, the CNF consisting of the unit clause with the single negative literal on variable
-$\iota(\bot)$ followed by the clauses of the CNF of $A$ (atom $a$ read as variable $\iota(a)$) is
-satisfiable if and only if some valuation $v$ of the atoms with $v(\bot)$ false makes $A$ true. -/
+/-- With the atom `⊥` read as false: adding the unit clause `¬⊥` gives a CNF that is
+satisfiable iff `A` has a model with `⊥` false. -/
 theorem cnfSat_toCNF_bot_iff [Bot Atom] {ι : Atom → ℕ} (hι : Function.Injective ι)
     (A : Proposition Atom) :
     CNFSat ([(ι ⊥, false)] :: A.toCNF ι) ↔

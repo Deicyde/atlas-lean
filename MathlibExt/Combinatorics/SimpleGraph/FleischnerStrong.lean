@@ -6719,12 +6719,8 @@ private theorem IsVertexConnected.hasStrongSquareCycle_card
         apply c.hasStrongSquareCycle_of_componentTrailCovers hc cover k hk0 hboundK
         omega
 
-/-- **Strengthened Fleischner theorem.** Let $G$ be a finite simple graph that is
-2-vertex-connected, that is, $G$ has at least three vertices and stays connected after deleting at
-most one vertex. Let $G^2$ be the square of $G$: the graph on the same vertices in which two
-distinct vertices are adjacent if and only if they are adjacent in $G$ or have a common neighbour
-in $G$. Then for every vertex $x$ of $G$, the graph $G^2$ has a Hamiltonian cycle whose two edges
-at $x$ are edges of $G$. -/
+/-- Every 2-connected finite graph has a rooted Hamiltonian cycle in its square whose two
+root edges belong to the original graph. -/
 public theorem IsVertexConnected.hasStrongSquareCycle
     {V : Type u} [Fintype V] [DecidableEq V] {G : SimpleGraph V}
     (hG : G.IsVertexConnected 2) (x : V) : G.HasStrongSquareCycle x :=

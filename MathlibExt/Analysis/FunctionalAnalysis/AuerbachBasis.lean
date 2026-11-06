@@ -67,7 +67,7 @@ namespace MathlibExt.Analysis.FunctionalAnalysis.AuerbachBasis
 
 variable {𝕜 : Type*} [RCLike 𝕜] {E : Type*} [NormedAddCommGroup E] [NormedSpace 𝕜 E]
 
-/-- **Coordinate functional of a basis as a continuous linear map.** The `i`-th coordinate functional of a basis, as a continuous linear map.
+/-- The `i`-th coordinate functional of a basis, as a continuous linear map.
 In finite dimensions every linear map is continuous, so this is just the
 coordinate functional bundled with its continuity. -/
 noncomputable def coordCLM {ι : Type*} [FiniteDimensional 𝕜 E] (b : Module.Basis ι 𝕜 E) (i : ι) :
@@ -79,7 +79,7 @@ theorem coordCLM_apply {ι : Type*} [FiniteDimensional 𝕜 E] (b : Module.Basis
     coordCLM b i y = b.coord i y :=
   rfl
 
-/-- **Operator norm of a norm-bounded coordinate functional is at most 1.** If the `i`-th coordinate functional is bounded by the norm, its operator
+/-- If the `i`-th coordinate functional is bounded by the norm, its operator
 norm is at most `1`. -/
 theorem norm_coordCLM_le_one {ι : Type*} [FiniteDimensional 𝕜 E] (b : Module.Basis ι 𝕜 E) (i : ι)
     (h : ∀ y : E, ‖b.coord i y‖ ≤ ‖y‖) : ‖coordCLM b i‖ ≤ 1 := by
@@ -87,7 +87,7 @@ theorem norm_coordCLM_le_one {ι : Type*} [FiniteDimensional 𝕜 E] (b : Module
   intro y
   simpa using h y
 
-/-- **Coordinate functional of a unit basis vector has operator norm 1.** If the `i`-th basis vector has norm `1` and the `i`-th coordinate
+/-- If the `i`-th basis vector has norm `1` and the `i`-th coordinate
 functional is bounded by the norm, its operator norm is exactly `1`: it
 attains `1` at the `i`-th basis vector. -/
 theorem norm_coordCLM_eq_one {ι : Type*} [FiniteDimensional 𝕜 E] (b : Module.Basis ι 𝕜 E) (i : ι)
@@ -99,7 +99,7 @@ theorem norm_coordCLM_eq_one {ι : Type*} [FiniteDimensional 𝕜 E] (b : Module
       simpa [coordCLM_apply] using ContinuousLinearMap.le_opNorm (coordCLM b i) (b i)
     _ = ‖coordCLM b i‖ := by rw [hb, mul_one]
 
-/-- **Auerbach basis.** An *Auerbach basis* is a basis of unit vectors whose coordinate
+/-- An *Auerbach basis* is a basis of unit vectors whose coordinate
 functionals all have operator norm `1`. -/
 def IsAuerbachBasis {ι : Type*} [FiniteDimensional 𝕜 E] (b : Module.Basis ι 𝕜 E) : Prop :=
   (∀ i, ‖b i‖ = 1) ∧ ∀ i, ‖coordCLM b i‖ = 1

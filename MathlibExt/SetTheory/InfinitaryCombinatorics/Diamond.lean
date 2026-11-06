@@ -25,7 +25,7 @@ namespace MetaMathlibExt
 
 -- Logic 4: Diamond ($\Diamond$)
 
-/-- **Diamond principle.** ◇_κ holds iff there is a sequence ⟨ S_α : α < κ⟩ with S_α ⊆ α for all α < κ, such that for every
+/-- ◇_κ holds iff there is a sequence ⟨ S_α : α < κ⟩ with S_α ⊆ α for all α < κ, such that for every
 X ⊆ κ, {α < κ : X ∩ α = S_α} is stationary in κ.
 -/
 def Diamond.{u} (κ : Cardinal.{u}) : Prop :=
@@ -37,7 +37,7 @@ def Diamond.{u} (κ : Cardinal.{u}) : Prop :=
 
 -- Logic 5: Weak Diamond ($\Diamond^-$)
 
-/-- **Diamond-minus principle.** ◇⁻_κ holds iff there is a sequence ⟨ 𝒜_α : α < κ⟩ with each 𝒜_α ⊆ 𝒫(α) and |𝒜_α| ≤ |α|, such
+/-- ◇⁻_κ holds iff there is a sequence ⟨ 𝒜_α : α < κ⟩ with each 𝒜_α ⊆ 𝒫(α) and |𝒜_α| ≤ |α|, such
 that for every X ⊆ κ the set {α < κ : X ∩ α ∈ 𝒜_α} is stationary in κ.
 -/
 def DiamondMinus.{u} (κ : Cardinal.{u}) : Prop :=

@@ -25,30 +25,22 @@ import Mathlib.Topology.MetricSpace.Sequences
 open scoped BigOperators ComplexOrder
 namespace MvPolynomial
 
-/-- **Stable polynomials.** A complex multivariate polynomial is stable if it has no zero when
-every variable lies in the open upper half-plane. -/
+/-- A complex multivariate polynomial is stable if it has no zero when every variable lies in the
+open upper half-plane. -/
 public def IsStable {σ : Type*} (p : MvPolynomial σ ℂ) : Prop :=
   ∀ z : σ → ℂ, (∀ i, 0 < (z i).im) → eval z p ≠ 0
 
-/-- **Real stable polynomials.** A complex multivariate polynomial is real stable if it is stable
-and has real coefficients. -/
+/-- A complex multivariate polynomial is real stable if it is stable and has real coefficients. -/
 public def IsRealStable {σ : Type*} (p : MvPolynomial σ ℂ) : Prop :=
   map (starRingEnd ℂ) p = p ∧ p.IsStable
 
-/-- **Univariate specialization.** Let $R$ be a commutative ring, let $p$ be a multivariate
-polynomial over $R$ in variables $X_j$ indexed by $j \in \sigma$, and let $i \in \sigma$ and
-$x : \sigma \to R$. The univariate specialization of $p$ at $i$ and $x$ is the polynomial in
-$R[X]$ obtained from $p$ by substituting $X$ for $X_i$ and the constant $x_j$ for every $X_j$ with
-$j \ne i$; the value $x_i$ is not used. -/
+/-- Regard one variable of a multivariate polynomial as the variable of a univariate polynomial,
+and specialize all other variables. -/
 public noncomputable def univariateSpecialization {σ R : Type*} [CommRing R]
     (i : σ) [DecidableEq σ] (x : σ → R) (p : MvPolynomial σ R) : Polynomial R :=
   eval₂Hom Polynomial.C (fun j ↦ if j = i then Polynomial.X else Polynomial.C (x j)) p
 
-/-- **Partial derivatives under univariate specialization.** Let $R$ be a commutative ring, let
-$p$ be a multivariate polynomial over $R$ in variables $X_j$ indexed by $j \in \sigma$, let
-$i \in \sigma$ and $x : \sigma \to R$, and for a polynomial $q$ write $q_{i,x} \in R[X]$ for its
-univariate specialization that keeps $X_i$ as the variable $X$ and sets every other $X_j$ to
-$x_j$. Then $(\partial p / \partial X_i)_{i,x} = (p_{i,x})'$, the derivative of $p_{i,x}$. -/
+/-- Partial differentiation becomes ordinary differentiation after univariate specialization. -/
 public theorem derivative_univariateSpecialization {σ R : Type*} [CommRing R]
     (i : σ) [DecidableEq σ] (x : σ → R) (p : MvPolynomial σ R) :
     univariateSpecialization i x (pderiv i p) =
@@ -72,11 +64,7 @@ public theorem derivative_univariateSpecialization {σ R : Type*} [CommRing R]
         simp only [hji, ↓reduceIte, Polynomial.derivative_C, mul_zero, add_zero]
         rw [hp]
 
-/-- **Evaluating a univariate specialization.** Let $R$ be a commutative ring, let $p$ be a
-multivariate polynomial over $R$ in variables $X_j$ indexed by $j \in \sigma$, and let
-$i \in \sigma$, $x : \sigma \to R$ and $t \in R$. Evaluating at $t$ the univariate specialization
-of $p$ that keeps $X_i$ as the variable and sets every other $X_j$ to $x_j$ gives $p(y)$, where
-$y_i = t$ and $y_j = x_j$ for $j \ne i$. -/
+/-- Evaluating a univariate specialization amounts to updating the selected variable. -/
 public theorem eval_univariateSpecialization {σ R : Type*} [CommRing R]
     (i : σ) [DecidableEq σ] (x : σ → R) (t : R) (p : MvPolynomial σ R) :
     Polynomial.eval t (univariateSpecialization i x p) =
@@ -97,11 +85,8 @@ public theorem eval_univariateSpecialization {σ R : Type*} [CommRing R]
         simp
       · simp [hji, Function.update_of_ne]]
 
-/-- **Univariate specialization at real values preserves real coefficients.** Let $p$ be a
-complex multivariate polynomial with real coefficients in variables $X_j$ indexed by
-$j \in \sigma$, let $i \in \sigma$, and let $a : \sigma \to \mathbb{C}$ with $a_j$ real for every
-$j \ne i$. Then the univariate specialization of $p$ that keeps $X_i$ as the variable and sets
-every other $X_j$ to $a_j$ has real coefficients. -/
+/-- Complex conjugation commutes with univariate specialization at real values of the other
+variables. -/
 public theorem map_star_univariateSpecialization {σ : Type*} [DecidableEq σ]
     (i : σ) (a : σ → ℂ) (p : MvPolynomial σ ℂ)
     (hp : MvPolynomial.map (starRingEnd ℂ) p = p)
@@ -474,11 +459,8 @@ private lemma ksEventually_exists_root_norm_sub_lt
     le_of_tendsto_of_tendsto hleft hright (Filter.Eventually.of_forall hbound)
   exact hqk (norm_eq_zero.mp (hnormle.antisymm (norm_nonneg _)))
 
-/-- **Roots of specializations of stable polynomials lie in the closed lower half-plane.** Let
-$p$ be a stable complex multivariate polynomial in variables $X_j$ indexed by $j \in \sigma$, let
-$i \in \sigma$, and let $a : \sigma \to \mathbb{C}$ with $\operatorname{Im} a_j \ge 0$ for every
-$j \ne i$. If the univariate specialization of $p$ that keeps $X_i$ as the variable and sets every
-other $X_j$ to $a_j$ is nonzero, then every root $w$ of it satisfies $\operatorname{Im} w \le 0$. -/
+/-- Specializing all but one variable of a stable polynomial to the closed upper half-plane
+leaves every root of a nonzero specialization in the closed lower half-plane. -/
 public theorem _root_.MvPolynomial.IsStable.roots_im_nonpos_univariateSpecialization
     {σ : Type*} [DecidableEq σ] {p : MvPolynomial σ ℂ} (hp : p.IsStable)
     (i : σ) (a : σ → ℂ) (ha : ∀ j, j ≠ i → 0 ≤ (a j).im)
@@ -589,13 +571,8 @@ private lemma ksRoots_im_nonpos_univariateSpecialization
     exact hnonzero hroot
   exact ksRoots_im_nonpos_of_monic_limit q P hqmonic hPmonic hPdegree hcoeff hupper
 
-/-- **Real-rootedness of univariate specializations of real stable polynomials.** Let $p$ be a
-real stable complex multivariate polynomial in variables $X_j$ indexed by $j \in \sigma$, let
-$i \in \sigma$, and for $x : \sigma \to \mathbb{C}$ write $p_{i,x} \in \mathbb{C}[X]$ for the
-univariate specialization of $p$ that keeps $X_i$ as the variable $X$ and sets every other $X_j$
-to $x_j$. Suppose there is a natural number $d$ such that for every $x : \sigma \to \mathbb{C}$
-the polynomial $p_{i,x}$ is monic of degree $d$. Then for every $a : \sigma \to \mathbb{C}$ with
-$a_j$ real for all $j \ne i$, the polynomial $p_{i,a}$ is real-rooted. -/
+/-- A real-stable polynomial is real-rooted after specializing every variable but one to real
+values, provided the resulting univariate degree is constant. -/
 public theorem _root_.MvPolynomial.isRealRooted_univariateSpecialization_of_isRealStable
     {σ : Type*} [DecidableEq σ] (i : σ) (p : MvPolynomial σ ℂ)
     (hp : p.IsRealStable) (d : ℕ)
@@ -664,10 +641,7 @@ private lemma ksEval_sub_derivative_ne_zero (p : Polynomial ℂ) (w : ℂ)
     rw [Complex.one_im] at him
     linarith
 
-/-- **Subtracting a partial derivative preserves stability.** Let $p$ be a stable complex
-multivariate polynomial in variables $X_j$ indexed by $j \in \sigma$, let $i \in \sigma$, and
-write $\partial_i p$ for the partial derivative of $p$ with respect to $X_i$. Then
-$p - \partial_i p$ is stable. -/
+/-- The operator `1 - ∂ᵢ` preserves stability. -/
 public theorem _root_.MvPolynomial.IsStable.sub_pderiv {σ : Type*}
     {p : MvPolynomial σ ℂ} (hp : p.IsStable) (i : σ) :
     (p - pderiv i p).IsStable := by
@@ -708,10 +682,7 @@ public theorem _root_.MvPolynomial.IsStable.sub_pderiv {σ : Type*}
   rw [heval]
   simpa using hzero
 
-/-- **Subtracting a partial derivative preserves real stability.** Let $p$ be a real stable
-complex multivariate polynomial in variables $X_j$ indexed by $j \in \sigma$, let $i \in \sigma$,
-and write $\partial_i p$ for the partial derivative of $p$ with respect to $X_i$. Then
-$p - \partial_i p$ is real stable. -/
+/-- The operator `1 - ∂ᵢ` preserves real stability. -/
 public theorem _root_.MvPolynomial.IsRealStable.sub_pderiv {σ : Type*}
     {p : MvPolynomial σ ℂ} (hp : p.IsRealStable) (i : σ) :
     (p - pderiv i p).IsRealStable := by
@@ -719,11 +690,7 @@ public theorem _root_.MvPolynomial.IsRealStable.sub_pderiv {σ : Type*}
   · rw [map_sub, ← MvPolynomial.pderiv_map, hp.1]
   · exact MvPolynomial.IsStable.sub_pderiv hp.2 i
 
-/-- **The mixed differential preserves stability.** Let $p$ be a stable complex multivariate
-polynomial in variables $X_s$ indexed by $s \in \sigma$, and write $\partial_s$ for the partial
-derivative with respect to $X_s$. For every finite list $(i_1, \dots, i_k)$ of indices in
-$\sigma$ (repetitions allowed, possibly empty), the mixed differential of $p$ along the list,
-$(1 - \partial_{i_k}) \cdots (1 - \partial_{i_1})\, p$, is stable. -/
+/-- Any finite composition of the operators `1 - ∂ᵢ` preserves stability. -/
 public theorem _root_.MvPolynomial.IsStable.mixedDifferential {σ : Type*}
     {p : MvPolynomial σ ℂ} (hp : p.IsStable) (indices : List σ) :
     (MvPolynomial.mixedDifferential indices p).IsStable := by
@@ -733,11 +700,7 @@ public theorem _root_.MvPolynomial.IsStable.mixedDifferential {σ : Type*}
       rw [MvPolynomial.mixedDifferential_cons]
       exact ih (MvPolynomial.IsStable.sub_pderiv hp i)
 
-/-- **The mixed differential preserves real stability.** Let $p$ be a real stable complex
-multivariate polynomial in variables $X_s$ indexed by $s \in \sigma$, and write $\partial_s$ for
-the partial derivative with respect to $X_s$. For every finite list $(i_1, \dots, i_k)$ of indices
-in $\sigma$ (repetitions allowed, possibly empty), the mixed differential of $p$ along the list,
-$(1 - \partial_{i_k}) \cdots (1 - \partial_{i_1})\, p$, is real stable. -/
+/-- Any finite composition of the operators `1 - ∂ᵢ` preserves real stability. -/
 public theorem _root_.MvPolynomial.IsRealStable.mixedDifferential {σ : Type*}
     {p : MvPolynomial σ ℂ} (hp : p.IsRealStable) (indices : List σ) :
     (MvPolynomial.mixedDifferential indices p).IsRealStable := by

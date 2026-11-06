@@ -33,28 +33,20 @@ open scoped ENNReal
 
 namespace Cslib.Algorithms.Lean.Matrix
 
-/-- **Output distribution of repeated Freivalds trials.** For natural numbers $n, k$ and
-$n \times n$ matrices $A, B, C$ over $\mathbb{F}_2$, this is the probability distribution on
-$\{\mathrm{true}, \mathrm{false}\}$ of the result returned by the repeated Freivalds executor on
-$A, B, C$ when its history of $k$ seeds is drawn uniformly from $(\mathbb{F}_2^n)^k$. -/
+/-- Uniform complete binary histories mapped through the repeated executor. -/
 noncomputable def freivaldsRepeatLaw {n : Nat} (k : Nat)
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) n) n) : PMF Bool :=
   (Cslib.Probability.PMF.uniformOfFintype (Fin k → Fin n → ZMod 2)).map fun history =>
     (freivaldsRepeat A B C history).ret
 
-/-- **Uniform mass of a Freivalds seed history.** For all natural numbers $n$ and $k$, under the
-uniform distribution on histories of $k$ seeds, that is, on $(\mathbb{F}_2^n)^k$, every history
-has probability exactly $(2^{nk})^{-1}$. This includes the cases $k = 0$ and $n = 0$. -/
+/-- Every complete history has its exact uniform mass, including zero trials
+and zero-dimensional matrices. -/
 theorem freivaldsHistory_pointMass {n k : Nat} (history : Fin k → Fin n → ZMod 2) :
     Cslib.Probability.PMF.uniformOfFintype (Fin k → Fin n → ZMod 2) history =
       ((2 : ℝ≥0∞) ^ (n * k))⁻¹ := by
   simp [Cslib.Probability.PMF.uniformOfFintype_apply, pow_mul]
 
-/-- **Counting accepted histories of repeated Freivalds trials.** Let $n, k$ be natural numbers
-and let $A, B, C$ be $n \times n$ matrices over $\mathbb{F}_2$. The number of histories
-$(r_1, \dots, r_k)$ of seeds $r_i \in \mathbb{F}_2^n$ on which the repeated Freivalds executor
-accepts equals $a^k$, where $a$ is the number of seeds $r \in \mathbb{F}_2^n$ on which a single
-Freivalds trial accepts. -/
+/-- An accepted history chooses an accepted seed independently at every position. -/
 theorem freivaldsRepeat_acceptanceCard {n k : Nat}
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) n) n) :
     Fintype.card {history : Fin k → Fin n → ZMod 2 //
@@ -77,11 +69,8 @@ theorem freivaldsRepeat_acceptanceCard {n k : Nat}
     _ = accepted.card ^ k := Fintype.card_piFinset_const accepted k
     _ = _ := by rw [accepted_card]
 
-/-- **Acceptance probability of repeated Freivalds trials.** Let $n, k$ be natural numbers and
-let $A, B, C$ be $n \times n$ matrices over $\mathbb{F}_2$. If the history of $k$ seeds is drawn
-uniformly from $(\mathbb{F}_2^n)^k$, the probability that the repeated Freivalds executor accepts
-is $p^k$, where $p$ is the probability that a single Freivalds trial accepts on a seed drawn
-uniformly from $\mathbb{F}_2^n$. -/
+/-- The actual repeated executor accepts with the kth power of the one-trial
+acceptance probability under the uniform complete-history law. -/
 theorem freivaldsRepeatLaw_acceptance_power {n : Nat} (k : Nat)
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) n) n) :
     freivaldsRepeatLaw k A B C true = (freivaldsTrialLaw A B C true) ^ k := by
@@ -110,10 +99,7 @@ theorem freivaldsRepeatLaw_acceptance_power {n : Nat} (k : Nat)
     Fintype.card_pi_const]
   simp only [Nat.cast_pow, div_eq_mul_inv, mul_pow, ENNReal.inv_pow]
 
-/-- **Completeness of repeated Freivalds trials.** Let $n, k$ be natural numbers and let
-$A, B, C$ be $n \times n$ matrices over $\mathbb{F}_2$ with $AB = C$. If the history of $k$
-seeds is drawn uniformly from $(\mathbb{F}_2^n)^k$, then the repeated Freivalds executor accepts
-with probability $1$. -/
+/-- A correct product is accepted with probability one for every number of trials. -/
 theorem freivaldsRepeatLaw_complete {n : Nat} (k : Nat)
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) n) n)
     (correct : freivaldsMatrix A * freivaldsMatrix B = freivaldsMatrix C) :
@@ -121,10 +107,7 @@ theorem freivaldsRepeatLaw_complete {n : Nat} (k : Nat)
   rw [freivaldsRepeatLaw_acceptance_power, freivaldsTrialLaw_complete A B C correct]
   exact one_pow k
 
-/-- **Soundness of repeated Freivalds trials.** Let $n, k$ be natural numbers and let
-$A, B, C$ be $n \times n$ matrices over $\mathbb{F}_2$ with $AB \ne C$. If the history of $k$
-seeds is drawn uniformly from $(\mathbb{F}_2^n)^k$, then the repeated Freivalds executor accepts
-with probability at most $(2^k)^{-1}$. -/
+/-- An incorrect product is accepted with probability at most two to the minus k. -/
 theorem freivaldsRepeatLaw_sound {n : Nat} (k : Nat)
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) n) n)
     (wrong : freivaldsMatrix A * freivaldsMatrix B ≠ freivaldsMatrix C) :

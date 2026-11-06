@@ -20,9 +20,7 @@ public import Mathlib.Order.SetNotation
 -- Source: Lean Definition Library (Airtable) records: Logic 16, Logic 36
 
 /-!
-# Special partial orders
-
-Partial orders that are unions of countably many antichains, and special partial orders.
+# Union of ω antichains; Special partial order
 
 ## References
 
@@ -33,7 +31,7 @@ namespace MetaMathlibExt
 
 -- Logic 16: Union of ω antichains
 
-/-- **Partial order that is a union of countably many antichains.** A partial order (P, ≤) is a *union of ω antichains* if P = ⋃_{n<ω} Aₙ where each Aₙ ⊆ P is an
+/-- A partial order (P, ≤) is a *union of ω antichains* if P = ⋃_{n<ω} Aₙ where each Aₙ ⊆ P is an
 antichain (a set of pairwise ≤-incomparable elements).
 -/
 def IsUnionOfOmegaAntichains.{u} (α : Type u) [PartialOrder α] : Prop :=
@@ -41,7 +39,7 @@ def IsUnionOfOmegaAntichains.{u} (α : Type u) [PartialOrder α] : Prop :=
 
 -- Logic 36: Special partial order
 
-/-- **Special partial order.** A partial order (α,≤) is *special* if there is a map
+/-- A partial order (α,≤) is *special* if there is a map
 f : α → ℚ that is strictly increasing, i.e.\
 x < y implies f(x) < f(y).  Note that f need not be injective:
 nothing is required of incomparable elements.

@@ -64,23 +64,23 @@ namespace MathlibExt.Biology.CancerGenomics.DetectionPower
 
 open Finset MathlibExt.Biology.CancerGenomics.Absolute
 
-/-- **Binomial probability mass function.** The binomial probability `C(n, i) p^i (1 - p)^(n - i)` of `i` successes in `n` trials, as a
+/-- The binomial probability `C(n, i) p^i (1 - p)^(n - i)` of `i` successes in `n` trials, as a
 function of `i : ℕ`. It vanishes for `i > n` (the binomial coefficient is zero there, so the
 truncated subtraction `n - i` is harmless). -/
 def binomPmf (n : ℕ) (p : ℝ) (i : ℕ) : ℝ := (n.choose i : ℝ) * p ^ i * (1 - p) ^ (n - i)
 
-/-- **Binomial upper tail probability.** The binomial upper tail `ℙ_p(X ≥ m) = ∑_{m ≤ i ≤ n} C(n, i) p^i (1 - p)^(n - i)`, Carter's
+/-- The binomial upper tail `ℙ_p(X ≥ m) = ∑_{m ≤ i ≤ n} C(n, i) p^i (1 - p)^(n - i)`, Carter's
 `P(m)` with `p = ε / 3`. -/
 def upperTail (n : ℕ) (p : ℝ) (m : ℕ) : ℝ := ∑ i ∈ Ico m (n + 1), binomPmf n p i
 
-/-- **Nonnegativity of binomial probabilities.** Binomial probabilities are nonnegative for `0 ≤ p ≤ 1`. -/
+/-- Binomial probabilities are nonnegative for `0 ≤ p ≤ 1`. -/
 theorem binomPmf_nonneg {n : ℕ} {p : ℝ} (hp0 : 0 ≤ p) (hp1 : p ≤ 1) (i : ℕ) :
     0 ≤ binomPmf n p i := by
   unfold binomPmf
   have : 0 ≤ 1 - p := by linarith
   positivity
 
-/-- **Positivity of binomial probabilities.** Binomial probabilities are positive on `{0, …, n}` for `0 < p < 1`. -/
+/-- Binomial probabilities are positive on `{0, …, n}` for `0 < p < 1`. -/
 theorem binomPmf_pos {n i : ℕ} {p : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hi : i ≤ n) :
     0 < binomPmf n p i := by
   unfold binomPmf
@@ -88,11 +88,11 @@ theorem binomPmf_pos {n i : ℕ} {p : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hi : i �
   have : (0 : ℝ) < n.choose i := by exact_mod_cast Nat.choose_pos hi
   positivity
 
-/-- **Binomial probabilities vanish above n.** Binomial probabilities vanish above `n`. -/
+/-- Binomial probabilities vanish above `n`. -/
 theorem binomPmf_eq_zero {n i : ℕ} (p : ℝ) (hi : n < i) : binomPmf n p i = 0 := by
   simp [binomPmf, Nat.choose_eq_zero_of_lt hi]
 
-/-- **Binomial probabilities sum to one.** The binomial law sums to one (the binomial theorem), for every real `p`. -/
+/-- The binomial law sums to one (the binomial theorem), for every real `p`. -/
 theorem sum_binomPmf (n : ℕ) (p : ℝ) : ∑ i ∈ range (n + 1), binomPmf n p i = 1 := by
   have := (add_pow p (1 - p) n).symm
   simp only [add_sub_cancel, one_pow] at this
@@ -101,20 +101,20 @@ theorem sum_binomPmf (n : ℕ) (p : ℝ) : ∑ i ∈ range (n + 1), binomPmf n p
   unfold binomPmf
   ring
 
-/-- **Nonnegativity of binomial tail probabilities.** Tail probabilities are nonnegative for `0 ≤ p ≤ 1`. -/
+/-- Tail probabilities are nonnegative for `0 ≤ p ≤ 1`. -/
 theorem upperTail_nonneg {n : ℕ} {p : ℝ} (hp0 : 0 ≤ p) (hp1 : p ≤ 1) (m : ℕ) :
     0 ≤ upperTail n p m :=
   sum_nonneg fun i _ => binomPmf_nonneg hp0 hp1 i
 
-/-- **Binomial upper tail from zero is one.** `P(0) = 1`, for every real `p`. -/
+/-- `P(0) = 1`, for every real `p`. -/
 theorem upperTail_zero (n : ℕ) (p : ℝ) : upperTail n p 0 = 1 := by
   rw [upperTail, ← range_eq_Ico, sum_binomPmf]
 
-/-- **Binomial upper tail beyond n is zero.** `P(m) = 0` for `m > n`. -/
+/-- `P(m) = 0` for `m > n`. -/
 theorem upperTail_eq_zero {n m : ℕ} (p : ℝ) (hm : n < m) : upperTail n p m = 0 := by
   rw [upperTail, Ico_eq_empty_of_le (by omega), sum_empty]
 
-/-- **Binomial upper tail as one minus a lower sum.** Carter's form of the tail: `P(m) = 1 - ∑_{i < m} Binom(i | n, p)`, for every `m`. -/
+/-- Carter's form of the tail: `P(m) = 1 - ∑_{i < m} Binom(i | n, p)`, for every `m`. -/
 theorem upperTail_eq_one_sub_sum (n : ℕ) (p : ℝ) (m : ℕ) :
     upperTail n p m = 1 - ∑ i ∈ range m, binomPmf n p i := by
   rcases le_or_gt m (n + 1) with hm | hm
@@ -125,13 +125,13 @@ theorem upperTail_eq_one_sub_sum (n : ℕ) (p : ℝ) (m : ℕ) :
       (by have := (mem_Ico.1 hi).1; omega)]
     ring
 
-/-- **Recursion for the binomial upper tail.** One step of the tail recursion: `P(m) = Binom(m | n, p) + P(m + 1)`. -/
+/-- One step of the tail recursion: `P(m) = Binom(m | n, p) + P(m + 1)`. -/
 theorem upperTail_eq_add (n : ℕ) (p : ℝ) (m : ℕ) :
     upperTail n p m = binomPmf n p m + upperTail n p (m + 1) := by
   rw [upperTail_eq_one_sub_sum, upperTail_eq_one_sub_sum, sum_range_succ]
   ring
 
-/-- **Binomial upper tail is decreasing.** `m ↦ P(m)` is antitone for `0 ≤ p ≤ 1`. -/
+/-- `m ↦ P(m)` is antitone for `0 ≤ p ≤ 1`. -/
 theorem upperTail_antitone {n : ℕ} {p : ℝ} (hp0 : 0 ≤ p) (hp1 : p ≤ 1) :
     Antitone (upperTail n p) :=
   antitone_nat_of_succ_le fun m => by
@@ -272,33 +272,33 @@ theorem binomPmf_le_binomPmf_of_div_le {n a : ℕ} {p p' : ℝ} (ha : a ≤ n) (
   exact hanti ⟨hp, hpp'.trans hp1⟩ ⟨hp.trans hpp', hp1⟩ hpp'
 
 
-/-- **Critical count of the mutation detection test.** Carter's critical count `k = min {m | P(m) ≤ FPR}` for the null success probability
+/-- Carter's critical count `k = min {m | P(m) ≤ FPR}` for the null success probability
 `p₀ = ε / 3` (Online Methods, before Eq. 9). -/
 noncomputable def criticalCount (n : ℕ) (p₀ fpr : ℝ) : ℕ := sInf {m | upperTail n p₀ m ≤ fpr}
 
-/-- **Randomization probability of the detection test.** The randomization probability `d = (FPR - P(k)) / (P(k - 1) - P(k))` of Eq. 9. -/
+/-- The randomization probability `d = (FPR - P(k)) / (P(k - 1) - P(k))` of Eq. 9. -/
 noncomputable def randomization (n : ℕ) (p₀ fpr : ℝ) : ℝ :=
   (fpr - upperTail n p₀ (criticalCount n p₀ fpr)) /
     (upperTail n p₀ (criticalCount n p₀ fpr - 1) - upperTail n p₀ (criticalCount n p₀ fpr))
 
-/-- **Power of the randomized mutation detection test.** The power `Pow(n, f) = P_f(X ≥ k) + d Binom(k - 1 | n, f)` of the exact-size randomized
+/-- The power `Pow(n, f) = P_f(X ≥ k) + d Binom(k - 1 | n, f)` of the exact-size randomized
 test (Carter et al. 2012, Eq. 9, with the randomization at `k - 1`; see the module doc). -/
 noncomputable def power (n : ℕ) (p₀ fpr f : ℝ) : ℝ :=
   upperTail n f (criticalCount n p₀ fpr) +
     randomization n p₀ fpr * binomPmf n f (criticalCount n p₀ fpr - 1)
 
-/-- **Critical count meets the false-positive bound.** The critical count meets the false-positive bound: `P(k) ≤ FPR` (for `FPR ≥ 0`). -/
+/-- The critical count meets the false-positive bound: `P(k) ≤ FPR` (for `FPR ≥ 0`). -/
 theorem upperTail_criticalCount_le {n : ℕ} {p₀ fpr : ℝ} (hfpr : 0 ≤ fpr) :
     upperTail n p₀ (criticalCount n p₀ fpr) ≤ fpr :=
   Nat.sInf_mem (s := {m | upperTail n p₀ m ≤ fpr}) ⟨n + 1, by
     simp [upperTail_eq_zero p₀ (Nat.lt_succ_self n), hfpr]⟩
 
-/-- **Upper bound on the critical count.** The critical count is at most `n + 1` (for `FPR ≥ 0`). -/
+/-- The critical count is at most `n + 1` (for `FPR ≥ 0`). -/
 theorem criticalCount_le {n : ℕ} {p₀ fpr : ℝ} (hfpr : 0 ≤ fpr) :
     criticalCount n p₀ fpr ≤ n + 1 :=
   Nat.sInf_le (by simp [upperTail_eq_zero p₀ (Nat.lt_succ_self n), hfpr])
 
-/-- **Positivity of the critical count.** The critical count is positive when `FPR < 1`. -/
+/-- The critical count is positive when `FPR < 1`. -/
 theorem criticalCount_pos {n : ℕ} {p₀ fpr : ℝ} (hfpr : 0 ≤ fpr) (hfpr1 : fpr < 1) :
     0 < criticalCount n p₀ fpr := by
   rw [Nat.pos_iff_ne_zero]
@@ -307,7 +307,7 @@ theorem criticalCount_pos {n : ℕ} {p₀ fpr : ℝ} (hfpr : 0 ≤ fpr) (hfpr1 :
   rw [h, upperTail_zero] at this
   linarith
 
-/-- **Minimality of the critical count.** Minimality of the critical count: `FPR < P(k - 1)` (for `0 ≤ FPR < 1`). -/
+/-- Minimality of the critical count: `FPR < P(k - 1)` (for `0 ≤ FPR < 1`). -/
 theorem lt_upperTail_criticalCount_sub_one {n : ℕ} {p₀ fpr : ℝ} (hfpr : 0 ≤ fpr)
     (hfpr1 : fpr < 1) : fpr < upperTail n p₀ (criticalCount n p₀ fpr - 1) := by
   have hk := criticalCount_pos (n := n) (p₀ := p₀) hfpr hfpr1
@@ -315,7 +315,7 @@ theorem lt_upperTail_criticalCount_sub_one {n : ℕ} {p₀ fpr : ℝ} (hfpr : 0 
     (m := criticalCount n p₀ fpr - 1) (by unfold criticalCount at hk ⊢; omega)
   simpa using this
 
-/-- **Tail gap at the critical count.** The gap `P(k - 1) - P(k)` is the null probability of the boundary point `k - 1`. -/
+/-- The gap `P(k - 1) - P(k)` is the null probability of the boundary point `k - 1`. -/
 theorem upperTail_sub_one_sub {n : ℕ} {p₀ fpr : ℝ} (hfpr : 0 ≤ fpr) (hfpr1 : fpr < 1) :
     upperTail n p₀ (criticalCount n p₀ fpr - 1) - upperTail n p₀ (criticalCount n p₀ fpr) =
       binomPmf n p₀ (criticalCount n p₀ fpr - 1) := by
@@ -348,7 +348,7 @@ theorem power_self {n : ℕ} {p₀ fpr : ℝ} (hfpr : 0 ≤ fpr) (hfpr1 : fpr < 
   rw [← hgap, div_mul_cancel₀ _ hden]
   ring
 
-/-- **Detection power as a mixture of tail probabilities.** The power is the mixture `(1 - d) P_f(X ≥ k) + d P_f(X ≥ k - 1)` of two tail
+/-- The power is the mixture `(1 - d) P_f(X ≥ k) + d P_f(X ≥ k - 1)` of two tail
 probabilities. -/
 theorem power_eq_mix {n : ℕ} {p₀ fpr : ℝ} (hfpr : 0 ≤ fpr) (hfpr1 : fpr < 1) (f : ℝ) :
     power n p₀ fpr f = (1 - randomization n p₀ fpr) * upperTail n f (criticalCount n p₀ fpr) +

@@ -50,7 +50,7 @@ open MeasureTheory ProbabilityTheory Matrix
 open MathlibExt.Probability.MarkovMixing MathlibExt.Probability.FiniteMarkovChainConvergence
 open scoped ENNReal
 
-/-- **Probabilities of a finite law sum to one.** The probabilities of a law on a finite type, as reals, sum to `1`. -/
+/-- The probabilities of a law on a finite type, as reals, sum to `1`. -/
 theorem sum_toReal_pmf {β : Type*} [Fintype β] (π : PMF β) : ∑ y, (π y).toReal = 1 := by
   have h : ∑ y, π y = 1 := by simpa [tsum_fintype] using π.tsum_coe
   rw [← ENNReal.toReal_sum fun y _ => PMF.apply_ne_top π y, h, ENNReal.toReal_one]
@@ -59,18 +59,18 @@ section MetropolisHastings
 
 variable {α : Type*} [Fintype α] [DecidableEq α]
 
-/-- **Metropolis–Hastings transition matrix.** The transition matrix `P(x, y) = mhStep π Q x y` of the Metropolis–Hastings chain, as a real
+/-- The transition matrix `P(x, y) = mhStep π Q x y` of the Metropolis–Hastings chain, as a real
 matrix. -/
 noncomputable def mhMatrix (π : PMF α) (Q : α → PMF α) : Matrix α α ℝ :=
   Matrix.of fun x y => (mhStep π Q x y).toReal
 
-/-- **Metropolis–Hastings matrix is stochastic.** The Metropolis–Hastings matrix is stochastic. -/
+/-- The Metropolis–Hastings matrix is stochastic. -/
 theorem mhMatrix_mem_rowStochastic (π : PMF α) (Q : α → PMF α) :
     mhMatrix π Q ∈ rowStochastic ℝ α :=
   mem_rowStochastic_iff_sum.2 ⟨fun _ _ => ENNReal.toReal_nonneg, fun _ => sum_toReal_pmf _⟩
 
 omit [DecidableEq α] in
-/-- **Target is stationary for the Metropolis–Hastings matrix.** The target is stationary for the Metropolis–Hastings matrix. -/
+/-- The target is stationary for the Metropolis–Hastings matrix. -/
 theorem vecMul_mhMatrix (π : PMF α) (Q : α → PMF α) :
     (fun x => (π x).toReal) ᵥ* mhMatrix π Q = fun x => (π x).toReal := by
   funext y
@@ -109,7 +109,7 @@ private theorem pow_apply_pos_of_pattern {β : Type*} [Fintype β] [DecidableEq 
     exact Finset.sum_pos' (fun w _ => mul_nonneg (pow_apply_nonneg hB k x w) (hB w y))
       ⟨z, Finset.mem_univ _, mul_pos (ih z h1) (hAB z y h2)⟩
 
-/-- **Primitivity of the Metropolis–Hastings matrix.** For a target with full support and a proposal with primitive transition matrix and symmetric
+/-- For a target with full support and a proposal with primitive transition matrix and symmetric
 support, the Metropolis–Hastings matrix is primitive. -/
 theorem isPrimitive_mhMatrix {π : PMF α} (hπ : ∀ x, π x ≠ 0) {Q : α → PMF α}
     (hQs : ∀ x y, Q x y ≠ 0 → Q y x ≠ 0)
@@ -160,13 +160,13 @@ section Gibbs
 variable {ι S : Type*} [Fintype ι] [DecidableEq ι] [Fintype S] [DecidableEq S]
 variable [MeasurableSpace S] [MeasurableSingletonClass S]
 
-/-- **Transition matrix of the systematic-scan Gibbs sweep.** The transition matrix `P(x, y) = gibbsSweep π hπ l x {y}` of the systematic-scan Gibbs
+/-- The transition matrix `P(x, y) = gibbsSweep π hπ l x {y}` of the systematic-scan Gibbs
 sweep along `l`, as a real matrix. -/
 noncomputable def gibbsSweepMatrix (π : PMF (ι → S)) (hπ : ∀ x, π x ≠ 0) (l : List ι) :
     Matrix (ι → S) (ι → S) ℝ :=
   Matrix.of fun x y => (gibbsSweep π hπ l x {y}).toReal
 
-/-- **Gibbs sweep matrix is stochastic.** The Gibbs sweep matrix is stochastic. -/
+/-- The Gibbs sweep matrix is stochastic. -/
 theorem gibbsSweepMatrix_mem_rowStochastic (π : PMF (ι → S)) (hπ : ∀ x, π x ≠ 0) (l : List ι) :
     gibbsSweepMatrix π hπ l ∈ rowStochastic ℝ (ι → S) := by
   refine mem_rowStochastic_iff_sum.2 ⟨fun _ _ => ENNReal.toReal_nonneg, fun x => ?_⟩
@@ -175,7 +175,7 @@ theorem gibbsSweepMatrix_mem_rowStochastic (π : PMF (ι → S)) (hπ : ∀ x, �
     Finset.coe_univ, measure_univ, ENNReal.toReal_one]
 
 omit [DecidableEq S] in
-/-- **Target is stationary for the Gibbs sweep matrix.** The target is stationary for the Gibbs sweep matrix. -/
+/-- The target is stationary for the Gibbs sweep matrix. -/
 theorem vecMul_gibbsSweepMatrix (π : PMF (ι → S)) (hπ : ∀ x, π x ≠ 0) (l : List ι) :
     (fun x => (π x).toReal) ᵥ* gibbsSweepMatrix π hπ l = fun x => (π x).toReal := by
   funext y
@@ -191,7 +191,7 @@ theorem vecMul_gibbsSweepMatrix (π : PMF (ι → S)) (hπ : ∀ x, π x ≠ 0) 
   simp only [ENNReal.toReal_mul, mul_comm]
 
 omit [DecidableEq S] in
-/-- **Positivity of Gibbs sweep transition probabilities.** If the sweep visits every coordinate, every transition probability of the sweep is
+/-- If the sweep visits every coordinate, every transition probability of the sweep is
 positive. -/
 theorem gibbsSweepMatrix_pos (π : PMF (ι → S)) (hπ : ∀ x, π x ≠ 0) {l : List ι}
     (hl : ∀ i, i ∈ l) (x y : ι → S) : 0 < gibbsSweepMatrix π hπ l x y := by

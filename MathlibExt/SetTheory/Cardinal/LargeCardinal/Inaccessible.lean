@@ -57,19 +57,19 @@ namespace MetaMathlibExt
 
 -- Logic 29: Weakly inaccessible cardinal
 
-/-- **Weakly inaccessible cardinal.** A cardinal κ is *weakly inaccessible* if it is an uncountable, regular limit cardinal. -/
+/-- A cardinal κ is *weakly inaccessible* if it is an uncountable, regular limit cardinal. -/
 def IsWeaklyInaccessible.{u} (κ : Cardinal.{u}) : Prop :=
   ℵ₀ < κ ∧ κ.IsRegular ∧ Order.IsSuccLimit κ
 
 -- Logic 26: Set of inaccessible cardinality below κ
 
-/-- **Set of inaccessible cardinals below a cardinal.** InAccBelow κ is the set of all inaccessible cardinals below κ. -/
+/-- InAccBelow κ is the set of all inaccessible cardinals below κ. -/
 def inaccessibleBelow.{u} (κ : Cardinal.{u}) : Set (Set.Iio κ.ord) :=
   {α | Cardinal.IsInaccessible α.val.card ∧ α.val.card.ord = α.val}
 
 -- Logic 27: Inaccessible fixed point
 
-/-- **Inaccessible fixed point.** A cardinal κ is an *inaccessible fixed point* if κ is inaccessible and the inaccessibles below κ
+/-- A cardinal κ is an *inaccessible fixed point* if κ is inaccessible and the inaccessibles below κ
 have order type κ (i.e. κ is the κ-th inaccessible).
 -/
 def IsInaccessibleFixedPoint.{u} (κ : Cardinal.{u}) : Prop :=
@@ -78,7 +78,7 @@ def IsInaccessibleFixedPoint.{u} (κ : Cardinal.{u}) : Prop :=
 
 -- Logic 560: Theorems about inaccessible cardinals
 
-/-- **The beth hierarchy stays below an inaccessible cardinal.** Below an inaccessible `κ`, the beth hierarchy stays below `κ`: `κ` is a beth
+/-- Below an inaccessible `κ`, the beth hierarchy stays below `κ`: `κ` is a beth
 fixed point (`IsInaccessible.beth_ord`) and `beth` is strictly monotone.
 
 Source: Below an inaccessible κ, each ℶ_o with o < κ.ord lies below κ. -/
@@ -88,7 +88,7 @@ theorem _root_.Cardinal.IsInaccessible.beth_lt.{u} {κ : Cardinal.{u}} (hκ : κ
   rw [← hκ.beth_ord]
   exact beth_lt_beth.mpr ho
 
-/-- **The aleph hierarchy stays below an inaccessible cardinal.** Below an inaccessible `κ`, the aleph hierarchy stays below `κ`: same argument
+/-- Below an inaccessible `κ`, the aleph hierarchy stays below `κ`: same argument
 via `IsInaccessible.aleph_ord`.
 
 Source: Below an inaccessible κ, each ℵ_o with o < κ.ord lies below κ. -/
@@ -98,7 +98,7 @@ theorem Cardinal.IsInaccessible.aleph_lt.{u} {κ : Cardinal.{u}} (hκ : κ.IsIna
   rw [← hκ.aleph_ord]
   exact aleph_lt_aleph.mpr ho
 
-/-- **At most $\kappa$ inaccessible cardinals lie below $\kappa$.** There are at most `κ` inaccessibles below `κ`: the set injects into
+/-- There are at most `κ` inaccessibles below `κ`: the set injects into
 `↥(Set.Iio κ.ord)`, which has size `lift κ`.  The `≤` half of the counting needed
 for the Mahlo-implies-fixed-point benchmark item.
 
@@ -112,7 +112,7 @@ theorem mk_inaccessibleBelow_le.{u} (κ : Cardinal.{u}) :
   calc #(↥(inaccessibleBelow κ)) ≤ #↥(Set.Iio κ.ord) := mk_subtype_le _
     _ = Cardinal.lift.{u+1} κ := by rw [Cardinal.mk_Iio_ordinal, Cardinal.card_ord]
 
-/-- **Regular cardinals are unbounded below an uncountable limit cardinal.** Regular cardinals are unbounded below an uncountable limit cardinal `κ` (in
+/-- Regular cardinals are unbounded below an uncountable limit cardinal `κ` (in
 particular a weakly inaccessible one): above any `a < κ` sits
 `succ (max a ℵ₀)`, regular by `isRegular_succ` and below `κ` since `κ` is a
 limit.
@@ -126,7 +126,7 @@ theorem exists_regular_between.{u} {κ : Cardinal.{u}} (hlt : ℵ₀ < κ)
     isRegular_succ (le_max_right _ _)⟩
   exact lt_of_le_of_lt (le_max_left _ _) (Order.lt_succ _)
 
-/-- **Under GCH, weakly inaccessible cardinals are inaccessible.** Under (local) GCH, weakly inaccessible implies strongly inaccessible: for
+/-- Under (local) GCH, weakly inaccessible implies strongly inaccessible: for
 infinite `μ < κ`, `2 ^ μ = succ μ < κ` by the limit property, and the finite
 case is `power_lt_aleph0`.
 
@@ -149,7 +149,7 @@ theorem IsWeaklyInaccessible.isInaccessible_of_gch.{u} {κ : Cardinal.{u}}
       exact hlim.succ_lt hx
     · exact (power_lt_aleph0 ofNat_lt_aleph0 (not_le.mp hinf)).trans hlt
 
-/-- **Strong limit cardinals are closed under exponentiation.** A strong limit `κ` is closed under cardinal exponentiation: `x ^ y ≤ 2 ^ (x * y)`
+/-- A strong limit `κ` is closed under cardinal exponentiation: `x ^ y ≤ 2 ^ (x * y)`
 (via `cantor` and `power_mul`), and `x * y < κ` by `mul_lt_of_lt`.  No
 infiniteness hypothesis is needed — it is automatic by `IsStrongLimit.aleph0_le`.
 
@@ -206,7 +206,7 @@ theorem exists_below_eq_empty_of_exists.{u} {P : Cardinal.{u} → Prop}
       _ = o₀ := ho₀init.ord_card
   exact (hmin _ hmem) hltord
 
-/-- **Existence of an inaccessible with no inaccessibles below it.** If any inaccessible exists, some inaccessible has no inaccessibles below it:
+/-- If any inaccessible exists, some inaccessible has no inaccessibles below it:
 minimize over the initial ordinals of inaccessible cardinals
 (`WellFounded.has_min`), and any member of `inaccessibleBelow` would give a
 smaller one.
@@ -224,7 +224,7 @@ theorem exists_isInaccessible_inaccessibleBelow_eq_empty.{u}
     exists_below_eq_empty_of_exists (P := Cardinal.IsInaccessible) h
   exact ⟨κ, hκ, hempty⟩
 
-/-- **Weak power below a strong limit cardinal equals the cardinal.** For `2 ≤ x < κ` with `κ` a strong limit, `x ^< κ = κ`: every smaller power is
+/-- For `2 ≤ x < κ` with `κ` a strong limit, `x ^< κ = κ`: every smaller power is
 below `κ` (`IsStrongLimit.power_lt`), while every `y < κ` sits below
 `2 ^ y ≤ x ^< κ`.  No infiniteness hypothesis is needed — it is automatic by
 `IsStrongLimit.aleph0_le`.
@@ -243,7 +243,7 @@ theorem Cardinal.IsStrongLimit.powerlt_eq_self.{u} {κ x : Cardinal.{u}}
         _ ≤ x ^< κ := le_powerlt x hy
     exact lt_irrefl _ (hle _ hlt)
 
-/-- **Strong limits are unbounded below an inaccessible cardinal.** Strong limits are unbounded below an inaccessible `κ`: above any `a < κ` sits
+/-- Strong limits are unbounded below an inaccessible `κ`: above any `a < κ` sits
 `ℶ_{a.ord + ω}`, a strong limit by `isStrongLimit_beth` since `a.ord + ω` is a
 limit ordinal (`isSuccLimit_add`), and below `κ` since
 `(a.ord + ω).card = a.ord.card + ℵ₀ < κ` (`add_lt_of_lt`).
@@ -265,7 +265,7 @@ theorem Cardinal.IsInaccessible.exists_isStrongLimit_between.{u} {κ : Cardinal.
 
 -- Logic 561: Theorems about inaccessible cardinals (part II)
 
-   /-- **Set of regular cardinals below a cardinal.** The **regular cardinals below `κ`**, carried as initial ordinals — parallel to
+   /-- The **regular cardinals below `κ`**, carried as initial ordinals — parallel to
 `inaccessibleBelow`, and definitionally the stationary set in `IsWeaklyMahlo`.
 Spelled with Mathlib's `Ordinal.IsInitial`.
 
@@ -274,7 +274,7 @@ Source: regularBelow κ is the set of initial ordinals below κ whose cardinals 
 def regularBelow.{u} (κ : Cardinal.{u}) : Set (Set.Iio κ.ord) :=
   {α | α.val.card.IsRegular ∧ α.val.IsInitial}
 
-/-- **A regular beth fixed point is uncountable.** A regular beth fixed point is uncountable: regularity gives `ℵ₀ ≤ κ`, and
+/-- A regular beth fixed point is uncountable: regularity gives `ℵ₀ ≤ κ`, and
 `κ = ℵ₀` fails the fixed-point equation since `ℶ_ω > ℶ_0 = ℵ₀`.
 
 Source: A regular beth fixed point is uncountable. -/
@@ -290,7 +290,7 @@ theorem aleph0_lt_of_isRegular_beth_ord.{u} {κ : Cardinal.{u}}
   rw [beth_zero, ← hord, hbeth, ← heq] at hlt
   exact lt_irrefl _ hlt
 
-/-- **A regular beth fixed point is inaccessible.** Converse to `IsInaccessible.beth_ord`: a regular beth fixed point is
+/-- Converse to `IsInaccessible.beth_ord`: a regular beth fixed point is
 inaccessible.  Uncountability is derived, not assumed
 (`aleph0_lt_of_isRegular_beth_ord`); for `x < κ`,
 `2 ^ x ≤ 2 ^ ℶ_{x.ord} = ℶ_{succ x.ord} < κ`, using that `κ.ord` is a limit
@@ -316,7 +316,7 @@ theorem Cardinal.IsInaccessible.of_isRegular_beth_ord.{u} {κ : Cardinal.{u}}
       _ < ℶ_ κ.ord := beth_lt_beth.mpr ho
       _ = κ := hbeth
 
-/-- **Inaccessible cardinals are the regular beth fixed points.** `κ` is inaccessible iff it is regular and a beth fixed point (uncountability
+/-- `κ` is inaccessible iff it is regular and a beth fixed point (uncountability
 is automatic by `aleph0_lt_of_isRegular_beth_ord`): this packages
 `of_isRegular_beth_ord` with Mathlib's `IsInaccessible.beth_ord`.
 
@@ -330,7 +330,7 @@ theorem Cardinal.isInaccessible_iff_isRegular_beth_ord.{u} {κ : Cardinal.{u}} :
   · rintro ⟨hreg, hbeth⟩
     exact Cardinal.IsInaccessible.of_isRegular_beth_ord hreg hbeth
 
-/-- **Exactly $\kappa$ inaccessibles lie below an inaccessible fixed point.** The fixed-point equation forces `#(inaccessibleBelow κ) = lift κ`
+/-- The fixed-point equation forces `#(inaccessibleBelow κ) = lift κ`
 (`card_type`): the companion to the upper bound `mk_inaccessibleBelow_le`.
 
 Source: Below an inaccessible fixed point κ there are exactly κ inaccessible cardinals. -/
@@ -344,7 +344,7 @@ theorem IsInaccessibleFixedPoint.mk_inaccessibleBelow.{u} {κ : Cardinal.{u}}
   rw [← lift_card, Cardinal.card_ord, hcardS] at hcongr
   exact hcongr.symm
 
-/-- **Inaccessibles are unbounded below an inaccessible fixed point.** Inaccessibles below an inaccessible fixed point are unbounded: if they were
+/-- Inaccessibles below an inaccessible fixed point are unbounded: if they were
 bounded by `a`, the set would inject into `Iic a.val`, hence have size at most
 `lift (a.val + 1).card < lift κ` — contradicting `mk_inaccessibleBelow`.
 
@@ -382,7 +382,7 @@ theorem IsInaccessibleFixedPoint.exists_gt.{u} {κ : Cardinal.{u}}
   rw [heq] at hle
   exact lt_irrefl _ (hle.trans_lt hltcard)
 
-/-- **Limit cardinals are unbounded below a weakly inaccessible cardinal.** Limit cardinals are unbounded below a weakly inaccessible `κ`: the sup of
+/-- Limit cardinals are unbounded below a weakly inaccessible `κ`: the sup of
 the `ω`-chain `μ 0 = succ (max a ℵ₀)`, `μ (n+1) = succ (μ n)` stays below `κ`
 (`sum_lt_of_isRegular`), exceeds `a`, and is a limit since every `x < σ`
 lies below some `μ n` (`exists_lt_of_lt_ciSup`).
@@ -435,7 +435,7 @@ theorem IsWeaklyInaccessible.exists_isSuccLimit_between.{u} {κ : Cardinal.{u}}
     rw [hcov.succ_eq] at hlt2
     exact lt_irrefl _ hlt2
 
-/-- **Supremum of a bounded set of initial ordinals is initial.** The sup of a bounded set of initial ordinals is initial: if
+/-- The sup of a bounded set of initial ordinals is initial: if
 `σ.card.ord < σ` then some member exceeds `σ.card.ord`, trapping it strictly
 between itself and its own initial ordinal.
 

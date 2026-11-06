@@ -24,69 +24,39 @@ namespace MetaMathlibExt
 @[expose]
 public section
 
-/-- **Cyclic numbers.** A positive integer $n$ is cyclic when $\gcd(n, \varphi(n)) = 1$, where
-$\varphi$ is Euler's totient function. -/
+/-- A positive integer `n` is cyclic when `gcd(n, φ(n)) = 1`. -/
 def IsCyclicNumber (n : ℕ) : Prop :=
   0 < n ∧ n.Coprime n.totient
 
-/-- **Cyclic numbers in the left Oppermann interval.** For a natural number $n$, this is the
-number of cyclic numbers $k$ with $n^2 - n \le k \le n^2$. -/
+/-- The number of cyclic integers in the closed interval `[n²-n, n²]`. -/
 def oppermannCyclicCountLeft (n : ℕ) : ℕ :=
   letI : DecidablePred IsCyclicNumber := fun k => by
     unfold IsCyclicNumber
     infer_instance
   ((Finset.Icc (n ^ 2 - n) (n ^ 2)).filter IsCyclicNumber).card
 
-/-- **Cyclic numbers in the right Oppermann interval.** For a natural number $n$, this is the
-number of cyclic numbers $k$ with $n^2 \le k \le n^2 + n$. -/
+/-- The number of cyclic integers in the closed interval `[n², n²+n]`. -/
 def oppermannCyclicCountRight (n : ℕ) : ℕ :=
   letI : DecidablePred IsCyclicNumber := fun k => by
     unfold IsCyclicNumber
     infer_instance
   ((Finset.Icc (n ^ 2) (n ^ 2 + n)).filter IsCyclicNumber).card
 
-/-- **Left-hand approximation for cyclic numbers near squares.** Let $\gamma$ be the
-Euler–Mascheroni constant and, for real $x$, let $L(x) = \log \log \log (x^2)$. The left-hand
-approximation is the function of the real variable $x$ given by
-$$
-\frac{x}{e^{\gamma} L(x)} \left(1 - \frac{\gamma}{L(x)}\right).
-$$
-
-Here $\log y$ means $\log |y|$, with $\log 0 = 0$, and a quotient by $0$ is $0$, so the expression
-is defined for every real $x$. J. E. Cohen conjectures that, at $x = n$, it is asymptotic to
-the number of cyclic numbers in $[n^2 - n, n^2]$. -/
+/-- The source's first left-hand asymptotic approximation. -/
 noncomputable def oppermannCyclicLeftApproximation (x : ℝ) : ℝ :=
   x / (Real.exp Real.eulerMascheroniConstant *
     Real.log (Real.log (Real.log (x ^ 2)))) *
     (1 - Real.eulerMascheroniConstant /
       Real.log (Real.log (Real.log (x ^ 2))))
 
-/-- **Simplified approximation for cyclic numbers near squares.** Let $\gamma$ be the
-Euler–Mascheroni constant and, for real $x$, let $L(x) = \log \log \log x$. The simplified
-approximation is the function of the real variable $x$ given by
-$$
-\frac{x}{e^{\gamma} L(x)} \left(1 - \frac{\gamma}{L(x)}\right).
-$$
-
-Here $\log y$ means $\log |y|$, with $\log 0 = 0$, and a quotient by $0$ is $0$, so the expression
-is defined for every real $x$. J. E. Cohen conjectures that, at $x = n$, it is asymptotic to
-the number of cyclic numbers in $[n^2 - n, n^2]$ and to the number in $[n^2, n^2 + n]$. -/
+/-- The simplified asymptotic approximation shared by both intervals. -/
 noncomputable def oppermannCyclicApproximation (x : ℝ) : ℝ :=
   x / (Real.exp Real.eulerMascheroniConstant *
     Real.log (Real.log (Real.log x))) *
     (1 - Real.eulerMascheroniConstant /
       Real.log (Real.log (Real.log x)))
 
-/-- **Right-hand approximation for cyclic numbers near squares.** Let $\gamma$ be the
-Euler–Mascheroni constant and, for real $x$, let $L(x) = \log \log \log (x(x+1))$. The right-hand
-approximation is the function of the real variable $x$ given by
-$$
-\frac{x}{e^{\gamma} L(x)} \left(1 - \frac{\gamma}{L(x)}\right).
-$$
-
-Here $\log y$ means $\log |y|$, with $\log 0 = 0$, and a quotient by $0$ is $0$, so the expression
-is defined for every real $x$. J. E. Cohen conjectures that, at $x = n$, it is asymptotic to
-the number of cyclic numbers in $[n^2, n^2 + n]$. -/
+/-- The source's first right-hand asymptotic approximation. -/
 noncomputable def oppermannCyclicRightApproximation (x : ℝ) : ℝ :=
   x / (Real.exp Real.eulerMascheroniConstant *
     Real.log (Real.log (Real.log (x * (x + 1))))) *

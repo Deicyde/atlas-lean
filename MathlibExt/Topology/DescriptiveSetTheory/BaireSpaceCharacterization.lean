@@ -32,9 +32,7 @@ namespace MathlibExt.Topology.DescriptiveSetTheory.BaireSpaceCharacterizationWan
 
 open Filter Metric EMetric
 
-/-- **Zero-dimensional space.** A topological space $X$ is zero-dimensional if for every point
-$x \in X$ and every open set $U \subseteq X$ containing $x$ there is a clopen set $V$ with
-$x \in V \subseteq U$. -/
+/-- Zero-dimensional via clopen neighborhoods. -/
 def IsZeroDimensionalSpace (X : Type*) [TopologicalSpace X] : Prop :=
   ∀ (x : X) (U : Set X), IsOpen U → x ∈ U → ∃ V : Set X, IsClopen V ∧ x ∈ V ∧ V ⊆ U
 
@@ -77,16 +75,12 @@ private theorem aux_split_clopen
     exact hzB.2 hzW
 
 /--
-**Alexandrov–Urysohn theorem on Baire space.** Let $X$ be a nonempty Polish space that
-is zero-dimensional (for every point $x$ and every open set $U$ containing $x$ there is a clopen
-set $V$ with $x \in V \subseteq U$) and in which every compact subset has empty interior. Then $X$
-is homeomorphic to the Baire space $\mathbb{N}^{\mathbb{N}}$ of all sequences of natural numbers,
-with the product of the discrete topologies.
-
-Proves `Wanted` entry `baire_space_characterization`.
-
+Baire space `ℕ → ℕ` is the unique nonempty Polish zero-dimensional space where every compact subset
+has empty interior.
 Source: Alexandrov–Urysohn characterization; A. S. Kechris, Classical Descriptive Set Theory (1995),
 Theorem 7.7.
+
+Proves `Wanted` entry `baire_space_characterization`.
 -/
 theorem baire_space_characterization
     {X : Type*} [TopologicalSpace X] [PolishSpace X] [Nonempty X]

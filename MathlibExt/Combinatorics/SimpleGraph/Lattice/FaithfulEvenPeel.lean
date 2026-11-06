@@ -61,7 +61,7 @@ theorem jcx_whb_bot_card :
     ⟨(hypercubicLattice 2).connectedComponentMk ![0, 0]⟩
   rw [Nat.card_eq_one_iff_unique]; exact ⟨hsub, inferInstance⟩
 
-/-- **Even-degree subgraphs have as many regions as their face count.** Every subgraph `K` of `P` whose image has all degrees even has exactly `faceCount K`
+/-- Every subgraph `K` of `P` whose image has all degrees even has exactly `faceCount K`
 face-region components. -/
 def jcx_EvenCountResidue (P : PlanarZ2Subgraph) : Prop :=
   ∀ (K : SimpleGraph P.V), K ≤ P.G →
@@ -100,7 +100,7 @@ theorem jcx_faithfulCountResidue_of_evenResidue
     jeb_FaithfulCountResidue :=
   fun P hP => jcx_faithfulDiscreteJordan_of_evenResidue P hP (h P hP)
 
-/-- **Peeling a cycle from an even-degree subgraph.** Every nonempty subgraph `K` of `P` whose image has all degrees even contains a subgraph of
+/-- Every nonempty subgraph `K` of `P` whose image has all degrees even contains a subgraph of
 the same kind with fewer edges, face count one less, and one fewer face-region component. -/
 def jcx_EvenPeel (P : PlanarZ2Subgraph) : Prop :=
   ∀ (K : SimpleGraph P.V), K ≤ P.G → jce_ClosedContour (jei_pushGraph P K).edgeSet →

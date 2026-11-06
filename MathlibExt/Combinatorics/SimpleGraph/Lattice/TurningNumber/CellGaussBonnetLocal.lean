@@ -41,15 +41,15 @@ namespace StatMech.Onsager.CellGaussBonnet
 
 open Finset StatMech.Onsager.CellCount StatMech.Onsager.CellEuler
 
-/-- **Corner defect of two diagonally touching cells.** Two diagonally touching cells have corner defect `6`. -/
+/-- Two diagonally touching cells have corner defect `6`. -/
 theorem cornerDiff_cex :
     cornerDiff ({((0:ℤ), (0:ℤ)), ((1:ℤ), (1:ℤ))} : Finset (ℤ × ℤ)) = 6 := by decide
 
-/-- **Euler characteristic of two diagonally touching cells.** Two diagonally touching cells have Euler characteristic `1`. -/
+/-- Two diagonally touching cells have Euler characteristic `1`. -/
 theorem eulerChar_cex :
     eulerChar ({((0:ℤ), (0:ℤ)), ((1:ℤ), (1:ℤ))} : Finset (ℤ × ℤ)) = 1 := by decide
 
-/-- **Failure of the cell Gauss–Bonnet formula without a pinch term.** The formula `cornerDiff S = 4 * eulerChar S` fails in general (two diagonally touching cells);
+/-- The formula `cornerDiff S = 4 * eulerChar S` fails in general (two diagonally touching cells);
   see `StatMech.Onsager.CellGaussBonnetGlobal.cornerDiff_eq` for the correct formula with a pinch
   term. -/
 theorem gaussBonnet_stated_false :
@@ -59,38 +59,38 @@ theorem gaussBonnet_stated_false :
   rw [cornerDiff_cex, eulerChar_cex] at this
   norm_num at this
 
-/-- **Indicator of a Boolean.** The indicator `1` or `0` of a Boolean. -/
+/-- The indicator `1` or `0` of a Boolean. -/
 def bI (b : Bool) : ℤ := if b then 1 else 0
 
-/-- **Integer-valued corner weight.** The vertex weight `cornerWeight` extended to integers. -/
+/-- The vertex weight `cornerWeight` extended to integers. -/
 def icw (k : ℤ) : ℤ := (if k = 1 then 1 else 0) - (if k = 3 then 1 else 0)
 
-/-- **Integer jump of the corner weight.** The change of the vertex weight from `m` to `m + 1` incident cells. -/
+/-- The change of the vertex weight from `m` to `m + 1` incident cells. -/
 def ijump (m : ℤ) : ℤ := icw (m + 1) - icw m
 
-/-- **Indicator of zero.** The indicator of `m = 0`. -/
+/-- The indicator of `m = 0`. -/
 def isZero (m : ℤ) : ℤ := if m = 0 then 1 else 0
 
-/-- **Local change of the corner defect.** The change of the corner defect when a cell is added, given which of its eight neighbours are
+/-- The change of the corner defect when a cell is added, given which of its eight neighbours are
   present (`e, w, n, s, ne, nw, se, sw`). -/
 def lhsLocal (e w n s ne nw se sw : Bool) : ℤ :=
   ijump (bI w + bI s + bI sw) + ijump (bI e + bI se + bI s)
     + ijump (bI n + bI nw + bI w) + ijump (bI ne + bI n + bI e)
 
-/-- **Number of new vertices when a cell is added.** The number of new vertices when a cell is added, given its eight neighbours. -/
+/-- The number of new vertices when a cell is added, given its eight neighbours. -/
 def deltaV (e w n s ne nw se sw : Bool) : ℤ :=
   isZero (bI w + bI s + bI sw) + isZero (bI e + bI se + bI s)
     + isZero (bI n + bI nw + bI w) + isZero (bI ne + bI n + bI e)
 
-/-- **Number of new edges when a cell is added.** The number of new edges when a cell is added, given its four side neighbours. -/
+/-- The number of new edges when a cell is added, given its four side neighbours. -/
 def deltaE (e w n s : Bool) : ℤ :=
   (1 - bI s) + (1 - bI n) + (1 - bI w) + (1 - bI e)
 
-/-- **Four times the local change of the Euler characteristic.** Four times the change of the Euler characteristic when a cell is added. -/
+/-- Four times the change of the Euler characteristic when a cell is added. -/
 def rhsStated (e w n s ne nw se sw : Bool) : ℤ :=
   4 * (deltaV e w n s ne nw se sw - deltaE e w n s + 1)
 
-/-- **Failure of the local identity without a pinch term.** The change of the corner defect is not always four times the change of the Euler
+/-- The change of the corner defect is not always four times the change of the Euler
   characteristic. -/
 theorem localIdentity_stated_false :
     ¬ ∀ e w n s ne nw se sw : Bool,
@@ -100,7 +100,7 @@ theorem localIdentity_stated_false :
   simp only [lhsLocal, rhsStated, deltaV, deltaE, bI, ijump, icw, isZero] at this
   norm_num at this
 
-/-- **Local change of the number of pinch points.** The change of the number of pinch points at the four corners of a new cell, given its eight
+/-- The change of the number of pinch points at the four corners of a new cell, given its eight
   neighbours. -/
 def pinchDelta (e w n s ne nw se sw : Bool) : ℤ :=
   (bI (sw && !w && !s) - bI (w && s && !sw))
@@ -108,12 +108,12 @@ def pinchDelta (e w n s ne nw se sw : Bool) : ℤ :=
   + (bI (nw && !n && !w) - bI (n && w && !nw))
   + (bI (ne && !n && !e) - bI (n && e && !ne))
 
-/-- **Corrected right side of the local Gauss–Bonnet identity.** Four times the change of the Euler characteristic plus twice the change of the number of pinch
+/-- Four times the change of the Euler characteristic plus twice the change of the number of pinch
   points. -/
 def rhsCorrected (e w n s ne nw se sw : Bool) : ℤ :=
   rhsStated e w n s ne nw se sw + 2 * pinchDelta e w n s ne nw se sw
 
-/-- **Local cell Gauss–Bonnet identity.** Local cell Gauss–Bonnet identity: when a cell is added, the change of the corner defect is four
+/-- Local cell Gauss–Bonnet identity: when a cell is added, the change of the corner defect is four
   times the change of the Euler characteristic plus twice the change of the number of pinch
   points. -/
 theorem localIdentity_corrected :

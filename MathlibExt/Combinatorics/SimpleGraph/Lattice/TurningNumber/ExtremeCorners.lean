@@ -40,7 +40,7 @@ open StatMech.Onsager.NoDoubleWind2
 
 variable {n : ℕ} [NeZero n]
 
-/-- **North-then-west corner at the highest vertices.** A closed walk without right turns has a north-then-west corner at the rightmost of its highest
+/-- A closed walk without right turns has a north-then-west corner at the rightmost of its highest
   vertices. -/
 theorem ymax_NW_corner (d : Fin n → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0)
@@ -114,7 +114,7 @@ theorem ymax_NW_corner (d : Fin n → Fin 4)
     have hle := Prod.Lex.toLex_le_toLex.1 (hmax j (Finset.mem_univ _))
     omega
 
-/-- **South-then-east corner at the lowest vertices.** A closed walk without right turns has a south-then-east corner at one of its lowest vertices. -/
+/-- A closed walk without right turns has a south-then-east corner at one of its lowest vertices. -/
 theorem ymin_SE_corner (d : Fin n → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) :
@@ -183,7 +183,7 @@ theorem ymin_SE_corner (d : Fin n → Fin 4)
     have hle := Prod.Lex.toLex_le_toLex.1 (hmin j (Finset.mem_univ _))
     omega
 
-/-- **Previous and next vertices of a north-then-west corner.** At a north-then-west corner `M`, the previous vertex is just below and the next vertex just to
+/-- At a north-then-west corner `M`, the previous vertex is just below and the next vertex just to
   the left. -/
 theorem nw_corner_neighbours (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     {M : Fin n} (hin : d (M - 1) = 1) (hout : d M = 2) :
@@ -199,7 +199,7 @@ theorem nw_corner_neighbours (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i
     have hstep : stepOf (2 : Fin 4) = (-1, 0) := rfl
     rw [hstep] at h; exact h
 
-/-- **Distinct north-then-west corners sit at distinct vertices.** In a simple walk, distinct north-then-west corners sit at distinct vertices. -/
+/-- In a simple walk, distinct north-then-west corners sit at distinct vertices. -/
 theorem nw_corners_distinct_pos (d : Fin n → Fin 4) (hsimple : Function.Injective (pos d))
     {i j : Fin n} (hij : i ≠ j)
     (_hi : d i = 1) (_hi2 : d (i + 1) = 2) (_hj : d j = 1) (_hj2 : d (j + 1) = 2) :
@@ -207,7 +207,7 @@ theorem nw_corners_distinct_pos (d : Fin n → Fin 4) (hsimple : Function.Inject
   intro h
   exact hij (add_right_cancel (hsimple h))
 
-/-- **Contiguous top row of a walk.** The vertices of the walk at its maximal height cover every lattice point between any two of
+/-- The vertices of the walk at its maximal height cover every lattice point between any two of
   them, i.e. the top row of the walk is a contiguous horizontal segment. -/
 def TopRowContiguous (d : Fin n → Fin 4) : Prop :=
   ∃ M : Fin n, (∀ j : Fin n, (pos d j).2 ≤ (pos d M).2) ∧

@@ -42,20 +42,19 @@ public import Mathlib
 
 namespace MathlibExt.Analysis.Complex.ContinuousHolomorphicOffAxesEntireWanted
 
-/-- **Real axis.** The real axis is the set $\{z \in \mathbb{C} : \operatorname{Im} z = 0\}$. -/
+/-- The real axis `{z : ℂ | z.im = 0}`. -/
 def realAxis : Set ℂ := {z : ℂ | z.im = 0}
 
-/-- **Imaginary axis.** The imaginary axis is the set
-$\{z \in \mathbb{C} : \operatorname{Re} z = 0\}$. -/
+/-- The imaginary axis `{z : ℂ | z.re = 0}`. -/
 def imagAxis : Set ℂ := {z : ℂ | z.re = 0}
 
-/-- **Coordinate axes.** The coordinate axes of $\mathbb{C}$: the union of the real axis and the
-imaginary axis. -/
+/-- The union of the real and imaginary axes. -/
 def coordAxes : Set ℂ := realAxis ∪ imagAxis
 
-/-- **Continuous functions holomorphic off the coordinate axes are entire.** Let
-$f : \mathbb{C} \to \mathbb{C}$ be continuous on all of $\mathbb{C}$ and holomorphic on the
-complement of the coordinate axes. Then $f$ is holomorphic on all of $\mathbb{C}$.
+/-- Let $f$ be continuous on the entire plane and holomorphic on the complement of the coordinate
+axes.
+
+Prove that $f$ is actually holomorphic on all of $\C$.
 
 Source: MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex
 variable; General properties of functions of one complex variable),

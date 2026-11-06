@@ -209,7 +209,7 @@ end TensorProductNormAux
 
 namespace Algebra.TensorProduct
 
-/-- **Norm in a tensor product with a Galois extension.** For a Galois extension `M / F` and any `F`-algebra `R`, the norm of an
+/-- For a Galois extension `M / F` and any `F`-algebra `R`, the norm of an
 element of `R ⊗[F] M` over `R` is the product of its Galois conjugates. -/
 theorem algebraMap_norm_eq_prod_map_algEquiv
     (F M : Type*) [Field F] [Field M] [Algebra F M] [FiniteDimensional F M] [IsGalois F M]

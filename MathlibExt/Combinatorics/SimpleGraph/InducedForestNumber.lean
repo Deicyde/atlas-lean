@@ -35,21 +35,15 @@ namespace SimpleGraph
 
 variable {V : Type*} [Fintype V]
 
-/-- **Induced forest number.** For a simple graph $G$ on a finite vertex set $V$, the induced
-forest number $a(G)$ is the maximum number of vertices of an induced forest in $G$, that is, the
-maximum cardinality of a set $S \subseteq V$ such that the subgraph of $G$ induced on $S$ is
-acyclic.
-
-Source: H. Jung, A 15/31 Counterexample Family to the Albertson--Berman Conjecture,
-arXiv:2608.17350v1, the definition of $a(G)$. -/
+/-- For a finite simple graph `G`, `inducedForestNumber G` is the maximum number
+    of vertices in an induced forest, that is the maximum cardinality of a vertex
+    set whose induced subgraph is acyclic. This is `a(G)` from the source. -/
 noncomputable def inducedForestNumber (G : SimpleGraph V) : Nat := by
   classical
   exact Finset.sup (Finset.univ.powerset (α := V))
     (fun (s : Finset V) => if (G.induce (↑s : Set V)).IsAcyclic then s.card else 0)
 
-/-- **Induced forests are no larger than the induced forest number.** Let $G$ be a simple graph
-on a finite vertex set $V$. For every set $S \subseteq V$ such that the subgraph of $G$ induced
-on $S$ is acyclic, $|S|$ is at most the induced forest number of $G$. -/
+/-- Any acyclic induced vertex set is bounded by the induced forest number. -/
 theorem card_le_inducedForestNumber (G : SimpleGraph V) (s : Finset V)
     (h : (G.induce (↑s : Set V)).IsAcyclic) :
     s.card ≤ G.inducedForestNumber := by
@@ -66,8 +60,7 @@ theorem card_le_inducedForestNumber (G : SimpleGraph V) (s : Finset V)
         (f := fun (t : Finset V) => if (G.induce (↑t : Set V)).IsAcyclic then t.card else 0)
         hmem
 
-/-- **The induced forest number is at most the number of vertices.** For every simple graph $G$
-on a finite vertex set $V$, the induced forest number of $G$ is at most $|V|$. -/
+/-- The induced forest number is bounded by the total number of vertices. -/
 theorem inducedForestNumber_le_card (G : SimpleGraph V) :
     G.inducedForestNumber ≤ Fintype.card V := by
   classical
@@ -80,9 +73,7 @@ theorem inducedForestNumber_le_card (G : SimpleGraph V) :
   · simp only [ite_eq_right h]
     exact Nat.zero_le _
 
-/-- **The induced forest number is attained.** For every simple graph $G$ on a finite vertex set
-$V$, there is a set $S \subseteq V$ such that the subgraph of $G$ induced on $S$ is acyclic and
-$|S|$ equals the induced forest number of $G$. -/
+/-- The induced forest number is attained by some acyclic induced vertex set. -/
 theorem exists_isAcyclic_card_eq_inducedForestNumber (G : SimpleGraph V) :
     ∃ s : Finset V, (G.induce (↑s : Set V)).IsAcyclic ∧ s.card = G.inducedForestNumber := by
   classical

@@ -36,14 +36,7 @@ no self-adjoint spectral theory, discreteness below `1/4`, or
 covering-independence of the `L²` condition is formalized.
 -/
 
-/-- **Selberg's 3/16 theorem.** Let $\Gamma$ be a congruence subgroup of
-$\mathrm{SL}(2, \mathbb{Z})$ and let $\lambda$ be a real eigenvalue of the hyperbolic Laplacian
-$\Delta$ for $\Gamma$, that is, $\Delta f = \lambda f$ for some nonzero, twice continuously
-differentiable, $\Gamma$-invariant function $f$ on the upper half plane that is square-integrable
-on $\Gamma \backslash \mathbb{H}$. Then $\lambda$ does not lie in the open interval
-$(0, 3/16)$: either $\lambda \le 0$ or $\lambda \ge 3/16$.
-
-Source: Selberg, as recorded in Luo--Rudnick--Sarnak (1995): every
+/-- Source: Selberg, as recorded in Luo--Rudnick--Sarnak (1995): every
 eigenvalue of a congruence subgroup in the model is either `0`-side
 excluded or at least `3/16`; stated here as the absence of eigenvalues in
 `(0, 3/16)`. -/
@@ -52,22 +45,12 @@ theorem_wanted selberg_threeSixteenths_wanted
     (hlam : IsEigenvalue Γ lam) :
     ¬ (0 < lam ∧ lam < 3 / 16)
 
-/-- **Selberg's bound on the spectral-gap constant.** Selberg's congruence spectral-gap constant
-$C_{61}$ is at most $1/4$.
-
-Source: Selberg's theorem `λ₁(Γ) ≥ 3/16`, catalogue upper row
+/-- Source: Selberg's theorem `λ₁(Γ) ≥ 3/16`, catalogue upper row
 `C₆₁ ≤ 1/4`. -/
 theorem_wanted selbergUpperBound_wanted :
     selbergConstant ≤ 1 / 4
 
-/-- **Kim–Sarnak eigenvalue bound.** Let $\Gamma$ be a congruence subgroup of
-$\mathrm{SL}(2, \mathbb{Z})$ and let $\lambda$ be a real eigenvalue of the hyperbolic Laplacian
-$\Delta$ for $\Gamma$, that is, $\Delta f = \lambda f$ for some nonzero, twice continuously
-differentiable, $\Gamma$-invariant function $f$ on the upper half plane that is square-integrable
-on $\Gamma \backslash \mathbb{H}$. Then $\lambda$ does not lie in the open interval
-$(0, 975/4096)$: either $\lambda \le 0$ or $\lambda \ge 975/4096$.
-
-Source: Kim--Sarnak (2003), as recorded in
+/-- Source: Kim--Sarnak (2003), as recorded in
 Kim--Ramakrishnan (2003): no eigenvalue of a congruence subgroup lies in
 `(0, 975/4096)`. -/
 theorem_wanted kimSarnak975_wanted
@@ -75,10 +58,7 @@ theorem_wanted kimSarnak975_wanted
     (hlam : IsEigenvalue Γ lam) :
     ¬ (0 < lam ∧ lam < 975 / 4096)
 
-/-- **Kim–Sarnak bound on the spectral-gap constant.** Selberg's congruence spectral-gap constant
-$C_{61}$ is at most $7/64$.
-
-Source: Kim--Sarnak bound `λ₁(Γ) ≥ 975/4096 = 1/4 - (7/64)^2`,
+/-- Source: Kim--Sarnak bound `λ₁(Γ) ≥ 975/4096 = 1/4 - (7/64)^2`,
 catalogue best upper row `C₆₁ ≤ 7/64`. -/
 theorem_wanted kimSarnakUpperBound_wanted :
     selbergConstant ≤ 7 / 64

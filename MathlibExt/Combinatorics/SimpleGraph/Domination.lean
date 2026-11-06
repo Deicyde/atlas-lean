@@ -17,31 +17,26 @@ public import Mathlib.Order.Lattice.Nat
 
 namespace SimpleGraph
 
-/-- **Dominating set.** A set $S$ of vertices of a simple graph $G$ dominates $G$ when every vertex
-of $G$ lies in $S$ or is adjacent to some vertex of $S$. -/
+/-- `S` dominates `G`: every vertex is in `S` or adjacent to a vertex of `S`. -/
 def IsDominating {V : Type*} (G : SimpleGraph V) (S : Set V) : Prop :=
   ∀ v : V, v ∈ S ∨ ∃ u ∈ S, G.Adj u v
 
-/-- **Independent dominating set.** A set $S$ of vertices of a simple graph $G$ is an independent
-dominating set of $G$ when no two vertices of $S$ are adjacent and $S$ dominates $G$. -/
+/-- `S` is an independent dominating set: independent and dominating. -/
 def IsIndepDominating {V : Type*} (G : SimpleGraph V) (S : Set V) : Prop :=
   G.IsIndepSet S ∧ G.IsDominating S
 
-/-- **Domination number.** For a simple graph $G$ on a finite vertex set, the domination number of
-$G$ is the least number of elements of a dominating set of $G$. -/
+/-- The domination number: the least size of a dominating set. -/
 noncomputable def dominationNumber {V : Type*} (G : SimpleGraph V)
     [Fintype V] : ℕ :=
   sInf {k : ℕ | ∃ S : Finset V, S.card = k ∧ G.IsDominating ↑S}
 
-/-- **Independent domination number.** For a simple graph $G$ on a finite vertex set, the
-independent domination number of $G$ is the least number of elements of an independent dominating
-set of $G$. -/
+/-- The independent domination number: the least size of an independent
+dominating set. -/
 noncomputable def indepDominationNumber {V : Type*} (G : SimpleGraph V)
     [Fintype V] : ℕ :=
   sInf {k : ℕ | ∃ S : Finset V, S.card = k ∧ G.IsIndepDominating ↑S}
 
-/-- **Existence of independent dominating sets.** Every finite graph has an independent dominating
-set. -/
+/-- Every finite graph has an independent dominating set. -/
 theorem exists_isIndepDominating {V : Type*} (G : SimpleGraph V) [Finite V] :
     ∃ S : Finset V, G.IsIndepDominating ↑S := by
   classical
@@ -70,9 +65,7 @@ theorem exists_isIndepDominating {V : Type*} (G : SimpleGraph V) [Finite V] :
       (hS.isMaximalIndepSet S).2 h_indep (Set.subset_insert v ↑S)
     exact hv (by simpa using hsub (Set.mem_insert v ↑S))
 
-/-- **A minimum independent dominating set exists.** Every simple graph $G$ on a finite vertex set
-has an independent dominating set whose number of elements equals the independent domination
-number of $G$. -/
+/-- An independent dominating set attaining the independent domination number exists. -/
 theorem exists_indepDominationNumber_eq_card {V : Type*} (G : SimpleGraph V)
     [Fintype V] :
     ∃ S : Finset V, S.card = G.indepDominationNumber ∧ G.IsIndepDominating ↑S := by
@@ -83,17 +76,14 @@ theorem exists_indepDominationNumber_eq_card {V : Type*} (G : SimpleGraph V)
     exact ⟨S.card, S, rfl, hS⟩
   simpa only [Set.mem_ofPred_eq] using Nat.sInf_mem hne
 
-/-- **Independent dominating sets are at least as large as the independent domination number.**
-Let $G$ be a simple graph on a finite vertex set. If $S$ is an independent dominating set of $G$,
-then the independent domination number of $G$ is at most the number of elements of $S$. -/
+/-- Every independent dominating set has size at least the independent domination number. -/
 theorem indepDominationNumber_le_card {V : Type*} (G : SimpleGraph V)
     [Fintype V] {S : Finset V} (hS : G.IsIndepDominating ↑S) :
     G.indepDominationNumber ≤ S.card := by
   unfold indepDominationNumber
   exact Nat.sInf_le ⟨S, rfl, hS⟩
 
-/-- **A minimum dominating set exists.** Every simple graph $G$ on a finite vertex set has a
-dominating set whose number of elements equals the domination number of $G$. -/
+/-- A dominating set attaining the domination number exists. -/
 theorem exists_dominationNumber_eq_card {V : Type*} (G : SimpleGraph V)
     [Fintype V] :
     ∃ S : Finset V, S.card = G.dominationNumber ∧ G.IsDominating ↑S := by
@@ -105,9 +95,7 @@ theorem exists_dominationNumber_eq_card {V : Type*} (G : SimpleGraph V)
     exact Or.inl (by simp)
   simpa only [Set.mem_ofPred_eq] using Nat.sInf_mem hne
 
-/-- **Dominating sets are at least as large as the domination number.** Let $G$ be a simple graph
-on a finite vertex set. If $S$ is a dominating set of $G$, then the domination number of $G$ is at
-most the number of elements of $S$. -/
+/-- Every dominating set has size at least the domination number. -/
 theorem dominationNumber_le_card {V : Type*} (G : SimpleGraph V)
     [Fintype V] {S : Finset V} (hS : G.IsDominating ↑S) :
     G.dominationNumber ≤ S.card := by

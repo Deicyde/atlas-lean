@@ -71,10 +71,7 @@ namespace MathlibExt.Analysis.Fourier.FiniteAbelianUncertainty
 
 variable {G : Type*} [AddCommGroup G] [Fintype G]
 
-/-- **Characters of a finite abelian group have absolute value one.** Let $G$ be a finite abelian
-group and let $\psi$ be an additive character of $G$ with values in $\mathbb{C}$, that is, a map
-$\psi : G \to \mathbb{C}$ with $\psi(0) = 1$ and $\psi(a + b) = \psi(a)\psi(b)$. Then
-$|\psi(x)| = 1$ for every $x \in G$. -/
+/-- A character takes values on the unit circle. -/
 theorem norm_addChar_apply (ψ : AddChar G ℂ) (x : G) : ‖ψ x‖ = 1 := by
   have hstar : star (ψ x) = ψ (-x) := by
     rw [RCLike.star_def, AddChar.map_neg_eq_conj]
@@ -91,10 +88,8 @@ theorem norm_addChar_apply (ψ : AddChar G ℂ) (x : G) : ‖ψ x‖ = 1 := by
     rw [h] at this
     norm_num at this
 
-/-- **Squared-norm Plancherel identity for the finite Fourier transform.** Let $G$ be a finite
-abelian group and $f : G \to \mathbb{C}$, with discrete Fourier transform $\hat f$. Then
-$\sum_{\psi} |\hat f(\psi)|^2 = |G| \sum_{x \in G} |f(x)|^2$, where $\psi$ runs over all
-additive characters of $G$. -/
+/-- Plancherel in squared-norm form: the squared `ℓ²` norm of `f̂` is
+`|G|` times the squared `ℓ²` norm of `f`. -/
 theorem sum_norm_sq_dftFun (f : G → ℂ) :
     ∑ ψ : AddChar G ℂ, ‖dftFun f ψ‖ ^ 2
       = (Fintype.card G : ℝ) * ∑ x : G, ‖f x‖ ^ 2 := by
@@ -122,10 +117,8 @@ private theorem sq_sum_le_card_mul_sum_sq {ι : Type*} (s : Finset ι) (a : ι �
   have h := Finset.sum_mul_sq_le_sq_mul_sq s a (fun _ => (1 : ℝ))
   simpa [mul_comm] using h
 
-/-- **Pointwise bound from a small Fourier support.** Let $G$ be a finite abelian group, let
-$f : G \to \mathbb{C}$, and let $B$ be a set of additive characters of $G$ such that the discrete
-Fourier transform $\hat f$ vanishes outside $B$. Then for every $x \in G$,
-$|f(x)|^2 \le \frac{|B|}{|G|} \sum_{y \in G} |f(y)|^2$. -/
+/-- Pointwise bound: if `f̂` vanishes outside `B`, then each `‖f x‖²`
+is at most `(|B| / |G|)` times the total squared `ℓ²` mass of `f`. -/
 theorem norm_sq_le_of_dftFun_eq_zero_of_notMem {f : G → ℂ}
     {B : Finset (AddChar G ℂ)} (hB : ∀ ψ, ψ ∉ B → dftFun f ψ = 0) (x : G) :
     ‖f x‖ ^ 2 ≤ (B.card / Fintype.card G) * ∑ y : G, ‖f y‖ ^ 2 := by
@@ -168,10 +161,9 @@ theorem norm_sq_le_of_dftFun_eq_zero_of_notMem {f : G → ℂ}
     _ = (B.card / Fintype.card G) * ∑ y : G, ‖f y‖ ^ 2 := by
         field_simp
 
-/-- **Concentration bound for a function with small Fourier support.** Let $G$ be a finite abelian
-group, let $f : G \to \mathbb{C}$, and let $B$ be a set of additive characters of $G$ such that
-the discrete Fourier transform $\hat f$ vanishes outside $B$. Then for every $A \subseteq G$,
-$\sum_{x \in A} |f(x)|^2 \le \frac{|A| \cdot |B|}{|G|} \sum_{x \in G} |f(x)|^2$. -/
+/-- Concentration of `f`: if `f̂` vanishes outside `B`, then the squared
+`ℓ²` mass of `f` on any set `A` is at most `(|A| * |B| / |G|)` times the
+total squared `ℓ²` mass of `f`. -/
 theorem sum_norm_sq_le_of_dftFun_eq_zero_of_notMem {f : G → ℂ}
     {A : Finset G} {B : Finset (AddChar G ℂ)}
     (hB : ∀ ψ, ψ ∉ B → dftFun f ψ = 0) :
@@ -184,11 +176,9 @@ theorem sum_norm_sq_le_of_dftFun_eq_zero_of_notMem {f : G → ℂ}
     _ = (A.card * B.card / Fintype.card G) * ∑ x : G, ‖f x‖ ^ 2 := by
         field_simp
 
-/-- **Concentration bound for the Fourier transform of a function with small support.** Let $G$
-be a finite abelian group, let $A \subseteq G$, let $B$ be any set of additive characters of $G$,
-and let $f : G \to \mathbb{C}$ vanish outside $A$, with discrete Fourier transform $\hat f$. Then
-$\sum_{\psi \in B} |\hat f(\psi)|^2 \le \frac{|A| \cdot |B|}{|G|} \sum_{\psi} |\hat f(\psi)|^2$,
-where the last sum runs over all additive characters $\psi$ of $G$. -/
+/-- Concentration of `f̂`: if `f` vanishes outside `A`, then the squared
+`ℓ²` mass of `f̂` on any set `B` is at most `(|A| * |B| / |G|)` times the
+total squared `ℓ²` mass of `f̂`. -/
 theorem sum_norm_sq_dftFun_le_of_eq_zero_of_notMem {f : G → ℂ}
     {A : Finset G} {B : Finset (AddChar G ℂ)}
     (hA : ∀ x, x ∉ A → f x = 0) :
@@ -231,10 +221,8 @@ theorem sum_norm_sq_dftFun_le_of_eq_zero_of_notMem {f : G → ℂ}
     _ = (A.card * B.card / Fintype.card G) * ∑ ψ : AddChar G ℂ, ‖dftFun f ψ‖ ^ 2 := by
         field_simp
 
-/-- **Donoho–Stark uncertainty principle.** Let $G$ be a finite abelian group and let
-$f : G \to \mathbb{C}$ be a nonzero function with discrete Fourier transform $\hat f$. Then
-$|G| \le |\{x \in G : f(x) \neq 0\}| \cdot |\{\psi : \hat f(\psi) \neq 0\}|$, where $\psi$ ranges
-over the additive characters of $G$. -/
+/-- The Donoho–Stark uncertainty principle: a nonzero function on a finite
+abelian group and its Fourier transform cannot both have small support. -/
 theorem card_le_mul_card_filter_support {f : G → ℂ} (hf : f ≠ 0) :
     Fintype.card G ≤
       (Finset.univ.filter (fun x => f x ≠ 0)).card *
@@ -266,10 +254,8 @@ theorem card_le_mul_card_filter_support {f : G → ℂ} (hf : f ≠ 0) :
   have h2 : (Fintype.card G : ℝ) ≤ A.card * B.card := (one_le_div hN).mp h1
   exact_mod_cast h2
 
-/-- **Functions with small support and small Fourier support vanish.** Let $G$ be a finite abelian
-group, let $A \subseteq G$, and let $B$ be a set of additive characters of $G$ with
-$|A| \cdot |B| < |G|$. If $f : G \to \mathbb{C}$ vanishes outside $A$ and its discrete Fourier
-transform $\hat f$ vanishes outside $B$, then $f = 0$. -/
+/-- Nonvanishing form: there is no nonzero function supported in `A`
+whose Fourier transform is supported in `B` when `|A| * |B| < |G|`. -/
 theorem eq_zero_of_card_mul_card_lt_card {f : G → ℂ}
     {A : Finset G} {B : Finset (AddChar G ℂ)}
     (hA : ∀ x, x ∉ A → f x = 0) (hB : ∀ ψ, ψ ∉ B → dftFun f ψ = 0)

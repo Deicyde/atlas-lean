@@ -70,7 +70,7 @@ open MathlibExt.Probability.Statistics.MultipleTesting
 
 /-! ### The two-groups model -/
 
-/-- **Two-groups model.** The two-groups model of Efron et al. (2001): prior null probability `π₀ ∈ [0, 1]`, null
+/-- The two-groups model of Efron et al. (2001): prior null probability `π₀ ∈ [0, 1]`, null
 density `f₀` and non-null density `f₁` of the z-value (probability densities on `ℝ`). -/
 structure TwoGroupsModel where
   /-- Prior probability that a case is null. -/
@@ -104,29 +104,29 @@ namespace TwoGroupsModel
 
 variable (M : TwoGroupsModel)
 
-/-- **Mixture density of the two-groups model.** The mixture density `f = π₀ f₀ + (1 - π₀) f₁` of the z-values. -/
+/-- The mixture density `f = π₀ f₀ + (1 - π₀) f₁` of the z-values. -/
 noncomputable def mixtureDensity (z : ℝ) : ℝ := M.π₀ * M.f₀ z + (1 - M.π₀) * M.f₁ z
 
-/-- **Law of a null z-value.** The law `P₀` of a null z-value. -/
+/-- The law `P₀` of a null z-value. -/
 noncomputable def nullLaw : Measure ℝ := volume.withDensity fun z => ENNReal.ofReal (M.f₀ z)
 
-/-- **Law of a non-null z-value.** The law `P₁` of a non-null z-value. -/
+/-- The law `P₁` of a non-null z-value. -/
 noncomputable def altLaw : Measure ℝ := volume.withDensity fun z => ENNReal.ofReal (M.f₁ z)
 
-/-- **Joint law of null indicator and z-value.** Joint law of (null indicator, z-value) on `Bool × ℝ`; `true` means the case is null. -/
+/-- Joint law of (null indicator, z-value) on `Bool × ℝ`; `true` means the case is null. -/
 noncomputable def jointLaw : Measure (Bool × ℝ) :=
   ENNReal.ofReal M.π₀ • (Measure.dirac true).prod M.nullLaw +
     ENNReal.ofReal (1 - M.π₀) • (Measure.dirac false).prod M.altLaw
 
-/-- **Local false discovery rate.** Efron's local false discovery rate `fdr(z) = π₀ f₀(z) / f(z)` (zero where `f(z) = 0`). -/
+/-- Efron's local false discovery rate `fdr(z) = π₀ f₀(z) / f(z)` (zero where `f(z) = 0`). -/
 noncomputable def localFdr (z : ℝ) : ℝ := M.π₀ * M.f₀ z / M.mixtureDensity z
 
-/-- **Tail-area false discovery rate.** The tail-area false discovery rate of a region `Γ`: `Fdr(Γ) = π₀ P₀(Γ) / P(Γ)`, written with
+/-- The tail-area false discovery rate of a region `Γ`: `Fdr(Γ) = π₀ P₀(Γ) / P(Γ)`, written with
 the densities. Efron's `Fdr(z)` is `tailFdr (Set.Iic z)`. It is `0` when `P(Γ) = 0`. -/
 noncomputable def tailFdr (Γ : Set ℝ) : ℝ :=
   M.π₀ * (∫ z in Γ, M.f₀ z) / ∫ z in Γ, M.mixtureDensity z
 
-/-- **Mixture density is nonnegative.** The mixture density is nonnegative. -/
+/-- The mixture density is nonnegative. -/
 theorem mixtureDensity_nonneg (z : ℝ) : 0 ≤ M.mixtureDensity z := by
   have := M.π₀_le_one
   have := M.π₀_nonneg
@@ -135,26 +135,26 @@ theorem mixtureDensity_nonneg (z : ℝ) : 0 ≤ M.mixtureDensity z := by
   unfold mixtureDensity
   nlinarith
 
-/-- **Null part of the mixture is dominated by the mixture.** The null part of the mixture is dominated by the mixture: `π₀ f₀ ≤ f`. -/
+/-- The null part of the mixture is dominated by the mixture: `π₀ f₀ ≤ f`. -/
 theorem mul_f₀_le_mixtureDensity (z : ℝ) : M.π₀ * M.f₀ z ≤ M.mixtureDensity z := by
   have := M.π₀_le_one
   have := M.f₁_nonneg z
   unfold mixtureDensity
   nlinarith
 
-/-- **Mixture density is measurable.** The mixture density is measurable. -/
+/-- The mixture density is measurable. -/
 theorem measurable_mixtureDensity : Measurable M.mixtureDensity :=
   (M.measurable_f₀.const_mul _).add (M.measurable_f₁.const_mul _)
 
-/-- **Mixture density is integrable.** The mixture density is integrable. -/
+/-- The mixture density is integrable. -/
 theorem integrable_mixtureDensity : Integrable M.mixtureDensity :=
   (M.integrable_f₀.const_mul _).add (M.integrable_f₁.const_mul _)
 
-/-- **Local false discovery rate is measurable.** The local false discovery rate is measurable. -/
+/-- The local false discovery rate is measurable. -/
 theorem measurable_localFdr : Measurable M.localFdr :=
   (M.measurable_f₀.const_mul _).div M.measurable_mixtureDensity
 
-/-- **Local fdr times mixture density equals the null part.** The basic identity `fdr(z) f(z) = π₀ f₀(z)`, for every `z` (where `f(z) = 0` both sides
+/-- The basic identity `fdr(z) f(z) = π₀ f₀(z)`, for every `z` (where `f(z) = 0` both sides
 vanish because `π₀ f₀ ≤ f`). -/
 theorem localFdr_mul_mixtureDensity (z : ℝ) :
     M.localFdr z * M.mixtureDensity z = M.π₀ * M.f₀ z := by
@@ -166,11 +166,11 @@ theorem localFdr_mul_mixtureDensity (z : ℝ) :
     simp [le_antisymm h1 h2]
   · exact div_mul_cancel₀ _ h
 
-/-- **Local false discovery rate is nonnegative.** The local false discovery rate is nonnegative. -/
+/-- The local false discovery rate is nonnegative. -/
 theorem localFdr_nonneg (z : ℝ) : 0 ≤ M.localFdr z :=
   div_nonneg (mul_nonneg M.π₀_nonneg (M.f₀_nonneg z)) (M.mixtureDensity_nonneg z)
 
-/-- **Local false discovery rate is at most one.** The local false discovery rate is at most one. -/
+/-- The local false discovery rate is at most one. -/
 theorem localFdr_le_one (z : ℝ) : M.localFdr z ≤ 1 :=
   div_le_one_of_le₀ (M.mul_f₀_le_mixtureDensity z) (M.mixtureDensity_nonneg z)
 
@@ -180,12 +180,12 @@ private theorem withDensity_ofReal_apply {f : ℝ → ℝ} (hf : Integrable f) (
   rw [withDensity_apply _ hA, ofReal_integral_eq_lintegral_ofReal hf.integrableOn
     (Filter.Eventually.of_forall fun z => hf0 z)]
 
-/-- **Null law as the integral of the null density.** `P₀(A) = ∫_A f₀`. -/
+/-- `P₀(A) = ∫_A f₀`. -/
 theorem nullLaw_apply {A : Set ℝ} (hA : MeasurableSet A) :
     M.nullLaw A = ENNReal.ofReal (∫ z in A, M.f₀ z) :=
   withDensity_ofReal_apply M.integrable_f₀ M.f₀_nonneg hA
 
-/-- **Non-null law as the integral of the non-null density.** `P₁(A) = ∫_A f₁`. -/
+/-- `P₁(A) = ∫_A f₁`. -/
 theorem altLaw_apply {A : Set ℝ} (hA : MeasurableSet A) :
     M.altLaw A = ENNReal.ofReal (∫ z in A, M.f₁ z) :=
   withDensity_ofReal_apply M.integrable_f₁ M.f₁_nonneg hA
@@ -198,19 +198,19 @@ instance : IsProbabilityMeasure M.nullLaw :=
 instance : IsProbabilityMeasure M.altLaw :=
   ⟨by rw [altLaw_apply M MeasurableSet.univ, Measure.restrict_univ, M.integral_f₁]; simp⟩
 
-/-- **Joint probability of a null case in a set.** `P(H = 0, Z ∈ A) = π₀ P₀(A)`. -/
+/-- `P(H = 0, Z ∈ A) = π₀ P₀(A)`. -/
 theorem jointLaw_null_prod {A : Set ℝ} (hA : MeasurableSet A) :
     M.jointLaw ({true} ×ˢ A) = ENNReal.ofReal (M.π₀ * ∫ z in A, M.f₀ z) := by
   simp [jointLaw, Measure.prod_prod, M.nullLaw_apply hA,
     ENNReal.ofReal_mul M.π₀_nonneg]
 
-/-- **Joint probability of a non-null case in a set.** `P(H = 1, Z ∈ A) = (1 - π₀) P₁(A)`. -/
+/-- `P(H = 1, Z ∈ A) = (1 - π₀) P₁(A)`. -/
 theorem jointLaw_alt_prod {A : Set ℝ} (hA : MeasurableSet A) :
     M.jointLaw ({false} ×ˢ A) = ENNReal.ofReal ((1 - M.π₀) * ∫ z in A, M.f₁ z) := by
   simp [jointLaw, Measure.prod_prod, M.altLaw_apply hA,
     ENNReal.ofReal_mul (sub_nonneg.2 M.π₀_le_one)]
 
-/-- **z-value has the mixture law.** The z-value has the mixture law: `P(Z ∈ A) = ∫_A f`. -/
+/-- The z-value has the mixture law: `P(Z ∈ A) = ∫_A f`. -/
 theorem jointLaw_univ_prod {A : Set ℝ} (hA : MeasurableSet A) :
     M.jointLaw (Set.univ ×ˢ A) = ENNReal.ofReal (∫ z in A, M.mixtureDensity z) := by
   have hu : (Set.univ : Set Bool) ×ˢ A = {true} ×ˢ A ∪ {false} ×ˢ A := by
@@ -235,7 +235,7 @@ instance : IsProbabilityMeasure M.jointLaw :=
       integral_const_mul, integral_const_mul, M.integral_f₀, M.integral_f₁]
     simp⟩
 
-/-- **Marginal z-value law of the joint law is the mixture.** The law of the z-value under the joint law is the mixture `f · Lebesgue`. -/
+/-- The law of the z-value under the joint law is the mixture `f · Lebesgue`. -/
 theorem map_snd_jointLaw :
     M.jointLaw.map Prod.snd =
       volume.withDensity fun z => ENNReal.ofReal (M.mixtureDensity z) := by
@@ -243,7 +243,7 @@ theorem map_snd_jointLaw :
   rw [Measure.map_apply measurable_snd hA, ← Set.univ_prod, M.jointLaw_univ_prod hA,
     withDensity_ofReal_apply M.integrable_mixtureDensity M.mixtureDensity_nonneg hA]
 
-/-- **Null probability as an integral of the local fdr.** Efron et al. (2001): `P(H = 0, Z ∈ A) = ∫_A fdr(z) dP_Z(z)` for every measurable `A`, so
+/-- Efron et al. (2001): `P(H = 0, Z ∈ A) = ∫_A fdr(z) dP_Z(z)` for every measurable `A`, so
 `fdr(Z)` is a version of the posterior null probability `P(H = 0 | Z)`. -/
 theorem jointLaw_null_prod_eq_lintegral_localFdr {A : Set ℝ} (hA : MeasurableSet A) :
     M.jointLaw ({true} ×ˢ A) =
@@ -259,7 +259,7 @@ theorem jointLaw_null_prod_eq_lintegral_localFdr {A : Set ℝ} (hA : MeasurableS
     (Filter.Eventually.of_forall fun z => mul_nonneg M.π₀_nonneg (M.f₀_nonneg z)),
     integral_const_mul]
 
-/-- **Local fdr is the posterior null probability.** Efron et al. (2001): `fdr(Z) = P(H = 0 | Z)` almost surely, as a conditional expectation
+/-- Efron et al. (2001): `fdr(Z) = P(H = 0 | Z)` almost surely, as a conditional expectation
 of the null indicator given the z-value. -/
 theorem condExp_null_eq_localFdr :
     M.jointLaw[{p : Bool × ℝ | p.1 = true}.indicator 1 |
@@ -289,7 +289,7 @@ theorem condExp_null_eq_localFdr :
       ← M.jointLaw_null_prod_eq_lintegral_localFdr hA]
   · exact (M.measurable_localFdr.comp (comap_measurable Prod.snd)).aestronglyMeasurable
 
-/-- **Tail-area fdr is the posterior null probability given a region.** `P(H = 0 | Z ∈ Γ) = Fdr(Γ)`: the tail-area false discovery rate is the posterior null
+/-- `P(H = 0 | Z ∈ Γ) = Fdr(Γ)`: the tail-area false discovery rate is the posterior null
 probability given `Z ∈ Γ` (Storey 2002, Theorem 1; Efron 2010, ch. 2). Both sides are `0` when
 `P(Z ∈ Γ) = 0`. -/
 theorem cond_null_eq_tailFdr {Γ : Set ℝ} (hΓ : MeasurableSet Γ) :
@@ -302,7 +302,7 @@ theorem cond_null_eq_tailFdr {Γ : Set ℝ} (hΓ : MeasurableSet Γ) :
     ENNReal.toReal_ofReal (mul_nonneg M.π₀_nonneg
       (setIntegral_nonneg hΓ fun z _ => M.f₀_nonneg z)), tailFdr, inv_mul_eq_div]
 
-/-- **Tail-area fdr is the average local fdr over the region.** `E[fdr(Z) | Z ∈ Γ] = Fdr(Γ)`, written with densities: the tail-area false discovery rate is
+/-- `E[fdr(Z) | Z ∈ Γ] = Fdr(Γ)`, written with densities: the tail-area false discovery rate is
 the `f`-weighted average of the local false discovery rate over `Γ` (Efron 2010, ch. 5). -/
 theorem tailFdr_eq_setIntegral_localFdr (Γ : Set ℝ) :
     M.tailFdr Γ =
@@ -315,19 +315,19 @@ end TwoGroupsModel
 
 variable {m : ℕ}
 
-/-- **True-null set of a test outcome vector.** The true-null set of an outcome vector `x : Fin m → Bool × Bool`, where `(x i).1` records
+/-- The true-null set of an outcome vector `x : Fin m → Bool × Bool`, where `(x i).1` records
 that hypothesis `i` is null and `(x i).2` that it is rejected. -/
 def nullSet (x : Fin m → Bool × Bool) : Finset (Fin m) := univ.filter fun i => (x i).1 = true
 
-/-- **Rejection set of a test outcome vector.** The rejection set of an outcome vector. -/
+/-- The rejection set of an outcome vector. -/
 def rejectedSet (x : Fin m → Bool × Bool) : Finset (Fin m) :=
   univ.filter fun i => (x i).2 = true
 
-/-- **Probability of a test outcome vector.** The probability `∏ᵢ q(xᵢ)` of an outcome vector when the `m` (null, rejected) pairs are
+/-- The probability `∏ᵢ q(xᵢ)` of an outcome vector when the `m` (null, rejected) pairs are
 i.i.d. with law `q`. -/
 def outcomeWeight (q : Bool × Bool → ℝ) (x : Fin m → Bool × Bool) : ℝ := ∏ i, q (x i)
 
-/-- **Storey's positive false discovery rate.** Storey's positive false discovery rate `pFDR = E[V / R | R > 0]` for `m` tests whose
+/-- Storey's positive false discovery rate `pFDR = E[V / R | R > 0]` for `m` tests whose
 (null, rejected) indicator pairs are i.i.d. with law `q`: `V / R` is the false discovery
 proportion. -/
 noncomputable def positiveFDR (q : Bool × Bool → ℝ) (m : ℕ) : ℝ :=
@@ -457,7 +457,7 @@ private theorem key (q : Bool × Bool → ℝ) :
   rw [mul_add, ← key_i q i]
   ring
 
-/-- **Storey's theorem: pFDR is a posterior null probability.** Storey (2002), Theorem 1: for `m ≥ 1` i.i.d. tests, `pFDR = P(H = 0 | T ∈ Γ)`, where
+/-- Storey (2002), Theorem 1: for `m ≥ 1` i.i.d. tests, `pFDR = P(H = 0 | T ∈ Γ)`, where
 `q (true, true) = P(H = 0, T ∈ Γ)` and `q (false, true) = P(H = 1, T ∈ Γ)`. The identity is
 homogeneous in `q`, so only `q ≥ 0` is assumed; when `P(T ∈ Γ) = 0` both sides are `0`. -/
 theorem positiveFDR_eq (q : Bool × Bool → ℝ) (hq : ∀ b, 0 ≤ q b) (hm : 0 < m) :
@@ -515,12 +515,12 @@ namespace TwoGroupsModel
 
 variable (M : TwoGroupsModel)
 
-/-- **Law of a test's null and rejection pair.** The law of one test's (null, rejected) pair in the two-groups model when the test rejects
+/-- The law of one test's (null, rejected) pair in the two-groups model when the test rejects
 iff its z-value lies in `Γ`. -/
 noncomputable def pairLaw (Γ : Set ℝ) (b : Bool × Bool) : ℝ :=
   (M.jointLaw ({b.1} ×ˢ if b.2 then Γ else Γᶜ)).toReal
 
-/-- **Storey's theorem in the two-groups model.** Storey (2002), Theorem 1, in the two-groups model: for `m ≥ 1` i.i.d. tests rejecting on
+/-- Storey (2002), Theorem 1, in the two-groups model: for `m ≥ 1` i.i.d. tests rejecting on
 `Γ`, `pFDR(Γ) = π₀ P₀(Γ) / P(Γ) = Fdr(Γ)`. -/
 theorem positiveFDR_pairLaw_eq_tailFdr {Γ : Set ℝ} (hΓ : MeasurableSet Γ) (hm : 0 < m) :
     positiveFDR (M.pairLaw Γ) m = M.tailFdr Γ := by
@@ -540,12 +540,12 @@ end TwoGroupsModel
 
 /-! ### Storey's estimator of the null proportion -/
 
-/-- **Storey's estimator of the null proportion.** Storey's estimator `π̂₀(t) = #{i | pᵢ > t} / (m (1 - t))` of the proportion of true nulls,
+/-- Storey's estimator `π̂₀(t) = #{i | pᵢ > t} / (m (1 - t))` of the proportion of true nulls,
 for a tuning parameter `t ∈ [0, 1)`. -/
 noncomputable def storeyPi0 (t : ℝ) (p : Fin m → ℝ) : ℝ :=
   ((univ.filter fun i => t < p i).card : ℝ) / (m * (1 - t))
 
-/-- **Conservative bias of Storey's null proportion estimator.** Conservative bias of Storey's (2002) estimator for a fixed set `H0` of true nulls: if their
+/-- Conservative bias of Storey's (2002) estimator for a fixed set `H0` of true nulls: if their
 p-values are valid, then `E[π̂₀(t)] ≥ m₀ / m` for every `t ∈ [0, 1)`. No independence is
 assumed; the non-null p-values are arbitrary measurable functions. -/
 theorem le_integral_storeyPi0 {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω}
@@ -585,7 +585,7 @@ theorem le_integral_storeyPi0 {Ω : Type*} [MeasurableSpace Ω] {μ : Measure Ω
 
 /-! ### Storey's q-value -/
 
-/-- **Storey's q-value.** Storey's (2003) q-value for a nested family of rejection regions `Γ_s = {T ≤ s}` with
+/-- Storey's (2003) q-value for a nested family of rejection regions `Γ_s = {T ≤ s}` with
 `pFDR(Γ_s) = pfdr s`: `q(t) = inf_{s ≥ t} pfdr s`, the smallest pFDR over the regions that
 contain the observed statistic `t`. -/
 noncomputable def qValue (pfdr : ℝ → ℝ) (t : ℝ) : ℝ := ⨅ s : Set.Ici t, pfdr s
@@ -594,17 +594,17 @@ private theorem bddBelow_range_Ici {pfdr : ℝ → ℝ} (h0 : ∀ s, 0 ≤ pfdr 
     BddBelow (Set.range fun s : Set.Ici t => pfdr s) :=
   ⟨0, by rintro _ ⟨s, rfl⟩; exact h0 s⟩
 
-/-- **q-value is at most the pFDR of the smallest region.** The q-value is at most the pFDR of the smallest region containing the statistic. -/
+/-- The q-value is at most the pFDR of the smallest region containing the statistic. -/
 theorem qValue_le {pfdr : ℝ → ℝ} (h0 : ∀ s, 0 ≤ pfdr s) (t : ℝ) : qValue pfdr t ≤ pfdr t :=
   ciInf_le (bddBelow_range_Ici h0 t) (⟨t, le_rfl⟩ : Set.Ici t)
 
-/-- **q-value is monotone in the statistic.** The q-value is monotone in the statistic. -/
+/-- The q-value is monotone in the statistic. -/
 theorem monotone_qValue {pfdr : ℝ → ℝ} (h0 : ∀ s, 0 ≤ pfdr s) : Monotone (qValue pfdr) := by
   intro t₁ t₂ h
   refine le_ciInf fun s => ?_
   exact ciInf_le (bddBelow_range_Ici h0 t₁) (⟨s, h.trans s.2⟩ : Set.Ici t₁)
 
-/-- **q-value equals the pFDR when the pFDR is monotone.** When the pFDR is nondecreasing along the nested regions, the q-value is the pFDR. -/
+/-- When the pFDR is nondecreasing along the nested regions, the q-value is the pFDR. -/
 theorem qValue_eq_of_monotone {pfdr : ℝ → ℝ} (h : Monotone pfdr) (t : ℝ) :
     qValue pfdr t = pfdr t := by
   have hb : BddBelow (Set.range fun s : Set.Ici t => pfdr s) :=

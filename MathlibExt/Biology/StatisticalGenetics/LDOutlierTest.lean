@@ -67,17 +67,17 @@ open MeasureTheory ProbabilityTheory Set Filter Topology
 
 namespace MathlibExt.Biology.StatisticalGenetics.LDOutlierTest
 
-/-- **DENTIST-S statistic.** The DENTIST-S statistic `(z_i - r z_c) ^ 2 / (1 - r ^ 2)` of a variant with `z`-score `zi`,
+/-- The DENTIST-S statistic `(z_i - r z_c) ^ 2 / (1 - r ^ 2)` of a variant with `z`-score `zi`,
 given the `z`-score `zc` of the lead (putative causal) variant and the reference correlation `r`
 between them (Kanai et al. 2022, Equation 1). Meaningful for `r ^ 2 < 1`; for `r ^ 2 = 1` it is
 `0` by the convention `x / 0 = 0`. -/
 noncomputable def dentistS (r zi zc : ℝ) : ℝ := (zi - r * zc) ^ 2 / (1 - r ^ 2)
 
-/-- **Mean of the standardized DENTIST difference.** The mean `(ρ - r) λ / √(1 - r²)` of the standardized DENTIST difference when the true
+/-- The mean `(ρ - r) λ / √(1 - r²)` of the standardized DENTIST difference when the true
 correlation is `ρ`, the reference correlation is `r` and the lead variant has mean `λ`. -/
 noncomputable def dentistMean (ρ r lam : ℝ) : ℝ := (ρ - r) * lam / Real.sqrt (1 - r ^ 2)
 
-/-- **Variance of the standardized DENTIST difference.** The variance `(1 - 2 r ρ + r²) / (1 - r²)` of the standardized DENTIST difference when the
+/-- The variance `(1 - 2 r ρ + r²) / (1 - r²)` of the standardized DENTIST difference when the
 true correlation is `ρ` and the reference correlation is `r`. -/
 noncomputable def dentistVariance (ρ r : ℝ) : ℝ := (1 - 2 * r * ρ + r ^ 2) / (1 - r ^ 2)
 
@@ -126,7 +126,7 @@ theorem map_standardized_eq_gaussianReal {zi zc : Ω → ℝ}
     field_simp
 
 
-/-- **DENTIST-S is chi-squared with one degree of freedom under correct LD.** When the reference correlation equals the true correlation `ρ` (`ρ ^ 2 < 1`), the DENTIST-S
+/-- When the reference correlation equals the true correlation `ρ` (`ρ ^ 2 < 1`), the DENTIST-S
 statistic has the law of the square of a standard normal variable. -/
 theorem map_dentistS_eq_map_sq {zi zc : Ω → ℝ}
     (hz : HasGaussianLaw (fun ω => (zi ω, zc ω)) P) {ρ lam : ℝ}
@@ -159,7 +159,7 @@ theorem map_dentistS_eq_chiSquare {zi zc : Ω → ℝ}
     P.map (fun ω => dentistS ρ (zi ω) (zc ω)) = chiSquareMeasure 1 := by
   rw [map_dentistS_eq_map_sq hz hvi hvc hcov hmi hmc hρ, ProbabilityTheory.gaussianReal_map_sq]
 
-/-- **Unit-variance criterion for the DENTIST difference.** The standardized DENTIST difference has unit variance iff the reference correlation is `0`
+/-- The standardized DENTIST difference has unit variance iff the reference correlation is `0`
 or equals the true correlation (for `r ^ 2 < 1`). -/
 theorem dentistVariance_eq_one_iff {ρ r : ℝ} (hr : r ^ 2 < 1) :
     dentistVariance ρ r = 1 ↔ r = 0 ∨ r = ρ := by
@@ -173,7 +173,7 @@ theorem dentistVariance_eq_one_iff {ρ r : ℝ} (hr : r ^ 2 < 1) :
     · exact Or.inr (by linarith)
   · rintro (h0 | h0) <;> subst h0 <;> ring
 
-/-- **Zero-mean criterion for the DENTIST difference.** The standardized DENTIST difference has mean zero iff the reference correlation equals the
+/-- The standardized DENTIST difference has mean zero iff the reference correlation equals the
 true correlation or the lead variant has mean zero (for `r ^ 2 < 1`). -/
 theorem dentistMean_eq_zero_iff {ρ r lam : ℝ} (hr : r ^ 2 < 1) :
     dentistMean ρ r lam = 0 ↔ r = ρ ∨ lam = 0 := by

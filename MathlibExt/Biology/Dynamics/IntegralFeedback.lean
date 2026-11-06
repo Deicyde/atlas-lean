@@ -68,7 +68,7 @@ open Matrix
 
 namespace MathlibExt.Biology.Dynamics.IntegralFeedback
 
-/-- **Single-input single-output linear time-invariant system.** A single-input single-output linear time-invariant system `ẋ = A x + u b`,
+/-- A single-input single-output linear time-invariant system `ẋ = A x + u b`,
 `y = c ⬝ x + d u` with state space `n → ℝ`. -/
 structure LinearSystem (n : Type*) where
   /-- The state matrix. -/
@@ -84,11 +84,11 @@ variable {n : Type*} [Fintype n] (S : LinearSystem n)
 
 namespace LinearSystem
 
-/-- **Vector field of a linear time-invariant system.** The vector field `A x + u b` at state `x` and input `u`. -/
+/-- The vector field `A x + u b` at state `x` and input `u`. -/
 def field (x : n → ℝ) (u : ℝ) : n → ℝ :=
   S.A *ᵥ x + u • S.b
 
-/-- **Output of a linear time-invariant system.** The output `c ⬝ x + d u`, measured from its adapted value. -/
+/-- The output `c ⬝ x + d u`, measured from its adapted value. -/
 def output (x : n → ℝ) (u : ℝ) : ℝ :=
   S.c ⬝ᵥ x + S.d * u
 
@@ -102,19 +102,19 @@ def HasPerfectAdaptation : Prop :=
 def HasIntegralFeedback : Prop :=
   ∃ k : n → ℝ, ∀ (x : n → ℝ) (u : ℝ), k ⬝ᵥ S.field x u = S.output x u
 
-/-- **Steady-state (DC) gain of a linear system.** The steady-state (DC) gain `d - c ⬝ A⁻¹ b`; for nonsingular `A` the output at the
+/-- The steady-state (DC) gain `d - c ⬝ A⁻¹ b`; for nonsingular `A` the output at the
 equilibrium for input `u` is `dcGain * u`. -/
 noncomputable def dcGain [DecidableEq n] : ℝ :=
   S.d - S.c ⬝ᵥ (S.A⁻¹ *ᵥ S.b)
 
-/-- **Integral feedback implies perfect adaptation.** Integral feedback implies perfect adaptation. -/
+/-- Integral feedback implies perfect adaptation. -/
 theorem hasPerfectAdaptation_of_hasIntegralFeedback (h : S.HasIntegralFeedback) :
     S.HasPerfectAdaptation := by
   obtain ⟨k, hk⟩ := h
   intro u x hx
   rw [← hk, hx, dotProduct_zero]
 
-/-- **Unique equilibrium of a nonsingular linear system.** For nonsingular `A`, the unique equilibrium for input `u` is `x = -u • A⁻¹ b`. -/
+/-- For nonsingular `A`, the unique equilibrium for input `u` is `x = -u • A⁻¹ b`. -/
 theorem field_eq_zero_iff [DecidableEq n] (hA : IsUnit S.A.det) (x : n → ℝ) (u : ℝ) :
     S.field x u = 0 ↔ x = -(u • (S.A⁻¹ *ᵥ S.b)) := by
   unfold field
@@ -127,13 +127,13 @@ theorem field_eq_zero_iff [DecidableEq n] (hA : IsUnit S.A.det) (x : n → ℝ) 
     rw [mulVec_neg, mulVec_smul, mulVec_mulVec, mul_nonsing_inv _ hA, one_mulVec,
       neg_add_cancel]
 
-/-- **Output at equilibrium equals DC gain times input.** For nonsingular `A`, the output at the equilibrium for input `u` is `dcGain * u`. -/
+/-- For nonsingular `A`, the output at the equilibrium for input `u` is `dcGain * u`. -/
 theorem output_equilibrium [DecidableEq n] (u : ℝ) :
     S.output (-(u • (S.A⁻¹ *ᵥ S.b))) u = S.dcGain * u := by
   simp only [output, dcGain, dotProduct_neg, dotProduct_smul, smul_eq_mul]
   ring
 
-/-- **Perfect adaptation iff the DC gain vanishes.** For nonsingular `A`, perfect adaptation holds iff the steady-state gain vanishes. -/
+/-- For nonsingular `A`, perfect adaptation holds iff the steady-state gain vanishes. -/
 theorem hasPerfectAdaptation_iff_dcGain_eq_zero [DecidableEq n] (hA : IsUnit S.A.det) :
     S.HasPerfectAdaptation ↔ S.dcGain = 0 := by
   constructor
@@ -156,7 +156,7 @@ theorem hasIntegralFeedback_iff_hasPerfectAdaptation [DecidableEq n] (hA : IsUni
     mulVec_mulVec, nonsing_inv_mul _ hA, one_mulVec, hd]
   ring
 
-/-- **Integral-feedback functional is the time integral of the output.** Along a trajectory `ẋ(t) = A x(t) + u(t) b`, the functional `k ⬝ x(t)` of an
+/-- Along a trajectory `ẋ(t) = A x(t) + u(t) b`, the functional `k ⬝ x(t)` of an
 integral-feedback system has derivative `y(t) = c ⬝ x(t) + d u(t)`: it is the time integral of
 the output. -/
 theorem hasDerivAt_integral {k : n → ℝ} (hk : ∀ x u, k ⬝ᵥ S.field x u = S.output x u)

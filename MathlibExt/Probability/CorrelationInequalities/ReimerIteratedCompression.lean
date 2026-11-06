@@ -59,7 +59,7 @@ theorem downComp_eq_self_of_isLowerSet {𝒜 : Finset (Finset α)}
   · intro hs
     exact Or.inl ⟨hs, erase_mem_of_isLowerSet h hs i⟩
 
-/-- **Iterated down-compression along a list of coordinates.** Down-compression at each coordinate of `cs` in turn (the head of `cs` is applied last). -/
+/-- Down-compression at each coordinate of `cs` in turn (the head of `cs` is applied last). -/
 def iterDownComp (cs : List α) (𝒜 : Finset (Finset α)) : Finset (Finset α) :=
   cs.foldr Down.compression 𝒜
 
@@ -262,7 +262,7 @@ theorem wdpairs_le_endpoint {w : α → Bool → ℝ} (hw : ∀ x b, 0 ≤ w x b
 
 end Weighted
 
-/-- **Down-compression map on a single finset.** The compression map: erase `i` from `s` when `s` contains `i` and `s.erase i ∉ 𝒜`. -/
+/-- The compression map: erase `i` from `s` when `s` contains `i` and `s.erase i ∉ 𝒜`. -/
 noncomputable def cmap (i : α) (𝒜 : Finset (Finset α)) (s : Finset α) : Finset α :=
   if i ∈ s ∧ s.erase i ∉ 𝒜 then s.erase i else s
 
@@ -307,7 +307,7 @@ theorem cmap_card_le (i : α) (𝒜 : Finset (Finset α)) (s : Finset α) :
   · exact card_erase_le
   · exact le_refl _
 
-/-- **Total size of a family of finsets.** The total size `∑ S ∈ 𝒜, #S` of a family. -/
+/-- The total size `∑ S ∈ 𝒜, #S` of a family. -/
 noncomputable def totalSize (𝒜 : Finset (Finset α)) : ℕ := ∑ S ∈ 𝒜, S.card
 
 theorem totalSize_downComp_le (i : α) (𝒜 : Finset (Finset α)) :
@@ -334,7 +334,7 @@ theorem totalSize_downComp_lt (i : α) (𝒜 : Finset (Finset α))
   rw [ite_eq_left ⟨hisin, herasenot⟩]
   exact card_erase_lt_of_mem hisin
 
-/-- **Iterated down-compression reaches a lower set.** Some iterated down-compression of `𝒜` is a lower set. -/
+/-- Some iterated down-compression of `𝒜` is a lower set. -/
 theorem exists_iterDownComp_isLowerSet (𝒜 : Finset (Finset α)) :
     ∃ cs : List α, IsLowerSet ((iterDownComp cs 𝒜) : Set (Finset α)) := by
   generalize hM : totalSize 𝒜 = M

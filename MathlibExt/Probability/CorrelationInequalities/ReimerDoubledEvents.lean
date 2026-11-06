@@ -47,10 +47,10 @@ open ConfigSpace
 
 variable {α : Type*}
 
-/-- **Left copy in the doubled ground set.** The left copy `{inl a}` of `α` in `α ⊕ α`. -/
+/-- The left copy `{inl a}` of `α` in `α ⊕ α`. -/
 def leftBlock : Set (α ⊕ α) := {x | x.isLeft}
 
-/-- **Right copy in the doubled ground set.** The right copy `{inr a}` of `α` in `α ⊕ α`. -/
+/-- The right copy `{inr a}` of `α` in `α ⊕ α`. -/
 def rightBlock : Set (α ⊕ α) := {x | x.isRight}
 
 theorem disjoint_leftBlock_rightBlock : Disjoint (leftBlock (α := α)) (rightBlock (α := α)) := by
@@ -59,16 +59,16 @@ theorem disjoint_leftBlock_rightBlock : Disjoint (leftBlock (α := α)) (rightBl
     simp only [leftBlock, rightBlock, Set.mem_ofPred_eq, Sum.isLeft, Sum.isRight,
       Bool.false_eq_true] at hl hr
 
-/-- **Restriction of a doubled configuration to the left copy.** The restriction of a configuration on `α ⊕ α` to the left copy. -/
+/-- The restriction of a configuration on `α ⊕ α` to the left copy. -/
 def leftCfg (ω : ConfigSpace (α ⊕ α)) : ConfigSpace α := fun a => ω (Sum.inl a)
 
-/-- **Restriction of a doubled configuration to the right copy.** The restriction of a configuration on `α ⊕ α` to the right copy. -/
+/-- The restriction of a configuration on `α ⊕ α` to the right copy. -/
 def rightCfg (ω : ConfigSpace (α ⊕ α)) : ConfigSpace α := fun a => ω (Sum.inr a)
 
-/-- **Event on the left copy of the doubled ground set.** The event on `α ⊕ α` that the left restriction lies in `A`. -/
+/-- The event on `α ⊕ α` that the left restriction lies in `A`. -/
 def leftEvent (A : Set (ConfigSpace α)) : Set (ConfigSpace (α ⊕ α)) := {ω | leftCfg ω ∈ A}
 
-/-- **Event on the right copy of the doubled ground set.** The event on `α ⊕ α` that the right restriction lies in `B`. -/
+/-- The event on `α ⊕ α` that the right restriction lies in `B`. -/
 def rightEvent (B : Set (ConfigSpace α)) : Set (ConfigSpace (α ⊕ α)) := {ω | rightCfg ω ∈ B}
 
 @[simp] lemma mem_leftEvent {A : Set (ConfigSpace α)} {ω : ConfigSpace (α ⊕ α)} :
@@ -119,7 +119,7 @@ section Weighted
 
 variable [Fintype α] [DecidableEq α]
 
-/-- **Doubled coordinate weight.** The coordinate weight `w` on both copies of `α`. -/
+/-- The coordinate weight `w` on both copies of `α`. -/
 def doubleWeight (w : α → Bool → ℝ) : (α ⊕ α) → Bool → ℝ := Sum.elim w w
 
 omit [Fintype α] [DecidableEq α] in
@@ -228,7 +228,7 @@ theorem supportCfg_dbl_mem_rightEvent (ℬ : Finset (Finset α)) (S T : Finset �
     supportCfg (dbl S T) ∈ rightEvent (familyEvent ℬ) ↔ T ∈ ℬ := by
   simp only [mem_rightEvent, mem_familyEvent, rightCfg_supportCfg_dbl, cfgSupport_supportCfg]
 
-/-- **Reimer equality for a left event and a right event.** Reimer's inequality, with equality, for a left event and a right event. -/
+/-- Reimer's inequality, with equality, for a left event and a right event. -/
 theorem reimer_wprob_doubled_split (φ : (α ⊕ α) → Bool → ℝ)
     (hφ1 : ∀ x, φ x false + φ x true = 1) (A B : Set (ConfigSpace α)) :
     wprob φ (disjointOccurrence (leftEvent A) (rightEvent B))
@@ -287,7 +287,7 @@ theorem fmarg_boxDoubled (w : α → Bool → ℝ) (𝒜 ℬ : Finset (Finset α
   intro p _
   rw [fwt_doubleWeight_dbl]
 
-/-- **Weighted disjoint pairs as a doubled-weight probability.** `wdpairs w 𝒜 ℬ` is the doubled-weight probability of `familyEvent (boxDoubled 𝒜 ℬ)`. -/
+/-- `wdpairs w 𝒜 ℬ` is the doubled-weight probability of `familyEvent (boxDoubled 𝒜 ℬ)`. -/
 theorem wprob_familyEvent_boxDoubled_eq_wdpairs (w : α → Bool → ℝ) (𝒜 ℬ : Finset (Finset α)) :
     wprob (doubleWeight w) (familyEvent (boxDoubled 𝒜 ℬ)) = wdpairs w 𝒜 ℬ := by
   rw [← fmarg_eq_wprob_familyEvent, fmarg_boxDoubled]

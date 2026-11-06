@@ -22,7 +22,7 @@ four-point-condition development; it is generic graph theory, so it lives here.
 
 namespace SimpleGraph.Walk
 
-/-- **Concatenation of paths meeting at one endpoint is a path.** Two paths that meet only at their common endpoint `m` concatenate to a path. -/
+/-- Two paths that meet only at their common endpoint `m` concatenate to a path. -/
 theorem isPath_append_of_isPath {V : Type*} {G : SimpleGraph V} {u m v : V}
     {p : G.Walk u m} {q : G.Walk m v} (hp : p.IsPath) (hq : q.IsPath)
     (hi : ∀ a ∈ p.support, a ∈ q.support → a = m) : (p.append q).IsPath := by

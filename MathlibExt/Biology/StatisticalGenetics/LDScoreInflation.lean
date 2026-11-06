@@ -65,10 +65,10 @@ namespace MathlibExt.Biology.StatisticalGenetics.LDScoreInflation
 
 variable {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω} {N M : ℕ}
 
-/-- **Mean LD score.** The mean LD score `ℓ̄ = (1 / M) ∑ j, ℓ j`. -/
+/-- The mean LD score `ℓ̄ = (1 / M) ∑ j, ℓ j`. -/
 noncomputable def meanLDScore (X : Matrix (Fin N) (Fin M) ℝ) : ℝ := (∑ j, ldScore X j) / M
 
-/-- **Polygenic inflation of the mean association statistic.** Polygenic inflation: for a standardized genotype matrix with `N, M ≠ 0`, the mean expected
+/-- Polygenic inflation: for a standardized genotype matrix with `N, M ≠ 0`, the mean expected
 association statistic is `1 - h² + N h² ℓ̄ / M`. -/
 theorem mean_integral_chiSq (D : Model μ N M) (X : Matrix (Fin N) (Fin M) ℝ) (hN : N ≠ 0)
     (hM : M ≠ 0) (hX : IsStandardized X) :
@@ -80,19 +80,19 @@ theorem mean_integral_chiSq (D : Model μ N M) (X : Matrix (Fin N) (Fin M) ℝ) 
   field_simp
   ring
 
-/-- **Phenotype with population stratification.** The phenotype with a stratification shift: `y i = (X β) i + ε i + s * c i`. -/
+/-- The phenotype with a stratification shift: `y i = (X β) i + ε i + s * c i`. -/
 def phenoStrat (D : Model μ N M) (X : Matrix (Fin N) (Fin M) ℝ) (s : ℝ) (c : Fin N → ℝ)
     (i : Fin N) (ω : Ω) : ℝ := D.pheno X i ω + s * c i
 
-/-- **Normalized score under stratification.** The `N`-normalized score of marker `j` under stratification, `X_jᵀ y / N`. -/
+/-- The `N`-normalized score of marker `j` under stratification, `X_jᵀ y / N`. -/
 noncomputable def betaHatStrat (D : Model μ N M) (X : Matrix (Fin N) (Fin M) ℝ) (s : ℝ)
     (c : Fin N → ℝ) (j : Fin M) (ω : Ω) : ℝ := (∑ i, X i j * phenoStrat D X s c i ω) / N
 
-/-- **Association statistic under stratification.** The association statistic `N * β̂ j ^ 2` under stratification. -/
+/-- The association statistic `N * β̂ j ^ 2` under stratification. -/
 noncomputable def chiSqStrat (D : Model μ N M) (X : Matrix (Fin N) (Fin M) ℝ) (s : ℝ)
     (c : Fin N → ℝ) (j : Fin M) (ω : Ω) : ℝ := N * betaHatStrat D X s c j ω ^ 2
 
-/-- **Expected association statistic under stratification.** Stratification inflation: for a probability measure and mean-zero effects and noise,
+/-- Stratification inflation: for a probability measure and mean-zero effects and noise,
 `𝔼[χ² j] = N h² / M * ℓ j + (1 - h²) (∑ i, X i j ^ 2) / N + N s² (X_jᵀ c / N)²`. -/
 theorem integral_chiSqStrat [IsProbabilityMeasure μ] (D : Model μ N M)
     (X : Matrix (Fin N) (Fin M) ℝ) (hβ : ∀ k, ∫ ω, D.beta k ω ∂μ = 0)
@@ -141,7 +141,7 @@ theorem integral_chiSqStrat [IsProbabilityMeasure μ] (D : Model μ N M)
     D.integral_chiSq X j]
   simp
 
-/-- **Expected statistic under stratification for standardized genotypes.** Stratification inflation for a standardized genotype matrix and `N ≠ 0`:
+/-- Stratification inflation for a standardized genotype matrix and `N ≠ 0`:
 `𝔼[χ² j] = N h² / M * ℓ j + (1 - h²) + N s² (X_jᵀ c / N)²`. -/
 theorem integral_chiSqStrat_of_standardized [IsProbabilityMeasure μ] (D : Model μ N M)
     (X : Matrix (Fin N) (Fin M) ℝ) (hN : N ≠ 0) (hX : IsStandardized X)
@@ -151,7 +151,7 @@ theorem integral_chiSqStrat_of_standardized [IsProbabilityMeasure μ] (D : Model
       N * D.h2 / M * ldScore X j + (1 - D.h2) + N * s ^ 2 * ((∑ i, X i j * c i) / N) ^ 2 := by
   rw [integral_chiSqStrat D X hβ hε, (hX j).2, mul_div_cancel_right₀ _ (Nat.cast_ne_zero.mpr hN)]
 
-/-- **LD-score regression with constant stratification.** With a constant stratification term (`s² (X_jᵀ c / N)² = a` for every marker), the expected
+/-- With a constant stratification term (`s² (X_jᵀ c / N)² = a` for every marker), the expected
 statistic is exactly affine in the LD score, with slope `N h² / M` and intercept
 `1 - h² + N a`. -/
 theorem integral_chiSqStrat_of_const [IsProbabilityMeasure μ] (D : Model μ N M)
@@ -162,7 +162,7 @@ theorem integral_chiSqStrat_of_const [IsProbabilityMeasure μ] (D : Model μ N M
   rw [integral_chiSqStrat_of_standardized D X hN hX hβ hε, ← ha j]
   ring
 
-/-- **Mean association statistic with constant stratification.** With a constant stratification term `N a`, the mean expected statistic is
+/-- With a constant stratification term `N a`, the mean expected statistic is
 `N h² ℓ̄ / M + (1 - h² + N a)`. -/
 theorem mean_integral_chiSqStrat_of_const [IsProbabilityMeasure μ] (D : Model μ N M)
     (X : Matrix (Fin N) (Fin M) ℝ) (hN : N ≠ 0) (hM : M ≠ 0) (hX : IsStandardized X)
@@ -176,11 +176,11 @@ theorem mean_integral_chiSqStrat_of_const [IsProbabilityMeasure μ] (D : Model �
   have hM' : (M : ℝ) ≠ 0 := Nat.cast_ne_zero.mpr hM
   field_simp
 
-/-- **Attenuation ratio.** The attenuation ratio `(intercept - 1) / (mean χ² - 1)` of Loh et al. (2018). -/
+/-- The attenuation ratio `(intercept - 1) / (mean χ² - 1)` of Loh et al. (2018). -/
 noncomputable def attenuationRatio (intercept meanChiSq : ℝ) : ℝ :=
   (intercept - 1) / (meanChiSq - 1)
 
-/-- **Attenuation ratio under constant stratification.** With a constant stratification term `N a`, the attenuation ratio of the exact intercept
+/-- With a constant stratification term `N a`, the attenuation ratio of the exact intercept
 `1 - h² + N a` and the mean expected statistic is `(N a - h²) / (N h² ℓ̄ / M + N a - h²)`. -/
 theorem attenuationRatio_of_const [IsProbabilityMeasure μ] (D : Model μ N M)
     (X : Matrix (Fin N) (Fin M) ℝ) (hN : N ≠ 0) (hM : M ≠ 0) (hX : IsStandardized X)
@@ -191,7 +191,7 @@ theorem attenuationRatio_of_const [IsProbabilityMeasure μ] (D : Model μ N M)
   rw [attenuationRatio, mean_integral_chiSqStrat_of_const D X hN hM hX hβ hε s c ha]
   congr 1 <;> ring
 
-/-- **Confounding share of inflation under constant stratification.** With a constant stratification term `N a`, the share of the mean inflation above the exact
+/-- With a constant stratification term `N a`, the share of the mean inflation above the exact
 null level `1 - h²` that is due to stratification is `N a / (N a + N h² ℓ̄ / M)`. -/
 theorem confoundingShare_of_const [IsProbabilityMeasure μ] (D : Model μ N M)
     (X : Matrix (Fin N) (Fin M) ℝ) (hN : N ≠ 0) (hM : M ≠ 0) (hX : IsStandardized X)
@@ -203,7 +203,7 @@ theorem confoundingShare_of_const [IsProbabilityMeasure μ] (D : Model μ N M)
   rw [mean_integral_chiSqStrat_of_const D X hN hM hX hβ hε s c ha]
   congr 1 <;> ring
 
-/-- **Confounding share lies between 0 and 1.** The confounding share `N a / (N a + N h² ℓ̄ / M)` lies in `[0, 1]` when `a`, `h²` and `ℓ̄`
+/-- The confounding share `N a / (N a + N h² ℓ̄ / M)` lies in `[0, 1]` when `a`, `h²` and `ℓ̄`
 are nonnegative (as they are in the model: `a` is a square, `h² ≥ 0` by `Model.h2_nonneg`,
 LD scores are sums of squares). -/
 theorem confoundingShare_mem_Icc {a h2 lbar : ℝ} (ha : 0 ≤ a) (hh : 0 ≤ h2) (hl : 0 ≤ lbar) :

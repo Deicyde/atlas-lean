@@ -32,13 +32,11 @@ open scoped Topology
 namespace Set
 
 /--
-**Partial density.** Let $\beta$ be a preorder in which every set $\{x \in \beta \mid x \le b\}$
-is finite, let $S, A \subseteq \beta$ and $b \in \beta$, and write
-$A_{<b} = \{x \in A \mid x < b\}$. The partial density of $S$ relative to $A$ at $b$ is the
-proportion $\lvert S \cap A_{<b} \rvert / \lvert A_{<b} \rvert$ of elements of $A_{<b}$ that lie
-in $S$, taken to be $0$ when $A_{<b}$ is empty. By default $A = \beta$.
+Given a set `S` and an element `b` in an order `β`, where all intervals bounded above are finite,
+we define the partial density of `S` (relative to a set `A`) to be the proportion of elements in
+`{x ∈ A | x < b}` that lie in `S ∩ A`.
 
-Source: inspired by https://github.com/b-mehta/unit-fractions
+This definition was inspired from https://github.com/b-mehta/unit-fractions
 -/
 @[inline]
 noncomputable abbrev partialDensity {β : Type*} [Preorder β] [LocallyFiniteOrderBot β]
@@ -51,20 +49,18 @@ theorem partialDensity_le_one {β : Type*} [Preorder β] [LocallyFiniteOrderBot 
   exact mod_cast Set.ncard_le_ncard <| Set.inter_subset_inter_left _ inter_subset_right
 
 /--
-**Upper density.** Let $\beta$ be a preorder in which every set $\{x \in \beta \mid x \le b\}$
-is finite, and let $S, A \subseteq \beta$. The upper density of $S$ relative to $A$ is the limit
-superior, as $b \to \infty$ in $\beta$, of the partial densities of $S$ relative to $A$ at $b$.
-By default $A = \beta$.
+Given a set `S` in an order `β`, where all intervals bounded above are finite, we define the upper
+density of `S` (relative to a set `A`) to be the limsup of the partial densities of `S`
+(relative to `A`) for `b → ∞`.
 -/
 noncomputable def upperDensity {β : Type*} [Preorder β] [LocallyFiniteOrderBot β]
     (S : Set β) (A : Set β := Set.univ) : ℝ :=
   atTop.limsup fun (b : β) ↦ S.partialDensity A b
 
 /--
-**Lower density.** Let $\beta$ be a preorder in which every set $\{x \in \beta \mid x \le b\}$
-is finite, and let $S, A \subseteq \beta$. The lower density of $S$ relative to $A$ is the limit
-inferior, as $b \to \infty$ in $\beta$, of the partial densities of $S$ relative to $A$ at $b$.
-By default $A = \beta$.
+Given a set `S` in an order `β`, where all intervals bounded above are finite, we define the lower
+density of `S` (relative to a set `A`) to be the liminf of the partial densities of `S`
+(relative to `A`) for `b → ∞`.
 -/
 noncomputable def lowerDensity {β : Type*} [Preorder β] [LocallyFiniteOrderBot β]
     (S : Set β) (A : Set β := Set.univ) : ℝ :=
@@ -85,43 +81,36 @@ theorem lowerDensity_nonneg {β : Type*} [Preorder β] [LocallyFiniteOrderBot β
     (Real.sSup_of_not_bddAbove · |>.ge)
 
 /--
-**Density of a set.** Let $\beta$ be a preorder in which every set
-$\{x \in \beta \mid x \le b\}$ is finite, let $S, A \subseteq \beta$ and $\alpha \in \mathbb{R}$,
-and write $\beta_{<b} = \{x \in \beta \mid x < b\}$. The set $S$ has density $\alpha$ relative to
-$A$ if the partial density
-$\lvert S \cap A \cap \beta_{<b} \rvert / \lvert A \cap \beta_{<b} \rvert$, taken to be $0$ when
-the denominator is $0$, tends to $\alpha$ as $b \to \infty$ in $\beta$.
+A set `S` in an order `β` where all intervals bounded above are finite is said to have
+density `α : ℝ` (relative to a set `A`) if the proportion of `x ∈ S` such that `x < n`
+in `A` tends to `α` as `n → ∞`.
 
-By default $A = \beta$; for $\beta = \mathbb{N}$ this is the natural density of $S$.
+When `β = ℕ` this by default defines the natural density of a set
+(i.e., relative to all of `ℕ`).
 -/
 def HasDensity {β : Type*} [Preorder β] [LocallyFiniteOrderBot β]
     (S : Set β) (α : ℝ) (A : Set β := Set.univ) : Prop :=
   Tendsto (fun (b : β) => S.partialDensity A b) atTop (𝓝 α)
 
 /--
-**Positive density.** Let $\beta$ be a preorder in which every set
-$\{x \in \beta \mid x \le b\}$ is finite, and let $S, A \subseteq \beta$. The set $S$ has positive
-density relative to $A$ if there is a real number $\alpha > 0$ such that $S$ has density $\alpha$
-relative to $A$. By default $A = \beta$.
+A set `S` in an order `β` where all intervals bounded above are finite is said to have
+positive density (relative to a set `A`) if there exists a positive `α : ℝ` such that
+`S` has density `α` (relative to a set `A`).
 -/
 def HasPosDensity {β : Type*} [Preorder β] [LocallyFiniteOrderBot β]
     (S : Set β) (A : Set β := Set.univ) : Prop :=
   ∃ α > 0, S.HasDensity α A
 
 /--
-**Two-sided partial density.** For a set $S$ of integers and a natural number $N$, the
-two-sided partial natural density of $S$ at $N$ is $\lvert S \cap [-N, N] \rvert / (2N + 1)$,
-where $[-N, N]$ is the set of integers $m$ with $-N \le m \le N$.
+The two-sided partial natural density of a set of integers, counted inside the interval
+`[-N, N]`.
 -/
 noncomputable def intPartialDensity (S : Set ℤ) (N : ℕ) : ℝ :=
   open scoped Classical in
   (((Finset.Icc (-(N : ℤ)) (N : ℤ)).filter (fun m => m ∈ S)).card : ℝ) /
     (2 * (N : ℝ) + 1)
 
-/-- **Two-sided natural density.** A set $S$ of integers has two-sided natural density
-$\alpha \in \mathbb{R}$ if $\lvert S \cap [-N, N] \rvert / (2N + 1)$ tends to $\alpha$ as the
-natural number $N$ tends to infinity, where $[-N, N]$ is the set of integers $m$ with
-$-N \le m \le N$. -/
+/-- A set of integers has two-sided natural density `α`. -/
 def HasIntDensity (S : Set ℤ) (α : ℝ) : Prop :=
   Tendsto (fun N : ℕ => S.intPartialDensity N) atTop (𝓝 α)
 
@@ -141,9 +130,8 @@ namespace HasDensity
 
 -- TODO(mercuris): generalise these to non-univ `A`
 
-/-- **The whole order has density one.** Let $\beta$ be a partial order with a least element
-and at least two elements, in which every closed interval $[a, b]$ is finite. Then the set of
-all elements of $\beta$ has density $1$ (relative to all of $\beta$). -/
+/-- In a non-trivial partial order with a least element, the set of all
+elements has density one. -/
 @[simp]
 theorem univ {β : Type*} [PartialOrder β] [LocallyFiniteOrder β] [OrderBot β] [Nontrivial β] :
     (@Set.univ β).HasDensity 1 := by
@@ -182,8 +170,7 @@ namespace Nat
 open Set
 
 /--
-**Natural density of the even numbers.** The set of even natural numbers has natural
-density $1/2$.
+The natural density of the set of even numbers is `1 / 2`.
 -/
 theorem hasDensity_even : {n : ℕ | Even n}.HasDensity (1 / 2) := by
   simp only [HasDensity, partialDensity, inter_univ, univ_inter, ncard_Iio_nat, one_div]
@@ -205,8 +192,7 @@ theorem hasDensity_even : {n : ℕ | Even n}.HasDensity (1 / 2) := by
   simpa using Tendsto.mul_const _ <|
     Tendsto.congr' (eventually_atTop.2 ⟨1, fun k hk => by field_simp⟩) h
 
-/-- **Finite sets have natural density zero.** Every finite set of natural numbers has natural
-density $0$. -/
+/-- A finite set has natural density zero. -/
 theorem hasDensity_zero_of_finite {S : Set ℕ} (h : S.Finite) : S.HasDensity 0 := by
   simp only [HasDensity, partialDensity, inter_univ, univ_inter, ncard_Iio_nat]
   have (n : ℕ) : ((S ∩ Set.Iio n).ncard : ℝ) / n ≤ S.ncard / n := by
@@ -217,8 +203,7 @@ theorem hasDensity_zero_of_finite {S : Set ℕ} (h : S.Finite) : S.HasDensity 0 
     (tendsto_const_div_atTop_nhds_zero_nat _)
     (fun _ => div_nonneg (cast_nonneg _) (cast_nonneg _)) this
 
-/-- **Sets of nonzero natural density are infinite.** If a set $S$ of natural numbers has
-natural density $\alpha$ with $\alpha \neq 0$, then $S$ is infinite. -/
+/-- A set of positive natural density is infinite. -/
 theorem infinite_of_hasDensity_pos {S : Set ℕ} {α : ℝ} (h : S.HasDensity α) (hα : α ≠ 0) :
     S.Infinite :=
   mt hasDensity_zero_of_finite fun h' => hα (tendsto_nhds_unique h h')
@@ -232,14 +217,10 @@ section LogarithmicDensity
 open Finset Real
 
 /--
-**Logarithmic density.** A set $A$ of natural numbers has logarithmic density
-$d \in \mathbb{R}$ if
-$\frac{1}{\log n} \sum_{k \in A,\, k \le n} \frac{1}{k}$
-tends to $d$ as $n \to \infty$, where $\log$ is the natural logarithm, the term $1/k$ for $k = 0$
-is taken to be $0$, and the whole expression is taken to be $0$ when $\log n = 0$.
-
-Logarithmic density is a weaker notion than natural density: if a set has natural density $d$,
-then it also has logarithmic density $d$, but the converse is false.
+A set `A` of natural numbers has logarithmic density `d` if the sequence
+$(1 / \log n) \cdot \sum_{k \in A, k \le n} (1/k)$ converges to `d`.
+Logarithmic density is a weaker notion than natural density: if a set has natural density `d`,
+then it also has logarithmic density `d`, but the converse is false.
 -/
 def Set.HasLogDensity (A : Set ℕ) (d : ℝ) : Prop :=
   open scoped Classical in

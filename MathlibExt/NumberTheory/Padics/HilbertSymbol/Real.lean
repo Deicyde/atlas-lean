@@ -24,33 +24,28 @@ set_option autoImplicit false
 
 @[expose] public section
 
-/-- **Real Hilbert symbol.** For nonzero real numbers $a$ and $b$, the real Hilbert symbol of $a$
-and $b$ is the integer $1$ if there are real numbers $x, y$ with $a x^2 + b y^2 = 1$, and the
-integer $-1$ otherwise. -/
+/-- The real Hilbert symbol, defined by solvability of
+`a * x ^ 2 + b * y ^ 2 = 1` over `ℝ`. -/
 noncomputable def realHilbertSymbol (a b : ℝˣ) : ℤ :=
   hilbertSymbol ℝ a b
 
 namespace realHilbertSymbol
 
-/-- **Real Hilbert symbol equal to $1$.** For nonzero real numbers $a$ and $b$, the real Hilbert
-symbol of $a$ and $b$ equals $1$ if and only if there are real numbers $x, y$ with
-$a x^2 + b y^2 = 1$. -/
+/-- The real Hilbert symbol is one exactly when its defining equation is solvable. -/
 @[simp]
 theorem eq_one_iff {a b : ℝˣ} :
     realHilbertSymbol a b = 1 ↔
       ∃ x y : ℝ, (a : ℝ) * x ^ 2 + (b : ℝ) * y ^ 2 = 1 :=
   hilbertSymbol.eq_one_iff
 
-/-- **Real Hilbert symbol equal to $-1$.** For nonzero real numbers $a$ and $b$, the real Hilbert
-symbol of $a$ and $b$ equals $-1$ if and only if there are no real numbers $x, y$ with
-$a x^2 + b y^2 = 1$. -/
+/-- The real Hilbert symbol is negative one exactly when its defining equation is not
+solvable. -/
 theorem eq_neg_one_iff {a b : ℝˣ} :
     realHilbertSymbol a b = -1 ↔
       ¬∃ x y : ℝ, (a : ℝ) * x ^ 2 + (b : ℝ) * y ^ 2 = 1 :=
   hilbertSymbol.eq_neg_one_iff
 
-/-- **Sign rule for the real Hilbert symbol.** For nonzero real numbers $a$ and $b$, the real
-Hilbert symbol of $a$ and $b$ equals $-1$ if and only if $a < 0$ and $b < 0$. -/
+/-- The real Hilbert symbol is negative one exactly when both entries are negative. -/
 theorem eq_neg_one_iff_both_neg {a b : ℝˣ} :
     realHilbertSymbol a b = -1 ↔ (a : ℝ) < 0 ∧ (b : ℝ) < 0 := by
   have key : ∀ {c d : ℝˣ}, 0 < (c : ℝ) →
@@ -85,8 +80,7 @@ theorem eq_neg_one_iff_both_neg {a b : ℝˣ} :
       mul_nonpos_of_nonpos_of_nonneg hb.le (sq_nonneg y)
     linarith
 
-/-- **The real Hilbert symbol is $\pm 1$.** For nonzero real numbers $a$ and $b$, the real Hilbert
-symbol of $a$ and $b$ equals $1$ or $-1$. -/
+/-- The real Hilbert symbol takes only the values one and negative one. -/
 theorem eq_one_or_neg_one (a b : ℝˣ) :
     realHilbertSymbol a b = 1 ∨ realHilbertSymbol a b = -1 :=
   hilbertSymbol.eq_one_or_neg_one a b

@@ -61,11 +61,7 @@ open scoped ContinuousMap
 variable {X : Type*} [TopologicalSpace X] [CompactSpace X]
 variable {𝕜 : Type*} [RCLike 𝕜]
 
-/-- **The multiplication operator on continuous functions.** Let $X$ be a compact topological
-space, let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, and let $C(X, \mathbb{K})$ be the Banach
-algebra of continuous functions $X \to \mathbb{K}$ with the supremum norm. For
-$\varphi \in C(X, \mathbb{K})$, the multiplication operator $M_\varphi$ is the bounded linear
-operator on $C(X, \mathbb{K})$ given by $M_\varphi f = \varphi f$. -/
+/-- The multiplication operator `M_φ` on `C(X, 𝕜)`: `M_φ f = φ * f`. -/
 noncomputable def mulCLM (φ : C(X, 𝕜)) : C(X, 𝕜) →L[𝕜] C(X, 𝕜) :=
   ContinuousLinearMap.mul 𝕜 C(X, 𝕜) φ
 
@@ -85,10 +81,7 @@ theorem mulCLM_sub (φ ψ : C(X, 𝕜)) : mulCLM (φ - ψ) = mulCLM φ - mulCLM 
   ext f
   simp [mulCLM_apply, sub_mul]
 
-/-- **Multiplication by a constant on continuous functions.** Let $X$ be a compact topological
-space, let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, and let $\mu \in \mathbb{K}$. The
-multiplication operator on $C(X, \mathbb{K})$ by the constant function with value $\mu$ equals
-$\mu$ times the identity operator. -/
+/-- Multiplication by a scalar constant is scalar multiplication by that scalar. -/
 theorem mulCLM_algebraMap (μ : 𝕜) :
     mulCLM (algebraMap 𝕜 C(X, 𝕜) μ) = algebraMap 𝕜 (C(X, 𝕜) →L[𝕜] C(X, 𝕜)) μ := by
   ext f x
@@ -101,10 +94,7 @@ private theorem isUnit_mulCLM_iff_isUnit (φ : C(X, 𝕜)) :
   change IsUnit (Algebra.lmul 𝕜 C(X, 𝕜) φ) ↔ IsUnit φ
   exact Algebra.lmul_isUnit_iff
 
-/-- **Spectrum of a multiplication operator.** Let $X$ be a compact topological space, let
-$\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, and let $\varphi \in C(X, \mathbb{K})$. The spectrum
-of the multiplication operator $M_\varphi f = \varphi f$, as an element of the algebra of bounded
-linear operators on $C(X, \mathbb{K})$, is the range $\varphi(X)$ of $\varphi$. -/
+/-- The spectrum of the multiplication operator is the range of the multiplier. -/
 theorem spectrum_mulCLM (φ : C(X, 𝕜)) : spectrum 𝕜 (mulCLM φ) = Set.range φ := by
   rw [← ContinuousMap.spectrum_eq_range φ]
   ext μ
@@ -114,19 +104,14 @@ theorem spectrum_mulCLM (φ : C(X, 𝕜)) : spectrum 𝕜 (mulCLM φ) = Set.rang
     rw [← mulCLM_algebraMap, mulCLM_sub]
   rw [hdecomp, isUnit_mulCLM_iff_isUnit]
 
-/-- **Invertibility of a multiplication operator.** Let $X$ be a compact topological space, let
-$\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, and let $\varphi \in C(X, \mathbb{K})$. The
-multiplication operator $M_\varphi f = \varphi f$ is invertible in the algebra of bounded linear
-operators on $C(X, \mathbb{K})$ if and only if $\varphi(x) \neq 0$ for every $x \in X$. -/
+/-- The multiplication operator is invertible exactly when the multiplier
+vanishes nowhere. -/
 theorem isUnit_mulCLM_iff (φ : C(X, 𝕜)) :
     IsUnit (mulCLM φ) ↔ ∀ x : X, φ x ≠ 0 :=
   (isUnit_mulCLM_iff_isUnit φ).trans (ContinuousMap.isUnit_iff_forall_ne_zero φ)
 
-/-- **Eigenvalues of a multiplication operator.** Let $X$ be a compact Hausdorff space, let
-$\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let $\varphi \in C(X, \mathbb{K})$ and let
-$\mu \in \mathbb{K}$. Then $\mu$ is an eigenvalue of the multiplication operator
-$M_\varphi f = \varphi f$ on $C(X, \mathbb{K})$ if and only if the level set
-$\varphi^{-1}(\{\mu\})$ has nonempty interior. -/
+/-- `μ` is an eigenvalue of the multiplication operator exactly when `φ`
+takes the value `μ` on a set with nonempty interior. -/
 theorem hasEigenvalue_mulCLM_iff [T2Space X] (φ : C(X, 𝕜)) (μ : 𝕜) :
     Module.End.HasEigenvalue (mulCLM φ : C(X, 𝕜) →ₗ[𝕜] C(X, 𝕜)) μ ↔
       (interior (φ ⁻¹' {μ})).Nonempty := by

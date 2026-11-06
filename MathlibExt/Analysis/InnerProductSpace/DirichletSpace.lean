@@ -89,7 +89,7 @@ open Filter Topology Set
 open scoped _root_.lp _root_.InnerProduct _root_.InnerProductSpace ENNReal
 open scoped ComplexInnerProductSpace
 
-/-- **Closed form of $\sum r^n/(n+1)$ for real $0<r<1$.** The power series `∑' n, rⁿ / (n + 1)` sums to `-log (1 - r) / r`
+/-- The power series `∑' n, rⁿ / (n + 1)` sums to `-log (1 - r) / r`
 for `0 < r < 1`: factor `1 / r` out of the logarithm series. -/
 theorem hasSum_div_succ_pow_real {r : ℝ} (h0 : 0 < r) (h1 : r < 1) :
     HasSum (fun n : ℕ => r ^ n / ((n : ℝ) + 1)) (-Real.log (1 - r) / r) := by
@@ -103,7 +103,7 @@ theorem hasSum_div_succ_pow_real {r : ℝ} (h0 : 0 < r) (h1 : r < 1) :
   rw [pow_succ]
   field_simp
 
-/-- **Closed form of $\sum u^n/(n+1)$ for complex $u$ in the unit disc.** The complex form: `∑' n, uⁿ / (n + 1)` sums to `-log (1 - u) / u`
+/-- The complex form: `∑' n, uⁿ / (n + 1)` sums to `-log (1 - u) / u`
 for `u ≠ 0` in the unit disc. -/
 theorem hasSum_div_succ_pow_complex {u : ℂ} (h0 : u ≠ 0) (h1 : ‖u‖ < 1) :
     HasSum (fun n : ℕ => u ^ n / ((n : ℂ) + 1)) (-Complex.log (1 - u) / u) := by
@@ -117,7 +117,7 @@ theorem hasSum_div_succ_pow_complex {u : ℂ} (h0 : u ≠ 0) (h1 : ‖u‖ < 1) 
   rw [pow_succ]
   field_simp
 
-/-- **Squared norms of the Dirichlet kernel coefficients.** The squared norms of the Dirichlet kernel coefficients are
+/-- The squared norms of the Dirichlet kernel coefficients are
 `‖z‖ ^ (2 * n) / (n + 1)`. -/
 theorem norm_sq_dirichlet_coeff (z : ℂ) (n : ℕ) :
     ‖(starRingEnd ℂ z) ^ n / (Real.sqrt ((n : ℝ) + 1) : ℂ)‖ ^ (2 : ℝ) =
@@ -126,7 +126,7 @@ theorem norm_sq_dirichlet_coeff (z : ℂ) (n : ℕ) :
     Real.norm_eq_abs, abs_of_nonneg (Real.sqrt_nonneg _),
     Real.sq_sqrt (by positivity : (0 : ℝ) ≤ (n : ℝ) + 1), ← pow_mul, mul_comm n 2, pow_mul]
 
-/-- **Square-summability of the Dirichlet kernel coefficients.** The Dirichlet kernel coefficients are summable in the `ℓ²` sense:
+/-- The Dirichlet kernel coefficients are summable in the `ℓ²` sense:
 `∑' n, (‖z‖²)ⁿ / (n + 1)` converges, by comparison with the geometric series. -/
 theorem summable_dirichletKernel_terms (z : ℂ) (hz : ‖z‖ < 1) :
     Summable (fun n : ℕ => (‖z‖ ^ 2) ^ n / ((n : ℝ) + 1)) := by
@@ -139,7 +139,7 @@ theorem summable_dirichletKernel_terms (z : ℂ) (hz : ‖z‖ < 1) :
       linarith))
   exact (hasSum_geometric_of_lt_one (sq_nonneg _) h1).summable
 
-/-- **Dirichlet kernel coefficients lie in ℓ².** The Dirichlet kernel coefficients are in `ℓ²` when `z` is in the disc. -/
+/-- The Dirichlet kernel coefficients are in `ℓ²` when `z` is in the disc. -/
 theorem memℓp_dirichletKernel (z : ℂ) (hz : ‖z‖ < 1) :
     Memℓp (fun n : ℕ => (starRingEnd ℂ z) ^ n / (Real.sqrt ((n : ℝ) + 1) : ℂ)) 2 := by
   apply memℓp_gen
@@ -147,7 +147,7 @@ theorem memℓp_dirichletKernel (z : ℂ) (hz : ‖z‖ < 1) :
   simp only [h2, norm_sq_dirichlet_coeff]
   exact summable_dirichletKernel_terms z hz
 
-/-- **Reproducing kernel of the Dirichlet space.** The **Dirichlet kernel** at `z`: the `ℓ²(ℕ, ℂ)` sequence with
+/-- The **Dirichlet kernel** at `z`: the `ℓ²(ℕ, ℂ)` sequence with
 coefficients `(conj z)ⁿ / √(n + 1)`. -/
 noncomputable def dirichletKernel (z : ℂ) (hz : ‖z‖ < 1) : ℓ²(ℕ, ℂ) :=
   ⟨fun n => (starRingEnd ℂ z) ^ n / (Real.sqrt ((n : ℝ) + 1) : ℂ),
@@ -158,7 +158,7 @@ noncomputable def dirichletKernel (z : ℂ) (hz : ‖z‖ < 1) : ℓ²(ℕ, ℂ)
       (starRingEnd ℂ z) ^ n / (Real.sqrt ((n : ℝ) + 1) : ℂ) :=
   rfl
 
-/-- **Dirichlet kernel at the origin is the first basis vector.** The Dirichlet kernel at `0` is the first standard basis vector. -/
+/-- The Dirichlet kernel at `0` is the first standard basis vector. -/
 theorem dirichletKernel_zero (hz : ‖(0 : ℂ)‖ < 1) :
     dirichletKernel 0 hz = lp.single 2 0 (1 : ℂ) := by
   apply lp.ext
@@ -170,7 +170,7 @@ theorem dirichletKernel_zero (hz : ‖(0 : ℂ)‖ < 1) :
   · rw [Pi.single_eq_of_ne hn, map_zero]
     simp [zero_pow hn]
 
-/-- **Squared norm of the Dirichlet kernel away from the origin.** The squared norm of the Dirichlet kernel is `-log (1 - ‖z‖²) / ‖z‖²`. -/
+/-- The squared norm of the Dirichlet kernel is `-log (1 - ‖z‖²) / ‖z‖²`. -/
 theorem norm_sq_dirichletKernel_of_ne_zero (z : ℂ) (hz : ‖z‖ < 1) (h0 : z ≠ 0) :
     ‖dirichletKernel z hz‖ ^ 2 = -Real.log (1 - ‖z‖ ^ 2) / ‖z‖ ^ 2 := by
   have hr : 0 < ‖z‖ ^ 2 := pow_pos (norm_pos_iff.mpr h0) 2
@@ -187,23 +187,23 @@ theorem norm_sq_dirichletKernel_of_ne_zero (z : ℂ) (hz : ‖z‖ < 1) (h0 : z 
   rw [h2', Real.rpow_two] at hpow
   exact hpow
 
-/-- **Squared norm of the Dirichlet kernel at the origin.** The squared norm of the Dirichlet kernel at `0` is `1`. -/
+/-- The squared norm of the Dirichlet kernel at `0` is `1`. -/
 theorem norm_sq_dirichletKernel_zero (hz : ‖(0 : ℂ)‖ < 1) :
     ‖dirichletKernel 0 hz‖ ^ 2 = 1 := by
   rw [dirichletKernel_zero, lp.norm_single (by simp), norm_one]
   norm_num
 
-/-- **Norm of the Dirichlet kernel away from the origin.** The norm of the Dirichlet kernel is `√(-log (1 - ‖z‖²) / ‖z‖²)`. -/
+/-- The norm of the Dirichlet kernel is `√(-log (1 - ‖z‖²) / ‖z‖²)`. -/
 theorem norm_dirichletKernel_of_ne_zero (z : ℂ) (hz : ‖z‖ < 1) (h0 : z ≠ 0) :
     ‖dirichletKernel z hz‖ = Real.sqrt (-Real.log (1 - ‖z‖ ^ 2) / ‖z‖ ^ 2) := by
   rw [← norm_sq_dirichletKernel_of_ne_zero z hz h0, Real.sqrt_sq (norm_nonneg _)]
 
-/-- **Norm of the Dirichlet kernel at the origin.** The norm of the Dirichlet kernel at `0` is `1`. -/
+/-- The norm of the Dirichlet kernel at `0` is `1`. -/
 theorem norm_dirichletKernel_zero (hz : ‖(0 : ℂ)‖ < 1) :
     ‖dirichletKernel 0 hz‖ = 1 := by
   rw [dirichletKernel_zero, lp.norm_single (by simp), norm_one]
 
-/-- **Dirichlet kernel norm is bounded by the Szegő kernel norm.** The Dirichlet kernel norm is bounded by the Hardy kernel norm:
+/-- The Dirichlet kernel norm is bounded by the Hardy kernel norm:
 `‖k_z‖² ≤ 1 / (1 - ‖z‖²)`, via `log x ≤ x - 1` at `x = (1 - ‖z‖²)⁻¹`. -/
 theorem norm_sq_dirichletKernel_le_inv (z : ℂ) (hz : ‖z‖ < 1) :
     ‖dirichletKernel z hz‖ ^ 2 ≤ 1 / (1 - ‖z‖ ^ 2) := by
@@ -229,11 +229,11 @@ theorem norm_sq_dirichletKernel_le_inv (z : ℂ) (hz : ‖z‖ < 1) :
     rw [div_le_iff₀ hr, h2]
     exact hlog
 
-/-- **Point evaluation on the Dirichlet space.** Point evaluation on `𝒟(𝔻)`: the inner product with the Dirichlet kernel. -/
+/-- Point evaluation on `𝒟(𝔻)`: the inner product with the Dirichlet kernel. -/
 noncomputable def dirichletEval (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) : ℂ :=
   ⟪dirichletKernel z hz, a⟫
 
-/-- **Dirichlet-space point evaluation as a Taylor series.** Point evaluation is the Taylor series `∑' n, a n * zⁿ / √(n + 1)`. -/
+/-- Point evaluation is the Taylor series `∑' n, a n * zⁿ / √(n + 1)`. -/
 theorem dirichletEval_eq_tsum (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     dirichletEval z hz a = ∑' n, a n * z ^ n / (Real.sqrt ((n : ℝ) + 1) : ℂ) := by
   unfold dirichletEval
@@ -244,7 +244,7 @@ theorem dirichletEval_eq_tsum (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ))
     Complex.conj_ofReal]
   ring
 
-/-- **Absolute convergence of Taylor series in the Dirichlet space.** The Taylor series of a `𝒟` function converges absolutely at every
+/-- The Taylor series of a `𝒟` function converges absolutely at every
 point of the disc. -/
 theorem summable_dirichletEval_terms (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     Summable (fun n => a n * z ^ n / (Real.sqrt ((n : ℝ) + 1) : ℂ)) := by
@@ -255,33 +255,33 @@ theorem summable_dirichletEval_terms (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ
     Complex.conj_ofReal]
   ring
 
-/-- **Point evaluation as a bounded functional on the Dirichlet space.** Point evaluation as a bounded linear functional on `𝒟(𝔻)`. -/
+/-- Point evaluation as a bounded linear functional on `𝒟(𝔻)`. -/
 noncomputable def dirichletEvalCLM (z : ℂ) (hz : ‖z‖ < 1) : ℓ²(ℕ, ℂ) →L[ℂ] ℂ :=
   innerSL ℂ (dirichletKernel z hz)
 
-/-- **Reproducing property of the Dirichlet kernel.** The bounded point-evaluation functional acts by the inner product
+/-- The bounded point-evaluation functional acts by the inner product
 with the Dirichlet kernel. -/
 theorem dirichletEvalCLM_apply (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     dirichletEvalCLM z hz a = dirichletEval z hz a :=
   rfl
 
-/-- **Norm of Dirichlet-space point evaluation equals the kernel norm.** The operator norm of point evaluation is the norm of the kernel. -/
+/-- The operator norm of point evaluation is the norm of the kernel. -/
 theorem norm_dirichletEvalCLM (z : ℂ) (hz : ‖z‖ < 1) :
     ‖dirichletEvalCLM z hz‖ = ‖dirichletKernel z hz‖ := by
   show ‖innerSL ℂ (dirichletKernel z hz)‖ = ‖dirichletKernel z hz‖
   rw [innerSL_apply_norm]
 
-/-- **Closed-form norm of Dirichlet-space point evaluation.** The operator norm of point evaluation is `√(-log (1 - ‖z‖²) / ‖z‖²)`. -/
+/-- The operator norm of point evaluation is `√(-log (1 - ‖z‖²) / ‖z‖²)`. -/
 theorem norm_dirichletEvalCLM_of_ne_zero (z : ℂ) (hz : ‖z‖ < 1) (h0 : z ≠ 0) :
     ‖dirichletEvalCLM z hz‖ = Real.sqrt (-Real.log (1 - ‖z‖ ^ 2) / ‖z‖ ^ 2) := by
   rw [norm_dirichletEvalCLM, norm_dirichletKernel_of_ne_zero z hz h0]
 
-/-- **Norm of Dirichlet-space point evaluation at the origin.** The operator norm of point evaluation at `0` is `1`. -/
+/-- The operator norm of point evaluation at `0` is `1`. -/
 theorem norm_dirichletEvalCLM_zero (hz : ‖(0 : ℂ)‖ < 1) :
     ‖dirichletEvalCLM 0 hz‖ = 1 := by
   rw [norm_dirichletEvalCLM, norm_dirichletKernel_zero]
 
-/-- **Pointwise bound for Dirichlet-space functions.** The pointwise bound for `𝒟` functions: `‖f(z)‖ ≤ ‖f‖ * ‖k_z‖`. -/
+/-- The pointwise bound for `𝒟` functions: `‖f(z)‖ ≤ ‖f‖ * ‖k_z‖`. -/
 theorem norm_dirichletEval_le (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     ‖dirichletEval z hz a‖ ≤ ‖a‖ * ‖dirichletKernel z hz‖ := by
   calc ‖dirichletEval z hz a‖ = ‖dirichletEvalCLM z hz a‖ := by
@@ -291,14 +291,14 @@ theorem norm_dirichletEval_le (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ))
         rw [norm_dirichletEvalCLM]
         ring
 
-/-- **Dirichlet-space evaluation at the origin is the constant coefficient.** Evaluation at `0` is the constant Taylor coefficient. -/
+/-- Evaluation at `0` is the constant Taylor coefficient. -/
 theorem dirichletEval_zero (a : ℓ²(ℕ, ℂ)) (hz : ‖(0 : ℂ)‖ < 1) :
     dirichletEval 0 hz a = a 0 := by
   unfold dirichletEval
   rw [dirichletKernel_zero hz, lp.inner_single_left, RCLike.inner_apply']
   simp
 
-/-- **Dirichlet-space evaluation of a single monomial.** Evaluation of a monomial `c * zⁿ / √(n + 1)` (a single coefficient). -/
+/-- Evaluation of a monomial `c * zⁿ / √(n + 1)` (a single coefficient). -/
 theorem dirichletEval_single (z : ℂ) (hz : ‖z‖ < 1) (n : ℕ) (c : ℂ) :
     dirichletEval z hz (lp.single 2 n c) =
       c * z ^ n / (Real.sqrt ((n : ℝ) + 1) : ℂ) := by
@@ -307,13 +307,13 @@ theorem dirichletEval_single (z : ℂ) (hz : ‖z‖ < 1) (n : ℕ) (c : ℂ) :
     map_div₀, map_pow, RCLike.conj_conj, Complex.conj_ofReal]
   ring
 
-/-- **Conjugate reproducing property of the Dirichlet kernel.** The reproducing property in the other order: `⟪a, k_z⟫ = conj (f(z))`. -/
+/-- The reproducing property in the other order: `⟪a, k_z⟫ = conj (f(z))`. -/
 theorem inner_dirichletKernel_right (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     ⟪a, dirichletKernel z hz⟫ = (starRingEnd ℂ) (dirichletEval z hz a) := by
   unfold dirichletEval
   rw [← inner_conj_symm]
 
-/-- **Inner product of two Dirichlet kernels as a power series.** The inner product of two Dirichlet kernels is the power series
+/-- The inner product of two Dirichlet kernels is the power series
 `∑' n, (z * conj w)ⁿ / (n + 1)`. -/
 theorem inner_dirichletKernel_dirichletKernel (z : ℂ) (hz : ‖z‖ < 1) (w : ℂ)
     (hw : ‖w‖ < 1) :
@@ -333,7 +333,7 @@ theorem inner_dirichletKernel_dirichletKernel (z : ℂ) (hz : ‖z‖ < 1) (w : 
     rw [div_mul_div_comm, ← sq, hsq]
   simp only [hterm]
 
-/-- **Logarithmic formula for the inner product of Dirichlet kernels.** The inner product of two Dirichlet kernels is the Dirichlet kernel
+/-- The inner product of two Dirichlet kernels is the Dirichlet kernel
 function `-log (1 - z * conj w) / (z * conj w)`. -/
 theorem inner_dirichletKernel_dirichletKernel_eq_log (z : ℂ) (hz : ‖z‖ < 1) (w : ℂ)
     (hw : ‖w‖ < 1) (h0 : z * (starRingEnd ℂ w) ≠ 0) :
@@ -347,7 +347,7 @@ theorem inner_dirichletKernel_dirichletKernel_eq_log (z : ℂ) (hz : ‖z‖ < 1
       _ = 1 := one_mul 1
   exact (hasSum_div_succ_pow_complex h0 hnorm).tsum_eq
 
-/-- **Dirichlet kernel evaluated at its own point.** Evaluation of the kernel at its own point: `f_z(k_z) = ‖k_z‖²`. -/
+/-- Evaluation of the kernel at its own point: `f_z(k_z) = ‖k_z‖²`. -/
 theorem dirichletEval_dirichletKernel (z : ℂ) (hz : ‖z‖ < 1) :
     dirichletEval z hz (dirichletKernel z hz) =
       ((‖dirichletKernel z hz‖ ^ 2 : ℝ) : ℂ) := by
@@ -356,7 +356,7 @@ theorem dirichletEval_dirichletKernel (z : ℂ) (hz : ‖z‖ < 1) :
   push_cast
   rfl
 
-/-- **Sharpness of the Dirichlet-space pointwise bound.** Evaluation of the kernel at its own point, in closed form:
+/-- Evaluation of the kernel at its own point, in closed form:
 `f_z(k_z) = -log (1 - ‖z‖²) / ‖z‖²`, so the pointwise bound is sharp. -/
 theorem dirichletEval_dirichletKernel_of_ne_zero (z : ℂ) (hz : ‖z‖ < 1) (h0 : z ≠ 0) :
     dirichletEval z hz (dirichletKernel z hz) =

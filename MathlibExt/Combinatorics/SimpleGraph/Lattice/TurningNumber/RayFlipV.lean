@@ -37,12 +37,12 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind StatMech.Ons
 
 variable {n : ℕ} [NeZero n]
 
-/-- **Horizontal steps on a unit segment.** The horizontal steps of the walk on the segment `[a, a + 1] × {b}`. -/
+/-- The horizontal steps of the walk on the segment `[a, a + 1] × {b}`. -/
 def midSet (d : Fin n → Fin 4) (a b : ℤ) : Finset (Fin n) :=
   Finset.univ.filter (fun k : Fin n =>
     isHorizEdge (d k) ∧ min ((pos d k).1) ((pos d (k + 1)).1) = a ∧ (pos d k).2 = b)
 
-/-- **Upward crossings of vertically adjacent cells differ by separating steps.** The upward crossings from cell `(a, b)` are those from `(a, b + 1)` plus the horizontal steps
+/-- The upward crossings from cell `(a, b)` are those from `(a, b + 1)` plus the horizontal steps
   between the two cells. -/
 theorem upCross_vsplit (d : Fin n → Fin 4) (a b : ℤ) :
     upCross d a b = upCross d a (b + 1) + (midSet d a (b + 1)).card := by
@@ -62,7 +62,7 @@ theorem upCross_vsplit (d : Fin n → Fin 4) (a b : ℤ) :
   · rw [Finset.disjoint_filter]
     rintro k _ ⟨_, _, h1⟩ ⟨_, _, h2⟩; omega
 
-/-- **An odd number of horizontal steps flips the ray parity.** An odd number of horizontal steps between cells `(a, b)` and `(a, b + 1)` flips the ray
+/-- An odd number of horizontal steps between cells `(a, b)` and `(a, b + 1)` flips the ray
   parity. -/
 theorem rayParity_vflip (d : Fin n → Fin 4) (a b : ℤ)
     (hodd : (midSet d a (b + 1)).card % 2 = 1) :

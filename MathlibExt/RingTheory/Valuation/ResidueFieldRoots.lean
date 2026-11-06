@@ -53,7 +53,7 @@ in the residue field lifts.
 
 open IsLocalRing
 
-/-- **Residue fields in algebraic extensions of $\mathbb{Q}$ are algebraic.** The residue field of a valuation subring of an algebraic extension of
+/-- The residue field of a valuation subring of an algebraic extension of
 `ℚ` is algebraic over `𝔽_p`. -/
 theorem ValuationSubring.algebra_isAlgebraic_zmod_residueField_of_isAlgebraic_rat
     (K : Type*) [Field K] [Algebra ℚ K] [Algebra.IsAlgebraic ℚ K]
@@ -133,7 +133,7 @@ private theorem eq_of_pow_eq_one_of_residue_eq {R : Type*} [CommRing R] [IsLocal
 
 end TeichmullerAux
 
-/-- **Roots of unity under the residue map of a valuation subring.** The residue map is injective on `m`-th roots of unity, and every `m`-th
+/-- The residue map is injective on `m`-th roots of unity, and every `m`-th
 root of unity in the residue field lifts, when `m` is nonzero in the
 residue field. -/
 theorem ValuationSubring.residue_injOn_pow_eq_one_and_exists_residue_eq_of_isAlgClosed

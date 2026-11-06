@@ -31,9 +31,7 @@ Preperiodicity of type `(m, n)` follows
 lines 193--194.
 -/
 
-/-- **Forward orbit.** For a self-map $f$ of a set $X$ and a point $x \in X$, the forward orbit
-of $x$ under $f$ is the set $\{f^n(x) : n \in \mathbb{N}\}$ of all iterates of $x$, including
-$f^0(x) = x$. -/
+/-- Forward orbit of `x` under the self-map `f`. -/
 def forwardOrbit (f : α → α) (x : α) : Set α :=
   Set.range fun n : ℕ => f^[n] x
 
@@ -47,8 +45,7 @@ theorem mem_forwardOrbit_self (f : α → α) (x : α) : x ∈ forwardOrbit f x 
 theorem forwardOrbit_eq_range (f : α → α) (x : α) :
     forwardOrbit f x = Set.range (fun n : ℕ => f^[n] x) := rfl
 
-/-- **Preperiodic point.** A point $x$ is preperiodic for a self-map $f$ when its forward orbit
-$\{f^n(x) : n \in \mathbb{N}\}$ under $f$ is a finite set. -/
+/-- A point is preperiodic when its forward orbit is finite. -/
 def IsPreperiodicPt (f : α → α) (x : α) : Prop :=
   (forwardOrbit f x).Finite
 
@@ -96,8 +93,7 @@ theorem isPreperiodicPt_iff_exists_eq_iterate :
             simp [t, Nat.add_sub_of_le hmk]
     exact (Set.finite_range _).subset hsub
 
-/-- **Strictly preperiodic point.** A point $x$ is strictly preperiodic for a self-map $f$ when it
-is preperiodic for $f$ but not periodic, that is, there is no $n > 0$ with $f^n(x) = x$. -/
+/-- A strictly preperiodic point is preperiodic but not periodic. -/
 def IsStrictlyPreperiodicPt (f : α → α) (x : α) : Prop :=
   IsPreperiodicPt f x ∧ x ∉ periodicPts f
 
@@ -106,10 +102,8 @@ theorem isStrictlyPreperiodicPt_iff :
     IsStrictlyPreperiodicPt f x ↔ IsPreperiodicPt f x ∧ x ∉ periodicPts f :=
   Iff.rfl
 
-/-- **Preperiodic point of a given type.** Let $f$ be a self-map of a set $X$ and let $m$ and $n$
-be natural numbers. A point $x \in X$ is preperiodic of type $(m, n)$ when $n > 0$ and
-$f^{m+n}(x) = f^m(x)$, that is, $f^m(x)$ is periodic with period $n$. Neither $m$ nor $n$ is
-required to be minimal. -/
+/-- A point is preperiodic of type `(m, n)` when its `m`th iterate has
+positive period `n`. -/
 def IsPreperiodicPtOfType (f : α → α) (m n : ℕ) (x : α) : Prop :=
   0 < n ∧ f^[m + n] x = f^[m] x
 
@@ -132,9 +126,7 @@ theorem IsPreperiodicPtOfType.isPreperiodicPt
   rw [isPreperiodicPt_iff_exists_eq_iterate]
   exact ⟨m, m + n, Nat.lt_add_of_pos_right h.1, h.2.symm⟩
 
-/-- **Grand orbit relation.** For a self-map $f$ of a set $X$, points $x, y \in X$ are related,
-that is, lie in the same grand orbit of $f$, when $f^m(x) = f^n(y)$ for some natural numbers
-$m$ and $n$. -/
+/-- Two points lie in the same grand orbit when two of their forward iterates agree. -/
 def GrandOrbitRel (f : α → α) (x y : α) : Prop :=
   ∃ m n : ℕ, f^[m] x = f^[n] y
 
@@ -168,16 +160,12 @@ theorem grandOrbitRel_equivalence (f : α → α) : Equivalence (GrandOrbitRel f
   symm := GrandOrbitRel.symm
   trans := GrandOrbitRel.trans
 
-/-- **Grand orbit equivalence relation.** For a self-map $f$ of a set $X$, the relation on $X$ in
-which $x \sim y$ when $f^m(x) = f^n(y)$ for some natural numbers $m$ and $n$ is an equivalence
-relation; its equivalence classes are the grand orbits of $f$. -/
+/-- The setoid whose classes are grand orbits of `f`. -/
 def grandOrbitSetoid (f : α → α) : Setoid α where
   r := GrandOrbitRel f
   iseqv := grandOrbitRel_equivalence f
 
-/-- **Grand orbit.** For a self-map $f$ of a set $X$ and a point $x \in X$, the grand orbit of $x$
-is the set of all $y \in X$ such that $f^m(x) = f^n(y)$ for some natural numbers $m$ and $n$,
-that is, the equivalence class of $x$ under the grand orbit relation. -/
+/-- Grand orbit of `x`, viewed as its equivalence class. -/
 def grandOrbit (f : α → α) (x : α) : Set α :=
   {y | GrandOrbitRel f x y}
 

@@ -41,9 +41,8 @@ public import Mathlib
 
 namespace MathlibExt.MeasureTheory.DilatedL1FunctionDecayAeWanted
 
-/-- **Decay of dilates of an integrable function.** Let $f : \mathbb{R} \to \mathbb{R}$ be
-Lebesgue integrable and let $\lambda > 0$. Then for almost every $x \in \mathbb{R}$,
-$n^{-\lambda} f(nx) \to 0$ as $n \to \infty$ through the positive integers.
+/-- Suppose $f\in L^{1}(\mathbb{R})$ and $\lambda>0$. Show that $\lim_{n\to +\infty}
+n^{-\lambda}f(nx)=0$ for almost all $x\in\mathbb{R}$ (where $n\in\mathbb{N}$).
 
 Source: MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration;
 Classical measure theory), `benchmark/level2/ma_proofbench_l2_37.lean` at

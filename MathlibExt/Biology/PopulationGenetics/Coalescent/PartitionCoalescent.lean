@@ -90,19 +90,19 @@ namespace MathlibExt.Biology.PopulationGenetics.Coalescent.PartitionCoalescent
 
 open KingmanBlockCounting
 
-/-- **Set partitions of a labeled sample.** The set partitions of a sample of `n` labeled genes `{0, …, n - 1}`. -/
+/-- The set partitions of a sample of `n` labeled genes `{0, …, n - 1}`. -/
 abbrev SamplePartition (n : ℕ) : Type := Finpartition (univ : Finset (Fin n))
 
 variable {n : ℕ}
 
-/-- **Partition obtained by merging two blocks.** `π'` arises from `π` by merging two blocks: `π` refines `π'` and has exactly one more
+/-- `π'` arises from `π` by merging two blocks: `π` refines `π'` and has exactly one more
 block (so exactly two blocks of `π` lie in one block of `π'`, and the others are blocks of
 `π'`). -/
 def IsMerge (π π' : SamplePartition n) : Prop :=
   π ≤ π' ∧ #π'.parts + 1 = #π.parts
 
 open scoped Classical in
-/-- **Jump chain of Kingman's coalescent.** The transition matrix of the jump chain of Kingman's coalescent: from a partition with
+/-- The transition matrix of the jump chain of Kingman's coalescent: from a partition with
 `k ≥ 2` blocks, move to each of the `k.choose 2` partitions obtained by merging two blocks with
 probability `1 / k.choose 2`; a partition with at most one block is absorbing. -/
 noncomputable def jumpMatrix (n : ℕ) : Matrix (SamplePartition n) (SamplePartition n) ℝ :=
@@ -110,7 +110,7 @@ noncomputable def jumpMatrix (n : ℕ) : Matrix (SamplePartition n) (SampleParti
     if 2 ≤ #π.parts then (if IsMerge π π' then (((#π.parts).choose 2 : ℕ) : ℝ)⁻¹ else 0)
     else if π = π' then 1 else 0
 
-/-- **Law of Kingman's jump chain after m jumps.** The law of the jump chain after `m` jumps, started from the partition into singletons:
+/-- The law of the jump chain after `m` jumps, started from the partition into singletons:
 `jumpLaw n m π` is the probability that the partition after `m` coalescences is `π`. -/
 noncomputable def jumpLaw (n m : ℕ) (π : SamplePartition n) : ℝ :=
   (jumpMatrix n ^ m) ⊥ π
@@ -124,14 +124,14 @@ noncomputable def kingmanProb (n : ℕ) (π : SamplePartition n) : ℝ :=
     ((n.factorial * (n - 1).factorial : ℕ) : ℝ)
 
 open scoped Classical in
-/-- **Rate matrix of Kingman's partition-valued coalescent.** The rate matrix of Kingman's partition-valued coalescent: each pair of blocks merges at
+/-- The rate matrix of Kingman's partition-valued coalescent: each pair of blocks merges at
 rate `1`, so a partition with `k` blocks is left at total rate `k.choose 2` (time in units of
 `2N` generations). -/
 noncomputable def partitionRate (n : ℕ) : Matrix (SamplePartition n) (SamplePartition n) ℝ :=
   Matrix.of fun π π' =>
     if IsMerge π π' then 1 else if π = π' then -(((#π.parts).choose 2 : ℕ) : ℝ) else 0
 
-/-- **Time-t marginal of Kingman's coalescent.** The time-`t` marginal of Kingman's `n`-coalescent started from singletons:
+/-- The time-`t` marginal of Kingman's `n`-coalescent started from singletons:
 `timeLaw n t π = exp (t • partitionRate n) ⊥ π` is the probability that the ancestral partition
 of the sample at time `t ≥ 0` (in units of `2N` generations) is `π`. The matrix exponential is
 defined for every real `t`; the identities below hold for every real `t`. -/
@@ -141,7 +141,7 @@ noncomputable def timeLaw (n : ℕ) (t : ℝ) (π : SamplePartition n) : ℝ :=
 /-! ### Restriction -/
 
 open scoped Classical in
-/-- **Restriction matrix on sample partitions.** The restriction map as a `0/1` matrix: entry `(π, ρ)` is `1` iff `π.comap Fin.castSucc = ρ`. -/
+/-- The restriction map as a `0/1` matrix: entry `(π, ρ)` is `1` iff `π.comap Fin.castSucc = ρ`. -/
 noncomputable def restrictMatrix (n : ℕ) :
     Matrix (SamplePartition (n + 1)) (SamplePartition n) ℝ :=
   Matrix.of fun π ρ => if π.comap Fin.castSucc = ρ then 1 else 0
@@ -990,13 +990,13 @@ private theorem card_parts_bot : #(⊥ : SamplePartition n).parts = n := by
 private theorem eq_bot_of_card_parts (π : SamplePartition n) (h : #π.parts = n) : π = ⊥ :=
   (Finpartition.eq_bot_iff_card_parts_eq_card π).2 (by rw [h, card_univ, Fintype.card_fin])
 
-/-- **Kingman's formula at the partition into singletons.** Kingman's formula gives probability `1` to the partition into singletons. -/
+/-- Kingman's formula gives probability `1` to the partition into singletons. -/
 theorem kingmanProb_bot : kingmanProb n ⊥ = 1 := by
   rw [kingmanProb, Finpartition.cardProd_bot, Nat.factorial_one, one_pow, card_parts_bot,
     Nat.sub_self, Nat.factorial_zero, one_mul, mul_one]
   exact div_self (by positivity)
 
-/-- **Kingman's formula for a partition with k blocks.** Kingman's formula for a partition with `k` blocks. -/
+/-- Kingman's formula for a partition with `k` blocks. -/
 theorem kingmanProb_of_card {π : SamplePartition n} {k : ℕ} (h : #π.parts = k) :
     kingmanProb n π = ((n - k).factorial * k.factorial * (k - 1).factorial : ℝ) *
       ((π.cardProd Nat.factorial : ℕ) : ℝ) / (n.factorial * (n - 1).factorial : ℝ) := by
@@ -1047,7 +1047,7 @@ theorem sum_kingmanProb_isMerge (π' : SamplePartition n) (h1 : 1 ≤ #π'.parts
   set C : ℝ := (((k + 1).choose 2 : ℕ) : ℝ)
   linear_combination (a * k * b ^ 2 * C) * hG - (a * k * b ^ 2 * S) * hc
 
-/-- **Kingman's jump-chain matrix is row-stochastic.** The jump-chain transition matrix is row-stochastic. -/
+/-- The jump-chain transition matrix is row-stochastic. -/
 theorem jumpMatrix_mem_rowStochastic : jumpMatrix n ∈ rowStochastic ℝ (SamplePartition n) := by
   classical
   refine mem_rowStochastic_iff_sum.2 ⟨fun π π' => ?_, fun π => ?_⟩
@@ -1110,7 +1110,7 @@ theorem jumpLaw_eq {m : ℕ} (hm : m < n) (π : SamplePartition n) :
       field_simp
     · simp
 
-/-- **Jump-chain law sums to one.** The jump chain's law after `m` jumps sums to one (its entries are nonnegative by
+/-- The jump chain's law after `m` jumps sums to one (its entries are nonnegative by
 `jumpMatrix_mem_rowStochastic`). -/
 theorem sum_jumpLaw (m : ℕ) : ∑ π, jumpLaw n m π = 1 :=
   sum_row_of_mem_rowStochastic (pow_mem jumpMatrix_mem_rowStochastic m) ⊥
@@ -1128,7 +1128,7 @@ theorem sum_kingmanProb {k : ℕ} (hk : 1 ≤ k) (hkn : k ≤ n) :
   apply propext
   omega
 
-/-- **Kingman's formula is invariant under relabeling.** Relabeling the sample by a permutation (`Finpartition.comap`) preserves Kingman's
+/-- Relabeling the sample by a permutation (`Finpartition.comap`) preserves Kingman's
 formula. -/
 theorem kingmanProb_comap_perm (σ : Equiv.Perm (Fin n)) (π : SamplePartition n) :
     kingmanProb n (π.comap σ) = kingmanProb n π := by
@@ -1143,18 +1143,18 @@ theorem jumpLaw_comap_perm {m : ℕ} (hm : m < n) (σ : Equiv.Perm (Fin n))
 
 /-! ### The time-`t` marginal -/
 
-/-- **Number of blocks of a sample partition.** The number of blocks of a partition of a sample of `n`, as an element of `Fin (n + 1)` (a
+/-- The number of blocks of a partition of a sample of `n`, as an element of `Fin (n + 1)` (a
 state of the block-counting process). -/
 def numBlocks (π : SamplePartition n) : Fin (n + 1) :=
   ⟨#π.parts, Nat.lt_succ_of_le (by simpa using π.card_parts_le_card)⟩
 
-/-- **Kingman's formula arranged by number of blocks.** Kingman's formula arranged by number of blocks: entry `(k, π)` is `kingmanProb n π` if `π`
+/-- Kingman's formula arranged by number of blocks: entry `(k, π)` is `kingmanProb n π` if `π`
 has `k` blocks and `0` otherwise. For `1 ≤ k ≤ n`, row `k` is the law of the jump chain after
 `n - k` jumps (`jumpLaw_eq`). -/
 noncomputable def kingmanMatrix (n : ℕ) : Matrix (Fin (n + 1)) (SamplePartition n) ℝ :=
   Matrix.of fun k π => if #π.parts = (k : ℕ) then kingmanProb n π else 0
 
-/-- **Last row of Kingman's matrix is the singleton point mass.** Row `n` of `kingmanMatrix n` is the point mass at the partition into singletons. -/
+/-- Row `n` of `kingmanMatrix n` is the point mass at the partition into singletons. -/
 theorem kingmanMatrix_last (π : SamplePartition n) :
     kingmanMatrix n (Fin.last n) π = if π = ⊥ then 1 else 0 := by
   simp only [kingmanMatrix, Matrix.of_apply, Fin.val_last]
@@ -1251,7 +1251,7 @@ theorem timeLaw_eq (t : ℝ) (π : SamplePartition n) :
     simp only [kingmanMatrix, Matrix.of_apply]
     rw [ite_eq_right (fun hc => hj (Fin.ext hc.symm)), mul_zero]
 
-/-- **Time-t marginal via Tavaré's formula.** The time-`t` marginal with Tavaré's closed form for the block-counting factor: for a
+/-- The time-`t` marginal with Tavaré's closed form for the block-counting factor: for a
 partition `π` of a sample of `n` (so `π` has at least one block when `n ≥ 1`),
 `P(Π_t = π) = tavareProb n k t · kingmanProb n π` with `k = #π.parts`. -/
 theorem timeLaw_eq_tavareProb (hn : 1 ≤ n) (t : ℝ) (π : SamplePartition n) :
@@ -1267,7 +1267,7 @@ theorem timeLaw_comap_perm (t : ℝ) (σ : Equiv.Perm (Fin n)) (π : SampleParti
     show numBlocks (π.comap σ) = numBlocks π from
       Fin.ext (Finpartition.card_parts_comap_equiv σ π)]
 
-/-- **Rows of the partition rate matrix sum to zero.** Each row of the partition rate matrix sums to `0`: a partition with `k` blocks has
+/-- Each row of the partition rate matrix sums to `0`: a partition with `k` blocks has
 `k.choose 2` mergers (`card_isMerge`), each at rate `1`. -/
 theorem sum_partitionRate (π : SamplePartition n) : ∑ π', partitionRate n π π' = 0 := by
   classical
@@ -1286,7 +1286,7 @@ theorem sum_partitionRate (π : SamplePartition n) : ∑ π', partitionRate n π
   rw [sum_add_distrib, sum_ite_eq, ← sum_filter, sum_const, card_isMerge]
   simp
 
-/-- **Partition rate matrix is a rate matrix.** The partition rate matrix is a rate matrix: off-diagonal entries are `0` or `1`, and each
+/-- The partition rate matrix is a rate matrix: off-diagonal entries are `0` or `1`, and each
 row sums to `0` (`sum_partitionRate`). -/
 theorem isRateMatrix_partitionRate : ProbabilityTheory.IsRateMatrix (partitionRate n) := by
   classical
@@ -1294,22 +1294,22 @@ theorem isRateMatrix_partitionRate : ProbabilityTheory.IsRateMatrix (partitionRa
   simp only [partitionRate, Matrix.of_apply, h, ite_false]
   split_ifs <;> norm_num
 
-/-- **Time-t marginal as a continuous-time chain transition.** `timeLaw` is a row of the transition function `P t = exp (t • partitionRate n)` of the
+/-- `timeLaw` is a row of the transition function `P t = exp (t • partitionRate n)` of the
 continuous-time chain with rate matrix `partitionRate n`. -/
 theorem timeLaw_eq_ctmcTransition (t : ℝ) (π : SamplePartition n) :
     timeLaw n t π = ProbabilityTheory.ctmcTransition (partitionRate n) t ⊥ π := rfl
 
-/-- **Partition coalescent transition matrix is row-stochastic.** For `t ≥ 0` the transition matrix `exp (t • partitionRate n)` is row-stochastic. -/
+/-- For `t ≥ 0` the transition matrix `exp (t • partitionRate n)` is row-stochastic. -/
 theorem ctmcTransition_partitionRate_mem_rowStochastic {t : ℝ} (ht : 0 ≤ t) :
     ProbabilityTheory.ctmcTransition (partitionRate n) t ∈ rowStochastic ℝ (SamplePartition n) :=
   isRateMatrix_partitionRate.ctmcTransition_mem_rowStochastic ht
 
-/-- **Nonnegativity of the time-t marginal.** For `t ≥ 0` the time-`t` marginal is nonnegative; with `sum_timeLaw` it is a probability
+/-- For `t ≥ 0` the time-`t` marginal is nonnegative; with `sum_timeLaw` it is a probability
 distribution on the partitions of the sample. -/
 theorem timeLaw_nonneg {t : ℝ} (ht : 0 ≤ t) (π : SamplePartition n) : 0 ≤ timeLaw n t π :=
   isRateMatrix_partitionRate.ctmcTransition_nonneg ht ⊥ π
 
-/-- **Time-t marginal sums to one.** The time-`t` marginal sums to one over all partitions: `∑_π timeLaw n t π = 1` (for every
+/-- The time-`t` marginal sums to one over all partitions: `∑_π timeLaw n t π = 1` (for every
 real `t`, since the rows of the rate matrix sum to `0`). -/
 theorem sum_timeLaw (t : ℝ) : ∑ π, timeLaw n t π = 1 := by
   let X : Matrix (SamplePartition n) (Fin 1) ℝ := Matrix.of fun _ _ => 1

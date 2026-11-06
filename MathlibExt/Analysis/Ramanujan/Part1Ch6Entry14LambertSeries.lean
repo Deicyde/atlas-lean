@@ -1649,19 +1649,13 @@ private lemma ch6Entry14_minus_asymptotic_bound (x : ℝ) (n : ℕ)
       exact mul_le_mul_of_nonneg_left
         (le_add_of_nonneg_left (by positivity)) (by positivity)
 
-/-- **Summability of the Lambert series $\sum_k 1/(e^{kx}-1)$.** For every real $x > 0$, the
-series $\sum_{k=1}^{\infty} \frac{1}{e^{kx} - 1}$ is summable. -/
+/-- The summands in `chapter6Entry14MinusSum` are summable for positive arguments. -/
 theorem summable_chapter6Entry14MinusTerm (x : ℝ) (hx : 0 < x) :
     Summable (chapter6Entry14MinusTerm x) :=
   ch6Entry14_minusTerm_summable x hx
 
-/-- **Remainder bound for the Lambert series $\sum_k 1/(e^{kx}-1)$.** Let $x > 0$ be real and
-let $n \ge 1$ be an integer. Let $S(x) = \sum_{k=1}^{\infty} \frac{1}{e^{kx} - 1}$, let $B_m$ be
-the $m$-th Bernoulli number, let $\gamma$ be the Euler–Mascheroni constant, and let
-$C_n(x) = \sum_{k=1}^{n} \frac{B_{2k}^2 \, x^{2k-1}}{2k \, (2k)!}$. Then
-$\left| S(x) - \left( \frac{\gamma}{x} - \frac{\log x}{x} + \frac14 - C_n(x) \right) \right|
-\le \frac{|B_{2n} B_{2n+2}| \, x^{2n}}{(2n)!}
-\left( \frac{x^2}{4\pi^2} + \frac{\pi^2}{6} \right)$. -/
+/-- The Euler–Maclaurin expansion of `chapter6Entry14MinusSum`, with an explicit
+remainder bound. -/
 theorem chapter6Entry14MinusSum_error_le (x : ℝ) (n : ℕ)
     (hx : 0 < x) (hn : 1 ≤ n) :
     |chapter6Entry14MinusSum x -
@@ -1675,20 +1669,12 @@ theorem chapter6Entry14MinusSum_error_le (x : ℝ) (n : ℕ)
       (summable_chapter6Entry14MinusTerm x hx)
 
 
-/-- **Asymptotic expansion of the Lambert series $\sum_k 1/(e^{kx}-1)$.** Let $x > 0$ be real
-and let $n \ge 1$ be an integer. Let $B_m$ be the $m$-th Bernoulli number, let $\gamma$ be the
-Euler–Mascheroni constant, and let
-$C_n(x) = \sum_{k=1}^{n} \frac{B_{2k}^2 \, x^{2k-1}}{2k \, (2k)!}$. Then the series
-$\sum_{k=1}^{\infty} \frac{1}{e^{kx} - 1}$ is summable, and its sum $S(x)$ satisfies
-$\left| S(x) - \left( \frac{\gamma}{x} - \frac{\log x}{x} + \frac14 - C_n(x) \right) \right|
-\le \frac{|B_{2n} B_{2n+2}| \, x^{2n}}{(2n)!} \left( \frac{x^2}{4\pi^2} + \frac{\pi^2}{6} \right)$.
-
-The proof applies the Euler–Maclaurin formula to the smooth Mittag-Leffler kernel and bounds
-the periodic Bernoulli remainder by its Fourier series.
+/-- Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6.
 
 Proves `Wanted` entry `ramanujan_part1_ch6_entry10_centralbinomialfull`.
 
-Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6.
+Proof: Apply `MetaMathlibExt.eulerMaclaurinFormula` to the smooth Mittag-Leffler
+kernel, then bound its periodic Bernoulli remainder by its Fourier series.
 -/
 theorem ramanujan_part1_ch6_entry10_centralbinomialfull (x : ℝ) (n : ℕ)
     (hx : 0 < x) (hn : 1 ≤ n) :
@@ -1771,8 +1757,7 @@ private lemma ch6Entry14_plusSummable_and_sum_eq (x : ℝ) (hx : 0 < x)
   rw [tsum_congr (ch6Entry14_plusTerm_eq_minusTerm_sub x hx),
     hs₁.tsum_sub (hs₂.mul_left 2), tsum_mul_left]
 
-/-- **Summability of the Lambert series $\sum_k 1/(e^{kx}+1)$.** For every real $x > 0$, the
-series $\sum_{k=1}^{\infty} \frac{1}{e^{kx} + 1}$ is summable. -/
+/-- The summands in `chapter6Entry14PlusSum` are summable for positive arguments. -/
 theorem summable_chapter6Entry14PlusTerm (x : ℝ) (hx : 0 < x) :
     Summable (chapter6Entry14PlusTerm x) := by
   exact (ch6Entry14_plusSummable_and_sum_eq x hx
@@ -1831,20 +1816,12 @@ private lemma ch6Entry14_plus_asymptotic_bound (x : ℝ) (n : ℕ)
       norm_num [pow_two]
       ring
 
-/-- **Asymptotic expansion of the Lambert series $\sum_k 1/(e^{kx}+1)$.** Let $x > 0$ be real
-and let $n \ge 1$ be an integer. Let $B_m$ be the $m$-th Bernoulli number and let
-$D_n(x) = \sum_{k=1}^{n} \frac{(2^{2k} - 1) \, B_{2k}^2 \, x^{2k-1}}{2k \, (2k)!}$. Then the
-series $\sum_{k=1}^{\infty} \frac{1}{e^{kx} + 1}$ is summable, and its sum $T(x)$ satisfies
-$\left| T(x) - \left( \frac{\log 2}{x} - \frac14 + D_n(x) \right) \right|
-\le \frac{|B_{2n} B_{2n+2}| \, x^{2n}}{(2n)!} \left( \frac{x^2}{4\pi^2} + \frac{\pi^2}{6} +
-2^{2n+1} \left( \frac{x^2}{\pi^2} + \frac{\pi^2}{6} \right) \right)$.
-
-The proof writes this series as the series $\sum_k 1/(e^{kx}-1)$ minus twice the same series
-at $2x$, and applies the remainder bound for $\sum_k 1/(e^{kx}-1)$.
+/-- Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6.
 
 Proves `Wanted` entry `ramanujan_part1_ch6_entry10_centralbinomialexpansion`.
 
-Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6.
+Proof: Rewrite the plus series as the minus series at `x` minus twice the minus
+series at `2 * x`, then apply the preceding Euler–Maclaurin remainder bound.
 -/
 theorem ramanujan_part1_ch6_entry10_centralbinomialexpansion (x : ℝ) (n : ℕ)
     (hx : 0 < x) (hn : 1 ≤ n) :

@@ -63,7 +63,7 @@ def ReimerWprobCore : Prop :=
     ∀ (A B : Set (ConfigSpace (Fin n))),
       wprob φ (disjointOccurrence A B) ≤ wprob φ A * wprob φ B
 
-/-- **Reimer's inequality for product weights, assuming the core case.** Reimer's inequality for product probability weights on any finite set, assuming
+/-- Reimer's inequality for product probability weights on any finite set, assuming
 `ReimerWprobCore`. -/
 theorem reimer_wprob_general_of_core (h : ReimerWprobCore) [Fintype E] [DecidableEq E]
     (φ : E → Bool → ℝ) (hφ0 : ∀ x b, 0 ≤ φ x b) (hφ1 : ∀ x, φ x false + φ x true = 1)
@@ -82,7 +82,7 @@ theorem reimer_wprob_general_of_core (h : ReimerWprobCore) [Fintype E] [Decidabl
 
 set_option linter.unusedFintypeInType false in
 set_option linter.unusedDecidableInType false in
-/-- **Reimer's inequality for Bernoulli measures, assuming the core case.** Reimer's inequality `P_p(A □ B) ≤ P_p(A) * P_p(B)` for all events under the product
+/-- Reimer's inequality `P_p(A □ B) ≤ P_p(A) * P_p(B)` for all events under the product
 Bernoulli measure on a finite set, **assuming** `ReimerWprobCore`. -/
 theorem reimer_inequality_of_core (h : ReimerWprobCore) [Fintype E] [DecidableEq E]
     {p : ℝ≥0} (hp : p ≤ 1) (A B : Set (ConfigSpace E)) :
@@ -96,7 +96,7 @@ theorem reimer_inequality_of_core (h : ReimerWprobCore) [Fintype E] [DecidableEq
     bernoulli_real_eq_wprob hp B]
   exact reimer_wprob_general_of_core h φ hφ0 hφ1 A B
 
-/-- **Reimer's inequality on the one-point configuration space.** Reimer's inequality on the one-point configuration space `ConfigSpace (Fin 0)`. -/
+/-- Reimer's inequality on the one-point configuration space `ConfigSpace (Fin 0)`. -/
 theorem reimer_wprob_zero (φ : Fin 0 → Bool → ℝ)
     (A B : Set (ConfigSpace (Fin 0))) :
     wprob φ (disjointOccurrence A B) ≤ wprob φ A * wprob φ B := by
@@ -114,7 +114,7 @@ theorem reimer_wprob_zero (φ : Fin 0 → Bool → ℝ)
       simp [Set.indicator, ha, hb, Set.mem_inter_iff]
   rw [hAB]
 
-/-- **Flipping every coordinate of a configuration.** The configuration with every coordinate flipped, `x ↦ !(ω x)`. -/
+/-- The configuration with every coordinate flipped, `x ↦ !(ω x)`. -/
 def flipCfg (ω : ConfigSpace E) : ConfigSpace E := fun x => !(ω x)
 
 @[simp] lemma flipCfg_apply (ω : ConfigSpace E) (x : E) : flipCfg ω x = !(ω x) := rfl
@@ -122,7 +122,7 @@ def flipCfg (ω : ConfigSpace E) : ConfigSpace E := fun x => !(ω x)
 lemma flipCfg_flipCfg (ω : ConfigSpace E) : flipCfg (flipCfg ω) = ω := by
   funext x; simp [flipCfg]
 
-/-- **Coordinate flip as an involutive equivalence.** Flipping all coordinates, as an involutive equivalence of `ConfigSpace E`. -/
+/-- Flipping all coordinates, as an involutive equivalence of `ConfigSpace E`. -/
 def flipEquiv : ConfigSpace E ≃ ConfigSpace E where
   toFun := flipCfg
   invFun := flipCfg
@@ -193,7 +193,7 @@ lemma wprob_flip [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ) (S : Set 
   · rw [Set.indicator_of_notMem h, Set.indicator_of_notMem]
     simp only [Set.mem_preimage, flipCfg_flipCfg]; exact h
 
-/-- **BK inequality for decreasing events under product weights.** The BK inequality for two decreasing events under a product probability weight, obtained
+/-- The BK inequality for two decreasing events under a product probability weight, obtained
 from `StatMech.bk_wprob_general` by flipping all coordinates. -/
 theorem bk_wprob_decreasing [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
     (hφ0 : ∀ x b, 0 ≤ φ x b) (hφ1 : ∀ x, φ x false + φ x true = 1)
@@ -215,7 +215,7 @@ theorem bk_wprob_decreasing [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ
 
 set_option linter.unusedFintypeInType false in
 set_option linter.unusedDecidableInType false in
-/-- **BK inequality for decreasing events.** The **BK inequality for decreasing events**: under the product Bernoulli(`p`) measure on a
+/-- The **BK inequality for decreasing events**: under the product Bernoulli(`p`) measure on a
 finite set, `P_p(A □ B) ≤ P_p(A) * P_p(B)` for decreasing `A, B`. -/
 theorem bk_inequality_decreasing [Fintype E] [DecidableEq E] {p : ℝ≥0} (hp : p ≤ 1)
     {A B : Set (ConfigSpace E)} (hA : IsDecreasing A) (hB : IsDecreasing B) :

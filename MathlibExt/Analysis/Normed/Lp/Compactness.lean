@@ -63,22 +63,22 @@ section Defs
 
 variable {𝕜 : Type*} [NormedAddCommGroup 𝕜] {p : ℝ≥0∞}
 
-/-- **Restriction of an $\ell^p$ sequence to its first coordinates.** The restriction of an `ℓ^p` sequence to its first `N` coordinates. -/
+/-- The restriction of an `ℓ^p` sequence to its first `N` coordinates. -/
 def lpRestrict (N : ℕ) (x : lp (fun _ : ℕ => 𝕜) p) : Fin N → 𝕜 :=
   fun i => x i
 
-/-- **Pointwise action of the $\ell^p$ restriction.** The restriction acts coordinatewise. -/
+/-- The restriction acts coordinatewise. -/
 @[simp]
 theorem lpRestrict_apply (N : ℕ) (x : lp (fun _ : ℕ => 𝕜) p) (i : Fin N) :
     lpRestrict N x i = x i :=
   rfl
 
-/-- **Zero extension of a finite coordinate vector.** The extension of a coordinate vector on `Fin N` by `0` to a total
+/-- The extension of a coordinate vector on `Fin N` by `0` to a total
 coordinate function on `ℕ`. -/
 def lpExtend (N : ℕ) (z : Fin N → 𝕜) : ℕ → 𝕜 :=
   fun i => if h : i < N then z ⟨i, h⟩ else 0
 
-/-- **Pointwise action of the zero extension.** The extension acts coordinatewise. -/
+/-- The extension acts coordinatewise. -/
 theorem lpExtend_apply (N : ℕ) (z : Fin N → 𝕜) (j : ℕ) :
     lpExtend N z j = if h : j < N then z ⟨j, h⟩ else 0 :=
   rfl
@@ -89,13 +89,13 @@ section Basic
 
 variable {𝕜 : Type*} [RCLike 𝕜] {p : ℝ≥0∞}
 
-/-- **Lift of a coordinate function to a truncated $\ell^p$ sequence.** The lift of a coordinate function on `ℕ` to an `ℓ^p` sequence, keeping
+/-- The lift of a coordinate function on `ℕ` to an `ℓ^p` sequence, keeping
 only its first `N` coordinates. -/
 noncomputable def lpLift (p : ℝ≥0∞) (N : ℕ) (y : ℕ → 𝕜) :
     lp (fun _ : ℕ => 𝕜) p :=
   ∑ i ∈ Finset.range N, lp.single (E := fun _ : ℕ => 𝕜) p i (y i)
 
-/-- **Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates.** The all-`p` coordinate extension of finite truncation to the first `N`
+/-- The all-`p` coordinate extension of finite truncation to the first `N`
 coordinates, also defined at `p = ∞`. For finite `p ≥ 1`,
 `lpTrunc_eq_lpSchauderBasis_proj` identifies it with the canonical
 continuous linear Schauder projection. -/
@@ -103,14 +103,14 @@ noncomputable def lpTrunc (p : ℝ≥0∞) (N : ℕ) (x : lp (fun _ : ℕ => �
     lp (fun _ : ℕ => 𝕜) p :=
   lpLift p N (fun i => x i)
 
-/-- **Pointwise action of the finite $\ell^p$ lift.** The lift acts coordinatewise. -/
+/-- The lift acts coordinatewise. -/
 theorem lpLift_apply (N : ℕ) (y : ℕ → 𝕜) (j : ℕ) :
     lpLift p N y j = if j < N then y j else 0 := by
   simp only [lpLift, lp.coeFn_sum, Finset.sum_apply, lp.single_apply, Pi.single_apply]
   rw [Finset.sum_ite_eq]
   by_cases hj : j < N <;> simp [hj, Finset.mem_range]
 
-/-- **Pointwise action of $\ell^p$ truncation.** Truncation acts coordinatewise. -/
+/-- Truncation acts coordinatewise. -/
 theorem lpTrunc_apply (N : ℕ) (x : lp (fun _ : ℕ => 𝕜) p) (j : ℕ) :
     lpTrunc p N x j = if j < N then x j else 0 :=
   lpLift_apply N (fun i => x i) j
@@ -156,7 +156,7 @@ section Norm
 
 variable {𝕜 : Type*} [RCLike 𝕜] {p : ℝ≥0∞} [Fact (1 ≤ p)]
 
-/-- **Truncation equals the Schauder basis projection.** For finite `p ≥ 1`, coordinate truncation is the canonical bundled
+/-- For finite `p ≥ 1`, coordinate truncation is the canonical bundled
 Schauder-basis projection. -/
 theorem lpTrunc_eq_lpSchauderBasis_proj (hp : p ≠ ⊤) (N : ℕ)
     (x : lp (fun _ : ℕ => 𝕜) p) :
@@ -164,7 +164,7 @@ theorem lpTrunc_eq_lpSchauderBasis_proj (hp : p ≠ ⊤) (N : ℕ)
   rw [lpSchauderBasis_proj_apply]
   rfl
 
-/-- **Truncation is a contraction on $\ell^p$.** Truncation is a contraction. -/
+/-- Truncation is a contraction. -/
 theorem norm_lpTrunc_le (N : ℕ) (x : lp (fun _ : ℕ => 𝕜) p) :
     ‖lpTrunc p N x‖ ≤ ‖x‖ := by
   by_cases hp : p = ⊤
@@ -177,7 +177,7 @@ theorem norm_lpTrunc_le (N : ℕ) (x : lp (fun _ : ℕ => 𝕜) p) :
   · rw [lpTrunc_eq_lpSchauderBasis_proj hp]
     exact norm_lpSchauderBasis_classical_proj_apply_le hp N x
 
-/-- **Tail of an $\ell^p$ vector is no larger than the vector.** The tail of a vector is no larger than the vector itself. -/
+/-- The tail of a vector is no larger than the vector itself. -/
 theorem norm_sub_lpTrunc_le (N : ℕ) (x : lp (fun _ : ℕ => 𝕜) p) :
     ‖x - lpTrunc p N x‖ ≤ ‖x‖ := by
   have hp0 : p ≠ 0 := (zero_lt_one.trans_le Fact.out).ne'
@@ -188,7 +188,7 @@ theorem norm_sub_lpTrunc_le (N : ℕ) (x : lp (fun _ : ℕ => 𝕜) p) :
     exact norm_nonneg _
   · rw [ite_eq_right hi, sub_zero]
 
-/-- **Tails shrink as the truncation length grows.** Tails shrink as the truncation length grows. -/
+/-- Tails shrink as the truncation length grows. -/
 theorem norm_sub_lpTrunc_mono {N M : ℕ} (h : N ≤ M) (x : lp (fun _ : ℕ => 𝕜) p) :
     ‖x - lpTrunc p M x‖ ≤ ‖x - lpTrunc p N x‖ := by
   have hp0 : p ≠ 0 := (zero_lt_one.trans_le Fact.out).ne'
@@ -202,7 +202,7 @@ theorem norm_sub_lpTrunc_mono {N M : ℕ} (h : N ≤ M) (x : lp (fun _ : ℕ => 
     · exact absurd (lt_of_lt_of_le hiN h) hiM
     · rw [ite_eq_right hiM, ite_eq_right hiN, sub_zero]
 
-/-- **Norm bound for the finite $\ell^p$ lift.** The target `ℓ^p` norm of the finite lift is bounded by
+/-- The target `ℓ^p` norm of the finite lift is bounded by
 `N ^ (1 / p)` times the supremum norm of its first `N` coordinates.
 The norm on the source Pi type `Fin N → 𝕜` is the supremum norm. -/
 theorem norm_lpLift_le (hp : p ≠ ⊤) (N : ℕ) (y : ℕ → 𝕜) :
@@ -229,13 +229,13 @@ theorem norm_lpLift_le (hp : p ≠ ⊤) (N : ℕ) (y : ℕ → 𝕜) :
     _ = (N : ℝ) * ‖fun i : Fin N => y i‖ ^ p.toReal := by
         rw [Finset.card_range, nsmul_eq_mul]
 
-/-- **Truncations of an $\ell^p$ vector converge to it.** The truncations of an `ℓ^p` vector converge to the vector. -/
+/-- The truncations of an `ℓ^p` vector converge to the vector. -/
 theorem tendsto_lpTrunc (hp : p ≠ ⊤) (x : lp (fun _ : ℕ => 𝕜) p) :
     Tendsto (fun N => lpTrunc p N x) atTop (𝓝 x) := by
   simpa only [lpTrunc_eq_lpSchauderBasis_proj hp] using
     (lpSchauderBasis (𝕜 := 𝕜) hp).tendsto_proj x
 
-/-- **Tail of a single $\ell^p$ vector can be made small.** The tail of a single vector can be made arbitrarily small. -/
+/-- The tail of a single vector can be made arbitrarily small. -/
 theorem exists_norm_sub_lpTrunc_lt (hp : p ≠ ⊤) (x : lp (fun _ : ℕ => 𝕜) p)
     {ε : ℝ} (hε : 0 < ε) : ∃ N, ‖x - lpTrunc p N x‖ < ε := by
   obtain ⟨N, hN⟩ := (Metric.tendsto_atTop.mp (tendsto_lpTrunc hp x)) ε hε
@@ -244,13 +244,13 @@ theorem exists_norm_sub_lpTrunc_lt (hp : p ≠ ⊤) (x : lp (fun _ : ℕ => 𝕜
   rw [dist_eq_norm, norm_sub_rev] at h
   exact h
 
-/-- **Uniform vanishing of tails.** The tails of the elements of a set `K` vanish uniformly: for every
+/-- The tails of the elements of a set `K` vanish uniformly: for every
 `ε > 0` there is `N` such that every `x ∈ K` is within `ε` of its truncation
 to the first `N` coordinates. -/
 def UniformTailVanishing (p : ℝ≥0∞) (K : Set (lp (fun _ : ℕ => 𝕜) p)) : Prop :=
   ∀ ε > 0, ∃ N, ∀ x ∈ K, ‖x - lpTrunc p N x‖ < ε
 
-/-- **Riesz–Fréchet–Kolmogorov criterion for total boundedness in $\ell^p$.** The Riesz–Fréchet–Kolmogorov criterion for `ℓ^p (ℕ, 𝕜)`, `1 ≤ p < ∞`:
+/-- The Riesz–Fréchet–Kolmogorov criterion for `ℓ^p (ℕ, 𝕜)`, `1 ≤ p < ∞`:
 a set is totally bounded if and only if it is bounded and its tails vanish
 uniformly. -/
 theorem totallyBounded_iff_bounded_and_uniformTailVanishing (hp : p ≠ ⊤)
@@ -374,7 +374,7 @@ theorem totallyBounded_iff_bounded_and_uniformTailVanishing (hp : p ≠ ⊤)
               _ < ε * (M + 1) := mul_lt_mul_of_pos_left (lt_add_one M) hε
           linarith
 
-/-- **Riesz–Fréchet–Kolmogorov criterion for compactness in $\ell^p$.** Compact form of the Riesz–Fréchet–Kolmogorov criterion. -/
+/-- Compact form of the Riesz–Fréchet–Kolmogorov criterion. -/
 theorem isCompact_iff_isComplete_and_bounded_and_uniformTailVanishing (hp : p ≠ ⊤)
     {K : Set (lp (fun _ : ℕ => 𝕜) p)} :
     IsCompact K ↔ IsComplete K ∧ Bornology.IsBounded K
@@ -383,7 +383,7 @@ theorem isCompact_iff_isComplete_and_bounded_and_uniformTailVanishing (hp : p �
     totallyBounded_iff_bounded_and_uniformTailVanishing hp]
   tauto
 
-/-- **Riesz–Fréchet–Kolmogorov relative compactness criterion in $\ell^p$.** Relative-compact form of the Riesz–Fréchet–Kolmogorov criterion. -/
+/-- Relative-compact form of the Riesz–Fréchet–Kolmogorov criterion. -/
 theorem isCompact_closure_iff_bounded_and_uniformTailVanishing (hp : p ≠ ⊤)
     {K : Set (lp (fun _ : ℕ => 𝕜) p)} :
     IsCompact (closure K) ↔ Bornology.IsBounded K ∧ UniformTailVanishing p K := by

@@ -35,15 +35,15 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind StatMech.Ons
 
 variable {n : ℕ} [NeZero n]
 
-/-- **A horizontal direction is not vertical.** A horizontal direction is not vertical. -/
+/-- A horizontal direction is not vertical. -/
 theorem not_isVert_of_isHoriz {w : Fin 4} (h : isHorizEdge w) : ¬ isVertEdge w := by
   rcases h with h | h <;> rw [h] <;> decide
 
-/-- **A vertical direction is not horizontal.** A vertical direction is not horizontal. -/
+/-- A vertical direction is not horizontal. -/
 theorem not_isHoriz_of_isVert {w : Fin 4} (h : isVertEdge w) : ¬ isHorizEdge w := by
   rcases h with h | h <;> rw [h] <;> decide
 
-/-- **Even corner counts have zero corner weight.** An even corner count has weight `0`. -/
+/-- An even corner count has weight `0`. -/
 theorem cornerWeight_eq_zero_of_two_dvd
     (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (v : ℤ × ℤ)
     (hdvd : 2 ∣ cornerCount (interiorCells d hclosed) v) :
@@ -53,7 +53,7 @@ theorem cornerWeight_eq_zero_of_two_dvd
   unfold cornerWeight
   rw [ite_eq_right hne1, ite_eq_right hne3]; ring
 
-/-- **Zero corner weight where the walk continues horizontally.** A vertex where the walk continues horizontally has weight `0`. -/
+/-- A vertex where the walk continues horizontally has weight `0`. -/
 theorem cornerWeight_straight_horiz (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (i : Fin n)
     (hstraight : d (i + 1) = d i) (hh : isHorizEdge (d i)) :
@@ -100,7 +100,7 @@ theorem cornerWeight_straight_horiz (d : Fin n → Fin 4) (hclosed : ∑ i, step
   have : (2 : ℤ) ∣ (cornerCount (interiorCells d hclosed) (pos d (i + 1)) : ℤ) := ⟨_, hz⟩
   exact_mod_cast this
 
-/-- **Zero corner weight where the walk continues vertically.** A vertex where the walk continues vertically has weight `0`. -/
+/-- A vertex where the walk continues vertically has weight `0`. -/
 theorem cornerWeight_straight_vert (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (i : Fin n)
     (hstraight : d (i + 1) = d i) (hv : isVertEdge (d i)) :
@@ -147,7 +147,7 @@ theorem cornerWeight_straight_vert (d : Fin n → Fin 4) (hclosed : ∑ i, stepO
   have : (2 : ℤ) ∣ (cornerCount (interiorCells d hclosed) (pos d (i + 1)) : ℤ) := ⟨_, hz⟩
   exact_mod_cast this
 
-/-- **Straight steps of a simple closed walk carry no corner weight.** A vertex where a simple closed walk goes straight has corner weight `0` for the interior. -/
+/-- A vertex where a simple closed walk goes straight has corner weight `0` for the interior. -/
 theorem cornerWeight_straight (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (i : Fin n) (hstraight : d (i + 1) = d i) :
     cornerWeight (cornerCount (interiorCells d hclosed) (pos d (i + 1))) = 0 := by

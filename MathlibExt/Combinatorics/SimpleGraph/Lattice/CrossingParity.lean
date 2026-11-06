@@ -42,7 +42,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Number of boundary crossings of a walk.** The number of edges of the walk `w` with exactly one endpoint in `S`. -/
+/-- The number of edges of the walk `w` with exactly one endpoint in `S`. -/
 noncomputable def crossCount (S : Set (Site 2)) {x y : Site 2}
     (w : (hypercubicLattice 2).Walk x y) : ℕ := by
   classical
@@ -127,7 +127,7 @@ theorem crossCount_odd_of_separated (S : Set (Site 2)) {x y : Site 2}
   intro h
   exact hy (h.mp hx)
 
-/-- **Square lattice with the boundary edges of a set removed.** The square lattice with every edge having exactly one endpoint in `S` removed. -/
+/-- The square lattice with every edge having exactly one endpoint in `S` removed. -/
 noncomputable def latticeMinusBarrier (S : Set (Site 2)) : SimpleGraph (Site 2) where
   Adj x y := (hypercubicLattice 2).Adj x y ∧ ¬ bdEdge S s(x, y)
   symm := by

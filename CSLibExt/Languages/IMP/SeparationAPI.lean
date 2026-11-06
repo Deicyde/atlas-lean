@@ -35,12 +35,8 @@ open scoped HAssertion
 
 /-! ## Generic bookkeeping lemmas -/
 
-/-- **Store-irrelevant heap assertions.** A heap assertion $P$ is store-irrelevant when for all
-stores $s, s'$ and every heap $h$, $P(s, h)$ implies $P(s', h)$; that is, whether $P$ holds
-does not depend on the store.
-
-The empty-heap and points-to assertions are store-irrelevant, and so is the separating
-conjunction of two store-irrelevant assertions. -/
+/-- A heap assertion is store-irrelevant when it does not inspect the
+store. `pointsTo`, `emp`, and predicates built from them are. -/
 def StoreIrrel (P : HAssertion) : Prop :=
   ∀ (s s' : State) (h : Heap), P s h → P s' h
 
@@ -54,12 +50,8 @@ theorem star_storeIrrel {P Q : HAssertion}
   obtain ⟨h₁, h₂, hd, heq, h1, h2⟩ := hstar
   exact ⟨h₁, h₂, hd, heq, hP s s' h₁ h1, hQ s s' h₂ h2⟩
 
-/-- **Store-irrelevant frames satisfy the frame-rule side condition.** Let $R$ be a
-store-irrelevant heap assertion and $c$ a heap command. For all stores $s, s'$ and every heap
-$h$, if $R(s, h)$ holds and $s'(x) = s(x)$ for every variable $x$ outside the set of variables
-that $c$ may assign to, then $R(s', h)$ holds.
-
-This is the side condition on the frame in the frame rule. -/
+/-- A store-irrelevant frame always satisfies the side condition of
+`SepValid.frame`. -/
 theorem frame_of_storeIrrel {R : HAssertion} (hR : StoreIrrel R)
     (c : HeapCmd) :
     ∀ ⦃s : State⦄ ⦃h : Heap⦄ ⦃s' : State⦄, R s h →
@@ -72,15 +64,9 @@ theorem entails_of_eq {P Q : HAssertion} (h : P = Q) : P.Entails Q := by
   rw [← h]
   exact hh
 
-/-- **Pulling a store fact out of a separating conjunction.** Let $p$ be a predicate on
-stores and $P$, $R$ heap assertions. Write $A \star B$ for the separating conjunction of heap
-assertions $A$ and $B$ (the heap splits into two disjoint parts satisfying $A$ and $B$,
-respectively, at the same store), and $p \land P$ for the heap assertion that holds at store
-$s$ and heap $h$ when $p(s)$ and $P(s, h)$ both hold. Then
-$(p \land P) \star R = p \land (P \star R)$.
-
-This lets framed local triples be stated with the store facts kept outside the separating
-conjunction. -/
+/-- A heap-independent store fact distributes over `⋆` on the left. This
+is what lets framed local triples be stated with the store facts kept
+outside the separating conjunction. -/
 theorem star_and_left {p : State → Prop} {P R : HAssertion} :
     ((fun s h => p s ∧ P s h) ⋆ R) = (fun s h => p s ∧ (P ⋆ R) s h) := by
   funext s h
@@ -99,11 +85,7 @@ theorem entails_and_right {p : State → Prop} {P Q : HAssertion}
   intro s heap hPQ
   exact ⟨hPQ.1, hent hPQ.2⟩
 
-/-- **Rearranging a separating conjunction.** For heap assertions $P$, $Q$ and $R$, write
-$A \star B$ for the separating conjunction of heap assertions $A$ and $B$ (the heap splits into
-two disjoint parts satisfying $A$ and $B$, respectively, at the same store). Then
-$P \star (Q \star R)$ entails $(P \star R) \star Q$: every store and heap satisfying the first
-assertion satisfy the second. -/
+/-- `(P ⋆ (Q ⋆ R))` entails `((P ⋆ R) ⋆ Q)`. -/
 theorem star_swap_right {P Q R : HAssertion} :
     (P ⋆ (Q ⋆ R)).Entails ((P ⋆ R) ⋆ Q) :=
   (HAssertion.star_mono (HAssertion.entails_refl P)
@@ -119,14 +101,6 @@ the store facts are carried as a plain conjunction `p s ∧ ·`. The
 hypothesis `hpq` re-establishes the store facts after the step; computing
 `Function.update` at the scratch variables is the caller's job. -/
 
-/-- **Local rule for a heap read.** Let $x$ and $y$ be variables, let $a$ and $v$ be natural
-numbers, and let $p$ and $q$ be predicates on stores. Write $s[x := n]$ for the store that agrees
-with $s$ except that it maps $x$ to $n$, and $a \mapsto v$ for the heap assertion that holds when
-the heap is the single cell at address $a$ holding $v$. If every store $s$ satisfying $p$ has
-$s(y) = a$ and $q(s[x := v])$, then the separation-logic triple for the heap read $x := [y]$
-(which loads into $x$ the value stored at the address held in $y$) is valid with precondition
-"$p(s)$ and $a \mapsto v$ holds at $(s, h)$" and postcondition "$q(s)$ and $a \mapsto v$ holds at
-$(s, h)$", where $s$ is the store and $h$ the heap. -/
 theorem read_local {name addrName a v : Nat} {p q : State → Prop}
     (hpq : ∀ s, p s → s addrName = a ∧
       q (Function.update s name v)) :
@@ -179,14 +153,8 @@ theorem write_framed {addrName valName a v w : Nat} {p q : State → Prop}
     (SepValid.frame (write_local hpq) (frame_of_storeIrrel hR _))
     (entails_of_eq star_and_left)
 
-/-- **Assignment rule with a store-irrelevant heap assertion.** Let $x$ and $y$ be variables,
-let $p$ and $q$ be predicates on stores, and let $H$ be a store-irrelevant heap assertion.
-Write $s[x := n]$ for the store that agrees with $s$ except that it maps $x$ to $n$. If every
-store $s$ satisfying $p$ has $q(s[x := s(y)])$, then the separation-logic triple for the
-assignment $x := y$ is valid with precondition "$p(s)$ and $H(s, h)$" and postcondition
-"$q(s)$ and $H(s, h)$", where $s$ is the store and $h$ the heap.
-
-An assignment leaves the heap untouched, so no framing is needed. -/
+/-- Assignment needs no framing: the heap is untouched, so only the store
+facts change, provided the heap assertion is store-irrelevant. -/
 theorem assign_step {name src : Nat} {p q : State → Prop}
     {H : HAssertion} (hH : StoreIrrel H)
     (hpq : ∀ s, p s → q (Function.update s name (s src))) :
@@ -199,11 +167,9 @@ theorem assign_step {name src : Nat} {p q : State → Prop}
   obtain ⟨hp, hHh⟩ := hpre
   exact ⟨hpq s hp, hH s _ h hHh⟩
 
-/-- **Existential rule for separation-logic triples.** Let $c$ be a heap command, let $\iota$ be
-an arbitrary index (any type or proposition), and let $P_i$ and $Q_i$ be heap assertions for
-each $i$ in $\iota$. If for every $i$ the triple with precondition $P_i$, command $c$ and
-postcondition $Q_i$ is valid, then the triple with precondition "there is $i$ with $P_i$",
-command $c$ and postcondition "there is $i$ with $Q_i$" is valid. -/
+/-- Step validity transports over an existential witness: a triple
+proved for each fixed witness packages into one for the existential
+assertion. -/
 theorem SepValid.exists {ι : Sort*} {P Q : ι → HAssertion} {c : HeapCmd}
     (hstep : ∀ i, SepValid (P i) c (Q i)) :
     SepValid (fun s h => ∃ i, P i s h) c (fun s h => ∃ i, Q i s h) := by

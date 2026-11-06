@@ -49,7 +49,7 @@ open CategoryTheory AlgebraicGeometry
 
 namespace AlgebraicGeometry
 
-/-- **Integral schemes over algebraically closed fields: geometric integrality.** An integral scheme over an algebraically closed field is geometrically integral. -/
+/-- An integral scheme over an algebraically closed field is geometrically integral. -/
 theorem GeometricallyIntegral.of_isIntegral_of_isAlgClosed
     {K : Type u} [Field K] [IsAlgClosed K] {X : Scheme.{u}}
     (f : X ⟶ Spec (CommRingCat.of K)) [IsIntegral X] : GeometricallyIntegral f := by

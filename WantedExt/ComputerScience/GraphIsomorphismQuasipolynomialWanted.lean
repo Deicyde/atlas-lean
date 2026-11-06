@@ -43,63 +43,45 @@ namespace MathlibExt.ComputerScience.GraphIsomorphismQuasipolynomialWanted
 
 /-! Source record `ALG-016`. -/
 
-/-- **Graph codes.** A graph code consists of a vertex count $n \in \mathbb{N}$, with vertices
-$0, \dots, n-1$, and a Boolean adjacency matrix $A$ on these vertices that is symmetric
-($A_{ij} = A_{ji}$ for all $i, j$) and loop-free ($A_{ii}$ is false for every $i$). -/
+/-- A finite simple graph code: vertex count plus a symmetric, loop-free
+adjacency matrix on `Fin n`. -/
 structure GraphCode where
   n : ℕ
   adj : Fin n → Fin n → Bool
   symm : ∀ i j, adj i j = adj j i
   irrefl : ∀ i, adj i i = false
 
-/-- **Binary digits of a natural number.** The binary digits of $n \in \mathbb{N}$, most
-significant first, as a list of bits with the digit $1$ read as true and $0$ as false; for
-$n = 0$ this is the single digit $0$. -/
+/-- Binary digits of `n`, most significant first. -/
 def natBits (n : ℕ) : List Bool :=
   (Nat.toDigits 2 n).map (fun d => decide (d = '1'))
 
-/-- **Prefix-free encoding of a natural number.** The prefix-free encoding of $n \in \mathbb{N}$
-consists of $k$ true bits, where $k$ is the number of binary digits of $n$, then one false bit,
-then the binary digits of $n$, most significant first. -/
+/-- Prefix-free encoding of `n`: unary length, separator, binary digits. -/
 def natToBits (n : ℕ) : List Bool :=
   List.replicate (natBits n).length true ++ [false] ++ natBits n
 
-/-- **Bit encoding of a graph code.** The bit encoding of a graph code with $n$ vertices and
-adjacency matrix $A$ is the prefix-free encoding of $n$ followed by the $n^2$ entries of $A$, as
-bits, in row-major order: $A_{0,0}, A_{0,1}, \dots, A_{0,n-1}, A_{1,0}, \dots, A_{n-1,n-1}$. -/
+/-- Bit serialization of a graph code: vertex count then row-major adjacency. -/
 def encode (G : GraphCode) : List Bool :=
   natToBits G.n ++
     ((List.finRange G.n).map fun i =>
       (List.finRange G.n).map fun j => G.adj i j).flatten
 
-/-- **Bit encoding of a pair of graph codes.** The bit encoding of a pair $(G, H)$ of graph codes
-is the bit encoding of $G$ followed by the bit encoding of $H$. -/
+/-- Bit serialization of a graph pair: concatenation of the two codes. -/
 def encodePair (p : GraphCode × GraphCode) : List Bool :=
   encode p.1 ++ encode p.2
 
-/-- **Isomorphism of graph codes.** Graph codes $G$ and $H$ with adjacency matrices $A$ and $B$
-are isomorphic when they have the same vertex count $n$ and there is a permutation $\sigma$ of
-the vertices $\{0, \dots, n-1\}$ such that $A_{ij} = B_{\sigma(i)\sigma(j)}$ for all $i, j$. -/
+/-- Graph isomorphism: equal vertex counts and a permutation of vertices
+carrying one adjacency matrix to the other. -/
 def Isomorphic (G H : GraphCode) : Prop :=
   ∃ h : G.n = H.n, ∃ σ : Equiv.Perm (Fin H.n), ∀ i j : Fin G.n,
     G.adj i j = H.adj (σ (Fin.cast h i)) (σ (Fin.cast h j))
 
-/-- **Quasipolynomial time bound.** For an exponent $c \in \mathbb{N}$ and an input length
-$n \in \mathbb{N}$, the quasipolynomial time bound is
-$q_c(n) = 2^{(\lfloor \log_2(n+2) \rfloor + 2)^c}$. -/
+/-- Quasipolynomial time bound in the encoded input length `n`, with fixed
+exponent `c`: `2 ^ ((log2(n+2)+2)^c)`. -/
 def qpTime (c n : ℕ) : ℕ :=
   2 ^ ((Nat.log 2 (n + 2) + 2) ^ c)
 
-/-- **The quasipolynomial graph isomorphism statement.** The proposition that graph isomorphism
-is decidable in quasipolynomial time: there are a function $D$ from pairs of graph codes to
-Booleans, an exponent $c \in \mathbb{N}$, and a deterministic multi-stack Turing machine with a
-time function $t : \mathbb{N} \to \mathbb{N}$ that, on the bit encoding of every pair $(G, H)$,
-outputs the single bit $D(G, H)$ within $t(\ell)$ steps, where $\ell$ is the length of the
-encoding, such that $t(n) \le q_c(n)$ for every $n \in \mathbb{N}$, where $q_c$ is the
-quasipolynomial time bound with exponent $c$, and $D(G, H)$ is true if and only if $G$ and $H$
-are isomorphic.
-
-Source: ALG-016. -/
+/-- [ALG-016] There is one fixed deterministic algorithm deciding graph
+isomorphism on all graph pairs in quasipolynomial time. -/
 def conjecture : Prop :=
   ∃ decideGI : GraphCode × GraphCode → Bool, ∃ c : ℕ,
     ∃ h : Turing.TM2ComputableInTime encodePair Computability.encodeBool decideGI,
@@ -107,18 +89,8 @@ def conjecture : Prop :=
       ∀ G H : GraphCode, decideGI (G, H) = true ↔ Isomorphic G H
 
 /--
-**Babai's theorem: graph isomorphism in quasipolynomial time.** The quasipolynomial graph
-isomorphism statement holds: there are a function $D$ from pairs of graph codes to Booleans, an
-exponent $c \in \mathbb{N}$, and a deterministic multi-stack Turing machine with a time function
-$t : \mathbb{N} \to \mathbb{N}$ that, on the bit encoding of every pair $(G, H)$, outputs the
-single bit $D(G, H)$ within $t(\ell)$ steps, where $\ell$ is the length of the encoding, such that
-$t(n) \le 2^{(\lfloor \log_2(n+2) \rfloor + 2)^c}$ for every $n \in \mathbb{N}$, and $D(G, H)$ is
-true if and only if $G$ and $H$ are isomorphic.
-
-Babai (STOC 2016) gave a deterministic quasipolynomial-time graph-isomorphism algorithm; the
-corrected proof retains that complexity.
-
-Source: Babai, L., Graph isomorphism in
+Resolved true: Babai (STOC 2016) gave a deterministic quasipolynomial-time graph-isomorphism
+algorithm; the corrected proof retains that complexity. Source: Babai, L., Graph isomorphism in
 quasipolynomial time, Proc. 48th ACM Symp. Theory Comput. (STOC 2016), 684-697;
 arXiv:1512.03547, https://arxiv.org/abs/1512.03547. Moved from
 `OpenConjectures/ComputerScience/GraphIsomorphismQuasipolynomial`.

@@ -42,23 +42,23 @@ open Finset
 
 namespace ProbabilityTheory
 
-/-- **Hypergeometric mass function.** The hypergeometric mass function: the probability `C(K, k) C(N - K, n - k) / C(N, n)` of
+/-- The hypergeometric mass function: the probability `C(K, k) C(N - K, n - k) / C(N, n)` of
 drawing exactly `k` marked items in `n` draws without replacement from `N` items of which `K`
 are marked; it is `0` for `k > n`. The parameter domain is `K ≤ N`, `n ≤ N`; outside it the
 value is not a probability (`N - K` truncates, and `C(N, n) = 0` makes it `0` for `n > N`). -/
 noncomputable def hypergeometricReal (N K n k : ℕ) : ℝ :=
   if k ≤ n then (K.choose k * (N - K).choose (n - k) : ℝ) / N.choose n else 0
 
-/-- **Nonnegativity of the hypergeometric mass function.** The hypergeometric mass function is nonnegative. -/
+/-- The hypergeometric mass function is nonnegative. -/
 theorem hypergeometricReal_nonneg (N K n k : ℕ) : 0 ≤ hypergeometricReal N K n k := by
   unfold hypergeometricReal
   split_ifs <;> positivity
 
-/-- **Hypergeometric mass vanishes above the number of draws.** The hypergeometric mass function vanishes above the number of draws. -/
+/-- The hypergeometric mass function vanishes above the number of draws. -/
 theorem hypergeometricReal_of_lt {N K n k : ℕ} (h : n < k) : hypergeometricReal N K n k = 0 := by
   simp [hypergeometricReal, not_le.2 h]
 
-/-- **Hypergeometric mass vanishes above the number of marked items.** The hypergeometric mass function vanishes above the number of marked items. -/
+/-- The hypergeometric mass function vanishes above the number of marked items. -/
 theorem hypergeometricReal_of_lt' {N K n k : ℕ} (h : K < k) :
     hypergeometricReal N K n k = 0 := by
   simp [hypergeometricReal, Nat.choose_eq_zero_of_lt h]
@@ -126,7 +126,7 @@ theorem sum_mul_hypergeometricReal {N K n : ℕ} (hN : 0 < N) (hK : K ≤ N) (hn
     _ = n * K / N := by
         rw [div_eq_div_iff hpos.ne' hNpos.ne', h]
 
-/-- **Hypergeometric distribution.** The hypergeometric law on `ℕ` with population size `N`, `K ≤ N` marked items, and
+/-- The hypergeometric law on `ℕ` with population size `N`, `K ≤ N` marked items, and
 `n ≤ N` draws without replacement. -/
 noncomputable def hypergeometric (N K n : ℕ) (hK : K ≤ N) (hn : n ≤ N) : PMF ℕ :=
   PMF.ofFinset (fun k => ENNReal.ofReal (hypergeometricReal N K n k)) (range (n + 1))
@@ -136,7 +136,7 @@ noncomputable def hypergeometric (N K n : ℕ) (hK : K ≤ N) (hn : n ≤ N) : P
     (fun k hk => by
       rw [hypergeometricReal_of_lt (by simpa [Nat.lt_succ_iff] using hk), ENNReal.ofReal_zero])
 
-/-- **Point masses of the hypergeometric distribution.** The mass of `k` under `hypergeometric N K n` is `hypergeometricReal N K n k`. -/
+/-- The mass of `k` under `hypergeometric N K n` is `hypergeometricReal N K n k`. -/
 theorem hypergeometric_apply {N K n : ℕ} (hK : K ≤ N) (hn : n ≤ N) (k : ℕ) :
     hypergeometric N K n hK hn k = ENNReal.ofReal (hypergeometricReal N K n k) := rfl
 

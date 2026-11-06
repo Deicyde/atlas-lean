@@ -89,13 +89,13 @@ theorem inv_toBlocks₁₁_inv {S : Matrix (ι ⊕ κ) (ι ⊕ κ) ℝ} (hS : S.
   simpa only [invOf_eq_nonsing_inv] using
     inv_inv_of_invertible (S.toBlocks₁₁ - S.toBlocks₁₂ * ⅟S.toBlocks₂₂ * S.toBlocks₂₁)
 
-/-- **Partial correlation from the conditional covariance.** The partial correlation of coordinates `0` and `1` given the `κ`-block, computed from the
+/-- The partial correlation of coordinates `0` and `1` given the `κ`-block, computed from the
 conditional covariance `C = S₁₁ - S₁₂ S₂₂⁻¹ S₂₁`: `C₀₁ / √(C₀₀ C₁₁)`. -/
 noncomputable def partialCorrelation (S : Matrix (Fin 2 ⊕ κ) (Fin 2 ⊕ κ) ℝ) : ℝ :=
   let C := S.toBlocks₁₁ - S.toBlocks₁₂ * S.toBlocks₂₂⁻¹ * S.toBlocks₂₁
   C 0 1 / √(C 0 0 * C 1 1)
 
-/-- **Partial correlation from the precision matrix.** The partial correlation from the precision matrix: `ρ₁₂·rest = -Ω₀₁ / √(Ω₀₀ Ω₁₁)`. -/
+/-- The partial correlation from the precision matrix: `ρ₁₂·rest = -Ω₀₁ / √(Ω₀₀ Ω₁₁)`. -/
 theorem partialCorrelation_eq {S : Matrix (Fin 2 ⊕ κ) (Fin 2 ⊕ κ) ℝ} (hS : S.PosDef) :
     partialCorrelation S =
       -S⁻¹ (.inl 0) (.inl 1) / √(S⁻¹ (.inl 0) (.inl 0) * S⁻¹ (.inl 1) (.inl 1)) := by
@@ -123,11 +123,11 @@ section CondIndep
 
 variable {κ : Type*}
 
-/-- **Conditioning block of a vector.** The `κ`-block (the conditioning coordinates) of a vector on `Fin 2 ⊕ κ`. -/
+/-- The `κ`-block (the conditioning coordinates) of a vector on `Fin 2 ⊕ κ`. -/
 noncomputable def rest (v : EuclideanSpace ℝ (Fin 2 ⊕ κ)) : EuclideanSpace ℝ κ :=
   toLp 2 fun j => v (.inr j)
 
-/-- **Measurability of the conditioning block.** The `κ`-block is a measurable function of the vector. -/
+/-- The `κ`-block is a measurable function of the vector. -/
 theorem measurable_rest [Finite κ] : Measurable (rest (κ := κ)) := by
   classical
   have := Fintype.ofFinite κ
@@ -253,11 +253,11 @@ section Dempster
 
 variable {ι : Type*} [Fintype ι]
 
-/-- **Sample second-moment matrix.** The sample second-moment matrix `m⁻¹ ∑ₛ xₛ xₛᵀ` of `m` observations in `ℝ^ι`. -/
+/-- The sample second-moment matrix `m⁻¹ ∑ₛ xₛ xₛᵀ` of `m` observations in `ℝ^ι`. -/
 noncomputable def sampleCov {m : ℕ} (x : Fin m → ι → ℝ) : Matrix ι ι ℝ :=
   (m : ℝ)⁻¹ • ∑ s, vecMulVec (x s) (x s)
 
-/-- **Sum of sample quadratic forms as a trace.** The quadratic forms of a sample add up to `m · tr (S K)`. -/
+/-- The quadratic forms of a sample add up to `m · tr (S K)`. -/
 theorem sum_dotProduct_mulVec_eq {m : ℕ} (hm : 0 < m) (x : Fin m → ι → ℝ) (K : Matrix ι ι ℝ) :
     ∑ s, x s ⬝ᵥ K *ᵥ x s = m * (sampleCov x * K).trace := by
   classical
@@ -271,10 +271,10 @@ theorem sum_dotProduct_mulVec_eq {m : ℕ} (hm : 0 < m) (x : Fin m → ι → �
 
 variable [DecidableEq ι]
 
-/-- **Gaussian log-likelihood of a precision matrix.** The Gaussian log-likelihood objective `log det K - tr (S K)` of a precision matrix `K`. -/
+/-- The Gaussian log-likelihood objective `log det K - tr (S K)` of a precision matrix `K`. -/
 noncomputable def gaussLogLik (S K : Matrix ι ι ℝ) : ℝ := log K.det - (S * K).trace
 
-/-- **Matrix supported on the edges of a graph.** A matrix vanishes off the edges of `G`: `K i j = 0` for distinct non-adjacent `i, j`. -/
+/-- A matrix vanishes off the edges of `G`: `K i j = 0` for distinct non-adjacent `i, j`. -/
 def IsSupportedOn (G : SimpleGraph ι) (K : Matrix ι ι ℝ) : Prop :=
   ∀ i j, i ≠ j → ¬ G.Adj i j → K i j = 0
 

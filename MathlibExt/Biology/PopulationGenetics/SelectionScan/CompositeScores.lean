@@ -75,7 +75,7 @@ namespace MathlibExt.Biology.PopulationGenetics.SelectionScan
 
 /-! ### The composite of multiple signals -/
 
-/-- **Composite selection score model.** A composite-score model (Grossman et al. 2010): a prior probability `prior` that the site
+/-- A composite-score model (Grossman et al. 2010): a prior probability `prior` that the site
 is under selection, and for each of the `k` component statistics a positive score function
 `sel` under selection and `neut` under neutrality (unnormalized densities: only positivity is
 assumed). Conditionally on the hypothesis the components are independent, which is what
@@ -101,14 +101,14 @@ namespace CompositeModel
 
 variable {k : ℕ} {σ : Fin k → Type*} (M : CompositeModel k σ) (x : ∀ i, σ i)
 
-/-- **Bayes factor of a component statistic.** The Bayes factor of component `i` at the observed value: the ratio of its score
+/-- The Bayes factor of component `i` at the observed value: the ratio of its score
 function under selection to its score function under neutrality. -/
 noncomputable def bayesFactor (i : Fin k) (y : σ i) : ℝ := M.sel i y / M.neut i y
 
-/-- **Composite of multiple signals (CMS) score.** The CMS score: the product of the component Bayes factors. -/
+/-- The CMS score: the product of the component Bayes factors. -/
 noncomputable def cms : ℝ := ∏ i, M.bayesFactor i (x i)
 
-/-- **Normalized composite score.** The normalized composite score: the normalized ratio of the products of the
+/-- The normalized composite score: the normalized ratio of the products of the
 component score functions. This is the posterior probability of selection given the
 observed component values when the score functions are normalized densities
 (see `sum_joint_eq_one` for the normalization hypothesis). -/
@@ -116,7 +116,7 @@ noncomputable def posterior : ℝ :=
   M.prior * (∏ i, M.sel i (x i)) /
     (M.prior * (∏ i, M.sel i (x i)) + (1 - M.prior) * ∏ i, M.neut i (x i))
 
-/-- **Positivity of component Bayes factors.** Every component Bayes factor is positive. -/
+/-- Every component Bayes factor is positive. -/
 theorem bayesFactor_pos (i : Fin k) (y : σ i) : 0 < M.bayesFactor i y :=
   div_pos (M.sel_pos i y) (M.neut_pos i y)
 
@@ -138,7 +138,7 @@ private lemma denom_pos :
   have : 0 < 1 - M.prior := by linarith
   positivity
 
-/-- **CMS score as a ratio of joint densities.** The CMS score is the ratio of the two joint densities. -/
+/-- The CMS score is the ratio of the two joint densities. -/
 theorem cms_eq_div : M.cms x = (∏ i, M.sel i (x i)) / ∏ i, M.neut i (x i) := by
   rw [cms, ← Finset.prod_div_distrib]
   rfl
@@ -154,7 +154,7 @@ theorem posterior_mem_Ioo : M.posterior x ∈ Set.Ioo (0 : ℝ) 1 := by
   · rw [posterior, div_lt_one hD]
     nlinarith
 
-/-- **Posterior odds equal prior odds times the CMS score.** Bayes-rule identity for conditionally independent components: the posterior odds of
+/-- Bayes-rule identity for conditionally independent components: the posterior odds of
 selection are the prior odds times the CMS score. This is an algebraic identity for the
 normalized score; it is a genuine Bayes rule only under the normalization hypothesis of
 `sum_joint_eq_one`. -/
@@ -175,7 +175,7 @@ theorem posterior_odds :
   rw [div_div_div_comm]
   field_simp
 
-/-- **Additivity of evidence on the log-odds scale.** On the log scale the evidence is additive: the log posterior odds are the log prior odds
+/-- On the log scale the evidence is additive: the log posterior odds are the log prior odds
 plus the sum of the log Bayes factors of the component statistics. -/
 theorem log_posterior_odds :
     log (M.posterior x / (1 - M.posterior x))
@@ -187,7 +187,7 @@ theorem log_posterior_odds :
     Real.log_prod (s := Finset.univ) (f := fun i => M.bayesFactor i (x i))
       fun i _ => (M.bayesFactor_pos i (x i)).ne']
 
-/-- **Posterior probability is strictly increasing in the CMS score.** The posterior probability is a strictly increasing function of the CMS score, so the two
+/-- The posterior probability is a strictly increasing function of the CMS score, so the two
 rankings of sites agree. -/
 theorem posterior_lt_posterior_of_cms_lt (y : ∀ i, σ i) (h : M.cms x < M.cms y) :
     M.posterior x < M.posterior y := by
@@ -209,7 +209,7 @@ theorem posterior_lt_posterior_of_cms_lt (y : ∀ i, σ i) (h : M.cms x < M.cms 
   have hpos : 0 < 1 + (1 - M.prior) / M.prior / M.cms y := by positivity
   exact one_div_lt_one_div_of_lt hpos (by linarith)
 
-/-- **Normalization of the composite score model.** The model is a probability model: with normalised component score functions (each a
+/-- The model is a probability model: with normalised component score functions (each a
 density with respect to a common base measure), the joint distribution of the
 observations sums to one. This is the validity hypothesis that makes `posterior` a
 genuine Bayes posterior. -/
@@ -236,7 +236,7 @@ end CompositeModel
 
 /-! ### Identifiability of a sweep location and strength -/
 
-/-- **Probability of escaping a selective sweep.** The probability that a lineage at position `y` escapes a sweep located at `x`, with
+/-- The probability that a lineage at position `y` escapes a sweep located at `x`, with
 compound strength parameter `α > 0`: `1 - exp (-α |y - x|)` (Kim and Stephan 2002;
 Nielsen et al. 2005). The parameter `α` is proportional to the recombination rate per unit
 distance divided by the selection coefficient. -/
@@ -251,7 +251,7 @@ theorem escapeProb_mem_Ico {α : ℝ} (hα : 0 ≤ α) (x y : ℝ) :
   · have : 0 < exp (-α * |y - x|) := exp_pos _
     simpa [escapeProb] using this
 
-/-- **Escape probability vanishes only at the swept site.** No lineage escapes at the swept site itself, and nowhere else. -/
+/-- No lineage escapes at the swept site itself, and nowhere else. -/
 theorem escapeProb_eq_zero_iff {α : ℝ} (hα : 0 < α) (x y : ℝ) :
     escapeProb α x y = 0 ↔ y = x := by
   rw [escapeProb, sub_eq_zero]
@@ -270,7 +270,7 @@ theorem escapeProb_eq_zero_iff {α : ℝ} (hα : 0 < α) (x y : ℝ) :
     subst h
     simp
 
-/-- **Escape profile determines sweep location and strength.** The escape-probability profile determines the sweep location and its strength. Positivity
+/-- The escape-probability profile determines the sweep location and its strength. Positivity
 of one of the two strength parameters is enough: the location is the unique zero of that
 profile, and the strengths then agree by injectivity of `exp`. -/
 theorem escapeProb_inj {α₁ α₂ x₁ x₂ : ℝ} (hα₂ : 0 < α₂)
@@ -287,7 +287,7 @@ theorem escapeProb_inj {α₁ α₂ x₁ x₂ : ℝ} (hα₂ : 0 < α₂)
   have := Real.exp_injective h1
   linarith
 
-/-- **Uniqueness of the mixing weight of a two-component mixture.** A mixture of two distinct laws determines its mixing weight. -/
+/-- A mixture of two distinct laws determines its mixing weight. -/
 theorem mixture_weight_unique {β : Type*} {f g : β → ℝ} (hfg : f ≠ g) {p q : ℝ}
     (h : ∀ b, p * f b + (1 - p) * g b = q * f b + (1 - q) * g b) : p = q := by
   obtain ⟨b, hb⟩ := Function.ne_iff.mp hfg
@@ -296,7 +296,7 @@ theorem mixture_weight_unique {β : Type*} {f g : β → ℝ} (hfg : f ≠ g) {p
   · linarith
   · exact absurd (sub_eq_zero.mp h1) hb
 
-/-- **Identifiability of sweep parameters from frequency spectra.** Identifiability of the sweep parameters from the per-site frequency spectra. If the
+/-- Identifiability of the sweep parameters from the per-site frequency spectra. If the
 neutral spectrum `f` and the post-sweep spectrum `g` differ, and two sweep parameter pairs
 give the same mixture at every position, then the parameters coincide. This is what the
 composite likelihood of SweepFinder maximises over. -/

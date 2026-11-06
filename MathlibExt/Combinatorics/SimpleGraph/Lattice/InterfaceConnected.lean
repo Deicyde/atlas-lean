@@ -77,7 +77,7 @@ theorem dartNext_dir_eq_rot90_of_front (K : Set (Site 2)) (e : Dart)
     (dartNext K e).dir = rot90Fun e.dir :=
   (dartNext_front_head K e hA).2
 
-/-- **Inner corner of a boundary dart.** The site `e.head + r`, with `r` the clockwise rotation of `e.dir`, lies in `K`; then the
+/-- The site `e.head + r`, with `r` the clockwise rotation of `e.dir`, lies in `K`; then the
 successor of `e` has the same head. -/
 def IsInnerCorner (K : Set (Site 2)) (e : Dart) : Prop :=
   e.head + (-rot90Fun e.dir) ∈ K
@@ -109,7 +109,7 @@ theorem dartNext_iterate_isBoundary_head_fixed (K : Set (Site 2)) (e : Dart)
       ((dartNext K)^[k] e).dir = (rot90Fun)^[k] e.dir := by
   refine ⟨iterate_isBoundaryDart K e he k, dartNext_iterate_head_fixed K e k hcorner⟩
 
-/-- **Two darts in the same boundary orbit.** The dart `f` is obtained from `e` by iterating the boundary successor map of `K`. -/
+/-- The dart `f` is obtained from `e` by iterating the boundary successor map of `K`. -/
 def SameOrbit (K : Set (Site 2)) (e f : Dart) : Prop := ∃ n : ℕ, (dartNext K)^[n] e = f
 
 theorem SameOrbit.refl (K : Set (Site 2)) (e : Dart) : SameOrbit K e e := ⟨0, rfl⟩
@@ -153,7 +153,7 @@ theorem interfaceConnected_iff_sameOrbit (K : Set (Site 2)) :
           SameOrbit K e f :=
   Iff.rfl
 
-/-- **Orbit saturation by heads connected in the complement.** Boundary darts whose heads are connected in `Kᶜ` lie in the same orbit; a reformulation of
+/-- Boundary darts whose heads are connected in `Kᶜ` lie in the same orbit; a reformulation of
 `StatMech.Lattice.InterfaceConnected`. -/
 def OrbitHeadsSaturate (K : Set (Site 2)) : Prop :=
   ∀ (e f : Dart), IsBoundaryDart K e → IsBoundaryDart K f →
@@ -171,14 +171,14 @@ theorem orbitHeadsSaturate_of_interfaceConnected (K : Set (Site 2))
   intro e f he hf hreach
   exact h e f he hf (hreach he hf)
 
-/-- **King adjacency on the square lattice.** King adjacency on `ℤ²`: distinct sites that differ by at most one in each coordinate. -/
+/-- King adjacency on `ℤ²`: distinct sites that differ by at most one in each coordinate. -/
 def KingAdj (u v : Site 2) : Prop := u ≠ v ∧ ∀ i, (u i - v i).natAbs ≤ 1
 
 theorem KingAdj.symm {u v : Site 2} (h : KingAdj u v) : KingAdj v u := by
   refine ⟨h.1.symm, fun i => ?_⟩
   rw [← Int.natAbs_neg, neg_sub]; exact h.2 i
 
-/-- **King-move graph on the complement of a set.** The graph of king moves on the complement of `K`. -/
+/-- The graph of king moves on the complement of `K`. -/
 def boundaryKingGraph (K : Set (Site 2)) : SimpleGraph (↥(Kᶜ : Set (Site 2))) where
   Adj a b := KingAdj (a : Site 2) (b : Site 2)
   symm := ⟨fun _ _ h => h.symm⟩
@@ -187,7 +187,7 @@ def boundaryKingGraph (K : Set (Site 2)) : SimpleGraph (↥(Kᶜ : Set (Site 2))
 theorem boundaryKingGraph_adj (K : Set (Site 2)) (a b : ↥(Kᶜ : Set (Site 2))) :
     (boundaryKingGraph K).Adj a b ↔ KingAdj (a : Site 2) (b : Site 2) := Iff.rfl
 
-/-- **Site reached by a boundary orbit.** Some boundary dart in the orbit of `e` has head `v`. -/
+/-- Some boundary dart in the orbit of `e` has head `v`. -/
 def OrbitReached (K : Set (Site 2)) (e : Dart) (v : Site 2) : Prop :=
   ∃ d : Dart, IsBoundaryDart K d ∧ d.head = v ∧ SameOrbit K e d
 
@@ -195,19 +195,19 @@ theorem orbitReached_self (K : Set (Site 2)) (e : Dart) (he : IsBoundaryDart K e
     OrbitReached K e e.head :=
   ⟨e, he, rfl, SameOrbit.refl K e⟩
 
-/-- **Boundary orbits spread along king moves.** If the orbit of `e` reaches a site outside `K`, it reaches every king neighbour of that site
+/-- If the orbit of `e` reaches a site outside `K`, it reaches every king neighbour of that site
 outside `K`. -/
 def OrbitKingTransport (K : Set (Site 2)) : Prop :=
   ∀ (e : Dart), IsBoundaryDart K e →
     ∀ {u v : Site 2}, u ∉ K → v ∉ K → KingAdj u v →
       OrbitReached K e u → OrbitReached K e v
 
-/-- **Orbit saturation at reached sites.** Every boundary dart whose head is reached by the orbit of `e` lies in that orbit. -/
+/-- Every boundary dart whose head is reached by the orbit of `e` lies in that orbit. -/
 def OrbitVertexSaturate (K : Set (Site 2)) : Prop :=
   ∀ (e : Dart), IsBoundaryDart K e → ∀ {v : Site 2}, OrbitReached K e v →
     ∀ d : Dart, IsBoundaryDart K d → d.head = v → SameOrbit K e d
 
-/-- **Lattice connectivity in the complement implies king connectivity.** Sites connected by a lattice path in `Kᶜ` are connected by king moves in `Kᶜ`. -/
+/-- Sites connected by a lattice path in `Kᶜ` are connected by king moves in `Kᶜ`. -/
 def BoundaryKingConnected (K : Set (Site 2)) : Prop :=
   ∀ {u w : Site 2} (hu : u ∉ K) (hw : w ∉ K),
     ((hypercubicLattice 2).induce Kᶜ).Reachable ⟨u, hu⟩ ⟨w, hw⟩ →

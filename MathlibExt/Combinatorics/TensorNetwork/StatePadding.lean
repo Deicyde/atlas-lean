@@ -31,7 +31,7 @@ open Finset
 
 variable {J σ₀ σ₁ τ : Type*}
 
-/-- **State padding preserves the weighted pair sum.** Padding the finite state sets preserves the full sum of vertex weights and arbitrary pair
+/-- Padding the finite state sets preserves the full sum of vertex weights and arbitrary pair
 kernels. No factorization, finiteness of the state carriers, or global injectivity is required. -/
 theorem sum_statePadding [Fintype J] [LinearOrder J]
     (S₀ : J → Finset σ₀) (S₁ : J → Finset σ₁)
@@ -77,7 +77,7 @@ theorem sum_statePadding [Fintype J] [LinearOrder J]
 
 namespace Factored
 
-/-- **State padding of a factored tensor network.** The source's local padding protocol for factored networks. The factor clause is retained
+/-- The source's local padding protocol for factored networks. The factor clause is retained
 on source states and source labels, even though value preservation uses the interaction clause.
 Only capacities between distinct vertices must agree. -/
 structure StatePadding [LinearOrder J]
@@ -99,7 +99,7 @@ structure StatePadding [LinearOrder J]
   f : ∀ a b, a ≠ b → ∀ z ∈ N₀.S a, ∀ θ ∈ N₀.labelSet a b,
     N₁.f a b (pad a z) θ = N₀.f a b z θ
 
-/-- **State padding preserves value and total capacity.** A local state-padding certificate preserves both network value and directed total capacity. -/
+/-- A local state-padding certificate preserves both network value and directed total capacity. -/
 theorem StatePadding.value_totalCapacity [Fintype J] [LinearOrder J]
     {N₀ : Factored J σ₀ τ} {N₁ : Factored J σ₁ τ} {pad : J → σ₀ → σ₁}
     (h : StatePadding N₀ N₁ pad) :

@@ -239,20 +239,20 @@ private lemma integrable_pdf {ι E : Type*} [Fintype ι] [DecidableEq ι]
     (ae_of_all _ fun _ => ENNReal.ofReal_lt_top)).1 hf
   simpa only [Function.comp_apply, ENNReal.toReal_ofReal (pdf_nonneg _ _ _)] using h
 
-/-- **Mean fitness of a multivariate normal trait.** The mean fitness `w̄(μ) = 𝔼[W z]` of a population whose trait vector is distributed as
+/-- The mean fitness `w̄(μ) = 𝔼[W z]` of a population whose trait vector is distributed as
 `N(μ, P)`. -/
 noncomputable def meanFitnessMV (W : EuclideanSpace ℝ ι → ℝ) (P : Matrix ι ι ℝ)
     (μ : EuclideanSpace ℝ ι) : ℝ :=
   ∫ z, W z ∂multivariateGaussian μ P
 
-/-- **Multivariate directional selection differential.** The directional selection differential `S = 𝔼[W z · (z - μ)] / w̄` of a trait vector
+/-- The directional selection differential `S = 𝔼[W z · (z - μ)] / w̄` of a trait vector
 distributed as `N(μ, P)`: the fitness-weighted mean trait vector of the selected parents minus
 the mean `μ` before selection. If `w̄ = 0` it is the junk value `0`. -/
 noncomputable def selectionDifferentialMV (W : EuclideanSpace ℝ ι → ℝ) (P : Matrix ι ι ℝ)
     (μ : EuclideanSpace ℝ ι) : EuclideanSpace ℝ ι :=
   (meanFitnessMV W P μ)⁻¹ • ∫ z, W z • (z - μ) ∂multivariateGaussian μ P
 
-/-- **Lande's gradient of mean fitness for multivariate traits.** The gradient of mean fitness with respect to the vector of trait means is
+/-- The gradient of mean fitness with respect to the vector of trait means is
 `∇_μ w̄(μ) = P⁻¹ 𝔼[W z · (z - μ)]`, for positive definite `P` and bounded measurable `W`. -/
 theorem hasGradientAt_meanFitnessMV {W : EuclideanSpace ℝ ι → ℝ} (hWm : Measurable W)
     (hWb : ∃ C, ∀ z, |W z| ≤ C) {P : Matrix ι ι ℝ} (hP : P.PosDef) (μ : EuclideanSpace ℝ ι) :

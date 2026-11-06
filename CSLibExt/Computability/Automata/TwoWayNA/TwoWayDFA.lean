@@ -53,10 +53,8 @@ namespace Cslib.Automata
 
 variable {State Symbol : Type*}
 
-/-- **Deterministic two-way automaton.** A deterministic two-way automaton with state set $Q$
-over the alphabet $\Sigma$ consists of a partial transition function, which assigns to each
-state $q \in Q$ and input symbol $a \in \Sigma$ at most one pair of a successor state and a head
-move (left, stay or right), together with a single start state and a set of accepting states. -/
+/-- A deterministic two-way automaton: at most one successor state and head move per
+state and input symbol. -/
 structure TwoWayDFA (State Symbol : Type*) where
   /-- The deterministic transition function: `step q a` is the successor state and head
   move when reading `a` in state `q`, or `none` when the run gets stuck. -/
@@ -68,28 +66,19 @@ structure TwoWayDFA (State Symbol : Type*) where
 
 namespace TwoWayDFA
 
-/-- **A deterministic two-way automaton as a nondeterministic one.** A deterministic two-way
-automaton $A$ is viewed as the nondeterministic two-way automaton with the same states and
-accepting states, whose only start state is the start state of $A$, and which can go from state
-$q$ reading a symbol $a$ to state $q'$ with head move $m$ exactly when the step function of $A$
-at $q$ and $a$ returns $q'$ and $m$. -/
+/-- A deterministic two-way automaton as a nondeterministic two-way automaton. -/
 def toTwoWayNA (A : TwoWayDFA State Symbol) : TwoWayNA State Symbol where
   Tr q x m q' := A.step q x = some (q', m)
   start := {A.start}
   accept := A.accept
 
-/-- **Transition relation of a deterministic two-way automaton.** Let $A$ be a deterministic
-two-way automaton, viewed as a nondeterministic two-way automaton. On reading the symbol $x$ in
-state $q$, it has a transition to state $q'$ with head move $m$ if and only if the transition
-function of $A$ sends $(q, x)$ to the pair $(q', m)$. -/
+/-- The transition relation of the nondeterministic rendering is the step function. -/
 theorem tr_iff {A : TwoWayDFA State Symbol} {q : State} {x : Symbol} {m : SignType}
     {q' : State} : A.toTwoWayNA.Tr q x m q' ↔ A.step q x = some (q', m) :=
   Iff.rfl
 
-/-- **Deterministic two-way automata have unique transitions.** Let $A$ be a deterministic
-two-way automaton, viewed as a nondeterministic two-way automaton. If, on reading the symbol
-$x$ in state $q$, it has a transition to state $q'$ with head move $m$ and a transition to
-state $q''$ with head move $m'$, then $m = m'$ and $q' = q''$. -/
+/-- **Determinism**: the transition relation of a deterministic two-way automaton is
+functional. -/
 theorem tr_functional {A : TwoWayDFA State Symbol} {q : State} {x : Symbol} {m m' : SignType}
     {q' q'' : State} (h₁ : A.toTwoWayNA.Tr q x m q') (h₂ : A.toTwoWayNA.Tr q x m' q'') :
     (m, q') = (m', q'') := by
@@ -98,42 +87,33 @@ theorem tr_functional {A : TwoWayDFA State Symbol} {q : State} {x : Symbol} {m m
   have h : (q'', m') = (q', m) := Option.some.inj (h₂.symm.trans h₁)
   exact Prod.ext (congrArg Prod.snd h).symm (congrArg Prod.fst h).symm
 
-/-- **Language of a deterministic two-way automaton.** The language of a deterministic two-way
-automaton $A$ is the set of words accepted by $A$ viewed as a nondeterministic two-way
-automaton: a word $w$ belongs to it when, starting in the start state with the head at the
-first position of $w$ and following the step function of $A$ (which moves the head one
-position left, keeps it in place, or moves it one position right, and gets stuck when it is
-undefined or would move the head left of the first position), the automaton reaches an
-accepting state with the head just past the last symbol of $w$. -/
+/-- The language accepted by a deterministic two-way automaton, via its nondeterministic
+rendering. -/
 def language (A : TwoWayDFA State Symbol) : Language Symbol :=
   Acceptor.language A.toTwoWayNA
 
-/-- **Membership in the language of a two-way deterministic automaton.** For every
-deterministic two-way automaton $A$ and every word $w$, $w$ belongs to the language of $A$ if
-and only if $w$ is accepted by $A$ viewed as a nondeterministic two-way automaton. -/
+/-- Membership in the language of a deterministic two-way automaton is acceptance by its
+nondeterministic rendering. -/
 theorem mem_language (A : TwoWayDFA State Symbol) (xs : List Symbol) :
     xs ∈ A.language ↔ Acceptor.Accepts A.toTwoWayNA xs :=
   Iff.rfl
 
-/-- **Finite two-way deterministic automata accept regular languages.** The language of every
-deterministic two-way automaton with finitely many states is regular. -/
+/-- A deterministic two-way automaton over finitely many states accepts a regular
+language. The state type is in `Type`, matching Mathlib's `Language.IsRegular`, which
+quantifies over state types in `Type`. -/
 theorem language_isRegular {State : Type} [Finite State] (A : TwoWayDFA State Symbol) :
     A.language.IsRegular :=
   Cslib.Language.IsRegular.iff_twoWayNA.2 ⟨State, inferInstance, A.toTwoWayNA, rfl⟩
 
-/-- **A DFA as a two-way deterministic automaton.** For a DFA $M$ with transition function
-$\delta$, this is the deterministic two-way automaton with the same states, start state and
-accepting states as $M$ which, in state $q$ reading a symbol $a$, goes to state $\delta(q, a)$
-and moves its head one symbol to the right. -/
+/-- The deterministic two-way automaton simulating a DFA, always moving its head one
+symbol to the right. -/
 def ofDFA (M : DFA Symbol State) : TwoWayDFA State Symbol where
   step q a := some (M.step q a, SignType.pos)
   start := M.start
   accept := M.accept
 
-/-- **The two-way simulation of a DFA agrees with that of its NFA.** For every DFA $M$, the
-deterministic two-way automaton that simulates $M$, viewed as a nondeterministic two-way
-automaton, equals the nondeterministic two-way automaton obtained by viewing $M$ as an NFA and
-letting that NFA always move its head one symbol to the right. -/
+/-- The nondeterministic rendering of the DFA simulation is the two-way rendering of
+the NFA obtained from the DFA. -/
 theorem toTwoWayNA_ofDFA (M : DFA Symbol State) :
     (TwoWayDFA.ofDFA M).toTwoWayNA =
       (DA.FinAcc.toNAFinAcc (DA.FinAcc.ofDFA M)).toTwoWayNA := by
@@ -151,18 +131,15 @@ theorem toTwoWayNA_ofDFA (M : DFA Symbol State) :
   · rintro ⟨h₁, h₂⟩
     exact ⟨h₂, h₁.symm⟩
 
-/-- **The two-way simulation of a DFA accepts the same language.** For every DFA $M$, the
-deterministic two-way automaton that simulates $M$ by always moving its head one symbol to the
-right has exactly the language accepted by $M$. -/
+/-- A DFA and its always-right deterministic two-way rendering accept the same
+language. -/
 theorem language_ofDFA (M : DFA Symbol State) :
     (TwoWayDFA.ofDFA M).language = M.accepts := by
   unfold language
   rw [toTwoWayNA_ofDFA, TwoWayNA.language_toTwoWayNA,
     DA.FinAcc.toNAFinAcc_language_eq, DA.FinAcc.accepts_ofDFA]
 
-/-- **Regular languages are accepted by two-way deterministic automata.** For every regular
-language $L$ over an alphabet, there is a deterministic two-way automaton with finitely many
-states whose language is exactly $L$. -/
+/-- Every regular language is accepted by a deterministic two-way automaton. -/
 theorem exists_ofDFA_of_isRegular {L : Language Symbol} (hL : L.IsRegular) :
     ∃ (S : Type) (_ : Fintype S) (A : TwoWayDFA S Symbol), A.language = L := by
   obtain ⟨σ, _, M, rfl⟩ := hL
@@ -170,27 +147,14 @@ theorem exists_ofDFA_of_isRegular {L : Language Symbol} (hL : L.IsRegular) :
 
 end TwoWayDFA
 
-/-- **Finite two-way nondeterministic automata accept regular languages.** Every
-nondeterministic two-way automaton with finitely many states accepts a regular language.
-
-A run of such an automaton on a word starts in a start state with the head at the first
-position; each step reads the symbol under the head, changes the state and moves the head one
-position left, keeps it in place, or moves it one position right, and the run is stuck if the
-head would move left of the first position. A word is accepted when some run ends in an
-accepting state with the head just past the last symbol. -/
+/-- Every upstream nondeterministic two-way automaton over finitely many states accepts
+a regular language. The state type is in `Type`, matching Mathlib's `Language.IsRegular`. -/
 theorem TwoWayNA.language_isRegular {State : Type} [Finite State] (a : TwoWayNA State Symbol) :
     (Acceptor.language a).IsRegular :=
   Cslib.Language.IsRegular.iff_twoWayNA.2 ⟨State, inferInstance, a, rfl⟩
 
-/-- **Regular languages are accepted by two-way nondeterministic automata.** For every
-regular language $L$ over an alphabet, there is a nondeterministic two-way automaton with
-finitely many states that accepts exactly the words of $L$.
-
-A run of such an automaton on a word starts in a start state with the head at the first
-position; each step reads the symbol under the head, changes the state and moves the head one
-position left, keeps it in place, or moves it one position right, and the run is stuck if the
-head would move left of the first position. A word is accepted when some run ends in an
-accepting state with the head just past the last symbol. -/
+/-- Every regular language is accepted by an upstream nondeterministic two-way
+automaton. -/
 theorem exists_twoWayNA_of_isRegular {L : Language Symbol} (hL : L.IsRegular) :
     ∃ (S : Type) (_ : Finite S) (a : TwoWayNA S Symbol),
       Acceptor.language a = L :=

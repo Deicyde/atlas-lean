@@ -102,7 +102,7 @@ private theorem isPrecomplete_quotient {R : Type*} [CommRing R] (I P : Ideal R)
 
 end PowerSeriesDVRQuotientAux
 
-/-- **Power series over a DVR modulo $X - \varpi^e$ form a DVR.** Modulo `X - ϖ ^ e`, a power series ring over a discrete valuation ring is a
+/-- Modulo `X - ϖ ^ e`, a power series ring over a discrete valuation ring is a
 discrete valuation ring, with uniformizer the image of `ϖ`. -/
 theorem PowerSeries.isDiscreteValuationRing_quotient_span_X_sub_C_pow_of_irreducible
     {W : Type*} [CommRing W] [IsDomain W] [IsDiscreteValuationRing W]
@@ -243,7 +243,7 @@ theorem PowerSeries.isDiscreteValuationRing_quotient_span_X_sub_C_pow_of_irreduc
     ((IsDiscreteValuationRing.TFAE D hnf).out 5 1).mp hprinc
   exact ⟨hDdom, hDVR, (IsDiscreteValuationRing.irreducible_iff_uniformizer π).mpr hmax⟩
 
-/-- **Power series over a DVR modulo $X - \varpi^e$ form a local PID.** Modulo `X - ϖ ^ e`, a power series ring over a discrete valuation ring
+/-- Modulo `X - ϖ ^ e`, a power series ring over a discrete valuation ring
 is a principal ideal ring and a local ring, and the image of `ϖ` is
 irreducible. -/
 theorem PowerSeries.quotient_span_X_sub_C_pow_of_irreducible
@@ -266,7 +266,7 @@ theorem PowerSeries.quotient_span_X_sub_C_pow_of_irreducible
       Ideal.span {(PowerSeries.X : PowerSeries W) - PowerSeries.C (ϖ ^ e)}) := hdvr
   exact ⟨(Ideal.Quotient.isDomain_iff_prime _).mp hdom, inferInstance, inferInstance, hirr⟩
 
-/-- **Power series over a DVR modulo $X - \varpi$ form a complete DVR.** Modulo `X - ϖ`, a power series ring over a discrete valuation ring is a
+/-- Modulo `X - ϖ`, a power series ring over a discrete valuation ring is a
 discrete valuation ring, adically complete at its maximal ideal, with
 uniformizer the image of `ϖ`. -/
 theorem PowerSeries.isAdicComplete_quotient_span_X_sub_C_of_irreducible

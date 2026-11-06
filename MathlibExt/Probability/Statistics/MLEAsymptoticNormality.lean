@@ -92,7 +92,7 @@ theorem tendstoInMeasure_of_tendstoInDistribution_const [IsProbabilityMeasure P]
   refine tendsto_order.2 ⟨fun a ha => absurd ha ENNReal.not_lt_zero, fun a ha => ?_⟩
   exact eventually_lt_of_limsup_lt (hlim.trans_lt ha)
 
-/-- **Product of a distributionally convergent and a vanishing sequence.** A sequence `A i` converging in distribution, times a sequence `η i` converging in
+/-- A sequence `A i` converging in distribution, times a sequence `η i` converging in
 probability to `0`, converges in probability to `0` (a consequence of Slutsky's theorem). -/
 theorem TendstoInDistribution.mul_tendstoInMeasure_zero [IsProbabilityMeasure P]
     [IsProbabilityMeasure P'] [l.IsCountablyGenerated] {A η : ι → Ω → ℝ} {Z : Ω' → ℝ}
@@ -104,7 +104,7 @@ theorem TendstoInDistribution.mul_tendstoInMeasure_zero [IsProbabilityMeasure P]
   simp only [mul_zero] at h
   exact tendstoInMeasure_of_tendstoInDistribution_const h
 
-/-- **Convergence to zero in probability by domination on likely events.** If `|W i| ≤ V i` on events `G i` whose complements have probability tending to `0`, and
+/-- If `|W i| ≤ V i` on events `G i` whose complements have probability tending to `0`, and
 `V i` tends to `0` in probability, then `W i` tends to `0` in probability. -/
 theorem tendstoInMeasure_zero_of_abs_le {W V : ι → Ω → ℝ} {G : ι → Set Ω}
     (hV : TendstoInMeasure P V l 0) (hG : Tendsto (fun i => P (G i)ᶜ) l (𝓝 0))
@@ -146,11 +146,11 @@ variable {𝓧 : Type*} [MeasurableSpace 𝓧]
   {Ω : Type*} [MeasurableSpace Ω] {P : Measure Ω} [IsProbabilityMeasure P]
   {Ω' : Type*} [MeasurableSpace Ω'] {P' : Measure Ω'} [IsProbabilityMeasure P']
 
-/-- **Score function.** The **score** `∂_θ log p θ x` of a one-parameter family of densities `p`. -/
+/-- The **score** `∂_θ log p θ x` of a one-parameter family of densities `p`. -/
 noncomputable def score (p : ℝ → 𝓧 → ℝ) (θ : ℝ) (x : 𝓧) : ℝ :=
   deriv (fun t => Real.log (p t x)) θ
 
-/-- **Fisher information is the second moment of the score.** For a positive density family, `E_θ [score²] = I(θ)`: the Fisher information of
+/-- For a positive density family, `E_θ [score²] = I(θ)`: the Fisher information of
 `FisherInformation.fisherInformation` is the second moment of the score under `p θ ν`. -/
 theorem integral_score_sq {ν : Measure 𝓧} {p : ℝ → 𝓧 → ℝ} {θ : ℝ}
     (hp_pos : ∀ x, 0 < p θ x) (hp_meas : Measurable (p θ))

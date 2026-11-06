@@ -51,7 +51,7 @@ private theorem card_class_pairs_le [Fintype J] [DecidableEq J'] (chi : J → J'
   rw [h, Finset.card_product]
   exact Nat.mul_le_mul (hm G) (hm G')
 
-/-- **Shape bound for contracted tensor networks.** If every contraction class has at most `m` vertices, contraction multiplies the network's
+/-- If every contraction class has at most `m` vertices, contraction multiplies the network's
 shape parameter by `m`. -/
 theorem merge_shaped [Fintype J] [LinearOrder J] [Fintype J'] [LinearOrder J']
     (N : Factored J σ τ) (chi : J → J') (defaultState : σ) (defaultLabel : τ) {P m : ℕ}
@@ -112,7 +112,7 @@ theorem merge_shaped [Fintype J] [LinearOrder J] [Fintype J'] [LinearOrder J']
     · rw [labelSet_comm, hc]
       exact hlab _ _ hlt
 
-/-- **Size bound for contracted tensor networks.** If every contraction class has at most `m` vertices, contraction multiplies the shape
+/-- If every contraction class has at most `m` vertices, contraction multiplies the shape
 parameter by `m` and changes the absolute-value exponent from `B` to `B * (m + m * m)`. -/
 theorem merge_sized [Fintype J] [LinearOrder J] [Fintype J'] [LinearOrder J']
     (N : Factored J σ τ) (chi : J → J') (defaultState : σ) (defaultLabel : τ)

@@ -62,10 +62,7 @@ private lemma ksUnivariateSpecialization_eq_map_polynomialIn
         rw [hp]
         simp [hji]
 
-/-- **Stability of the determinant polynomial.** For every finite family $A_1, \dots, A_m$ of
-positive semidefinite complex square matrices whose rows and columns are indexed by a finite set
-$d$, the polynomial $\det\left(x I + \sum_{i=1}^m z_i A_i\right)$ in the variables
-$x, z_1, \dots, z_m$, where $I$ is the identity matrix, is stable. -/
+/-- The determinant polynomial of positive semidefinite matrices is stable. -/
 public theorem mixedDetPolynomial_isStable_of_posSemidef
     {m : ℕ} {d : Type*} [Fintype d] [DecidableEq d]
     (A : Fin m → Matrix d d ℂ) (hA : ∀ i, (A i).PosSemidef) :
@@ -132,10 +129,7 @@ private lemma ksMap_star_mixedDetPolynomial_of_isHermitian
       simpa [Matrix.conjTranspose_apply] using congrFun (congrFun (hA i).eq k) j
   rw [hmatrix, Matrix.det_transpose]
 
-/-- **Real stability of the determinant polynomial.** For every finite family $A_1, \dots, A_m$ of
-positive semidefinite complex square matrices whose rows and columns are indexed by a finite set
-$d$, the polynomial $\det\left(x I + \sum_{i=1}^m z_i A_i\right)$ in the variables
-$x, z_1, \dots, z_m$, where $I$ is the identity matrix, is real stable. -/
+/-- The determinant polynomial of positive semidefinite matrices is real stable. -/
 public theorem mixedDetPolynomial_isRealStable_of_posSemidef
     {m : ℕ} {d : Type*} [Fintype d] [DecidableEq d]
     (A : Fin m → Matrix d d ℂ) (hA : ∀ i, (A i).PosSemidef) :
@@ -342,26 +336,20 @@ private theorem ksMixedCharacteristicPolynomial_isMonicOfDegree
   · rw [ksMixedCharacteristicPolynomial_eq_specialization]
     exact ksMonicIn_specialization (ksMixedDifferential_monicIn A hd) (fun _ ↦ 0)
 
-/-- **Mixed characteristic polynomials are monic.** For every finite family $A_1, \dots, A_m$ of
-complex square matrices of a common size, the mixed characteristic polynomial of
-$A_1, \dots, A_m$ is monic. -/
+/-- A mixed characteristic polynomial is monic. -/
 public theorem mixedCharacteristicPolynomial_monic
     {m : ℕ} {d : Type*} [Fintype d] [DecidableEq d]
     (A : Fin m → Matrix d d ℂ) : (mixedCharacteristicPolynomial A).Monic :=
   (ksMixedCharacteristicPolynomial_isMonicOfDegree A).monic
 
-/-- **Degree of a mixed characteristic polynomial.** For every finite family $A_1, \dots, A_m$ of
-complex square matrices whose rows and columns are indexed by a finite set $d$, the mixed
-characteristic polynomial of $A_1, \dots, A_m$ has degree $|d|$, the number of elements of $d$. -/
+/-- The degree of a mixed characteristic polynomial equals the matrix dimension. -/
 public theorem mixedCharacteristicPolynomial_natDegree
     {m : ℕ} {d : Type*} [Fintype d] [DecidableEq d]
     (A : Fin m → Matrix d d ℂ) :
     (mixedCharacteristicPolynomial A).natDegree = Fintype.card d :=
   (ksMixedCharacteristicPolynomial_isMonicOfDegree A).natDegree_eq
 
-/-- **Mixed characteristic polynomials of positive semidefinite matrices are real-rooted.** For
-every finite family $A_1, \dots, A_m$ of positive semidefinite complex square matrices of a common
-size, the mixed characteristic polynomial of $A_1, \dots, A_m$ is real-rooted. -/
+/-- The mixed characteristic polynomial of positive semidefinite matrices is real-rooted. -/
 public theorem mixedCharacteristicPolynomial_isRealRooted_of_posSemidef
     {m : ℕ} {d : Type*} [Fintype d] [DecidableEq d]
     (A : Fin m → Matrix d d ℂ) (hA : ∀ i, (A i).PosSemidef) :

@@ -31,26 +31,21 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- **Solvable generalized Fermat equation.** For natural numbers $m$, $n$, $r$, the equation
-$x^m + y^n = z^r$ is called solvable when there are nonzero integers $x$, $y$, $z$ with
-$x^m + y^n = z^r$.
+/-- The equation `x^m + y^n = z^r` has a solution in nonzero integers `x`, `y`, `z`.
 
 Source: Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have
 Solutions?*, INTEGERS 24 (2024), Article A48, Section 1, equation (1). -/
 def GeneralizedFermatSolvable (m n r : ℕ) : Prop :=
   ∃ x y z : ℤ, x ≠ 0 ∧ y ≠ 0 ∧ z ≠ 0 ∧ x ^ m + y ^ n = z ^ r
 
-/-- **A solution of x³ + y⁶ = z².** The equation $x^3 + y^6 = z^2$ has a solution in nonzero
-integers, namely $2^3 + 1^6 = 3^2$.
+/-- `2^3 + 1^6 = 3^2`, so `x^3 + y^6 = z^2` is solvable.
 
 Source: Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have
 Solutions?*, INTEGERS 24 (2024), Article A48, Lemma 1 (the case `s = t = w = 1`). -/
 theorem generalizedFermatSolvable_three_six_two : GeneralizedFermatSolvable 3 6 2 :=
   ⟨2, 1, 3, by norm_num, by norm_num, by norm_num, by norm_num⟩
 
-/-- **Swapping the first two exponents of a generalized Fermat equation.** For natural numbers
-$m$, $n$, $r$, if $x^m + y^n = z^r$ has a solution in nonzero integers, then so does
-$x^n + y^m = z^r$.
+/-- Solvability is symmetric in the first two exponents.
 
 Source: Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have
 Solutions?*, INTEGERS 24 (2024), Article A48, Section 1, equation (1). -/
@@ -59,14 +54,11 @@ theorem GeneralizedFermatSolvable.swap {m n r : ℕ} (h : GeneralizedFermatSolva
   obtain ⟨x, y, z, hx, hy, hz, h⟩ := h
   exact ⟨y, x, z, hy, hx, hz, by rw [add_comm]; exact h⟩
 
-/-- **Generalized Fermat equations with two non-coprime pairs of exponents.** Let
-$m, n, r \ge 2$ be integers with $\gcd(m, n, r) = 1$ such that at least two of $\gcd(m, n)$,
-$\gcd(m, r)$ and $\gcd(n, r)$ are greater than $1$. Suppose there are no natural numbers
-$s, t, w$ that are pairwise coprime, with $s$ odd and $3 \nmid w$, such that $(m, n, r)$ is one
-of $(3s, 6t, 2w)$, $(6t, 3s, 2w)$, $(2w, 3s, 6t)$ and $(3s, 2w, 6t)$. Then the equation
-$x^m + y^n = z^r$ has no solution in nonzero integers $x, y, z$.
-
-Positivity of $s, t, w$ is automatic from $m, n, r \ge 2$.
+/-- Theorem 1: let `m, n, r ≥ 2` with `gcd(m, n, r) = 1` and at least two of
+`g₁ = gcd(m, n)`, `g₂ = gcd(m, r)`, `g₃ = gcd(n, r)` greater than one. Then `x^m + y^n = z^r`
+has no solution in nonzero integers, unless `(m, n, r)` is `(3s, 6t, 2w)`, `(6t, 3s, 2w)`,
+`(2w, 3s, 6t)` or `(3s, 2w, 6t)` for pairwise coprime `s, t, w` with `s` odd and `3 ∤ w`
+(positivity of `s, t, w` is automatic from `m, n, r ≥ 2`).
 
 Source: Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have
 Solutions?*, INTEGERS 24 (2024), Article A48, Theorem 1 (`integers-2024-A48-thm-1`). -/
@@ -79,10 +71,8 @@ public theorem_wanted not_generalizedFermatSolvable_of_two_gcd_gt_one {m n r : �
         (m, n, r) = (2 * w, 3 * s, 6 * t) ∨ (m, n, r) = (3 * s, 2 * w, 6 * t))) :
     ¬ GeneralizedFermatSolvable m n r
 
-/-- **The Bartolomé–Mihăilescu theorem for prime exponents.** Let $p \le q$ be primes with
-$p \ge 5$, and let $x, y, z$ be pairwise coprime nonzero integers. Then $x^p + y^p \ne z^q$.
-
-The source quotes this result from Bartolomé and Mihăilescu, arXiv:2108.08572.
+/-- Corollary 1 (quoted by the paper from Bartolomé and Mihăilescu, arXiv:2108.08572): for primes
+`5 ≤ p ≤ q`, `x^p + y^p = z^q` has no solution in pairwise coprime nonzero integers.
 
 Source: Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have
 Solutions?*, INTEGERS 24 (2024), Article A48, Corollary 1 (`integers-2024-A48-cor-1`). -/
@@ -91,10 +81,9 @@ public theorem_wanted pow_add_pow_ne_pow_of_prime_five_le {p q : ℕ} (hp : p.Pr
     (hxy : IsCoprime x y) (hyz : IsCoprime y z) (hxz : IsCoprime x z) :
     x ^ p + y ^ p ≠ z ^ q
 
-/-- **Generalized Fermat equations with exponents 3s, 6t and 2w.** Let $s, t, w$ be positive
-integers. If $s, t, w$ are pairwise coprime, $s$ is odd and $3 \nmid w$, then the equation
-$x^{3s} + y^{6t} = z^{2w}$ has infinitely many solutions $(x, y, z)$ in nonzero integers;
-otherwise it has no solution in nonzero integers.
+/-- Lemma 1 (from the author's earlier work): for positive integers `s, t, w`, the equation
+`x^{3s} + y^{6t} = z^{2w}` has infinitely many solutions in nonzero integers if `s, t, w` are
+pairwise coprime, `s` is odd and `3 ∤ w`, and no solution otherwise.
 
 Source: Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have
 Solutions?*, INTEGERS 24 (2024), Article A48, Lemma 1 (`integers-2024-A48-lem-1`). -/
@@ -106,11 +95,10 @@ public theorem_wanted generalizedFermat_three_six_two_mul {s t w : ℕ} (hs : 0 
     (¬ (Nat.Coprime s t ∧ Nat.Coprime s w ∧ Nat.Coprime t w ∧ Odd s ∧ ¬ 3 ∣ w) →
       ¬ GeneralizedFermatSolvable (3 * s) (6 * t) (2 * w))
 
-/-- **Generalized Fermat equations with exponents u, uv and v.** Let $u, v \ge 2$ be integers.
-(A) The equation $x^u + y^{uv} = z^v$ has a solution in nonzero integers $x, y, z$ if and only
-if it has one with $\gcd(x, y, z) = 1$. (B) If $u$ or $v$ is even, $(u, v) \ne (2, 2)$ and
-$(u, v) \ne (3, 2)$, the equation has no solution in nonzero integers. (C) If $3 \mid u$ or
-$3 \mid v$, and $(u, v) \ne (3, 2)$, the equation has no solution in nonzero integers.
+/-- Lemma 2 (from the author's earlier work): for integers `u, v ≥ 2` and the equation
+`x^u + y^{uv} = z^v`: (A) it has a solution in nonzero integers iff it has a primitive one
+(`gcd(x, y, z) = 1`); (B) if `u` or `v` is even and `(u, v) ∉ {(2, 2), (3, 2)}`, it has no
+solution; (C) if `3 ∣ u` or `3 ∣ v` and `(u, v) ≠ (3, 2)`, it has no solution.
 
 Source: Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have
 Solutions?*, INTEGERS 24 (2024), Article A48, Lemma 2 (`integers-2024-A48-lem-2`). -/

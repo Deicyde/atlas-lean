@@ -49,25 +49,25 @@ namespace MathlibExt.Analysis.Series.HilbertInequality
 
 open MeasureTheory Filter Topology
 
-/-- **Hilbert kernel.** The Hilbert kernel with `0`-based indices: `1 / ((m + 1) + (n + 1))`. -/
+/-- The Hilbert kernel with `0`-based indices: `1 / ((m + 1) + (n + 1))`. -/
 noncomputable def hilbertKernel (m n : ℕ) : ℝ := ((m : ℝ) + n + 2)⁻¹
 
-/-- **Row integrand for the Hilbert kernel.** The row integrand `x ↦ 1 / ((M + x) * √x)` used to bound the row sums
+/-- The row integrand `x ↦ 1 / ((M + x) * √x)` used to bound the row sums
 of the Hilbert kernel by an integral. -/
 noncomputable def hilbertKernelRow (M : ℝ) (x : ℝ) : ℝ := ((M + x) * Real.sqrt x)⁻¹
 
-/-- **Nonnegativity of the Hilbert kernel.** The Hilbert kernel is nonnegative. -/
+/-- The Hilbert kernel is nonnegative. -/
 theorem hilbertKernel_nonneg (m n : ℕ) : 0 ≤ hilbertKernel m n := by
   rw [hilbertKernel]
   positivity
 
-/-- **Nonnegativity of the Hilbert row integrand.** The row integrand is nonnegative on `(0, ∞)` when `M > 0`. -/
+/-- The row integrand is nonnegative on `(0, ∞)` when `M > 0`. -/
 theorem hilbertKernelRow_nonneg {M : ℝ} (hM : 0 < M) {x : ℝ} (hx : 0 < x) :
     0 ≤ hilbertKernelRow M x := by
   rw [hilbertKernelRow]
   positivity
 
-/-- **Continuity of the Hilbert row integrand.** The row integrand is continuous on `(0, ∞)` when `M > 0`. -/
+/-- The row integrand is continuous on `(0, ∞)` when `M > 0`. -/
 theorem hilbertKernelRow_continuousOn {M : ℝ} (hM : 0 < M) :
     ContinuousOn (hilbertKernelRow M) (Set.Ioi 0) := by
   apply ContinuousOn.inv₀
@@ -79,7 +79,7 @@ theorem hilbertKernelRow_continuousOn {M : ℝ} (hM : 0 < M) :
     have h2 : 0 < Real.sqrt x := Real.sqrt_pos.mpr hx'
     exact mul_ne_zero h1.ne' h2.ne'
 
-/-- **Hilbert row integrand is decreasing on [1, ∞).** The row integrand is antitone on `[1, ∞)` when `M > 0`. -/
+/-- The row integrand is antitone on `[1, ∞)` when `M > 0`. -/
 theorem hilbertKernelRow_antitoneOn {M : ℝ} (hM : 0 < M) :
     AntitoneOn (hilbertKernelRow M) (Set.Ici 1) := by
   intro x hx y hy hxy
@@ -96,7 +96,7 @@ theorem hilbertKernelRow_antitoneOn {M : ℝ} (hM : 0 < M) :
     have h3 : 0 ≤ Real.sqrt x := Real.sqrt_nonneg x
     exact mul_le_mul h1 h2 h3 (by linarith)
 
-/-- **Derivative of the arctangent antiderivative of the row integrand.** The derivative of the antiderivative `(2 / √M) * arctan √(x / M)`. -/
+/-- The derivative of the antiderivative `(2 / √M) * arctan √(x / M)`. -/
 theorem hasDerivAt_hilbertAntideriv {M : ℝ} (hM : 0 < M) {x : ℝ} (hx : 0 < x) :
     HasDerivAt (fun x => (2 / Real.sqrt M) * Real.arctan (Real.sqrt (x / M)))
       (hilbertKernelRow M x) x := by
@@ -119,7 +119,7 @@ theorem hasDerivAt_hilbertAntideriv {M : ℝ} (hM : 0 < M) {x : ℝ} (hx : 0 < x
   rw [hilbertKernelRow, h2, h1]
   field_simp
 
-/-- **Finite integral of the Hilbert row integrand.** The finite integral of the row integrand, via its antiderivative. -/
+/-- The finite integral of the row integrand, via its antiderivative. -/
 theorem intervalIntegral_hilbertKernelRow {M : ℝ} (hM : 0 < M) {B : ℝ} (hB : 1 ≤ B) :
     ∫ x in (1:ℝ)..B, hilbertKernelRow M x =
       (2 / Real.sqrt M) *
@@ -143,7 +143,7 @@ theorem intervalIntegral_hilbertKernelRow {M : ℝ} (hM : 0 < M) {B : ℝ} (hB :
   rw [mul_sub]
   exact intervalIntegral.integral_eq_sub_of_hasDerivAt_of_le hB hcont hderiv hint
 
-/-- **Integrability of the Hilbert row integrand on (1, ∞).** The row integrand is integrable on `(1, ∞)`, with a uniform bound on
+/-- The row integrand is integrable on `(1, ∞)`, with a uniform bound on
 the interval integrals. -/
 theorem integrableOn_Ioi_hilbertKernelRow {M : ℝ} (hM : 0 < M) :
     IntegrableOn (hilbertKernelRow M) (Set.Ioi 1) := by
@@ -184,7 +184,7 @@ theorem integrableOn_Ioi_hilbertKernelRow {M : ℝ} (hM : 0 < M) :
         rw [div_mul_div_comm, mul_comm (2:ℝ) Real.pi,
           mul_div_mul_right _ _ (by norm_num : (2:ℝ) ≠ 0)]
 
-/-- **Improper integral of the Hilbert row integrand.** The improper integral of the row integrand over `(1, ∞)`. -/
+/-- The improper integral of the row integrand over `(1, ∞)`. -/
 theorem integral_Ioi_hilbertKernelRow {M : ℝ} (hM : 0 < M) :
     ∫ x in Set.Ioi (1:ℝ), hilbertKernelRow M x =
       (2 / Real.sqrt M) * (Real.pi / 2 - Real.arctan (Real.sqrt (1 / M))) := by
@@ -211,7 +211,7 @@ theorem integral_Ioi_hilbertKernelRow {M : ℝ} (hM : 0 < M) :
     exact (intervalIntegral_hilbertKernelRow hM hi').symm
   exact tendsto_nhds_unique hlim hval
 
-/-- **Lower bound for the arctangent.** A lower bound for `arctan`: `t / (1 + t ^ 2) ≤ arctan t` for `t ≥ 0`. -/
+/-- A lower bound for `arctan`: `t / (1 + t ^ 2) ≤ arctan t` for `t ≥ 0`. -/
 theorem div_one_add_sq_le_arctan {t : ℝ} (ht : 0 ≤ t) :
     t / (1 + t ^ 2) ≤ Real.arctan t := by
   have h0 : (0:ℝ) ≤ t := ht
@@ -244,12 +244,12 @@ theorem div_one_add_sq_le_arctan {t : ℝ} (ht : 0 ≤ t) :
     ring
   rwa [hconst] at hmono
 
-/-- **Terms of the Hilbert row series.** The `n`-th term of the row series, `1 / ((M + (n + 1)) * √((n + 1)))`,
+/-- The `n`-th term of the row series, `1 / ((M + (n + 1)) * √((n + 1)))`,
 as a function of `n : ℕ`. -/
 noncomputable def hilbertKernelRowSeq (M : ℝ) (n : ℕ) : ℝ :=
   hilbertKernelRow M ((n : ℝ) + 1)
 
-/-- **Summability of the Hilbert row series.** Summability of the row series. -/
+/-- Summability of the row series. -/
 theorem summable_hilbertKernelRowSeq {M : ℝ} (hM : 0 < M) :
     Summable (hilbertKernelRowSeq M) := by
   have hanti : AntitoneOn (hilbertKernelRow M) (Set.Ici 1) :=
@@ -271,7 +271,7 @@ theorem summable_hilbertKernelRowSeq {M : ℝ} (hM : 0 < M) :
   push_cast
   ring
 
-/-- **Summability of the Hilbert row series in unfolded form.** Summability of the row series in unfurled form. -/
+/-- Summability of the row series in unfurled form. -/
 theorem summable_hilbertKernelRow {M : ℝ} (hM : 0 < M) :
     Summable (fun n : ℕ => ((M + ((n:ℝ) + 1)) * Real.sqrt ((n:ℝ) + 1))⁻¹) := by
   refine (summable_hilbertKernelRowSeq hM).congr ?_
@@ -280,7 +280,7 @@ theorem summable_hilbertKernelRow {M : ℝ} (hM : 0 < M) :
     ((M + ((n:ℝ) + 1)) * Real.sqrt ((n:ℝ) + 1))⁻¹
   rw [hilbertKernelRow]
 
-/-- **Row sum bound for the Hilbert kernel.** The row sum of the Hilbert kernel is at most `π / √(m + 1)`. -/
+/-- The row sum of the Hilbert kernel is at most `π / √(m + 1)`. -/
 theorem hilbertKernel_row_sum_le (m : ℕ) :
     ∑' (n : ℕ), hilbertKernel m n * (Real.sqrt ((n:ℝ) + 1))⁻¹ ≤
       Real.pi / Real.sqrt ((m:ℝ) + 1) := by
@@ -373,13 +373,13 @@ theorem hilbertKernel_row_sum_le (m : ℕ) :
     _ ≤ Real.pi / Real.sqrt M := hpi
 
 
-/-- **Symmetry of the Hilbert kernel.** The Hilbert kernel is symmetric. -/
+/-- The Hilbert kernel is symmetric. -/
 theorem hilbertKernel_symm (m n : ℕ) : hilbertKernel m n = hilbertKernel n m := by
   rw [hilbertKernel, hilbertKernel]
   congr 1
   ring
 
-/-- **Schur test for finite bilinear forms.** The Schur test for finite bilinear forms: a weighted row/column bound
+/-- The Schur test for finite bilinear forms: a weighted row/column bound
 implies a bound on the bilinear form with constant `√(α * β)`. -/
 theorem schurTest_finite {N : ℕ} {A : ℕ → ℕ → ℝ} {a b r c : ℕ → ℝ} {α β : ℝ}
     (hA : ∀ m n, 0 ≤ A m n) (ha : ∀ n, 0 ≤ a n) (hb : ∀ n, 0 ≤ b n)
@@ -511,7 +511,7 @@ theorem schurTest_finite {N : ℕ} {A : ℕ → ℕ → ℝ} {a b r c : ℕ → 
               Real.sqrt (∑ n ∈ Finset.range N, (b n) ^ 2) := by
             rw [← Real.sqrt_mul hα β]
 
-/-- **Finite Hilbert inequality.** The finite form of Hilbert's inequality, from the Schur test with the
+/-- The finite form of Hilbert's inequality, from the Schur test with the
 weights `r n = 1 / √(n + 1)` and the row bound `hilbertKernel_row_sum_le`. -/
 theorem hilbert_inequality_finite {N : ℕ} {a b : ℕ → ℝ}
     (ha : ∀ n, 0 ≤ a n) (hb : ∀ n, 0 ≤ b n) :
@@ -634,13 +634,13 @@ private theorem summable_and_hilbert_inequality {a b : ℕ → ℝ}
     Real.tsum_le_of_sum_le hF_nonneg hbound⟩
 
 
-/-- **Summability of the Hilbert double series.** The nonnegative Hilbert double series is summable for square-summable inputs. -/
+/-- The nonnegative Hilbert double series is summable for square-summable inputs. -/
 theorem summable_hilbert_terms {a b : ℕ → ℝ}
     (ha : Summable (fun n => (a n) ^ 2)) (hb : Summable (fun n => (b n) ^ 2)) :
     Summable (fun p : ℕ × ℕ => |a p.1 * b p.2| * hilbertKernel p.1 p.2) :=
   (summable_and_hilbert_inequality ha hb).1
 
-/-- **Hilbert's inequality.** Hilbert's inequality for square-summable real sequences. -/
+/-- Hilbert's inequality for square-summable real sequences. -/
 theorem hilbert_inequality {a b : ℕ → ℝ}
     (ha : Summable (fun n => (a n) ^ 2)) (hb : Summable (fun n => (b n) ^ 2)) :
     ∑' (p : ℕ × ℕ), |a p.1 * b p.2| * hilbertKernel p.1 p.2 ≤

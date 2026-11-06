@@ -30,10 +30,8 @@ with at least one unit coefficient.
 
 @[expose] public section
 
-/-- **Dilatation of a p-adic polynomial at a point.** Let $p$ be a prime, $f \in \mathbb{Z}_p[X]$
-and $x_0 \in \mathbb{Z}_p$. Dilatation data for $f$ at $x_0$ consist of a natural number $e$ and a
-polynomial $g \in \mathbb{Z}_p[X]$ such that $g(X) = p^{-e} f(x_0 + pX)$ as polynomials over
-$\mathbb{Q}_p$, and the reduction of $g$ modulo $p$ is nonzero. -/
+/-- Dilatation data at a point: exponent plus integral polynomial whose
+coercion equals the normalized translate, with nonzero reduction. -/
 structure PadicPolynomialDilatation (p : ℕ) [Fact p.Prime]
     (f : Polynomial (PadicInt p)) (x0 : PadicInt p) where
   exp : ℕ
@@ -45,9 +43,7 @@ structure PadicPolynomialDilatation (p : ℕ) [Fact p.Prime]
           (f.comp (Polynomial.C x0 + Polynomial.C (p : PadicInt p) * Polynomial.X))
   red_ne_zero : Polynomial.map PadicInt.toZMod poly ≠ 0
 
-/-- **Dilatation of the constant polynomial one at zero.** For every prime $p$, the exponent
-$e = 0$ and the polynomial $g = 1$ form dilatation data for the constant polynomial
-$1 \in \mathbb{Z}_p[X]$ at the point $x_0 = 0$. -/
+/-- Proved witness: dilatation data exists for the constant polynomial one at zero. -/
 noncomputable def padicPolynomialDilatation_one_zero (p : ℕ) [Fact p.Prime] :
     PadicPolynomialDilatation p 1 0 where
   exp := 0
@@ -59,12 +55,7 @@ noncomputable def padicPolynomialDilatation_one_zero (p : ℕ) [Fact p.Prime] :
     simp only [Polynomial.map_one]
     exact one_ne_zero
 
-/-- **Existence of dilatations of p-adic polynomials.** Let $p$ be a prime and let
-$f \in \mathbb{Z}_p[X]$ have nonzero reduction modulo $p$. Then for every $x_0 \in \mathbb{Z}_p$
-there are a natural number $e$ and a polynomial $g \in \mathbb{Z}_p[X]$ with nonzero reduction
-modulo $p$ such that $g(X) = p^{-e} f(x_0 + pX)$ as polynomials over $\mathbb{Q}_p$; that is,
-dilatation data for $f$ at $x_0$ exist.
-
+/-- Atomic existence of dilatation data for every point.
 Proves `Wanted` entry `padicPolynomialDilatation_exists`.
 -/
 theorem padicPolynomialDilatation_exists (p : ℕ) [Fact p.Prime]

@@ -74,7 +74,7 @@ namespace MathlibExt.Biology.PopulationGenetics.Coalescent
 
 /-! ### Elementary sums -/
 
-/-- **Sum of reciprocals of binomial coefficients $\binom{k}{2}$.** `∑_{k=2}^n (k.choose 2)⁻¹ = 2 (1 - 1/n)` for `n ≥ 1` (telescoping `2/(k(k-1))`). -/
+/-- `∑_{k=2}^n (k.choose 2)⁻¹ = 2 (1 - 1/n)` for `n ≥ 1` (telescoping `2/(k(k-1))`). -/
 theorem sum_inv_choose_two {n : ℕ} (hn : 1 ≤ n) :
     ∑ k ∈ Icc 2 n, ((k.choose 2 : ℕ) : ℝ)⁻¹ = 2 * (1 - 1 / n) := by
   induction n, hn using Nat.le_induction with
@@ -89,7 +89,7 @@ theorem sum_inv_choose_two {n : ℕ} (hn : 1 ≤ n) :
     rw [mul_inv_cancel₀ hn0]
     ring
 
-/-- **Weighted sum of reciprocals of $\binom{k}{2}$ is twice a harmonic number.** `∑_{k=2}^n k (k.choose 2)⁻¹ = 2 H_{n-1}`. -/
+/-- `∑_{k=2}^n k (k.choose 2)⁻¹ = 2 H_{n-1}`. -/
 theorem sum_mul_inv_choose_two (n : ℕ) :
     ∑ k ∈ Icc 2 n, (k : ℝ) * ((k.choose 2 : ℕ) : ℝ)⁻¹ = 2 * (harmonic (n - 1) : ℝ) := by
   induction n with
@@ -108,7 +108,7 @@ theorem sum_mul_inv_choose_two (n : ℕ) :
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
-/-- **Holding times of Kingman's coalescent.** Kingman's coalescent for a sample of size `n`, through its holding times: `T k` is the
+/-- Kingman's coalescent for a sample of size `n`, through its holding times: `T k` is the
 time (in units of `2N` generations) during which the genealogy has exactly `k` lineages,
 for `2 ≤ k ≤ n`. These are independent, and `T k` is exponential with rate `k.choose 2`.
 The values of `T k` for `k ∉ [2, n]` are irrelevant. -/
@@ -124,43 +124,43 @@ namespace KingmanTimes
 
 variable {μ : Measure Ω} {n : ℕ} (K : KingmanTimes μ n)
 
-/-- **Time to the most recent common ancestor.** Time to the most recent common ancestor of the sample. -/
+/-- Time to the most recent common ancestor of the sample. -/
 def tmrca : Ω → ℝ := fun ω => ∑ k ∈ Icc 2 n, K.T k ω
 
-/-- **Total branch length of a coalescent genealogy.** Total branch length of the sample genealogy: `k` branches during `T k`. -/
+/-- Total branch length of the sample genealogy: `k` branches during `T k`. -/
 def totalLength : Ω → ℝ := fun ω => ∑ k ∈ Icc 2 n, (k : ℝ) * K.T k ω
 
-/-- **Positivity of the number of pairs.** The number of pairs `k.choose 2` is positive for `k ∈ [2, n]`. -/
+/-- The number of pairs `k.choose 2` is positive for `k ∈ [2, n]`. -/
 lemma choose_two_pos {k : ℕ} (hk : k ∈ Icc 2 n) : (0 : ℝ) < ((k.choose 2 : ℕ) : ℝ) := by
   have : 2 ≤ k := (mem_Icc.1 hk).1
   exact_mod_cast Nat.choose_pos this
 
-/-- **Integrability of coalescent holding times.** Each holding time is integrable. -/
+/-- Each holding time is integrable. -/
 theorem integrable_T {k : ℕ} (hk : k ∈ Icc 2 n) : Integrable (K.T k) μ :=
   (K.hasLaw k hk).integrable_of_expMeasure (choose_two_pos hk)
 
-/-- **Expected coalescent holding time.** `E[T k] = (k.choose 2)⁻¹`. -/
+/-- `E[T k] = (k.choose 2)⁻¹`. -/
 theorem integral_T {k : ℕ} (hk : k ∈ Icc 2 n) : μ[K.T k] = ((k.choose 2 : ℕ) : ℝ)⁻¹ :=
   (K.hasLaw k hk).integral_eq_inv_of_expMeasure (choose_two_pos hk)
 
-/-- **Expected time to the most recent common ancestor.** The expected time to the most recent common ancestor is `2 (1 - 1/n)`. -/
+/-- The expected time to the most recent common ancestor is `2 (1 - 1/n)`. -/
 theorem integral_tmrca (hn : 1 ≤ n) : μ[K.tmrca] = 2 * (1 - 1 / (n : ℝ)) := by
   unfold tmrca
   rw [ integral_finsetSum _ (fun k hk => K.integrable_T hk),
     sum_congr rfl (fun k hk => K.integral_T hk), sum_inv_choose_two hn]
 
-/-- **Integrability of the total branch length.** The total branch length is integrable. -/
+/-- The total branch length is integrable. -/
 theorem integrable_totalLength : Integrable K.totalLength μ :=
   integrable_finsetSum _ (fun _ hk => (K.integrable_T hk).const_mul _)
 
-/-- **Expected total branch length of the coalescent.** The expected total branch length is `2 H_{n-1}`. -/
+/-- The expected total branch length is `2 H_{n-1}`. -/
 theorem integral_totalLength : μ[K.totalLength] = 2 * (harmonic (n - 1) : ℝ) := by
   unfold totalLength
   rw [integral_finsetSum _ (fun k hk => (K.integrable_T hk).const_mul _),
     sum_congr rfl (fun k hk => by rw [integral_const_mul, K.integral_T hk]),
     sum_mul_inv_choose_two]
 
-/-- **Variance of the time to the most recent common ancestor.** The variance of the time to the most recent common ancestor is
+/-- The variance of the time to the most recent common ancestor is
 `∑_{k=2}^n ((k.choose 2)⁻¹)²` (this uses independence). -/
 theorem variance_tmrca :
     Var[K.tmrca; μ] = ∑ k ∈ Icc 2 n, (((k.choose 2 : ℕ) : ℝ)⁻¹) ^ 2 := by
@@ -182,7 +182,7 @@ theorem variance_tmrca :
 
 variable {m : MeasurableSpace Ω} {S : Ω → ℝ} {θ : ℝ}
 
-/-- **Expected number of segregating sites.** Infinite-sites mutation at rate `θ/2` per lineage per unit time: if the number of
+/-- Infinite-sites mutation at rate `θ/2` per lineage per unit time: if the number of
 segregating sites `S` is integrable and has conditional mean `(θ/2) L` given the genealogy
 σ-algebra `m`, then `E S = θ H_{n-1}`. (Integrability matters: Mathlib's conditional
 expectation of a non-integrable function is `0`.) -/
@@ -194,7 +194,7 @@ theorem integral_segSites (hm : m ≤ mΩ) [SigmaFinite (μ.trim hm)] (hSi : Int
   rw [← h, integral_congr_ae hS, integral_const_mul, K.integral_totalLength]
   ring
 
-/-- **Integrability of Watterson's estimator.** Watterson's estimator `S / H_{n-1}` is integrable when `S` is. -/
+/-- Watterson's estimator `S / H_{n-1}` is integrable when `S` is. -/
 theorem integrable_watterson (hSi : Integrable S μ) :
     Integrable (fun ω => S ω / (harmonic (n - 1) : ℝ)) μ :=
   hSi.div_const _
@@ -213,7 +213,7 @@ end KingmanTimes
 
 /-! ### A concrete model -/
 
-/-- **Canonical probability space for Kingman holding times.** The canonical probability space for the Kingman holding times of a sample of size `n`:
+/-- The canonical probability space for the Kingman holding times of a sample of size `n`:
 the product of the exponential laws `Exp (k.choose 2)`, `2 ≤ k ≤ n`. -/
 def piMeasure (n : ℕ) : Measure (Icc 2 n → ℝ) :=
   Measure.pi fun k : Icc 2 n => expMeasure ((k : ℕ).choose 2 : ℕ)
@@ -223,7 +223,7 @@ instance (n : ℕ) (k : Icc 2 n) :
     IsProbabilityMeasure (expMeasure (((k : ℕ).choose 2 : ℕ) : ℝ)) :=
   isProbabilityMeasure_expMeasure (KingmanTimes.choose_two_pos k.2)
 
-/-- **Kingman coalescent from coordinate projections.** The coordinate projections of `piMeasure n` form a Kingman coalescent; in particular
+/-- The coordinate projections of `piMeasure n` form a Kingman coalescent; in particular
 `KingmanTimes` is inhabited for every sample size. -/
 def KingmanTimes.ofPi (n : ℕ) : KingmanTimes (piMeasure n) n where
   T k ω := if h : k ∈ Icc 2 n then ω ⟨k, h⟩ else 0
@@ -246,11 +246,11 @@ def KingmanTimes.ofPi (n : ℕ) : KingmanTimes (piMeasure n) n where
 
 /-! ### Wright–Fisher → Kingman -/
 
-/-- **Probability of no coalescence in one Wright–Fisher generation.** In a Wright–Fisher population of `M` gene copies, the probability that `k` lineages,
+/-- In a Wright–Fisher population of `M` gene copies, the probability that `k` lineages,
 choosing their parents independently and uniformly, have `k` distinct parents. -/
 def noCoalProb (M k : ℕ) : ℝ := ∏ i ∈ range k, (1 - (i : ℝ) / M)
 
-/-- **No-coalescence probability as a falling factorial ratio.** `noCoalProb M k` is the falling factorial `M (M-1) ⋯ (M-k+1)` divided by `M ^ k`. -/
+/-- `noCoalProb M k` is the falling factorial `M (M-1) ⋯ (M-k+1)` divided by `M ^ k`. -/
 theorem noCoalProb_eq_descFactorial_div {M : ℕ} (hM : 0 < M) (k : ℕ) :
     noCoalProb M k = (M.descFactorial k : ℝ) / (M : ℝ) ^ k := by
   have hM' : (M : ℝ) ≠ 0 := by exact_mod_cast hM.ne'
@@ -265,7 +265,7 @@ theorem noCoalProb_eq_descFactorial_div {M : ℕ} (hM : 0 < M) (k : ℕ) :
     · have h0 : M.descFactorial k = 0 := Nat.descFactorial_eq_zero_iff_lt.2 (by omega)
       simp [h0]
 
-/-- **No-coalescence probability tends to one.** `noCoalProb M k → 1` as `M → ∞`. -/
+/-- `noCoalProb M k → 1` as `M → ∞`. -/
 theorem tendsto_noCoalProb_one (k : ℕ) :
     Tendsto (fun M : ℕ => noCoalProb M k) atTop (𝓝 1) := by
   have h : Tendsto (fun M : ℕ => ∏ i ∈ range k, (1 - (i : ℝ) / M)) atTop
@@ -297,7 +297,7 @@ theorem tendsto_coalescence_rate (k : ℕ) :
     field_simp
     ring
 
-/-- **Wright–Fisher coalescence times converge to exponential laws.** After `⌊t M⌋` Wright–Fisher generations (`t ≥ 0` coalescent time units), the probability
+/-- After `⌊t M⌋` Wright–Fisher generations (`t ≥ 0` coalescent time units), the probability
 that `k` lineages have not coalesced tends to `exp (-(k.choose 2) t)`, the survival function
 of the exponential law with rate `k.choose 2`. -/
 theorem tendsto_noCoalProb_pow_floor (k : ℕ) {t : ℝ} (ht : 0 ≤ t) :

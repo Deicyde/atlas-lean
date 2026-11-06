@@ -60,7 +60,7 @@ namespace DFA
 
 namespace Hopcroft
 
-/-- **The smaller of two sets has at most half their total size.** The smaller of two sets has at most half their combined size: it is one of the two
+/-- The smaller of two sets has at most half their combined size: it is one of the two
 sets, so twice its size is at most the sum of the two sizes. -/
 theorem two_mul_smaller_card_le {σ : Type*} (A B : Finset σ) :
     2 * (smaller A B).card ≤ A.card + B.card := by
@@ -70,14 +70,14 @@ theorem two_mul_smaller_card_le {σ : Type*} (A B : Finset σ) :
   · have h' : B.card ≤ A.card := Nat.le_of_not_le h
     omega
 
-/-- **The smaller part of a split has at most half the size.** If two disjoint sets union to `D`, the smaller of them has at most half the size of
+/-- If two disjoint sets union to `D`, the smaller of them has at most half the size of
 `D`. -/
 theorem two_mul_smaller_card_le_of_split {σ : Type*} [DecidableEq σ] {D A B : Finset σ}
     (hun : A ∪ B = D) (hdis : Disjoint A B) : 2 * (smaller A B).card ≤ D.card := by
   calc 2 * (smaller A B).card ≤ A.card + B.card := two_mul_smaller_card_le A B
     _ = D.card := by rw [← Finset.card_union_of_disjoint hdis, hun]
 
-/-- **Halving chains shrink blocks by a factor of at least $2^k$.** After `k` halving steps, the initial block is at least `2 ^ k` times the final block.
+/-- After `k` halving steps, the initial block is at least `2 ^ k` times the final block.
 The halving hypothesis is stated for the cardinalities only; no subset hypothesis is
 needed. -/
 theorem mul_pow_le_card_of_halving_chain {σ : Type*} {f : ℕ → Finset σ} {k : ℕ}
@@ -117,7 +117,7 @@ theorem smaller_half_chain_le_log {σ : Type*} [Fintype σ] {f : ℕ → Finset 
 variable {α σ : Type*} [Fintype α] [FinEnum α] [Fintype σ] [DecidableEq σ]
 
 omit [Fintype α] [Fintype σ] in
-/-- **New splitters are halves of the split block.** Every entry `newSplitters` adds for a block `D` is a half of `D` (one of the two sides
+/-- Every entry `newSplitters` adds for a block `D` is a half of `D` (one of the two sides
 of the split by `pre`), or the smaller half. -/
 theorem mem_newSplitters {W : List (Finset σ × α)} {pre D : Finset σ} {X : Finset σ}
     {b : α} (h : (X, b) ∈ newSplitters W pre D) :
@@ -137,7 +137,7 @@ theorem mem_newSplitters {W : List (Finset σ × α)} {pre D : Finset σ} {X : F
       Or.inr (Or.inr hX)⟩
 
 omit [Fintype α] [Fintype σ] in
-/-- **Smaller-half splitters have at most half the block size.** A smaller-half entry added by `newSplitters` for a block `D` has at most half the size
+/-- A smaller-half entry added by `newSplitters` for a block `D` has at most half the size
 of `D`: the two halves are disjoint and union to `D`. No split hypothesis is needed: the
 halves of any block partition it. -/
 theorem two_mul_card_le_of_mem_newSplitters_smaller {W : List (Finset σ × α)}
@@ -159,7 +159,7 @@ theorem two_mul_card_le_of_mem_newSplitters_smaller {W : List (Finset σ × α)}
 
 variable (M : DFA α σ) [DecidablePred (· ∈ M.accept)]
 
-/-- **Trace of splitters popped by Hopcroft's algorithm.** The splitters popped by Hopcroft's loop, in order: the same recursion as
+/-- The splitters popped by Hopcroft's loop, in order: the same recursion as
 `DFA.hopcroftLoop`, collecting each popped splitter. The cost of processing one popped
 splitter `(C, a)` is `(preimage M C a).card + 1`: one predecessor visit per state whose
 `a`-successor lies in `C`, plus `O(1)` per-splitter overhead. See `hopcroftCost`.
@@ -171,7 +171,7 @@ def hopcroftSplitters : ℕ → List (Finset σ) → List (Finset σ × α) → 
   | k + 1, P, (C, a) :: W =>
       (C, a) :: hopcroftSplitters k (roundP M P C a) (roundW M P W C a)
 
-/-- **Predecessor cost of a Hopcroft splitter trace.** The predecessor cost of a splitter trace: for each popped splitter `(C, a)`, one
+/-- The predecessor cost of a splitter trace: for each popped splitter `(C, a)`, one
 predecessor visit per state in the preimage `preimage M C a`, plus `1` per-splitter
 overhead. This is the quantity the total-work bound, not proved here, constrains
 to `O(|Σ| n log n)`. Charging splitter size `C.card` instead
@@ -202,7 +202,7 @@ theorem hopcroftSplitters_length_le {α σ : Type*} [FinEnum α] [Fintype σ]
       have h := ih (roundP M P C a) (roundW M P W C a)
       omega
 
-/-- **Hopcroft splitter trace length equals loop fuel.** The trace and the loop take the same number of steps: the trace length is the fuel
+/-- The trace and the loop take the same number of steps: the trace length is the fuel
 the loop consumed, i.e. the loop would stop after exactly that many rounds if run with
 only that much fuel. -/
 theorem hopcroftLoop_eq_hopcroftLoop_of_length {α σ : Type*} [FinEnum α]

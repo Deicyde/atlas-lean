@@ -27,7 +27,7 @@ remain valid when the finite set or any denominator-clearing factor is zero.
 
 namespace Finset
 
-/-- **Chebyshev-type count bound from the sum of squares.** The number of points where a function is at least a nonnegative threshold,
+/-- The number of points where a function is at least a nonnegative threshold,
 times the threshold squared, is at most the sum of squares. -/
 theorem card_filter_mul_sq_le_sum_sq {Ω : Type*} (S : Finset Ω) (f : Ω → ℤ)
     (s : ℤ) (hs : 0 ≤ s) :
@@ -41,7 +41,7 @@ theorem card_filter_mul_sq_le_sum_sq {Ω : Type*} (S : Finset Ω) (f : Ω → �
     _ ≤ ∑ x ∈ S, f x ^ 2 :=
       sum_le_sum_of_subset_of_nonneg (filter_subset _ _) fun _ _ _ => sq_nonneg _
 
-/-- **Count bound from first and second moments.** A denominator-cleared finite count bound from first and second moments.
+/-- A denominator-cleared finite count bound from first and second moments.
 
 Neither the finite set nor `A`, `t`, or `s` is required to be nonzero. -/
 theorem card_filter_mul_sq_le_of_moments {Ω : Type*} (S : Finset Ω) (Y : Ω → ℕ)
@@ -89,13 +89,13 @@ theorem card_filter_mul_sq_le_of_moments {Ω : Type*} (S : Finset Ω) (Y : Ω �
     exact_mod_cast hfinal
   exact key _ hsub
 
-/-- **Sum-of-squares count bound over the whole type.** `card_filter_mul_sq_le_sum_sq` specialized to the universal finset. -/
+/-- `card_filter_mul_sq_le_sum_sq` specialized to the universal finset. -/
 theorem card_filter_mul_sq_le_sum_sq_univ {Ω : Type*} [Fintype Ω]
     (f : Ω → ℤ) (s : ℤ) (hs : 0 ≤ s) :
     (#{x : Ω | s ≤ f x} : ℤ) * s ^ 2 ≤ ∑ x, f x ^ 2 := by
   simpa only using card_filter_mul_sq_le_sum_sq (univ : Finset Ω) f s hs
 
-/-- **Moment count bound over the whole type.** `card_filter_mul_sq_le_of_moments` specialized to the universal finset. -/
+/-- `card_filter_mul_sq_le_of_moments` specialized to the universal finset. -/
 theorem card_filter_mul_sq_le_of_moments_univ {Ω : Type*} [Fintype Ω]
     (Y : Ω → ℕ) (A m V t s : ℕ)
     (S1 : (∑ x, Y x) * A = Fintype.card Ω * m)

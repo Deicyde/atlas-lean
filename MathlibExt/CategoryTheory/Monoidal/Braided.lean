@@ -44,7 +44,7 @@ open CategoryTheory MonoidalCategory
 
 universe v u
 
-/-- **Tensor inverses are unique up to isomorphism in braided categories.** In a braided monoidal category, tensoring with the unit is cancellative
+/-- In a braided monoidal category, tensoring with the unit is cancellative
 up to isomorphism: if `M ⊗ N ≅ 𝟙`, `M' ⊗ N' ≅ 𝟙`, and `M ≅ M'`, then
 `N ≅ N'`. -/
 theorem CategoryTheory.MonoidalCategory.nonempty_iso_of_tensor_iso_tensorUnit

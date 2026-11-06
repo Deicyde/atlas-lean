@@ -34,13 +34,10 @@ many groups of each order. "Different from alternating groups" excludes every `G
 `Alt(n)`. `π(X)` is `(Nat.card X).primeFactors`.
 -/
 
-/-- **Kourovka Problem 11.64 (Monakhov).** The statement that there is a natural number $N$ such
-that every finite simple group $G$ that is not isomorphic to the alternating group $A_n$ for any
-natural number $n$ and has a proper subgroup $H$ with $\pi(H) = \pi(G)$ satisfies $|G| \le N$,
-where $\pi(X)$ denotes the set of prime divisors of the order $|X|$.
-
-Since there are finitely many groups of each order, this says that only finitely many such groups
-$G$ exist up to isomorphism. -/
+/-- Kourovka 11.64 (V. S. Monakhov): only finitely many finite simple groups `G` that are not
+alternating groups have a proper subgroup `H` with `π(H) = π(G)`, `π` the set of prime divisors of
+the order. "Finitely many" up to isomorphism is stated as a bound on `|G|`, equivalently, since
+there are finitely many groups of each order. -/
 def finitelyManySimpleWithFullSpectrumSubgroup : Prop :=
   ∃ N : ℕ, ∀ (G : Type) [Group G] [Finite G], IsSimpleGroup G →
     (∀ n : ℕ, IsEmpty (G ≃* alternatingGroup (Fin n))) →
@@ -48,7 +45,7 @@ def finitelyManySimpleWithFullSpectrumSubgroup : Prop :=
     Nat.card G ≤ N
 
 /--
-**Infinitely many simple groups with proper subgroups of equal prime set.** Resolved false: the Kourovka Archive records (V. I. Zenkov) that the symplectic groups `G =
+Resolved false: the Kourovka Archive records (V. I. Zenkov) that the symplectic groups `G =
 S_{4k}(2^s)` have proper subgroups `H ≅ Ω⁻_{4k}(2^s)` with `π(H) = π(G)`, an infinite family of
 non-alternating finite simple groups. Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved
 Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of

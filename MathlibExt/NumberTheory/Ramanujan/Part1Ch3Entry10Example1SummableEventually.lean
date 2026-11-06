@@ -24,10 +24,7 @@ namespace MathlibExt.NumberTheory.Ramanujan.Part1Ch3
 
 namespace Entry10Example1SummableEventually
 
-/-- **Eventual summability of the square-root Poisson series.** For all sufficiently large
-real $x$, the series $\sum_{k=1}^{\infty} x^k \sqrt{k} / k!$ is summable.
-
-Source: Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 10, Example 1, printed p.
+/-- Source: Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 10, Example 1, printed p.
     64 / PDF p. 74.
 Proves `Wanted` entry `ramanujan_part1_ch3_entry10_example1_summable_eventually`.
 -/

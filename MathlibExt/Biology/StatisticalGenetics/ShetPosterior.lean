@@ -54,11 +54,11 @@ open MeasureTheory Real Set ProbabilityTheory
 
 namespace MathlibExt.Biology.StatisticalGenetics.ShetPosterior
 
-/-- **Mean PTV count at mutation-selection balance.** Mean PTV allele count `n U / s` at deterministic mutation–selection balance, for `n`
+/-- Mean PTV allele count `n U / s` at deterministic mutation–selection balance, for `n`
 sampled chromosomes, PTV mutation rate `U` and heterozygous selection coefficient `s > 0`. -/
 noncomputable def balanceMean (n U s : ℝ) : ℝ := n * U / s
 
-/-- **Balance mean is decreasing in the selection coefficient.** The balance mean is antitone in `s > 0` for `n U ≥ 0`. -/
+/-- The balance mean is antitone in `s > 0` for `n U ≥ 0`. -/
 theorem balanceMean_antitoneOn {n U : ℝ} (hnU : 0 ≤ n * U) :
     AntitoneOn (balanceMean n U) (Ioi 0) := by
   intro s hs s' _ hss'

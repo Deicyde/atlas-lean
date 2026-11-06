@@ -238,12 +238,9 @@ private theorem entry9_summable (x : ℂ) (_hx : chapter7Admissible x) (r : ℂ)
     exact hb
   exact (summable_nat_add_iff J).mp htail
 
-/-- **Convergence and holomorphy of the power-difference series.** Let $x$ be an admissible
-complex number. For every complex $r$ with $\operatorname{Re} r < 0$ the series
-$\sum_{j \ge 0} \bigl((j + 1)^r - (j + 1 + x)^r\bigr)$ (principal powers) is summable, and its
-sum $\varphi_r(x)$ is a holomorphic function of $r$ on the half-plane $\operatorname{Re} r < 0$.
+/-- Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 9.
 
-Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 9.
+Proves `Wanted` entry `ramanujan_part1_ch7_entry9_bernoulligrowth`.
 -/
 theorem ramanujan_part1_ch7_entry9_bernoulligrowth
     (x : ℂ) (hx : chapter7Admissible x) :
@@ -352,20 +349,20 @@ theorem ramanujan_part1_ch7_entry9_bernoulligrowth
 
 end
 
-/-- **Admissibility alias for Ramanujan's Entry 9.** Compatibility alias for the former `Entry9Bernoulligrowth.chapter7Admissible`.
+/-- Compatibility alias for the former `Entry9Bernoulligrowth.chapter7Admissible`.
 
 For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible` directly. -/
 abbrev chapter7Admissible (x : ℂ) : Prop :=
   MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7Admissible x
 
-/-- **Power difference term alias for Ramanujan's Entry 9.** Compatibility alias for the former `Entry9Bernoulligrowth.chapter7PowerDifferenceTerm`.
+/-- Compatibility alias for the former `Entry9Bernoulligrowth.chapter7PowerDifferenceTerm`.
 
 For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm`
 directly. -/
 noncomputable abbrev chapter7PowerDifferenceTerm (r x : ℂ) (j : ℕ) : ℂ :=
   MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm r x j
 
-/-- **Power difference sum alias for Ramanujan's Entry 9.** Compatibility alias for the former `Entry9Bernoulligrowth.chapter7PowerDifferenceSum`.
+/-- Compatibility alias for the former `Entry9Bernoulligrowth.chapter7PowerDifferenceSum`.
 
 For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceSum`
 directly. -/

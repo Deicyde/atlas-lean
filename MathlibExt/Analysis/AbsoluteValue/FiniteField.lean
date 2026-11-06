@@ -18,9 +18,7 @@ namespace AbsoluteValue
 
 variable {K : Type*} [Field K]
 
-/-- **Absolute values in positive characteristic are nonarchimedean.** Let $K$ be a field of
-characteristic $p > 0$. Then every real-valued absolute value $v$ on $K$ is nonarchimedean:
-$v(x + y) \le \max(v(x), v(y))$ for all $x, y \in K$. -/
+/-- Any absolute value on a positive-characteristic field is nonarchimedean. -/
 public theorem isNonarchimedean_of_charP {p : ℕ} [CharP K p] [NeZero p]
     (v : AbsoluteValue K ℝ) : IsNonarchimedean v := by
   let _ : NormedField K := v.toNormedField
@@ -52,8 +50,7 @@ public theorem isNonarchimedean_of_charP {p : ℕ} [CharP K p] [NeZero p]
     have heq := (pow_eq_one_iff_of_nonneg (norm_nonneg _) hsub).mp hnorm
     rw [heq]
 
-/-- **Absolute values on finite fields are trivial.** Let $K$ be a finite field and $v$ a
-real-valued absolute value on $K$. Then $v(x) = 1$ for every nonzero $x \in K$. -/
+/-- Any absolute value on a finite field is trivial on nonzero elements. -/
 public theorem eq_one_of_ne_zero_of_finite [Finite K] (v : AbsoluteValue K ℝ)
     {x : K} (hx : x ≠ 0) : v x = 1 := by
   let _ : Fintype K := Fintype.ofFinite K

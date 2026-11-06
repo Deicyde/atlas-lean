@@ -58,18 +58,18 @@ namespace MathlibExt.Probability.GaltonWatson
 
 variable (ν : Measure ℕ)
 
-/-- **Generation-size law of a Galton–Watson process.** The law of the generation size `Z_n` of the Galton–Watson process with offspring law `ν`
+/-- The law of the generation size `Z_n` of the Galton–Watson process with offspring law `ν`
 started from one individual: `Z_0 = 1` and, given `Z_n = z`, `Z_{n+1}` has law `ν^{∗z}`
 (`Measure.convPow ν z`). -/
 noncomputable def law : ℕ → Measure ℕ
   | 0 => Measure.dirac 1
   | n + 1 => (law n).bind (Measure.convPow ν)
 
-/-- **Mean offspring number.** The mean offspring number `m = E ξ = ∑ k ν{k} ∈ [0, ∞]`. -/
+/-- The mean offspring number `m = E ξ = ∑ k ν{k} ∈ [0, ∞]`. -/
 noncomputable def mean : ℝ≥0∞ :=
   ∫⁻ k, (k : ℝ≥0∞) ∂ν
 
-/-- **Extinction probability of a Galton–Watson process.** The extinction probability `q = sup_n P(Z_n = 0)`, the limit of the probabilities of
+/-- The extinction probability `q = sup_n P(Z_n = 0)`, the limit of the probabilities of
 extinction by generation `n` (`tendsto_law_real_zero`). On a path space carrying the process the
 events `{Z_n = 0}` increase with `n` (`0` is absorbing), so `q` is the probability of eventual
 extinction; this file describes the process through its generation laws and does not construct
@@ -99,7 +99,7 @@ private theorem pgf_mono [IsProbabilityMeasure ν] :
     (integrable_pow_of_abs_le_one measurable_id (by simpa [abs_of_nonneg ht.1] using ht.2))
     (fun k => pow_le_pow_left₀ hs.1 hst k)
 
-/-- **Iterates of the offspring generating function stay in [0, 1].** The iterates `f^[n](s)` of the offspring generating function stay in `[0, 1]` for
+/-- The iterates `f^[n](s)` of the offspring generating function stay in `[0, 1]` for
 `s ∈ [0, 1]`. -/
 theorem iterate_pgf_mem_Icc [IsProbabilityMeasure ν] (n : ℕ) {s : ℝ}
     (hs : s ∈ Icc (0 : ℝ) 1) : (pgf id ν)^[n] s ∈ Icc (0 : ℝ) 1 := by
@@ -130,7 +130,7 @@ private theorem iterate_le [IsProbabilityMeasure ν]
     rw [Function.iterate_succ_apply']
     exact (pgf_mono ν (iterate_pgf_mem_Icc ν n zero_mem) hs hn).trans h
 
-/-- **Iterates of the generating function at zero are nondecreasing.** The iterates `f^[n](0)` of the offspring generating function are non-decreasing. -/
+/-- The iterates `f^[n](0)` of the offspring generating function are non-decreasing. -/
 theorem monotone_iterate_pgf_zero [IsProbabilityMeasure ν] :
     Monotone fun n => (pgf id ν)^[n] 0 := by
   apply monotone_nat_of_le_succ
@@ -141,7 +141,7 @@ theorem monotone_iterate_pgf_zero [IsProbabilityMeasure ν] :
     simpa only [Function.comp_apply, Function.iterate_succ_apply'] using
       pgf_mono ν (iterate_pgf_mem_Icc ν n zero_mem) (iterate_pgf_mem_Icc ν (n + 1) zero_mem) hn
 
-/-- **Limit of generating-function iterates is the least fixed point.** `sup_n f^[n](0)` is the least fixed point of `f` in `[0, 1]`
+/-- `sup_n f^[n](0)` is the least fixed point of `f` in `[0, 1]`
 (Athreya–Ney 1972, ch. I). -/
 theorem isLeast_iSup_iterate_pgf_zero [IsProbabilityMeasure ν] :
     IsLeast {s | s ∈ Icc (0 : ℝ) 1 ∧ pgf id ν s = s} (⨆ n, (pgf id ν)^[n] 0) := by
@@ -302,7 +302,7 @@ private theorem mean_le_of_pgf_gt [IsProbabilityMeasure ν]
     apply (div_le_one (sub_pos.mpr (ha n).2)).2
     linarith [h (a n) (ha n)]
 
-/-- **Least fixed point equals one iff mean offspring is at most one.** The least fixed point is `1` iff the mean offspring number is at most `1`, provided the
+/-- The least fixed point is `1` iff the mean offspring number is at most `1`, provided the
 offspring number is not almost surely `1` (Athreya–Ney 1972, ch. I). -/
 theorem iSup_iterate_pgf_zero_eq_one_iff [IsProbabilityMeasure ν]
     (h1 : ν {1} ≠ 1) :
@@ -379,7 +379,7 @@ private lemma gen_law [IsProbabilityMeasure ν] (n : ℕ) {s : ℝ} (hs : s ∈ 
     simp_rw [gen_convPow ν hs.1, gen_eq_ofReal_pgf ν hs, ← ENNReal.ofReal_pow hf.1]
     rfl
 
-/-- **Generating function of the n-th generation size.** The generating function of `Z_n` is the `n`-th iterate of the offspring generating
+/-- The generating function of `Z_n` is the `n`-th iterate of the offspring generating
 function on `[0, 1]` (Athreya–Ney 1972, ch. I). -/
 theorem pgf_law [IsProbabilityMeasure ν] (n : ℕ) {s : ℝ} (hs : s ∈ Icc (0 : ℝ) 1) :
     pgf id (law ν n) s = (pgf id ν)^[n] s := by
@@ -387,7 +387,7 @@ theorem pgf_law [IsProbabilityMeasure ν] (n : ℕ) {s : ℝ} (hs : s ∈ Icc (0
   exact (ENNReal.ofReal_eq_ofReal_iff (pgf_mem _ hs).1
     (iterate_pgf_mem_Icc ν n hs).1).1 h
 
-/-- **Probability of extinction by generation n.** `P(Z_n = 0) = f^[n](0)`. -/
+/-- `P(Z_n = 0) = f^[n](0)`. -/
 theorem law_real_zero [IsProbabilityMeasure ν] (n : ℕ) :
     (law ν n).real {0} = (pgf id ν)^[n] 0 := by
   rw [← pgf_law ν n zero_mem, pgf_zero id _ measurable_id]
@@ -406,7 +406,7 @@ private lemma lintegral_convPow [IsProbabilityMeasure ν] (z : ℕ) :
     push_cast
     ring
 
-/-- **Mean generation size of a Galton–Watson process.** The mean generation size is `E Z_n = m ^ n` (Athreya–Ney 1972, ch. I). -/
+/-- The mean generation size is `E Z_n = m ^ n` (Athreya–Ney 1972, ch. I). -/
 theorem lintegral_law [IsProbabilityMeasure ν] (n : ℕ) :
     ∫⁻ k, (k : ℝ≥0∞) ∂(law ν n) = mean ν ^ n := by
   induction n with
@@ -419,7 +419,7 @@ theorem lintegral_law [IsProbabilityMeasure ν] (n : ℕ) :
 
 /-! ### Extinction -/
 
-/-- **Extinction by generation n is nondecreasing in n.** `P(Z_n = 0)` is non-decreasing in `n`. -/
+/-- `P(Z_n = 0)` is non-decreasing in `n`. -/
 theorem monotone_law_real_zero [IsProbabilityMeasure ν] :
     Monotone fun n => (law ν n).real {0} := by
   simp_rw [law_real_zero ν]
@@ -429,21 +429,21 @@ private lemma extinctionProb_eq_iSup [IsProbabilityMeasure ν] :
     extinctionProb ν = ⨆ n, (pgf id ν)^[n] 0 := by
   simp_rw [extinctionProb, law_real_zero ν]
 
-/-- **Extinction by generation n converges to the extinction probability.** `P(Z_n = 0)` converges to the extinction probability. -/
+/-- `P(Z_n = 0)` converges to the extinction probability. -/
 theorem tendsto_law_real_zero [IsProbabilityMeasure ν] :
     Tendsto (fun n => (law ν n).real {0}) atTop (𝓝 (extinctionProb ν)) := by
   refine tendsto_atTop_ciSup (monotone_law_real_zero ν) ⟨1, ?_⟩
   rintro _ ⟨n, rfl⟩
   exact measureReal_le_one
 
-/-- **Extinction probability is the least fixed point.** The extinction probability is the least fixed point of the offspring generating function
+/-- The extinction probability is the least fixed point of the offspring generating function
 in `[0, 1]` (Athreya–Ney 1972, ch. I). -/
 theorem isLeast_extinctionProb [IsProbabilityMeasure ν] :
     IsLeast {s | s ∈ Icc (0 : ℝ) 1 ∧ pgf id ν s = s} (extinctionProb ν) := by
   rw [extinctionProb_eq_iSup]
   exact isLeast_iSup_iterate_pgf_zero ν
 
-/-- **Galton–Watson extinction criterion.** Extinction is certain iff the mean offspring number is at most `1`, provided the offspring
+/-- Extinction is certain iff the mean offspring number is at most `1`, provided the offspring
 number is not almost surely `1` (Athreya–Ney 1972, ch. I). -/
 theorem extinctionProb_eq_one_iff [IsProbabilityMeasure ν] (h1 : ν {1} ≠ 1) :
     extinctionProb ν = 1 ↔ mean ν ≤ 1 := by

@@ -73,19 +73,19 @@ def BirkhoffJamesOrthogonal (𝕜 : Type*) [RCLike 𝕜] {E : Type*} [NormedAddC
     [NormedSpace 𝕜 E] (x y : E) : Prop :=
   ∀ c : 𝕜, ‖x‖ ≤ ‖x + c • y‖
 
-/-- **Zero is Birkhoff–James orthogonal to every vector.** `0` is Birkhoff–James orthogonal to every vector. -/
+/-- `0` is Birkhoff–James orthogonal to every vector. -/
 theorem birkhoffJamesOrthogonal_zero_left (y : E) :
     BirkhoffJamesOrthogonal 𝕜 (0 : E) y := by
   intro c
   simp
 
-/-- **Every vector is Birkhoff–James orthogonal to zero.** Every vector is Birkhoff–James orthogonal to `0`. -/
+/-- Every vector is Birkhoff–James orthogonal to `0`. -/
 theorem birkhoffJamesOrthogonal_zero_right (x : E) :
     BirkhoffJamesOrthogonal 𝕜 x 0 := by
   intro c
   simp
 
-/-- **Only zero is Birkhoff–James orthogonal to itself.** A vector is Birkhoff–James orthogonal to itself if and only if it is `0`. -/
+/-- A vector is Birkhoff–James orthogonal to itself if and only if it is `0`. -/
 theorem birkhoffJamesOrthogonal_self_iff {x : E} :
     BirkhoffJamesOrthogonal 𝕜 x x ↔ x = 0 := by
   constructor
@@ -97,7 +97,7 @@ theorem birkhoffJamesOrthogonal_self_iff {x : E} :
     subst hx
     exact birkhoffJamesOrthogonal_zero_left 0
 
-/-- **Homogeneity of Birkhoff–James orthogonality.** Birkhoff–James orthogonality is homogeneous in both arguments. -/
+/-- Birkhoff–James orthogonality is homogeneous in both arguments. -/
 theorem birkhoffJamesOrthogonal_smul_left_right {x y : E} {a b : 𝕜}
     (h : BirkhoffJamesOrthogonal 𝕜 x y) :
     BirkhoffJamesOrthogonal 𝕜 (a • x) (b • y) := by
@@ -114,7 +114,7 @@ theorem birkhoffJamesOrthogonal_smul_left_right {x y : E} {a b : 𝕜}
             rw [hmul]
           rw [heq, norm_smul]
 
-/-- **Annihilating norming functional implies Birkhoff–James orthogonality.** If a norming functional of `x` vanishes at `y`, then `x` is
+/-- If a norming functional of `x` vanishes at `y`, then `x` is
 Birkhoff–James orthogonal to `y`. -/
 theorem birkhoffJamesOrthogonal_of_exists_norming {x y : E} {f : E →L[𝕜] 𝕜}
     (hf : ‖f‖ = 1) (hfx : f x = ‖x‖) (hfy : f y = 0) :
@@ -127,7 +127,7 @@ theorem birkhoffJamesOrthogonal_of_exists_norming {x y : E} {f : E →L[𝕜] �
     _ ≤ ‖f‖ * ‖x + c • y‖ := f.le_opNorm _
     _ = ‖x + c • y‖ := by rw [hf, one_mul]
 
-/-- **Birkhoff–James orthogonality gives an annihilating norming functional.** The converse: if `x ≠ 0` is Birkhoff–James orthogonal to `y`, there is a
+/-- The converse: if `x ≠ 0` is Birkhoff–James orthogonal to `y`, there is a
 norming functional of `x` vanishing at `y`. Birkhoff–James orthogonality makes
 the distance from `x` to `𝕜 ∙ y` equal to `‖x‖`, so the dual distance formula
 supplies an annihilating norming functional. -/
@@ -150,7 +150,7 @@ theorem exists_norming_of_birkhoffJamesOrthogonal {x y : E} (hx : x ≠ 0)
         exact norm_pos_iff.mpr hx)
   exact ⟨f, hf, by simpa only [hdist] using hfx, hfvan y (mem_span_singleton_self y)⟩
 
-/-- **Norming-functional characterization of Birkhoff–James orthogonality.** For `x ≠ 0`, Birkhoff–James orthogonality to `y` is equivalent to the
+/-- For `x ≠ 0`, Birkhoff–James orthogonality to `y` is equivalent to the
 existence of a norming functional of `x` vanishing at `y`. -/
 theorem birkhoffJamesOrthogonal_iff_exists_norming {x y : E} (hx : x ≠ 0) :
     BirkhoffJamesOrthogonal 𝕜 x y ↔
@@ -158,13 +158,13 @@ theorem birkhoffJamesOrthogonal_iff_exists_norming {x y : E} (hx : x ≠ 0) :
   ⟨exists_norming_of_birkhoffJamesOrthogonal hx,
     fun ⟨_f, hf, hfx, hfy⟩ => birkhoffJamesOrthogonal_of_exists_norming hf hfx hfy⟩
 
-/-- **Duality mapping of a normed space.** The **duality mapping** (duality set) at `x`: the functionals `f` with
+/-- The **duality mapping** (duality set) at `x`: the functionals `f` with
 `f x = ‖x‖ ^ 2` and `‖f‖ = ‖x‖`. At `x = 0` this is the singleton `{0}`. -/
 def dualityMapping (𝕜 : Type*) [RCLike 𝕜] {E : Type*} [NormedAddCommGroup E]
     [NormedSpace 𝕜 E] (x : E) : Set (E →L[𝕜] 𝕜) :=
   {f | f x = ((‖x‖ ^ 2 : ℝ) : 𝕜) ∧ ‖f‖ = ‖x‖}
 
-/-- **Duality mapping is nonempty.** The duality mapping is nonempty at every point: take a Hahn–Banach norming
+/-- The duality mapping is nonempty at every point: take a Hahn–Banach norming
 functional and scale it by `‖x‖`. -/
 theorem dualityMapping_nonempty (x : E) : (dualityMapping 𝕜 x).Nonempty := by
   by_cases hx : x = 0
@@ -177,7 +177,7 @@ theorem dualityMapping_nonempty (x : E) : (dualityMapping 𝕜 x).Nonempty := by
         ← pow_two]
     · rw [norm_smul, hg1, mul_one, RCLike.norm_ofReal, abs_of_nonneg (norm_nonneg _)]
 
-/-- **Duality-mapping characterization of Birkhoff–James orthogonality.** Birkhoff–James orthogonality to `y` is equivalent to the existence of a
+/-- Birkhoff–James orthogonality to `y` is equivalent to the existence of a
 functional in the duality mapping at `x` that vanishes at `y`. -/
 theorem birkhoffJamesOrthogonal_iff_exists_dualityMapping {x y : E} :
     BirkhoffJamesOrthogonal 𝕜 x y ↔ ∃ f ∈ dualityMapping 𝕜 x, f y = 0 := by
@@ -221,7 +221,7 @@ variable {𝕜 : Type*} [RCLike 𝕜] {E : Type*} [NormedAddCommGroup E] [InnerP
 
 local notation "⟪" x ", " y "⟫" => inner 𝕜 x y
 
-/-- **Birkhoff–James orthogonality in inner product spaces.** In an inner product space, Birkhoff–James orthogonality is ordinary
+/-- In an inner product space, Birkhoff–James orthogonality is ordinary
 inner-product orthogonality. -/
 theorem birkhoffJamesOrthogonal_iff_inner_eq_zero {x y : E} :
     BirkhoffJamesOrthogonal 𝕜 x y ↔ ⟪x, y⟫ = 0 := by

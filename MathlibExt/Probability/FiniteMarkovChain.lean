@@ -51,7 +51,7 @@ property for arbitrary future path functionals has a larger scope.
 
 variable {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω}
 
-/-- **Finite-state Markov chain with a given transition matrix.** `IsFiniteMarkovChain X P ℱ μ` asserts that the sequence `X : ℕ → Ω → Fin (M+1)`
+/-- `IsFiniteMarkovChain X P ℱ μ` asserts that the sequence `X : ℕ → Ω → Fin (M+1)`
 is a Markov chain with transition matrix `P`, adapted to the filtration `ℱ`,
 under the measure `μ`. Concretely: each `X n` is `ℱ n`-measurable, and the conditional
 probability that `X (n+1) = j` given `ℱ n` equals `P.prob (X n) j`, matching the
@@ -65,7 +65,7 @@ structure IsFiniteMarkovChain {M : ℕ} (X : ℕ → Ω → Fin (M + 1))
     μ[(fun ω => if X (n + 1) ω = j then (1 : ℝ) else 0) | ℱ n] =ᵐ[μ]
       fun ω => P.prob (X n ω) j
 
-/-- **Transition kernel of a stochastic matrix.** The transition kernel of a stochastic matrix: `finiteChainKernel P x` is the
+/-- The transition kernel of a stochastic matrix: `finiteChainKernel P x` is the
 probability measure on `Fin (M + 1)` putting mass `P.prob x j` on each state `j`.
 This is the kernel form of the transition matrix. -/
 noncomputable def finiteChainKernel {M : ℕ} (P : StochasticMatrix M) :
@@ -90,7 +90,7 @@ instance finiteChainKernel.isMarkovKernel {M : ℕ} (P : StochasticMatrix M) :
     rw [hsum, ← ENNReal.ofReal_sum_of_nonneg (fun j _ => P.nonneg x j), P.row_sum x,
       ENNReal.ofReal_one]
 
-/-- **Transition kernel of a stochastic matrix evaluated on a set.** The kernel of a stochastic matrix evaluated at a finite set is the sum of the
+/-- The kernel of a stochastic matrix evaluated at a finite set is the sum of the
 transition probabilities into that set. -/
 theorem finiteChainKernel_apply {M : ℕ} (P : StochasticMatrix M) (x : Fin (M + 1))
     (B : Finset (Fin (M + 1))) :
@@ -160,7 +160,7 @@ theorem IsFiniteMarkovChain.condExp_indicator {M : ℕ} {X : ℕ → Ω → Fin 
           rw [Finset.sum_apply]
           exact (hRHS ω).symm)
 
-/-- **Finite Markov chains satisfy the general Markov property.** Convert the finite singleton-probability specification to the canonical general
+/-- Convert the finite singleton-probability specification to the canonical general
 Markov-chain predicate under the probability-space hypotheses of `condExp_indicator`. -/
 theorem IsFiniteMarkovChain.toIsMarkovChain {M : ℕ} {X : ℕ → Ω → Fin (M + 1)}
     {P : StochasticMatrix M} {ℱ : Filtration ℕ m} [IsProbabilityMeasure μ]

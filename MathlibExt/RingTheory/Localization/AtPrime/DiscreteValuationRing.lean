@@ -40,7 +40,7 @@ the same proof works under the weaker hypotheses.
 
 open IsLocalRing
 
-/-- **Localization at a height-one prime is a DVR.** In a Noetherian integrally closed domain, the localization at a
+/-- In a Noetherian integrally closed domain, the localization at a
 height-one prime ideal is a discrete valuation ring. -/
 theorem Localization.AtPrime.isDiscreteValuationRing_of_height_eq_one
     {R : Type*} [CommRing R] [IsDomain R] [IsNoetherianRing R] [IsIntegrallyClosed R]

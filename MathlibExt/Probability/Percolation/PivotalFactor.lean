@@ -44,7 +44,7 @@ open ConfigSpace Function Finset StatMech
 
 variable {E : Type*} [Fintype E] [DecidableEq E]
 
-/-- **Real-valued indicator that an edge is open.** The indicator `ω_e ∈ {0, 1}` (as a real number) that the edge `e` is open in `ω`. -/
+/-- The indicator `ω_e ∈ {0, 1}` (as a real number) that the edge `e` is open in `ω`. -/
 noncomputable def openInd (ω : ConfigSpace E) (e : E) : ℝ := if ω e then 1 else 0
 
 omit [Fintype E] [DecidableEq E] in

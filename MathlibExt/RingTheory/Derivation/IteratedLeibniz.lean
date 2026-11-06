@@ -27,7 +27,7 @@ namespace Derivation
 
 variable {R B : Type*} [CommSemiring R] [CommRing B] [Algebra R B]
 
-/-- **Leibniz rule for iterated derivations.** Leibniz's rule for an iterated derivation. The natural weights are not cancelled, so the
+/-- Leibniz's rule for an iterated derivation. The natural weights are not cancelled, so the
 identity remains valid in positive characteristic. -/
 theorem iterate_mul (D : Derivation R B B) (n : ℕ) (a b : B) :
     (D : B → B)^[n] (a * b) =
@@ -49,7 +49,7 @@ theorem iterate_mul (D : Derivation R B B) (n : ℕ) (a b : B) :
 
 variable [Algebra ℚ B]
 
-/-- **Factorial-normalized iterated Leibniz rule.** The factorial-normalized iterated Leibniz rule for a rational derivation. -/
+/-- The factorial-normalized iterated Leibniz rule for a rational derivation. -/
 theorem iterate_mul_div (D : Derivation ℚ B B) (n : ℕ) (a b : B) :
     ((n.factorial : ℚ)⁻¹) • (D : B → B)^[n] (a * b) =
       ∑ p ∈ Finset.antidiagonal n,

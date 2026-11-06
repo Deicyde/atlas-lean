@@ -56,7 +56,7 @@ namespace MathlibExt.Analysis.Approximation.Equioscillation
 
 open Polynomial
 
-/-- **Equioscillation of a polynomial approximation.** A polynomial `p` of degree at most `n` equioscillates against `f` on `[a, b]`
+/-- A polynomial `p` of degree at most `n` equioscillates against `f` on `[a, b]`
 with amplitude `E` and sign `σ = ±1` at the `n + 2` points `x 0 < ⋯ < x (n+1)`,
 if `f (x i) - p (x i) = σ * (-1) ^ i * E` for every `i ≤ n + 1`, and
 `|f y - p.eval y| ≤ E` for every `y ∈ [a, b]`. -/
@@ -304,7 +304,7 @@ private theorem abs_neg_one_pow_mul_sigma_mul (σ : ℝ) (hσ : σ = 1 ∨ σ = 
   rw [abs_mul, abs_mul, abs_pow, abs_neg, abs_one, one_pow, one_mul]
   rcases hσ with rfl | rfl <;> simp
 
-/-- **Uniqueness of the equioscillating best approximation.** If `p` equioscillates against `f` on `[a, b]`, then `p` is the unique
+/-- If `p` equioscillates against `f` on `[a, b]`, then `p` is the unique
 polynomial of degree at most `n` whose uniform error on `[a, b]` is at most `E`.
 In particular `p` is the unique best uniform approximation to `f` among
 polynomials of degree at most `n`. -/
@@ -352,7 +352,7 @@ theorem eq_of_equioscillates {f : ℝ → ℝ} {a b : ℝ} {n : ℕ} {p : ℝ[X]
     · exact h
   exact (sub_eq_zero.mp hpq).symm
 
-/-- **Chebyshev equioscillation theorem (sufficiency).** If `p` equioscillates against `f`, then no polynomial of degree at most `n`
+/-- If `p` equioscillates against `f`, then no polynomial of degree at most `n`
 has uniform error strictly less than `E` on `[a, b]`: `p` is a best uniform
 approximation. -/
 theorem not_lt_of_equioscillates {f : ℝ → ℝ} {a b : ℝ} {n : ℕ} {p : ℝ[X]} {E σ : ℝ}

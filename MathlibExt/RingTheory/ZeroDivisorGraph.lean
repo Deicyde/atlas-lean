@@ -31,22 +31,16 @@ universe u
 
 namespace ZeroDivisorGraph
 
-/-- **Nonzero zero divisors.** For a commutative ring $R$, this is the set of elements
-$r \in R$ with $r \neq 0$ such that $sr = 0$ for some nonzero $s \in R$, that is, the nonzero
-zero divisors of $R$. They are the vertices of the zero-divisor graph of $R$. -/
+/-- Vertices are nonzero zero divisors, as a subtype of the ring. -/
 public abbrev Vertex (R : Type u) [CommRing R] :
     Type u := { r : R // r ≠ 0 ∧ r ∉ nonZeroDivisors R }
 
-/-- **The zero-divisor graph.** For a commutative ring $R$, the zero-divisor graph of $R$ is
-the simple graph whose vertices are the nonzero zero divisors of $R$, in which two distinct
-vertices $v$ and $w$ are adjacent exactly when $vw = 0$. -/
+/-- Zero-divisor graph via the zero-product relation. -/
 public def zeroDivisorGraph (R : Type u) [CommRing R] :
     SimpleGraph (Vertex R) :=
   SimpleGraph.fromRel fun v w : Vertex R => (v : R) * (w : R) = 0
 
-/-- **Vertices are the nonzero zero divisors.** Let $R$ be a commutative ring. An element
-$r \in R$ is a vertex of the zero-divisor graph of $R$ if and only if $r \neq 0$ and $r$ is a
-zero divisor, that is, $sr = 0$ for some nonzero $s \in R$. -/
+/-- An element lifts to a vertex iff it is nonzero and a zero divisor. -/
 public theorem exists_vertex_iff (R : Type u) [CommRing R] (r : R) :
     (∃ v : Vertex R, (v : R) = r) ↔ (r ≠ 0 ∧ r ∉ nonZeroDivisors R) := by
   constructor
@@ -55,8 +49,7 @@ public theorem exists_vertex_iff (R : Type u) [CommRing R] (r : R) :
   · rintro ⟨h0, hmem⟩
     exact ⟨⟨r, h0, hmem⟩, rfl⟩
 
-/-- **Adjacency in the zero-divisor graph.** Let $R$ be a commutative ring. Two vertices $v$
-and $w$ of the zero-divisor graph of $R$ are adjacent if and only if $v \neq w$ and $vw = 0$. -/
+/-- Adjacency is distinctness plus zero product in source orientation. -/
 public theorem adj_iff (R : Type u) [CommRing R]
     {v w : Vertex R} :
     (zeroDivisorGraph R).Adj v w ↔ v ≠ w ∧ (v : R) * (w : R) = 0 := by

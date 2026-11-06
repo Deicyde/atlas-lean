@@ -40,9 +40,7 @@ namespace Cslib.Language
 
 variable {T : Type*}
 
-/-- **A form yielding the empty word contains no terminal.** Let $G$ be a context-free grammar
-over terminals $T$ and let $\alpha$ be a sentential form of $G$. If $\alpha$ yields the empty
-word in $G$, then no terminal symbol $a \in T$ occurs in $\alpha$. -/
+/-- A yield of the empty word uses no terminal. -/
 theorem Yields.terminal_not_mem {G : ContextFreeGrammar T} {α : List (Symbol T G.NT)}
     (h : Yields G α []) {a : T} : Symbol.terminal a ∉ α := by
   generalize hw : ([] : List T) = w at h
@@ -59,18 +57,12 @@ open Cslib.Decidability
 
 /-! ## Nullable nonterminals -/
 
-/-- **Productions without terminals of an encoded grammar.** For an encoded context-free grammar
-$g$, the encoded grammar with the same start nonterminal whose productions are the productions
-of $g$, in their order, whose right-hand sides contain no terminal. -/
+/-- The productions without terminals. -/
 def noTerminals (g : EncodedCFG T) : EncodedCFG T :=
   ⟨g.start, g.rules.filter fun e => e.2.all Sum.isLeft⟩
 
-/-- **Computed nullable nonterminals of an encoded grammar.** For an encoded context-free grammar
-$g$, the list of generating nonterminals of the encoded grammar that has the start nonterminal
-of $g$ and, as productions, the productions of $g$ whose right-hand sides contain no terminal.
-
-A nonterminal is in this list exactly when it derives the empty word in the grammar denoted by
-$g$. -/
+/-- The nullable nonterminals: the generating nonterminals of the productions without
+terminals. -/
 def nullable (g : EncodedCFG T) : List ℕ :=
   g.noTerminals.generating
 
@@ -93,10 +85,7 @@ theorem mem_noTerminals_rules {g : EncodedCFG T} {r : ContextFreeRule T ℕ} :
     | inl i => rfl
     | inr b => exact absurd (List.mem_map.2 ⟨_, hs, rfl⟩) (hno b)
 
-/-- **Yields of the empty word need only terminal-free productions.** Let $g$ be an encoded
-context-free grammar and $\alpha$ a sentential form of the grammar $g$ denotes. If $\alpha$ yields
-the empty word in that grammar, then $\alpha$ also yields the empty word in the grammar denoted by
-the encoded grammar consisting of the productions of $g$ that contain no terminal. -/
+/-- A yield of the empty word uses only productions without terminals. -/
 theorem yields_noTerminals {g : EncodedCFG T} {α : List (Symbol T g.toCFG.NT)}
     (h : Yields g.toCFG α []) : Yields g.noTerminals.toCFG α [] := by
   generalize hw : ([] : List T) = w at h
@@ -110,10 +99,7 @@ theorem yields_noTerminals {g : EncodedCFG T} {α : List (Symbol T g.toCFG.NT)}
         mem_noTerminals_rules.2 ⟨hr, fun a => hout.terminal_not_mem⟩
       exact Yields.nonterminal hr' (ihout rfl) (ihrest rfl)
 
-/-- **Terminal-free productions yield only the empty word.** Let $g$ be an encoded context-free
-grammar and consider the grammar of its productions without terminals. If a sentential form
-$\alpha$ that contains no terminal yields a word $w$ in that grammar, then $w$ is the empty
-word. -/
+/-- In a grammar without terminals in its productions, only the empty word is yielded. -/
 theorem eq_nil_of_yields_noTerminals {g : EncodedCFG T} {α : List (Symbol T g.noTerminals.toCFG.NT)}
     {w : List T}
     (h : Yields g.noTerminals.toCFG α w) (hα : ∀ a, Symbol.terminal a ∉ α) : w = [] := by
@@ -124,10 +110,7 @@ theorem eq_nil_of_yields_noTerminals {g : EncodedCFG T} {α : List (Symbol T g.n
       rw [ihout (mem_noTerminals_rules.1 hr).2,
         ihrest fun a ha => hα a (List.mem_cons_of_mem _ ha), List.append_nil]
 
-/-- **Yields in the terminal-free subgrammar are yields of the grammar.** Let $g$ be an encoded
-context-free grammar, $\alpha$ a sentential form and $w$ a word. If $\alpha$ yields $w$ in the
-grammar denoted by the encoded grammar consisting of the productions of $g$ that contain no
-terminal, then $\alpha$ yields $w$ in the grammar $g$ denotes. -/
+/-- Yields in the grammar of productions without terminals are yields of the grammar. -/
 theorem yields_of_yields_noTerminals {g : EncodedCFG T}
     {α : List (Symbol T g.noTerminals.toCFG.NT)} {w : List T}
     (h : Yields g.noTerminals.toCFG α w) : Yields g.toCFG α w := by
@@ -137,10 +120,7 @@ theorem yields_of_yields_noTerminals {g : EncodedCFG T}
   | nonterminal hr _ _ ihout ihrest =>
       exact Yields.nonterminal (mem_noTerminals_rules.1 hr).1 ihout ihrest
 
-/-- **The nullable nonterminals are computed.** For every encoded context-free grammar $g$ and
-every natural number $A$, $A$ belongs to the computed list of nullable nonterminals of $g$ (the
-generating nonterminals of the productions of $g$ without terminals) if and only if $A$ is
-nullable in the grammar denoted by $g$, that is, $A$ derives the empty word. -/
+/-- **The nullable nonterminals are computed.** -/
 theorem mem_nullable_iff {g : EncodedCFG T} {A : ℕ} : A ∈ g.nullable ↔ Nullable g.toCFG A := by
   constructor
   · intro h
@@ -158,12 +138,8 @@ theorem mem_nullable_iff {g : EncodedCFG T} {A : ℕ} : A ∈ g.nullable ↔ Nul
 /-! ## Removing empty productions -/
 
 omit [DecidableEq T] in
-/-- **Deleting nonterminals from an encoded right-hand side.** Let $N$ be a list of natural
-numbers and $u$ an encoded right-hand side, that is, a word whose letters are nonterminals
-$i \in \mathbb{N}$ or terminals. The result is the list of all words obtained from $u$ by
-deleting some of the occurrences of nonterminals that belong to $N$ (possibly none, possibly
-all) and keeping every other letter in order; each choice of deleted occurrences contributes one
-entry of the list. -/
+/-- The right-hand sides obtained from `u` by deleting some occurrences of nonterminals in
+`N`. -/
 def deletions (N : List ℕ) (u : List (ℕ ⊕ T)) : List (List (ℕ ⊕ T)) :=
   u.foldr (fun s acc => acc.map (s :: ·) ++
     cond (Sum.elim (Decidability.memB N) (fun _ => false) s) acc []) [[]]
@@ -182,12 +158,7 @@ theorem mem_deletions_cons {N : List ℕ} {s : ℕ ⊕ T} {u v : List (ℕ ⊕ T
   rw [List.mem_append, List.mem_map]
   cases Sum.elim (Decidability.memB N) (fun _ => false) s <;> simp
 
-/-- **Computed deletions agree with nullable deletions.** Let $g$ be an encoded context-free
-grammar. For every encoded word $u$ and every sentential form $\alpha$ of the grammar denoted by
-$g$, $\alpha$ is obtained from the decoding of $u$ by deleting some occurrences of nullable
-nonterminals of the grammar denoted by $g$ if and only if $\alpha$ is the decoding of a word
-obtained from $u$ by deleting some occurrences of nonterminals in the computed list of nullable
-nonterminals of $g$. -/
+/-- The deletions of nullable nonterminals are those of `nullableDeletions`. -/
 theorem mem_nullableDeletions_iff {g : EncodedCFG T} :
     ∀ (u : List (ℕ ⊕ T)) (α : List (Symbol T ℕ)),
       α ∈ nullableDeletions g.toCFG (u.map decodeSymbol) ↔
@@ -230,20 +201,14 @@ theorem mem_nullableDeletions_iff {g : EncodedCFG T} :
               exact ⟨_, hv, rfl⟩
 
 omit [DecidableEq T] in
-/-- **Removing empty productions from an encoded grammar.** For an encoded context-free grammar
-$g$, the encoded grammar with the same start nonterminal whose productions are, for each
-production $A \to u$ of $g$, the productions $A \to v$ for every nonempty word $v$ obtained from
-$u$ by deleting some occurrences of nonterminals in the computed list of nullable nonterminals of
-$g$. -/
+/-- Remove empty productions: from each production, all productions obtained by deleting
+nullable nonterminals, except empty ones. -/
 def epsElim (g : EncodedCFG T) : EncodedCFG T :=
   let N := g.nullable
   ⟨g.start, g.rules.flatMap fun e =>
     ((deletions N e.2).filter fun v => decide (0 < v.length)).map (e.1, ·)⟩
 
-/-- **Productions of the computable removal of empty productions.** For every encoded context-free
-grammar $g$, a production is a production of the grammar denoted by the encoded grammar obtained
-from $g$ by removing empty productions if and only if it is a production of the grammar obtained
-from the grammar denoted by $g$ by eliminating empty productions. -/
+/-- The productions of `epsElim` are those of `epsGrammar`. -/
 theorem mem_epsElim_rules {g : EncodedCFG T} {r : ContextFreeRule T ℕ} :
     r ∈ g.epsElim.toCFG.rules ↔ r ∈ (epsGrammar g.toCFG).rules := by
   rw [mem_toCFG_rules]
@@ -266,11 +231,7 @@ theorem mem_epsElim_rules {g : EncodedCFG T} {r : ContextFreeRule T ℕ} :
       rw [hin, hvα]
 
 
-/-- **Computable removal of empty productions agrees with the classical one.** For every encoded
-context-free grammar $g$, the grammar denoted by the encoded grammar obtained from $g$ by removing
-empty productions is equal to the grammar obtained from the grammar denoted by $g$ by eliminating
-empty productions: from each production, all productions obtained by deleting some occurrences of
-nullable nonterminals from its output, except those with empty output. -/
+/-- **`epsElim` computes `epsGrammar`.** -/
 theorem epsElim_toCFG (g : EncodedCFG T) : g.epsElim.toCFG = epsGrammar g.toCFG := by
   have h : g.epsElim.toCFG = ⟨ℕ, g.start, (g.epsElim.rules.map decodeRule).toFinset⟩ := rfl
   rw [h]
@@ -279,9 +240,7 @@ theorem epsElim_toCFG (g : EncodedCFG T) : g.epsElim.toCFG = epsGrammar g.toCFG 
   ext r
   exact mem_epsElim_rules
 
-/-- **Removing empty productions drops only the empty word.** For every encoded context-free
-grammar $g$, the language of the encoded grammar obtained from $g$ by removing empty productions
-consists of the nonempty words of the language of $g$. -/
+/-- `epsElim` generates the language minus the empty word. -/
 theorem language_epsElim (g : EncodedCFG T) :
     g.epsElim.language = {w | w ∈ g.language ∧ w ≠ []} := by
   ext w
@@ -292,10 +251,8 @@ theorem language_epsElim (g : EncodedCFG T) :
 /-! ## Removing unit productions -/
 
 omit [DecidableEq T] in
-/-- **Nonterminals of an encoded grammar.** For an encoded context-free grammar $g$, the list
-obtained by duplicate removal from the list made of the start nonterminal of $g$ followed, for
-each production of $g$ in order, by its left-hand side and then the nonterminals of its
-right-hand side in order. It lists without repetitions the nonterminals that $g$ mentions. -/
+/-- The nonterminals mentioned, without repetitions: the start, and the left-hand sides and
+right-hand-side nonterminals of the productions. -/
 def ntList (g : EncodedCFG T) : List ℕ :=
   dedupB (g.start :: g.rules.flatMap fun e => e.1 :: e.2.filterMap Sum.getLeft?)
 
@@ -325,9 +282,7 @@ theorem mem_ntList_iff {g : EncodedCFG T} {A : ℕ} : A ∈ g.ntList ↔ A ∈ g
       | inr a => simp [decodeSymbol] at hsA
 
 omit [DecidableEq T] in
-/-- **Target of a unit right-hand side.** For an encoded right-hand side $u$, a list whose entries
-are nonterminals $i \in \mathbb{N}$ or terminals, the optional value is $B$ when $u$ consists of
-the single nonterminal $B$, and there is no value otherwise. -/
+/-- The nonterminal of a unit right-hand side. -/
 def unitTarget (u : List (ℕ ⊕ T)) : Option ℕ :=
   cond (decide (u.length = 1)) (u.head?.bind Sum.getLeft?) none
 
@@ -357,10 +312,8 @@ theorem isUnitOutput_iff {u : List (ℕ ⊕ T)} :
     exact ⟨B, rfl⟩
 
 omit [DecidableEq T] in
-/-- **One round of unit reachability.** For an encoded context-free grammar $g$, a natural number
-$A$ and a list $S$ of natural numbers, the list consisting of $A$ followed, for each production of
-$g$ in order whose left-hand side lies in $S$ and whose right-hand side is a single nonterminal
-$B$, by that nonterminal $B$. -/
+/-- One round of unit reachability from `A`: `A`, and the right-hand sides of unit productions
+from nonterminals found so far. -/
 def unitStep (g : EncodedCFG T) (A : ℕ) (S : List ℕ) : List ℕ :=
   A :: g.rules.filterMap fun e => cond (Decidability.memB S e.1) (unitTarget e.2) none
 
@@ -398,14 +351,7 @@ theorem unitStep_subset {g : EncodedCFG T} {A : ℕ} (S : List ℕ) :
     simp
 
 omit [DecidableEq T] in
-/-- **Nonterminals reachable by unit productions in an encoded grammar.** For an encoded
-context-free grammar $g$ and a natural number $A$, let $n$ be the number of distinct nonterminals
-mentioned in $g$ (the start, the left-hand sides, and the nonterminals on right-hand sides). The
-list is obtained from the empty list by applying one round of unit reachability from $A$
-exactly $n + 1$ times.
-
-Its entries are exactly the nonterminals $B$ reachable from $A$ by a possibly empty chain of
-unit productions $A \to \dots \to B$ of $g$; in particular $A$ itself is an entry. -/
+/-- The nonterminals reachable from `A` by unit productions. -/
 def unitReach (g : EncodedCFG T) (A : ℕ) : List ℕ :=
   (g.unitStep A)^[(A :: g.ntList).length] []
 
@@ -420,11 +366,7 @@ theorem decodeRule_eq_unit {e : ℕ × List (ℕ ⊕ T)} {C B : ℕ}
   rw [← encodeRule_decodeRule e, h]
   rfl
 
-/-- **Unit reachability is computed.** Let $g$ be an encoded context-free grammar and let $A$ and
-$B$ be natural numbers. Then $B$ belongs to the computed list of nonterminals reachable from $A$
-by unit productions of $g$ if and only if there are $k \ge 0$ and nonterminals
-$A = C_0, C_1, \dots, C_k = B$ such that $C_{i-1} \to C_i$ is a production of the grammar denoted
-by $g$ for every $i$ with $1 \le i \le k$. -/
+/-- **Unit reachability is computed.** -/
 theorem mem_unitReach_iff {g : EncodedCFG T} {A B : ℕ} :
     B ∈ g.unitReach A ↔ UnitSteps g.toCFG A B := by
   constructor
@@ -452,22 +394,15 @@ theorem mem_unitReach_iff {g : EncodedCFG T} {A B : ℕ} :
         exact unitStep_unitReach_subset g A (mem_unitStep.2 (Or.inr ⟨_, he, ih, rfl⟩))
 
 omit [DecidableEq T] in
-/-- **Unit elimination for encoded grammars.** For an encoded context-free grammar $g$, the
-encoded grammar with the start nonterminal of $g$ whose productions are listed as follows: for
-each nonterminal $A$ in the list of nonterminals of $g$, and for each production $B \to u$ of $g$
-in order such that $B$ is in the computed list of nonterminals reachable from $A$ by unit
-productions and $u$ is not a single nonterminal, the production $A \to u$. -/
+/-- Remove unit productions: every non-unit production of a nonterminal reachable by unit
+productions is copied to each mentioned nonterminal that reaches it. -/
 def unitElim (g : EncodedCFG T) : EncodedCFG T :=
   ⟨g.start, g.ntList.flatMap fun A =>
     let R := g.unitReach A
     g.rules.filterMap fun e =>
       cond (Decidability.memB R e.1 && !(unitTarget e.2).isSome) (some (A, e.2)) none⟩
 
-/-- **Productions of the encoded unit elimination.** Let $g$ be an encoded context-free grammar
-over terminals $T$ and let $r$ be a production with terminals in $T$ and nonterminals in
-$\mathbb{N}$. Then $r$ is a production of the grammar denoted by the encoded unit elimination of
-$g$ if and only if $r$ is a production of the grammar obtained from the grammar denoted by $g$ by
-eliminating unit productions. -/
+/-- The productions of `unitElim` are those of `unitGrammar`. -/
 theorem mem_unitElim_rules {g : EncodedCFG T} {r : ContextFreeRule T ℕ} :
     r ∈ g.unitElim.toCFG.rules ↔ r ∈ (unitGrammar g.toCFG).rules := by
   rw [mem_toCFG_rules]
@@ -507,9 +442,7 @@ theorem mem_unitElim_rules {g : EncodedCFG T} {r : ContextFreeRule T ℕ} :
       simp only [decodeRule] at hout ⊢
       rw [hout]
 
-/-- **The encoded unit elimination denotes the unit-eliminated grammar.** For every encoded
-context-free grammar $g$, the grammar denoted by the encoded unit elimination of $g$ is equal to
-the grammar obtained from the grammar denoted by $g$ by eliminating unit productions. -/
+/-- **`unitElim` computes `unitGrammar`.** -/
 theorem unitElim_toCFG (g : EncodedCFG T) : g.unitElim.toCFG = unitGrammar g.toCFG := by
   have h : g.unitElim.toCFG = ⟨ℕ, g.start, (g.unitElim.rules.map decodeRule).toFinset⟩ := rfl
   rw [h]
@@ -521,16 +454,11 @@ theorem unitElim_toCFG (g : EncodedCFG T) : g.unitElim.toCFG = unitGrammar g.toC
 /-! ## Reduction -/
 
 omit [DecidableEq T] in
-/-- **Reduction of an encoded grammar.** For an encoded context-free grammar $g$, the encoded
-grammar obtained by first removing the empty productions of $g$ (encoded
-$\varepsilon$-elimination) and then removing the unit productions of the result (encoded unit
-elimination). -/
+/-- Remove empty productions, then unit productions. -/
 def reduce (g : EncodedCFG T) : EncodedCFG T :=
   g.epsElim.unitElim
 
-/-- **The reduced grammar generates the language minus the empty word.** For every encoded
-context-free grammar $g$, the language of the reduction of $g$ (empty productions removed, then
-unit productions removed) consists of the nonempty words of the language of $g$. -/
+/-- **The reduced grammar generates the language minus the empty word.** -/
 theorem language_reduce (g : EncodedCFG T) :
     g.reduce.language = {w | w ∈ g.language ∧ w ≠ []} := by
   ext w
@@ -539,10 +467,7 @@ theorem language_reduce (g : EncodedCFG T) :
   change w ∈ g.epsElim.language ↔ _
   rw [language_epsElim]
 
-/-- **The reduced grammar has no empty and no unit productions.** For every encoded context-free
-grammar $g$, every production of the grammar denoted by the reduction of $g$ (empty productions
-removed, then unit productions removed) has a nonempty output, and that output is not a single
-nonterminal. -/
+/-- **The reduced grammar has no empty and no unit productions.** -/
 theorem isReduced_reduce (g : EncodedCFG T) : IsReduced g.reduce.toCFG := by
   change IsReduced g.epsElim.unitElim.toCFG
   rw [unitElim_toCFG]
@@ -652,11 +577,7 @@ theorem primrec_unitElim : Primrec (unitElim (T := T)) :=
             (Primrec.pair (Primrec.snd.comp Primrec.fst) (Primrec.snd.comp Primrec.snd)))
           (Primrec.const none)).to₂).to₂)
 
-/-- **Reduction is primitive recursive.** Let $T$ be a type of terminals with a primitive
-recursive encoding. The map sending an encoded context-free grammar $g$ over $T$ to its
-reduction, the encoded grammar obtained from $g$ by removing empty productions and then unit
-productions, is primitive recursive, where encoded grammars are encoded as pairs of a start
-nonterminal and a list of productions. -/
+/-- **Reduction is primitive recursive.** -/
 theorem primrec_reduce : Primrec (reduce (T := T)) :=
   primrec_unitElim.comp primrec_epsElim
 

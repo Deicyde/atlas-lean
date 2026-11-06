@@ -27,9 +27,8 @@ namespace MetaMathlibExt
 
 @[expose] public section
 
-/-- **Consecutive polynomial family.** Let $k$ be a natural number. A family
-$L_0, \dots, L_{k-1}$ of polynomials in $\mathbb{Z}[X]$ is consecutive when
-$L_{i+1} - L_i = 1$ for every $i$ with $i + 1 < k$. -/
+/-- A family `L₀, …, Lₖ₋₁` of polynomials in `ℤ[X]` is consecutive when
+`L_(i+1) - L_i = 1` for every `i < k - 1`. -/
 def IsConsecutivePolynomialFamily (k : ℕ) (L : Fin k → Polynomial ℤ) : Prop :=
   ∀ i : Fin k, ∀ h : i.val + 1 < k, L ⟨i.val + 1, h⟩ - L i = 1
 

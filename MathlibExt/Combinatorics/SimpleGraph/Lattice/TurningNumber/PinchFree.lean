@@ -42,7 +42,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind StatMech.Ons
 
 variable {n : ℕ} [NeZero n]
 
-/-- **Horizontal neighbours of different parity are separated by a vertical step.** If cells `(a, b)` and `(a + 1, b)` have different ray parities, a vertical step separates
+/-- If cells `(a, b)` and `(a + 1, b)` have different ray parities, a vertical step separates
   them. -/
 theorem straddle_nonempty_of_ne (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (a b : ℤ)
     (h : rayParity d a b ≠ rayParity d (a + 1) b) : (straddleSet d a b).Nonempty := by
@@ -55,7 +55,7 @@ theorem straddle_nonempty_of_ne (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (
       exact ⟨hvk, hxk, hstr.1, hstr.2⟩
     rw [hemp] at hmem; exact absurd hmem (Finset.notMem_empty k)))
 
-/-- **Vertical neighbours of different parity are separated by a horizontal step.** If cells `(a, b)` and `(a, b + 1)` have different ray parities, a horizontal step separates
+/-- If cells `(a, b)` and `(a, b + 1)` have different ray parities, a horizontal step separates
   them. -/
 theorem mid_nonempty_of_ne (d : Fin n → Fin 4) (a b : ℤ)
     (h : rayParity d a b ≠ rayParity d a (b + 1)) : (midSet d a (b + 1)).Nonempty := by
@@ -68,7 +68,7 @@ theorem mid_nonempty_of_ne (d : Fin n → Fin 4) (a b : ℤ)
       exact ⟨hhk, hmk, hyk⟩
     rw [hemp] at hmem; exact absurd hmem (Finset.notMem_empty k)))
 
-/-- **Interior of a simple closed walk has no pinch points.** The interior of a simple closed walk has no pinch points. -/
+/-- The interior of a simple closed walk has no pinch points. -/
 theorem pinch_free (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (_hn : 3 ≤ n) (v : ℤ × ℤ) :
     ¬ pinchAt (interiorCells d hclosed) v := by
@@ -147,7 +147,7 @@ theorem pinch_free (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (Finset.card_insert_le _ _).trans (by simp)
   omega
 
-/-- **Pinch count of the ray-parity interior is zero.** The interior of a simple closed walk has pinch count `0`. See also
+/-- The interior of a simple closed walk has pinch count `0`. See also
   `StatMech.Onsager.WalkCellLocal.pinchCount_interiorCells_eq_zero`. -/
 theorem pinchCount_eq_zero (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (hn : 3 ≤ n) :

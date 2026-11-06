@@ -89,16 +89,16 @@ private theorem sum_four (x : Bool × Bool → ℝ) :
   simp only [Fintype.sum_prod_type, Fintype.sum_bool]
   ring
 
-/-- **Allele count of a gamete at one locus.** The `0/1` count of the `'1'` allele carried by a gamete at one locus. -/
+/-- The `0/1` count of the `'1'` allele carried by a gamete at one locus. -/
 def alleleCount (b : Bool) : ℝ := if b then 1 else 0
 
-/-- **Covariance of allele counts within a gamete.** The covariance of the allele counts at the two loci of one gamete drawn from the gamete
+/-- The covariance of the allele counts at the two loci of one gamete drawn from the gamete
 frequencies `x`: `∑ g, x g a(g.1) a(g.2) - (∑ g, x g a(g.1)) (∑ g, x g a(g.2))`. -/
 def alleleCov (x : Bool × Bool → ℝ) : ℝ :=
   ∑ g, x g * (alleleCount g.1 * alleleCount g.2) -
     (∑ g, x g * alleleCount g.1) * ∑ g, x g * alleleCount g.2
 
-/-- **Covariance of unphased diploid genotypes.** The covariance of the unphased diploid genotypes `X = X₁ + X₂ ∈ {0, 1, 2}` at the first
+/-- The covariance of the unphased diploid genotypes `X = X₁ + X₂ ∈ {0, 1, 2}` at the first
 locus and `Y = Y₁ + Y₂` at the second, for an individual made of two gametes `g`, `h` drawn
 independently from `x` (random union of gametes). This is `z(x, y)` of Loh et al. (2013),
 Eq. 1. -/
@@ -108,7 +108,7 @@ def genotypeCov (x : Bool × Bool → ℝ) : ℝ :=
     (∑ g, ∑ h, x g * x h * (alleleCount g.1 + alleleCount h.1)) *
       ∑ g, ∑ h, x g * x h * (alleleCount g.2 + alleleCount h.2)
 
-/-- **Gamete allele covariance equals linkage disequilibrium.** The covariance of the allele counts of one gamete is the linkage disequilibrium
+/-- The covariance of the allele counts of one gamete is the linkage disequilibrium
 `D = x_AB x_ab - x_Ab x_aB` (frequencies summing to `1`). -/
 theorem alleleCov_eq_linkageDiseq {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) :
     alleleCov x = linkageDiseq x := by
@@ -120,7 +120,7 @@ theorem alleleCov_eq_linkageDiseq {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 
   rw [h]
   ring
 
-/-- **Diploid genotype covariance is twice the linkage disequilibrium.** The diploid genotype covariance is twice the haplotype one, `z = 2 D`: the two
+/-- The diploid genotype covariance is twice the haplotype one, `z = 2 D`: the two
 same-gamete terms each contribute `D` and the two cross-gamete terms vanish by independence
 (Loh et al. 2013, Eqs. 2–3). -/
 theorem genotypeCov_eq_two_mul {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) :
@@ -135,23 +135,23 @@ theorem genotypeCov_eq_two_mul {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) 
 
 /-! ### Pulse admixture of two source populations -/
 
-/-- **Bernoulli allele frequency.** The frequency `p` of the `'1'` allele (`b = true`) or `1 - p` of the `'0'` allele. -/
+/-- The frequency `p` of the `'1'` allele (`b = true`) or `1 - p` of the `'0'` allele. -/
 def bernFreq (p : ℝ) (b : Bool) : ℝ := if b then p else 1 - p
 
-/-- **Gamete frequencies after an admixture pulse.** Gamete frequencies right after the pulse: with probability `α` the gamete comes from `A`,
+/-- Gamete frequencies right after the pulse: with probability `α` the gamete comes from `A`,
 where the loci are in linkage equilibrium with `'1'` frequencies `pA` and `qA`, and otherwise
 from `B` (frequencies `pB`, `qB`). The biological domain is `α, pA, qA, pB, qB ∈ [0, 1]`;
 the identities below hold for all reals. -/
 def sourceMix (α pA qA pB qB : ℝ) (g : Bool × Bool) : ℝ :=
   α * (bernFreq pA g.1 * bernFreq qA g.2) + (1 - α) * (bernFreq pB g.1 * bernFreq qB g.2)
 
-/-- **Pulse gamete frequencies sum to one.** The pulse gamete frequencies sum to `1`. -/
+/-- The pulse gamete frequencies sum to `1`. -/
 theorem sum_sourceMix (α pA qA pB qB : ℝ) : ∑ g, sourceMix α pA qA pB qB g = 1 := by
   simp only [sourceMix, bernFreq, Fintype.sum_prod_type, Fintype.sum_bool]
   norm_num
   ring
 
-/-- **Admixture linkage disequilibrium right after the pulse.** Admixture LD right after the pulse: `D₀ = α (1 - α) δ(x) δ(y)`, with
+/-- Admixture LD right after the pulse: `D₀ = α (1 - α) δ(x) δ(y)`, with
 `δ(x) = pA - pB`, `δ(y) = qA - qB` (Chakraborty and Weiss 1988). -/
 theorem linkageDiseq_sourceMix (α pA qA pB qB : ℝ) :
     linkageDiseq (sourceMix α pA qA pB qB) = α * (1 - α) * ((pA - pB) * (qA - qB)) := by
@@ -159,21 +159,21 @@ theorem linkageDiseq_sourceMix (α pA qA pB qB : ℝ) :
   norm_num
   ring
 
-/-- **Decay of admixture linkage disequilibrium over generations.** Admixture LD after `n` generations of random mating with recombination fraction `r`:
+/-- Admixture LD after `n` generations of random mating with recombination fraction `r`:
 `D_n = (1 - r)^n α (1 - α) δ(x) δ(y)`. -/
 theorem linkageDiseq_admixed (α pA qA pB qB r : ℝ) (n : ℕ) :
     linkageDiseq ((recombine r)^[n] (sourceMix α pA qA pB qB)) =
       (1 - r) ^ n * (α * (1 - α) * ((pA - pB) * (qA - qB))) := by
   rw [linkageDiseq_iterate (sum_sourceMix α pA qA pB qB), linkageDiseq_sourceMix]
 
-/-- **Recombination preserves total gamete frequency.** Recombination keeps gamete frequencies summing to `1` over any number of generations. -/
+/-- Recombination keeps gamete frequencies summing to `1` over any number of generations. -/
 theorem sum_iterate_recombine {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) (r : ℝ) (n : ℕ) :
     ∑ g, (recombine r)^[n] x g = 1 := by
   induction n with
   | zero => exact hx
   | succ n ih => rw [Function.iterate_succ_apply']; exact sum_recombine ih r
 
-/-- **Diploid genotype covariance in an admixed population.** The diploid genotype covariance in the admixed population `n` generations after the
+/-- The diploid genotype covariance in the admixed population `n` generations after the
 pulse: `z(x, y) = 2 α (1 - α) (1 - r)^n δ(x) δ(y)` (Loh et al. 2013, Eq. 3, with the exact
 discrete-generation factor `(1 - r)^n` in place of `e^{-n d}`). -/
 theorem genotypeCov_admixed (α pA qA pB qB r : ℝ) (n : ℕ) :
@@ -185,13 +185,13 @@ theorem genotypeCov_admixed (α pA qA pB qB r : ℝ) (n : ℕ) :
 
 /-! ### Local-ancestry covariance after a pulse -/
 
-/-- **Joint law of local ancestry after an admixture pulse.** Joint law of the local-ancestry labels at the two loci right after the pulse
+/-- Joint law of the local-ancestry labels at the two loci right after the pulse
 (`true` = descends from `A`): every gamete is entirely from `A` (probability `α`) or entirely
 from `B`. This is `sourceMix` with perfectly differentiated markers (`pA = qA = 1`,
 `pB = qB = 0`). -/
 def ancestryPulse (α : ℝ) : Bool × Bool → ℝ := sourceMix α 1 1 0 0
 
-/-- **Covariance of local-ancestry indicators after pulse admixture.** Pulse admixture: after `n` generations of random mating the local-ancestry indicators at
+/-- Pulse admixture: after `n` generations of random mating the local-ancestry indicators at
 two loci with recombination fraction `r` have covariance `Cov(I_x, I_y) = α (1 - α) (1 - r)^n`
 (for every real `α`, `r`; the biological domain is `0 ≤ α ≤ 1`, `0 ≤ r ≤ 1/2`). The
 ancestry labels obey the two-locus random-mating recursion of `Linkage.recombine`
@@ -205,7 +205,7 @@ theorem alleleCov_ancestryPulse (α r : ℝ) (n : ℕ) :
 
 /-! ### Relation to the continuous form `e^{-n d}` -/
 
-/-- **Haldane's map function: $1 - r = e^{-d}\cosh d$.** With Haldane's map function, `1 - r = e^{-d} cosh d` for map length `d`. -/
+/-- With Haldane's map function, `1 - r = e^{-d} cosh d` for map length `d`. -/
 theorem one_sub_haldane (d : ℝ) : 1 - haldane d = exp (-d) * cosh d := by
   rw [haldane, cosh_eq]
   have h2 : exp (-2 * d) = exp (-d) * exp (-d) := by rw [← exp_add]; ring_nf
@@ -213,13 +213,13 @@ theorem one_sub_haldane (d : ℝ) : 1 - haldane d = exp (-d) * cosh d := by
   rw [h2]
   linear_combination (-1 / 2 : ℝ) * h1
 
-/-- **Exact decay factor under Haldane's map function.** Exact decay in Morgans: `(1 - r)^n = e^{-n d} (cosh d)^n` when `r = haldane d`. -/
+/-- Exact decay in Morgans: `(1 - r)^n = e^{-n d} (cosh d)^n` when `r = haldane d`. -/
 theorem pow_one_sub_haldane (d : ℝ) (n : ℕ) :
     (1 - haldane d) ^ n = exp (-(n * d)) * cosh d ^ n := by
   rw [one_sub_haldane, mul_pow, ← exp_nat_mul]
   ring_nf
 
-/-- **Continuous decay is a lower bound for the exact factor under Haldane's map.** The continuous decay `e^{-n d}` used by Chakraborty and Weiss (1988) and Loh et al.
+/-- The continuous decay `e^{-n d}` used by Chakraborty and Weiss (1988) and Loh et al.
 (2013) is a lower bound for the exact factor `(1 - r)^n` under Haldane's map (all real
 `d`; the biological domain is `0 ≤ d`). -/
 theorem exp_neg_mul_le_pow_one_sub_haldane (d : ℝ) (n : ℕ) :
@@ -227,7 +227,7 @@ theorem exp_neg_mul_le_pow_one_sub_haldane (d : ℝ) (n : ℕ) :
   rw [pow_one_sub_haldane]
   exact le_mul_of_one_le_right (exp_pos _).le (one_le_pow₀ (one_le_cosh d))
 
-/-- **Local-ancestry covariance in Morgans.** Local-ancestry covariance in Morgans:
+/-- Local-ancestry covariance in Morgans:
 `Cov(I_x, I_y) = α (1 - α) e^{-n d} (cosh d)^n` for loci `d` Morgans apart. -/
 theorem alleleCov_ancestryPulse_haldane (α d : ℝ) (n : ℕ) :
     alleleCov ((recombine (haldane d))^[n] (ancestryPulse α)) =
@@ -240,7 +240,7 @@ section WeightedLD
 
 variable {Ω P : Type*} {m : MeasurableSpace Ω} (μ : Measure Ω) (p : P → Ω → ℝ)
 
-/-- **Expected ALDER weighted linkage disequilibrium.** The expected ALDER two-site weighted-LD statistic `𝔼[z(x, y) w(x) w(y)]` (Loh et al.
+/-- The expected ALDER two-site weighted-LD statistic `𝔼[z(x, y) w(x) w(y)]` (Loh et al.
 2013, Appendix A, without distance binning). The loci `x` and `y` drift independently: `ω.1`
 and `ω.2` are independent draws from `μ`, and `p X ω` is the frequency of the `'1'` allele in
 population `X`. The covariance `z(x, y)` is that of the population formed `n` generations ago
@@ -250,7 +250,7 @@ noncomputable def weightedLD (α r : ℝ) (n : ℕ) (A B R S : P) : ℝ :=
   ∫ ω, genotypeCov ((recombine r)^[n] (sourceMix α (p A ω.1) (p A ω.2) (p B ω.1) (p B ω.2))) *
       ((p R ω.1 - p S ω.1) * (p R ω.2 - p S ω.2)) ∂μ.prod μ
 
-/-- **Weighted linkage disequilibrium in terms of the f4 statistic.** The expected weighted LD factors as `2 α (1 - α) (1 - r)^n (f4 A B R S)^2`: by
+/-- The expected weighted LD factors as `2 α (1 - α) (1 - r)^n (f4 A B R S)^2`: by
 independence of the loci, `𝔼[δ(x) w(x) δ(y) w(y)] = 𝔼[δ w]^2` and `𝔼[δ w] = f4 A B R S`.
 The identity holds with the Bochner-integral conventions as stated; it is meaningful when the
 frequencies are square integrable, as in every `DriftModel`. -/
@@ -272,14 +272,14 @@ namespace DriftModel
 
 variable {μ} {E : Type*} [Fintype E] (M : FStatistics.DriftModel μ E P)
 
-/-- **Weighted LD amplitude with the true source populations.** Weights from the true mixing populations (`R = A`, `S = B`): the amplitude is
+/-- Weights from the true mixing populations (`R = A`, `S = B`): the amplitude is
 `2 α β F2(A, B)^2` (Loh et al. 2013, Eq. 4). -/
 theorem weightedLD_sources [SFinite μ] (α r : ℝ) (n : ℕ) (A B : P) :
     weightedLD μ M.freq α r n A B A B =
       2 * (α * (1 - α)) * (1 - r) ^ n * f2 μ M.freq A B ^ 2 := by
   rw [weightedLD_eq, ← f2_eq_f4]
 
-/-- **f4 equals f2 for references branching off the path.** Branch points on the `A–B` path. Suppose that `A = A″ + uA`, `A′ = A″ + uA'`,
+/-- Branch points on the `A–B` path. Suppose that `A = A″ + uA`, `A′ = A″ + uA'`,
 `B = B″ + uB`, `B′ = B″ + uB'` at the level of lineage weights, where `w A″ - w B″` is
 disjoint in support from each of `uA`, `uB`, `uA'`, `uB'`, and each of `uA`, `uB` is disjoint
 from each of `uA'`, `uB'`. On a tree this says that the paths `A″–B″`, `A″–A`, `B″–B`,
@@ -305,7 +305,7 @@ theorem f4_eq_f2_of_branch {A B A' B' A'' B'' : P} {uA uB uA' uB' : E → ℝ}
   have h8 := hpath e uB' (by simp)
   linear_combination M.len e * (h1 - h2 - h3 + h4 + h5 - h6 + h7 - h8)
 
-/-- **Weighted LD amplitude with two diverged references.** Two diverged references `A′`, `B′` branching off the `A–B` path at `A″` and `B″`: the
+/-- Two diverged references `A′`, `B′` branching off the `A–B` path at `A″` and `B″`: the
 amplitude is `2 α β F2(A″, B″)^2` (Loh et al. 2013, Eq. 6). -/
 theorem weightedLD_branch [SFinite μ] (α r : ℝ) (n : ℕ) {A B A' B' A'' B'' : P}
     {uA uB uA' uB' : E → ℝ}
@@ -317,7 +317,7 @@ theorem weightedLD_branch [SFinite μ] (α r : ℝ) (n : ℕ) {A B A' B' A'' B''
       2 * (α * (1 - α)) * (1 - r) ^ n * f2 μ M.freq A'' B'' ^ 2 := by
   rw [weightedLD_eq, f4_eq_f2_of_branch M hA hB hA' hB' hdisj hpath]
 
-/-- **Weighted LD amplitude with the admixed population as reference.** One reference `A` and the admixed population `C` itself, with no drift in `C` after the
+/-- One reference `A` and the admixed population `C` itself, with no drift in `C` after the
 pulse (`w C = α w A + (1 - α) w B`): the weights are `p A - p C = β δ` and the amplitude is
 `2 α β^3 F2(A, B)^2` (Loh et al. 2013, Eq. 7). -/
 theorem weightedLD_admixedRef [SFinite μ] (α r : ℝ) (n : ℕ) {A B C : P}
@@ -333,7 +333,7 @@ theorem weightedLD_admixedRef [SFinite μ] (α r : ℝ) (n : ℕ) {A B C : P}
   rw [weightedLD_eq, this]
   ring
 
-/-- **Weighted LD amplitude with one diverged reference.** One diverged reference `R′` branching off the `A–B` path at `R″` (so `A = R″ + uA`,
+/-- One diverged reference `R′` branching off the `A–B` path at `R″` (so `A = R″ + uA`,
 `B = R″ + uB`, `R′ = R″ + uR` with pairwise disjoint supports) and the admixed population `C`
 with no post-pulse drift: the weights `p R′ - p C` give the amplitude
 `2 α β (α F2(A, R″) - β F2(B, R″))^2` (Loh et al. 2013, Eq. 8). -/

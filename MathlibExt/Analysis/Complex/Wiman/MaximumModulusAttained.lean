@@ -21,9 +21,8 @@ noncomputable section
 
 open Set
 
-/-- **The maximum modulus is attained.** Let $f$ be an entire function and let $r \ge 0$. Then
-there is a point $z$ with $|z| = r$ such that $|f(w)| \le |f(z)|$ for every $w$ with $|w| = r$,
-and the maximum modulus $M(r) = \sup_{|w| = r} |f(w)|$ equals $|f(z)|$. -/
+/-- The supremum defining the maximum modulus is attained on every
+nonnegatively-sized circle. -/
 theorem exists_mem_sphere_eq_wimanMaximumModulus
     (f : ℂ → ℂ) (hf : Differentiable ℂ f)
     {r : ℝ} (hr : 0 ≤ r) :

@@ -29,7 +29,7 @@ namespace FirstOrder.Language.Term
 
 universe u v w w'
 
-/-- **Leaf count of a first-order term.** The number of leaves of a first-order term.
+/-- The number of leaves of a first-order term.
 
 Variables and nullary function applications are leaves. A nonnullary function application has
 the sum of the leaf counts of its arguments.
@@ -48,7 +48,7 @@ theorem leafCount_func {L : FirstOrder.Language.{u, v}} {V : Type w} {n : Nat}
     (FirstOrder.Language.Term.func f terms).leafCount =
       if n = 0 then 1 else ∑ i, (terms i).leafCount := rfl
 
-/-- **Relabeling variables preserves the leaf count.** Relabeling variables does not change the number of leaves. -/
+/-- Relabeling variables does not change the number of leaves. -/
 @[simp]
 theorem leafCount_relabel {L : FirstOrder.Language.{u, v}} {V : Type w} {W : Type w'}
     (g : V → W)

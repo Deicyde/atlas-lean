@@ -80,39 +80,39 @@ namespace MathlibExt.Biology.StatisticalGenetics.FisherDecomposition
 
 variable {A : Type*} [Fintype A]
 
-/-- **Mean genotypic value under Hardy–Weinberg proportions.** The mean genotypic value `μ = ∑ i ∑ j p i p j G i j` under Hardy–Weinberg proportions. -/
+/-- The mean genotypic value `μ = ∑ i ∑ j p i p j G i j` under Hardy–Weinberg proportions. -/
 noncomputable def meanValue (p : A → ℝ) (G : A → A → ℝ) : ℝ := ∑ i, ∑ j, p i * p j * G i j
 
-/-- **Average effect of an allele.** The average effect of allele `i`, `α i = ∑ j p j G i j - μ`: the mean value of the genotypes
+/-- The average effect of allele `i`, `α i = ∑ j p j G i j - μ`: the mean value of the genotypes
 carrying `i` (the other gene drawn from the population) minus the population mean. This is the
 average excess; under Hardy–Weinberg proportions it is Fisher's average effect, the coefficient
 of the least-squares additive fit (`domVar_le_sum_sq`). -/
 noncomputable def avgEffect (p : A → ℝ) (G : A → A → ℝ) (i : A) : ℝ :=
   ∑ j, p j * G i j - meanValue p G
 
-/-- **Dominance deviation of a genotype.** The dominance deviation `δ i j = G i j - μ - α i - α j`. -/
+/-- The dominance deviation `δ i j = G i j - μ - α i - α j`. -/
 noncomputable def domDev (p : A → ℝ) (G : A → A → ℝ) (i j : A) : ℝ :=
   G i j - meanValue p G - avgEffect p G i - avgEffect p G j
 
-/-- **Genetic variance under Hardy–Weinberg proportions.** The genetic variance `V_G = ∑ i ∑ j p i p j (G i j - μ) ²`. -/
+/-- The genetic variance `V_G = ∑ i ∑ j p i p j (G i j - μ) ²`. -/
 noncomputable def genVar (p : A → ℝ) (G : A → A → ℝ) : ℝ :=
   ∑ i, ∑ j, p i * p j * (G i j - meanValue p G) ^ 2
 
-/-- **Additive genetic variance.** The additive genetic variance `V_A = 2 ∑ i p i α i ²`, the variance of the breeding value
+/-- The additive genetic variance `V_A = 2 ∑ i p i α i ²`, the variance of the breeding value
 `α i + α j`. -/
 noncomputable def addVar (p : A → ℝ) (G : A → A → ℝ) : ℝ :=
   2 * ∑ i, p i * avgEffect p G i ^ 2
 
-/-- **Dominance variance.** The dominance variance `V_D = ∑ i ∑ j p i p j δ i j ²`. -/
+/-- The dominance variance `V_D = ∑ i ∑ j p i p j δ i j ²`. -/
 noncomputable def domVar (p : A → ℝ) (G : A → A → ℝ) : ℝ :=
   ∑ i, ∑ j, p i * p j * domDev p G i j ^ 2
 
-/-- **Decomposition of the genotypic value.** The decomposition `G i j = μ + α i + α j + δ i j` (an identity by definition of `δ`). -/
+/-- The decomposition `G i j = μ + α i + α j + δ i j` (an identity by definition of `δ`). -/
 theorem genotypicValue_eq (p : A → ℝ) (G : A → A → ℝ) (i j : A) :
     G i j = meanValue p G + avgEffect p G i + avgEffect p G j + domDev p G i j := by
   unfold domDev; ring
 
-/-- **Average effects have mean zero.** The average effects have mean zero: `∑ i p i α i = 0`. -/
+/-- The average effects have mean zero: `∑ i p i α i = 0`. -/
 theorem sum_mul_avgEffect {p : A → ℝ} (hp : ∑ i, p i = 1) (G : A → A → ℝ) :
     ∑ i, p i * avgEffect p G i = 0 := by
   have h1 : ∑ i, p i * ∑ j, p j * G i j = meanValue p G := by
@@ -125,7 +125,7 @@ private theorem sum_mul_sub_meanValue {p : A → ℝ} (hp : ∑ i, p i = 1) (G :
     ∑ j, p j * (G i j - meanValue p G) = avgEffect p G i := by
   simp only [mul_sub, Finset.sum_sub_distrib, ← Finset.sum_mul, hp, one_mul, avgEffect]
 
-/-- **Orthogonality of dominance deviations in the second allele.** Orthogonality of the dominance deviations: `∑ j p j δ i j = 0` for every `i`. -/
+/-- Orthogonality of the dominance deviations: `∑ j p j δ i j = 0` for every `i`. -/
 theorem sum_mul_domDev_right {p : A → ℝ} (hp : ∑ i, p i = 1) (G : A → A → ℝ) (i : A) :
     ∑ j, p j * domDev p G i j = 0 := by
   have h := sum_mul_avgEffect hp G
@@ -133,7 +133,7 @@ theorem sum_mul_domDev_right {p : A → ℝ} (hp : ∑ i, p i = 1) (G : A → A 
   simp only [avgEffect]
   ring
 
-/-- **Orthogonality of dominance deviations in the first allele.** Orthogonality of the dominance deviations for a symmetric genotypic value:
+/-- Orthogonality of the dominance deviations for a symmetric genotypic value:
 `∑ i p i δ i j = 0` for every `j`. -/
 theorem sum_mul_domDev_left {p : A → ℝ} (hp : ∑ i, p i = 1) {G : A → A → ℝ}
     (hG : ∀ i j, G i j = G j i) (j : A) : ∑ i, p i * domDev p G i j = 0 := by
@@ -208,21 +208,21 @@ theorem genVar_eq_addVar_add_domVar {p : A → ℝ} (hp : ∑ i, p i = 1) {G : A
 
 /-! ### Covariances between relatives -/
 
-/-- **Parent–offspring covariance of genotypic values.** The covariance of the genotypic values of a parent and its offspring: the parent has
+/-- The covariance of the genotypic values of a parent and its offspring: the parent has
 genotype `(i, j)` (frequency `p i p j`) and transmits `cond b i j` (each with probability
 `1/2`), and the offspring's other gene `k` comes from an unrelated mate (frequency `p k`). -/
 noncomputable def covParentOffspring (p : A → ℝ) (G : A → A → ℝ) : ℝ :=
   ∑ i, ∑ j, ∑ k, ∑ b : Bool, p i * p j * p k / 2 *
     ((G i j - meanValue p G) * (G (cond b i j) k - meanValue p G))
 
-/-- **Half-sib covariance of genotypic values.** The covariance of the genotypic values of half sibs: the common parent has genotype
+/-- The covariance of the genotypic values of half sibs: the common parent has genotype
 `(i, j)` and transmits `cond b i j` to one offspring and, independently, `cond b' i j` to the
 other; the second genes `k`, `l` come from two unrelated mates. -/
 noncomputable def covHalfSibs (p : A → ℝ) (G : A → A → ℝ) : ℝ :=
   ∑ i, ∑ j, ∑ k, ∑ l, ∑ b : Bool, ∑ b' : Bool, p i * p j * p k * p l / 4 *
     ((G (cond b i j) k - meanValue p G) * (G (cond b' i j) l - meanValue p G))
 
-/-- **Full-sib covariance of genotypic values.** The covariance of the genotypic values of full sibs: the sire `(i, j)` and the dam
+/-- The covariance of the genotypic values of full sibs: the sire `(i, j)` and the dam
 `(k, l)` are unrelated; the first offspring receives `cond b i j` and `cond e k l`, the second,
 independently, `cond b' i j` and `cond e' k l`. -/
 noncomputable def covFullSibs (p : A → ℝ) (G : A → A → ℝ) : ℝ :=
@@ -369,11 +369,11 @@ theorem covFullSibs_eq {p : A → ℝ} (hp : ∑ i, p i = 1) {G : A → A → �
 
 /-! ### Two alleles -/
 
-/-- **Allele frequencies at a biallelic locus.** Allele frequencies at a biallelic locus: `A₁` (`true`) has frequency `q₁` and `A₂`
+/-- Allele frequencies at a biallelic locus: `A₁` (`true`) has frequency `q₁` and `A₂`
 (`false`) has frequency `1 - q₁`. -/
 def biallelicFreq (q₁ : ℝ) : Bool → ℝ := fun b => if b then q₁ else 1 - q₁
 
-/-- **Genotypic values at a biallelic locus on Falconer's scale.** Genotypic values at a biallelic locus on Falconer's scale: `A₁A₁ ↦ a`, `A₁A₂ ↦ d`,
+/-- Genotypic values at a biallelic locus on Falconer's scale: `A₁A₁ ↦ a`, `A₁A₂ ↦ d`,
 `A₂A₂ ↦ -a` (the origin is the midpoint of the homozygotes). -/
 def biallelicValue (a d : ℝ) : Bool → Bool → ℝ := fun b c =>
   if b then (if c then a else d) else (if c then d else -a)

@@ -45,7 +45,7 @@ it is a discrete valuation ring.
 @[expose] public section
 
 open IsLocalRing in
-/-- **Regular local rings of dimension at most one are normal domains.** A regular local ring of Krull dimension at most one is a domain and
+/-- A regular local ring of Krull dimension at most one is a domain and
 integrally closed. -/
 theorem IsRegularLocalRing.isDomain_and_isIntegrallyClosed_of_ringKrullDim_le_one
     (A : Type*) [CommRing A] [IsRegularLocalRing A] (h : ringKrullDim A ≤ 1) :

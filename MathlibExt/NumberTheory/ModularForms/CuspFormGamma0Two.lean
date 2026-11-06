@@ -80,7 +80,7 @@ open scoped CongruenceSubgroup MatrixGroups UpperHalfPlane
 
 namespace CuspForm
 
-/-- **Norm of a cusp form.** The product norm of a cusp form: for `𝒢` of finite relative index in `ℋ`,
+/-- The product norm of a cusp form: for `𝒢` of finite relative index in `ℋ`,
 the product of the `ℋ / 𝒢`-translates of `f`, viewed as a cusp form on the
 larger group `ℋ` at weight `k * [ℋ : 𝒢]`. This lifts Mathlib's
 `ModularForm.norm` to cusp forms; the only new work is checking vanishing
@@ -105,14 +105,14 @@ noncomputable def norm {𝒢 : Subgroup (GL (Fin 2) ℝ)} {F : Type*} [FunLike F
     refine (CuspForm.translate f _).zero_at_cusps' ?_ γ rfl
     simpa using h.of_isFiniteRelIndex_conj hr
 
-/-- **Cusp form norm agrees with the modular form norm.** The coercion of the norm of a cusp form is the norm of its coercion as a
+/-- The coercion of the norm of a cusp form is the norm of its coercion as a
 modular form. -/
 lemma coe_norm_eq_coe_modularFormNorm {𝒢 : Subgroup (GL (Fin 2) ℝ)} {F : Type*}
     [FunLike F ℍ ℂ] {k : ℤ} [CuspFormClass F 𝒢 k] (ℋ : Subgroup (GL (Fin 2) ℝ))
     [𝒢.IsFiniteRelIndex ℋ] [ℋ.HasDetPlusMinusOne] (f : F) :
     (CuspForm.norm ℋ f : ℍ → ℂ) = (ModularForm.norm ℋ f : ℍ → ℂ) := rfl
 
-/-- **Norm of a cusp form vanishes only for the zero form.** The norm of a cusp form vanishes if and only if the form itself vanishes:
+/-- The norm of a cusp form vanishes if and only if the form itself vanishes:
 the norm is a product of translates, and a translate of a nonzero form is
 nonzero. -/
 lemma norm_eq_zero_iff {𝒢 : Subgroup (GL (Fin 2) ℝ)} {F : Type*} [FunLike F ℍ ℂ]
@@ -218,7 +218,7 @@ private lemma cosetToProj_surjective : Function.Surjective cosetToProj := by
     dsimp only
     decide
 
-/-- **Γ₀(2) has index 3 in SL(2, ℤ).** The index of `Γ₀(2)` in `SL(2, ℤ)` is 3: the cosets are classified by
+/-- The index of `Γ₀(2)` in `SL(2, ℤ)` is 3: the cosets are classified by
 the first column mod 2, and there are three nonzero vectors in `(ZMod 2)²`. -/
 theorem Gamma0_two_index_eq_three : (Gamma0 2).index = 3 := by
   rw [Subgroup.index,
@@ -290,7 +290,7 @@ instance : Subgroup.IsFiniteRelIndex
     (↑(CongruenceSubgroup.Gamma 1) : Subgroup (GL (Fin 2) ℝ)) :=
   ⟨by change Nat.card _ ≠ 0; rw [card_quotient_eq_three]; decide⟩
 
-/-- **No nonzero weight-two cusp forms of level one.** Every weight-two cusp form on `Γ₀(1)` is zero: `Γ₀(1)` is the full
+/-- Every weight-two cusp form on `Γ₀(1)` is zero: `Γ₀(1)` is the full
 modular group, and the dimension formula gives rank zero below weight 12. -/
 theorem S2_Gamma0_one_eq_zero (f : CuspForm (CongruenceSubgroup.Gamma0 1) 2) :
     f = 0 :=
@@ -298,7 +298,7 @@ theorem S2_Gamma0_one_eq_zero (f : CuspForm (CongruenceSubgroup.Gamma0 1) 2) :
     (fun g : CuspForm 𝒮ℒ 2 => rank_zero_iff_forall_zero.mp
       (CuspForm.rank_eq_zero_of_weight_lt_twelve (k := 2) (by norm_num)) g) f
 
-/-- **No nonzero weight-two cusp forms on Γ₀(2).** Every weight-two cusp form on `Γ₀(2)` is zero. Take the norm of `f`
+/-- Every weight-two cusp form on `Γ₀(2)` is zero. Take the norm of `f`
 to `Γ₀(1)`: it has weight `2 * [Γ₀(1) : Γ₀(2)] = 6`, hence vanishes by the
 level-one dimension formula, and the norm vanishes only when `f` does. -/
 theorem S2_Gamma0_2_eq_zero (f : CuspForm (CongruenceSubgroup.Gamma0 2) 2) :

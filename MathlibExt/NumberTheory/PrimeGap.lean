@@ -22,7 +22,6 @@ public import Mathlib.Data.Nat.Nth
 @[expose] public section
 
 /--
-**Prime gap.** Let $p_0 = 2$, $p_1 = 3$, $p_2 = 5, \dots$ be the primes in increasing order,
-indexed from $0$. For a natural number $n$, the prime gap at $n$ is $p_{n+1} - p_n$.
+The prime gap: the difference between the $n+1$-th and $n$-th prime.
 -/
 noncomputable def primeGap (n : ℕ) : ℕ := (n + 1).nth Nat.Prime - n.nth Nat.Prime

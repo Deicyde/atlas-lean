@@ -35,7 +35,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind
 
 variable {n : ℕ} [NeZero n]
 
-/-- **Corner count of the interior counts inside cells around a point.** The corner count of the interior at `(vx, vy)` counts the inside cells among the four cells
+/-- The corner count of the interior at `(vx, vy)` counts the inside cells among the four cells
   around that point. -/
 theorem cornerCount_interior_eq (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (vx vy : ℤ) :
@@ -57,7 +57,7 @@ theorem cornerCount_interior_eq (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (
 
 open StatMech.Onsager.WalkCrossing
 
-/-- **Ray parity is constant around a non-vertex point.** At a lattice point that is not a vertex of the walk, the four cells around it have the same ray
+/-- At a lattice point that is not a vertex of the walk, the four cells around it have the same ray
   parity. -/
 theorem rayParity_const_of_not_vertex (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (vx vy : ℤ) (hv : ∀ k : Fin n, pos d k ≠ (vx, vy)) :

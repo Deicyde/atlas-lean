@@ -134,27 +134,27 @@ open MathlibExt.Biology.Dynamics.ComplexBalanced
 
 variable {S ρ : Type*} [Fintype S] [Fintype ρ] (N : ReactionNetwork S ρ)
 
-/-- **Stochastic mass-action propensity.** The stochastic mass-action propensity of reaction `r` in state `x` (molecule counts):
+/-- The stochastic mass-action propensity of reaction `r` in state `x` (molecule counts):
 `k r * ∏_s x_s (x_s - 1) ⋯ (x_s - src_s + 1)`, the falling factorial
 `Nat.descFactorial x_s src_s` (it vanishes when `x_s < src_s`). Anderson, Craciun & Kurtz
 (2010), §2. -/
 noncomputable def propensity (k : ρ → ℝ) (r : ρ) (x : S → ℕ) : ℝ :=
   k r * ∏ s, ((x s).descFactorial (N.src r s) : ℝ)
 
-/-- **State after one reaction firing.** The state reached from `x` by one firing of reaction `r`, `x - src r + prod r`
+/-- The state reached from `x` by one firing of reaction `r`, `x - src r + prod r`
 (meaningful when `src r ≤ x`, the only case in which the propensity is nonzero). -/
 def fire (r : ρ) (x : S → ℕ) : S → ℕ := fun s => x s - N.src r s + N.prod r s
 
-/-- **State before one reaction firing.** The state from which one firing of reaction `r` leads to `x`, `x - prod r + src r`
+/-- The state from which one firing of reaction `r` leads to `x`, `x - prod r + src r`
 (meaningful when `prod r ≤ x`). -/
 def unfire (r : ρ) (x : S → ℕ) : S → ℕ := fun s => x s - N.prod r s + N.src r s
 
-/-- **Product-form Poisson weight of a state.** The product-form Poisson weight `∏_s c_s ^ x_s e^{-c_s} / Nat.factorial x_s` of a
+/-- The product-form Poisson weight `∏_s c_s ^ x_s e^{-c_s} / Nat.factorial x_s` of a
 state `x`. -/
 noncomputable def poissonWeight (c : S → ℝ) (x : S → ℕ) : ℝ :=
   ∏ s, c s ^ x s * Real.exp (-c s) / ((x s).factorial : ℝ)
 
-/-- **Generator of the mass-action chain on a finite state class.** The generator of the stochastic mass-action chain restricted to a finite set `Ω` of
+/-- The generator of the stochastic mass-action chain restricted to a finite set `Ω` of
 states: `Q x y = ∑_r λ_r(x) ([fire r x = y] - [x = y])`. It is a rate matrix when `Ω` is
 closed under firing (`isRateMatrix_classGenerator`). -/
 noncomputable def classGenerator (k : ρ → ℝ) (Ω : Finset (S → ℕ)) : Matrix Ω Ω ℝ :=
@@ -242,7 +242,7 @@ theorem poissonWeight_mul_sum_propensity {k : ρ → ℝ} {c : S → ℝ}
   simp only [poissonWeight_mul_propensity, mul_assoc, ← Finset.mul_sum]
   rw [N.sum_rate_mul_prod_eq hcb (residual c x)]
 
-/-- **Restricted mass-action generator is a rate matrix.** The restricted generator is a rate matrix when the rate constants are nonnegative and
+/-- The restricted generator is a rate matrix when the rate constants are nonnegative and
 `Ω` is closed under the reactions. -/
 theorem isRateMatrix_classGenerator {k : ρ → ℝ} (hk : ∀ r, 0 ≤ k r) {Ω : Finset (S → ℕ)}
     (hfwd : ∀ x ∈ Ω, ∀ r, N.src r ≤ x → fire N r x ∈ Ω) :
@@ -336,7 +336,7 @@ theorem poissonWeight_vecMul_classGenerator {k : ρ → ℝ} {c : S → ℝ}
   simp only [hin, hout]
   rw [← Finset.sum_filter, ← poissonWeight_mul_sum_propensity N hcb, Finset.mul_sum, sub_self]
 
-/-- **Normalized Poisson stationary law on a finite state class.** The Poisson weights normalized on a finite set `Ω` of states. -/
+/-- The Poisson weights normalized on a finite set `Ω` of states. -/
 noncomputable def classStationaryLaw (c : S → ℝ) (Ω : Finset (S → ℕ)) : Ω → ℝ :=
   fun x => poissonWeight c x / ∑ y ∈ Ω, poissonWeight c y
 
@@ -378,32 +378,32 @@ open Filter Topology
 
 variable {M R : Type*} [Fintype R] [DecidableEq R]
 
-/-- **Reaction fluxes proportional to enzyme levels.** Reaction rates `v_i(e, s) = e_i f_i(s)` proportional to enzyme levels `e`. -/
+/-- Reaction rates `v_i(e, s) = e_i f_i(s)` proportional to enzyme levels `e`. -/
 def flux (f : R → (M → ℝ) → ℝ) (e : R → ℝ) (s : M → ℝ) : R → ℝ := fun i => e i * f i s
 
-/-- **Steady-state fluxes along a steady-state map.** The steady-state fluxes `J(e) = v(e, σ(e))` along a steady-state map `σ`. -/
+/-- The steady-state fluxes `J(e) = v(e, σ(e))` along a steady-state map `σ`. -/
 def steadyFlux (f : R → (M → ℝ) → ℝ) (σ : (R → ℝ) → M → ℝ) (e : R → ℝ) : R → ℝ :=
   flux f e (σ e)
 
-/-- **Flux control coefficient.** The flux control coefficient `C^{J_j}_{e_i} = (e_i / J_j) ∂J_j/∂e_i`. It is meaningful
+/-- The flux control coefficient `C^{J_j}_{e_i} = (e_i / J_j) ∂J_j/∂e_i`. It is meaningful
 when `J_j ≠ 0` and the steady-state flux is differentiable at `e`; otherwise Lean's `x / 0 = 0`
 and `fderiv` of a non-differentiable map, `0`, give junk values. -/
 noncomputable def fluxControl (f : R → (M → ℝ) → ℝ) (σ : (R → ℝ) → M → ℝ) (e : R → ℝ)
     (j i : R) : ℝ :=
   e i / steadyFlux f σ e j * fderiv ℝ (fun e' => steadyFlux f σ e' j) e (Pi.single i 1)
 
-/-- **Concentration control coefficient.** The concentration control coefficient `C^{s_m}_{e_i} = (e_i / s_m) ∂s_m/∂e_i`, meaningful
+/-- The concentration control coefficient `C^{s_m}_{e_i} = (e_i / s_m) ∂s_m/∂e_i`, meaningful
 for a positive concentration `s_m` and a steady state differentiable at `e`. -/
 noncomputable def concControl (σ : (R → ℝ) → M → ℝ) (e : R → ℝ) (m : M) (i : R) : ℝ :=
   e i / σ e m * fderiv ℝ (fun e' => σ e' m) e (Pi.single i 1)
 
-/-- **Elasticity of a reaction rate.** The elasticity `ε^{v_i}_{s_m} = (s_m / v_i) ∂v_i/∂s_m`, meaningful for a nonzero rate
+/-- The elasticity `ε^{v_i}_{s_m} = (s_m / v_i) ∂v_i/∂s_m`, meaningful for a nonzero rate
 `v_i` and a rate law differentiable at `s`. -/
 noncomputable def elasticity [DecidableEq M] (f : R → (M → ℝ) → ℝ) (e : R → ℝ) (s : M → ℝ)
     (i : R) (m : M) : ℝ :=
   s m / flux f e s i * fderiv ℝ (fun s' => flux f e s' i) s (Pi.single m 1)
 
-/-- **Regular steady state of a metabolic network.** A regular steady state at enzyme levels `e₀`: `σ` is differentiable at `e₀`, the rate
+/-- A regular steady state at enzyme levels `e₀`: `σ` is differentiable at `e₀`, the rate
 laws are differentiable at `σ e₀`, `N v(e, σ e) = 0` for `e` near `e₀`, and the Jacobian
 `δ ↦ N ∂_s v(e₀, σ e₀) δ` is injective (it is square, so this is its invertibility). -/
 structure IsRegularSteadyState (N : Matrix M R ℝ) (f : R → (M → ℝ) → ℝ)
@@ -663,24 +663,24 @@ section FluxBalance
 
 variable {m n : ℕ}
 
-/-- **Feasible fluxes of flux balance analysis.** The feasible fluxes of flux balance analysis: `S v = b`, `l ≤ v ≤ u`. -/
+/-- The feasible fluxes of flux balance analysis: `S v = b`, `l ≤ v ≤ u`. -/
 def fbaFeasible (S : Matrix (Fin m) (Fin n) ℝ) (l u : Fin n → ℝ) (b : Fin m → ℝ) :
     Set (Fin n → ℝ) :=
   {v | S *ᵥ v = b ∧ l ≤ v ∧ v ≤ u}
 
-/-- **Optimal value of flux balance analysis.** The optimal value `max {c ⬝ᵥ v | S v = b, l ≤ v ≤ u}` of flux balance analysis
+/-- The optimal value `max {c ⬝ᵥ v | S v = b, l ≤ v ≤ u}` of flux balance analysis
 (the supremum; it is `0` by convention when the problem is infeasible). -/
 noncomputable def fbaValue (S : Matrix (Fin m) (Fin n) ℝ) (l u c : Fin n → ℝ)
     (b : Fin m → ℝ) : ℝ :=
   sSup ((fun v => c ⬝ᵥ v) '' fbaFeasible S l u b)
 
-/-- **Dual feasibility for flux balance analysis.** Dual feasibility for flux balance analysis: `y` prices the metabolites, `α, β ≥ 0` the
+/-- Dual feasibility for flux balance analysis: `y` prices the metabolites, `α, β ≥ 0` the
 upper and lower flux bounds, and `Sᵀ y + α - β = c`. -/
 def fbaDualFeasible (S : Matrix (Fin m) (Fin n) ℝ) (c : Fin n → ℝ) (y : Fin m → ℝ)
     (α β : Fin n → ℝ) : Prop :=
   0 ≤ α ∧ 0 ≤ β ∧ Sᵀ *ᵥ y + α - β = c
 
-/-- **Dual objective of flux balance analysis.** The dual objective `b ⬝ᵥ y + u ⬝ᵥ α - l ⬝ᵥ β`. -/
+/-- The dual objective `b ⬝ᵥ y + u ⬝ᵥ α - l ⬝ᵥ β`. -/
 def fbaDualValue (l u : Fin n → ℝ) (b : Fin m → ℝ) (y : Fin m → ℝ) (α β : Fin n → ℝ) : ℝ :=
   b ⬝ᵥ y + u ⬝ᵥ α - l ⬝ᵥ β
 
@@ -706,7 +706,7 @@ private theorem le_fbaValue {S : Matrix (Fin m) (Fin n) ℝ} {l u c : Fin n → 
     c ⬝ᵥ v ≤ fbaValue S l u c b :=
   le_csSup (bddAbove_fba S l u c b) ⟨v, hv, rfl⟩
 
-/-- **Feasible flux balance problem attains its optimum.** A feasible flux balance problem attains its optimum. -/
+/-- A feasible flux balance problem attains its optimum. -/
 theorem exists_fbaValue_eq {S : Matrix (Fin m) (Fin n) ℝ} {l u c : Fin n → ℝ}
     {b : Fin m → ℝ} (hb : (fbaFeasible S l u b).Nonempty) :
     ∃ v ∈ fbaFeasible S l u b, fbaValue S l u c b = c ⬝ᵥ v ∧
@@ -718,7 +718,7 @@ theorem exists_fbaValue_eq {S : Matrix (Fin m) (Fin n) ℝ} {l u c : Fin n → �
   rintro _ ⟨w, hw, rfl⟩
   exact hmax hw
 
-/-- **Weak duality for flux balance analysis.** Weak duality for flux balance analysis. -/
+/-- Weak duality for flux balance analysis. -/
 theorem dotProduct_le_fbaDualValue {S : Matrix (Fin m) (Fin n) ℝ} {l u c : Fin n → ℝ}
     {b : Fin m → ℝ} {v : Fin n → ℝ} (hv : v ∈ fbaFeasible S l u b) {y : Fin m → ℝ}
     {α β : Fin n → ℝ} (hd : fbaDualFeasible S c y α β) :
@@ -786,7 +786,7 @@ private theorem stackRhs_dot (S : Matrix (Fin m) (Fin n) ℝ) (l u : Fin n → �
     mul_sub, Finset.sum_sub_distrib, Pi.neg_apply, neg_mul, Finset.sum_neg_distrib]
   ring
 
-/-- **Strong duality for flux balance analysis.** Strong duality for flux balance analysis: a feasible problem has a dual feasible point
+/-- Strong duality for flux balance analysis: a feasible problem has a dual feasible point
 whose value is the optimal value. -/
 theorem exists_fbaDualValue_eq {S : Matrix (Fin m) (Fin n) ℝ} {l u c : Fin n → ℝ}
     {b : Fin m → ℝ} (hb : (fbaFeasible S l u b).Nonempty) :
@@ -856,7 +856,7 @@ theorem exists_fbaDualValue_eq {S : Matrix (Fin m) (Fin n) ℝ} {l u c : Fin n �
     simp only [Pi.sub_apply, Pi.add_apply, Pi.zero_apply]
     linarith
 
-/-- **Concavity of the flux balance optimum in the right-hand side.** The optimal value is concave in the right-hand side `b` on the set of feasible `b`. -/
+/-- The optimal value is concave in the right-hand side `b` on the set of feasible `b`. -/
 theorem fbaValue_concave {S : Matrix (Fin m) (Fin n) ℝ} {l u c : Fin n → ℝ}
     {b₁ b₂ : Fin m → ℝ} (h₁ : (fbaFeasible S l u b₁).Nonempty)
     (h₂ : (fbaFeasible S l u b₂).Nonempty) {t : ℝ} (ht₀ : 0 ≤ t) (ht₁ : t ≤ 1) :
@@ -1072,7 +1072,7 @@ theorem existsUnique_symmetric_balancing {n : ℕ} {A : Matrix (Fin n) (Fin n) �
       rw [← hst, Real.sqrt_mul_self hs.le]
     rw [hdr, this]
 
-/-- **Total support of a square matrix.** A square matrix has **total support** if it is nonzero and every positive entry lies on a
+/-- A square matrix has **total support** if it is nonzero and every positive entry lies on a
 positive diagonal: for `A i j > 0` there is a permutation `σ` with `σ i = j` and
 `A k (σ k) > 0` for all `k` (Sinkhorn & Knopp 1967; Csima & Datta 1972). -/
 def HasTotalSupport {n : ℕ} (A : Matrix (Fin n) (Fin n) ℝ) : Prop :=
@@ -1133,12 +1133,12 @@ section BooleanNetwork
 
 variable {n : ℕ}
 
-/-- **Interaction graph of a Boolean network.** In the interaction graph of `f : {0,1}ⁿ → {0,1}ⁿ` there is an edge `j → i` when the
+/-- In the interaction graph of `f : {0,1}ⁿ → {0,1}ⁿ` there is an edge `j → i` when the
 `i`-th coordinate of `f` depends on the `j`-th variable. -/
 def Influences (f : (Fin n → Bool) → Fin n → Bool) (j i : Fin n) : Prop :=
   ∃ x, f (Function.update x j (!x j)) i ≠ f x i
 
-/-- **Acyclic interaction graph.** The interaction graph of `f` has no directed cycle (loops included). -/
+/-- The interaction graph of `f` has no directed cycle (loops included). -/
 def IsAcyclic (f : (Fin n → Bool) → Fin n → Bool) : Prop :=
   ∀ i, ¬ Relation.TransGen (Influences f) i i
 
@@ -1260,17 +1260,17 @@ section TreeTheorem
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
-/-- **Spanning in-tree rooted at a state.** `t : ι → ι` is a spanning in-tree rooted at `r` (each `i ≠ r` points to its parent
+/-- `t : ι → ι` is a spanning in-tree rooted at `r` (each `i ≠ r` points to its parent
 `t i`): `t r = r` and iterating `t` from any state reaches `r`. -/
 def IsInTree (r : ι) (t : ι → ι) : Prop :=
   t r = r ∧ ∀ i, ∃ k, t^[k] i = r
 
-/-- **Total weight of spanning in-trees.** The total weight `∑_t ∏_{i ≠ r} Q i (t i)` of the spanning in-trees rooted at `r`. -/
+/-- The total weight `∑_t ∏_{i ≠ r} Q i (t i)` of the spanning in-trees rooted at `r`. -/
 noncomputable def treeWeight (Q : Matrix ι ι ℝ) (r : ι) : ℝ := by
   classical
   exact ∑ t ∈ univ.filter (IsInTree r), ∏ i ∈ univ.erase r, Q i (t i)
 
-/-- **Irreducible rate matrix.** A rate matrix is irreducible if every state reaches every other state through positive
+/-- A rate matrix is irreducible if every state reaches every other state through positive
 jump rates. -/
 def IsIrreducible (Q : Matrix ι ι ℝ) : Prop :=
   ∀ i j, Relation.ReflTransGen (fun a b => a ≠ b ∧ 0 < Q a b) i j
@@ -1503,7 +1503,7 @@ private theorem isInTree_ne {r : ι} {t : ι → ι} (ht : IsInTree r t) {i : ι
   rw [Function.iterate_fixed hti] at hk
   exact hi hk
 
-/-- **In-tree weights of an irreducible rate matrix are positive.** For an irreducible rate matrix every in-tree weight is positive. -/
+/-- For an irreducible rate matrix every in-tree weight is positive. -/
 theorem treeWeight_pos {Q : Matrix ι ι ℝ} (hQ : ProbabilityTheory.IsRateMatrix Q)
     (hirr : IsIrreducible Q) (r : ι) : 0 < treeWeight Q r := by
   classical
@@ -1557,7 +1557,7 @@ private theorem eq_zero_of_pred {Q : Matrix ι ι ℝ} (hQ : ProbabilityTheory.I
   · exact h0
   · exact absurd h0 hab.2.ne'
 
-/-- **Uniqueness in the Markov chain tree theorem.** For an irreducible rate matrix every invariant vector is a multiple of the in-tree weights:
+/-- For an irreducible rate matrix every invariant vector is a multiple of the in-tree weights:
 the stationary law is proportional, at each state, to the weight of the spanning in-trees
 rooted there. -/
 theorem eq_smul_treeWeight_of_vecMul_eq_zero {Q : Matrix ι ι ℝ}

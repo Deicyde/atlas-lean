@@ -28,23 +28,17 @@ namespace Cslib.Algorithms.Lean
 
 universe u v
 
-/-- **Trie.** A trie with keys that are lists over $\alpha$ and values in $\beta$ is a node
-consisting of an optional value in $\beta$ and a finite list of children, each child being a pair
-of a letter in $\alpha$ and a trie. The letters labelling the children need not be distinct. -/
+/-- A finite trie from list keys over `α` to values in `β`. -/
 inductive Trie (α : Type u) (β : Type v) where
   | node : Option β → List (α × Trie α β) → Trie α β
 
 namespace Trie
 
-/-- **Empty trie.** The empty trie is the trie consisting of a single root node that stores no
-value and has no children, so it contains no key-value entries. -/
+/-- The trie containing no key-value entries. -/
 def empty {α : Type u} {β : Type v} : Trie α β :=
   .node none []
 
-/-- **Trie lookup.** The lookup of a key (a list over $\alpha$) in a trie returns an optional
-value in $\beta$, by recursion on the key. For the empty key it is the optional value stored at
-the root. For a key with first letter $a$ followed by the key $k$, it fails if no child of the
-root is labelled $a$, and otherwise it is the lookup of $k$ in the first child labelled $a$. -/
+/-- Looks up a list key in a trie. -/
 def lookup {α : Type u} {β : Type v} [DecidableEq α]
     (trie : Trie α β) : List α → Option β
   | [] =>
@@ -57,10 +51,7 @@ def lookup {α : Type u} {β : Type v} [DecidableEq α]
           | none => none
           | some child => lookup child keys
 
-/-- **Trie insertion.** Inserting a value $v$ at a key $k$ (a list of letters) in a trie stores $v$
-at the node reached by following $k$ from the root, replacing any value stored there. Along the
-way, a missing child is created as an empty trie and appended after its siblings, an existing
-child is updated in place, and all other values and children are unchanged. -/
+/-- Inserts or replaces the value at a list key. -/
 def insert {α : Type u} {β : Type v} [DecidableEq α]
     (trie : Trie α β) : List α → β → Trie α β
   | [], value =>
@@ -79,20 +70,14 @@ where
         if key = key' then (key, child) :: children
         else (key', child') :: childInsert key child children
 
-/-- **Valid trie.** Validity of tries is defined inductively: a trie node with optional value $v$
-and child list $c$ is valid when the letters labelling the children in $c$ are pairwise distinct
-and every child trie in $c$ is valid. -/
+/-- The invariant that every node has distinct child keys and valid child tries. -/
 inductive Valid {α : Type u} {β : Type v} : Trie α β → Prop where
   | node {value : Option β} {children : List (α × Trie α β)}
       (distinct : (children.map Prod.fst).Nodup)
       (childrenValid : ∀ child ∈ children, Valid child.2) :
       Valid (.node value children)
 
-/-- **Entries of a trie.** The entries of a trie are the list of its key-value pairs, where a key
-is a list of letters. If the root stores a value $v$, the list begins with the pair consisting of
-the empty key and $v$; it continues, for each child in the stored sibling order, with the entries
-$(k, w)$ of that child, in order, each rewritten as $(a k, w)$, where $a$ is the letter labelling
-the child and $a k$ is the key $k$ with $a$ prepended. -/
+/-- Enumerates the key-value entries of a trie in stored sibling order. -/
 def entries {α : Type u} {β : Type v} : Trie α β → List (List α × β)
   | .node value children =>
       (match value with
@@ -105,8 +90,7 @@ where
         child.entries.map (fun (keys, result) => (key :: keys, result)) ++
           childEntries children
 
-/-- **Lookup in the empty trie.** For every key $k$, looking up $k$ in the empty trie returns no
-value. -/
+/-- Every lookup in the empty trie fails. -/
 @[simp]
 theorem lookup_empty {α : Type u} {β : Type v} [DecidableEq α]
     (keys : List α) : (empty : Trie α β).lookup keys = none := by
@@ -149,10 +133,7 @@ private theorem lookup_childInsert_ne {α : Type u} {β : Type v}
         · have hb : (key == key') = false := by simp [hk]
           simp [insert.childInsert, List.lookup, hi, hb, ih]
 
-/-- **Lookup after insertion in a trie.** Let $\alpha$ be a type with decidable equality. For
-every trie $T$ with keys that are lists over $\alpha$ and values in $\beta$, every key $k$ and
-every value $v \in \beta$, looking up $k$ in the trie obtained from $T$ by inserting $v$ at $k$
-returns $v$. -/
+/-- Looking up an inserted key returns its new value. -/
 @[simp]
 theorem lookup_insert_same {α : Type u} {β : Type v} [DecidableEq α]
     (trie : Trie α β) (keys : List α) (value : β) :
@@ -168,9 +149,7 @@ theorem lookup_insert_same {α : Type u} {β : Type v} [DecidableEq α]
           rw [lookup_childInsert_same]
           exact ih _
 
-/-- **Trie insertion leaves other keys unchanged.** For every trie $T$, all keys $k \ne k'$ and
-every value $v$, looking up $k$ in the trie obtained by inserting $v$ at $k'$ in $T$ gives the
-same result as looking up $k$ in $T$. -/
+/-- Inserting one key does not change the lookup result for a distinct key. -/
 @[simp]
 theorem lookup_insert_of_ne {α : Type u} {β : Type v} [DecidableEq α]
     (trie : Trie α β) {insertedKeys keys : List α} (value : β)
@@ -214,8 +193,7 @@ theorem lookup_insert_of_ne {α : Type u} {β : Type v} [DecidableEq α]
               · simp only [insert, lookup]
                 rw [lookup_childInsert_ne hk]
 
-/-- **Valid trie nodes have distinct child keys.** If a trie node with optional value $v$ and
-child list $c$ is valid, then the letters labelling the children in $c$ are pairwise distinct. -/
+/-- A valid node has no duplicate child keys. -/
 theorem Valid.nodup_child_keys {α : Type u} {β : Type v}
     {value : Option β} {children : List (α × Trie α β)}
     (h : Valid (.node value children)) :
@@ -223,7 +201,7 @@ theorem Valid.nodup_child_keys {α : Type u} {β : Type v}
   cases h with
   | node distinct _ => exact distinct
 
-/-- **Validity of the empty trie.** The empty trie is valid. -/
+/-- The empty trie is valid. -/
 theorem Valid.empty {α : Type u} {β : Type v} :
     Valid (empty : Trie α β) :=
   .node (by simp) (by simp)
@@ -326,8 +304,7 @@ private theorem lookup_eq_some_iff_mem {α : Type u} {β : Type v}
       · have hb : (key == key') = false := by simp [h]
         simp [List.lookup, h, hb, ih htail]
 
-/-- **Insertion preserves trie validity.** If a trie $T$ is valid, then for every key $k$ (a list
-of letters) and every value $v$, the trie obtained by inserting $v$ at $k$ in $T$ is valid. -/
+/-- Insertion preserves the trie invariant. -/
 theorem Valid.insert {α : Type u} {β : Type v} [DecidableEq α]
     {trie : Trie α β} (h : Valid trie) (keys : List α) (value : β) :
     Valid (trie.insert keys value) := by
@@ -401,9 +378,7 @@ private theorem mem_childEntries_cons_iff {α : Type u} {β : Type v}
     exact ⟨key, child, keys, (lookup_eq_some_iff_mem hkeys).mp hlookup,
       hentry, rfl⟩
 
-/-- **Trie lookup agrees with the entries.** For every valid trie $T$, every key $k$ and every
-value $v$, looking up $k$ in $T$ returns $v$ if and only if $(k, v)$ is one of the entries of
-$T$. -/
+/-- Lookup succeeds with a value exactly when the corresponding pair occurs in `entries`. -/
 theorem lookup_eq_some_iff_mem_entries {α : Type u} {β : Type v}
     [DecidableEq α] {trie : Trie α β} (h : Valid trie)
     (keys : List α) (value : β) :
@@ -439,27 +414,24 @@ theorem lookup_eq_some_iff_mem_entries {α : Type u} {β : Type v}
                 cases Option.some.inj hEq
                 exact (ih hvalid).mpr hentry
 
-/-- **Lookup equivalence of tries.** Two tries $T$ and $T'$ are lookup-equivalent when, for every
-key $k$, looking up $k$ in $T$ gives the same result as looking up $k$ in $T'$. -/
+/-- Semantic equality of tries: every list key has the same lookup result. -/
 def LookupEquiv {α : Type u} {β : Type v} [DecidableEq α]
     (left right : Trie α β) : Prop :=
   ∀ keys, left.lookup keys = right.lookup keys
 
-/-- **Reflexivity of trie lookup equivalence.** Every trie is lookup-equivalent to itself. -/
+/-- Lookup equivalence is reflexive. -/
 theorem LookupEquiv.refl {α : Type u} {β : Type v} [DecidableEq α]
     (trie : Trie α β) : LookupEquiv trie trie := by
   intro keys
   rfl
 
-/-- **Symmetry of trie lookup equivalence.** If a trie $T$ is lookup-equivalent to a trie $T'$,
-then $T'$ is lookup-equivalent to $T$. -/
+/-- Lookup equivalence is symmetric. -/
 theorem LookupEquiv.symm {α : Type u} {β : Type v} [DecidableEq α]
     {left right : Trie α β} (h : LookupEquiv left right) : LookupEquiv right left := by
   intro keys
   exact (h keys).symm
 
-/-- **Transitivity of trie lookup equivalence.** If a trie $T_1$ is lookup-equivalent to a trie
-$T_2$ and $T_2$ is lookup-equivalent to a trie $T_3$, then $T_1$ is lookup-equivalent to $T_3$. -/
+/-- Lookup equivalence is transitive. -/
 theorem LookupEquiv.trans {α : Type u} {β : Type v} [DecidableEq α]
     {first second third : Trie α β}
     (h₁ : LookupEquiv first second) (h₂ : LookupEquiv second third) :
@@ -467,10 +439,7 @@ theorem LookupEquiv.trans {α : Type u} {β : Type v} [DecidableEq α]
   intro keys
   exact (h₁ keys).trans (h₂ keys)
 
-/-- **Lookup-equivalent valid tries have the same entries.** Let $T$ and $T'$ be valid tries
-with keys that are lists over $\alpha$ and values in $\beta$, and suppose $T$ and $T'$ are
-lookup-equivalent. Then for every key $k$ and every value $v \in \beta$, the pair $(k, v)$
-occurs in the entry list of $T$ if and only if it occurs in the entry list of $T'$. -/
+/-- Lookup-equivalent valid tries enumerate the same entries, disregarding list order. -/
 theorem LookupEquiv.mem_entries_iff {α : Type u} {β : Type v} [DecidableEq α]
     {left right : Trie α β} (h : LookupEquiv left right)
     (hleft : Valid left) (hright : Valid right) (keys : List α) (value : β) :
@@ -478,9 +447,7 @@ theorem LookupEquiv.mem_entries_iff {α : Type u} {β : Type v} [DecidableEq α]
   rw [← lookup_eq_some_iff_mem_entries hleft keys value,
     ← lookup_eq_some_iff_mem_entries hright keys value, h keys]
 
-/-- **Insertions at distinct keys commute in a trie.** For every trie $T$, all keys $k_1 \ne k_2$
-and all values $v_1, v_2$, inserting $v_1$ at $k_1$ and then $v_2$ at $k_2$ gives a trie that is
-lookup-equivalent to the one obtained by inserting $v_2$ at $k_2$ and then $v_1$ at $k_1$. -/
+/-- Inserting two distinct keys commutes up to lookup equivalence. -/
 theorem LookupEquiv.insert_comm {α : Type u} {β : Type v}
     [DecidableEq α] (trie : Trie α β)
     {firstKeys secondKeys : List α} (h : firstKeys ≠ secondKeys)

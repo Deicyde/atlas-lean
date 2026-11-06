@@ -39,10 +39,8 @@ open Filter ωSequence ωAcceptor
 
 variable {State Symbol : Type*}
 
-/-- **Nondeterministic parity automaton.** A nondeterministic parity automaton with states in $Q$
-and symbols in $\Sigma$ is a nondeterministic automaton (a transition relation labelled by
-symbols on $Q$, together with a set of start states) with a priority $p(q) \in \mathbb{N}$
-assigned to each state $q \in Q$. -/
+/-- Nondeterministic parity automaton: a nondeterministic automaton with a priority for each
+state. -/
 structure Parity (State Symbol : Type*) extends NA State Symbol where
   /-- The priority of each state. -/
   priority : State → ℕ
@@ -59,11 +57,8 @@ theorem mem_language_iff {a : Parity State Symbol} {xs : ωSequence Symbol} :
     xs ∈ language a ↔ ∃ ss, a.Run xs ss ∧ ParityEven (ss.map a.priority) :=
   Iff.rfl
 
-/-- **Every state sequence of a finite parity automaton has a parity winner.** Let $\mathcal{A}$
-be a nondeterministic parity automaton with finitely many states and priority function $p$. For
-every infinite sequence of states $s_0, s_1, s_2, \dots$, the priority sequence
-$p(s_0), p(s_1), p(s_2), \dots$ satisfies the even or the odd max-parity condition: the largest
-priority occurring infinitely often exists and is even, or it exists and is odd. -/
+/-- With finitely many states, every run is won by the even or by the odd parity (and never by
+both, `Cslib.ωSequence.not_parityEven_and_parityOdd`). -/
 theorem run_parityEven_or_parityOdd [Finite State] (a : Parity State Symbol)
     (ss : ωSequence State) : ParityEven (ss.map a.priority) ∨ ParityOdd (ss.map a.priority) := by
   obtain ⟨d, hd⟩ := (Set.finite_range a.priority).bddAbove
@@ -73,16 +68,12 @@ end Parity
 
 namespace Buchi
 
-/-- **Büchi automata as parity automata.** A nondeterministic Büchi automaton is turned into the
-nondeterministic parity automaton with the same states, transitions and start states, in which
-every accepting state has priority $2$ and every other state has priority $1$. -/
+/-- A Büchi automaton as a parity automaton: priority `2` on accepting states, `1` elsewhere. -/
 def toParity (na : Buchi State Symbol) [DecidablePred (· ∈ na.accept)] : Parity State Symbol where
   toNA := na.toNA
   priority s := if s ∈ na.accept then 2 else 1
 
-/-- **Büchi-to-parity conversion preserves the language.** Every nondeterministic Büchi automaton
-accepts the same language of infinite words as its presentation as a parity automaton (priority
-$2$ on accepting states, $1$ elsewhere). -/
+/-- A Büchi automaton and its parity presentation accept the same language. -/
 theorem language_toParity (na : Buchi State Symbol) [DecidablePred (· ∈ na.accept)] :
     language na.toParity = language na := by
   apply ωLanguage.mem_ext

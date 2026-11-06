@@ -105,7 +105,7 @@ end GeometricallyIrreducibleAux
 
 namespace AlgebraicGeometry
 
-/-- **Geometric irreducibility over an algebraically closed field.** An irreducible scheme over an algebraically closed field is geometrically
+/-- An irreducible scheme over an algebraically closed field is geometrically
 irreducible. -/
 theorem GeometricallyIrreducible.of_irreducibleSpace_of_isAlgClosed {k : Type u} [Field k]
     [IsAlgClosed k] {X : Scheme.{u}} (f : X ⟶ Spec (CommRingCat.of k))

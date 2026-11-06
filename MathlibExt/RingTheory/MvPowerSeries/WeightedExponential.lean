@@ -30,7 +30,7 @@ namespace MvPowerSeries
 
 variable {X R : Type*} [CommRing R] [Algebra ℚ R]
 
-/-- **Weighted rescaling commutes with truncated exponentials.** Weighted coefficient mapping and rescaling commutes with every finite
+/-- Weighted coefficient mapping and rescaling commutes with every finite
 exponential truncation, without a constant coefficient restriction. -/
 theorem expTrunc_rescale_map_of_weight (wt : (X →₀ ℕ) →+ ℕ) (ε : R)
     (q : MvPowerSeries X ℚ) (N : ℕ) :
@@ -42,7 +42,7 @@ theorem expTrunc_rescale_map_of_weight (wt : (X →₀ ℕ) →+ ℕ) (ε : R)
   rw [← map_expTrunc (rescale (fun i => ε ^ wt (Finsupp.single i 1))),
     map_expTrunc (map (algebraMap ℚ R))]
 
-/-- **Coefficients of weighted rescaling of truncated exponentials.** The coefficient form of weighted finite exponential commutation. It
+/-- The coefficient form of weighted finite exponential commutation. It
 preserves the source's degreewise expression for arbitrary input series. -/
 theorem coeff_expTrunc_rescale_map_of_weight (wt : (X →₀ ℕ) →+ ℕ) (ε : R)
     (q : MvPowerSeries X ℚ) (N : ℕ) (d : X →₀ ℕ) :
@@ -53,7 +53,7 @@ theorem coeff_expTrunc_rescale_map_of_weight (wt : (X →₀ ℕ) →+ ℕ) (ε 
       algebraMap ℚ R (coeff d (expTrunc N q)) * ε ^ wt d := by
   rw [expTrunc_rescale_map_of_weight, coeff_rescale_map_of_weight]
 
-/-- **Weighted rescaling commutes with the formal exponential.** On the zero-constant domain, weighted coefficient mapping and rescaling
+/-- On the zero-constant domain, weighted coefficient mapping and rescaling
 commutes with the lawful full formal exponential. -/
 theorem expOfConstantCoeffZero_rescale_map_of_weight (wt : (X →₀ ℕ) →+ ℕ)
     (ε : R) (q : MvPowerSeries X ℚ) (hq : constantCoeff q = 0) :
@@ -71,7 +71,7 @@ theorem expOfConstantCoeffZero_rescale_map_of_weight (wt : (X →₀ ℕ) →+ �
   intro d f g hfg
   rw [coeff_rescale, coeff_rescale, hfg d (le_refl _)]
 
-/-- **Weighted coefficient equality transfers zero constant coefficient.** Weighted coefficient equality transfers a zero constant coefficient from
+/-- Weighted coefficient equality transfers a zero constant coefficient from
 the rational source series to the target series. -/
 theorem constantCoeff_eq_zero_of_weight (wt : (X →₀ ℕ) →+ ℕ) (ε : R)
     (q : MvPowerSeries X ℚ) {w : MvPowerSeries X R} (hq : constantCoeff q = 0)
@@ -80,7 +80,7 @@ theorem constantCoeff_eq_zero_of_weight (wt : (X →₀ ℕ) →+ ℕ) (ε : R)
   rw [← coeff_zero_eq_constantCoeff_apply, hw 0,
     coeff_zero_eq_constantCoeff_apply, hq, map_zero, zero_mul]
 
-/-- **Weighted coefficient relation passes to formal exponentials.** If `w` has the coefficients of `q` scaled by an additive weight, then the
+/-- If `w` has the coefficients of `q` scaled by an additive weight, then the
 same coefficient relation holds for their lawful formal exponentials. The
 coefficient hypothesis and `q`'s zero constant imply the required premise for
 `w`; no separate zero-constant assumption on `w` is needed. -/

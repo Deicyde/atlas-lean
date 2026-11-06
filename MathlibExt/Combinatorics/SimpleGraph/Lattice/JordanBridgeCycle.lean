@@ -62,7 +62,7 @@ theorem jbc_crossEdge_symm_rot (a b : Site 2) :
     crossEdge.symm s(rot90Fun a, rot90Fun b) = s(a, b) := by
   rw [jbc_crossEdge_symm_pair, jbc_rot90Inv_rot90Fun a, jbc_rot90Inv_rot90Fun b]
 
-/-- **Square lattice minus the edges of a graph.** The square lattice with the edges of `H` deleted. -/
+/-- The square lattice with the edges of `H` deleted. -/
 noncomputable def jbc_latticeMinusEdges (H : SimpleGraph (Site 2)) : SimpleGraph (Site 2) :=
   (hypercubicLattice 2).deleteEdges H.edgeSet
 
@@ -75,7 +75,7 @@ theorem jbc_regionGraph_rot_adj (H : SimpleGraph (Site 2)) (a b : Site 2) :
     (regionGraph H).Adj (rot90Fun a) (rot90Fun b) ↔ (jbc_latticeMinusEdges H).Adj a b := by
   rw [regionGraph_adj, jbc_latticeMinusEdges_adj, rot90_adj, jbc_crossEdge_symm_rot]
 
-/-- **Quarter-turn isomorphism onto the region graph.** The quarter-turn rotation is an isomorphism from the lattice minus the edges of `H` onto the
+/-- The quarter-turn rotation is an isomorphism from the lattice minus the edges of `H` onto the
 region graph of `H`. -/
 noncomputable def jbc_rotIso (H : SimpleGraph (Site 2)) :
     jbc_latticeMinusEdges H ≃g regionGraph H where
@@ -118,14 +118,14 @@ theorem jbc_dualSide_iff_primalAvoid (P : PlanarZ2Subgraph) (K : SimpleGraph P.V
           (P.emb x) (P.emb y) := by
   rw [jbc_deleteRegion_eq_pushSup P K hne, jbc_regionGraph_reachable_iff]
 
-/-- **Disconnected sites are joined in the lattice minus a bridged graph.** If `x` and `y` are not connected in `K`, they are connected in the lattice minus the image of
+/-- If `x` and `y` are not connected in `K`, they are connected in the lattice minus the image of
 `K ⊔ edge x y`. -/
 def jbc_BridgeDirection (P : PlanarZ2Subgraph) : Prop :=
   ∀ (K : SimpleGraph P.V), K ≤ P.G → ∀ {x y : P.V}, P.G.Adj x y → ¬ K.Adj x y →
     ¬ K.Reachable x y →
       (jbc_latticeMinusEdges (jei_pushGraph P (K ⊔ edge x y))).Reachable (P.emb x) (P.emb y)
 
-/-- **Corners of the unit square in cyclic order.** The four corners `(0, 0), (1, 0), (1, 1), (0, 1)` of the unit square, in cyclic order. -/
+/-- The four corners `(0, 0), (1, 0), (1, 1), (0, 1)` of the unit square, in cyclic order. -/
 def jbc_csq (i : Fin 4) : Site 2 :=
   match i with
   | 0 => ![0, 0] | 1 => ![1, 0] | 2 => ![1, 1] | 3 => ![0, 1]
@@ -135,12 +135,12 @@ theorem jbc_csq_inj : Function.Injective jbc_csq := by decide +kernel
 theorem jbc_csq_y (i : Fin 4) : (jbc_csq i) 1 = 0 ∨ (jbc_csq i) 1 = 1 := by
   fin_cases i <;> simp [jbc_csq]
 
-/-- **Adjacency relation of the 4-cycle.** Adjacency of the 4-cycle `0 – 1 – 2 – 3 – 0`, as a Boolean relation. -/
+/-- Adjacency of the 4-cycle `0 – 1 – 2 – 3 – 0`, as a Boolean relation. -/
 def jbc_cyc4Rel (i j : Fin 4) : Bool :=
   (i == 0 && j == 1) || (i == 1 && j == 0) || (i == 1 && j == 2) || (i == 2 && j == 1) ||
     (i == 2 && j == 3) || (i == 3 && j == 2) || (i == 3 && j == 0) || (i == 0 && j == 3)
 
-/-- **The 4-cycle graph.** The 4-cycle on `Fin 4`. -/
+/-- The 4-cycle on `Fin 4`. -/
 def jbc_cyc4 : SimpleGraph (Fin 4) where
   Adj i j := jbc_cyc4Rel i j
   symm := ⟨by intro i j h; revert h; revert i j; decide⟩
@@ -155,15 +155,15 @@ theorem jbc_csq_isSub :
   rw [hypercubicLattice_adj, Fin.sum_univ_two]
   revert h; fin_cases i <;> fin_cases j <;> simp [jbc_cyc4Rel, jbc_csq]
 
-/-- **Vertex 0 of the 4-cycle.** The vertex `0` of the 4-cycle. -/
+/-- The vertex `0` of the 4-cycle. -/
 def jbc_v0 : Fin 4 := 0
 
-/-- **Vertex 1 of the 4-cycle.** The vertex `1` of the 4-cycle. -/
+/-- The vertex `1` of the 4-cycle. -/
 def jbc_v1 : Fin 4 := 1
 
 theorem jbc_v0_ne_v1 : jbc_v0 ≠ jbc_v1 := by decide
 
-/-- **Unit square as a planar lattice subgraph.** The unit square: the 4-cycle embedded on the corners of `[0, 1]²`. -/
+/-- The unit square: the 4-cycle embedded on the corners of `[0, 1]²`. -/
 noncomputable def jbc_Pce : PlanarZ2Subgraph where
   V := Fin 4
   finV := inferInstance

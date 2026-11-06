@@ -69,7 +69,7 @@ namespace MathlibExt.Biology.CancerGenomics.MutationTiming
 
 open Finset
 
-/-- **Copy-number gain history.** A single copy-number event on a region: `copies` original copies, of which copy `i` has
+/-- A single copy-number event on a region: `copies` original copies, of which copy `i` has
 `desc i` copies after the event (`0` if lost, `2` if duplicated). -/
 structure GainHistory where
   /-- The number of copies of the region before the event. -/
@@ -79,13 +79,13 @@ structure GainHistory where
 
 namespace GainHistory
 
-/-- **Copy number after a copy-number event.** The copy number `c₁ = ∑ i, desc i` after the event. -/
+/-- The copy number `c₁ = ∑ i, desc i` after the event. -/
 def finalCopies (h : GainHistory) : ℕ := ∑ i, h.desc i
 
-/-- **Number of amplified copies.** The number of original copies amplified by the event (`desc i ≥ 2`). -/
+/-- The number of original copies amplified by the event (`desc i ≥ 2`). -/
 def amplified (h : GainHistory) : ℕ := (univ.filter fun i => 2 ≤ h.desc i).card
 
-/-- **Expected number of mutations of a given multiplicity.** Expected number of mutations of multiplicity `m`:
+/-- Expected number of mutations of multiplicity `m`:
 `μ t #{i | desc i = m} + [m = 1] μ c₁ (1 - t)` (per-copy rate `μ`, event at time `t` of the
 normalized history `[0, 1]`). -/
 noncomputable def expectedCount (h : GainHistory) (μ t : ℝ) (m : ℕ) : ℝ :=
@@ -121,7 +121,7 @@ theorem sum_mul_expectedCount (h : GainHistory) (μ t : ℝ) {B : ℕ} (hB : ∀
   rw [h1, h2]
   ring
 
-/-- **Expected count of mutations on amplified copies.** The mutations of multiplicity at least two number `μ t #{i | desc i ≥ 2}` in expectation:
+/-- The mutations of multiplicity at least two number `μ t #{i | desc i ≥ 2}` in expectation:
 they all arose before the event, on an amplified copy. -/
 theorem sum_expectedCount_amplified (h : GainHistory) (μ t : ℝ) {B : ℕ}
     (hB : ∀ i, h.desc i ≤ B) :
@@ -143,7 +143,7 @@ theorem sum_expectedCount_amplified (h : GainHistory) (μ t : ℝ) {B : ℕ}
   · intro i hi
     exact mem_Ico.2 ⟨(mem_filter.1 hi).2, Nat.lt_succ_of_le (hB i)⟩
 
-/-- **Positive copy number after an amplifying event.** An event that amplifies some copy leaves a positive copy number. -/
+/-- An event that amplifies some copy leaves a positive copy number. -/
 theorem finalCopies_pos {h : GainHistory} (ha : 0 < h.amplified) : 0 < h.finalCopies := by
   obtain ⟨i, hi⟩ := card_pos.1 ha
   have h2 := (mem_filter.1 hi).2
@@ -183,13 +183,13 @@ theorem expectedCount_injective (h : GainHistory) {μ μ' t t' : ℝ} (hμ : μ 
   · rw [rate_eq h μ t hB hB1 hc, rate_eq h μ' t' hB hB1 hc, heq]
   · rw [timing_eq h t hμ hB hB1 ha, timing_eq h t' hμ' hB hB1 ha, heq]
 
-/-- **Single-copy gain.** A single-copy gain `1 + 1 → 2 + 1`: one copy duplicated, the other kept. -/
+/-- A single-copy gain `1 + 1 → 2 + 1`: one copy duplicated, the other kept. -/
 def singleGain : GainHistory := ⟨2, ![2, 1]⟩
 
-/-- **Copy-neutral loss of heterozygosity.** Copy-neutral loss of heterozygosity `1 + 1 → 2 + 0`: one copy duplicated, the other lost. -/
+/-- Copy-neutral loss of heterozygosity `1 + 1 → 2 + 0`: one copy duplicated, the other lost. -/
 def cnLOH : GainHistory := ⟨2, ![2, 0]⟩
 
-/-- **Whole-genome doubling event.** Whole-genome doubling of a diploid region `1 + 1 → 2 + 2`. -/
+/-- Whole-genome doubling of a diploid region `1 + 1 → 2 + 2`. -/
 def wgd : GainHistory := ⟨2, ![2, 2]⟩
 
 /-- **Single gain** (`2 + 1`): `t = 3 E₂ / (E₁ + 2 E₂)`, for `μ ≠ 0`. -/

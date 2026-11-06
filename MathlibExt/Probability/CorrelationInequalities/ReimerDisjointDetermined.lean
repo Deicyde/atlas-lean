@@ -41,16 +41,16 @@ open ConfigSpace
 
 variable {E : Type*}
 
-/-- **Event determined by a set of coordinates.** `DeterminedBy A K`: whether a configuration lies in `A` depends only on its values on `K`.
+/-- `DeterminedBy A K`: whether a configuration lies in `A` depends only on its values on `K`.
 This is definitionally `StatMech.DependsOn A K`. -/
 def DeterminedBy (A : Set (ConfigSpace E)) (K : Set E) : Prop :=
   ∀ ω ω' : ConfigSpace E, agreeOn K ω ω' → (ω ∈ A ↔ ω' ∈ A)
 
-/-- **Determined-by and depends-on are the same predicate.** `DeterminedBy` and `DependsOn` are the same predicate. -/
+/-- `DeterminedBy` and `DependsOn` are the same predicate. -/
 lemma determinedBy_iff_dependsOn {A : Set (ConfigSpace E)} {K : Set E} :
     DeterminedBy A K ↔ DependsOn A K := Iff.rfl
 
-/-- **Independence of events determined by disjoint coordinate sets.** Events determined by disjoint coordinate sets are independent under a product probability
+/-- Events determined by disjoint coordinate sets are independent under a product probability
 weight: `wprob φ (A ∩ B) = wprob φ A * wprob φ B`. -/
 theorem wprob_inter_eq_mul_of_determined [Fintype E] [DecidableEq E]
     (A B : Set (ConfigSpace E)) {K L : Set E}
@@ -66,7 +66,7 @@ theorem wprob_inter_eq_mul_of_determined [Fintype E] [DecidableEq E]
 
 set_option linter.unusedFintypeInType false in
 set_option linter.unusedDecidableInType false in
-/-- **Reimer equality for events determined by disjoint coordinates.** Reimer's inequality with equality for events determined by disjoint coordinate sets: under
+/-- Reimer's inequality with equality for events determined by disjoint coordinate sets: under
 the product Bernoulli(`p`) measure, `P_p(A □ B) = P_p(A) * P_p(B)`. -/
 theorem reimer_bernoulli_eq_of_determinedDisjoint [Fintype E] [DecidableEq E] {p : ℝ≥0}
     (hp : p ≤ 1) {A B : Set (ConfigSpace E)} {K L : Set E} (hKL : Disjoint K L)

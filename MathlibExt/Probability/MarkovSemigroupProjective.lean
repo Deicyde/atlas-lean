@@ -58,7 +58,7 @@ noncomputable section
 
 variable {E : Type*} [MeasurableSpace E]
 
-/-- **Finite-dimensional kernel of a Markov semigroup at ordered times.** The law, as a kernel in its starting point, at finitely many ordered
+/-- The law, as a kernel in its starting point, at finitely many ordered
 times.  `s` is the time of the input state and `t` lists the requested
 absolute times. -/
 noncomputable def finiteChainKernel (K : NNReal → Kernel E E) (s : NNReal) :
@@ -86,7 +86,7 @@ instance finiteChainKernel.instIsMarkovKernel
         (MeasurableEquiv.piFinSuccAbove
           (fun _ : Fin (n + 1) => E) 0).symm.measurable
 
-/-- **Finite-dimensional law of a Markov semigroup from a starting point.** The ordered finite-dimensional law started from `x` at time `s`. -/
+/-- The ordered finite-dimensional law started from `x` at time `s`. -/
 noncomputable def finiteChainLaw (K : NNReal → Kernel E E) (x : E)
     (s : NNReal) {n : ℕ} (t : Fin n → NNReal) : Measure (Fin n → E) :=
   finiteChainKernel K s t x
@@ -98,7 +98,7 @@ instance finiteChainLaw.instIsProbabilityMeasure
   unfold finiteChainLaw
   infer_instance
 
-/-- **Composition rule for finite-chain kernels.** Moving the starting time forward and then evolving to the first requested
+/-- Moving the starting time forward and then evolving to the first requested
 time gives the same finite chain as evolving there directly. -/
 theorem finiteChainKernel_comp (K : NNReal → Kernel E E)
     [∀ t, IsMarkovKernel (K t)]
@@ -128,7 +128,7 @@ theorem finiteChainKernel_comp (K : NNReal → Kernel E E)
       congr 1
       rw [add_comm, tsub_add_tsub_cancel (hut 0) hsu]
 
-/-- **Removing one coordinate from a finite vector.** Remove one coordinate from a finite vector. -/
+/-- Remove one coordinate from a finite vector. -/
 def eraseCoordinate {n : ℕ} (j : Fin (n + 1)) :
     (Fin (n + 1) → E) → (Fin n → E) :=
   fun z i => z (j.succAbove i)
@@ -162,7 +162,7 @@ private theorem eraseCoordinate_succ_comp_cons {n : ℕ} (j : Fin (n + 1)) :
       Fin.succ_succAbove_succ]
     rfl
 
-/-- **Deleting the first time from a finite Markov chain kernel.** Deleting the first requested time composes the initial transition with
+/-- Deleting the first requested time composes the initial transition with
 the transition to the next requested time. -/
 theorem finiteChainKernel_map_eraseCoordinate_zero
     (K : NNReal → Kernel E E) [∀ t, IsMarkovKernel (K t)]
@@ -181,7 +181,7 @@ theorem finiteChainKernel_map_eraseCoordinate_zero
   exact finiteChainKernel_comp K hKadd hst _ fun i =>
     (ht (by simp)).le
 
-/-- **Deleting one time from a finite Markov chain kernel.** Deleting one requested time from an ordered finite Markov chain composes
+/-- Deleting one requested time from an ordered finite Markov chain composes
 the two adjacent transition kernels. -/
 theorem finiteChainKernel_map_eraseCoordinate
     (K : NNReal → Kernel E E) [∀ t, IsMarkovKernel (K t)]
@@ -234,7 +234,7 @@ private theorem finiteChainKernel_map_empty
     Kernel.deterministic_apply]
   simp
 
-/-- **Restricting a finite Markov kernel along an increasing reindexing.** Restrict an ordered finite Markov law along any strictly increasing map
+/-- Restrict an ordered finite Markov law along any strictly increasing map
 of coordinate sets. -/
 theorem finiteChainKernel_map_strictMono
     (K : NNReal → Kernel E E) [∀ t, IsMarkovKernel (K t)]
@@ -320,7 +320,7 @@ theorem finiteChainKernel_map_strictMono
                 funext i
                 rw [he'_factor]
 
-/-- **Restricting a finite Markov law along an increasing reindexing.** Measure form of `finiteChainKernel_map_strictMono`. -/
+/-- Measure form of `finiteChainKernel_map_strictMono`. -/
 theorem finiteChainLaw_map_strictMono
     (K : NNReal → Kernel E E) [∀ t, IsMarkovKernel (K t)]
     (hKadd : ∀ s t, K (s + t) = K t ∘ₖ K s)
@@ -333,7 +333,7 @@ theorem finiteChainLaw_map_strictMono
     finiteChainKernel_map_strictMono K hKadd t hst ht e he]
   rfl
 
-/-- **Reindexing an ordered vector by a finite set.** Reindex an ordered vector by the increasing enumeration of a finset. -/
+/-- Reindex an ordered vector by the increasing enumeration of a finset. -/
 noncomputable def orderMeasurableEquiv (J : Finset NNReal) :
     (Fin J.card → E) ≃ᵐ (J → E) where
   toFun y j := y ((J.orderIsoOfFin rfl).symm j)
@@ -347,7 +347,7 @@ noncomputable def orderMeasurableEquiv (J : Finset NNReal) :
   measurable_toFun := Measurable.of_eval fun _ => measurable_pi_apply _
   measurable_invFun := Measurable.of_eval fun _ => measurable_pi_apply _
 
-/-- **Increasing reindexing of a subset within a finite set.** The increasing reindexing of the elements of `J` among those of a
+/-- The increasing reindexing of the elements of `J` among those of a
 larger finset `I`. -/
 noncomputable def orderRestriction {I J : Finset NNReal} (hJI : J ⊆ I) :
     Fin J.card ↪o Fin I.card :=
@@ -386,7 +386,7 @@ private theorem restrict_orderMeasurableEquiv {I J : Finset NNReal}
   exact (congrArg Subtype.val
     ((J.orderIsoOfFin rfl).apply_symm_apply j)).symm
 
-/-- **Markov law at a finite set of times.** The canonical law at an arbitrary finite set of nonnegative times.
+/-- The canonical law at an arbitrary finite set of nonnegative times.
 
 The generic construction does not assume `K 0 = Kernel.id`.  Consequently,
 when zero is requested its marginal is `K 0 x`; callers that need a
@@ -402,7 +402,7 @@ instance finiteLaw.instIsProbabilityMeasure
   unfold finiteLaw
   infer_instance
 
-/-- **Finite Markov laws form a projective family.** The finite laws obtained by sorting requested times form a projective
+/-- The finite laws obtained by sorting requested times form a projective
 family; projectivity is a consequence of Chapman--Kolmogorov, not a premise. -/
 theorem isProjectiveMeasureFamily_finiteLaw
     (K : NNReal → Kernel E E) [∀ t, IsMarkovKernel (K t)]
@@ -459,7 +459,7 @@ section Extension
 
 variable [TopologicalSpace E] [PolishSpace E] [BorelSpace E]
 
-/-- **Kolmogorov extension for Markov semigroup laws.** Kolmogorov extension applied to the proved finite Markov laws. -/
+/-- Kolmogorov extension applied to the proved finite Markov laws. -/
 theorem exists_projectiveLimit
     (K : NNReal → Kernel E E) [∀ t, IsMarkovKernel (K t)]
     (hKadd : ∀ s t, K (s + t) = K t ∘ₖ K s) (x : E) :
@@ -470,7 +470,7 @@ theorem exists_projectiveLimit
       (α := fun _ : NNReal => E) (finiteLaw K x)
       (isProjectiveMeasureFamily_finiteLaw K hKadd x)
 
-/-- **Path-space measure of a Markov semigroup.** The canonical path-space measure selected from Kolmogorov extension.
+/-- The canonical path-space measure selected from Kolmogorov extension.
 
 As for `finiteLaw`, no identity-at-zero hypothesis is built into this generic
 object: its time-zero marginal is `K 0 x` unless the caller proves
@@ -481,7 +481,7 @@ noncomputable def pathMeasure
     Measure (NNReal → E) :=
   Classical.choose (exists_projectiveLimit K hKadd x)
 
-/-- **Path measure is the projective limit of the finite Markov laws.** The canonical path measure has exactly the constructed finite laws. -/
+/-- The canonical path measure has exactly the constructed finite laws. -/
 theorem isProjectiveLimit_pathMeasure
     (K : NNReal → Kernel E E) [∀ t, IsMarkovKernel (K t)]
     (hKadd : ∀ s t, K (s + t) = K t ∘ₖ K s) (x : E) :
@@ -495,7 +495,7 @@ instance pathMeasure.instIsProbabilityMeasure
     IsProbabilityMeasure (pathMeasure K hKadd x) :=
   (isProjectiveLimit_pathMeasure K hKadd x).isProbabilityMeasure
 
-/-- **Finite projections of the Markov path measure.** Every finite coordinate projection of the canonical path measure is its
+/-- Every finite coordinate projection of the canonical path measure is its
 explicit iterated-kernel law. -/
 theorem map_restrict_pathMeasure
     (K : NNReal → Kernel E E) [∀ t, IsMarkovKernel (K t)]
@@ -504,7 +504,7 @@ theorem map_restrict_pathMeasure
     (pathMeasure K hKadd x).map J.restrict = finiteLaw K x J :=
   isProjectiveLimit_pathMeasure K hKadd x J
 
-/-- **Ordered finite projections of the Markov path measure.** The coordinates in increasing finset order have exactly the corresponding
+/-- The coordinates in increasing finset order have exactly the corresponding
 iterated-kernel law. -/
 theorem map_ordered_pathMeasure
     (K : NNReal → Kernel E E) [∀ t, IsMarkovKernel (K t)]

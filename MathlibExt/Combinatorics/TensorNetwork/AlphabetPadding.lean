@@ -34,7 +34,7 @@ variable {J A A' : Type*}
 
 namespace Instance
 
-/-- **Alphabet padding of a tensor instance.** Rename the active edge alphabet of an instance through `dec`, returning zero when any
+/-- Rename the active edge alphabet of an instance through `dec`, returning zero when any
 off-diagonal target label is outside `D`. The diagonal coordinate is replaced by `sourceDefault`. -/
 def pad [Fintype J] [DecidableEq J] [DecidableEq A'] (R : Instance J A)
     (sourceDefault : A) (D : Finset A') (dec : A' → A) : Instance J A' :=
@@ -43,7 +43,7 @@ def pad [Fintype J] [DecidableEq J] [DecidableEq A'] (R : Instance J A)
       R v (fun w => if w = v then sourceDefault else dec (θ w))
     else 0
 
-/-- **Factoring and unfactoring a tensor instance gives its padding.** Factoring an instance and converting it back through constant edge names gives its padded
+/-- Factoring an instance and converting it back through constant edge names gives its padded
 version. The decoder must send every admitted target name into the explicit source alphabet. -/
 theorem toInstance_toFactored_eq_pad [Fintype J] [LinearOrder J]
     [DecidableEq A] [DecidableEq A'] (R : Instance J A) (sourceLabels : Finset A)
@@ -91,7 +91,7 @@ theorem toInstance_toFactored_eq_pad [Fintype J] [LinearOrder J]
     rw [Finset.prod_eq_zero (i := w) (by simp [hw]), mul_zero]
     simp [hwD]
 
-/-- **Factoring round trip with the full source alphabet.** The source conversion theorem with the full finite source alphabet. -/
+/-- The source conversion theorem with the full finite source alphabet. -/
 theorem toInstance_toFactored_univ_eq_pad [Fintype J] [LinearOrder J] [Fintype A]
     [DecidableEq A] [DecidableEq A'] (R : Instance J A) (sourceDefault : A)
     (D : Finset A') (dec : A' → A) :
@@ -99,7 +99,7 @@ theorem toInstance_toFactored_univ_eq_pad [Fintype J] [LinearOrder J] [Fintype A
       R.pad sourceDefault D dec := by
   exact R.toInstance_toFactored_eq_pad univ sourceDefault D dec (by simp)
 
-/-- **Bijective alphabet padding preserves instance value.** Padding through a bijective renaming of an explicit source alphabet preserves instance value. -/
+/-- Padding through a bijective renaming of an explicit source alphabet preserves instance value. -/
 theorem value_pad [Fintype J] [LinearOrder J] [DecidableEq A] [DecidableEq A']
     (R : Instance J A) (sourceLabels : Finset A) (sourceDefault : A)
     (targetLabels : Finset A') (targetDefault : A') (D : Finset A') (dec : A' → A)

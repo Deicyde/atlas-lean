@@ -63,7 +63,7 @@ variable {Ω P E : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω} [Fintype E]
 
 /-! ### Outgroup f3 -/
 
-/-- **f3 statistic as shared drift on a tree.** With binary loadings, `f3 O A B` is the total drift length of the edges shared by the paths
+/-- With binary loadings, `f3 O A B` is the total drift length of the edges shared by the paths
 `O–A` and `O–B` (on a tree, the path from `O` to the `A–B` path). -/
 theorem f3_eq_sum_inter_symmDiff [DecidableEq E] (hM : M.HasBinaryLoadings) (O A B : P) :
     f3 μ M.freq O A B =
@@ -73,7 +73,7 @@ theorem f3_eq_sum_inter_symmDiff [DecidableEq E] (hM : M.HasBinaryLoadings) (O A
   rcases hM O e with hO | hO <;> rcases hM A e with hA | hA <;> rcases hM B e with hB | hB <;>
     simp [DriftModel.lineage, Finset.mem_symmDiff, hO, hA, hB]
 
-/-- **Outgroup f3 statistic.** Outgroup `f3` (Raghavan et al. 2014): with binary loadings, if the lineage of `O` shares no
+/-- Outgroup `f3` (Raghavan et al. 2014): with binary loadings, if the lineage of `O` shares no
 edge with the lineages of `A` and `B`, then `f3 O A B` is the drift from the outgroup to the root
 plus the drift shared by `A` and `B`. -/
 theorem f3_outgroup [DecidableEq E] (hM : M.HasBinaryLoadings) {O A B : P}
@@ -88,7 +88,7 @@ theorem f3_outgroup [DecidableEq E] (hM : M.HasBinaryLoadings) {O A B : P}
     rcases hM B e with hB' | hB' <;>
     simp_all [DriftModel.lineage]
 
-/-- **Outgroup f3 ranks populations by shared drift.** For a fixed outgroup `O` and population `A`, the outgroup `f3` ranks candidates `B` by the
+/-- For a fixed outgroup `O` and population `A`, the outgroup `f3` ranks candidates `B` by the
 drift they share with `A`. -/
 theorem f3_outgroup_le_iff [DecidableEq E] (hM : M.HasBinaryLoadings) {O A B B' : P}
     (hA : Disjoint (M.lineage O) (M.lineage A)) (hB : Disjoint (M.lineage O) (M.lineage B))
@@ -99,11 +99,11 @@ theorem f3_outgroup_le_iff [DecidableEq E] (hM : M.HasBinaryLoadings) {O A B B' 
 
 /-! ### Admixed branches -/
 
-/-- **MixMapper mixed drift.** MixMapper's mixed drift `α² ℓ_a + (1 - α)² ℓ_b + ℓ_c`: the only combination of the terminal
+/-- MixMapper's mixed drift `α² ℓ_a + (1 - α)² ℓ_b + ℓ_c`: the only combination of the terminal
 drift lengths that enters the `f2` statistics of an admixed population. -/
 def mixedDrift (α la lb lc : ℝ) : ℝ := α ^ 2 * la + (1 - α) ^ 2 * lb + lc
 
-/-- **Admixed-branch identity for f2 statistics.** The admixed-branch identity (Lipson et al. 2013): if `Mx` is an `α : 1 - α` mixture of the
+/-- The admixed-branch identity (Lipson et al. 2013): if `Mx` is an `α : 1 - α` mixture of the
 endpoints of the edges `a` (below `A`) and `b` (below `B`), followed by drift on `c`, and `A`,
 `B`, `X` do not use `a`, `b`, `c`, then
 `f2 Mx X = α f2 A X + (1 - α) f2 B X - α (1 - α) f2 A B + mixedDrift α ℓ_a ℓ_b ℓ_c`. -/
@@ -139,7 +139,7 @@ theorem f2_admixedBranch [DecidableEq E] {Mx A B X : P} {a b c : E} {α : ℝ} (
   simp only [Finset.sum_add_distrib, Finset.sum_sub_distrib, ← Finset.mul_sum,
     Finset.sum_pi_single', Finset.mem_univ, ite_true, mixedDrift]
 
-/-- **Identifiability of the admixture proportion from f2 statistics.** Identifiability of the mixture proportion (our formulation): with the split points `A`, `B`
+/-- Identifiability of the mixture proportion (our formulation): with the split points `A`, `B`
 given, two references `X₁`, `X₂` satisfying the hypotheses of `f2_admixedBranch` and with
 different contrasts `f2 A Xᵢ - f2 B Xᵢ` determine `α` from `f2` statistics. -/
 theorem alpha_eq_of_f2 [DecidableEq E] {Mx A B X₁ X₂ : P} {a b c : E} {α : ℝ} (hab : a ≠ b)
@@ -158,7 +158,7 @@ theorem alpha_eq_of_f2 [DecidableEq E] {Mx A B X₁ X₂ : P} {a b c : E} {α : 
   rw [eq_div_iff (sub_ne_zero.mpr hD), h₁, h₂]
   ring
 
-/-- **Mixed drift determined by f2 statistics.** Given `α`, the mixed drift is determined by the `f2` statistics of one reference `X`. -/
+/-- Given `α`, the mixed drift is determined by the `f2` statistics of one reference `X`. -/
 theorem mixedDrift_eq [DecidableEq E] {Mx A B X : P} {a b c : E} {α : ℝ} (hab : a ≠ b)
     (hac : a ≠ c) (hbc : b ≠ c)
     (hw : M.weight Mx = α • (M.weight A + Pi.single a 1) +

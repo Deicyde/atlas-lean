@@ -144,7 +144,7 @@ theorem egf_outsideComponent_infinite {a : Site 2} (Vc : (hypercubicLattice 2).W
   have hsub : jec_leftRegion Vc ⊆ box 2 R := egf_leftRegion_subset_box Vc R hsupp
   exact outsideComponent_infinite (jec_leftRegion Vc) R hsub
 
-/-- **Inside and outside of a closed walk are connected.** The inside and the outside of `Vc` are nonempty and each is connected in the lattice with the
+/-- The inside and the outside of `Vc` are nonempty and each is connected in the lattice with the
 boundary edges of the inside removed. This is `StatMech.Lattice.jcs_JordanRegion
 (jec_leftRegion Vc)`. -/
 def egf_LoopFloodFill {a : Site 2} (Vc : (hypercubicLattice 2).Walk a a) : Prop :=

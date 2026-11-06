@@ -51,7 +51,7 @@ open scoped ENNReal
 
 variable {α β γ : Type*} [Fintype α] [Fintype β] [Fintype γ]
 
-/-- **Sums against a pushforward of a finite law.** Summing a function of `f t` against `p` is summing against the pushforward `p.map f`. -/
+/-- Summing a function of `f t` against `p` is summing against the pushforward `p.map f`. -/
 theorem sum_toReal_mul_comp {τ δ : Type*} [Fintype τ] [Fintype δ] (p : PMF τ) (f : τ → δ)
     (φ : δ → ℝ) : ∑ t, (p t).toReal * φ (f t) = ∑ d, ((p.map f) d).toReal * φ d := by
   classical
@@ -65,37 +65,37 @@ theorem sum_toReal_mul_comp {τ δ : Type*} [Fintype τ] [Fintype δ] (p : PMF �
   refine Finset.sum_congr rfl fun d _ ↦ Finset.sum_congr rfl fun t ht ↦ ?_
   rw [(Finset.mem_filter.mp ht).2]
 
-/-- **Atom mass is at most the mass of its image.** An atom's mass is at most the mass of its image. -/
+/-- An atom's mass is at most the mass of its image. -/
 theorem le_map_apply {τ δ : Type*} (p : PMF τ) (f : τ → δ) (t : τ) :
     p t ≤ (p.map f) (f t) := by
   classical
   rw [PMF.map_apply]
   exact le_trans (by simp) (ENNReal.le_tsum t)
 
-/-- **Atom mass is at most the mass of its image, in reals.** An atom's mass is at most the mass of its image, as real numbers. -/
+/-- An atom's mass is at most the mass of its image, as real numbers. -/
 theorem toReal_le_map_apply {τ δ : Type*} (p : PMF τ) (f : τ → δ) (t : τ) :
     (p t).toReal ≤ ((p.map f) (f t)).toReal :=
   ENNReal.toReal_mono (PMF.apply_ne_top _ _) (le_map_apply p f t)
 
-/-- **Shannon entropy as a p log p sum.** Entropy times `log 2` as a `p log p` sum. -/
+/-- Entropy times `log 2` as a `p log p` sum. -/
 theorem shannonEntropy_mul_log_two {δ : Type*} [Fintype δ] (q : PMF δ) :
     shannonEntropy q * log 2 = -∑ d, (q d).toReal * log (q d).toReal := by
   rw [shannonEntropy, div_mul_cancel₀ _ (log_pos one_lt_two).ne', ← Finset.sum_neg_distrib]
   simp [negMulLog]
 
-/-- **Log-sum against a pushforward equals its negative entropy.** `∑ p(t) log (p.map f)(f t) = -H(p.map f) log 2`. -/
+/-- `∑ p(t) log (p.map f)(f t) = -H(p.map f) log 2`. -/
 theorem sum_mul_log_map {τ δ : Type*} [Fintype τ] [Fintype δ] (p : PMF τ) (f : τ → δ) :
     ∑ t, (p t).toReal * log ((p.map f) (f t)).toReal = -(shannonEntropy (p.map f) * log 2) := by
   rw [sum_toReal_mul_comp p f (fun d ↦ log ((p.map f) d).toReal), shannonEntropy_mul_log_two,
     neg_neg]
 
 
-/-- **Entropy of a pushforward is invariant under relabeling.** Relabeling the image of a map by a bijection preserves entropy. -/
+/-- Relabeling the image of a map by a bijection preserves entropy. -/
 theorem shannonEntropy_map_equiv_comp {τ δ ε : Type*} [Fintype δ] [Fintype ε] (p : PMF τ)
     (f : τ → δ) (e : δ ≃ ε) : shannonEntropy (p.map (e ∘ f)) = shannonEntropy (p.map f) := by
   rw [← PMF.map_comp, shannonEntropy_map_equiv]
 
-/-- **Mutual information of a finite joint law.** Mutual information `I(X; Y)` of a finite joint law `p` of `(X, Y)`, in bits: the real value
+/-- Mutual information `I(X; Y)` of a finite joint law `p` of `(X, Y)`, in bits: the real value
 of `measureMutualInformation` on `p`, which is finite here (`finiteMutualInformation_eq`). Each
 finite alphabet carries the discrete σ-algebra. -/
 noncomputable def finiteMutualInformation (p : PMF (α × β)) : ℝ :=
@@ -103,7 +103,7 @@ noncomputable def finiteMutualInformation (p : PMF (α × β)) : ℝ :=
   letI : MeasurableSpace β := ⊤
   (measureMutualInformation (⟨p.toMeasure, inferInstance⟩ : ProbabilityMeasure (α × β))).toReal
 
-/-- **Mutual information in terms of entropies.** `I(X; Y) = H(X) + H(Y) - H(X, Y)` for a finite joint law. -/
+/-- `I(X; Y) = H(X) + H(Y) - H(X, Y)` for a finite joint law. -/
 theorem finiteMutualInformation_eq (p : PMF (α × β)) :
     finiteMutualInformation p =
       shannonEntropy (p.map Prod.fst) + shannonEntropy (p.map Prod.snd) - shannonEntropy p := by
@@ -114,14 +114,14 @@ theorem finiteMutualInformation_eq (p : PMF (α × β)) :
   rw [finiteMutualInformation, measureMutualInformation_toMeasure,
     ENNReal.toReal_ofReal (by linarith [shannonEntropy_le_add p])]
 
-/-- **Conditional mutual information of a finite joint law.** The conditional mutual information `I(X; Y | Z)` of a finite joint law `p` of `(X, Y, Z)`, in
+/-- The conditional mutual information `I(X; Y | Z)` of a finite joint law `p` of `(X, Y, Z)`, in
 bits: `∑ p(x, y, z) log₂ (p(x, y, z) p(z) / (p(x, z) p(y, z)))`. -/
 noncomputable def finiteConditionalMutualInformation (p : PMF (α × β × γ)) : ℝ :=
   ∑ a, ∑ b, ∑ c, (p (a, b, c)).toReal *
     logb 2 ((p (a, b, c)).toReal * ((p.map fun t ↦ t.2.2) c).toReal /
       (((p.map fun t ↦ (t.1, t.2.2)) (a, c)).toReal * ((p.map fun t ↦ t.2) (b, c)).toReal))
 
-/-- **Conditional mutual information in terms of entropies.** `I(X; Y | Z) = H(X, Z) + H(Y, Z) - H(X, Y, Z) - H(Z)`. -/
+/-- `I(X; Y | Z) = H(X, Z) + H(Y, Z) - H(X, Y, Z) - H(Z)`. -/
 theorem finiteConditionalMutualInformation_eq (p : PMF (α × β × γ)) :
     finiteConditionalMutualInformation p =
       shannonEntropy (p.map fun t ↦ (t.1, t.2.2)) + shannonEntropy (p.map fun t ↦ t.2) -
@@ -228,13 +228,13 @@ private theorem cmi_eq_klDiv {α β γ : Type*} [Fintype α] [Fintype β] [Finty
     logb, div_div_eq_mul_div]
   ring
 
-/-- **Nonnegativity of conditional mutual information.** Conditional mutual information is nonnegative. -/
+/-- Conditional mutual information is nonnegative. -/
 theorem finiteConditionalMutualInformation_nonneg (p : PMF (α × β × γ)) :
     0 ≤ finiteConditionalMutualInformation p := by
   rw [cmi_eq_klDiv]
   exact div_nonneg ENNReal.toReal_nonneg (log_pos one_lt_two).le
 
-/-- **Vanishing conditional mutual information iff conditional independence.** `I(X; Y | Z) = 0` exactly when `X` and `Y` are conditionally independent given `Z`:
+/-- `I(X; Y | Z) = 0` exactly when `X` and `Y` are conditionally independent given `Z`:
 `p(x, y, z) p(z) = p(x, z) p(y, z)` for every atom. -/
 theorem finiteConditionalMutualInformation_eq_zero_iff (p : PMF (α × β × γ)) :
     finiteConditionalMutualInformation p = 0 ↔

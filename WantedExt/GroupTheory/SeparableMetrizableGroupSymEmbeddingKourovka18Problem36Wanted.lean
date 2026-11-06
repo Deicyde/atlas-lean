@@ -35,10 +35,8 @@ and makes `G` a topological group; abstract embeddability is an injective homomo
 `Equiv.Perm ℕ`.
 -/
 
-/-- **Claim of Kourovka Problem 18.36.** The claim (J. D. Dixon) that every group $G$ that
-admits a metrizable topology making it a separable topological group admits an injective group
-homomorphism into the group $\mathrm{Sym}(\mathbb{N})$ of all permutations of the natural
-numbers. -/
+/-- Kourovka 18.36 (J. D. Dixon): every group `G` that carries a metrizable topology making it a
+separable topological group embeds, as an abstract group, in `Sym(ℕ)`. -/
 def separableMetrizableGroupEmbedsInSym : Prop :=
   ∀ (G : Type) [Group G],
     (∃ t : TopologicalSpace G, @IsTopologicalGroup G t _ ∧
@@ -46,16 +44,9 @@ def separableMetrizableGroupEmbedsInSym : Prop :=
     ∃ f : G →* Equiv.Perm ℕ, Function.Injective f
 
 /--
-**Separable metrizable groups need not embed in the infinite symmetric group.** The claim of
-Kourovka Problem 18.36 is false: there is a group $G$ that admits a metrizable topology
-making it a separable topological group but admits no injective group homomorphism into the
-group $\mathrm{Sym}(\mathbb{N})$ of all permutations of the natural numbers.
-
-Rosendal and Solecki (2007) give an uncountable connected Polish group (a separable
-completely metrizable topological group) every abstract homomorphism of which into
-$\mathrm{Sym}(\mathbb{N})$ is trivial, so it has no injective one.
-
-Source:
+Resolved false: the Kourovka Notebook (21st issue) answers 18.36 "No": Rosendal and Solecki (2007)
+give an uncountable connected Polish group (a separable completely metrizable topological group)
+every abstract homomorphism of which into `Sym(ℕ)` is trivial, so it has no injective one. Source:
 E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook,
 21st issue, arXiv:1401.0300v49 (2026), Problem 18.36 (J. D. Dixon); resolution: C. Rosendal and S.
 Solecki, Israel J. Math. 162 (2007), 349-371, an uncountable connected Polish group whose every

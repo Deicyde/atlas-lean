@@ -96,7 +96,7 @@ private theorem gaussianReal_zero_eq_map_mul (v : ℝ≥0) :
   ext
   simp
 
-/-- **Squared normalized Gaussian is chi-square with one degree of freedom.** If `Y ~ N(0, v)` with `v ≠ 0`, then `Y² / v ~ χ²₁`. -/
+/-- If `Y ~ N(0, v)` with `v ≠ 0`, then `Y² / v ~ χ²₁`. -/
 theorem gaussianReal_map_sq_div {v : ℝ≥0} (hv : v ≠ 0) :
     (gaussianReal 0 v).map (fun x : ℝ => x ^ 2 / v) = chiSquareMeasure 1 := by
   have hv' : (0 : ℝ) < v := NNReal.coe_pos.2 (pos_iff_ne_zero.2 hv)

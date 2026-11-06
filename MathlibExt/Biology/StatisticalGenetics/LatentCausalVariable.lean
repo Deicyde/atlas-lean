@@ -81,7 +81,7 @@ namespace MathlibExt.Biology.StatisticalGenetics.LatentCausalVariable
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
-/-- **Latent causal variable model.** The latent causal variable model of O'Connor and Price (2018, Equation 3) on a probability
+/-- The latent causal variable model of O'Connor and Price (2018, Equation 3) on a probability
 space: `α_k = q_k π + γ_k` with `π` independent of `(γ₁, γ₂)`, the law of `(γ₁, γ₂)` invariant
 under each sign flip, `π` of mean zero and unit variance, and both `α_k` of unit second moment.
 Fourth moments are assumed finite. -/
@@ -114,13 +114,13 @@ namespace Model
 
 variable {P : Measure Ω} [IsProbabilityMeasure P] (D : Model P)
 
-/-- **Marginal effect on the first trait in the latent causal variable model.** The marginal effect `α₁ = q₁ π + γ₁` on trait 1. -/
+/-- The marginal effect `α₁ = q₁ π + γ₁` on trait 1. -/
 def alpha1 (ω : Ω) : ℝ := D.q1 * D.pi ω + D.g1 ω
 
-/-- **Marginal effect on the second trait in the latent causal variable model.** The marginal effect `α₂ = q₂ π + γ₂` on trait 2. -/
+/-- The marginal effect `α₂ = q₂ π + γ₂` on trait 2. -/
 def alpha2 (ω : Ω) : ℝ := D.q2 * D.pi ω + D.g2 ω
 
-/-- **Excess kurtosis of the latent effect.** The excess kurtosis `κ_π = E(π⁴) - 3` of the effect on the latent variable. -/
+/-- The excess kurtosis `κ_π = E(π⁴) - 3` of the effect on the latent variable. -/
 noncomputable def kurtosis : ℝ := ∫ ω, D.pi ω ^ 4 ∂P - 3
 
 private theorem integral_odd_left
@@ -223,7 +223,7 @@ private def swap
   integral_alpha1_sq := D.integral_alpha2_sq
   integral_alpha2_sq := D.integral_alpha1_sq
 
-/-- **Genetic correlation in the latent causal variable model.** The genetic correlation is `E(α₁ α₂) = q₁ q₂` (O'Connor and Price 2018, after Equation 1). -/
+/-- The genetic correlation is `E(α₁ α₂) = q₁ q₂` (O'Connor and Price 2018, after Equation 1). -/
 theorem integral_alpha1_mul_alpha2 : ∫ ω, D.alpha1 ω * D.alpha2 ω ∂P = D.q1 * D.q2 := by
   have hp : Integrable (fun ω => D.pi ω ^ 2) P := by
     simpa [pow_two] using integrable_two D.memLp_pi D.memLp_pi
@@ -326,7 +326,7 @@ theorem integral_alpha1_pow_three_mul_alpha2 :
   ring
 
 
-/-- **Mixed fourth moment $E(\alpha_1 \alpha_2^3)$.** The mirror image of Equation 2: `E(α₁ α₂³) = κ_π q₁ q₂³ + 3 q₁ q₂`. -/
+/-- The mirror image of Equation 2: `E(α₁ α₂³) = κ_π q₁ q₂³ + 3 q₁ q₂`. -/
 theorem integral_alpha1_mul_alpha2_pow_three :
     ∫ ω, D.alpha1 ω * D.alpha2 ω ^ 3 ∂P = D.kurtosis * D.q1 * D.q2 ^ 3 + 3 * (D.q1 * D.q2) := by
   have h := integral_alpha1_pow_three_mul_alpha2 (swap D)
@@ -339,7 +339,7 @@ theorem integral_alpha1_mul_alpha2_pow_three :
     _ = D.kurtosis * D.q1 * D.q2 ^ 3 + 3 * (D.q1 * D.q2) := h.trans (by ring)
 
 
-/-- **Mediated coefficient of the first trait is at most one in size.** Unit variance of `α₁` forces `q₁² ≤ 1` (the non-mediated part has variance `1 - q₁²`). -/
+/-- Unit variance of `α₁` forces `q₁² ≤ 1` (the non-mediated part has variance `1 - q₁²`). -/
 theorem q1_sq_le_one : D.q1 ^ 2 ≤ 1 := by
   have h := residual_second_moment D D.memLp_g1
     (D.indep.comp measurable_id measurable_fst) D.q1 D.integral_alpha1_sq
@@ -347,7 +347,7 @@ theorem q1_sq_le_one : D.q1 ^ 2 ≤ 1 := by
   linarith
 
 
-/-- **Mediated coefficient of the second trait is at most one in size.** Unit variance of `α₂` forces `q₂² ≤ 1`. -/
+/-- Unit variance of `α₂` forces `q₂² ≤ 1`. -/
 theorem q2_sq_le_one : D.q2 ^ 2 ≤ 1 := by
   have h := residual_second_moment D D.memLp_g2
     (D.indep.comp measurable_id measurable_snd) D.q2 D.integral_alpha2_sq
@@ -355,7 +355,7 @@ theorem q2_sq_le_one : D.q2 ^ 2 ≤ 1 := by
   linarith
 
 
-/-- **Fourth moment of the latent effect is at least one.** `E(π⁴) ≥ (E π²)² = 1`, so the excess kurtosis is at least `-2`. -/
+/-- `E(π⁴) ≥ (E π²)² = 1`, so the excess kurtosis is at least `-2`. -/
 theorem one_le_integral_pi_pow_four : 1 ≤ ∫ ω, D.pi ω ^ 4 ∂P := by
   have hp : Integrable (fun ω => D.pi ω ^ 2) P := by
     simpa [pow_two] using integrable_two D.memLp_pi D.memLp_pi
@@ -376,13 +376,13 @@ theorem one_le_integral_pi_pow_four : 1 ≤ ∫ ω, D.pi ω ^ 4 ∂P := by
   linarith
 
 
-/-- **Centred mixed fourth moment $E(\alpha_1^3 \alpha_2)$.** The centred mixed fourth moment: `E(α₁³ α₂) - 3 ρ_g = κ_π q₁³ q₂`. -/
+/-- The centred mixed fourth moment: `E(α₁³ α₂) - 3 ρ_g = κ_π q₁³ q₂`. -/
 theorem centred_moment_left :
     ∫ ω, D.alpha1 ω ^ 3 * D.alpha2 ω ∂P - 3 * (D.q1 * D.q2) = D.kurtosis * D.q1 ^ 3 * D.q2 := by
   rw [D.integral_alpha1_pow_three_mul_alpha2]
   ring
 
-/-- **Centred mixed fourth moment $E(\alpha_1 \alpha_2^3)$.** The centred mixed fourth moment: `E(α₁ α₂³) - 3 ρ_g = κ_π q₁ q₂³`. -/
+/-- The centred mixed fourth moment: `E(α₁ α₂³) - 3 ρ_g = κ_π q₁ q₂³`. -/
 theorem centred_moment_right :
     ∫ ω, D.alpha1 ω * D.alpha2 ω ^ 3 ∂P - 3 * (D.q1 * D.q2) = D.kurtosis * D.q1 * D.q2 ^ 3 := by
   rw [D.integral_alpha1_mul_alpha2_pow_three]
@@ -415,7 +415,7 @@ private theorem abs_moment_eq (hκ : -2 ≤ D.kurtosis) :
   · rw [show D.kurtosis * D.q1 * D.q2 ^ 3 + 3 * (D.q1 * D.q2) =
       D.q1 * D.q2 * (D.kurtosis * D.q2 ^ 2 + 3) by ring, abs_mul, abs_of_nonneg p2]
 
-/-- **Excess kurtosis of the latent effect is at least −2.** `κ_π ≥ -2`. -/
+/-- `κ_π ≥ -2`. -/
 theorem neg_two_le_kurtosis : -2 ≤ D.kurtosis := by
   have := D.one_le_integral_pi_pow_four
   unfold kurtosis
@@ -445,7 +445,7 @@ end Model
 
 /-! ### The genetic causality proportion -/
 
-/-- **Genetic causality proportion.** The genetic causality proportion `gcp = (log|q₂| - log|q₁|) / (log|q₂| + log|q₁|)`
+/-- The genetic causality proportion `gcp = (log|q₂| - log|q₁|) / (log|q₂| + log|q₁|)`
 (O'Connor and Price 2018, Equation 4). Meaningful for `0 < |q₁|, |q₂| ≤ 1` and `ρ_g² < 1`; for
 `|q₁| = |q₂| = 1` the denominator vanishes and the value is `0` by the convention `x / 0 = 0`. -/
 noncomputable def gcp (q1 q2 : ℝ) : ℝ :=
@@ -458,7 +458,7 @@ private theorem log_add_neg {q1 q2 : ℝ} (h1 : q1 ≠ 0) (h2 : q2 ≠ 0) (hρ :
   have : |q2 * q1| ^ 2 < 1 := by rw [sq_abs, mul_comm]; exact hρ
   nlinarith [abs_nonneg (q2 * q1)]
 
-/-- **Sign of the genetic causality proportion.** `gcp ≥ 0` iff `q₂² ≤ q₁²`, for nonzero `q₁, q₂` with `ρ_g² = (q₁ q₂)² < 1`. -/
+/-- `gcp ≥ 0` iff `q₂² ≤ q₁²`, for nonzero `q₁, q₂` with `ρ_g² = (q₁ q₂)² < 1`. -/
 theorem gcp_nonneg_iff {q1 q2 : ℝ} (h1 : q1 ≠ 0) (h2 : q2 ≠ 0) (hρ : (q1 * q2) ^ 2 < 1) :
     0 ≤ gcp q1 q2 ↔ q2 ^ 2 ≤ q1 ^ 2 := by
   have hd := log_add_neg h1 h2 hρ
@@ -473,7 +473,7 @@ theorem gcp_nonneg_iff {q1 q2 : ℝ} (h1 : q1 ≠ 0) (h2 : q2 ≠ 0) (hρ : (q1 
       exact div_nonneg_of_nonpos h hd.le
   rw [key, sub_nonpos, Real.log_le_log_iff (abs_pos.mpr h2) (abs_pos.mpr h1), sq_le_sq]
 
-/-- **Genetic causality proportion solves the defining equation.** The genetic causality proportion solves the paper's Equation 1:
+/-- The genetic causality proportion solves the paper's Equation 1:
 `q₂² / q₁² = (ρ_g²) ^ gcp` with `ρ_g = q₁ q₂`, for nonzero `q₁, q₂` with `ρ_g² < 1`. -/
 theorem rpow_gcp {q1 q2 : ℝ} (h1 : q1 ≠ 0) (h2 : q2 ≠ 0) (hρ : (q1 * q2) ^ 2 < 1) :
     ((q1 * q2) ^ 2) ^ gcp q1 q2 = q2 ^ 2 / q1 ^ 2 := by
@@ -494,7 +494,7 @@ theorem rpow_gcp {q1 q2 : ℝ} (h1 : q1 ≠ 0) (h2 : q2 ≠ 0) (hρ : (q1 * q2) 
     field_simp
   rw [Real.rpow_def_of_pos hpos, harg, Real.exp_sub, hexp q1 h1, hexp q2 h2]
 
-/-- **Genetic causality proportion is at most 1.** `gcp ≤ 1` when `q₁² ≤ 1` (for nonzero `q₁, q₂` with `ρ_g² < 1`). -/
+/-- `gcp ≤ 1` when `q₁² ≤ 1` (for nonzero `q₁, q₂` with `ρ_g² < 1`). -/
 theorem gcp_le_one {q1 q2 : ℝ} (h1 : q1 ≠ 0) (h2 : q2 ≠ 0) (hρ : (q1 * q2) ^ 2 < 1)
     (hq1 : q1 ^ 2 ≤ 1) : gcp q1 q2 ≤ 1 := by
   have hd := log_add_neg h1 h2 hρ
@@ -503,7 +503,7 @@ theorem gcp_le_one {q1 q2 : ℝ} (h1 : q1 ≠ 0) (h2 : q2 ≠ 0) (hρ : (q1 * q2
   rw [gcp, div_le_one_of_neg hd]
   linarith
 
-/-- **Genetic causality proportion is at least −1.** `-1 ≤ gcp` when `q₂² ≤ 1` (for nonzero `q₁, q₂` with `ρ_g² < 1`). -/
+/-- `-1 ≤ gcp` when `q₂² ≤ 1` (for nonzero `q₁, q₂` with `ρ_g² < 1`). -/
 theorem neg_one_le_gcp {q1 q2 : ℝ} (h1 : q1 ≠ 0) (h2 : q2 ≠ 0) (hρ : (q1 * q2) ^ 2 < 1)
     (hq2 : q2 ^ 2 ≤ 1) : -1 ≤ gcp q1 q2 := by
   have hd := log_add_neg h1 h2 hρ

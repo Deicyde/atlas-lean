@@ -75,11 +75,11 @@ namespace MathlibExt.Probability.PoissonPointProcess
 
 variable {E F : Type*} [MeasurableSpace E] [MeasurableSpace F]
 
-/-- **Counting measure of a finite tuple of points.** The counting measure `∑_{i < n} δ_{x_i}` of a finite tuple of points. -/
+/-- The counting measure `∑_{i < n} δ_{x_i}` of a finite tuple of points. -/
 noncomputable def countingMeasure {n : ℕ} (x : Fin n → E) : Measure E :=
   ∑ i, Measure.dirac (x i)
 
-/-- **Poisson point process with finite intensity.** The law of the Poisson point process with finite intensity `μ` on `E`:
+/-- The law of the Poisson point process with finite intensity `μ` on `E`:
 `∑_n e^{-μ(E)} / n! • (μ^{⊗n}).map countingMeasure`, a probability measure on `Measure E`
 (Last–Penrose Prop. 3.5, mixed binomial construction). -/
 noncomputable def poissonPointProcess (μ : Measure E) [IsFiniteMeasure μ] :
@@ -87,12 +87,12 @@ noncomputable def poissonPointProcess (μ : Measure E) [IsFiniteMeasure μ] :
   Measure.sum fun n : ℕ => ENNReal.ofReal (Real.exp (-μ.real univ) / n !) •
     (Measure.pi fun _ : Fin n => μ).map countingMeasure
 
-/-- **Counting measure of a set as a sum of indicators.** `(∑ δ_{x_i})(s) = #{i | x_i ∈ s}`, as a sum of indicators. -/
+/-- `(∑ δ_{x_i})(s) = #{i | x_i ∈ s}`, as a sum of indicators. -/
 theorem countingMeasure_apply {n : ℕ} (x : Fin n → E) {s : Set E} (hs : MeasurableSet s) :
     countingMeasure x s = ∑ i, s.indicator 1 (x i) := by
   simp [countingMeasure, Measure.dirac_apply' _ hs]
 
-/-- **Measurability of the counting measure in the points.** The counting measure of a tuple depends measurably on the tuple. -/
+/-- The counting measure of a tuple depends measurably on the tuple. -/
 theorem measurable_countingMeasure (n : ℕ) :
     Measurable (countingMeasure : (Fin n → E) → Measure E) := by
   refine Measure.measurable_of_measurable_coe _ fun s hs => ?_
@@ -100,12 +100,12 @@ theorem measurable_countingMeasure (n : ℕ) :
   exact Finset.measurable_sum _ fun i _ =>
     (measurable_one.indicator hs).comp (measurable_pi_apply i)
 
-/-- **Integral against a counting measure.** `∫ f d(∑ δ_{x_i}) = ∑ f(x_i)`. -/
+/-- `∫ f d(∑ δ_{x_i}) = ∑ f(x_i)`. -/
 theorem lintegral_countingMeasure {n : ℕ} (x : Fin n → E) {f : E → ℝ≥0∞} (hf : Measurable f) :
     ∫⁻ y, f y ∂(countingMeasure x) = ∑ i, f (x i) := by
   simp [countingMeasure, lintegral_dirac' _ hf]
 
-/-- **Poisson weights sum to one.** The Poisson weights sum to one: `∑_n e^{-μ(E)} μ(E)^n / n! = 1`. -/
+/-- The Poisson weights sum to one: `∑_n e^{-μ(E)} μ(E)^n / n! = 1`. -/
 theorem tsum_coeff_mul_pow (μ : Measure E) [IsFiniteMeasure μ] :
     ∑' n : ℕ, ENNReal.ofReal (Real.exp (-μ.real univ) / n !) * μ univ ^ n = 1 := by
   have hμ : μ univ = ENNReal.ofReal (μ.real univ) :=
@@ -119,7 +119,7 @@ theorem tsum_coeff_mul_pow (μ : Measure E) [IsFiniteMeasure μ] :
     (h.summable.congr fun n => by ring), ← ENNReal.ofReal_one, ← h.tsum_eq]
   exact congrArg ENNReal.ofReal (tsum_congr fun n => by ring)
 
-/-- **Integral of a coordinate function under a product measure.** `∫ f(x_i) dμ^{⊗n}(x) = μ(E)^{n-1} ∫ f dμ`. -/
+/-- `∫ f(x_i) dμ^{⊗n}(x) = μ(E)^{n-1} ∫ f dμ`. -/
 theorem lintegral_pi_eval (μ : Measure E) [IsFiniteMeasure μ] {n : ℕ} (i : Fin n)
     {f : E → ℝ≥0∞} (hf : Measurable f) :
     ∫⁻ x, f (x i) ∂(Measure.pi fun _ : Fin n => μ) = μ univ ^ (n - 1) * ∫⁻ y, f y ∂μ := by
@@ -128,7 +128,7 @@ theorem lintegral_pi_eval (μ : Measure E) [IsFiniteMeasure μ] {n : ℕ} (i : F
   rw [Measure.pi_map_eval, lintegral_smul_measure, Finset.prod_const, Finset.card_erase_of_mem
     (Finset.mem_univ i), Finset.card_univ, Fintype.card_fin, smul_eq_mul]
 
-/-- **Image of a counting measure under a map.** The image of `∑ δ_{x_i}` under `T` is `∑ δ_{T(x_i)}`. -/
+/-- The image of `∑ δ_{x_i}` under `T` is `∑ δ_{T(x_i)}`. -/
 theorem countingMeasure_comp {n : ℕ} (x : Fin n → E) {T : E → F} (hT : Measurable T) :
     countingMeasure (T ∘ x) = (countingMeasure x).map T := by
   ext s hs
@@ -222,7 +222,7 @@ private theorem count_charFun {B : Set E} (hB : MeasurableSet B) (t : ℝ) :
   dsimp [z]
   ring
 
-/-- **Point counts of a Poisson point process are Poisson.** The number of points `η(B)` in a measurable set `B` has the Poisson law of mean `μ(B)`. -/
+/-- The number of points `η(B)` in a measurable set `B` has the Poisson law of mean `μ(B)`. -/
 theorem map_apply_eq_poissonMeasure {B : Set E} (hB : MeasurableSet B) :
     (poissonPointProcess μ).map (fun η => η B) =
       (poissonMeasure (μ B).toNNReal).map (Nat.cast : ℕ → ℝ≥0∞) := by
@@ -350,7 +350,7 @@ private theorem counts_charFun {ι : Type*} [Fintype ι] (A : ι → Set E)
   rw [neg_add_cancel_left]
   exact Finset.sum_congr rfl fun i _ => mul_comm _ _
 
-/-- **Mixed binomial process is a Poisson process.** The counts `η(A i)` of pairwise disjoint measurable sets are independent, and `η(A i)`
+/-- The counts `η(A i)` of pairwise disjoint measurable sets are independent, and `η(A i)`
 has the Poisson law of mean `μ(A i)`: the mixed binomial process is a Poisson process with
 intensity `μ` in the sense of Last–Penrose Def. 3.1 (Last–Penrose Prop. 3.5). -/
 theorem map_apply_pi {ι : Type*} [Fintype ι] (A : ι → Set E)

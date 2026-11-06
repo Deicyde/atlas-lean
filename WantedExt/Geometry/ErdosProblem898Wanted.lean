@@ -34,11 +34,8 @@ independence, convex hulls, and orthogonality are Mathlib's. The
 Mordell and Barrow. This module states the inequality but does not prove it;
 a pinned external Lean proof is linked in the registry. -/
 
-/-- **Statement of the Erdős–Mordell inequality.** Writing $XY$ for the distance between points
-$X$ and $Y$, this is the assertion that for all affinely independent points $A$, $B$, $C$ of the
-Euclidean plane, every point $P$ in the interior of the triangle $ABC$, and all points $M$, $N$,
-$L$ on the lines $BC$, $AB$, $CA$ such that the lines $PM$, $PN$, $PL$ are perpendicular to $BC$,
-$AB$, $CA$ respectively, we have $PA + PB + PC \ge 2(PM + PN + PL)$. -/
+/-- The Erdős–Mordell inequality: for an interior point `P`, `PA + PB + PC ≥
+2(PM + PN + PL)` where `M, N, L` are the feet of perpendiculars. -/
 def conjecture : Prop :=
   ∀ (A B C P L M N : ℝ²) (_hABC : AffineIndependent ℝ ![A, B, C])
     (_hP : P ∈ interior (convexHull ℝ ({A, B, C} : Set ℝ²)))
@@ -51,12 +48,8 @@ def conjecture : Prop :=
     dist P A + dist P B + dist P C ≥ 2 * (dist P M + dist P N + dist P L)
 
 /--
-**Erdős–Mordell inequality.** Let $A$, $B$, $C$ be affinely independent points of the Euclidean
-plane and $P$ a point in the interior of the triangle $ABC$. Let $M$, $N$, $L$ be points on the
-lines $BC$, $AB$, $CA$ such that $PM \perp BC$, $PN \perp AB$ and $PL \perp CA$. Then, writing
-$XY$ for the distance between points $X$ and $Y$, we have $PA + PB + PC \ge 2(PM + PN + PL)$.
-
-Source: Paul
+Resolved true: Resolved externally by L. J. Mordell and D. F. Barrow. This repository records
+the statement, not an internal proof; a pinned external Lean proof is cited below. Source: Paul
 Erdős, L. J. Mordell, and David F. Barrow, Problem 3740, American Mathematical Monthly 44
 (1937), 252–254, https://doi.org/10.2307/2300713. Moved from
 `OpenConjectures/Geometry/ErdosProblem898`.

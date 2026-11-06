@@ -40,19 +40,12 @@ open MathlibExt.Analysis.Convex.FenchelMoreau
 
 namespace MathlibExt.Probability.LegendreTransform
 
-/-- **Legendre transform.** Let $d \in \mathbb{N}$, give $\mathbb{R}^d$ its standard inner product,
-and let $\Lambda : \mathbb{R}^d \to [-\infty, \infty]$. The Legendre transform of $\Lambda$ at
-$x \in \mathbb{R}^d$ is the Fenchel conjugate of $\Lambda$ at the linear functional
-$y \mapsto \langle x, y \rangle$, that is, the extended real number
-$\Lambda^*(x) = \sup_{y \in \mathbb{R}^d} \big(\langle x, y \rangle - \Lambda(y)\big)$. -/
+/-- The Euclidean specialization of the canonical extended-real Fenchel conjugate. -/
 noncomputable def legendreTransform {d : ℕ}
     (Λ : EuclideanSpace ℝ (Fin d) → EReal) (x : EuclideanSpace ℝ (Fin d)) : EReal :=
   fenchelConj Λ (innerSL ℝ x)
 
-/-- **Supremum formula for the Legendre transform.** Let $d \in \mathbb{N}$ and let
-$\Lambda : \mathbb{R}^d \to [-\infty, \infty]$. For every $x \in \mathbb{R}^d$, the Legendre
-transform $\Lambda^*$ of $\Lambda$ satisfies
-$\Lambda^*(x) = \sup_{l \in \mathbb{R}^d} \big(\langle l, x \rangle - \Lambda(l)\big)$. -/
+/-- The canonical specialization has the source's inner-product supremum formula. -/
 theorem legendreTransform_eq_iSup {d : ℕ}
     (Λ : EuclideanSpace ℝ (Fin d) → EReal) (x : EuclideanSpace ℝ (Fin d)) :
     legendreTransform Λ x = ⨆ l, ((⟪l, x⟫_ℝ : ℝ) : EReal) - Λ l := by
@@ -61,10 +54,7 @@ theorem legendreTransform_eq_iSup {d : ℕ}
   funext l
   rw [innerSL_apply_apply, real_inner_comm]
 
-/-- **Fenchel–Young inequality for the Legendre transform.** Let $d \in \mathbb{N}$ and let
-$\Lambda : \mathbb{R}^d \to [-\infty, \infty]$, with Legendre transform $\Lambda^*$. For all
-$x, l \in \mathbb{R}^d$, we have $\langle l, x \rangle - \Lambda(l) \le \Lambda^*(x)$ in
-$[-\infty, \infty]$. -/
+/-- Difference form of Fenchel–Young: every term is at most the conjugate. -/
 theorem le_legendreTransform {d : ℕ}
     {Λ : EuclideanSpace ℝ (Fin d) → EReal}
     {x l : EuclideanSpace ℝ (Fin d)} :
@@ -72,10 +62,7 @@ theorem le_legendreTransform {d : ℕ}
   rw [legendreTransform_eq_iSup]
   exact le_iSup (fun y => ((⟪y, x⟫_ℝ : ℝ) : EReal) - Λ y) l
 
-/-- **The Legendre transform is order-reversing.** Let $d \in \mathbb{N}$ and let
-$\Lambda_1, \Lambda_2 : \mathbb{R}^d \to [-\infty, \infty]$, with Legendre transforms
-$\Lambda_1^*$ and $\Lambda_2^*$. If $\Lambda_1(y) \le \Lambda_2(y)$ for every
-$y \in \mathbb{R}^d$, then $\Lambda_2^*(x) \le \Lambda_1^*(x)$ for every $x \in \mathbb{R}^d$. -/
+/-- A larger input function has a smaller conjugate. -/
 theorem legendreTransform_antitone {d : ℕ}
     {Λ₁ Λ₂ : EuclideanSpace ℝ (Fin d) → EReal} (h : ∀ x, Λ₁ x ≤ Λ₂ x)
     {x : EuclideanSpace ℝ (Fin d)} :
@@ -83,9 +70,7 @@ theorem legendreTransform_antitone {d : ℕ}
   rw [legendreTransform_eq_iSup, legendreTransform_eq_iSup]
   exact iSup_mono (fun l => EReal.sub_le_sub le_rfl (h l))
 
-/-- **The epigraph of the Legendre transform is convex.** Let $d \in \mathbb{N}$ and let
-$\Lambda : \mathbb{R}^d \to [-\infty, \infty]$, with Legendre transform $\Lambda^*$. Then the
-set $\{(x, t) \in \mathbb{R}^d \times \mathbb{R} : \Lambda^*(x) \le t\}$ is convex. -/
+/-- The real-threshold epigraph of the extended-real conjugate is convex. -/
 theorem convex_epi_legendreTransform {d : ℕ}
     (Λ : EuclideanSpace ℝ (Fin d) → EReal) :
     Convex ℝ {p : EuclideanSpace ℝ (Fin d) × ℝ |
@@ -112,10 +97,7 @@ theorem convex_epi_legendreTransform {d : ℕ}
   have hrone : (a + b) * r = r := by rw [hab, one_mul]
   nlinarith [mul_le_mul_of_nonneg_left hp' ha, mul_le_mul_of_nonneg_left hq' hb]
 
-/-- **A finite Legendre transform is convex.** Let $d \in \mathbb{N}$ and let
-$\Lambda : \mathbb{R}^d \to [-\infty, \infty]$, with Legendre transform $\Lambda^*$. If
-$\Lambda^*(x)$ is a real number for every $x \in \mathbb{R}^d$, then $\Lambda^*$, viewed as a
-function $\mathbb{R}^d \to \mathbb{R}$, is convex on $\mathbb{R}^d$. -/
+/-- The real projection is convex when every conjugate value is finite. -/
 theorem convexOn_legendreTransform {d : ℕ}
     {Λ : EuclideanSpace ℝ (Fin d) → EReal}
     (hfinite : ∀ x, legendreTransform Λ x ≠ ⊤ ∧ legendreTransform Λ x ≠ ⊥) :
@@ -135,12 +117,7 @@ theorem convexOn_legendreTransform {d : ℕ}
   rw [← EReal.coe_toReal (hfinite (a • x + b • y)).1 (hfinite (a • x + b • y)).2] at hc
   exact EReal.coe_le_coe_iff.mp hc
 
-/-- **The double Legendre transform lies below the function.** Let $d \in \mathbb{N}$ and let
-$\Lambda : \mathbb{R}^d \to [-\infty, \infty]$ be a function that never takes the value
-$-\infty$, with Legendre transform $\Lambda^*$. Then the Legendre transform $\Lambda^{**}$ of
-$\Lambda^*$ satisfies $\Lambda^{**}(x) \le \Lambda(x)$ for every $x \in \mathbb{R}^d$.
-
-The proof bounds $\Lambda^{**}$ by the Fenchel biconjugate of $\Lambda$. -/
+/-- The double Euclidean transform is bounded by the canonical biconjugate and the input. -/
 theorem legendreTransform_legendreTransform_le {d : ℕ}
     {Λ : EuclideanSpace ℝ (Fin d) → EReal}
     (hnotbot : ∀ x, Λ x ≠ ⊥) {x : EuclideanSpace ℝ (Fin d)} :
@@ -160,10 +137,7 @@ private theorem inner_le_avg_norm_sq {d : ℕ} (l x : EuclideanSpace ℝ (Fin d)
   rw [norm_sub_sq_real] at h0
   linarith
 
-/-- **The half squared norm is its own Legendre transform.** Let $d \in \mathbb{N}$ and let
-$q : \mathbb{R}^d \to [-\infty, \infty]$ be $q(y) = \|y\|^2 / 2$, where $\|\cdot\|$ is the
-Euclidean norm. Its Legendre transform $q^*$ satisfies $q^*(x) = \|x\|^2 / 2$ for every
-$x \in \mathbb{R}^d$; in particular every value of $q^*$ is finite. -/
+/-- The quadratic is its own conjugate, with an explicitly finite extended-real value. -/
 theorem legendreTransform_norm_sq_div_two {d : ℕ} (x : EuclideanSpace ℝ (Fin d)) :
     legendreTransform (fun y : EuclideanSpace ℝ (Fin d) => ((‖y‖ ^ 2 / 2 : ℝ) : EReal)) x
       = ((‖x‖ ^ 2 / 2 : ℝ) : EReal) := by
@@ -187,17 +161,13 @@ theorem legendreTransform_norm_sq_div_two {d : ℕ} (x : EuclideanSpace ℝ (Fin
             (Λ := fun y : EuclideanSpace ℝ (Fin d) => ((‖y‖ ^ 2 / 2 : ℝ) : EReal))
             (x := x) (l := x)
 
-/-- **Legendre transform of the zero function at the origin.** Let $d \in \mathbb{N}$ and let
-$\Lambda : \mathbb{R}^d \to [-\infty, \infty]$ be the zero function. Its Legendre transform
-$\Lambda^*$ satisfies $\Lambda^*(0) = 0$. -/
+/-- The conjugate of the zero function is zero at the origin. -/
 theorem legendreTransform_zero {d : ℕ} :
     legendreTransform (fun _ : EuclideanSpace ℝ (Fin d) => (0 : EReal)) 0 = 0 := by
   rw [legendreTransform_eq_iSup]
   simp
 
-/-- **Legendre transform of the zero function away from the origin.** Let $d \in \mathbb{N}$
-and let $\Lambda : \mathbb{R}^d \to [-\infty, \infty]$ be the zero function. Its Legendre
-transform $\Lambda^*$ satisfies $\Lambda^*(x) = +\infty$ for every nonzero $x \in \mathbb{R}^d$. -/
+/-- The conjugate of the zero function is `⊤` at every nonzero vector. -/
 theorem legendreTransform_zero_of_ne {d : ℕ} {x : EuclideanSpace ℝ (Fin d)} (hx : x ≠ 0) :
     legendreTransform (fun _ : EuclideanSpace ℝ (Fin d) => (0 : EReal)) x = ⊤ := by
   have hxpos : 0 < ‖x‖ := norm_pos_iff.mpr hx

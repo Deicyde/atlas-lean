@@ -28,7 +28,7 @@ contains only the list operation and its machine-independent laws.
 
 namespace List
 
-/-- **Accumulator-stopped inclusive prefix of a list.** The prefix through the first element after whose update the accumulator satisfies `stop`,
+/-- The prefix through the first element after whose update the accumulator satisfies `stop`,
 including that element. The initial accumulator is not tested. If no updated accumulator satisfies
 `stop`, this is the whole list. -/
 def takeThroughAcc {α γ : Type*} (f : γ → α → γ) (stop : γ → Bool) :
@@ -38,24 +38,24 @@ def takeThroughAcc {α γ : Type*} (f : γ → α → γ) (stop : γ → Bool) :
     let c' := f c x
     if stop c' then [x] else x :: takeThroughAcc f stop c' xs
 
-/-- **Accumulator-stopped prefix of the empty list.** An empty list has an empty accumulator-stopped prefix. -/
+/-- An empty list has an empty accumulator-stopped prefix. -/
 @[simp] theorem takeThroughAcc_nil {α γ : Type*} (f : γ → α → γ) (stop : γ → Bool)
     (c : γ) : takeThroughAcc f stop c [] = [] := rfl
 
-/-- **Accumulator-stopped prefix when the head update stops.** If the accumulator stops after the head update, the prefix contains only the head. -/
+/-- If the accumulator stops after the head update, the prefix contains only the head. -/
 @[simp] theorem takeThroughAcc_cons_of_stop {α γ : Type*} {f : γ → α → γ}
     {stop : γ → Bool} {c : γ} {x : α} (h : stop (f c x) = true) (xs : List α) :
     takeThroughAcc f stop c (x :: xs) = [x] := by
   simp [takeThroughAcc, h]
 
-/-- **Accumulator-stopped prefix when the head update continues.** If the accumulator continues after the head update, the same updated accumulator processes the
+/-- If the accumulator continues after the head update, the same updated accumulator processes the
 tail. -/
 @[simp] theorem takeThroughAcc_cons_of_continue {α γ : Type*} {f : γ → α → γ}
     {stop : γ → Bool} {c : γ} {x : α} (h : stop (f c x) = false) (xs : List α) :
     takeThroughAcc f stop c (x :: xs) = x :: takeThroughAcc f stop (f c x) xs := by
   simp [takeThroughAcc, h]
 
-/-- **Accumulator-stopped list is a prefix of its source.** The accumulator-stopped list is a prefix of its source list. -/
+/-- The accumulator-stopped list is a prefix of its source list. -/
 theorem takeThroughAcc_prefix {α γ : Type*} (f : γ → α → γ) (stop : γ → Bool)
     (c : γ) (xs : List α) : takeThroughAcc f stop c xs <+: xs := by
   induction xs generalizing c with
@@ -63,12 +63,12 @@ theorem takeThroughAcc_prefix {α γ : Type*} (f : γ → α → γ) (stop : γ 
   | cons x xs ih =>
     cases h : stop (f c x) <;> simp [takeThroughAcc, h, ih]
 
-/-- **Members of an accumulator-stopped prefix lie in the list.** Every member of an accumulator-stopped prefix belongs to the source list. -/
+/-- Every member of an accumulator-stopped prefix belongs to the source list. -/
 theorem mem_of_mem_takeThroughAcc {α γ : Type*} {f : γ → α → γ} {stop : γ → Bool}
     {c : γ} {xs : List α} {x : α} (h : x ∈ takeThroughAcc f stop c xs) : x ∈ xs :=
   (takeThroughAcc_prefix f stop c xs).mem h
 
-/-- **Disjunction accumulator gives the inclusive first-hit prefix.** Accumulating disjunction from `false` gives the ordinary inclusive first-hit prefix. -/
+/-- Accumulating disjunction from `false` gives the ordinary inclusive first-hit prefix. -/
 theorem takeThroughAcc_or {α : Type*} (p : α → Bool) (xs : List α) :
     takeThroughAcc (fun found x => found || p x) id false xs = takeThrough p xs := by
   induction xs with
@@ -76,7 +76,7 @@ theorem takeThroughAcc_or {α : Type*} (p : α → Bool) (xs : List α) :
   | cons x xs ih =>
     cases h : p x <;> simp [takeThroughAcc, h, ih]
 
-/-- **First-witness accumulator gives the inclusive first-hit prefix.** Accumulating a projection of the first witness in an `Option` gives the ordinary inclusive
+/-- Accumulating a projection of the first witness in an `Option` gives the ordinary inclusive
 first-hit prefix. -/
 theorem takeThroughAcc_first {α β δ : Type*} (p : β → Bool) (v : α → β) (w : α → δ)
     (xs : List α) :
@@ -90,7 +90,7 @@ theorem takeThroughAcc_first {α β δ : Type*} (p : β → Bool) (v : α → β
   | cons x xs ih =>
     cases h : p (v x) <;> simp [takeThroughAcc, h, ih]
 
-/-- **First-witness fold over the inclusive first-hit prefix.** Folding the first-witness update over the inclusive tested prefix returns the first witness in
+/-- Folding the first-witness update over the inclusive tested prefix returns the first witness in
 the whole source list. -/
 theorem foldl_first_takeThrough {α β δ : Type*} (p : β → Bool) (v : α → β) (w : α → δ)
     (xs : List α) :
@@ -105,7 +105,7 @@ theorem foldl_first_takeThrough {α β δ : Type*} (p : β → Bool) (v : α →
   | cons x xs ih =>
     cases h : p (v x) <;> simp [h, ih]
 
-/-- **Accumulator-stopped prefix as a first-hit prefix of a scan.** The recursive ETH operation is the ordinary inclusive first-hit prefix of the elements paired
+/-- The recursive ETH operation is the ordinary inclusive first-hit prefix of the elements paired
 with their updated accumulators. -/
 theorem takeThroughAcc_eq_map_takeThrough_scanl {α γ : Type*} (f : γ → α → γ)
     (stop : γ → Bool) (c : γ) (xs : List α) :

@@ -56,13 +56,8 @@ theorem not_isUnit_of_isCompactOperator (hInf : ¬ FiniteDimensional 𝕜 E)
   rw [hid] at hcomp
   exact hInf (FiniteDimensional.of_isCompactOperator_id hcomp)
 
-/-- **A compact operator on an infinite-dimensional Banach space is not bijective.** Let $E$ be an
-infinite-dimensional Banach space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $T$ be a
-compact bounded linear operator on $E$. Then $T$ is not bijective.
-
-By the bounded inverse theorem, a bijective bounded operator on a Banach space has a bounded
-inverse, so this follows from the fact that a compact operator on an infinite-dimensional space
-has no bounded two-sided inverse. -/
+/-- **A compact operator on an infinite-dimensional Banach space is not
+bijective.** This is the bounded-inverse form of the previous statement. -/
 theorem not_bijective_of_isCompactOperator [CompleteSpace E]
     (hInf : ¬ FiniteDimensional 𝕜 E) (T : E →L[𝕜] E)
     (hT : IsCompactOperator (T : E → E)) : ¬ Function.Bijective T := by
@@ -70,10 +65,8 @@ theorem not_bijective_of_isCompactOperator [CompleteSpace E]
   exact not_isUnit_of_isCompactOperator hInf T hT
     (ContinuousLinearMap.isUnit_iff_bijective.mpr hBij)
 
-/-- **Zero lies in the spectrum of a compact operator on an infinite-dimensional space.** Let $E$ be
-an infinite-dimensional normed space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $T$ be
-a compact bounded linear operator on $E$. Then $0$ lies in the spectrum of $T$ in the algebra of
-bounded linear operators on $E$; that is, $T$ has no bounded two-sided inverse. -/
+/-- **Zero lies in the spectrum of a compact operator on an
+infinite-dimensional space.** -/
 theorem zero_mem_spectrum_of_isCompactOperator (hInf : ¬ FiniteDimensional 𝕜 E)
     (T : E →L[𝕜] E) (hT : IsCompactOperator (T : E → E)) :
     (0 : 𝕜) ∈ spectrum 𝕜 T :=

@@ -130,7 +130,7 @@ theorem jfd_deleted_adj_of_exterior (H : SimpleGraph (Site 2)) (R : ℕ) (f0 g0 
     · exact hane f0 hf0 h1
     · exact hane g0 hg0 h1
 
-/-- **Exterior of a box maps into the face-region graph.** For `H` and `f0g0` inside `[-R, R]²`, the lattice on the exterior of `[-(R + 1), R + 1]²`
+/-- For `H` and `f0g0` inside `[-R, R]²`, the lattice on the exterior of `[-(R + 1), R + 1]²`
 maps into the face-region graph of `H` with `f0g0` deleted. -/
 noncomputable def jfd_extToDeletedHom (H : SimpleGraph (Site 2)) (R : ℕ) (f0 g0 : Site 2)
     (hHR : ∀ v ∈ H.support, v ∈ box 2 R) (hf0 : f0 ∈ box 2 R) (hg0 : g0 ∈ box 2 R) :

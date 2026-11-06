@@ -25,8 +25,7 @@ A prime `p` is Wieferich to base two when `p ^ 2` divides `2 ^ (p - 1) - 1`.
 
 namespace Nat
 
-/-- **Wieferich primes.** A natural number $p$ is a Wieferich prime (to base $2$) if $p$ is
-prime and $p^2$ divides $2^{p-1} - 1$. -/
+/-- A prime `p` is Wieferich to base two if `p ^ 2 ∣ 2 ^ (p - 1) - 1`. -/
 def IsWieferichPrime (p : ℕ) : Prop :=
   p.Prime ∧ p ^ 2 ∣ 2 ^ (p - 1) - 1
 
@@ -34,15 +33,13 @@ instance decidableIsWieferichPrime (p : ℕ) : Decidable p.IsWieferichPrime := b
   unfold IsWieferichPrime
   infer_instance
 
-/-- **Wieferich primes via congruences.** For every natural number $p$, $p$ is a Wieferich prime
-if and only if $p$ is prime and $2^{p-1} \equiv 1 \pmod{p^2}$. -/
+/-- The divisibility and modular-congruence forms of the base-two Wieferich condition agree. -/
 theorem isWieferichPrime_iff_modEq (p : ℕ) :
     p.IsWieferichPrime ↔ p.Prime ∧ 2 ^ (p - 1) ≡ 1 [MOD p ^ 2] := by
   rw [IsWieferichPrime, Nat.ModEq.comm,
     Nat.modEq_iff_dvd' (Nat.one_le_pow (p - 1) 2 (by decide))]
 
-/-- **Wieferich primes via remainders.** For every natural number $p$, $p$ is a Wieferich prime
-if and only if $p$ is prime and the remainder of $2^{p-1}$ on division by $p^2$ is $1$. -/
+/-- The base-two Wieferich condition written using natural-number remainder. -/
 theorem isWieferichPrime_iff_mod (p : ℕ) :
     p.IsWieferichPrime ↔ p.Prime ∧ 2 ^ (p - 1) % (p ^ 2) = 1 := by
   rw [isWieferichPrime_iff_modEq, Nat.ModEq]

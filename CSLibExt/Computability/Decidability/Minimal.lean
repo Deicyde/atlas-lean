@@ -45,22 +45,14 @@ namespace Cslib.Decidability
 open Computability Encodable Denumerable
 open Nat.Partrec (Code)
 
-/-- **Description length of a code.** For a code $c$ of a partial recursive function, the
-description length of $c$ is the number of binary digits of the encoding of $c$ as a natural
-number, that is, the least $k$ such that this encoding is less than $2^k$ (so it is $0$ when the
-encoding is $0$). -/
+/-- The description length of a code: the number of binary digits of its encoding. -/
 def descLength (c : Code) : ℕ := Nat.size (encode c)
 
-/-- **Minimal codes.** A code $c$ of a partial recursive function is minimal when no code with a
-shorter description has the same domain: for every code $d$ whose description length is strictly
-less than that of $c$, the domain of $d$ (the set of inputs on which its evaluation is defined)
-differs from the domain of $c$. The set of minimal codes is denoted $\mathrm{MIN}$. -/
+/-- `MIN`: codes such that no code with a shorter description has the same domain (language). -/
 def MinimalCode (c : Code) : Prop :=
   ∀ d : Code, descLength d < descLength c → d.eval.Dom ≠ c.eval.Dom
 
-/-- **Codes with singleton domain.** For every natural number $n$ there is a code $c$ of a partial
-recursive function whose evaluation is defined exactly at $n$, that is, the domain of the partial
-function computed by $c$ is $\{n\}$. -/
+/-- A code with domain `{n}`. -/
 theorem exists_code_dom_singleton (n : ℕ) : ∃ c : Code, c.eval.Dom = {n} := by
   have : Partrec fun x : ℕ ↦ cond (decide (x = n)) (Part.some 0) Part.none :=
     Partrec.cond (Primrec.eq.comp Primrec.id (Primrec.const n)).decide.to_comp
@@ -71,9 +63,8 @@ theorem exists_code_dom_singleton (n : ℕ) : ∃ c : Code, c.eval.Dom = {n} := 
   rw [hc]
   by_cases hx : x = n <;> simp [hx]
 
-/-- **Every language of a code has a minimal code.** For every code $c$ of a partial recursive
-function there is a minimal code $D$ whose domain equals the domain of $c$, where the domain of a
-code is the set of inputs on which its evaluation is defined. -/
+/-- Every language of a code has a minimal code: one with the least encoding, which in particular
+has the shortest description. -/
 theorem exists_minimalCode_dom (c : Code) :
     ∃ D : Code, MinimalCode D ∧ D.eval.Dom = c.eval.Dom := by
   classical
@@ -84,8 +75,7 @@ theorem exists_minimalCode_dom (c : Code) :
     lt_of_not_ge fun hle ↦ absurd (Nat.size_le_size hle) (not_le.mpr hd)
   exact Nat.find_min hex (hDk ▸ hlt) ⟨d, rfl, hdD.trans hD⟩
 
-/-- **Minimal codes are unbounded.** For every natural number $N$ there is a minimal code $D$ of a
-partial recursive function whose encoding as a natural number is greater than $N$. -/
+/-- **Minimal codes are unbounded.** -/
 theorem exists_minimalCode_gt (N : ℕ) : ∃ D : Code, MinimalCode D ∧ N < encode D := by
   choose c hc using exists_code_dom_singleton
   choose D hDmin hDdom using fun n ↦ exists_minimalCode_dom (c n)
@@ -98,12 +88,7 @@ theorem exists_minimalCode_gt (N : ℕ) : ∃ D : Code, MinimalCode D ∧ N < en
   exact Set.infinite_range_of_injective hinj
     ((Set.finite_le_nat N).subset (Set.range_subset_iff.mpr fun n ↦ H _ (hDmin n)))
 
-/-- **Minimal codes are not recognizable.** The set $\mathrm{MIN}$ of minimal codes of partial
-recursive functions is not recognizable by a multi-stack Turing machine: there is no finite
-multi-stack machine that, for every code $c$, halts on the binary encoding of the natural-number
-encoding of $c$ exactly when $c$ is minimal.
-
-Source: M. Sipser, Introduction to the Theory of Computation, 3rd ed., Theorem 6.7. -/
+/-- **`MIN` is not recognizable** (Sipser, Theorem 6.7). -/
 theorem not_tm2Recognizable_minimalCode : ¬TM2Recognizable MinimalCode := by
   intro h
   have hre : REPred MinimalCode := tm2Recognizable_iff_rePred.mp h

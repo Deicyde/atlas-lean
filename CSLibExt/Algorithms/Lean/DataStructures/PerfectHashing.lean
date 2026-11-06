@@ -69,15 +69,11 @@ namespace Cslib.Algorithms.Lean
 universe u v
 
 /--
-**Two-level perfect hash table.** Fix a type $\alpha$ of keys, a type $\beta$ of values and a
-primary hash function $h : \alpha \to \mathbb{N}$. A two-level (FKS) perfect hash table consists
-of a number $b > 0$ of buckets and, for each bucket $i < b$, a secondary size $m_i \in \mathbb{N}$,
-a secondary hash function $h_i : \alpha \to \mathbb{N}$ and a secondary table of $m_i$ slots, each
-of which is empty or holds one binding $(k, v)$ with $k \in \alpha$ and $v \in \beta$.
-
-The intended position of a key $k$ is slot $h_i(k) \bmod m_i$ of bucket $i = h(k) \bmod b$. The
-structure itself imposes no condition on the hash functions and does not require bindings to sit
-at their intended positions; that requirement is the separate validity condition.
+A static two-level (FKS) hash table. The primary hash selects a bucket
+`primaryHash k % bucketCount`; inside bucket `i`, the secondary hash selects the slot
+`secondaryHash i k % secondarySize i` of a table with one binding per slot. No
+existence or expected-time claim about the hash functions is made; correctness is
+conditioned on `PerfectHashing.Valid`.
 -/
 public structure PerfectHashing (α : Type u) (β : Type v) (primaryHash : α → Nat) where
   /-- The positive number of primary buckets. -/
@@ -100,12 +96,9 @@ private def primaryIndex (table : PerfectHashing α β primaryHash) (key : α) :
   ⟨primaryHash key % table.bucketCount, Nat.mod_lt _ table.bucketCount_pos⟩
 
 /--
-**Lookup in a perfect hash table.** To look up a key $k$ in a two-level perfect hash table with
-$b$ buckets, primary hash $h$, secondary sizes $m_i$ and secondary hashes $h_i$, let
-$i = h(k) \bmod b$. If $m_i = 0$, the lookup returns nothing. Otherwise it inspects the single slot
-$h_i(k) \bmod m_i$ of the secondary table of bucket $i$: if that slot holds a binding $(k, v)$, the
-lookup returns $v$; if the slot is empty or holds a binding with a different key, the lookup
-returns nothing.
+Looks up a key by evaluating the primary and secondary hashes and inspecting the
+single selected slot. Returns the stored value when that slot holds the key, and
+`none` otherwise (in particular when the bucket's secondary table is empty).
 -/
 public def lookup [DecidableEq α] (key : α) (table : PerfectHashing α β primaryHash) :
     Option β :=
@@ -133,11 +126,7 @@ private theorem lookup_def [DecidableEq α] (key : α)
         none :=
   rfl
 
-/-- **Empty perfect hash table.** Given a primary hash function $h$ from keys to natural
-numbers, a number of buckets $b > 0$, and for each bucket $i < b$ a secondary table size $m_i$
-and a secondary hash function $h_i$, the empty table is the two-level perfect hash table with
-primary hash $h$, $b$ buckets, secondary sizes $m_i$ and secondary hashes $h_i$ in which every
-slot of every secondary table is vacant. -/
+/-- The empty table for the given bucket sizes and secondary hash functions. -/
 public def empty (primaryHash : α → Nat) (bucketCount : Nat)
     (bucketCount_pos : 0 < bucketCount) (secondarySize : Fin bucketCount → Nat)
     (secondaryHash : Fin bucketCount → α → Nat) :
@@ -160,35 +149,30 @@ private theorem empty_get (bucketCount : Nat) (bucketCount_pos : 0 < bucketCount
       PerfectHashing α β primaryHash).secondaryTable i).get j = none :=
   Vector.getElem_replicate j.isLt
 
-/-- **Bindings stored in a perfect hash table.** A key $k$ and a value $v$ are stored in a
-two-level perfect hash table $T$ when some secondary slot, in some bucket of $T$, holds the
-binding $(k, v)$. -/
+/-- Whether some secondary slot, in any bucket, holds the binding `(key, value)`. -/
 public def Stored (table : PerfectHashing α β primaryHash) (key : α) (value : β) :
     Prop :=
   ∃ (i : Fin table.bucketCount) (j : Fin (table.secondarySize i)),
     (table.secondaryTable i).get j = some (key, value)
 
-/-- **Entries of a perfect hash table.** The entries of a two-level perfect hash table form
-the list of the bindings $(k, v)$ held in its occupied secondary slots, listed bucket by bucket
-in increasing bucket order and, within each bucket, in increasing slot order.
-
-A pair $(k, v)$ is a member of this list exactly when it is held in some slot of the table. -/
+/--
+The bucket-independent contents of the table as a list: every occupied secondary
+slot, bucket by bucket. Stored bindings are exactly the members of this list
+(`mem_entries_iff`).
+-/
 public def entries (table : PerfectHashing α β primaryHash) : List (α × β) :=
   (List.finRange table.bucketCount).flatMap fun i =>
     (List.finRange (table.secondarySize i)).filterMap fun j =>
       (table.secondaryTable i).get j
 
 /--
-**Valid perfect hash table.** Let $T$ be a two-level perfect hash table with primary hash $h$,
-$b$ buckets, secondary table sizes $m_i$ and secondary hashes $g_i$. Then $T$ is valid when two
-conditions hold. Placement: whenever slot $j$ of bucket $i$ holds a binding $(k, v)$, we have
-$i = h(k) \bmod b$ and $j = g_i(k) \bmod m_i$. Injectivity: for every bucket $i$, if keys $k_1$
-and $k_2$ both occur in bindings stored in bucket $i$ and $g_i(k_1) \bmod m_i = g_i(k_2) \bmod m_i$,
-then $k_1 = k_2$.
-
-The injectivity condition follows from placement. It is recorded separately because choosing
-secondary hash functions that are injective on each bucket's keys is the task of the FKS
-construction.
+The correctness invariant of a two-level table. `placed` says every stored binding
+lies in the bucket selected by the primary hash for its key, at the slot selected by
+that bucket's secondary hash. `injective` says each secondary hash is injective, as
+a slot selector, on the keys stored in its bucket: no two stored keys of one bucket
+collide. The second clause follows from the first (`Valid.injective_of_placed`); it
+is recorded separately because choosing such injective secondary hashes is the task
+of the FKS construction.
 -/
 public structure Valid (table : PerfectHashing α β primaryHash) : Prop where
   /-- Every binding sits at the slot its key hashes to at both levels. -/
@@ -210,12 +194,11 @@ public structure Valid (table : PerfectHashing α β primaryHash) : Prop where
 
 namespace Valid
 
-/-- **Placement implies secondary injectivity.** Let $T$ be a two-level perfect hash table
-with $b$ buckets and primary hash $h$, and for each bucket $i$ let $m_i$ be its secondary table
-size and $h_i$ its secondary hash. Suppose every binding $(k, v)$ held in slot $j$ of bucket $i$
-satisfies $h(k) \bmod b = i$ and $j = h_i(k) \bmod m_i$. Then for every bucket $i$ and all keys
-$k_1, k_2$ that are each held, with some value, in some slot of bucket $i$, if
-$h_i(k_1) \bmod m_i = h_i(k_2) \bmod m_i$, then $k_1 = k_2$. -/
+/--
+Placement implies secondary injectivity on stored keys: if two stored keys of one
+bucket selected the same slot, both bindings would have to occupy that slot, so the
+bindings, and in particular the keys, are equal.
+-/
 public theorem injective_of_placed {table : PerfectHashing α β primaryHash}
     (placed : ∀ (i : Fin table.bucketCount) (j : Fin (table.secondarySize i))
       (key : α) (value : β),
@@ -244,10 +227,7 @@ public theorem injective_of_placed {table : PerfectHashing α β primaryHash}
   have hpair : (key₁, value₁) = (key₂, value₂) := Option.some_inj.mp hslot₂
   exact congrArg Prod.fst hpair
 
-/-- **Placement suffices for validity of a perfect hash table.** Let $T$ be a two-level perfect
-hash table with $b$ buckets, primary hash $h$, secondary sizes $m_i$ and secondary hashes $h_i$.
-If, whenever slot $j$ of the secondary table of bucket $i$ holds a binding $(k, v)$, we have
-$h(k) \bmod b = i$ and $j = h_i(k) \bmod m_i$, then $T$ is valid. -/
+/-- A table satisfying the placement clause is valid. -/
 public theorem mk_of_placed {table : PerfectHashing α β primaryHash}
     (placed : ∀ (i : Fin table.bucketCount) (j : Fin (table.secondarySize i))
       (key : α) (value : β),
@@ -260,19 +240,13 @@ public theorem mk_of_placed {table : PerfectHashing α β primaryHash}
 
 end Valid
 
-/-- **Entries of a perfect hash table are its stored bindings.** For every two-level perfect hash
-table, every key $k$ and every value $v$, the pair $(k, v)$ belongs to the list of entries of the
-table (the contents of its occupied secondary slots, bucket by bucket) if and only if some
-secondary slot of the table holds the binding $(k, v)$. -/
+/-- The list abstraction `entries` contains exactly the stored bindings. -/
 public theorem mem_entries_iff (table : PerfectHashing α β primaryHash) (key : α)
     (value : β) :
     (key, value) ∈ table.entries ↔ Stored table key value := by
   simp [entries, Stored]
 
-/-- **The empty perfect hash table is valid.** For every primary hash function, every positive
-number of buckets, and every choice of secondary table sizes and secondary hash functions, the
-empty two-level perfect hash table with these parameters is valid: no slot is occupied, so both
-conditions of validity hold vacuously. -/
+/-- The empty table is valid: no slot is occupied, so both clauses are vacuous. -/
 public theorem valid_empty (bucketCount : Nat) (bucketCount_pos : 0 < bucketCount)
     (secondarySize : Fin bucketCount → Nat)
     (secondaryHash : Fin bucketCount → α → Nat) :
@@ -283,10 +257,7 @@ public theorem valid_empty (bucketCount : Nat) (bucketCount_pos : 0 < bucketCoun
   rw [empty_get] at h
   exact absurd h (by simp)
 
-/-- **The empty perfect hash table stores nothing.** For every primary hash function, every number
-$b > 0$ of buckets, every choice of secondary sizes and secondary hash functions, every key $k$
-and every value $v$, no secondary slot of the empty two-level perfect hash table with these data
-holds the binding $(k, v)$. -/
+/-- Nothing is stored in the empty table. -/
 public theorem not_stored_empty (bucketCount : Nat) (bucketCount_pos : 0 < bucketCount)
     (secondarySize : Fin bucketCount → Nat)
     (secondaryHash : Fin bucketCount → α → Nat) (key : α) (value : β) :
@@ -297,9 +268,8 @@ public theorem not_stored_empty (bucketCount : Nat) (bucketCount_pos : 0 < bucke
   exact absurd h (by simp)
 
 /--
-**Soundness of perfect-hash lookup.** For a two-level perfect hash table with decidable equality
-on keys, and with no validity hypothesis, if looking up a key $k$ returns a value $v$, then some
-secondary slot of the table holds the binding $(k, v)$.
+Soundness of lookup, with no validity hypothesis: a successful lookup only returns a
+value that is actually stored alongside the key in some secondary slot.
 -/
 public theorem stored_of_lookup_eq_some [DecidableEq α]
     {table : PerfectHashing α β primaryHash} {key : α} {value : β}
@@ -329,8 +299,10 @@ public theorem stored_of_lookup_eq_some [DecidableEq α]
   · rw [dite_eq_right hs] at h
     exact absurd h (by simp)
 
-/-- **Lookup finds every stored binding.** For a valid two-level perfect hash table, if the
-binding $(k, v)$ is held in some slot of the table, then looking up $k$ returns $v$. -/
+/--
+Completeness of lookup under `Valid`: a stored binding is found, because placement
+puts it in exactly the bucket and slot that lookup probes.
+-/
 public theorem lookup_eq_some_of_stored [DecidableEq α]
     {table : PerfectHashing α β primaryHash} (valid : Valid table) {key : α}
     {value : β} (h : Stored table key value) :
@@ -351,12 +323,9 @@ public theorem lookup_eq_some_of_stored [DecidableEq α]
   rw [hidx, hj]
   simp
 
-/-- **Stored values in a valid perfect hash table are unique.** In a valid two-level perfect hash
-table, if some secondary slots hold bindings $(k, v_1)$ and $(k, v_2)$ with the same key $k$, then
-$v_1 = v_2$.
-
-This is a direct consequence of placement (both bindings would occupy the one slot their shared
-key hashes to), so it needs no decidable equality on keys. -/
+/-- Under `Valid`, the stored value for a key is unique when it exists. This is
+a direct consequence of placement (both bindings would occupy the one slot their
+shared key hashes to), so it needs no decidable equality on keys. -/
 public theorem stored_unique
     {table : PerfectHashing α β primaryHash} (valid : Valid table) {key : α}
     {value₁ value₂ : β} (h₁ : Stored table key value₁)
@@ -372,9 +341,7 @@ public theorem stored_unique
   rw [hj₁] at hj₂
   exact (Prod.mk.injEq _ _ _ _).mp (Option.some_inj.mp hj₂) |>.2
 
-/-- **Lookup fails exactly on unstored keys.** For a valid two-level perfect hash table and
-any key $k$, looking up $k$ returns no value if and only if there is no value $v$ such that the
-binding $(k, v)$ is held in some slot of the table. -/
+/-- Under `Valid`, lookup fails exactly on keys that are not stored. -/
 public theorem lookup_eq_none_iff [DecidableEq α]
     {table : PerfectHashing α β primaryHash} (valid : Valid table) (key : α) :
     lookup key table = none ↔ ∀ value : β, ¬ Stored table key value := by
@@ -387,25 +354,20 @@ public theorem lookup_eq_none_iff [DecidableEq α]
     | none => rfl
     | some value => exact absurd (stored_of_lookup_eq_some hlookup) (h value)
 
-/-- **Lookup finds every entry.** For a valid two-level perfect hash table, if the pair
-$(k, v)$ belongs to the list of entries of the table, then looking up $k$ returns $v$. -/
+/-- Lookup completeness phrased against the list abstraction `entries`. -/
 public theorem lookup_eq_some_of_mem_entries [DecidableEq α]
     {table : PerfectHashing α β primaryHash} (valid : Valid table) {key : α}
     {value : β} (h : (key, value) ∈ table.entries) :
     lookup key table = some value :=
   lookup_eq_some_of_stored valid ((mem_entries_iff table key value).mp h)
 
-/-- **Successful perfect-hash lookups return entries.** For a two-level perfect hash table with
-decidable equality on keys, if looking up a key $k$ returns a value $v$, then $(k, v)$ belongs to
-the list of entries of the table. No validity hypothesis is needed. -/
+/-- Lookup soundness phrased against the list abstraction `entries`. -/
 public theorem mem_entries_of_lookup_eq_some [DecidableEq α]
     {table : PerfectHashing α β primaryHash} {key : α} {value : β}
     (h : lookup key table = some value) : (key, value) ∈ table.entries :=
   (mem_entries_iff table key value).mpr (stored_of_lookup_eq_some h)
 
-/-- **Lookup in the empty perfect hash table fails.** For every primary hash function, every
-number of buckets $b > 0$, all secondary table sizes and secondary hash functions, and every
-key $k$, looking up $k$ in the empty table returns no value. -/
+/-- Looking up any key in the empty table returns `none`. -/
 @[simp]
 public theorem lookup_empty [DecidableEq α] (bucketCount : Nat)
     (bucketCount_pos : 0 < bucketCount) (secondarySize : Fin bucketCount → Nat)
@@ -417,9 +379,7 @@ public theorem lookup_empty [DecidableEq α] (bucketCount : Nat)
     (fun value => not_stored_empty bucketCount bucketCount_pos secondarySize
       secondaryHash key value)
 
-/-- **The empty perfect hash table has no entries.** For every primary hash function, every
-number of buckets $b > 0$, and all secondary table sizes and secondary hash functions, the list
-of entries of the empty table is the empty list. -/
+/-- The empty table has no entries. -/
 @[simp]
 public theorem entries_empty (bucketCount : Nat) (bucketCount_pos : 0 < bucketCount)
     (secondarySize : Fin bucketCount → Nat)
@@ -431,37 +391,28 @@ public theorem entries_empty (bucketCount : Nat) (bucketCount_pos : 0 < bucketCo
   exact not_stored_empty bucketCount bucketCount_pos secondarySize secondaryHash
     key value ((mem_entries_iff _ key value).mp hmem)
 
-/-- **Occupancy of a perfect-hashing bucket.** For a two-level perfect hash table and a bucket
-$i$, the occupancy $n_i$ of bucket $i$ is the number of slots of the secondary table of bucket
-$i$ that hold a binding. It is the $n_i$ of the Fredman–Komlós–Szemerédi analysis. -/
+/-- The number of occupied slots of bucket `i`, the `nᵢ` of the FKS analysis. -/
 public def bucketSize (table : PerfectHashing α β primaryHash)
     (i : Fin table.bucketCount) : Nat :=
   ((List.finRange (table.secondarySize i)).filter fun j =>
     ((table.secondaryTable i).get j).isSome).length
 
-/-- **Total number of keys of a perfect hash table.** For a two-level perfect hash table, write
-$n_i$ for the number of occupied secondary slots of bucket $i$. The total number of keys of the
-table is $\sum_i n_i$, the number of occupied secondary slots over all buckets. -/
+/-- The total number of stored keys, `∑ i, nᵢ`. -/
 public def totalKeys (table : PerfectHashing α β primaryHash) : Nat :=
   ∑ i : Fin table.bucketCount, bucketSize table i
 
-/-- **Total secondary space of a perfect hash table.** For a two-level perfect hash table, write
-$m_i$ for the number of slots of the secondary table of bucket $i$. The total secondary space of
-the table is $\sum_i m_i$, the number of secondary slots over all buckets. -/
+/-- The total secondary space: the total number of secondary slots, `∑ i, mᵢ`. -/
 public def totalSecondarySpace (table : PerfectHashing α β primaryHash) : Nat :=
   ∑ i : Fin table.bucketCount, table.secondarySize i
 
 /--
-**FKS square sizing rule.** A two-level perfect hash table with $b$ buckets is square-sized when,
-for every bucket $i < b$, the size $m_i$ of its secondary table equals $n_i^2$, where $n_i$ is the
-number of occupied slots of that secondary table.
+The FKS sizing rule: every bucket's secondary table has size the square of the
+number of keys in the bucket, `mᵢ = nᵢ²`.
 -/
 public def SquareSized (table : PerfectHashing α β primaryHash) : Prop :=
   ∀ i : Fin table.bucketCount, table.secondarySize i = (bucketSize table i) ^ 2
 
-/-- **Bucket occupancy is at most the secondary table size.** For every two-level perfect
-hash table and every bucket $i$, the number $n_i$ of occupied slots of bucket $i$ is at most
-the number $m_i$ of slots of the secondary table of bucket $i$. -/
+/-- A bucket cannot hold more bindings than it has slots. -/
 public theorem bucketSize_le_secondarySize (table : PerfectHashing α β primaryHash)
     (i : Fin table.bucketCount) :
     bucketSize table i ≤ table.secondarySize i := by
@@ -472,18 +423,13 @@ public theorem bucketSize_le_secondarySize (table : PerfectHashing α β primary
         List.length_filter_le _ _
     _ = table.secondarySize i := List.length_finRange
 
-/-- **Each secondary table fits in the total secondary space.** In a two-level perfect hash table
-with $b$ buckets and secondary sizes $m_0, \dots, m_{b-1}$, every bucket $i < b$ satisfies
-$m_i \le \sum_{j < b} m_j$, the total secondary space. -/
+/-- Each bucket's secondary size is dominated by the total secondary space. -/
 public theorem secondarySize_le_totalSecondarySpace
     (table : PerfectHashing α β primaryHash) (i : Fin table.bucketCount) :
     table.secondarySize i ≤ totalSecondarySpace table :=
   Finset.single_le_sum (fun _ _ => Nat.zero_le _) (Finset.mem_univ i)
 
-/-- **Total secondary space under square sizing.** Let $T$ be a two-level perfect hash table
-satisfying the FKS sizing rule, and write $n_i$ for the number of occupied secondary slots of
-bucket $i$. Then the total secondary space of $T$ equals $\sum_i n_i^2$, the sum over all
-buckets $i$. -/
+/-- Under the FKS sizing rule, the total secondary space is the sum of squares `∑ i, nᵢ²`. -/
 public theorem totalSecondarySpace_eq_sum_sq
     {table : PerfectHashing α β primaryHash} (hsq : SquareSized table) :
     totalSecondarySpace table =
@@ -491,12 +437,10 @@ public theorem totalSecondarySpace_eq_sum_sq
   Finset.sum_congr rfl fun i _ => hsq i
 
 /--
-**Quadratic space bound under square sizing.** If a two-level perfect hash table satisfies the
-FKS sizing rule, then its total secondary space is at most the square of its total number of
-keys.
-
-This is weaker than the linear space bound of Fredman, Komlós and Szemerédi, which also depends
-on the choice of a good primary hash function.
+Elementary space bound under the FKS sizing rule: the total secondary space
+`∑ i, nᵢ²` is at most `(∑ i, nᵢ)²`, the square of the total number of keys. The
+linear bound `∑ i, nᵢ² = O(n)` of FKS additionally requires a good primary hash
+function, whose existence is a probabilistic statement not proved here.
 -/
 public theorem totalSecondarySpace_le_totalKeys_sq
     {table : PerfectHashing α β primaryHash} (hsq : SquareSized table) :

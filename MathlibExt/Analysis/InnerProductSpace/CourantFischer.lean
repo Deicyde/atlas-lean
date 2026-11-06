@@ -77,13 +77,13 @@ variable {𝕜 : Type*} [RCLike 𝕜]
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace 𝕜 E]
   [FiniteDimensional 𝕜 E]
 
-/-- **Rayleigh form of an operator.** The Rayleigh form of a vector for an operator `T`: `re ⟪T x, x⟫`.
+/-- The Rayleigh form of a vector for an operator `T`: `re ⟪T x, x⟫`.
 On unit vectors this is the Rayleigh quotient. -/
 noncomputable def rayleighForm (T : E →ₗ[𝕜] E) (x : E) : ℝ :=
   RCLike.re ⟪T x, x⟫_𝕜
 
 omit [FiniteDimensional 𝕜 E] in
-/-- **Rayleigh form scales quadratically.** Scaling a vector by a real scalar scales the Rayleigh form by the
+/-- Scaling a vector by a real scalar scales the Rayleigh form by the
 square of the scalar. -/
 theorem rayleighForm_smul (T : E →ₗ[𝕜] E) (c : ℝ) (x : E) :
     rayleighForm T ((c : 𝕜) • x) = c ^ 2 * rayleighForm T x := by
@@ -94,7 +94,7 @@ theorem rayleighForm_smul (T : E →ₗ[𝕜] E) (c : ℝ) (x : E) :
 variable {T : E →ₗ[𝕜] E} (hT : T.IsSymmetric) {n : ℕ}
   (hn : Module.finrank 𝕜 E = n)
 
-/-- **Eigenbasis expansion of the quadratic form of a self-adjoint operator.** Expansion of `⟪x, T x⟫` in the orthonormal eigenbasis: a weighted sum
+/-- Expansion of `⟪x, T x⟫` in the orthonormal eigenbasis: a weighted sum
 of the eigenvalues with weights `‖⟪eᵢ, x⟫‖²`. -/
 theorem inner_self_apply_eq_expansion (x : E) :
     ⟪x, T x⟫_𝕜 = ((∑ i : Fin n, hT.eigenvalues hn i *
@@ -122,7 +122,7 @@ theorem inner_self_apply_eq_expansion (x : E) :
           mul_assoc, RCLike.mul_conj]
         simp [RCLike.ofReal_mul, RCLike.ofReal_pow]
 
-/-- **Eigenbasis expansion of the Rayleigh form.** The Rayleigh form expanded in the orthonormal eigenbasis. -/
+/-- The Rayleigh form expanded in the orthonormal eigenbasis. -/
 theorem rayleighForm_eq_expansion (x : E) :
     rayleighForm T x = ∑ i : Fin n, hT.eigenvalues hn i *
       ‖⟪(hT.eigenvectorBasis hn) i, x⟫_𝕜‖ ^ 2 := by
@@ -131,7 +131,7 @@ theorem rayleighForm_eq_expansion (x : E) :
   unfold rayleighForm
   rw [h2, h1, RCLike.conj_ofReal, RCLike.ofReal_re]
 
-/-- **Span of some eigenvectors is orthogonal to the remaining ones.** A vector in the span of some of the eigenvectors is orthogonal to the
+/-- A vector in the span of some of the eigenvectors is orthogonal to the
 remaining eigenvectors. -/
 theorem inner_eigenvectorBasis_eq_zero_of_mem_span {m : ℕ} {v : Fin m → E}
     {x : E} (hx : x ∈ Submodule.span 𝕜 (Set.range v)) {i : Fin n}
@@ -144,17 +144,17 @@ theorem inner_eigenvectorBasis_eq_zero_of_mem_span {m : ℕ} {v : Fin m → E}
   · rw [inner_add_right, hy, hz, add_zero]
   · rw [inner_smul_right, hy, mul_zero]
 
-/-- **Tail of an orthonormal eigenbasis.** The tail of the eigenbasis: the eigenvectors with index `≥ k`,
+/-- The tail of the eigenbasis: the eigenvectors with index `≥ k`,
 as a family indexed by `Fin (n - k)`. -/
 noncomputable def tailFamily {k : ℕ} (hk : k < n) : Fin (n - k) → E :=
   fun j => (hT.eigenvectorBasis hn) ⟨k + j.val, by have hj := j.isLt; omega⟩
 
-/-- **Head of an orthonormal eigenbasis.** The head of the eigenbasis: the eigenvectors with index `≤ k`,
+/-- The head of the eigenbasis: the eigenvectors with index `≤ k`,
 as a family indexed by `Fin (k + 1)`. -/
 noncomputable def headFamily {k : ℕ} (hk : k < n) : Fin (k + 1) → E :=
   fun j => (hT.eigenvectorBasis hn) ⟨j.val, by have hj := j.isLt; omega⟩
 
-/-- **Linear independence of the eigenbasis tail.** The tail family is linearly independent, as a restriction of the
+/-- The tail family is linearly independent, as a restriction of the
 orthonormal eigenbasis. -/
 theorem tailFamily_linearIndependent {k : ℕ} (hk : k < n) :
     LinearIndependent 𝕜 (tailFamily hT hn hk) := by
@@ -166,7 +166,7 @@ theorem tailFamily_linearIndependent {k : ℕ} (hk : k < n) :
       exact Fin.ext (Nat.add_left_cancel h))
   exact hcomp
 
-/-- **Linear independence of the eigenbasis head.** The head family is linearly independent, as a restriction of the
+/-- The head family is linearly independent, as a restriction of the
 orthonormal eigenbasis. -/
 theorem headFamily_linearIndependent {k : ℕ} (hk : k < n) :
     LinearIndependent 𝕜 (headFamily hT hn hk) := by
@@ -178,19 +178,19 @@ theorem headFamily_linearIndependent {k : ℕ} (hk : k < n) :
       exact Fin.ext h)
   exact hcomp
 
-/-- **Dimension of the span of the eigenbasis tail.** The span of the tail of the eigenbasis has dimension `n - k`. -/
+/-- The span of the tail of the eigenbasis has dimension `n - k`. -/
 theorem finrank_span_tailFamily {k : ℕ} (hk : k < n) :
     Module.finrank 𝕜 (Submodule.span 𝕜 (Set.range (tailFamily hT hn hk))) = n - k := by
   rw [finrank_span_eq_card (tailFamily_linearIndependent hT hn hk)]
   simp
 
-/-- **Dimension of the span of the eigenbasis head.** The span of the head of the eigenbasis has dimension `k + 1`. -/
+/-- The span of the head of the eigenbasis has dimension `k + 1`. -/
 theorem finrank_span_headFamily {k : ℕ} (hk : k < n) :
     Module.finrank 𝕜 (Submodule.span 𝕜 (Set.range (headFamily hT hn hk))) = k + 1 := by
   rw [finrank_span_eq_card (headFamily_linearIndependent hT hn hk)]
   simp
 
-/-- **Upper bound for the Rayleigh form on the eigenbasis tail.** On the span of the tail of the eigenbasis, the Rayleigh form is at
+/-- On the span of the tail of the eigenbasis, the Rayleigh form is at
 most `λₖ * ‖x‖²`. -/
 theorem rayleighForm_le_of_mem_tail {k : ℕ} (hk : k < n) {x : E}
     (hx : x ∈ Submodule.span 𝕜 (Set.range (tailFamily hT hn hk))) :
@@ -239,7 +239,7 @@ theorem rayleighForm_le_of_mem_tail {k : ℕ} (hk : k < n) {x : E}
     _ = Λ ⟨k, hk⟩ * ‖x‖ ^ 2 := by
         rw [← hweights, Finset.mul_sum]
 
-/-- **Lower bound for the Rayleigh form on the eigenbasis head.** On the span of the head of the eigenbasis, the Rayleigh form is at
+/-- On the span of the head of the eigenbasis, the Rayleigh form is at
 least `λₖ * ‖x‖²`. -/
 theorem rayleighForm_ge_of_mem_head {k : ℕ} (hk : k < n) {x : E}
     (hx : x ∈ Submodule.span 𝕜 (Set.range (headFamily hT hn hk))) :
@@ -287,7 +287,7 @@ theorem rayleighForm_ge_of_mem_head {k : ℕ} (hk : k < n) {x : E}
           hT.eigenvalues_antitone hn (Fin.le_def.mpr hi.2)
         exact mul_le_mul_of_nonneg_right hle (by positivity)
 
-/-- **The k-th eigenvector attains the Rayleigh bound on the tail.** The `k`-th eigenvector lies in the tail span, is a unit vector, and
+/-- The `k`-th eigenvector lies in the tail span, is a unit vector, and
 attains the Rayleigh value `λₖ`. -/
 theorem exists_eigenvector_mem_tail {k : ℕ} (hk : k < n) :
     ∃ x ∈ Submodule.span 𝕜 (Set.range (tailFamily hT hn hk)), ‖x‖ = 1 ∧
@@ -306,7 +306,7 @@ theorem exists_eigenvector_mem_tail {k : ℕ} (hk : k < n) :
       simp [h0]
     · simp
 
-/-- **The k-th eigenvector attains the Rayleigh bound on the head.** The `k`-th eigenvector lies in the head span, is a unit vector, and
+/-- The `k`-th eigenvector lies in the head span, is a unit vector, and
 attains the Rayleigh value `λₖ`. -/
 theorem exists_eigenvector_mem_head {k : ℕ} (hk : k < n) :
     ∃ x ∈ Submodule.span 𝕜 (Set.range (headFamily hT hn hk)), ‖x‖ = 1 ∧

@@ -59,7 +59,7 @@ namespace MathlibExt.Biology.StatisticalGenetics.ProximalContamination
 
 variable {n : Type*} [Fintype n] [DecidableEq n]
 
-/-- **Mixed-model association chi-squared statistic.** The mixed-model (generalized-least-squares score) statistic
+/-- The mixed-model (generalized-least-squares score) statistic
 `χ²(V) = (xᵀ V⁻¹ y)² / (xᵀ V⁻¹ x)` of the marker `x` for the phenotype `y` under the phenotypic
 covariance `V`. For positive definite `V` and `x ≠ 0` the denominator is positive. -/
 noncomputable def mmChiSq (V : Matrix n n ℝ) (x y : n → ℝ) : ℝ :=
@@ -131,7 +131,7 @@ theorem mmChiSq_add_smul_vecMulVec {V₀ : Matrix n n ℝ} (hV₀ : V₀.PosDef)
   · rw [← h0]; simp
   · field_simp
 
-/-- **Including the marker in the covariance never increases the statistic.** Including the candidate marker in the covariance never increases the mixed-model
+/-- Including the candidate marker in the covariance never increases the mixed-model
 statistic: `χ²(V₀ + c x xᵀ) ≤ χ²(V₀)` for positive definite `V₀` and `c ≥ 0`. -/
 theorem mmChiSq_add_smul_vecMulVec_le {V₀ : Matrix n n ℝ} (hV₀ : V₀.PosDef) {c : ℝ}
     (hc : 0 ≤ c) (x y : n → ℝ) : mmChiSq (V₀ + c • vecMulVec x x) x y ≤ mmChiSq V₀ x y := by

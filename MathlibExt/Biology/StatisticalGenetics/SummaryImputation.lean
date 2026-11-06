@@ -67,7 +67,7 @@ namespace MathlibExt.Biology.StatisticalGenetics.SummaryImputation
 
 variable {ι Ω : Type*} [Fintype ι] {m : MeasurableSpace Ω}
 
-/-- **Second-moment model for summary-statistic imputation.** Square-integrable statistics `z_t` (untyped marker) and `z_o` (typed markers) with raw second
+/-- Square-integrable statistics `z_t` (untyped marker) and `z_o` (typed markers) with raw second
 moments `𝔼 z_o z_oᵀ = Σ_oo`, `𝔼 z_t z_o = Σ_ot`, `𝔼 z_t² = Σ_tt`. These are the covariances of
 the ImpG null model when the statistics are centred. -/
 structure Model (P : Measure Ω) (ι : Type*) where
@@ -96,7 +96,7 @@ namespace Model
 
 variable {P : Measure Ω} (D : Model P ι)
 
-/-- **Imputed summary statistic.** The imputed statistic `ẑ = wᵀ z_o` with weights `w`. -/
+/-- The imputed statistic `ẑ = wᵀ z_o` with weights `w`. -/
 def imputed (w : ι → ℝ) (ω : Ω) : ℝ := ∑ i, w i * D.zo i ω
 
 omit [Fintype ι] in
@@ -107,7 +107,7 @@ omit [Fintype ι] in
 private theorem integrable_zt_mul (i : ι) : Integrable (fun ω => D.zt ω * D.zo i ω) P :=
   D.memLp_zt.integrable_mul (D.memLp_zo i)
 
-/-- **Second moment of the imputed statistic.** `𝔼 ẑ² = wᵀ Σ_oo w`. -/
+/-- `𝔼 ẑ² = wᵀ Σ_oo w`. -/
 theorem integral_imputed_sq (w : ι → ℝ) :
     ∫ ω, D.imputed w ω ^ 2 ∂P = w ⬝ᵥ (D.sigmaOO *ᵥ w) := by
   have he (ω : Ω) : D.imputed w ω ^ 2 =
@@ -124,7 +124,7 @@ theorem integral_imputed_sq (w : ι → ℝ) :
   refine Finset.sum_congr rfl fun i _ => Finset.sum_congr rfl fun j _ => ?_
   ring
 
-/-- **Cross moment of the imputed and untyped statistics.** `𝔼 ẑ z_t = wᵀ Σ_ot`. -/
+/-- `𝔼 ẑ z_t = wᵀ Σ_ot`. -/
 theorem integral_imputed_mul (w : ι → ℝ) :
     ∫ ω, D.imputed w ω * D.zt ω ∂P = w ⬝ᵥ D.sigmaOT := by
   have he (ω : Ω) : D.imputed w ω * D.zt ω = ∑ i, w i * (D.zt ω * D.zo i ω) := by
@@ -140,7 +140,7 @@ private theorem memLp_imputed (w : ι → ℝ) : MemLp (D.imputed w) 2 P := by
   unfold imputed
   exact memLp_finsetSum _ fun i _ => (D.memLp_zo i).const_mul _
 
-/-- **Mean squared imputation error.** The mean squared imputation error: `𝔼 (z_t - ẑ)² = Σ_tt - 2 wᵀ Σ_ot + wᵀ Σ_oo w`. -/
+/-- The mean squared imputation error: `𝔼 (z_t - ẑ)² = Σ_tt - 2 wᵀ Σ_ot + wᵀ Σ_oo w`. -/
 theorem integral_error_sq (w : ι → ℝ) :
     ∫ ω, (D.zt ω - D.imputed w ω) ^ 2 ∂P =
       D.sigmaTT - 2 * (w ⬝ᵥ D.sigmaOT) + w ⬝ᵥ (D.sigmaOO *ᵥ w) := by
@@ -156,14 +156,14 @@ theorem integral_error_sq (w : ι → ℝ) :
   rw [integral_add h12 h3, integral_sub h1 (h2.const_mul 2), integral_const_mul,
     D.integral_zt_sq, D.integral_imputed_mul, D.integral_imputed_sq]
 
-/-- **Second moment of the statistic imputed with ImpG weights.** For the ImpG weights (`Σ_oo w = Σ_ot`, i.e. `w = Σ_oo⁻¹ Σ_ot` when `Σ_oo` is invertible) the
+/-- For the ImpG weights (`Σ_oo w = Σ_ot`, i.e. `w = Σ_oo⁻¹ Σ_ot` when `Σ_oo` is invertible) the
 imputed statistic has second moment `wᵀ Σ_ot = Σ_to Σ_oo⁻¹ Σ_ot`; for `Σ_tt = 1` this is
 `1 -` the linear-prediction residual variance, ImpG's `r²_pred`. -/
 theorem integral_imputed_sq_of_normal {w : ι → ℝ} (hw : D.sigmaOO *ᵥ w = D.sigmaOT) :
     ∫ ω, D.imputed w ω ^ 2 ∂P = w ⬝ᵥ D.sigmaOT := by
   rw [D.integral_imputed_sq, hw]
 
-/-- **Mean squared error of imputation with ImpG weights.** For the ImpG weights (`Σ_oo w = Σ_ot`) the mean squared imputation error is
+/-- For the ImpG weights (`Σ_oo w = Σ_ot`) the mean squared imputation error is
 `Σ_tt - wᵀ Σ_ot = Σ_tt - Σ_to Σ_oo⁻¹ Σ_ot`, the linear-prediction residual variance
 (the conditional variance only under the Gaussian ImpG model). -/
 theorem integral_error_sq_of_normal {w : ι → ℝ} (hw : D.sigmaOO *ᵥ w = D.sigmaOT) :
@@ -172,7 +172,7 @@ theorem integral_error_sq_of_normal {w : ι → ℝ} (hw : D.sigmaOO *ᵥ w = D.
   ring
 
 omit [Fintype ι] in
-/-- **Symmetry of the typed-marker moment matrix.** The moment matrix `Σ_oo` is symmetric. -/
+/-- The moment matrix `Σ_oo` is symmetric. -/
 theorem sigmaOO_transpose : D.sigmaOOᵀ = D.sigmaOO := by
   ext i j
   rw [transpose_apply, ← D.integral_zo_mul, ← D.integral_zo_mul]

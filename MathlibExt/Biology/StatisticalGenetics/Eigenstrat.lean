@@ -84,53 +84,53 @@ variable {N : ℕ}
 
 local notation "E" => EuclideanSpace ℝ (Fin N)
 
-/-- **Residualized vector after adjustment for a subspace.** The adjusted (residualized) `y`: the residual of the least-squares regression of `y` on the
+/-- The adjusted (residualized) `y`: the residual of the least-squares regression of `y` on the
 subspace `V` (`y` minus its orthogonal projection onto `V`). -/
 noncomputable def adjusted (V : Submodule ℝ E) (y : E) : E :=
   y - V.starProjection y
 
-/-- **Residuals lie in the orthogonal complement.** Residuals are orthogonal to the adjustment subspace. -/
+/-- Residuals are orthogonal to the adjustment subspace. -/
 theorem adjusted_mem_orthogonal (V : Submodule ℝ E) (y : E) : adjusted V y ∈ Vᗮ := by
   exact V.sub_starProjection_mem_orthogonal y
 
-/-- **Residuals are orthogonal to every axis.** Residuals are orthogonal to every vector of the subspace, in particular to every axis. -/
+/-- Residuals are orthogonal to every vector of the subspace, in particular to every axis. -/
 theorem inner_adjusted_eq_zero (V : Submodule ℝ E) {v : E} (hv : v ∈ V) (y : E) :
     ⟪v, adjusted V y⟫_ℝ = 0 := by
   exact Submodule.inner_right_of_mem_orthogonal hv (adjusted_mem_orthogonal V y)
 
-/-- **Residual as projection onto the orthogonal complement.** The residual is the orthogonal projection onto `Vᗮ`. -/
+/-- The residual is the orthogonal projection onto `Vᗮ`. -/
 theorem adjusted_eq_starProjection_orthogonal (V : Submodule ℝ E) (y : E) :
     adjusted V y = Vᗮ.starProjection y := by
   exact (Submodule.starProjection_orthogonal_val y).symm
 
-/-- **Additivity of residualization.** Residualization is additive. -/
+/-- Residualization is additive. -/
 theorem adjusted_add (V : Submodule ℝ E) (y z : E) :
     adjusted V (y + z) = adjusted V y + adjusted V z := by
   simp only [adjusted_eq_starProjection_orthogonal, map_add]
 
-/-- **Homogeneity of residualization.** Residualization is homogeneous. -/
+/-- Residualization is homogeneous. -/
 theorem adjusted_smul (V : Submodule ℝ E) (c : ℝ) (y : E) :
     adjusted V (c • y) = c • adjusted V y := by
   simp only [adjusted_eq_starProjection_orthogonal, map_smul]
 
-/-- **Residual vanishes exactly on the subspace.** The residual vanishes exactly on the subspace. -/
+/-- The residual vanishes exactly on the subspace. -/
 theorem adjusted_eq_zero_iff (V : Submodule ℝ E) (y : E) : adjusted V y = 0 ↔ y ∈ V := by
   rw [adjusted, sub_eq_zero, eq_comm, Submodule.starProjection_eq_self_iff]
 
-/-- **Stratification within the axis span does not change the residual.** Adding a vector of the subspace (stratification lying in the axis span) does not change the
+/-- Adding a vector of the subspace (stratification lying in the axis span) does not change the
 residual. -/
 theorem adjusted_add_of_mem (V : Submodule ℝ E) {s : E} (hs : s ∈ V) (z : E) :
     adjusted V (s + z) = adjusted V z := by
   rw [adjusted_add, (adjusted_eq_zero_iff V s).mpr hs, zero_add]
 
-/-- **Vectors orthogonal to the subspace are their own residuals.** Vectors orthogonal to the subspace are their own residuals: stratification outside the axis
+/-- Vectors orthogonal to the subspace are their own residuals: stratification outside the axis
 span is not removed. -/
 theorem adjusted_of_mem_orthogonal (V : Submodule ℝ E) {y : E} (hy : y ∈ Vᗮ) :
     adjusted V y = y := by
   rw [adjusted_eq_starProjection_orthogonal, Submodule.starProjection_eq_self_iff]
   exact hy
 
-/-- **Residual with respect to an orthonormal family of axes.** Regressing on an orthonormal family of axes one axis at a time gives the joint residual:
+/-- Regressing on an orthonormal family of axes one axis at a time gives the joint residual:
 `y - ∑ₖ ⟪aₖ, y⟫ aₖ`. -/
 theorem adjusted_span_orthonormal {K : ℕ} (a : Fin K → E) (ha : Orthonormal ℝ a) (y : E) :
     adjusted (Submodule.span ℝ (Set.range a)) y = y - ∑ k, ⟪a k, y⟫_ℝ • a k := by
@@ -152,7 +152,7 @@ theorem adjusted_span_orthonormal {K : ℕ} (a : Fin K → E) (ha : Orthonormal 
     | smul r x hx hix => simp [inner_smul_left, hix]
   exact congrArg (y - ·) (S.eq_starProjection_of_mem_orthogonal hs ho)
 
-/-- **Frisch–Waugh–Lovell theorem, uniqueness.** Frisch–Waugh–Lovell, uniqueness: in any least-squares decomposition
+/-- Frisch–Waugh–Lovell, uniqueness: in any least-squares decomposition
 `y = c + β g + e` with `c ∈ V` and `e ⊥ V ⊔ span {g}`, the coefficient `β` is the
 coefficient of the regression of the residualized `y` on the residualized `g`, and the
 residual `e` is the residual of that regression. -/
@@ -181,7 +181,7 @@ theorem frischWaughLovell (V : Submodule ℝ E) (y g : E) (hg : adjusted V g ≠
   apply (eq_div_iff hn).mpr
   linarith
 
-/-- **Frisch–Waugh–Lovell theorem, existence.** Frisch–Waugh–Lovell, existence: the coefficient of the residual-on-residual regression
+/-- Frisch–Waugh–Lovell, existence: the coefficient of the residual-on-residual regression
 gives a least-squares decomposition of `y` on `V ⊔ span {g}`. -/
 theorem exists_frischWaughLovell (V : Submodule ℝ E) (y g : E) :
     ∃ c ∈ V, y - c - (⟪adjusted V g, adjusted V y⟫_ℝ / ‖adjusted V g‖ ^ 2) • g ∈
@@ -219,7 +219,7 @@ theorem exists_frischWaughLovell (V : Submodule ℝ E) (y g : E) :
   rw [← Submodule.inf_orthogonal]
   exact ⟨heV, Submodule.mem_orthogonal_singleton_iff_inner_right.mpr hig⟩
 
-/-- **EIGENSTRAT association statistic.** The EIGENSTRAT association statistic `(N - K - 1) ⟪r_g, r_y⟫² / (‖r_g‖² ‖r_y‖²)` of the
+/-- The EIGENSTRAT association statistic `(N - K - 1) ⟪r_g, r_y⟫² / (‖r_g‖² ‖r_y‖²)` of the
 adjusted genotype `r_g` and adjusted phenotype `r_y`: `(N - K - 1)` times their squared cosine,
 which is their squared sample correlation when both are centered (Price et al. 2006). When either
 adjusted vector is zero the ratio is the junk value `0`. -/
@@ -233,7 +233,7 @@ theorem chiSq_add_of_mem (V : Submodule ℝ E) (K : ℕ) {s t : E} (hs : s ∈ V
     (y g : E) : chiSq V K (s + y) (t + g) = chiSq V K y g := by
   simp only [chiSq, adjusted_add_of_mem V hs, adjusted_add_of_mem V ht]
 
-/-- **Nonnegativity of the EIGENSTRAT statistic.** The EIGENSTRAT statistic is nonnegative when `K + 1 ≤ N`. -/
+/-- The EIGENSTRAT statistic is nonnegative when `K + 1 ≤ N`. -/
 theorem chiSq_nonneg (V : Submodule ℝ E) {K : ℕ} (hK : K + 1 ≤ N) (y g : E) :
     0 ≤ chiSq V K y g := by
   have hK' : (0 : ℝ) ≤ (N : ℝ) - K - 1 := by
@@ -254,7 +254,7 @@ theorem chiSq_le (V : Submodule ℝ E) {K : ℕ} (hK : K + 1 ≤ N) (y g : E) :
       real_inner_mul_inner_self_le (adjusted V g) (adjusted V y)
   exact mul_le_of_le_one_right hfactor (div_le_one_of_le₀ hcs (by positivity))
 
-/-- **Genotypes in the axis span carry no signal after adjustment.** A genotype lying in the axis span carries no signal after adjustment (its residual is zero,
+/-- A genotype lying in the axis span carries no signal after adjustment (its residual is zero,
 and the statistic is the junk value `0` of the zero denominator). -/
 theorem chiSq_of_mem (V : Submodule ℝ E) (K : ℕ) (y : E) {g : E} (hg : g ∈ V) :
     chiSq V K y g = 0 := by
@@ -270,23 +270,23 @@ open Matrix MathlibExt.Probability.Statistics.PCA
 
 variable {N M : ℕ}
 
-/-- **Allele-frequency estimate of a marker.** The allele-frequency estimate `p̂ⱼ = μⱼ / 2` of marker `j`, where `μⱼ` is the mean
+/-- The allele-frequency estimate `p̂ⱼ = μⱼ / 2` of marker `j`, where `μⱼ` is the mean
 variant-allele count of column `j` (autosomal diploid data, counts in `{0, 1, 2}`). -/
 noncomputable def alleleFreq (C : Matrix (Fin N) (Fin M) ℝ) (j : Fin M) : ℝ :=
   colMean C j / 2
 
-/-- **Patterson's normalized genotype matrix.** Patterson's normalized genotype matrix `(C i j - μⱼ) / √(p̂ⱼ (1 - p̂ⱼ))`. For a
+/-- Patterson's normalized genotype matrix `(C i j - μⱼ) / √(p̂ⱼ (1 - p̂ⱼ))`. For a
 monomorphic marker (`p̂ⱼ ∈ {0, 1}`) the denominator is `0` and the column is the junk value `0`;
 Patterson et al. use polymorphic markers only. -/
 noncomputable def normalizedGenotype (C : Matrix (Fin N) (Fin M) ℝ) : Matrix (Fin N) (Fin M) ℝ :=
   Matrix.of fun i j => center C i j / √(alleleFreq C j * (1 - alleleFreq C j))
 
-/-- **Patterson's relatedness matrix.** Patterson's `N × N` matrix `Ψ = M Mᵀ / (number of markers)` of the normalized genotypes,
+/-- Patterson's `N × N` matrix `Ψ = M Mᵀ / (number of markers)` of the normalized genotypes,
 whose top eigenvectors are the axes of variation. -/
 noncomputable def relatednessMatrix (C : Matrix (Fin N) (Fin M) ℝ) : Matrix (Fin N) (Fin N) ℝ :=
   (M : ℝ)⁻¹ • (normalizedGenotype C * (normalizedGenotype C)ᵀ)
 
-/-- **Patterson's relatedness matrix is positive semidefinite.** Patterson's matrix `Ψ` is positive semidefinite. -/
+/-- Patterson's matrix `Ψ` is positive semidefinite. -/
 theorem relatednessMatrix_posSemidef (C : Matrix (Fin N) (Fin M) ℝ) :
     (relatednessMatrix C).PosSemidef := by
   unfold relatednessMatrix
@@ -294,7 +294,7 @@ theorem relatednessMatrix_posSemidef (C : Matrix (Fin N) (Fin M) ℝ) :
   rw [conjTranspose_eq_transpose_of_trivial] at h
   exact h.smul (inv_nonneg.mpr (Nat.cast_nonneg M))
 
-/-- **All-ones vector lies in the kernel of the relatedness matrix.** The all-ones vector is in the kernel of `Ψ` (columns of the normalized matrix are centered),
+/-- The all-ones vector is in the kernel of `Ψ` (columns of the normalized matrix are centered),
 so at most `N - 1` eigenvalues are nonzero. -/
 theorem relatednessMatrix_mulVec_one (C : Matrix (Fin N) (Fin M) ℝ) (hN : 0 < N) :
     relatednessMatrix C *ᵥ 1 = 0 := by
@@ -304,26 +304,26 @@ theorem relatednessMatrix_mulVec_one (C : Matrix (Fin N) (Fin M) ℝ) (hN : 0 < 
       mul_one, Pi.zero_apply, ← Finset.sum_div, sum_center C hN j, zero_div]
   rw [relatednessMatrix, smul_mulVec, ← mulVec_mulVec, h, mulVec_zero, smul_zero]
 
-/-- **Axes of variation.** The axes of variation: an orthonormal eigenbasis of `Ψ`, in decreasing eigenvalue order. -/
+/-- The axes of variation: an orthonormal eigenbasis of `Ψ`, in decreasing eigenvalue order. -/
 noncomputable def axes (C : Matrix (Fin N) (Fin M) ℝ) :
     OrthonormalBasis (Fin N) ℝ (EuclideanSpace ℝ (Fin N)) :=
   orderedEigenbasis (relatednessMatrix_posSemidef C).isHermitian
 
-/-- **Eigenvalues of the axes of variation.** The eigenvalues of `Ψ` in decreasing order, matching `axes`. -/
+/-- The eigenvalues of `Ψ` in decreasing order, matching `axes`. -/
 noncomputable def axisEigenvalues (C : Matrix (Fin N) (Fin M) ℝ) : Fin N → ℝ :=
   orderedEigenvalues (relatednessMatrix_posSemidef C).isHermitian
 
-/-- **Span of the top axes of variation.** The span of the top `K` axes of variation, the subspace EIGENSTRAT adjusts for. -/
+/-- The span of the top `K` axes of variation, the subspace EIGENSTRAT adjusts for. -/
 noncomputable def topAxesSpan (C : Matrix (Fin N) (Fin M) ℝ) (K : ℕ) :
     Submodule ℝ (EuclideanSpace ℝ (Fin N)) :=
   Submodule.span ℝ (axes C '' {i | i.val < K})
 
-/-- **Each top axis lies in the span of the top axes.** Each of the top `K` axes lies in their span. -/
+/-- Each of the top `K` axes lies in their span. -/
 theorem axes_mem_topAxesSpan (C : Matrix (Fin N) (Fin M) ℝ) {K : ℕ} {i : Fin N} (hi : i.val < K) :
     axes C i ∈ topAxesSpan C K :=
   Submodule.subset_span ⟨i, hi, rfl⟩
 
-/-- **Dimension of the span of the top axes.** The top `K` axes span a `K`-dimensional subspace. -/
+/-- The top `K` axes span a `K`-dimensional subspace. -/
 theorem finrank_topAxesSpan (C : Matrix (Fin N) (Fin M) ℝ) {K : ℕ} (hK : K ≤ N) :
     Module.finrank ℝ (topAxesSpan C K) = K := by
   have hli : LinearIndependent ℝ (fun i : {i : Fin N // i.val < K} => axes C i.1) :=
@@ -353,7 +353,7 @@ section Significance
 
 open MeasureTheory
 
-/-- **Sequential count of significant axes.** Patterson's sequential count of significant axes: among the first `K` statistics, the
+/-- Patterson's sequential count of significant axes: among the first `K` statistics, the
 length of the leading run of statistics exceeding the threshold `t` (testing stops at the first
 non-significant one). -/
 noncomputable def numSignificant (stat : ℕ → ℝ) (t : ℝ) : ℕ → ℕ
@@ -361,7 +361,7 @@ noncomputable def numSignificant (stat : ℕ → ℝ) (t : ℝ) : ℕ → ℕ
   | K + 1 => open Classical in
       if numSignificant stat t K = K ∧ t < stat K then K + 1 else numSignificant stat t K
 
-/-- **At most K axes are declared significant.** At most `K` axes are declared significant. -/
+/-- At most `K` axes are declared significant. -/
 theorem numSignificant_le (stat : ℕ → ℝ) (t : ℝ) (K : ℕ) : numSignificant stat t K ≤ K := by
   induction K with
   | zero => simp [numSignificant]
@@ -369,7 +369,7 @@ theorem numSignificant_le (stat : ℕ → ℝ) (t : ℝ) (K : ℕ) : numSignific
     simp only [numSignificant]
     split_ifs <;> omega
 
-/-- **Characterization of the axes counted as significant.** The first `numSignificant stat t K` indices are exactly those `k < K` whose statistics and
+/-- The first `numSignificant stat t K` indices are exactly those `k < K` whose statistics and
 all earlier ones exceed the threshold. -/
 theorem lt_numSignificant_iff {stat : ℕ → ℝ} {t : ℝ} {K k : ℕ} :
     k < numSignificant stat t K ↔ k < K ∧ ∀ i ≤ k, t < stat i := by
@@ -396,18 +396,18 @@ theorem lt_numSignificant_iff {stat : ℕ → ℝ} {t : ℝ} {K k : ℕ} :
           exact lt_irrefl _ (ih.mpr ⟨hlt, fun i hi => hall i (by omega)⟩)
         exact hc ⟨hn, hall k le_rfl⟩
 
-/-- **Significant axes have statistics above the threshold.** Every axis counted as significant has a statistic above the threshold. -/
+/-- Every axis counted as significant has a statistic above the threshold. -/
 theorem lt_stat_of_lt_numSignificant {stat : ℕ → ℝ} {t : ℝ} {K k : ℕ}
     (h : k < numSignificant stat t K) : t < stat k :=
   (lt_numSignificant_iff.mp h).2 k le_rfl
 
-/-- **Criterion for at least one significant axis.** At least one axis is significant iff the leading statistic exceeds the threshold. -/
+/-- At least one axis is significant iff the leading statistic exceeds the threshold. -/
 theorem numSignificant_pos_iff {stat : ℕ → ℝ} {t : ℝ} {K : ℕ} :
     0 < numSignificant stat t K ↔ 0 < K ∧ t < stat 0 := by
   rw [lt_numSignificant_iff]
   simp
 
-/-- **Count of significant axes decreases with the threshold.** A higher threshold declares no more axes significant. -/
+/-- A higher threshold declares no more axes significant. -/
 theorem numSignificant_antitone {stat : ℕ → ℝ} {t t' : ℝ} (htt : t ≤ t') (K : ℕ) :
     numSignificant stat t' K ≤ numSignificant stat t K := by
   by_contra h
@@ -415,7 +415,7 @@ theorem numSignificant_antitone {stat : ℕ → ℝ} {t t' : ℝ} (htt : t ≤ t
   have h' := lt_numSignificant_iff.mp h
   exact lt_irrefl _ (lt_numSignificant_iff.mpr ⟨h'.1, fun i hi => htt.trans_lt (h'.2 i hi)⟩)
 
-/-- **Significant-axis count for decreasing statistics.** For decreasing statistics (such as ordered eigenvalues compared with a fixed threshold) the
+/-- For decreasing statistics (such as ordered eigenvalues compared with a fixed threshold) the
 sequential count is the number of statistics above the threshold. -/
 theorem numSignificant_eq_card_of_antitone {stat : ℕ → ℝ} (h : Antitone stat) (t : ℝ) (K : ℕ) :
     numSignificant stat t K = ((Finset.range K).filter fun k => t < stat k).card := by

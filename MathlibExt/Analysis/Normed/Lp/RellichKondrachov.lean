@@ -64,7 +64,7 @@ open MathlibExt.Analysis.Normed.Lp.SchauderBasis
 
 variable {𝕜 : Type*} [RCLike 𝕜]
 
-/-- **Rellich weight.** The Rellich weight `1 + n ^ 2`. -/
+/-- The Rellich weight `1 + n ^ 2`. -/
 def rellichWeight (n : ℕ) : ℝ := 1 + (n : ℝ) ^ 2
 
 theorem rellichWeight_nonneg (n : ℕ) : 0 ≤ rellichWeight n := by
@@ -85,12 +85,12 @@ theorem rellichWeight_mono {m n : ℕ} (h : m ≤ n) : rellichWeight m ≤ relli
     pow_le_pow_left₀ (Nat.cast_nonneg _) (Nat.cast_le.mpr h) 2
   linarith
 
-/-- **Membership in the Rellich ball via partial sums.** Membership in the Rellich ball: every finite weighted partial sum is
+/-- Membership in the Rellich ball: every finite weighted partial sum is
 bounded by `M ^ 2`. -/
 def memRellichBall (x : ℓ²(ℕ, 𝕜)) (M : ℝ) : Prop :=
   ∀ F : Finset ℕ, ∑ n ∈ F, rellichWeight n * ‖(x : ℕ → 𝕜) n‖ ^ 2 ≤ M ^ 2
 
-/-- **Rellich ball of weighted square-summable sequences.** The Rellich ball of radius `M`: sequences in `ℓ²(ℕ, 𝕜)` whose weighted
+/-- The Rellich ball of radius `M`: sequences in `ℓ²(ℕ, 𝕜)` whose weighted
 `ℓ²` energy is at most `M ^ 2`. -/
 def rellichBall (M : ℝ) : Set (ℓ²(ℕ, 𝕜)) := {x | memRellichBall x M}
 
@@ -102,7 +102,7 @@ theorem summable_norm_sq (x : ℓ²(ℕ, 𝕜)) :
   have h := (lp.memℓp x).summable (show (0 : ℝ) < (2 : ℝ≥0∞).toReal by norm_num)
   simpa only [toReal_two, Real.rpow_two] using h
 
-/-- **Squared $\ell^2$ norm as a sum of squared coordinates.** The `ℓ²` norm squared is the sum of the squared coordinate norms. -/
+/-- The `ℓ²` norm squared is the sum of the squared coordinate norms. -/
 theorem norm_sq_eq_tsum (x : ℓ²(ℕ, 𝕜)) :
     ‖x‖ ^ 2 = ∑' n, ‖(x : ℕ → 𝕜) n‖ ^ 2 := by
   have h := lp.norm_rpow_eq_tsum (p := (2 : ℝ≥0∞))
@@ -131,7 +131,7 @@ theorem norm_le_of_memRellichBall {x : ℓ²(ℕ, 𝕜)} {M : ℝ} (hM : 0 ≤ M
     _ ≤ Real.sqrt (M ^ 2) := Real.sqrt_le_sqrt h
     _ = M := Real.sqrt_sq hM
 
-/-- **Finitely supported sequences in the Rellich ball.** If `x` is supported in a finite set `S` and its weighted sum over `S` is
+/-- If `x` is supported in a finite set `S` and its weighted sum over `S` is
 at most `M ^ 2`, then `x` lies in the Rellich ball. -/
 theorem memRellichBall_of_support {x : ℓ²(ℕ, 𝕜)} {S : Finset ℕ} {M : ℝ}
     (hS : ∀ n, (x : ℕ → 𝕜) n ≠ 0 → n ∈ S)
@@ -152,7 +152,7 @@ theorem memRellichBall_of_support {x : ℓ²(ℕ, 𝕜)} {S : Finset ℕ} {M : �
           fun n _ _ => mul_nonneg (rellichWeight_nonneg n) (sq_nonneg _)
     _ ≤ M ^ 2 := h
 
-/-- **Tail norm identity for $\ell^2$ truncation.** The tail norm identity: the distance from `x` to its truncation is the
+/-- The tail norm identity: the distance from `x` to its truncation is the
 `ℓ²` norm of the tail. -/
 theorem norm_sub_lpTrunc_sq_eq {x : ℓ²(ℕ, 𝕜)} (N : ℕ) :
     ‖x - lpTrunc 2 N x‖ ^ 2 = ∑' n, ‖(x : ℕ → 𝕜) (n + N)‖ ^ 2 := by
@@ -164,7 +164,7 @@ theorem norm_sub_lpTrunc_sq_eq {x : ℓ²(ℕ, 𝕜)} (N : ℕ) :
   simp only [toReal_two, Real.rpow_two] at h1
   linarith
 
-/-- **Tail estimate for the Rellich ball.** The tail estimate: the squared distance from `x` to its truncation is at
+/-- The tail estimate: the squared distance from `x` to its truncation is at
 most `M ^ 2 / (1 + N ^ 2)`. -/
 theorem norm_sub_lpTrunc_sq_le {x : ℓ²(ℕ, 𝕜)} {M : ℝ} (hx : memRellichBall x M)
     (N : ℕ) : ‖x - lpTrunc 2 N x‖ ^ 2 ≤ M ^ 2 / rellichWeight N := by
@@ -196,7 +196,7 @@ theorem norm_sub_lpTrunc_sq_le {x : ℓ²(ℕ, 𝕜)} {M : ℝ} (hx : memRellich
     linarith
   exact hle1.trans hle2
 
-/-- **Truncations lie in the span of the first basis vectors.** Canonical truncations land in the span of the first `N` basis vectors. -/
+/-- Canonical truncations land in the span of the first `N` basis vectors. -/
 theorem lpTrunc_mem_span (N : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     lpTrunc 2 N x ∈ Submodule.span 𝕜
       ((fun i : ℕ => lp.single (E := fun _ : ℕ => 𝕜) 2 i (1 : 𝕜)) ''
@@ -207,7 +207,7 @@ theorem lpTrunc_mem_span (N : ℕ) (x : ℓ²(ℕ, 𝕜)) :
   rw [SchauderBasis.range_proj_eq_span] at h
   exact h
 
-/-- **Rellich ball depends only on the absolute radius.** The Rellich ball only depends on `|M|`, since the bound is on `M ^ 2`. -/
+/-- The Rellich ball only depends on `|M|`, since the bound is on `M ^ 2`. -/
 theorem rellichBall_abs (M : ℝ) :
     rellichBall (𝕜 := 𝕜) M = rellichBall (𝕜 := 𝕜) |M| := by
   ext x

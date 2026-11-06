@@ -66,25 +66,25 @@ namespace Cslib.Bioinformatics.MutationalSignatures.ARDNMF
 
 variable {F K N : Type*} [Fintype F] [Fintype K] [Fintype N]
 
-/-- **Generalized Kullback–Leibler divergence.** The Kullback–Leibler `β = 1` divergence `d(x | y) = x log (x / y) - x + y` (Tan–Févotte,
+/-- The Kullback–Leibler `β = 1` divergence `d(x | y) = x log (x / y) - x + y` (Tan–Févotte,
 Eq. 4). With Mathlib's `0 * log _ = 0` it gives `d(0 | y) = y`, the correct value; `y > 0` is
 needed when `x > 0`. -/
 noncomputable def klDiv (x y : ℝ) : ℝ := x * Real.log (x / y) - x + y
 
-/-- **Reconstruction matrix in nonnegative matrix factorization.** The reconstruction `(W H)_fn = ∑_k w_fk h_kn`. -/
+/-- The reconstruction `(W H)_fn = ∑_k w_fk h_kn`. -/
 def recon (W : F → K → ℝ) (H : K → N → ℝ) (f : F) (n : N) : ℝ := ∑ k, W f k * H k n
 
-/-- **Data-fit term of the ARD-NMF objective.** The data-fit term `D_1(V | W H) = ∑_{f,n} d(v_fn | (W H)_fn)`. -/
+/-- The data-fit term `D_1(V | W H) = ∑_{f,n} d(v_fn | (W H)_fn)`. -/
 noncomputable def dataFit (V : F → N → ℝ) (W : F → K → ℝ) (H : K → N → ℝ) : ℝ :=
   ∑ f, ∑ n, klDiv (V f n) (recon W H f n)
 
-/-- **H-dependent part of the ARD-NMF objective.** The `H`-dependent part `D_1(V | W H) / φ + ∑_{k,n} h_kn / λ_k` of the `ℓ₁`-ARD objective
+/-- The `H`-dependent part `D_1(V | W H) / φ + ∑_{k,n} h_kn / λ_k` of the `ℓ₁`-ARD objective
 (Tan–Févotte, Eq. 20, `β = 1`). -/
 noncomputable def objectiveH (φ : ℝ) (V : F → N → ℝ) (W : F → K → ℝ) (lam : K → ℝ)
     (H : K → N → ℝ) : ℝ :=
   dataFit V W H / φ + ∑ k, ∑ n, H k n / lam k
 
-/-- **ARD multiplicative update of H.** The `ℓ₁`-ARD multiplicative update of `H` for `β = 1` (Tan–Févotte, Eq. 32, Algorithm 2):
+/-- The `ℓ₁`-ARD multiplicative update of `H` for `β = 1` (Tan–Févotte, Eq. 32, Algorithm 2):
 `h_kn ← h_kn (∑_f w_fk v_fn / (W H)_fn) / (∑_f w_fk + φ / λ_k)`. -/
 noncomputable def updateH (φ : ℝ) (V : F → N → ℝ) (W : F → K → ℝ) (lam : K → ℝ)
     (H : K → N → ℝ) (k : K) (n : N) : ℝ :=
@@ -271,13 +271,13 @@ theorem objectiveH_updateH_le {φ : ℝ} {V : F → N → ℝ} {W : F → K → 
     simpa only [objectiveH, dataFit, mul_add, mul_div_cancel₀ _ hφ.ne'] using hsum
   nlinarith
 
-/-- **W-dependent part of the ARD-NMF objective.** The `W`-dependent part `D_1(V | W H) / φ + ∑_{f,k} w_fk / λ_k` of the `ℓ₁`-ARD objective
+/-- The `W`-dependent part `D_1(V | W H) / φ + ∑_{f,k} w_fk / λ_k` of the `ℓ₁`-ARD objective
 (Tan–Févotte, Eq. 20, `β = 1`). -/
 noncomputable def objectiveW (φ : ℝ) (V : F → N → ℝ) (H : K → N → ℝ) (lam : K → ℝ)
     (W : F → K → ℝ) : ℝ :=
   dataFit V W H / φ + ∑ k, ∑ f, W f k / lam k
 
-/-- **ARD multiplicative update of W.** The `ℓ₁`-ARD multiplicative update of `W` for `β = 1` (Tan–Févotte, Algorithm 2):
+/-- The `ℓ₁`-ARD multiplicative update of `W` for `β = 1` (Tan–Févotte, Algorithm 2):
 `w_fk ← w_fk (∑_n v_fn h_kn / (W H)_fn) / (∑_n h_kn + φ / λ_k)`. -/
 noncomputable def updateW (φ : ℝ) (V : F → N → ℝ) (H : K → N → ℝ) (lam : K → ℝ)
     (W : F → K → ℝ) (f : F) (k : K) : ℝ :=
@@ -320,7 +320,7 @@ theorem objectiveW_updateW_le {φ : ℝ} {V : F → N → ℝ} {H : K → N → 
     rw [hfit]
   rwa [e1, e2] at key
 
-/-- **Relevance update in ARD-NMF.** The relevance update `λ_k = (‖w_k‖₁ + ‖h_k‖₁ + b) / c` (Tan–Févotte, Eq. 33, `ℓ₁` prior;
+/-- The relevance update `λ_k = (‖w_k‖₁ + ‖h_k‖₁ + b) / c` (Tan–Févotte, Eq. 33, `ℓ₁` prior;
 `c = F + N + a + 1`). -/
 noncomputable def relevance (W : F → K → ℝ) (H : K → N → ℝ) (b c : ℝ) (k : K) : ℝ :=
   (∑ f, W f k + ∑ n, H k n + b) / c
@@ -361,7 +361,7 @@ theorem relevance_unique {A c l : ℝ} (hA : 0 < A) (hc : 0 < c) (hl : 0 < l)
   nlinarith [mul_lt_mul_of_pos_left hlog hc]
 
 omit [Fintype K] in
-/-- **Lower bound on the relevance update.** The relevance never falls below its floor `b / c` (`W, H ≥ 0`, `c > 0`). -/
+/-- The relevance never falls below its floor `b / c` (`W, H ≥ 0`, `c > 0`). -/
 theorem div_le_relevance {W : F → K → ℝ} {H : K → N → ℝ} {b c : ℝ} (hc : 0 < c)
     (hW : ∀ f k, 0 ≤ W f k) (hH : ∀ k n, 0 ≤ H k n) (k : K) :
     b / c ≤ relevance W H b c k := by

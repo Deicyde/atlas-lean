@@ -353,12 +353,8 @@ private theorem rado_aux
           rwa [Set.union_comm] at hindep
 
 /--
-**Rado's theorem on independent transversals, arbitrary ground set.** Let $I$ and $E$ be finite
-sets, let $M$ be a matroid with ground set $E(M) \subseteq E$, and let $(A_i)_{i \in I}$ be a
-family of subsets of $E$. Then there is an injective map $f : I \to E$ such that $f(i) \in A_i$
-for every $i \in I$ and the image $f(I)$ is independent in $M$, if and only if
-$|J| \le r_M\bigl(\bigcup_{i \in J} A_i\bigr)$ for every $J \subseteq I$, where $r_M(X)$ denotes
-the rank in $M$ of $X \cap E(M)$.
+Finite matroidal marriage (Rado) for a matroid on a finite type, with no assumption on its ground
+set: `A` has an independent transversal iff `J.card ≤ M.eRk (⋃ i ∈ J, A i)` for every `J`.
 -/
 theorem rado_matroidal_marriage' {I E : Type*} [Finite I] [Finite E] {M : Matroid E}
     (A : I → Set E) :
@@ -385,18 +381,13 @@ set_option linter.unusedFintypeInType false in
 set_option linter.unusedDecidableInType false in
 set_option linter.unusedVariables false in
 /--
-**Rado's theorem on independent transversals.** Let $I$ and $E$ be finite sets, let $M$ be a
-matroid whose ground set is all of $E$, and let $(A_i)_{i \in I}$ be a family of subsets of $E$.
-Then there is an injective map $f : I \to E$ such that $f(i) \in A_i$ for every $i \in I$ and
-the image $f(I)$ is independent in $M$, if and only if
-$|J| \le r_M\bigl(\bigcup_{i \in J} A_i\bigr)$ for every $J \subseteq I$, where $r_M$ is the rank
-function of $M$.
+Finite matroidal marriage (Rado): transversal independent iff Hall-Rado rank condition holds for all
+`J`.
+Source: R. Rado, Quart. J. Math. os-13 (1942), DOI 10.1093/qmath/os-13.1.83.
 
-The hypothesis that the ground set of $M$ is all of $E$ is not needed.
+The full-ground hypothesis is not needed; see `rado_matroidal_marriage'`.
 
 Proves `Wanted` entry `rado_matroidal_marriage`.
-
-Source: R. Rado, Quart. J. Math. os-13 (1942), DOI 10.1093/qmath/os-13.1.83.
 -/
 theorem rado_matroidal_marriage
     {I E : Type*} [Fintype I] [DecidableEq I] [Fintype E] [DecidableEq E]

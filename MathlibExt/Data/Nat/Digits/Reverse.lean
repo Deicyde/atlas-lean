@@ -14,13 +14,10 @@ public import Mathlib.Data.Nat.Digits.Defs
 
 namespace Nat
 
-/-- **Digit reversal.** For natural numbers $b$ and $n$ with $b \ge 2$, write
-$n = \sum_{i<k} d_i b^i$ with digits $0 \le d_i < b$ and leading digit $d_{k-1} \ne 0$ (so $k = 0$
-when $n = 0$). The base-$b$ reversal of $n$ is the natural number $\sum_{i<k} d_{k-1-i} b^i$. For
-the bases $b = 0$ and $b = 1$ the reversal of $n$ is $n$ itself.
+/-- The natural number obtained by reversing the base-`b` digits of `n`.
 
-Trailing zeros of $n$ become leading zeros and are lost: in base $10$ the reversal of $120$ is
-$21$. -/
+This is totalized using `Nat.digits`: for the invalid bases `0` and `1`,
+Mathlib's conventions make digit reversal the identity. -/
 def reverseDigits (b n : ℕ) : ℕ :=
   Nat.ofDigits b (Nat.digits b n).reverse
 

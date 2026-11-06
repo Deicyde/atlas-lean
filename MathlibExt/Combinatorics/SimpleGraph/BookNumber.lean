@@ -25,18 +25,17 @@ namespace SimpleGraph
 
 variable {V : Type*} [Fintype V] {G : SimpleGraph V} [DecidableRel G.Adj]
 
-/-- **Book number.** Let $G$ be a finite simple graph. The book number of $G$ is the maximum,
-over ordered pairs $(u, v)$ of adjacent vertices, of the number of common neighbors of $u$ and
-$v$ (the number of triangles containing the edge $uv$); it is $0$ if $G$ has no edges. -/
+/-- The book number of `G`: the maximum, over adjacent ordered vertex pairs,
+of the number of common neighbors (triangles sharing that edge). Nonedges
+contribute zero. -/
 noncomputable def bookNumber (G : SimpleGraph V) [DecidableRel G.Adj] : ℕ :=
   Finset.sup Finset.univ fun p : V × V =>
     if G.Adj p.1 p.2 then
       (Finset.univ.filter fun w => G.Adj p.1 w ∧ G.Adj p.2 w).card
     else 0
 
-/-- **Common neighbors of an edge are bounded by the book number.** Let $G$ be a finite simple
-graph. If $u$ and $v$ are adjacent vertices of $G$, then the number of common neighbors of $u$
-and $v$ is at most the book number of $G$. -/
+/-- The common-neighbor count at an adjacent pair is bounded by the book
+number. -/
 theorem le_bookNumber {u v : V} (h : G.Adj u v) :
     (Finset.univ.filter fun w => G.Adj u w ∧ G.Adj v w).card ≤ G.bookNumber := by
   unfold bookNumber
@@ -48,9 +47,8 @@ theorem le_bookNumber {u v : V} (h : G.Adj u v) :
     (Finset.mem_univ (u, v))
   simpa [h] using hle
 
-/-- **Bounding the book number.** Let $G$ be a finite simple graph and $b$ a natural number. If
-every pair of adjacent vertices $u$, $v$ of $G$ has at most $b$ common neighbors, then the book
-number of $G$ is at most $b$. -/
+/-- A uniform bound on every adjacent pair's common-neighbor count bounds the
+book number. -/
 theorem bookNumber_le (b : ℕ)
     (h : ∀ u v : V, G.Adj u v →
       (Finset.univ.filter fun w => G.Adj u w ∧ G.Adj v w).card ≤ b) :

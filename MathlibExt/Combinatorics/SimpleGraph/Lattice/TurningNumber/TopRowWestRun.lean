@@ -39,7 +39,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.WalkCrossing
 open Fin.NatCast
 variable {n : ℕ} [NeZero n]
 
-/-- **A north step into a highest vertex is followed by a west step.** In a closed walk without right turns, a north step arriving at a highest vertex is followed by a
+/-- In a closed walk without right turns, a north step arriving at a highest vertex is followed by a
   west step. -/
 theorem top_arrival_west (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
@@ -53,7 +53,7 @@ theorem top_arrival_west (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 
   · rw [sub_eq_zero] at h; exact absurd h hne1
   · rw [sub_eq_iff_eq_add] at h; rw [h]; decide
 
-/-- **A west step on the top row is followed by west or south.** A west step on the top row is followed by a west or a south step, and stays on the top row. -/
+/-- A west step on the top row is followed by a west or a south step, and stays on the top row. -/
 theorem top_west_next (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
     {M v : Fin n} (_hmax : ∀ j : Fin n, (pos d j).2 ≤ (pos d M).2)
@@ -68,7 +68,7 @@ theorem top_west_next (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
   · left; rw [sub_eq_zero] at h; exact h
   · right; rw [sub_eq_iff_eq_add] at h; rw [h]; decide
 
-/-- **A closed walk is not all west steps.** A closed walk does not consist of west steps only. -/
+/-- A closed walk does not consist of west steps only. -/
 theorem exists_step_ne_west (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (M : Fin n) :
     ∃ i : ℕ, d (M + (Nat.cast i : Fin n)) ≠ 2 := by
   by_contra hcon
@@ -91,7 +91,7 @@ theorem exists_step_ne_west (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i)
   have hn : (n : ℤ) = 0 := by linarith
   exact (NeZero.ne n) (by exact_mod_cast hn)
 
-/-- **A west run from a highest vertex ends in a south step.** From a highest vertex where the walk turns west, it makes `J ≥ 1` west steps and then a south
+/-- From a highest vertex where the walk turns west, it makes `J ≥ 1` west steps and then a south
   step. -/
 theorem exists_west_run_end (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
@@ -129,7 +129,7 @@ theorem exists_west_run_end (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i)
   · exact absurd h hJspec
   · exact h
 
-/-- **A west run covering the top row is a single top run.** A west run from `M` whose vertices cover the top row is a single top run. -/
+/-- A west run from `M` whose vertices cover the top row is a single top run. -/
 theorem singleTopRun_of_runCoversTop (d : Fin n → Fin 4) (M : Fin n) (J : ℕ)
     (hrun : ∀ i : ℕ, i < J → d (M + (Nat.cast i : Fin n)) = 2)
     (hcover : ∀ v : Fin n, (pos d v).2 = (pos d M).2 →

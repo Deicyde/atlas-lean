@@ -39,7 +39,7 @@ namespace StatMech
 
 variable {α : Type*} [DecidableEq α]
 
-/-- **Number of disjoint pairs from two families.** The number of disjoint pairs `(S, T) ∈ 𝒜 × ℬ`. -/
+/-- The number of disjoint pairs `(S, T) ∈ 𝒜 × ℬ`. -/
 def dpairsCount (𝒜 ℬ : Finset (Finset α)) : ℕ :=
   ((𝒜 ×ˢ ℬ).filter (fun p => Disjoint p.1 p.2)).card
 
@@ -146,7 +146,7 @@ theorem dpairsCount_filter_mem_mem_eq_empty (𝒜 ℬ : Finset (Finset α)) (i :
   rw [mem_filter] at hp
   exact (Finset.disjoint_left.mp hp.2 hi1) hi2
 
-/-- **Recursion for disjoint pairs by membership of a coordinate.** Splitting disjoint pairs by membership of `i`: pairs where neither, only the first, or
+/-- Splitting disjoint pairs by membership of `i`: pairs where neither, only the first, or
 only the second set contains `i`. -/
 theorem dpairsCount_fiber_recursion (𝒜 ℬ : Finset (Finset α)) (i : α) :
     dpairsCount 𝒜 ℬ
@@ -180,7 +180,7 @@ theorem card_boxDoubled_fiber_recursion (𝒜 ℬ : Finset (Finset α)) (i : α)
     card_boxDoubled_eq_dpairsCount, card_boxDoubled_eq_dpairsCount]
   exact dpairsCount_fiber_recursion 𝒜 ℬ i
 
-/-- **One compression step on the doubled disjoint-pair family.** Bookkeeping for one compression step at coordinate `i` on `boxDoubled 𝒜 ℬ`:
+/-- Bookkeeping for one compression step at coordinate `i` on `boxDoubled 𝒜 ℬ`:
 `doubleCompress i` preserves its size and makes it down-closed at `inl i` and up-closed at
 `inr i`, and sizes split over `memberSubfamily i` and `nonMemberSubfamily i`. -/
 theorem reimer_butterfly_compress_step (𝒜 ℬ : Finset (Finset α)) (i : α) :

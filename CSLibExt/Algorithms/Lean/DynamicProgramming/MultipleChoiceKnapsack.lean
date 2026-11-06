@@ -66,7 +66,7 @@ namespace Cslib.Algorithms.Lean.MultipleChoiceKnapsack
 
 universe u
 
-/-- **Knapsack item with weight and value.** A knapsack item with a natural weight and a value in `β`. -/
+/-- A knapsack item with a natural weight and a value in `β`. -/
 structure Item (β : Type u) where
   /-- The weight counted against the constraint. -/
   weight : ℕ
@@ -76,21 +76,21 @@ deriving DecidableEq, Repr
 
 variable {β : Type u}
 
-/-- **Multiple-choice knapsack selection.** A selection chooses exactly one item from each group, in group order. -/
+/-- A selection chooses exactly one item from each group, in group order. -/
 def IsSelection (groups : List (List (Item β))) (choice : List (Item β)) : Prop :=
   List.Forall₂ (fun item group => item ∈ group) choice groups
 
-/-- **Total weight of a knapsack selection.** The total weight of a selection. -/
+/-- The total weight of a selection. -/
 def totalWeight (choice : List (Item β)) : ℕ := (choice.map Item.weight).sum
 
-/-- **Total value of a knapsack selection.** The total value of a selection. -/
+/-- The total value of a selection. -/
 def totalValue [AddMonoid β] (choice : List (Item β)) : β := (choice.map Item.value).sum
 
 section Recurrence
 
 variable [AddCommMonoid β] [LinearOrder β]
 
-/-- **Packing recurrence for multiple-choice knapsack.** The packing recurrence: the best total value of a selection with total weight at most `c`,
+/-- The packing recurrence: the best total value of a selection with total weight at most `c`,
 `⊥` if none exists. -/
 def bestPacking : List (List (Item β)) → ℕ → WithBot β
   | [], _ => 0
@@ -99,7 +99,7 @@ def bestPacking : List (List (Item β)) → ℕ → WithBot β
         if item.weight ≤ c then (item.value : WithBot β) + bestPacking groups (c - item.weight)
         else ⊥).foldr max ⊥
 
-/-- **Covering recurrence for multiple-choice knapsack.** The covering recurrence: the best total value of a selection with total weight at least
+/-- The covering recurrence: the best total value of a selection with total weight at least
 `L`, `⊥` if none exists. The residual target `L - weight` is truncated subtraction. -/
 def bestCovering : List (List (Item β)) → ℕ → WithBot β
   | [], L => if L = 0 then 0 else ⊥
@@ -135,7 +135,7 @@ private theorem coe_sum_cons (a : β) (l : List β) :
     (((a :: l).sum : β) : WithBot β) = (a : WithBot β) + ((l.sum : β) : WithBot β) := by
   rw [List.sum_cons, WithBot.coe_add]
 
-/-- **Packing recurrence bounds every feasible selection's value.** The packing recurrence is an upper bound: every feasible selection's value is at most
+/-- The packing recurrence is an upper bound: every feasible selection's value is at most
 `bestPacking`. -/
 theorem le_bestPacking [IsOrderedAddMonoid β] :
     ∀ {groups : List (List (Item β))} {choice : List (Item β)} {c : ℕ},
@@ -154,7 +154,7 @@ theorem le_bestPacking [IsOrderedAddMonoid β] :
   | [], _ :: _, _, hsel, _ => absurd hsel (by simp [IsSelection])
   | _ :: _, [], _, hsel, _ => absurd hsel (by simp [IsSelection])
 
-/-- **Packing recurrence is attained by a feasible selection.** The packing recurrence is attained: a finite value is the value of a feasible selection. -/
+/-- The packing recurrence is attained: a finite value is the value of a feasible selection. -/
 theorem exists_eq_of_bestPacking_eq_coe :
     ∀ {groups : List (List (Item β))} {c : ℕ} {v : β}, bestPacking groups c = v →
       ∃ choice, IsSelection groups choice ∧ totalWeight choice ≤ c ∧ totalValue choice = v
@@ -182,7 +182,7 @@ theorem exists_eq_of_bestPacking_eq_coe :
         · simp only [hle, ↓reduceIte] at hitem
           exact absurd hitem WithBot.bot_ne_coe
 
-/-- **Packing recurrence is bottom iff no selection fits the capacity.** The packing recurrence is `⊥` exactly when no selection fits the capacity. -/
+/-- The packing recurrence is `⊥` exactly when no selection fits the capacity. -/
 theorem bestPacking_eq_bot_iff [IsOrderedAddMonoid β] {groups : List (List (Item β))} {c : ℕ} :
     bestPacking groups c = ⊥ ↔
       ¬ ∃ choice, IsSelection groups choice ∧ totalWeight choice ≤ c := by
@@ -198,7 +198,7 @@ theorem bestPacking_eq_bot_iff [IsOrderedAddMonoid β] {groups : List (List (Ite
         obtain ⟨choice, hsel, hw, -⟩ := exists_eq_of_bestPacking_eq_coe hb
         exact absurd ⟨choice, hsel, hw⟩ h
 
-/-- **Covering recurrence bounds every covering selection's value.** The covering recurrence is an upper bound: every selection of total weight at least `L` has
+/-- The covering recurrence is an upper bound: every selection of total weight at least `L` has
 value at most `bestCovering`. -/
 theorem le_bestCovering [IsOrderedAddMonoid β] :
     ∀ {groups : List (List (Item β))} {choice : List (Item β)} {L : ℕ},
@@ -219,7 +219,7 @@ theorem le_bestCovering [IsOrderedAddMonoid β] :
   | [], _ :: _, _, hsel, _ => absurd hsel (by simp [IsSelection])
   | _ :: _, [], _, hsel, _ => absurd hsel (by simp [IsSelection])
 
-/-- **Covering recurrence is attained by a covering selection.** The covering recurrence is attained: a finite value is the value of a selection of total
+/-- The covering recurrence is attained: a finite value is the value of a selection of total
 weight at least `L`. -/
 theorem exists_eq_of_bestCovering_eq_coe :
     ∀ {groups : List (List (Item β))} {L : ℕ} {v : β}, bestCovering groups L = v →
@@ -249,7 +249,7 @@ theorem exists_eq_of_bestCovering_eq_coe :
             · simp only [totalValue, List.map_cons, List.sum_cons] at hv ⊢
               rw [hv, hitem]
 
-/-- **Covering recurrence is bottom iff no selection reaches the target.** The covering recurrence is `⊥` exactly when no selection reaches the target. -/
+/-- The covering recurrence is `⊥` exactly when no selection reaches the target. -/
 theorem bestCovering_eq_bot_iff [IsOrderedAddMonoid β] {groups : List (List (Item β))} {L : ℕ} :
     bestCovering groups L = ⊥ ↔
       ¬ ∃ choice, IsSelection groups choice ∧ L ≤ totalWeight choice := by
@@ -265,7 +265,7 @@ theorem bestCovering_eq_bot_iff [IsOrderedAddMonoid β] {groups : List (List (It
         obtain ⟨choice, hsel, hw, -⟩ := exists_eq_of_bestCovering_eq_coe hb
         exact absurd ⟨choice, hsel, hw⟩ h
 
-/-- **Bottom-up packing table for multiple-choice knapsack.** The bottom-up packing table: for each suffix of the groups, the row of best values at
+/-- The bottom-up packing table: for each suffix of the groups, the row of best values at
 capacities `0, …, capacity`, each row computed from the next one by one scan of its group per
 cell. -/
 def packingTable (capacity : ℕ) : List (List (Item β)) → List (WithBot β)
@@ -277,7 +277,7 @@ def packingTable (capacity : ℕ) : List (List (Item β)) → List (WithBot β)
           if item.weight ≤ c then (item.value : WithBot β) + next.getD (c - item.weight) ⊥
           else ⊥).foldr max ⊥
 
-/-- **Packing table computes the packing recurrence.** The table computes the recurrence at every capacity `0, …, capacity`. -/
+/-- The table computes the recurrence at every capacity `0, …, capacity`. -/
 theorem packingTable_eq (capacity : ℕ) :
     ∀ groups : List (List (Item β)),
       packingTable capacity groups = (List.range (capacity + 1)).map (bestPacking groups)

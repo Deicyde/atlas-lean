@@ -43,7 +43,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Product set of two coordinate sets in the plane.** The product set `{x | x 0 ∈ A ∧ x 1 ∈ B}`. -/
+/-- The product set `{x | x 0 ∈ A ∧ x 1 ∈ B}`. -/
 def ndt_product (A B : Set ℤ) : Set (Site 2) := {x | x 0 ∈ A ∧ x 1 ∈ B}
 
 theorem ndt_kingSaturated_product (A B : Set ℤ) : npm_KingSaturated (ndt_product A B) := by
@@ -64,7 +64,7 @@ theorem ndt_box_eq_product (n : ℕ) :
 theorem ndt_kingSaturated_box (n : ℕ) : npm_KingSaturated (box 2 n) := by
   rw [ndt_box_eq_product]; exact ndt_kingSaturated_product _ _
 
-/-- **Sublevel set of a separable function.** The sublevel set `{x | φ (x 0) + ψ (x 1) ≤ c}` of a separable function. -/
+/-- The sublevel set `{x | φ (x 0) + ψ (x 1) ≤ c}` of a separable function. -/
 def ndt_sublevel (φ ψ : ℤ → ℤ) (c : ℤ) : Set (Site 2) := {x | φ (x 0) + ψ (x 1) ≤ c}
 
 theorem ndt_kingSaturated_sublevel (φ ψ : ℤ → ℤ) (c : ℤ) :
@@ -80,7 +80,7 @@ theorem ndt_kingSaturated_sublevel (φ ψ : ℤ → ℤ) (c : ℤ) :
     · exact Or.inl hh
     · exact Or.inr (by omega)
 
-/-- **Membership in the star hull.** Membership in the star hull of `K`: sites of `K`, closed under filling the lower right corner
+/-- Membership in the star hull of `K`: sites of `K`, closed under filling the lower right corner
 of a face whose lower left and upper right corners are members, and the lower left corner of
 a face whose lower right and upper left corners are members. -/
 inductive ndt_StarHullMem (K : Set (Site 2)) : Site 2 → Prop
@@ -90,7 +90,7 @@ inductive ndt_StarHullMem (K : Set (Site 2)) : Site 2 → Prop
   | fillTL {f : Site 2} (h10 : ndt_StarHullMem K (npd_P10 f))
       (h01 : ndt_StarHullMem K (npd_P01 f)) : ndt_StarHullMem K (npd_P00 f)
 
-/-- **Star hull of a set of lattice sites.** The star hull of `K`: the smallest superset of `K` closed under the diagonal fill rules. -/
+/-- The star hull of `K`: the smallest superset of `K` closed under the diagonal fill rules. -/
 def ndt_StarHull (K : Set (Site 2)) : Set (Site 2) := {x | ndt_StarHullMem K x}
 
 theorem ndt_subset_starHull (K : Set (Site 2)) : K ⊆ ndt_StarHull K :=
@@ -113,7 +113,7 @@ theorem ndt_starHull_empty : ndt_StarHull (∅ : Set (Site 2)) = ∅ := by
   | fillBL _ _ ih00 _ => exact ih00
   | fillTL h10 _ ih10 _ => exact ih10
 
-/-- **Closure under the diagonal fill rules.** `S` is closed under the two diagonal fill rules of `StatMech.Lattice.ndt_StarHullMem`. -/
+/-- `S` is closed under the two diagonal fill rules of `StatMech.Lattice.ndt_StarHullMem`. -/
 def ndt_FillClosed (S : Set (Site 2)) : Prop :=
   (∀ f, npd_P00 f ∈ S → npd_P11 f ∈ S → npd_P10 f ∈ S) ∧
   (∀ f, npd_P10 f ∈ S → npd_P01 f ∈ S → npd_P00 f ∈ S)

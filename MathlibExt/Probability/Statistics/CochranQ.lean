@@ -48,12 +48,12 @@ open scoped NNReal
 
 variable {Ω : Type*} [MeasurableSpace Ω] {k : ℕ}
 
-/-- **Cochran's heterogeneity statistic Q.** Cochran's heterogeneity statistic `Q = ∑ᵢ vᵢ⁻¹ (Xᵢ - ∑ⱼ wⱼ Xⱼ)²` of the estimates `X` with
+/-- Cochran's heterogeneity statistic `Q = ∑ᵢ vᵢ⁻¹ (Xᵢ - ∑ⱼ wⱼ Xⱼ)²` of the estimates `X` with
 variances `v`, where `w = inverseVarianceWeights v`. -/
 noncomputable def cochranQ (v X : Fin k → ℝ) : ℝ :=
   ∑ i, (v i)⁻¹ * (X i - ∑ j, inverseVarianceWeights v j * X j) ^ 2
 
-/-- **Cochran's Q as a squared projection norm.** Algebraic core of Cochran's theorem for `Q`: if `Xᵢ = θ + √vᵢ zᵢ` with `vᵢ > 0`, then `Q` is
+/-- Algebraic core of Cochran's theorem for `Q`: if `Xᵢ = θ + √vᵢ zᵢ` with `vᵢ > 0`, then `Q` is
 the squared distance from `z` to the line spanned by `a = (vᵢ^{-1/2})ᵢ`, i.e. the squared norm
 of the projection of `z` onto the orthogonal complement of that line. -/
 theorem cochranQ_eq_norm_sq {v : Fin k → ℝ} (hv : ∀ i, 0 < v i) (θ : ℝ)

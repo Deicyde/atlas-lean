@@ -42,19 +42,14 @@ reduction from every language in `NP`
 (`Cslib.CookLevin.PolyManyOneRed`).
 -/
 
-/-- **MAX-SAT instances.** A MAX-SAT instance is a triple $(n, \varphi, K)$ of a natural number $n$
-(the number of variables), a CNF formula $\varphi$ and a natural number $K$ (the bound). -/
+/-- A MAX-SAT instance: number of variables, CNF formula, bound. -/
 abbrev MaxSatInstance := ℕ × Cslib.Logic.PL.CNF × ℕ
 
-/-- **Well-formed MAX-SAT instances.** A MAX-SAT instance $(n, \varphi, K)$ is well formed when
-every literal $(x, b)$ in every clause of $\varphi$ has variable index $x < n$. -/
+/-- Well-formedness of an instance. -/
 def WellFormed (i : MaxSatInstance) : Prop :=
   (∀ clause ∈ i.2.1, ∀ l ∈ clause, l.1 < i.1)
 
-/-- **Feasible MAX-SAT instances.** A MAX-SAT instance $(n, \varphi, K)$ is feasible when there
-are truth values $a_0, \dots, a_{n-1}$ such that at least $K$ of the clauses in the list $\varphi$,
-counted with multiplicity, are satisfied by the assignment $v$ with $v(x) = a_x$ for $x < n$ and
-$v(x) = \mathrm{false}$ for $x \ge n$. -/
+/-- An assignment satisfying at least `K` clauses. -/
 def MaxSatFeasible
     (i : MaxSatInstance) : Prop :=
   ∃ assign : List Bool, assign.length = i.1 ∧
@@ -63,13 +58,7 @@ def MaxSatFeasible
         (fun x => assign.getD x false) clause
 
 open Classical in
-/-- **MAXIMUM SATISFIABILITY as a decision problem.** The decision problem MAXIMUM SATISFIABILITY
-accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of
-MAX-SAT instances, to an instance $(n, \varphi, K)$ that is well formed (every literal of
-$\varphi$ has variable index less than $n$) and feasible (some assignment of truth values to the
-$n$ variables satisfies at least $K$ of the clauses of $\varphi$, counted with multiplicity).
-Bitstrings that do not decode, and bitstrings that decode to instances that are not well formed,
-are rejected. -/
+/-- MAXIMUM SATISFIABILITY as a decision problem over bitstrings. -/
 noncomputable def maxSatDec :
     MetaMathlibExt.ComplexityTheory.DecisionProblem := fun x =>
   match MetaMathlibExt.BitstringEncoding.bitDecode
@@ -77,11 +66,7 @@ noncomputable def maxSatDec :
   | some i => decide (WellFormed i ∧ MaxSatFeasible i)
   | none => false
 
-/-- **MAXIMUM SATISFIABILITY is NP-complete.** The decision problem MAXIMUM SATISFIABILITY over
-bitstrings lies in NP, and every decision problem in NP has a polynomial-time many-one
-reduction to it.
-
-Source: M. R. Garey and D. S. Johnson,
+/-- **MAXIMUM SATISFIABILITY is NP-complete.** Source: M. R. Garey and D. S. Johnson,
 *Computers and Intractability: A Guide to the Theory of NP-Completeness* (1979), MAXIMUM
 SATISFIABILITY. -/
 public theorem_wanted maxSat_npComplete :

@@ -105,7 +105,7 @@ theorem pvr_visits_every_col {a b : Site 2} (w : (hypercubicLattice 2).Walk a b)
     ∃ p ∈ w.support, p 0 = r :=
   pvr_visits_every_coord w 0 hac hbd hcd r hr1 hr2
 
-/-- **First index where a walk reaches a coordinate value.** The first index at which the walk `w` has `k`-th coordinate equal to `r`. -/
+/-- The first index at which the walk `w` has `k`-th coordinate equal to `r`. -/
 noncomputable def pvr_firstIdxAtCoord {a b : Site 2} (w : (hypercubicLattice 2).Walk a b)
     (k : Fin 2) (r : ℤ) (h : ∃ i, (w.getVert i) k = r) : ℕ :=
   Nat.find h

@@ -67,7 +67,7 @@ namespace ProbabilityTheory
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
-/-- **Elementary integrand.** An **elementary integrand** for a filtration `F` indexed by `ℝ≥0`: partition times
+/-- An **elementary integrand** for a filtration `F` indexed by `ℝ≥0`: partition times
 `time 0 ≤ ⋯ ≤ time n` and coefficients `coeff i`, bounded by `bound` and measurable with respect
 to `F (time i)`, representing the process `∑ i, coeff i 1_{(time i, time (i + 1)]}`. Equal
 consecutive times are allowed (the corresponding interval is empty). -/
@@ -87,7 +87,7 @@ structure ElementaryIntegrand (F : Filtration ℝ≥0 mΩ) where
   /-- The coefficients are bounded by `bound`. -/
   abs_coeff_le : ∀ i ω, |coeff i ω| ≤ bound
 
-/-- **Second moment of a Brownian increment.** The second moment of a Brownian increment: `E[(B v - B r)²] = v - r` for `r ≤ v`. -/
+/-- The second moment of a Brownian increment: `E[(B v - B r)²] = v - r` for `r ≤ v`. -/
 theorem IsPreBrownianReal.integral_sub_sq {P : Measure Ω} {B : ℝ≥0 → Ω → ℝ}
     (hB : IsPreBrownianReal B P) {r v : ℝ≥0} (hrv : r ≤ v) :
     P[fun ω ↦ (B v ω - B r ω) ^ 2] = (v : ℝ) - r := by
@@ -150,16 +150,16 @@ namespace ElementaryIntegrand
 
 variable {F : Filtration ℝ≥0 mΩ}
 
-/-- **Elementary integrand as a process.** The elementary integrand as a process: `u ↦ ∑ i, coeff i 1_{(time i, time (i + 1)]}(u)`. -/
+/-- The elementary integrand as a process: `u ↦ ∑ i, coeff i 1_{(time i, time (i + 1)]}(u)`. -/
 noncomputable def toProcess (H : ElementaryIntegrand F) (u : ℝ≥0) (ω : Ω) : ℝ :=
   ∑ i, (Set.Ioc (H.time i.castSucc) (H.time i.succ)).indicator (fun _ ↦ H.coeff i ω) u
 
-/-- **Itô integral of an elementary integrand.** The **Itô integral** of an elementary integrand against a process `B`:
+/-- The **Itô integral** of an elementary integrand against a process `B`:
 `t ↦ ∑ i, coeff i (B (time (i + 1) ∧ t) - B (time i ∧ t))`. -/
 def itoIntegral (H : ElementaryIntegrand F) (B : ℝ≥0 → Ω → ℝ) (t : ℝ≥0) (ω : Ω) : ℝ :=
   ∑ i, H.coeff i ω * (B (min (H.time i.succ) t) ω - B (min (H.time i.castSucc) t) ω)
 
-/-- **Single-step elementary integrand.** The elementary integrand `ξ 1_{(a, b]}` for `a ≤ b` and an `F a`-measurable `ξ` bounded by
+/-- The elementary integrand `ξ 1_{(a, b]}` for `a ≤ b` and an `F a`-measurable `ξ` bounded by
 `C`. -/
 def single (a b : ℝ≥0) (hab : a ≤ b) (ξ : Ω → ℝ) (hξ : Measurable[F a] ξ) (C : ℝ)
     (hξC : ∀ ω, |ξ ω| ≤ C) : ElementaryIntegrand F where
@@ -174,7 +174,7 @@ def single (a b : ℝ≥0) (hab : a ≤ b) (ξ : Ω → ℝ) (hξ : Measurable[F
   bound := C
   abs_coeff_le := fun _ ↦ hξC
 
-/-- **Process of a single-step elementary integrand.** The process of `single a b hab ξ hξ C hξC` is `u ↦ ξ 1_{(a, b]}(u)`. -/
+/-- The process of `single a b hab ξ hξ C hξC` is `u ↦ ξ 1_{(a, b]}(u)`. -/
 theorem toProcess_single (a b : ℝ≥0) (hab : a ≤ b) (ξ : Ω → ℝ) (hξ : Measurable[F a] ξ)
     (C : ℝ) (hξC : ∀ ω, |ξ ω| ≤ C) :
     (single a b hab ξ hξ C hξC).toProcess =
@@ -191,7 +191,7 @@ theorem itoIntegral_single (a b : ℝ≥0) (hab : a ≤ b) (ξ : Ω → ℝ) (h�
       ξ ω * (B (min b t) ω - B (min a t) ω) :=
   Fin.sum_univ_one _
 
-/-- **Elementary Itô integral vanishes at time zero.** The elementary Itô integral vanishes at time `0`. -/
+/-- The elementary Itô integral vanishes at time `0`. -/
 @[simp]
 theorem itoIntegral_zero (H : ElementaryIntegrand F) (B : ℝ≥0 → Ω → ℝ) :
     H.itoIntegral B 0 = 0 := by
@@ -318,7 +318,7 @@ theorem integral_itoIntegral_sq_eq_sum (H : ElementaryIntegrand F) {P : Measure 
         fun ω ↦ H.term B t i ω * H.term B t j ω from funext fun _ ↦ mul_comm _ _] at this
     · exact H.integral_term_mul_term_of_lt hB hBF hInd t h
 
-/-- **Partition intervals of an elementary integrand are disjoint.** The partition intervals of an elementary integrand are pairwise disjoint. -/
+/-- The partition intervals of an elementary integrand are pairwise disjoint. -/
 theorem disjoint_Ioc_time
     (H : ElementaryIntegrand F) {i j : Fin H.n} (hij : i ≠ j) :
     Disjoint (Set.Ioc (H.time i.castSucc) (H.time i.succ))
@@ -331,7 +331,7 @@ theorem disjoint_Ioc_time
     exact (min_le_right _ _).trans <| (H.monotone_time (Fin.succ_le_castSucc_iff.mpr h)).trans
       (le_max_left _ _)
 
-/-- **Elementary integrand on a partition interval.** On its `i`-th interval, an elementary integrand equals its `i`-th coefficient. -/
+/-- On its `i`-th interval, an elementary integrand equals its `i`-th coefficient. -/
 theorem toProcess_eq_of_mem (H : ElementaryIntegrand F) {i : Fin H.n} {u : ℝ≥0}
     (hu : u ∈ Set.Ioc (H.time i.castSucc) (H.time i.succ)) (ω : Ω) :
     H.toProcess u ω = H.coeff i ω := by
@@ -381,7 +381,7 @@ private theorem integral_indicator_Ioc {a b t : ℝ} (ha : 0 ≤ a) (hab : a ≤
   · rw [min_eq_right h, min_eq_right (h.trans hab), max_eq_right (by linarith)]
     ring
 
-/-- **Time integral of a squared elementary integrand.** The time integral of the squared elementary integrand, path by path:
+/-- The time integral of the squared elementary integrand, path by path:
 `∫_0^t H_u² du = ∑ i, ξ_i² (t_{i+1} ∧ t - t_i ∧ t)`. -/
 theorem integral_toProcess_sq (H : ElementaryIntegrand F) (t : ℝ≥0) (ω : Ω) :
     ∫ u in (0 : ℝ)..t, H.toProcess (Real.toNNReal u) ω ^ 2 =

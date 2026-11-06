@@ -40,7 +40,7 @@ and use that expansion by `q` is the `q`-th power.
 
 @[expose] public section
 
-/-- **Polynomial evaluation commutes with the Frobenius power.** Evaluating `p` at `x ^ q` equals the `q`-th power of evaluating `p` at
+/-- Evaluating `p` at `x ^ q` equals the `q`-th power of evaluating `p` at
 `x`, where `q` is the cardinality of the finite field `F`. -/
 theorem Polynomial.aeval_pow_card_eq_pow_card (F : Type*) [Field F] [Fintype F]
     (E : Type*) [CommRing E] [Algebra F E] (p : Polynomial F) (x : E) :

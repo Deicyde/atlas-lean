@@ -20,25 +20,20 @@ public import Mathlib.RingTheory.Ideal.Norm.AbsNorm
 
 namespace NumberField
 
-/-- **Places of a number field.** For a number field $K$, the places of $K$ form the disjoint union
-of the infinite places of $K$ (the absolute values coming from complex embeddings of $K$) and the
-finite places of $K$ (the absolute values coming from nonzero prime ideals of the ring of
-integers $\mathcal{O}_K$). -/
+/-- The places of a number field: infinite places together with finite
+places, using Mathlib's canonical `NumberField.FinitePlace K` API for
+the finite places. -/
 def Place (K : Type*) [Field K] [NumberField K] : Type _ :=
   InfinitePlace K ⊕ FinitePlace K
 
 namespace Place
 
-/-- **Infinite places as places.** For a number field $K$, each infinite place $v$ of $K$ is
-regarded as a place of $K$ via the inclusion of the infinite places into the disjoint union of the
-infinite and finite places of $K$. -/
+/-- An infinite place, viewed as a place. -/
 def infinitePlace {K : Type*} [Field K] [NumberField K]
     (v : InfinitePlace K) : Place K :=
   Sum.inl v
 
-/-- **Finite places as places.** For a number field $K$, each finite place $v$ of $K$ is regarded
-as a place of $K$ via the inclusion of the finite places into the disjoint union of the infinite
-and finite places of $K$. -/
+/-- A finite place, viewed as a place. -/
 def finitePlace {K : Type*} [Field K] [NumberField K]
     (v : FinitePlace K) : Place K :=
   Sum.inr v
@@ -47,10 +42,8 @@ end Place
 
 namespace FinitePlace
 
-/-- **Residue norm of a finite place.** Let $v$ be a finite place of a number field $K$ and
-$\mathfrak{p}_v$ the corresponding nonzero prime ideal of the ring of integers $\mathcal{O}_K$. The
-residue norm $N(v)$ is the absolute norm $|\mathcal{O}_K / \mathfrak{p}_v|$ of $\mathfrak{p}_v$, the
-cardinality of the residue field at $v$, regarded as a real number. -/
+/-- The residue-field cardinality `N(v)` at a finite place, as a real
+number. This is the absolute norm of the corresponding prime ideal. -/
 noncomputable def residueNorm {K : Type*} [Field K] [NumberField K]
     (v : FinitePlace K) : ℝ :=
   (Ideal.absNorm v.maximalIdeal.asIdeal : ℝ)

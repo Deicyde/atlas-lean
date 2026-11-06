@@ -47,7 +47,7 @@ open StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind
 
 variable {m : ℕ}
 
-/-- **Cell to the left of a walk step.** The cell to the left of step `k` of the walk. See also `StatMech.Onsager.Orientation.leftCell`;
+/-- The cell to the left of step `k` of the walk. See also `StatMech.Onsager.Orientation.leftCell`;
   they agree by `StatMech.Onsager.UmlaufsatzFinal.leftCell_bridge`. -/
 def leftCell (d : Fin (m + 3) → Fin 4) (k : Fin (m + 3)) : ℤ × ℤ :=
   match d k with
@@ -56,7 +56,7 @@ def leftCell (d : Fin (m + 3) → Fin 4) (k : Fin (m + 3)) : ℤ × ℤ :=
   | 2 => ((pos d k).1 - 1, (pos d k).2 - 1)
   | 3 => ((pos d k).1, (pos d k).2 - 1)
 
-/-- **Cell to the right of a walk step.** The cell to the right of step `k` of the walk. -/
+/-- The cell to the right of step `k` of the walk. -/
 def rightCell (d : Fin (m + 3) → Fin 4) (k : Fin (m + 3)) : ℤ × ℤ :=
   match d k with
   | 0 => ((pos d k).1, (pos d k).2 - 1)
@@ -64,7 +64,7 @@ def rightCell (d : Fin (m + 3) → Fin 4) (k : Fin (m + 3)) : ℤ × ℤ :=
   | 2 => ((pos d k).1 - 1, (pos d k).2)
   | 3 => ((pos d k).1 - 1, (pos d k).2 - 1)
 
-/-- **Vertices of a walk's image graph are adjacent only to walk neighbours.** In the image graph of a simple closed walk, a vertex is adjacent only to its walk neighbours. -/
+/-- In the image graph of a simple closed walk, a vertex is adjacent only to its walk neighbours. -/
 theorem imageGraph_not_adj_of_neighbours (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (k : Fin (m + 3)) (q : Site 2)
@@ -73,7 +73,7 @@ theorem imageGraph_not_adj_of_neighbours (d : Fin (m + 3) → Fin 4)
   rw [imageGraph_adj_pos_iff d hclosed hsimple k q]
   tauto
 
-/-- **Consecutive left cells on a straight step are face-adjacent.** Going straight, consecutive left cells are adjacent in the face graph of the walk. -/
+/-- Going straight, consecutive left cells are adjacent in the face graph of the walk. -/
 theorem leftCell_faceAdj_of_straight (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (k : Fin (m + 3)) (hstraight : d (k + 1) = d k) :
@@ -200,7 +200,7 @@ theorem leftCell_faceAdj_of_straight (d : Fin (m + 3) → Fin 4)
       · have h0 := congrFun h 0; have h1 := congrFun h 1
         simp [posSite, hnn] at h0 h1
 
-/-- **Consecutive left cells have the same ray parity.** Consecutive left cells of a simple closed walk without right turns have the same ray parity. -/
+/-- Consecutive left cells of a simple closed walk without right turns have the same ray parity. -/
 theorem leftCell_parity_succ (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin (m + 3), d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
@@ -223,7 +223,7 @@ theorem leftCell_parity_succ (d : Fin (m + 3) → Fin 4)
       simp [leftCell, hdk, hnext, hpos]
       try ring_nf
 
-/-- **All left cells have the same ray parity.** All left cells of a simple closed walk without right turns have the same ray parity. -/
+/-- All left cells of a simple closed walk without right turns have the same ray parity. -/
 theorem leftCell_parity_eq_of_reachable (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin (m + 3), d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
@@ -248,7 +248,7 @@ theorem leftCell_parity_eq_of_reachable (d : Fin (m + 3) → Fin 4)
           exact leftCell_parity_succ d hclosed hsimple hreflexfree a
       exact hab'.trans ih
 
-/-- **Every left cell has ray parity one.** Every left cell of a simple closed walk without right turns is inside. -/
+/-- Every left cell of a simple closed walk without right turns is inside. -/
 theorem leftCell_parity_one (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin (m + 3), d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
@@ -273,7 +273,7 @@ theorem leftCell_parity_one (d : Fin (m + 3) → Fin 4)
     connected_cycleGraph_add_one k (M - 1)
   exact (leftCell_parity_eq_of_reachable d hclosed hsimple hreflexfree hreach).trans hanchor
 
-/-- **Every left cell lies in the bounded face.** Every left cell of a simple closed walk without right turns lies in the bounded face. -/
+/-- Every left cell of a simple closed walk without right turns lies in the bounded face. -/
 theorem leftCell_mem_interiorCells (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin (m + 3), d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
@@ -282,7 +282,7 @@ theorem leftCell_mem_interiorCells (d : Fin (m + 3) → Fin 4)
   rw [mem_interiorCells_iff_rayParity]
   exact leftCell_parity_one d hclosed hsimple hreflexfree k
 
-/-- **Cells on either side of a step lie in different faces.** The two cells on either side of a walk step are in different face components. -/
+/-- The two cells on either side of a walk step are in different face components. -/
 theorem walkRegion_flanking_not_reachable (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (k : Fin (m + 3)) {f g : Site 2}
@@ -332,7 +332,7 @@ theorem walkRegion_flanking_not_reachable (d : Fin (m + 3) → Fin 4)
   rw [hdel] at hsep
   exact hsep
 
-/-- **Left and right cells of a step share that step.** The left and right cells of a step are adjacent faces sharing that step. -/
+/-- The left and right cells of a step are adjacent faces sharing that step. -/
 theorem left_right_flanking (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin (m + 3)) :
     (hypercubicLattice 2).Adj (cellFace (leftCell d k)) (cellFace (rightCell d k)) ∧
@@ -394,7 +394,7 @@ theorem left_right_flanking (d : Fin (m + 3) → Fin 4)
       right
       constructor <;> funext i <;> fin_cases i <;> simp [posSite, hp, hn]
 
-/-- **No right cell lies in the bounded face.** No right cell of a simple closed walk without right turns lies in the bounded face. -/
+/-- No right cell of a simple closed walk without right turns lies in the bounded face. -/
 theorem rightCell_not_mem_interiorCells (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin (m + 3), d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
@@ -407,7 +407,7 @@ theorem rightCell_not_mem_interiorCells (d : Fin (m + 3) → Fin 4)
   obtain ⟨hlat, hshared⟩ := left_right_flanking d hclosed k
   exact walkRegion_flanking_not_reachable d hclosed hsimple k hlat hshared hreach
 
-/-- **Corner count as a sum of four indicators.** The corner count at `v` as a sum of four indicators. See also
+/-- The corner count at `v` as a sum of four indicators. See also
   `StatMech.Onsager.CellEuler.cornerCount_eq_inter`. -/
 theorem cornerCount_eq_indicators (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) :
     cornerCount S v =
@@ -435,7 +435,7 @@ theorem cornerCount_eq_indicators (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) :
     linarith [h]
   exact_mod_cast h'
 
-/-- **Corner count of the bounded face at a walk vertex.** At the vertex after step `k`, the bounded face has one cell after a left turn and two after a
+/-- At the vertex after step `k`, the bounded face has one cell after a left turn and two after a
   straight step. -/
 theorem cornerCount_at_walkVertex (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
@@ -568,7 +568,7 @@ theorem cornerCount_at_walkVertex (d : Fin (m + 3) → Fin 4)
       try ring_nf
       simp [hl1, hrk, hr1, hfour]
 
-/-- **Zero corner weight of the bounded face off the walk.** Points off the walk have corner weight `0` for the bounded face. -/
+/-- Points off the walk have corner weight `0` for the bounded face. -/
 theorem cornerWeight_zero_of_not_walkVertex (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin (m + 3), d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)
@@ -610,7 +610,7 @@ theorem cornerWeight_zero_of_not_walkVertex (d : Fin (m + 3) → Fin 4)
     rw [cornerCount_eq_indicators]
     simp [hNE, hNW, hSE, hSW, cornerWeight]
 
-/-- **Corner weight of the bounded face at a walk vertex.** The corner weight of the bounded face at the vertex after step `k` is `1` after a left turn and
+/-- The corner weight of the bounded face at the vertex after step `k` is `1` after a left turn and
   `0` after a straight step. -/
 theorem cornerWeight_at_walkVertex (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))
@@ -622,7 +622,7 @@ theorem cornerWeight_at_walkVertex (d : Fin (m + 3) → Fin 4)
   rw [cornerCount_at_walkVertex d hclosed hsimple hreflexfree k]
   by_cases ht : d (k + 1) - d k = 1 <;> simp [ht, cornerWeight]
 
-/-- **Corner defect of the bounded face equals the number of left turns.** The corner defect of the bounded face of a simple closed walk without right turns equals its
+/-- The corner defect of the bounded face of a simple closed walk without right turns equals its
   number of left turns. -/
 theorem cornerDiff_interiorCells_eq_cc (d : Fin (m + 3) → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0) (hsimple : Function.Injective (pos d))

@@ -225,24 +225,24 @@ theorem measureReal_crossing_product_le {E : Type*} (μ : Measure (ConfigSpace E
     μ.real A * μ.real A ≤ μ.real C * μ.real Set.univ :=
   measureReal_glue_ge_mul μ hpa hAm hAm hA hA hsub
 
-/-- **Open path from the left side of a rectangle to a point.** An open path inside `rect a m c d` from its left side to the point `z` (on its right side). -/
+/-- An open path inside `rect a m c d` from its left side to the point `z` (on its right side). -/
 def LeftHalfCrossing (ω : ConfigSpace (Sym2 (Site 2))) (a m c d : ℤ) (z : Site 2)
     (hz : z ∈ rect a m c d) : Prop :=
   ∃ xL : leftSide a m c d,
     ConnectedWithin 2 ω (rect a m c d) ⟨xL, leftSide_subset xL.2⟩ ⟨z, hz⟩
 
-/-- **Open path from a point to the right side of a rectangle.** An open path inside `rect m b c d` from the point `z` (on its left side) to its right side. -/
+/-- An open path inside `rect m b c d` from the point `z` (on its left side) to its right side. -/
 def RightHalfCrossing (ω : ConfigSpace (Sym2 (Site 2))) (m b c d : ℤ) (z : Site 2)
     (hz : z ∈ rect m b c d) : Prop :=
   ∃ yR : rightSide m b c d,
     ConnectedWithin 2 ω (rect m b c d) ⟨z, hz⟩ ⟨yR, rightSide_subset yR.2⟩
 
-/-- **Left half-crossing event.** The event `LeftHalfCrossing`. -/
+/-- The event `LeftHalfCrossing`. -/
 def leftHalfCrossingEvent (a m c d : ℤ) (z : Site 2) (hz : z ∈ rect a m c d) :
     Set (ConfigSpace (Sym2 (Site 2))) :=
   {ω | LeftHalfCrossing ω a m c d z hz}
 
-/-- **Right half-crossing event.** The event `RightHalfCrossing`. -/
+/-- The event `RightHalfCrossing`. -/
 def rightHalfCrossingEvent (m b c d : ℤ) (z : Site 2) (hz : z ∈ rect m b c d) :
     Set (ConfigSpace (Sym2 (Site 2))) :=
   {ω | RightHalfCrossing ω m b c d z hz}
@@ -261,7 +261,7 @@ theorem rightHalfCrossingEvent_isIncreasing (m b c d : ℤ) (z : Site 2)
   obtain ⟨yR, hc⟩ := hω
   exact ⟨yR, StatMech.TwoDim.connectedWithin_mono hωω' hc⟩
 
-/-- **Measurability of the left half-crossing event.** A left half-crossing event is measurable. -/
+/-- A left half-crossing event is measurable. -/
 theorem measurableSet_leftHalfCrossingEvent (a m c d : ℤ) (z : Site 2)
     (hz : z ∈ rect a m c d) :
     MeasurableSet (leftHalfCrossingEvent a m c d z hz) := by
@@ -275,7 +275,7 @@ theorem measurableSet_leftHalfCrossingEvent (a m c d : ℤ) (z : Site 2)
   exact MeasurableSet.iUnion fun x =>
     measurableSet_connectedWithin _ ⟨(x : Site 2), leftSide_subset x.2⟩ ⟨z, hz⟩
 
-/-- **Measurability of the right half-crossing event.** A right half-crossing event is measurable. -/
+/-- A right half-crossing event is measurable. -/
 theorem measurableSet_rightHalfCrossingEvent (m b c d : ℤ) (z : Site 2)
     (hz : z ∈ rect m b c d) :
     MeasurableSet (rightHalfCrossingEvent m b c d z hz) := by

@@ -59,7 +59,7 @@ private theorem isRadical_vanishingIdeal_ideal {X : Scheme.{u}} (Z : Closeds X)
   rw [vanishingIdeal_ideal]
   exact PrimeSpectrum.isRadical_vanishingIdeal _
 
-/-- **The subscheme cut out by a vanishing ideal is reduced.** The subscheme cut out by a vanishing ideal is reduced. -/
+/-- The subscheme cut out by a vanishing ideal is reduced. -/
 theorem isReduced_subscheme_vanishingIdeal {X : Scheme.{u}} (Z : Closeds X) :
     IsReduced (vanishingIdeal Z).subscheme := by
   let I := vanishingIdeal Z
@@ -93,7 +93,7 @@ private theorem basicOpen_inter_eq_empty_of_mem_vanishingIdeal {X : Scheme.{u}} 
   rw [U.2.fromSpec_preimage_basicOpen] at hp'
   exact absurd hp ((PrimeSpectrum.mem_basicOpen _ _).mp hp')
 
-/-- **Vanishing ideal lies in the kernel of maps from reduced schemes.** The vanishing ideal of a closed subset is contained in the kernel of
+/-- The vanishing ideal of a closed subset is contained in the kernel of
 any map from a reduced scheme landing in the subset. -/
 theorem vanishingIdeal_le_ker {X : Scheme.{u}} {T : Scheme.{u}} [IsReduced T] (Z : Closeds X)
     (f : T ⟶ X) (hf : Set.range f ⊆ Z) : vanishingIdeal Z ≤ f.ker := by
@@ -111,7 +111,7 @@ theorem vanishingIdeal_le_ker {X : Scheme.{u}} {T : Scheme.{u}} [IsReduced T] (Z
     exact hmem
   exact (basicOpen_eq_bot_iff _).mp hb
 
-/-- **Universal property of the reduced subscheme on a closed subset.** A map from a reduced scheme landing in a closed subset lifts uniquely
+/-- A map from a reduced scheme landing in a closed subset lifts uniquely
 to the subscheme cut out by the vanishing ideal. -/
 theorem exists_lift_subschemeι_vanishingIdeal {X : Scheme.{u}} {T : Scheme.{u}} [IsReduced T]
     (Z : Closeds X) (f : T ⟶ X) (hf : Set.range f ⊆ Z) :
@@ -123,7 +123,7 @@ theorem exists_lift_subschemeι_vanishingIdeal {X : Scheme.{u}} {T : Scheme.{u}}
   · intro g hg
     rw [← cancel_mono (vanishingIdeal Z).subschemeι, hg, IsClosedImmersion.lift_fac]
 
-/-- **Reducedness and kernel bound for the vanishing-ideal subscheme.** The subscheme cut out by a vanishing ideal is reduced, and its ideal
+/-- The subscheme cut out by a vanishing ideal is reduced, and its ideal
 sheaf is contained in the kernel of any map from a reduced scheme landing
 in the subset. -/
 theorem isReduced_subscheme_vanishingIdeal_and_le_ker {X : Scheme.{u}} (Z : Closeds X) :
@@ -136,7 +136,7 @@ end AlgebraicGeometry.Scheme.IdealSheafData
 
 namespace AlgebraicGeometry
 
-/-- **Unique lifting of maps from reduced schemes through closed immersions.** A map from a reduced scheme into a closed immersion whose range
+/-- A map from a reduced scheme into a closed immersion whose range
 contains the image lifts uniquely. -/
 theorem IsClosedImmersion.existsUnique_comp_eq_of_range_subset_of_isReduced
     {X Y T : Scheme.{u}} (i : Y ⟶ X) [IsClosedImmersion i] (f : T ⟶ X) [IsReduced T]

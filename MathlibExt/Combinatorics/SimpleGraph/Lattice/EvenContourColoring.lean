@@ -52,23 +52,23 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Four nearest neighbours of a site.** The four nearest neighbours of `v`: right, left, up, down. -/
+/-- The four nearest neighbours of `v`: right, left, up, down. -/
 def jce_nbr (v : Site 2) : Fin 4 → Site 2
   | 0 => ![v 0 + 1, v 1]
   | 1 => ![v 0 - 1, v 1]
   | 2 => ![v 0, v 1 + 1]
   | 3 => ![v 0, v 1 - 1]
 
-/-- **Degree of a site in an edge set.** The number of edges of `E` at the site `v`. -/
+/-- The number of edges of `E` at the site `v`. -/
 noncomputable def jce_degree (E : Set (Sym2 (Site 2))) (v : Site 2) : ℕ := by
   classical
   exact (Finset.univ.filter (fun i : Fin 4 => s(v, jce_nbr v i) ∈ E)).card
 
-/-- **Closed contour as an even-degree edge set.** Every site has even degree in the edge set `E`. -/
+/-- Every site has even degree in the edge set `E`. -/
 def jce_ClosedContour (E : Set (Sym2 (Site 2))) : Prop :=
   ∀ v : Site 2, Even (jce_degree E v)
 
-/-- **Horizontal edges below a face in its column.** The horizontal edges in the column `[a, a + 1]` at heights at most `b`. -/
+/-- The horizontal edges in the column `[a, a + 1]` at heights at most `b`. -/
 def jce_horizBelow (a b : ℤ) : Sym2 (Site 2) → Prop := by
   classical
   refine Sym2.lift ⟨fun x y =>
@@ -82,7 +82,7 @@ def jce_horizBelow (a b : ℤ) : Sym2 (Site 2) → Prop := by
   Iff.rfl
 
 open Classical in
-/-- **Parity coloring of faces by an edge set.** The parity coloring of faces: `f` is colored when an odd number of horizontal edges of `E`
+/-- The parity coloring of faces: `f` is colored when an odd number of horizontal edges of `E`
 lie directly below it in its column. -/
 noncomputable def jce_phi (E : Finset (Sym2 (Site 2))) (f : Site 2) : Prop :=
   Odd (E.filter (fun e => jce_horizBelow (f 0) (f 1) e)).card
@@ -171,7 +171,7 @@ theorem jce_phi_topStep (E : Finset (Sym2 (Site 2))) (a b : ℤ) :
   · rw [ite_eq_right hin]
     simp only [hin, false_iff, add_zero, not_iff]
 
-/-- **Parity coloring changes across vertical contour edges.** For every closed contour `E`, the parity coloring changes between horizontally adjacent faces
+/-- For every closed contour `E`, the parity coloring changes between horizontally adjacent faces
 exactly when the vertical edge between them is in `E`. -/
 def jce_HorizStepResidue : Prop :=
   ∀ (E : Finset (Sym2 (Site 2))), jce_ClosedContour (E : Set (Sym2 (Site 2))) →
@@ -179,7 +179,7 @@ def jce_HorizStepResidue : Prop :=
       (jce_phi E ![a, b] ↔ ¬ jce_phi E ![a + 1, b]))
 
 open Classical in
-/-- **Number of horizontal contour edges below a height.** The number of horizontal edges of `E` below height `b` in the column `[c, c + 1]`. -/
+/-- The number of horizontal edges of `E` below height `b` in the column `[c, c + 1]`. -/
 noncomputable def jce_Hc (E : Finset (Sym2 (Site 2))) (c b : ℤ) : ℕ :=
   (E.filter (fun e => jce_horizBelow c b e)).card
 
@@ -342,7 +342,7 @@ theorem jce_phi_compat (hres : jce_HorizStepResidue) (E : Finset (Sym2 (Site 2))
         rw [sharedPrimalEdge_right]; unfold faceCorner10 faceCorner11; norm_num]
       rw [key]
 
-/-- **Edge flip relation of an edge set.** The flip relation of `E`: the primal edge between the faces `a` and `b` is in `E`. -/
+/-- The flip relation of `E`: the primal edge between the faces `a` and `b` is in `E`. -/
 def jce_edgeFlip (E : Finset (Sym2 (Site 2))) (a b : Site 2) : Prop :=
   sharedPrimalEdge a b ∈ E
 

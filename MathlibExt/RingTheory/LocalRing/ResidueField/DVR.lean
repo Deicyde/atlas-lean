@@ -18,7 +18,7 @@ public import Mathlib.RingTheory.Unramified.Basic
 import Mathlib.RingTheory.Filtration
 
 /-!
-# Residue-field functoriality and faithfulness for DVR extensions
+# DVR residue-field functoriality: source-map stage for ATLAS N211
 
 This file is a prerequisite stage for ATLAS NumberTheoryI item N211,
 Theorem 10.13 (Section 10.2), at atlas-lean revision
@@ -86,10 +86,7 @@ namespace DVRResidue
 namespace AlgHom
 
 omit [Module.Finite A B] [IsLocalHom (algebraMap A B)] in
-/-- **Algebra maps from a DVR into a finite local DVR extension are local.** Let $A$, $B$, $C$
-be discrete valuation rings, with $B$ and $C$ algebras over $A$, where $C$ is finite as an
-$A$-module and the structure map $A \to C$ is a local homomorphism. Then every $A$-algebra
-homomorphism $B \to C$ is a local homomorphism. -/
+/-- Every `A`-algebra map between finite local DVR extensions is local. -/
 theorem isLocalHom_of_isDiscreteValuationRing (f : B →ₐ[A] C) :
     IsLocalHom f := by
   have hmaxC : (IsLocalRing.maximalIdeal C).IsMaximal :=
@@ -183,12 +180,7 @@ theorem isLocalHom_of_isDiscreteValuationRing (f : B →ₐ[A] C) :
 
 end AlgHom
 
-/-- **Induced map on residue fields of DVR extensions.** Let $A$, $B$, $C$ be discrete valuation
-rings, with $B$ and $C$ algebras over $A$ whose structure maps are local homomorphisms, where $C$
-is finite as an $A$-module. Write $\kappa(R)$ for the residue field of a local ring $R$. An
-$A$-algebra homomorphism $f \colon B \to C$ induces the $\kappa(A)$-algebra homomorphism
-$\kappa(B) \to \kappa(C)$ that sends the residue class of $b \in B$ to the residue class of
-$f(b)$. -/
+/-- Induced map on residue fields from `IsLocalRing.ResidueField.map`. -/
 noncomputable def residueFieldMapAlgHom (f : B →ₐ[A] C) :
     IsLocalRing.ResidueField B →ₐ[IsLocalRing.ResidueField A]
       IsLocalRing.ResidueField C :=
@@ -219,12 +211,8 @@ theorem residueFieldMapAlgHom_comp (f : B →ₐ[A] C) (g : C →ₐ[A] D) :
   simp
 
 omit [Module.Finite A B] in
-/-- **Residue-field maps determine algebra maps out of a formally unramified DVR extension.**
-Let $A$, $B$, $C$ be discrete valuation rings, with $B$ and $C$ algebras over $A$ whose structure
-maps are local homomorphisms, where $C$ is finite as an $A$-module and $B$ is formally unramified
-over $A$. Write $\kappa(R)$ for the residue field of a local ring $R$. Then two $A$-algebra
-homomorphisms $B \to C$ that induce the same $\kappa(A)$-algebra homomorphism
-$\kappa(B) \to \kappa(C)$ are equal. -/
+/-- Faithfulness of residue-field formation: for a formally unramified
+extension, distinct `A`-algebra maps induce distinct residue-field maps. -/
 theorem residueFieldMapAlgHom_injective
     [Algebra.FormallyUnramified A B] :
     Function.Injective

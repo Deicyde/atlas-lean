@@ -95,7 +95,7 @@ theorem ccs_closedLoop_two_components {a : Site 2} (Vc : (hypercubicLattice 2).W
   have hqS : q ∉ jec_leftRegion Vc := ccs_closedLoop_outside_far Vc hq
   exact jcs_two_components_of_sides (jec_leftRegion Vc) hpS hqS hin hout
 
-/-- **Set of sites is the inside of a closed lattice walk.** Some closed lattice walk has odd ray count exactly at the sites of `K`, so `K` is the inside
+/-- Some closed lattice walk has odd ray count exactly at the sites of `K`, so `K` is the inside
 of that walk. -/
 def ccs_OrbitIsLoop (K : Set (Site 2)) : Prop :=
   ∃ (a : Site 2) (Vc : (hypercubicLattice 2).Walk a a),

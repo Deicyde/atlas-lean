@@ -30,22 +30,13 @@ FC's `FormalConjecturesForMathlib`). The `answer(True)` wrapper is elaborated
 to a direct proposition. Status: resolved true (Schipperus [Sc10] and Darby,
 independently). -/
 
-/-- **Erdős Problem 591.** The statement that, for $\alpha = \omega^{\omega^2}$, every red/blue
-colouring of the edges of the complete graph on the ordinals less than $\alpha$ (that is, every
-pair of complementary simple graphs, red and blue, on this set) has a red clique whose order
-type is $\alpha$ or a blue clique with exactly $3$ elements. In partition notation,
-$\alpha \to (\alpha, 3)^2$. -/
+/-- Every red/blue colouring of `K_{ω^ω²}` has a red `K_α` or a blue `K₃`. -/
 def conjecture : Prop :=
   OrdinalCardinalRamsey (ω ^ ω ^ 2 : Ordinal.{u}) (ω ^ ω ^ 2 : Ordinal.{u}) (3 : Cardinal.{u})
 
 /--
-**Erdős Problem 591 is true.** Let $\alpha = \omega^{\omega^2}$. For every red/blue colouring of
-the edges of the complete graph on the ordinals less than $\alpha$, that is, every pair of
-complementary simple graphs (red and blue) on this set, there is a red clique whose order type
-is $\alpha$ or a blue clique with exactly $3$ elements. In partition notation,
-$\alpha \to (\alpha, 3)^2$.
-
-Source: Schipperus [Sc10] and Darby, independently, per
+Resolved true: Resolved true (Schipperus [Sc10] and Darby, independently), per
+erdosproblems.com/591. Source: Schipperus [Sc10] and Darby, independently, per
 erdosproblems.com/591, https://www.erdosproblems.com/591. Moved from
 `OpenConjectures/Combinatorics/ErdosProblem591`.
 -/

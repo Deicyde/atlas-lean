@@ -106,7 +106,7 @@ variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
 /-! ### Wald covariance identities in an observational linear moment model -/
 
-/-- **Linear moment model for instrumental variables.** An observational linear moment model: variables `Z`, `X`, `Y` and `U` on a probability
+/-- An observational linear moment model: variables `Z`, `X`, `Y` and `U` on a probability
 space, all square integrable, with the algebraic decomposition `Y = α + β X + U`.
 The residual `U` is an arbitrary observed-variable function. Consequently `outcome_eq` does not
 exclude direct effects of `Z` under interventions, and `β` is only the coefficient in this
@@ -138,7 +138,7 @@ namespace LinearMomentModel
 
 variable {μ : Measure Ω} [IsProbabilityMeasure μ] (M : LinearMomentModel μ)
 
-/-- **Covariance with the outcome in a linear moment model.** The covariance of any square-integrable variable with the outcome splits along the
+/-- The covariance of any square-integrable variable with the outcome splits along the
 observational decomposition: `Cov(V, Y) = β Cov(V, X) + Cov(V, U)`. -/
 theorem covariance_outcome {V : Ω → ℝ} (hV : MemLp V 2 μ) :
     cov[V, M.outcome; μ] =
@@ -151,7 +151,7 @@ theorem covariance_outcome {V : Ω → ℝ} (hV : MemLp V 2 μ) :
   rw [hY, covariance_const_add_right ((hXL.add M.memLp_residual).integrable one_le_two),
     covariance_add_right hV hXL M.memLp_residual, covariance_smul_right]
 
-/-- **Wald ratio identity.** The Wald covariance identity: if `Cov(Z, U) = 0` and `Cov(Z, X) ≠ 0`, then
+/-- The Wald covariance identity: if `Cov(Z, U) = 0` and `Cov(Z, X) ≠ 0`, then
 `Cov(Z, Y) / Cov(Z, X) = β`. For a two-valued `Z` the ratio is the grouping estimator of Wald
 (1940), the difference of the group means of `Y` over that of `X`. This is a moment-condition
 identity, not a formal causal-identification result. -/
@@ -162,14 +162,14 @@ theorem covariance_div_covariance (hZU : cov[M.instrument, M.residual; μ] = 0)
   rw [M.covariance_outcome M.memLp_instrument, hZU, add_zero, mul_div_assoc, div_self hZX,
     mul_one]
 
-/-- **Wald ratio identity for an instrument independent of the residual.** The Wald covariance identity when the instrument is independent of the residual. -/
+/-- The Wald covariance identity when the instrument is independent of the residual. -/
 theorem covariance_div_covariance_of_indepFun (hZU : IndepFun M.instrument M.residual μ)
     (hZX : cov[M.instrument, M.exposure; μ] ≠ 0) :
     cov[M.instrument, M.outcome; μ] / cov[M.instrument, M.exposure; μ] =
       M.coefficient :=
   M.covariance_div_covariance (hZU.covariance_eq_zero M.memLp_instrument M.memLp_residual) hZX
 
-/-- **Wald ratio as a ratio of regression slopes.** The Wald ratio as a ratio of regression slopes: the slope of `Y` on `Z` divided by the slope
+/-- The Wald ratio as a ratio of regression slopes: the slope of `Y` on `Z` divided by the slope
 of `X` on `Z` (the form used with SNP–outcome and SNP–exposure associations) is `β`. This is
 again an observational moment identity. -/
 theorem covariance_div_variance_div (hZU : cov[M.instrument, M.residual; μ] = 0)
@@ -185,7 +185,7 @@ theorem covariance_div_variance_div (hZU : cov[M.instrument, M.residual; μ] = 0
     simp [hω]
   rw [div_div_div_cancel_right₀ hV, M.covariance_div_covariance hZU hZX]
 
-/-- **Bias of the ordinary least-squares coefficient under confounding.** The ordinary least-squares coefficient identity for `Y` on `X` is
+/-- The ordinary least-squares coefficient identity for `Y` on `X` is
 `β + Cov(X, U) / Var(X)`, which differs from `β` exactly when `Cov(X, U) ≠ 0`. -/
 theorem covariance_div_variance (hX : Var[M.exposure; μ] ≠ 0) :
     cov[M.exposure, M.outcome; μ] / Var[M.exposure; μ] =
@@ -201,26 +201,26 @@ section SummaryData
 
 variable {ι : Type*} [Fintype ι]
 
-/-- **Ratio estimate of a single SNP.** The ratio estimate `β̂_{Yj} / β̂_{Xj}` of SNP `j` (Lean's `x / 0 = 0` gives `0` when
+/-- The ratio estimate `β̂_{Yj} / β̂_{Xj}` of SNP `j` (Lean's `x / 0 = 0` gives `0` when
 `β̂_{Xj} = 0`; such SNPs carry weight `0` in `ivwWeight`). -/
 noncomputable def ratioEstimate (bX bY : ι → ℝ) (j : ι) : ℝ := bY j / bX j
 
-/-- **Inverse-variance weight of a ratio estimate.** The first-order inverse-variance weight `w_j = β̂_{Xj}² / σ_j²` of the ratio estimate of SNP
+/-- The first-order inverse-variance weight `w_j = β̂_{Xj}² / σ_j²` of the ratio estimate of SNP
 `j`, where `σ_j` is the standard error of `β̂_{Yj}` (Burgess, Butterworth & Thompson 2013). -/
 noncomputable def ivwWeight (bX se : ι → ℝ) (j : ι) : ℝ := bX j ^ 2 / se j ^ 2
 
-/-- **Inverse-variance-weighted estimator.** The inverse-variance-weighted (IVW) estimator
+/-- The inverse-variance-weighted (IVW) estimator
 `∑ β̂_{Xj} β̂_{Yj} σ_j⁻² / ∑ β̂_{Xj}² σ_j⁻²` (Burgess, Butterworth & Thompson 2013). The
 standard errors are positive in the model; it is the junk value `0` if every `β̂_{Xj} = 0`. -/
 noncomputable def ivw (bX bY se : ι → ℝ) : ℝ :=
   (∑ j, bX j * bY j / se j ^ 2) / ∑ j, ivwWeight bX se j
 
-/-- **Weighted residual sum of squares through the origin.** The weighted residual sum of squares `∑ (β̂_{Yj} - b β̂_{Xj})² / σ_j²` of the regression
+/-- The weighted residual sum of squares `∑ (β̂_{Yj} - b β̂_{Xj})² / σ_j²` of the regression
 through the origin with slope `b`. -/
 noncomputable def weightedSSR (bX bY se : ι → ℝ) (b : ℝ) : ℝ :=
   ∑ j, (bY j - b * bX j) ^ 2 / se j ^ 2
 
-/-- **IVW estimator as a weighted mean of ratio estimates.** The IVW estimator is the weighted mean of the ratio estimates with weights
+/-- The IVW estimator is the weighted mean of the ratio estimates with weights
 `w_j = β̂_{Xj}² / σ_j²`. This holds for all data: a SNP with `β̂_{Xj} = 0` has weight `0` and
 contributes nothing to either side. -/
 theorem ivw_eq_weightedMean (bX bY se : ι → ℝ) :
@@ -235,7 +235,7 @@ theorem ivw_eq_weightedMean (bX bY se : ι → ℝ) :
   · rw [div_mul_div_comm, show bX j ^ 2 * bY j = bX j * bY j * bX j by ring,
       mul_div_mul_right _ _ hb]
 
-/-- **IVW estimator minimizes the weighted residual sum of squares.** The IVW estimator is the weighted least-squares slope through the origin: it minimizes
+/-- The IVW estimator is the weighted least-squares slope through the origin: it minimizes
 the weighted residual sum of squares. This holds for all data: if every `β̂_{Xj} = 0` the sum
 does not depend on the slope (and `ivw` is the junk value `0`), and a SNP with `σ_j = 0` has
 weight `0` on both sides by Lean's `x / 0 = 0`. -/
@@ -269,7 +269,7 @@ theorem ivw_le_weightedSSR (bX bY se : ι → ℝ) (b : ℝ) :
       ring
     nlinarith [mul_nonneg hW0 (sq_nonneg (b - T / W))]
 
-/-- **Positivity of the total IVW weight.** The total weight is positive as soon as some SNP has `β̂_{Xj} ≠ 0`. -/
+/-- The total weight is positive as soon as some SNP has `β̂_{Xj} ≠ 0`. -/
 theorem sum_ivwWeight_pos {bX se : ι → ℝ} (hse : ∀ j, 0 < se j) (hX : ∃ j, bX j ≠ 0) :
     0 < ∑ j, ivwWeight bX se j := by
   obtain ⟨i, hi⟩ := hX
@@ -278,7 +278,7 @@ theorem sum_ivwWeight_pos {bX se : ι → ℝ} (hse : ∀ j, 0 < se j) (hX : ∃
   unfold ivwWeight
   positivity
 
-/-- **IVW recovers an exact proportionality coefficient.** Without error, IVW recovers the proportionality coefficient: if
+/-- Without error, IVW recovers the proportionality coefficient: if
 `β̂_{Yj} = β β̂_{Xj}` for all `j` and some `β̂_{Xj} ≠ 0`, then the IVW estimate is `β`.
 This algebraic statement does not itself give `β` a causal interpretation. -/
 theorem ivw_of_proportional {bX se : ι → ℝ} (hse : ∀ j, 0 < se j) (hX : ∃ j, bX j ≠ 0)
@@ -307,7 +307,7 @@ private theorem ivw_linear {bX se : ι → ℝ} (hW : ∑ j, ivwWeight bX se j �
 
 variable {μ : Measure Ω} [IsProbabilityMeasure μ]
 
-/-- **Unbiasedness of the IVW estimator.** Unbiasedness of IVW (Burgess, Butterworth & Thompson 2013), with the SNP–exposure
+/-- Unbiasedness of IVW (Burgess, Butterworth & Thompson 2013), with the SNP–exposure
 associations `β̂_{Xj}` treated as fixed: if `β̂_{Yj} = β β̂_{Xj} + ε_j` with integrable
 mean-zero errors, the IVW estimator has mean `β`. -/
 theorem integral_ivw {bX se : ι → ℝ} (hse : ∀ j, 0 < se j) (hX : ∃ j, bX j ≠ 0) (β : ℝ)
@@ -319,7 +319,7 @@ theorem integral_ivw {bX se : ι → ℝ} (hse : ∀ j, 0 < se j) (hX : ∃ j, b
     integral_finsetSum _ fun j _ => (hint j).const_mul _]
   simp [integral_const_mul, hmean]
 
-/-- **Variance of the IVW estimator.** The first-order variance of IVW (Burgess, Butterworth & Thompson 2013): with the
+/-- The first-order variance of IVW (Burgess, Butterworth & Thompson 2013): with the
 `β̂_{Xj}` fixed and `β̂_{Yj} = β β̂_{Xj} + ε_j`, where the errors are square integrable,
 pairwise uncorrelated (for instance independent) and `Var(ε_j) = σ_j²`, the IVW estimator has
 variance `(∑ w_j)⁻¹ = (∑ β̂_{Xj}² / σ_j²)⁻¹`. -/
@@ -358,10 +358,10 @@ theorem variance_ivw {bX se : ι → ℝ} (hse : ∀ j, 0 < se j) (hX : ∃ j, b
 
 /-! ### MR-Egger regression and InSIDE -/
 
-/-- **Weighted mean.** The weighted mean `∑ v_j a_j / ∑ v_j`. -/
+/-- The weighted mean `∑ v_j a_j / ∑ v_j`. -/
 noncomputable def weightedMean (v a : ι → ℝ) : ℝ := (∑ j, v j * a j) / ∑ j, v j
 
-/-- **Weighted covariance.** The weighted covariance `∑ v_j (a_j - ā_v)(b_j - b̄_v) / ∑ v_j`, where `ā_v` and `b̄_v` are
+/-- The weighted covariance `∑ v_j (a_j - ā_v)(b_j - b̄_v) / ∑ v_j`, where `ā_v` and `b̄_v` are
 weighted means. -/
 noncomputable def weightedCov (v a b : ι → ℝ) : ℝ :=
   (∑ j, v j * (a j - weightedMean v a) * (b j - weightedMean v b)) / ∑ j, v j
@@ -386,21 +386,21 @@ private theorem weightedCov_comm (v a b : ι → ℝ) : weightedCov v a b = weig
   congr 1
   exact Finset.sum_congr rfl fun j _ => by ring
 
-/-- **MR-Egger slope.** The MR-Egger slope (Bowden, Davey Smith & Burgess 2015): the slope of the weighted linear
+/-- The MR-Egger slope (Bowden, Davey Smith & Burgess 2015): the slope of the weighted linear
 regression of `β̂_{Yj}` on `β̂_{Xj}` with an intercept, `Cov_v(β̂_X, β̂_Y) / Var_v(β̂_X)`. The
 paper's weights are `v_j = σ_j⁻²`. -/
 noncomputable def eggerSlope (v bX bY : ι → ℝ) : ℝ := weightedCov v bX bY / weightedCov v bX bX
 
-/-- **MR-Egger intercept.** The MR-Egger intercept `β̂̄_Y - slope · β̂̄_X` (weighted means). -/
+/-- The MR-Egger intercept `β̂̄_Y - slope · β̂̄_X` (weighted means). -/
 noncomputable def eggerIntercept (v bX bY : ι → ℝ) : ℝ :=
   weightedMean v bY - eggerSlope v bX bY * weightedMean v bX
 
-/-- **Weighted residual sum of squares of a line.** The weighted residual sum of squares `∑ v_j (β̂_{Yj} - a - b β̂_{Xj})²` of the line with
+/-- The weighted residual sum of squares `∑ v_j (β̂_{Yj} - a - b β̂_{Xj})²` of the line with
 intercept `a` and slope `b`. -/
 noncomputable def eggerSSR (v bX bY : ι → ℝ) (a b : ℝ) : ℝ :=
   ∑ j, v j * (bY j - a - b * bX j) ^ 2
 
-/-- **MR-Egger line is the weighted least-squares line.** The MR-Egger line is the weighted least-squares line: for nonnegative weights and `β̂_X`
+/-- The MR-Egger line is the weighted least-squares line: for nonnegative weights and `β̂_X`
 of nonzero weighted variance (so the total weight is positive and `β̂_X` is not constant on the
 support of the weights), it minimizes the weighted residual sum of squares. -/
 theorem eggerSSR_le {v bX : ι → ℝ} (bY : ι → ℝ) (hv : ∀ j, 0 ≤ v j)
@@ -466,7 +466,7 @@ theorem eggerSSR_le {v bX : ι → ℝ} (bY : ι → ℝ) (hv : ∀ j, 0 ≤ v j
   nlinarith [mul_nonneg hCnn (sq_nonneg (b - Cxy / Cxx)),
     mul_nonneg hSnn (sq_nonneg (n - a - b * m))]
 
-/-- **MR-Egger slope under pleiotropy.** The MR-Egger slope under pleiotropy (Bowden, Davey Smith & Burgess 2015): if the SNP–outcome
+/-- The MR-Egger slope under pleiotropy (Bowden, Davey Smith & Burgess 2015): if the SNP–outcome
 associations are `Γ_j = α_j + β γ_j`, with pleiotropic terms `α_j` and SNP–exposure
 associations `γ_j`, the Egger slope of `Γ` on `γ` is `β + Cov_v(γ, α) / Var_v(γ)`. -/
 theorem eggerSlope_eq {v γ : ι → ℝ} (hγ : weightedCov v γ γ ≠ 0)
@@ -475,7 +475,7 @@ theorem eggerSlope_eq {v γ : ι → ℝ} (hγ : weightedCov v γ γ ≠ 0)
   unfold eggerSlope
   rw [weightedCov_add_mul, add_div, mul_div_assoc, div_self hγ, mul_one, add_comm]
 
-/-- **MR-Egger intercept under pleiotropy.** The MR-Egger intercept under pleiotropy: it is the weighted mean pleiotropic effect
+/-- The MR-Egger intercept under pleiotropy: it is the weighted mean pleiotropic effect
 `ᾱ_v` minus `Cov_v(γ, α) / Var_v(γ) · γ̄_v`. -/
 theorem eggerIntercept_eq {v γ : ι → ℝ} (hγ : weightedCov v γ γ ≠ 0)
     (α : ι → ℝ) (β : ℝ) :
@@ -485,7 +485,7 @@ theorem eggerIntercept_eq {v γ : ι → ℝ} (hγ : weightedCov v γ γ ≠ 0)
   rw [eggerSlope_eq hγ, weightedMean_add_mul]
   ring
 
-/-- **InSIDE identity for MR-Egger.** The finite-sample InSIDE identity (Bowden, Davey Smith & Burgess 2015): if the pleiotropic
+/-- The finite-sample InSIDE identity (Bowden, Davey Smith & Burgess 2015): if the pleiotropic
 terms are uncorrelated with the instrument strengths in the weighted sense,
 `Cov_v(α, γ) = 0`, the MR-Egger slope is the coefficient `β` and the intercept is the weighted
 mean pleiotropic term `ᾱ_v`. This identity alone does not encode a causal interpretation. -/
@@ -498,7 +498,7 @@ theorem eggerSlope_eq_of_inside {v γ α : ι → ℝ} (hγ : weightedCov v γ �
   · rw [eggerSlope_eq hγ, hinside, zero_div, add_zero]
   · rw [eggerIntercept_eq hγ, hinside, zero_div, zero_mul, sub_zero]
 
-/-- **Directional pleiotropy biases the IVW estimator.** Directional pleiotropy biases IVW: if `Γ_j = α_j + β γ_j`, the IVW estimate is
+/-- Directional pleiotropy biases IVW: if `Γ_j = α_j + β γ_j`, the IVW estimate is
 `β + ∑ γ_j α_j σ_j⁻² / ∑ γ_j² σ_j⁻²`. For example a common pleiotropic term `α_j = α ≠ 0`
 biases IVW whenever `∑ γ_j σ_j⁻² ≠ 0`, whereas a constant `α` satisfies InSIDE, so
 `eggerSlope_eq_of_inside` gives MR-Egger slope `β` and intercept `α`. -/
@@ -550,7 +550,7 @@ private theorem lintegral_enorm_inv_gaussianReal {m : ℝ} {v : ℝ≥0} (hv : v
         setLIntegral_mono ((measurable_gaussianPDF m v).mul measurable_inv.enorm) fun x hx =>
           mul_le_mul_left (ENNReal.ofReal_le_ofReal (hbound x hx)) _
 
-/-- **Ratio with a Gaussian denominator has infinite first moment.** A ratio with a Gaussian denominator has no first moment (a classical fact, recalled in the
+/-- A ratio with a Gaussian denominator has no first moment (a classical fact, recalled in the
 weak-instrument analysis of Burgess & Thompson 2011): if `D ~ N(m, v)` with `v > 0` and `N` is
 independent of `D` and not almost surely `0`, then `𝔼|N / D| = ∞`. Applied to the ratio
 estimator `β̂_Y / β̂_X` with a normally distributed SNP–exposure estimate `β̂_X`. -/
@@ -574,7 +574,7 @@ theorem lintegral_enorm_div_eq_top {μ : Measure Ω} [IsProbabilityMeasure μ] {
   filter_upwards [h] with ω hω
   simpa using hω
 
-/-- **Ratio of independent normal variables is not integrable.** The ratio of two independent normal variables, the denominator with positive variance and
+/-- The ratio of two independent normal variables, the denominator with positive variance and
 the numerator not almost surely zero (`(mN, vN) ≠ (0, 0)`), is not integrable. -/
 theorem not_integrable_div_gaussian {μ : Measure Ω} [IsProbabilityMeasure μ] {N D : Ω → ℝ}
     {mN mD : ℝ} {vN vD : ℝ≥0} (hvD : vD ≠ 0) (hN : HasLaw N (gaussianReal mN vN) μ)
@@ -634,7 +634,7 @@ private theorem integral_cond_congr {μ : Measure Ω} {A : Set Ω} (hA : Measura
   rw [ProbabilityTheory.cond, integral_smul_measure, integral_smul_measure,
     setIntegral_congr_fun hA h]
 
-/-- **Compliance types of Angrist, Imbens and Rubin.** The four compliance types of Angrist, Imbens & Rubin (1996), determined by the pair of
+/-- The four compliance types of Angrist, Imbens & Rubin (1996), determined by the pair of
 potential treatments `(D(0), D(1))`. -/
 inductive ComplianceType
   /-- `D(0) = 0`, `D(1) = 1`: takes the treatment exactly when encouraged. -/
@@ -647,14 +647,14 @@ inductive ComplianceType
   | defier
   deriving DecidableEq
 
-/-- **Compliance type of a pair of potential treatments.** The compliance type of the potential treatments `(D(0), D(1)) = (d₀, d₁)`. -/
+/-- The compliance type of the potential treatments `(D(0), D(1)) = (d₀, d₁)`. -/
 def complianceType : Bool → Bool → ComplianceType
   | false, true => .complier
   | true, true => .alwaysTaker
   | false, false => .neverTaker
   | true, false => .defier
 
-/-- **Potential-outcomes model with binary instrument and treatment.** A potential-outcomes model with a binary instrument and a binary treatment (Imbens &
+/-- A potential-outcomes model with a binary instrument and a binary treatment (Imbens &
 Angrist 1994; Angrist, Imbens & Rubin 1996): the assigned instrument `Z`, the potential
 treatments `D(z)` and the potential outcomes `Y(z, d)`, all measurable. The observed treatment
 is `D(Z)` and the observed outcome `Y(Z, D(Z))`. The identifying assumptions (independence,
@@ -677,40 +677,40 @@ namespace PotentialOutcomes
 
 variable (P : PotentialOutcomes Ω)
 
-/-- **Observed treatment in a potential-outcomes model.** The observed treatment `D = D(Z)`. -/
+/-- The observed treatment `D = D(Z)`. -/
 def observedTreatment (ω : Ω) : Bool := P.treatment (P.instrument ω) ω
 
-/-- **Observed outcome in a potential-outcomes model.** The observed outcome `Y = Y(Z, D(Z))`. -/
+/-- The observed outcome `Y = Y(Z, D(Z))`. -/
 def observedOutcome (ω : Ω) : ℝ := P.outcome (P.instrument ω) (P.observedTreatment ω) ω
 
-/-- **Compliance type of a unit.** The compliance type of a unit. -/
+/-- The compliance type of a unit. -/
 def type (ω : Ω) : ComplianceType := complianceType (P.treatment false ω) (P.treatment true ω)
 
-/-- **Compliers in a potential-outcomes model.** The compliers, `D(0) = 0` and `D(1) = 1`. -/
+/-- The compliers, `D(0) = 0` and `D(1) = 1`. -/
 def compliers : Set Ω := {ω | P.type ω = .complier}
 
-/-- **Independence assumption for an instrument.** Independence (random assignment): the instrument is independent of the vector of all
+/-- Independence (random assignment): the instrument is independent of the vector of all
 potential treatments and potential outcomes. -/
 def Independence (μ : Measure Ω) : Prop :=
   IndepFun P.instrument (fun ω => (fun z => P.treatment z ω, fun z d => P.outcome z d ω)) μ
 
-/-- **Exclusion restriction for an instrument.** Exclusion: the instrument affects the outcome only through the treatment,
+/-- Exclusion: the instrument affects the outcome only through the treatment,
 `Y(0, d) = Y(1, d)`. -/
 def Exclusion : Prop := ∀ d ω, P.outcome false d ω = P.outcome true d ω
 
-/-- **Monotonicity assumption (no defiers).** Monotonicity: assignment never decreases the treatment, `D(0) ≤ D(1)`; there are no
+/-- Monotonicity: assignment never decreases the treatment, `D(0) ≤ D(1)`; there are no
 defiers. -/
 def Monotonicity : Prop := ∀ ω, P.treatment false ω ≤ P.treatment true ω
 
-/-- **Mean of a variable within an instrument arm.** The mean of `f` in the arm `Z = z`, `𝔼[f | Z = z]`, the expectation under the conditional
+/-- The mean of `f` in the arm `Z = z`, `𝔼[f | Z = z]`, the expectation under the conditional
 measure. It is the junk value `0` when `P(Z = z) = 0`. -/
 noncomputable def armMean (μ : Measure Ω) (f : Ω → ℝ) (z : Bool) : ℝ :=
   ∫ ω, f ω ∂μ[|P.instrument ⁻¹' {z}]
 
-/-- **Observed treatment as a 0-1 real variable.** The observed treatment as a `0`/`1` real variable. -/
+/-- The observed treatment as a `0`/`1` real variable. -/
 def treated (ω : Ω) : ℝ := if P.observedTreatment ω then 1 else 0
 
-/-- **Wald instrumental-variable estimand.** The Wald (instrumental-variable) estimand
+/-- The Wald (instrumental-variable) estimand
 `(𝔼[Y | Z = 1] - 𝔼[Y | Z = 0]) / (𝔼[D | Z = 1] - 𝔼[D | Z = 0])`. -/
 noncomputable def waldEstimand (μ : Measure Ω) : ℝ :=
   (P.armMean μ P.observedOutcome true - P.armMean μ P.observedOutcome false) /
@@ -789,7 +789,7 @@ private theorem measurableSet_compliers : MeasurableSet P.compliers := by
   exact ((P.measurable_treatment false) (measurableSet_singleton false)).inter
     ((P.measurable_treatment true) (measurableSet_singleton true))
 
-/-- **First stage: treatment-rate difference equals complier share.** The first stage (Imbens & Angrist 1994): under independence and monotonicity, with both
+/-- The first stage (Imbens & Angrist 1994): under independence and monotonicity, with both
 arms of positive probability, the difference in treatment rates between the arms is the
 proportion of compliers. -/
 theorem armMean_treated_sub {μ : Measure Ω} [IsProbabilityMeasure μ]
@@ -809,7 +809,7 @@ theorem armMean_treated_sub {μ : Measure Ω} [IsProbabilityMeasure μ]
   by_cases h0 : P.treatment false ω = true <;> by_cases h1 : P.treatment true ω = true <;>
     simp_all [complianceType]
 
-/-- **Reduced form: outcome difference is the complier-weighted effect.** The reduced form (Imbens & Angrist 1994): under independence, exclusion and monotonicity,
+/-- The reduced form (Imbens & Angrist 1994): under independence, exclusion and monotonicity,
 with integrable potential outcomes and both arms of positive probability, the difference in
 mean outcomes between the arms is `𝔼[(Y(z, 1) - Y(z, 0)) 1_complier]`, for either `z`. -/
 theorem armMean_outcome_sub {μ : Measure Ω} [IsProbabilityMeasure μ]
@@ -831,7 +831,7 @@ theorem armMean_outcome_sub {μ : Measure Ω} [IsProbabilityMeasure μ]
   cases z <;> by_cases h0 : P.treatment false ω = true <;>
     by_cases h1 : P.treatment true ω = true <;> simp_all [complianceType]
 
-/-- **Unrestricted algebraic identity behind the LATE theorem.** The unrestricted algebraic identity behind LATE. If the complier set has measure zero, both
+/-- The unrestricted algebraic identity behind LATE. If the complier set has measure zero, both
 sides totalize to `0`; therefore this theorem is not an identification or complier-average claim
 at that boundary. Use `waldEstimand_eq_late` for the source-faithful result with relevance. -/
 theorem waldEstimand_eq_late_totalized {μ : Measure Ω} [IsProbabilityMeasure μ]
@@ -843,7 +843,7 @@ theorem waldEstimand_eq_late_totalized {μ : Measure Ω} [IsProbabilityMeasure �
     P.armMean_treated_sub hind hmono hZ, ProbabilityTheory.cond, integral_smul_measure,
     smul_eq_mul, ENNReal.toReal_inv, measureReal_def, div_eq_inv_mul]
 
-/-- **Local average treatment effect theorem.** The local average treatment effect theorem (Imbens & Angrist 1994, Theorem 1; Angrist,
+/-- The local average treatment effect theorem (Imbens & Angrist 1994, Theorem 1; Angrist,
 Imbens & Rubin 1996): under independence, exclusion, monotonicity and relevance, with integrable
 potential outcomes and both arms of positive probability, the Wald estimand is the average
 treatment effect among compliers, `𝔼[Y(1) - Y(0) | complier]` (read at either instrument value

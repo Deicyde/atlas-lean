@@ -47,10 +47,10 @@ namespace MathlibExt.Probability.TruncatedMoment
 
 open MathlibExt.Probability.RegularVariation
 
-/-- **Closed upper tail of a measure.** The upper tail `(μ {y | s ≤ |y|}).toReal`. -/
+/-- The upper tail `(μ {y | s ≤ |y|}).toReal`. -/
 noncomputable def tailGe (μ : Measure ℝ) (s : ℝ) : ℝ := (μ {y : ℝ | s ≤ |y|}).toReal
 
-/-- **Strict upper tail of a measure.** The lower tail `(μ {y | s < |y|}).toReal`. -/
+/-- The lower tail `(μ {y | s < |y|}).toReal`. -/
 noncomputable def tailGt (μ : Measure ℝ) (s : ℝ) : ℝ := (μ {y : ℝ | s < |y|}).toReal
 
 theorem tailGe_nonneg (μ : Measure ℝ) (s : ℝ) : 0 ≤ tailGe μ s := ENNReal.toReal_nonneg
@@ -81,7 +81,7 @@ theorem antitone_tailGt (μ : Measure ℝ) [IsFiniteMeasure μ] : Antitone (tail
   intro y hy
   exact lt_of_le_of_lt hab hy
 
-/-- **Strict absolute tail equals the combined tail.** At nonnegative thresholds the strict absolute tail is the canonical combined tail. -/
+/-- At nonnegative thresholds the strict absolute tail is the canonical combined tail. -/
 theorem tailGt_eq_combinedTail (μ : Measure ℝ) [IsFiniteMeasure μ]
     {s : ℝ} (hs : 0 ≤ s) : tailGt μ s = combinedTail μ s := by
   have hset : {y : ℝ | s < |y|} = Set.Ioi s ∪ Set.Iio (-s) := by
@@ -154,7 +154,7 @@ private theorem tailGe_eq_tailGt_add_atoms (μ : Measure ℝ) [IsFiniteMeasure �
       ENNReal.toReal_add (measure_ne_top _ _) (measure_ne_top _ _), hunion]
   simpa only [add_assoc] using hge
 
-/-- **Non-strict absolute tail as combined tail plus endpoint atoms.** The non-strict absolute tail adds both endpoint atoms to the canonical strict tail. -/
+/-- The non-strict absolute tail adds both endpoint atoms to the canonical strict tail. -/
 theorem tailGe_eq_combinedTail_add_atoms (μ : Measure ℝ) [IsFiniteMeasure μ]
     {s : ℝ} (hs : 0 < s) :
     tailGe μ s = combinedTail μ s + (μ {s}).toReal + (μ {-s}).toReal := by
@@ -336,7 +336,7 @@ private theorem ratio_limit_of_ratio_tendsto {W T : ℝ → ℝ} {ρ : ℝ}
   have h' := Filter.Tendsto.congr' hEq hprod
   simpa using h'
 
-/-- **Upper tail is asymptotic to the combined tail.** The upper tail is asymptotically the combined tail. -/
+/-- The upper tail is asymptotically the combined tail. -/
 theorem tailGe_ratio_tendsto {μ : Measure ℝ} [IsProbabilityMeasure μ] {α : ℝ}
     (hα : 0 < α) (hRV : IsRegularlyVarying (combinedTail μ) (-α)) :
     Tendsto (fun x => tailGe μ x / combinedTail μ x) atTop (𝓝 1) := by
@@ -405,7 +405,7 @@ theorem tailGe_ratio_tendsto {μ : Measure ℝ} [IsProbabilityMeasure μ] {α : 
   have h' := Filter.Tendsto.congr' hEq.symm hlim
   simpa using h'
 
-/-- **Lower tail is asymptotic to the combined tail.** The lower tail is asymptotically the combined tail. -/
+/-- The lower tail is asymptotically the combined tail. -/
 theorem tailGt_ratio_tendsto {μ : Measure ℝ} [IsProbabilityMeasure μ] {α : ℝ}
     (hRV : IsRegularlyVarying (combinedTail μ) (-α)) :
     Tendsto (fun x => tailGt μ x / combinedTail μ x) atTop (𝓝 1) := by
@@ -452,7 +452,7 @@ private theorem intervalIntegrable_tailGe_sqrt {μ : Measure ℝ} [IsProbability
     rw [Real.norm_eq_abs, abs_of_nonneg (tailGe_nonneg μ _)]
     exact tailGe_le_one μ _
 
-/-- **Layer-cake formula for the truncated second moment.** Layer-cake formula for the truncated second moment, in terms of the upper
+/-- Layer-cake formula for the truncated second moment, in terms of the upper
 tail `tailGe`. The term `x ^ 2 * tailGt μ x` removes the contribution
 from points with `|y| > x`, which lie outside the closed truncation interval. -/
 theorem layerCake {μ : Measure ℝ} [IsProbabilityMeasure μ] {x : ℝ} (hx : 0 ≤ x) :
@@ -550,7 +550,7 @@ theorem layerCake {μ : Measure ℝ} [IsProbabilityMeasure μ] {x : ℝ} (hx : 0
 
 /-! ### Main theorem -/
 
-/-- **Truncated second moment asymptotic for regularly varying tails.** The corrected truncated-second-moment asymptotic: for a probability measure
+/-- The corrected truncated-second-moment asymptotic: for a probability measure
 on `ℝ` with regularly varying combined tail of index `-α`, `0 < α < 2`, the
 ratio `(∫ y in Icc (-x) x, y ^ 2 ∂μ) / (x ^ 2 * combinedTail μ x)` tends to
 `α / (2 - α)`.

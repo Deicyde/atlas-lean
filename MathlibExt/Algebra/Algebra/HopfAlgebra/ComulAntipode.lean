@@ -160,7 +160,7 @@ private theorem comul_comp_antipode :
 
 end HopfComulAntipodeAux
 
-/-- **Comultiplication of the antipode.** Comultiplication anticommutes with the antipode up to the tensor swap. -/
+/-- Comultiplication anticommutes with the antipode up to the tensor swap. -/
 theorem HopfAlgebra.comul_antipode {R : Type*} [CommSemiring R]
     {A : Type*} [Semiring A] [HopfAlgebra R A] (a : A) :
     Coalgebra.comul (HopfAlgebra.antipode R a)
@@ -171,7 +171,7 @@ theorem HopfAlgebra.comul_antipode {R : Type*} [CommSemiring R]
     (HopfComulAntipodeAux.comul_comp_antipode (R := R) (A := A)) a
   simpa only [LinearMap.comp_apply, LinearEquiv.coe_toLinearMap] using h
 
-/-- **Comultiplication commutes with the antipode when cocommutative.** In a cocommutative Hopf algebra, comultiplication commutes with the
+/-- In a cocommutative Hopf algebra, comultiplication commutes with the
 antipode. -/
 theorem HopfAlgebra.map_antipode_comul_of_isCocomm {R : Type*} [CommSemiring R]
     {A : Type*} [Semiring A] [HopfAlgebra R A] (hcocomm : Coalgebra.IsCocomm R A) (a : A) :

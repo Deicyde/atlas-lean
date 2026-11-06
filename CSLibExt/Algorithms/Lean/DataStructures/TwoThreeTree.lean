@@ -51,57 +51,44 @@ universe u
 namespace Cslib.Algorithms.Lean
 namespace TwoThreeTree
 
-/-- **Height-indexed 2-3 trees.** For a type $\alpha$ of keys, the 2-3 trees over $\alpha$ indexed
-by height are generated as follows. The leaf is a tree of height $0$ and stores no key. For a
-natural number $h$, a key $a$ and trees $l$, $r$ of height $h$, the 2-node with separator $a$
-and children $l$, $r$ is a tree of height $h + 1$. For a natural number $h$, keys $a$, $b$ and
-trees $l$, $m$, $r$ of height $h$, the 3-node with separators $a$, $b$ and children $l$, $m$,
-$r$ is a tree of height $h + 1$. Hence all leaves of a tree of height $h$ lie at depth $h$. -/
+/-- A 2-3 tree indexed by height: all leaves of `Tree α h` are at depth `h`.
+A `node2` stores one separator key with two children, and a `node3` stores two
+separator keys with three children. -/
 public inductive Tree (α : Type u) : Nat → Type u where
   | leaf : Tree α 0
   | node2 {h : Nat} (a : α) (l r : Tree α h) : Tree α (h + 1)
   | node3 {h : Nat} (a b : α) (l m r : Tree α h) : Tree α (h + 1)
 
-/-- **Insertion results for 2-3 trees.** For a type $\alpha$ and a natural number $h$, an
-insertion result at height $h$ is either a 2-3 tree over $\alpha$ of height $h$, or a split:
-two 2-3 trees $l$ and $r$ over $\alpha$ of height $h$ together with a promoted key $k \in \alpha$.
-
-It records the outcome of inserting a key into a tree of height $h$. -/
+/-- The result of inserting into a tree of height `h`: either a tree of the
+same height, or a split into two trees of height `h` around a promoted key. -/
 public inductive Overflow (α : Type u) : Nat → Type u where
   | ok {h : Nat} (t : Tree α h) : Overflow α h
   | split {h : Nat} (l : Tree α h) (k : α) (r : Tree α h) : Overflow α h
 
 variable {α : Type u}
 
-/-- **Height of a 2-3 tree.** The height of a 2-3 tree is computed along its leftmost spine:
-a leaf has height $0$, and a 2-node or a 3-node has height one more than the height of its
-leftmost child. -/
+/-- The height of a tree, computed from its leftmost spine. -/
 public def height : {h : Nat} → Tree α h → Nat
   | _, .leaf => 0
   | _, .node2 _ l _ => height l + 1
   | _, .node3 _ _ l _ _ => height l + 1
 
-/-- **Computed height equals the height index.** For every 2-3 tree $t$ with height index $h$,
-the height of $t$ computed along its leftmost spine equals $h$. -/
+/-- The computed height of a tree agrees with its height index. -/
 public theorem height_eq {h : Nat} (t : Tree α h) : height t = h := by
   induction t with
   | leaf => rfl
   | node2 _ _ _ ihl _ => exact congrArg Nat.succ ihl
   | node3 _ _ _ _ _ ihl _ _ => exact congrArg Nat.succ ihl
 
-/-- **Balance invariant for 2-3 trees.** A leaf is balanced, and a node is balanced when all of
-its subtrees are balanced and have the same computed height, where the computed height of a
-tree is the length of its leftmost path from the root down to a leaf. Hence all leaves of a
-balanced tree lie at the same depth. -/
+/-- The balance invariant: subtrees of every node have equal computed heights,
+recursively, so all leaves lie at the same depth. -/
 public def Balanced : {h : Nat} → Tree α h → Prop
   | _, .leaf => True
   | _, .node2 _ l r => Balanced l ∧ Balanced r ∧ height l = height r
   | _, .node3 _ _ l m r =>
       Balanced l ∧ Balanced m ∧ Balanced r ∧ height l = height m ∧ height m = height r
 
-/-- **Every height-indexed 2-3 tree is balanced.** For every height $h$, every 2-3 tree of
-height $h$ satisfies the balance invariant: at every node, the subtrees are balanced and have
-equal computed heights. -/
+/-- Every height-indexed tree is balanced. -/
 public theorem balanced {h : Nat} (t : Tree α h) : Balanced t := by
   induction t with
   | leaf => trivial
@@ -109,13 +96,7 @@ public theorem balanced {h : Nat} (t : Tree α h) : Balanced t := by
   | node3 _ _ _ _ _ ihl ihm ihr =>
     exact ⟨ihl, ihm, ihr, by rw [height_eq, height_eq], by rw [height_eq, height_eq]⟩
 
-/-- **Membership in a 2-3 tree.** A key $x$ is a member of a 2-3 tree when it is one of the
-separator keys stored at its nodes: nothing is a member of a leaf; $x$ is a member of a 2-node
-with key $a$ and children $l, r$ when it is a member of $l$, equals $a$, or is a member of $r$;
-and $x$ is a member of a 3-node with keys $a, b$ and children $l, m, r$ when it is a member of
-$l$, equals $a$, is a member of $m$, equals $b$, or is a member of $r$.
-
-Membership is structural and does not use the ordering invariant. -/
+/-- Structural membership, independent of the ordering invariant. -/
 public def Mem (x : α) : {h : Nat} → Tree α h → Prop
   | _, .leaf => False
   | _, .node2 a l r => Mem x l ∨ x = a ∨ Mem x r
@@ -136,10 +117,7 @@ public instance {h : Nat} : Membership α (Tree α h) :=
     x ∈ Tree.node3 a b l m r ↔ x ∈ l ∨ x = a ∨ x ∈ m ∨ x = b ∨ x ∈ r :=
   Iff.rfl
 
-/-- **Predicate on all keys of a 2-3 tree.** For a predicate $p$ on keys and a 2-3 tree $t$,
-$\mathrm{All}_p(t)$ states that every separator key stored at a node of $t$ satisfies $p$: it
-is true at a leaf, and at a node it requires $p$ of each key of the node and
-$\mathrm{All}_p$ of each of its subtrees. -/
+/-- `All p t` states that every separator key in `t` satisfies `p`. -/
 public def All (p : α → Prop) : {h : Nat} → Tree α h → Prop
   | _, .leaf => True
   | _, .node2 a l r => All p l ∧ p a ∧ All p r
@@ -159,10 +137,7 @@ private theorem all_mono {p q : α → Prop} (hmono : ∀ y, p y → q y) :
     obtain ⟨hAl, hpa, hAm, hpb, hAr⟩ := hAll
     exact ⟨ihl hAl, hmono a hpa, ihm hAm, hmono b hpb, ihr hAr⟩
 
-/-- **All-keys predicate agrees with membership on 2-3 trees.** For every predicate $p$ on
-keys and every 2-3 tree $t$ of height $h$, the recursive predicate requiring $p$ at every key
-stored at a node of $t$ holds if and only if $p(x)$ holds for every member $x$ of $t$, where
-$x$ is a member of $t$ when it equals one of the keys stored at some node of $t$. -/
+/-- `All` is equivalent to universal quantification over structural membership. -/
 public theorem all_iff_forall_mem {p : α → Prop} {h : Nat} {t : Tree α h} :
     All p t ↔ ∀ x, x ∈ t → p x := by
   induction t with
@@ -192,12 +167,8 @@ public theorem all_iff_forall_mem {p : α → Prop} {h : Nat} {t : Tree α h} :
         hforall b (Or.inr (Or.inr (Or.inr (Or.inl rfl)))),
         fun x hx => hforall x (Or.inr (Or.inr (Or.inr (Or.inr hx))))⟩
 
-/-- **Ordering invariant for 2-3 trees.** Let $\alpha$ be a type with a relation $<$. The leaf is
-ordered. A 2-node with separator $a$ and children $l$, $r$ is ordered when $l$ and $r$ are
-ordered, $y < a$ for every key $y$ stored in $l$, and $a < y$ for every key $y$ stored in $r$. A
-3-node with separators $a$, $b$ and children $l$, $m$, $r$ is ordered when $l$, $m$ and $r$ are
-ordered, $a < b$, $y < a$ for every key $y$ stored in $l$, $a < y$ and $y < b$ for every key $y$
-stored in $m$, and $b < y$ for every key $y$ stored in $r$. -/
+/-- The ordering invariant: separator keys strictly separate the keys of their
+subtrees, recursively. -/
 public def Ordered [LT α] : {h : Nat} → Tree α h → Prop
   | _, .leaf => True
   | _, .node2 a l r =>
@@ -206,14 +177,9 @@ public def Ordered [LT α] : {h : Nat} → Tree α h → Prop
       Ordered l ∧ Ordered m ∧ Ordered r ∧ a < b ∧ All (· < a) l ∧
         All (a < ·) m ∧ All (· < b) m ∧ All (b < ·) r
 
-/-- **Accumulated inorder traversal of a 2-3 tree.** For a 2-3 tree $t$ and a list $s$, the
-accumulated traversal $F(t, s)$ is defined by recursion on $t$: for a leaf, $F(t, s) = s$; for
-a 2-node with key $a$ and children $l, r$, $F(t, s)$ is $F(l, s')$ where $s'$ is $a$ prepended
-to $F(r, s)$; for a 3-node with keys $a, b$ and children $l, m, r$, $F(t, s)$ is $F(l, s')$
-where $s'$ is $a$ prepended to $F(m, s'')$ and $s''$ is $b$ prepended to $F(r, s)$.
-
-The result is the inorder traversal of $t$ followed by $s$. It is built without recopying the
-traversals of left subtrees. -/
+/-- Append the inorder traversal of a tree to an existing suffix in linear
+time: subtrees interleaved with separator keys, accumulated without
+recopying left results. -/
 public def flattenAux : {h : Nat} → Tree α h → List α → List α
   | _, .leaf, suffix => suffix
   | _, .node2 a l r, suffix => flattenAux l (a :: flattenAux r suffix)
@@ -242,17 +208,12 @@ private theorem flattenAux_append {h : Nat} (t : Tree α h)
         flattenAux l (a :: flattenAux m (b :: flattenAux r xs)) ++ ys
       exact ihl _
 
-/-- **Inorder traversal of a 2-3 tree.** The flattening of a 2-3 tree $t$ is the accumulated
-inorder traversal of $t$ onto the empty list. Equivalently, the flattening of a leaf is empty;
-that of a 2-node with key $a$ and children $l, r$ is the flattening of $l$, then $a$, then the
-flattening of $r$; and that of a 3-node with keys $a, b$ and children $l, m, r$ is the flattening
-of $l$, then $a$, then the flattening of $m$, then $b$, then the flattening of $r$. -/
+/-- The linear-time inorder traversal of a tree: subtrees interleaved with
+separator keys. -/
 public def flatten {h : Nat} (t : Tree α h) : List α :=
   flattenAux t []
 
-/-- **The accumulated traversal appends the suffix.** For every 2-3 tree $t$ (of any height)
-and every list $s$, the accumulated inorder traversal of $t$ onto $s$ equals the flattening of
-$t$ followed by $s$. -/
+/-- `flattenAux` prepends the flattening of its tree to the suffix. -/
 public theorem flattenAux_eq {h : Nat} (t : Tree α h) (suffix : List α) :
     flattenAux t suffix = flatten t ++ suffix := by
   show flattenAux t suffix = flattenAux t [] ++ suffix
@@ -280,9 +241,7 @@ public theorem flattenAux_eq {h : Nat} (t : Tree α h) (suffix : List α) :
   simpa using flattenAux_append l []
     (a :: (flattenAux m [] ++ b :: flattenAux r []))
 
-/-- **The inorder traversal lists exactly the keys of a 2-3 tree.** For every 2-3 tree $t$ of
-height $h$ and every key $x$, $x$ occurs in the inorder traversal of $t$ if and only if $x$ is a
-member of $t$, that is, one of the separator keys stored at its nodes. -/
+/-- The flattening contains exactly the structurally present keys. -/
 public theorem mem_flatten {x : α} {h : Nat} {t : Tree α h} :
     x ∈ flatten t ↔ x ∈ t := by
   induction t with
@@ -290,9 +249,7 @@ public theorem mem_flatten {x : α} {h : Nat} {t : Tree α h} :
   | node2 a l r ihl ihr => simp [ihl, ihr, or_left_comm]
   | node3 a b l m r ihl ihm ihr => simp [ihl, ihm, ihr, or_left_comm]
 
-/-- **All-keys predicate agrees with the flattening on 2-3 trees.** For every predicate $p$
-on keys and every 2-3 tree $t$ of height $h$, every key stored at a node of $t$ satisfies $p$
-if and only if every element of the inorder flattening of $t$ satisfies $p$. -/
+/-- `All` is equivalent to universal quantification over the flattening. -/
 public theorem all_iff_forall_flatten {p : α → Prop} {h : Nat} {t : Tree α h} :
     All p t ↔ ∀ y ∈ flatten t, p y := by
   rw [all_iff_forall_mem]
@@ -302,10 +259,7 @@ public theorem all_iff_forall_flatten {p : α → Prop} {h : Nat} {t : Tree α h
   · intro hforall y hy
     exact hforall y (mem_flatten.mpr hy)
 
-/-- **Inorder traversal of an ordered 2-3 tree is strictly increasing.** Let $\alpha$ be a
-linearly ordered type. For every natural number $h$ and every ordered 2-3 tree $t$ over $\alpha$
-of height $h$, the flattening (inorder traversal) of $t$ is strictly increasing: whenever a key
-$x$ occurs before a key $y$ in it, $x < y$. -/
+/-- The flattening of an ordered tree is strictly increasing. -/
 public theorem ordered_flatten_pairwise [LinearOrder α] {h : Nat} {t : Tree α h}
     (hOrd : Ordered t) : List.Pairwise (· < ·) (flatten t) := by
   induction t with
@@ -353,19 +307,12 @@ public theorem ordered_flatten_pairwise [LinearOrder α] {h : Nat} {t : Tree α 
     · exact hBl y hy
     · exact lt_trans (hBl y hy) ((List.pairwise_cons.mp hpwTail).1 z hz)
 
-/-- **The traversal of an ordered 2-3 tree has no duplicates.** If the keys are linearly ordered
-and a 2-3 tree $t$ (of any height) is ordered, then no key occurs twice in the flattening of
-$t$. -/
+/-- The flattening of an ordered tree has no duplicate keys. -/
 public theorem flatten_nodup [LinearOrder α] {h : Nat} {t : Tree α h}
     (hOrd : Ordered t) : (flatten t).Nodup :=
   (ordered_flatten_pairwise hOrd).nodup
 
-/-- **Search in a 2-3 tree.** For a linearly ordered key type, searching a 2-3 tree for a key
-$x$ returns false at a leaf. At a 2-node with key $a$, it searches the left subtree if $x < a$,
-otherwise the right subtree if $a < x$, and otherwise returns true. At a 3-node with keys $a$
-and $b$, it searches the left subtree if $x < a$; otherwise, if $a < x$, it searches the
-middle subtree if $x < b$, otherwise the right subtree if $b < x$, and otherwise returns true;
-if neither $x < a$ nor $a < x$, it returns true. -/
+/-- Search a tree by comparing the query against separator keys. -/
 public def contains [LinearOrder α] (x : α) : {h : Nat} → Tree α h → Bool
   | _, .leaf => false
   | _, .node2 a l r =>
@@ -380,9 +327,7 @@ public def contains [LinearOrder α] (x : α) : {h : Nat} → Tree α h → Bool
         else true
       else true
 
-/-- **Search in an ordered 2-3 tree is correct.** Let the keys be linearly ordered and let $t$ be
-a 2-3 tree of height $h$ that satisfies the ordering invariant. Then searching $t$ for a key
-$x$ returns true if and only if $x$ occurs in the inorder flattening of $t$. -/
+/-- Search succeeds exactly on the keys of the flattening, for ordered trees. -/
 public theorem contains_eq_true_iff [LinearOrder α] {x : α} {h : Nat} {t : Tree α h}
     (hOrd : Ordered t) : contains x t = true ↔ x ∈ flatten t := by
   induction t with
@@ -480,17 +425,10 @@ private theorem orderedInsert_append_eq [LinearOrder α] (a : α) :
     show orderedInsert a (b :: (bs ++ a :: R)) = (b :: bs) ++ a :: R
     simp [orderedInsert, hnot, hb, ih R hbs]
 
-/-- **Insertion into a height-indexed 2-3 tree.** Inserting a key $x$ into a 2-3 tree of
-height $h$ yields either a single tree of height $h$ or a split into two trees of height $h$
-around a promoted key. Inserting into a leaf gives the split of two leaves around $x$. At a
-2-node with key $a$, insertion recurses into the left child if $x < a$ and into the right child
-if $a < x$; a returned tree replaces that child, and a returned split around $k$ is absorbed by
-turning the node into a 3-node with keys $k, a$ (left) or $a, k$ (right). At a 3-node with keys
-$a, b$, insertion recurses into the left child if $x < a$, the middle child if $a < x < b$, and
-the right child if $a < x$ and $b < x$; a returned tree replaces that child, and a returned split
-makes the node split into two 2-nodes, promoting $a$, the child's promoted key, or $b$
-respectively. In the remaining cases $x$ equals a key of the node and the tree is returned
-unchanged. -/
+/-- Insert a key into a height-indexed tree, returning an `Overflow`. A leaf
+always splits; a 2-node absorbs a split child by becoming a 3-node; a 3-node
+with a split child splits in turn, promoting the appropriate separator. Inserting
+a key equal to a separator leaves the tree unchanged. -/
 public def ins [LinearOrder α] (x : α) : {h : Nat} → Tree α h → Overflow α h
   | _, .leaf => .split .leaf x .leaf
   | _, .node2 a l r =>
@@ -520,14 +458,10 @@ public def ins [LinearOrder α] (x : α) : {h : Nat} → Tree α h → Overflow 
         else .ok (.node3 a b l m r)
       else .ok (.node3 a b l m r)
 
-/-- **Insertion specification for 2-3 trees.** Let $\alpha$ be linearly ordered, let
-$x \in \alpha$, and let $t$ be a 2-3 tree of height $h$. An insertion result of height $h$ meets
-the specification for inserting $x$ into $t$ when the following holds. If it is a single tree
-$t'$ of height $h$, then $t'$ is ordered and its inorder traversal equals the ordered insertion
-of $x$ into the inorder traversal of $t$. If it is a split into trees $l$ and $r$ of height $h$
-around a promoted key $k$, then $l$ and $r$ are ordered, every key of $l$ is less than $k$,
-every key of $r$ is greater than $k$, and the traversal of $l$ followed by $k$ and then the
-traversal of $r$ equals the ordered insertion of $x$ into the inorder traversal of $t$. -/
+/-- The specification of `ins x t` as an `Overflow` of a given source tree `t`:
+in the `ok` case the result is ordered with the expected flattening, and in the
+`split` case both parts are ordered, separated by the promoted key, with the
+expected combined flattening. -/
 public def InsSpec [LinearOrder α] (x : α) {h : Nat} (t : Tree α h) :
     Overflow α h → Prop
   | .ok t' => Ordered t' ∧ flatten t' = orderedInsert x (flatten t)
@@ -657,15 +591,8 @@ private theorem all_ins [LinearOrder α] {p : α → Prop} {x : α} (hx : p x) :
         rw [hEq]
         exact ⟨hAl, hpa, hAm, hpb, hAr⟩
 
-/-- **Correctness of 2-3 tree insertion.** Let $\alpha$ be linearly ordered, let $x \in \alpha$,
-and let $t$ be an ordered 2-3 tree of height $h$. Then inserting $x$ into $t$ meets the insertion
-specification. If the insertion returns a single tree $t'$ of height $h$, then $t'$ is ordered
-and its inorder traversal is the ordered insertion of $x$ into the inorder traversal of $t$. If
-it returns a split into trees $l$ and $r$ of height $h$ around a promoted key $k$, then $l$ and
-$r$ are ordered, every key of $l$ is less than $k$, every key of $r$ is greater than $k$, and
-the traversal of $l$ followed by $k$ and then the traversal of $r$ is the ordered insertion of
-$x$ into the inorder traversal of $t$.
-
+/-- Insertion into an ordered tree satisfies `InsSpec`: it preserves the
+ordering invariant and its flattening is `orderedInsert` of the old flattening.
 Balance is automatic from the height index. -/
 public theorem ins_spec [LinearOrder α] (x : α) :
     ∀ {h : Nat} (t : Tree α h), Ordered t → InsSpec x t (ins x t) := by
@@ -884,58 +811,42 @@ public theorem ins_spec [LinearOrder α] (x : α) :
         simp only [flatten_node3]
         rw [orderedInsert_append_eq _ _ _ hBl]
 
-/-- **2-3 trees of unspecified height.** For a type $\alpha$, a 2-3 tree of unspecified height
-over $\alpha$ is a pair $(h, t)$ of a natural number $h$ and a height-indexed 2-3 tree $t$ over
-$\alpha$ of height $h$.
-
-It serves as a standalone search tree. -/
+/-- A 2-3 tree with existentially quantified height, for use as a standalone
+search tree. -/
 public structure Root (α : Type u) where
   /-- The height of the underlying tree. -/
   height : Nat
   /-- The underlying height-indexed tree. -/
   tree : Tree α height
 
-/-- **Turning an insertion result into a 2-3 tree.** An insertion result at height $h$ becomes a
-2-3 tree of unspecified height as follows: a tree $t$ of height $h$ gives $t$ itself, of height
-$h$, and a split into trees $l$, $r$ of height $h$ around a key $k$ gives the 2-node with
-separator $k$, left child $l$ and right child $r$, of height $h + 1$. -/
+/-- Turn an insertion overflow into a root: a split becomes a new 2-node one
+level higher. -/
 public def Overflow.toRoot : {h : Nat} → Overflow α h → Root α
   | _, .ok t => ⟨_, t⟩
   | _, .split l k r => ⟨_, .node2 k l r⟩
 
-/-- **Empty 2-3 tree.** The empty 2-3 tree is the root of height $0$ whose underlying tree is
-the leaf. -/
+/-- The empty 2-3 tree. -/
 public def Root.empty : Root α :=
   ⟨0, Tree.leaf⟩
 
-/-- **Inorder traversal of a 2-3 tree root.** The flattening of a 2-3 tree root is the
-flattening of its underlying tree, that is, the list of its keys in inorder. -/
+/-- The inorder traversal of a root's tree. -/
 public def Root.flatten (t : Root α) : List α :=
   TwoThreeTree.flatten t.tree
 
-/-- **Search in a rooted 2-3 tree.** For a linearly ordered key type, searching a root (a 2-3
-tree packaged with its height) for a key $x$ returns the Boolean result of the 2-3 tree search
-for $x$ in the underlying height-indexed tree. -/
+/-- Search a root's tree by separator comparisons. -/
 public def Root.contains [LinearOrder α] (x : α) (t : Root α) : Bool :=
   TwoThreeTree.contains x t.tree
 
-/-- **Ordering invariant for 2-3 trees of unspecified height.** Let $\alpha$ be a type with a
-relation $<$. A 2-3 tree of unspecified height over $\alpha$ is ordered when its underlying
-height-indexed 2-3 tree satisfies the ordering invariant. -/
+/-- The ordering invariant for a root's tree. -/
 public def Root.Ordered [LT α] (t : Root α) : Prop :=
   TwoThreeTree.Ordered t.tree
 
-/-- **Insertion into a 2-3 tree root.** To insert a key $x$ into a root, that is, a 2-3 tree
-together with its height $h$, insert $x$ into the underlying tree. If this returns a single tree
-of height $h$, that tree is the new root, of height $h$. If it returns a split into trees $l$
-and $r$ around a key $k$, the new root is the 2-node with key $k$ and children $l$ and $r$, of
-height $h + 1$. -/
+/-- Insert a key into a root, growing the height by one exactly when the root
+splits. Insertion ignores an already-present key. -/
 public def Root.insert [LinearOrder α] (x : α) (t : Root α) : Root α :=
   Overflow.toRoot (ins x t.tree)
 
-/-- **The empty 2-3 tree is ordered.** For every type $\alpha$ with a relation $<$, the empty
-2-3 tree of unspecified height over $\alpha$ (the leaf, of height $0$) satisfies the ordering
-invariant. -/
+/-- The empty tree is ordered. -/
 public theorem Root.ordered_empty [LT α] : (Root.empty : Root α).Ordered :=
   trivial
 
@@ -943,21 +854,16 @@ public theorem Root.ordered_empty [LT α] : (Root.empty : Root α).Ordered :=
     (Root.empty : Root α).flatten = [] :=
   rfl
 
-/-- **The stored height of a 2-3 tree root is its computed height.** For every root $t$, that
-is, a 2-3 tree together with its height index, the height of the underlying tree computed along
-its leftmost spine equals the stored height of $t$. -/
+/-- The computed height of a root's tree agrees with its stored height. -/
 public theorem Root.height_tree (t : Root α) :
     TwoThreeTree.height t.tree = t.height :=
   height_eq t.tree
 
-/-- **Every rooted 2-3 tree is balanced.** For every root, that is, a 2-3 tree packaged with its
-height, the underlying height-indexed tree satisfies the balance invariant. -/
+/-- Every root's tree is balanced. -/
 public theorem Root.balanced (t : Root α) : Balanced t.tree :=
   TwoThreeTree.balanced t.tree
 
-/-- **Insertion preserves the ordering of 2-3 trees.** Let $\alpha$ be a linearly ordered type.
-If $t$ is an ordered 2-3 tree of unspecified height over $\alpha$ and $x \in \alpha$, then the
-tree obtained by inserting $x$ into $t$ is ordered. -/
+/-- Insertion preserves the ordering invariant at the root. -/
 public theorem Root.ordered_insert [LinearOrder α] {x : α} {t : Root α}
     (hOrd : t.Ordered) : (t.insert x).Ordered := by
   have hSpec := ins_spec x t.tree hOrd
@@ -977,10 +883,7 @@ public theorem Root.ordered_insert [LinearOrder α] {x : α} {t : Root α}
     rw [hIns]
     exact ⟨hOl, hOr, hAl, hAr⟩
 
-/-- **Insertion into a 2-3 tree is ordered insertion into its traversal.** Let the keys be
-linearly ordered, let $t$ be an ordered 2-3 tree root and let $x$ be a key. Then the flattening
-of the root obtained by inserting $x$ into $t$ equals the ordered insertion of $x$ into the
-flattening of $t$. -/
+/-- The flattening after root insertion is `orderedInsert` of the flattening. -/
 public theorem Root.flatten_insert [LinearOrder α] {x : α} {t : Root α}
     (hOrd : t.Ordered) : (t.insert x).flatten = orderedInsert x t.flatten := by
   have hSpec := ins_spec x t.tree hOrd
@@ -1003,50 +906,35 @@ public theorem Root.flatten_insert [LinearOrder α] {x : α} {t : Root α}
     rw [flatten_node2]
     exact hf
 
-/-- **Keys after insertion into a 2-3 tree.** Let $\alpha$ be linearly ordered and let $t$ be an
-ordered 2-3 tree root over $\alpha$. For all $x, y \in \alpha$, $y$ occurs in the inorder
-traversal of the root obtained by inserting $x$ into $t$ if and only if $y = x$ or $y$ occurs in
-the inorder traversal of $t$. -/
+/-- Root insertion adds exactly the inserted key to the flattening. -/
 public theorem Root.mem_flatten_insert [LinearOrder α] {x y : α} {t : Root α}
     (hOrd : t.Ordered) : y ∈ (t.insert x).flatten ↔ y = x ∨ y ∈ t.flatten := by
   rw [Root.flatten_insert hOrd, mem_orderedInsert]
 
-/-- **Search in a rooted 2-3 tree is correct.** Let the keys be linearly ordered and let $t$ be
-a root (a 2-3 tree packaged with its height) whose underlying tree satisfies the ordering
-invariant. Then searching $t$ for a key $x$ returns true if and only if $x$ occurs in the
-inorder flattening of $t$. -/
+/-- Search at the root succeeds exactly on keys of the flattening. -/
 public theorem Root.contains_eq_true_iff [LinearOrder α] {x : α} {t : Root α}
     (hOrd : t.Ordered) : t.contains x = true ↔ x ∈ t.flatten :=
   TwoThreeTree.contains_eq_true_iff hOrd
 
-/-- **Insertion raises the height of a 2-3 tree by at most one.** For linearly ordered keys,
-every key $x$ and every 2-3 tree root $t$, the stored height of the root obtained by inserting
-$x$ into $t$ is at most the stored height of $t$ plus one. -/
+/-- Insertion grows the stored height by at most one. -/
 public theorem Root.height_insert_le [LinearOrder α] (x : α) (t : Root α) :
     (t.insert x).height ≤ t.height + 1 := by
   cases hins : ins x t.tree <;> simp [Root.insert, Overflow.toRoot, hins]
 
-/-- **Building a 2-3 tree from a list.** For linearly ordered keys, the 2-3 tree root built from
-a list is defined by recursion: the empty list gives the empty 2-3 tree, and a list with head $x$
-and tail $xs$ gives the result of inserting $x$ into the root built from $xs$. Thus the elements
-are inserted into the empty tree from the last to the first. -/
+/-- Build a root by inserting the list from right to left. -/
 public def Root.fromList [LinearOrder α] : List α → Root α
   | [] => .empty
   | x :: xs => Root.insert x (Root.fromList xs)
 
-/-- **Building a 2-3 tree from a list gives an ordered tree.** Let $\alpha$ be a linearly ordered
-type. For every list $L$ of elements of $\alpha$, the 2-3 tree of unspecified height built from
-$L$, by inserting the elements of $L$ from right to left into the empty tree, is ordered. -/
+/-- A tree built from a list is ordered. -/
 public theorem Root.ordered_fromList [LinearOrder α] (xs : List α) :
     (Root.fromList xs).Ordered := by
   induction xs with
   | nil => exact Root.ordered_empty
   | cons _ _ ih => exact Root.ordered_insert ih
 
-/-- **Keys of a 2-3 tree built from a list.** Let $\alpha$ be linearly ordered. For every list
-$L$ over $\alpha$ and every $x \in \alpha$, $x$ occurs in the inorder traversal of the 2-3 tree
-built from $L$ (by inserting its elements from right to left into the empty tree) if and only
-if $x$ occurs in $L$. -/
+/-- A key is in the flattening of a tree built from a list exactly when it is
+in the list. -/
 public theorem Root.mem_fromList [LinearOrder α] {x : α} {xs : List α} :
     x ∈ (Root.fromList xs).flatten ↔ x ∈ xs := by
   induction xs with

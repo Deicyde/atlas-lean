@@ -53,11 +53,7 @@ private theorem array_set_multiset {α : Type u} [DecidableEq α]
     x ::ₘ (↑a.toList : Multiset α).erase a.toList[i]
   exact list_set_multiset a.toList i (by simpa using hi) x
 
-/-- **Decrease-key in a binary min-heap.** Given a binary min-heap $h$ over a linearly ordered
-type, with level-order array $a$, an index $i < |a|$ and a value $x \le a_i$, decrease-key returns
-the heap whose array is obtained from $a$ by replacing the entry at position $i$ with $x$ and then
-sifting position $i$ up, repeatedly swapping the entry with its parent while it is strictly
-smaller than the parent. -/
+/-- Decrease one indexed key and restore heap order along its ancestor path. -/
 def MinHeap.decreaseKey {α : Type u} [LinearOrder α]
     (h : MinHeap α) (i : Fin h.data.size) (x : α)
     (hdecrease : x ≤ h.data[i.val]) : MinHeap α where
@@ -108,10 +104,7 @@ def MinHeap.decreaseKey {α : Type u} [LinearOrder α]
         ite_eq_right (Ne.symm hji)]
       exact hchain)
 
-/-- **Array of a binary heap after decrease-key.** Let $h$ be a binary min-heap over a linearly
-ordered type, with level-order array $a$, let $i < |a|$ and let $x \le a_i$. The array of the heap
-obtained by decreasing the key at position $i$ to $x$ equals the result of sifting up position $i$
-in the array obtained from $a$ by replacing its entry at position $i$ with $x$. -/
+/-- The backing array is the selected replacement followed by canonical sift-up. -/
 theorem MinHeap.decreaseKey_data {α : Type u} [LinearOrder α]
     (h : MinHeap α) (i : Fin h.data.size) (x : α)
     (hdecrease : x ≤ h.data[i.val]) :
@@ -119,19 +112,14 @@ theorem MinHeap.decreaseKey_data {α : Type u} [LinearOrder α]
       siftUp (h.data.set i.val x) i.val := by
   rfl
 
-/-- **Decrease-key yields a heap-ordered array.** Let $h$ be a binary min-heap over a linearly
-ordered type, with level-order array $a$, let $i < |a|$ and let $x \le a_i$. The array of the heap
-obtained by decreasing the key at position $i$ to $x$ is heap-ordered: the entry at every nonroot
-position is at least the entry at its parent position. -/
+/-- Decrease-key preserves local heap order. -/
 theorem MinHeap.decreaseKey_ordered {α : Type u} [LinearOrder α]
     (h : MinHeap α) (i : Fin h.data.size) (x : α)
     (hdecrease : x ≤ h.data[i.val]) :
     HeapOrdered (h.decreaseKey i x hdecrease).data :=
   (h.decreaseKey i x hdecrease).ordered
 
-/-- **Decrease-key preserves the heap size.** Let $h$ be a binary min-heap over a linearly ordered
-type, with level-order array $a$, let $i < |a|$ and let $x \le a_i$. The array of the heap obtained
-by decreasing the key at position $i$ to $x$ has the same length as $a$. -/
+/-- Decrease-key preserves the number of stored entries. -/
 theorem MinHeap.decreaseKey_size {α : Type u} [LinearOrder α]
     (h : MinHeap α) (i : Fin h.data.size) (x : α)
     (hdecrease : x ≤ h.data[i.val]) :
@@ -139,11 +127,7 @@ theorem MinHeap.decreaseKey_size {α : Type u} [LinearOrder α]
   rw [h.decreaseKey_data i x hdecrease]
   exact (siftUp_perm (h.data.set i.val x) i.val).size_eq.trans (by simp)
 
-/-- **Multiset of a binary heap after decrease-key.** Let $h$ be a binary min-heap over a
-linearly ordered type, with level-order array $a$, let $i < |a|$ and let $x \le a_i$. The
-multiset of elements of the heap obtained by decreasing the key at position $i$ to $x$ is
-obtained from the multiset of elements of $h$ by removing one occurrence of $a_i$ and adding one
-occurrence of $x$. -/
+/-- Decrease-key replaces exactly the selected occurrence in the represented multiset. -/
 theorem MinHeap.decreaseKey_elements {α : Type u} [LinearOrder α]
     (h : MinHeap α) (i : Fin h.data.size) (x : α)
     (hdecrease : x ≤ h.data[i.val]) :

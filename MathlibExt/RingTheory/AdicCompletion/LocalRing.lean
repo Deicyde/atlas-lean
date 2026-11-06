@@ -59,7 +59,7 @@ completion by powers of its maximal ideal agree with those of the ring.
 
 open IsLocalRing
 
-/-- **Completion of a Noetherian local ring is faithfully flat.** The adic completion of a Noetherian local ring at its maximal ideal is
+/-- The adic completion of a Noetherian local ring at its maximal ideal is
 faithfully flat. -/
 theorem IsLocalRing.faithfullyFlat_adicCompletion_maximalIdeal
     (R : Type*) [CommRing R] [IsNoetherianRing R] [IsLocalRing R] :
@@ -81,7 +81,7 @@ theorem IsLocalRing.faithfullyFlat_adicCompletion_maximalIdeal
     hle ▸ Submodule.mem_top
   exact hq (LinearMap.mem_ker.mp hx)
 
-/-- **Ideals contract to themselves along local adic completion.** Ideals contract back to themselves along the adic completion map of a
+/-- Ideals contract back to themselves along the adic completion map of a
 Noetherian local ring. -/
 theorem IsLocalRing.comap_map_adicCompletion_eq
     {R : Type*} [CommRing R] [IsNoetherianRing R] [IsLocalRing R] (I : Ideal R) :
@@ -160,7 +160,7 @@ section Scalars
 
 variable (k : Type*) [CommRing k] [Algebra k A]
 
-/-- **Algebra map between maximal ideal power quotients of a ring and its completion.** The finite quotient of the completion by a power of its maximal ideal
+/-- The finite quotient of the completion by a power of its maximal ideal
 identifies with the corresponding quotient of the ring. -/
 noncomputable def quotientMaximalIdealPowAlgHom (n : ℕ) :
     (AdicCompletion (maximalIdeal A) A ⧸ maximalIdeal (AdicCompletion (maximalIdeal A) A) ^ n)
@@ -185,7 +185,7 @@ theorem quotientMaximalIdealPowAlgHom_bijective (n : ℕ) :
     obtain ⟨x, rfl⟩ := surjective_evalₐ (maximalIdeal A) n z
     exact ⟨Ideal.Quotient.mk _ x, rfl⟩
 
-/-- **Isomorphism of maximal ideal power quotients of a ring and its completion.** The finite quotient of the completion by a power of its maximal ideal
+/-- The finite quotient of the completion by a power of its maximal ideal
 identifies with the corresponding quotient of the ring. -/
 noncomputable def quotientMaximalIdealPowAlgEquiv (n : ℕ) :
     (AdicCompletion (maximalIdeal A) A ⧸ maximalIdeal (AdicCompletion (maximalIdeal A) A) ^ n)
@@ -243,7 +243,7 @@ theorem algEquiv_algebraMap_mem_maximalIdeal {a : A} (ha : a ∈ maximalIdeal A)
   rw [maximalIdeal_eq_map_algEquiv Φ]
   exact Ideal.mem_map_of_mem _ ha
 
-/-- **Maximal ideal power quotients transported along an isomorphism.** The finite quotients of `B` by powers of its maximal ideal agree with
+/-- The finite quotients of `B` by powers of its maximal ideal agree with
 those of `A`, transported along an algebra isomorphism with the completion
 of `A`. -/
 noncomputable def quotientMaximalIdealPowAlgEquivOfAlgEquiv (n : ℕ) :

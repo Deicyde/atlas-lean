@@ -46,7 +46,7 @@ to be `1` by involutivity.
 open MeasureTheory
 open scoped ENNReal NNReal
 
-/-- **Right-invariant Haar measures are inversion-invariant.** A right-invariant Haar measure is invariant under inversion. -/
+/-- A right-invariant Haar measure is invariant under inversion. -/
 theorem MeasureTheory.Measure.isInvInvariant_of_isMulRightInvariant
     {G : Type*} [Group G] [TopologicalSpace G] [IsTopologicalGroup G] [LocallyCompactSpace G]
     [MeasurableSpace G] [BorelSpace G] [SecondCountableTopology G]

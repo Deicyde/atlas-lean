@@ -57,8 +57,8 @@ The source's first, topological inverse-limit assertion is background supplied b
 `ProfiniteGrp`/completion API and is not claimed as a new theorem here.
 -/
 
-/-- **Strongly complete group.** A group $G$ equipped with a topology is *strongly complete* when
-every subgroup of finite index in $G$ is open. -/
+/-- A group equipped with a topology is *strongly complete* when every finite-index
+subgroup is open. -/
 def IsStronglyComplete (G : Type*) [Group G] [TopologicalSpace G] : Prop :=
   ∀ H : Subgroup G, H.FiniteIndex → IsOpen (H : Set G)
 
@@ -70,11 +70,8 @@ universe u
 
 variable (P : ProfiniteGrp.{u})
 
-/-- **Finite-index normal subgroups are closed when the completion map is onto.** Let $P$ be a
-profinite group and let $\hat P$ be the profinite completion of $P$ as an abstract group, that is,
-the inverse limit of the finite quotients $P/N$ over all normal subgroups $N$ of finite index in
-$P$. If the canonical map $P \to \hat P$ is surjective, then every normal subgroup of finite
-index in $P$ is closed in $P$. -/
+/-- A finite-index normal subgroup of a profinite group is closed whenever the
+canonical map to the profinite completion is surjective. -/
 theorem isClosed_toSubgroup_of_surjective_etaFn
     (N : FiniteIndexNormalSubgroup (GrpCat.of ↥P))
     (hsurj : Function.Surjective (etaFn (GrpCat.of ↥P))) :
@@ -101,11 +98,8 @@ theorem isClosed_toSubgroup_of_surjective_etaFn
   exact (isClosed_singleton.preimage πN.hom.continuous_toFun).isCompact.image
     ψ.hom.continuous_toFun |>.isClosed
 
-/-- **Finite-index normal subgroups are open when the completion map is onto.** Let $P$ be a
-profinite group and let $\hat P$ be the profinite completion of $P$ as an abstract group, that is,
-the inverse limit of the finite quotients $P/N$ over all normal subgroups $N$ of finite index in
-$P$. If the canonical map $P \to \hat P$ is surjective, then every normal subgroup of finite
-index in $P$ is open in $P$. -/
+/-- A finite-index normal subgroup of a profinite group is open whenever the
+canonical map to the profinite completion is surjective. -/
 theorem isOpen_toSubgroup_of_surjective_etaFn
     (N : FiniteIndexNormalSubgroup (GrpCat.of ↥P))
     (hsurj : Function.Surjective (etaFn (GrpCat.of ↥P))) :
@@ -113,10 +107,8 @@ theorem isOpen_toSubgroup_of_surjective_etaFn
   N.toSubgroup.isOpen_of_isClosed_of_finiteIndex
     (isClosed_toSubgroup_of_surjective_etaFn P N hsurj)
 
-/-- **Strongly complete profinite groups via the profinite completion.** Let $P$ be a profinite
-group and let $\hat P$ be the profinite completion of $P$ as an abstract group, that is, the
-inverse limit of the finite quotients $P/N$ over all normal subgroups $N$ of finite index in $P$.
-Then $P$ is strongly complete if and only if the canonical map $P \to \hat P$ is bijective. -/
+/-- A profinite group is strongly complete if and only if the canonical map to
+its profinite completion is bijective. -/
 theorem isStronglyComplete_iff_bijective_etaFn :
     IsStronglyComplete ↥P ↔ Function.Bijective (etaFn (GrpCat.of ↥P)) := by
   constructor

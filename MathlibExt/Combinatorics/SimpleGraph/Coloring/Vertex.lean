@@ -52,43 +52,30 @@ lemma card_div_indepNum_le_chromaticNumber : ⌈(Nat.card V / α(G) : ℚ≥0)�
     fun x hx y hy _ ↦ c.not_adj_of_mem_colorClass hx hy
 
 variable (G) in
-/-- **Critical edge sets.** Let $G$ be a graph and $S$ a set of unordered pairs of its
-vertices. Then $S$ is critical for $G$ if deleting the edges of $G$ that lie in $S$ strictly
-lowers the chromatic number, as an element of $\mathbb{N} \cup \{\infty\}$. -/
+/-- A set of edges is critical if deleting them reduces the chromatic number. -/
 def IsCriticalEdges (edges : Set (Sym2 V)) : Prop :=
   (G.deleteEdges edges).chromaticNumber < G.chromaticNumber
 
 variable (G) in
-/-- **Critical edge.** For a graph $G$ and an unordered pair $e$ of vertices, $e$ is a critical
-edge of $G$ if removing $e$ from the edge set of $G$ strictly lowers the chromatic number of $G$,
-taken in $\mathbb{N} \cup \{\infty\}$.
-
-Only edges of $G$ can be critical. -/
+/-- An edge is critical if deleting it reduces the chromatic number. -/
 def IsCriticalEdge (e : Sym2 V) : Prop := G.IsCriticalEdges ({e} : Set (Sym2 V))
 
 /--
-**Critical vertex sets of a subgraph.** Let $G'$ be a subgraph of a graph $G$. A set $S$ of
-vertices is critical for $G'$ if deleting the vertices in $S$ from $G'$ strictly lowers the
-chromatic number of $G'$, viewed as a graph on its own vertex set, with chromatic numbers taken
-in $\mathbb{N} \cup \{\infty\}$.
+A set of vertices is critical if deleting them reduces the chromatic number.
 -/
 def Subgraph.IsCriticalVerts (verts : Set V) (G' : G.Subgraph) : Prop :=
   (G'.deleteVerts verts).coe.chromaticNumber < G'.coe.chromaticNumber
 
 /--
-**Critical vertices of a subgraph.** Let $G'$ be a subgraph of a graph $G$. A vertex $v$ is
-critical for $G'$ if $\{v\}$ is a critical vertex set of $G'$, that is, deleting $v$ from $G'$
-strictly lowers the chromatic number of $G'$, viewed as a graph on its own vertex set, with
-chromatic numbers taken in $\mathbb{N} \cup \{\infty\}$.
+A vertex is critical if deleting it reduces the chromatic number.
 -/
 def Subgraph.IsCriticalVertex (v : V) (G' : G.Subgraph) : Prop := G'.IsCriticalVerts {v}
 
 variable (G)
 
 /--
-**Vertex-critical graphs.** Let $k$ be a natural number. A graph $G$ is $k$-critical (or
-vertex-critical) if its chromatic number equals $k$ and every vertex $v$ of $G$ is critical,
-that is, deleting $v$ from $G$ strictly lowers the chromatic number.
+A graph `G` is `k`-critical (or vertex-critical) if its chromatic number is `k`,
+and deleting any single vertex reduces the chromatic number.
 -/
 def IsCritical (k : ℕ) : Prop := G.chromaticNumber = k ∧ ∀ v, (⊤ : G.Subgraph).IsCriticalVertex v
 
@@ -117,64 +104,53 @@ theorem colorable_iff_induce_eq_bot (G : SimpleGraph V) (n : ℕ) :
   exact this h_adj
 
 /--
-**Cocolorable graphs.** A graph $G$ is cocolorable with $n$ colors if there is a map from its
-vertices to the colors $\{0, \dots, n-1\}$ such that each color class induces either an
-independent set or a complete graph in $G$.
+`G.Cocolorable n` means that the vertices of `G` can be colored with `n` colors so that each
+color class induces either an independent set or a complete graph.
 -/
 def Cocolorable (G : SimpleGraph V) (n : ℕ) : Prop := ∃ coloring : V → Fin n,
   ∀ i, G.induce {v | coloring v = i} = ⊥ ∨ G.induce {v | coloring v = i} = ⊤
 
-/-- **Colorable graphs are cocolorable.** For every natural number $n$, if a graph $G$ has a
-proper coloring with $n$ colors, then $G$ is cocolorable with $n$ colors.
-
-Each color class of a proper coloring induces an independent set. -/
+/-- Every proper coloring is a cocoloring: color classes inducing `⊥` also satisfy the
+`⊥ ∨ ⊤` disjunction. -/
 theorem Colorable.cocolorable {n : ℕ} (hc : G.Colorable n) : G.Cocolorable n := by
   obtain ⟨coloring, hcol⟩ := (colorable_iff_induce_eq_bot G n).mp hc
   exact ⟨coloring, fun i => Or.inl (hcol i)⟩
 
-/-- **Finite graphs are cocolorable.** Every graph $G$ on a finite vertex set $V$ is cocolorable
-with $|V|$ colors.
-
-Giving every vertex its own color is a proper coloring. -/
+/-- Every finite graph is cocolorable, via its tautological finite coloring. -/
 theorem cocolorable_of_fintype [Fintype V] (G : SimpleGraph V) :
     G.Cocolorable (Fintype.card V) :=
   (colorable_of_fintype G).cocolorable
 
 /--
-**Cochromatic number.** The cochromatic number of a graph $G$, an element of
-$\mathbb{N} \cup \{\infty\}$, is the least natural number $n$ such that $G$ is cocolorable with
-$n$ colors, that is, the least number of colors in a coloring of the vertices of $G$ in which
-each color class induces either an independent set or a complete graph. It is $\infty$ exactly
-when $G$ is not cocolorable with any finite number of colors.
+The cochromatic number of a graph is the minimal number of colors needed to color its vertices
+so that each color class induces either an independent set or a complete graph.
+This is `⊤` (infinity) iff `G` isn't cocolorable with finitely many colors.
+
+If `G` is cocolorable, then `ENat.toNat G.cochromaticNumber` is the `ℕ`-valued cochromatic number.
 -/
 noncomputable def cochromaticNumber (G : SimpleGraph V) : ℕ∞ := ⨅ n ∈ Set.ofPred G.Cocolorable,
   (n : ℕ∞)
 
-/-- **Cochromatic number as a minimum.** If a graph $G$ is cocolorable with $n$ colors for some
-natural number $n$, then the cochromatic number of $G$ equals the least natural number $m$ such
-that $G$ is cocolorable with $m$ colors. -/
+/-- Finite cocolorability description of the cochromatic number, mirroring
+`Colorable.chromaticNumber_eq_sInf`. -/
 theorem Cocolorable.cochromaticNumber_eq_sInf {n : ℕ} (h : G.Cocolorable n) :
     G.cochromaticNumber = sInf {n' : ℕ | G.Cocolorable n'} := by
   rw [ENat.natCast_sInf, cochromaticNumber]
   exact ⟨_, h⟩
 
-/-- **Cochromatic number of a finite graph.** For every graph $G$ on a finite vertex set, the
-cochromatic number of $G$, converted from $\mathbb{N} \cup \{\infty\}$ to $\mathbb{N}$ by sending
-$\infty$ to $0$, equals the least natural number $m$ such that $G$ is cocolorable with $m$
-colors. -/
+/-- For a finite vertex type, `toNat` of the `ℕ∞` cochromatic number is the natural-valued
+minimum of admissible color counts. -/
 theorem cochromaticNumber_toNat_eq_sInf [Fintype V] (G : SimpleGraph V) :
     G.cochromaticNumber.toNat = sInf {n : ℕ | G.Cocolorable n} := by
   rw [(cocolorable_of_fintype G).cochromaticNumber_eq_sInf, ENat.toNat_natCast]
 
-/-- **Chromatic cardinal of a graph.** The chromatic cardinal is the minimal number of colors need to color it. In contrast to
+/-- The chromatic cardinal is the minimal number of colors need to color it. In contrast to
 `chromaticNumber`, which assigns `⊤ : ℕ∞` to all non-finitely colorable graphs, this definition
 returns a `Cardinal` and can therefore distinguish between different infinite chromatic numbers. -/
 noncomputable def chromaticCardinal.{u} {V : Type u} (G : SimpleGraph V) : Cardinal :=
   sInf {κ : Cardinal | ∃ (C : Type u) (_ : Cardinal.mk C = κ), Nonempty (G.Coloring C)}
 
-/-- **Largest union of independent sets.** For a graph $G$ on a finite vertex set and a
-natural number $k$, this is the maximum number of vertices in a union of $k$ (possibly empty,
-possibly overlapping) independent sets of $G$. -/
+/-- The maximum size of the union of k finite independent sets. -/
 noncomputable def indepNumK (G : SimpleGraph V) [Fintype V] (k : ℕ) : ℕ :=
   sSup {n | ∃ f : Fin k → Set V, (∀ i, G.IsIndepSet (f i)) ∧ (⋃ i, f i).ncard = n}
 
@@ -184,29 +160,24 @@ theorem indepNumK_le_card [Fintype V] (G : SimpleGraph V) (k : ℕ) :
   rintro n ⟨f, _, rfl⟩
   simpa using Set.ncard_le_card (⋃ i, f i)
 
-/-- **CDS-colorable graphs.** A graph $G$ on a finite vertex set is CDS-colorable if it has a
-proper coloring $C$ with colors in $\mathbb{N}$ such that for every $k \in \mathbb{N}$, the number
-of vertices whose color under $C$ is less than $k$ equals the maximum size of a union of $k$
-independent sets of $G$. -/
+/-- A finite graph is CDS-colorable if it has a proper coloring
+by natural numbers such that for all `k > 0`, the number of
+vertices with color `< k` equals the maximum size of
+the union of `k` independent sets. -/
 def CDSColorable [Fintype α] (G : SimpleGraph α) : Prop :=
     ∃ (C : G.Coloring Nat), ∀ k : Nat,
    ∑ i < k, (C.colorClass i).ncard = indepNumK G k
 
-/-- **Rainbow homomorphisms.** Let $f$ be a graph homomorphism from $H$ to $G$ and let $c$ be a
-labeling of the edges of $G$ by elements of a type $K$. Then $f$ is rainbow for $c$ if distinct
-edges of $H$ are mapped to edges of $G$ with distinct labels, that is, the labeling
-$e \mapsto c(f(e))$ of the edges of $H$ is injective. -/
+/-- A homomorphism `f : H →g G` is rainbow for an edge labeling `c` of `G` if it maps distinct
+edges of `H` to edges of `G` with distinct labels. -/
 def IsRainbow {α V K : Type*} {H : SimpleGraph α} {G : SimpleGraph V} (f : H →g G)
     (c : G.EdgeLabeling K) : Prop :=
   Function.Injective (c.pullback f)
 
 /--
-**Anti-Ramsey number.** For a graph $H$ on a finite vertex type and a natural number $n$, the
-anti-Ramsey number $\mathrm{AR}(n, H)$ is the largest $k$ for which there is a coloring of the edges
-of the complete graph $K_n$ on $\{0, \dots, n-1\}$ with colors $\{0, \dots, k-1\}$, every color
-used, that contains no rainbow copy of $H$. Here a copy of $H$ is an injective homomorphism from
-$H$ to $K_n$, and it is rainbow when distinct edges of $H$ are sent to edges of distinct colors.
-If no such $k$ exists, $\mathrm{AR}(n, H) = 0$.
+The anti-Ramsey number $\mathrm{AR}(n, H)$: the maximum number of colors in an edge coloring of
+$K_n$ (that is, a labeling of the edges of $K_n$ using every color) that contains no rainbow copy
+of $H$, i.e. no injective homomorphism (copy) of $H$ whose edges all receive different colors.
 -/
 noncomputable def antiRamseyNum {α : Type*} [Fintype α] (H : SimpleGraph α) (n : ℕ) : ℕ :=
   sSup {k | ∃ c : TopEdgeLabeling (Fin n) (Fin k), Function.Surjective c ∧

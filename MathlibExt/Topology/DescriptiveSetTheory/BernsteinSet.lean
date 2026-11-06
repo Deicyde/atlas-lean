@@ -121,9 +121,7 @@ private theorem exists_fresh (S F : Set ℝ) (h : #↥S < #↥F) : ∃ x, x ∈ 
   exact lt_irrefl _ (lt_of_le_of_lt hle h)
 
 /--
-**Existence of a Bernstein set.** There is a set $B \subseteq \mathbb{R}$ such that every closed,
-uncountable set $F \subseteq \mathbb{R}$ meets both $B$ and its complement $\mathbb{R} \setminus B$.
-
+There is `B ⊆ ℝ` meeting every uncountable closed `F ⊆ ℝ` in both `B` and its complement.
 Source: F. Bernstein (construction); J. C. Oxtoby, Measure and Category, 2nd ed. (1980); A. S.
 Kechris, Classical Descriptive Set Theory, Thm 8.24 (1995).
 Proves `Wanted` entry `bernstein_set_exists`.

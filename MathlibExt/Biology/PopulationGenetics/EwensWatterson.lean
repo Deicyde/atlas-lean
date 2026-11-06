@@ -74,23 +74,23 @@ namespace MathlibExt.Biology.PopulationGenetics.Ewens
 
 variable {n : ℕ}
 
-/-- **Number of permutations with a given cycle type.** The number of permutations of `n` letters with cycle type `π`,
+/-- The number of permutations of `n` letters with cycle type `π`,
 `w(π) = n! / ∏ j, j ^ (a j) * (a j)!` with `a j = π.parts.count j` (Cauchy's formula). -/
 def cycleTypeWeight (π : n.Partition) : ℝ :=
   (n.factorial : ℝ) /
     ∏ j ∈ π.parts.toFinset, ((j : ℝ) ^ π.parts.count j * ((π.parts.count j).factorial : ℝ))
 
-/-- **Probability of a given number of alleles under the Ewens formula.** The probability `P_θ(K = k)` that a sample of `n` genes carries exactly `k` distinct
+/-- The probability `P_θ(K = k)` that a sample of `n` genes carries exactly `k` distinct
 alleles under the Ewens sampling formula. -/
 def numAllelesProb (θ : ℝ) (n k : ℕ) : ℝ :=
   ∑ π : n.Partition with π.parts.card = k, ewensProb θ π
 
-/-- **Ewens conditional probability given the number of alleles.** The conditional probability of the allelic partition `π` given that the number of alleles
+/-- The conditional probability of the allelic partition `π` given that the number of alleles
 is `K = K(π) = π.parts.card`, under the Ewens sampling formula with parameter `θ`. -/
 def ewensCondProb (θ : ℝ) (π : n.Partition) : ℝ :=
   ewensProb θ π / numAllelesProb θ n π.parts.card
 
-/-- **Conditional upper-tail p-value of the Ewens–Watterson test.** The **conditional upper-tail p-value** of a statistic `T` of the allelic partition: the
+/-- The **conditional upper-tail p-value** of a statistic `T` of the allelic partition: the
 conditional probability, given the observed number of alleles `K(π)`, that `T` is at least
 its observed value `T π`. It is written with the cycle-type weights and so does not involve
 `θ` (by `ewensCondProb_eq` it is the conditional tail probability for every `θ > 0`). -/
@@ -98,12 +98,12 @@ def condUpperPValue (T : n.Partition → ℝ) (π : n.Partition) : ℝ :=
   (∑ π' : n.Partition with π'.parts.card = π.parts.card ∧ T π ≤ T π', cycleTypeWeight π') /
     ∑ π' : n.Partition with π'.parts.card = π.parts.card, cycleTypeWeight π'
 
-/-- **Sample homozygosity of an allelic partition.** The **sample homozygosity** `F(π) = ∑_i (n_i / n)²`, the sum over the alleles of the
+/-- The **sample homozygosity** `F(π) = ∑_i (n_i / n)²`, the sum over the alleles of the
 squared sample frequencies (Watterson 1978); `n_i` ranges over the parts of `π`. -/
 def homozygosity (π : n.Partition) : ℝ :=
   (π.parts.map fun j : ℕ => ((j : ℝ) / n) ^ 2).sum
 
-/-- **Positivity of the cycle-type weight.** The cycle-type weight is positive. -/
+/-- The cycle-type weight is positive. -/
 theorem cycleTypeWeight_pos (π : n.Partition) : 0 < cycleTypeWeight π := by
   unfold cycleTypeWeight
   refine div_pos (by exact_mod_cast n.factorial_pos) (prod_pos fun j hj => ?_)

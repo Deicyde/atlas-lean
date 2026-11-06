@@ -18,9 +18,7 @@ namespace Hamming
 
 variable {ι F : Type*} [Fintype ι] [DecidableEq ι] [Fintype F] [DecidableEq F]
 
-/-- **Closed Hamming ball.** For finite types $\iota$ and $F$, a word $x : \iota \to F$ and a
-natural number $e$, the closed Hamming ball of radius $e$ about $x$ is the finite set of all words
-$y : \iota \to F$ whose Hamming distance from $x$ is at most $e$. -/
+/-- The closed Hamming ball of radius `e` about `x`. -/
 def ball (x : ι → F) (e : ℕ) : Finset (ι → F) :=
   Finset.univ.filter fun y => hammingDist x y ≤ e
 
@@ -106,9 +104,7 @@ private theorem card_sphere (x : ι → F) (k : ℕ) :
     apply hst
     rw [← mem_supportFiber.mp hys, ← mem_supportFiber.mp hyt]
 
-/-- **Size of a Hamming ball.** For finite types $\iota$ and $F$, every word $x : \iota \to F$ and
-every natural number $e$, the closed Hamming ball of radius $e$ about $x$ has
-$\sum_{k=0}^{e} \binom{|\iota|}{k} (|F| - 1)^k$ elements. -/
+/-- The cardinality of a closed Hamming ball over a finite alphabet. -/
 @[simp]
 theorem card_ball (x : ι → F) (e : ℕ) :
     (ball x e).card =
@@ -141,9 +137,7 @@ theorem card_ball (x : ι → F) (e : ℕ) :
     _ = ∑ k ∈ Finset.range (e + 1),
           (Fintype.card ι).choose k * (Fintype.card F - 1) ^ k := by simp
 
-/-- **Size of a Hamming ball of fixed-length words.** Let $n \ge 1$ and let $F$ be a finite
-alphabet with $q \ge 2$ letters. For every word $x \in F^n$ and every natural number $e$, the
-closed Hamming ball of radius $e$ about $x$ has $\sum_{k=0}^{e} \binom{n}{k} (q - 1)^k$ elements. -/
+/-- The source's formula for words of positive length over an alphabet of size `q ≥ 2`. -/
 theorem card_ball_fin {n q : ℕ} (_hn : 0 < n) (hq : Fintype.card F = q) (_hq₂ : 2 ≤ q)
     (x : Fin n → F) (e : ℕ) :
     (ball x e).card = ∑ k ∈ Finset.range (e + 1), n.choose k * (q - 1) ^ k := by

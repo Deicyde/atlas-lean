@@ -49,27 +49,27 @@ open MeasureTheory
 
 variable {Ω : Type*} [MeasurableSpace Ω] {m : ℕ}
 
-/-- **Holm's step-down count.** Holm's step-down count at level `α`: the largest `r ∈ {0, …, m}` such that for every
+/-- Holm's step-down count at level `α`: the largest `r ∈ {0, …, m}` such that for every
 `k ∈ {1, …, r}` the `k`-th smallest p-value is at most `α / (m - k + 1)`, i.e. at least `k`
 p-values are at most `α / (m - k + 1)`. (`r = 0` always qualifies.) -/
 noncomputable def holmIndex (α : ℝ) (p : Fin m → ℝ) : ℕ :=
   ((Finset.range (m + 1)).filter fun r : ℕ =>
     ∀ k ∈ Finset.Icc (1 : ℕ) r, k ≤ numBelow p (α / ((m : ℝ) - k + 1))).max' ⟨0, by simp; omega⟩
 
-/-- **Hypotheses rejected by Holm's step-down procedure.** The hypotheses rejected by Holm's step-down procedure at level `α`: those whose p-value is
+/-- The hypotheses rejected by Holm's step-down procedure at level `α`: those whose p-value is
 at most `α / (m - r + 1)` with `r = holmIndex α p`; these are the hypotheses with the `r`
 smallest p-values. -/
 noncomputable def holmRejections (α : ℝ) (p : Fin m → ℝ) : Finset (Fin m) :=
   Finset.univ.filter fun i => p i ≤ α / ((m : ℝ) - holmIndex α p + 1)
 
-/-- **Holm's step-down count is at most the number of tests.** Holm's step-down count is at most `m`. -/
+/-- Holm's step-down count is at most `m`. -/
 theorem holmIndex_le (α : ℝ) (p : Fin m → ℝ) : holmIndex α p ≤ m := by
   have h := Finset.max'_mem ((Finset.range (m + 1)).filter fun r : ℕ =>
     ∀ k ∈ Finset.Icc (1 : ℕ) r, k ≤ numBelow p (α / ((m : ℝ) - k + 1))) ⟨0, by simp; omega⟩
   simp only [Finset.mem_filter, Finset.mem_range] at h
   exact Nat.lt_succ_iff.1 h.1
 
-/-- **Every step up to Holm's count succeeds.** Every step up to Holm's count succeeds: for `1 ≤ k ≤ holmIndex α p`, at least `k`
+/-- Every step up to Holm's count succeeds: for `1 ≤ k ≤ holmIndex α p`, at least `k`
 p-values are at most `α / (m - k + 1)`. -/
 theorem le_numBelow_of_le_holmIndex {α : ℝ} {p : Fin m → ℝ} {k : ℕ} (hk₁ : 1 ≤ k)
     (hk : k ≤ holmIndex α p) : k ≤ numBelow p (α / ((m : ℝ) - k + 1)) := by
@@ -78,13 +78,13 @@ theorem le_numBelow_of_le_holmIndex {α : ℝ} {p : Fin m → ℝ} {k : ℕ} (hk
   simp only [Finset.mem_filter] at h
   exact h.2 k (Finset.mem_Icc.2 ⟨hk₁, hk⟩)
 
-/-- **Holm's count is the largest index where every step succeeds.** Holm's count is the largest index up to which every step succeeds. -/
+/-- Holm's count is the largest index up to which every step succeeds. -/
 theorem le_holmIndex {α : ℝ} {p : Fin m → ℝ} {r : ℕ} (hr : r ≤ m)
     (h : ∀ k ∈ Finset.Icc (1 : ℕ) r, k ≤ numBelow p (α / ((m : ℝ) - k + 1))) :
     r ≤ holmIndex α p :=
   Finset.le_max' _ r (Finset.mem_filter.2 ⟨Finset.mem_range.2 (Nat.lt_succ_of_le hr), h⟩)
 
-/-- **Holm's rejection set is closed under smaller p-values.** The rejection set is closed under smaller p-values. -/
+/-- The rejection set is closed under smaller p-values. -/
 theorem mem_holmRejections_of_le {α : ℝ} {p : Fin m → ℝ} {i j : Fin m} (hij : p i ≤ p j)
     (hj : j ∈ holmRejections α p) : i ∈ holmRejections α p := by
   simp only [holmRejections, Finset.mem_filter, Finset.mem_univ, true_and] at hj ⊢
@@ -96,7 +96,7 @@ private theorem holmIndex_spec (α : ℝ) (p : Fin m → ℝ) :
       k ≤ numBelow p (α / ((m : ℝ) - k + 1)) := fun _ hk =>
   le_numBelow_of_le_holmIndex (Finset.mem_Icc.1 hk).1 (Finset.mem_Icc.1 hk).2
 
-/-- **Number of hypotheses rejected by Holm's procedure.** Holm's procedure at level `α ≥ 0` rejects exactly `holmIndex α p` hypotheses. -/
+/-- Holm's procedure at level `α ≥ 0` rejects exactly `holmIndex α p` hypotheses. -/
 theorem card_holmRejections {α : ℝ} (hα : 0 ≤ α) (p : Fin m → ℝ) :
     (holmRejections α p).card = holmIndex α p := by
   classical
@@ -132,7 +132,7 @@ theorem card_holmRejections {α : ℝ} (hα : 0 ≤ α) (p : Fin m → ℝ) :
     · omega
     · exact hspec r (Finset.mem_Icc.mpr ⟨by omega, le_rfl⟩)
 
-/-- **Holm rejection bound for a set of hypotheses.** If Holm rejects a hypothesis in `J`, then some `j ∈ J` has p-value at most `α / |J|`:
+/-- If Holm rejects a hypothesis in `J`, then some `j ∈ J` has p-value at most `α / |J|`:
 the first hypothesis of `J` in sorted order sits at a position `k ≤ m - |J| + 1`. This
 is the shared Holm rejection bound, used both for Holm's FWER control below and for
 identifying Holm's procedure with the closure of the Bonferroni local tests. -/

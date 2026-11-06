@@ -46,28 +46,14 @@ reduction from every language in `NP`
 (`Cslib.CookLevin.PolyManyOneRed`).
 -/
 
-/-- **Flow-shop instances.** A flow-shop instance is a pair consisting of a finite list of jobs,
-each a finite list of natural numbers (its processing times on machines 1, 2 and 3, in that
-order), and a natural number $D$, the deadline. The type does not force a job to have exactly
-three entries; that is part of well-formedness. -/
+/-- A flow-shop instance: jobs as triples of processing times, deadline. -/
 abbrev FlowShopInstance := List (List ℕ) × ℕ
 
-/-- **Well-formed flow-shop instances.** A flow-shop instance is well formed when every job in
-it is a list of exactly three natural numbers. -/
+/-- Well-formedness of an instance. -/
 def WellFormed (i : FlowShopInstance) : Prop :=
   ∀ job ∈ i.1, job.length = 3
 
-/-- **Feasible flow-shop schedules.** Let an instance consist of jobs $1, \dots, n$, where job $j$
-is a list of natural numbers whose $k$-th entry $p_{j,k}$ is its processing time on machine $k$
-(read as $0$ if the list has fewer than $k$ entries), and a deadline $D$. The instance is
-feasible when there are natural numbers $s_{j,k}$, for each job $j$ and each $k \in \{1, 2, 3\}$,
-such that for every job $j$ we have $s_{j,1} + p_{j,1} \le s_{j,2}$,
-$s_{j,2} + p_{j,2} \le s_{j,3}$ and $s_{j,3} + p_{j,3} \le D$, and for every machine
-$k \in \{1, 2, 3\}$ and all jobs $a < b$ we have $s_{a,k} + p_{a,k} \le s_{b,k}$ or
-$s_{b,k} + p_{b,k} \le s_{a,k}$.
-
-Here $s_{j,k}$ is the start time of job $j$ on machine $k$: each job visits machines 1, 2, 3 in
-that order, no machine processes two jobs at once, and every job finishes by $D$. -/
+/-- Start times meeting job order, machine exclusion, and the deadline. -/
 def FlowShopFeasible
     (i : FlowShopInstance) : Prop :=
   ∃ start : List (List ℕ), start.length = i.1.length ∧
@@ -84,10 +70,7 @@ def FlowShopFeasible
           (start.getD a []).getD k 0
 
 open Classical in
-/-- **The 3-machine flow shop scheduling decision problem.** The decision problem
-3-MACHINE FLOW SHOP SCHEDULING accepts a bitstring $x$ exactly when $x$ decodes, under the
-canonical bitstring encoding of flow-shop instances, to an instance that is well formed and
-feasible. Bitstrings that do not decode to an instance are rejected. -/
+/-- 3-MACHINE FLOW SHOP SCHEDULING as a decision problem over bitstrings. -/
 noncomputable def flowShopDec :
     MetaMathlibExt.ComplexityTheory.DecisionProblem := fun x =>
   match MetaMathlibExt.BitstringEncoding.bitDecode
@@ -95,11 +78,7 @@ noncomputable def flowShopDec :
   | some i => decide (WellFormed i ∧ FlowShopFeasible i)
   | none => false
 
-/-- **3-MACHINE FLOW SHOP SCHEDULING is NP-complete.** The 3-machine flow shop scheduling
-decision problem belongs to NP, and every decision problem in NP reduces to it by a
-polynomial-time many-one reduction.
-
-Source: M. R. Garey, D. S. Johnson, and
+/-- **3-MACHINE FLOW SHOP SCHEDULING is NP-complete.** Source: M. R. Garey, D. S. Johnson, and
 R. Sethi, "The complexity of flowshop and jobshop scheduling", Mathematics of Operations
 Research 1 (1976), 117-129; T. F. Gonzalez and S. Sahni, "Flowshop and jobshop schedules:
 complexity and approximation", Operations Research 26 (1978), 36-52. -/

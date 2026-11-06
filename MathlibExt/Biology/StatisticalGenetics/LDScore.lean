@@ -80,30 +80,30 @@ namespace MathlibExt.Biology.StatisticalGenetics.LDScore
 
 variable {N M : ℕ}
 
-/-- **Normalized cross product of genotype markers.** The normalized cross product `r j k = X_jᵀ X_k / N` of markers `j` and `k`. For a
+/-- The normalized cross product `r j k = X_jᵀ X_k / N` of markers `j` and `k`. For a
 standardized genotype matrix (`IsStandardized`) it is the sample correlation of the two
 markers; for other matrices it is only a scale-dependent dot product. -/
 noncomputable def ldCorr (X : Matrix (Fin N) (Fin M) ℝ) (j k : Fin M) : ℝ :=
   (∑ i, X i j * X i k) / N
 
-/-- **LD score of a marker.** The LD score `ℓ j = ∑ k, r j k ^ 2` of marker `j` (an LD score in the sense of the cited
+/-- The LD score `ℓ j = ∑ k, r j k ^ 2` of marker `j` (an LD score in the sense of the cited
 paper for a standardized genotype matrix). -/
 noncomputable def ldScore (X : Matrix (Fin N) (Fin M) ℝ) (j : Fin M) : ℝ :=
   ∑ k, ldCorr X j k ^ 2
 
-/-- **Standardized genotype matrix.** The genotype matrix is standardized: every marker column has mean `0` and sum of squares
+/-- The genotype matrix is standardized: every marker column has mean `0` and sum of squares
 `N` (unit sample variance). -/
 def IsStandardized (X : Matrix (Fin N) (Fin M) ℝ) : Prop :=
   ∀ k, ∑ i, X i k = 0 ∧ ∑ i, X i k ^ 2 = N
 
-/-- **A standardized marker has correlation one with itself.** For a standardized matrix each marker has correlation `1` with itself. -/
+/-- For a standardized matrix each marker has correlation `1` with itself. -/
 theorem IsStandardized.ldCorr_self {X : Matrix (Fin N) (Fin M) ℝ} (hX : IsStandardized X)
     (hN : N ≠ 0) (k : Fin M) : ldCorr X k k = 1 := by
   have h := (hX k).2
   simp only [pow_two] at h
   rw [ldCorr, h, div_self (Nat.cast_ne_zero.mpr hN)]
 
-/-- **Correlations of standardized markers lie in [-1, 1].** For a standardized matrix the correlations lie in `[-1, 1]` (Cauchy–Schwarz). -/
+/-- For a standardized matrix the correlations lie in `[-1, 1]` (Cauchy–Schwarz). -/
 theorem IsStandardized.ldCorr_sq_le_one {X : Matrix (Fin N) (Fin M) ℝ} (hX : IsStandardized X)
     (j k : Fin M) : ldCorr X j k ^ 2 ≤ 1 := by
   rcases Nat.eq_zero_or_pos N with hN | hN
@@ -117,7 +117,7 @@ theorem IsStandardized.ldCorr_sq_le_one {X : Matrix (Fin N) (Fin M) ℝ} (hX : I
 
 variable {Ω : Type*} {m : MeasurableSpace Ω}
 
-/-- **Random-effects model of LD-score regression.** The random-effects model of LD-score regression (Bulik-Sullivan et al. 2015), stated at
+/-- The random-effects model of LD-score regression (Bulik-Sullivan et al. 2015), stated at
 the level of raw second moments, for `N` individuals and `M` markers with heritability `h2`.
 
 * `beta k` is the (random) effect of marker `k`, with `∫ β k * β l = h2 / M * [k = l]`;
@@ -150,7 +150,7 @@ namespace Model
 
 variable {μ : Measure Ω} (D : Model μ N M) (X : Matrix (Fin N) (Fin M) ℝ)
 
-/-- **Nonnegativity of heritability in the LD-score model.** The heritability is nonnegative when there is at least one marker. -/
+/-- The heritability is nonnegative when there is at least one marker. -/
 theorem h2_nonneg (hM : 0 < M) : 0 ≤ D.h2 := by
   have h := D.integral_beta_mul ⟨0, hM⟩ ⟨0, hM⟩
   rw [ite_eq_left rfl] at h
@@ -160,7 +160,7 @@ theorem h2_nonneg (hM : 0 < M) : 0 ≤ D.h2 := by
   exact (div_nonneg_iff.1 h0).elim (fun h => h.1) fun h => by
     exact absurd h.2 (not_le.2 (Nat.cast_pos.2 hM))
 
-/-- **Heritability is at most one in the LD-score model.** The heritability is at most `1` when there is at least one individual. -/
+/-- The heritability is at most `1` when there is at least one individual. -/
 theorem h2_le_one (hN : 0 < N) : D.h2 ≤ 1 := by
   have h := D.integral_eps_mul ⟨0, hN⟩ ⟨0, hN⟩
   rw [ite_eq_left rfl] at h
@@ -168,15 +168,15 @@ theorem h2_le_one (hN : 0 < N) : D.h2 ≤ 1 := by
     integral_nonneg fun ω => mul_self_nonneg _
   linarith
 
-/-- **Phenotype in the LD-score model.** The phenotype `y = X β + ε`. -/
+/-- The phenotype `y = X β + ε`. -/
 def pheno (i : Fin N) (ω : Ω) : ℝ := ∑ k, X i k * D.beta k ω + D.eps i ω
 
-/-- **Normalized marginal score in the LD-score model.** The `N`-normalized score `β̂ j = X_jᵀ y / N` of marker `j`. For a standardized column
+/-- The `N`-normalized score `β̂ j = X_jᵀ y / N` of marker `j`. For a standardized column
 (`∑ i, X i j ^ 2 = N`) it is the marginal least-squares estimate of the effect of marker `j`;
 in general that estimate has denominator `∑ i, X i j ^ 2` instead of `N`. -/
 noncomputable def betaHat (j : Fin M) (ω : Ω) : ℝ := (∑ i, X i j * D.pheno X i ω) / N
 
-/-- **Association statistic in the LD-score model.** The association statistic `χ² j = N * β̂ j ^ 2` of marker `j`. -/
+/-- The association statistic `χ² j = N * β̂ j ^ 2` of marker `j`. -/
 noncomputable def chiSq (j : Fin M) (ω : Ω) : ℝ := N * D.betaHat X j ω ^ 2
 
 private theorem integral_weighted_sq {Ω ι : Type*} {m : MeasurableSpace Ω}
@@ -211,7 +211,7 @@ private theorem betaHat_eq_sum {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measu
   rw [Finset.sum_comm]
   simp_rw [← Finset.sum_mul, div_mul_eq_mul_div, Finset.sum_div]
 
-/-- **Expected association statistic for an arbitrary genotype matrix.** The exact expectation of the association statistic built from the `N`-normalized score,
+/-- The exact expectation of the association statistic built from the `N`-normalized score,
 for an arbitrary genotype matrix:
 `𝔼[χ² j] = N h² / M * ℓ j + (1 - h²) * (∑ i, X i j ^ 2) / N`. (For `N = 0` both sides are `0`
 by the convention `x / 0 = 0`.) -/
@@ -249,7 +249,7 @@ theorem integral_chiSq (j : Fin M) :
   have hNr : (N : ℝ) ≠ 0 := Nat.cast_ne_zero.mpr hN
   field_simp
 
-/-- **LD-score regression.** LD-score regression (Bulik-Sullivan et al. 2015): for a standardized genotype matrix
+/-- LD-score regression (Bulik-Sullivan et al. 2015): for a standardized genotype matrix
 (`IsStandardized`, so that `ldCorr` is the sample correlation and `ldScore` the LD score) and
 `N ≠ 0`, `𝔼[χ² j] = N h² / M * ℓ j + (1 - h²)`. The expected association statistic is affine in
 the LD score, with slope `N h² / M` and intercept `1 - h²`. The proof uses only that column `j`

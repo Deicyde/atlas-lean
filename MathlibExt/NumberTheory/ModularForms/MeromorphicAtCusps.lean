@@ -23,20 +23,15 @@ open scoped UpperHalfPlane MatrixGroups
 
 namespace ModularFunction
 
-/-- **Meromorphy at infinity.** A function $f \colon \mathbb{H} \to \mathbb{C}$ on the upper
-half-plane is meromorphic at infinity when there are a positive integer $N$ and a function
-$g \colon \mathbb{C} \to \mathbb{C}$ meromorphic at $0$ such that
-$f(\tau) = g(e^{2 \pi i \tau / N})$ for every $\tau \in \mathbb{H}$ with sufficiently large
-imaginary part. -/
+/-- A function on the upper half-plane is meromorphic at infinity when it is eventually the
+pullback, along a positive-period `q`-parameter, of a function meromorphic at zero. -/
 def IsMeromorphicAtInfty (f : ℍ → ℂ) : Prop :=
   ∃ (N : ℕ) (_ : 0 < N) (g : ℂ → ℂ), MeromorphicAt g 0 ∧
     ∀ᶠ τ in UpperHalfPlane.atImInfty,
       f τ = g (Function.Periodic.qParam (N : ℝ) (τ : ℂ))
 
-/-- **Meromorphy at the cusps.** A function $f \colon \mathbb{H} \to \mathbb{C}$ on the upper
-half-plane is meromorphic at the cusps when, for every $\gamma \in \mathrm{SL}(2, \mathbb{Z})$,
-the function $\tau \mapsto f(\gamma \cdot \tau)$ is meromorphic at infinity, where $\gamma$ acts
-on $\mathbb{H}$ by Möbius transformations. -/
+/-- A function is meromorphic at the cusps when every `SL(2, ℤ)`-translate is meromorphic at
+infinity. -/
 def IsMeromorphicAtCusps (f : ℍ → ℂ) : Prop :=
   ∀ γ : SL(2, ℤ), IsMeromorphicAtInfty (fun τ ↦ f (γ • τ))
 

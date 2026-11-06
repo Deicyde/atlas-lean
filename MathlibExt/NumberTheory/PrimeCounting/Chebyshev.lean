@@ -27,13 +27,10 @@ open scoped Asymptotics
 
 namespace Chebyshev
 
-/-- **Prime counting versus theta over log.** Let $\pi(x)$ be the number of primes $p \le x$ and
-let $\theta(x) = \sum_{p \le x} \log p$, the sum running over primes. As the real number $x$ tends
-to $+\infty$,
-$$\pi(x) - \frac{\theta(x)}{\log x} = o\left(\frac{x}{\log x}\right).$$
+/-- The error `π(x) - θ(x) / log x` is little-o of `x / log x`.
 
-The proof upgrades the bound $\pi(x) - \theta(x)/\log x = O(x/(\log x)^2)$, using that
-$x/(\log x)^2 = o(x/\log x)$. -/
+This upgrades `Chebyshev.primeCounting_sub_theta_div_log_isBigO`, using that
+`x / log x ^ 2` is little-o of `x / log x`. -/
 theorem primeCounting_sub_theta_div_log_isLittleO :
     (fun x : ℝ => (Nat.primeCounting ⌊x⌋₊ : ℝ) - Chebyshev.theta x / Real.log x)
       =o[Filter.atTop] (fun x : ℝ => x / Real.log x) := by
@@ -48,10 +45,7 @@ theorem primeCounting_sub_theta_div_log_isLittleO :
     field
   exact Chebyshev.primeCounting_sub_theta_div_log_isBigO.trans_isLittleO haux
 
-/-- **Theta asymptotic implies the prime number theorem.** Let $\pi(x)$ be the number of primes
-$p \le x$ and let $\theta(x) = \sum_{p \le x} \log p$, the sum running over primes. If
-$\theta(x) \sim x$ as the real number $x$ tends to $+\infty$, then $\pi(x) \sim x / \log x$ as
-$x \to +\infty$. -/
+/-- The prime number theorem follows from Chebyshev's estimate `θ(x) ~ x`. -/
 theorem primeCounting_isEquivalent_of_theta_isEquivalent
     (h : Chebyshev.theta ~[Filter.atTop] fun x : ℝ => x) :
     (fun x : ℝ => (Nat.primeCounting ⌊x⌋₊ : ℝ))
@@ -66,10 +60,7 @@ theorem primeCounting_isEquivalent_of_theta_isEquivalent
   refine hadd.congr_left ?_
   exact Filter.Eventually.of_forall fun x => sub_add_cancel _ _
 
-/-- **Prime number theorem implies the theta asymptotic.** Let $\pi(x)$ be the number of primes
-$p \le x$ and let $\theta(x) = \sum_{p \le x} \log p$, the sum running over primes. If
-$\pi(x) \sim x / \log x$ as the real number $x$ tends to $+\infty$, then $\theta(x) \sim x$ as
-$x \to +\infty$. -/
+/-- Chebyshev's estimate `θ(x) ~ x` follows from the prime number theorem. -/
 theorem theta_isEquivalent_of_primeCounting_isEquivalent
     (h : (fun x : ℝ => (Nat.primeCounting ⌊x⌋₊ : ℝ))
       ~[Filter.atTop] (fun x : ℝ => x / Real.log x)) :
@@ -100,10 +91,7 @@ theorem theta_isEquivalent_of_primeCounting_isEquivalent
   rw [sub_mul, div_mul_cancel₀ _ hx]
   abel
 
-/-- **Prime number theorem is equivalent to the theta asymptotic.** Let $\pi(x)$ be the number of
-primes $p \le x$ and let $\theta(x) = \sum_{p \le x} \log p$ be Chebyshev's theta function, the
-sum running over primes. Then, as the real number $x$ tends to $+\infty$, $\pi(x) \sim x / \log x$
-holds if and only if $\theta(x) \sim x$. -/
+/-- The prime number theorem `π(x) ~ x / log x` holds iff `θ(x) ~ x`. -/
 theorem primeCounting_isEquivalent_iff_theta_isEquivalent :
     ((fun x : ℝ => (Nat.primeCounting ⌊x⌋₊ : ℝ))
       ~[Filter.atTop] (fun x : ℝ => x / Real.log x))

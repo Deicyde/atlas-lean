@@ -55,36 +55,36 @@ open ConfigSpace Function Finset
 
 variable {E : Type*} [Fintype E] [DecidableEq E]
 
-/-- **Bernoulli weight of a single coordinate.** The weight of coordinate `e` in configuration `ω` with parameter `p`: `p` if `ω e` is open
+/-- The weight of coordinate `e` in configuration `ω` with parameter `p`: `p` if `ω e` is open
 (`true`), `1 - p` otherwise. -/
 noncomputable def edgeWeight (p : ℝ) (ω : ConfigSpace E) (e : E) : ℝ :=
   if ω e then p else 1 - p
 
-/-- **Product of coordinate weights off one coordinate.** The product of the coordinate weights over all coordinates except `e`. -/
+/-- The product of the coordinate weights over all coordinates except `e`. -/
 noncomputable def weightOff (p : ℝ) (e : E) (ω : ConfigSpace E) : ℝ :=
   ∏ j ∈ univ.erase e, edgeWeight p ω j
 
-/-- **Bernoulli product weight of a configuration.** The product weight `∏ e, edgeWeight p ω e` of a configuration; for `p ∈ [0, 1]` the
+/-- The product weight `∏ e, edgeWeight p ω e` of a configuration; for `p ∈ [0, 1]` the
 probability of `ω` under independent Bernoulli(`p`) coordinates. -/
 noncomputable def configWeight (p : ℝ) (ω : ConfigSpace E) : ℝ :=
   ∏ e, edgeWeight p ω e
 
-/-- **Bernoulli weight of an event.** The weight `∑ ω ∈ A, configWeight p ω` of an event `A`; for `p ∈ [0, 1]` its probability
+/-- The weight `∑ ω ∈ A, configWeight p ω` of an event `A`; for `p ∈ [0, 1]` its probability
 under independent Bernoulli(`p`) coordinates. -/
 noncomputable def prob (p : ℝ) (A : Set (ConfigSpace E)) : ℝ :=
   ∑ ω, A.indicator (fun _ => (1 : ℝ)) ω * configWeight p ω
 
-/-- **Weight of the event that a coordinate is pivotal.** The weight of the event that coordinate `e` is pivotal for `A`. -/
+/-- The weight of the event that coordinate `e` is pivotal for `A`. -/
 noncomputable def pivotalProb (p : ℝ) (A : Set (ConfigSpace E)) (e : E) : ℝ :=
   ∑ ω, (Set.indicator {ω | IsPivotal e A ω} (fun _ => (1 : ℝ)) ω) * configWeight p ω
 
 omit [DecidableEq E] in
-/-- **Configuration weight as a product weight.** `configWeight` is the product weight `StatMech.pweight` for Bernoulli coordinate weights. -/
+/-- `configWeight` is the product weight `StatMech.pweight` for Bernoulli coordinate weights. -/
 lemma configWeight_eq_pweight (p : ℝ) (ω : ConfigSpace E) :
     configWeight p ω = pweight (fun _ b => if b then p else 1 - p) ω := rfl
 
 omit [DecidableEq E] in
-/-- **Nonnegativity of the configuration weight.** The product weight `configWeight p ω` is nonnegative for `p ∈ [0, 1]`. -/
+/-- The product weight `configWeight p ω` is nonnegative for `p ∈ [0, 1]`. -/
 lemma configWeight_nonneg {p : ℝ} (hp0 : 0 ≤ p) (hp1 : p ≤ 1) (ω : ConfigSpace E) :
     0 ≤ configWeight p ω := by
   unfold configWeight edgeWeight
@@ -92,7 +92,7 @@ lemma configWeight_nonneg {p : ℝ} (hp0 : 0 ≤ p) (hp1 : p ≤ 1) (ω : Config
   intro e _
   by_cases h : ω e <;> simp [h] <;> linarith
 
-/-- **Nonnegativity of the pivotal weight.** The pivotal weight `pivotalProb p A e` is nonnegative for `p ∈ [0, 1]`. -/
+/-- The pivotal weight `pivotalProb p A e` is nonnegative for `p ∈ [0, 1]`. -/
 lemma pivotalProb_nonneg {p : ℝ} (hp0 : 0 ≤ p) (hp1 : p ≤ 1) (A : Set (ConfigSpace E))
     (e : E) : 0 ≤ pivotalProb p A e := by
   unfold pivotalProb
@@ -101,17 +101,17 @@ lemma pivotalProb_nonneg {p : ℝ} (hp0 : 0 ≤ p) (hp1 : p ≤ 1) (A : Set (Con
   exact mul_nonneg (Set.indicator_nonneg (fun _ _ => zero_le_one) ω)
     (configWeight_nonneg hp0 hp1 ω)
 
-/-- **Event weight as a product-weight probability.** `prob` is `StatMech.wprob` for Bernoulli coordinate weights. -/
+/-- `prob` is `StatMech.wprob` for Bernoulli coordinate weights. -/
 lemma prob_eq_wprob (p : ℝ) (A : Set (ConfigSpace E)) :
     prob p A = wprob (fun _ b => if b then p else 1 - p) A := rfl
 
-/-- **Configuration weight splits at one coordinate.** The product weight splits as the weight of `e` times the weight of the other coordinates. -/
+/-- The product weight splits as the weight of `e` times the weight of the other coordinates. -/
 lemma configWeight_eq (p : ℝ) (e : E) (ω : ConfigSpace E) :
     configWeight p ω = edgeWeight p ω e * weightOff p e ω := by
   unfold configWeight weightOff
   rw [← Finset.mul_prod_erase univ _ (mem_univ e)]
 
-/-- **Off-coordinate weight depends only on the other coordinates.** `weightOff p e ω` depends only on the values of `ω` off `e`. -/
+/-- `weightOff p e ω` depends only on the values of `ω` off `e`. -/
 lemma weightOff_congr (p : ℝ) (e : E) {ω ω' : ConfigSpace E}
     (h : ∀ e', e' ≠ e → ω e' = ω' e') : weightOff p e ω = weightOff p e ω' := by
   unfold weightOff
@@ -121,7 +121,7 @@ lemma weightOff_congr (p : ℝ) (e : E) {ω ω' : ConfigSpace E}
   unfold edgeWeight; rw [h j hje]
 
 omit [Fintype E] [DecidableEq E] in
-/-- **Derivative of a single coordinate weight.** The derivative in `p` of a coordinate weight is `1` if the coordinate is open, `-1`
+/-- The derivative in `p` of a coordinate weight is `1` if the coordinate is open, `-1`
 otherwise. -/
 lemma hasDerivAt_edgeWeight (ω : ConfigSpace E) (e : E) (p : ℝ) :
     HasDerivAt (fun p => edgeWeight p ω e) (if ω e then 1 else -1) p := by
@@ -133,7 +133,7 @@ lemma hasDerivAt_edgeWeight (ω : ConfigSpace E) (e : E) (p : ℝ) :
       simpa using (hasDerivAt_id' p).const_sub (1 : ℝ)
     simpa using this
 
-/-- **Derivative of the configuration weight.** The derivative in `p` of the product weight (product rule). -/
+/-- The derivative in `p` of the product weight (product rule). -/
 lemma hasDerivAt_configWeight (ω : ConfigSpace E) (p : ℝ) :
     HasDerivAt (fun p => configWeight p ω)
       (∑ e, weightOff p e ω * (if ω e then (1 : ℝ) else -1)) p := by
@@ -145,7 +145,7 @@ lemma hasDerivAt_configWeight (ω : ConfigSpace E) (p : ℝ) :
   funext q
   simp [Finset.prod_apply]
 
-/-- **Derivative of the event weight before grouping.** The derivative in `p` of `prob p A`, before grouping by pivotal coordinates. -/
+/-- The derivative in `p` of `prob p A`, before grouping by pivotal coordinates. -/
 lemma hasDerivAt_prob (A : Set (ConfigSpace E)) (p : ℝ) :
     HasDerivAt (fun p => prob p A)
       (∑ ω, A.indicator (fun _ => (1 : ℝ)) ω *
@@ -156,7 +156,7 @@ lemma hasDerivAt_prob (A : Set (ConfigSpace E)) (p : ℝ) :
   exact (hasDerivAt_configWeight ω p).const_mul (A.indicator (fun _ => (1 : ℝ)) ω)
 
 omit [Fintype E] in
-/-- **Opening a coordinate of a split configuration.** Opening `e` in the configuration with value `b` at `e` and `η` elsewhere. -/
+/-- Opening `e` in the configuration with value `b` at `e` and `η` elsewhere. -/
 lemma setOpen_symm (e : E) (b : Bool) (η : {j : E // j ≠ e} → Bool) :
     setOpen e ((Equiv.funSplitAt e Bool).symm (b, η))
       = (Equiv.funSplitAt e Bool).symm (true, η) := by
@@ -166,7 +166,7 @@ lemma setOpen_symm (e : E) (b : Bool) (η : {j : E // j ≠ e} → Bool) :
   · rw [setOpen_of_ne hj]; simp [Equiv.funSplitAt, Equiv.piSplitAt, hj]
 
 omit [Fintype E] in
-/-- **Closing a coordinate of a split configuration.** Closing `e` in the configuration with value `b` at `e` and `η` elsewhere. -/
+/-- Closing `e` in the configuration with value `b` at `e` and `η` elsewhere. -/
 lemma setClosed_symm (e : E) (b : Bool) (η : {j : E // j ≠ e} → Bool) :
     setClosed e ((Equiv.funSplitAt e Bool).symm (b, η))
       = (Equiv.funSplitAt e Bool).symm (false, η) := by
@@ -175,7 +175,7 @@ lemma setClosed_symm (e : E) (b : Bool) (η : {j : E // j ≠ e} → Bool) :
   · subst hj; simp [setClosed, Equiv.funSplitAt, Equiv.piSplitAt]
   · rw [setClosed_of_ne hj]; simp [Equiv.funSplitAt, Equiv.piSplitAt, hj]
 
-/-- **Russo's formula on a single fiber.** Russo's formula on one fiber `{ωt, ωf}` of configurations differing only at `e`. -/
+/-- Russo's formula on one fiber `{ωt, ωf}` of configurations differing only at `e`. -/
 lemma russo_per_eta (p : ℝ) (A : Set (ConfigSpace E)) (hA : IsIncreasing A) (e : E)
     (ωt ωf : ConfigSpace E)
     (hwo : weightOff p e ωt = weightOff p e ωf)
@@ -216,7 +216,7 @@ lemma russo_per_eta (p : ℝ) (A : Set (ConfigSpace E)) (hA : IsIncreasing A) (e
     rw [Set.indicator_of_notMem hmt, Set.indicator_of_notMem hmf, ite_eq_right hnp,
         ite_eq_right (hpiv_eq.not.mp hnp)]; ring
 
-/-- **Contribution of one coordinate to Russo's formula.** The contribution of coordinate `e` to the derivative of `prob p A` is
+/-- The contribution of coordinate `e` to the derivative of `prob p A` is
 `pivotalProb p A e`, for increasing `A`. -/
 lemma russo_per_edge (p : ℝ) (A : Set (ConfigSpace E)) (hA : IsIncreasing A) (e : E) :
     ∑ ω, A.indicator (fun _ => (1 : ℝ)) ω * (weightOff p e ω * (if ω e then (1 : ℝ) else -1))

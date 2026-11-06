@@ -29,18 +29,15 @@ namespace InfiniteWord
 
 @[expose] public section
 
-/-- **The Tribonacci alphabet.** The Tribonacci word is written over the three-letter alphabet
-whose letters are $a$, $b$ and $c$. -/
+/-- The three-letter alphabet of the Tribonacci word. -/
 inductive TribonacciLetter : Type
   | a : TribonacciLetter
   | b : TribonacciLetter
   | c : TribonacciLetter
   deriving DecidableEq, Repr, Inhabited
 
-/-- **Finite Tribonacci words.** The finite Tribonacci words $W(n)$, for $n \ge 0$, are the
-words over the alphabet $\{a, b, c\}$ defined by $W(0) = a$, $W(1) = ab$, $W(2) = abac$ and
-$W(n + 3) = W(n + 2)\,W(n + 1)\,W(n)$ for every $n \ge 0$, where juxtaposition denotes
-concatenation. -/
+/-- Finite Tribonacci-word approximants: `W(0) = a`, `W(1) = ab`, `W(2) = abac`,
+and `W(n + 3) = W(n + 2) W(n + 1) W(n)`, where juxtaposition is concatenation. -/
 def tribonacciWordApprox : Nat → List TribonacciLetter
   | 0 => [.a]
   | 1 => [.a, .b]
@@ -48,25 +45,21 @@ def tribonacciWordApprox : Nat → List TribonacciLetter
   | n + 3 => tribonacciWordApprox (n + 2) ++ tribonacciWordApprox (n + 1) ++
       tribonacciWordApprox n
 
-/-- **Recursion for the finite Tribonacci words.** For every $n \ge 0$, the finite Tribonacci
-word $W(n + 3)$ is the concatenation $W(n + 2)\,W(n + 1)\,W(n)$. -/
+/-- The defining recursion for finite Tribonacci-word approximants. -/
 theorem tribonacciWordApprox_add_three (n : Nat) :
     tribonacciWordApprox (n + 3) =
       tribonacciWordApprox (n + 2) ++ tribonacciWordApprox (n + 1) ++
         tribonacciWordApprox n :=
   rfl
 
-/-- **Length recurrence for finite Tribonacci words.** Writing $|w|$ for the length of a word
-$w$, for every $n \ge 0$ the finite Tribonacci words satisfy
-$|W(n + 3)| = |W(n + 2)| + |W(n + 1)| + |W(n)|$. -/
+/-- The lengths satisfy the corresponding Tribonacci recurrence. -/
 theorem tribonacciWordApprox_length_add_three (n : Nat) :
     (tribonacciWordApprox (n + 3)).length =
       (tribonacciWordApprox (n + 2)).length +
         (tribonacciWordApprox (n + 1)).length + (tribonacciWordApprox n).length := by
   simp only [tribonacciWordApprox_add_three, List.length_append, Nat.add_assoc]
 
-/-- **Length lower bound for finite Tribonacci words.** For every $n \ge 0$, the finite
-Tribonacci word $W(n)$ has length at least $n + 1$. -/
+/-- Every finite Tribonacci-word approximant is longer than its index. -/
 theorem tribonacciWordApprox_length_ge (n : Nat) :
     n + 1 ≤ (tribonacciWordApprox n).length := by
   have haux : ∀ m : Nat,
@@ -84,8 +77,7 @@ theorem tribonacciWordApprox_length_ge (n : Nat) :
       omega
   exact (haux n).1
 
-/-- **Each finite Tribonacci word is a prefix of the next.** For every $n \ge 0$, the finite
-Tribonacci word $W(n)$ is a prefix of $W(n + 1)$. -/
+/-- Each finite Tribonacci-word approximant is a prefix of the next one. -/
 theorem tribonacciWordApprox_prefix_succ : ∀ n : Nat,
     List.IsPrefix (tribonacciWordApprox n) (tribonacciWordApprox (n + 1))
   | 0 => ⟨[.b], rfl⟩
@@ -95,8 +87,7 @@ theorem tribonacciWordApprox_prefix_succ : ∀ n : Nat,
     rw [hidx, tribonacciWordApprox_add_three n, List.append_assoc]
     exact List.prefix_append _ _
 
-/-- **Finite Tribonacci words form a prefix chain.** For all natural numbers $m \le n$, the
-finite Tribonacci word $W(m)$ is a prefix of $W(n)$. -/
+/-- Earlier finite Tribonacci-word approximants are prefixes of later ones. -/
 theorem tribonacciWordApprox_prefix {m n : Nat} (h : m ≤ n) :
     List.IsPrefix (tribonacciWordApprox m) (tribonacciWordApprox n) := by
   have hadd : ∀ d : Nat,
@@ -116,25 +107,18 @@ theorem tribonacciWordApprox_prefix {m n : Nat} (h : m ≤ n) :
   rw [← hidx]
   exact hadd (n - m)
 
-/-- **Lengths of finite Tribonacci words are monotone.** For all natural numbers $m \le n$,
-the length of the finite Tribonacci word $W(m)$ is at most the length of $W(n)$. -/
+/-- The lengths of finite Tribonacci-word approximants are monotone. -/
 theorem tribonacciWordApprox_length_mono {m n : Nat} (h : m ≤ n) :
     (tribonacciWordApprox m).length ≤ (tribonacciWordApprox n).length :=
   (tribonacciWordApprox_prefix h).length_le
 
-/-- **The infinite Tribonacci word.** The infinite Tribonacci word is the sequence over the
-alphabet $\{a, b, c\}$ whose letter at each position $k \ge 0$ (positions counted from $0$) is
-the letter at position $k$ of the finite Tribonacci word $W(k)$; this position exists because
-$W(k)$ has length at least $k + 1$. -/
+/-- The infinite Tribonacci word, obtained from the coherent chain of finite approximants. -/
 def tribonacciWord (k : Nat) : TribonacciLetter :=
   (tribonacciWordApprox k)[k]'(by
     have h := tribonacciWordApprox_length_ge k
     omega)
 
-/-- **Finite Tribonacci words agree with the infinite word.** For all natural numbers
-$k \le n$ such that $k$ is less than the length of the finite Tribonacci word $W(n)$, the
-letter of $W(n)$ at position $k$ equals the letter of the infinite Tribonacci word at
-position $k$, positions being counted from $0$. -/
+/-- Every sufficiently late approximant agrees with the infinite Tribonacci word. -/
 theorem tribonacciWord_eq_getElem_of_le (k n : Nat) (hkn : k ≤ n)
     (hk : k < (tribonacciWordApprox n).length) :
     (tribonacciWordApprox n)[k]'hk = tribonacciWord k := by

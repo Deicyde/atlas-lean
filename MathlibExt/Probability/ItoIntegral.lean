@@ -87,17 +87,17 @@ namespace ProbabilityTheory
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
-/-- **Squared $L^2$ distance between integrands.** The squared `L²(P ⊗ du)` distance on `(0, t] × Ω` between two processes, in `ℝ≥0∞`:
+/-- The squared `L²(P ⊗ du)` distance on `(0, t] × Ω` between two processes, in `ℝ≥0∞`:
 `∫⁻ ω, ∫⁻ u in (0, t], |H u ω - K u ω|² du dP`. -/
 noncomputable def integrandDist (P : Measure Ω) (H K : ℝ≥0 → Ω → ℝ) (t : ℝ≥0) : ℝ≥0∞ :=
   ∫⁻ ω, (∫⁻ u in Set.Ioc (0 : ℝ) t, ‖H u.toNNReal ω - K u.toNNReal ω‖ₑ ^ 2) ∂P
 
-/-- **Restriction of a process to the time interval (0, t].** The process `H` with its values at times outside `(0, t]` set to `0`. Only the values at
+/-- The process `H` with its values at times outside `(0, t]` set to `0`. Only the values at
 times in `(0, t]` enter the Itô integral at time `t`. -/
 noncomputable def restrictIoc (H : ℝ≥0 → Ω → ℝ) (t : ℝ≥0) (u : ℝ≥0) (ω : Ω) : ℝ :=
   (Set.Ioc 0 t).indicator (fun v ↦ H v ω) u
 
-/-- **Itô-approximable process.** A process `H` is **Itô-approximable on `[0, t]`** for the filtration `F` if it is jointly
+/-- A process `H` is **Itô-approximable on `[0, t]`** for the filtration `F` if it is jointly
 measurable on `(0, t] × Ω` and is the `L²(P ⊗ du)`-limit on `(0, t] × Ω` of elementary
 integrands. Neither condition involves the values of `H` at time `0` or after `t`. -/
 def IsItoApproximable (P : Measure Ω) (F : Filtration ℝ≥0 mΩ) (H : ℝ≥0 → Ω → ℝ) (t : ℝ≥0) :
@@ -107,12 +107,12 @@ def IsItoApproximable (P : Measure Ω) (F : Filtration ℝ≥0 mΩ) (H : ℝ≥0
       Tendsto (fun n ↦ integrandDist P (Hn n).toProcess H t) atTop (𝓝 0)
 
 open Classical in
-/-- **Function as an element of $L^2$.** A function as an element of `L²(P)`, or `0` if it is not square integrable. -/
+/-- A function as an element of `L²(P)`, or `0` if it is not square integrable. -/
 noncomputable def toL2 (P : Measure Ω) (f : Ω → ℝ) : Lp ℝ 2 P :=
   if h : MemLp f 2 P then h.toLp f else 0
 
 open Classical in
-/-- **Itô integral as an element of $L^2$.** The **Itô integral** `∫_0^t H dB` as an element of `L²(P)`: the `L²` limit of the elementary
+/-- The **Itô integral** `∫_0^t H dB` as an element of `L²(P)`: the `L²` limit of the elementary
 Itô integrals of an approximating sequence of elementary integrands when `H` is Itô-approximable
 on `[0, t]`, and `0` otherwise. -/
 noncomputable def itoIntegralL2 (P : Measure Ω) (F : Filtration ℝ≥0 mΩ) (B H : ℝ≥0 → Ω → ℝ)
@@ -122,7 +122,7 @@ noncomputable def itoIntegralL2 (P : Measure Ω) (F : Filtration ℝ≥0 mΩ) (B
   else 0
 
 open Classical in
-/-- **Itô integral process.** The **Itô integral** `t ↦ ∫_0^t H dB` as a real process: an `F t`-strongly measurable
+/-- The **Itô integral** `t ↦ ∫_0^t H dB` as a real process: an `F t`-strongly measurable
 version of `itoIntegralL2 P F B H t` when one exists (which is the case under the hypotheses of
 the theorems below), and a representative of `itoIntegralL2 P F B H t` otherwise. -/
 noncomputable def itoIntegral (P : Measure Ω) (F : Filtration ℝ≥0 mΩ) (B H : ℝ≥0 → Ω → ℝ)
@@ -130,7 +130,7 @@ noncomputable def itoIntegral (P : Measure Ω) (F : Filtration ℝ≥0 mΩ) (B H
   if h : AEStronglyMeasurable[F t] (itoIntegralL2 P F B H t) P then h.mk _
   else itoIntegralL2 P F B H t
 
-/-- **Itô integral process is a version of the $L^2$ integral.** The Itô integral process is almost surely equal to `itoIntegralL2` at each time. -/
+/-- The Itô integral process is almost surely equal to `itoIntegralL2` at each time. -/
 theorem itoIntegral_ae_eq (P : Measure Ω) (F : Filtration ℝ≥0 mΩ) (B H : ℝ≥0 → Ω → ℝ)
     (t : ℝ≥0) : itoIntegral P F B H t =ᵐ[P] itoIntegralL2 P F B H t := by
   unfold itoIntegral
@@ -143,7 +143,7 @@ private theorem toNNReal_mem_Ioc {u : ℝ} {t : ℝ≥0} (hu : u ∈ Set.Ioc (0 
     u.toNNReal ∈ Set.Ioc 0 t :=
   ⟨Real.toNNReal_pos.2 hu.1, Real.toNNReal_le_iff_le_coe.2 hu.2⟩
 
-/-- **Restriction to (0, t] preserves joint measurability.** Restricting a jointly measurable process to the times `(0, t]` keeps it jointly
+/-- Restricting a jointly measurable process to the times `(0, t]` keeps it jointly
 measurable. -/
 theorem measurable_restrictIoc {H : ℝ≥0 → Ω → ℝ}
     (hH : Measurable fun p : ℝ × Ω ↦ H p.1.toNNReal p.2) (t : ℝ≥0) :
@@ -166,7 +166,7 @@ theorem restrictIoc_restrictIoc_of_le (H : ℝ≥0 → Ω → ℝ) {s t : ℝ≥
   · simp [Set.indicator_of_mem hu, Set.indicator_of_mem (Set.Ioc_subset_Ioc_right hst hu)]
   · simp [Set.indicator_of_notMem hu]
 
-/-- **Integrand distance depends only on times in (0, t].** `integrandDist P X Y t` only depends on `X` and `Y` at times in `(0, t]`. -/
+/-- `integrandDist P X Y t` only depends on `X` and `Y` at times in `(0, t]`. -/
 theorem integrandDist_restrictIoc (P : Measure Ω) (X Y : ℝ≥0 → Ω → ℝ) (t : ℝ≥0) :
     integrandDist P (restrictIoc X t) (restrictIoc Y t) t = integrandDist P X Y t := by
   refine lintegral_congr fun ω ↦ setLIntegral_congr_fun measurableSet_Ioc fun u hu ↦ ?_
@@ -240,7 +240,7 @@ namespace ElementaryIntegrand
 
 variable {F : Filtration ℝ≥0 mΩ}
 
-/-- **Elementary integrands are jointly measurable.** An elementary integrand is jointly measurable in `(u, ω)` (reading `u : ℝ` through
+/-- An elementary integrand is jointly measurable in `(u, ω)` (reading `u : ℝ` through
 `Real.toNNReal`). -/
 theorem measurable_toProcess (H : ElementaryIntegrand F) :
     Measurable (fun p : ℝ × Ω ↦ H.toProcess p.1.toNNReal p.2) := by
@@ -258,7 +258,7 @@ theorem measurable_toProcess (H : ElementaryIntegrand F) :
   exact (((H.measurable_coeff i).mono (F.le _) le_rfl).comp measurable_snd).indicator
     (measurableSet_Ioc.preimage (measurable_real_toNNReal.comp measurable_fst))
 
-/-- **Uniform bound on an elementary integrand.** An elementary integrand with `n` intervals is bounded by `n * bound`. -/
+/-- An elementary integrand with `n` intervals is bounded by `n * bound`. -/
 theorem abs_toProcess_le (H : ElementaryIntegrand F) (u : ℝ≥0) (ω : Ω) :
     |H.toProcess u ω| ≤ H.n * H.bound := by
   refine (Finset.abs_sum_le_sum_abs _ _).trans ?_
@@ -269,7 +269,7 @@ theorem abs_toProcess_le (H : ElementaryIntegrand F) (u : ℝ≥0) (ω : Ω) :
   · rw [Set.indicator_of_notMem h, abs_zero]
     exact (abs_nonneg _).trans (H.abs_coeff_le i ω)
 
-/-- **Square integrability of the elementary Itô integral.** The elementary Itô integral against a pre-Brownian motion is square integrable. -/
+/-- The elementary Itô integral against a pre-Brownian motion is square integrable. -/
 theorem memLp_itoIntegral (H : ElementaryIntegrand F) {P : Measure Ω} {B : ℝ≥0 → Ω → ℝ}
     (hB : IsPreBrownianReal B P) (t : ℝ≥0) :
     MemLp (H.itoIntegral B t) 2 P := by
@@ -368,7 +368,7 @@ private theorem norm_toL2_sub_sq (H K : ElementaryIntegrand F) {P : Measure Ω} 
   simp only [Pi.sub_apply]
   ring
 
-/-- **Finite distance between elementary integrands.** The `L²(P ⊗ du)` distance between two elementary integrands is finite. -/
+/-- The `L²(P ⊗ du)` distance between two elementary integrands is finite. -/
 theorem integrandDist_ne_top (H K : ElementaryIntegrand F) {P : Measure Ω} [IsFiniteMeasure P]
     (t : ℝ≥0) : integrandDist P H.toProcess K.toProcess t ≠ ⊤ := by
   have hfm : Measurable fun p : ℝ × Ω ↦
@@ -388,7 +388,7 @@ theorem integrandDist_ne_top (H K : ElementaryIntegrand F) {P : Measure Ω} [IsF
   rw [this]
   exact ENNReal.ofReal_ne_top
 
-/-- **Itô isometry for elementary integrands.** `integrandDist` of two elementary integrands is the squared `L²(P)` distance of their Itô
+/-- `integrandDist` of two elementary integrands is the squared `L²(P)` distance of their Itô
 integrals. -/
 theorem integrandDist_eq_dist_sq (H K : ElementaryIntegrand F) {P : Measure Ω}
     {B : ℝ≥0 → Ω → ℝ} (hB : IsPreBrownianReal B P) (hBF : Adapted F B)
@@ -402,7 +402,7 @@ theorem integrandDist_eq_dist_sq (H K : ElementaryIntegrand F) {P : Measure Ω}
 
 end ElementaryIntegrand
 
-/-- **Quasi-triangle inequality for the integrand distance.** Pointwise `|x - y|² ≤ 2 |x - z|² + 2 |y - z|²`, integrated: a quasi-triangle inequality
+/-- Pointwise `|x - y|² ≤ 2 |x - z|² + 2 |y - z|²`, integrated: a quasi-triangle inequality
 for `integrandDist` between jointly measurable processes. -/
 theorem integrandDist_le {P : Measure Ω} {X Y Z : ℝ≥0 → Ω → ℝ}
     (hX : Measurable fun p : ℝ × Ω ↦ X p.1.toNNReal p.2)
@@ -513,12 +513,12 @@ theorem itoIntegralL2_congr {F : Filtration ℝ≥0 mΩ} {P : Measure Ω} {B : �
       h (hK.congr fun u hu ω ↦ (hHK u hu ω).symm)
     simp [itoIntegralL2, h, h']
 
-/-- **Elementary integrands are Itô-approximable.** An elementary integrand is Itô-approximable on every `[0, t]` (by itself). -/
+/-- An elementary integrand is Itô-approximable on every `[0, t]` (by itself). -/
 theorem isItoApproximable_toProcess {F : Filtration ℝ≥0 mΩ} (P : Measure Ω)
     (K : ElementaryIntegrand F) (t : ℝ≥0) : IsItoApproximable P F K.toProcess t :=
   ⟨measurable_restrictIoc K.measurable_toProcess t, fun _ ↦ K, by simp [integrandDist]⟩
 
-/-- **Itô integral agrees with the elementary integral on elementary integrands.** On an elementary integrand, the Itô integral agrees almost surely with the elementary Itô
+/-- On an elementary integrand, the Itô integral agrees almost surely with the elementary Itô
 integral. -/
 theorem itoIntegral_toProcess_ae_eq {F : Filtration ℝ≥0 mΩ} {P : Measure Ω} {B : ℝ≥0 → Ω → ℝ}
     (hB : IsPreBrownianReal B P) (hBF : Adapted F B)
@@ -602,7 +602,7 @@ private theorem abs_toProcess_riemann_sub_le {F : Filtration ℝ≥0 mΩ} {g : �
       linarith
     linarith
 
-/-- **$L^2$ convergence of left-point approximations of a continuous function.** The left-point approximations of a continuous deterministic `g` converge to `g` in
+/-- The left-point approximations of a continuous deterministic `g` converge to `g` in
 `L²(P ⊗ du)` on `(0, t] × Ω`. -/
 theorem tendsto_integrandDist_riemann {F : Filtration ℝ≥0 mΩ} {P : Measure Ω}
     [IsProbabilityMeasure P] {g : ℝ → ℝ} (hg : Continuous g) (t : ℝ≥0) :
@@ -702,7 +702,7 @@ private theorem coe_toL2_ae_eq {P : Measure Ω} {f : Ω → ℝ} (hf : MemLp f 2
   simp only [toL2, hf, ↓reduceDIte]
   exact hf.coeFn_toLp
 
-/-- **Measurability of the $L^2$ Itô integral.** The `L²` Itô integral is (almost surely equal to) an `F t`-measurable function. -/
+/-- The `L²` Itô integral is (almost surely equal to) an `F t`-measurable function. -/
 theorem aestronglyMeasurable_itoIntegralL2 {F : Filtration ℝ≥0 mΩ} {P : Measure Ω}
     {B : ℝ≥0 → Ω → ℝ} (hB : IsPreBrownianReal B P) (hBF : Adapted F B)
     (hInd : ∀ s t, s ≤ t → Indep (MeasurableSpace.comap (fun ω ↦ B t ω - B s ω) inferInstance)
@@ -777,7 +777,7 @@ private theorem integrandDist_eq_eLpNorm_sq_aux {P : Measure Ω} [IsFiniteMeasur
   rw [h, lintegral_prod _ (hm.enorm.pow_const 2).aemeasurable]
   rfl
 
-/-- **Integrand distance as a squared $L^2$ seminorm.** The integrand distance on `(0, t]` is the square of the `L²` seminorm on
+/-- The integrand distance on `(0, t]` is the square of the `L²` seminorm on
 `Ω × (0, t]`. -/
 theorem integrandDist_eq_eLpNorm_sq {P : Measure Ω} [IsFiniteMeasure P]
     {X Y : ℝ≥0 → Ω → ℝ} {t : ℝ≥0}

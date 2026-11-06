@@ -64,7 +64,7 @@ open scoped ENNReal
 
 variable {Ω Θ : Type*}
 
-/-- **Sufficient sub-σ-algebra.** A sub-σ-algebra `m` is *sufficient* for the family of measures `P` on `(Ω, m₀)` if
+/-- A sub-σ-algebra `m` is *sufficient* for the family of measures `P` on `(Ω, m₀)` if
 `m ≤ m₀`, every `P θ` is finite, and for every `m₀`-measurable set `s` one `m`-measurable
 function is a version of the conditional probability `P_θ[1_s | m]` under every `P θ`.
 Bundling `m ≤ m₀` and finiteness into the predicate means an `IsSufficient` hypothesis
@@ -182,7 +182,7 @@ private theorem IsSufficient.exists_common_condExp_of_nonneg {m m₀ : Measurabl
   filter_upwards [hconv, ae_all_iff.2 fun n => hvθ n θ] with ω h1 h2
   exact (h1.congr fun n => (h2 n).symm).limUnder_eq
 
-/-- **Common conditional expectation under a sufficient σ-algebra.** If `m` is sufficient for a family of probability measures, every `m₀`-measurable real
+/-- If `m` is sufficient for a family of probability measures, every `m₀`-measurable real
 function `W` that is integrable under all the measures has one `m`-measurable version of the
 conditional expectation `P_θ[W | m]` for every `θ`. (Measurability of `W` itself, not only
 under each `P θ`, is what lets one approximating sequence serve every parameter.) -/

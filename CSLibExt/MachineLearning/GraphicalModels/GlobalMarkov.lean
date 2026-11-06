@@ -70,7 +70,7 @@ section CondIndep
 
 variable {n : ℕ} [Fintype α]
 
-/-- **Marginal on a finite set of nodes as a filtered sum.** `FiniteWeight.marginal` on a `Finset` of nodes, as a sum over a decidable filter. -/
+/-- `FiniteWeight.marginal` on a `Finset` of nodes, as a sum over a decidable filter. -/
 theorem marginal_coe [DecidableEq α] (P : (Fin n → α) → ℝ) (S : Finset (Fin n)) (x' : Fin n → α) :
     marginal P ↑S x' = ∑ x with ∀ i ∈ S, x i = x' i, P x := by
   unfold marginal
@@ -78,13 +78,13 @@ theorem marginal_coe [DecidableEq α] (P : (Fin n → α) → ℝ) (S : Finset (
   ext x
   simp
 
-/-- **Conditional independence for finite sets of nodes.** `FiniteWeight.CondIndep` for `Finset`s of nodes, with the unions taken in `Finset`. -/
+/-- `FiniteWeight.CondIndep` for `Finset`s of nodes, with the unions taken in `Finset`. -/
 theorem condIndep_coe_iff {P : (Fin n → α) → ℝ} {X Y Z : Finset (Fin n)} :
     CondIndep P ↑X ↑Y ↑Z ↔ ∀ x', marginal P ↑(X ∪ Y ∪ Z) x' * marginal P ↑Z x' =
       marginal P ↑(X ∪ Z) x' * marginal P ↑(Y ∪ Z) x' := by
   simp only [CondIndep, coe_union]
 
-/-- **A marginal depends only on the fixed variables.** `marginal P S x'` depends only on the values of `x'` on `S`. -/
+/-- `marginal P S x'` depends only on the values of `x'` on `S`. -/
 theorem marginal_congr_of_eqOn (P : (Fin n → α) → ℝ) (S : Finset (Fin n)) {x y : Fin n → α}
     (h : ∀ i ∈ S, x i = y i) : marginal P ↑S x = marginal P ↑S y := by
   classical
@@ -92,13 +92,13 @@ theorem marginal_congr_of_eqOn (P : (Fin n → α) → ℝ) (S : Finset (Fin n))
   congr 1
   exact Finset.filter_congr fun z _ => forall₂_congr fun i hi => by rw [h i hi]
 
-/-- **Fixing more variables decreases the marginal.** Fixing more variables decreases the probability. -/
+/-- Fixing more variables decreases the probability. -/
 theorem marginal_le_of_subset {P : (Fin n → α) → ℝ} (hP : ∀ x, 0 ≤ P x)
     {S T : Finset (Fin n)} (hST : S ⊆ T) (x' : Fin n → α) :
     marginal P ↑T x' ≤ marginal P ↑S x' :=
   marginal_anti hP (coe_subset.2 hST) x'
 
-/-- **Summing out one more variable from a marginal.** Summing out one more variable `i ∉ S`. -/
+/-- Summing out one more variable `i ∉ S`. -/
 theorem marginal_eq_sum_insert (P : (Fin n → α) → ℝ) {S : Finset (Fin n)} {i : Fin n}
     (hi : i ∉ S) (x' : Fin n → α) :
     marginal P ↑S x' = ∑ a, marginal P ↑(insert i S) (Function.update x' i a) := by
@@ -117,7 +117,7 @@ theorem marginal_eq_sum_insert (P : (Fin n → α) → ℝ) {S : Finset (Fin n)}
   · rintro ⟨h2, h1⟩
     exact ⟨fun j hj => by rw [h1 j hj, Function.update_of_ne (hne j hj)], h2⟩
 
-/-- **Symmetry of conditional independence.** Conditional independence is symmetric. -/
+/-- Conditional independence is symmetric. -/
 theorem condIndep_symm {P : (Fin n → α) → ℝ} {X Y Z : Finset (Fin n)}
     (h : CondIndep P ↑X ↑Y ↑Z) : CondIndep P ↑Y ↑X ↑Z := by
   classical
@@ -224,7 +224,7 @@ section Graph
 
 variable {n : ℕ} (b : BayesNet α n)
 
-/-- **Ancestral set of nodes.** A set of nodes is ancestral if it contains the parents of each of its nodes. -/
+/-- A set of nodes is ancestral if it contains the parents of each of its nodes. -/
 def IsAncestral (A : Finset (Fin n)) : Prop :=
   ∀ ⦃i j : Fin n⦄, b.Edge i j → j ∈ A → i ∈ A
 
@@ -592,13 +592,13 @@ end Graph
 variable {n : ℕ} [Nonempty α] (b : BayesNet α n)
 
 
-/-- **Product of the tables of an ancestral set.** The product of the tables of the nodes in `A`, with the uniform distribution on the other
+/-- The product of the tables of the nodes in `A`, with the uniform distribution on the other
 nodes. For an ancestral `A` it has the same marginals on `A` as the joint
 (`marginal_joint_eq_ancProd`). -/
 noncomputable def ancProd [Fintype α] (A : Finset (Fin n)) (x : Fin n → α) : ℝ :=
   ∏ j, if j ∈ A then (b.cpt j (b.paVal j x)).weights (x j) else (Fintype.card α : ℝ)⁻¹
 
-/-- **The ancestral product on all nodes is the joint.** On all nodes, `ancProd` is the joint. -/
+/-- On all nodes, `ancProd` is the joint. -/
 theorem ancProd_univ [Fintype α] : b.ancProd univ = b.joint := by
   funext x
   rw [ancProd, joint_eq_prod]
@@ -940,7 +940,7 @@ private theorem condIndep_ancProd [Fintype α] (A : Finset (Fin n))
         marginal_ancProd_erase b hch h3, marginal_ancProd_erase b hch hsZ]
       exact hci x'
 
-/-- **Global Markov property for finite sets of nodes.** The global Markov property for `Finset`s of nodes; `condIndep_of_dSeparated` is the
+/-- The global Markov property for `Finset`s of nodes; `condIndep_of_dSeparated` is the
 statement for arbitrary sets of nodes. -/
 theorem condIndep_of_dSeparated_finset [Fintype α] {X Y Z : Finset (Fin n)}
     (h : b.DSeparated (X : Set (Fin n)) (Y : Set (Fin n)) (Z : Set (Fin n))) :

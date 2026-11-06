@@ -24,7 +24,7 @@ Luca Q. Zamboni in *Clustering Words and Interval Exchanges*
 
 namespace MetaMathlibExt
 
-/-- **Primitive word.** A nonempty finite word is primitive if it is not a proper power of another word. -/
+/-- A nonempty finite word is primitive if it is not a proper power of another word. -/
 def IsPrimitiveWord {α : Type*} (u : List α) : Prop :=
   u ≠ [] ∧ ∀ (v : List α) (n : ℕ), List.flatten (List.replicate n v) = u → n = 1
 

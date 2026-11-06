@@ -71,31 +71,31 @@ namespace MathlibExt.Probability.FokkerPlanck
 
 variable {n : ℕ}
 
-/-- **Partial derivative on Euclidean coordinate space.** The partial derivative `∂ᵢ f (x) = Df(x) eᵢ` on `Fin n → ℝ`. -/
+/-- The partial derivative `∂ᵢ f (x) = Df(x) eᵢ` on `Fin n → ℝ`. -/
 noncomputable def pderiv (i : Fin n) (f : (Fin n → ℝ) → ℝ) (x : Fin n → ℝ) : ℝ :=
   fderiv ℝ f x (Pi.single i 1)
 
-/-- **Gradient of a function on Euclidean coordinate space.** The gradient `∇f(x) = (∂ᵢ f(x))ᵢ`. -/
+/-- The gradient `∇f(x) = (∂ᵢ f(x))ᵢ`. -/
 noncomputable def grad (f : (Fin n → ℝ) → ℝ) (x : Fin n → ℝ) : Fin n → ℝ :=
   fun i => pderiv i f x
 
-/-- **Divergence of a vector field.** The divergence `div F (x) = ∑ᵢ ∂ᵢ Fᵢ (x)` of a vector field. -/
+/-- The divergence `div F (x) = ∑ᵢ ∂ᵢ Fᵢ (x)` of a vector field. -/
 noncomputable def divergence (F : (Fin n → ℝ) → Fin n → ℝ) (x : Fin n → ℝ) : ℝ :=
   ∑ i, pderiv i (fun y => F y i) x
 
-/-- **Probability flux of a diffusion.** The **probability flux** `J = b p - D ∇p` of the diffusion `dX = b dt + √(2D) dW` with
+/-- The **probability flux** `J = b p - D ∇p` of the diffusion `dX = b dt + √(2D) dW` with
 density `p`. -/
 noncomputable def flux (D : ℝ) (b : (Fin n → ℝ) → Fin n → ℝ) (p : (Fin n → ℝ) → ℝ)
     (x : Fin n → ℝ) : Fin n → ℝ :=
   fun i => b x i * p x - D * pderiv i p x
 
-/-- **Fokker–Planck operator.** The **Fokker–Planck operator** `-div J`: the density evolves by `∂ₜ p = fokkerPlanckOp D b p`,
+/-- The **Fokker–Planck operator** `-div J`: the density evolves by `∂ₜ p = fokkerPlanckOp D b p`,
 and `p` is stationary iff this vanishes. -/
 noncomputable def fokkerPlanckOp (D : ℝ) (b : (Fin n → ℝ) → Fin n → ℝ) (p : (Fin n → ℝ) → ℝ)
     (x : Fin n → ℝ) : ℝ :=
   -divergence (flux D b p) x
 
-/-- **Gibbs density.** The (unnormalized) **Gibbs density** `e^{-Ψ(x) / D}`. -/
+/-- The (unnormalized) **Gibbs density** `e^{-Ψ(x) / D}`. -/
 noncomputable def gibbs (Ψ : (Fin n → ℝ) → ℝ) (D : ℝ) (x : Fin n → ℝ) : ℝ :=
   Real.exp (-Ψ x / D)
 
@@ -169,7 +169,7 @@ theorem exists_const_of_flux_eq_zero {Ψ₁ Ψ₂ p : (Fin n → ℝ) → ℝ} {
   obtain h := is_const_of_fderiv_eq_zero hd hzero
   exact ⟨Ψ₁ 0 - Ψ₂ 0, fun x => by have := h x 0; linarith⟩
 
-/-- **Flux of the Gibbs density under a rotational gradient drift.** The flux of the Gibbs density under the drift `-(∇Ψ + A ∇Ψ)` is the rotational part
+/-- The flux of the Gibbs density under the drift `-(∇Ψ + A ∇Ψ)` is the rotational part
 `-(A ∇Ψ) e^{-Ψ / D}` (for differentiable `Ψ`, `D ≠ 0`, any matrix `A`). -/
 theorem flux_rotational_gibbs {Ψ : (Fin n → ℝ) → ℝ} (hΨ : Differentiable ℝ Ψ) {D : ℝ}
     (hD : D ≠ 0) (A : Matrix (Fin n) (Fin n) ℝ) (y : Fin n → ℝ) (i : Fin n) :

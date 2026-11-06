@@ -50,7 +50,7 @@ namespace MathlibExt.Analysis.Convex.ExtremePointsContinuousMapBall
 
 variable {X : Type*} [TopologicalSpace X] [CompactSpace X] [T2Space X]
 
-/-- **Extreme points of the unit ball of continuous real functions.** The extreme points of the closed unit ball of `C(X, ℝ)`, for `X`
+/-- The extreme points of the closed unit ball of `C(X, ℝ)`, for `X`
 compact Hausdorff, are exactly the functions with `|f x| = 1` for every
 `x`. -/
 theorem extremePoints_closedBall_continuousMap :
@@ -225,7 +225,7 @@ theorem extremePoints_closedBall_continuousMap :
       · ext x
         exact (hpoint x).2
 
-/-- **Membership criterion for extreme points of the unit ball of $C(X)$.** Membership form of `extremePoints_closedBall_continuousMap`. -/
+/-- Membership form of `extremePoints_closedBall_continuousMap`. -/
 theorem mem_extremePoints_closedBall_continuousMap {f : C(X, ℝ)} :
     f ∈ (Metric.closedBall (0 : C(X, ℝ)) 1).extremePoints ℝ ↔ ∀ x, |f x| = 1 := by
   rw [extremePoints_closedBall_continuousMap]

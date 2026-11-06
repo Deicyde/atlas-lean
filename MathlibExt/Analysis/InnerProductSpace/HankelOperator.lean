@@ -76,7 +76,7 @@ namespace MathlibExt.Analysis.InnerProductSpace.HankelOperator
 
 variable {𝕜 : Type*} [RCLike 𝕜]
 
-/-- **Anti-diagonal slice of a sequence.** The `k`-th anti-diagonal slice function: reverse the first `k + 1`
+/-- The `k`-th anti-diagonal slice function: reverse the first `k + 1`
 coordinates, kill the rest. -/
 def hankelSliceFun (k : ℕ) (x : ℕ → 𝕜) (i : ℕ) : 𝕜 :=
   if i ≤ k then x (k - i) else 0
@@ -84,7 +84,7 @@ def hankelSliceFun (k : ℕ) (x : ℕ → 𝕜) (i : ℕ) : 𝕜 :=
 @[simp] theorem hankelSliceFun_apply (k : ℕ) (x : ℕ → 𝕜) (i : ℕ) :
     hankelSliceFun k x i = if i ≤ k then x (k - i) else 0 := rfl
 
-/-- **Anti-diagonal slice of an ℓ² sequence lies in ℓ².** The slice of an `ℓ²` sequence is in `ℓ²`. -/
+/-- The slice of an `ℓ²` sequence is in `ℓ²`. -/
 theorem hankel_memℓp_sliceFun {k : ℕ} {x : ℓ²(ℕ, 𝕜)} :
     Memℓp (hankelSliceFun k (x : ℕ → 𝕜)) 2 := by
   apply (memℓp_gen_iff (p := (2 : ℝ≥0∞))
@@ -94,7 +94,7 @@ theorem hankel_memℓp_sliceFun {k : ℕ} {x : ℓ²(ℕ, 𝕜)} :
   simp only [Finset.mem_range, not_lt] at hi
   simp [hankelSliceFun, show ¬ i ≤ k from by omega]
 
-/-- **Anti-diagonal slice as a linear map.** The `k`-th anti-diagonal slice as a linear map. -/
+/-- The `k`-th anti-diagonal slice as a linear map. -/
 noncomputable def hankelSliceLinMap (k : ℕ) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] ℓ²(ℕ, 𝕜) where
   toFun x := ⟨hankelSliceFun k (x : ℕ → 𝕜), hankel_memℓp_sliceFun⟩
   map_add' x y := by
@@ -109,11 +109,11 @@ noncomputable def hankelSliceLinMap (k : ℕ) : ℓ²(ℕ, 𝕜) →ₗ[𝕜] �
       RingHom.id_apply]
     split_ifs with hi <;> simp
 
-/-- **Pointwise action of the anti-diagonal slice map.** Pointwise action of the slice linear map. -/
+/-- Pointwise action of the slice linear map. -/
 theorem hankelSliceLinMap_apply (k : ℕ) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     hankelSliceLinMap k x i = hankelSliceFun k (x : ℕ → 𝕜) i := rfl
 
-/-- **Anti-diagonal slice does not increase the sum of squared norms.** The (squared) norms of a sliced sequence sum to at most the squared
+/-- The (squared) norms of a sliced sequence sum to at most the squared
 norms of the original sequence: only the first `k + 1` coordinates survive,
 in reverse order. -/
 theorem hankel_tsum_normSq_slice_le {k : ℕ} (x : ℓ²(ℕ, 𝕜)) :
@@ -138,7 +138,7 @@ theorem hankel_tsum_normSq_slice_le {k : ℕ} (x : ℓ²(ℕ, 𝕜)) :
     simpa using hsumm
   exact hsumm'.sum_le_tsum (Finset.range (k + 1)) (fun i _ => by positivity)
 
-/-- **Anti-diagonal slice map does not increase norms.** A slice does not increase norms. -/
+/-- A slice does not increase norms. -/
 theorem norm_hankelSliceLinMap_apply_le (k : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     ‖hankelSliceLinMap k x‖ ≤ ‖x‖ := by
   have hpow : ‖hankelSliceLinMap k x‖ ^ 2 ≤ ‖x‖ ^ 2 := by
@@ -152,23 +152,23 @@ theorem norm_hankelSliceLinMap_apply_le (k : ℕ) (x : ℓ²(ℕ, 𝕜)) :
     exact hankel_tsum_normSq_slice_le x
   exact le_of_sq_le_sq hpow (norm_nonneg _)
 
-/-- **Anti-diagonal slice operator.** The `k`-th anti-diagonal slice as a bounded operator. -/
+/-- The `k`-th anti-diagonal slice as a bounded operator. -/
 noncomputable def hankelSlice (k : ℕ) : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜) :=
   (hankelSliceLinMap k).mkContinuous 1 (fun x => by
     rw [one_mul]
     exact norm_hankelSliceLinMap_apply_le k x)
 
-/-- **Pointwise action of the anti-diagonal slice operator.** Pointwise action of the slice operator. -/
+/-- Pointwise action of the slice operator. -/
 theorem hankelSlice_apply (k : ℕ) (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     hankelSlice k x i = hankelSliceFun k (x : ℕ → 𝕜) i := rfl
 
-/-- **Anti-diagonal slice operator has norm at most one.** The operator norm of a slice is at most `1`. -/
+/-- The operator norm of a slice is at most `1`. -/
 theorem norm_hankelSlice_le (k : ℕ) : ‖hankelSlice (𝕜 := 𝕜) k‖ ≤ 1 :=
   ContinuousLinearMap.opNorm_le_bound _ zero_le_one (fun x => by
     rw [one_mul]
     exact norm_hankelSliceLinMap_apply_le k x)
 
-/-- **Anti-diagonal slice is symmetric.** A slice is symmetric for the inner product: the anti-diagonal symmetry
+/-- A slice is symmetric for the inner product: the anti-diagonal symmetry
 is a finite-sum reflection. -/
 theorem hankelSlice_inner_symm (k : ℕ) (x y : ℓ²(ℕ, 𝕜)) :
     ⟪hankelSlice k x, y⟫_𝕜 = ⟪x, hankelSlice k y⟫_𝕜 := by
@@ -215,12 +215,12 @@ theorem hankelSlice_inner_symm (k : ℕ) (x y : ℓ²(ℕ, 𝕜)) :
   have h3 : (k + 1) - 1 - j = k - j := by omega
   rw [h3, h2]
 
-/-- **Anti-diagonal slice operator is self-adjoint.** A slice is self-adjoint. -/
+/-- A slice is self-adjoint. -/
 theorem adjoint_hankelSlice (k : ℕ) :
     (hankelSlice (𝕜 := 𝕜) k)† = hankelSlice (𝕜 := 𝕜) k :=
   ((ContinuousLinearMap.eq_adjoint_iff _ _).mpr (hankelSlice_inner_symm k)).symm
 
-/-- **Summability of weighted anti-diagonal slices.** The slice operators weighted by `a` are summable in operator norm when
+/-- The slice operators weighted by `a` are summable in operator norm when
 `a` is absolutely summable. -/
 theorem hankel_summable_slices {a : ℕ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     Summable fun k => (a k) • hankelSlice (𝕜 := 𝕜) k := by
@@ -232,18 +232,18 @@ theorem hankel_summable_slices {a : ℕ → 𝕜} (ha : Summable fun k => ‖a k
         exact mul_le_mul_of_nonneg_left (norm_hankelSlice_le k) (norm_nonneg _)
     _ = ‖a k‖ := mul_one _
 
-/-- **Hankel operator with absolutely summable symbol.** The Hankel operator with symbol `a`. Defined as the norm-convergent
+/-- The Hankel operator with symbol `a`. Defined as the norm-convergent
 series `∑' k, a k • hankelSlice k` over the anti-diagonal slices. -/
 noncomputable def hankelOperator (a : ℕ → 𝕜) (_ha : Summable fun k => ‖a k‖) :
     ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜) :=
   ∑' k, (a k) • hankelSlice (𝕜 := 𝕜) k
 
-/-- **Hankel operator as the sum of its slices.** The Hankel operator is the sum of its slices. -/
+/-- The Hankel operator is the sum of its slices. -/
 theorem hankel_hasSum_slices {a : ℕ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     HasSum (fun k => (a k) • hankelSlice (𝕜 := 𝕜) k) (hankelOperator a ha) :=
   (hankel_summable_slices ha).hasSum
 
-/-- **Matrix entries of the Hankel operator.** Pointwise action of the Hankel operator: `(Hₐ x) i = ∑' j, a (i + j) * x j`. -/
+/-- Pointwise action of the Hankel operator: `(Hₐ x) i = ∑' j, a (i + j) * x j`. -/
 theorem hankelOperator_apply {a : ℕ → 𝕜} (ha : Summable fun k => ‖a k‖)
     (x : ℓ²(ℕ, 𝕜)) (i : ℕ) :
     hankelOperator a ha x i = ∑' j, a (i + j) * x j := by
@@ -314,7 +314,7 @@ theorem hankelOperator_apply {a : ℕ → 𝕜} (ha : Summable fun k => ‖a k�
   simp only [hankelSliceFun_apply, ite_eq_left (by omega : i ≤ i + j),
     Nat.add_sub_cancel_left, add_comm j i]
 
-/-- **Hankel operator with zero symbol is zero.** The zero symbol gives the zero operator. -/
+/-- The zero symbol gives the zero operator. -/
 theorem hankelOperator_zero : hankelOperator (0 : ℕ → 𝕜) (by simp) = 0 := by
   show (∑' k, (0 : ℕ → 𝕜) k • hankelSlice (𝕜 := 𝕜) k) = 0
   have hfun : (fun k => (0 : ℕ → 𝕜) k • hankelSlice (𝕜 := 𝕜) k) =
@@ -324,7 +324,7 @@ theorem hankelOperator_zero : hankelOperator (0 : ℕ → 𝕜) (by simp) = 0 :=
     exact zero_smul 𝕜 (hankelSlice (𝕜 := 𝕜) k)
   rw [hfun, tsum_zero]
 
-/-- **Norm bound for the Hankel operator.** Operator-norm bound: `‖Hₐ‖ ≤ ∑' k, ‖a k‖`. -/
+/-- Operator-norm bound: `‖Hₐ‖ ≤ ∑' k, ‖a k‖`. -/
 theorem norm_hankelOperator_le {a : ℕ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     ‖hankelOperator a ha‖ ≤ ∑' k, ‖a k‖ :=
   (hankel_hasSum_slices ha).norm_le_of_bounded ha.hasSum (fun k => by
@@ -334,7 +334,7 @@ theorem norm_hankelOperator_le {a : ℕ → 𝕜} (ha : Summable fun k => ‖a k
           mul_le_mul_of_nonneg_left (norm_hankelSlice_le k) (norm_nonneg _)
       _ = ‖a k‖ := mul_one _)
 
-/-- **Adjoint of a Hankel operator.** Adjoint of a Hankel operator: `(Hₐ)† = H_{star a}`, by passing the
+/-- Adjoint of a Hankel operator: `(Hₐ)† = H_{star a}`, by passing the
 adjoint through the finite partial sums and taking the limit. -/
 theorem adjoint_hankelOperator {a : ℕ → 𝕜} (ha : Summable fun k => ‖a k‖) :
     (hankelOperator (𝕜 := 𝕜) a ha)† =
@@ -362,7 +362,7 @@ theorem adjoint_hankelOperator {a : ℕ → 𝕜} (ha : Summable fun k => ‖a k
     h2.congr' (Filter.Eventually.of_forall h3)
   exact tendsto_nhds_unique h2' h4
 
-/-- **Hankel operator with real symbol is self-adjoint.** A Hankel operator with a real-valued (`star`-fixed) symbol is
+/-- A Hankel operator with a real-valued (`star`-fixed) symbol is
 self-adjoint. -/
 theorem isSelfAdjoint_hankelOperator_of_forall_star {a : ℕ → 𝕜}
     (ha : Summable fun k => ‖a k‖) (hstar : ∀ k, star (a k) = a k) :
@@ -398,7 +398,7 @@ private theorem hankelSlice_mem_span (k : ℕ) (x : ℓ²(ℕ, 𝕜)) :
   apply Submodule.smul_mem
   exact Submodule.subset_span ⟨⟨i, hi⟩, rfl⟩
 
-/-- **Partial sums of the Hankel slice series are compact.** A finite partial sum of the slice series has finite-dimensional range,
+/-- A finite partial sum of the slice series has finite-dimensional range,
 hence is a compact operator. -/
 theorem hankel_isCompactOperator_partialSum {a : ℕ → 𝕜} (N : ℕ) :
     IsCompactOperator ((∑ k ∈ Finset.range N, (a k) • hankelSlice (𝕜 := 𝕜) k :
@@ -430,7 +430,7 @@ theorem hankel_isCompactOperator_partialSum {a : ℕ → 𝕜} (N : ℕ) :
   rw [hfactor, ContinuousLinearMap.coe_comp]
   exact (isCompactOperator_of_locallyCompactSpace_rng V.subtypeL).comp_clm _
 
-/-- **Hankel operator with absolutely summable symbol is compact.** A Hankel operator with an absolutely summable symbol is compact:
+/-- A Hankel operator with an absolutely summable symbol is compact:
 it is the norm limit of its finite partial sums, each of which has
 finite-dimensional range. -/
 theorem isCompactOperator_hankelOperator {a : ℕ → 𝕜} (ha : Summable fun k => ‖a k‖) :

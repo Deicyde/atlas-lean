@@ -27,36 +27,23 @@ universe u
 
 namespace Cslib.Algorithms.Lean.DynamicTable
 
-/-- **Dynamic table.** A dynamic table with items of type $\alpha$ consists of an array of slots
-$s_0, \dots, s_{m-1}$, each either empty or holding an item of type $\alpha$, together with an
-item count $n$ satisfying $n \le m$. The number $m$ of slots is the capacity of the table. -/
+/-- Saved logical slots and item count, with the memory-access bound bundled. -/
 public structure Table (α : Type u) where
   slots : Array (Option α)
   num : Nat
   num_le : num ≤ slots.size
 
-/-- **Well-formed dynamic table.** A dynamic table with slots $s_0, \dots, s_{m-1}$ and item count
-$n$ is well formed when, for every $i < m$, slot $s_i$ is occupied if and only if $i < n$; that is,
-the occupied slots are exactly the first $n$.
-
-The items held in the occupied slots are not constrained. -/
+/-- Exactly the compact prefix is occupied; payload equality is not required. -/
 public def WellFormed {α : Type u} (T : Table α) : Prop :=
   ∀ (i : Nat) (h : i < T.slots.size), (T.slots[i]).isSome ↔ i < T.num
 
-/-- **Characterization of well-formed dynamic tables.** A dynamic table with slots
-$s_0, \dots, s_{m-1}$ and item count $n$ is well formed if and only if, for every $i < m$, slot
-$s_i$ is occupied exactly when $i < n$. -/
+/-- Well-formedness means exactly that the compact logical prefix is occupied. -/
 public theorem wellFormed_iff {α : Type u} (T : Table α) :
     WellFormed T ↔
       ∀ (i : Nat) (h : i < T.slots.size), (T.slots[i]).isSome ↔ i < T.num :=
   Iff.rfl
 
-/-- **Contents of a dynamic table.** Let $T$ be a dynamic table with slots $s_0, \dots, s_{m-1}$,
-each empty or holding an item, and item count $n \le m$. The contents of $T$ is the array of the
-items held by the occupied slots among $s_0, \dots, s_{n-1}$, in order; empty slots in this
-prefix are skipped.
-
-The insertion procedure never consults the contents. -/
+/-- Derived contents, never consulted by the insertion executor. -/
 public def contents {α : Type u} (T : Table α) : Array α :=
   (T.slots.extract 0 T.num).filterMap id
 
@@ -64,24 +51,19 @@ private lemma contents_eq_internal {α : Type u} (T : Table α) :
     contents T = (T.slots.extract 0 T.num).filterMap id :=
   rfl
 
-/-- **Formula for the contents of a dynamic table.** Let $T$ be a dynamic table with slots
-$s_0, \dots, s_{m-1}$, each empty or holding an item, and item count $n \le m$. The contents of
-$T$ is the array obtained from the prefix $s_0, \dots, s_{n-1}$ by skipping the empty slots and
-keeping the items of the occupied ones, in order. -/
+/-- Contents are the occupied prefix with its option constructors removed. -/
 public theorem contents_eq {α : Type u} (T : Table α) :
     contents T = (T.slots.extract 0 T.num).filterMap id :=
   contents_eq_internal T
 
-/-- **Empty dynamic table.** The empty dynamic table is the table with no slots (capacity $0$)
-and item count $0$. It models a table before its first allocation. -/
+/-- The source's initially unallocated empty table. -/
 public def empty {α : Type u} : Table α := ⟨#[], 0, by simp⟩
 
 private lemma empty_eq_internal {α : Type u} :
     (empty : Table α) = ⟨#[], 0, by simp⟩ :=
   rfl
 
-/-- **The empty dynamic table has no slots and no items.** The empty dynamic table has an empty
-slot array, so capacity $0$, and item count $0$. -/
+/-- The initially unallocated table has no slots and no logical items. -/
 public theorem empty_eq {α : Type u} :
     (empty : Table α) = ⟨#[], 0, by simp⟩ :=
   empty_eq_internal
@@ -247,12 +229,8 @@ private lemma initialTable_pos {α : Type u} (T : Table α) :
   · have hp : 0 < T.slots.size := by omega
     simpa [initialTable, hz] using hp
 
-/-- **TABLE-INSERT.** Let $T$ be a dynamic table with slots $s_0, \dots, s_{m-1}$ and item count
-$n \le m$, and let $x$ be an item. Inserting $x$ into $T$ proceeds as follows. If $m = 0$, first
-replace the slots by a single empty slot. Then, if the table is full, that is, $n$ equals the
-current capacity $c$, allocate $2c$ empty slots and copy the $c$ old slots into the first $c$ of
-them, at cost $1$ per copied slot. Finally write $x$ into slot $n$, at cost $1$, and set the item
-count to $n + 1$. The result is the new table together with the total cost. -/
+/-- TABLE-INSERT: allocate first, copy when full, then write the new payload.
+Each actual old-item copy and the new-item write contributes one tick. -/
 public def tableInsert {α : Type u} (T : Table α) (x : α) : TimeM Nat (Table α) := do
   let initial := initialTable T
   if hf : initial.num = initial.slots.size then
@@ -276,18 +254,12 @@ public def tableInsert {α : Type u} (T : Table α) (x : α) : TimeM Nat (Table 
       simp only [Array.size_set]
       omega⟩
 
-/-- **Inserting an array of items into a dynamic table.** Given a dynamic table $T$ and an array
-$x_0, \dots, x_{k-1}$ of items, the result of inserting the array into $T$ is obtained by starting
-from $T$ and inserting $x_0, x_1, \dots, x_{k-1}$ one at a time with TABLE-INSERT, in array
-order. Its cost is the sum of the costs of the $k$ insertions; for an empty array the result is
-$T$ at cost $0$. -/
+/-- Insert each payload in its saved array order using the sole insertion executor. -/
 public def tableInsertMany {α : Type u} (T : Table α) (xs : Array α) :
     TimeM Nat (Table α) :=
   xs.foldlM (fun t x => tableInsert t x) T
 
-/-- **Insertion increases the item count by one.** For every dynamic table $T$ with item count $n$
-and every item $x$, the table returned by inserting $x$ into $T$ with TABLE-INSERT has item count
-$n + 1$. -/
+/-- The actual insertion increases the saved item count by one. -/
 public theorem tableInsert_num {α : Type u} (T : Table α) (x : α) :
     (tableInsert T x).ret.num = T.num + 1 := by
   have hn : (initialTable T).num = T.num := by
@@ -298,10 +270,7 @@ public theorem tableInsert_num {α : Type u} (T : Table α) (x : α) :
   split <;> simpa only [TimeM.ret_bind, TimeM.ret_pure] using
     congrArg (fun n => n + 1) hn
 
-/-- **Capacity after an insertion.** Let $T$ be a dynamic table with item count $n$ and capacity
-(number of slots) $m$, and let $x$ be an item. The table returned by inserting $x$ into $T$ with
-TABLE-INSERT has capacity $1$ if $m = 0$, capacity $2m$ if $m > 0$ and $n = m$, and capacity $m$
-otherwise. -/
+/-- The actual first allocation and full-table doubling determine the returned capacity. -/
 public theorem tableInsert_size {α : Type u} (T : Table α) (x : α) :
     (tableInsert T x).ret.slots.size =
       if T.slots.size = 0 then 1
@@ -317,9 +286,7 @@ public theorem tableInsert_size {α : Type u} (T : Table α) (x : α) :
     · simp only [tableInsert, initialTable, hz, hf, ↓reduceDIte, ↓reduceIte, TimeM.ret_bind,
         TimeM.ret_pure, Array.size_set]
 
-/-- **Cost of an insertion.** Let $T$ be a dynamic table with item count $n$ and capacity $m$, and
-let $x$ be an item. Inserting $x$ into $T$ with TABLE-INSERT costs $1 + n$ if $m > 0$ and $n = m$,
-and costs $1$ otherwise. -/
+/-- Count the new payload write and exactly the old-item writes on a full resize. -/
 public theorem tableInsert_time {α : Type u} (T : Table α) (x : α) :
     (tableInsert T x).time =
       1 + if T.slots.size > 0 ∧ T.num = T.slots.size then T.num else 0 := by
@@ -338,11 +305,7 @@ public theorem tableInsert_time {α : Type u} (T : Table α) (x : α) :
         TimeM.time_bind, TimeM.time_tick, TimeM.time_pure, and_false, ↓reduceIte,
         Nat.add_zero]
 
-/-- **Amortized cost of dynamic-table insertion.** For a dynamic table $T$ with item count $n$
-and capacity (number of slots) $m$, let $\Phi(T) = 2n - m$, an integer that may be negative.
-If inserting an item $x$ into $T$ has cost $c$ and returns the table $T'$, then
-$c + \Phi(T') - \Phi(T) \le 3$. Here the cost of an insertion is one unit for writing $x$ plus
-one unit for each old slot copied when a full table is doubled. -/
+/-- The signed source potential bounds the amortized copy/write charge by three. -/
 public theorem tableInsert_amortized {α : Type u} (T : Table α) (x : α) :
     ((tableInsert T x).time : Int) +
       (2 * ((tableInsert T x).ret.num : Int) - ((tableInsert T x).ret.slots.size : Int)) -
@@ -359,10 +322,7 @@ public theorem tableInsert_amortized {α : Type u} (T : Table α) (x : α) :
     · simp only [hz, hf, hp, and_false, ↓reduceIte]
       omega
 
-/-- **Slots after an insertion.** Let $T$ be a well-formed dynamic table with slots
-$s_0, \dots, s_{m-1}$ and item count $n$, let $x$ be an item, and let $T'$ be the table returned
-by inserting $x$ into $T$ with TABLE-INSERT, with capacity $m'$. Then the slots of $T'$ are
-$s_0, \dots, s_{n-1}$, followed by a slot holding $x$, followed by $m' - (n + 1)$ empty slots. -/
+/-- Preserve the complete occupied prefix and all unused returned slots. -/
 public theorem tableInsert_slots {α : Type u} (T : Table α) (x : α) :
     WellFormed T → (tableInsert T x).ret.slots =
       T.slots.extract 0 T.num ++ #[some x] ++
@@ -461,17 +421,14 @@ private lemma wellFormed_of_slots {α : Type u} (T out : Table α) (x : α) (n :
   · rw [Array.getElem_append_right (by omega), Array.getElem_replicate]
     exact ⟨fun h => Bool.noConfusion h, fun h => (hn h).elim⟩
 
-/-- **Insertion preserves well-formedness.** If $T$ is a well-formed dynamic table and $x$ is an
-item, then the table returned by inserting $x$ into $T$ with TABLE-INSERT is well formed. -/
+/-- Insertion preserves exact compact-prefix occupancy for arbitrary payload types. -/
 public theorem tableInsert_wellFormed {α : Type u} (T : Table α) (x : α) :
     WellFormed T → WellFormed (tableInsert T x).ret := by
   intro hT
   exact wellFormed_of_slots T (tableInsert T x).ret x _ hT
     (tableInsert_num T x) (tableInsert_slots T x hT)
 
-/-- **Insertion appends to the contents.** If $T$ is a well-formed dynamic table and $x$ is an
-item, then the contents of the table obtained by inserting $x$ into $T$ are the contents of $T$
-followed by $x$. -/
+/-- The actual inserted payload is appended to the saved logical contents. -/
 public theorem tableInsert_contents {α : Type u} (T : Table α) (x : α) :
     WellFormed T → contents (tableInsert T x).ret = (contents T).push x := by
   intro hT
@@ -487,11 +444,7 @@ public theorem tableInsert_contents {α : Type u} (T : Table α) (x : α) :
   rw [Array.extract_size, ← Array.push_eq_append]
   exact Array.filterMap_push_some (f := id) rfl (by simp only [Array.size_push])
 
-/-- **Repeated insertion preserves well-formedness of a dynamic table.** Call a dynamic table
-with item count $n$ well formed when, for every slot index $i$, slot $i$ is occupied exactly
-when $i < n$. If a dynamic table $T$ is well formed, then for every array $xs$, the table
-obtained from $T$ by inserting the entries of $xs$ one at a time with TABLE-INSERT, in array
-order, is again well formed. -/
+/-- The canonical insertion fold preserves compact-prefix occupancy. -/
 public theorem tableInsertMany_wellFormed {α : Type u} (T : Table α) (xs : Array α) :
     WellFormed T → WellFormed (tableInsertMany T xs).ret := by
   cases xs with
@@ -505,10 +458,7 @@ public theorem tableInsertMany_wellFormed {α : Type u} (T : Table α) (xs : Arr
       simp only [List.foldlM_cons, TimeM.ret_bind]
       exact ih (tableInsert T x).ret (tableInsert_wellFormed T x hT)
 
-/-- **Inserting an array appends it to the contents.** If $T$ is a well-formed dynamic table
-and $x_1, \dots, x_k$ is an array of items, then inserting $x_1, \dots, x_k$ into $T$ one at a
-time, in this order, gives a table whose contents are the contents of $T$ followed by
-$x_1, \dots, x_k$. -/
+/-- The sole insertion fold appends all payloads in their original array order. -/
 public theorem tableInsertMany_contents {α : Type u} (T : Table α) (xs : Array α) :
     WellFormed T → contents (tableInsertMany T xs).ret = contents T ++ xs := by
   cases xs with
@@ -557,9 +507,7 @@ private lemma fold_load {α : Type u} (values : List α) (T : Table α)
     simp only [List.foldlM_cons, TimeM.ret_bind]
     exact ih _ (insert_load T x h)
 
-/-- **Capacity after inserting into the empty table.** Starting from the empty dynamic table
-and inserting the items of an array of length $k$ one at a time, the resulting table has
-capacity (number of slots) at most $2k$. -/
+/-- Starting unallocated, logical slot capacity never exceeds twice the item count. -/
 public theorem tableInsertMany_size_le {α : Type u} (xs : Array α) :
     (tableInsertMany empty xs).ret.slots.size ≤ 2 * xs.size := by
   cases xs with
@@ -634,10 +582,7 @@ private lemma fold_empty_time_lt {α : Type u} (x : α) (values : List α) :
     exact Nat.le_refl 0)
   omega
 
-/-- **Total cost of insertions into the empty table.** Starting from the empty dynamic table
-and inserting the items of an array of length $k$ one at a time, the total cost is at most
-$3k$, where each insertion costs one unit for writing the new item plus one unit for each old
-slot copied when a full table is doubled. -/
+/-- From empty, the actual total copied-item and insertion writes are at most three per item. -/
 public theorem tableInsertMany_time_le {α : Type u} (xs : Array α) :
     (tableInsertMany empty xs).time ≤ 3 * xs.size := by
   cases xs with
@@ -651,12 +596,7 @@ public theorem tableInsertMany_time_le {α : Type u} (xs : Array α) :
     | cons x values =>
       simpa only [List.size_toArray] using Nat.le_of_lt (fold_empty_time_lt x values)
 
-/-- **Strict cost bound for nonempty insertion sequences.** Starting from the empty dynamic
-table and inserting the items of a nonempty array of length $k$ one at a time, the total cost
-is less than $3k$.
-
-The bound is strict because the first insertion, which allocates the first slot, has amortized
-cost $2$ rather than $3$. -/
+/-- The first allocation has charge two, giving a strict bound for every nonempty input. -/
 public theorem tableInsertMany_time_lt {α : Type u} (xs : Array α) :
     xs.size > 0 → (tableInsertMany empty xs).time < 3 * xs.size := by
   intro hp

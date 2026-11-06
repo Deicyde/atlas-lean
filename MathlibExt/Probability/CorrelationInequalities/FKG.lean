@@ -46,7 +46,7 @@ namespace StatMech
 
 variable {E : Type*}
 
-/-- **FKG inequality.** The **FKG inequality** (Fortuin, Kasteleyn, Ginibre 1971). Let `π` be a probability weight on
+/-- The **FKG inequality** (Fortuin, Kasteleyn, Ginibre 1971). Let `π` be a probability weight on
 `ConfigSpace E` (`π ≥ 0`, `∑ π = 1`) satisfying the FKG lattice condition. Then any two monotone
 functions `f g : ConfigSpace E → ℝ` are positively correlated:
 `E_π[f] * E_π[g] ≤ E_π[f * g]`.
@@ -91,7 +91,7 @@ theorem fkg_inequality [Fintype E] [DecidableEq E] {π : ConfigSpace E → ℝ}
   rw [e1, e2, e3] at hk
   nlinarith [hk]
 
-/-- **FKG inequality for increasing events.** The **FKG inequality for events**: under a probability weight `π` satisfying the FKG lattice
+/-- The **FKG inequality for events**: under a probability weight `π` satisfying the FKG lattice
 condition, two increasing events are positively correlated, `π(A) * π(B) ≤ π(A ∩ B)`. -/
 theorem fkg_inequality_events [Fintype E] [DecidableEq E] {π : ConfigSpace E → ℝ}
     (hπ₀ : 0 ≤ π) (hnorm : ∑ ω, π ω = 1) (hπ : FKGLatticeCondition π)
@@ -107,7 +107,7 @@ theorem fkg_inequality_events [Fintype E] [DecidableEq E] {π : ConfigSpace E �
   rw [hAB]
   exact fkg_inequality hπ₀ hnorm hπ hA.indicator_monotone hB.indicator_monotone
 
-/-- **Holley inequality for increasing events.** The **Holley inequality** for increasing events (Holley 1974). If `μ₁, μ₂ ≥ 0` have equal
+/-- The **Holley inequality** for increasing events (Holley 1974). If `μ₁, μ₂ ≥ 0` have equal
 total mass and satisfy `μ₁ a * μ₂ b ≤ μ₁ (a ⊓ b) * μ₂ (a ⊔ b)`, then `μ₁(A) ≤ μ₂(A)` for every
 increasing event `A`. This is Mathlib's `holley` applied to the indicator of `A`. -/
 theorem holley_dominates [Fintype E] [DecidableEq E] {μ₁ μ₂ : ConfigSpace E → ℝ}

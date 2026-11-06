@@ -176,7 +176,7 @@ private theorem complexSVD_toMatrix_eq_rectangularDiagonal
     simp [hne]
 
 /--
-**Unitary reduction of a complex matrix to rectangular diagonal form.** Every rectangular complex matrix becomes rectangular diagonal after a unitary
+Every rectangular complex matrix becomes rectangular diagonal after a unitary
 change of basis on the right, with a further unitary change of basis on the
 codomain (S. Axler, Linear Algebra Done Right, 4th ed., Section 7E).
 -/
@@ -235,7 +235,7 @@ theorem exists_unitaryGroup_mul_eq_rectangularDiagonal
               ((EuclideanSpace.basisFun (Fin m) ℂ).toBasis.toMatrix u * ·) hdiag
 
 /--
-**Complex SVD with nonincreasing singular values.** This is the rectangular complex SVD with singular values in nonincreasing order.
+This is the rectangular complex SVD with singular values in nonincreasing order.
 
 Proof: Multiply the rectangular-diagonal factorization on the right by `Vᴴ`.
 -/
@@ -265,7 +265,7 @@ theorem exists_unitaryGroup_rectangularDiagonal_antitone
       rw [hAV]
 
 /--
-**Squared Frobenius norm as the sum of squared singular values.** Frobenius-norm identity for an SVD: the sum of the squared singular values is
+Frobenius-norm identity for an SVD: the sum of the squared singular values is
 the sum of the squared norms of the entries.
 -/
 theorem sum_sq_singularValues_eq_sum_sq_norm_of_svd {m n : ℕ}
@@ -351,7 +351,7 @@ end Matrix
 namespace MathlibExt.LinearAlgebra.Matrix.ComplexSVDWanted
 
 /--
-**Singular value decomposition of a complex matrix.** Rectangular complex singular value decomposition: every complex `m × n` matrix
+Rectangular complex singular value decomposition: every complex `m × n` matrix
 factors as `U * Σ * Vᴴ` with `U` and `V` unitary and `Σ` rectangular diagonal
 with nonnegative entries; the singular values beyond the first `min m n`
 (indices `j` with `m ≤ j.val`) are zero.

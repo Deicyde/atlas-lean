@@ -51,14 +51,14 @@ namespace StatMech
 variable {E : Type*} [Countable E]
 
 omit [Countable E] in
-/-- **Cylinder events are clopen.** A cylinder event of `ConfigSpace E`, determined by finitely many coordinates, is clopen. -/
+/-- A cylinder event of `ConfigSpace E`, determined by finitely many coordinates, is clopen. -/
 theorem isClopen_cylinderEvent (s : Finset E) (S : Set (∀ _i : s, Bool)) :
     IsClopen (cylinder (α := fun _ : E => Bool) s S) := by
   apply IsClopen.preimage
   · exact isClopen_discrete S
   · exact continuous_pi (fun i => continuous_apply i.1)
 
-/-- **Portmanteau theorem for clopen events.** Under weak convergence on `ConfigSpace E`, the probability of every clopen event converges
+/-- Under weak convergence on `ConfigSpace E`, the probability of every clopen event converges
 (portmanteau theorem). -/
 theorem WeakConvergesTo.tendsto_real_of_isClopen
     {μ : ℕ → ProbabilityMeasure (ConfigSpace E)} {ν : ProbabilityMeasure (ConfigSpace E)}
@@ -72,7 +72,7 @@ theorem WeakConvergesTo.tendsto_real_of_isClopen
   exact hcoe
 
 omit [Countable E] in
-/-- **Increasing-event probabilities along an increasing chain are monotone.** Along a chain `μ₀ ≼ μ₁ ≼ ⋯`, the probability of an increasing event is monotone. -/
+/-- Along a chain `μ₀ ≼ μ₁ ≼ ⋯`, the probability of an increasing event is monotone. -/
 theorem monotone_real_of_chain
     {μ : ℕ → Measure (ConfigSpace E)}
     (hchain : ∀ n, μ n ≼ μ (n + 1))
@@ -85,7 +85,7 @@ theorem monotone_real_of_chain
   exact (hchain n).real A hAmeas hAinc
 
 omit [Countable E] in
-/-- **Increasing-event probabilities along a decreasing chain are antitone.** Along a chain `⋯ ≼ μ₁ ≼ μ₀`, the probability of an increasing event is antitone. -/
+/-- Along a chain `⋯ ≼ μ₁ ≼ μ₀`, the probability of an increasing event is antitone. -/
 theorem antitone_real_of_chain
     {μ : ℕ → Measure (ConfigSpace E)}
     (hchain : ∀ n, μ (n + 1) ≼ μ n)
@@ -97,7 +97,7 @@ theorem antitone_real_of_chain
   let _ := hfinite n
   exact (hchain n).real A hAmeas hAinc
 
-/-- **Weak limit of an increasing chain dominates its terms.** The weak limit of an increasing chain gives each increasing clopen event at least the
+/-- The weak limit of an increasing chain gives each increasing clopen event at least the
 probability any term of the chain gives it. -/
 theorem WeakConvergesTo.le_real_of_monotone_isIncreasing
     {μ : ℕ → ProbabilityMeasure (ConfigSpace E)} {ν : ProbabilityMeasure (ConfigSpace E)}
@@ -109,7 +109,7 @@ theorem WeakConvergesTo.le_real_of_monotone_isIncreasing
       (hAclopen.isOpen.measurableSet) hAinc).ge_of_tendsto
     (h.tendsto_real_of_isClopen hAclopen) n
 
-/-- **Weak limit of a decreasing chain is dominated by its terms.** The weak limit of a decreasing chain gives each increasing clopen event at most the
+/-- The weak limit of a decreasing chain gives each increasing clopen event at most the
 probability any term of the chain gives it. -/
 theorem WeakConvergesTo.ge_real_of_antitone_isIncreasing
     {μ : ℕ → ProbabilityMeasure (ConfigSpace E)} {ν : ProbabilityMeasure (ConfigSpace E)}
@@ -121,7 +121,7 @@ theorem WeakConvergesTo.ge_real_of_antitone_isIncreasing
       (hAclopen.isOpen.measurableSet) hAinc).le_of_tendsto
     (h.tendsto_real_of_isClopen hAclopen) n
 
-/-- **Lower bounds on clopen-event probabilities pass to weak limits.** A lower bound on the probabilities of a clopen event along a weakly convergent sequence passes
+/-- A lower bound on the probabilities of a clopen event along a weakly convergent sequence passes
 to the limit. -/
 theorem le_real_of_weakLimit
     {μ : ℕ → ProbabilityMeasure (ConfigSpace E)} {ν : ProbabilityMeasure (ConfigSpace E)}
@@ -133,7 +133,7 @@ theorem le_real_of_weakLimit
   ge_of_tendsto (h.tendsto_real_of_isClopen hAclopen)
     (Filter.Eventually.of_forall hbound)
 
-/-- **Upper bounds on clopen-event probabilities pass to weak limits.** An upper bound on the probabilities of a clopen event along a weakly convergent sequence passes
+/-- An upper bound on the probabilities of a clopen event along a weakly convergent sequence passes
 to the limit. -/
 theorem real_le_of_weakLimit
     {μ : ℕ → ProbabilityMeasure (ConfigSpace E)} {ν : ProbabilityMeasure (ConfigSpace E)}
@@ -145,7 +145,7 @@ theorem real_le_of_weakLimit
   le_of_tendsto (h.tendsto_real_of_isClopen hAclopen)
     (Filter.Eventually.of_forall hbound)
 
-/-- **Stochastic domination from below passes to weak limits.** If `ρ ≼ μₙ` for all `n` and `μₙ → ν` weakly, then `ρ(A) ≤ ν(A)` for every increasing clopen
+/-- If `ρ ≼ μₙ` for all `n` and `μₙ → ν` weakly, then `ρ(A) ≤ ν(A)` for every increasing clopen
 event `A`. -/
 theorem dominated_weakLimit_of_forall_dominated
     {μ : ℕ → ProbabilityMeasure (ConfigSpace E)} {ν : ProbabilityMeasure (ConfigSpace E)}
@@ -157,7 +157,7 @@ theorem dominated_weakLimit_of_forall_dominated
   le_real_of_weakLimit h hAclopen hAinc
     (fun n => (hdom n).real A (hAclopen.isOpen.measurableSet) hAinc)
 
-/-- **Stochastic domination from above passes to weak limits.** If `μₙ ≼ ρ` for all `n` and `μₙ → ν` weakly, then `ν(A) ≤ ρ(A)` for every increasing clopen
+/-- If `μₙ ≼ ρ` for all `n` and `μₙ → ν` weakly, then `ν(A) ≤ ρ(A)` for every increasing clopen
 event `A`. -/
 theorem weakLimit_dominated_of_forall_dominated
     {μ : ℕ → ProbabilityMeasure (ConfigSpace E)} {ν : ProbabilityMeasure (ConfigSpace E)}
@@ -170,7 +170,7 @@ theorem weakLimit_dominated_of_forall_dominated
     (fun n => (hdom n).real A (hAclopen.isOpen.measurableSet) hAinc)
 
 omit [Countable E] in
-/-- **Probability measures agreeing on clopen sets are equal.** Two probability measures on `ConfigSpace E` that agree on clopen sets are equal: the clopen
+/-- Two probability measures on `ConfigSpace E` that agree on clopen sets are equal: the clopen
 cylinder events form a generating π-system. -/
 theorem ProbabilityMeasure.ext_of_forall_isClopen
     {μ ν : ProbabilityMeasure (ConfigSpace E)}
@@ -187,7 +187,7 @@ theorem ProbabilityMeasure.ext_of_forall_isClopen
         ← ProbabilityMeasure.ennreal_coeFn_eq_coeFn_toMeasure, hμν]
   · rw [measure_univ, measure_univ]
 
-/-- **Subsequential weak limits are determined by clopen-event limits.** If the probabilities of clopen events converge to `L`, every subsequential weak limit `ξ`
+/-- If the probabilities of clopen events converge to `L`, every subsequential weak limit `ξ`
 satisfies `ξ(A) = L(A)` on clopen `A`. -/
 theorem isClopen_apply_eq_of_subseq_tendsto
     {μ : ℕ → ProbabilityMeasure (ConfigSpace E)} {L : Set (ConfigSpace E) → NNReal}
@@ -202,7 +202,7 @@ theorem isClopen_apply_eq_of_subseq_tendsto
     (hconv A hA).comp hψ.tendsto_atTop
   exact tendsto_nhds_unique hport hsub
 
-/-- **Convergence on clopen events implies weak convergence.** If the probability of every clopen event converges along a sequence of probability measures on
+/-- If the probability of every clopen event converges along a sequence of probability measures on
 `ConfigSpace E`, the sequence converges weakly: all subsequential limits (which exist by
 Prokhorov) agree on clopen sets, hence coincide. -/
 theorem tendsto_weakly_of_forall_isClopen_tendsto
@@ -223,7 +223,7 @@ theorem tendsto_weakly_of_forall_isClopen_tendsto
     isClopen_apply_eq_of_subseq_tendsto hconv hφ hν hA
   rw [hξA, hνA]
 
-/-- **Convergence of increasing-event probabilities along an increasing chain.** Along a chain `μ₀ ≼ μ₁ ≼ ⋯`, the probability of an increasing clopen event converges to its
+/-- Along a chain `μ₀ ≼ μ₁ ≼ ⋯`, the probability of an increasing clopen event converges to its
 supremum. -/
 theorem tendsto_NNReal_of_monotone_isIncreasing
     {μ : ℕ → ProbabilityMeasure (ConfigSpace E)}

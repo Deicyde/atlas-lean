@@ -150,7 +150,7 @@ namespace IsLocalRing
 
 universe u v
 
-/-- **Finite domains over adically complete local rings are local.** A finite algebra over an adically complete Noetherian local ring that is
+/-- A finite algebra over an adically complete Noetherian local ring that is
 a domain is itself local. -/
 theorem of_isDomain_of_module_finite_of_isAdicComplete
     {R : Type u} {S : Type v} [CommRing R] [IsNoetherianRing R] [IsLocalRing R]

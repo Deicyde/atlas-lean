@@ -72,7 +72,7 @@ open scoped LinearMap.FiniteRangeSetoid
 
 variable {𝕜 : Type*} [RCLike 𝕜]
 
-/-- **Essential spectrum of a bounded operator.** The **essential spectrum** of a bounded operator `T`: the set of
+/-- The **essential spectrum** of a bounded operator `T`: the set of
 scalars `μ` for which `T - μ • 1` is not a Fredholm operator. -/
 def essentialSpectrum {E : Type*} [NormedAddCommGroup E] [NormedSpace 𝕜 E]
     (T : E →L[𝕜] E) : Set 𝕜 :=
@@ -80,14 +80,14 @@ def essentialSpectrum {E : Type*} [NormedAddCommGroup E] [NormedSpace 𝕜 E]
 
 section ShiftSub
 
-/-- **Pointwise action of one minus a scaled backward shift.** Pointwise action of `1 - μ • B`. -/
+/-- Pointwise action of `1 - μ • B`. -/
 theorem one_sub_smul_backward_apply (μ : 𝕜) (x : ℓ²(ℕ, 𝕜)) (j : ℕ) :
     ((1 - μ • LpShiftOperator.backwardCLM (𝕜 := 𝕜)) x : ℕ → 𝕜) j =
       (x : ℕ → 𝕜) j - μ * (x : ℕ → 𝕜) (j + 1) := by
   simp only [sub_apply, smul_apply, one_apply_eq_self, lp.coeFn_sub, lp.coeFn_smul,
     Pi.sub_apply, Pi.smul_apply, backwardCLM_apply, backwardFun_apply, smul_eq_mul]
 
-/-- **Factorization of the shifted unilateral shift.** The key factorization: `S - μ = S (1 - μ B) + μ (S B - 1)`. -/
+/-- The key factorization: `S - μ = S (1 - μ B) + μ (S B - 1)`. -/
 theorem shift_sub_smul_one_eq (μ : 𝕜) :
     LpShiftOperator.shiftCLM (𝕜 := 𝕜) - μ • 1 =
       LpShiftOperator.shiftCLM (𝕜 := 𝕜) ∘L (1 - μ • LpShiftOperator.backwardCLM (𝕜 := 𝕜)) +
@@ -110,7 +110,7 @@ theorem shift_sub_smul_one_eq (μ : 𝕜) :
         smul_eq_mul, shiftCLM_apply, backwardCLM_apply, backwardFun_apply, shiftFun_succ,
         sub_self, mul_zero, add_zero]
 
-/-- **Shifted unilateral shift has trivial kernel.** `S - μ • 1` has trivial kernel for every `μ`: the coordinate
+/-- `S - μ • 1` has trivial kernel for every `μ`: the coordinate
 equations force every coordinate to vanish. -/
 theorem injective_shift_sub (μ : 𝕜) :
     Function.Injective ⇑(LpShiftOperator.shiftCLM (𝕜 := 𝕜) - μ • 1 : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)) := by
@@ -150,7 +150,7 @@ theorem injective_shift_sub (μ : 𝕜) :
         · exact absurd h' hμ0
         · exact h'
 
-/-- **One minus a small multiple of the backward shift is invertible.** `1 - μ • B` is a unit when `‖μ‖ < 1`, by the Neumann-series
+/-- `1 - μ • B` is a unit when `‖μ‖ < 1`, by the Neumann-series
 criterion `isUnit_one_sub_of_norm_lt_one`. -/
 theorem isUnit_one_sub_smul_backward {μ : 𝕜} (hμ : ‖μ‖ < 1) :
     IsUnit (1 - μ • LpShiftOperator.backwardCLM (𝕜 := 𝕜)) := by
@@ -161,19 +161,19 @@ theorem isUnit_one_sub_smul_backward {μ : 𝕜} (hμ : ‖μ‖ < 1) :
     _ = ‖μ‖ := mul_one _
     _ < 1 := hμ
 
-/-- **Invertible operators are Fredholm.** A unit operator is Fredholm, via `IsHomeomorph` and
+/-- A unit operator is Fredholm, via `IsHomeomorph` and
 `IsInvertible.isFredholm`. -/
 theorem isFredholm_of_isUnit {T : ℓ²(ℕ, 𝕜) →L[𝕜] ℓ²(ℕ, 𝕜)} (hT : IsUnit T) :
     T.IsFredholm := by
   have hhome : IsHomeomorph T := ContinuousLinearMap.isHomeomorph_of_isUnit hT
   exact (ContinuousLinearMap.IsInvertible.of_isHomeomorph hhome).isFredholm
 
-/-- **One minus a small multiple of the backward shift is Fredholm.** `1 - μ • B` is Fredholm when `‖μ‖ < 1`. -/
+/-- `1 - μ • B` is Fredholm when `‖μ‖ < 1`. -/
 theorem isFredholm_one_sub_smul_backward {μ : 𝕜} (hμ : ‖μ‖ < 1) :
     (1 - μ • LpShiftOperator.backwardCLM (𝕜 := 𝕜)).IsFredholm :=
   isFredholm_of_isUnit (isUnit_one_sub_smul_backward hμ)
 
-/-- **Shifted unilateral shift is Fredholm inside the unit disk.** For `‖μ‖ < 1`, `S - μ • 1` is Fredholm: it is the Fredholm
+/-- For `‖μ‖ < 1`, `S - μ • 1` is Fredholm: it is the Fredholm
 operator `S (1 - μ B)` plus the finite-rank operator `μ (S B - 1)`. -/
 theorem isFredholm_shift_sub_smul_one_of_norm_lt_one {μ : 𝕜} (hμ : ‖μ‖ < 1) :
     (LpShiftOperator.shiftCLM (𝕜 := 𝕜) - μ • 1).IsFredholm := by
@@ -199,7 +199,7 @@ theorem isFredholm_shift_sub_smul_one_of_norm_lt_one {μ : 𝕜} (hμ : ‖μ‖
   · exact hS.comp (isFredholm_one_sub_smul_backward hμ)
   · exact hdefect.smul μ
 
-/-- **Shifted unilateral shift has index $-1$ inside the unit disk.** The index of `S - μ • 1` is `-1` for `‖μ‖ < 1`: the canonical
+/-- The index of `S - μ • 1` is `-1` for `‖μ‖ < 1`: the canonical
 homotopy theorem makes the index constant along `S - (t μ) • 1`,
 `t ∈ [0, 1]`, and the canonical shift has index `-1` at `t = 0`. -/
 theorem index_shift_sub_smul_one_of_norm_lt_one {μ : 𝕜} (hμ : ‖μ‖ < 1) :
@@ -227,7 +227,7 @@ theorem index_shift_sub_smul_one_of_norm_lt_one {μ : 𝕜} (hμ : ‖μ‖ < 1)
   rw [hz, sub_zero]
   exact ShiftFredholmIndex.index_shiftCLM (𝕜 := 𝕜)
 
-/-- **Shifted unilateral shift is invertible outside the unit disk.** For `‖μ‖ > 1`, `S - μ • 1` is a unit: it equals
+/-- For `‖μ‖ > 1`, `S - μ • 1` is a unit: it equals
 `(algebraMap (-μ)) * (1 - μ⁻¹ • S)`, a product of units. -/
 theorem isUnit_shift_sub_smul_one_of_one_lt_norm {μ : 𝕜} (hμ : 1 < ‖μ‖) :
     IsUnit (LpShiftOperator.shiftCLM (𝕜 := 𝕜) - μ • 1) := by
@@ -258,12 +258,12 @@ theorem isUnit_shift_sub_smul_one_of_one_lt_norm {μ : 𝕜} (hμ : 1 < ‖μ‖
   rw [← hprod]
   exact hscalar.mul hsmall
 
-/-- **Shifted unilateral shift is Fredholm outside the unit disk.** For `‖μ‖ > 1`, `S - μ • 1` is Fredholm, as it is a unit. -/
+/-- For `‖μ‖ > 1`, `S - μ • 1` is Fredholm, as it is a unit. -/
 theorem isFredholm_shift_sub_smul_one_of_one_lt_norm {μ : 𝕜} (hμ : 1 < ‖μ‖) :
     (LpShiftOperator.shiftCLM (𝕜 := 𝕜) - μ • 1).IsFredholm :=
   isFredholm_of_isUnit (isUnit_shift_sub_smul_one_of_one_lt_norm hμ)
 
-/-- **Shifted unilateral shift has index zero outside the unit disk.** For `‖μ‖ > 1`, `S - μ • 1` has index `0`: a unit is bijective. -/
+/-- For `‖μ‖ > 1`, `S - μ • 1` has index `0`: a unit is bijective. -/
 theorem index_shift_sub_smul_one_of_one_lt_norm {μ : 𝕜} (hμ : 1 < ‖μ‖) :
     (LpShiftOperator.shiftCLM (𝕜 := 𝕜) - μ • 1).index = 0 := by
   have hhome : IsHomeomorph ⇑(LpShiftOperator.shiftCLM (𝕜 := 𝕜) - μ • 1) :=
@@ -277,10 +277,10 @@ end ShiftSub
 
 section ApproximateEigenvectors
 
-/-- **Truncated geometric sequence.** The truncated geometric sequence `(1, μ̄, μ̄², …, μ̄ᴺ, 0, …)`. -/
+/-- The truncated geometric sequence `(1, μ̄, μ̄², …, μ̄ᴺ, 0, …)`. -/
 def approxFun (μ : 𝕜) (N : ℕ) : ℕ → 𝕜 := fun n => if n ≤ N then (star μ) ^ n else 0
 
-/-- **Truncated geometric sequence is square-summable.** The truncated geometric sequence is in `ℓ²`: it has finite support. -/
+/-- The truncated geometric sequence is in `ℓ²`: it has finite support. -/
 theorem memℓp_approxFun (μ : 𝕜) (N : ℕ) : Memℓp (approxFun μ N) 2 := by
   apply memℓp_gen
   apply summable_of_ne_finset_zero (s := Finset.range (N + 1))
@@ -289,13 +289,13 @@ theorem memℓp_approxFun (μ : 𝕜) (N : ℕ) : Memℓp (approxFun μ N) 2 := 
   have hle : ¬ n ≤ N := by omega
   simp [approxFun, hle]
 
-/-- **Truncated geometric vector in $\ell^2$.** The truncated geometric sequence as an `ℓ²` vector. -/
+/-- The truncated geometric sequence as an `ℓ²` vector. -/
 noncomputable def approxVec (μ : 𝕜) (N : ℕ) : ℓ²(ℕ, 𝕜) := ⟨approxFun μ N, memℓp_approxFun μ N⟩
 
 theorem approxVec_apply (μ : 𝕜) (N n : ℕ) :
     (approxVec μ N) n = approxFun μ N n := rfl
 
-/-- **Squared norm of the truncated geometric vector.** The squared norm of the truncated geometric vector is `N + 1`,
+/-- The squared norm of the truncated geometric vector is `N + 1`,
 when `‖μ‖ = 1`. -/
 theorem norm_sq_approxVec {μ : 𝕜} (hμ : ‖μ‖ = 1) (N : ℕ) :
     ‖approxVec μ N‖ ^ 2 = (N + 1 : ℝ) := by
@@ -318,7 +318,7 @@ theorem norm_sq_approxVec {μ : 𝕜} (hμ : ‖μ‖ = 1) (N : ℕ) :
     rw [Finset.mem_range] at hi
     simp [approxVec_apply, approxFun, show ¬ i ≤ N from by omega]
 
-/-- **Shifted unilateral shift on the truncated geometric vector.** The coordinates of `(S - μ • 1)` applied to the truncated
+/-- The coordinates of `(S - μ • 1)` applied to the truncated
 geometric vector: `-μ` at `0`, `(star μ)^N` at `N + 1`, and `0`
 elsewhere, when `‖μ‖ = 1`. -/
 theorem sub_smul_one_approxVec_apply_zero {μ : 𝕜} (N : ℕ) :
@@ -359,7 +359,7 @@ theorem sub_smul_one_approxVec_apply_of_ne {μ : 𝕜} (hμ : ‖μ‖ = 1) (N :
     rw [approxVec_apply, approxVec_apply, approxFun, approxFun, ite_eq_right hk, ite_eq_right hkN]
     simp
 
-/-- **Squared norm of the shifted shift on the truncated geometric vector.** The squared norm of `(S - μ • 1)` applied to the truncated
+/-- The squared norm of `(S - μ • 1)` applied to the truncated
 geometric vector is `2`, when `‖μ‖ = 1`. -/
 theorem norm_sq_sub_smul_one_approxVec {μ : 𝕜} (hμ : ‖μ‖ = 1) (N : ℕ) :
     ‖(LpShiftOperator.shiftCLM (𝕜 := 𝕜) - μ • 1) (approxVec μ N)‖ ^ 2 = 2 := by
@@ -382,7 +382,7 @@ theorem norm_sq_sub_smul_one_approxVec {μ : 𝕜} (hμ : ‖μ‖ = 1) (N : ℕ
     rw [hz]
     simp
 
-/-- **Shifted unilateral shift is not Fredholm on the unit circle.** For `‖μ‖ = 1`, `S - μ • 1` is not Fredholm: it has trivial kernel
+/-- For `‖μ‖ = 1`, `S - μ • 1` is not Fredholm: it has trivial kernel
 and closed range would make it bounded below, contradicting the
 approximate eigenvectors. -/
 theorem not_isFredholm_shift_sub_smul_one_of_norm_eq_one {μ : 𝕜} (hμ : ‖μ‖ = 1) :
@@ -420,7 +420,7 @@ end ApproximateEigenvectors
 
 section Main
 
-/-- **Essential spectrum of the unilateral shift is the unit circle.** The essential spectrum of the unilateral shift is the unit circle:
+/-- The essential spectrum of the unilateral shift is the unit circle:
 `S - μ • 1` is Fredholm exactly off the circle. -/
 theorem essentialSpectrum_shiftCLM :
     essentialSpectrum (LpShiftOperator.shiftCLM (𝕜 := 𝕜)) = Metric.sphere (0 : 𝕜) 1 := by
@@ -435,7 +435,7 @@ theorem essentialSpectrum_shiftCLM :
   · intro hnorm hfred
     exact not_isFredholm_shift_sub_smul_one_of_norm_eq_one hnorm hfred
 
-/-- **Membership in the essential spectrum of the unilateral shift.** Membership form: `μ` is in the essential spectrum of the shift
+/-- Membership form: `μ` is in the essential spectrum of the shift
 iff `‖μ‖ = 1`. -/
 theorem mem_essentialSpectrum_shiftCLM {μ : 𝕜} :
     μ ∈ essentialSpectrum (LpShiftOperator.shiftCLM (𝕜 := 𝕜)) ↔ ‖μ‖ = 1 := by

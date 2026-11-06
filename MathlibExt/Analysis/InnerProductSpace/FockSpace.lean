@@ -88,7 +88,7 @@ open Filter Topology Set
 open scoped _root_.lp _root_.InnerProduct _root_.InnerProductSpace ENNReal
 open scoped ComplexInnerProductSpace
 
-/-- **Squared norms of the Fock kernel coefficients.** The squared norms of the Fock kernel coefficients are
+/-- The squared norms of the Fock kernel coefficients are
 `‖z‖ ^ (2 * n) / n!`. -/
 theorem norm_sq_fock_coeff (z : ℂ) (n : ℕ) :
     ‖(starRingEnd ℂ z) ^ n / (Real.sqrt (Nat.factorial n : ℝ) : ℂ)‖ ^ (2 : ℝ) =
@@ -97,7 +97,7 @@ theorem norm_sq_fock_coeff (z : ℂ) (n : ℕ) :
     Real.norm_eq_abs, abs_of_nonneg (Real.sqrt_nonneg _), div_pow,
     Real.sq_sqrt (Nat.cast_nonneg _), ← pow_mul, mul_comm n 2, pow_mul]
 
-/-- **Fock kernel coefficients lie in ℓ².** The Fock kernel coefficients are in `ℓ²` for every `z : ℂ`, since
+/-- The Fock kernel coefficients are in `ℓ²` for every `z : ℂ`, since
 `∑' n, ‖z‖ ^ (2 * n) / n! = Real.exp ‖z‖²`. -/
 theorem memℓp_fockKernel (z : ℂ) :
     Memℓp (fun n : ℕ => (starRingEnd ℂ z) ^ n / (Real.sqrt (Nat.factorial n : ℝ) : ℂ)) 2 := by
@@ -106,7 +106,7 @@ theorem memℓp_fockKernel (z : ℂ) :
   simp only [h2, norm_sq_fock_coeff]
   exact (NormedSpace.expSeries_div_hasSum_exp (‖z‖ ^ 2 : ℝ)).summable
 
-/-- **Reproducing kernel of the Fock space.** The **Fock kernel** at `z`: the `ℓ²(ℕ, ℂ)` sequence with coefficients
+/-- The **Fock kernel** at `z`: the `ℓ²(ℕ, ℂ)` sequence with coefficients
 `(conj z)ⁿ / √(n!)`. -/
 noncomputable def fockKernel (z : ℂ) : ℓ²(ℕ, ℂ) :=
   ⟨fun n => (starRingEnd ℂ z) ^ n / (Real.sqrt (Nat.factorial n : ℝ) : ℂ), memℓp_fockKernel z⟩
@@ -115,7 +115,7 @@ noncomputable def fockKernel (z : ℂ) : ℓ²(ℕ, ℂ) :=
     fockKernel z n = (starRingEnd ℂ z) ^ n / (Real.sqrt (Nat.factorial n : ℝ) : ℂ) :=
   rfl
 
-/-- **Fock kernel at the origin is the first basis vector.** The Fock kernel at `0` is the first standard basis vector. -/
+/-- The Fock kernel at `0` is the first standard basis vector. -/
 theorem fockKernel_zero :
     fockKernel (0 : ℂ) = lp.single 2 0 (1 : ℂ) := by
   apply lp.ext
@@ -127,7 +127,7 @@ theorem fockKernel_zero :
   · rw [Pi.single_eq_of_ne hn, map_zero, zero_pow hn]
     exact zero_div _
 
-/-- **Squared norm of the Fock kernel.** The squared norm of the Fock kernel is `Real.exp ‖z‖²`. -/
+/-- The squared norm of the Fock kernel is `Real.exp ‖z‖²`. -/
 theorem norm_sq_fockKernel (z : ℂ) :
     ‖fockKernel z‖ ^ 2 = Real.exp (‖z‖ ^ 2) := by
   have hpow : ‖fockKernel z‖ ^ (2 : ℝ≥0∞).toReal = Real.exp (‖z‖ ^ 2) := by
@@ -140,7 +140,7 @@ theorem norm_sq_fockKernel (z : ℂ) :
   rw [h2', Real.rpow_two] at hpow
   exact hpow
 
-/-- **Norm of the Fock kernel.** The norm of the Fock kernel is `Real.exp (‖z‖² / 2)`. -/
+/-- The norm of the Fock kernel is `Real.exp (‖z‖² / 2)`. -/
 theorem norm_fockKernel (z : ℂ) :
     ‖fockKernel z‖ = Real.exp (‖z‖ ^ 2 / 2) := by
   have hsq := norm_sq_fockKernel z
@@ -148,12 +148,12 @@ theorem norm_fockKernel (z : ℂ) :
     rw [← hsq, Real.sqrt_sq (norm_nonneg _)]
   rw [hnorm, ← Real.exp_half]
 
-/-- **Point evaluation on the Fock space.** Point evaluation on the Fock space: the inner product with the
+/-- Point evaluation on the Fock space: the inner product with the
 Fock kernel. -/
 noncomputable def fockEval (z : ℂ) (a : ℓ²(ℕ, ℂ)) : ℂ :=
   ⟪fockKernel z, a⟫
 
-/-- **Fock-space point evaluation as a Taylor series.** Point evaluation is the Taylor series `∑' n, a n * zⁿ / √(n!)`. -/
+/-- Point evaluation is the Taylor series `∑' n, a n * zⁿ / √(n!)`. -/
 theorem fockEval_eq_tsum (z : ℂ) (a : ℓ²(ℕ, ℂ)) :
     fockEval z a = ∑' n, a n * z ^ n / (Real.sqrt (Nat.factorial n : ℝ) : ℂ) := by
   unfold fockEval
@@ -164,7 +164,7 @@ theorem fockEval_eq_tsum (z : ℂ) (a : ℓ²(ℕ, ℂ)) :
     Complex.conj_ofReal]
   ring
 
-/-- **Absolute convergence of Taylor series in the Fock space.** The Taylor series of a Fock-space function converges absolutely at
+/-- The Taylor series of a Fock-space function converges absolutely at
 every point of `ℂ`. -/
 theorem summable_fockEval_terms (z : ℂ) (a : ℓ²(ℕ, ℂ)) :
     Summable (fun n => a n * z ^ n / (Real.sqrt (Nat.factorial n : ℝ) : ℂ)) := by
@@ -175,23 +175,23 @@ theorem summable_fockEval_terms (z : ℂ) (a : ℓ²(ℕ, ℂ)) :
     Complex.conj_ofReal]
   ring
 
-/-- **Point evaluation as a bounded functional on the Fock space.** Point evaluation as a bounded linear functional on the Fock space. -/
+/-- Point evaluation as a bounded linear functional on the Fock space. -/
 noncomputable def fockEvalCLM (z : ℂ) : ℓ²(ℕ, ℂ) →L[ℂ] ℂ :=
   innerSL ℂ (fockKernel z)
 
-/-- **Reproducing property of the Fock kernel.** The bounded point-evaluation functional acts by the inner product
+/-- The bounded point-evaluation functional acts by the inner product
 with the Fock kernel. -/
 theorem fockEvalCLM_apply (z : ℂ) (a : ℓ²(ℕ, ℂ)) :
     fockEvalCLM z a = fockEval z a :=
   rfl
 
-/-- **Norm of Fock-space point evaluation.** The operator norm of point evaluation is `Real.exp (‖z‖² / 2)`. -/
+/-- The operator norm of point evaluation is `Real.exp (‖z‖² / 2)`. -/
 theorem norm_fockEvalCLM (z : ℂ) :
     ‖fockEvalCLM z‖ = Real.exp (‖z‖ ^ 2 / 2) := by
   change ‖innerSL ℂ (fockKernel z)‖ = Real.exp (‖z‖ ^ 2 / 2)
   rw [innerSL_apply_norm, norm_fockKernel]
 
-/-- **Pointwise bound for Fock-space functions.** The pointwise bound for Fock-space functions:
+/-- The pointwise bound for Fock-space functions:
 `‖f(z)‖ ≤ ‖f‖ * Real.exp (‖z‖² / 2)`. -/
 theorem norm_fockEval_le (z : ℂ) (a : ℓ²(ℕ, ℂ)) :
     ‖fockEval z a‖ ≤ ‖a‖ * Real.exp (‖z‖ ^ 2 / 2) := by
@@ -199,14 +199,14 @@ theorem norm_fockEval_le (z : ℂ) (a : ℓ²(ℕ, ℂ)) :
     _ ≤ ‖fockEvalCLM z‖ * ‖a‖ := (fockEvalCLM z).le_opNorm a
     _ = ‖a‖ * Real.exp (‖z‖ ^ 2 / 2) := by rw [norm_fockEvalCLM, mul_comm]
 
-/-- **Fock-space evaluation at the origin is the constant coefficient.** Evaluation at `0` is the constant Taylor coefficient. -/
+/-- Evaluation at `0` is the constant Taylor coefficient. -/
 theorem fockEval_zero (a : ℓ²(ℕ, ℂ)) :
     fockEval (0 : ℂ) a = a 0 := by
   unfold fockEval
   rw [fockKernel_zero, lp.inner_single_left, RCLike.inner_apply']
   simp
 
-/-- **Fock-space evaluation of a single monomial.** Evaluation of a monomial `c * zⁿ / √(n!)` (a single Taylor
+/-- Evaluation of a monomial `c * zⁿ / √(n!)` (a single Taylor
 coefficient). -/
 theorem fockEval_single (z : ℂ) (n : ℕ) (c : ℂ) :
     fockEval z (lp.single 2 n c) = c * z ^ n / (Real.sqrt (Nat.factorial n : ℝ) : ℂ) := by
@@ -215,13 +215,13 @@ theorem fockEval_single (z : ℂ) (n : ℕ) (c : ℂ) :
     map_div₀, map_pow, RCLike.conj_conj, Complex.conj_ofReal]
   ring
 
-/-- **Conjugate reproducing property of the Fock kernel.** The reproducing property in the other order: `⟪a, k_z⟫ = conj (f(z))`. -/
+/-- The reproducing property in the other order: `⟪a, k_z⟫ = conj (f(z))`. -/
 theorem inner_fockKernel_right (z : ℂ) (a : ℓ²(ℕ, ℂ)) :
     ⟪a, fockKernel z⟫ = (starRingEnd ℂ) (fockEval z a) := by
   unfold fockEval
   rw [← inner_conj_symm]
 
-/-- **Inner product of two Fock kernels is an exponential.** The inner product of two Fock kernels is the Fock kernel function
+/-- The inner product of two Fock kernels is the Fock kernel function
 `Complex.exp (z * conj w)`. -/
 theorem inner_fockKernel_fockKernel (z w : ℂ) :
     ⟪fockKernel z, fockKernel w⟫ = Complex.exp (z * (starRingEnd ℂ w)) := by
@@ -239,13 +239,13 @@ theorem inner_fockKernel_fockKernel (z w : ℂ) :
   have hsum := NormedSpace.expSeries_div_hasSum_exp (z * (starRingEnd ℂ w))
   rw [hsum.tsum_eq, ← Complex.exp_eq_exp_ℂ]
 
-/-- **Modulus of the inner product of two Fock kernels.** The norm of the inner product of two Fock kernels is
+/-- The norm of the inner product of two Fock kernels is
 `Real.exp (z * conj w).re`. -/
 theorem norm_inner_fockKernel_fockKernel (z w : ℂ) :
     ‖⟪fockKernel z, fockKernel w⟫‖ = Real.exp (z * (starRingEnd ℂ w)).re := by
   rw [inner_fockKernel_fockKernel, Complex.norm_exp]
 
-/-- **Fock kernel evaluated at its own point.** Evaluation of the kernel at its own point: `f_z(k_z) = Real.exp ‖z‖²`,
+/-- Evaluation of the kernel at its own point: `f_z(k_z) = Real.exp ‖z‖²`,
 so the pointwise bound is sharp. -/
 theorem fockEval_fockKernel (z : ℂ) :
     fockEval z (fockKernel z) = ((Real.exp (‖z‖ ^ 2) : ℝ) : ℂ) := by
@@ -253,12 +253,12 @@ theorem fockEval_fockKernel (z : ℂ) :
   rw [inner_fockKernel_fockKernel, Complex.ofReal_exp, Complex.mul_conj,
     Complex.normSq_eq_norm_sq]
 
-/-- **Normalized monomials in the Fock space.** The normalized monomial `eₙ(z) = zⁿ / √(n!)`, represented by the `n`th
+/-- The normalized monomial `eₙ(z) = zⁿ / √(n!)`, represented by the `n`th
 standard basis vector in the Taylor-coefficient model of Fock space. -/
 @[reducible] noncomputable def fockMonomial (n : ℕ) : ℓ²(ℕ, ℂ) :=
   lp.single 2 n (1 : ℂ)
 
-/-- **Normalized Fock monomials are orthonormal standard basis vectors.** The rescaled monomials `eₙ(z) = zⁿ / √(n!)`, i.e. the standard basis
+/-- The rescaled monomials `eₙ(z) = zⁿ / √(n!)`, i.e. the standard basis
 vectors of the coefficient model, are orthonormal. -/
 theorem fockMonomial_orthonormal (m n : ℕ) :
     ⟪fockMonomial m, fockMonomial n⟫_ℂ =
@@ -269,29 +269,29 @@ theorem fockMonomial_orthonormal (m n : ℕ) :
     simp [Pi.single_eq_same]
   · simp [h]
 
-/-- **Normalized Fock monomials form an orthonormal family.** The normalized monomial family satisfies Mathlib's standard orthonormal predicate. -/
+/-- The normalized monomial family satisfies Mathlib's standard orthonormal predicate. -/
 theorem orthonormal_fockMonomial : Orthonormal ℂ fockMonomial :=
   orthonormal_iff_ite.mpr fockMonomial_orthonormal
 
-/-- **Fock coefficients as inner products with normalized monomials.** The coefficient of `a` at `n` is the inner product with `eₙ`. -/
+/-- The coefficient of `a` at `n` is the inner product with `eₙ`. -/
 theorem fockCoeff_eq_inner (a : ℓ²(ℕ, ℂ)) (n : ℕ) :
     a n = ⟪fockMonomial n, a⟫ := by
   rw [lp.inner_single_left, RCLike.inner_apply']
   simp
 
-/-- **Coherent state in the Fock space.** The **coherent state** at `z`: the normalized Fock kernel,
+/-- The **coherent state** at `z`: the normalized Fock kernel,
 `ĉ_z = Real.exp (-‖z‖² / 2) • k_z`. -/
 noncomputable def fockCoherent (z : ℂ) : ℓ²(ℕ, ℂ) :=
   ((Real.exp (-‖z‖ ^ 2 / 2) : ℝ) : ℂ) • fockKernel z
 
-/-- **Coherent states are unit vectors.** Coherent states are unit vectors. -/
+/-- Coherent states are unit vectors. -/
 theorem norm_fockCoherent (z : ℂ) : ‖fockCoherent z‖ = 1 := by
   unfold fockCoherent
   rw [norm_smul, Complex.norm_real, Real.norm_eq_abs,
     abs_of_pos (Real.exp_pos _), norm_fockKernel, ← Real.exp_add,
     show (-‖z‖ ^ 2 / 2 + ‖z‖ ^ 2 / 2 : ℝ) = 0 by ring, Real.exp_zero]
 
-/-- **Inner product of two coherent states.** The inner product of two coherent states. -/
+/-- The inner product of two coherent states. -/
 theorem inner_fockCoherent_fockCoherent (z w : ℂ) :
     ⟪fockCoherent z, fockCoherent w⟫ =
       Complex.exp (z * (starRingEnd ℂ w) -
@@ -305,7 +305,7 @@ theorem inner_fockCoherent_fockCoherent (z w : ℂ) :
   push_cast
   ring
 
-/-- **Gaussian overlap of coherent states.** The overlap of two coherent states is Gaussian:
+/-- The overlap of two coherent states is Gaussian:
 `‖⟪ĉ_z, ĉ_w⟫‖ = Real.exp (-‖z - w‖² / 2)`. -/
 theorem norm_inner_fockCoherent_fockCoherent (z w : ℂ) :
     ‖⟪fockCoherent z, fockCoherent w⟫‖ = Real.exp (-‖z - w‖ ^ 2 / 2) := by

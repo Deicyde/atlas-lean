@@ -71,7 +71,7 @@ namespace MathlibExt.Biology.StatisticalGenetics.DominanceLD
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
-/-- **Two-locus diploid genotype under random union of gametes.** A diploid two-locus genotype under random union of gametes: the haplotypes
+/-- A diploid two-locus genotype under random union of gametes: the haplotypes
 `(X₁, Y₁)` and `(X₂, Y₂)` are independent and identically distributed, with square-integrable
 allele codings. -/
 structure RandomUnion (P : Measure Ω) where
@@ -96,31 +96,31 @@ namespace RandomUnion
 
 variable {P : Measure Ω} [IsProbabilityMeasure P] (G : RandomUnion P)
 
-/-- **Allele frequency at the first locus.** The allele frequency (mean coding) `p = E X₁` at locus `A`. -/
+/-- The allele frequency (mean coding) `p = E X₁` at locus `A`. -/
 noncomputable def freqA : ℝ := ∫ ω, G.x1 ω ∂P
 
-/-- **Allele frequency at the second locus.** The allele frequency (mean coding) `q = E Y₁` at locus `B`. -/
+/-- The allele frequency (mean coding) `q = E Y₁` at locus `B`. -/
 noncomputable def freqB : ℝ := ∫ ω, G.y1 ω ∂P
 
-/-- **Haplotype variance at the first locus.** The haplotype variance `V_A = E (X₁ - p)²` at locus `A`. -/
+/-- The haplotype variance `V_A = E (X₁ - p)²` at locus `A`. -/
 noncomputable def varA : ℝ := ∫ ω, (G.x1 ω - G.freqA) ^ 2 ∂P
 
-/-- **Haplotype variance at the second locus.** The haplotype variance `V_B = E (Y₁ - q)²` at locus `B`. -/
+/-- The haplotype variance `V_B = E (Y₁ - q)²` at locus `B`. -/
 noncomputable def varB : ℝ := ∫ ω, (G.y1 ω - G.freqB) ^ 2 ∂P
 
-/-- **Gametic linkage disequilibrium.** The gametic linkage disequilibrium `D = E (X₁ - p) (Y₁ - q)`. -/
+/-- The gametic linkage disequilibrium `D = E (X₁ - p) (Y₁ - q)`. -/
 noncomputable def ldD : ℝ := ∫ ω, (G.x1 ω - G.freqA) * (G.y1 ω - G.freqB) ∂P
 
-/-- **Additive coding at the first locus.** The additive coding `a_A = (X₁ - p) + (X₂ - p)` (centred allele count) at locus `A`. -/
+/-- The additive coding `a_A = (X₁ - p) + (X₂ - p)` (centred allele count) at locus `A`. -/
 noncomputable def addA (ω : Ω) : ℝ := (G.x1 ω - G.freqA) + (G.x2 ω - G.freqA)
 
-/-- **Additive coding at the second locus.** The additive coding `a_B = (Y₁ - q) + (Y₂ - q)` at locus `B`. -/
+/-- The additive coding `a_B = (Y₁ - q) + (Y₂ - q)` at locus `B`. -/
 noncomputable def addB (ω : Ω) : ℝ := (G.y1 ω - G.freqB) + (G.y2 ω - G.freqB)
 
-/-- **Dominance coding at the first locus.** The dominance coding `d_A = (X₁ - p) (X₂ - p)` at locus `A`. -/
+/-- The dominance coding `d_A = (X₁ - p) (X₂ - p)` at locus `A`. -/
 noncomputable def domA (ω : Ω) : ℝ := (G.x1 ω - G.freqA) * (G.x2 ω - G.freqA)
 
-/-- **Dominance coding at the second locus.** The dominance coding `d_B = (Y₁ - q) (Y₂ - q)` at locus `B`. -/
+/-- The dominance coding `d_B = (Y₁ - q) (Y₂ - q)` at locus `B`. -/
 noncomputable def domB (ω : Ω) : ℝ := (G.y1 ω - G.freqB) * (G.y2 ω - G.freqB)
 
 private theorem integral_transfer
@@ -250,7 +250,7 @@ private theorem integral_dom_sq
       (∫ ω, f (G.x1 ω, G.y1 ω) ^ 2 ∂P) ^ 2 := by
   simpa only [pow_two] using G.integral_dom_mul hf hf
 
-/-- **Additive linkage disequilibrium is twice the gametic one.** Additive LD: `E(a_A a_B) = 2 D`. -/
+/-- Additive LD: `E(a_A a_B) = 2 D`. -/
 theorem integral_addA_mul_addB : ∫ ω, G.addA ω * G.addB ω ∂P = 2 * G.ldD := by
   simpa only [addA, addB, ldD] using
     G.integral_add_mul
@@ -263,7 +263,7 @@ theorem integral_addA_mul_addB : ∫ ω, G.addA ω * G.addB ω ∂P = 2 * G.ldD 
       (integral_centered G.memLp_x1) (integral_centered G.memLp_y1)
 
 
-/-- **Second moment of the additive coding at the first locus.** The additive coding has second moment `E(a_A²) = 2 V_A`. -/
+/-- The additive coding has second moment `E(a_A²) = 2 V_A`. -/
 theorem integral_addA_sq : ∫ ω, G.addA ω ^ 2 ∂P = 2 * G.varA := by
   simpa only [addA, varA] using
     G.integral_add_sq (f := fun z => z.1 - G.freqA)
@@ -273,7 +273,7 @@ theorem integral_addA_sq : ∫ ω, G.addA ω ^ 2 ∂P = 2 * G.varA := by
       (integral_centered G.memLp_x1)
 
 
-/-- **Second moment of the additive coding at the second locus.** The additive coding has second moment `E(a_B²) = 2 V_B`. -/
+/-- The additive coding has second moment `E(a_B²) = 2 V_B`. -/
 theorem integral_addB_sq : ∫ ω, G.addB ω ^ 2 ∂P = 2 * G.varB := by
   simpa only [addB, varB] using
     G.integral_add_sq (f := fun z => z.2 - G.freqB)
@@ -284,7 +284,7 @@ theorem integral_addB_sq : ∫ ω, G.addB ω ^ 2 ∂P = 2 * G.varB := by
 
 
 omit [IsProbabilityMeasure P] in
-/-- **Dominance linkage disequilibrium is the square of the gametic one.** Dominance LD: `E(d_A d_B) = D²`. -/
+/-- Dominance LD: `E(d_A d_B) = D²`. -/
 theorem integral_domA_mul_domB : ∫ ω, G.domA ω * G.domB ω ∂P = G.ldD ^ 2 := by
   simpa only [domA, domB, ldD] using
     G.integral_dom_mul
@@ -293,7 +293,7 @@ theorem integral_domA_mul_domB : ∫ ω, G.domA ω * G.domB ω ∂P = G.ldD ^ 2 
 
 
 omit [IsProbabilityMeasure P] in
-/-- **Second moment of the dominance coding at the first locus.** The dominance coding has second moment `E(d_A²) = V_A²`. -/
+/-- The dominance coding has second moment `E(d_A²) = V_A²`. -/
 theorem integral_domA_sq : ∫ ω, G.domA ω ^ 2 ∂P = G.varA ^ 2 := by
   simpa only [domA, varA] using
     G.integral_dom_sq (f := fun z => z.1 - G.freqA)
@@ -301,14 +301,14 @@ theorem integral_domA_sq : ∫ ω, G.domA ω ^ 2 ∂P = G.varA ^ 2 := by
 
 
 omit [IsProbabilityMeasure P] in
-/-- **Second moment of the dominance coding at the second locus.** The dominance coding has second moment `E(d_B²) = V_B²`. -/
+/-- The dominance coding has second moment `E(d_B²) = V_B²`. -/
 theorem integral_domB_sq : ∫ ω, G.domB ω ^ 2 ∂P = G.varB ^ 2 := by
   simpa only [domB, varB] using
     G.integral_dom_sq (f := fun z => z.2 - G.freqB)
       (measurable_snd.sub measurable_const)
 
 
-/-- **Additive and dominance codings at different loci are uncorrelated.** The additive coding at `A` and the dominance coding at `B` are uncorrelated:
+/-- The additive coding at `A` and the dominance coding at `B` are uncorrelated:
 `E(a_A d_B) = 0`. -/
 theorem integral_addA_mul_domB : ∫ ω, G.addA ω * G.domB ω ∂P = 0 := by
   simpa only [addA, domB] using
@@ -328,7 +328,7 @@ private theorem varA_nonneg : 0 ≤ G.varA := integral_nonneg fun _ => sq_nonneg
 omit [IsProbabilityMeasure P] in
 private theorem varB_nonneg : 0 ≤ G.varB := integral_nonneg fun _ => sq_nonneg _
 
-/-- **Correlation of additive codings equals the gametic correlation.** The correlation of the additive codings is the gametic correlation
+/-- The correlation of the additive codings is the gametic correlation
 `r = D / √(V_A V_B)`. -/
 theorem addCorr_eq :
     (∫ ω, G.addA ω * G.addB ω ∂P) /
@@ -353,13 +353,13 @@ theorem domCorr_eq_addCorr_sq :
 
 end RandomUnion
 
-/-- **Dominance encoding of a biallelic genotype.** The dominance encoding of a biallelic genotype `g ∈ {0, 1, 2}` (count of the allele with
+/-- The dominance encoding of a biallelic genotype `g ∈ {0, 1, 2}` (count of the allele with
 frequency `p`): `p²`, `-p (1 - p)`, `(1 - p)²`. Dividing by `-p (1 - p)` gives the encoding
 `-p / (1 - p)`, `1`, `-(1 - p) / p` of Palmer et al. (2023). -/
 noncomputable def dominanceEncoding (p g : ℝ) : ℝ :=
   if g = 0 then p ^ 2 else if g = 1 then -(p * (1 - p)) else (1 - p) ^ 2
 
-/-- **Dominance coding of allele indicators equals the dominance encoding.** For `0`/`1` allele indicators the dominance coding `(X₁ - p) (X₂ - p)` depends only on the
+/-- For `0`/`1` allele indicators the dominance coding `(X₁ - p) (X₂ - p)` depends only on the
 genotype `X₁ + X₂` and equals its dominance encoding. -/
 theorem domCode_eq_dominanceEncoding {x1 x2 : ℝ} (h1 : x1 = 0 ∨ x1 = 1) (h2 : x2 = 0 ∨ x2 = 1)
     (p : ℝ) : (x1 - p) * (x2 - p) = dominanceEncoding p (x1 + x2) := by

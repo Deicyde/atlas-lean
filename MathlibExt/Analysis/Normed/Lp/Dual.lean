@@ -266,14 +266,14 @@ section Pairing
 variable {ι : Type*} {𝕜 : Type*} [RCLike 𝕜] {p q : ℝ≥0∞} [Fact (1 ≤ p)] [Fact (1 ≤ q)]
   [p.HolderConjugate q]
 
-/-- **Canonical duality pairing between $\ell^q$ and $\ell^p$.** The canonical pairing `ℓ^q × ℓ^p → 𝕜`, as a continuous linear map
+/-- The canonical pairing `ℓ^q × ℓ^p → 𝕜`, as a continuous linear map
 `ℓ^q →L[𝕜] (ℓ^p →L[𝕜] 𝕜)`. -/
 noncomputable def lpDualPairing :
     lp (fun _ : ι => 𝕜) q →L[𝕜] StrongDual 𝕜 (lp (fun _ : ι => 𝕜) p) := by
   exact lp.dualPairing (K := 1) q p (fun _ => ContinuousLinearMap.mul 𝕜 𝕜)
     (fun _ => by rw [NNReal.coe_one]; exact ContinuousLinearMap.opNorm_mul_le 𝕜 𝕜)
 
-/-- **Duality pairing as a sum of coordinatewise products.** The pairing is given by the sum of coordinatewise products. -/
+/-- The pairing is given by the sum of coordinatewise products. -/
 theorem lpDualPairing_apply (a : lp (fun _ : ι => 𝕜) q)
     (x : lp (fun _ : ι => 𝕜) p) :
     lpDualPairing (𝕜 := 𝕜) (ι := ι) (p := p) (q := q) a x = ∑' i, a i * x i := by
@@ -286,7 +286,7 @@ theorem lpDualPairing_apply (a : lp (fun _ : ι => 𝕜) q)
     simp [ContinuousLinearMap.mul_apply']
   exact h
 
-/-- **Duality pairing has operator norm at most one.** The pairing has operator norm at most one. -/
+/-- The pairing has operator norm at most one. -/
 theorem norm_lpDualPairing_le :
     ‖lpDualPairing (𝕜 := 𝕜) (ι := ι) (p := p) (q := q)‖ ≤ 1 := by
   classical
@@ -296,7 +296,7 @@ theorem norm_lpDualPairing_le :
       (fun _ => by rw [NNReal.coe_one]; exact ContinuousLinearMap.opNorm_mul_le 𝕜 𝕜)
   exact_mod_cast h
 
-/-- **Every functional on $\ell^p$ comes from an $\ell^q$ sequence.** The pairing is surjective: every continuous linear functional on `ℓ^p` is given
+/-- The pairing is surjective: every continuous linear functional on `ℓ^p` is given
 by pairing with some `ℓ^q` sequence. -/
 theorem lpDualPairing_surjective (hp_top : p ≠ ⊤) :
     Function.Surjective (lpDualPairing (𝕜 := 𝕜) (ι := ι) (p := p) (q := q)) := by
@@ -330,7 +330,7 @@ theorem lpDualPairing_surjective (hp_top : p ≠ ⊤) :
         rw [ContinuousLinearMap.comp_apply, lp.singleContinuousLinearMap_apply, hsmul,
           map_smul]
 
-/-- **Duality pairing is norm-preserving.** The pairing is norm-preserving. -/
+/-- The pairing is norm-preserving. -/
 theorem lpDualPairing_norm (hp_top : p ≠ ⊤) (a : lp (fun _ : ι => 𝕜) q) :
     ‖lpDualPairing (𝕜 := 𝕜) (ι := ι) (p := p) (q := q) a‖ = ‖a‖ := by
   classical
@@ -355,7 +355,7 @@ theorem lpDualPairing_norm (hp_top : p ≠ ⊤) (a : lp (fun _ : ι => 𝕜) q) 
     rw [hba] at hbnorm
     exact hbnorm
 
-/-- **Dual of $\ell^p$ is isometric to $\ell^q$.** The dual of `ℓ^p` is isometrically isomorphic to `ℓ^q`. -/
+/-- The dual of `ℓ^p` is isometrically isomorphic to `ℓ^q`. -/
 noncomputable def lpDualEquiv (hp_top : p ≠ ⊤) :
     lp (fun _ : ι => 𝕜) q ≃ₗᵢ[𝕜] StrongDual 𝕜 (lp (fun _ : ι => 𝕜) p) := by
   classical

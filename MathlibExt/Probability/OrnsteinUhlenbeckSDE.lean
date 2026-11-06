@@ -110,7 +110,7 @@ private theorem IsGaussianProcess.of_sum_increments {Ω : Type*} {mΩ : Measurab
   exact (Finset.sum_attach (Finset.range (n s))
     (fun k ↦ c s k * (X (τ s (k + 1)) ω - X (τ s k) ω))).symm
 
-/-- **Elementary Itô integrals agree for modifications.** Elementary Itô integrals against two modifications of the same process agree almost
+/-- Elementary Itô integrals against two modifications of the same process agree almost
 surely. -/
 theorem ElementaryIntegrand.itoIntegral_ae_eq_of_ae_eq {Ω : Type*} {mΩ : MeasurableSpace Ω}
     {F : Filtration ℝ≥0 mΩ} {P : Measure Ω} (H : ElementaryIntegrand F) {B B' : ℝ≥0 → Ω → ℝ}

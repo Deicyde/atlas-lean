@@ -86,21 +86,13 @@ def chapter8PhiTerm (x : ℂ) (j : ℕ) : ℂ :=
 def chapter8Phi (x : ℂ) : ℂ :=
   1 + ∑' j : ℕ, chapter8PhiTerm x j
 
-/-- **Digamma as the logarithmic derivative of Gamma (used for Chapter 8, Entry 11).** For every
-complex number $z$, $\Gamma'(z)/\Gamma(z) = \psi(z)$, where $\psi$ is the digamma function.
-
-At the poles $z = 0, -1, -2, \dots$ the conventions $\Gamma(z) = 0$ and division by zero giving
-$0$ make both sides $0$, so the identity holds for every $z$. -/
+/-- The wishlist digamma is the canonical `Complex.digamma`. -/
 theorem chapter8Digamma_eq_digamma (z : ℂ) :
     chapter8Digamma z = Complex.digamma z := by
   unfold chapter8Digamma
   rw [Complex.digamma_def, logDeriv_apply]
 
-/-- **The Entry 11 and Entry 12 series terms agree.** For every complex number $x$ and every
-natural number $j$, with $k = j + 1$, the term $\frac{2}{(kx)^3 - kx}$ as defined for Entry 11
-equals the term given by the same formula for Entry 12.
-
-In both definitions a term with zero denominator is $0$. -/
+/-- Entry 11's `chapter8PhiTerm` agrees with Entry 12's version. -/
 theorem chapter8PhiTerm_eq_entry12Qgammaintegers (x : ℂ) (j : ℕ) :
     chapter8PhiTerm x j =
       MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry12Qgammaintegers.chapter8PhiTerm x j := by
@@ -108,12 +100,7 @@ theorem chapter8PhiTerm_eq_entry12Qgammaintegers (x : ℂ) (j : ℕ) :
     MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry12Qgammaintegers.chapter8PhiTerm
   rfl
 
-/-- **The Entry 11 and Entry 12 definitions of $\varphi$ agree.** For every complex number $x$,
-the function $\varphi(x) = 1 + \sum_{k \ge 1} \frac{2}{(kx)^3 - kx}$ as defined for Entry 11
-equals the function given by the same formula for Entry 12.
-
-In both definitions the sum is the unconditional sum, taken to be $0$ when it does not converge,
-and a term with zero denominator is $0$. -/
+/-- Entry 11's `chapter8Phi` agrees with Entry 12's version. -/
 theorem chapter8Phi_eq_entry12Qgammaintegers (x : ℂ) :
     chapter8Phi x =
       MathlibExt.Analysis.Ramanujan.Part1Ch8.Entry12Qgammaintegers.chapter8Phi x := by
@@ -756,13 +743,7 @@ private lemma digTerm_add_eq_phi (x : ℂ) (hx0 : x ≠ 0)
   simp only [digTerm, chapter8PhiTerm]
   exact hgen
 
-/-- **Chapter 8, Entry 11 in terms of the digamma function.** Let $x$ be a nonzero complex number
-with $x \ne 1/k$ and $x \ne -1/k$ for every positive integer $k$, and put
-$\varphi(x) = 1 + \sum_{k \ge 1} \frac{2}{(kx)^3 - kx}$. Then the series
-$\sum_{k \ge 1} \frac{2}{(kx)^3 - kx}$ converges unconditionally, $\Gamma(1/x) \ne 0$,
-$\Gamma(1 - 1/x) \ne 0$, and
-$$\psi(1/x) + \psi(1 - 1/x) = -2\gamma - x\,\varphi(x),$$
-where $\psi$ is the digamma function and $\gamma$ is the Euler–Mascheroni constant. -/
+/-- Canonical `Complex.digamma` form of Entry 11's functional equation. -/
 theorem ramanujan_part1_ch8_entry11_qgammafunctional_digamma
     (x : ℂ) (hx0 : x ≠ 0)
     (hpoles : ∀ k : ℕ,
@@ -812,16 +793,9 @@ theorem ramanujan_part1_ch8_entry11_qgammafunctional_digamma
     rw [hRec, hneg_eq, hz_inv] at hEq2
     linear_combination hEq2
 
-/-- **Ramanujan's identity for $\Gamma'/\Gamma$ at $1/x$ and $1 - 1/x$ (Chapter 8, Entry 11).**
-Let $x$ be a nonzero complex number with $x \ne 1/k$ and $x \ne -1/k$ for every positive integer
-$k$, and put $\varphi(x) = 1 + \sum_{k \ge 1} \frac{2}{(kx)^3 - kx}$. Then the series
-$\sum_{k \ge 1} \frac{2}{(kx)^3 - kx}$ converges unconditionally, $\Gamma(1/x) \ne 0$,
-$\Gamma(1 - 1/x) \ne 0$, and
-$$\frac{\Gamma'(1/x)}{\Gamma(1/x)} + \frac{\Gamma'(1 - 1/x)}{\Gamma(1 - 1/x)} =
--2\gamma - x\,\varphi(x),$$
-where $\gamma$ is the Euler–Mascheroni constant.
+/-- Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
 
-Source: Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 8.
+Proves `Wanted` entry `ramanujan_part1_ch8_entry11_qgammafunctional`.
 -/
 theorem ramanujan_part1_ch8_entry11_qgammafunctional
     (x : ℂ) (hx0 : x ≠ 0)

@@ -61,7 +61,7 @@ open Kingman BirkhoffAE
 
 variable {α : Type*} [MeasurableSpace α] {μ : Measure α} {T : α → α} {X : ℕ → α → ℝ}
 
-/-- **Cocycle inequality holds for all indices almost everywhere.** The cocycle inequality holds for all `m, n` simultaneously, almost everywhere. -/
+/-- The cocycle inequality holds for all `m, n` simultaneously, almost everywhere. -/
 theorem ae_all_subadditive (h : SubadditiveCocycle T μ X) :
     ∀ᵐ x ∂μ, ∀ m n, X (m + n) x ≤ X m x + X n (T^[m] x) := by
   rw [ae_all_iff]
@@ -70,7 +70,7 @@ theorem ae_all_subadditive (h : SubadditiveCocycle T μ X) :
   intro n
   exact h.subadditive m n
 
-/-- **Block decomposition bound for a subadditive cocycle.** Block decomposition: `X (q k) ≤ ∑_{j<q} X k ∘ T^{j k}` almost everywhere. -/
+/-- Block decomposition: `X (q k) ≤ ∑_{j<q} X k ∘ T^{j k}` almost everywhere. -/
 theorem ae_le_block_birkhoffSum (h : SubadditiveCocycle T μ X) :
     ∀ᵐ x ∂μ, ∀ k q, 1 ≤ q → X (q * k) x ≤ birkhoffSum (T^[k]) (X k) q x := by
   filter_upwards [ae_all_subadditive h] with x hx
@@ -95,7 +95,7 @@ theorem ae_le_block_birkhoffSum (h : SubadditiveCocycle T μ X) :
 
 variable [IsFiniteMeasure μ]
 
-/-- **Integrable function along an orbit divided by time tends to zero.** For integrable `g`, `g (T^[m] x) / m → 0` almost everywhere. -/
+/-- For integrable `g`, `g (T^[m] x) / m → 0` almost everywhere. -/
 theorem tendsto_comp_div_atTop (hT : MeasurePreserving T μ μ) {g : α → ℝ}
     (hg : Integrable g μ) :
     ∀ᵐ x ∂μ, Tendsto (fun m : ℕ => g (T^[m] x) / m) atTop (𝓝 0) := by
@@ -175,7 +175,7 @@ theorem tendsto_natDiv_div_atTop {k : ℕ} (hk : 1 ≤ k) :
   · simp [hn]
   · field_simp
 
-/-- **Dominating function for remainder terms in Kingman's theorem.** The integrable dominating function `∑_{r<k} (X r)⁺` for the remainder terms `X r`, `r < k`. -/
+/-- The integrable dominating function `∑_{r<k} (X r)⁺` for the remainder terms `X r`, `r < k`. -/
 noncomputable def remDom (X : ℕ → α → ℝ) (k : ℕ) (y : α) : ℝ :=
   ∑ r ∈ Finset.range k, (X r y)⁺
 
@@ -195,7 +195,7 @@ theorem le_remDom (X : ℕ → α → ℝ) {k r : ℕ} (hr : r < k) (y : α) : X
         Finset.single_le_sum (f := fun s => (X s y)⁺) (fun i _ => by positivity)
           (Finset.mem_range.mpr hr)
 
-/-- **Upper limit of a cocycle bounded by Birkhoff limits of blocks.** For each `k ≥ 1`, `limsup X n / n ≤ birkhoffLimit (T^[k]) (X k) / k` almost everywhere. -/
+/-- For each `k ≥ 1`, `limsup X n / n ≤ birkhoffLimit (T^[k]) (X k) / k` almost everywhere. -/
 theorem gStar_le (h : SubadditiveCocycle T μ X) {k : ℕ} (hk : 1 ≤ k) :
     ∀ᵐ x ∂μ, limsup (fun n => ((X n x / n : ℝ) : EReal)) atTop
       ≤ ((birkhoffLimit (T^[k]) (X k) x / k : ℝ) : EReal) := by
@@ -275,13 +275,13 @@ theorem gStar_le (h : SubadditiveCocycle T μ X) {k : ℕ} (hk : 1 ≤ k) :
   rw [h2.limsup_eq] at h1
   exact h1
 
-/-- **Upper limit of a normalized subadditive cocycle.** The upper limit `limsup_n X n x / n` in `EReal`. The map `T` is a parameter only so that
+/-- The upper limit `limsup_n X n x / n` in `EReal`. The map `T` is a parameter only so that
 the notation records the cocycle's base map. -/
 @[nolint unusedArguments]
 noncomputable def gStar (_T : α → α) (X : ℕ → α → ℝ) (x : α) : EReal :=
   limsup (fun n => ((X n x / n : ℝ) : EReal)) atTop
 
-/-- **Lower limit of a normalized subadditive cocycle.** The lower limit `liminf_n X n x / n` in `EReal`. -/
+/-- The lower limit `liminf_n X n x / n` in `EReal`. -/
 @[nolint unusedArguments]
 noncomputable def gStarLow (_T : α → α) (X : ℕ → α → ℝ) (x : α) : EReal :=
   liminf (fun n => ((X n x / n : ℝ) : EReal)) atTop
@@ -352,7 +352,7 @@ theorem gStar_le_comp (h : SubadditiveCocycle T μ X) :
     rw [hcast] at key
     exact key
 
-/-- **Upper limit of a normalized cocycle is finite almost everywhere.** `limsup X n / n < ⊤` almost everywhere. -/
+/-- `limsup X n / n < ⊤` almost everywhere. -/
 theorem gStar_lt_top_ae (h : SubadditiveCocycle T μ X) : ∀ᵐ x ∂μ, gStar T X x < ⊤ := by
   filter_upwards [gStar_le h (k := 1) le_rfl] with x hx
   exact lt_of_le_of_lt hx (EReal.coe_lt_top _)
@@ -362,11 +362,11 @@ theorem gStar_le_birkhoffLimit_one (h : SubadditiveCocycle T μ X) :
   filter_upwards [gStar_le h (k := 1) le_rfl] with x hx
   simpa [gStar] using hx
 
-/-- **Kingman limit of a subadditive cocycle.** The limit `lim X n / n` in Kingman's theorem, defined as `limsup X n / n` cast to `ℝ` (so it is
+/-- The limit `lim X n / n` in Kingman's theorem, defined as `limsup X n / n` cast to `ℝ` (so it is
 `0` where the `limsup` is infinite). -/
 noncomputable def kingmanLimit (T : α → α) (X : ℕ → α → ℝ) (x : α) : ℝ := (gStar T X x).toReal
 
-/-- **Almost-everywhere convergence to the Kingman limit.** If `g* ≤ g_*` and `g* > ⊥` almost everywhere, then `X n / n → kingmanLimit` almost
+/-- If `g* ≤ g_*` and `g* > ⊥` almost everywhere, then `X n / n → kingmanLimit` almost
 everywhere. -/
 theorem tendsto_div_kingmanLimit_ae (h : SubadditiveCocycle T μ X)
     (heq : ∀ᵐ x ∂μ, gStar T X x ≤ gStarLow T X x)
@@ -426,7 +426,7 @@ theorem limit_le_comp_of_tendsto (h : SubadditiveCocycle T μ X) {ℓ : α → �
     linarith
   exact le_of_tendsto_of_tendsto hL hR hle
 
-/-- **Invariance of the Kingman limit.** Under the hypotheses of `tendsto_div_kingmanLimit_ae` and integrability of the limit, the
+/-- Under the hypotheses of `tendsto_div_kingmanLimit_ae` and integrability of the limit, the
 limit is `T`-invariant almost everywhere. -/
 theorem kingmanLimit_comp_ae (h : SubadditiveCocycle T μ X)
     (heq : ∀ᵐ x ∂μ, gStar T X x ≤ gStarLow T X x)
@@ -489,7 +489,7 @@ theorem kingmanLimit_le_birkhoffLimit_ae (h : SubadditiveCocycle T μ X)
   have hmono := EReal.toReal_le_toReal hx hbot htop
   simpa [kingmanLimit, gStar] using hmono
 
-/-- **Integrability of the Kingman limit for nonnegative cocycles.** For a nonnegative cocycle, `kingmanLimit` is integrable. -/
+/-- For a nonnegative cocycle, `kingmanLimit` is integrable. -/
 theorem integrable_kingmanLimit (h : SubadditiveCocycle T μ X) (hnn : ∀ n, 0 ≤ᵐ[μ] X n) :
     Integrable (kingmanLimit T X) μ := by
   have hTk : MeasurePreserving (T^[1]) μ μ := h.measurePreserving.iterate 1
@@ -520,7 +520,7 @@ theorem integral_kingmanLimit_le_div (h : SubadditiveCocycle T μ X) (hnn : ∀ 
     _ = (∫ x, birkhoffLimit (T^[k]) (X k) x ∂μ) / k := integral_div _ _
     _ = (∫ x, X k x ∂μ) / k := by rw [integral_birkhoffLimit_block h k]
 
-/-- **Integral of the Kingman limit is at most the time constant.** For a nonnegative cocycle, `∫ kingmanLimit ≤ gamma`. -/
+/-- For a nonnegative cocycle, `∫ kingmanLimit ≤ gamma`. -/
 theorem integral_kingmanLimit_le_gamma (h : SubadditiveCocycle T μ X) (hnn : ∀ n, 0 ≤ᵐ[μ] X n) :
     (∫ x, kingmanLimit T X x ∂μ) ≤ SubadditiveCocycle.gamma h := by
   unfold SubadditiveCocycle.gamma Subadditive.lim

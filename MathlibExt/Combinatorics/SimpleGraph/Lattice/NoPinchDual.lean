@@ -42,16 +42,16 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Lower left corner of a face $f$.** The lower left corner of the face `f`. This is `StatMech.Lattice.faceCorner00 (f 0) (f 1)`. -/
+/-- The lower left corner of the face `f`. This is `StatMech.Lattice.faceCorner00 (f 0) (f 1)`. -/
 def npd_P00 (f : Site 2) : Site 2 := ![f 0, f 1]
 
-/-- **Lower right corner of a face $f$.** The lower right corner of the face `f`. -/
+/-- The lower right corner of the face `f`. -/
 def npd_P10 (f : Site 2) : Site 2 := ![f 0 + 1, f 1]
 
-/-- **Upper right corner of a face $f$.** The upper right corner of the face `f`. -/
+/-- The upper right corner of the face `f`. -/
 def npd_P11 (f : Site 2) : Site 2 := ![f 0 + 1, f 1 + 1]
 
-/-- **Upper left corner of a face $f$.** The upper left corner of the face `f`. -/
+/-- The upper left corner of the face `f`. -/
 def npd_P01 (f : Site 2) : Site 2 := ![f 0, f 1 + 1]
 
 theorem npd_corners_right {K : Set (Site 2)} {e : Dart} (he : IsBoundaryDart K e)
@@ -93,7 +93,7 @@ theorem npd_corners_down {K : Set (Site 2)} {e : Dart} (he : IsBoundaryDart K e)
     funext i; fin_cases i <;> simp
   exact ⟨htail ▸ he.1, hhead ▸ he.2⟩
 
-/-- **Diagonal touch at a face.** `K` contains exactly two opposite corners of the face `f`. -/
+/-- `K` contains exactly two opposite corners of the face `f`. -/
 def npd_DiagTouch (K : Set (Site 2)) (f : Site 2) : Prop :=
   (npd_P00 f ∈ K ∧ npd_P11 f ∈ K ∧ npd_P10 f ∉ K ∧ npd_P01 f ∉ K) ∨
   (npd_P10 f ∈ K ∧ npd_P01 f ∈ K ∧ npd_P00 f ∉ K ∧ npd_P11 f ∉ K)
@@ -133,7 +133,7 @@ theorem npd_dart_eq_of_noDiagTouch {K : Set (Site 2)} {e₁ e₂ : Dart}
     e₁ = e₂ :=
   dartFace_eq_of_dir_eq (npd_noPinch_local_of_noDiagTouch he₁ he₂ hface hnt) hface
 
-/-- **No diagonal touch along a boundary orbit.** No face visited in one period of the orbit of `a` is a diagonal touch of `K`. -/
+/-- No face visited in one period of the orbit of `a` is a diagonal touch of `K`. -/
 def npd_NoDiagTouchAlongOrbit (K : Set (Site 2)) (a : {e : Dart // IsBoundaryDart K e}) : Prop :=
   ∀ k ∈ Set.Iio (dartOrbitPeriod K a), ¬ npd_DiagTouch K (dartFace ((dartNext K)^[k] a.1))
 
@@ -150,7 +150,7 @@ theorem npd_orbitFace_injOn_of_noDiagTouch (K : Set (Site 2))
     Set.InjOn (fun k => dartFace ((dartNext K)^[k] a.1)) (Set.Iio (dartOrbitPeriod K a)) :=
   orbitFace_injOn_of_noPinch K a (npd_orbitFaceNoPinch_of_noDiagTouch K a h)
 
-/-- **Set with no diagonal touches.** `K` has no diagonal touch at any face. -/
+/-- `K` has no diagonal touch at any face. -/
 def npd_NoDiagTouch (K : Set (Site 2)) : Prop := ∀ f : Site 2, ¬ npd_DiagTouch K f
 
 theorem npd_noDiagTouchAlongOrbit_of_global {K : Set (Site 2)} (h : npd_NoDiagTouch K)

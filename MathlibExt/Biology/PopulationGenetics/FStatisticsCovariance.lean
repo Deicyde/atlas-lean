@@ -72,10 +72,10 @@ section Covariance
 
 variable {Ω P : Type*} {m : MeasurableSpace Ω} [Fintype P]
 
-/-- **Mean frequency across populations.** The mean frequency `p̄ ω = (1 / n) ∑ X, p X ω` across the `n` populations. -/
+/-- The mean frequency `p̄ ω = (1 / n) ∑ X, p X ω` across the `n` populations. -/
 noncomputable def popMean (p : P → Ω → ℝ) (ω : Ω) : ℝ := (∑ X, p X ω) / Fintype.card P
 
-/-- **Centred leaf covariance.** The centred leaf covariance `K X Y = 𝔼[(p X - p̄) * (p Y - p̄)]`: the second moments of the
+/-- The centred leaf covariance `K X Y = 𝔼[(p X - p̄) * (p Y - p̄)]`: the second moments of the
 frequencies centred across populations (not over `Ω`). -/
 noncomputable def centredCov (μ : Measure Ω) (p : P → Ω → ℝ) (X Y : P) : ℝ :=
   ∫ ω, (p X ω - popMean p ω) * (p Y ω - popMean p ω) ∂μ
@@ -113,7 +113,7 @@ private theorem sum_centredCov (hp : ∀ X, MemLp (p X) 2 μ) (X : P) :
       nsmul_eq_mul, popMean, mul_div_cancel₀ _ hn, sub_self, mul_zero]
   simp_rw [h0, integral_zero]
 
-/-- **f2 from the centred leaf covariance.** `f2` from the centred leaf covariance: `f2 X Y = K X X + K Y Y - 2 K X Y`. -/
+/-- `f2` from the centred leaf covariance: `f2 X Y = K X X + K Y Y - 2 K X Y`. -/
 theorem f2_eq_centredCov (hp : ∀ X, MemLp (p X) 2 μ) (X Y : P) :
     f2 μ p X Y = centredCov μ p X X + centredCov μ p Y Y - 2 * centredCov μ p X Y := by
   unfold f2 centredCov
@@ -128,7 +128,7 @@ theorem f2_eq_centredCov (hp : ∀ X, MemLp (p X) 2 μ) (X Y : P) :
   rw [integral_sub i1 ((integrable_centred hp X Y).const_mul 2),
     integral_add (integrable_centred hp X X) (integrable_centred hp Y Y), integral_const_mul]
 
-/-- **Centred leaf covariance as the double centring of f2.** The centred leaf covariance from `f2`: `K` is half the double centring of the `f2` matrix,
+/-- The centred leaf covariance from `f2`: `K` is half the double centring of the `f2` matrix,
 `K X Y = (f̄2 X· + f̄2 ·Y - f2 X Y - f̄2 ··) / 2`. -/
 theorem centredCov_eq_doubleCenter_f2 (hp : ∀ X, MemLp (p X) 2 μ) (X Y : P) :
     centredCov μ p X Y = doubleCenter (f2 μ p) X Y / 2 := by
@@ -160,7 +160,7 @@ theorem centredCov_eq_doubleCenter_f2 (hp : ∀ X, MemLp (p X) 2 μ) (X Y : P) :
   field_simp
   ring
 
-/-- **f-statistics determine exactly the centred leaf covariance.** f-statistics see a model only through its centred leaf covariance: two square-integrable
+/-- f-statistics see a model only through its centred leaf covariance: two square-integrable
 frequency models have the same `f2` at every pair (hence the same `f3` and `f4`, by `f3_eq_f2`
 and `f4_eq_f2`) if and only if they have the same centred leaf covariance. -/
 theorem f2_eq_iff_centredCov_eq {Ω' : Type*} {m' : MeasurableSpace Ω'} {μ' : Measure Ω'}
@@ -179,21 +179,21 @@ end Covariance
 
 section Pair
 
-/-- **Lineage weights of the three-population star tree.** Lineage weights of the star tree on three populations `0 = A`, `1 = B`, `2 = C`: edge `e`
+/-- Lineage weights of the star tree on three populations `0 = A`, `1 = B`, `2 = C`: edge `e`
 is the leaf edge of population `e`. -/
 def starWeight : Fin 3 → Fin 3 → ℝ := fun X e => if X = e then 1 else 0
 
-/-- **Lineage weights of the three-population admixture model.** Lineage weights of the admixture model: `A` and `B` sit on edges `0` and `1`, and `C` is an
+/-- Lineage weights of the admixture model: `A` and `B` sit on edges `0` and `1`, and `C` is an
 `α : 1 - α` mixture of `A` and `B` followed by drift on its private edge `2`. -/
 def admixWeight (α : ℝ) : Fin 3 → Fin 3 → ℝ :=
   fun X e => if X = 2 then ![α, 1 - α, 1] e else starWeight X e
 
-/-- **Edge lengths of the star tree matching an admixture model.** Edge lengths of the star tree matching the admixture model with edge lengths `a`, `b`, `c`:
+/-- Edge lengths of the star tree matching the admixture model with edge lengths `a`, `b`, `c`:
 `(1 - α)(a + b)`, `α (a + b)` and `c - α (1 - α)(a + b)`. -/
 def starLen (α a b c : ℝ) : Fin 3 → ℝ :=
   ![(1 - α) * (a + b), α * (a + b), c - α * (1 - α) * (a + b)]
 
-/-- **Admixed population's weights in the admixture model.** In the admixture model, `C` is the `α : 1 - α` mixture of `A` and `B` plus its private
+/-- In the admixture model, `C` is the `α : 1 - α` mixture of `A` and `B` plus its private
 edge. -/
 theorem admixWeight_two (α : ℝ) :
     admixWeight α 2 = α • admixWeight α 0 + (1 - α) • admixWeight α 1 + Pi.single 2 1 := by
@@ -203,7 +203,7 @@ theorem admixWeight_two (α : ℝ) :
 variable {Ω Ω' : Type*} {m : MeasurableSpace Ω} {m' : MeasurableSpace Ω'} {μ : Measure Ω}
   {μ' : Measure Ω'}
 
-/-- **Star-tree model has binary loadings.** The star-tree model has binary loadings. -/
+/-- The star-tree model has binary loadings. -/
 theorem hasBinaryLoadings_star {M : DriftModel μ (Fin 3) (Fin 3)} (hw : M.weight = starWeight) :
     M.HasBinaryLoadings := by
   intro X e
@@ -211,14 +211,14 @@ theorem hasBinaryLoadings_star {M : DriftModel μ (Fin 3) (Fin 3)} (hw : M.weigh
   unfold starWeight
   split_ifs <;> simp
 
-/-- **Admixture model lacks binary loadings.** For `α ∉ {0, 1}` the admixture model does not have binary loadings. -/
+/-- For `α ∉ {0, 1}` the admixture model does not have binary loadings. -/
 theorem not_hasBinaryLoadings_admix {α : ℝ} (h0 : α ≠ 0) (h1 : α ≠ 1)
     {M : DriftModel μ (Fin 3) (Fin 3)} (hw : M.weight = admixWeight α) :
     ¬ M.HasBinaryLoadings := by
   intro hM
   rcases hM 2 0 with h | h <;> simp [hw, admixWeight] at h <;> contradiction
 
-/-- **Star tree and admixture model have equal f2.** The star tree and the admixture model have the same `f2` at every pair of populations. -/
+/-- The star tree and the admixture model have the same `f2` at every pair of populations. -/
 theorem f2_star_eq_f2_admix {α a b c : ℝ} {M : DriftModel μ (Fin 3) (Fin 3)}
     {M' : DriftModel μ' (Fin 3) (Fin 3)} (hw : M.weight = starWeight)
     (hl : M.len = starLen α a b c) (hw' : M'.weight = admixWeight α) (hl' : M'.len = ![a, b, c])
@@ -227,7 +227,7 @@ theorem f2_star_eq_f2_admix {α a b c : ℝ} {M : DriftModel μ (Fin 3) (Fin 3)}
   fin_cases X <;> fin_cases Y <;>
     simp [starWeight, admixWeight, starLen, Fin.sum_univ_three] <;> ring
 
-/-- **Star tree and admixture model have equal f4.** The star tree and the admixture model have the same `f4` (hence the same `f3`) at every
+/-- The star tree and the admixture model have the same `f4` (hence the same `f3`) at every
 quadruple of populations. -/
 theorem f4_star_eq_f4_admix {α a b c : ℝ} {M : DriftModel μ (Fin 3) (Fin 3)}
     {M' : DriftModel μ' (Fin 3) (Fin 3)} (hw : M.weight = starWeight)
@@ -236,7 +236,7 @@ theorem f4_star_eq_f4_admix {α a b c : ℝ} {M : DriftModel μ (Fin 3) (Fin 3)}
   rw [f4_eq_f2 M.memLp_freq, f4_eq_f2 M'.memLp_freq]
   simp only [f2_star_eq_f2_admix hw hl hw' hl']
 
-/-- **Nonnegativity of the matching star-tree edge lengths.** The matching star tree has nonnegative edge lengths when `0 ≤ α ≤ 1`, `a, b ≥ 0`, and the
+/-- The matching star tree has nonnegative edge lengths when `0 ≤ α ≤ 1`, `a, b ≥ 0`, and the
 private drift of `C` is at least `α (1 - α)(a + b)`, i.e. when `f3 C A B ≥ 0` in the admixture
 model. -/
 theorem starLen_nonneg {α a b c : ℝ} (hα0 : 0 ≤ α) (hα1 : α ≤ 1) (ha : 0 ≤ a) (hb : 0 ≤ b)

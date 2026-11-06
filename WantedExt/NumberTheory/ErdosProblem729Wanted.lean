@@ -31,10 +31,7 @@ erdosproblems.com/729. The upstream `answer(True)` is dropped. Status:
 resolved true externally by Barreto and Leeham. This module states the result
 but does not prove it; a pinned external Lean proof is in the registry. -/
 
-/-- **Erdős Problem 729.** The proposition that for every real number $C > 0$ there is a natural
-number $K \ge 3$ such that there are infinitely many triples $(a, b, n)$ of positive integers with
-$a + b > n + C \log n$ for which no prime $p > K$ divides the denominator of the rational number
-$n! / (a! \, b!)$ in lowest terms. -/
+/-- Smooth denominators past `n + C log n` occur infinitely often. -/
 def conjecture : Prop :=
   ∀ (C : ℝ) (_ : C > 0),
     ∃ K ≥ 3, Set.Infinite {T : ℕ × ℕ × ℕ |
@@ -45,14 +42,8 @@ def conjecture : Prop :=
         padicValNat p ((n.factorial / (a.factorial * b.factorial) : ℚ).den) = 0}
 
 /--
-**Erdős Problem 729 holds.** For every real number $C > 0$ there is a natural number $K \ge 3$
-such that there are infinitely many triples $(a, b, n)$ of positive integers with
-$a + b > n + C \log n$ for which no prime $p > K$ divides the denominator of the rational number
-$n! / (a! \, b!)$ in lowest terms.
-
-The statement was resolved in the affirmative by Barreto and Leeham.
-
-Source: External Lean proof
+Resolved true: Resolved externally by Barreto and Leeham. This repository records the statement,
+not an internal proof; a pinned external Lean proof is cited below. Source: External Lean proof
 of Erdős Problem 729,
 https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos729.lean.
 Moved from `OpenConjectures/NumberTheory/ErdosProblem729`.

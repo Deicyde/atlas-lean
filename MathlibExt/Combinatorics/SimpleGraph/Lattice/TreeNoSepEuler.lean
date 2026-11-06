@@ -71,7 +71,7 @@ theorem tnse_connected_deleteEdge_of_nonbridge (A : SimpleGraph V) (hA : A.Conne
     rw [ecc_deleteEdge_card_nonbridge A he hr, card_components_eq_one_of_connected hA]
   exact tnse_connected_of_card_components_eq_one hcard
 
-/-- **Non-bridge edge of a graph.** `e` is an edge of `A` whose endpoints remain connected after `e` is deleted. -/
+/-- `e` is an edge of `A` whose endpoints remain connected after `e` is deleted. -/
 def tnse_IsNonBridgeEdge (A : SimpleGraph V) (e : Sym2 V) : Prop :=
   ∃ a b : V, e = s(a, b) ∧ s(a, b) ∈ A.edgeSet ∧ (A.deleteEdges {s(a, b)}).Reachable a b
 
@@ -81,7 +81,7 @@ theorem tnse_connected_deleteEdge_of_isNonBridge (A : SimpleGraph V) (hA : A.Con
   obtain ⟨a, b, rfl, hmem, hr⟩ := he
   exact tnse_connected_deleteEdge_of_nonbridge A hA hmem hr
 
-/-- **Deleting a list of edges from a graph.** `A` with the edges of the list `L` deleted. -/
+/-- `A` with the edges of the list `L` deleted. -/
 def tnse_deleteList (A : SimpleGraph V) : List (Sym2 V) → SimpleGraph V
   | [] => A
   | e :: L => (tnse_deleteList A L).deleteEdges {e}
@@ -93,7 +93,7 @@ omit [DecidableEq V] in
 @[simp] theorem tnse_deleteList_cons (A : SimpleGraph V) (e : Sym2 V) (L : List (Sym2 V)) :
     tnse_deleteList A (e :: L) = (tnse_deleteList A L).deleteEdges {e} := rfl
 
-/-- **Successive deletion of non-bridge edges.** Deleting the edges of `L` from the last to the first, each edge is a non-bridge at the moment
+/-- Deleting the edges of `L` from the last to the first, each edge is a non-bridge at the moment
 it is deleted. -/
 def tnse_AllNonBridge (A : SimpleGraph V) : List (Sym2 V) → Prop
   | [] => True
@@ -196,7 +196,7 @@ theorem tnse_nonbridge_of_detour_notMem {A : SimpleGraph V} {a b a' b' : V} {L :
     (tnse_deleteList_adj_of_notMem h2 hL2)
     (tnse_deleteList_adj_of_notMem h3 hL3) hne1 hne2 hne3
 
-/-- **Three-step detour avoiding an edge.** The edge `e = {a, b}` has a three-step detour `a, a', b', b` in `A` none of whose edges is
+/-- The edge `e = {a, b}` has a three-step detour `a, a', b', b` in `A` none of whose edges is
 `e` or lies in `L`. -/
 def tnse_HasTreeFreeDetour (A : SimpleGraph V) (L : List (Sym2 V)) (e : Sym2 V) : Prop :=
   ∃ a b a' b' : V, e = s(a, b) ∧ s(a, b) ∈ A.edgeSet ∧

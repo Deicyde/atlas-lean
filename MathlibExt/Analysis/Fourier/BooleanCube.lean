@@ -46,120 +46,85 @@ namespace BooleanCube
 
 open scoped BigOperators
 
-/-- **Boolean cube.** For $n \in \mathbb{N}$, the Boolean cube of dimension $n$ is the set of
-functions $x : \{0, \dots, n-1\} \to \{\mathrm{true}, \mathrm{false}\}$. It represents
-$\{-1, 1\}^n$, with true standing for $1$ and false for $-1$. -/
+/-- The Boolean cube `{-1, 1}^n`, represented by Boolean coordinates. -/
 abbrev BoolCube (n : ℕ) : Type := Fin n → Bool
 
-/-- **Sign of a Boolean coordinate.** The sign of a Boolean value $b$ is the real number
-$\sigma(b)$ given by $\sigma(\text{true}) = 1$ and $\sigma(\text{false}) = -1$. -/
+/-- The sign of a Boolean coordinate: `true = 1`, `false = -1`. -/
 def cubeVal : Bool → ℝ
   | true => 1
   | false => -1
 
-/-- **Fourier character on the Boolean cube.** For a set $S$ of coordinates among $n$, the Fourier
-character $\chi_S$ is the real-valued function on the Boolean cube in $n$ coordinates given by
-$\chi_S(x) = \prod_{i \in S} \sigma(x_i)$, where $\sigma$ is the sign of a coordinate:
-$\sigma(\text{true}) = 1$ and $\sigma(\text{false}) = -1$. -/
+/-- The Fourier character `χ_S(x) = ∏_{i ∈ S} x_i`. -/
 def cubeChi (n : ℕ) (S : Finset (Fin n)) (x : BoolCube n) : ℝ :=
   ∏ i ∈ S, cubeVal (x i)
 
-/-- **Fourier coefficient on the Boolean cube.** For $n \in \mathbb{N}$, a function
-$f : \{-1, 1\}^n \to \mathbb{R}$ and a set $S \subseteq \{0, \dots, n-1\}$, the normalized Fourier
-coefficient of $f$ at $S$ is
-$\hat f(S) = \frac{1}{|\{-1, 1\}^n|} \sum_{x \in \{-1, 1\}^n} f(x) \chi_S(x)$, where
-$\chi_S(x) = \prod_{i \in S} x_i$. That is, $\hat f(S)$ is the uniform expectation of $f \chi_S$. -/
+/-- The normalized Fourier coefficient `f̂(S) = E_x[f(x) χ_S(x)]`. -/
 noncomputable def boolFourierCoeff (n : ℕ) (f : BoolCube n → ℝ)
     (S : Finset (Fin n)) : ℝ :=
   (∑ x : BoolCube n, f x * cubeChi n S x) / (Fintype.card (BoolCube n) : ℝ)
 
-/-- **Fourier degree at most $d$.** A real-valued function $f$ on the Boolean cube of dimension
-$n$ has Fourier degree at most a natural number $d$ when its Fourier coefficient $\hat f(S)$
-vanishes for every set $S$ of coordinates with $|S| > d$.
-
+/-- Fourier degree at most `d`: all coefficients on sets of size greater than `d` vanish.
 This is the degree of the multilinear polynomial representing the function on the cube. -/
 def MultilinearDegreeLE (n : ℕ) (f : BoolCube n → ℝ) (d : ℕ) : Prop :=
   ∀ S : Finset (Fin n), d < S.card → boolFourierCoeff n f S = 0
 
-/-- **Sign of true.** The sign $\sigma(\text{true})$ of the Boolean value true equals $1$. -/
+/-- A `true` coordinate represents the positive sign. -/
 @[simp] theorem cubeVal_true : cubeVal true = 1 := rfl
 
-/-- **Sign of false.** The sign $\sigma(\text{false})$ of the Boolean value false equals $-1$. -/
+/-- A `false` coordinate represents the negative sign. -/
 @[simp] theorem cubeVal_false : cubeVal false = -1 := rfl
 
-/-- **Coordinate signs square to one.** For every Boolean value $b$, its sign $\sigma(b)$ satisfies
-$\sigma(b) \cdot \sigma(b) = 1$. -/
+/-- Each coordinate sign has square one. -/
 @[simp] theorem cubeVal_mul_self (b : Bool) : cubeVal b * cubeVal b = 1 := by
   cases b <;> simp
 
-/-- **The empty Fourier character is constant one.** For every $n$ and every point $x$ of the
-Boolean cube in $n$ coordinates, the Fourier character $\chi_\emptyset$ of the empty set of
-coordinates satisfies $\chi_\emptyset(x) = 1$. -/
+/-- The empty Fourier character is the constant one function. -/
 @[simp] theorem cubeChi_empty (n : ℕ) (x : BoolCube n) : cubeChi n ∅ x = 1 := by
   simp [cubeChi]
 
-/-- **Singleton Fourier characters are coordinate signs.** For every $n$, every coordinate $i$ and
-every point $x$ of the Boolean cube in $n$ coordinates, the Fourier character $\chi_{\{i\}}$ of
-the singleton $\{i\}$ satisfies $\chi_{\{i\}}(x) = \sigma(x_i)$, where $\sigma$ is the sign of a
-coordinate: $\sigma(\text{true}) = 1$ and $\sigma(\text{false}) = -1$. -/
+/-- A singleton Fourier character is its coordinate sign. -/
 @[simp] theorem cubeChi_singleton (n : ℕ) (i : Fin n) (x : BoolCube n) :
     cubeChi n {i} x = cubeVal (x i) := by
   simp [cubeChi]
 
-/-- **Fourier characters square to one.** For every $n$, every set $S$ of the $n$ coordinates and
-every point $x$ of the Boolean cube in $n$ coordinates, the Fourier character $\chi_S$ satisfies
-$\chi_S(x) \cdot \chi_S(x) = 1$. -/
+/-- Every Fourier character has square one. -/
 @[simp] theorem cubeChi_mul_self (n : ℕ) (S : Finset (Fin n)) (x : BoolCube n) :
     cubeChi n S x * cubeChi n S x = 1 := by
   simp only [cubeChi, ← Finset.prod_mul_distrib, cubeVal_mul_self, Finset.prod_const_one]
 
-/-- **The empty Fourier coefficient is the mean.** For every $n \in \mathbb{N}$ and every function
-$f : \{-1, 1\}^n \to \mathbb{R}$, the normalized Fourier coefficient of $f$ at the empty set is the
-uniform mean of $f$: $\hat f(\emptyset) = \frac{1}{|\{-1, 1\}^n|} \sum_{x \in \{-1, 1\}^n} f(x)$. -/
+/-- The coefficient of the empty character is the uniform mean. -/
 theorem boolFourierCoeff_empty (n : ℕ) (f : BoolCube n → ℝ) :
     boolFourierCoeff n f ∅ = (∑ x : BoolCube n, f x) / (Fintype.card (BoolCube n) : ℝ) := by
   simp [boolFourierCoeff]
 
-/-- **Fourier coefficients of the zero function.** For every $n \in \mathbb{N}$ and every
-$S \subseteq \{0, \dots, n-1\}$, the normalized Fourier coefficient at $S$ of the identically zero
-function on $\{-1, 1\}^n$ is $0$. -/
+/-- The identically zero function has zero Fourier coefficients. -/
 @[simp] theorem boolFourierCoeff_zero (n : ℕ) (S : Finset (Fin n)) :
     boolFourierCoeff n (fun _ => 0) S = 0 := by
   simp [boolFourierCoeff]
 
-/-- **A character's own Fourier coefficient.** For every $n \in \mathbb{N}$ and every
-$S \subseteq \{0, \dots, n-1\}$, the normalized Fourier coefficient at $S$ of the character
-$\chi_S(x) = \prod_{i \in S} x_i$ on $\{-1, 1\}^n$ equals $1$, that is,
-$\widehat{\chi_S}(S) = 1$. -/
+/-- A Fourier character has normalized coefficient one at its own index. -/
 @[simp] theorem boolFourierCoeff_cubeChi_self (n : ℕ) (S : Finset (Fin n)) :
     boolFourierCoeff n (cubeChi n S) S = 1 := by
   simp [boolFourierCoeff, Fintype.card_ne_zero]
 
-/-- **Empty Fourier coefficient of a constant function.** For every $n \in \mathbb{N}$ and every
-real $c$, the normalized Fourier coefficient at the empty set of the constant function
-$x \mapsto c$ on the Boolean cube $\{-1, 1\}^n$ equals $c$. This includes dimension $n = 0$. -/
+/-- The mean of a constant function is that constant, including in dimension zero. -/
 @[simp] theorem boolFourierCoeff_const_empty (n : ℕ) (c : ℝ) :
     boolFourierCoeff n (fun _ => c) ∅ = c := by
   simp [boolFourierCoeff, Fintype.card_ne_zero]
 
-/-- **The zero function satisfies every Fourier degree bound.** For all natural numbers $n$ and
-$d$, the zero function on the Boolean cube of dimension $n$ has Fourier degree at most $d$. -/
+/-- The zero function has Fourier degree at most every natural number. -/
 @[simp] theorem multilinearDegreeLE_zero (n d : ℕ) :
     MultilinearDegreeLE n (fun _ => 0) d := by
   intro S _
   simp
 
-/-- **Fourier degree bounds are monotone.** Let $f$ be a real-valued function on the Boolean
-cube of dimension $n$, and let $d \le e$ be natural numbers. If $f$ has Fourier degree at most
-$d$, then $f$ has Fourier degree at most $e$. -/
+/-- Increasing the degree bound preserves the Fourier degree condition. -/
 theorem MultilinearDegreeLE.mono {n d e : ℕ} {f : BoolCube n → ℝ}
     (h : MultilinearDegreeLE n f d) (hde : d ≤ e) : MultilinearDegreeLE n f e := by
   intro S hS
   exact h S (lt_of_le_of_lt hde hS)
 
-/-- **Fourier degree is at most the dimension.** Let $f$ be a real-valued function on the
-Boolean cube of dimension $n$, and let $d \ge n$ be a natural number. Then $f$ has Fourier
-degree at most $d$. -/
+/-- Every function on an `n`-dimensional cube has Fourier degree at most `n`. -/
 theorem multilinearDegreeLE_of_dimension_le {n d : ℕ} (f : BoolCube n → ℝ)
     (hnd : n ≤ d) : MultilinearDegreeLE n f d := by
   intro S hS
@@ -167,24 +132,16 @@ theorem multilinearDegreeLE_of_dimension_le {n d : ℕ} (f : BoolCube n → ℝ)
     simpa using Finset.card_le_univ S
   exact (Nat.not_lt_of_ge (hcard.trans hnd) hS).elim
 
-/-- **Lagrange basis polynomial of a cube point.** Let $x$ be a point of the Boolean cube in $n$
-coordinates, indexed by $i \in \{0, \dots, n-1\}$. Its cube basis polynomial is the real
-polynomial $\prod_{i=0}^{n-1} \ell_i$ in the variables $X_0, \dots, X_{n-1}$, where $\ell_i = X_i$
-if $x_i$ is true and $\ell_i = 1 - X_i$ if $x_i$ is false. Reading true as $1$ and false as $0$,
-it is the Lagrange basis polynomial of $x$ on the grid $\{0,1\}^n$. -/
+/-- The Lagrange basis polynomial associated to a Boolean cube point. -/
 noncomputable def cubeBasis {n : ℕ}
     (x : BoolCube n) : MvPolynomial (Fin n) ℝ :=
   ∏ i : Fin n,
     if x i then MvPolynomial.X i else 1 - MvPolynomial.X i
 
-/-- **Multilinear extension.** Let $f$ be a Boolean-valued function on the Boolean cube of
-dimension $n$, and read each coordinate and each value as $1$ for true and $0$ for false. The real
-multilinear extension of $f$ is the polynomial in $\mathbb{R}[X_0, \dots, X_{n-1}]$
-$$\sum_{x \in \{0,1\}^n} f(x) \prod_{i < n} \bigl(x_i X_i + (1 - x_i)(1 - X_i)\bigr).$$
-
-For each cube point $x$ the product is its Lagrange basis polynomial: it evaluates to $1$ at $x$
-and to $0$ at every other point of $\{0,1\}^n$. Hence the extension agrees with $f$ on
-$\{0,1\}^n$, and it is the unique polynomial of degree at most one in each variable that does. -/
+/-- The real multilinear extension of a Boolean function. For each cube point
+`x`, the product is its Lagrange indicator: it is one at `x` and zero at every
+other Boolean point. The sum is therefore the unique multilinear polynomial
+agreeing with `f` on `{0,1}^n`. -/
 noncomputable def multilinearExtension {n : ℕ}
     (f : BoolCube n → Bool) : MvPolynomial (Fin n) ℝ := by
   classical
@@ -193,11 +150,8 @@ noncomputable def multilinearExtension {n : ℕ}
     MvPolynomial.C (if f x then (1 : ℝ) else 0) *
       cubeBasis x
 
-/-- **Lagrange basis polynomials on the cube are point indicators.** Let $x$ and $y$ be points
-of the Boolean cube of dimension $n$, and identify $y$ with the point of
-$\{0,1\}^n \subseteq \mathbb{R}^n$ whose $i$-th coordinate is $1$ when $y_i$ is true and $0$
-when it is false. Then the cube basis polynomial of $x$ evaluated at $y$ equals $1$ if $x = y$
-and $0$ otherwise. -/
+/-- A cube basis polynomial evaluates to one at its point and zero at every
+other Boolean point. -/
 theorem eval_cubeBasis {n : ℕ} (x y : BoolCube n) :
     MvPolynomial.eval (fun i => if y i then (1 : ℝ) else 0) (cubeBasis x) =
       if x = y then 1 else 0 := by
@@ -214,11 +168,8 @@ theorem eval_cubeBasis {n : ℕ} (x y : BoolCube n) :
     apply Finset.prod_eq_zero (Finset.mem_univ i)
     cases hxi : x i <;> cases hyi : y i <;> simp_all
 
-/-- **The multilinear extension agrees with its function on the cube.** Let $f$ be a Boolean
-function on the Boolean cube of dimension $n$, and let $y$ be a point of the cube, identified
-with the point of $\{0,1\}^n \subseteq \mathbb{R}^n$ whose $i$-th coordinate is $1$ when $y_i$
-is true and $0$ when it is false. Then the real multilinear extension of $f$ evaluated at $y$
-equals $1$ if $f(y)$ is true and $0$ if $f(y)$ is false. -/
+/-- The deterministic extension agrees with the Boolean function at every
+cube point. -/
 theorem eval_multilinearExtension {n : ℕ}
     (f : BoolCube n → Bool) (y : BoolCube n) :
     MvPolynomial.eval (fun i => if y i then (1 : ℝ) else 0)
@@ -272,10 +223,7 @@ private theorem sum_projection_cubeBasis {n : ℕ} (i : Fin n) :
       · simp [hji]
     _ = MvPolynomial.X i := by simp
 
-/-- **Multilinear extension of a constant function.** For every natural number $n$ and every
-Boolean value $b$, the real multilinear extension of the constant function $b$ on the Boolean
-cube of dimension $n$ is the constant polynomial $1$ if $b$ is true and the constant
-polynomial $0$ if $b$ is false. -/
+/-- Constant Boolean functions have constant multilinear extension. -/
 theorem multilinearExtension_const {n : ℕ} (b : Bool) :
     multilinearExtension (n := n) (fun _ => b) =
       MvPolynomial.C (if b then (1 : ℝ) else 0) := by
@@ -284,9 +232,7 @@ theorem multilinearExtension_const {n : ℕ} (b : Bool) :
   · simp [multilinearExtension]
   · simp [multilinearExtension, sum_cubeBasis]
 
-/-- **Multilinear extension of a coordinate projection.** For every coordinate $i$ of the
-Boolean cube of dimension $n$, the real multilinear extension of the projection $x \mapsto x_i$
-is the variable $X_i$. -/
+/-- A coordinate projection has extension `X i`. -/
 theorem multilinearExtension_projection {n : ℕ} (i : Fin n) :
     multilinearExtension (fun x => x i) = MvPolynomial.X i := by
   classical
@@ -296,33 +242,24 @@ theorem multilinearExtension_projection {n : ℕ} (i : Fin n) :
   intro x _
   cases x i <;> simp
 
-/-- **Boolean degree.** Let $f$ be a Boolean-valued function on the Boolean cube in $n$
-coordinates, and read true as $1$ and false as $0$. The Boolean degree of $f$ is the total degree
-of the multilinear extension of $f$: the real multilinear polynomial in $n$ variables that takes
-the value $f(x)$ at every point $x \in \{0,1\}^n$. -/
+/-- The total degree of the unique real multilinear extension of `f`. -/
 noncomputable def booleanDegree {n : ℕ}
     (f : BoolCube n → Bool) : ℕ :=
   (multilinearExtension f).totalDegree
 
-/-- **Constant functions have Boolean degree zero.** For every $n \in \mathbb{N}$ and every Boolean
-value $b$, the constant function $x \mapsto b$ on the Boolean cube of dimension $n$ has Boolean
-degree $0$. -/
+/-- Constants have Boolean degree zero. -/
 theorem booleanDegree_const {n : ℕ} (b : Bool) :
     booleanDegree (n := n) (fun _ => b) = 0 := by
   rw [booleanDegree, multilinearExtension_const]
   cases b <;> simp
 
-/-- **Coordinate projections have Boolean degree one.** For every $n \in \mathbb{N}$ and every
-$i < n$, the coordinate projection $x \mapsto x_i$ on the Boolean cube of dimension $n$ has
-Boolean degree $1$. -/
+/-- Coordinate projections have Boolean degree one. -/
 theorem booleanDegree_projection {n : ℕ} (i : Fin n) :
     booleanDegree (fun x => x i) = 1 := by
   rw [booleanDegree, multilinearExtension_projection]
   simp
 
-/-- **All-true function.** For $n \in \mathbb{N}$, the all-true function on the Boolean cube of
-dimension $n$ is the Boolean AND of all coordinates: it sends $x = (x_0, \dots, x_{n-1})$ to true
-exactly when $x_i$ is true for every $i < n$. In dimension $0$ it is constantly true. -/
+/-- The Boolean AND function on all coordinates. -/
 def allTrueFunction {n : ℕ} (x : BoolCube n) : Bool :=
   decide (∀ i, x i = true)
 
@@ -352,9 +289,7 @@ private theorem sum_allTrue_cubeBasis (n : ℕ) :
   rw [hl] at h
   simpa [g] using h
 
-/-- **Multilinear extension of the AND function.** For every natural number $n$, the real
-multilinear extension of the AND function on the Boolean cube of dimension $n$ (true exactly
-when every coordinate is true) is the monomial $\prod_{i=0}^{n-1} X_i$. -/
+/-- The all-true function has the product of all variables as its extension. -/
 theorem multilinearExtension_allTrue (n : ℕ) :
     multilinearExtension (n := n) allTrueFunction =
       ∏ i : Fin n, MvPolynomial.X i := by
@@ -365,9 +300,7 @@ theorem multilinearExtension_allTrue (n : ℕ) :
   intro x _
   cases allTrueFunction x <;> simp
 
-/-- **The two-bit AND has Boolean degree two.** The all-true function on the Boolean cube of
-dimension $2$, $(x_0, x_1) \mapsto x_0 \wedge x_1$, has Boolean degree $2$; that is, its real
-multilinear extension has total degree $2$. -/
+/-- The two-bit all-true function has degree two. -/
 theorem booleanDegree_allTrue_two :
     booleanDegree (allTrueFunction (n := 2)) = 2 := by
   rw [booleanDegree, multilinearExtension_allTrue, Fin.prod_univ_two]
@@ -418,11 +351,9 @@ private theorem sum_ind_pow_mul_cubeChi_eq_zero {n : ℕ} (m : Fin n →₀ ℕ)
     simp [cubeVal, hiS]
   exact hsum
 
-/-- **Fourier degree is at most Boolean degree.** Let $f$ be a Boolean function on the Boolean
-cube of dimension $n$, and let $g$ be the real function with $g(x) = 1$ if $f(x)$ is true and
-$g(x) = 0$ otherwise. Then $g$ has Fourier degree at most the Boolean degree of $f$: every
-Fourier coefficient $\hat g(S)$ with $|S|$ greater than the total degree of the multilinear
-extension of $f$ vanishes. -/
+/-- The Fourier degree of the `0/1` indicator of a Boolean function is at most
+its Boolean degree: Fourier coefficients above the degree of the multilinear
+extension vanish. This connects `booleanDegree` to `MultilinearDegreeLE`. -/
 theorem multilinearDegreeLE_indicator {n : ℕ} (f : BoolCube n → Bool) :
     MultilinearDegreeLE n (fun x => if f x then (1 : ℝ) else 0)
       (booleanDegree f) := by
@@ -462,41 +393,28 @@ section FinsetFourier
 
 variable {ι : Type*} [DecidableEq ι]
 
-/-- **Fourier character on finite sets.** For finite sets $S$ and $T$, the Fourier character of
-$S$ at $T$ is the real number $\chi_S(T) = (-1)^{|S \cap T|}$.
-
-This is the subset-indexed form of the Fourier character on the Boolean cube; after reindexing
-the coordinates, the two agree. -/
+/-- The Fourier character on the subset lattice: `χ_S(T) = (−1)^|S ∩ T|`.
+This is the `Finset`-indexed form of the uniform-cube transform;
+`fourierChar_eq_cubeChi` identifies it with the canonical `cubeChi`
+after reindexing. -/
 noncomputable def fourierChar (S T : Finset ι) : ℝ :=
   (-1 : ℝ) ^ (S ∩ T).card
 
-/-- **Fourier coefficient on the subsets of a finite set.** Let $E$ be a finite subset of a type
-$\iota$ and let $f$ be a function from finite subsets of $\iota$ to $\mathbb{R}$. For a finite
-subset $S$ of $\iota$, the Fourier coefficient of $f$ at $S$ over $E$ is
-$$\hat f(S) = \frac{1}{2^{|E|}} \sum_{U \subseteq E} f(U) \, (-1)^{|S \cap U|},$$
-the uniform average over the subsets $U$ of $E$ of $f(U)$ times the Fourier character
-$\chi_S(U) = (-1)^{|S \cap U|}$.
-
-After reindexing, it agrees with the Fourier coefficient on the Boolean cube. -/
+/-- The Fourier coefficient `f̂(S)`: the uniform average of `f · χ_S`
+over the cube. `fourierCoeff_eq_boolFourierCoeff` identifies it with
+the canonical `boolFourierCoeff` after reindexing. -/
 noncomputable def fourierCoeff (E : Finset ι) (f : Finset ι → ℝ)
     (S : Finset ι) : ℝ :=
   (∑ U ∈ E.powerset, f U * fourierChar S U) / 2 ^ E.card
 
-/-- **Number of points of the Boolean cube.** For every $n \in \mathbb{N}$, the Boolean cube of
-dimension $n$ has exactly $2^n$ points. -/
+/-- The `n`-cube has `2 ^ n` points. -/
 theorem card_boolCube (n : ℕ) : Fintype.card (BoolCube n) = 2 ^ n := by
   change Fintype.card (Fin n → Bool) = 2 ^ n
   rw [Fintype.card_pi, Finset.prod_const, Fintype.card_bool,
     Finset.card_univ, Fintype.card_fin]
 
-/-- **Subsets of a finite set as indicator functions.** For a finite set $E$, this is the
-bijection from the subsets $T \subseteq E$ to the functions $b$ from $E$ to
-$\{\mathrm{true}, \mathrm{false}\}$ given by $b(a) = \mathrm{false}$ if $a \in T$ and
-$b(a) = \mathrm{true}$ if $a \notin T$. Its inverse sends $b$ to the set
-$\{a \in E : b(a) = \mathrm{false}\}$.
-
-Members of $T$ read false, matching the convention that identifies false with the sign $-1$
-and true with the sign $+1$. -/
+/-- Subsets of `E` are indicator functions on `E` (members read `false`,
+matching `cubeVal false = -1`). -/
 noncomputable def powersetEquivIndicator (E : Finset ι) :
     ↥E.powerset ≃ (↥E → Bool) where
   toFun S i := decide (i.val ∉ S.val)
@@ -546,29 +464,19 @@ noncomputable def powersetEquivIndicator (E : Finset ι) :
     simp only [hmem]
     cases b i <;> simp
 
-/-- **Subsets of a finite set as points of the Boolean cube.** For a finite set $E$ with $n = |E|$
-elements, fix a bijection $e$ from $E$ to $\{0, \dots, n-1\}$ (an enumeration of $E$, chosen
-noncanonically). This is the bijection from the subsets $T \subseteq E$ to the Boolean cube of
-dimension $n$ that sends $T$ to the point $x$ with $x_{e(a)} = \mathrm{false}$ if $a \in T$ and
-$x_{e(a)} = \mathrm{true}$ if $a \notin T$, for every $a \in E$. -/
+/-- The cube over `E`, reindexed by `Fin E.card`. -/
 noncomputable def powersetEquivBoolCube (E : Finset ι) :
     ↥E.powerset ≃ BoolCube E.card :=
   (powersetEquivIndicator E).trans
     ((Finset.equivFin E).arrowCongr (Equiv.refl Bool))
 
-/-- **Coordinates of an encoded subset.** Let $E$ be a finite set with $m$ elements, listed in
-the fixed order $e_0, \dots, e_{m-1}$ used to encode subsets of $E$ as points of the Boolean cube
-of dimension $m$. For every subset $T \subseteq E$ and every coordinate $j < m$, the $j$-th
-coordinate of the point encoding $T$ is true if $e_j \notin T$ and false if $e_j \in T$. -/
+/-- Applying the reindexing equivalence reads off subset membership. -/
 theorem powersetEquivBoolCube_apply (E : Finset ι) (T : Finset ι)
     (hT : T ∈ E.powerset) (j : Fin E.card) :
     powersetEquivBoolCube E ⟨T, hT⟩ j
       = decide (((Finset.equivFin E).symm j).val ∉ T) := rfl
 
-/-- **Reindexing a subset as a set of coordinates.** For finite sets $S \subseteq E$ with $n = |E|$,
-let $e$ be the fixed bijection from $E$ to $\{0, \dots, n-1\}$ (the enumeration of $E$ used to
-identify subsets of $E$ with points of the Boolean cube of dimension $n$). The reindexed set is
-the image $e(S) = \{e(a) : a \in S\}$, a subset of $\{0, \dots, n-1\}$. -/
+/-- Reindex a sub-cube of `E` as a `Fin`-indexed set. -/
 noncomputable def reindexFinset (E S : Finset ι) (hS : S ⊆ E) :
     Finset (Fin E.card) :=
   S.attach.map
@@ -578,20 +486,12 @@ noncomputable def reindexFinset (E S : Finset ι) (hS : S ⊆ E) :
         simp only [Subtype.mk.injEq] at h'
         exact Subtype.ext h'⟩
 
-/-- **Decoding a cube point as a subset.** Let $E$ be a finite set with $m$ elements, listed in a
-fixed order as $e_0, \dots, e_{m-1}$; this order identifies subsets of $E$ with points of the
-Boolean cube of dimension $m$. A point $x$ of that cube decodes to the subset
-$\{e_j : x_j = \mathrm{false}\}$ of $E$; this inverts the encoding of subsets of $E$ as cube
-points. -/
+/-- Decode a `Fin`-indexed cube point back to a subset of `E`. -/
 noncomputable def decodeBoolCube (E : Finset ι) (x : BoolCube E.card) :
     Finset ι :=
   ((powersetEquivBoolCube E).symm x).val
 
-/-- **Decoding inverts encoding.** Let $E$ be a finite set with $m$ elements, listed in a fixed
-order as $e_0, \dots, e_{m-1}$. Encode a subset $T \subseteq E$ as the point $x_T$ of the Boolean
-cube of dimension $m$ whose $j$-th coordinate is false exactly when $e_j \in T$, and decode a
-point $x$ as the subset $\{e_j : x_j = \mathrm{false}\}$. Then for every subset $T \subseteq E$,
-decoding $x_T$ gives back $T$. -/
+/-- Decoding after encoding is the identity. -/
 @[simp] theorem decode_encode (E : Finset ι) (T : Finset ι)
     (hT : T ∈ E.powerset) :
     decodeBoolCube E (powersetEquivBoolCube E ⟨T, hT⟩) = T := by
@@ -621,13 +521,7 @@ private theorem prod_ite_neg_one (S T : Finset ι) :
     Finset.prod_eq_one (fun a ha => ite_eq_right (Finset.mem_filter.mp ha).2)
   rw [← hsplit, hpos, hneg, mul_one]
 
-/-- **Subset characters agree with cube characters.** Let $E$ be a finite set with $m$ elements,
-listed in a fixed order as $e_0, \dots, e_{m-1}$, and encode a subset $T \subseteq E$ as the point
-$x_T$ of the Boolean cube of dimension $m$ whose $j$-th coordinate is false exactly when
-$e_j \in T$. For all subsets $S, T \subseteq E$,
-$$(-1)^{|S \cap T|} = \chi_{S'}(x_T),$$
-where the left side is the Fourier character of $S$ at $T$, $S' = \{j : e_j \in S\}$ is $S$
-reindexed as a set of coordinates, and $\chi_{S'}$ is the Fourier character on the cube. -/
+/-- Reindexing identifies `fourierChar` with the canonical `cubeChi`. -/
 theorem fourierChar_eq_cubeChi (E : Finset ι) (S T : Finset ι)
     (hS : S ⊆ E) (hT : T ∈ E.powerset) :
     fourierChar S T
@@ -674,14 +568,8 @@ private theorem sum_powerset_coe (E : Finset ι) (g : Finset ι → ℝ) :
   conv_lhs => rw [Finset.univ_eq_attach E.powerset]
   exact Finset.sum_attach _ _
 
-/-- **Subset Fourier coefficients agree with cube Fourier coefficients.** Let $E$ be a finite
-subset of a type $\iota$ with $m$ elements, listed in a fixed order as $e_0, \dots, e_{m-1}$, and
-decode a point $x$ of the Boolean cube of dimension $m$ as the subset
-$D(x) = \{e_j : x_j = \mathrm{false}\}$ of $E$. Let $f$ be a function from finite subsets of
-$\iota$ to $\mathbb{R}$ and let $S \subseteq E$. Then the Fourier coefficient
-$\hat f(S) = 2^{-m} \sum_{U \subseteq E} f(U) (-1)^{|S \cap U|}$ of $f$ at $S$ over $E$ equals
-the Fourier coefficient on the cube of the function $x \mapsto f(D(x))$ at the set of
-coordinates $S' = \{j : e_j \in S\}$. -/
+/-- Reindexing identifies `fourierCoeff` with the canonical
+`boolFourierCoeff`. -/
 theorem fourierCoeff_eq_boolFourierCoeff (E : Finset ι)
     (f : Finset ι → ℝ) (S : Finset ι) (hS : S ⊆ E) :
     fourierCoeff E f S
@@ -895,13 +783,7 @@ private theorem symmDiff_inter_eq_empty_iff (E S U : Finset ι)
     have : ((S \ S) ∪ (S \ S)) ∩ E = ∅ := by simp
     exact this
 
-/-- **Fourier inversion on the subsets of a finite set.** Let $E$ be a finite subset of a type
-$\iota$ and let $f$ be a function from finite subsets of $\iota$ to $\mathbb{R}$. For every
-subset $T \subseteq E$,
-$$f(T) = \sum_{S \subseteq E} \hat f(S) \, (-1)^{|S \cap T|},$$
-where $\hat f(S) = 2^{-|E|} \sum_{U \subseteq E} f(U) (-1)^{|S \cap U|}$ is the Fourier
-coefficient of $f$ at $S$ over $E$ and $(-1)^{|S \cap T|}$ is the Fourier character of $S$ at
-$T$. -/
+/-- Fourier inversion on the cube. -/
 public theorem fourier_inversion (E : Finset ι) (f : Finset ι → ℝ)
     (T : Finset ι) (hT : T ∈ E.powerset) :
     f T = ∑ S ∈ E.powerset, fourierCoeff E f S * fourierChar S T := by
@@ -969,12 +851,8 @@ public theorem fourier_inversion (E : Finset ι) (f : Finset ι → ℝ)
   have := mul_right_cancel₀ hne hcancel
   exact this.symm
 
-/-- **Plancherel identity on the subsets of a finite set.** Let $E$ be a finite subset of a type
-$\iota$ and let $f$ be a function from finite subsets of $\iota$ to $\mathbb{R}$. Then
-$$\frac{1}{2^{|E|}} \sum_{T \subseteq E} f(T)^2 = \sum_{S \subseteq E} \hat f(S)^2,$$
-where $\hat f(S) = 2^{-|E|} \sum_{U \subseteq E} f(U) (-1)^{|S \cap U|}$ is the Fourier
-coefficient of $f$ at $S$ over $E$: the mean square of $f$ over the subsets of $E$ equals the
-sum of the squared Fourier coefficients. -/
+/-- Plancherel on the cube: the mean square equals the sum of squared
+Fourier coefficients. -/
 public theorem fourier_plancherel (E : Finset ι) (f : Finset ι → ℝ) :
     (∑ T ∈ E.powerset, f T ^ 2) / 2 ^ E.card
       = ∑ S ∈ E.powerset, fourierCoeff E f S ^ 2 := by

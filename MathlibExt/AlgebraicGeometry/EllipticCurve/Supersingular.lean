@@ -25,13 +25,11 @@ This file defines supersingularity over an algebraic closure of `ZMod p` through
 `p`-torsion and relates it to trivial geometric `p ^ r`-torsion for every positive `r`.
 -/
 
-/-- **Supersingular elliptic curves.** Let $p$ be a prime and let $E$ be an elliptic curve over an
-algebraic closure $\overline{\mathbb{F}}_p$ of $\mathbb{Z}/p\mathbb{Z}$. Then $E$ is called
-supersingular when every point $P \in E(\overline{\mathbb{F}}_p)$ with $pP = 0$ is $P = 0$.
+/-- An elliptic curve over an algebraic closure of `ZMod p` is supersingular when every geometric
+point killed by `p` is zero.
 
-Source: arXiv:2308.11539v1, `main.tex`, lines 164–170, which gives the equivalent condition that
-for every positive integer $r$, every point $P$ with $p^r P = 0$ is $P = 0$; this definition is
-its case $r = 1$.
+This is the `r = 1` form of the equivalent torsion condition in arXiv:2308.11539v1,
+`main.tex`, lines 164–170.
 -/
 def IsSupersingular {p : ℕ} [Fact p.Prime]
     (W : WeierstrassCurve.Affine (AlgebraicClosure (ZMod p))) [W.IsElliptic] : Prop :=
@@ -61,20 +59,14 @@ theorem IsSupersingular.iff_pow_torsion {p : ℕ} [Fact p.Prime]
   · intro h P hP
     exact h 1 (by omega) P (by simpa using hP)
 
-/-- **Supersingularity from trivial prime-power torsion.** Let $p$ be a prime and let $E$ be an
-elliptic curve over an algebraic closure $\overline{\mathbb{F}}_p$ of $\mathbb{Z}/p\mathbb{Z}$. If
-for every integer $r \ge 1$ the only point $P \in E(\overline{\mathbb{F}}_p)$ with $p^r P = 0$ is
-$P = 0$, then $E$ is supersingular. -/
+/-- Trivial `p ^ r`-torsion for every positive `r` implies supersingularity. -/
 theorem IsSupersingular.of_pow_torsion {p : ℕ} [Fact p.Prime]
     (W : WeierstrassCurve.Affine (AlgebraicClosure (ZMod p))) [W.IsElliptic]
     (h : ∀ r : ℕ, 0 < r → ∀ P : W.Point, (p ^ r) • P = 0 → P = 0) :
     W.IsSupersingular :=
   (IsSupersingular.iff_pow_torsion W).mpr h
 
-/-- **Supersingular curves have trivial prime-power torsion.** Let $p$ be a prime and let $E$ be a
-supersingular elliptic curve over an algebraic closure $\overline{\mathbb{F}}_p$ of
-$\mathbb{Z}/p\mathbb{Z}$. Then for every integer $r \ge 1$, every point
-$P \in E(\overline{\mathbb{F}}_p)$ with $p^r P = 0$ is $P = 0$. -/
+/-- A supersingular elliptic curve has trivial `p ^ r`-torsion for every positive `r`. -/
 theorem IsSupersingular.pow_torsion {p : ℕ} [Fact p.Prime]
     (W : WeierstrassCurve.Affine (AlgebraicClosure (ZMod p))) [W.IsElliptic]
     (h : W.IsSupersingular) {r : ℕ} (hr : 0 < r)

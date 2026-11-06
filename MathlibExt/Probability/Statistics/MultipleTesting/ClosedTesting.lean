@@ -56,13 +56,13 @@ open MeasureTheory
 
 variable {Ω : Type*} [MeasurableSpace Ω] {m : ℕ}
 
-/-- **Closed testing procedure.** The closed testing procedure: given the decisions `φ J` of local tests of the intersection
+/-- The closed testing procedure: given the decisions `φ J` of local tests of the intersection
 hypotheses `H_J`, reject `Hᵢ` exactly when `φ J` holds for every `J` containing `i`. -/
 noncomputable def closedRejections (φ : Finset (Fin m) → Prop) : Finset (Fin m) := by
   classical
   exact Finset.univ.filter fun i => ∀ J : Finset (Fin m), i ∈ J → φ J
 
-/-- **Membership in the closed rejection set.** Membership in the closed rejection set. -/
+/-- Membership in the closed rejection set. -/
 theorem mem_closedRejections {φ : Finset (Fin m) → Prop} {i : Fin m} :
     i ∈ closedRejections φ ↔ ∀ J : Finset (Fin m), i ∈ J → φ J := by
   classical
@@ -70,7 +70,7 @@ theorem mem_closedRejections {φ : Finset (Fin m) → Prop} {i : Fin m} :
   convert Finset.mem_filter (s := Finset.univ) (p := fun i => ∀ J : Finset (Fin m), i ∈ J → φ J)
   simp
 
-/-- **Closed testing rejection implies the intersection test rejects.** If the closed procedure rejects a hypothesis in `H0`, then the local test of the
+/-- If the closed procedure rejects a hypothesis in `H0`, then the local test of the
 intersection hypothesis `H_{H0}` rejects. -/
 theorem inter_nonempty_closedRejections {φ : Finset (Fin m) → Prop} {H0 : Finset (Fin m)}
     (h : (closedRejections φ ∩ H0).Nonempty) : φ H0 := by
@@ -92,12 +92,12 @@ theorem measure_closed_familywiseError_le (μ : Measure Ω) (φ : Finset (Fin m)
   intro ω hω
   exact inter_nonempty_closedRejections hω
 
-/-- **Bonferroni local test of an intersection hypothesis.** The Bonferroni local test of the intersection hypothesis `H_J` at level `α`: reject when
+/-- The Bonferroni local test of the intersection hypothesis `H_J` at level `α`: reject when
 some `j ∈ J` has `p j ≤ α / |J|`. (It never rejects `H_∅`.) -/
 def bonferroniLocalTest (α : ℝ) (p : Fin m → ℝ) (J : Finset (Fin m)) : Prop :=
   ∃ j ∈ J, p j ≤ α / J.card
 
-/-- **Level of the Bonferroni local test.** The Bonferroni local test of `H_{H0}` has level `α ∈ [0, 1]` when the p-values in `H0`
+/-- The Bonferroni local test of `H_{H0}` has level `α ∈ [0, 1]` when the p-values in `H0`
 are valid. -/
 theorem measure_bonferroniLocalTest_le (μ : Measure Ω) (p : Fin m → Ω → ℝ)
     (H0 : Finset (Fin m)) (hnull : ∀ i ∈ H0, IsValidPValue μ (p i)) {α : ℝ} (hα₀ : 0 ≤ α)

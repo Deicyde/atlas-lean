@@ -47,7 +47,7 @@ open StatMech.Percolation (origin)
 
 variable {ω : ConfigSpace (Sym2 (Site 2))}
 
-/-- **Site on the negative horizontal axis.** The site `(-k, 0)` on the negative horizontal axis. -/
+/-- The site `(-k, 0)` on the negative horizontal axis. -/
 def leftAxisSite (k : ℕ) : Site 2 := ![-(k : ℤ), 0]
 
 @[simp] theorem leftAxisSite_zero_eq_origin : leftAxisSite 0 = origin 2 := by
@@ -75,7 +75,7 @@ theorem exists_leftAxisSite_not_mem_cluster (hfin : (cluster 2 ω (origin 2)).Fi
     Set.infinite_range_of_injective hinj
   exact hran (hfin.subset hsub)
 
-/-- **Left exit condition at an axis site.** The site `(-(k + 1), 0)` is not in the open cluster of the origin. -/
+/-- The site `(-(k + 1), 0)` is not in the open cluster of the origin. -/
 def leftExitPred (ω : ConfigSpace (Sym2 (Site 2))) (k : ℕ) : Prop :=
   leftAxisSite (k + 1) ∉ cluster 2 ω (origin 2)
 
@@ -87,7 +87,7 @@ theorem leftExitPred_exists (hfin : (cluster 2 ω (origin 2)).Finite) :
   | succ n => exact ⟨n, hm⟩
 
 open Classical in
-/-- **Left exit index of a finite cluster.** For a finite origin cluster, the least `k` such that `(-(k + 1), 0)` is not in the cluster. -/
+/-- For a finite origin cluster, the least `k` such that `(-(k + 1), 0)` is not in the cluster. -/
 noncomputable def leftExitIndex (hfin : (cluster 2 ω (origin 2)).Finite) : ℕ := by
   classical
   exact Nat.find (leftExitPred_exists (ω := ω) hfin)
@@ -146,11 +146,11 @@ theorem leftExitEdge_isClosed (hfin : (cluster 2 ω (origin 2)).Finite) :
         leftAxisSite (leftExitIndex (ω := ω) hfin + 1)) = false :=
   cluster_edgeBoundary_isClosed (origin 2) (leftExitEdge_mem_edgeBoundary (ω := ω) hfin)
 
-/-- **Face above the left exit edge.** The unit face directly above the left exit edge. -/
+/-- The unit face directly above the left exit edge. -/
 noncomputable def leftExitFaceUp (hfin : (cluster 2 ω (origin 2)).Finite) : Site 2 :=
   ![-(leftExitIndex (ω := ω) hfin : ℤ) - 1, 0]
 
-/-- **Face below the left exit edge.** The unit face directly below the left exit edge. -/
+/-- The unit face directly below the left exit edge. -/
 noncomputable def leftExitFaceDown (hfin : (cluster 2 ω (origin 2)).Finite) : Site 2 :=
   ![-(leftExitIndex (ω := ω) hfin : ℤ) - 1, -1]
 

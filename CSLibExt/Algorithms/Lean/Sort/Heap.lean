@@ -44,11 +44,8 @@ private theorem foldl_push_elements (xs : List α) (heap : MinHeap α) :
       rw [show (↑(x :: xs) : Multiset α) = x ::ₘ (↑xs : Multiset α) from rfl,
         Multiset.cons_add, Multiset.add_cons]
 
-/-- **Heap sort.** For a list $xs$ of elements of a linearly ordered type, heap sort inserts the
-entries of $xs$ one at a time, from first to last, into the empty binary min-heap, and then
-extracts the minimum of the heap as many times as the heap has entries, each time continuing with
-the remaining heap. The output is the list of the extracted minima in the order in which they
-were extracted. -/
+/-- Sort a list in nondecreasing order by repeated insertion into and extraction from a binary
+min-heap. -/
 def heapSort (xs : List α) : List α :=
   let heap := xs.foldl (fun current value => current.push value) MinHeap.empty
   let rec loop : Nat → MinHeap α → List α
@@ -91,9 +88,7 @@ private theorem heapSort_loop_correct (fuel : Nat) (heap : MinHeap α)
             rw [hrestElements]
             exact helements⟩
 
-/-- **Heap sort preserves multiplicities.** For every list $xs$ of elements of a linearly ordered
-type, the output of heap sort on $xs$ and $xs$ itself are equal as multisets: every value occurs
-in both lists the same number of times. -/
+/-- Heap sort preserves every input occurrence, including duplicates. -/
 theorem heapSort_multiset (xs : List α) :
     (↑(heapSort xs) : Multiset α) = (↑xs : Multiset α) := by
   let heap := xs.foldl (fun current value => current.push value) MinHeap.empty
@@ -104,21 +99,18 @@ theorem heapSort_multiset (xs : List α) :
     exact hcorrect.2.trans (by simpa [heap, MinHeap.empty, MinHeap.elements] using helements)
   simpa only [heapSort, heap] using hresult
 
-/-- **Heap sort permutes its input.** For every list $xs$ of elements of a linearly ordered type,
-heap sort returns a permutation of $xs$. -/
+/-- Heap sort returns a permutation of its input. -/
 theorem heapSort_perm (xs : List α) : List.Perm (heapSort xs) xs :=
   Multiset.coe_eq_coe.mp (heapSort_multiset xs)
 
-/-- **Heap sort output is sorted.** For every list $xs$ of elements of a linearly ordered type,
-heap sort returns a list sorted in nondecreasing order. -/
+/-- Heap sort returns its output in nondecreasing order. -/
 theorem heapSort_sorted (xs : List α) :
     List.Pairwise (fun x y => x ≤ y) (heapSort xs) := by
   let heap := xs.foldl (fun current value => current.push value) MinHeap.empty
   have hcorrect := heapSort_loop_correct heap.data.size heap rfl
   simpa only [heapSort, heap] using hcorrect.1
 
-/-- **Correctness of heap sort.** For every list $xs$ of elements of a linearly ordered type, heap
-sort returns a list that is sorted in nondecreasing order and is a permutation of $xs$. -/
+/-- Heap sort refines the standard sorted-permutation specification. -/
 theorem heapSort_correct (xs : List α) :
     List.Pairwise (fun x y => x ≤ y) (heapSort xs) ∧ List.Perm (heapSort xs) xs :=
   ⟨heapSort_sorted xs, heapSort_perm xs⟩

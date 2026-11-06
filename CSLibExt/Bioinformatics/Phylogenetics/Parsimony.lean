@@ -65,7 +65,7 @@ universe u v w
 
 variable {L : Type u} {S : Type v}
 
-/-- **Min-plus cost semiring.** The cost semiring: `MinTropical (WithTop ℕ)`, with `min` as addition and `+` as
+/-- The cost semiring: `MinTropical (WithTop ℕ)`, with `min` as addition and `+` as
 multiplication. -/
 abbrev Cost : Type := MinTropical (WithTop ℕ)
 
@@ -73,7 +73,7 @@ abbrev Cost : Type := MinTropical (WithTop ℕ)
 
 section Sankoff
 
-/-- **Total substitution cost of a labeling.** The total substitution cost of a labeling `x` of the non-root vertices of `t` with root
+/-- The total substitution cost of a labeling `x` of the non-root vertices of `t` with root
 state `s`: the sum over all edges of the cost `untrop (P a b)` from the parent's state `a` to
 the child's state `b`. -/
 def edgeCost : (t : Tree L S Cost) → S → Labeling t → WithTop ℕ
@@ -81,7 +81,7 @@ def edgeCost : (t : Tree L S Cost) → S → Labeling t → WithTop ℕ
   | node P l Q r, s, z =>
     (untrop (P s z.1.1) + edgeCost l z.1.1 z.1.2) + (untrop (Q s z.2.1) + edgeCost r z.2.1 z.2.2)
 
-/-- **Labeling agrees with the observed leaf states.** The labeling `x` (with root state `s`) agrees with the observed states `σ` at every leaf. -/
+/-- The labeling `x` (with root state `s`) agrees with the observed states `σ` at every leaf. -/
 def Agrees (σ : L → S) : (t : Tree L S Cost) → S → Labeling t → Prop
   | leaf l, s, _ => s = σ l
   | node _ l _ r, _, z => Agrees σ l z.1.1 z.1.2 ∧ Agrees σ r z.2.1 z.2.2
@@ -97,12 +97,12 @@ instance instDecidableAgrees [DecidableEq S] (σ : L → S) :
 
 variable [DecidableEq S]
 
-/-- **Tropical leaf weights of observed states.** The leaf weights of the observed states `σ`: the tropical one (cost `0`) at the observed
+/-- The leaf weights of the observed states `σ`: the tropical one (cost `0`) at the observed
 state and the tropical zero (cost `⊤`) at every other state. -/
 def leafObs (σ : L → S) (l : L) (s : S) : Cost :=
   if s = σ l then 1 else 0
 
-/-- **Tropical weight of a labeling equals its edge cost.** The weight of a labeling in the tropical semiring is its edge cost if it agrees with the
+/-- The weight of a labeling in the tropical semiring is its edge cost if it agrees with the
 leaf states and `⊤` otherwise. -/
 theorem untrop_weight (σ : L → S) :
     ∀ (t : Tree L S Cost) (s : S) (x : Labeling t),
@@ -132,14 +132,14 @@ theorem sankoff_eq_inf (σ : L → S) (t : Tree L S Cost) (s : S) :
   simp only [Function.comp_def, untrop_weight]
   rw [Finset.inf_ite, Finset.inf_top, inf_top_eq]
 
-/-- **Sankoff's cost is a lower bound.** Sankoff's cost is a lower bound for the cost of every labeling that agrees with the leaf
+/-- Sankoff's cost is a lower bound for the cost of every labeling that agrees with the leaf
 states. -/
 theorem sankoff_le_edgeCost (σ : L → S) (t : Tree L S Cost) (s : S) (x : Labeling t)
     (hx : Agrees σ t s x) : sankoff σ t s ≤ edgeCost t s x := by
   rw [sankoff_eq_inf]
   exact Finset.inf_le (Finset.mem_filter.2 ⟨Finset.mem_univ x, hx⟩)
 
-/-- **Sankoff's cost is attained.** Sankoff's cost is attained: if it is finite, some labeling that agrees with the leaf states
+/-- Sankoff's cost is attained: if it is finite, some labeling that agrees with the leaf states
 has exactly this cost. (It is `⊤` exactly when every agreeing labeling uses a forbidden change,
 or when `t` is a single leaf whose observed state is not `s`.) -/
 theorem exists_edgeCost_eq_sankoff (σ : L → S) (t : Tree L S Cost) (s : S)
@@ -151,12 +151,12 @@ theorem exists_edgeCost_eq_sankoff (σ : L → S) (t : Tree L S Cost) (s : S)
   obtain ⟨x, hx, hxe⟩ := Finset.exists_mem_eq_inf _ hne (edgeCost t s)
   exact ⟨x, (Finset.mem_filter.1 hx).2, hxe.symm⟩
 
-/-- **Sankoff's recursion at a leaf.** Sankoff's recursion at a leaf: cost `0` at the observed state, `⊤` elsewhere. -/
+/-- Sankoff's recursion at a leaf: cost `0` at the observed state, `⊤` elsewhere. -/
 theorem sankoff_leaf (σ : L → S) (l : L) (s : S) :
     sankoff σ (leaf l) s = if s = σ l then 0 else ⊤ := by
   by_cases h : s = σ l <;> simp [sankoff, prune, leafObs, h]
 
-/-- **Sankoff's recursion at an internal vertex.** Sankoff's recursion at an internal vertex: the cost of state `s` is the sum, over the two
+/-- Sankoff's recursion at an internal vertex: the cost of state `s` is the sum, over the two
 children, of the minimum over the child's state `a` of the edge cost from `s` to `a` plus the
 child's cost at `a`. -/
 theorem sankoff_node (σ : L → S) (P Q : S → S → Cost) (l r : Tree L S Cost) (s : S) :
@@ -173,11 +173,11 @@ section Fitch
 
 variable [DecidableEq S]
 
-/-- **Unit substitution cost.** The unit cost: `0` for no change and `1` for a change of state. -/
+/-- The unit cost: `0` for no change and `1` for a change of state. -/
 def unitCost (a b : S) : Cost :=
   trop (if a = b then 0 else 1)
 
-/-- **Tree with unit costs on every edge.** Every edge of the tree carries the unit cost. -/
+/-- Every edge of the tree carries the unit cost. -/
 def IsUnitCost : Tree L S Cost → Prop
   | leaf _ => True
   | node P l Q r => P = unitCost ∧ Q = unitCost ∧ IsUnitCost l ∧ IsUnitCost r

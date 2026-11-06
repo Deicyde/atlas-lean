@@ -74,21 +74,21 @@ variable {𝕜 : Type*} [RCLike 𝕜]
 variable {E : Type*} [NormedAddCommGroup E] [InnerProductSpace 𝕜 E]
   [FiniteDimensional 𝕜 E]
 
-/-- **Compression of an operator to a subspace.** The compression of an operator `T` to a subspace `S`: project `T x`
+/-- The compression of an operator `T` to a subspace `S`: project `T x`
 orthogonally back onto `S`. -/
 noncomputable def compression (T : E →ₗ[𝕜] E) (S : Submodule 𝕜 E)
     [S.HasOrthogonalProjection] : S →ₗ[𝕜] S :=
   (S.orthogonalProjectionOnto : E →L[𝕜] S).toLinearMap ∘ₗ T ∘ₗ S.subtype
 
 omit [FiniteDimensional 𝕜 E] in
-/-- **Action of the compression of an operator.** The compression acts by projecting the image back onto the subspace. -/
+/-- The compression acts by projecting the image back onto the subspace. -/
 theorem compression_apply (T : E →ₗ[𝕜] E) (S : Submodule 𝕜 E)
     [S.HasOrthogonalProjection] (y : S) :
     compression T S y = S.orthogonalProjectionOnto (T (y : E)) :=
   rfl
 
 omit [FiniteDimensional 𝕜 E] in
-/-- **Compression of a symmetric operator is symmetric.** The compression of a symmetric operator is symmetric. -/
+/-- The compression of a symmetric operator is symmetric. -/
 theorem compression_isSymmetric {T : E →ₗ[𝕜] E} (hT : T.IsSymmetric)
     (S : Submodule 𝕜 E) [S.HasOrthogonalProjection] :
     (compression T S).IsSymmetric := by
@@ -98,7 +98,7 @@ theorem compression_isSymmetric {T : E →ₗ[𝕜] E} (hT : T.IsSymmetric)
     ← Submodule.inner_orthogonalProjectionOnto_eq_of_mem_left]
 
 omit [FiniteDimensional 𝕜 E] in
-/-- **Rayleigh form of a compression.** The Rayleigh form of the compression at `y` equals the Rayleigh form
+/-- The Rayleigh form of the compression at `y` equals the Rayleigh form
 of the original operator at the underlying vector `(y : E)`. -/
 theorem compression_rayleigh {T : E →ₗ[𝕜] E}
     (S : Submodule 𝕜 E) [S.HasOrthogonalProjection] (y : S) :
@@ -108,7 +108,7 @@ theorem compression_rayleigh {T : E →ₗ[𝕜] E}
     Submodule.inner_orthogonalProjectionOnto_eq_of_mem_right]
 
 omit [FiniteDimensional 𝕜 E] in
-/-- **Subspaces of every smaller dimension inside a given subspace.** A subspace of dimension `m` can be thinned to a subspace of any
+/-- A subspace of dimension `m` can be thinned to a subspace of any
 smaller dimension. -/
 theorem exists_submodule_le_finrank_eq {W : Submodule 𝕜 E} {m : ℕ}
     (h : m ≤ Module.finrank 𝕜 W) :

@@ -78,7 +78,7 @@ private theorem maximalIdeal_notMem_minimalPrimes_of_ringKrullDim_pos
 
 end RegularDomainAux
 
-/-- **Existence of a parameter avoiding minimal primes and the square.** In a Noetherian local ring of positive Krull dimension, there is a
+/-- In a Noetherian local ring of positive Krull dimension, there is a
 parameter in the maximal ideal, outside its square and outside every
 minimal prime. -/
 theorem IsLocalRing.exists_mem_maximalIdeal_notMem_sq_forall_minimalPrimes_notMem
@@ -186,7 +186,7 @@ private theorem isDomain_of_isRegularLocalRing_aux :
 
 end RegularDomainAux
 
-/-- **Regular local rings are domains.** Every regular local ring is a domain. -/
+/-- Every regular local ring is a domain. -/
 theorem IsRegularLocalRing.isDomain (R : Type*) [CommRing R] [IsRegularLocalRing R] :
     IsDomain R :=
   RegularDomainAux.isDomain_of_isRegularLocalRing_aux ((maximalIdeal R).spanFinrank) R rfl

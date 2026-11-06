@@ -36,9 +36,8 @@ universe u v
 
 variable {Symbol : Type u} {State : Type v}
 
-/-- **Accepting transformations of a DFA.** For a DFA $M$ with set of states $Q$, start state
-$q_0$ and accepting states $F$, the accepting transformations of $M$ are the state
-transformations $f$ of $Q$ with $f(q_0) \in F$. -/
+/-- The accepting transformations of a DFA are those sending its start state to an accepting
+state. -/
 def transitionAccept (M : DFA Symbol State) : Set (StateTransformation State) :=
   {f | f M.start ∈ M.accept}
 
@@ -47,29 +46,20 @@ theorem mem_transitionAccept_iff (M : DFA Symbol State) (f : StateTransformation
     f ∈ transitionAccept M ↔ f M.start ∈ M.accept :=
   Iff.rfl
 
-/-- **The transition morphism recognizes through accepting transformations.** Let $M$ be a DFA
-with start state $q_0$ and accepting states $F$. The transition morphism of $M$, from words to
-state transformations, recognizes the language accepted by $M$ through the accepting
-transformations of $M$: a word is accepted by $M$ exactly when the transformation it induces
-sends $q_0$ into $F$. -/
+/-- The standard transition accepting set presents the general transition recognizer. -/
 theorem recognizes_transitionAccept (M : DFA Symbol State) :
     Recognizes M.accepts (transitionMorphism M) (transitionAccept M) := by
   simpa only [transitionAccept] using recognizes_transitionMorphism M
 
-/-- **The transition monoid recognizes the accepted language.** Let $M$ be a DFA with start
-state $q_0$ and accepting states $F$. The map sending each word to the element of the transition
-monoid of $M$ that it induces recognizes the language accepted by $M$, with accepting set the
-elements $f$ of the transition monoid such that $f(q_0) \in F$: a word is accepted by $M$ exactly
-when the transformation it induces sends $q_0$ into $F$. -/
+/-- The transition-monoid image recognizes the same language as the ambient transformation
+monoid. -/
 theorem recognizes_toTransitionMonoid (M : DFA Symbol State) :
     Recognizes M.accepts (MonoidHom.mrangeRestrict (transitionMorphism M))
       {f : TransitionMonoid M | f.val ∈ transitionAccept M} := by
   intro x
   exact recognizes_transitionAccept M x
 
-/-- **Finitely many state transformations.** If $Q$ is a finite set, then the monoid of state
-transformations of $Q$, consisting of all functions $Q \to Q$ multiplied in diagrammatic order,
-is finite. -/
+/-- A DFA with finite state space has a finite transformation monoid. -/
 theorem finite_stateTransformation [Finite State] : Finite (StateTransformation State) := by
   classical
   let _ : Fintype State := Fintype.ofFinite State
@@ -77,15 +67,13 @@ theorem finite_stateTransformation [Finite State] : Finite (StateTransformation 
     Fintype.ofEquiv (State → State) stateTransformationEquiv.symm
   infer_instance
 
-/-- **Transition monoids of finite automata are finite.** For every DFA $M$ with a finite set of
-states, the transition monoid of $M$ is finite. -/
+/-- The transition monoid of a finite-state DFA is finite. -/
 theorem finite_transitionMonoid (M : DFA Symbol State) [Finite State] :
     Finite (TransitionMonoid M) := by
   let _ : Finite (StateTransformation State) := finite_stateTransformation
   exact Subtype.finite
 
-/-- **Regular languages have finite syntactic monoids.** If $L$ is a regular language, then the
-syntactic monoid of $L$ is finite. -/
+/-- Regular languages have finite syntactic monoids. -/
 theorem finite_syntacticMonoid_of_isRegular {L : Language Symbol} (hL : L.IsRegular) :
     Finite (SyntacticMonoid L) := by
   let _ : Finite (NerodeClass L) :=
@@ -93,15 +81,13 @@ theorem finite_syntacticMonoid_of_isRegular {L : Language Symbol} (hL : L.IsRegu
   have hfinite := finite_syntacticMonoid_of_finite_dfa (nerodeDFA L)
   simpa only [accepts_nerodeDFA] using hfinite
 
-/-- **Regular languages are those with finite syntactic monoid.** A language $L$ is regular if
-and only if the syntactic monoid of $L$ is finite. -/
+/-- A language is regular exactly when its syntactic monoid is finite. -/
 theorem isRegular_iff_finite_syntacticMonoid (L : Language Symbol) :
     L.IsRegular ↔ Finite (SyntacticMonoid L) :=
   ⟨finite_syntacticMonoid_of_isRegular, fun _ ↦ isRegular_of_finite_syntacticMonoid L⟩
 
-/-- **The transition monoid maps to the syntactic monoid.** For a DFA $M$ accepting the language
-$L$, this is the monoid homomorphism from the transition monoid of $M$ to the syntactic monoid of
-$L$ that sends the transformation induced by each word $w$ to the syntactic class of $w$. -/
+/-- The syntactic monoid of a regular language can be represented as a quotient of the transition
+monoid of any finite DFA recognizing it. -/
 noncomputable def transitionMonoidToSyntactic (M : DFA Symbol State) :
     TransitionMonoid M →* SyntacticMonoid M.accepts :=
   recognizerImageToSyntactic (transitionMorphism M) (transitionAccept M)
@@ -119,18 +105,14 @@ theorem transitionMonoidToSyntactic_surjective (M : DFA Symbol State) :
   recognizerImageToSyntactic_surjective (transitionMorphism M) (transitionAccept M)
     (recognizes_transitionAccept M)
 
-/-- **The syntactic monoid is no larger than the transition monoid.** Let $M$ be a DFA
-accepting the language $L$, and suppose that the transition monoid of $M$ and the syntactic
-monoid of $L$ are both finite. Then the syntactic monoid of $L$ has at most as many elements as
-the transition monoid of $M$. -/
+/-- For finite state spaces, the syntactic monoid has no more elements than the transition
+monoid of any recognizing DFA. -/
 theorem card_syntacticMonoid_le_card_transitionMonoid (M : DFA Symbol State)
     [Fintype (TransitionMonoid M)] [Fintype (SyntacticMonoid M.accepts)] :
     Fintype.card (SyntacticMonoid M.accepts) ≤ Fintype.card (TransitionMonoid M) :=
   Fintype.card_le_of_surjective _ (transitionMonoidToSyntactic_surjective M)
 
-/-- **Endofunction bound for the syntactic monoid.** Let $M$ be a DFA with a finite
-set of states $Q$, and suppose the syntactic monoid of the language accepted by $M$ is
-finite. Then that syntactic monoid has at most $|Q|^{|Q|}$ elements. -/
+/-- A coarser numerical bound uses all endofunctions on the state space. -/
 theorem card_syntacticMonoid_le_card_endofunction (M : DFA Symbol State)
     [Fintype State] [Fintype (SyntacticMonoid M.accepts)] :
     Fintype.card (SyntacticMonoid M.accepts) ≤ Fintype.card State ^ Fintype.card State := by

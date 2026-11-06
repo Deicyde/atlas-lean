@@ -53,7 +53,7 @@ open MeasureTheory ProbabilityTheory
 
 variable {Ω : Type*} [MeasurableSpace Ω] {G : Type*} [Group G] [MulAction G Ω]
 
-/-- **Monte Carlo permutation p-value.** The Monte Carlo permutation p-value `(1 + #{b | T(g_b • ω) ≥ T(ω)}) / (B + 1)` of the
+/-- The Monte Carlo permutation p-value `(1 + #{b | T(g_b • ω) ≥ T(ω)}) / (B + 1)` of the
 statistic `T` at the data `ω` with the `B` drawn group elements `g`. -/
 noncomputable def monteCarloPermutationPValue {B : ℕ} (T : Ω → ℝ) (ω : Ω) (g : Fin B → G) :
     ℝ :=
@@ -182,7 +182,7 @@ private theorem sum_sum_measure_rankCount {Ω G : Type*} [MeasurableSpace Ω] [S
   push_cast
   ring
 
-/-- **Validity of Monte Carlo permutation p-values.** Phipson and Smyth (2010); Hemerik and Goeman (2018): if the null law `μ` is invariant under
+/-- Phipson and Smyth (2010); Hemerik and Goeman (2018): if the null law `μ` is invariant under
 a finite group `G` and `g₁, …, g_B` are drawn independently and uniformly from `G`,
 independently of the data, then `(1 + #{b | T(g_b • ω) ≥ T(ω)}) / (B + 1)` is a valid p-value
 under the joint law. -/

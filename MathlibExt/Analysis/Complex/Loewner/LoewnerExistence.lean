@@ -40,7 +40,7 @@ open UpperHalfPlane (upperHalfPlaneSet isOpen_upperHalfPlaneSet)
 
 namespace StatMech.SLE
 
-/-- **Picard–Lindelöf theorem with solutions confined to a ball.** Picard–Lindelöf with the solution confined to `closedBall x₀ a`: a strengthening of Mathlib's
+/-- Picard–Lindelöf with the solution confined to `closedBall x₀ a`: a strengthening of Mathlib's
 `IsPicardLindelof.exists_eq_forall_mem_Icc_hasDerivWithinAt₀` by the bound
 `α t ∈ closedBall x₀ a` for all `t`. -/
 theorem picard_exists_ball {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
@@ -59,7 +59,7 @@ theorem picard_exists_ball {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E
     nth_rw 1 [← hα]
     rw [ODE.FunSpace.compProj_of_mem ht', ODE.FunSpace.next_apply]
 
-/-- **Lipschitz Picard–Lindelöf flow confined to a ball.** Picard–Lindelöf local flow, Lipschitz in the initial point, with every trajectory in
+/-- Picard–Lindelöf local flow, Lipschitz in the initial point, with every trajectory in
 `closedBall x₀ a`: a strengthening of Mathlib's
 `IsPicardLindelof.exists_forall_mem_closedBall_eq_hasDerivWithinAt_lipschitzOnWith` by the ball
 bound. -/
@@ -237,7 +237,7 @@ theorem loewner_solution_unique {W : ℝ → ℝ} {ε : ℝ} (hε : 0 < ε)
     exact le_trans (min_le_right _ _) (hthmin (Ico_subset_Icc_self ht))
   exact loewner_solution_unique_of_strip hδ hg0 hh0 hgc hgd hgs hhc hhd hhs
 
-/-- **Local existence and uniqueness for the chordal Loewner equation.** Local existence and uniqueness for the chordal Loewner equation: the solution from
+/-- Local existence and uniqueness for the chordal Loewner equation: the solution from
 `loewner_local_existence` is the unique continuous solution on `[0, ε]` with right derivatives on
 `[0, ε)` that stays in `ℍ`. -/
 theorem loewner_local_existsUnique {W : ℝ → ℝ} (hW : Continuous W) {z : ℂ}

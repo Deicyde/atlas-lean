@@ -48,14 +48,9 @@ open Cslib.Algorithms.Lean
     _root_.Vector (_root_.Vector (ZMod 2) 1) n :=
   _root_.Vector.replicate n (_root_.Vector.replicate 1 0)
 
-/-- **Freivalds trial.** Given $n \times n$ matrices $A$, $B$, $C$ over
-$\mathbb{F}_2 = \mathbb{Z}/2$, stored as arrays of rows, and a seed $r \in \mathbb{F}_2^n$, the
-trial computes the column vectors $Br$, $A(Br)$ and $Cr$, each by accumulating matrix products
-into a zero column, and returns true exactly when $A(Br) = Cr$. Its cost is the pair (number of
-scalar multiplications, number of scalar additions), each multiply-add step counting one of each.
-
-The coefficient domain is $\mathbb{F}_2$ by intentional specialization, not by a restriction in
-the cited source. -/
+/-- Compute and materialize `B r`, `A (B r)`, and `C r`, then compare the two
+result columns. The input coefficient domain is `ZMod 2` by intentional specialization (see the
+module note), not by a restriction in the cited source. -/
 public def freivaldsTrial {n : Nat}
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) n) n)
     (r : Fin n → ZMod 2) : TimeM (Nat × Nat) Bool := do
@@ -68,12 +63,8 @@ public def freivaldsTrial {n : Nat}
 
 @[expose] public section
 
-/-- **Cost of the Freivalds trial.** For $n \times n$ matrices $A$, $B$, $C$ over
-$\mathbb{F}_2$ and every seed $r \in \mathbb{F}_2^n$, the Freivalds trial performs exactly
-$3n^2$ scalar multiplications and exactly $3n^2$ scalar additions.
-
-These counts belong to the same run that returns the acceptance bit and include the additions
-into the zero-initialized accumulators. -/
+/-- The arithmetic counts belong to the same execution that returns the
+acceptance Boolean, including all zero-initialized accumulator updates. -/
 theorem freivaldsTrial_time {n : Nat}
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) n) n)
     (r : Fin n → ZMod 2) :
@@ -81,9 +72,7 @@ theorem freivaldsTrial_time {n : Nat}
   apply Prod.ext <;>
     simp [freivaldsTrial, rectangularMatrixAccumulate_time, pow_two] <;> ring
 
-/-- **Matrix of a Freivalds input.** An $n \times n$ array $A$ of rows over
-$\mathbb{F}_2 = \mathbb{Z}/2$ determines the $n \times n$ matrix over $\mathbb{F}_2$ whose
-$(i, j)$ entry is entry $j$ of row $i$ of $A$. -/
+/-- The canonical matrix view of the existing array-backed input. -/
 public def freivaldsMatrix {n : Nat}
     (A : _root_.Vector (_root_.Vector (ZMod 2) n) n) :
     _root_.Matrix (Fin n) (Fin n) (ZMod 2) :=
@@ -122,9 +111,7 @@ private theorem column_eq_iff_entries_eq {n : Nat}
     change (a.get ⟨i, hi⟩).get 0 = (b.get ⟨i, hi⟩).get 0
     exact congrFun h ⟨i, hi⟩
 
-/-- **Acceptance criterion of the Freivalds trial.** For $n \times n$ matrices $A$, $B$, $C$ over
-$\mathbb{F}_2$ and every seed $r \in \mathbb{F}_2^n$, the Freivalds trial on $A$, $B$, $C$, $r$
-returns true if and only if $A(Br) = Cr$. -/
+/-- Acceptance refines the source's literal matrix-vector equality. -/
 theorem freivaldsTrial_accept_iff {n : Nat}
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) n) n)
     (r : Fin n → ZMod 2) :
@@ -137,9 +124,7 @@ theorem freivaldsTrial_accept_iff {n : Nat}
   simp only [columnEntries_product, seedColumn_entries]
 
 
-/-- **Acceptance via the product discrepancy.** For $n \times n$ matrices $A$, $B$, $C$ over
-$\mathbb{F}_2$ and every seed $r \in \mathbb{F}_2^n$, the Freivalds trial on $A$, $B$, $C$, $r$
-returns true if and only if $(AB - C)r = 0$. -/
+/-- Acceptance is exactly a zero image under the actual product discrepancy. -/
 theorem freivaldsTrial_accept_discrepancy_iff {n : Nat}
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) n) n)
     (r : Fin n → ZMod 2) :
@@ -148,9 +133,7 @@ theorem freivaldsTrial_accept_discrepancy_iff {n : Nat}
   rw [freivaldsTrial_accept_iff, _root_.Matrix.sub_mulVec,
     ← _root_.Matrix.mulVec_mulVec, sub_eq_zero]
 
-/-- **Completeness of the Freivalds trial.** Let $A$, $B$, $C$ be $n \times n$ matrices over
-$\mathbb{F}_2$ with $AB = C$. Then for every seed $r \in \mathbb{F}_2^n$ the Freivalds trial on
-$A$, $B$, $C$, $r$ returns true. This includes the case $n = 0$. -/
+/-- Correct products accept for every complete seed, including dimension zero. -/
 theorem freivaldsTrial_complete {n : Nat}
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) n) n)
     (h : freivaldsMatrix A * freivaldsMatrix B = freivaldsMatrix C)
@@ -159,9 +142,7 @@ theorem freivaldsTrial_complete {n : Nat}
   apply (freivaldsTrial_accept_discrepancy_iff A B C r).mpr
   simp [h]
 
-/-- **Freivalds trial on empty matrices.** For $0 \times 0$ matrices $A$, $B$, $C$ over
-$\mathbb{F}_2$ and the empty seed $r$, the Freivalds trial returns true at zero cost: it performs
-no scalar multiplications and no scalar additions. -/
+/-- Empty matrices accept at zero arithmetic cost in the same trial. -/
 theorem freivaldsTrial_empty
     (A B C : _root_.Vector (_root_.Vector (ZMod 2) 0) 0)
     (r : Fin 0 → ZMod 2) :

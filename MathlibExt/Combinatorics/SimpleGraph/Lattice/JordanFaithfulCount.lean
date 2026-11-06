@@ -241,7 +241,7 @@ theorem jfc_whb_delete_dichotomy (G : SimpleGraph (Site 2)) {p q f0 g0 : Site 2}
     rw [hdecomp]
     omega
 
-/-- **Whitney cut-cycle duality for a planar lattice subgraph.** Whitney's cut–cycle duality for `P`: for every subgraph `K` of `P` and edge `xy` of `P` not
+/-- Whitney's cut–cycle duality for `P`: for every subgraph `K` of `P` and edge `xy` of `P` not
 in `K`, with `f0g0` the dual edge across it, `x` and `y` are connected in `K` iff `f0` and
 `g0` are disconnected in the face-region graph of `K` with `f0g0` deleted. -/
 def jfc_WhbSync (P : PlanarZ2Subgraph) : Prop :=
@@ -343,7 +343,7 @@ theorem jfc_imageGraph_support_box (P : PlanarZ2Subgraph) :
   obtain ⟨s, t, _, hs, _⟩ := hw
   rw [← hs]; exact outerBoxRadius_spec P s
 
-/-- **Outer face region of a planar lattice subgraph.** The outer region: the component of the face-region graph of `P` containing a face far from
+/-- The outer region: the component of the face-region graph of `P` containing a face far from
 `P`. -/
 noncomputable def jfc_whb_outerRegion (P : PlanarZ2Subgraph) :
     (whb_faceRegion (imageGraph P)).ConnectedComponent :=
@@ -448,7 +448,7 @@ theorem jfc_pushGraph_le_lattice (P : PlanarZ2Subgraph) (K : SimpleGraph P.V) (h
   rintro a b ⟨x, y, hadj, rfl, rfl⟩
   exact P.isSub (hKle hadj)
 
-/-- **Pushed-forward subgraphs are locally finite.** The image of a subgraph of a `PlanarZ2Subgraph` is locally finite. -/
+/-- The image of a subgraph of a `PlanarZ2Subgraph` is locally finite. -/
 @[instance_reducible]
 noncomputable def jfc_pushGraph_locallyFinite (P : PlanarZ2Subgraph) (K : SimpleGraph P.V)
     (hKle : K ≤ P.G) : SimpleGraph.LocallyFinite (jei_pushGraph P K) := fun _v =>
@@ -481,7 +481,7 @@ theorem jfc_whbSync_step_of_evenContour (P : PlanarZ2Subgraph) (K : SimpleGraph 
     hshared hcc
   rwa [jei_push_reachable_iff P K x y] at hbicond
 
-/-- **Whitney duality for even-degree planar lattice subgraphs.** Every `PlanarZ2Subgraph` whose image has all degrees even satisfies `jfc_WhbSync`. -/
+/-- Every `PlanarZ2Subgraph` whose image has all degrees even satisfies `jfc_WhbSync`. -/
 def jfc_EvenDegreeThreading : Prop :=
   ∀ (P : PlanarZ2Subgraph), jeb_EvenDegreeSubgraph P → jfc_WhbSync P
 
@@ -577,7 +577,7 @@ theorem jfc_sq_reach_outerRegion {v : Site 2} (hv : v ≠ ![0, 0]) :
           ConnectedComponent.sound heast
       _ = jfc_whb_outerRegion jbc_Pce := hmk
 
-/-- **Interior region of the unit square.** The component of the face `(0, 0)` in the face-region graph of the unit square. -/
+/-- The component of the face `(0, 0)` in the face-region graph of the unit square. -/
 noncomputable def jfc_sq_interior : (whb_faceRegion (imageGraph jbc_Pce)).ConnectedComponent :=
   (whb_faceRegion (imageGraph jbc_Pce)).connectedComponentMk ![0, 0]
 

@@ -19,18 +19,15 @@ public import Mathlib.Topology.Bases
 
 @[expose] public section
 
-/-- **Countable network.** A topological space $X$ has a countable network if there is a
-countable family $\mathcal{N}$ of subsets of $X$ such that for every open set $U \subseteq X$
-and every point $x \in U$ there is some $V \in \mathcal{N}$ with $x \in V \subseteq U$.
-
-Network sets need not themselves be open. -/
+/-- A topological space has a countable network if there is a countable family
+of sets refining every open neighborhood of each of its points. Network sets
+need not themselves be open. -/
 def HasCountableNetwork (X : Type*) [TopologicalSpace X] : Prop :=
   ∃ 𝒩 : Set (Set X), 𝒩.Countable ∧
     ∀ ⦃U : Set X⦄, IsOpen U → ∀ x ∈ U,
       ∃ V ∈ 𝒩, x ∈ V ∧ V ⊆ U
 
-/-- **Second-countable spaces have a countable network.** Every second-countable topological
-space has a countable network. -/
+/-- Every second-countable space has a countable network. -/
 theorem hasCountableNetwork_of_secondCountable (X : Type*) [TopologicalSpace X]
     [SecondCountableTopology X] : HasCountableNetwork X := by
   obtain ⟨𝒩, h𝒩_countable, _h𝒩_nonempty, h𝒩_basis⟩ :=
@@ -39,7 +36,7 @@ theorem hasCountableNetwork_of_secondCountable (X : Type*) [TopologicalSpace X]
   intro U hU x hx
   exact h𝒩_basis.exists_subset_of_mem_open hx hU
 
-/-- **Countably monolithic space.** A topological space is countably monolithic (ω-monolithic) if the closure
+/-- A topological space is countably monolithic (ω-monolithic) if the closure
 of every countable subspace has a countable network. -/
 class CountablyMonolithicSpace (X : Type*) [TopologicalSpace X] : Prop where
   hasCountableNetwork_closure_of_countable :

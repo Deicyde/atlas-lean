@@ -18,9 +18,8 @@ open scoped SchwartzMap
 namespace MathlibExt.Analysis.Distribution.GaussianSchwartzWanted
 
 /--
-**The Gaussian is a Schwartz function.** Let $E$ be a finite-dimensional real inner product
-space. Then there is a real-valued Schwartz function $g$ on $E$ such that
-$g(x) = e^{-\|x\|^2}$ for every $x \in E$.
+The Gaussian `x ↦ exp(-‖x‖²)` on a finite-dimensional real inner-product
+space is a Schwartz function (the squared norm is smooth as `⟪x, x⟫`).
 
 Sources: Mathlib `docs/undergrad.yaml`, section "Distribution calculus" /
 "Spaces S(R^d)" / entry "Gaussian functions";

@@ -38,7 +38,7 @@ private theorem gauss (n : ℕ) : n * (n + 1) ≤ 2 * ∑ v ∈ Icc 1 n, v := by
     rw [sum_Icc_succ_top (by omega)]
     nlinarith
 
-/-- **Linear lower bound for the partition function.** The number of partitions of `n` is at least `(n + 1) / 2`. -/
+/-- The number of partitions of `n` is at least `(n + 1) / 2`. -/
 theorem succ_le_two_mul_card (n : ℕ) :
     n + 1 ≤ 2 * Fintype.card (Partition n) := by
   rcases Nat.eq_zero_or_pos n with rfl | hn

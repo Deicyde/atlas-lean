@@ -48,72 +48,44 @@ pinned Mathlib). `test` lemmas are not ported. The upstream
 states the result but does not prove it; an external Lean proof is linked in
 the registry. -/
 
-/-- **Equilateral triangle with given side.** For a real number $s$, a finite set $T$ of
-points in the Euclidean space $\mathbb{R}^d$ is an equilateral triangle of side $s$ when $T$ has
-exactly three elements and any two distinct points of $T$ are at distance $s$. -/
+/-- Three points with all pairwise distances equal to `side`. -/
 def IsEquilateralTriangle {d : ℕ} (side : ℝ)
     (T : Finset (EuclideanSpace ℝ (Fin d))) : Prop :=
   T.card = 3 ∧ ∀ p ∈ T, ∀ q ∈ T, p ≠ q → dist p q = side
 
-/-- **Unit equilateral triangle.** A finite set $T$ of points in the Euclidean space $\mathbb{R}^d$
-is a unit equilateral triangle when it is an equilateral triangle of side $1$: $T$ has exactly
-three elements and any two distinct points of $T$ are at distance $1$. -/
+/-- A unit equilateral triangle. -/
 def IsUnitEquilateralTriangle {d : ℕ}
     (T : Finset (EuclideanSpace ℝ (Fin d))) : Prop :=
   IsEquilateralTriangle 1 T
 
-/-- **Equilateral triangle of any size.** A finite set $T$ of points in the Euclidean space
-$\mathbb{R}^d$ is an equilateral triangle of any size when there is a real number $s > 0$ such
-that $T$ is an equilateral triangle of side $s$: $T$ has exactly three elements and any two
-distinct points of $T$ are at distance $s$. -/
+/-- An equilateral triangle of positive side length. -/
 def IsAnySizeEquilateralTriangle {d : ℕ}
     (T : Finset (EuclideanSpace ℝ (Fin d))) : Prop :=
   ∃ side : ℝ, 0 < side ∧ IsEquilateralTriangle side T
 
-/-- **Number of unit equilateral triangles in a point set.** For a finite set $P$ of points in
-the Euclidean space $\mathbb{R}^d$, this is the number of three-element subsets of $P$ that are
-unit equilateral triangles, that is, whose three points are pairwise at distance $1$. -/
+/-- Unit equilateral triangles spanned by a point set. -/
 noncomputable def unitEquilateralTriangleCount (d : ℕ)
     (P : Finset (EuclideanSpace ℝ (Fin d))) : ℕ :=
   open scoped Classical in
   ((P.powersetCard 3).filter fun T => IsUnitEquilateralTriangle T).card
 
-/-- **Number of equilateral triangles in a point set.** For a finite set $P$ of points in the
-Euclidean space $\mathbb{R}^d$, this is the number of three-element subsets of $P$ that are
-equilateral triangles of some positive side length $s$, that is, whose three points are pairwise
-at distance $s$. -/
+/-- Positive-side equilateral triangles spanned by a point set. -/
 noncomputable def anySizeEquilateralTriangleCount (d : ℕ)
     (P : Finset (EuclideanSpace ℝ (Fin d))) : ℕ :=
   open scoped Classical in
   ((P.powersetCard 3).filter fun T => IsAnySizeEquilateralTriangle T).card
 
-/-- **Maximum number of unit equilateral triangles.** For natural numbers $d$ and $n$, $T_1(d, n)$
-is the supremum in $\mathbb{N}$, over all sets $P$ of exactly $n$ points in the Euclidean space
-$\mathbb{R}^d$, of the number of unit equilateral triangles spanned by $P$ (the three-element
-subsets of $P$ whose points are pairwise at distance $1$). When such sets exist this is the
-largest such number; when none exist (only for $d = 0$ and $n \ge 2$) it is $0$. -/
+/-- Max unit triangles over `n`-point sets in `ℝ^d`. -/
 noncomputable def TUnit (d n : ℕ) : ℕ :=
   sSup {m : ℕ | ∃ P : Finset (EuclideanSpace ℝ (Fin d)),
     P.card = n ∧ unitEquilateralTriangleCount d P = m}
 
-/-- **Maximum number of equilateral triangles.** For natural numbers $d$ and $n$, $T(d, n)$ is the
-supremum in $\mathbb{N}$, over all sets $P$ of exactly $n$ points in the Euclidean space
-$\mathbb{R}^d$, of the number of equilateral triangles of positive side length spanned by $P$
-(the three-element subsets of $P$ whose points are pairwise at the same positive distance). When
-such sets exist this is the largest such number; when none exist (only for $d = 0$ and $n \ge 2$)
-it is $0$. -/
+/-- Max any-size triangles over `n`-point sets in `ℝ^d`. -/
 noncomputable def TAnySize (d n : ℕ) : ℕ :=
   sSup {m : ℕ | ∃ P : Finset (EuclideanSpace ℝ (Fin d)),
     P.card = n ∧ anySizeEquilateralTriangleCount d P = m}
 
-/-- **Statement of Erdős Problem 755.** Let $T_1(n)$ be the largest number of unit equilateral
-triangles spanned by a set of $n$ points in $\mathbb{R}^6$, and let $T(n)$ be the largest number
-of equilateral triangles of positive side length spanned by a set of $n$ points in
-$\mathbb{R}^6$; a triangle spanned by a set is a three-element subset of it whose points are
-pairwise at the same distance. The statement asserts both of the following: there is a function
-$o : \mathbb{N} \to \mathbb{R}$ with $o(n) \to 0$ as $n \to \infty$ such that
-$T_1(n) \le (1/27 + o(n))\, n^3$ for all sufficiently large $n$; and $T(n)$ is asymptotically
-equivalent to $n^3/27$ as $n \to \infty$. -/
+/-- `(1/27 + o(1)) n³` unit triangles in `ℝ⁶`, and the any-size form. -/
 def conjecture : Prop :=
   (∃ o : ℕ → ℝ,
     o =o[atTop] (fun _ : ℕ => (1 : ℝ)) ∧
@@ -123,20 +95,11 @@ def conjecture : Prop :=
     (fun n : ℕ => (1 / 27 : ℝ) * (n : ℝ) ^ 3))
 
 /--
-**Erdős Problem 755 holds (Clemen–Dumitrescu–Liu).** Let $T_1(n)$ be the largest number of unit
-equilateral triangles spanned by a set of $n$ points in $\mathbb{R}^6$, and let $T(n)$ be the
-largest number of equilateral triangles of positive side length spanned by a set of $n$ points in
-$\mathbb{R}^6$; a triangle spanned by a set is a three-element subset of it whose points are
-pairwise at the same distance. Then there is a function $o : \mathbb{N} \to \mathbb{R}$ with
-$o(n) \to 0$ as $n \to \infty$ such that $T_1(n) \le (1/27 + o(n))\, n^3$ for all sufficiently
-large $n$, and $T(n)$ is asymptotically equivalent to $n^3/27$ as $n \to \infty$.
-
-Source: Felix
+Resolved true: Resolved externally by Clemen, Dumitrescu, and Liu. This repository records the
+statement, not an internal proof; a separate pinned Lean proof is cited below. Source: Felix
 Christian Clemen, Adrian Dumitrescu, and Dingyuan Liu, The number of regular simplices in higher
 dimensions, arXiv:2507.19841 (2025), https://arxiv.org/abs/2507.19841. Moved from
-`OpenConjectures/Geometry/ErdosProblem755`. Resolved true: Resolved externally by Clemen,
-Dumitrescu, and Liu. This repository records the statement, not an internal proof; a separate
-pinned Lean proof is cited in the registry.
+`OpenConjectures/Geometry/ErdosProblem755`.
 -/
 public theorem_wanted conjecture_holds : conjecture
 

@@ -60,7 +60,7 @@ open Kingman BirkhoffAE KingmanAE
 
 variable {α : Type*} [MeasurableSpace α] {μ : Measure α} {T : α → α} {X : ℕ → α → ℝ}
 
-/-- **Real lower limit of a normalized cocycle.** The lower limit `liminf_n X n x / n`, cast to `ℝ`. -/
+/-- The lower limit `liminf_n X n x / n`, cast to `ℝ`. -/
 noncomputable def gLow (T : α → α) (X : ℕ → α → ℝ) (x : α) : ℝ := (gStarLow T X x).toReal
 
 theorem aemeasurable_gStarLow (h : SubadditiveCocycle T μ X) : AEMeasurable (gStarLow T X) μ := by
@@ -90,14 +90,14 @@ theorem gLow_nonneg_ae (hnn : ∀ n, 0 ≤ᵐ[μ] X n) :
   filter_upwards [gStarLow_nonneg_ae (T := T) hnn] with x hx
   exact EReal.toReal_nonneg hx
 
-/-- **Ordered extended reals with equal real parts are equal.** Two extended reals `x ≤ y` with `x ≠ ⊥`, `y ≠ ⊤` and equal real parts are equal. -/
+/-- Two extended reals `x ≤ y` with `x ≠ ⊥`, `y ≠ ⊤` and equal real parts are equal. -/
 theorem eq_of_le_toReal_eq {x y : EReal} (hle : x ≤ y) (hxbot : x ≠ ⊥) (hytop : y ≠ ⊤)
     (heq : x.toReal = y.toReal) : x = y := by
   have hxtop : x ≠ ⊤ := fun hh => hytop (top_le_iff.mp (hh ▸ hle))
   have hybot : y ≠ ⊥ := fun hh => hxbot (le_bot_iff.mp (hh ▸ hle))
   rw [← EReal.coe_toReal hxtop hxbot, ← EReal.coe_toReal hytop hybot, heq]
 
-/-- **Lower limit of a cocycle is nondecreasing along the map.** The lower limit is nondecreasing along `T`: `g_* ≤ g_* ∘ T` almost everywhere. -/
+/-- The lower limit is nondecreasing along `T`: `g_* ≤ g_* ∘ T` almost everywhere. -/
 theorem gStarLow_le_comp (h : SubadditiveCocycle T μ X) :
     ∀ᵐ x ∂μ, gStarLow T X x ≤ gStarLow T X (T x) := by
   have hsub : ∀ᵐ x ∂μ, ∀ n, X (n + 1) x ≤ X 1 x + X n (T x) := by
@@ -152,15 +152,15 @@ theorem gStarLow_le_comp (h : SubadditiveCocycle T μ X) :
       rw [hrhs] at hmul; linarith [hXnT, hmul]
     rw [← hyeq]; exact_mod_cast hgoal
 
-/-- **Bad set in the greedy decomposition for Kingman's theorem.** The bad set: points where `X m x > (gLow x + ε) m` for every block length `1 ≤ m ≤ N`. -/
+/-- The bad set: points where `X m x > (gLow x + ε) m` for every block length `1 ≤ m ≤ N`. -/
 def badSet (T : α → α) (X : ℕ → α → ℝ) (ε : ℝ) (N : ℕ) : Set α :=
   {x | ∀ m, 1 ≤ m → m ≤ N → (gLow T X x + ε) * m < X m x}
 
-/-- **Per-step budget of the greedy decomposition.** The per-step budget `gLow + ε + 1_{badSet} X 1` of the greedy decomposition. -/
+/-- The per-step budget `gLow + ε + 1_{badSet} X 1` of the greedy decomposition. -/
 noncomputable def dep (T : α → α) (X : ℕ → α → ℝ) (ε : ℝ) (N : ℕ) (y : α) : ℝ :=
   gLow T X y + ε + (badSet T X ε N).indicator (fun z => X 1 z) y
 
-/-- **Cost of a bad step in the greedy decomposition.** The cost `1_{badSet} X 1` of a bad step. -/
+/-- The cost `1_{badSet} X 1` of a bad step. -/
 noncomputable def badCost (T : α → α) (X : ℕ → α → ℝ) (ε : ℝ) (N : ℕ) (x : α) : ℝ :=
   (badSet T X ε N).indicator (fun z => X 1 z) x
 
@@ -175,7 +175,7 @@ theorem dep_nonneg {ε : ℝ} {N : ℕ} {y : α} (hg : 0 ≤ gLow T X y) (hε : 
   linarith
 
 omit [MeasurableSpace α] in
-/-- **Greedy decomposition along an orbit.** Greedy decomposition along one orbit: `X n (T^[s] x)` is at most the sum of the budgets
+/-- Greedy decomposition along one orbit: `X n (T^[s] x)` is at most the sum of the budgets
 `dep` over `n` steps plus one remainder term, for every `n` and starting time `s`. -/
 theorem greedy (ε : ℝ) (N : ℕ) (hN : 1 ≤ N) (x : α)
     (hsub : ∀ s a b, X (a + b) (T^[s] x) ≤ X a (T^[s] x) + X b (T^[a + s] x))
@@ -278,7 +278,7 @@ theorem greedy (ε : ℝ) (N : ℕ) (hN : 1 ≤ N) (x : α)
           _ ≤ (∑ j ∈ Finset.range n, dep T X ε N (T^[s+j] x)) + remDom X N (T^[s] x) := by linarith
 
 omit [MeasurableSpace α] in
-/-- **Windowed greedy bound from time zero.** The greedy bound from time `0`, with the remainder bounded by a sum over the last window. -/
+/-- The greedy bound from time `0`, with the remainder bounded by a sum over the last window. -/
 theorem greedy_windowed (ε : ℝ) (N : ℕ) (hN : 1 ≤ N) (x : α)
     (hsub : ∀ s a b, X (a + b) (T^[s] x) ≤ X a (T^[s] x) + X b (T^[a + s] x))
     (hmono : ∀ i j, i ≤ j → gLow T X (T^[i] x) ≤ gLow T X (T^[j] x))
@@ -540,7 +540,7 @@ theorem gamma_le_integral_gLow_add_eps (h : SubadditiveCocycle T μ X) (hnn : �
   filter_upwards with N
   exact hN (N+1) (by omega)
 
-/-- **Time constant is at most the integral of the lower limit.** The time constant is at most `∫ g_*`. -/
+/-- The time constant is at most `∫ g_*`. -/
 theorem gamma_le_integral_gLow (h : SubadditiveCocycle T μ X) (hnn : ∀ n, 0 ≤ᵐ[μ] X n) :
     h.gamma ≤ ∫ x, gLow T X x ∂μ := by
   set G := ∫ x, gLow T X x ∂μ with hG
@@ -582,7 +582,7 @@ theorem gStar_le_gStarLow_ae_of_gamma_le_integral (h : SubadditiveCocycle T μ X
   have hlowbot : gStarLow T X x ≠ ⊥ := (lt_of_lt_of_le EReal.bot_lt_zero hg0).ne'
   exact ge_of_eq (eq_of_le_toReal_eq hlow_le hlowbot htop.ne htoReal_eq.symm)
 
-/-- **Upper and lower limits of a nonnegative cocycle agree.** For a nonnegative cocycle the upper and lower limits of `X n / n` agree almost everywhere. -/
+/-- For a nonnegative cocycle the upper and lower limits of `X n / n` agree almost everywhere. -/
 theorem gStar_le_gStarLow_ae (h : SubadditiveCocycle T μ X) (hnn : ∀ n, 0 ≤ᵐ[μ] X n) :
     ∀ᵐ x ∂μ, gStar T X x ≤ gStarLow T X x :=
   gStar_le_gStarLow_ae_of_gamma_le_integral h hnn (gamma_le_integral_gLow h hnn)

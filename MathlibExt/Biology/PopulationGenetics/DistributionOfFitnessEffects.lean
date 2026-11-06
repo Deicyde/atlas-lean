@@ -118,7 +118,7 @@ private theorem sampling_bound (θ σ : ℝ) {n i : ℕ} (hi : 0 < i) (hin : i <
       · exact pow_le_one₀ (le_of_lt hsub) (by linarith)
     _ = |θ| * n.choose i := by ring
 
-/-- **Uniform bound on the expected site-frequency spectrum.** The expected number of sites with `i` derived copies in a sample of `n`, `1 ≤ i < n`, is
+/-- The expected number of sites with `i` derived copies in a sample of `n`, `1 ≤ i < n`, is
 bounded uniformly in the selection coefficient: `|E ξ_i(σ)| ≤ |θ| C(n, i)`. -/
 theorem abs_expectedSFS_le (θ σ : ℝ) {n i : ℕ} (hi : 0 < i) (hin : i < n) :
     |expectedSFS θ σ n i| ≤ |θ| * n.choose i := by
@@ -130,13 +130,13 @@ theorem abs_expectedSFS_le (θ σ : ℝ) {n i : ℕ} (hi : 0 < i) (hin : i < n) 
 
 /-! ### Spectra under a distribution of fitness effects -/
 
-/-- **Site-frequency spectrum under a distribution of fitness effects.** The expected unfolded site-frequency spectrum under the distribution of fitness effects
+/-- The expected unfolded site-frequency spectrum under the distribution of fitness effects
 `μ` (a law on the scaled selection coefficient `σ = 2Ns`): `∫ E ξ_i(σ) dμ(σ)`, where each new
 mutation draws its own `σ` from `μ`. -/
 noncomputable def dfeSFS (μ : Measure ℝ) (θ : ℝ) (n i : ℕ) : ℝ :=
   ∫ σ, expectedSFS θ σ n i ∂μ
 
-/-- **Frequency density averaged over a distribution of fitness effects.** The Poisson-random-field frequency density averaged over the distribution of fitness
+/-- The Poisson-random-field frequency density averaged over the distribution of fitness
 effects `μ`: `∫ φ_σ(x) dμ(σ)`. -/
 noncomputable def dfeDensity (μ : Measure ℝ) (θ x : ℝ) : ℝ :=
   ∫ σ, prfDensity θ σ x ∂μ
@@ -167,7 +167,7 @@ private theorem sampling_integrable (μ : Measure ℝ) [IsFiniteMeasure μ] (θ 
   filter_upwards [hx] with p hp
   exact sampling_bound θ p.1 hi hin (Ioc_subset_Icc_self hp)
 
-/-- **Integrability of the expected spectrum in the selection coefficient.** For `1 ≤ i < n`, the expected spectrum `E ξ_i(σ)` is integrable in `σ` against every
+/-- For `1 ≤ i < n`, the expected spectrum `E ξ_i(σ)` is integrable in `σ` against every
 finite measure. -/
 theorem integrable_expectedSFS (μ : Measure ℝ) [IsFiniteMeasure μ] (θ : ℝ) {n i : ℕ}
     (hi : 0 < i) (hin : i < n) : Integrable (fun σ => expectedSFS θ σ n i) μ := by
@@ -194,58 +194,58 @@ theorem dfeSFS_eq_integral_dfeDensity (μ : Measure ℝ) [IsFiniteMeasure μ] (�
   exact integral_const_mul ((n.choose i : ℝ) * x ^ i * (1 - x) ^ (n - i))
     (fun σ => prfDensity θ σ x)
 
-/-- **Spectrum under a point-mass DFE is the single-selection spectrum.** A DFE concentrated on one selection coefficient gives the single-`σ` spectrum. -/
+/-- A DFE concentrated on one selection coefficient gives the single-`σ` spectrum. -/
 theorem dfeSFS_dirac (σ θ : ℝ) (n i : ℕ) :
     dfeSFS (Measure.dirac σ) θ n i = expectedSFS θ σ n i := by
   simp [dfeSFS, integral_dirac]
 
-/-- **DFE spectrum is additive in the measure.** The spectrum is additive in the (finite) DFE. -/
+/-- The spectrum is additive in the (finite) DFE. -/
 theorem dfeSFS_add_measure (μ ν : Measure ℝ) [IsFiniteMeasure μ] [IsFiniteMeasure ν] (θ : ℝ)
     {n i : ℕ} (hi : 0 < i) (hin : i < n) :
     dfeSFS (μ + ν) θ n i = dfeSFS μ θ n i + dfeSFS ν θ n i :=
   integral_add_measure (integrable_expectedSFS μ θ hi hin) (integrable_expectedSFS ν θ hi hin)
 
-/-- **DFE spectrum is homogeneous in the measure.** The spectrum is homogeneous in the DFE. -/
+/-- The spectrum is homogeneous in the DFE. -/
 theorem dfeSFS_smul_measure (c : ℝ≥0∞) (μ : Measure ℝ) (θ : ℝ) (n i : ℕ) :
     dfeSFS (c • μ) θ n i = c.toReal * dfeSFS μ θ n i := by
   simp [dfeSFS, integral_smul_measure, smul_eq_mul]
 
 /-! ### The gamma DFE -/
 
-/-- **Gamma distribution of fitness effects.** The gamma distribution of fitness effects (Boyko et al. 2008): the scaled selection
+/-- The gamma distribution of fitness effects (Boyko et al. 2008): the scaled selection
 coefficient is `σ = -T` with `T ~ Gamma(a, r)`, shape `a > 0` and rate `r > 0` (scale `1 / r`),
 so new mutations are deleterious with mean strength `a / r`. -/
 noncomputable def gammaDFE (a r : ℝ) : Measure ℝ :=
   (gammaMeasure a r).map Neg.neg
 
-/-- **Gamma DFE is a probability measure.** The gamma DFE is a probability law. -/
+/-- The gamma DFE is a probability law. -/
 theorem isProbabilityMeasure_gammaDFE {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
     IsProbabilityMeasure (gammaDFE a r) := by
   have := isProbabilityMeasure_gammaMeasure ha hr
   unfold gammaDFE
   infer_instance
 
-/-- **No mutation is beneficial under the gamma DFE.** Under the gamma DFE no mutation is beneficial. -/
+/-- Under the gamma DFE no mutation is beneficial. -/
 theorem gammaDFE_Ioi_zero (a r : ℝ) : gammaDFE a r (Ioi 0) = 0 := by
   have h : Neg.neg ⁻¹' Ioi (0 : ℝ) = Iio 0 := by ext; simp
   rw [gammaDFE, Measure.map_apply measurable_neg measurableSet_Ioi, h, gammaMeasure,
     withDensity_apply _ measurableSet_Iio]
   exact lintegral_gammaPDF_of_nonpos le_rfl
 
-/-- **Mean selection coefficient under the gamma DFE.** The mean scaled selection coefficient under the gamma DFE is `-a / r`. -/
+/-- The mean scaled selection coefficient under the gamma DFE is `-a / r`. -/
 theorem integral_id_gammaDFE {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
     ∫ σ, σ ∂gammaDFE a r = -(a / r) := by
   rw [gammaDFE, integral_map measurable_neg.aemeasurable (by fun_prop), integral_neg,
     integral_id_gammaMeasure ha hr]
 
-/-- **Variance of the selection coefficient under the gamma DFE.** The variance of the scaled selection coefficient under the gamma DFE is `a / r ^ 2`. -/
+/-- The variance of the scaled selection coefficient under the gamma DFE is `a / r ^ 2`. -/
 theorem variance_id_gammaDFE {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
     variance id (gammaDFE a r) = a / r ^ 2 := by
   rw [gammaDFE, variance_id_map measurable_neg.aemeasurable]
   change variance (-id) (gammaMeasure a r) = a / r ^ 2
   rw [variance_neg, variance_id_gammaMeasure ha hr]
 
-/-- **Rescaling a gamma DFE divides its rate.** Rescaling a gamma DFE by `c > 0` (for example from `s` to `σ = 2Ns`, `c = 2N`) keeps the
+/-- Rescaling a gamma DFE by `c > 0` (for example from `s` to `σ = 2Ns`, `c = 2N`) keeps the
 shape and divides the rate by `c`. -/
 theorem gammaDFE_map_const_mul {a r c : ℝ} (ha : 0 < a) (hr : 0 < r) (hc : 0 < c) :
     (gammaDFE a r).map (fun σ => c * σ) = gammaDFE a (r / c) := by
@@ -264,7 +264,7 @@ theorem gammaDFE_real_Iio {a r c : ℝ} (ha : 0 < a) (hr : 0 < r) (hc : 0 ≤ c)
   rw [measureReal_def, gammaDFE, Measure.map_apply measurable_neg measurableSet_Iio, h,
     ← measureReal_def, gammaMeasure_real_Ioi ha hr hc]
 
-/-- **Fraction of mutations in a strength interval under the gamma DFE.** The fraction of new mutations whose strength `-σ` lies in `(c₁, c₂]`, `0 ≤ c₁ ≤ c₂`, is
+/-- The fraction of new mutations whose strength `-σ` lies in `(c₁, c₂]`, `0 ≤ c₁ ≤ c₂`, is
 `(Γ(a, r c₁) - Γ(a, r c₂)) / Γ(a)`. -/
 theorem gammaDFE_real_Ico {a r c₁ c₂ : ℝ} (ha : 0 < a) (hr : 0 < r) (hc₁ : 0 ≤ c₁)
     (hc : c₁ ≤ c₂) :
@@ -278,7 +278,7 @@ theorem gammaDFE_real_Ico {a r c₁ c₂ : ℝ} (ha : 0 < a) (hr : 0 < r) (hc₁
     measureReal_sdiff (Set.Ioi_subset_Ioi hc) measurableSet_Ioi,
     gammaMeasure_real_Ioi ha hr hc₁, gammaMeasure_real_Ioi ha hr (hc₁.trans hc), sub_div]
 
-/-- **Site-frequency spectrum under the gamma DFE.** The spectrum under the gamma DFE as an integral against the gamma law of the strength. -/
+/-- The spectrum under the gamma DFE as an integral against the gamma law of the strength. -/
 theorem dfeSFS_gammaDFE (a r θ : ℝ) (n i : ℕ) :
     dfeSFS (gammaDFE a r) θ n i = ∫ t, expectedSFS θ (-t) n i ∂gammaMeasure a r :=
   integral_map_equiv (MeasurableEquiv.neg ℝ) (fun σ => expectedSFS θ σ n i)
@@ -289,12 +289,12 @@ section Likelihood
 
 variable {ι : Type*} [Fintype ι]
 
-/-- **Poisson log-likelihood of counts.** The Poisson log-likelihood `∑ (k_i log E_i - E_i - log k_i!)` of counts `k_i` with means
+/-- The Poisson log-likelihood `∑ (k_i log E_i - E_i - log k_i!)` of counts `k_i` with means
 `E_i`. Meaningful for `E_i > 0`; at `E_i = 0` Lean's `log 0 = 0` gives a junk value. -/
 noncomputable def poissonLogLik (E : ι → ℝ) (k : ι → ℕ) : ℝ :=
   ∑ i, ((k i : ℝ) * log (E i) - E i - log (Nat.factorial (k i)))
 
-/-- **Probability of a count vector under independent Poisson laws.** The joint law of independent Poisson counts with means `E_i` gives the count vector `k`
+/-- The joint law of independent Poisson counts with means `E_i` gives the count vector `k`
 the probability `∏ e^{-E_i} E_i ^ {k_i} / (k_i!)`. -/
 theorem pi_poissonMeasure_real_singleton (E : ι → ℝ≥0) (k : ι → ℕ) :
     (Measure.pi fun i => poissonMeasure (E i)).real {k} =
@@ -326,7 +326,7 @@ theorem log_pi_poissonMeasure_real_singleton (E : ι → ℝ≥0) (hE : ∀ i, 0
 
 variable {V : Type*} [NormedAddCommGroup V] [NormedSpace ℝ V]
 
-/-- **Derivative of the Poisson log-likelihood.** The derivative of the log-likelihood in the parameter `ψ`, when the means `E_i(ψ)` are
+/-- The derivative of the log-likelihood in the parameter `ψ`, when the means `E_i(ψ)` are
 positive and differentiable at `ψ`: `∑ (k_i / E_i(ψ) - 1) · DE_i(ψ)`. -/
 theorem hasFDerivAt_poissonLogLik {E : ι → V → ℝ} {ψ : V}
     (hE : ∀ i, DifferentiableAt ℝ (E i) ψ) (hpos : ∀ i, 0 < E i ψ) (k : ι → ℕ) :

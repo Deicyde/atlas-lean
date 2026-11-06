@@ -65,7 +65,7 @@ universe u
 
 variable {α : Type u}
 
-/-- **Planar rooted binary tree with labeled leaves.** A planar rooted binary tree with leaves labeled by `α`: a leaf `leaf a`, or an internal
+/-- A planar rooted binary tree with leaves labeled by `α`: a leaf `leaf a`, or an internal
 vertex `node l r` with left subtree `l` and right subtree `r` (the children are ordered). -/
 inductive PlaneTree (α : Type u) where
   /-- A leaf labeled `a`. -/
@@ -76,12 +76,12 @@ inductive PlaneTree (α : Type u) where
 
 namespace PlaneTree
 
-/-- **Leaf labels of a planar binary tree.** The multiset of leaf labels. -/
+/-- The multiset of leaf labels. -/
 def leaves : PlaneTree α → Multiset α
   | leaf a => {a}
   | node l r => leaves l + leaves r
 
-/-- **Every planar binary tree has a leaf.** Every planar tree has at least one leaf. -/
+/-- Every planar tree has at least one leaf. -/
 theorem leaves_ne_zero : ∀ t : PlaneTree α, t.leaves ≠ 0
   | leaf _ => Multiset.singleton_ne_zero _
   | node l r => fun h => by
@@ -90,7 +90,7 @@ theorem leaves_ne_zero : ∀ t : PlaneTree α, t.leaves ≠ 0
         Multiset.card_eq_zero] at this
       exact leaves_ne_zero l this.1
 
-/-- **Swap of the children of an internal vertex.** One swap: exchange the two children of one internal vertex (anywhere in the tree). -/
+/-- One swap: exchange the two children of one internal vertex (anywhere in the tree). -/
 inductive Swap : PlaneTree α → PlaneTree α → Prop
   /-- Exchange the children of the root. -/
   | root (l r : PlaneTree α) : Swap (node l r) (node r l)
@@ -99,7 +99,7 @@ inductive Swap : PlaneTree α → PlaneTree α → Prop
   /-- Swap inside the right subtree. -/
   | right (l : PlaneTree α) {r r' : PlaneTree α} : Swap r r' → Swap (node l r) (node l r')
 
-/-- **Planar drawings of rooted binary trees on a taxon set.** The planar drawings of rooted binary trees on the taxa `X`: planar trees whose leaves are
+/-- The planar drawings of rooted binary trees on the taxa `X`: planar trees whose leaves are
 labeled by `X`, each taxon labeling exactly one leaf. -/
 def On (X : Finset α) : Type u :=
   {t : PlaneTree α // t.leaves = X.val}
@@ -112,7 +112,7 @@ instance swapSetoid (X : Finset α) : Setoid (On X) where
 
 end PlaneTree
 
-/-- **Rooted binary phylogenetic tree.** The **rooted binary phylogenetic trees** on the taxa `X`: planar drawings with leaf set `X`
+/-- The **rooted binary phylogenetic trees** on the taxa `X`: planar drawings with leaf set `X`
 modulo exchanging the two children of internal vertices, i.e. rooted binary trees with
 unordered children and leaves labeled bijectively by `X`, up to label-preserving isomorphism. -/
 def RootedBinaryTree (X : Finset α) : Type u :=

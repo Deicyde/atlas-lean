@@ -37,12 +37,12 @@ open Finset
 
 variable {J ρ γ A : Type*}
 
-/-- **Ordered rectangles of a finite grid.** Ordered grid rectangles, indexed by an increasing row pair and increasing column pair. -/
+/-- Ordered grid rectangles, indexed by an increasing row pair and increasing column pair. -/
 def gridRectangles (ρ γ : Type*) [Fintype ρ] [LinearOrder ρ]
     [Fintype γ] [LinearOrder γ] : Finset ((ρ × ρ) × (γ × γ)) :=
   orderedPairs ρ ×ˢ orderedPairs γ
 
-/-- **Applying a rectangle kernel to its diagonal ends.** Apply a rectangle kernel to its four directed diagonal ends `x`, `y`, `u`, `v`. -/
+/-- Apply a rectangle kernel to its four directed diagonal ends `x`, `y`, `u`, `v`. -/
 def rectangleApply (G : A → A → A → A → ℤ)
     (ℓ : Matrix (ρ × γ) (ρ × γ) A) (ω : (ρ × ρ) × (γ × γ)) : ℤ :=
   G (ℓ (ω.1.1, ω.2.1) (ω.1.2, ω.2.2))
@@ -50,14 +50,14 @@ def rectangleApply (G : A → A → A → A → ℤ)
     (ℓ (ω.1.2, ω.2.1) (ω.1.1, ω.2.2))
     (ℓ (ω.1.2, ω.2.2) (ω.1.1, ω.2.1))
 
-/-- **Directed labelings of a finite grid.** Directed grid labelings with independent finite choices on edges and diagonal entries. -/
+/-- Directed grid labelings with independent finite choices on edges and diagonal entries. -/
 def gridLabelings [Fintype ρ] [Fintype γ] [DecidableEq (ρ × γ)] [DecidableEq A]
     (labels diagonalLabels : Finset A) : Finset (Matrix (ρ × γ) (ρ × γ) A) :=
   (Fintype.piFinset fun w =>
     Fintype.piFinset fun w' => if w' = w then diagonalLabels else labels).map
       Matrix.of.toEmbedding
 
-/-- **Characterization of directed grid labelings.** Membership in `gridLabelings` means precisely that diagonal and edge coordinates use their
+/-- Membership in `gridLabelings` means precisely that diagonal and edge coordinates use their
 respective finite choice sets. -/
 @[simp] theorem mem_gridLabelings [Fintype ρ] [Fintype γ] [DecidableEq (ρ × γ)]
     [DecidableEq A]
@@ -84,7 +84,7 @@ respective finite choice sets. -/
     · simpa [hww] using (h w w').1 hww
     · simpa [hww] using (h w w').2 hww
 
-/-- **Finite grid tensor evaluation.** The finite grid evaluation: local tensors, row and column edge equalities, and one kernel per
+/-- The finite grid evaluation: local tensors, row and column edge equalities, and one kernel per
 ordered rectangle, summed over all directed labelings. -/
 def gridValue [Fintype ρ] [LinearOrder ρ] [Fintype γ] [LinearOrder γ]
     [DecidableEq A] (labels diagonalLabels : Finset A) (R : Instance (ρ × γ) A)
@@ -99,14 +99,14 @@ def gridValue [Fintype ρ] [LinearOrder ρ] [Fintype γ] [LinearOrder γ]
 
 namespace Instance
 
-/-- **Transporting a tensor instance to a grid.** Transport an instance to a grid, returning zero unless the self-label is the chosen default. -/
+/-- Transport an instance to a grid, returning zero unless the self-label is the chosen default. -/
 def onGrid [DecidableEq A] (R : Instance J A) (default : A) (e : J ≃ ρ × γ) :
     Instance (ρ × γ) A :=
   fun w h => if h w = default then R (e.symm w) (fun v => h (e v)) else 0
 
 end Instance
 
-/-- **Crossing kernel on grid rectangles.** The crossing kernel requires opposite directed copies on both rectangle diagonals to agree. -/
+/-- The crossing kernel requires opposite directed copies on both rectangle diagonals to agree. -/
 def crossing [DecidableEq A] (x y u v : A) : ℤ :=
   if x = v ∧ y = u then 1 else 0
 
@@ -251,7 +251,7 @@ private theorem Instance.value_eq_gridValue_crossing_singleton
         ∏ ω ∈ gridRectangles ρ γ, rectangleApply crossing (Matrix.of ℓ) ω)) hvertex
 
 set_option linter.style.haveILetI false in
-/-- **Complete-graph tensor value as a crossing grid evaluation.** Complete-graph tensor evaluation is the crossing grid evaluation after transport. The
+/-- Complete-graph tensor evaluation is the crossing grid evaluation after transport. The
 transport gates diagonal entries at `default`; other allowed diagonal labels therefore contribute
 zero. The default need not belong to the edge-label set. -/
 theorem Instance.value_eq_gridValue_crossing [Fintype J] [LinearOrder J]
@@ -411,7 +411,7 @@ private theorem card_orderedPairs [Fintype J] [LinearOrder J] :
   rw [htwo]
   simp
 
-/-- **Number of ordered grid rectangles.** The number of ordered grid rectangles is the product of the two pair counts. -/
+/-- The number of ordered grid rectangles is the product of the two pair counts. -/
 theorem card_gridRectangles [Fintype ρ] [LinearOrder ρ] [Fintype γ] [LinearOrder γ] :
     (gridRectangles ρ γ).card =
       (Fintype.card ρ).choose 2 * (Fintype.card γ).choose 2 := by

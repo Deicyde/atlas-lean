@@ -57,8 +57,7 @@ variable {B : Type u}
 
 /-! ### Variable bounds -/
 
-/-- **Variables below a bound.** A term $t$ has all its variables below $n$ when every variable
-$z$ occurring in $t$ satisfies $z < n$. -/
+/-- Every variable of the term is below `n`. -/
 def VarsBelow (n : ℕ) (t : Term B) : Prop := ∀ z ∈ t.vars, z < n
 
 theorem VarsBelow.subst {n m : ℕ} {t : Term B} {s : Subst B} (ht : VarsBelow n t)
@@ -102,12 +101,9 @@ variable [DecidableEq B]
 
 /-! ### Freshness invariants of W -/
 
-/-- **Freshness invariants of Algorithm W.** Let $\Gamma$ be a typing context and $n$ a
-natural number such that every free type variable of $\Gamma$ is less than $n$. If Algorithm W
-succeeds on $\Gamma$ and an expression $e$ with counter $n$, returning a substitution $s$, a
-monotype $\tau$ and a new counter $n'$, then $n \le n'$, every type variable of $\tau$ is less
-than $n'$, and for every type variable $x < n$ every type variable of $s(x)$ is less than
-$n'$. -/
+/-- **Freshness**: if the free variables of `Γ` are below `n`, then W's counter does not
+decrease, and its type and the values of its substitution at variables below `n` use only
+variables below the returned counter. -/
 theorem W_fresh {e : Expr} :
     ∀ {Γ : Ctx B} {n : ℕ} {s : Subst B} {τ : Ty B} {n' : ℕ}, (∀ z ∈ Γ.ftv, z < n) →
       W Γ e n = some (s, τ, n') →
@@ -203,11 +199,7 @@ theorem Scheme.eval_congr {σ : Scheme B} {f f' g : ℕ → Ty B} (h : ∀ x ∈
     simp [Scheme.eval, ihl fun x hx ↦ h x (Or.inl hx), ihr fun x hx ↦ h x (Or.inr hx)]
 
 omit [DecidableEq B] in
-/-- **Substituting into a generalization is more general.** For a typing context $\Gamma$, a
-monotype $\tau$ and a type substitution $r$, the scheme obtained by applying $r$ to the free
-type variables of the generalization of $\tau$ in $\Gamma$ is more general than the
-generalization of $r(\tau)$ in $r(\Gamma)$: every instance of the latter is an instance of the
-former, and every free type variable of the former is a free type variable of the latter. -/
+/-- Substituting into a generalization is more general than generalizing after substituting. -/
 theorem substTy_gen_moreGeneral (Γ : Ctx B) (τ : Ty B) (r : Subst B) :
     ((gen Γ τ).substTy r).MoreGeneral (gen (Γ.subst r) (τ.subst r)) := by
   refine ⟨fun ts ↦ ⟨fun y ↦ (r y).subst fun z ↦
@@ -235,21 +227,13 @@ theorem Ctx.lookup_subst_eq_of_agree {Γ : Ctx B} {n : ℕ} {u : Subst B} {s r :
   exact Ctx.lookup_subst_congr (fun x hx ↦ (h x (hΓ x hx)).symm) y
 
 omit [DecidableEq B] in
-/-- **Generalization depends only on the free variables of the context.** If two typing
-contexts $\Gamma$ and $\Gamma'$ have the same free type variables, then for every monotype
-$\tau$ the generalization of $\tau$ in $\Gamma$ equals the generalization of $\tau$ in
-$\Gamma'$. -/
+/-- `gen` depends on the context only through its free variables. -/
 theorem gen_congr {Γ Γ' : Ctx B} (h : Γ.ftv = Γ'.ftv) (τ : Ty B) : gen Γ τ = gen Γ' τ := by
   simp only [gen, h]
 
-/-- **Completeness of Algorithm W.** Let $\Gamma$ be a typing context and $n$ a natural number
-such that every free type variable of $\Gamma$ is less than $n$. If, for some type substitution
-$u$, an expression $e$ has a monotype $\tau'$ in the context $u(\Gamma)$, then Algorithm W
-succeeds on $\Gamma$ and $e$ with counter $n$, returning a substitution $s$, a monotype $\tau$
-and a new counter $n'$, and there is a type substitution $r$ such that $u(x) = r(s(x))$ for
-every type variable $x < n$, and $\tau' = r(\tau)$.
-
-This is the completeness theorem of Damas and Milner. -/
+/-- **Completeness of Algorithm W** (Damas-Milner): if the free variables of `Γ` are below
+`n` and some instance `u Γ` types `e` with `τ'`, then W succeeds, and there is `r` with
+`u = s ≫ r` on the variables below `n` and `τ' = τ.subst r`. -/
 theorem W_complete {e : Expr} :
     ∀ {Γ : Ctx B} {n : ℕ} {u : Subst B} {τ' : Ty B}, (∀ z ∈ Γ.ftv, z < n) →
       HasType (Γ.subst u) e τ' →
@@ -353,18 +337,15 @@ theorem W_complete {e : Expr} :
 
 /-! ### Principal types for closed expressions -/
 
-/-- **Completeness of type inference for closed expressions.** If an expression $e$ has a
-monotype $\tau'$ in the empty context, then type inference succeeds on $e$ and returns a
-monotype $\tau$ of which $\tau'$ is a substitution instance: $\tau' = r(\tau)$ for some type
-substitution $r$. -/
+/-- `infer` succeeds on every typable closed expression, with a type of which every other type
+is an instance. -/
 theorem infer_complete {e : Expr} {τ' : Ty B} (h : HasType [] e τ') :
     ∃ τ, infer e = some τ ∧ ∃ r, τ' = τ.subst r := by
   obtain ⟨s, τ, n', r, hW, -, hτ⟩ := W_complete (Γ := []) (n := 0) (u := Term.var)
     (by simp [Ctx.ftv]) (by simpa [Ctx.subst] using h)
   exact ⟨τ, by simp [infer, hW], r, hτ⟩
 
-/-- **Type inference succeeds exactly on typable closed expressions.** Type inference succeeds
-on an expression $e$ if and only if $e$ has some monotype in the empty context. -/
+/-- `infer` succeeds exactly on the typable closed expressions. -/
 theorem infer_isSome_iff {e : Expr} :
     (infer (B := B) e).isSome ↔ ∃ τ : Ty B, HasType ([] : Ctx B) e τ := by
   constructor

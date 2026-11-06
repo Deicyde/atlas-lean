@@ -49,23 +49,23 @@ open scoped ENNReal
 
 namespace Real
 
-/-- **Upper incomplete gamma function.** The upper incomplete gamma function `Γ(a, x) = ∫_x^∞ t ^ (a - 1) e^{-t} dt` (DLMF 8.2.2).
+/-- The upper incomplete gamma function `Γ(a, x) = ∫_x^∞ t ^ (a - 1) e^{-t} dt` (DLMF 8.2.2).
 The domain used below is `a > 0` and `x ≥ 0`, where the integral converges. Outside it the
 Bochner integral may be the junk value `0` (for `a ≤ 0`, `x = 0` the integrand is not
 integrable). -/
 noncomputable def upperIncompleteGamma (a x : ℝ) : ℝ :=
   ∫ t in Ioi x, t ^ (a - 1) * exp (-t)
 
-/-- **Upper incomplete gamma function at zero.** `Γ(a, 0) = Γ(a)` for `a > 0`. -/
+/-- `Γ(a, 0) = Γ(a)` for `a > 0`. -/
 theorem upperIncompleteGamma_zero {a : ℝ} (ha : 0 < a) : upperIncompleteGamma a 0 = Gamma a := by
   rw [upperIncompleteGamma, Gamma_eq_integral ha]
   simp_rw [mul_comm]
 
-/-- **Upper incomplete gamma function with shape one.** `Γ(1, x) = e^{-x}`. -/
+/-- `Γ(1, x) = e^{-x}`. -/
 theorem upperIncompleteGamma_one (x : ℝ) : upperIncompleteGamma 1 x = exp (-x) := by
   simpa [upperIncompleteGamma] using integral_exp_neg_Ioi x
 
-/-- **Recurrence for the upper incomplete gamma function.** The recurrence `Γ(a + 1, x) = x ^ a e^{-x} + a Γ(a, x)` for `a > 0` and `x ≥ 0`
+/-- The recurrence `Γ(a + 1, x) = x ^ a e^{-x} + a Γ(a, x)` for `a > 0` and `x ≥ 0`
 (DLMF 8.8.2), from integration by parts. -/
 theorem upperIncompleteGamma_add_one {a x : ℝ} (ha : 0 < a) (hx : 0 ≤ x) :
     upperIncompleteGamma (a + 1) x = x ^ a * exp (-x) + a * upperIncompleteGamma a x := by
@@ -99,7 +99,7 @@ theorem upperIncompleteGamma_add_one {a x : ℝ} (ha : 0 < a) (hx : 0 ≤ x) :
   simp only [upperIncompleteGamma, add_sub_cancel_right]
   linarith
 
-/-- **Upper incomplete gamma function at natural shapes.** The closed form at natural shapes (DLMF 8.4.8): for `x ≥ 0`,
+/-- The closed form at natural shapes (DLMF 8.4.8): for `x ≥ 0`,
 `Γ(n + 1, x) = n! e^{-x} ∑_{k = 0}^{n} x ^ k / (k!)`. -/
 theorem upperIncompleteGamma_natCast_add_one (n : ℕ) {x : ℝ} (hx : 0 ≤ x) :
     upperIncompleteGamma (n + 1) x =
@@ -125,7 +125,7 @@ namespace ProbabilityTheory
 
 open Real
 
-/-- **Real moments of the gamma law.** Real moments of the gamma law: for shape `a > 0`, rate `r > 0` and `p > -a`,
+/-- Real moments of the gamma law: for shape `a > 0`, rate `r > 0` and `p > -a`,
 `E[X ^ p] = Γ(a + p) / (Γ(a) r ^ p)`. (The law is carried by `[0, ∞)`, so the values of
 `x ^ p` for `x < 0` play no role.) -/
 theorem integral_rpow_gammaMeasure {a r p : ℝ} (ha : 0 < a) (hr : 0 < r) (hp : -a < p) :
@@ -160,7 +160,7 @@ private lemma integrable_rpow_gammaMeasure {a r p : ℝ}
   exact (div_pos (Gamma_pos_of_pos (by linarith))
     (mul_pos (Gamma_pos_of_pos ha) (rpow_pos_of_pos hr p))).ne'
 
-/-- **Mean of the gamma law.** The mean of the gamma law with shape `a > 0` and rate `r > 0` is `a / r`. -/
+/-- The mean of the gamma law with shape `a > 0` and rate `r > 0` is `a / r`. -/
 theorem integral_id_gammaMeasure {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
     ∫ x, x ∂gammaMeasure a r = a / r := by
   have hm := integral_rpow_gammaMeasure ha hr (p := 1) (by linarith)
@@ -168,7 +168,7 @@ theorem integral_id_gammaMeasure {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
   rw [hm]
   field_simp [(Gamma_pos_of_pos ha).ne']
 
-/-- **Second moment of the gamma law.** The second moment of the gamma law with shape `a > 0` and rate `r > 0` is
+/-- The second moment of the gamma law with shape `a > 0` and rate `r > 0` is
 `a (a + 1) / r ^ 2`. -/
 theorem integral_sq_gammaMeasure {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
     ∫ x, x ^ 2 ∂gammaMeasure a r = a * (a + 1) / r ^ 2 := by
@@ -178,14 +178,14 @@ theorem integral_sq_gammaMeasure {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
     Gamma_add_one (by linarith : a + 1 ≠ 0), Gamma_add_one ha.ne']
   field_simp [(Gamma_pos_of_pos ha).ne']
 
-/-- **Gamma law has finite second moment.** The gamma law has finite second moment. -/
+/-- The gamma law has finite second moment. -/
 theorem memLp_id_gammaMeasure {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
     MemLp id 2 (gammaMeasure a r) := by
   apply (memLp_two_iff_integrable_sq (by fun_prop)).2
   simpa only [id_eq, rpow_two] using
     integrable_rpow_gammaMeasure ha hr (p := 2) (by linarith)
 
-/-- **Variance of the gamma law.** The variance of the gamma law with shape `a > 0` and rate `r > 0` is `a / r ^ 2`. -/
+/-- The variance of the gamma law with shape `a > 0` and rate `r > 0` is `a / r ^ 2`. -/
 theorem variance_id_gammaMeasure {a r : ℝ} (ha : 0 < a) (hr : 0 < r) :
     variance id (gammaMeasure a r) = a / r ^ 2 := by
   let := isProbabilityMeasure_gammaMeasure ha hr
@@ -206,7 +206,7 @@ private lemma gammaPDFReal_div_scale {a r c : ℝ}
   · have hxc : ¬0 ≤ x / c := not_le.mpr (div_neg_of_neg_of_pos (lt_of_not_ge hx) hc)
     simp [gammaPDFReal, hx, hxc]
 
-/-- **Scaling a gamma random variable.** Scaling a gamma variable by `c > 0` keeps its shape and divides its rate by `c`:
+/-- Scaling a gamma variable by `c > 0` keeps its shape and divides its rate by `c`:
 `c X ~ Gamma(a, r / c)` when `X ~ Gamma(a, r)`. -/
 theorem gammaMeasure_map_const_mul {a r c : ℝ} (ha : 0 < a) (hr : 0 < r) (hc : 0 < c) :
     (gammaMeasure a r).map (fun x => c * x) = gammaMeasure a (r / c) := by
@@ -242,7 +242,7 @@ theorem gammaMeasure_map_const_mul {a r c : ℝ} (ha : 0 < a) (hr : 0 < r) (hc :
     _ = gammaMeasure a (r / c) s := by
       rw [gammaMeasure, withDensity_apply _ hs]
 
-/-- **Upper tail of the gamma law.** The upper tail of the gamma law: `P(X > c) = Γ(a, r c) / Γ(a)` for `c ≥ 0`. -/
+/-- The upper tail of the gamma law: `P(X > c) = Γ(a, r c) / Γ(a)` for `c ≥ 0`. -/
 theorem gammaMeasure_real_Ioi {a r c : ℝ} (ha : 0 < a) (hr : 0 < r) (hc : 0 ≤ c) :
     (gammaMeasure a r).real (Ioi c) = upperIncompleteGamma a (r * c) / Gamma a := by
   have hd : (gammaMeasure a r).real (Ioi c) = ∫ x in Ioi c, gammaPDFReal a r x := by
@@ -265,7 +265,7 @@ theorem gammaMeasure_real_Ioi {a r c : ℝ} (ha : 0 < a) (hr : 0 < r) (hc : 0 �
   simp only [smul_eq_mul, upperIncompleteGamma]
   field_simp
 
-/-- **Erlang tail formula.** The Erlang tail: for shape `n + 1`, `P(X > c) = e^{-r c} ∑_{k = 0}^{n} (r c) ^ k / (k!)`
+/-- The Erlang tail: for shape `n + 1`, `P(X > c) = e^{-r c} ∑_{k = 0}^{n} (r c) ^ k / (k!)`
 when `c ≥ 0`. -/
 theorem gammaMeasure_real_Ioi_natCast_add_one (n : ℕ) {r c : ℝ} (hr : 0 < r) (hc : 0 ≤ c) :
     (gammaMeasure (n + 1) r).real (Ioi c) =

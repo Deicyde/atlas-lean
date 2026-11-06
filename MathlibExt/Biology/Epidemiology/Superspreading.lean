@@ -71,21 +71,21 @@ namespace MathlibExt.Biology.Epidemiology.Superspreading
 
 open MathlibExt.Probability MathlibExt.Probability.GaltonWatson
 
-/-- **Negative-binomial offspring probabilities.** The **negative-binomial offspring probability** with mean `R` and dispersion `k`:
+/-- The **negative-binomial offspring probability** with mean `R` and dispersion `k`:
 `P(Z = n) = C(k + n - 1, n) p^k (1 - p)^n` with `p = k / (k + R)` (Lloyd-Smith et al. 2005).
 Meaningful for `k > 0`, `R ≥ 0`. -/
 noncomputable def nbPmf (R k : ℝ) (n : ℕ) : ℝ :=
   Ring.choose (k + n - 1) n * (k / (k + R)) ^ k * (R / (k + R)) ^ n
 
-/-- **Negative-binomial probability generating function.** The **negative-binomial generating function** `G_k(s) = (1 + (R / k) (1 - s))^{-k}`. -/
+/-- The **negative-binomial generating function** `G_k(s) = (1 + (R / k) (1 - s))^{-k}`. -/
 noncomputable def nbPgf (R k s : ℝ) : ℝ :=
   (1 + R / k * (1 - s)) ^ (-k)
 
-/-- **Negative-binomial offspring distribution.** The negative-binomial offspring law as a measure on `ℕ`. -/
+/-- The negative-binomial offspring law as a measure on `ℕ`. -/
 noncomputable def nbOffspring (R k : ℝ) : Measure ℕ :=
   Measure.sum fun n => ENNReal.ofReal (nbPmf R k n) • Measure.dirac n
 
-/-- **Nonnegativity of the negative-binomial probabilities.** The negative-binomial probabilities are nonnegative for `k > 0`, `R ≥ 0`. -/
+/-- The negative-binomial probabilities are nonnegative for `k > 0`, `R ≥ 0`. -/
 theorem nbPmf_nonneg {R k : ℝ} (hk : 0 < k) (hR : 0 ≤ R) (n : ℕ) : 0 ≤ nbPmf R k n := by
   have hc : 0 ≤ Ring.choose (k + n - 1) n := by
     rw [Ring.choose_eq_smul, Polynomial.descPochhammer_smeval_eq_ascPochhammer,
@@ -133,7 +133,7 @@ theorem hasSum_nbPmf_mul_pow {R k : ℝ} (hk : 0 < k) (hR : 0 ≤ R) {s : ℝ}
     simp only [nbPmf, x, mul_pow]
     ring
 
-/-- **Negative-binomial offspring law is a probability measure.** The negative-binomial offspring law is a probability measure (`k > 0`, `R ≥ 0`). -/
+/-- The negative-binomial offspring law is a probability measure (`k > 0`, `R ≥ 0`). -/
 theorem isProbabilityMeasure_nbOffspring {R k : ℝ} (hk : 0 < k) (hR : 0 ≤ R) :
     IsProbabilityMeasure (nbOffspring R k) := by
   have hsum : HasSum (nbPmf R k) 1 := by
@@ -145,7 +145,7 @@ theorem isProbabilityMeasure_nbOffspring {R k : ℝ} (hk : 0 < k) (hR : 0 ≤ R)
   rw [← ENNReal.ofReal_tsum_of_nonneg (nbPmf_nonneg hk hR) hsum.summable,
     hsum.tsum_eq, ENNReal.ofReal_one]
 
-/-- **Generating function of the negative-binomial law in closed form.** The generating function of the negative-binomial offspring law is `nbPgf` on `[0, 1]`. -/
+/-- The generating function of the negative-binomial offspring law is `nbPgf` on `[0, 1]`. -/
 theorem pgf_nbOffspring {R k : ℝ} (hk : 0 < k) (hR : 0 ≤ R) {s : ℝ}
     (hs : s ∈ Icc (0 : ℝ) 1) : pgf id (nbOffspring R k) s = nbPgf R k s := by
   have := isProbabilityMeasure_nbOffspring hk hR
@@ -201,7 +201,7 @@ theorem nbPgf_antitone {R : ℝ} (hR : 0 ≤ R) {s : ℝ} (hs : s ∈ Icc (0 : �
   simp only [nbPgf, he, Real.rpow_def_of_pos hb₁, Real.rpow_def_of_pos hb₂]
   exact Real.exp_le_exp.mpr (by nlinarith)
 
-/-- **Negative-binomial law with dispersion one is geometric.** `k = 1` is the geometric offspring law: `G_1(s) = 1 / (1 + R (1 - s))`. -/
+/-- `k = 1` is the geometric offspring law: `G_1(s) = 1 / (1 + R (1 - s))`. -/
 theorem nbPgf_one_dispersion (R s : ℝ) : nbPgf R 1 s = 1 / (1 + R * (1 - s)) := by
   simp [nbPgf, Real.rpow_neg_one]
 
@@ -248,7 +248,7 @@ theorem extinctionProb_le_of_pgf_le (ν₁ ν₂ : Measure ℕ) [IsProbabilityMe
   unfold extinctionProb
   exact ciSup_le fun m => by rw [law_real_zero]; exact hit m
 
-/-- **Negative-binomial extinction probability is the least fixed point.** The extinction probability of the negative-binomial epidemic is the least fixed point of
+/-- The extinction probability of the negative-binomial epidemic is the least fixed point of
 `G_k` in `[0, 1]`. -/
 theorem isLeast_extinctionProb_nbOffspring {R k : ℝ} (hk : 0 < k) (hR : 0 ≤ R) :
     have := isProbabilityMeasure_nbOffspring hk hR

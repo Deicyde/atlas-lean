@@ -89,41 +89,41 @@ section Neyman
 
 variable {ι : Type*}
 
-/-- **Sample mean over a set of units.** The mean of `y` over a set of units `S`, `(1/|S|) ∑_{i ∈ S} yᵢ` (the junk value `0` for
+/-- The mean of `y` over a set of units `S`, `(1/|S|) ∑_{i ∈ S} yᵢ` (the junk value `0` for
 `S = ∅`). -/
 noncomputable def sampleMean (y : ι → ℝ) (S : Finset ι) : ℝ :=
   (∑ i ∈ S, y i) / S.card
 
-/-- **Sample variance over a set of units.** The sample variance of `y` over `S` with divisor `|S| - 1`; meaningful for `|S| ≥ 2` (for
+/-- The sample variance of `y` over `S` with divisor `|S| - 1`; meaningful for `|S| ≥ 2` (for
 `|S| ≤ 1` it is the junk value `0`). -/
 noncomputable def sampleVar (y : ι → ℝ) (S : Finset ι) : ℝ :=
   (∑ i ∈ S, (y i - sampleMean y S) ^ 2) / ((S.card : ℝ) - 1)
 
 variable [Fintype ι]
 
-/-- **Mean of a finite population.** The mean of a finite population of `N = Fintype.card ι` units, `(1/N) ∑ᵢ yᵢ`. -/
+/-- The mean of a finite population of `N = Fintype.card ι` units, `(1/N) ∑ᵢ yᵢ`. -/
 noncomputable def popMean (y : ι → ℝ) : ℝ :=
   (∑ i, y i) / Fintype.card ι
 
-/-- **Variance of a finite population.** The variance of a finite population with divisor `N - 1`, `S² = ∑ᵢ (yᵢ - ȳ)² / (N - 1)`;
+/-- The variance of a finite population with divisor `N - 1`, `S² = ∑ᵢ (yᵢ - ȳ)² / (N - 1)`;
 meaningful for `N ≥ 2`. -/
 noncomputable def popVar (y : ι → ℝ) : ℝ :=
   (∑ i, (y i - popMean y) ^ 2) / ((Fintype.card ι : ℝ) - 1)
 
-/-- **Finite-population average treatment effect.** The finite-population average treatment effect `(1/N) ∑ᵢ (y₁ᵢ - y₀ᵢ)`. -/
+/-- The finite-population average treatment effect `(1/N) ∑ᵢ (y₁ᵢ - y₀ᵢ)`. -/
 noncomputable def ate (y₀ y₁ : ι → ℝ) : ℝ :=
   popMean fun i => y₁ i - y₀ i
 
-/-- **Difference-in-means estimator.** The difference in means for the treated set `S`: the mean of the treated outcomes `y₁` over
+/-- The difference in means for the treated set `S`: the mean of the treated outcomes `y₁` over
 `S` minus the mean of the control outcomes `y₀` over the complement. -/
 noncomputable def diffInMeans [DecidableEq ι] (y₀ y₁ : ι → ℝ) (S : Finset ι) : ℝ :=
   sampleMean y₁ S - sampleMean y₀ Sᶜ
 
-/-- **Neyman's variance estimator.** Neyman's variance estimator `s₁² / n₁ + s₀² / n₀` for the treated set `S`. -/
+/-- Neyman's variance estimator `s₁² / n₁ + s₀² / n₀` for the treated set `S`. -/
 noncomputable def neymanVar [DecidableEq ι] (y₀ y₁ : ι → ℝ) (S : Finset ι) : ℝ :=
   sampleVar y₁ S / S.card + sampleVar y₀ Sᶜ / (Sᶜ).card
 
-/-- **Expectation of a statistic under complete randomization.** The expectation of a statistic `f` of the treated set under complete randomization: the
+/-- The expectation of a statistic `f` of the treated set under complete randomization: the
 treated set is uniform among the `(N choose n₁)` sets of `n₁` units (`n₁ ≤ N`; for `n₁ > N`
 there is no such set and the value is `0`). -/
 noncomputable def randExp (n₁ : ℕ) (f : Finset ι → ℝ) : ℝ :=
@@ -458,7 +458,7 @@ theorem randExp_sq_diffInMeans_sub_ate [DecidableEq ι] (y₀ y₁ : ι → ℝ)
   field_simp
   ring
 
-/-- **Expectation of Neyman's variance estimator under complete randomization.** The expectation of Neyman's variance estimator under complete randomization with at least
+/-- The expectation of Neyman's variance estimator under complete randomization with at least
 two treated and two control units is `S₁²/n₁ + S₀²/n₀` (the sample variances are unbiased for
 the population variances under sampling without replacement). -/
 theorem randExp_neymanVar [DecidableEq ι] (y₀ y₁ : ι → ℝ) {n₁ : ℕ} (h₁ : 2 ≤ n₁)
@@ -504,16 +504,16 @@ section Propensity
 
 variable {Ω β γ : Type*} [MeasurableSpace Ω] {μ : Measure Ω}
 
-/-- **Observed outcome from potential outcomes.** The observed outcome: `Y₁` on the treated event `T`, `Y₀` off it (consistency). -/
+/-- The observed outcome: `Y₁` on the treated event `T`, `Y₀` off it (consistency). -/
 noncomputable def observed (T : Set Ω) (Y₀ Y₁ : Ω → ℝ) : Ω → ℝ :=
   T.indicator Y₁ + Tᶜ.indicator Y₀
 
-/-- **Propensity score.** The propensity of the event `T` given `W = w`, `P(T ∩ {W = w}) / P(W = w)`. Meaningful for
+/-- The propensity of the event `T` given `W = w`, `P(T ∩ {W = w}) / P(W = w)`. Meaningful for
 `P(W = w) > 0`; it is `0` (a junk value) when `P(W = w) = 0`. -/
 noncomputable def propensity (μ : Measure Ω) (T : Set Ω) (W : Ω → β) (w : β) : ℝ :=
   μ.real (T ∩ W ⁻¹' {w}) / μ.real (W ⁻¹' {w})
 
-/-- **Conditional independence given a discrete variable.** The event `T` is conditionally independent of `V` given `W`, stated through the values of
+/-- The event `T` is conditionally independent of `V` given `W`, stated through the values of
 `W`: `P(T, V ∈ B, W = w) P(W = w) = P(T, W = w) P(V ∈ B, W = w)` for all measurable `B` and all
 `w`. For a `W` with countably many values this is the conditional independence of the indicator
 of `T` and `V` given `W`. -/
@@ -531,7 +531,7 @@ def StronglyIgnorable [MeasurableSpace β] (μ : Measure Ω) (T : Set Ω) (V : �
   CondIndepDiscrete μ T V W ∧
     ∀ w, μ (W ⁻¹' {w}) ≠ 0 → 0 < propensity μ T W w ∧ propensity μ T W w < 1
 
-/-- **Strong ignorability passes to functions of the potential outcomes.** Strong ignorability is inherited by measurable functions of the potential outcomes. -/
+/-- Strong ignorability is inherited by measurable functions of the potential outcomes. -/
 theorem StronglyIgnorable.comp [MeasurableSpace β] [MeasurableSpace γ] {T : Set Ω}
     {V : Ω → β} {δ : Type*} {W : Ω → δ} (h : StronglyIgnorable μ T V W) {g : β → γ}
     (hg : Measurable g) :
@@ -668,7 +668,7 @@ theorem condIndepDiscrete_propensity [IsFiniteMeasure μ] {T : Set Ω} (hT : Mea
   simp only [Set.inter_univ, Set.univ_inter] at h2
   rw [h1, h2]; ring
 
-/-- **Calibration of the propensity score.** The propensity score is calibrated: among units with score `c` (an event of positive
+/-- The propensity score is calibrated: among units with score `c` (an event of positive
 probability), the proportion treated is `c`. -/
 theorem propensity_propensity [IsFiniteMeasure μ] {T : Set Ω} (hT : MeasurableSet T)
     {X : Ω → 𝒳} (hX : Measurable X) {c : ℝ}

@@ -41,7 +41,7 @@ open Fin.NatCast
 
 variable {n : ℕ} [NeZero n]
 
-/-- **Unit cell to the left of a lattice step.** The unit cell to the left of the step in direction `w` starting at `p` (cells are named by their
+/-- The unit cell to the left of the step in direction `w` starting at `p` (cells are named by their
   lower-left corners). -/
 def leftCell : Fin 4 → ℤ × ℤ → ℤ × ℤ
   | 0, p => p
@@ -49,7 +49,7 @@ def leftCell : Fin 4 → ℤ × ℤ → ℤ × ℤ
   | 2, p => (p.1 - 1, p.2 - 1)
   | 3, p => (p.1, p.2 - 1)
 
-/-- **Steps around a left turn share their left cell.** At a left turn, the steps before and after the turn have the same left cell. -/
+/-- At a left turn, the steps before and after the turn have the same left cell. -/
 theorem leftCell_eq_of_leftTurn (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (k : Fin n)
     (hturn : d (k + 1) - d k = 1) :
     leftCell (d k) (pos d k) = leftCell (d (k + 1)) (pos d (k + 1)) := by
@@ -68,7 +68,7 @@ theorem leftCell_eq_of_leftTurn (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (
   · change leftCell 3 p = leftCell 0 (p + stepOf 3)
     simp only [leftCell, stepOf, Prod.fst_add, Prod.snd_add, Prod.ext_iff]; omega
 
-/-- **No vertical step through a non-vertex point.** A vertical step through the point `(c, h)` has `(c, h)` as a vertex; if `(c, h)` is not a walk
+/-- A vertical step through the point `(c, h)` has `(c, h)` as a vertex; if `(c, h)` is not a walk
   vertex, no vertical step straddles height `h` on the line `x = c`. -/
 theorem no_vEdge_of_not_vertex (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (c h : ℤ) (hnv : ∀ k : Fin n, pos d k ≠ (c, h)) :
@@ -81,7 +81,7 @@ theorem no_vEdge_of_not_vertex (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d
   · exact hnv k (Prod.ext hx (by omega))
   · exact hnv (k + 1) (Prod.ext (by rw [hxc]; exact hx) (by omega))
 
-/-- **No horizontal step starts at a non-vertex point.** If `(c, h)` is not a walk vertex, no horizontal step starts at `x = c` on height `h`. -/
+/-- If `(c, h)` is not a walk vertex, no horizontal step starts at `x = c` on height `h`. -/
 theorem no_hEdge_of_not_vertex (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (c h : ℤ) (hnv : ∀ k : Fin n, pos d k ≠ (c, h)) :
     ∀ k : Fin n, isHorizEdge (d k) → min ((pos d k).1) ((pos d (k + 1)).1) = c →
@@ -92,7 +92,7 @@ theorem no_hEdge_of_not_vertex (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d
   · exact hnv k (Prod.ext (by omega) hy)
   · exact hnv (k + 1) (Prod.ext (by omega) (by rw [hyc]; exact hy))
 
-/-- **Index of a vertical step above a walk vertex.** In a simple walk, a vertical step on the segment above the vertex `pos d m` is step `m` or step
+/-- In a simple walk, a vertical step on the segment above the vertex `pos d m` is step `m` or step
   `m - 1`. -/
 theorem vEdge_lower_index (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (c h : ℤ) (m : Fin n) (hpm : pos d m = (c, h))
@@ -106,7 +106,7 @@ theorem vEdge_lower_index (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) =
   · exact Or.inl (hsimple ((Prod.ext hxj (by omega)).trans hpm.symm))
   · exact Or.inr (hsimple ((Prod.ext (by rw [hxc]; exact hxj) (by omega)).trans hpm.symm))
 
-/-- **Index of a horizontal step right of a walk vertex.** In a simple walk, a horizontal step on the segment to the right of the vertex `pos d m` is step
+/-- In a simple walk, a horizontal step on the segment to the right of the vertex `pos d m` is step
   `m` or step `m - 1`. -/
 theorem hEdge_left_index (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (c h : ℤ) (m : Fin n) (hpm : pos d m = (c, h))
@@ -118,7 +118,7 @@ theorem hEdge_left_index (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 
   · exact Or.inl (hsimple ((Prod.ext (by omega) hyj).trans hpm.symm))
   · exact Or.inr (hsimple ((Prod.ext (by omega) (by rw [hyc]; exact hyj)).trans hpm.symm))
 
-/-- **Index of a vertical step below a walk vertex.** In a simple walk, a vertical step on the segment below the vertex `pos d m` is step `m` or step
+/-- In a simple walk, a vertical step on the segment below the vertex `pos d m` is step `m` or step
   `m - 1`. -/
 theorem vEdge_upper_index (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (c h : ℤ) (m : Fin n) (hpm : pos d m = (c, h + 1))
@@ -132,7 +132,7 @@ theorem vEdge_upper_index (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) =
   · exact Or.inr (hsimple ((Prod.ext (by rw [hxc]; exact hxj) (by omega)).trans hpm.symm))
   · exact Or.inl (hsimple ((Prod.ext hxj (by omega)).trans hpm.symm))
 
-/-- **Index of a horizontal step left of a walk vertex.** In a simple walk, a horizontal step on the segment to the left of the vertex `pos d m` is step
+/-- In a simple walk, a horizontal step on the segment to the left of the vertex `pos d m` is step
   `m` or step `m - 1`. -/
 theorem hEdge_right_index (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (c h : ℤ) (m : Fin n) (hpm : pos d m = (c + 1, h))
@@ -144,7 +144,7 @@ theorem hEdge_right_index (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) =
   · exact Or.inr (hsimple ((Prod.ext (by omega) (by rw [hyc]; exact hyj)).trans hpm.symm))
   · exact Or.inl (hsimple ((Prod.ext (by omega) hyj).trans hpm.symm))
 
-/-- **Left cells keep their ray parity on a straight step.** Going straight, consecutive left cells have the same ray parity. -/
+/-- Going straight, consecutive left cells have the same ray parity. -/
 theorem leftCell_parity_eq_of_straight (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (k : Fin n) (hst : d (k + 1) = d k) :
     rayParity d (leftCell (d k) (pos d k)).1 (leftCell (d k) (pos d k)).2
@@ -208,11 +208,11 @@ theorem leftCell_parity_eq_of_straight (d : Fin n → Fin 4) (hclosed : ∑ i, s
       rwa [show (((pos d k).2 - 1) - 1) + 1 = (pos d k).2 - 1 from by ring] at this
     exact key.symm
 
-/-- **Ray parity of the cell left of a step.** The ray parity of the cell to the left of step `k`. -/
+/-- The ray parity of the cell to the left of step `k`. -/
 def leftParity (d : Fin n → Fin 4) (k : Fin n) : ZMod 2 :=
   rayParity d (leftCell (d k) (pos d k)).1 (leftCell (d k) (pos d k)).2
 
-/-- **Consecutive steps have the same left parity.** For a simple closed walk without right turns, consecutive steps have the same left parity. -/
+/-- For a simple closed walk without right turns, consecutive steps have the same left parity. -/
 theorem leftParity_step (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) (k : Fin n) :
@@ -221,7 +221,7 @@ theorem leftParity_step (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0
   · exact leftCell_parity_eq_of_straight d hclosed hsimple k (by rw [sub_eq_zero] at h0; exact h0)
   · unfold leftParity; rw [leftCell_eq_of_leftTurn d hclosed k h1]
 
-/-- **Left parity is constant along a walk without right turns.** For a simple closed walk without right turns, the left parity is the same for every step. -/
+/-- For a simple closed walk without right turns, the left parity is the same for every step. -/
 theorem leftParity_const (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) (k : Fin n) :

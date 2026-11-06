@@ -51,13 +51,8 @@ definition is represented by `IsOneParameterGroupIn`.
 
 namespace OneParameterGroup
 
-/-- **One-parameter group of complex matrices.** For $m \in \mathbb{N}$, a map
-$\varphi \colon \mathbb{R} \to M_m(\mathbb{C})$ into the complex $m \times m$ matrices is a
-one-parameter group when $\varphi(0)$ is the identity matrix $I$,
-$\varphi(s + t) = \varphi(s)\,\varphi(t)$ for all real $s$ and $t$, and $\varphi$ is
-differentiable.
-
-Such a map takes values in $\mathrm{GL}_m(\mathbb{C})$, since $\varphi(t)\,\varphi(-t) = I$. -/
+/-- A **one-parameter group** in `GL_n (ℂ)`: a differentiable homomorphism
+`φ : ℝ → Matrix (Fin m) (Fin m) ℂ` from the additive group `ℝ`. -/
 structure IsOneParameterGroup (m : ℕ) (φ : ℝ → Matrix (Fin m) (Fin m) ℂ) : Prop where
   /-- `φ 0 = 1`: the identity maps to the identity matrix. -/
   map_zero : φ 0 = 1
@@ -66,11 +61,7 @@ structure IsOneParameterGroup (m : ℕ) (φ : ℝ → Matrix (Fin m) (Fin m) ℂ
   /-- `φ` is differentiable (for the entrywise topology on matrices). -/
   differentiable : Differentiable ℝ φ
 
-/-- **One-parameter group in a subgroup of the general linear group.** Let $m \in \mathbb{N}$
-and let $G$ be a subgroup of $\mathrm{GL}_m(\mathbb{C})$. A map
-$\varphi \colon \mathbb{R} \to \mathrm{GL}_m(\mathbb{C})$ is a one-parameter group in $G$ when
-the matrix-valued map $t \mapsto \varphi(t)$ is a one-parameter group and $\varphi(t) \in G$ for
-every real $t$. -/
+/-- A one-parameter group in `G`, with its pointwise subgroup membership. -/
 structure IsOneParameterGroupIn {m : ℕ}
     (G : Subgroup (Matrix.GeneralLinearGroup (Fin m) ℂ))
     (φ : ℝ → Matrix.GeneralLinearGroup (Fin m) ℂ) : Prop
@@ -78,11 +69,7 @@ structure IsOneParameterGroupIn {m : ℕ}
   /-- Every value of the curve lies in `G`. -/
   mem : ∀ t : ℝ, φ t ∈ G
 
-/-- **The lift of a one-parameter group to the general linear group.** Let $m \in \mathbb{N}$ and
-let $\varphi \colon \mathbb{R} \to M_m(\mathbb{C})$ be a one-parameter group of complex
-$m \times m$ matrices. For every real $t$ the matrix $\varphi(t)$ is invertible with inverse
-$\varphi(-t)$; this gives the element of $\mathrm{GL}_m(\mathbb{C})$ with matrix $\varphi(t)$
-and inverse $\varphi(-t)$. -/
+/-- The canonical `GL`-valued curve, with inverse given by the value at `-t`. -/
 def IsOneParameterGroup.toGL {m : ℕ} {φ : ℝ → Matrix (Fin m) (Fin m) ℂ}
     (hφ : IsOneParameterGroup m φ) (t : ℝ) : Matrix.GeneralLinearGroup (Fin m) ℂ where
   val := φ t
@@ -90,10 +77,7 @@ def IsOneParameterGroup.toGL {m : ℕ} {φ : ℝ → Matrix (Fin m) (Fin m) ℂ}
   val_inv := by rw [← hφ.map_add, add_neg_cancel, hφ.map_zero]
   inv_val := by rw [← hφ.map_add, neg_add_cancel, hφ.map_zero]
 
-/-- **Underlying matrix of the lift of a one-parameter group.** Let $m \in \mathbb{N}$ and let
-$\varphi \colon \mathbb{R} \to M_m(\mathbb{C})$ be a one-parameter group of complex $m \times m$
-matrices. For every real $t$, the element of $\mathrm{GL}_m(\mathbb{C})$ assigned to $t$ by the
-lift of $\varphi$ has underlying matrix $\varphi(t)$. -/
+/-- The canonical lift has the original matrix value. -/
 @[simp] theorem IsOneParameterGroup.coe_toGL {m : ℕ}
     {φ : ℝ → Matrix (Fin m) (Fin m) ℂ} (hφ : IsOneParameterGroup m φ) (t : ℝ) :
     (hφ.toGL t : Matrix (Fin m) (Fin m) ℂ) = φ t := rfl
@@ -114,10 +98,8 @@ private theorem hasDerivAt_exp_ofReal_smul {m : ℕ}
     | rfl
     | (funext u; simp; rfl)
 
-/-- **One-parameter groups of matrices are exponentials.** Let $m \in \mathbb{N}$. If
-$\varphi \colon \mathbb{R} \to M_m(\mathbb{C})$ is a one-parameter group of complex $m \times m$
-matrices, then there is a unique matrix $A \in M_m(\mathbb{C})$ such that
-$\varphi(t) = \exp(tA)$ for every real $t$. -/
+/-- Every one-parameter group in `GL_n (ℂ)` is the exponential of a unique
+matrix: `φ t = exp (t • A)` for all `t`. -/
 theorem one_param_subgroup_form (m : ℕ)
     (φ : ℝ → Matrix (Fin m) (Fin m) ℂ) (hφ : IsOneParameterGroup m φ) :
     ∃! A : Matrix (Fin m) (Fin m) ℂ,
@@ -179,9 +161,8 @@ theorem one_param_subgroup_form (m : ℕ)
       _ = deriv (fun s : ℝ => φ s) 0 := by rw [← heq]
       _ = A := rfl
 
-/-- **Exponential curves are one-parameter groups.** For every $m \in \mathbb{N}$ and every
-complex $m \times m$ matrix $A$, the map $t \mapsto \exp(tA)$ from $\mathbb{R}$ to the complex
-$m \times m$ matrices is a one-parameter group. -/
+/-- Conversely, every exponential curve `t ↦ exp (t • A)` is a
+one-parameter group. -/
 theorem isOneParameterGroup_exp_smul (m : ℕ) (A : Matrix (Fin m) (Fin m) ℂ) :
     IsOneParameterGroup m (fun t => NormedSpace.exp ((↑t : ℂ) • A)) := by
   refine ⟨?_, ?_, ?_⟩

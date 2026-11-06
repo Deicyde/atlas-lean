@@ -33,7 +33,7 @@ namespace Real
 
 open Finset
 
-/-- **Weighted partial binomial sum bounded by the full expansion.** A weighted partial binomial sum is bounded by the full binomial expansion. -/
+/-- A weighted partial binomial sum is bounded by the full binomial expansion. -/
 theorem pow_mul_sum_choose_le {D r : ℕ} (hr : r ≤ D) {x : ℝ}
     (hx0 : 0 ≤ x) (hx1 : x ≤ 1) :
     x ^ r * ∑ j ∈ range (r + 1), (D.choose j : ℝ) ≤ (x + 1) ^ D := by
@@ -50,7 +50,7 @@ theorem pow_mul_sum_choose_le {D r : ℕ} (hr : r ≤ D) {x : ℝ}
       sum_le_sum_of_subset_of_nonneg (range_subset_range.mpr (Nat.succ_le_succ hr))
         fun j _ _ => by positivity
 
-/-- **Exponential bound on a weighted partial binomial sum.** Exponential bound on the weighted partial binomial sum, including the zero-weight boundary. -/
+/-- Exponential bound on the weighted partial binomial sum, including the zero-weight boundary. -/
 theorem pow_mul_sum_choose_le_exp {D r : ℕ} (hr : r ≤ D) {x : ℝ}
     (hx0 : 0 ≤ x) (hx1 : x ≤ 1) :
     x ^ r * ∑ j ∈ range (r + 1), (D.choose j : ℝ) ≤ exp ((D : ℝ) * x) := by
@@ -60,7 +60,7 @@ theorem pow_mul_sum_choose_le_exp {D r : ℕ} (hr : r ≤ D) {x : ℝ}
     _ ≤ exp x ^ D := pow_le_pow_left₀ (by positivity) (add_one_le_exp x) D
     _ = exp ((D : ℝ) * x) := (exp_nat_mul x D).symm
 
-/-- **Number of subsets of size at most $r$ is at most $(3D/r)^r$.** For `1 ≤ r ≤ D`, the number of subsets of size at most `r` is at most `(3 * D / r) ^ r`. -/
+/-- For `1 ≤ r ≤ D`, the number of subsets of size at most `r` is at most `(3 * D / r) ^ r`. -/
 theorem sum_choose_le_pow {D r : ℕ} (hr0 : 1 ≤ r) (hrD : r ≤ D) :
     (∑ j ∈ range (r + 1), (D.choose j : ℝ)) ≤ (3 * D / r) ^ r := by
   have hr : (0 : ℝ) < r := by exact_mod_cast hr0

@@ -130,7 +130,7 @@ namespace MathlibExt.Biology.PopulationGenetics.TwoLocusCoalescent
 
 /-! ### The two-locus ancestral process of a sample of two -/
 
-/-- **States of the two-locus ancestral process.** The states of the two-locus ancestral process of a sample of two sequences. -/
+/-- The states of the two-locus ancestral process of a sample of two sequences. -/
 inductive TwoLocusState
   /-- Two chromosomes, each ancestral at both loci. -/
   | linked
@@ -152,19 +152,19 @@ instance : Fintype TwoLocusState :=
   ⟨{linked, partlySplit, split, aCoalesced, bCoalesced, bothCoalesced}, by
     intro i; cases i <;> simp⟩
 
-/-- **Sum over the two-locus ancestral states.** A sum over the six states. -/
+/-- A sum over the six states. -/
 theorem sum_univ {M : Type*} [AddCommMonoid M] (f : TwoLocusState → M) :
     ∑ i, f i = f linked + f partlySplit + f split + f aCoalesced + f bCoalesced +
       f bothCoalesced := by
   change ∑ i ∈ {linked, partlySplit, split, aCoalesced, bCoalesced, bothCoalesced}, f i = _
   simp [Finset.sum_insert, add_assoc]
 
-/-- **Coalescence indicator at locus A.** Whether locus `A` has found its most recent common ancestor. -/
+/-- Whether locus `A` has found its most recent common ancestor. -/
 def coalescedA : TwoLocusState → Bool
   | aCoalesced | bothCoalesced => true
   | _ => false
 
-/-- **Coalescence indicator at locus B.** Whether locus `B` has found its most recent common ancestor. -/
+/-- Whether locus `B` has found its most recent common ancestor. -/
 def coalescedB : TwoLocusState → Bool
   | bCoalesced | bothCoalesced => true
   | _ => false
@@ -173,7 +173,7 @@ end TwoLocusState
 
 open TwoLocusState
 
-/-- **Rate matrix of the two-locus coalescent.** The rate matrix of the two-locus ancestral process of a sample of two, with time in units of
+/-- The rate matrix of the two-locus ancestral process of a sample of two, with time in units of
 `2 N` generations and `ρ = 4 N r`: coalescence at rate `1` for every pair of ancestral lineages,
 recombination at rate `ρ / 2` for every lineage ancestral at both loci. -/
 noncomputable def twoLocusRate (ρ : ℝ) : Matrix TwoLocusState TwoLocusState ℝ := fun i j =>
@@ -196,7 +196,7 @@ noncomputable def twoLocusRate (ρ : ℝ) : Matrix TwoLocusState TwoLocusState �
   | bCoalesced, bothCoalesced => 1
   | _, _ => 0
 
-/-- **The two-locus coalescent rate matrix is a rate matrix.** For `ρ ≥ 0`, `twoLocusRate ρ` is a rate matrix. -/
+/-- For `ρ ≥ 0`, `twoLocusRate ρ` is a rate matrix. -/
 theorem isRateMatrix_twoLocusRate {ρ : ℝ} (hρ : 0 ≤ ρ) : IsRateMatrix (twoLocusRate ρ) where
   nonneg_of_ne i j hij := by
     cases i <;> cases j <;> simp only [twoLocusRate] <;>
@@ -226,10 +226,10 @@ private theorem mulVec_bCoalesced (ρ : ℝ) (m : TwoLocusState → ℝ) :
     (twoLocusRate ρ *ᵥ m) bCoalesced = -m bCoalesced + m bothCoalesced := by
   simp [mulVec, dotProduct, sum_univ, twoLocusRate]
 
-/-- **Common denominator of the two-locus moments.** The common denominator `ρ² + 13 ρ + 18` of the two-locus moments. -/
+/-- The common denominator `ρ² + 13 ρ + 18` of the two-locus moments. -/
 def twoLocusDenom (ρ : ℝ) : ℝ := ρ ^ 2 + 13 * ρ + 18
 
-/-- **Positivity of the two-locus moment denominator.** The denominator `ρ² + 13 ρ + 18` is positive for `ρ ≥ 0`. -/
+/-- The denominator `ρ² + 13 ρ + 18` is positive for `ρ ≥ 0`. -/
 theorem twoLocusDenom_pos {ρ : ℝ} (hρ : 0 ≤ ρ) : 0 < twoLocusDenom ρ := by
   unfold twoLocusDenom; positivity
 
@@ -337,7 +337,7 @@ theorem eq_two_of_secondMomentA {ρ : ℝ} (hρ : 0 ≤ ρ) {m g : TwoLocusState
   · exact hb
   · simp [coalescedA] at hi
 
-/-- **Covariance of coalescence times at two linked loci.** The covariance `Cov(T_A, T_B) = (ρ + 18) / (ρ² + 13 ρ + 18)` of the coalescence times at two
+/-- The covariance `Cov(T_A, T_B) = (ρ + 18) / (ρ² + 13 ρ + 18)` of the coalescence times at two
 loci of two sequences sampled linked (Hudson 1983; Kaplan & Hudson 1985). -/
 noncomputable def twoLocusCov (ρ : ℝ) : ℝ := (ρ + 18) / twoLocusDenom ρ
 
@@ -379,7 +379,7 @@ theorem covariance_of_productMoment {ρ : ℝ} (hρ : 0 ≤ ρ) {mA mB f : TwoLo
   · linear_combination (-6) * hL + (-(6 * ρ + 6)) * hP + (-(ρ * (ρ + 1) / 2)) * hS
   · linear_combination (-4) * hL + (-(4 * ρ + 4)) * hP + (-(ρ ^ 2 / 2 + 5 * ρ / 2 + 3)) * hS
 
-/-- **Solution of the two-locus product-moment equations.** The explicit solution of the product-moment equations: `1 + Cov` in the three states where
+/-- The explicit solution of the product-moment equations: `1 + Cov` in the three states where
 neither locus has coalesced, `0` elsewhere. -/
 noncomputable def productMoment (ρ : ℝ) : TwoLocusState → ℝ
   | linked => 1 + twoLocusCov ρ
@@ -387,13 +387,13 @@ noncomputable def productMoment (ρ : ℝ) : TwoLocusState → ℝ
   | split => 1 + 4 / twoLocusDenom ρ
   | _ => 0
 
-/-- **Mean coalescence time at locus A.** The mean coalescence time at locus `A`: `1` before `A` coalesces, `0` after. -/
+/-- The mean coalescence time at locus `A`: `1` before `A` coalesces, `0` after. -/
 def meanTimeA (i : TwoLocusState) : ℝ := if coalescedA i then 0 else 1
 
-/-- **Mean coalescence time at locus B.** The mean coalescence time at locus `B`: `1` before `B` coalesces, `0` after. -/
+/-- The mean coalescence time at locus `B`: `1` before `B` coalesces, `0` after. -/
 def meanTimeB (i : TwoLocusState) : ℝ := if coalescedB i then 0 else 1
 
-/-- **The explicit two-locus moments solve the moment equations.** The systems of `covariance_of_productMoment` are solvable: `meanTimeA`, `meanTimeB` and
+/-- The systems of `covariance_of_productMoment` are solvable: `meanTimeA`, `meanTimeB` and
 `productMoment ρ` satisfy them. -/
 theorem productMoment_solution {ρ : ℝ} (hρ : 0 ≤ ρ) :
     (∀ i, coalescedA i = false → (twoLocusRate ρ *ᵥ meanTimeA) i = -1) ∧
@@ -415,21 +415,21 @@ theorem productMoment_solution {ρ : ℝ} (hρ : 0 ≤ ρ) :
       Bool.false_eq_true, ↓reduceIte] <;>
     first | ring1 | linear_combination (-1) * hkey | linear_combination hC
 
-/-- **Two-locus covariance under complete linkage.** Complete linkage: `Cov(T_A, T_B) = 1 = Var T_A`. -/
+/-- Complete linkage: `Cov(T_A, T_B) = 1 = Var T_A`. -/
 theorem twoLocusCov_zero : twoLocusCov 0 = 1 := by
   norm_num [twoLocusCov, twoLocusDenom]
 
-/-- **Positivity of the two-locus covariance.** The covariance is positive for `ρ ≥ 0`. -/
+/-- The covariance is positive for `ρ ≥ 0`. -/
 theorem twoLocusCov_pos {ρ : ℝ} (hρ : 0 ≤ ρ) : 0 < twoLocusCov ρ :=
   div_pos (by linarith) (twoLocusDenom_pos hρ)
 
-/-- **Two-locus covariance is at most one.** The covariance is at most `Var T_A = 1` for `ρ ≥ 0` (outside this domain the formula can
+/-- The covariance is at most `Var T_A = 1` for `ρ ≥ 0` (outside this domain the formula can
 exceed `1`; e.g. `twoLocusCov (-1) = 17 / 6`). -/
 theorem twoLocusCov_le_one {ρ : ℝ} (hρ : 0 ≤ ρ) : twoLocusCov ρ ≤ 1 := by
   rw [twoLocusCov, div_le_one (twoLocusDenom_pos hρ), twoLocusDenom]
   nlinarith
 
-/-- **Two-locus covariance decreases with recombination rate.** The covariance decreases with the recombination rate. -/
+/-- The covariance decreases with the recombination rate. -/
 theorem antitoneOn_twoLocusCov : AntitoneOn twoLocusCov (Set.Ici 0) := by
   intro a ha b hb hab
   rw [Set.mem_Ici] at ha hb
@@ -438,7 +438,7 @@ theorem antitoneOn_twoLocusCov : AntitoneOn twoLocusCov (Set.Ici 0) := by
   nlinarith [mul_nonneg (sub_nonneg.2 hab)
     (by positivity : (0 : ℝ) ≤ a * b + 18 * a + 18 * b + 216)]
 
-/-- **Two-locus covariance vanishes under free recombination.** Free recombination: `Cov(T_A, T_B) → 0` as `ρ → ∞`. -/
+/-- Free recombination: `Cov(T_A, T_B) → 0` as `ρ → ∞`. -/
 theorem tendsto_twoLocusCov_atTop : Tendsto twoLocusCov atTop (𝓝 0) := by
   refine tendsto_of_tendsto_of_tendsto_of_le_of_le' tendsto_const_nhds
     (tendsto_const_nhds.div_atTop tendsto_id : Tendsto (fun ρ : ℝ => 2 / ρ) atTop (𝓝 0)) ?_ ?_
@@ -451,25 +451,25 @@ theorem tendsto_twoLocusCov_atTop : Tendsto twoLocusCov atTop (𝓝 0) := by
 
 /-! ### The Ohta–Kimura moment system -/
 
-/-- **Linkage disequilibrium polynomial.** The linkage disequilibrium `D = x_AB x_ab - x_Ab x_aB` as a polynomial. -/
+/-- The linkage disequilibrium `D = x_AB x_ab - x_Ab x_aB` as a polynomial. -/
 noncomputable def diseqPoly : MvPolynomial (Bool × Bool) ℝ :=
   X (true, true) * X (false, false) - X (true, false) * X (false, true)
 
-/-- **Frequency of allele A as a polynomial.** The frequency `p = x_AB + x_Ab` of allele `A` as a polynomial. -/
+/-- The frequency `p = x_AB + x_Ab` of allele `A` as a polynomial. -/
 noncomputable def freqFstPoly : MvPolynomial (Bool × Bool) ℝ := X (true, true) + X (true, false)
 
-/-- **Frequency of allele B as a polynomial.** The frequency `q = x_AB + x_aB` of allele `B` as a polynomial. -/
+/-- The frequency `q = x_AB + x_aB` of allele `B` as a polynomial. -/
 noncomputable def freqSndPoly : MvPolynomial (Bool × Bool) ℝ := X (true, true) + X (false, true)
 
-/-- **Weighted disequilibrium polynomial $D(1-2p)(1-2q)$.** `D (1 - 2p)(1 - 2q)` as a polynomial. -/
+/-- `D (1 - 2p)(1 - 2q)` as a polynomial. -/
 noncomputable def diseqZPoly : MvPolynomial (Bool × Bool) ℝ :=
   diseqPoly * (1 - 2 * freqFstPoly) * (1 - 2 * freqSndPoly)
 
-/-- **Product of heterozygosities polynomial.** `Π = p (1 - p) q (1 - q)` as a polynomial. -/
+/-- `Π = p (1 - p) q (1 - q)` as a polynomial. -/
 noncomputable def hetProdPoly : MvPolynomial (Bool × Bool) ℝ :=
   freqFstPoly * (1 - freqFstPoly) * freqSndPoly * (1 - freqSndPoly)
 
-/-- **Generator of the two-locus Wright–Fisher diffusion.** The generator of the two-locus Wright–Fisher diffusion on polynomials in the gamete
+/-- The generator of the two-locus Wright–Fisher diffusion on polynomials in the gamete
 frequencies, time in units of `2 N` generations, `ρ = 4 N r`, symmetric mutation at rate `ν` per
 locus in each direction (`ν = θ / 2`, `θ = 4 N u`):
 `L f = ½ ∑ x_g (δ_{gh} - x_h) ∂_g ∂_h f + ∑ (-(ρ/2) ε_g D + ν (x_{g'} + x_{g''} - 2 x_g)) ∂_g f`. -/
@@ -488,7 +488,7 @@ private theorem pderiv_two (g : Bool × Bool) :
   rw [show (2 : MvPolynomial (Bool × Bool) ℝ) = C 2 from (map_ofNat C 2).symm]
   exact pderiv_C
 
-/-- **Drift of gamete frequencies matches recombination.** Without mutation the drift of a gamete frequency is `2 N` times its per-generation change
+/-- Without mutation the drift of a gamete frequency is `2 N` times its per-generation change
 under `Linkage.recombine` when `ρ = 4 N r`. -/
 theorem twoLocusGenerator_X {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 1) {N r ρ : ℝ}
     (hρ : ρ = 4 * N * r) (g : Bool × Bool) :
@@ -579,7 +579,7 @@ theorem twoLocusGenerator_hetProd {x : Bool × Bool → ℝ} (hx : ∑ g, x g = 
       2 * ν * a - 4 * c * b * a - 4 * c * a ^ 2 + 2 * c * a - 4 * b * a ^ 2 + 2 * b * a -
       4 * a ^ 3 + 4 * a ^ 2 - a) * hx
 
-/-- **Stationary law of the two-locus diffusion.** A **stationary law** of the two-locus diffusion in the weak (basic adjoint) sense: a
+/-- A **stationary law** of the two-locus diffusion in the weak (basic adjoint) sense: a
 probability measure on the gamete-frequency simplex with `∫ L f dμ = 0` for every polynomial
 `f`. -/
 structure IsStationaryLaw (ρ ν : ℝ) (μ : Measure (Bool × Bool → ℝ)) : Prop where
@@ -602,7 +602,7 @@ private theorem integrable_of_continuous {ρ ν : ℝ} {μ : Measure (Bool × Bo
   rw [← hx.2]
   exact Finset.single_le_sum (fun h _ => hx.1 h) (Finset.mem_univ g)
 
-/-- **Stationary standardized linkage disequilibrium $\sigma_d^2$.** The stationary standardized disequilibrium
+/-- The stationary standardized disequilibrium
 `σ_d² = (10 + ρ + 16ν) / (22 + 13ρ + ρ² + 128ν + 24ρν + 128ν²)`. -/
 noncomputable def sigmaDSq (ρ ν : ℝ) : ℝ :=
   (10 + ρ + 16 * ν) / (22 + 13 * ρ + ρ ^ 2 + 128 * ν + 24 * ρ * ν + 128 * ν ^ 2)
@@ -642,11 +642,11 @@ theorem IsStationaryLaw.sigmaDSq_eq {ρ ν : ℝ} (hρ : 0 ≤ ρ) (hν : 0 ≤ 
   rw [sigmaDSq, div_eq_div_iff hpos.ne' hden.ne']
   linear_combination (-(10 + ρ + 16 * ν)) * e1 + (-2) * e2
 
-/-- **Ohta–Kimura formula for $\sigma_d^2$ without mutation.** The low-mutation value `σ_d² = (10 + ρ) / (22 + 13ρ + ρ²)` (Ohta & Kimura 1971). -/
+/-- The low-mutation value `σ_d² = (10 + ρ) / (22 + 13ρ + ρ²)` (Ohta & Kimura 1971). -/
 theorem sigmaDSq_zero (ρ : ℝ) : sigmaDSq ρ 0 = (10 + ρ) / (22 + 13 * ρ + ρ ^ 2) := by
   simp [sigmaDSq]
 
-/-- **Low-mutation limit of $\sigma_d^2$.** `σ_d² → (10 + ρ) / (22 + 13ρ + ρ²)` as the mutation rate tends to `0`, for `ρ ≥ 0`. -/
+/-- `σ_d² → (10 + ρ) / (22 + 13ρ + ρ²)` as the mutation rate tends to `0`, for `ρ ≥ 0`. -/
 theorem tendsto_sigmaDSq_zero {ρ : ℝ} (hρ : 0 ≤ ρ) :
     Tendsto (sigmaDSq ρ) (𝓝 0) (𝓝 ((10 + ρ) / (22 + 13 * ρ + ρ ^ 2))) := by
   have h : ContinuousAt (sigmaDSq ρ) 0 := by

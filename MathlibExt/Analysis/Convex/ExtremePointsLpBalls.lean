@@ -120,7 +120,7 @@ private theorem norm_eq_one_of_norm_combo_eq_one {a b : 𝕜} {u v : ℝ} (hu : 
         _ = u := mul_one u
     linarith
 
-/-- **Extreme points of the unit ball of finite $\ell^\infty$.** The extreme points of the closed unit ball of `PiLp ∞ (fun _ : ι => 𝕜)`
+/-- The extreme points of the closed unit ball of `PiLp ∞ (fun _ : ι => 𝕜)`
 are exactly the vectors all of whose coordinates have norm `1`. If some
 coordinate has norm `< 1`, a small perturbation of that coordinate stays
 in the ball and exhibits the point as a midpoint; conversely, a vector
@@ -246,7 +246,7 @@ private theorem norm_add_single_sub_single {ι : Type*} [Fintype ι] [DecidableE
   rw [PiLp.norm_eq_of_L1, PiLp.norm_eq_of_L1, h1, h2, hi, hj]
   linarith [hsum2]
 
-/-- **Extreme points of the unit ball of finite $\ell^1$.** The extreme points of the closed unit ball of `PiLp 1 (fun _ : ι => 𝕜)`
+/-- The extreme points of the closed unit ball of `PiLp 1 (fun _ : ι => 𝕜)`
 are exactly the unit multiples of the coordinate vectors. The proof: an
 extreme point must have norm `1` (otherwise a one-coordinate perturbation
 stays in the ball and exhibits it as a midpoint), and it cannot have two

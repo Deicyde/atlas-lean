@@ -33,7 +33,7 @@ namespace Polynomial
 
 variable {R : Type*} [Semiring R]
 
-/-- **Coefficient list after multiplication by a linear polynomial.** The dense little-endian coefficients after left multiplication by `C r + X * C c`. -/
+/-- The dense little-endian coefficients after left multiplication by `C r + X * C c`. -/
 def mulLinearCoeffList (r c : R) (l : List R) : List R :=
   List.zipWithAll (fun a b => a.getD 0 + b.getD 0)
     (l.map (r * ·)) ((0 :: l).map (c * ·))
@@ -48,13 +48,13 @@ private theorem length_zipWithAll {A B C : Type*} (f : Option A → Option B →
     | nil => simp
     | cons b q => simp [ih]
 
-/-- **Length of the coefficient list after a linear multiplication.** A linear-coefficient update always adds one dense coefficient. -/
+/-- A linear-coefficient update always adds one dense coefficient. -/
 @[simp] theorem length_mulLinearCoeffList (r c : R) (l : List R) :
     (mulLinearCoeffList r c l).length = l.length + 1 := by
   rw [mulLinearCoeffList, length_zipWithAll]
   simp
 
-/-- **Coefficient recurrence for multiplication by a linear polynomial.** The coefficient at every index, including beyond the dense output, follows the source
+/-- The coefficient at every index, including beyond the dense output, follows the source
 recurrence `r * l[j] + c * l[j - 1]`. -/
 @[simp] theorem getD_mulLinearCoeffList (r c : R) (l : List R) (j : ℕ) :
     (mulLinearCoeffList r c l).getD j 0 =
@@ -63,7 +63,7 @@ recurrence `r * l[j] + c * l[j - 1]`. -/
     List.getElem?_zipWithAll, List.getElem?_map]
   cases h₁ : l[j]? <;> cases h₂ : (0 :: l)[j]? <;> simp_all
 
-/-- **Coefficient-list multiplication agrees with polynomial multiplication.** Interpreting the dense output as a little-endian polynomial is left multiplication by the
+/-- Interpreting the dense output as a little-endian polynomial is left multiplication by the
 linear polynomial `C r + X * C c`. -/
 @[simp] theorem ofCoeffList_mulLinearCoeffList (r c : R) (l : List R) :
     ofCoeffList (mulLinearCoeffList r c l) =

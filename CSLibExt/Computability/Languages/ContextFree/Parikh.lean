@@ -47,28 +47,28 @@ namespace Cslib.Language
 
 variable {T : Type*}
 
-/-- **Parikh vector of a word.** The Parikh vector of a word: the function counting, for each
+/-- The Parikh vector of a word: the function counting, for each
 letter, how many times it occurs in the word.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 def parikhVector (w : List T) [DecidableEq T] : T → ℕ :=
   fun a => w.count a
 
-/-- **Parikh image of a language.** The Parikh image of a language: the set of Parikh vectors of its
+/-- The Parikh image of a language: the set of Parikh vectors of its
 words.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 def parikhImage (L : Language T) [DecidableEq T] : Set (T → ℕ) :=
   (fun w => parikhVector w) '' L
 
-/-- **Parikh vector of the empty word is zero.** The Parikh vector of the empty word is zero.
+/-- The Parikh vector of the empty word is zero.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 theorem parikhVector_nil [DecidableEq T] : parikhVector ([] : List T) = 0 := by
   funext a
   simp [parikhVector]
 
-/-- **Parikh vectors add over concatenation.** Parikh vectors add over concatenation.
+/-- Parikh vectors add over concatenation.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 theorem parikhVector_append [DecidableEq T] (u v : List T) :
@@ -76,7 +76,7 @@ theorem parikhVector_append [DecidableEq T] (u v : List T) :
   funext a
   simp [parikhVector, List.count_append]
 
-/-- **Parikh image of a union of languages.** The Parikh image of a union is the union of the Parikh images.
+/-- The Parikh image of a union is the union of the Parikh images.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 theorem parikhImage_union [DecidableEq T] (L M : Language T) :
@@ -92,7 +92,7 @@ theorem parikhImage_union [DecidableEq T] (L M : Language T) :
     · exact ⟨w, (Language.mem_add _ _ _).mpr (Or.inl hw), rfl⟩
     · exact ⟨w, (Language.mem_add _ _ _).mpr (Or.inr hw), rfl⟩
 
-/-- **Parikh image of the empty language is empty.** The Parikh image of the empty language is empty.
+/-- The Parikh image of the empty language is empty.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 theorem parikhImage_empty [DecidableEq T] :
@@ -103,7 +103,7 @@ theorem parikhImage_empty [DecidableEq T] :
   obtain ⟨x, hx, -⟩ := h
   exact Language.notMem_zero x hx
 
-/-- **Parikh image of a singleton language.** The Parikh image of a singleton language is the singleton of the
+/-- The Parikh image of a singleton language is the singleton of the
 Parikh vector.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
@@ -112,7 +112,7 @@ theorem parikhImage_singleton [DecidableEq T] (w : List T) :
   change (fun w => parikhVector w) '' ({w} : Set (List T)) = {parikhVector w}
   exact Set.image_singleton
 
-/-- **Linear combination of period vectors.** The linear combination of a list of period vectors with a
+/-- The linear combination of a list of period vectors with a
 coefficient list `c`: pair the two lists position by position and
 sum the scaled periods, and reject mismatched lengths by
 returning `0` (the length guard is checked up front, before the
@@ -134,7 +134,7 @@ where
     | _, [] => 0
     | p :: P, n :: c => n • p + linCombAux P c
 
-/-- **Unguarded linear combination agrees on equal lengths.** The unguarded recursion agrees with `linComb` on equal-length
+/-- The unguarded recursion agrees with `linComb` on equal-length
 inputs.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
@@ -143,7 +143,7 @@ theorem linComb_eq_aux_of_length_eq {P : List (T → ℕ)} {c : List ℕ}
   unfold linComb
   simp only [ite_eq_left h]
 
-/-- **Linear combination with too few coefficients is zero.** Mismatched lengths are rejected: a shorter coefficient list
+/-- Mismatched lengths are rejected: a shorter coefficient list
 does not silently truncate.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
@@ -152,7 +152,7 @@ theorem linComb_eq_zero_of_length_lt {P : List (T → ℕ)} {c : List ℕ}
   unfold linComb
   simp only [ite_eq_right (by omega : ¬ P.length = c.length)]
 
-/-- **Linear combination with too many coefficients is zero.** Mismatched lengths are rejected: a longer coefficient list
+/-- Mismatched lengths are rejected: a longer coefficient list
 does not silently drop coefficients.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
@@ -161,7 +161,7 @@ theorem linComb_eq_zero_of_length_gt {P : List (T → ℕ)} {c : List ℕ}
   unfold linComb
   simp only [ite_eq_right (by omega : ¬ P.length = c.length)]
 
-/-- **Duplicate periods get independent coefficients.** Duplicate periods get independent coefficients: with
+/-- Duplicate periods get independent coefficients: with
 `P = [p, p]`, the coefficients `(1, 0)` give `p`.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
@@ -171,7 +171,7 @@ theorem linComb_dup (p : T → ℕ) : linComb [p, p] [1, 0] = p := by
   show (1 : ℕ) * p a + ((0 : ℕ) * p a + 0) = p a
   simp
 
-/-- **Linear set of vectors.** A set of vectors is linear when it consists of a base vector plus
+/-- A set of vectors is linear when it consists of a base vector plus
 arbitrary nonnegative combinations of finitely many period vectors,
 with one coefficient per position in the period list.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
@@ -180,14 +180,14 @@ def IsLinear (S : Set (T → ℕ)) : Prop :=
   ∃ (b : T → ℕ) (P : List (T → ℕ)),
     S = {v | ∃ c : List ℕ, c.length = P.length ∧ v = b + linComb P c}
 
-/-- **Semilinear set of vectors.** A set of vectors is semilinear when it is a finite union of
+/-- A set of vectors is semilinear when it is a finite union of
 linear sets.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 def IsSemilinear (S : Set (T → ℕ)) : Prop :=
   ∃ (F : Finset (Set (T → ℕ))), (∀ S' ∈ F, IsLinear S') ∧ ⋃₀ F = S
 
-/-- **A singleton set of vectors is linear.** A singleton set of vectors is linear, with no periods.
+/-- A singleton set of vectors is linear, with no periods.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 theorem isLinear_singleton (b : T → ℕ) : IsLinear ({b} : Set (T → ℕ)) := by
@@ -206,27 +206,27 @@ theorem isLinear_singleton (b : T → ℕ) : IsLinear ({b} : Set (T → ℕ)) :=
     rw [h0] at hv
     simpa using hv
 
-/-- **Linear sets are semilinear.** Linear sets are semilinear.
+/-- Linear sets are semilinear.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 theorem IsLinear.isSemilinear {S : Set (T → ℕ)} (hS : IsLinear S) :
     IsSemilinear S :=
   ⟨{S}, by simp [hS], by simp⟩
 
-/-- **The empty set is semilinear.** The empty set of vectors is semilinear.
+/-- The empty set of vectors is semilinear.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 theorem isSemilinear_empty : IsSemilinear (∅ : Set (T → ℕ)) :=
   ⟨∅, by simp, by simp⟩
 
-/-- **A singleton set of vectors is semilinear.** A singleton set of vectors is semilinear.
+/-- A singleton set of vectors is semilinear.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 theorem isSemilinear_singleton (b : T → ℕ) :
     IsSemilinear ({b} : Set (T → ℕ)) :=
   (isLinear_singleton b).isSemilinear
 
-/-- **Semilinear sets are closed under union.** Semilinear sets are closed under union.
+/-- Semilinear sets are closed under union.
 Source: Parikh, "On context-free languages", Journal of the ACM 13
 (1966), 570-581. -/
 theorem IsSemilinear.union {S S' : Set (T → ℕ)}

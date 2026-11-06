@@ -136,7 +136,7 @@ private theorem etale_residueSection_exists_of_henselianLocalRing
 
 end HenselianEtaleAux
 
-/-- **Sections of étale algebras over Henselian local rings.** Over a Henselian local ring, an étale algebra has a section lifting any
+/-- Over a Henselian local ring, an étale algebra has a section lifting any
 residue-field point. -/
 theorem HenselianLocalRing.exists_algHom_lift_of_etale
     {R : Type u} [CommRing R] [HenselianLocalRing R]

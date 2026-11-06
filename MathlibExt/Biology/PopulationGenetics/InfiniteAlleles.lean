@@ -51,7 +51,7 @@ open Filter Topology
 
 namespace MathlibExt.Biology.PopulationGenetics.InfiniteAlleles
 
-/-- **Homozygosity recursion in the infinite-alleles model.** One generation of drift and mutation in the infinite-alleles model with `M` gene copies and
+/-- One generation of drift and mutation in the infinite-alleles model with `M` gene copies and
 mutation probability `u` per copy: `F' = (1 - u)² (1/M + (1 - 1/M) F)`. The model domain is
 `2 ≤ M` (two distinct copies must exist) and `0 ≤ u ≤ 1`; the theorems below assume only
 `1 ≤ M`, and `M = 1` is an algebraic extension with no biological meaning. For `M = 0` the
@@ -59,7 +59,7 @@ definition uses the junk value `1/0 = 0`. -/
 noncomputable def homozygosityStep (M : ℕ) (u F : ℝ) : ℝ :=
   (1 - u) ^ 2 * (1 / M + (1 - 1 / M) * F)
 
-/-- **Equilibrium homozygosity in the infinite-alleles model.** The equilibrium homozygosity `F* = (1 - u)² / (M - (M - 1)(1 - u)²)`. Biologically meaningful
+/-- The equilibrium homozygosity `F* = (1 - u)² / (M - (M - 1)(1 - u)²)`. Biologically meaningful
 for `2 ≤ M`; its denominator is positive for `1 ≤ M` and `0 < u ≤ 1`, the hypotheses of the
 theorems below (`M = 1` being an algebraic extension). -/
 noncomputable def eqHomozygosity (M : ℕ) (u : ℝ) : ℝ :=
@@ -87,14 +87,14 @@ private theorem homozygosityStep_sub {M : ℕ} (hM : 0 < M) {u : ℝ} (hu0 : 0 <
   linear_combination (-(1 / (M : ℝ))) * hE +
     (eqHomozygosity M u * (1 - (1 - u) ^ 2)) * hinv
 
-/-- **Equilibrium homozygosity is a fixed point of the recursion.** `F*` is a fixed point of the homozygosity recursion. -/
+/-- `F*` is a fixed point of the homozygosity recursion. -/
 theorem homozygosityStep_eqHomozygosity {M : ℕ} (hM : 0 < M) {u : ℝ} (hu0 : 0 < u)
     (hu1 : u ≤ 1) : homozygosityStep M u (eqHomozygosity M u) = eqHomozygosity M u := by
   have := homozygosityStep_sub hM hu0 hu1 (eqHomozygosity M u)
   rw [sub_self, mul_zero, sub_eq_zero] at this
   exact this
 
-/-- **Uniqueness of the equilibrium homozygosity.** For `0 < u ≤ 1`, `F*` is the unique fixed point of the homozygosity recursion. -/
+/-- For `0 < u ≤ 1`, `F*` is the unique fixed point of the homozygosity recursion. -/
 theorem homozygosityStep_eq_self_iff {M : ℕ} (hM : 0 < M) {u : ℝ} (hu0 : 0 < u) (hu1 : u ≤ 1)
     (F : ℝ) : homozygosityStep M u F = F ↔ F = eqHomozygosity M u := by
   refine ⟨fun h => ?_, fun h => h ▸ homozygosityStep_eqHomozygosity hM hu0 hu1⟩
@@ -117,7 +117,7 @@ theorem homozygosityStep_eq_self_iff {M : ℕ} (hM : 0 < M) {u : ℝ} (hu0 : 0 <
   · linarith
   · linarith
 
-/-- **Convergence of homozygosity to equilibrium.** For `0 < u ≤ 1` the homozygosity converges to `F*` from every initial value `F₀`. -/
+/-- For `0 < u ≤ 1` the homozygosity converges to `F*` from every initial value `F₀`. -/
 theorem tendsto_iterate_homozygosityStep {M : ℕ} (hM : 0 < M) {u : ℝ} (hu0 : 0 < u)
     (hu1 : u ≤ 1) (F₀ : ℝ) :
     Tendsto (fun t : ℕ => (homozygosityStep M u)^[t] F₀) atTop (𝓝 (eqHomozygosity M u)) := by
@@ -167,7 +167,7 @@ theorem tendsto_eqHomozygosity {θ : ℝ} (hθ : 0 < θ) :
   · ring
   · linear_combination (-(θ - θ ^ 2 * (N : ℝ)⁻¹ / 8)) * hinv
 
-/-- **Limit $\theta/(1+\theta)$ of the equilibrium heterozygosity.** The equilibrium heterozygosity `H* = 1 - F*` tends to `θ/(1 + θ)` as `N → ∞` with
+/-- The equilibrium heterozygosity `H* = 1 - F*` tends to `θ/(1 + θ)` as `N → ∞` with
 `M = 2N` and `u = θ/(4N)`. -/
 theorem tendsto_one_sub_eqHomozygosity {θ : ℝ} (hθ : 0 < θ) :
     Tendsto (fun N : ℕ => 1 - eqHomozygosity (2 * N) (θ / (4 * N))) atTop

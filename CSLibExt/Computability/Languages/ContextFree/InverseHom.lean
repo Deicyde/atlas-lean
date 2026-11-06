@@ -49,9 +49,7 @@ variable {T T' : Type*}
 
 /-! ## Right letters -/
 
-/-- **Right projection of a word.** For a word $u$ over the disjoint union $T \oplus T'$ of two
-alphabets, its right projection is the word over $T'$ obtained from $u$ by deleting every letter
-from $T$ and reading each remaining letter as a letter of $T'$, keeping their order. -/
+/-- The letters of a word over `T ⊕ T'` that come from `T'`. -/
 def projRight (u : List (T ⊕ T')) : List T' :=
   u.filterMap Sum.getRight?
 
@@ -80,20 +78,13 @@ section Insert
 
 variable (g : ContextFreeGrammar T')
 
-/-- **Marker translation of a symbol.** Let $g$ be a context-free grammar over $T'$ and let $T$ be
-an alphabet. Each symbol of $g$ is translated to a string of symbols with terminals in
-$T \sqcup T'$ and nonterminals those of $g$ together with two new nonterminals $S$ and $D$: a
-terminal $b \in T'$ becomes the marker $D$ followed by $b$, and a nonterminal $A$ of $g$ becomes
-$A$. -/
+/-- The translation of a symbol: a terminal is preceded by the marker loop `none`, and a
+nonterminal `A` becomes `some (some A)`. -/
 def insSymbol : Symbol T' g.NT → List (Symbol (T ⊕ T') (Option (Option g.NT)))
   | .terminal b => [.nonterminal none, .terminal (.inr b)]
   | .nonterminal A => [.nonterminal (some (some A))]
 
-/-- **Marked form of a word.** Let $g$ be a context-free grammar over $T'$, let $T$ be an
-alphabet, and let $u$ be a word over $T \sqcup T'$. The marked form of $u$ is the sentential form,
-with terminals in $T \sqcup T'$ and nonterminals those of $g$ together with two new nonterminals
-$S$ and $D$, that lists the letters of $u$ from $T'$ in order, each preceded by the marker $D$,
-followed by one more $D$. -/
+/-- The form with a marker loop before each right letter of `u` and after them. -/
 def markedForm {g : ContextFreeGrammar T'} (u : List (T ⊕ T')) :
     List (Symbol (T ⊕ T') (Option (Option g.NT))) :=
   (projRight u).flatMap (fun b => [.nonterminal none, .terminal (.inr b)]) ++ [.nonterminal none]
@@ -107,12 +98,8 @@ theorem markedForm_eq_cons {g : ContextFreeGrammar T'} (u : List (T ⊕ T')) :
 
 variable [Fintype T]
 
-/-- **Marker-insertion grammar.** Let $g$ be a context-free grammar over $T'$ with start symbol
-$A_0$, and let $T$ be a finite alphabet. The marker-insertion grammar of $g$ is the context-free
-grammar over $T \sqcup T'$ whose nonterminals are those of $g$ together with a new start symbol
-$S$ and a marker $D$, and whose rules are: for each rule $A \to \alpha$ of $g$, the rule
-$A \to \alpha'$, where $\alpha'$ is $\alpha$ with $D$ inserted in front of each terminal; the
-rule $S \to A_0 D$; the rule $D \to \varepsilon$; and the rule $D \to a D$ for each $a \in T$. -/
+/-- The grammar for `{u | projRight u ∈ g.language}`: the translated productions, a new start
+`some none → some (some g.initial) none`, and the marker loop `none → inl a none | ε`. -/
 noncomputable abbrev insGrammar : ContextFreeGrammar (T ⊕ T') where
   NT := Option (Option g.NT)
   initial := some none
@@ -145,11 +132,7 @@ theorem insGrammar_rule_mark (a : T) :
   Finset.mem_union_right _
     (Finset.mem_union_right _ (Finset.mem_image_of_mem _ (Finset.mem_univ a)))
 
-/-- **The marker-insertion grammar simulates the original grammar.** Let $g$ be a context-free
-grammar over $T'$ and let $T$ be a finite alphabet. If $g$ derives a sentential form $y$ from a
-sentential form $x$, then the marker-insertion grammar of $g$ over $T \sqcup T'$ derives the
-translation of $y$ from the translation of $x$, where a sentential form is translated by
-replacing each of its symbols by its marker translation. -/
+/-- Derivations of the original grammar translate. -/
 theorem insGrammar_derives_flatMap {x y : List (Symbol T' g.NT)} (h : g.Derives x y) :
     (insGrammar (T := T) g).Derives (x.flatMap (insSymbol g)) (y.flatMap (insSymbol g)) := by
   induction h with
@@ -172,10 +155,7 @@ theorem insGrammar_derives_flatMap {x y : List (Symbol T' g.NT)} (h : g.Derives 
       rw [e₁, e₂]
       exact h
 
-/-- **Marker loops fill in the left letters.** Let $g$ be a context-free grammar over $T'$ and
-let $T$ be a finite alphabet. For every word $u$ over $T \sqcup T'$, the marker-insertion grammar
-of $g$ derives $u$ from the marked form of $u$, the sentential form that lists the letters of $u$
-from $T'$ in order, each preceded by the marker nonterminal $D$, followed by one more $D$. -/
+/-- The marker loops of `markedForm u` derive exactly the left letters of `u`. -/
 theorem insGrammar_derives_markedForm :
     ∀ u : List (T ⊕ T'), (insGrammar (T := T) g).Derives (markedForm u) (u.map .terminal)
   | [] => by
@@ -207,12 +187,8 @@ theorem insGrammar_derives_markedForm :
       exact hstep.trans_derives ((insGrammar_derives_markedForm u).append_left
         [Symbol.terminal (N := Option (Option g.NT)) (Sum.inr b)])
 
-/-- **Valuation for the marker-insertion grammar.** Let $g$ be a context-free grammar over $T'$
-and let $T$ be an alphabet. This valuation assigns a language over $T \sqcup T'$ to each
-nonterminal of $g$ and to the two new nonterminals $S$ and $D$ of the marker-insertion grammar
-of $g$: to the marker $D$ the words with no letter from $T'$; to the new start symbol $S$ the
-words whose letters from $T'$ form a word of the language of $g$; and to a nonterminal $A$ of $g$
-the words whose letters from $T'$ form a word that $g$ derives from $A$. -/
+/-- The assignment showing that `insGrammar` generates only words whose right letters are in
+the original language. -/
 def insValuation (g : ContextFreeGrammar T') : Option (Option g.NT) → Language (T ⊕ T')
   | none => {u | projRight u = []}
   | some none => {u | projRight u ∈ g.language}
@@ -277,10 +253,8 @@ theorem isValuation_insValuation :
     rw [(Language.mem_one _).1 hu]
     rfl
 
-/-- **Language of the marker-insertion grammar.** Let $g$ be a context-free grammar over $T'$
-and let $T$ be a finite alphabet. The marker-insertion grammar of $g$ generates exactly the
-words $u$ over $T \sqcup T'$ whose letters from $T'$, read in order, form a word of the language
-of $g$. -/
+/-- **`insGrammar` generates the words whose right letters form a word of the original
+language.** -/
 theorem insGrammar_language :
     (insGrammar (T := T) g).language = {u | projRight u ∈ g.language} := by
   ext u
@@ -306,10 +280,8 @@ theorem insGrammar_language :
 
 end Insert
 
-/-- **Context-free languages are closed under inserting letters.** Let $T$ be a finite alphabet
-and let $L$ be a context-free language over an alphabet $T'$. Then the language of words $u$ over
-the disjoint union $T \oplus T'$ whose letters from $T'$, read in order, form a word of $L$ is
-context-free. -/
+/-- **Inserting letters**: if `L` is context-free over `T'`, so is the set of words over
+`T ⊕ T'` whose letters from `T'` form a word of `L`, for a finite `T`. -/
 theorem IsContextFree.preimage_projRight [Finite T] {L : Language T'} (hL : L.IsContextFree) :
     Language.IsContextFree {u : List (T ⊕ T') | projRight u ∈ L} := by
   have := Fintype.ofFinite T
@@ -318,15 +290,11 @@ theorem IsContextFree.preimage_projRight [Finite T] {L : Language T'} (hL : L.Is
 
 /-! ## Inverse homomorphisms -/
 
-/-- **Block of a letter.** For a map $\varphi$ from $T$ to words over $T'$ and a letter
-$a \in T$, the block of $a$ is the word over the disjoint union $T \sqcup T'$ that consists of
-$a$, as a letter of $T$, followed by the letters of $\varphi(a)$, as letters of $T'$. -/
+/-- A letter `a` followed by its image under `φ`, as right letters. -/
 def block (φ : T → List T') (a : T) : List (T ⊕ T') :=
   Sum.inl a :: (φ a).map Sum.inr
 
-/-- **Erasing right letters.** Erasing right letters is the map from letters of the disjoint
-union $T \sqcup T'$ to words over $T$ that sends a letter $a$ of $T$ to the one-letter word $a$
-and every letter of $T'$ to the empty word. -/
+/-- Erase the right letters and keep the left ones. -/
 def eraseRight : T ⊕ T' → List T :=
   Sum.elim (fun a => [a]) (fun _ => [])
 
@@ -398,10 +366,8 @@ theorem IsContextFree.preimage_hom [Finite T] {L : Language T'} (hL : L.IsContex
   rw [heq]
   exact h
 
-/-- **Context-free languages are closed under inverse free-monoid morphisms.** Let $T$ be a
-finite alphabet, $T'$ an alphabet, $\sigma \colon T^* \to {T'}^*$ a morphism of free monoids and
-$L$ a context-free language over $T'$. Then the inverse image
-$\sigma^{-1}(L) = \{x \in T^* \mid \sigma(x) \in L\}$ is a context-free language over $T$. -/
+/-- **Context-free languages are closed under inverse free-monoid morphisms** from a finite
+alphabet, in the form of `wordMorphismPreimage`. -/
 theorem IsContextFree.preimage_wordMorphism [Finite T] {L : Language T'} (hL : L.IsContextFree)
     (σ : FreeMonoid T →* FreeMonoid T') : (wordMorphismPreimage σ L).IsContextFree := by
   rw [wordMorphismPreimage_eq_flatten]

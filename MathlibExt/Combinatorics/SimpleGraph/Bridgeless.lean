@@ -14,30 +14,26 @@ public import Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected
 
 namespace SimpleGraph
 
-/-- **Bridgeless graph.** A simple graph is bridgeless when no edge is a bridge. -/
+/-- A simple graph is bridgeless when no edge is a bridge. -/
 def IsBridgeless {V : Type*} (G : SimpleGraph V) : Prop :=
   ∀ e ∈ G.edgeSet, ¬ G.IsBridge e
 
 variable {V : Type*} {G : SimpleGraph V}
 
-/-- **Characterization of bridgeless graphs.** A simple graph $G$ is bridgeless if and only if no
-edge of $G$ is a bridge. -/
+/-- Unfolding of `IsBridgeless`. -/
 theorem isBridgeless_iff : G.IsBridgeless ↔ ∀ e ∈ G.edgeSet, ¬ G.IsBridge e :=
   Iff.rfl
 
-/-- **Bridgeless from non-bridge edges.** If no edge of a simple graph $G$ is a bridge, then $G$ is
-bridgeless. -/
+/-- Constructor for `IsBridgeless` from pointwise non-bridge data. -/
 theorem IsBridgeless.mk (h : ∀ e ∈ G.edgeSet, ¬ G.IsBridge e) : G.IsBridgeless :=
   h
 
-/-- **Edges of a bridgeless graph are not bridges.** Every edge of a bridgeless graph is not a
-bridge. -/
+/-- Every edge of a bridgeless graph is not a bridge. -/
 theorem IsBridgeless.not_isBridge (h : G.IsBridgeless) {e : Sym2 V}
     (he : e ∈ G.edgeSet) : ¬ G.IsBridge e :=
   h e he
 
-/-- **The edgeless graph is bridgeless.** The edgeless graph on any vertex set is vacuously
-bridgeless. -/
+/-- The edgeless graph is vacuously bridgeless. -/
 theorem isBridgeless_bot (V : Type*) : (⊥ : SimpleGraph V).IsBridgeless := by
   intro e he
   simp at he

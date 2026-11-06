@@ -35,7 +35,7 @@ namespace StatMech.Onsager.CellPinch
 
 open Finset StatMech.Onsager.CellCount StatMech.Onsager.CellEuler
 
-/-- **Pinch point of a set of unit cells.** The lattice point `v` is a pinch point of `S`: of the four cells around `v`, exactly two
+/-- The lattice point `v` is a pinch point of `S`: of the four cells around `v`, exactly two
   diagonally opposite ones belong to `S`. -/
 def pinchAt (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) : Prop :=
   (v ∈ S ∧ (v.1 - 1, v.2 - 1) ∈ S ∧ (v.1 - 1, v.2) ∉ S ∧ (v.1, v.2 - 1) ∉ S) ∨
@@ -45,13 +45,13 @@ def pinchAt (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) : Prop :=
 instance (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) : Decidable (pinchAt S v) := by
   unfold pinchAt; infer_instance
 
-/-- **Pinch point indicator.** The indicator of `v` being a pinch point of `S`. -/
+/-- The indicator of `v` being a pinch point of `S`. -/
 def pinchW (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) : ℤ := if pinchAt S v then 1 else 0
 
-/-- **Number of pinch points.** The number of pinch points of `S`. -/
+/-- The number of pinch points of `S`. -/
 def pinchCount (S : Finset (ℤ × ℤ)) : ℤ := ∑ v ∈ cellVerts S, pinchW S v
 
-/-- **A pinch point is a vertex.** A pinch point is a vertex of `S`. -/
+/-- A pinch point is a vertex of `S`. -/
 theorem pinchAt_mem_cellVerts (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) (h : pinchAt S v) :
     v ∈ cellVerts S := by
   have hpos : 0 < cornerCount S v := by
@@ -94,7 +94,7 @@ theorem pinchW_zero_of_notMem (S : Finset (ℤ × ℤ)) (v : ℤ × ℤ) (hv : v
   unfold pinchW
   rw [ite_eq_right (fun h => hv (pinchAt_mem_cellVerts S v h))]
 
-/-- **Pinch count changes only at the corners of a new cell.** Adding a cell changes the pinch count only at the corners of that cell. -/
+/-- Adding a cell changes the pinch count only at the corners of that cell. -/
 theorem pinchCount_insert (S : Finset (ℤ × ℤ)) (c : ℤ × ℤ) (_hc : c ∉ S) :
     pinchCount (insert c S)
       = pinchCount S + ∑ v ∈ cornersOf c, (pinchW (insert c S) v - pinchW S v) := by

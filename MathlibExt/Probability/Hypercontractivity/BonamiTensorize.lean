@@ -61,16 +61,16 @@ namespace Probability
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
-/-- **Uniform expectation on the Boolean cube.** The expectation of `f` under the uniform measure on `ι → Bool`. This is `𝔼 ω, f ω`
+/-- The expectation of `f` under the uniform measure on `ι → Bool`. This is `𝔼 ω, f ω`
 (`Finset.expect`). -/
 noncomputable def bnt_uexp (f : (ι → Bool) → ℝ) : ℝ :=
   (∑ ω : ι → Bool, f ω) / (2 ^ (Fintype.card ι))
 
-/-- **q-th moment under the uniform measure on the cube.** `E|f|^q` under the uniform measure. -/
+/-- `E|f|^q` under the uniform measure. -/
 noncomputable def bnt_qnormPow (q : ℝ) (f : (ι → Bool) → ℝ) : ℝ :=
   bnt_uexp (fun ω => |f ω| ^ q)
 
-/-- **$L^q$ norm under the uniform measure on the cube.** The `L^q` norm `(E|f|^q)^(1/q)` under the uniform measure. -/
+/-- The `L^q` norm `(E|f|^q)^(1/q)` under the uniform measure. -/
 noncomputable def bnt_qnorm (q : ℝ) (f : (ι → Bool) → ℝ) : ℝ :=
   (bnt_qnormPow q f) ^ (1 / q)
 
@@ -83,22 +83,22 @@ theorem bnt_qnormPow_nonneg (q : ℝ) (f : (ι → Bool) → ℝ) : 0 ≤ bnt_qn
 theorem bnt_qnorm_nonneg (q : ℝ) (f : (ι → Bool) → ℝ) : 0 ≤ bnt_qnorm q f :=
   Real.rpow_nonneg (bnt_qnormPow_nonneg q f) _
 
-/-- **Noise kernel on the Boolean cube.** The noise kernel: `∏ i, (1 + ρ)/2` or `(1 - ρ)/2` according as `x i = y i` or not. -/
+/-- The noise kernel: `∏ i, (1 + ρ)/2` or `(1 - ρ)/2` according as `x i = y i` or not. -/
 noncomputable def bnt_noiseKernel (ρ : ℝ) (x y : ι → Bool) : ℝ :=
   ∏ i : ι, (if x i = y i then (1 + ρ) / 2 else (1 - ρ) / 2)
 
-/-- **Noise operator on the Boolean cube.** The noise operator `T_ρ f x = ∑ y, bnt_noiseKernel ρ x y * f y`: for `ρ ∈ [-1, 1]`, the
+/-- The noise operator `T_ρ f x = ∑ y, bnt_noiseKernel ρ x y * f y`: for `ρ ∈ [-1, 1]`, the
 expectation of `f y` where each coordinate of `y` equals that of `x` with probability
 `(1 + ρ)/2`. -/
 noncomputable def bnt_noiseOp (ρ : ℝ) (f : (ι → Bool) → ℝ) : (ι → Bool) → ℝ :=
   fun x => ∑ y : ι → Bool, bnt_noiseKernel ρ x y * f y
 
-/-- **Uniform expectation on the cube equals the finite average.** `bnt_uexp` is the uniform average `Finset.expect`. -/
+/-- `bnt_uexp` is the uniform average `Finset.expect`. -/
 theorem bnt_uexp_eq_expect (f : (ι → Bool) → ℝ) : bnt_uexp f = 𝔼 ω, f ω := by
   rw [Finset.expect_eq_sum_div_card, Finset.card_univ, Fintype.card_fun, Fintype.card_bool]
   simp [bnt_uexp]
 
-/-- **Agreement of the two noise operators on the Boolean cube.** On `Fin n → Bool`, `bnt_noiseOp` is the noise operator `BooleanCube.boolNoiseOp`. -/
+/-- On `Fin n → Bool`, `bnt_noiseOp` is the noise operator `BooleanCube.boolNoiseOp`. -/
 theorem bnt_noiseOp_eq_boolNoiseOp {n : ℕ} (ρ : ℝ) (f : (Fin n → Bool) → ℝ) :
     bnt_noiseOp ρ f = BooleanCube.boolNoiseOp ρ f := by
   funext x
@@ -220,7 +220,7 @@ theorem bnt_qnorm_const_mul {n : ℕ} {p : ℝ} (hp : 0 < p) (c : ℝ) (f : (Fin
   congr 1
   rw [← Real.rpow_mul (abs_nonneg c), mul_one_div, div_self (ne_of_gt hp), Real.rpow_one]
 
-/-- **Vector-valued two-point hypercontractive inequality.** The vector-valued two-point inequality at noise `ρ`, with `q = 1 + ρ²`: for all `n` and
+/-- The vector-valued two-point inequality at noise `ρ`, with `q = 1 + ρ²`: for all `n` and
 `u v : (Fin n → Bool) → ℝ`, the average of `‖((1+ρ)/2) u + ((1-ρ)/2) v‖₂²` and
 `‖((1-ρ)/2) u + ((1+ρ)/2) v‖₂²` is at most `((‖u‖_q^q + ‖v‖_q^q) / 2)^(2/q)`. -/
 def bnt_VectorTwoPoint (ρ : ℝ) : Prop :=
@@ -275,7 +275,7 @@ theorem bnt_vectorTwoPoint_one : bnt_VectorTwoPoint 1 := by
   have hv : bnt_qnorm 2 v ^ (2 : ℝ) = bnt_qnormPow 2 v := bnt_qnorm_rpow_self (by norm_num) v
   rw [hu, hv]
 
-/-- **Induction step of hypercontractivity tensorization.** The induction step of tensorization: `‖T_ρ g‖₂ ≤ ‖g‖_(1+ρ²)` in dimension `n` implies the
+/-- The induction step of tensorization: `‖T_ρ g‖₂ ≤ ‖g‖_(1+ρ²)` in dimension `n` implies the
 same in dimension `n + 1`. -/
 def bnt_TensorStep (ρ : ℝ) : Prop :=
   ∀ n : ℕ,
@@ -283,7 +283,7 @@ def bnt_TensorStep (ρ : ℝ) : Prop :=
     (∀ f : (Fin (n + 1) → Bool) → ℝ,
       bnt_qnorm 2 (bnt_noiseOp ρ f) ≤ bnt_qnorm (1 + ρ ^ 2) f)
 
-/-- **Vector two-point inequality implies the tensorization step.** The vector two-point inequality gives the tensorization step. -/
+/-- The vector two-point inequality gives the tensorization step. -/
 theorem bnt_tensorStep_of_vec {ρ : ℝ} (Hvec : bnt_VectorTwoPoint ρ) (n : ℕ)
     (ih : ∀ g : (Fin n → Bool) → ℝ, bnt_qnorm 2 (bnt_noiseOp ρ g) ≤ bnt_qnorm (1 + ρ ^ 2) g)
     (f : (Fin (n + 1) → Bool) → ℝ) :
@@ -359,7 +359,7 @@ theorem bnt_hypercontractivity_fin_zero (ρ : ℝ) (f : (Fin 0 → Bool) → ℝ
   rw [bnt_noiseOp_fin_zero ρ f, bnt_qnorm_fin_zero (by norm_num),
     bnt_qnorm_fin_zero (by positivity)]
 
-/-- **Hypercontractivity from the vector two-point inequality.** Hypercontractivity `‖T_ρ f‖₂ ≤ ‖f‖_(1+ρ²)` on `Fin n → Bool`, from the vector two-point
+/-- Hypercontractivity `‖T_ρ f‖₂ ≤ ‖f‖_(1+ρ²)` on `Fin n → Bool`, from the vector two-point
 inequality. -/
 theorem bnt_hypercontractivity {ρ : ℝ} (Hvec : bnt_VectorTwoPoint ρ) (n : ℕ)
     (f : (Fin n → Bool) → ℝ) :
@@ -368,7 +368,7 @@ theorem bnt_hypercontractivity {ρ : ℝ} (Hvec : bnt_VectorTwoPoint ρ) (n : �
   | zero => exact bnt_hypercontractivity_fin_zero ρ f
   | succ m ih => exact bnt_tensorStep_of_vec Hvec m (fun g => ih g) f
 
-/-- **Hypercontractivity from the tensorization step.** Hypercontractivity `‖T_ρ f‖₂ ≤ ‖f‖_(1+ρ²)` on `Fin n → Bool`, from the tensorization step. -/
+/-- Hypercontractivity `‖T_ρ f‖₂ ≤ ‖f‖_(1+ρ²)` on `Fin n → Bool`, from the tensorization step. -/
 theorem bnt_hypercontractivity_of_twoPoint {ρ : ℝ} (Hstep : bnt_TensorStep ρ)
     (n : ℕ) (f : (Fin n → Bool) → ℝ) :
     bnt_qnorm 2 (bnt_noiseOp ρ f) ≤ bnt_qnorm (1 + ρ ^ 2) f := by

@@ -61,7 +61,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Cut set of a face coloring.** The primal edges `sharedPrimalEdge a b` between adjacent faces `a`, `b` on which `T` takes
+/-- The primal edges `sharedPrimalEdge a b` between adjacent faces `a`, `b` on which `T` takes
 different values. -/
 def jed_cutSet (T : Site 2 → Prop) : Set (Sym2 (Site 2)) :=
   {e | ∃ a b : Site 2, (hypercubicLattice 2).Adj a b ∧ e = sharedPrimalEdge a b ∧ (T a ↔ ¬ T b)}
@@ -117,7 +117,7 @@ theorem jed_cutSet_even (T : Site 2 → Prop) (v : Site 2) :
     by_cases hD : T ![x - 1, y] <;>
     simp only [hA, hB, hC, hD, not_true, not_false_iff, iff_true, iff_false] <;> norm_num
 
-/-- **Lattice graph spanned by an edge set.** The graph on `ℤ²` whose edges are the lattice edges in `E`. -/
+/-- The graph on `ℤ²` whose edges are the lattice edges in `E`. -/
 def jed_primalGraph (E : Set (Sym2 (Site 2))) : SimpleGraph (Site 2) where
   Adj u w := (hypercubicLattice 2).Adj u w ∧ s(u, w) ∈ E
   symm := ⟨by rintro u w ⟨h1, h2⟩; exact ⟨h1.symm, by rwa [Sym2.eq_swap]⟩⟩
@@ -301,14 +301,14 @@ theorem jed_not_reachable_of_isolated (H : SimpleGraph (Site 2)) (u v : Site 2)
   | nil => exact hne rfl
   | cons hadj _ => exact hiso _ hadj
 
-/-- **Twelve boundary edges of a 3 by 3 rectangle.** The twelve lattice edges of the boundary of the rectangle `[-1, 2] × [-2, 1]`. -/
+/-- The twelve lattice edges of the boundary of the rectangle `[-1, 2] × [-2, 1]`. -/
 noncomputable def jed_boxEdges : Finset (Sym2 (Site 2)) :=
   { s(![(-1:ℤ), -2], ![0, -2]), s(![(0:ℤ), -2], ![1, -2]), s(![(1:ℤ), -2], ![2, -2]),
     s(![(-1:ℤ), 1], ![0, 1]), s(![(0:ℤ), 1], ![1, 1]), s(![(1:ℤ), 1], ![2, 1]),
     s(![(-1:ℤ), -2], ![-1, -1]), s(![(-1:ℤ), -1], ![-1, 0]), s(![(-1:ℤ), 0], ![-1, 1]),
     s(![(2:ℤ), -2], ![2, -1]), s(![(2:ℤ), -1], ![2, 0]), s(![(2:ℤ), 0], ![2, 1]) }
 
-/-- **Boundary of a 3 by 3 rectangle as a graph.** The boundary of the rectangle `[-1, 2] × [-2, 1]` as a graph. -/
+/-- The boundary of the rectangle `[-1, 2] × [-2, 1]` as a graph. -/
 noncomputable def jed_boxH : SimpleGraph (Site 2) :=
   jed_primalGraph (jed_boxEdges : Set (Sym2 (Site 2)))
 

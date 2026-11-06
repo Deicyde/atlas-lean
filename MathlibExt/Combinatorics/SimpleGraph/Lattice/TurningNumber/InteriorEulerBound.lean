@@ -54,7 +54,7 @@ open StatMech.Onsager.CellCount StatMech.Onsager.CellEuler
   StatMech.Onsager.CellEulerBound StatMech.Onsager.WalkCellRegion
   StatMech.Onsager.WalkCellBoundary StatMech.Onsager.BaseCase
 
-/-- **1-skeleton of a cell complex.** The 1-skeleton of the cell complex `S`: vertices are the corners of cells, edges the sides of
+/-- The 1-skeleton of the cell complex `S`: vertices are the corners of cells, edges the sides of
   cells. -/
 def cellSkeleton (S : Finset Cell) : SimpleGraph {v // v ∈ regVerts S} where
   Adj a b := s(a.1, b.1) ∈ StatMech.CellEulerChar.regEdges S
@@ -63,7 +63,7 @@ def cellSkeleton (S : Finset Cell) : SimpleGraph {v // v ∈ regVerts S} where
     intro a h
     exact wad_edge_not_diag h (by simp)⟩
 
-/-- **1-skeleton of a cell complex as a planar subgraph.** The 1-skeleton of `S` as a planar subgraph of `ℤ²`. -/
+/-- The 1-skeleton of `S` as a planar subgraph of `ℤ²`. -/
 noncomputable def cellSkeletonP (S : Finset Cell) : PlanarZ2Subgraph where
   V := {v // v ∈ regVerts S}
   finV := inferInstance
@@ -88,7 +88,7 @@ noncomputable def cellSkeletonP (S : Finset Cell) : PlanarZ2Subgraph where
       rcases he with ⟨h1, h2⟩ | ⟨h1, h2⟩ <;>
       simp only [Prod.ext_iff] at h1 h2 <;> omega
 
-/-- **Cell complex edges lie in the embedded skeleton.** An edge of the cell complex is an edge of the embedded skeleton. -/
+/-- An edge of the cell complex is an edge of the embedded skeleton. -/
 theorem regEdge_mem_imageGraph (S : Finset Cell) {e : Sym2 Vtx}
     (he : e ∈ StatMech.CellEulerChar.regEdges S) :
     Sym2.map (fun v : Vtx => ![v.1, v.2]) e ∈ (imageGraph (cellSkeletonP S)).edgeSet := by
@@ -100,7 +100,7 @@ theorem regEdge_mem_imageGraph (S : Finset Cell) {e : Sym2 Vtx}
       rw [SimpleGraph.mem_edgeSet, imageGraph_adj]
       exact ⟨⟨a, ha⟩, ⟨b, hb⟩, he, rfl, rfl⟩
 
-/-- **Shared side of a cell and an adjacent face is an edge.** The side shared by a cell of `S` and an adjacent face is an edge of `S`. -/
+/-- The side shared by a cell of `S` and an adjacent face is an edge of `S`. -/
 theorem sharedPrimalEdge_mem_regEdges (S : Finset Cell) (c : Cell) (hc : c ∈ S)
     (g : Site 2) (hlat : (hypercubicLattice 2).Adj (cellFace c) g) :
     Sym2.map cellFace.symm (sharedPrimalEdge (cellFace c) g) ∈
@@ -143,7 +143,7 @@ theorem sharedPrimalEdge_mem_regEdges (S : Finset Cell) (c : Cell) (hc : c ∈ S
     rw [sharedPrimalEdge_bottom]
     simp [Sym2.map_mk, StatMech.CellEulerChar.cellEdges, faceCorner00, faceCorner10]
 
-/-- **The face of a cell is enclosed on all four sides.** The face of a cell of `S` is enclosed by the skeleton on all four sides. -/
+/-- The face of a cell of `S` is enclosed by the skeleton on all four sides. -/
 theorem occupiedFace_isolated (S : Finset Cell) (c : Cell) (hc : c ∈ S) (g : Site 2) :
     ¬ (whb_faceRegion (imageGraph (cellSkeletonP S))).Adj (cellFace c) g := by
   intro hadj
@@ -160,12 +160,12 @@ theorem occupiedFace_isolated (S : Finset Cell) (c : Cell) (hc : c ∈ S) (g : S
       left
       constructor <;> funext i <;> fin_cases i <;> rfl
 
-/-- **Face component containing a cell.** The face component of the skeleton containing the cell `c`. -/
+/-- The face component of the skeleton containing the cell `c`. -/
 noncomputable def occupiedComponent (S : Finset Cell) (c : Cell) :
     (whb_faceRegion (imageGraph (cellSkeletonP S))).ConnectedComponent :=
   (whb_faceRegion (imageGraph (cellSkeletonP S))).connectedComponentMk (cellFace c)
 
-/-- **The face of a cell is alone in its component.** The face of a cell of `S` is alone in its face component. -/
+/-- The face of a cell of `S` is alone in its face component. -/
 theorem occupiedFace_reachable_eq (S : Finset Cell) (c : Cell) (hc : c ∈ S) (g : Site 2)
     (hreach : (whb_faceRegion (imageGraph (cellSkeletonP S))).Reachable (cellFace c) g) :
     g = cellFace c := by
@@ -174,7 +174,7 @@ theorem occupiedFace_reachable_eq (S : Finset Cell) (c : Cell) (hc : c ∈ S) (g
   | nil => rfl
   | cons hadj _ => exact absurd hadj (occupiedFace_isolated S c hc _)
 
-/-- **The face component of a cell is bounded.** The face component of a cell of `S` is bounded. -/
+/-- The face component of a cell of `S` is bounded. -/
 theorem occupiedComponent_finite (S : Finset Cell) (c : Cell) (hc : c ∈ S) :
     (occupiedComponent S c).supp.Finite := by
   apply Set.Finite.subset (Set.finite_singleton (cellFace c))
@@ -185,12 +185,12 @@ theorem occupiedComponent_finite (S : Finset Cell) (c : Cell) (hc : c ∈ S) :
   have hreach := (occupiedComponent S c).reachable_of_mem_supp hbase hg
   exact occupiedFace_reachable_eq S c hc g hreach
 
-/-- **Bounded face formed by a cell.** The bounded face of the skeleton formed by a cell of `S`. -/
+/-- The bounded face of the skeleton formed by a cell of `S`. -/
 noncomputable def occupiedBoundedFace (S : Finset Cell) (c : S) :
     jcb_BoundedRegion (cellSkeletonP S) :=
   ⟨occupiedComponent S c.1, occupiedComponent_finite S c.1 c.2⟩
 
-/-- **Distinct cells form distinct bounded faces.** Distinct cells form distinct bounded faces. -/
+/-- Distinct cells form distinct bounded faces. -/
 theorem occupiedBoundedFace_injective (S : Finset Cell) :
     Function.Injective (occupiedBoundedFace S) := by
   intro c d h
@@ -201,7 +201,7 @@ theorem occupiedBoundedFace_injective (S : Finset Cell) :
     occupiedFace_reachable_eq S c.1 c.2 (cellFace d.1) hreach
   exact Subtype.ext (cellFace.injective hface.symm)
 
-/-- **Number of cells is at most the nullity of the skeleton.** The number of cells is at most the nullity of the skeleton. -/
+/-- The number of cells is at most the nullity of the skeleton. -/
 theorem card_le_cellSkeleton_nullity (S : Finset Cell) :
     S.card ≤ nullity (cellSkeletonP S).G := by
   have hle := Nat.card_le_card_of_injective (occupiedBoundedFace S)
@@ -217,7 +217,7 @@ theorem mem_cellSkeleton_edgeSet_iff (S : Finset Cell)
   induction e with
   | h a b => rfl
 
-/-- **Edges of the skeleton are the edges of the cell complex.** The edges of `cellSkeleton S` are the edges of the cell complex `S`. -/
+/-- The edges of `cellSkeleton S` are the edges of the cell complex `S`. -/
 noncomputable def cellSkeletonEdgeEquiv (S : Finset Cell) :
     {e // e ∈ (cellSkeleton S).edgeSet} ≃ {e // e ∈ StatMech.CellEulerChar.regEdges S} where
   toFun e := ⟨Sym2.map Subtype.val e.1, by
@@ -237,12 +237,12 @@ theorem card_cellSkeleton_edges (S : Finset Cell) :
     Nat.card (cellSkeleton S).edgeSet = (StatMech.CellEulerChar.regEdges S).card := by
   rw [Nat.card_congr (cellSkeletonEdgeEquiv S), Nat.card_eq_fintype_card, Fintype.card_coe]
 
-/-- **Vertex count of the skeleton.** The skeleton has `(regVerts S).card` vertices. -/
+/-- The skeleton has `(regVerts S).card` vertices. -/
 theorem card_cellSkeleton_vertices (S : Finset Cell) :
     Nat.card {v // v ∈ regVerts S} = (regVerts S).card := by
   rw [Nat.card_eq_fintype_card, Fintype.card_coe]
 
-/-- **Euler characteristic at most 1 for a connected skeleton.** If the 1-skeleton of `S` is connected, then `eulerChar S ≤ 1`. See also
+/-- If the 1-skeleton of `S` is connected, then `eulerChar S ≤ 1`. See also
   `StatMech.Onsager.CellEulerBound.eulerChar_le_one`. -/
 theorem eulerChar_le_one_of_skeleton_connected (S : Finset Cell)
     (hconn : (cellSkeleton S).Connected) : eulerChar S ≤ 1 := by
@@ -263,12 +263,12 @@ theorem eulerChar_le_one_of_skeleton_connected (S : Finset Cell)
   unfold regChi
   omega
 
-/-- **Corner of a cell as a skeleton vertex.** A corner of a cell of `S`, as a vertex of the skeleton. -/
+/-- A corner of a cell of `S`, as a vertex of the skeleton. -/
 def skeletonVertexOfCorner (S : Finset Cell) (c : Cell) (hc : c ∈ S)
     (v : Vtx) (hv : v ∈ StatMech.CellEulerChar.cellVerts c) : {v // v ∈ regVerts S} :=
   ⟨v, wad_cellVerts_subset_regVerts hc hv⟩
 
-/-- **Cell corners are connected to the lower-left corner.** Every corner of a cell is connected in the skeleton to its lower-left corner. -/
+/-- Every corner of a cell is connected in the skeleton to its lower-left corner. -/
 theorem corner_reachable_lowerLeft (S : Finset Cell) (c : Cell) (hc : c ∈ S)
     (v : Vtx) (hv : v ∈ StatMech.CellEulerChar.cellVerts c) :
     (cellSkeleton S).Reachable (skeletonVertexOfCorner S c hc v hv)
@@ -299,7 +299,7 @@ theorem corner_reachable_lowerLeft (S : Finset Cell) (c : Cell) (hc : c ∈ S)
   · subst v; exact hleft.reachable.symm
   · subst v; exact hright.reachable.symm.trans hbottom.reachable.symm
 
-/-- **Adjacent cells have connected lower-left corners.** The lower-left corners of two adjacent cells of `S` are connected in the skeleton. -/
+/-- The lower-left corners of two adjacent cells of `S` are connected in the skeleton. -/
 theorem cell_representatives_reachable_of_adj (S : Finset Cell) (c d : Cell)
     (hc : c ∈ S) (hd : d ∈ S)
     (hadj : (hypercubicLattice 2).Adj (cellFace c) (cellFace d)) :
@@ -328,13 +328,13 @@ theorem cell_representatives_reachable_of_adj (S : Finset Cell) (c d : Cell)
       have hda := corner_reachable_lowerLeft S d hd a had
       exact hca.trans hda
 
-/-- **Lower-left corner of a cell as a skeleton vertex.** The lower-left corner of a cell of `S`, as a vertex of the skeleton. -/
+/-- The lower-left corner of a cell of `S`, as a vertex of the skeleton. -/
 def skeletonRepresentative (S : Finset Cell) (c : S) : {v // v ∈ regVerts S} :=
   skeletonVertexOfCorner S c.1 c.2 c.1 (by
     obtain ⟨x, y⟩ := c.1
     simp [StatMech.CellEulerChar.cellVerts])
 
-/-- **Interior cells have connected lower-left corners.** Any two interior cells of a simple closed walk without right turns have skeleton-connected
+/-- Any two interior cells of a simple closed walk without right turns have skeleton-connected
   lower-left corners. -/
 theorem interior_representatives_reachable {m : ℕ}
     (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
@@ -381,7 +381,7 @@ theorem interior_representatives_reachable {m : ℕ}
   have h := lift p hcSupp heSupp
   simpa [S, skeletonRepresentative] using h
 
-/-- **Connectedness of the skeleton of the interior.** The skeleton of the interior of a simple closed walk without right turns is connected. -/
+/-- The skeleton of the interior of a simple closed walk without right turns is connected. -/
 theorem interior_cellSkeleton_connected {m : ℕ}
     (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d))
@@ -410,7 +410,7 @@ theorem interior_cellSkeleton_connected {m : ℕ}
       leftCell_mem_interiorCells d hclosed hsimple hreflexfree k
     exact ⟨skeletonRepresentative S ⟨leftCell d k, hc⟩⟩
 
-/-- **Interior of a simple closed walk has Euler characteristic at most 1.** The interior of a simple closed walk without right turns has Euler characteristic at most
+/-- The interior of a simple closed walk without right turns has Euler characteristic at most
   `1`. -/
 theorem eulerChar_interiorCells_le_one {m : ℕ}
     (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)

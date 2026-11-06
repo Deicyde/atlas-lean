@@ -61,7 +61,7 @@ open Finset StatMech.Onsager.BaseCase StatMech.Onsager.NoDoubleWind StatMech.Ons
 
 variable {m : ℕ}
 
-/-- **Agreement of the two definitions of the left cell.** The two descriptions of the cell to the left of a step agree. -/
+/-- The two descriptions of the cell to the left of a step agree. -/
 theorem leftCell_bridge (d : Fin (m + 3) → Fin 4) (k : Fin (m + 3)) :
     Orientation.leftCell (d k) (pos d k) = WalkCellBoundary.leftCell d k := by
   rw [WalkCellBoundary.leftCell]
@@ -71,7 +71,7 @@ theorem leftCell_bridge (d : Fin (m + 3) → Fin 4) (k : Fin (m + 3)) :
   | 2 => simp [Orientation.leftCell]
   | 3 => simp [Orientation.leftCell]
 
-/-- **A walk without right turns is positively oriented.** The cell to the left of the first step is inside: the walk is positively oriented. -/
+/-- The cell to the left of the first step is inside: the walk is positively oriented. -/
 theorem leftParity_zero (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin (m + 3), d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) :
@@ -80,7 +80,7 @@ theorem leftParity_zero (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepOf (d 
   rw [leftCell_bridge d 0]
   exact WalkCellBoundary.leftCell_parity_one d hclosed hsimple hreflexfree 0
 
-/-- **Ray-parity interior equals the bounded face.** The ray-parity interior of a simple closed walk without right turns equals its bounded face. -/
+/-- The ray-parity interior of a simple closed walk without right turns equals its bounded face. -/
 theorem interiorCells_bridge (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin (m + 3), d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) :
@@ -89,7 +89,7 @@ theorem interiorCells_bridge (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepO
   ext p
   rw [InteriorCells.mem_interiorCells, WalkCellRegion.mem_interiorCells_iff_rayParity]
 
-/-- **Discrete Umlaufsatz for walks of length at least three, shifted form.** The discrete Umlaufsatz for walks of length `m + 3` without right turns. -/
+/-- The discrete Umlaufsatz for walks of length `m + 3` without right turns. -/
 theorem cc_eq_four' (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d))
     (hreflexfree : ∀ i : Fin (m + 3), d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) :
@@ -109,7 +109,7 @@ theorem cc_eq_four' (d : Fin (m + 3) → Fin 4) (hclosed : ∑ i, stepOf (d i) =
   have hcc4 : 4 ≤ cc d := four_le_cc d hclosed hreflexfree
   omega
 
-/-- **Discrete Umlaufsatz for walks of length at least three.** The discrete Umlaufsatz for walks of length at least `3` without right turns. -/
+/-- The discrete Umlaufsatz for walks of length at least `3` without right turns. -/
 theorem cc_eq_four {n : ℕ} [NeZero n] (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hsimple : Function.Injective (pos d)) (hn : 3 ≤ n)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) :
@@ -117,7 +117,7 @@ theorem cc_eq_four {n : ℕ} [NeZero n] (d : Fin n → Fin 4) (hclosed : ∑ i, 
   obtain ⟨m, rfl⟩ : ∃ m, n = m + 3 := ⟨n - 3, by omega⟩
   exact cc_eq_four' d hclosed hsimple hreflexfree
 
-/-- **A closed walk without right turns has length at least three.** A closed walk without right turns or reversals has length at least `3`. -/
+/-- A closed walk without right turns or reversals has length at least `3`. -/
 theorem three_le_n {n : ℕ} [NeZero n] (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1) : 3 ≤ n := by
   have h1 : 1 ≤ n := Nat.one_le_iff_ne_zero.mpr (NeZero.ne n)
@@ -136,7 +136,7 @@ theorem three_le_n {n : ℕ} [NeZero n] (d : Fin n → Fin 4) (hclosed : ∑ i, 
     rw [ha, hb] at hclosed ht0 ht1
     fin_cases a <;> fin_cases b <;> revert hclosed ht0 ht1 <;> decide
 
-/-- **Discrete Umlaufsatz for lattice walks without right turns.** Discrete Umlaufsatz (theorem of turning tangents) for lattice walks without right turns: a
+/-- Discrete Umlaufsatz (theorem of turning tangents) for lattice walks without right turns: a
   simple closed walk on `ℤ²` whose every turn is straight or a left quarter turn has exactly four
   left turns, i.e. its direction makes one full counterclockwise revolution. Right turns and
   reversals are excluded by hypothesis, so the walks covered are exactly counterclockwise
@@ -149,7 +149,7 @@ theorem cc_eq_four_of_no_right_turn {n : ℕ} [NeZero n] (d : Fin n → Fin 4)
     cc d = 4 :=
   cc_eq_four d hclosed hsimple (three_le_n d hclosed hreflexfree) hreflexfree
 
-/-- **A simple closed walk without right turns has under eight left turns.** The hypothesis of `StatMech.Onsager.BaseCase.base_cc_eq_four` holds: a simple closed walk
+/-- The hypothesis of `StatMech.Onsager.BaseCase.base_cc_eq_four` holds: a simple closed walk
   without right turns has fewer than eight left turns. -/
 theorem hnodbl_discharged {n : ℕ} [NeZero n] (d : Fin n → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0)

@@ -48,11 +48,12 @@ namespace Cslib.Language
 
 variable {T : Type*} {g : ContextFreeGrammar T}
 
-/-- **Chomsky normal form.** A grammar is in Chomsky normal form when every production has
-output either two nonterminals, a single terminal, or the empty word with the initial
-nonterminal on the left; and either the initial nonterminal occurs in no output (so an empty
-production cannot leak the empty word to other nonterminals) or there are no empty outputs at
-all. -/
+/-- A grammar is in Chomsky normal form when every production has
+output either two nonterminals, a single terminal, or the empty
+word with the initial nonterminal on the left; and either the
+initial nonterminal occurs in no output (so an empty production
+cannot leak the empty word to other nonterminals) or there are no
+empty outputs at all. -/
 def IsChomskyNormalForm (g : ContextFreeGrammar T) : Prop :=
   (∀ r ∈ g.rules,
     (∃ B C, r.output = [Symbol.nonterminal B, Symbol.nonterminal C]) ∨
@@ -61,10 +62,7 @@ def IsChomskyNormalForm (g : ContextFreeGrammar T) : Prop :=
   ((∀ r ∈ g.rules, Symbol.nonterminal g.initial ∉ r.output) ∨
     ∀ r ∈ g.rules, r.output ≠ [])
 
-/-- **Terminals of a grammar.** For a context-free grammar $G$, the list of terminals occurring
-in the outputs of its productions: going through the productions of $G$ in a fixed but
-unspecified order, list the terminals of each output from left to right. A terminal may appear
-more than once. -/
+/-- The terminals occurring in some production output of `g`. -/
 noncomputable def grammarTerminals (g : ContextFreeGrammar T) : List T :=
   g.rules.toList.flatMap fun r => r.output.filterMap fun s =>
     match s with
@@ -78,24 +76,15 @@ theorem mem_grammarTerminals {r : ContextFreeRule T g.NT}
   exact ⟨r, Finset.mem_toList.mpr hr,
     List.mem_filterMap.mpr ⟨Symbol.terminal a, ha, rfl⟩⟩
 
-/-- **Encoding symbols as basic nonterminals of the binarized grammar.** Let $G$ be a
-context-free grammar with nonterminals $N$, and let $t_0, \dots, t_{k-1}$ be the list of
-terminals occurring in the production outputs of $G$. This map sends a symbol of $G$ to an
-element of $N \sqcup \mathbb{N}$: a nonterminal $A$ goes to $A$, and a terminal $a$ goes to the
-least index $i$ with $t_i = a$, or to $k$ if $a$ does not occur in the list. -/
+/-- Read a symbol of `g` as a basic nonterminal of the binarized
+grammar: a terminal becomes its index in `grammarTerminals g`. -/
 noncomputable def toCnfNT : Symbol T g.NT → g.NT ⊕ ℕ
   | .terminal a => .inr ((grammarTerminals g).idxOf a)
   | .nonterminal A => .inl A
 
-/-- **Decoding basic nonterminals of the binarized grammar.** Let $G$ be a context-free
-grammar with nonterminals $N$ and initial nonterminal $S$, and let $t_0, \dots, t_{k-1}$ be
-the list of terminals occurring in the production outputs of $G$. This map sends an element of
-$N \sqcup \mathbb{N}$ (a basic nonterminal of the binarized grammar) to a symbol of $G$: a
-nonterminal $A \in N$ goes to $A$, an index $i < k$ goes to the terminal $t_i$, and an index
-$i \ge k$ goes to the nonterminal $S$.
-
-Indices $i \ge k$ never arise from encoding nonterminals of $G$ or terminals occurring in the
-production outputs of $G$. -/
+/-- Read a basic nonterminal of the binarized grammar back as a
+symbol of `g`; out-of-range indices (never produced by `toCnfNT` on
+grammar symbols) decode to the initial nonterminal. -/
 noncomputable def fromCnfNT : g.NT ⊕ ℕ → Symbol T g.NT
   | .inl A => .nonterminal A
   | .inr i => match (grammarTerminals g)[i]? with
@@ -125,15 +114,10 @@ theorem map_fromCnfNT_toCnfNT_of_forall_mem
   exact fromCnfNT_toCnfNT_of_mem
     (fun a ha => hα a (ha.symm ▸ hs))
 
-/-- **Head of a binarized output.** Let $g$ be a context-free grammar and let
-$a_0, a_1, \dots$ be its list of terminals occurring in production outputs. For a list
-$\sigma$ of basic symbols (each a nonterminal of $g$ or a natural number, a terminal wrapper),
-the head $h(\sigma)$ is the following form over the nonterminals of the binarized grammar
-(basic symbols and chain nonterminals $\langle\tau\rangle$ for lists $\tau$ of basic symbols):
-$h(XY) = XY$ for two basic symbols $X, Y$; $h(XYZ\tau) = X\langle YZ\tau\rangle$ for basic
-symbols $X, Y, Z$ and a list $\tau$; $h(i) = a_i$ for a single natural number $i$ less than
-the length of the list; and $h(\sigma)$ is empty in every other case (the empty list, a single
-nonterminal of $g$, or a single out-of-range index). -/
+/-- The head of a binarized output: two basic nonterminals, a basic
+nonterminal followed by a chain nonterminal for the remaining
+suffix, or a single terminal for a lone wrapper. Unit and empty
+inputs (excluded for reduced grammars) get the empty output. -/
 noncomputable def cnfHead : List (g.NT ⊕ ℕ) →
     List (Symbol T ((g.NT ⊕ ℕ) ⊕ List (g.NT ⊕ ℕ)))
   | [] => []
@@ -163,24 +147,16 @@ theorem cnfHead_triple (B C D : g.NT ⊕ ℕ) (σ : List (g.NT ⊕ ℕ)) :
         Symbol.nonterminal (.inr (C :: D :: σ))] :=
   rfl
 
-/-- **Binarization of a grammar.** Let $g$ be a context-free grammar with nonterminals $N$ and
-initial nonterminal $S$, and let $t_0, \dots, t_{k-1}$ be the list of terminals occurring in the
-production outputs of $g$. Encode each symbol of a production output of $g$ as a basic symbol in
-$N \sqcup \mathbb{N}$: a nonterminal $A$ as $A$, and a terminal $a$ as the least index $i$ with
-$t_i = a$. The binarized grammar of $g$ has as nonterminals the basic symbols together with a
-chain nonterminal $\langle\tau\rangle$ for every list $\tau$ of basic symbols, and its initial
-nonterminal is $S$. For a list $\sigma$ of basic symbols, its head $h(\sigma)$ is defined by
-$h(XY) = XY$ and $h(XYZ\tau) = X\langle YZ\tau\rangle$ for basic symbols $X, Y, Z$ and a list
-$\tau$, $h(i) = t_i$ for a single index $i < k$, and $h(\sigma)$ empty in every other case. For
-every production $A \to \alpha$ of $g$, with $\sigma$ the encoding of $\alpha$ symbol by symbol,
-the binarized grammar has the production $A \to h(\sigma)$, the production
-$\langle\tau\rangle \to h(\tau)$ for every suffix $\tau$ of $\sigma$ (including $\sigma$ itself)
-with at least two entries, and the production $i \to a$ for every terminal $a$ occurring in
-$\alpha$, where $i$ is the encoding of $a$; it has no other productions.
+/-- The binarization of a grammar: nonterminals are the old
+nonterminals and terminal wrappers (`Sum.inl`), together with chain
+nonterminals indexed by output suffixes (`Sum.inr`).
 
-This construction is meant for reduced grammars, which have no empty outputs and no outputs
-consisting of a single nonterminal: on other grammars such outputs get the empty head, and in
-general neither the language nor Chomsky normal form is preserved. -/
+This construction is only correct on **reduced** grammars (no empty
+or unit outputs; see `IsReduced`): on other inputs, empty and unit
+outputs are sent to the dummy empty head, and neither the language
+nor Chomsky normal form is preserved. The theorems
+`cnfGrammar_language_of_reduced` and
+`cnfGrammar_isChomskyNormalForm` state the contract. -/
 @[reducible] noncomputable def cnfGrammar (g : ContextFreeGrammar T) :
     ContextFreeGrammar T where
   NT := (g.NT ⊕ ℕ) ⊕ List (g.NT ⊕ ℕ)
@@ -260,15 +236,9 @@ private theorem mem_languageFrom_iff_yields (G : ContextFreeGrammar T)
   rw [mem_languageFrom]
   exact yields_iff_derives.symm
 
-/-- **Valuation of the binarized grammar by yields.** Let $g$ be a context-free grammar and let
-$a_0, a_1, \dots$ be its list of terminals occurring in production outputs. A basic symbol is a
-nonterminal of $g$ or a natural number (a terminal wrapper); the nonterminals of the binarized
-grammar are the basic symbols together with a chain nonterminal $\langle\sigma\rangle$ for every
-list $\sigma$ of basic symbols. Decode a basic symbol as a symbol of $g$: a nonterminal $A$ of
-$g$ as $A$, a natural number $i$ less than the length of the list as the terminal $a_i$, and any
-other natural number as the initial nonterminal of $g$. The valuation assigns to a basic symbol
-$X$ the set of words that the decoding of $X$ yields in $g$, and to a chain nonterminal
-$\langle\sigma\rangle$ the set of words that the symbolwise decoding of $\sigma$ yields in $g$. -/
+/-- The valuation of the binarized grammar by yields of `g`:
+a basic nonterminal yields what its decoded symbol yields, and a
+chain nonterminal yields what its decoded form yields. -/
 noncomputable def cnfValuation :
     (g.NT ⊕ ℕ) ⊕ List (g.NT ⊕ ℕ) → Language T
   | .inl B => {w | Yields g [fromCnfNT B] w}
@@ -407,8 +377,8 @@ private theorem isValuation_cnfValuation (hred : IsReduced g) :
       (List.getElem?_idxOf (mem_grammarTerminals hr ha))]
     exact Yields.terminal a Yields.nil
 
-/-- **Binarization adds no words.** If a context-free grammar $g$ is reduced, then every word
-generated by the binarization of $g$ is generated by $g$. -/
+/-- Binarization does not generate new words over a reduced
+grammar. -/
 theorem cnfGrammar_language_le_of_reduced (hred : IsReduced g) :
     (cnfGrammar g).language ≤ g.language := by
   have h := language_le_of_valuation (isValuation_cnfValuation hred)
@@ -432,8 +402,7 @@ private theorem exists_pair_of_cnfHead_of_length_ge
       | cons D σ =>
         exact ⟨.inl B, .inr (C :: D :: σ), cnfHead_triple B C D σ⟩
 
-/-- **Binarization has no empty productions.** If a context-free grammar $g$ is reduced, then
-no production of the binarization of $g$ has the empty word as output. -/
+/-- The binarization of a reduced grammar has no empty outputs. -/
 theorem cnfGrammar_output_ne_nil (hred : IsReduced g) :
     ∀ ρ ∈ (cnfGrammar g).rules, ρ.output ≠ [] := by
   intro ρ hρ hnil
@@ -452,8 +421,8 @@ theorem cnfGrammar_output_ne_nil (hred : IsReduced g) :
     cases hnil
   · cases hnil
 
-/-- **Binarization of a reduced grammar is in Chomsky normal form.** If a context-free
-grammar $g$ is reduced, then the binarization of $g$ is in Chomsky normal form. -/
+/-- The binarization of a reduced grammar is in Chomsky normal
+form. -/
 theorem cnfGrammar_isChomskyNormalForm (hred : IsReduced g) :
     IsChomskyNormalForm (cnfGrammar g) := by
   refine ⟨fun ρ hρ => ?_, Or.inr (cnfGrammar_output_ne_nil hred)⟩
@@ -588,8 +557,7 @@ private theorem isValuation_languageFrom_cnf (hred : IsReduced g) :
         ((List.mem_tails τ _).mpr hτ) hlen) hy2
     exact yields_of_rule (mem_cnfGrammar_rules_main hr) hy3
 
-/-- **Binarization preserves the language.** If a context-free grammar $g$ is reduced, then
-the binarization of $g$ generates exactly the language of $g$. -/
+/-- Binarization preserves the language of a reduced grammar. -/
 theorem cnfGrammar_language_of_reduced (hred : IsReduced g) :
     (cnfGrammar g).language = g.language := by
   apply le_antisymm (cnfGrammar_language_le_of_reduced hred)
@@ -609,14 +577,10 @@ private theorem yields_singleton_cases (G : ContextFreeGrammar T)
     cases hrest with
     | nil => exact ⟨_, hr, rfl, by simpa using hout⟩
 
-/-- **Grammar with a fresh nullable start symbol.** Given a context-free grammar $G$ with
-nonterminals $N$ and initial nonterminal $S$, this is the grammar with nonterminals
-$N \cup \{S_0\}$ for a fresh symbol $S_0$, initial nonterminal $S_0$, and the following
-productions: every production of $G$; the empty production $S_0 \to \varepsilon$; and
-$S_0 \to \alpha$ for every production $S \to \alpha$ of $G$.
-
-The new grammar generates the language of $G$ plus the empty word, and stays in Chomsky normal
-form when $G$ is in Chomsky normal form and has no empty outputs. -/
+/-- Add a fresh initial nonterminal with an empty production and
+copies of the old initial productions. The new grammar generates
+the old language plus the empty word, and stays in Chomsky normal
+form when the old grammar is and has no empty outputs. -/
 @[reducible] noncomputable def epsStartGrammar (g : ContextFreeGrammar T) :
     ContextFreeGrammar T where
   NT := Option g.NT
@@ -698,10 +662,7 @@ private theorem isValuation_epsStartValuation :
     rw [hinput, languageFrom_initial] at hw2
     exact Set.mem_insert_of_mem _ hw2
 
-/-- **Language of the grammar with a fresh nullable start symbol.** For every context-free
-grammar $G$, the grammar obtained from $G$ by adding a fresh initial nonterminal (with an empty
-production and copies of the productions of the old initial nonterminal) generates exactly
-$L(G) \cup \{\varepsilon\}$, where $L(G)$ is the language of $G$ and $\varepsilon$ is the
+/-- The fresh-start grammar generates the old language plus the
 empty word. -/
 theorem epsStartGrammar_language (g : ContextFreeGrammar T) :
     (epsStartGrammar g).language = insert [] g.language := by
@@ -741,9 +702,8 @@ theorem epsStartGrammar_language (g : ContextFreeGrammar T) :
       · simp at hinput
       · simp at hinput
 
-/-- **The fresh start symbol occurs in no output.** For every context-free grammar $g$, the
-fresh initial nonterminal of the fresh-start grammar of $g$ occurs in no production output of
-the fresh-start grammar. -/
+/-- The fresh initial nonterminal occurs in no production output
+of the fresh-start grammar. -/
 theorem epsStartGrammar_initial_not_mem_output :
     ∀ ρ ∈ (epsStartGrammar g).rules,
       Symbol.nonterminal (epsStartGrammar g).initial ∉ ρ.output := by
@@ -763,21 +723,18 @@ theorem epsStartGrammar_initial_not_mem_output :
   · cases hmem
   · exact hnone _ hmem
 
-/-- **A fresh start symbol is harmless when the empty word is generated.** If the empty word
-belongs to the language of a context-free grammar $g$, then the fresh-start grammar of $g$
-generates exactly the language of $g$. -/
+/-- When the empty word is already generated, the fresh-start
+construction does not change the language. -/
 theorem epsStartGrammar_language_of_mem_nil
     (hε : ([] : List T) ∈ g.language) :
     (epsStartGrammar g).language = g.language := by
   rw [epsStartGrammar_language]
   exact Set.insert_eq_of_mem hε
 
-/-- **Adding a fresh start symbol preserves Chomsky normal form.** If a context-free grammar
-$g$ is in Chomsky normal form and no production of $g$ has empty output, then the fresh-start
-grammar of $g$ is in Chomsky normal form.
-
-The no-empty-outputs hypothesis is essential: an existing empty production would be embedded
-with the old initial nonterminal, not the fresh one, on the left. -/
+/-- The fresh-start construction preserves Chomsky normal form for
+grammars with no empty outputs. The no-empty-outputs hypothesis is
+essential: an existing empty production would be embedded with the
+old initial nonterminal, not the fresh one, on the left. -/
 theorem epsStartGrammar_isChomskyNormalForm
     (hCNF : IsChomskyNormalForm g)
     (hne : ∀ r ∈ g.rules, r.output ≠ []) :
@@ -805,8 +762,8 @@ theorem epsStartGrammar_isChomskyNormalForm
     · exact Or.inl h
     · exact Or.inr (Or.inl h)
 
-/-- **Chomsky normal form theorem.** For every context-free grammar $G$ there is a
-context-free grammar in Chomsky normal form that generates the same language as $G$. -/
+/-- Every grammar has an equivalent grammar in Chomsky normal
+form. -/
 theorem exists_chomskyNormalForm (g₀ : ContextFreeGrammar T) :
     ∃ g' : ContextFreeGrammar T, g'.language = g₀.language ∧
       IsChomskyNormalForm g' := by
@@ -838,8 +795,8 @@ theorem exists_chomskyNormalForm (g₀ : ContextFreeGrammar T) :
     · intro hw
       exact ⟨hw, fun hw0 => hε (hw0.symm ▸ hw)⟩
 
-/-- **Chomsky normal form for context-free languages.** Every context-free language $L$ is
-generated by some context-free grammar in Chomsky normal form. -/
+/-- Every context-free language is generated by a grammar in
+Chomsky normal form. -/
 theorem IsContextFree.exists_chomskyNormalForm {L : Language T}
     (hL : L.IsContextFree) :
     ∃ g : ContextFreeGrammar T, g.language = L ∧

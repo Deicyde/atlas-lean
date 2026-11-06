@@ -260,7 +260,7 @@ theorem _root_.Matrix.IsHermitian.le_eigenvalues₀_add {n : ℕ}
   rw [hidx]
   exact hle
 
-/-- **Eigenvalues of equal Hermitian matrices agree.** Eigenvalues are unchanged when the matrix is replaced by an equal
+/-- Eigenvalues are unchanged when the matrix is replaced by an equal
 matrix (useful to transport eigenvalue computations along identities such
 as `diagonal d₁ + diagonal d₂ = diagonal (d₁ + d₂)`). -/
 theorem _root_.Matrix.IsHermitian.eigenvalues₀_congr {n : ℕ}
@@ -281,7 +281,7 @@ private lemma heq_apply {m n : ℕ} {f : Fin m → ℝ} {g : Fin n → ℝ} (h :
   subst hmn
   exact congrFun (eq_of_heq h) i
 
-/-- **Eigenvalues of a diagonal matrix with decreasing entries.** The eigenvalues of a diagonal Hermitian matrix whose diagonal entries
+/-- The eigenvalues of a diagonal Hermitian matrix whose diagonal entries
 are already in decreasing order are exactly those entries. -/
 theorem _root_.Matrix.IsHermitian.eigenvalues₀_diagonal_of_antitone {n : ℕ}
     {d : Fin n → ℝ} (hd : Antitone d) (i : Fin (Fintype.card (Fin n))) :

@@ -117,7 +117,7 @@ private theorem antipode_comp_antipode :
 
 end HopfAntipodeAux
 
-/-- **Antipode of a commutative Hopf algebra is an involution.** The antipode of a commutative Hopf algebra is an involution. -/
+/-- The antipode of a commutative Hopf algebra is an involution. -/
 theorem HopfAlgebra.antipode_antipode {R : Type*} [CommSemiring R]
     {A : Type*} [CommSemiring A] [HopfAlgebra R A] (a : A) :
     HopfAlgebra.antipode R (HopfAlgebra.antipode R a) = a := by
@@ -177,7 +177,7 @@ private theorem convMul_comp_antipode_left (φ : A →ₐ[R] L) :
 
 end HopfAntipodeAux
 
-/-- **Algebra homomorphisms from a Hopf algebra are convolution units.** Algebra homomorphisms from a possibly noncommutative Hopf algebra to a commutative
+/-- Algebra homomorphisms from a possibly noncommutative Hopf algebra to a commutative
 algebra are convolution units. -/
 theorem HopfAlgebra.isUnit_withConv_algHom {R : Type*} [CommSemiring R]
     {A : Type*} [Semiring A] [HopfAlgebra R A]
@@ -191,7 +191,7 @@ theorem HopfAlgebra.isUnit_withConv_algHom {R : Type*} [CommSemiring R]
   · have h := HopfAntipodeAux.convMul_comp_antipode_left (R := R) (WithConv.ofConv φ)
     rwa [WithConv.toConv_ofConv] at h
 
-/-- **Convolution inverse of an algebra homomorphism via the antipode.** Every algebra homomorphism from a possibly noncommutative Hopf algebra to a commutative
+/-- Every algebra homomorphism from a possibly noncommutative Hopf algebra to a commutative
 algebra has a convolution
 inverse given by precomposition with the antipode. -/
 theorem HopfAlgebra.exists_comp_antipode_convMul_eq_one
@@ -229,7 +229,7 @@ private theorem toConv_comp_pow {T : Type w} [CommSemiring T] [Algebra R T]
 
 end BialgebraAux
 
-/-- **Convolution-power criterion for bialgebras.** A convolution power is trivial on all points iff it is trivial on the
+/-- A convolution power is trivial on all points iff it is trivial on the
 universal point. -/
 theorem Bialgebra.forall_withConv_pow_eq_one_iff_toConv_id_pow_eq_one
     {R : Type u} [CommSemiring R] {H : Type v} [CommSemiring H] [Bialgebra R H] (m : ℕ) :
@@ -247,7 +247,7 @@ theorem Bialgebra.forall_withConv_pow_eq_one_iff_toConv_id_pow_eq_one
     rw [pow_zero, pow_zero] at h0
     exact h0.symm
 
-/-- **Convolution-power criterion for Hopf algebras.** A compatibility corollary for the convolution-power criterion on Hopf algebras. -/
+/-- A compatibility corollary for the convolution-power criterion on Hopf algebras. -/
 theorem HopfAlgebra.forall_withConv_pow_eq_one_iff_toConv_id_pow_eq_one
     {R : Type u} [CommRing R] {H : Type v} [CommRing H] [HopfAlgebra R H] (m : ℕ) :
     (∀ (T : Type v) [CommRing T] [Algebra R T] (f : WithConv (H →ₐ[R] T)), f ^ m = 1) ↔

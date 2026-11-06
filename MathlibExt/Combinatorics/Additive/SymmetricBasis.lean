@@ -15,13 +15,9 @@ import Lean.Elab.Tactic.Omega
 
 namespace Finset
 
-/-- **Rohrbach's symmetric basis theorem.** Let $A$ be a finite set of natural numbers and $a$ a
-natural number with $\{a - x : x \in A\} = A$, where $a - x$ denotes truncated subtraction
-($a - x = 0$ when $x > a$). If every natural number $m \le a$ is a sum $x + y$ of two elements
-$x, y \in A$, then every natural number $m \le 2a$ is such a sum.
-
-The symmetry condition forces every element of $A$ to be at most $a$, so it says exactly that $A$
-is invariant under $x \mapsto a - x$.
+/-- If a finite set `A ⊆ ℕ` lies below `a`, is invariant under `x ↦ a - x`,
+and every value through `a` is a sum of two elements of `A`, then every value
+through `2 * a` is such a sum.
 
 This is Rohrbach's theorem on symmetric restricted additive bases.
 

@@ -57,7 +57,7 @@ open StatMech.Lattice
 
 variable {d : ℕ}
 
-/-- **Pivotal edge event.** The event that the edge `e` is pivotal for `A` (flipping `e` changes whether `A` occurs). -/
+/-- The event that the edge `e` is pivotal for `A` (flipping `e` changes whether `A` occurs). -/
 def pivotalEvent (e : Sym2 (Site d)) (A : Set (ConfigSpace (Sym2 (Site d)))) :
     Set (ConfigSpace (Sym2 (Site d))) :=
   {ω | IsPivotal e A ω}
@@ -169,12 +169,12 @@ theorem deriv_boxCrossProb_inf (p : ℝ≥0) (hp : p ≤ 1) (n : ℕ) :
     (boxEdgeFinset d n) (↑e : Sym2 (Site d)) e.2 (boxCrossingEvent_dependsOn n)
   simpa using hbridge
 
-/-- **Connection of a site to the box boundary.** `x ∈ Λ_n` is joined by an open path inside `Λ_n` to a site of the vertex boundary of `Λ_n`. -/
+/-- `x ∈ Λ_n` is joined by an open path inside `Λ_n` to a site of the vertex boundary of `Λ_n`. -/
 def connBdry (d n : ℕ) (ω : ConfigSpace (Sym2 (Site d))) (x : Site d) : Prop :=
   ∃ (hx : x ∈ box d n) (y : Site d) (hy : y ∈ box d n),
     y ∈ vertexBoundary d n ∧ ConnectedWithin d ω (box d n) ⟨x, hx⟩ ⟨y, hy⟩
 
-/-- **Set of sites not connected to the box boundary.** The random set `𝒮(ω)` of sites of `Λ_n` not joined inside `Λ_n` to the vertex boundary. -/
+/-- The random set `𝒮(ω)` of sites of `Λ_n` not joined inside `Λ_n` to the vertex boundary. -/
 noncomputable def surfaceSet (d n : ℕ) (ω : ConfigSpace (Sym2 (Site d))) : Finset (Site d) := by
   classical
   exact (boxFinset d n).filter (fun x => ¬ connBdry d n ω x)
@@ -189,7 +189,7 @@ theorem surfaceSet_subset_box (n : ℕ) (ω : ConfigSpace (Sym2 (Site d))) :
   intro x hx
   rw [mem_boxFinset]; exact (mem_surfaceSet.mp hx).1
 
-/-- **Event that the unconnected set equals a given set.** The event `{𝒮 = S}`. -/
+/-- The event `{𝒮 = S}`. -/
 def surfaceEvent (d n : ℕ) (S : Finset (Site d)) : Set (ConfigSpace (Sym2 (Site d))) :=
   {ω | surfaceSet d n ω = S}
 
@@ -237,7 +237,7 @@ theorem sum_surfaceProb (p : ℝ≥0) (hp : p ≤ 1) (n : ℕ) :
   rw [← measureReal_biUnion_finset hdisj hmeas, hcover]
   exact probReal_univ
 
-/-- **Pairs of box sites outside a given set.** The pairs of sites of `Λ_n` that are not pairs of sites of `S`. -/
+/-- The pairs of sites of `Λ_n` that are not pairs of sites of `S`. -/
 noncomputable def boxEdgesOutside (d n : ℕ) (S : Finset (Site d)) : Finset (Sym2 (Site d)) :=
   (boxEdgeFinset d n) \ (edgesWithinFinset S)
 

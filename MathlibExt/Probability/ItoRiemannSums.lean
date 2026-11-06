@@ -164,7 +164,7 @@ namespace ElementaryIntegrand
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω}
 
-/-- **Left-point step approximation of a deterministic integrand.** The left-point step approximation `∑_{k < n} g (t k / n) 1_{(t k / n, t (k + 1) / n]}` of a
+/-- The left-point step approximation `∑_{k < n} g (t k / n) 1_{(t k / n, t (k + 1) / n]}` of a
 deterministic `g` on the uniform partition of `[0, t]` into `n` cells, as an
 elementary integrand for any filtration `F` (deterministic coefficients are measurable for every
 σ-algebra). -/
@@ -194,7 +194,7 @@ private theorem coe_time (t : ℝ≥0) (n k : ℕ) :
   push_cast
   rfl
 
-/-- **Itô integral of a Riemann step approximation.** The elementary Itô integral of `riemann F g t n` at time `t` is the Itô–Riemann sum
+/-- The elementary Itô integral of `riemann F g t n` at time `t` is the Itô–Riemann sum
 `∑_{k < n} g (t k / n) (B (t (k + 1) / n) - B (t k / n))`. -/
 theorem itoIntegral_riemann (F : Filtration ℝ≥0 mΩ) (g : ℝ → ℝ) (t : ℝ≥0) (n : ℕ)
     (B : ℝ≥0 → Ω → ℝ) (ω : Ω) :
@@ -224,7 +224,7 @@ theorem tendsto_itoIntegral_riemann (F : Filtration ℝ≥0 mΩ) {g : ℝ → �
 
 end ElementaryIntegrand
 
-/-- **Ornstein–Uhlenbeck path solution by integration by parts.** The pathwise Ornstein–Uhlenbeck solution in integration-by-parts form: with `g u = e^{θu}`,
+/-- The pathwise Ornstein–Uhlenbeck solution in integration-by-parts form: with `g u = e^{θu}`,
 `ouPathSolution θ σ x₀ w t = e^{-θt} x₀ + σ e^{-θt} (g t w t - g 0 w 0 - ∫_0^t g'(u) w u du)`,
 for any path `w` and any real `θ`, `σ`, `x₀`, `t`. -/
 theorem ouPathSolution_eq_integration_by_parts (θ σ x₀ : ℝ) (w : ℝ → ℝ) (t : ℝ) :

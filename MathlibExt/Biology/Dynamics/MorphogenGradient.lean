@@ -62,23 +62,23 @@ open Real Set
 
 namespace MathlibExt.Biology.Dynamics.MorphogenGradient
 
-/-- **Decay length of a morphogen gradient.** The decay length `λ = √(D / k)` of a morphogen with diffusion coefficient `D` and linear
+/-- The decay length `λ = √(D / k)` of a morphogen with diffusion coefficient `D` and linear
 degradation rate `k` (both positive in the model). -/
 noncomputable def decayLength (D k : ℝ) : ℝ :=
   √(D / k)
 
-/-- **Steady-state exponential morphogen profile.** The steady-state gradient `c(x) = (j / √(D k)) e^{-x/λ}`, `λ = √(D / k)`, for source flux
+/-- The steady-state gradient `c(x) = (j / √(D k)) e^{-x/λ}`, `λ = √(D / k)`, for source flux
 `j` at `x = 0`. Meaningful for `D, k > 0`. -/
 noncomputable def profile (D k j x : ℝ) : ℝ :=
   j / √(D * k) * exp (-x / decayLength D k)
 
-/-- **French-flag boundary position for a threshold.** The French-flag boundary for threshold `θ`: `x_θ = λ log(c(0) / θ)`, where
+/-- The French-flag boundary for threshold `θ`: `x_θ = λ log(c(0) / θ)`, where
 `c(0) = j / √(D k)`. Meaningful for `D, k, j, θ > 0`; it is negative when `θ > c(0)` (no cell
 is above threshold). -/
 noncomputable def thresholdPosition (D k j θ : ℝ) : ℝ :=
   decayLength D k * log (j / √(D * k) / θ)
 
-/-- **Bounded steady state of the synthesis–diffusion–degradation model.** A bounded steady state of the synthesis–diffusion–degradation model on `[0, ∞)`, with
+/-- A bounded steady state of the synthesis–diffusion–degradation model on `[0, ∞)`, with
 `c' = dc/dx`: `D c'' = k c` for `x > 0`, `c` and `c'` continuous up to the source, source flux
 `-D c'(0) = j`, and `c` bounded on `[0, ∞)`. -/
 structure IsSteadyState (D k j : ℝ) (c c' : ℝ → ℝ) : Prop where
@@ -89,16 +89,16 @@ structure IsSteadyState (D k j : ℝ) (c c' : ℝ → ℝ) : Prop where
   source_flux : -D * c' 0 = j
   bounded : ∃ B, ∀ x, 0 ≤ x → |c x| ≤ B
 
-/-- **Positivity of the decay length.** The decay length is positive for positive `D` and `k`. -/
+/-- The decay length is positive for positive `D` and `k`. -/
 theorem decayLength_pos {D k : ℝ} (hD : 0 < D) (hk : 0 < k) : 0 < decayLength D k :=
   sqrt_pos.2 (div_pos hD hk)
 
-/-- **Diffusion coefficient over squared decay length equals degradation rate.** `D / λ² = k`. -/
+/-- `D / λ² = k`. -/
 theorem div_decayLength_sq {D k : ℝ} (hD : 0 < D) (hk : 0 < k) :
     D / decayLength D k ^ 2 = k := by
   rw [decayLength, sq_sqrt (div_pos hD hk).le]; field_simp
 
-/-- **Source amplitude in terms of the decay length.** `√(D k) = D / λ`, so the source amplitude is `c(0) = j λ / D`. -/
+/-- `√(D k) = D / λ`, so the source amplitude is `c(0) = j λ / D`. -/
 theorem sqrt_mul_eq {D k : ℝ} (hD : 0 < D) (hk : 0 < k) :
     √(D * k) = D / decayLength D k := by
   have hl := decayLength_pos hD hk
@@ -106,7 +106,7 @@ theorem sqrt_mul_eq {D k : ℝ} (hD : 0 < D) (hk : 0 < k) :
   rw [show D * k * (D / k) = D ^ 2 by field_simp]
   exact sqrt_sq hD.le
 
-/-- **Slope of the morphogen profile.** The profile has slope `c'(x) = -c(x)/λ`. -/
+/-- The profile has slope `c'(x) = -c(x)/λ`. -/
 theorem hasDerivAt_profile (D k j x : ℝ) :
     HasDerivAt (profile D k j) (-profile D k j x / decayLength D k) x := by
   have h := ((hasDerivAt_neg x).div_const (decayLength D k)).exp.const_mul (j / √(D * k))
@@ -114,7 +114,7 @@ theorem hasDerivAt_profile (D k j x : ℝ) :
   convert h using 1
   ring
 
-/-- **Exponential profile is a bounded steady state.** The exponential profile is a bounded steady state with source flux `j`. -/
+/-- The exponential profile is a bounded steady state with source flux `j`. -/
 theorem isSteadyState_profile {D k j : ℝ} (hD : 0 < D) (hk : 0 < k) :
     IsSteadyState D k j (profile D k j) (fun x ↦ -profile D k j x / decayLength D k) := by
   have hl := decayLength_pos hD hk
@@ -234,7 +234,7 @@ theorem eq_profile_of_isSteadyState {D k j : ℝ} (hD : 0 < D) (hk : 0 < k) {c c
   rw [hform x hx, hp, zero_mul, zero_add, hq0, hc0]
   rfl
 
-/-- **Morphogen profile is strictly decreasing.** The profile is strictly decreasing in `x` for a positive source. -/
+/-- The profile is strictly decreasing in `x` for a positive source. -/
 theorem profile_strictAnti {D k j : ℝ} (hD : 0 < D) (hk : 0 < k) (hj : 0 < j) :
     StrictAnti (profile D k j) := by
   intro x y hxy
@@ -244,7 +244,7 @@ theorem profile_strictAnti {D k j : ℝ} (hD : 0 < D) (hk : 0 < k) (hj : 0 < j) 
   rw [exp_lt_exp, neg_div, neg_div, neg_lt_neg_iff]
   exact div_lt_div_of_pos_right hxy hl
 
-/-- **Profile equals the threshold at the French-flag boundary.** The profile equals `θ` at the boundary `x_θ`. -/
+/-- The profile equals `θ` at the boundary `x_θ`. -/
 theorem profile_thresholdPosition {D k j θ : ℝ} (hD : 0 < D) (hk : 0 < k) (hj : 0 < j)
     (hθ : 0 < θ) : profile D k j (thresholdPosition D k j θ) = θ := by
   have hl := decayLength_pos hD hk
@@ -278,7 +278,7 @@ theorem thresholdPosition_mul {D k j θ a : ℝ} (hj : 0 < j) (hD : 0 < D) (hk :
     log_mul ha.ne' hA.ne']
   ring
 
-/-- **Doubling the source flux shifts boundaries by $\lambda \log 2$.** Doubling the source flux shifts every French-flag boundary away from the source by exactly
+/-- Doubling the source flux shifts every French-flag boundary away from the source by exactly
 `λ log 2`. -/
 theorem thresholdPosition_two_mul {D k j θ : ℝ} (hj : 0 < j) (hD : 0 < D) (hk : 0 < k)
     (hθ : 0 < θ) :

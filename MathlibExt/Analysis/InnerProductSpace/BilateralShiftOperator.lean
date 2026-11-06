@@ -60,14 +60,10 @@ open scoped _root_.lp _root_.InnerProduct _root_.InnerProductSpace ENNReal
 
 variable {𝕜 : Type*} [RCLike 𝕜]
 
-/-- **Bilateral shift of a sequence.** For a function $x : \mathbb{Z} \to K$ with values in any
-set $K$, the bilateral (forward) shift of $x$ is the function $Sx : \mathbb{Z} \to K$ given by
-$(Sx)(n) = x(n - 1)$. -/
+/-- The bilateral forward-shift function: `(S x) n = x (n - 1)`. -/
 def bilateralShiftFun (x : ℤ → 𝕜) (n : ℤ) : 𝕜 := x (n - 1)
 
-/-- **Bilateral backward shift of a sequence.** For a function $x : \mathbb{Z} \to K$ with values
-in any set $K$, the bilateral backward shift of $x$ is the function $Bx : \mathbb{Z} \to K$
-given by $(Bx)(n) = x(n + 1)$. -/
+/-- The bilateral backward-shift function: `(B x) n = x (n + 1)`. -/
 def bilateralBackwardFun (x : ℤ → 𝕜) (n : ℤ) : 𝕜 := x (n + 1)
 
 omit [RCLike 𝕜] in
@@ -99,11 +95,7 @@ theorem memℓp_bilateralBackwardFun {x : ℓ²(ℤ, 𝕜)} :
   rw [heq]
   exact (Equiv.summable_iff (Equiv.addRight (1 : ℤ))).mpr h
 
-/-- **Bilateral shift as a linear map.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let
-$\ell^2(\mathbb{Z}, \mathbb{K})$ be the space of square-summable functions
-$\mathbb{Z} \to \mathbb{K}$. The bilateral shift is the $\mathbb{K}$-linear map
-$S : \ell^2(\mathbb{Z}, \mathbb{K}) \to \ell^2(\mathbb{Z}, \mathbb{K})$ given by
-$(Sx)(n) = x(n - 1)$ for all $n \in \mathbb{Z}$. -/
+/-- The bilateral forward shift as a linear map. -/
 noncomputable def bilateralShiftLinMap : ℓ²(ℤ, 𝕜) →ₗ[𝕜] ℓ²(ℤ, 𝕜) where
   toFun x := ⟨bilateralShiftFun (x : ℤ → 𝕜), memℓp_bilateralShiftFun⟩
   map_add' x y := by
@@ -116,11 +108,7 @@ noncomputable def bilateralShiftLinMap : ℓ²(ℤ, 𝕜) →ₗ[𝕜] ℓ²(ℤ
     simp only [lp.coeFn_smul, bilateralShiftFun_apply, Pi.smul_apply, smul_eq_mul,
       RingHom.id_apply]
 
-/-- **Bilateral backward shift as a linear map.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$
-and let $\ell^2(\mathbb{Z}, \mathbb{K})$ be the space of square-summable functions
-$\mathbb{Z} \to \mathbb{K}$. The bilateral backward shift is the $\mathbb{K}$-linear map
-$B : \ell^2(\mathbb{Z}, \mathbb{K}) \to \ell^2(\mathbb{Z}, \mathbb{K})$ given by
-$(Bx)(n) = x(n + 1)$ for all $n \in \mathbb{Z}$. -/
+/-- The bilateral backward shift as a linear map. -/
 noncomputable def bilateralBackwardLinMap : ℓ²(ℤ, 𝕜) →ₗ[𝕜] ℓ²(ℤ, 𝕜) where
   toFun x := ⟨bilateralBackwardFun (x : ℤ → 𝕜), memℓp_bilateralBackwardFun⟩
   map_add' x y := by
@@ -178,20 +166,13 @@ theorem norm_bilateralBackwardLinMap_apply (x : ℓ²(ℤ, 𝕜)) :
   rw [hexp, Real.rpow_two, Real.rpow_two] at hpow
   exact (sq_eq_sq₀ (norm_nonneg _) (norm_nonneg _)).mp hpow
 
-/-- **Bilateral shift operator.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let
-$\ell^2(\mathbb{Z}, \mathbb{K})$ be the Hilbert space of square-summable functions
-$\mathbb{Z} \to \mathbb{K}$. The bilateral shift is the bounded $\mathbb{K}$-linear operator $S$
-on $\ell^2(\mathbb{Z}, \mathbb{K})$ given by $(Sx)(n) = x(n - 1)$ for all $n \in \mathbb{Z}$. -/
+/-- The bilateral shift as a bounded operator on `ℓ²(ℤ, 𝕜)`. -/
 noncomputable def bilateralShiftCLM : ℓ²(ℤ, 𝕜) →L[𝕜] ℓ²(ℤ, 𝕜) :=
   bilateralShiftLinMap.mkContinuous 1 (fun x => by
     rw [one_mul]
     exact le_of_eq (norm_bilateralShiftLinMap_apply x))
 
-/-- **Bilateral backward shift operator.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and
-let $\ell^2(\mathbb{Z}, \mathbb{K})$ be the Hilbert space of square-summable functions
-$\mathbb{Z} \to \mathbb{K}$. The bilateral backward shift is the bounded $\mathbb{K}$-linear
-operator $B$ on $\ell^2(\mathbb{Z}, \mathbb{K})$ given by $(Bx)(n) = x(n + 1)$ for all
-$n \in \mathbb{Z}$. -/
+/-- The bilateral backward shift as a bounded operator on `ℓ²(ℤ, 𝕜)`. -/
 noncomputable def bilateralBackwardCLM : ℓ²(ℤ, 𝕜) →L[𝕜] ℓ²(ℤ, 𝕜) :=
   bilateralBackwardLinMap.mkContinuous 1 (fun x => by
     rw [one_mul]

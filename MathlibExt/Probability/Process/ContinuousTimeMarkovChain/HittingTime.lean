@@ -75,7 +75,7 @@ section Path
 
 variable {ι : Type*} {Q : Matrix ι ι ℝ}
 
-/-- **Hitting time of a continuous-time Markov chain.** The **hitting time** `inf {t ≥ 0 | X t ∈ A}` of a set of states `A` by the chain
+/-- The **hitting time** `inf {t ≥ 0 | X t ∈ A}` of a set of states `A` by the chain
 `X = ctmcPath Q i ω` started at `i`, valued in `ℝ≥0∞` (it is `∞` if `A` is never visited). -/
 noncomputable def ctmcHittingTime (Q : Matrix ι ι ℝ) (i : ι) (A : Set ι)
     (ω : ℕ → (ι → ι) × ℝ) : ℝ≥0∞ :=
@@ -110,7 +110,7 @@ theorem ctmcHittingTime_eq_add {A : Set ι} {i : ι} (hi : i ∉ A) (ω : ℕ �
         _ = ((S.toNNReal + (t - S.toNNReal) : ℝ≥0) : ℝ≥0∞) := by rw [ENNReal.coe_add, hs]
         _ = t := by rw [add_tsub_cancel_of_le hle]
 
-/-- **Hitting time from inside the target set is zero.** From a state `i ∈ A`, the hitting time of `A` is `0` as soon as the first holding time is
+/-- From a state `i ∈ A`, the hitting time of `A` is `0` as soon as the first holding time is
 positive (which fails only on a null event, see `ctmcHoldingTime`). -/
 theorem ctmcHittingTime_eq_zero {A : Set ι} {i : ι} (hi : i ∈ A) {ω : ℕ → (ι → ι) × ℝ}
     (hS : 0 < ctmcHoldingTime Q i ω 0) : ctmcHittingTime Q i A ω = 0 := by
@@ -619,7 +619,7 @@ theorem lintegral_ctmcHittingTime (hQ : IsRateMatrix Q) {A : Set ι} {i : ι} (h
   exact tendsto_nhds_unique ((tendsto_lintegral_hitTrunc hQ A i).comp
     (tendsto_add_atTop_nat 1)) h2
 
-/-- **Mean hitting time from inside the target set is zero.** From a state of `A`, the mean hitting time of `A` is `0`. -/
+/-- From a state of `A`, the mean hitting time of `A` is `0`. -/
 theorem lintegral_ctmcHittingTime_of_mem (hQ : IsRateMatrix Q) {A : Set ι} {i : ι}
     (hi : i ∈ A) : ∫⁻ ω, ctmcHittingTime Q i A ω ∂ctmcInputMeasure hQ = 0 := by
   refine tendsto_nhds_unique (tendsto_lintegral_hitTrunc hQ A i) ?_
@@ -683,7 +683,7 @@ theorem lintegral_ctmcHittingTime_mul (hQ : IsRateMatrix Q) {A B : Set ι} {i : 
   rw [h2]
   ring
 
-/-- **Product moment of hitting times from inside their union is zero.** From a state of `A ∪ B`, the product moment of the hitting times of `A` and `B` is `0`. -/
+/-- From a state of `A ∪ B`, the product moment of the hitting times of `A` and `B` is `0`. -/
 theorem lintegral_ctmcHittingTime_mul_of_mem (hQ : IsRateMatrix Q) {A B : Set ι} {i : ι}
     (hi : i ∈ A ∪ B) :
     ∫⁻ ω, ctmcHittingTime Q i A ω * ctmcHittingTime Q i B ω ∂ctmcInputMeasure hQ = 0 := by

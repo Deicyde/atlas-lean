@@ -43,7 +43,7 @@ open StatMech.Onsager.WalkCrossing
 
 variable {n : ℕ} [NeZero n]
 
-/-- **No north step leaves a highest vertex.** No north step leaves a vertex of maximal height. -/
+/-- No north step leaves a vertex of maximal height. -/
 theorem top_out_ne_N (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     {M v : Fin n} (hmax : ∀ j : Fin n, (pos d j).2 ≤ (pos d M).2)
     (hv : (pos d v).2 = (pos d M).2) :
@@ -54,7 +54,7 @@ theorem top_out_ne_N (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
   have := hmax (v + 1)
   omega
 
-/-- **No south step arrives at a highest vertex.** No south step arrives at a vertex of maximal height. -/
+/-- No south step arrives at a vertex of maximal height. -/
 theorem top_in_ne_S (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     {M v : Fin n} (hmax : ∀ j : Fin n, (pos d j).2 ≤ (pos d M).2)
     (hv : (pos d v).2 = (pos d M).2) :
@@ -71,7 +71,7 @@ theorem top_in_ne_S (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
   have := hmax (v - 1)
   omega
 
-/-- **Position after a run of west steps.** After `j` consecutive west steps from vertex `M`, the walk is `j` units to the left of `M` at
+/-- After `j` consecutive west steps from vertex `M`, the walk is `j` units to the left of `M` at
   the same height. -/
 theorem forward_west_run (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0) (M : Fin n)
     (j : ℕ) (hj : ∀ i : ℕ, i < j → d (M + (Nat.cast i : Fin n)) = 2) :
@@ -93,14 +93,14 @@ theorem forward_west_run (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 
     · simp; ring
     · simp
 
-/-- **Single west run covering the top row.** Every vertex of the walk at the height of `M` is reached from `M` by a run of consecutive west
+/-- Every vertex of the walk at the height of `M` is reached from `M` by a run of consecutive west
   steps. -/
 def SingleTopRun (d : Fin n → Fin 4) (M : Fin n) : Prop :=
   ∀ v : Fin n, (pos d v).2 = (pos d M).2 →
     ∃ j : ℕ, (∀ i : ℕ, i < j → d (M + (Nat.cast i : Fin n)) = 2) ∧
       (pos d v).1 = (pos d M).1 - (j : ℤ)
 
-/-- **A single top run makes the top row contiguous.** If the top row is covered by a single west run from a highest vertex, it is contiguous. -/
+/-- If the top row is covered by a single west run from a highest vertex, it is contiguous. -/
 theorem topRowContiguous_of_singleTopRun (d : Fin n → Fin 4) (hclosed : ∑ i, stepOf (d i) = 0)
     {M : Fin n} (hmax : ∀ j : Fin n, (pos d j).2 ≤ (pos d M).2)
     (hrun : SingleTopRun d M) :
@@ -124,7 +124,7 @@ theorem topRowContiguous_of_singleTopRun (d : Fin n → Fin 4) (hclosed : ∑ i,
   · change (pos d M).1 - (j : ℤ) = x; rw [hjcast]; ring
   · rfl
 
-/-- **Top row is contiguous when every top corner starts a single run.** If every highest north-then-west corner starts a single top run, the top row is contiguous. -/
+/-- If every highest north-then-west corner starts a single top run, the top row is contiguous. -/
 theorem topRowContiguous_of_residue (d : Fin n → Fin 4)
     (hclosed : ∑ i, stepOf (d i) = 0)
     (hreflexfree : ∀ i : Fin n, d (i + 1) - d i = 0 ∨ d (i + 1) - d i = 1)

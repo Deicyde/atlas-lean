@@ -88,7 +88,7 @@ open LDScore
 
 variable {N M : ℕ} {Ω : Type*} {m : MeasurableSpace Ω}
 
-/-- **Random-effects model of stratified LD-score regression.** The random-effects model of stratified LD-score regression at the level of raw second
+/-- The random-effects model of stratified LD-score regression at the level of raw second
 moments: marker `k` has effect variance `sigma2 k`, the noise has variance `sigmaE2`, and
 effects and noise are orthogonal in `L²`. As in `LDScore.Model`, the measure is arbitrary, no
 means are assumed, and all statements are conditional on the genotype matrix. -/
@@ -116,16 +116,16 @@ namespace Model
 
 variable {μ : Measure Ω} (D : Model μ N M) (X : Matrix (Fin N) (Fin M) ℝ)
 
-/-- **Phenotype in the stratified LD-score model.** The phenotype `y = X β + ε`. -/
+/-- The phenotype `y = X β + ε`. -/
 def pheno (i : Fin N) (ω : Ω) : ℝ := ∑ k, X i k * D.beta k ω + D.eps i ω
 
-/-- **Normalized marker score in stratified LD-score regression.** The `N`-normalized score `β̂ j = X_jᵀ y / N` of marker `j` (as in `LDScore.Model.betaHat`). -/
+/-- The `N`-normalized score `β̂ j = X_jᵀ y / N` of marker `j` (as in `LDScore.Model.betaHat`). -/
 noncomputable def betaHat (j : Fin M) (ω : Ω) : ℝ := (∑ i, X i j * D.pheno X i ω) / N
 
-/-- **Association chi-squared statistic in stratified LD-score regression.** The association statistic `χ² j = N * β̂ j ^ 2` of marker `j`. -/
+/-- The association statistic `χ² j = N * β̂ j ^ 2` of marker `j`. -/
 noncomputable def chiSq (j : Fin M) (ω : Ω) : ℝ := N * D.betaHat X j ω ^ 2
 
-/-- **LD-score regression model as a stratified model.** The LD-score regression model of `LDScore` is the stratified model with equal per-marker
+/-- The LD-score regression model of `LDScore` is the stratified model with equal per-marker
 variances `h² / M` and noise variance `1 - h²`. -/
 noncomputable def ofLDScore (D : LDScore.Model μ N M) : Model μ N M where
   sigma2 := fun _ => D.h2 / M
@@ -138,7 +138,7 @@ noncomputable def ofLDScore (D : LDScore.Model μ N M) : Model μ N M where
   integral_eps_mul := D.integral_eps_mul
   integral_beta_mul_eps := D.integral_beta_mul_eps
 
-/-- **Stratified statistic agrees with the LD-score statistic.** The stratified statistic of `ofLDScore D` is the statistic of `LDScore`. -/
+/-- The stratified statistic of `ofLDScore D` is the statistic of `LDScore`. -/
 theorem chiSq_ofLDScore (D : LDScore.Model μ N M) : (ofLDScore D).chiSq X = D.chiSq X := rfl
 
 private theorem integral_weighted_sq {ι : Type*} [Fintype ι] [DecidableEq ι]
@@ -203,7 +203,7 @@ theorem integral_chiSq (j : Fin M) :
   have hNr : (N : ℝ) ≠ 0 := Nat.cast_ne_zero.mpr hN
   field_simp
 
-/-- **Expected chi-squared statistic of a standardized marker.** For a column with sum of squares `N` (a standardized marker) and `N ≠ 0`:
+/-- For a column with sum of squares `N` (a standardized marker) and `N ≠ 0`:
 `𝔼[χ² j] = N ∑_k r_jk² σ²_k + σ²_e`. -/
 theorem integral_chiSq_of_standardized (hN : N ≠ 0) (j : Fin M) (hX : IsStandardized X) :
     ∫ ω, D.chiSq X j ω ∂μ = N * ∑ k, ldCorr X j k ^ 2 * D.sigma2 k + D.sigmaE2 := by
@@ -211,7 +211,7 @@ theorem integral_chiSq_of_standardized (hN : N ≠ 0) (j : Fin M) (hX : IsStanda
 
 end Model
 
-/-- **Annotation LD score of a marker.** The LD score of marker `j` with respect to annotation `C`:
+/-- The LD score of marker `j` with respect to annotation `C`:
 `ℓ(j, C) = ∑_k a_{kC} r_jk²` (Finucane et al. 2015 for binary annotations; Gazal et al. 2017 for
 continuous ones). -/
 noncomputable def annotLDScore {ι : Type*} (X : Matrix (Fin N) (Fin M) ℝ) (a : Fin M → ι → ℝ)
@@ -256,23 +256,23 @@ end Model
 
 /-! ### Category heritability and enrichment -/
 
-/-- **Heritability of a marker category.** The heritability `h²(C) = ∑_{k ∈ C} σ²_k` of category `C`, for a labeling `cat` of the
+/-- The heritability `h²(C) = ∑_{k ∈ C} σ²_k` of category `C`, for a labeling `cat` of the
 markers by categories. -/
 noncomputable def catH2 {ι : Type*} [DecidableEq ι] (σ2 : Fin M → ℝ) (cat : Fin M → ι)
     (C : ι) : ℝ :=
   ∑ k ∈ Finset.univ.filter (fun k => cat k = C), σ2 k
 
-/-- **Number of markers in a category.** The number `M_C` of markers in category `C`. -/
+/-- The number `M_C` of markers in category `C`. -/
 def catSize {ι : Type*} [DecidableEq ι] (cat : Fin M → ι) (C : ι) : ℕ :=
   (Finset.univ.filter (fun k => cat k = C)).card
 
-/-- **Heritability enrichment of a category.** The enrichment of category `C`: its proportion of heritability divided by its proportion of
+/-- The enrichment of category `C`: its proportion of heritability divided by its proportion of
 markers, `(h²(C) / h²) / (M_C / M)` with `h² = ∑_k σ²_k` (Finucane et al. 2015). -/
 noncomputable def enrichment {ι : Type*} [DecidableEq ι] (σ2 : Fin M → ℝ) (cat : Fin M → ι)
     (C : ι) : ℝ :=
   (catH2 σ2 cat C / ∑ k, σ2 k) / ((catSize cat C : ℝ) / M)
 
-/-- **Marker-proportion-weighted enrichments sum to one.** For a partition of the markers into categories (a labeling `cat`) and nonzero total
+/-- For a partition of the markers into categories (a labeling `cat`) and nonzero total
 heritability, the marker-proportion-weighted enrichments sum to one:
 `∑_C (M_C / M) * Enrichment(C) = 1`. Empty categories contribute `0` on both sides of each
 term. -/
@@ -298,13 +298,13 @@ theorem sum_size_mul_enrichment {ι : Type*} [Fintype ι] [DecidableEq ι] (σ2 
 
 /-! ### Identifiability with a free intercept -/
 
-/-- **Design matrix of stratified LD-score regression.** The design matrix `[1 | N ℓ(·, C)]` of stratified LD-score regression with a free intercept;
+/-- The design matrix `[1 | N ℓ(·, C)]` of stratified LD-score regression with a free intercept;
 column `none` is the intercept and column `some C` the scaled annotation LD score. -/
 noncomputable def design {ι : Type*} (X : Matrix (Fin N) (Fin M) ℝ) (a : Fin M → ι → ℝ) :
     Matrix (Fin M) (Option ι) ℝ :=
   fun j c => Option.elim c 1 fun C => N * annotLDScore X a j C
 
-/-- **Injective matrix action iff full column rank.** A real matrix has injective `mulVec` iff it has full column rank. -/
+/-- A real matrix has injective `mulVec` iff it has full column rank. -/
 theorem injective_mulVec_iff_rank_eq_card {m n : Type*} [Fintype n]
     (A : Matrix m n ℝ) : Function.Injective A.mulVec ↔ A.rank = Fintype.card n := by
   rw [Matrix.mulVec_injective_iff, Matrix.rank_eq_finrank_span_cols,
@@ -315,7 +315,7 @@ namespace Model
 
 variable {μ : Measure Ω} (D : Model μ N M) (X : Matrix (Fin N) (Fin M) ℝ)
 
-/-- **Expected statistics are the design matrix times the parameters.** Under the annotation model, the vector of expected statistics is the design matrix applied
+/-- Under the annotation model, the vector of expected statistics is the design matrix applied
 to the parameter vector `(σ²_e, τ)` (intercept first). Hence the parameters are determined by
 the expected statistics of all markers, whatever their values, iff
 `(design X a).rank = Fintype.card (Option ι)` (`injective_mulVec_iff_rank_eq_card`). -/

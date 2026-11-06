@@ -101,11 +101,11 @@ variable {𝕜 : Type*} [RCLike 𝕜]
 variable {H K : Type*} [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
   [NormedAddCommGroup K] [InnerProductSpace 𝕜 K] [CompleteSpace K]
 
-/-- **Tikhonov functional.** The Tikhonov (ridge) functional `J(x) = ‖A x - b‖ ^ 2 + Λ * ‖x‖ ^ 2`. -/
+/-- The Tikhonov (ridge) functional `J(x) = ‖A x - b‖ ^ 2 + Λ * ‖x‖ ^ 2`. -/
 noncomputable def tikhonovFunctional (A : H →L[𝕜] K) (b : K) (Λ : ℝ) (x : H) : ℝ :=
   ‖A x - b‖ ^ 2 + Λ * ‖x‖ ^ 2
 
-/-- **Normal operator of the Tikhonov problem.** The normal operator `A† ∘L A + Λ • 1` of the Tikhonov problem. -/
+/-- The normal operator `A† ∘L A + Λ • 1` of the Tikhonov problem. -/
 noncomputable def tikhonovOperator (A : H →L[𝕜] K) (Λ : ℝ) : H →L[𝕜] H :=
   A† ∘L A + (Λ : 𝕜) • (1 : H →L[𝕜] H)
 
@@ -114,7 +114,7 @@ theorem tikhonovOperator_apply (A : H →L[𝕜] K) (Λ : ℝ) (x : H) :
     tikhonovOperator A Λ x = (A†) (A x) + (Λ : 𝕜) • x := by
   simp [tikhonovOperator]
 
-/-- **Inner product of the Tikhonov normal operator with its argument.** The inner product of the normal operator applied to `x` with `x` itself. -/
+/-- The inner product of the normal operator applied to `x` with `x` itself. -/
 theorem tikhonovOperator_inner_self (A : H →L[𝕜] K) (Λ : ℝ) (x : H) :
     ⟪tikhonovOperator A Λ x, x⟫_𝕜 = ((‖A x‖ ^ 2 + Λ * ‖x‖ ^ 2 : ℝ) : 𝕜) := by
   rw [tikhonovOperator_apply, inner_add_left, ContinuousLinearMap.adjoint_inner_left,
@@ -123,13 +123,13 @@ theorem tikhonovOperator_inner_self (A : H →L[𝕜] K) (Λ : ℝ) (x : H) :
   push_cast
   ring
 
-/-- **Real part of the Tikhonov normal operator's quadratic form.** The real part of the inner product of the normal operator applied to `x`
+/-- The real part of the inner product of the normal operator applied to `x`
 with `x` itself. -/
 theorem re_inner_tikhonovOperator_self (A : H →L[𝕜] K) (Λ : ℝ) (x : H) :
     RCLike.re ⟪tikhonovOperator A Λ x, x⟫_𝕜 = ‖A x‖ ^ 2 + Λ * ‖x‖ ^ 2 := by
   rw [tikhonovOperator_inner_self, RCLike.ofReal_re]
 
-/-- **Tikhonov normal operator is self-adjoint.** The normal operator is self-adjoint, for every real `Λ`. -/
+/-- The normal operator is self-adjoint, for every real `Λ`. -/
 theorem isSelfAdjoint_tikhonovOperator (A : H →L[𝕜] K) (Λ : ℝ) :
     IsSelfAdjoint (tikhonovOperator A Λ) := by
   rw [ContinuousLinearMap.isSelfAdjoint_iff_isSymmetric]
@@ -138,7 +138,7 @@ theorem isSelfAdjoint_tikhonovOperator (A : H →L[𝕜] K) (Λ : ℝ) :
     inner_add_right, ContinuousLinearMap.adjoint_inner_left,
     ContinuousLinearMap.adjoint_inner_right, inner_smul_real_left, inner_smul_real_right]
 
-/-- **Tikhonov normal operator is bounded below by the regularization parameter.** The normal operator is bounded below by `Λ`, for every real `Λ`. -/
+/-- The normal operator is bounded below by `Λ`, for every real `Λ`. -/
 theorem tikhonovOperator_le_norm (A : H →L[𝕜] K) (Λ : ℝ) (x : H) :
     Λ * ‖x‖ ≤ ‖tikhonovOperator A Λ x‖ := by
   by_cases hx : x = 0
@@ -155,7 +155,7 @@ theorem tikhonovOperator_le_norm (A : H →L[𝕜] K) (Λ : ℝ) (x : H) :
       exact h1.trans h2
     exact le_of_mul_le_mul_right h1r hnorm
 
-/-- **Tikhonov normal operator has trivial kernel.** The normal operator has trivial kernel when `Λ > 0`. -/
+/-- The normal operator has trivial kernel when `Λ > 0`. -/
 theorem ker_tikhonovOperator_eq_bot (A : H →L[𝕜] K) (Λ : ℝ) (hΛ : 0 < Λ) :
     (tikhonovOperator A Λ : H →ₗ[𝕜] H).ker = ⊥ := by
   rw [LinearMap.ker_eq_bot']
@@ -166,7 +166,7 @@ theorem ker_tikhonovOperator_eq_bot (A : H →L[𝕜] K) (Λ : ℝ) (hΛ : 0 < �
   have hx0 : ‖x‖ = 0 := by nlinarith [norm_nonneg x, hΛ]
   exact norm_eq_zero.mp hx0
 
-/-- **Tikhonov normal operator has closed range.** The normal operator has closed range when `Λ > 0`, since it is bounded below. -/
+/-- The normal operator has closed range when `Λ > 0`, since it is bounded below. -/
 theorem isClosed_range_tikhonovOperator (A : H →L[𝕜] K) (Λ : ℝ) (hΛ : 0 < Λ) :
     IsClosed (Set.range (tikhonovOperator A Λ)) := by
   have hanti : AntilipschitzWith ⟨Λ⁻¹, inv_nonneg.mpr hΛ.le⟩ (tikhonovOperator A Λ) := by
@@ -177,7 +177,7 @@ theorem isClosed_range_tikhonovOperator (A : H →L[𝕜] K) (Λ : ℝ) (hΛ : 0
     exact tikhonovOperator_le_norm A Λ x
   exact hanti.isClosed_range (tikhonovOperator A Λ).uniformContinuous
 
-/-- **Tikhonov normal operator is surjective.** The normal operator is surjective when `Λ > 0`: its range is closed and
+/-- The normal operator is surjective when `Λ > 0`: its range is closed and
 its orthogonal complement is its kernel, which is trivial since the operator
 is self-adjoint. -/
 theorem range_tikhonovOperator_eq_top (A : H →L[𝕜] K) (Λ : ℝ) (hΛ : 0 < Λ) :
@@ -194,7 +194,7 @@ theorem range_tikhonovOperator_eq_top (A : H →L[𝕜] K) (Λ : ℝ) (hΛ : 0 <
       Submodule.bot_orthogonal_eq_top]
   rwa [IsClosed.submodule_topologicalClosure_eq hclosed] at htop
 
-/-- **Tikhonov normal operator is bijective.** The normal operator is bijective when `Λ > 0`. -/
+/-- The normal operator is bijective when `Λ > 0`. -/
 theorem bijective_tikhonovOperator (A : H →L[𝕜] K) (Λ : ℝ) (hΛ : 0 < Λ) :
     Function.Bijective (tikhonovOperator A Λ) := by
   refine ⟨?_, ?_⟩
@@ -206,17 +206,17 @@ theorem bijective_tikhonovOperator (A : H →L[𝕜] K) (Λ : ℝ) (hΛ : 0 < Λ
     obtain ⟨x, hx⟩ := hymem
     exact ⟨x, hx⟩
 
-/-- **Tikhonov normal operator is invertible.** The normal operator is a unit when `Λ > 0`. -/
+/-- The normal operator is a unit when `Λ > 0`. -/
 theorem isUnit_tikhonovOperator (A : H →L[𝕜] K) (Λ : ℝ) (hΛ : 0 < Λ) :
     IsUnit (tikhonovOperator A Λ) :=
   ContinuousLinearMap.isUnit_iff_bijective.mpr (bijective_tikhonovOperator A Λ hΛ)
 
-/-- **Solvability of the Tikhonov normal equations.** The normal equations are solvable when `Λ > 0`. -/
+/-- The normal equations are solvable when `Λ > 0`. -/
 theorem exists_tikhonov_normal_equations (A : H →L[𝕜] K) (b : K) (Λ : ℝ)
     (hΛ : 0 < Λ) : ∃ x, tikhonovOperator A Λ x = (A†) b :=
   (bijective_tikhonovOperator A Λ hΛ).surjective ((A†) b)
 
-/-- **Quadratic identity for the Tikhonov functional at a normal-equation solution.** The quadratic identity for the Tikhonov functional around a solution of
+/-- The quadratic identity for the Tikhonov functional around a solution of
 the normal equations: the cross term vanishes by the normal equations. -/
 theorem tikhonovFunctional_add_of_normal_equations (A : H →L[𝕜] K) (b : K) (Λ : ℝ)
     {x₀ : H} (h₀ : tikhonovOperator A Λ x₀ = (A†) b) (x : H) :
@@ -249,7 +249,7 @@ theorem tikhonovFunctional_add_of_normal_equations (A : H →L[𝕜] K) (b : K) 
   rw [h1, h2]
   linarith [hcross]
 
-/-- **Solutions of the normal equations minimize the Tikhonov functional.** A solution of the normal equations minimizes the Tikhonov functional. -/
+/-- A solution of the normal equations minimizes the Tikhonov functional. -/
 theorem isMinOn_tikhonovFunctional_of_normal_equations (A : H →L[𝕜] K) (b : K) (Λ : ℝ)
     (hΛ : 0 ≤ Λ) {x₀ : H} (h₀ : tikhonovOperator A Λ x₀ = (A†) b) :
     IsMinOn (tikhonovFunctional A b Λ) univ x₀ := by
@@ -260,7 +260,7 @@ theorem isMinOn_tikhonovFunctional_of_normal_equations (A : H →L[𝕜] K) (b :
   have h2 : 0 ≤ Λ * ‖x - x₀‖ ^ 2 := mul_nonneg hΛ (sq_nonneg _)
   linarith
 
-/-- **Tikhonov minimizers solve the normal equations.** A minimizer of the Tikhonov functional equals a solution of the normal
+/-- A minimizer of the Tikhonov functional equals a solution of the normal
 equations, when `Λ > 0`. -/
 theorem eq_of_isMinOn_tikhonovFunctional (A : H →L[𝕜] K) (b : K) (Λ : ℝ)
     (hΛ : 0 < Λ) {x₀ x : H} (h₀ : tikhonovOperator A Λ x₀ = (A†) b)
@@ -277,7 +277,7 @@ theorem eq_of_isMinOn_tikhonovFunctional (A : H →L[𝕜] K) (b : K) (Λ : ℝ)
     exact (pow_eq_zero_iff two_ne_zero).mp h4
   exact sub_eq_zero.1 (norm_eq_zero.mp hnorm)
 
-/-- **Existence and uniqueness of the Tikhonov minimizer.** The Tikhonov functional has a unique minimizer when `Λ > 0`. -/
+/-- The Tikhonov functional has a unique minimizer when `Λ > 0`. -/
 theorem existsUnique_tikhonov_minimizer (A : H →L[𝕜] K) (b : K) (Λ : ℝ)
     (hΛ : 0 < Λ) : ∃! x, ∀ y, tikhonovFunctional A b Λ x ≤ tikhonovFunctional A b Λ y := by
   obtain ⟨x₀, h₀⟩ := exists_tikhonov_normal_equations A b Λ hΛ
@@ -287,7 +287,7 @@ theorem existsUnique_tikhonov_minimizer (A : H →L[𝕜] K) (b : K) (Λ : ℝ)
   · intro x hxmin
     exact eq_of_isMinOn_tikhonovFunctional A b Λ hΛ h₀ (fun y _ => hxmin y)
 
-/-- **Stability bound for Tikhonov regularized solutions.** Stability bound for a solution of the normal equations. -/
+/-- Stability bound for a solution of the normal equations. -/
 theorem norm_le_of_tikhonov_normal_equations (A : H →L[𝕜] K) (b : K) (Λ : ℝ)
     (hΛ : 0 < Λ) {x : H} (h : tikhonovOperator A Λ x = (A†) b) :
     ‖x‖ ≤ ‖A‖ * ‖b‖ / Λ := by
@@ -318,7 +318,7 @@ theorem norm_le_of_tikhonov_normal_equations (A : H →L[𝕜] K) (b : K) (Λ : 
     rw [le_div_iff₀ hΛ, mul_comm]
     exact key2
 
-/-- **Tikhonov solutions tend to zero as the parameter grows.** Solutions of the Tikhonov normal equations tend to `0` as `Λ → ∞`. -/
+/-- Solutions of the Tikhonov normal equations tend to `0` as `Λ → ∞`. -/
 theorem tendsto_tikhonov_solution_zero (A : H →L[𝕜] K) (b : K) (Λ : ℕ → ℝ)
     (hΛ : ∀ n, 0 < Λ n) (hΛtop : Tendsto Λ atTop atTop) (x : ℕ → H)
     (hx : ∀ n, tikhonovOperator A (Λ n) (x n) = (A†) b) :

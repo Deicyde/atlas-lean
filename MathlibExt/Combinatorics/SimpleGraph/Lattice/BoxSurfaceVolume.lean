@@ -47,7 +47,7 @@ namespace StatMech
 
 namespace Lattice
 
-/-- **Box $[-n, n]^d$ as a finite set of sites.** The box `[-n, n]^d` as a finite set of sites. -/
+/-- The box `[-n, n]^d` as a finite set of sites. -/
 noncomputable def boxSV_boxF (d n : ℕ) : Finset (Site d) :=
   Fintype.piFinset (fun _ => Finset.Icc (-(n : ℤ)) n)
 
@@ -80,7 +80,7 @@ theorem boxSV_boxF_subset (d : ℕ) {m n : ℕ} (h : m ≤ n) :
   rw [boxSV_mem_boxF] at *
   intro i; have := hx i; rw [Finset.mem_Icc] at *; omega
 
-/-- **Vertex boundary of the box $[-n, n]^d$ as a finite set.** The vertex boundary of `[-n, n]^d` as a finite set of sites. -/
+/-- The vertex boundary of `[-n, n]^d` as a finite set of sites. -/
 noncomputable def boxSV_vbF (d n : ℕ) : Finset (Site d) :=
   boxSV_boxF d n \ boxSV_boxF d (n - 1)
 
@@ -93,7 +93,7 @@ theorem boxSV_vbF_eq_toFinset (d n : ℕ) :
   apply Finset.coe_injective
   rw [boxSV_coe_vbF, Set.Finite.coe_toFinset]
 
-/-- **Size of the vertex boundary of the box $[-n, n]^d$.** The number of sites in the vertex boundary of `[-n, n]^d`. -/
+/-- The number of sites in the vertex boundary of `[-n, n]^d`. -/
 noncomputable def boxSV_boundaryCard (d n : ℕ) : ℕ :=
   (vertexBoundary_finite d n).toFinset.card
 
@@ -106,7 +106,7 @@ theorem boxSV_boundary_card (d n : ℕ) (hn : 1 ≤ n) :
   congr 2
   omega
 
-/-- **Nearest-neighbour pairs inside the box $[-n, n]^d$.** The ordered pairs of nearest-neighbour sites that both lie in `[-n, n]^d`. -/
+/-- The ordered pairs of nearest-neighbour sites that both lie in `[-n, n]^d`. -/
 noncomputable def boxSV_edgeF (d n : ℕ) : Finset (Site d × Site d) :=
   ((boxSV_boxF d n) ×ˢ (boxSV_boxF d n)).filter
     (fun p => (∑ i, (p.1 i - p.2 i).natAbs) = 1)
@@ -118,10 +118,10 @@ theorem boxSV_mem_edgeF {d n : ℕ} {p : Site d × Site d} :
   rw [Finset.mem_filter, Finset.mem_product, hypercubicLattice_adj]
   tauto
 
-/-- **Number of nearest-neighbour pairs inside the box $[-n, n]^d$.** The number of ordered nearest-neighbour pairs inside `[-n, n]^d`. -/
+/-- The number of ordered nearest-neighbour pairs inside `[-n, n]^d`. -/
 noncomputable def boxSV_edgeCard (d n : ℕ) : ℕ := (boxSV_edgeF d n).card
 
-/-- **Box sites with a forward neighbour in the box.** Sites of `[-n, n]^d` whose successor in the first coordinate direction is still in the box. -/
+/-- Sites of `[-n, n]^d` whose successor in the first coordinate direction is still in the box. -/
 noncomputable def boxSV_fwdDom (d n : ℕ) (hd : 1 ≤ d) : Finset (Site d) :=
   (boxSV_boxF d n).filter (fun x => x ⟨0, hd⟩ + 1 ∈ Finset.Icc (-(n : ℤ)) n)
 

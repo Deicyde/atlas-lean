@@ -31,7 +31,7 @@ namespace AddMonoidAlgebra
 
 variable {R Γ : Type*} [CommRing R] [AddCommMonoid Γ]
 
-/-- **Weighted derivation of an additive monoid algebra.** Multiply the coefficient at each exponent by an additive weight of that exponent. -/
+/-- Multiply the coefficient at each exponent by an additive weight of that exponent. -/
 noncomputable def weightedDerivation (w : Γ →+ R) :
     Derivation R (AddMonoidAlgebra R Γ) (AddMonoidAlgebra R Γ) :=
   let D : AddMonoidAlgebra R Γ →ₗ[R] AddMonoidAlgebra R Γ :=
@@ -58,7 +58,7 @@ noncomputable def weightedDerivation (w : Γ →+ R) :
           ring
         · simp [D, w.map_add, single_mul_single, add_comm, add_mul, hx]
 
-/-- **Coefficients of a weighted derivation.** The coefficient at `g` is multiplied by the weight of `g`. -/
+/-- The coefficient at `g` is multiplied by the weight of `g`. -/
 @[simp] theorem coeff_weightedDerivation (w : Γ →+ R)
     (f : AddMonoidAlgebra R Γ) (g : Γ) :
     (weightedDerivation w f).coeff g = w g * f.coeff g := by
@@ -71,7 +71,7 @@ noncomputable def weightedDerivation (w : Γ →+ R) :
       simp [weightedDerivation]
     · simp [weightedDerivation, e]
 
-/-- **Weighted derivation of a basis term.** A basis term keeps its exponent and has its coefficient multiplied by the weight. -/
+/-- A basis term keeps its exponent and has its coefficient multiplied by the weight. -/
 @[simp] theorem weightedDerivation_single (w : Γ →+ R) (g : Γ) (r : R) :
     weightedDerivation w (single g r) = single g (w g * r) := by
   ext h
@@ -80,7 +80,7 @@ noncomputable def weightedDerivation (w : Γ →+ R) :
     simp
   · simp [e]
 
-/-- **Weighted derivation with zero weight.** The zero weight determines the zero derivation. -/
+/-- The zero weight determines the zero derivation. -/
 @[simp] theorem weightedDerivation_zero :
     weightedDerivation (0 : Γ →+ R) = 0 := by
   ext f g

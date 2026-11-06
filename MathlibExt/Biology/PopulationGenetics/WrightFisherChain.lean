@@ -95,7 +95,7 @@ private lemma sum_binomial_mul_sq (M : ℕ) (x : ℝ) :
   rw [← h]
   exact sum_congr rfl fun j _ => by ring
 
-/-- **Neutral Wright–Fisher transition matrix.** The neutral Wright–Fisher transition matrix on `M` gene copies (Ewens 2004, ch. 3):
+/-- The neutral Wright–Fisher transition matrix on `M` gene copies (Ewens 2004, ch. 3):
 `P(i, j) = (M choose j) (i/M)^j (1 - i/M)^(M - j)`, the binomial law `Bin(M, i/M)` of the
 number of `A` copies among `M` draws with replacement. The model needs `M ≥ 1`; for `M = 0`
 (where `i / M` is Lean's junk value `0`) the matrix is the one-state chain, which is
@@ -105,7 +105,7 @@ noncomputable def wrightFisher (M : ℕ) : StochasticMatrix M where
   nonneg _ _ := bernstein_nonneg
   row_sum i := bernstein.probability M (bernstein.z i)
 
-/-- **Allele frequency of a Wright–Fisher state.** The frequency of allele `A` in state `i` is `bernstein.z i = i / M` (for `M = 0` it is
+/-- The frequency of allele `A` in state `i` is `bernstein.z i = i / M` (for `M = 0` it is
 Lean's junk value `i / 0 = 0`). -/
 theorem coe_z (M : ℕ) (i : Fin (M + 1)) : (bernstein.z i : ℝ) = ((i : ℕ) : ℝ) / M :=
   rfl
@@ -117,31 +117,31 @@ private lemma mul_z (M : ℕ) (i : Fin (M + 1)) : (M : ℝ) * (bernstein.z i : �
   · rw [coe_z]
     field_simp
 
-/-- **Entries of the Wright–Fisher matrix.** Entries of the Wright–Fisher matrix. -/
+/-- Entries of the Wright–Fisher matrix. -/
 theorem wrightFisher_prob (M : ℕ) (i j : Fin (M + 1)) :
     (wrightFisher M).prob i j =
       (M.choose j : ℝ) * (bernstein.z i : ℝ) ^ (j : ℕ) * (1 - (bernstein.z i : ℝ)) ^ (M - j) :=
   bernstein_apply M j (bernstein.z i)
 
-/-- **Heterozygosity of a Wright–Fisher state.** The heterozygosity `H(j) = 2 (j/M) (1 - j/M)` of state `j`: the probability that two
+/-- The heterozygosity `H(j) = 2 (j/M) (1 - j/M)` of state `j`: the probability that two
 gene copies drawn with replacement carry different alleles. -/
 noncomputable def heterozygosity (M : ℕ) (j : Fin (M + 1)) : ℝ :=
   2 * (bernstein.z j : ℝ) * (1 - (bernstein.z j : ℝ))
 
-/-- **Wright–Fisher rows are binomial laws.** The rows of the Wright–Fisher matrix are Mathlib's binomial laws `Bin(M, i/M)`. -/
+/-- The rows of the Wright–Fisher matrix are Mathlib's binomial laws `Bin(M, i/M)`. -/
 theorem wrightFisher_prob_eq_binomial (M : ℕ) (i j : Fin (M + 1)) :
     (wrightFisher M).prob i j =
       (ProbabilityTheory.binomial M (bernstein.z i)).real {(j : ℕ)} := by
   rw [ProbabilityTheory.binomial_real_singleton, wrightFisher_prob]
 
-/-- **One-step martingale property of the Wright–Fisher allele count.** Martingale property of the allele count (one step): `∑ j, P(i, j) j = i`. -/
+/-- Martingale property of the allele count (one step): `∑ j, P(i, j) j = i`. -/
 theorem sum_prob_mul_wrightFisher (M : ℕ) (i : Fin (M + 1)) :
     ∑ j, (wrightFisher M).prob i j * ((j : ℕ) : ℝ) = (i : ℕ) := by
   simp only [wrightFisher_prob]
   rw [Fin.sum_univ_eq_sum_range (fun j => (M.choose j : ℝ) * (bernstein.z i : ℝ) ^ j *
     (1 - (bernstein.z i : ℝ)) ^ (M - j) * (j : ℝ)), sum_binomial_mul, mul_z]
 
-/-- **Multi-step martingale property of the Wright–Fisher allele count.** Martingale property of the allele count (`t` steps): `∑ j, P^t(i, j) j = i`. -/
+/-- Martingale property of the allele count (`t` steps): `∑ j, P^t(i, j) j = i`. -/
 theorem sum_matPow_mul_wrightFisher (M t : ℕ) (i : Fin (M + 1)) :
     ∑ j, (wrightFisher M).matPow t i j * ((j : ℕ) : ℝ) = (i : ℕ) := by
   induction t generalizing i with
@@ -152,11 +152,11 @@ theorem sum_matPow_mul_wrightFisher (M t : ℕ) (i : Fin (M + 1)) :
     simp only [mul_assoc, ← mul_sum, ih]
     exact sum_prob_mul_wrightFisher M i
 
-/-- **Loss of an allele is absorbing in the Wright–Fisher chain.** The state `0` (allele `A` lost) is absorbing. -/
+/-- The state `0` (allele `A` lost) is absorbing. -/
 theorem wrightFisher_prob_zero_zero (M : ℕ) : (wrightFisher M).prob 0 0 = 1 := by
   simp [wrightFisher_prob]
 
-/-- **Fixation of an allele is absorbing in the Wright–Fisher chain.** The state `M` (allele `A` fixed) is absorbing. -/
+/-- The state `M` (allele `A` fixed) is absorbing. -/
 theorem wrightFisher_prob_last_last (M : ℕ) :
     (wrightFisher M).prob (Fin.last M) (Fin.last M) = 1 := by
   rcases Nat.eq_zero_or_pos M with rfl | hM
@@ -164,7 +164,7 @@ theorem wrightFisher_prob_last_last (M : ℕ) :
   · have : (M : ℝ) ≠ 0 := by exact_mod_cast hM.ne'
     simp [wrightFisher_prob, coe_z, this]
 
-/-- **One-step decay of heterozygosity under Wright–Fisher drift.** Heterozygosity decays by the factor `1 - 1/M` per generation (one step). For `M = 0` both
+/-- Heterozygosity decays by the factor `1 - 1/M` per generation (one step). For `M = 0` both
 sides are `0` because `H ≡ 0`. -/
 theorem sum_prob_mul_heterozygosity (M : ℕ) (i : Fin (M + 1)) :
     ∑ j, (wrightFisher M).prob i j * heterozygosity M j =
@@ -211,7 +211,7 @@ private lemma eigen_power {M : ℕ} (P : StochasticMatrix M)
         ring
       _ = a ^ (t + 1) * f i := by rw [h, pow_succ]; ring
 
-/-- **Geometric decay of heterozygosity under Wright–Fisher drift.** Heterozygosity decays geometrically (Ewens 2004, ch. 3):
+/-- Heterozygosity decays geometrically (Ewens 2004, ch. 3):
 `∑ j, P^t(i, j) H(j) = (1 - 1/M)^t H(i)`. For `M = 0` both sides are `0` because `H ≡ 0`
 (the factor `1 - 1/0 = 1` is then irrelevant). -/
 theorem sum_matPow_mul_heterozygosity (M t : ℕ) (i : Fin (M + 1)) :
@@ -220,7 +220,7 @@ theorem sum_matPow_mul_heterozygosity (M t : ℕ) (i : Fin (M + 1)) :
   exact eigen_power (wrightFisher M) (heterozygosity M) (1 - 1 / (M : ℝ))
     (sum_prob_mul_heterozygosity M) t i
 
-/-- **Interior Wright–Fisher states vanish in the limit.** The probability of sitting in an interior state `0 < j < M` at time `t` tends to `0`. -/
+/-- The probability of sitting in an interior state `0 < j < M` at time `t` tends to `0`. -/
 theorem tendsto_matPow_interior {M : ℕ} (i j : Fin (M + 1)) (hj0 : j ≠ 0)
     (hjM : j ≠ Fin.last M) :
     Tendsto (fun t => (wrightFisher M).matPow t i j) atTop (𝓝 0) := by
@@ -296,7 +296,7 @@ private lemma tendsto_interior_sum {M : ℕ} (i : Fin (M + 1))
     simpa using (tendsto_matPow_interior i j hj0 hjM).mul_const (f j)
   simpa using h
 
-/-- **Fixation probability in the Wright–Fisher chain.** Fixation probability (Ewens 2004, ch. 3): started from `i` copies, allele `A` is fixed with
+/-- Fixation probability (Ewens 2004, ch. 3): started from `i` copies, allele `A` is fixed with
 limiting probability `i / M`, i.e. `P^t(i, M) → i / M`. -/
 theorem tendsto_matPow_last {M : ℕ} (hM : 0 < M) (i : Fin (M + 1)) :
     Tendsto (fun t => (wrightFisher M).matPow t i (Fin.last M)) atTop
@@ -319,7 +319,7 @@ theorem tendsto_matPow_last {M : ℕ} (hM : 0 < M) (i : Fin (M + 1)) :
   simp only [sub_zero] at h
   exact h.congr' (Eventually.of_forall fun t => (heq t).symm)
 
-/-- **Limiting loss probability of the Wright–Fisher transition matrix.** Loss probability: started from `i` copies, allele `A` is lost with limiting probability
+/-- Loss probability: started from `i` copies, allele `A` is lost with limiting probability
 `1 - i / M`, i.e. `P^t(i, 0) → 1 - i / M`. -/
 theorem tendsto_matPow_zero {M : ℕ} (hM : 0 < M) (i : Fin (M + 1)) :
     Tendsto (fun t => (wrightFisher M).matPow t i 0) atTop
@@ -381,7 +381,7 @@ private lemma measureReal_eq_matPow {Ω : Type*} {m : MeasurableSpace Ω} {μ : 
     ← Measure.map_apply hmeas (measurableSet_singleton j), map_singleton_eq_matPow hX h0,
     ENNReal.toReal_ofReal (StochasticMatrix.matPow_nonneg P _ _ _)]
 
-/-- **Limiting fixation probability of a Wright–Fisher chain.** Path-level fixation probability: if `X` is a Wright–Fisher chain (in the sense of
+/-- Path-level fixation probability: if `X` is a Wright–Fisher chain (in the sense of
 `IsFiniteMarkovChain`) started from `i` copies, then `P(X_t = M) → i / M`. -/
 theorem tendsto_measureReal_eq_last {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω}
     [IsProbabilityMeasure μ] {M : ℕ} (hM : 0 < M) {X : ℕ → Ω → Fin (M + 1)}
@@ -391,7 +391,7 @@ theorem tendsto_measureReal_eq_last {Ω : Type*} {m : MeasurableSpace Ω} {μ : 
   simp_rw [measureReal_eq_matPow hX h0]
   exact tendsto_matPow_last hM i
 
-/-- **Almost-sure absorption of the Wright–Fisher chain.** Almost-sure absorption: a Wright–Fisher chain is almost surely eventually absorbed in `0`
+/-- Almost-sure absorption: a Wright–Fisher chain is almost surely eventually absorbed in `0`
 or `M` (Ewens 2004, ch. 3). -/
 theorem measure_exists_absorbed {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω}
     [IsProbabilityMeasure μ] {M : ℕ} {X : ℕ → Ω → Fin (M + 1)}
@@ -478,7 +478,7 @@ private lemma measureReal_exists_eq_of_tendsto {Ω : Type*} {m : MeasurableSpace
   rw [hset]
   exact tendsto_nhds_unique hlim' hc
 
-/-- **Fixation probability of a Wright–Fisher chain.** Path-level fixation probability (Ewens 2004, ch. 3): a Wright–Fisher chain started from `i`
+/-- Path-level fixation probability (Ewens 2004, ch. 3): a Wright–Fisher chain started from `i`
 copies ever reaches `M` (fixation of `A`) with probability `i / M`. -/
 theorem measureReal_exists_eq_last {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω}
     [IsProbabilityMeasure μ] {M : ℕ} (hM : 0 < M) {X : ℕ → Ω → Fin (M + 1)}
@@ -488,7 +488,7 @@ theorem measureReal_exists_eq_last {Ω : Type*} {m : MeasurableSpace Ω} {μ : M
   measureReal_exists_eq_of_tendsto hX (wrightFisher_prob_last_last M)
     (tendsto_measureReal_eq_last hM hX h0)
 
-/-- **Loss probability of a Wright–Fisher chain.** Path-level loss probability: a Wright–Fisher chain started from `i` copies ever reaches `0`
+/-- Path-level loss probability: a Wright–Fisher chain started from `i` copies ever reaches `0`
 (loss of `A`) with probability `1 - i / M`. -/
 theorem measureReal_exists_eq_zero {Ω : Type*} {m : MeasurableSpace Ω} {μ : Measure Ω}
     [IsProbabilityMeasure μ] {M : ℕ} (hM : 0 < M) {X : ℕ → Ω → Fin (M + 1)}

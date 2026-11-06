@@ -58,7 +58,7 @@ variable {𝕜 E F : Type*} [NontriviallyNormedField 𝕜] [CompleteSpace 𝕜]
     [NormedAddCommGroup E] [NormedAddCommGroup F] [NormedSpace 𝕜 E] [NormedSpace 𝕜 F]
     [CompleteSpace E]
 
-/-- **Fredholm index is constant on preconnected families.** The Fredholm index is constant along a continuous family of Fredholm
+/-- The Fredholm index is constant along a continuous family of Fredholm
 operators indexed by a preconnected set, because the index is locally
 constant (Mathlib) and takes values in the discrete space `ℤ`. -/
 theorem index_eq_of_preconnected {X : Type*} [TopologicalSpace X] {s : Set X}
@@ -75,7 +75,7 @@ theorem index_eq_of_preconnected {X : Type*} [TopologicalSpace X] {s : Set X}
     exact Filter.Tendsto.congr' h2eq.symm tendsto_const_nhds
   exact hs.constant hcont hx hy
 
-/-- **Fredholm index is constant along a path continuous on [0, 1].** The Fredholm index is constant along a continuous path of Fredholm
+/-- The Fredholm index is constant along a continuous path of Fredholm
 operators on `[0, 1]`. -/
 theorem index_eq_of_continuousOn_Icc {γ : ℝ → E →L[𝕜] F}
     (hγ : ContinuousOn γ (Icc (0 : ℝ) 1))
@@ -84,7 +84,7 @@ theorem index_eq_of_continuousOn_Icc {γ : ℝ → E →L[𝕜] F}
   index_eq_of_preconnected isPreconnected_Icc hγ
     ⟨le_refl 0, zero_le_one⟩ ⟨zero_le_one, le_refl 1⟩ hfred
 
-/-- **Fredholm index is constant along a globally continuous path.** The Fredholm index is constant along a globally continuous path of
+/-- The Fredholm index is constant along a globally continuous path of
 Fredholm operators on `[0, 1]`. -/
 theorem index_eq_of_continuous_path {γ : ℝ → E →L[𝕜] F} (hγ : Continuous γ)
     (hfred : ∀ t ∈ Icc (0 : ℝ) 1, (γ t).IsFredholm) :
@@ -93,7 +93,7 @@ theorem index_eq_of_continuous_path {γ : ℝ → E →L[𝕜] F} (hγ : Continu
 
 end General
 
-/-- **Rank-one operators have finite range.** A rank-one operator has finite range. -/
+/-- A rank-one operator has finite range. -/
 theorem hasFiniteRange_smulRight {𝕜 E F : Type*} [NontriviallyNormedField 𝕜]
     [NormedAddCommGroup E] [NormedAddCommGroup F] [NormedSpace 𝕜 E] [NormedSpace 𝕜 F]
     {c : E →L[𝕜] 𝕜} {y : F} :
@@ -115,7 +115,7 @@ variable {𝕜 E F : Type*} [RCLike 𝕜]
     [NormedAddCommGroup E] [NormedAddCommGroup F] [NormedSpace 𝕜 E] [NormedSpace 𝕜 F]
     [CompleteSpace E]
 
-/-- **Finite-rank perturbation preserves the Fredholm index.** Adding a finite-rank operator does not change the Fredholm index.
+/-- Adding a finite-rank operator does not change the Fredholm index.
 The proof follows the segment `T + t • F`, `t ∈ [0, 1]`, which is a
 continuous path of Fredholm operators. -/
 theorem index_add_hasFiniteRange {T G : E →L[𝕜] F} (hT : T.IsFredholm)
@@ -128,14 +128,14 @@ theorem index_add_hasFiniteRange {T G : E →L[𝕜] F} (hT : T.IsFredholm)
   have h := index_eq_of_continuous_path hcont hfred
   simpa using h.symm
 
-/-- **Left finite-rank perturbation preserves the Fredholm index.** Adding a finite-rank operator on the left does not change the
+/-- Adding a finite-rank operator on the left does not change the
 Fredholm index. -/
 theorem index_hasFiniteRange_add {T G : E →L[𝕜] F} (hT : T.IsFredholm)
     (hG : G.toLinearMap.HasFiniteRange) : (G + T).index = T.index := by
   rw [add_comm]
   exact index_add_hasFiniteRange hT hG
 
-/-- **Subtracting a finite-rank operator preserves the Fredholm index.** Subtracting a finite-rank operator does not change the Fredholm
+/-- Subtracting a finite-rank operator does not change the Fredholm
 index. -/
 theorem index_sub_hasFiniteRange {T G : E →L[𝕜] F} (hT : T.IsFredholm)
     (hG : G.toLinearMap.HasFiniteRange) : (T - G).index = T.index := by

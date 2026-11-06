@@ -36,54 +36,38 @@ group in `Type` has the property if and only if it is isomorphic to `SU₂(ℂ)`
 (`Matrix.specialUnitaryGroup (Fin 2) ℂ`).
 -/
 
-/-- **Irreducible representations into $\mathrm{GL}_n(\mathbb{C})$.** Let $G$ be a group and
-$\rho \colon G \to \mathrm{GL}_n(\mathbb{C})$ a homomorphism. Then $\rho$ is irreducible when
-$n \ge 1$ and the only subspaces $W$ of $\mathbb{C}^n$ with $\rho(g)v \in W$ for all $g \in G$ and
-$v \in W$ are $0$ and $\mathbb{C}^n$. -/
+/-- The complex representation `ρ : G →* GLₙ(ℂ)` is irreducible: `n ≥ 1` and the only subspaces of
+`ℂⁿ` invariant under every `ρ g` are `0` and `ℂⁿ`. -/
 def IsIrreducibleRep {G : Type*} [Group G] {n : ℕ}
     (ρ : G →* Matrix.GeneralLinearGroup (Fin n) ℂ) : Prop :=
   0 < n ∧ ∀ W : Submodule ℂ (Fin n → ℂ),
     (∀ g : G, ∀ v ∈ W, (ρ g : Matrix (Fin n) (Fin n) ℂ).mulVec v ∈ W) → W = ⊥ ∨ W = ⊤
 
-/-- **Equivalent representations into $\mathrm{GL}_n(\mathbb{C})$.** Let $G$ be a group. Two
-homomorphisms $\rho, \sigma \colon G \to \mathrm{GL}_n(\mathbb{C})$ are equivalent when there is a
-matrix $P \in \mathrm{GL}_n(\mathbb{C})$ with $\sigma(g) = P \rho(g) P^{-1}$ for all $g \in G$. -/
+/-- The representations `ρ` and `σ` are equivalent: conjugate by an invertible matrix. -/
 def IsEquivalentRep {G : Type*} [Group G] {n : ℕ}
     (ρ σ : G →* Matrix.GeneralLinearGroup (Fin n) ℂ) : Prop :=
   ∃ P : Matrix.GeneralLinearGroup (Fin n) ℂ, ∀ g : G, σ g = P * ρ g * P⁻¹
 
-/-- **Groups with exactly one irreducible representation of each dimension.** A group $G$ has
-exactly one irreducible complex representation of each dimension when for every $n \ge 1$ there
-is an irreducible homomorphism $G \to \mathrm{GL}_n(\mathbb{C})$ and any two irreducible
-homomorphisms $G \to \mathrm{GL}_n(\mathbb{C})$ are equivalent. Representations are arbitrary
-homomorphisms of the abstract group $G$; no continuity is required. -/
+/-- `G` has exactly one irreducible complex representation of each dimension `n ≥ 1`, up to
+equivalence. -/
 def HasUniqueIrreducibleRepOfEachDim (G : Type*) [Group G] : Prop :=
   ∀ n : ℕ, 0 < n →
     (∃ ρ : G →* Matrix.GeneralLinearGroup (Fin n) ℂ, IsIrreducibleRep ρ) ∧
     ∀ ρ σ : G →* Matrix.GeneralLinearGroup (Fin n) ℂ,
       IsIrreducibleRep ρ → IsIrreducibleRep σ → IsEquivalentRep ρ σ
 
-/-- **McKay's question on $\mathrm{SU}_2(\mathbb{C})$ (Kourovka 16.58).** A group $G$ has exactly
-one irreducible complex representation of each dimension $n = 1, 2, \dots$, up to equivalence, if
-and only if $G$ is isomorphic to $\mathrm{SU}_2(\mathbb{C})$. Here a representation of dimension
-$n$ is any homomorphism $G \to \mathrm{GL}_n(\mathbb{C})$ of abstract groups, with no continuity
-required. -/
+/-- Kourovka 16.58 (J. McKay): `SU₂(ℂ)` is the only group, up to isomorphism, that has exactly one
+irreducible complex representation of dimension `n` for each `n = 1, 2, …`. -/
 def su2OnlyGroupWithUniqueIrreducibleReps : Prop :=
   ∀ (G : Type) [Group G],
     HasUniqueIrreducibleRepOfEachDim G ↔ Nonempty (G ≃* Matrix.specialUnitaryGroup (Fin 2) ℂ)
 
-/-- **McKay's question 16.58 has a negative answer.** It is not the case that a group has exactly
-one irreducible complex representation of each dimension $n \ge 1$, up to equivalence, if and only
-if it is isomorphic to $\mathrm{SU}_2(\mathbb{C})$. Here a representation of dimension $n$ is any
-homomorphism to $\mathrm{GL}_n(\mathbb{C})$ of abstract groups, with no continuity required.
-
-Applying a field automorphism $\varphi$ of $\mathbb{C}$ to matrix entries gives irreducible
-$2$-dimensional representations $x \mapsto x^\varphi$ of the abstract group
-$\mathrm{SU}_2(\mathbb{C})$, infinitely many of them pairwise non-equivalent (von Neumann), so
-$\mathrm{SU}_2(\mathbb{C})$ itself lacks the property. It does have it if only unitary
-representations are counted, as these are continuous (Cartan).
-
-Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group
+/--
+Resolved false: the Kourovka Archive answers 16.58 "No, it is not": applying an automorphism `φ` of
+`ℂ` to matrix entries gives irreducible 2-dimensional representations `x ↦ x^φ` of the abstract
+group `SU₂(ℂ)`, infinitely many of them pairwise non-equivalent (von Neumann), so `SU₂(ℂ)` itself
+does not have the property. It does have it if only unitary representations are counted, as these
+are continuous (Cartan). Source: E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group
 Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems,
 Problem 16.58 (J. McKay); resolution: V. P. Burichenko, letter of 16 July 2013, as recorded in the
 Kourovka Archive (observation of J. von Neumann), Kourovka Archive, Problem 16.58 (No: for field

@@ -52,23 +52,23 @@ namespace Percolation
 
 open StatMech.Lattice
 
-/-- **Origin of the hypercubic lattice.** The origin `0 ∈ ℤ^d`. -/
+/-- The origin `0 ∈ ℤ^d`. -/
 def origin (d : ℕ) : Site d := fun _ => 0
 
-/-- **Percolation event for the origin.** The percolation event `{0 ↔ ∞}`: the open cluster of the origin is infinite. -/
+/-- The percolation event `{0 ↔ ∞}`: the open cluster of the origin is infinite. -/
 def percolationEvent (d : ℕ) : Set (ConfigSpace (Sym2 (Site d))) :=
   {ω | (StatMech.Lattice.cluster d ω (origin d)).Infinite}
 
-/-- **Percolation probability of bond percolation.** The percolation probability `θ_d(p) = ℙ_p(0 ↔ ∞)` of Bernoulli bond percolation on `ℤ^d`
+/-- The percolation probability `θ_d(p) = ℙ_p(0 ↔ ∞)` of Bernoulli bond percolation on `ℤ^d`
 with edge density `p`. -/
 noncomputable def theta (d : ℕ) (p : ℝ≥0) (hp : p ≤ 1) : ℝ :=
   (bernoulliProductMeasure (E := Sym2 (Site d)) p hp).real (percolationEvent d)
 
-/-- **Set of densities with no percolation.** The set of densities `p ∈ [0, 1]` at which `θ_d(p) = 0`. -/
+/-- The set of densities `p ∈ [0, 1]` at which `θ_d(p) = 0`. -/
 def subcriticalSet (d : ℕ) : Set ℝ≥0 :=
   {p : ℝ≥0 | ∃ hp : p ≤ 1, theta d p hp = 0}
 
-/-- **Critical probability of bond percolation on the hypercubic lattice.** The critical probability `p_c(d) = sup {p ∈ [0, 1] : θ_d(p) = 0}` of bond percolation on `ℤ^d`.
+/-- The critical probability `p_c(d) = sup {p ∈ [0, 1] : θ_d(p) = 0}` of bond percolation on `ℤ^d`.
 
 See also `MathlibExt.Probability.ProductBondPercolation.criticalProb`, which defines the critical
 point of a general countable graph through the event that *some* infinite cluster exists; the two
@@ -96,7 +96,7 @@ theorem theta_le_one (d : ℕ) (p : ℝ≥0) (hp : p ≤ 1) : theta d p hp ≤ 1
   rw [ENNReal.ofReal_one]
   exact prob_le_one
 
-/-- **Lattice clusters agree with general graph clusters.** The open cluster of `x` in the lattice model is the cluster
+/-- The open cluster of `x` in the lattice model is the cluster
 `MathlibExt.Probability.ProductBondPercolation.gcluster` of bond percolation on the graph
 `hypercubicLattice d` with the same edge configuration. -/
 theorem cluster_eq_gcluster {d : ℕ} (ω : ConfigSpace (Sym2 (Site d))) (x : Site d) :
@@ -112,7 +112,7 @@ theorem cluster_eq_gcluster {d : ℕ} (ω : ConfigSpace (Sym2 (Site d))) (x : Si
   simp only [mem_cluster, MathlibExt.Probability.ProductBondPercolation.gcluster, Set.mem_ofPred_eq,
     Connected, hG]
 
-/-- **Lattice box as a finite set.** The box `Λ_n = [-n, n]^d` as a finset. -/
+/-- The box `Λ_n = [-n, n]^d` as a finset. -/
 noncomputable def boxFinset (d n : ℕ) : Finset (Site d) := (box_finite d n).toFinset
 
 @[simp]

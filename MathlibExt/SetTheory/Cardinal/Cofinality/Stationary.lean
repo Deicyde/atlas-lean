@@ -34,7 +34,7 @@ namespace MetaMathlibExt
 
 -- Logic 42: Contains all bounded sets
 
-/-- **Family containing all bounded subsets of a cardinal.** A set X⊆κ is *bounded in κ* if there is some
+/-- A set X⊆κ is *bounded in κ* if there is some
 β<κ with α<β for every α∈ X; equivalently,
 X⊆β for some β<κ.
 
@@ -52,7 +52,7 @@ def ContainsAllBounded.{u} (κ : Cardinal.{u}) (I : Set (Set (Set.Iio κ.ord))) 
 
 -- Logic 52: $\kappa$-complete ideal
 
-/-- **$\kappa$-complete ideal on a cardinal.** A *κ-complete ideal on κ* is a collection I ⊆ 𝒫(κ) such that:
+/-- A *κ-complete ideal on κ* is a collection I ⊆ 𝒫(κ) such that:
 
 1. ∅ ∈ I.
 1. If A ∈ I and B ⊆ A, then B ∈ I.
@@ -69,7 +69,7 @@ structure IsKappaCompleteIdeal.{u} (κ : Cardinal.{u})
 
 -- Logic 53: Normal ideal on $\kappa$
 
-/-- **Normal ideal on a cardinal.** Let κ be a cardinal, identified with
+/-- Let κ be a cardinal, identified with
 κ = Iio(κ.ord) = {α : Ordinal ∣ α < κ.ord},
 and let I⊆𝒫(κ).
 
@@ -90,11 +90,7 @@ def IsNormalIdeal.{u} (κ : Cardinal.{u}) (I : Set (Set (Set.Iio κ.ord))) : Pro
 
 -- Logic 2: Regressive function
 
-/-- **Regressive functions.** Let $\kappa$ be a cardinal, identified with its initial ordinal, let
-$S$ be a set of ordinals less than $\kappa$, and let $f$ be a function from $S$ to the ordinals
-less than $\kappa$. Then $f$ is regressive if $f(\alpha) < \alpha$ for every nonzero
-$\alpha \in S$.
--/
+/-- An ordinal function f on a set S is *regressive* if f(α )<α for all α ∈ S with α ≠ 0. -/
 def IsRegressive (κ : Cardinal)
     (S : Set (Set.Iio κ.ord)) (f : ↥S → Set.Iio κ.ord) : Prop :=
   ∀ x : ↥S, (x : Ordinal) ≠ 0 → (f x : Ordinal) < (x : Ordinal)

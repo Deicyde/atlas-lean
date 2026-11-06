@@ -61,7 +61,7 @@ namespace Cslib.Automata
 
 variable {T : Type*} {σ : Type*} {Γ : Type*} {M : PDA T σ Γ}
 
-/-- **Deterministic pushdown automaton.** A pushdown automaton is deterministic when every transition set
+/-- A pushdown automaton is deterministic when every transition set
 has at most one element, and an available `ε`-transition precludes
 every consuming transition from the same state and stack symbol.
 Source: Sipser, Introduction to the Theory of Computation, 3rd ed.,
@@ -82,7 +82,7 @@ open Automata
 
 variable {T : Type*} {L : Language T}
 
-/-- **End-marker encoding of a word.** Encode a word by copying it to the left summand and appending the
+/-- Encode a word by copying it to the left summand and appending the
 end marker `Sum.inr ()`.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3
@@ -91,7 +91,7 @@ end marker). -/
 def endMarkerEncode (w : List T) : List (T ⊕ Unit) :=
   w.map Sum.inl ++ [Sum.inr ()]
 
-/-- **End-marker erasure.** Erase the end marker: a left letter maps to its one-letter word,
+/-- Erase the end marker: a left letter maps to its one-letter word,
 the end marker maps to the empty word.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3
@@ -101,7 +101,7 @@ def endMarkerErase : T ⊕ Unit → List T
   | .inl a => [a]
   | .inr _ => []
 
-/-- **Language of end-marker encoded words.** The encodings of words over `T`: the words over `T ⊕ Unit`
+/-- The encodings of words over `T`: the words over `T ⊕ Unit`
 consisting of left letters followed by a single end marker.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3
@@ -110,7 +110,7 @@ end marker). -/
 def encodedWords : Language (T ⊕ Unit) :=
   {u | ∃ w : List T, u = endMarkerEncode w}
 
-/-- **Erasing the end-marker encoding recovers the word.** Erasing an encoding recovers the word.
+/-- Erasing an encoding recovers the word.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3. -/
 theorem endMarkerErase_endMarkerEncode (w : List T) :
@@ -126,7 +126,7 @@ theorem endMarkerErase_endMarkerEncode (w : List T) :
   rw [endMarkerEncode, List.map_append, List.flatten_append, h1, h2,
     List.append_nil]
 
-/-- **Injectivity of the end-marker encoding.** Encoding is injective.
+/-- Encoding is injective.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3. -/
 theorem endMarkerEncode_injective :
@@ -135,7 +135,7 @@ theorem endMarkerEncode_injective :
   have h' := congrArg (fun u => (u.map endMarkerErase).flatten) h
   rwa [endMarkerErase_endMarkerEncode, endMarkerErase_endMarkerEncode] at h'
 
-/-- **DFA recognizing end-marker encodings.** The DFA for the encodings: state `inl false` while reading left
+/-- The DFA for the encodings: state `inl false` while reading left
 letters, `inl true` after the end marker (the accepting state), and
 `inr ()` dead once anything follows the end marker.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
@@ -149,7 +149,7 @@ noncomputable def endMarkerDFA : DFA (T ⊕ Unit) (Bool ⊕ Unit) where
   start := .inl false
   accept := {.inl true}
 
-/-- **Dead state of the encoding DFA is absorbing.** The dead state of the encoding DFA stays dead.
+/-- The dead state of the encoding DFA stays dead.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3. -/
 theorem endMarkerDFA_evalFrom_dead (u : List (T ⊕ Unit)) :
@@ -158,7 +158,7 @@ theorem endMarkerDFA_evalFrom_dead (u : List (T ⊕ Unit)) :
   | nil => rfl
   | cons b u ih => exact ih
 
-/-- **Encoding DFA stays in its start state on left letters.** The encoding DFA stays in its start state while reading left
+/-- The encoding DFA stays in its start state while reading left
 letters.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3. -/
@@ -168,7 +168,7 @@ theorem endMarkerDFA_evalFrom_inl (w : List T) :
   | nil => rfl
   | cons a w ih => exact ih
 
-/-- **Encoding DFA after the end marker accepts only the empty input.** After the end marker, the encoding DFA can only be in its
+/-- After the end marker, the encoding DFA can only be in its
 accepting state on empty input.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3. -/
@@ -181,7 +181,7 @@ theorem endMarkerDFA_evalFrom_afterMarker {u : List (T ⊕ Unit)}
     rw [endMarkerDFA_evalFrom_dead] at h'
     cases h'
 
-/-- **Encoding DFA accepts every end-marker encoding.** The encoding DFA accepts exactly the encodings: it reaches the
+/-- The encoding DFA accepts exactly the encodings: it reaches the
 accepting state on an encoding.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3. -/
@@ -190,7 +190,7 @@ theorem endMarkerDFA_evalFrom_encode (w : List T) :
   rw [endMarkerEncode, DFA.evalFrom_of_append, endMarkerDFA_evalFrom_inl]
   rfl
 
-/-- **Encoding DFA accepts only end-marker encodings.** The encoding DFA reaches the accepting state only on encodings.
+/-- The encoding DFA reaches the accepting state only on encodings.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3. -/
 theorem exists_endMarkerEncode_of_endMarkerDFA_evalFrom {u : List (T ⊕ Unit)}
@@ -207,7 +207,7 @@ theorem exists_endMarkerEncode_of_endMarkerDFA_evalFrom {u : List (T ⊕ Unit)}
       have hu : u = [] := endMarkerDFA_evalFrom_afterMarker h
       exact ⟨[], by rw [hu]; rfl⟩
 
-/-- **End-marker encodings form a regular language.** The encodings of words form a regular language.
+/-- The encodings of words form a regular language.
 Source: Hopcroft, Motwani, and Ullman, Introduction to Automata
 Theory, Languages, and Computation, 3rd ed., Section 10.3. -/
 theorem isRegular_encodedWords :
@@ -225,7 +225,7 @@ theorem isRegular_encodedWords :
     show endMarkerDFA.evalFrom (Sum.inl false) (endMarkerEncode w) = Sum.inl true
     exact endMarkerDFA_evalFrom_encode w
 
-/-- **Deterministic context-free language.** A language is deterministic context-free when some deterministic
+/-- A language is deterministic context-free when some deterministic
 pushdown automaton with finite state and stack alphabets, whose
 transitions consume letters from a finite set, accepts by empty stack
 exactly the end-marker encodings of its words.
@@ -240,7 +240,7 @@ def IsDeterministicContextFree (L : Language T) : Prop :=
         a ∉ T₀ → M.step p (some a) γ = ∅) ∧
       M.accepts = (fun w : List T => endMarkerEncode w) '' L
 
-/-- **Deterministic context-free languages are context-free.** Every deterministic context-free language is context-free: the
+/-- Every deterministic context-free language is context-free: the
 encoded language is accepted by a pushdown automaton, hence
 context-free; intersecting with the regular language of encodings and
 erasing the end marker recovers the original language.

@@ -53,13 +53,13 @@ open scoped Nat
 
 namespace ProbabilityTheory
 
-/-- **Negative binomial mass function with real shape.** Negative binomial mass `P(X = k) = r^{(k)} / k! · p ^ r · (1 - p) ^ k` with real shape `r`
+/-- Negative binomial mass `P(X = k) = r^{(k)} / k! · p ^ r · (1 - p) ^ k` with real shape `r`
 (rising factorial `r^{(k)} = (ascPochhammer ℝ k).eval r`) and success probability `p`, using the
 real power `p ^ r`. A probability mass function for `r > 0` and `p ∈ (0, 1]`. -/
 noncomputable def negBinomialPMF (r p : ℝ) (k : ℕ) : ℝ :=
   (ascPochhammer ℝ k).eval r / k ! * p ^ r * (1 - p) ^ k
 
-/-- **Beta-binomial mass function.** Beta-binomial mass `C(n, k) α^{(k)} β^{(n - k)} / (α + β)^{(n)}` (zero for `k > n`, since
+/-- Beta-binomial mass `C(n, k) α^{(k)} β^{(n - k)} / (α + β)^{(n)}` (zero for `k > n`, since
 `C(n, k) = 0`). A probability mass function for `α, β > 0`. -/
 noncomputable def betaBinomialPMF (n : ℕ) (α β : ℝ) (k : ℕ) : ℝ :=
   (n.choose k : ℝ) * (ascPochhammer ℝ k).eval α * (ascPochhammer ℝ (n - k)).eval β /
@@ -94,7 +94,7 @@ theorem ascPochhammer_eval_add_eq_sum (α β : ℝ) (n : ℕ) :
       ring
   simpa only [Finset.Nat.sum_antidiagonal_eq_sum_range_succ_mk, mul_assoc] using h n
 
-/-- **Beta-binomial masses sum to one.** The beta-binomial masses sum to one for `α, β > 0`. -/
+/-- The beta-binomial masses sum to one for `α, β > 0`. -/
 theorem sum_betaBinomialPMF (n : ℕ) {α β : ℝ} (hα : 0 < α) (hβ : 0 < β) :
     ∑ k ∈ range (n + 1), betaBinomialPMF n α β k = 1 := by
   unfold betaBinomialPMF
@@ -108,7 +108,7 @@ private theorem choose_eq_ascPochhammer_div (r : ℝ) (k : ℕ) :
   simpa only [nsmul_eq_mul, Polynomial.ascPochhammer_smeval_eq_eval, mul_comm] using
     Ring.factorial_nsmul_multichoose_eq_ascPochhammer r k
 
-/-- **Negative binomial masses sum to one.** The negative binomial masses sum to one for `r > 0` and `p ∈ (0, 1]` (the binomial series
+/-- The negative binomial masses sum to one for `r > 0` and `p ∈ (0, 1]` (the binomial series
 `∑ₖ r^{(k)} xᵏ / k! = (1 - x)^{-r}` at `x = 1 - p`). -/
 theorem hasSum_negBinomialPMF {r p : ℝ} (hr : 0 < r) (hp : 0 < p) (hp1 : p ≤ 1) :
     HasSum (negBinomialPMF r p) 1 := by

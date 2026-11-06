@@ -45,24 +45,24 @@ namespace MathlibExt.LinearAlgebra.Matrix.CirculantSpectrum
 
 variable {n : ℕ} [NeZero n]
 
-/-- **Standard primitive n-th root of unity $e^{2\pi i/n}$.** The exponential `exp (2 * π * I / n)`, a primitive `n`-th root for nonzero `n`.
+/-- The exponential `exp (2 * π * I / n)`, a primitive `n`-th root for nonzero `n`.
 This definition is total: at `n = 0`, it is `exp 0 = 1`. -/
 noncomputable def zeta (n : ℕ) : ℂ := Complex.exp (2 * Real.pi * Complex.I / n)
 
-/-- **Standard root of unity as the standard additive character.** For nonzero `n`, `zeta n` is the canonical standard character at `1`. -/
+/-- For nonzero `n`, `zeta n` is the canonical standard character at `1`. -/
 public theorem zeta_eq_stdAddChar : zeta n = ZMod.stdAddChar (1 : ZMod n) :=
   MathlibExt.Analysis.Fourier.FastFourierTransformWanted.stdAddChar_one_eq_exp.symm
 
-/-- **$e^{2\pi i/n}$ is a primitive n-th root of unity.** For nonzero `n`, the exponential is a primitive `n`-th root of unity. -/
+/-- For nonzero `n`, the exponential is a primitive `n`-th root of unity. -/
 public theorem zeta_isPrimitiveRoot : IsPrimitiveRoot (zeta n) n := by
   rw [zeta_eq_stdAddChar]
   exact MathlibExt.Analysis.Fourier.FastFourierTransformWanted.isPrimitiveRoot_stdAddChar_one
 
-/-- **Fourier vector on the integers modulo n.** The `j`-th Fourier vector on `ZMod n`, using the canonical positive character. -/
+/-- The `j`-th Fourier vector on `ZMod n`, using the canonical positive character. -/
 noncomputable def fourierVec (n : ℕ) [NeZero n] (j : ZMod n) : ZMod n → ℂ :=
   fun i => ZMod.stdAddChar (i * j)
 
-/-- **Exponential formula for Fourier vectors.** The character definition of a Fourier vector agrees with its exponential formula. -/
+/-- The character definition of a Fourier vector agrees with its exponential formula. -/
 public theorem fourierVec_apply (j i : ZMod n) :
     fourierVec n j i = zeta n ^ (i.val * j.val) := by
   rw [zeta_eq_stdAddChar, ← AddChar.mulShift_spec', AddChar.mulShift_apply,
@@ -76,16 +76,16 @@ private theorem stdAddChar_neg_mul (i j : ZMod n) :
     zpow_neg, show (i.val * j.val : ℤ) = ((i.val * j.val : ℕ) : ℤ) by push_cast; rfl,
     zpow_natCast]
 
-/-- **Fourier eigenvalue of a circulant matrix.** The `j`-th Fourier eigenvalue of a circulant matrix is its canonical DFT. -/
+/-- The `j`-th Fourier eigenvalue of a circulant matrix is its canonical DFT. -/
 noncomputable def circulantEigenvalue (n : ℕ) [NeZero n] (v : ZMod n → ℂ) (j : ZMod n) : ℂ :=
   ZMod.dft v j
 
-/-- **Exponential-sum formula for circulant eigenvalues.** The canonical DFT definition agrees with the original negative-exponent eigenvalue sum. -/
+/-- The canonical DFT definition agrees with the original negative-exponent eigenvalue sum. -/
 public theorem circulantEigenvalue_apply (v : ZMod n → ℂ) (j : ZMod n) :
     circulantEigenvalue n v j = ∑ k, v k * zeta n ^ (-(k.val * j.val : ℤ)) := by
   simp only [circulantEigenvalue, ZMod.dft_apply, smul_eq_mul, stdAddChar_neg_mul, mul_comm]
 
-/-- **Fourier vectors are eigenvectors of circulant matrices.** Every Fourier vector is an eigenvector of every circulant matrix. -/
+/-- Every Fourier vector is an eigenvector of every circulant matrix. -/
 public theorem circulant_mulVec_fourierVec (v : ZMod n → ℂ) (j : ZMod n) :
     Matrix.mulVec (Matrix.circulant v) (fourierVec n j) =
       circulantEigenvalue n v j • fourierVec n j := by
@@ -103,25 +103,25 @@ public theorem circulant_mulVec_fourierVec (v : ZMod n → ℂ) (j : ZMod n) :
   rw [sub_mul, AddChar.map_sub_eq_div, AddChar.map_neg_eq_inv]
   ring
 
-/-- **Fourier matrix.** The Fourier matrix, whose `j`-th column is the standard character `fourierVec n j`. -/
+/-- The Fourier matrix, whose `j`-th column is the standard character `fourierVec n j`. -/
 noncomputable def fourierMatrix (n : ℕ) [NeZero n] : Matrix (ZMod n) (ZMod n) ℂ :=
   fun i j => fourierVec n j i
 
-/-- **Entrywise exponential formula for the Fourier matrix.** The Fourier matrix agrees entrywise with its original exponential formula. -/
+/-- The Fourier matrix agrees entrywise with its original exponential formula. -/
 public theorem fourierMatrix_apply (i j : ZMod n) :
     fourierMatrix n i j = zeta n ^ (i.val * j.val) :=
   fourierVec_apply j i
 
-/-- **Inverse Fourier matrix.** The inverse Fourier matrix, `(1 / n)` times the negative standard character. -/
+/-- The inverse Fourier matrix, `(1 / n)` times the negative standard character. -/
 noncomputable def fourierMatrixInv (n : ℕ) [NeZero n] : Matrix (ZMod n) (ZMod n) ℂ :=
   fun i j => (n : ℂ)⁻¹ * ZMod.stdAddChar (-(i * j))
 
-/-- **Entrywise exponential formula for the inverse Fourier matrix.** The inverse Fourier matrix agrees entrywise with its original exponential formula. -/
+/-- The inverse Fourier matrix agrees entrywise with its original exponential formula. -/
 public theorem fourierMatrixInv_apply (i j : ZMod n) :
     fourierMatrixInv n i j = (1 / (n : ℂ)) * zeta n ^ (-(i.val * j.val : ℤ)) := by
   rw [fourierMatrixInv, stdAddChar_neg_mul, one_div]
 
-/-- **Fourier matrix acts as n times the inverse DFT.** Fourier matrix multiplication is the canonical inverse DFT multiplied by `n`. -/
+/-- Fourier matrix multiplication is the canonical inverse DFT multiplied by `n`. -/
 public theorem fourierMatrix_mulVec_eq_invDFT (v : ZMod n → ℂ) :
     Matrix.mulVec (fourierMatrix n) v = (n : ℂ) • ZMod.dft.symm v := by
   funext i
@@ -130,14 +130,14 @@ public theorem fourierMatrix_mulVec_eq_invDFT (v : ZMod n → ℂ) :
     ZMod.invDFT_apply, smul_eq_mul, ← mul_assoc, mul_inv_cancel₀ hn, one_mul]
   simp only [mul_comm i]
 
-/-- **Inverse Fourier matrix acts as the DFT divided by n.** Inverse Fourier matrix multiplication is the canonical DFT divided by `n`. -/
+/-- Inverse Fourier matrix multiplication is the canonical DFT divided by `n`. -/
 public theorem fourierMatrixInv_mulVec_eq_dft (v : ZMod n → ℂ) :
     Matrix.mulVec (fourierMatrixInv n) v = (n : ℂ)⁻¹ • ZMod.dft v := by
   funext i
   simp only [Matrix.mulVec_apply_eq_sum, fourierMatrixInv, Pi.smul_apply,
     ZMod.dft_apply, smul_eq_mul, Finset.mul_sum, mul_comm i, mul_assoc]
 
-/-- **Fourier matrix times its inverse is the identity.** The Fourier matrix is invertible, with inverse `fourierMatrixInv`. -/
+/-- The Fourier matrix is invertible, with inverse `fourierMatrixInv`. -/
 public theorem fourierMatrix_mul_inv :
     fourierMatrix n * fourierMatrixInv n = (1 : Matrix (ZMod n) (ZMod n) ℂ) := by
   apply Matrix.ext_iff_mulVec.mpr
@@ -147,7 +147,7 @@ public theorem fourierMatrix_mul_inv :
     fourierMatrixInv_mulVec_eq_dft, map_smul, ZMod.dft.symm_apply_apply,
     smul_smul, mul_inv_cancel₀ hn, one_smul, Matrix.one_mulVec]
 
-/-- **Circulant matrices are diagonalized by the Fourier matrix.** Circulant matrices are diagonalized by the Fourier matrix. -/
+/-- Circulant matrices are diagonalized by the Fourier matrix. -/
 public theorem circulant_mul_fourierMatrix (v : ZMod n → ℂ) :
     Matrix.circulant v * fourierMatrix n =
       fourierMatrix n * Matrix.diagonal (circulantEigenvalue n v) := by
@@ -168,7 +168,7 @@ public theorem circulant_mul_fourierMatrix (v : ZMod n → ℂ) :
         simp only [fourierMatrix, Matrix.diagonal_apply]
         rw [ite_true, mul_comm]
 
-/-- **Determinant of a circulant matrix.** The determinant of a circulant matrix is the product of its Fourier eigenvalues. -/
+/-- The determinant of a circulant matrix is the product of its Fourier eigenvalues. -/
 public theorem det_circulant (v : ZMod n → ℂ) :
     (Matrix.circulant v).det = ∏ j, circulantEigenvalue n v j := by
   have hC : Matrix.circulant v =
@@ -183,12 +183,12 @@ public theorem det_circulant (v : ZMod n → ℂ) :
     mul_comm (fourierMatrix n).det, mul_assoc, ← Matrix.det_mul, fourierMatrix_mul_inv,
     Matrix.det_one, mul_one]
 
-/-- **Zeroth circulant eigenvalue is the sum of entries.** The Fourier eigenvalue at `j = 0` is the sum of the entries of `v`. -/
+/-- The Fourier eigenvalue at `j = 0` is the sum of the entries of `v`. -/
 public theorem circulantEigenvalue_zero (v : ZMod n → ℂ) :
     circulantEigenvalue n v 0 = ∑ k, v k :=
   ZMod.dft_apply_zero v
 
-/-- **Sum of the eigenvalues of a circulant matrix.** The Fourier eigenvalues sum to `n * v 0`. -/
+/-- The Fourier eigenvalues sum to `n * v 0`. -/
 public theorem sum_circulantEigenvalue (v : ZMod n → ℂ) :
     ∑ j, circulantEigenvalue n v j = (n : ℂ) * v 0 := by
   have h := congrFun (ZMod.dft_dft v) 0

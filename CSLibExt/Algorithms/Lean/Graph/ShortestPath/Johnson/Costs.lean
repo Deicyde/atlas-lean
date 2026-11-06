@@ -199,10 +199,7 @@ private lemma johnson_time_of_distances {n : Nat} (edges : List (Edge n))
     prepare_time, runRows_time, augmented_length]
   ring
 
-/-- **Exact cost of a successful run of Johnson's algorithm.** Let $E$ be a list of $m$ directed
-edges on the vertices $\{0, \dots, n-1\}$ with integer weights. If Johnson's algorithm on $E$
-returns a table, then its counted cost is exactly
-$n^3 + nm + (n+1)(m+n) + 2n^2 + 4m + 5n + 1$. -/
+/-- Successful Johnson executions have exactly the selected construction, scan and decode cost. -/
 public theorem johnson_time_of_success {n : Nat} (edges : List (Edge n))
     (distance : Fin n → Fin n → WithTop Int) (run : (johnson edges).ret = some distance) :
     (johnson edges).time = n^3 + n*edges.length + (n+1)*(edges.length+n) +
@@ -211,10 +208,7 @@ public theorem johnson_time_of_success {n : Nat} (edges : List (Edge n))
   | distances result => exact johnson_time_of_distances edges result bf_run
   | negativeCycle witness => simp [johnson, bf_run] at run
 
-/-- **Cost bound for Johnson's algorithm.** For every list $E$ of $m$ directed edges on the
-vertices $\{0, \dots, n-1\}$ with integer weights, the counted cost of Johnson's algorithm on
-$E$, including the case where it extracts a negative cycle, is at most
-$n^3 + nm + (n+1)(m+n) + 2n^2 + 4m + 5n + 1 + 3(n+1)$. -/
+/-- All Johnson executions obey the selected-event bound, including negative-cycle extraction. -/
 public theorem johnson_time_le {n : Nat} (edges : List (Edge n)) :
     (johnson edges).time ≤ n^3 + n*edges.length + (n+1)*(edges.length+n) +
       2*n^2 + 4*edges.length + 5*n + 1 + 3*(n+1) := by

@@ -63,7 +63,7 @@ open scoped ContinuousLinearMap
 
 variable {𝕜 : Type*} [RCLike 𝕜]
 
-/-- **Approximation property.** A normed space has the **approximation property** if, on every compact
+/-- A normed space has the **approximation property** if, on every compact
 set, the identity operator is a uniform limit of finite-rank continuous
 linear operators. -/
 def HasApproximationProperty (𝕜 E : Type*) [RCLike 𝕜] [NormedAddCommGroup E]
@@ -72,7 +72,7 @@ def HasApproximationProperty (𝕜 E : Type*) [RCLike 𝕜] [NormedAddCommGroup 
     ∃ T : E →L[𝕜] E, FiniteDimensional 𝕜 ↥(LinearMap.range T.toLinearMap) ∧
       ∀ x ∈ K, ‖T x - x‖ < ε
 
-/-- **Finite-dimensional spaces have the approximation property.** Finite-dimensional spaces have the approximation property: the identity
+/-- Finite-dimensional spaces have the approximation property: the identity
 operator is itself finite-rank. -/
 theorem hasApproximationProperty_of_finiteDimensional (E : Type*)
     [NormedAddCommGroup E] [NormedSpace 𝕜 E] [FiniteDimensional 𝕜 E] :
@@ -85,7 +85,7 @@ theorem hasApproximationProperty_of_finiteDimensional (E : Type*)
     infer_instance
   · simp [sub_self, hε]
 
-/-- **Banach spaces with a Schauder basis have the approximation property.** A Banach space with a Schauder basis has the approximation property.
+/-- A Banach space with a Schauder basis has the approximation property.
 The partial-sum projections are finite-rank, converge pointwise to the
 identity, and are uniformly bounded by the Banach–Steinhaus theorem
 (`SchauderBasis.exists_norm_proj_le`); pointwise convergence plus uniform
@@ -155,7 +155,7 @@ theorem hasApproximationProperty_of_schauderBasis {E : Type*} [NormedAddCommGrou
           field_simp
           ring
 
-/-- **Approximation property is invariant under linear isomorphism.** The approximation property is preserved under continuous linear
+/-- The approximation property is preserved under continuous linear
 equivalence: conjugate a finite-rank approximant by the equivalence. -/
 theorem HasApproximationProperty.of_continuousLinearEquiv {E F : Type*}
     [NormedAddCommGroup E] [NormedSpace 𝕜 E] [NormedAddCommGroup F] [NormedSpace 𝕜 F]
@@ -205,7 +205,7 @@ theorem HasApproximationProperty.of_continuousLinearEquiv {E F : Type*}
           mul_lt_mul_of_pos_right (lt_add_one _) hε'
       _ = ε := by field_simp
 
-/-- **Approximation property passes to complemented subspaces.** The approximation property passes to complemented subspaces: if `P` is a
+/-- The approximation property passes to complemented subspaces: if `P` is a
 continuous projection onto the submodule `F`, restrict a finite-rank
 approximant on the ambient space via `P`. The key point is that `P` fixes
 every point of `F`, so `P (S x) - x = P (S x - x)` for `x ∈ F`. -/
@@ -276,7 +276,7 @@ theorem HasApproximationProperty.of_complemented {E : Type*} [NormedAddCommGroup
           mul_lt_mul_of_pos_right (lt_add_one _) hε'
       _ = ε := by field_simp
 
-/-- **Separable Hilbert spaces have the approximation property.** A Hilbert space with a Hilbert basis indexed by `ℕ` has the approximation
+/-- A Hilbert space with a Hilbert basis indexed by `ℕ` has the approximation
 property, via the associated Schauder basis
 (`HilbertBasis.toSchauderBasis`). -/
 theorem hasApproximationProperty_of_hilbertBasis {E : Type*} [NormedAddCommGroup E]

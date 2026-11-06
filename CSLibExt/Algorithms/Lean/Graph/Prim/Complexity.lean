@@ -449,24 +449,14 @@ namespace Cslib.Algorithms.Lean.Prim
 
 universe u
 
-/-- **Number of adjacency inspections in Prim's algorithm.** Let $W$ be a linearly ordered type
-with a zero element, let $D$ be a directed adjacency structure on the vertices $0, \dots, n-1$
-with adjacency lists $A(u)$, let $w$ assign a weight in $W$ to every unordered pair of vertices,
-not necessarily distinct, and let $r$ be a vertex. The number of adjacency entries inspected by
-Prim's algorithm on $D$, $w$ and $r$ equals the sum of the lengths $|A(u)|$ over all vertices
-$u$. -/
+/-- Each adjacency occurrence is inspected exactly once. -/
 public theorem prim_inspections {W : Type u} [LinearOrder W] [Zero W] {n : Nat}
     (graph : DirectedAdjacency (Fin n)) (weight : Sym2 (Fin n) → W) (root : Fin n) :
     (prim graph weight root).time.2.1 =
       (graph.vertices.map (fun v => (graph.adjacency v).length)).sum :=
   Cslib.Algorithms.Lean.Prim.worker_inspections graph weight root
 
-/-- **Bound on key comparisons in Prim's algorithm.** Let $W$ be a linearly ordered type with a
-zero element, let $D$ be a directed adjacency structure on the vertices $0, \dots, n-1$ with
-adjacency lists $A(u)$, let $w$ assign a weight in $W$ to every unordered pair of vertices, not
-necessarily distinct, and let $r$ be a vertex. The number of inspected adjacency entries that
-Prim's algorithm on $D$, $w$ and $r$ finds still in the queue, which is its number of key
-comparisons, is at most the sum of the lengths $|A(u)|$ over all vertices $u$. -/
+/-- A key comparison occurs only on a successful membership test. -/
 public theorem prim_key_tests_le {W : Type u} [LinearOrder W] [Zero W] {n : Nat}
     (graph : DirectedAdjacency (Fin n)) (weight : Sym2 (Fin n) → W) (root : Fin n) :
     (prim graph weight root).time.2.2 ≤
@@ -475,13 +465,7 @@ public theorem prim_key_tests_le {W : Type u} [LinearOrder W] [Zero W] {n : Nat}
   rw [Cslib.Algorithms.Lean.Prim.worker_inspections graph weight root] at h
   exact h
 
-/-- **Logarithmic heap cost of Prim's algorithm.** Let $W$ be a linearly ordered type with a zero
-element, let $D$ be a directed adjacency structure on the vertices $0, \dots, n-1$ with adjacency
-lists $A(u)$, let $w$ assign a weight in $W$ to every unordered pair of vertices, not necessarily
-distinct, let $r$ be a vertex, and let $a$ be the sum of the lengths $|A(u)|$ over all vertices
-$u$. Each of the five heap event counts of Prim's algorithm on $D$, $w$ and $r$ (comparisons,
-swaps, reads of the position vector, writes to the position vector, and entry appends, pops or
-replacements) is at most $20(2n + a)(\lfloor \log_2(n + 1) \rfloor + 1) + a$. -/
+/-- Every actual heap-event coordinate has the stated logarithmic bound. -/
 public theorem prim_heap_time {W : Type u} [LinearOrder W] [Zero W] {n : Nat}
     (graph : DirectedAdjacency (Fin n)) (weight : Sym2 (Fin n) → W) (root : Fin n) :
     let a := (graph.vertices.map (fun v => (graph.adjacency v).length)).sum
@@ -493,14 +477,7 @@ public theorem prim_heap_time {W : Type u} [LinearOrder W] [Zero W] {n : Nat}
   rw [Cslib.Algorithms.Lean.Prim.worker_inspections graph weight root] at h
   exact h
 
-/-- **Adjacency inspections of Prim's algorithm on a simple graph.** Let $W$ be a linearly
-ordered type with a zero element, let $G$ be a simple graph on the vertices $0, \dots, n-1$, let
-$D$ be a directed adjacency structure on the same vertices with adjacency lists $A(u)$, let $w$
-assign a weight in $W$ to every unordered pair of vertices, not necessarily distinct, and let
-$r$ be a vertex. Suppose that for all vertices $u$ and $v$, $v$ occurs in $A(u)$ exactly when
-$u$ and $v$ are adjacent in $G$, and that no list $A(u)$ has repeated entries. Then the number
-of adjacency entries inspected by Prim's algorithm on $D$, $w$ and $r$ is twice the number of
-edges of $G$. -/
+/-- Exact duplicate-free undirected adjacency gives exactly two inspections per edge. -/
 public theorem prim_edge_inspections {W : Type u} [LinearOrder W] [Zero W] {n : Nat}
     (graph : DirectedAdjacency (Fin n)) (G : SimpleGraph (Fin n))
     (weight : Sym2 (Fin n) → W) (root : Fin n) : by

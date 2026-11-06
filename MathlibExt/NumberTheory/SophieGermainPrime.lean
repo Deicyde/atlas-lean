@@ -32,26 +32,23 @@ restriction is imposed, so `p = 2` is included.
 
 namespace Nat
 
-/-- **Sophie Germain primes.** A natural number $p$ is a Sophie Germain prime if $p$ is prime and
-$2p + 1$ is prime. The case $p = 2$ is not excluded.
-
-Source: arXiv:2311.13375, lines 83–85. -/
+/-- A natural number `p` is a **Sophie Germain prime** if `p` is prime and
+`2 * p + 1` is prime. This formalizes the definition in arXiv:2311.13375,
+lines 83–85, which does not exclude `p = 2`. -/
 def IsSophieGermainPrime (p : ℕ) : Prop :=
   Nat.Prime p ∧ Nat.Prime (2 * p + 1)
 
-/-- **Characterization of Sophie Germain primes.** A natural number $p$ is a Sophie Germain prime
-if and only if $p$ is prime and $2p + 1$ is prime. -/
+/-- Definitional characterization of Sophie Germain primes. -/
 theorem isSophieGermainPrime_iff (p : ℕ) :
     IsSophieGermainPrime p ↔ Nat.Prime p ∧ Nat.Prime (2 * p + 1) :=
   Iff.rfl
 
-/-- **Sophie Germain primes are prime.** If $p$ is a Sophie Germain prime, then $p$ is prime. -/
+/-- A Sophie Germain prime is prime. -/
 theorem IsSophieGermainPrime.prime {p : ℕ} (h : IsSophieGermainPrime p) :
     Nat.Prime p :=
   h.1
 
-/-- **Safe prime of a Sophie Germain prime.** If $p$ is a Sophie Germain prime, then $2p + 1$ is
-prime. -/
+/-- The associated safe prime `2 * p + 1` of a Sophie Germain prime is prime. -/
 theorem IsSophieGermainPrime.prime_two_mul_add_one {p : ℕ} (h : IsSophieGermainPrime p) :
     Nat.Prime (2 * p + 1) :=
   h.2

@@ -45,7 +45,7 @@ variable {𝕜 : Type*} [RCLike 𝕜]
 variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
 variable {ι : Type*}
 
-/-- **Bounded diagonal operator on a Hilbert basis.** The bounded diagonal continuous linear map with coefficients `a` in the
+/-- The bounded diagonal continuous linear map with coefficients `a` in the
 Hilbert basis `b`. Its uniform coefficient bound is part of the constructor. -/
 noncomputable def diagonalOperator (b : HilbertBasis ι 𝕜 H) (a : ι → 𝕜) {C : ℝ}
     (hC : ∀ i, ‖a i‖ ≤ C) : H →L[𝕜] H :=
@@ -80,28 +80,15 @@ private theorem diagonalOperator_eq_repr_symm {b : HilbertBasis ι 𝕜 H} {a : 
   ext i
   simp [diagonalOperator, lp.mapCLM_apply_coe, HilbertBasis.repr_apply_apply]
 
-/-- **Coordinates of a diagonal operator.** Let $(b_i)_{i \in \iota}$ be a Hilbert basis of an inner
-product space $H$ over $\mathbb{K}$ ($\mathbb{R}$ or $\mathbb{C}$), with inner product
-$\langle \cdot, \cdot \rangle$ conjugate-linear in the first argument, let
-$a : \iota \to \mathbb{K}$ satisfy $|a_i| \le C$ for all $i$, and let $D$ be the diagonal operator
-with coefficients $a$. For every $x \in H$ and $i \in \iota$, the $i$-th coordinate of $D x$ in
-$\ell^2(\iota)$ with respect to the basis $(b_i)$ is $a_i \langle b_i, x \rangle$. -/
+/-- The `repr` coordinates of the diagonal operator. -/
 theorem repr_diagonalOperator_apply {b : HilbertBasis ι 𝕜 H} {a : ι → 𝕜} {C : ℝ}
     (hC : ∀ i, ‖a i‖ ≤ C) (x : H) (i : ι) :
     b.repr (diagonalOperator b a hC x) i = a i * ⟪b i, x⟫_𝕜 := by
   rw [diagonalOperator_eq_repr_symm hC x]
   simp [LinearIsometryEquiv.apply_symm_apply]
 
-/-- **Series formula for a diagonal operator.** Let $(b_i)_{i \in \iota}$ be a Hilbert basis of an
-inner product space $H$ over $\mathbb{K}$ ($\mathbb{R}$ or $\mathbb{C}$), with inner product
-$\langle \cdot, \cdot \rangle$ conjugate-linear in the first argument, and let
-$a : \iota \to \mathbb{K}$ satisfy $|a_i| \le C$ for all $i$. The diagonal operator $D$ with
-coefficients $a$ satisfies, for every $x \in H$,
-$$
-D x = \sum_{i \in \iota} a_i \langle b_i, x \rangle \, b_i,
-$$
-where the sum is the unconditional sum over $\iota$ (taken to be $0$ if the family is not
-summable). -/
+/-- The series formula for a bounded diagonal map is a genuine convergent
+Hilbert-basis expansion. -/
 theorem diagonalOperator_eq_tsum {b : HilbertBasis ι 𝕜 H} {a : ι → 𝕜} {C : ℝ}
     (hC : ∀ i, ‖a i‖ ≤ C) (x : H) :
     diagonalOperator b a hC x = ∑' i, (a i * ⟪b i, x⟫_𝕜) • b i := by
@@ -109,10 +96,7 @@ theorem diagonalOperator_eq_tsum {b : HilbertBasis ι 𝕜 H} {a : ι → 𝕜} 
   exact (b.hasSum_repr_symm
     ⟨fun i => a i * ⟪b i, x⟫_𝕜, memℓp_diagonal_coeff hC x⟩).tsum_eq.symm
 
-/-- **Action of a diagonal operator on the basis.** Let $(b_i)_{i \in \iota}$ be a Hilbert
-basis of an inner product space $H$ over $\mathbb{K}$ ($\mathbb{R}$ or $\mathbb{C}$), let
-$a : \iota \to \mathbb{K}$ satisfy $|a_i| \le C$ for all $i$, and let $D$ be the diagonal
-operator with coefficients $a$. Then $D b_j = a_j b_j$ for every $j \in \iota$. -/
+/-- A diagonal operator acts on basis vectors by scalar multiplication. -/
 theorem diagonalOperator_apply_basis {b : HilbertBasis ι 𝕜 H} {a : ι → 𝕜} {C : ℝ}
     (hC : ∀ i, ‖a i‖ ≤ C) (j : ι) :
     diagonalOperator b a hC (b j) = a j • b j := by
@@ -124,12 +108,7 @@ theorem diagonalOperator_apply_basis {b : HilbertBasis ι 𝕜 H} {a : ι → �
   · intro i hi
     rw [b.orthonormal.inner_eq_zero hi, mul_zero, zero_smul]
 
-/-- **Square of a diagonal operator.** Let $(b_i)_{i \in \iota}$ be a Hilbert basis of an
-inner product space $H$ over $\mathbb{K}$ ($\mathbb{R}$ or $\mathbb{C}$), and let
-$a : \iota \to \mathbb{K}$ satisfy $|a_i| \le C$ for all $i$. Let $D_a$ be the diagonal
-operator with coefficients $a$, and let $D_{a^2}$ be the diagonal operator with coefficients
-$a_i^2$, which satisfy $|a_i^2| \le C^2$. Then $D_a(D_a x) = D_{a^2} x$ for every
-$x \in H$. -/
+/-- A bounded diagonal operator squared is the diagonal operator with squared coefficients. -/
 theorem diagonalOperator_sq {b : HilbertBasis ι 𝕜 H} {a : ι → 𝕜} {C : ℝ}
     (hC : ∀ i, ‖a i‖ ≤ C) (x : H) :
     diagonalOperator b a hC (diagonalOperator b a hC x) =

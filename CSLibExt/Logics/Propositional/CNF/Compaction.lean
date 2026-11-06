@@ -30,7 +30,7 @@ namespace Cslib.Logic.PL
 
 namespace CNF
 
-/-- **Model count of a CNF formula.** The number of Boolean assignments to the variables occurring in a formula that satisfy it. -/
+/-- The number of Boolean assignments to the variables occurring in a formula that satisfy it. -/
 def modelCount (formula : CNF) : Nat :=
   letI (assignment : {x // x ∈ formula.vars} → Bool) : Decidable
       (formula.Satisfies fun x => if h : x ∈ formula.vars then assignment ⟨x, h⟩ else false) := by
@@ -44,28 +44,28 @@ theorem modelCount_nil : modelCount [] = 1 := by
   classical
   simp [modelCount]
 
-/-- **Exact variable compaction of a CNF formula.** Rename every occurring variable by its position in the last-occurrence list. -/
+/-- Rename every occurring variable by its position in the last-occurrence list. -/
 def compact (formula : CNF) : CNF :=
   let names := (formula.flatMap fun clause => clause.map Prod.fst).dedup
   formula.map fun clause => clause.map fun literal => (names.idxOf literal.1, literal.2)
 
-/-- **Compaction preserves the number of clauses.** Compaction preserves the number of clauses. -/
+/-- Compaction preserves the number of clauses. -/
 @[simp]
 theorem length_compact (formula : CNF) : formula.compact.length = formula.length := by
   simp [compact]
 
-/-- **Compaction preserves clause lengths.** Compaction preserves every clause length, in the original clause order. -/
+/-- Compaction preserves every clause length, in the original clause order. -/
 theorem clauseLengths_compact (formula : CNF) :
     formula.compact.map List.length = formula.map List.length := by
   simp [compact]
 
-/-- **Compaction preserves clause-length bounds.** Compaction preserves every upper bound on clause length. -/
+/-- Compaction preserves every upper bound on clause length. -/
 theorem boundedClauseLength_compact_iff (formula : CNF) (k : Nat) :
     (∀ clause ∈ formula.compact, clause.length ≤ k) ↔
       ∀ clause ∈ formula, clause.length ≤ k := by
   simp [compact]
 
-/-- **Compaction preserves absence of duplicate clauses.** Compaction preserves the absence of duplicate clauses. -/
+/-- Compaction preserves the absence of duplicate clauses. -/
 theorem nodup_compact_iff (formula : CNF) :
     formula.compact.Nodup ↔ formula.Nodup := by
   let L := (formula.flatMap fun clause => clause.map Prod.fst).dedup
@@ -88,7 +88,7 @@ theorem nodup_compact_iff (formula : CNF) :
     refine hnodup.map_on fun clause hclause other hother heq => ?_
     rw [← mapBack clause hclause, ← mapBack other hother, heq]
 
-/-- **Variables of a compacted formula form an initial range.** The variables of a compacted formula are exactly its dense initial range. -/
+/-- The variables of a compacted formula are exactly its dense initial range. -/
 theorem vars_compact (formula : CNF) :
     formula.compact.vars = Finset.range formula.vars.card := by
   let L := (formula.flatMap fun clause => clause.map Prod.fst).dedup
@@ -130,7 +130,7 @@ theorem vars_compact (formula : CNF) :
       refine ⟨(x, polarity), hliteral, Prod.ext ?_ rfl⟩
       exact hnodup.idxOf_getElem j hjL
 
-/-- **Satisfaction is preserved by variable compaction.** Satisfaction after compaction is satisfaction before compaction with names translated by
+/-- Satisfaction after compaction is satisfaction before compaction with names translated by
 their exact last-occurrence positions. -/
 theorem satisfies_compact_iff (formula : CNF) (assignment : Nat → Bool) :
     formula.compact.Satisfies assignment ↔
@@ -150,7 +150,7 @@ theorem satisfies_compact_iff (formula : CNF) (assignment : Nat → Bool) :
     obtain ⟨literal, hliteral, heq⟩ := hsatisfies clause hclause
     exact ⟨rename literal, List.mem_map_of_mem hliteral, heq⟩
 
-/-- **Variable compaction preserves the model count.** Exact variable compaction preserves the number of assignments to the occurring variables. -/
+/-- Exact variable compaction preserves the number of assignments to the occurring variables. -/
 theorem modelCount_compact (formula : CNF) :
     formula.compact.modelCount = formula.modelCount := by
   classical
@@ -230,7 +230,7 @@ theorem modelCount_compact (formula : CNF) :
     (assignmentEquiv.symm.subtypeEquiv fun a => by
       simpa using (hassignment (assignmentEquiv.symm a)).symm)
 
-/-- **Counting satisfying assignments over a larger variable range.** If every occurring name is below `N`, the count over all `Fin N` assignments is the support
+/-- If every occurring name is below `N`, the count over all `Fin N` assignments is the support
 count times one Boolean choice for each unused ambient variable. -/
 theorem card_satisfying_fin (formula : CNF) (N : Nat)
     (hvars : ∀ x ∈ formula.vars, x < N) :

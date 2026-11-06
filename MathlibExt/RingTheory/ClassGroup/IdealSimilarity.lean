@@ -36,8 +36,7 @@ namespace IdealFactorization
 
 variable {R : Type*} [CommRing R] [IsDedekindDomain R]
 
-/-- **Similar ideals.** Let $R$ be a Dedekind domain. Two nonzero ideals $I$ and $J$ of $R$ are
-similar when their classes in the ideal class group of $R$ are equal. -/
+/-- The source name for equality of the classes of two nonzero ideals. -/
 abbrev IdealsSimilar (I J : (Ideal R)⁰) : Prop := ClassGroup.mk0 I = ClassGroup.mk0 J
 
 end IdealFactorization

@@ -38,10 +38,10 @@ open ConfigSpace Function
 
 variable {E : Type*} [DecidableEq E]
 
-/-- **Opening a coordinate of a configuration.** `setOpen e ω` is `ω` with coordinate `e` set to `true` (open). -/
+/-- `setOpen e ω` is `ω` with coordinate `e` set to `true` (open). -/
 def setOpen (e : E) (ω : ConfigSpace E) : ConfigSpace E := Function.update ω e true
 
-/-- **Closing a coordinate of a configuration.** `setClosed e ω` is `ω` with coordinate `e` set to `false` (closed). -/
+/-- `setClosed e ω` is `ω` with coordinate `e` set to `false` (closed). -/
 def setClosed (e : E) (ω : ConfigSpace E) : ConfigSpace E := Function.update ω e false
 
 @[simp] lemma setOpen_self (e : E) (ω : ConfigSpace E) : setOpen e ω e = true :=
@@ -56,14 +56,14 @@ lemma setOpen_of_ne {e e' : E} (h : e' ≠ e) (ω : ConfigSpace E) :
 lemma setClosed_of_ne {e e' : E} (h : e' ≠ e) (ω : ConfigSpace E) :
     setClosed e ω e' = ω e' := Function.update_of_ne h _ _
 
-/-- **Closed configuration lies below the opened one.** Closing a coordinate gives a smaller configuration than opening it. -/
+/-- Closing a coordinate gives a smaller configuration than opening it. -/
 lemma setClosed_le_setOpen (e : E) (ω : ConfigSpace E) :
     setClosed e ω ≤ setOpen e ω := by
   unfold setClosed setOpen
   rw [update_le_update_iff']
   decide
 
-/-- **Opening a coordinate depends only on the other coordinates.** `setOpen e ω` depends only on the values of `ω` off `e`. -/
+/-- `setOpen e ω` depends only on the values of `ω` off `e`. -/
 lemma setOpen_congr {e : E} {ω ω' : ConfigSpace E}
     (h : ∀ e', e' ≠ e → ω e' = ω' e') : setOpen e ω = setOpen e ω' := by
   funext e'
@@ -71,7 +71,7 @@ lemma setOpen_congr {e : E} {ω ω' : ConfigSpace E}
   · subst he; simp
   · rw [setOpen_of_ne he, setOpen_of_ne he, h e' he]
 
-/-- **Closing a coordinate depends only on the other coordinates.** `setClosed e ω` depends only on the values of `ω` off `e`. -/
+/-- `setClosed e ω` depends only on the values of `ω` off `e`. -/
 lemma setClosed_congr {e : E} {ω ω' : ConfigSpace E}
     (h : ∀ e', e' ≠ e → ω e' = ω' e') : setClosed e ω = setClosed e ω' := by
   funext e'
@@ -95,33 +95,33 @@ lemma setClosed_congr {e : E} {ω ω' : ConfigSpace E}
     setClosed e (setClosed e ω) = setClosed e ω := by
   unfold setClosed; rw [Function.update_idem]
 
-/-- **Pivotal coordinate for an event.** The coordinate `e` is *pivotal* for the event `A` at `ω` if exactly one of `setOpen e ω` and
+/-- The coordinate `e` is *pivotal* for the event `A` at `ω` if exactly one of `setOpen e ω` and
 `setClosed e ω` lies in `A`. The condition does not depend on `ω e`. -/
 def IsPivotal (e : E) (A : Set (ConfigSpace E)) (ω : ConfigSpace E) : Prop :=
   (setOpen e ω ∈ A) ≠ (setClosed e ω ∈ A)
 
-/-- **Symmetric form of pivotality.** Pivotality with the two sides swapped. -/
+/-- Pivotality with the two sides swapped. -/
 lemma isPivotal_comm (e : E) (A : Set (ConfigSpace E)) (ω : ConfigSpace E) :
     IsPivotal e A ω ↔ (setClosed e ω ∈ A) ≠ (setOpen e ω ∈ A) :=
   ⟨fun h => h.symm, fun h => h.symm⟩
 
-/-- **Pivotality depends only on the other coordinates.** Pivotality of `e` depends only on the values of `ω` off `e`. -/
+/-- Pivotality of `e` depends only on the values of `ω` off `e`. -/
 lemma isPivotal_congr {e : E} {A : Set (ConfigSpace E)} {ω ω' : ConfigSpace E}
     (h : ∀ e', e' ≠ e → ω e' = ω' e') : IsPivotal e A ω ↔ IsPivotal e A ω' := by
   unfold IsPivotal
   rw [setOpen_congr h, setClosed_congr h]
 
-/-- **Opening a coordinate preserves its pivotality.** Opening `e` does not change whether `e` is pivotal. -/
+/-- Opening `e` does not change whether `e` is pivotal. -/
 @[simp] lemma isPivotal_setOpen (e : E) (A : Set (ConfigSpace E)) (ω : ConfigSpace E) :
     IsPivotal e A (setOpen e ω) ↔ IsPivotal e A ω := by
   unfold IsPivotal; rw [setOpen_setOpen, setClosed_setOpen]
 
-/-- **Closing a coordinate preserves its pivotality.** Closing `e` does not change whether `e` is pivotal. -/
+/-- Closing `e` does not change whether `e` is pivotal. -/
 @[simp] lemma isPivotal_setClosed (e : E) (A : Set (ConfigSpace E)) (ω : ConfigSpace E) :
     IsPivotal e A (setClosed e ω) ↔ IsPivotal e A ω := by
   unfold IsPivotal; rw [setOpen_setClosed, setClosed_setClosed]
 
-/-- **Pivotal coordinates of an increasing event.** For an increasing event `A`, the coordinate `e` is pivotal at `ω` iff `setClosed e ω ∉ A`
+/-- For an increasing event `A`, the coordinate `e` is pivotal at `ω` iff `setClosed e ω ∉ A`
 and `setOpen e ω ∈ A`. -/
 theorem isPivotal_iff_of_isIncreasing {e : E} {A : Set (ConfigSpace E)}
     (hA : IsIncreasing A) (ω : ConfigSpace E) :

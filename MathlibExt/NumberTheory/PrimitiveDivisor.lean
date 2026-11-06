@@ -32,15 +32,12 @@ a primitive divisor that is prime.
 
 namespace IntegerSequence
 
-/-- **Primitive divisor of an integer sequence.** Let $(a_s)_{s \ge 0}$ be a sequence of integers
-and let $m$ and $u$ be natural numbers. Then $u$ is a primitive divisor of $a_m$ when $m \ge 1$,
-$u \ge 2$, $u$ divides $a_m$, and $u$ divides no $a_s$ with $1 \le s < m$. -/
+/-- `u` is a primitive divisor of the positive-indexed term `a m` of an integer sequence if
+`u ≥ 2`, `u ∣ a m`, and `u` divides no `a s` with `1 ≤ s < m`. -/
 def IsPrimitiveDivisor (a : ℕ → ℤ) (m u : ℕ) : Prop :=
   1 ≤ m ∧ 2 ≤ u ∧ (u : ℤ) ∣ a m ∧ ∀ s : ℕ, 1 ≤ s → s < m → ¬ (u : ℤ) ∣ a s
 
-/-- **Primitive prime divisor of an integer sequence.** Let $(a_s)_{s \ge 0}$ be a sequence of
-integers and let $m$ and $u$ be natural numbers. Then $u$ is a primitive prime divisor of $a_m$ when
-$u$ is prime and $u$ is a primitive divisor of $a_m$. -/
+/-- A primitive prime divisor is a prime natural number that is a primitive divisor. -/
 def IsPrimitivePrimeDivisor (a : ℕ → ℤ) (m u : ℕ) : Prop :=
   Nat.Prime u ∧ IsPrimitiveDivisor a m u
 
@@ -93,25 +90,21 @@ theorem isPrimitivePrimeDivisor_iff {a : ℕ → ℤ} {m u : ℕ} :
         ∀ s : ℕ, 1 ≤ s → s < m → ¬ (u : ℤ) ∣ a s :=
   Iff.rfl
 
-/-- **A primitive divisor appears at the least positive index.** Let $(a_s)_{s \ge 0}$ be a sequence
-of integers and let the natural number $u$ be a primitive divisor of $a_m$. If $n \ge 1$ and $u$
-divides $a_n$, then $m \le n$. -/
+/-- The index where a primitive divisor occurs is no larger than any positive index where that
+divisor occurs. -/
 theorem IsPrimitiveDivisor.le_of_dvd {a : ℕ → ℤ} {m u n : ℕ}
     (hm : IsPrimitiveDivisor a m u) (hn : 1 ≤ n) (hdvd : (u : ℤ) ∣ a n) :
     m ≤ n := by
   by_contra hmn
   exact hm.not_dvd_of_lt hn (by omega) hdvd
 
-/-- **A primitive divisor occurs at only one index.** Let $(a_s)_{s \ge 0}$ be a sequence of
-integers. If a natural number $u$ is a primitive divisor of both $a_m$ and $a_n$, then $m = n$. -/
+/-- A fixed divisor can be primitive at only one index of a sequence. -/
 theorem IsPrimitiveDivisor.unique {a : ℕ → ℤ} {m n u : ℕ}
     (hm : IsPrimitiveDivisor a m u) (hn : IsPrimitiveDivisor a n u) :
     m = n :=
   le_antisymm (hm.le_of_dvd hn.one_le hn.dvd) (hn.le_of_dvd hm.one_le hm.dvd)
 
-/-- **A primitive prime divisor occurs at only one index.** Let $(a_s)_{s \ge 0}$ be a sequence of
-integers. If a natural number $u$ is a primitive prime divisor of both $a_m$ and $a_n$, then
-$m = n$. -/
+/-- A fixed prime divisor can be primitive at only one index of a sequence. -/
 theorem IsPrimitivePrimeDivisor.unique {a : ℕ → ℤ} {m n u : ℕ}
     (hm : IsPrimitivePrimeDivisor a m u) (hn : IsPrimitivePrimeDivisor a n u) :
     m = n :=

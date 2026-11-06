@@ -128,7 +128,7 @@ theorem axisFarRight_infiniteComponent (R : ℕ)
   exterior_mem_infiniteComponent (by norm_num) (cluster 2 ω (origin 2)) R hR
     (axisFarRight_mem_exterior R)
 
-/-- **Origin cluster's enclosing contour links the two axis exits.** Some cycle of the face-boundary graph of the origin cluster, based at the upper exit face on
+/-- Some cycle of the face-boundary graph of the origin cluster, based at the upper exit face on
 the positive axis, passes through the upper exit face on the negative axis. -/
 def EnclosingContourLinksExits (ω : ConfigSpace (Sym2 (Site 2)))
     (hfin : (cluster 2 ω (origin 2)).Finite) : Prop :=
@@ -155,7 +155,7 @@ theorem pcAnchoredEnclosure_of_enclosingContourLinksExits
   pcAnchoredEnclosure_of_cycleHasLeftFace
     (fun ω hfin => cycleHasLeftFace_of_enclosingContourLinksExits (ω := ω) hfin (h ω hfin))
 
-/-- **$p_c(\mathbb{Z}^2) < 1$ via boundary connectivity, assuming linked exits.** `p_c(ℤ²) < 1`, under the hypothesis that `EnclosingContourLinksExits` holds for every
+/-- `p_c(ℤ²) < 1`, under the hypothesis that `EnclosingContourLinksExits` holds for every
 configuration with a finite origin cluster. The hypothesis is not proved here. -/
 theorem pc_lt_one_via_boundary
     (h : ∀ (ω : ConfigSpace (Sym2 (Site 2))) (hfin : (cluster 2 ω (origin 2)).Finite),

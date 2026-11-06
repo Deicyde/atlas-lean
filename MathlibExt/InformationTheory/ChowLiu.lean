@@ -54,7 +54,7 @@ namespace InformationTheory
 open MeasureTheory Real
 open scoped ENNReal
 
-/-- **Dependence forest.** A dependence forest on the variables `ι` (Chow–Liu 1968): each variable has at most one parent,
+/-- A dependence forest on the variables `ι` (Chow–Liu 1968): each variable has at most one parent,
 and `rank` strictly increases from parent to child, so the parent relation has no cycles. -/
 structure DependenceForest (ι : Type*) where
   /-- The parent `j(i)` of variable `i`, if any. -/
@@ -68,7 +68,7 @@ namespace DependenceForest
 
 variable {ι : Type*} [Fintype ι] {α : ι → Type*}
 
-/-- **Chow–Liu product approximation of a joint law.** Chow–Liu's product approximation `P_τ(x) = ∏_i P(x_i | x_{j(i)})` of a joint law `p`, with the
+/-- Chow–Liu's product approximation `P_τ(x) = ∏_i P(x_i | x_{j(i)})` of a joint law `p`, with the
 marginal `P(x_i)` for a parentless `i`. The conditional `P(x_i | x_j)` is
 `P(x_i, x_j) / P(x_j)`; where `P(x_j) = 0` the quotient is `0`, and such `x` have `P(x) = 0`. -/
 noncomputable def approx (τ : DependenceForest ι) (p : PMF (∀ i, α i)) (x : ∀ i, α i) : ℝ :=
@@ -102,12 +102,12 @@ private theorem factor_pos (τ : DependenceForest ι) (p : PMF (∀ i, α i)) (i
   · exact div_pos (h0.trans_le (toReal_le_map_apply p (fun y ↦ (y i, y _)) x))
       (h0.trans_le (toReal_le_map_apply p (fun y ↦ y _) x))
 
-/-- **Nonnegativity of the Chow–Liu approximation.** The approximation is nonnegative. -/
+/-- The approximation is nonnegative. -/
 theorem approx_nonneg (τ : DependenceForest ι) (p : PMF (∀ i, α i)) (x : ∀ i, α i) :
     0 ≤ τ.approx p x :=
   Finset.prod_nonneg fun i _ ↦ τ.factor_nonneg p i x
 
-/-- **Joint law is absolutely continuous w.r.t. its Chow–Liu approximation.** `P ≪ P_τ`: the approximation is positive wherever `p` is. -/
+/-- `P ≪ P_τ`: the approximation is positive wherever `p` is. -/
 theorem approx_pos (τ : DependenceForest ι) (p : PMF (∀ i, α i)) {x : ∀ i, α i} (hx : p x ≠ 0) :
     0 < τ.approx p x :=
   Finset.prod_pos fun i _ ↦ τ.factor_pos p i hx
@@ -238,29 +238,29 @@ private theorem sum_prod_factor (τ : DependenceForest ι) (p : PMF (∀ i, α i
     rw [Finset.sum_congr rfl fun x _ ↦ (Finset.mul_prod_erase S (fun k ↦ τ.factor p k x) hiS).symm]
     exact mul_left_cancel₀ hpos.ne' key
 
-/-- **Chow–Liu approximation sums to one.** The approximation is a probability law: `∑_x P_τ(x) = 1`. -/
+/-- The approximation is a probability law: `∑_x P_τ(x) = 1`. -/
 theorem sum_approx (τ : DependenceForest ι) (p : PMF (∀ i, α i)) :
     ∑ x, τ.approx p x = 1 := by
   simpa [approx_eq_prod] using
     τ.sum_prod_factor p _ Finset.univ rfl fun _ _ _ _ ↦ Finset.mem_univ _
 
-/-- **Chow–Liu approximation as a probability mass function.** Chow–Liu's approximation `P_τ` as a probability mass function. -/
+/-- Chow–Liu's approximation `P_τ` as a probability mass function. -/
 noncomputable def approxPMF (τ : DependenceForest ι) (p : PMF (∀ i, α i)) : PMF (∀ i, α i) :=
   PMF.ofFintype (fun x ↦ ENNReal.ofReal (τ.approx p x)) (by
     rw [← ENNReal.ofReal_sum_of_nonneg fun x _ ↦ τ.approx_nonneg p x, sum_approx,
       ENNReal.ofReal_one])
 
-/-- **Mutual-information weight of a dependence forest.** The mutual-information weight `∑_i I(X_i; X_{j(i)})` of a dependence forest, in bits. -/
+/-- The mutual-information weight `∑_i I(X_i; X_{j(i)})` of a dependence forest, in bits. -/
 noncomputable def weight (τ : DependenceForest ι) (p : PMF (∀ i, α i)) : ℝ :=
   ∑ i, match τ.parent i with
     | none => 0
     | some j => finiteMutualInformation (p.map fun y ↦ (y i, y j))
 
-/-- **Divergence from the Chow–Liu approximation.** The divergence `D(P ‖ P_τ) = ∑_x P(x) log₂ (P(x) / P_τ(x))` of `P` from Chow–Liu's approximation, in bits (`divergence_eq_klDiv`). -/
+/-- The divergence `D(P ‖ P_τ) = ∑_x P(x) log₂ (P(x) / P_τ(x))` of `P` from Chow–Liu's approximation, in bits (`divergence_eq_klDiv`). -/
 noncomputable def divergence (τ : DependenceForest ι) (p : PMF (∀ i, α i)) : ℝ :=
   ∑ x, (p x).toReal * logb 2 ((p x).toReal / τ.approx p x)
 
-/-- **Chow–Liu divergence as a Kullback–Leibler divergence.** `divergence` is Mathlib's Kullback–Leibler divergence `klDiv` of `P` relative to `P_τ`, converted to
+/-- `divergence` is Mathlib's Kullback–Leibler divergence `klDiv` of `P` relative to `P_τ`, converted to
 bits; the finite alphabet carries the discrete σ-algebra. -/
 theorem divergence_eq_klDiv (τ : DependenceForest ι) (p : PMF (∀ i, α i)) :
     letI : MeasurableSpace (∀ i, α i) := ⊤
@@ -323,7 +323,7 @@ theorem divergence_eq (τ : DependenceForest ι) (p : PMF (∀ i, α i)) :
     ← Finset.sum_mul, ← Finset.sum_mul, div_eq_iff hlog, weight]
   linear_combination shannonEntropy_mul_log_two p
 
-/-- **Nonnegativity of the Chow–Liu divergence.** The divergence of `P` from Chow–Liu's approximation is nonnegative, so
+/-- The divergence of `P` from Chow–Liu's approximation is nonnegative, so
 `∑_i I(X_i; X_{j(i)}) ≤ ∑_i H(X_i) - H(X)` for every dependence forest. -/
 theorem divergence_nonneg (τ : DependenceForest ι) (p : PMF (∀ i, α i)) :
     0 ≤ τ.divergence p := by

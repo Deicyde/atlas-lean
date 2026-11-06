@@ -57,12 +57,12 @@ Both operator APIs use the existing `GreensOperator.sineBasisFun`.
 Its existing product-integral theorem supplies orthonormality.
 -/
 
-/-- **Dirichlet eigenvalues of the Laplacian on the unit interval.** The `k`-th Dirichlet eigenvalue: `λ_k = (kπ)²`, the eigenvalue of
+/-- The `k`-th Dirichlet eigenvalue: `λ_k = (kπ)²`, the eigenvalue of
 `-d²/dx²` for the eigenfunction `sineBasisFun k`. -/
 noncomputable def dirichletLaplacianEigenvalue (k : ℕ+) : ℝ :=
   ((k : ℝ) * Real.pi) ^ 2
 
-/-- **Pointwise derivative of a Dirichlet sine eigenfunction.** First derivative of the `k`-th sine eigenfunction. -/
+/-- First derivative of the `k`-th sine eigenfunction. -/
 theorem dirichletSine_hasDerivAt (k : ℕ+) (x : ℝ) :
     HasDerivAt (sineBasisFun k)
       (Real.sqrt 2 * ((k : ℝ) * Real.pi) * Real.cos ((k : ℝ) * Real.pi * x)) x := by
@@ -74,13 +74,13 @@ theorem dirichletSine_hasDerivAt (k : ℕ+) (x : ℝ) :
     simp [sineBasisFun, mul_assoc]
   · ring
 
-/-- **Derivative function of a Dirichlet sine eigenfunction.** The derivative of the `k`-th sine eigenfunction, as a function. -/
+/-- The derivative of the `k`-th sine eigenfunction, as a function. -/
 theorem dirichletSine_deriv (k : ℕ+) (x : ℝ) :
     deriv (sineBasisFun k) x =
       Real.sqrt 2 * ((k : ℝ) * Real.pi) * Real.cos ((k : ℝ) * Real.pi * x) :=
   (dirichletSine_hasDerivAt k x).deriv
 
-/-- **Second derivative of a Dirichlet sine eigenfunction.** Second-derivative (eigenvalue) equation for the `k`-th sine
+/-- Second-derivative (eigenvalue) equation for the `k`-th sine
 eigenfunction: `u_k'' = -(kπ)² u_k`. -/
 theorem dirichletSine_iteratedDeriv_two (k : ℕ+) (x : ℝ) :
     iteratedDeriv 2 (sineBasisFun k) x =
@@ -102,7 +102,7 @@ theorem dirichletSine_iteratedDeriv_two (k : ℕ+) (x : ℝ) :
   simp [sineBasisFun, dirichletLaplacianEigenvalue]
   ring
 
-/-- **Dirichlet eigenvalue equation in Sturm-Liouville form.** The Dirichlet eigenvalue equation in Sturm-Liouville form:
+/-- The Dirichlet eigenvalue equation in Sturm-Liouville form:
 `-u_k'' = λ_k u_k` with `λ_k = (kπ)²`. -/
 theorem neg_iteratedDeriv_two_eq (k : ℕ+) (x : ℝ) :
     -iteratedDeriv 2 (sineBasisFun k) x =
@@ -110,24 +110,24 @@ theorem neg_iteratedDeriv_two_eq (k : ℕ+) (x : ℝ) :
   rw [dirichletSine_iteratedDeriv_two]
   ring
 
-/-- **Sine eigenfunctions vanish at the left endpoint.** Left Dirichlet boundary value: `u_k(0) = 0`. -/
+/-- Left Dirichlet boundary value: `u_k(0) = 0`. -/
 theorem dirichletSine_zero (k : ℕ+) : sineBasisFun k 0 = 0 := by
   simp [sineBasisFun]
 
-/-- **Sine eigenfunctions vanish at the right endpoint.** Right Dirichlet boundary value: `u_k(1) = 0`. -/
+/-- Right Dirichlet boundary value: `u_k(1) = 0`. -/
 theorem dirichletSine_one (k : ℕ+) : sineBasisFun k 1 = 0 := by
   simp only [sineBasisFun]
   have h : (k : ℝ) * Real.pi * (1 : ℝ) = (k : ℝ) * Real.pi := by ring
   rw [h, Real.sin_nat_mul_pi]
   simp
 
-/-- **Smoothness of the Dirichlet sine eigenfunctions.** The sine eigenfunctions are smooth. -/
+/-- The sine eigenfunctions are smooth. -/
 theorem dirichletSine_contDiff (k : ℕ+) : ContDiff ℝ ⊤ (sineBasisFun k) := by
   unfold sineBasisFun
   exact contDiff_const.mul
     (ContDiff.sin ((contDiff_const (c := (k : ℝ) * Real.pi)).mul contDiff_id))
 
-/-- **Dirichlet sine eigenfunctions are nonzero.** The sine eigenfunctions are nonzero (so they are genuine
+/-- The sine eigenfunctions are nonzero (so they are genuine
 eigenfunctions, not the trivial solution). The witness point is
 `x = 1 / (2k)`, where `u_k = √2`. -/
 theorem dirichletSine_ne_zero (k : ℕ+) : sineBasisFun k ≠ 0 := by

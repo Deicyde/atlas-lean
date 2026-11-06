@@ -12,8 +12,7 @@ public import Mathlib.RingTheory.DedekindDomain.Factorization
 
 @[expose] public section
 
-/-- **Quotients of Dedekind domains by nonzero ideals are principal ideal rings.** Every quotient
-of a Dedekind domain by a nonzero ideal is a principal ideal ring. -/
+/-- Every quotient of a Dedekind domain by a nonzero ideal is a principal ideal ring. -/
 theorem IsDedekindDomain.isPrincipalIdealRing_quotient {A : Type*} [CommRing A]
     [IsDedekindDomain A] (I : Ideal A) (hI : I ≠ ⊥) : IsPrincipalIdealRing (A ⧸ I) where
   principal J := by

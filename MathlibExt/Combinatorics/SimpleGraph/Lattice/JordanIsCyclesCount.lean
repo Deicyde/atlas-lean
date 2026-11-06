@@ -261,7 +261,7 @@ theorem jic_pushGraph_sup (P : PlanarZ2Subgraph) (A B : SimpleGraph P.V) :
     · exact ⟨x, y, Or.inl h, hx, hy⟩
     · exact ⟨x, y, Or.inr h, hx, hy⟩
 
-/-- **Number of face regions of a subgraph's image.** The number of connected components of the face-region graph of the image of `K`. -/
+/-- The number of connected components of the face-region graph of the image of `K`. -/
 noncomputable def jic_tc (P : PlanarZ2Subgraph) (K : SimpleGraph P.V) : ℕ :=
   Nat.card (whb_faceRegion (jei_pushGraph P K)).ConnectedComponent
 
@@ -592,7 +592,7 @@ theorem jic_cyc4_isCycles : jbc_cyc4.IsCycles := by
   · exact ⟨0, 2, by decide,
       by ext j; fin_cases j <;> simp [SimpleGraph.mem_neighborSet, jbc_cyc4Rel]⟩
 
-/-- **Corners of two distant unit squares.** The corners of the unit squares at `(0, 0)` and `(10, 0)`. -/
+/-- The corners of the unit squares at `(0, 0)` and `(10, 0)`. -/
 def jic_twoSq_emb (i : Fin 8) : Site 2 :=
   match i with
   | 0 => ![0, 0] | 1 => ![1, 0] | 2 => ![1, 1] | 3 => ![0, 1]
@@ -600,14 +600,14 @@ def jic_twoSq_emb (i : Fin 8) : Site 2 :=
 
 theorem jic_twoSq_emb_inj : Function.Injective jic_twoSq_emb := by decide +kernel
 
-/-- **Adjacency relation of two disjoint 4-cycles.** Adjacency of two disjoint 4-cycles on `Fin 8`, as a Boolean relation. -/
+/-- Adjacency of two disjoint 4-cycles on `Fin 8`, as a Boolean relation. -/
 def jic_twoSq_rel (i j : Fin 8) : Bool :=
   (i == 0 && j == 1) || (i == 1 && j == 0) || (i == 1 && j == 2) || (i == 2 && j == 1) ||
   (i == 2 && j == 3) || (i == 3 && j == 2) || (i == 3 && j == 0) || (i == 0 && j == 3) ||
   (i == 4 && j == 5) || (i == 5 && j == 4) || (i == 5 && j == 6) || (i == 6 && j == 5) ||
   (i == 6 && j == 7) || (i == 7 && j == 6) || (i == 7 && j == 4) || (i == 4 && j == 7)
 
-/-- **Two disjoint 4-cycles.** Two disjoint 4-cycles on `Fin 8`. -/
+/-- Two disjoint 4-cycles on `Fin 8`. -/
 def jic_twoSq_G : SimpleGraph (Fin 8) where
   Adj i j := jic_twoSq_rel i j
   symm := ⟨by intro i j h; revert h; revert i j; decide⟩
@@ -622,7 +622,7 @@ theorem jic_twoSq_isSub : ∀ ⦃i j : Fin 8⦄, jic_twoSq_G.Adj i j →
   rw [hypercubicLattice_adj, Fin.sum_univ_two]
   revert h; fin_cases i <;> fin_cases j <;> simp [jic_twoSq_rel, jic_twoSq_emb]
 
-/-- **Two disjoint unit squares as a planar lattice subgraph.** Two disjoint unit squares as a `PlanarZ2Subgraph`. -/
+/-- Two disjoint unit squares as a `PlanarZ2Subgraph`. -/
 noncomputable def jic_twoSq_P : PlanarZ2Subgraph where
   V := Fin 8
   finV := inferInstance

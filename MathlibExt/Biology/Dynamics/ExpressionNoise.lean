@@ -64,15 +64,15 @@ namespace MathlibExt.Biology.Dynamics.ExpressionNoise
 
 variable {Ω : Type*} {m m₀ : MeasurableSpace Ω} {μ : Measure[m₀] Ω} {X Y : Ω → ℝ}
 
-/-- **Intrinsic noise strength.** Two-reporter intrinsic noise strength `η_int² = ⟨(X - Y)²⟩ / (2 ⟨X⟩⟨Y⟩)`. -/
+/-- Two-reporter intrinsic noise strength `η_int² = ⟨(X - Y)²⟩ / (2 ⟨X⟩⟨Y⟩)`. -/
 noncomputable def intrinsicNoiseSq (μ : Measure[m₀] Ω) (X Y : Ω → ℝ) : ℝ :=
   μ[(X - Y) ^ 2] / (2 * (μ[X] * μ[Y]))
 
-/-- **Extrinsic noise strength.** Two-reporter extrinsic noise strength `η_ext² = (⟨X Y⟩ - ⟨X⟩⟨Y⟩) / (⟨X⟩⟨Y⟩)`. -/
+/-- Two-reporter extrinsic noise strength `η_ext² = (⟨X Y⟩ - ⟨X⟩⟨Y⟩) / (⟨X⟩⟨Y⟩)`. -/
 noncomputable def extrinsicNoiseSq (μ : Measure[m₀] Ω) (X Y : Ω → ℝ) : ℝ :=
   (μ[X * Y] - μ[X] * μ[Y]) / (μ[X] * μ[Y])
 
-/-- **Total noise strength.** Two-reporter total noise strength `η_tot² = (⟨X² + Y²⟩ / 2 - ⟨X⟩⟨Y⟩) / (⟨X⟩⟨Y⟩)`. -/
+/-- Two-reporter total noise strength `η_tot² = (⟨X² + Y²⟩ / 2 - ⟨X⟩⟨Y⟩) / (⟨X⟩⟨Y⟩)`. -/
 noncomputable def totalNoiseSq (μ : Measure[m₀] Ω) (X Y : Ω → ℝ) : ℝ :=
   (μ[X ^ 2 + Y ^ 2] / 2 - μ[X] * μ[Y]) / (μ[X] * μ[Y])
 
@@ -95,7 +95,7 @@ theorem totalNoiseSq_eq_add (hX : MemLp X 2 μ) (hY : MemLp Y 2 μ) :
   · simp [h]
   · field_simp; ring
 
-/-- **Identical reporter pair.** Two reporters of the same gene given the extrinsic σ-algebra `m`: equal conditional means,
+/-- Two reporters of the same gene given the extrinsic σ-algebra `m`: equal conditional means,
 equal conditional second moments, and conditionally uncorrelated. Conditional independence with
 identical conditional laws given `m` implies these three conditions. -/
 structure IsIdenticalReporterPair (m : MeasurableSpace Ω) (μ : Measure[m₀] Ω)
@@ -106,13 +106,13 @@ structure IsIdenticalReporterPair (m : MeasurableSpace Ω) (μ : Measure[m₀] �
 
 variable [IsProbabilityMeasure μ]
 
-/-- **Identical reporters have equal means.** Identical reporters have the same mean. -/
+/-- Identical reporters have the same mean. -/
 theorem IsIdenticalReporterPair.integral_eq (hm : m ≤ m₀) (h : IsIdenticalReporterPair m μ X Y) :
     μ[X] = μ[Y] := by
   rw [← integral_condExp hm, ← integral_condExp hm (f := Y)]
   exact integral_congr_ae h.condExp_eq
 
-/-- **Covariance of identical reporters equals extrinsic variance.** For identical reporters the covariance is the extrinsic variance:
+/-- For identical reporters the covariance is the extrinsic variance:
 `Cov(X, Y) = Var(E[X | m])`. -/
 theorem IsIdenticalReporterPair.covariance_eq_variance_condExp (hm : m ≤ m₀)
     (h : IsIdenticalReporterPair m μ X Y) (hX : MemLp X 2 μ) (hY : MemLp Y 2 μ) :
@@ -127,7 +127,7 @@ theorem IsIdenticalReporterPair.covariance_eq_variance_condExp (hm : m ≤ m₀)
     integral_condExp hm, ← h.integral_eq hm]
   ring
 
-/-- **Half mean squared reporter difference equals intrinsic variance.** For identical reporters half the mean squared difference is the intrinsic variance:
+/-- For identical reporters half the mean squared difference is the intrinsic variance:
 `⟨(X - Y)²⟩ / 2 = ⟨Var(X | m)⟩`. -/
 theorem IsIdenticalReporterPair.integral_sub_sq_div_two_eq (hm : m ≤ m₀)
     (h : IsIdenticalReporterPair m μ X Y) (hX : MemLp X 2 μ) (hY : MemLp Y 2 μ) :
@@ -150,21 +150,21 @@ theorem IsIdenticalReporterPair.integral_sub_sq_div_two_eq (hm : m ≤ m₀)
   rw [hsub, ← hsq]
   nlinarith
 
-/-- **Two-reporter formula for extrinsic noise.** The two-reporter extrinsic noise is `Var(E[X | m]) / ⟨X⟩²` (Swain et al. Eq. 8). -/
+/-- The two-reporter extrinsic noise is `Var(E[X | m]) / ⟨X⟩²` (Swain et al. Eq. 8). -/
 theorem IsIdenticalReporterPair.extrinsicNoiseSq_eq (hm : m ≤ m₀)
     (h : IsIdenticalReporterPair m μ X Y) (hX : MemLp X 2 μ) (hY : MemLp Y 2 μ) :
     extrinsicNoiseSq μ X Y = Var[μ[X | m]; μ] / μ[X] ^ 2 := by
   rw [extrinsicNoiseSq, ← covariance_eq_sub hX hY, h.covariance_eq_variance_condExp hm hX hY,
     ← h.integral_eq hm, sq]
 
-/-- **Two-reporter formula for intrinsic noise.** The two-reporter intrinsic noise is `⟨Var(X | m)⟩ / ⟨X⟩²` (Swain et al. Eq. 8). -/
+/-- The two-reporter intrinsic noise is `⟨Var(X | m)⟩ / ⟨X⟩²` (Swain et al. Eq. 8). -/
 theorem IsIdenticalReporterPair.intrinsicNoiseSq_eq (hm : m ≤ m₀)
     (h : IsIdenticalReporterPair m μ X Y) (hX : MemLp X 2 μ) (hY : MemLp Y 2 μ) :
     intrinsicNoiseSq μ X Y = μ[Var[X; μ | m]] / μ[X] ^ 2 := by
   rw [intrinsicNoiseSq, ← h.integral_sub_sq_div_two_eq hm hX hY, ← h.integral_eq hm, div_div]
   ring
 
-/-- **Total noise splits into intrinsic and extrinsic parts.** The two-reporter total noise is `Var(X) / ⟨X⟩²`, and it splits into the intrinsic and
+/-- The two-reporter total noise is `Var(X) / ⟨X⟩²`, and it splits into the intrinsic and
 extrinsic parts by the law of total variance. -/
 theorem IsIdenticalReporterPair.totalNoiseSq_eq (hm : m ≤ m₀)
     (h : IsIdenticalReporterPair m μ X Y) (hX : MemLp X 2 μ) (hY : MemLp Y 2 μ) :

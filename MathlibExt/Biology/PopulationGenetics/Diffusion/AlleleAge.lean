@@ -98,7 +98,7 @@ open scoped Topology
 
 namespace MathlibExt.Biology.PopulationGenetics.Diffusion
 
-/-- **Positivity of the slope constant in Kimura's formula.** The slope constant of Kimura's formula is positive. -/
+/-- The slope constant of Kimura's formula is positive. -/
 theorem kimuraSlope_pos (σ : ℝ) : 0 < kimuraSlope σ := by
   unfold kimuraSlope
   split_ifs with h
@@ -109,20 +109,20 @@ theorem kimuraSlope_pos (σ : ℝ) : 0 < kimuraSlope σ := by
   · have : exp (-2 * σ) < 1 := exp_lt_one_iff.2 (by linarith)
     exact div_pos (by linarith) (by linarith)
 
-/-- **Kimura's fixation probability is strictly increasing.** Kimura's fixation probability is strictly increasing in the initial frequency. -/
+/-- Kimura's fixation probability is strictly increasing in the initial frequency. -/
 theorem strictMono_kimuraFixation (σ : ℝ) : StrictMono (kimuraFixation σ) :=
   strictMono_of_hasDerivAt_pos (hasDerivAt_kimuraFixation σ) fun _ =>
     mul_pos (kimuraSlope_pos σ) (exp_pos _)
 
-/-- **Positivity of Kimura's fixation probability.** An allele present at positive frequency has positive fixation probability. -/
+/-- An allele present at positive frequency has positive fixation probability. -/
 theorem kimuraFixation_pos (σ : ℝ) {x : ℝ} (hx : 0 < x) : 0 < kimuraFixation σ x := by
   simpa using strictMono_kimuraFixation σ hx
 
-/-- **Kimura's fixation probability is less than one.** An allele at frequency below `1` is lost with positive probability. -/
+/-- An allele at frequency below `1` is lost with positive probability. -/
 theorem kimuraFixation_lt_one (σ : ℝ) {x : ℝ} (hx : x < 1) : kimuraFixation σ x < 1 := by
   simpa using strictMono_kimuraFixation σ hx
 
-/-- **Sojourn density of the Wright–Fisher diffusion with selection.** The sojourn density (Green's function) of the Wright–Fisher diffusion with genic selection,
+/-- The sojourn density (Green's function) of the Wright–Fisher diffusion with genic selection,
 time in units of `2N` generations, `σ = 2Ns`. With `u = kimuraFixation σ` and
 `u'(x) = kimuraSlope σ · e^{-2σx}`,
 
@@ -139,7 +139,7 @@ noncomputable def selectionGreen (σ p x : ℝ) : ℝ :=
   2 * kimuraFixation σ (min p x) * (1 - kimuraFixation σ (max p x)) /
     (x * (1 - x) * (kimuraSlope σ * exp (-2 * σ * x)))
 
-/-- **Neutral case of the sojourn density.** For `σ = 0` and `0 < x < 1` the sojourn density is the neutral Green's function. -/
+/-- For `σ = 0` and `0 < x < 1` the sojourn density is the neutral Green's function. -/
 theorem selectionGreen_zero {p x : ℝ} (hx : x ∈ Ioo (0 : ℝ) 1) :
     selectionGreen 0 p x = neutralGreen p x := by
   have h0 : x ≠ 0 := hx.1.ne'
@@ -403,7 +403,7 @@ theorem generator_integral_selectionGreen (σ : ℝ) {g : ℝ → ℝ} (hg : Con
     kimuraSlope_ne_zero σ, exp_ne_zero]
   ring
 
-/-- **Sojourn density from frequency zero vanishes.** Boundary value at `0`: an absent allele spends no time in `(0, 1)`, so
+/-- Boundary value at `0`: an absent allele spends no time in `(0, 1)`, so
 `∫₀¹ Ψ(0, x) g(x) dx = 0` for every `g`. -/
 theorem integral_selectionGreen_left (σ : ℝ) (g : ℝ → ℝ) :
     ∫ x in (0 : ℝ)..1, selectionGreen σ 0 x * g x = 0 := by
@@ -412,7 +412,7 @@ theorem integral_selectionGreen_left (σ : ℝ) (g : ℝ → ℝ) :
   rw [uIoc_of_le zero_le_one] at hx
   simp [selectionGreen, min_eq_left hx.1.le]
 
-/-- **Sojourn density from frequency one vanishes.** Boundary value at `1`: a fixed allele spends no time in `(0, 1)`, so
+/-- Boundary value at `1`: a fixed allele spends no time in `(0, 1)`, so
 `∫₀¹ Ψ(1, x) g(x) dx = 0` for every `g`. -/
 theorem integral_selectionGreen_right (σ : ℝ) (g : ℝ → ℝ) :
     ∫ x in (0 : ℝ)..1, selectionGreen σ 1 x * g x = 0 := by
@@ -439,7 +439,7 @@ private theorem generator_affine_kimuraFixation (σ a b p : ℝ) :
   rw [generator, hd, h2.deriv]
   ring
 
-/-- **Sojourn density solves the backward equation below the target.** Below the target frequency the sojourn density solves the homogeneous backward equation in
+/-- Below the target frequency the sojourn density solves the homogeneous backward equation in
 its first argument: `L_σ Ψ(·, x) = 0` at every `p < x` (pointwise form of the paper's
 `-δ(x - p) = L_σ Ψ(·, x)`). -/
 theorem generator_selectionGreen_of_lt (σ : ℝ) {p x : ℝ} (hpx : p < x) :
@@ -451,7 +451,7 @@ theorem generator_selectionGreen_of_lt (σ : ℝ) {p x : ℝ} (hpx : p < x) :
     simp only [selectionGreen, min_eq_left (le_of_lt hq), max_eq_right (le_of_lt hq)]
     ring
 
-/-- **Sojourn density solves the backward equation above the target.** Above the target frequency: `L_σ Ψ(·, x) = 0` at every `p > x`. -/
+/-- Above the target frequency: `L_σ Ψ(·, x) = 0` at every `p > x`. -/
 theorem generator_selectionGreen_of_gt (σ : ℝ) {p x : ℝ} (hxp : x < p) :
     generator σ (fun q => selectionGreen σ q x) p = 0 := by
   rw [generator_congr (g := fun q => 2 * kimuraFixation σ x /
@@ -462,13 +462,13 @@ theorem generator_selectionGreen_of_gt (σ : ℝ) {p x : ℝ} (hxp : x < p) :
     simp only [selectionGreen, min_eq_right (le_of_lt hq), max_eq_left (le_of_lt hq)]
     ring
 
-/-- **Continuity of the sojourn density in the starting frequency.** The sojourn density is continuous in the starting frequency (in particular at `p = x`). -/
+/-- The sojourn density is continuous in the starting frequency (in particular at `p = x`). -/
 theorem continuous_selectionGreen_left (σ x : ℝ) : Continuous fun p => selectionGreen σ p x :=
   (((continuous_const.mul ((continuous_kimuraFixation σ).comp
     (continuous_id.min continuous_const))).mul (continuous_const.sub
     ((continuous_kimuraFixation σ).comp (continuous_id.max continuous_const)))).div_const _)
 
-/-- **Left derivative of the sojourn density at the diagonal.** Left derivative at the diagonal: `∂_p Ψ(x⁻, x) = 2 (1 - u(x)) / (x (1 - x))`. Together with
+/-- Left derivative at the diagonal: `∂_p Ψ(x⁻, x) = 2 (1 - u(x)) / (x (1 - x))`. Together with
 `hasDerivWithinAt_selectionGreen_Ici` this gives the jump `-2 / (x (1 - x))` of `∂_p Ψ` at
 `p = x`, i.e. `L_σ Ψ(·, x) = -δ_x` in the distributional sense. -/
 theorem hasDerivWithinAt_selectionGreen_Iic (σ : ℝ) {x : ℝ} (hx : x ∈ Ioo (0 : ℝ) 1) :
@@ -487,7 +487,7 @@ theorem hasDerivWithinAt_selectionGreen_Iic (σ : ℝ) {x : ℝ} (hx : x ∈ Ioo
     ring
   · field_simp
 
-/-- **Right derivative of the sojourn density at the diagonal.** Right derivative at the diagonal: `∂_p Ψ(x⁺, x) = -2 u(x) / (x (1 - x))`. -/
+/-- Right derivative at the diagonal: `∂_p Ψ(x⁺, x) = -2 u(x) / (x (1 - x))`. -/
 theorem hasDerivWithinAt_selectionGreen_Ici (σ : ℝ) {x : ℝ} (hx : x ∈ Ioo (0 : ℝ) 1) :
     HasDerivWithinAt (fun p => selectionGreen σ p x)
       (-(2 * kimuraFixation σ x / (x * (1 - x)))) (Ici x) x := by
@@ -505,14 +505,14 @@ theorem hasDerivWithinAt_selectionGreen_Ici (σ : ℝ) {x : ℝ} (hx : x ∈ Ioo
     ring
   · field_simp
 
-/-- **Maruyama–Kimura conditional sojourn density.** The Maruyama–Kimura conditional sojourn density (the paper's `Ψ_z(p, z)`): given the initial
+/-- The Maruyama–Kimura conditional sojourn density (the paper's `Ψ_z(p, z)`): given the initial
 frequency `p` and the current frequency `x`, the density of mean time spent at frequency `z`
 along the path, `Ψ(p, z) Ψ(z, x) / Ψ(p, x)` (Maruyama and Kimura 1975; Kiezun et al. 2013,
 Methods). Time in units of `2N` generations. -/
 noncomputable def ageDensity (σ p x z : ℝ) : ℝ :=
   selectionGreen σ p z * selectionGreen σ z x / selectionGreen σ p x
 
-/-- **Closed-form sojourn density below the current frequency.** The paper's closed form `Ψ₁(z)` for `0 < z < x` (Kiezun et al. 2013, Methods), in units of
+/-- The paper's closed form `Ψ₁(z)` for `0 < z < x` (Kiezun et al. 2013, Methods), in units of
 `2N` generations with `σ = 2Ns`:
 `(e^{-2σ(1-z)} - 1)(e^{-2σz} - 1) / (σ z (1 - z) (1 - e^{-2σ}))`, and its continuous extension
 `2` for `σ = 0`. It does not depend on the current frequency `x`. -/
@@ -521,7 +521,7 @@ noncomputable def maruyamaBelow (σ z : ℝ) : ℝ :=
     (exp (-2 * σ * (1 - z)) - 1) * (exp (-2 * σ * z) - 1) /
       (σ * z * (1 - z) * (1 - exp (-2 * σ)))
 
-/-- **Closed-form sojourn density above the current frequency.** The paper's closed form `Ψ₂(z)` for `x < z < 1` (Kiezun et al. 2013, Methods), in units of
+/-- The paper's closed form `Ψ₂(z)` for `x < z < 1` (Kiezun et al. 2013, Methods), in units of
 `2N` generations with `σ = 2Ns`:
 `(e^{-2σ(1-z)} - 1)(e^{2σ(1-z)} - 1)(1 - e^{2σx}) /
 (σ z (1 - z)(e^{-2σ(1-x)} - 1)(1 - e^{2σ}))`, and its continuous extension
@@ -531,7 +531,7 @@ noncomputable def maruyamaAbove (σ x z : ℝ) : ℝ :=
     (exp (-2 * σ * (1 - z)) - 1) * (exp (2 * σ * (1 - z)) - 1) * (1 - exp (2 * σ * x)) /
       (σ * z * (1 - z) * (exp (-2 * σ * (1 - x)) - 1) * (1 - exp (2 * σ)))
 
-/-- **Mean age of an allele at a given frequency.** The mean age of an allele at current frequency `x` (the paper's `a(x)`), in units of `2N`
+/-- The mean age of an allele at current frequency `x` (the paper's `a(x)`), in units of `2N`
 generations: `∫₀^x Ψ₁(z) dz + ∫_x^1 Ψ₂(z) dz`. -/
 noncomputable def meanAge (σ x : ℝ) : ℝ :=
   (∫ z in (0 : ℝ)..x, maruyamaBelow σ z) + ∫ z in x..1, maruyamaAbove σ x z
@@ -542,7 +542,7 @@ private theorem exp_ne_exp_of_ne {σ a b : ℝ} (hσ : σ ≠ 0) (hab : a ≠ b)
   intro h
   exact hab (mul_left_cancel₀ (by simpa using hσ : -2 * σ ≠ 0) h)
 
-/-- **Sojourn density below the current frequency via fixation probability.** `Ψ₁` through Kimura's fixation probability: `Ψ₁(z) = 2 u(z)(1 - u(z)) / (z (1 - z) u'(z))`
+/-- `Ψ₁` through Kimura's fixation probability: `Ψ₁(z) = 2 u(z)(1 - u(z)) / (z (1 - z) u'(z))`
 on `(0, 1)`. -/
 theorem maruyamaBelow_eq {σ z : ℝ} (hz : z ∈ Ioo (0 : ℝ) 1) :
     maruyamaBelow σ z = 2 * kimuraFixation σ z * (1 - kimuraFixation σ z) /
@@ -564,7 +564,7 @@ theorem maruyamaBelow_eq {σ z : ℝ} (hz : z ∈ Ioo (0 : ℝ) 1) :
   field_simp
   ring
 
-/-- **Sojourn density above the current frequency via fixation probability.** `Ψ₂` through Kimura's fixation probability:
+/-- `Ψ₂` through Kimura's fixation probability:
 `Ψ₂(z) = 2 u(x)(1 - u(z))² / ((1 - u(x)) z (1 - z) u'(z))` on `(0, 1)`. -/
 theorem maruyamaAbove_eq {σ x z : ℝ} (hx : x ∈ Ioo (0 : ℝ) 1) (hz : z ∈ Ioo (0 : ℝ) 1) :
     maruyamaAbove σ x z = 2 * kimuraFixation σ x * (1 - kimuraFixation σ z) ^ 2 /
@@ -708,7 +708,7 @@ private theorem exp_two_mul_sub_one (u : ℝ) : exp (2 * u) - 1 = 2 * exp u * si
   rw [sinh_eq, e]
   linear_combination e2
 
-/-- **Hyperbolic form of the sojourn density below the current frequency.** `Ψ₁` in hyperbolic form: `2 sinh(σz) sinh(σ(1 - z)) / (σ z (1 - z) sinh σ)` for `σ ≠ 0`. -/
+/-- `Ψ₁` in hyperbolic form: `2 sinh(σz) sinh(σ(1 - z)) / (σ z (1 - z) sinh σ)` for `σ ≠ 0`. -/
 theorem maruyamaBelow_eq_sinh {σ z : ℝ} (hσ : σ ≠ 0) (hz : z ∈ Ioo (0 : ℝ) 1) :
     maruyamaBelow σ z = 2 * sinh (σ * z) * sinh (σ * (1 - z)) / (σ * z * (1 - z) * sinh σ) := by
   have h0 : z ≠ 0 := hz.1.ne'
@@ -727,7 +727,7 @@ theorem maruyamaBelow_eq_sinh {σ z : ℝ} (hσ : σ ≠ 0) (hz : z ∈ Ioo (0 :
   have p2 := (exp_pos (-(σ * z))).ne'
   field_simp
 
-/-- **Hyperbolic form of the sojourn density above the current frequency.** `Ψ₂` in hyperbolic form:
+/-- `Ψ₂` in hyperbolic form:
 `2 sinh(σ(1 - z))² sinh(σx) / (σ sinh σ sinh(σ(1 - x)) z (1 - z))` for `σ ≠ 0`. -/
 theorem maruyamaAbove_eq_sinh {σ x z : ℝ} (hσ : σ ≠ 0) (hx : x ∈ Ioo (0 : ℝ) 1)
     (hz : z ∈ Ioo (0 : ℝ) 1) :
@@ -829,7 +829,7 @@ private theorem maruyamaBelow_pos_of_pos {σ z : ℝ} (hσ : 0 < σ) (hz : z ∈
     (sinh_pos_iff.2 (mul_pos hσ hz1))) (mul_pos (mul_pos (mul_pos hσ hz.1) hz1)
     (sinh_pos_iff.2 hσ))
 
-/-- **Positivity of the sojourn density below the current frequency.** `Ψ₁` is positive on `(0, 1)`. -/
+/-- `Ψ₁` is positive on `(0, 1)`. -/
 theorem maruyamaBelow_pos (σ : ℝ) {z : ℝ} (hz : z ∈ Ioo (0 : ℝ) 1) : 0 < maruyamaBelow σ z := by
   rcases lt_trichotomy σ 0 with h | rfl | h
   · rw [← maruyamaBelow_neg σ hz]
@@ -891,7 +891,7 @@ private theorem maruyamaAbove_pos_of_pos {σ x z : ℝ} (hσ : 0 < σ) (hx : 0 <
     (sinh_pos_iff.2 (mul_pos hσ hx))) (mul_pos (mul_pos (mul_pos (mul_pos hσ
     (sinh_pos_iff.2 hσ)) (sinh_pos_iff.2 (mul_pos hσ hx1))) (hx.trans hxz)) hz1)
 
-/-- **Positivity of the sojourn density above the current frequency.** `Ψ₂` is positive for `0 < x < z < 1`. -/
+/-- `Ψ₂` is positive for `0 < x < z < 1`. -/
 theorem maruyamaAbove_pos (σ : ℝ) {x z : ℝ} (hx : 0 < x) (hxz : x < z) (hz : z < 1) :
     0 < maruyamaAbove σ x z := by
   rcases lt_trichotomy σ 0 with h | rfl | h
@@ -904,7 +904,7 @@ theorem maruyamaAbove_pos (σ : ℝ) {x z : ℝ} (hx : 0 < x) (hxz : x < z) (hz 
     positivity
   · exact maruyamaAbove_pos_of_pos h hx hxz hz
 
-/-- **Sojourn density above the current frequency vanishes at one.** At `z = 1` the closed form `Ψ₂` vanishes (a null set for the integral). -/
+/-- At `z = 1` the closed form `Ψ₂` vanishes (a null set for the integral). -/
 @[simp]
 theorem maruyamaAbove_one_right (σ x : ℝ) : maruyamaAbove σ x 1 = 0 := by
   simp [maruyamaAbove]
@@ -924,7 +924,7 @@ private theorem measurable_maruyamaAbove (σ x : ℝ) : Measurable (maruyamaAbov
   unfold maruyamaAbove
   split_ifs <;> fun_prop
 
-/-- **Integrability of the sojourn density below the current frequency.** `Ψ₁` is integrable on `[0, x]` (it is bounded by `2`). -/
+/-- `Ψ₁` is integrable on `[0, x]` (it is bounded by `2`). -/
 theorem intervalIntegrable_maruyamaBelow (σ : ℝ) {x : ℝ} (hx : x ∈ Icc (0 : ℝ) 1) :
     IntervalIntegrable (maruyamaBelow σ) volume 0 x := by
   rw [intervalIntegrable_iff_integrableOn_Ioc_of_le hx.1]
@@ -939,7 +939,7 @@ theorem intervalIntegrable_maruyamaBelow (σ : ℝ) {x : ℝ} (hx : x ∈ Icc (0
   · simp [maruyamaBelow]
   · exact (maruyamaBelow_lt hσ hz').le.trans (by simp [maruyamaBelow])
 
-/-- **Integrability of the sojourn density above the current frequency.** `Ψ₂` is integrable on `[x, 1]` for `x ∈ (0, 1)` (it is bounded by `2 / (1 - x)`). -/
+/-- `Ψ₂` is integrable on `[x, 1]` for `x ∈ (0, 1)` (it is bounded by `2 / (1 - x)`). -/
 theorem intervalIntegrable_maruyamaAbove (σ : ℝ) {x : ℝ} (hx : x ∈ Ioo (0 : ℝ) 1) :
     IntervalIntegrable (maruyamaAbove σ x) volume x 1 := by
   have hx1 := sub_pos.2 hx.2

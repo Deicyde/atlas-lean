@@ -84,12 +84,12 @@ section MME
 variable {n p q : Type*} [Fintype n] [DecidableEq n] [Fintype p] [DecidableEq p]
   [Fintype q] [DecidableEq q]
 
-/-- **Phenotypic covariance of a linear mixed model.** The phenotypic covariance `V = Z G Zᵀ + R` of the linear mixed model
+/-- The phenotypic covariance `V = Z G Zᵀ + R` of the linear mixed model
 `y = X b + Z u + e` with `Cov u = G`, `Cov e = R`. -/
 def phenCov (Z : Matrix n q ℝ) (G : Matrix q q ℝ) (R : Matrix n n ℝ) : Matrix n n ℝ :=
   Z * G * Zᵀ + R
 
-/-- **Solution of Henderson's mixed-model equations.** Henderson's mixed-model equations for `y = X b + Z u + e`, `Cov u = G`, `Cov e = R`:
+/-- Henderson's mixed-model equations for `y = X b + Z u + e`, `Cov u = G`, `Cov e = R`:
 `[Xᵀ R⁻¹ X, Xᵀ R⁻¹ Z; Zᵀ R⁻¹ X, Zᵀ R⁻¹ Z + G⁻¹] [b; u] = [Xᵀ R⁻¹ y; Zᵀ R⁻¹ y]`. -/
 def IsMMESolution (X : Matrix n p ℝ) (Z : Matrix n q ℝ) (G : Matrix q q ℝ) (R : Matrix n n ℝ)
     (y : n → ℝ) (b : p → ℝ) (u : q → ℝ) : Prop :=
@@ -99,7 +99,7 @@ def IsMMESolution (X : Matrix n p ℝ) (Z : Matrix n q ℝ) (G : Matrix q q ℝ)
 variable {X : Matrix n p ℝ} {Z : Matrix n q ℝ} {G : Matrix q q ℝ} {R : Matrix n n ℝ}
 
 omit [Fintype n] [DecidableEq n] [DecidableEq q] in
-/-- **Positive definiteness of the phenotypic covariance.** `V = Z G Zᵀ + R` is positive definite. -/
+/-- `V = Z G Zᵀ + R` is positive definite. -/
 theorem posDef_phenCov [Finite n] (hG : G.PosDef) (hR : R.PosDef) : (phenCov Z G R).PosDef := by
   have h := hG.posSemidef.mul_mul_conjTranspose_same Z
   rw [conjTranspose_eq_transpose_of_trivial] at h
@@ -403,7 +403,7 @@ section MarginalEffects
 
 variable {Ω : Type*} {mΩ : MeasurableSpace Ω} {P : Measure Ω} {N M : ℕ}
 
-/-- **Marginal association estimate of a marker.** The `N`-normalized marginal association estimate `β̂_j = X_jᵀ y / N` of marker `j` for the
+/-- The `N`-normalized marginal association estimate `β̂_j = X_jᵀ y / N` of marker `j` for the
 phenotype `y = X β + ε` (fixed effects `β`, noise `ε`). -/
 noncomputable def marginalEffect (X : Matrix (Fin N) (Fin M) ℝ) (β : Fin M → ℝ)
     (ε : Fin N → Ω → ℝ) (j : Fin M) (ω : Ω) : ℝ :=

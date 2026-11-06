@@ -82,7 +82,7 @@ open scoped ENNReal NNReal Nat
 
 namespace MathlibExt.Probability.GaltonWatson
 
-/-- **First passage of the exploration walk.** The exploration walk started at `k` with steps `x_i - 1` stays positive at every time
+/-- The exploration walk started at `k` with steps `x_i - 1` stays positive at every time
 `j < n`: `j < k + ∑_{i < j} x_i`. Together with `∑ x_i + k = n` this says that the walk first
 hits `0` at time `n`. -/
 def IsFirstPassage (k n : ℕ) (x : Fin n → ℕ) : Prop :=
@@ -91,7 +91,7 @@ def IsFirstPassage (k n : ℕ) (x : Fin n → ℕ) : Prop :=
 instance (k n : ℕ) (x : Fin n → ℕ) : Decidable (IsFirstPassage k n x) := by
   unfold IsFirstPassage; infer_instance
 
-/-- **Cyclic shift of a tuple.** The cyclic shift `i ↦ x_{(i + r) mod n}` of a tuple. -/
+/-- The cyclic shift `i ↦ x_{(i + r) mod n}` of a tuple. -/
 def rotate {n : ℕ} (x : Fin n → ℕ) (r : ℕ) : Fin n → ℕ :=
   fun i => x ⟨(i.val + r) % n, Nat.mod_lt _ (Nat.zero_lt_of_lt i.isLt)⟩
 
@@ -297,13 +297,13 @@ theorem card_filter_isFirstPassage_rotate {k n : ℕ} (hk : 1 ≤ k) (x : Fin n 
   exact_mod_cast key
 
 
-/-- **Walk weight of step sequences ending at zero.** The weight `W_p(k, n) = ∑ ∏_i p(x_i)` over the step sequences `x : Fin n → ℕ` with
+/-- The weight `W_p(k, n) = ∑ ∏_i p(x_i)` over the step sequences `x : Fin n → ℕ` with
 `∑ x_i + k = n` (the walk from `k` is at `0` at time `n`). For `p(j) = P(ξ = j)` this is
 `P(ξ_1 + ⋯ + ξ_n = n - k)` when `k ≤ n`, and `0` when `k > n`. -/
 def walkWeight {R : Type*} [CommSemiring R] (p : ℕ → R) (k n : ℕ) : R :=
   ∑ x ∈ (Nat.antidiagonalTuple n (n - k)).filter (fun x => ∑ i, x i + k = n), ∏ i, p (x i)
 
-/-- **Hitting weight of first-passage step sequences.** The weight `H_p(k, n) = ∑ ∏_i p(x_i)` over the step sequences with `∑ x_i + k = n` along
+/-- The weight `H_p(k, n) = ∑ ∏_i p(x_i)` over the step sequences with `∑ x_i + k = n` along
 which the walk from `k` first hits `0` at time `n`. For `p(j) = P(ξ = j)` this is the
 probability `P(T = n)` that the total progeny of `k` ancestors is `n`. -/
 def hittingWeight {R : Type*} [CommSemiring R] (p : ℕ → R) (k n : ℕ) : R :=
@@ -382,7 +382,7 @@ private theorem measure_pi_eq_sum_of_subset {n : ℕ} (s : Finset (Fin n → ℕ
   rw [this, ← sum_measure_singleton]
   simp [Measure.pi_singleton]
 
-/-- **Probability of first passage at time n.** Under `ν^{⊗n}`, the event that the walk from `k` first hits `0` at time `n` has
+/-- Under `ν^{⊗n}`, the event that the walk from `k` first hits `0` at time `n` has
 measure `H_p(k, n)` with `p(j) = ν{j}`. When `ν` is a probability measure this is the
 probability `P(T = n)`. -/
 theorem measure_firstPassage (k n : ℕ) :
@@ -393,7 +393,7 @@ theorem measure_firstPassage (k n : ℕ) :
   simp only [mem_filter, Nat.mem_antidiagonalTuple]
   exact ⟨by omega, hx⟩
 
-/-- **Probability of the offspring walk event as a walk weight.** Under `ν^{⊗n}`, the event `ξ_1 + ⋯ + ξ_n + k = n` has measure `W_p(k, n)` with
+/-- Under `ν^{⊗n}`, the event `ξ_1 + ⋯ + ξ_n + k = n` has measure `W_p(k, n)` with
 `p(j) = ν{j}`. When `ν` is a probability measure this is the probability
 `P(ξ_1 + ⋯ + ξ_n = n - k)`. -/
 theorem measure_walk (k n : ℕ) :
@@ -432,7 +432,7 @@ private theorem sum_antidiagonalTuple_prod_pow_div (r : ℝ) (n m : ℕ) :
   push_cast
   field_simp
 
-/-- **Walk weights for Poisson offspring.** For Poisson(`r`) step weights, `W_p(k, n) = e^{-rn} (rn)^{n-k} / (n-k)!` when `k ≤ n`:
+/-- For Poisson(`r`) step weights, `W_p(k, n) = e^{-rn} (rn)^{n-k} / (n-k)!` when `k ≤ n`:
 the sum of `n` independent Poisson(`r`) variables is Poisson(`rn`). -/
 theorem walkWeight_poisson (r : ℝ≥0) {k n : ℕ} (hkn : k ≤ n) :
     walkWeight (fun j => (poissonMeasure r).real {j}) k n =
@@ -465,13 +465,13 @@ theorem hittingWeight_poisson_one (r : ℝ≥0) {n : ℕ} (hn : 1 ≤ n) :
   rw [Nat.cast_one, one_mul, eq_div_iff hf] at h
   linear_combination h
 
-/-- **Mean total progeny of a Galton–Watson process.** The mean total progeny `∑_n E Z_n` of the Galton–Watson process started from one individual.
+/-- The mean total progeny `∑_n E Z_n` of the Galton–Watson process started from one individual.
 By Tonelli this is `E ∑_n Z_n` for any process with the generation laws `law ν n`. -/
 noncomputable def meanTotalProgeny : ℝ≥0∞ :=
   ∑' n, ∫⁻ z, (z : ℝ≥0∞) ∂(law ν n)
 
 omit [IsFiniteMeasure ν] in
-/-- **Mean total progeny equals $1/(1-m)$.** The mean total progeny is `(1 - m)⁻¹` in `[0, ∞]`: it is `1 / (1 - m)` for `m < 1` and `∞`
+/-- The mean total progeny is `(1 - m)⁻¹` in `[0, ∞]`: it is `1 / (1 - m)` for `m < 1` and `∞`
 for `m ≥ 1` (`m` the mean offspring number). -/
 theorem meanTotalProgeny_eq [IsProbabilityMeasure ν] : meanTotalProgeny ν = (1 - mean ν)⁻¹ := by
   simp only [meanTotalProgeny, lintegral_law, ENNReal.tsum_geometric]

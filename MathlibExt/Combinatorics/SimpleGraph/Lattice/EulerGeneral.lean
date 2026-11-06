@@ -127,7 +127,7 @@ theorem euler_general (G : SimpleGraph V) :
         linarith
 
 omit [DecidableEq V] in
-/-- **Euler's formula solved for the number of components.** Euler's formula solved for the number of components: `c = |V| - |E| + F - 1`. -/
+/-- Euler's formula solved for the number of components: `c = |V| - |E| + F - 1`. -/
 theorem euler_general_disconnected_components (G : SimpleGraph V) :
     (Nat.card G.ConnectedComponent : ℤ)
       = (Nat.card V : ℤ) - G.edgeSet.ncard + faceCount G - 1 := by

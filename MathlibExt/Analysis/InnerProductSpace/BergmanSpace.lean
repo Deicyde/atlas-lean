@@ -83,7 +83,7 @@ open Filter Topology Set
 open scoped _root_.lp _root_.InnerProduct _root_.InnerProductSpace ENNReal
 open scoped ComplexInnerProductSpace
 
-/-- **Square of the complex geometric series.** The Cauchy product of the geometric series with itself: the series
+/-- The Cauchy product of the geometric series with itself: the series
 `∑' n, (n + 1) * qⁿ` sums to `(1 - q)⁻¹ ^ 2`. -/
 theorem hasSum_succ_mul_pow_complex {q : ℂ} (hq : ‖q‖ < 1) :
     HasSum (fun n : ℕ => ((n : ℂ) + 1) * q ^ n) ((1 - q)⁻¹ ^ 2) := by
@@ -103,7 +103,7 @@ theorem hasSum_succ_mul_pow_complex {q : ℂ} (hq : ‖q‖ < 1) :
   push_cast
   ring
 
-/-- **Square of the real geometric series.** The real form of the Cauchy product above. -/
+/-- The real form of the Cauchy product above. -/
 theorem hasSum_succ_mul_pow_real {r : ℝ} (h0 : 0 ≤ r) (h1 : r < 1) :
     HasSum (fun n : ℕ => ((n : ℝ) + 1) * r ^ n) ((1 - r)⁻¹ ^ 2) := by
   have hgeo := hasSum_geometric_of_lt_one h0 h1
@@ -124,7 +124,7 @@ theorem hasSum_succ_mul_pow_real {r : ℝ} (h0 : 0 ≤ r) (h1 : r < 1) :
   push_cast
   ring
 
-/-- **Squared norms of the Bergman kernel coefficients.** The squared norms of the Bergman kernel coefficients are
+/-- The squared norms of the Bergman kernel coefficients are
 `(n + 1) * ‖z‖ ^ (2 * n)`. -/
 theorem norm_sq_bergman_coeff (z : ℂ) (n : ℕ) :
     ‖(starRingEnd ℂ z) ^ n * (Real.sqrt ((n : ℝ) + 1) : ℂ)‖ ^ (2 : ℝ) =
@@ -134,7 +134,7 @@ theorem norm_sq_bergman_coeff (z : ℂ) (n : ℕ) :
     Real.sq_sqrt (by positivity : (0 : ℝ) ≤ (n : ℝ) + 1), ← pow_mul, mul_comm n 2, pow_mul]
   ring
 
-/-- **Bergman kernel coefficients are square-summable.** The Bergman kernel coefficients are in `ℓ²` when `z` is in the disc. -/
+/-- The Bergman kernel coefficients are in `ℓ²` when `z` is in the disc. -/
 theorem memℓp_bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) :
     Memℓp (fun n : ℕ => (starRingEnd ℂ z) ^ n * (Real.sqrt ((n : ℝ) + 1) : ℂ)) 2 := by
   apply memℓp_gen
@@ -145,7 +145,7 @@ theorem memℓp_bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) :
     simpa using h
   exact (hasSum_succ_mul_pow_real (sq_nonneg _) h1).summable
 
-/-- **Bergman kernel.** The **Bergman kernel** at `z`: the `ℓ²(ℕ, ℂ)` sequence with
+/-- The **Bergman kernel** at `z`: the `ℓ²(ℕ, ℂ)` sequence with
 coefficients `√(n + 1) * (conj z)ⁿ`. -/
 noncomputable def bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) : ℓ²(ℕ, ℂ) :=
   ⟨fun n => (starRingEnd ℂ z) ^ n * (Real.sqrt ((n : ℝ) + 1) : ℂ),
@@ -156,7 +156,7 @@ noncomputable def bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) : ℓ²(ℕ, ℂ) :
       (starRingEnd ℂ z) ^ n * (Real.sqrt ((n : ℝ) + 1) : ℂ) :=
   rfl
 
-/-- **Bergman kernel at the origin.** The Bergman kernel at `0` is the first standard basis vector. -/
+/-- The Bergman kernel at `0` is the first standard basis vector. -/
 theorem bergmanKernel_zero (hz : ‖(0 : ℂ)‖ < 1) :
     bergmanKernel 0 hz = lp.single 2 0 (1 : ℂ) := by
   apply lp.ext
@@ -168,7 +168,7 @@ theorem bergmanKernel_zero (hz : ‖(0 : ℂ)‖ < 1) :
   · rw [Pi.single_eq_of_ne hn, map_zero]
     simp [zero_pow hn]
 
-/-- **Squared norm of the Bergman kernel.** The squared norm of the Bergman kernel is `1 / (1 - ‖z‖²)²`. -/
+/-- The squared norm of the Bergman kernel is `1 / (1 - ‖z‖²)²`. -/
 theorem norm_sq_bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) :
     ‖bergmanKernel z hz‖ ^ 2 = 1 / (1 - ‖z‖ ^ 2) ^ 2 := by
   have h1 : ‖z‖ ^ 2 < 1 := by
@@ -184,7 +184,7 @@ theorem norm_sq_bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) :
   rw [h2', Real.rpow_two] at hpow
   exact hpow
 
-/-- **Norm of the Bergman kernel.** The norm of the Bergman kernel is `1 / (1 - ‖z‖²)`. -/
+/-- The norm of the Bergman kernel is `1 / (1 - ‖z‖²)`. -/
 theorem norm_bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) :
     ‖bergmanKernel z hz‖ = 1 / (1 - ‖z‖ ^ 2) := by
   have hpos : (0 : ℝ) < 1 - ‖z‖ ^ 2 := by
@@ -196,11 +196,11 @@ theorem norm_bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) :
     rw [← hsq, Real.sqrt_sq (norm_nonneg _)]
   rw [hnorm, one_div, ← inv_pow, Real.sqrt_sq (le_of_lt (inv_pos.mpr hpos)), one_div]
 
-/-- **Point evaluation on the Bergman space.** Point evaluation on `A²(𝔻)`: the inner product with the Bergman kernel. -/
+/-- Point evaluation on `A²(𝔻)`: the inner product with the Bergman kernel. -/
 noncomputable def bergmanEval (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) : ℂ :=
   ⟪bergmanKernel z hz, a⟫
 
-/-- **Bergman point evaluation as a Taylor series.** Point evaluation is the Taylor series `∑' n, a n * √(n + 1) * zⁿ`. -/
+/-- Point evaluation is the Taylor series `∑' n, a n * √(n + 1) * zⁿ`. -/
 theorem bergmanEval_eq_tsum (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     bergmanEval z hz a = ∑' n, a n * (Real.sqrt ((n : ℝ) + 1) : ℂ) * z ^ n := by
   unfold bergmanEval
@@ -211,7 +211,7 @@ theorem bergmanEval_eq_tsum (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     Complex.conj_ofReal]
   ring
 
-/-- **Convergence of the Taylor series of a Bergman space function.** The Taylor series of an `A²` function converges at every
+/-- The Taylor series of an `A²` function converges at every
 point of the disc. -/
 theorem summable_bergmanEval_terms (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     Summable (fun n => a n * (Real.sqrt ((n : ℝ) + 1) : ℂ) * z ^ n) := by
@@ -222,23 +222,23 @@ theorem summable_bergmanEval_terms (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, 
     Complex.conj_ofReal]
   ring
 
-/-- **Bounded point-evaluation functional on the Bergman space.** Point evaluation as a bounded linear functional on `A²(𝔻)`. -/
+/-- Point evaluation as a bounded linear functional on `A²(𝔻)`. -/
 noncomputable def bergmanEvalCLM (z : ℂ) (hz : ‖z‖ < 1) : ℓ²(ℕ, ℂ) →L[ℂ] ℂ :=
   innerSL ℂ (bergmanKernel z hz)
 
-/-- **Bergman point evaluation is the inner product with the kernel.** The bounded point-evaluation functional acts by the inner product
+/-- The bounded point-evaluation functional acts by the inner product
 with the Bergman kernel. -/
 theorem bergmanEvalCLM_apply (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     bergmanEvalCLM z hz a = bergmanEval z hz a :=
   rfl
 
-/-- **Operator norm of Bergman point evaluation.** The operator norm of point evaluation is `1 / (1 - ‖z‖²)`. -/
+/-- The operator norm of point evaluation is `1 / (1 - ‖z‖²)`. -/
 theorem norm_bergmanEvalCLM (z : ℂ) (hz : ‖z‖ < 1) :
     ‖bergmanEvalCLM z hz‖ = 1 / (1 - ‖z‖ ^ 2) := by
   show ‖innerSL ℂ (bergmanKernel z hz)‖ = 1 / (1 - ‖z‖ ^ 2)
   rw [innerSL_apply_norm, norm_bergmanKernel]
 
-/-- **Pointwise bound for Bergman space functions.** The pointwise bound for `A²` functions: `‖f(z)‖ ≤ ‖f‖ / (1 - ‖z‖²)`. -/
+/-- The pointwise bound for `A²` functions: `‖f(z)‖ ≤ ‖f‖ / (1 - ‖z‖²)`. -/
 theorem norm_bergmanEval_le (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     ‖bergmanEval z hz a‖ ≤ ‖a‖ / (1 - ‖z‖ ^ 2) := by
   calc ‖bergmanEval z hz a‖ = ‖bergmanEvalCLM z hz a‖ := by
@@ -248,14 +248,14 @@ theorem norm_bergmanEval_le (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
         rw [norm_bergmanEvalCLM]
         ring
 
-/-- **Bergman evaluation at the origin.** Evaluation at `0` is the constant Taylor coefficient. -/
+/-- Evaluation at `0` is the constant Taylor coefficient. -/
 theorem bergmanEval_zero (a : ℓ²(ℕ, ℂ)) (hz : ‖(0 : ℂ)‖ < 1) :
     bergmanEval 0 hz a = a 0 := by
   unfold bergmanEval
   rw [bergmanKernel_zero hz, lp.inner_single_left, RCLike.inner_apply']
   simp
 
-/-- **Bergman evaluation of a monomial.** Evaluation of a monomial `c * √(n + 1) * zⁿ` (a single coefficient). -/
+/-- Evaluation of a monomial `c * √(n + 1) * zⁿ` (a single coefficient). -/
 theorem bergmanEval_single (z : ℂ) (hz : ‖z‖ < 1) (n : ℕ) (c : ℂ) :
     bergmanEval z hz (lp.single 2 n c) = c * (Real.sqrt ((n : ℝ) + 1) : ℂ) * z ^ n := by
   unfold bergmanEval
@@ -263,13 +263,13 @@ theorem bergmanEval_single (z : ℂ) (hz : ‖z‖ < 1) (n : ℕ) (c : ℂ) :
     map_mul, map_pow, RCLike.conj_conj, Complex.conj_ofReal]
   ring
 
-/-- **Reproducing property of the Bergman kernel, conjugate form.** The reproducing property in the other order: `⟪a, k_z⟫ = conj (f(z))`. -/
+/-- The reproducing property in the other order: `⟪a, k_z⟫ = conj (f(z))`. -/
 theorem inner_bergmanKernel_right (z : ℂ) (hz : ‖z‖ < 1) (a : ℓ²(ℕ, ℂ)) :
     ⟪a, bergmanKernel z hz⟫ = (starRingEnd ℂ) (bergmanEval z hz a) := by
   unfold bergmanEval
   rw [← inner_conj_symm]
 
-/-- **Inner product of two Bergman kernels.** The inner product of two Bergman kernels is the Bergman kernel function
+/-- The inner product of two Bergman kernels is the Bergman kernel function
 `(1 - z * conj w)⁻¹ ^ 2`. -/
 theorem inner_bergmanKernel_bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) (w : ℂ)
     (hw : ‖w‖ < 1) :
@@ -299,7 +299,7 @@ theorem inner_bergmanKernel_bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) (w : ℂ)
   simp only [hterm]
   exact (hasSum_succ_mul_pow_complex hnorm).tsum_eq
 
-/-- **Bergman kernel evaluated at its own point.** Evaluation of the kernel at its own point: `f_z(k_z) = (1 - ‖z‖²)⁻¹ ^ 2`,
+/-- Evaluation of the kernel at its own point: `f_z(k_z) = (1 - ‖z‖²)⁻¹ ^ 2`,
 so the pointwise bound is sharp. -/
 theorem bergmanEval_bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) :
     bergmanEval z hz (bergmanKernel z hz) = ((1 - ‖z‖ ^ 2 : ℝ) : ℂ)⁻¹ ^ 2 := by
@@ -307,13 +307,13 @@ theorem bergmanEval_bergmanKernel (z : ℂ) (hz : ‖z‖ < 1) :
   rw [inner_bergmanKernel_bergmanKernel, Complex.mul_conj, Complex.normSq_eq_norm_sq,
     Complex.ofReal_sub, Complex.ofReal_one]
 
-/-- **Rescaled Bergman monomial.** The rescaled monomial `eₙ(z) = √(n + 1) zⁿ` for normalized area
+/-- The rescaled monomial `eₙ(z) = √(n + 1) zⁿ` for normalized area
 measure `dA / π`, represented by the `n`th standard basis vector in the
 coefficient model. -/
 noncomputable def bergmanMonomial (n : ℕ) : ℓ²(ℕ, ℂ) :=
   lp.single 2 n (1 : ℂ)
 
-/-- **Inner products of rescaled Bergman monomials are Kronecker deltas.** The coordinate inner products of the rescaled monomials equal the
+/-- The coordinate inner products of the rescaled monomials equal the
 Kronecker delta. -/
 theorem bergmanMonomial_orthonormal (m n : ℕ) :
     ⟪(lp.single 2 m (1 : ℂ) : ℓ²(ℕ, ℂ)), (lp.single 2 n (1 : ℂ) : ℓ²(ℕ, ℂ))⟫_ℂ =
@@ -324,12 +324,12 @@ theorem bergmanMonomial_orthonormal (m n : ℕ) :
     simp [Pi.single_eq_same]
   · simp [h]
 
-/-- **Rescaled Bergman monomials are orthonormal.** The rescaled monomial family satisfies Mathlib's standard orthonormal
+/-- The rescaled monomial family satisfies Mathlib's standard orthonormal
 predicate. -/
 theorem orthonormal_bergmanMonomial : Orthonormal ℂ bergmanMonomial :=
   orthonormal_iff_ite.mpr bergmanMonomial_orthonormal
 
-/-- **Bergman coefficients as inner products with monomials.** The coefficient of `a` at `n` is the inner product with `eₙ`. -/
+/-- The coefficient of `a` at `n` is the inner product with `eₙ`. -/
 theorem bergmanCoeff_eq_inner (a : ℓ²(ℕ, ℂ)) (n : ℕ) :
     a n = ⟪lp.single 2 n (1 : ℂ), a⟫ := by
   rw [lp.inner_single_left, RCLike.inner_apply']

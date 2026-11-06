@@ -92,7 +92,7 @@ private theorem sum_inv_sq_le (s : Finset ℕ) :
     ∑ k ∈ s, 1 / (k : ℝ) ^ 2 ≤ Real.pi ^ 2 / 6 :=
   sum_le_hasSum s (fun _ _ => by positivity) hasSum_zeta_two
 
-/-- **Exponential upper bound for the partition function.** The number of integer partitions of `n` is at most
+/-- The number of integer partitions of `n` is at most
 `exp (π * sqrt (2 / 3) * sqrt n)`. -/
 theorem card_le_exp (n : ℕ) :
     (Fintype.card (Partition n) : ℝ) ≤

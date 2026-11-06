@@ -21,8 +21,7 @@ import Mathlib.NumberTheory.Harmonic.ZetaAsymp
 `(s - 1)⁻¹ + riemannZeta₀ s`, and `riemannZeta₀` is entire.
 -/
 
-/-- **Meromorphy of the Riemann zeta function.** The Riemann zeta function $\zeta$ is
-meromorphic on all of $\mathbb{C}$. -/
+/-- The Riemann zeta function is meromorphic on `ℂ`. -/
 theorem meromorphicOn_riemannZeta : MeromorphicOn riemannZeta Set.univ := by
   have hInv : MeromorphicOn (fun s : ℂ => (s - 1)⁻¹) Set.univ :=
     (analyticOnNhd_id.sub analyticOnNhd_const).meromorphicOn.inv

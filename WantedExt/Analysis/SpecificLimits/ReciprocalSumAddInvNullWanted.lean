@@ -43,15 +43,16 @@ open Filter Topology
 
 namespace MathlibExt.Analysis.SpecificLimits.ReciprocalSumAddInvNullWanted
 
-/-- **Partial sums of $a_k + 1/a_k$.** For a real sequence $(a_k)_{k \in \mathbb{N}}$, the sequence
-$(x_n)_{n \in \mathbb{N}}$ is given by $x_n = \sum_{k=0}^{n} (a_k + 1/a_k)$ for $n \in \mathbb{N}$,
-with the convention $1/0 = 0$. -/
+/-- The partial sums `xSeq a n = ∑ k ∈ range (n + 1), (a k + 1 / a k)` of the problem. -/
 noncomputable def xSeq (a : ℕ → ℝ) : ℕ → ℝ :=
   fun n ↦ ∑ k ∈ Finset.range (n + 1), (a k + (1 / a k))
 
-/-- **The reciprocals of $\sum_{k=0}^{n} (a_k + 1/a_k)$ tend to zero.** Let
-$(a_n)_{n \in \mathbb{N}}$ be a sequence of positive real numbers, and for $n \in \mathbb{N}$ let
-$x_n = \sum_{k=0}^{n} (a_k + 1/a_k)$. Then $1/x_n \to 0$ as $n \to \infty$.
+/-- Let $(a_n)$ be a sequence in $(0,\infty)$ and define
+
+\[
+x_n := \sum_{k=0}^n (a_k+1/a_k),\qquad n\in\N.
+\]
+Show that $(1/x_n)$ is a null sequence.
 
 Source: MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Sequences, series, summability;
 Convergence and divergence of infinite limiting processes),

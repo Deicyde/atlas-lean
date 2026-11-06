@@ -52,11 +52,7 @@ namespace Cslib.Games
 
 open Filter ωSequence
 
-/-- **Players of a parity game.** A parity game has exactly two players, the even player and the
-odd player.
-
-The even player is the one who wins the plays whose largest priority occurring infinitely often
-is even, and the odd player the one who wins those where it is odd. -/
+/-- The two players of a parity game. -/
 inductive Player where
   /-- The player who wins plays whose maximal recurring priority is even. -/
   | even
@@ -66,8 +62,7 @@ inductive Player where
 
 namespace Player
 
-/-- **Opponent.** The opponent of a player of a parity game is the other player: the opponent
-of the even player is the odd player, and the opponent of the odd player is the even player. -/
+/-- The other player. -/
 def opponent : Player → Player
   | even => odd
   | odd => even
@@ -82,28 +77,20 @@ def opponent : Player → Player
 theorem opponent_ne (p : Player) : p.opponent ≠ p := by
   cases p <;> decide
 
-/-- **Every player is $p$ or the opponent of $p$.** For all players $p$ and $q$ of a parity game,
-$q = p$ or $q$ is the opponent of $p$. -/
+/-- Every player is `p` or the opponent of `p`. -/
 theorem eq_or_eq_opponent (p q : Player) : q = p ∨ q = p.opponent := by
   cases p <;> cases q <;> simp
 
-/-- **Parity winning condition of a player.** A player wins an infinite sequence of
-natural-number priorities when the sequence satisfies that player's parity condition: the even
-player wins it when the largest priority occurring infinitely often exists and is even, and the
-odd player wins it when the largest priority occurring infinitely often exists and is odd. -/
+/-- The parity condition won by a player, on a sequence of priorities. -/
 def Wins : Player → ωSequence ℕ → Prop
   | even, ps => ParityEven ps
   | odd, ps => ParityOdd ps
 
 end Player
 
-/-- **Parity game.** A parity game on a type of positions consists of an owner for each
-position, which is one of the two players, a move relation between positions, where the owner of
-$v$ may move from $v$ to $w$ when $v$ is related to $w$, and a natural-number priority for each
-position, such that every position has at least one move (there are no dead ends).
-
-As in the usual infinite-play model, the absence of dead ends means that both players always
-have positional strategies. -/
+/-- A parity game on a type of positions: an owner and a priority for each position, and the
+move relation. As in the usual infinite-play model, every position has a move (no dead ends), so
+both players always have positional strategies (`nonempty_positionalStrategy`). -/
 structure ParityGame (Pos : Type*) where
   /-- The player choosing the move at each position. -/
   owner : Pos → Player
@@ -118,24 +105,15 @@ namespace ParityGame
 
 variable {Pos : Type*} (G : ParityGame Pos)
 
-/-- **Plays of a parity game.** An infinite sequence of positions $\pi_0, \pi_1, \dots$ of a
-parity game is a play if for every $i$ there is a move from $\pi_i$ to $\pi_{i+1}$. -/
+/-- A play is an infinite sequence of positions following moves. -/
 def IsPlay (π : ωSequence Pos) : Prop :=
   ∀ i, G.Move (π i) (π (i + 1))
 
-/-- **Winner of a play in a parity game.** Let $G$ be a parity game, write $\Omega(v)$ for the
-priority of a position $v$, and let $p$ be a player. An infinite sequence
-$\pi = \pi_0 \pi_1 \pi_2 \dots$ of positions of $G$ is won by $p$ when its priority sequence
-$\Omega(\pi_0) \Omega(\pi_1) \Omega(\pi_2) \dots$ satisfies the parity condition of $p$: among
-the priorities occurring infinitely often there is a largest one, and it is even if $p$ is the
-even player and odd if $p$ is the odd player.
-
-The definition applies to every infinite sequence of positions, whether or not it follows the
-moves of $G$. -/
+/-- Player `p` wins the play `π`. -/
 def WonBy (p : Player) (π : ωSequence Pos) : Prop :=
   p.Wins (π.map G.priority)
 
-/-- **Positional strategy in a parity game.** A positional (memoryless) strategy for player `p`: a choice of successor at each position,
+/-- A positional (memoryless) strategy for player `p`: a choice of successor at each position,
 legal at the positions `p` owns. Its values elsewhere are irrelevant. -/
 structure PositionalStrategy (p : Player) where
   /-- The chosen successor. -/
@@ -143,29 +121,23 @@ structure PositionalStrategy (p : Player) where
   /-- At positions owned by `p`, the chosen successor is a legal move. -/
   legal : ∀ v, G.owner v = p → G.Move v (next v)
 
-/-- **Positional strategies exist.** In a parity game, every player has a positional strategy,
-since every position has a move. -/
+/-- Every player has a positional strategy, since every position has a move. -/
 theorem nonempty_positionalStrategy (p : Player) : Nonempty (G.PositionalStrategy p) :=
   ⟨⟨fun v => (G.serial v).choose, fun v _ => (G.serial v).choose_spec⟩⟩
 
 variable {G}
 
-/-- **Plays conforming to a strategy.** Let $\sigma$ be a positional strategy of player $p$ in a
-parity game. An infinite sequence of positions $\pi_0, \pi_1, \dots$ (not necessarily a play)
-conforms to $\sigma$ if $\pi_{i+1} = \sigma(\pi_i)$ for every $i$ such that $p$ owns $\pi_i$. -/
+/-- A play conforms to a strategy of `p` if `p` always moves as the strategy prescribes. -/
 def Conforms {p : Player} (σ : G.PositionalStrategy p) (π : ωSequence Pos) : Prop :=
   ∀ i, G.owner (π i) = p → π (i + 1) = σ.next (π i)
 
-/-- **Winning strategy from a position.** Let $p$ be a player of a parity game. A positional
-strategy $\sigma$ of $p$ wins from a position $v$ when every play starting at $v$ that conforms
-to $\sigma$ (at every position owned by $p$, the play moves to the successor chosen by $\sigma$)
-is won by $p$. -/
+/-- The strategy `σ` of `p` wins from `v`: every play from `v` conforming to `σ` is won by `p`. -/
 def WinsFrom {p : Player} (σ : G.PositionalStrategy p) (v : Pos) : Prop :=
   ∀ π, G.IsPlay π → π 0 = v → Conforms σ π → G.WonBy p π
 
 variable (G)
 
-/-- **Winning region of a parity game.** The positions from which player `p` has a winning positional strategy. -/
+/-- The positions from which player `p` has a winning positional strategy. -/
 def WinningRegion (p : Player) : Set Pos :=
   { v | ∃ σ : G.PositionalStrategy p, WinsFrom σ v }
 
@@ -173,9 +145,7 @@ def WinningRegion (p : Player) : Set Pos :=
 
 variable {G}
 
-/-- **Bounded priorities give every play a winner.** Let $p$ be a player of a parity game in
-which every position has priority at most $d$, for some natural number $d$. Then every infinite
-sequence of positions, in particular every play, is won by $p$ or by the opponent of $p$. -/
+/-- With priorities bounded by `d`, every play is won by `p` or by the opponent. -/
 theorem wonBy_or_wonBy_opponent {d : ℕ} (hd : ∀ v, G.priority v ≤ d) (p : Player)
     (π : ωSequence Pos) : G.WonBy p π ∨ G.WonBy p.opponent π := by
   have hb : ∀ k, (π.map G.priority) k ≤ d := fun k => hd (π k)
@@ -183,18 +153,14 @@ theorem wonBy_or_wonBy_opponent {d : ℕ} (hd : ∀ v, G.priority v ≤ d) (p : 
   | even => exact parityEven_or_parityOdd hb
   | odd => exact (parityEven_or_parityOdd hb).symm
 
-/-- **No play is won by both players.** In a parity game, for every player $p$, no infinite
-sequence of positions (play or not) is won both by $p$ and by the opponent of $p$. -/
+/-- No play is won by both players. -/
 theorem not_wonBy_and_wonBy_opponent (p : Player) (π : ωSequence Pos) :
     ¬ (G.WonBy p π ∧ G.WonBy p.opponent π) := by
   cases p with
   | even => exact not_parityEven_and_parityOdd
   | odd => exact fun h => not_parityEven_and_parityOdd ⟨h.2, h.1⟩
 
-/-- **Winning is prefix independent.** Let $p$ be a player of a parity game, $\pi = (\pi_0,
-\pi_1, \dots)$ an infinite sequence of positions and $j$ a natural number. Then the sequence
-$(\pi_j, \pi_{j+1}, \dots)$, obtained by dropping the first $j$ positions of $\pi$, is won by $p$
-if and only if $\pi$ is won by $p$. -/
+/-- Winning is prefix independent. -/
 theorem wonBy_drop_iff (p : Player) (π : ωSequence Pos) (j : ℕ) :
     G.WonBy p (π.drop j) ↔ G.WonBy p π := by
   have hmap : (π.drop j).map G.priority = (π.map G.priority).drop j := rfl
@@ -211,19 +177,12 @@ theorem Conforms.drop {p : Player} {σ : G.PositionalStrategy p} {π : ωSequenc
 
 /-! ## The outcome of two positional strategies -/
 
-/-- **Joint successor of two strategies.** Let $\sigma$ be a positional strategy of player $p$
-and $\tau$ a positional strategy of the opponent of $p$ in a parity game. The joint successor of
-a position $v$ is $\sigma(v)$ if $p$ owns $v$, and $\tau(v)$ otherwise. -/
+/-- The successor chosen jointly by a strategy of `p` and a strategy of the opponent. -/
 def jointNext {p : Player} (σ : G.PositionalStrategy p)
     (τ : G.PositionalStrategy p.opponent) (v : Pos) : Pos :=
   if G.owner v = p then σ.next v else τ.next v
 
-/-- **Outcome of two positional strategies.** Let $p$ be a player of a parity game, $\sigma$ a
-positional strategy of $p$ and $\tau$ a positional strategy of the opponent of $p$. The outcome
-of $\sigma$ and $\tau$ from a position $v$ is the infinite sequence of positions
-$v_0, v_1, v_2, \dots$ with $v_0 = v$ in which $v_{i+1}$ is the successor chosen by $\sigma$ at
-$v_i$ if $p$ owns $v_i$, and the successor chosen by $\tau$ at $v_i$ otherwise. It is the play
-from $v$ in which $p$ follows $\sigma$ and the opponent follows $\tau$. -/
+/-- The play from `v` in which `p` follows `σ` and the opponent follows `τ`. -/
 def outcome {p : Player} (σ : G.PositionalStrategy p) (τ : G.PositionalStrategy p.opponent)
     (v : Pos) : ωSequence Pos :=
   ωSequence.iterate (jointNext σ τ) v
@@ -257,9 +216,7 @@ theorem outcome_conforms_opponent (v : Pos) : Conforms τ (outcome σ τ v) := b
   simp [hne]
 
 variable (G) in
-/-- **The winning regions of the two players are disjoint.** In a parity game, for every player
-$p$, no position lies both in the winning region of $p$ and in the winning region of the
-opponent of $p$. -/
+/-- The winning regions of the two players are disjoint. -/
 theorem disjoint_winningRegion (p : Player) :
     Disjoint (G.WinningRegion p) (G.WinningRegion p.opponent) := by
   rw [Set.disjoint_left]
@@ -270,9 +227,8 @@ theorem disjoint_winningRegion (p : Player) :
 
 /-! ## Winning strategies along moves -/
 
-/-- **Winning strategies keep winning along allowed moves.** In a parity game, let $\sigma$ be a
-positional strategy of player $p$ that wins from a position $v$, and let $w$ be a position with a
-move from $v$ to $w$ such that $w = \sigma(v)$ if $p$ owns $v$. Then $\sigma$ wins from $w$. -/
+/-- If `σ` wins from `v` and `w` is a move from `v` that `σ` allows (any move if the opponent
+owns `v`), then `σ` wins from `w`. -/
 theorem WinsFrom.of_move {v w : Pos} (h : WinsFrom σ v) (hmove : G.Move v w)
     (hσ : G.owner v = p → w = σ.next v) : WinsFrom σ w := by
   intro π hπ h0 hconf
@@ -289,9 +245,8 @@ theorem WinsFrom.of_move {v w : Pos} (h : WinsFrom σ v) (hmove : G.Move v w)
   have hwin := h _ hplay rfl hconf'
   rwa [← wonBy_drop_iff p _ 1, ← tail_eq_drop, tail_cons] at hwin
 
-/-- **Opponent moves stay in the winning region.** In a parity game, let $v$ be a position in the
-winning region of player $p$ that is owned by the opponent of $p$. Then every position $w$ with a
-move from $v$ to $w$ is in the winning region of $p$. -/
+/-- Winning regions are closed under the moves of the opponent: from a position of `p`'s winning
+region owned by the opponent, every move stays in the region. -/
 theorem move_mem_winningRegion {v w : Pos} (hv : v ∈ G.WinningRegion p)
     (hown : G.owner v = p.opponent) (hmove : G.Move v w) : w ∈ G.WinningRegion p := by
   obtain ⟨σ, hσ⟩ := hv
@@ -299,9 +254,8 @@ theorem move_mem_winningRegion {v w : Pos} (hv : v ∈ G.WinningRegion p)
   rw [hown] at h
   exact absurd h (Player.opponent_ne p)
 
-/-- **A winning strategy's move stays in the winning region.** In a parity game, let $\sigma$ be a
-positional strategy of player $p$ that wins from a position $v$ owned by $p$. Then the successor
-$\sigma(v)$ chosen by $\sigma$ is in the winning region of $p$. -/
+/-- From a position of `p`'s winning region owned by `p`, the winning strategy's move stays in
+the region. -/
 theorem next_mem_winningRegion {v : Pos} {σ : G.PositionalStrategy p} (hσ : WinsFrom σ v)
     (hown : G.owner v = p) : σ.next v ∈ G.WinningRegion p :=
   ⟨σ, hσ.of_move σ (σ.legal v hown) fun _ => rfl⟩

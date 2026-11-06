@@ -42,30 +42,30 @@ open Finset
 
 namespace StatMech.CellEulerChar
 
-/-- **Unit cell of the plane.** A unit cell `[a, a + 1] × [b, b + 1]` of the plane, labelled by its lower left corner. -/
+/-- A unit cell `[a, a + 1] × [b, b + 1]` of the plane, labelled by its lower left corner. -/
 abbrev Cell := ℤ × ℤ
 
-/-- **Lattice point as a vertex of the cell complex.** A lattice point of `ℤ²`, used as a vertex of the cell complex. -/
+/-- A lattice point of `ℤ²`, used as a vertex of the cell complex. -/
 abbrev Vtx := ℤ × ℤ
 
-/-- **Corners of a unit cell.** The four corners of a unit cell. -/
+/-- The four corners of a unit cell. -/
 def cellVerts (c : Cell) : Finset Vtx :=
   {(c.1, c.2), (c.1 + 1, c.2), (c.1, c.2 + 1), (c.1 + 1, c.2 + 1)}
 
-/-- **Sides of a unit cell.** The four sides of a unit cell, as unordered pairs of corners. -/
+/-- The four sides of a unit cell, as unordered pairs of corners. -/
 def cellEdges (c : Cell) : Finset (Sym2 Vtx) :=
   { s((c.1, c.2), (c.1 + 1, c.2)),
     s((c.1, c.2 + 1), (c.1 + 1, c.2 + 1)),
     s((c.1, c.2), (c.1, c.2 + 1)),
     s((c.1 + 1, c.2), (c.1 + 1, c.2 + 1)) }
 
-/-- **Vertices of a union of unit cells.** The vertices of the union of the cells in `K`. -/
+/-- The vertices of the union of the cells in `K`. -/
 def regVerts (K : Finset Cell) : Finset Vtx := K.biUnion cellVerts
 
-/-- **Edges of a union of unit cells.** The edges of the union of the cells in `K`. -/
+/-- The edges of the union of the cells in `K`. -/
 def regEdges (K : Finset Cell) : Finset (Sym2 Vtx) := K.biUnion cellEdges
 
-/-- **Euler characteristic of a union of unit cells.** The Euler characteristic `V - E + F` of the union of the cells in `K`, with one face
+/-- The Euler characteristic `V - E + F` of the union of the cells in `K`, with one face
 per
 cell. -/
 def regChi (K : Finset Cell) : ℤ :=
@@ -89,10 +89,10 @@ theorem euc_chi_singleton (c : Cell) : regChi {c} = 1 := by
     euc_cellVerts_card, euc_cellEdges_card, card_singleton]
   norm_num
 
-/-- **Number of new corners added by a cell.** The number of corners of `c` that are not already vertices of the region `K`. -/
+/-- The number of corners of `c` that are not already vertices of the region `K`. -/
 def newVerts (c : Cell) (K : Finset Cell) : ℕ := (cellVerts c \ regVerts K).card
 
-/-- **Number of new sides added by a cell.** The number of sides of `c` that are not already edges of the region `K`. -/
+/-- The number of sides of `c` that are not already edges of the region `K`. -/
 def newEdges (c : Cell) (K : Finset Cell) : ℕ := (cellEdges c \ regEdges K).card
 
 theorem euc_regVerts_insert (c : Cell) (K : Finset Cell) :
@@ -125,7 +125,7 @@ theorem euc_chi_attach (c : Cell) (K : Finset Cell) (hc : c ∉ K)
   rw [euc_chi_insert c K hc, harc]
   push_cast; ring
 
-/-- **Cell regions built by attaching cells along boundary arcs.** Regions built from a single cell by repeatedly attaching a new cell along a boundary arc: the
+/-- Regions built from a single cell by repeatedly attaching a new cell along a boundary arc: the
 new cell adds one more edge than vertex, so the Euler characteristic is unchanged. -/
 inductive EucBuildable : Finset Cell → Prop
   | singleton (c : Cell) : EucBuildable {c}

@@ -94,12 +94,12 @@ below would take Lean's junk value `0` (for example, `Λ = ⊤` would get pair r
 def mergerRate [IsFiniteMeasure Λ] (b k : ℕ) : ℝ :=
   if 2 ≤ k ∧ k ≤ b then ∫ x, (x : ℝ) ^ (k - 2) * (1 - (x : ℝ)) ^ (b - k) ∂Λ else 0
 
-/-- **Total merger rate of a Λ-coalescent.** The **total merger rate** `λ_b = ∑_{k=2}^b (b.choose k) λ_{b,k}` while there are `b`
+/-- The **total merger rate** `λ_b = ∑_{k=2}^b (b.choose k) λ_{b,k}` while there are `b`
 blocks (Pitman 1999; Berestycki 2009, §3.1). -/
 def totalMergerRate [IsFiniteMeasure Λ] (b : ℕ) : ℝ :=
   ∑ k ∈ Icc 2 b, (b.choose k : ℝ) * mergerRate Λ b k
 
-/-- **Generator of the Λ-coalescent block-counting process.** The generator of the **block-counting process** of the Λ-coalescent on the states
+/-- The generator of the **block-counting process** of the Λ-coalescent on the states
 `0, …, n` (state `b` means `b` blocks): from `b` blocks the process jumps to `j < b` blocks at
 rate `(b.choose (b + 1 - j)) λ_{b, b + 1 - j}` (a `(b + 1 - j)`-merger), and the diagonal is
 `-λ_b`. States `0` and `1` are absorbing (state `0` is never reached from `b ≥ 1`). -/
@@ -111,12 +111,12 @@ def blockCountingGenerator [IsFiniteMeasure Λ] (n : ℕ) :
 
 variable [IsFiniteMeasure Λ]
 
-/-- **Pitman's integral formula for merger rates when $2 \le k \le b$.** The merger rate inside its domain. -/
+/-- The merger rate inside its domain. -/
 theorem mergerRate_of_le {b k : ℕ} (hk : 2 ≤ k) (hkb : k ≤ b) :
     mergerRate Λ b k = ∫ x, (x : ℝ) ^ (k - 2) * (1 - (x : ℝ)) ^ (b - k) ∂Λ := by
   simp [mergerRate, hk, hkb]
 
-/-- **Nonnegativity of Λ-coalescent merger rates.** Merger rates are nonnegative. -/
+/-- Merger rates are nonnegative. -/
 theorem mergerRate_nonneg (b k : ℕ) : 0 ≤ mergerRate Λ b k := by
   unfold mergerRate
   split_ifs
@@ -124,16 +124,16 @@ theorem mergerRate_nonneg (b k : ℕ) : 0 ≤ mergerRate Λ b k := by
       (pow_nonneg (one_sub_nonneg x) _)
   · exact le_rfl
 
-/-- **Pair merger rate of a Λ-coalescent.** Two blocks merge at rate `Λ [0, 1]`; `Λ` is often normalized to a probability measure,
+/-- Two blocks merge at rate `Λ [0, 1]`; `Λ` is often normalized to a probability measure,
 so that this pair rate is `1` as in Kingman's coalescent. -/
 theorem mergerRate_two_two : mergerRate Λ 2 2 = Λ.real Set.univ := by
   simp [mergerRate]
 
-/-- **Nonnegativity of the total merger rate.** The total merger rate is nonnegative. -/
+/-- The total merger rate is nonnegative. -/
 theorem totalMergerRate_nonneg (b : ℕ) : 0 ≤ totalMergerRate Λ b := by
   exact sum_nonneg fun k _ => mul_nonneg (Nat.cast_nonneg _) (mergerRate_nonneg Λ b k)
 
-/-- **Λ-coalescent block-counting generator is a rate matrix.** The block-counting generator is a rate matrix: its jump rates are nonnegative and each
+/-- The block-counting generator is a rate matrix: its jump rates are nonnegative and each
 row sums to `0`, since the jump rates out of `b` blocks add up to `λ_b`. -/
 theorem isRateMatrix_blockCountingGenerator (n : ℕ) :
     ProbabilityTheory.IsRateMatrix (blockCountingGenerator Λ n) := by
@@ -183,7 +183,7 @@ private lemma integrable_pow_mul_one_sub_pow (a c : ℕ) :
   obtain ⟨h0, h1⟩ := pow_mul_one_sub_pow_mem a c x
   rwa [Real.norm_eq_abs, abs_of_nonneg h0]
 
-/-- **Merger rates are bounded by the total mass of Λ.** A merger rate is at most the total mass of `Λ`. -/
+/-- A merger rate is at most the total mass of `Λ`. -/
 theorem mergerRate_le_measure_univ (b k : ℕ) : mergerRate Λ b k ≤ Λ.real Set.univ := by
   unfold mergerRate
   split_ifs
@@ -209,7 +209,7 @@ theorem mergerRate_consistent {b k : ℕ} (hk : 2 ≤ k) (hkb : k ≤ b) :
     show i + 2 + j + 1 - (i + 2 + 1) = j by omega]
   ring
 
-/-- **Binomial identity behind the total merger rate.** The polynomial identity behind the closed form of the total merger rate:
+/-- The polynomial identity behind the closed form of the total merger rate:
 `x ^ 2 ∑_{k=2}^b (b.choose k) x ^ (k - 2) (1 - x) ^ (b - k) = 1 - (1 - x) ^ b -
 b x (1 - x) ^ (b - 1)` for every real `x` and every `b` (binomial theorem). -/
 theorem sq_mul_sum_choose_mul_pow (x : ℝ) (b : ℕ) :
@@ -293,7 +293,7 @@ private lemma rateKernel_succ (b : ℕ) (x : ℝ) :
   push_cast
   ring
 
-/-- **Recursion for the total merger rate.** Adding a block raises the total merger rate by `b λ_{b+1,2}`:
+/-- Adding a block raises the total merger rate by `b λ_{b+1,2}`:
 `λ_{b+1} = λ_b + b λ_{b+1,2}`. The new events are exactly the binary mergers of the new block
 with one of the `b` old ones (a consequence of the consistency relation). -/
 theorem totalMergerRate_succ (b : ℕ) :
@@ -307,7 +307,7 @@ theorem totalMergerRate_succ (b : ℕ) :
   refine integral_congr_ae (ae_of_all _ fun x => ?_)
   simp only [rateKernel_succ, show b + 1 - 2 = b - 1 by omega, Nat.sub_self, pow_zero, one_mul]
 
-/-- **Monotonicity of the total merger rate.** The total merger rate `λ_b` is nondecreasing in the number of blocks `b`. -/
+/-- The total merger rate `λ_b` is nondecreasing in the number of blocks `b`. -/
 theorem totalMergerRate_mono : Monotone (totalMergerRate Λ) :=
   monotone_nat_of_le_succ fun b => by
     rw [totalMergerRate_succ]
@@ -381,7 +381,7 @@ theorem mergerRate_dirac_zero (b k : ℕ) :
     · simp [show k - 2 ≠ 0 by omega]
     · rfl
 
-/-- **Total merger rate of Kingman's coalescent.** For Kingman's coalescent the total merger rate is the number of pairs, `λ_b = b.choose 2`.
+/-- For Kingman's coalescent the total merger rate is the number of pairs, `λ_b = b.choose 2`.
 -/
 theorem totalMergerRate_dirac_zero (b : ℕ) :
     totalMergerRate (Measure.dirac 0) b = b.choose 2 := by
@@ -432,7 +432,7 @@ private lemma integral_pow_mul_one_sub_pow (c : ℕ) : ∀ a : ℕ,
     field_simp
     ring
 
-/-- **Merger rates of the Bolthausen–Sznitman coalescent.** The **Bolthausen–Sznitman coalescent** (`Λ` = Lebesgue measure on `[0, 1]`) has merger
+/-- The **Bolthausen–Sznitman coalescent** (`Λ` = Lebesgue measure on `[0, 1]`) has merger
 rates given by the Beta integral `λ_{b,k} = (k - 2)! (b - k)! / (b - 1)!` for `2 ≤ k ≤ b`
 (Bolthausen–Sznitman 1998; Pitman 1999; Berestycki 2009, §3.1). -/
 theorem mergerRate_volume {b k : ℕ} (hk : 2 ≤ k) (hkb : k ≤ b) :
@@ -442,7 +442,7 @@ theorem mergerRate_volume {b k : ℕ} (hk : 2 ≤ k) (hkb : k ≤ b) :
     integral_unitInterval (fun y => y ^ (k - 2) * (1 - y) ^ (b - k)),
     integral_pow_mul_one_sub_pow, show k - 2 + (b - k) + 1 = b - 1 by omega]
 
-/-- **Total merger rate of the Bolthausen–Sznitman coalescent.** For the Bolthausen–Sznitman coalescent the total merger rate is `λ_b = b - 1` (`b ≥ 1`). -/
+/-- For the Bolthausen–Sznitman coalescent the total merger rate is `λ_b = b - 1` (`b ≥ 1`). -/
 theorem totalMergerRate_volume {b : ℕ} (hb : 1 ≤ b) :
     totalMergerRate volume b = b - 1 := by
   have hterm : ∀ k ∈ Icc 2 b, (b.choose k : ℝ) * mergerRate volume b k =

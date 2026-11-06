@@ -20,9 +20,7 @@ namespace Complex
 
 open Filter
 
-/-- **The maximum term of a transcendental entire function tends to infinity.** Let $f$ be an
-entire function that is not a polynomial function, with Taylor coefficients $a_n$ at the origin
-and maximum term $\mu(r) = \sup_n |a_n|\,|r|^n$. Then $\mu(r) \to \infty$ as $r \to \infty$. -/
+/-- The maximum Taylor term of a transcendental entire function tends to infinity. -/
 theorem tendsto_wimanMaximumTerm_atTop
     (f : ℂ → ℂ) (hf : Differentiable ℂ f)
     (htrans : IsTranscendental f) :
@@ -44,19 +42,14 @@ theorem tendsto_wimanMaximumTerm_atTop
   filter_upwards with r
   exact wimanTerm_le_wimanMaximumTerm f hf r n
 
-/-- **The maximum term eventually exceeds one.** Let $f$ be an entire function that is not a
-polynomial function, with Taylor coefficients $a_n$ at the origin and maximum term
-$\mu(r) = \sup_n |a_n|\,|r|^n$. Then there is $R$ such that $\mu(r) > 1$ for all real $r \ge R$. -/
+/-- Eventually the maximum Taylor term is greater than one. -/
 theorem eventually_one_lt_wimanMaximumTerm
     (f : ℂ → ℂ) (hf : Differentiable ℂ f)
     (htrans : IsTranscendental f) :
     ∀ᶠ r : ℝ in atTop, 1 < wimanMaximumTerm f r :=
   (tendsto_wimanMaximumTerm_atTop f hf htrans).eventually (eventually_gt_atTop 1)
 
-/-- **The logarithm of the maximum term is eventually positive.** Let $f$ be an entire function
-that is not a polynomial function, with Taylor coefficients $a_n$ at the origin and maximum term
-$\mu(r) = \sup_n |a_n|\,|r|^n$. Then there is $R$ such that $\log \mu(r) > 0$ for all real
-$r \ge R$. -/
+/-- Eventually the logarithm of the maximum Taylor term is positive. -/
 theorem eventually_pos_log_wimanMaximumTerm
     (f : ℂ → ℂ) (hf : Differentiable ℂ f)
     (htrans : IsTranscendental f) :

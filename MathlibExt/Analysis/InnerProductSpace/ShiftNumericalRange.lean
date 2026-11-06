@@ -77,7 +77,7 @@ namespace MathlibExt.Analysis.InnerProductSpace.ShiftNumericalRange
 open Filter Topology Set
 open scoped _root_.lp _root_.InnerProduct _root_.InnerProductSpace ENNReal
 
-/-- **Quadratic form of the forward shift as a series.** The quadratic form of the forward shift as a series over consecutive
+/-- The quadratic form of the forward shift as a series over consecutive
 coordinates: `⟪S x, x⟫ = ∑' n, conj (x n) * x (n + 1)`. -/
 theorem quadForm_fwdShift_eq_tsum (x : ℓ²(ℕ, ℂ)) :
     ⟪LpShiftOperator.shiftCLM x, x⟫_ℂ = ∑' n, (starRingEnd ℂ) (x n) * x (n + 1) := by
@@ -89,7 +89,7 @@ theorem quadForm_fwdShift_eq_tsum (x : ℓ²(ℕ, ℂ)) :
     LpShiftOperator.shiftFun_succ, RCLike.inner_apply',
     map_zero, zero_mul, zero_add]
 
-/-- **Quadratic form of the backward shift as a series.** The quadratic form of the backward shift as a series over consecutive
+/-- The quadratic form of the backward shift as a series over consecutive
 coordinates: `⟪B x, x⟫ = ∑' n, conj (x (n + 1)) * x n`. -/
 theorem quadForm_bwdShift_eq_tsum (x : ℓ²(ℕ, ℂ)) :
     ⟪LpShiftOperator.backwardCLM x, x⟫_ℂ = ∑' n, (starRingEnd ℂ) (x (n + 1)) * x n := by
@@ -178,7 +178,7 @@ private theorem exists_norm_ne_norm_succ {x : ℓ²(ℕ, ℂ)} (hx : ‖x‖ = 1
       tendsto_nhds_unique tendsto_const_nhds hlim
     exact absurd hzero (ne_of_gt (pow_pos hpos 2))
 
-/-- **Strict AM-GM bound on consecutive coordinates of a unit vector.** For a unit vector `x`, the sum of the products of consecutive
+/-- For a unit vector `x`, the sum of the products of consecutive
 coordinate norms is strictly less than `1`: termwise AM–GM gives a
 bound of `(1 + (1 - ‖x 0‖²)) / 2 ≤ 1`, and the AM–GM inequality is
 strict at the coordinate supplied by `exists_norm_ne_norm_succ`. -/
@@ -207,7 +207,7 @@ theorem sum_norm_mul_succ_lt_one {x : ℓ²(ℕ, ℂ)} (hx : ‖x‖ = 1) :
     linarith
   linarith
 
-/-- **Square-summability of the scaled geometric sequence.** The geometric sequence attached to `u`, with coordinates
+/-- The geometric sequence attached to `u`, with coordinates
 `√(1 - ‖u‖²) * u ^ n`, is in `ℓ²`. When `‖u‖ ≥ 1` the square root is `0`
 and the sequence is identically `0`; the interesting case is `‖u‖ < 1`. -/
 theorem memℓp_geom (u : ℂ) :
@@ -232,17 +232,17 @@ theorem memℓp_geom (u : ℂ) :
     congr 1
     rw [← pow_mul, ← pow_mul, mul_comm 2 n]
 
-/-- **Geometric unit vector attached to a point of the disc.** The geometric vector attached to `u`: the `ℓ²` sequence with
+/-- The geometric vector attached to `u`: the `ℓ²` sequence with
 coordinates `√(1 - ‖u‖²) * u ^ n`. -/
 noncomputable def geom (u : ℂ) : ℓ²(ℕ, ℂ) :=
   ⟨fun n => ((Real.sqrt (1 - ‖u‖ ^ 2) : ℝ) : ℂ) * u ^ n, memℓp_geom u⟩
 
-/-- **Pointwise action of the geometric vector.** Pointwise action of the geometric vector. -/
+/-- Pointwise action of the geometric vector. -/
 theorem geom_apply (u : ℂ) (n : ℕ) :
     (geom u : ℕ → ℂ) n = ((Real.sqrt (1 - ‖u‖ ^ 2) : ℝ) : ℂ) * u ^ n :=
   rfl
 
-/-- **Geometric vector of a point in the open disc is a unit vector.** The geometric vector attached to `u` with `‖u‖ < 1` is a unit vector. -/
+/-- The geometric vector attached to `u` with `‖u‖ < 1` is a unit vector. -/
 theorem norm_geom {u : ℂ} (hu : ‖u‖ < 1) : ‖geom u‖ = 1 := by
   have hpos : (0 : ℝ) < 1 - ‖u‖ ^ 2 := by
     have h2 : ‖u‖ ^ 2 < 1 := by
@@ -265,7 +265,7 @@ theorem norm_geom {u : ℂ} (hu : ‖u‖ < 1) : ‖geom u‖ = 1 := by
     exact mul_inv_cancel₀ (ne_of_gt hpos)
   exact (sq_eq_sq₀ (norm_nonneg _) zero_le_one).mp (by rw [h2, one_pow])
 
-/-- **Forward shift quadratic form at a geometric vector.** The quadratic form of the forward shift at the geometric vector
+/-- The quadratic form of the forward shift at the geometric vector
 attached to `u` is `u` itself. -/
 theorem quadForm_fwd_geom {u : ℂ} (hu : ‖u‖ < 1) :
     ⟪LpShiftOperator.shiftCLM (geom u), geom u⟫_ℂ = u := by
@@ -308,7 +308,7 @@ theorem quadForm_fwd_geom {u : ℂ} (hu : ‖u‖ < 1) :
   rw [h1e, mul_comm ((1 - ‖u‖ ^ 2 : ℝ) : ℂ) u, mul_assoc, mul_inv_cancel₀ hC,
     mul_one]
 
-/-- **Backward shift quadratic form at a geometric vector.** The quadratic form of the backward shift at the geometric vector
+/-- The quadratic form of the backward shift at the geometric vector
 attached to `u` is `conj u`. -/
 theorem quadForm_bwd_geom {u : ℂ} (hu : ‖u‖ < 1) :
     ⟪LpShiftOperator.backwardCLM (geom u), geom u⟫_ℂ = (starRingEnd ℂ) u := by
@@ -352,13 +352,13 @@ theorem quadForm_bwd_geom {u : ℂ} (hu : ‖u‖ < 1) :
   rw [h1e, mul_comm ((1 - ‖u‖ ^ 2 : ℝ) : ℂ) ((starRingEnd ℂ) u), mul_assoc,
     mul_inv_cancel₀ hC, mul_one]
 
-/-- **Open unit disc lies in the forward shift's numerical range.** Every `u` with `‖u‖ < 1` lies in the numerical range of the forward
+/-- Every `u` with `‖u‖ < 1` lies in the numerical range of the forward
 shift, witnessed by the geometric vector attached to `u`. -/
 theorem mem_numericalRange_fwdShift_of_norm_lt_one {u : ℂ} (hu : ‖u‖ < 1) :
     u ∈ ToeplitzHausdorffWanted.numericalRange (LpShiftOperator.shiftCLM (𝕜 := ℂ)) :=
   ⟨geom u, norm_geom hu, quadForm_fwd_geom hu⟩
 
-/-- **Open unit disc lies in the backward shift's numerical range.** Every `w` with `‖w‖ < 1` lies in the numerical range of the backward
+/-- Every `w` with `‖w‖ < 1` lies in the numerical range of the backward
 shift, witnessed by the geometric vector attached to `conj w`. -/
 theorem mem_numericalRange_bwdShift_of_norm_lt_one {w : ℂ} (hw : ‖w‖ < 1) :
     w ∈ ToeplitzHausdorffWanted.numericalRange (LpShiftOperator.backwardCLM (𝕜 := ℂ)) := by
@@ -368,7 +368,7 @@ theorem mem_numericalRange_bwdShift_of_norm_lt_one {w : ℂ} (hw : ‖w‖ < 1) 
   rw [quadForm_bwd_geom hconj]
   simp
 
-/-- **Forward shift's numerical range lies in the open unit disc.** Every point of the numerical range of the forward shift has norm
+/-- Every point of the numerical range of the forward shift has norm
 strictly less than `1`, by the AM–GM strict bound. -/
 theorem norm_lt_one_of_mem_numericalRange_fwdShift {w : ℂ}
     (hw : w ∈ ToeplitzHausdorffWanted.numericalRange (LpShiftOperator.shiftCLM (𝕜 := ℂ))) :
@@ -384,7 +384,7 @@ theorem norm_lt_one_of_mem_numericalRange_fwdShift {w : ℂ}
         tsum_congr fun n => by rw [norm_mul, RCLike.norm_conj]
     _ < 1 := sum_norm_mul_succ_lt_one hx
 
-/-- **Backward shift's numerical range lies in the open unit disc.** Every point of the numerical range of the backward shift has norm
+/-- Every point of the numerical range of the backward shift has norm
 strictly less than `1`, by the AM–GM strict bound. -/
 theorem norm_lt_one_of_mem_numericalRange_bwdShift {w : ℂ}
     (hw : w ∈ ToeplitzHausdorffWanted.numericalRange (LpShiftOperator.backwardCLM (𝕜 := ℂ))) :
@@ -402,7 +402,7 @@ theorem norm_lt_one_of_mem_numericalRange_bwdShift {w : ℂ}
         tsum_congr fun n => by rw [norm_mul, RCLike.norm_conj, mul_comm]
     _ < 1 := sum_norm_mul_succ_lt_one hx
 
-/-- **Numerical range of the unilateral shift is the open unit disc.** The numerical range of the unilateral shift on `ℓ²(ℕ, ℂ)` is the
+/-- The numerical range of the unilateral shift on `ℓ²(ℕ, ℂ)` is the
 open unit disc. -/
 theorem numericalRange_fwdShiftCLM :
     ToeplitzHausdorffWanted.numericalRange
@@ -416,7 +416,7 @@ theorem numericalRange_fwdShiftCLM :
     rw [Metric.mem_ball, dist_zero_right] at hw
     exact mem_numericalRange_fwdShift_of_norm_lt_one hw
 
-/-- **Numerical range of the backward shift is the open unit disc.** The numerical range of the backward shift on `ℓ²(ℕ, ℂ)` is the
+/-- The numerical range of the backward shift on `ℓ²(ℕ, ℂ)` is the
 open unit disc. -/
 theorem numericalRange_bwdShiftCLM :
     ToeplitzHausdorffWanted.numericalRange

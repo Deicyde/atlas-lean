@@ -43,7 +43,7 @@ open ConfigSpace
 
 variable {α : Type*} [DecidableEq α]
 
-/-- **Lower sets are families closed under erasing an element.** A family of finsets is a lower set iff it is closed under erasing any single element. -/
+/-- A family of finsets is a lower set iff it is closed under erasing any single element. -/
 theorem isLowerSet_iff_isDownAt_all (𝒜 : Finset (Finset α)) :
     IsLowerSet (𝒜 : Set (Finset α)) ↔ ∀ i, IsDownAtCoord i 𝒜 := by
   constructor
@@ -55,7 +55,7 @@ section Bridge
 
 variable [Fintype α]
 
-/-- **Event of a family of finsets.** The event that the support of a configuration lies in the family `𝒜`. -/
+/-- The event that the support of a configuration lies in the family `𝒜`. -/
 def familyEvent (𝒜 : Finset (Finset α)) : Set (ConfigSpace α) := {ω | cfgSupport ω ∈ 𝒜}
 
 @[simp] lemma mem_familyEvent {𝒜 : Finset (Finset α)} {ω : ConfigSpace α} :
@@ -108,7 +108,7 @@ theorem isIncreasing_familyEvent_of_isUpperSet {𝒜 : Finset (Finset α)}
     (h : IsUpperSet (𝒜 : Set (Finset α))) : IsIncreasing (familyEvent 𝒜) :=
   fun _ _ hle hω => h (Finset.coe_subset.mpr (cfgSupport_subset_of_le hle)) hω
 
-/-- **Reimer's inequality for two lower families.** Reimer's inequality for the events of two lower families (the BK inequality for
+/-- Reimer's inequality for the events of two lower families (the BK inequality for
 decreasing events). -/
 theorem reimer_wprob_familyEvent_of_isLowerSet (w : α → Bool → ℝ)
     (hw0 : ∀ x b, 0 ≤ w x b) (hw1 : ∀ x, w x false + w x true = 1)
@@ -129,7 +129,7 @@ theorem reimer_fmarg_of_isLowerSet (w : α → Bool → ℝ)
   rw [fmarg_eq_wprob_familyEvent, fmarg_eq_wprob_familyEvent]
   exact reimer_wprob_familyEvent_of_isLowerSet w hw0 hw1 h𝒜 hℬ
 
-/-- **Reimer's inequality for two upper families.** Reimer's inequality for the events of two upper families (the BK inequality). -/
+/-- Reimer's inequality for the events of two upper families (the BK inequality). -/
 theorem reimer_wprob_familyEvent_of_isUpperSet (w : α → Bool → ℝ)
     (hw0 : ∀ x b, 0 ≤ w x b) (hw1 : ∀ x, w x false + w x true = 1)
     {𝒜 ℬ : Finset (Finset α)} (h𝒜 : IsUpperSet (𝒜 : Set (Finset α)))

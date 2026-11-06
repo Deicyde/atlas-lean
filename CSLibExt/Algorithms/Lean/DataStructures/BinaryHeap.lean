@@ -26,17 +26,13 @@ set_option autoImplicit false
 
 universe u
 
-/-- **Parent index in a level-order binary tree.** In a binary tree stored in level order in an
-array indexed from $0$, the parent index of a natural number $i$ is $\lfloor (i-1)/2 \rfloor$,
-where $i - 1$ is truncated subtraction of natural numbers, so the root index $0$ is sent to $0$. -/
+/-- The parent index in a contiguous level-order binary tree. -/
 def heapParent (i : Nat) : Nat := (i - 1) / 2
 
-/-- **Left child index in a level-order binary tree.** In a binary tree stored in level order in
-an array indexed from $0$, the left child of the node at index $i$ has index $2i + 1$. -/
+/-- The left-child index in a contiguous level-order binary tree. -/
 def heapLeft (i : Nat) : Nat := 2 * i + 1
 
-/-- **Right child index in an array-backed binary tree.** In the level-order layout of a binary
-tree in an array indexed from $0$, the right child of the node at index $i$ is at index $2i + 2$. -/
+/-- The right-child index in a contiguous level-order binary tree. -/
 def heapRight (i : Nat) : Nat := 2 * i + 2
 
 private theorem heapParent_lt (i : Nat) (hi : 0 < i) : heapParent i < i := by
@@ -44,26 +40,18 @@ private theorem heapParent_lt (i : Nat) (hi : 0 < i) : heapParent i < i := by
   have hdiv : (i - 1) / 2 ≤ i - 1 := Nat.div_le_self _ _
   omega
 
-/-- **The parent of a valid nonroot index is valid.** For an array $a$ of length $|a|$ and an index
-$i$ with $0 < i < |a|$, the parent index $\lfloor (i-1)/2 \rfloor$ of $i$ is also less than
-$|a|$. -/
+/-- A nonroot node's parent is a valid index whenever the node is. -/
 theorem heapParent_lt_size {α : Type u} (a : Array α) (i : Nat)
     (hi : i < a.size) (hpos : 0 < i) : heapParent i < a.size := by
   exact (heapParent_lt i hpos).trans hi
 
-/-- **Heap order on a level-order array.** An array $a$ over a type with a relation $\le$, indexed
-from $0$, is heap ordered when every entry other than the root is at least its parent entry:
-for every index $i$ with $0 < i < |a|$, where $|a|$ is the length of $a$, we have
-$a_{\lfloor (i-1)/2 \rfloor} \le a_i$. -/
+/-- Every valid nonroot node is no smaller than its immediate parent. -/
 def HeapOrdered {α : Type u} [LE α] (a : Array α) : Prop :=
   ∀ i (hi : i < a.size), (hpos : 0 < i) →
     a[heapParent i]'(heapParent_lt_size a i hi hpos) ≤ a[i]
 
-/-- **Arrays ready for sift-up.** Let $a$ be an array of length $|a|$ over a type with a relation
-$\le$, indexed from $0$, and for $j > 0$ let $p(j) = \lfloor (j - 1)/2 \rfloor$ be the parent of
-$j$. The array $a$ is ready for sift-up at an index $i$ when $i < |a|$, when $a_{p(j)} \le a_j$ for
-every $j \ne i$ with $0 < j < |a|$, and when, if $i > 0$, also $a_{p(i)} \le a_j$ for every $j$
-with $0 < j < |a|$ and $p(j) = i$. -/
+/-- The only potentially bad edge is the edge entering `i`; moving its parent
+down to `i` is safe for every edge leaving `i`. -/
 structure SiftUpReady {α : Type u} [LE α] (a : Array α) (i : Nat) : Prop where
   index_valid : i < a.size
   ordered_except : ∀ j (hj : j < a.size), (hjpos : 0 < j) → j ≠ i →
@@ -72,14 +60,8 @@ structure SiftUpReady {α : Type u} [LE α] (a : Array α) (i : Nat) : Prop wher
     heapParent j = i → (hipos : 0 < i) →
     a[heapParent i]'(heapParent_lt_size a i index_valid hipos) ≤ a[j]
 
-/-- **Sift-down precondition.** For an array $a$ over a type ordered by $\le$, write
-$p(j) = \lfloor (j-1)/2 \rfloor$ for the parent of index $j$. The array $a$ is ready for
-sift-down at index $i$ when $i$ is a valid index of $a$; $a_{p(j)} \le a_j$ for every valid index
-$j > 0$ with $p(j) \ne i$; and, if $i > 0$, $a_{p(i)} \le a_j$ for every valid index $j > 0$ with
-$p(j) = i$.
-
-Thus the only edges that may violate heap order are those leaving $i$, and moving either child
-of $i$ up to position $i$ keeps the edge entering $i$ ordered. -/
+/-- The only potentially bad edges leave `i`; lifting either child to `i` is
+safe for the edge entering `i`. -/
 structure SiftDownReady {α : Type u} [LE α] (a : Array α) (i : Nat) : Prop where
   index_valid : i < a.size
   ordered_except : ∀ j (hj : j < a.size), (hjpos : 0 < j) →
@@ -113,10 +95,7 @@ private theorem eq_left_or_right (i j : Nat) (hjpos : 0 < j)
   simp only [heapLeft, heapRight]
   omega
 
-/-- **Smaller child.** Let $a$ be an array of length $|a|$ over a linearly ordered type, indexed
-from $0$, and let $i$ be an index with children $\ell = 2i + 1$ and $r = 2i + 2$. If
-$\ell \ge |a|$, then $i$ has no smaller child. Otherwise the smaller child of $i$ is $r$ when
-$r < |a|$ and $a_r < a_\ell$, and $\ell$ in every other case, so ties go to the left child. -/
+/-- The smaller valid child of an index, preferring the left child on ties. -/
 def smallerChild {α : Type u} [LinearOrder α]
     (a : Array α) (i : Nat) : Option Nat :=
   if hl : heapLeft i < a.size then
@@ -148,8 +127,7 @@ private theorem smallerChild_parent {α : Type u} [LinearOrder α]
       exact heapParent_left i
   · contradiction
 
-/-- **The smaller child has a larger index.** For every array $a$ over a linearly ordered type
-and all indices $i$ and $c$, if $c$ is the smaller child of $i$ in $a$, then $i < c$. -/
+/-- A selected child has an index strictly below its parent in the tree. -/
 theorem smallerChild_gt {α : Type u} [LinearOrder α]
     (a : Array α) (i c : Nat)
     (h : smallerChild a i = some c) : i < c := by
@@ -171,9 +149,7 @@ theorem smallerChild_gt {α : Type u} [LinearOrder α]
       omega
   · contradiction
 
-/-- **The smaller child is a valid index.** For every array $a$ over a linearly ordered type and
-all indices $i$ and $c$, if $c$ is the smaller child of $i$ in $a$, then $c$ is less than the
-length $|a|$ of $a$. -/
+/-- A selected child is a valid array index. -/
 theorem smallerChild_valid {α : Type u} [LinearOrder α]
     (a : Array α) (i c : Nat)
     (h : smallerChild a i = some c) : c < a.size := by
@@ -213,11 +189,7 @@ private theorem smallerChild_le {α : Type u} [LinearOrder α]
       · omega
   · contradiction
 
-/-- **Sift-up.** Given an array $a$ of length $|a|$ over a linearly ordered type, indexed from $0$,
-and an index $i$, the sift-up of $a$ from $i$ is defined by recursion on $i$. If $i = 0$ or
-$i \ge |a|$, the result is $a$. Otherwise let $p = \lfloor (i - 1)/2 \rfloor$ be the parent of
-$i$; if $a_i < a_p$, the result is the sift-up from $p$ of the array obtained from $a$ by
-exchanging the entries at positions $i$ and $p$, and otherwise the result is $a$. -/
+/-- Repeatedly swaps a value with its parent while it is smaller. -/
 def siftUp {α : Type u} [LinearOrder α] (a : Array α) (i : Nat) : Array α :=
   if hi : i < a.size then
     if hpos : 0 < i then
@@ -234,11 +206,7 @@ termination_by i
 decreasing_by
   exact heapParent_lt i hpos
 
-/-- **Sift-down.** Sifting down an array $a$ over a linearly ordered type from index $i$ works as
-follows. If $i$ has a child in $a$, that is, if $2i+1$ is a valid index, let $c$ be the child of
-$i$ (among $2i+1$ and $2i+2$, if valid) holding the smaller value, preferring the left child
-$2i+1$ on ties. If $a_c < a_i$, swap the entries at $i$ and $c$ and continue sifting down from
-$c$; otherwise, or if $i$ has no child, return the array unchanged. -/
+/-- Repeatedly swaps a value with its smaller child while that child is smaller. -/
 def siftDown {α : Type u} [LinearOrder α] (a : Array α) (i : Nat) : Array α :=
   match hchild : smallerChild a i with
   | none => a
@@ -255,8 +223,7 @@ decreasing_by
   have := smallerChild_gt a i c hchild
   omega
 
-/-- **Sift-up permutes the array.** For every array $a$ over a linearly ordered type and every
-index $i$, the array obtained by sifting up $a$ from $i$ is a permutation of $a$. -/
+/-- Sifting up only permutes the input array. -/
 theorem siftUp_perm {α : Type u} [LinearOrder α] (a : Array α) (i : Nat) :
     (siftUp a i).Perm a := by
   induction i using Nat.strong_induction_on generalizing a with
@@ -272,9 +239,7 @@ theorem siftUp_perm {α : Type u} [LinearOrder α] (a : Array α) (i : Nat) :
       · exact Array.Perm.refl _
     · exact Array.Perm.refl _
 
-/-- **Binary-heap sift-down permutes the array.** For every array $a$ over a linearly ordered
-type and every index $i$, the array obtained by sifting down $a$ from $i$ is a permutation of
-$a$. -/
+/-- Sifting down only permutes the input array. -/
 theorem siftDown_perm {α : Type u} [LinearOrder α] (a : Array α) (i : Nat) :
     (siftDown a i).Perm a := by
   induction hm : a.size - i using Nat.strong_induction_on generalizing a i with
@@ -296,22 +261,17 @@ theorem siftDown_perm {α : Type u} [LinearOrder α] (a : Array α) (i : Nat) :
           (Array.swap_perm hi hc)
       · exact Array.Perm.refl _
 
-/-- **Binary-heap sift-up preserves the multiset of entries.** For every array $a$ over a
-linearly ordered type and every index $i$, the array obtained by sifting up $a$ from $i$ has the
-same multiset of entries as $a$. -/
+/-- Sifting up preserves the represented multiset. -/
 theorem siftUp_multiset {α : Type u} [LinearOrder α] (a : Array α) (i : Nat) :
     (↑(siftUp a i).toList : Multiset α) = (↑a.toList : Multiset α) :=
   Multiset.coe_eq_coe.mpr (siftUp_perm a i).toList
 
-/-- **Binary-heap sift-down preserves the multiset of entries.** For every array $a$ over a
-linearly ordered type and every index $i$, the array obtained by sifting down $a$ from $i$ has
-the same multiset of entries as $a$. -/
+/-- Sifting down preserves the represented multiset. -/
 theorem siftDown_multiset {α : Type u} [LinearOrder α] (a : Array α) (i : Nat) :
     (↑(siftDown a i).toList : Multiset α) = (↑a.toList : Multiset α) :=
   Multiset.coe_eq_coe.mpr (siftDown_perm a i).toList
 
-/-- **The root of a heap-ordered binary-heap array is minimal.** If an array $a$ over a linearly
-ordered type is heap-ordered, then $a_0 \le a_i$ for every valid index $i$ of $a$. -/
+/-- Local heap order implies that the root is no greater than any valid entry. -/
 theorem HeapOrdered.root_le {α : Type u} [LinearOrder α] {a : Array α}
     (h : HeapOrdered a) (i : Nat) (hi : i < a.size) :
     a[0]'(by omega) ≤ a[i] := by
@@ -404,9 +364,8 @@ private theorem SiftUpReady.ordered_at_root {α : Type u} [LinearOrder α]
   intro j hj hjpos
   exact h.ordered_except j hj hjpos (Nat.ne_of_gt hjpos)
 
-/-- **Sift-up restores heap order.** Let $a$ be an array over a linearly ordered type and let
-$i$ be an index such that $a$ is ready for sift-up at $i$. Then the array obtained by sifting
-up $a$ from $i$ is heap ordered. -/
+/-- Sifting up an array with one admissible incoming-edge violation restores
+the local heap-order invariant. -/
 theorem siftUp_ordered {α : Type u} [LinearOrder α] (a : Array α) (i : Nat)
     (h : SiftUpReady a i) : HeapOrdered (siftUp a i) := by
   induction i using Nat.strong_induction_on generalizing a with
@@ -522,10 +481,9 @@ private theorem no_swap_ordered {α : Type u} [LinearOrder α]
     simpa only [hp] using hbase
   · exact h.ordered_except j hj hjpos hp
 
-/-- **Sift-down restores heap order.** Let $a$ be an array over a linearly ordered type that
-satisfies the sift-down precondition at a valid index $i$: the only edges that may violate heap
-order are those leaving $i$, and moving either child of $i$ up to position $i$ keeps the edge
-entering $i$ ordered. Then the array obtained by sifting down $a$ from $i$ is heap-ordered. -/
+/-- Sifting down an array with admissible outgoing-edge violations restores
+the local heap-order invariant. This theorem is reusable independently of
+`MinHeap`, for example by heap-sort developments. -/
 theorem siftDown_ordered {α : Type u} [LinearOrder α] (a : Array α) (i : Nat)
     (h : SiftDownReady a i) : HeapOrdered (siftDown a i) := by
   induction hm : a.size - i using Nat.strong_induction_on generalizing a i with
@@ -554,10 +512,8 @@ theorem siftDown_ordered {α : Type u} [LinearOrder α] (a : Array α) (i : Nat)
           assumption
         exact no_swap_ordered a i c h hchild hnlt'
 
-/-- **Appending to a heap-ordered array prepares it for sift-up.** If an array $a$ of length $n$
-over a linearly ordered type is heap-ordered and $x$ is any value, then the array obtained by
-appending $x$ to $a$ satisfies the sift-up precondition at index $n$, the position of $x$: the
-only edge that may violate heap order is the one entering index $n$. -/
+/-- Appending to an ordered heap creates exactly the admissible sift-up
+violation at the new last index. -/
 theorem push_siftUpReady {α : Type u} [LinearOrder α] (a : Array α)
     (h : HeapOrdered a) (x : α) : SiftUpReady (a.push x) a.size := by
   refine {
@@ -578,57 +534,41 @@ theorem push_siftUpReady {α : Type u} [LinearOrder α] (a : Array α)
     simp only [Array.size_push] at hj
     omega
 
-/-- **Binary min-heap.** A binary min-heap over a linearly ordered type $\alpha$ is an array $a$
-of elements of $\alpha$ (its level-order storage), of length $|a|$ and with entries
-$a_0, \dots, a_{|a|-1}$, that is heap ordered: for every index $i$ with $0 < i < |a|$, the entry
-$a_{\lfloor (i - 1)/2 \rfloor}$ at the parent index of $i$ is at most $a_i$. -/
+/-- A binary min-heap with a contiguous level-order representation. -/
 structure MinHeap (α : Type u) [LinearOrder α] where
   /-- The level-order storage array. -/
   data : Array α
   ordered : HeapOrdered data
 
-/-- **Elements of a binary min-heap.** The multiset of elements of a binary min-heap is the
-multiset of the entries of its level-order storage array, counted with multiplicity. -/
+/-- The multiset represented by a heap. -/
 def MinHeap.elements {α : Type u} [LinearOrder α] (h : MinHeap α) : Multiset α :=
   h.data.toList
 
-/-- **Empty binary min-heap.** The empty binary min-heap is the min-heap whose level-order storage
-array has no entries. -/
+/-- The empty min-heap. -/
 def MinHeap.empty {α : Type u} [LinearOrder α] : MinHeap α where
   data := #[]
   ordered := by simp [HeapOrdered]
 
-/-- **Insertion into a binary min-heap.** To insert a value $x$ into a binary min-heap $h$, append
-$x$ at the end of the level-order array of $h$ and sift it up from its index (the old length of
-the array), repeatedly swapping it with its parent while it is smaller. The result is again a
-binary min-heap. -/
+/-- Insert one value, repairing only its ancestor path. -/
 def MinHeap.push {α : Type u} [LinearOrder α] (h : MinHeap α) (x : α) : MinHeap α where
   data := siftUp (h.data.push x) h.data.size
   ordered := siftUp_ordered _ _ (push_siftUpReady h.data h.ordered x)
 
-/-- **Minimum lookup in a binary heap.** For a binary min-heap $h$, the minimum lookup returns the
-entry at index $0$ (the root) of the storage array of $h$ when that array is nonempty, and returns
-no value when it is empty. -/
+/-- Inspect the minimum without removing it. -/
 def MinHeap.min? {α : Type u} [LinearOrder α] (h : MinHeap α) : Option α :=
   h.data[0]?
 
-/-- **Binary heap minimum lookup fails exactly when empty.** For a binary min-heap $h$ over a
-linearly ordered type, looking up the minimum of $h$ returns no value if and only if the storage
-array of $h$ has size $0$. -/
+/-- Inspection fails exactly for the empty representation. -/
 theorem MinHeap.min?_eq_none_iff {α : Type u} [LinearOrder α] (h : MinHeap α) :
     h.min? = none ↔ h.data.size = 0 := by
   simp [MinHeap.min?, getElem?_def]
 
-/-- **Binary heap minimum lookup succeeds exactly when nonempty.** For a binary min-heap $h$ over
-a linearly ordered type, looking up the minimum of $h$ returns a value if and only if the storage
-array of $h$ has positive size. -/
+/-- Inspection succeeds exactly for a nonempty representation. -/
 theorem MinHeap.min?_isSome_iff {α : Type u} [LinearOrder α] (h : MinHeap α) :
     h.min?.isSome ↔ 0 < h.data.size := by
   simp [MinHeap.min?, getElem?_def]
 
-/-- **The binary heap minimum lookup returns a stored element.** Let $h$ be a binary min-heap
-over a linearly ordered type. If looking up the minimum of $h$ returns $x$, then $x$ belongs to
-the multiset of elements of $h$. -/
+/-- Inspection returns an element stored in the heap. -/
 theorem MinHeap.min?_mem {α : Type u} [LinearOrder α] {h : MinHeap α} {x : α}
     (hx : h.min? = some x) : x ∈ h.elements := by
   unfold MinHeap.min? at hx
@@ -639,9 +579,7 @@ theorem MinHeap.min?_mem {α : Type u} [LinearOrder α] {h : MinHeap α} {x : α
     simp [MinHeap.elements, Array.mem_toList_iff]
   · contradiction
 
-/-- **The binary heap minimum lookup is a lower bound.** Let $h$ be a binary min-heap over a
-linearly ordered type. If looking up the minimum of $h$ returns $x$, then $x \le y$ for every
-element $y$ of the multiset of elements of $h$. -/
+/-- Inspection returns a value no greater than every stored value. -/
 theorem MinHeap.min?_le {α : Type u} [LinearOrder α] {h : MinHeap α} {x y : α}
     (hx : h.min? = some x) (hy : y ∈ h.elements) : x ≤ y := by
   unfold MinHeap.min? at hx
@@ -654,9 +592,7 @@ theorem MinHeap.min?_le {α : Type u} [LinearOrder α] {h : MinHeap α} {x y : �
     simpa using h.ordered.root_le i (by simpa using hi)
   · contradiction
 
-/-- **Elements after binary heap insertion.** Let $h$ be a binary min-heap over a linearly ordered
-type and $x$ a value. The multiset of elements of the heap obtained by inserting $x$ into $h$ is
-the multiset of elements of $h$ with one more copy of $x$ added. -/
+/-- Insertion adds exactly one occurrence. -/
 theorem MinHeap.elements_push {α : Type u} [LinearOrder α] (h : MinHeap α) (x : α) :
     (h.push x).elements = x ::ₘ h.elements := by
   have hp := (siftUp_perm (h.data.push x) h.data.size).toList
@@ -664,46 +600,31 @@ theorem MinHeap.elements_push {α : Type u} [LinearOrder α] (h : MinHeap α) (x
   apply Multiset.coe_eq_coe.mpr
   exact hp.trans List.perm_append_comm
 
-/-- **Binary heap insertion adds one copy of the inserted value.** Let $h$ be a binary min-heap
-over a linearly ordered type and $x$ a value. The multiplicity of $x$ in the multiset of elements
-of the heap obtained by inserting $x$ into $h$ is one more than its multiplicity in the multiset
-of elements of $h$. -/
+/-- Inserting a value increases its multiplicity by exactly one. -/
 theorem MinHeap.count_push_self {α : Type u} [LinearOrder α]
     (h : MinHeap α) (x : α) :
     Multiset.count x (h.push x).elements = Multiset.count x h.elements + 1 := by
   rw [h.elements_push x]
   simp
 
-/-- **Binary heap insertion leaves other multiplicities unchanged.** Let $h$ be a binary min-heap
-over a linearly ordered type, and let $x \ne y$ be values. Then $y$ occurs in the multiset of
-elements of the heap obtained by inserting $x$ into $h$ exactly as many times as it occurs in the
-multiset of elements of $h$. -/
+/-- Inserting a value preserves every different value's multiplicity. -/
 theorem MinHeap.count_push_of_ne {α : Type u} [LinearOrder α]
     (h : MinHeap α) {x y : α} (hyx : y ≠ x) :
     Multiset.count y (h.push x).elements = Multiset.count y h.elements := by
   rw [h.elements_push x]
   simp [hyx]
 
-/-- **Insertion into a binary min-heap preserves heap order.** For every binary min-heap $h$
-over a linearly ordered type and every value $x$, the level-order array of the heap obtained
-by inserting $x$ into $h$ is heap-ordered: the entry at every nonroot index $i$ is at least
-the entry at its parent index $\lfloor (i-1)/2 \rfloor$. -/
+/-- Insertion preserves local heap order. -/
 theorem MinHeap.push_ordered {α : Type u} [LinearOrder α] (h : MinHeap α) (x : α) :
     HeapOrdered (h.push x).data :=
   (h.push x).ordered
 
-/-- **Moving the last entry to the root.** For a nonempty array $a$ of length $n$, this operation
-swaps the entries at indices $0$ and $n - 1$ and then deletes the final entry. The result has
-length $n - 1$; when $n \ge 2$ its entry at index $0$ is $a_{n-1}$ and its entry at each index
-$0 < i < n - 1$ is $a_i$. -/
+/-- Move the last entry to the root and remove the old root. -/
 def moveLastToRoot {α : Type u} (a : Array α) (hne : 0 < a.size) : Array α :=
   (a.swap 0 (a.size - 1) hne (by omega)).pop
 
-/-- **Moving the last entry to the root prepares a sift-down.** Let $a$ be a heap-ordered array
-over a linearly ordered type with at least two entries, and let $b$ be the array obtained from $a$
-by moving its last entry to the root. Then $b$ is ready for sifting down at index $0$: index $0$ is
-valid in $b$, and for every index $j > 0$ of $b$ whose parent index $\lfloor (j - 1)/2 \rfloor$ is
-not $0$, the entry of $b$ at the parent index is at most $b_j$. -/
+/-- Last-to-root replacement creates exactly an admissible sift-down
+violation at the root whenever at least two entries were present. -/
 theorem moveLastToRoot_siftDownReady {α : Type u} [LinearOrder α]
     (a : Array α) (h : HeapOrdered a) (htwo : 1 < a.size) :
     SiftDownReady (moveLastToRoot a (by omega)) 0 := by
@@ -748,9 +669,7 @@ private theorem moveLastToRoot_cons_perm {α : Type u} [LinearOrder α]
   have hswap := (Array.swap_perm hne (by omega : a.size - 1 < a.size)).toList
   simpa [moveLastToRoot, b, Array.toList_pop] using hperm.trans hswap
 
-/-- **Moving the last entry to the root removes the old root.** For a nonempty array $a$ over a
-linearly ordered type, the multiset of entries of the array obtained from $a$ by moving its last
-entry to the root equals the multiset of entries of $a$ with one occurrence of $a_0$ removed. -/
+/-- Last-to-root replacement removes exactly one occurrence of the old root. -/
 theorem moveLastToRoot_elements {α : Type u} [LinearOrder α]
     (a : Array α) (hne : 0 < a.size) :
     (↑(moveLastToRoot a hne).toList : Multiset α) =
@@ -760,10 +679,7 @@ theorem moveLastToRoot_elements {α : Type u} [LinearOrder α]
       (↑a.toList : Multiset α) := Multiset.coe_eq_coe.mpr hp
   rw [← hm, Multiset.erase_cons_head]
 
-/-- **Removing the root of a nonempty binary min-heap.** Let $h$ be a binary min-heap over a
-linearly ordered type whose level-order array is nonempty. If the array has exactly one entry,
-the result is the empty heap. Otherwise the last entry of the array replaces the root, the array
-shrinks by one, and the result is the heap obtained by sifting this entry down from the root. -/
+/-- Remove the root from a known nonempty heap and restore heap order. -/
 def MinHeap.extractTail {α : Type u} [LinearOrder α]
     (h : MinHeap α) (hne : 0 < h.data.size) : MinHeap α :=
   if hone : h.data.size = 1 then
@@ -827,10 +743,7 @@ private theorem MinHeap.extractTail_cons_elements {α : Type u} [LinearOrder α]
     apply Multiset.coe_eq_coe.mpr
     exact (List.Perm.cons _ hsift).trans hmove
 
-/-- **Extracting the minimum of a binary min-heap.** For a binary min-heap $h$ over a linearly
-ordered type, extraction returns nothing when the level-order array of $h$ is empty. Otherwise it
-returns the root entry (the first entry of the array) together with the heap obtained from $h$ by
-removing its root and restoring heap order. -/
+/-- Remove and return the minimum, if one exists. -/
 def MinHeap.extractMin {α : Type u} [LinearOrder α]
     (h : MinHeap α) : Option (α × MinHeap α) :=
   if hne : 0 < h.data.size then
@@ -838,16 +751,12 @@ def MinHeap.extractMin {α : Type u} [LinearOrder α]
   else
     none
 
-/-- **Extraction from a binary min-heap fails exactly when it is empty.** For a binary min-heap
-$h$ over a linearly ordered type, extracting the minimum of $h$ returns no result if and only if
-the level-order storage array of $h$ has size $0$. -/
+/-- Extraction fails exactly for the empty representation. -/
 theorem MinHeap.extractMin_eq_none_iff {α : Type u} [LinearOrder α]
     (h : MinHeap α) : h.extractMin = none ↔ h.data.size = 0 := by
   simp [MinHeap.extractMin]
 
-/-- **The value extracted from a binary min-heap is one of its elements.** Let $h$ be a binary
-min-heap over a linearly ordered type. If extracting the minimum from $h$ succeeds and returns a
-value $x$ together with a heap $r$, then $x$ belongs to the multiset of elements of $h$. -/
+/-- A successful extraction returns an element that was stored. -/
 theorem MinHeap.extractMin_mem {α : Type u} [LinearOrder α]
     {h : MinHeap α} {x : α} {rest : MinHeap α}
     (hx : h.extractMin = some (x, rest)) : x ∈ h.elements := by
@@ -858,9 +767,7 @@ theorem MinHeap.extractMin_mem {α : Type u} [LinearOrder α]
     simp [MinHeap.elements, Array.mem_toList_iff]
   · contradiction
 
-/-- **The value extracted from a binary min-heap is minimal.** Let $h$ be a binary min-heap over
-a linearly ordered type. If extracting the minimum from $h$ succeeds and returns a value $x$
-together with a heap $r$, then $x \le y$ for every value $y$ in the multiset of elements of $h$. -/
+/-- A successful extraction returns a globally minimal stored value. -/
 theorem MinHeap.extractMin_le {α : Type u} [LinearOrder α]
     {h : MinHeap α} {x y : α} {rest : MinHeap α}
     (hx : h.extractMin = some (x, rest)) (hy : y ∈ h.elements) : x ≤ y := by
@@ -873,10 +780,7 @@ theorem MinHeap.extractMin_le {α : Type u} [LinearOrder α]
     simpa using h.ordered.root_le i (by simpa using hi)
   · contradiction
 
-/-- **Elements after binary heap extraction.** Let $h$ be a binary min-heap over a linearly ordered
-type. If extracting the minimum of $h$ succeeds and returns the value $x$ and the heap $h'$, then
-the multiset of elements of $h'$ is obtained from the multiset of elements of $h$ by erasing one
-occurrence of $x$. -/
+/-- A successful extraction erases exactly one occurrence of its result. -/
 theorem MinHeap.extractMin_elements {α : Type u} [LinearOrder α]
     {h : MinHeap α} {x : α} {rest : MinHeap α}
     (hx : h.extractMin = some (x, rest)) :
@@ -888,12 +792,8 @@ theorem MinHeap.extractMin_elements {α : Type u} [LinearOrder α]
     exact h.extractTail_elements _
   · contradiction
 
-/-- **Binary heap extraction splits off the minimum.** Let $h$ be a binary min-heap over a linearly
-ordered type. If extracting the minimum of $h$ succeeds and returns the value $x$ and the heap
-$h'$, then the multiset of elements of $h$ equals the multiset of elements of $h'$ with one copy
-of $x$ added.
-
-The statement is phrased by adding $x$ back, not by erasing it from the multiset of $h$. -/
+/-- A successful extraction partitions the original multiset into its result
+and the returned heap, without using multiset erasure. -/
 theorem MinHeap.extractMin_cons_elements {α : Type u} [LinearOrder α]
     {h : MinHeap α} {x : α} {rest : MinHeap α}
     (hx : h.extractMin = some (x, rest)) :
@@ -905,10 +805,7 @@ theorem MinHeap.extractMin_cons_elements {α : Type u} [LinearOrder α]
     exact h.extractTail_cons_elements _
   · contradiction
 
-/-- **Binary heap extraction removes one copy of the minimum.** Let $h$ be a binary min-heap over
-a linearly ordered type. If extracting the minimum of $h$ succeeds and returns the value $x$ and
-the heap $h'$, then the multiplicity of $x$ in the multiset of elements of $h'$ is its
-multiplicity in the multiset of elements of $h$ minus one. -/
+/-- Successful extraction decreases the returned value's multiplicity by one. -/
 theorem MinHeap.extractMin_count {α : Type u} [LinearOrder α]
     {h : MinHeap α} {x : α} {rest : MinHeap α}
     (hx : h.extractMin = some (x, rest)) :
@@ -918,10 +815,7 @@ theorem MinHeap.extractMin_count {α : Type u} [LinearOrder α]
   simp at hc
   omega
 
-/-- **Binary heap extraction leaves other multiplicities unchanged.** Let $h$ be a binary min-heap
-over a linearly ordered type. If extracting the minimum of $h$ succeeds and returns the value $x$
-and the heap $h'$, then every value $y \ne x$ occurs in the multiset of elements of $h'$ exactly
-as many times as in the multiset of elements of $h$. -/
+/-- Successful extraction preserves every other value's multiplicity. -/
 theorem MinHeap.extractMin_count_of_ne {α : Type u} [LinearOrder α]
     {h : MinHeap α} {x y : α} {rest : MinHeap α}
     (hx : h.extractMin = some (x, rest)) (hyx : y ≠ x) :
@@ -929,10 +823,8 @@ theorem MinHeap.extractMin_count_of_ne {α : Type u} [LinearOrder α]
   have hc := congrArg (Multiset.count y) (h.extractMin_cons_elements hx)
   simpa only [Multiset.count_cons, ite_eq_right hyx, Nat.add_zero] using hc
 
-/-- **Membership after extraction from a binary min-heap.** Let $h$ be a binary min-heap over a
-linearly ordered type, and suppose extracting the minimum from $h$ succeeds and returns a value
-$x$ together with a heap $r$. Then every value $y \ne x$ is an element of $r$ if and only if it
-is an element of $h$. -/
+/-- Successful extraction preserves membership of every value other than the
+returned minimum. -/
 theorem MinHeap.extractMin_mem_of_ne_iff {α : Type u} [LinearOrder α]
     {h : MinHeap α} {x y : α} {rest : MinHeap α}
     (hx : h.extractMin = some (x, rest)) (hyx : y ≠ x) :
@@ -940,10 +832,7 @@ theorem MinHeap.extractMin_mem_of_ne_iff {α : Type u} [LinearOrder α]
   rw [← h.extractMin_cons_elements hx]
   simp [hyx]
 
-/-- **Extraction from a binary min-heap leaves a heap-ordered array.** Let $h$ be a binary
-min-heap over a linearly ordered type. If extracting the minimum from $h$ succeeds and returns a
-value $x$ together with a heap $r$, then the level-order array of $r$ is heap ordered: every
-entry other than the root is at least its parent entry. -/
+/-- Every heap returned by extraction satisfies local heap order. -/
 theorem MinHeap.extractMin_ordered {α : Type u} [LinearOrder α]
     {h : MinHeap α} {x : α} {rest : MinHeap α}
     (_hx : h.extractMin = some (x, rest)) : HeapOrdered rest.data := by

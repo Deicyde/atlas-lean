@@ -229,11 +229,7 @@ private theorem binSearchAux_map {α : Type u} {β : Type*}
 -- universe-polymorphic, so the public theorems below necessarily match
 -- core's universe-0 signatures.
 
-/-- **Array binary search membership test agrees with binary search.** Let $A$ be an array with
-entries in a type $\alpha$, let $k \in \alpha$, let $\mathrm{lt}$ be any Boolean-valued comparison
-on $\alpha$, and let $\ell$ and $h$ be natural numbers. Lean core's Boolean binary search
-membership test for $k$ in $A$, with comparison $\mathrm{lt}$ and bounds $\ell$ and $h$, returns
-true exactly when Lean core's array binary search with the same arguments returns some element. -/
+/-- `binSearchContains` is the Boolean view of `binSearch`. -/
 theorem binSearchContains_eq_isSome {α : Type} (as : Array α) (k : α)
     (lt : α → α → Bool) (lo hi : Nat) :
     as.binSearchContains k lt lo hi = (as.binSearch k lt lo hi).isSome := by
@@ -248,15 +244,9 @@ theorem binSearchContains_eq_isSome {α : Type} (as : Array α) (k : α)
       · simp [hhi, hw]
   · rfl
 
-/-- **Result of bounded binary search on a sorted array.** Let $A = (a_0, \dots, a_{n-1})$ be an
-array of length $n$ with entries in a linearly ordered type, with $a_i \le a_j$ whenever $i < j$.
-Let $k$ and $a$ be elements of that type and $\ell$, $h$ natural numbers. Lean core's array binary
-search for $k$ in $A$, with the strict order $<$ as comparison and inclusive bounds $\ell$ and
-$h$, returns $a$ if and only if $a = k$ and there is an index $i < n$ with $\ell \le i \le h$ and
-$a_i = k$.
-
-The requirement $i < n$ reflects the implementation's clamping of an upper bound $h \ge n$ to
-$n - 1$. -/
+/-- On a sorted array, bounded binary search returns `a` exactly when `a` is the key and the key
+occurs at a valid index between the inclusive raw bounds. The validity condition on the index
+expresses the implementation's clamping of an oversized upper bound. -/
 theorem binSearch_eq_some_iff {α : Type} [LinearOrder α] {as : Array α}
     (hs : as.Pairwise (fun a b => a ≤ b)) {k a : α} {lo hi : Nat} :
     as.binSearch k (fun x y => decide (x < y)) lo hi = some a ↔
@@ -276,12 +266,8 @@ theorem binSearch_eq_some_iff {α : Type} [LinearOrder α] {as : Array α}
     · rintro ⟨_, hmem'⟩
       exact (hmem hmem').elim
 
-/-- **Bounded binary search on a sorted array fails exactly when the key is absent.** Let
-$A = (a_0, \dots, a_{n-1})$ be an array of length $n$ with entries in a linearly ordered type,
-with $a_i \le a_j$ whenever $i < j$. Let $k$ be an element of that type and $\ell$, $h$ natural
-numbers. Lean core's array binary search for $k$ in $A$, with the strict order $<$ as comparison
-and inclusive bounds $\ell$ and $h$, returns no element if and only if there is no index $i < n$
-with $\ell \le i \le h$ and $a_i = k$. -/
+/-- On a sorted array, bounded binary search returns `none` exactly when the key has no occurrence
+at a valid index between the inclusive raw bounds. -/
 theorem binSearch_eq_none_iff {α : Type} [LinearOrder α] {as : Array α}
     (hs : as.Pairwise (fun a b => a ≤ b)) {k : α} {lo hi : Nat} :
     as.binSearch k (fun x y => decide (x < y)) lo hi = none ↔
@@ -289,12 +275,8 @@ theorem binSearch_eq_none_iff {α : Type} [LinearOrder α] {as : Array α}
   rw [binSearch_eq_if_mem as hs k lo hi]
   simp
 
-/-- **Bounded binary search membership test on a sorted array is correct.** Let
-$A = (a_0, \dots, a_{n-1})$ be an array of length $n$ with entries in a linearly ordered type,
-with $a_i \le a_j$ whenever $i < j$. Let $k$ be an element of that type and $\ell$, $h$ natural
-numbers. Lean core's Boolean binary search membership test for $k$ in $A$, with the strict order
-$<$ as comparison and inclusive bounds $\ell$ and $h$, returns true if and only if there is an
-index $i < n$ with $\ell \le i \le h$ and $a_i = k$. -/
+/-- On a sorted array, bounded `binSearchContains` is true exactly when the key occurs at a valid
+index between the inclusive raw bounds. -/
 theorem binSearchContains_eq_true_iff {α : Type} [LinearOrder α] {as : Array α}
     (hs : as.Pairwise (fun a b => a ≤ b)) {k : α} {lo hi : Nat} :
     as.binSearchContains k (fun x y => decide (x < y)) lo hi = true ↔
@@ -311,31 +293,20 @@ private theorem fullRange_iff_mem {α : Type} [LinearOrder α] {as : Array α} {
   · rintro ⟨i, hi, hkey⟩
     exact ⟨i, hi, Nat.zero_le i, by omega, hkey⟩
 
-/-- **Binary search on a sorted array finds exactly its members.** Let $A$ be an array with entries
-in a linearly ordered type, sorted so that an earlier entry is never greater than a later one, and
-let $k$ and $a$ be elements of that type. Lean core's array binary search for $k$ over the whole of
-$A$, with the strict order $<$ as comparison, returns $a$ if and only if $a = k$ and $k$ is an
-entry of $A$. -/
+/-- Full-range binary search returns `a` exactly when `a` is the key and the key belongs to the
+array. -/
 theorem binSearch_eq_some_iff_mem {α : Type} [LinearOrder α] {as : Array α}
     (hs : as.Pairwise (fun a b => a ≤ b)) {k a : α} :
     as.binSearch k (fun x y => decide (x < y)) = some a ↔ a = k ∧ k ∈ as := by
   rw [binSearch_eq_some_iff hs, fullRange_iff_mem]
 
-/-- **Binary search on a sorted array fails exactly on non-members.** Let $A$ be an array with
-entries in a linearly ordered type, sorted so that an earlier entry is never greater than a later
-one, and let $k$ be an element of that type. Lean core's array binary search for $k$ over the
-whole of $A$, with the strict order $<$ as comparison, returns no element if and only if $k$ is
-not an entry of $A$. -/
+/-- Full-range binary search returns `none` exactly when the key is absent. -/
 theorem binSearch_eq_none_iff_not_mem {α : Type} [LinearOrder α] {as : Array α}
     (hs : as.Pairwise (fun a b => a ≤ b)) {k : α} :
     as.binSearch k (fun x y => decide (x < y)) = none ↔ k ∉ as := by
   rw [binSearch_eq_none_iff hs, fullRange_iff_mem]
 
-/-- **Binary search membership test on a sorted array is correct.** Let $A$ be an array with
-entries in a linearly ordered type, sorted so that an earlier entry is never greater than a later
-one, and let $k$ be an element of that type. Lean core's Boolean binary search membership test
-for $k$ over the whole of $A$, with the strict order $<$ as comparison, returns true if and only
-if $k$ is an entry of $A$. -/
+/-- Full-range `binSearchContains` is true exactly when the key belongs to the array. -/
 theorem binSearchContains_eq_true_iff_mem {α : Type} [LinearOrder α] {as : Array α}
     (hs : as.Pairwise (fun a b => a ≤ b)) {k : α} :
     as.binSearchContains k (fun x y => decide (x < y)) = true ↔ k ∈ as := by

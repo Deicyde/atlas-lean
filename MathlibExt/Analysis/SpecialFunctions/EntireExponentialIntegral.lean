@@ -34,17 +34,13 @@ noncomputable section
 
 open Set
 
-/-- **Terms of the series for the entire exponential integral.** For a natural number $n$ and a
-complex number $z$, this is the complex number $\frac{(-1)^n z^{n+1}}{(n+1) \cdot (n+1)!}$,
-the term of index $j = n + 1$ in the series
-$\operatorname{Ein}(z) = \sum_{j \ge 1} \frac{(-1)^{j+1} z^j}{j \cdot j!}$. -/
+/-- The `j = n + 1` term of the entire power series for `Ein`. -/
 def einTerm (n : ℕ) (z : ℂ) : ℂ :=
   (-1 : ℂ) ^ n * z ^ (n + 1) /
     (((n + 1 : ℕ) : ℂ) * ((n + 1).factorial : ℂ))
 
-/-- **The entire exponential integral Ein.** The entire exponential integral is the function
-$\operatorname{Ein} : \mathbb{C} \to \mathbb{C}$ defined by
-$\operatorname{Ein}(z) = \sum_{j \ge 1} \frac{(-1)^{j+1} z^j}{j \cdot j!}$. -/
+/-- The entire exponential integral
+`Ein z = sum_(j >= 1) (-1)^(j+1) z^j / (j * j!)`. -/
 def ein (z : ℂ) : ℂ :=
   ∑' n : ℕ, einTerm n z
 
@@ -104,13 +100,11 @@ theorem hasDerivAt_ein (z : ℂ) :
   · simp [einTerm]
   · simp [R, Metric.mem_ball]
 
-/-- **Differentiability of the entire exponential integral.** The entire exponential integral
-$\operatorname{Ein}$ is complex differentiable at every point of $\mathbb{C}$. -/
+/-- The power series defining `ein` is complex differentiable everywhere. -/
 theorem differentiable_ein : Differentiable ℂ ein :=
   fun z => (hasDerivAt_ein z).differentiableAt
 
-/-- **Analyticity of the entire exponential integral.** The entire exponential integral
-$\operatorname{Ein}$ is complex analytic at every point of $\mathbb{C}$. -/
+/-- `ein` is entire, stated in Mathlib's neighborhood-analytic form. -/
 theorem analyticOnNhd_ein : AnalyticOnNhd ℂ ein univ :=
   analyticOnNhd_univ_iff_differentiable.mpr differentiable_ein
 
@@ -123,11 +117,8 @@ private theorem exp_tail (z : ℂ) :
       (NormedSpace.expSeries_div_hasSum_exp (𝔸 := ℂ) (-z))
   simpa using ((hasSum_nat_add_iff' 1).mpr hfull).tsum_eq
 
-/-- **Derivative of the entire exponential integral.** For every complex number $z$, the entire
-exponential integral $\operatorname{Ein}$ satisfies $z \operatorname{Ein}'(z) = 1 - e^{-z}$.
-
-This is the identity $\operatorname{Ein}'(z) = (1 - e^{-z})/z$ multiplied through by $z$, a form
-that remains valid at $z = 0$. -/
+/-- The derivative identity for the entire exponential integral, in a form
+that remains valid at `z = 0`. -/
 theorem mul_deriv_ein (z : ℂ) :
     z * deriv ein z = 1 - Complex.exp (-z) := by
   rw [(hasDerivAt_ein z).deriv, ← tsum_mul_left]

@@ -79,7 +79,7 @@ theorem pcx_gpp_bracket_nonneg {p q a c : ℝ} (hp0 : 0 < p) (hp1 : p < 1)
     exact Real.sqrt_le_sqrt hXYlb
   linarith [hamgm, hsqrtlb]
 
-/-- **Convex auxiliary function for the p-biased inequality.** `(1-p)(1 - p t)^q + p(1 + (1-p) t)^q - 1 - 2q(q-1) p²(1-p)² t²`, convex and nonnegative on
+/-- `(1-p)(1 - p t)^q + p(1 + (1-p) t)^q - 1 - 2q(q-1) p²(1-p)² t²`, convex and nonnegative on
 `[-1/(1-p), 1/p]` for `1 ≤ q ≤ 2`. -/
 noncomputable def pcx_g (p q t : ℝ) : ℝ :=
   (1 - p) * (1 - p * t) ^ q + p * (1 + (1 - p) * t) ^ q - 1
@@ -221,7 +221,7 @@ theorem pcx_g_nonneg {p q : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hq1 : 1 ≤ q) (hq
   rw [pcx_g_at_zero] at hle
   exact hle
 
-/-- **Pointwise bound for the p-biased inequality holds.** The pointwise bound `pih_KEY p q` for `0 < p < 1` and `1 ≤ q ≤ 2`. -/
+/-- The pointwise bound `pih_KEY p q` for `0 < p < 1` and `1 ≤ q ≤ 2`. -/
 theorem pcx_KEY_pos {p q : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hq1 : 1 ≤ q) (hq2 : q ≤ 2) :
     pih_KEY p q := by
   intro z hz
@@ -269,12 +269,12 @@ theorem pcx_KEY_pos {p q : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hq1 : 1 ≤ q) (hq2
   rw [hexpand] at hΦnn
   nlinarith [hΦnn]
 
-/-- **One-variable p-biased inequality.** The one-variable `p`-biased inequality for `0 < p < 1` and `1 ≤ q ≤ 2`. -/
+/-- The one-variable `p`-biased inequality for `0 < p < 1` and `1 ≤ q ≤ 2`. -/
 theorem pcx_OneVarCore {p q : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hq1 : 1 ≤ q) (hq2 : q ≤ 2) :
     pbt_OneVarCore p q :=
   pih_core_of_KEY hp0 hp1 hq1 hq2 (pcx_KEY_pos hp0 hp1 hq1 hq2)
 
-/-- **p-biased two-point inequality.** The **`p`-biased two-point inequality**: for `0 < p < 1`, `1 ≤ q ≤ 2` and real `u, v`,
+/-- The **`p`-biased two-point inequality**: for `0 < p < 1`, `1 ≤ q ≤ 2` and real `u, v`,
 `((1-p) u + p v)² + 4(q-1) p²(1-p)²(u - v)² ≤ ((1-p)|u|^q + p|v|^q)^(2/q)`. -/
 theorem pcx_two_point_value {p q : ℝ} (hp0 : 0 < p) (hp1 : p < 1) (hq1 : 1 ≤ q) (hq2 : q ≤ 2)
     (u v : ℝ) :

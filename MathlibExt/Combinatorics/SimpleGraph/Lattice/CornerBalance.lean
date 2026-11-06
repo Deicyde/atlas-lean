@@ -46,13 +46,13 @@ namespace StatMech
 namespace Lattice
 
 open Classical in
-/-- **Number of reflex corners in a boundary orbit.** The number of steps `i < p` in the boundary orbit of `e` with turn `turnZ = 1` (reflex
+/-- The number of steps `i < p` in the boundary orbit of `e` with turn `turnZ = 1` (reflex
 corners of `K`). -/
 noncomputable def rightCornerCount (K : Set (Site 2)) (e : Dart) (p : ℕ) : ℤ :=
   ((Finset.range p).filter (fun i => turnZ K ((dartNext K)^[i] e) = 1)).card
 
 open Classical in
-/-- **Number of convex corners in a boundary orbit.** The number of steps `i < p` in the boundary orbit of `e` with turn `turnZ = -1` (convex
+/-- The number of steps `i < p` in the boundary orbit of `e` with turn `turnZ = -1` (convex
 corners of `K`). -/
 noncomputable def leftCornerCount (K : Set (Site 2)) (e : Dart) (p : ℕ) : ℤ :=
   ((Finset.range p).filter (fun i => turnZ K ((dartNext K)^[i] e) = -1)).card
@@ -91,7 +91,7 @@ theorem totalTurnZ_four_of_all_left (K : Set (Site 2)) (e : Dart)
   rw [h0, h1, h2, h3]
   ring
 
-/-- **Unit cell as a one-site set.** The one-site set `{(0, 0)}`. -/
+/-- The one-site set `{(0, 0)}`. -/
 noncomputable def unitCell : Set (Site 2) := {![0, 0]}
 
 theorem unitCell_finite : unitCell.Finite := Set.finite_singleton _
@@ -110,13 +110,13 @@ theorem unitWt_my : unitWt (![0, -1] : Site 2) = 1 := by simp [unitWt, Fin.sum_u
 theorem unitWt_mx : unitWt (![-1, 0] : Site 2) = 1 := by simp [unitWt, Fin.sum_univ_two]
 theorem unitWt_py : unitWt (![0, 1] : Site 2) = 1 := by simp [unitWt, Fin.sum_univ_two]
 
-/-- **Rightward boundary dart of the unit cell.** The boundary dart of the unit cell pointing right. -/
+/-- The boundary dart of the unit cell pointing right. -/
 noncomputable def ucDart0 : Dart := mkDart ![0, 0] ![1, 0] unitWt_px
-/-- **Downward boundary dart of the unit cell.** The boundary dart of the unit cell pointing down. -/
+/-- The boundary dart of the unit cell pointing down. -/
 noncomputable def ucDart1 : Dart := mkDart ![0, 0] ![0, -1] unitWt_my
-/-- **Leftward boundary dart of the unit cell.** The boundary dart of the unit cell pointing left. -/
+/-- The boundary dart of the unit cell pointing left. -/
 noncomputable def ucDart2 : Dart := mkDart ![0, 0] ![-1, 0] unitWt_mx
-/-- **Upward boundary dart of the unit cell.** The boundary dart of the unit cell pointing up. -/
+/-- The boundary dart of the unit cell pointing up. -/
 noncomputable def ucDart3 : Dart := mkDart ![0, 0] ![0, 1] unitWt_py
 
 theorem ucDart0_tail : ucDart0.tail = ![0, 0] := rfl
@@ -233,7 +233,7 @@ theorem unitCell_totalTurnZ_four : totalTurnZ unitCell ucDart0 4 = -4 := by
   · rw [iterate_ucDart_2]; exact ucDart2_turnZ
   · rw [iterate_ucDart_3]; exact ucDart3_turnZ
 
-/-- **Base boundary dart of the unit cell.** The rightward boundary dart of the unit cell, as an element of the subtype of boundary darts. -/
+/-- The rightward boundary dart of the unit cell, as an element of the subtype of boundary darts. -/
 noncomputable def ucBase : {e : Dart // IsBoundaryDart unitCell e} :=
   ⟨ucDart0, ucDart0_boundary⟩
 

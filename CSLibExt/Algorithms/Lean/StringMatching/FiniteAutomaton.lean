@@ -236,17 +236,8 @@ private def typedTransitionCell {A : Nat} (pattern : List (Fin A))
       (transitionCell_spec pattern q.val (Nat.le_of_lt_succ q.isLt) a).1.1⟩
     time := r.time }
 
-/-- **Transition table of the string-matching automaton.** Let $P$ be a pattern of length $m$
-over the alphabet $\{0, \dots, A-1\}$ and write $P_k$ for its prefix of length $k$. This timed
-computation returns a table of $(m+1)A$ entries in $\{0, \dots, m\}$, stored row by row: for
-each state $q \le m$ and symbol $a < A$, the entry at index $qA + a$ is found by trying
-$k = \min(m, q+1)$ and then each smaller value in turn, and is the first $k$ for which $P_k$ is
-a suffix of the word $P_q a$ (the candidate $k = 0$ is always accepted). The cost counts
-one unit for each candidate $k$ tried, one for each symbol comparison executed when comparing
-$P_k$ with the last $k$ symbols of $P_q a$ (left to right, stopping at the first mismatch), one
-for each move to a smaller candidate, and one for each table entry written.
-
-Source: CLRS fourth edition section 32.3, decreasing-candidate row-major construction.
+/-- CLRS fourth edition section 32.3, decreasing-candidate row-major construction.
+Each actual candidate comparison is charged by its executed equality tests.
 -/
 def computeTransition {A : Nat} (pattern : List (Fin A)) :
     TimeM Nat (Vector (Fin (pattern.length + 1)) ((pattern.length + 1) * A)) :=
@@ -255,10 +246,7 @@ def computeTransition {A : Nat} (pattern : List (Fin A)) :
     TimeM.tick 1
     pure q
 
-/-- **Correctness of the string-matching transition table.** Let $P$ be a pattern of length $m$
-over the alphabet $\{0, \dots, A-1\}$ and write $P_k$ for its prefix of length $k$. For every
-state $q \le m$ and symbol $a < A$, the entry at index $qA + a$ of the transition table of $P$
-is the greatest $k \le m$ such that $P_k$ is a suffix of the word $P_q a$. -/
+/-- Every actual table entry is the greatest feasible suffix-prefix length. -/
 theorem computeTransition_spec {A : Nat} (pattern : List (Fin A))
     (q : Fin (pattern.length + 1)) (a : Fin A) :
     IsGreatest {k : Nat | k ≤ pattern.length ∧ pattern.take k <:+ pattern.take q.val ++ [a]}
@@ -284,11 +272,7 @@ private theorem typedTransitionCell_time_le {A : Nat} (pattern : List (Fin A))
     exact Nat.min_le_left _ _
   simpa [typedTransitionCell, transitionCell] using h.trans hb
 
-/-- **Cost bound for the string-matching transition table.** For every pattern of length $m$
-over the alphabet $\{0, \dots, A-1\}$, the cost of computing its transition table is at most
-$2A(m+1)^3$.
-
-The cost counts executed candidates, symbol comparisons, failed decrements and table writes. -/
+/-- Bound on the actual candidate/comparison/decrement/write event count. -/
 theorem computeTransition_time_le {A : Nat} (pattern : List (Fin A)) :
     (computeTransition pattern).time ≤ 2 * A * (pattern.length + 1) ^ 3 := by
   unfold computeTransition
@@ -347,11 +331,7 @@ private theorem maximal_suffix_step {α : Type u} (pattern word : List α) (a : 
               List.length_take_of_le hq.1.1] using hkq)
         exact (suffix_take_succ_iff hklen).mpr ⟨hsuffix, parts.2⟩
 
-/-- **String-matching automaton.** For a pattern $P$ of length $m$ over the alphabet
-$\{0, \dots, A-1\}$, the string-matching automaton of $P$ is the deterministic finite automaton
-with states $\{0, \dots, m\}$, input symbols $\{0, \dots, A-1\}$, start state $0$, accepting set
-$\{m\}$, and transition from state $q$ on symbol $a$ given by the entry at index $qA + a$ of the
-transition table of $P$. -/
+/-- Canonical deterministic automaton whose transition is the constructed table. -/
 def patternAutomaton {A : Nat} (pattern : List (Fin A)) :
     Cslib.Automata.DA.FinAcc (Fin (pattern.length + 1)) (Fin A) :=
   let table := (computeTransition pattern).ret
@@ -367,11 +347,7 @@ private theorem patternAutomaton_step {A : Nat} (pattern word : List (Fin A))
   exact maximal_suffix_step pattern word a q.val hq _
     (computeTransition_spec pattern q a)
 
-/-- **The string-matching automaton tracks the longest matched prefix.** Let $P$ be a pattern of
-length $m$ over the alphabet $\{0, \dots, A-1\}$ and write $P_k$ for its prefix of length $k$.
-For every word $w$ over this alphabet, the state that the string-matching automaton of $P$
-reaches from its start state after reading $w$ is the greatest $k \le m$ such that $P_k$ is a
-suffix of $w$. -/
+/-- The actual canonical automaton state is the greatest suffix-prefix length. -/
 theorem patternAutomaton_state {A : Nat} (pattern word : List (Fin A)) :
     IsGreatest {k : Nat | k ≤ pattern.length ∧ pattern.take k <:+ word}
       ((patternAutomaton pattern).mtr (patternAutomaton pattern).start word).val := by
@@ -441,17 +417,9 @@ private theorem scan_time {A m : Nat} (table : Vector (Fin (m + 1)) ((m + 1) * A
       simp only [List.length_cons]
       omega
 
-/-- **Finite-automaton string matcher.** Let $P$ be a pattern of length $m$ and $T$ a text over
-the alphabet $\{0, \dots, A-1\}$. This timed computation first computes the transition table of
-$P$, then runs through $T$ starting in state $0$: on reading the $i$-th symbol $a$ of $T$ in
-state $q$ it moves to the state given by the table entry at index $qA + a$, and if that state is
-$m$ it reports the shift $i - m$. If $m = 0$, the shift $0$ is also reported before the scan.
-It returns the reported shifts in the order found. The cost is that of computing the table,
-plus two units for each symbol of $T$ (a table lookup and an acceptance test), plus one unit for
-each reported shift.
-
-The table is computed once, before the single pass over the text, and the scan does not reset
-after a match, so overlapping occurrences are reported. -/
+/-- All overlapping zero-based shifts, including every empty-pattern boundary.
+The constructed table is bound once before the one-pass scan.
+-/
 def finiteAutomatonMatches {A : Nat} (pattern text : List (Fin A)) : TimeM Nat (List Nat) := do
   let table ← computeTransition pattern
   if pattern.length = 0 then do
@@ -459,10 +427,7 @@ def finiteAutomatonMatches {A : Nat} (pattern text : List (Fin A)) : TimeM Nat (
     scan table 0 0 (pure [0]) text
   else scan table 0 0 (pure []) text
 
-/-- **Exact cost of the finite-automaton matcher.** For every pattern $P$ and text $T$ over the
-alphabet $\{0, \dots, A-1\}$, where $T$ has length $n$, the cost of the finite-automaton matcher
-on $P$ and $T$ equals the cost of computing the transition table of $P$, plus $2n$, plus the
-number of shifts the matcher returns. -/
+/-- Exact candidate-table work, two events per symbol, and one event per output. -/
 theorem finiteAutomatonMatches_time {A : Nat} (pattern text : List (Fin A)) :
     (finiteAutomatonMatches pattern text).time =
       (computeTransition pattern).time + 2 * text.length +
@@ -606,12 +571,7 @@ private theorem mem_endOffsets_iff {A : Nat} (pattern text : List (Fin A)) (offs
     refine ⟨offset + pattern.length, ⟨?_, hs⟩, by omega⟩
     exact List.mem_range'.mpr ⟨offset + pattern.length, by omega, by simp⟩
 
-/-- **Correctness of the finite-automaton matcher.** For every pattern $P$ and text $T$ over the
-alphabet $\{0, \dots, A-1\}$, the list of shifts returned by the finite-automaton matcher equals
-the list returned by the naive string matcher.
-
-So it is the complete increasing list of zero-based shifts at which $P$ occurs in $T$, including
-overlapping occurrences and, for the empty pattern, every boundary. -/
+/-- The complete increasing list of zero-based shifts, including overlaps and empty boundaries. -/
 theorem finiteAutomatonMatches_ret {A : Nat} (pattern text : List (Fin A)) :
     (finiteAutomatonMatches pattern text).ret = (TimeM.naiveMatches pattern text).ret := by
   rw [finiteAutomatonMatches_endOffsets]

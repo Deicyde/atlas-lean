@@ -121,7 +121,7 @@ namespace MathlibExt.Biology.PopulationGenetics.MultispeciesCoalescent
 
 /-! ### Species trees -/
 
-/-- **Rooted binary species tree with branch lengths.** A rooted binary **species tree** on the species `Fin n` with branch lengths: `leaf i` is
+/-- A rooted binary **species tree** on the species `Fin n` with branch lengths: `leaf i` is
 species `i`, and `node l r t` is the ancestral species of the species below `l` and `r`, where
 `t` is the length, in coalescent units (`2N` generations), of the branch above the node, i.e.
 the time during which the ancestral population of `l` and `r` exists before it merges with a
@@ -141,25 +141,25 @@ namespace SpeciesTree
 
 variable {n : ℕ}
 
-/-- **Species tree with nonnegative branch lengths.** Every branch length of the species tree, including the unused one stored at the root, is
+/-- Every branch length of the species tree, including the unused one stored at the root, is
 nonnegative. On such trees `geneTreeProb` is a probability law; for a negative length it is
 only a signed weight. -/
 def NonnegLengths : SpeciesTree n → Prop
   | leaf _ => True
   | node l r t => l.NonnegLengths ∧ r.NonnegLengths ∧ 0 ≤ t
 
-/-- **Species below a node of a species tree.** The species below a node. -/
+/-- The species below a node. -/
 def taxa : SpeciesTree n → Finset (Fin n)
   | leaf i => {i}
   | node l r _ => l.taxa ∪ r.taxa
 
-/-- **Clusters of a species tree.** The clusters (clades) of a species tree: the sets of species below its vertices, including
+/-- The clusters (clades) of a species tree: the sets of species below its vertices, including
 the singletons and the full set of species. -/
 def clusters : SpeciesTree n → Finset (Finset (Fin n))
   | leaf i => {{i}}
   | node l r _ => insert (l.taxa ∪ r.taxa) (l.clusters ∪ r.clusters)
 
-/-- **Topology of a species tree.** The topology of a species tree, forgetting branch lengths, as a planar rooted binary tree. -/
+/-- The topology of a species tree, forgetting branch lengths, as a planar rooted binary tree. -/
 def shape : SpeciesTree n → MathlibExt.Biology.Phylogenetics.TreeCount.PlaneTree (Fin n)
   | leaf i => .leaf i
   | node l r _ => .node l.shape r.shape
@@ -264,7 +264,7 @@ theorem tavareProb_nonneg {m j : ℕ} (hj : j ∈ Icc 1 m) {t : ℝ} (ht : 0 ≤
 
 variable {n : ℕ}
 
-/-- **Lineages after the first coalescence events of a ranked history.** The lineages after the first `t` coalescence events of the ranked history `h` (of `m`
+/-- The lineages after the first `t` coalescence events of the ranked history `h` (of `m`
 lineages), starting from the lineages `bs`, each given as the set of sampled genes it is
 ancestral to. Events follow the encoding of `RankedHistory`: the pair `{a, b}` with `a < b`
 merges into position `a`, and position `b` is removed (`mergeBlocks`). With the singletons as
@@ -277,12 +277,12 @@ def mergeAlong {m : ℕ} (bs : List (Finset (Fin n))) (h : RankedHistory m) (t :
       mergeBlocks bs (s.min.getD 0) (s.max.getD 0))
     bs
 
-/-- **Merging lineages from singletons gives the ancestral blocks.** Starting from the singletons, `mergeAlong` is `blocksAfter`. -/
+/-- Starting from the singletons, `mergeAlong` is `blocksAfter`. -/
 theorem mergeAlong_singletons (h : RankedHistory n) (t : ℕ) :
     mergeAlong ((List.finRange n).map fun j => {j}) h t = blocksAfter h t :=
   rfl
 
-/-- **Clusters formed along a ranked history.** The clusters formed during the first `t` coalescence events of `h` from the lineages `bs`:
+/-- The clusters formed during the first `t` coalescence events of `h` from the lineages `bs`:
 every lineage present at some step `u ≤ t`, as the set of sampled genes it is ancestral to. -/
 def cladesAlong {m : ℕ} (bs : List (Finset (Fin n))) (h : RankedHistory m) (t : ℕ) :
     Finset (Finset (Fin n)) :=
@@ -290,7 +290,7 @@ def cladesAlong {m : ℕ} (bs : List (Finset (Fin n))) (h : RankedHistory m) (t 
 
 /-! ### The multispecies coalescent -/
 
-/-- **Coalescence along one branch of the species tree.** One population of the multispecies coalescent along a branch of length `t`. It receives
+/-- One population of the multispecies coalescent along a branch of length `t`. It receives
 `m` lineages `bs` (and the clusters `acc` formed below it). Under Kingman's coalescent the
 number `j` of lineages left at the top of the branch has law `tavareProb m j t` (Tavaré's
 formula, `exp_blockCountingGenerator_apply`), and, independently of the coalescence times, the
@@ -302,7 +302,7 @@ def branchStep (t : ℝ) (m : ℕ) (bs : List (Finset (Fin n))) (acc : Finset (F
   ∑ j ∈ Icc 1 m, tavareProb m j t *
     ∫ h, k j (mergeAlong bs h (m - j)) (acc ∪ cladesAlong bs h (m - j)) ∂randomJoining m
 
-/-- **Law of the lineages leaving a species-tree branch.** The law of the lineages leaving the top of the branch above a vertex of the species tree,
+/-- The law of the lineages leaving the top of the branch above a vertex of the species tree,
 in continuation-passing form: `exitLaw T k` is the expectation of `k m bs acc`, where `m` is
 the number of exiting lineages, `bs` the lineages and `acc` the clusters formed below. The two
 daughter populations evolve independently, and their lineages enter the ancestral population
@@ -328,13 +328,13 @@ def geneTreeProb (T : SpeciesTree n) (E : Finset (Finset (Fin n)) → Prop) [Dec
       ∫ h, (if E (al ∪ ar ∪ cladesAlong (bl ++ br) h (ml + mr - 1)) then 1 else 0)
         ∂randomJoining (ml + mr)
 
-/-- **Root branch length does not affect gene-tree probabilities.** The branch length stored at the root of a species tree does not affect the gene tree. -/
+/-- The branch length stored at the root of a species tree does not affect the gene tree. -/
 theorem geneTreeProb_node_length (l r : SpeciesTree n) (t t' : ℝ)
     (E : Finset (Finset (Fin n)) → Prop) [DecidablePred E] :
     geneTreeProb (.node l r t) E = geneTreeProb (.node l r t') E :=
   rfl
 
-/-- **Exit law of a constant continuation.** If a continuation takes the constant value `c` whenever at least one lineage exits, then
+/-- If a continuation takes the constant value `c` whenever at least one lineage exits, then
 so does `exitLaw` (Tavaré's probabilities sum to one and random joining is a probability). -/
 theorem exitLaw_eq_const (T : SpeciesTree n) (c : ℝ)
     (k : ℕ → List (Finset (Fin n)) → Finset (Finset (Fin n)) → ℝ)
@@ -360,7 +360,7 @@ theorem geneTreeProb_true (T : SpeciesTree n) : geneTreeProb T (fun _ => True) =
     exact exitLaw_eq_const l 1 _ fun ml bl al _ => exitLaw_eq_const r 1 _ fun mr br ar _ => by
       rw [integral_const, probReal_univ, one_smul]
 
-/-- **Total gene-tree probability is one.** An event containing every gene tree has weight one, for every species tree. -/
+/-- An event containing every gene tree has weight one, for every species tree. -/
 theorem geneTreeProb_eq_one (T : SpeciesTree n) (E : Finset (Finset (Fin n)) → Prop)
     [DecidablePred E] (hE : ∀ G, E G) : geneTreeProb T E = 1 := by
   have hi : ∀ G, (if E G then (1 : ℝ) else 0) = 1 := fun G => ite_eq_left (hE G)
@@ -371,7 +371,7 @@ theorem geneTreeProb_eq_one (T : SpeciesTree n) (E : Finset (Finset (Fin n)) →
     exact exitLaw_eq_const l 1 _ fun _ _ _ _ => exitLaw_eq_const r 1 _ fun _ _ _ _ => by
       rw [integral_const, probReal_univ, one_smul]
 
-/-- **Nonnegativity of the exit law.** On a species tree with nonnegative branch lengths, `exitLaw` of a continuation that is
+/-- On a species tree with nonnegative branch lengths, `exitLaw` of a continuation that is
 nonnegative whenever at least one lineage exits is nonnegative (Tavaré's probabilities are
 nonnegative, `tavareProb_nonneg`). -/
 theorem exitLaw_nonneg : ∀ (T : SpeciesTree n), T.NonnegLengths →
@@ -400,7 +400,7 @@ theorem geneTreeProb_nonneg {T : SpeciesTree n} (hT : T.NonnegLengths)
 
 /-! ### Evaluating random-joining expectations -/
 
-/-- **Expectation under random joining as an average over histories.** An expectation under random joining is the average over the `∏_{k=2}^m C(k, 2)` ranked
+/-- An expectation under random joining is the average over the `∏_{k=2}^m C(k, 2)` ranked
 histories. -/
 theorem integral_randomJoining (m : ℕ) (f : RankedHistory m → ℝ) :
     ∫ h, f h ∂randomJoining m = (∑ h, f h) / ∏ k ∈ Icc 2 m, ((k.choose 2 : ℕ) : ℝ) := by
@@ -410,7 +410,7 @@ theorem integral_randomJoining (m : ℕ) (f : RankedHistory m → ℝ) :
   push_cast
   rfl
 
-/-- **Rational-valued expectation under random joining.** `integral_randomJoining` for a rational-valued function, with a rational result (used to
+/-- `integral_randomJoining` for a rational-valued function, with a rational result (used to
 evaluate random-joining probabilities by computation). -/
 theorem integral_randomJoining_ratCast (m : ℕ) (q : RankedHistory m → ℚ) :
     ∫ h, (q h : ℝ) ∂randomJoining m =
@@ -419,7 +419,7 @@ theorem integral_randomJoining_ratCast (m : ℕ) (q : RankedHistory m → ℚ) :
   push_cast
   rfl
 
-/-- **Random-joining probability as a fraction of ranked histories.** The probability of an event under random joining is the fraction of ranked histories in it. -/
+/-- The probability of an event under random joining is the fraction of ranked histories in it. -/
 theorem randomJoining_real (m : ℕ) (A : Set (RankedHistory m)) [DecidablePred (· ∈ A)] :
     (randomJoining m).real A = (#{h | h ∈ A} : ℝ) / ∏ k ∈ Icc 2 m, ((k.choose 2 : ℕ) : ℝ) := by
   rw [← integral_indicator_one (.of_discrete), integral_randomJoining]
@@ -435,7 +435,7 @@ private theorem integral_randomJoining_add (m : ℕ) (f g : RankedHistory m → 
     ∫ h, f h + g h ∂randomJoining m = ∫ h, f h ∂randomJoining m + ∫ h, g h ∂randomJoining m :=
   integral_add .of_finite .of_finite
 
-/-- **Additivity of the exit law.** `exitLaw` is additive in the continuation. -/
+/-- `exitLaw` is additive in the continuation. -/
 theorem exitLaw_add (T : SpeciesTree n)
     (k₁ k₂ : ℕ → List (Finset (Fin n)) → Finset (Finset (Fin n)) → ℝ) :
     exitLaw T (fun m bs acc => k₁ m bs acc + k₂ m bs acc) = exitLaw T k₁ + exitLaw T k₂ := by
@@ -463,7 +463,7 @@ theorem geneTreeProb_or (T : SpeciesTree n) (E F : Finset (Finset (Fin n)) → P
   | leaf i => simp only [geneTreeProb, hi]
   | node l r t => simp only [geneTreeProb, hi, integral_randomJoining_add, exitLaw_add]
 
-/-- **Gene-tree probabilities are at most one.** On a species tree with nonnegative branch lengths, every gene-tree probability is at most
+/-- On a species tree with nonnegative branch lengths, every gene-tree probability is at most
 one. -/
 theorem geneTreeProb_le_one {T : SpeciesTree n} (hT : T.NonnegLengths)
     (E : Finset (Finset (Fin n)) → Prop) [DecidablePred E] : geneTreeProb T E ≤ 1 := by
@@ -517,28 +517,28 @@ private theorem integral_integral_ite_le {a b : ℕ} {β : Type*} [DecidableEq �
 
 /-! ### Tavaré's formula for two and three lineages -/
 
-/-- **Two lineages remain distinct with probability $e^{-t}$.** Two lineages are still distinct after time `t` with probability `e^{-t}`. -/
+/-- Two lineages are still distinct after time `t` with probability `e^{-t}`. -/
 theorem tavareProb_two_two (t : ℝ) : tavareProb 2 2 t = Real.exp (-t) := by
   simp [tavareProb, Nat.ascFactorial, Nat.descFactorial]
   ring_nf
 
-/-- **Two lineages coalesce with probability $1 - e^{-t}$.** Two lineages have coalesced within time `t` with probability `1 - e^{-t}`. -/
+/-- Two lineages have coalesced within time `t` with probability `1 - e^{-t}`. -/
 theorem tavareProb_two_one (t : ℝ) : tavareProb 2 1 t = 1 - Real.exp (-t) := by
   simp [tavareProb, Finset.sum_Icc_succ_top, Nat.ascFactorial, Nat.descFactorial]
   ring_nf
 
-/-- **Three lineages remain distinct with probability $e^{-3t}$.** Three lineages are still distinct after time `t` with probability `e^{-3t}`. -/
+/-- Three lineages are still distinct after time `t` with probability `e^{-3t}`. -/
 theorem tavareProb_three_three (t : ℝ) : tavareProb 3 3 t = Real.exp (-(3 * t)) := by
   simp [tavareProb, Nat.ascFactorial, Nat.descFactorial]
   ring_nf
 
-/-- **Three lineages have two ancestors at time $t$.** Three lineages have two ancestors at time `t` with probability `(3/2)(e^{-t} - e^{-3t})`. -/
+/-- Three lineages have two ancestors at time `t` with probability `(3/2)(e^{-t} - e^{-3t})`. -/
 theorem tavareProb_three_two (t : ℝ) :
     tavareProb 3 2 t = 3 / 2 * (Real.exp (-t) - Real.exp (-(3 * t))) := by
   simp [tavareProb, Finset.sum_Icc_succ_top, Nat.ascFactorial, Nat.descFactorial]
   ring_nf
 
-/-- **Three lineages have one ancestor at time $t$.** Three lineages have one ancestor at time `t` with probability
+/-- Three lineages have one ancestor at time `t` with probability
 `1 - (3/2) e^{-t} + (1/2) e^{-3t}`. -/
 theorem tavareProb_three_one (t : ℝ) :
     tavareProb 3 1 t = 1 - 3 / 2 * Real.exp (-t) + 1 / 2 * Real.exp (-(3 * t)) := by
@@ -547,13 +547,13 @@ theorem tavareProb_three_one (t : ℝ) :
 
 /-! ### Three species -/
 
-/-- **Three-species tree ((0, 1), 2).** The three-species tree `((0, 1), 2)` with internal branch length `t`. -/
+/-- The three-species tree `((0, 1), 2)` with internal branch length `t`. -/
 def triple (t : ℝ) : SpeciesTree 3 := .node (.node (.leaf 0) (.leaf 1) t) (.leaf 2) 0
 
-/-- **Three-gene tree with a given cherry.** The gene tree on three genes with cherry `c` (a pair of genes), as a set of clusters. -/
+/-- The gene tree on three genes with cherry `c` (a pair of genes), as a set of clusters. -/
 def tripleTree (c : Finset (Fin 3)) : Finset (Finset (Fin 3)) := {{0}, {1}, {2}, c, univ}
 
-/-- **Clusters of the three-species tree.** The species tree `((0, 1), 2)` has the clusters of the gene tree with cherry `{0, 1}`. -/
+/-- The species tree `((0, 1), 2)` has the clusters of the gene tree with cherry `{0, 1}`. -/
 theorem clusters_triple (t : ℝ) : (triple t).clusters = tripleTree {0, 1} := by
   simp only [triple, clusters, taxa, tripleTree]
   decide
@@ -574,7 +574,7 @@ theorem geneTreeProb_triple_matching (t : ℝ) :
     ring
   exact key _ _ (by decide +kernel) (by decide +kernel)
 
-/-- **Probability of the discordant three-species gene tree with cherry {0, 2}.** Each discordant three-species gene tree has probability `(1/3) e^{-t}`: cherry `{0, 2}`. -/
+/-- Each discordant three-species gene tree has probability `(1/3) e^{-t}`: cherry `{0, 2}`. -/
 theorem geneTreeProb_triple_cherry_02 (t : ℝ) :
     geneTreeProb (triple t) (· = tripleTree {0, 2}) = 1 / 3 * Real.exp (-t) := by
   simp only [geneTreeProb, triple, exitLaw, branchStep]
@@ -588,7 +588,7 @@ theorem geneTreeProb_triple_cherry_02 (t : ℝ) :
     ring
   exact key _ _ (by decide +kernel) (by decide +kernel)
 
-/-- **Probability of the discordant three-species gene tree with cherry {1, 2}.** Each discordant three-species gene tree has probability `(1/3) e^{-t}`: cherry `{1, 2}`. -/
+/-- Each discordant three-species gene tree has probability `(1/3) e^{-t}`: cherry `{1, 2}`. -/
 theorem geneTreeProb_triple_cherry_12 (t : ℝ) :
     geneTreeProb (triple t) (· = tripleTree {1, 2}) = 1 / 3 * Real.exp (-t) := by
   simp only [geneTreeProb, triple, exitLaw, branchStep]
@@ -614,7 +614,7 @@ theorem triple_no_anomaly {t : ℝ} (ht : 0 < t) :
   have : Real.exp (-t) < 1 := by simpa using Real.exp_lt_exp.mpr (show -t < 0 by linarith)
   constructor <;> linarith
 
-/-- **Wright–Fisher limit of the no-coalescence probability.** The three-species probabilities come from the Wright–Fisher model: in a population of `M`
+/-- The three-species probabilities come from the Wright–Fisher model: in a population of `M`
 gene copies, the lineages of species `0` and `1` have distinct parents in each of the
 `⌊t M⌋` generations of the internal branch (`t ≥ 0` coalescent units) with probability
 `noCoalProb M 2 ^ ⌊t M⌋`, which tends to `tavareProb 2 2 t = e^{-t}`, the weight of the case
@@ -626,41 +626,41 @@ theorem tendsto_noCoalProb_pow_floor_two {t : ℝ} (ht : 0 ≤ t) :
 
 /-! ### Four species: the anomaly zone -/
 
-/-- **Caterpillar four-species tree.** The asymmetric (caterpillar) species tree `(((0, 1), 2), 3)`: `x` is the length of the
+/-- The asymmetric (caterpillar) species tree `(((0, 1), 2), 3)`: `x` is the length of the
 deeper internal branch (above the ancestor of `0, 1, 2`) and `y` that of the shallower one
 (above the ancestor of `0, 1`), as in Degnan & Rosenberg (2006). -/
 def caterpillar (x y : ℝ) : SpeciesTree 4 :=
   .node (.node (.node (.leaf 0) (.leaf 1) y) (.leaf 2) x) (.leaf 3) 0
 
-/-- **Balanced four-species tree.** The symmetric (balanced) species tree `((0, 1), (2, 3))` with internal branch lengths `y₁`
+/-- The symmetric (balanced) species tree `((0, 1), (2, 3))` with internal branch lengths `y₁`
 (above the ancestor of `0, 1`) and `y₂` (above the ancestor of `2, 3`). -/
 def balanced (y₁ y₂ : ℝ) : SpeciesTree 4 :=
   .node (.node (.leaf 0) (.leaf 1) y₁) (.node (.leaf 2) (.leaf 3) y₂) 0
 
-/-- **Caterpillar four-gene tree.** The asymmetric gene tree `(((a, b), c), d)` on four genes, as a set of clusters. -/
+/-- The asymmetric gene tree `(((a, b), c), d)` on four genes, as a set of clusters. -/
 def caterpillarTree (a b c d : Fin 4) : Finset (Finset (Fin 4)) :=
   {{a}, {b}, {c}, {d}, {a, b}, {a, b, c}, univ}
 
-/-- **Balanced four-gene tree.** The symmetric gene tree `((a, b), (c, d))` on four genes, as a set of clusters. -/
+/-- The symmetric gene tree `((a, b), (c, d))` on four genes, as a set of clusters. -/
 def balancedTree (a b c d : Fin 4) : Finset (Finset (Fin 4)) :=
   {{a}, {b}, {c}, {d}, {a, b}, {c, d}, univ}
 
-/-- **Clusters of the caterpillar species tree.** The species tree `(((0, 1), 2), 3)` has the clusters of the gene tree `(((0, 1), 2), 3)`. -/
+/-- The species tree `(((0, 1), 2), 3)` has the clusters of the gene tree `(((0, 1), 2), 3)`. -/
 theorem clusters_caterpillar (x y : ℝ) : (caterpillar x y).clusters = caterpillarTree 0 1 2 3 := by
   simp only [caterpillar, clusters, taxa, caterpillarTree]
   decide
 
-/-- **Degnan–Rosenberg probability of the matching caterpillar gene tree.** Degnan & Rosenberg (2006), eq. (1): `f(x, y)`, the probability of the matching gene tree
+/-- Degnan & Rosenberg (2006), eq. (1): `f(x, y)`, the probability of the matching gene tree
 `(((A, B), C), D)` on the caterpillar species tree. -/
 def drF (x y : ℝ) : ℝ :=
   1 - 2 / 3 * Real.exp (-x) - 2 / 3 * Real.exp (-y) + 1 / 3 * Real.exp (-(x + y)) +
     1 / 18 * Real.exp (-(3 * x + y))
 
-/-- **Degnan–Rosenberg formula g for the gene tree ((A, C), (B, D)).** Degnan & Rosenberg (2006), eq. (2): `g(x, y)`, the probability of the gene tree
+/-- Degnan & Rosenberg (2006), eq. (2): `g(x, y)`, the probability of the gene tree
 `((A, C), (B, D))` (and of `((A, D), (B, C))`) on the caterpillar species tree. -/
 def drG (x y : ℝ) : ℝ := 1 / 6 * Real.exp (-(x + y)) - 1 / 18 * Real.exp (-(3 * x + y))
 
-/-- **Degnan–Rosenberg formula h for the gene tree ((A, B), (C, D)).** Degnan & Rosenberg (2006), eq. (3): `h(x, y)`, the probability of the gene tree
+/-- Degnan & Rosenberg (2006), eq. (3): `h(x, y)`, the probability of the gene tree
 `((A, B), (C, D))` on the caterpillar species tree. -/
 def drH (x y : ℝ) : ℝ :=
   1 / 3 * Real.exp (-x) - 1 / 6 * Real.exp (-(x + y)) - 1 / 18 * Real.exp (-(3 * x + y))
@@ -696,7 +696,7 @@ theorem geneTreeProb_caterpillar_matching (x y : ℝ) :
   push_cast
   ring
 
-/-- **Probability of the gene tree ((A, C), (B, D)) on the caterpillar.** The symmetric gene tree `((A, C), (B, D))` on the caterpillar species tree has probability
+/-- The symmetric gene tree `((A, C), (B, D))` on the caterpillar species tree has probability
 `g(x, y)` (Degnan & Rosenberg 2006, eq. (2)). -/
 theorem geneTreeProb_caterpillar_AC_BD (x y : ℝ) :
     geneTreeProb (caterpillar x y) (· = balancedTree 0 2 1 3) = drG x y := by
@@ -710,7 +710,7 @@ theorem geneTreeProb_caterpillar_AC_BD (x y : ℝ) :
   push_cast
   ring
 
-/-- **Probability of the gene tree ((A, D), (B, C)) on the caterpillar.** The symmetric gene tree `((A, D), (B, C))` on the caterpillar species tree has probability
+/-- The symmetric gene tree `((A, D), (B, C))` on the caterpillar species tree has probability
 `g(x, y)`, the same as `((A, C), (B, D))` (Degnan & Rosenberg 2006). -/
 theorem geneTreeProb_caterpillar_AD_BC (x y : ℝ) :
     geneTreeProb (caterpillar x y) (· = balancedTree 0 3 1 2) = drG x y := by
@@ -724,7 +724,7 @@ theorem geneTreeProb_caterpillar_AD_BC (x y : ℝ) :
   push_cast
   ring
 
-/-- **Probability of the gene tree ((A, B), (C, D)) on the caterpillar.** The symmetric gene tree `((A, B), (C, D))` on the caterpillar species tree has probability
+/-- The symmetric gene tree `((A, B), (C, D))` on the caterpillar species tree has probability
 `h(x, y)` (Degnan & Rosenberg 2006, eq. (3)). -/
 theorem geneTreeProb_caterpillar_AB_CD (x y : ℝ) :
     geneTreeProb (caterpillar x y) (· = balancedTree 0 1 2 3) = drH x y := by
@@ -738,19 +738,19 @@ theorem geneTreeProb_caterpillar_AB_CD (x y : ℝ) :
   push_cast
   ring
 
-/-- **Boundary of the four-species anomaly zone.** Degnan & Rosenberg (2006), eq. (4): the boundary `a(x)` of the four-species anomaly zone,
+/-- Degnan & Rosenberg (2006), eq. (4): the boundary `a(x)` of the four-species anomaly zone,
 for a deeper internal branch of length `x > 0` (at `x = 0` the denominator vanishes and Lean's
 `a / 0 = 0` gives the junk value `log (2/3 - 0)`; `a(x) → ∞` as `x → 0⁺`). -/
 def anomalyA (x : ℝ) : ℝ :=
   Real.log (2 / 3 + (3 * Real.exp (2 * x) - 2) / (18 * (Real.exp (3 * x) - Real.exp (2 * x))))
 
-/-- **Boundary for three anomalous gene trees.** Degnan & Rosenberg (2006), eq. (5): the boundary `b(x)` below which the caterpillar species
+/-- Degnan & Rosenberg (2006), eq. (5): the boundary `b(x)` below which the caterpillar species
 tree has three anomalous gene trees (defined for `x ≥ 0`). -/
 def anomalyB (x : ℝ) : ℝ :=
   Real.log (2 / 3 + (5 * Real.exp (2 * x) - 2) / (6 * (3 * Real.exp (3 * x) -
     2 * Real.exp (2 * x))))
 
-/-- **$g(x, y) < h(x, y)$ for a positive shallower branch.** For a positive shallower branch, the symmetric gene tree `((A, B), (C, D))` is strictly more
+/-- For a positive shallower branch, the symmetric gene tree `((A, B), (C, D))` is strictly more
 probable than `((A, C), (B, D))`: `g(x, y) < h(x, y)` (Degnan & Rosenberg 2006). -/
 theorem drG_lt_drH (x : ℝ) {y : ℝ} (hy : 0 < y) : drG x y < drH x y := by
   unfold drG drH
@@ -798,7 +798,7 @@ theorem drF_lt_drH_iff {x : ℝ} (hx : 0 < x) (y : ℝ) : drF x y < drH x y ↔ 
     div_lt_iff₀ (by positivity), zero_mul, inv_eq_one_div, div_lt_div_iff₀ hS (by positivity)]
   constructor <;> intro h <;> nlinarith
 
-/-- **Degnan–Rosenberg criterion: $f(x, y) < g(x, y)$ iff $y < b(x)$.** Degnan & Rosenberg (2006): for `x ≥ 0`, the gene tree `((A, C), (B, D))` (equivalently
+/-- Degnan & Rosenberg (2006): for `x ≥ 0`, the gene tree `((A, C), (B, D))` (equivalently
 `((A, D), (B, C))`) is more probable than the matching gene tree, `f(x, y) < g(x, y)`, if and
 only if `y < b(x)`. -/
 theorem drF_lt_drG_iff {x : ℝ} (hx : 0 ≤ x) (y : ℝ) : drF x y < drG x y ↔ y < anomalyB x := by
@@ -833,13 +833,13 @@ theorem drF_lt_drG_iff {x : ℝ} (hx : 0 ≤ x) (y : ℝ) : drF x y < drG x y �
     div_lt_iff₀ (by positivity), zero_mul, inv_eq_one_div, div_lt_div_iff₀ hS (by positivity)]
   constructor <;> intro h <;> nlinarith
 
-/-- **Value $\log(7/6)$ of the three-anomaly boundary at zero.** `b(0) = log (7/6)` (Degnan & Rosenberg 2006): if `y ≥ log (7/6)`, then `y ≥ b(x)` for every
+/-- `b(0) = log (7/6)` (Degnan & Rosenberg 2006): if `y ≥ log (7/6)`, then `y ≥ b(x)` for every
 `x ≥ 0` (`anomalyB_le_anomalyB_zero`). -/
 theorem anomalyB_zero : anomalyB 0 = Real.log (7 / 6) := by
   unfold anomalyB
   norm_num
 
-/-- **Three-anomaly boundary is maximal at zero.** `b` is maximal at `0`: `b(x) ≤ log (7/6)` for `x ≥ 0`, so for `y ≥ log (7/6)` at most one
+/-- `b` is maximal at `0`: `b(x) ≤ log (7/6)` for `x ≥ 0`, so for `y ≥ log (7/6)` at most one
 gene tree is anomalous. -/
 theorem anomalyB_le_anomalyB_zero {x : ℝ} (hx : 0 ≤ x) : anomalyB x ≤ anomalyB 0 := by
   have hE : 1 ≤ Real.exp x := by simpa using Real.exp_le_exp.mpr hx
@@ -856,7 +856,7 @@ theorem anomalyB_le_anomalyB_zero {x : ℝ} (hx : 0 ≤ x) : anomalyB x ≤ anom
   rw [div_le_iff₀ hD]
   nlinarith [mul_nonneg (sub_nonneg.2 hE) (sub_nonneg.2 hE)]
 
-/-- **Anomaly-zone boundary blows up for short deep branches.** `a(x) → ∞` as `x → 0⁺` (Degnan & Rosenberg 2006): very short deep branches produce an
+/-- `a(x) → ∞` as `x → 0⁺` (Degnan & Rosenberg 2006): very short deep branches produce an
 anomalous gene tree however long the shallower branch is. -/
 theorem tendsto_anomalyA : Tendsto anomalyA (𝓝[>] 0) atTop := by
   have hnum : Tendsto (fun x : ℝ => 3 * Real.exp (2 * x) - 2) (𝓝[>] 0) (𝓝 1) := by
@@ -890,7 +890,7 @@ theorem caterpillar_anomalous_iff {x : ℝ} (hx : 0 < x) (y : ℝ) :
   rw [clusters_caterpillar, geneTreeProb_caterpillar_matching, geneTreeProb_caterpillar_AB_CD,
     drF_lt_drH_iff hx]
 
-/-- **Anomaly of ((A, C), (B, D)) and ((A, D), (B, C)) on the caterpillar.** On the caterpillar species tree with `x ≥ 0`, the gene trees `((A, C), (B, D))` and
+/-- On the caterpillar species tree with `x ≥ 0`, the gene trees `((A, C), (B, D))` and
 `((A, D), (B, C))` are more probable than the matching gene tree if and only if `y < b(x)`. -/
 theorem caterpillar_anomalous_AC_BD_iff {x : ℝ} (hx : 0 ≤ x) (y : ℝ) :
     geneTreeProb (caterpillar x y) (· = (caterpillar x y).clusters) <
@@ -898,13 +898,13 @@ theorem caterpillar_anomalous_AC_BD_iff {x : ℝ} (hx : 0 ≤ x) (y : ℝ) :
   rw [clusters_caterpillar, geneTreeProb_caterpillar_matching, geneTreeProb_caterpillar_AC_BD,
     drF_lt_drG_iff hx]
 
-/-- **Balanced gene tree on four genes.** `G` is one of the three balanced (symmetric) gene trees on four genes. -/
+/-- `G` is one of the three balanced (symmetric) gene trees on four genes. -/
 def IsBalancedGeneTree (G : Finset (Finset (Fin 4))) : Prop :=
   G = balancedTree 0 1 2 3 ∨ G = balancedTree 0 2 1 3 ∨ G = balancedTree 0 3 1 2
 
 instance : DecidablePred IsBalancedGeneTree := fun _ => inferInstanceAs (Decidable (_ ∨ _ ∨ _))
 
-/-- **Only balanced gene trees can be anomalous on the caterpillar.** On the caterpillar species tree with nonnegative branch lengths, no asymmetric gene tree is
+/-- On the caterpillar species tree with nonnegative branch lengths, no asymmetric gene tree is
 more probable than the matching one (Degnan & Rosenberg 2006): only the three balanced gene
 trees can be anomalous. -/
 theorem caterpillar_le_matching {x y : ℝ} (hx : 0 ≤ x) (hy : 0 ≤ y) (G : Finset (Finset (Fin 4)))
@@ -924,7 +924,7 @@ theorem caterpillar_le_matching {x y : ℝ} (hx : 0 ≤ x) (hy : 0 ≤ y) (G : F
   · rcases (show j' = 1 ∨ j' = 2 ∨ j' = 3 by omega) with rfl | rfl | rfl <;> revert h <;>
       decide +kernel
 
-/-- **$g(x, y) \le h(x, y)$ for a nonnegative shallower branch.** `g(x, y) ≤ h(x, y)` for a nonnegative shallower branch (equality at `y = 0`). -/
+/-- `g(x, y) ≤ h(x, y)` for a nonnegative shallower branch (equality at `y = 0`). -/
 theorem drG_le_drH (x : ℝ) {y : ℝ} (hy : 0 ≤ y) : drG x y ≤ drH x y := by
   unfold drG drH
   have h1 : Real.exp (-(x + y)) = Real.exp (-x) * Real.exp (-y) := by
@@ -978,7 +978,7 @@ theorem balanced_no_anomaly {y₁ y₂ : ℝ} (hy₁ : 0 ≤ y₁) (hy₂ : 0 �
 
 /-! ### Unrooted quartets -/
 
-/-- **Gene tree displaying a quartet split.** A rooted gene tree on four genes `G` (a set of clusters) **displays the quartet split**
+/-- A rooted gene tree on four genes `G` (a set of clusters) **displays the quartet split**
 `ab | cd`, where `{c, d}` is the complement of `{a, b}`: forgetting the root, the internal edge
 separates `{a, b}` from `{c, d}`; equivalently `{a, b}` or `{c, d}` is a cluster. -/
 def DisplaysSplit (a b : Fin 4) (G : Finset (Finset (Fin 4))) : Prop :=
@@ -1003,7 +1003,7 @@ theorem geneTreeProb_caterpillar_split_01 (x y : ℝ) :
   push_cast
   ring
 
-/-- **Probability of quartet split 02|13 on the caterpillar tree.** On the caterpillar species tree the discordant unrooted gene quartet `02 | 13` has
+/-- On the caterpillar species tree the discordant unrooted gene quartet `02 | 13` has
 probability `(1/3) e^{-y}`. -/
 theorem geneTreeProb_caterpillar_split_02 (x y : ℝ) :
     geneTreeProb (caterpillar x y) (DisplaysSplit 0 2) = 1 / 3 * Real.exp (-y) := by
@@ -1017,7 +1017,7 @@ theorem geneTreeProb_caterpillar_split_02 (x y : ℝ) :
   push_cast
   ring
 
-/-- **Probability of quartet split 03|12 on the caterpillar tree.** On the caterpillar species tree the discordant unrooted gene quartet `03 | 12` has
+/-- On the caterpillar species tree the discordant unrooted gene quartet `03 | 12` has
 probability `(1/3) e^{-y}`. -/
 theorem geneTreeProb_caterpillar_split_03 (x y : ℝ) :
     geneTreeProb (caterpillar x y) (DisplaysSplit 0 3) = 1 / 3 * Real.exp (-y) := by
@@ -1061,7 +1061,7 @@ theorem geneTreeProb_balanced_split_01 (y₁ y₂ : ℝ) :
   push_cast
   ring
 
-/-- **Probability of quartet split 02|13 on the balanced tree.** On the balanced species tree the discordant unrooted gene quartet `02 | 13` has
+/-- On the balanced species tree the discordant unrooted gene quartet `02 | 13` has
 probability `(1/3) e^{-(y₁ + y₂)}`. -/
 theorem geneTreeProb_balanced_split_02 (y₁ y₂ : ℝ) :
     geneTreeProb (balanced y₁ y₂) (DisplaysSplit 0 2) = 1 / 3 * Real.exp (-(y₁ + y₂)) := by
@@ -1074,7 +1074,7 @@ theorem geneTreeProb_balanced_split_02 (y₁ y₂ : ℝ) :
   push_cast
   ring
 
-/-- **Probability of quartet split 03|12 on the balanced tree.** On the balanced species tree the discordant unrooted gene quartet `03 | 12` has
+/-- On the balanced species tree the discordant unrooted gene quartet `03 | 12` has
 probability `(1/3) e^{-(y₁ + y₂)}`. -/
 theorem geneTreeProb_balanced_split_03 (y₁ y₂ : ℝ) :
     geneTreeProb (balanced y₁ y₂) (DisplaysSplit 0 3) = 1 / 3 * Real.exp (-(y₁ + y₂)) := by
@@ -1111,7 +1111,7 @@ theorem split_01_most_probable {x y y₁ y₂ : ℝ} (hy : 0 < y) (hy₁₂ : 0 
 
 /-! ### Clade probabilities under random joining -/
 
-/-- **Clade of a ranked history.** The set `S` of sampled genes is a **clade** of the ranked history `h`: it is a block of one
+/-- The set `S` of sampled genes is a **clade** of the ranked history `h`: it is a block of one
 of the ancestral partitions of `h`, i.e. the set of descendants of some lineage. -/
 def IsClade {m : ℕ} (h : RankedHistory m) (S : Finset (Fin m)) : Prop :=
   ∃ P ∈ partitionsOf h, S ∈ P
@@ -1746,7 +1746,7 @@ theorem randomJoining_isClade {m : ℕ} (S : Finset (Fin m)) (hS : 1 ≤ S.card)
   push_cast at this
   linarith
 
-/-- **Clade probability under random joining for at most five genes.** The case `m ≤ 5` of `randomJoining_isClade`. -/
+/-- The case `m ≤ 5` of `randomJoining_isClade`. -/
 @[deprecated "Use `randomJoining_isClade`." (since := "2026-11-02")]
 theorem randomJoining_isClade_of_le_five {m : ℕ} (_hm : m ≤ 5) (S : Finset (Fin m))
     (hS : 1 ≤ S.card) (hSm : S.card < m) :

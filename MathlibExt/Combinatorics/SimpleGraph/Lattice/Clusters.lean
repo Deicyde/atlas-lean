@@ -40,7 +40,7 @@ namespace Lattice
 
 variable {d : ℕ}
 
-/-- **Open lattice edge of a bond configuration.** The lattice edge `{x, y}` is open in the configuration `ω`: `x` and `y` are nearest neighbours
+/-- The lattice edge `{x, y}` is open in the configuration `ω`: `x` and `y` are nearest neighbours
 and `ω s(x, y) = true`. -/
 def IsOpenEdge (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) (x y : Site d) : Prop :=
   (hypercubicLattice d).Adj x y ∧ ω s(x, y) = true
@@ -57,7 +57,7 @@ theorem isOpenEdge_irrefl {ω : ConfigSpace (Sym2 (Site d))} (x : Site d) :
 theorem isOpenEdge_imp_adj {ω : ConfigSpace (Sym2 (Site d))} {x y : Site d}
     (h : IsOpenEdge d ω x y) : (hypercubicLattice d).Adj x y := h.1
 
-/-- **Open subgraph of a bond configuration.** The open subgraph of `ω`: the spanning subgraph of `ℤ^d` consisting of the open edges. -/
+/-- The open subgraph of `ω`: the spanning subgraph of `ℤ^d` consisting of the open edges. -/
 def openSubgraph (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) : SimpleGraph (Site d) where
   Adj x y := IsOpenEdge d ω x y
   symm := ⟨fun _ _ h => isOpenEdge_symm h⟩
@@ -71,7 +71,7 @@ theorem openSubgraph_adj (ω : ConfigSpace (Sym2 (Site d))) (x y : Site d) :
 theorem openSubgraph_le (ω : ConfigSpace (Sym2 (Site d))) :
     openSubgraph d ω ≤ hypercubicLattice d := fun _ _ h => h.1
 
-/-- **Connection by an open path.** `x` and `y` are connected by an open path, that is, reachable in `openSubgraph d ω`. -/
+/-- `x` and `y` are connected by an open path, that is, reachable in `openSubgraph d ω`. -/
 def Connected (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) (x y : Site d) : Prop :=
   (openSubgraph d ω).Reachable x y
 
@@ -99,7 +99,7 @@ theorem IsOpenEdge.connected {ω : ConfigSpace (Sym2 (Site d))} {x y : Site d}
     (h : IsOpenEdge d ω x y) : Connected d ω x y :=
   SimpleGraph.Adj.reachable (G := openSubgraph d ω) h
 
-/-- **Open cluster of a site.** The open cluster of `x`: the set of sites connected to `x` by an open path. -/
+/-- The open cluster of `x`: the set of sites connected to `x` by an open path. -/
 def cluster (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) (x : Site d) : Set (Site d) :=
   {y | Connected d ω x y}
 
@@ -116,7 +116,7 @@ theorem cluster_eq_of_connected {ω : ConfigSpace (Sym2 (Site d))} {x y : Site d
   simp only [mem_cluster]
   exact ⟨fun hz => h.symm.trans hz, fun hz => h.trans hz⟩
 
-/-- **Open subgraph induced on a set of sites.** The open subgraph of `ω` induced on a set `S` of sites. -/
+/-- The open subgraph of `ω` induced on a set `S` of sites. -/
 def openSubgraphInduce (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) (S : Set (Site d)) :
     SimpleGraph S :=
   (openSubgraph d ω).induce S
@@ -126,7 +126,7 @@ theorem openSubgraphInduce_adj (ω : ConfigSpace (Sym2 (Site d))) (S : Set (Site
     (x y : S) :
     (openSubgraphInduce d ω S).Adj x y ↔ (openSubgraph d ω).Adj x y := Iff.rfl
 
-/-- **Connection by an open path within a set.** `x` and `y` in `S` are connected by an open path that stays inside `S`. -/
+/-- `x` and `y` in `S` are connected by an open path that stays inside `S`. -/
 def ConnectedWithin (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) (S : Set (Site d))
     (x y : S) : Prop :=
   (openSubgraphInduce d ω S).Reachable x y
@@ -149,7 +149,7 @@ theorem ConnectedWithin.connected {ω : ConfigSpace (Sym2 (Site d))} {S : Set (S
     fun hr => hr.map (SimpleGraph.Embedding.induce S).toHom
   exact hmap h
 
-/-- **Open connection within a set is monotone in the set.** Connection inside `S` implies connection inside any `T ⊇ S`. -/
+/-- Connection inside `S` implies connection inside any `T ⊇ S`. -/
 theorem connectedWithin_mono_set (ω : ConfigSpace (Sym2 (Site d)))
     {S T : Set (Site d)} (hST : S ⊆ T) {x y : S}
     (h : ConnectedWithin d ω S x y) :
@@ -159,7 +159,7 @@ theorem connectedWithin_mono_set (ω : ConfigSpace (Sym2 (Site d)))
       map_rel' := fun {a b} hab => hab }
   exact h.map f
 
-/-- **Open circuit in a bond configuration.** A closed walk in the open subgraph that repeats no edge (an open circuit). -/
+/-- A closed walk in the open subgraph that repeats no edge (an open circuit). -/
 def IsOpenCircuit (d : ℕ) (ω : ConfigSpace (Sym2 (Site d))) {x : Site d}
     (w : (openSubgraph d ω).Walk x x) : Prop := w.IsCircuit
 

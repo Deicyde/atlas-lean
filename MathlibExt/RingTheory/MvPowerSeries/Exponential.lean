@@ -37,23 +37,23 @@ open Finset
 
 variable {σ R : Type*} [CommRing R] [Algebra ℚ R]
 
-/-- **Truncated exponential of a multivariate power series.** The finite sum `∑ n < N, wⁿ/n!`, defined without a constant coefficient restriction. -/
+/-- The finite sum `∑ n < N, wⁿ/n!`, defined without a constant coefficient restriction. -/
 noncomputable def expTrunc (N : ℕ) (w : MvPowerSeries σ R) : MvPowerSeries σ R :=
   ∑ n ∈ range N, ((n.factorial : ℚ)⁻¹) • w ^ n
 
-/-- **Exponential of a power series with zero constant coefficient.** The formal exponential of a series with zero constant coefficient, obtained
+/-- The formal exponential of a series with zero constant coefficient, obtained
 by substituting it into Mathlib's canonical exponential power series. -/
 noncomputable def expOfConstantCoeffZero (w : MvPowerSeries σ R)
     (hw : constantCoeff w = 0) : MvPowerSeries σ R :=
   substAlgHom (hasSubst_of_constantCoeff_zero (fun _ : Unit => hw)) (PowerSeries.exp R)
 
-/-- **Multivariate exponential as substitution into exp.** The exponential API is the canonical univariate exponential substituted at `w`. -/
+/-- The exponential API is the canonical univariate exponential substituted at `w`. -/
 theorem expOfConstantCoeffZero_eq_subst (w : MvPowerSeries σ R)
     (hw : constantCoeff w = 0) :
     expOfConstantCoeffZero w hw = PowerSeries.subst w (PowerSeries.exp R) := by
   exact substAlgHom_apply _ _
 
-/-- **Coefficients of the exponential via truncation.** A coefficient of the exponential is computed by any truncation extending past its degree.
+/-- A coefficient of the exponential is computed by any truncation extending past its degree.
 This is the exact finite-sum formula used by the source's degreewise constructor. -/
 theorem coeff_expOfConstantCoeffZero (w : MvPowerSeries σ R) (hw : constantCoeff w = 0)
     (d : σ →₀ ℕ) {N : ℕ} (hN : d.degree < N) :
@@ -76,26 +76,26 @@ theorem coeff_expOfConstantCoeffZero (w : MvPowerSeries σ R) (hw : constantCoef
       dsimp
       rw [hpow (lt_of_lt_of_le hN hn'), mul_zero])
 
-/-- **Coefficient of the exponential in a given degree.** In particular, the coefficient of degree `d.degree` uses exactly the terms `n ≤ d.degree`. -/
+/-- In particular, the coefficient of degree `d.degree` uses exactly the terms `n ≤ d.degree`. -/
 theorem coeff_expOfConstantCoeffZero_degree (w : MvPowerSeries σ R)
     (hw : constantCoeff w = 0) (d : σ →₀ ℕ) :
     coeff d (expOfConstantCoeffZero w hw) = coeff d (expTrunc (d.degree + 1) w) :=
   coeff_expOfConstantCoeffZero w hw d (Nat.lt_succ_self _)
 
-/-- **Constant coefficient of the formal exponential is one.** The constant coefficient of the formal exponential is one. -/
+/-- The constant coefficient of the formal exponential is one. -/
 @[simp] theorem constantCoeff_expOfConstantCoeffZero (w : MvPowerSeries σ R)
     (hw : constantCoeff w = 0) : constantCoeff (expOfConstantCoeffZero w hw) = 1 := by
   rw [expOfConstantCoeffZero_eq_subst,
     PowerSeries.constantCoeff_subst_of_constantCoeff_zero hw]
   simp
 
-/-- **Exponential of the zero series is one.** The exponential of the zero series is one. -/
+/-- The exponential of the zero series is one. -/
 @[simp] theorem expOfConstantCoeffZero_zero :
     expOfConstantCoeffZero (0 : MvPowerSeries σ R) (map_zero _) = 1 := by
   rw [expOfConstantCoeffZero_eq_subst, PowerSeries.subst_zero_eq_C_constantCoeff]
   simp
 
-/-- **Coefficient ring maps commute with the formal exponential.** Applying a coefficient ring homomorphism commutes with the formal exponential. -/
+/-- Applying a coefficient ring homomorphism commutes with the formal exponential. -/
 theorem map_expOfConstantCoeffZero {S : Type*} [CommRing S] [Algebra ℚ S]
     (f : R →+* S) (w : MvPowerSeries σ R) (hw : constantCoeff w = 0) :
     map f (expOfConstantCoeffZero w hw) =
@@ -103,7 +103,7 @@ theorem map_expOfConstantCoeffZero {S : Type*} [CommRing S] [Algebra ℚ S]
   rw [expOfConstantCoeffZero_eq_subst, expOfConstantCoeffZero_eq_subst,
     PowerSeries.map_subst (PowerSeries.HasSubst.of_constantCoeff_zero hw), PowerSeries.map_exp]
 
-/-- **Exponential of a variable.** Substituting a variable recovers the canonical exponential in that variable. -/
+/-- Substituting a variable recovers the canonical exponential in that variable. -/
 @[simp] theorem expOfConstantCoeffZero_X (i : σ) :
     expOfConstantCoeffZero (X i : MvPowerSeries σ R) (constantCoeff_X i) =
       (PowerSeries.exp R).toMvPowerSeries i := by
@@ -176,7 +176,7 @@ private theorem add_pow_div (a b : MvPowerSeries σ R) (n : ℕ) :
   field_simp
   linarith
 
-/-- **Formal exponential turns sums into products.** The formal exponential carries sums of series with zero constant coefficient to products. -/
+/-- The formal exponential carries sums of series with zero constant coefficient to products. -/
 theorem expOfConstantCoeffZero_add {a b : MvPowerSeries σ R}
     (ha : constantCoeff a = 0) (hb : constantCoeff b = 0) :
     expOfConstantCoeffZero (a + b) (by rw [map_add, ha, hb, add_zero]) =

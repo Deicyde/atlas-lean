@@ -24,12 +24,7 @@ universe u v w
 
 namespace Matroid
 
-/-- **Algebraic representation of a matroid.** Let $K$ be a field and $M$ a matroid on a type $E$.
-An algebraic representation of $M$ over $K$ consists of a field extension $L$ of $K$ and a map
-$\varphi \colon E \to L$ such that $L$ is generated over $K$ by the image under $\varphi$ of the
-ground set of $M$, and a set $I$ is independent in $M$ exactly when $I$ is contained in the ground
-set of $M$, $\varphi$ is injective on $I$, and $\varphi(I)$ is algebraically independent over
-$K$. -/
+/-- Realization of `M` over `K` with values in an extension `L`. -/
 structure AlgebraicRepresentation (K : Type u) [Field K] {E : Type v}
     (M : Matroid E) where
   /-- Ambient extension field holding the realization. -/
@@ -50,25 +45,18 @@ structure AlgebraicRepresentation (K : Type u) [Field K] {E : Type v}
 attribute [instance] AlgebraicRepresentation.field AlgebraicRepresentation.algebra
   AlgebraicRepresentation.faithful
 
-/-- **Algebraic matroid over a field.** Let $K$ be a field. A matroid $M$ on a type $E$ is
-algebraic over $K$ if it has an algebraic representation over $K$ whose extension field lies in
-the larger of the universes of $K$ and $E$.
+/-- `M` is algebraic over `K` if a representation exists in `max u v`.
 
-Universe encoding: Lean fixes universes, so the witness extension is required to live in a
-universe holding both $K$ and $E$. -/
+Universe encoding: Lean fixes universes, so the witness extension is
+required to live in `max u v`, holding both `K` and `E`. -/
 def IsAlgebraicOver (K : Type u) [Field K] {E : Type v}
     (M : Matroid E) : Prop :=
   Nonempty (AlgebraicRepresentation.{u, v, max u v} K M)
 
-/-- **Algebraic representation of a matroid over some field.** Let $M$ be a matroid on a type
-$E$. An algebraic representation of $M$ over some field consists of a field $K$, a field extension
-$L$ of $K$ and a map $\varphi \colon E \to L$ such that $L$ is generated over $K$ by the image
-under $\varphi$ of the ground set of $M$, and a set $I$ is independent in $M$ exactly when $I$ is
-contained in the ground set of $M$, $\varphi$ is injective on $I$, and $\varphi(I)$ is
-algebraically independent over $K$.
+/-- Self-contained realization with all field data in `Type v`.
 
-Universe encoding: both $K$ and $L$ lie in the same universe as $E$, so matroids on $E$ need no
-larger universes. -/
+Universe encoding: both base field `K` and extension `L` live in `Type v`,
+so matroids on `E : Type v` need no larger universes. -/
 structure AlgebraicRepresentationSomeField {E : Type v}
     (M : Matroid E) where
   /-- Base field of the realization, in the same universe as `E`. -/
@@ -94,26 +82,21 @@ attribute [instance] AlgebraicRepresentationSomeField.fieldK
   AlgebraicRepresentationSomeField.fieldL AlgebraicRepresentationSomeField.algebra
   AlgebraicRepresentationSomeField.faithful
 
-/-- **Algebraic matroid.** A matroid $M$ on a type $E$ is algebraic if it has an algebraic
-representation over some field whose base field and extension field lie in the same universe
-as $E$.
+/-- `M` is algebraic if some same-universe realization exists.
 
-Universe encoding: this is the universe-local form of algebraicity for matroids on $E$. -/
+Universe encoding: witness base and extension lie in `Type v`, giving the
+universe-local form of algebraicity for `E : Type v`. -/
 def IsAlgebraic {E : Type v} (M : Matroid E) : Prop :=
   Nonempty (AlgebraicRepresentationSomeField M)
 
-/-- **Algebraic representations witness algebraicity over a field.** Let $K$ be a field and $M$
-a matroid on a type $E$. If $M$ has an algebraic representation over $K$ whose extension field
-lies in the larger of the universes of $K$ and $E$, then $M$ is algebraic over $K$. -/
+/-- A representation in `max u v` witnesses algebraicity over `K`. -/
 theorem AlgebraicRepresentation.toIsAlgebraicOver {K : Type u} [Field K]
     {E : Type v} {M : Matroid E}
     (self : AlgebraicRepresentation.{u, v, max u v} K M) :
     IsAlgebraicOver K M :=
   ⟨self⟩
 
-/-- **Representations over some field witness algebraicity.** If a matroid $M$ on a type $E$
-has an algebraic representation over some field whose base field and extension field lie in the
-same universe as $E$, then $M$ is algebraic. -/
+/-- A same-universe package witnesses algebraicity of `M`. -/
 theorem AlgebraicRepresentationSomeField.toIsAlgebraic {E : Type v}
     {M : Matroid E} (self : AlgebraicRepresentationSomeField M) :
     IsAlgebraic M :=

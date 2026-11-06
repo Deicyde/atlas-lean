@@ -31,10 +31,7 @@ namespace Cslib.Algorithms.Lean.MatrixChain
 
 open Cslib.Algorithms.Lean
 
-/-- **Parenthesization.** A parenthesization of $n$ matrices is a full binary tree whose leaves are
-labeled by indices in $\{0, \dots, n - 1\}$: either a single leaf naming matrix $i$, or a product
-node with a left and a right parenthesization as factors. Labels may be repeated, omitted, or out
-of order. -/
+/-- A full binary parenthesization whose leaves name input matrices. -/
 public inductive Parenthesization (n : Nat) where
   /-- One matrix at its original bounded index. -/
   | matrix (index : Fin n)
@@ -44,37 +41,24 @@ deriving DecidableEq, Repr
 
 namespace Parenthesization
 
-/-- **Leaf indices of a parenthesization.** The leaf indices of a parenthesization of $n$ matrices
-form the list of indices in $\{0, \dots, n - 1\}$ obtained by reading its leaves from left to
-right: $[i]$ for a single leaf naming matrix $i$, and the concatenation of the lists of the left
-and right factors for a product node. -/
+/-- Matrix indices in left-to-right leaf order. -/
 @[expose] public def matrixIndices {n : Nat} : Parenthesization n → List (Fin n)
   | .matrix index => [index]
   | .multiply left right => matrixIndices left ++ matrixIndices right
 
-/-- **Row count of a parenthesization.** Let $p = (p_0, \dots, p_n)$ be a vector of natural
-numbers, regarding matrix $i$ (for $0 \le i < n$) as having $p_i$ rows and $p_{i+1}$ columns. The
-row count of a parenthesization of $n$ matrices with respect to $p$ is $p_i$ for a single leaf
-naming matrix $i$, and the row count of the left factor for a product node. -/
+/-- Number of rows of the product represented by a parenthesization. -/
 @[expose] public def rows {n : Nat}
     (dimensions : Vector Nat (n + 1)) : Parenthesization n → Nat
   | .matrix index => dimensions.get index.castSucc
   | .multiply left _ => rows dimensions left
 
-/-- **Column count of a parenthesization.** Let $p = (p_0, \dots, p_n)$ be a vector of natural
-numbers, regarding matrix $i$ (for $0 \le i < n$) as having $p_i$ rows and $p_{i+1}$ columns. The
-column count of a parenthesization of $n$ matrices with respect to $p$ is $p_{i+1}$ for a single
-leaf naming matrix $i$, and the column count of the right factor for a product node. -/
+/-- Number of columns of the product represented by a parenthesization. -/
 @[expose] public def cols {n : Nat}
     (dimensions : Vector Nat (n + 1)) : Parenthesization n → Nat
   | .matrix index => dimensions.get index.succ
   | .multiply _ right => cols dimensions right
 
-/-- **Dimension-compatible parenthesization.** Let $p = (p_0, \dots, p_n)$ be a vector of natural
-numbers, regarding matrix $i$ (for $0 \le i < n$) as having $p_i$ rows and $p_{i+1}$ columns. A
-parenthesization of $n$ matrices is dimension-compatible with $p$ when, at every product node, the
-column count of the left factor equals the row count of the right factor, where row and column
-counts are taken with respect to $p$. A single leaf is always dimension-compatible. -/
+/-- Every multiplication node has matching inner dimensions. -/
 @[expose] public def DimensionCompatible {n : Nat} (dimensions : Vector Nat (n + 1)) :
     Parenthesization n → Prop
   | .matrix _ => True
@@ -82,21 +66,14 @@ counts are taken with respect to $p$. A single leaf is always dimension-compatib
       DimensionCompatible dimensions left ∧ DimensionCompatible dimensions right ∧
         cols dimensions left = rows dimensions right
 
-/-- **Valid parenthesization.** Let $p = (p_0, \dots, p_n)$ be a vector of natural numbers,
-regarding matrix $i$ (for $0 \le i < n$) as having $p_i$ rows and $p_{i+1}$ columns. A
-parenthesization of $n$ matrices is valid for $p$ when its leaf indices, read left to right, are
-exactly $0, 1, \dots, n - 1$, and it is dimension-compatible with $p$. -/
+/-- A parenthesization uses every input matrix exactly once in order and is dimension-valid. -/
 @[expose] public def IsValid {n : Nat} (dimensions : Vector Nat (n + 1))
     (tree : Parenthesization n) : Prop :=
   tree.matrixIndices = List.finRange n ∧ tree.DimensionCompatible dimensions
 
 end Parenthesization
 
-/-- **Scalar multiplication count of a parenthesization.** Let $p = (p_0, \dots, p_n)$ be a vector
-of natural numbers, regarding matrix $i$ (for $0 \le i < n$) as having $p_i$ rows and $p_{i+1}$
-columns, and let $r(T)$ and $c(T)$ be the row and column counts of a parenthesization $T$ with
-respect to $p$. The scalar multiplication count of a single leaf is $0$, and that of a product
-node with factors $L$ and $R$ is the sum of the counts of $L$ and $R$ plus $r(L)\,c(L)\,c(R)$. -/
+/-- Scalar multiplications performed by a parenthesization. -/
 @[expose] public def scalarMultiplicationCost {n : Nat}
     (dimensions : Vector Nat (n + 1)) :
     Parenthesization n → Nat
@@ -105,9 +82,7 @@ node with factors $L$ and $R$ is the sum of the counts of $L$ and $R$ plus $r(L)
       scalarMultiplicationCost dimensions left + scalarMultiplicationCost dimensions right +
         left.rows dimensions * left.cols dimensions * right.cols dimensions
 
-/-- **Matrix-chain cost.** A matrix-chain cost is a pair of natural numbers counting the abstract
-events charged by matrix-chain ordering and reconstruction: the number of split candidates
-evaluated by the dynamic program, and the number of tree nodes emitted during reconstruction. -/
+/-- Abstract events charged by matrix-chain ordering and reconstruction. -/
 public structure Cost where
   /-- Split candidates evaluated by the dynamic program. -/
   candidateEvaluations : Nat
@@ -122,8 +97,7 @@ public instance : Add Cost where
     ⟨left.candidateEvaluations + right.candidateEvaluations,
       left.reconstructionNodes + right.reconstructionNodes⟩
 
-/-- **Total matrix-chain cost.** The total of a matrix-chain cost is its number of candidate
-evaluations plus its number of reconstruction nodes. -/
+/-- Total charged events. -/
 @[expose] public def Cost.total (cost : Cost) : Nat :=
   cost.candidateEvaluations + cost.reconstructionNodes
 
@@ -141,10 +115,7 @@ evaluations plus its number of reconstruction nodes. -/
     (left + right).reconstructionNodes =
       left.reconstructionNodes + right.reconstructionNodes := rfl
 
-/-- **Matrix-chain result.** A matrix-chain result for $n$ matrices pairs a natural number, the
-reported optimal scalar multiplication count, with a parenthesization of $n$ matrices, the
-reported optimal parenthesization. The structure itself does not require the count to be minimal
-or to be attained by the parenthesization. -/
+/-- An optimum scalar cost and one parenthesization attaining it. -/
 public structure Result (n : Nat) where
   /-- Minimum scalar-multiplication count. -/
   optimalCost : Nat

@@ -41,42 +41,26 @@ reduction from every language in `NP`
 (`Cslib.CookLevin.PolyManyOneRed`).
 -/
 
-/-- **Instances of DOMINATING SET.** An instance of DOMINATING SET is a triple $(n, E, K)$ of a
-natural number $n$ (the number of vertices), a list $E$ of pairs of natural numbers (the edges)
-and a natural number $K$ (the bound). -/
+/-- An instance: vertex count, edge list, bound. -/
 abbrev DominatingSetInstance := ℕ × List (ℕ × ℕ) × ℕ
 
-/-- **Graph of a DOMINATING SET instance.** For an instance $(n, E, K)$ of DOMINATING SET, its
-graph is the simple graph on $\{0, \dots, n - 1\}$ in which distinct vertices $i$ and $j$ are
-adjacent when $(i, j)$ or $(j, i)$ belongs to $E$. -/
+/-- The graph of the instance as a `SimpleGraph (Fin n)`. -/
 def Graph (i : DominatingSetInstance) : SimpleGraph (Fin i.1) :=
   Cslib.Complexity.Karp.edgeGraph i.1 i.2.1
 
 
-/-- **Well-formed DOMINATING SET instances.** An instance $(n, E, K)$ of DOMINATING SET is well
-formed when the list $E$ has no repeated entries and every pair $(u, v) \in E$ satisfies $u < n$,
-$v < n$, $u \ne v$ and $(v, u) \notin E$. -/
+/-- Well-formedness of an instance. -/
 def WellFormed (i : DominatingSetInstance) : Prop :=
   i.2.1.Nodup ∧ ∀ e ∈ i.2.1, e.1 < i.1 ∧ e.2 < i.1 ∧ e.1 ≠ e.2 ∧ (e.2, e.1) ∉ i.2.1
 
-/-- **Feasibility of a DOMINATING SET instance.** An instance $(n, E, K)$ of DOMINATING SET is
-feasible when there is a set $S$ of at most $K$ vertices of its graph such that every vertex lies in
-$S$ or is adjacent to a vertex of $S$, where the graph has vertex set $\{0, \dots, n - 1\}$ and
-distinct vertices $i$ and $j$ are adjacent when $(i, j)$ or $(j, i)$ belongs to $E$. -/
+/-- A dominating set of at most `K` vertices. -/
 def DominatingSetFeasible
     (i : DominatingSetInstance) : Prop :=
   ∃ S : Finset (Fin i.1), S.card ≤ i.2.2 ∧
     ∀ v : Fin i.1, v ∈ S ∨ ∃ u ∈ S, (Graph i).Adj u v
 
 open Classical in
-/-- **DOMINATING SET as a decision problem.** The decision problem DOMINATING SET accepts a
-bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a triple
-$(n, E, K)$ of a natural number $n$, a list $E$ of pairs of natural numbers and a natural number
-$K$ such that $E$ has no repeated entries, every pair $(u, v) \in E$ satisfies $u < n$, $v < n$,
-$u \ne v$ and $(v, u) \notin E$, and there is a set $S$ of at most $K$ vertices with every vertex
-in $S$ or adjacent to a vertex of $S$, in the graph on $\{0, \dots, n - 1\}$ where distinct $i$
-and $j$ are adjacent when $(i, j)$ or $(j, i)$ belongs to $E$. Bitstrings that do not decode are
-rejected. -/
+/-- DOMINATING SET as a decision problem over bitstrings. -/
 noncomputable def dominatingSetDec :
     MetaMathlibExt.ComplexityTheory.DecisionProblem := fun x =>
   match MetaMathlibExt.BitstringEncoding.bitDecode
@@ -84,10 +68,7 @@ noncomputable def dominatingSetDec :
   | some i => decide (WellFormed i ∧ DominatingSetFeasible i)
   | none => false
 
-/-- **DOMINATING SET is NP-complete.** The decision problem DOMINATING SET belongs to NP, and
-every decision problem in NP reduces to DOMINATING SET by a polynomial-time many-one reduction.
-
-Source: M. R. Garey and D. S. Johnson, *Computers and
+/-- **DOMINATING SET is NP-complete.** Source: M. R. Garey and D. S. Johnson, *Computers and
 Intractability* (1979), DOMINATING SET. -/
 public theorem_wanted dominatingSet_npComplete :
     dominatingSetDec ∈ MetaMathlibExt.ComplexityTheory.NP ∧

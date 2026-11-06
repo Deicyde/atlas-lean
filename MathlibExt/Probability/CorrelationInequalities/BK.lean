@@ -57,7 +57,7 @@ open ConfigSpace
 
 variable {E F : Type*}
 
-/-- **Occurrence of an increasing event is monotone in the configuration.** If an increasing event `A` occurs on `K` at `ω` and `ω ≤ ω'`, then `A` occurs on `K` at
+/-- If an increasing event `A` occurs on `K` at `ω` and `ω ≤ ω'`, then `A` occurs on `K` at
 `ω'`. -/
 theorem OccursOn.mono_config {A : Set (ConfigSpace E)} (hA : IsIncreasing A)
     {K : Set E} {omega omega' : ConfigSpace E} (homega : omega ≤ omega')
@@ -77,7 +77,7 @@ theorem OccursOn.mono_config {A : Set (ConfigSpace E)} (hA : IsIncreasing A)
   · simp only [z', ite_eq_right he]
     exact le_rfl
 
-/-- **Disjoint occurrence of increasing events is increasing.** The disjoint occurrence of two increasing events is increasing. -/
+/-- The disjoint occurrence of two increasing events is increasing. -/
 theorem disjointOccurrence_isIncreasing {A B : Set (ConfigSpace E)}
     (hA : IsIncreasing A) (hB : IsIncreasing B) :
     IsIncreasing (disjointOccurrence A B) := by
@@ -86,23 +86,23 @@ theorem disjointOccurrence_isIncreasing {A B : Set (ConfigSpace E)}
   exact ⟨K, L, hKL, OccursOn.mono_config hA homega hAK,
     OccursOn.mono_config hB homega hBL⟩
 
-/-- **Product weight of a configuration.** The product weight `∏ x, φ x (ω x)` of a configuration `ω`, where `φ x b` is the weight
+/-- The product weight `∏ x, φ x (ω x)` of a configuration `ω`, where `φ x b` is the weight
 of value `b` at coordinate `x`. -/
 def pweight [Fintype E] (φ : E → Bool → ℝ) (ω : ConfigSpace E) : ℝ := ∏ x, φ x (ω x)
 
-/-- **Nonnegativity of the product weight.** A product of nonnegative coordinate weights is nonnegative. -/
+/-- A product of nonnegative coordinate weights is nonnegative. -/
 lemma pweight_nonneg [Fintype E] {φ : E → Bool → ℝ} (hφ : ∀ x b, 0 ≤ φ x b)
     (ω : ConfigSpace E) : 0 ≤ pweight φ ω :=
   Finset.prod_nonneg (fun x _ => hφ x (ω x))
 
-/-- **Weighted probability of an event.** The `pweight φ`-mass `∑ ω ∈ S, pweight φ ω` of an event `S`. When `φ ≥ 0` and
+/-- The `pweight φ`-mass `∑ ω ∈ S, pweight φ ω` of an event `S`. When `φ ≥ 0` and
 `φ x false + φ x true = 1` for all `x`, this is the probability of `S` under the product measure
 whose coordinate `x` has law `φ x`. -/
 noncomputable def wprob [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
     (S : Set (ConfigSpace E)) : ℝ :=
   ∑ ω, S.indicator (fun _ => (1 : ℝ)) ω * pweight φ ω
 
-/-- **Monotonicity of the weighted probability.** `wprob φ` is monotone for nonnegative weights. -/
+/-- `wprob φ` is monotone for nonnegative weights. -/
 lemma wprob_mono [Fintype E] [DecidableEq E] {φ : E → Bool → ℝ} (hφ : ∀ x b, 0 ≤ φ x b)
     {S T : Set (ConfigSpace E)} (h : S ⊆ T) : wprob φ S ≤ wprob φ T := by
   apply Finset.sum_le_sum
@@ -113,7 +113,7 @@ lemma wprob_mono [Fintype E] [DecidableEq E] {φ : E → Bool → ℝ} (hφ : �
   · rw [Set.indicator_of_notMem hS]
     exact Set.indicator_nonneg (fun _ _ => zero_le_one) ω
 
-/-- **Product probability weight has total mass one.** A product probability weight has total mass `1`. -/
+/-- A product probability weight has total mass `1`. -/
 lemma sum_pweight_eq_one [Fintype E] [DecidableEq E] {w : E → Bool → ℝ}
     (hw1 : ∀ x, w x false + w x true = 1) :
     (∑ b : ConfigSpace E, pweight w b) = 1 := by
@@ -122,7 +122,7 @@ lemma sum_pweight_eq_one [Fintype E] [DecidableEq E] {w : E → Bool → ℝ}
   simp only [Fintype.sum_bool]
   exact Finset.prod_eq_one (fun s _ => by rw [add_comm]; exact hw1 s)
 
-/-- **Inclusion–exclusion for the weighted probability.** Inclusion–exclusion for `wprob`. -/
+/-- Inclusion–exclusion for `wprob`. -/
 lemma wprob_union_inter [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
     (U V : Set (ConfigSpace E)) :
     wprob φ (U ∪ V) + wprob φ (U ∩ V) = wprob φ U + wprob φ V := by
@@ -132,7 +132,7 @@ lemma wprob_union_inter [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
   by_cases hU : ω ∈ U <;> by_cases hV : ω ∈ V <;>
     simp [Set.indicator, hU, hV, Set.mem_union, Set.mem_inter_iff]
 
-/-- **Scalar inequality behind the BK induction step.** The scalar inequality behind the induction step of the BK inequality: with `q = 1 - p`,
+/-- The scalar inequality behind the induction step of the BK inequality: with `q = 1 - p`,
 `p, q ≥ 0`, if `c0 ≤ m ≤ a0 b0`, `c1 ≤ a0 b1 + a1 b0 - m` and `c1 ≤ a1 b1`, then
 `q c0 + p c1 ≤ (q a0 + p a1) (q b0 + p b1)`. -/
 lemma bk_algebra (a0 a1 b0 b1 p q c0 c1 m : ℝ)
@@ -158,28 +158,28 @@ lemma bk_algebra (a0 a1 b0 b1 p q c0 c1 m : ℝ)
           + (q * p * (a0 * b1 + a1 * b0 - m) + p * p * (a1 * b1)) := by linarith [key4]
     _ = (q * a0 + p * a1) * (q * b0 + p * b1) := by ring
 
-/-- **Slice of an event at the first coordinate.** The section of an event `C` on `Fin (n + 1)` at first coordinate `x`: the configurations
+/-- The section of an event `C` on `Fin (n + 1)` at first coordinate `x`: the configurations
 `ω'` on `Fin n` with `Fin.cons x ω' ∈ C`. -/
 def slice {n : ℕ} (C : Set (ConfigSpace (Fin (n + 1)))) (x : Bool) :
     Set (ConfigSpace (Fin n)) := {ω' | Fin.cons x ω' ∈ C}
 
-/-- **Coordinate set with the first coordinate removed.** The coordinate set `{j | j.succ ∈ K}`: `K` with the first coordinate removed, shifted down. -/
+/-- The coordinate set `{j | j.succ ∈ K}`: `K` with the first coordinate removed, shifted down. -/
 def sliceSet {n : ℕ} (K : Set (Fin (n + 1))) : Set (Fin n) := {j | j.succ ∈ K}
 
-/-- **Indicator of an event at a prepended configuration.** The indicator of `S` at `Fin.cons x ω'` is the indicator of the slice at `ω'`. -/
+/-- The indicator of `S` at `Fin.cons x ω'` is the indicator of the slice at `ω'`. -/
 lemma indicator_slice {n : ℕ} (S : Set (ConfigSpace (Fin (n + 1)))) (x : Bool)
     (ω' : ConfigSpace (Fin n)) :
     S.indicator (fun _ => (1 : ℝ)) (Fin.cons x ω')
       = (slice S x).indicator (fun _ => (1 : ℝ)) ω' := rfl
 
-/-- **Product weight factors over the first coordinate.** The product weight factors over the first coordinate. -/
+/-- The product weight factors over the first coordinate. -/
 lemma pweight_cons {n : ℕ} (φ : Fin (n + 1) → Bool → ℝ) (x : Bool) (ω' : ConfigSpace (Fin n)) :
     pweight φ (Fin.cons x ω') = φ 0 x * pweight (fun j => φ j.succ) ω' := by
   simp only [pweight]
   rw [Fin.prod_univ_succ, Fin.cons_zero]
   exact congrArg _ (Finset.prod_congr rfl (fun j _ => by rw [Fin.cons_succ]))
 
-/-- **Weighted probability by conditioning on the first coordinate.** Conditioning on the first coordinate:
+/-- Conditioning on the first coordinate:
 `wprob φ S = φ 0 false * wprob ψ (slice S false) + φ 0 true * wprob ψ (slice S true)`,
 where `ψ` is `φ` on the remaining coordinates. -/
 theorem wprob_slice {n : ℕ} (φ : Fin (n + 1) → Bool → ℝ) (S : Set (ConfigSpace (Fin (n + 1)))) :
@@ -202,7 +202,7 @@ theorem wprob_slice {n : ℕ} (φ : Fin (n + 1) → Bool → ℝ) (S : Set (Conf
              + φ 0 true * wprob (fun j => φ j.succ) (slice S true) := by
           rw [Fintype.sum_bool, hx false, hx true]; ring
 
-/-- **Slices of an increasing event are increasing.** Slices of an increasing event are increasing. -/
+/-- Slices of an increasing event are increasing. -/
 lemma slice_isIncreasing {n : ℕ} {C : Set (ConfigSpace (Fin (n + 1)))} (hC : IsIncreasing C)
     (x : Bool) : IsIncreasing (slice C x) := by
   intro a b hab ha
@@ -212,7 +212,7 @@ lemma slice_isIncreasing {n : ℕ} {C : Set (ConfigSpace (Fin (n + 1)))} (hC : I
   · simp [Fin.cons_zero]
   · intro j; simp only [Fin.cons_succ]; exact hab j
 
-/-- **False slice of an increasing event lies in the true slice.** For an increasing event, the `false` slice is contained in the `true` slice. -/
+/-- For an increasing event, the `false` slice is contained in the `true` slice. -/
 lemma slice_false_subset_true {n : ℕ} {C : Set (ConfigSpace (Fin (n + 1)))}
     (hC : IsIncreasing C) : slice C false ⊆ slice C true := by
   intro ω' hω'
@@ -222,7 +222,7 @@ lemma slice_false_subset_true {n : ℕ} {C : Set (ConfigSpace (Fin (n + 1)))}
   · simp [Fin.cons_zero]
   · intro j; simp [Fin.cons_succ]
 
-/-- **Occurrence with first coordinate false passes to the false slice.** Occurrence on `K` at `Fin.cons false ω'` passes to the `false` slice. -/
+/-- Occurrence on `K` at `Fin.cons false ω'` passes to the `false` slice. -/
 lemma occursOn_slice_of_false {n : ℕ} {C : Set (ConfigSpace (Fin (n + 1)))}
     {K : Set (Fin (n + 1))} {ω' : ConfigSpace (Fin n)}
     (h : OccursOn C K (Fin.cons false ω')) :
@@ -234,7 +234,7 @@ lemma occursOn_slice_of_false {n : ℕ} {C : Set (ConfigSpace (Fin (n + 1)))}
   · intro _; simp [Fin.cons_zero]
   · intro j hj; simp only [Fin.cons_succ]; exact hτ j hj
 
-/-- **Occurrence with first coordinate true passes to the true slice.** Occurrence on `K` at `Fin.cons true ω'` passes to the `true` slice. -/
+/-- Occurrence on `K` at `Fin.cons true ω'` passes to the `true` slice. -/
 lemma occursOn_slice_true {n : ℕ} {C : Set (ConfigSpace (Fin (n + 1)))}
     {K : Set (Fin (n + 1))} {ω' : ConfigSpace (Fin n)}
     (h : OccursOn C K (Fin.cons true ω')) :
@@ -246,7 +246,7 @@ lemma occursOn_slice_true {n : ℕ} {C : Set (ConfigSpace (Fin (n + 1)))}
   · intro _; simp [Fin.cons_zero]
   · intro j hj; simp only [Fin.cons_succ]; exact hτ j hj
 
-/-- **Occurrence avoiding the first coordinate passes to the false slice.** If the witness set `K` avoids the first coordinate, occurrence on `K` passes to the
+/-- If the witness set `K` avoids the first coordinate, occurrence on `K` passes to the
 `false` slice whatever the value of the first coordinate. -/
 lemma occursOn_slice_false_notmem {n : ℕ} {C : Set (ConfigSpace (Fin (n + 1)))}
     {K : Set (Fin (n + 1))} {x : Bool} {ω' : ConfigSpace (Fin n)}
@@ -259,14 +259,14 @@ lemma occursOn_slice_false_notmem {n : ℕ} {C : Set (ConfigSpace (Fin (n + 1)))
   · intro hi0; exact absurd hi0 h0
   · intro j hj; simp only [Fin.cons_succ]; exact hτ j hj
 
-/-- **Removing the first coordinate preserves disjointness.** `sliceSet` preserves disjointness. -/
+/-- `sliceSet` preserves disjointness. -/
 lemma sliceSet_disjoint {n : ℕ} {K L : Set (Fin (n + 1))} (h : Disjoint K L) :
     Disjoint (sliceSet K) (sliceSet L) := by
   rw [Set.disjoint_left] at h ⊢
   intro j hjK hjL
   exact h (a := j.succ) hjK hjL
 
-/-- **False slice of a disjoint occurrence.** The `false` slice of `A □ B` is contained in the disjoint occurrence of the `false`
+/-- The `false` slice of `A □ B` is contained in the disjoint occurrence of the `false`
 slices. -/
 theorem slice_disjointOccurrence_false {n : ℕ} {A B : Set (ConfigSpace (Fin (n + 1)))} :
     slice (disjointOccurrence A B) false ⊆
@@ -277,7 +277,7 @@ theorem slice_disjointOccurrence_false {n : ℕ} {A B : Set (ConfigSpace (Fin (n
   exact ⟨sliceSet K, sliceSet L, sliceSet_disjoint hKL,
     occursOn_slice_of_false hA, occursOn_slice_of_false hB⟩
 
-/-- **True slice of a disjoint occurrence.** The `true` slice of `A □ B` is contained in `(A₀ □ B₁) ∪ (A₁ □ B₀)`, where `A₀, A₁` are
+/-- The `true` slice of `A □ B` is contained in `(A₀ □ B₁) ∪ (A₁ □ B₀)`, where `A₀, A₁` are
 the slices of `A` (similarly for `B`): the first coordinate is used by at most one witness. -/
 theorem slice_disjointOccurrence_true {n : ℕ} {A B : Set (ConfigSpace (Fin (n + 1)))} :
     slice (disjointOccurrence A B) true ⊆
@@ -295,14 +295,14 @@ theorem slice_disjointOccurrence_true {n : ℕ} {A B : Set (ConfigSpace (Fin (n 
     exact ⟨sliceSet K, sliceSet L, sliceSet_disjoint hKL,
       occursOn_slice_false_notmem h0K hA, occursOn_slice_true hB⟩
 
-/-- **Occurrence on a one-point configuration space.** On a one-point configuration space, `OccursOn A K ω` reduces to `ω ∈ A`. -/
+/-- On a one-point configuration space, `OccursOn A K ω` reduces to `ω ∈ A`. -/
 lemma occursOn_subsingleton {n : ℕ} [Subsingleton (ConfigSpace (Fin n))]
     {A : Set (ConfigSpace (Fin n))} {K : Set (Fin n)} {ω : ConfigSpace (Fin n)} :
     OccursOn A K ω ↔ ω ∈ A := by
   refine ⟨OccursOn.mem_self, fun h ω' _ => ?_⟩
   rwa [Subsingleton.elim ω' ω]
 
-/-- **Disjoint occurrence on a one-point space is the intersection.** On a one-point configuration space, `A □ B = A ∩ B`. -/
+/-- On a one-point configuration space, `A □ B = A ∩ B`. -/
 lemma disjointOccurrence_subsingleton {n : ℕ} [Subsingleton (ConfigSpace (Fin n))]
     (A B : Set (ConfigSpace (Fin n))) :
     disjointOccurrence A B = A ∩ B := by
@@ -311,7 +311,7 @@ lemma disjointOccurrence_subsingleton {n : ℕ} [Subsingleton (ConfigSpace (Fin 
   refine ⟨fun ⟨_, _, _, hA, hB⟩ => ⟨occursOn_subsingleton.mp hA, occursOn_subsingleton.mp hB⟩,
     fun ⟨hA, hB⟩ => ⟨∅, ∅, by simp, occursOn_subsingleton.mpr hA, occursOn_subsingleton.mpr hB⟩⟩
 
-/-- **BK inequality for product weights on $n$ ordered coordinates.** The BK inequality on `Fin n` for a product probability weight `φ`:
+/-- The BK inequality on `Fin n` for a product probability weight `φ`:
 `wprob φ (A □ B) ≤ wprob φ A * wprob φ B` for increasing `A, B`. -/
 theorem bk_wprob : ∀ (n : ℕ) (φ : Fin n → Bool → ℝ),
     (∀ i b, 0 ≤ φ i b) → (∀ i, φ i false + φ i true = 1) →
@@ -395,7 +395,7 @@ theorem bk_wprob : ∀ (n : ℕ) (φ : Fin n → Bool → ℝ),
     rw [hdec, hAdec, hBdec]
     exact bk_algebra a0 a1 b0 b1 p q c0 c1 m hqeq hp0 hq0 hmab hc0m hc1u hc1v
 
-/-- **Relabeling configurations along a bijection.** The bijection `ω ↦ ω ∘ e` from configurations on `F` to configurations on `E` induced by
+/-- The bijection `ω ↦ ω ∘ e` from configurations on `F` to configurations on `E` induced by
 `e : E ≃ F`. This is `e.symm.arrowCongr (Equiv.refl Bool)` (`StatMech.cfgEquiv_eq_arrowCongr`). -/
 def cfgEquiv (e : E ≃ F) : ConfigSpace F ≃ ConfigSpace E where
   toFun ω := fun x => ω (e x)
@@ -406,24 +406,24 @@ def cfgEquiv (e : E ≃ F) : ConfigSpace F ≃ ConfigSpace E where
 @[simp] lemma cfgEquiv_apply (e : E ≃ F) (ω : ConfigSpace F) (x : E) :
     cfgEquiv e ω x = ω (e x) := rfl
 
-/-- **Configuration relabeling agrees with the library arrow equivalence.** `cfgEquiv e` agrees with Mathlib's `Equiv.arrowCongr`. -/
+/-- `cfgEquiv e` agrees with Mathlib's `Equiv.arrowCongr`. -/
 lemma cfgEquiv_eq_arrowCongr (e : E ≃ F) :
     cfgEquiv e = e.symm.arrowCongr (Equiv.refl Bool) := by
   ext ω x
   rfl
 
-/-- **Monotonicity of configuration relabeling.** `cfgEquiv e` is monotone. -/
+/-- `cfgEquiv e` is monotone. -/
 lemma cfgEquiv_mono (e : E ≃ F) {ω ω' : ConfigSpace F} (h : ω ≤ ω') :
     cfgEquiv e ω ≤ cfgEquiv e ω' := fun x => h (e x)
 
-/-- **Agreement on a set under configuration relabeling.** Agreement on `e '' K` corresponds to agreement on `K` after transport by `cfgEquiv e`. -/
+/-- Agreement on `e '' K` corresponds to agreement on `K` after transport by `cfgEquiv e`. -/
 lemma agreeOn_cfgEquiv (e : E ≃ F) (K : Set E) (ωf ωf' : ConfigSpace F) :
     agreeOn (e '' K) ωf ωf' ↔ agreeOn K (cfgEquiv e ωf) (cfgEquiv e ωf') := by
   constructor
   · intro h x hx; simp only [cfgEquiv_apply]; exact h (e x) ⟨x, hx, rfl⟩
   · intro h y hy; obtain ⟨x, hx, rfl⟩ := hy; have := h x hx; simpa using this
 
-/-- **Occurrence is invariant under relabeling coordinates.** Occurrence is preserved by relabeling the coordinates. -/
+/-- Occurrence is preserved by relabeling the coordinates. -/
 lemma occursOn_cfgEquiv (e : E ≃ F) (A : Set (ConfigSpace E)) (K : Set E) (ωf : ConfigSpace F) :
     OccursOn ((cfgEquiv e) ⁻¹' A) (e '' K) ωf ↔ OccursOn A K (cfgEquiv e ωf) := by
   constructor
@@ -434,7 +434,7 @@ lemma occursOn_cfgEquiv (e : E ≃ F) (A : Set (ConfigSpace E)) (K : Set E) (ωf
     rw [agreeOn_cfgEquiv, (cfgEquiv e).apply_symm_apply ωe]; exact hωe
   · intro h ωf' hωf'; rw [agreeOn_cfgEquiv] at hωf'; exact h _ hωf'
 
-/-- **Disjoint occurrence commutes with relabeling coordinates.** Disjoint occurrence commutes with relabeling the coordinates. -/
+/-- Disjoint occurrence commutes with relabeling the coordinates. -/
 theorem preimage_disjointOccurrence (e : E ≃ F) (A B : Set (ConfigSpace E)) :
     (cfgEquiv e) ⁻¹' (disjointOccurrence A B)
       = disjointOccurrence ((cfgEquiv e) ⁻¹' A) ((cfgEquiv e) ⁻¹' B) := by
@@ -453,7 +453,7 @@ theorem preimage_disjointOccurrence (e : E ≃ F) (A B : Set (ConfigSpace E)) :
       rw [Set.image_image] at h; simp only [Equiv.apply_symm_apply, Set.image_id'] at h
       exact h hB
 
-/-- **Product weight is invariant under relabeling coordinates.** The product weight is invariant under relabeling the coordinates. -/
+/-- The product weight is invariant under relabeling the coordinates. -/
 lemma pweight_transfer [Fintype E] [Fintype F] (e : E ≃ F) (φ : E → Bool → ℝ)
     (ωf : ConfigSpace F) :
     pweight φ (cfgEquiv e ωf) = pweight (fun y => φ (e.symm y)) ωf := by
@@ -461,7 +461,7 @@ lemma pweight_transfer [Fintype E] [Fintype F] (e : E ≃ F) (φ : E → Bool �
   exact Fintype.prod_equiv e (fun x => φ x (ωf (e x))) (fun y => φ (e.symm y) (ωf y))
     (fun x => by simp)
 
-/-- **Weighted probability is invariant under relabeling coordinates.** `wprob` is invariant under relabeling the coordinates. -/
+/-- `wprob` is invariant under relabeling the coordinates. -/
 lemma wprob_transfer [Fintype E] [DecidableEq E] [Fintype F] [DecidableEq F]
     (e : E ≃ F) (φ : E → Bool → ℝ) (S : Set (ConfigSpace E)) :
     wprob φ S = wprob (fun y => φ (e.symm y)) ((cfgEquiv e) ⁻¹' S) := by
@@ -472,7 +472,7 @@ lemma wprob_transfer [Fintype E] [DecidableEq E] [Fintype F] [DecidableEq F]
   rw [pweight_transfer]
   congr 1
 
-/-- **BK inequality for product weights on a finite set.** The **BK inequality** for a product probability weight on a finite set `E`: if `φ ≥ 0`
+/-- The **BK inequality** for a product probability weight on a finite set `E`: if `φ ≥ 0`
 and `φ x false + φ x true = 1` for all `x`, then `wprob φ (A □ B) ≤ wprob φ A * wprob φ B` for
 all increasing events `A, B`. -/
 theorem bk_wprob_general [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
@@ -492,7 +492,7 @@ theorem bk_wprob_general [Fintype E] [DecidableEq E] (φ : E → Bool → ℝ)
   rw [wprob_transfer e φ (disjointOccurrence A B), wprob_transfer e φ A, wprob_transfer e φ B]
   exact hbk
 
-/-- **Bernoulli point masses sum to one.** The two point masses of the Bernoulli(`p`) measure add up to `1`. -/
+/-- The two point masses of the Bernoulli(`p`) measure add up to `1`. -/
 lemma bernoulliMeasure_real_false_add_true {p : ℝ≥0} (hp : p ≤ 1) :
     (bernoulliMeasure p hp).real {false} + (bernoulliMeasure p hp).real {true} = 1 := by
   have h1 : (bernoulliMeasure p hp).real {false} = ((1 - p : ℝ≥0) : ℝ) := by
@@ -502,7 +502,7 @@ lemma bernoulliMeasure_real_false_add_true {p : ℝ≥0} (hp : p ≤ 1) :
   rw [h1, h2, NNReal.coe_sub hp, NNReal.coe_one]
   ring
 
-/-- **Bernoulli product measure as a weighted probability.** The product Bernoulli measure of an event is its `wprob` for the Bernoulli marginals. -/
+/-- The product Bernoulli measure of an event is its `wprob` for the Bernoulli marginals. -/
 theorem bernoulli_real_eq_wprob [Fintype E] [DecidableEq E] {p : ℝ≥0} (hp : p ≤ 1)
     (S : Set (ConfigSpace E)) :
     (bernoulliProductMeasure (E := E) p hp).real S
@@ -515,7 +515,7 @@ theorem bernoulli_real_eq_wprob [Fintype E] [DecidableEq E] {p : ℝ≥0} (hp : 
 
 set_option linter.unusedFintypeInType false in
 set_option linter.unusedDecidableInType false in
-/-- **Van den Berg–Kesten inequality.** The **van den Berg–Kesten (BK) inequality** (van den Berg and Kesten 1985): under the product
+/-- The **van den Berg–Kesten (BK) inequality** (van den Berg and Kesten 1985): under the product
 Bernoulli(`p`) measure on a finite configuration space, for increasing events `A` and `B`,
 `P_p(A □ B) ≤ P_p(A) * P_p(B)`. -/
 theorem bk_inequality [Fintype E] [DecidableEq E] {p : ℝ≥0} (hp : p ≤ 1)

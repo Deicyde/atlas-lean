@@ -69,17 +69,17 @@ noncomputable section
 
 namespace MathlibExt.Biology.PopulationGenetics.Coalescent
 
-/-- **HKA expected number of segregating sites.** HKA's expected number of segregating sites `θ C(n)` in a sample of `n` genes with scaled
+/-- HKA's expected number of segregating sites `θ C(n)` in a sample of `n` genes with scaled
 mutation rate `θ` (use `f θ` for species `B`). -/
 def hkaPolyMean (θ : ℝ) (n : ℕ) : ℝ := θ * tajimaA1 n
 
-/-- **HKA variance of the number of segregating sites.** HKA's variance of the number of segregating sites, `θ C(n) + θ² C₂(n)`. -/
+/-- HKA's variance of the number of segregating sites, `θ C(n) + θ² C₂(n)`. -/
 def hkaPolyVar (θ : ℝ) (n : ℕ) : ℝ := θ * tajimaA1 n + θ ^ 2 * tajimaA2 n
 
-/-- **HKA expected divergence.** HKA's expected divergence `θ (T + (1 + f) / 2)`. -/
+/-- HKA's expected divergence `θ (T + (1 + f) / 2)`. -/
 def hkaDivMean (θ T f : ℝ) : ℝ := θ * (T + (1 + f) / 2)
 
-/-- **HKA variance of the divergence.** HKA's variance of the divergence, `θ (T + (1 + f) / 2) + (θ (1 + f) / 2)²`. -/
+/-- HKA's variance of the divergence, `θ (T + (1 + f) / 2) + (θ (1 + f) / 2)²`. -/
 def hkaDivVar (θ T f : ℝ) : ℝ := hkaDivMean θ T f + (θ * (1 + f) / 2) ^ 2
 
 /-- The ancestral coalescence time has mean `(1 + f) / 2`, so `E[θ (T + τ)] = θ (T + (1+f)/2)`. -/
@@ -129,7 +129,7 @@ theorem variance_hkaDivergence {Ω : Type*} {mΩ : MeasurableSpace Ω} {μ : Mea
   rw [hvar', hkaDivVar]
   ring
 
-/-- **Hudson–Kreitman–Aguadé statistic.** The **HKA statistic** for `L` loci with polymorphism counts `SA i`, `SB i`, divergences
+/-- The **HKA statistic** for `L` loci with polymorphism counts `SA i`, `SB i`, divergences
 `D i`, parameters `θ i`, `T`, `f` and sample sizes `nA`, `nB`: the sum over loci of the
 squared standardized deviations of the three counts from their HKA expectations. -/
 def hkaStatistic {L : ℕ} (nA nB : ℕ) (θ : Fin L → ℝ) (T f : ℝ) (SA SB D : Fin L → ℝ) : ℝ :=
@@ -137,7 +137,7 @@ def hkaStatistic {L : ℕ} (nA nB : ℕ) (θ : Fin L → ℝ) (T f : ℝ) (SA SB
     (SB i - hkaPolyMean (f * θ i) nB) ^ 2 / hkaPolyVar (f * θ i) nB +
     (D i - hkaDivMean (θ i) T f) ^ 2 / hkaDivVar (θ i) T f)
 
-/-- **Positivity of the HKA polymorphism variance.** HKA's variances are positive in the biological domain: `θ > 0`, `n ≥ 2`. -/
+/-- HKA's variances are positive in the biological domain: `θ > 0`, `n ≥ 2`. -/
 theorem hkaPolyVar_pos {θ : ℝ} (hθ : 0 < θ) {n : ℕ} (hn : 2 ≤ n) : 0 < hkaPolyVar θ n := by
   have ha1 : 0 < tajimaA1 n := by
     rw [tajimaA1_eq_harmonic]
@@ -146,7 +146,7 @@ theorem hkaPolyVar_pos {θ : ℝ} (hθ : 0 < θ) {n : ℕ} (hn : 2 ≤ n) : 0 < 
   unfold hkaPolyVar
   positivity
 
-/-- **Positivity of the HKA divergence variance.** HKA's divergence variance is positive for `θ > 0`, `T ≥ 0`, `f > -1`. -/
+/-- HKA's divergence variance is positive for `θ > 0`, `T ≥ 0`, `f > -1`. -/
 theorem hkaDivVar_pos {θ T f : ℝ} (hθ : 0 < θ) (hT : 0 ≤ T) (hf : -1 < f) :
     0 < hkaDivVar θ T f := by
   have h : 0 < T + (1 + f) / 2 := by linarith
@@ -212,7 +212,7 @@ def hkaEquations {L : ℕ} (nA nB : ℕ) (θ : Fin L → ℝ) (T f : ℝ) (SA SB
     (∑ i, D i = (T + (1 + f) / 2) * ∑ i, θ i) ∧
     ∀ i, SA i + SB i + D i = θ i * (T + (1 + f) / 2 + tajimaA1 nA + f * tajimaA1 nB)
 
-/-- **True parameters solve the HKA estimating equations.** The true parameters solve HKA's estimating equations at the expected counts. -/
+/-- The true parameters solve HKA's estimating equations at the expected counts. -/
 theorem hkaEquations_expected {L : ℕ} (nA nB : ℕ) (θ : Fin L → ℝ) (T f : ℝ) :
     hkaEquations nA nB θ T f (fun i => hkaPolyMean (θ i) nA)
       (fun i => hkaPolyMean (f * θ i) nB) (fun i => hkaDivMean (θ i) T f) := by

@@ -74,7 +74,7 @@ namespace ProbabilityTheory
 
 variable {X : Type*} [MeasurableSpace X]
 
-/-- **Measurability of the Pólya urn predictive law.** The predictive law depends measurably on the previous draws. -/
+/-- The predictive law depends measurably on the previous draws. -/
 theorem measurable_polyaUrnPredictive (α : ℝ) (H : Measure X) (n : ℕ) :
     Measurable fun xs : Fin n → X ↦ polyaUrnPredictive α H xs := by
   refine Measure.measurable_of_measurable_coe _ fun A hA ↦ ?_
@@ -128,7 +128,7 @@ private theorem measurable_map_snoc (α : ℝ) (H : Measure X) [SFinite H] (n : 
     (Finset.measurable_sum _ fun i _ ↦ ?_))
   exact (measurable_one.indicator hT).comp (measurable_id.prodMk (measurable_pi_apply i))
 
-/-- **Blackwell–MacQueen urn.** The **Blackwell–MacQueen urn** with parameter `α` and base measure `H`: the joint law of the
+/-- The **Blackwell–MacQueen urn** with parameter `α` and base measure `H`: the joint law of the
 first `n` draws, where draw `n` has law `polyaUrnPredictive α H xs` given the previous draws
 `xs` (Blackwell–MacQueen 1973). -/
 noncomputable def blackwellMacQueen (α : ℝ) (H : Measure X) : (n : ℕ) → Measure (Fin n → X)
@@ -136,7 +136,7 @@ noncomputable def blackwellMacQueen (α : ℝ) (H : Measure X) : (n : ℕ) → M
   | n + 1 => (blackwellMacQueen α H n).bind fun xs ↦
       (polyaUrnPredictive α H xs).map fun x ↦ Fin.snoc (α := fun _ ↦ X) xs x
 
-/-- **Blackwell–MacQueen urn law is a probability measure.** The urn law is a probability measure. -/
+/-- The urn law is a probability measure. -/
 theorem isProbabilityMeasure_blackwellMacQueen {α : ℝ} (hα : 0 < α) (H : Measure X)
     [IsProbabilityMeasure H] (n : ℕ) : IsProbabilityMeasure (blackwellMacQueen α H n) := by
   induction n with
@@ -184,7 +184,7 @@ theorem blackwellMacQueen_succ_pi (α : ℝ) (H : Measure X) [SFinite H] {n : �
     simp only [Set.mem_univ_pi] at hxs
     exact fun h ↦ absurd h hxs
 
-/-- **Pólya urn predictive law is invariant under reordering.** The predictive law does not depend on the order of the previous draws. -/
+/-- The predictive law does not depend on the order of the previous draws. -/
 theorem polyaUrnPredictive_comp_perm (α : ℝ) (H : Measure X) {n : ℕ} (xs : Fin n → X)
     (σ : Equiv.Perm (Fin n)) : polyaUrnPredictive α H (xs ∘ σ) = polyaUrnPredictive α H xs := by
   simp only [polyaUrnPredictive, Function.comp_apply]
@@ -389,13 +389,13 @@ theorem map_perm_blackwellMacQueen (α : ℝ) (hα : 0 < α) (H : Measure X)
           exact map_permSnoc_blackwellMacQueen α H ih _
 
 omit [MeasurableSpace X] in
-/-- **Tie partition of a sequence of draws.** The partition of the indices `{0, …, n-1}` into groups of equal entries of `xs`. -/
+/-- The partition of the indices `{0, …, n-1}` into groups of equal entries of `xs`. -/
 noncomputable def tiePartition {n : ℕ} (xs : Fin n → X) : Finpartition (univ : Finset (Fin n)) :=
   haveI := Classical.decRel (Setoid.ker xs).r
   Finpartition.ofSetoid (Setoid.ker xs)
 
 omit [MeasurableSpace X] in
-/-- **Blocks of the tie partition are classes of equal entries.** Two indices lie in the same block of `tiePartition xs` iff the entries agree. -/
+/-- Two indices lie in the same block of `tiePartition xs` iff the entries agree. -/
 theorem mem_part_tiePartition {n : ℕ} (xs : Fin n → X) (i j : Fin n) :
     j ∈ (tiePartition xs).part i ↔ xs i = xs j := by
   classical
@@ -420,7 +420,7 @@ private theorem finpartition_ext_part {n : ℕ} {P Q : Finpartition (univ : Fins
     ⟨key h B, key (fun i j ↦ (h i j).symm) B⟩)
 
 omit [MeasurableSpace X] in
-/-- **Characterization of the tie partition.** `tiePartition xs = π` iff equal entries are exactly the pairs in a common block of `π`. -/
+/-- `tiePartition xs = π` iff equal entries are exactly the pairs in a common block of `π`. -/
 theorem tiePartition_eq_iff {n : ℕ} (xs : Fin n → X) (π : Finpartition (univ : Finset (Fin n))) :
     tiePartition xs = π ↔ ∀ i j, (xs i = xs j ↔ j ∈ π.part i) := by
   constructor
@@ -439,7 +439,7 @@ private theorem part_comap {n m : ℕ} (f : Fin n → Fin m) (P : Finpartition (
   simp
 
 omit [MeasurableSpace X] in
-/-- **Tie partition after forgetting the last draw.** Forgetting the last draw restricts the tie partition to the earlier draws. -/
+/-- Forgetting the last draw restricts the tie partition to the earlier draws. -/
 theorem comap_castSucc_tiePartition_snoc {n : ℕ} (xs : Fin n → X) (x : X) :
     (tiePartition (Fin.snoc (α := fun _ ↦ X) xs x)).comap Fin.castSucc = tiePartition xs := by
   refine finpartition_ext_part fun i j ↦ ?_
@@ -477,7 +477,7 @@ private theorem castSucc_mem_part_last_seat {n : ℕ} (π : Finpartition (univ :
   · simp [seat, part_last_joinTable, Fin.castSucc_ne_last]
 
 omit [MeasurableSpace X] in
-/-- **Last draw opens a new block iff it is new.** Where the last draw sits: a new table iff it differs from all earlier draws. -/
+/-- Where the last draw sits: a new table iff it differs from all earlier draws. -/
 theorem tiePartition_snoc_eq_seat_none_iff {n : ℕ} (xs : Fin n → X) (x : X) :
     tiePartition (Fin.snoc (α := fun _ ↦ X) xs x) = seat (tiePartition xs) none ↔
       x ∉ Set.range xs := by
@@ -499,7 +499,7 @@ theorem tiePartition_snoc_eq_seat_none_iff {n : ℕ} (xs : Fin n → X) (x : X) 
       exact hx ⟨j, ((castSucc_mem_part_last_iff xs x j).1 this).symm⟩
 
 omit [MeasurableSpace X] in
-/-- **Last draw joins a block iff it matches that block.** Where the last draw sits: at the table `B` iff it equals the earlier draws in `B`. -/
+/-- Where the last draw sits: at the table `B` iff it equals the earlier draws in `B`. -/
 theorem tiePartition_snoc_eq_seat_some_iff {n : ℕ} (xs : Fin n → X) (x : X)
     (B : (tiePartition xs).parts) {i : Fin n} (hi : i ∈ B.1) :
     tiePartition (Fin.snoc (α := fun _ ↦ X) xs x) = seat (tiePartition xs) (some B) ↔
@@ -517,7 +517,7 @@ theorem tiePartition_snoc_eq_seat_some_iff {n : ℕ} (xs : Fin n → X) (x : X)
     congr 2
     exact Subtype.ext ((tiePartition xs).eq_of_mem_parts B'.2 B.2 hB' hi)
 
-/-- **Measurability of the tie partition event.** The event that the draws have a given tie partition is measurable. -/
+/-- The event that the draws have a given tie partition is measurable. -/
 theorem measurableSet_tiePartition_eq [MeasurableSingletonClass X]
     [MeasurableSpace.CountablySeparated X] {n : ℕ} (π : Finpartition (univ : Finset (Fin n))) :
     MeasurableSet {xs : Fin n → X | tiePartition xs = π} := by
