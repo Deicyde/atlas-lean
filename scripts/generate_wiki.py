@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the ATLAS wiki under blueprint/.
-
-    python scripts/generate_wiki.py    write the pages and blueprint/pages.json
+"""Lay out ATLAS wiki pages from the Lean sources: the library scripts/sync_wiki.py imports.
 
 ATLAS v2 is the root Lake package: every public MathlibExt, CSLibExt,
 PhyslibExt and WantedExt declaration with a docstring becomes one article whose
@@ -15,13 +13,8 @@ subjects inside them, each subject's fields and subfields, and where each Lean
 module or directory sits among them, under what title. Lean paths do not decide
 where an article appears.
 
-The pages are not committed; the Pages build writes them from the Lean sources.
-blueprint/pages.json is, and records each page's path with its Lean name (or,
-without one, its library, module and title) and article id, so that a regeneration keeps
-a declaration's URL and id when the pages around it change. Commit it after
-generating when it changes.
-
-Run it with a Python that has Autoform installed (see blueprint-pages.yml).
+The wiki's pages are committed: sync_wiki.py seeded them once from generate()
+and adds pages for new declarations, and nothing here writes a file.
 """
 
 from __future__ import annotations
@@ -332,7 +325,9 @@ def module_heading(text: str) -> str:
     return heading.group(1).removesuffix("-/").strip() if heading else ""
 
 
-def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dict]:
+def load_library(library: str, index, taxonomy: dict, titles: dict | None = None) -> tuple[list[Target], dict]:
+    """A library's articles. ``titles`` maps (file, name as written) to (title, docstring opening) pairs: a
+    declaration whose docstring starts with that opening takes the title, unless a sibling in its file has it."""
     located = {
         (declaration.path, declaration.line): declaration
         for declaration in index.declarations.values()
@@ -341,6 +336,7 @@ def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dic
     targets: list[Target] = []
     summary = {"public": 0, "documented": 0, "instances": 0, "subjects": set()}
     named_by_docstring: set[int] = set()
+    used_titles: dict[Path, set[str]] = defaultdict(set)
     for path in sorted((ROOT / library).rglob("*.lean")):
         relative = path.relative_to(ROOT)
         text = path.read_text()
@@ -382,6 +378,14 @@ def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dic
                 named_by_docstring.add(len(targets))
             # A bold name can wrap; a title must stay on its heading line.
             title = " ".join(bold.group("title").split()).rstrip(".") if bold else humanize(short) or first_words(statement_text)
+            if not bold and titles:
+                opened = " ".join(doc.split())
+                for name, opening in titles.get((relative.as_posix(), match.group("name")), []):
+                    if opened.startswith(opening) and name.casefold() not in used_titles[relative]:
+                        title = name
+                        named_by_docstring.add(len(targets))
+                        break
+            used_titles[relative].add(title.casefold())
             subject = placed[1]["to"].split("/")[0] if placed else LIBRARIES[library].get(module[1], module[1])
             if subject not in taxonomy["subjects"]:
                 raise SystemExit(f"{relative}: no subject for directory {module[1]}")
@@ -920,7 +924,10 @@ def pages_by_lean() -> dict[str, Path]:
     return {key: next(iter(paths)) for key, paths in found.items() if len(paths) == 1}
 
 
-def generate() -> dict[Path, str]:
+def generate(titles: dict | None = None, dependency_file: Path | None = None, targets: list | None = None) -> dict[Path, str]:
+    """Every page, by path, with blueprint/pages.json; ``titles`` as load_library takes them, and the Lean
+    dependency edges from ``dependency_file`` (default sources/v2/lean-dependencies.json) when it exists.
+    Every article's Target is added to ``targets`` when given."""
     # The archived v1 release and the standalone code under Atlas/ are not part of
     # the wiki, and both declare many v2 names again. Autoform selects neither
     # declaration of a name declared twice, so indexing them would leave those
@@ -934,7 +941,7 @@ def generate() -> dict[Path, str]:
     kept = pages_by_lean()
     v2_coverage = []
     taxonomy = load_taxonomy()
-    v2_loaded = {library: load_library(library, index, taxonomy) for library in LIBRARIES}
+    v2_loaded = {library: load_library(library, index, taxonomy, titles) for library in LIBRARIES}
     v2_by_subject: dict[str, list[Target]] = defaultdict(list)
     for targets, _ in v2_loaded.values():
         for target in targets:
@@ -945,7 +952,7 @@ def generate() -> dict[Path, str]:
         print(f"note: {len(unplaced)} modules have no place in {TAXONOMY.relative_to(ROOT)} yet, so their subjects list them "
               f"as not yet classified: {', '.join(unplaced[:5])}{', ...' if len(unplaced) > 5 else ''}", file=sys.stderr)
     # Dependencies come first: they order the topics.
-    dependency_file = SOURCES / "v2" / "lean-dependencies.json"
+    dependency_file = dependency_file or SOURCES / "v2" / "lean-dependencies.json"
     dependency_data = None
     if dependency_file.is_file():
         dependency_data = json.loads(dependency_file.read_text())
@@ -959,6 +966,8 @@ def generate() -> dict[Path, str]:
         assign_paths(tree, ROADMAP / subject, kept)
         trees.append(tree)
     every_v2 = Container("v2", "v2", trees)
+    if targets is not None:
+        targets.extend(node for node in walk(every_v2) if isinstance(node, Target))
     lean_counts = Counter(node.lean for node in walk(every_v2) if isinstance(node, Target) and node.lean)
     for node in walk(every_v2):
         if node is not every_v2:
@@ -995,25 +1004,3 @@ def generate() -> dict[Path, str]:
     labels = {node.path: page_key(node) for node in walk(every_v2) if isinstance(node, Target) and not node.lean}
     files[PAGE_MAP] = render_page_map(files, labels)
     return files
-
-
-def owned() -> set[Path]:
-    """Existing files the generator owns, so stale pages can be removed: every roadmap page."""
-    return set(ROADMAP.rglob("*.md")) if ROADMAP.is_dir() else set()
-
-
-def main() -> int:
-    files = generate()
-    stale = sorted(owned() - set(files))
-    changed = sorted(path for path, text in files.items() if not path.is_file() or path.read_text() != text)
-    for path in stale:
-        path.unlink()
-    for path in changed:
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(files[path])
-    print(f"{len(files)} pages, {len(changed)} written, {len(stale)} removed")
-    return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())
