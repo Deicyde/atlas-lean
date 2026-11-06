@@ -18,17 +18,11 @@ def row(name: str, kind: str, type_uses: list[str], value_uses: list[str]) -> di
 
 def run_extract(rows: list[dict], articles: list[str]) -> dict:
     with tempfile.TemporaryDirectory() as directory:
-        root = Path(directory)
-        roadmap = root / "roadmap"
-        roadmap.mkdir()
-        for name in articles:
-            (roadmap / f"{name}.md").write_text(f"---\ndeclaration: def\nlean: {name}\n---\n\n# {name}\n")
-        dump = root / "dump.jsonl"
+        dump = Path(directory) / "dump.jsonl"
         dump.write_text("".join(json.dumps(r) + "\n" for r in rows))
-        output = root / "lean-dependencies.json"
-        with patch.object(extract, "ROOT", root), patch.object(extract, "ROADMAP", roadmap), \
-                patch.object(extract, "OUTPUT", output), \
-                patch("sys.argv", ["extract", str(dump), "test"]):
+        output = Path(directory) / "lean-dependencies.json"
+        with patch.object(extract, "article_manifest", lambda: set(articles)), \
+                patch("sys.argv", ["extract", str(dump), str(output)]):
             assert extract.main() == 0
         return json.loads(output.read_text())["articles"]
 
@@ -65,27 +59,6 @@ class Mutual(unittest.TestCase):
     def test_groups(self) -> None:
         edges = {"a": {"b"}, "b": {"c"}, "c": {"a"}, "d": {"a"}, "e": {"e"}, "f": set()}
         self.assertEqual(extract.mutual_groups(edges), [["a", "b", "c"]])
-
-
-class CheckTargets(unittest.TestCase):
-    def check(self, covered: dict, articles: list[str]) -> int:
-        with tempfile.TemporaryDirectory() as directory:
-            roadmap = Path(directory) / "roadmap"
-            roadmap.mkdir()
-            for name in articles:
-                (roadmap / f"{name}.md").write_text(f"---\nlean: {name}\n---\n")
-            output = Path(directory) / "lean-dependencies.json"
-            output.write_text(json.dumps(covered))
-            with patch.object(extract, "ROADMAP", roadmap), patch.object(extract, "OUTPUT", output), \
-                    patch("sys.argv", ["extract", "--check-targets"]):
-                return extract.main()
-
-    def test_same_targets_pass(self) -> None:
-        self.assertEqual(self.check({"articles": {"A": {}}, "missing_articles": {"WantedExt": ["B"]}}, ["A", "B"]), 0)
-
-    def test_a_new_or_gone_target_fails(self) -> None:
-        self.assertEqual(self.check({"articles": {"A": {}}, "missing_articles": {}}, ["A", "B"]), 1)
-        self.assertEqual(self.check({"articles": {"A": {}, "B": {}}, "missing_articles": {}}, ["A"]), 1)
 
 
 if __name__ == "__main__":

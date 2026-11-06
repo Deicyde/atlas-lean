@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """Collapse the v2 declaration dump onto wiki articles.
 
-    scripts/extract_v2_lean_dependencies.py DUMP.jsonl[.gz] SOURCE_URL
-    scripts/extract_v2_lean_dependencies.py --check-targets
+    scripts/extract_v2_lean_dependencies.py DUMP.jsonl[.gz] OUTPUT.json
 
-The dump (from scripts/dump_v2_dependencies.lean, run by the v2-dependencies
-workflow) lists, for every constant in the v2 modules, the v2 constants its
-type and value use. Articles are exactly the resolved `lean:` targets in the
-generated v2 roadmap, so source-level commands and compiled constants cannot
-disagree about projections, wrappers, wanted declarations, or docstrings. An
+The dump (from scripts/dump_v2_dependencies.lean, run by the Pages build's
+edges job) lists, for every constant in the v2 modules, the v2 constants its
+type and value use. Articles are exactly the Lean names the wiki's articles
+link, as Autoform reads them, so source-level commands and compiled constants
+cannot disagree about projections, wrappers, wanted declarations, or docstrings. An
 article's statement dependencies are the articles its type reaches through
 non-article constants (private helpers, auxiliary declarations, undocumented
 definitions), together with what its value reaches when it is a definition (its
@@ -16,25 +15,20 @@ body) or an inductive type (its constructors' types). A theorem's proof
 dependencies are those its value reaches the same way, minus the statement
 ones. Mutually recursive definitions and mutual inductive types depend on each
 other, which a dependency DAG can't show, so statement edges inside such a group
-are left out and the group is listed under "mutual". Writes
-blueprint/sources/v2/lean-dependencies.json, which scripts/generate_wiki.py
-reads. --check-targets fails when the generated roadmap's `lean:` targets are not
-the articles that file covers.
+are left out and the group is listed under "mutual". The build adds the result
+to the articles' Depends on lists; it is never committed.
 """
 
 from __future__ import annotations
 
 import gzip
 import json
-import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUTPUT = ROOT / "blueprint" / "sources" / "v2" / "lean-dependencies.json"
-ROADMAP = ROOT / "blueprint" / "roadmap"
+BLUEPRINT = ROOT / "blueprint"
 LIBRARIES = frozenset({"MathlibExt", "CSLibExt", "PhyslibExt", "WantedExt"})
-LEAN = re.compile(r"^lean:\s*(.+?)\s*$", re.MULTILINE)
 # A definition is its body and an inductive type its constructors, so their values are part of the statement.
 STATEMENT_VALUE = frozenset({"def", "inductive"})
 
@@ -75,21 +69,11 @@ def publish_private_targets(rows: dict[str, dict], manifest: set[str]) -> dict[s
 
 
 def article_manifest() -> set[str]:
-    """The compiled names the generated v2 roadmap publishes.
+    """The Lean names the wiki's articles link, read by Autoform's own loader."""
 
-    The roadmap is laid out by subject, not by library, so every page's `lean:`
-    targets count; the generated roadmap holds only v2 articles."""
+    from autoform_cli.graph import load_graph
 
-    names: set[str] = set()
-    for path in ROADMAP.rglob("*.md"):
-        text = path.read_text(encoding="utf-8")
-        if not text.startswith("---\n"):
-            continue
-        frontmatter = text.split("---\n", 2)[1]
-        match = LEAN.search(frontmatter)
-        if match is not None:
-            names.update(name for name in (name.strip() for name in match.group(1).split(",")) if name)
-    return names
+    return set(load_graph(BLUEPRINT).lean_names())
 
 
 def frontiers(rows: dict[str, dict], articles: set[str]) -> dict[str, frozenset[str]]:
@@ -122,18 +106,6 @@ def frontiers(rows: dict[str, dict], articles: set[str]) -> dict[str, frozenset[
             memo[name] = frozenset(reached)
             active.discard(name)
     return memo
-
-
-def check_targets() -> int:
-    """Whether the generated roadmap names exactly the articles lean-dependencies.json covers."""
-    data = json.loads(OUTPUT.read_text(encoding="utf-8"))
-    covered = set(data["articles"]) | {name for names in data["missing_articles"].values() for name in names}
-    manifest = article_manifest()
-    for name in sorted(manifest - covered)[:20]:
-        print(f"new lean: target: {name}", file=sys.stderr)
-    for name in sorted(covered - manifest)[:20]:
-        print(f"lean: target gone: {name}", file=sys.stderr)
-    return 0 if manifest == covered else 1
 
 
 def mutual_groups(edges: dict[str, set[str]]) -> list[list[str]]:
@@ -179,8 +151,6 @@ def mutual_groups(edges: dict[str, set[str]]) -> list[list[str]]:
 
 
 def main() -> int:
-    if sys.argv[1:] == ["--check-targets"]:
-        return check_targets()
     if len(sys.argv) != 3:
         print(__doc__.strip(), file=sys.stderr)
         return 2
@@ -218,7 +188,8 @@ def main() -> int:
     for group in groups:
         for name in group:
             result[name]["statement"] = [use for use in result[name]["statement"] if use not in group]
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    output = Path(sys.argv[2])
+    output.parent.mkdir(parents=True, exist_ok=True)
     # A target with no compiled row has no module to name its library, so its own name has to.
     missing_by_library = {
         library: [name for name in missing if name.split(".")[0] == library]
@@ -227,16 +198,13 @@ def main() -> int:
     unplaced = [name for name in missing if name.split(".")[0] not in LIBRARIES]
     if unplaced:
         print(f"warning: {len(unplaced)} targets without a compiled row name no library: {unplaced[:5]}", file=sys.stderr)
-    OUTPUT.write_text(
+    output.write_text(
         json.dumps(
             {
-                "source": sys.argv[2],
-                "article_manifest": "blueprint/roadmap lean targets",
                 "missing_articles": missing_by_library,
                 "mutual": groups,
                 "articles": result,
             },
-            indent=1,
             ensure_ascii=False,
             sort_keys=True,
         )
@@ -245,7 +213,7 @@ def main() -> int:
     edges = sum(len(entry["statement"]) + len(entry["proof"]) for entry in result.values())
     print(
         f"{len(rows)} constants, {len(articles)} compiled articles, {len(missing)} without a compiled row, "
-        f"{edges} article edges -> {OUTPUT.relative_to(ROOT)}"
+        f"{edges} article edges -> {output}"
     )
     return 0
 
