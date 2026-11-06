@@ -187,10 +187,13 @@ def lean_facts_for(name: str | None, own: dict | None, index, sorry) -> tuple[st
     return None, None
 
 
-def apply_lean_facts(index, dependencies: dict) -> dict[str, int]:
-    """Write the Lean's facts into the checkout's pages and annotations."""
+def apply_lean_facts(index, dependencies: dict) -> tuple[dict[str, int], list[str]]:
+    """Write the Lean's facts into the checkout's pages and annotations, and name each page whose declaration the
+    Lean no longer has. Such a page loses its link here, so it builds unlinked: a Lean change that renames or
+    deletes a declaration never fails the wiki's build, and `declarations` reports the page for an editor."""
     files = read_annotations()
     counts = {"articles": 0, "unresolved": 0, "edges": 0}
+    unlinked: list[str] = []
     sorry_cache: dict[Path, bool] = {}
 
     def sorry(path: Path) -> bool:
@@ -209,6 +212,9 @@ def apply_lean_facts(index, dependencies: dict) -> dict[str, int]:
             kind, status = lean_facts_for(name, own, index, sorry)
             if kind is None:
                 counts["unresolved"] += 1
+                if name:
+                    annotation.pop("object", None)
+                    unlinked.append(f"{name} ({path.relative_to(wiki.ROADMAP)})")
                 continue
             annotation["kind"] = kind
             if status:
@@ -258,7 +264,7 @@ def apply_lean_facts(index, dependencies: dict) -> dict[str, int]:
             sections.append(("Proof depends on", [link(other) for other in proof]))
         path.write_text(with_sections(path.read_text(), sections))
     write_annotations(files)
-    return counts
+    return counts, unlinked
 
 
 def run_lean_facts(dependency_file: Path) -> int:
@@ -268,9 +274,12 @@ def run_lean_facts(dependency_file: Path) -> int:
     dependencies = json.loads(dependency_file.read_text())["articles"] if dependency_file.is_file() else {}
     if not dependencies:
         print(f"warning: no dependencies in {dependency_file}, so no article lists any", file=sys.stderr)
-    counts = apply_lean_facts(index, dependencies)
-    if counts["unresolved"]:
-        print(f"warning: {counts['unresolved']} articles name no declaration the Lean index or sources hold, "
+    counts, unlinked = apply_lean_facts(index, dependencies)
+    for page in unlinked:
+        print(f"warning: the Lean no longer declares {page}, so the page builds unlinked; "
+              "sync_wiki.py declarations lists it for an editor", file=sys.stderr)
+    if counts["unresolved"] > len(unlinked):
+        print(f"warning: {counts['unresolved'] - len(unlinked)} articles name no declaration the Lean sources hold, "
               "so they get no kind or status", file=sys.stderr)
     print(f"{counts['articles']} articles, {counts['edges']} dependency links")
     return 0

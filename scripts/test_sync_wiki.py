@@ -147,8 +147,9 @@ class LeanFacts(Vault):
             "Ext.lagrange": {"module": "Ext.Groups", "statement": ["Ext.order", "Ext.lagrange"], "proof": ["conjecture", "Ext.order"]},
             "conjecture": {"module": "Ext.Groups", "statement": [], "proof": []},
         }
-        counts = sync.apply_lean_facts(SimpleNamespace(declarations=declarations), dependencies)
+        counts, unlinked = sync.apply_lean_facts(SimpleNamespace(declarations=declarations), dependencies)
         self.assertEqual(counts, {"articles": 5, "unresolved": 0, "edges": 2})
+        self.assertEqual(unlinked, [])
         rows = {sync.subject_path(row).name: row for row in sync.read_annotations()[sync.LINKS / "Algebra.jsonl"]}
         facts = {name: (row.get("kind"), row.get("status")) for name, row in rows.items()}
         self.assertEqual(facts, {
@@ -168,13 +169,15 @@ class LeanFacts(Vault):
         self.assertEqual(conjecture.read_text(), "# Conjecture\n\nOpen.\n\n## Depends on\n\nThis node has no prerequisites.\n")
         self.assertEqual((wiki.ROADMAP / "Algebra" / "README.md").read_text(), "# Algebra\n\n- [Order](order.md)\n")
 
-    def test_an_unknown_name_gets_no_facts(self) -> None:
+    def test_a_declaration_the_lean_dropped_leaves_its_page_unlinked(self) -> None:
+        # A Lean change that renames or deletes a declaration must not fail the wiki's build.
         self.page("Algebra/gone.md", "# Gone\n\nRemoved upstream.\n")
-        self.annotate([self.about("Algebra/gone.md", object=[{"location": {"declaration": "Ext.gone"}}])])
-        counts = sync.apply_lean_facts(SimpleNamespace(declarations={}), {})
+        self.annotate([self.about("Algebra/gone.md", object=[{"location": {"declaration": "Ext.gone"}}], id="af_1")])
+        counts, unlinked = sync.apply_lean_facts(SimpleNamespace(declarations={}), {})
         self.assertEqual(counts["unresolved"], 1)
+        self.assertEqual(unlinked, ["Ext.gone (Algebra/gone.md)"])
         row = sync.read_annotations()[sync.LINKS / "Algebra.jsonl"][0]
-        self.assertNotIn("kind", row)
+        self.assertEqual(row, {"subject": [{"type": "generic", "uri": "../roadmap/Algebra/gone.md"}], "id": "af_1"})
         self.assertEqual((wiki.ROADMAP / "Algebra" / "gone.md").read_text(), "# Gone\n\nRemoved upstream.\n")
 
 
