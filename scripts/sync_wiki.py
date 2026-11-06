@@ -270,8 +270,12 @@ def apply_lean_facts(index, dependencies: dict) -> tuple[dict[str, int], list[st
 def run_lean_facts(dependency_file: Path) -> int:
     from autoform_cli.lean import index_project
 
+    if not dependency_file.is_file():
+        # Without it every page would build with no dependencies, which looks like a site and isn't one.
+        print(f"error: {dependency_file} is missing; the Pages build's edges job writes it", file=sys.stderr)
+        return 1
     index = index_project(wiki.ROOT, exclude_roots=("v1", "Atlas"))
-    dependencies = json.loads(dependency_file.read_text())["articles"] if dependency_file.is_file() else {}
+    dependencies = json.loads(dependency_file.read_text())["articles"]
     if not dependencies:
         print(f"warning: no dependencies in {dependency_file}, so no article lists any", file=sys.stderr)
     counts, unlinked = apply_lean_facts(index, dependencies)
