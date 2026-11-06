@@ -165,8 +165,11 @@ jobs:
         with:
           path: .lake/build
           key: v2-deps-build-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.sha }}
+          # ci.yml saves the same .lake/build from main under its own name, so a
+          # repository's first wiki build can start from it.
           restore-keys: |
             v2-deps-build-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
+            lake-build-${{ runner.os }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
 
       # A module that fails upstream must not cost the rest of the dump: keep
       # building, record the failures, and dump every module that compiled.
@@ -305,20 +308,22 @@ jobs:
           scripts.test_extract_v2_lean_dependencies
           scripts.test_check_blueprint_site_navigation
 
+      # The artifact keeps the edges job's workspace paths, so it unpacks into
+      # the workspace: build/lean-dependencies.json lands where it was written.
       - name: Fetch the edges
         uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: lean-dependencies
-          path: build
 
       # The vault under blueprint/ is committed and holds only what the wiki
       # writes. What follows the Lean, each article's Depends on and Proof
       # depends on lists, its declaration kind and its statement and proof
       # status, is filled in here, in this checkout only.
       - name: Add the Lean-owned parts to the articles
-        run: >-
-          uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
-          python scripts/sync_wiki.py lean-facts build/lean-dependencies.json
+        run: |
+          [ -s build/lean-dependencies.json ] || { echo "::error::The edges job's build/lean-dependencies.json is missing."; exit 1; }
+          uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}" \
+            python scripts/sync_wiki.py lean-facts build/lean-dependencies.json
 
       # Rejects cycles and dangling links, and fails when a node names a Lean
       # declaration that is not in the sources.
