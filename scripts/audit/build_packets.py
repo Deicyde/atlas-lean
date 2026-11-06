@@ -20,6 +20,8 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+from autoform_cli.lean import index_project
+
 V2_DECLARATION = re.compile(
     r"^(?:@\[[^\]]*\]\s*)*(?P<mods>(?:(?:private|protected|noncomputable|partial|unsafe|public|nonrec|scoped)\s+)*)"
     r"(?P<kw>theorem_wanted|def_wanted|theorem|lemma|def|abbrev|instance|structure|class|inductive|opaque)\b"
@@ -28,7 +30,6 @@ V2_DECLARATION = re.compile(
 # namespace, section, mutual and end lines, which open and close the scopes declaration names live in.
 SCOPE = re.compile(r"(?:(?:noncomputable|public|private)\s+|@\[[^\]]*\]\s*)*(namespace|section|mutual|end)\b\s*([^\s-]*)")
 MODIFIERS = re.compile(r"(?:(?:private|protected|noncomputable|partial|unsafe|public|nonrec|scoped)\s*)+")
-SOURCE_LINK = re.compile(r"^- \[(?P<library>MathlibExt|CSLibExt|WantedExt), (?P<module>[\w.]+)\]", re.M)
 LINK = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
 SIGNATURE_LINES = 40
 
@@ -208,6 +209,7 @@ def main() -> int:
         row["path"]: row["article_id"] or (f"lean:{row['lean']}" if row["lean"] and leans[row["lean"]] == 1 else f"path:{row['path']}")
         for row in index
     }
+    declarations = index_project(repo, exclude_roots=("v1", "Atlas")).declarations
     packets, missing = [], []
     for row in map(json.loads, lint_path.read_text().splitlines()):
         article = roadmap / row["path"]
@@ -227,9 +229,9 @@ def main() -> int:
             "depends_on": links(parts.get("Depends on", ""), article, roadmap),
             "proof_depends_on": links(parts.get("Proof depends on", ""), article, roadmap),
         }
-        source = SOURCE_LINK.search(parts.get("Sources", ""))
+        found = declarations.get(row["lean"])
         short = row["lean"].rsplit(".", 1)[-1] if row["lean"] else ""
-        path = repo / Path(*source.group("module").split(".")).with_suffix(".lean") if source else None
+        path = repo / found.path if found else None
         number = locate(path, row["lean"]) if path and path.is_file() and short else None
         if number is None:
             missing.append(row["path"])

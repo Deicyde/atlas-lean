@@ -17,7 +17,7 @@ where an article appears.
 
 The pages are not committed; the Pages build writes them from the Lean sources.
 blueprint/pages.json is, and records each page's path with its Lean name (or,
-without one, its source and title) and article id, so that a regeneration keeps
+without one, its library, module and title) and article id, so that a regeneration keeps
 a declaration's URL and id when the pages around it change. Commit it after
 generating when it changes.
 
@@ -35,6 +35,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from autoform_cli.lean import index_project
+from autoform_cli.markdown import link_targets
 from autoform_cli.status import DEFINITION_DECLARATIONS
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -42,12 +43,13 @@ VAULT = ROOT / "blueprint"
 ROADMAP = VAULT / "roadmap"
 SOURCES = VAULT / "sources"
 PAGE_MAP = VAULT / "pages.json"
-REPOSITORY_URL = "https://github.com/facebookresearch/atlas-lean"
 MAX_CHILDREN = 20  # `autoform audit` reports containers above 24.
 # A `navigation: module` page may hold as many articles as the explorer maps.
 MAX_MODULE_CHILDREN = 120
 # Headings with a meaning on Autoform pages; a module section never takes one.
 RESERVED_HEADINGS = {"contents", "depends on", "mathematical overview", "proof depends on", "sources"}
+# The words around internal ids in a citation that names no work: "concept `jis_sem_…`; source statements `jis_…`".
+ID_WORDS = {"and", "block", "clause", "concept", "from", "frozen", "lines", "required", "source", "sources", "statement", "statements"}
 
 TAXONOMY = ROOT / "scripts" / "taxonomy.json"
 TAXONOMY_SCHEMA = "atlas-wiki-taxonomy/v1"
@@ -59,38 +61,26 @@ UNPLACED = {
     "subfields": [],
 }
 
-# Library -> (description, top-level directory -> subject when the names differ). The taxonomy places
+# Library -> top-level directory -> subject when the names differ. The taxonomy places
 # almost every module; these subjects hold only the modules it does not place yet.
 LIBRARIES = {
-    "MathlibExt": (
-        "Reusable, fully proved extensions to Mathlib.",
-        {"Computability": "TheoryOfComputation", "Data": "ComputerScience", "ModelTheory": "Logic"},
-    ),
-    "CSLibExt": (
-        "Reusable, fully proved computer-science developments built on MathlibExt.",
-        {
-            "Algorithms": "ComputerScience",
-            "AutomatedReasoning": "Logic",
-            "Bioinformatics": "Biology",
-            "Coding": "InformationTheory",
-            "Complexity": "TheoryOfComputation",
-            "Computability": "TheoryOfComputation",
-            "Crypto": "ComputerScience",
-            "Databases": "ComputerScience",
-            "Foundations": "ComputerScience",
-            "Languages": "ComputerScience",
-            "Logics": "Logic",
-            "MachineLearning": "ComputerScience",
-        },
-    ),
-    "PhyslibExt": (
-        "Reusable, fully proved physics developments that extend Physlib.",
-        {"CondensedMatter": "StatisticalMechanics", "StatisticalMechanics": "StatisticalMechanics"},
-    ),
-    "WantedExt": (
-        "Established results whose Lean implementation or proof is deferred.",
-        {"Complexity": "TheoryOfComputation", "ModelTheory": "Logic"},
-    ),
+    "MathlibExt": {"Computability": "TheoryOfComputation", "Data": "ComputerScience", "ModelTheory": "Logic"},
+    "CSLibExt": {
+        "Algorithms": "ComputerScience",
+        "AutomatedReasoning": "Logic",
+        "Bioinformatics": "Biology",
+        "Coding": "InformationTheory",
+        "Complexity": "TheoryOfComputation",
+        "Computability": "TheoryOfComputation",
+        "Crypto": "ComputerScience",
+        "Databases": "ComputerScience",
+        "Foundations": "ComputerScience",
+        "Languages": "ComputerScience",
+        "Logics": "Logic",
+        "MachineLearning": "ComputerScience",
+    },
+    "PhyslibExt": {"CondensedMatter": "StatisticalMechanics", "StatisticalMechanics": "StatisticalMechanics"},
+    "WantedExt": {"Complexity": "TheoryOfComputation", "ModelTheory": "Logic"},
 }
 V2_DECLARATION = re.compile(
     r"^(?:@\[[^\]]*\]\s*)*(?P<mods>(?:(?:private|protected|noncomputable|partial|unsafe|public|nonrec|scoped)\s+)*)"
@@ -125,7 +115,6 @@ class Target:
     statement: bool
     proof: bool
     names: list[str]
-    source: tuple[str, Path] | None = None
     citations: list[str] = field(default_factory=list)
     module: tuple[str, ...] = ()
     # The `# ` heading of the module docstring, if any.
@@ -255,6 +244,14 @@ def placement(module: tuple[str, ...], placements: dict) -> tuple[str, dict] | N
     return None
 
 
+def names_a_work(citation: str) -> bool:
+    """Whether a citation says more than internal ids such as concept `jis_sem_…`, which name no work a reader can find."""
+    if not re.search(r"`[^`]*\bjis_\w+`", citation):
+        return True
+    words = re.findall(r"[A-Za-z]{3,}", re.sub(r"`[^`]*`", " ", citation))
+    return any(word.lower() not in ID_WORDS for word in words)
+
+
 def split_docstring(doc: str) -> tuple[str, list[str]]:
     """Separate the mathematical statement from its citations and Lean-side notes."""
     statement, citations = [], []
@@ -264,7 +261,9 @@ def split_docstring(doc: str) -> tuple[str, list[str]]:
         cite = re.search(r"(?m)^Sources?:\s*", paragraph)
         if cite:
             statement.append(paragraph[: cite.start()].strip())
-            citations.append(" ".join(paragraph[cite.end() :].split()))
+            citation = " ".join(paragraph[cite.end() :].split())
+            if names_a_work(citation):
+                citations.append(citation)
         else:
             statement.append(paragraph.strip())
     text = "\n\n".join(part for part in statement if part)
@@ -340,7 +339,7 @@ def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dic
         if declaration.path.parts[:1] == (library,)
     }
     targets: list[Target] = []
-    summary = {"modules": 0, "public": 0, "documented": 0, "wanted": 0, "instances": 0, "subjects": set()}
+    summary = {"public": 0, "documented": 0, "instances": 0, "subjects": set()}
     named_by_docstring: set[int] = set()
     for path in sorted((ROOT / library).rglob("*.lean")):
         relative = path.relative_to(ROOT)
@@ -351,7 +350,6 @@ def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dic
         module_title = module_heading(text)
         placed = placement(module, taxonomy["placements"])
         labels = section_labels(lines)
-        summary["modules"] += 1
         for number, line in enumerate(lines):
             match = V2_DECLARATION.match(line)
             if not match or "private" in match.group("mods"):
@@ -367,12 +365,10 @@ def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dic
             keyword, short = match.group("kw"), match.group("name").split(".")[-1]
             found = located.get((relative, number + 1))
             if found is None:
-                summary["wanted"] += keyword in WANTED
                 declaration, lean, statement, proof = WANTED.get(keyword, keyword), None, False, False
             elif found.keyword in WANTED:
                 # Stated without a proof. A wanted definition stays unstated,
                 # because Autoform counts a stated definition as defined.
-                summary["wanted"] += 1
                 declaration, lean = WANTED[found.keyword], found.name
                 statement, proof = found.keyword == "theorem_wanted", False
             else:
@@ -386,7 +382,7 @@ def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dic
                 named_by_docstring.add(len(targets))
             # A bold name can wrap; a title must stay on its heading line.
             title = " ".join(bold.group("title").split()).rstrip(".") if bold else humanize(short) or first_words(statement_text)
-            subject = placed[1]["to"].split("/")[0] if placed else LIBRARIES[library][1].get(module[1], module[1])
+            subject = placed[1]["to"].split("/")[0] if placed else LIBRARIES[library].get(module[1], module[1])
             if subject not in taxonomy["subjects"]:
                 raise SystemExit(f"{relative}: no subject for directory {module[1]}")
             summary["subjects"].add(subject)
@@ -407,7 +403,6 @@ def load_library(library: str, index, taxonomy: dict) -> tuple[list[Target], dic
                     statement=statement,
                     proof=proof,
                     names=[lean or short],
-                    source=(f"{library}, {'.'.join(module)}", Path("sources") / "v2" / f"{library}.md"),
                     citations=citations,
                     module=module,
                     module_title=module_title,
@@ -678,48 +673,6 @@ def link_v2(targets: list[Target], dependencies: dict) -> None:
                     seen.add(id(other))
 
 
-def render_library_source(library: str, summary: dict) -> str:
-    lines = [
-        "---",
-        "kind: source",
-        "status: adopted",
-        "---",
-        "",
-        f"# {library}",
-        "",
-        f"{LIBRARIES[library][0]} Source: <{REPOSITORY_URL}/tree/main/{library}>.",
-        "",
-        f"{summary['modules']} modules declare {summary['public']} public declarations. Leaving",
-        f"out {summary['instances']} instances, the {summary['documented']} with a docstring are",
-        "roadmap articles whose statement is that docstring, with its citations moved",
-        "to the article's sources. Theorems are proved and definitions defined unless",
-        "their module contains `sorry`.",
-    ]
-    if summary["wanted"]:
-        lines += [
-            "",
-            f"{summary['wanted']} articles are `theorem_wanted` or `def_wanted` entries: their Lean",
-            "statements exist without proofs. A wanted theorem shows as stated and unproved;",
-            "a wanted definition shows as not stated, because a stated definition counts",
-            "as defined.",
-        ]
-    if summary.get("edges"):
-        lines += [
-            "",
-            f"{summary['edges']} roadmap edges come from the compiled Lean: the articles each",
-            "article's statement or proof reaches, through private helpers and undocumented",
-            "declarations if need be ([`lean-dependencies.json`](lean-dependencies.json)).",
-        ]
-    if summary.get("dependency_missing"):
-        lines += [
-            "",
-            f"{summary['dependency_missing']} roadmap articles have no row in the compiled",
-            "dependency dump (for example a wanted placeholder or a module excluded by a",
-            "compiled-name collision), so no dependency edges are asserted for them.",
-        ]
-    return "\n".join(lines) + "\n"
-
-
 def assign_paths(node: Container, directory: Path, kept: dict[str, Path] | None = None) -> None:
     """Paths for a page's children. Siblings that share a slug are numbered, but a
     declaration that stays in its folder keeps its file name (``kept``, by Lean
@@ -829,7 +782,10 @@ def render_container(node: Container, previous: str | None, extra: str = "") -> 
 
 def render_target(target: Target, previous: str | None) -> str:
     vault_path = target.path.relative_to(VAULT)
-    fields = [("declaration", target.declaration), ("origin", "cited")]
+    fields = [("declaration", target.declaration)]
+    # Autoform reads a cited article as one that links its source; a citation in plain text claims no origin.
+    if any(link_targets(citation) for citation in target.citations):
+        fields.append(("origin", "cited"))
     if target.statement:
         fields.append(("statement", "formalized"))
     if target.proof:
@@ -846,9 +802,8 @@ def render_target(target: Target, previous: str | None) -> str:
         lines += [
             f"- [{link_text(o.title)}]({rel(vault_path, o.path.relative_to(VAULT))})" for o in target.proof_depends
         ]
-    label, page = target.source
-    lines += ["", "## Sources", "", f"- [{link_text(label)}]({rel(vault_path, page)})"]
-    lines += [f"- {citation}" for citation in target.citations]
+    if target.citations:
+        lines += ["", "## Sources", ""] + [f"- {citation}" for citation in target.citations]
     return frontmatter(fields, previous) + "\n".join(lines) + "\n"
 
 
@@ -899,8 +854,8 @@ def regions(taxonomy: dict, subjects: list[str]) -> dict[str, list[str]]:
     return {region: members for region, members in out.items() if members}
 
 
-def page_entry(text: str) -> dict[str, str]:
-    """What a regeneration keeps from a page: its article id, and its Lean name or, without one, its source and title."""
+def page_entry(text: str, label: str | None = None) -> dict[str, str]:
+    """What a regeneration keeps from a page: its article id, and its Lean name or, without one, its label from page_key."""
     header = text.split("---", 2)
     if len(header) != 3 or header[0].strip():
         return {}
@@ -909,18 +864,24 @@ def page_entry(text: str) -> dict[str, str]:
     if article:
         entry["article_id"] = article.group(1)
     lean = re.search(r"(?m)^lean: (\S+)$", header[1])
-    source = re.search(r"(?m)^## Sources\n\n- \[(.*)\]\(", header[2])
-    title = re.search(r"(?m)^# (.*)$", header[2])
     if lean:
         entry["lean"] = lean.group(1)
-    elif source and title:
-        entry["label"] = f"{source.group(1)}\n{title.group(1)}"
+    elif label:
+        entry["label"] = label
     return entry
 
 
-def render_page_map(files: dict[Path, str]) -> str:
-    """blueprint/pages.json: the entry of every generated page that has one, by its path in the roadmap, a line each."""
-    entries = {path.relative_to(ROADMAP).as_posix(): page_entry(text) for path, text in files.items() if path.is_relative_to(ROADMAP)}
+def render_page_map(files: dict[Path, str], labels: dict[Path, str] | None = None) -> str:
+    """blueprint/pages.json: the entry of every generated page that has one, by its path in the roadmap, a line each.
+
+    labels holds the page_key of each page without a Lean name, which the page itself does not show.
+    """
+    labels = labels or {}
+    entries = {
+        path.relative_to(ROADMAP).as_posix(): page_entry(text, labels.get(path))
+        for path, text in files.items()
+        if path.is_relative_to(ROADMAP)
+    }
     lines = [f"{json.dumps(path, ensure_ascii=False)}: {json.dumps(entry, ensure_ascii=False, sort_keys=True)}"
              for path, entry in sorted(entries.items()) if entry]
     return "{\n" + ",\n".join(lines) + "\n}\n"
@@ -943,10 +904,10 @@ def ids_by_lean() -> dict[str, str]:
 
 
 def page_key(target: Target) -> str | None:
-    """How regeneration finds a declaration's current page: its Lean name, or else its source and title."""
+    """How regeneration finds a declaration's current page: its Lean name, or else its library, module and title."""
     if target.lean:
         return target.lean
-    return f"{link_text(target.source[0])}\n{target.title}" if target.source else None
+    return f"{target.book}, {'.'.join(target.module)}\n{target.title}" if target.module else None
 
 
 def pages_by_lean() -> dict[str, Path]:
@@ -1007,10 +968,7 @@ def generate() -> dict[Path, str]:
             if isinstance(node, Target) and lean_counts[node.lean] == 1 and node.lean in known_ids:
                 prior = f"article_id: {known_ids[node.lean]}\n"
             files[node.path] = render(node, prior)
-    for library, (targets, summary) in v2_loaded.items():
-        summary["edges"] = sum(len(target.depends) + len(target.proof_depends) for target in targets)
-        summary["dependency_missing"] = len((dependency_data or {}).get("missing_articles", {}).get(library, ()))
-        files[SOURCES / "v2" / f"{library}.md"] = render_library_source(library, summary)
+    for library, (_, summary) in v2_loaded.items():
         v2_coverage.append(
             (
                 f"v2 / {library}",
@@ -1034,10 +992,8 @@ def generate() -> dict[Path, str]:
     atlas = {"schema": "autoform-atlas/v1", "areas": regions(taxonomy, subjects)}
     files[VAULT / "atlas.json"] = json.dumps(atlas, indent=2, ensure_ascii=False) + "\n"
     files[VAULT / "coverage" / "README.md"] = render_coverage(coverage)
-    sources = ["# ATLAS source catalog", "", "## ATLAS v2", ""]
-    sources += [f"- [{library}](v2/{library}.md)" for library in LIBRARIES]
-    files[SOURCES / "README.md"] = "\n".join(sources) + "\n"
-    files[PAGE_MAP] = render_page_map(files)
+    labels = {node.path: page_key(node) for node in walk(every_v2) if isinstance(node, Target) and not node.lean}
+    files[PAGE_MAP] = render_page_map(files, labels)
     return files
 
 

@@ -20,11 +20,11 @@ def _target(index: int, sections: tuple[str, str, str] = ("", "", ""), module: s
 
 
 @contextlib.contextmanager
-def _committed(folder: str, pages: dict[Path, str]):
+def _committed(folder: str, pages: dict[Path, str], labels: dict[Path, str] | None = None):
     """blueprint/pages.json as generating these pages under folder/roadmap writes it, read back by the generator."""
     roadmap, page_map = Path(folder) / "roadmap", Path(folder) / "pages.json"
     with patch.object(wiki, "ROADMAP", roadmap), patch.object(wiki, "PAGE_MAP", page_map):
-        page_map.write_text(wiki.render_page_map(pages))
+        page_map.write_text(wiki.render_page_map(pages, labels))
         yield
 
 
@@ -344,9 +344,9 @@ This section studies the distances determined by finite point configurations.
 
 
     def test_a_declaration_that_stays_in_its_folder_keeps_its_file_name(self):
-        # first has no Lean name, so it goes by source and title; twin repeats second's Lean name.
+        # first has no Lean name, so it goes by module and title; twin repeats second's Lean name.
         first, second, moved, renamed, twin = _target(0), _target(1), _target(2), _target(3), _target(1)
-        first.lean, first.source = None, ("MathlibExt, MathlibExt.HasseBoundWanted", Path("sources/v2/MathlibExt.md"))
+        first.lean = None
         for target in (first, second, moved, twin):
             target.slug = "hasse-bound"
         renamed.slug = "kraft"
@@ -367,19 +367,17 @@ This section studies the distances determined by finite point configurations.
             with _committed(folder, pages):
                 self.assertEqual(wiki.pages_by_lean(), {"Falconer.result0": page})
 
-    def test_a_page_is_found_again_by_its_lean_name_or_else_its_source_and_title(self):
-        named, unnamed, twin = _target(0), _target(1), _target(2)
+    def test_a_page_is_found_again_by_its_lean_name_or_else_its_module_and_title(self):
+        named, unnamed, twin = (_target(index, module=f"MathlibExt/{module}") for index, module in enumerate("ABC"))
         unnamed.lean = twin.lean = None
         twin.title = unnamed.title
-        for target, module in ((named, "A"), (unnamed, "B"), (twin, "C")):
-            target.source = (f"MathlibExt, MathlibExt.{module}", Path("sources/v2/MathlibExt.md"))
         with tempfile.TemporaryDirectory() as folder:
             roadmap = Path(folder) / "roadmap"
             for target in (named, unnamed, twin):
                 target.path = roadmap / f"Geometry/{target.slug}.md"
             with patch.object(wiki, "VAULT", Path(folder)), patch.object(wiki, "ROADMAP", roadmap):
                 pages = {target.path: wiki.render_target(target, None) for target in (named, unnamed, twin)}
-            with _committed(folder, pages):
+            with _committed(folder, pages, {target.path: wiki.page_key(target) for target in (unnamed, twin)}):
                 self.assertEqual(wiki.pages_by_lean(), {wiki.page_key(target): target.path for target in (named, unnamed, twin)})
 
 if __name__ == "__main__":
