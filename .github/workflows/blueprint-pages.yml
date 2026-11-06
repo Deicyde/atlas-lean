@@ -363,24 +363,18 @@ jobs:
 
       # Writes site-src/: statement boxes, derived statuses, the shared DAG viewer,
       # and permalinks into the Lean code at this exact commit. With the edges
-      # job's .ilean files, when they came and this AUTOFORM_REF's render reads
-      # them, each name in a statement's Lean links exactly what it means.
+      # job's .ilean files, when they came, each name in a statement's Lean
+      # links exactly what it means.
       - name: Render the blueprint
         env:
           ILEANS: ${{ steps.ileans.outcome == 'success' && format('{0}/ileans', runner.temp) || '' }}
-        run: |
-          autoform="git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
-          ileans=()
-          if [ -n "$ILEANS" ]; then
-            case "$(uvx --from "$autoform" autoform render --help)" in
-              *--ileans*) ileans=(--ileans "$ILEANS") ;;
-            esac
-          fi
-          uvx --from "$autoform" autoform render blueprint \
-            --output site-src \
-            --lean-root . \
-            --require-declarations \
-            "${ileans[@]}"
+        run: >-
+          uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
+          autoform render blueprint
+          --output site-src
+          --lean-root .
+          --require-declarations
+          ${ILEANS:+--ileans "$ILEANS"}
 
       - name: Build the Markdown site
         run: >-
