@@ -184,6 +184,9 @@ def declaration(name: str | None, short: str, title: str, text: str, module=("Ex
                        path=wiki.ROADMAP / "Algebra" / "elsewhere" / f"{short}.md")
 
 
+INDEX = SimpleNamespace(declarations={"Ext.old": None})
+
+
 class Declarations(Vault):
     def test_new_declarations_get_pages_beside_their_module(self) -> None:
         self.page("Algebra/groups/README.md", "# Groups\n\nProse.\n\n- [Old](old.md)\n")
@@ -199,7 +202,15 @@ class Declarations(Vault):
             declaration(None, "wanted", "Wanted", "Not in the index."),
             declaration("Other.lone", "lone", "Lone", "A new module.", module=("Other", "Lone")),
         ]
-        report = sync.apply_declarations(targets)
+        undocumented = self.tmp / "Ext" / "Groups.lean"
+        undocumented.parent.mkdir(parents=True, exist_ok=True)
+        undocumented.write_text("theorem kept : True := trivial\n")
+        self.annotate([
+            *sync.read_annotations()[sync.LINKS / "Algebra.jsonl"],
+            self.about("Algebra/groups/kept.md", object=[{"location": {"declaration": "Ext.kept"}}]),
+        ])
+        index = SimpleNamespace(declarations={"Ext.old": None, "Ext.new": None, "Ext.kept": None})
+        report = sync.apply_declarations(targets, index)
         self.assertEqual(report["added"], [
             "Ext.Groups:wanted -> Algebra/groups/wanted.md",
             "Ext.new -> Algebra/groups/new.md",
@@ -223,9 +234,9 @@ class Declarations(Vault):
         self.page("Algebra/groups/README.md", "# Groups\n\n- [Old](old.md)\n")
         self.page("Algebra/groups/old.md", "# Old\n\nWiki text.\n")
         self.annotate([self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.old"}}])])
-        self.assertEqual(sync.apply_declarations([declaration("Ext.old", "old", "Old", "First.")])["changed"], [])
-        self.assertEqual(sync.apply_declarations([declaration("Ext.old", "old", "Old", "First.")])["changed"], [])
-        changed = sync.apply_declarations([declaration("Ext.old", "old", "Old", "Second.")])["changed"]
+        self.assertEqual(sync.apply_declarations([declaration("Ext.old", "old", "Old", "First.")], INDEX)["changed"], [])
+        self.assertEqual(sync.apply_declarations([declaration("Ext.old", "old", "Old", "First.")], INDEX)["changed"], [])
+        changed = sync.apply_declarations([declaration("Ext.old", "old", "Old", "Second.")], INDEX)["changed"]
         self.assertEqual(changed, ["Ext.old (Algebra/groups/old.md)"])
         self.assertEqual((wiki.ROADMAP / "Algebra" / "groups" / "old.md").read_text(), "# Old\n\nWiki text.\n")
 

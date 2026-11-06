@@ -924,15 +924,15 @@ def pages_by_lean() -> dict[str, Path]:
     return {key: next(iter(paths)) for key, paths in found.items() if len(paths) == 1}
 
 
-def generate(titles: dict | None = None, dependency_file: Path | None = None, targets: list | None = None) -> dict[Path, str]:
+def generate(titles: dict | None = None, dependency_file: Path | None = None, rendered: list | None = None, index=None) -> dict[Path, str]:
     """Every page, by path, with blueprint/pages.json; ``titles`` as load_library takes them, and the Lean
     dependency edges from ``dependency_file`` (default sources/v2/lean-dependencies.json) when it exists.
-    Every article's Target is added to ``targets`` when given."""
+    Every article's Target is added to ``rendered`` when given; ``index`` is the project's, when already built."""
     # The archived v1 release and the standalone code under Atlas/ are not part of
     # the wiki, and both declare many v2 names again. Autoform selects neither
     # declaration of a name declared twice, so indexing them would leave those
     # articles unlinked.
-    index = index_project(ROOT, exclude_roots=("v1", "Atlas"))
+    index = index or index_project(ROOT, exclude_roots=("v1", "Atlas"))
     files: dict[Path, str] = {}
     # A page keeps the article id it had at its path, which is all the renderers take from the page before.
     ids_at = {path: entry["article_id"] for path, entry in committed_pages().items() if "article_id" in entry}
@@ -975,8 +975,8 @@ def generate(titles: dict | None = None, dependency_file: Path | None = None, ta
             if isinstance(node, Target) and lean_counts[node.lean] == 1 and node.lean in known_ids:
                 prior = f"article_id: {known_ids[node.lean]}\n"
             files[node.path] = render(node, prior)
-            if targets is not None and render is render_target:
-                targets.append(node)
+            if rendered is not None and render is render_target:
+                rendered.append(node)
     for library, (_, summary) in v2_loaded.items():
         v2_coverage.append(
             (

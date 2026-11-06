@@ -131,6 +131,8 @@ def seed(titles: dict, dependency_file: Path) -> tuple[dict[Path, str], dict[Pat
             continue
         fields, body = split_frontmatter(text)
         target = by_path.get(path)
+        if "declaration" in fields and target is None:
+            raise SystemExit(f"{path}: generate_wiki rendered an article it did not hand back")
         pages[path] = without_sections(body, LEAN_SECTIONS) if target else body
         annotation: dict = {"subject": [{"type": "generic", "uri": "../" + path.relative_to(wiki.VAULT).as_posix()}]}
         if "lean" in fields:
@@ -306,7 +308,19 @@ def add_to_listing(readme: Path, line: str) -> None:
     readme.write_text("\n".join(lines) + "\n")
 
 
-def apply_declarations(targets: list) -> dict[str, list[str]]:
+def declared(key: str, index) -> bool:
+    """Whether the Lean still declares a page's declaration, documented or not."""
+    if ":" not in key:
+        return key in index.declarations
+    module, name = key.rsplit(":", 1)
+    source = wiki.ROOT / Path(*module.split(".")).with_suffix(".lean")
+    return source.is_file() and any(
+        (match := wiki.V2_DECLARATION.match(line)) and match.group("name").split(".")[-1] == name
+        for line in source.read_text().splitlines()
+    )
+
+
+def apply_declarations(targets: list, index) -> dict[str, list[str]]:
     """Pages for new declarations, and the report; see the module docstring."""
     files = read_annotations()
     pages = {annotation_key(a): subject_path(a) for rows in files.values() for a in rows if annotation_key(a)}
@@ -348,7 +362,10 @@ def apply_declarations(targets: list) -> dict[str, list[str]]:
         pages[key] = target.path
         folders[target.module][folder] += 1
         report["added"].append(f"{key} -> {target.path.relative_to(wiki.ROADMAP)}")
-    report["gone"] = sorted(f"{key} ({path.relative_to(wiki.ROADMAP)})" for key, path in pages.items() if key not in current)
+    # A declaration upstream never documented keeps its page; only one the Lean no longer declares is gone.
+    report["gone"] = sorted(
+        f"{key} ({path.relative_to(wiki.ROADMAP)})" for key, path in pages.items() if key not in current and not declared(key, index)
+    )
     before = json.loads(STATE.read_text())["docstrings"] if STATE.is_file() else None
     digests = {key: digest(target.description) for key, target in current.items()}
     if before is not None:
@@ -363,9 +380,12 @@ def apply_declarations(targets: list) -> dict[str, list[str]]:
 
 
 def run_declarations() -> int:
+    from autoform_cli.lean import index_project
+
+    index = index_project(wiki.ROOT, exclude_roots=("v1", "Atlas"))
     targets: list = []
-    wiki.generate(None, None, targets)
-    report = apply_declarations(targets)
+    wiki.generate(None, None, targets, index)
+    report = apply_declarations(targets, index)
     for kind, title in (("added", "New pages, taken from docstrings"), ("gone", "Pages whose declaration is gone"),
                         ("changed", "Pages whose declaration's docstring changed")):
         print(f"{title}: {len(report[kind])}")
