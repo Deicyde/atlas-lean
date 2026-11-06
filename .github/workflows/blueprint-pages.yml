@@ -266,6 +266,19 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
+      # The build's .ilean files record which declaration each name in the
+      # Lean sources means, so render can link each name in a statement's Lean
+      # to exactly that one. A failure here fails nothing: the build job then
+      # links names as before.
+      - name: Keep the build's name references for the build job
+        continue-on-error: true
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: autoform-ileans
+          path: .lake/build/lib/lean/**/*.ilean
+          include-hidden-files: true
+          retention-days: 1
+
   build:
     # ci.yml has a job named build too, and required checks are matched by name.
     name: build the wiki
@@ -315,6 +328,14 @@ jobs:
         with:
           name: lean-dependencies
 
+      - name: Fetch the build's name references
+        id: ileans
+        continue-on-error: true
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: autoform-ileans
+          path: ${{ runner.temp }}/ileans
+
       # The vault under blueprint/ is committed and holds only what the wiki
       # writes. What follows the Lean, each article's Depends on and Proof
       # depends on lists, its declaration kind and its statement and proof
@@ -341,14 +362,25 @@ jobs:
           autoform audit blueprint --lean-root .
 
       # Writes site-src/: statement boxes, derived statuses, the shared DAG viewer,
-      # and permalinks into the Lean code at this exact commit.
+      # and permalinks into the Lean code at this exact commit. With the edges
+      # job's .ilean files, when they came and this AUTOFORM_REF's render reads
+      # them, each name in a statement's Lean links exactly what it means.
       - name: Render the blueprint
-        run: >-
-          uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
-          autoform render blueprint
-          --output site-src
-          --lean-root .
-          --require-declarations
+        env:
+          ILEANS: ${{ steps.ileans.outcome == 'success' && format('{0}/ileans', runner.temp) || '' }}
+        run: |
+          autoform="git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
+          ileans=()
+          if [ -n "$ILEANS" ]; then
+            case "$(uvx --from "$autoform" autoform render --help)" in
+              *--ileans*) ileans=(--ileans "$ILEANS") ;;
+            esac
+          fi
+          uvx --from "$autoform" autoform render blueprint \
+            --output site-src \
+            --lean-root . \
+            --require-declarations \
+            "${ileans[@]}"
 
       - name: Build the Markdown site
         run: >-
