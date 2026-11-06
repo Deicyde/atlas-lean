@@ -3,6 +3,7 @@
 
     python scripts/sync_wiki.py import TITLES.jsonl DEPENDENCIES.json   seed blueprint/ once from the Lean docstrings
     python scripts/sync_wiki.py lean-facts DEPENDENCIES.json            the Lean's facts, at build; never committed
+    python scripts/sync_wiki.py declarations                            new declarations' pages, after an upstream merge
 
 The wiki owns every page's text: titles, statements, sources, prose and the page
 tree under blueprint/roadmap/. Each article's annotation in blueprint/links/
@@ -10,6 +11,12 @@ tree under blueprint/roadmap/. Each article's annotation in blueprint/links/
 article id and origin. The Lean owns what lean-facts adds on the build's checkout:
 an article's `## Depends on` and `## Proof depends on`, from the dependency dump,
 and its annotation's kind and status, from the Lean sources.
+
+declarations gives each declaration with a docstring and no page a page from its
+docstring, beside its module's other pages and listed on their page, and marks it
+as taken from the docstring. It lists pages whose declaration is gone and
+docstrings that changed since the last run (scripts/wiki-sync.json keeps their
+digests), and changes no page that exists. Its first run records the digests only.
 
 import runs once, on a tree whose Lean still holds the wiki's English. TITLES.jsonl
 holds checked titles, one {"file", "name", "opening", "title"} per line: a
@@ -22,10 +29,11 @@ Run it with a Python that has Autoform installed (see blueprint-pages.yml).
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 if __package__:
@@ -38,6 +46,7 @@ NAMESPACE = "org.autoform"
 # Where an article with no Lean name in the index keeps its module and name, for lean-facts.
 OWN = "org.atlas-wiki"
 DEFAULTS = {"object": {"type": "lean", "uri": "../.."}}
+STATE = wiki.ROOT / "scripts" / "wiki-sync.json"
 LEAN_SECTIONS = ("Depends on", "Proof depends on")
 FRONTMATTER = re.compile(r"\A---\n(.*?)\n---\n\n?", re.S)
 SECTION = re.compile(r"(?m)^## (.+)$")
@@ -52,15 +61,11 @@ def split_frontmatter(text: str) -> tuple[dict[str, str], str]:
 
 
 def without_sections(body: str, names: tuple[str, ...]) -> str:
-    """The body without the `## ` sections named, each running to the next `## ` heading."""
-    kept, skipping = [], False
-    for line in body.split("\n"):
-        heading = SECTION.match(line)
-        if heading:
-            skipping = heading.group(1).strip() in names
-        if not skipping:
-            kept.append(line)
-    return re.sub(r"\n{3,}", "\n\n", "\n".join(kept)).rstrip("\n") + "\n"
+    """The body without the `## ` sections named, each running to the next `## ` heading; the rest stays as written."""
+    starts = [match.start() for match in SECTION.finditer(body)]
+    pieces = [body[start:end] for start, end in zip([0, *starts], [*starts, len(body)])]
+    kept = [piece for piece in pieces if not ((heading := SECTION.match(piece)) and heading.group(1).strip() in names)]
+    return "".join(kept).rstrip("\n") + "\n"
 
 
 def with_sections(body: str, sections: list[tuple[str, list[str]]]) -> str:
@@ -269,11 +274,113 @@ def run_lean_facts(dependency_file: Path) -> int:
     return 0
 
 
+def declaration_key(target) -> str:
+    """How the sync finds a declaration's page: its Lean name, or its module and name when the index can't see it."""
+    return target.lean or f"{'.'.join(target.module)}:{target.names[0]}"
+
+
+def annotation_key(annotation: dict) -> str | None:
+    name = lean_name(annotation)
+    if name:
+        return name
+    own = annotation.get("extensions", {}).get(OWN)
+    return f"{own['module']}:{own['name']}" if own else None
+
+
+def digest(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
+
+
+def page_text(target) -> tuple[str, dict[str, str]]:
+    """A page from a declaration's docstring, as import wrote one, and its frontmatter facts."""
+    target.depends, target.proof_depends = [], []
+    fields, body = split_frontmatter(wiki.render_target(target, None))
+    return without_sections(body, LEAN_SECTIONS), fields
+
+
+def add_to_listing(readme: Path, line: str) -> None:
+    """Add a link line after the page's last list item, or at its end."""
+    lines = readme.read_text().rstrip("\n").split("\n")
+    last = max((i for i, row in enumerate(lines) if row.startswith("- [")), default=len(lines) - 1)
+    lines.insert(last + 1, line)
+    readme.write_text("\n".join(lines) + "\n")
+
+
+def apply_declarations(targets: list) -> dict[str, list[str]]:
+    """Pages for new declarations, and the report; see the module docstring."""
+    files = read_annotations()
+    pages = {annotation_key(a): subject_path(a) for rows in files.values() for a in rows if annotation_key(a)}
+    current = {declaration_key(target): target for target in targets}
+    report: dict[str, list[str]] = {"added": [], "gone": [], "changed": []}
+    folders: dict[tuple[str, ...], Counter] = defaultdict(Counter)
+    for key, target in current.items():
+        if key in pages:
+            folders[target.module][pages[key].parent] += 1
+    for key, target in sorted(current.items()):
+        if key in pages:
+            continue
+        # Beside the module's pages, else in the deepest existing folder of the generated path.
+        if folders[target.module]:
+            folder = folders[target.module].most_common(1)[0][0]
+        else:
+            folder = target.path.parent
+            while not (folder / "README.md").is_file() and folder != wiki.ROADMAP:
+                folder = folder.parent
+        name, number = target.slug, 1
+        while (folder / f"{name}.md").exists():
+            number += 1
+            name = f"{target.slug}-{number}"
+        target.path = folder / f"{name}.md"
+        text, fields = page_text(target)
+        target.path.write_text(text)
+        if (folder / "README.md").is_file():
+            add_to_listing(folder / "README.md", f"- [{wiki.link_text(target.title)}]({target.path.name})")
+        annotation: dict = {"subject": [{"type": "generic", "uri": "../" + target.path.relative_to(wiki.VAULT).as_posix()}]}
+        if target.lean:
+            annotation["object"] = [{"location": {"declaration": target.lean}}]
+        extensions: dict = {OWN: {"from": "docstring"}}
+        if "origin" in fields:
+            extensions[NAMESPACE] = {"origin": fields["origin"]}
+        if not target.lean:
+            extensions[OWN].update({"module": ".".join(target.module), "name": target.names[0]})
+        annotation["extensions"] = extensions
+        files.setdefault(links_file(target.path), []).append(annotation)
+        pages[key] = target.path
+        folders[target.module][folder] += 1
+        report["added"].append(f"{key} -> {target.path.relative_to(wiki.ROADMAP)}")
+    report["gone"] = sorted(f"{key} ({path.relative_to(wiki.ROADMAP)})" for key, path in pages.items() if key not in current)
+    before = json.loads(STATE.read_text())["docstrings"] if STATE.is_file() else None
+    digests = {key: digest(target.description) for key, target in current.items()}
+    if before is not None:
+        report["changed"] = sorted(
+            f"{key} ({pages[key].relative_to(wiki.ROADMAP)})"
+            for key, value in digests.items()
+            if key in before and before[key] != value and key in pages
+        )
+    STATE.write_text(json.dumps({"docstrings": dict(sorted(digests.items()))}, indent=0, ensure_ascii=False) + "\n")
+    write_annotations(files)
+    return report
+
+
+def run_declarations() -> int:
+    targets: list = []
+    wiki.generate(None, None, targets)
+    report = apply_declarations(targets)
+    for kind, title in (("added", "New pages, taken from docstrings"), ("gone", "Pages whose declaration is gone"),
+                        ("changed", "Pages whose declaration's docstring changed")):
+        print(f"{title}: {len(report[kind])}")
+        for row in report[kind]:
+            print(f"  {row}")
+    return 0
+
+
 def main(argv: list[str]) -> int:
     if len(argv) == 3 and argv[0] == "import":
         return run_import(Path(argv[1]), Path(argv[2]))
     if len(argv) == 2 and argv[0] == "lean-facts":
         return run_lean_facts(Path(argv[1]))
+    if argv == ["declarations"]:
+        return run_declarations()
     print(__doc__, file=sys.stderr)
     return 2
 

@@ -18,6 +18,11 @@ class Sections(unittest.TestCase):
         body = "# T\n\nStatement.\n\n## Depends on\n\n- [A](a.md)\n\n## Proof depends on\n\n- [B](b.md)\n\n## Sources\n\n- Book.\n"
         self.assertEqual(sync.without_sections(body, sync.LEAN_SECTIONS), "# T\n\nStatement.\n\n## Sources\n\n- Book.\n")
 
+    def test_the_statement_keeps_its_blank_lines(self) -> None:
+        # Two display formulas in a row are written with two blank lines between them.
+        body = "# T\n\n$$a$$\n\n\n\n$$b$$\n\n## Depends on\n\n- [A](a.md)\n"
+        self.assertEqual(sync.without_sections(body, sync.LEAN_SECTIONS), "# T\n\n$$a$$\n\n\n\n$$b$$\n")
+
     def test_sections_go_before_sources(self) -> None:
         body = "# T\n\nStatement.\n\n## Sources\n\n- Book.\n"
         self.assertEqual(
@@ -48,10 +53,18 @@ class Vault(unittest.TestCase):
             patch.object(wiki, "ROADMAP", vault / "roadmap"),
             patch.object(wiki, "PAGE_MAP", vault / "pages.json"),
             patch.object(sync, "LINKS", vault / "links"),
+            patch.object(sync, "STATE", self.tmp / "wiki-sync.json"),
         ]
         for one in patches:
             one.start()
             self.addCleanup(one.stop)
+
+    def annotate(self, rows: list[dict]) -> None:
+        sync.LINKS.mkdir(parents=True, exist_ok=True)
+        sync.write_annotations({sync.LINKS / "Algebra.jsonl": rows})
+
+    def about(self, relative: str, **fields) -> dict:
+        return {"subject": [{"type": "generic", "uri": f"../roadmap/{relative}"}], **fields}
 
     def page(self, relative: str, text: str) -> Path:
         path = wiki.ROADMAP / relative
@@ -104,13 +117,6 @@ class Seed(Vault):
 
 
 class LeanFacts(Vault):
-    def annotate(self, rows: list[dict]) -> None:
-        sync.LINKS.mkdir(parents=True, exist_ok=True)
-        sync.write_annotations({sync.LINKS / "Algebra.jsonl": rows})
-
-    def about(self, relative: str, **fields) -> dict:
-        return {"subject": [{"type": "generic", "uri": f"../roadmap/{relative}"}], **fields}
-
     def test_kinds_statuses_and_dependencies(self) -> None:
         source = self.tmp / "Ext" / "Groups.lean"
         source.parent.mkdir(parents=True)
@@ -170,6 +176,58 @@ class LeanFacts(Vault):
         row = sync.read_annotations()[sync.LINKS / "Algebra.jsonl"][0]
         self.assertNotIn("kind", row)
         self.assertEqual((wiki.ROADMAP / "Algebra" / "gone.md").read_text(), "# Gone\n\nRemoved upstream.\n")
+
+
+def declaration(name: str | None, short: str, title: str, text: str, module=("Ext", "Groups")) -> wiki.Target:
+    return wiki.Target(book="Ext", idx=0, title=title, slug=wiki.slugify(short), location="Algebra", description=text,
+                       declaration="theorem", lean=name, statement=True, proof=True, names=[name or short], module=module,
+                       path=wiki.ROADMAP / "Algebra" / "elsewhere" / f"{short}.md")
+
+
+class Declarations(Vault):
+    def test_new_declarations_get_pages_beside_their_module(self) -> None:
+        self.page("Algebra/groups/README.md", "# Groups\n\nProse.\n\n- [Old](old.md)\n")
+        old = self.page("Algebra/groups/old.md", "# Old, as the wiki wrote it\n\nEdited text.\n")
+        self.page("Algebra/README.md", "# Algebra\n\n- [Groups](groups/README.md)\n")
+        self.annotate([
+            self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.old"}}]),
+            self.about("Algebra/groups/gone.md", object=[{"location": {"declaration": "Ext.gone"}}]),
+        ])
+        targets = [
+            declaration("Ext.old", "old", "Old", "Upstream text."),
+            declaration("Ext.new", "new", "New result", "A new statement."),
+            declaration(None, "wanted", "Wanted", "Not in the index."),
+            declaration("Other.lone", "lone", "Lone", "A new module.", module=("Other", "Lone")),
+        ]
+        report = sync.apply_declarations(targets)
+        self.assertEqual(report["added"], [
+            "Ext.Groups:wanted -> Algebra/groups/wanted.md",
+            "Ext.new -> Algebra/groups/new.md",
+            "Other.lone -> Algebra/lone.md",
+        ])
+        self.assertEqual(report["gone"], ["Ext.gone (Algebra/groups/gone.md)"])
+        self.assertEqual(report["changed"], [])
+        self.assertEqual(old.read_text(), "# Old, as the wiki wrote it\n\nEdited text.\n")
+        self.assertEqual((wiki.ROADMAP / "Algebra" / "groups" / "new.md").read_text(), "# New result\n\nA new statement.\n")
+        self.assertEqual((wiki.ROADMAP / "Algebra" / "groups" / "README.md").read_text(),
+                         "# Groups\n\nProse.\n\n- [Old](old.md)\n- [Wanted](wanted.md)\n- [New result](new.md)\n")
+        self.assertEqual((wiki.ROADMAP / "Algebra" / "README.md").read_text(),
+                         "# Algebra\n\n- [Groups](groups/README.md)\n- [Lone](lone.md)\n")
+        rows = {sync.subject_path(row).name: row for row in sync.read_annotations()[sync.LINKS / "Algebra.jsonl"]}
+        self.assertEqual(rows["new.md"]["object"], [{"location": {"declaration": "Ext.new"}}])
+        self.assertEqual(rows["new.md"]["extensions"], {"org.atlas-wiki": {"from": "docstring"}})
+        self.assertEqual(rows["wanted.md"]["extensions"],
+                         {"org.atlas-wiki": {"from": "docstring", "module": "Ext.Groups", "name": "wanted"}})
+
+    def test_a_docstring_edit_is_reported_from_the_second_run(self) -> None:
+        self.page("Algebra/groups/README.md", "# Groups\n\n- [Old](old.md)\n")
+        self.page("Algebra/groups/old.md", "# Old\n\nWiki text.\n")
+        self.annotate([self.about("Algebra/groups/old.md", object=[{"location": {"declaration": "Ext.old"}}])])
+        self.assertEqual(sync.apply_declarations([declaration("Ext.old", "old", "Old", "First.")])["changed"], [])
+        self.assertEqual(sync.apply_declarations([declaration("Ext.old", "old", "Old", "First.")])["changed"], [])
+        changed = sync.apply_declarations([declaration("Ext.old", "old", "Old", "Second.")])["changed"]
+        self.assertEqual(changed, ["Ext.old (Algebra/groups/old.md)"])
+        self.assertEqual((wiki.ROADMAP / "Algebra" / "groups" / "old.md").read_text(), "# Old\n\nWiki text.\n")
 
 
 class Titles(unittest.TestCase):
