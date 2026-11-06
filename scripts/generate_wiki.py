@@ -966,8 +966,6 @@ def generate(titles: dict | None = None, dependency_file: Path | None = None, ta
         assign_paths(tree, ROADMAP / subject, kept)
         trees.append(tree)
     every_v2 = Container("v2", "v2", trees)
-    if targets is not None:
-        targets.extend(node for node in walk(every_v2) if isinstance(node, Target))
     lean_counts = Counter(node.lean for node in walk(every_v2) if isinstance(node, Target) and node.lean)
     for node in walk(every_v2):
         if node is not every_v2:
@@ -977,6 +975,8 @@ def generate(titles: dict | None = None, dependency_file: Path | None = None, ta
             if isinstance(node, Target) and lean_counts[node.lean] == 1 and node.lean in known_ids:
                 prior = f"article_id: {known_ids[node.lean]}\n"
             files[node.path] = render(node, prior)
+            if targets is not None and render is render_target:
+                targets.append(node)
     for library, (_, summary) in v2_loaded.items():
         v2_coverage.append(
             (
