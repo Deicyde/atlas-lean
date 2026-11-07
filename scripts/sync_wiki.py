@@ -33,6 +33,7 @@ import hashlib
 import json
 import re
 import sys
+import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -50,6 +51,8 @@ STATE = wiki.ROOT / "scripts" / "wiki-sync.json"
 LEAN_SECTIONS = ("Depends on", "Proof depends on")
 FRONTMATTER = re.compile(r"\A---\n(.*?)\n---\n\n?", re.S)
 SECTION = re.compile(r"(?m)^## (.+)$")
+# A bold run opening a body, and a stop just after it: "**Title.**", "**Title**." or "**Title**:".
+BOLD_LEAD = re.compile(r"\*\*(?P<lead>[^*\n]+)\*\*(?P<stop>[.:]?)")
 
 
 def split_frontmatter(text: str) -> tuple[dict[str, str], str]:
@@ -66,6 +69,35 @@ def without_sections(body: str, names: tuple[str, ...]) -> str:
     pieces = [body[start:end] for start, end in zip([0, *starts], [*starts, len(body)])]
     kept = [piece for piece in pieces if not ((heading := SECTION.match(piece)) and heading.group(1).strip() in names)]
     return "".join(kept).rstrip("\n") + "\n"
+
+
+def plain_title(text: str) -> str:
+    """A title as compared with another: bracket style, spacing, case and a closing stop aside."""
+    text = unicodedata.normalize("NFC", text).translate(str.maketrans("[]", "()"))
+    return " ".join(text.split()).rstrip(".:").casefold()
+
+
+def without_title_lead(title: str, body: str) -> str:
+    """*body* without the bold run it opens with when that restates *title* and ends a sentence or a label, as
+    most docstrings open ("**Title.** The statement", "**Title**: the statement"), since the heading already says
+    it; else *body* as written. What follows a label starts its sentence, so it gets a capital."""
+    match = BOLD_LEAD.match(body)
+    if not match or plain_title(match.group("lead")) != plain_title(title):
+        return body
+    lead = match.group("lead").rstrip()
+    stop = lead[-1] if lead.endswith((".", ":")) else match.group("stop")
+    rest = body[match.end():]
+    # A run the sentence goes on from ("**Title** is ..."), or one with nothing after it before a section.
+    if not stop and rest[:1] not in ("", "\n"):
+        return body
+    rest = rest.lstrip(" \t\n")
+    if not rest or rest.startswith("## "):
+        return body
+    if rest[0].islower():
+        if stop != ":":
+            return body
+        rest = rest[0].upper() + rest[1:]
+    return rest
 
 
 def with_sections(body: str, sections: list[tuple[str, list[str]]]) -> str:
@@ -310,7 +342,8 @@ def page_text(target) -> tuple[str, dict[str, str]]:
     """A page from a declaration's docstring, as import wrote one, and its frontmatter facts."""
     target.depends, target.proof_depends = [], []
     fields, body = split_frontmatter(wiki.render_target(target, None))
-    return without_sections(body, LEAN_SECTIONS), fields
+    heading, _, rest = body.partition("\n\n")
+    return without_sections(f"{heading}\n\n{without_title_lead(target.title, rest)}", LEAN_SECTIONS), fields
 
 
 def add_to_listing(readme: Path, line: str) -> None:

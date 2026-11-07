@@ -41,6 +41,22 @@ class Sections(unittest.TestCase):
         self.assertEqual(sync.with_sections(once, [("Depends on", ["- [A](a.md)"])]), once)
 
 
+class TitleLead(unittest.TestCase):
+    def test_a_bold_restatement_of_the_title_goes(self) -> None:
+        for body in ("**Hasse bound.** The bound holds.\n", "**Hasse bound**. The bound holds.\n",
+                     "**Hasse bound**\nThe bound holds.\n", "**hasse  bound:** The bound holds.\n"):
+            self.assertEqual(sync.without_title_lead("Hasse bound", body), "The bound holds.\n", body)
+        self.assertEqual(sync.without_title_lead("The map ℤ(∞)", "**The map ℤ[∞].** For a set.\n"), "For a set.\n")
+        for body in ("**Hasse bound**: the bound holds.\n", "**Hasse bound:** the bound holds.\n"):
+            self.assertEqual(sync.without_title_lead("Hasse bound", body), "The bound holds.\n", body)
+
+    def test_anything_else_stays_as_written(self) -> None:
+        for title, body in (("Hasse bound", "**Hasse bound** is a bound.\n"), ("Hasse bound", "**Weil bound.** It holds.\n"),
+                            ("Hasse bound", "**Hasse bound.** and more.\n"), ("Hasse bound", "**Hasse bound.**\n\n## Sources\n"),
+                            ("Hasse bound", "The bound holds.\n")):
+            self.assertEqual(sync.without_title_lead(title, body), body, body)
+
+
 class Vault(unittest.TestCase):
     """A temporary blueprint/ the module's paths point into."""
 
@@ -240,6 +256,13 @@ class Declarations(Vault):
         index = SimpleNamespace(declarations={"Ext.old": None, "Ext.index": None})
         targets = [declaration("Ext.old", "old", "Old", "Old."), declaration("Ext.index", "index", "Index", "An index.")]
         self.assertEqual(sync.apply_declarations(targets, index)["added"], ["Ext.index -> Algebra/groups/index-2.md"])
+
+    def test_a_new_page_drops_the_bold_title_its_docstring_opens_with(self) -> None:
+        self.page("Algebra/README.md", "# Algebra\n")
+        sync.LINKS.mkdir(parents=True)
+        sync.apply_declarations([declaration("Ext.new", "new", "New result", "**New result.** A new statement.")],
+                                SimpleNamespace(declarations={"Ext.new": None}))
+        self.assertEqual((wiki.ROADMAP / "Algebra" / "new.md").read_text(), "# New result\n\nA new statement.\n")
 
     def test_a_docstring_edit_is_reported_from_the_second_run(self) -> None:
         self.page("Algebra/groups/README.md", "# Groups\n\n- [Old](old.md)\n")
