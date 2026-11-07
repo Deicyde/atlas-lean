@@ -1,6 +1,6 @@
 # Factor identity for Wallis-type prime products
 
-**Factor identity for Wallis-type prime products.** For every odd prime $p$,
+For every odd prime $p$,
 
 $$\frac{p - \chi_4(p)}{p + \chi_4(p)} = \frac{(1 - \chi_4(p)/p)^2}{1 - 1/p^2},$$
 

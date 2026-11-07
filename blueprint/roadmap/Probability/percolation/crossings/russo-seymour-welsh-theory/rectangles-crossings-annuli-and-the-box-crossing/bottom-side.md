@@ -1,3 +1,3 @@
 # Bottom side of a general lattice rectangle
 
-**Bottom side of a general lattice rectangle.** The bottom side `[a, b] × {c}` of `rect a b c d`.
+The bottom side `[a, b] × {c}` of `rect a b c d`.

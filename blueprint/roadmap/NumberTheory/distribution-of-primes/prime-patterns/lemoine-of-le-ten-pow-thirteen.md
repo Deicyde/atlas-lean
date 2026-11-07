@@ -1,6 +1,6 @@
 # Lemoine's conjecture up to $10^{13}$
 
-**Lemoine's conjecture up to $10^{13}$.** Every odd natural number $n$ with
+Every odd natural number $n$ with
 $5 < n \le 10^{13}$ can be written as $n = p + 2q$ with $p$ and $q$ prime.
 
 ## Sources

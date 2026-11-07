@@ -1,6 +1,6 @@
 # Fibonacci complement numeration
 
-**Fibonacci complement numeration.** Let $\varphi$ be the Fibonacci substitution on
+Let $\varphi$ be the Fibonacci substitution on
 $\{0, 1\}$, given by $\varphi(0) = 01$ and $\varphi(1) = 0$, and let
 $\gamma : \mathbb{Z} \to \{0, 1\}$ be a two-sided periodic point of $\varphi$ with period $2$
 such that $\gamma_{-1} = 1$ and $\gamma_0 = 0$. Then for every integer $n$ and every finite

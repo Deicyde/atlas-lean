@@ -1,6 +1,6 @@
 # $k$-regular sequence
 
-**$k$-regular sequence.** Let $k$ be a natural number. An integer sequence
+Let $k$ be a natural number. An integer sequence
 $f : \mathbb{N} \to \mathbb{Z}$ is $k$-regular, in the sense of Allouche and Shallit, if
 $k \ge 2$ and the $\mathbb{Z}$-submodule of the module of all integer sequences spanned by the
 $k$-kernel of $f$ is finitely generated.

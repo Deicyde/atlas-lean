@@ -1,6 +1,6 @@
 # BQP
 
-**BQP.** The class BQP of bounded-error quantum polynomial-time decision problems consists
+The class BQP of bounded-error quantum polynomial-time decision problems consists
 of the decision problems $L$ for which there are polynomials $a$ and $q$ with natural number
 coefficients and a polynomial-time computable map sending each bitstring $x$ to a list of
 2-local quantum gates such that, for every bitstring $x$, with $n = |x|$ and $N = n + a(n)$:

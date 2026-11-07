@@ -1,6 +1,6 @@
 # Euler-product asymptotic for a Möbius sum weighted by $\deg r^\kappa$
 
-**Euler-product asymptotic for a Möbius sum weighted by $\deg r^\kappa$.** Let $F$ be a finite
+Let $F$ be a finite
 field with $q$ elements, write $|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let $\mu$ be the
 Möbius function of $F[T]$. Let $\kappa$ assign a natural number to each polynomial in $F[T]$, with
 $\kappa(P) \ge 2$ for every monic irreducible $P$. For monic $r = \prod_P P^{\nu_P}$ write

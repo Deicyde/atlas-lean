@@ -1,6 +1,6 @@
 # Unique losing move from $k$ copies of $F_2$ for odd $k$
 
-**Unique losing move from $k$ copies of $F_2$ for odd $k$.** Let $k$ be odd and $n \ge 2k$,
+Let $k$ be odd and $n \ge 2k$,
 and suppose that for every $i < k$ with $3i \le n$ the state with $i$ copies of $F_3$,
 $n - 3i$ copies of $F_1$ and nothing else is losing. Then $n \ge 3k$; the state $T$ with $k$
 copies of $F_3$, $n - 3k$ copies of $F_1$ and nothing else is losing and is reached in one

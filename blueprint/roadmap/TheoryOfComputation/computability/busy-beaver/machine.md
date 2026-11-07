@@ -1,6 +1,6 @@
 # Busy Beaver machine
 
-**Busy Beaver machine.** A Busy Beaver machine with $n$ working states is a transition table
+A Busy Beaver machine with $n$ working states is a transition table
 that assigns to each of the $n$ working states and each read symbol in $\{0, 1\}$ a symbol in
 $\{0, 1\}$ to write, a head movement (left or right), and a next state, which is either one of
 the $n$ working states or the halt state.

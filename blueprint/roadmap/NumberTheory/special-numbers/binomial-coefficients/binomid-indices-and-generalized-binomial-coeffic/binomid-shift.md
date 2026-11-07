@@ -1,6 +1,6 @@
 # Right shift of a sequence
 
-**Right shift of a sequence.** For a natural number $l$, the right shift $\sigma^l$ sends a
+For a natural number $l$, the right shift $\sigma^l$ sends a
 sequence $\eta = (e_1, e_2, \dots)$ of nonnegative integers to the sequence
 $(0, \dots, 0, e_1, e_2, \dots)$ obtained by prepending $l$ zeros: its first $l$ entries are $0$
 and its $(l + i)$-th entry is $e_i$ for every $i \ge 1$.

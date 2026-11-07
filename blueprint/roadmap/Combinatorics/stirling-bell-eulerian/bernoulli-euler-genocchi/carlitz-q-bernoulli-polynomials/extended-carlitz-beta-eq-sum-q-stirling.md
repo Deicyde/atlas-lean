@@ -1,6 +1,6 @@
 # Extended Carlitz $q$-Bernoulli numbers via $q$-Stirling numbers
 
-**Extended Carlitz $q$-Bernoulli numbers via $q$-Stirling numbers.** Let $q > 0$ with
+Let $q > 0$ with
 $q \ne 1$ be real, write $[x] = (q^x - 1)/(q - 1)$ for real $x$, $[x]_m = [x][x-1] \cdots [x-m+1]$
 (with $[x]_0 = 1$) and $[m]! = [1][2] \cdots [m]$ (with $[0]! = 1$), and let $\beta_n^{(r)}(x)$
 be the extended Carlitz $q$-Bernoulli polynomials, with numbers $\beta_n^{(r)} = \beta_n^{(r)}(0)$.

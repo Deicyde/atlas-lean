@@ -1,6 +1,6 @@
 # Area between powers of cosines
 
-**Area between powers of cosines.** For natural numbers $n$ and $k$, the area between the
+For natural numbers $n$ and $k$, the area between the
 curves $y = \cos^n x$ and $y = \cos^n(kx)$ on $[0, \pi]$ is
 $A_n(k) = \int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$, where $\cos^n x$ means $(\cos x)^n$.
 

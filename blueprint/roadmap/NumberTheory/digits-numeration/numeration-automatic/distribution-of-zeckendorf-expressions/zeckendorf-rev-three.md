@@ -1,6 +1,6 @@
 # Reversal of the first three entries
 
-**Reversal of the first three entries.** For every coefficient function
+For every coefficient function
 $\varepsilon : \mathbb N \to \mathbb N$, $\mathrm{rev}_3(\varepsilon)$ is the finitely supported
 coefficient function with entries $\varepsilon(2)$, $\varepsilon(1)$, $\varepsilon(0)$ at
 indices $0$, $1$, $2$ and $0$ at every other index. In the paper's one-based indexing,

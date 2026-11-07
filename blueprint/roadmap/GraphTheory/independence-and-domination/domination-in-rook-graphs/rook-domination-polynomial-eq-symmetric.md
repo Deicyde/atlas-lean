@@ -1,6 +1,6 @@
 # Symmetric formula for the rook domination polynomial
 
-**Symmetric formula for the rook domination polynomial.** For natural numbers $n, m \ge 1$,
+For natural numbers $n, m \ge 1$,
 the rook domination polynomial $D_{n,m}(x)$ of the $n \times m$ board, an integer polynomial,
 satisfies
 

@@ -1,6 +1,6 @@
 # Lucasnomial coefficients
 
-**Lucasnomial coefficients.** Let $(s, t)$ be nondegenerate Lucas parameters and write
+Let $(s, t)$ be nondegenerate Lucas parameters and write
 $\{m\}_{s,t}!$ for the $s,t$-factorial of a natural number $m$. For natural numbers $n$ and
 $k$, the Lucasnomial coefficient is the real number
 

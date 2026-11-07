@@ -1,6 +1,6 @@
 # Generating function of non-intersecting pairs of weakly decreasing words
 
-**Generating function of non-intersecting pairs of weakly decreasing words.** Let $k$ be a
+Let $k$ be a
 natural number and order an alphabet of $k$ letters. In the ring of formal power series in $x$
 and $y$ over $\mathbb{Q}$ let
 $f(x, y) = \bigl(x (1-x)^{-1} + (1-y)^{-1}\bigr)^k - (1-x)^{-k} - (1-y)^{-k} + 1$.

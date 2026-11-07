@@ -1,6 +1,6 @@
 # Normalized Hecke eigenform
 
-**Normalized Hecke eigenform.** Let $f$ be a cusp form of weight $k \in \mathbb{Z}$ for
+Let $f$ be a cusp form of weight $k \in \mathbb{Z}$ for
 $\mathrm{SL}_2(\mathbb{Z})$, with normalized Fourier coefficients $\lambda_f$. Then $f$ is a
 normalized Hecke eigenform when $\lambda_f(1) = 1$ and, for all positive integers $m$ and $n$,
 $\lambda_f(m) \lambda_f(n) = \sum_{d \mid \gcd(m, n)} \lambda_f(mn/d^2)$, the sum running over the

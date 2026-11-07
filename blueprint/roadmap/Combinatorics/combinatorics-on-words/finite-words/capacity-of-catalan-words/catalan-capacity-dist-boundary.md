@@ -1,6 +1,6 @@
 # Boundary values of the capacity distributions on Catalan words
 
-**Boundary values of the capacity distributions on Catalan words.** Write $a(n, i)$ for the
+Write $a(n, i)$ for the
 capacity distribution of the Catalan words of length $n$ ending in $i$, $b(n, i)$ for that of
 those Catalan words of length $n$ ending in $i$ whose largest letter is $i$, and $a(n)$ for the
 capacity distribution of all Catalan words of length $n$. For every $n \ge 1$,

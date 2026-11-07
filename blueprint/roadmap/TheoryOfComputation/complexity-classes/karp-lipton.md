@@ -1,6 +1,6 @@
 # Karp-Lipton theorem: NP in P/poly collapses PH
 
-**Karp-Lipton theorem: NP in P/poly collapses PH.** If every decision problem in NP belongs to
+If every decision problem in NP belongs to
 P/poly (polynomial time with polynomial advice), then the polynomial hierarchy PH equals its
 second level $\Sigma_2^p$.
 

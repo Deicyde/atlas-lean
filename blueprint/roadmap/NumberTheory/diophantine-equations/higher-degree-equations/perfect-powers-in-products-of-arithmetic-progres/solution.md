@@ -1,6 +1,6 @@
 # Solutions of the Erdős equation for products of arithmetic progressions
 
-**Solutions of the Erdős equation for products of arithmetic progressions.** For a natural
+For a natural
 number $k$, a solution consists of a natural number $l$ and integers $n$, $d$, $y$ such that
 $\gcd(n, d) = 1$ and
 

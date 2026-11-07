@@ -1,6 +1,6 @@
 # Green–Ruzsa structure lemma
 
-**Green–Ruzsa structure lemma.** Let $G$ be a finite abelian group of type $\mathrm{I}(p)$ and
+Let $G$ be a finite abelian group of type $\mathrm{I}(p)$ and
 let $k$ be a natural number with $p = 3k + 2$. If $A \subseteq G$ is sum-free and
 $|A| > \left(\frac{1}{3} + \frac{1}{3(p + 1)}\right)|G|$, then there is a group homomorphism
 $\psi : G \to \mathbb{Z}_p$ with $\psi(a) \in \{k + 1, \dots, 2k + 1\}$ for every $a \in A$,

@@ -1,6 +1,6 @@
 # Enumerating the higher layers of a self-similar compact set
 
-**Enumerating the higher layers of a self-similar compact set.** Let $K$ be a self-similar
+Let $K$ be a self-similar
 compact set of module $\mu$ and ratio $\rho$, let $u \ge 1$, and let
 $T_u = K^{(u)} \setminus K^{(u+1)}$, where $K^{(u)}$ is the $u$-th derived set of $K$. Let
 $\alpha \mapsto K[\alpha]$ be a strictly decreasing map from the ordinals $\alpha \le \omega^\omega$

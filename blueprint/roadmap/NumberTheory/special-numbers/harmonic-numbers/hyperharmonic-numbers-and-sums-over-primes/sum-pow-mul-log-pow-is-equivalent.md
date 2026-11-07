@@ -1,6 +1,6 @@
 # Asymptotics of power-logarithm sums
 
-**Asymptotics of power-logarithm sums.** For all $m, n, k \in \mathbb{N}$, as the natural
+For all $m, n, k \in \mathbb{N}$, as the natural
 number $x$ tends to infinity,
 
 $$\sum_{\ell=1}^{x} \ell^m (\log \ell)^n \sim \frac{x^{m+1} (\log x)^n}{m+1}$$

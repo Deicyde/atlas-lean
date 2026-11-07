@@ -1,6 +1,6 @@
 # Counting sort
 
-**Counting sort.** Let $k$ be a natural number and let $\mathrm{key}$ assign to each record a
+Let $k$ be a natural number and let $\mathrm{key}$ assign to each record a
 key in $\{0, \dots, k-1\}$. Counting sort of an array $A$ of records returns an array together
 with a count of charged operations. It starts $k$ counters at zero, counts the records of $A$ with
 each key, replaces the counters by cumulative counts so that the counter of key $q$ holds the

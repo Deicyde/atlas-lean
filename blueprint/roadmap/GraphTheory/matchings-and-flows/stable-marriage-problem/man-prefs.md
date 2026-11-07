@@ -1,6 +1,6 @@
 # Men's preferences induced by rankings
 
-**Men's preferences induced by rankings.** For a preference profile of $n$ men and $n$
+For a preference profile of $n$ men and $n$
 women, each man $i$ gets the strict total order on the women in which $i$ prefers woman $a$ to
 woman $b$ exactly when he ranks $a$ at an earlier position than $b$.
 

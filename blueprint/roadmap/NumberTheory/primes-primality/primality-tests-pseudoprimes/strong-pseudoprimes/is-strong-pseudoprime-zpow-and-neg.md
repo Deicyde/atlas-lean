@@ -1,6 +1,6 @@
 # Strong pseudoprime bases are closed under powers and negation
 
-**Strong pseudoprime bases are closed under powers and negation.** Let $n$ be a natural
+Let $n$ be a natural
 number and $b$ a unit of $\mathbb{Z}/n\mathbb{Z}$ such that $n$ is a strong pseudoprime to the
 base $b$. Then for every integer $t$, $n$ is a strong pseudoprime to the base $b^t$, and $n$ is a
 strong pseudoprime to the base $-b$.

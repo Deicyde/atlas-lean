@@ -1,6 +1,6 @@
 # Generalized poly-Bernoulli numbers $C_n$ as Taylor coefficients
 
-**Generalized poly-Bernoulli numbers $C_n$ as Taylor coefficients.** Let
+Let
 $g = (g_0, g_1, \dots, g_s)$ be Landen data, where $(c_0, d_0)$ is the bottom row of the matrix
 $g_0$, let $\beta, \gamma \in \mathbb{R}^s$, let $k = (k_1, \dots, k_r)$ be a list of natural
 numbers, and write $k\uparrow = (k_1, \dots, k_r + 1)$, with $k\uparrow = ()$ when $k$ is empty.

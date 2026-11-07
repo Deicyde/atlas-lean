@@ -1,6 +1,6 @@
 # Explicit linear term and period for higher $a$-numbers
 
-**Explicit linear term and period for higher $a$-numbers.** Let $p$ be a prime, let $d$ be a
+Let $p$ be a prime, let $d$ be a
 natural number dividing $p - 1$, let $r \ge 1$, let $\tau = (p + 1)/d$ and
 $\gamma = ((p - 1) r + (p + 1))/d$, let $\tau_D$ be the denominator of $\tau$ in lowest terms, let
 $\delta_0$ be the variant of the rounding indicator for $p$ and $d$, and for each natural number

@@ -1,6 +1,5 @@
 # Nonlinear interpolation of Lipschitz maps on Lebesgue spaces (Scottish Book Problem 87)
 
-**Nonlinear interpolation of Lipschitz maps on Lebesgue spaces (Scottish Book Problem 87).**
 Let $\mu$ be Lebesgue measure on $[0, 1]$, write $\|f\|_p$ for the $L^p(\mu)$ norm, let
 $1 \le \beta < \alpha \le \infty$, and let $U$ map functions $\mathbb{R} \to \mathbb{R}$ to
 functions $\mathbb{R} \to \mathbb{R}$. Suppose that $U$ maps $L^\beta(\mu)$ into $L^\beta(\mu)$;

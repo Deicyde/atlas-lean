@@ -1,6 +1,6 @@
 # Prepending an equilibrious word is undone by deletion
 
-**Prepending an equilibrious word is undone by deletion.** Let $u$ be a finite word in the
+Let $u$ be a finite word in the
 letters $a$ and $b$ of length $2k$. Then $u$ is equilibrious, that is, $a$ and $b$ occur equally
 often in $u$, if and only if $D^k(uw) = w$ for every infinite binary word $w$ in which both
 letters occur infinitely often, where $D$ deletes the first $b$ and the first $a$ of a word.

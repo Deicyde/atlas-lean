@@ -1,6 +1,6 @@
 # Quotients of sums of two rational squares
 
-**Quotients of sums of two rational squares.** If $\alpha$ and $\beta$ are nonzero rational
+If $\alpha$ and $\beta$ are nonzero rational
 numbers that are each a sum of two squares of rational numbers, then $\alpha / \beta$ is also a
 sum of two squares of rational numbers.
 

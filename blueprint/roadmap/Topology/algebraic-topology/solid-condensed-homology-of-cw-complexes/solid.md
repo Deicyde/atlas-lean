@@ -1,6 +1,6 @@
 # The category of light solid abelian groups
 
-**The category of light solid abelian groups.** Write $\mathbb{Z}[S]$ for the free light
+Write $\mathbb{Z}[S]$ for the free light
 condensed abelian group on a light profinite set $S$, let $\mathbb{N} \cup \{\infty\}$ be the
 one-point compactification of $\mathbb{N}$, viewed as a light profinite set, write $\mathrm{pt}$ for
 the one-point light profinite set, and let $P$ be the cokernel of the map

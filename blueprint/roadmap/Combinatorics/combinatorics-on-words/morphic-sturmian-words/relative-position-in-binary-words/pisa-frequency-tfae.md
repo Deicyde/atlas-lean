@@ -1,6 +1,6 @@
 # Frequency and position criteria for an eigenvector of a primitive substitution
 
-**Frequency and position criteria for an eigenvector of a primitive substitution.** Let
+Let
 $j \ge 1$ and $m \ge 1$ be natural numbers with $m \ne j + 1$, and let
 $\tau = (j + \sqrt{j^2 + 4m})/2$. Let
 $\varrho$ be a substitution on the letters $a, b$ with substitution matrix $M$, where

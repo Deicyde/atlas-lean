@@ -1,6 +1,6 @@
 # Dual generalized Leonardo numbers
 
-**Dual generalized Leonardo numbers.** For an integer $k$, let $L_{k,n}$ denote the generalized
+For an integer $k$, let $L_{k,n}$ denote the generalized
 Leonardo numbers. The dual generalized Leonardo numbers $M_{k,n}$, for natural numbers $n$, are
 defined by $M_{k,0} = 1 - k$ and $M_{k,n+1} = L_{k,n} + L_{k,n+2}$, so that
 $M_{k,n} = L_{k,n-1} + L_{k,n+1}$ for $n \ge 1$.

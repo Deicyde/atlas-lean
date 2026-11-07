@@ -1,6 +1,6 @@
 # Locally nilpotent groups with the minimal condition on centralizers are hypercentral
 
-**Locally nilpotent groups with the minimal condition on centralizers are hypercentral.** Every
+Every
 locally nilpotent group satisfying the minimal condition on centralizers is hypercentral. This
 answers Kourovka Problem 13.16 (F. O. Wagner) in the affirmative (V. V. Bludov, 1998).
 

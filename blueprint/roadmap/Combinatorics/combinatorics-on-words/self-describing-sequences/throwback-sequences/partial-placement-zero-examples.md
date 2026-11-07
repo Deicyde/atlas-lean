@@ -1,6 +1,6 @@
 # First partial placement sequence of the integers from 3 on
 
-**First partial placement sequence of the integers from 3 on.** Let $X = (3, 4, 5, \dots)$,
+Let $X = (3, 4, 5, \dots)$,
 that is, $x_i = i + 3$. The partial placement sequence $P_0(X)$ holds the term $3$ at
 positions $0$, $4$ and $-4$, and its positions $1$, $2$ and $3$ are empty.
 

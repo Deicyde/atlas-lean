@@ -1,3 +1,3 @@
 # Pupko's joint reconstruction
 
-**Pupko's joint reconstruction**: the root state `jointRoot` and the traced labeling.
+The root state `jointRoot` and the traced labeling.

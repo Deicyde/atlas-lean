@@ -1,6 +1,6 @@
 # Logarithmic gcd moment
 
-**Logarithmic gcd moment.** For a set $A$ of natural numbers and a real number $x$, the
+For a set $A$ of natural numbers and a real number $x$, the
 logarithmic gcd moment of $A$ up to $x$ is the sum of $\gcd(n, m)/(nm)$ over all ordered pairs
 $(n, m)$ with $n, m \in A$, $1 \le n \le x$ and $1 \le m \le x$.
 

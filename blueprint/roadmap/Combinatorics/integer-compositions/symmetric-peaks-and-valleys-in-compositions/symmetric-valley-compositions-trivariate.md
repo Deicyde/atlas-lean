@@ -1,6 +1,6 @@
 # Trivariate generating function for symmetric valleys in compositions
 
-**Trivariate generating function for symmetric valleys in compositions.** For a composition
+For a composition
 $c$ write $\ell(c)$ for its number of parts, $\mathrm{sv}(c)$ for the number of symmetric
 valleys and $\mathrm{dsv}(c)$ for the symmetric valley depth sum of its sequence of parts. In
 the ring $\mathbb{Z}[y, p, d][[x]]$ of formal power series in $x$ whose coefficients are

@@ -1,6 +1,6 @@
 # Hutchings' theorem
 
-**Hutchings' theorem.** For every prime $p > 3$, the position $\{p\}$ of Sylver Coinage is a
+For every prime $p > 3$, the position $\{p\}$ of Sylver Coinage is a
 P-position: a first player who opens with $p$ wins.
 
 ## Sources

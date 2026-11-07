@@ -1,6 +1,6 @@
 # Difference representation function
 
-**Difference representation function.** For a finite subset $A$ of an abelian group $G$ and
+For a finite subset $A$ of an abelian group $G$ and
 an element $x \in G$, the difference representation function $r_{A-A}(x)$ is the number of
 ordered pairs $(a, a') \in A \times A$ with $a - a' = x$.
 

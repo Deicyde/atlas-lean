@@ -1,6 +1,6 @@
 # Double-sum Kronecker delta identity for Stirling numbers
 
-**Double-sum Kronecker delta identity for Stirling numbers.** Write $S(n, k)$ for the Stirling
+Write $S(n, k)$ for the Stirling
 numbers of the second kind and $s(n, k)$ for the signed Stirling numbers of the first kind. For
 all natural numbers $i, j, n$ with $i \ge 1$, $n \ge i$ and $n \ge j$, in the rational numbers,
 

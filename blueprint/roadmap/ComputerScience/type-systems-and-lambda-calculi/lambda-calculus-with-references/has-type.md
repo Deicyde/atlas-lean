@@ -1,6 +1,6 @@
 # Typing judgment for the lambda calculus with references
 
-**Typing judgment for the lambda calculus with references.** The judgment
+The judgment
 $\Gamma \mid S \vdash t : T$ (TAPL Figure 13-1), where the context $\Gamma$ lists the types of
 the free de Bruijn variables (index $0$ first) and the store typing $S$ lists the types of the
 locations $0, 1, \ldots$, is the least relation closed under the following rules, in which

@@ -1,6 +1,6 @@
 # Sharp lower bound for sums with at least $r$ distinct terms modulo a prime
 
-**Sharp lower bound for sums with at least $r$ distinct terms modulo a prime.** Let $p$ be a
+Let $p$ be a
 prime, and for natural numbers $h, r$ and a finite set $A \subseteq \mathbb{Z}/p\mathbb{Z}$ write
 $h^{(\ge r)}A$ for the set of sums of $h$ elements of $A$, repetitions allowed, in which at least
 $r$ distinct elements occur. If $A$ is nonempty with $|A| = k$, $1 \le r \le k$ and $r \le h$,

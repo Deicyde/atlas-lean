@@ -1,6 +1,6 @@
 # Square-free integers in an arithmetic progression
 
-**Square-free integers in an arithmetic progression.** Let $r \in \mathbb{Z}$ and let $N \ge 1$
+Let $r \in \mathbb{Z}$ and let $N \ge 1$
 be an integer such that $s = \gcd(r, N)$ is square-free. Then, as the real number $X \to \infty$,
 the number of square-free integers $t$ with $1 \le t \le X$ and $t \equiv r \pmod N$ is
 asymptotically equivalent to

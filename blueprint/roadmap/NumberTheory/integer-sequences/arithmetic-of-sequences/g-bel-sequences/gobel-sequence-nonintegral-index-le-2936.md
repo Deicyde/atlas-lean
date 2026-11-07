@@ -1,6 +1,6 @@
 # A non-integral term of $g_{k,2}$ by index $29363$ for $2 \le k \le 10^{14}$
 
-**A non-integral term of $g_{k,2}$ by index $29363$ for $2 \le k \le 10^{14}$.** Let
+Let
 $g_{k,l}$ denote the $(k, l)$-Göbel sequence. For every natural number $k$ with
 $2 \le k \le 10^{14}$, there is a natural number $n$ with $1 \le n \le 29363$ such that the
 rational number $g_{k,2}(n)$ is not an integer.

@@ -1,6 +1,6 @@
 # Formal contour-integral formula for bubble counts
 
-**Formal contour-integral formula for bubble counts.** Let $G(s, w, y)$ be the power series
+Let $G(s, w, y)$ be the power series
 in $\mathbb{Q}[[s, w, y]]$ given by
 
 $$G = \left(1 - \frac{y^2}{1 - sy + y^2}\right)^{-2} \left(\frac{1}{1 - wsy + w^2y^2} - 1\right),$$

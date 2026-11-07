@@ -1,6 +1,6 @@
 # The marking machine for PATH
 
-**The marking machine for PATH.** The multi-stack machine program whose input lies on the
+The multi-stack machine program whose input lies on the
 stack $X$ and whose answer is pushed on the Boolean stack $O$. To read a unary number off $X$ onto
 a stack $d$, it pops a bit off $X$ and pushes it on $d$, repeating while the bit is true and
 moving on after the first false bit; an empty $X$ jumps to `bad`. To walk along a counter $c$, it

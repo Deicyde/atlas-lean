@@ -1,6 +1,6 @@
 # Chief factor of rank above a bound
 
-**Chief factor of rank above a bound.** A group $G$ has a chief factor of rank greater than a
+A group $G$ has a chief factor of rank greater than a
 natural number $r$ when there are a chief factor $A / B$ of $G$, a prime $p$ and a natural number
 $k > r$ such that the index $[A : B]$ equals $p^k$.
 

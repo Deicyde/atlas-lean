@@ -1,6 +1,6 @@
 # Uncommon equations over the integers
 
-**Uncommon equations over the integers.** Let $a_1, \dots, a_k$ be integers and let $r$
+Let $a_1, \dots, a_k$ be integers and let $r$
 be a natural number. For each $n$, write $[n]$ for the set of integers $1, \dots, n$ and
 $S_n$ for the set of solutions $(x_1, \dots, x_k) \in [n]^k$ of
 $a_1x_1 + \cdots + a_kx_k = 0$; for a colouring $\chi$ of the integers with $r$ colours, let

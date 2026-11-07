@@ -1,6 +1,6 @@
 # Smooth solutions of diagonal equations (Chow–Lindqvist–Prendiville)
 
-**Smooth solutions of diagonal equations (Chow–Lindqvist–Prendiville).** For a natural number
+For a natural number
 $N$ and real $\eta > 0$, let $A(N, N^\eta)$ be the set of integers $1 \le x \le N$ all of whose
 prime factors are at most $N^\eta$. There is a real-valued function $g$ on the natural numbers
 with $g(k) = O(\log \log k / \log k)$ as $k \to \infty$ such that for every $k \ge 2$ there is

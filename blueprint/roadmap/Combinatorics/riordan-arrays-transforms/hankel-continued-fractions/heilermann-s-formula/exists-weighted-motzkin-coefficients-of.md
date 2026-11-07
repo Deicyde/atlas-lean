@@ -1,6 +1,6 @@
 # Weighted Motzkin recurrence for the coefficients of a Jacobi fraction
 
-**Weighted Motzkin recurrence for the coefficients of a Jacobi fraction.** Let $K$ be a ring,
+Let $K$ be a ring,
 let $a$, $\alpha$, $\beta$ be sequences in $K$ and let $\mu_0 \in K$. Suppose that $a$ has Jacobi
 fraction data $(\alpha, \beta, \mu_0)$: there are power series $F_0, F_1, \dots$ over $K$ with
 $\sum_{n \ge 0} a_n x^n = \mu_0 F_0$ and $(1 - \alpha_i x - \beta_{i+1} x^2 F_{i+1}) F_i = 1$ for

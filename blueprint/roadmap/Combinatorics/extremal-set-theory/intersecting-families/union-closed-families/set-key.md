@@ -1,6 +1,6 @@
 # Sort key of a subset
 
-**Sort key of a subset.** For a subset $A$ of $\{0, \dots, n-1\}$, the sort key of $A$ is
+For a subset $A$ of $\{0, \dots, n-1\}$, the sort key of $A$ is
 the natural number $(n - |A|) \cdot 2^n + b(A)$, where $b(A) = \sum_{i \in A} 2^i$ is the
 binary code of $A$.
 

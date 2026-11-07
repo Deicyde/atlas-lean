@@ -1,6 +1,6 @@
 # Number of representations by a vector of generators
 
-**Number of representations by a vector of generators.** For natural numbers
+For natural numbers
 $a_1, \dots, a_k$ and an integer $m$, the representation count $d(m; a_1, \dots, a_k)$ is the
 number of tuples $(x_1, \dots, x_k)$ of natural numbers with $x_1 a_1 + \dots + x_k a_k = m$,
 counted as an extended natural number, so that it is $\infty$ when there are infinitely many such

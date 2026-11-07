@@ -1,6 +1,6 @@
 # Takagi values at dyadic rationals from level $D$-node counts
 
-**Takagi values at dyadic rationals from level $D$-node counts.** Let $k$ and $r$ be
+Let $k$ and $r$ be
 natural numbers with $r < 2^k$ and put $n = 2^k + r$. Write $\tau(r, k-1)$ for the Takagi value
 of the dyadic presentation $r/2^k$, write $n_i = \lfloor n/2^i \rfloor \bmod 2$ for the binary
 digit of $n$ at position $i$, and let $\lambda_i(n)$ be the level-$i$ $D$-node count, which

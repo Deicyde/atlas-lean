@@ -1,6 +1,6 @@
 # Recursion for parking functions with a given descent set
 
-**Recursion for parking functions with a given descent set.** The descent set of a word
+The descent set of a word
 $w = (w_1, \dots, w_\ell)$ is $\{i : 1 \le i \le \ell - 1,\ w_i > w_{i+1}\}$, and $d(J; n)$ denotes
 the number of parking functions of length $n$ with descent set $J$. Let $n \in \mathbb{N}$, let
 $I \subseteq \{1, \dots, n - 1\}$ be nonempty with largest element $m$, and let

@@ -1,6 +1,6 @@
 # Close-to-convex functions
 
-**Close-to-convex functions.** A function $f : \mathbb{C} \to \mathbb{C}$ is close-to-convex
+A function $f : \mathbb{C} \to \mathbb{C}$ is close-to-convex
 when it belongs to the class $S$ (analytic at every point of the open unit disc
 $\mathbb{D} = \{z \in \mathbb{C} : |z| < 1\}$, injective on $\mathbb{D}$, $f(0) = 0$ and
 $f'(0) = 1$) and there are a starlike function $g$ and a real number $\alpha$ such that

@@ -1,6 +1,6 @@
 # Quadratic-residue-weighted zero-sum constants modulo a prime
 
-**Quadratic-residue-weighted zero-sum constants modulo a prime.** Let $p$ be an odd prime and
+Let $p$ be an odd prime and
 let $Q_p$ be the set of squares of units of $\mathbb{Z}_p = \mathbb{Z}/p\mathbb{Z}$. Then
 $C_{Q_p}(p) = D_{Q_p}(p) = 3$. Here $D_{Q_p}(p)$ is the least positive integer $k$ such that every
 sequence $(x_1, \dots, x_k)$ in $\mathbb{Z}_p$ has a nonempty set $I$ of indices and weights

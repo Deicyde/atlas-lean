@@ -1,6 +1,6 @@
 # Four-dimensional Euclidean space
 
-**Four-dimensional Euclidean space.** The ambient space is $\mathbb{R}^4$, the space of real
+The ambient space is $\mathbb{R}^4$, the space of real
 $4$-tuples with the standard Euclidean inner product and the distance it induces.
 
 ## Sources

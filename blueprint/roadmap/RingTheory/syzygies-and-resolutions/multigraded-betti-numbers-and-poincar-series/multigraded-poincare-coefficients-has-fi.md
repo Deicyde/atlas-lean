@@ -1,6 +1,6 @@
 # Finite support of the multigraded Poincaré coefficients
 
-**Finite support of the multigraded Poincaré coefficients.** Let $K$ be a field, let
+Let $K$ be a field, let
 $R = K[x_1, \dots, x_n]$, let $M$ be a multigraded $R$-module, and let $D$ be base-change data
 for a multigraded free resolution $F_\bullet$ of $M$ in which $F_i$ has a homogeneous basis
 indexed by $\iota_i$. Suppose every $\iota_i$ is finite and, for some $b \in \mathbb{N}$,

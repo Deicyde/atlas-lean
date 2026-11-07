@@ -1,6 +1,6 @@
 # Strict local maxima of $\delta^{\ast}$ at the closure points
 
-**Strict local maxima of $\delta^{\ast}$ at the closure points.** Let $L$ and $\tilde L$ form a
+Let $L$ and $\tilde L$ form a
 periodic Zeckendorf pair, let $Q$ be a fundamental sequence of the collection $E^*$ determined by
 $L$, and let $\tilde Q$ be a fundamental sequence of the collection $\tilde E^*$ determined by
 $\tilde L$. Let $\varepsilon \in \bar E^* \setminus E^*$, where $\bar E^*$ is the closure

@@ -1,6 +1,6 @@
 # Splitting off the middle clause of a concatenation
 
-**Splitting off the middle clause of a concatenation.** Let $P$ and $Q$ be CNF formulas, $C$ a
+Let $P$ and $Q$ be CNF formulas, $C$ a
 clause, and $\varphi$ the formula whose clauses are those of $P$, then $C$, then those of $Q$.
 Write $|P|$ for the number of clauses of $P$ and $\varphi_j$ for clause $j$ of $\varphi$, counting
 from $0$ (the empty clause if $j$ is out of range). Let $f$ map each natural number $j$ and clause

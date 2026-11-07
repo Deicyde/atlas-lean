@@ -1,6 +1,6 @@
 # Local partial-fraction formula at the a-points of the k-th derivative (Lemma 5)
 
-**Local partial-fraction formula at the a-points of the k-th derivative (Lemma 5).** Let $F$
+Let $F$
 be a function in the Selberg class, let $k \ge 1$, write $F^{(k)}$ for the $k$-th derivative of
 $F$, and let $a \in \mathbb{C}$ and let $\sigma_1$, $\sigma_2$ be real numbers. Then there are real
 numbers $t_0$ and $C$ such that for every $s \in \mathbb{C}$ with

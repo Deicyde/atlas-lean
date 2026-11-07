@@ -1,6 +1,6 @@
 # Token bound for dual Impartial Tic penults
 
-**Token bound for dual Impartial Tic penults.** Let $n \ge 5$. If $S$ is a penult of
+Let $n \ge 5$. If $S$ is a penult of
 Impartial Tic on the $n \times n$ board, then at most $4(n - 2)$ cells of the board lie outside
 $S$.
 

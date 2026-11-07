@@ -1,6 +1,6 @@
 # The clause-check driver
 
-**The clause-check driver.** Given the lookup's start label $l_0$, the statement at each
+Given the lookup's start label $l_0$, the statement at each
 driver label. At start: if the token stack $T$ is empty, go to yes; if its top is a clause
 marker, pop it, push the bit false onto the flag stack $F$ and go to lits; otherwise go to no.
 At lits: if the top of $T$ is a literal marker of polarity $p$, pop it, push the bit $p$ onto

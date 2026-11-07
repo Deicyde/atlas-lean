@@ -1,6 +1,6 @@
 # Creative set
 
-**Creative set.** A set $A$ of natural numbers is creative when it is recursively enumerable
+A set $A$ of natural numbers is creative when it is recursively enumerable
 and its complement $\mathbb{N} \setminus A$ is productive.
 
 ## Sources

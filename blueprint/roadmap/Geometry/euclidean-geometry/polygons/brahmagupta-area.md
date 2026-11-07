@@ -1,6 +1,6 @@
 # Brahmagupta's formula
 
-**Brahmagupta's formula.** Let $P, Q, R, S$ be points of the Euclidean plane with side
+Let $P, Q, R, S$ be points of the Euclidean plane with side
 lengths $|PQ| = a$, $|QR| = b$, $|RS| = c$, $|SP| = d$ and diagonal $|PR| = e$, and let
 $s = (a + b + c + d)/2$. Suppose that some point $O$ is equidistant from $P, Q, R, S$ (so the
 quadrilateral $PQRS$ is cyclic) and that some point $T$ satisfies $|PT| + |TR| = |PR|$ and

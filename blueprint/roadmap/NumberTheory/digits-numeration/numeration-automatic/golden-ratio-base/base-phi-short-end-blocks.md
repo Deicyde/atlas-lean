@@ -1,6 +1,6 @@
 # Short end blocks
 
-**Short end blocks.** Let $\varphi$ be the golden ratio. For integers $p, q, r$ let
+Let $\varphi$ be the golden ratio. For integers $p, q, r$ let
 $V(p, q, r)$ be the set of the integers $p \lfloor n\varphi \rfloor + qn + r$ with $n \ge 1$, and
 $V_0(p, q, r)$ the same set with $n \ge 0$. Then for every natural number $N \ge 1$:
 some base phi expansion of $N$ has digit $1$ at position $0$ if and only if

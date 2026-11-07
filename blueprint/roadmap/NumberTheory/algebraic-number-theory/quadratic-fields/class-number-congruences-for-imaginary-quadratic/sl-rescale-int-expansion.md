@@ -1,6 +1,6 @@
 # Sl(ru) as a power series in Sl(u)
 
-**Sl(ru) as a power series in Sl(u).** Let $\mathrm{Sl}, \mathrm{Cl}$ be formal power series
+Let $\mathrm{Sl}, \mathrm{Cl}$ be formal power series
 in $\mathbb{Q}[[u]]$ with $\mathrm{Sl}' = \mathrm{Cl}^2$, $\mathrm{Cl}' = -\mathrm{Sl}^2$,
 $\mathrm{Sl}(0) = 0$ and $\mathrm{Cl}(0) = 1$, and let $r$ be an integer. Then there is a power
 series $g \in \mathbb{Q}[[x]]$, with every coefficient in $\mathbb{Z}[1/3]$, such that

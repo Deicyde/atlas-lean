@@ -1,6 +1,6 @@
 # Inversion success probability against a permutation family
 
-**Inversion success probability against a permutation family.** Let $\pi$ be a family of
+Let $\pi$ be a family of
 maps $\pi_n$ from $n$-bit strings to $n$-bit strings, let $A$ be a function sending a natural
 number and two bitstrings to a bitstring, and let $n$ and $m$ be natural numbers. For a bitstring
 $w$, write $\mathrm{trunc}_n(w)$ for the $n$-bit string whose bit at each position $i < n$ is the

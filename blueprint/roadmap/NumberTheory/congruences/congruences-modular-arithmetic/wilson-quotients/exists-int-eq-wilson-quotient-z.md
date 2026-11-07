@@ -1,6 +1,6 @@
 # The Wilson quotient sum is an integer
 
-**The Wilson quotient sum is an integer.** For every natural number $n \ge 1$, Morozov's
+For every natural number $n \ge 1$, Morozov's
 Wilson quotient sum $Z(n)$ is an integer.
 
 ## Sources

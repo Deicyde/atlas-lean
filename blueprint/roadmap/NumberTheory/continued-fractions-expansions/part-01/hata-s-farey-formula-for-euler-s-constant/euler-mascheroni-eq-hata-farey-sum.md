@@ -1,6 +1,6 @@
 # Hata's formula for Euler's constant
 
-**Hata's formula for Euler's constant.** Let $S$ be the set of quadruples $(a, b, c, d)$ of
+Let $S$ be the set of quadruples $(a, b, c, d)$ of
 natural numbers with $bc = ad + 1$, $a > 0$ and $c \le d$; these are the Farey intervals
 $[a/b, c/d] \subseteq [0, 1]$ with positive left endpoint. The family
 $1/(abcd(a + c)(b + d))$, indexed by $(a, b, c, d) \in S$, is summable, and Euler's constant

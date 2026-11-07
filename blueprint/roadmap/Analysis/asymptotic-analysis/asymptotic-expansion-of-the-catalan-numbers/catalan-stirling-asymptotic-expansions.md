@@ -1,6 +1,6 @@
 # Stirling-type asymptotic expansions of the Catalan numbers
 
-**Stirling-type asymptotic expansions of the Catalan numbers.** Let $C_n$ be the $n$-th Catalan
+Let $C_n$ be the $n$-th Catalan
 number and $B_k$ the $k$-th Bernoulli number, and let $(E_k)$ be a sequence of integers with
 $E_0 = 1$ and $\sum_{j=0}^{\lfloor n/2 \rfloor} \binom{n}{2j} E_{n-2j} = 0$ for every $n > 0$
 (these are the Euler numbers $1, 0, -1, 0, 5, \dots$). For $k \ge 1$ put

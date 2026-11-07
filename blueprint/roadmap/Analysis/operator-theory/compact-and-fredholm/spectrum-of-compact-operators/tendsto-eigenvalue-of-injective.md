@@ -1,6 +1,6 @@
 # Eigenvalues of a compact operator tend to zero along any injective sequence
 
-**Eigenvalues of a compact operator tend to zero along any injective sequence.** Let $E$ be a
+Let $E$ be a
 normed space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $T$ be a compact bounded linear
 operator on $E$. If $(\lambda_n)_{n \in \mathbb{N}}$ is a sequence of pairwise distinct eigenvalues
 of $T$, then $\lambda_n \to 0$ as $n \to \infty$.

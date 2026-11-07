@@ -1,6 +1,6 @@
 # Addition formula for Stirling numbers of the first kind
 
-**Addition formula for Stirling numbers of the first kind.** Write $c(n,k)$ for the unsigned
+Write $c(n,k)$ for the unsigned
 Stirling numbers of the first kind and $u^{\overline{i}} = u(u+1)\cdots(u+i-1)$ for the rising
 factorial. For all natural numbers $u$, $v$ and $k$,
 

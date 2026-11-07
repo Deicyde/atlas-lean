@@ -1,6 +1,6 @@
 # Linear bound on the prime divisors of a finite soluble group (Kourovka 14.66)
 
-**Linear bound on the prime divisors of a finite soluble group (Kourovka 14.66).** The
+The
 statement, posed by A. Moretó, that there are natural numbers $a$ and $b$ such that for every
 finite soluble group $G$ and every natural number $m$, if the order of every element of $G$ has at
 most $m$ distinct prime divisors, then $|G|$ has at most $am + b$ distinct prime divisors.

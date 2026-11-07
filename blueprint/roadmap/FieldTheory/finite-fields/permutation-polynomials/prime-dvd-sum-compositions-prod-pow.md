@@ -1,6 +1,6 @@
 # Vishwakarma–Singh congruence for ordered partitions
 
-**Vishwakarma–Singh congruence for ordered partitions.** Let $p$ be an odd prime and let
+Let $p$ be an odd prime and let
 $k, s, t$ be positive integers with $s \le p - 2$ and $k \equiv 1 \pmod{p(p-1)}$, such that
 $p^2 \mid k - 1$ whenever $p - 1 \mid t$. Let $\mu = \lfloor ks/(p - 1) \rfloor$. Then
 

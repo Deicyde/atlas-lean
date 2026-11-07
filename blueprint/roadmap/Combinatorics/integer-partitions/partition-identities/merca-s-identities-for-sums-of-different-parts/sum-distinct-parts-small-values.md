@@ -1,6 +1,6 @@
 # Small values of Merca's distinct-part sums
 
-**Small values of Merca's distinct-part sums.** For natural numbers $m$, $r$ and $n$, let
+For natural numbers $m$, $r$ and $n$, let
 $a_{r,m}(n)$ be the sum, over all partitions of $n$, of the different parts $x$ of the partition
 with $x \bmod m = r$, and let $s_m(n)$ be the sum, over all partitions of $n$, of the different
 parts that occur at least $m$ times in the partition; each such part counts once per partition.

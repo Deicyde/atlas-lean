@@ -1,6 +1,6 @@
 # The dual lattice and the dual module
 
-**The dual lattice and the dual module.** Let $A$ be a Noetherian integral domain with
+Let $A$ be a Noetherian integral domain with
 fraction field $K$, let $V$ be a finite-dimensional $K$-vector space, viewed as an $A$-module
 through $A \subseteq K$, and let $B$ be a nondegenerate bilinear form on $V$. Let $M$ be an
 $A$-lattice in $V$, that is, a finitely generated $A$-submodule that spans $V$ over $K$, and let

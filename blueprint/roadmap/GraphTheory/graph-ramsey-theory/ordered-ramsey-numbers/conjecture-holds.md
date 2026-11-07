@@ -1,6 +1,6 @@
 # The order-robust ordered Ramsey conjecture holds
 
-**The order-robust ordered Ramsey conjecture holds.** There are a real number $c > 0$ and a
+There are a real number $c > 0$ and a
 natural number $N_0$ such that for every $n \ge N_0$ there is a $100$-regular simple graph $H$ on
 $\{0, \dots, n - 1\}$ such that $r_<(H, \lt _H) \ge n^{1+c}$ for every strict total order $\lt _H$ on
 its vertices. Here $r_<(H, \lt _H)$ is the least $N$ such that every red/blue colouring of the edges

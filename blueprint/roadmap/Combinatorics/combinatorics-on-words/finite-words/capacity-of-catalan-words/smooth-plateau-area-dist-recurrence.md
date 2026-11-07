@@ -1,6 +1,6 @@
 # Recurrence for the area distribution of smooth words from $j$ to $j$
 
-**Recurrence for the area distribution of smooth words from $j$ to $j$.** Let $t(m, j; q)$ be
+Let $t(m, j; q)$ be
 the area distribution of the words of length $m$ over $\{1, \dots, j\}$ that begin and end with $j$
 and whose consecutive letters differ by at most $1$. For all $m \ge 2$ and $j \ge 2$,
 

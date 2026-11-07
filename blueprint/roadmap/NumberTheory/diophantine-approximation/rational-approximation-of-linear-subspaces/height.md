@@ -1,6 +1,6 @@
 # Height of a rational subspace
 
-**Height of a rational subspace.** For a rational subspace $V$ of $\mathbb{R}^d$ of dimension
+For a rational subspace $V$ of $\mathbb{R}^d$ of dimension
 $k$, let $v_1, \dots, v_k$ be the chosen basis of the lattice $V \cap \mathbb{Z}^d$. The height of
 $V$ is $H(V) = \lVert v_1 \wedge \dots \wedge v_k \rVert$, where the exterior power
 $\bigwedge^k \mathbb{R}^d$ carries the inner product whose value on decomposable elements

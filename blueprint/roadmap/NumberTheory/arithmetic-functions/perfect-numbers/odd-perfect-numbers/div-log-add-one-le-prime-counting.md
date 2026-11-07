@@ -1,6 +1,6 @@
 # Lower bound for the prime-counting function at primes $p \ge 19$
 
-**Lower bound for the prime-counting function at primes $p \ge 19$.** For every prime
+For every prime
 $p \ge 19$, the number $\pi(p)$ of primes at most $p$ satisfies $\pi(p) \ge p/\log p + 1$,
 where $\log$ is the natural logarithm.
 

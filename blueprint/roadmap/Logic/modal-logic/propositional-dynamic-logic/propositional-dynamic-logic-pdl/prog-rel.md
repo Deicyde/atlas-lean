@@ -1,6 +1,6 @@
 # Relation denoted by a PDL program
 
-**Relation denoted by a PDL program.** In a model $M$, each program $\alpha$ denotes a binary
+In a model $M$, each program $\alpha$ denotes a binary
 relation $R_\alpha$ on worlds: an atomic action $a$ denotes its accessibility relation $R_a$;
 $(w, v) \in R_{\alpha;\beta}$ iff $(w, u) \in R_\alpha$ and $(u, v) \in R_\beta$ for some world
 $u$; $R_{\alpha \cup \beta} = R_\alpha \cup R_\beta$; $R_{\alpha^*}$ is the reflexive-transitive

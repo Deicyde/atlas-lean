@@ -1,6 +1,6 @@
 # The class $\Sigma_k^p$
 
-**The class $\Sigma_k^p$.** For a natural number $k$, a decision problem $L$ is in
+For a natural number $k$, a decision problem $L$ is in
 $\Sigma_k^p$ when there are a polynomial $p$ with natural-number coefficients and a
 polynomial-time computable Boolean function $R$ of a bitstring and a list of bitstrings such
 that for every bitstring $x$, $L(x)$ is true if and only if

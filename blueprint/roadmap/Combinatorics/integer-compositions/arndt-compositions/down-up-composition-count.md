@@ -1,6 +1,6 @@
 # Down/up compositions
 
-**Down/up compositions.** A down/up (descending wiggly) composition of $n$ with $k$ parts is a
+A down/up (descending wiggly) composition of $n$ with $k$ parts is a
 sequence $(\sigma_1, \dots, \sigma_k)$ of positive integers with sum $n$ such that
 $\sigma_1 > \sigma_2 < \sigma_3 > \sigma_4 < \cdots$, that is, $\sigma_i > \sigma_{i+1}$ for odd
 $i$ and $\sigma_i < \sigma_{i+1}$ for even $i$. For $n, k, j \ge 0$, $w(n, k, j)$ is the number of

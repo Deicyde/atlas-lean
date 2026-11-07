@@ -1,6 +1,6 @@
 # Brenti's excedance and cycle generating function
 
-**Brenti's excedance and cycle generating function.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra and $x, q \in R$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ let
 $e(\sigma)$ be the number of $i$ with $\sigma(i) > i$ and $c(\sigma)$ the number of cycles of
 $\sigma$, fixed points included. Let

@@ -1,6 +1,6 @@
 # Mixed partial derivatives via the second Fréchet derivative
 
-**Mixed partial derivatives via the second Fréchet derivative.** Let
+Let
 $f : \mathbb{R}^n \to \mathbb{R}$ be twice continuously differentiable, write $e_k$ for the $k$-th
 standard basis vector of $\mathbb{R}^n$ and $\partial_k g$ for the partial derivative of a
 function $g$ along the $k$-th coordinate axis, and let $Df$ be the Fréchet derivative of $f$,

@@ -1,6 +1,6 @@
 # Alternating series with a two-step continued fraction pattern
 
-**Alternating series with a two-step continued fraction pattern.** Let $(u_i)_{i \ge 0}$ be
+Let $(u_i)_{i \ge 0}$ be
 positive integers with $u_0 = 1$, and let $x$ be an irrational real number with
 $\sum_{i \ge 0} (-1)^i / u_i = x$. Write $x = [a_0; a_1, a_2, \dots]$ for its continued fraction
 expansion and $p_n / q_n = [a_0; a_1, \dots, a_n]$ for its convergents, with $q_0 = 1$ and

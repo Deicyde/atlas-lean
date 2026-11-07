@@ -1,6 +1,6 @@
 # Quotients by powers of a prime in $T_K$
 
-**Quotients by powers of a prime in $T_K$.** Let $K$ be a number field with ring of integers
+Let $K$ be a number field with ring of integers
 $\mathcal{O}_K$, and let $P \in T_K$, that is, $P$ is a prime ideal of $\mathcal{O}_K$ lying over
 $2$ with ramification index $1$ and inertia degree $1$ over $\mathbb{Z}$. Then for every $n \ge 1$
 the ring $\mathcal{O}_K / P^n$ is isomorphic to $\mathbb{Z} / 2^n \mathbb{Z}$.

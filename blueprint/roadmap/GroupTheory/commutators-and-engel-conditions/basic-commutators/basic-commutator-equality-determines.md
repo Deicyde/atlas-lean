@@ -1,6 +1,6 @@
 # Gaglione–Spellman claim on equal commutators of basic commutators
 
-**Gaglione–Spellman claim on equal commutators of basic commutators.** The proposition
+The proposition
 (Kourovka Problem 11.20, A. Gaglione and D. Spellman) that the following holds. Write
 $[x, y] = x^{-1} y^{-1} x y$. For every linearly ordered type $\alpha$ and every linear order $<$
 on the formal commutators in the letters $\alpha$ that orders the letters as in $\alpha$ and puts

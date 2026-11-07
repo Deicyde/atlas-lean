@@ -1,6 +1,6 @@
 # Single-pass evaluation of a dense CNF encoding
 
-**Single-pass evaluation of a dense CNF encoding.** The scan $E(r, u, v, f)$ takes the formula
+The scan $E(r, u, v, f)$ takes the formula
 bits $r$ still to be read, the assignment bits $u$ not yet used by the current clause, the bits
 $v$ already used by it (most recent first) and a boolean $f$ recording whether the current clause
 is already satisfied; write $x u'$ for the list with first bit $x$ followed by the list $u'$. It

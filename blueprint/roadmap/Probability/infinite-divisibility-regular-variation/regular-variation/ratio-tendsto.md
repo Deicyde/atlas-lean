@@ -1,3 +1,3 @@
 # Ratio limit of a regularly varying function
 
-**Ratio limit of a regularly varying function.** A regularly varying function has the expected ratio limit.
+A regularly varying function has the expected ratio limit.

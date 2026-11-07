@@ -1,6 +1,6 @@
 # The coefficient $b_1(1, 0, 0, 3)$
 
-**The coefficient $b_1(1, 0, 0, 3)$.** The coefficient $b_1(1, 0, 0, 3)$ of Li's
+The coefficient $b_1(1, 0, 0, 3)$ of Li's
 Definition 5 equals $0$.
 
 ## Sources

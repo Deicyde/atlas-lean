@@ -1,6 +1,6 @@
 # One literal routine of the cell-shift generator
 
-**One literal routine of the cell-shift generator.** Let $i < N$ be a situation, $k < K$ a
+Let $i < N$ be a situation, $k < K$ a
 stack, $c$ a clause kind and $l < 3$ a literal index. Let $F$ be counter values whose scratch
 counters ($Q$, the copy buffer, the multiplication buffer and the two comparison buffers) are
 $0$, let $b$ be the value under $F$ of the base counter of literal $l$, and let $a$ be the

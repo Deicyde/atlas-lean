@@ -1,6 +1,6 @@
 # Strip scan from a point
 
-**Strip scan from a point.** Let $K$ be a linearly ordered field, and write
+Let $K$ be a linearly ordered field, and write
 $d(p, q) = (p_1 - q_1)^2 + (p_2 - q_2)^2$ for the squared distance between points
 $p = (p_1, p_2)$ and $q = (q_1, q_2)$ of $K^2$. Let $\delta \in K$, let $p = (p_1, p_2)$ be a
 point of $K^2$ and $c_1, \dots, c_m$ a list of points $c_l = (x_l, y_l)$ of $K^2$, and let

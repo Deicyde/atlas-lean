@@ -1,6 +1,6 @@
 # Sentinel insertion, cell by cell
 
-**Sentinel insertion, cell by cell.** Let $S$ be a store of $n$ cells, each empty or holding a
+Let $S$ be a store of $n$ cells, each empty or holding a
 node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is not NIL, and the
 cell it points to is allocated; write $S[c]$ for the node at an allocated cell $c$. Let $S'$ be
 the store returned by sentinel insertion of $x$ after $y$. Then for every cell $z$, the content of

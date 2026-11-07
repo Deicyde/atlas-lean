@@ -1,6 +1,6 @@
 # Polynomially weighted binomial Fibonacci sums
 
-**Polynomially weighted binomial Fibonacci sums.** Let $F_n$ denote the Fibonacci numbers,
+Let $F_n$ denote the Fibonacci numbers,
 $S(j, i)$ the Stirling numbers of the second kind and $(N)_i = N(N-1)\cdots(N-i+1)$ the falling
 factorial. Let $A_0, A_1, A_2, \dots$ be complex numbers and $N$, $t$ natural numbers, and put
 $h(y) = \sum_{j=0}^{t} A_j y^j$. Then

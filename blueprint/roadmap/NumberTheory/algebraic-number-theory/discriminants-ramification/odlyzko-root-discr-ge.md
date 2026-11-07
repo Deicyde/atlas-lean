@@ -1,6 +1,6 @@
 # Odlyzko's root discriminant bound in degree at least 18
 
-**Odlyzko's root discriminant bound in degree at least 18.** Let $K$ be a totally complex
+Let $K$ be a totally complex
 number field of degree $n = [K : \mathbb{Q}] \ge 18$ and discriminant $d_K$. Then
 $|d_K| \ge 8.25^n$; equivalently, the root discriminant $|d_K|^{1/n}$ of $K$ is at least $8.25$.
 

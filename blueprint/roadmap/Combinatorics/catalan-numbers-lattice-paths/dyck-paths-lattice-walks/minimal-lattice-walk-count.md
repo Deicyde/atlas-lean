@@ -1,6 +1,6 @@
 # Minimal lattice walks with unit and diagonal steps
 
-**Minimal lattice walks with unit and diagonal steps.** For all natural numbers $a$ and $b$,
+For all natural numbers $a$ and $b$,
 the number of sequences of $\max(a, b)$ steps, each taken from $\{(1,0), (0,1), (1,1)\}$,
 whose sum is $(a, b)$ equals $\binom{\max(a, b)}{\min(a, b)}$.
 

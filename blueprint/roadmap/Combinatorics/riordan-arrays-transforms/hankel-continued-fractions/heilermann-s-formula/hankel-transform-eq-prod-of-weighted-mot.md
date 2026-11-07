@@ -1,6 +1,6 @@
 # Heilermann's formula for weighted Motzkin arrays
 
-**Heilermann's formula for weighted Motzkin arrays.** Let $K$ be a commutative ring, let
+Let $K$ be a commutative ring, let
 $\alpha$, $\beta$ be sequences in $K$, let $\mu_0 \in K$, and let $(M_{n,j})_{n, j \ge 0}$ be an
 array in $K$ with $M_{0,0} = \mu_0$ and, for all $n, j \ge 0$, $M_{0,j+1} = 0$,
 $M_{n+1,0} = \alpha_0 M_{n,0} + \beta_1 M_{n,1}$ and

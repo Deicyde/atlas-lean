@@ -1,6 +1,6 @@
 # Binary Chvátal–Sankoff constant
 
-**Binary Chvátal–Sankoff constant.** Let $L_n$ be the length of a longest common subsequence
+Let $L_n$ be the length of a longest common subsequence
 of two independent uniformly random binary strings of length $n$. The binary Chvátal–Sankoff
 constant is the real number $\liminf_{n \to \infty} \mathbb{E}[L_n]/n$.
 

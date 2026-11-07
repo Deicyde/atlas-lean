@@ -1,6 +1,6 @@
 # Products of unitary divisors of coprime numbers
 
-**Products of unitary divisors of coprime numbers.** Let $m$ and $n$ be coprime natural
+Let $m$ and $n$ be coprime natural
 numbers. If $a$ is a unitary divisor of $m$ and $b$ is a unitary divisor of $n$, then $ab$ is a
 unitary divisor of $mn$.
 

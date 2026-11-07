@@ -1,6 +1,6 @@
 # Inversion success probability
 
-**Inversion success probability.** Let $f$ be a family of functions, $f_n$ mapping $n$-bit
+Let $f$ be a family of functions, $f_n$ mapping $n$-bit
 strings to bitstrings, and let $A$ be an inverter mapping a triple $(n, y, r)$ of a length $n$,
 an output $y$ and a coin string $r$ to a bitstring. For natural numbers $n$ and $m$, the
 inversion success probability of $A$ against $f$ at length $n$ with $m$ coins is the fraction of

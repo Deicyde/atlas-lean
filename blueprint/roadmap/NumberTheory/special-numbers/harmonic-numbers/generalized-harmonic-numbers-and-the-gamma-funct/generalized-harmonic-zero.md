@@ -1,6 +1,6 @@
 # The zeroth generalized harmonic number
 
-**The zeroth generalized harmonic number.** For every real $s$, the generalized harmonic
+For every real $s$, the generalized harmonic
 number $H_n^{(s)} = \sum_{k=1}^{n} 1/k^s$ vanishes at $n = 0$: $H_0^{(s)} = 0$.
 
 ## Sources

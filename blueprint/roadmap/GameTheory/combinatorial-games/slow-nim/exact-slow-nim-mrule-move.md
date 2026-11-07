@@ -1,6 +1,6 @@
 # The M-move
 
-**The M-move.** For a position $x$ on $n + 1$ piles, the M-move keeps one pile, chosen by the
+For a position $x$ on $n + 1$ piles, the M-move keeps one pile, chosen by the
 M-rule as the first pile holding the smallest even entry if some entry of $x$ is even, and
 otherwise the first pile holding a largest entry. It removes one stone from every other pile,
 where an empty pile stays empty.

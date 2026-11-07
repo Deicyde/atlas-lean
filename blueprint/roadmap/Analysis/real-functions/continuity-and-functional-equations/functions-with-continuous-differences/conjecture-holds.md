@@ -1,6 +1,6 @@
 # De Bruijn's theorem on continuous differences (Erdős Problem 907)
 
-**De Bruijn's theorem on continuous differences (Erdős Problem 907).** Let
+Let
 $f : \mathbb{R} \to \mathbb{R}$ be a function such that for every $h > 0$ the function
 $x \mapsto f(x + h) - f(x)$ is continuous. Then there are functions
 $g, a : \mathbb{R} \to \mathbb{R}$ with $g$ continuous and $a$ additive, that is,

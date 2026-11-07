@@ -1,6 +1,6 @@
 # Extended Strachey construction
 
-**Extended Strachey construction.** Let $m$ be a natural number, let $q = (2m+1)^2$, and let
+Let $m$ be a natural number, let $q = (2m+1)^2$, and let
 $A_0$, $A_1$, $B_1$, $B_2$ be $(2m+1) \times (2m+1)$ arrays of natural numbers. Suppose that every
 entry of $A_0$ is $0$ or $3$, every row of $A_0$ has exactly $m+1$ zeros, and the main diagonal
 and the anti-diagonal of $A_0$ each have exactly $m+1$ threes; that every entry of $A_1$ is $1$

@@ -1,6 +1,6 @@
 # Cross terms of the $d_i$ modulo $4$
 
-**Cross terms of the $d_i$ modulo $4$.** Let
+Let
 $a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$ have sums $b_i$, alternating sums
 $c_i$ and differences $d_0, \dots, d_7$. Then the following five congruences hold modulo $4$:
 $2(d_0 d_2 + d_4 d_6 + d_1 d_3 + d_5 d_7) \equiv b_0 b_2 + b_1 b_3 + c_0 c_2 + c_1 c_3$;

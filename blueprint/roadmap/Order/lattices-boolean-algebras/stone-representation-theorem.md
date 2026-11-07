@@ -1,6 +1,6 @@
 # Stone representation theorem
 
-**Stone representation theorem.** Every Boolean algebra $B$ embeds in a power set algebra: there
+Every Boolean algebra $B$ embeds in a power set algebra: there
 are a set $X$ and an injective map $f$ from $B$ to the power set of $X$ such that
 $f(a \sqcup b) = f(a) \cup f(b)$ and $f(a \sqcap b) = f(a) \cap f(b)$ for all $a, b \in B$,
 $f(\top) = X$ and $f(\bot) = \emptyset$.

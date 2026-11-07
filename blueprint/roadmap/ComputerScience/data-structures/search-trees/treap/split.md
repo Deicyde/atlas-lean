@@ -1,6 +1,6 @@
 # Treap split
 
-**Treap split.** Let the keys come from a linear order, and write $(L, k, v, q, R)$ for the
+Let the keys come from a linear order, and write $(L, k, v, q, R)$ for the
 node with left subtree $L$, key $k$, value $v$, priority $q$ and right subtree $R$. Splitting
 a tree at a pivot $p$ returns a split result, defined by recursion on the tree. The empty tree
 splits into two empty trees and no entry. For a node $(L, k, v, q, R)$: if $k < p$, split $R$

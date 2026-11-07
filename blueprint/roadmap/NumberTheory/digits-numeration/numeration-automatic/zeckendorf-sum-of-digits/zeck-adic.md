@@ -1,6 +1,6 @@
 # The Zeckendorf-adic integers
 
-**The Zeckendorf-adic integers.** The Zeckendorf-adic integers $\mathbb{X}$ are the digit
+The Zeckendorf-adic integers $\mathbb{X}$ are the digit
 sequences $x = (x_k)_{k \ge 0}$ with $x_k \in \{0, 1\}$ such that $x_0 = x_1 = 0$ and no two
 consecutive digits are both $1$, that is, $x_k x_{k+1} = 0$ for every $k$.
 

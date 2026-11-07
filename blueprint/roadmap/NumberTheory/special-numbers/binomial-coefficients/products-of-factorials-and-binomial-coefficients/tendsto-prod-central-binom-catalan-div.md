@@ -1,6 +1,6 @@
 # Asymptotics of products of central binomial coefficients and Catalan numbers
 
-**Asymptotics of products of central binomial coefficients and Catalan numbers.** Let $A$ be
+Let $A$ be
 the Glaisher–Kinkelin constant, let $\mathrm{Cat}_n$ denote the $n$-th Catalan number, and put
 $C_{2,1} = 2^{5/24} A^{3/2} / \left((2\pi)^{1/2} e^{1/8}\right)$. As $m \to \infty$, the ratio of
 $\prod_{n=1}^{m} \binom{2n}{n}$ to $2^{m^2} (4e/\pi)^{m/2} / m^{m/2 + 3/8}$ tends to $C_{2,1}$,

@@ -1,6 +1,6 @@
 # The DFT sum at a root of unity depends only on the frequency modulo the length
 
-**The DFT sum at a root of unity depends only on the frequency modulo the length.** Let $n$
+Let $n$
 be a natural number and let $\omega \in \mathbb{C}$ satisfy $\omega^n = 1$. Then for every
 $f : \mathbb{N} \to \mathbb{C}$ and every natural number $K$, the discrete Fourier sum of length $n$
 at frequency $K$ equals the one at frequency $K \bmod n$:

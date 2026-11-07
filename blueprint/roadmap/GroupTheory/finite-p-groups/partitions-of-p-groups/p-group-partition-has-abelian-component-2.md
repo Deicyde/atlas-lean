@@ -1,6 +1,6 @@
 # Every partition of a finite $p$-group has an abelian component
 
-**Every partition of a finite $p$-group has an abelian component.** For every prime $p$, every
+For every prime $p$, every
 finite $p$-group $G$ and every partition $C$ of $G$ (a set of proper subgroups of $G$ whose union is
 $G$ and any two distinct members of which intersect in the trivial subgroup), some member $H$ of $C$
 is abelian, that is, $xy = yx$ for all $x, y \in H$.

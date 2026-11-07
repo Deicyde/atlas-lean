@@ -1,3 +1,3 @@
 # Visit probabilities are at most one
 
-**Visit probabilities are at most one.** Visit probabilities are at most `1`.
+Visit probabilities are at most `1`.

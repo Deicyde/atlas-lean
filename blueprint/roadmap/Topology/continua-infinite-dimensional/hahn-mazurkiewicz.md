@@ -1,6 +1,6 @@
 # Hahn–Mazurkiewicz theorem
 
-**Hahn–Mazurkiewicz theorem.** Let $X$ be a nonempty topological space that is compact,
+Let $X$ be a nonempty topological space that is compact,
 connected, locally connected, Hausdorff and second countable. Then there is a continuous
 surjection from the closed unit interval $[0,1]$ onto $X$.
 

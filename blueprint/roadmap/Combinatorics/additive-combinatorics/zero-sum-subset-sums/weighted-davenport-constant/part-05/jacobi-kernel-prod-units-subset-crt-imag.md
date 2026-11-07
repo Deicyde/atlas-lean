@@ -1,6 +1,6 @@
 # Chinese remainder lifts into the Jacobi agreement set
 
-**Chinese remainder lifts into the Jacobi agreement set.** Let $n$ be an odd squarefree natural
+Let $n$ be an odd squarefree natural
 number, $p'$ a prime divisor of $n$ and $n' = n/p'$. For a residue $x$ modulo $N$ and an odd $m$,
 write $(x/m)$ for the Jacobi symbol $(a/m)$ of the representative $0 \le a < N$ of $x$. Let $U(m)$
 be the group of units of $\mathbb{Z}_m = \mathbb{Z}/m\mathbb{Z}$, let

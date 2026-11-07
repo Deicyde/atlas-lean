@@ -1,6 +1,6 @@
 # Gibonacci identity with Fibonacci-square denominators
 
-**Gibonacci identity with Fibonacci-square denominators.** Let $G : \mathbb{Z} \to \mathbb{R}$,
+Let $G : \mathbb{Z} \to \mathbb{R}$,
 written $j \mapsto G_j$, satisfy $G_{j+2} = G_{j+1} + G_j$ for every integer $j$, and let $F_m$ be
 the Fibonacci numbers, extended to negative indices by $F_{-m} = (-1)^{m+1} F_m$. Then for all
 integers $r$ and $k$,

@@ -1,6 +1,6 @@
 # The sum-plus-product family is $1$-vanishing over $\mathbb{Z}/6\mathbb{Z}$
 
-**The sum-plus-product family is $1$-vanishing over $\mathbb{Z}/6\mathbb{Z}$.** Let $F_1$ be
+Let $F_1$ be
 the family over $\mathbb{Z}/6\mathbb{Z}$ sending a block $(b_1, \dots, b_l)$ to
 $\sum_i b_i + \prod_i b_i$. Then $F_1$ is $1$-vanishing: every sequence over
 $\mathbb{Z}/6\mathbb{Z}$ contains a block of consecutive terms, of some length $l > 1$, on which

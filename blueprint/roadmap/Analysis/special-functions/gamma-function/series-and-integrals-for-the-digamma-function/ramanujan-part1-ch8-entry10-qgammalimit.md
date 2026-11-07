@@ -1,6 +1,6 @@
 # Ramanujan's integral for $\psi(1 - 1/x)$ (Chapter 8, Entry 10)
 
-**Ramanujan's integral for $\psi(1 - 1/x)$ (Chapter 8, Entry 10).** Let $x$ be a complex
+Let $x$ be a complex
 number with $\operatorname{Re} x < 0$. For real $u$ put $u^x = e^{x \log |u|}$ when $u \ne 0$,
 and define $K_x(0) = 0$, $K_x(1) = -1/x$ and $K_x(u) = \frac{1 - u}{u\,(u^x - 1)}$ for every
 other real $u$, the quotient being taken to be $0$ at $u = -1$, where its denominator vanishes.

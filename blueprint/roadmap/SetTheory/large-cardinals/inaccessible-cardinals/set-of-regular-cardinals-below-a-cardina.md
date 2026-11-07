@@ -1,6 +1,6 @@
 # Set of regular cardinals below a cardinal
 
-**Set of regular cardinals below a cardinal.** The **regular cardinals below `κ`**, carried as initial ordinals — parallel to
+The **regular cardinals below `κ`**, carried as initial ordinals — parallel to
 `inaccessibleBelow`, and definitionally the stationary set in `IsWeaklyMahlo`.
 Spelled with Mathlib's `Ordinal.IsInitial`.
 

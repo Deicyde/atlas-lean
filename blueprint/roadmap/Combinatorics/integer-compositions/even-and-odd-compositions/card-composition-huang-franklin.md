@@ -1,6 +1,6 @@
 # Huang's Franklin-type identity for compositions
 
-**Huang's Franklin-type identity for compositions.** Let $k \ge 1$, $m \ge 0$ and $n \ge 1$.
+Let $k \ge 1$, $m \ge 0$ and $n \ge 1$.
 The number of compositions of $n$ with exactly $m$ parts not congruent to $1$ modulo $k$, all of
 which are greater than $k$, equals the number of compositions of $n + k - 1$ with exactly $m$
 parts less than $k$ in which every part less than $k$ is preceded by a part at least $k$ and is

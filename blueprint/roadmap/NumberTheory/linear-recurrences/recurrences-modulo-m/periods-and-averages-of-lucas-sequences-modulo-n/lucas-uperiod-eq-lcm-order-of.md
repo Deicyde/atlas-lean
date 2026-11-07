@@ -1,6 +1,6 @@
 # Wyler's theorem on the period of a Lucas sequence
 
-**Wyler's theorem on the period of a Lucas sequence.** Let $U$ be the Lucas sequence with
+Let $U$ be the Lucas sequence with
 integer parameters $P$ and $Q$, where the pair $(P, Q)$ is nondegenerate, and write $\pi(m)$ and
 $\rho(m)$ for the period and the restricted period of $U$ modulo $m$. Let $m \ge 2$ with
 $\gcd(m, Q) = 1$, let $h$ be the multiplicative order of $Q$ modulo $m$, and put

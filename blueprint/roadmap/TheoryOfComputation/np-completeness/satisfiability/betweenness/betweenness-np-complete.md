@@ -1,6 +1,6 @@
 # BETWEENNESS is NP-complete
 
-**BETWEENNESS is NP-complete.** The BETWEENNESS decision problem belongs to NP, and every
+The BETWEENNESS decision problem belongs to NP, and every
 decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

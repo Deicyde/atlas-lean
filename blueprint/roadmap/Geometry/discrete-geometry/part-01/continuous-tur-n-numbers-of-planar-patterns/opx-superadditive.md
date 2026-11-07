@@ -1,6 +1,6 @@
 # Superadditivity of the continuous Turán number
 
-**Superadditivity of the continuous Turán number.** For every set $P \subseteq \mathbb{R}^2$
+For every set $P \subseteq \mathbb{R}^2$
 and all real numbers $m, n > 0$,
 $\operatorname{opx}(m, P) + \operatorname{opx}(n, P) \le \operatorname{opx}(m + n, P)$.
 

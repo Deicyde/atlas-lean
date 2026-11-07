@@ -1,6 +1,6 @@
 # Three terms coprime to one prime force a Jacobi-weighted zero sum
 
-**Three terms coprime to one prime force a Jacobi-weighted zero sum.** Let $n$ be a squarefree
+Let $n$ be a squarefree
 natural number all of whose prime divisors are at least $7$, let
 $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$, and let $S(n)$ be the set of units $u$ of $\mathbb{Z}_n$
 whose Jacobi symbol $(a/n)$ is $1$, where $0 \le a < n$ is the representative of $u$. Let

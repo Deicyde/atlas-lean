@@ -1,6 +1,6 @@
 # Upper bound for the weighted Davenport constant
 
-**Upper bound for the weighted Davenport constant.** Let $G$ be an additive commutative
+Let $G$ be an additive commutative
 monoid, $A$ a finite set of natural numbers, $D_A(G)$ the $A$-weighted Davenport constant of
 $G$ and $\ell$ a natural number. If no sequence over $G$ of length $\ell$ is $A$-weighted
 zero-sum free, that is, every sequence over $G$ of length $\ell$ has a non-empty $A$-weighted

@@ -1,6 +1,6 @@
 # Rice's theorem for acceptable numberings
 
-**Rice's theorem for acceptable numberings.** Let $\varphi$ assign to each natural number $e$
+Let $\varphi$ assign to each natural number $e$
 a partial function $\varphi_e : \mathbb{N} \rightharpoonup \mathbb{N}$, and suppose that every
 $\varphi_e$ is partial computable, that the universal function $(e, n) \mapsto \varphi_e(n)$ is
 partial computable, that every partial computable function

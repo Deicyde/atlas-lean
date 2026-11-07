@@ -1,6 +1,6 @@
 # Maximal sets of lanes and noncrossing partitions
 
-**Maximal sets of lanes and noncrossing partitions.** For every $n \ge 0$, the maximal sets of
+For every $n \ge 0$, the maximal sets of
 lanes of the standard road intersection of size $n$, in which every lane is allowed, are in
 bijection with the noncrossing partitions of $\{0, \dots, n-1\}$, and their number is the Catalan
 number $C_n$.

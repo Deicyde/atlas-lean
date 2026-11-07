@@ -1,6 +1,6 @@
 # The $n$-approximabilities as maxima over divisors
 
-**The $n$-approximabilities as maxima over divisors.** Let $n \ge 1$, let $\lambda_n$ and
+Let $n \ge 1$, let $\lambda_n$ and
 $\mu_n$ be the $n$-Lagrange and $n$-Markoff approximabilities, and let $\xi \ne \xi'$ be irrational
 real numbers. Then $\lambda_n(\xi) = \max_{g \mid n} \lambda_1(g\xi)$ and
 $\mu_n(\xi, \xi') = \max_{g \mid n} \mu_1(g\xi, g\xi')$, where $g$ runs over the positive divisors

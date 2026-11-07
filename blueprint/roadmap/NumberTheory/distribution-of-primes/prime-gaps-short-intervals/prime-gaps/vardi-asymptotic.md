@@ -1,6 +1,6 @@
 # Vardi's prime-gap asymptotic
 
-**Vardi's prime-gap asymptotic.** Let $\pi$ be the prime-counting function and, for real $x$,
+Let $\pi$ be the prime-counting function and, for real $x$,
 let $d(x)$ be the largest prime gap $p_{n+1} - p_n$ over the primes $p_n < x$. The proposition
 states that for every real $C > 1$,
 

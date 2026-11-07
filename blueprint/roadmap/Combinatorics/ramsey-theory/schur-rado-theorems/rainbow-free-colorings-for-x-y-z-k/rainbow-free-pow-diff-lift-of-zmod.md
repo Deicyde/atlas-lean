@@ -1,6 +1,6 @@
 # Rainbow-free colorings of $\mathbb{Z}/n\mathbb{Z}$ lift to the positive integers
 
-**Rainbow-free colorings of $\mathbb{Z}/n\mathbb{Z}$ lift to the positive integers.** Let $n$
+Let $n$
 and $k$ be natural numbers and let $c$ be a coloring of $\mathbb{Z}/n\mathbb{Z}$ with three colors
 that is rainbow-free for $x - y = z^k$: there are no $x, y, z \in \mathbb{Z}/n\mathbb{Z}$ with
 $x - y = z^k$ whose colors $c(x)$, $c(y)$, $c(z)$ are pairwise distinct. Then the coloring

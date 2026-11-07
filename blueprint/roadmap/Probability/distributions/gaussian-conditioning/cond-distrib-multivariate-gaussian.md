@@ -1,6 +1,6 @@
 # Gaussian conditioning (Schur complement)
 
-**Gaussian conditioning (Schur complement).** Let $\iota$ and $\kappa$ be finite index sets
+Let $\iota$ and $\kappa$ be finite index sets
 and let $V$ be a measurable random vector in $\mathbb{R}^{\iota \sqcup \kappa}$ on a probability
 space, with blocks $X \in \mathbb{R}^\iota$ and $Y \in \mathbb{R}^\kappa$. Suppose $V$ has law
 $N(\mu, S)$ with $S$ positive semidefinite, write $\mu_X, \mu_Y$ for the blocks of $\mu$ and

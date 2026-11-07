@@ -1,6 +1,6 @@
 # The ascent-to-descent rearrangement is injective
 
-**The ascent-to-descent rearrangement is injective.** The ascent-to-descent rearrangement
+The ascent-to-descent rearrangement
 $\nu$ is injective on finite words over $\mathbb{N}$: if $\nu(x) = \nu(x')$, then $x = x'$.
 
 Since $\nu$ rearranges letters, this is the same as injectivity of $\nu$ on the rearrangements of

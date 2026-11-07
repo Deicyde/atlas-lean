@@ -1,6 +1,6 @@
 # Two prime factors ≡ −3 mod 8 of ββ̄γγ̄ (C₄²)
 
-**Two prime factors ≡ −3 mod 8 of ββ̄γγ̄ (C₄²).** Let $a$ be an integer-valued function on
+Let $a$ be an integer-valued function on
 $C_4^2 = \mathbb{Z}/4 \times \mathbb{Z}/4$, with associated integers $b_i$, $c_i$ $(0 \le i \le 3)$
 and Gaussian integers $\beta$, $\gamma$, write $\beta\bar\beta$, $\gamma\bar\gamma$ for the norms of
 $\beta$ and $\gamma$, let $P$ be the set of primes $p \equiv -3 \pmod 8$, and put

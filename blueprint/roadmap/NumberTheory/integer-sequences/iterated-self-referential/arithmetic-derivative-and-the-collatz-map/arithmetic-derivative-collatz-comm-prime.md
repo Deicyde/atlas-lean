@@ -1,6 +1,6 @@
 # Prime tetrations where the arithmetic derivative and the Collatz map commute
 
-**Prime tetrations where the arithmetic derivative and the Collatz map commute.** Let $D$ be
+Let $D$ be
 the arithmetic derivative and $C$ the accelerated Collatz map. For a prime $p$,
 $D(C(p^p)) = C(D(p^p))$ if and only if $C(p^p) = q^q$ for some prime $q$.
 

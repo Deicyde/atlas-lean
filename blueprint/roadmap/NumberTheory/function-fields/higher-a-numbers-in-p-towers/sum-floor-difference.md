@@ -1,6 +1,6 @@
 # Difference of the floor sums for $\tau$ and $\gamma$
 
-**Difference of the floor sums for $\tau$ and $\gamma$.** Let $p$ be a prime, $d$ a natural
+Let $p$ be a prime, $d$ a natural
 number dividing $p - 1$, and $r$ and $n$ natural numbers. Put $\tau = (p + 1)/d$ and
 $\gamma = ((p - 1) r + (p + 1))/d$, let $\tau_D$ be the denominator of $\tau$ in lowest terms,
 and for a rational $x$ let $A_{x^{-1}}(n)$ be the periodic correction of Proposition 4. Then

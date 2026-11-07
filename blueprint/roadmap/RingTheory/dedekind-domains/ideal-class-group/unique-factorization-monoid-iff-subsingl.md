@@ -1,6 +1,6 @@
 # Dedekind domains: UFD iff trivial class group
 
-**Dedekind domains: UFD iff trivial class group.** A Dedekind domain $R$ is a unique
+A Dedekind domain $R$ is a unique
 factorization domain if and only if its ideal class group is trivial.
 
 ## Sources

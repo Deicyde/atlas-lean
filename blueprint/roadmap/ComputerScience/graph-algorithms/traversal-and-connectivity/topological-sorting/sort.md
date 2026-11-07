@@ -1,6 +1,6 @@
 # Kahn's topological sort
 
-**Kahn's topological sort.** Run Kahn's algorithm with a first-in first-out queue on a finite
+Run Kahn's algorithm with a first-in first-out queue on a finite
 directed graph $G$ whose vertices are enumerated as $v_1, \dots, v_n$. Initially every vertex is
 remaining, the counter of each vertex is its number of in-neighbours, and the queue holds the
 vertices with no in-neighbours in enumeration order. At each of $n$ steps, if the queue is nonempty,

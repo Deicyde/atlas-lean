@@ -1,6 +1,6 @@
 # Ramanujan's asymptotic expansion of $((x + 1/2)/e^{\psi(x+1)})^{4n}$
 
-**Ramanujan's asymptotic expansion of $((x + 1/2)/e^{\psi(x+1)})^{4n}$.** For real $x$ let
+For real $x$ let
 $\psi(x) = \Gamma'(x)/\Gamma(x)$ and $a(x) = e^{\psi(x+1)}$. Then $a(x) \to \infty$ as
 $x \to \infty$, and for every complex number $n$,
 

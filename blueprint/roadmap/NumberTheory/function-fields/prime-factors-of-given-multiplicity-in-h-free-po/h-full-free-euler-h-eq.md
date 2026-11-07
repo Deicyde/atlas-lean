@@ -1,6 +1,6 @@
 # Unfolding the Euler product $H_{N_h, S_\ell}$
 
-**Unfolding the Euler product $H_{N_h, S_\ell}$.** Let $F$ be a finite field, let $h$ and
+Let $F$ be a finite field, let $h$ and
 $\ell$ be natural numbers and let $u$ be a complex number. Then $H_{N_h, S_\ell}(u)$ equals the
 complex product over all monic irreducible polynomials $P$ over $F$
 

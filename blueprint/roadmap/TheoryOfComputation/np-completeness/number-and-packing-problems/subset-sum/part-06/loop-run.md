@@ -1,6 +1,6 @@
 # The summing loop of the SUBSET-SUM verifier
 
-**The summing loop of the SUBSET-SUM verifier.** Let $N$ be a natural number and $t$ a list
+Let $N$ be a natural number and $t$ a list
 of symbols. Write $\langle m \rangle$ for the canonical binary code of a natural number $m$, least
 significant bit first, and put a bit list on a stack as the list of its name-bit symbols. Let $n$
 and $s$ be natural numbers, $r$ and $w$ bit lists and $v$ a Boolean, with $|r| \le n$ and

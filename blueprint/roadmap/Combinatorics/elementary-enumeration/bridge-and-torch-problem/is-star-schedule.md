@@ -1,6 +1,6 @@
 # Star schedules
 
-**Star schedules.** Consider the star model on the star graph $\mathcal{S}(k)$, which has a
+Consider the star model on the star graph $\mathcal{S}(k)$, which has a
 center and $k$ leaves, with $n$ persons and $t$ torches. A finite list $\sigma$ of parallel steps
 (each a list of star movements) is a star schedule when the following holds. Start from the
 configuration with every person and all $t$ torches at the center and no torch at any leaf, and

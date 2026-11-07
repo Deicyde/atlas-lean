@@ -1,6 +1,6 @@
 # Transitive Mallows representations and continued fractions
 
-**Transitive Mallows representations and continued fractions.** Let $\alpha \in (0, 1)$ be
+Let $\alpha \in (0, 1)$ be
 irrational with continued fraction expansion $\alpha = [0; a_1, a_2, \ldots]$. The Mallows
 representation of $\alpha$ is transitive, that is, every finite word over $\{L, M, R\}$ occurs
 in it as a factor, if and only if every finite word over the positive integers occurs as a

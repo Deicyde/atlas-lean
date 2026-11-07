@@ -1,6 +1,6 @@
 # $(p,q)$-binomial coefficient
 
-**$(p,q)$-binomial coefficient.** Let $R$ be a commutative semiring and $p, q \in R$. For
+Let $R$ be a commutative semiring and $p, q \in R$. For
 natural numbers $n$ and $k$, the $(p,q)$-binomial coefficient $\binom{n}{k}_{p,q} \in R$ is
 defined recursively by $\binom{n}{0}_{p,q} = 1$, $\binom{0}{k+1}_{p,q} = 0$ and
 $\binom{n+1}{k+1}_{p,q} = p^{n-k} \binom{n}{k}_{p,q} + q^{k+1} \binom{n}{k+1}_{p,q}$, where $n - k$

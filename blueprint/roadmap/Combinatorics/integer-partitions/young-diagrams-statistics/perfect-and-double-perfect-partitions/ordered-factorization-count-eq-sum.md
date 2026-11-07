@@ -1,6 +1,6 @@
 # Recursion for the number of ordered factorizations
 
-**Recursion for the number of ordered factorizations.** For every integer $n \ge 2$, the
+For every integer $n \ge 2$, the
 number $f(n)$ of ordered factorizations of $n$ into factors greater than $1$ satisfies
 $f(n) = \sum_{d \mid n,\ d < n} f(d)$, the sum running over the proper divisors $d$ of $n$.
 

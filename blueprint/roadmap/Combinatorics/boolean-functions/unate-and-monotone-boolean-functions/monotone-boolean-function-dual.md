@@ -1,6 +1,6 @@
 # The dual of a monotone Boolean function is monotone
 
-**The dual of a monotone Boolean function is monotone.** If a Boolean function $f$ on $n$
+If a Boolean function $f$ on $n$
 variables is monotone, then so is its dual $f^\star$, defined by $f^\star(x) = \neg f(\bar{x})$,
 where $\bar{x}$ is the coordinatewise complement of $x \in \{0,1\}^n$.
 

@@ -1,6 +1,6 @@
 # Normal subgroups of finite $D_\pi$-groups are $D_\pi$-groups
 
-**Normal subgroups of finite $D_\pi$-groups are $D_\pi$-groups.** Kourovka Problem 13.33 has a
+Kourovka Problem 13.33 has a
 positive answer: for every set $\pi$ of natural numbers, every normal subgroup of a finite
 $D_\pi$-group is itself a $D_\pi$-group.
 

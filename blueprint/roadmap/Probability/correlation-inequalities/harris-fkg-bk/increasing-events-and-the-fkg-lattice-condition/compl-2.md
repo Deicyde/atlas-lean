@@ -1,3 +1,3 @@
 # Complement of a decreasing event is increasing
 
-**Complement of a decreasing event is increasing.** The complement of a decreasing event is increasing (`IsLowerSet.compl`).
+The complement of a decreasing event is increasing (`IsLowerSet.compl`).

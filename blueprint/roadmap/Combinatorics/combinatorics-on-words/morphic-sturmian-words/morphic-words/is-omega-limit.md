@@ -1,6 +1,6 @@
 # Infinite word as the limit of iterates
 
-**Infinite word as the limit of iterates.** Let $f$ send each letter of an alphabet $A$ to a
+Let $f$ send each letter of an alphabet $A$ to a
 finite word over $A$, extended to finite words by concatenation, with iterates $f^n$ (where $f^0$
 is the identity), let $a \in A$, and let $w = w_0 w_1 w_2 \cdots$ be an infinite word over $A$.
 Then $w$ is the limit of the iterates of $f$ at $a$ when the lengths of the words $f^n(a)$

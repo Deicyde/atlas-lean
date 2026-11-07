@@ -1,6 +1,6 @@
 # Johnston's range for Schoenfeld's inequality
 
-**Johnston's range for Schoenfeld's inequality.** For every real $x$ with
+For every real $x$ with
 $2657 \le x \le 1.101 \cdot 10^{26}$,
 
 $$

@@ -1,6 +1,6 @@
 # Left-most node at depth zero
 
-**Left-most node at depth zero.** For every TRIP-Stern tree $T$, the left-most node of $T$ at
+For every TRIP-Stern tree $T$, the left-most node of $T$ at
 depth $0$ is the seed of $T$.
 
 ## Sources

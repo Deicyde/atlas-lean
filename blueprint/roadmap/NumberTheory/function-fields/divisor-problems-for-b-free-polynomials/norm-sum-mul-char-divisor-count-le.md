@@ -1,6 +1,6 @@
 # Character sums of the $h$-divisor function over monic polynomials
 
-**Character sums of the $h$-divisor function over monic polynomials.** Let $F$ be a finite
+Let $F$ be a finite
 field with $q$ elements, let $m \in F[T]$ be monic, and let $\chi$ be a non-principal Dirichlet
 character modulo $m$: a multiplicative character of $F[T]/(m)$, vanishing off the units, other
 than the principal one, evaluated at $f \in F[T]$ through the class of $f$ modulo $m$. Let

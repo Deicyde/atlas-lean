@@ -1,6 +1,6 @@
 # Fibonacci and iccanobiF iterates of a
 
-**Fibonacci and iccanobiF iterates of a.** Let $\varrho_F$ be the Fibonacci substitution
+Let $\varrho_F$ be the Fibonacci substitution
 $a \mapsto ab$, $b \mapsto a$ and let $\varrho_F'$ be the iccanobiF substitution $a \mapsto ba$,
 $b \mapsto a$, acting on finite words over the letters $a$ and $b$; thus $\varrho_F^m(a)$ is the
 finite Fibonacci word $f_m$ with each $0$ written as $a$ and each $1$ as $b$. Then for every

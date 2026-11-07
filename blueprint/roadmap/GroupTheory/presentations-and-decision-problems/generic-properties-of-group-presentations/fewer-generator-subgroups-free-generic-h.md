@@ -1,6 +1,6 @@
 # Generically, subgroups with fewer generators are free (Kourovka 11.75)
 
-**Generically, subgroups with fewer generators are free (Kourovka 11.75).** Let $m \ge 2$ and
+Let $m \ge 2$ and
 $n \ge 1$ be natural numbers and let $F_m$ be the free group on $x_1, \dots, x_m$. For each $d$,
 let $N_d$ be the number of $n$-tuples $(r_1, \dots, r_n)$ of elements of $F_m$ whose reduced words
 are cyclically reduced and have total length $|r_1| + \dots + |r_n| = d$, and let $N_d^f$ be the

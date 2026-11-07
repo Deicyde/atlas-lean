@@ -1,6 +1,6 @@
 # The Lucas derivative of the identity
 
-**The Lucas derivative of the identity.** For distinct real numbers $\varphi \ne \varphi'$,
+For distinct real numbers $\varphi \ne \varphi'$,
 the Lucas derivative $D_{\varphi,\varphi'}$ of the identity function $y \mapsto y$ equals $1$ at
 every real number $x$.
 

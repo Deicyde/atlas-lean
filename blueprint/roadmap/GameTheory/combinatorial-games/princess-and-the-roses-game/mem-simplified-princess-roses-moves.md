@@ -1,6 +1,6 @@
 # Characterization of simplified P&R options
 
-**Characterization of simplified P&R options.** For natural numbers $a, b, c, d$ and
+For natural numbers $a, b, c, d$ and
 $a', b', c', d'$, the position $[a', b', c', d']$ is an option of the simplified P&R position
 $[a, b, c, d]$ if and only if $a' \le a$, $b' \le b$, $c' \le c$, $d' \le d$,
 $a' \ge b' \ge c' \ge d'$, and the amounts removed $(a - a', b - b', c - c', d - d')$ form one of

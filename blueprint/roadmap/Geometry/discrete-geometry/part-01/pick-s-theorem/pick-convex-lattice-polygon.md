@@ -1,6 +1,6 @@
 # Pick's theorem for convex lattice polygons
 
-**Pick's theorem for convex lattice polygons.** Let $V \subset \mathbb{Z}^2$ be a finite
+Let $V \subset \mathbb{Z}^2$ be a finite
 set of lattice points, let $P \subset \mathbb{R}^2$ be the convex hull of $V$, and suppose that
 $P$ has nonempty interior. Let $I$ be the number of points of $\mathbb{Z}^2$ in the interior of
 $P$ and $B$ the number of points of $\mathbb{Z}^2$ on the boundary of $P$. Then the area

@@ -1,6 +1,6 @@
 # Lovász's finitely forcible optimum conjecture
 
-**Lovász's finitely forcible optimum conjecture.** The proposition that for all graphs
+The proposition that for all graphs
 $H_1, \dots, H_\ell$ and reals $d_1, \dots, d_\ell$, if some graphon $W$ satisfies
 $d(H_i, W) = d_i$ for every $i$, then some finitely forcible graphon $W_0$ satisfies
 $d(H_i, W_0) = d_i$ for every $i$.

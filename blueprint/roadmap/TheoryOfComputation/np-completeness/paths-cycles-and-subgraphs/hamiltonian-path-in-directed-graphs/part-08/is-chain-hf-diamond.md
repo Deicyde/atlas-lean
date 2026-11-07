@@ -1,6 +1,6 @@
 # Chain condition for a diamond traversal
 
-**Chain condition for a diamond traversal.** Let $R$ be a relation on $\mathbb{N}$, let $m$
+Let $R$ be a relation on $\mathbb{N}$, let $m$
 and $i$ be natural numbers, $c : \mathbb{N} \to \mathbb{N}$ a map and $b$ a boolean, and write
 $t_a = m + a(3m + 2)$ for the top of diamond $a$ and $r_l = t_i + 1 + l$ for the row vertices
 of diamond $i$. Suppose that $R(t_i, r_0)$, $R(t_i, r_{3m})$, $R(r_0, t_{i+1})$ and

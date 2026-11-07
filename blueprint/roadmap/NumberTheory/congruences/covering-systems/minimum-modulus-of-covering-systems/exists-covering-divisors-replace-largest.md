@@ -1,6 +1,6 @@
 # Replacing the largest prime factor of the modulus set
 
-**Replacing the largest prime factor of the modulus set.** Let $m, L \in \mathbb{N}$, let
+Let $m, L \in \mathbb{N}$, let
 $p \ge m$ be a prime with $p \nmid L$, let $q > p$ be the largest prime dividing $L$, and write
 $\nu_q(L)$ for the exponent of $q$ in $L$. Suppose there are residues $r_d \in \mathbb{Z}$, one
 for each divisor $d \ge m$ of $L$, such that every integer $x$ satisfies $x \equiv r_d \pmod d$

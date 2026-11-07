@@ -1,6 +1,6 @@
 # Excedances and cycles of fixed-point-free involutions
 
-**Excedances and cycles of fixed-point-free involutions.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra, $x, q \in R$ and $n \ge 0$. For a permutation $\sigma$ write $e(\sigma)$ for
 the number of $i$ with $\sigma(i) > i$ and $c(\sigma)$ for its number of cycles, fixed points
 included. Summing over the permutations $\sigma$ of $\{0, \dots, 2n-1\}$ all of whose cycles have

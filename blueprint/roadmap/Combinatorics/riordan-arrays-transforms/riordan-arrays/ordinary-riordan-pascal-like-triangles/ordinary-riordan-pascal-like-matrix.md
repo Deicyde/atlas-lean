@@ -1,6 +1,6 @@
 # Ordinary Riordan Pascal-like triangle
 
-**Ordinary Riordan Pascal-like triangle.** For natural numbers $n, k$ and an integer $r$,
+For natural numbers $n, k$ and an integer $r$,
 the entry $T(n, k; r)$ is the integer
 
 $$T(n, k; r) = \sum_{j=0}^{k} \binom{k}{j} \binom{\max(n - j, 0)}{k} r^j.$$

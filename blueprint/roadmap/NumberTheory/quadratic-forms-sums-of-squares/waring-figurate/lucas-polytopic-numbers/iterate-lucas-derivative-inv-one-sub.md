@@ -1,6 +1,6 @@
 # Iterated Lucas derivatives of $1/(1 - x)$
 
-**Iterated Lucas derivatives of $1/(1 - x)$.** Let $(s, t)$ be nondegenerate Lucas
+Let $(s, t)$ be nondegenerate Lucas
 parameters, let $\varphi \ne \varphi'$ be real numbers with $\varphi + \varphi' = s$ and
 $\varphi\varphi' = -t$, write $D_{\varphi,\varphi'}$ for the Lucas derivative and
 $\{n\}_{s,t}!$ for the $s,t$-factorial. For every natural number $n$ and every real number $x$

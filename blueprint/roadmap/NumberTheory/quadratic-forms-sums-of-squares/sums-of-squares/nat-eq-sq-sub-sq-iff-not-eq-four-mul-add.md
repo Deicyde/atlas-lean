@@ -1,6 +1,6 @@
 # Positive integers that are differences of two squares
 
-**Positive integers that are differences of two squares.** A positive natural number $n$ can be
+A positive natural number $n$ can be
 written as $n = a^2 - b^2$ with natural numbers $a$ and $b$ if and only if there is no natural
 number $k$ with $n = 4k + 2$.
 

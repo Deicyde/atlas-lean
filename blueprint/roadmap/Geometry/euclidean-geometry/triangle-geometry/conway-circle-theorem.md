@@ -1,6 +1,6 @@
 # Conway circle theorem
 
-**Conway circle theorem.** Let $A$, $B$, $C$ be affinely independent points of the Euclidean
+Let $A$, $B$, $C$ be affinely independent points of the Euclidean
 plane, and write $a = d(B, C)$, $b = d(A, C)$, $c = d(A, B)$ for the side lengths, where $d$ is
 the Euclidean distance. Extend each side beyond each of its endpoints by the length of the side
 opposite that endpoint; this gives the six points

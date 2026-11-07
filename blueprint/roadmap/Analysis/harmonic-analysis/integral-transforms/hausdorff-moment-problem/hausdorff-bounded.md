@@ -1,6 +1,6 @@
 # Hausdorff-bounded sequences
 
-**Hausdorff-bounded sequences.** A real sequence $a$ indexed by $\mathbb{N}^d$ is Hausdorff
+A real sequence $a$ indexed by $\mathbb{N}^d$ is Hausdorff
 bounded if there is a real constant $M$ such that for every multi-index $n \in \mathbb{N}^d$,
 
 $$\sum_{k \le n} \left| \binom{n}{k} (\Delta^k a)_n \right| \le M,$$

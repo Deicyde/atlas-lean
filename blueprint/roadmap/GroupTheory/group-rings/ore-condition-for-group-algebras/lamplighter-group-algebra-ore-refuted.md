@@ -1,6 +1,6 @@
 # Lamplighter group algebras are not Ore
 
-**Lamplighter group algebras are not Ore.** For every field $k$ and every prime $p$, the group
+For every field $k$ and every prime $p$, the group
 algebra $k[\mathbb{Z}/p \wr \mathbb{Z}]$ of the lamplighter group $\mathbb{Z}/p \wr \mathbb{Z}$
 does not satisfy the right Ore condition for its non-zero-divisors: there are $s$ and $t$ in it,
 with $s$ a non-zero-divisor, such that $sy = tx$ holds for no $x$ and $y$ with $x$ a

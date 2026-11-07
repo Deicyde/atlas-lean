@@ -1,6 +1,6 @@
 # Polynomially weighted Fibonacci sums via derivatives
 
-**Polynomially weighted Fibonacci sums via derivatives.** Let $F_n$ denote the Fibonacci
+Let $F_n$ denote the Fibonacci
 numbers and $S(r, i)$ the Stirling numbers of the second kind. Let $t$ and $N$ be natural numbers,
 let $A_0, \dots, A_t$ be complex numbers, let $h(y) = \sum_{r=0}^{t} A_r y^r$, and let $P$ be the
 polynomial $P(y) = \sum_{j=0}^{N} F_j y^j$, with $i$-th derivative $P^{(i)}$. Then for every

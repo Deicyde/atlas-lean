@@ -1,6 +1,6 @@
 # Non-destructive comparison of two counters
 
-**Non-destructive comparison of two counters.** Let $M$ be a TM2 machine whose state type
+Let $M$ be a TM2 machine whose state type
 carries a flag bit, let $a, b, t_a, t_b$ be pairwise distinct stacks with symbols $u_a$, $u_b$,
 $u_{t_a}$, $u_{t_b}$ of their alphabets, let $\ell$ be a label and let $r$, $r'$, $o$ map each
 ordering to a label. Suppose that $M$ has at $\ell$ the comparison round of $a$ and $b$ with

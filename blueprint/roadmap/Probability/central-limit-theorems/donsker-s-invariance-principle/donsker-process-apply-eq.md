@@ -1,6 +1,6 @@
 # Explicit formula for the polygonal partial-sum process
 
-**Explicit formula for the polygonal partial-sum process.** Let $X_0, X_1, \dots$ be
+Let $X_0, X_1, \dots$ be
 real-valued functions on a set $\Omega$ and let $S_n$ be their polygonal partial-sum process. For
 $n \ge 1$, $\omega \in \Omega$ and $t \in [0,1]$, write $m = \lfloor nt \rfloor$. Then
 

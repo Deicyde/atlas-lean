@@ -1,6 +1,6 @@
 # Kővári–Sós–Turán bound
 
-**Kővári–Sós–Turán bound.** Let $m, n, s, t$ be natural numbers with $s \ge 1$ and
+Let $m, n, s, t$ be natural numbers with $s \ge 1$ and
 $1 \le t \le n$. Let $z(m, n; s, t)$ be the Zarankiewicz number, the largest number of edges in a
 bipartite graph with parts of sizes $m$ and $n$ that contains no copy of the complete bipartite
 graph $K_{s,t}$. Then

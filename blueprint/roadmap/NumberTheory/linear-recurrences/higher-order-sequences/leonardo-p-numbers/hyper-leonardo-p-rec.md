@@ -1,6 +1,6 @@
 # Recurrence for the hyper Leonardo $p$-numbers
 
-**Recurrence for the hyper Leonardo $p$-numbers.** Let $p \ge 1$ be a natural number. For all
+Let $p \ge 1$ be a natural number. For all
 natural numbers $n \ge 1$ and $k \ge 1$, the hyper Leonardo $p$-numbers satisfy
 $\mathcal{L}^{(k)}_{p,n} = \mathcal{L}^{(k)}_{p,n-1} + \mathcal{L}^{(k-1)}_{p,n}$, and for every
 natural number $n$, $\mathcal{L}^{(0)}_{p,n} = \mathcal{L}_{p,n}$, where $\mathcal{L}_{p,n}$ is the

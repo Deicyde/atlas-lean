@@ -1,6 +1,6 @@
 # Hilbert basis elements of the cone over a polytope
 
-**Hilbert basis elements of the cone over a polytope.** Let $P \subseteq \mathbb{R}^n$. A pair
+Let $P \subseteq \mathbb{R}^n$. A pair
 $a = (t, w)$ with $t \in \mathbb{N}$ and $w \in \mathbb{Z}^n$ is a Hilbert basis element of the
 cone over $P$ when $a$ is a lattice point of that cone (that is, $w$ is a lattice point of
 $tP = \{t y : y \in P\}$), $a \ne 0$, and $a$ is irreducible: whenever $a = b + c$ with $b$ and

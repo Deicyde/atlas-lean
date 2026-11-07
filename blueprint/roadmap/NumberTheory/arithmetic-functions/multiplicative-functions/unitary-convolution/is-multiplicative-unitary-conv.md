@@ -1,6 +1,6 @@
 # The unitary convolution of multiplicative functions is multiplicative
 
-**The unitary convolution of multiplicative functions is multiplicative.** Let $R$ be a
+Let $R$ be a
 commutative semiring. If $f$ and $g$ are multiplicative arithmetic functions with values in $R$,
 then their unitary convolution $f \sqcup g$, given by $(f \sqcup g)(n) = \sum_{d} f(d)\, g(n/d)$
 with $d$ running over the unitary divisors of $n$, is multiplicative.

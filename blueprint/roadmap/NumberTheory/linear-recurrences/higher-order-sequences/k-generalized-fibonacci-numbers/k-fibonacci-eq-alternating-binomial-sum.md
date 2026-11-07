@@ -1,6 +1,6 @@
 # Alternating binomial formula for the $k$-Fibonacci numbers
 
-**Alternating binomial formula for the $k$-Fibonacci numbers.** Let $k \ge 2$ be a natural
+Let $k \ge 2$ be a natural
 number and let $F_n^{(k)}$ be the $k$-Fibonacci numbers: $F_i^{(k)} = 0$ for $i < k - 1$,
 $F_{k-1}^{(k)} = 1$ and $F_{m+k}^{(k)} = F_m^{(k)} + F_{m+1}^{(k)} + \cdots + F_{m+k-1}^{(k)}$ for
 every $m \ge 0$. For an integer $x$ and a natural number $j$ let

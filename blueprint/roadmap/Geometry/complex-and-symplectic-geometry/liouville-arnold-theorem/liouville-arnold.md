@@ -1,6 +1,6 @@
 # Liouville–Arnold theorem
 
-**Liouville–Arnold theorem.** Let $U \subseteq \mathbb{R}^{2n}$ be open and let
+Let $U \subseteq \mathbb{R}^{2n}$ be open and let
 $F_0, \dots, F_{n-1} \colon \mathbb{R}^{2n} \to \mathbb{R}$ be Liouville integrable on $U$. For
 $c = (c_0, \dots, c_{n-1}) \in \mathbb{R}^n$, let
 $M_c = \{x \in \mathbb{R}^{2n} : F_i(x) = c_i \text{ for all } i\}$ be the common level set. If

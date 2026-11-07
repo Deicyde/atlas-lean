@@ -1,3 +1,3 @@
 # Hankel operator with zero symbol is zero
 
-**Hankel operator with zero symbol is zero.** The zero symbol gives the zero operator.
+The zero symbol gives the zero operator.

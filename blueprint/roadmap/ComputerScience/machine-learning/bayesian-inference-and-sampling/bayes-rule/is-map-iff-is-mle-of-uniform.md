@@ -1,6 +1,6 @@
 # Under a uniform prior, MAP is maximum likelihood
 
-**Under a uniform prior, MAP is maximum likelihood.** Let $\Theta$ and $\mathcal X$ be countable
+Let $\Theta$ and $\mathcal X$ be countable
 measurable spaces with measurable singletons, $\kappa$ a Markov kernel from $\Theta$ to
 $\mathcal X$, and $\mu$ a finite measure on $\Theta$ that is uniform: there is $c \in [0, \infty]$,
 $c \neq 0$, with $\mu(\{\theta\}) = c$ for every $\theta \in \Theta$. Let $x \in \mathcal X$ be an

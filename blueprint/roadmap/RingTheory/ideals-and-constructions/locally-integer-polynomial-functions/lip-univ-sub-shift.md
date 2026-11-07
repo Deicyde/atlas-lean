@@ -1,6 +1,6 @@
 # $\mathrm{LIP}(\mathbb{Z})$ is closed under the discrete derivative
 
-**$\mathrm{LIP}(\mathbb{Z})$ is closed under the discrete derivative.** If $f$ lies in
+If $f$ lies in
 $\mathrm{LIP}(\mathbb{Z})$, the ring of locally integer polynomial functions
 $\mathbb{Z} \to \mathbb{Z}$, then so does the function $x \mapsto f(x) - f(x - 1)$.
 

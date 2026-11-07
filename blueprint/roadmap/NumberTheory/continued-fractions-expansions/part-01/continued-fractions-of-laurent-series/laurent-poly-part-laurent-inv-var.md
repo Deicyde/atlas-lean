@@ -1,6 +1,6 @@
 # Polynomial parts of the variable and its inverse
 
-**Polynomial parts of the variable and its inverse.** Let $K$ be a field. In
+Let $K$ be a field. In
 $K((x^{-1}))$ the polynomial part of $x$ is $x$, and the polynomial part of $x^{-1}$ is $0$.
 
 ## Sources

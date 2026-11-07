@@ -1,6 +1,6 @@
 # Growth of the roots of a split Thue family
 
-**Growth of the roots of a split Thue family.** Let $(d, G, \gamma, \delta)$ be a split Thue
+Let $(d, G, \gamma, \delta)$ be a split Thue
 recurrence family, and let $\alpha_i(n)$ ($i, n \in \mathbb{N}$) be reals for which there is $N$
 such that for all $n \ge N$ and $1 \le i \le d$, $\prod_{k=1}^{d} (\alpha_i(n) - G_k(n)) = 1$
 and $|\alpha_i(n) - G_i(n)| < 1$. Then there are $c > 0$ and $N'$ such that for all $n \ge N'$

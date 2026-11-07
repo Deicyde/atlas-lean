@@ -1,3 +1,3 @@
 # Generalized eigenspaces finite-dimensional together, for endomorphisms
 
-**Generalized eigenspaces finite-dimensional together, for endomorphisms.** The `*` form of `finite_genEigenspace_comp_iff`.
+The `*` form of `finite_genEigenspace_comp_iff`.

@@ -1,6 +1,6 @@
 # Polynomially weighted binomial sums of powers of a second-order sequence
 
-**Polynomially weighted binomial sums of powers of a second-order sequence.** Let $a$, $b$ be
+Let $a$, $b$ be
 real numbers and $(U_n)_{n \ge 0}$ a real sequence with $U_{n+2} = a U_{n+1} + b U_n$ for all $n$.
 Let $\alpha \ne \beta$ be complex numbers with $\alpha + \beta = a$ and $\alpha\beta = -b$ (the
 roots of $y^2 = ay + b$), and put $A = (U_1 - U_0\beta)/(\alpha - \beta)$ and

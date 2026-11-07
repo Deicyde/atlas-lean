@@ -1,6 +1,6 @@
 # Metered parking functions with a long meter are classical
 
-**Metered parking functions with a long meter are classical.** Let $m \le n$ and
+Let $m \le n$ and
 $t \ge m - 1$. A map $f : \{0, \dots, m-1\} \to \{0, \dots, n-1\}$ is a $t$-metered parking
 function if and only if it is a partial parking function with $m$ cars and $n$ spots.
 

@@ -1,6 +1,6 @@
 # Von Neumann's conditions do not guarantee a measure
 
-**Von Neumann's conditions do not guarantee a measure.** There is a complete Boolean algebra that
+There is a complete Boolean algebra that
 satisfies the countable chain condition and the generalized distributivity law but carries no
 measure in von Neumann's sense; that is, von Neumann's sufficiency claim is false. This answers
 Problem 163 of the Scottish Book in the negative, in its stated form.

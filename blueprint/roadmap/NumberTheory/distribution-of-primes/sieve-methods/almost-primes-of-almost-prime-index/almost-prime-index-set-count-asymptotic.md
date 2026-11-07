@@ -1,6 +1,6 @@
 # Counting almost primes of iterated almost prime index
 
-**Counting almost primes of iterated almost prime index.** Let $m \ge 1$, let
+Let $m \ge 1$, let
 $k_1, \dots, k_m$ be positive integers, let $N_{k_1 \cdots k_m}$ be the almost prime index set
 (for $m = 1$ the $k_1$-almost primes, and for $m \ge 2$ the $k_1$-almost primes whose index in
 increasing order, counted from $1$, lies in $N_{k_2 \cdots k_m}$), and for real $x$ let

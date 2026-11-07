@@ -1,6 +1,6 @@
 # Convolution of the Fibonacci $6$-step numbers with the Fibonacci numbers
 
-**Convolution of the Fibonacci $6$-step numbers with the Fibonacci numbers.** Write
+Write
 $s_n = F^{(6)}_n$ for the Fibonacci $6$-step numbers and $F_n = F^{(2)}_n$ for the Fibonacci
 numbers. For every natural number $n \ge 3$,
 

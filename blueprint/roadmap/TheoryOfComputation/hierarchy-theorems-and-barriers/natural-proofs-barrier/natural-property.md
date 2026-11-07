@@ -1,6 +1,6 @@
 # Natural property
 
-**Natural property.** Let $C = (C_n)_{n \in \mathbb{N}}$, where $C_n$ is a set of Boolean
+Let $C = (C_n)_{n \in \mathbb{N}}$, where $C_n$ is a set of Boolean
 functions on $n$ bits. Then $C$ is natural when it is constructive and large. Constructive: there
 are a polynomial $q$ with natural-number coefficients and, for every $n$, a circuit given as a
 list of at most $q(2^n)$ encoded gates, such that a Boolean function $g$ on $n$ bits lies in $C_n$

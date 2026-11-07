@@ -1,6 +1,6 @@
 # Osgood's lemma for functions bounded on open sets
 
-**Osgood's lemma for functions bounded on open sets.** Let $E$ be a complex normed space and
+Let $E$ be a complex normed space and
 let $f(z, w)$ be a complex-valued function of $z \in E$ and $w \in \mathbb{C}$ such that
 $z \mapsto f(z, w)$ is complex differentiable on all of $E$ for every $w \in \mathbb{C}$ and
 $w \mapsto f(z, w)$ is complex differentiable on all of $\mathbb{C}$ for every $z \in E$. Let

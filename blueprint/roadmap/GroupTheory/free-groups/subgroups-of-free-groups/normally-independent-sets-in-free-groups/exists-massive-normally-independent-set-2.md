@@ -1,6 +1,6 @@
 # No massive normally independent set in the free group of rank two
 
-**No massive normally independent set in the free group of rank two.** There is no subset $E$ of
+There is no subset $E$ of
 the free group $F_2$ on two generators such that no element $w \in E$ lies in the normal closure
 of $E \setminus \{w\}$ and, for every real number $c$ with $0 < c < 3$ and every natural number
 $N$, there is $n \ge N$ for which at least $c^n$ elements of $E$ have reduced word length $n$.

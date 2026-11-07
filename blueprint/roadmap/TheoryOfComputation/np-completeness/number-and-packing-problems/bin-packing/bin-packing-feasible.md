@@ -1,6 +1,6 @@
 # Feasible bin packing instances
 
-**Feasible bin packing instances.** An instance $(s, B, K)$ of BIN PACKING is feasible when
+An instance $(s, B, K)$ of BIN PACKING is feasible when
 there is a list of exactly $K$ bins, each a finite list of natural numbers with sum at most $B$,
 such that the concatenation of the bins is a permutation of $s$.
 

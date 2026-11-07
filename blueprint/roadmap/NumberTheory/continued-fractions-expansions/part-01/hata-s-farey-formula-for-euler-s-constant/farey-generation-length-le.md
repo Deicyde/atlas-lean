@@ -1,6 +1,6 @@
 # Length bound for the Stern-Brocot generations
 
-**Length bound for the Stern-Brocot generations.** For every natural number $n$, every
+For every natural number $n$, every
 interval $[a/b, c/d]$ of the $n$-th Stern-Brocot generation $F_n$, that is, every quadruple
 $(a, b, c, d) \in F_n$, satisfies $c/d - a/b \le 1/(n + 1)$.
 

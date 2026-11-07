@@ -1,6 +1,6 @@
 # Expansion of the hyperharmonic zeta function in height one multiple zeta values
 
-**Expansion of the hyperharmonic zeta function in height one multiple zeta values.** Let $r$
+Let $r$
 and $s$ be complex numbers with $\operatorname{Re} s > 0$, $|r| < |s|$ and
 $\operatorname{Re} r < \operatorname{Re} s$. Write $\zeta(s, \{1\}^j)$ for the height one multiple
 zeta function, $H_m^{[r]}(k)$ for the generalized hyperharmonic numbers and

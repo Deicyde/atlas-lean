@@ -1,6 +1,6 @@
 # Applying a coded action
 
-**Applying a coded action.** Given an input word $x$, a coded action $a$ and an explicit
+Given an input word $x$, a coded action $a$ and an explicit
 configuration $e$, applying $a$ to $e$ gives the configuration whose state is the next state of
 $a$; whose input head position is that of $e$, say $p$, moved by the coded input move of $a$,
 where a left move gives $p - 1$ (truncated at $0$), staying gives $p$, and a right move gives

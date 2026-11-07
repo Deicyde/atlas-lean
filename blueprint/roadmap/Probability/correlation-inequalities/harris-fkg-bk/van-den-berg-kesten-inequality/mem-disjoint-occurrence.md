@@ -1,3 +1,3 @@
 # Membership in a disjoint occurrence
 
-**Membership in a disjoint occurrence.** Membership in `A □ B` unfolded.
+Membership in `A □ B` unfolded.

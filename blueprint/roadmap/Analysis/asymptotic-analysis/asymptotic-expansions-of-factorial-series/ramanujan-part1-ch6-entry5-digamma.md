@@ -1,6 +1,6 @@
 # Convergence and asymptotic expansion of Ramanujan's factorial series
 
-**Convergence and asymptotic expansion of Ramanujan's factorial series.** Let
+Let
 $c_j(x) = (-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$, let $C(x) = \sum_{j \ge 0} c_j(x)$,
 and let $B_n$ denote the $n$-th Bell number. For all sufficiently large real $x$, $x > 0$ and the
 series $\sum_{j \ge 0} c_j(x)$ is summable; and for every natural number $N$,

@@ -1,6 +1,6 @@
 # Sapir's group is linear over the integers
 
-**Sapir's group is linear over the integers.** The group
+The group
 $\langle a, b, t \mid a^t = ab, b^t = ba \rangle$, where $a^t = t^{-1} a t$, embeds in
 $\mathrm{GL}_n(\mathbb{Z})$ for some natural number $n$. That is, Kourovka Problem 17.108 has a
 positive answer.

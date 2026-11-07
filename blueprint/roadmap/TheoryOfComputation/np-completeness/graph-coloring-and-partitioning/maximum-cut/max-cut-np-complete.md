@@ -1,6 +1,6 @@
 # MAXIMUM CUT is NP-complete
 
-**MAXIMUM CUT is NP-complete.** The decision problem MAXIMUM CUT lies in NP, and every
+The decision problem MAXIMUM CUT lies in NP, and every
 decision problem in NP has a polynomial-time many-one reduction to MAXIMUM CUT.
 
 ## Sources

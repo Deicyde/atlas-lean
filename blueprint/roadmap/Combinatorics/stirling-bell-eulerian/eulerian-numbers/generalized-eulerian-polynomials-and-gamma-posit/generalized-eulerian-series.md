@@ -1,6 +1,6 @@
 # Generating function of the generalized Eulerian polynomials
 
-**Generating function of the generalized Eulerian polynomials.** For rational numbers
+For rational numbers
 $q$, $t$, $x$, $y$ with $x \ne y$, this is the formal power series in $z$ over $\mathbb{Q}$
 
 $$\mathcal{P}(q, t; x, y; z) = \left(\frac{x - y}{x e^{yz} - y e^{xz}}\right)^q e^{(x+y)qtz}.$$

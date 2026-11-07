@@ -1,6 +1,6 @@
 # Maderna–Venturelli theorem on hyperbolic motions
 
-**Maderna–Venturelli theorem on hyperbolic motions.** Let $E$ be a finite-dimensional real
+Let $E$ be a finite-dimensional real
 inner product space of dimension at least $2$, let $N$ be a natural number, and let
 $m = (m_1, \dots, m_N)$ be positive masses. Let $x_0 \in E^N$, let $a \in E^N$ be a configuration
 without collisions with $\lVert a \rVert_m = 1$, where

@@ -1,6 +1,6 @@
 # Deletion within a B-tree node
 
-**Deletion within a B-tree node.** Let $D$ be an operation that deletes a key from a tree, let
+Let $D$ be an operation that deletes a key from a tree, let
 $t$ be a natural number, let $x$ be a key of a linearly ordered key type, and write $|c|$ for the
 number of keys stored at the root of a tree $c$. Deleting $x$ within a node with separator list
 $K$ and child list $C$, using $D$ on children, produces a new separator list and a new child list.

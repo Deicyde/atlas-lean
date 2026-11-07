@@ -1,6 +1,6 @@
 # Baer–Suzuki theorem
 
-**Baer–Suzuki theorem.** Let $G$ be a finite group, $p$ a prime and $x \in G$. Then $x$ lies
+Let $G$ be a finite group, $p$ a prime and $x \in G$. Then $x$ lies
 in the $p$-core $O_p(G)$ of $G$ if and only if, for every $g \in G$, the subgroup of $G$ generated
 by $x$ and $g x g^{-1}$ is a $p$-group, that is, every element of it has order a power of $p$.
 

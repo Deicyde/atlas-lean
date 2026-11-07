@@ -1,6 +1,6 @@
 # Length of the ideal period words
 
-**Length of the ideal period words.** For every $n \ge 1$, the digit string of the ideal
+For every $n \ge 1$, the digit string of the ideal
 period word $d_n$ (the concatenation of its blocks of partial quotients) has length
 $|d_n| = 2^{n+1} - (-1)^n$.
 

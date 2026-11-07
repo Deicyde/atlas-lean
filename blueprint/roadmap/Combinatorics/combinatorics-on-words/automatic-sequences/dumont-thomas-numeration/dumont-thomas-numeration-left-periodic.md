@@ -1,6 +1,6 @@
 # Dumont–Thomas numeration for left-infinite periodic points
 
-**Dumont–Thomas numeration for left-infinite periodic points.** Let $\eta$ be a
+Let $\eta$ be a
 substitution on an alphabet $A$, let $b \in A$ be a growing letter, i.e.
 $|\eta^k(b)| \to \infty$, and let $\cdots u_{-2} u_{-1}$ be a left-infinite word over $A$ with
 $u_{-1} = b$. Let $p \ge 1$ be such that for every $m$ the word $\eta^p(u_{-m} \cdots u_{-1})$

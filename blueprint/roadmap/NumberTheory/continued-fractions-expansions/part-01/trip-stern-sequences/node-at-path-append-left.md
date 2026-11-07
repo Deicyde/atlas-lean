@@ -1,6 +1,6 @@
 # Extending a path by a left step
 
-**Extending a path by a left step.** Let $T$ be a TRIP-Stern tree with left transition $L$.
+Let $T$ be a TRIP-Stern tree with left transition $L$.
 For every binary path $p$, the node of $T$ selected by $p$ followed by one left step equals $L$
 applied to the node of $T$ selected by $p$.
 

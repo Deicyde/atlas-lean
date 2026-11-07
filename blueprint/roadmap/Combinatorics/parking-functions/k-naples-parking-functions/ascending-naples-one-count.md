@@ -1,6 +1,6 @@
 # Number of ascending $k$-Naples parking functions starting with $1$
 
-**Number of ascending $k$-Naples parking functions starting with $1$.** For natural numbers
+For natural numbers
 $n$ and $k$, $U_{n,k}$ is the number of weakly increasing $k$-Naples parking functions
 $(a_1, \dots, a_n)$ of length $n$ with $a_1 = 1$; in particular $U_{0,k} = 0$.
 

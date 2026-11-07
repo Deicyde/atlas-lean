@@ -1,6 +1,6 @@
 # Generating function for the number of parts in n-color partitions into odd parts
 
-**Generating function for the number of parts in n-color partitions into odd parts.** For
+For
 $i \ge 0$ let $Q(O, i)$ be the total number of parts, counted with multiplicity, over the
 $n$-color partitions of $i$ into odd parts (every part has odd size). Then in the ring
 $\mathbb{Q}[[q]]$ of formal power series, with infinite sums and products taken coefficientwise,

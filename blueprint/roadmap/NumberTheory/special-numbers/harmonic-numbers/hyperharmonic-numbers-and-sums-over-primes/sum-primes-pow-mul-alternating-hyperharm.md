@@ -1,6 +1,6 @@
 # Prime-weighted power sums of type I alternating hyperharmonic numbers
 
-**Prime-weighted power sums of type I alternating hyperharmonic numbers.** Let
+Let
 $\alpha, m, y \ge 1$ and $q \ge 2$ be integers. Let $p_\ell$ be the $\ell$-th prime ($p_1 = 2$),
 let $H_n^{(s,r,1)}$ be the signed iterated partial sum of order $r$, with alternating signs, of the
 generalized harmonic numbers $H_n^{(s)} = \sum_{j=1}^{n} j^{-s}$, let

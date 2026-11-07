@@ -1,6 +1,6 @@
 # Winning strategy from a position
 
-**Winning strategy from a position.** Let $M$ be a Kripke model, $\mathit{env}$ an environment
+Let $M$ be a Kripke model, $\mathit{env}$ an environment
 assigning a predicate on worlds to every index, $\sigma$ a Verifier strategy for the
 model-checking game on $M$ and $p$ a game position. A play is consistent with $\sigma$ when each
 step is a move and, at every Verifier-owned position, goes to the position chosen by $\sigma$.

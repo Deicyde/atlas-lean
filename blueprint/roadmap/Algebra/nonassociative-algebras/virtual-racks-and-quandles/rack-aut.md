@@ -1,6 +1,6 @@
 # Automorphism group of a rack
 
-**Automorphism group of a rack.** For a rack $R$ with operation $\triangleleft$, the
+For a rack $R$ with operation $\triangleleft$, the
 automorphism group $\operatorname{Aut} R$ is the subgroup of the group of permutations of $R$
 consisting of the permutations $f$ with $f(x \triangleleft y) = f(x) \triangleleft f(y)$ for all
 $x, y \in R$.

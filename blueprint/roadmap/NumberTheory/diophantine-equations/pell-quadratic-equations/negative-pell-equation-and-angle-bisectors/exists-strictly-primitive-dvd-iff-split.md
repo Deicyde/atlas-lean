@@ -1,6 +1,6 @@
 # Strictly primitive solutions modulo p and splitting of p
 
-**Strictly primitive solutions modulo p and splitting of p.** Let $d > 1$ be a square-free
+Let $d > 1$ be a square-free
 integer, let $K$ be a number field of degree $2$ over $\mathbb{Q}$ containing an element $s$ with
 $s^2 = d$ (so $K = \mathbb{Q}(\sqrt d)$), and let $p$ be a prime such that $p \ne 2$, or
 $d \equiv 1 \pmod 8$, or $d \equiv 2 \pmod 4$. Then there are integers $x, y$ with $x$ and $dy$

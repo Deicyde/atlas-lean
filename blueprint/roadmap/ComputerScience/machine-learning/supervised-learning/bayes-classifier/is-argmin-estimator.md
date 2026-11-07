@@ -1,6 +1,6 @@
 # A posterior argmax classifier is an argmin estimator for the 0-1 loss
 
-**A posterior argmax classifier is an argmin estimator for the 0-1 loss.** Let the set $C$ of
+Let the set $C$ of
 classes be countable and nonempty with measurable singletons, let $P$ be a finite kernel from $C$
 to the observation space $\mathcal X$ and $\pi$ a finite measure on $C$, write $P \circ \pi$ for
 the marginal measure on $\mathcal X$, $P^\dagger_\pi$ for the posterior kernel from $\mathcal X$

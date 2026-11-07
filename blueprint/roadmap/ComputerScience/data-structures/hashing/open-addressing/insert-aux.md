@@ -1,6 +1,6 @@
 # Bounded insertion scan
 
-**Bounded insertion scan.** Given a table with $m$ slots and probe sequence $p$, a key $k$, a
+Given a table with $m$ slots and probe sequence $p$, a key $k$, a
 value $v$, a starting index $s$ and a budget $f$ of probes, examine the slots
 $p(k, s), p(k, s + 1), \dots$ in order, for at most $f$ probes. At the first examined slot that
 is empty or holds a binding for $k$, the scan returns the table with that slot overwritten by the

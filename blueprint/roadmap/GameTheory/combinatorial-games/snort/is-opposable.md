@@ -1,6 +1,6 @@
 # Opposable graphs
 
-**Opposable graphs.** A graph $G$ is opposable if it has an opposition: an automorphism $f$
+A graph $G$ is opposable if it has an opposition: an automorphism $f$
 of $G$ such that for every vertex $v$, $f(f(v)) = v$, $f(v) \neq v$, and $f(v)$ is not adjacent
 to $v$.
 

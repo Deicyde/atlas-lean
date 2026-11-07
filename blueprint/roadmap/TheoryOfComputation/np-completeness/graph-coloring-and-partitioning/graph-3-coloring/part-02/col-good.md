@@ -1,6 +1,6 @@
 # Well-formed construction states
 
-**Well-formed construction states.** A construction state $s$ with next free vertex $n$ is
+A construction state $s$ with next free vertex $n$ is
 well formed when $3 \le n$; every emitted edge $(a, b)$ has $a < n$, $b < n$ and $a \ne b$; the
 literal vertex and the negation vertex of every recorded occurrence are smaller than $n$; the
 pairs $(0, 1)$, $(0, 2)$ and $(1, 2)$ are emitted edges (the palette triangle); for every

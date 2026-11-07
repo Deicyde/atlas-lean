@@ -1,6 +1,6 @@
 # Singularity probability of Bernoulli matrices
 
-**Singularity probability of Bernoulli matrices.** Let $0 < p \le 1/2$. For each $n$, let $B_n$ be
+Let $0 < p \le 1/2$. For each $n$, let $B_n$ be
 a random $n \times n$ real matrix on a probability space $(\Omega_n, P_n)$ whose $n^2$ entries are
 mutually independent and each equal to $1$ with probability $p$ and to $0$ with probability $1 - p$.
 Then there is a function $o : \mathbb{N} \to \mathbb{R}$ with $o(n) \to 0$ as $n \to \infty$ such

@@ -1,6 +1,6 @@
 # Quasi-polynomial formula for bishops on the black squares
 
-**Quasi-polynomial formula for bishops on the black squares.** Let $R_K(m, k)$ be the
+Let $R_K(m, k)$ be the
 number of nonattacking placements of $k$ bishops on the black squares $(i, j)$, with $i + j$
 odd, of the board $\{1, \dots, m\}^2$, and let $c_{k,d}(z)$ be the constituent coefficients of
 the bishop quasi-polynomials. For all natural numbers $m$ and $k$,

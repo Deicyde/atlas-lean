@@ -1,6 +1,6 @@
 # Divisors in windows of length $n^{\theta^2 - \varepsilon}$
 
-**Divisors in windows of length $n^{\theta^2 - \varepsilon}$.** For a natural number $n$ and
+For a natural number $n$ and
 real numbers $X$, $Y$, let $D_n(X, Y)$ be the number of divisors $d$ of $n$ with
 $X \le d \le X + Y$. There is an absolute constant $C$ such that for every integer $n \ge 1$ and
 all real numbers $\theta$, $\varepsilon$ with $0 < \theta < 1$ and $0 < \varepsilon < \theta^2$,

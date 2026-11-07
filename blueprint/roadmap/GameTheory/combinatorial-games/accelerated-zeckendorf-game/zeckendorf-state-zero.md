@@ -1,6 +1,6 @@
 # The Zeckendorf state of zero is empty
 
-**The Zeckendorf state of zero is empty.** The Zeckendorf state of $0$ is the empty game
+The Zeckendorf state of $0$ is the empty game
 state, with no copies of any Fibonacci number.
 
 ## Sources

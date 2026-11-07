@@ -1,6 +1,6 @@
 # Orthogonal systems need not be countable
 
-**Orthogonal systems need not be countable.** Both of the following statements are false.
+Both of the following statements are false.
 (a) Every set $S$ of real sequences $(f_n)_{n \in \mathbb{N}}$ in which no member is the zero
 sequence, and in which for any two distinct $f, g \in S$ the series $\sum_n f_n g_n$ converges
 absolutely with sum $0$, is at most countable. (b) Let $\lambda$ be Lebesgue measure on

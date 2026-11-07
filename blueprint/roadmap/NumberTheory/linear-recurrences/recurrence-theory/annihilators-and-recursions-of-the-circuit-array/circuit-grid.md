@@ -1,6 +1,6 @@
 # Reduced circuit grids
 
-**Reduced circuit grids.** Let $K$ be a field, and for each $m$ let either a boundary value
+Let $K$ be a field, and for each $m$ let either a boundary value
 $\beta_m \in K$ be given or none. The labellings $T^m$, which assign a value $T^m_{r,d,e} \in K$ to
 the edge $e$ (left $L$, right $R$ or base $B$) of the upright triangle in row $r$ and diagonal $d$,
 are defined by recursion on $m$: $T^0$ is identically $1$, and $T^{m+1}$ is the row reduction of

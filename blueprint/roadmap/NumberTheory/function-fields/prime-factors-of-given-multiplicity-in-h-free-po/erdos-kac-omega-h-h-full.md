@@ -1,6 +1,6 @@
 # Erdős–Kac theorem for $\omega_h$ on $h$-full polynomials
 
-**Erdős–Kac theorem for $\omega_h$ on $h$-full polynomials.** Let $F$ be a finite field, let
+Let $F$ be a finite field, let
 $h \ge 2$ and let $\alpha \le \beta$ be real numbers. A monic polynomial $f$ over $F$ is $h$-full
 if $P^h \mid f$ for every monic irreducible $P$ dividing $f$, and $\omega_h(f)$ is the number of
 distinct monic irreducible $P$ that divide $f$ with multiplicity exactly $h$. For each $n$, let

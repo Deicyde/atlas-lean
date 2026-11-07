@@ -1,6 +1,6 @@
 # Generalized hyperharmonic numbers
 
-**Generalized hyperharmonic numbers.** For natural numbers $n$ and $k$ and a complex number
+For natural numbers $n$ and $k$ and a complex number
 $r$, the generalized hyperharmonic number $H_n^{[r]}(k)$ is $0$ when $k > n$; when $k \le n$ it is
 the elementary symmetric polynomial of degree $n - k$ in $r, r + 1, \ldots, r + n - 1$ divided by
 $n!$, that is,

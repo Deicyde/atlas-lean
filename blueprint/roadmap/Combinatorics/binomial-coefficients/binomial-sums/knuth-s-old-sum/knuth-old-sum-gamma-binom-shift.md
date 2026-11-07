@@ -1,6 +1,6 @@
 # Two-parameter generalization of Knuth's old sum
 
-**Two-parameter generalization of Knuth's old sum.** For all natural numbers $m$ and $n$ and
+For all natural numbers $m$ and $n$ and
 every real number $v > -1$,
 
 $$

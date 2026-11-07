@@ -1,6 +1,6 @@
 # The parameter $y_s$ of the triangular Frobenius formula
 
-**The parameter $y_s$ of the triangular Frobenius formula.** For natural numbers $n$, $k$
+For natural numbers $n$, $k$
 and $i$, let $y$ be $2(k - i)$ if $i \le k$ and $4k + 3 - 2i$ if $i > k$ when $n$ is even, and
 $k - i$ if $i \le k$ and $2k + 1 - i$ if $i > k$ when $n$ is odd, where a difference that would
 be negative is replaced by $0$ (this happens only for $i > 2k + 1$). For $s = k(k+1) + i$ with

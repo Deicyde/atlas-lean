@@ -1,6 +1,6 @@
 # Log-concavity of the coefficients of the minuscule polynomials
 
-**Log-concavity of the coefficients of the minuscule polynomials.** Let $N_{n,k}$ be the
+Let $N_{n,k}$ be the
 coefficient of $x^k$ in the type-A minuscule polynomial $N_n(x)$. For all natural numbers $n$
 and $k$, $N_{n,k-1} N_{n,k+1} \le N_{n,k}^2$, where for $k = 0$ the index $k - 1$ is read as $0$.
 

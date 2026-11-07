@@ -1,6 +1,6 @@
 # MINIMUM ONES 3-SAT is NP-complete
 
-**MINIMUM ONES 3-SAT is NP-complete.** Let MINIMUM ONES 3-SAT be the decision problem that
+Let MINIMUM ONES 3-SAT be the decision problem that
 accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a
 triple $(n, \varphi, K)$ of a natural number $n$, a CNF formula $\varphi$ and a natural number $K$
 such that every clause of $\varphi$ is a list of exactly three literals whose variables are all

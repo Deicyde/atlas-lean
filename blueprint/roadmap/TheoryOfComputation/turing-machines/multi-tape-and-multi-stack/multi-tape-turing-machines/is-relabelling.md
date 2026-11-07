@@ -1,6 +1,6 @@
 # Simulation up to a state relabelling
 
-**Simulation up to a state relabelling.** Let $M$ and $M'$ be deterministic machines with $k$
+Let $M$ and $M'$ be deterministic machines with $k$
 work tapes over the same alphabet, with state sets $Q$ and $Q'$, and let $f : Q \to Q'$. Then $M'$
 simulates $M$ up to the relabelling $f$ when the initial state of $M'$ is $f(q_0)$, where $q_0$ is
 the initial state of $M$, and for every state $q \in Q$, every possibly blank symbol $a$ under the

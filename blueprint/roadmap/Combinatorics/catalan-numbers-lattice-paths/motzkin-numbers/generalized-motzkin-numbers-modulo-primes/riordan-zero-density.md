@@ -1,6 +1,6 @@
 # Zero density of Riordan numbers modulo a prime
 
-**Zero density of Riordan numbers modulo a prime.** Let $p$ be a prime, and write $r_n$ for the
+Let $p$ be a prime, and write $r_n$ for the
 Riordan numbers and $T_m = T^{(1,1)}_m$ for the central trinomial coefficients. If
 $T_m \equiv 0 \pmod p$ for some $m < p$, then the set of $n \in \mathbb{N}$ with
 $r_n \equiv 0 \pmod p$ has natural density $1$. If instead $T_m \not\equiv 0 \pmod p$ for every

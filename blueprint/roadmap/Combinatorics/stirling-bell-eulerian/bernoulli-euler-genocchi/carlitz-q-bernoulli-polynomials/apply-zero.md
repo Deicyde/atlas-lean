@@ -1,6 +1,6 @@
 # The zeroth term of a Carlitz-type sequence
 
-**The zeroth term of a Carlitz-type sequence.** Let $q$ be a real number. If $(T_n)$ is a
+Let $q$ be a real number. If $(T_n)$ is a
 Carlitz-type $q$-polynomial sequence with associated real sequence $(a_k)$, then $T_0(x) = a_0$
 for every real $x$.
 

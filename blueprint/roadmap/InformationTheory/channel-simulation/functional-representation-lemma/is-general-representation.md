@@ -1,6 +1,6 @@
 # Functional representation of a joint law
 
-**Functional representation of a joint law.** Let $\mu$ be a probability measure on
+Let $\mu$ be a probability measure on
 $X \times Y$ and $\nu$ a probability measure on $(X \times Y) \times S$. Then $\nu$ is a functional
 representation of $\mu$ when all of the following hold: the image of $\nu$ under
 $((x, y), s) \mapsto (x, y)$ is $\mu$; the mutual information of the image of $\nu$ under

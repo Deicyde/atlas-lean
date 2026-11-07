@@ -1,6 +1,6 @@
 # Reflection symmetry of the central binomial polynomial sum
 
-**Reflection symmetry of the central binomial polynomial sum.** For every natural number $n$
+For every natural number $n$
 and every complex $x$,
 
 $$\sum_{k=0}^{n} (-1)^{n-k} \binom{2k}{k} 2^{-2k} \binom{n}{k} (1-x)^{n-k} =

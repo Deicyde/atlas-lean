@@ -1,6 +1,6 @@
 # Disjoint infinite sets with monochromatic union and sumset
 
-**Disjoint infinite sets with monochromatic union and sumset.** For every finite coloring of
+For every finite coloring of
 $\mathbb{N} = \{0, 1, 2, \dots\}$ there are disjoint infinite sets $A, B \subseteq \mathbb{N}$ such
 that $A \cup B \cup (A + B)$ is monochromatic, where $A + B = \{a + b : a \in A, b \in B\}$.
 

@@ -1,6 +1,6 @@
 # Upper bound for the sixth Schur number
 
-**Upper bound for the sixth Schur number.** The Schur number $S(6)$ is at most $1836$.
+The Schur number $S(6)$ is at most $1836$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Front of a diamond
 
-**Front of a diamond.** Let $B, m, i \in \mathbb{N}$, let $b$ be a state bit, and let $s$ be a
+Let $B, m, i \in \mathbb{N}$, let $b$ be a state bit, and let $s$ be a
 quiescent state of the emitter whose stack $V$ is nonempty, whose counter $P$ equals the top of
 diamond $i$ for $m$ clauses, whose counter $M$ equals $3m$, whose counter $N$ is $0$, and whose
 counters $R$, $J$, $D$ are at most $B$, and suppose row vertex $3m$ of diamond $i$ is at most $B$.

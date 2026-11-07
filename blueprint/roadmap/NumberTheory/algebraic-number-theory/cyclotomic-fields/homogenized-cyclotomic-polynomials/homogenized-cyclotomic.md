@@ -1,6 +1,6 @@
 # Homogenized cyclotomic value
 
-**Homogenized cyclotomic value.** For a natural number $n$ and integers $a, b$, let
+For a natural number $n$ and integers $a, b$, let
 $c_0, \dots, c_{\varphi(n)}$ be the integer coefficients of the $n$-th cyclotomic polynomial,
 whose degree is $\varphi(n)$, where $\varphi$ is Euler's totient function. The homogenized
 cyclotomic value is the integer

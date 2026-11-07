@@ -1,6 +1,6 @@
 # Recurrence for generalized harmonic numbers
 
-**Recurrence for generalized harmonic numbers.** For every real $s$ and every natural number
+For every real $s$ and every natural number
 $n$, the generalized harmonic numbers $H_n^{(s)} = \sum_{k=1}^{n} 1/k^s$ satisfy
 $H_{n+1}^{(s)} = H_n^{(s)} + 1/(n+1)^s$.
 

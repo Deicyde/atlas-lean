@@ -1,6 +1,6 @@
 # Leading digits
 
-**Leading digits.** For natural numbers $b$, $l$ and $m$, let $L$ be the number of digits of
+For natural numbers $b$, $l$ and $m$, let $L$ be the number of digits of
 $m$ in base $b$. The leading-digits integer of $m$ is the natural-number quotient of $m$ by
 $b^{\max(L - l,\, 0)}$, rounded down (with quotient $0$ when the divisor is $0$). For $b \ge 2$
 and $L \ge l$ this is the integer formed by the first $l$ base-$b$ digits of $m$; when $L < l$

@@ -1,6 +1,6 @@
 # Hankel determinants of the Eulerian polynomials
 
-**Hankel determinants of the Eulerian polynomials.** For $m \ge 0$ let $P_m \in \mathbb{Z}[X]$
+For $m \ge 0$ let $P_m \in \mathbb{Z}[X]$
 be the Eulerian polynomial $P_m = \sum_{k=0}^{m} W_{m,k} X^k$, where
 $W_{m,k} = \sum_{i=0}^{m-k} (-1)^i \binom{m+1}{i} (m-k-i)^m$ with $0^0 = 1$ (so $P_0 = 1$ and
 $P_2 = 1 + X$). Then for every $n \ge 0$ the Hankel determinant

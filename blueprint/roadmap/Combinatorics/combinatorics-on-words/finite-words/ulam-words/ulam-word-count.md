@@ -1,6 +1,6 @@
 # Number of Ulam words of a given length
 
-**Number of Ulam words of a given length.** For a natural number $n$, $\#U_n$ denotes the
+For a natural number $n$, $\#U_n$ denotes the
 number of Ulam words of length $n$, that is, of words $w_1 \cdots w_n$ of length $n$ in the
 letters $0$ and $1$ that are Ulam words.
 

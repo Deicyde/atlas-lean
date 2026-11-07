@@ -1,6 +1,6 @@
 # Composition of submersions
 
-**Composition of submersions.** Let $\mathbb{K}$ be a nontrivially normed field, let
+Let $\mathbb{K}$ be a nontrivially normed field, let
 $n \in \mathbb{N} \cup \{\infty, \omega\}$, and let $M$, $N$, $N'$ be $C^n$ manifolds without
 boundary over $\mathbb{K}$ modelled on Banach spaces. If $f : M \to N$ and $g : N \to N'$ are
 $C^n$ submersions, then so is $g \circ f$. Here $f$ is a $C^n$ submersion when there is one normed

@@ -1,6 +1,6 @@
 # Kourovka Problem 11.97 has a negative answer
 
-**Kourovka Problem 11.97 has a negative answer.** There is a finite set $S$ of complex numbers
+There is a finite set $S$ of complex numbers
 such that for every natural number $N$ there is a finite non-abelian simple group $G$ with more
 than $N$ elements and an element $g \in G$ at which the set of values of the irreducible complex
 characters of $G$ is exactly $S$.

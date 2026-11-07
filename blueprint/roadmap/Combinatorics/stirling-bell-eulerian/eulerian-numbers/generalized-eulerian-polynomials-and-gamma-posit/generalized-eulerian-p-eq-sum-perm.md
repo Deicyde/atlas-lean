@@ -1,6 +1,6 @@
 # Permutation expansion of the generalized Eulerian polynomials
 
-**Permutation expansion of the generalized Eulerian polynomials.** Let $P_n(q, t; x, y)$ be
+Let $P_n(q, t; x, y)$ be
 the generalized Eulerian polynomial and let $S_n$ be the set of permutations of
 $\{0, 1, \dots, n-1\}$. For $w \in S_n$ write $\mathrm{cyc}(w)$ for the number of cycles of $w$
 (fixed points counted as cycles), $\mathrm{fix}(w)$ for the number of fixed points of $w$, and

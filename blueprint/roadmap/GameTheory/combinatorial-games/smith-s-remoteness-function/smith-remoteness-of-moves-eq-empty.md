@@ -1,6 +1,6 @@
 # Smith's remoteness vanishes at terminal positions
 
-**Smith's remoteness vanishes at terminal positions.** In an impartial game, the remoteness
+In an impartial game, the remoteness
 of a terminal position (a position with no moves) is $0$.
 
 ## Sources

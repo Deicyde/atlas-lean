@@ -1,6 +1,6 @@
 # Decision version of hypergraph $k$-cut
 
-**Decision version of hypergraph $k$-cut.** For a natural number $k$, this is the decision
+For a natural number $k$, this is the decision
 problem on bitstrings that decodes an input as a triple $(n, E, B)$: a number $n$ of vertices
 $0, \dots, n-1$, a list $E$ of hyperedges, each a list of vertices with a natural-number cost, and
 a natural-number budget $B$. It accepts the input iff every hyperedge lists only vertices below

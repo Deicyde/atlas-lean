@@ -1,6 +1,6 @@
 # Number of smallest even parts in overpartitions
 
-**Number of smallest even parts in overpartitions.** For a natural number $n$,
+For a natural number $n$,
 $\overline{\mathrm{spt2}}(n)$ is the number of smallest parts in the overpartitions of $n$ whose
 smallest part is even and not overlined: the sum, over all overpartitions $O$ of $n$, of the
 smallest-even-part contribution of $O$, which is the number of copies of the smallest part $s$

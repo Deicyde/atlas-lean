@@ -1,6 +1,6 @@
 # Immediate successor
 
-**Immediate successor.** Let $E$ be a collection of finitely supported coefficient functions
+Let $E$ be a collection of finitely supported coefficient functions
 $\mathbb N \to \mathbb N$, and let $\lt _a$ be the ascending lexicographic order. A finitely supported
 coefficient function $\nu$ is the immediate successor of $\mu$ in $E$ if $\nu \in E$,
 $\mu \lt _a \nu$, and every $\xi \in E$ with $\mu \lt _a \xi$ satisfies $\xi = \nu$ or $\nu \lt _a \xi$.

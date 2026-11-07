@@ -1,6 +1,6 @@
 # Computable predicates are closed under precomposition with pairing
 
-**Computable predicates are closed under precomposition with pairing.** Let
+Let
 $\langle a, b \rangle$ denote the pairing bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$,
 $\langle a, b \rangle = b^2 + a$ if $a < b$ and $\langle a, b \rangle = a^2 + a + b$ otherwise.
 If $Q$ is a decidable set of natural numbers, then the set of pairs

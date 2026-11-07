@@ -1,6 +1,6 @@
 # Deadlock-correct duality for AF
 
-**Deadlock-correct duality for AF.** In a labelled transition system with a valuation of
+In a labelled transition system with a valuation of
 atoms, let $\varphi$ be a CTL formula. A state $s$ satisfies $\mathsf{AF}\,\varphi$ if and only
 if $s$ satisfies neither $\mathsf{E}[\neg\varphi \,\mathsf{U}\, (\neg\varphi \wedge
 \neg\mathsf{EX}\,\top)]$ nor $\mathsf{EG}\,\neg\varphi$.

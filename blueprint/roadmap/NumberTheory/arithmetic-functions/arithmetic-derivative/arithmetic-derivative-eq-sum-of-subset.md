@@ -1,6 +1,6 @@
 # Arithmetic derivative over a superset of the prime factors
 
-**Arithmetic derivative over a superset of the prime factors.** Let $n$ be a natural number
+Let $n$ be a natural number
 and let $s$ be a finite set of natural numbers containing every prime factor of $n$. Then the
 arithmetic derivative of $n$ is $D(n) = \sum_{p \in s} \nu_p(n) \cdot (n / p)$, where $\nu_p(n)$
 is the exponent of $p$ in the prime factorization of $n$ (zero when $p$ is not a prime factor

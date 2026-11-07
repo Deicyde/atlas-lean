@@ -1,6 +1,6 @@
 # Large alternating groups are recognizable by spectrum
 
-**Large alternating groups are recognizable by spectrum.** There is a natural number $N$ such that
+There is a natural number $N$ such that
 for every $n \ge N$, every finite group $G$ whose set of element orders equals that of the
 alternating group $A_n$ is isomorphic to $A_n$.
 

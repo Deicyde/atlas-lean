@@ -1,6 +1,6 @@
 # Stanley's interval-decomposition conjecture for complexes with acyclic links is false
 
-**Stanley's interval-decomposition conjecture for complexes with acyclic links is false.** It is
+It is
 not true that for every integer $k \ge 1$ and every finite simplicial complex $K$ on the vertex set
 $\mathbb{N}$ (a finite family of finite subsets of $\mathbb{N}$ closed under taking subsets) such
 that the link $\mathrm{lk}_K(F) = \{G \in K : G \cap F = \emptyset,\ G \cup F \in K\}$ of every

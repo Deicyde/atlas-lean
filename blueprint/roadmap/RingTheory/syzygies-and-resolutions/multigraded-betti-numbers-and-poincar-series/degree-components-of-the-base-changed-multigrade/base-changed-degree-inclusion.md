@@ -1,6 +1,6 @@
 # Inclusion of a multidegree component complex
 
-**Inclusion of a multidegree component complex.** Let $K$ be a field, let
+Let $K$ be a field, let
 $R = K[x_1, \dots, x_n]$, let $M$ be a multigraded polynomial module over $R$, and let $F$ be a
 multigraded free resolution of $M$ whose term $F_i$ has the homogeneous basis
 $(e_j)_{j \in \iota_i}$. Write $K \otimes_R F$ for the chain complex of $K$-vector spaces obtained

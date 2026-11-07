@@ -1,6 +1,6 @@
 # Bi-Carmichael numbers for signatures of opposite signs
 
-**Bi-Carmichael numbers for signatures of opposite signs.** Let $D$ and $D'$ be integers and
+Let $D$ and $D'$ be integers and
 let $n$ be both a $D$-Carmichael and a $D'$-Carmichael number whose Jacobi symbols satisfy
 $\left(\frac{D}{n}\right) \ne \left(\frac{D'}{n}\right)$. Then
 $\left(\frac{D'}{p}\right) = -\left(\frac{D}{p}\right)$ for every prime $p \mid n$, the number of

@@ -1,6 +1,6 @@
 # Deletion from a trie
 
-**Deletion from a trie.** Deleting a key $k$ (a list of letters) from a trie $t$ works by
+Deleting a key $k$ (a list of letters) from a trie $t$ works by
 recursion on $k$. If $k$ is empty, the root of $t$ loses its value and keeps its children. If
 $k$ consists of a first letter $a$ followed by a key $k'$ and the root of $t$ has no child at
 $a$, then $t$ is unchanged. Otherwise $k'$ is deleted from the first child at $a$. If the

@@ -1,6 +1,6 @@
 # Initial integer interval
 
-**Initial integer interval.** For a natural number $n$, $I_n = \{0, 1, \ldots, n - 1\}$ is
+For a natural number $n$, $I_n = \{0, 1, \ldots, n - 1\}$ is
 the set of the first $n$ natural numbers, viewed as a finite set of real numbers; $I_0$ is empty.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Triple products of Stirling numbers bracket the binomial coefficient
 
-**Triple products of Stirling numbers bracket the binomial coefficient.** Let $n$, $p$ and
+Let $n$, $p$ and
 $j$ be positive integers with $p \le n$. Write $S(m, i)$ for the Stirling number of the second
 kind (the number of partitions of an $m$-element set into $i$ nonempty blocks) and $c(m, i)$ for
 the unsigned Stirling number of the first kind (the number of permutations of $m$ elements with

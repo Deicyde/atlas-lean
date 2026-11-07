@@ -1,6 +1,5 @@
 # Tensor square of an irreducible $\mathfrak{g}_2$-representation of dimension $64$
 
-**Tensor square of an irreducible $\mathfrak{g}_2$-representation of dimension $64$.**
 There exist a complex vector space $V$ and a representation of the exceptional Lie algebra
 $\mathfrak{g}_2$ over $\mathbb{C}$ on $V$ such that $V$ has dimension $64$ over $\mathbb{C}$,
 $V$ is irreducible, and the tensor square $V \otimes_{\mathbb{C}} V$, with the representation

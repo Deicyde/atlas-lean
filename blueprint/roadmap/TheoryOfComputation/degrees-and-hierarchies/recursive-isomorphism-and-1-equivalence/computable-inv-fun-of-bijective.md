@@ -1,6 +1,6 @@
 # The inverse of a computable bijection is computable
 
-**The inverse of a computable bijection is computable.** Let
+Let
 $f : \mathbb{N} \to \mathbb{N}$ be a computable bijection. Then its inverse function
 $f^{-1} : \mathbb{N} \to \mathbb{N}$ is computable.
 

@@ -1,6 +1,6 @@
 # No odd unitary s-Zumkeller numbers
 
-**No odd unitary s-Zumkeller numbers.** There is no odd unitary s-Zumkeller number.
+There is no odd unitary s-Zumkeller number.
 
 ## Sources
 

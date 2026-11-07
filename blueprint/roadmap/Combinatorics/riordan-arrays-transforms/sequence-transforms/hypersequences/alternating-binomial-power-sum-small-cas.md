@@ -1,6 +1,6 @@
 # Small cases of alternating binomial power sums
 
-**Small cases of alternating binomial power sums.** Let
+Let
 $p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (kx + y)^\ell$, with $0^0 = 1$. For all
 complex numbers $x, y$ and natural numbers $\ell, m$:
 (i) $p_{\ell,0}(x, y) = y^\ell$;

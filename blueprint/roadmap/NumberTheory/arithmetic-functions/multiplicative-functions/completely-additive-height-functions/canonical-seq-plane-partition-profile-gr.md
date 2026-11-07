@@ -1,6 +1,6 @@
 # Growth for the plane partition profile
 
-**Growth for the plane partition profile.** Let $H_{\mathrm{seq}}$ be the canonical
+Let $H_{\mathrm{seq}}$ be the canonical
 sequential realization of the profile $\pi_k = k$ for $k \ge 1$, let
 $S(x) = \sum_{p \le x} H_{\mathrm{seq}}(p)/p$ (the sum over primes $p \le x$) and
 $F(x) = \sum_{1 \le n \le x} H_{\mathrm{seq}}(n)$, and let $m(x)$ be the number of primes

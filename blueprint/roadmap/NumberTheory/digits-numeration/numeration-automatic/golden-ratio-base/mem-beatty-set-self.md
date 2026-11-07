@@ -1,6 +1,6 @@
 # The initial term of a generalized Beatty set
 
-**The initial term of a generalized Beatty set.** For all integers $p$, $q$ and $r$, the
+For all integers $p$, $q$ and $r$, the
 integer $r$ belongs to the set $V_0(p, q, r)$ of terms $p \lfloor n\varphi \rfloor + qn + r$,
 $n \ge 0$, of the generalized Beatty sequence, where $\varphi$ is the golden ratio; indeed $r$
 is its term at $n = 0$.

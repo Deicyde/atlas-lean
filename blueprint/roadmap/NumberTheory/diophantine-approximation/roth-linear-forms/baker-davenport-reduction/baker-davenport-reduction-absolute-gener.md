@@ -1,6 +1,6 @@
 # Baker–Davenport reduction for an arbitrary denominator, absolute-value form
 
-**Baker–Davenport reduction for an arbitrary denominator, absolute-value form.** For a real
+For a real
 number $x$ write $\lVert x \rVert = |x - \operatorname{round}(x)|$ for the distance from $x$ to a
 nearest integer. Let $M$ and $q$ be natural numbers with $q > 0$, and let $\kappa$, $\mu$, $A$, $B$
 be real numbers with $A > 0$ and $B > 1$. Put

@@ -1,6 +1,6 @@
 # Cauchy–Davenport–Chowla theorem
 
-**Cauchy–Davenport–Chowla theorem.** Let $q$ be a positive integer and let $A$ and $B$ be
+Let $q$ be a positive integer and let $A$ and $B$ be
 nonempty subsets of $\mathbb{Z}/q\mathbb{Z}$ such that $0 \in B$ and every nonzero element of $B$
 is a unit of $\mathbb{Z}/q\mathbb{Z}$. Then $|A + B| \ge \min(q, |A| + |B| - 1)$, where
 $A + B = \{a + b : a \in A, b \in B\}$.

@@ -1,6 +1,6 @@
 # Fractional ideals coprime to a modulus
 
-**Fractional ideals coprime to a modulus.** Let $\mathfrak m$ be a modulus of a number field
+Let $\mathfrak m$ be a modulus of a number field
 $K$, with finite part the nonzero ideal $\mathfrak m_0$ of $\mathcal O_K$. For an invertible
 fractional ideal $I$ of $\mathcal O_K$ and a nonzero prime ideal $\mathfrak p$, write
 $v_{\mathfrak p}(I)$ for the exponent of $\mathfrak p$ in the factorization of $I$. The fractional

@@ -1,6 +1,6 @@
 # Honsberger-type identity for generalized Leonardo $p$-numbers
 
-**Honsberger-type identity for generalized Leonardo $p$-numbers.** Let $p$, $k$, $m$ and $n$
+Let $p$, $k$, $m$ and $n$
 be natural numbers with $p, k, m, n \ge 1$. Write $\mathcal{L}$ for the generalized Leonardo
 $p$-numbers $\mathcal{L}_{p,k}$, extended to negative integers by $\mathcal{L}(t) = -k$ for
 $t < 0$. Then

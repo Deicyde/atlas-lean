@@ -1,6 +1,6 @@
 # Truncated approximate eigenvector of the bilateral shift
 
-**Truncated approximate eigenvector of the bilateral shift.** Let $\mathbb{K}$ be
+Let $\mathbb{K}$ be
 $\mathbb{R}$ or $\mathbb{C}$, let $\mu \in \mathbb{K}$ and $N \in \mathbb{N}$, and write
 $\bar{\mu}$ for the complex conjugate of $\mu$. This is the vector
 $v_{\mu,N} \in \ell^2(\mathbb{Z}, \mathbb{K})$ whose $n$-th coordinate is the truncated

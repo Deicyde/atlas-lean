@@ -1,6 +1,6 @@
 # Kourovka Problem 13.63 (bounded or infinite number of groups per spectrum)
 
-**Kourovka Problem 13.63 (bounded or infinite number of groups per spectrum).** The proposition,
+The proposition,
 asked about by W. J. Shi, that there is a natural number $k$ such that for every set $\Gamma$ of
 natural numbers, either $h(\Gamma) \le k$ or $h(\Gamma) = \infty$, where $h(\Gamma)$ is the number
 of isomorphism classes of finite groups $G$ whose spectrum $\pi_e(G)$ (set of element orders) is

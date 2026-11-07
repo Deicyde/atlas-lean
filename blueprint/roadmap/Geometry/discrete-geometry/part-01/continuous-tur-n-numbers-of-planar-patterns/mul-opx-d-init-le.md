@@ -1,6 +1,6 @@
 # Projection bound for the d-dimensional continuous Turán number
 
-**Projection bound for the d-dimensional continuous Turán number.** Let $d$ be a natural
+Let $d$ be a natural
 number, $n$ a real number and $P \subseteq \mathbb{R}^{d+1}$, and let $\Pr(P)$ be the subset of
 $\mathbb{R}^d$ obtained by dropping the last coordinate of every point of $P$. Writing
 $\mathrm{opx}(n, Q, k)$ for the $k$-dimensional continuous Turán number, we have

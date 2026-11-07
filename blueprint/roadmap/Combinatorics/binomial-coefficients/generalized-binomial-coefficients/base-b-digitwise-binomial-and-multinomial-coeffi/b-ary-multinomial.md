@@ -1,6 +1,6 @@
 # The $b$-ary multinomial coefficient
 
-**The $b$-ary multinomial coefficient.** Let $b \ge 2$, let $n$ be a natural number and let
+Let $b \ge 2$, let $n$ be a natural number and let
 $(k_1, \dots, k_m)$ be a list of natural numbers, and write $n_l$ and $(k_i)_l$ for the rank-$l$
 base-$b$ digits of $n$ and $k_i$ (taken to be $0$ beyond the last digit, with $0$ having no
 digits). Let $N$ be the largest of the numbers of base-$b$ digits of $n, k_1, \dots, k_m$. The

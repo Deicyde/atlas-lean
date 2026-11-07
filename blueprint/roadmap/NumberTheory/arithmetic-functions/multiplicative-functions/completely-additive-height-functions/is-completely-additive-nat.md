@@ -1,6 +1,6 @@
 # Completely additive functions on the positive integers
 
-**Completely additive functions on the positive integers.** A function
+A function
 $H : \mathbb{N} \to \mathbb{N}$ is completely additive on the positive integers if
 $H(ab) = H(a) + H(b)$ for all integers $a, b \ge 1$.
 

@@ -1,6 +1,6 @@
 # Branch groups (Kourovka 15.14 version)
 
-**Branch groups (Kourovka 15.14 version).** A group $G$ is a branch group (Kourovka 15.12) if
+A group $G$ is a branch group (Kourovka 15.12) if
 there are a sequence $m$ of natural numbers with $m(i) \ge 2$ for every $i$ and an action $\rho$ of
 $G$ by permutations of the vertices of the spherically homogeneous rooted tree with branching
 sequence $m$ such that: $\rho$ is faithful; each $\rho(g)$ is a tree automorphism, that is, for all

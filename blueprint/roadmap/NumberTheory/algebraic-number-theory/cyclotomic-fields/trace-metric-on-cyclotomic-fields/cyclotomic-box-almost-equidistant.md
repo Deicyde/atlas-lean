@@ -1,6 +1,6 @@
 # Almost all pairs in the cyclotomic box are nearly equidistant
 
-**Almost all pairs in the cyclotomic box are nearly equidistant.** For every real
+For every real
 $\varepsilon > 0$ there is a natural number $A$ with the following property. Let $p$ be a prime
 and $N$ a natural number with $p > A$ and $N > A$, and let $K$ be a field generated over
 $\mathbb{Q}$ by a primitive $p$-th root of unity, with fixed primitive $p$-th root of unity

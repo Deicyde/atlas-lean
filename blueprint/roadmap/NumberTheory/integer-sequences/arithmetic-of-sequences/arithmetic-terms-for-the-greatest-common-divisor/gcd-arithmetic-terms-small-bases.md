@@ -1,6 +1,6 @@
 # The gcd terms in bases $2$, $3$ and $4$
 
-**The gcd terms in bases $2$, $3$ and $4$.** Let $c \in \{2, 3, 4\}$, let $a, b \ge 1$ be
+Let $c \in \{2, 3, 4\}$, let $a, b \ge 1$ be
 natural numbers, and put $E = ab(ab + a + b)$ and $D = (c^{a^2 b} - 1)(c^{a b^2} - 1)$. Then the
 identity
 

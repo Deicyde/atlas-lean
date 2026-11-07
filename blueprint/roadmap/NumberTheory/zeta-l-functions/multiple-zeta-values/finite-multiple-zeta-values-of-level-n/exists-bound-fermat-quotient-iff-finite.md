@@ -1,6 +1,6 @@
 # Criterion for a uniform bound on the least non-Wieferich base
 
-**Criterion for a uniform bound on the least non-Wieferich base.** The following are
+The following are
 equivalent:
 (a) there is a natural number $M$ such that for every odd prime $p$ there is an integer $N$ with
 $1 \le N \le M$, $p \nmid N$ and $p^2 \nmid N^{p-1} - 1$;

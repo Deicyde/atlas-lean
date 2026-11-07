@@ -1,6 +1,6 @@
 # Motion equal to the identity at parameter zero
 
-**Motion equal to the identity at parameter zero.** Let $E$ be a set of complex numbers and
+Let $E$ be a set of complex numbers and
 $F$ a function assigning a complex number $F(w, z)$ to each pair of complex numbers $w, z$.
 Condition (c) holds for $E$ and $F$ when $F(w, 0) = w$ for every $w \in E$.
 

@@ -1,6 +1,6 @@
 # The bound $K$ of the unshifted Pell equation
 
-**The bound $K$ of the unshifted Pell equation.** For every integer $D$, the constant
+For every integer $D$, the constant
 $K = |a| + \max(|b| + 1, \sqrt{1 + D b^2})$ with $a = b = 0$ equals $1$.
 
 ## Sources

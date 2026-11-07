@@ -1,6 +1,6 @@
 # Three-coloring the 493 × 493 grid forces a monochromatic L
 
-**Three-coloring the 493 × 493 grid forces a monochromatic L.** Write
+Write
 $[n] = \{1, \dots, n\}$. Every coloring of the grid $[493] \times [493]$ with $3$ colors contains
 a monochromatic L: positive integers $x$, $y$, $d$ with $x + d \le 493$ and $y + d \le 493$ such
 that the points $(x, y)$, $(x + d, y)$ and $(x + d, y + d)$ have the same color. Equivalently,

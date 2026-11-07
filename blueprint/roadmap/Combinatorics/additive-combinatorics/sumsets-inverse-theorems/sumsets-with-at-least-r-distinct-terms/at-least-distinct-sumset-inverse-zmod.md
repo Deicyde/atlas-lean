@@ -1,6 +1,6 @@
 # Inverse theorem for sums with at least $r$ distinct terms modulo a prime
 
-**Inverse theorem for sums with at least $r$ distinct terms modulo a prime.** Let $p$ be a
+Let $p$ be a
 prime, let $A \subseteq \mathbb{Z}/p\mathbb{Z}$ be a set with $|A| = k \ge 2$, and let $r, h$ be
 natural numbers with $1 \le r \le k$ and $h \ge r + 2$. Write $h^{(\ge r)}A$ for the set of sums
 of $h$ elements of $A$, repetitions allowed, in which at least $r$ distinct elements occur. If

@@ -1,6 +1,6 @@
 # Membership in the ray-one integral units
 
-**Membership in the ray-one integral units.** Let $\mathfrak m$ be a modulus of a number field
+Let $\mathfrak m$ be a modulus of a number field
 $K$ with finite part $\mathfrak m_0$ and set of real places $\mathfrak m_\infty$, and for a nonzero
 prime $\mathfrak p$ of the ring of integers $\mathcal O_K$ write $v_{\mathfrak p}$ for the exponent
 of $\mathfrak p$ in a fractional ideal of $K$, applied to an element through its principal

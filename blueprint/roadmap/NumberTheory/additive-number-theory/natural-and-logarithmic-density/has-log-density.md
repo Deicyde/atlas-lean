@@ -1,6 +1,6 @@
 # Logarithmic density
 
-**Logarithmic density.** A set $A$ of natural numbers has logarithmic density
+A set $A$ of natural numbers has logarithmic density
 $d \in \mathbb{R}$ if
 $\frac{1}{\log n} \sum_{k \in A,\, k \le n} \frac{1}{k}$
 tends to $d$ as $n \to \infty$, where $\log$ is the natural logarithm, the term $1/k$ for $k = 0$

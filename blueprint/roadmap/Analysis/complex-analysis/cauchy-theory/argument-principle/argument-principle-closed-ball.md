@@ -1,6 +1,6 @@
 # Argument principle on a closed disc, with an integrability hypothesis
 
-**Argument principle on a closed disc, with an integrability hypothesis.** Let $c \in \mathbb{C}$,
+Let $c \in \mathbb{C}$,
 $R > 0$, and let $f : \mathbb{C} \to \mathbb{C}$ be meromorphic on the closed disc $|z - c| \le R$
 with finite order at every point of that disc. Suppose the order of $f$ is zero at every point of
 the circle $|z - c| = R$ and $f'/f$ is integrable on that circle. Then the integral of $f'/f$ over

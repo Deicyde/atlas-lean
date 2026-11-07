@@ -1,6 +1,6 @@
 # Hurwitz quaternions of square norm that are not a unit times a square
 
-**Hurwitz quaternions of square norm that are not a unit times a square.** A Hurwitz
+A Hurwitz
 quaternion is a quaternion whose four rational coordinates are either all integers or all halves
 of odd integers; its norm is the sum of the squares of its coordinates, and a Hurwitz unit is a
 Hurwitz quaternion of norm $1$. Let $r$ be a positive integer that is not a sum of three squares

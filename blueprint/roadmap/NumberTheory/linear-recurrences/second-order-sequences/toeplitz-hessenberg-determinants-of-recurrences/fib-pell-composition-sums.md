@@ -1,6 +1,6 @@
 # Composition-sum formulas for $F_{2n}$, $F_{3n-1}$ and $P_{n-1}$
 
-**Composition-sum formulas for $F_{2n}$, $F_{3n-1}$ and $P_{n-1}$.** Let $F_k$ be the
+Let $F_k$ be the
 Fibonacci numbers and $P_k$ the Pell numbers. For every $n \ge 1$, with each sum running over all
 compositions $(c_1, \dots, c_r)$ of $n$ (tuples of positive integers with
 $c_1 + \dots + c_r = n$),

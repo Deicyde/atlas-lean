@@ -1,6 +1,6 @@
 # Integers at which $|\bar P_n|$ is multiplicative
 
-**Integers at which $|\bar P_n|$ is multiplicative.** Let $\bar P_n$ be the
+Let $\bar P_n$ be the
 Kassel–Reutenauer polynomial and let $N$ be an integer. Then
 $|\bar P_{mn}(N)| = |\bar P_m(N)|\,|\bar P_n(N)|$ for all coprime positive integers $m$ and $n$
 if and only if $N \in \{-2, -1, 0, 2\}$.

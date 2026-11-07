@@ -1,6 +1,6 @@
 # Stable complexity of a stable number
 
-**Stable complexity of a stable number.** If $n$ is a stable natural number, then its
+If $n$ is a stable natural number, then its
 stable complexity equals its integer complexity: $\lVert n \rVert_{\mathrm{st}} = \lVert n \rVert$.
 
 ## Sources

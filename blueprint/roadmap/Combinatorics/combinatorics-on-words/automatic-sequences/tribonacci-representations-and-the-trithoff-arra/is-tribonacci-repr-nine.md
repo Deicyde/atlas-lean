@@ -1,6 +1,6 @@
 # A Tribonacci representation of nine
 
-**A Tribonacci representation of nine.** The digit list $(0, 1, 0, 1)$, read least
+The digit list $(0, 1, 0, 1)$, read least
 significant digit first (the word $1010$ written most significant digit first), is a
 Tribonacci representation of $9$.
 

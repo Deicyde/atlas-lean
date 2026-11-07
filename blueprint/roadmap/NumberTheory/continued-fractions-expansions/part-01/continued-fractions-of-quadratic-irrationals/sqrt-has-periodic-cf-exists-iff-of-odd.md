@@ -1,6 +1,6 @@
 # Parity criterion for $\sqrt{d}$ with a given symmetric period, odd length
 
-**Parity criterion for $\sqrt{d}$ with a given symmetric period, odd length.** Let $l$ be odd
+Let $l$ be odd
 and let $a_1, \dots, a_{l-1}$ be positive integers with $a_i = a_{l-i}$ for $1 \le i \le l - 1$.
 For $0 \le i \le l - 1$ let $q_i = K(a_1, \dots, a_i)$ be the continuant, given by $q_0 = 1$,
 $q_1 = a_1$ and $q_{i+2} = a_{i+2} q_{i+1} + q_i$. Then there are a natural number $d$ that is

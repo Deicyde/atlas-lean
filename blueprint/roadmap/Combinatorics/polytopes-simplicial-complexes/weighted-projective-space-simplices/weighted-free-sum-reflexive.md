@@ -1,6 +1,6 @@
 # Reflexivity of the weighted free sum
 
-**Reflexivity of the weighted free sum.** Let $p = (p_1, \dots, p_m)$ and
+Let $p = (p_1, \dots, p_m)$ and
 $w = (w_1, \dots, w_k)$ be lists of positive integers such that the weighted projective space
 simplices $\Delta_{(1,p)}$ and $\Delta_{(1,w)}$ are reflexive, and let
 $q = (p_1, \dots, p_m, (1 + \sum_i p_i) w_1, \dots, (1 + \sum_i p_i) w_k)$. Then $\Delta_{(1,q)}$

@@ -1,6 +1,6 @@
 # Paths whose first non-up step is down
 
-**Paths whose first non-up step is down.** Write a path of length $n$ as a sequence of steps
+Write a path of length $n$ as a sequence of steps
 $p_0, \dots, p_{n-1}$, each $D$ (down), $F$ (flat) or $U$ (up), encoded as $0$, $1$, $2$. The
 path has first non-up step down when there is a position $i$ with $p_i = D$ and $p_j = U$ for
 every $j < i$. In particular, a path all of whose steps are up steps, including the empty path,

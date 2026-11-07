@@ -1,6 +1,6 @@
 # Expected number of lucky cars in weakly increasing parking functions
 
-**Expected number of lucky cars in weakly increasing parking functions.** Let $n \ge 1$. Number
+Let $n \ge 1$. Number
 cars and spots from $0$, and encode a weakly increasing parking function of length $n$ as a
 nondecreasing map $a : \{0, \dots, n-1\} \to \{0, \dots, n-1\}$ with $a(i) \le i$ for every $i$.
 The average, over all such maps $a$, of the number of indices $i$ with $a(i) = i$ equals

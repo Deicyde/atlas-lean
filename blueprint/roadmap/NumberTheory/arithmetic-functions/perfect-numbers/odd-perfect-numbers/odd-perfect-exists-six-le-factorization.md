@@ -1,6 +1,6 @@
 # McDaniel's exponent bound for odd perfect numbers below $10^{9118}$
 
-**McDaniel's exponent bound for odd perfect numbers below $10^{9118}$.** If $N$ is an odd
+If $N$ is an odd
 perfect number with $N < 10^{9118}$, then $N$ has a prime divisor whose exponent in the prime
 factorization of $N$ is at least $6$.
 

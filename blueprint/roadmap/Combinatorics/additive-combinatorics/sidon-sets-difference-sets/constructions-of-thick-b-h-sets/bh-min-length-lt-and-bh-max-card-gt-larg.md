@@ -1,6 +1,6 @@
 # Strict bounds for thick $B_h$-sets beyond $e^{e^{34}}$
 
-**Strict bounds for thick $B_h$-sets beyond $e^{e^{34}}$.** Let $h \ge 2$. For natural
+Let $h \ge 2$. For natural
 numbers $n$ and $k$, let $R_h(n)$ be the largest size of a $B_h$-set of natural numbers contained
 in $\{1, \dots, n\}$, and let $R_h^{-1}(k)$ be the smallest $n$ such that $\{1, \dots, n\}$
 contains a $B_h$-set with exactly $k$ elements. Then every natural number $k > e^{e^{34}}$

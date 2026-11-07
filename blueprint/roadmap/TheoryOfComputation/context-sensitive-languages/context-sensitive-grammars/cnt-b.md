@@ -1,3 +1,3 @@
 # Count of b's in a sentential form
 
-**Count of b's in a sentential form.** The `b`-count: terminal `b`'s plus unborn `B`'s.
+The `b`-count: terminal `b`'s plus unborn `B`'s.

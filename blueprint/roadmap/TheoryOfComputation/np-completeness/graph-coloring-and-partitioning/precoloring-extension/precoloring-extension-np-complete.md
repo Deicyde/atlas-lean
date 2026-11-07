@@ -1,6 +1,6 @@
 # PRECOLORING EXTENSION is NP-complete
 
-**PRECOLORING EXTENSION is NP-complete.** The decision problem PRECOLORING EXTENSION lies in
+The decision problem PRECOLORING EXTENSION lies in
 NP, and every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

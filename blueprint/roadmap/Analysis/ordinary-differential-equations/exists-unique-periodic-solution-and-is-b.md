@@ -1,6 +1,6 @@
 # Nonresonant forced oscillator
 
-**Nonresonant forced oscillator.** Let $\omega > 0$ be a real number that is not an integer,
+Let $\omega > 0$ be a real number that is not an integer,
 and let $g : \mathbb{R} \to \mathbb{R}$ be continuous and $2\pi$-periodic. Then the equation
 $u'' + \omega^2 u = g$ has exactly one twice continuously differentiable solution
 $u : \mathbb{R} \to \mathbb{R}$ that is $2\pi$-periodic, and every twice continuously

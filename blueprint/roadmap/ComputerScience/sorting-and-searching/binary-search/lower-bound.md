@@ -1,6 +1,6 @@
 # Lower-bound search
 
-**Lower-bound search.** Given an array $a = (a_0, \dots, a_{n-1})$ over a linearly ordered type and
+Given an array $a = (a_0, \dots, a_{n-1})$ over a linearly ordered type and
 a key $k$, lower-bound search maintains a half-open interval $[l, h)$ of indices, starting from
 $[0, n)$. While $l < h$, it compares $a_m$ with $k$ at the midpoint
 $m = l + \lfloor (h - l)/2 \rfloor$, charging one unit for this comparison, and continues with

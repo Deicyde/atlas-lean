@@ -1,6 +1,6 @@
 # Generating function for the even parts of $n$-color partitions
 
-**Generating function for the even parts of $n$-color partitions.** Let $A_e(m)$ be the total
+Let $A_e(m)$ be the total
 number of parts of even size, counted with multiplicity, over the $n$-color partitions of $m$.
 Then, as formal power series in $q$ over $\mathbb{Q}$, with infinite sums and products taken
 coefficientwise,

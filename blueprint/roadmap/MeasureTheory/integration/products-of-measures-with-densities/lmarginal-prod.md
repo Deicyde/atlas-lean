@@ -1,6 +1,6 @@
 # Iterated integrals of a product of one-variable functions
 
-**Iterated integrals of a product of one-variable functions.** Let $\mu_i$ be σ-finite
+Let $\mu_i$ be σ-finite
 measures on measurable spaces $X_i$, indexed by a finite type $\iota$, and let
 $g_i : X_i \to [0, \infty]$ be measurable functions. For a finite set $s \subseteq \iota$ and a
 point $x \in \prod_i X_i$, integrating $y \mapsto \prod_{i \in \iota} g_i(y_i)$ over the

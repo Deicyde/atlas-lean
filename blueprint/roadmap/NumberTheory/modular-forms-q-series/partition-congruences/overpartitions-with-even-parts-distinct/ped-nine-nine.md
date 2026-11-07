@@ -1,6 +1,6 @@
 # The partition function $\mathrm{ped}_{9,9}$
 
-**The partition function $\mathrm{ped}_{9,9}$.** For $k \ge 1$ let
+For $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$, an integer power series in $q$ with constant coefficient $1$.
 For a natural number $n$, $\mathrm{ped}_{9,9}(n)$ is the integer coefficient of $q^n$ in the power
 series $f_4 f_{18} / (f_1 f_9)$.

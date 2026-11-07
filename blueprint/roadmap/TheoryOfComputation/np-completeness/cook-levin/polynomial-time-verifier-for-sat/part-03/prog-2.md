@@ -1,6 +1,6 @@
 # The lookup program
 
-**The lookup program.** The lookup machine works on the stacks $T$, $B$, $S$, $A$, $C$ and
+The lookup machine works on the stacks $T$, $B$, $S$, $A$, $C$ and
 $V$ and acts at each label as follows. At $\mathsf{init}$ it pushes the bit symbol of false onto
 $V$ and goes to $\mathsf{scan}$. At $\mathsf{scan}$, if the top of $B$ is a table marker it moves
 that marker onto $S$ and goes to $\mathsf{cmp}(b)$ if the marker is $\mathsf{val}(b)$ and to

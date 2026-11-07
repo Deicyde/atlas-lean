@@ -1,6 +1,6 @@
 # The lunar unit is a monomial
 
-**The lunar unit is a monomial.** For every natural number $b \ge 2$, the lunar unit of base
+For every natural number $b \ge 2$, the lunar unit of base
 $b$, the sequence with constant term $b - 1$ and all other terms $0$, is a max-min monomial: it
 has exactly one nonzero term.
 

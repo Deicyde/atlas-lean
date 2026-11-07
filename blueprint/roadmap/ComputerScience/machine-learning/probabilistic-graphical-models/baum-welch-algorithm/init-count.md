@@ -1,6 +1,6 @@
 # Expected initial-state counts
 
-**Expected initial-state counts.** Let $S$ and $O$ be finite sets, let $T$ be a natural
+Let $S$ and $O$ be finite sets, let $T$ be a natural
 number, and let $x_1, \dots, x_N$ be sequences of observations in $O$. For a valid hidden Markov
 model $h$ on states $S$ and observations $O$ and a state $s$, the expected number of sequences
 starting in $s$ is

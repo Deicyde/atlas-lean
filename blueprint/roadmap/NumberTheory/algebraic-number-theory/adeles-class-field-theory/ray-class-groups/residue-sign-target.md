@@ -1,6 +1,6 @@
 # Residue-sign target
 
-**Residue-sign target.** Let $m$ be a modulus of a number field $K$, with finite part the
+Let $m$ be a modulus of a number field $K$, with finite part the
 nonzero ideal $\mathfrak{m}_0$ of the ring of integers $\mathcal{O}_K$ and infinite part the
 finite set $S$ of real places of $K$. Let $G$ denote $\mathbb{Z}/2\mathbb{Z}$ written
 multiplicatively, let $G^S$ denote the group of functions from $S$ to $G$ (one sign for each place

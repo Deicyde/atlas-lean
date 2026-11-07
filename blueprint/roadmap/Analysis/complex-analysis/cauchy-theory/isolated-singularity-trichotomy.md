@@ -1,6 +1,6 @@
 # Classification of isolated singularities
 
-**Classification of isolated singularities.** Let $c \in \mathbb{C}$, let $r > 0$, and let
+Let $c \in \mathbb{C}$, let $r > 0$, and let
 $f : \mathbb{C} \to \mathbb{C}$ be holomorphic on the punctured disc
 $\{z \in \mathbb{C} : 0 < |z - c| < r\}$. Then at least one of the following holds: there is a
 function $g$ holomorphic on the disc $\{z \in \mathbb{C} : |z - c| < r\}$ that agrees with $f$ on

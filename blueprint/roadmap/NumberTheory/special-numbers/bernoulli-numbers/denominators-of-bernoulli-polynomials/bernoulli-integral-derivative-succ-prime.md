@@ -1,6 +1,6 @@
 # Constraints on Bernoulli polynomials with integral derivative
 
-**Constraints on Bernoulli polynomials with integral derivative.** Let $n \ge 1$ be such that
+Let $n \ge 1$ be such that
 the derivative $B_n'(x)$ of the Bernoulli polynomial $B_n(x)$ has integer coefficients. Then
 $n + 1$ is prime, and if $n \notin \{1, 2, 4, 6, 10, 12, 28, 30, 36, 60\}$, then $n > 10^7$.
 

@@ -1,6 +1,6 @@
 # The dual of $c_0$ is $\ell^1$
 
-**The dual of $c_0$ is $\ell^1$.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let
 $c_0(\iota, \mathbb{K})$ be the space of families in $\mathbb{K}$ indexed by $\iota$ that tend to
 $0$ along the cofinite filter, with the supremum norm, and let $\ell^1(\iota, \mathbb{K})$ be the
 space of absolutely summable families, with the norm $\|a\|_1 = \sum_{i \in \iota} |a_i|$. This

@@ -1,6 +1,6 @@
 # Product formula from the mesh-pattern recurrence
 
-**Product formula from the mesh-pattern recurrence.** Let $R$ be a commutative semiring, let
+Let $R$ be a commutative semiring, let
 $x \in R$, let $0 < k \le n$ be natural numbers, and let $P(m, r) \in R$ for natural numbers
 $m, r$. Natural numbers are mapped into $R$. Suppose that $P(k-1, k) = (k-1)!$ and that
 $P(m, k) = (x + (m - 1))\,P(m-1, k)$ for every natural number $m \ge k$. Then

@@ -1,6 +1,6 @@
 # File placements
 
-**File placements.** A file placement on the Ferrers board with column heights $b$ is a set of
+A file placement on the Ferrers board with column heights $b$ is a set of
 cells of the board no two of which lie in the same column.
 
 ## Sources

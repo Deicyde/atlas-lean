@@ -1,6 +1,6 @@
 # Upper Lehmer bound $U(t; r)$
 
-**Upper Lehmer bound $U(t; r)$.** For real numbers $y_1, \dots, y_r$ let
+For real numbers $y_1, \dots, y_r$ let
 $\kappa_r(y_1, \dots, y_r) = (y_1 \cdots y_r - 1) / ((y_1 - 1) \cdots (y_r - 1))$, where division
 by $0$ gives $0$. For a list $t = (t_1, \dots, t_s)$ of real numbers and a natural number $r$, an
 admissible completion of $t$ is a list $u = (u_{s+1}, \dots, u_r)$ of $r - s$ real numbers (there

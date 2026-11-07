@@ -1,6 +1,6 @@
 # The Dirichlet identity is antimultiplicative
 
-**The Dirichlet identity is antimultiplicative.** For every semiring $R$, the identity
+For every semiring $R$, the identity
 $\delta$ of Dirichlet convolution on arithmetical functions with values in $R$, given by
 $\delta(1) = 1$ and $\delta(n) = 0$ for $n \ne 1$, is antimultiplicative.
 

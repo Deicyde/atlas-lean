@@ -1,6 +1,6 @@
 # MAP hypotheses maximize prior times likelihood
 
-**MAP hypotheses maximize prior times likelihood.** Let $\Theta$ and $\mathcal X$ be countable
+Let $\Theta$ and $\mathcal X$ be countable
 measurable spaces with measurable singletons, $\kappa$ a Markov kernel from $\Theta$ to
 $\mathcal X$, $\mu$ a finite measure on $\Theta$, and $x \in \mathcal X$ an observation with
 $(\kappa \circ \mu)(\{x\}) \neq 0$, where $\kappa \circ \mu$ is the composition of $\mu$ with

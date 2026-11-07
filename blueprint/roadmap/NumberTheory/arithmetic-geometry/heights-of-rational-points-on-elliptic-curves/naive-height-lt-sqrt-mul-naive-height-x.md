@@ -1,6 +1,6 @@
 # Height of a point on $y^2 = x^3 + ax - b$ versus the height of its $x$-coordinate
 
-**Height of a point on $y^2 = x^3 + ax - b$ versus the height of its $x$-coordinate.** Let
+Let
 $a, b \in \mathbb{Z}$ with $a \ne 0$, $b > 0$ and $4a^3 + 27b^2 \ne 0$. For $u \in \mathbb{Q}$
 let $H(u) = \max(|u_0|, u_1)$, where $u = u_0/u_1$ in lowest terms with $u_1 > 0$, and for
 $u, v \in \mathbb{Q}$ let $H(u, v) = \max(|U|, |V|, |W|)$, where $U, V, W$ are coprime integers

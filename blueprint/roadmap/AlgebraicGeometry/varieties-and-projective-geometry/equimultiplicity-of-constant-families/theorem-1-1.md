@@ -1,6 +1,6 @@
 # Equimultiplicity of μ-constant families
 
-**Equimultiplicity of μ-constant families.** Let $n \in \mathbb{N}$ and let $(f_t)_{t \in [0,1]}$
+Let $n \in \mathbb{N}$ and let $(f_t)_{t \in [0,1]}$
 be a family of formal power series in $\mathbb{C}[[z_1, \dots, z_n]]$ such that each coefficient
 of $f_t$ depends continuously on $t$ and each $f_t$ has zero constant term. If there is a natural
 number $\mu$ such that the Milnor number of $f_t$ equals $\mu$ for every $t$, then the order of

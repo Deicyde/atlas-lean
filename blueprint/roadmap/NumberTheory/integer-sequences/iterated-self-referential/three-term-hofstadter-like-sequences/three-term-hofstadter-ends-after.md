@@ -1,6 +1,6 @@
 # Exact length of a three-term Hofstadter-like sequence
 
-**Exact length of a three-term Hofstadter-like sequence.** Take integer initial conditions
+Take integer initial conditions
 $B(1), \dots, B(m)$, and either pad the sequence with $B(n) = 0$ for every $n \le 0$ or leave it
 unpadded. Continue it by $B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3))$ for $n > m$,
 where a term cannot be computed if this formula refers to an undefined index: a nonpositive

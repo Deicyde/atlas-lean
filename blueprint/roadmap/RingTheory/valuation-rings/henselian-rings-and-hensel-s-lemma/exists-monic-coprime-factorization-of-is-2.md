@@ -1,6 +1,6 @@
 # Hensel lifting of monic coprime factorizations, with degrees
 
-**Hensel lifting of monic coprime factorizations, with degrees.** Let $A$ be a commutative
+Let $A$ be a commutative
 ring and $I$ an ideal of $A$ such that $A$ is $I$-adically complete and $A/I$ is not the zero
 ring, and let $f \in A[X]$ be monic. Suppose the reduction of $f$ modulo $I$ equals
 $\bar g \bar h$, where $\bar g, \bar h \in (A/I)[X]$ are monic and coprime (that is,

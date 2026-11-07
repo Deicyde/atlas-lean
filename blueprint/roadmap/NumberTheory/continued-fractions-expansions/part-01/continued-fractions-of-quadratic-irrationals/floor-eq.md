@@ -1,6 +1,6 @@
 # The integer part of a periodic continued fraction is the floor
 
-**The integer part of a periodic continued fraction is the floor.** Let $x$ be a real
+Let $x$ be a real
 number and let $a_0$, $l$, $c$ and $a_1, a_2, \dots$ be natural numbers. Suppose that the regular
 continued fraction of $x$ has integer part $a_0$ and that, for every $k \ge 1$, its $k$-th
 partial quotient is $c$ when $l$ divides $k$ and $a_r$ otherwise, where $r$ is the remainder of

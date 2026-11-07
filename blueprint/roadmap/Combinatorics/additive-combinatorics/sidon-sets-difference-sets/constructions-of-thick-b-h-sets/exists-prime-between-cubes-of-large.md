@@ -1,6 +1,6 @@
 # Cully-Hugill's theorem for cubes
 
-**Cully-Hugill's theorem for cubes.** For every natural number $n > \exp(\exp(32.537))$ there
+For every natural number $n > \exp(\exp(32.537))$ there
 is a prime $p$ with $n^3 < p < (n + 1)^3$.
 
 ## Sources

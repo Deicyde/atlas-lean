@@ -1,6 +1,6 @@
 # The M-step of the Bernoulli mixture
 
-**The M-step of the Bernoulli mixture.** Let $x_1, \dots, x_N \in \{0, 1\}^d$ be data and
+Let $x_1, \dots, x_N \in \{0, 1\}^d$ be data and
 $\theta$ valid parameters of a mixture of $K$ products of $d$ Bernoulli distributions. With $r_{nk}$
 the posterior probability of component $k$ given $x_n$ under $\theta$, $N_k = \sum_n r_{nk}$ and
 $A_{kj} = \sum_n r_{nk} x_{nj}$, the M-step returns the parameters with mixing weights

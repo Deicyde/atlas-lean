@@ -1,6 +1,6 @@
 # Initial-segment congruence for the odd product block
 
-**Initial-segment congruence for the odd product block.** For natural numbers $l$ and $u$ write
+For natural numbers $l$ and $u$ write
 $\operatorname{odpr}(l, u)$ for the product of the odd integers $j$ with $l \le j \le u$, and let
 $h(m) = \operatorname{odpr}(2^{m-1}+1, 2^m-1)$. Let $m \ge 4$ and $B$ be natural numbers with
 $m - 1 \le B \le 3m - 7$, and put $d = \lfloor (B + 4 - m)/2 \rfloor$, that is,

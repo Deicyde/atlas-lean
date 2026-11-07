@@ -1,6 +1,6 @@
 # Canonical splitting and coding of unions of two Lucas intervals
 
-**Canonical splitting and coding of unions of two Lucas intervals.** Let $L_m$ denote the
+Let $L_m$ denote the
 $m$-th Lucas number and $\Lambda_m$ the Lucas interval, so $\Lambda_{2k} = [L_{2k}, L_{2k+1}]$
 and $\Lambda_{2k+1} = [L_{2k+1} + 1, L_{2k+2} - 1]$. For $n \ge 2$, let $P_n$ be the canonical
 splitting of $\Lambda_{2n-1}$ followed by the canonical splitting of $\Lambda_{2n}$, a list of

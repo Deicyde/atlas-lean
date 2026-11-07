@@ -1,6 +1,6 @@
 # Bound for the integral of $y^s/s$ along the left vertical side
 
-**Bound for the integral of $y^s/s$ along the left vertical side.** Let $y, U, T$ be real
+Let $y, U, T$ be real
 numbers with $y > 0$, $U > 0$ and $T > 0$, and write $y^s = e^{s \log y}$. Then
 
 $$\left| \int_{-T}^{T} \frac{y^{-U + it}}{-U + it}\,dt \right| \le

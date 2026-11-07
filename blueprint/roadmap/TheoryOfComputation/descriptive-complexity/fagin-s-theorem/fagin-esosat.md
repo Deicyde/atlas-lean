@@ -1,6 +1,6 @@
 # Satisfaction of an existential second-order sentence
 
-**Satisfaction of an existential second-order sentence.** Let $G$ be a graph with $n > 0$
+Let $G$ be a graph with $n > 0$
 vertices, $k$ a natural number and $\varphi$ a first-order formula. Then $G$ satisfies the
 existential second-order sentence $(k, \varphi)$ if there are relations $R_0, \dots, R_{k-1}$,
 each a predicate on finite lists of vertices of $G$, such that $\varphi$ holds in $G$ when

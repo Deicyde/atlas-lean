@@ -1,6 +1,6 @@
 # Numeration by odd-indexed Fibonacci numbers
 
-**Numeration by odd-indexed Fibonacci numbers.** Let $F_n$ be the Fibonacci numbers
+Let $F_n$ be the Fibonacci numbers
 ($F_0 = 0$, $F_1 = 1$, $F_{n+2} = F_{n+1} + F_n$). For every positive integer $t$ there are a
 natural number $n$ and natural numbers $a_0, a_1, a_2, \dots$ such that
 $F_{2n+1} \le t < F_{2n+3}$, $t = \sum_{k=0}^{n} a_k F_{2k+1}$, $a_0 \le 1$, $a_k \le 2$ for

@@ -1,6 +1,6 @@
 # Negative answer to Kourovka 11.82 on shortest elements of normal closures
 
-**Negative answer to Kourovka 11.82 on shortest elements of normal closures.** There are a free
+There are a free
 group $F$, an element $r \ne 1$ of $F$, and a nontrivial element $s$ of the normal closure $R$ of
 $r$ in $F$ whose reduced word length is minimal among the nontrivial elements of $R$, such that $s$
 is conjugate neither to $r$ nor to $r^{-1}$, nor, for any $f \in F$, to

@@ -1,6 +1,6 @@
 # Duality formula for binary expansions without adjacent ones
 
-**Duality formula for binary expansions without adjacent ones.** For $x \in \mathbb{N}$ let
+For $x \in \mathbb{N}$ let
 $z(x)$ be the number of $n < x$ whose binary expansion has no two adjacent digits equal to $1$.
 For a finite set $A \subseteq \mathbb{N}$, put $\bar A = A$ if there is no $j$ with
 $j, j + 1 \in A$, and otherwise $\bar A = \{k \in A : k \ge j\}$, where $j$ is the largest index

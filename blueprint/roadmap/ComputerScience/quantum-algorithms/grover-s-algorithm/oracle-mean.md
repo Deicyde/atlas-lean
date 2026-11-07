@@ -1,6 +1,6 @@
 # Mean amplitude after the phase oracle
 
-**Mean amplitude after the phase oracle.** Let $M$ be a set of marked elements of a finite
+Let $M$ be a set of marked elements of a finite
 search space of size $N$, let $M^c$ be the set of unmarked elements, and let $a, b \in \mathbb{R}$.
 The oracle mean is $(|M^c|\, b - |M|\, a) / N$.
 

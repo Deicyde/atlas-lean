@@ -1,6 +1,6 @@
 # Almost realizable sequences
 
-**Almost realizable sequences.** A sequence $a$ of natural numbers $a(0), a(1), \dots$ is
+A sequence $a$ of natural numbers $a(0), a(1), \dots$ is
 almost realizable when there is an integer $m \ge 1$ such that the integer sequence
 $(m\, a(n))_{n \ge 0}$ is Dold realizable: for every $n \ge 1$, the sum
 $\sum_{d \mid n} \mu(d)\, m\, a(n/d)$ over the positive divisors $d$ of $n$, where $\mu$ is the

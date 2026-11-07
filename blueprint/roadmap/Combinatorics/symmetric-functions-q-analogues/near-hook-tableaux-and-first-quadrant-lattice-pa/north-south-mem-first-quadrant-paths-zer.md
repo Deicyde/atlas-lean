@@ -1,6 +1,6 @@
 # The path $NS$ lies in $\mathcal{P}_0$
 
-**The path $NS$ lies in $\mathcal{P}_0$.** The two-step word consisting of a north step
+The two-step word consisting of a north step
 $(0, 1)$ followed by a south step $(0, -1)$ belongs to the set $\mathcal{P}_0$ of first-quadrant
 paths.
 

@@ -1,6 +1,6 @@
 # Almost regular automorphisms of finite $p$-groups and derived length (Kourovka 14.96)
 
-**Almost regular automorphisms of finite $p$-groups and derived length (Kourovka 14.96).** There
+There
 are functions $f \colon \mathbb{N}^3 \to \mathbb{N}$ and $g \colon \mathbb{N} \to \mathbb{N}$ such
 that for every prime $p$, all natural numbers $n$ and $m$, every finite $p$-group $P$ and every
 automorphism $\varphi$ of $P$ of order $p^n$ with exactly $p^m$ fixed points, $P$ has a subgroup

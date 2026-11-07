@@ -1,6 +1,6 @@
 # The call-by-name CPS translation commutes with substitution
 
-**The call-by-name CPS translation commutes with substitution.** Fix an answer type $R$ and
+Fix an answer type $R$ and
 write $\overline{t}$ for the call-by-name CPS translation of a term $t$ and $\overline{x}$ for the
 translation of a variable $x$, the variable at the same position of the translated context. Let
 $\sigma$ be a substitution from a context $\Gamma$ to a context $\Delta$ (assigning to each

@@ -1,6 +1,6 @@
 # Number of irreducible characters
 
-**Number of irreducible characters.** Let $G$ be a finite group. The number of irreducible
+Let $G$ be a finite group. The number of irreducible
 complex characters of $G$, that is, of functions $G \to \mathbb{C}$ that are the character of
 some simple finite-dimensional complex representation of $G$, equals the number of conjugacy
 classes of $G$.

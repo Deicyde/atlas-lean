@@ -1,6 +1,6 @@
 # Multiplicity of a root of $f = w$
 
-**Multiplicity of a root of $f = w$.** Let $f : \mathbb{C} \to \mathbb{C}$ and
+Let $f : \mathbb{C} \to \mathbb{C}$ and
 $w, z \in \mathbb{C}$. The multiplicity of $z$ as a root of the equation $f = w$ is an extended
 natural number: it is $\infty$ if $f(t) = w$ for every $t \neq z$ in some neighbourhood of $z$;
 otherwise it is $n$ if $f - w$ has meromorphic order $n \ge 0$ at $z$, and it is $0$ if that

@@ -1,6 +1,6 @@
 # Density bounds the gap size
 
-**Density bounds the gap size.** Let $S \subseteq \mathbb{N}^t$, let $d \ge 1$, and let $M$ be a
+Let $S \subseteq \mathbb{N}^t$, let $d \ge 1$, and let $M$ be a
 subcube of $\mathbb{N}^t$ with $S \subseteq M$. If $S$ is $d$-dense in $M$, then the gap size of $S$
 satisfies $\operatorname{gs}(S) \le d$.
 

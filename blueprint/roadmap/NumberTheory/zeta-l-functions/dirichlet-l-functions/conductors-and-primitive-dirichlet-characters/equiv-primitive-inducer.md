@@ -1,6 +1,6 @@
 # Dirichlet characters correspond to primitive characters at divisor levels
 
-**Dirichlet characters correspond to primitive characters at divisor levels.** Let $R$ be a
+Let $R$ be a
 commutative monoid with zero and $m \ge 1$ a natural number. This is the bijection from Dirichlet
 characters of level $m$ with values in $R$ to primitive inducers of modulus $m$ (primitive
 Dirichlet characters with values in $R$ whose level divides $m$) that sends $\chi$ to the

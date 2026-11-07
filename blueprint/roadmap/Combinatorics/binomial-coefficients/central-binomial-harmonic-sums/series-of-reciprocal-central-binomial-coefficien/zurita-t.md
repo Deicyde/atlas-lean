@@ -1,6 +1,6 @@
 # Zurita's polynomial $T_{n-2}$
 
-**Zurita's polynomial $T_{n-2}$.** For a natural number $n$ and a real number $x$,
+For a natural number $n$ and a real number $x$,
 $T_{n-2}(x) = \sum_{k=0}^{n-2} t_k x^k$, where $t_0, t_1, \dots$ are the coefficients of
 Zurita's polynomial $T_{n-2}$; for $n \le 1$ the sum is empty and $T_{n-2}(x) = 0$. For
 $n \ge 2$ these coefficients are given by $t_{n-2} = -s_{n-1}/2 - c_n$ and

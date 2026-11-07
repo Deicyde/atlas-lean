@@ -1,6 +1,6 @@
 # Generalized hypergeometric coefficient
 
-**Generalized hypergeometric coefficient.** Let $K$ be a field, let $a$ and $b$ be finite
+Let $K$ be a field, let $a$ and $b$ be finite
 multisets of elements of $K$ (the upper and lower parameters), and let $n$ be a natural number.
 The $n$-th generalized hypergeometric coefficient is
 

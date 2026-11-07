@@ -1,6 +1,6 @@
 # Last term of a compound sequence
 
-**Last term of a compound sequence.** For every natural number $n$ and all sequences $a$, $b$
+For every natural number $n$ and all sequences $a$, $b$
 of natural numbers, the compound sequence $c$ of $a$ and $b$ satisfies $c_n = b_1 b_2 \cdots b_n$.
 
 ## Sources

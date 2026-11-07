@@ -1,6 +1,6 @@
 # Fine numbers from Whitt's generalized Catalan numbers
 
-**Fine numbers from Whitt's generalized Catalan numbers.** For every natural number $n \ge 1$,
+For every natural number $n \ge 1$,
 the Fine number $F(n)$, indexed so that $F(0) = 1$ and $F(1) = 0$, and Whitt's generalized Catalan
 number $C(2, n+1)$ at $\alpha = 2$ satisfy
 

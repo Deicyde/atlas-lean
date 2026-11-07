@@ -1,6 +1,6 @@
 # Twisting automorphism of the free group algebra
 
-**Twisting automorphism of the free group algebra.** Let $F$ be the free group on $x, y$, let
+Let $F$ be the free group on $x, y$, let
 $\mathbb{C}F$ be its complex group algebra, and for nonzero complex numbers $a, b$ let $\chi$ be the
 character of $F$ with $\chi(x) = a$ and $\chi(y) = b$. The map $\vartheta_{a,b}$ sends
 $\alpha = \sum_{g \in F} c_g\, g \in \mathbb{C}F$ to $\sum_{g \in F} \chi(g)\, c_g\, g$.

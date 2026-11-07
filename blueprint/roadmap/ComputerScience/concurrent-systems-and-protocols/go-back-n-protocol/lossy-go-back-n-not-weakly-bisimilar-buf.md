@@ -1,6 +1,6 @@
 # Lossy acknowledgements break the buffer specification
 
-**Lossy acknowledgements break the buffer specification**: with a lossy
+With a lossy
 acknowledgement channel and the deliver-then-acknowledge receiver, go-back-N is
 not weakly bisimilar to the two-place buffer. Accept two messages, deliver the
 first and lose its acknowledgement, and let the receiver take the second frame:

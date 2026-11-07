@@ -1,6 +1,6 @@
 # Inserting a digit and the digit sum
 
-**Inserting a digit and the digit sum.** Let $n \ge 1$ have the $\ell$ decimal digits
+Let $n \ge 1$ have the $\ell$ decimal digits
 $d_{\ell-1} \dots d_1 d_0$, so that $n = \sum_{j\lt \ell} d_j 10^j$. Let $S(n)$ be the set of the
 numbers $\sum_{j\lt i} d_j 10^j + x \cdot 10^i + \sum_{i \le j < \ell} d_j 10^{j+1}$ with
 $0 \le i \le \ell$ and $x \in \{0, \dots, 9\}$, excluding $i = \ell$ with $x = 0$: these are the

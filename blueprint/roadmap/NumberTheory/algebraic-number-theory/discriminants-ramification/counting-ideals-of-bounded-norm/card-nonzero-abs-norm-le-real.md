@@ -1,6 +1,6 @@
 # Bound on the number of ideals of bounded norm, floor form
 
-**Bound on the number of ideals of bounded norm, floor form.** Let $K$ be a number field of
+Let $K$ be a number field of
 degree $n = [K : \mathbb{Q}]$ with ring of integers $\mathcal{O}_K$, let $M$ be any real number,
 and let $m = \max(0, \lfloor M \rfloor)$. Let $k$ be the largest natural number with
 $2^k \le m$, and $k = 0$ if $m = 0$. Then the number of nonzero ideals $I$ of $\mathcal{O}_K$

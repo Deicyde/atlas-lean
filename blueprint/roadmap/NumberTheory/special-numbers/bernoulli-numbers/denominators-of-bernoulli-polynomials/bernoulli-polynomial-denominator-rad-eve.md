@@ -1,6 +1,6 @@
 # Denominators of Bernoulli polynomials are even
 
-**Denominators of Bernoulli polynomials are even.** Let $n \ge 1$. Write $\mathfrak{D}_n$ for
+Let $n \ge 1$. Write $\mathfrak{D}_n$ for
 the denominator of the Bernoulli polynomial $B_n(x)$, $\mathcal{D}_n$ for the denominator of
 $S_n(x) = (B_{n+1}(x) - B_{n+1}) / (n + 1)$, where $B_{n+1}$ is the Bernoulli number,
 $\operatorname{rad}(m)$ for the product of the primes dividing $m$, and $\mathbb{D}^{\perp}_n$ for

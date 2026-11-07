@@ -1,6 +1,6 @@
 # Unified power-of-two sums for generalized Delannoy numbers
 
-**Unified power-of-two sums for generalized Delannoy numbers.** For natural numbers $k$, $m$,
+For natural numbers $k$, $m$,
 $n$, write $D_k(m, n)$ and $D^k(m, n)$ for the lower and upper generalized Delannoy numbers. If
 $m \ge k$ and $n \ge k$, then
 $D_k(m, n) = \sum_{j=k}^{\min(m, n)} \binom{m-k}{j-k} \binom{n}{j} 2^j$; and, for all $k$, $m$, $n$,

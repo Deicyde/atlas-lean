@@ -1,6 +1,6 @@
 # A one-trip admissible bag for three people
 
-**A one-trip admissible bag for three people.** The multiset whose only member is the set
+The multiset whose only member is the set
 $\{1, 2, 3\}$ is an admissible bag for $3$ people, and its weight for $3$ people is $3$.
 
 ## Sources

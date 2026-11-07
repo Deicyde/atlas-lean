@@ -1,6 +1,6 @@
 # Literal loop of the clause check
 
-**Literal loop of the clause check.** Suppose the lookup sub-program $lk$ with start label
+Suppose the lookup sub-program $lk$ with start label
 $l_0$ meets the lookup contract with constants $a$ and $b$. Let $es$ be a table with table stack
 $B_{es}$, let $R$ be a list of symbols that is empty or starts with a clause marker, and let $s$
 be a bit. The stack tokens of a literal $(n, p)$ are the literal marker of polarity $p$

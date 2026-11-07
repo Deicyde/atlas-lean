@@ -1,6 +1,6 @@
 # Square-splitting convolution as a bivariate Dirichlet convolution
 
-**Square-splitting convolution as a bivariate Dirichlet convolution.** Let $\star$ be the
+Let $\star$ be the
 square-splitting convolution. For all complex arithmetic functions $f$ and $g$, every squarefree
 natural number $u$ and every natural number $v \ge 1$,
 

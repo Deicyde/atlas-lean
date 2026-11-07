@@ -1,6 +1,6 @@
 # Fibonacci squares plus one are eventually composite
 
-**Fibonacci squares plus one are eventually composite.** Let $F_k$ denote the $k$-th
+Let $F_k$ denote the $k$-th
 Fibonacci number, with $F_0 = 0$ and $F_1 = 1$. For every natural number $k \ge 4$, the number
 $F_k^2 + 1$ is composite.
 

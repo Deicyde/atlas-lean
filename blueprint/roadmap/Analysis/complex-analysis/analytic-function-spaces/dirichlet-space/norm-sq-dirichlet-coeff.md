@@ -1,4 +1,4 @@
 # Squared norms of the Dirichlet kernel coefficients
 
-**Squared norms of the Dirichlet kernel coefficients.** The squared norms of the Dirichlet kernel coefficients are
+The squared norms of the Dirichlet kernel coefficients are
 `‖z‖ ^ (2 * n) / (n + 1)`.

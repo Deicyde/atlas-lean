@@ -1,6 +1,6 @@
 # Stages of the literal routine (initial-row generator)
 
-**Stages of the literal routine (initial-row generator).** The stages of the generator's
+The stages of the generator's
 routine that emits one literal of a clause: two stages copying the clause base into a target
 counter, a stage adding the literal's offset to the target, a stage decrementing the position
 counter, a stage comparing the position with the target, two restore stages for each comparison

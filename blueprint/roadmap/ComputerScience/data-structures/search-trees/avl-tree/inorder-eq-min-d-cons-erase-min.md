@@ -1,6 +1,6 @@
 # The inorder traversal begins with the leftmost key
 
-**The inorder traversal begins with the leftmost key.** Let $t$ be a nonempty tree with
+Let $t$ be a nonempty tree with
 cached heights and $m$ its leftmost key. Then the inorder traversal of $t$ is $m$ followed by the
 inorder traversal of the tree obtained from $t$ by removing its leftmost key.
 

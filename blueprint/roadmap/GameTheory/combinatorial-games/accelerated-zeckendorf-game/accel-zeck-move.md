@@ -1,6 +1,6 @@
 # Moves of the Accelerated Zeckendorf Game
 
-**Moves of the Accelerated Zeckendorf Game.** Index the Fibonacci numbers as $F_1 = 1$,
+Index the Fibonacci numbers as $F_1 = 1$,
 $F_2 = 2$ and $F_{i+1} = F_i + F_{i-1}$, and call a finitely supported function
 $s : \mathbb{N} \to \mathbb{N}$ a state, $s(i)$ being the number of copies of $F_i$. A move
 takes a state $s$ to a state $t$ if for some multiplicity $m > 0$ one of the following holds:

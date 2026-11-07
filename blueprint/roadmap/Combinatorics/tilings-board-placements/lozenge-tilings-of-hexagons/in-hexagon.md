@@ -1,6 +1,6 @@
 # Unit triangles of a semiregular hexagon
 
-**Unit triangles of a semiregular hexagon.** Let $e_1 = (1, 0)$, $e_2 = (1/2, \sqrt{3}/2)$ and
+Let $e_1 = (1, 0)$, $e_2 = (1/2, \sqrt{3}/2)$ and
 $p(i, j) = i e_1 + j e_2$, and call the triangles with vertices $p(i, j), p(i + 1, j), p(i, j + 1)$
 and $p(i + 1, j), p(i, j + 1), p(i + 1, j + 1)$ the upward and the downward unit triangle $(i, j)$.
 For integers $a, b, c$, the upward unit triangle $(i, j)$ lies in the $a, b, c$ hexagon when

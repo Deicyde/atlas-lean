@@ -1,6 +1,6 @@
 # Block word of a Dyck path of height at most $2$
 
-**Block word of a Dyck path of height at most $2$.** For a Dyck word
+For a Dyck word
 $P = P_0 P_1 \cdots P_{2n-1}$ of semilength $n$, with steps indexed from $0$, the block word of
 $P$ is the Boolean word of length $n - 1$ (empty when $n = 0$) whose entry $i$, for
 $0 \le i < n - 1$, is true exactly when $P_{2i+1} = U$.

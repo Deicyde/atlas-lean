@@ -1,6 +1,6 @@
 # Edges of the mother graph
 
-**Edges of the mother graph.** Let $n$ and $b$ be natural numbers. For natural numbers $x$
+Let $n$ and $b$ be natural numbers. For natural numbers $x$
 and $y$, the pair $(x, y)$ is an edge of the $(n, b)$-mother graph $M$ when $x < b$, $y < b$ and
 
 $$\lambda(x + (b - n) y) \le n - 1,$$

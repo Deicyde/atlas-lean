@@ -1,6 +1,6 @@
 # Stirling numbers from derivatives of powers of one minus the exponential
 
-**Stirling numbers from derivatives of powers of one minus the exponential.** For all natural
+For all natural
 numbers $k$, $r$ and $v$, write ${a \brace b}$ for the Stirling numbers of the second kind and
 ${a \brace b}_v$ for the r-Stirling numbers of the second kind with parameter $v$, and use the
 convention $0^0 = 1$. Then the real functions $x \mapsto (1 - e^x)^k$ and

@@ -1,6 +1,6 @@
 # Depth of an oracle code
 
-**Depth of an oracle code**: leaves have depth `0`; each constructor adds
+Leaves have depth `0`; each constructor adds
 one to the maximum depth of its children.
 
 ## Sources

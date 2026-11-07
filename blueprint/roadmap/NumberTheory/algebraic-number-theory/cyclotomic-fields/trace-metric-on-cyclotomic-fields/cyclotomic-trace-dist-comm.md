@@ -1,6 +1,6 @@
 # Symmetry of the trace metric
 
-**Symmetry of the trace metric.** Let $p$ be a positive integer and let $K$ be a $p$-th
+Let $p$ be a positive integer and let $K$ be a $p$-th
 cyclotomic extension of $\mathbb{Q}$. For all $\alpha, \beta \in K$, the trace distance satisfies
 $d(\alpha, \beta) = d(\beta, \alpha)$.
 

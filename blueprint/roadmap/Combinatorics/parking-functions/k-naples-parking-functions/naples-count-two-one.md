@@ -1,6 +1,6 @@
 # Naples counts for $n = 2$ and $k = 1$
 
-**Naples counts for $n = 2$ and $k = 1$.** Among the preferences of length $2$ with entries
+Among the preferences of length $2$ with entries
 in $\{1, 2\}$, exactly $3$ are weakly increasing $1$-Naples parking functions ($I_{2,1} = 3$),
 and exactly $2$ of these start with $1$ ($U_{2,1} = 2$); exactly $3$ are weakly decreasing
 $1$-Naples parking functions, and exactly $1$ is weakly decreasing, $1$-Naples and not

@@ -1,6 +1,6 @@
 # The filter walks a clause's literals within the cap
 
-**The filter walks a clause's literals within the cap.** Let $c$ be a Boolean (whether the
+Let $c$ be a Boolean (whether the
 filter is capped), let $\ell_1, \dots, \ell_k$ be literals (pairs of a variable index and a
 polarity), let $n$ be a natural number with $c$ false or $n + k \le 3$, and let $w$ be the
 concatenation of the stack tokens of $\ell_1, \dots, \ell_k$. For all lists of symbols $R$ and $U$

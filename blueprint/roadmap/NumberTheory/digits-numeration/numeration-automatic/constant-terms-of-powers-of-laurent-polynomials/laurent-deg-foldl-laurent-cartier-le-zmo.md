@@ -1,6 +1,6 @@
 # Degree bound for the Rowland–Zeilberger states mod $p^a$
 
-**Degree bound for the Rowland–Zeilberger states mod $p^a$.** Let $p$ be a prime, let $a$
+Let $p$ be a prime, let $a$
 be a natural number, and let $\tilde P$ and $Q_0$ be Laurent polynomials in $r$ variables with
 coefficients in $\mathbb{Z}/p^a\mathbb{Z}$. Write $\deg F$ for the largest absolute value of an
 exponent of a variable occurring in $F$, and $\Lambda_p$ for the operator that keeps the terms

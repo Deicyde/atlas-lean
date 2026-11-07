@@ -1,6 +1,6 @@
 # Lagrange–Bürmann formula, coefficient form
 
-**Lagrange–Bürmann formula, coefficient form.** Let $R$ be a commutative ring and let $A$,
+Let $R$ be a commutative ring and let $A$,
 $\varphi$ and $g$ be formal power series over $R$ such that the constant term of $A$ is
 nilpotent, $\varphi$ has nonzero constant term, and $A = X\,\varphi(A)$, where $\varphi(A)$ and
 $g(A)$ denote the substitution of $A$ into $\varphi$ and $g$. Write $[X^m]H$ for the coefficient

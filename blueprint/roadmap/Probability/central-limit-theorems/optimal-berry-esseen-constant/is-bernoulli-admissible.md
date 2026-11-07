@@ -1,6 +1,6 @@
 # Admissible Berry–Esseen coefficient for two-point laws
 
-**Admissible Berry–Esseen coefficient for two-point laws.** A real number $C$ is an admissible
+A real number $C$ is an admissible
 Berry–Esseen coefficient for standardized two-point laws when, for every probability measure $\mu$
 on $\mathbb{R}$ with mean $0$, variance $1$ and finite third absolute moment
 $\rho = \int |x|^3 \, d\mu(x)$ that is concentrated on two distinct points, and every positive

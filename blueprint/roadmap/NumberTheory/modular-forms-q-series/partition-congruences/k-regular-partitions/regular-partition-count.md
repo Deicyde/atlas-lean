@@ -1,6 +1,6 @@
 # Number of $(\ell, k)$-regular partitions
 
-**Number of $(\ell, k)$-regular partitions.** For natural numbers $\ell$, $k$ and $n$,
+For natural numbers $\ell$, $k$ and $n$,
 $b_{\ell,k}(n)$ is the number of $(\ell, k)$-regular partitions of $n$, that is, partitions of
 $n$ none of whose parts is divisible by $\ell$ or by $k$.
 

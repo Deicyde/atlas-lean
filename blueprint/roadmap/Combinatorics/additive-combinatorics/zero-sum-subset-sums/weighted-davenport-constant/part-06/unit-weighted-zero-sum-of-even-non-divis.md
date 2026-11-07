@@ -1,6 +1,6 @@
 # Griffiths' criterion for unit-weighted zero sums modulo a prime power
 
-**Griffiths' criterion for unit-weighted zero sums modulo a prime power.** Let $p$ be a prime,
+Let $p$ be a prime,
 let $r$ and $k$ be natural numbers, put $n = p^r$, and let
 $x_1, \dots, x_k \in \mathbb{Z}/n\mathbb{Z}$. Suppose that for each $i \in [1, r]$ the set
 $X_i = \{j : x_j \not\equiv 0 \pmod{p^i}\}$ has an even number of elements. Then there are units

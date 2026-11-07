@@ -1,6 +1,6 @@
 # $\hat\sigma_2$ of the odd numbers below $2^e$
 
-**$\hat\sigma_2$ of the odd numbers below $2^e$.** Let $e \ge 2$ and let $S_e$ be the set of odd
+Let $e \ge 2$ and let $S_e$ be the set of odd
 natural numbers $i$ with $1 \le i < 2^e$, regarded as a multiset of integers with $n$ elements,
 and write $\sigma_k$ for the elementary symmetric function of degree $k$. Then the reversed
 elementary symmetric function $\hat\sigma_2(S_e) = \sigma_{n-2}(S_e)$ satisfies

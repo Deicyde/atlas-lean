@@ -1,6 +1,6 @@
 # Rectangular circuit exponent
 
-**Rectangular circuit exponent.** For a field $F$ and a real $k$, the rectangular circuit
+For a field $F$ and a real $k$, the rectangular circuit
 exponent of $F$ at aspect $k$ is the infimum in $[0, \infty]$ of the admissible rectangular circuit
 exponents for $F$ at aspect $k$: the reals $w \ge 0$ such that $k \ge 0$ and, for every
 $\varepsilon > 0$, there are $C > 0$ and $N \ge 1$ such that for every $n \ge N$ some arithmetic

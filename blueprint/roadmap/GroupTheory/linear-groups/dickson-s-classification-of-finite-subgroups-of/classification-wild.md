@@ -1,6 +1,6 @@
 # Dickson's classification, wild case
 
-**Dickson's classification, wild case.** Let $p$ be an odd prime, let $K$ be an algebraic
+Let $p$ be an odd prime, let $K$ be an algebraic
 closure of $\mathbb{F}_p$, and let $G$ be a finite subgroup of $\mathrm{PGL}_2(K)$ whose order
 is divisible by $p$. Then at least one of the following holds. (a) There are natural numbers
 $m \ge 1$ and $t$ with $t$ coprime to $p$ and $t \mid p^m - 1$, and an injective homomorphism

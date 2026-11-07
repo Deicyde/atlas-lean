@@ -1,6 +1,6 @@
 # Chudnovsky–Seymour theorem
 
-**Chudnovsky–Seymour theorem.** Let $G$ be a claw-free simple graph on a finite vertex set
+Let $G$ be a claw-free simple graph on a finite vertex set
 $V$, and let $I(G) = \sum_{k=0}^{|V|} i_k X^k \in \mathbb{Z}[X]$ be its independence polynomial,
 where $i_k$ is the number of independent sets of $G$ with $k$ vertices. Then $I(G)$, viewed as a
 polynomial with real coefficients, splits over $\mathbb{R}$: it is a constant times a product of

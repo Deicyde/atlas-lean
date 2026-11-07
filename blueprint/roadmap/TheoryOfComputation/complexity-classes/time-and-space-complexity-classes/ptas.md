@@ -1,6 +1,6 @@
 # The class PTAS
 
-**The class PTAS.** PTAS is the set of optimization problems $P$ that are NPO problems
+PTAS is the set of optimization problems $P$ that are NPO problems
 (feasibility is decidable in polynomial time and the objective value is given by a
 polynomial-time computable rational encoding) and that have a polynomial-time approximation
 scheme: for every natural number $k \ge 1$ there is a polynomial-time algorithm $A$ such that,

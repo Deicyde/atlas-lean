@@ -1,6 +1,6 @@
 # Every graph has a large ε-light vertex set
 
-**Every graph has a large ε-light vertex set.** There is a real constant $c > 0$ such that for
+There is a real constant $c > 0$ such that for
 every natural number $n$, every simple graph $G$ on the vertex set $\{0, \dots, n-1\}$ and every
 real number $\varepsilon$ with $0 < \varepsilon < 1$, there is a set $S$ of vertices with at least
 $c \varepsilon n$ elements that is $\varepsilon$-light in $G$: the matrix $\varepsilon L - L_S$ is

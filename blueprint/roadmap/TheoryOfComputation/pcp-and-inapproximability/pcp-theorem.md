@@ -1,6 +1,6 @@
 # The PCP theorem: NP = PCP(O(log n), O(1))
 
-**The PCP theorem: NP = PCP(O(log n), O(1)).** A decision problem belongs to NP if and only
+A decision problem belongs to NP if and only
 if, for some natural numbers $c$ and $q$, it belongs to $\mathrm{PCP}(r, s)$, where the
 randomness bound is $r(n) = c \lfloor \log_2(n + 1) \rfloor$ and the query bound is the constant
 function $s(n) = q$.

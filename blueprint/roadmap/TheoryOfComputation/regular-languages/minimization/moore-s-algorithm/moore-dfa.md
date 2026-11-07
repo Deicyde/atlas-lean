@@ -1,6 +1,6 @@
 # Moore's minimal automaton
 
-**Moore's minimal automaton.** For a DFA $M$ over a finite alphabet with finitely many states,
+For a DFA $M$ over a finite alphabet with finitely many states,
 Moore's minimal automaton of $M$ has as states the classes of reachable states of $M$ under
 Moore's relation. Its start state is the class of the start state of $M$; reading a letter $a$
 sends the class of a reachable state $s$ to the class of the state that $M$ reaches from $s$ on

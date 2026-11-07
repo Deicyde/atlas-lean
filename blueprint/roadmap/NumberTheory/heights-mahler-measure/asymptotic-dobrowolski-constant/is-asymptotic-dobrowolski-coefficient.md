@@ -1,6 +1,6 @@
 # Asymptotic Dobrowolski coefficients
 
-**Asymptotic Dobrowolski coefficients.** A real number $c$ is an asymptotic Dobrowolski
+A real number $c$ is an asymptotic Dobrowolski
 coefficient if for every $\varepsilon > 0$ there is a natural number $D \ge 3$ such that every
 nonzero algebraic number $\alpha \in \mathbb{C}$ that is not a root of unity and whose minimal
 polynomial over $\mathbb{Q}$ has degree $d \ge D$ satisfies

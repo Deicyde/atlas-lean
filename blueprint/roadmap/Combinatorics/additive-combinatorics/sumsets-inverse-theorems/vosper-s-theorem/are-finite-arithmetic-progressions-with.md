@@ -1,6 +1,6 @@
 # Arithmetic progressions with a common difference
 
-**Arithmetic progressions with a common difference.** Let $G$ be an additive commutative
+Let $G$ be an additive commutative
 monoid and let $A$ and $B$ be finite subsets of $G$. We say that $A$ and $B$ are arithmetic
 progressions with a common difference if there are $d, a, b \in G$ such that
 $A = \{a + nd : n \in \mathbb{N},\ n < |A|\}$ and $B = \{b + nd : n \in \mathbb{N},\ n < |B|\}$,

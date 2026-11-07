@@ -1,6 +1,6 @@
 # Bergman cyclicity conjecture
 
-**Bergman cyclicity conjecture.** Write $\mathbb{D}$ for the open unit disc and $dA$ for
+Write $\mathbb{D}$ for the open unit disc and $dA$ for
 Lebesgue area measure on it. The statement that for every function $f : \mathbb{C} \to \mathbb{C}$
 with no zeros in $\mathbb{D}$ such that $f$ and its pointwise reciprocal $1/f$ both belong to the
 Bergman space $A^2$, the polynomial multiples of $f$ are dense in $A^2$: for every $g \in A^2$ and

@@ -1,6 +1,6 @@
 # Peak descents
 
-**Peak descents.** Let $l$ be a finite sequence of up steps $U$ and down steps $D$. A peak
+Let $l$ be a finite sequence of up steps $U$ and down steps $D$. A peak
 of $l$ is a position where a step $U$ is immediately followed by a step $D$. The peak descents
 of $l$ form the list that has, for each peak from left to right, the length $j$ of the maximal
 run of consecutive steps $D$ that starts at the $D$ of that peak, so that the peak and its

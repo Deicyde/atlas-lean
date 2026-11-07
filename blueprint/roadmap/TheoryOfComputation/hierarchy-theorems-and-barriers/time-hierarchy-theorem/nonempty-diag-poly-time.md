@@ -1,6 +1,6 @@
 # The diagonal language in polynomial time, given the reformatting machine
 
-**The diagonal language in polynomial time, given the reformatting machine.** Let
+Let
 $f : \mathbb{N} \to \mathbb{N}$. Suppose that a finite multi-stack Turing machine, the
 reformatting machine, computes in polynomial time, from a bit list $x$ given as itself, the
 input $\mathrm{encIn}(c, y, T)$ of the clocked universal machine, where

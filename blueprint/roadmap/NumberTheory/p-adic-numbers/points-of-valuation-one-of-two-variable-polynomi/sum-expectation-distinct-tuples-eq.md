@@ -1,6 +1,6 @@
 # Sum of expectations over distinct tuples of points
 
-**Sum of expectations over distinct tuples of points.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $f \in \mathbb{Z}[x, y]$ have partial derivatives $f_x$ and $f_y$, and let $C_f(\mathbb{F}_p)$
 be the set of pairs of integers $0 \le r, s < p$ with $p \mid f(r, s)$. Suppose that no
 $(r, s) \in C_f(\mathbb{F}_p)$ has $p \mid f_x(r, s)$ and $p \mid f_y(r, s)$, and let $k \ge 1$.

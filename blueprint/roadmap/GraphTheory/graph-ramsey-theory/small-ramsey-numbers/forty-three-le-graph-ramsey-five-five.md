@@ -1,6 +1,6 @@
 # Exoo's lower bound for $R(5, 5)$
 
-**Exoo's lower bound for $R(5, 5)$.** The classical Ramsey number $R(5, 5)$ is at
+The classical Ramsey number $R(5, 5)$ is at
 least $43$.
 
 Thus some simple graph on $42$ vertices contains no $K_5$ and no independent set of size $5$.

@@ -1,6 +1,6 @@
 # $P$ divides $U_{2n}$, and $V_n$ for odd $n$
 
-**$P$ divides $U_{2n}$, and $V_n$ for odd $n$.** Let $P$ and $Q$ be integers with $Q \ne 0$,
+Let $P$ and $Q$ be integers with $Q \ne 0$,
 and let $U$ and $V$ be the Lucas sequences $U(P, Q)$ and $V(P, Q)$. Then $P \mid U_{2n}$ for every
 natural number $n$, and $P \mid V_n$ for every odd natural number $n$.
 

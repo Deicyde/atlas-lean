@@ -1,6 +1,6 @@
 # Fibonacci characterization of the P-positions of $K^1$
 
-**Fibonacci characterization of the P-positions of $K^1$.** For a natural number $n$, let
+For a natural number $n$, let
 $\operatorname{rep}_F(n)$ be its greedy Fibonacci representation for $F_0 = 1$, $F_1 = 2$,
 $F_{i+2} = F_{i+1} + F_i$: a word over $\{0, 1\}$, most significant digit first, without leading
 zeros, empty for $n = 0$. Let $S$ be the set of positions $(x, y)$ with $x + y \le 1$, together

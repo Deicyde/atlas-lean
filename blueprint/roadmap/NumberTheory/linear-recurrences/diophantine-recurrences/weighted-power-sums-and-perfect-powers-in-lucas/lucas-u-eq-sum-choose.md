@@ -1,6 +1,6 @@
 # Binomial-sum formula for the Lucas sequence $U$
 
-**Binomial-sum formula for the Lucas sequence $U$.** Let $x$ and $y \neq 0$ be integers and
+Let $x$ and $y \neq 0$ be integers and
 let $(U_n)$ be the Lucas sequence with parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and
 $U_{n+2} = x U_{n+1} - y U_n$. Then for every $r \geq 1$,
 

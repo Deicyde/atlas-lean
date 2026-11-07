@@ -1,6 +1,6 @@
 # Adding two counters into a third
 
-**Adding two counters into a third.** Let $a, b, c, t$ be stacks with $a \ne c$, $a \ne t$,
+Let $a, b, c, t$ be stacks with $a \ne c$, $a \ne t$,
 $b \ne c$, $b \ne t$ and $c \ne t$, with unit symbols $u_a, u_b, u_c, u_t$. Write
 $\mathrm{xfer}(k, ps, \ell, \ell')$ for the transfer loop at label $\ell$ that pops stack $k$ until
 it is empty, pushing $x$ onto stack $j$ for each pair $(j, x)$ in $ps$ per popped symbol, and then

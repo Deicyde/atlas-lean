@@ -1,6 +1,6 @@
 # Lee's identity for Stirling numbers of the second kind from smaller rows
 
-**Lee's identity for Stirling numbers of the second kind from smaller rows.** Write $S(n, k)$
+Write $S(n, k)$
 for the Stirling number of the second kind, the number of partitions of an $n$-element set into
 $k$ nonempty blocks. For natural numbers $k$ and $n$ with $k \ge 1$ and $n \ge k + 1$, the
 following identity of integers holds:

@@ -1,6 +1,6 @@
 # Zelinsky's upper bound on the prime reciprocal sum of an odd perfect number
 
-**Zelinsky's upper bound on the prime reciprocal sum of an odd perfect number.** Let $n$ be an
+Let $n$ be an
 odd perfect number whose least prime factor $p_1$ satisfies $p_1 \ge 11$, and let
 $T(n) = \sum_{p \mid n} 1/p$, the sum over the primes $p$ dividing $n$. Then
 $T(n) < \log 2 - \frac{11}{50 p_1^2}$.

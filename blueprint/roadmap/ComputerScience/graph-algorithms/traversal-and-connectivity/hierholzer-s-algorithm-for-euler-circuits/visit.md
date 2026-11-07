@@ -1,6 +1,6 @@
 # Hierholzer's recursion
 
-**Hierholzer's recursion.** Given a fuel $n$, a vertex $v$, an assignment $R$ of a list of
+Given a fuel $n$, a vertex $v$, an assignment $R$ of a list of
 remaining out-neighbours to each vertex, and a list $\mathit{acc}$ of vertices, the recursion
 returns a list of vertices and a new assignment, with a cost. With fuel $0$ it returns
 $(\mathit{acc}, R)$ at cost $0$. With fuel $n + 1$: if $R(v)$ is empty, it returns $v$ followed by

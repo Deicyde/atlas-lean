@@ -1,6 +1,6 @@
 # Binomial-sum formula for the parent sequence b
 
-**Binomial-sum formula for the parent sequence b.** Let $b^{(s)}_{p,n}$ be the parent
+Let $b^{(s)}_{p,n}$ be the parent
 sequence: $0$ for $n \le (p - 1)s$, $1$ for $(p - 1)s < n \le ps + 1$, and
 $b^{(s)}_{p,n} = b^{(s)}_{p,n-1} + b^{(s)}_{p,n-1-ps}$ for $n \ge ps + 2$. For positive integers
 $s$, $p$ and $n$,

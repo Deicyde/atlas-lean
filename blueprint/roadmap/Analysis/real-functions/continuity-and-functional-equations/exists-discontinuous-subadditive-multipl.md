@@ -1,6 +1,6 @@
 # Discontinuous subadditive multiplicative functions on $\mathbb{C}$
 
-**Discontinuous subadditive multiplicative functions on $\mathbb{C}$.** There is a function
+There is a function
 $\varphi : \mathbb{C} \to \mathbb{R}$ that is not continuous, satisfies $\varphi(x) \ge 0$ for
 all $x \in \mathbb{C}$, is not identically $0$ and not identically $1$, and satisfies
 $\varphi(x + y) \le \varphi(x) + \varphi(y)$ and $\varphi(xy) = \varphi(x)\varphi(y)$ for all

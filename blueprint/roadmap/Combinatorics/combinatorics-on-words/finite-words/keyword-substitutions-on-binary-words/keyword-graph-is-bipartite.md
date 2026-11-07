@@ -1,6 +1,6 @@
 # The substitution graph is bipartite
 
-**The substitution graph is bipartite.** For every keyword $a$ of length $m + 1$ and every
+For every keyword $a$ of length $m + 1$ and every
 $n \ge 0$, the substitution graph $\mathcal{G}_n^{(a)}$ on binary words of length $n$ is
 bipartite.
 

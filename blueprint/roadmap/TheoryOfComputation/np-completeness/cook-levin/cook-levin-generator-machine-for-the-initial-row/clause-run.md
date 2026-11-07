@@ -1,6 +1,6 @@
 # Run of one clause (initial-row generator)
 
-**Run of one clause (initial-row generator).** Let $L$ be a layout with $g$ symbol codes, let
+Let $L$ be a layout with $g$ symbol codes, let
 $i_c$ and $k_0$ be natural numbers and let $y$ be a list of $n$ certificate codes. Let $c$ be a
 clause kind for $g$ and $n$ that is well formed for $i_c$, $g$ and $y$, and let $V, B$ be natural
 numbers such that all literals of $c$ at base $B$ (for $i_c$, $g$ and $y$) are in range below $V$.

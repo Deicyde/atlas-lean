@@ -1,6 +1,6 @@
 # Not every fully ordered group embeds in one with three conjugacy classes
 
-**Not every fully ordered group embeds in one with three conjugacy classes.** There is a fully
+There is a fully
 ordered group $G$ such that for every fully ordered group $H$ with exactly three conjugacy
 classes, no homomorphism $G \to H$ is strictly increasing. Here a fully ordered group is a group
 with a linear order $\le$ such that $a \le b$ implies $ca \le cb$ and $ac \le bc$ for all $a$, $b$,

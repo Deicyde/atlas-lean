@@ -1,6 +1,6 @@
 # Masses of intervals under the Irwin measures
 
-**Masses of intervals under the Irwin measures.** Let $b > 1$ and $d < b$ be natural numbers,
+Let $b > 1$ and $d < b$ be natural numbers,
 and for each natural number $k$ let $\mu_k$ be the Irwin measure of base $b$ and digit $d$ with
 index $k$; masses below are taken as real numbers. First, for all reals $0 \le t < u \le 1$ and
 every natural number $l'$ such that $b^{l'} t$ and $b^{l'} u$ are integers,

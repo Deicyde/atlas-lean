@@ -1,6 +1,6 @@
 # Existence of an extremal injective map into the unit disc
 
-**Existence of an extremal injective map into the unit disc.** Let $D$ be the open unit disc
+Let $D$ be the open unit disc
 $\{z \in \mathbb{C} : |z| < 1\}$, let $\Omega \subseteq D$ be open and connected with
 $0 \in \Omega$, and let $F$ be the family of functions $f$ that are holomorphic and injective on
 $\Omega$, map $\Omega$ into $D$, and satisfy $f(0) = 0$. Then some $g \in F$ attains the supremum

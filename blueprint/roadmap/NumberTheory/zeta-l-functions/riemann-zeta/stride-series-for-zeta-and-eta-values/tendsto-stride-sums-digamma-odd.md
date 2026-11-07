@@ -1,6 +1,6 @@
 # Digamma identity for stride sums over odd indices
 
-**Digamma identity for stride sums over odd indices.** Let $q, t \ge 1$ be integers, let
+Let $q, t \ge 1$ be integers, let
 $a$ be a real number with $-1 \le a < 1$, let $S_{q,t}(n)$ denote the alternating stride sum and
 $T_{q,t}(n)$ the signed stride sum, and let $\psi$ be the digamma function. Then the partial sums
 

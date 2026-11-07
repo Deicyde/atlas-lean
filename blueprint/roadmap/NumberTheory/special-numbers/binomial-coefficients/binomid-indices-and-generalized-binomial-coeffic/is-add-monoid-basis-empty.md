@@ -1,6 +1,6 @@
 # The empty set is a basis of the zero submonoid
 
-**The empty set is a basis of the zero submonoid.** In every additive commutative monoid,
+In every additive commutative monoid,
 the empty set is a basis of the subset $\{0\}$.
 
 ## Sources

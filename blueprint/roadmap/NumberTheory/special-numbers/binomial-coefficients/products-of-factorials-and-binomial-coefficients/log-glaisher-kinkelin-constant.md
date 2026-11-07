@@ -1,6 +1,6 @@
 # Logarithm of the Glaisher–Kinkelin constant
 
-**Logarithm of the Glaisher–Kinkelin constant.** The Glaisher–Kinkelin constant $A$ satisfies
+The Glaisher–Kinkelin constant $A$ satisfies
 $\log A = \frac{1}{12} - \operatorname{Re} \zeta'(-1)$, where $\zeta'$ is the complex derivative
 of the Riemann zeta function.
 

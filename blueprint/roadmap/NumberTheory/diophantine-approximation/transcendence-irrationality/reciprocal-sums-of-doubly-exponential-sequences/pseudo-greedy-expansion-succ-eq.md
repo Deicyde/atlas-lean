@@ -1,6 +1,6 @@
 # Recursion for the pseudo-greedy expansion
 
-**Recursion for the pseudo-greedy expansion.** Let $r > 0$ be a real number, and let
+Let $r > 0$ be a real number, and let
 $(a_n)$ be its pseudo-greedy expansion and $(\varepsilon_n)$ its gap sequence. Then for every
 $n \ge 0$,
 

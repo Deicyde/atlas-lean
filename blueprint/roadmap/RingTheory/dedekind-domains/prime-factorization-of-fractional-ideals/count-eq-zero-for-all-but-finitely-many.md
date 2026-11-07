@@ -1,6 +1,6 @@
 # Fractional ideals have finite support
 
-**Fractional ideals have finite support.** Let $A$ be a Dedekind domain with field of
+Let $A$ be a Dedekind domain with field of
 fractions $K$, and let $I$ be a fractional ideal of $A$ in $K$. For a nonzero prime ideal
 $\mathfrak p$ of $A$, let $v_{\mathfrak p}(I) \in \mathbb Z$ be the exponent of $\mathfrak p$ in
 the factorization of $I$ into prime ideals, with $v_{\mathfrak p}(0) = 0$. Then

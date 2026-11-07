@@ -1,6 +1,6 @@
 # Exactness at the integral units, residue-sign form
 
-**Exactness at the integral units, residue-sign form.** Let $K$ be a number field with ring
+Let $K$ be a number field with ring
 of integers $\mathcal{O}_K$ and let $\mathfrak{m}$ be a modulus of $K$ with finite part
 $\mathfrak{m}_0$. Let $T_{\mathfrak{m}}$ be the residue-sign target of $\mathfrak{m}$: the product
 of a copy of $\mathbb{Z}/2\mathbb{Z}$, written multiplicatively, for each real place in the

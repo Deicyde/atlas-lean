@@ -1,6 +1,6 @@
 # The empty list of simple maps acts trivially
 
-**The empty list of simple maps acts trivially.** For every keyword $a$ and every binary word
+For every keyword $a$ and every binary word
 $u$, applying the empty list of simple maps of $a$ to $u$ returns $u$.
 
 ## Sources

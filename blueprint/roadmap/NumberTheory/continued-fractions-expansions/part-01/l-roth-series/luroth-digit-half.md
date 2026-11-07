@@ -1,6 +1,6 @@
 # First Lüroth digit of 1/2
 
-**First Lüroth digit of 1/2.** The first Lüroth digit of $1/2$ is $d_1(1/2) = 3$.
+The first Lüroth digit of $1/2$ is $d_1(1/2) = 3$.
 
 ## Sources
 

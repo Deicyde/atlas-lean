@@ -1,6 +1,6 @@
 # Lower bound for the number of gleeful representations
 
-**Lower bound for the number of gleeful representations.** Let $p_1 = 2, p_2 = 3, \dots$ be
+Let $p_1 = 2, p_2 = 3, \dots$ be
 the primes in increasing order, and for natural numbers $k$ and $x$ let $s_k(x)$ be the number
 of pairs $(n, m)$ of natural numbers with $m \ge 1$ and $p_{n+1}^k + \cdots + p_{n+m}^k \le x$.
 Let $k > 1$, $M_0 \ge 6$ and $x$ be natural numbers with $p_1^k + \cdots + p_{M_0}^k \le x$. Put

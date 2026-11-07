@@ -1,6 +1,6 @@
 # Kamornikov–Shemetkova theorem (Kourovka Problem 19.38)
 
-**Kamornikov–Shemetkova theorem (Kourovka Problem 19.38).** Let $H$ be a subgroup of a
+Let $H$ be a subgroup of a
 finite soluble group $G$. Suppose that $H$ covers every Frattini chief factor $A/B$ of $G$, that
 is, $A \le \langle H, B \rangle$ (which is $HB$, as $B$ is normal), and avoids every complemented
 chief factor $A/B$ of $G$, that is, $H \cap A \le B$. Then there are $x, y \in G$ such that

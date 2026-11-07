@@ -1,6 +1,6 @@
 # Finite-state tree automorphism groups with undecidable conjugacy problem
 
-**Finite-state tree automorphism groups with undecidable conjugacy problem.** The answer
+The answer
 to Kourovka Problem 16.34 is negative: there exist $d, k \in \mathbb{N}$ and finite-state
 automorphisms $g_0, \dots, g_{k-1}$ of the $d$-regular rooted tree such that no algorithm
 decides, given two words in the $g_i$ and their inverses, whether the elements they spell are

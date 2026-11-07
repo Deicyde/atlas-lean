@@ -1,6 +1,6 @@
 # Height of the first step of the k-th staircase
 
-**Height of the first step of the k-th staircase.** Let $m, n$ be positive coprime integers
+Let $m, n$ be positive coprime integers
 and $l = \gcd(m - 1, n)$, let $P$ be a quadratic packing polynomial on the lattice sector
 $I(n/m)$, and suppose that the step difference of $P$ equals a positive integer $k$. Then the
 first height of the staircase $J_k$ is $\bar y_k = n/l - 1$.

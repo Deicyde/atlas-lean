@@ -1,6 +1,6 @@
 # Generalized degenerate harmonic numbers
 
-**Generalized degenerate harmonic numbers.** For real numbers $\lambda$ and $\alpha$ and a
+For real numbers $\lambda$ and $\alpha$ and a
 natural number $n$, Dağlı's generalized degenerate harmonic number is
 
 $$

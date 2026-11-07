@@ -1,6 +1,6 @@
 # Discrete Umlaufsatz for lattice walks without right turns
 
-**Discrete Umlaufsatz for lattice walks without right turns.** Discrete Umlaufsatz (theorem of turning tangents) for lattice walks without right turns: a
+Discrete Umlaufsatz (theorem of turning tangents) for lattice walks without right turns: a
  simple closed walk on `ℤ²` whose every turn is straight or a left quarter turn has exactly four
  left turns, i.e. its direction makes one full counterclockwise revolution. Right turns and
  reversals are excluded by hypothesis, so the walks covered are exactly counterclockwise

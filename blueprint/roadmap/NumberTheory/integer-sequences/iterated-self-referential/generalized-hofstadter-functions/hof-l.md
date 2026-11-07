@@ -1,6 +1,6 @@
 # The image length $L_k$
 
-**The image length $L_k$.** For natural numbers $k$ and $n$, $L_k(n) = |\tau_k(x_k[0:n))|$
+For natural numbers $k$ and $n$, $L_k(n) = |\tau_k(x_k[0:n))|$
 is the length of the word obtained by applying the substitution $\tau_k$, letter by letter, to
 the prefix $x_k[0:n)$ formed by the first $n$ letters of the fixed point $x_k$ of $\tau_k$.
 

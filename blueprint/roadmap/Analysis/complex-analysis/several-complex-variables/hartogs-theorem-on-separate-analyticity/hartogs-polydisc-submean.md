@@ -1,6 +1,6 @@
 # Sub-mean-value inequality on a polydisc
 
-**Sub-mean-value inequality on a polydisc.** Let $n \in \mathbb{N}$, let
+Let $n \in \mathbb{N}$, let
 $u : \mathbb{C}^n \to \mathbb{R}$ be continuous, let $c \in \mathbb{C}^n$ and $R > 0$. Write
 $\overline{P}(c, R) = \{x \in \mathbb{C}^n : |x_j - c_j| \le R \text{ for all } j\}$ for the
 closed polydisc, and for $x \in \mathbb{C}^n$ and $w \in \mathbb{C}$ write $x_{j \leftarrow w}$

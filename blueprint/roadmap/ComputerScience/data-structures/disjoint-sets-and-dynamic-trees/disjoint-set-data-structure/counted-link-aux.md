@@ -1,6 +1,6 @@
 # Linking by rank with operation counts
 
-**Linking by rank with operation counts.** Given an array $A$ of union-find nodes, each
+Given an array $A$ of union-find nodes, each
 storing a parent index and a rank, and indices $x, y$ of $A$, this computation returns an array
 together with a count $(t, p, w)$ of rank tests $t$, parent writes $p$ and rank writes $w$. If
 $x = y$ it returns $A$ with count $(0, 0, 0)$. Otherwise it makes one rank test; if the rank of $y$

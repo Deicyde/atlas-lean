@@ -1,6 +1,6 @@
 # Derived solidification computes singular homology
 
-**Derived solidification computes singular homology.** Let $X$ be a topological space
+Let $X$ be a topological space
 equipped with a CW complex structure, let $n$ be a natural number, and let $\mathbb{Z}[X]$ be the
 free light condensed abelian group on $X$, viewed as a complex concentrated in degree $0$ in the
 derived category of light condensed abelian groups. Apply derived solidification to

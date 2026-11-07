@@ -1,6 +1,6 @@
 # Taking a minimum preserves quotients by powers of two
 
-**Taking a minimum preserves quotients by powers of two.** Let $a, b, c, k \in \mathbb{N}$. If
+Let $a, b, c, k \in \mathbb{N}$. If
 $\lfloor a / 2^k \rfloor = \lfloor b / 2^k \rfloor$, then
 $\lfloor \min(a, c) / 2^k \rfloor = \lfloor \min(b, c) / 2^k \rfloor$.
 

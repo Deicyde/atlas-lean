@@ -1,6 +1,6 @@
 # Chapman–Kolmogorov equations, forward (law) form
 
-**Chapman–Kolmogorov equations, forward (law) form.** Let $X = (X_n)_{n \in \mathbb{N}}$ be
+Let $X = (X_n)_{n \in \mathbb{N}}$ be
 a Markov chain with state space $S$, with respect to a filtration, with Markov transition kernel
 $\kappa$, under a probability measure $\mu$, and let $\kappa^n$ be the $n$-fold composition of
 $\kappa$ (the identity kernel for $n = 0$). Then for all $m, n \in \mathbb{N}$ the law of

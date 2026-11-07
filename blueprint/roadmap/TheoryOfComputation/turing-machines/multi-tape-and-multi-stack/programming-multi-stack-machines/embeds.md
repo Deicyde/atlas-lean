@@ -1,6 +1,6 @@
 # Embedding of a machine in a host
 
-**Embedding of a machine in a host.** Let $E$ be a stack embedding and $\varphi$ a map from
+Let $E$ be a stack embedding and $\varphi$ a map from
 the labels of a machine $M$ to the labels of a host machine $M'$ over the same internal states.
 Then $M$ embeds in $M'$ along $E$ and $\varphi$ when, for every label $\ell$ of $M$, either the
 statement of $M'$ at $\varphi(\ell)$ is the statement of $M$ at $\ell$ translated along $E$ and

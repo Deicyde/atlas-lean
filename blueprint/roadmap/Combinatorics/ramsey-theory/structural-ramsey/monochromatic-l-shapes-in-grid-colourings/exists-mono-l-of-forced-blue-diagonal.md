@@ -1,6 +1,6 @@
 # Forced blue points on a diagonal give a monochromatic L
 
-**Forced blue points on a diagonal give a monochromatic L.** Let $n \ge 3$, write
+Let $n \ge 3$, write
 $[n] = \{1, \dots, n\}$, let $c$ be a coloring of $\mathbb{N} \times \mathbb{N}$ with $3$ colors
 and let red and blue be two distinct colors. Let $s \ge 1$ and let $X$ be a finite set of
 natural numbers such that every $x \in X$ satisfies $x \ge 1$ and $x + s \le n$, the point

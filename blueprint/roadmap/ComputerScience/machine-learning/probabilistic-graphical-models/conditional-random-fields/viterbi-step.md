@@ -1,6 +1,6 @@
 # One step of the tabulated Viterbi recursion for a chain CRF
 
-**One step of the tabulated Viterbi recursion for a chain CRF.** Let $c$ be a chain
+Let $c$ be a chain
 conditional random field with states $\{0, \dots, n - 1\}$, where $n \ge 1$, and weights in a
 linearly ordered commutative semiring $R$, and let $x$ be an observation sequence. Write
 $\phi_t(s)$ for the unary potential of $c$ at $x$ of state $s$ at position $t$, and

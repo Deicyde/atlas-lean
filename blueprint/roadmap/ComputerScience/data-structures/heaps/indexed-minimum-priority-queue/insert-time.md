@@ -1,6 +1,6 @@
 # Logarithmic event bound for indexed-queue insertion
 
-**Logarithmic event bound for indexed-queue insertion.** Let $W$ be a linearly ordered type
+Let $W$ be a linearly ordered type
 and let $W \cup \{\top\}$ be $W$ with a new greatest element $\top$ adjoined. Let $q$ be an
 indexed minimum queue over the identities $0, \dots, n-1$ with keys in $W \cup \{\top\}$ whose
 heap has $s$ entries, let $v < n$ be an identity and let $k \in W \cup \{\top\}$ be a key. For

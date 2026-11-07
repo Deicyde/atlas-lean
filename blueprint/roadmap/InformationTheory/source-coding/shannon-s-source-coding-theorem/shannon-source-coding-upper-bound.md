@@ -1,6 +1,6 @@
 # Shannon source coding upper bound
 
-**Shannon source coding upper bound.** Let $\alpha$ and $\beta$ be finite types with
+Let $\alpha$ and $\beta$ be finite types with
 $q = |\beta| \ge 2$, and let $p : \alpha \to \mathbb{R}$ satisfy $p(a) > 0$ for every $a \in \alpha$
 and $\sum_{a \in \alpha} p(a) = 1$. Then there is a prefix-free code $c$ assigning to each
 $a \in \alpha$ a finite word $c(a)$ over $\beta$, of length $|c(a)|$, whose expected length

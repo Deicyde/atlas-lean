@@ -1,6 +1,6 @@
 # Moving the input onto the stash
 
-**Moving the input onto the stash.** Let $l$, $a$, $o$ be bit strings and $v$ an optional
+Let $l$, $a$, $o$ be bit strings and $v$ an optional
 bit, and list stacks top first. Started at the moving label with internal state $v$, input stack
 $l$, stash $a$, output stack $o$, empty counter stacks $N$, $K$, $M$ and empty scratch stack $T$,
 the dense-to-binary converter reaches, in exactly $|l| + 1$ steps, the label for reading with no

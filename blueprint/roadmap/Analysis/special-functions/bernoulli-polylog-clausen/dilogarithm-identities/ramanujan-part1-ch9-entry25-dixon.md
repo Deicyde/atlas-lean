@@ -1,6 +1,6 @@
 # Entry 25 of Chapter 9 of Ramanujan's notebooks
 
-**Entry 25 of Chapter 9 of Ramanujan's notebooks.** Let $x, y \in [0, 1]$ and let $\theta$
+Let $x, y \in [0, 1]$ and let $\theta$
 and $\varphi$ be real numbers with $x e^{i\theta} + y e^{i\varphi} = xy \, e^{i(\theta + \varphi)}$.
 Then $1 - x \cos\theta \ne 0$ and $1 - y \cos\varphi \ne 0$. Put
 $A_x = 1 - 2x \cos\theta + x^2$, $A_y = 1 - 2y \cos\varphi + y^2$,

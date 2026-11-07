@@ -1,6 +1,6 @@
 # Nonzero differences of the Bose–Chowla set avoid the subgroup of order $g$
 
-**Nonzero differences of the Bose–Chowla set avoid the subgroup of order $g$.** Let $q$
+Let $q$
 and $g$ be natural numbers with $g \mid q - 1$, let $K$ be a finite field with $q^2$ elements, and
 let $\theta \in K$ be a primitive $(q^2 - 1)$-th root of unity, that is, a generator of $K^\times$.
 If $a$ and $b$ are natural numbers less than $q^2 - 1$ with

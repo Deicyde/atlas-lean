@@ -1,6 +1,6 @@
 # Homogeneous Sobolev seminorm for the Hölder embedding
 
-**Homogeneous Sobolev seminorm for the Hölder embedding.** For a real number $s$ and a
+For a real number $s$ and a
 Schwartz function $f : \mathbb{R} \to \mathbb{C}$ with Fourier transform
 $\hat f(\xi) = \int_{\mathbb{R}} e^{-2\pi i x \xi} f(x) \, dx$, the homogeneous Sobolev seminorm
 of $f$ is

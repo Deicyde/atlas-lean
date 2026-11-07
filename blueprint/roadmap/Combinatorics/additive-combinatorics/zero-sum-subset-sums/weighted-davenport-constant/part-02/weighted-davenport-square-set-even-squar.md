@@ -1,6 +1,6 @@
 # Square-weighted Davenport constant of even squares is at least four
 
-**Square-weighted Davenport constant of even squares is at least four.** Let $n \ge 2$ be an
+Let $n \ge 2$ be an
 even perfect square. Write $S(n)$ for the set of nonzero squares in
 $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$ and $D_{S(n)} \in \mathbb{N} \cup \{\infty\}$ for the
 weighted Davenport constant of $\mathbb{Z}_n$ with weight set $S(n)$, a weight acting by

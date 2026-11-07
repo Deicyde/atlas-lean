@@ -1,6 +1,6 @@
 # Mass of a cylinder under the invariant measure
 
-**Mass of a cylinder under the invariant measure.** Let
+Let
 $\mathbb{X} \subseteq \{0,1\}^{\mathbb{N}}$ be the set of Zeckendorf-adic integers (sequences
 with $x_0 = x_1 = 0$ and no two consecutive ones), let $T$ be the Zeckendorf odometer, and let
 $\varphi$ be the golden ratio. Let $\mu$ be a probability measure on $\{0,1\}^{\mathbb{N}}$ with

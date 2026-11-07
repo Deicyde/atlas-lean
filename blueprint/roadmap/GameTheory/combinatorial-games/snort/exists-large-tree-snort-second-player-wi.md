@@ -1,6 +1,6 @@
 # Arbitrarily large trees on which the second player wins Snort
 
-**Arbitrarily large trees on which the second player wins Snort.** For every natural number
+For every natural number
 $N$ there is a tree $T$ on $n \ge N$ vertices such that the second player wins Snort on $T$.
 
 ## Sources

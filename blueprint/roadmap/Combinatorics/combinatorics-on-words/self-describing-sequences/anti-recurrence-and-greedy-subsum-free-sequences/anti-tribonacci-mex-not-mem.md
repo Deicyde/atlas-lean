@@ -1,6 +1,6 @@
 # The mex of a finite set lies outside the set
 
-**The mex of a finite set lies outside the set.** Write $\mathrm{mex}(s)$ for the least positive
+Write $\mathrm{mex}(s)$ for the least positive
 integer not in a finite set $s$ of natural numbers. For every such $s$, $\mathrm{mex}(s) \notin s$.
 
 ## Sources

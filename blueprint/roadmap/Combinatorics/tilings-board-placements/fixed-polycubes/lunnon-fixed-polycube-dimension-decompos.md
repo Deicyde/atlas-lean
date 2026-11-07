@@ -1,6 +1,6 @@
 # Lunnon's dimension decomposition for fixed polycubes
 
-**Lunnon's dimension decomposition for fixed polycubes.** Let $d$ and $n$ be natural numbers
+Let $d$ and $n$ be natural numbers
 with $n > 1$, let $A_d(n)$ be the number of fixed $n$-cell polycubes in dimension $d$, and for
 each $i$ let $\mathrm{DX}(n,i)$ be the number of fixed $n$-cell polycubes proper in dimension $i$.
 Then

@@ -1,6 +1,6 @@
 # Thompson's group $F$ does not have the Howson property
 
-**Thompson's group $F$ does not have the Howson property.** It is not the case that the
+It is not the case that the
 intersection of any two finitely generated subgroups of Thompson's group $F$ is finitely
 generated: there are finitely generated subgroups $H$ and $K$ of $F$ such that $H \cap K$ is not
 finitely generated.

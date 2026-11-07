@@ -1,6 +1,6 @@
 # Weak Sidon sets split into two Sidon sets
 
-**Weak Sidon sets split into two Sidon sets.** Every weak Sidon set $A \subseteq \mathbb{N}$ is
+Every weak Sidon set $A \subseteq \mathbb{N}$ is
 the union of two disjoint Sidon sets $B$ and $C$.
 
 ## Sources

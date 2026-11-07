@@ -1,6 +1,6 @@
 # Euler–Lucas multinomial expansion of $(x + q/2)^m$
 
-**Euler–Lucas multinomial expansion of $(x + q/2)^m$.** Let $E_k$ be the Euler (secant)
+Let $E_k$ be the Euler (secant)
 numbers, with exponential generating function $2/(e^t + e^{-t})$, and let $L_k$ be the Lucas
 numbers ($L_0 = 2$, $L_1 = 1$, $L_{k+2} = L_{k+1} + L_k$). For all natural numbers $q \ge 1$ and
 $m$ and every real number $x$,

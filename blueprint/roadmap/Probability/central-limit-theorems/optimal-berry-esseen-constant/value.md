@@ -1,6 +1,6 @@
 # The optimal Berry–Esseen constant
 
-**The optimal Berry–Esseen constant.** Call a real number $C$ admissible if for every
+Call a real number $C$ admissible if for every
 probability measure $\mu$ on $\mathbb{R}$ with mean $0$, variance $1$ and finite third absolute
 moment $\rho = \int |x|^3 \, d\mu$, and every positive integer $n$,
 

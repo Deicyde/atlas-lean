@@ -1,6 +1,6 @@
 # Inventory sequences end in short loops
 
-**Inventory sequences end in short loops.** Let $a_1 < \dots < a_n$ and $b_1, \dots, b_n$ be
+Let $a_1 < \dots < a_n$ and $b_1, \dots, b_n$ be
 positive integers, and iterate the inventory step starting from the pair of rows
 $(a_1, \dots, a_n)$ and $(b_1, \dots, b_n)$, where the inventory step replaces a pair of rows by the
 increasing list of the distinct integers occurring in either row together with the list of the

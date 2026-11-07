@@ -1,6 +1,6 @@
 # Golden-ratio relation for the Rogers–Ramanujan continued fraction
 
-**Golden-ratio relation for the Rogers–Ramanujan continued fraction.** Let $t > 0$, and put
+Let $t > 0$, and put
 $q = e^{-\pi t}$ and $q' = e^{-\pi/t}$. Let $\psi(x) = \sum_{n \ge 0} x^{n(n+1)/2}$ and
 $E(x) = (x; x)_\infty = \prod_{n \ge 1} (1 - x^n)$, and set
 $\tau(q) = \psi(q) - 5q^3 \psi(q^{25})$, $\rho(q) = \psi(q)^2 - 5q\,\psi(q^5)^2$ and

@@ -1,6 +1,6 @@
 # The CLIQUE emitter machine
 
-**The CLIQUE emitter machine.** The CLIQUE emitter is the multi-stack machine with stacks
+The CLIQUE emitter is the multi-stack machine with stacks
 $T, O, A, B, D, E, X, C, N$, a Boolean flag and the labels named below. The stack $O$ holds
 Booleans and the others hold symbols, among them the bit symbols $\mathrm{bit}(b)$, the literal
 symbols $\mathrm{lit}(p)$ and the clause marker $\mathrm{cl}$. Each test sets the flag to its

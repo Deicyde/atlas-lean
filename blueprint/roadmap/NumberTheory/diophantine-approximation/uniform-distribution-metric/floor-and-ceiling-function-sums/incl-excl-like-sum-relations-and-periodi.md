@@ -1,6 +1,6 @@
 # Relations and periodicity of the inclusion-exclusion-like sums
 
-**Relations and periodicity of the inclusion-exclusion-like sums.** Let $n \ge 2$ and write
+Let $n \ge 2$ and write
 $g_1$, $g_2$, $g_3$, $g_4$ for the inclusion-exclusion-like sums $g^{(F)}$ with $F$ the floor
 function $\lfloor y \rfloor$, the ceiling function $\lceil y \rceil$, the nearest-integer function
 $\lfloor y + 1/2 \rfloor$ (ties rounded up) and $\lceil y - 1/2 \rceil$ (ties rounded down),

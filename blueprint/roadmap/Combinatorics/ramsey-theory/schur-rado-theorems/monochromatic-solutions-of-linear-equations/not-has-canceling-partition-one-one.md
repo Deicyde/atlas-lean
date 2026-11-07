@@ -1,6 +1,6 @@
 # The equation $x_1 + x_2 = 0$ has no canceling partition
 
-**The equation $x_1 + x_2 = 0$ has no canceling partition.** The equation
+The equation
 $x_1 + x_2 = 0$, with coefficient vector $(1, 1)$, has no canceling partition.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Multiplicativity at roots of unity of order at most 4
 
-**Multiplicativity at roots of unity of order at most 4.** Let $q \in \mathbb{C}$ be a primitive
+Let $q \in \mathbb{C}$ be a primitive
 $d$-th root of unity with $d \in \{1, 2, 3, 4\}$, and let $\bar P_n$ be the Kassel–Reutenauer
 polynomials. Then for all coprime integers $m, n \ge 1$,
 

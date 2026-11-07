@@ -1,6 +1,6 @@
 # Forward Finsler distance
 
-**Forward Finsler distance.** Let $F$ be a Finsler metric on a manifold $M$. The forward
+Let $F$ be a Finsler metric on a manifold $M$. The forward
 Finsler distance from $x \in M$ to $y \in M$ is the value in $[0, \infty]$
 
 $$

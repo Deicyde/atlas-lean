@@ -1,6 +1,6 @@
 # Integral of the Trollope–Delange fluctuation
 
-**Integral of the Trollope–Delange fluctuation.** For a natural number $q$ and a real number
+For a natural number $q$ and a real number
 $x$, let $F$ be the Trollope–Delange fluctuation in base $q$. Then $G(x)$ is the real number
 
 $$G(x) = \int_1^x \frac{F(\log u / \log q)}{u} \, du,$$

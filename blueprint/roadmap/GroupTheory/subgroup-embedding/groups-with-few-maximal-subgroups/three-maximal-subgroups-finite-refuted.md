@@ -1,6 +1,6 @@
 # Not every finitely generated group with three maximal subgroups is finite
 
-**Not every finitely generated group with three maximal subgroups is finite.** There is a
+There is a
 finitely generated infinite group with exactly three maximal subgroups; that is, it is false that
 every finitely generated group with exactly three maximal subgroups is finite.
 

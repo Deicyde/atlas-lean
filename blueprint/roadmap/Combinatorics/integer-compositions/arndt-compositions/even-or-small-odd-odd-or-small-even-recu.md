@@ -1,6 +1,6 @@
 # Recurrences for even-or-small-odd and odd-or-small-even compositions
 
-**Recurrences for even-or-small-odd and odd-or-small-even compositions.** For natural
+For natural
 numbers $k$ and $n$, let $c^{2k+1}_e(n)$ be the number of compositions of $n$ in which every part
 is even or at most $2k + 1$, and $c^{2k}_o(n)$ the number in which every part is odd or at most
 $2k$. If $k \ge 1$ and $n \ge 3$, then

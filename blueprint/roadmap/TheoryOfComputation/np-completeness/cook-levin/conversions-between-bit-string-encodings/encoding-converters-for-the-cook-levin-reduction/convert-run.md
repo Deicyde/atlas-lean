@@ -1,6 +1,6 @@
 # Run of the pair-to-canonical converter
 
-**Run of the pair-to-canonical converter.** Let $x$ and $w$ be bit lists, write $x \# w$ for
+Let $x$ and $w$ be bit lists, write $x \# w$ for
 the verifier input of the pair $(x, w)$, and read $1$ for true and $0$ for false. Let
 $\mathrm{encFst}(x)$ replace each bit $b$ of $x$ by $1, 1, 1, b, 1, 0$ and $\mathrm{encSnd}(w)$
 replace each bit $b$ of $w$ by $1, b, 0$. The program of the pair-to-canonical converter goes in

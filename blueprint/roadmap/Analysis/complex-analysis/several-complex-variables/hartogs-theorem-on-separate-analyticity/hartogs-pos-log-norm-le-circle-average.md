@@ -1,6 +1,6 @@
 # Sub-mean-value inequality for the positive logarithm of a holomorphic function
 
-**Sub-mean-value inequality for the positive logarithm of a holomorphic function.** Let
+Let
 $c \in \mathbb{C}$, $R > 0$ and let $f : \mathbb{C} \to \mathbb{C}$ be analytic at every point of
 the closed disc $|z - c| \le R$. Then
 

@@ -1,6 +1,6 @@
 # At most one lift has valuation above one
 
-**At most one lift has valuation above one.** Let $p$ be a prime, $g \in \mathbb{Z}[x]$ and
+Let $p$ be a prime, $g \in \mathbb{Z}[x]$ and
 $r$ an integer with $0 \le r < p$ such that $g(r)$ and $g'(r)$ are not both divisible by $p$.
 Then at most one $k \in \{0, \dots, p - 1\}$ satisfies $p^2 \mid g(r + kp)$.
 

@@ -1,6 +1,6 @@
 # Indicator functions with the NS property
 
-**Indicator functions with the NS property.** Let $f : \mathbb{N} \to \mathbb{N}$ be monotone,
+Let $f : \mathbb{N} \to \mathbb{N}$ be monotone,
 with $f(x) \le 1$ for all $x$ and $f(x) = 1$ for some $x$. Then $f$ has the NS property if and
 only if there is an even $m \in \mathbb{N}$ such that $f$ is the indicator function of
 $\{n \in \mathbb{N} : n \ge m\}$, that is, $f(n) = 1$ for $n \ge m$ and $f(n) = 0$ for $n < m$.

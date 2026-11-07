@@ -1,6 +1,6 @@
 # Reconstructed pieces are the saved first cuts
 
-**Reconstructed pieces are the saved first cuts.** Let $p$ be a price vector of length $n$
+Let $p$ be a price vector of length $n$
 with entries in an additive commutative monoid carrying a linear order. Let $s$ be the vector of
 saved first cuts computed by the extended bottom-up rod-cutting algorithm, of length $n$, whose
 entry $j - 1$ is the cut saved for length $j$, and let $(b_0, \dots, b_{m-1})$ be the composition

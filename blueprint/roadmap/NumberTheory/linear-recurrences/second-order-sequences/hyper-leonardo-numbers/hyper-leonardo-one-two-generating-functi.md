@@ -1,6 +1,6 @@
 # Generating functions of the hyper-Leonardo numbers of orders one and two
 
-**Generating functions of the hyper-Leonardo numbers of orders one and two.** In the ring
+In the ring
 $\mathbb{Z}[[t]]$ of formal power series, the hyper-Leonardo numbers $Le^{(r)}_n$ satisfy
 $\left(\sum_{n \ge 0} Le^{(1)}_n t^n\right)(1 - 2t + t^3)(1 - t) = 1 - t + t^2$ and
 $\left(\sum_{n \ge 0} Le^{(2)}_n t^n\right)(1 - 2t + t^3)(1 - t)^2 = 1 - t + t^2$.

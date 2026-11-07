@@ -1,6 +1,6 @@
 # Irwin measure
 
-**Irwin measure.** Let $b$, $d$ and $k$ be natural numbers with $d < b$. For a finite string
+Let $b$, $d$ and $k$ be natural numbers with $d < b$. For a finite string
 $X$ of base-$b$ digits (of any length, including the empty string, with leading zeros allowed),
 read most significant digit first, let $|X|$ be its length and $n(X)$ the integer it represents.
 The Irwin measure $\mu_k$ of base $b$ and digit $d$ with index $k$ is the measure on $\mathbb{R}$

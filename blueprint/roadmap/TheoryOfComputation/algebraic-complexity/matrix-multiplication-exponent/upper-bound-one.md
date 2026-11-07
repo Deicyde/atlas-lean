@@ -1,6 +1,6 @@
 # Dual exponent at most one
 
-**Dual exponent at most one.** For every field $F$, the dual matrix multiplication
+For every field $F$, the dual matrix multiplication
 exponent $\alpha(F)$ of the arithmetic-circuit model satisfies $\alpha(F) \le 1$.
 
 ## Sources

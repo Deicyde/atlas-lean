@@ -1,6 +1,6 @@
 # Possible pole of the ℓ-generalized Fibonacci zeta function at a given index
 
-**Possible pole of the ℓ-generalized Fibonacci zeta function at a given index.** Let $\ell$
+Let $\ell$
 be a natural number, let $\alpha$ be a real number, and let $R$ be the set of complex roots of
 $X^\ell - \sum_{i\lt \ell} X^i$ other than $\alpha$. For a function $\kappa$ from $\mathbb{C}$ to the
 natural numbers and an integer $n$, the possible pole indexed by $(\kappa, n)$ is

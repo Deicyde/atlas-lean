@@ -1,6 +1,6 @@
 # Reciprocal series of Lucas sequences with doubling subscripts
 
-**Reciprocal series of Lucas sequences with doubling subscripts.** Let $P \ne 0$ be an
+Let $P \ne 0$ be an
 integer and let $U_m = U_m(P, -1)$ and $V_m = V_m(P, -1)$ be the Lucas sequences with parameters
 $(P, -1)$, so $U_0 = 0$, $U_1 = 1$, $V_0 = 2$, $V_1 = P$, and both satisfy
 $X_{m+2} = P X_{m+1} + X_m$. For every integer $k \ge 1$ and every integer $n \ge 1$,

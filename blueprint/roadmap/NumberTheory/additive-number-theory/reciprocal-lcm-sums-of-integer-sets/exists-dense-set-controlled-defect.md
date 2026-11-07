@@ -1,6 +1,6 @@
 # Dense sets with controlled gcd defect
 
-**Dense sets with controlled gcd defect.** Let $e$ be Euler's number. There is an absolute
+Let $e$ be Euler's number. There is an absolute
 constant $C > 0$ with the following property. Let $C_0 > 0$ be real, and let $F_{C_0}$ be the
 growth function of the dense-set construction. Then there is a set $A$ of natural numbers such
 that, writing $S_A(x) = \sum_{n \in A,\ 1 \le n \le x} 1/n$ for its harmonic sum up to $x$ and

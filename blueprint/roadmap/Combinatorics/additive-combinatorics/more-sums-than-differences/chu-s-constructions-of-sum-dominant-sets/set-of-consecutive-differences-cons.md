@@ -1,6 +1,6 @@
 # Prepending a gap
 
-**Prepending a gap.** For an integer $a$ and natural numbers $g_1, \dots, g_r$ ($r \ge 0$),
+For an integer $a$ and natural numbers $g_1, \dots, g_r$ ($r \ge 0$),
 write $(a \mid g_1, \dots, g_r)$ for the set of partial sums
 $\{a, a + g_1, \dots, a + g_1 + \dots + g_r\}$. Then for every natural number $g$,
 $(a \mid g, g_1, \dots, g_r) = \{a\} \cup (a + g \mid g_1, \dots, g_r)$.

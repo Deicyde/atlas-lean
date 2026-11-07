@@ -1,6 +1,6 @@
 # Remainder bound for weighted Lucas power sums when $y = -1$
 
-**Remainder bound for weighted Lucas power sums when $y = -1$.** Let $x$ be a positive
+Let $x$ be a positive
 integer, let $(U_m)$ be the Lucas sequence with parameters $(x, -1)$, given by $U_0 = 0$,
 $U_1 = 1$ and $U_{m+2} = x U_{m+1} + U_m$, and let $D = x^2 + 4$ and $\alpha = (x + \sqrt{D})/2$.
 If positive integers $n$, $p$, $q$ and an integer $k \ge 3$ satisfy

@@ -1,6 +1,6 @@
 # Lower bound $-1$ for the log-modulus ratio along continua
 
-**Lower bound $-1$ for the log-modulus ratio along continua.** Write $M(f, r)$ for the Wiman
+Write $M(f, r)$ for the Wiman
 maximum modulus of a function $f : \mathbb{C} \to \mathbb{C}$ at radius $r$. This is the statement
 that for every entire, transcendental function $f$ and every continuum $\Gamma$ receding to
 infinity (a closed, connected, unbounded subset of $\mathbb{C}$), the limit superior, as

@@ -1,6 +1,6 @@
 # Value $G_2^{(2)} = 1$
 
-**Value $G_2^{(2)} = 1$.** The truncated binomial sum satisfies $G_2^{(2)} = 1$.
+The truncated binomial sum satisfies $G_2^{(2)} = 1$.
 
 This is the Fibonacci number $F_2$.
 

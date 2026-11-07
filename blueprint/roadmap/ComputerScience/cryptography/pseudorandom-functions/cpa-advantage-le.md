@@ -1,6 +1,6 @@
 # CPA encryption from a PRF, concrete security
 
-**CPA encryption from a PRF, concrete security.** Let $K$, $X$ and $R$ be nonempty finite sets,
+Let $K$, $X$ and $R$ be nonempty finite sets,
 $Y$ a finite additive commutative group, $q$ a natural number and $F \colon K \to X \to Y$ a keyed
 function, used in the scheme $\mathrm{Enc}_k(m) = (r, F_k(r) + m)$ with uniform randomness
 $r \in X$. For every CPA adversary $A$ with coins in $R$, the CPA advantage of $A$ in the

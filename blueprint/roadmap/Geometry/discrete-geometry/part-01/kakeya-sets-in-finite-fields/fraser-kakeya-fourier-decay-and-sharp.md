@@ -1,6 +1,6 @@
 # Fraser's Fourier decay theorem for finite-field Kakeya sets
 
-**Fraser's Fourier decay theorem for finite-field Kakeya sets.** Let $F$ be a finite field
+Let $F$ be a finite field
 with $q$ elements, let $d \ge 2$ be a natural number, let $K \subseteq F^d$ be a Kakeya set and let
 $\chi$ be a nontrivial additive character of $F$ with values in $\mathbb{C}$. Then, first, there is
 a probability measure $\mu$ on $K$ whose Fourier transform $\hat{\mu}$ with respect to $\chi$

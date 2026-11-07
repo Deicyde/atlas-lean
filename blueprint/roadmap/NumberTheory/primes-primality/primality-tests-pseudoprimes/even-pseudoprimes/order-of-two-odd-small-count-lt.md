@@ -1,6 +1,6 @@
 # Primes with odd order of 2 of small size
 
-**Primes with odd order of 2 of small size.** Write $\ell_2(p)$ for the multiplicative
+Write $\ell_2(p)$ for the multiplicative
 order of $2$ modulo a prime $p$. For every real $x > 0$, the number of primes $p$ with
 $2 < p \le x$ such that $\ell_2(p)$ is odd and $1 < \ell_2(p) \le p^{2/5}$ is less than
 $0.00754\, x^{4/5}$.

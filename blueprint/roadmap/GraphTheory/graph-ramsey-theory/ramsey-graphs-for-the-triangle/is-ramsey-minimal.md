@@ -1,6 +1,6 @@
 # Ramsey-minimal graphs for the triangle
 
-**Ramsey-minimal graphs for the triangle.** A graph $G$ on the vertex set $\{0, \dots, n - 1\}$
+A graph $G$ on the vertex set $\{0, \dots, n - 1\}$
 is $r$-Ramsey-minimal for the triangle when $G$ is $r$-Ramsey for the triangle, no proper spanning
 subgraph of $G$ (a graph on the same vertices whose edges are edges of $G$, missing at least one
 of them) is $r$-Ramsey for the triangle, and for every vertex $x$ it is false that every symmetric

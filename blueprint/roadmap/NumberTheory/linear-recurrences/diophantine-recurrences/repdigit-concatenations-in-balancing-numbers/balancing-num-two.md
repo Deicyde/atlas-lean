@@ -1,6 +1,6 @@
 # The balancing number $B_2$ is $6$
 
-**The balancing number $B_2$ is $6$.** The balancing number $B_2$ equals $6$.
+The balancing number $B_2$ equals $6$.
 
 ## Sources
 

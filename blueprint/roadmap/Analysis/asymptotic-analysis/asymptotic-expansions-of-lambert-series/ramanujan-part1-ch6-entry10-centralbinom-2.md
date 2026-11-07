@@ -1,6 +1,6 @@
 # Asymptotic expansion of the Lambert series $\sum_k 1/(e^{kx}+1)$
 
-**Asymptotic expansion of the Lambert series $\sum_k 1/(e^{kx}+1)$.** Let $x > 0$ be real
+Let $x > 0$ be real
 and let $n \ge 1$ be an integer. Let $B_m$ be the $m$-th Bernoulli number and let
 $D_n(x) = \sum_{k=1}^{n} \frac{(2^{2k} - 1) \, B_{2k}^2 \, x^{2k-1}}{2k \, (2k)!}$. Then the
 series $\sum_{k=1}^{\infty} \frac{1}{e^{kx} + 1}$ is summable, and its sum $T(x)$ satisfies

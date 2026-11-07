@@ -1,6 +1,6 @@
 # Suffix tree
 
-**Suffix tree.** For a list $s = (s_0, \dots, s_{n-1})$ over $\alpha$, let
+For a list $s = (s_0, \dots, s_{n-1})$ over $\alpha$, let
 $\hat s = (\mathrm{some}\,s_0, \dots, \mathrm{some}\,s_{n-1}, \mathrm{none})$ be its
 terminated string over $\mathrm{Option}\,\alpha$. The suffix tree of $s$ is the radix trie
 with keys over $\mathrm{Option}\,\alpha$ and natural-number values obtained from the empty

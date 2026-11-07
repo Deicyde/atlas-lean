@@ -1,6 +1,6 @@
 # Partitions with 2-distant parts and polarized partitions
 
-**Partitions with 2-distant parts and polarized partitions.** For every natural number $n$, the
+For every natural number $n$, the
 number of partitions of $n$ into distinct parts any two of which differ by at least $2$ equals the
 number of polarized partitions of $n$, that is, partitions of $n$ into distinct parts in which
 every even part is greater than twice the number of odd parts.

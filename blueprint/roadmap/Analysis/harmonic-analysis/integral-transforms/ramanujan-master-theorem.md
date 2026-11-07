@@ -1,6 +1,6 @@
 # Ramanujan's master theorem
 
-**Ramanujan's master theorem.** Let $a$ and $b$ be real numbers with $0 < a < b$, and let
+Let $a$ and $b$ be real numbers with $0 < a < b$, and let
 $s$ be a complex number with $a < \operatorname{Re} s < b$. Let $\varphi$ be a function from
 $\mathbb{C}$ to $\mathbb{C}$ that is analytic on the half-plane $\operatorname{Re} z > -b$, and
 suppose there are real constants $C > 0$ and $P < \pi$ such that

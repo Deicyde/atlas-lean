@@ -1,4 +1,4 @@
 # Blocks are nonempty
 
-**Blocks are nonempty.** Every block $B$ of a partition of a finite set $s$ satisfies
+Every block $B$ of a partition of a finite set $s$ satisfies
 $|B| \ge 1$.

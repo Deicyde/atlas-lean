@@ -1,6 +1,6 @@
 # Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ a prime power
 
-**Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ a prime power.** If natural numbers
+If natural numbers
 $n$ and $x$ satisfy $n! + 1 = x^2$ and $x - 1$ or $x + 1$ is a prime power, then
 $(n, x) = (4, 5)$.
 

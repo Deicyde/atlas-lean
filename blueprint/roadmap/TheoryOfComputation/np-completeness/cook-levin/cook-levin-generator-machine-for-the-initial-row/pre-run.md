@@ -1,6 +1,6 @@
 # Run of the precomputation (initial-row generator)
 
-**Run of the precomputation (initial-row generator).** Let $L$ be a layout with $K$ stacks,
+Let $L$ be a layout with $K$ stacks,
 let $i_c$ and $k_0$ be natural numbers and let $y$ be a list of certificate codes. For all natural
 numbers $T, n, e, f$ and every output $o$, the counter part of the generator for $L$, $i_c$,
 $k_0$, $y$ runs within $\mathrm{preB}(L, k_0, K - k_0 - 1, T, n, e, f)$ steps, the step bound for

@@ -1,6 +1,6 @@
 # Four-sequence Melham-type identity for gibonacci sequences
 
-**Four-sequence Melham-type identity for gibonacci sequences.** Let
+Let
 $G, H, I, J : \mathbb{Z} \to \mathbb{R}$ satisfy $G_{j+2} = G_{j+1} + G_j$ for every integer $j$,
 and likewise $H$, $I$ and $J$, and let $F_m$ denote the Fibonacci numbers. For every natural
 number $n$ and all integers $k$, $r$, $s$ and $t$, writing

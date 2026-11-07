@@ -1,6 +1,6 @@
 # Goldwasser-Sipser: private coins add no power to interactive proofs
 
-**Goldwasser-Sipser: private coins add no power to interactive proofs.** The class
+The class
 $\mathsf{IP}$ of decision problems with (private-coin) interactive proofs equals the class
 $\mathsf{PubIP}$ of decision problems with public-coin interactive proofs with polynomially many
 rounds.

@@ -1,6 +1,6 @@
 # Geometrically weighted sum of $r$-Lucas polynomials
 
-**Geometrically weighted sum of $r$-Lucas polynomials.** Let $K$ be a field, let $r \ge 1$ and
+Let $K$ be a field, let $r \ge 1$ and
 $s$ be natural numbers, let $x, y, m \in K$ with $1 - m x - m^{r+1} y \ne 0$, and write $V_j$ for
 the $r$-Lucas polynomial of type $s$, $V_j = V^{(r,s)}_j(x, y)$. Then for every natural number
 $n \ge r - 1$,

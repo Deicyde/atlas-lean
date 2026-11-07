@@ -1,6 +1,6 @@
 # Fang–Xia: tilings by transpositions and λ-transitivity
 
-**Fang–Xia: tilings by transpositions and λ-transitivity.** Let $S_n$ be the symmetric group
+Let $S_n$ be the symmetric group
 on $\{0, \dots, n-1\}$, let $T_n \subseteq S_n$ consist of the identity and all transpositions,
 and let $Y \subseteq S_n$ be such that $(T_n, Y)$ is a tiling of $S_n$: every $g \in S_n$ can be
 written as $g = xy$ with $x \in T_n$ and $y \in Y$ for exactly one pair $(x, y)$. Let $\lambda$

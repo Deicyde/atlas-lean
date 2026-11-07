@@ -1,6 +1,6 @@
 # Hamidoune's reverse-connectivity conjecture fails for every $r \ge 3$
 
-**Hamidoune's reverse-connectivity conjecture fails for every $r \ge 3$.** For no natural
+For no natural
 number $r \ge 3$ does the following hold: every digraph $D$ without loops or parallel arcs on a
 finite nonempty vertex set, in which every vertex has at least $r$ out-neighbours and at least
 $r$ in-neighbours, has an arc $(x, y)$ from $x$ to $y$ with $\kappa(y, x) \ge r$, that is, with

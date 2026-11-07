@@ -1,6 +1,6 @@
 # Kolmogorov's maximal inequality for finitely-valued variables
 
-**Kolmogorov's maximal inequality for finitely-valued variables.** Let $\alpha$ be a finite
+Let $\alpha$ be a finite
 nonempty set and $n \in \mathbb{N}$. For each $i \in \{0, \dots, n-1\}$ let $p_i$ be a probability
 vector on $\alpha$, so $p_i(a) \ge 0$ and $\sum_{a \in \alpha} p_i(a) = 1$, and let
 $X_i : \alpha \to \mathbb{R}$ satisfy $\sum_{a \in \alpha} p_i(a) X_i(a) = 0$. Give each

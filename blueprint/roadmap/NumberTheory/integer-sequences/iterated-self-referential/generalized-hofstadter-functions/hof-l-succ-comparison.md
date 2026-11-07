@@ -1,6 +1,6 @@
 # Comparing $L_k$ with $L_{k+1}$
 
-**Comparing $L_k$ with $L_{k+1}$.** Let $x_k[0]\,x_k[1] \cdots$ be the fixed point,
+Let $x_k[0]\,x_k[1] \cdots$ be the fixed point,
 beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every other
 letter $i$ to $i + 1$, let $L_k(n)$ be the length of the word $\tau_k(x_k[0] \cdots x_k[n-1])$,
 write $L_k^j$ for the $j$-fold iterate of $L_k$, and let $C_k^{(=k)}(n)$ be the number of

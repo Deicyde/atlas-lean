@@ -1,6 +1,6 @@
 # Some generalized Euclid sequence contains every prime
 
-**Some generalized Euclid sequence contains every prime.** Let $P$ be a finite set of primes
+Let $P$ be a finite set of primes
 and let $k$ be the number of elements of $P$. Then there is an injective sequence
 $a_0, a_1, a_2, \dots$ of primes such that $a_0, \dots, a_{k-1}$ are exactly the elements of $P$,
 every prime occurs in the sequence, and for every $n \ge k$ there is a set

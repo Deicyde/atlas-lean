@@ -1,6 +1,6 @@
 # Eliminating unit productions
 
-**Eliminating unit productions.** A unit production is one whose output is a single
+A unit production is one whose output is a single
 nonterminal. For a context-free grammar $g$, the grammar obtained by eliminating unit
 productions has the same nonterminals and the same start symbol as $g$. Its productions
 are the $A \to \alpha$ such that $A$ is a nonterminal mentioned by $g$ (its start symbol

@@ -1,6 +1,6 @@
 # A long clause makes the capped 3SAT filter fail on a list of clauses
 
-**A long clause makes the capped 3SAT filter fail on a list of clauses.** For a clause $C$ let
+For a clause $C$ let
 $\overline{C}$ be its tokens as they lie on the token stack (the clause marker on top, then the
 literals' tokens, last literal first). For a list of clauses $C_1, \dots, C_k$, let $X$ be the
 concatenation $\overline{C_1} \cdots \overline{C_k}$ with $\overline{C_1}$ on top, and let $w_n$

@@ -1,6 +1,6 @@
 # Value of the binomial-product comparison function at $1$
 
-**Value of the binomial-product comparison function at $1$.** For natural numbers $a$ and
+For natural numbers $a$ and
 $b$, let $c = a - b$ if $b \le a$ and $c = 0$ otherwise. Then the binomial-product comparison
 function $P_{a,b}$ satisfies
 

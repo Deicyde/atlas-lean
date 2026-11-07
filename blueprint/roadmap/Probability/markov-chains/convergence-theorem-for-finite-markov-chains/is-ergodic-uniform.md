@@ -1,3 +1,3 @@
 # The uniform Markov chain is ergodic
 
-**The uniform Markov chain is ergodic.** The uniform chain is ergodic, with witness `n = 1`.
+The uniform chain is ergodic, with witness `n = 1`.

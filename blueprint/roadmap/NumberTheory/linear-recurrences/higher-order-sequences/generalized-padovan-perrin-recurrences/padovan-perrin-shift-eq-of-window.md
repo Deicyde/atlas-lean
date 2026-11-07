@@ -1,6 +1,6 @@
 # Solutions agreeing on a window agree afterwards
 
-**Solutions agreeing on a window agree afterwards.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $k_1, k_2 \in R$, let $p, s$ be natural numbers and let $v, w \colon \mathbb{N} \to R$ be solutions
 of the Padovan–Perrin recurrence with parameters $k_1, k_2, p, s$. Let $n_0, m_0, N$ be natural
 numbers such that $v(j + n_0) = w(j + m_0)$ for every $j$ with $N \le j < N + s + p$. Then

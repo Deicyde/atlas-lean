@@ -1,6 +1,6 @@
 # Reflection of binary words and relative position
 
-**Reflection of binary words and relative position.** Let $\mathcal{W}$ be the set of
+Let $\mathcal{W}$ be the set of
 infinite words over $\{a, b\}$ in which both letters occur infinitely often, and let
 $a\mathcal{W}$ and $b\mathcal{W}$ be its words that begin with $a$ and with $b$. For a word $w$
 let $\bar w$ be its reflection, obtained by exchanging $a$ and $b$ at every position, and let

@@ -1,6 +1,6 @@
 # Heath-Brown's twelfth moment bound with the logarithmic factor
 
-**Heath-Brown's twelfth moment bound with the logarithmic factor.** There are constants $C$
+There are constants $C$
 and $T_0$ such that for every real $T \ge T_0$,
 
 $$\int_1^T |\zeta(1/2 + it)|^{12} \, dt \le C T^2 (\log T)^{17}.$$

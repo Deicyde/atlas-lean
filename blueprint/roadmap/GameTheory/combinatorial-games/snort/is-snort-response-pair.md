@@ -1,6 +1,6 @@
 # Snort response pairs
 
-**Snort response pairs.** In Snort on a finite graph $G$, a pair $(u, v)$ of vertices is a
+In Snort on a finite graph $G$, a pair $(u, v)$ of vertices is a
 response pair if $u \neq v$, $u$ and $v$ are not adjacent (so the first player colouring $u$ and
 the second answering $v$ is legal), and the first player, now to move, loses from the position
 in which the first player has coloured $u$ and the second player has coloured $v$.

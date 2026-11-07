@@ -1,6 +1,6 @@
 # Class B matched columns of repetend tables
 
-**Class B matched columns of repetend tables.** Let $a \ge 1$ and $L = 12a + 6$, let $p$ be a
+Let $a \ge 1$ and $L = 12a + 6$, let $p$ be a
 prime with $p \equiv 1 \pmod L$, let $k \ge 1$ and $n = p^k$, and let $b$ be a natural number of
 multiplicative order $L$ modulo $n$; write $b_i = b^i \bmod n$. Let the rows be the integers $c$
 with $1 \le c < n$, $\gcd(c, n) = 1$ and multiplicative order $L$ modulo $n$, and let column $j$

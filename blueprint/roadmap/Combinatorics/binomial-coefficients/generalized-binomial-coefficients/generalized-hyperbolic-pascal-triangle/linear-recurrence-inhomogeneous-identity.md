@@ -1,6 +1,6 @@
 # Convolution identity for an inhomogeneous linear recurrence
 
-**Convolution identity for an inhomogeneous linear recurrence.** Let $k \in \mathbb{N}$ and let
+Let $k \in \mathbb{N}$ and let
 $A, f, G, w \colon \mathbb{N} \to \mathbb{C}$ be sequences such that, for every $m \ge k$,
 $f_m = \sum_{i=1}^{k} A_i f_{m-i}$ and $G_m = \sum_{i=1}^{k} A_i G_{m-i} + w_{m-k}$. Then for
 every $n \ge k$,

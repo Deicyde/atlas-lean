@@ -1,6 +1,6 @@
 # Bounds on the block lengths of order $m+1$
 
-**Bounds on the block lengths of order $m+1$.** Let $m \ge 1$ and $u \ge 2$. Write
+Let $m \ge 1$ and $u \ge 2$. Write
 $\beta^{(m+1)}(u)$ for the length of the block $B_u^{(m+1)}$ of the $(m+1)$th order Gijswijt
 sequence, and $\tau^{(m)}(t)$ for the length of $T_t^{(m)} = S_1^{(m)} \cdots S_{t-1}^{(m)}$, the
 concatenation of the first $t - 1$ glue strings of order $m$. Then

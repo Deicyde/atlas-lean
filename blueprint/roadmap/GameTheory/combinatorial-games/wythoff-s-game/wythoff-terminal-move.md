@@ -1,6 +1,6 @@
 # Moves of Wythoff's game with terminal positions
 
-**Moves of Wythoff's game with terminal positions.** Let $\ell$ be a natural number. In the
+Let $\ell$ be a natural number. In the
 game $K^\ell$, whose positions are pairs $(x, y)$ of natural numbers (the sizes of two piles of
 tokens), there is a move from $(x, y)$ to $(x', y')$ when $x + y > \ell$ and either $y' = y$ and
 $x' < x$, or $x' = x$ and $y' < y$, or $x = x' + k$ and $y = y' + k$ for some $k > 0$. Thus the

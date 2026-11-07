@@ -1,3 +1,3 @@
 # Dehn invariant of the empty edge list
 
-**Dehn invariant of the empty edge list.** The empty list of edges has Dehn invariant $0$.
+The empty list of edges has Dehn invariant $0$.

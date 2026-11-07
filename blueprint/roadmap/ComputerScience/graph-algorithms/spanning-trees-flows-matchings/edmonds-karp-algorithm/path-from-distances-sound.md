@@ -1,6 +1,6 @@
 # Soundness of distance-guided path reconstruction
 
-**Soundness of distance-guided path reconstruction.** Let $G$ be a directed adjacency graph on
+Let $G$ be a directed adjacency graph on
 a type $V$ whose Boolean test $\equiv$ on pairs of vertices holds exactly for equal vertices, let
 $d$ be a partial labelling of the vertices by natural numbers, let $t$ and $u$ be vertices, and let
 $k$ be a natural number. If the distance-guided reconstruction for $G$, $d$ and $t$ from $u$ with

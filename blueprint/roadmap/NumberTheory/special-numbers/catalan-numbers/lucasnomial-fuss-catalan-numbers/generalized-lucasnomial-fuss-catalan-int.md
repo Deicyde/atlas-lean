@@ -1,6 +1,6 @@
 # Integrality of generalized Lucasnomial Fuss–Catalan numbers
 
-**Integrality of generalized Lucasnomial Fuss–Catalan numbers.** Let $P$ and $Q$ be integers
+Let $P$ and $Q$ be integers
 with $\gcd(P, Q) = 1$, let $(U_m)_{m \ge 0}$ be the Lucas sequence of the first kind with
 parameters $P$ and $Q$, and suppose $U_m \ne 0$ for every $m \ge 1$. Then for all natural numbers
 $r \ge 1$, $a \ge 2$ and $n \ge 1$, the rational number

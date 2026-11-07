@@ -1,6 +1,6 @@
 # Abel–Bernoulli sum
 
-**Abel–Bernoulli sum.** Let $B_k(t)$ denote the $k$-th Bernoulli polynomial. For every natural
+Let $B_k(t)$ denote the $k$-th Bernoulli polynomial. For every natural
 number $n$ and all complex numbers $x$ and $y$ with $x \neq 0$,
 
 $$\sum_{l=0}^{n} \binom{n}{l} (x + l)^{l-1} B_{n-l}(y + n - l) = \frac{1}{x} B_n(y + x + n),$$

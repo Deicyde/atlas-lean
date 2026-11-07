@@ -1,6 +1,6 @@
 # Erdős Problem 1025 (Spencer; Conlon, Fox and Sudakov)
 
-**Erdős Problem 1025 (Spencer; Conlon, Fox and Sudakov).** For a natural number $n$, let $g(n)$
+For a natural number $n$, let $g(n)$
 be the largest $k$ such that every map $f$ from the unordered pairs of elements of
 $\{0, \dots, n-1\}$ to $\{0, \dots, n-1\}$ with $f(\{x, y\}) \notin \{x, y\}$ for all distinct
 $x, y$ admits a set $X$ of at least $k$ elements with $f(\{x, y\}) \notin X$ for all distinct

@@ -1,6 +1,6 @@
 # Height-indexed B-tree deletion
 
-**Height-indexed B-tree deletion.** Given a height $h$, a minimum degree $t$, a key $x$ of a
+Given a height $h$, a minimum degree $t$, a key $x$ of a
 linearly ordered key type and a tree $T$, the result is defined as follows. If $T$ is a leaf, the
 result is the leaf whose key list is that of $T$ with the first occurrence of $x$ erased,
 whatever $h$ is. If $T$ is an internal node and $h = 0$, the result is $T$. If $T$ is an internal

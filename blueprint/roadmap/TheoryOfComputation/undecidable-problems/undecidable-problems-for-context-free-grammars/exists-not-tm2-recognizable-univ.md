@@ -1,6 +1,6 @@
 # Universality of context-free grammars is not recognizable
 
-**Universality of context-free grammars is not recognizable.** There is a finite alphabet
+There is a finite alphabet
 $T$, with a primcodable encoding and decidable equality, such that the set of encoded
 context-free grammars over $T$ whose language contains every word over $T$ is not recognizable by
 a multi-stack Turing machine.

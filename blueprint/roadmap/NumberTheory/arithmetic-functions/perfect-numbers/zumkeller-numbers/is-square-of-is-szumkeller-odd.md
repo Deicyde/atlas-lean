@@ -1,6 +1,6 @@
 # Odd s-Zumkeller numbers are perfect squares
 
-**Odd s-Zumkeller numbers are perfect squares.** Every odd s-Zumkeller number is a perfect
+Every odd s-Zumkeller number is a perfect
 square.
 
 ## Sources

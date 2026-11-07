@@ -1,6 +1,6 @@
 # Every star schedule bounds the optimal time
 
-**Every star schedule bounds the optimal time.** Let $T(n, k, t)$ be the optimal time of
+Let $T(n, k, t)$ be the optimal time of
 the star model with $n$ persons, $k$ edges and $t$ torches. For every star schedule $\sigma$ with
 $n$ persons, $k$ edges and $t$ torches, $T(n, k, t)$ is at most the total duration of $\sigma$,
 the sum of the durations of its steps.

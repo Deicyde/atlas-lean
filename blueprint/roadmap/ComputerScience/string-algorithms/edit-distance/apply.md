@@ -1,6 +1,6 @@
 # Running an edit script
 
-**Running an edit script.** Over a type $\alpha$ with a boolean equality test, running an
+Over a type $\alpha$ with a boolean equality test, running an
 edit script on an input list processes the steps from left to right and either fails or
 returns an output list. A keep step with value $a$ consumes the next input value $b$ and
 outputs $a$; a deletion of $a$ consumes $b$ and outputs nothing; a substitution of $a$ by $c$

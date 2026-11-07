@@ -1,6 +1,6 @@
 # Large multiples of the gcd are nonnegative combinations
 
-**Large multiples of the gcd are nonnegative combinations.** Let $i$ and $j$ be positive
+Let $i$ and $j$ be positive
 integers. There is an $n_0$ such that every integer $m > n_0$ divisible by $\gcd(i, j)$ can be
 written as $m = ui + vj$ with nonnegative integers $u$ and $v$.
 

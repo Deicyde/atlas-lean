@@ -1,6 +1,6 @@
 # Repstrings
 
-**Repstrings.** For natural numbers $b$, $k$, $z$ and $t$, let $\ell$ be the number of base-$b$
+For natural numbers $b$, $k$, $z$ and $t$, let $\ell$ be the number of base-$b$
 digits of $k$. The $b$-repstring is
 
 $$k_b^{(z;t)} = \left\lfloor \frac{k\,(b^{(z+\ell)t} - 1)}{b^{z+\ell} - 1} \right\rfloor,$$

@@ -1,6 +1,6 @@
 # Totals at which every pebbling game is an N-game
 
-**Totals at which every pebbling game is an N-game.** Let $G$ be a simple graph on the
+Let $G$ be a simple graph on the
 vertices $0, \dots, n-1$ and let $k$ be a natural number. In the $(k+1:k)$-pebbling game on $G$,
 a move removes $k+1$ pebbles from a vertex and adds $k$ pebbles to an adjacent vertex. This is
 the set of natural numbers $m$ such that every position with $m$ pebbles in total (a number of

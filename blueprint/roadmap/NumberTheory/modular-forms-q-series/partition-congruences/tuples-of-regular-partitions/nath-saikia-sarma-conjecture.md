@@ -1,6 +1,6 @@
 # The Nath–Saikia–Sarma conjecture
 
-**The Nath–Saikia–Sarma conjecture.** Let $T_2(n)$ be the number of triples of 2-regular
+Let $T_2(n)$ be the number of triples of 2-regular
 partitions (partitions with no even part) whose sizes add up to $n$. Let $p \ge 5$ be a prime
 with Legendre symbol $\left(\frac{-2}{p}\right) = -1$, and let $t$ be a positive integer with
 $\gcd(t, 6) = 1$ and $p \mid t$. Then for every natural number $n$ and every $j$ with

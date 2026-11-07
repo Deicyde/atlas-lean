@@ -1,6 +1,6 @@
 # The cell-shift generator
 
-**The cell-shift generator.** For a layout $L$ with label block size $A$, $K$ stacks and $g$
+For a layout $L$ with label block size $A$, $K$ stacks and $g$
 symbol codes, tables $s_a, p, c, p_u$ and $N$ situations, the counter machine with the unit
 counters of the generator and a Boolean output stack, meant to start with $T$ units on
 $\mathrm{Tn}$, $H$ on $\mathrm{Hs}$ and everything else empty. Its precomputation puts $g$ units

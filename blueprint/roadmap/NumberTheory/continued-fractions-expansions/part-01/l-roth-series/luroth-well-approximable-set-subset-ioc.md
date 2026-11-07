@@ -1,6 +1,6 @@
 # Lüroth well approximable numbers lie in $(0, 1)$
 
-**Lüroth well approximable numbers lie in $(0, 1]$.** For every function $\psi$ from the
+For every function $\psi$ from the
 natural numbers to the reals, the set $L(\psi)$ of Lüroth $\psi$-well approximable numbers is
 contained in $(0, 1]$.
 

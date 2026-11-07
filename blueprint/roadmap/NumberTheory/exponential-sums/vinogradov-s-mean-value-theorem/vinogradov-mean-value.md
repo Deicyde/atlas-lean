@@ -1,6 +1,6 @@
 # Vinogradov's mean value theorem
 
-**Vinogradov's mean value theorem.** For all natural numbers $s$ and $k$ and every real
+For all natural numbers $s$ and $k$ and every real
 $\varepsilon > 0$ there is a constant $C$ such that
 $J_{s,k}(X) \le C (X^{s + \varepsilon} + X^{2s - k(k+1)/2 + \varepsilon})$ for all sufficiently
 large natural numbers $X$, where $J_{s,k}(X)$ is the number of pairs of tuples

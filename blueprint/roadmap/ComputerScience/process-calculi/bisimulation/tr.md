@@ -1,6 +1,6 @@
 # Weak bisimilarity answers a strong step with a weak step
 
-**Weak bisimilarity answers a strong step with a weak step.** Let $L$ be a labelled
+Let $L$ be a labelled
 transition system with a silent label $\tau$. A weak $\tau$-transition is a sequence of zero or
 more $\tau$-steps, and for $\mu \ne \tau$ a weak $\mu$-transition is zero or more $\tau$-steps,
 one $\mu$-step and zero or more $\tau$-steps. Two states are weakly bisimilar when some

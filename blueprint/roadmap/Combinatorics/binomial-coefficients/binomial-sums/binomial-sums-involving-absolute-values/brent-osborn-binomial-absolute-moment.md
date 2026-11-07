@@ -1,6 +1,6 @@
 # Brent–Osborn binomial absolute moment identity
 
-**Brent–Osborn binomial absolute moment identity.** For every natural number $n$,
+For every natural number $n$,
 
 $$\sum_{k=0}^{2n} \sum_{\ell=0}^{2n} \binom{2n}{k} \binom{2n}{\ell} \,
 \bigl| (k-n)^2 - (\ell-n)^2 \bigr| = 2n^2 \binom{2n}{n}^2.$$

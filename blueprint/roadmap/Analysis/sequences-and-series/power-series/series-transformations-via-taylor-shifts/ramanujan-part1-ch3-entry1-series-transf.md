@@ -1,6 +1,6 @@
 # Ramanujan's series transformation without the radius hypothesis
 
-**Ramanujan's series transformation without the radius hypothesis.** Let $R_1 > 1$, let
+Let $R_1 > 1$, let
 $f : \mathbb{C} \to \mathbb{C}$ be analytic on the open disc $|z| < R_1$, and let
 $Q_0, Q_1, Q_2, \ldots$ be complex numbers such that the double series
 

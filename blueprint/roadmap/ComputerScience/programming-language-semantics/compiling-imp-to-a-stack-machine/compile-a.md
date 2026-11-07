@@ -1,6 +1,6 @@
 # Compilation of arithmetic expressions
 
-**Compilation of arithmetic expressions.** The compiled code of an arithmetic expression is
+The compiled code of an arithmetic expression is
 the list of stack-machine instructions defined by recursion: a constant $n$ compiles to the
 single instruction push $n$, a variable $x$ to the single instruction load $x$, and the sum,
 difference or product of $a_1$ and $a_2$ to the code of $a_1$, then the code of $a_2$, then the

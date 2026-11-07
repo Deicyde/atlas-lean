@@ -1,6 +1,6 @@
 # Shift property of the generalized Padovan–Perrin fundamental system
 
-**Shift property of the generalized Padovan–Perrin fundamental system.** Let $R$ be a
+Let $R$ be a
 commutative ring, $k_1, k_2 \in R$, and let $p, s, j$ be natural numbers with $p \ge 1$ and
 $p + 1 \le j \le s + p - 1$. Write $v^{(\ell)}$ for the $\ell$-th sequence of the Fibonacci
 fundamental system of the $([k]; p; s)$-Padovan–Perrin recurrence. Then

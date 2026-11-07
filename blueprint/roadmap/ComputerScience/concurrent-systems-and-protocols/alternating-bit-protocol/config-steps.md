@@ -1,6 +1,6 @@
 # Alternating-bit configuration transitions
 
-**Alternating-bit configuration transitions.** The transitions of a configuration of the
+The transitions of a configuration of the
 alternating-bit protocol, listed as pairs of a label and a successor configuration, are obtained
 by composing the transitions of the sender, the data channel, the receiver and the
 acknowledgement channel in parallel, in that order (at each stage either side moves alone, or

@@ -1,6 +1,6 @@
 # An inserted key passes the membership test
 
-**An inserted key passes the membership test.** For every x-fast trie $t$ over $w$-bit keys
+For every x-fast trie $t$ over $w$-bit keys
 and every $w$-bit key $x$, the membership test at $x$ of the trie obtained by inserting $x$ into
 $t$ returns true.
 

@@ -1,6 +1,6 @@
 # Humps correspond to last-up prefixes of twice the height
 
-**Humps correspond to last-up prefixes of twice the height.** Use the steps $U = (1,1)$,
+Use the steps $U = (1,1)$,
 $F = (1,0)$ and $D = (1,-1)$. A Motzkin prefix of length $n$ ending at height $h$ is a word of
 $n$ steps that never goes below height $0$ and ends at height $h$; a Motzkin path is a Motzkin
 prefix ending at height $0$. A hump of height $k$ in a path is a pair of an up step and a later

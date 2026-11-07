@@ -1,6 +1,6 @@
 # Prime factorization of $\log F_9(n)$
 
-**Prime factorization of $\log F_9(n)$.** Let $n \ge 1$ be a natural number. For each divisor
+Let $n \ge 1$ be a natural number. For each divisor
 $m$ of $210$ put $N_m = 210n/m$, let $\mu$ be the Möbius function, and let
 $F_9(n) = \prod_{m \mid 210} \binom{10N_m}{N_m}^{\mu(m)}$. For a prime $p$ let $v_p$ denote the
 $p$-adic valuation and put

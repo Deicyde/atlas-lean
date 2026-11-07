@@ -1,6 +1,6 @@
 # Sanford's symmetric dilogarithm series
 
-**Sanford's symmetric dilogarithm series.** Write $L(x) = \sum_{m \ge 1} x^m/m^2 +
+Write $L(x) = \sum_{m \ge 1} x^m/m^2 +
 \frac{1}{2} \log x \log(1 - x)$ for the Rogers dilogarithm on $[0, 1]$ (with $\log 0 = 0$). For
 every real number $a \in (0, 1)$,
 

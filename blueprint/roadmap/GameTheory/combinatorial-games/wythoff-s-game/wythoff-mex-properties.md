@@ -1,6 +1,6 @@
 # Structure of the mex sequences of $K^\ell$
 
-**Structure of the mex sequences of $K^\ell$.** Let $\ell \ge 1$. Let $a_n$ be the least
+Let $\ell \ge 1$. Let $a_n$ be the least
 natural number $m > \ell$ with $m \ne a_i$ and $m \ne b_i$ for all $i < n$, where
 $b_i = a_i + i + \ell + 1$ (the mex sequences of the game $K^\ell$). Then $(a_n)$ and $(b_n)$
 are strictly increasing; a natural number $j$ satisfies $j > \ell$ if and only if $j = a_n$ or

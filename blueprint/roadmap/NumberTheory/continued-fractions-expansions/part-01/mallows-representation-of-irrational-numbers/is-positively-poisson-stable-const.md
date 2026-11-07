@@ -1,6 +1,6 @@
 # Constant sequences are positively Poisson stable
 
-**Constant sequences are positively Poisson stable.** For every set $A$ and every $c \in A$,
+For every set $A$ and every $c \in A$,
 the constant sequence $(c, c, c, \dots)$ is positively Poisson stable.
 
 ## Sources

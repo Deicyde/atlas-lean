@@ -1,6 +1,6 @@
 # Tabulated value iteration is correct
 
-**Tabulated value iteration is correct.** Let $M$ be a Markov decision process with states
+Let $M$ be a Markov decision process with states
 $\{0, \dots, m-1\}$, a nonempty finite set of actions and values in a field $K$ with a linear
 order, let $\gamma \in K$, and let $T$ be the Bellman optimality operator of $M$ with discount
 $\gamma$. For every $n \in \mathbb{N}$, every vector $v \in K^m$ and every state $s$, entry $s$ of

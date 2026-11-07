@@ -1,6 +1,6 @@
 # Second player wins Peaceable Bishops exactly when a side is even
 
-**Second player wins Peaceable Bishops exactly when a side is even.** For all natural numbers
+For all natural numbers
 $n \ge 1$ and $m \ge 1$, the second player wins Snort on the bishop's graph of the $n \times m$
 board (the Peaceable Bishops game) if and only if $n$ or $m$ is even.
 

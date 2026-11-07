@@ -1,6 +1,6 @@
 # Entries of a perfect hash table
 
-**Entries of a perfect hash table.** The entries of a two-level perfect hash table form
+The entries of a two-level perfect hash table form
 the list of the bindings $(k, v)$ held in its occupied secondary slots, listed bucket by bucket
 in increasing bucket order and, within each bucket, in increasing slot order.
 

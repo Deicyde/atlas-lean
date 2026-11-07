@@ -1,6 +1,6 @@
 # Hopcroft and Karp's bound on the number of phases
 
-**Hopcroft and Karp's bound on the number of phases.** In a bipartite graph with $b$ right
+In a bipartite graph with $b$ right
 vertices, run at most $2 \lfloor \sqrt{b} \rfloor + 2$ Hopcroft–Karp phases from the empty
 matching, stopping early when a phase finds no augmenting path. Then no matching of the graph has
 more edges than the resulting one.

@@ -1,6 +1,6 @@
 # $0$-Sylvester number of three consecutive star numbers
 
-**$0$-Sylvester number of three consecutive star numbers.** Write $S_m$ for the $m$-th star
+Write $S_m$ for the $m$-th star
 number $6m(m-1)+1$. For every natural number $n \ge 6$, the number of natural numbers that
 cannot be written as $x S_n + y S_{n+1} + z S_{n+2}$ with $x, y, z$ natural numbers is
 $n(15n^2 + 8n + 7)$.

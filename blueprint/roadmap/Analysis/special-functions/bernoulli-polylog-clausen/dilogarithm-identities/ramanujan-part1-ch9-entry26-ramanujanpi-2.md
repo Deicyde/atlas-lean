@@ -1,6 +1,6 @@
 # Ramanujan's Landen-type dilogarithm identity (Entry 26)
 
-**Ramanujan's Landen-type dilogarithm identity (Entry 26).** For real $\rho$ and $\alpha$
+For real $\rho$ and $\alpha$
 write $C(\rho, \alpha) = \sum_{j \ge 0} \rho^{2j+1} \cos((2j+1)\alpha) / (2j+1)^2$ and
 $S(\rho, \alpha) = \sum_{j \ge 0} \rho^{2j+1} \sin((2j+1)\alpha) / (2j+1)^2$. Let
 $x, y \in [0, 1]$ and $\theta, \varphi \in (-\pi, \pi]$ satisfy

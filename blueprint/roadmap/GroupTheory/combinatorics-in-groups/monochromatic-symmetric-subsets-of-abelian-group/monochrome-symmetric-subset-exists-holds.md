@@ -1,6 +1,6 @@
 # Monochromatic symmetric subsets in finite colourings (Jayadevan)
 
-**Monochromatic symmetric subsets in finite colourings (Jayadevan).** Let $G$ be an infinite
+Let $G$ be an infinite
 abelian group, written additively, let $\alpha$ be a cardinal with $\alpha < |G|$, and let $n$ be
 a natural number. For every colouring $\chi \colon G \to \{0, \dots, n - 1\}$ there are a set
 $A \subseteq G$ of cardinality $\alpha$ on which $\chi$ is constant and an element $g \in G$ such

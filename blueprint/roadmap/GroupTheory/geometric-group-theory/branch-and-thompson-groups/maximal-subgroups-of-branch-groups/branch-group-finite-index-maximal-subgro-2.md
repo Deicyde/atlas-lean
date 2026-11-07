@@ -1,6 +1,6 @@
 # A finitely generated branch group with a non-normal maximal subgroup of finite index
 
-**A finitely generated branch group with a non-normal maximal subgroup of finite index.** The
+The
 Kourovka 20.101 statement that every maximal subgroup of finite index of a finitely generated
 branch group is normal is false: some finitely generated branch group has a maximal subgroup of
 finite index that is not normal.

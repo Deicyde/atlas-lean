@@ -1,6 +1,6 @@
 # PP is contained in PSPACE
 
-**PP is contained in PSPACE.** Every decision problem in PP, the class of decision problems
+Every decision problem in PP, the class of decision problems
 decided with unbounded error in probabilistic polynomial time, belongs to PSPACE.
 
 ## Sources

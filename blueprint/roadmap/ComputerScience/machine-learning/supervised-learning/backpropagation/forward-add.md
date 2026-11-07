@@ -1,6 +1,6 @@
 # Splitting the forward pass
 
-**Splitting the forward pass.** Let $N$ be a feedforward network with layers
+Let $N$ be a feedforward network with layers
 $f_k : \mathbb{R}^{d_k} \to \mathbb{R}^{d_{k+1}}$ between Euclidean spaces, write $N_n$ for its
 forward pass through the first $n$ layers, and for $j \in \mathbb{N}$ write $N^{(j)}_m$ for the
 forward pass through the first $m$ layers of the shifted network with layers

@@ -1,6 +1,6 @@
 # Quadratic expansion of the log-likelihood ratio
 
-**Quadratic expansion of the log-likelihood ratio.** Let `θ̂ₙ` be `√n`-consistent
+Let `θ̂ₙ` be `√n`-consistent
 (`√n (θ̂ₙ - θ₀)` converges in distribution) and solve the likelihood equation with probability
 tending to one. If on the ball of radius `δ > 0` about `θ₀` the log-likelihood is twice
 differentiable in `θ` with `|∂³_θ log p θ x| ≤ M x` for an integrable `M`, and

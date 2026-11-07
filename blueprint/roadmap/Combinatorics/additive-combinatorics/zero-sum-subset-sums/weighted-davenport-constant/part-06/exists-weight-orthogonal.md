@@ -1,6 +1,6 @@
 # A weight-$m$ vector orthogonal to given vectors of $\mathbb{Z}_2^{m+a}$
 
-**A weight-$m$ vector orthogonal to given vectors of $\mathbb{Z}_2^{m+a}$.** Let $a$ and $m$ be
+Let $a$ and $m$ be
 natural numbers with $m$ even and $2^a \le m$, write $\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$, and
 let $v_1, \dots, v_a$ be vectors in $\mathbb{Z}_2^{m+a}$. Then there is a vector
 $w \in \mathbb{Z}_2^{m+a}$ with exactly $m$ coordinates equal to $1$ such that

@@ -1,6 +1,6 @@
 # Some odd $p$-group has exactly $p - 1$ conjugacy classes of maximum size
 
-**Some odd $p$-group has exactly $p - 1$ conjugacy classes of maximum size.** There exist an odd
+There exist an odd
 prime $p$ and a finite $p$-group with exactly $p - 1$ conjugacy classes of maximum size.
 
 ## Sources

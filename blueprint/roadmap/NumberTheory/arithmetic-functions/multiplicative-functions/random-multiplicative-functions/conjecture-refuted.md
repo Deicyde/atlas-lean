@@ -1,6 +1,6 @@
 # No iterated-logarithm constant for Rademacher multiplicative functions
 
-**No iterated-logarithm constant for Rademacher multiplicative functions.** The Rademacher
+The Rademacher
 LIL constant conjecture is false: there is no real constant $c > 0$ such that, for every
 probability space $(\Omega, \mu)$ and every family $(X_p)_p$ of independent, measurable random
 signs indexed by the primes, each uniform on $\{-1, 1\}$, for $\mu$-almost every $\omega$ the

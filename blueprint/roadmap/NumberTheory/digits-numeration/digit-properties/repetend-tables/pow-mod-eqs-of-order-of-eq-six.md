@@ -1,6 +1,6 @@
 # Powers of a base of order $6$ modulo $tp^k$
 
-**Powers of a base of order $6$ modulo $tp^k$.** Let $p$ be a prime with $p \equiv 1 \pmod 6$,
+Let $p$ be a prime with $p \equiv 1 \pmod 6$,
 let $k \ge 1$ and $t \in \{1, 2\}$ be natural numbers, and put $n = tp^k$. Let $b_1 < n$ be a
 natural number whose multiplicative order modulo $n$ is $6$, write $b_m = b_1^m \bmod n$, and put
 $H = 0$ if $t = 1$, $H = p^k$ if $t = 2$ and $b_1 < p^k$, and $H = -p^k$ if $t = 2$ and

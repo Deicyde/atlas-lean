@@ -1,6 +1,6 @@
 # Macaulay's theorem for monomials
 
-**Macaulay's theorem for monomials.** Let $k \ge 0$ and let $A$ be a finite set of
+Let $k \ge 0$ and let $A$ be a finite set of
 monomials of degree $k + 1$ in the variables $x_0, x_1, x_2, \dots$, given by their exponent
 vectors: finitely supported $a \colon \mathbb{N} \to \mathbb{N}$ with $\sum_j a_j = k + 1$.
 Suppose that $|A| = \sum_{i=0}^{k} \binom{d_i}{i + 1}$ for natural numbers

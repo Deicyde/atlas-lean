@@ -1,6 +1,6 @@
 # Coordinate shift between grid cubes
 
-**Coordinate shift between grid cubes.** Let $n$ and $d$ be natural numbers, let
+Let $n$ and $d$ be natural numbers, let
 $\sigma$ be a permutation of the index set $\{0, \dots, n-1\}^d$, let $k$ be an index and
 let $i < d$. The shift along axis $i$ determined by $\sigma$ and $k$ is the point
 $(\sigma(k)_i - k_i)/n$ of the circle $\mathbb{R}/\mathbb{Z}$, that is, the class modulo $1$

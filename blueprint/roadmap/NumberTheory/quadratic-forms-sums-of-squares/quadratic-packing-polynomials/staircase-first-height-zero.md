@@ -1,6 +1,6 @@
 # The zeroth staircase starts at height zero
 
-**The zeroth staircase starts at height zero.** For all natural numbers $m, n$, the first
+For all natural numbers $m, n$, the first
 height of the staircase $J_0$ of the sector of slope $n/m$ is $\bar y_0 = 0$; indeed the origin
 lies on $J_0$.
 

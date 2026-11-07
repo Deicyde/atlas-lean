@@ -1,6 +1,6 @@
 # Reciprocal digit sums weighted by powers of the logarithm
 
-**Reciprocal digit sums weighted by powers of the logarithm.** Let $q \ge 2$ and $j \ge 1$ be
+Let $q \ge 2$ and $j \ge 1$ be
 integers, and let $s_q(n)$ denote the sum of the base-$q$ digits of $n$. As the real number $x$
 tends to infinity,
 

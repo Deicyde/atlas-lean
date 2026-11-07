@@ -1,6 +1,6 @@
 # Spanning sets of Ohno–Okuda–Zudilin qMZVs
 
-**Spanning sets of Ohno–Okuda–Zudilin qMZVs.** Let $\mathcal{Z}_{q,1}$ and $\mathcal{Z}_q$ be
+Let $\mathcal{Z}_{q,1}$ and $\mathcal{Z}_q$ be
 the spaces $\mathcal{Z}_{q,d}$ of general qMZVs for $d = 1$ and $d = 0$. Then (i)
 $\mathcal{Z}_{q,1}$ is the $\mathbb{Q}$-span of the Ohno–Okuda–Zudilin qMZVs
 $\zeta_q^{\mathrm{OOZ}}(k_1, \dots, k_r)$ over all indices of natural numbers with $k_i \ge 1$ for

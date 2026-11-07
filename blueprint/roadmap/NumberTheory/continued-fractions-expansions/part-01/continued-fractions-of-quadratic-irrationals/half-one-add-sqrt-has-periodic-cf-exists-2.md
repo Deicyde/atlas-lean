@@ -1,6 +1,6 @@
 # Existence of $(1 + \sqrt{d})/2$ with a given symmetric period
 
-**Existence of $(1 + \sqrt{d})/2$ with a given symmetric period.** Let $l$ be a natural number
+Let $l$ be a natural number
 and $a_1, \dots, a_{l-1}$ positive integers with $a_i = a_{l-i}$ for $1 \le i < l$. If $l$ is odd,
 there are natural numbers $d$ and $a_0$ with $d \equiv 1 \pmod 4$, $d$ not a perfect square, and
 $(1 + \sqrt{d})/2 = [a_0; \overline{a_1, \dots, a_{l-1}, 2a_0 - 1}]$. If $l$ is even and positive,

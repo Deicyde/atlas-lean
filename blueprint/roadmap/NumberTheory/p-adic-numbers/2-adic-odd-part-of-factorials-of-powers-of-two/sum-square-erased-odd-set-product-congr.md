@@ -1,6 +1,6 @@
 # Squared products of the odd residues omitting one factor
 
-**Squared products of the odd residues omitting one factor.** Let $e \ge 1$ and let
+Let $e \ge 1$ and let
 $S_e$ be the set of odd positive integers below $2^e$. Then, as integers,
 
 $$\sum_{i \in S_e} \Bigl(\prod_{j \in S_e \setminus \{i\}} j\Bigr)^2 \equiv 2^{e-1} \pmod{2^e}.$$

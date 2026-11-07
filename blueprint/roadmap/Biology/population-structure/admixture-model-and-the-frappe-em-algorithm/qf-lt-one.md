@@ -1,3 +1,3 @@
 # Reference-allele probability is less than one
 
-**Reference-allele probability is less than one.** The reference-allele probability is below one.
+The reference-allele probability is below one.

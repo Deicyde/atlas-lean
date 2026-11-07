@@ -1,6 +1,6 @@
 # Toeplitz–Hessenberg determinants with Oresme entries
 
-**Toeplitz–Hessenberg determinants with Oresme entries.** For numbers $a_0, a_1, \dots, a_n$,
+For numbers $a_0, a_1, \dots, a_n$,
 let $\det(a_0; a_1, \dots, a_n)$ be the determinant of the $n \times n$ matrix whose $(i, j)$
 entry is $a_{i-j+1}$ if $j \le i + 1$ and $0$ otherwise, so that $a_0$ fills the superdiagonal.
 Let $O_k = k/2^k$ be the Oresme numbers, $F_n$ the Fibonacci numbers, $L_n$ the Lucas numbers,

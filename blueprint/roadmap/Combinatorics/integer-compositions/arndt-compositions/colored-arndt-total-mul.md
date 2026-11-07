@@ -1,6 +1,6 @@
 # Generating function for the total number of colored Arndt compositions
 
-**Generating function for the total number of colored Arndt compositions.** For $n \ge 0$ let
+For $n \ge 0$ let
 $c(n, k)$ be the number of colored Arndt compositions of $n$ with $k$ parts, and let
 $c(n) = \sum_{k=0}^{n} c(n, k)$ be the total number of colored Arndt compositions of $n$ (so
 $c(0) = 1$, counting the empty composition). Then, in the ring $\mathbb{Z}[[x]]$ of formal power

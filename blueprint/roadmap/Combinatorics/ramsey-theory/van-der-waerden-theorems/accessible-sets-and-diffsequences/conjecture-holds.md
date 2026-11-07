@@ -1,6 +1,6 @@
 # The primes are 2-accessible
 
-**The primes are 2-accessible.** The set of prime numbers is $2$-accessible: for every colouring
+The set of prime numbers is $2$-accessible: for every colouring
 $c : \mathbb{N} \to \{0, 1\}$ of the natural numbers with two colours and every length $k \ne 1$
 there is a sequence $x_0, \dots, x_{k-1}$ of natural numbers, all of the same colour, such that
 each difference $x_{i+1} - x_i$ is a prime number.

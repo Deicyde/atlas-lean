@@ -1,6 +1,6 @@
 # Counting digit tuples by their sum modulo a divisor of the base minus one
 
-**Counting digit tuples by their sum modulo a divisor of the base minus one.** Let $a$, $b$,
+Let $a$, $b$,
 $k$ and $q$ be natural numbers, all at least $1$, with $b \equiv 1 \pmod q$, and let $r$ be an
 integer. For natural numbers $x$ and $y$ write $N_b(k, q, r, x, y)$ for the number of tuples
 $(x_1, \dots, x_k)$ of natural numbers with $x \le x_1 < y$, $x_i < b$ for $2 \le i \le k$, and

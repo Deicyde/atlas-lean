@@ -1,6 +1,6 @@
 # Main term of the Selberg level weights
 
-**Main term of the Selberg level weights.** For a bounding sieve whose sifting primes have
+For a bounding sieve whose sifting primes have
 product $P$, with density function $\nu$, and a natural number $R \ge 1$, let $\lambda_d$ be the
 level-$R$ Selberg weights and
 $\Lambda_d = \sum_{d_1, d_2 \mid d,\ \operatorname{lcm}(d_1, d_2) = d} \lambda_{d_1} \lambda_{d_2}$

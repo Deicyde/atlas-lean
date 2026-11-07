@@ -1,6 +1,6 @@
 # Characterization of the Thue–Morse word among words starting with $abba$
 
-**Characterization of the Thue–Morse word among words starting with $abba$.** Let
+Let
 $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over $\{a, b\}$ that begins with $abba$ and in
 which both letters occur infinitely often, and let $r$ be its relative position function. Then
 there is an injective map $\sigma \colon \{a, b\} \to \mathbb{Z}$ with $r(n) = \sigma(\ell_{n-1})$

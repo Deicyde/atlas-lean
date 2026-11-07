@@ -1,6 +1,6 @@
 # Finiteness of the convex sub-Gaussian comparison constant
 
-**Finiteness of the convex sub-Gaussian comparison constant.** The comparison constant is
+The comparison constant is
 finite. Here the comparison constant is the infimum, in $[0, \infty]$, of the variance factors
 $C \in (0, \infty)$ such that every real random variable $X$ on a probability space that is
 integrable, has mean zero and satisfies $P(|X| > t) \le 2e^{-t^2/2}$ for all $t \ge 0$ satisfies

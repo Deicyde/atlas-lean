@@ -1,6 +1,6 @@
 # Dual submodule of an orthogonal product
 
-**Dual submodule of an orthogonal product.** Let $R$ be a commutative ring, let $S$ be a
+Let $R$ be a commutative ring, let $S$ be a
 field that is an $R$-algebra, and let $M_1$, $M_2$ be vector spaces over $S$ that are also
 $R$-modules compatibly with $R \to S$. For a bilinear form $B$ over $S$ on such a space $M$ and an
 $R$-submodule $N$ of $M$, the dual of $N$ is

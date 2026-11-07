@@ -1,6 +1,6 @@
 # Partial fraction decomposition over $\mathbb{C}$
 
-**Partial fraction decomposition over $\mathbb{C}$.** For every complex rational function
+For every complex rational function
 $f \in \mathbb{C}(X)$ there exist a polynomial $q \in \mathbb{C}[X]$, a finite set $S$ of monic
 polynomials of degree $1$ in $\mathbb{C}[X]$, and, for each $p \in S$, a natural number $m_p$
 and polynomials $g_{p,k} \in \mathbb{C}[X]$ for $k < m_p$, each of degree less than the degree

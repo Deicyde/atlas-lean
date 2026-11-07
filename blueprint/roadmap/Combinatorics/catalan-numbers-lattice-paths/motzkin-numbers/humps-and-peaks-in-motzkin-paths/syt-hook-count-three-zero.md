@@ -1,6 +1,6 @@
 # Hook tableaux of order 3 with row difference 0
 
-**Hook tableaux of order 3 with row difference 0.** The number $\mathrm{SYT}_0(2,1;3)$ of
+The number $\mathrm{SYT}_0(2,1;3)$ of
 standard Young tableaux of order $3$ in the $(2,1)$-hook whose first two rows have the same
 length equals $1$.
 

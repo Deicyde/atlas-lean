@@ -1,6 +1,6 @@
 # A binomial sum equal to a degenerate hyperharmonic number
 
-**A binomial sum equal to a degenerate hyperharmonic number.** Let $\lambda > 0$ and
+Let $\lambda > 0$ and
 $\alpha > 0$ be real numbers and let $r \le n$ be natural numbers. Write
 $\binom{\lambda}{j} = \lambda(\lambda - 1)\cdots(\lambda - j + 1)/j!$ and $H^s_{m,\lambda}(\alpha)$
 for the generalized degenerate hyperharmonic numbers of order $s$. Then

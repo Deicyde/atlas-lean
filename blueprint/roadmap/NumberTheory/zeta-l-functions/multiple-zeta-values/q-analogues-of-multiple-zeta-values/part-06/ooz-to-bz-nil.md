@@ -1,6 +1,6 @@
 # $U$ fixes the empty index
 
-**$U$ fixes the empty index.** Write $\mathbf{1}$ for the empty index. The map $U$ from OOZ to
+Write $\mathbf{1}$ for the empty index. The map $U$ from OOZ to
 BZ indices sends $\mathbf{1}$ to the $\mathbb{Q}$-linear combination of indices consisting of
 $\mathbf{1}$ with coefficient $1$; that is, $U(\mathbf{1}) = \mathbf{1}$.
 

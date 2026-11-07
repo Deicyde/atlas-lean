@@ -1,6 +1,6 @@
 # Linear Beck–Fiala conjecture
 
-**Linear Beck–Fiala conjecture.** This is the statement that there is a real constant
+This is the statement that there is a real constant
 $C > 0$ such that the following holds for all natural numbers $n$, $m$ and $t \ge 1$. Let
 $S_1, \dots, S_n$ be subsets of $\{1, \dots, m\}$ such that each $S_i$ has at most $t$ elements,
 each element of $\{1, \dots, m\}$ lies in at most $t$ of the sets $S_i$, and $S_i$ and $S_{i'}$

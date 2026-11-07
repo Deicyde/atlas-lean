@@ -1,6 +1,6 @@
 # Constant rescalings converge in every $C^k$ topology
 
-**Constant rescalings converge in every $C^k$ topology.** Let $M$ be a smooth manifold
+Let $M$ be a smooth manifold
 modelled on a finite-dimensional real normed space, let $g$ be a smooth Riemannian metric on
 $M$, and let $k \in \mathbb{N} \cup \{\infty\}$. Let $l$ be a filter on a type $\alpha$ and let
 $c_a > 0$ ($a \in \alpha$) be positive reals with $c_a \to 1$ along $l$. Then the rescaled

@@ -1,6 +1,6 @@
 # Isomorphic simple maximal subgroups need not be conjugate under automorphisms
 
-**Isomorphic simple maximal subgroups need not be conjugate under automorphisms.** There are a
+There are a
 finite simple group $G$ and isomorphic maximal subgroups $X$ and $Y$ of $G$, both simple groups,
 such that no automorphism $\varphi$ of $G$ satisfies $\varphi(X) = Y$. That is, the answer to
 Kourovka Problem 18.115 is negative.

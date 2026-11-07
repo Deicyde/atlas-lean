@@ -1,6 +1,6 @@
 # Real Zeckendorf expansions
 
-**Real Zeckendorf expansions.** Let $L = (e_1, \dots, e_N)$ be a list of natural numbers with
+Let $L = (e_1, \dots, e_N)$ be a list of natural numbers with
 $N \ge 2$ and $e_1 \ne 0$, and let $E^*$ be its $L^*$-collection; indices of coefficient functions
 and sequences start at $0$. There is a unique strictly decreasing sequence $(Q_m)_{m \ge 0}$ in
 $(0, 1)$ such that $\varepsilon \mapsto \sum_k \varepsilon_k Q_k$ is a bijection from $E^*$ onto

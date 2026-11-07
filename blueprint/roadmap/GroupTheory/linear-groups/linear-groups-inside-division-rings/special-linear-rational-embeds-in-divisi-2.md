@@ -1,6 +1,6 @@
 # SL(2, ℚ) does not embed in a division ring
 
-**SL(2, ℚ) does not embed in a division ring.** There is no division ring $D$ with an injective
+There is no division ring $D$ with an injective
 group homomorphism $\mathrm{SL}(2, \mathbb{Q}) \to D^\times$: the group $\mathrm{SL}(2, \mathbb{Q})$
 does not embed in the multiplicative group of any division ring.
 

@@ -1,6 +1,6 @@
 # Consecutive hyper-Leonardo numbers of order one
 
-**Consecutive hyper-Leonardo numbers of order one.** For every natural number $n$, the
+For every natural number $n$, the
 hyper-Leonardo numbers $Le^{(1)}_n$ of order $1$ satisfy
 $Le^{(1)}_{n+1} = Le^{(1)}_n + L_{1,n+1}$, where $L_{1,n}$ is the generalized Leonardo number
 with $k = 1$, that is, the Leonardo number $Le_n$.

@@ -1,6 +1,6 @@
 # Wins-guided move
 
-**Wins-guided move.** Let $M$ be a Kripke model, and identify each fixpoint-free formula with
+Let $M$ be a Kripke model, and identify each fixpoint-free formula with
 its embedding into the μ-calculus. For a μ-calculus formula $\psi$, a world $w$ and a stack $s$
 of fixpoint binders, the Wins-guided move at the game position $(\psi, w, s)$ is the following
 position. If $s$ is empty and $\psi$ is a fixpoint-free disjunction $\psi_1 \lor \psi_2$, it is

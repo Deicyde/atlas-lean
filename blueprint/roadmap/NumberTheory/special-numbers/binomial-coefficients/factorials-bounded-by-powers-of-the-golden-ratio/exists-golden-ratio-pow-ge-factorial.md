@@ -1,6 +1,6 @@
 # Every factorial is at most a positive power of the golden ratio
 
-**Every factorial is at most a positive power of the golden ratio.** Let $\varphi$ be the
+Let $\varphi$ be the
 golden ratio. For every natural number $n$ there is an integer $m \ge 1$ with $n! \le \varphi^m$.
 
 Thus the set of positive integers $m$ with $n! \le \varphi^m$, whose least element is the

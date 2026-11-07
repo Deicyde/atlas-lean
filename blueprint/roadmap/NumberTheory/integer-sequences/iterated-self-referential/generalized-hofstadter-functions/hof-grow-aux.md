@@ -1,6 +1,6 @@
 # Bounded growth of a word under $\tau_k$
 
-**Bounded growth of a word under $\tau_k$.** Let $\tau_k$ be the substitution sending the
+Let $\tau_k$ be the substitution sending the
 letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, extended letterwise to words. Given
 $n$, a bound $f$ and a word $w$, the result is $w$ if $f = 0$ or $w$ has more than $n$ letters,
 and otherwise it is the result for the bound $f - 1$ and the word $\tau_k(w)$. Thus $\tau_k$ is

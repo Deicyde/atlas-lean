@@ -1,6 +1,6 @@
 # The first pre-phase loop of the wrapped machine
 
-**The first pre-phase loop of the wrapped machine.** Write $\Gamma'$ for the stack alphabet of
+Write $\Gamma'$ for the stack alphabet of
 Mathlib's code evaluator. Let $c$ be a code, $a$, $r$, $x$ and $y$ lists of symbols of $\Gamma'$,
 $b$ a list of bits of length $k$ and $v$ an internal state (a symbol of $\Gamma'$ or none), and
 write $\beta(b)$ for $b$ with each bit $\mathrm{true}$ replaced by the symbol bit1 and each bit

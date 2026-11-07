@@ -1,6 +1,6 @@
 # Erdős Problem 395 holds: the reverse Littlewood–Offord bound
 
-**Erdős Problem 395 holds: the reverse Littlewood–Offord bound.** There is a real constant
+There is a real constant
 $c > 0$ such that for every natural number $n \ge 1$ and all complex numbers $z_1, \dots, z_n$
 with $|z_i| = 1$ for every $i$, at least a $c/n$ fraction of the $2^n$ sign vectors
 $(\varepsilon_1, \dots, \varepsilon_n) \in \{-1, 1\}^n$ satisfy

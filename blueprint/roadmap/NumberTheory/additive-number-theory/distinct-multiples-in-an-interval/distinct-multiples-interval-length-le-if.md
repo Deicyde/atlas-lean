@@ -1,6 +1,6 @@
 # Characterization of the least interval length
 
-**Characterization of the least interval length.** For natural numbers $n$ and $m$, let
+For natural numbers $n$ and $m$, let
 $f(n, m)$ be the least natural number $K$ such that the interval $(m, m + K]$ contains distinct
 multiples of $1, \dots, n$. Then for every natural number $L$, $f(n, m) \le L$ if and only if
 the interval $(m, m + L]$ contains distinct multiples of $1, \dots, n$.

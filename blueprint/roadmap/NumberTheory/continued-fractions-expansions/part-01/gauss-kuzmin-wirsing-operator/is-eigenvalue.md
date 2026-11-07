@@ -1,6 +1,6 @@
 # Eigenvalues of the Gauss–Kuzmin–Wirsing operator on continuous functions
 
-**Eigenvalues of the Gauss–Kuzmin–Wirsing operator on continuous functions.** A real number
+A real number
 $\lambda$ is an eigenvalue of the Gauss–Kuzmin–Wirsing operator in the continuous model when
 there is a function $f : \mathbb{R} \to \mathbb{R}$, continuous on $[0, 1]$, bounded on
 $[0, 1]$ and not identically zero on $[0, 1]$, such that for every $x \in [0, 1]$

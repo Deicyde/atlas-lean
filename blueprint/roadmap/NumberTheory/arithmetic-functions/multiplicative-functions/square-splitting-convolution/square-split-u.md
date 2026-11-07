@@ -1,6 +1,6 @@
 # Squarefree part
 
-**Squarefree part.** For a natural number $n \ge 1$ with prime factorization
+For a natural number $n \ge 1$ with prime factorization
 $n = \prod_p p^{e_p}$, its squarefree part is $u(n) = \prod_p p^{e_p \bmod 2}$, the product of the
 primes dividing $n$ to an odd power. By convention $u(0) = 1$.
 

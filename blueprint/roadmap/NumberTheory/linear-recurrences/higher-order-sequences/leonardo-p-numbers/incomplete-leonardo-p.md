@@ -1,6 +1,6 @@
 # Incomplete Leonardo p-numbers
 
-**Incomplete Leonardo p-numbers.** For natural numbers $p$, $n$ and $k$, the incomplete
+For natural numbers $p$, $n$ and $k$, the incomplete
 Leonardo $p$-number is the integer
 
 $$

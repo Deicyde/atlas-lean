@@ -1,6 +1,6 @@
 # The discriminant $d(\alpha, g)$ attached to $n = 2^\alpha g h^2$
 
-**The discriminant $d(\alpha, g)$ attached to $n = 2^\alpha g h^2$.** For natural numbers
+For natural numbers
 $\alpha$ and $g$, let $d(\alpha, g) = -8g$ if $\alpha$ is odd; if $\alpha$ is even, let
 $d(\alpha, g) = -4g$ when $g \equiv 1 \pmod 4$ and $d(\alpha, g) = -g$ otherwise.
 

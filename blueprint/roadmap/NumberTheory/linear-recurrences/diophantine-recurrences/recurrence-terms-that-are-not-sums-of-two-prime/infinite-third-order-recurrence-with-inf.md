@@ -1,6 +1,6 @@
 # Third-order recurrences with infinitely many terms not sums of two prime powers
 
-**Third-order recurrences with infinitely many terms not sums of two prime powers.** There
+There
 are infinitely many sequences $(s_n)_{n \ge 0}$ of positive integers with all of the following
 properties: each value is taken by $s_n$ for only finitely many $n$; there are integers
 $c_0, c_1, c_2$ with $c_0 \ne 0$ and $s_{n+3} = c_0 s_n + c_1 s_{n+1} + c_2 s_{n+2}$ for all

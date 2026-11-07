@@ -1,6 +1,6 @@
 # The Newtonian kernel is harmonic away from the origin
 
-**The Newtonian kernel is harmonic away from the origin.** Let $m > 2$ be a natural number.
+Let $m > 2$ be a natural number.
 The function $x \mapsto 1/|x|^{m-2}$ on the Euclidean space $\mathbb{R}^m$, where $|x|$ is the
 Euclidean norm, is harmonic on $\mathbb{R}^m \setminus \{0\}$.
 

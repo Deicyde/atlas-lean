@@ -1,6 +1,6 @@
 # The init family of an encoding is a layout-level init family
 
-**The init family of an encoding is a layout-level init family.** Let $E$ be an encoding of a
+Let $E$ be an encoding of a
 machine $M$, let $x$ and $Y$ be lists of symbols of the input stack of $M$, and let $m, T, H$ be
 natural numbers. The init family of $E$ for $x, Y, m, T, H$ equals the layout-level init family
 over the layout of $E$ with start code the code of the pair of the main label and the initial

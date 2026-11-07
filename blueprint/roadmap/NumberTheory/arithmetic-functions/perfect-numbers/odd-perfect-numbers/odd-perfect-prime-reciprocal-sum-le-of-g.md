@@ -1,6 +1,5 @@
 # Cohen–Hagis–Suryanarayana bounds on the prime reciprocal sum of an odd perfect number
 
-**Cohen–Hagis–Suryanarayana bounds on the prime reciprocal sum of an odd perfect number.**
 Let $n$ be an odd perfect number and $T(n) = \sum_{p \mid n} 1/p$, the sum over the primes $p$
 dividing $n$. If $\gcd(15, n) = 1$ then $T(n) \le 0.693148$; if $\gcd(15, n) = 3$ then
 $T(n) \le 0.657304$; if $\gcd(15, n) = 5$ then $T(n) \le 0.678036$; and if $\gcd(15, n) = 15$

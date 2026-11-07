@@ -1,6 +1,6 @@
 # Hamming bound for linear codes
 
-**Hamming bound for linear codes.** Let $F$ be a finite field with $q$ elements and $C$ a
+Let $F$ be a finite field with $q$ elements and $C$ a
 linear code of length $n$ and dimension $k$ over $F$. If $t$ is a natural number such that $2t$ is
 less than the minimum distance of $C$, then
 

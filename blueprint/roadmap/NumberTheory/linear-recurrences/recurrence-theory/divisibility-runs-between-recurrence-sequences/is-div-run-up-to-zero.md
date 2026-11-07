@@ -1,6 +1,6 @@
 # Divisibility runs of length zero
 
-**Divisibility runs of length zero.** For integers $x, y, a, b, c$, let $(P_n)_{n \ge 0}$ be
+For integers $x, y, a, b, c$, let $(P_n)_{n \ge 0}$ be
 the Gibonacci sequence with $P_0 = x$ and $P_1 = y$, let $(Q_n)_{n \ge 0}$ be the generalized
 Tribonacci sequence with $Q_0 = a$, $Q_1 = b$ and $Q_2 = c$, and say $(x, y; a, b, c)$ has a
 divisibility run of length at least $L$ when $P_i \ne 0$ and $P_i \mid Q_i$ for every natural

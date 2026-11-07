@@ -1,6 +1,6 @@
 # Bounded faces of a finite lattice graph are counted by its cycle rank
 
-**Bounded faces of a finite lattice graph are counted by its cycle rank.** For a
+For a
 `PlanarZ2Subgraph` `P`, the finite components of the face-region graph `whb_faceRegion` of its
 image (faces of `ℤ²`, two adjacent faces joined unless the primal edge between them lies in `P`)
 are equinumerous with `Fin (nullity P.G)`, so the number of bounded faces is `|E| - |V| + c`.

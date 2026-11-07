@@ -1,6 +1,6 @@
 # Two-sequence Gelin–Cesàro derivative identity for gibonacci sequences
 
-**Two-sequence Gelin–Cesàro derivative identity for gibonacci sequences.** Let
+Let
 $G, H : \mathbb{Z} \to \mathbb{R}$, written $j \mapsto G_j$ and $j \mapsto H_j$, satisfy
 $G_{j+2} = G_{j+1} + G_j$ and $H_{j+2} = H_{j+1} + H_j$ for every integer $j$, and put
 $e_G = G_0^2 - G_1^2 + G_0 G_1$. Then for all integers $k$ and $r$,

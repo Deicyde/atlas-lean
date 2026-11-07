@@ -1,6 +1,6 @@
 # Oriented triangle area
 
-**Oriented triangle area.** Let $\omega$ be the area form of the given orientation of the
+Let $\omega$ be the area form of the given orientation of the
 Euclidean plane, so that $\omega(u, v)$ is the signed area of the parallelogram spanned by the
 vectors $u$ and $v$. For points $a$, $b$, $c$ of the plane, the oriented area of the triangle
 with vertices $a$, $b$, $c$ is the real number $\omega(a - c, b - c) / 2$.

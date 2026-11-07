@@ -1,6 +1,6 @@
 # Convergent matrices of reversed and extended strings
 
-**Convergent matrices of reversed and extended strings.** Let $a = (a_1, \ldots, a_n)$ be a
+Let $a = (a_1, \ldots, a_n)$ be a
 finite string of positive integers with convergent matrix
 $C(a) = \begin{pmatrix} p' & p \\ q' & q \end{pmatrix}$, let $t \ge 1$ be an integer, and write
 $\overleftarrow{a} = (a_n, \ldots, a_1)$ for the reversed string. Then

@@ -1,6 +1,6 @@
 # Action of the rectangle group on grid cells
 
-**Action of the rectangle group on grid cells.** Let $n, m \in \mathbb{N}$ and view the cells
+Let $n, m \in \mathbb{N}$ and view the cells
 of the $n \times m$ grid as $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z}$. Write the
 elements of the dihedral group of order $8$ as rotations $r_i$ and reflections $sr_i$ for
 $i \in \mathbb{Z}/4\mathbb{Z}$. Each element acts on cells as follows: $r_0$ by the identity,

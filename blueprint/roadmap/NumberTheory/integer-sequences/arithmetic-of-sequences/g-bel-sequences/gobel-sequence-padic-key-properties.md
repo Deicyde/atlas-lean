@@ -1,6 +1,6 @@
 # Key $p$-adic properties of the $(k, l)$-Göbel sequences
 
-**Key $p$-adic properties of the $(k, l)$-Göbel sequences.** Let $p$ be a prime, let $N \ge 1$
+Let $p$ be a prime, let $N \ge 1$
 be a natural number, let $r = \nu_p(N!)$, where $\nu_p$ is the $p$-adic valuation on $\mathbb{Q}$
 (with $\nu_p(0) = 0$), and write $g_{k,l}$ for the $(k, l)$-Göbel sequence. Write
 $\mathbb{Z}_{(p)}$ for the set of rational numbers $x$ with $\nu_p(x) \ge 0$, and for an integer

@@ -1,6 +1,6 @@
 # Uniqueness from rectangle values
 
-**Uniqueness from rectangle values.** Let $F : \mathbb{R}^d \to \mathbb{R}$, and let $\mu_1$
+Let $F : \mathbb{R}^d \to \mathbb{R}$, and let $\mu_1$
 and $\mu_2$ be measures on $\mathbb{R}^d$. Suppose that for all $a, b \in \mathbb{R}^d$ with
 $a_i \le b_i$ for every $i$, both $\mu_1$ and $\mu_2$ assign the rectangle
 $(a, b] = \prod_{i=1}^d (a_i, b_i]$ the mass $\max(\Delta_{a,b} F, 0)$, where $\Delta_{a,b} F$

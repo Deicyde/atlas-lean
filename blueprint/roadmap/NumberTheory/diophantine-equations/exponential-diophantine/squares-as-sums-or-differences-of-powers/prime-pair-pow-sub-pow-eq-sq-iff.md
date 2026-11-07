@@ -1,6 +1,6 @@
 # Squares of the form $(2p - 1)^x - p^y$ for prime pairs
 
-**Squares of the form $(2p - 1)^x - p^y$ for prime pairs.** Let $p$ be a prime with
+Let $p$ be a prime with
 $p \equiv 3 \pmod 4$ such that $2p - 1$ is prime. Then non-negative integers $x$, $y$ and $z$
 satisfy $(2p - 1)^x - p^y = z^2$ if and only if $(x, y, z) = (0, 0, 0)$, or $p = 3$ and
 $(x, y, z) = (2, 2, 4)$, or $p = 2t^2 + 1$ for some non-negative integer $t$ and

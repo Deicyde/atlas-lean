@@ -1,6 +1,6 @@
 # Number of isomorphism classes of virtual racks on a rack
 
-**Number of isomorphism classes of virtual racks on a rack.** For a rack $R$, let
+For a rack $R$, let
 $\operatorname{Aut} R$ be its group of rack automorphisms; a virtual structure on $R$ is an
 element $f \in \operatorname{Aut} R$, and $(R, f)$ is the corresponding virtual rack. The number
 $v(R)$ is the number of classes of virtual structures on $R$, where $f, g \in \operatorname{Aut} R$

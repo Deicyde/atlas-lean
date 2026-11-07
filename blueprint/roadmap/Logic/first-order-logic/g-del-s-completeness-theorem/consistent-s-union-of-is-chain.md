@@ -1,6 +1,6 @@
 # Unions of chains of consistent sets are consistent
 
-**Unions of chains of consistent sets are consistent.** If $C$ is a nonempty family of
+If $C$ is a nonempty family of
 sets of formulas that is totally ordered by inclusion and every member of $C$ is consistent,
 then the union $\bigcup C$ is consistent.
 

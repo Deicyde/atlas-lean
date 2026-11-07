@@ -1,6 +1,6 @@
 # A non-squarefree base-two pseudoprime beyond $10^{13}$ exists
 
-**A non-squarefree base-two pseudoprime beyond $10^{13}$ exists.** There is a natural number
+There is a natural number
 $n > 10^{13}$ that is a Fermat pseudoprime to base $2$ (a composite number $n > 1$ with
 $n \mid 2^{n-1} - 1$) and is not squarefree.
 

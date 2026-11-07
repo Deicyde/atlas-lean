@@ -1,6 +1,6 @@
 # Options in Slow A-Nim
 
-**Options in Slow A-Nim.** Let $A$ be a finite set of natural numbers and $p$ a position on
+Let $A$ be a finite set of natural numbers and $p$ a position on
 $n$ stacks. The options of $p$ in Slow$A$-Nim are the positions obtained from $p$ by choosing a
 nonempty set $S$ of stacks with $|S| \in A$, each holding at least one token, and removing one
 token from each stack of $S$.

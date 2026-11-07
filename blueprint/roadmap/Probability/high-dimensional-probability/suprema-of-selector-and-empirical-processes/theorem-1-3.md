@@ -1,6 +1,6 @@
 # Park–Pham theorem on positive empirical processes
 
-**Park–Pham theorem on positive empirical processes.** There is a real number $L > 0$ with the
+There is a real number $L > 0$ with the
 following property. Let $N > 0$, let $\mathbb{T}$ be a Polish space with its Borel
 $\sigma$-algebra and a probability measure $\nu$, and let $Y_1, \dots, Y_N$ be independent random
 variables on a measure space $(\Omega, P)$ with values in $\mathbb{T}$, each with law $\nu$. For

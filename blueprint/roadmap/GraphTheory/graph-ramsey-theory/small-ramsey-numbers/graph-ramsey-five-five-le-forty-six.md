@@ -1,6 +1,6 @@
 # The Angeltveit–McKay upper bound for $R(5, 5)$
 
-**The Angeltveit–McKay upper bound for $R(5, 5)$.** The classical Ramsey number
+The classical Ramsey number
 $R(5, 5)$ is at most $46$.
 
 ## Sources

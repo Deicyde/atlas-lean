@@ -1,6 +1,6 @@
 # Central scalars multiply via the class structure constants
 
-**Central scalars multiply via the class structure constants.** Let $\rho$ be an irreducible
+Let $\rho$ be an irreducible
 representation of a finite group $G$ on a finite-dimensional complex vector space $V$, and let
 $\omega_\rho(C)$ be the scalar by which the class sum of a conjugacy class $C$ acts on $V$. Fix
 a representative $g_C$ of each conjugacy class $C$. For conjugacy classes $C_1$ and $C_2$,

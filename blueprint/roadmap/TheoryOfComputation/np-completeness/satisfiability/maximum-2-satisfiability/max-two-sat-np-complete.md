@@ -1,6 +1,6 @@
 # MAXIMUM 2-SATISFIABILITY is NP-complete
 
-**MAXIMUM 2-SATISFIABILITY is NP-complete.** The decision problem MAXIMUM 2-SATISFIABILITY
+The decision problem MAXIMUM 2-SATISFIABILITY
 over bitstrings lies in NP, and every decision problem in NP has a polynomial-time many-one
 reduction to it.
 

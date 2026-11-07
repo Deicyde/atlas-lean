@@ -1,6 +1,6 @@
 # The number of unrooted binary phylogenetic trees
 
-**The number of unrooted binary phylogenetic trees.** On `n ≥ 3` labeled taxa there are
+On `n ≥ 3` labeled taxa there are
 `(2 n - 5)‼ = 1 · 3 ⋯ (2 n - 5)` unrooted binary phylogenetic trees up to label-preserving
 isomorphism.
 

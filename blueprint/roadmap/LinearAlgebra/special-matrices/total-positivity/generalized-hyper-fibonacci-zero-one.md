@@ -1,6 +1,6 @@
 # Initial values of generalized hyper-Fibonacci numbers
 
-**Initial values of generalized hyper-Fibonacci numbers.** Let $p, a, b$ be integers and let
+Let $p, a, b$ be integers and let
 $W^{(r)}_{p,n}$ denote the generalized hyper-Fibonacci numbers. For every natural number $r$,
 $W^{(r)}_{p,0} = a$ and $W^{(r)}_{p,1} = p \cdot a \cdot r + b$.
 

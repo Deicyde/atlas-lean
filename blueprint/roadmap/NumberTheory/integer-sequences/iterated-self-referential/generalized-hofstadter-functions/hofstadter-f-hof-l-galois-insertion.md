@@ -1,6 +1,6 @@
 # Galois insertion between iterated Hofstadter functions
 
-**Galois insertion between iterated Hofstadter functions.** Let $k \ge 1$ and $j \ge 0$. Let
+Let $k \ge 1$ and $j \ge 0$. Let
 $F_k$ be the generalized Hofstadter function, let $x_k[0]\,x_k[1] \cdots$ be the fixed point,
 beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every other letter
 $i$ to $i + 1$, let $L_k(m)$ be the length of the word $\tau_k(x_k[0] \cdots x_k[m-1])$, and

@@ -1,6 +1,6 @@
 # Points where $L_k^j$ exceeds $L_{k+1}^{j+1}$
 
-**Points where $L_k^j$ exceeds $L_{k+1}^{j+1}$.** Let $x_k[0]\,x_k[1] \cdots$ be the fixed
+Let $x_k[0]\,x_k[1] \cdots$ be the fixed
 point, beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every
 other letter $i$ to $i + 1$, let $L_k(n)$ be the length of the word
 $\tau_k(x_k[0] \cdots x_k[n-1])$, and write $L_k^j$ for the $j$-fold iterate of $L_k$. Let

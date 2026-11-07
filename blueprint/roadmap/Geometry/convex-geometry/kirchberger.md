@@ -1,6 +1,6 @@
 # Kirchberger's theorem
 
-**Kirchberger's theorem.** Let $A$ and $B$ be finite sets of points in $\mathbb{R}^d$. Then $A$
+Let $A$ and $B$ be finite sets of points in $\mathbb{R}^d$. Then $A$
 and $B$ are strictly separated by a hyperplane, that is, there are a nonzero vector
 $w \in \mathbb{R}^d$ and a real number $\beta$ with $\langle w, a \rangle < \beta$ for all $a \in A$
 and $\beta < \langle w, c \rangle$ for all $c \in B$, if and only if for every set

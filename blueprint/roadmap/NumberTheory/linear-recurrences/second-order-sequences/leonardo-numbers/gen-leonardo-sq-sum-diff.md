@@ -1,6 +1,6 @@
 # Sum-and-difference square identities for generalized Leonardo numbers
 
-**Sum-and-difference square identities for generalized Leonardo numbers.** For every
+For every
 integer $k$ and all natural numbers $m$, $n$ with $1 \le n < m$, the generalized Leonardo
 numbers $L_{k,n}$ satisfy
 

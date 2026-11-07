@@ -1,6 +1,6 @@
 # The omega homomorphism on symmetric polynomials
 
-**The omega homomorphism on symmetric polynomials.** Let $R$ be a commutative ring and let $V$
+Let $R$ be a commutative ring and let $V$
 be a finite set with $n$ elements. A polynomial in $R[x_v : v \in V]$ is symmetric if it is
 unchanged by every permutation of the variables. For $k \ge 0$, the elementary symmetric polynomial
 $e_k$ is the sum of $\prod_{v \in T} x_v$ over all $k$-element subsets $T \subseteq V$, and the

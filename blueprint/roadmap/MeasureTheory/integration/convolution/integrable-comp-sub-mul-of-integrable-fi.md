@@ -1,6 +1,6 @@
 # Integrability of the convolution integrand
 
-**Integrability of the convolution integrand.** Let $d \in \mathbb{N}$ and let
+Let $d \in \mathbb{N}$ and let
 $f, g : \mathbb{R}^d \to \mathbb{R}$ be Lebesgue integrable. Identify $\mathbb{R}^{2d}$ with
 $\mathbb{R}^d \times \mathbb{R}^d$ by writing a point as $(x, y)$, where $x$ consists of its first
 $d$ coordinates and $y$ of its last $d$ coordinates. Then the function

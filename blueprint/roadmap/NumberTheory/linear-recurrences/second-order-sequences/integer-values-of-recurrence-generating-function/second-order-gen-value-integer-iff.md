@@ -1,6 +1,6 @@
 # Integrality criterion at a rational point
 
-**Integrality criterion at a rational point.** Let $a, b, p$ be integers with $p \ne 0$ and let
+Let $a, b, p$ be integers with $p \ne 0$ and let
 $A(x) = \frac{a(1 - px) + bx}{1 - px - x^2}$ for rational $x$. Let $r, s$ be coprime integers
 with $s \ne 0$ and put $D = s^2 - prs - r^2$. Then $A(r/s)$ is an integer if and only if
 $b \equiv -art \pmod{D}$ for every integer $t$ with $st \equiv 1 \pmod{D}$.

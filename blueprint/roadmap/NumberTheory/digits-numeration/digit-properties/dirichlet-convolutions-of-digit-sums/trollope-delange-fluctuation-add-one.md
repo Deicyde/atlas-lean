@@ -1,6 +1,6 @@
 # Periodicity of the Trollope–Delange fluctuation
 
-**Periodicity of the Trollope–Delange fluctuation.** For every natural number $q$ and every
+For every natural number $q$ and every
 real number $x$, the Trollope–Delange fluctuation $F$ in base $q$ satisfies $F(x + 1) = F(x)$.
 
 ## Sources

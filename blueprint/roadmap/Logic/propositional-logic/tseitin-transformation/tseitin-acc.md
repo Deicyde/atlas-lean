@@ -1,6 +1,6 @@
 # Linear-time Tseitin builder
 
-**Linear-time Tseitin builder.** Fix a map $\iota$ from atoms to natural numbers. Given a
+Fix a map $\iota$ from atoms to natural numbers. Given a
 formula $A$, a gate number $k$ and a clause list $\mathit{acc}$, the builder returns a literal
 naming $A$, a clause list and the next unused gate number. For an atom $a$ it returns the
 positive literal of variable $2\iota(a)$, the list $\mathit{acc}$ unchanged, and $k$. For

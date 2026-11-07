@@ -1,6 +1,6 @@
 # A pebbling move removes exactly one pebble
 
-**A pebbling move removes exactly one pebble.** Let $n, k \in \mathbb{N}$, let $a$ assign
+Let $n, k \in \mathbb{N}$, let $a$ assign
 $a(x) \in \mathbb{N}$ pebbles to each vertex $x \in \{0, \dots, n-1\}$, and let $i \ne j$ be
 vertices with $a(i) \ge k + 1$. Then the pebbling step from $i$ to $j$, which removes $k + 1$
 pebbles from $i$ and adds $k$ pebbles to $j$, gives a position $b$ with

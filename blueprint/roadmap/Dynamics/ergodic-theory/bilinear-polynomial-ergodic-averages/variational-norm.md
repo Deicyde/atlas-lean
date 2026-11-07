@@ -1,6 +1,6 @@
 # Variational norm
 
-**Variational norm.** For a real number $r \ge 0$ and a sequence
+For a real number $r \ge 0$ and a sequence
 $a = (a_n)_{n \in \mathbb{N}}$ of complex numbers, the $r$-variational norm of $a$ is the
 element of $[0, \infty]$
 

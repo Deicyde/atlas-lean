@@ -1,6 +1,6 @@
 # Consistency of CCω
 
-**Consistency of CCω.** No closed term has type $\Pi (P : \mathrm{Prop}).\, P$: there is no term
+No closed term has type $\Pi (P : \mathrm{Prop}).\, P$: there is no term
 $t$ with $\vdash t : \Pi (P : \mathrm{Prop}).\, P$ in the empty context.
 
 ## Sources

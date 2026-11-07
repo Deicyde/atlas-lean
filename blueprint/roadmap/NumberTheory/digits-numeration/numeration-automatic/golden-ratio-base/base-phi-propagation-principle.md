@@ -1,6 +1,6 @@
 # Propagation principle for base phi expansions
 
-**Propagation principle for base phi expansions.** Let $w = w_1 \cdots w_8$ be a word of
+Let $w = w_1 \cdots w_8$ be a word of
 length $8$ over the natural numbers. Say that a base phi expansion $S$ (the set of positions of its
 digits $1$) contains $w$ centrally if for each $j = 1, \dots, 8$ the position $4 - j$ lies in $S$
 exactly when $w_j = 1$, that is, if its digits $d_3 d_2 d_1 d_0 \cdot d_{-1} d_{-2} d_{-3} d_{-4}$

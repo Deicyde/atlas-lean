@@ -1,6 +1,6 @@
 # Asymptotics of the largest sets with bounded difference counts
 
-**Asymptotics of the largest sets with bounded difference counts.** For a finite set $A$ of
+For a finite set $A$ of
 integers and an integer $x$, write $r_{A-A}(x)$ for the number of ordered pairs
 $(a, a') \in A \times A$ with $a - a' = x$. For every integer $g \ge 1$, let $\alpha_g(n)$ be the
 largest size of a set $A$ of integers in the interval $[1, n]$ with $r_{A-A}(x) \le g$ for every

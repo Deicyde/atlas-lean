@@ -1,6 +1,6 @@
 # Affine equivalences between Bose sets
 
-**Affine equivalences between Bose sets.** Let $F$ be a finite field with $q$ elements and
+Let $F$ be a finite field with $q$ elements and
 characteristic $p$, let $h \ge 2$, let $K$ be a field extension of $F$ of degree $h$, and let
 $\theta \in K$ have order $|K| - 1$, that is, generate $K^\times$. Let $b$ and $e$ be natural
 numbers such that the minimal polynomials of $\theta^b$ and $\theta^e$ over $F$ both have

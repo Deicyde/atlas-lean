@@ -1,6 +1,6 @@
 # Environment-packing term
 
-**Environment-packing term.** For a map $\mathit{acc}$ from natural numbers to target terms
+For a map $\mathit{acc}$ from natural numbers to target terms
 and a natural number $n$, the environment-packing term of $\mathit{acc}$ and $n$ is the target
 term $(\mathit{acc}(0), (\mathit{acc}(1), \dots (\mathit{acc}(n - 1), \mathsf{unit})\dots))$
 packing $\mathit{acc}(0), \dots, \mathit{acc}(n - 1)$ as nested pairs ending in $\mathsf{unit}$.

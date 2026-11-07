@@ -1,6 +1,6 @@
 # Saturation of complete graphs
 
-**Saturation of complete graphs.** Let $H$ be a simple graph. The complete graph on any vertex
+Let $H$ be a simple graph. The complete graph on any vertex
 set is $H$-saturated if and only if it is $H$-free.
 
 A complete graph has no missing edge, so only $H$-freeness matters. The vertex set of the complete

@@ -1,6 +1,6 @@
 # Agmon's inequality on the line
 
-**Agmon's inequality on the line.** There is a constant $C > 0$ such that every real-valued
+There is a constant $C > 0$ such that every real-valued
 Schwartz function $f \colon \mathbb{R} \to \mathbb{R}$ satisfies
 
 $$\|f\|_{L^\infty} \le C \, \|f\|_{L^2}^{1/2} \, \|f'\|_{L^2}^{1/2},$$

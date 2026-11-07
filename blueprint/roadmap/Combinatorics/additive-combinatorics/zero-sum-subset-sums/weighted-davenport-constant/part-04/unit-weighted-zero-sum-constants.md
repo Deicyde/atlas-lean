@@ -1,6 +1,6 @@
 # Unit-weighted zero-sum constants of $\mathbb{Z}_n$
 
-**Unit-weighted zero-sum constants of $\mathbb{Z}_n$.** Let $n$ be a positive integer, let
+Let $n$ be a positive integer, let
 $U(n)$ be the set of units of $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$, and let $\Omega(n)$ be the
 number of prime factors of $n$ counted with multiplicity. Then $D_{U(n)}(n) = \Omega(n) + 1$ and
 $C_{U(n)}(n) = 2^{\Omega(n)}$. Here $D_{U(n)}(n)$ is the least positive integer $k$ such that

@@ -1,6 +1,6 @@
 # Pulling a verifier back along a declared reduction
 
-**Pulling a verifier back along a declared reduction.** Let $L_1$ and $L_2$ be decision
+Let $L_1$ and $L_2$ be decision
 problems, let $f$ be a declared polynomial-time many-one reduction from $L_1$ to $L_2$, and let
 $V$ be a verifier with polynomial declared time that verifies $L_2$ with witness bound $p$. Let
 $V'$ be the verifier that on input $x$ and witness $w$ first runs $f$ on $x$, obtaining $y$, then

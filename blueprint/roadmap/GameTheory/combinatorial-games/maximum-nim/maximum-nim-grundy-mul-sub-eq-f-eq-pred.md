@@ -1,6 +1,6 @@
 # Floor-rule Maximum Nim: one-step Grundy reduction when k = nt + h
 
-**Floor-rule Maximum Nim: one-step Grundy reduction when k = nt + h.** Let $n$, $t$, $h$ be
+Let $n$, $t$, $h$ be
 natural numbers with $t \ge 1$ and $1 \le h \le n$, and let $k = nt + h$. Write $G(x)$ for the
 Grundy number of a pile of $x$ stones in Maximum Nim with rule function
 $f(y) = \lfloor y/k \rfloor$, and let $F(x) = \lfloor (k-1)x/k \rfloor$. Then for every natural

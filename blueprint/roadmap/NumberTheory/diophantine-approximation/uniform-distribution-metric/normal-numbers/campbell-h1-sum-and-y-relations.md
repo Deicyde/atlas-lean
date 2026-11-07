@@ -1,6 +1,6 @@
 # Sums of $h_1$ and the jumps of $h_2$ at powers of ten
 
-**Sums of $h_1$ and the jumps of $h_2$ at powers of ten.** Let $h_1$ be Campbell's auxiliary
+Let $h_1$ be Campbell's auxiliary
 sequence and $h_2$ Campbell's sequence. For every integer $\ell \ge 1$,
 $\sum_{i=1}^{10^{\ell+1}-1} h_1(i) = \sum_{j=0}^{\ell-1} 900 \cdot 100^j$, the number written
 $9090\cdots900$ ($\ell$ blocks $90$, then $0$). Moreover, writing $y_1(n) = h_2(10^{n-1})$ and

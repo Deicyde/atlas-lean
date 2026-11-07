@@ -1,6 +1,6 @@
 # Smaller iterated powers are not congruent to one
 
-**Smaller iterated powers are not congruent to one.** Let $a, b, m \ge 2$ and $n \ge 1$ be
+Let $a, b, m \ge 2$ and $n \ge 1$ be
 natural numbers with $a^{b^n} \not\equiv 1 \pmod m$. Then $a^{b^t} \not\equiv 1 \pmod m$ for every
 natural number $t < n$.
 

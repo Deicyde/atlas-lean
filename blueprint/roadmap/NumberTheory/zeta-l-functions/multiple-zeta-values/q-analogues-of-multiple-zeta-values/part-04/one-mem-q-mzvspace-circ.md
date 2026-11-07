@@ -1,6 +1,6 @@
 # The constant $1$ lies in $\mathcal{Z}^\circ_{q,d}$
 
-**The constant $1$ lies in $\mathcal{Z}^\circ_{q,d}$.** For every natural number $d$, the
+For every natural number $d$, the
 constant power series $1$ (the qMZV of the empty index) lies in
 the space $\mathcal{Z}^\circ_{q,d}$.
 

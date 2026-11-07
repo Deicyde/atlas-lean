@@ -1,6 +1,6 @@
 # Characters determine simple representations of a finite abelian group
 
-**Characters determine simple representations of a finite abelian group.** Let $G$ be a finite
+Let $G$ be a finite
 abelian group and let $V$ and $W$ be simple finite-dimensional complex representations of $G$,
 with characters $\chi_V$ and $\chi_W$. If $\chi_V = \chi_W$, then $V$ and $W$ are isomorphic.
 

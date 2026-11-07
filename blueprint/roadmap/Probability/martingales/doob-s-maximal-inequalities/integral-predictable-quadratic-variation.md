@@ -1,6 +1,6 @@
 # Expectation of the predictable quadratic variation
 
-**Expectation of the predictable quadratic variation.** Let $\mu$ be a probability measure
+Let $\mu$ be a probability measure
 and let $(f_k)_{k \in \mathbb{N}}$ be a real-valued martingale with respect to a filtration
 $(\mathcal{F}_k)$ and $\mu$ such that every $f_k$ is in $L^2(\mu)$, and let $A_n$ be its
 predictable quadratic variation. Then for every $n \in \mathbb{N}$,

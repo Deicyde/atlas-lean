@@ -1,6 +1,6 @@
 # Cycle vertices of the $k$-th power map modulo $p$
 
-**Cycle vertices of the $k$-th power map modulo $p$.** Let $p$ be an odd prime, $k$ a natural
+Let $p$ be an odd prime, $k$ a natural
 number, and $t$ the largest divisor of $p - 1$ that is coprime to $k$. A nonzero
 $a \in \mathbb{Z}/p\mathbb{Z}$ lies on a cycle of the map $x \mapsto x^k$, that is,
 $a^{k^m} = a$ for some $m \ge 1$, if and only if the multiplicative order of $a$ divides $t$.

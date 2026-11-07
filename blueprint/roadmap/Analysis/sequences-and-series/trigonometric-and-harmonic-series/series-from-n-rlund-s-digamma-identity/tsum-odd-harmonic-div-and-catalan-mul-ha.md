@@ -1,6 +1,5 @@
 # An odd harmonic series for $\pi^2/6$ and a Catalan–harmonic series for $8 - 2\pi^2/3$
 
-**An odd harmonic series for $\pi^2/6$ and a Catalan–harmonic series for $8 - 2\pi^2/3$.**
 Let $O_k = \sum_{j=1}^{k} 1/(2j-1)$ be the $k$-th odd harmonic number, $C_n$ the $n$-th Catalan
 number and $H_k = \sum_{j=1}^{k} 1/j$ the $k$-th harmonic number. Then
 

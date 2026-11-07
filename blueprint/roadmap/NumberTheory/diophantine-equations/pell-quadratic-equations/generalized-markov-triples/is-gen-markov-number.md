@@ -1,6 +1,6 @@
 # Generalized Markov number
 
-**Generalized Markov number.** Let $k$ be a natural number. A natural number $b$ is a
+Let $k$ be a natural number. A natural number $b$ is a
 $k$-generalized Markov number when there are natural numbers $a$ and $c$ such that
 $(a, b, c)$ is a $k$-generalized Markov triple.
 

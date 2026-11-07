@@ -1,3 +1,3 @@
 # Integrability of genotypes
 
-**Integrability of genotypes.** Genotypes are integrable.
+Genotypes are integrable.

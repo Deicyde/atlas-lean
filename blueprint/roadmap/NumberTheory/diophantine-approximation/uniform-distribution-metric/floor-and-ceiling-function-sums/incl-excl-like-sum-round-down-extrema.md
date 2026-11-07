@@ -1,6 +1,6 @@
 # Extrema of the round-half-down inclusion-exclusion-like sum
 
-**Extrema of the round-half-down inclusion-exclusion-like sum.** Let $n \ge 2$ and let $g_4$
+Let $n \ge 2$ and let $g_4$
 be the inclusion-exclusion-like sum $g^{(F)}$ in $n$ real variables with
 $F(y) = \lceil y - 1/2 \rceil$, the nearest integer to $y$ with ties rounded down. Then
 $-2^{n-2} \le g_4(x) \le 2^{n-2}$ for every $x \in \mathbb{R}^n$; the minimum $-2^{n-2}$ is

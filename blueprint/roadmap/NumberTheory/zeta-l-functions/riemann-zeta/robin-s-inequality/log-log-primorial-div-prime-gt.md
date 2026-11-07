@@ -1,6 +1,6 @@
 # Lower bound for the double logarithm of a primorial divided by one of its primes
 
-**Lower bound for the double logarithm of a primorial divided by one of its primes.** Let
+Let
 $p_\ell$ be the $\ell$-th prime ($p_1 = 2$) and $\log$ the natural logarithm. For natural numbers
 $k \ge 99$ and $j$ with $1 \le j \le k + 1$, let $m = p_1 p_2 \cdots p_{k+1} / p_j$. Then
 

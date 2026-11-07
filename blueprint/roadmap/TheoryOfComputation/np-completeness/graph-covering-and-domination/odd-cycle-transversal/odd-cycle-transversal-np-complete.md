@@ -1,6 +1,6 @@
 # ODD CYCLE TRANSVERSAL is NP-complete
 
-**ODD CYCLE TRANSVERSAL is NP-complete.** The decision problem ODD CYCLE TRANSVERSAL, which
+The decision problem ODD CYCLE TRANSVERSAL, which
 accepts a bitstring exactly when it decodes to a well-formed instance $(n, es, K)$ whose graph
 becomes bipartite after removing some set of at most $K$ vertices, belongs to NP, and every
 decision problem in NP has a polynomial-time many-one reduction to it.

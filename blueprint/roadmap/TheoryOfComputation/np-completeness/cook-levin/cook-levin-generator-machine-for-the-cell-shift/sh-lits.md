@@ -1,6 +1,6 @@
 # Literals of an in-range shift clause
 
-**Literals of an in-range shift clause.** Fix a layout $L$ and tables $\mathrm{sa}$,
+Fix a layout $L$ and tables $\mathrm{sa}$,
 $\mathrm{pl}$, $\mathrm{cn}$. For a height $H$, write $C[t,k,j,x]$ for the cell variable of
 stack $k$, depth $j$ and symbol code $x$ at time $t$, and $X[t,a]$ for the label/state variable
 $a$ at time $t$. With $c = \mathrm{cn}(i,k)$ and $p = \mathrm{pl}(i,k)$, the literals of the

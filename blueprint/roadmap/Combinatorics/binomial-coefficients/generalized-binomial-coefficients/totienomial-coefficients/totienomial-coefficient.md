@@ -1,6 +1,6 @@
 # Totienomial coefficient
 
-**Totienomial coefficient.** Let $\varphi$ be Euler's totient function and write
+Let $\varphi$ be Euler's totient function and write
 $k!_\varphi = \varphi(1) \varphi(2) \cdots \varphi(k)$. For natural numbers $n$ and $m$, the
 totienomial coefficient is the generalized binomial coefficient of $\varphi$, that is the
 rational number

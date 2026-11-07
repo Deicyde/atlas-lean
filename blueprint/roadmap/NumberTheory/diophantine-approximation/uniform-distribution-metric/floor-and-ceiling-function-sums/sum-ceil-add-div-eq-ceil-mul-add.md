@@ -1,6 +1,6 @@
 # Ceiling analogue of Hermite's identity
 
-**Ceiling analogue of Hermite's identity.** For every real number $x$ and every natural
+For every real number $x$ and every natural
 number $n$, $\sum_{k=1}^{n} \lceil x + k/n \rceil = \lceil n x \rceil + n$.
 
 The paper assumes $n \ge 1$; for $n = 0$ both sides are $0$.

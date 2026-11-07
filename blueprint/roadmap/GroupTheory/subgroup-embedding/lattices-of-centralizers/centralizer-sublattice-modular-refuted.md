@@ -1,6 +1,6 @@
 # Lattices of centralizers need not be modular (Kourovka 11.4)
 
-**Lattices of centralizers need not be modular (Kourovka 11.4).** Call a subgroup of a group
+Call a subgroup of a group
 $G$ a centralizer if it equals $C_G(X)$ for some subset $X \subseteq G$. Modularity of centralizer
 sublattices fails: there is a group $G$ in which the join (in the subgroup lattice) of any two
 centralizers is again a centralizer, but which has centralizers $A$, $B$, $C$ with $A \le C$ and

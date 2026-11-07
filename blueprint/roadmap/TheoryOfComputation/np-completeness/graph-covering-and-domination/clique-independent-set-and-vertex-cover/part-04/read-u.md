@@ -1,6 +1,6 @@
 # The clique verifier's unary reader
 
-**The clique verifier's unary reader.** For a stack $c$ and labels $\ell$ (its own) and
+For a stack $c$ and labels $\ell$ (its own) and
 $\ell'$ (the next), the unary reader onto $c$ is the verifier statement that inspects the
 input stack $X$ and sets the state to whether $X$ is empty: if it is, it goes to the rejecting
 label; otherwise it pops the top symbol of $X$ and sets the state to whether that symbol is

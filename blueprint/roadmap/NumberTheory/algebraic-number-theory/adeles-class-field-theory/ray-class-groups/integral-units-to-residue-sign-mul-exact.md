@@ -1,6 +1,6 @@
 # Exactness at the residue-sign group
 
-**Exactness at the residue-sign group.** Let $\mathfrak m$ be a modulus of a number field
+Let $\mathfrak m$ be a modulus of a number field
 $K$ with finite part $\mathfrak m_0$ and set of real places $\mathfrak m_\infty$, let
 $\mathrm{Cl}_{\mathfrak m}$ be its ray class group, and let
 $R_{\mathfrak m} = \{\pm 1\}^{\mathfrak m_\infty} \times (\mathcal O_K/\mathfrak m_0)^\times$.

@@ -1,6 +1,6 @@
 # There is an EXP language outside P (time-hierarchy separation)
 
-**There is an EXP language outside P (time-hierarchy separation).** There is a decision
+There is a decision
 problem that belongs to the class EXP but not to the complexity class P.
 
 Only this separation is stated; the containment of P in EXP is not part of the statement.

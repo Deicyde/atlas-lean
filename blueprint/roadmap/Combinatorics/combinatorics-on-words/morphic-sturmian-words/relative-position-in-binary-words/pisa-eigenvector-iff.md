@@ -1,6 +1,6 @@
 # Integer matrices with a Pisa eigenvector
 
-**Integer matrices with a Pisa eigenvector.** Let $j, m \ge 1$ be integers, let
+Let $j, m \ge 1$ be integers, let
 $\tau_{j,m} = (j + \sqrt{j^2 + 4m})/2$, and let $M$ be a $2 \times 2$ integer matrix.
 (a) If $j^2 + 4m$ is not a perfect square, then $(\tau_{j,m}, 1)^T$ is a right eigenvector of $M$
 over $\mathbb{R}$ if and only if $M$ has rows $(t + sj, ms)$ and $(s, t)$ for some integers $s, t$.

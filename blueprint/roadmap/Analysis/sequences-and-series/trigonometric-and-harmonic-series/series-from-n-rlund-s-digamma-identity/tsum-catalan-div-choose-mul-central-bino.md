@@ -1,6 +1,6 @@
 # Catalan numbers over binomial and central binomial coefficients
 
-**Catalan numbers over binomial and central binomial coefficients.** Let $m$ be a positive
+Let $m$ be a positive
 integer, $C_n$ the $n$th Catalan number, $H_n = \sum_{j=1}^{n} \frac{1}{j}$ the $n$th harmonic
 number and $O_n = \sum_{j=1}^{n} \frac{1}{2j - 1}$. Then
 

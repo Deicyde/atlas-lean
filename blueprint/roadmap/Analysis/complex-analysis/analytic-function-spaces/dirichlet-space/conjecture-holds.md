@@ -1,6 +1,6 @@
 # Polynomial density passes to dominating functions in the Dirichlet space
 
-**Polynomial density passes to dominating functions in the Dirichlet space.** For all $f$ and $g$
+For all $f$ and $g$
 in the Dirichlet space $\mathcal{D}$: if the polynomial multiples $Pg$ are dense in $\mathcal{D}$
 in the Dirichlet norm and $|g(z)| \le |f(z)|$ for all $|z| < 1$, then the polynomial multiples
 $Pf$ are dense in $\mathcal{D}$ in the Dirichlet norm. This answers Hayman's Problem 8.11

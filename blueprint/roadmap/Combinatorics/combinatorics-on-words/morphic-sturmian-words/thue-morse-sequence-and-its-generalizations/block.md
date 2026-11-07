@@ -1,6 +1,6 @@
 # Blocks of the generalized Thue–Morse sequence
 
-**Blocks of the generalized Thue–Morse sequence.** Let $L > 1$ and $k > 1$ be natural numbers,
+Let $L > 1$ and $k > 1$ be natural numbers,
 take the letters $0, 1, \dots, L-1$ (the elements of $\mathbb{Z}/L\mathbb{Z}$), and let $\kappa$
 assign a shift $\kappa(j, n) \in \mathbb{Z}/L\mathbb{Z}$ to each $j \in \{1, \dots, k-1\}$ and
 each $n \ge 0$. For a word $w$ and $t \in \mathbb{Z}/L\mathbb{Z}$, let $f^t(w)$ be the word

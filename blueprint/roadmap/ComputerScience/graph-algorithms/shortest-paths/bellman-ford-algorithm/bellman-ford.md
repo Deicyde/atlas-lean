@@ -1,6 +1,6 @@
 # Bellman–Ford algorithm
 
-**Bellman–Ford algorithm.** Let $E$ be a list of integer-weighted directed edges on the
+Let $E$ be a list of integer-weighted directed edges on the
 vertices $\{0, \dots, n-1\}$ and let $s$ be a vertex. Bellman–Ford run on $E$ from $s$ starts
 with distance $d(s) = 0$ and $d(v) = \infty$ for every other vertex $v$, and makes $n - 1$ passes
 over $E$ followed by one final pass. A pass goes through the edges of $E$ in list order, charging

@@ -1,6 +1,6 @@
 # Canonical line
 
-**Canonical line.** The canonical line $\mathrm{CL}$ is the vertical line of complex numbers
+The canonical line $\mathrm{CL}$ is the vertical line of complex numbers
 with real part $-1/2$, that is, $\mathrm{CL} = \{z \in \mathbb{C} : \operatorname{Re} z = -1/2\}$.
 
 ## Sources

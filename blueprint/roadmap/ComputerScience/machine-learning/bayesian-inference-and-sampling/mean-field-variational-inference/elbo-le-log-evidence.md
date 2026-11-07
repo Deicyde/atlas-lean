@@ -1,6 +1,6 @@
 # The ELBO is a lower bound
 
-**The ELBO is a lower bound.** Let $Z$ be a finite set and let $p : Z \to \mathbb{R}$ satisfy
+Let $Z$ be a finite set and let $p : Z \to \mathbb{R}$ satisfy
 $p(z) > 0$ for all $z$, with evidence $p(x) = \sum_{z \in Z} p(z)$. Then for every probability
 distribution $q$ on $Z$,
 

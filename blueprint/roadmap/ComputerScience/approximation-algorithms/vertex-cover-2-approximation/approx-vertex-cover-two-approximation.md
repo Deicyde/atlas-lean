@@ -1,6 +1,6 @@
 # APPROX-VERTEX-COVER is a 2-approximation
 
-**APPROX-VERTEX-COVER is a 2-approximation.** Let $G$ be a simple graph and $L$ a list of
+Let $G$ be a simple graph and $L$ a list of
 ordered pairs of vertices that lists exactly the edges of $G$, each in at least one orientation:
 $u$ and $v$ are adjacent in $G$ for every $(u, v)$ in $L$, and for every edge $uv$ of $G$,
 $(u, v)$ or $(v, u)$ is in $L$. Then the cover $C$ that APPROX-VERTEX-COVER returns on $L$ is a

@@ -1,6 +1,6 @@
 # Succinct Circuit Value
 
-**Succinct Circuit Value.** The decision problem Succinct Circuit Value accepts a bitstring
+The decision problem Succinct Circuit Value accepts a bitstring
 exactly when it decodes to a triple $(n, C, x)$ of a natural number $n$, a list $C$ of encoded
 gates and a bitstring $x$ such that: $x$ has length $n$; $C$ has at least $2n + 3$ gates and,
 read as a flat Boolean circuit on $n$ inputs, is well formed; the circuit $D$ with $2^n$ gates

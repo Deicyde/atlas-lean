@@ -1,6 +1,6 @@
 # The PRF distinguisher built from a CPA adversary
 
-**The PRF distinguisher built from a CPA adversary.** Let $X$ and $R$ be sets, $Y$ an additive
+Let $X$ and $R$ be sets, $Y$ an additive
 commutative group, $q$ a natural number and $A$ a CPA adversary with coins in $R$ against an
 encryption oracle that takes messages in $Y$ and returns ciphertexts in $X \times Y$. With its own
 coins $(\rho, r_s, b, r)$, where $\rho \colon \{0, \dots, q - 1\} \to X$, $r_s \in X$, $b$ is a bit

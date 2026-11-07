@@ -1,6 +1,6 @@
 # Lifts of residue generators generate unramified extensions
 
-**Lifts of residue generators generate unramified extensions.** Let $A$ and $B$ be discrete
+Let $A$ and $B$ be discrete
 valuation rings with maximal ideals $\mathfrak m_A$, $\mathfrak m_B$ and residue fields
 $\kappa_A$, $\kappa_B$, and let $B$ be an $A$-algebra that is finitely generated as an
 $A$-module and whose structure map is a local homomorphism. Suppose $\kappa_B / \kappa_A$ is

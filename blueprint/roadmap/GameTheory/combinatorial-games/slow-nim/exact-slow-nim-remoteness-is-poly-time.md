@@ -1,6 +1,6 @@
 # Theorem 3 (Smith's remoteness of exact slow k-NIM is polynomial-time computable)
 
-**Theorem 3 (Smith's remoteness of exact slow k-NIM is polynomial-time computable).** The map
+The map
 sending a list $(x_0, \dots, x_{n-1})$ of natural numbers of length $n$ to Smith's remoteness of
 the position $(x_0, \dots, x_{n-1})$ of Slow$A$-Nim on $n$ stacks with $A = \{n - 1\}$ (where
 $0 - 1 = 0$) is polynomial-time computable. Here natural numbers, in the input and the output,

@@ -1,6 +1,6 @@
 # Snort on two vertices
 
-**Snort on two vertices.** The first player wins Snort on the complete graph $K_2$, and
+The first player wins Snort on the complete graph $K_2$, and
 the second player wins Snort on the graph with two vertices and no edges.
 
 ## Sources

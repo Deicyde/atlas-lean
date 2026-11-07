@@ -1,6 +1,5 @@
 # Longest progressions of absolute least residues: even squarefree, three or more primes
 
-**Longest progressions of absolute least residues: even squarefree, three or more primes.**
 Let $n$ be an even squarefree natural number with at least three prime factors, let $P$ be its
 largest prime factor and $d = n / P$, and let $g(n)$ be the length of the longest arithmetic
 progression in the absolute least reduced residue system modulo $n$. Then

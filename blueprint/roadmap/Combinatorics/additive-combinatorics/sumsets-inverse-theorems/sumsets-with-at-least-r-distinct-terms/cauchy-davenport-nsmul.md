@@ -1,6 +1,6 @@
 # Cauchy–Davenport theorem for $h$-fold sumsets
 
-**Cauchy–Davenport theorem for $h$-fold sumsets.** Let $p$ be a prime, $A$ a nonempty subset
+Let $p$ be a prime, $A$ a nonempty subset
 of $\mathbb{Z}/p\mathbb{Z}$ with $|A| = k$, and $h \ge 1$ a natural number. Then the $h$-fold
 sumset $hA = \{a_1 + \dots + a_h : a_1, \dots, a_h \in A\}$ satisfies
 $|hA| \ge \min(p,\ hk - h + 1)$.

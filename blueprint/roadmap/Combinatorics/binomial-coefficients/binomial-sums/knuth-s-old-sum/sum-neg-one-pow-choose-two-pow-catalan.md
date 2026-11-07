@@ -1,6 +1,6 @@
 # Alternating binomial sum of Catalan numbers
 
-**Alternating binomial sum of Catalan numbers.** For every natural number $n$, in the
+For every natural number $n$, in the
 rational numbers
 
 $$

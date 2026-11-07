@@ -1,6 +1,6 @@
 # The emitter state before the diamonds
 
-**The emitter state before the diamonds.** For a CNF formula $\varphi$ with $m$ clauses and an
+For a CNF formula $\varphi$ with $m$ clauses and an
 output list $o$, this is the quiescent state whose output stack is $o$, whose stack $F$ holds the
 tokens of $\varphi$ in reading order, whose stack $V$ is the variable stack of the distinct
 variables of $\varphi$ (each kept at its last occurrence), whose clause count and diamond top are

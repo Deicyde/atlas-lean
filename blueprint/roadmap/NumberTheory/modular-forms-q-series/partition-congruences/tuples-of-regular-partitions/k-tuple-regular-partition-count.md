@@ -1,6 +1,6 @@
 # Number of $k$-tuples of $\ell$-regular partitions
 
-**Number of $k$-tuples of $\ell$-regular partitions.** For natural numbers $\ell$, $k$ and
+For natural numbers $\ell$, $k$ and
 $n$, the number $T_{\ell,k}(n)$ is defined by recursion on $k$: $T_{\ell,0}(n)$ is $1$ if
 $n = 0$ and $0$ otherwise, and
 

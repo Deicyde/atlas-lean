@@ -1,6 +1,6 @@
 # Limit of the $q$-power-sum interpolant at $0$: first closed form
 
-**Limit of the $q$-power-sum interpolant at $0$: first closed form.** Let $q > 0$ with
+Let $q > 0$ with
 $q \ne 1$, let $r \ge 1$ and $k \ge 0$ be integers, and for real $x$ write
 $[x] = (q^x - 1)/(q - 1)$, $[x]_m = [x][x-1]\cdots[x-m+1]$ (with $[x]_0 = 1$) and
 $[k]! = [1][2]\cdots[k]$. Let $P$ be a real polynomial such that

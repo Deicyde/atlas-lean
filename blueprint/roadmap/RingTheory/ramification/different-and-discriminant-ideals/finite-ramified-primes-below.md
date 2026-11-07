@@ -1,6 +1,6 @@
 # Only finitely many primes of the base ramify
 
-**Only finitely many primes of the base ramify.** Let $A$ and $B$ be Dedekind domains, where
+Let $A$ and $B$ be Dedekind domains, where
 $B$ is an $A$-algebra that is finitely generated and torsion-free as an $A$-module and the field of
 fractions of $B$ is separable over the field of fractions of $A$. Then only finitely many nonzero
 prime ideals $\mathfrak p$ of $A$ are ramified in $B$. Here $\mathfrak p$ is unramified in $B$ when

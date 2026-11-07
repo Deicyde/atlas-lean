@@ -1,6 +1,6 @@
 # Two-sided second-order sequence
 
-**Two-sided second-order sequence.** For integers $p$, $r$ and $s$, the two-sided sequence
+For integers $p$, $r$ and $s$, the two-sided sequence
 $(A^{(r,s)}_n)_{n \in \mathbb{Z}}$ for $p$ is the integer sequence indexed by $\mathbb{Z}$ with
 $A^{(r,s)}_0 = r$, $A^{(r,s)}_1 = s$ and $A^{(r,s)}_{n+1} = pA^{(r,s)}_n + A^{(r,s)}_{n-1}$ for
 every integer $n$.

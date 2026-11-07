@@ -1,6 +1,6 @@
 # Bishop's graph
 
-**Bishop's graph.** For natural numbers $n$ and $m$, the bishop's graph on the $n \times m$
+For natural numbers $n$ and $m$, the bishop's graph on the $n \times m$
 board has as vertices the cells $(i, j)$ with $0 \le i < n$ and $0 \le j < m$, and two distinct
 cells $(i, j)$ and $(i', j')$ are adjacent when they lie on a common diagonal, that is, when
 $|i - i'| = |j - j'|$.

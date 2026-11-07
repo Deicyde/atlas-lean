@@ -1,6 +1,6 @@
 # The statements of one Horner round
 
-**The statements of one Horner round.** For counters $b, \mathit{acc}, q, d, t$, a number
+For counters $b, \mathit{acc}, q, d, t$, a number
 $a \in \mathbb{N}$, stage labels $\mu$ and an exit label $\nu$: the statements performing
 $\mathit{acc} \leftarrow \mathit{acc} \cdot b + a$ in four stages, each stage reaching the next
 through $\mu$. The multiplication stages add $\mathit{acc} \cdot b$ to $q$ (with index counter $d$

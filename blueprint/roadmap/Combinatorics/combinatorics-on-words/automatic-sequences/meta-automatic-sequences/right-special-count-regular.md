@@ -1,6 +1,6 @@
 # Right-special factor counts of automatic sequences are regular
 
-**Right-special factor counts of automatic sequences are regular.** Let $k$ be a natural
+Let $k$ be a natural
 number and $a$ an infinite binary word that is $k$-automatic, and for each $n$ let
 $\mathrm{RS}_a(n)$ be the set of right-special factors of $a$ of length $n$. Then the integer
 sequence $n \mapsto \#\mathrm{RS}_a(n)$ is $k$-regular. Moreover, for every natural number $C$

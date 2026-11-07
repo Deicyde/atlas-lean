@@ -1,6 +1,6 @@
 # Random sum-free sets
 
-**Random sum-free sets.** For a finite abelian group $G$ let $\mu(G)$ be the size of a
+For a finite abelian group $G$ let $\mu(G)$ be the size of a
 largest sum-free subset of $G$. Let $(G_n)_{n \ge 0}$ be finite abelian groups with
 $|G_i| < |G_j|$ and $\mu(G_i)/|G_i| = \mu(G_j)/|G_j|$ whenever $i < j$. Then for every
 $\varepsilon > 0$ there is $C > 0$ such that for every real sequence $(p_n)$ with

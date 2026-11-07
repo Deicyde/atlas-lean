@@ -1,6 +1,6 @@
 # Terminating Chu–Vandermonde specialization
 
-**Terminating Chu–Vandermonde specialization.** For every natural number $n \ge 1$, the
+For every natural number $n \ge 1$, the
 following sum of rational numbers vanishes:
 
 $$\sum_{k=0}^{n} \binom{n}{k} \binom{n+k}{k} \frac{(-1)^k}{k+1} = 0.$$

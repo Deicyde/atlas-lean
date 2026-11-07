@@ -1,6 +1,6 @@
 # Fixed cylinder tilings of the reflection f, n even
 
-**Fixed cylinder tilings of the reflection f, n even.** Let $T$ be a finite set of tile
+Let $T$ be a finite set of tile
 designs, let $\sigma$ be a permutation of $T$ with $\sigma^2 = 1$, and let $n, m \ge 1$ with $n$
 even. For $a \in \mathbb{Z}/n\mathbb{Z}$ count the tilings
 $F : \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z} \to T$ with

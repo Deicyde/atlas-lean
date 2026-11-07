@@ -1,6 +1,6 @@
 # Multisets of parts with a given size sum
 
-**Multisets of parts with a given size sum.** For a list $L$ of pairs of natural numbers, where
+For a list $L$ of pairs of natural numbers, where
 the size of a pair $(k, j)$ is $k$, and a natural number $n$, this is the finite set of multisets
 of pairs defined by recursion on $L$. For the empty list it is the set containing only the empty
 multiset when $n = 0$, and the empty set otherwise. For a list with head $c$ of size $k$ and tail

@@ -1,6 +1,6 @@
 # Brun–Titchmarsh inequality
 
-**Brun–Titchmarsh inequality.** Let $X$, $q$ and $a$ be natural numbers such that $a$ and $q$
+Let $X$, $q$ and $a$ be natural numbers such that $a$ and $q$
 are coprime and $1 \le q < X$. Write $\pi(X; q, a)$ for the number of primes $p \le X$ with
 $p \equiv a \pmod{q}$, and $\varphi$ for Euler's totient function. Then
 

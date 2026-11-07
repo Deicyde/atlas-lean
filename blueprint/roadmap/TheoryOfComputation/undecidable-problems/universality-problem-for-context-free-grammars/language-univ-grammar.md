@@ -1,6 +1,6 @@
 # The language of the universality grammar
 
-**The language of the universality grammar.** Let $\alpha$ be a finite alphabet with decidable
+Let $\alpha$ be a finite alphabet with decidable
 equality, let $P$ be a list of dominoes over $\alpha$ of length $m$, and for $i < m$ let $t_i$ and
 $b_i$ be the top and bottom words of the domino of $P$ at position $i$, counting from $0$. Read the
 bit $\mathrm{true}$ as the separator $|$ and the bit $\mathrm{false}$ as $1$, and let $c(i)$ be the

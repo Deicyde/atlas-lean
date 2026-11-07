@@ -1,6 +1,6 @@
 # Maximum degree of a multigraph
 
-**Maximum degree of a multigraph.** For an edge-indexed multigraph with finitely many vertices
+For an edge-indexed multigraph with finitely many vertices
 and finitely many edge identities, the maximum degree is the largest degree of a vertex, and $0$
 when there are no vertices.
 

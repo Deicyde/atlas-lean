@@ -1,6 +1,6 @@
 # Asymptotic for B-free divisor sums when h is at most 2
 
-**Asymptotic for B-free divisor sums when h is at most 2.** Let $F$ be a finite field with $q$
+Let $F$ be a finite field with $q$
 elements, write $|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let $\kappa$ assign a natural
 number to each polynomial in $F[T]$, with $\kappa(P) \ge 2$ for every monic irreducible $P$. Let
 $h \in \{1, 2\}$ and let $\tilde D_{\kappa,h}(N)$ be the sum of $d_h(f)$ over the monic

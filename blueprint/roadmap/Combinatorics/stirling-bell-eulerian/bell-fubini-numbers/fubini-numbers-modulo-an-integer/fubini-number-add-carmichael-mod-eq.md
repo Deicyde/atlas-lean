@@ -1,6 +1,6 @@
 # Eventual periodicity of the Fubini numbers modulo $K$
 
-**Eventual periodicity of the Fubini numbers modulo $K$.** Let $K$ be a natural number, let
+Let $K$ be a natural number, let
 $\lambda(K)$ be the value of the Carmichael function at $K$, and let $R$ be the largest exponent
 in the prime factorization of $K$ ($R = 0$ for $K \le 1$). Then the Fubini numbers $F(n)$
 satisfy $F(n + \lambda(K)) \equiv F(n) \pmod K$ for every natural number $n \ge R$.

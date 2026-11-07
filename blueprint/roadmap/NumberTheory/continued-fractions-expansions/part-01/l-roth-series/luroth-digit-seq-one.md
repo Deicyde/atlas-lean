@@ -1,6 +1,6 @@
 # The Lüroth digits of 1
 
-**The Lüroth digits of 1.** Every Lüroth digit of $1$ equals $2$, that is,
+Every Lüroth digit of $1$ equals $2$, that is,
 $1 = [2, 2, 2, \dots]$ in Lüroth notation.
 
 ## Sources

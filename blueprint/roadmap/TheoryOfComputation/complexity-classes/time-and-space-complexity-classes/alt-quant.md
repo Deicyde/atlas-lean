@@ -1,6 +1,6 @@
 # Alternating bounded quantifiers
 
-**Alternating bounded quantifiers.** Let $b : \mathbb{N} \to \mathbb{N}$ be a length bound,
+Let $b : \mathbb{N} \to \mathbb{N}$ be a length bound,
 $k$ a natural number, $R$ a Boolean function of a bitstring and a list of bitstrings, and $x$ a
 bitstring. The statement with $k$ blocks, beginning with $\exists$ when the given flag is true and
 with $\forall$ when it is false, is

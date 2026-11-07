@@ -1,6 +1,6 @@
 # Sum formula
 
-**Sum formula.** Let $g = (g_0, g_1, \dots, g_s)$ be Landen data, let
+Let $g = (g_0, g_1, \dots, g_s)$ be Landen data, let
 $\beta, \gamma, \delta \in \mathbb{R}^s$, let $\mu$ be a real number and let $k \ge 1$ be an
 integer. Then
 $\sum_{\mathbf{k}} \mu^{d(\mathbf{k}) - 1} \mathrm{Li}_{\mathbf{k}}(g; (\beta, \gamma); z) =

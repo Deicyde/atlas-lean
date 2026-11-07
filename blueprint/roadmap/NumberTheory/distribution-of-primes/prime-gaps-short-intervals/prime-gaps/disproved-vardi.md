@@ -1,4 +1,4 @@
 # Negation of Vardi's prime-gap asymptotic
 
-**Negation of Vardi's prime-gap asymptotic.** The proposition that Vardi's prime-gap
+The proposition that Vardi's prime-gap
 asymptotic does not hold.

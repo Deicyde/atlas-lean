@@ -1,6 +1,6 @@
 # Five I-Wilf-equivalent sets of six patterns containing $000$, $010$ and $120$
 
-**Five I-Wilf-equivalent sets of six patterns containing $000$, $010$ and $120$.** Write
+Write
 length-3 patterns as digit strings ($101$ is the pattern $(1, 0, 1)$) and let $|I_n(B)|$ be the
 number of inversion sequences of length $n$ that avoid every pattern in the set $B$. For a pattern
 $\tau$ let $A_\tau = \{000, 010, 100, 101, 120, \tau\}$ and $B_\tau = \{000, 010, 100, 110, 120,

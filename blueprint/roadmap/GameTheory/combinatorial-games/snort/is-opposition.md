@@ -1,6 +1,6 @@
 # Oppositions
 
-**Oppositions.** An opposition of a graph $G$ is an automorphism $f$ of $G$ such that for
+An opposition of a graph $G$ is an automorphism $f$ of $G$ such that for
 every vertex $v$, $f(f(v)) = v$, $f(v) \neq v$, and $f(v)$ is not adjacent to $v$; that is, an
 involutive automorphism moving every vertex outside its closed neighbourhood.
 

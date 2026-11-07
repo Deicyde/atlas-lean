@@ -1,6 +1,5 @@
 # Some member's largest root is at most that of a weighted sum, via real-rooted segments
 
-**Some member's largest root is at most that of a weighted sum, via real-rooted segments.**
 Let $I$ be a nonempty finite set, let $n \ge 1$, and for each $i \in I$ let $P_i$ be a monic
 complex polynomial of degree $n$ and $w_i \ge 0$ a real weight. Suppose that
 $Q = \sum_{i \in I} w_i P_i$ is monic of degree $n$ and that, for every $i \in I$ and every

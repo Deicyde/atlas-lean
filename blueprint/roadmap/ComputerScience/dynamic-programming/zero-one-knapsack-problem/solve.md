@@ -1,6 +1,6 @@
 # Bottom-up zero-one knapsack algorithm
 
-**Bottom-up zero-one knapsack algorithm.** Given knapsack items $x_0, \dots, x_{n-1}$ with
+Given knapsack items $x_0, \dots, x_{n-1}$ with
 weights $w_i$ and values $v_i$ and a capacity $W \in \mathbb{N}$, the algorithm fills a table
 $V(i, c)$ for $0 \le i \le n$ and $0 \le c \le W$ by $V(0, c) = 0$ and, for $i < n$,
 $V(i + 1, c) = \max(V(i, c), V(i, c - w_i) + v_i)$ if $w_i \le c$ and $V(i + 1, c) = V(i, c)$

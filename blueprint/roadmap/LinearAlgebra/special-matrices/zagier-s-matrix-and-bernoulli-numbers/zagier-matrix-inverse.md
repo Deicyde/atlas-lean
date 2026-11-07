@@ -1,6 +1,6 @@
 # Zagier's matrix conjecture
 
-**Zagier's matrix conjecture.** Let $K \ge 2$ be a natural number, let $B_n$ be the $n$-th
+Let $K \ge 2$ be a natural number, let $B_n$ be the $n$-th
 Bernoulli number with $B_1 = -\frac{1}{2}$, and let $\binom{m}{k} = 0$ for $k > m$. Let $A$,
 $P$ and $Q$ be the $(K - 1) \times (K - 1)$ rational matrices, with rows and columns indexed
 by $1 \le i, j \le K - 1$, whose entries are

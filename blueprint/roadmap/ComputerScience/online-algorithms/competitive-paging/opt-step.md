@@ -1,6 +1,6 @@
 # Offline paging step
 
-**Offline paging step.** Given a cache size $k$, a cache $c$ (a list of pages), a requested
+Given a cache size $k$, a cache $c$ (a list of pages), a requested
 page $p$ and the list $f$ of future requests, the offline step returns an event and a new cache.
 If $p \in c$, it is a hit on $p$ and the cache is unchanged. Otherwise, if $c$ has fewer than $k$
 pages, it is a miss on $p$ with no eviction and the new cache is $p$ followed by $c$. Otherwise,

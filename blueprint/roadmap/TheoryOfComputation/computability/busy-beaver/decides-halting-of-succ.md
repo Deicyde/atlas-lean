@@ -1,6 +1,6 @@
 # Decidability of halting passes to fewer states
 
-**Decidability of halting passes to fewer states.** Let $T$ be a formal theory such that, for
+Let $T$ be a formal theory such that, for
 every $m$ and every Busy Beaver machine $M$ with $m$ working states, if $T$ proves the halting
 sentence of the embedding of $M$ into $m + 1$ states then $T$ proves the halting sentence of $M$,
 and if $T$ proves the non-halting sentence of the embedding of $M$ into $m + 1$ states then $T$

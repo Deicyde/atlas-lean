@@ -1,6 +1,6 @@
 # Fibonacci prime divisibility
 
-**Fibonacci prime divisibility.** Let $p$ be a prime with $p > 2$ and $p \ne 5$, and let
+Let $p$ be a prime with $p > 2$ and $p \ne 5$, and let
 $\left(\frac{5}{p}\right)$ be the Legendre symbol of $5$ modulo $p$. Then $p$ divides the
 Fibonacci number $F_{p-1}$ if $\left(\frac{5}{p}\right) = 1$, and $p$ divides the Fibonacci
 number $F_{p+1}$ otherwise. Since $\left(\frac{5}{p}\right) = \pm 1$, this says that $p$ divides

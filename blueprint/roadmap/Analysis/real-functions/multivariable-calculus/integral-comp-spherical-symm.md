@@ -1,6 +1,6 @@
 # Change of variables to spherical coordinates
 
-**Change of variables to spherical coordinates.** Let $E$ be a real Banach space and let
+Let $E$ be a real Banach space and let
 $f \colon \mathbb{R}^3 \to E$ be any function. Then the integral of $f$ over $\mathbb{R}^3$
 equals the integral over the set of $(r, \theta, \varphi) \in \mathbb{R}^3$ with $r > 0$,
 $0 < \theta < 2\pi$ and $0 < \varphi < \pi$ of

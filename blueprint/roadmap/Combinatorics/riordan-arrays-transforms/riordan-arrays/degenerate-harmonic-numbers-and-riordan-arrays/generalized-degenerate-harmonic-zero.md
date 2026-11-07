@@ -1,6 +1,6 @@
 # The zeroth generalized degenerate harmonic number
 
-**The zeroth generalized degenerate harmonic number.** For all real numbers $\lambda$ and
+For all real numbers $\lambda$ and
 $\alpha$, the generalized degenerate harmonic number $H_{0,\lambda}(\alpha)$ is $0$.
 
 ## Sources

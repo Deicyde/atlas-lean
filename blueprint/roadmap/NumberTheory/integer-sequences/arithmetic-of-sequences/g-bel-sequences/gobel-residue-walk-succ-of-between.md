@@ -1,6 +1,6 @@
 # Recurrence of the residue walk at interior values
 
-**Recurrence of the residue walk at interior values.** Let $p$, $l$ and $n$ be natural numbers
+Let $p$, $l$ and $n$ be natural numbers
 with $n \ge 1$, write $\tilde g_l$ for the residue walk of $p$ starting at $l$, and write
 $\left(\frac{a}{p}\right)$ for the Jacobi symbol. If $0 < \tilde g_l(n) < p$, then
 

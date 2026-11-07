@@ -1,6 +1,6 @@
 # The clocked universal function is polynomial-time computable
 
-**The clocked universal function is polynomial-time computable.** There are a multi-stack
+There are a multi-stack
 Turing machine with finitely many stacks, labels and internal states, whose input and output
 alphabets are in bijection with the bits, and a polynomial $p$ with natural-number coefficients,
 such that for every code $c$, list of bits $x$ and clock $T \in \mathbb{N}$ the following holds.

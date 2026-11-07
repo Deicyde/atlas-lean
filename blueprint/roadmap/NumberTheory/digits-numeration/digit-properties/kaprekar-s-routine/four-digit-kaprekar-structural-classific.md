@@ -1,6 +1,6 @@
 # Structure of four-digit Kaprekar dynamics in odd bases
 
-**Structure of four-digit Kaprekar dynamics in odd bases.** Let $B > 3$ be an odd integer.
+Let $B > 3$ be an odd integer.
 For a pair of natural numbers $d = (d_1, d_2)$, let $K(d) = (a - e, b - c)$, where
 $a \ge b \ge c \ge e$ are the four numbers $d_1 - 1, B - 1, B - 1, B - d_1$ if $d_2 = 0$, and
 $d_1, d_2 - 1, B - d_2 - 1, B - d_1$ if $d_2 \ne 0$, sorted in decreasing order (subtraction is

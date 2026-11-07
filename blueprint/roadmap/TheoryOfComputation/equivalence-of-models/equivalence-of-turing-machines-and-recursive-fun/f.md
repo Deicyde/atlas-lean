@@ -1,6 +1,6 @@
 # Stack alphabets of the wrapped machine
 
-**Stack alphabets of the wrapped machine.** Let $\mathrm{tr}$ be Mathlib's multi-stack machine
+Let $\mathrm{tr}$ be Mathlib's multi-stack machine
 that evaluates partial recursive codes, with stacks
 $K' = \{\mathrm{main}, \mathrm{rev}, \mathrm{aux}, \mathrm{stack}\}$ and alphabet
 $\Gamma' = \{\mathtt{cons}_l, \mathtt{cons}, \mathtt{bit0}, \mathtt{bit1}\}$. The stacks of the

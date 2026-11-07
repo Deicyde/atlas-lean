@@ -1,6 +1,6 @@
 # Rational subspace
 
-**Rational subspace.** A subspace $V$ of $\mathbb{R}^d$ is rational if $V \cap \mathbb{Z}^d$
+A subspace $V$ of $\mathbb{R}^d$ is rational if $V \cap \mathbb{Z}^d$
 is a full-rank lattice in $V$, that is, a discrete subgroup of $V$ that spans $V$ over
 $\mathbb{R}$.
 

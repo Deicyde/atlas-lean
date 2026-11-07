@@ -1,6 +1,6 @@
 # An applicable simple map negates its window
 
-**An applicable simple map negates its window.** Let $a$ be a keyword of length $m + 1$ and $u$
+Let $a$ be a keyword of length $m + 1$ and $u$
 a binary word of length $n$, and suppose that $a$ is applicable to $u$ at letter $i$. Then the
 simple map $\varphi_i$ of $a$ negates the letters of $u$ at positions $i, \dots, i + m$ and leaves
 every other letter unchanged: for every position $j$, $\varphi_i(u)_j = \neg u_j$ if

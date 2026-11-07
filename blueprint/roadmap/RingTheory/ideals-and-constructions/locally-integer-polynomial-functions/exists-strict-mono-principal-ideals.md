@@ -1,6 +1,6 @@
 # Infinite ascending chains of principal ideals in LIP rings
 
-**Infinite ascending chains of principal ideals in LIP rings.** Let $U \subseteq \mathbb{Z}$ be
+Let $U \subseteq \mathbb{Z}$ be
 infinite, and write $\mathrm{LIP}(U)$ for the ring of locally integer polynomial functions on $U$:
 the functions $U \to \mathbb{Z}$ whose restriction to every finite subset of $U$ agrees with a
 polynomial with integer coefficients. Then there are $g_0, g_1, g_2, \ldots \in \mathrm{LIP}(U)$

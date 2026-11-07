@@ -1,6 +1,6 @@
 # Generalized Cohn triples associated with $(1, 1, 1)$
 
-**Generalized Cohn triples associated with $(1, 1, 1)$.** Let $k$ be a natural number.
+Let $k$ be a natural number.
 For an integer $\ell$, let $P_{1;\ell}$ be the integer matrix with rows $(\ell, 1)$ and
 $(-\ell^2 + 2k\ell + 3\ell - 1, -\ell + 2k + 3)$, let $Q_{1;\ell}$ be the one with rows
 $(k + \ell + 1, 1)$ and $(k^2 - \ell^2 + 3k + \ell + 1, k - \ell + 2)$, and let $R_{1;\ell}$ be

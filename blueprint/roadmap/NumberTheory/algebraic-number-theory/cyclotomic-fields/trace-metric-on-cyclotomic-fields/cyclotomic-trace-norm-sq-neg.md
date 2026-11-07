@@ -1,6 +1,6 @@
 # The squared trace norm is invariant under negation
 
-**The squared trace norm is invariant under negation.** Let $p$ be a positive integer and
+Let $p$ be a positive integer and
 let $K$ be a $p$-th cyclotomic extension of $\mathbb{Q}$. For every $\alpha \in K$, the squared
 trace norm satisfies $\lVert -\alpha \rVert^2 = \lVert \alpha \rVert^2$.
 

@@ -1,6 +1,6 @@
 # Consecutive square-weighted constant of the square of an odd squarefree number
 
-**Consecutive square-weighted constant of the square of an odd squarefree number.** Let $m$
+Let $m$
 be an odd squarefree natural number and let $n = m^2$ with $n \ge 2$. Write $S(n)$ for the set
 of nonzero squares of $\mathbb{Z}/n\mathbb{Z}$. Then there is a positive length $k$ such that
 every sequence $x_1, \dots, x_k$ in $\mathbb{Z}/n\mathbb{Z}$ has a nonempty block of

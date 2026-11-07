@@ -1,6 +1,6 @@
 # Central trinomial recurrence via Motzkin numbers
 
-**Central trinomial recurrence via Motzkin numbers.** Write $T(n)$ for the central trinomial
+Write $T(n)$ for the central trinomial
 coefficient, the coefficient of $X^n$ in $(1 + X + X^2)^n$, and $M(n)$ for the $n$-th Motzkin
 number. For every natural number $n \ge 1$,
 

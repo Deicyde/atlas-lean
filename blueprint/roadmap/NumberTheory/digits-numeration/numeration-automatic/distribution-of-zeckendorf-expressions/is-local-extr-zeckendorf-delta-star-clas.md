@@ -1,6 +1,6 @@
 # Classification of the local extrema of $\delta^\ast$
 
-**Classification of the local extrema of $\delta^\ast$.** Let $L$ and $\tilde L$ form a
+Let $L$ and $\tilde L$ form a
 periodic Zeckendorf pair, let $Q$ and $\tilde Q$ be fundamental sequences of the $L^*$-collection
 $E^*$ and the $\tilde L^*$-collection $\tilde E^*$, let $\bar E^*$ be the $L^*$-closure, and let
 $\delta^*$ be the function determined by $L$, $\tilde L$, $Q$ and $\tilde Q$. For a coefficient

@@ -1,6 +1,6 @@
 # Probability that a random sequence is good
 
-**Probability that a random sequence is good.** Let $\Gamma$ be a finite abelian group and
+Let $\Gamma$ be a finite abelian group and
 $t \ge 0$ an integer. A sequence $g_1, \dots, g_t$ in $\Gamma$ is good if some nonempty set
 $S \subseteq \{1, \dots, t\}$ of indices has $\sum_{i \in S} g_i = 0$ and
 $\sum_{i \in S} 1/\operatorname{ord}(g_i) \le 1$, where $\operatorname{ord}(g_i)$ is the order

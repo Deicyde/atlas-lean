@@ -1,6 +1,6 @@
 # Frequency ratio
 
-**Frequency ratio.** For a continuous function
+For a continuous function
 $u : (\mathbb{R}/2\pi\mathbb{Z})^2 \to \mathbb{R}$, the frequency ratio is the Laplacian energy
 of $u$ divided by the gradient energy of $u$.
 

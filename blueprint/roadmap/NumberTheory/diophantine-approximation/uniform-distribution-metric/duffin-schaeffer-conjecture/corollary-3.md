@@ -1,6 +1,6 @@
 # Koukoulopoulos–Maynard Corollary 3 (Hausdorff dimension of $\mathcal{A}$)
 
-**Koukoulopoulos–Maynard Corollary 3 (Hausdorff dimension of $\mathcal{A}$).** Let $\psi$
+Let $\psi$
 be a function from the positive integers to $[0, 1/2]$. Let $\mathcal{A}(\psi)$ be the set of
 real numbers $\alpha \in [0, 1]$ for which $|\alpha - a/q| \le \psi(q)/q$ has infinitely many
 solutions with $a$ a natural number, $q$ a positive integer and $\gcd(a, q) = 1$. Let $s(\psi)$

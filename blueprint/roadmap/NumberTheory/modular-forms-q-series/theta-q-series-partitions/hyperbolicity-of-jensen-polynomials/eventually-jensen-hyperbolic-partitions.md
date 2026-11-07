@@ -1,6 +1,6 @@
 # Eventual hyperbolicity for partitions into parts $\equiv a \pmod{p}$
 
-**Eventual hyperbolicity for partitions into parts $\equiv a \pmod{p}$.** Let $p$ be a prime,
+Let $p$ be a prime,
 let $a$ be an integer with $1 \le a < p$, and let $d \ge 1$ be an integer. For $m \in \mathbb{N}$
 let $b_{a,p}(m)$ be the number of partitions of $m$ all of whose parts are congruent to $a$
 modulo $p$. Then for all sufficiently large $n$ the Jensen polynomial

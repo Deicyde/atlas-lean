@@ -1,6 +1,6 @@
 # Kollár's recursion for incomplete binomial sums
 
-**Kollár's recursion for incomplete binomial sums.** Let $(a_k)_{k \ge 0}$ be a sequence of
+Let $(a_k)_{k \ge 0}$ be a sequence of
 real numbers and let $m$ and $N$ be positive integers with $m \le N$. Then
 
 $$\sum_{k=0}^{m} \binom{N}{k} a_k =

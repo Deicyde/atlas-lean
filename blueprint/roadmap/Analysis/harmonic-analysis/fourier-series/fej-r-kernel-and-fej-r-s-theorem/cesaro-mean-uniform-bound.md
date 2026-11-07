@@ -1,6 +1,6 @@
 # Quantitative Fejér theorem
 
-**Quantitative Fejér theorem.** Let $T > 0$, let $f$ be a continuous complex-valued function
+Let $T > 0$, let $f$ be a continuous complex-valued function
 on the circle $\mathbb{R}/T\mathbb{Z}$, and write $\sigma_N f$ for its $N$-th Cesàro–Fourier
 mean. Let $\varepsilon > 0$ and $\delta > 0$ be such that $|f(a) - f(b)| < \varepsilon / 2$ for
 all points $a, b$ of the circle at distance less than $\delta$. Then there is

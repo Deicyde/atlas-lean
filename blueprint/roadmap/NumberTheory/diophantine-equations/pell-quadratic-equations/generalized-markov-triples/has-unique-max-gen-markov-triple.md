@@ -1,6 +1,6 @@
 # Unique maximal generalized Markov triple
 
-**Unique maximal generalized Markov triple.** Let $k$ and $b$ be natural numbers. The number
+Let $k$ and $b$ be natural numbers. The number
 $b$ is the maximum of a unique $k$-generalized Markov triple up to order if there is a
 $k$-generalized Markov triple $(a, b, c)$ with $a \le b$ and $c \le b$, and every
 $k$-generalized Markov triple $(a', b, c')$ with $a' \le b$ and $c' \le b$ satisfies

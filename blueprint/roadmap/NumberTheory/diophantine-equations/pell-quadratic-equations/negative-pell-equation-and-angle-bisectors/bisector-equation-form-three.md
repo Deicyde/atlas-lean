@@ -1,6 +1,6 @@
 # Bisector-equation solutions from two solutions of $x^2 - d y^2 = -1$
 
-**Bisector-equation solutions from two solutions of $x^2 - d y^2 = -1$.** Let $d$ be an integer
+Let $d$ be an integer
 and let $a, a_2, b, b_2$ be rational numbers with $a^2 - d a_2^2 = -1$ and $b^2 - d b_2^2 = -1$.
 If $a_2 + b_2 \ne 0$, then $c = (a b_2 + a_2 b) / (a_2 + b_2)$ satisfies
 

@@ -1,6 +1,6 @@
 # Numbers with two comma-children
 
-**Numbers with two comma-children.** Fix a base $b \ge 2$, and say that $n$ has at least two
+Fix a base $b \ge 2$, and say that $n$ has at least two
 comma-children if there are distinct digits $y_1 \ne y_2$ below $b$ that are both comma
 candidates for $n$ in base $b$ (distinct candidates $y$ give distinct children
 $n + b\,(n \bmod b) + y$). Then a positive integer $n < b^2$ has at least two comma-children if

@@ -1,6 +1,6 @@
 # The letter $M$ in $T(Q(\mathrm{SB}(\alpha)))$ marks the ends of runs
 
-**The letter $M$ in $T(Q(\mathrm{SB}(\alpha)))$ marks the ends of runs.** Let
+Let
 $\alpha \in (0, 1)$ be irrational, let $x = Q(\mathrm{SB}(\alpha))$ be the sequence over
 $\{O_L, E_R, O_R, E_L\}$ obtained from the Stern–Brocot representation $\mathrm{SB}(\alpha)$, and
 let $o(1) < o(2) < \cdots$ be the positions $j$ with $x_j \in \{O_L, O_R\}$. Let

@@ -1,6 +1,6 @@
 # The symmetric group of the rationals is closed and highly homogeneous
 
-**The symmetric group of the rationals is closed and highly homogeneous.** Let
+Let
 $\operatorname{Sym}(\mathbb{Q})$ be the group of all permutations of the set $\mathbb{Q}$. Then
 $\operatorname{Sym}(\mathbb{Q})$ is closed in the topology of pointwise convergence on the
 permutations of $\mathbb{Q}$, and it is highly homogeneous: for every natural number $k$ it has a

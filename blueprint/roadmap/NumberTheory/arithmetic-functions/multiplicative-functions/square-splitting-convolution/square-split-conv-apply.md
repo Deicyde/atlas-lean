@@ -1,6 +1,6 @@
 # Value of the square-splitting convolution at a positive integer
 
-**Value of the square-splitting convolution at a positive integer.** For complex arithmetic
+For complex arithmetic
 functions $f$ and $g$ and every natural number $n \ne 0$, the square-splitting convolution of $f$
 and $g$ takes the value $(f \star g)(n) = \sum_{d \in A(n)} f(d)\, g(n/d)$ at $n$, where $A(n)$ is
 the square-splitting divisor set of $n$.

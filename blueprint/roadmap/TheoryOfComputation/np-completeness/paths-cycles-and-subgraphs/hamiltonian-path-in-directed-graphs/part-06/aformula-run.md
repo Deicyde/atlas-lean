@@ -1,6 +1,6 @@
 # HAMPATH emitter, phase A: the clauses of a formula
 
-**HAMPATH emitter, phase A: the clauses of a formula.** Notation: $\mathrm{name}(x)$ is the
+Notation: $\mathrm{name}(x)$ is the
 canonical binary encoding of $x \in \mathbb{N}$ as name-bit symbols; a literal $\ell = (x, p)$
 has tokens $\mathrm{name}(x)$ followed by the polarity marker $\mathrm{lit}(p)$; a clause $C$
 with literals $\ell_1, \dots, \ell_k$ has tokens the concatenated tokens of

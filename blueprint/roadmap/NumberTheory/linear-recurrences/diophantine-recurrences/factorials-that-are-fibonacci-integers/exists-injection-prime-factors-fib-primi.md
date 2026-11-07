@@ -1,6 +1,6 @@
 # Prime factors of the primitive parts of the denominator indices
 
-**Prime factors of the primitive parts of the denominator indices.** Let $I$ and $J$ be finite
+Let $I$ and $J$ be finite
 multisets of natural numbers, every element of which is at least $3$ and different from $6$ and
 $12$, such that no element of $I$ equals an element of $J$ and
 $\prod_{a \in I} \Phi_a / \prod_{b \in J} \Phi_b$ is a natural number, where $\Phi_m$ is the

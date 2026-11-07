@@ -1,6 +1,6 @@
 # Uniqueness of the $2$-adic decomposition of the index of $2$
 
-**Uniqueness of the $2$-adic decomposition of the index of $2$.** Let $p$ be an odd prime and
+Let $p$ be an odd prime and
 write $p - 1 = 2^r u$ with $u$ odd. Then there is exactly one pair $(s, t)$ of natural numbers
 with $s \le r$ and $t \mid u$ such that $g^{2^s t} = 2$ for some primitive root $g$ modulo $p$
 (an element of order $p - 1$ in $\mathbb{Z}/p\mathbb{Z}$).

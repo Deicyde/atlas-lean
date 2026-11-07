@@ -1,6 +1,6 @@
 # Evaluation into the Kripke semantic domain
 
-**Evaluation into the Kripke semantic domain.** Let $t$ be a term of type $T$ in context
+Let $t$ be a term of type $T$ in context
 $\Gamma$ and let $\eta$ be a semantic environment interpreting every variable of $\Gamma$ as a
 semantic value in context $\Delta$. The evaluation $\operatorname{ev}(t, \eta)$ is the semantic
 value of type $T$ in context $\Delta$ defined by recursion on $t$: a variable $x$ evaluates to

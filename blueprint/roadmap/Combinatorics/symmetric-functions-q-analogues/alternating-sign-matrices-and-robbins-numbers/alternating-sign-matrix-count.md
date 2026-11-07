@@ -1,6 +1,6 @@
 # Alternating sign matrix theorem
 
-**Alternating sign matrix theorem.** For every natural number $n$, the number of
+For every natural number $n$, the number of
 $n \times n$ alternating sign matrices equals the Robbins product
 $\prod_{k=0}^{n-1} \frac{(3k+1)!}{(n+k)!}$.
 

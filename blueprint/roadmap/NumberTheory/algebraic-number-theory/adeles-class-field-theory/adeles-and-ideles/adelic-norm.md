@@ -1,6 +1,6 @@
 # Adelic norm
 
-**Adelic norm.** Let $K$ be a number field with ring of integers $\mathcal{O}_K$. For each
+Let $K$ be a number field with ring of integers $\mathcal{O}_K$. For each
 infinite place $w$ of $K$ let $K_w$ be the completion of $K$ at $w$, with the absolute value
 $\|\cdot\|_w$ extending $w$, and let $m_w$ be $1$ if $w$ is real and $2$ if $w$ is complex. For
 each height-one prime $v$ of $\mathcal{O}_K$ let $K_v$ be the $v$-adic completion of $K$, with

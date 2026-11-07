@@ -1,6 +1,6 @@
 # Simons-type identity for generalized central binomial coefficients
 
-**Simons-type identity for generalized central binomial coefficients.** Let $\binom{a}{b}$
+Let $\binom{a}{b}$
 denote the generalized binomial coefficient $\Gamma(a+1)/(\Gamma(b+1)\Gamma(a-b+1))$. For every
 natural number $n$ and every real $v > -1$,
 

@@ -1,6 +1,6 @@
 # Huang–Li inequality for the local factors $h_q$
 
-**Huang–Li inequality for the local factors $h_q$.** Let $\lambda$ be the Carmichael function,
+Let $\lambda$ be the Carmichael function,
 and let $\Delta_q$ and $h_q$ be the count and the local factor for primitive λ-roots. Let
 $m, n > 1$ be coprime natural numbers and let $q$ be a prime dividing $\lambda(mn)$. Then
 $h_q(m)\,h_q(n) \le h_q(mn)$. Moreover, $h_q(m)\,h_q(n) < h_q(mn)$ if and only if at least one

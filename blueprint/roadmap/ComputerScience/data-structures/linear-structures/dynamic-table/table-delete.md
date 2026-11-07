@@ -1,6 +1,6 @@
 # Deletion from a dynamic table
 
-**Deletion from a dynamic table.** Let $T$ be a dynamic table with slots $s_0, \dots, s_{m-1}$,
+Let $T$ be a dynamic table with slots $s_0, \dots, s_{m-1}$,
 each empty or holding an item, and item count $n \le m$. Deleting the last item of $T$ gives the
 following table. If $n = 0$, the result is $T$ itself. Otherwise, if $4(n-1) < m$, that is, the
 load factor after deletion is strictly below $1/4$, the table contracts: the result has slots

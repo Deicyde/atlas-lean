@@ -1,6 +1,6 @@
 # Offset step extension of Sury's identity, Lucas form
 
-**Offset step extension of Sury's identity, Lucas form.** Let $F_n$ and $L_n$ be the
+Let $F_n$ and $L_n$ be the
 Fibonacci and Lucas numbers at integer indices. For all natural numbers $j$ and $n$ and every
 integer $k$ with $|k| < j$,
 

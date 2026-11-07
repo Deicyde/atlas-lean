@@ -1,6 +1,6 @@
 # Run of a HAMPATH-verifier counter comparison
 
-**Run of a HAMPATH-verifier counter comparison.** Let $i$ be one of the four counter
+Let $i$ be one of the four counter
 comparisons of the HAMPATH verifier, with first counter $\mathrm{ca}(i)$ and second counter
 $\mathrm{cb}(i)$, and let $m, n \in \mathbb{N}$. Suppose the stacks $\sigma$ hold $m$ units (bit
 symbols of true) on $\mathrm{ca}(i)$, $n$ units on $\mathrm{cb}(i)$, and nothing on the scratch

@@ -1,6 +1,6 @@
 # Positively Poisson stable sequence
 
-**Positively Poisson stable sequence.** A sequence $x = (x_0, x_1, x_2, \dots)$ with values in
+A sequence $x = (x_0, x_1, x_2, \dots)$ with values in
 a set $A$ is positively Poisson stable if there is an index $n_0$ such that for every length
 $\ell$ there is a shift $p \ge 1$ with $x_{n_0 + p + t} = x_{n_0 + t}$ for all $t < \ell$; that
 is, every initial block of the tail $(x_{n_0}, x_{n_0 + 1}, \dots)$ occurs again at a later

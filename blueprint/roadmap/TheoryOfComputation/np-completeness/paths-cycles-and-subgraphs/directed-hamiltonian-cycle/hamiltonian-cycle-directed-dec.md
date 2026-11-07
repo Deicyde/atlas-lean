@@ -1,6 +1,6 @@
 # The directed Hamiltonian cycle decision problem
 
-**The directed Hamiltonian cycle decision problem.** The decision problem HAMILTONIAN CYCLE
+The decision problem HAMILTONIAN CYCLE
 (DIRECTED) accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
 encoding, to an instance $(n, E)$, consisting of a natural number $n$ and a finite list $E$ of
 ordered pairs of natural numbers, such that $(n, E)$ is well formed ($n > 0$, $E$ has no

@@ -1,6 +1,6 @@
 # Elaboration of raw STLC terms
 
-**Elaboration of raw STLC terms.** Assume equality of base types is decidable. Elaboration in
+Assume equality of base types is decidable. Elaboration in
 a context $\Gamma$ of simple types sends a raw term either to failure or to a checked term in
 $\Gamma$ (a simple type together with an intrinsically typed term of that type in $\Gamma$), by
 recursion on the raw term. A variable with de Bruijn index $n$ elaborates to the variable at

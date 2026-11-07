@@ -1,6 +1,6 @@
 # Tauraso's Cassini-type identity
 
-**Tauraso's Cassini-type identity.** Let $f_n$ be the Fibonacci numbers, with $f_0 = 0$ and
+Let $f_n$ be the Fibonacci numbers, with $f_0 = 0$ and
 $f_1 = 1$. For natural numbers $n, m$ put $L_{n,m} = f_{n+1} f_m + f_n f_{m+1}$ and
 $a_n = f_{n+1} f_{n-1} + f_n^2$, where $n - 1$ is truncated subtraction. Then
 $L_{n,m} = f_{n+1} f_m + f_n f_{m+1}$ for all $n, m \ge 1$, $L_{n,n-1} = a_n$ for all

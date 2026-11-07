@@ -1,6 +1,6 @@
 # Lucas-balancing numbers (shifted indexing)
 
-**Lucas-balancing numbers (shifted indexing).** The sequence of integers $(C_n)_{n \ge 0}$
+The sequence of integers $(C_n)_{n \ge 0}$
 defined by $C_0 = 3$, $C_1 = 1$ and $C_{n+2} = 6 C_{n+1} - C_n$ for all $n \ge 0$.
 
 This is the indexing of Mohapatra, Bhoi and Panda, forced by the values $C_2 = 3$ and

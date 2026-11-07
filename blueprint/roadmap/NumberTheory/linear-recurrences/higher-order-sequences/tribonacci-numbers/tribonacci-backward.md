@@ -1,6 +1,6 @@
 # Backward half of the two-sided Tribonacci sequence
 
-**Backward half of the two-sided Tribonacci sequence.** The integer sequence $(B_m)_{m \ge 0}$
+The integer sequence $(B_m)_{m \ge 0}$
 is defined by $B_0 = 0$, $B_1 = 0$, $B_2 = 1$ and $B_{m+3} = B_m - B_{m+1} - B_{m+2}$ for
 every $m \ge 0$.
 

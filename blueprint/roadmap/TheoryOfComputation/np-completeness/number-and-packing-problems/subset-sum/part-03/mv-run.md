@@ -1,6 +1,6 @@
 # Subset-sum emitter: moving the pair bits
 
-**Subset-sum emitter: moving the pair bits.** Let $r = (b_1, \dots, b_m)$ be a list of bits,
+Let $r = (b_1, \dots, b_m)$ be a list of bits,
 $v$ a Boolean state, $c$ a natural number and $S$ stack contents such that stack $X$ holds
 $\mathrm{bit}(b_1), \dots, \mathrm{bit}(b_m)$, top first, and stack $C$ holds exactly $c$ copies of
 the counter unit $U$. Then $m + 1$ steps of the subset-sum emitter machine lead from label

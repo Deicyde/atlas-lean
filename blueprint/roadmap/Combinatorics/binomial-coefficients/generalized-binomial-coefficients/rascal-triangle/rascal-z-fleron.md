@@ -1,6 +1,6 @@
 # Fleron's recurrence for Rascal numbers
 
-**Fleron's recurrence for Rascal numbers.** For integers $n$ and $k$ with $n \ge 2$ and
+For integers $n$ and $k$ with $n \ge 2$ and
 $0 < k < n$, the Rascal numbers $R_{n,k}$ satisfy
 $R_{n,k} = R_{n-1,k} + R_{n-1,k-1} - R_{n-2,k-1} + 1$.
 

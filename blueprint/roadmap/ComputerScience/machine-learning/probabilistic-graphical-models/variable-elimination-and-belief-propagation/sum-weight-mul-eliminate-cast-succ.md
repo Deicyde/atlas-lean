@@ -1,6 +1,6 @@
 # Summing out the last vertex preserves weighted sums at the other vertices
 
-**Summing out the last vertex preserves weighted sums at the other vertices.** Let $m$ be a
+Let $m$ be a
 pairwise tree model on the vertices $0, \dots, n + 1$ with values in a finite type $\alpha$, and
 let $m'$ be the model on the vertices $0, \dots, n$ obtained from $m$ by summing out its last
 vertex. Write $w_m$ and $w_{m'}$ for their unnormalized weights. Then for every vertex $v \le n$

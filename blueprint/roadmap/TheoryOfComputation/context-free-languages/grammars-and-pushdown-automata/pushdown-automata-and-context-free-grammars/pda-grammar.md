@@ -1,6 +1,6 @@
 # Triple grammar of a pushdown automaton
 
-**Triple grammar of a pushdown automaton.** Let $M$ be a pushdown automaton over the alphabet
+Let $M$ be a pushdown automaton over the alphabet
 $T$ with a finite set $\sigma$ of states, a finite stack alphabet $\Gamma$, start state $q_0$
 and initial stack symbol $Z_0$, and let $T_0$ be a finite set of letters. The triple grammar of
 $M$ and $T_0$ is the context-free grammar over $T$ whose nonterminals are an initial

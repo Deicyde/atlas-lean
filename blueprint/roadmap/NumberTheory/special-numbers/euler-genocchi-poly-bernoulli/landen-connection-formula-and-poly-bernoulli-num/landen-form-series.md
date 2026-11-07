@@ -1,6 +1,6 @@
 # Landen form series
 
-**Landen form series.** For real numbers $a, b, c, d$, viewed as the matrix $g$ with rows
+For real numbers $a, b, c, d$, viewed as the matrix $g$ with rows
 $(a, b)$ and $(c, d)$, this is the power series
 $u \cdot G_g(u) = \frac{cu}{a - cu} - \frac{du}{b - du} \in \mathbb{R}[[u]]$, where
 $G_g(t) = \frac{c}{a - ct} - \frac{d}{b - dt}$. Here the power series of $\frac{cu}{a - cu}$ is

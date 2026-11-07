@@ -1,6 +1,6 @@
 # Jaikin-Zapirain–Linton theorem: one-relator groups are coherent
 
-**Jaikin-Zapirain–Linton theorem: one-relator groups are coherent.** Let $G$ be a one-relator
+Let $G$ be a one-relator
 group and $K$ a field. Then $G$ is a coherent group and the group algebra $K[G]$ is a (left)
 coherent ring.
 

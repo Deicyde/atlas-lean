@@ -1,6 +1,6 @@
 # Bogopolski's Cayley–Hamilton analogue fails for free groups (Kourovka 17.32)
 
-**Bogopolski's Cayley–Hamilton analogue fails for free groups (Kourovka 17.32).** There are a
+There are a
 natural number $n$, an element $w$ of the free group $F_n$ of rank $n$ and an automorphism
 $\varphi$ of $F_n$ such that $w, \varphi(w), \dots, \varphi^n(w)$ generate $F_n$ but
 $w, \varphi(w), \dots, \varphi^{n-1}(w)$ do not.

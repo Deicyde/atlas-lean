@@ -1,6 +1,6 @@
 # Li's coefficients $b_1(r, m, j, k)$
 
-**Li's coefficients $b_1(r, m, j, k)$.** These rational numbers, indexed by natural numbers
+These rational numbers, indexed by natural numbers
 $r, m, j, k$, are defined by recursion on $r$ from Li's coefficients $c$, $d$, $c_1$ and $d_1$.
 All values $b_1(0, m, j, k)$ are $0$, $b_1(1, 0, 0, 2) = 1$, and all other values
 $b_1(1, m, j, k)$ are $0$. For $s \ge 1$ let $G = \lfloor (s-1)/2 \rfloor$ and

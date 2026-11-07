@@ -1,6 +1,6 @@
 # Jacobsthal–Lucas–Oresme convolution
 
-**Jacobsthal–Lucas–Oresme convolution.** Let $j_m$ denote the Jacobsthal–Lucas numbers and
+Let $j_m$ denote the Jacobsthal–Lucas numbers and
 let $O_m = m/2^m$ denote the Oresme numbers. For every natural number $n$,
 $\sum_{k=0}^{n} j_k O_{n-k} = \frac{2}{9} j_{n+1} - \frac{2}{9 \cdot 2^n}$.
 

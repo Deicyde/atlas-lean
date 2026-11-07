@@ -1,6 +1,6 @@
 # Deleting the successor in a singly linked list
 
-**Deleting the successor in a singly linked list.** Fix a capacity $n$, let $s$ be a store
+Fix a capacity $n$, let $s$ be a store
 assigning to each identity below $n$ either nothing or a singly linked list node whose next
 pointer is an identity below $n$ or NIL, and let $y$ be an identity such that $s(y)$ is a node.
 Deleting after $y$ returns the store that agrees with $s$ except at $y$, where it holds the node

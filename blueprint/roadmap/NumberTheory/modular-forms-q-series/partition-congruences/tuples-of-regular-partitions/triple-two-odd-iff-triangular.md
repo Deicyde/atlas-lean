@@ -1,6 +1,6 @@
 # Parity of triples of 2-regular partitions
 
-**Parity of triples of 2-regular partitions.** For a natural number $n$, let $T_2(n)$ be the
+For a natural number $n$, let $T_2(n)$ be the
 number of triples of $2$-regular partitions (partitions with no even part) whose sizes add up to
 $n$. Then $T_2(n)$ is odd if and only if $n$ is a triangular number, that is, $n = m(m+1)/2$
 for some natural number $m$.

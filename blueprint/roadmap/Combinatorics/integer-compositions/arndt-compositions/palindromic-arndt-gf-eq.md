@@ -1,6 +1,6 @@
 # Generating function of palindromic Arndt compositions
 
-**Generating function of palindromic Arndt compositions.** Let $PA(x, y, z)$ be the
+Let $PA(x, y, z)$ be the
 generating function of nonempty palindromic Arndt compositions by weight ($x$), number of parts
 ($y$) and middle summand ($z$), and let $F(x, y, z)$ be the generating function of down/up
 compositions $\sigma_1 > \sigma_2 < \sigma_3 > \cdots$ with an even number of parts by weight

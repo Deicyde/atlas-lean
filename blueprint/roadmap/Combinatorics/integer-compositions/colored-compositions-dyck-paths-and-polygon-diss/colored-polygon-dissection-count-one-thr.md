@@ -1,6 +1,6 @@
 # Dissections of a pentagon into two polygons
 
-**Dissections of a pentagon into two polygons.** With one color for every polygon, that is
+With one color for every polygon, that is
 $\gamma(j) = 1$ for all $j$, the colored polygon dissection count satisfies $p_{3,2}(\gamma) = 5$:
 a convex pentagon has five diagonals, and each one cuts it into two polygons.
 

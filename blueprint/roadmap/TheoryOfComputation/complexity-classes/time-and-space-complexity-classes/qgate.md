@@ -1,6 +1,6 @@
 # Encoded 2-local quantum gate
 
-**Encoded 2-local quantum gate.** A 2-local quantum gate is encoded as a triple $(i, j, e)$
+A 2-local quantum gate is encoded as a triple $(i, j, e)$
 of natural numbers $i$ and $j$, the qubits it acts on, and a list $e$ of pairs of encoded
 rational numbers, the real and imaginary parts of the entries of its $4 \times 4$ matrix in
 row-major order.

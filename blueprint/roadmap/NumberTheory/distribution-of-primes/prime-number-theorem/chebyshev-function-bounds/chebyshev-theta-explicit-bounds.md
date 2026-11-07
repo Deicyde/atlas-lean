@@ -1,6 +1,6 @@
 # Chebyshev's explicit bounds for the theta function
 
-**Chebyshev's explicit bounds for the theta function.** Let $\theta(x) = \sum_{p \le x} \log p$,
+Let $\theta(x) = \sum_{p \le x} \log p$,
 the sum running over primes, and let
 
 $$A = \log \frac{2^{1/2} \, 3^{1/3} \, 5^{1/5}}{30^{1/30}}.$$

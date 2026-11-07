@@ -1,6 +1,6 @@
 # SEGMENTS-INTERSECT as a Boolean formula
 
-**SEGMENTS-INTERSECT as a Boolean formula.** Let $K$ be a field with a linear order, let
+Let $K$ be a field with a linear order, let
 $p_1, p_2, p_3, p_4 \in K^2$, and write $d_1 = \mathrm{DIRECTION}(p_3, p_4, p_1)$,
 $d_2 = \mathrm{DIRECTION}(p_3, p_4, p_2)$, $d_3 = \mathrm{DIRECTION}(p_1, p_2, p_3)$ and
 $d_4 = \mathrm{DIRECTION}(p_1, p_2, p_4)$. The value returned by

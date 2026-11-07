@@ -1,6 +1,6 @@
 # Lower bound $\Gamma(x + 1) > (x/e)^x$ for the Gamma function
 
-**Lower bound $\Gamma(x + 1) > (x/e)^x$ for the Gamma function.** For every real number
+For every real number
 $x \ge 1$, $\Gamma(x + 1) > (x/e)^x$.
 
 ## Sources

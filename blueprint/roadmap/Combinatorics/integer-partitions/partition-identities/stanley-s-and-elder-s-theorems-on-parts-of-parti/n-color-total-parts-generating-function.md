@@ -1,6 +1,6 @@
 # Generating functions for the total number of parts of $n$-color partitions
 
-**Generating functions for the total number of parts of $n$-color partitions.** For
+For
 $m \ge 0$ let $T_o(m)$ (resp. $T_e(m)$) be the total number of parts, counted with
 multiplicity, over the $n$-color partitions of $m$ having an odd (resp. even) number of parts.
 Then, as formal power series in $q$ with rational coefficients,

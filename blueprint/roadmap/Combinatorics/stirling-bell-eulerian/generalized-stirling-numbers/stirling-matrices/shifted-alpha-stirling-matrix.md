@@ -1,6 +1,6 @@
 # Shifted α-Stirling matrix
 
-**Shifted α-Stirling matrix.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $\alpha = (\alpha_j)_{j \ge 1}$ be a sequence in $R$, and let $n$ be a natural number. The shifted
 $\alpha$-Stirling matrix $\mathsf{S}_\alpha(n)$ is the $n \times n$ matrix over $R$ whose entry in
 row $i$ and column $j$ (counted from $0$) is the shifted $\alpha$-Stirling entry

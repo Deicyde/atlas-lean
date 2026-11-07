@@ -1,6 +1,6 @@
 # Hua's class number bound
 
-**Hua's class number bound.** For every positive integer $D$, the Gauss class number
+For every positive integer $D$, the Gauss class number
 $h(-4D)$, the number of primitive, reduced, positive definite binary quadratic forms of
 discriminant $-4D$, satisfies $h(-4D) < \frac{4}{\pi} \sqrt{D} \log(2e\sqrt{D})$, where $\log$ is
 the natural logarithm.

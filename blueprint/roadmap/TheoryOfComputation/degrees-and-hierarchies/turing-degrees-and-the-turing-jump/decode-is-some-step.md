@@ -1,6 +1,6 @@
 # One step of the course-of-values recursion for definedness
 
-**One step of the course-of-values recursion for definedness.** Write $\langle a, b \rangle$
+Write $\langle a, b \rangle$
 for the pairing bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ of the Gödel numbering.
 The step takes an argument of the unit type, which it ignores, and a list $L$ of natural numbers;
 for $i \in \mathbb{N}$ write $L_i$ for the entry of $L$ at position $i$ (counting from $0$), with

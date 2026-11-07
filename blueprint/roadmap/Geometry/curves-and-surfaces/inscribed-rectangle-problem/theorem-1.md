@@ -1,6 +1,6 @@
 # Hugelmeyer's theorem on aspect ratios of inscribed rectangles
 
-**Hugelmeyer's theorem on aspect ratios of inscribed rectangles.** Let $\gamma$ be a smooth Jordan
+Let $\gamma$ be a smooth Jordan
 curve, that is, a map from the unit circle to $\mathbb{R}^2$ that is a $C^\infty$ immersion and a
 topological embedding, and let $X$ be the set of all $r \in [0, 1]$ such that some rectangle
 inscribed in $\gamma$ has aspect ratio $\tan(r\pi/4)$. Then the Lebesgue measure of $X$ is at

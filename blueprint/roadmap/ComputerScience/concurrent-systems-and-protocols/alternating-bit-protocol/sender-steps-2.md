@@ -1,6 +1,6 @@
 # Sender transitions of the alternating-bit protocol with data
 
-**Sender transitions of the alternating-bit protocol with data.** The transitions of each
+The transitions of each
 sender state, as a list of pairs of a label and a successor state, for bits $b$ and $d$:
 $\mathsf{accept}(b)$ inputs on $\mathsf{acc}(d)$ and moves to $\mathsf{transmit}(b, d)$, for
 $d = \mathrm{false}$ and then $d = \mathrm{true}$; $\mathsf{transmit}(b, d)$ outputs on

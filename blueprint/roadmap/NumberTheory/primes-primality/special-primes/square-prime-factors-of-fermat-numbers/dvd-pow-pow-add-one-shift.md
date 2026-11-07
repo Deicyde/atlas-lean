@@ -1,6 +1,6 @@
 # Divisibility of later generalized Fermat numbers
 
-**Divisibility of later generalized Fermat numbers.** For natural numbers $a$, $b$ and $m$
+For natural numbers $a$, $b$ and $m$
 write $F_m(a, b) = a^{b^m} + 1$. Let $a, b, D \ge 2$ and $n$ be natural numbers such that $D$
 divides $F_n(a, b)$. If $b$ is odd, then $D$ divides $F_{n+k}(a, b)$ for every $k \ge 1$. If $b$
 is even and $D \ge 3$, then $D$ does not divide $F_{n+k}(a, b)$ for any $k \ge 1$.

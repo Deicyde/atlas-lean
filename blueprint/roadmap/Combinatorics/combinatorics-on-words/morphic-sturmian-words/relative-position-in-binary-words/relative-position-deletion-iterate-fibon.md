@@ -1,6 +1,6 @@
 # Relative position of iterated deletions of the Fibonacci word
 
-**Relative position of iterated deletions of the Fibonacci word.** Let
+Let
 $f = abaababaabaab\cdots$ be the Fibonacci word, the fixed point of $a \mapsto ab$,
 $b \mapsto a$. Let $D$ be the operator on infinite words over $\{a, b\}$ that deletes the first
 $b$ and then the first $a$ of the result, and for such a word $v$ let

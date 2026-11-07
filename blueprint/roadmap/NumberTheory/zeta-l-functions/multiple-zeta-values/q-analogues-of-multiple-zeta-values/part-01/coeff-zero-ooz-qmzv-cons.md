@@ -1,6 +1,6 @@
 # Nonempty Ohno–Okuda–Zudilin qMZVs have no constant term
 
-**Nonempty Ohno–Okuda–Zudilin qMZVs have no constant term.** For every nonempty index
+For every nonempty index
 $(k_1, \dots, k_r)$ of natural numbers, the constant term of the Ohno–Okuda–Zudilin qMZV
 $\zeta_q^{\mathrm{OOZ}}(k_1, \dots, k_r)$ is $0$.
 

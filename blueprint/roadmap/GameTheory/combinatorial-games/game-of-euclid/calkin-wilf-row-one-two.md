@@ -1,6 +1,6 @@
 # The first rows of the Calkin–Wilf tree
 
-**The first rows of the Calkin–Wilf tree.** As lists of numerator–denominator pairs, row $1$
+As lists of numerator–denominator pairs, row $1$
 of the Calkin–Wilf tree is $(1, 2), (2, 1)$ and row $2$ is $(1, 3), (3, 2), (2, 3), (3, 1)$, in
 this order.
 

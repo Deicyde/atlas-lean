@@ -1,6 +1,6 @@
 # Exact cost of Rabin–Karp matching on repeated-symbol words
 
-**Exact cost of Rabin–Karp matching on repeated-symbol words.** Let $d$ be a base, $q > 0$ a
+Let $d$ be a base, $q > 0$ a
 modulus, $a$ a natural number and $m$, $n$ natural numbers with $0 < m \le n$. Put
 $t = \bigl(a \sum_{i\lt m} d^i\bigr) \bmod q$, and let $\beta = 1$ if
 $t < (a \cdot (d^{m-1} \bmod q)) \bmod q$ and $\beta = 0$ otherwise. Then Rabin–Karp matching

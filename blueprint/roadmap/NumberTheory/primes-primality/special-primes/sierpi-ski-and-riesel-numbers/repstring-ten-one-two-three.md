@@ -1,6 +1,6 @@
 # A $10$-repstring
 
-**A $10$-repstring.** The $10$-repstring with $k = 1$, $z = 2$ and $t = 3$ is
+The $10$-repstring with $k = 1$, $z = 2$ and $t = 3$ is
 $1_{10}^{(2;3)} = 1001001$.
 
 ## Sources

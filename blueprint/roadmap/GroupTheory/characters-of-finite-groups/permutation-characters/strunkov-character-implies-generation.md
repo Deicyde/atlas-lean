@@ -1,6 +1,6 @@
 # Strunkov's two-generation criterion (Kourovka 12.79)
 
-**Strunkov's two-generation criterion (Kourovka 12.79).** The assertion that for every finite
+The assertion that for every finite
 group $G$ and all $a, b \in G$, if Strunkov's class function
 $1^G - 1_{\langle a \rangle}^G - 1_{\langle b \rangle}^G - 1_{\langle ab \rangle}^G + 2$ is a
 character of $G$, then $a$ and $b$ generate $G$. Here $1_H^G$ is the permutation character of $G$

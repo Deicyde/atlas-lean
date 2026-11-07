@@ -1,6 +1,6 @@
 # Partial sums of the monic Chebyshev polynomials
 
-**Partial sums of the monic Chebyshev polynomials.** For $n \ge 0$, $F_n(X)$ is the
+For $n \ge 0$, $F_n(X)$ is the
 polynomial with integer coefficients
 
 $$F_n(X) = 1 + \sum_{k=1}^{n} \bar T_k(X),$$

@@ -1,6 +1,6 @@
 # When the singleton $\{1\}$ is sum-free
 
-**When the singleton $\{1\}$ is sum-free.** Let $m \ge 1$ and $l$ be natural
+Let $m \ge 1$ and $l$ be natural
 numbers. The singleton $\{1\}$ is not $l$-sum-free modulo $m$ if and only if
 $l \equiv 1 \pmod{m}$.
 

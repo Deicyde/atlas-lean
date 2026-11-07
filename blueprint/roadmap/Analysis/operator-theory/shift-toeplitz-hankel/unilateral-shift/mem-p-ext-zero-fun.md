@@ -1,3 +1,3 @@
 # Zero-extended finite tuples are square-summable
 
-**Zero-extended finite tuples are square-summable.** A finitely supported sequence is in `ℓ²`.
+A finitely supported sequence is in `ℓ²`.

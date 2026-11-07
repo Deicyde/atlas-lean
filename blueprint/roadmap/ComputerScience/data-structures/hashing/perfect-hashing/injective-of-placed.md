@@ -1,6 +1,6 @@
 # Placement implies secondary injectivity
 
-**Placement implies secondary injectivity.** Let $T$ be a two-level perfect hash table
+Let $T$ be a two-level perfect hash table
 with $b$ buckets and primary hash $h$, and for each bucket $i$ let $m_i$ be its secondary table
 size and $h_i$ its secondary hash. Suppose every binding $(k, v)$ held in slot $j$ of bucket $i$
 satisfies $h(k) \bmod b = i$ and $j = h_i(k) \bmod m_i$. Then for every bucket $i$ and all keys

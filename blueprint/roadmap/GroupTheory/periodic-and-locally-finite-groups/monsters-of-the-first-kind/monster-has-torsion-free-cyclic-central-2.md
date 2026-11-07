@@ -1,6 +1,5 @@
 # Not every monster of the first kind is a torsion-free group modulo a central cyclic subgroup
 
-**Not every monster of the first kind is a torsion-free group modulo a central cyclic subgroup.**
 It is not the case that for every monster of the first kind $M$ there are a torsion-free group $E$
 and a cyclic subgroup $C$ contained in the center of $E$ with $E / C \cong M$. So Kourovka
 Problem 14.104 has a negative answer.

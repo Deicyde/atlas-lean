@@ -1,6 +1,6 @@
 # Recurrence for the odd harmonic numbers
 
-**Recurrence for the odd harmonic numbers.** For every natural number $n$, the odd harmonic
+For every natural number $n$, the odd harmonic
 numbers satisfy $O_{n+1} = O_n + \frac{1}{2n+1}$.
 
 ## Sources

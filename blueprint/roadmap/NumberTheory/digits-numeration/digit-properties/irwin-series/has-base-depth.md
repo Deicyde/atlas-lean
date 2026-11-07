@@ -1,6 +1,6 @@
 # Base depth of a real number
 
-**Base depth of a real number.** For a natural number $b$, a real number $x$ and a natural
+For a natural number $b$, a real number $x$ and a natural
 number $l$, the number $x$ has base-$b$ depth $l$ when $x = z / b^l$ for some integer $z$, and for
 no $q < l$ is there an integer $z$ with $x = z / b^q$. Thus $l$ is the least exponent for which
 $x$ can be written as an integer divided by $b^l$.

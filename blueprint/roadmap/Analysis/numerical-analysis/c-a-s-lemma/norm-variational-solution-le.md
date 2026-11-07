@@ -1,3 +1,3 @@
 # Stability bound for the variational solution
 
-**Stability bound for the variational solution.** Stability of the variational solution: `‖u‖ ≤ ‖L‖ / α`.
+Stability of the variational solution: `‖u‖ ≤ ‖L‖ / α`.

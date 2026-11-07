@@ -1,6 +1,6 @@
 # Ramanujan graphs give Weil numbers
 
-**Ramanujan graphs give Weil numbers.** Let $q$ be a natural number and let $A$ be a symmetric
+Let $q$ be a natural number and let $A$ be a symmetric
 $n \times n$ matrix with integer entries such that every complex root $\mu \ne q + 1$ of its
 characteristic polynomial satisfies $|\mu| \le 2\sqrt{q}$. Let $\mu \ne q + 1$ be a complex root
 of the characteristic polynomial of $A$ and let $\alpha \in \mathbb{C}$ satisfy

@@ -1,6 +1,6 @@
 # Symmetric groups have many irreducible characters of equal degree
 
-**Symmetric groups have many irreducible characters of equal degree.** Moretó's conjecture
+Moretó's conjecture
 holds: for every natural number $k$ there is a natural number $n_0$ such that for every
 $n \ge n_0$ there are a natural number $d$ and irreducible representations
 $\rho_1, \dots, \rho_k$ of the symmetric group $S_n$ into $\mathrm{GL}_d(\mathbb{C})$ that are

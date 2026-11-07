@@ -1,3 +1,3 @@
 # Fitted values of kernel ridge regression
 
-**Fitted values of kernel ridge regression.** The fitted values of kernel ridge regression are `K (K + λ I)⁻¹ y`.
+The fitted values of kernel ridge regression are `K (K + λ I)⁻¹ y`.

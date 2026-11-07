@@ -1,6 +1,6 @@
 # Delange's series vanishes at zero
 
-**Delange's series vanishes at zero.** For every natural number $q$, Delange's series $h$ in
+For every natural number $q$, Delange's series $h$ in
 base $q$ satisfies $h(0) = 0$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The first-points condition for $s = 0$
 
-**The first-points condition for $s = 0$.** For every $n \ge 0$ and every permutation
+For every $n \ge 0$ and every permutation
 $\sigma$ of $\{0, \dots, n-1\}$, the first $0$ points of $\sigma$ lie in pairwise distinct
 cycles: there are no such points, so the condition is vacuous.
 

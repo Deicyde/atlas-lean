@@ -1,6 +1,6 @@
 # Interval sums with unbounded representation counts (Erdős Problem 358)
 
-**Interval sums with unbounded representation counts (Erdős Problem 358).** There is a
+There is a
 strictly increasing sequence $a_0 < a_1 < a_2 < \cdots$ of positive integers such that the
 number $f(n)$ of pairs $(u, v)$ of natural numbers with $u \le v$ and
 $a_u + a_{u+1} + \cdots + a_v = n$ tends to infinity as $n \to \infty$.

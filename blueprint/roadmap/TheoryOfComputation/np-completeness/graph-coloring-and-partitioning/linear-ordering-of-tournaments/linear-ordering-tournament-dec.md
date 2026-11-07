@@ -1,6 +1,6 @@
 # LINEAR ORDERING (TOURNAMENTS) as a decision problem
 
-**LINEAR ORDERING (TOURNAMENTS) as a decision problem.** The decision problem LINEAR
+The decision problem LINEAR
 ORDERING (TOURNAMENTS) accepts a bitstring $x$ exactly when $x$ decodes, under the canonical
 bitstring encoding of triples of a natural number, a list of pairs of natural numbers and a
 natural number, to an instance $(n, E, K)$ that is well formed ($n > 0$ and $E$ is a tournament

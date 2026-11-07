@@ -1,6 +1,6 @@
 # Second moment of $\omega_1$ over $h$-free polynomials
 
-**Second moment of $\omega_1$ over $h$-free polynomials.** Let $F$ be a finite field with $q$
+Let $F$ be a finite field with $q$
 elements, let $h \ge 2$ and let $\varepsilon > 0$. Let $\omega_1(f)$ be the number of monic
 irreducible $P$ dividing $f$ exactly once, write $S_h \cap M_n$ for the set of $h$-free monic
 polynomials of degree $n$ over $F$ and $|P| = q^{\deg P}$, and let

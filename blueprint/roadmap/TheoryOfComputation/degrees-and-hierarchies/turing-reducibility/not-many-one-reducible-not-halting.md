@@ -1,6 +1,6 @@
 # The complement of the halting set is not many-one reducible to it
 
-**The complement of the halting set is not many-one reducible to it.** There is no computable
+There is no computable
 function $f : \mathbb{N} \to \mathbb{N}$ such that, for every $n$, $n$ is outside the halting set
 if and only if $f(n)$ is in the halting set.
 

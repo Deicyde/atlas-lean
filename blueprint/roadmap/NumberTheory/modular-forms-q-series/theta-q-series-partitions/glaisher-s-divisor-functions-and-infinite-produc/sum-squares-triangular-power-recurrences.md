@@ -1,6 +1,6 @@
 # Recurrences for sums of squares and sums of triangular numbers
 
-**Recurrences for sums of squares and sums of triangular numbers.** Let $m \ge 1$ be an
+Let $m \ge 1$ be an
 integer. For $n \ge 0$, let $r_m(n)$ be the number of $x \in \mathbb{Z}^m$ with
 $x_1^2 + \dots + x_m^2 = n$, and let $t_m(n)$ be the number of $x \in \mathbb{Z}_{\ge 0}^m$ with
 $\sum_{i=1}^{m} x_i(x_i+1)/2 = n$. Let $\sigma$ be the sum-of-divisors function, and set

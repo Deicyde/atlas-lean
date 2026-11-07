@@ -1,6 +1,6 @@
 # Insertion specification for 2-3 trees
 
-**Insertion specification for 2-3 trees.** Let $\alpha$ be linearly ordered, let
+Let $\alpha$ be linearly ordered, let
 $x \in \alpha$, and let $t$ be a 2-3 tree of height $h$. An insertion result of height $h$ meets
 the specification for inserting $x$ into $t$ when the following holds. If it is a single tree
 $t'$ of height $h$, then $t'$ is ordered and its inorder traversal equals the ordered insertion

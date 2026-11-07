@@ -1,6 +1,6 @@
 # Scaled classical spectra lie in the $n$-spectra
 
-**Scaled classical spectra lie in the $n$-spectra.** Let $n \ge 1$ be a natural number and
+Let $n \ge 1$ be a natural number and
 write $L_k$ and $M_k$ for the $k$-Lagrange and $k$-Markoff spectra, so that $L_1$ and $M_1$
 are the classical Lagrange and Markoff spectra. Then $n\alpha \in L_n$ for every
 $\alpha \in L_1$ and $n\alpha \in M_n$ for every $\alpha \in M_1$; that is,

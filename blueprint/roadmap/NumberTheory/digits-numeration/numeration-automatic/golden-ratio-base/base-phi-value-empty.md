@@ -1,6 +1,6 @@
 # The empty base phi expansion has value zero
 
-**The empty base phi expansion has value zero.** The base phi value of the empty set of
+The base phi value of the empty set of
 positions is $0$.
 
 ## Sources

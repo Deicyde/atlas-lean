@@ -1,6 +1,6 @@
 # Frequentist risk
 
-**Frequentist risk.** Let $S$ be a measurable space, $\delta : S \to A$ a decision rule,
+Let $S$ be a measurable space, $\delta : S \to A$ a decision rule,
 $(P_\theta)_{\theta \in \Theta}$ a family of probability measures on $S$, and
 $\ell : \Theta \times A \to [0, \infty)$ a loss such that $x \mapsto \ell(\theta, \delta(x))$ is
 $P_\theta$-integrable for every $\theta \in \Theta$. The frequentist risk of $\delta$ is the

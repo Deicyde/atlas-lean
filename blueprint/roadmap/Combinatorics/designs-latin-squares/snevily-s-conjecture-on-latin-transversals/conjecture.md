@@ -1,6 +1,6 @@
 # Snevily's conjecture
 
-**Snevily's conjecture.** The statement that for every finite abelian group $G$ of odd order,
+The statement that for every finite abelian group $G$ of odd order,
 written additively, and all subsets $A, B \subseteq G$ with $|A| = |B|$, there is a bijection
 $f \colon A \to B$ such that the sums $a + f(a)$, for $a \in A$, are pairwise distinct.
 

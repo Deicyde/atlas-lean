@@ -1,6 +1,6 @@
 # Averages of a constant sequence
 
-**Averages of a constant sequence.** For every natural number $c$ and every $i \ge 1$,
+For every natural number $c$ and every $i \ge 1$,
 the average $A_{i,0}$ of the first $i$ entries of the constant sequence $(c, c, c, \dots)$
 equals $c$.
 

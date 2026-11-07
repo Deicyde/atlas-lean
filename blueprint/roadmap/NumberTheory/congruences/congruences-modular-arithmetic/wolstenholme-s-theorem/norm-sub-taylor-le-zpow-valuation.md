@@ -1,6 +1,6 @@
 # Congruence form of the higher $p$-adic mean value theorem
 
-**Congruence form of the higher $p$-adic mean value theorem.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $|\cdot|$ be the $p$-adic absolute value on $\mathbb{Q}_p$, and let $B$ be a normed vector space
 over $\mathbb{Q}_p$ whose norm is ultrametric. Let $N$ and $m$ be natural numbers with
 $1 \le m \le p$, let $f(t) = \sum_{j\lt N} a_j t^j$ with $a_j \in B$, let $t, h \in \mathbb{Q}_p$

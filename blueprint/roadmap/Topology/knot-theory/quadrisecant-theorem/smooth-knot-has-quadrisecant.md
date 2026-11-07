@@ -1,6 +1,6 @@
 # Quadrisecant theorem (Pannwitz–Kuperberg)
 
-**Quadrisecant theorem (Pannwitz–Kuperberg).** Every smooth knot $K$ in $\mathbb{R}^3$ that is
+Every smooth knot $K$ in $\mathbb{R}^3$ that is
 not unknotted has a quadrisecant.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Uniqueness of the P-positions of a terminating impartial game
 
-**Uniqueness of the P-positions of a terminating impartial game.** Write $x \to y$ when there is a
+Write $x \to y$ when there is a
 move from position $x$ to position $y$, and assume there is no infinite sequence of moves
 $x_0 \to x_1 \to x_2 \to \cdots$. Call a set $P$ of positions stable if no move leads from a
 position in $P$ to a position in $P$, and absorbing if from every position outside $P$ some move

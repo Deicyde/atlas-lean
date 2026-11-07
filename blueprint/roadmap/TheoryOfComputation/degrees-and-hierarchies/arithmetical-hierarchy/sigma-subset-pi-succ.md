@@ -1,6 +1,6 @@
 # Every Σₙ predicate is Πₙ₊₁
 
-**Every Σₙ predicate is Πₙ₊₁.** Let $\Sigma_n$ and $\Pi_n$ be the levels of the arithmetical
+Let $\Sigma_n$ and $\Pi_n$ be the levels of the arithmetical
 hierarchy of predicates on $\mathbb{N}$: $\Sigma_0 = \Pi_0$ is the class of computable predicates,
 $P \in \Sigma_{n+1}$ when for some $Q \in \Pi_n$ and all $x$, $P(x)$ holds iff
 $Q(\langle x, y \rangle)$ holds for some $y$, and $P \in \Pi_{n+1}$ when for some $Q \in \Sigma_n$

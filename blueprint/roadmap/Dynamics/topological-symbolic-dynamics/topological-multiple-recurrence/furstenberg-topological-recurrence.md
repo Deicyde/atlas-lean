@@ -1,6 +1,6 @@
 # Furstenberg–Weiss multiple recurrence for a single homeomorphism
 
-**Furstenberg–Weiss multiple recurrence for a single homeomorphism.** Every homeomorphism
+Every homeomorphism
 $T$ of a nonempty compact metric space $X$ has a multiply recurrent point: there is a point
 $x \in X$ such that for every integer $d \ge 1$ there is a strictly increasing sequence of
 natural numbers $(n_k)$ with $T^{j n_k}(x) \to x$ as $k \to \infty$ for every integer $j$ with

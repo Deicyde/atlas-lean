@@ -1,6 +1,6 @@
 # Endpoints of the Lucas interval $\Lambda_3$
 
-**Endpoints of the Lucas interval $\Lambda_3$.** The Lucas interval $\Lambda_3$ has left end
+The Lucas interval $\Lambda_3$ has left end
 $5$ and right end $6$, that is, $\Lambda_3 = [5, 6]$.
 
 ## Sources

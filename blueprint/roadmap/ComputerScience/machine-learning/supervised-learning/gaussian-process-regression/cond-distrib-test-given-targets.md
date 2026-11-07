@@ -1,6 +1,6 @@
 # The Gaussian-process posterior
 
-**The Gaussian-process posterior.** Let $k : X \times X \to \mathbb{R}$ be a kernel, let
+Let $k : X \times X \to \mathbb{R}$ be a kernel, let
 $x^* = (x^*_i)_{i \in \tau}$ (test inputs) and $x = (x_j)_{j \in \nu}$ (training inputs) be
 finite families in $X$, and write $K(a, b)$ for the kernel matrix $(k(a_i, b_j))_{i, j}$. Assume
 that the kernel matrix of the combined family $(x^*, x)$, indexed by $\tau \sqcup \nu$, is

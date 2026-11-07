@@ -1,6 +1,6 @@
 # Inversion of an implicit Riordan array sum
 
-**Inversion of an implicit Riordan array sum.** Write $[t^m]F$ for the coefficient of $t^m$
+Write $[t^m]F$ for the coefficient of $t^m$
 in a power series $F$ and $F'$ for its formal derivative. Let $K$ be a field and let $f$,
 $\psi$, $g$, $b$ be power series over $K$ with $f(0) \ne 0$, $\psi(0) \ne 0$ and $g(0) \ne 0$.
 Put $h(t) = t\,g(t)$ and, for $m \in \mathbb{N}$, $a_m = [t^m]\,f(t)\,\psi(t)^m\,b(h(t))$. Then

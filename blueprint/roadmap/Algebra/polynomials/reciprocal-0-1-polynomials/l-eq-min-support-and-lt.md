@@ -1,6 +1,6 @@
 # Position of the first odd exponent
 
-**Position of the first odd exponent.** Let $f \in \mathbb{Z}[x]$ be an irreducible,
+Let $f \in \mathbb{Z}[x]$ be an irreducible,
 reciprocal, non-cyclotomic $0,1$-polynomial of degree $2m$ such that $f(x^2)$ is not
 irreducible. Let $f_e, f_o \in \mathbb{Z}[x]$ and let $\ell$ be a positive odd integer with
 $f(x) = f_e(x^2) + x^\ell f_o(x^2)$, $\deg f_e = m$ and $\deg f_o = \max(m - \ell, 0)$, where

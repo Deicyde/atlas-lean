@@ -1,6 +1,6 @@
 # Linear lower bound on the number of Ulam words
 
-**Linear lower bound on the number of Ulam words.** For every natural number $n \ge 6$, the
+For every natural number $n \ge 6$, the
 number of Ulam words of length $n$ is at least $2n + 4$.
 
 ## Sources

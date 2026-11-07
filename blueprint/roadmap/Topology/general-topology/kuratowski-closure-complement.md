@@ -1,6 +1,6 @@
 # Kuratowski's closure-complement theorem
 
-**Kuratowski's closure-complement theorem.** Let $X$ be a topological space and $s \subseteq X$.
+Let $X$ be a topological space and $s \subseteq X$.
 The sets that can be obtained from $s$ by applying closure and complement finitely many times
 (including $s$ itself) form a finite family of at most $14$ distinct sets.
 

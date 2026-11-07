@@ -1,6 +1,6 @@
 # Coefficients of the series ${}_{s+1}\phi_s$
 
-**Coefficients of the series ${}_{s+1}\phi_s$.** Let $s$ be a natural number, let
+Let $s$ be a natural number, let
 $a_1, \dots, a_{s+1}$, $b_1, \dots, b_s$ and $q$ be complex numbers, and write
 $(x;q)_n = \prod_{j=0}^{n-1} (1 - x q^j)$ for the finite $q$-Pochhammer symbol, so that
 $(q;q)_n = \prod_{j=0}^{n-1} (1 - q^{j+1})$. For every natural number $n$, the coefficient of $z^n$

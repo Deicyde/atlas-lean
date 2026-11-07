@@ -1,6 +1,6 @@
 # Cauchy interlacing for generalized eigenvalues
 
-**Cauchy interlacing for generalized eigenvalues.** Let $n \ge 1$, let $A$ be a Hermitian
+Let $n \ge 1$, let $A$ be a Hermitian
 and $B$ a positive definite complex $(n+1) \times (n+1)$ matrix, and let $A'$ and $B'$ be their
 leading principal $n \times n$ submatrices (rows and columns $1, \dots, n$). Let
 $\lambda_1 \ge \dots \ge \lambda_{n+1}$ be real numbers such that the roots of the polynomial

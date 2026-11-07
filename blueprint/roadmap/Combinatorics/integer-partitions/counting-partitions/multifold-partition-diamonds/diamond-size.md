@@ -1,6 +1,6 @@
 # Number of parts of a multifold partition diamond
 
-**Number of parts of a multifold partition diamond.** The multifold partition diamond whose
+The multifold partition diamond whose
 $M$ diamonds have $d_1, \dots, d_M$ folds has $c = d_1 + \dots + d_M + M + 1$ parts.
 
 ## Sources

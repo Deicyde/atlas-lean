@@ -1,6 +1,6 @@
 # Functional equation versus palindromic h-star coefficients
 
-**Functional equation versus palindromic h-star coefficients.** Let $f$ be a nonzero complex
+Let $f$ be a nonzero complex
 polynomial of degree $d$ with $h^*$-coefficients $h^*_0(f), \dots, h^*_d(f)$. Then
 $f(X-1) = (-1)^d f(-X)$ as polynomials if and only if $h^*_i(f) = h^*_{d-i}(f)$ for every
 $i \le d$.

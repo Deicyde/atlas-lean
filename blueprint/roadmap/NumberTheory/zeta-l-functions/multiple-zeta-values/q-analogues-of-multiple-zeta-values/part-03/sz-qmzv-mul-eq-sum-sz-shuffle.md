@@ -1,6 +1,6 @@
 # Shuffle product formula for Schlesinger–Zudilin qMZVs (Singer)
 
-**Shuffle product formula for Schlesinger–Zudilin qMZVs (Singer).** Write $\zeta_q^{SZ}$ for
+Write $\zeta_q^{SZ}$ for
 the Schlesinger–Zudilin qMZV. Let $u$ and $v$ be finite lists of natural numbers that are
 SZ-admissible, that is, each is empty or has first entry at least $1$, and let $w_u$ and $w_v$
 be their words in the letters $p$ and $y$ (the index $(k_1, \dots, k_r)$ has word

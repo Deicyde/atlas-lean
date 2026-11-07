@@ -1,6 +1,6 @@
 # Generalized eigenvalues of a MAX matrix to a MIN matrix
 
-**Generalized eigenvalues of a MAX matrix to a MIN matrix.** Let $n > 2$ and let
+Let $n > 2$ and let
 $0 < s_1 < s_2 < \dots < s_n$ be real numbers. Let $M$ be the $n \times n$ matrix with entries
 $M_{ij} = \max(s_i, s_j)$, let $N$ be the $n \times n$ matrix with entries
 $N_{ij} = \min(s_i, s_j)$, and put $\rho = \sqrt{s_n / s_1}$. Then, as polynomials in $X$ with

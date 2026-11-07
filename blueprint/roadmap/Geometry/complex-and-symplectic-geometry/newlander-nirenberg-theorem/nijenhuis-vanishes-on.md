@@ -1,6 +1,6 @@
 # Vanishing of the Nijenhuis tensor on a set
 
-**Vanishing of the Nijenhuis tensor on a set.** Let $n$ be a natural number, let
+Let $n$ be a natural number, let
 $U \subseteq \mathbb{R}^{2n}$, let $J$ assign to each point $y \in \mathbb{R}^{2n}$ a real linear
 map $J(y) : \mathbb{R}^{2n} \to \mathbb{R}^{2n}$, and write $N$ for the Nijenhuis tensor of $J$.
 The Nijenhuis tensor of $J$ vanishes on $U$ if $N(V, W)(x) = 0$ for all $C^\infty$ vector fields

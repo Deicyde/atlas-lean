@@ -1,6 +1,6 @@
 # Multiple zeta-star value
 
-**Multiple zeta-star value.** Let $\mathbf{k} = (k_0, \dots, k_{r-1})$ be an index of depth
+Let $\mathbf{k} = (k_0, \dots, k_{r-1})$ be an index of depth
 $r$ that is admissible ($r \ge 1$ and $k_0 \ge 2$) or empty. Its multiple zeta-star value is the
 real number
 

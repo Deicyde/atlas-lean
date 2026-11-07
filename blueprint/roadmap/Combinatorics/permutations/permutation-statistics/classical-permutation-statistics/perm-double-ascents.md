@@ -1,6 +1,6 @@
 # Number of double ascents
 
-**Number of double ascents.** For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$,
+For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$,
 $\mathrm{dasc}(\sigma)$ is the number of positions $i$ that are double ascents of $\sigma$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The largest legal move is an end
 
-**The largest legal move is an end.** Let $M$ be a position of Sylver Coinage whose set of
+Let $M$ be a position of Sylver Coinage whose set of
 legal moves $L(M)$ has a greatest element $F$. Then $F$ is an end of $M$.
 
 Every other legal move $y$ is smaller than $F$, so a way of writing $y$ as a sum of elements of

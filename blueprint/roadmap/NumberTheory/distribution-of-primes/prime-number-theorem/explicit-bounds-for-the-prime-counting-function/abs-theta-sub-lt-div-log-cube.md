@@ -1,6 +1,6 @@
 # Axler's cubic-logarithm bound for Chebyshev's theta function
 
-**Axler's cubic-logarithm bound for Chebyshev's theta function.** For every real
+For every real
 $x \ge 1757126630797$ (the prime $p_{64707865143}$),
 
 $$

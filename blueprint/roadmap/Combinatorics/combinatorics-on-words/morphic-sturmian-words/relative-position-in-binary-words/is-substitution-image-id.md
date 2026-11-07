@@ -1,6 +1,6 @@
 # Every word is fixed by the identity substitution
 
-**Every word is fixed by the identity substitution.** Every infinite binary word $w$ is
+Every infinite binary word $w$ is
 its own image under the identity substitution $a \mapsto a$, $b \mapsto b$.
 
 ## Sources

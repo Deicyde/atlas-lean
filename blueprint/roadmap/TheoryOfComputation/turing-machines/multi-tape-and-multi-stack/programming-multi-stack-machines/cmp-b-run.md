@@ -1,6 +1,6 @@
 # Correctness of the bit-block comparison
 
-**Correctness of the bit-block comparison.** Suppose the program has at label $\ell$ the
+Suppose the program has at label $\ell$ the
 bit-block comparison statement of stacks $a$ and $b$ (decoders $d_a$, $d_b$) with scratch stacks
 $t_a$ and $t_b$ (encoders $e_a$, $e_b$), loop label $\ell$, equality label $\ell_=$ and mismatch
 label $\ell_{\ne}$, and that $a$, $b$, $t_a$, $t_b$ are pairwise distinct. Let $u$ and $w$ be bit

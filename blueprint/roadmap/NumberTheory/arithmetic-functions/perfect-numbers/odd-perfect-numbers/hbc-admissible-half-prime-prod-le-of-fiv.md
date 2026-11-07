@@ -1,6 +1,6 @@
 # Product bounds for prime tuples at $1/2$ by size of the first prime
 
-**Product bounds for prime tuples at $1/2$ by size of the first prime.** Let
+Let
 $p_1 < p_2 < \dots < p_k$ be primes with
 $\prod_{i=1}^{k} (1 - 1/p_i) \le 1/2 < \prod_{i=1}^{k-1} (1 - 1/p_i)$ and $p_1 \ge 5$, and let
 $F_k(x) = x^{2^k} - x^{2^{k-1}}$ and $P = \prod_{i=1}^{k} p_i$. Then $P \le F_k(\sqrt{8/3^{7/8}})$.

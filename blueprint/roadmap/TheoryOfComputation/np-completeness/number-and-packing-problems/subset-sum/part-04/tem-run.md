@@ -1,6 +1,6 @@
 # Run of the target-bit loop of the subset-sum emitter
 
-**Run of the target-bit loop of the subset-sum emitter.** Let $l = (b_1, \dots, b_m)$ be a
+Let $l = (b_1, \dots, b_m)$ be a
 list of bits. Start the VERTEX-COVER to SUBSET-SUM machine at label $\mathsf{tem}$ with any state
 bit and with stacks $S$ in which stack $\mathsf{T}$ holds exactly the bit symbols of
 $b_1, \dots, b_m$, top first. Then after exactly $m + 1$ steps the machine is at label

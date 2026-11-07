@@ -1,6 +1,6 @@
 # Lifting residue-field isomorphisms between complete étale DVR extensions
 
-**Lifting residue-field isomorphisms between complete étale DVR extensions.** Let $A$, $B$, $C$
+Let $A$, $B$, $C$
 be discrete valuation rings, with $B$ and $C$ finite $A$-algebras whose structure maps are local
 homomorphisms, both étale over $A$, and both complete and separated for their maximal-ideal-adic
 topologies. Write $\kappa(R)$ for the residue field of a local ring $R$. Then every

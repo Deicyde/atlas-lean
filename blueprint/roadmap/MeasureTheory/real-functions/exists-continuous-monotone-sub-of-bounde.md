@@ -1,6 +1,6 @@
 # Jordan decomposition of a continuous function of bounded variation
 
-**Jordan decomposition of a continuous function of bounded variation.** Let
+Let
 $F : \mathbb{R} \to \mathbb{R}$ be continuous and of bounded variation on all of $\mathbb{R}$.
 Then there are continuous non-decreasing functions $F_1, F_2 : \mathbb{R} \to \mathbb{R}$ such
 that $F = F_1 - F_2$.

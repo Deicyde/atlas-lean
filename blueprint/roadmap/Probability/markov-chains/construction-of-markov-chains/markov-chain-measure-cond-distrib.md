@@ -1,6 +1,6 @@
 # Markov property of the canonical Markov chain measure
 
-**Markov property of the canonical Markov chain measure.** Let $S$ be a nonempty standard
+Let $S$ be a nonempty standard
 Borel space, let $\kappa$ be a Markov kernel from $S$ to $S$, let $\mu$ be a probability measure
 on $S$, and let $P_\mu$ be the canonical Markov chain measure on $S^{\mathbb{N}}$ with initial
 distribution $\mu$ and transition kernel $\kappa$. Write $X_n(\omega) = \omega_n$. For every

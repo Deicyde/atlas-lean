@@ -1,3 +1,3 @@
 # Vertices of a cell complex after adding a cell
 
-**Vertices of a cell complex after adding a cell.** The vertices of `insert c S`.
+The vertices of `insert c S`.

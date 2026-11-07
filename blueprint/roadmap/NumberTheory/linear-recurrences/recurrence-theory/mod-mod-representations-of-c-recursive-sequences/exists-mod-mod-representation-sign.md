@@ -1,6 +1,6 @@
 # Single-formula mod-mod representation of C-recursive sequences
 
-**Single-formula mod-mod representation of C-recursive sequences.** Let
+Let
 $t_0, t_1, t_2, \dots$ be natural numbers, let $c$ be a natural number, and let $A$ and $B$ be
 polynomials with integer coefficients such that $A \ne 0$, $B(0) = 1$ and
 $k = \deg A < d = \deg B$. Suppose that $\bigl(\sum_{n \ge 0} t_n z^n\bigr) B(z) = A(z)$ as

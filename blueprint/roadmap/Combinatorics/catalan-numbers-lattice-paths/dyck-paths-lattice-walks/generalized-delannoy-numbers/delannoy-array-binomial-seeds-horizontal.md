@@ -1,6 +1,6 @@
 # First horizontal sums of a Delannoy array with binomial seeds
 
-**First horizontal sums of a Delannoy array with binomial seeds.** Let $R(m, n)$, for
+Let $R(m, n)$, for
 $m, n \in \mathbb{N}$, be integers with $R(m+1, n+1) = R(m, n+1) + R(m+1, n) + R(m, n)$ for all
 $m, n$. Let $k \ge 1$ and suppose $R(0, n) = \binom{k+n}{k}$ for all $n$. Then for all $m$ and
 $n$, $R(m, n) + R(m, n+1) \equiv \binom{k+n}{k-1} \pmod 2$.

@@ -1,6 +1,6 @@
 # Exponents with a margin in Letendre's inequality
 
-**Exponents with a margin in Letendre's inequality.** Let $\xi(\theta, \eta)$ denote Letendre's
+Let $\xi(\theta, \eta)$ denote Letendre's
 saving exponent, and let $\theta$, $\eta$ and $\delta$ be real numbers with $0 \le \delta \le 1$,
 $\eta < \theta < 1$ and $0 < \theta^2 - (\theta(1 - \theta))^2 \delta \le \eta$. Then there is a
 real number $A > 0$ with $\xi(\theta, \eta) - \delta \le A \le \xi(\theta, \eta)$ such that

@@ -1,6 +1,6 @@
 # Path reconstruction from BFS parents
 
-**Path reconstruction from BFS parents.** Let $p$ be the predecessor function of a
+Let $p$ be the predecessor function of a
 breadth-first search forest, let $n$ be the length of its discovery order, and let $s$ and $t$ be
 vertices. Starting from $v_k = t$, this walks back along $p$, setting $v_{i-1} = p(v_i)$,
 until it reaches a vertex $v_0$ that tests equal to $s$, and returns the list

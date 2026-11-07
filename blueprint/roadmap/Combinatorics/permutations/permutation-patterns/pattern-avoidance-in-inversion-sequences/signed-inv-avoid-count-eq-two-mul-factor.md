@@ -1,6 +1,6 @@
 # Three six-pattern sets with 2 · n! avoiders (Theorem 17)
 
-**Three six-pattern sets with 2 · n! avoiders (Theorem 17).** Write a length-2 signed pattern
+Write a length-2 signed pattern
 as $\tau_1\tau_2$, where $00$, $01$ and $10$ record whether $|\tau_1|$ is equal to, smaller than
 or larger than $|\tau_2|$ and a bar marks a barred letter, and write $|\bar I_n(A)|$ for the
 number of signed inversion sequences of length $n$ avoiding every pattern of a set $A$ of such

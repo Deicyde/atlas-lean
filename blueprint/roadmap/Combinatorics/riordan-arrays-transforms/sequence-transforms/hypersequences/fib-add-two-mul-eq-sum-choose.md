@@ -1,6 +1,6 @@
 # Fibonacci numbers as binomially weighted sums
 
-**Fibonacci numbers as binomially weighted sums.** Let $F_k$ denote the $k$th Fibonacci
+Let $F_k$ denote the $k$th Fibonacci
 number. For every natural number $r \ge 1$ and every natural number $n$,
 
 $$F_{n+2r} = \sum_{k=0}^{n} \binom{n + r - 1 - k}{r - 1} F_k +

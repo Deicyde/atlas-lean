@@ -1,6 +1,6 @@
 # A Type-A double-perfect partition of seven
 
-**A Type-A double-perfect partition of seven.** The partition $(1^5, 2)$ of $7$, with five
+The partition $(1^5, 2)$ of $7$, with five
 parts equal to $1$ and one part equal to $2$, is a Type-A double-perfect partition of $7$ of
 order $1$.
 

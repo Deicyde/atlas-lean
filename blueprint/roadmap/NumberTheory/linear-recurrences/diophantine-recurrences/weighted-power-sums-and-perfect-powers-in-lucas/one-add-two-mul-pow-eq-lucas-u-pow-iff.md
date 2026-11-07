@@ -1,6 +1,6 @@
 # Solutions of $1 + 2x^p = U_n^q$ for Lucas sequences with $y = \pm 1$
 
-**Solutions of $1 + 2x^p = U_n^q$ for Lucas sequences with $y = \pm 1$.** Let $x$ be a
+Let $x$ be a
 positive integer, let $y \in \{1, -1\}$, and let $(U_m)$ be the Lucas sequence with parameters
 $(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and $U_{m+2} = x U_{m+1} - y U_m$. For positive integers
 $n$, $p$, $q$, the equation $1 + 2x^p = U_n^q$ holds if and only if $(n, p, q, x, y)$ is one of

@@ -1,6 +1,6 @@
 # Morgan–Voyce coefficients
 
-**Morgan–Voyce coefficients.** For natural numbers $n$ and $k$, the Morgan–Voyce coefficient
+For natural numbers $n$ and $k$, the Morgan–Voyce coefficient
 $d(n, k)$ is the binomial coefficient $\binom{n + k}{n - k}$ if $k \le n$, and $0$ if $k > n$.
 
 These numbers form the lower-triangular Riordan array

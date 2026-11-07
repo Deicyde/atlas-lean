@@ -1,6 +1,5 @@
 # The codes of the negative parts follow an orbit of addition modulo a Fibonacci number
 
-**The codes of the negative parts follow an orbit of addition modulo a Fibonacci number.**
 Let $n \ge 1$, write $F_k$ for the Fibonacci numbers and $L_k$ for the Lucas numbers, and let
 $c$ be a function from the natural numbers to the natural numbers such that
 $c(N) = \sum_{i \in S,\, i < 0} F_{i+2n}$ (with $F_k$ read as $0$ for $k < 0$) whenever $S$ is a

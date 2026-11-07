@@ -1,6 +1,6 @@
 # Classification of prime solutions of $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$
 
-**Classification of prime solutions of $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$.** Let $a \le k$
+Let $a \le k$
 be natural numbers and let $p$ be a prime with $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$, that is,
 $p = (2^{k+1} - 2^a - 1)/(1 + 2^{k-a})$. Then $k = a + 2$, $2^k p / 2^a = 4p$,
 $5p = 2^{a+3} - 2^a - 1$, and $a \equiv 3 \pmod 4$.

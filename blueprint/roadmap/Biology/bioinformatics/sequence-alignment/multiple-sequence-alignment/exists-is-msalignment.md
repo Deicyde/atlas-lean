@@ -1,6 +1,6 @@
 # Every family of sequences has a multiple alignment
 
-**Every family of sequences has a multiple alignment.** For every natural number $n$ and
+For every natural number $n$ and
 every family of $k$ sequences $s_0, \dots, s_{k-1}$ whose lengths sum to at most $n$, there is a
 valid multiple alignment of $s_0, \dots, s_{k-1}$.
 

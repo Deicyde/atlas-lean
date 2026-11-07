@@ -1,6 +1,6 @@
 # Bijection between n-color compositions with colors b, b+1 and ternary strings
 
-**Bijection between n-color compositions with colors b, b+1 and ternary strings.** For all
+For all
 natural numbers $b \ge 1$ and $n \ge 1$, there is a bijection between $\mathrm{CCo}_{b,b+1}(n)$,
 the $n$-color compositions of $n$ using only the colors $b$ and $b+1$, and the set of strings of
 length $n-1$ over the alphabet $\{0, 1, 2\}$ such that, when the string is cut at each of its

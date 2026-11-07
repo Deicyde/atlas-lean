@@ -1,6 +1,6 @@
 # Odd product block
 
-**Odd product block.** For a natural number $m$, the odd product block $h(m)$ is the product of
+For a natural number $m$, the odd product block $h(m)$ is the product of
 the odd integers $j$ with $2^{m-1}+1 \le j \le 2^m-1$. In particular $h(0) = h(1) = 1$, as empty
 products.
 

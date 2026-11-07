@@ -1,6 +1,6 @@
 # The Stanley–Garsia partitionability conjecture is false
 
-**The Stanley–Garsia partitionability conjecture is false.** There is a finite simplicial complex
+There is a finite simplicial complex
 on the vertex set $\mathbb{N}$ that is pure and Cohen–Macaulay over $\mathbb{Q}$ but not
 partitionable.
 

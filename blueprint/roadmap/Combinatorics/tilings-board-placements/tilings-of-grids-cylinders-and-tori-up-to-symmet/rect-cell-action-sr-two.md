@@ -1,6 +1,6 @@
 # Rectangle-group cell action of the reflection r²f
 
-**Rectangle-group cell action of the reflection r²f.** Let $n, m \in \mathbb{N}$, and let
+Let $n, m \in \mathbb{N}$, and let
 $sr_i$ ($i \in \mathbb{Z}/4\mathbb{Z}$) denote the reflections of the dihedral group of order $8$.
 Under the rectangle-group action on the cells $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z}$
 of the $n \times m$ grid, $sr_2$ (the paper's $r^2 f$) acts as the reflection

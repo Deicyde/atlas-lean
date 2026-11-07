@@ -1,6 +1,6 @@
 # Lucas numbers as binomial sums
 
-**Lucas numbers as binomial sums.** Let $L_n$ denote the Lucas numbers. For every $r \ge 1$
+Let $L_n$ denote the Lucas numbers. For every $r \ge 1$
 and every natural number $n$,
 
 $$L_{n+2r} = \sum_{k=0}^{n} \binom{n+r-1-k}{r-1} L_k +

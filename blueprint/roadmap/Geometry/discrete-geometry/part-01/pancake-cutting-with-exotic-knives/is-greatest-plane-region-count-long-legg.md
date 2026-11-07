@@ -1,6 +1,6 @@
 # Maximum region count for long-legged A's
 
-**Maximum region count for long-legged A's.** For a tip $c \in \mathbb{R}^2$, nonzero vectors
+For a tip $c \in \mathbb{R}^2$, nonzero vectors
 $u_1, u_2 \in \mathbb{R}^2$ and reals $a, b > 0$, the long-legged A is the union of the rays
 $\{c + s u_1 : s \ge 0\}$ and $\{c + s u_2 : s \ge 0\}$ and the crossbar segment
 $[c + a u_1, c + b u_2]$. For every natural number $n$, the largest number of regions into which

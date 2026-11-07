@@ -1,6 +1,6 @@
 # Divide-and-conquer core of maximum subarray
 
-**Divide-and-conquer core of maximum subarray.** For lists over an additive monoid with a
+For lists over an additive monoid with a
 linear order: on the empty list it returns $0$ and on a one-element list $[x]$ it returns $x$,
 both at no cost. On a list of length $n \ge 2$, let $m = \lfloor n/2 \rfloor$, let $l$ and $r$ be
 its results on the first $m$ elements and on the remaining $n - m$ elements, let $s$ be the best

@@ -1,6 +1,6 @@
 # Log-concave law in intrinsic coordinates
 
-**Log-concave law in intrinsic coordinates.** Fix an ambient dimension $N$. An intrinsic
+Fix an ambient dimension $N$. An intrinsic
 log-concave law on $\mathbb{R}^N$ consists of a dimension $d$, a log-concave law $\nu$ on
 $\mathbb{R}^d$ (that is, $d > 0$ and $\nu$ is a probability measure with a log-concave Lebesgue
 density $f$, integrable coordinates and coordinate products, and integrable $f \log f$), an

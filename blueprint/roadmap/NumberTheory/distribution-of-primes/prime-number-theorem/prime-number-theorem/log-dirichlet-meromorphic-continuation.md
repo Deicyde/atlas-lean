@@ -1,6 +1,6 @@
 # Meromorphic continuation of the prime logarithmic Dirichlet series
 
-**Meromorphic continuation of the prime logarithmic Dirichlet series.** Let
+Let
 $\Phi(s) = \sum_p \frac{\log p}{p^s}$ be the prime logarithmic Dirichlet series. There is a
 function $g : \mathbb{C} \to \mathbb{C}$ that is meromorphic on the open half-plane
 $\operatorname{Re} s > 1/2$, analytic at every point of the closed half-plane

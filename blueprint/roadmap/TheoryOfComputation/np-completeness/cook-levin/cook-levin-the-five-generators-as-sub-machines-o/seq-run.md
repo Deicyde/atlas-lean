@@ -1,6 +1,6 @@
 # Sequencing
 
-**Sequencing.** Let $P_u$, $P_s$ (update and situation definition), $P_h$ (shift), $P_a$
+Let $P_u$, $P_s$ (update and situation definition), $P_h$ (shift), $P_a$
 (accept) and $P_i$ (init) be generator programs that halt at their label `done`, and let $\xi$ be
 a list of input codes. Suppose that for each generator $j \in \{u, s, h, a, i\}$ there are counter
 values $F_j$, a word $w_j$ and a bound $B_j$ such that, for every output word $o$, the run of $P_j$

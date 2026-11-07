@@ -1,6 +1,6 @@
 # Central binomial–harmonic generating function
 
-**Central binomial–harmonic generating function.** Let $H_n = \sum_{k=1}^{n} 1/k$ be the $n$th
+Let $H_n = \sum_{k=1}^{n} 1/k$ be the $n$th
 harmonic number. For every real number $x$ with $|x| < 1/4$, the series
 $\sum_{n=1}^{\infty} \binom{2n}{n} H_n x^n$ converges unconditionally, with sum
 

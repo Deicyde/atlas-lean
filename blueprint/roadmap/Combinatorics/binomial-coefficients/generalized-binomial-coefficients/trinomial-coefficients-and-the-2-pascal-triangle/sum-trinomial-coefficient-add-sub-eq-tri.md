@@ -1,6 +1,5 @@
 # Tribonacci formula for a diagonal sum of trinomial coefficients
 
-**Tribonacci formula for a diagonal sum of trinomial coefficients.**
 Write $\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in
 $(1 + t + t^2)^n$, and $T_n$ for the Tribonacci numbers, $T_0 = T_1 = 0$, $T_2 = 1$ and
 $T_{n+3} = T_{n+2} + T_{n+1} + T_n$. Then for every $n \in \mathbb{N}$,

@@ -1,6 +1,6 @@
 # The order ratio of $q^{-\tau}$
 
-**The order ratio of $q^{-\tau}$.** For every real $\tau$ and all sufficiently large natural
+For every real $\tau$ and all sufficiently large natural
 numbers $q$, $\max(0, -\log((q^{\tau})^{-1})/\log q) = \max(0, \tau)$.
 
 ## Sources

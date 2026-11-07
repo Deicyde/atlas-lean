@@ -1,6 +1,6 @@
 # Sum and difference formulas for the negative Pell sequences
 
-**Sum and difference formulas for the negative Pell sequences.** Let $d$ be a natural number
+Let $d$ be a natural number
 such that $x^2 - d y^2 = -1$ has an integral solution, let $(X, Y)$ be its solution in natural
 numbers with least positive $Y$, and define integers $f_n, g_n$ by
 $(X + Y\sqrt{d})^n = f_n + g_n\sqrt{d}$, computed formally with $(\sqrt{d})^2 = d$. Let $m > n$

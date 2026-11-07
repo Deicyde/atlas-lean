@@ -1,6 +1,6 @@
 # Iterates of the period-doubling substitution
 
-**Iterates of the period-doubling substitution.** Write the period-doubling substitution
+Write the period-doubling substitution
 $a \mapsto ab$, $b \mapsto aa$ over the letters $a = 1$ and $b = 0$, so that it sends $1$ to $10$
 and $0$ to $11$. The $n$-th period-doubling iterate is the word obtained by applying this
 substitution $n$ times to the one-letter word $1$; the iterates begin $1$, $10$, $1011$,

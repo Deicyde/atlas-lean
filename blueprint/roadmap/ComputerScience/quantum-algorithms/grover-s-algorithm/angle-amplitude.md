@@ -1,6 +1,6 @@
 # Symmetric Grover state at a given angle
 
-**Symmetric Grover state at a given angle.** Let $\alpha$ be a finite search space and
+Let $\alpha$ be a finite search space and
 $M \subseteq \alpha$ a marked set with complement $M^c$. For a real number $\varphi$, this is the
 real amplitude vector on $\alpha$ whose value is $\sin\varphi / \sqrt{|M|}$ at every point of $M$
 and $\cos\varphi / \sqrt{|M^c|}$ at every point of $M^c$.

@@ -1,6 +1,6 @@
 # Prime powers one less than a square
 
-**Prime powers one less than a square.** Let $p$ be a prime. Then non-negative integers $x$
+Let $p$ be a prime. Then non-negative integers $x$
 and $y$ satisfy $p^x + 1 = y^2$ if and only if $(p, x, y) = (2, 3, 3)$ or $(p, x, y) = (3, 1, 2)$.
 
 ## Sources

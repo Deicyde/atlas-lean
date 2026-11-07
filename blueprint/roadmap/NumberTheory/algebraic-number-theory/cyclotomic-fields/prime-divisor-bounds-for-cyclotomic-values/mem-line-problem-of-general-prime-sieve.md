@@ -1,6 +1,6 @@
 # General prime sieve for the line problem
 
-**General prime sieve for the line problem.** Let $q$ and $n$ be natural numbers, let $\omega$
+Let $q$ and $n$ be natural numbers, let $\omega$
 be the number of distinct prime factors of $q^n - 1$, and let $S$ and $T$ be disjoint sets of prime
 factors of $q^n - 1$, with $s = |S|$ and $r = |T|$. Let $k$ be the product of the prime factors of
 $q^n - 1$ that lie in neither $S$ nor $T$, and put $\delta = 1 - \sum_{\rho \in S} 1/\rho$,

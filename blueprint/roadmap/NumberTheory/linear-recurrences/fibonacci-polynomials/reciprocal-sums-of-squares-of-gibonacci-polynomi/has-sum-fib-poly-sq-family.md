@@ -1,6 +1,6 @@
 # Series over a family of Fibonacci polynomial squares
 
-**Series over a family of Fibonacci polynomial squares.** Let $x > 0$ be real, let
+Let $x > 0$ be real, let
 $\alpha = (x + \sqrt{x^2 + 4})/2$, and let $f_n = f_n(x)$ be the Fibonacci polynomials, given by
 $f_0 = 0$, $f_1 = 1$ and $f_{n+2} = x f_{n+1} + f_n$, evaluated at $x$. Let $k$, $r$, $t$ be
 positive integers and $p$ a natural number with $t \le 2p$. Then the series

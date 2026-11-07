@@ -1,3 +1,3 @@
 # Zero corner weight where the walk continues vertically
 
-**Zero corner weight where the walk continues vertically.** A vertex where the walk continues vertically has weight `0`.
+A vertex where the walk continues vertically has weight `0`.

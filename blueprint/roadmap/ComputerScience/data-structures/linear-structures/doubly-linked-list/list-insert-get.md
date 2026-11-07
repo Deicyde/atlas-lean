@@ -1,6 +1,6 @@
 # Cells after doubly-linked-list insertion
 
-**Cells after doubly-linked-list insertion.** For a store $S$, allocated cells $x$ and $y$
+For a store $S$, allocated cells $x$ and $y$
 such that the successor of $y$ in $S$, if any, is allocated, and any cell $z$, let $s$ be the
 next pointer of $y$ in $S$. Let $c_1$ be the node of $x$ in $S$ with next pointer replaced by
 $s$ and previous pointer replaced by $y$ if $z = x$, and the content of cell $z$ in $S$

@@ -1,6 +1,6 @@
 # The $g$-difference basis number
 
-**The $g$-difference basis number.** For a finite set $A \subseteq \mathbb{Z}$ and
+For a finite set $A \subseteq \mathbb{Z}$ and
 $x \in \mathbb{Z}$, write $r_{A-A}(x)$ for the number of ordered pairs $(a, a') \in A \times A$
 with $a - a' = x$. For natural numbers $g$ and $n$, a finite set $A \subseteq \mathbb{Z}$ is a
 $g$-difference basis for $[n] = \{1, \dots, n\}$ if $r_{A-A}(x) \ge g$ for every $x \in [n]$, and

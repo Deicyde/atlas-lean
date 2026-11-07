@@ -1,6 +1,6 @@
 # Lower bound for the first anti-recurrence number
 
-**Lower bound for the first anti-recurrence number.** Let $a = (a_1, \dots, a_k)$ be a linear
+Let $a = (a_1, \dots, a_k)$ be a linear
 form with positive integer coefficients, of trace $\tau = a_1 + \dots + a_k$, and let $A_1$ be its
 first anti-recurrence number. Then $\tau + (k - 1)k/2 \le A_1$, and the inequality is strict if
 and only if $a_j > 1$ for some $j$ with $2 \le j \le k$.

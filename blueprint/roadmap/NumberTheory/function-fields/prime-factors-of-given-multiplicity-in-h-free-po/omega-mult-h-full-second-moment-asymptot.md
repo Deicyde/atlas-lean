@@ -1,6 +1,6 @@
 # Second moment of $\omega_k$ over $h$-full polynomials for $k > h$
 
-**Second moment of $\omega_k$ over $h$-full polynomials for $k > h$.** Let $F$ be a finite
+Let $F$ be a finite
 field with $q$ elements, let $2 \le h < k$, let $\xi \in \mathbb{C}$ be a primitive $h$-th root of
 unity and let $\varepsilon > 0$. Write $M_n$ for the set of monic polynomials of degree $n$ over
 $F$, $N_h$ for the set of $h$-full monic polynomials, $|P| = q^{\deg P}$, and $\omega_k(f)$ for the

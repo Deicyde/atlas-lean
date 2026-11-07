@@ -1,6 +1,6 @@
 # Binomial sum identity for incomplete Leonardo p-numbers
 
-**Binomial sum identity for incomplete Leonardo p-numbers.** For natural numbers $p \ge 1$,
+For natural numbers $p \ge 1$,
 $n$, $r$ and $k$ with $n \ge p + r$ and $k \le \lfloor (n - p - r)/(p + 1) \rfloor$, the
 incomplete Leonardo $p$-numbers $\mathcal{L}_{p,m}(j)$ satisfy
 

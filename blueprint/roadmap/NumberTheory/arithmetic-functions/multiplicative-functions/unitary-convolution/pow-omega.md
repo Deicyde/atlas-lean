@@ -1,6 +1,6 @@
 # The arithmetic function $c^{\Omega}$
 
-**The arithmetic function $c^{\Omega}$.** Let $R$ be a monoid with zero and let $c \in R$. This
+Let $R$ be a monoid with zero and let $c \in R$. This
 is the arithmetic function $c^{\Omega}$ with values in $R$ given by $c^{\Omega}(0) = 0$ and
 $c^{\Omega}(n) = c^{\Omega(n)}$ for $n \ge 1$, where $\Omega(n)$ is the number of prime factors of
 $n$ counted with multiplicity. It is completely multiplicative.

@@ -1,6 +1,6 @@
 # Axler's six-term upper bound for the prime-counting function
 
-**Axler's six-term upper bound for the prime-counting function.** Let $\pi(x)$ denote the
+Let $\pi(x)$ denote the
 number of primes $p \le x$ and $\log$ the natural logarithm. For every real $x \ge 48$,
 
 $$

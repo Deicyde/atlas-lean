@@ -1,6 +1,6 @@
 # Prenex sentences of the language of groups
 
-**Prenex sentences of the language of groups.** A sentence of the language of groups in prenex
+A sentence of the language of groups in prenex
 form with matrix in conjunctive normal form is coded as a pair $(q, \varphi)$ of a finite list $q$
 of Booleans, the quantifier prefix ($\mathrm{true}$ for $\forall$, $\mathrm{false}$ for $\exists$),
 and a quantifier-free formula $\varphi$ in conjunctive normal form. The quantifiers of $q$ bind the

@@ -1,6 +1,6 @@
 # Satisfiability with one variable fixed to false
 
-**Satisfiability with one variable fixed to false.** Let $A$ be a proposition over atoms
+Let $A$ be a proposition over atoms
 indexed by natural numbers, let $t$ be its ROBDD, and let $f$ be a natural number. Then $A$
 evaluates to true under some valuation $\sigma$ with $\sigma(f) = \mathrm{false}$ if and only
 if the cofactor $t[f := \mathrm{false}]$ is not the leaf $\mathrm{false}$.

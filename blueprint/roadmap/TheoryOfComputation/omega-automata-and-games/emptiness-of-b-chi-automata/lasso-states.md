@@ -1,6 +1,6 @@
 # Lasso states of a finite Büchi automaton
 
-**Lasso states of a finite Büchi automaton.** For a nondeterministic Büchi automaton with
+For a nondeterministic Büchi automaton with
 finitely many states, decidable equality of states, a finite alphabet, and decidable transitions,
 start set and accepting set, the lasso states form the finite set of accepting states $s$ that are
 reachable from some start state in zero or more transitions and lie on a nonempty cycle, that is,

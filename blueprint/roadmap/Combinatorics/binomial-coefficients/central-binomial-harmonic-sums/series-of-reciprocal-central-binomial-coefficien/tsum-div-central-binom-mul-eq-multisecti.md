@@ -1,6 +1,6 @@
 # Multisection formula for $\sum_k x^k / \binom{2mk}{mk}$
 
-**Multisection formula for $\sum_k x^k / \binom{2mk}{mk}$.** Let $m \ge 1$ be a natural number
+Let $m \ge 1$ be a natural number
 and $x$ a complex number with $|x| < 4^m$. Write $H(y) = \sum_{n \ge 0} y^n / \binom{2n}{n}$,
 $w = e^{2\pi i/m}$, and let $x^{1/m}$ be the principal $m$-th root of $x$. Then
 

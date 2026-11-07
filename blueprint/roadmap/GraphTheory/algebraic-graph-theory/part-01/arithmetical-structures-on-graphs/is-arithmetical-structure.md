@@ -1,6 +1,6 @@
 # Arithmetical structure
 
-**Arithmetical structure.** An arithmetical structure on a graph $G$ with vertex set $V$ is a
+An arithmetical structure on a graph $G$ with vertex set $V$ is a
 pair of labelings $d, r : V \to \mathbb{N}$ such that $d(v) > 0$ and $r(v) > 0$ for every vertex
 $v$, $d(v)\, r(v) = \sum_{w \sim v} r(w)$ for every vertex $v$, where the sum runs over the
 neighbours $w$ of $v$, and the only natural number dividing every $r(v)$ is $1$. For a finite graph

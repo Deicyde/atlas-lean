@@ -1,6 +1,6 @@
 # Gale–Ryser theorem
 
-**Gale–Ryser theorem.** Let $r = (r_0, \dots, r_{m-1})$ and $c = (c_0, \dots, c_{n-1})$ be
+Let $r = (r_0, \dots, r_{m-1})$ and $c = (c_0, \dots, c_{n-1})$ be
 nonincreasing sequences of natural numbers. There is an $m \times n$ matrix with entries in
 $\{0, 1\}$ whose $i$-th row sums to $r_i$ for every $i$ and whose $j$-th column sums to $c_j$ for
 every $j$ if and only if $\sum_{i < m} r_i = \sum_{j < n} c_j$ and, for every $k \le m$,

@@ -1,6 +1,6 @@
 # Period and average sets when $P = -Q - 1$
 
-**Period and average sets when $P = -Q - 1$.** Let $P$ and $Q \ne 0$ be integers forming a
+Let $P$ and $Q \ne 0$ be integers forming a
 nondegenerate Lucas pair with $P = -Q - 1$, so that the roots of $x^2 - Px + Q$ are $-Q$ and $-1$,
 and let $U$ be the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and
 $U_{k+2} = P U_{k+1} - Q U_k$. Write $\pi_U(n)$ for the period of $U$ modulo $n$, $S(U)$ for the

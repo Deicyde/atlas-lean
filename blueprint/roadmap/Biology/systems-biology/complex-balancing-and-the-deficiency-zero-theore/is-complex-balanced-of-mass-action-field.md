@@ -1,6 +1,6 @@
 # Horn–Jackson
 
-**Horn–Jackson.** If a mass-action system with positive rate constants has a positive
+If a mass-action system with positive rate constants has a positive
 complex-balanced equilibrium, then every positive equilibrium is complex balanced.
 
 ## Sources

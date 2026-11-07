@@ -1,6 +1,6 @@
 # The situation step
 
-**The situation step.** Let $M$ be a finite multi-stack Turing machine, let $l$ be either a
+Let $M$ be a finite multi-stack Turing machine, let $l$ be either a
 label of $M$ or $\mathrm{none}$ (the halted label), let $v$ be a state of $M$, and let $W$ assign
 to each stack $k$ a window, a list of entries that are symbols of $k$ or the empty cell. If
 $l = \mathrm{none}$, the step returns the label $\mathrm{none}$, the state $v$, no pushed symbols on

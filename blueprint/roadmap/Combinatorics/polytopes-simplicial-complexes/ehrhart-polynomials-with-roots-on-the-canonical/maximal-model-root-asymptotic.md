@@ -1,6 +1,6 @@
 # Asymptotics of the largest root of the model polynomial
 
-**Asymptotics of the largest root of the model polynomial.** For $d \ge 0$ let
+For $d \ge 0$ let
 $M_d = \binom{X+d}{d} + \binom{X}{d}$ be the model polynomial. Let $(\beta_d)_{d \ge 0}$ be a
 sequence of complex numbers such that for every $d \ge 1$, $\beta_d$ is a root of $M_d$ and
 $|\gamma| \le |\beta_d|$ for every root $\gamma$ of $M_d$. Then

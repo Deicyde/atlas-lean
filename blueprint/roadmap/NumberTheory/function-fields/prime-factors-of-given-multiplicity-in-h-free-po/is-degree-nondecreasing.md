@@ -1,6 +1,6 @@
 # Degree-nondecreasing functions
 
-**Degree-nondecreasing functions.** Let $F$ be a field, $U$ a set of polynomials over $F$ and
+Let $F$ be a field, $U$ a set of polynomials over $F$ and
 $G$ a real-valued function on polynomials over $F$. Then $G$ is degree-nondecreasing on $U$
 when for all $f_1, f_2 \in U$ with $\deg f_2 \le \deg f_1$ we have $G(f_2) \le G(f_1)$. Here
 $\deg$ is the natural degree, with $\deg 0 = 0$.

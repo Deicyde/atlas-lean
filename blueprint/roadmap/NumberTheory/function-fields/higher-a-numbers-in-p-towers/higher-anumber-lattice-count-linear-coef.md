@@ -1,6 +1,6 @@
 # The linear coefficient times a period is an integer
 
-**The linear coefficient times a period is an integer.** Let $p$ be a prime, let $d$ be a
+Let $p$ be a prime, let $d$ be a
 natural number dividing $p - 1$, let $r \ge 1$, let $\tau = (p + 1)/d$ and
 $\gamma = ((p - 1) r + (p + 1))/d$, and for each natural number $n$ let $A_r(n)$ be the
 lattice-point count for the $r$-th higher $a$-number at level $n$. Let $\lambda$ be a rational

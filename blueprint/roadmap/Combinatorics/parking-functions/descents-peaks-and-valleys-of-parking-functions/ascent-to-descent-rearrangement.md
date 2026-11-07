@@ -1,6 +1,6 @@
 # Ascent-to-descent rearrangement
 
-**Ascent-to-descent rearrangement.** For a word $x = x_1 \cdots x_m$ over $\mathbb{N}$, the
+For a word $x = x_1 \cdots x_m$ over $\mathbb{N}$, the
 ascent-to-descent rearrangement of $x$ is $\nu(x) = \nu_m(x)$, the fuel-bounded
 ascent-to-descent rearrangement $\nu_N(x)$ with fuel $N = m$, the length of $x$.
 

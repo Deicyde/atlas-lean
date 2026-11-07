@@ -1,6 +1,6 @@
 # Multiplying the Dirichlet density by a multinomial likelihood
 
-**Multiplying the Dirichlet density by a multinomial likelihood.** Let
+Let
 $\alpha = (\alpha_0, \dots, \alpha_n) \in \mathbb{R}^{n+1}$ and let $k = (k_0, \dots, k_n)$ be
 natural numbers; write $D_\beta$ for the unnormalized Dirichlet density with parameters $\beta$.
 For every $x \in \mathbb{R}^n$, let $\theta = (x_0, \dots, x_{n-1}, 1 - \sum_{i=0}^{n-1} x_i)$ be

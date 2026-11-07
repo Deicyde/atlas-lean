@@ -1,6 +1,6 @@
 # $\overline{\mathrm{rev}}$ of a function not below $\bar\beta^1$
 
-**$\overline{\mathrm{rev}}$ of a function not below $\bar\beta^1$.** Let $L$ be a list of
+Let $L$ be a list of
 natural numbers, let $\bar\beta^1$ be the maximal $L^*$-block starting at index $0$, let $\lt _d$ be
 the descending lexicographic order, and let $\overline{\mathrm{rev}}$ be the map determined by
 $L$. For every coefficient function $\varepsilon : \mathbb N \to \mathbb N$ such that

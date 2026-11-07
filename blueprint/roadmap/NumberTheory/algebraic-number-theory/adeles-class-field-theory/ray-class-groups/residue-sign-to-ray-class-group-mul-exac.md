@@ -1,6 +1,6 @@
 # Exactness at the ray class group, residue-sign form
 
-**Exactness at the ray class group, residue-sign form.** Let $\mathfrak m$ be a modulus of a
+Let $\mathfrak m$ be a modulus of a
 number field $K$, with finite part the nonzero ideal $\mathfrak m_0$ of $\mathcal O_K$ and infinite
 part the finite set $\mathfrak m_\infty$ of real places of $K$. Let $\varphi$ be the homomorphism
 from the residue-sign group $\{\pm 1\}^{\mathfrak m_\infty} \times

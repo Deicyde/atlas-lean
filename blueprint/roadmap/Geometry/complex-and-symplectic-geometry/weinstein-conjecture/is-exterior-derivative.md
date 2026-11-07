@@ -1,6 +1,6 @@
 # Exterior derivative of a one-form
 
-**Exterior derivative of a one-form.** A two-form $d\alpha$ on $M$ is the exterior derivative
+A two-form $d\alpha$ on $M$ is the exterior derivative
 of a one-form $\alpha$ on $M$ when, for all smooth vector fields $X, Y$ on $M$ and every point
 $x \in M$,
 

@@ -1,6 +1,6 @@
 # Precomputation stages of the shift generator
 
-**Precomputation stages of the shift generator.** The labels of the precomputation that the
+The labels of the precomputation that the
 cell-shift generator runs before its time loop: six plain stages and three multiplication sites,
 each of the latter tagged with a stage of the multiplication routine. For a layout with $A$ label
 variables, $K$ stacks and $g$ symbol codes, and the inputs $T$ (number of time steps) and $H$

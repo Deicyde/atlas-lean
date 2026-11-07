@@ -1,6 +1,6 @@
 # Seed expansion of a triple gibonacci product
 
-**Seed expansion of a triple gibonacci product.** Let $G, H, I \colon \mathbb{Z} \to \mathbb{R}$
+Let $G, H, I \colon \mathbb{Z} \to \mathbb{R}$
 satisfy $G_{j+2} = G_{j+1} + G_j$, $H_{j+2} = H_{j+1} + H_j$ and $I_{j+2} = I_{j+1} + I_j$ for
 every integer $j$. Then for all integers $k$, $r$, $s$,
 

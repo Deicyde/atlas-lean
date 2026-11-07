@@ -1,6 +1,5 @@
 # Binet, Cassini, mixed identity and ratio limit for generalized Fibonacci sequences
 
-**Binet, Cassini, mixed identity and ratio limit for generalized Fibonacci sequences.**
 Let $p \ge 1$, $a \ge 0$ and $b > 0$ be integers, and let $m \ge 0$ and $n \ge 0$ be integers.
 Let $W, F : \mathbb{Z} \to \mathbb{R}$ satisfy $W_0 = a$, $W_1 = b$, $F_0 = 0$, $F_1 = 1$,
 $W_{k+2} = p W_{k+1} + W_k$ and $F_{k+2} = p F_{k+1} + F_k$ for every integer $k$. Put

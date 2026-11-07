@@ -1,6 +1,6 @@
 # The coded execution of a statement
 
-**The coded execution of a statement.** This mirrors the machine's execution of one statement
+This mirrors the machine's execution of one statement
 on stacks of symbol codes. Given a statement $q$, an internal state $v$ and coded stacks $S$ (a list
 $S_k$ of natural numbers for each stack index $k$), it returns a coded configuration (an optional
 label, an internal state and coded stacks), by recursion on $q$. A push of $f$ onto stack $k$

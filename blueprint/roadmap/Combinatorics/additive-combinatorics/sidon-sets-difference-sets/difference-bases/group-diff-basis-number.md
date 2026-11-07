@@ -1,6 +1,6 @@
 # Difference basis number of an abelian group
 
-**Difference basis number of an abelian group.** For an abelian group $G$ and
+For an abelian group $G$ and
 $g \in \mathbb{N}$, a $g$-difference basis of $G$ is a finite set $A \subseteq G$ such that every
 $x \in G$ equals $a - a'$ for at least $g$ ordered pairs $(a, a') \in A \times A$. The difference
 basis number $\eta_g(G)$ is the least size of a $g$-difference basis of $G$, and $0$ if $G$ has

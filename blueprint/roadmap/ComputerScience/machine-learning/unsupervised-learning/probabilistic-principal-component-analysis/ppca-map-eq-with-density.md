@@ -1,6 +1,6 @@
 # The density of the probabilistic PCA observation
 
-**The density of the probabilistic PCA observation.** Let $z$ and $\varepsilon$ be
+Let $z$ and $\varepsilon$ be
 independent random vectors on a probability space, with $z$ standard Gaussian in $\mathbb{R}^q$
 and $\varepsilon$ Gaussian in $\mathbb{R}^d$ with mean $0$ and covariance $\sigma^2 I$, where
 $\sigma^2 > 0$. Then for every real $d \times q$ matrix $W$ and every $\mu \in \mathbb{R}^d$, the

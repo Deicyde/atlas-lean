@@ -1,6 +1,6 @@
 # One coded URM step
 
-**One coded URM step.** A coded state is a program counter $k$ together with a list $r$ of
+A coded state is a program counter $k$ together with a list $r$ of
 register contents (in use, the contents of registers $0, \dots, R$, where $R$ is the register bound
 of the program), and a program is given by the list $c$ of its instruction codes. Write $c_k$ for
 entry $k$ of $c$, and $r_j$ for entry $j$ of $r$, read as $0$ when $j$ is past the end of $r$;

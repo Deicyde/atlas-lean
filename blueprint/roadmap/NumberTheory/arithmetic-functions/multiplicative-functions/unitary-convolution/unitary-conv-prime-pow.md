@@ -1,6 +1,6 @@
 # Unitary convolution at prime powers
 
-**Unitary convolution at prime powers.** Let $R$ be a semiring and let $f$ and $g$ be
+Let $R$ be a semiring and let $f$ and $g$ be
 arithmetic functions with values in $R$. For every prime $p$ and every natural number $m \ge 1$,
 their unitary convolution $f \sqcup g$ satisfies
 $(f \sqcup g)(p^m) = f(1)\, g(p^m) + f(p^m)\, g(1)$.

@@ -1,6 +1,6 @@
 # The 3SAT filter walks one clause within the cap
 
-**The 3SAT filter walks one clause within the cap.** Let $C$ be a clause, and suppose the cap
+Let $C$ be a clause, and suppose the cap
 flag is off or $C$ has at most three literals. Let $\overline{C}$ be the tokens of $C$ as they
 lie on the token stack (the clause marker on top, then the literals' tokens, last literal first),
 and let $w_n$ be the walking label after $n$ literals. For every $n$, all lists of symbols $R$

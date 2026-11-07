@@ -1,6 +1,6 @@
 # Riesz–Schauder theorem, range part
 
-**Riesz–Schauder theorem, range part.** Let $E$ be a Banach space over $\mathbb{R}$ or
+Let $E$ be a Banach space over $\mathbb{R}$ or
 $\mathbb{C}$, let $T : E \to E$ be a compact bounded linear operator, let $\mu \neq 0$ be a
 scalar and let $I$ be the identity of $E$. Then the range of $\mu I - T$ is closed in $E$.
 

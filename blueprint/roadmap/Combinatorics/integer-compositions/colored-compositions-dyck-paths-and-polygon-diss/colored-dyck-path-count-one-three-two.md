@@ -1,6 +1,6 @@
 # Dyck paths of semilength 3 with two peaks
 
-**Dyck paths of semilength 3 with two peaks.** With one color for every block ($\gamma_j = 1$
+With one color for every block ($\gamma_j = 1$
 for all $j$), the number of colored Dyck paths of semilength $3$ with $2$ peaks is
 $d_{3,2}(\gamma) = 3$, a Narayana number.
 

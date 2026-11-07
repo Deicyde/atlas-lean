@@ -1,6 +1,6 @@
 # Soft thresholding
 
-**Soft thresholding.** For real numbers $t$ and $z$, the soft thresholding of $z$ at $t$ is
+For real numbers $t$ and $z$, the soft thresholding of $z$ at $t$ is
 $S_t(z) = z - t$ if $z > t$; otherwise $S_t(z) = z + t$ if $z < -t$; and $S_t(z) = 0$ in the
 remaining case.
 

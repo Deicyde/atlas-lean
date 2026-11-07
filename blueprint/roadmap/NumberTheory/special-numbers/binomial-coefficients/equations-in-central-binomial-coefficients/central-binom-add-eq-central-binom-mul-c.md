@@ -1,6 +1,6 @@
 # Allen's theorem on central binomial products
 
-**Allen's theorem on central binomial products.** Let $x$ and $b$ be positive integers and
+Let $x$ and $b$ be positive integers and
 let $a$ be a nonnegative integer. Then $\binom{2(a+b)}{a+b} = \binom{2a}{a}\binom{x+2b}{b}$ if
 and only if $x = 1$ and $a = 1$.
 

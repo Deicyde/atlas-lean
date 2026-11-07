@@ -1,6 +1,6 @@
 # Statement that periodic packings approach the optimal density in dimension four
 
-**Statement that periodic packings approach the optimal density in dimension four.** For a
+For a
 packing $Q$ of congruent balls in $\mathbb{R}^4$, let its upper density $\overline{\delta}(Q)$ be
 the limit superior, as $R \to \infty$, of the supremum over all points $p$ of the fraction of the
 volume of the open ball $B(p, R)$ covered by the closed balls of $Q$, and let the sphere packing

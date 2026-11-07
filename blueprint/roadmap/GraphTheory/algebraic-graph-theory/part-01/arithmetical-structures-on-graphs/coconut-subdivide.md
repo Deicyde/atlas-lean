@@ -1,6 +1,6 @@
 # Subdivision at a path vertex of a coconut tree
 
-**Subdivision at a path vertex of a coconut tree.** Let the coconut tree $CT(p, s)$ have path
+Let the coconut tree $CT(p, s)$ have path
 vertices $v_1, \dots, v_p$ and leaves $\ell_1, \dots, \ell_s$, let $d$ and $r$ be labelings of
 its vertices by natural numbers, and let $1 \le k \le p$. Subdividing $(d, r)$ at position $k$
 gives the labelings $(d', r')$ of $CT(p + 1, s)$ obtained by inserting a new path vertex $w$

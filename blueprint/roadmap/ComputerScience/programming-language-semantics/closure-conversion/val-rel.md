@@ -1,6 +1,6 @@
 # Value relation for closure conversion
 
-**Value relation for closure conversion.** The relation between source values and target
+The relation between source values and target
 values of closure conversion is the least relation such that, for every source lambda body $b$,
 every list $\rho$ of source values and every list $ws$ of target values with $|\rho| = |ws|$
 and $\rho_i$ related to $ws_i$ for every $i < |\rho|$, the source closure of $b$ over $\rho$ is

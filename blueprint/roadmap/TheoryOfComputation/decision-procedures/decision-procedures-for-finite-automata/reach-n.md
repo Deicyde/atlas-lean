@@ -1,6 +1,6 @@
 # Bounded reachability search on lists of states
 
-**Bounded reachability search on lists of states.** Let $s_0 \in \mathbb{N}$, let
+Let $s_0 \in \mathbb{N}$, let
 $\mathrm{next}$ assign to each $s \in \mathbb{N}$ a list $\mathrm{next}(s)$ of natural numbers, and
 let $B$ be a list of natural numbers. One search round sends a list $R$ to the list obtained by
 writing $s_0$ followed, for each $s$ in $R$ in order, by $s$ and then the list $\mathrm{next}(s)$,

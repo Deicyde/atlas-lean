@@ -1,6 +1,6 @@
 # Normal order on a set of polynomials
 
-**Normal order on a set of polynomials.** Let $F$ be a finite field, let $U$ be a set of
+Let $F$ be a finite field, let $U$ be a set of
 polynomials over $F$, and let $g, G$ be real-valued functions on polynomials over $F$. For
 $n \in \mathbb{N}$ let $M_n$ be the set of monic polynomials of degree $n$ over $F$. Then $g$
 has normal order $G$ on $U$ when $g$ and $G$ are nonnegative on $U$, $G$ is

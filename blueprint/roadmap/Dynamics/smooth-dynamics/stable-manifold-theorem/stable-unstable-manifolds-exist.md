@@ -1,6 +1,6 @@
 # Local stable and unstable sets at a hyperbolic fixed point
 
-**Local stable and unstable sets at a hyperbolic fixed point.** Let $f : \mathbb{R}^n \to
+Let $f : \mathbb{R}^n \to
 \mathbb{R}^n$ be continuously differentiable on a neighbourhood of a point $x_0$ with
 $f(x_0) = x_0$, and suppose that the derivative $Df(x_0)$ is invertible and hyperbolic. Then
 there is an open set $U$ containing $x_0$ such that the local stable set

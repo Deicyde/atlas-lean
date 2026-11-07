@@ -1,6 +1,6 @@
 # Generating series of OOZ-qMZVs, coefficientwise
 
-**Generating series of OOZ-qMZVs, coefficientwise.** Let $r$ and $N$ be natural numbers and
+Let $r$ and $N$ be natural numbers and
 let $k_1, \dots, k_r \ge 1$ and $d_1, \dots, d_r \ge 0$ be integers. Writing $\{0\}^d$ for $d$
 consecutive zeros, the coefficient of $q^N$ in the Ohno–Okuda–Zudilin qMZV
 $\zeta_q^{\mathrm{OOZ}}(k_1, \{0\}^{d_1}, \dots, k_r, \{0\}^{d_r})$ equals the coefficient of

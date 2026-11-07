@@ -1,6 +1,6 @@
 # Bernoulli–Fibonacci expansion of $(x + \beta)^m$
 
-**Bernoulli–Fibonacci expansion of $(x + \beta)^m$.** Let $\beta = (1 - \sqrt{5})/2$, let
+Let $\beta = (1 - \sqrt{5})/2$, let
 $B_k$ be the Bernoulli numbers, normalized so that $B_1 = -1/2$, and let $F_k$ be the Fibonacci
 numbers ($F_0 = 0$, $F_1 = 1$). Then for every natural number $m$ and every real number $x$,
 

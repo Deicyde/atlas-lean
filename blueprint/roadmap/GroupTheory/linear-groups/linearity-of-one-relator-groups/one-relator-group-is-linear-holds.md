@@ -1,6 +1,6 @@
 # The one-relator group of Kourovka Problem 18.86 is linear
 
-**The one-relator group of Kourovka Problem 18.86 is linear.** Let $G$ be the group with generators
+Let $G$ be the group with generators
 $a, b$ and the single defining relation $[[a, b], b] = 1$, where $[x, y] = x^{-1} y^{-1} x y$. Then
 $G$ is linear: there are a field $K$, a natural number $n$ and an injective group homomorphism
 $G \to \mathrm{GL}_n(K)$.

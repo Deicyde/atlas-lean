@@ -1,6 +1,6 @@
 # Hausdorff–Young inequality on a finite abelian group
 
-**Hausdorff–Young inequality on a finite abelian group.** Let $G$ be a finite abelian
+Let $G$ be a finite abelian
 group, let $f : G \to \mathbb{C}$ have discrete Fourier transform $\hat f$, let $p$ be a real
 number with $1 < p \le 2$, and let $q = p/(p - 1)$. Write $|G|$ for the number of elements
 of $G$ and let $\psi$ run over the additive characters of $G$. Then

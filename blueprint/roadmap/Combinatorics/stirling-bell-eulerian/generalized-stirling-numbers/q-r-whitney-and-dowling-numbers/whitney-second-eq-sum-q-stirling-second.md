@@ -1,6 +1,6 @@
 # (q, r)-Whitney numbers of the second kind through q-Stirling numbers
 
-**(q, r)-Whitney numbers of the second kind through q-Stirling numbers.** Let
+Let
 $m, r, q \in \mathbb{C}$ and write $[k + 1]_q = 1 + q + \dots + q^k$. Let $S$ be a complex-valued
 function on pairs of natural numbers satisfying the recurrence of the $q$-Stirling numbers of the
 second kind: for all $a, k \in \mathbb{N}$, $S(0, 0) = 1$, $S(0, k + 1) = 0$, $S(a + 1, 0) = 0$

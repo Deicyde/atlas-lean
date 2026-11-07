@@ -1,6 +1,6 @@
 # Double ascent of a permutation
 
-**Double ascent of a permutation.** Let $\sigma$ be a permutation of $\{0, 1, \dots, n-1\}$.
+Let $\sigma$ be a permutation of $\{0, 1, \dots, n-1\}$.
 A position $i$ is a double ascent of $\sigma$ if $i + 2 < n$ and
 $\sigma(i) < \sigma(i+1) < \sigma(i+2)$.
 

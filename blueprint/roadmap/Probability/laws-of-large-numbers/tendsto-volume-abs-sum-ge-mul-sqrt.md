@@ -1,6 +1,6 @@
 # Large deviations of mean-zero sums on the cube have vanishing measure
 
-**Large deviations of mean-zero sums on the cube have vanishing measure.** Let
+Let
 $f : \mathbb{R} \to \mathbb{R}$ be square integrable on $[0,1]$ with $\int_0^1 f = 0$ and
 $\int_0^1 |f|^2 > 0$, and let $(a_n)_{n \in \mathbb{N}}$ be a sequence of positive reals with
 $a_n \to \infty$. For each $n$ let

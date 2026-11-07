@@ -1,6 +1,6 @@
 # Explicit estimate for the modular product sum $S_k(n, m)$
 
-**Explicit estimate for the modular product sum $S_k(n, m)$.** Let $\varphi$ be Euler's
+Let $\varphi$ be Euler's
 totient function and $S_k(n, m)$ the modular product sum. For all natural numbers $k \ge 3$,
 $n \ge 2$ and $m$ with $\gcd(m, n) = 1$,
 

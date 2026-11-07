@@ -1,6 +1,6 @@
 # Fibonacci closed form of the sequence $a_n$
 
-**Fibonacci closed form of the sequence $a_n$.** Let $(a_n)_{n \ge 0}$ be real numbers with
+Let $(a_n)_{n \ge 0}$ be real numbers with
 $a_0 = -8\sqrt{5}/250$, $a_1 = (25 - 4\sqrt{5})/250$ and $a_{n+1} = a_n + a_{n-1}$ for $n \ge 1$,
 and write $F_m$ for the Fibonacci numbers ($F_0 = 0$, $F_1 = 1$). Then for every $n \ge 0$,
 

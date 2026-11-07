@@ -1,6 +1,6 @@
 # Motzkin hump
 
-**Motzkin hump.** Let $p = p_0 p_1 \cdots p_{n-1}$ be a word of length $n$ in the steps $D$,
+Let $p = p_0 p_1 \cdots p_{n-1}$ be a word of length $n$ in the steps $D$,
 $F$, $U$ (encoded as $0$, $1$, $2$), whose vertical displacements are $-1$, $0$ and $+1$. For
 $k \in \mathbb{N}$ and positions $i, j \in \{0, \dots, n-1\}$, the pair $(i, j)$ is a hump of
 height $k$ in $p$ when $i < j$, $p_i = U$, $p_j = D$, every $p_r$ with $i < r < j$ is $F$, and the

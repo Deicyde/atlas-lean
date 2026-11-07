@@ -1,6 +1,6 @@
 # Fundamental Padovan–Perrin solutions as shifted coefficients $\rho$
 
-**Fundamental Padovan–Perrin solutions as shifted coefficients $\rho$.** Let $R$ be a
+Let $R$ be a
 commutative ring, let $k_1, k_2 \in R$, let $p \ge 1$ and $s$ be natural numbers, and let $j$
 satisfy $p + 1 \le j \le s + p - 1$. For $1 \le \ell \le s + p$ let $v^{(\ell)}$ be the solution of
 the $([k]; p; s)$-Padovan–Perrin recurrence with $v^{(\ell)}(m) = 1$ if $m + 1 = \ell$ and

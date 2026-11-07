@@ -1,6 +1,6 @@
 # Encoded rational number
 
-**Encoded rational number.** A rational number is encoded as a triple $(s, a, b)$ of a
+A rational number is encoded as a triple $(s, a, b)$ of a
 boolean $s$ and natural numbers $a$ and $b$, read as the sign, the numerator and the
 denominator.
 

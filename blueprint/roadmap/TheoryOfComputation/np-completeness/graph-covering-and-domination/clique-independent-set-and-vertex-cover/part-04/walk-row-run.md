@@ -1,6 +1,6 @@
 # Walking the pairs of one row of the clique verifier
 
-**Walking the pairs of one row of the clique verifier.** Let $m$ be a mode and $s$ a bit.
+Let $m$ be a mode and $s$ a bit.
 Let $z = (z_0, \dots, z_{r-1})$ and $b = (b_0, \dots, b_{q-1})$ be lists of bits, $c$ a bit, $v$
 a state and $S$ stack contents in which the vertex stack $V$ holds, from the top, the name bits
 $z_0, \dots, z_{r-1}$ followed by the name bit $s$, and the input stack $X$ holds, from the top,

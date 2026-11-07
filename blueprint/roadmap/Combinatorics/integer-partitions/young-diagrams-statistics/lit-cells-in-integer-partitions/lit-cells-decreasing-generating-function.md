@@ -1,6 +1,6 @@
 # Generating function for lit cells of weakly decreasing bargraphs
 
-**Generating function for lit cells of weakly decreasing bargraphs.** Let
+Let
 $P(q) = \sum_{n \ge 0} p(n) q^n$ be the partition generating function, for $k \ge 0$ let $T_q(k)$
 be the generating function of partitions contained in the triangle with column heights
 $k, k - 1, \ldots, 1$ (so $T_q(0) = 1$), and let $L(q) \in \mathbb{Z}[[q]]$ be the power series

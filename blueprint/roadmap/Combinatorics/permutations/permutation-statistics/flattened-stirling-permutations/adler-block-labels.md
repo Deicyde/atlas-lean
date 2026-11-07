@@ -1,6 +1,6 @@
 # Adler block labels
 
-**Adler block labels.** Let $n$ be a natural number and $P$ a set partition of the integer
+Let $n$ be a natural number and $P$ a set partition of the integer
 interval $\{-n, \dots, n\}$; for $x$ in this interval write $P(x)$ for the block of $P$
 containing $x$. The Adler block labels of $P$ are the integers $p$ with $1 \le p \le n$ such
 that $p \le q$ for every positive $q \in P(p)$ and $p < -q$ for every negative $q \in P(p)$;

@@ -1,6 +1,6 @@
 # Binary words in which both letters occur infinitely often
 
-**Binary words in which both letters occur infinitely often.** An infinite word
+An infinite word
 $w = \ell_0 \ell_1 \ell_2 \cdots$ over the letters $a$ and $b$ belongs to the set $\mathcal{W}$ when
 both letters occur infinitely often in it, that is, when there are infinitely many positions $i$
 with $\ell_i = a$ and infinitely many positions $i$ with $\ell_i = b$.

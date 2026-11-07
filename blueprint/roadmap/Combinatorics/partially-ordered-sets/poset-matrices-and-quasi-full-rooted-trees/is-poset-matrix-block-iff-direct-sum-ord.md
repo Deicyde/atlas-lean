@@ -1,6 +1,6 @@
 # Block decomposition of a poset matrix
 
-**Block decomposition of a poset matrix.** Let $m, k \ge 1$ and let $M$ be a poset matrix of
+Let $m, k \ge 1$ and let $M$ be a poset matrix of
 order $m + k$, a Boolean matrix with rows and columns indexed by $0, \dots, m + k - 1$. Then
 $M_{ij}$ is false for all $i < m \le j$ if and only if there are poset matrices $A$ of order $m$
 and $B$ of order $k$ such that $M$ is their direct sum: $M_{ij} = A_{ij}$ for $i, j < m$,

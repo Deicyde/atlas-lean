@@ -1,6 +1,6 @@
 # Laplacian of the squared norm
 
-**Laplacian of the squared norm.** Let $F$ be a finite-dimensional real inner product space
+Let $F$ be a finite-dimensional real inner product space
 of dimension $n$ with its standard Riemannian metric. For every $x \in F$, the Laplacian of the
 function $y \mapsto \|y\|^2$ at $x$ is $2n$.
 

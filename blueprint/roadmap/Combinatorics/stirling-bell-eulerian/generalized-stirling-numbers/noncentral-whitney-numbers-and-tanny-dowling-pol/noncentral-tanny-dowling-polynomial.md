@@ -1,6 +1,6 @@
 # Noncentral Tanny–Dowling polynomials
 
-**Noncentral Tanny–Dowling polynomials.** For elements $m$ and $a$ of a commutative ring $R$
+For elements $m$ and $a$ of a commutative ring $R$
 and a natural number $n$, the noncentral Tanny–Dowling polynomial $D_{m,a,n}(x) \in R[x]$ is
 
 $$D_{m,a,n}(x) = \sum_{k=0}^{n} k! \, W_{m,a}(n, k) \, x^k,$$

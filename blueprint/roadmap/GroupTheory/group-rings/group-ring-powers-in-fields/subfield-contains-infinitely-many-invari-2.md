@@ -1,6 +1,6 @@
 # Subfields containing all group-ring powers have infinitely many invariants
 
-**Subfields containing all group-ring powers have infinitely many invariants.** Let $p$ be a
+Let $p$ be a
 prime, $F$ an infinite field of characteristic $p$, $G$ a finite group of ring automorphisms of
 $F$, and $\xi = \sum_{g \in G} \xi_g \, g$ an element of the group ring $\mathbb{Z}G$ with
 $\xi \notin p\mathbb{Z}G$, that is, with some integer coefficient $\xi_g$ not divisible by $p$.

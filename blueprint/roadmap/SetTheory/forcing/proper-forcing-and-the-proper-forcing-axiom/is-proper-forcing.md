@@ -1,6 +1,6 @@
 # Proper partial orders
 
-**Proper partial orders.** Let $\mathbb{P}$ be a partial order and let $X$ be the disjoint
+Let $\mathbb{P}$ be a partial order and let $X$ be the disjoint
 union $\mathbb{P} \sqcup \mathcal{P}(\mathbb{P})$; for $M \subseteq X$ write $M_c$ for the set of
 $p \in \mathbb{P}$ whose copy in $X$ lies in $M$. Then $\mathbb{P}$ is proper if there is a club
 $C$ in $[X]^\omega$ such that for every $M \in C$ and every $p \in M_c$ there is an

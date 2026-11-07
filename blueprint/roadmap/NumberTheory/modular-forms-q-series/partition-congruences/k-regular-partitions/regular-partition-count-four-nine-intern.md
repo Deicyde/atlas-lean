@@ -1,6 +1,6 @@
 # An internal congruence modulo $4$ for $b_{4,9}$
 
-**An internal congruence modulo $4$ for $b_{4,9}$.** Let $b_{4,9}(n)$ be the number of
+Let $b_{4,9}(n)$ be the number of
 partitions of $n$ with no part divisible by $4$ or by $9$. For every natural number $n$,
 $b_{4,9}(16n + 1) \equiv b_{4,9}(4n + 1) \pmod 4$.
 

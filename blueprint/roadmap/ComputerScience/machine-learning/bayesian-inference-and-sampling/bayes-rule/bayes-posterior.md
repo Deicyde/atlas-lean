@@ -1,6 +1,6 @@
 # Bayes posterior
 
-**Bayes posterior.** Let $\kappa$ be a kernel from a measurable space $\Theta$ of hypotheses to
+Let $\kappa$ be a kernel from a measurable space $\Theta$ of hypotheses to
 a measurable space $\mathcal X$ of observations (the likelihood) and $\mu$ a measure on $\Theta$
 (the prior). The Bayes posterior after observing $x \in \mathcal X$ is the measure $\pi_x$ on
 $\Theta$ with

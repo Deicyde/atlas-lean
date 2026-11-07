@@ -1,6 +1,6 @@
 # Sign densities of the ψ-analog of the 5-core partition function
 
-**Sign densities of the ψ-analog of the 5-core partition function.** Let
+Let
 $\bar b_5(n)$ be the coefficient of $q^n$ in $\psi^5(-q^5)/\psi(-q)$, where
 $\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$, and let the lower density of a set $S$ of natural numbers
 be $\liminf_{N \to \infty} |S \cap \{0, \dots, N - 1\}|/N$. The set of positive integers $n$ with

@@ -1,6 +1,6 @@
 # Uniform distribution on a symmetric interval
 
-**Uniform distribution on a symmetric interval.** For a real number $a$, the measure on
+For a real number $a$, the measure on
 one-dimensional Euclidean space $\mathbb{R}^1$ obtained by conditioning Lebesgue measure on the
 set $\{x : -a \le x_1 \le a\}$ of points whose only coordinate $x_1$ lies in $[-a, a]$, that is,
 Lebesgue measure restricted to this set and divided by its measure. For $a > 0$ this is the

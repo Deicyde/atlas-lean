@@ -1,6 +1,6 @@
 # Tuenter's power-sum identity for Bernoulli numbers
 
-**Tuenter's power-sum identity for Bernoulli numbers.** Let $a$ and $b$ be nonzero complex
+Let $a$ and $b$ be nonzero complex
 numbers and let $n \ge 1$ be a natural number with $b^n \ne a^n$. Let $\sigma_x(i) \in \mathbb{C}$,
 for $x \in \mathbb{C}$ and $i \in \mathbb{N}$, satisfy
 $(i+1)\,\sigma_x(i) = B_{i+1}(x+1) - B_{i+1}$ for all $x$ and $i$, where $B_m(t)$ denotes the

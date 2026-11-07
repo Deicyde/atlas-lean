@@ -1,6 +1,6 @@
 # Sum formula for anassas below the diagonal
 
-**Sum formula for anassas below the diagonal.** Let $A(m, k, p)$ be the number of
+Let $A(m, k, p)$ be the number of
 nonattacking placements of $k$ anassas on the square board $\{1, \dots, m\}^2$ with exactly $p$
 of them strictly below the main diagonal, and let ${n \brace j}$ be Knuth's extended Stirling
 numbers of the second kind. For natural numbers $m$, $k$, $p$ with $p \le k$,

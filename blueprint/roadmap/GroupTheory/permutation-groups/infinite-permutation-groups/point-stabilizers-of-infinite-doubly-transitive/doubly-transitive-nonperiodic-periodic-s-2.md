@@ -1,6 +1,6 @@
 # A non-periodic doubly transitive group with a periodic point stabilizer (Kourovka 10.64)
 
-**A non-periodic doubly transitive group with a periodic point stabilizer (Kourovka 10.64).** There
+There
 exist a group $G$ with an element of infinite order and a faithful action of $G$ on a set $X$
 such that for any two ordered pairs of distinct points of $X$ some element of $G$ maps the first
 to the second, and every element of the stabilizer of some point $x \in X$ has finite order.

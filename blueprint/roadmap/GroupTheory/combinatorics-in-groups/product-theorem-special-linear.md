@@ -1,6 +1,6 @@
 # Product theorem for special linear groups
 
-**Product theorem for special linear groups.** Let $n$ be a natural number. For every real
+Let $n$ be a natural number. For every real
 $\varepsilon$ with $0 < \varepsilon < 1$ there is a real $\delta > 0$ such that the following
 holds for every finite field $k$: if $A$ is a subset of $\mathrm{SL}(n, k)$ with $A^{-1} = A$ and
 $1 \in A$ that generates $\mathrm{SL}(n, k)$, then $|A|^{1+\delta} \le |A^3|$ or

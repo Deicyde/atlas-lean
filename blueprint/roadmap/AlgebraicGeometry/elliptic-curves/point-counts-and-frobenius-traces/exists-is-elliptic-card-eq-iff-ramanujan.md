@@ -1,6 +1,6 @@
 # Elliptic curves with point count divisible by 4 and Ramanujan graphs on two vertices
 
-**Elliptic curves with point count divisible by 4 and Ramanujan graphs on two vertices.** Let
+Let
 $p$ be an odd prime, let $a \in \{1, 2\}$, and let $F$ be a finite field with $q = p^a$ elements. A
 natural number $N$ is the number $\#E(F)$ of $F$-points (counting the point at infinity) of some
 elliptic curve $E$ over $F$ with $4 \mid N$ if and only if there are natural numbers $l$ and $m$

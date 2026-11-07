@@ -1,6 +1,6 @@
 # Savitch's theorem: NPSPACE = PSPACE
 
-**Savitch's theorem: NPSPACE = PSPACE.** The complexity class NPSPACE of decision problems
+The complexity class NPSPACE of decision problems
 decided in polynomial space by nondeterministic multi-tape Turing machines equals the class
 PSPACE of decision problems decided in polynomial space by deterministic multi-tape Turing
 machines.

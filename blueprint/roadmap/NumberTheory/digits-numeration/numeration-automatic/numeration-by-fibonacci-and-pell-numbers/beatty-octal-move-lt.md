@@ -1,6 +1,6 @@
 # Moves of a Beatty octal game decrease the heap
 
-**Moves of a Beatty octal game decrease the heap.** For all real numbers $\alpha$, $\beta$
+For all real numbers $\alpha$, $\beta$
 and all natural numbers $n$, $m$: if a move of the Beatty octal game for $\alpha$ and $\beta$
 takes a heap of $n$ tokens to a heap of $m$ tokens, then $m < n$.
 

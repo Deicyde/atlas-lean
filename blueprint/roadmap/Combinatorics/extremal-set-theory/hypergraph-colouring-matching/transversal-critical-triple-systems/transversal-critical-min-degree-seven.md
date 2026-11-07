@@ -1,6 +1,6 @@
 # Erdős Problem 834 for transversal-critical triple systems
 
-**Erdős Problem 834 for transversal-critical triple systems.** There exist $n \in \mathbb{N}$
+There exist $n \in \mathbb{N}$
 and a $3$-uniform hypergraph $H$ on the vertex set $\{0, \dots, n-1\}$ such that some set of at
 most $3$ vertices meets every edge of $H$, no set of at most $2$ vertices meets every edge of $H$,
 for every edge $e$ of $H$ some set of at most $2$ vertices meets every edge of $H$ other than $e$,

@@ -1,6 +1,6 @@
 # Diagonal recurrence for Rascal numbers
 
-**Diagonal recurrence for Rascal numbers.** For integers $n$ and $k$ with $0 < k < n$,
+For integers $n$ and $k$ with $0 < k < n$,
 
 $$k R_{n-1,k-1} - 1 = (k-1) R_{n,k},$$
 

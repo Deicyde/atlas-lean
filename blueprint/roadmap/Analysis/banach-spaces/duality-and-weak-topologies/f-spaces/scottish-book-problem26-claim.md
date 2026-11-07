@@ -1,6 +1,6 @@
 # Scottish Book Problem 26 (Mazur and Orlicz's claim)
 
-**Scottish Book Problem 26 (Mazur and Orlicz's claim).** The claim that for every real vector
+The claim that for every real vector
 space $E$ with a topology that is of type $\{F_o\}$ and every sequence $(F_n)_{n \ge 0}$ of
 linear functionals $E \to \mathbb{R}$, if $F_n \to 0$ uniformly on every bounded set
 $R \subseteq E$, then there is an open set $U \subseteq E$ containing $0$ on which

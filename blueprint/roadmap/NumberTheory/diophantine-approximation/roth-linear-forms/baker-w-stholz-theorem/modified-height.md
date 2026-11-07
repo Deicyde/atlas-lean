@@ -1,6 +1,6 @@
 # Modified height
 
-**Modified height.** Let $K$ be a number field of degree $d = [K : \mathbb{Q}]$ and let
+Let $K$ be a number field of degree $d = [K : \mathbb{Q}]$ and let
 $\varphi : K \to \mathbb{C}$ be a ring homomorphism. For $\alpha \in K$, the modified height of
 $\alpha$ with respect to $\varphi$ is
 

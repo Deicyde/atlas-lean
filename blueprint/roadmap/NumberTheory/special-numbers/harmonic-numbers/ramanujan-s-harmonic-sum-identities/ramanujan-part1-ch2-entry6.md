@@ -1,6 +1,6 @@
 # Ramanujan's harmonic sum identity (Entry 6)
 
-**Ramanujan's harmonic sum identity (Entry 6).** For all natural numbers $n$ and $r$ with
+For all natural numbers $n$ and $r$ with
 $r > 0$, the following identity holds in $\mathbb{Q}$:
 
 $$

@@ -1,6 +1,6 @@
 # Perfect covers of a product of two cyclic 2-groups
 
-**Perfect covers of a product of two cyclic 2-groups.** Write $C(K)$ for the number of
+Write $C(K)$ for the number of
 perfect covers of a group $K$, and $a_{m,n} = C(\mathbb{Z}_{2^m} \oplus \mathbb{Z}_{2^n})$.
 For all $m \ge n \ge 1$,
 $a_{m,n} = 2^{m+n-1} (a_{m-1,n} + 2 a_{m,n-1}) -

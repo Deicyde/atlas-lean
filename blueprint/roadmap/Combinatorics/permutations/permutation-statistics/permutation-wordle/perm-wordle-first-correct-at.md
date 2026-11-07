@@ -1,6 +1,6 @@
 # First guess with a correct position in permutation Wordle
 
-**First guess with a correct position in permutation Wordle.** Let $S$ be a strategy, that
+Let $S$ be a strategy, that
 is, a permutation $S_m$ of $\{0, \dots, m-1\}$ for every $m$, let $\pi$ be a permutation of
 $\{0, \dots, n-1\}$, and let $\gamma_1, \gamma_2, \dots$ be the guesses of permutation Wordle with
 strategy $S$ and secret $\pi$. For a natural number $r$, $\rho_S(\pi) = r$ means that $r \ge 1$,

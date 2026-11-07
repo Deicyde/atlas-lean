@@ -1,6 +1,6 @@
 # Recurrences for partitions into even or distinct parts and for overpartitions
 
-**Recurrences for partitions into even or distinct parts and for overpartitions.** Let $n$
+Let $n$
 be a natural number. Let $p_e(m)$, $p_o(m)$ and $p_d(m)$ be the numbers of partitions of $m$
 into even parts, into odd parts and into distinct parts, and let $\bar p(m)$ be the number of
 overpartitions of $m$. For a positive integer $m$, write $\sigma(m)$ for the sum of the divisors

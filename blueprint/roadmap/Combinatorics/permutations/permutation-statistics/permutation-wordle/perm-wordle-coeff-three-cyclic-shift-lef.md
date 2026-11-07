@@ -1,6 +1,6 @@
 # Cyclic shift left minimizes three-guess solves among inductive strategies
 
-**Cyclic shift left minimizes three-guess solves among inductive strategies.** Let $n \ge 4$
+Let $n \ge 4$
 and let $S$ be an inductive strategy of length $n$ whose component $S[n]$ is not the left cyclic
 shift $i \mapsto i - 1 \pmod n$. Then strictly fewer permutations of $\{0, \dots, n-1\}$ are
 guessed in exactly three guesses with the cyclic shift left strategy $\mathrm{CSL}_n$ than with

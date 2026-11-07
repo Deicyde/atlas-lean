@@ -1,6 +1,6 @@
 # Tight alternating knot constant
 
-**Tight alternating knot constant.** The tight alternating knot
+The tight alternating knot
 constant $C_{22b} = b_0$ is the supremum, taken in the extended reals,
 of the set of real numbers $c$ admissible for the tight alternating
 knot inequality: those $c \ge 0$ such that every link type $K$ that

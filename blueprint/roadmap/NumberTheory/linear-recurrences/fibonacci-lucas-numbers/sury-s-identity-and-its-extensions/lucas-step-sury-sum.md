@@ -1,6 +1,6 @@
 # Step extension of Sury's identity for Lucas numbers
 
-**Step extension of Sury's identity for Lucas numbers.** Let $F_n$ and $L_n$ be the Fibonacci
+Let $F_n$ and $L_n$ be the Fibonacci
 and Lucas numbers at integer indices. For all natural numbers $j \ge 1$ and $n$, in the rational
 numbers,
 

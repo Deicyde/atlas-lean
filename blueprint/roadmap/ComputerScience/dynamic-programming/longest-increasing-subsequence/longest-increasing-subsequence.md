@@ -1,6 +1,6 @@
 # Longest increasing subsequence by dynamic programming
 
-**Longest increasing subsequence by dynamic programming.** Given a list
+Given a list
 $x_0, \dots, x_{n-1}$ of elements of a preorder with decidable $<$, this timed computation
 builds, from the right, a table recording for each position $i$ a length and a strictly
 increasing subsequence starting with $x_i$ (the longest one, by the recurrence

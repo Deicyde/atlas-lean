@@ -1,6 +1,6 @@
 # Complementary factors of support data
 
-**Complementary factors of support data.** For a tuple $r = (r_1, \dots, r_d)$ of natural
+For a tuple $r = (r_1, \dots, r_d)$ of natural
 numbers and an index $i$, the complementary factor $s_i$ is the natural-number quotient
 $\lfloor \operatorname{lcm}(r_1, \dots, r_d) / r_i \rfloor$, taken to be $0$ when $r_i = 0$.
 

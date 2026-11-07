@@ -1,6 +1,6 @@
 # Embedding of a 2-local term into $n$ qubits
 
-**Embedding of a 2-local term into $n$ qubits.** Let a 2-local term act on qubits $i$ and $j$,
+Let a 2-local term act on qubits $i$ and $j$,
 and let $M$ be the $4 \times 4$ complex matrix encoded by its list of entries, with rows and
 columns indexed by pairs of bits. Its embedding into $n$ qubits is the $2^n \times 2^n$ complex
 matrix whose entry at basis indices $s, t \in \{0, \dots, 2^n - 1\}$ is

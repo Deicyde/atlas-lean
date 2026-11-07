@@ -1,6 +1,6 @@
 # A continuous nowhere differentiable function
 
-**A continuous nowhere differentiable function.** There exists a continuous function
+There exists a continuous function
 $f : \mathbb{R} \to \mathbb{R}$ that is differentiable at no point of $\mathbb{R}$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Mazur's factorisation claim (Scottish Book Problem 55)
 
-**Mazur's factorisation claim (Scottish Book Problem 55).** The claim that for every real
+The claim that for every real
 Banach space $E$, every unbounded set $R \subseteq E$ and every continuous bilinear form
 $B : E \times E \to \mathbb{R}$, if the quadratic form $W(x) = B(x, x)$ is bounded on the set
 of points at distance less than $\varepsilon$ from $R$ for some $\varepsilon > 0$, then there

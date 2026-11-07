@@ -1,6 +1,6 @@
 # Automatic group
 
-**Automatic group.** A group $G$ is automatic if there are a finite alphabet $A$, an
+A group $G$ is automatic if there are a finite alphabet $A$, an
 involution $\iota$ of $A$, a map $\mathrm{ev} \colon A \to G$ with
 $\mathrm{ev}(\iota(a)) = \mathrm{ev}(a)^{-1}$ for all $a \in A$, a language $L$ of words over $A$
 that is exactly the set of words accepted by some deterministic finite automaton, and a natural

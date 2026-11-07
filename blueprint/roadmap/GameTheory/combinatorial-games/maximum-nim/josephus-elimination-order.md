@@ -1,6 +1,6 @@
 # Josephus elimination order
 
-**Josephus elimination order.** For natural numbers $k$ and $n$, place $1, \dots, n$ in
+For natural numbers $k$ and $n$, place $1, \dots, n$ in
 order on a circle and repeatedly remove one entry. When $L$ entries remain and the current
 position is $s$ (zero-based, initially $s = 0$), the entry at zero-based position
 $i = (s + k - 1) \bmod L$ is removed, where the subtraction is truncated at $0$, and $i$ becomes

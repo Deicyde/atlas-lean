@@ -1,6 +1,6 @@
 # The inclusion-exclusion-like sum in two variables
 
-**The inclusion-exclusion-like sum in two variables.** For every function
+For every function
 $F : \mathbb{R} \to \mathbb{Z}$ and all real numbers $x$ and $y$,
 $g^{(F)}(x, y) = F(x) + F(y) - F(x + y)$.
 

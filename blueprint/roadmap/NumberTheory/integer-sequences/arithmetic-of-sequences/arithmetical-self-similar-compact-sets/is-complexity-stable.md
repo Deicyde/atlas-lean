@@ -1,6 +1,6 @@
 # Stable numbers for integer complexity
 
-**Stable numbers for integer complexity.** A natural number $n$ is stable when $n > 0$ and
+A natural number $n$ is stable when $n > 0$ and
 $\lVert 3^k n \rVert = \lVert n \rVert + 3k$ for every natural number $k$, where $\lVert m \rVert$
 is the integer complexity of $m$.
 

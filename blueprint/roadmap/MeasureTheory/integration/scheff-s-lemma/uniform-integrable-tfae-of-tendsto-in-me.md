@@ -1,6 +1,6 @@
 # Uniform integrability equivalences
 
-**Uniform integrability equivalences.** Let $\mu$ be a finite measure on a measurable space
+Let $\mu$ be a finite measure on a measurable space
 $\alpha$, let $f_n : \alpha \to \mathbb{R}$ ($n \in \mathbb{N}$) and $g : \alpha \to \mathbb{R}$ be
 in $L^1(\mu)$, write $\|h\|_1 = \int |h| \, d\mu$, and suppose that $f_n \to g$ in $\mu$-measure
 (for every $\varepsilon > 0$, $\mu\{x : |f_n(x) - g(x)| \ge \varepsilon\} \to 0$). Then the

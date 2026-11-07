@@ -1,6 +1,6 @@
 # Division map for the syntactic monoid of an inverse image
 
-**Division map for the syntactic monoid of an inverse image.** Let
+Let
 $h \colon \Sigma^* \to \Gamma^*$ be a monoid morphism between free monoids and $L$ a language over
 $\Gamma$. Write $[u]_L$ for the class of a word $u$ in the syntactic monoid $M(L)$ of $L$, $K$ for
 the inverse image $h^{-1}(L) = \{w \in \Sigma^* \mid h(w) \in L\}$, and

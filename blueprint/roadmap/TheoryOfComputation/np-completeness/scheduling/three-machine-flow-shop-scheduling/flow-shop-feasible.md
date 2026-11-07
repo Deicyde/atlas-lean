@@ -1,6 +1,6 @@
 # Feasible flow-shop schedules
 
-**Feasible flow-shop schedules.** Let an instance consist of jobs $1, \dots, n$, where job $j$
+Let an instance consist of jobs $1, \dots, n$, where job $j$
 is a list of natural numbers whose $k$-th entry $p_{j,k}$ is its processing time on machine $k$
 (read as $0$ if the list has fewer than $k$ entries), and a deadline $D$. The instance is
 feasible when there are natural numbers $s_{j,k}$, for each job $j$ and each $k \in \{1, 2, 3\}$,

@@ -1,6 +1,6 @@
 # Theta-function identities of level 5
 
-**Theta-function identities of level 5.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$,
+Let $f_k = \prod_{m \ge 1} (1 - q^{km})$,
 $f(q) = \prod_{m \ge 1} (1 - (-q)^m)$ (so that $f(-q) = f_1$),
 $\chi(-q) = \prod_{m \ge 0} (1 - q^{2m+1})$ and $\chi(q) = \prod_{m \ge 0} (1 + q^{2m+1})$. Let
 $f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's general theta

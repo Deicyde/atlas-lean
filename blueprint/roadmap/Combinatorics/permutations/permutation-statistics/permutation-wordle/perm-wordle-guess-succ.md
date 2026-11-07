@@ -1,6 +1,6 @@
 # Recurrence for the guesses of permutation Wordle
 
-**Recurrence for the guesses of permutation Wordle.** Let $S$ be a strategy, that is, a
+Let $S$ be a strategy, that is, a
 permutation $S_m$ of $\{0, \dots, m-1\}$ for every $m$, let $\pi$ be a permutation of
 $\{0, \dots, n-1\}$, and let $\gamma_1, \gamma_2, \dots$ be the guesses of permutation Wordle with
 strategy $S$ and secret $\pi$. For every $r \ge 1$, the guess $\gamma_{r+1}$ is the guess that one

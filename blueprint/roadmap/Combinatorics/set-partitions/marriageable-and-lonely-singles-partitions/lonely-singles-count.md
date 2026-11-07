@@ -1,6 +1,6 @@
 # Number of lonely singles partitions
 
-**Number of lonely singles partitions.** For $n \ge 0$, $L_n$ is the number of lonely singles
+For $n \ge 0$, $L_n$ is the number of lonely singles
 partitions of $\{0, \dots, n-1\}$, that is, of noncrossing partitions of $\{0, \dots, n-1\}$ that
 are not marriageable singles partitions.
 

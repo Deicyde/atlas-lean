@@ -1,6 +1,6 @@
 # QUADRATIC ASSIGNMENT is NP-complete
 
-**QUADRATIC ASSIGNMENT is NP-complete.** The decision problem QUADRATIC ASSIGNMENT lies in NP,
+The decision problem QUADRATIC ASSIGNMENT lies in NP,
 and every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

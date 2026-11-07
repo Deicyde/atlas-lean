@@ -1,6 +1,6 @@
 # Sums of trinomial coefficients along lines by coefficient extraction
 
-**Sums of trinomial coefficients along lines by coefficient extraction.** Write $[t^j]\,g$
+Write $[t^j]\,g$
 for the coefficient of $t^j$ in a power series $g$, and $f_k = [t^k]\,f$. For $n \in \mathbb{N}$
 let $\binom{n}{j}_2 = [t^j]\,(1+t+t^2)^n$ be the trinomial coefficient. For complex $u$ and $z$
 let $(1 + zt + z^2t^2)^u$ be the binomial series $\sum_{i \ge 0} \binom{u}{i} (zt + z^2t^2)^i$,

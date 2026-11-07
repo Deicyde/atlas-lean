@@ -1,6 +1,6 @@
 # Sorted sweep events
 
-**Sorted sweep events.** For $n$ segments, each given by its two endpoints, the left endpoint
+For $n$ segments, each given by its two endpoints, the left endpoint
 of a segment is its endpoint with the smaller $x$-coordinate, or its first given endpoint when
 both $x$-coordinates agree, and the right endpoint is the other one. The event list consists of
 the $2n$ events, the left and the right endpoint of each segment, sorted by the $x$-coordinate

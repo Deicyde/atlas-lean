@@ -1,6 +1,6 @@
 # A common prime divisor of $y - 1$ and $\Phi_p(y^{p^{a-1}})$ is $p$
 
-**A common prime divisor of $y - 1$ and $\Phi_p(y^{p^{a-1}})$ is $p$.** Let $\rho$ and $p$ be
+Let $\rho$ and $p$ be
 primes, let $a \ge 1$ be a natural number, let $y$ be a positive integer, and let $\Phi_p$ be the
 $p$-th cyclotomic polynomial with integer coefficients. If $\rho \mid y - 1$ and
 $\rho \mid \Phi_p(y^{p^{a-1}})$, then $\rho = p$.

@@ -1,6 +1,6 @@
 # Recursion for the Euler–Mahonian polynomials
 
-**Recursion for the Euler–Mahonian polynomials.** For every commutative ring $R$, every
+For every commutative ring $R$, every
 natural number $d \ge 1$ and all $x, y \in R$, the Euler–Mahonian polynomials $E_d$ and
 $E_{d+1}$ satisfy
 

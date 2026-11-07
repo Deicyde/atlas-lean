@@ -1,6 +1,6 @@
 # $3 \cdot 3$ is a $2$-Lehmer factorization
 
-**$3 \cdot 3$ is a $2$-Lehmer factorization.** The spoof factorization $3^1 \cdot 3^1$ is a
+The spoof factorization $3^1 \cdot 3^1$ is a
 $2$-Lehmer factorization; indeed $2 \cdot (3 - 1)(3 - 1) = 3 \cdot 3 - 1$.
 
 ## Sources

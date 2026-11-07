@@ -1,6 +1,6 @@
 # Modal formulas are bisimulation-invariant under the standard translation
 
-**Modal formulas are bisimulation-invariant under the standard translation.** For every
+For every
 modal formula $\varphi$, its standard translation $ST_x(\varphi)$ (the first-order formula over
 the modal language whose single variable $x$ stands for the current world) is
 bisimulation-invariant: for all Kripke models $M$ and $N$, every bisimulation $Z$ between $M$

@@ -1,6 +1,6 @@
 # Vandermonde convolution for trinomial coefficients
 
-**Vandermonde convolution for trinomial coefficients.** Write $\binom{n}{k}_2$ for the
+Write $\binom{n}{k}_2$ for the
 trinomial coefficient, the coefficient of $t^k$ in $(1 + t + t^2)^n$, and put $\binom{n}{k}_2 = 0$
 for negative integers $k$. Then for all natural numbers $n$, $m$ and every integer $l$,
 

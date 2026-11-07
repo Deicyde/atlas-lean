@@ -1,6 +1,6 @@
 # Converse of the angle bisector theorem
 
-**Converse of the angle bisector theorem.** Let $A$, $B$, $C$, $D$ be points of a Euclidean
+Let $A$, $B$, $C$, $D$ be points of a Euclidean
 affine space (a metric affine space over a real inner product space) with $A$, $B$, $C$ affinely
 independent, so that $ABC$ is a nondegenerate triangle, and with $A \ne B$, $A \ne C$ and
 $A \ne D$. If $D$ lies on the closed segment $BC$ and $BD / DC = AB / AC$, then

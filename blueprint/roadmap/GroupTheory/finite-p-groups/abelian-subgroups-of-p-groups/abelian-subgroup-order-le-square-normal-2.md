@@ -1,6 +1,6 @@
 # Kourovka Problem 20.76 has a negative answer
 
-**Kourovka Problem 20.76 has a negative answer.** The statement of Kourovka Problem 20.76 is
+The statement of Kourovka Problem 20.76 is
 false: there are a prime $p$, a natural number $k$, a finite $p$-group $G$ all of whose abelian
 normal subgroups have order at most $p^k$, and an abelian subgroup of $G$ of order greater than
 $p^{2k}$.

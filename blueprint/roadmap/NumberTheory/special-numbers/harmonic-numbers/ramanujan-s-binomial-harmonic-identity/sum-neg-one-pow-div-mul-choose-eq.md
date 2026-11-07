@@ -1,6 +1,6 @@
 # Gould's reciprocal binomial identity (Alzer–Kwong, Lemma 4)
 
-**Gould's reciprocal binomial identity (Alzer–Kwong, Lemma 4).** Let $N$ be a natural number
+Let $N$ be a natural number
 and $x$ a real number with $x \ne \nu$ for every $\nu \in \{0, 1, \dots, N\}$. Then
 
 $$

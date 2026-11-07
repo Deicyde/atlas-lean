@@ -1,6 +1,6 @@
 # The first three primes
 
-**The first three primes.** With primes indexed from one, the first three primes are
+With primes indexed from one, the first three primes are
 $p_1 = 2$, $p_2 = 3$ and $p_3 = 5$.
 
 ## Sources

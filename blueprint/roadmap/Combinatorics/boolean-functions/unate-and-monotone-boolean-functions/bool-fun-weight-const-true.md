@@ -1,6 +1,6 @@
 # Weight of the constant one function
 
-**Weight of the constant one function.** For every $n$, the constant function $1$ on $n$
+For every $n$, the constant function $1$ on $n$
 variables has weight $2^n$.
 
 ## Sources

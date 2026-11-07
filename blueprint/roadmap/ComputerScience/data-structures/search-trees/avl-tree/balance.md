@@ -1,6 +1,6 @@
 # AVL rebalancing
 
-**AVL rebalancing.** For trees $l$, $r$ with cached heights and a key $x$, write $h(T)$ for
+For trees $l$, $r$ with cached heights and a key $x$, write $h(T)$ for
 the cached height at the root of a tree $T$ (zero for the empty tree) and $N(A, y, B)$ for the
 node with left subtree $A$, key $y$, right subtree $B$ and cached height $\max(h(A), h(B)) + 1$.
 The node $\mathrm{balance}(l, x, r)$ is defined by cases. If $h(l) > h(r) + 1$ and $l$ has left

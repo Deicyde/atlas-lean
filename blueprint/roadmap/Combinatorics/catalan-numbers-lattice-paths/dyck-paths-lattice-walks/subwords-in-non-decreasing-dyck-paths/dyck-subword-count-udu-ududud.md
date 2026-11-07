@@ -1,6 +1,6 @@
 # Occurrences of UDU in UDUDUD
 
-**Occurrences of UDU in UDUDUD.** The contiguous subword $UDU$ occurs exactly $2$ times in
+The contiguous subword $UDU$ occurs exactly $2$ times in
 $UDUDUD$; the two occurrences overlap.
 
 ## Sources

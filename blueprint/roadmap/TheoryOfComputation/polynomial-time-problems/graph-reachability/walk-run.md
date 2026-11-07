@@ -1,6 +1,6 @@
 # Walking along the marks of the PATH marking machine
 
-**Walking along the marks of the PATH marking machine.** Let $c$ be a stack other than the
+Let $c$ be a stack other than the
 marks stack $M$ and the parked stack $P$, let $u$ be a symbol of the alphabet of $c$, and let
 $\ell$ be a label at which the program is the walk step counted by $c$ that returns to $\ell$
 (with some final statement). Let $j$ be a natural number, $p$ and $q$ lists of bits, $v$ a

@@ -1,6 +1,6 @@
 # Quasi-polynomial formula for bishops on a square board
 
-**Quasi-polynomial formula for bishops on a square board.** Write $B_S(m, k)$ for the number of
+Write $B_S(m, k)$ for the number of
 placements of $k$ nonattacking bishops on the $m \times m$ board $[1, m]^2$,
 $\pi(m) \in \lbrace 0, 1 \rbrace$ for the remainder of $m$ modulo $2$, and
 $c_{k,d}(z) \in \mathbb{C}$ for the constituent coefficient of the bishop colour quasi-polynomials

@@ -1,6 +1,6 @@
 # Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ power-free are finite
 
-**Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ power-free are finite.** For every
+For every
 natural number $k \ge 2$, there are only finitely many pairs of natural numbers $(n, x)$ with
 $n! + 1 = x^2$ such that $x - 1$ or $x + 1$ is $k$-free.
 

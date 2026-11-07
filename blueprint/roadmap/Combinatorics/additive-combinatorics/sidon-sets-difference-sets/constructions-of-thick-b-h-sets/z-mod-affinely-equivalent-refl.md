@@ -1,6 +1,6 @@
 # Affine equivalence is reflexive
 
-**Affine equivalence is reflexive.** For every natural number $M$, every subset $A$ of
+For every natural number $M$, every subset $A$ of
 $\mathbb{Z}/M\mathbb{Z}$ is affinely equivalent to itself (take $d = 1$ and $s = 0$).
 
 ## Sources

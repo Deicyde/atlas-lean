@@ -1,6 +1,6 @@
 # Itty–Rosin–Carstensen–Reichman lower bound for the capacity of the 7-cycle
 
-**Itty–Rosin–Carstensen–Reichman lower bound for the capacity of the 7-cycle.** The Shannon
+The Shannon
 capacity of the $7$-cycle is at least $134753^{1/10}$, as an inequality in $[0, \infty]$.
 
 ## Sources

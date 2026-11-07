@@ -1,6 +1,6 @@
 # A vanishing sum of the corrected Genocchi–Lucas coefficients
 
-**A vanishing sum of the corrected Genocchi–Lucas coefficients.** Let
+Let
 $\beta = (1 - \sqrt{5})/2$, let $G_k$ be the Genocchi numbers and $L_n$ the Lucas numbers, and for
 each natural number $n$ let
 

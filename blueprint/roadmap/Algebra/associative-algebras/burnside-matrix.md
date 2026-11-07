@@ -1,6 +1,6 @@
 # Burnside's theorem on matrix algebras
 
-**Burnside's theorem on matrix algebras.** Let $k$ be an algebraically closed field, $n$ a natural
+Let $k$ be an algebraically closed field, $n$ a natural
 number, and $A$ a $k$-subalgebra of the algebra $M_n(k)$ of $n \times n$ matrices over $k$.
 Suppose that the only subspaces $W$ of $k^n$ with $Mv \in W$ for all $M \in A$ and all $v \in W$
 are $0$ and $k^n$. Then $A = M_n(k)$.

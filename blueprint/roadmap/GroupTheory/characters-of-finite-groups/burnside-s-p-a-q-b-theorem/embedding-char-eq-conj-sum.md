@@ -1,6 +1,6 @@
 # Field embeddings applied to character values
 
-**Field embeddings applied to character values.** Let $G$ be a group, $\rho$ a
+Let $G$ be a group, $\rho$ a
 representation of $G$ on a finite-dimensional complex vector space $V$ with character $\chi$,
 let $m$ be a positive integer, and let $g \in G$ be such that every root $\mu$ of the
 characteristic polynomial of $\rho(g)$ satisfies $\mu^m = 1$. Let $K \subseteq \mathbb{C}$ be the

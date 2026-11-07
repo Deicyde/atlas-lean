@@ -1,6 +1,6 @@
 # The AC-3 algorithm
 
-**The AC-3 algorithm.** Given a binary CSP $P$ with finitely many variables, domains
+Given a binary CSP $P$ with finitely many variables, domains
 $\mathrm{dom}$ and a queue $q$ of pairs of variables, AC-3 returns $\mathrm{dom}$ when $q$ is
 empty. Otherwise it removes the first pair $(x, y)$ of $q$ and revises it: the revised domain of
 $x$ consists of the values $a \in \mathrm{dom}(x)$ for which some $b \in \mathrm{dom}(y)$ has the

@@ -1,6 +1,6 @@
 # Bushaw–Kettle pebbling threshold for grids
 
-**Bushaw–Kettle pebbling threshold for grids.** Let $d \ge 1$ and let $w_0, \dots, w_{d-1}$
+Let $d \ge 1$ and let $w_0, \dots, w_{d-1}$
 be natural numbers with $w_i \ge 2$ for every $i$. For each $k$ give the grid $P_k^d$ on
 $\{0, \dots, k-1\}^d$ the cost $w_i$ on every edge in coordinate $i$, and let
 $t : \mathbb{N} \to \mathbb{R}$ be a threshold function, as $k \to \infty$, for the probability

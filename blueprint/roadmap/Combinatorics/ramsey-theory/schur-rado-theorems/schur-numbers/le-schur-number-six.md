@@ -1,6 +1,6 @@
 # Lower bound for the sixth Schur number
 
-**Lower bound for the sixth Schur number.** The Schur number $S(6)$ is at least $536$.
+The Schur number $S(6)$ is at least $536$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Border words and codes of Lucas numbers
 
-**Border words and codes of Lucas numbers.** Let $n \ge 1$, and write $F_k$ for the Fibonacci
+Let $n \ge 1$, and write $F_k$ for the Fibonacci
 numbers and $L_k$ for the Lucas numbers. Let $S_1, S_2, S_3, S_4$ be base phi expansions (sets
 of positions of the digits $1$) of $L_{2n}$, $L_{2n+1}$, $L_{2n+1} + 1$ and $L_{2n+2} - 1$
 respectively, and let $S_k^-$ be the set of negative positions in $S_k$. Then

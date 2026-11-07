@@ -1,6 +1,6 @@
 # Conjugation reverses majorization
 
-**Conjugation reverses majorization.** For partitions $\alpha$ and $\beta$ of $n$, with parts
+For partitions $\alpha$ and $\beta$ of $n$, with parts
 listed in decreasing order, $\alpha$ majorizes $\beta$ if and only if the conjugate partition
 $\beta^*$ majorizes the conjugate partition $\alpha^*$, again with parts listed in decreasing
 order.

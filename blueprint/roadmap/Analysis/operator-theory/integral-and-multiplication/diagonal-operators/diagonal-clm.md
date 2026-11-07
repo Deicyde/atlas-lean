@@ -1,6 +1,6 @@
 # Diagonal operator on ℓ²
 
-**Diagonal operator on ℓ².** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let $\iota$ be
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let $\iota$ be
 a type and let $a : \iota \to \mathbb{K}$ be a bounded sequence, that is, $\|a_i\| \le C$ for some
 real $C$ and all $i \in \iota$. The diagonal operator $D_a$ with coefficients $a$ is the bounded
 linear operator on $\ell^2(\iota, \mathbb{K})$ that sends $x$ to the sequence

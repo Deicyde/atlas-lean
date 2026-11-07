@@ -1,6 +1,6 @@
 # Double dual of a reflexive lattice
 
-**Double dual of a reflexive lattice.** Let $A$ be an integral domain with fraction field $K$,
+Let $A$ be an integral domain with fraction field $K$,
 let $V$ be a finite-dimensional $K$-vector space, viewed as an $A$-module through $A \subseteq K$,
 and let $B$ be a nondegenerate bilinear form on $V$. Let $M$ be an $A$-lattice in $V$, that is, a
 finitely generated $A$-submodule that spans $V$ over $K$, and suppose that $M$ is reflexive as an

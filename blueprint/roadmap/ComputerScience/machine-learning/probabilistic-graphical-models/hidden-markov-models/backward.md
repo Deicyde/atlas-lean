@@ -1,6 +1,6 @@
 # Backward variables of a hidden Markov model
 
-**Backward variables of a hidden Markov model.** Let $h$ be a hidden Markov model with finite
+Let $h$ be a hidden Markov model with finite
 state set $S$, transition weights $a$ and emission weights $b$ in a semiring $R$, and let
 $x_0, x_1, \dots$ be observations. The backward variables $\beta_k(t, s) \in R$, for
 $k, t \in \mathbb{N}$ and $s \in S$, are defined by $\beta_0(t, s) = 1$ and

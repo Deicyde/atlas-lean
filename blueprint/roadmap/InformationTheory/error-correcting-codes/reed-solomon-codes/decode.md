@@ -1,6 +1,6 @@
 # Berlekamp-Welch decoder
 
-**Berlekamp-Welch decoder.** Let $F$ be a field, let $\alpha_0, \dots, \alpha_{n-1} \in F$,
+Let $F$ be a field, let $\alpha_0, \dots, \alpha_{n-1} \in F$,
 let $k, e$ be natural numbers and let $S$ be a solver for the key equations with error budget
 $e$. On a received word $y \in F^n$ the decoder runs $S$ on $y$ and reports failure if $S$
 returns nothing. If $S$ returns a pair $(Q, E)$ (the solver guarantees that $E$ is monic),

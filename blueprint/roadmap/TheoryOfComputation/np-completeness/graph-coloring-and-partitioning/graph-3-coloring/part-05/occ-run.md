@@ -1,6 +1,6 @@
 # Emitting one literal occurrence
 
-**Emitting one literal occurrence.** Let $\ell = (x, p)$ be a literal, $R$ a list of token
+Let $\ell = (x, p)$ be a literal, $R$ a list of token
 symbols whose first element, if any, is not a name bit, and $qs$ a list of earlier occurrences
 $(x_i, p_i, L_i, M_i)$ with $M_i = L_i + 1$ for each. Let $m$ be a quiescent state of the
 3-COLOR emitter with counter values $n$ for $N$ and $r$ for the OR output, and $v$ a bit.

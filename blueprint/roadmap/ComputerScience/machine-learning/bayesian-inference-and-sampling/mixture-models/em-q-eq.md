@@ -1,6 +1,6 @@
 # Decomposition of the EM objective for the Bernoulli mixture
 
-**Decomposition of the EM objective for the Bernoulli mixture.** Let
+Let
 $x_1, \dots, x_N \in \{0, 1\}^d$ be data and let $\theta$ and $\theta'$ be valid parameters of a
 mixture of $K$ products of $d$ Bernoulli distributions (positive mixing weights summing to one and
 success probabilities in $(0, 1)$), where $\theta'$ has mixing weights $\pi'_k$ and success

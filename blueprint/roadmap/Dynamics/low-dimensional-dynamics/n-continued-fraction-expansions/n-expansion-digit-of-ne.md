@@ -1,6 +1,6 @@
 # The digit away from the left endpoint
 
-**The digit away from the left endpoint.** Let $N$ be a natural number and let $\alpha$ and
+Let $N$ be a natural number and let $\alpha$ and
 $x$ be real numbers with $x \ne \alpha$. Then the digit of $x$ for the $N$-expansion map on
 $[\alpha, \alpha + 1]$ is $\lfloor N/x - \alpha \rfloor$.
 

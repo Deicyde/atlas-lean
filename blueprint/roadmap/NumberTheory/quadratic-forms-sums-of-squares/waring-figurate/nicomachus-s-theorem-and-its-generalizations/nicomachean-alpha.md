@@ -1,6 +1,6 @@
 # The Nicomachean progression factor
 
-**The Nicomachean progression factor.** For rational numbers $n$, $s$ and $a$, define
+For rational numbers $n$, $s$ and $a$, define
 
 $$\alpha(n, s, a) = 2n^2 + na - a^2 + \frac{n(n-1)(s - s^2)}{2} - (n-1)as.$$
 

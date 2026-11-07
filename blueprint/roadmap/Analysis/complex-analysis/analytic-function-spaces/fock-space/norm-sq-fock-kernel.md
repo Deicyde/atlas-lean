@@ -1,3 +1,3 @@
 # Squared norm of the Fock kernel
 
-**Squared norm of the Fock kernel.** The squared norm of the Fock kernel is `Real.exp ‖z‖²`.
+The squared norm of the Fock kernel is `Real.exp ‖z‖²`.

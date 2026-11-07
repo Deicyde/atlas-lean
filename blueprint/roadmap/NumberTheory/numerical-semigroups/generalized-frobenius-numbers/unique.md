@@ -1,6 +1,6 @@
 # Uniqueness of the generalized Frobenius number
 
-**Uniqueness of the generalized Frobenius number.** For natural numbers $a_1, \dots, a_k$ and
+For natural numbers $a_1, \dots, a_k$ and
 $s$, if the integers $g$ and $g'$ are both the generalized Frobenius number $g(a_1, \dots, a_k; s)$,
 then $g = g'$.
 

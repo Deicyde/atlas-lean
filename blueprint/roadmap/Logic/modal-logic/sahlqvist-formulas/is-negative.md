@@ -1,6 +1,6 @@
 # Negative modal formulas
 
-**Negative modal formulas.** Negative and positive modal formulas are defined by simultaneous
+Negative and positive modal formulas are defined by simultaneous
 recursion: no atom is negative, $\bot$ is negative, $\varphi \to \psi$ is negative if $\varphi$
 is positive and $\psi$ is negative, and $\Box\varphi$ is negative if $\varphi$ is negative.
 

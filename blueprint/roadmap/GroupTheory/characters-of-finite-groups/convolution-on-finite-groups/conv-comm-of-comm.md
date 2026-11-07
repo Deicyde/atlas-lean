@@ -1,6 +1,6 @@
 # Convolution on a finite abelian group is commutative
 
-**Convolution on a finite abelian group is commutative.** Let $G$ be a finite abelian group and
+Let $G$ be a finite abelian group and
 write $f \ast g$ for the convolution $(f \ast g)(x) = \sum_{y \in G} f(y)\, g(y^{-1} x)$ of
 functions on $G$. For all $f, g : G \to \mathbb{C}$ we have $f \ast g = g \ast f$.
 

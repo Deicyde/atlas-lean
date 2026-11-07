@@ -1,6 +1,6 @@
 # Zakharov's conjecture on intersection points of cevians
 
-**Zakharov's conjecture on intersection points of cevians.** Let $A$, $B$, $C$ be affinely
+Let $A$, $B$, $C$ be affinely
 independent points of $\mathbb{R}^2$ and $T$ the triangle they span; a cevian is a segment
 joining a vertex of $T$ to a point of the open side opposite it. Let $n \ge 0$ and let
 $c_1, \dots, c_n$ be cevians such that the interior of $T$ minus $c_1 \cup \dots \cup c_n$ has

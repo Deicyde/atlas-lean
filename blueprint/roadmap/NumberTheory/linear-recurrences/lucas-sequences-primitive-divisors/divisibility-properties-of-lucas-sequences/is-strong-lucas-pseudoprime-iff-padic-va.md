@@ -1,6 +1,6 @@
 # Strong Lucas pseudoprimes via the $2$-adic valuation of ranks
 
-**Strong Lucas pseudoprimes via the $2$-adic valuation of ranks.** Let $P, Q$ be integers
+Let $P, Q$ be integers
 such that the Lucas pair $(P, Q)$ is nondegenerate, let $D = P^2 - 4Q$, and let $\rho(m)$ be the
 rank of appearance of $m$ in the Lucas sequence $U(P, Q)$. Let $N$ be a Lucas pseudoprime with
 parameters $P, Q$ such that $\gcd(N, PQD) = 1$. Then $\rho(p^k) = \rho(p)$ for every prime $p$

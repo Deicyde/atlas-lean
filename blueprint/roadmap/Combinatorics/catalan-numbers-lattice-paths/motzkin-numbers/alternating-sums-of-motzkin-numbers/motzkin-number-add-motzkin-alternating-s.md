@@ -1,6 +1,6 @@
 # Log-balancedness of Motzkin numbers plus their alternating sums
 
-**Log-balancedness of Motzkin numbers plus their alternating sums.** Let $M_n$ denote the
+Let $M_n$ denote the
 $n$-th Motzkin number, let $T_n = \sum_{k=0}^{n} (-1)^{n-k} M_k$ be the alternating sum of
 Motzkin numbers, and put $z_n = M_n + T_n$. Then the sequence $(z_n)_{n \ge 6}$ is log-balanced:
 for every natural number $n \ge 7$,

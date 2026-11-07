@@ -1,6 +1,6 @@
 # Sanford's coupled recurrence
 
-**Sanford's coupled recurrence.** Let $a, b$ be real numbers in $(0, 1)$ with $a \ne b$, and
+Let $a, b$ be real numbers in $(0, 1)$ with $a \ne b$, and
 for every natural number $m$ put
 
 $$

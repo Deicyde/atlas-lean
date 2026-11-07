@@ -1,6 +1,6 @@
 # Euler product for mean values of coordinatewise multiplicative functions
 
-**Euler product for mean values of coordinatewise multiplicative functions.** Let $k$ be a natural
+Let $k$ be a natural
 number, write $\mathbb{N} = \{0, 1, 2, \dots\}$, and let $f \colon \mathbb{N}^k \to \mathbb{C}$
 satisfy $f(a_1 b_1, \dots, a_k b_k) = f(a) f(b)$ for all $a, b \in \mathbb{N}^k$ with
 $\gcd(a_i, b_i) = 1$ for every $i$. For a prime $p$ and $\nu = (\nu_1, \dots, \nu_k) \in

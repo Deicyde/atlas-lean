@@ -1,6 +1,6 @@
 # Euler numbers of order α
 
-**Euler numbers of order α.** Let $E_m(x)$ denote the Euler polynomial. For a complex number
+Let $E_m(x)$ denote the Euler polynomial. For a complex number
 $\alpha$, the Euler numbers of order $\alpha$ are the complex numbers $E_n^{(\alpha)}(0)$,
 $n \ge 0$, defined by $E_0^{(\alpha)}(0) = 1$ and
 $E_{n+1}^{(\alpha)}(0) = -\alpha E_n^{(\alpha)}(0) +

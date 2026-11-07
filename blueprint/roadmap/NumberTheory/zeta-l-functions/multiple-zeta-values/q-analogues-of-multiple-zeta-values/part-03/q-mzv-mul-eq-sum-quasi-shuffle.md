@@ -1,6 +1,6 @@
 # Quasi-shuffle relations for general qMZVs
 
-**Quasi-shuffle relations for general qMZVs.** Consider words in letters $(k, Q)$ with
+Consider words in letters $(k, Q)$ with
 $k \in \mathbb{N}$ and $Q \in \mathbb{Q}[X]$, and let $u$ and $v$ be words in which every letter
 satisfies $\deg Q \le k$ and the first letter, if any, satisfies $Q(0) = 0$. Let $u \ast v$ be
 the quasi-shuffle product of $u$ and $v$ with letter product

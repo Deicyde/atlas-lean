@@ -1,6 +1,6 @@
 # Gcd-weighted sum of reciprocal distances from roots of unity to 1
 
-**Gcd-weighted sum of reciprocal distances from roots of unity to 1.** Let $n \ge 2$, let $d$
+Let $n \ge 2$, let $d$
 be a divisor of $n$, and write $e_m(x) = e^{2\pi i x / m}$. Then
 
 $$\sum_{1 \le k \le n-1,\ (n/d) \nmid k} \frac{\sqrt{\gcd(n, k)}}{|1 - e_{n/d}(-k)|} \le

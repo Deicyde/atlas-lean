@@ -1,6 +1,5 @@
 # Binet asymptotics for weighted generalized Fibonacci sequences, positive-root form
 
-**Binet asymptotics for weighted generalized Fibonacci sequences, positive-root form.**
 Let $r \ge 2$, let $A_1, \dots, A_r$ and $c_1, \dots, c_r$ be nonnegative real numbers with
 $A_r > 0$ and $c_j > 0$ for some $j$, and suppose that the indices $j$ with $A_j > 0$ have
 greatest common divisor $1$. Let $a_0, a_1, a_2, \dots$ be the real sequence with

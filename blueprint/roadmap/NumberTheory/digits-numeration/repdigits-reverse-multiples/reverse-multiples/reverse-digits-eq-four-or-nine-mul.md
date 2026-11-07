@@ -1,6 +1,6 @@
 # Reverse divisors have quotient $4$ or $9$
 
-**Reverse divisors have quotient $4$ or $9$.** If $n$ is a reverse divisor, then the decimal
+If $n$ is a reverse divisor, then the decimal
 reversal of $n$ equals $4n$ or $9n$.
 
 ## Sources

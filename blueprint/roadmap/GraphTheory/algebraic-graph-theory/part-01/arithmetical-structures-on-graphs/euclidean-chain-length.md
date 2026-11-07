@@ -1,6 +1,6 @@
 # Euclidean chain function
 
-**Euclidean chain function.** For natural numbers $x_1$ and $x_2$, the Euclidean chain
+For natural numbers $x_1$ and $x_2$, the Euclidean chain
 $x_1, x_2, x_3, \dots$ is given by $x_{i+1} = (-x_{i-1}) \bmod x_i$ (the least nonnegative
 residue) while $x_i \ne 0$, and by $x_{i+1} = 0$ once $x_i = 0$. The Euclidean chain function is
 defined by the recursion $F(x, 0) = 1$ and $F(x, y) = 1 + F(y, (-x) \bmod y)$ for $y \ne 0$. For

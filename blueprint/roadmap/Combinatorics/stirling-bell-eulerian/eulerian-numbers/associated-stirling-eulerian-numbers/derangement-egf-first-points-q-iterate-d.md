@@ -1,6 +1,6 @@
 # Derangements whose first $s$ points lie in distinct cycles
 
-**Derangements whose first $s$ points lie in distinct cycles.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra, $x, q \in R$ and $s \ge 0$. For a permutation $\sigma$ let $e(\sigma)$ be
 its number of excedances (indices $i$ with $\sigma(i) > i$) and $c(\sigma)$ its number of
 cycles, fixed points included. Let $A(x,u) = \sum_{n \ge 0} \sum_{\sigma} x^{e(\sigma)} u^n/n!$,

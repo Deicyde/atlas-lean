@@ -1,6 +1,6 @@
 # Sprague–Grundy value $5$ of P&R Helper on region $U$
 
-**Sprague–Grundy value $5$ of P&R Helper on region $U$.** Let $x \le y \le z$ be natural
+Let $x \le y \le z$ be natural
 numbers with $z < x + y$ and $y \le 2x + 1$ (the region $U$). The P&R Helper position $[x, y, z]$
 is equivalent to the Nim heap $*5$, that is, has Sprague–Grundy value $5$, if and only if one of
 the following holds:

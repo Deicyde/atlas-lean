@@ -1,3 +1,3 @@
 # Finite-dimensionality of the kernel of a backward shift power
 
-**Finite-dimensionality of the kernel of a backward shift power.** The kernel of `B ^ n` is finite-dimensional.
+The kernel of `B ^ n` is finite-dimensional.

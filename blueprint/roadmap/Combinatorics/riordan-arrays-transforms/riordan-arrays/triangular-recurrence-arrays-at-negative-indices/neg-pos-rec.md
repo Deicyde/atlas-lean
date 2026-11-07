@@ -1,6 +1,6 @@
 # Recurrence for the negative-positive numbers
 
-**Recurrence for the negative-positive numbers.** For every triangular recurrence with
+For every triangular recurrence with
 parameters $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ and all integers $n \le -2$ and
 $k \ge 1$, the negative-positive numbers satisfy
 

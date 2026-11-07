@@ -1,6 +1,6 @@
 # Correctness of the one-hot generator, with its explicit time bound
 
-**Correctness of the one-hot generator, with its explicit time bound.** Fix a layout, natural
+Fix a layout, natural
 numbers $T$ and $H$, and a bit string $o$. Start the one-hot generator at its first
 precomputation label, with internal state false, the output stack holding $o$, the time counter
 holding $T$ and the height counter holding $H$ in unary, and every other counter empty. Then

@@ -1,6 +1,6 @@
 # Moves of the μ-calculus model-checking game
 
-**Moves of the μ-calculus model-checking game.** Fix a Kripke model $M$ with accessibility
+Fix a Kripke model $M$ with accessibility
 relation $R$. A game position $(\varphi, w, s)$ consists of a μ-calculus formula $\varphi$ (with
 de Bruijn variables), a world $w$ and a stack $s$ of fixpoint binders, innermost first. The
 moves are exactly the following. From $(\varphi \wedge \psi, w, s)$ and from

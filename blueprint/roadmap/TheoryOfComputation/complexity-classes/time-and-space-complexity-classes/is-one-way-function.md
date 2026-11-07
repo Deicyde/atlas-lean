@@ -1,6 +1,6 @@
 # One-way function families
 
-**One-way function families.** Let $f$ assign to each $n \in \mathbb{N}$ and each $n$-bit
+Let $f$ assign to each $n \in \mathbb{N}$ and each $n$-bit
 string $x$ a bitstring $f_n(x)$. The family $f$ is one-way when three conditions hold. First, its
 output lengths are polynomially bounded: some polynomial $p$ satisfies $|f_n(x)| \le p(n)$ for
 all $n$ and $x$. Second, it is uniformly computable: some polynomial-time computable function

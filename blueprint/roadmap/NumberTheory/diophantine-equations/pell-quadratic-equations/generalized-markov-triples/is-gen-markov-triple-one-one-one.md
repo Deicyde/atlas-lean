@@ -1,6 +1,6 @@
 # $(1, 1, 1)$ is a generalized Markov triple
 
-**$(1, 1, 1)$ is a generalized Markov triple.** For every natural number $k$, the triple
+For every natural number $k$, the triple
 $(1, 1, 1)$ is a $k$-generalized Markov triple.
 
 ## Sources

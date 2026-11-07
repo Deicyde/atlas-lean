@@ -1,6 +1,6 @@
 # Cyclic sum formula (Hoffman–Ohno)
 
-**Cyclic sum formula (Hoffman–Ohno).** For a finite list $(n_1, \dots, n_r)$ of natural numbers
+For a finite list $(n_1, \dots, n_r)$ of natural numbers
 let $\zeta(n_1, \dots, n_r)$ be the sum of $(m_1^{n_1} \cdots m_r^{n_r})^{-1}$ over all integers
 $m_1 > m_2 > \cdots > m_r > 0$, taken to be $0$ when this family is not summable. Let
 $k = (k_1, \dots, k_l)$ be a nonempty list of positive integers, not all equal to $1$, with

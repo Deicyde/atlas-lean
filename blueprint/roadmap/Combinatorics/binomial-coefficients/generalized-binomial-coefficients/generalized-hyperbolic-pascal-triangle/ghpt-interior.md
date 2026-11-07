@@ -1,6 +1,6 @@
 # Interior step of the generalized hyperbolic Pascal triangle
 
-**Interior step of the generalized hyperbolic Pascal triangle.** Fix $q \in \mathbb{N}$ and a
+Fix $q \in \mathbb{N}$ and a
 type $R$ with an addition. A vertex is recorded as a pair $(c, x)$ of a type code $c \in \mathbb{N}$
 (code $0$ for the wingers at the ends of a row, $1$ for type $A$ and $2$ for type $B$) and a
 value $x \in R$. Given a list $v_0, v_1, \dots, v_m$ of such pairs with $m \ge 1$ and

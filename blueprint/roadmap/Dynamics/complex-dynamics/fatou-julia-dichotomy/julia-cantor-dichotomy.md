@@ -1,6 +1,6 @@
 # Fatou–Julia dichotomy for quadratic polynomials
 
-**Fatou–Julia dichotomy for quadratic polynomials.** For $c \in \mathbb{C}$, let $K_c$ be the
+For $c \in \mathbb{C}$, let $K_c$ be the
 filled Julia set of $T_c(z) = z^2 + c$ and let $M$ be the Mandelbrot set. If $c \in M$, then $K_c$
 is nonempty and connected. If $c \notin M$, then $K_c$ is homeomorphic to the Cantor space
 $\{0, 1\}^{\mathbb{N}}$ of binary sequences with the product topology.

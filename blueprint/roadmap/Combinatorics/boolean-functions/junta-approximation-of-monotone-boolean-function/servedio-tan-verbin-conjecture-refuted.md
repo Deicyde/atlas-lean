@@ -1,6 +1,6 @@
 # The Servedio–Tan–Verbin conjecture is false
 
-**The Servedio–Tan–Verbin conjecture is false.** Order $\{0,1\}^n$ coordinatewise with
+Order $\{0,1\}^n$ coordinatewise with
 $0 < 1$, and write $\deg f$ for the Boolean degree of a function $f : \{0,1\}^n \to \{0,1\}$. It
 is not the case that for every real $\varepsilon > 0$ there is a natural number $C$ such that for
 every $n \in \mathbb{N}$ and every monotone $f : \{0,1\}^n \to \{0,1\}$ there are a set $J$ of at

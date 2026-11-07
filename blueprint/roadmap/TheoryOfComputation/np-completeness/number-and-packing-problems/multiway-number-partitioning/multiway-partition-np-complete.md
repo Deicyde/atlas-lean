@@ -1,6 +1,6 @@
 # MULTIWAY NUMBER PARTITION is NP-complete
 
-**MULTIWAY NUMBER PARTITION is NP-complete.** Let MULTIWAY NUMBER PARTITION be the decision
+Let MULTIWAY NUMBER PARTITION be the decision
 problem that accepts exactly the bitstrings decoding to a feasible multiway number partition
 instance: a list of natural numbers and a number $K \ge 1$ such that the entries of the list,
 counted with repetition, can be split into $K$ nonempty parts with equal sums. Then MULTIWAY

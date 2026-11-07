@@ -1,6 +1,6 @@
 # Small-step semantics of heap commands
 
-**Small-step semantics of heap commands.** The single-step relation
+The single-step relation
 $(c, s, h) \to (c', s', h')$ on heap configurations is the least relation closed under the rules
 below. Here $a(s)$ is the value of an expression $a$ in the store $s$, $s[x \mapsto n]$ is $s$
 with variable $x$ set to $n$, $h[\ell \mapsto n]$ is $h$ with address $\ell$ set to $n$, and

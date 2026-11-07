@@ -1,6 +1,6 @@
 # Polynomial-time approximation schemes
 
-**Polynomial-time approximation schemes.** An optimization problem $P$, with value
+An optimization problem $P$, with value
 $\mathrm{val}(x, s)$ of a solution $s$ for an instance $x$, admits a polynomial-time
 approximation scheme when $P$ is an NPO problem and for every integer $k \ge 1$ there is a
 polynomial-time computable algorithm $A$ on pairs of bitstrings with the following property:

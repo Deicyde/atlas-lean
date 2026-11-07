@@ -1,6 +1,6 @@
 # Fatou's theorem on radial limits
 
-**Fatou's theorem on radial limits.** Let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic and
+Let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic and
 bounded on the open unit disc $|z| < 1$. Then for Lebesgue-almost every $\theta \in [0, 2\pi]$ the
 radial limit $\lim_{r \to 1^-} f(r e^{i\theta})$ exists in $\mathbb{C}$.
 

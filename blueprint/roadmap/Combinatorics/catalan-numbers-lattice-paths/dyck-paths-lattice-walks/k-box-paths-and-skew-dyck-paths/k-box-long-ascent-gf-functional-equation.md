@@ -1,6 +1,6 @@
 # Long-ascent functional equations for $k$-box paths
 
-**Long-ascent functional equations for $k$-box paths.** Let $\acute F_k(t, x)$ be the
+Let $\acute F_k(t, x)$ be the
 long-ascent generating function of $k$-box paths and $\acute G_k(t, x)$ that of augmented
 $k$-Dyck paths, including the empty path, both in $\mathbb{Z}[t][[x]]$. Then for every $k \ge 1$
 

@@ -1,6 +1,6 @@
 # Adler labels lie in $\{1, \dots, n\}$
 
-**Adler labels lie in $\{1, \dots, n\}$.** For every natural number $n$ and every set
+For every natural number $n$ and every set
 partition $P$ of $\{-n, \dots, n\}$, every Adler block label $p$ of $P$ is an integer with
 $1 \le p \le n$.
 

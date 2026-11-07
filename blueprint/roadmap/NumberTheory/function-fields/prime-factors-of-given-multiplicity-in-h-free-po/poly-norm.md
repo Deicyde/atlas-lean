@@ -1,6 +1,6 @@
 # The polynomial norm $q^{\deg f}$ over a finite field
 
-**The polynomial norm $q^{\deg f}$ over a finite field.** Let $F$ be a finite field with
+Let $F$ be a finite field with
 $q$ elements. The norm of a polynomial $f \in F[X]$ is the real number $|f| = q^{\deg f}$ if
 $f \neq 0$, and $|0| = 0$.
 

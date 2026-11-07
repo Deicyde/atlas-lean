@@ -1,6 +1,6 @@
 # A polynormal subgroup that is not paranormal (Kourovka 14.50 refuted)
 
-**A polynormal subgroup that is not paranormal (Kourovka 14.50 refuted).** There is a finite
+There is a finite
 group $G$ with a subgroup $A$ that is polynormal but not paranormal. So the conjecture of
 Kourovka Problem 14.50 is false.
 

@@ -1,6 +1,6 @@
 # Operational semantics of finite CCS with a synchronization function
 
-**Operational semantics of finite CCS with a synchronization function.** Let $\sigma$ be a
+Let $\sigma$ be a
 partial function that assigns to some pairs of actions $(a, b)$ an action $\sigma(a, b)$. The
 transition relation $P \xrightarrow{a} P'$ on finite CCS processes (built from prefix $a.P$,
 choice $P + Q$ and parallel composition $P \mid Q$) determined by $\sigma$ is the least relation

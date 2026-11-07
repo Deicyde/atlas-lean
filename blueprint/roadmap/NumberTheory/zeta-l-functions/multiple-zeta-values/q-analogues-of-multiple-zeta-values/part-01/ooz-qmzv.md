@@ -1,6 +1,6 @@
 # Ohno–Okuda–Zudilin q-multiple zeta values
 
-**Ohno–Okuda–Zudilin q-multiple zeta values.** For an index $(k_1, \dots, k_r)$ of natural
+For an index $(k_1, \dots, k_r)$ of natural
 numbers with $r \ge 1$, the (extended) Ohno–Okuda–Zudilin qMZV is the formal power series in $q$
 over $\mathbb{Q}$
 

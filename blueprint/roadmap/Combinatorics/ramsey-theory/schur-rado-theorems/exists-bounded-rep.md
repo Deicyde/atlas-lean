@@ -1,6 +1,6 @@
 # Bounded representations with one scaled part
 
-**Bounded representations with one scaled part.** Let $a$, $\lambda$, $n$ and $N$ be natural
+Let $a$, $\lambda$, $n$ and $N$ be natural
 numbers with $a \ge 3$, $n \ge 1$, $\lambda \ge a - 1$ and $N \le \lambda (a + n)$. Then there are
 natural numbers $x_0, \dots, x_{n-1}$ and $y$, each at most $\lambda$, such that
 $x_0 + \dots + x_{n-1} + a y = N$.

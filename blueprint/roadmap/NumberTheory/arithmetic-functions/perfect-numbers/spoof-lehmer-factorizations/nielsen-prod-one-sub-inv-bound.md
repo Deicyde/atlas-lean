@@ -1,6 +1,6 @@
 # Nielsen's bound
 
-**Nielsen's bound.** Let $r$, $a$ and $b$ be natural numbers and let $x_1 \le \dots \le x_r$ be
+Let $r$, $a$ and $b$ be natural numbers and let $x_1 \le \dots \le x_r$ be
 integers with every $x_j > 1$. If
 $\prod_{j=1}^{r} (1 - 1/x_j) \le a/b < \prod_{j=1}^{r-1} (1 - 1/x_j)$, then
 $a \prod_{j=1}^{r} x_j \le (a + 1)^{2^r} - (a + 1)^{2^{r-1}}$.

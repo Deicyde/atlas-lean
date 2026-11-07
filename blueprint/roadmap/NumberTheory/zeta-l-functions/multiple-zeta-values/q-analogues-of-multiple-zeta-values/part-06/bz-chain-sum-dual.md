@@ -1,6 +1,6 @@
 # Combinatorial form of Bradley–Zhao duality
 
-**Combinatorial form of Bradley–Zhao duality.** For a list of blocks
+For a list of blocks
 $(s_1, w_1), \dots, (s_r, w_r)$ of positive integers and an integer $N \ge 1$, let
 $S_N((s_1, w_1), \dots, (s_r, w_r))$ be the sum of $\binom{j_1}{w_1} \cdots \binom{j_r}{w_r}$
 over all strictly decreasing chains $N + 1 > a_1 > \dots > a_n > 0$ of length

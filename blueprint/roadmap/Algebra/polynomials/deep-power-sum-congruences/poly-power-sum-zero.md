@@ -1,6 +1,6 @@
 # The zeroth power sum of a polynomial is its degree
 
-**The zeroth power sum of a polynomial is its degree.** For every polynomial $P$ over a
+For every polynomial $P$ over a
 commutative ring $A$, the power sum $p_0(P)$ equals the degree of $P$ as a natural number
 (taken to be $0$ for $P = 0$), viewed as an element of $A$.
 

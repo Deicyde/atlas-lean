@@ -1,6 +1,6 @@
 # Hamiltonian paths of Sipser's graph have normal detours
 
-**Hamiltonian paths of Sipser's graph have normal detours.** Let $\varphi$ be a CNF formula
+Let $\varphi$ be a CNF formula
 with $m$ clauses and $k$ distinct variables, and write $T_i = m + i(3m + 2)$ and
 $R_{i,l} = T_i + 1 + l$ for the top and the row vertices of diamond $i$. Every Hamiltonian path
 from $T_0$ to $T_k$ in the digraph on the vertices $0, \dots, T_k$ whose arcs are those of

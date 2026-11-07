@@ -1,6 +1,6 @@
 # Recurrence for the hyperfibonacci numbers
 
-**Recurrence for the hyperfibonacci numbers.** Let $F^{(r)}_n$ denote the hyperfibonacci
+Let $F^{(r)}_n$ denote the hyperfibonacci
 numbers. For all natural numbers $r$ and $n$, $F^{(r)}_0 = 0$, $F^{(r)}_1 = 1$, and
 $F^{(r+1)}_{n+2} = F^{(r+1)}_{n+1} + F^{(r+1)}_n + \binom{n+r+1}{r}$.
 

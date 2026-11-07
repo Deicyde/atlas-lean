@@ -1,6 +1,6 @@
 # Continued fraction for smooth words from $j$ to $j$ by area
 
-**Continued fraction for smooth words from $j$ to $j$ by area.** Let $t(m, j; q)$ be the area
+Let $t(m, j; q)$ be the area
 distribution of the words of length $m$ over $\{1, \dots, j\}$ that begin and end with $j$ and whose
 consecutive letters differ by at most $1$. Define power series $K_k$ in $x$ over $\mathbb{Z}[q]$ by
 $K_1 = 1 - qx$ and $K_k = 1 - q^k x - q^{2k-1} x^2 / K_{k-1}$ for $k \ge 2$; each $K_k$ has constant

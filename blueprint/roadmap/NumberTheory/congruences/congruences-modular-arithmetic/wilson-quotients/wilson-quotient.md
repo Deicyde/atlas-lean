@@ -1,6 +1,6 @@
 # Wilson quotient
 
-**Wilson quotient.** For a natural number $p$, the Wilson quotient is the integer
+For a natural number $p$, the Wilson quotient is the integer
 $W(p) = \lfloor ((p-1)! + 1) / p \rfloor$ for $p \ge 1$, and $W(0) = 0$.
 
 For a prime $p$, Wilson's theorem $p \mid (p-1)! + 1$ makes the division exact. The definition is

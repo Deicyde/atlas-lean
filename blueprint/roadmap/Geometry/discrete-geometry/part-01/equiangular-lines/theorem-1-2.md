@@ -1,6 +1,6 @@
 # Equiangular lines with a fixed angle
 
-**Equiangular lines with a fixed angle.** Fix a real number $\alpha$ with $0 < \alpha < 1$, let
+Fix a real number $\alpha$ with $0 < \alpha < 1$, let
 $\lambda = (1 - \alpha)/(2\alpha)$ and let $k = k(\lambda)$ be the spectral radius order of
 $\lambda$. Let $N_\alpha(d)$ be the maximum number of equiangular lines in $\mathbb{R}^d$ with
 common angle $\arccos \alpha$. Then:

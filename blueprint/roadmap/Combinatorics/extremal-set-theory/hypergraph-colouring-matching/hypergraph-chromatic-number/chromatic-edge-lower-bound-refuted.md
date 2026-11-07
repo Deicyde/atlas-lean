@@ -1,6 +1,6 @@
 # Alon's refutation of Erdős Problem 832
 
-**Alon's refutation of Erdős Problem 832.** There is an integer $r \ge 3$ such that for
+There is an integer $r \ge 3$ such that for
 infinitely many $k$ there are an $n$ and an $r$-uniform hypergraph $H$ on the vertex set
 $\{0, \dots, n-1\}$ with chromatic number $k$ (it is $k$-colorable but not $(k-1)$-colorable)
 that either has fewer than $\binom{(r-1)(k-1)+1}{r}$ edges, or has exactly that many edges but is

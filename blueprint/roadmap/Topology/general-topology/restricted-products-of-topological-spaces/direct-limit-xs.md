@@ -1,6 +1,6 @@
 # Direct limit of the finite-support pieces
 
-**Direct limit of the finite-support pieces.** Let $(X_i)_{i \in \iota}$ be topological spaces
+Let $(X_i)_{i \in \iota}$ be topological spaces
 with subsets $U_i \subseteq X_i$, and for a finite set $S \subseteq \iota$ let $X_S$ be the set of
 tuples $x \in \prod_i X_i$ with $x_i \in U_i$ for all $i \notin S$, with the subspace topology of
 the product topology. The space $\varinjlim_S X_S$ is the direct limit of the $X_S$ over the

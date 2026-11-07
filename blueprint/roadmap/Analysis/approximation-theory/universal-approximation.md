@@ -1,6 +1,6 @@
 # Universal approximation theorem
 
-**Universal approximation theorem.** Let $n$ be a natural number, let $\mathbb{R}^n$ carry its
+Let $n$ be a natural number, let $\mathbb{R}^n$ carry its
 standard inner product $\langle \cdot, \cdot \rangle$, let $K \subseteq \mathbb{R}^n$ be compact,
 and let $\sigma : \mathbb{R} \to \mathbb{R}$ be continuous and not a polynomial, that is, there is
 no real polynomial $p$ with $\sigma(x) = p(x)$ for all real $x$. Then for every function

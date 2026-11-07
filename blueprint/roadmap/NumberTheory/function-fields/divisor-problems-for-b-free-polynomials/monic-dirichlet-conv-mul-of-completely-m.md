@@ -1,6 +1,6 @@
 # Dirichlet convolution of completely multiplicative functions at a product
 
-**Dirichlet convolution of completely multiplicative functions at a product.** Let $F$ be a
+Let $F$ be a
 field and let $\alpha, \beta : F[T] \to \mathbb{C}$ be completely multiplicative, that is,
 monoid homomorphisms from the multiplicative monoid of $F[T]$ to $\mathbb{C}$. Write
 $\gamma = \alpha * \beta$ for their Dirichlet convolution over monic divisors and $\mu$ for the

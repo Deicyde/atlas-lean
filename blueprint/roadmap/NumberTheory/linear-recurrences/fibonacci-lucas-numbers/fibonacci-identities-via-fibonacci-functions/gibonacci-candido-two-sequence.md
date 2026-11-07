@@ -1,6 +1,6 @@
 # Two-sequence Candido-type identity for gibonacci sequences
 
-**Two-sequence Candido-type identity for gibonacci sequences.** Let $G$ and $H$ be gibonacci
+Let $G$ and $H$ be gibonacci
 sequences, that is, functions $X : \mathbb{Z} \to \mathbb{R}$ with $X_{j+2} = X_{j+1} + X_j$
 for every integer $j$. Then for all integers $r$ and $k$,
 

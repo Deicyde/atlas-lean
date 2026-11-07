@@ -1,6 +1,6 @@
 # Exactness at the ray-element quotient (kernel form)
 
-**Exactness at the ray-element quotient (kernel form).** Let $\mathfrak m$ be a modulus of a
+Let $\mathfrak m$ be a modulus of a
 number field $K$. The kernel of the quotient-to-ray-class map, from the quotient of the ray
 elements of $\mathfrak m$ by the ray-one elements to the ray class group
 $\mathrm{Cl}_{\mathfrak m}$, equals the image of the map sending each unit

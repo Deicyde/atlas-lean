@@ -1,6 +1,6 @@
 # Congruence of products over a partition with multiplicities divisible by $p^v$
 
-**Congruence of products over a partition with multiplicities divisible by $p^v$.** Let $p$
+Let $p$
 be a prime, $A$ a commutative ring and $\mathfrak{a}$ a divided-power ideal of $A$. Let
 $f, g : \mathbb{N} \to A$ satisfy $f_n - g_n \in \mathfrak{a}$ for every $n \ge 1$. For a
 partition $\lambda = (\lambda_1, \dots, \lambda_k)$ of a natural number $m$, write

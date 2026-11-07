@@ -1,6 +1,6 @@
 # The zeroth elementary symmetric function of a monic polynomial
 
-**The zeroth elementary symmetric function of a monic polynomial.** For every monic
+For every monic
 polynomial $P$ over a commutative ring, $e_0(P) = 1$.
 
 ## Sources

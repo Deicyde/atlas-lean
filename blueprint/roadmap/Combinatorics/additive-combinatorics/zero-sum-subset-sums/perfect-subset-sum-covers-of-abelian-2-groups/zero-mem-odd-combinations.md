@@ -1,6 +1,6 @@
 # Zero is an odd combination
 
-**Zero is an odd combination.** For every finite subset $A$ of an abelian group $G$, $0$ lies
+For every finite subset $A$ of an abelian group $G$, $0$ lies
 in the set $\mathcal{T}(A)$ of odd combinations of $A$ (take every coefficient equal to $0$).
 
 ## Sources

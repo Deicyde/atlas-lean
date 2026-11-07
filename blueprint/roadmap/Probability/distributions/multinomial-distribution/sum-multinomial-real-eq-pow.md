@@ -1,3 +1,3 @@
 # Multinomial theorem
 
-**Multinomial theorem.** `∑ₓ P(x) = (∑ᵢ pᵢ) ^ N` for every real vector `p`.
+`∑ₓ P(x) = (∑ᵢ pᵢ) ^ N` for every real vector `p`.

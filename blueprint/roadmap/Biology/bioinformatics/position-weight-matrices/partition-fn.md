@@ -1,4 +1,4 @@
 # Column partition function of an energy matrix
 
-**Column partition function of an energy matrix.** The column partition function `Z = ∑_b q b e^{-λ ε b}` of energies `ε` at inverse
+The column partition function `Z = ∑_b q b e^{-λ ε b}` of energies `ε` at inverse
 temperature `λ`.

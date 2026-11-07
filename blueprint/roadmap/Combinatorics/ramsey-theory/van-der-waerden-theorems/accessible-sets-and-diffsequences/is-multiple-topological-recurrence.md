@@ -1,6 +1,6 @@
 # Sets of multiple topological recurrence
 
-**Sets of multiple topological recurrence.** A set $D$ of natural numbers is a set of multiple
+A set $D$ of natural numbers is a set of multiple
 topological recurrence when it is a set of $\ell$-topological recurrence for every natural number
 $\ell \ge 1$.
 

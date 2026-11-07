@@ -1,6 +1,6 @@
 # Gamma-positivity of the minuscule polynomials
 
-**Gamma-positivity of the minuscule polynomials.** For every natural number $n$ there are
+For every natural number $n$ there are
 non-negative integers $\gamma_{n,0}, \dots, \gamma_{n,\lfloor n/2 \rfloor}$ such that the type-A
 minuscule polynomial $N_n$ satisfies
 $N_n(x) = \sum_{k=0}^{\lfloor n/2 \rfloor} \gamma_{n,k}\, x^k (1 + x)^{n-2k}$.

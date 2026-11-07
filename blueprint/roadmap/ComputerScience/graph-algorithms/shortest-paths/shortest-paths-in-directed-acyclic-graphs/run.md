@@ -1,6 +1,6 @@
 # One-pass DAG shortest-path relaxation
 
-**One-pass DAG shortest-path relaxation.** Let $E$ be a list of integer-weighted directed
+Let $E$ be a list of integer-weighted directed
 edge occurrences on the vertices $\{0, \dots, n-1\}$, let $s$ be a source vertex, and let
 $\sigma$ be a topological order of the directed graph obtained from $E$ by forgetting weights.
 The relaxation starts from distance estimate $0$ at $s$, infinite estimates at every other

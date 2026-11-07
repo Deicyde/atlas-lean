@@ -1,6 +1,6 @@
 # Perfect covers with exactly one odd element
 
-**Perfect covers with exactly one odd element.** Let $H$ be an abelian group of order $2^m$,
+Let $H$ be an abelian group of order $2^m$,
 let $n \ge 1$ and let $G = H \oplus \mathbb{Z}_{2^n}$. Call an element of $G$ odd when its
 $\mathbb{Z}_{2^n}$-coordinate, taken as a representative in $\{0, 1, \dots, 2^n - 1\}$, is odd.
 Then the number of perfect covers of $G$ with exactly one odd element is

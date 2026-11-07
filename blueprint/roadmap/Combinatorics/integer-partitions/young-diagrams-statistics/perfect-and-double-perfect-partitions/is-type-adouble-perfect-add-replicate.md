@@ -1,6 +1,6 @@
 # Adding equal parts to a Type-A double-perfect partition
 
-**Adding equal parts to a Type-A double-perfect partition.** Let $r \ge 1$ and
+Let $r \ge 1$ and
 $n \ge 2(r+1)$ be integers, and let $\lambda$ be a Type-A double-perfect partition of $n$ of
 order $r$. Then for every natural number $m$, the partition obtained from $\lambda$ by adding $m$
 parts equal to $n - r$ is a Type-A double-perfect partition of $n + m(n - r)$ of order $r$.

@@ -1,6 +1,6 @@
 # Triangularization of a matrix with split characteristic polynomial
 
-**Triangularization of a matrix with split characteristic polynomial.** Let $K$ be a field, let
+Let $K$ be a field, let
 $n$ be a finite linearly ordered index set, and let $A$ be a square matrix over $K$ with rows and
 columns indexed by $n$ whose characteristic polynomial splits over $K$. Then there are an
 invertible matrix $P$ and a matrix $T$, both over $K$ and indexed by $n$, such that $T$ is upper

@@ -1,6 +1,6 @@
 # Surjective differential gives a submersion between finite-dimensional manifolds
 
-**Surjective differential gives a submersion between finite-dimensional manifolds.** Let
+Let
 $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let $n \in \mathbb{N} \cup \{\infty, \omega\}$ with
 $n \ge 1$, and let $M$ and $N$ be $C^n$ manifolds without boundary over $\mathbb{K}$ modelled on
 finite-dimensional spaces. If $f : M \to N$ is $C^n$ at every point of some neighbourhood of

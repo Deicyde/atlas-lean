@@ -1,6 +1,6 @@
 # Parikh image of a union of languages
 
-**Parikh image of a union of languages.** The Parikh image of a union is the union of the Parikh images.
+The Parikh image of a union is the union of the Parikh images.
 
 ## Sources
 

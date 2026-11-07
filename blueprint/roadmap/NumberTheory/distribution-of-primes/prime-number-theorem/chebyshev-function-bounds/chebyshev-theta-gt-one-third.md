@@ -1,6 +1,6 @@
 # Chebyshev's lower bound for the theta function
 
-**Chebyshev's lower bound for the theta function.** Let $\theta(x) = \sum_{p \le x} \log p$, the
+Let $\theta(x) = \sum_{p \le x} \log p$, the
 sum running over primes, be the first Chebyshev function. Then $\theta(x) > x/3$ for every real
 $x \ge 3$.
 

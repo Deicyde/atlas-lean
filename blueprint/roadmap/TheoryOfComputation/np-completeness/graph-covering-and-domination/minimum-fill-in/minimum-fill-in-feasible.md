@@ -1,6 +1,6 @@
 # Feasible MINIMUM FILL-IN instances
 
-**Feasible MINIMUM FILL-IN instances.** An instance $(n, E, K)$ of MINIMUM FILL-IN is
+An instance $(n, E, K)$ of MINIMUM FILL-IN is
 feasible when there are an ordering $\sigma$ of the vertices $0, \dots, n - 1$ (a list that
 contains each of them exactly once) and a list $A$ of pairs of natural numbers, with no repeated
 entries and at most $K$ entries, such that every pair $(u, v)$ in $A$ satisfies $u < n$, $v < n$

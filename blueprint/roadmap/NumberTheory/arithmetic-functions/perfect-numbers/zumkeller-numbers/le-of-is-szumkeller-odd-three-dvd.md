@@ -1,6 +1,6 @@
 # Lower bound for odd s-Zumkeller numbers divisible by 3
 
-**Lower bound for odd s-Zumkeller numbers divisible by 3.** Every odd s-Zumkeller number $n$
+Every odd s-Zumkeller number $n$
 divisible by $3$ satisfies
 $n \ge 12442607161209225 = (3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17 \cdot 19 \cdot 23)^2$.
 

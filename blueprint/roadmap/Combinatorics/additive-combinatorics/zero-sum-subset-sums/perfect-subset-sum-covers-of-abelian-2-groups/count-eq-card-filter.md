@@ -1,6 +1,6 @@
 # Perfect cover count as a finset cardinality
 
-**Perfect cover count as a finset cardinality.** For a finite abelian group $G$, the number
+For a finite abelian group $G$, the number
 $C(G)$ of perfect covers of $G$ equals the number of elements of the finite set of all subsets of
 $G$ that are perfect covers.
 

@@ -1,6 +1,6 @@
 # The Bala–Somos parity conjectures
 
-**The Bala–Somos parity conjectures.** For a natural number $k$ let $p(k)$ be the number of
+For a natural number $k$ let $p(k)$ be the number of
 partitions of $k$. For natural numbers $m$ and $N$ let
 $b_m(N) = \sum_{k=1}^{N} k^{2m+1} p(k) p(N-k)$ and $a(N) = \sum_{j=0}^{N} c(j)\, p(N-j)$, where
 $c(0) = 0$ and $c(j) = \sum_{d \mid j,\ d \text{ odd}} (-1)^{j/d - 1}$ for $j \ge 1$. Then for all

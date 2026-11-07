@@ -1,6 +1,6 @@
 # The Lehmer function $\kappa_r$
 
-**The Lehmer function $\kappa_r$.** For a list $t = (t_1, \dots, t_r)$ of real numbers,
+For a list $t = (t_1, \dots, t_r)$ of real numbers,
 
 $$\kappa_r(t_1, \dots, t_r) = \frac{t_1 \cdots t_r - 1}{(t_1 - 1) \cdots (t_r - 1)},$$
 

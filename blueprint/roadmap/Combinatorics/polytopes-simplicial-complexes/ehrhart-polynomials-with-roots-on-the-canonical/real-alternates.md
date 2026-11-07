@@ -1,6 +1,6 @@
 # Alternating roots of equal-degree real polynomials
 
-**Alternating roots of equal-degree real polynomials.** Let $f$ and $g$ be real polynomials.
+Let $f$ and $g$ be real polynomials.
 Their roots alternate when $f$ and $g$ are nonzero of the same degree $n$, the real roots of $f$,
 listed with multiplicity, are exactly $a_1 \le \dots \le a_n$, those of $g$ are exactly
 $b_1 \le \dots \le b_n$ (so all roots of $f$ and $g$ are real), and either

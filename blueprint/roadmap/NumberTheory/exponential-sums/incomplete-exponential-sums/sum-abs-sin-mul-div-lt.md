@@ -1,6 +1,6 @@
 # Bound for a weighted sum of absolute sines
 
-**Bound for a weighted sum of absolute sines.** Let $K$ be a positive integer, let $\xi$ be a
+Let $K$ be a positive integer, let $\xi$ be a
 real number, and let $\gamma$ be the Euler–Mascheroni constant. Then
 
 $$

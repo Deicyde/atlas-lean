@@ -1,6 +1,6 @@
 # Continuous Breusch function
 
-**Continuous Breusch function.** For real $x$, the continuous Breusch function is the
+For real $x$, the continuous Breusch function is the
 integer
 
 $$G(x) = \sum_{d \mid 210} \mu(d) \left( \lfloor 2100x/d \rfloor - \lfloor 1890x/d \rfloor -

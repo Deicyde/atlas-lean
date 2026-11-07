@@ -1,6 +1,6 @@
 # Choudhry's family (3.34) of sums of two nonzero squares
 
-**Choudhry's family (3.34) of sums of two nonzero squares.** For all nonzero integers $r$
+For all nonzero integers $r$
 and $s$, let $E = r^8 + 2 r^6 s^2 - 12 r^4 s^4 - 6 r^2 s^6 - s^8$,
 $T = r^{12} + 6 r^{10} s^2 + 87 r^8 s^4 + 108 r^6 s^6 + 55 r^4 s^8 + 14 r^2 s^{10} + s^{12}$ and
 $S = 5 r^6 + 3 r^4 s^2 + 3 r^2 s^4 + s^6$, and put $a = r^2 (r^2 + s^2) E^2 T$,

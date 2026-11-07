@@ -1,6 +1,6 @@
 # Fermat's congruence for a product of coprime moduli
 
-**Fermat's congruence for a product of coprime moduli.** Let $n$ and $m$ be coprime natural
+Let $n$ and $m$ be coprime natural
 numbers with $0 < n < m$. Since $\gcd(m - n, nm) = 1$, the residue of $m - n$ is invertible in
 $\mathbb{Z}/nm\mathbb{Z}$; write $u$ for its inverse. Then the equalities
 $a^{m-1} = (a^{m-n} - 1)\,u\,n + a^{m-n}$ and

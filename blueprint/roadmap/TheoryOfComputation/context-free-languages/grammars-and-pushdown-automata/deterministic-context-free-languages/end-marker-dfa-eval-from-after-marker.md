@@ -1,6 +1,6 @@
 # Encoding DFA after the end marker accepts only the empty input
 
-**Encoding DFA after the end marker accepts only the empty input.** After the end marker, the encoding DFA can only be in its
+After the end marker, the encoding DFA can only be in its
 accepting state on empty input.
 
 ## Sources

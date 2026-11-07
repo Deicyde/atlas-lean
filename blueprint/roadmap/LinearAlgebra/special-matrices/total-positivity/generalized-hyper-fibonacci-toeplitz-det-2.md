@@ -1,6 +1,6 @@
 # Eventual positivity of lower-order hyper-Fibonacci Toeplitz determinants
 
-**Eventual positivity of lower-order hyper-Fibonacci Toeplitz determinants.** Let $p, a, b$ be
+Let $p, a, b$ be
 integers with $p \ge 1$, $a \ge 0$ and $b > 0$, and let $W^{(r)}_{p,n}$ denote the generalized
 hyper-Fibonacci numbers. For natural numbers $r$, $m$ and $n$ write $T^{(r)}_{m,n}$ for the
 $m \times m$ Toeplitz matrix with entry $W^{(r)}_{p,n+i-j}$ in row $i$ and column $j$

@@ -1,6 +1,6 @@
 # An odd harmonic Catalan series over central binomial coefficients
 
-**An odd harmonic Catalan series over central binomial coefficients.** Let $m$ be a positive
+Let $m$ be a positive
 integer and $C_n$ the $n$th Catalan number, and write $H_n = \sum_{j=1}^{n} \frac{1}{j}$,
 $H^{(2)}_n = \sum_{j=1}^{n} \frac{1}{j^2}$, $O_n = \sum_{j=1}^{n} \frac{1}{2j - 1}$ and
 $O^{(2)}_n = \sum_{j=1}^{n} \frac{1}{(2j - 1)^2}$. Then

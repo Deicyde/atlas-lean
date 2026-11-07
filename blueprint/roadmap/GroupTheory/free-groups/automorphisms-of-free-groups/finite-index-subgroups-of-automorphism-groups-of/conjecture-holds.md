@@ -1,6 +1,6 @@
 # Finite-index subgroups of $\operatorname{Aut}(F_n)$ have Property FA for $n \ge 4$
 
-**Finite-index subgroups of $\operatorname{Aut}(F_n)$ have Property FA for $n \ge 4$.** For every
+For every
 natural number $n \ge 4$, every subgroup of finite index in the automorphism group
 $\operatorname{Aut}(F_n)$ of the free group $F_n$ on $n$ generators has Serre's Property FA.
 

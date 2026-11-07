@@ -1,6 +1,6 @@
 # Möbius expansion of weighted sums of a Dirichlet convolution
 
-**Möbius expansion of weighted sums of a Dirichlet convolution.** Let $w$, $u$ and $v$ be
+Let $w$, $u$ and $v$ be
 arithmetic functions with complex values, let $*$ denote Dirichlet convolution, let $\mu$ be the
 Möbius function and put $g = w * \mu$. Then for every real $x$,
 

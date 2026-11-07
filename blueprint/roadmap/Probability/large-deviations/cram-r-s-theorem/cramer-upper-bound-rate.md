@@ -1,6 +1,6 @@
 # Fixed-direction Chernoff bound, rate form
 
-**Fixed-direction Chernoff bound, rate form.** For a fixed `ξ` and
+For a fixed `ξ` and
 `s = inf_{x ∈ F} (⟪ξ, x⟫ - Λ(ξ))`, the `n`-th root of `μₙ(F)` has limsup at most
 `exp(-s)`. Assume measurable i.i.d. coordinates under a probability measure,
 measurable `F`, exponential integrability at `ξ`, and a bounded-below rate image

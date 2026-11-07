@@ -1,6 +1,6 @@
 # Geometric negative tail of the Zeckendorf variation densities
 
-**Geometric negative tail of the Zeckendorf variation densities.** For $n \in \mathbb{N}$ let
+For $n \in \mathbb{N}$ let
 $s(n)$ be the number of terms in the Zeckendorf representation of $n$, and let $\varphi$ be the
 golden ratio. Let $r \in \mathbb{N}$ and let $\mu : \mathbb{Z} \to \mathbb{R}$ be such that for
 every $d \in \mathbb{Z}$ the set $\{n \in \mathbb{N} : s(n + r) - s(n) = d\}$ has natural density

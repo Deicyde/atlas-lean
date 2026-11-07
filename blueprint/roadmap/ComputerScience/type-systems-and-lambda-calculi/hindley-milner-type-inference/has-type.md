@@ -1,6 +1,6 @@
 # Hindley–Milner typing
 
-**Hindley–Milner typing.** The syntax-directed Damas–Milner typing relation
+The syntax-directed Damas–Milner typing relation
 $\Gamma \vdash e : \tau$ between a context $\Gamma$, an expression $e$ and a monotype $\tau$ is the
 least relation closed under the following rules, where $\Gamma, x : \sigma$ is $\Gamma$ extended
 by the binding $x : \sigma$ in front.

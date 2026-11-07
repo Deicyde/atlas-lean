@@ -1,6 +1,6 @@
 # Few unit terms force a Jacobi-weighted zero sum
 
-**Few unit terms force a Jacobi-weighted zero sum.** Let $n$ be an odd squarefree natural
+Let $n$ be an odd squarefree natural
 number, $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$, and $S(n)$ the set of units $u$ of $\mathbb{Z}_n$
 whose Jacobi symbol $(a/n)$ is $1$, where $0 \le a < n$ is the representative of $u$. Let
 $(x_1, \dots, x_k)$ be a sequence in $\mathbb{Z}_n$, and call $x_i$ coprime to a prime $p$ when its

@@ -1,6 +1,6 @@
 # Configurations on the evaluation path of Landin's knot
 
-**Configurations on the evaluation path of Landin's knot.** Let $K$ be Landin's knot,
+Let $K$ be Landin's knot,
 $\iota = \lambda x{:}\mathrm{Unit}.\,x$, $b_0 = \lambda x{:}\mathrm{Unit}.\,(!\ell_0)\,x$ with
 $\ell_0$ the store location $0$, $a = (!\ell_0)\ \mathrm{unit}$, $b = b_0\ \mathrm{unit}$,
 $c_1$ the term $K$ with its argument $\mathrm{ref}\ \iota$ replaced by $\ell_0$,

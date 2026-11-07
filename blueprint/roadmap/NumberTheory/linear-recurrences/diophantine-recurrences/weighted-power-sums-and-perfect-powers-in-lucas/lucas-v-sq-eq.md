@@ -1,6 +1,6 @@
 # Square of the companion Lucas sequence
 
-**Square of the companion Lucas sequence.** Let $x$ and $y \neq 0$ be integers and let
+Let $x$ and $y \neq 0$ be integers and let
 $(U_n)$ and $(V_n)$ be the Lucas sequences with parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$,
 $V_0 = 2$, $V_1 = x$ and $W_{n+2} = x W_{n+1} - y W_n$ for $W = U, V$. Then for every natural
 number $n$, $V_n^2 = (x^2 - 4y) U_n^2 + 4 y^n$.

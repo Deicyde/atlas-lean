@@ -1,6 +1,6 @@
 # Beta and Gamma values of the real Eisenstein period
 
-**Beta and Gamma values of the real Eisenstein period.** The real number
+The real number
 $\varpi_1 = \int_0^1 (1 - t^3)^{-2/3}\,dt$ satisfies
 $\varpi_1 = \frac13 B(\frac13, \frac13) = \frac{\Gamma(1/3)^3}{2\pi\sqrt3}
 = \frac{2^{1/3}}{3\sqrt3} B(\frac16, \frac12)$, where $B$ is the Beta function.

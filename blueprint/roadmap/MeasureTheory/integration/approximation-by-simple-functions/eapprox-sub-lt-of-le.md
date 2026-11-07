@@ -1,6 +1,5 @@
 # The standard simple approximations converge uniformly where the function is bounded
 
-**The standard simple approximations converge uniformly where the function is bounded.**
 Let $\alpha$ be a measurable space and $f : \alpha \to [0, \infty]$ a measurable function. Let
 $r_0, r_1, \ldots$ be the fixed enumeration of $\mathbb{Q}$ by natural-number codes ($r_k = 0$ when
 $k$ codes no rational), put $q_k = \max(r_k, 0)$, and let

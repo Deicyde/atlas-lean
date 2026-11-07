@@ -1,6 +1,6 @@
 # Admixture graph
 
-**Admixture graph.** An admixture graph on the nodes `V` (Patterson et al. 2012): a rooted directed acyclic
+An admixture graph on the nodes `V` (Patterson et al. 2012): a rooted directed acyclic
 graph in which every non-root node has one or two parents, with admixture proportions.
 
 * `parents X` are the parents of `X`, the root has none, every other node has one or two;

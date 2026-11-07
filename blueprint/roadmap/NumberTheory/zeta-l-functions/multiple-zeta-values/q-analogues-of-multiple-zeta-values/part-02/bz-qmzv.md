@@ -1,6 +1,6 @@
 # Bradley–Zhao q-multiple zeta values
 
-**Bradley–Zhao q-multiple zeta values.** For an index $k = (k_1, \dots, k_r)$ of natural
+For an index $k = (k_1, \dots, k_r)$ of natural
 numbers, the Bradley–Zhao q-multiple zeta value is the general qMZV
 $\zeta_q^{BZ}(k) = \zeta_q(k_1, \dots, k_r; X^{k_1 - 1}, \dots, X^{k_r - 1})$, a formal power
 series in $q$ over $\mathbb{Q}$, where $k_j - 1$ is truncated at $0$. For an admissible index

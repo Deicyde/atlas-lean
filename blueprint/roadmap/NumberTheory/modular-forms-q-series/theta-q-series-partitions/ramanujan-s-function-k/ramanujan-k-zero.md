@@ -1,6 +1,6 @@
 # Ramanujan's function $k$ vanishes at $0$
 
-**Ramanujan's function $k$ vanishes at $0$.** Ramanujan's function satisfies $k(0) = 0$.
+Ramanujan's function satisfies $k(0) = 0$.
 
 ## Sources
 

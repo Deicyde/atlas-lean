@@ -1,6 +1,6 @@
 # Jacobi's formula
 
-**Jacobi's formula.** Let $n$ be a finite type, and let $A$ be a curve
+Let $n$ be a finite type, and let $A$ be a curve
 $\mathbb{R} \to \mathbb{R}^{n \times n}$ of square real matrices with rows and columns indexed
 by $n$. Suppose $A$ is differentiable at $t \in \mathbb{R}$. Then the derivative of
 $s \mapsto \det A(s)$ at $t$ is $\operatorname{tr}\bigl(\operatorname{adj}(A(t))\, A'(t)\bigr)$,

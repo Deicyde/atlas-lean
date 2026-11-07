@@ -1,6 +1,6 @@
 # Block index of a list of pairs
 
-**Block index of a list of pairs.** The block index of a list
+The block index of a list
 $[(a_1, b_1), \dots, (a_r, b_r)]$ of pairs of natural numbers is the index
 $(a_1 + 1, \{1\}^{b_1 - 1}, \dots, a_r + 1, \{1\}^{b_r - 1})$, where $\{1\}^n$ stands for $n$
 consecutive entries equal to $1$ and $b_j - 1$ is truncated at $0$.

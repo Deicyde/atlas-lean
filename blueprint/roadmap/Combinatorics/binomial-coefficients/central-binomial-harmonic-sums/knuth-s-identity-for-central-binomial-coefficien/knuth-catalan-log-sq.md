@@ -1,6 +1,6 @@
 # Knuth's identity for central binomial coefficients and harmonic numbers
 
-**Knuth's identity for central binomial coefficients and harmonic numbers.** Let $x$ be a real
+Let $x$ be a real
 number with $|x| \le 1/4$, and let $C_n$ denote the $n$-th Catalan number. Then the series
 
 $$\sum_{n=1}^{\infty} \binom{2n}{n}

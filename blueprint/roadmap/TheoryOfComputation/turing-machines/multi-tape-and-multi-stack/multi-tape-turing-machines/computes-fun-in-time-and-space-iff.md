@@ -1,6 +1,6 @@
 # Relabelling preserves computing a function within time and space bounds
 
-**Relabelling preserves computing a function within time and space bounds.** Let $M$ and $M'$
+Let $M$ and $M'$
 be deterministic machines with $k$ work tapes over the same alphabet such that $M'$ simulates $M$
 up to a state relabelling $f$. Let $e_{\mathrm{in}}$ and $e_{\mathrm{out}}$ be injective encodings
 of types $\alpha$ and $\beta$ as words over the alphabet, $g : \alpha \to \beta$ a function and

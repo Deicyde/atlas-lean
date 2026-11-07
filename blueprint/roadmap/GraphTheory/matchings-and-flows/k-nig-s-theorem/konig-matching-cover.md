@@ -1,6 +1,6 @@
 # Kőnig's theorem for finite bipartite graphs
 
-**Kőnig's theorem for finite bipartite graphs.** Every bipartite simple graph $G$ on a finite vertex
+Every bipartite simple graph $G$ on a finite vertex
 type $V$ has a matching $M$ and a vertex cover $C \subseteq V$ such that the number of edges of $M$
 equals the number of vertices in $C$.
 

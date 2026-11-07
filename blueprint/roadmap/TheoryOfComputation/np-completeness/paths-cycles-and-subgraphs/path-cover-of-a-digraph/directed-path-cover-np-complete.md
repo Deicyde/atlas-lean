@@ -1,6 +1,6 @@
 # DIRECTED PATH COVER is NP-complete
 
-**DIRECTED PATH COVER is NP-complete.** The decision problem DIRECTED PATH COVER is in NP,
+The decision problem DIRECTED PATH COVER is in NP,
 and every decision problem in NP has a polynomial-time many-one reduction to
 DIRECTED PATH COVER.
 

@@ -1,6 +1,6 @@
 # Staver's identity for reciprocal binomial sums
 
-**Staver's identity for reciprocal binomial sums.** For every natural number $n$, the
+For every natural number $n$, the
 following identity between rational numbers holds:
 
 $$\sum_{k=0}^{n} \binom{n}{k}^{-1} = \frac{n+1}{2^{n+1}} \sum_{k=1}^{n+1} \frac{2^k}{k}.$$

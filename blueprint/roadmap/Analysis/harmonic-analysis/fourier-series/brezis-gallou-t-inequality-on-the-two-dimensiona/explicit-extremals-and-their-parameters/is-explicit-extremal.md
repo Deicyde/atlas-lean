@@ -1,6 +1,6 @@
 # Explicit extremals
 
-**Explicit extremals.** A continuous real function $u$ on the torus
+A continuous real function $u$ on the torus
 $\mathbb{T} = (\mathbb{R}/2\pi\mathbb{Z})^2$ is an explicit extremal when there are a
 kernel-admissible extremal parameter $p$ and a real number $a \neq 0$ such that the extremal
 coefficients $c_p(k)$ are summable over $k \in \mathbb{Z}^2$, the Fourier coefficient

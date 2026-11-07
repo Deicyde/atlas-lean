@@ -1,6 +1,6 @@
 # The literal count is at most the code length
 
-**The literal count is at most the code length.** For every CNF formula $\varphi$, the sum
+For every CNF formula $\varphi$, the sum
 over the clauses of $\varphi$ of their lengths (the total number of literals of $\varphi$) is at
 most the length of the length-prefixed binary code of $\varphi$.
 

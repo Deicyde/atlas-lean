@@ -1,6 +1,6 @@
 # Strict sublevel sets are finite
 
-**Strict sublevel sets are finite.** For a nonnegative discrete spectrum with eigenvalues
+For a nonnegative discrete spectrum with eigenvalues
 $E_0 \le E_1 \le \cdots$ and every real number $\Lambda$, the strict sublevel set
 $\{j \in \mathbb{N} : E_j < \Lambda\}$ is finite.
 

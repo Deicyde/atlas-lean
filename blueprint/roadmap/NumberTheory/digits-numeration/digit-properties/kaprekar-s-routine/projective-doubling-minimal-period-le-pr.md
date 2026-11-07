@@ -1,6 +1,6 @@
 # Cycle lengths of doubling on pairs of projective classes
 
-**Cycle lengths of doubling on pairs of projective classes.** Let $B > 3$ be odd. For
+Let $B > 3$ be odd. For
 $x \in \mathbb{Z}/B\mathbb{Z}$ write $[x] = \{x, -x\}$ and $2C = \{2c : c \in C\}$ for a subset
 $C$ of $\mathbb{Z}/B\mathbb{Z}$, and let $D$ be the doubling map sending a set $T$ of subsets of
 $\mathbb{Z}/B\mathbb{Z}$ to $\{2C : C \in T\}$. If $S = \{[r], [s]\}$ for nonzero

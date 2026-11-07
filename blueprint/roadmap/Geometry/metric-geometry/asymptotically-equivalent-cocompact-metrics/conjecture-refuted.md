@@ -1,6 +1,6 @@
 # Negative answer to the cocompact asymptotic-metrics question
 
-**Negative answer to the cocompact asymptotic-metrics question.** The conjecture is false: there
+The conjecture is false: there
 exist a group $\Gamma$, a complete metric space $(M, d_1)$ on which $\Gamma$ acts, and a cocompact
 asymptotically equivalent length-space pair on $M$ with second metric $d_2$, such that for every
 real number $C$ there are points $x, y \in M$ with $|d_1(x, y) - d_2(x, y)| > C$.

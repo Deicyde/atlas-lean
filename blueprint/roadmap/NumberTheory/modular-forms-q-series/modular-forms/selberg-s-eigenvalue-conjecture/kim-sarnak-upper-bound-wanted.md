@@ -1,6 +1,6 @@
 # Kim–Sarnak bound on the spectral-gap constant
 
-**Kim–Sarnak bound on the spectral-gap constant.** Selberg's congruence spectral-gap constant
+Selberg's congruence spectral-gap constant
 $C_{61}$ is at most $7/64$.
 
 ## Sources

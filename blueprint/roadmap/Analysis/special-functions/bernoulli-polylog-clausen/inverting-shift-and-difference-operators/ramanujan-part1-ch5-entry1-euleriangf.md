@@ -1,6 +1,6 @@
 # Ramanujan's operator identity for $(1 - 2^n) B_n / n!$
 
-**Ramanujan's operator identity for $(1 - 2^n) B_n / n!$.** For a sequence
+For a sequence
 $a = (a_n)_{n \ge 0}$ of real numbers, a real number $h$ and a real polynomial $\varphi$ of
 degree $d$ (with $d = 0$ for $\varphi = 0$), let
 $S_a(h, \varphi) = \sum_{n=0}^{d} a_n h^n \varphi^{(n)}$. Let $c_n = (1 - 2^n) B_n / n!$, where

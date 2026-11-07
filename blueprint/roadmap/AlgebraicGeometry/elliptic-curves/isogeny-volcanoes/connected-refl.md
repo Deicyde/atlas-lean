@@ -1,4 +1,4 @@
 # Every vertex is connected to itself
 
-**Every vertex is connected to itself.** In a multigraph $G$, every vertex $v$ is connected to
+In a multigraph $G$, every vertex $v$ is connected to
 $v$.

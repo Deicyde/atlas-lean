@@ -1,6 +1,6 @@
 # Simplified P&R moves decrease the number of objects
 
-**Simplified P&R moves decrease the number of objects.** For all quadruples $(a, b, c, d)$
+For all quadruples $(a, b, c, d)$
 and $(a', b', c', d')$ of natural numbers, if $(a', b', c', d')$ is an option of $(a, b, c, d)$
 in simplified Princess and the Roses, then $a' + b' + c' + d' < a + b + c + d$.
 

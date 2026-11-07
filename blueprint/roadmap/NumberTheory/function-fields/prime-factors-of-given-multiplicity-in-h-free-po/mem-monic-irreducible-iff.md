@@ -1,6 +1,6 @@
 # Membership in the set of monic irreducible polynomials
 
-**Membership in the set of monic irreducible polynomials.** Let $F$ be a field. A polynomial $P$
+Let $F$ be a field. A polynomial $P$
 over $F$ lies in the set $\mathcal{P}$ of monic irreducible polynomials over $F$ if and only if
 $P$ is monic and irreducible.
 

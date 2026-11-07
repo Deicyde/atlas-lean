@@ -1,6 +1,6 @@
 # Existence for the Sturm–Liouville Dirichlet problem on the closed unit interval
 
-**Existence for the Sturm–Liouville Dirichlet problem on the closed unit interval.** Let $V$
+Let $V$
 and $f$ be continuous real functions on $[0, 1]$ with $V \ge 0$. Then there is a function
 $u \colon \mathbb{R} \to \mathbb{R}$ that is $C^2$ on $[0, 1]$, satisfies
 $-u''(x) + V(x)\,u(x) = f(x)$ for every $x \in [0, 1]$, with the second derivative taken within

@@ -1,6 +1,6 @@
 # Intersecting families
 
-**Intersecting families.** Let $F$ be a finite family of finite subsets of a type $\alpha$.
+Let $F$ be a finite family of finite subsets of a type $\alpha$.
 Then $F$ is intersecting when every two distinct members meet: for all $A, B \in F$ with
 $A \neq B$, the intersection $A \cap B$ is nonempty.
 

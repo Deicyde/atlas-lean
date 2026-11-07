@@ -1,6 +1,6 @@
 # Analytic core of the Lindeberg–Feller theorem
 
-**Analytic core of the Lindeberg–Feller theorem.** Let $\mu$ be a probability measure on
+Let $\mu$ be a probability measure on
 $\Omega$ and let $X_{n,k}$ ($n \in \mathbb{N}$, $0 \le k < n$) be real random variables on
 $\Omega$ such that each $X_{n,k}$ has mean $0$ and each $X_{n,k}^2$ is integrable (expectations
 are taken under $\mu$). Suppose that for some $\sigma > 0$ the row variances

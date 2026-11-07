@@ -1,6 +1,6 @@
 # Integer solutions of $u^3 - d v^3 = 1$ for $d \in \{4, 18, 36\}$
 
-**Integer solutions of $u^3 - d v^3 = 1$ for $d \in \{4, 18, 36\}$.** Let $d$ be one of the
+Let $d$ be one of the
 integers $4$, $18$, $36$. For all integers $u$ and $v$, $u^3 - d v^3 = 1$ if and only if
 $(u, v) = (1, 0)$.
 

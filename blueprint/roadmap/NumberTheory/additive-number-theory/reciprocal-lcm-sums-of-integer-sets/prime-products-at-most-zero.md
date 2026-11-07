@@ -1,6 +1,6 @@
 # At most zero primes means exactly zero primes
 
-**At most zero primes means exactly zero primes.** For every set $\mathcal{P}$ of natural
+For every set $\mathcal{P}$ of natural
 numbers, $\mathcal{P}^{[\le 0]} = \mathcal{P}^{[0]}$, where $\mathcal{P}^{[\le k]}$ and
 $\mathcal{P}^{[k]}$ are the products of at most, respectively exactly, $k$ distinct primes from
 $\mathcal{P}$.

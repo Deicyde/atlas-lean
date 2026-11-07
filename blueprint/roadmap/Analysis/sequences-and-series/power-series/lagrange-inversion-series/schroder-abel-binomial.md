@@ -1,6 +1,6 @@
 # Abel's binomial identity
 
-**Abel's binomial identity.** For a complex number $w$, let $A_0(x) = 1$ and
+For a complex number $w$, let $A_0(x) = 1$ and
 $A_j(x) = x (x + j w)^{j-1}$ for $j \ge 1$. Then for all complex numbers $x$, $y$ and every
 natural number $n$,
 

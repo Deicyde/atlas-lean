@@ -1,6 +1,6 @@
 # Computing the finite residue map from a representation
 
-**Computing the finite residue map from a representation.** Let $K$ be a number field and
+Let $K$ be a number field and
 $\mathfrak m$ a modulus of $K$ with finite part $\mathfrak m_0$. Let $x$ be a ray element of
 $\mathfrak m$, and let $a, b \in \mathcal O_K$ have residue classes $\bar a, \bar b$ that are
 units of $\mathcal O_K / \mathfrak m_0$ and satisfy $a / b = x$ in $K$. Then the finite residue

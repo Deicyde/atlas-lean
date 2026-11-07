@@ -1,6 +1,6 @@
 # The empty position is reduced
 
-**The empty position is reduced.** For every finite set $A$ of natural numbers and every
+For every finite set $A$ of natural numbers and every
 $n$, the position of Slow $A$-Nim on $n$ stacks in which every stack is empty is reduced.
 
 ## Sources

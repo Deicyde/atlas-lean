@@ -1,6 +1,6 @@
 # A congruence modulo 6 for 3-regular tripartitions
 
-**A congruence modulo 6 for 3-regular tripartitions.** Let $T_3(m)$ be the number of
+Let $T_3(m)$ be the number of
 $3$-regular tripartitions of $m$. For every natural number $n$, $6 \mid T_3(6n + 4)$.
 
 ## Sources

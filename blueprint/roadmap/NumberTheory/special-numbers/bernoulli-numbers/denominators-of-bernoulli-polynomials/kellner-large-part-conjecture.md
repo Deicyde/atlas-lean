@@ -1,6 +1,6 @@
 # Kellner's large-part conjecture
 
-**Kellner's large-part conjecture.** For a natural number $n$, let $\mathbb{D}^+_n$ be the
+For a natural number $n$, let $\mathbb{D}^+_n$ be the
 product of the primes $p > \sqrt{n}$ with $s_p(n) \ge p$, where $s_p(n)$ is the sum of the
 base-$p$ digits of $n$. This definition is the proposition that $\mathbb{D}^+_n > 1$ for every
 natural number $n > 192$.

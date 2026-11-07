@@ -1,6 +1,6 @@
 # Greenstreet's identity
 
-**Greenstreet's identity.** For every natural number $N$,
+For every natural number $N$,
 
 $$\sum_{k=1}^{N} (-1)^k \binom{N}{k} 2^{N-k} k^2 = N^2 - 2N.$$
 

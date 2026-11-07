@@ -1,6 +1,6 @@
 # Some admissible bag weighs at most the capacity-3 optimal time
 
-**Some admissible bag weighs at most the capacity-3 optimal time.** For every natural number
+For every natural number
 $n$, some admissible bag $F$ for $n$ people has weight $w(F)$ at most the capacity-3 optimal
 crossing time $T_3(n)$.
 

@@ -1,6 +1,6 @@
 # Ramified bound on prime divisors of $x^p - 1$ for prime $p$
 
-**Ramified bound on prime divisors of $x^p - 1$ for prime $p$.** The `p`-ramified bound (Theorem 2 for prime `n = p`). For a prime `p`, `x > 1` and
+The `p`-ramified bound (Theorem 2 for prime `n = p`). For a prime `p`, `x > 1` and
 `ω_p = ω(x^p - 1)`, let `r_{i,0}` and `r_{j,1}` enumerate the primes `≢ 1` and `≡ 1 (mod p)`
 (`Nat.nth`, `0`-indexed here), `p = r_{b,0}`, `R^0_k = ∏_{i < k} r_{i,0}` and
 `R^1_k = ∏_{j < ω_p - k} r_{j,1}`. The source's minima over `k ∈ [0, k') ∪ [k', ω_p)` (with

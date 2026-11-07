@@ -1,6 +1,6 @@
 # Convergence of Ramanujan's product series in a sector
 
-**Convergence of Ramanujan's product series in a sector.** Let $a, b, x \in \mathbb{C}$ with
+Let $a, b, x \in \mathbb{C}$ with
 $b \neq 0$ and let $0 < \varepsilon < \pi$. Then there is a real number $R$ such that for every
 complex $z$ with $|(z + a)/b| \ge R$ and $-\pi + \varepsilon \le \arg((z + a)/b) \le
 \pi - \varepsilon$, the series

@@ -1,6 +1,6 @@
 # Counting tuples up to rotation and left multiplication
 
-**Counting tuples up to rotation and left multiplication.** Let $G$ be a finite group and let
+Let $G$ be a finite group and let
 $n \ge 1$. Let $C_n \times G$ act on $G^n$, the cyclic group $C_n$ rotating tuples and $h \in G$
 multiplying every entry on the left, so that the orbit of $x = (x_0, \dots, x_{n-1})$ is the set
 of tuples $(h x_m, h x_{m+1}, \dots, h x_{m+n-1})$, indices taken modulo $n$, for $m \in \mathbb{N}$

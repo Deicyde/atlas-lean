@@ -1,6 +1,6 @@
 # $D$-Carmichael numbers are not prime
 
-**$D$-Carmichael numbers are not prime.** For every integer $D$ and every natural number $n$,
+For every integer $D$ and every natural number $n$,
 if $n$ is a $D$-Carmichael number, then $n$ is not prime.
 
 ## Sources

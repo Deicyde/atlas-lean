@@ -1,6 +1,6 @@
 # Cycle weight
 
-**Cycle weight.** Let $P$ be an irreducible stochastic matrix on the states
+Let $P$ be an irreducible stochastic matrix on the states
 $\{0, \dots, M\}$ and fix a reference state $i_0$. The cycle weight of a state $j$ relative to
 $i_0$ is the product of the ratios $P(x, y) / P(y, x)$ over consecutive states $x, y$ along a
 path (a finite list of states) from $i_0$ to $j$ whose product of transition probabilities

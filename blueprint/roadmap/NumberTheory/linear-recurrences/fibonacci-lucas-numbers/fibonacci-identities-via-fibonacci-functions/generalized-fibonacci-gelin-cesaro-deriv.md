@@ -1,6 +1,6 @@
 # Derivative form of the Gelin–Cesàro identity for generalized Fibonacci sequences
 
-**Derivative form of the Gelin–Cesàro identity for generalized Fibonacci sequences.** Let
+Let
 $p$ be a real number, let $W : \mathbb{Z} \to \mathbb{R}$ satisfy $W_{j+2} = p W_{j+1} + W_j$
 for every integer $j$, and put $\gamma_W = (p W_0 W_1 + W_0^2 - W_1^2)(p^2 - 1)$. Then for every
 integer $k$,

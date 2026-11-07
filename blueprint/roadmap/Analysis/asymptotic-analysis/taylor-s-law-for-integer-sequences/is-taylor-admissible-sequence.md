@@ -1,6 +1,6 @@
 # Admissible sequences for Taylor's law
 
-**Admissible sequences for Taylor's law.** A sequence $a : \mathbb{N} \to \mathbb{N}$, indexed
+A sequence $a : \mathbb{N} \to \mathbb{N}$, indexed
 from $1$ (its value at $0$ is ignored), is admissible when $a(n) > 0$ for every $n \ge 1$ and
 there is $n_0 \ge 1$ such that $a(n) < a(n + 1)$ for every $n \ge n_0$.
 

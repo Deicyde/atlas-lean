@@ -1,3 +1,3 @@
 # Double coefficients of a diagonal Laurent series
 
-**Double coefficients of a diagonal Laurent series.** Both coefficients of a diagonal Laurent series, exposing its cutoff and diagonal equation.
+Both coefficients of a diagonal Laurent series, exposing its cutoff and diagonal equation.

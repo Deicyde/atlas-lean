@@ -1,6 +1,6 @@
 # A convolution lemma for modified degenerate Bernoulli polynomials
 
-**A convolution lemma for modified degenerate Bernoulli polynomials.** Let $m \ge 2$, let
+Let $m \ge 2$, let
 $\lambda$ be a complex number with $\lambda \ne 0$ and $\lambda \ne -1$, let $s_1, \ldots, s_m$ be
 nonnegative integers with $S = s_1 + \cdots + s_m$, and let $x_1, \ldots, x_m$ be complex numbers.
 Writing $\mathfrak{B}_{n,\lambda}(x)$ for the modified degenerate Bernoulli polynomials,

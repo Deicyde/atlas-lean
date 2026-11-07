@@ -1,6 +1,6 @@
 # Lower half-space
 
-**Lower half-space.** For a unit vector $\xi \in \mathbb{R}^d$ and $t \in \mathbb{R}$, the
+For a unit vector $\xi \in \mathbb{R}^d$ and $t \in \mathbb{R}$, the
 closed lower half-space is $H^-(\xi) = \{p \in \mathbb{R}^d : \xi \cdot p \le t\}$.
 
 ## Sources

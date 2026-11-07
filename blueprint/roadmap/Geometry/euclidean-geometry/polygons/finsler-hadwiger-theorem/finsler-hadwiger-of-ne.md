@@ -1,6 +1,6 @@
 # Finsler–Hadwiger theorem for distinct squares
 
-**Finsler–Hadwiger theorem for distinct squares.** Let $A, B, C, D, E, F, G$ be points of
+Let $A, B, C, D, E, F, G$ be points of
 the Euclidean plane $\mathbb{R}^2$ with $B \ne E$, and let $\rho(x, y) = (-y, x)$ be the
 counterclockwise rotation by $90^\circ$. Suppose that $ABCD$ and $AEFG$ are squares sharing the
 vertex $A$, in the sense that $D - A = \rho(B - A)$, $C = B + D - A$, $G - A = \rho(E - A)$ and

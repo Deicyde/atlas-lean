@@ -1,6 +1,6 @@
 # ACHROMATIC NUMBER is NP-complete
 
-**ACHROMATIC NUMBER is NP-complete.** The ACHROMATIC NUMBER decision problem belongs to NP, and
+The ACHROMATIC NUMBER decision problem belongs to NP, and
 every decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

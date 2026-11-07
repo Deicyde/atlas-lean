@@ -1,6 +1,6 @@
 # Nonnegativity on a shadow Markoff tree is governed by finitely many points
 
-**Nonnegativity on a shadow Markoff tree is governed by finitely many points.** There is a
+There is a
 finite set $V \subseteq \mathbb{Q}^3$ such that for every
 $v = (\alpha, \beta, \gamma) \in \mathbb{Z}^3$ the following are equivalent: every state $(x, y)$
 of the shadow Markoff tree of $v$, the tree of the initial triple

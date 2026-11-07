@@ -1,6 +1,6 @@
 # Domination signature
 
-**Domination signature.** Let $R$ be a simple graph on a vertex set $V$ (the row). A map
+Let $R$ be a simple graph on a vertex set $V$ (the row). A map
 $\sigma$ assigning to each vertex of $V$ a domination state (uncovered, covered or occupied) is a
 signature for $R$ if no uncovered vertex is adjacent in $R$ to an occupied vertex: for all
 vertices $i, j$ adjacent in $R$, it is not the case that $\sigma(i)$ is uncovered and $\sigma(j)$

@@ -1,6 +1,6 @@
 # Common lifts of two points with dependent gradients
 
-**Common lifts of two points with dependent gradients.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $f \in \mathbb{Z}[x, y]$ have partial derivatives $f_x$ and $f_y$, and let $(r_1, s_1)$ and
 $(r_2, s_2)$ be pairs of integers in $\{0, \dots, p - 1\}$ with $p \mid f(r_i, s_i)$ for
 $i = 1, 2$. Write $a_i = f_x(r_i, s_i)$, $b_i = f_y(r_i, s_i)$ and $c_i = f(r_i, s_i)/p$.

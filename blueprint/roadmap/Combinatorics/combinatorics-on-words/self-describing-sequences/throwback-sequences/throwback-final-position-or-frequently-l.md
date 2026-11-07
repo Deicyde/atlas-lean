@@ -1,6 +1,6 @@
 # Each term eventually settles or leads infinitely often
 
-**Each term eventually settles or leads infinitely often.** Let $X = (x_0, x_1, \dots)$ be a
+Let $X = (x_0, x_1, \dots)$ be a
 sequence of positive integers, with positions numbered from $0$, the leader being at position
 $0$. Track the terms of $X$ by their original indices: start from the arrangement
 $(0, 1, 2, \dots)$ and apply the throwback repeatedly, where the leader, with original index

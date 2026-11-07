@@ -1,6 +1,6 @@
 # Eberlein–Šmulian theorem
 
-**Eberlein–Šmulian theorem.** Let $E$ be a Banach space over $\mathbb{K} = \mathbb{R}$ or
+Let $E$ be a Banach space over $\mathbb{K} = \mathbb{R}$ or
 $\mathbb{C}$. A subset of $E$ is compact in the weak topology if and only if it is sequentially
 compact in the weak topology, that is, every sequence in it has a subsequence that converges
 weakly to a point of the subset.

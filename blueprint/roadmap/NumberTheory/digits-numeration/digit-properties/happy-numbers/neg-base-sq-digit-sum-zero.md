@@ -1,6 +1,6 @@
 # The digit-square sum of zero
 
-**The digit-square sum of zero.** For every integer $b$, the base-$b$ digit-square sum $S_{2,b}$
+For every integer $b$, the base-$b$ digit-square sum $S_{2,b}$
 satisfies $S_{2,b}(0) = 0$.
 
 ## Sources

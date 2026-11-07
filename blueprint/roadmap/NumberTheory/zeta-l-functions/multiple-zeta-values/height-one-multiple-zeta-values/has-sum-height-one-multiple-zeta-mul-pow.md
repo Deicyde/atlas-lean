@@ -1,6 +1,6 @@
 # Expansion of the multiple Hurwitz zeta function in height one multiple zeta values
 
-**Expansion of the multiple Hurwitz zeta function in height one multiple zeta values.** Let
+Let
 $r$ and $s$ be complex numbers with $\operatorname{Re} s > 1$, $|r - 1| < |s - 1|$ and
 $\operatorname{Re} r < \operatorname{Re} s$. Write $\zeta(s, \{1\}^j)$ for the height one multiple
 zeta function and $\zeta_r(s)$ for the multiple Hurwitz zeta function of order $r$. Then the series

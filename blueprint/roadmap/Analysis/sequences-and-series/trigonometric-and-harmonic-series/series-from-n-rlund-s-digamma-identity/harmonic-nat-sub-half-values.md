@@ -1,6 +1,6 @@
 # Harmonic numbers of half-integer index
 
-**Harmonic numbers of half-integer index.** Let $k$ be a natural number. For each integer
+Let $k$ be a natural number. For each integer
 $r \ge 1$ let $O^{(r)}_k = \sum_{j=1}^{k} \frac{1}{(2j - 1)^r}$, and let $O_k = O^{(1)}_k$.
 Let $\psi$ be the digamma function, $\gamma$ the Euler–Mascheroni constant and $\zeta$ the
 Riemann zeta function. Then

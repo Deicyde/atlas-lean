@@ -1,6 +1,6 @@
 # Constancy of an infinite cyclotomic product
 
-**Constancy of an infinite cyclotomic product.** For $n \ge 1$ and complex $z$, let
+For $n \ge 1$ and complex $z$, let
 $\hat\Phi_n(z) = \prod_\omega (1 - z\omega)$, the product over the primitive $n$-th roots of
 unity $\omega$; thus $\hat\Phi_1(z) = 1 - z$ and $\hat\Phi_n = \Phi_n$ for $n \ge 2$, where
 $\Phi_n$ is the $n$-th cyclotomic polynomial. For every complex $z$ with $|z| < 1$, the partial

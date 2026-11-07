@@ -1,6 +1,6 @@
 # Growth bounds for Gibonacci and generalized Tribonacci sequences
 
-**Growth bounds for Gibonacci and generalized Tribonacci sequences.** Let $\varphi$ be the
+Let $\varphi$ be the
 golden ratio. For integers $x, y$ let $(P_n)_{n \ge 0}$ be the Gibonacci sequence with $P_0 = x$
 and $P_1 = y$, and for integers $a, b, c$ let $(Q_n)_{n \ge 0}$ be the generalized Tribonacci
 sequence with $Q_0 = a$, $Q_1 = b$ and $Q_2 = c$. Then (i) for all integers $x, y$ and every

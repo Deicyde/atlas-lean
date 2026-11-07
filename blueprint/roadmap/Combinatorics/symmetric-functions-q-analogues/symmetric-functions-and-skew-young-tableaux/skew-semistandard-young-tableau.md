@@ -1,6 +1,6 @@
 # Semistandard Young tableau of skew shape
 
-**Semistandard Young tableau of skew shape.** Let $\lambda/\mu$ be a skew shape, and write
+Let $\lambda/\mu$ be a skew shape, and write
 $\lambda_k$ and $\mu_k$ for the $k$-th parts of $\lambda$ and $\mu$, with $\lambda_k = 0$
 ($\mu_k = 0$) when $\lambda$ ($\mu$) has fewer than $k$ parts. The cells of $\lambda/\mu$ are the
 pairs $(i, j) \in \mathbb{Z}_{\ge 1} \times \mathbb{Z}_{\ge 1}$ with $\mu_i < j \le \lambda_i$,

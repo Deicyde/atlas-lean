@@ -1,6 +1,6 @@
 # Breuillard–Green–Tao theorem (small doubling form)
 
-**Breuillard–Green–Tao theorem (small doubling form).** For every real number $K$ there is a
+For every real number $K$ there is a
 natural number $C > 0$ with the following property. Let $G$ be a group and let $A$ be a nonempty
 finite subset of $G$ such that the product set $A A = \{ab : a, b \in A\}$ satisfies
 $|A A| \le K |A|$. Then there are a subgroup $N$ of $G$, a normal subgroup $D$ of $N$ and a finite

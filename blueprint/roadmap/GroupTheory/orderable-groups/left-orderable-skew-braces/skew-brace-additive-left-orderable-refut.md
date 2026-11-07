@@ -1,6 +1,6 @@
 # A skew brace whose additive group is not left-orderable
 
-**A skew brace whose additive group is not left-orderable.** There is a skew brace $B$, that is, a
+There is a skew brace $B$, that is, a
 set with two group structures, an addition $+$ and a multiplication $\cdot$, satisfying
 $a \cdot (b + c) = a \cdot b - a + a \cdot c$ for all $a, b, c \in B$, whose multiplication is
 left-orderable but whose addition is not left-orderable. That is, the statement of Kourovka

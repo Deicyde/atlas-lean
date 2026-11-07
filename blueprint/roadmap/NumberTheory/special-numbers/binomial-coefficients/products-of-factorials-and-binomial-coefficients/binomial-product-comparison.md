@@ -1,6 +1,6 @@
 # Comparison function for products of binomial coefficients
 
-**Comparison function for products of binomial coefficients.** For natural numbers $a$ and
+For natural numbers $a$ and
 $b$, let $c = a - b$ if $b \le a$ and $c = 0$ otherwise. The comparison function
 $P_{a,b} \colon \mathbb{R} \to \mathbb{R}$ is defined by
 

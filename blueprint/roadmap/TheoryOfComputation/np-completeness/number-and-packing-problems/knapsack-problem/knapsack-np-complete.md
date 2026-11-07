@@ -1,6 +1,6 @@
 # KNAPSACK is NP-complete
 
-**KNAPSACK is NP-complete.** The KNAPSACK decision problem is in NP, and every decision
+The KNAPSACK decision problem is in NP, and every decision
 problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

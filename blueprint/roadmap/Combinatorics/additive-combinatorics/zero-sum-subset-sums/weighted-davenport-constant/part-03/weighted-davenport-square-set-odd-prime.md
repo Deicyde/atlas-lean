@@ -1,6 +1,5 @@
 # The square-weighted Davenport constant of an even power of an odd prime is at most five
 
-**The square-weighted Davenport constant of an even power of an odd prime is at most five.**
 Let $p$ be an odd prime, let $r$ be a nonzero even natural number, let $S(p^r)$ be the set of
 nonzero squares in $\mathbb{Z}_{p^r}$, and let $A$ be the set of integers $a$ with $0 \le a < p^r$
 whose residue modulo $p^r$ lies in $S(p^r)$. Then the $A$-weighted Davenport constant

@@ -1,6 +1,6 @@
 # Characterization of extremely unlucky Stirling permutations
 
-**Characterization of extremely unlucky Stirling permutations.** Let $n \ge 1$ and let $w$
+Let $n \ge 1$ and let $w$
 be a Stirling permutation of order $n$, read as a parking function of length $2n$. Then car $1$
 is the only lucky car of $w$ if and only if for every $x \in \{2, \dots, n\}$ and every
 position $i \le x$, we have $w_i < x$.

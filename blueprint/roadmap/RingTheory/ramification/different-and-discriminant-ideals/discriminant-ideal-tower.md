@@ -1,6 +1,6 @@
 # Tower formula for discriminant ideals
 
-**Tower formula for discriminant ideals.** Let $A$, $B$, $C$ be Dedekind domains with
+Let $A$, $B$, $C$ be Dedekind domains with
 algebra maps $A \to B \to C$ whose composite is the algebra map $A \to C$, such that $B$ is
 finite and torsion-free over $A$, $C$ is finite and torsion-free over $A$ and over $B$, and the
 fraction field of $C$ is separable over the fraction field of $A$. Write $\mathfrak{d}_{B/A}$,

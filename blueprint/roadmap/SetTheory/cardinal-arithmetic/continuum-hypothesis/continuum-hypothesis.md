@@ -1,3 +1,3 @@
 # Continuum hypothesis
 
-**Continuum hypothesis.** CH: 2^{ℵ₀}=ℵ₁
+CH: 2^{ℵ₀}=ℵ₁

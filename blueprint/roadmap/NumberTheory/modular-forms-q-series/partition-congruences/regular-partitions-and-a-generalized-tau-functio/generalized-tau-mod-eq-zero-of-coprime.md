@@ -1,6 +1,6 @@
 # Vanishing of the generalized tau function modulo $|k|/d$
 
-**Vanishing of the generalized tau function modulo $|k|/d$.** Let $\tau_k(n)$ be the
+Let $\tau_k(n)$ be the
 generalized tau function, the coefficient of $q^n$ in $q \prod_{j \ge 1} (1 - q^j)^k$. Let $k$ be
 an integer with $|k| \ge 2$ and $d$ a natural number dividing $|k|$ with $d < |k|$. Then for all
 natural numbers $m$ and $r$ with $\gcd(r, |k|/d) = 1$,

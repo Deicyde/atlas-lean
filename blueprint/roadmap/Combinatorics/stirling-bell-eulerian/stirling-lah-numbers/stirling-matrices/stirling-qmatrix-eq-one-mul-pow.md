@@ -1,6 +1,6 @@
 # Factorization of $Q^{(N)}(n)$ through $Q^{(1)}(n)$
 
-**Factorization of $Q^{[N]}(n)$ through $Q^{[1]}(n)$.** For natural numbers $n$ and $N$ with
+For natural numbers $n$ and $N$ with
 $N \ge 1$, let $V(n)$ be the $n \times n$ upper bidiagonal matrix with $V(n)_{i,i} = i$,
 $V(n)_{i,i+1} = 1$ and all other entries $0$, let $I_n$ be the $n \times n$ identity matrix,
 and for $M \ge 1$ let $Q^{[M]}(n)$ be the $n \times n$ matrix with

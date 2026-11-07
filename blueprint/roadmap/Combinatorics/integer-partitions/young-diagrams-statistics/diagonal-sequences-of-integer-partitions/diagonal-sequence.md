@@ -1,6 +1,6 @@
 # Diagonal sequence of a partition
 
-**Diagonal sequence of a partition.** Let $\alpha$ be a partition with parts
+Let $\alpha$ be a partition with parts
 $\alpha_1 \ge \alpha_2 \ge \dots \ge \alpha_t$, and set $\alpha_i = 0$ for $i > t$. Its diagonal
 sequence $\delta(\alpha) = (d_k)_{k \ge 0}$ has $d_0 = 0$ and, for $k \ge 1$, $d_k$ equal to the
 number of indices $i$ with $1 \le i \le k$ and $\alpha_i + i - 1 \ge k$, that is, the number of

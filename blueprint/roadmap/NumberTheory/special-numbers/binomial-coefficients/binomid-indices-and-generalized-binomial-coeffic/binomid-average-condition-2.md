@@ -1,6 +1,6 @@
 # Lex-minimal extensions satisfy the Average Condition
 
-**Lex-minimal extensions satisfy the Average Condition.** Every lex-minimal extension
+Every lex-minimal extension
 satisfies the Average Condition.
 
 ## Sources

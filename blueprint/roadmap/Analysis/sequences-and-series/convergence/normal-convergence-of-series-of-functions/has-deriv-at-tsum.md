@@ -1,6 +1,6 @@
 # Termwise differentiation of locally normally convergent holomorphic series
 
-**Termwise differentiation of locally normally convergent holomorphic series.** Let $E$ be a
+Let $E$ be a
 complete normed space over $\mathbb{C}$, $S \subseteq \mathbb{C}$ an open set and
 $f_n \colon \mathbb{C} \to E$ for $n \in \mathbb{N}$ functions that are complex differentiable
 on $S$. If the series $\sum_n f_n$ converges locally normally on $S$, that is every $z \in S$

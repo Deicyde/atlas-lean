@@ -1,6 +1,6 @@
 # Covering-produced Sierpiński numbers give infinitely many Sierpiński repintegers
 
-**Covering-produced Sierpiński numbers give infinitely many Sierpiński repintegers.** Let $k$
+Let $k$
 be a Sierpiński number that has Sierpiński covering data, so that $k$ is produced as a Sierpiński
 number by the covering system method. Then for every natural number $b \ge 2$ there are infinitely
 many $t \ge 1$ such that the $b$-repinteger $k_b^{(t)} = k\,(b^{\ell t} - 1)/(b^{\ell} - 1)$, where

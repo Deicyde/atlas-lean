@@ -1,6 +1,6 @@
 # The empty set is not Riesel covering data
 
-**The empty set is not Riesel covering data.** For every natural number $k$, the empty set is
+For every natural number $k$, the empty set is
 not Riesel covering data for $k$, because its residue classes do not cover $\mathbb{Z}$.
 
 ## Sources

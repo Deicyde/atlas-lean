@@ -1,6 +1,6 @@
 # Van Schooten's theorem with distinctness hypotheses
 
-**Van Schooten's theorem with distinctness hypotheses.** Let $A$, $B$, $C$, $P$ and $O$ be
+Let $A$, $B$, $C$, $P$ and $O$ be
 points of the Euclidean plane $\mathbb{R}^2$ and let $r > 0$. Suppose that $AB = BC = CA$,
 that $A$, $B$, $C$ and $P$ lie on the circle of radius $r$ about $O$, that $P \ne A$,
 $P \ne B$ and $P \ne C$, and that $CP > AP$ and $CP > BP$. Then $PA + PB = PC$.

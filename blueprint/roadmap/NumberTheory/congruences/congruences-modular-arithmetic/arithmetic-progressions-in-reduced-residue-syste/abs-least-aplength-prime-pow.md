@@ -1,6 +1,6 @@
 # Longest progressions of absolute least residues: prime powers
 
-**Longest progressions of absolute least residues: prime powers.** Let $p$ be a prime and
+Let $p$ be a prime and
 $r \ge 1$, with $r \ge 2$ when $p$ is odd. Then the length $g(p^r)$ of the longest arithmetic
 progression in the absolute least reduced residue system modulo $p^r$ is $p^{r-1}$.
 

@@ -1,6 +1,6 @@
 # Product of a divided-power ideal with an ideal
 
-**Product of a divided-power ideal with an ideal.** Let $A$ be a commutative ring. If
+Let $A$ be a commutative ring. If
 $\mathfrak{a}$ is a divided-power ideal of $A$, then for every ideal $\mathfrak{b}$ of $A$ the
 product $\mathfrak{a}\mathfrak{b}$ is a divided-power ideal.
 

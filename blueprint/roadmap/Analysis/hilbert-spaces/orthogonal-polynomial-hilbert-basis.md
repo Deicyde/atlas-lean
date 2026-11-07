@@ -1,6 +1,6 @@
 # Hilbert basis of orthogonal polynomials on $(-1, 1)$
 
-**Hilbert basis of orthogonal polynomials on $[-1, 1]$.** Let $L^2([-1, 1])$ be the real
+Let $L^2([-1, 1])$ be the real
 Hilbert space of square-integrable real-valued functions on $[-1, 1]$ with respect to
 Lebesgue measure. There is a Hilbert basis $(b_n)_{n \in \mathbb{N}}$ of $L^2([-1, 1])$ such
 that for every $n \in \mathbb{N}$ there is a real polynomial $q_n$ of degree exactly $n$ (for

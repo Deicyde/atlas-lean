@@ -1,6 +1,6 @@
 # Power sums over a symmetric interval
 
-**Power sums over a symmetric interval.** For natural numbers $N$ and $r$, let
+For natural numbers $N$ and $r$, let
 $S_r(N) = \sum_{a=-N}^{N} a^r$, the sum over the integers $a$ with $-N \le a \le N$. Then
 $S_r(N) = 0$ for every odd $r$, and
 

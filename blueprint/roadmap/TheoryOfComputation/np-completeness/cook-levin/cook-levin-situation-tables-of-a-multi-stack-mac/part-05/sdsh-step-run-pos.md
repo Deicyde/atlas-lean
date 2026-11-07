@@ -1,6 +1,6 @@
 # Composition with the shift family
 
-**Composition with the shift family.** Let $E$ be an encoding of the machine $M$ with $K$
+Let $E$ be an encoding of the machine $M$ with $K$
 stacks, layout $L$, $N$ situations and situation tables $\mathrm{la}$, $\mathrm{wa}$,
 $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$ and $\mathrm{pu}$, let $d$ be the window depth of $M$,
 let $H \in \mathbb{N}$ with $d \le H$, and let $T, t \in \mathbb{N}$ with $t < T$. Call a

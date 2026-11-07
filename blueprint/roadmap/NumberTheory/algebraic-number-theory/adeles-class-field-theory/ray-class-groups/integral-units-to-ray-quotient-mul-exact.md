@@ -1,6 +1,6 @@
 # Exactness at the ray-element quotient
 
-**Exactness at the ray-element quotient.** Let $\mathfrak m$ be a modulus of a number field
+Let $\mathfrak m$ be a modulus of a number field
 $K$, let $K_{\mathfrak m}$ be the group of ray elements (elements of $K^\times$ whose principal
 ideal is coprime to the finite part of $\mathfrak m$), let $K_{\mathfrak m,1} \le K_{\mathfrak m}$
 be the subgroup of ray-one elements, and let $\mathrm{Cl}_{\mathfrak m}$ be the ray class group

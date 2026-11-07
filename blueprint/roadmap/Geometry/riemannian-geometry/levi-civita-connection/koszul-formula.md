@@ -1,6 +1,6 @@
 # Koszul formula
 
-**Koszul formula.** Let $M$ be a smooth manifold, modelled with corners on a finite-dimensional
+Let $M$ be a smooth manifold, modelled with corners on a finite-dimensional
 real normed space, whose tangent bundle carries a smooth Riemannian metric $\langle \cdot, \cdot
 \rangle$, and let $\nabla$ be a smooth covariant derivative on the tangent bundle of $M$ that is
 torsion-free and compatible with the metric. Then for all smooth vector fields $X$, $Y$, $Z$ on

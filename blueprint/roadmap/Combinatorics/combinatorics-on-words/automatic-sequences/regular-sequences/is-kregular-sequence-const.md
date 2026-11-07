@@ -1,6 +1,6 @@
 # Constant sequences are $k$-regular
 
-**Constant sequences are $k$-regular.** For every natural number $k \ge 2$ and every integer
+For every natural number $k \ge 2$ and every integer
 $c$, the constant sequence $n \mapsto c$ is $k$-regular.
 
 ## Sources

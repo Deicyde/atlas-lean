@@ -1,6 +1,6 @@
 # Pair recurrence and $4$-automaticity of $\mathcal{M}_2$
 
-**Pair recurrence and $4$-automaticity of $\mathcal{M}_2$.** Read the meta-automatic
+Read the meta-automatic
 sequence $\mathcal{M}_2$ as taking values in $\{0, 1\}$, write $\oplus$ for addition modulo $2$,
 and let $s(n) = (\mathcal{M}_2(n), \mathcal{M}_2(2n + \mathcal{M}_2(n)))$. For every $n \ge 0$,
 writing $s(n) = (x, y)$, we have $s(4n) = (y, x \oplus y)$, $s(4n+1) = (y \oplus 1, x \oplus y)$,

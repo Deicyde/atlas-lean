@@ -1,6 +1,6 @@
 # Language of graph instances with a property
 
-**Language of graph instances with a property.** Let $P$ be a property of a natural number
+Let $P$ be a property of a natural number
 $n$, a natural number $k$ and a simple graph on $\{0, \dots, n-1\}$. The decision problem accepts
 a bit string $x$ exactly when, writing $1$ for true and $0$ for false, $x = 1^k\,0\,1^n\,0\,b$
 for some natural numbers $k$, $n$ and a list of bits $b$ with one entry for each pair

@@ -1,6 +1,6 @@
 # Composition of immersions at a point
 
-**Composition of immersions at a point.** Let $\mathbb{K}$ be a nontrivially normed field, let
+Let $\mathbb{K}$ be a nontrivially normed field, let
 $n \in \mathbb{N} \cup \{\infty, \omega\}$, and let $M$, $N$, $N'$ be $C^n$ manifolds without
 boundary modeled on Banach spaces over $\mathbb{K}$. If $f : M \to N$ is a $C^n$ immersion at a
 point $x \in M$ and $g : N \to N'$ is a $C^n$ immersion at $f(x)$, then $g \circ f$ is a $C^n$

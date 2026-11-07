@@ -1,6 +1,6 @@
 # Erdős Problem 651 has a negative answer
 
-**Erdős Problem 651 has a negative answer.** For natural numbers $k$ and $n$ let $f_k(n)$ be the
+For natural numbers $k$ and $n$ let $f_k(n)$ be the
 least $m$ such that every set of $m$ points of $\mathbb{R}^k$ in general position (any at most
 $k + 1$ of them affinely independent) contains $n$ points in convex position (none of them in the
 convex hull of the others), with $f_k(n) = 0$ if there is no such $m$. It is not the case that for

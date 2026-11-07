@@ -1,6 +1,6 @@
 # Lit nodes of a one-part partition
 
-**Lit nodes of a one-part partition.** For every natural number $n \ge 1$, the one-part
+For every natural number $n \ge 1$, the one-part
 partition $(n)$ of $n$ has exactly $n$ lit nodes.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Period of a Lucas sequence modulo 1
 
-**Period of a Lucas sequence modulo 1.** For every Lucas sequence $U = U(P, Q)$, the least
+For every Lucas sequence $U = U(P, Q)$, the least
 period $\pi_U(1)$ of $U$ modulo $1$ equals $1$.
 
 ## Sources

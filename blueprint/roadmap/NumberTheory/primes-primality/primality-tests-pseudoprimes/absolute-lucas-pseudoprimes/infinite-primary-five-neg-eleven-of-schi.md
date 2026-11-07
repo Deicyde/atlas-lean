@@ -1,6 +1,5 @@
 # Schinzel's Hypothesis H gives numbers that are primary $5$- and $(-11)$-Carmichael
 
-**Schinzel's Hypothesis H gives numbers that are primary $5$- and $(-11)$-Carmichael.**
 Suppose Schinzel's Hypothesis H holds in the following form: for every finite set $F$ of integer
 polynomials, each satisfying the Bunyakovsky condition, such that $F$ satisfies the Schinzel
 condition, there are infinitely many natural numbers $n$ for which $|f(n)|$ is prime for every

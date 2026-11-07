@@ -1,6 +1,6 @@
 # King distance is the max norm
 
-**King distance is the max norm.** For every lattice point $p = (x, y) \in \mathbb{Z}^2$, the
+For every lattice point $p = (x, y) \in \mathbb{Z}^2$, the
 piece distance of $p$ for the king's move set $K$ is $\max(|x|, |y|)$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Time and output of the init generator for an encoding
 
-**Time and output of the init generator for an encoding.** Let $E$ be an encoding of a
+Let $E$ be an encoding of a
 machine $M$, let $x$ and $Y$ be lists of symbols of the input stack of $M$, let $m, T, H$ be
 natural numbers with $|x| \le m < H$, and let $o$ be a bit string. Let $C$ be the time constant
 for the layout of $E$, the number of distinct codes of $Y$ and the number $k_0$ of the input

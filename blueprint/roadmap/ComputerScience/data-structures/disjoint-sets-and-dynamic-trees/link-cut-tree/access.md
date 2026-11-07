@@ -1,6 +1,6 @@
 # Access in a link-cut tree
 
-**Access in a link-cut tree.** Let $s$ be a link-cut tree state and $x$ a vertex. If $x$ is a
+Let $s$ be a link-cut tree state and $x$ a vertex. If $x$ is a
 vertex of some tree of the represented forest of $s$, let $T$ be the first such tree and let $p$
 be the path in $T$ from its root down to $x$. Accessing $x$ keeps the represented forest and
 replaces the preferred edges by those preferred edges of $s$ whose parent endpoint is not on $p$,

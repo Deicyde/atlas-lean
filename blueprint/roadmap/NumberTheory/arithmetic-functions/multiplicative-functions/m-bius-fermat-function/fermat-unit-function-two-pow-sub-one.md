@@ -1,6 +1,6 @@
 # The Fermat unit function at $2^n - 1$
 
-**The Fermat unit function at $2^n - 1$.** For every integer $n \ge 1$, the Fermat unit
+For every integer $n \ge 1$, the Fermat unit
 function $u_M$ satisfies $u_M(2^n - 1) = 1$.
 
 ## Sources

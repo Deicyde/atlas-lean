@@ -1,6 +1,6 @@
 # Grid domination polynomial as a sum of almost dominating polynomials
 
-**Grid domination polynomial as a sum of almost dominating polynomials.** For all natural
+For all natural
 numbers $m$ and $n$, let $P_k$ denote the path on the vertices $0, \dots, k - 1$. Then the
 domination polynomial of the grid $P_m \mathbin{\square} P_{n+1}$ equals $\sum_\sigma G^\sigma(z)$,
 the sum running over the signatures $\sigma$ of the row graph $P_m$ with no uncovered vertex,

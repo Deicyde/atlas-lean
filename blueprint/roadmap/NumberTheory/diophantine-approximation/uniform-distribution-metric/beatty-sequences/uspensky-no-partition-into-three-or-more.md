@@ -1,6 +1,6 @@
 # Uspensky's theorem on Beatty partitions
 
-**Uspensky's theorem on Beatty partitions.** For a real number $\alpha$ with
+For a real number $\alpha$ with
 $0 < \alpha < 1$, let $B_\alpha = \{\lfloor n/\alpha \rfloor : n \text{ an integer}, n \ge 1\}$
 be its Beatty sequence. Let $k \ge 3$ and let $\alpha_1, \dots, \alpha_k$ be real numbers with
 $0 < \alpha_i < 1$ for every $i$. Then $B_{\alpha_1}, \dots, B_{\alpha_k}$ do not partition the

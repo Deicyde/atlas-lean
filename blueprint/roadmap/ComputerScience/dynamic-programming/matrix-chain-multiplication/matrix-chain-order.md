@@ -1,6 +1,6 @@
 # Matrix-chain ordering
 
-**Matrix-chain ordering.** Given $n \ge 1$ and natural numbers $p_0, \dots, p_n$, where matrix
+Given $n \ge 1$ and natural numbers $p_0, \dots, p_n$, where matrix
 $i$ of the chain ($0 \le i < n$) has $p_i$ rows and $p_{i+1}$ columns, the algorithm computes,
 bottom-up by interval length, values $m_{i,j}$ for $0 \le i \le j < n$: $m_{i,i} = 0$ and, for
 $i < j$, $m_{i,j}$ is the least value of $m_{i,k} + m_{k+1,j} + p_i p_{k+1} p_{j+1}$ over

@@ -1,6 +1,6 @@
 # Step bound of the verifier host
 
-**Step bound of the verifier host.** Let $c$ be a component machine with stacks $c_X$ and
+Let $c$ be a component machine with stacks $c_X$ and
 $c_W$, encodings $g_X$ and $g_W$ of bits as symbols of $c_X$ and $c_W$, and labels
 $\mathit{start}$, $\mathit{yes}$ and $\mathit{no}$, and let $B$ be the push bound of the verifier
 host machine built from these data. For a polynomial $p$ with natural-number coefficients, the

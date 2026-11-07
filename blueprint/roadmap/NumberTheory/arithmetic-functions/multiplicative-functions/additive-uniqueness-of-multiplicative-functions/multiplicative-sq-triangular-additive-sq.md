@@ -1,6 +1,6 @@
 # Square–triangular additivity fixes small squares
 
-**Square–triangular additivity fixes small squares.** Let $t_v = v(v + 1)/2$ denote the
+Let $t_v = v(v + 1)/2$ denote the
 $v$-th triangular number, and let $f$ be a complex-valued multiplicative arithmetic function
 with $f(u^2 + t_v) = f(u^2) + f(t_v)$ for all positive integers $u$ and $v$. Let $N \ge 3$ be an
 integer such that $f(n) = n$ for every integer $n$ with $1 \le n \le N - 1$. Then

@@ -1,6 +1,6 @@
 # Run of the target-output phase of the subset-sum emitter
 
-**Run of the target-output phase of the subset-sum emitter.** Let $l$ be a list of bits, let
+Let $l$ be a list of bits, let
 $l'$ be $l$ with its leading $\mathrm{false}$ bits removed, and let $o$ be a list of bits. Start
 the VERTEX-COVER to SUBSET-SUM machine at label $\mathsf{tsk}$ with any state bit and with stacks
 $S$ in which stack $\mathsf{T}$ holds exactly the bit symbols of $l$, first bit on top, and the

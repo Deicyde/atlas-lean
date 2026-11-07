@@ -1,6 +1,6 @@
 # Statement of the Kolmogorov distance via left-continuous distribution functions
 
-**Statement of the Kolmogorov distance via left-continuous distribution functions.** This is
+This is
 the proposition that for every probability measure $\mu$ on $\mathbb{R}$ with mean $0$, variance
 $1$ and finite third absolute moment and every integer $n \ge 1$, if $S_n = X_1 + \dots + X_n$ for
 independent random variables $X_1, X_2, \dots$ each with law $\mu$, then

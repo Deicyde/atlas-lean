@@ -1,6 +1,6 @@
 # Lagarias–Saks pebbling step
 
-**Lagarias–Saks pebbling step.** Let $G$ be a simple graph on a vertex set $V$, and let $w$
+Let $G$ be a simple graph on a vertex set $V$, and let $w$
 assign a natural-number cost $w(uv)$ to each unordered pair of vertices $\{u, v\}$. For
 configurations $C, C' : V \to \mathbb{N}$, there is a pebbling step from $C$ to $C'$ if there
 is an edge $uv$ of $G$ with $0 < w(uv) \le C(u)$ such that $C'$ is obtained from $C$ by

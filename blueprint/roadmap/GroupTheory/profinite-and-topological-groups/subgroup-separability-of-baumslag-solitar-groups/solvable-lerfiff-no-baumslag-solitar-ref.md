@@ -1,6 +1,6 @@
 # Kourovka Problem 16.2 has a negative answer
 
-**Kourovka Problem 16.2 has a negative answer.** There is a finitely generated solvable group $G$
+There is a finitely generated solvable group $G$
 for which the following two conditions are not equivalent: $G$ is locally subgroup-separable;
 there is no $n > 1$ such that $G$ has a subgroup isomorphic to the Baumslag–Solitar group
 $\mathrm{BS}(1, n)$.

@@ -1,6 +1,6 @@
 # A real number is a square exactly when it is nonnegative
 
-**A real number is a square exactly when it is nonnegative.** For every environment
+For every environment
 $e : \mathbb{N} \to \mathbb{R}$, the formula $\exists x.\ x \cdot x = a$ holds under $e$ if and
 only if the formula $\neg(a < 0)$ holds under $e$. In the first formula the bound variable $x$ is
 de Bruijn index $0$ and $a$ is index $1$; in the second $a$ is index $0$; in both, $a$ denotes

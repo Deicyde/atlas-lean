@@ -1,6 +1,6 @@
 # The raw q-Pochhammer product at a = 2 and q = 1 equals 1
 
-**The raw q-Pochhammer product at a = 2 and q = 1 equals 1.** The raw infinite q-Pochhammer
+The raw infinite q-Pochhammer
 product at $a = 2$ and $q = 1$ equals $1$.
 
 Every factor $1 - 2 \cdot 1^n$ equals $-1$, so the finite partial products alternate between $-1$

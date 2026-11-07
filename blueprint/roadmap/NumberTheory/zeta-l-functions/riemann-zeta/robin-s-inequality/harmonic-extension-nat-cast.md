@@ -1,6 +1,6 @@
 # The real extension agrees with the harmonic numbers
 
-**The real extension agrees with the harmonic numbers.** Let
+Let
 $H(x) = \int_0^1 \frac{t^x - 1}{t - 1}\,dt$ for real $x$ be the real extension of the harmonic
 numbers. For every natural number $n$, $H(n) = H_n$, where $H_n = \sum_{i=1}^n 1/i$ is the
 $n$-th harmonic number.

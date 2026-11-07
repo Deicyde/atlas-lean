@@ -1,6 +1,6 @@
 # Euclid moves lower the sum
 
-**Euclid moves lower the sum.** If $(a', b')$ is a Euclid move from $(a, b)$, then
+If $(a', b')$ is a Euclid move from $(a, b)$, then
 $a' + b' < a + b$.
 
 ## Sources

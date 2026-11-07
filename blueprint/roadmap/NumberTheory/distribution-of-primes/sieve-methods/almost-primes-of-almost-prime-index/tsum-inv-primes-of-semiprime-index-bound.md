@@ -1,6 +1,6 @@
 # Reciprocal sum of the primes of semiprime index
 
-**Reciprocal sum of the primes of semiprime index.** Let $N_{1,2}$ be the set of primes $p_i$
+Let $N_{1,2}$ be the set of primes $p_i$
 (indexed from $p_1 = 2$) whose index $i$ is a semiprime, that is, a product of two not
 necessarily distinct primes. Then $0.9910 < \sum_{n \in N_{1,2}} 1/n < 0.9915$.
 

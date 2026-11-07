@@ -1,6 +1,6 @@
 # The reduction machine as a polynomial-time computation
 
-**The reduction machine as a polynomial-time computation.** Fix $r \in \mathbb{N}$, a finite
+Fix $r \in \mathbb{N}$, a finite
 TM2 machine $M$ with an encoding $E$, a list $Y$ of input symbols of $M$, an output symbol $a$, a
 map $\iota$ from $\{0, \dots, r-1\}$ to input symbols, an input symbol $\mathit{sep}$, a
 polynomial $k$ with coefficients in $\mathbb{N}$ and $c, e \in \mathbb{N}$. Let $\mathit{ea}$

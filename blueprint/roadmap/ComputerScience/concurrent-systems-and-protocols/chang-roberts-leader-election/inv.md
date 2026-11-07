@@ -1,6 +1,6 @@
 # The Chang–Roberts invariant
 
-**The Chang–Roberts invariant.** Given identifiers $\mathrm{id}$ on a ring of $n + 1$
+Given identifiers $\mathrm{id}$ on a ring of $n + 1$
 processes, a state satisfies the invariant when two conditions hold. First, for every message
 from origin $j$ waiting in the channel of process $k$, every process $m \ne j$ that the message
 has already passed has a smaller identifier, $\mathrm{id}(m) < \mathrm{id}(j)$; here $m$ has been

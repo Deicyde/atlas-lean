@@ -1,6 +1,6 @@
 # Recursion for the cumulative profile
 
-**Recursion for the cumulative profile.** For every sequence $\pi : \mathbb{N} \to \mathbb{N}$
+For every sequence $\pi : \mathbb{N} \to \mathbb{N}$
 with cumulative profile $\Pi_k = \sum_{j=1}^{k} \pi_j$ and every natural number $k$,
 $\Pi_{k+1} = \Pi_k + \pi_{k+1}$.
 

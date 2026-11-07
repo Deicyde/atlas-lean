@@ -1,6 +1,6 @@
 # Probabilistically checkable proofs
 
-**Probabilistically checkable proofs.** For functions $r, q : \mathbb{N} \to \mathbb{N}$, the
+For functions $r, q : \mathbb{N} \to \mathbb{N}$, the
 class $\mathrm{PCP}(r, q)$ consists of the decision problems $L$ for which there are
 polynomial-time computable functions $Q$ and $D$ such that $Q(x, \rho)$ is a list of at most
 $q(|x|)$ natural numbers for all bitstrings $x$ and $\rho$, and such that for every bitstring $x$

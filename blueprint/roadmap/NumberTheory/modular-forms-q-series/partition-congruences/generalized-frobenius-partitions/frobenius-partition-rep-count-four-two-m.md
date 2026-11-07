@@ -1,6 +1,6 @@
 # $\varphi_4(2N+1)$ is even when $5 \nmid N$
 
-**$\varphi_4(2N+1)$ is even when $5 \nmid N$.** Let $\varphi_4(n)$ be the number of generalized
+Let $\varphi_4(n)$ be the number of generalized
 Frobenius partitions of $n$ in which each integer appears at most $4$ times in each row. For every
 positive integer $N$ not divisible by $5$, $\varphi_4(2N + 1) \equiv 0 \pmod 2$.
 

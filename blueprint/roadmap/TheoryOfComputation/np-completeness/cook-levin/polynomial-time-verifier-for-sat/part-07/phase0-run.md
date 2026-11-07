@@ -1,6 +1,6 @@
 # Phase 0 of the SAT verifier host
 
-**Phase 0 of the SAT verifier host.** Let $c$ be a flag, $x$ and $w$ bit strings of lengths
+Let $c$ be a flag, $x$ and $w$ bit strings of lengths
 $m$ and $n$, $v$ an internal state, and $S$ host stacks whose input stack holds the pair encoding
 $x \# w$ and whose other stacks are all empty. Then there are an internal state $v'$ and host
 stacks $S'$ such that the host program with flag $c$ runs in exactly $2m + 2n + 5$ steps from

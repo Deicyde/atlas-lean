@@ -1,6 +1,6 @@
 # Local views determine states
 
-**Local views determine states.** Let $P$ be an oral-message protocol for the generals $G$
+Let $P$ be an oral-message protocol for the generals $G$
 with states $\sigma$ and messages $M$. Let $N$ be a type of nodes, node $k$ running the code of
 the general $\rho(k) \in G$, and let $L$ be a property of nodes. For each round $r$ and node
 $k$, let $s_r(k), s'_r(k) \in \sigma$ be two states and $\mu_r(k), \mu'_r(k) : G \to M$ two

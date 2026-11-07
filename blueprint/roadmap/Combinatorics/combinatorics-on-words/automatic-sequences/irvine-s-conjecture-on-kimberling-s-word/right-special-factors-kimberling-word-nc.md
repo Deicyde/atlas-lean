@@ -1,6 +1,6 @@
 # Lengths with two right-special factors in Kimberling's word
 
-**Lengths with two right-special factors in Kimberling's word.** Let $k$ be Kimberling's word
+Let $k$ be Kimberling's word
 and write $K_m$ for the length of the $m$-th Kimberling block. A word $u$ is a right-special factor
 of $k$ if both $u0$ and $u1$ are factors of $k$. For every $n \ge 0$, $k$ has exactly two
 right-special factors of length $n$ if and only if there is an $i \ge 0$ such that

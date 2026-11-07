@@ -1,6 +1,6 @@
 # Cycles of the digraph $G(2n, -2n + a)$
 
-**Cycles of the digraph $G(2n, -2n + a)$.** For an integer $b$ write $G_b$ for the digraph
+For an integer $b$ write $G_b$ for the digraph
 $G(2n, -2n + b)$ on $\mathbb{Z}$, with an edge $m \to 2m$ and an edge $m \to -2m + b$ for every
 integer $m$. Let $a$ be an odd natural number. Then (i) $G_a$ has a loop at $m$ if and only if
 $m = 0$ or $3m = a$; (ii) $G_a$ has a directed walk of positive length from $m$ back to $m$ if

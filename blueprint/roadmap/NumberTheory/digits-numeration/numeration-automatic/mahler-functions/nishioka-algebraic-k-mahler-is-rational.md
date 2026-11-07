@@ -1,6 +1,6 @@
 # Nishioka's theorem: algebraic Mahler functions are rational
 
-**Nishioka's theorem: algebraic Mahler functions are rational.** Let $k$ be a natural number
+Let $k$ be a natural number
 and let $F \in \mathbb{C}[[z]]$ be a $k$-Mahler function. If $F$ is algebraic over
 $\mathbb{C}[z]$, that is, $P(F) = 0$ for some nonzero polynomial $P$ with coefficients in
 $\mathbb{C}[z]$, then $F$ is rational: there are polynomials $p, q \in \mathbb{C}[z]$ with $q \ne 0$

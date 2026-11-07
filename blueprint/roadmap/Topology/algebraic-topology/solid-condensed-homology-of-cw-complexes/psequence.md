@@ -1,6 +1,6 @@
 # The short complex defining $P$
 
-**The short complex defining $P$.** Write $\mathbb{N} \cup \{\infty\}$ for the one-point
+Write $\mathbb{N} \cup \{\infty\}$ for the one-point
 compactification of $\mathbb{N}$, viewed as a light profinite set, and $\mathbb{Z}[S]$ for the free
 light condensed abelian group on a light profinite set $S$, with $\mathbb{Z}[\infty]$ the one on a
 point. This is the short complex of light condensed abelian groups

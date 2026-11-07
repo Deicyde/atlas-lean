@@ -1,6 +1,6 @@
 # Complementary moment
 
-**Complementary moment.** For natural numbers $b$, $d$, $k$ and $m$ with $d < b$, let $\mu_k$
+For natural numbers $b$, $d$, $k$ and $m$ with $d < b$, let $\mu_k$
 be the Irwin measure for base $b$, digit $d$ and digit count $k$. The complementary moment is
 
 $$

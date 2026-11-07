@@ -1,6 +1,6 @@
 # Bludov–Glass theorem (Kourovka Problem 15.34)
 
-**Bludov–Glass theorem (Kourovka Problem 15.34).** Let $(G_i)_{i \in I}$ be a family of groups,
+Let $(G_i)_{i \in I}$ be a family of groups,
 each with a linear order invariant under multiplication on both sides ($a \le b$ implies
 $ca \le cb$ and $ac \le bc$), let $H$ be a group with such a linear order, and for each $i$ let
 $\varphi_i \colon H \to G_i$ be a strictly increasing group homomorphism. Then the free product of

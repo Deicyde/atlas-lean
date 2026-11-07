@@ -1,6 +1,6 @@
 # The N-expansion map away from the left endpoint
 
-**The N-expansion map away from the left endpoint.** Let $N$ be a natural number and let
+Let $N$ be a natural number and let
 $\alpha$ and $x$ be real numbers with $x \ne \alpha$. Then the $N$-expansion map $T_\alpha$
 satisfies $\alpha \le T_\alpha(x) < \alpha + 1$.
 

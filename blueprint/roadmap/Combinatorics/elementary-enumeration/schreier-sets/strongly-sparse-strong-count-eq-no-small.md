@@ -1,6 +1,6 @@
 # Strongly sparse strong Schreier sets and partitions with restricted parts
 
-**Strongly sparse strong Schreier sets and partitions with restricted parts.** For all natural
+For all natural
 numbers $n \ge 1$ and $\ell \ge 1$, the number $|A^s_{n,\ell}|$ of strongly sparse $\ell$-strong
 Schreier sets $A \subseteq \{1, \dots, n\}$ with $n \in A$ equals $|H_{n-1,\ell}|$, the number of
 partitions of $n - 1$ with no part in $\{2, \dots, \ell\}$ and no even part greater than $2\ell$.

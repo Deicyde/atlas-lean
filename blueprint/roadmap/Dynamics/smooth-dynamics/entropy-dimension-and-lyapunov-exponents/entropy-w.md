@@ -1,6 +1,6 @@
 # Entropy of a map relative to a partition
 
-**Entropy of a map relative to a partition.** Let $\mu$ be a measure on a measurable space
+Let $\mu$ be a measure on a measurable space
 $M$, let $T : M \to M$ be a map and let $P$ be a finite family of subsets of $M$. The entropy of
 $T$ relative to $P$ is
 

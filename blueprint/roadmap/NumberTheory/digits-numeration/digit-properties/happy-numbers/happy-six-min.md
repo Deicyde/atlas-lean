@@ -1,6 +1,6 @@
 # Smallest run of six consecutive happy numbers
 
-**Smallest run of six consecutive happy numbers.** A natural number is happy when repeatedly
+A natural number is happy when repeatedly
 replacing it by the sum of the squares of its decimal digits reaches $1$ after finitely many
 steps. Let $N_0 = 7899999999999959999999996$. The six consecutive integers
 $N_0, N_0 + 1, \dots, N_0 + 5$ are all happy, and every natural number $m$ such that

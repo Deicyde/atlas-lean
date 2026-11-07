@@ -1,6 +1,6 @@
 # Gutkovskiy's sequence from its parities
 
-**Gutkovskiy's sequence from its parities.** Let $g_0, g_1, \dots$ be Gutkovskiy's sequence,
+Let $g_0, g_1, \dots$ be Gutkovskiy's sequence,
 let $g'_n = g_n \bmod 2$ and let $h_n = \sum_{0 \le i < n} g'_i$. Then $g_n = 2h_n + g'_n$ for
 every $n \ge 0$.
 

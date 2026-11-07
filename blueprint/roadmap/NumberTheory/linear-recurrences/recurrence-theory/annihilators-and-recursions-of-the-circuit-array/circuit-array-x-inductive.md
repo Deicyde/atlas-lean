@@ -1,6 +1,6 @@
 # Column recursion for the one-variable circuit array
 
-**Column recursion for the one-variable circuit array.** Extend the one-variable circuit array
+Extend the one-variable circuit array
 $C^X$, with entries in the field $\mathbb{Q}(X)$ of rational functions over $\mathbb{Q}$, to integer
 row indices by $C_{i,j} = C^X_{i,j}$ for $i \ge 0$ and $C_{i,j} = 1$ for $i < 0$. For an integer
 $i$ and a natural number $j$, let $\tau_{i,j}$ be the triangle with left edge $C_{i,j}$ and right

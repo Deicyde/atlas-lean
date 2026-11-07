@@ -1,6 +1,6 @@
 # Power-weighted sums of Fibonacci numbers
 
-**Power-weighted sums of Fibonacci numbers.** Let $F_k$ denote the Fibonacci numbers and let
+Let $F_k$ denote the Fibonacci numbers and let
 $p_{\ell,m}(x, y) = \sum_{i=0}^{m} (-1)^i \binom{m}{i} (ix + y)^\ell$ be the alternating binomial
 power sum. Then for all natural numbers $\ell$ and $n$, with the convention $0^0 = 1$,
 

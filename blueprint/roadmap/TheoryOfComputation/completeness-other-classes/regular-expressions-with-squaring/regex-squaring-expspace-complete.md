@@ -1,6 +1,6 @@
 # Regular expressions with squaring: universality is EXPSPACE-complete
 
-**Regular expressions with squaring: universality is EXPSPACE-complete.** The universality
+The universality
 problem for postfix regular expressions with squaring belongs to $\mathsf{EXPSPACE}$, and every
 decision problem in $\mathsf{EXPSPACE}$ reduces to it by a polynomial-time many-one reduction.
 Here the universality problem accepts a bitstring exactly when it decodes to a list of

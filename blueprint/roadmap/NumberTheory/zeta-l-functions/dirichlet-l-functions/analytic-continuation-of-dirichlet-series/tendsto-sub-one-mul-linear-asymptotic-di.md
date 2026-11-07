@@ -1,6 +1,6 @@
 # Limit of the linear asymptotic continuation times $s - 1$ at $1$
 
-**Limit of the linear asymptotic continuation times $s - 1$ at $1$.** Let
+Let
 $a : \mathbb{N} \to \mathbb{C}$, $\rho \in \mathbb{C}$ and $\sigma \in \mathbb{R}$ with
 $\sigma < 1$, and suppose that the one-based partial sums $A(n) = \sum_{k=1}^{n} a(k)$ satisfy
 $A(n) - n\rho = O(n^{\sigma})$ as $n \to \infty$. Let $L_{a,\rho}$ be the linear asymptotic

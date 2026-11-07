@@ -1,6 +1,6 @@
 # Criterion for an equivalent congruence subgroup at a divisor of the modulus
 
-**Criterion for an equivalent congruence subgroup at a divisor of the modulus.** Let
+Let
 $\mathfrak m_1$ and $\mathfrak m_2$ be moduli of a number field $K$ with
 $\mathfrak m_2 \mid \mathfrak m_1$, and let $C_1$ be a congruence subgroup for $\mathfrak m_1$.
 Write $I^{\mathfrak m_1}$ for the group of nonzero fractional ideals of $K$ coprime to the finite

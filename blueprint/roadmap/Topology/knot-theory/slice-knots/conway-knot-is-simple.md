@@ -1,6 +1,6 @@
 # The Conway knot polyline is a simple closed curve
 
-**The Conway knot polyline is a simple closed curve.** Let $K$ be the Conway knot $11n34$,
+Let $K$ be the Conway knot $11n34$,
 realized as a closed polyline in $\mathbb{R}^3$ (the braid closure of a 4-strand braid word for
 it), and let $N$ be its number of vertices. The periodic piecewise-linear parametrization of $K$,
 which traverses each edge in unit time, is injective on the interval $[0, N)$.

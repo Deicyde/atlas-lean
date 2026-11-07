@@ -1,6 +1,6 @@
 # Nim-sum Grundy numbers of chocolate bars with four functions
 
-**Nim-sum Grundy numbers of chocolate bars with four functions.** Let
+Let
 $f_1, f_2, f_3, f_4 : \mathbb{N} \to \mathbb{N}$ be monotone. Then all four have the NS property if
 and only if, for all natural numbers $x_1, x_2, x_3, x_4, z$ with $x_t \le f_t(z)$ for every $t$,
 the Grundy number of the chocolate bar $\mathrm{CB}(f_1, f_2, f_3, f_4, x_1, x_2, x_3, x_4, z)$

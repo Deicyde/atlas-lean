@@ -1,6 +1,6 @@
 # Rademacher type
 
-**Rademacher type.** Let $X$ be a real Banach space, $C \in [0, \infty]$ and $p$ a real
+Let $X$ be a real Banach space, $C \in [0, \infty]$ and $p$ a real
 number. We say that $X$ has Rademacher type $p$ with constant $C$ if for every $n \ge 1$ and all
 $x_1, \dots, x_n \in X$,
 

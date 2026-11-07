@@ -1,6 +1,6 @@
 # Fixed points of the Josephus function $J_3$
 
-**Fixed points of the Josephus function $J_3$.** A natural number $n$ is a fixed point of the
+A natural number $n$ is a fixed point of the
 Josephus function $J_3$ (elimination step $3$) when $n \ge 1$ and $J_3(n) = n$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # CIRCUIT SAT is NP-complete
 
-**CIRCUIT SAT is NP-complete.** The CIRCUIT SAT decision problem on bitstrings belongs to the
+The CIRCUIT SAT decision problem on bitstrings belongs to the
 class NP, and every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

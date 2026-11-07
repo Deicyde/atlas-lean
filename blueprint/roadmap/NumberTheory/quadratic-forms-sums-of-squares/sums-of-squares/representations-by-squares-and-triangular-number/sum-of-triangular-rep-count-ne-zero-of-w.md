@@ -1,6 +1,6 @@
 # Window criterion for representability by triangular numbers
 
-**Window criterion for representability by triangular numbers.** For an integer $k$, let
+For an integer $k$, let
 $t_k(n)$ be the coefficient of $q^n$ in $\psi(q)^k$, where $\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$.
 Let $n \ge 1$ and let $p$ be an odd prime with $p - 1 \ge n + 1$. For every integer $s$, if $p$ does
 not divide $\sum_{i=1}^{p-1} t_{s-i}(n)$, then $t_s(n) \ne 0$.

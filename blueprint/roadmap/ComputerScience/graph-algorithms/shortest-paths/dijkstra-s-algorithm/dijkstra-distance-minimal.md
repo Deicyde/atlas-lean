@@ -1,6 +1,6 @@
 # Dijkstra's finite distances are lower bounds on walk weights
 
-**Dijkstra's finite distances are lower bounds on walk weights.** Let $G$ be a directed graph
+Let $G$ be a directed graph
 on the vertices $0, \dots, n-1$, let $w(u, v)$ be a natural-number weight for every ordered pair
 of vertices, and let $s$ and $t$ be vertices. If Dijkstra's algorithm on $G$ with weights $w$
 from source $s$ outputs a finite distance $d$ for $t$, then $d \le d'$ for every walk

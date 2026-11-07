@@ -1,6 +1,6 @@
 # Metallic identities for the bronze numbers
 
-**Metallic identities for the bronze numbers.** Let $\alpha = (3 + \sqrt{13})/2$,
+Let $\alpha = (3 + \sqrt{13})/2$,
 $\beta = (5 + \sqrt{13})/6$ and $\gamma = (\sqrt{13} - 3)/2$, let $B_n$ be the bronze numbers,
 and let $C_n$ and $D_n$ be the companion bronze numbers of the first and second type. For every
 natural number $k$, the following hold in $\mathbb{R}$:

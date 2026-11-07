@@ -1,6 +1,6 @@
 # The coefficient polynomials $C_k^{(p)}$ for $k$-Fibonacci Brousseau sums
 
-**The coefficient polynomials $C_k^{(p)}$ for $k$-Fibonacci Brousseau sums.** For a rational
+For a rational
 number $k$, let $A_k^{(r)}$ be the numbers for $k$-Fibonacci Brousseau sums. For a natural number
 $p$ and a rational number $n$,
 

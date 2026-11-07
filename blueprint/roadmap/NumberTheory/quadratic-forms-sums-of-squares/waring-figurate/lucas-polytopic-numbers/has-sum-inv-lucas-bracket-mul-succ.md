@@ -1,6 +1,6 @@
 # Sum of reciprocals of products of consecutive Lucas brackets
 
-**Sum of reciprocals of products of consecutive Lucas brackets.** Let $(s, t)$ be
+Let $(s, t)$ be
 nondegenerate Lucas parameters with $s > 0$, $s^2 + 4t > 0$ and $|t| > 1$, write $\{n\}_{s,t}$
 for the Lucas brackets and let $\varphi = (s + \sqrt{s^2 + 4t})/2$. Then the series
 $\sum_{n \ge 1} 1/(\{n\}_{s,t}\{n+1\}_{s,t})$ converges absolutely, and its sum is

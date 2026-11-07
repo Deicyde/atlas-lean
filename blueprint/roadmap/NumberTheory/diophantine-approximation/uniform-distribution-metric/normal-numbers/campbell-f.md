@@ -1,6 +1,6 @@
 # Campbell's interpolation
 
-**Campbell's interpolation.** Let $h_2$ be Campbell's sequence and $h_3^{(m)}$ the auxiliary
+Let $h_2$ be Campbell's sequence and $h_3^{(m)}$ the auxiliary
 piecewise-linear functions of the construction, and for $n \ge 1$ put $y_1(n) = h_2(10^{n-1})$ and
 $y_2(n) = h_2(10^n - 1)$. Campbell's interpolation is the function $f : \mathbb{R} \to \mathbb{R}$
 with $f(x) = \frac{89}{110} e^{(100/89)(11x - 100)} + \frac{1}{10}$ for $x \le 100/11$ and

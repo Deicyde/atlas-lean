@@ -1,6 +1,6 @@
 # The capacity-3 closed form is an integer close to the lower bound
 
-**The capacity-3 closed form is an integer close to the lower bound.** For every integer
+For every integer
 $n \ge 7$, let $U(n) = n^2/6 + 2n - 181/36 + (-1)^n/4 - (2/9)\cos(2n\pi/3)$ and
 $V(n) = n^2/6 + 2n - 11/2$. Then $U(n)$ is an integer and $0 \le U(n) - V(n) < 1$.
 

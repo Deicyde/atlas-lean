@@ -1,6 +1,6 @@
 # Integral representation of even- and odd-indexed k-Jacobsthal numbers
 
-**Integral representation of even- and odd-indexed k-Jacobsthal numbers.** Let $k$ and $n$
+Let $k$ and $n$
 be natural numbers, let $J_{k,n} = U_n(k, -2)$ be the $k$-Jacobsthal numbers and let
 $\Delta_k = \sqrt{k^2 + 8}$. Then
 

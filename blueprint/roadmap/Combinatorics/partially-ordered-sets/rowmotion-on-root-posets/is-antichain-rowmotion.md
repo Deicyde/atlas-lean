@@ -1,6 +1,6 @@
 # Rowmotion on antichains
 
-**Rowmotion on antichains.** For a partially ordered set $P$, a map $\rho$ from the finite
+For a partially ordered set $P$, a map $\rho$ from the finite
 antichains of $P$ to themselves is antichain rowmotion when $\rho$ is bijective and, for every
 finite antichain $A$, $\rho(A)$ is the set of minimal elements of the complement of the down-set
 of $A$: an element $x \in P$ lies in $\rho(A)$ exactly when $x \not\le a$ for all $a \in A$ and

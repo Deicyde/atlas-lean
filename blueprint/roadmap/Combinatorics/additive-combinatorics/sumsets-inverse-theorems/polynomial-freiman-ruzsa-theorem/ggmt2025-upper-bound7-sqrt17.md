@@ -1,6 +1,6 @@
 # Statement of the Gowers–Green–Manners–Tao exponent $7 + \sqrt{17}$
 
-**Statement of the Gowers–Green–Manners–Tao exponent $7 + \sqrt{17}$.** The proposition that
+The proposition that
 $7 + \sqrt{17}$ is an admissible asymptotic coset-cover exponent.
 
 ## Sources

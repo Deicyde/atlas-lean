@@ -1,6 +1,6 @@
 # Evaluation of a first-order formula in a graph
 
-**Evaluation of a first-order formula in a graph.** Let $G$ be a graph, let $\rho$ assign a
+Let $G$ be a graph, let $\rho$ assign a
 vertex $\rho(j)$ of $G$ to each variable $x_j$ ($j \in \mathbb{N}$), and let $S$ assign to each
 relation symbol $i \in \mathbb{N}$ a predicate $S_i$ on finite lists of vertices of $G$. Truth of a
 formula is defined by recursion: $x_a = x_b$ holds when $\rho(a) = \rho(b)$; relation symbol $i$

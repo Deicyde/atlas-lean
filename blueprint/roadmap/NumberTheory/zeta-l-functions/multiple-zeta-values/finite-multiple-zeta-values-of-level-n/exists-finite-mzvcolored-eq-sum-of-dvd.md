@@ -1,6 +1,6 @@
 # Raising the level of finite multiple zeta values
 
-**Raising the level of finite multiple zeta values.** Let $N$ and $M$ be positive integers
+Let $N$ and $M$ be positive integers
 with $N \mid M$, let $k = (k_1, \dots, k_r)$ be an index of positive integers of weight
 $w = k_1 + \dots + k_r$, and let $c$ be a color map from $\mathbb{Z}/N\mathbb{Z}$ to
 $(\mathbb{Z}/N\mathbb{Z})^r \cup \{\varnothing\}$. Write $\zeta^{c}_{p,N}(k)$ for the

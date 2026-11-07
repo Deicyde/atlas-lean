@@ -1,6 +1,6 @@
 # Areas of universal covers
 
-**Areas of universal covers.** The set of values $\lambda(\Omega) \in [0, \infty]$, where
+The set of values $\lambda(\Omega) \in [0, \infty]$, where
 $\Omega \subseteq \mathbb{C}$ ranges over the universal covers and $\lambda$ is Lebesgue measure on
 $\mathbb{C} \cong \mathbb{R}^2$, applied as an outer measure since $\Omega$ need not be
 measurable.

@@ -1,6 +1,6 @@
 # Compressed priority
 
-**Compressed priority.** Let $G$ be an encoded parity game on the positions
+Let $G$ be an encoded parity game on the positions
 $\{0, \dots, n-1\}$. The compressed priority of a natural number $p$ is $2r + (p \bmod 2)$, where
 $r$ is the rank of $p$ in $G$: the number of distinct priorities $q < p$ that occur in $G$.
 

@@ -1,6 +1,6 @@
 # BPP is contained in PSPACE
 
-**BPP is contained in PSPACE.** Every decision problem in BPP lies in PSPACE.
+Every decision problem in BPP lies in PSPACE.
 
 ## Sources
 

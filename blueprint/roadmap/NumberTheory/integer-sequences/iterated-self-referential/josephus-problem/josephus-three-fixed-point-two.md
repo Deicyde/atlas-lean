@@ -1,6 +1,6 @@
 # The third positive fixed point of $J_3$ is $13$
 
-**The third positive fixed point of $J_3$ is $13$.** Let $J_3$ be the Josephus function with
+Let $J_3$ be the Josephus function with
 step $3$ and let $n_\ell$ be the $\ell$-th natural number $n \ge 1$ with $J_3(n) = n$, in
 increasing order and counting from $\ell = 0$. Then $n_2 = 13$; this is the paper's $n_p^{(3)}$.
 

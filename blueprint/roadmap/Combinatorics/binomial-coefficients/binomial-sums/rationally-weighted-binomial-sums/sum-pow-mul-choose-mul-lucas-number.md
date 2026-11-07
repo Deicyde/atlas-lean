@@ -1,6 +1,6 @@
 # Power-weighted binomial sums of Lucas numbers
 
-**Power-weighted binomial sums of Lucas numbers.** Let $L_n$ denote the Lucas numbers
+Let $L_n$ denote the Lucas numbers
 ($L_0 = 2$, $L_1 = 1$, $L_{n+2} = L_{n+1} + L_n$), $S(r, i)$ the Stirling numbers of the second
 kind and $(N)_i = N(N-1) \cdots (N-i+1)$ the falling factorial, with $(N)_0 = 1$. For all natural
 numbers $N$ and $r$, with the convention $0^0 = 1$,

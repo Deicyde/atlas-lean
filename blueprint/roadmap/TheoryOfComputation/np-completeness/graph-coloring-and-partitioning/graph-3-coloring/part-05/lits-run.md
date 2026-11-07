@@ -1,6 +1,6 @@
 # The emitter processes the remaining literals of a clause
 
-**The emitter processes the remaining literals of a clause.** Let $L_b \in \mathbb{N}$, let
+Let $L_b \in \mathbb{N}$, let
 $R$ be a list of token symbols that is empty or starts with the clause token $\mathtt{cl}$, and
 let $o_0$ be a list of bits. Let $ls$ be a list of literals, $o, \tau \in \mathbb{N}$, $s$ a
 construction state and $v$ a bit, and write $T$ for the concatenation of the token-stack tokens

@@ -1,6 +1,6 @@
 # Fixed hooks in column $m$ arising from parts of size $m$
 
-**Fixed hooks in column $m$ arising from parts of size $m$.** Let $n$ and $m \ge 1$ be
+Let $n$ and $m \ge 1$ be
 natural numbers and let $h$ be an integer.
 For a partition $\lambda$, write $\lambda_r$ for its $r$-th largest part ($0$ if it has fewer
 than $r$ parts), $\lambda'_m$ for the number of its parts that are at least $m$, and

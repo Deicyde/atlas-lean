@@ -1,6 +1,6 @@
 # Cui–Gu $p$-dissection of $\psi(q)$
 
-**Cui–Gu $p$-dissection of $\psi(q)$.** Let $p$ be an odd prime and $q$ a complex number with
+Let $p$ be an odd prime and $q$ a complex number with
 $|q| < 1$, let $f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta
 function, and let $\psi(q) = f(q, q^3)$. Then
 

@@ -1,6 +1,6 @@
 # Number of $\ell$-regular partitions
 
-**Number of $\ell$-regular partitions.** For natural numbers $\ell$ and $n$, the number of
+For natural numbers $\ell$ and $n$, the number of
 $\ell$-regular partitions of $n$ is the number of partitions of $n$ none of whose parts is
 divisible by $\ell$.
 

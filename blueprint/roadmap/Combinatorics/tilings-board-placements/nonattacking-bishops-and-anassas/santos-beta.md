@@ -1,6 +1,6 @@
 # Santos's coefficients
 
-**Santos's coefficients.** For natural numbers $i$, $p$, $q$ and a complex number $z$,
+For natural numbers $i$, $p$, $q$ and a complex number $z$,
 Santos's coefficient $\beta_i(p, q, z)$ is the complex number
 
 $$

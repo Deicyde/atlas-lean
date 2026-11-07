@@ -1,6 +1,6 @@
 # Running the head-or-edge check
 
-**Running the head-or-edge check.** Let $es$ be an edge list, $s, t, n, c, b, a$ numbers and
+Let $es$ be an edge list, $s, t, n, c, b, a$ numbers and
 $q$ a list of vertices, and say the check passes when $a = s$ in case $c = 0$, and
 $(b, a) \in es$ in case $c \neq 0$. Started at the head-or-edge dispatch, in any internal state,
 on the stack layout during the step on vertex $a$ for $es, s, t, n, c, b, a, q$, the verifier

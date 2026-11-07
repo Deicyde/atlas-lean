@@ -1,6 +1,6 @@
 # Closure of the mod-$3$ pattern classes under moves on $C_4$
 
-**Closure of the mod-$3$ pattern classes under moves on $C_4$.** Let $a$ and $b$ be
+Let $a$ and $b$ be
 distributions of pebbles on the vertices of the $4$-cycle $C_4$ such that $b$ is obtained from $a$
 by one $(2:1)$-pebbling move, that is, by removing two pebbles from a vertex holding at least two
 pebbles and adding one pebble to an adjacent vertex. If $a \in \hat X_{aabb} \cup X_{abac}$, then

@@ -1,6 +1,6 @@
 # Doubling recurrence for the divide-and-conquer D-node count
 
-**Doubling recurrence for the divide-and-conquer D-node count.** For every integer $m > 0$,
+For every integer $m > 0$,
 the divide-and-conquer D-node count $\delta$ satisfies $\delta(2m) = 2\delta(m)$.
 
 ## Sources

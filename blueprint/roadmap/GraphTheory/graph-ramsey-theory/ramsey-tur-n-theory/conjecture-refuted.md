@@ -1,6 +1,6 @@
 # EP-533 is false: dense $K_5$-free graphs without linear triangle-free sets
 
-**EP-533 is false: dense $K_5$-free graphs without linear triangle-free sets.** There is a real
+There is a real
 $\delta > 0$ such that for every real $c > 0$ there are infinitely many $n$ for which some
 $K_5$-free simple graph on $n$ vertices has at least $\delta n^2$ edges and yet has no
 triangle-free set of at least $c n$ vertices (a set of vertices no three of which are pairwise

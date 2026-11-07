@@ -1,6 +1,6 @@
 # P-positions of the reduced game of Slow $\{n-1\}$-Nim
 
-**P-positions of the reduced game of Slow $\{n-1\}$-Nim.** Let $n \ge 2$ and $A = \{n - 1\}$,
+Let $n \ge 2$ and $A = \{n - 1\}$,
 and let $\tilde P$ be a set of P-positions of the playable game graph of Slow $A$-Nim on $n$
 stacks: no move of that graph joins two elements of $\tilde P$, and every reduced position
 outside $\tilde P$ has a move into $\tilde P$. For a reduced position $q$, let $s$ be the

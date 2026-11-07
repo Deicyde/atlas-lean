@@ -1,6 +1,6 @@
 # The mediant of $0/1$ and $1/1$
 
-**The mediant of $0/1$ and $1/1$.** With fractions encoded as pairs (numerator, denominator)
+With fractions encoded as pairs (numerator, denominator)
 of natural numbers, the mediant of the gap bounded by $0/1$ and $1/1$ is $1/2$, that is, the
 pair $(1, 2)$.
 

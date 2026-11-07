@@ -1,6 +1,6 @@
 # Generalized Motzkin numbers modulo $p$ with last digit $p - 1$
 
-**Generalized Motzkin numbers modulo $p$ with last digit $p - 1$.** For integers $a$, $b$ let
+For integers $a$, $b$ let
 $T_r$ and $M_r$ be the constant terms of $(a x^{-1} + b + a x)^r$ and of
 $(a x^{-1} + b + a x)^r (1 - x^2)$, the generalized central trinomial coefficients and generalized
 Motzkin numbers. Let $p > 2$ be a prime with $D = b^2 - 4a^2 \not\equiv 0 \pmod p$, let

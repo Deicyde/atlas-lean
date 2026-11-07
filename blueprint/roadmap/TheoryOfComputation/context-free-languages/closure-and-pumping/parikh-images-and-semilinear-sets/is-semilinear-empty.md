@@ -1,6 +1,6 @@
 # The empty set is semilinear
 
-**The empty set is semilinear.** The empty set of vectors is semilinear.
+The empty set of vectors is semilinear.
 
 ## Sources
 

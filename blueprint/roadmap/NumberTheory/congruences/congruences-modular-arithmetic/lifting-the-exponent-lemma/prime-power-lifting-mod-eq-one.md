@@ -1,6 +1,6 @@
 # Prime-power lifting of a congruence to one
 
-**Prime-power lifting of a congruence to one.** Let $p$ be a prime and let $n$ and $a$ be
+Let $p$ be a prime and let $n$ and $a$ be
 positive integers. If $a \equiv 1 \pmod p$, then $a^{p^n} \equiv 1 \pmod{p^{n+1}}$.
 
 ## Sources

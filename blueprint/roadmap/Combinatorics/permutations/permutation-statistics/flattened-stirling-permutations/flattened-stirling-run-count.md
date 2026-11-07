@@ -1,6 +1,6 @@
 # Counting flattened Stirling permutations by runs
 
-**Counting flattened Stirling permutations by runs.** For natural numbers $n$ and $k$,
+For natural numbers $n$ and $k$,
 $|\mathrm{flat}_k(Q_n)|$ is the number of flattened Stirling permutations of order $n$ with
 exactly $k$ runs, where a run is a maximal contiguous weakly increasing subword.
 

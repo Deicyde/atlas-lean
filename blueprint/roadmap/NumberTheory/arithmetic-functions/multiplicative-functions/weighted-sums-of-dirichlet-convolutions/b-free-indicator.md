@@ -1,6 +1,6 @@
 # Indicator of $B_\kappa$-free integers
 
-**Indicator of $B_\kappa$-free integers.** Let $\kappa$ be a function from the natural numbers
+Let $\kappa$ be a function from the natural numbers
 to the natural numbers (only its values $\kappa(p)$ at primes $p$ matter) and let $B_\kappa$ be
 the set of prime powers $p^{\kappa(p)}$. A natural number $n$ is $B_\kappa$-free if $n \ge 1$ and
 no $p^{\kappa(p)}$ with $p$ prime divides $n$. The indicator $q_{B_\kappa}$ is the integer-valued

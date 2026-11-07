@@ -1,6 +1,6 @@
 # A 1-metered example in which every car parks
 
-**A 1-metered example in which every car parks.** In the $1$-metered parking scheme on two
+In the $1$-metered parking scheme on two
 spots $\{0, 1\}$, if three cars arrive all preferring spot $0$, then they park in spots $0$, $1$
 and $0$, in that order.
 

@@ -1,6 +1,6 @@
 # Euler–Lucas expansion of $(x + 1/2)^m$
 
-**Euler–Lucas expansion of $(x + 1/2)^m$.** Let $E_k$ be the Euler (secant) numbers, which
+Let $E_k$ be the Euler (secant) numbers, which
 vanish at odd $k$ and begin $E_0 = 1$, $E_2 = -1$, $E_4 = 5$, and let $L_k$ be the Lucas numbers.
 Then for every natural number $m$ and every real number $x$,
 

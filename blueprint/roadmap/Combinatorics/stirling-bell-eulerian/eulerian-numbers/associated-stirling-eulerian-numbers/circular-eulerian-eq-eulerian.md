@@ -1,6 +1,6 @@
 # Circular Eulerian numbers are shifted Eulerian numbers
 
-**Circular Eulerian numbers are shifted Eulerian numbers.** An excedance of a permutation
+An excedance of a permutation
 $\sigma$ of $n$ objects $1, \dots, n$ is an index $i$ with $\sigma(i) > i$. Let $C_{n,m}$ be the
 number of circular permutations of $n$ objects (permutations with a single cycle through all
 $n \ge 1$ points) with exactly $m$ excedances, and let $A_{n,m}$ be the number of permutations of

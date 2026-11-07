@@ -1,6 +1,6 @@
 # Anti-palindromic compositions
 
-**Anti-palindromic compositions.** For natural numbers $n$ and $m$, the number of
+For natural numbers $n$ and $m$, the number of
 anti-palindromic compositions of $n$ with $m$ parts: sequences $(c_1, \dots, c_m)$ of positive
 integers with $c_1 + \dots + c_m = n$ and $c_i \ne c_{m+1-i}$ for every $i$ with
 $2i \ne m + 1$. That is, each part differs from the part in the mirror position, except the

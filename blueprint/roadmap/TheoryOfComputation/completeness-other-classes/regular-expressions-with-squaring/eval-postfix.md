@@ -1,6 +1,6 @@
 # Evaluation of postfix regular expressions with squaring
 
-**Evaluation of postfix regular expressions with squaring.** A list of natural-number tokens
+A list of natural-number tokens
 is evaluated from left to right on a given stack of languages of bitstrings. Token $0$ pushes the
 empty language, token $1$ pushes the language containing only the empty bitstring, and tokens $2$
 and $3$ push the languages containing only the one-letter bitstring false, respectively true.

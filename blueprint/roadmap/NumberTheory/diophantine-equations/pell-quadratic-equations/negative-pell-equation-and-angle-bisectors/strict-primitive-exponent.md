@@ -1,6 +1,6 @@
 # Strictly primitive exponent
 
-**Strictly primitive exponent.** Let $d$ be an integer and $p$ a natural number, and let
+Let $d$ be an integer and $p$ a natural number, and let
 $S(d)$ be the set of primes $q$ for which $|x^2 - d y^2| = q^l$ has a strictly primitive integral
 solution (integers $x, y$ with $x$ and $d y$ coprime) for some integer $l > 0$. If $p \in S(d)$,
 then $l_p$ is the least integer $l > 0$ such that $|x^2 - d y^2| = p^l$ has a strictly primitive

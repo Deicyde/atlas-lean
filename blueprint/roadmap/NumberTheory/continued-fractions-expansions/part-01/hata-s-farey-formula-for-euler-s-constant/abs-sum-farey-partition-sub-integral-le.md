@@ -1,6 +1,6 @@
 # Riemann-sum bound for Farey partitions
 
-**Riemann-sum bound for Farey partitions.** Let $a, b, c, d, m$ be natural numbers with
+Let $a, b, c, d, m$ be natural numbers with
 $a > 0$, $bc = ad + 1$, $c \le d$ and $m \ge 2$. Let $A, B : \mathbb{N} \to \mathbb{N}$ satisfy
 $A(1) = a$, $B(1) = b$, $A(m) = c$, $B(m) = d$ and $B(k) A(k+1) = A(k) B(k+1) + 1$ for
 $1 \le k \le m - 1$, and let $\delta$ be a real number with $1/(B(k) B(k+1)) \le \delta$ for

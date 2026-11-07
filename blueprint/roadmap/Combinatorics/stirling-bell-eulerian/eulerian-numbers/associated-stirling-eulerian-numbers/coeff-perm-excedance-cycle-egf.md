@@ -1,6 +1,6 @@
 # Coefficients of the excedance and cycle generating function
 
-**Coefficients of the excedance and cycle generating function.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra, let $x, q \in R$, and for each $n$ let $P_n$ be a set of permutations of
 $\{0, 1, \dots, n-1\}$. For every $n \ge 0$, the coefficient of $u^n$ in the excedance and cycle
 exponential generating function of the family $(P_n)$ is

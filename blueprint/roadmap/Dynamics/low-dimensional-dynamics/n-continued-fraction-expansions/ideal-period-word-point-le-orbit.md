@@ -1,6 +1,6 @@
 # The ideal periodic point is the least point of its orbit
 
-**The ideal periodic point is the least point of its orbit.** Let $N$ be a natural number,
+Let $N$ be a natural number,
 let $\alpha$ be a real number with $0 < \alpha \le \sqrt N - 1$, and let $T_\alpha$ be the
 $N$-expansion map on $I_\alpha = [\alpha, \alpha + 1]$. Let $n \ge 1$, write $|d_n|$ for the
 length of the digit string of the ideal period word $d_n$, and let $x \in I_\alpha$ be such that

@@ -1,6 +1,6 @@
 # Probability that a random pebbling configuration is solvable
 
-**Probability that a random pebbling configuration is solvable.** Let $G$ be a simple graph on
+Let $G$ be a simple graph on
 a finite vertex set $V$ with $n$ vertices, let $w$ assign a natural-number cost to each unordered
 pair of vertices, and let $t \ge 0$ be an integer. A configuration of $t$ pebbles is a function
 $C : V \to \mathbb{N}$ with $\sum_{v \in V} C(v) = t$. The value is the number of configurations

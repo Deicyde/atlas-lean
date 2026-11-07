@@ -1,6 +1,6 @@
 # Big-step semantics of the closure-conversion target
 
-**Big-step semantics of the closure-conversion target.** Evaluation $\rho \vdash e \Downarrow v$
+Evaluation $\rho \vdash e \Downarrow v$
 of a target term $e$ to a target value $v$ in an environment $\rho$ (a list of values, where
 variable $n$ refers to the entry of $\rho$ at index $n$, counting from $0$) is the least relation
 closed under the following rules. A variable $n$ evaluates to the entry of $\rho$ at index $n$,

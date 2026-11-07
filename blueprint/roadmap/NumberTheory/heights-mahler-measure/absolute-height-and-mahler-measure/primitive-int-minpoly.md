@@ -1,6 +1,6 @@
 # Primitive integral minimal polynomial
 
-**Primitive integral minimal polynomial.** Let $K$ be a field that is an algebra over
+Let $K$ be a field that is an algebra over
 $\mathbb{Q}$, let $x \in K$, and let $m_x \in \mathbb{Q}[X]$ be the minimal polynomial of $x$
 over $\mathbb{Q}$, with $m_x = 0$ when $x$ is not algebraic over $\mathbb{Q}$. Choose a nonzero
 integer $b$ such that $b\,m_x$ has integer coefficients. The primitive integral minimal polynomial

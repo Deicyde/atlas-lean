@@ -1,6 +1,6 @@
 # Type-A minuscule polynomial
 
-**Type-A minuscule polynomial.** For a natural number $n$, the type-A minuscule polynomial
+For a natural number $n$, the type-A minuscule polynomial
 $N_n(x)$ is the polynomial with rational coefficients
 
 $$N_n(x) = \frac{1}{4n + 2} \sum_{k=1}^{n-1} k (n - k) \binom{2n + 2}{2k + 1} x^k.$$

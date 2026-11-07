@@ -1,6 +1,6 @@
 # Engel's inequality for Bell numbers
 
-**Engel's inequality for Bell numbers.** For every integer $n \ge 1$, the Bell numbers
+For every integer $n \ge 1$, the Bell numbers
 satisfy $B_n^2 \le B_{n-1} B_{n+1}$, where $B_n$ is the number of partitions of an $n$-element
 set.
 

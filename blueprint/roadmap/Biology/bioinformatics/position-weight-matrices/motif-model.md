@@ -1,3 +1,3 @@
 # Motif model as an EM model
 
-**Motif model as an EM model.** The motif model as an EM model on `PosPWM`.
+The motif model as an EM model on `PosPWM`.

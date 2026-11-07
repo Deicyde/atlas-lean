@@ -1,6 +1,6 @@
 # The CPA experiment
 
-**The CPA experiment.** Let $K$, $X$ and $R$ be nonempty finite sets, $Y$ an additive
+Let $K$, $X$ and $R$ be nonempty finite sets, $Y$ an additive
 commutative group, $q$ a natural number, $F \colon K \to X \to Y$ a keyed function and $A$ a CPA
 adversary with coins in $R$. The CPA indistinguishability experiment $\mathrm{PrivK}^{\mathrm{cpa}}$
 for the scheme $\mathrm{Enc}_k(m) = (r, F_k(r) + m)$ draws, uniformly and independently, a key

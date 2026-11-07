@@ -1,6 +1,6 @@
 # Generator run over one time step
 
-**Generator run over one time step.** Let $L$ be a layout with $A$ label/state variables per
+Let $L$ be a layout with $A$ label/state variables per
 row, $K$ stacks and $g$ symbol codes, let $t \le T$ and $H$ be natural numbers, and write
 $W = A + K H g$ for the row width, $V = (T + 1) W$ for the number of variables and $p_i$ for the
 variable with index $i$. Let $F$ assign a value to each counter of the one-hot generator such

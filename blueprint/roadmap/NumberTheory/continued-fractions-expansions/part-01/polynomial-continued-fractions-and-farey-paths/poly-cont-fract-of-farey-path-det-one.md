@@ -1,6 +1,6 @@
 # Farey paths of polynomials with all determinants 1
 
-**Farey paths of polynomials with all determinants 1.** Let $F$ be a field, let
+Let $F$ be a field, let
 $n \in \mathbb{N}$, and let $u_i, v_i \in F[X]$ for $i \ge 0$. Suppose that $v_0 = 1$ and that
 for $1 \le i \le n$ we have $\deg v_{i-1} < \deg v_i$ and $u_i v_{i-1} - u_{i-1} v_i = 1$. Let
 $a_0, a_1, \ldots \in F[X]$ satisfy $a_0 = u_0$, $a_1 = v_1$ and

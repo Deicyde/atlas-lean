@@ -1,6 +1,6 @@
 # First weighted partition coefficient
 
-**First weighted partition coefficient.** For every sequence of real weights $(b_k)$, the
+For every sequence of real weights $(b_k)$, the
 weighted partition coefficient $a_1$ attached to $(b_k)$ equals $b_1$.
 
 ## Sources

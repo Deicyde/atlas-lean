@@ -1,6 +1,6 @@
 # Asymptotic for the B-free divisor function in an arithmetic progression
 
-**Asymptotic for the B-free divisor function in an arithmetic progression.** Let $F$ be a
+Let $F$ be a
 finite field with $q$ elements, write $|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let
 $\kappa$ assign a natural number to each polynomial in $F[T]$, with $\kappa(P) \ge 2$ for every
 monic irreducible $P$; let $\kappa_{\min}$ be the minimum of $\kappa(P)$ over the monic

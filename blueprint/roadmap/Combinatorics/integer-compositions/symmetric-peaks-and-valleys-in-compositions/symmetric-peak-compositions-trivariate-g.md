@@ -1,6 +1,6 @@
 # Trivariate generating function for symmetric peaks in compositions
 
-**Trivariate generating function for symmetric peaks in compositions.** For a composition
+For a composition
 $c$ write $\ell(c)$ for its number of parts, $\mathrm{sp}(c)$ for the number of symmetric peaks
 and $\mathrm{hsp}(c)$ for the symmetric peak height sum of its sequence of parts. In the ring
 $\mathbb{Z}[y, q, h][[x]]$ of formal power series in $x$ whose coefficients are polynomials in

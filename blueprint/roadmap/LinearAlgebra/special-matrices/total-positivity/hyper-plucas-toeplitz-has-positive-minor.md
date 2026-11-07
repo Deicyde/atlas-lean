@@ -1,6 +1,6 @@
 # Total positivity of hyper $p$-Lucas Toeplitz matrices
 
-**Total positivity of hyper $p$-Lucas Toeplitz matrices.** Let $p \ge 1$ be an integer and
+Let $p \ge 1$ be an integer and
 $r \ge 1$ a natural number, and let $L_{p,n}^{(r)}$ be the hyper $p$-Lucas numbers, the
 generalized hyper-Fibonacci numbers $W_{p,n}^{(r)}$ with initial values $a = 2$ and $b = p$.
 Consider real $(r + 2) \times (r + 2)$ matrices with rows and columns indexed by

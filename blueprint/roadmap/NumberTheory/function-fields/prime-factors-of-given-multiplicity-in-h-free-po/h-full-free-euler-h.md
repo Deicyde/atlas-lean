@@ -1,6 +1,6 @@
 # The Euler product $H_{N_h, S_\ell}$ for $h$-full, $\ell$-free polynomials
 
-**The Euler product $H_{N_h, S_\ell}$ for $h$-full, $\ell$-free polynomials.** Let $F$ be a
+Let $F$ be a
 finite field, let $h$ and $\ell$ be natural numbers and let $u$ be a complex number. Then
 $H_{N_h, S_\ell}(u)$ is the complex number
 

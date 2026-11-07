@@ -1,6 +1,6 @@
 # Counting $k$-Arndt compositions for negative $k$
 
-**Counting $k$-Arndt compositions for negative $k$.** Let $k = -k'$ with $k' \ge 1$ an integer,
+Let $k = -k'$ with $k' \ge 1$ an integer,
 and let $a_k(n) = \sum_{m = 0}^{n} a_k(n, m)$ be the number of $k$-Arndt compositions of $n$. Then,
 in $\mathbb{Z}[[x]]$,
 

@@ -1,6 +1,6 @@
 # An ideal is the intersection of its contracted localizations at prime ideals
 
-**An ideal is the intersection of its contracted localizations at prime ideals.** Let $A$
+Let $A$
 be a commutative ring and $I$ an ideal of $A$. For a prime ideal $\mathfrak{p}$ of $A$, let
 $\varphi_{\mathfrak{p}} \colon A \to A_{\mathfrak{p}}$ be the canonical map to the localization
 of $A$ at $\mathfrak{p}$. Then

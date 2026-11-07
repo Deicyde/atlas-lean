@@ -1,6 +1,6 @@
 # Counting large terms of the floor sequence
 
-**Counting large terms of the floor sequence.** For every natural number $n$ and every
+For every natural number $n$ and every
 integer $k \ge 1$, exactly $\lfloor n/k \rfloor$ of the integers $d$ with $1 \le d \le n$
 satisfy $\lfloor n/d \rfloor \ge k$; that is, exactly $\lfloor n/k \rfloor$ terms of the floor
 sequence $\lfloor n/1 \rfloor, \dots, \lfloor n/n \rfloor$ are at least $k$.

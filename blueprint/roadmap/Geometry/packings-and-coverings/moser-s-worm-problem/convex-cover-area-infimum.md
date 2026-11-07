@@ -1,6 +1,6 @@
 # Infimal area of convex universal covers
 
-**Infimal area of convex universal covers.** The convex cover area infimum is the infimum in
+The convex cover area infimum is the infimum in
 $[0, \infty]$ of the set of convex cover areas, that is, the infimum of the Lebesgue areas of all
 convex universal covers $\Omega \subseteq \mathbb{C}$.
 

@@ -1,6 +1,6 @@
 # Satisfy-one for propositions
 
-**Satisfy-one for propositions.** For every proposition $A$ over atoms indexed by natural
+For every proposition $A$ over atoms indexed by natural
 numbers, the satisfying-path search on the ROBDD of $A$ returns a path $p$, and $A$ evaluates to
 true under the assignment read off $p$.
 

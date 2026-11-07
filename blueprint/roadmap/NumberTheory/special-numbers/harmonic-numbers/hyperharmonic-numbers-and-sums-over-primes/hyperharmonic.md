@@ -1,6 +1,6 @@
 # Hyperharmonic numbers
 
-**Hyperharmonic numbers.** The hyperharmonic numbers $h_n^{(r)} \in \mathbb{Q}$ of order $r$
+The hyperharmonic numbers $h_n^{(r)} \in \mathbb{Q}$ of order $r$
 and index $n$, for natural numbers $r$ and $n$, are defined by recursion on $r$:
 $h_n^{(0)} = 1/n$ for $n \ge 1$, $h_0^{(0)} = 0$, and
 

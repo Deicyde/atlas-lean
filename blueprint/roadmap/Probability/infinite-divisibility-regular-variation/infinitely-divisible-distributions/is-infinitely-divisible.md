@@ -1,6 +1,6 @@
 # Infinitely divisible measures
 
-**Infinitely divisible measures.** Let $M$ be an additive commutative monoid with a measurable
+Let $M$ be an additive commutative monoid with a measurable
 structure in which addition is jointly measurable. A measure $\mu$ on $M$ is
 **infinitely divisible** if for every natural number $n \ge 1$ there is a probability measure
 $\nu$ on $M$ whose $n$-fold convolution power $\nu^{*n}$ equals $\mu$.

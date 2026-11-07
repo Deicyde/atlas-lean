@@ -1,6 +1,6 @@
 # The number of POND partitions of zero
 
-**The number of POND partitions of zero.** The number $\mathrm{pond}(0)$ of POND
+The number $\mathrm{pond}(0)$ of POND
 partitions of $0$ equals $1$: the only partition of $0$ is the empty partition, and it is POND.
 
 ## Sources

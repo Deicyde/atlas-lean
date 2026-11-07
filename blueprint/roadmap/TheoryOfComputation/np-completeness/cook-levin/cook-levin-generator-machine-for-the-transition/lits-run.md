@@ -1,6 +1,6 @@
 # Run of the literal routines of a clause (transition-clause generator)
 
-**Run of the literal routines of a clause (transition-clause generator).** Let $t < T$, let
+Let $t < T$, let
 the tables be well formed for situation $i < N$ at height $H$, and let $F$ be a counter assignment
 resting at time $t$: its scratch counters $Q$, $\mathrm{Ka}$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$,
 $c_2$ are $0$, $F(\mathrm{TW}) = tW$, $F(\mathrm{HG}) = Hg$, $F(\mathrm{Wc}) = W$ and

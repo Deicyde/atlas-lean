@@ -1,6 +1,6 @@
 # Twin prime asymptotic over $\mathbb{F}_q(T)$ for large $q$
 
-**Twin prime asymptotic over $\mathbb{F}_q[T]$ for large $q$.** Let $p$ be an odd prime and let
+Let $p$ be an odd prime and let
 $q$ be a power of $p$ with $q > 685090\,p^2$; write $\mathbb{F}_q$ for the finite field with $q$
 elements. Then there is a real number $\varepsilon > 0$ such that for every nonzero
 $h \in \mathbb{F}_q[T]$, as $X \to \infty$ through the powers of $q$,

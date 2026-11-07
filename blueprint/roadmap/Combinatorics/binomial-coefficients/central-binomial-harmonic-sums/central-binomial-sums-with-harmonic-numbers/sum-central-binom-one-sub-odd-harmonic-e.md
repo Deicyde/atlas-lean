@@ -1,6 +1,6 @@
 # Central binomial sums weighted by $1 - O_{k-1}$, in r-Stirling form
 
-**Central binomial sums weighted by $1 - O_{k-1}$, in r-Stirling form.** Let
+Let
 $O_m = \sum_{j=1}^{m} \frac{1}{2j-1}$ be the odd harmonic numbers (so $O_0 = 0$) and let
 ${a \brace b}_c$ denote the r-Stirling numbers of the second kind. For all natural numbers $n$ and
 $r$,

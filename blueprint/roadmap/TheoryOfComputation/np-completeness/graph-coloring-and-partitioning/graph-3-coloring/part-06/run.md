@@ -1,6 +1,6 @@
 # Correctness and step bound of the 3-COLOR emitter
 
-**Correctness and step bound of the 3-COLOR emitter.** Let $\varphi$ be a CNF formula
+Let $\varphi$ be a CNF formula
 with token list $t(\varphi)$, let $o$ be a bit list and $v$ a Boolean. Started at its start
 label with local state $v$, with the token stack holding $t(\varphi)$ reversed, the output
 stack holding $o$ and every other stack empty, the emitter machine reaches the label

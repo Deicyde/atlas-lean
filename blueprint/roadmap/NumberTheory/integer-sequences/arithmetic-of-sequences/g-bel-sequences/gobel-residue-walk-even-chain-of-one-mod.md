@@ -1,6 +1,6 @@
 # Consecutive even residue walks form a zigzag chain when $p \equiv 1 \pmod 4$
 
-**Consecutive even residue walks form a zigzag chain when $p \equiv 1 \pmod 4$.** Let $p$
+Let $p$
 be a prime with $p \equiv 1 \pmod 4$, and for a natural number $l$ write $\tilde g_l$ for the
 residue walk of $p$ starting at $l$. Then for every even natural number $l$ with
 $l + 2 \le p - 1$, the walk $\tilde g_l$ is zigzag-below $\tilde g_{l+2}$ up to $p$: there is

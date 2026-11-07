@@ -1,6 +1,6 @@
 # Binomially weighted sums of generalized harmonic numbers
 
-**Binomially weighted sums of generalized harmonic numbers.** Write $[a, b]$ for the unsigned
+Write $[a, b]$ for the unsigned
 Stirling number of the first kind, the number of permutations of $a$ elements with exactly $b$
 cycles, and, for real $t$ and a natural number $n$, write $H_n^{(t)} = \sum_{k=1}^{n} 1/k^t$ for
 the generalized harmonic number. For all natural numbers $m$ and $n$ and every real $\alpha$,

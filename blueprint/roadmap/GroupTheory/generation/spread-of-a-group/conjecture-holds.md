@@ -1,6 +1,6 @@
 # There is a group of spread exactly one
 
-**There is a group of spread exactly one.** There exists a group $G$ of spread exactly $1$:
+There exists a group $G$ of spread exactly $1$:
 for every nontrivial $x \in G$ there is $y \in G$ with $\langle x, y \rangle = G$, but for every
 natural number $m > 1$ there are nontrivial elements $x_1, \dots, x_m \in G$ such that no single
 $y \in G$ satisfies $\langle x_i, y \rangle = G$ for all $i$. This answers Kourovka Problem 21.38

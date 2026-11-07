@@ -1,6 +1,6 @@
 # $\{0, 1, 2, 4, 6\}$ is not a dilate of $\{0, 1, 2, 3, 4\}$
 
-**$\{0, 1, 2, 4, 6\}$ is not a dilate of $\{0, 1, 2, 3, 4\}$.** For every integer $d$, the
+For every integer $d$, the
 set $\{0, 1, 2, 4, 6\}$ differs from the dilation
 $d \cdot \{0, 1, 2, 3, 4\} = \{0, d, 2d, 3d, 4d\}$.
 

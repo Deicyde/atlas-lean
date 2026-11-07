@@ -1,6 +1,6 @@
 # Essential dimension of the symmetric group
 
-**Essential dimension of the symmetric group.** For a natural number $n$, let
+For a natural number $n$, let
 $\mathbb{C}(x_1, \dots, x_n)$ be the field of rational functions in $n$ indeterminates. The
 essential dimension of $S_n$ over $\mathbb{C}$, in the general-polynomial parameter sense, is
 the least natural number $d$ such that some intermediate field $F_0$ of

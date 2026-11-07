@@ -1,6 +1,6 @@
 # The four-digit Kaprekar state space
 
-**The four-digit Kaprekar state space.** For a base $B$, the state space $X_B$ is the finite
+For a base $B$, the state space $X_B$ is the finite
 set of pairs of natural numbers $(d_1, d_2)$ with $1 \le d_1 < B$ and $0 \le d_2 \le d_1$.
 
 A nonconstant four-digit base-$B$ string with sorted digits $a_1 \ge a_2 \ge a_3 \ge a_4$ has

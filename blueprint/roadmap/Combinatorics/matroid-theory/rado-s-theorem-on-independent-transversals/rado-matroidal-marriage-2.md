@@ -1,6 +1,6 @@
 # Rado's theorem on independent transversals
 
-**Rado's theorem on independent transversals.** Let $I$ and $E$ be finite sets, let $M$ be a
+Let $I$ and $E$ be finite sets, let $M$ be a
 matroid whose ground set is all of $E$, and let $(A_i)_{i \in I}$ be a family of subsets of $E$.
 Then there is an injective map $f : I \to E$ such that $f(i) \in A_i$ for every $i \in I$ and
 the image $f(I)$ is independent in $M$, if and only if

@@ -1,6 +1,6 @@
 # Beardwood–Halton–Hammersley theorem
 
-**Beardwood–Halton–Hammersley theorem.** Let $\beta_2$ be the Beardwood–Halton–Hammersley
+Let $\beta_2$ be the Beardwood–Halton–Hammersley
 constant and, for points $X_0, X_1, \dots$ of the plane, let $L_n$ be the length of the shortest
 closed tour through $X_0, \dots, X_{n-1}$. Then a sequence of independent random points
 $X_0, X_1, \dots$, each uniformly distributed on the closed unit square $[0,1]^2$, exists on some

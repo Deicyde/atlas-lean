@@ -1,6 +1,6 @@
 # Convergent denominators of the two-step pattern
 
-**Convergent denominators of the two-step pattern.** For a natural number $\beta$ and a
+For a natural number $\beta$ and a
 sequence $(\omega_n)_{n \ge 0}$ of natural numbers, define natural numbers $q_n$ by $q_0 = 1$,
 $q_1 = \omega_0$, and for every $n \ge 0$, $q_{2n+2} = q_{2n+1} + q_{2n}$ and
 $q_{2n+3} = \omega_{n+1} q_{2n+1}^\beta q_{2n+2} + q_{2n+1}$.

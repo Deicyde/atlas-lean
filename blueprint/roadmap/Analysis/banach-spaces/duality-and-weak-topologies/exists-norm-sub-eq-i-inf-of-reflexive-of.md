@@ -1,6 +1,6 @@
 # Nearest points in reflexive Banach spaces
 
-**Nearest points in reflexive Banach spaces.** Let $X$ be a reflexive complex Banach space, that
+Let $X$ be a reflexive complex Banach space, that
 is, the canonical embedding of $X$ into its double dual is surjective, and let $C \subseteq X$ be a
 nonempty closed convex set. Then for every $x_0 \in X$ there is $y_0 \in C$ such that
 $\|x_0 - y_0\| = \inf_{y \in C} \|x_0 - y\|$.

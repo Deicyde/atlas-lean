@@ -1,6 +1,6 @@
 # Arithmetic progressions in essential CR-sets of the positive integers
 
-**Arithmetic progressions in essential CR-sets of the positive integers.** Let $\mathbb{N}^+$
+Let $\mathbb{N}^+$
 denote the positive integers under addition. If $A \subseteq \mathbb{N}^+$ is an essential CR-set
 and $l$ is a natural number, then the set of pairs $(a, b) \in \mathbb{N}^+ \times \mathbb{N}^+$
 such that $a + i b \in A$ for all $i = 0, 1, \dots, l$ is an essential CR-set in

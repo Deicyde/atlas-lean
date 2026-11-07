@@ -1,6 +1,6 @@
 # Tilings of the one-cell board with no free bifence
 
-**Tilings of the one-cell board with no free bifence.** For all elements $a$, $b$ of a
+For all elements $a$, $b$ of a
 commutative semiring, the weighted number $R_1$ of tilings of the $1$-board with no free bifence,
 with half-square weights $a$ and $b$, equals $a^2$.
 

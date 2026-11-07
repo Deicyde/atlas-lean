@@ -1,6 +1,6 @@
 # Kripke realization relation for NbE
 
-**Kripke realization relation for NbE.** Fix an interpretation $I$ of the base types. For a
+Fix an interpretation $I$ of the base types. For a
 context $\Gamma$, an environment $\eta$ for $\Gamma$ in $I$, a type $A$, a Kripke semantic value
 $v$ of type $A$ in $\Gamma$ and an element $d$ of the denotation of $A$ under $I$, the relation
 "$v$ realizes $d$ at $\eta$" is defined by recursion on $A$. At a base type, $v$ is a neutral

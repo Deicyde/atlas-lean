@@ -1,6 +1,6 @@
 # Rampersad–Wiebe Theorem 12
 
-**Rampersad–Wiebe Theorem 12.** Let $(p_j)_{j \ge 0}$ be the shifted Padovan sequence,
+Let $(p_j)_{j \ge 0}$ be the shifted Padovan sequence,
 $p_0 = 1$, $p_1 = 0$, $p_2 = 1$ and $p_{j+3} = p_{j+1} + p_j$, and let $T$ be the run length
 transform of $S(i) = p_{i+2}$, i.e. of $1, 1, 1, 2, 2, 3, 4, 5, \dots$ (the Padovan numbers,
 OEIS A000931, from offset $5$). Then for every natural number $n$,

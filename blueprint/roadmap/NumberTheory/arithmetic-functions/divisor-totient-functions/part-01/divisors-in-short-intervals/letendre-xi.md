@@ -1,6 +1,6 @@
 # Letendre's saving exponent
 
-**Letendre's saving exponent.** For real numbers $\theta$ and $\eta$, Letendre's saving
+For real numbers $\theta$ and $\eta$, Letendre's saving
 exponent $\xi(\theta, \eta)$ is defined as follows. If $\eta \le \theta^2$, then
 $\xi(\theta, \eta) = 1$. Otherwise, if $\theta \le 1/2$, then $\xi(\theta, \eta) = \theta^2/\eta$
 when $2\eta \le \theta$ and $\xi(\theta, \eta) = 4(\theta - \eta)$ when $2\eta > \theta$; and if

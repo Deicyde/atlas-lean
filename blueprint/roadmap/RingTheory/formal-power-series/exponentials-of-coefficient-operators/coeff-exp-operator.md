@@ -1,3 +1,3 @@
 # Coefficients of the operator exponential via partial sums
 
-**Coefficients of the operator exponential via partial sums.** For `d.degree < N`, the first `N` operator iterates determine coefficient `d`.
+For `d.degree < N`, the first `N` operator iterates determine coefficient `d`.

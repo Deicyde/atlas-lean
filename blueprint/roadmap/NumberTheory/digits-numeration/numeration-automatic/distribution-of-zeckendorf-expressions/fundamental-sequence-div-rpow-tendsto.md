@@ -1,6 +1,6 @@
 # Growth of fundamental sequences
 
-**Growth of fundamental sequences.** Let $L$ and $\tilde L$ be lists of natural numbers of
+Let $L$ and $\tilde L$ be lists of natural numbers of
 length at least $2$ with nonzero first entries, and let $E$ and $\tilde E$ be the periodic
 Zeckendorf collections they determine, with $E$ a proper subset of $\tilde E$. Let $H$ and
 $\tilde H$ be strictly increasing sequences of positive integers, indexed from $0$, such that

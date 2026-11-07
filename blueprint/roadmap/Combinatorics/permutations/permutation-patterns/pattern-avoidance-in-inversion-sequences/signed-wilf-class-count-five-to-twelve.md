@@ -1,6 +1,6 @@
 # Signed Wilf classes of sets of five to twelve patterns
 
-**Signed Wilf classes of sets of five to twelve patterns.** Let $\mathrm{sw}_k$ be the number
+Let $\mathrm{sw}_k$ be the number
 of Wilf-equivalence classes among the sets of $k$ length-2 signed patterns. Then
 $239 \le \mathrm{sw}_5 \le 240$, $\mathrm{sw}_6 = 190$, $\mathrm{sw}_7 = 107$, $\mathrm{sw}_8 = 49$,
 $\mathrm{sw}_9 = 22$, $\mathrm{sw}_{10} = 8$, $\mathrm{sw}_{11} = 3$ and $\mathrm{sw}_{12} = 1$.

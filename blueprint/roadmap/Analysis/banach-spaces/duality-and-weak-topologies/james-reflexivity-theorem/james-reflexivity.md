@@ -1,6 +1,6 @@
 # James' reflexivity theorem
 
-**James' reflexivity theorem.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $E$ be a
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $E$ be a
 Banach space over $\mathbb{K}$. The canonical embedding of $E$ into its bidual $E^{**}$ is
 surjective if and only if every continuous linear functional $f \colon E \to \mathbb{K}$ attains
 its norm on the closed unit ball, that is, there is $x \in E$ with $\|x\| \le 1$ and

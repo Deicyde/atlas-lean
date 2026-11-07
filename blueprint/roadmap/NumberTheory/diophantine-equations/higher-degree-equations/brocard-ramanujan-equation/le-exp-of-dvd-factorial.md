@@ -1,6 +1,6 @@
 # Divisors of a factorial bounded by their largest prime exponent
 
-**Divisors of a factorial bounded by their largest prime exponent.** Let $n \ge 1$ and let
+Let $n \ge 1$ and let
 $x$ be a positive integer dividing $n!$. Write $K(x)$ for the largest exponent in the prime
 factorization of $x$, with $K(1) = 0$. Then $x \le \exp(3 n K(x) / 2)$.
 

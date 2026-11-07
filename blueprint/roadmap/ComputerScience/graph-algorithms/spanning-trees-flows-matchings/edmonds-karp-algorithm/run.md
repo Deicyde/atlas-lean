@@ -1,6 +1,6 @@
 # Augmenting-path iteration with fuel
 
-**Augmenting-path iteration with fuel.** Let $c$ be a capacity matrix with natural-number
+Let $c$ be a capacity matrix with natural-number
 entries on the vertices $\{0, \dots, n - 1\}$, let $s$ be a source and $t$ a sink, let $k$ be a fuel
 bound and let $f$ be a flow (an integer-valued matrix on pairs of vertices). The iteration returns
 $f$ if $k = 0$ or $s = t$. Otherwise it runs the breadth-first shortest-path search from $s$ to $t$

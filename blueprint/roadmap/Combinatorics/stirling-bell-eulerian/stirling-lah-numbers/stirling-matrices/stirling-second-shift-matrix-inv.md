@@ -1,6 +1,6 @@
 # Inverse of a shifted Stirling matrix
 
-**Inverse of a shifted Stirling matrix.** For natural numbers $m$ and $n$, let $S^{[m]}(n)$ be
+For natural numbers $m$ and $n$, let $S^{[m]}(n)$ be
 the $n \times n$ rational matrix with entries $S(i + m, j)$, where $S(i, j)$ denotes the Stirling
 numbers of the second kind; let $s(n)$ be the matrix with entries the signed Stirling numbers of
 the first kind $s(i, j)$; and let $\tilde V(n)$ be the upper triangular matrix with

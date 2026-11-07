@@ -1,6 +1,6 @@
 # Rational generating function for king permutations avoiding $P_2$
 
-**Rational generating function for king permutations avoiding $P_2$.** Let $P_2$ be the flat
+Let $P_2$ be the flat
 partially ordered pattern of length $4$ whose second element lies below each of the other three,
 and let $A_{P_2}(x; p, q, u, v)$ be the generating function of king permutations avoiding $P_2$,
 in which $x$ marks length and $p$, $q$, $u$, $v$ mark ascents, descents, left-to-right maxima and

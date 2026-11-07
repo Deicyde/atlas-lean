@@ -1,6 +1,6 @@
 # Laplace density
 
-**Laplace density.** For a scale $b \ge 0$, the density of the Laplace distribution with
+For a scale $b \ge 0$, the density of the Laplace distribution with
 location $0$ and scale $b$ is the function on $\mathbb{R}$
 
 $$

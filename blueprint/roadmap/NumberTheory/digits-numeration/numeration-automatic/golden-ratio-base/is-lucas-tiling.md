@@ -1,6 +1,6 @@
 # Lucas tilings
 
-**Lucas tilings.** Write $\Lambda_k = [\ell_k, h_k]$ for the Lucas interval with left end
+Write $\Lambda_k = [\ell_k, h_k]$ for the Lucas interval with left end
 $\ell_k$ and right end $h_k$. For natural numbers $a$, $b$ and a list $P$ of pairs $(k, t)$ of
 natural numbers, $P$ is a Lucas tiling of $[a, b]$ when the translated Lucas intervals
 $\Lambda_k + t$, $(k, t) \in P$, taken in the order of $P$, are adjacent and their union is

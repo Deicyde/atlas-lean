@@ -1,6 +1,6 @@
 # A simple pole of a Dirichlet series from the growth of its partial sums
 
-**A simple pole of a Dirichlet series from the growth of its partial sums.** Let
+Let
 $(\pi_k)_{k \ge 0}$ be nonnegative real numbers and let $C$, $\alpha$, $\eta$ be positive reals.
 Suppose there is a constant $K$ with
 $\bigl|\sum_{k=1}^{\lfloor x \rfloor} \pi_k - (C/\alpha) x^{\alpha}\bigr| \le K x^{\alpha - \eta}$

@@ -1,6 +1,6 @@
 # Small cyclic product numbers
 
-**Small cyclic product numbers.** The cyclic product numbers satisfy $H(3, 1) = 1$,
+The cyclic product numbers satisfy $H(3, 1) = 1$,
 $H(4, 2) = 5$, $H(5, 1) = 8$ and $H(7, 1) = 180$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Canceling partition
 
-**Canceling partition.** Let $a_1, \dots, a_k$ be integers, the coefficients of the
+Let $a_1, \dots, a_k$ be integers, the coefficients of the
 linear equation $a_1x_1 + \cdots + a_kx_k = 0$. The equation has a canceling partition when
 its indices split into pairs of distinct indices $i, j$ with $a_i + a_j = 0$; precisely,
 when there is a permutation $\sigma$ of the indices $1, \dots, k$ such that for every $i$

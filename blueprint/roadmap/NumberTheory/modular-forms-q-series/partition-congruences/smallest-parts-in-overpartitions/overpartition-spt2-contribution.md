@@ -1,6 +1,6 @@
 # Smallest-even-part contribution of an overpartition
 
-**Smallest-even-part contribution of an overpartition.** For an overpartition $O$ of $n$,
+For an overpartition $O$ of $n$,
 let $s$ be the smallest part of $O$. The contribution of $O$ is the number of copies of $s$ in
 $O$ if $s$ is even and not overlined, and $0$ otherwise; the empty overpartition, which has no
 smallest part, contributes $0$.

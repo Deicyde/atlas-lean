@@ -1,6 +1,6 @@
 # Simulation transports runs
 
-**Simulation transports runs.** Let $f : \alpha \to \mathrm{Option}\,\alpha$ and
+Let $f : \alpha \to \mathrm{Option}\,\alpha$ and
 $g : \beta \to \mathrm{Option}\,\beta$ be partial step functions (a value $\mathrm{none}$ means
 halting) and $e : \alpha \to \beta$ a map such that $f(c) = c'$ implies $g(e(c)) = e(c')$ for all
 $c, c'$. Then for every $n$ and all $c, d \in \alpha$, if $n$ steps of $f$ starting from $c$ end

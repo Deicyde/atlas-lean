@@ -1,6 +1,6 @@
 # The complement set $(\hat Y_{abab})^c$ of $C_4$ positions
 
-**The complement set $(\hat Y_{abab})^c$ of $C_4$ positions.** A position
+A position
 $a = (a_0, a_1, a_2, a_3)$ of natural-number pebble counts on the vertices $v_0, v_1, v_2, v_3$
 of $C_4$ lies in $(\hat Y_{abab})^c$ when its total $a_0 + a_1 + a_2 + a_3$ is even and $a$ does
 not lie in $\hat Y_{abab}$.

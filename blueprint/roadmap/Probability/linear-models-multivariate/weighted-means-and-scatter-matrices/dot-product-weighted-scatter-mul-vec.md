@@ -1,6 +1,6 @@
 # Quadratic form of a weighted scatter matrix
 
-**Quadratic form of a weighted scatter matrix.** Let $I$ and $J$ be finite sets, let
+Let $I$ and $J$ be finite sets, let
 $x_i \in \mathbb{R}^J$ ($i \in I$) be points with real weights $w_i$, let $\mu \in \mathbb{R}^J$,
 and let $C$ be the weighted scatter matrix of the $x_i$ about $\mu$. Then for every
 $u \in \mathbb{R}^J$,

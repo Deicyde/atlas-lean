@@ -1,6 +1,6 @@
 # Abel continuation of a Dirichlet series
 
-**Abel continuation of a Dirichlet series.** For $f : \mathbb{N} \to \mathbb{C}$ with partial
+For $f : \mathbb{N} \to \mathbb{C}$ with partial
 sums $A(n) = \sum_{k=1}^{n} f(k)$, the Abel continuation of $f$ is the function
 $F_f : \mathbb{C} \to \mathbb{C}$ given by
 

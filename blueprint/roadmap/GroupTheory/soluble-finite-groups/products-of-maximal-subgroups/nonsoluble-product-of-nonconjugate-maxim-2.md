@@ -1,6 +1,5 @@
 # Finite groups that are the product of every two non-conjugate maximal subgroups are soluble
 
-**Finite groups that are the product of every two non-conjugate maximal subgroups are soluble.**
 There is no finite group $G$ that is not soluble such that $G = MN$ for every two maximal
 subgroups $M$ and $N$ of $G$ that are not conjugate in $G$; here $MN$ is the set of products $mn$
 with $m \in M$ and $n \in N$. This answers Kourovka Problem 10.34 in the negative.

@@ -1,6 +1,6 @@
 # Polynomial formula for the number of nonattacking anassas
 
-**Polynomial formula for the number of nonattacking anassas.** For natural numbers $m$ and
+For natural numbers $m$ and
 $k$, let $A_S(m, k, p)$ be the number of nonattacking placements of $k$ anassas on the square
 board $[1, m]^2$ with exactly $p$ of them strictly below the main diagonal, that is, the number
 of $k$-element sets of squares $(i, j) \in [1, m]^2$ in which no two squares have the same $i$

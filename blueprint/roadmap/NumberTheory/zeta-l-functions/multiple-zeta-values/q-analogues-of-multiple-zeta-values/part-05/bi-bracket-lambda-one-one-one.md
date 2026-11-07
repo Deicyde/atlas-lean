@@ -1,6 +1,6 @@
 # Bachmann's coefficient $\lambda_{1,1}^1$
 
-**Bachmann's coefficient $\lambda_{1,1}^1$.** Bachmann's coefficient $\lambda_{1,1}^1$ equals
+Bachmann's coefficient $\lambda_{1,1}^1$ equals
 $-1/2$, the Bernoulli number $B_1$.
 
 ## Sources

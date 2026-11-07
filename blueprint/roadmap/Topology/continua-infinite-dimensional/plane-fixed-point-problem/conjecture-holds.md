@@ -1,6 +1,6 @@
 # Path-connected nonseparating plane continua have the fixed point property
 
-**Path-connected nonseparating plane continua have the fixed point property.** Let $K$ be a
+Let $K$ be a
 nonempty, compact, path-connected subset of the Euclidean plane $\mathbb{R}^2$ whose complement
 $\mathbb{R}^2 \setminus K$ is connected. Then $K$ has the fixed point property: every continuous
 map $f \colon K \to K$ has a point $x \in K$ with $f(x) = x$.

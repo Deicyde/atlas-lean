@@ -1,3 +1,3 @@
 # Cut lattice of a set of sites
 
-**Cut lattice of a set of sites.** The square lattice with the boundary edges of `S` deleted.
+The square lattice with the boundary edges of `S` deleted.

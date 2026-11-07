@@ -1,6 +1,6 @@
 # Zero-capacity Catalan words with a given last letter
 
-**Zero-capacity Catalan words with a given last letter.** For $2 \le i \le n$, let
+For $2 \le i \le n$, let
 $a(n, i; q)$ be the capacity distribution of the Catalan words of length $n$ ending in $i$, so that
 $a(n, i; 0)$ is the number of those words with capacity $0$. Then
 

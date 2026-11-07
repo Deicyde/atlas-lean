@@ -1,6 +1,6 @@
 # Positivity of the greatest common unitary divisor
 
-**Positivity of the greatest common unitary divisor.** For positive natural numbers $a$ and
+For positive natural numbers $a$ and
 $b$, the greatest common unitary divisor $\gcd_1(a, b)$ is positive.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Z-shaped corridor
 
-**Z-shaped corridor.** For a real number $d$, the Z-shaped corridor with corner separation
+For a real number $d$, the Z-shaped corridor with corner separation
 $d$ is the set of points $z \in \mathbb{C}$ lying in at least one of three pieces: the lower
 horizontal arm, where $\operatorname{Re} z \le 1$ and $0 \le \operatorname{Im} z \le 1$; the
 middle channel, where $0 \le \operatorname{Re} z \le 1$ and $0 \le \operatorname{Im} z \le 2 + d$;

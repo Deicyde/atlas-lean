@@ -1,3 +1,3 @@
 # Satisfaction is monotone in the bound variable
 
-**Satisfaction is monotone in the bound variable.** Monotonicity in the bound variable's denotation.
+Monotonicity in the bound variable's denotation.

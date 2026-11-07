@@ -1,6 +1,6 @@
 # Three I-Wilf-equivalent six-pattern sets containing 102 and 110
 
-**Three I-Wilf-equivalent six-pattern sets containing 102 and 110.** Write a length-3 pattern
+Write a length-3 pattern
 as the word of its values, so $101$ is the pattern $(1, 0, 1)$, and for a set $B$ of patterns let
 $|I_n(B)|$ be the number of inversion sequences of length $n$ that avoid every pattern in $B$.
 Let $A_\tau = \{011, 101, 102, 110, 120, \tau\}$ and $C = \{011, 021, 102, 110, 201, 210\}$.

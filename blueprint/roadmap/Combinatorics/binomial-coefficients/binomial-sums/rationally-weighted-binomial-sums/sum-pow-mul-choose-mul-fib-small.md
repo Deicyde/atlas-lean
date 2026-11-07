@@ -1,6 +1,6 @@
 # Weighted binomial Fibonacci sums for the powers one to four
 
-**Weighted binomial Fibonacci sums for the powers one to four.** Let $F_n$ denote the Fibonacci
+Let $F_n$ denote the Fibonacci
 numbers. For every natural number $N$,
 
 $$\sum_{k=1}^{N} k \binom{N}{k} F_k = N F_{2N-1},$$

@@ -1,6 +1,6 @@
 # Floating in equilibrium in a direction
 
-**Floating in equilibrium in a direction.** Let $K \subseteq \mathbb{R}^d$, let
+Let $K \subseteq \mathbb{R}^d$, let
 $\xi \in \mathbb{R}^d$ be a unit vector and let $\delta \in \mathbb{R}$. We say that $K$ floats in
 equilibrium in direction $\xi$ at level $\delta$ if, for every cutting hyperplane
 $\{p : \xi \cdot p = t\}$ of $K$ in direction $\xi$ at level $\delta$, the center of mass of $K$

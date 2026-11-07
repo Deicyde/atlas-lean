@@ -1,6 +1,6 @@
 # Descent sets versus reflected ascent sets of parking functions
 
-**Descent sets versus reflected ascent sets of parking functions.** Write a parking function
+Write a parking function
 $f$ of length $n$ as the sequence $(a_1, \dots, a_n)$ with $a_j = f(j-1) + 1$. Its descent set is
 the set of $j \in \{1, \dots, n-1\}$ with $a_j > a_{j+1}$, and its ascent set the set of such $j$
 with $a_j < a_{j+1}$. For every $n$ and every $I \subseteq \{1, \dots, n-1\}$, let

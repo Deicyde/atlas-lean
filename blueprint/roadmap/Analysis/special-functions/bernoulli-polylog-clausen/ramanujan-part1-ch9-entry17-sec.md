@@ -1,6 +1,6 @@
 # The inverse tangent integral at $\tan x$
 
-**The inverse tangent integral at $\tan x$.** Let $x$ be a real number with
+Let $x$ be a real number with
 $|x| \le \pi/4$, and let $P(x) = x \log|\tan x|$ for $x \ne 0$ and $P(0) = 0$. Then
 $\cos x \ne 0$, the series
 $T(x) = \sum_{k=0}^{\infty} (-1)^k \frac{\tan^{2k+1} x}{(2k+1)^2}$ (the inverse tangent integral

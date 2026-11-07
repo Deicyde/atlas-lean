@@ -1,6 +1,6 @@
 # Differences of repetend digits
 
-**Differences of repetend digits.** Let $n \ge 1$ and $b$ be natural numbers with
+Let $n \ge 1$ and $b$ be natural numbers with
 $\gcd(b, n) = 1$. For $x, j \ge 0$ put $b_x = b^x \bmod n$ and
 $r_{x,j} = \lfloor b_x^{j+1}/n \rfloor \bmod b_x$. Then for all natural numbers $y, m, d, e$,
 

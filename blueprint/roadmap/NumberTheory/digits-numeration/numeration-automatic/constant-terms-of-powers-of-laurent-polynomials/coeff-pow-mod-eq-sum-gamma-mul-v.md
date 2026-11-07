@@ -1,6 +1,6 @@
 # Kohen's linear representation step modulo $p$
 
-**Kohen's linear representation step modulo $p$.** Let $p$ be a prime, let $P$ be a Laurent
+Let $p$ be a prime, let $P$ be a Laurent
 polynomial in $r$ variables with integer coefficients, and write $\deg P$ for the largest absolute
 value of an exponent of a single variable in a monomial occurring in $P$ ($0$ if $P = 0$). Let $m$
 be a natural number with $\deg P \le m + 1$. Write $T = [-m, m]^r \subseteq \mathbb{Z}^r$ and

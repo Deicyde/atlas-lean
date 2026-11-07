@@ -1,6 +1,6 @@
 # Sparse admissible sets without prime translates (Erdős Problem 429)
 
-**Sparse admissible sets without prime translates (Erdős Problem 429).** For every function
+For every function
 $f : \mathbb{N} \to \mathbb{N}$ with $f(N) \to \infty$ as $N \to \infty$, there is an infinite set
 $A$ of natural numbers such that $|A \cap \{1, \ldots, N\}| \le f(N)$ for every natural number
 $N$, for every prime $p$ some residue class modulo $p$ contains no element of $A$, and for every

@@ -1,6 +1,6 @@
 # Sunflower lower bound
 
-**Sunflower lower bound.** For natural numbers $r$ and $w$ and a real number $C$, the lower
+For natural numbers $r$ and $w$ and a real number $C$, the lower
 bound is the real number
 
 $$\left(C\, r^3 \log_{1.9} w \, \log_{1.9}(\log_{1.9} w)\right)^w,$$

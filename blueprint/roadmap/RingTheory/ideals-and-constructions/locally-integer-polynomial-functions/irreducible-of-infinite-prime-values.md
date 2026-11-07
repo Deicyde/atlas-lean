@@ -1,6 +1,6 @@
 # LIP functions with infinitely many prime values are irreducible
 
-**LIP functions with infinitely many prime values are irreducible.** Let
+Let
 $U \subseteq \mathbb{Z}$, and write $\mathrm{LIP}(U)$ for the ring of locally integer polynomial
 functions on $U$: the functions $U \to \mathbb{Z}$ whose restriction to every finite subset of $U$
 agrees with a polynomial with integer coefficients. Let $f \in \mathrm{LIP}(U)$. If $|f(x)|$ is a

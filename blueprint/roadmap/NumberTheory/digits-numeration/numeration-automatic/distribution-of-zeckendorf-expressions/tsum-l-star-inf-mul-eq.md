@@ -1,6 +1,6 @@
 # $\varepsilon$ and $\inf(\varepsilon)$ have the same value
 
-**$\varepsilon$ and $\inf(\varepsilon)$ have the same value.** Let $L$ be a list of natural
+Let $L$ be a list of natural
 numbers of length at least $2$ with nonzero first entry, let $E^*$ be the set of nonzero
 coefficient functions $\mathbb N \to \mathbb N$ that are sums of finitely or infinitely many
 disjoint proper $L^*$-blocks, and let $Q$ be a strictly decreasing sequence in $(0, 1)$ such that

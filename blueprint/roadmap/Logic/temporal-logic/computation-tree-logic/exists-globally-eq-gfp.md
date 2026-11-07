@@ -1,6 +1,6 @@
 # $\mathsf{EG}$ is a greatest fixed point
 
-**$\mathsf{EG}$ is a greatest fixed point.** Fix a labelled transition system, a valuation of
+Fix a labelled transition system, a valuation of
 the atoms at its states, and a CTL formula $\varphi$. Write $[\![\varphi]\!]$ for the set of states
 satisfying $\varphi$ and $\mathrm{Pre}_\exists(Z)$ for the set of states having some successor in a
 set of states $Z$. Then the set of states satisfying $\mathsf{EG}\,\varphi$ is the greatest fixed

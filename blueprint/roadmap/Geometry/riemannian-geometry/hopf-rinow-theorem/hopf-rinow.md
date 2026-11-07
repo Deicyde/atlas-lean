@@ -1,6 +1,6 @@
 # Hopf–Rinow theorem
 
-**Hopf–Rinow theorem.** Let $M$ be a connected, locally compact smooth manifold without
+Let $M$ be a connected, locally compact smooth manifold without
 boundary, modelled on a finite-dimensional real normed space, with a smooth Riemannian metric
 whose Riemannian distance is the (extended) distance of $M$. Then $M$ is geodesically complete
 if and only if $M$ is complete for its distance.

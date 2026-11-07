@@ -1,6 +1,6 @@
 # The (p, q)-deformed Spivey formula
 
-**The (p, q)-deformed Spivey formula.** Let $p$ and $q$ be real numbers with
+Let $p$ and $q$ be real numbers with
 $0 < q < p \le 1$, and for $k \in \mathbb{N}$ put $[k] = (p^k - q^k)/(p - q)$. Define real numbers
 $S(n, k)$ for $n, k \in \mathbb{N}$ by $S(0, 0) = 1$, $S(0, k) = 0$ for $k \ge 1$,
 $S(n + 1, 0) = 0$, and, for $k \ge 1$,

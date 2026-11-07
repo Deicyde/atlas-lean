@@ -1,6 +1,6 @@
 # $B_\kappa$-free polynomials
 
-**$B_\kappa$-free polynomials.** Let $F$ be a field and let $\kappa$ assign a natural number to
+Let $F$ be a field and let $\kappa$ assign a natural number to
 each polynomial in $F[T]$. A polynomial $f \in F[T]$ is $B_\kappa$-free when $P^{\kappa(P)}$ does
 not divide $f$ for any monic irreducible $P \in F[T]$.
 

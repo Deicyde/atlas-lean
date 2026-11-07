@@ -1,6 +1,6 @@
 # Rightmost key of a B-tree
 
-**Rightmost key of a B-tree.** For a tree $T$, the rightmost key of $T$ is an optional key
+For a tree $T$, the rightmost key of $T$ is an optional key
 defined by descending the rightmost spine: for a leaf it is the last of its keys (none if the
 leaf has no keys); for an internal node with at least one child it is the rightmost key of its
 last child; for an internal node with no children it is the last of its separator keys (none

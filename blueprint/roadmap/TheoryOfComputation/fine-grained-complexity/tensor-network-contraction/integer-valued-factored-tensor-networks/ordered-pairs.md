@@ -1,3 +1,3 @@
 # Ordered pairs representing unordered pairs
 
-**Ordered pairs representing unordered pairs.** Pairs `(a, b)` with `a < b`, representing unordered pairs once.
+Pairs `(a, b)` with `a < b`, representing unordered pairs once.

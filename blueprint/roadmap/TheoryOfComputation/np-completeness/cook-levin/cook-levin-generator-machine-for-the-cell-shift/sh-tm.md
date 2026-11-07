@@ -1,6 +1,6 @@
 # The cell-shift generator as a finite stack machine
 
-**The cell-shift generator as a finite stack machine.** For a layout $L$, situation tables
+For a layout $L$, situation tables
 $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ and $N$ situations, the cell-shift
 generator for these data, bundled as a multi-stack Turing machine with finitely many stacks,
 labels and states: its stacks are the Boolean output stack and one counter stack for each counter

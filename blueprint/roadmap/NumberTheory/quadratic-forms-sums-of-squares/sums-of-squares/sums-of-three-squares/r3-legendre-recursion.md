@@ -1,6 +1,6 @@
 # Legendre-symbol recursion for three-square counts
 
-**Legendre-symbol recursion for three-square counts.** For a natural number $m$, let $r_3(m)$
+For a natural number $m$, let $r_3(m)$
 denote the number of ordered triples of integers $(x, y, z)$ with $x^2 + y^2 + z^2 = m$. Let
 $p \ge 3$ be a prime and let $n \ge 1$ and $\alpha \ge 0$ be natural numbers. Then
 

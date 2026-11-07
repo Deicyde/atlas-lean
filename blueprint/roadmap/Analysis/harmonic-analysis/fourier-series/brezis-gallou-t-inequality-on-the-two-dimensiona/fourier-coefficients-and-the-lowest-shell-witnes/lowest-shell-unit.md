@@ -1,6 +1,6 @@
 # Lowest-shell unit polynomial
 
-**Lowest-shell unit polynomial.** For $n \in \mathbb{Z}^2$ let
+For $n \in \mathbb{Z}^2$ let
 $e_n(y) = e^{2\pi i\, n \cdot y}$ be the Fourier monomial on the unit torus
 $(\mathbb{R}/\mathbb{Z})^2$. The lowest-shell unit polynomial is the continuous function
 $P : (\mathbb{R}/\mathbb{Z})^2 \to \mathbb{C}$ given by

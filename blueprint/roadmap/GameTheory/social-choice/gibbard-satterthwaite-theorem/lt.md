@@ -1,5 +1,5 @@
 # Relation of a strict preference order
 
-**Relation of a strict preference order.** The relation of a strict total order $T$ on a type
+The relation of a strict total order $T$ on a type
 $\alpha$ is its underlying binary relation $\lt _T$ on $\alpha$, which is irreflexive, transitive,
 and relates any two distinct elements in one direction or the other.

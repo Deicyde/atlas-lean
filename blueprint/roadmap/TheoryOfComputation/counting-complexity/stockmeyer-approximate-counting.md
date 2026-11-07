@@ -1,6 +1,6 @@
 # Stockmeyer: approximate counting of #P functions in BPP^NP
 
-**Stockmeyer: approximate counting of #P functions in BPP^NP.** For every function $f$ in
+For every function $f$ in
 $\#P$ there are a decision problem $O$ in NP, polynomials $p_r$, $p$ and $q$ with
 natural-number coefficients, and polynomial-time computable functions $\mathrm{nextQ}$ and
 $\mathrm{final}$, each taking a bitstring and a list of query/answer pairs (bitstring, boolean),

@@ -1,6 +1,6 @@
 # Mean curvature of a level set
 
-**Mean curvature of a level set.** Let $E$ be a finite-dimensional real inner product space,
+Let $E$ be a finite-dimensional real inner product space,
 $\rho : E \to \mathbb{R}$ and $p \in E$. Write $\nabla\rho(p)$ for the gradient of $\rho$ at $p$,
 $D^2\rho(p)$ for the second derivative of $\rho$ at $p$ (a bilinear form on $E$), and
 $\Delta\rho(p) = \sum_i D^2\rho(p)(e_i, e_i)$ for a fixed orthonormal basis $(e_i)$ of $E$. The

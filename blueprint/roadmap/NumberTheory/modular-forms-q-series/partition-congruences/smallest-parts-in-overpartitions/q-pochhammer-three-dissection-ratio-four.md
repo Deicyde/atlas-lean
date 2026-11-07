@@ -1,6 +1,6 @@
 # The 3-dissection of $f_4/f_1$ for complex $q$
 
-**The 3-dissection of $f_4/f_1$ for complex $q$.** Let $q$ be a complex number with $|q| < 1$,
+Let $q$ be a complex number with $|q| < 1$,
 and for $k \ge 1$ let $f_k = (q^k; q^k)_\infty = \prod_{m \ge 1} (1 - q^{km})$ be the raw
 infinite q-Pochhammer product with $a = q^k$ and base $q^k$. Then
 

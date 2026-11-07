@@ -1,6 +1,6 @@
 # Pulling a factor out of a remainder
 
-**Pulling a factor out of a remainder.** Let $a$, $y$ and $C$ be natural numbers with $ay < C$.
+Let $a$, $y$ and $C$ be natural numbers with $ay < C$.
 Then $(ay) \bmod C = a \cdot (y \bmod C)$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Ray-one integral units
 
-**Ray-one integral units.** Let $K$ be a number field with ring of integers $\mathcal{O}_K$,
+Let $K$ be a number field with ring of integers $\mathcal{O}_K$,
 let $\mathfrak{m}$ be a modulus of $K$ with finite part $\mathfrak{m}_0$, and send each unit of
 $\mathcal{O}_K$ to its image in the group of ray elements for $\mathfrak{m}$. For a nonzero prime
 $\mathfrak{p}$ of $\mathcal{O}_K$, write $v_{\mathfrak{p}}$ for the $\mathfrak{p}$-adic valuation

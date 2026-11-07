@@ -1,6 +1,6 @@
 # Mediant telescoping identity for Farey intervals
 
-**Mediant telescoping identity for Farey intervals.** For an interval $[x/y, z/w]$ write
+For an interval $[x/y, z/w]$ write
 $f([x/y, z/w]) = (xw + yz)/(xyzw)$. Let $a, b, c, d$ be natural numbers with $a > 0$, $d > 0$
 and $bc = ad + 1$. Then, computing in the real numbers, the value of $f$ on $[a/b, c/d]$ minus
 its values on the two halves $[a/b, (a + c)/(b + d)]$ and $[(a + c)/(b + d), c/d]$ cut at the

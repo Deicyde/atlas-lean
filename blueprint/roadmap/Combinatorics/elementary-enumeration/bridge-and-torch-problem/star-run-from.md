@@ -1,6 +1,6 @@
 # Legal runs in the star model
 
-**Legal runs in the star model.** A configuration of the star model assigns to each person $p$
+A configuration of the star model assigns to each person $p$
 a vertex $\mathrm{pos}(p)$ of the star graph $\mathcal{S}(k)$ and to each vertex $v$ a number
 $\mathrm{tor}(v)$ of torches. A finite sequence $\sigma = (S_1, \dots, S_\ell)$ of steps, each a
 finite list of movements, is a legal run from the configuration $(\mathrm{pos}, \mathrm{tor})$

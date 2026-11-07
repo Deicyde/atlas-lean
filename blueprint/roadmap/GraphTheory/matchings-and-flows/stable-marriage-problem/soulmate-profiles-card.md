@@ -1,6 +1,6 @@
 # Number of profiles with exactly $k$ soulmate pairs
 
-**Number of profiles with exactly $k$ soulmate pairs.** For natural numbers $n$ and $k$, the
+For natural numbers $n$ and $k$, the
 number $F(k, n)$ of preference profiles for $n$ men and $n$ women with exactly $k$ soulmate pairs
 is
 

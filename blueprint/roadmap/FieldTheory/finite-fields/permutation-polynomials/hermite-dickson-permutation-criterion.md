@@ -1,6 +1,6 @@
 # Hermite–Dickson criterion
 
-**Hermite–Dickson criterion.** Let $\mathbb{F}_q$ be a finite field with $q$ elements and
+Let $\mathbb{F}_q$ be a finite field with $q$ elements and
 characteristic $p$, and let $f \in \mathbb{F}_q[X]$. Then $f$ is a permutation polynomial of
 $\mathbb{F}_q$, that is, $x \mapsto f(x)$ is a bijection of $\mathbb{F}_q$, if and only if $f$
 has exactly one root in $\mathbb{F}_q$ and, for every integer $t$ with $1 \le t \le q - 2$ and

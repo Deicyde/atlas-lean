@@ -1,6 +1,6 @@
 # The double fluctuation integral vanishes at 1
 
-**The double fluctuation integral vanishes at 1.** For every natural number $q$, the double
+For every natural number $q$, the double
 integral $H(x) = \int_1^x \int_1^u F(\log v / \log q) \, dv/v \, du/u$ of the Trollope–Delange
 fluctuation $F$ for base $q$ satisfies $H(1) = 0$.
 

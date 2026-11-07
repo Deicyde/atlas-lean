@@ -1,6 +1,6 @@
 # The partition function $c_2$ of Nyirenda and Mugwangwavari
 
-**The partition function $c_2$ of Nyirenda and Mugwangwavari.** For an integer $n \ge 0$,
+For an integer $n \ge 0$,
 $c_2(n)$ is the number of partitions of $n$ for which there is an integer $j$ with
 $1 \le j \le n$ such that $j$ appears exactly $j$ times, every part other than $j$ is at least
 $2j + 1$, and every even part that is at least $2j + 2$ appears only once.

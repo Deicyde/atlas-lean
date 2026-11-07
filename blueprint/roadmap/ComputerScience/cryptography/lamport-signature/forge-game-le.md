@@ -1,6 +1,6 @@
 # Security reduction for Lamport one-time signatures
 
-**Security reduction for Lamport one-time signatures.** Let $f : X \to Y$ be a function on a
+Let $f : X \to Y$ be a function on a
 finite nonempty set $X$, let $\ell \ge 1$ be the message length, and let $A$ be a one-time forger
 whose random coins range over a finite nonempty set $R$. Then the probability that $A$ wins the
 one-time forgery game against the Lamport scheme built from $f$ is at most $2\ell$ times the

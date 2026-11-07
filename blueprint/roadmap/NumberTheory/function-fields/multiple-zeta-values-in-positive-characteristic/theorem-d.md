@@ -1,6 +1,6 @@
 # Dimension of multiple zeta values in low weight
 
-**Dimension of multiple zeta values in low weight.** Let $F$ be a finite field with $q$
+Let $F$ be a finite field with $q$
 elements, $K = F(t)$, and $w$ a positive integer with $w \le 2q - 2$. Let $\mathcal{T}_w$ be the
 set of multiple zeta values $\zeta_A(s_1, \dots, s_r)$ over $F$ with $r \ge 1$, positive integers
 $s_1, \dots, s_r$ with sum $w$, $s_i \le q$ for $1 \le i \le r - 1$, and $s_r < q$, and let

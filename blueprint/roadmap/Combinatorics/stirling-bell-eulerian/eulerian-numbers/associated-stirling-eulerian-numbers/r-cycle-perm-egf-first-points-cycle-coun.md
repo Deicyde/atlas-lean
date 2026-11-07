@@ -1,6 +1,5 @@
 # Derivative formula for $r$-cycle permutations with $k$ cycles and separated first points
 
-**Derivative formula for $r$-cycle permutations with $k$ cycles and separated first points.**
 Let $R$ be a commutative $\mathbb{Q}$-algebra, $x \in R$, and let $r, s, k$ be natural numbers
 with $r \ge 2$ and $s \le k$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$
 for its number of excedances (indices $i$ with $\sigma(i) > i$) and $c(\sigma)$ for its number of

@@ -1,6 +1,6 @@
 # Quarter-shift hyperharmonic Euler sums
 
-**Quarter-shift hyperharmonic Euler sums.** Let $k \ge 0$ and $0 \le r < p$ be integers, and
+Let $k \ge 0$ and $0 \le r < p$ be integers, and
 let $a$ be a complex number with $a \in \tfrac14 + \mathbb{Z}$ or $a \in \tfrac34 + \mathbb{Z}$.
 Write $H_n^{[r]}(k)$ for the generalized hyperharmonic numbers. Then the generalized
 hyperharmonic Euler sum $S(k, r; p; a) = \sum_{n \ge k} H_n^{[r]}(k) / (n + a)^p$ converges, and

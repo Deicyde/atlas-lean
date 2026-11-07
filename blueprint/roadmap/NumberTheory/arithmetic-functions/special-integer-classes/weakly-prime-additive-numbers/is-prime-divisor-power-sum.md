@@ -1,6 +1,6 @@
 # Sums of powers of distinct prime divisors
 
-**Sums of powers of distinct prime divisors.** For natural numbers $n$ and $t$, $n$ is a sum
+For natural numbers $n$ and $t$, $n$ is a sum
 of positive powers of $t$ distinct prime divisors of $n$ when there are a set $s$ of $t$ distinct
 primes, each dividing $n$, and positive integers $e_p$ for $p \in s$ such that
 $n = \sum_{p \in s} p^{e_p}$.

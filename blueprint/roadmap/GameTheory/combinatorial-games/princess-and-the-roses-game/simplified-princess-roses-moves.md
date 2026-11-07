@@ -1,6 +1,6 @@
 # Options in simplified Princess and the Roses
 
-**Options in simplified Princess and the Roses.** The seven simplified Princess and the Roses
+The seven simplified Princess and the Roses
 moves are the removal vectors $(1, 0, 0, 0)$, $(0, 1, 0, 0)$, $(0, 0, 0, 1)$, $(1, 1, 0, 0)$,
 $(1, 0, 0, 1)$, $(0, 1, 0, 1)$ and $(0, 0, 1, 1)$. For a quadruple $(a, b, c, d)$ of natural
 numbers, its options are the quadruples $(a - r_1, b - r_2, c - r_3, d - r_4)$ for those moves

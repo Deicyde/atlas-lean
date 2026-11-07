@@ -1,6 +1,6 @@
 # The host on the real generators of a machine
 
-**The host on the real generators of a machine.** Let $M$ be a finite multi-stack Turing
+Let $M$ be a finite multi-stack Turing
 machine with encoding data $E$, let $Y$ be a list of input symbols, and let $\mathit{acc}$ be an
 output symbol. This is the host program whose five generators are the real ones for $M$. The
 update generator is the family generator of $E$ for the (label, state) codes, window codes and

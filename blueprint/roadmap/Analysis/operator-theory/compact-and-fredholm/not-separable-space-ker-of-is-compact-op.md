@@ -1,6 +1,6 @@
 # The kernel of a compact operator on a nonseparable Hilbert space is nonseparable
 
-**The kernel of a compact operator on a nonseparable Hilbert space is nonseparable.** Let
+Let
 $H$ be a complex Hilbert space that is not separable and let $A : H \to H$ be a compact operator.
 Then the kernel $\ker A$ is not separable.
 

@@ -1,6 +1,6 @@
 # Small values of the count of Schreier sets avoiding multiples
 
-**Small values of the count of Schreier sets avoiding multiples.** The numbers of Schreier-type
+The numbers of Schreier-type
 sets avoiding multiples satisfy $|D_{2,6}| = 12$ and $|D_{3,6}| = 9$ (Table 3 of the paper).
 
 ## Sources

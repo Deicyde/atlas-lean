@@ -1,6 +1,6 @@
 # Unimodular equivalence is reflexive
 
-**Unimodular equivalence is reflexive.** Every subset $P$ of $\mathbb{R}^2$ is unimodularly
+Every subset $P$ of $\mathbb{R}^2$ is unimodularly
 equivalent to itself (take the identity matrix and the zero translation).
 
 ## Sources

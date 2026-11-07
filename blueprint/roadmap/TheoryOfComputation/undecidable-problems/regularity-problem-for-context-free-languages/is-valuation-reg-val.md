@@ -1,6 +1,6 @@
 # Every production of the regularity grammar is sound for its intended languages
 
-**Every production of the regularity grammar is sound for its intended languages.** Let $g$
+Let $g$
 be an encoded context-free grammar over a finite alphabet $T$ with decidable equality, and let
 $G$ be the regularity grammar of $g$, over the letters of $T$, a separator $\#$ and two bits $0$
 and $1$; words over $T$ are read as words over this alphabet. Assign to the nonterminals of $G$

@@ -1,6 +1,6 @@
 # Words with linear relative position function
 
-**Words with linear relative position function.** For integers $k, l, m \ge 0$ write
+For integers $k, l, m \ge 0$ write
 $\sigma_{k,l,m}$ for the substitution $a \mapsto a^k b a^l$, $b \mapsto a^m$, and for a binary
 word $v$ let $r_v(n) = p_{b,v}(n) - p_{a,v}(n)$, where $p_{\alpha,v}(n)$ is the position (counted
 from $0$) of the $n$-th occurrence of the letter $\alpha$ in $v$.

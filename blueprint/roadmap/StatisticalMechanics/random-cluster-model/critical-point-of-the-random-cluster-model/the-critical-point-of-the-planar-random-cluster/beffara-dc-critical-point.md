@@ -1,6 +1,6 @@
 # Beffara–Duminil-Copin theorem, conditional form
 
-**Beffara–Duminil-Copin theorem, conditional form.** For `q ≥ 1`, if the wired random-cluster
+For `q ≥ 1`, if the wired random-cluster
 measure on `ℤ²` does not percolate for `p < √q / (1 + √q)` (`hNoPercBelow`) and percolates for
 `p > √q / (1 + √q)` (`hPercAbove`), then `p_c(q) = √q / (1 + √q)`.
 

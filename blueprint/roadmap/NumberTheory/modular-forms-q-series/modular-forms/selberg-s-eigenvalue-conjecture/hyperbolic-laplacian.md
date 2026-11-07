@@ -1,6 +1,6 @@
 # Hyperbolic Laplacian
 
-**Hyperbolic Laplacian.** For a function $f$ from the upper half plane to $\mathbb{C}$ and a
+For a function $f$ from the upper half plane to $\mathbb{C}$ and a
 point $z = x + iy$ of the upper half plane, the hyperbolic Laplacian of $f$ at $z$ is
 
 $$\Delta f(z) = -y^2 \left(\partial_x \partial_x f(z) + \partial_y \partial_y f(z)\right),$$

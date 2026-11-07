@@ -1,6 +1,6 @@
 # Inserting a digit
 
-**Inserting a digit.** For natural numbers $N$, $i$ and $d$, inserting $d$ into the base-ten
+For natural numbers $N$, $i$ and $d$, inserting $d$ into the base-ten
 expansion of $N$ in position $i$, where positions are counted from $0$ at the units digit, gives
 the number
 

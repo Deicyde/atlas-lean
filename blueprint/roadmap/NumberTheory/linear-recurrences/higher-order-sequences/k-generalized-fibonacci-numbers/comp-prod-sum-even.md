@@ -1,6 +1,6 @@
 # Convolution of an even number of consecutive Fibonacci step sequences
 
-**Convolution of an even number of consecutive Fibonacci step sequences.** Write $F^{(s)}_k$
+Write $F^{(s)}_k$
 for the Fibonacci $s$-step numbers, and write $\sum_{K(r,N)}$ for a sum over all
 $(k_1, \dots, k_r) \in \mathbb{N}^r$ with $k_1 + \dots + k_r = N$. For all natural numbers
 $\ell \ge 1$, $m \ge 1$ and $n \ge \ell(m + \ell - 1)$,

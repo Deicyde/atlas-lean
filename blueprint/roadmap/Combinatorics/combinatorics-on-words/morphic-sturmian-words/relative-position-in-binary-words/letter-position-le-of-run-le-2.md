@@ -1,6 +1,6 @@
 # Linear bounds for words with bounded runs
 
-**Linear bounds for words with bounded runs.** Let $w$ be an infinite binary word over the
+Let $w$ be an infinite binary word over the
 letters $a$ and $b$ in which both letters occur infinitely often, and let $c$ be a natural number
 such that every block of consecutive equal letters of $w$ has length at most $c$. Let $p_a(n)$
 and $p_b(n)$ be the positions (counting from $0$) of the $n$-th $a$ and the $n$-th $b$ in $w$, and

@@ -1,6 +1,6 @@
 # Davis–Power lower bound for admissible variance factors
 
-**Davis–Power lower bound for admissible variance factors.** Every admissible variance factor
+Every admissible variance factor
 $C \in [0, \infty]$ satisfies $c_0^2 \le C$, where $c_0$ is the Davis–Power constant. Here $C$ is
 admissible when $0 < C < \infty$ and every real random variable $X$ on a probability space that
 is measurable and integrable, has mean $0$ and satisfies $\mathbb{P}(|X| > t) \le 2e^{-t^2/2}$ for

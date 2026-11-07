@@ -1,6 +1,6 @@
 # Ramanujan's squarefree Dirichlet series (Entry 30)
 
-**Ramanujan's squarefree Dirichlet series (Entry 30).** (i) Let $a : \mathbb{N} \to \mathbb{C}$
+(i) Let $a : \mathbb{N} \to \mathbb{C}$
 and let $c > 1$ be real with $|a(p)| \le p^{-c}$ for every prime $p$, and write $f_a(n)$ for the
 Entry 30 coefficient of $a$ at $n$. Then the family $(f_a(n))_{n \ge 2}$ is summable; for every
 $n \ge 1$, $f_a(n)$ is the product of $a(p)$ over the primes $p \mid n$ if $n$ is squarefree and

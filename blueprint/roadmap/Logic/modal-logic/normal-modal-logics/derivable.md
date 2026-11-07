@@ -1,6 +1,6 @@
 # Theorems of a normal modal logic
 
-**Theorems of a normal modal logic.** Let $\Lambda$ be a set of modal formulas. The theorems of
+Let $\Lambda$ be a set of modal formulas. The theorems of
 the normal modal logic $\mathbf{K} \oplus \Lambda$ form the least set of modal formulas that
 contains, for all modal formulas $\varphi$, $\psi$, $\chi$, the propositional axioms
 $\varphi \to (\psi \to \varphi)$,

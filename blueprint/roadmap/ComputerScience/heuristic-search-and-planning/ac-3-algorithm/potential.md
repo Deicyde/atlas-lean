@@ -1,6 +1,6 @@
 # Termination potential of AC-3
 
-**Termination potential of AC-3.** Let $P$ be a binary constraint satisfaction problem with
+Let $P$ be a binary constraint satisfaction problem with
 finitely many variables, $\mathrm{dom}$ finite domains for its variables and $q$ a queue of arcs.
 The potential of $\mathrm{dom}$ and $q$ is
 

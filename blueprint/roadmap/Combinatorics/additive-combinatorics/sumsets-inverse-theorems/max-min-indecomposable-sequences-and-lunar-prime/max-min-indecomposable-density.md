@@ -1,6 +1,6 @@
 # Almost all max-min polynomials are indecomposable
 
-**Almost all max-min polynomials are indecomposable.** Fix an integer $b \ge 2$. For each
+Fix an integer $b \ge 2$. For each
 $n$, among the polynomials of degree $n$ with coefficients in $\mathcal{B}_b = \{0, \dots, b - 1\}$,
 that is, coefficient strings $(a_0, \dots, a_n)$ with $a_n \ne 0$, the proportion of those that
 are indecomposable over the max-min semiring tends to $1$ as $n \to \infty$.

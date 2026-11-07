@@ -1,6 +1,6 @@
 # Counter-machine instructions
 
-**Counter-machine instructions.** A counter-machine instruction is one of: increment register
+A counter-machine instruction is one of: increment register
 $r$, decrement register $r$, or jump to instruction $q$ if register $r$ is zero, where the
 register index $r$ and the jump target $q$ are natural numbers.
 

@@ -1,6 +1,6 @@
 # $120$ is biunitary triperfect
 
-**$120$ is biunitary triperfect.** The sum $\sigma^{**}(120)$ of the biunitary divisors of
+The sum $\sigma^{**}(120)$ of the biunitary divisors of
 $120$ equals $3 \cdot 120 = 360$.
 
 ## Sources

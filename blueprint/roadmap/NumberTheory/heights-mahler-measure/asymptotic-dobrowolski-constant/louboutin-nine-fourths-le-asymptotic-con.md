@@ -1,6 +1,6 @@
 # Louboutin's lower bound for the asymptotic Dobrowolski constant
 
-**Louboutin's lower bound for the asymptotic Dobrowolski constant.** The asymptotic
+The asymptotic
 Dobrowolski constant is at least $9/4$, as an extended real number.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Positive definite real-valued functions
 
-**Positive definite real-valued functions.** A function $\varphi : \mathbb{R} \to \mathbb{R}$
+A function $\varphi : \mathbb{R} \to \mathbb{R}$
 is positive definite when its composition with the inclusion $\mathbb{R} \to \mathbb{C}$ is
 positive definite, that is, when for every $n \in \mathbb{N}$, all
 $t_1, \dots, t_n \in \mathbb{R}$ and all $z_1, \dots, z_n \in \mathbb{C}$, the sum

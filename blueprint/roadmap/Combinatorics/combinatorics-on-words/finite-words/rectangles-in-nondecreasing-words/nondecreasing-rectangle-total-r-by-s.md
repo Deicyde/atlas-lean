@@ -1,6 +1,6 @@
 # Generating function for $r \times s$ rectangles in nondecreasing words
 
-**Generating function for $r \times s$ rectangles in nondecreasing words.** Let $k \ge 1$,
+Let $k \ge 1$,
 $r \ge 1$ and $s \ge 1$, let $g_k(n)$ be the total number of $r \times s$ rectangles over all
 nondecreasing words of length $n$ over $[k] = \{1, \dots, k\}$, and let $m = \max(k + 1 - r, 0)$.
 Then, as formal power series over $\mathbb{Z}$,

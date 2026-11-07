@@ -1,6 +1,6 @@
 # Locally integer polynomial functions on cofinite sets of positive integers
 
-**Locally integer polynomial functions on cofinite sets of positive integers.** Let
+Let
 $\mathbb{N}^+ = \{n \in \mathbb{Z} : n > 0\}$, let $U \subseteq \mathbb{N}^+$ with
 $\mathbb{N}^+ \setminus U$ finite, let $f : \mathbb{Z} \to \mathbb{Z}$, and for
 $S \subseteq \mathbb{Z}$ write $\mathrm{LIP}(S)$ for the ring of locally integer polynomial (LIP)

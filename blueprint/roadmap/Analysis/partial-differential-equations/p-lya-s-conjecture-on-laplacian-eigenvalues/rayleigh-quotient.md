@@ -1,6 +1,6 @@
 # Rayleigh quotient
 
-**Rayleigh quotient.** For a smooth test function $f$ on an open set
+For a smooth test function $f$ on an open set
 $\Omega \subseteq \mathbb{R}^n$, the Rayleigh quotient of $f$ is
 
 $$R(f) = \frac{\int_{\mathbb{R}^n} \|Df(x)\|^2 \, dx}{\int_{\mathbb{R}^n} |f(x)|^2 \, dx},$$

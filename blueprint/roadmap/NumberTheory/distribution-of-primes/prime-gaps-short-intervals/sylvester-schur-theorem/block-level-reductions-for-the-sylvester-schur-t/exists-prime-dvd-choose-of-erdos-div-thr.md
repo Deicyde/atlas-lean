@@ -1,6 +1,6 @@
 # Sylvester–Schur criterion from the Erdős layer bound with a one-third first layer
 
-**Sylvester–Schur criterion from the Erdős layer bound with a one-third first layer.** Let
+Let
 $n < k$ be natural numbers, put $N = k + n - 1$ and $L = \lfloor \log_2 N \rfloor$, and assume
 $N \ge 6$. Write $m\#$ for the product of the primes at most $m$. If
 

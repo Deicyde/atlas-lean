@@ -1,6 +1,6 @@
 # Quintuple extensions come from a second semi-magic square
 
-**Quintuple extensions come from a second semi-magic square.** Let $E = (e_{ij})$ be a
+Let $E = (e_{ij})$ be a
 $3 \times 3$ integer matrix whose squared entries $e_{ij}^2$ have all three row sums and all three
 column sums equal to one common integer. Put $(a_1, a_2, a_3) = (e_{13}^2, e_{31}^2, e_{22}^2)$ and
 $(b_1, b_2, b_3) = (0, e_{21}^2 - e_{13}^2, e_{11}^2 - e_{22}^2)$, and let $a_4, a_5$ be integers

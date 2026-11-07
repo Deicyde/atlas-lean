@@ -1,6 +1,6 @@
 # Base-$p$ digits of a rational number
 
-**Base-$p$ digits of a rational number.** For a natural number $p$, a rational number $x$ and
+For a natural number $p$, a rational number $x$ and
 an integer $k$, the $k$-th base-$p$ digit of $x$ is $[p^k](x) = \lfloor x / p^k \rfloor \bmod p$;
 for $p \ge 1$ this is the residue of $\lfloor x / p^k \rfloor$ modulo $p$ in $\{0, \dots, p - 1\}$.
 

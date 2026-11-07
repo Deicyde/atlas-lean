@@ -1,6 +1,6 @@
 # One Horner round
 
-**One Horner round.** Let $b, \mathit{acc}, q, d, t$ be pairwise distinct counters of a
+Let $b, \mathit{acc}, q, d, t$ be pairwise distinct counters of a
 counter machine $M$, let $a \in \mathbb{N}$, let $\mu$ assign a label to each Horner-round stage
 and let $\nu$ be a label. Suppose that for every Horner-round stage $s$ the label $\mu(s)$ runs
 the Horner-round statement for $b, \mathit{acc}, q, d, t, a$ with stage labels $\mu$ and exit

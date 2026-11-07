@@ -1,6 +1,6 @@
 # The constant $\kappa_j$ for $h$-full polynomials
 
-**The constant $\kappa_j$ for $h$-full polynomials.** Let $F$ be a finite field with $q$
+Let $F$ be a finite field with $q$
 elements, let $h$ and $j$ be natural numbers and let $\xi$ be a complex number. Write
 $\rho = q^{1/h}\xi^j$, where $q^{1/h}$ is the positive real $h$-th root of $q$ for $h \ge 1$ and
 $q^{1/h} = 1$ for $h = 0$, and let $\rho^{-1}$ be read as $0$ when $\rho = 0$. For a monic

@@ -1,6 +1,6 @@
 # Bounds-valid range trees
 
-**Bounds-valid range trees.** For a range tree $s$, write $s_{\min}$ and $s_{\max}$ for its
+For a range tree $s$, write $s_{\min}$ and $s_{\max}$ for its
 cached lower and upper bounds: the stored interval endpoints at a node, the value itself at a
 leaf, and $0$ for the empty tree. Bounds-validity is defined inductively: the empty tree and every
 leaf are bounds-valid, and a node with cached interval $[a, b]$, left child $\ell$ and right child

@@ -1,6 +1,6 @@
 # Growth bound for the degree of accessibility
 
-**Growth bound for the degree of accessibility.** Let $r \ge 2$, let $d_0 < d_1 < d_2 < \cdots$
+Let $r \ge 2$, let $d_0 < d_1 < d_2 < \cdots$
 be a strictly increasing sequence of natural numbers with $d_0 > 0$, and let
 $D = \{d_n : n \ge 0\}$. If there are a real number $\delta > 0$ and an integer $N \ge 1$ such that
 $d_{n+1} \ge \left(2 + \frac{1}{r-1} + \delta\right) d_n$ for every $n \ge N - 1$, then $D$ is not

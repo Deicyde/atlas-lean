@@ -1,6 +1,6 @@
 # The common lift count is at most $p^2$
 
-**The common lift count is at most $p^2$.** For every $f \in \mathbb{Z}[x, y]$, all natural
+For every $f \in \mathbb{Z}[x, y]$, all natural
 numbers $p$ and $k$ and every $k$-tuple $P$ of pairs of natural numbers, the common lift count of
 $P$ is at most $p^2$.
 

@@ -1,6 +1,6 @@
 # Ogden's lemma
 
-**Ogden's lemma.** Let $L$ be a context-free language over an alphabet $T$. A marked word is a
+Let $L$ be a context-free language over an alphabet $T$. A marked word is a
 word whose letters are pairs $(a, b)$ with $a \in T$ and $b$ a Boolean, the letter being marked
 when $b$ is true; its underlying word is the word of first components. Then there is a natural
 number $n > 0$ such that every marked word $w$ whose underlying word lies in $L$ and which has at

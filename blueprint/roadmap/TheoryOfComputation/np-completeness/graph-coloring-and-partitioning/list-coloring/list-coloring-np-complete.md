@@ -1,6 +1,6 @@
 # LIST COLORING is NP-complete
 
-**LIST COLORING is NP-complete.** The LIST COLORING decision problem belongs to NP, and every
+The LIST COLORING decision problem belongs to NP, and every
 decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

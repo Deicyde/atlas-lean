@@ -1,6 +1,6 @@
 # Truncated approximate eigenfunction of the bilateral shift
 
-**Truncated approximate eigenfunction of the bilateral shift.** Let $\mathbb{K}$ be
+Let $\mathbb{K}$ be
 $\mathbb{R}$ or $\mathbb{C}$, let $\mu \in \mathbb{K}$ and $N \in \mathbb{N}$, and write
 $\bar{\mu}$ for the complex conjugate of $\mu$. This is the function
 $f_{\mu,N} : \mathbb{Z} \to \mathbb{K}$ with $f_{\mu,N}(n) = \bar{\mu}^{\,n}$ for

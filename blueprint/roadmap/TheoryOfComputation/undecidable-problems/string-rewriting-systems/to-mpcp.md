@@ -1,6 +1,6 @@
 # The MPCP instance of a reachability instance
 
-**The MPCP instance of a reachability instance.** Let $(R, x, y)$ be an instance of the
+Let $(R, x, y)$ be an instance of the
 reachability problem over an alphabet $\alpha$, where $R = [(l_1, r_1), \dots, (l_k, r_k)]$, and
 write $\#$ for the separator and $\diamond$ for the end marker of the extended alphabet
 $\mathrm{Sym}(\alpha)$, in which letters of $\alpha$ are read as letters. Let $a_1 \cdots a_m$ be

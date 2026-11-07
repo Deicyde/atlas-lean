@@ -1,6 +1,6 @@
 # The $\varphi$-analog in terms of the $\psi$-analog of the 5-core counts
 
-**The $\varphi$-analog in terms of the $\psi$-analog of the 5-core counts.** Let
+Let
 $\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ and $\psi(q) = \sum_{n \in \mathbb{Z}} q^{n(2n-1)}$,
 and let $\bar a_5(n)$ and $\bar b_5(n)$ be the coefficients of $q^n$ in
 $\varphi(-q^5)^5 / \varphi(-q)$ and $\psi(-q^5)^5 / \psi(-q)$ respectively. For every natural

@@ -1,6 +1,6 @@
 # Characterization of reciprocal polynomials
 
-**Characterization of reciprocal polynomials.** A polynomial $f \in \mathbb{Z}[x]$ of
+A polynomial $f \in \mathbb{Z}[x]$ of
 degree $d$ (with $d = 0$ for the zero polynomial) is reciprocal if and only if its reversal
 $x^d f(1/x)$ equals $f$.
 

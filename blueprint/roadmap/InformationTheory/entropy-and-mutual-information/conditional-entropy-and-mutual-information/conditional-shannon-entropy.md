@@ -1,6 +1,6 @@
 # Conditional Shannon entropy given a sub-$\sigma$-algebra
 
-**Conditional Shannon entropy given a sub-$\sigma$-algebra.** Let $\mu$ be a probability measure
+Let $\mu$ be a probability measure
 on a measurable space $\Omega$, let $m$ be a sub-$\sigma$-algebra of the $\sigma$-algebra of
 $\Omega$, and let $X : \Omega \to Y$ be a measurable map into a measurable space $Y$. The
 conditional Shannon entropy of $X$ given $m$ is the supremum in $[0, \infty]$, over all

@@ -1,6 +1,6 @@
 # First coefficients of the mock theta function $\sigma$
 
-**First coefficients of the mock theta function $\sigma$.** Write
+Write
 $\sigma(q) = \sum_{n \ge 0} P_\sigma(n) q^n$ for the sixth-order mock theta function $\sigma$.
 Then $P_\sigma(0) = 0$ and $P_\sigma(1) = 1$.
 

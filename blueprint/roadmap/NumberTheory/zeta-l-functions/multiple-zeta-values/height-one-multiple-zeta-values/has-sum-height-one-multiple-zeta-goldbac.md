@@ -1,6 +1,6 @@
 # Generalized Goldbach series for height one multiple zeta values
 
-**Generalized Goldbach series for height one multiple zeta values.** Let $k \ge 1$ be an
+Let $k \ge 1$ be an
 integer. Write $\zeta(s, \{1\}^j)$ for the height one multiple zeta function, $\zeta$ for the
 Riemann zeta function, $c(k, m)$ for the unsigned Stirling numbers of the first kind,
 $H_k = \sum_{i=1}^{k} 1/i$ for the $k$-th harmonic number and

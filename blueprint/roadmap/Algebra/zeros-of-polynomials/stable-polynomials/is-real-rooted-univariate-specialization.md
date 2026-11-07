@@ -1,6 +1,6 @@
 # Real-rootedness of univariate specializations of real stable polynomials
 
-**Real-rootedness of univariate specializations of real stable polynomials.** Let $p$ be a
+Let $p$ be a
 real stable complex multivariate polynomial in variables $X_j$ indexed by $j \in \sigma$, let
 $i \in \sigma$, and for $x : \sigma \to \mathbb{C}$ write $p_{i,x} \in \mathbb{C}[X]$ for the
 univariate specialization of $p$ that keeps $X_i$ as the variable $X$ and sets every other $X_j$

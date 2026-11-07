@@ -1,6 +1,6 @@
 # Generalized Delannoy number with upper index
 
-**Generalized Delannoy number with upper index.** For natural numbers $k$, $m$ and $n$, the
+For natural numbers $k$, $m$ and $n$, the
 generalized Delannoy number $D^k(m, n)$ is the natural number
 
 $$D^k(m, n) = \sum_{j=0}^{n} \binom{m + n + k - j}{n + k} \binom{n}{j}.$$

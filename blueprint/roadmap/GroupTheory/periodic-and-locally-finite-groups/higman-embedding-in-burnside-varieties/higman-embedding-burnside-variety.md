@@ -1,6 +1,6 @@
 # Kourovka Problem 12.32: Higman embedding for Burnside varieties
 
-**Kourovka Problem 12.32: Higman embedding for Burnside varieties.** There is $n_0$ such that
+There is $n_0$ such that
 for every odd $n \ge n_0$ the following holds. Let $G$ be a group given by generators
 $x_0, x_1, \dots$ and a recursively enumerable set of relators, and suppose that $g^n = 1$ for
 every $g \in G$. Then for some $m$ and some finite set $S$ of elements of the free group on

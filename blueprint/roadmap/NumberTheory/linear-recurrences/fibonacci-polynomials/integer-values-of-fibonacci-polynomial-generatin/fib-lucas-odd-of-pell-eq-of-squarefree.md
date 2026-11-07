@@ -1,6 +1,6 @@
 # Pell-type solutions as rescaled odd Fibonacci–Lucas values, squarefree case
 
-**Pell-type solutions as rescaled odd Fibonacci–Lucas values, squarefree case.** Let $a$ and
+Let $a$ and
 $b$ be positive integers with $b \mid a$ and $b$ squarefree, and let
 $F_i(x), L_i(x) \in \mathbb{Z}[x]$ be the polynomials with $F_0 = 0$, $F_1 = 1$, $L_0 = 2$,
 $L_1 = ax$ and $G_{i+2} = ax\,G_{i+1} + b\,G_i$ for $G = F, L$ and all $i \ge 0$. If natural

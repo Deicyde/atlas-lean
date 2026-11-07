@@ -1,6 +1,6 @@
 # Watson expansion terms
 
-**Watson expansion terms.** For natural numbers $r$, $n$ and $\nu$, let $B_{2r}$ be the $2r$th
+For natural numbers $r$, $n$ and $\nu$, let $B_{2r}$ be the $2r$th
 Bernoulli number and let $\mathcal{H}_{2r-1}(\nu/n) = \cot^{(2r-1)}(\pi\nu/n)$ be the
 $(2r-1)$st derivative of the cotangent evaluated at $\pi\nu/n$. The $r$th Watson expansion term is
 the real number

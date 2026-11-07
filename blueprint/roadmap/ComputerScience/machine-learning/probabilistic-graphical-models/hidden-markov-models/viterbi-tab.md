@@ -1,6 +1,6 @@
 # The tabulated Viterbi variables of a hidden Markov model
 
-**The tabulated Viterbi variables of a hidden Markov model.** Let $h$ be a hidden Markov model
+Let $h$ be a hidden Markov model
 with states $\{0, \dots, n - 1\}$, where $n \ge 1$, initial weights $\pi(s)$, transition weights
 $a(s', s)$ and emission weights $b(s, o)$ in a linearly ordered commutative semiring $R$, and let
 $x_0, x_1, \dots$ be a sequence of observations. The Viterbi table assigns to each

@@ -1,6 +1,6 @@
 # Reversal for finite multiple zeta values of level $N$
 
-**Reversal for finite multiple zeta values of level $N$.** Let $N \ge 1$, let
+Let $N \ge 1$, let
 $k = (k_1, \dots, k_r)$ be a tuple of natural numbers of weight $w = k_1 + \dots + k_r$, and let
 $c$ be a color map, which sends each $a \in \mathbb{Z}/N\mathbb{Z}$ either to $\emptyset$ or to a
 tuple in $(\mathbb{Z}/N\mathbb{Z})^r$. Write $k^{\leftarrow} = (k_r, \dots, k_1)$, and let

@@ -1,6 +1,6 @@
 # The index-divisible set of a Lucas sequence contains $1$
 
-**The index-divisible set of a Lucas sequence contains $1$.** For all integers $P, Q$ with
+For all integers $P, Q$ with
 $Q \ne 0$, the number $1$ lies in the set $T(U)$ of positive integers $n$ coprime to $Q$ with
 $n \mid U_n$, where $U = U(P, Q)$ is their Lucas sequence.
 

@@ -1,6 +1,6 @@
 # Erdős Problem 966 holds
 
-**Erdős Problem 966 holds.** For all natural numbers $k \ge 2$ and $r \ge 2$ there is a set $A$
+For all natural numbers $k \ge 2$ and $r \ge 2$ there is a set $A$
 of natural numbers that contains no arithmetic progression of $k + 1$ distinct terms and such
 that for every colouring $c$ of the natural numbers with $r$ colours there are a subset
 $t \subseteq A$ that is an arithmetic progression of $k$ distinct terms and a colour $i$ with

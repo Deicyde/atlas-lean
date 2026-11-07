@@ -1,6 +1,6 @@
 # Separable metrizable groups need not embed in the infinite symmetric group
 
-**Separable metrizable groups need not embed in the infinite symmetric group.** The claim of
+The claim of
 Kourovka Problem 18.36 is false: there is a group $G$ that admits a metrizable topology
 making it a separable topological group but admits no injective group homomorphism into the
 group $\mathrm{Sym}(\mathbb{N})$ of all permutations of the natural numbers.

@@ -1,6 +1,6 @@
 # Binomial coefficients $\binom{p^r a}{p^r b}$ modulo $p$
 
-**Binomial coefficients $\binom{p^r a}{p^r b}$ modulo $p$.** Let $p$ be a prime, let $r \ge 1$,
+Let $p$ be a prime, let $r \ge 1$,
 and let $a, b$ be natural numbers not divisible by $p$. Then
 $\binom{p^r a}{p^r b} \equiv \binom{a}{b} \pmod{p}$.
 

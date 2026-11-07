@@ -1,6 +1,6 @@
 # Successive partial sums of the Chebyshev polynomials
 
-**Successive partial sums of the Chebyshev polynomials.** Let
+Let
 $F_n = 1 + \sum_{k=1}^{n} \bar T_k \in \mathbb{Z}[X]$ be the partial sums of the monic Chebyshev
 polynomials $\bar T_k$ ($\bar T_0 = 2$, $\bar T_1 = X$, $\bar T_{k+2} = X \bar T_{k+1} - \bar T_k$).
 For every natural number $n$, $F_{n+1} = F_n + \bar T_{n+1}$.

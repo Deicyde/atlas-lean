@@ -1,6 +1,6 @@
 # Exponential lower bound for ternary abelian-cube-free words
 
-**Exponential lower bound for ternary abelian-cube-free words.** An abelian cube is a word
+An abelian cube is a word
 $xyz$ with $x$, $y$, $z$ nonempty such that each letter occurs equally often in $x$, $y$ and $z$.
 Let $a_n$ be the number of words of length $n$ over $\{0, 1, 2\}$ that contain no abelian cube
 as a factor. Then $2^{n/24} = O(a_n)$ as $n \to \infty$: there is a constant $C$ such that

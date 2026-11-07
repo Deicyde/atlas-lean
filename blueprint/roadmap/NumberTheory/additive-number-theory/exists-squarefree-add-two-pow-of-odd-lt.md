@@ -1,6 +1,6 @@
 # Odd numbers $1 < n < 2^{50}$ are squarefree plus a power of two
 
-**Odd numbers $1 < n < 2^{50}$ are squarefree plus a power of two.** Every odd natural
+Every odd natural
 number $n$ with $1 < n < 2^{50}$ can be written as $n = s + 2^k$, where $s$ is a squarefree
 positive integer and $1 \le k \le 13$.
 

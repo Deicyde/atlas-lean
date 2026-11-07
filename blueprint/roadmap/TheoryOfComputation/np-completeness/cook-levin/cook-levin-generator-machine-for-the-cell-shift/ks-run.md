@@ -1,6 +1,6 @@
 # Correctness of the shift generator on the stack chain of a situation
 
-**Correctness of the shift generator on the stack chain of a situation.** Let $t < T$,
+Let $t < T$,
 assume the well-formedness conditions for $N$ situations and stack height $H$, let $i < N$,
 and let $F$ be counter values satisfying the block-start conditions at time $t$. Then for
 every $n \le K$, where $K$ is the number of stacks, every output $o$ and every Boolean state

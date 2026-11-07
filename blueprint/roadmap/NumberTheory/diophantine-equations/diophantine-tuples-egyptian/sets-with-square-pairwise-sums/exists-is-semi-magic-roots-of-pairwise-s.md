@@ -1,6 +1,6 @@
 # Triples with square pairwise sums come from semi-magic squares
 
-**Triples with square pairwise sums come from semi-magic squares.** Let $a_1, a_2, a_3$ and
+Let $a_1, a_2, a_3$ and
 $b_1, b_2, b_3$ be integers such that every sum $a_i + b_j$ is the square of an integer. Then
 there is a $3 \times 3$ integer matrix $E = (e_{ij})$ whose squared entries $e_{ij}^2$ have all
 three row sums and all three column sums equal to one common integer, and such that

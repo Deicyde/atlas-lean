@@ -1,6 +1,6 @@
 # Infinitely many Leonardo numbers are not sums of two prime powers
 
-**Infinitely many Leonardo numbers are not sums of two prime powers.** Let $(L_n)_{n \ge 0}$
+Let $(L_n)_{n \ge 0}$
 be the Leonardo numbers, the generalized Leonardo numbers $L_{1,n}$ with parameter $1$, given
 by $L_0 = L_1 = 1$ and $L_{n+2} = L_{n+1} + L_n + 1$. There are infinitely many natural numbers
 $k$ such that $L_k$ is not a sum of two prime powers.

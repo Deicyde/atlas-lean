@@ -1,6 +1,6 @@
 # The zero polynomial has norm $0$
 
-**The zero polynomial has norm $0$.** For every finite field $F$, the norm of the zero
+For every finite field $F$, the norm of the zero
 polynomial in $F[X]$ is $|0| = 0$.
 
 ## Sources

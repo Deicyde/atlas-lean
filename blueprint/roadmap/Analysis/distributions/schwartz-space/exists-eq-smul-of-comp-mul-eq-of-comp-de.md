@@ -1,6 +1,6 @@
 # Linear maps on Schwartz space commuting with $x$ and $d/dx$ are scalars
 
-**Linear maps on Schwartz space commuting with $x$ and $d/dx$ are scalars.** Let
+Let
 $\mathcal{S}(\mathbb{R})$ be the space of complex-valued Schwartz functions on $\mathbb{R}$, and
 let $M:\mathcal{S}(\mathbb{R})\to\mathcal{S}(\mathbb{R})$ be a $\mathbb{C}$-linear map with
 $(Mf)(x)=x f(x)$ for all $f\in\mathcal{S}(\mathbb{R})$ and $x\in\mathbb{R}$. If

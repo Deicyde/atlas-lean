@@ -1,6 +1,6 @@
 # Every finite set of rationals is a copy of itself
 
-**Every finite set of rationals is a copy of itself.** For every finite set $A$ of rational
+For every finite set $A$ of rational
 numbers, $A$ is a copy of $A$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Closed form for capacity two
 
-**Closed form for capacity two.** Let $T(n)$ be the optimal crossing time of $n$ people with
+Let $T(n)$ be the optimal crossing time of $n$ people with
 crossing times $1, \dots, n$ on a bridge of capacity $2$ with one torch. For every $n \ge 2$,
 
 $$T(n) = \frac{n^2}{4} + 3n - 5 + \frac{(-1)^n - 1}{8}.$$

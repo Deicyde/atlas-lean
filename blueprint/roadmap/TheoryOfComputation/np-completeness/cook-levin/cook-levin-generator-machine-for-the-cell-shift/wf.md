@@ -1,6 +1,6 @@
 # Well-formed situation tables for the cell-shift family
 
-**Well-formed situation tables for the cell-shift family.** Given a layout with label/state
+Given a layout with label/state
 block size $A$, $K$ stacks, $g$ symbol codes and window depth $d$, a situation-offset table
 $\mathrm{sa}$, push-count and consumed-count tables $\mathrm{pl}$ and $\mathrm{cn}$ and a
 pushed-code table $\mathrm{pu}$, the tables are well formed for $N$ situations at height $H$ when

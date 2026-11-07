@@ -1,6 +1,6 @@
 # Average repeating digit
 
-**Average repeating digit.** For a natural number $p$ and a rational number $x$, let $D_x$ be
+For a natural number $p$ and a rational number $x$, let $D_x$ be
 the delay and $L_x$ the period of the base-$p$ expansion of $x$, and let $[p^k](x)$ be its
 $k$-th base-$p$ digit. The average repeating digit of $x$ is
 

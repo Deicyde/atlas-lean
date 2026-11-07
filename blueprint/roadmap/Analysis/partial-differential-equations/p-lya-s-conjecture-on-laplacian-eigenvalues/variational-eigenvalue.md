@@ -1,6 +1,6 @@
 # Variational eigenvalue
 
-**Variational eigenvalue.** For an open set $\Omega \subseteq \mathbb{R}^n$ and an index
+For an open set $\Omega \subseteq \mathbb{R}^n$ and an index
 $j \ge 0$, the variational eigenvalue of $\Omega$ at index $j$ is the Courant–Fischer min–max
 value
 

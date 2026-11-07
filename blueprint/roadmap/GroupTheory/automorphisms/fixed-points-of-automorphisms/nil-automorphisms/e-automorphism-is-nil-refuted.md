@@ -1,6 +1,6 @@
 # An $e$-automorphism need not be a nil-automorphism
 
-**An $e$-automorphism need not be a nil-automorphism.** Vilyatser's assertion in Kourovka
+Vilyatser's assertion in Kourovka
 Problem 11.23 is false: there are a group $G$ and an automorphism $\varphi$ of $G$ that is an
 $e$-automorphism (for any subgroups $A$ and $B$ of $G$ with $\varphi(A) = A$, $\varphi(B) = B$ and
 $A \not\subseteq B$, some $a \in A \setminus B$ has $a^{-1} \varphi(a) \in B$) but not a

@@ -1,6 +1,6 @@
 # Euclid's algorithm on small inputs
 
-**Euclid's algorithm on small inputs.** Euclid's algorithm takes exactly one division step
+Euclid's algorithm takes exactly one division step
 on $(2, 1)$, two division steps on $(3, 2)$ and five division steps on $(13, 8)$.
 
 ## Sources

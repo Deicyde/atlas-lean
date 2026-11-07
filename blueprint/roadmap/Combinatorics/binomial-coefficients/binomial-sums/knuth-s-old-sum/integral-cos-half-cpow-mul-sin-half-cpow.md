@@ -1,6 +1,6 @@
 # Integral of $\cos^u(x/2)\sin^v(x/2)$ over $(0, \pi)$
 
-**Integral of $\cos^u(x/2)\sin^v(x/2)$ over $[0, \pi]$.** For all complex numbers $u$ and $v$
+For all complex numbers $u$ and $v$
 with $\operatorname{Re} u > -1$ and $\operatorname{Re} v > -1$,
 
 $$

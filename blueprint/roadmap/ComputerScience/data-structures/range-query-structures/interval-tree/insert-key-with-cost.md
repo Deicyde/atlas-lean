@@ -1,6 +1,6 @@
 # Keyed insertion with cost
 
-**Keyed insertion with cost.** Inserting an entry $x$ into a tree returns a new tree together
+Inserting an entry $x$ into a tree returns a new tree together
 with an operation cost; keys (low endpoint, then identifier) are compared lexicographically. Into
 the empty tree, $x$ is inserted as a single node, at a cost of one node visit and one cache write.
 At a node with entry $y$: if the key of $x$ equals the key of $y$, then $y$ is replaced by $x$, at a

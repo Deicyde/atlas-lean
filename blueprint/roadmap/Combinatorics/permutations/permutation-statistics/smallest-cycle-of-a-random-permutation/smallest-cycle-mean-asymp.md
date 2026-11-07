@@ -1,6 +1,6 @@
 # Mean length of the smallest cycle of a random permutation
 
-**Mean length of the smallest cycle of a random permutation.** For $n \ge 1$ let $X_n$ be the
+For $n \ge 1$ let $X_n$ be the
 length of the smallest cycle of a uniformly random permutation of $\{1, \dots, n\}$. Then
 $\mathbb{E}(X_n) / (e^{-\gamma} \log n) \to 1$ as $n \to \infty$, where $\gamma$ is the
 Euler–Mascheroni constant.

@@ -1,6 +1,6 @@
 # Factorial-product constants
 
-**Factorial-product constants.** For a natural number $k \ge 1$, the constant $F_k$ is the
+For a natural number $k \ge 1$, the constant $F_k$ is the
 positive real number defined by
 
 $$\log F_k = \frac{k}{4} \log(2\pi) - \frac{k^2+1}{k} \log A + \frac{1 - \log k}{12k} -

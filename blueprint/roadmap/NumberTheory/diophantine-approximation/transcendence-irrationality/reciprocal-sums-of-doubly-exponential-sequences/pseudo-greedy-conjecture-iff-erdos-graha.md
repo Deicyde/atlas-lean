@@ -1,6 +1,6 @@
 # Koizumi's conjecture is equivalent to the Erdős–Graham question
 
-**Koizumi's conjecture is equivalent to the Erdős–Graham question.** The following are
+The following are
 equivalent. (1) For every positive rational number $r$ whose pseudo-greedy gap sequence
 $(\varepsilon_n)_{n \ge 0}$ tends to $0$, we have $\varepsilon_n = 0$ for all sufficiently large
 $n$. (2) Every sequence $(a_n)_{n \ge 0}$ of positive integers with $a_n^2 / a_{n+1} \to 1$ such

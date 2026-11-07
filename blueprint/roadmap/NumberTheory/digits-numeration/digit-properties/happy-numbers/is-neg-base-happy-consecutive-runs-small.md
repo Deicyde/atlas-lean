@@ -1,6 +1,6 @@
 # Arbitrarily long runs of consecutive happy numbers in bases $-4$, $-6$, $-8$, $-10$
 
-**Arbitrarily long runs of consecutive happy numbers in bases $-4$, $-6$, $-8$, $-10$.** Let
+Let
 $b \in \{-4, -6, -8, -10\}$. For every natural number $N$ there is an integer $n$ such that
 $n + i$ is $b$-happy for every $0 \le i < N$.
 

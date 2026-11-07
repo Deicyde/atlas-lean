@@ -1,6 +1,6 @@
 # Comparison principle for the Dirichlet problem on $(0, 1)$
 
-**Comparison principle for the Dirichlet problem on $[0, 1]$.** Let $J \subseteq \mathbb{R}$
+Let $J \subseteq \mathbb{R}$
 be an open set containing $[0, 1]$, and let $u, v : \mathbb{R} \to \mathbb{R}$ be functions
 that are differentiable at every point of $J$ and whose derivatives $u'$ and $v'$ are
 differentiable at every point of $J$. If $-u''(x) \le -v''(x)$ for every $x \in (0, 1)$,

@@ -1,6 +1,6 @@
 # Arcs of the Hamiltonian path construction
 
-**Arcs of the Hamiltonian path construction.** Let $\varphi$ be a CNF formula with clauses
+Let $\varphi$ be a CNF formula with clauses
 $C_0, \dots, C_{m-1}$ and distinct variables $x_0, \dots, x_{k-1}$ (in the order the
 construction lists them), and write $T(i) = m + i(3m + 2)$ for the top of diamond $i$ and
 $R(i, l) = T(i) + 1 + l$ for its row vertex $l$. Then $(u, v)$ is an arc of the Hamiltonian path

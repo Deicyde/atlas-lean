@@ -1,6 +1,6 @@
 # Number of double excedances
 
-**Number of double excedances.** For a permutation $w$ of $\{0, 1, \dots, n-1\}$, a double
+For a permutation $w$ of $\{0, 1, \dots, n-1\}$, a double
 excedance of $w$ is a point $i$ with $w^{-1}(i) < i < w(i)$, and $\mathrm{dexc}(w)$ is the
 number of double excedances of $w$.
 

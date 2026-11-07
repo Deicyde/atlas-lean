@@ -1,6 +1,6 @@
 # DPLL with a fuel budget
 
-**DPLL with a fuel budget.** Given a natural number $n$ (the fuel) and a CNF formula
+Given a natural number $n$ (the fuel) and a CNF formula
 $\varphi$, the procedure returns a Boolean value. Literals are pairs $(x, b)$ of a variable $x$
 and a polarity $b$. With fuel $0$ the procedure returns true exactly when $\varphi$ has no
 clauses. With fuel $n + 1$ it returns true if $\varphi$ has no clauses, and otherwise returns

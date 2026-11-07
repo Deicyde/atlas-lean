@@ -1,6 +1,6 @@
 # The verifier's run settles on its output
 
-**The verifier's run settles on its output.** Let $V$ be a machine that computes a function
+Let $V$ be a machine that computes a function
 $f_v$ of pairs of bit lists from their pair encoding, within $t_V(n)$ steps on an encoding of
 length $n$ for a polynomial $t_V$ with natural-number coefficients, with input alphabet
 identified with the pair alphabet $\mathrm{Bool} \oplus \mathrm{Option}\ \mathrm{Bool}$ and output

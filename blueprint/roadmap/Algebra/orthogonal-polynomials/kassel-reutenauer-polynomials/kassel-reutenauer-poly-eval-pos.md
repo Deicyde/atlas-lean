@@ -1,6 +1,6 @@
 # Positivity of the Kassel–Reutenauer polynomials at integers $N \ge 2$
 
-**Positivity of the Kassel–Reutenauer polynomials at integers $N \ge 2$.** For every $n \ge 1$
+For every $n \ge 1$
 and every integer $N \ge 2$, the Kassel–Reutenauer polynomial $\bar P_n$ satisfies
 $\bar P_n(N) > 0$.
 

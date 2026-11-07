@@ -1,6 +1,6 @@
 # Congruences modulo 4 for $\overline{\mathrm{spt2}}$ at primes $p \equiv 5, 7 \pmod 8$
 
-**Congruences modulo 4 for $\overline{\mathrm{spt2}}$ at primes $p \equiv 5, 7 \pmod 8$.** Let
+Let
 $\overline{\mathrm{spt2}}(N)$ be the number of smallest parts in the overpartitions of $N$ whose
 smallest part is even and not overlined. Let $p > 3$ be a prime with $p \equiv 5 \pmod 8$ or
 $p \equiv 7 \pmod 8$. Then for all natural numbers $k$ and $m$ with $p \nmid m$, the number

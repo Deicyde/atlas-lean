@@ -1,6 +1,6 @@
 # One-way functions exist
 
-**One-way functions exist.** There are a family of functions $f_n$, each mapping $n$-bit strings
+There are a family of functions $f_n$, each mapping $n$-bit strings
 to bitstrings, and a polynomial $q$ with natural-number coefficients such that the following hold:
 $|f_n(x)| \le q(n)$ for every $n$ and every $n$-bit string $x$; some polynomial-time computable
 function on bitstrings maps the canonical bitstring encoding of every pair $(n, x)$ to $f_n(x)$;

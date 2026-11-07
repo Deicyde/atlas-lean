@@ -1,6 +1,6 @@
 # Back-door adjustment for a set of predecessors containing the parents
 
-**Back-door adjustment for a set of predecessors containing the parents**: let `Z` be a set
+Let `Z` be a set
 of nodes preceding `k` in the topological order (so `Z` contains no descendant of `k`) that
 contains the parents of `k`. Then `Z` meets the back-door criterion for every outcome node
 `y ∉ Z` (a path from `k` to `y` that starts with an arrow into `k` starts `k ← p` with

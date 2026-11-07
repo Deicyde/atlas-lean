@@ -1,6 +1,6 @@
 # Intersection multiplicity at a projective point
 
-**Intersection multiplicity at a projective point.** Let $K$ be a field and
+Let $K$ be a field and
 $f_1, \dots, f_n \in K[X_0, \dots, X_n]$. For a point $p \in \mathbb{P}^n(K)$, let $i$ be its chart
 index, $q \in K^{n+1}$ its affine cone coordinates (so $q_i = 1$), and $\mathcal{O}_q$ the
 localization of $K[X_0, \dots, X_n]$ at the maximal ideal of $q$. The intersection multiplicity

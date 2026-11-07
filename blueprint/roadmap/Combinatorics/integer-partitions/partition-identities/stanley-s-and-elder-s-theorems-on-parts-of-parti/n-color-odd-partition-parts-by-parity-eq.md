@@ -1,6 +1,6 @@
 # Odd divisor sums count the parts of $n$-color partitions into odd parts
 
-**Odd divisor sums count the parts of $n$-color partitions into odd parts.** Say that an
+Say that an
 $n$-color partition has odd parts when every part has odd size. For $m \ge 1$, let $U_o(m)$
 (resp. $U_e(m)$) be the total number of parts over the $n$-color partitions of $m$ with odd parts
 and an odd (resp. even) number of parts, and for $r \ge 0$ let $C(O, r)$ be the number of

@@ -1,6 +1,6 @@
 # Reduced positions of Slow $A$-Nim
 
-**Reduced positions of Slow $A$-Nim.** A position $p$ of Slow $A$-Nim on $n$ stacks is
+A position $p$ of Slow $A$-Nim on $n$ stacks is
 reduced when for every stack $i$ there is a terminal position $t$ (one with no options) that is
 reachable from $p$ by a sequence of zero or more moves and has $t_i = 0$.
 

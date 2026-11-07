@@ -1,6 +1,6 @@
 # Excedance and cycle polynomial of permutations with k cycles, all of length r
 
-**Excedance and cycle polynomial of permutations with k cycles, all of length r.** Let $R$ be
+Let $R$ be
 a commutative ring, let $x, q \in R$, let $r \ge 2$ and let $n, k \ge 0$. For a permutation
 $\pi$ write $e(\pi)$ for its number of excedances (the $i$ with $\pi(i) > i$) and $c(\pi)$ for
 its number of cycles, fixed points included, and let $A_{r-1}(x) = \sum_{\sigma} x^{e(\sigma)}$,

@@ -1,6 +1,6 @@
 # Explicit bounds for incomplete cubic exponential sums
 
-**Explicit bounds for incomplete cubic exponential sums.** Let $p \ge 3$ be a prime, write
+Let $p \ge 3$ be a prime, write
 $e_p(t) = e^{2\pi i t/p}$ and $\delta_p = \frac{1.0661}{\log \log p}$, let $a, b, c$ be integers
 with $p \nmid a$, let $B$ be a positive integer, and put
 $S = \sum_{x=1}^{B} e_p(a x^3 + b x^2 + c x)$. If $B < \sqrt{p/2}$, then

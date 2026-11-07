@@ -1,6 +1,5 @@
 # The NS property characterises nim-sum Grundy numbers of two-dimensional chocolate bars
 
-**The NS property characterises nim-sum Grundy numbers of two-dimensional chocolate bars.**
 Let $f : \mathbb{N} \to \mathbb{N}$ be monotone. Then $f$ has the NS property if and only if, for
 all $x, z \in \mathbb{N}$ with $x \le f(z)$, the chocolate bar $\mathrm{CB}(f, 0, x, 0, z)$ of
 width $z$ (first function $f$, first coordinate $x$, second function constantly $0$, second

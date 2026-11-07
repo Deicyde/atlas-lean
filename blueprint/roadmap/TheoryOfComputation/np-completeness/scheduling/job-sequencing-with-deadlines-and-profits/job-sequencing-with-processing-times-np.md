@@ -1,6 +1,6 @@
 # JOB SEQUENCING WITH DEADLINES, PROCESSING TIMES, AND PROFITS is NP-complete
 
-**JOB SEQUENCING WITH DEADLINES, PROCESSING TIMES, AND PROFITS is NP-complete.** The decision
+The decision
 problem of job sequencing with deadlines, processing times and profits on bitstrings is
 NP-complete: it belongs to NP, and every decision problem in NP has a polynomial-time many-one
 reduction to it.

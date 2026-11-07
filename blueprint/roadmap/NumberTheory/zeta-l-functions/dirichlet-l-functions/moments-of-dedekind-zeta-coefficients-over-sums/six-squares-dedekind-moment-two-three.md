@@ -1,6 +1,6 @@
 # Second and third six-squares moments over a cubic field of negative discriminant
 
-**Second and third six-squares moments over a cubic field of negative discriminant.** Let
+Let
 $K$ be a number field of degree $3$ over $\mathbb{Q}$ with negative discriminant. For $n \ge 1$
 let $a_K(n)$ be the number of ideals of the ring of integers of $K$ of absolute norm $n$ and
 $r_6(n)$ the number of representations of $n$ as a sum of six squares of integers, and for real

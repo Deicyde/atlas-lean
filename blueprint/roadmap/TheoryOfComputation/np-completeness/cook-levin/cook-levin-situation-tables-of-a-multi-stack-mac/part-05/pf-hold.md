@@ -1,6 +1,6 @@
 # Pushed-fill forcing for a good configuration
 
-**Pushed-fill forcing for a good configuration.** Let $E$ be an encoding of the machine $M$
+Let $E$ be an encoding of the machine $M$
 with $K$ stacks and layout $L$, let $H \in \mathbb{N}$, let $W$ be the row width of $L$ at height
 $H$, and write $X[t, x] = tW + x$ for the label/state variables and $C[t, k, j, x]$ for the cell
 variable of row $t$, stack $k$, depth $j$ and symbol code $x$. Let $T, t \in \mathbb{N}$ with

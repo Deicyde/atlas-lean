@@ -1,6 +1,6 @@
 # Bubboloni–Praeger–Spiga conjectured value
 
-**Bubboloni–Praeger–Spiga conjectured value.** For a natural number $n \ge 2$, write
+For a natural number $n \ge 2$, write
 $n = p_1^{\alpha_1} \cdots p_r^{\alpha_r}$ with primes $p_1 < \cdots < p_r$ and exponents
 $\alpha_i \ge 1$, and let $p_2$ be the least prime factor of $n / p_1^{\alpha_1}$. The conjectured
 value of $n$ is the rational number $\frac{n}{2}(1 - \frac{1}{p_1})$ if $r = 1$ and $\alpha_1 = 1$;

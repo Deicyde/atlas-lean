@@ -1,6 +1,6 @@
 # Three consecutive star numbers are relatively prime
 
-**Three consecutive star numbers are relatively prime.** Write $S_m$ for the $m$-th star
+Write $S_m$ for the $m$-th star
 number $6m(m-1)+1$. For every natural number $n \ge 1$, $\gcd(S_n, S_{n+1}, S_{n+2}) = 1$.
 
 ## Sources

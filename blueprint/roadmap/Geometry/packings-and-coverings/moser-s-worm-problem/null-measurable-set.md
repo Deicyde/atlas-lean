@@ -1,6 +1,6 @@
 # Convex universal covers are null-measurable
 
-**Convex universal covers are null-measurable.** If $\Omega \subseteq \mathbb{C}$ is a
+If $\Omega \subseteq \mathbb{C}$ is a
 convex universal cover of unit arcs, then $\Omega$ is a null-measurable set for Lebesgue measure
 on $\mathbb{C}$.
 

@@ -1,6 +1,6 @@
 # Weighted Davenport constant
 
-**Weighted Davenport constant.** Let $G$ be an additive commutative monoid and $A$ a finite
+Let $G$ be an additive commutative monoid and $A$ a finite
 set of natural numbers. The $A$-weighted Davenport constant $D_A(G) \in \mathbb{N} \cup \{\infty\}$
 is the least length $\ell \in \mathbb{N}$ such that no sequence over $G$ of length $\ell$ is
 $A$-weighted zero-sum free, that is, such that every sequence over $G$ of length $\ell$ has a

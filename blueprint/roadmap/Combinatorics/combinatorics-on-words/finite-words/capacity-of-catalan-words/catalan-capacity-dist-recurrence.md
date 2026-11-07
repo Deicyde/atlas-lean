@@ -1,6 +1,6 @@
 # Recurrence for the capacity distribution on Catalan words
 
-**Recurrence for the capacity distribution on Catalan words.** Write $a(n, i)$ for the
+Write $a(n, i)$ for the
 capacity distribution of the Catalan words of length $n$ ending in $i$, $b(n, i)$ for that of
 those Catalan words of length $n$ ending in $i$ whose largest letter is $i$, and $c(m, j)$ for the
 area distribution of the set $\mathcal{C}_{m,j}$ of words of length $m$ over $\{1, \dots, j\}$

@@ -1,6 +1,6 @@
 # Overpartitions of even numbers into odd parts
 
-**Overpartitions of even numbers into odd parts.** Let $\mathrm{po}(m)$ be the number of
+Let $\mathrm{po}(m)$ be the number of
 overpartitions of $m$ into odd parts and $\overline{p}(m)$ the number of overpartitions of $m$.
 For every natural number $n$,
 $\mathrm{po}(2n) = \overline{p}(n) + 2 \sum_k \overline{p}(n - 2k^2)$, the sum running over

@@ -1,6 +1,6 @@
 # Row bits of a formula for the CLIQUE emitter
 
-**Row bits of a formula for the CLIQUE emitter.** A literal is a pair $(x, s)$ of a variable
+A literal is a pair $(x, s)$ of a variable
 $x \in \mathbb{N}$ and a polarity $s$, and an item is a literal or a clause marker. For a literal
 $\ell = (x, s)$, a Boolean $f$ and a list of items, the walk bits are defined by recursion on the
 list: there are none for the empty list; for a list starting with a clause marker they are the

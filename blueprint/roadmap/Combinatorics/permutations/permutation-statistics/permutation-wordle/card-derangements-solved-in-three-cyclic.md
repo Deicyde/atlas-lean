@@ -1,6 +1,6 @@
 # Derangements solved in three guesses by cyclic shift
 
-**Derangements solved in three guesses by cyclic shift.** For $n \ge 3$, exactly
+For $n \ge 3$, exactly
 $2^n - (2n + 1)$ derangements $\pi$ of $\{0, \dots, n-1\}$ are guessed by the cyclic shift
 strategy in exactly three guesses.
 

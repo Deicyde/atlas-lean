@@ -1,6 +1,6 @@
 # Rational linear-program feasibility
 
-**Rational linear-program feasibility.** The decision problem of rational linear-program
+The decision problem of rational linear-program
 feasibility accepts a bitstring $w$ exactly when $w$ decodes, under the canonical bitstring
 encoding, to a pair $(A, b)$ of a list $A$ of $m$ rows, each a list of magnitude–sign pairs, and
 a list $b$ of $m'$ magnitude–sign pairs, such that every row of $A$ has the length $n$ of the

@@ -1,6 +1,6 @@
 # Sanford's dilogarithm series identity
 
-**Sanford's dilogarithm series identity.** Write $L(x) = \sum_{m \ge 1} x^m/m^2 +
+Write $L(x) = \sum_{m \ge 1} x^m/m^2 +
 \frac{1}{2} \log x \log(1 - x)$ for the Rogers dilogarithm on $[0, 1]$ (with $\log 0 = 0$). For
 real numbers $a, b \in (0, 1)$ with $a \ne b$,
 

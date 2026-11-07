@@ -1,6 +1,6 @@
 # Correctness of the SAT-verifier lookup machine
 
-**Correctness of the SAT-verifier lookup machine.** Let $q$ be a list of bits, $es$ a list of
+Let $q$ be a list of bits, $es$ a list of
 table entries and $R$ a list of symbols that is empty or starts with a symbol other than a name
 bit. Suppose the stacks of the lookup machine are as follows: $T$ holds the bits of $q$ as name
 bits, last bit on top, above $R$; $B$ holds the table stack of $es$, of length $\ell$; and $S$,

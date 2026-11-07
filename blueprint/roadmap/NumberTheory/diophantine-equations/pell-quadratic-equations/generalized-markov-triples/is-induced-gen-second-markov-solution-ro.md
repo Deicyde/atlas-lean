@@ -1,6 +1,6 @@
 # The root induced solution of the generalized second Markov equation
 
-**The root induced solution of the generalized second Markov equation.** For every natural
+For every natural
 number $k$, the triple $(3 + 2k, 3 + 2k, 3 + 2k)$, the image of $(1, 1, 1)$ under
 $x \mapsto (3 + 3k)x - k$, is an induced positive solution of the $k$-generalized second
 Markov equation $\mathrm{GSME}(k)$.

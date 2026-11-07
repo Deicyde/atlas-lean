@@ -1,6 +1,6 @@
 # Partial Fourier sums
 
-**Partial Fourier sums.** Let $T > 0$ and $f : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$. For
+Let $T > 0$ and $f : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$. For
 $N \in \mathbb{N}$, the $N$-th partial Fourier sum of $f$ is the function
 
 $$S_N f(x) = \sum_{n=-N}^{N} \hat f(n)\, e_n(x),$$

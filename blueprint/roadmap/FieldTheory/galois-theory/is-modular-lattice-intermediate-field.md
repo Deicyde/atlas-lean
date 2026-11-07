@@ -1,6 +1,6 @@
 # Intermediate fields of an abelian extension form a modular lattice
 
-**Intermediate fields of an abelian extension form a modular lattice.** If $L/K$ is a
+If $L/K$ is a
 finite-dimensional abelian Galois extension, then the lattice of intermediate fields of $L/K$
 is modular.
 

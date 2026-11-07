@@ -1,6 +1,6 @@
 # Fenchel–Moreau theorem
 
-**Fenchel–Moreau theorem.** Let $E$ be a locally convex real topological vector space, not
+Let $E$ be a locally convex real topological vector space, not
 necessarily Hausdorff. Let $f : E \to [-\infty, \infty]$ be lower semicontinuous, never equal to
 $-\infty$, not identically $+\infty$, and convex in the sense that the set
 $\{(x, r) \in E \times \mathbb{R} : f(x) \le r\}$ is convex. Then for every $x \in E$,

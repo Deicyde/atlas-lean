@@ -1,6 +1,6 @@
 # Sets given by consecutive differences
 
-**Sets given by consecutive differences.** For an integer $a$ and natural numbers
+For an integer $a$ and natural numbers
 $g_1, \dots, g_r$, the set $(a \mid g_1, \dots, g_r)$ is the finite set of integers
 $\{a, a + g_1, a + g_1 + g_2, \dots, a + g_1 + \dots + g_r\}$; for $r = 0$ it is $\{a\}$.
 

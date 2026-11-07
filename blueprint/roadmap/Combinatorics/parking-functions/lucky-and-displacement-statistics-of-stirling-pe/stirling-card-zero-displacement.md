@@ -1,6 +1,6 @@
 # Number of cars with zero displacement
 
-**Number of cars with zero displacement.** Let $n \ge 1$ and let $w$ be a Stirling
+Let $n \ge 1$ and let $w$ be a Stirling
 permutation of order $n$, read as a parking function of length $2n$. The number of cars
 $i \in \{1, \dots, 2n\}$ with displacement $d(i) = 0$ is at least $1$ and at most $n$.
 

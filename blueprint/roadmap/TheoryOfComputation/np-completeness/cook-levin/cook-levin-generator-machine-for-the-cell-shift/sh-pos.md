@@ -1,6 +1,6 @@
 # Literal positions of an in-range shift clause
 
-**Literal positions of an in-range shift clause.** For a layout $L$ with label block size $A$,
+For a layout $L$ with label block size $A$,
 $K$ stacks and $g$ symbol codes, row width $W = A + K H g$, situation offsets $s_a$, push counts
 $p$, consumed counts $c$ and numbers $H, t, i, k, u, x, l$, the position of literal $l$ of the
 in-range shift clause $(t, i, k, u, x)$ is: if $l = 0$, the cell variable of row $t$, stack $k$,

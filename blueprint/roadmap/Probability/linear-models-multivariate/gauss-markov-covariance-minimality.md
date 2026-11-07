@@ -1,6 +1,6 @@
 # Gauss–Markov covariance minimality
 
-**Gauss–Markov covariance minimality.** Let $X$ be a real $m \times n$ matrix such that
+Let $X$ be a real $m \times n$ matrix such that
 $X^\top X$ is invertible, and let $B = (X^\top X)^{-1} X^\top$. Then $BX = I_n$, and for every
 real $n \times m$ matrix $A$ with $AX = I_n$ the matrix $AA^\top - BB^\top$ is positive
 semidefinite.

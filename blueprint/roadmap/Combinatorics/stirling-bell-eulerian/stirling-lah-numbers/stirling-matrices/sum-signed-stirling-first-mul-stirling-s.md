@@ -1,6 +1,6 @@
 # Orthogonality relation for Stirling numbers
 
-**Orthogonality relation for Stirling numbers.** Write $c(n,k)$ for the unsigned Stirling
+Write $c(n,k)$ for the unsigned Stirling
 numbers of the first kind, $s(n,k) = (-1)^{n-k} c(n,k)$ for the signed ones, and $S(k,m)$ for the
 Stirling numbers of the second kind. For all natural numbers $n$ and $m$,
 

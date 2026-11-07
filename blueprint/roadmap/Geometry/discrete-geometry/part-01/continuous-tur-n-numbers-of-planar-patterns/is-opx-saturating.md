@@ -1,6 +1,6 @@
 # Saturating sets for a point pattern
 
-**Saturating sets for a point pattern.** Let $n$ be a real number and let $P$ and $S$ be
+Let $n$ be a real number and let $P$ and $S$ be
 subsets of $\mathbb{R}^2$. Then $S$ is saturating for $P$ in $[0, n]^2$ when $S$ is an open
 subset of $[0, n]^2$ that does not contain $P$, while every open set $S'$ with
 $S \subsetneq S' \subseteq [0, n]^2$ contains $P$. Here a set $T$ contains $P$ when there are

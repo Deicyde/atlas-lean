@@ -1,6 +1,6 @@
 # Yang–Chen inverse theorem for four terms
 
-**Yang–Chen inverse theorem for four terms.** Let $a_0 < a_1 < a_2 < a_3$ be integers,
+Let $a_0 < a_1 < a_2 < a_3$ be integers,
 $A = \{a_0, a_1, a_2, a_3\}$, $\bar r = (r_0, r_1, r_2, r_3)$ positive integers and $h \ge 2$ an
 integer with $h \le r_0 + r_1 + r_2 + r_3 - 2$, and let $L(\bar r, h)$ be the Yang–Chen bound.
 If $r_1 = r_2 = 1$, then the generalized $h$-fold sumset $h^{(\bar r)}A$ has exactly

@@ -1,6 +1,6 @@
 # Pseudo-greedy remainder sequence
 
-**Pseudo-greedy remainder sequence.** For a real number $r$, the remainder sequence
+For a real number $r$, the remainder sequence
 $(x_n)_{n \ge 0}$ of the pseudo-greedy expansion of $r$ is defined by $x_0 = r$ and
 $x_{n+1} = x_n - 1/a_n$, where $a_n = \lfloor x_n^{-1} + 1 + 1/2 \rfloor$ is the integer
 nearest to $x_n^{-1} + 1$, with halves rounded up.

@@ -1,6 +1,6 @@
 # Knuth's old sum (the Reed–Dawson identity)
 
-**Knuth's old sum (the Reed–Dawson identity).** For every natural number $n$, the sum
+For every natural number $n$, the sum
 $\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{2k}{k} 2^{-k}$ equals $2^{-n} \binom{n}{n/2}$ if $n$
 is even and $0$ if $n$ is odd.
 

@@ -1,6 +1,6 @@
 # Rectangular-grid tilings fixed by the identity
 
-**Rectangular-grid tilings fixed by the identity.** Let $n$ and $m$ be positive integers, let
+Let $n$ and $m$ be positive integers, let
 $T$ be a finite set of tiles and let $\sigma$ be a permutation of $T$ with $\sigma^1 = 1$, that is,
 the identity. Then the number of tilings $F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with
 $F(c) = \sigma(F(c))$ for every cell $c$ equals $|T|^{nm}$.

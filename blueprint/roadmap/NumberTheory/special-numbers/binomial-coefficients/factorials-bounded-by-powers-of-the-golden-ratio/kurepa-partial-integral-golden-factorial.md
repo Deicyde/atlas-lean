@@ -1,6 +1,6 @@
 # Left factorial bounds at the golden factorial exponent
 
-**Left factorial bounds at the golden factorial exponent.** For every integer $n \ge 1$, let
+For every integer $n \ge 1$, let
 $!n = \sum_{k=0}^{n-1} k!$ be the left factorial, let
 $K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ be Kurepa's partial integral, and let
 $\alpha(n)$ be the least positive integer $m$ with $n! \le \varphi^m$, where $\varphi$ is the

@@ -1,6 +1,6 @@
 # The $n$-Lagrange spectrum is the closure of its quadratic-irrational values
 
-**The $n$-Lagrange spectrum is the closure of its quadratic-irrational values.** Let $n \ge 1$,
+Let $n \ge 1$,
 let $\lambda_n$ be the $n$-Lagrange approximability, and let $P_n$ be the set of real numbers
 $\alpha$ such that $\alpha = \lambda_n(\xi)$ for some quadratic irrational $\xi$, that is, an
 irrational real number with $a\xi^2 + b\xi + c = 0$ for some integers $a \ne 0$, $b$, $c$. Then

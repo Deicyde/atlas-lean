@@ -1,6 +1,6 @@
 # Four-term sequences without square-weighted zero-sum subsequences
 
-**Four-term sequences without square-weighted zero-sum subsequences.** Let $p$ be a prime and
+Let $p$ be a prime and
 $r$ a nonzero even natural number, and write $S(m)$ for the set of nonzero squares in
 $\mathbb{Z}/m\mathbb{Z}$. Let $w_1, w_2, u$ be units of $\mathbb{Z}/p^r\mathbb{Z}$ such that the
 reduction $(w_1 \bmod p, w_2 \bmod p)$ has no $S(p)$-weighted zero-sum subsequence. Then the

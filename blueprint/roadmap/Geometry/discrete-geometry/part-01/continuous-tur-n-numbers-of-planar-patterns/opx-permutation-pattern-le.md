@@ -1,6 +1,6 @@
 # Linear bound for permutation-like point patterns
 
-**Linear bound for permutation-like point patterns.** There is a real constant $C$ such that
+There is a real constant $C$ such that
 for every real $c > 0$ there is a real constant $K$ with the following property. Let
 $P \subseteq \mathbb{R}^2$ be a finite set of $k$ points whose $x$-coordinates are pairwise
 distinct and whose $y$-coordinates are pairwise distinct, such that any two consecutive

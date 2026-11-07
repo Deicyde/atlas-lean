@@ -1,6 +1,6 @@
 # Evaluation of a QBF matrix gate
 
-**Evaluation of a QBF matrix gate.** Given a list $s$ of truth values (the values of the earlier
+Given a list $s$ of truth values (the values of the earlier
 gates) and an assignment $\alpha$ of a truth value to every natural number, the value of a gate
 $(t, r)$ is computed as follows, where $s_a$ is the $a$-th entry of $s$ if $a$ is less than the
 length of $s$ and false otherwise: if $t = 0$ and $r = [v]$, it is $\alpha(v)$; if $t = 1$ and

@@ -1,6 +1,6 @@
 # Binomial interchange identity with harmonic weights
 
-**Binomial interchange identity with harmonic weights.** Let $K$ be a field of
+Let $K$ be a field of
 characteristic zero. For every natural number $n$ and every sequence $a : \mathbb{N} \to K$,
 
 $$\sum_{k=1}^{n} \frac{1}{k} \sum_{j=1}^{k} \binom{k}{j} a_j =

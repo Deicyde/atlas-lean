@@ -1,6 +1,6 @@
 # First entry of the one-variable circuit array
 
-**First entry of the one-variable circuit array.** The one-variable circuit array $C^X$, with
+The one-variable circuit array $C^X$, with
 entries in the field $\mathbb{Q}(X)$ of rational functions over $\mathbb{Q}$, satisfies
 $C^X_{0,1} = (X - 3)/X$.
 

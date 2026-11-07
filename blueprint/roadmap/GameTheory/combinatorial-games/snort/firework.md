@@ -1,6 +1,6 @@
 # Firework of a graph
 
-**Firework of a graph.** For a graph $G$, vertices $u$ and $v$ of $G$ and a natural number $n$,
+For a graph $G$, vertices $u$ and $v$ of $G$ and a natural number $n$,
 the $n$-firework of $G$ at $(u, v)$ is the graph obtained from $G$ by adding $2n$ new vertices,
 $n$ of which are adjacent only to $u$ and the other $n$ adjacent only to $v$.
 

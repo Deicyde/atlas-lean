@@ -1,6 +1,6 @@
 # The greatest common unitary divisor divides its second argument
 
-**The greatest common unitary divisor divides its second argument.** For positive natural
+For positive natural
 numbers $a$ and $b$, the greatest common unitary divisor $\gcd_1(a, b)$ divides $b$.
 
 ## Sources

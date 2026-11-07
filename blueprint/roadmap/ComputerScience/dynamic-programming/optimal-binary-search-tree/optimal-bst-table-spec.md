@@ -1,6 +1,6 @@
 # Optimal BST table recurrence
 
-**Optimal BST table recurrence.** Let $R$ be a linearly ordered additive commutative monoid
+Let $R$ be a linearly ordered additive commutative monoid
 in which addition is monotone, let $n$ be a natural number, let
 $p_0, \dots, p_{n-1}, q_0, \dots, q_n \in R$, and let $e$ and $\rho$ be the cost table and the
 root table returned by the optimal binary search tree procedure on these weights. For

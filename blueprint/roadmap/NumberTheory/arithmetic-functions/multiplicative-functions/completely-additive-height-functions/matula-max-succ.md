@@ -1,6 +1,6 @@
 # Recursion for the maximal Matula numbers
 
-**Recursion for the maximal Matula numbers.** Write $p_i$ for the $i$-th prime, indexed from
+Write $p_i$ for the $i$-th prime, indexed from
 one ($p_1 = 2$). For every $n \ge 4$ the Gutman–Ivić maximal Matula numbers satisfy
 $P(n + 1) = p_{P(n)}$.
 

@@ -1,6 +1,6 @@
 # $L^p$ on $(0,1)$ via averages over partitions
 
-**$L^p$ on $[0,1]$ via averages over partitions.** Let $f : \mathbb{R} \to \mathbb{R}$ be in
+Let $f : \mathbb{R} \to \mathbb{R}$ be in
 $L^1([0, 1])$ and let $p > 1$ be a real number. Then $f \in L^p([0, 1])$ if and only if there is
 a real number $C$ such that
 

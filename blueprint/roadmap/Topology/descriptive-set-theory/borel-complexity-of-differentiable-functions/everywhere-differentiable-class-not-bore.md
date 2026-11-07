@@ -1,6 +1,6 @@
 # Everywhere differentiable functions do not form a Borel set
 
-**Everywhere differentiable functions do not form a Borel set.** In the space $C((0, 1))$ of
+In the space $C((0, 1))$ of
 continuous real functions on the open interval $(0, 1)$, with the compact-open topology (uniform
 convergence on compact subsets), the set of functions that have a derivative at every point of
 $(0, 1)$ is not a Borel set.

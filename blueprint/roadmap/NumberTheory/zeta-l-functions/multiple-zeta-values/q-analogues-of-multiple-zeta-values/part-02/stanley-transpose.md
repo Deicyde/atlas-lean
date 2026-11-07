@@ -1,6 +1,6 @@
 # Transposed partition in Stanley coordinates
 
-**Transposed partition in Stanley coordinates.** For tuples $\mathbf{m} = (m_1, \dots, m_r)$
+For tuples $\mathbf{m} = (m_1, \dots, m_r)$
 and $\mathbf{n} = (n_1, \dots, n_r)$ of natural numbers, the transpose
 $\rho(\mathbf{m}, \mathbf{n})$ is the pair of tuples
 $((n_1 + \dots + n_r, \dots, n_1 + n_2, n_1), (m_r, m_{r-1} - m_r, \dots, m_1 - m_2))$: for

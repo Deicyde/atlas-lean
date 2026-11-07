@@ -1,6 +1,6 @@
 # Maximal functions of bounded a.e.-null sequences tend to zero a.e
 
-**Maximal functions of bounded a.e.-null sequences tend to zero a.e.** Let
+Let
 $(f_n)_{n \in \mathbb{N}}$ be a sequence of functions $f_n : \mathbb{R} \to \mathbb{R}$, each
 Lebesgue measurable on $[0,1]$, such that $f_n(x) \in [0,1]$ for every $n$ and every
 $x \in [0,1]$, and $f_n(x) \to 0$ as $n \to \infty$ for almost every $x \in [0,1]$. For

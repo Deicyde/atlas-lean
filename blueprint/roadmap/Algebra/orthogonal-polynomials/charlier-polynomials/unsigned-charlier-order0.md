@@ -1,6 +1,6 @@
 # Unsigned Charlier polynomials of order 0
 
-**Unsigned Charlier polynomials of order 0.** For a semiring $R$ and a natural number $n$,
+For a semiring $R$ and a natural number $n$,
 the $n$-th unsigned Charlier polynomial of order $0$ is
 
 $$\sum_{k=0}^{n} \binom{n}{k}\, x^{\overline{k}} \in R[x],$$

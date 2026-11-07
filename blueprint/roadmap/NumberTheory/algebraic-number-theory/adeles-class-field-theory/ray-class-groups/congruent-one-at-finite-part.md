@@ -1,6 +1,6 @@
 # Multiplicative congruence to one at the finite part
 
-**Multiplicative congruence to one at the finite part.** Let $\mathfrak m$ be a modulus of a
+Let $\mathfrak m$ be a modulus of a
 number field $K$, with finite part the nonzero ideal $\mathfrak m_0$ of $\mathcal O_K$. For a
 nonzero prime ideal $\mathfrak p$ of $\mathcal O_K$, write $v_{\mathfrak p}(I)$ for the exponent of
 $\mathfrak p$ in the factorization of a nonzero fractional ideal $I$ of $\mathcal O_K$, and for

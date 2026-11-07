@@ -1,6 +1,6 @@
 # Upper bound for the number of sums of consecutive prime powers
 
-**Upper bound for the number of sums of consecutive prime powers.** Let $p_1 < p_2 < \cdots$
+Let $p_1 < p_2 < \cdots$
 be the primes and let $k > 1$ be a natural number. For a natural number $x$ let $s_k(x)$ be the
 number of pairs $(\ell, m)$ of integers with $0 \le \ell < x$ and $1 \le m \le x$ such that
 $p_{\ell+1}^k + \cdots + p_{\ell+m}^k \le x$. Then for every real $\varepsilon > 0$, for all

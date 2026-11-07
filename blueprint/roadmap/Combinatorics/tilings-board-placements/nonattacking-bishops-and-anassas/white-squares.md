@@ -1,6 +1,6 @@
 # White squares of the square board
 
-**White squares of the square board.** For a natural number $m$, the white squares of the
+For a natural number $m$, the white squares of the
 square board $S_m = [1, m]^2$ are the integer squares $(i, j) \in S_m$ for which $i + j$ is
 even.
 

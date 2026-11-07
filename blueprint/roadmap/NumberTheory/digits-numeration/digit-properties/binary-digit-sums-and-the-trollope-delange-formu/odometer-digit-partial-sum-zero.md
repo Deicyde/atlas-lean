@@ -1,6 +1,6 @@
 # The odometer partial sum vanishes at zero
 
-**The odometer partial sum vanishes at zero.** For every $q \in \mathbb{C}$ and every dyadic
+For every $q \in \mathbb{C}$ and every dyadic
 integer $\omega$, the interpolated odometer partial sum satisfies $S_{q,\omega}(0) = 0$.
 
 ## Sources

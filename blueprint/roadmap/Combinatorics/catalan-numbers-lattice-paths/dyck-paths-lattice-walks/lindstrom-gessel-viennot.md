@@ -1,6 +1,6 @@
 # Lindström–Gessel–Viennot lemma
 
-**Lindström–Gessel–Viennot lemma.** Let $R$ be a commutative ring, let $n$ be a natural
+Let $R$ be a commutative ring, let $n$ be a natural
 number, and let $E$ be a relation on a type $V$, read as a directed graph on $V$ with an edge
 from $u$ to $v$ whenever $E(u, v)$. Suppose there is a function $r : V \to \mathbb{N}$ with
 $r(u) < r(v)$ whenever $E(u, v)$, so the graph is acyclic. A path from $u$ to $w$ is a nonempty

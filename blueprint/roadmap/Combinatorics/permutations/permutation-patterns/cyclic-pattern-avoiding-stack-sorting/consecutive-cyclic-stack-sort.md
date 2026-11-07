@@ -1,6 +1,6 @@
 # Consecutive-cyclic-pattern-avoiding stack-sorting map
 
-**Consecutive-cyclic-pattern-avoiding stack-sorting map.** For a sequence $\sigma$, the map
+For a sequence $\sigma$, the map
 $s^{[\sigma]}$ sends a sequence $\pi$ of natural numbers to the output of the following stack
 procedure. Read $\pi$ from left to right, starting with an empty stack. Before pushing the next
 entry $x$, pop the fewest entries from the top of the stack, sending them to the output in the

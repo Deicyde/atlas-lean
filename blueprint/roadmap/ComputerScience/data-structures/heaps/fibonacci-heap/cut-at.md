@@ -1,6 +1,6 @@
 # Cutting a subtree out of a Fibonacci tree
 
-**Cutting a subtree out of a Fibonacci tree.** For a path $p$ of child indices and a Fibonacci
+For a path $p$ of child indices and a Fibonacci
 tree $t$, the cut of $t$ at $p$ is either undefined or a pair of an extracted subtree and an
 optional remainder tree. For the empty path, the extracted subtree is $t$ and there is no
 remainder. For a path consisting of an index $i$ followed by a path $q$, where $t$ has root $r$

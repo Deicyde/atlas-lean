@@ -1,6 +1,6 @@
 # Disintegration of the joint law from a factorization of densities
 
-**Disintegration of the joint law from a factorization of densities.** Let $\nu$ be an
+Let $\nu$ be an
 s-finite measure on a measurable space $\Theta$ and $\rho$ an s-finite measure on a measurable
 space $\mathcal{X}$. Let $p : \Theta \to [0, \infty]$,
 $q : \Theta \times \mathcal{X} \to [0, \infty]$, $c : \mathcal{X} \to [0, \infty]$ and

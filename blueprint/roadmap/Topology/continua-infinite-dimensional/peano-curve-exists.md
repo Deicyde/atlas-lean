@@ -1,6 +1,6 @@
 # Peano's space-filling curve
 
-**Peano's space-filling curve.** There exists a continuous surjection from the closed unit interval to its square.
+There exists a continuous surjection from the closed unit interval to its square.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Novikoff's mistake bound over an ordered field
 
-**Novikoff's mistake bound over an ordered field.** Let $F$ be a linearly ordered field,
+Let $F$ be a linearly ordered field,
 $\iota$ a finite type, $v \cdot w = \sum_{i \in \iota} v_i w_i$ the dot product on $F^\iota$,
 $u \in F^\iota$, and $\gamma, R \in F$ with $\gamma > 0$. Let $L$ be a finite list of labelled
 examples $(x, y)$ with $x \in F^\iota$ and $y$ a Boolean, such that every example in $L$ satisfies

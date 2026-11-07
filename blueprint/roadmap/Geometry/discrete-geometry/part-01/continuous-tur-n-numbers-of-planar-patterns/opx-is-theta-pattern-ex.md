@@ -1,6 +1,6 @@
 # Continuous Turán numbers versus 0-1 matrix extremal functions
 
-**Continuous Turán numbers versus 0-1 matrix extremal functions.** Let $P$ be a finite subset
+Let $P$ be a finite subset
 of $\mathbb{R}^2$. Then the continuous Turán number $\mathrm{opx}(n, P)$ and the 0-1 matrix
 extremal function $\mathrm{ex}(n, M_P)$ of $P$ on the $n \times n$ grid satisfy
 $\mathrm{opx}(n, P) = \Theta(\mathrm{ex}(n, M_P))$ as $n \to \infty$ through the natural numbers,

@@ -1,6 +1,6 @@
 # Bit-moving loop
 
-**Bit-moving loop.** For stacks $a$ and $b$, a decoder $d$ reading each symbol of $a$ as a bit
+For stacks $a$ and $b$, a decoder $d$ reading each symbol of $a$ as a bit
 or a marker, an encoder $g$ from bits to symbols of $b$, and labels $\mathit{self}$ and
 $\mathit{next}$, the bit-moving loop from $a$ to $b$ is the statement that looks at the top of
 $a$: if it is a symbol that $d$ reads as a bit $x$, it pops it, pushes $g(x)$ onto $b$ and goes to

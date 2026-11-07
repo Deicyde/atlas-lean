@@ -1,6 +1,6 @@
 # The accelerated Collatz map on odd numbers
 
-**The accelerated Collatz map on odd numbers.** Let $C$ be the accelerated Collatz map and
+Let $C$ be the accelerated Collatz map and
 $T$ the Collatz map. For every odd natural number $n$, $C(n) = T(T(n))$.
 
 ## Sources

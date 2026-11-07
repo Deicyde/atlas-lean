@@ -1,6 +1,6 @@
 # $r$-in-$s$ dissection
 
-**$r$-in-$s$ dissection.** Let $D$ be a set of pairs $(a, b)$ of vertices of the convex
+Let $D$ be a set of pairs $(a, b)$ of vertices of the convex
 $s$-gon with vertices $0, 1, \dots, s - 1$, and let $R$ be a set of its vertices. Then $D$ is
 an $r$-in-$s$ dissection with inner polygon $R$ when all of the following hold: the number of
 elements of $D$ plus $r$ equals $s$, and $R$ has $r$ elements; every $(a, b) \in D$ is a

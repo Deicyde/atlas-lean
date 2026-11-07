@@ -1,6 +1,6 @@
 # Increasing-cycle permutation
 
-**Increasing-cycle permutation.** A permutation $\tau$ of $\{0, \dots, n-1\}$ is an
+A permutation $\tau$ of $\{0, \dots, n-1\}$ is an
 increasing-cycle permutation when, for all $x$ and $y$ in $\{0, \dots, n-1\}$ such that
 $\tau(x) \le x$ and $y$ lies in the same cycle of $\tau$ as $x$, we have $\tau(x) \le y$. That
 is, whenever $\tau(x) \le x$, the value $\tau(x)$ is the least element of the cycle of $x$;

@@ -1,6 +1,6 @@
 # Remainder form of the weighted power-sum equation for Lucas sequences
 
-**Remainder form of the weighted power-sum equation for Lucas sequences.** Let $x$ be a
+Let $x$ be a
 positive integer, let $y \in \{1, -1\}$, and let $(U_n)$ be the Lucas sequence with parameters
 $(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and $U_{n+2} = x U_{n+1} - y U_n$. Suppose
 $D = x^2 - 4y > 0$ and put $\alpha = (x + \sqrt{D})/2$. Let $n, p, q$ be positive integers and

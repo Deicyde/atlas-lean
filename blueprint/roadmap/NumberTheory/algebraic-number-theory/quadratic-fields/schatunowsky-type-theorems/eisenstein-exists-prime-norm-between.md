@@ -1,6 +1,6 @@
 # Bertrand's postulate for Eisenstein integers
 
-**Bertrand's postulate for Eisenstein integers.** Let $\mathcal{O}$ be the ring of integers of
+Let $\mathcal{O}$ be the ring of integers of
 the cyclotomic field $\mathbb{Q}(\zeta_3)$, and let $N$ be the field norm from $\mathbb{Q}(\zeta_3)$
 to $\mathbb{Q}$. For every prime element $\pi$ of $\mathcal{O}$ there is a prime element $\rho$ of
 $\mathcal{O}$ with $N(\pi) < N(\rho) \le 2N(\pi)$.

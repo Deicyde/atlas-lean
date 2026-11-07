@@ -1,6 +1,6 @@
 # Vanishing alternating sum of the A304330 array
 
-**Vanishing alternating sum of the A304330 array.** For every natural number $k \ge 2$,
+For every natural number $k \ge 2$,
 
 $$\sum_{m=1}^{k} (-1)^m \frac{((m-1)!)^2}{(2m)!} R(k, m) = 0,$$
 

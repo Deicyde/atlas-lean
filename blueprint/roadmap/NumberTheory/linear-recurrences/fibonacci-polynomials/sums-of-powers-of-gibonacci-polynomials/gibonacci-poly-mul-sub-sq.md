@@ -1,6 +1,6 @@
 # Catalan-type identities for Fibonacci and Lucas polynomials
 
-**Catalan-type identities for Fibonacci and Lucas polynomials.** Let $f_i$ and $\ell_i$ be
+Let $f_i$ and $\ell_i$ be
 the Fibonacci and Lucas polynomials in $\mathbb{Z}[x]$, defined by $f_0 = 0$, $f_1 = 1$,
 $\ell_0 = 2$, $\ell_1 = x$ and $g_{i+2} = x g_{i+1} + g_i$ for $g = f, \ell$. For all natural
 numbers $k \le n$,

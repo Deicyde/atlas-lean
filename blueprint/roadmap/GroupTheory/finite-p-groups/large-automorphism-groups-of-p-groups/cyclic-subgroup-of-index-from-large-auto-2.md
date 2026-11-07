@@ -1,6 +1,6 @@
 # Large automorphisms of p-groups force cyclic subgroups of given index
 
-**Large automorphisms of p-groups force cyclic subgroups of given index.** For every prime $p$ and
+For every prime $p$ and
 all natural numbers $k$ and $m$ with $m \ge 64k + 2$, if a finite group $G$ of order $p^m$ has an
 automorphism of order $p^{m-k}$, then $G$ has a cyclic subgroup of index $p^k$.
 

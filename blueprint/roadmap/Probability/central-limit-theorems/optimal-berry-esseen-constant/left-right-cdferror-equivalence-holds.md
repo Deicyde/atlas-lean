@@ -1,6 +1,6 @@
 # Kolmogorov distance via left-continuous distribution functions
 
-**Kolmogorov distance via left-continuous distribution functions.** Let $\mu$ be a probability
+Let $\mu$ be a probability
 measure on $\mathbb{R}$ with mean $0$, variance $1$ and finite third absolute moment, let $n \ge 1$
 be an integer, and let $S_n = X_1 + \dots + X_n$ for independent random variables $X_1, X_2, \dots$
 each with law $\mu$. Then

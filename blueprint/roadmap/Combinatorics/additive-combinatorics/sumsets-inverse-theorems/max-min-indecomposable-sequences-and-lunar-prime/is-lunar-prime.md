@@ -1,6 +1,6 @@
 # Lunar primes
 
-**Lunar primes.** Let $b$ be a natural number. The lunar unit of base $b$ is the constant
+Let $b$ be a natural number. The lunar unit of base $b$ is the constant
 polynomial $b - 1$, the sequence with constant term $b - 1$ and all other terms $0$. A coefficient
 sequence $f : \mathbb{N} \to \mathbb{N}$ is a lunar prime of base $b$ (Applegate, LeBrun and
 Sloane) when for all sequences $g, h : \mathbb{N} \to \mathbb{N}$ with all terms less than $b$ and

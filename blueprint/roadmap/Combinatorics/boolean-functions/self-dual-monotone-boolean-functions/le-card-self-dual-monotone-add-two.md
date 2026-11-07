@@ -1,6 +1,6 @@
 # Dedekind numbers bound self-dual counts from below (Corollary 11)
 
-**Dedekind numbers bound self-dual counts from below (Corollary 11).** For a natural number
+For a natural number
 $n$, let $d_n$ be the number of monotone Boolean functions $\{0,1\}^n \to \{0,1\}$ (for the
 coordinatewise order with $0 < 1$) and let $\lambda_{n+2}$ be the number of self-dual monotone
 Boolean functions $\{0,1\}^{n+2} \to \{0,1\}$, that is, monotone functions $f$ with

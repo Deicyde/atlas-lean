@@ -1,6 +1,6 @@
 # Options with reduction in Slow {n - 1}-Nim
 
-**Options with reduction in Slow {n - 1}-Nim.** Let $n \ge 2$, $k = n - 1$ and $A = \{k\}$.
+Let $n \ge 2$, $k = n - 1$ and $A = \{k\}$.
 Let $p$ be a reduced position of Slow$A$-Nim on $n$ stacks, with $s = (p_1 + \dots + p_n) \bmod 2k$,
 $o$ odd stacks, and maximum $M = \max_i p_i$ attained by $\alpha$ stacks. Let $p'$ be obtained
 from $p$ by playing on a set $S$ of $k$ stacks, each holding at least one token in $p$, and

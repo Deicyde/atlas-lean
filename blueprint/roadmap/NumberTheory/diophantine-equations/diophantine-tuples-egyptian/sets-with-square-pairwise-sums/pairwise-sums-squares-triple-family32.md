@@ -1,6 +1,6 @@
 # Four-parameter triples with square pairwise sums, family (3.2)
 
-**Four-parameter triples with square pairwise sums, family (3.2).** For all integers
+For all integers
 $p, q, r, s$, put $a_1 = -(p+q+r+s)(p+q-r-s)(p-q+r-s)(p-q-r+s)$,
 $a_2 = -(p-q+r+s)(p-q-r-s)(p+q+r-s)(p+q-r+s)$, $a_3 = 0$ and
 $b_1 = (p^2 - q^2 + r^2 - s^2)^2$, $b_2 = (p^2 - q^2 - r^2 + s^2)^2$,

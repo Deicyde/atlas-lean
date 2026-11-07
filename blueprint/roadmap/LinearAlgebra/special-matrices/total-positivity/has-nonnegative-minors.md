@@ -1,6 +1,6 @@
 # Matrices with nonnegative minors
 
-**Matrices with nonnegative minors.** Let $\iota$ and $\kappa$ be linearly ordered types and
+Let $\iota$ and $\kappa$ be linearly ordered types and
 let $M$ be a real matrix with rows indexed by $\iota$ and columns indexed by $\kappa$. Then $M$
 has nonnegative minors when, for every $k \in \mathbb{N}$ and all strictly increasing maps
 $r \colon \{0, \dots, k-1\} \to \iota$ and $c \colon \{0, \dots, k-1\} \to \kappa$, the

@@ -1,6 +1,6 @@
 # Neto's identity for higher-order Bernoulli numbers
 
-**Neto's identity for higher-order Bernoulli numbers.** For every complex number $x$ and all
+For every complex number $x$ and all
 natural numbers $n$ and $\ell$,
 
 $$\sum_{k=0}^{n} \binom{n}{k} x^{n-k} B_{\ell+k}^{(x)} =

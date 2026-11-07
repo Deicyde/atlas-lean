@@ -1,6 +1,6 @@
 # A counter step is sticky at halting states
 
-**A counter step is sticky at halting states**: past the end of the
+Past the end of the
 program the state does not change.
 
 ## Sources

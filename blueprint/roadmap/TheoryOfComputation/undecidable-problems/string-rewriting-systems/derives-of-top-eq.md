@@ -1,6 +1,6 @@
 # The backward direction of the MPCP reduction
 
-**The backward direction of the MPCP reduction.** Let $(R, x, y)$ be a reachability instance
+Let $(R, x, y)$ be a reachability instance
 and read words over $\alpha$ as words of letters. Let $A$ be a sequence of dominoes of the MPCP
 instance of $(R, x, y)$. For all words $v, s, t$ over $\alpha$, if $s$ rewrites to $t$ under $R$
 in zero or more steps and the top of $A$ equals $v \star t$ followed by the bottom of $A$, where

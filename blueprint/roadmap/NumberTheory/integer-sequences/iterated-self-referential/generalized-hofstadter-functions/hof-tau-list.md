@@ -1,6 +1,6 @@
 # The Hofstadter substitution on finite words
 
-**The Hofstadter substitution on finite words.** For a natural number $k$, $\tau_k$ maps a
+For a natural number $k$, $\tau_k$ maps a
 finite word $w$ over $\mathbb{N}$ to the concatenation, in order, of the words $\tau_k(a)$ for the
 letters $a$ of $w$, where $\tau_k(k) = k\,1$ and $\tau_k(i) = i + 1$ for every letter $i \ne k$.
 

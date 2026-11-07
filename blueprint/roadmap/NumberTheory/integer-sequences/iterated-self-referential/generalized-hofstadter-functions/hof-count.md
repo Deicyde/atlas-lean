@@ -1,6 +1,6 @@
 # Letter counts in the Hofstadter word
 
-**Letter counts in the Hofstadter word.** Let $x_k$ be the fixed point, starting with $k$, of
+Let $x_k$ be the fixed point, starting with $k$, of
 the substitution sending the letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, and write
 $x_k[j]$ for its letter at index $j$. For a predicate $P$ on letters, $C_k^{(P)}(n)$ is the number
 of letters satisfying $P$ in the prefix $x_k[0] \cdots x_k[n-1]$, that is,

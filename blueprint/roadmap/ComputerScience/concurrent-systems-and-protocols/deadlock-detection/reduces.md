@@ -1,6 +1,6 @@
 # Reduction sequences
 
-**Reduction sequences.** Let $P$ be a type of processes and $R$ a type of resource types, and
+Let $P$ be a type of processes and $R$ a type of resource types, and
 let $S$ be a state that gives each process $p$ an allocation $\mathrm{alloc}(p)$ and a request
 $\mathrm{request}(p)$, both functions $R \to \mathbb{N}$ ordered componentwise. A list of
 processes $p_1, \dots, p_k$ is a reduction sequence of $S$ from the free vector

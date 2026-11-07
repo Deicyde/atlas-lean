@@ -1,6 +1,6 @@
 # Convolution of the Fibonacci 4-step and 5-step numbers
 
-**Convolution of the Fibonacci 4-step and 5-step numbers.** Let $Q_j$ and $P_j$ be the
+Let $Q_j$ and $P_j$ be the
 Fibonacci $4$-step and $5$-step numbers, where the Fibonacci $k$-step numbers start $0, 1$ and
 each later term is the sum of the $k$ terms before it (terms of negative index being $0$). For
 every natural number $n$,

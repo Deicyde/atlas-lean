@@ -1,6 +1,6 @@
 # Dyson's rank of a partition
 
-**Dyson's rank of a partition.** The rank of a partition $\mu$ of $n$ is the integer
+The rank of a partition $\mu$ of $n$ is the integer
 $r(\mu) = \mu_1 - \ell(\mu)$, the largest part $\mu_1$ of $\mu$ minus its number of parts
 $\ell(\mu)$, where the largest part of the empty partition is taken to be $0$. In particular the
 empty partition has rank $0$.

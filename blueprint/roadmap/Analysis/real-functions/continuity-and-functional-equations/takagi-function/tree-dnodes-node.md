@@ -1,6 +1,6 @@
 # Recursion for the number of $D$-nodes
 
-**Recursion for the number of $D$-nodes.** Write $D(t)$ for the number of $D$-nodes of a
+Write $D(t)$ for the number of $D$-nodes of a
 full binary tree $t$. If the root of $t$ has left subtree $l$ and right subtree $r$, then
 $D(t) = \varepsilon + D(l) + D(r)$, where $\varepsilon = 0$ if $l$ and $r$ have the same number
 of leaves and $\varepsilon = 1$ otherwise.

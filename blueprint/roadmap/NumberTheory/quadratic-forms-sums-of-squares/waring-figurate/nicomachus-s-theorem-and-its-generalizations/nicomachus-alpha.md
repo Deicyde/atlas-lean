@@ -1,6 +1,6 @@
 # The Kim–Stolarsky convergents $\alpha_k$
 
-**The Kim–Stolarsky convergents $\alpha_k$.** The rational numbers $\alpha_k$, for natural
+The rational numbers $\alpha_k$, for natural
 numbers $k$, are defined by $\alpha_0 = 0$, $\alpha_1 = 1$ and
 $\alpha_{k+1} = \frac{15 + 7\alpha_k}{13 + 6\alpha_k}$ for $k \ge 1$.
 

@@ -1,6 +1,6 @@
 # Špacapan's counterexample to prism-Hamiltonicity
 
-**Špacapan's counterexample to prism-Hamiltonicity.** The prism-Hamiltonicity conjecture for
+The prism-Hamiltonicity conjecture for
 3-connected planar graphs is false: there is a finite simple graph $G$ that is
 $3$-vertex-connected and straight-line planar whose prism $G \mathbin{\square} K_2$ is not
 Hamiltonian.

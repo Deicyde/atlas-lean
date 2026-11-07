@@ -1,6 +1,6 @@
 # The one-hot cell family
 
-**The one-hot cell family.** Fix a layout with label/state block size $A$, $K$ stacks and
+Fix a layout with label/state block size $A$, $K$ stacks and
 $g$ symbol codes, and bounds $T$ and $H$. Let $W = A + KHg$ be the row width and $V = (T+1)W$
 the number of variables $v_0, \dots, v_{V-1}$. For every time $t \le T$, stack $k < K$ and depth
 $j < H$, the cell with base $B = tW + A + (kH + j)g$ contributes the at-least-one clause

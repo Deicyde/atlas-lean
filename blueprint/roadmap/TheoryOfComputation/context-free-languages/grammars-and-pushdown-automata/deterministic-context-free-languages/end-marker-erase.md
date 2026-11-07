@@ -1,6 +1,6 @@
 # End-marker erasure
 
-**End-marker erasure.** Erase the end marker: a left letter maps to its one-letter word,
+Erase the end marker: a left letter maps to its one-letter word,
 the end marker maps to the empty word.
 
 ## Sources

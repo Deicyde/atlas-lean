@@ -1,3 +1,3 @@
 # Positivity of expected reference counts on polymorphic data
 
-**Positivity of expected reference counts on polymorphic data.** On polymorphic data the expected reference counts are positive.
+On polymorphic data the expected reference counts are positive.

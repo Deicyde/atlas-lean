@@ -1,6 +1,6 @@
 # Lower bound for reciprocal sums over almost primes of almost prime index
 
-**Lower bound for reciprocal sums over almost primes of almost prime index.** A $k$-almost
+A $k$-almost
 prime is a positive integer with exactly $k$ prime factors counted with multiplicity. For positive
 integers $j$ and $k$ let $N_{jk}$ be the set of $j$-almost primes whose index in the increasing
 enumeration of the $j$-almost primes (starting at $1$) is a $k$-almost prime. Fix an integer

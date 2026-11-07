@@ -1,6 +1,6 @@
 # Measurable rectangles lie in the σ-algebra of cylinder rectangles
 
-**Measurable rectangles lie in the σ-algebra of cylinder rectangles.** Let
+Let
 $U \subseteq \mathbb{R}$ be a Borel set and let $V$ be a set of paths
 $f : \mathbb{R}_{\ge 0} \to \mathbb{R}$ that is measurable for the product σ-algebra. Then
 $U \times V$ belongs to the σ-algebra on $\mathbb{R} \times (\mathbb{R}_{\ge 0} \to \mathbb{R})$

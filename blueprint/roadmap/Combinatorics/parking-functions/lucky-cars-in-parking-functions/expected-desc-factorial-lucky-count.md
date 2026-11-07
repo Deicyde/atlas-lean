@@ -1,6 +1,6 @@
 # Factorial moments of the number of lucky cars
 
-**Factorial moments of the number of lucky cars.** Let $n \ge 1$ and $\ell \in \mathbb{N}$, let
+Let $n \ge 1$ and $\ell \in \mathbb{N}$, let
 $X(f)$ be the number of lucky cars of a parking function $f$ of length $n$, and let
 $P_n(x) = \frac{1}{n+1} \prod_{i=0}^{n-1} \bigl((n+1-i)x + i\bigr) \in \mathbb{Q}[x]$. Then
 

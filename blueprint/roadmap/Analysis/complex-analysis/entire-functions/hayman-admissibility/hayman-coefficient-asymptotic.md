@@ -1,6 +1,6 @@
 # Hayman's coefficient asymptotic (finite radius)
 
-**Hayman's coefficient asymptotic (finite radius).** Let $G : \mathbb{C} \to \mathbb{C}$ be
+Let $G : \mathbb{C} \to \mathbb{C}$ be
 Hayman admissible on $(R_0, \rho)$, with Hayman auxiliary functions $A$ and $B$. Let
 $(c_n)_{n \ge 0}$ be complex numbers such that $\sum_{n \ge 0} c_n z^n$ converges absolutely to
 $G(z)$ for every complex $z$ with $|z| < \rho$, and let $(r_n)_{n \ge 0}$ be real numbers such

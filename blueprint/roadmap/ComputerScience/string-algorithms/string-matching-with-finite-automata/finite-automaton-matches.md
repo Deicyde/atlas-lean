@@ -1,6 +1,6 @@
 # Finite-automaton string matcher
 
-**Finite-automaton string matcher.** Let $P$ be a pattern of length $m$ and $T$ a text over
+Let $P$ be a pattern of length $m$ and $T$ a text over
 the alphabet $\{0, \dots, A-1\}$. This timed computation first computes the transition table of
 $P$, then runs through $T$ starting in state $0$: on reading the $i$-th symbol $a$ of $T$ in
 state $q$ it moves to the state given by the table entry at index $qA + a$, and if that state is

@@ -1,6 +1,6 @@
 # Alternating sums of Fibonacci and Lucas numbers
 
-**Alternating sums of Fibonacci and Lucas numbers.** Let $(F_n)$ and $(L_n)$ be the
+Let $(F_n)$ and $(L_n)$ be the
 Fibonacci and Lucas numbers, that is, the $(1, 1)$-Fibonacci and $(1, 1)$-Lucas numbers, viewed
 as complex numbers. Then for every integer $n \ge 0$,
 

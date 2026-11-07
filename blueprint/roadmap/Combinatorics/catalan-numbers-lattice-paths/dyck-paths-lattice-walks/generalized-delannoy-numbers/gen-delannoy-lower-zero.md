@@ -1,6 +1,6 @@
 # The lower and upper generalized Delannoy numbers agree at index zero
 
-**The lower and upper generalized Delannoy numbers agree at index zero.** For natural
+For natural
 numbers $k$, $m$ and $n$, let
 $D_k(m, n) = \sum_{j=0}^{n} \binom{m + n - k - j}{n - k} \binom{n}{j}$ (with subtraction
 truncated at $0$) and

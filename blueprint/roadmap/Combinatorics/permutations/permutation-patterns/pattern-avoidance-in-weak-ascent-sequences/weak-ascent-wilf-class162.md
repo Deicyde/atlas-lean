@@ -1,6 +1,6 @@
 # Weak-ascent Wilf equivalence in Class 162
 
-**Weak-ascent Wilf equivalence in Class 162.** For every natural number $n$, the number of
+For every natural number $n$, the number of
 weak ascent sequences of length $n$ avoiding every pattern in $\{010, 100, 101, 120\}$ equals the
 number avoiding every pattern in $\{010, 100, 110, 120\}$.
 

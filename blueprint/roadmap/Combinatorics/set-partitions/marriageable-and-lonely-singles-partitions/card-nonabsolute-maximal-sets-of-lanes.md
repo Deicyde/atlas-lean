@@ -1,6 +1,6 @@
 # Nonabsolute maximal sets of lanes are counted by marriageable singles partitions
 
-**Nonabsolute maximal sets of lanes are counted by marriageable singles partitions.** For
+For
 every $n \ge 0$, the number of maximal sets of lanes of the standard road intersection of size $n$
 that are not absolute equals $M_n$, the number of noncrossing partitions of $\{0, \dots, n-1\}$
 that are marriageable singles partitions.

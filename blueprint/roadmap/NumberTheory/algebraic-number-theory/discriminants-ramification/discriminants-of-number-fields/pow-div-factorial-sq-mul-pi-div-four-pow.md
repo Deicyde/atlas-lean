@@ -1,6 +1,6 @@
 # Comparison of the Minkowski and exponential discriminant bounds
 
-**Comparison of the Minkowski and exponential discriminant bounds.** Let $n$ and $s$ be
+Let $n$ and $s$ be
 natural numbers with $n \ne 0$ and $2s \le n$, and let $e$ be Euler's number. Then
 
 $$\frac{1}{e^2 n} \left(\frac{\pi e^2}{4}\right)^n <

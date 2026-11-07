@@ -1,6 +1,6 @@
 # Profinite rigidity of the Bianchi group over the Eisenstein integers
 
-**Profinite rigidity of the Bianchi group over the Eisenstein integers.** Let $\omega$ be a
+Let $\omega$ be a
 primitive cube root of unity, so that the ring $\mathbb{Z}[\omega]$ of Eisenstein integers is the
 ring of integers of $\mathbb{Q}(\sqrt{-3})$. The Bianchi group $\mathrm{PSL}(2, \mathbb{Z}[\omega])$
 is profinitely rigid: it is finitely generated and residually finite, and it is isomorphic to

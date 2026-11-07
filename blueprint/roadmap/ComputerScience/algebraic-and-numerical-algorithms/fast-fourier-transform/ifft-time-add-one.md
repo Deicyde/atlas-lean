@@ -1,6 +1,6 @@
 # Exact operation count of the inverse FFT
 
-**Exact operation count of the inverse FFT.** Let $R$ be a field with a star ring structure,
+Let $R$ be a field with a star ring structure,
 let $d$ be a natural number, $N = 2^d$, $\omega \in R$ arbitrary and $x \in R^N$. The number $T$ of
 operations charged by the inverse FFT procedure on $x$ with root $\omega$ satisfies
 $T + 1 = (7d + 10) \cdot 2^d + 1$, equivalently $T = (7d + 10) \cdot 2^d$.

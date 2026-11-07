@@ -1,6 +1,6 @@
 # Multiplicativity of the norm
 
-**Multiplicativity of the norm.** Let $F$ be a finite field with $q$ elements, and let
+Let $F$ be a finite field with $q$ elements, and let
 $|f| = q^{\deg f}$ be the norm of a nonzero $f \in F[T]$. For all nonzero $f, g \in F[T]$,
 $|fg| = |f| \, |g|$.
 

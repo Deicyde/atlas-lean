@@ -1,6 +1,6 @@
 # The entropy and volume isotropic constants of a convex body agree
 
-**The entropy and volume isotropic constants of a convex body agree.** Let $n \ge 1$ and let
+Let $n \ge 1$ and let
 $K \subseteq \mathbb{R}^n$ be a full-dimensional convex body of Lebesgue measure
 $\mathrm{Vol}(K)$, with uniform probability measure $\lambda_K$, uniform density $f_K$, and
 covariance matrix $C_K$ of the coordinates under $\lambda_K$. Then the entropy isotropic constant

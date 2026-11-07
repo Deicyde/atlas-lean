@@ -1,6 +1,6 @@
 # A yield from one nonterminal starts with one of its productions
 
-**A yield from one nonterminal starts with one of its productions.** Inversion of a yield from a single nonterminal: it begins with
+Inversion of a yield from a single nonterminal: it begins with
 one production of that nonterminal.
 
 ## Sources

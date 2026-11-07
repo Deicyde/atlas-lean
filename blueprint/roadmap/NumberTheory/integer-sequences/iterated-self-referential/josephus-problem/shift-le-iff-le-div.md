@@ -1,6 +1,6 @@
 # Linear-step bound at a low extremal point
 
-**Linear-step bound at a low extremal point.** Let $k \ge 2$ and $n$ be natural numbers, let
+Let $k \ge 2$ and $n$ be natural numbers, let
 $J_k$ be the Josephus function, write $j = J_k(n+1)$, and suppose $j \le k - 1$. Then for every
 natural number $m$, $j + km \le n + 1 + m$ holds if and only if
 $m \le \lfloor (n - (j - 1)) / (k - 1) \rfloor$. Moreover, if $k - 2 + j \le n$, then

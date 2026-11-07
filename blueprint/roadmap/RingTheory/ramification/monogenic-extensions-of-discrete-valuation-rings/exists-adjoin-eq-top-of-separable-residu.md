@@ -1,6 +1,6 @@
 # Monogenicity of extensions with separable residue field extension
 
-**Monogenicity of extensions with separable residue field extension.** Let $A$ and $B$ be
+Let $A$ and $B$ be
 discrete valuation rings with residue fields $\kappa_A$, $\kappa_B$, and let $B$ be an
 $A$-algebra that is finitely generated as an $A$-module and whose structure map is a local
 homomorphism. If $\kappa_B / \kappa_A$ is separable, then there is $\alpha \in B$ with

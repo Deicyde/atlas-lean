@@ -1,6 +1,6 @@
 # Smale conjecture (Hatcher), relative parametrized form
 
-**Smale conjecture (Hatcher), relative parametrized form.** Let $n \ge 1$ and let $X$ be a
+Let $n \ge 1$ and let $X$ be a
 compact, Hausdorff, second-countable smooth manifold with boundary modelled on the
 $n$-dimensional half-space, with boundary $\partial X$. Write $S^3$ for the unit sphere of
 $\mathbb{R}^4$ and let the orthogonal group $O(4)$ act linearly on it. Let

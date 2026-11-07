@@ -1,6 +1,6 @@
 # The $2$-generalized Pell–Lucas numbers are the Pell–Lucas numbers
 
-**The $2$-generalized Pell–Lucas numbers are the Pell–Lucas numbers.** For every natural number
+For every natural number
 $n$, the $2$-generalized Pell–Lucas number $Q^{(2)}_n$ equals the $n$th Pell–Lucas number $Q_n$;
 this is the sequence $2, 2, 6, 14, 34, \ldots$.
 

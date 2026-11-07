@@ -1,6 +1,6 @@
 # Parity of Catalan numbers
 
-**Parity of Catalan numbers.** For every natural number $n$, the $n$th Catalan number $C_n$
+For every natural number $n$, the $n$th Catalan number $C_n$
 is odd if and only if $n = 2^a - 1$ for some natural number $a$.
 
 ## Sources

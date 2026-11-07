@@ -1,6 +1,6 @@
 # Comparing a name with the top entry of the variable stack
 
-**Comparing a name with the top entry of the variable stack.** Let $l_c$ be a label at which
+Let $l_c$ be a label at which
 the emitter machine compares the bit blocks of the stacks $F$ and $V$, with scratch stacks $X$ and
 $Y$, going to $r_1(b_T)$ if the blocks are equal and to $r_1(b_F)$ otherwise. Suppose that for each
 bit $b$ the machine at $r_1(b)$ moves the bit block of $X$ onto $F$ and then continues at

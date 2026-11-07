@@ -1,6 +1,6 @@
 # Denominator of $B_n(x) - B_n$
 
-**Denominator of $B_n(x) - B_n$.** For a natural number $n$ and a prime $p$, let $s_p(n)$ be
+For a natural number $n$ and a prime $p$, let $s_p(n)$ be
 the sum of the base-$p$ digits of $n$. Define
 $\mathbb{D}_n = \prod_{p \text{ prime},\ s_p(n) \ge p} p$, the product of all primes $p$ with
 $s_p(n) \ge p$; every such prime satisfies $p \le n$, so the product is finite.

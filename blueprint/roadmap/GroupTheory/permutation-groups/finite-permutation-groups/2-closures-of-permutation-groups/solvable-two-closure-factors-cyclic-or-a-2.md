@@ -1,6 +1,6 @@
 # Skresanov's counterexample to Kourovka Problem 19.67
 
-**Skresanov's counterexample to Kourovka Problem 19.67.** There exist a finite set $\Omega$, a
+There exist a finite set $\Omega$, a
 solvable subgroup $G$ of the symmetric group $\mathrm{Sym}(\Omega)$, and a composition factor $S$
 of the $2$-closure $G^{(2)}$ of $G$ such that $S$ is not cyclic and $S$ is not isomorphic to the
 alternating group $A_n$ for any $n$. Here $G^{(2)}$ is the subgroup of $\mathrm{Sym}(\Omega)$

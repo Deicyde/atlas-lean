@@ -1,6 +1,6 @@
 # PARALLEL MACHINES WITH DEADLINES is NP-complete
 
-**PARALLEL MACHINES WITH DEADLINES is NP-complete.** The PARALLEL MACHINES WITH DEADLINES
+The PARALLEL MACHINES WITH DEADLINES
 decision problem belongs to NP, and every decision problem in NP reduces to it by a
 polynomial-time many-one reduction.
 

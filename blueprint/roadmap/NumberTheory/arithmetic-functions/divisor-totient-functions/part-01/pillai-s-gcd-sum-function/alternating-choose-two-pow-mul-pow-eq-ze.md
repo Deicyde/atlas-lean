@@ -1,6 +1,6 @@
 # An alternating binomial sum vanishes
 
-**An alternating binomial sum vanishes.** Let $k$ and $m$ be natural numbers with $k \ge 2$
+Let $k$ and $m$ be natural numbers with $k \ge 2$
 and $m \ge 2^k - 1$. Then, computed in the integers,
 
 $$\sum_{r=0}^{\min(2^k,\, m+1)} (-1)^r \binom{2^k}{r} (m + 1 - r)^k = 0.$$

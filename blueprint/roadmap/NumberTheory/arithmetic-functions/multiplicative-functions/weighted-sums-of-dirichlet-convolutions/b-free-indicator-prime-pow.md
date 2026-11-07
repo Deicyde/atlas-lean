@@ -1,6 +1,6 @@
 # The prime power $p^{\kappa(p)}$ is not $B_\kappa$-free
 
-**The prime power $p^{\kappa(p)}$ is not $B_\kappa$-free.** Let $\kappa$ be a function from
+Let $\kappa$ be a function from
 the natural numbers to the natural numbers and let $p$ be a prime. Then the indicator
 $q_{B_\kappa}$ of $B_\kappa$-free integers satisfies $q_{B_\kappa}(p^{\kappa(p)}) = 0$.
 

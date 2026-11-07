@@ -1,6 +1,6 @@
 # Trudi's formula for Toeplitz–Hessenberg determinants
 
-**Trudi's formula for Toeplitz–Hessenberg determinants.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $n \ge 1$, and let $a_0, a_1, a_2, \dots$ be elements of $R$ with $a_0 \ne 0$. Let $A_n$ be the
 $n \times n$ matrix whose entry in row $i$ and column $j$ ($0 \le i, j < n$) is $a_{i+1-j}$ if
 $j \le i + 1$ and $0$ otherwise. Then

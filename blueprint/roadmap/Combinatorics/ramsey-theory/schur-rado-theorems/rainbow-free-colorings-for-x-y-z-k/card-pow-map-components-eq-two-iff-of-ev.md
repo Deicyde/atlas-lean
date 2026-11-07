@@ -1,6 +1,6 @@
 # Power digraphs modulo a prime with two components
 
-**Power digraphs modulo a prime with two components.** Let $p$ be a prime and $k > 0$ an even
+Let $p$ be a prime and $k > 0$ an even
 natural number, and let $G^k_p$ be the directed graph on $\mathbb{Z}/p\mathbb{Z}$ with an edge
 $a \to a^k$ from every vertex $a$. Its (weak) components are the classes of the equivalence
 relation "$a^{k^m} = b^{k^n}$ for some natural numbers $m, n$". Then $G^k_p$ has exactly two

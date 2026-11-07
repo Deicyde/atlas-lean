@@ -1,6 +1,6 @@
 # Multivariable Hensel lemma over the p-adic integers
 
-**Multivariable Hensel lemma over the p-adic integers.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $f \in \mathbb{Z}_p[x_1, \dots, x_n]$ and $a \in \mathbb{Z}_p^n$, and suppose that for some index
 $i$ the $p$-adic absolute values satisfy $|f(a)|_p < |(\partial f / \partial x_i)(a)|_p^2$, that
 is, $\operatorname{ord}_p f(a) > 2 \operatorname{ord}_p (\partial f / \partial x_i)(a)$. Then

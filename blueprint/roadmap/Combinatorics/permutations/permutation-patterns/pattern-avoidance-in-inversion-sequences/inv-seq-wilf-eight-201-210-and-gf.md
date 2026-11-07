@@ -1,6 +1,6 @@
 # Eight-pattern sets differing in 201 and 210: equivalence and generating function
 
-**Eight-pattern sets differing in 201 and 210: equivalence and generating function.** Write a
+Write a
 length-3 pattern as the word of its values, so $101$ is the pattern $(1, 0, 1)$. For a set $B$ of
 patterns let $|I_n(B)|$ be the number of inversion sequences of length $n$ that avoid every
 pattern in $B$, and let $F_B(x) = \sum_{n \ge 1} |I_n(B)| x^n \in \mathbb{Q}[[x]]$. Let

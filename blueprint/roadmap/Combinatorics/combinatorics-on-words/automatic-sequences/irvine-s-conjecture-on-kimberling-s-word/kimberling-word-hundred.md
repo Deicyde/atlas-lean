@@ -1,6 +1,6 @@
 # The 101st letter of Kimberling's word
 
-**The 101st letter of Kimberling's word.** The letter $k_{101}$ of Kimberling's word
+The letter $k_{101}$ of Kimberling's word
 $k = k_1 k_2 k_3 \cdots$ is $0$ (OEIS A285431).
 
 ## Sources

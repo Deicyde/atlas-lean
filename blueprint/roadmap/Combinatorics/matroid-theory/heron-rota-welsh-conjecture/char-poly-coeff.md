@@ -1,6 +1,6 @@
 # Coefficients of the characteristic polynomial of a matroid
 
-**Coefficients of the characteristic polynomial of a matroid.** Let $M$ be a finite matroid on
+Let $M$ be a finite matroid on
 the ground set $E$ with rank function $r$, and let
 $\chi_M(\lambda) = \sum_{I \subseteq E} (-1)^{|I|} \lambda^{r(E) - r(I)}$ be its characteristic
 polynomial. For a natural number $j$, this is the integer coefficient of $\lambda^j$ in

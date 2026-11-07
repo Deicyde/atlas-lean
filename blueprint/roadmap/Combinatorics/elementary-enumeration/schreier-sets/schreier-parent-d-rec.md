@@ -1,6 +1,6 @@
 # Recurrence for the parent sequence
 
-**Recurrence for the parent sequence.** For all natural numbers $u \ge 1$ and $n \ge 2u$, the
+For all natural numbers $u \ge 1$ and $n \ge 2u$, the
 parent sequence $d_{u,n}$ satisfies $d_{u,n} = d_{u,n-u} + d_{u,n-2u+1}$.
 
 ## Sources

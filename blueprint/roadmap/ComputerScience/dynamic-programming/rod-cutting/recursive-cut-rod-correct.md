@@ -1,6 +1,6 @@
 # Correctness of recursive CUT-ROD
 
-**Correctness of recursive CUT-ROD.** Let $\alpha$ be an additive commutative monoid with a
+Let $\alpha$ be an additive commutative monoid with a
 linear order for which addition is monotone, and let $p_1, \dots, p_n \in \alpha$ be prices,
 $p_i$ being the price of a piece of length $i$. The value returned by recursive CUT-ROD on these
 prices is the greatest revenue of a composition of $n$: it equals the revenue

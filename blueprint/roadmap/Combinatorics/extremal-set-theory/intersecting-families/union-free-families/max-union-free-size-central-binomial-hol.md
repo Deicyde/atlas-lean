@@ -1,6 +1,6 @@
 # Kleitman's bound for union-free families (Erdős Problem 447)
 
-**Kleitman's bound for union-free families (Erdős Problem 447).** For every real
+For every real
 $\varepsilon > 0$ and all sufficiently large $n$, the maximum size of a union-free family of
 subsets of $\{0, \dots, n-1\}$ is at most $(1 + \varepsilon)\binom{n}{\lfloor n/2 \rfloor}$; that
 is, it is at most $(1 + o(1))\binom{n}{\lfloor n/2 \rfloor}$.

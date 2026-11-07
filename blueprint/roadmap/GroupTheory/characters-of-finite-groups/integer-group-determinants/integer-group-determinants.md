@@ -1,6 +1,6 @@
 # Integer group determinants
 
-**Integer group determinants.** For a finite group $G$, written additively and not
+For a finite group $G$, written additively and not
 necessarily commutative, $S(G)$ is the set of integers $\det(x_{g - h})_{g, h \in G}$, where $x$
 ranges over all functions $G \to \mathbb{Z}$.
 

@@ -1,6 +1,6 @@
 # The unary mover of the Hamiltonian path verifier
 
-**The unary mover of the Hamiltonian path verifier.** For stacks $\mathsf{src}$ and
+For stacks $\mathsf{src}$ and
 $\mathsf{dst}$ and labels $\ell$ (its own) and $m$ (the next one), the statement that goes to
 label $\mathrm{no}$ if $\mathsf{src}$ is empty; otherwise it pops the top symbol of
 $\mathsf{src}$, reads it as the bit `true` if it is the bit `true` and as `false` otherwise,

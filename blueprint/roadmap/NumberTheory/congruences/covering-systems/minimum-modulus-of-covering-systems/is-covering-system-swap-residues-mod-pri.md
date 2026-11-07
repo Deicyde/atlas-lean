@@ -1,6 +1,6 @@
 # Swapping two residues modulo a prime in a covering system
 
-**Swapping two residues modulo a prime in a covering system.** Let $C$ be a covering system
+Let $C$ be a covering system
 with positive moduli: a finite set of congruences $x \equiv a \pmod m$ with $a \in \mathbb{Z}$
 and $m \ge 1$ such that every integer satisfies at least one of them. Let $L$ be the least
 common multiple of its moduli, $p$ a prime dividing $L$, and $a_1 < a_2 \le p - 1$ natural

@@ -1,6 +1,6 @@
 # The reflection f of grid cells is an involution
 
-**The reflection f of grid cells is an involution.** For all natural numbers $n$ and $m$ and
+For all natural numbers $n$ and $m$ and
 every cell $c = (x, y) \in \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/m\mathbb{Z}$, applying the cell
 map $(x, y) \mapsto (-1 - x, y)$ of the reflection $f$ twice returns $c$.
 

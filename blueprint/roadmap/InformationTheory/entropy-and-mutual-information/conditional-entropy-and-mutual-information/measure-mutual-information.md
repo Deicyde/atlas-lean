@@ -1,6 +1,6 @@
 # Mutual information of a joint probability measure
 
-**Mutual information of a joint probability measure.** Let $\mu$ be a probability measure on
+Let $\mu$ be a probability measure on
 the product $X \times Y$ of two measurable spaces, with marginals $\mu_X$ and $\mu_Y$. The mutual
 information of $\mu$, in bits and possibly infinite, is
 

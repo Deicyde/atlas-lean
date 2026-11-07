@@ -1,6 +1,6 @@
 # Type-A double-perfect partition
 
-**Type-A double-perfect partition.** Let $r$ and $N$ be natural numbers. A multiset
+Let $r$ and $N$ be natural numbers. A multiset
 $\lambda$ of natural numbers is a Type-A double-perfect partition of $N$ of order $r$ when
 $\lambda$ is a double-perfect partition of $N$ of order $r$ and there is a perfect partition
 $\beta$ of $N - r - 1$ (read as $0$ when $N \le r$) such that $\lambda$ is $\beta$ with $r + 1$

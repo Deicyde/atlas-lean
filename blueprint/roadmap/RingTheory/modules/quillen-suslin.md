@@ -1,6 +1,6 @@
 # Quillen–Suslin theorem
 
-**Quillen–Suslin theorem.** Let $k$ be a field and let $n$ be a natural number. Every finitely
+Let $k$ be a field and let $n$ be a natural number. Every finitely
 generated projective module over the polynomial ring $k[x_1, \dots, x_n]$ in $n$ variables is
 free.
 

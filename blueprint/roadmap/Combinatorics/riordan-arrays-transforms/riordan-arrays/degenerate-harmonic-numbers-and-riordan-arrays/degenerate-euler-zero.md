@@ -1,6 +1,6 @@
 # The zeroth degenerate Euler number
 
-**The zeroth degenerate Euler number.** For every real number $\lambda$, the degenerate Euler
+For every real number $\lambda$, the degenerate Euler
 number $\varepsilon_{0,\lambda}$ equals $1$.
 
 ## Sources

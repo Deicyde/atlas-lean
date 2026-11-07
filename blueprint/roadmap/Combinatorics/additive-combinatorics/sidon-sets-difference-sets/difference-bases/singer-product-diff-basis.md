@@ -1,6 +1,6 @@
 # Singer product construction of difference bases
 
-**Singer product construction of difference bases.** Let $g, q, v \in \mathbb{N}$ and
+Let $g, q, v \in \mathbb{N}$ and
 $m = q^2 + q + 1$. Let $a_0, \dots, a_q$ be integers in $\{1, \dots, m\}$ such that every
 $r \in \{1, \dots, m - 1\}$ is congruent modulo $m$ to $a_i - a_j$ for exactly one ordered pair
 $(i, j)$ with $i \ne j$ (a Singer difference set modulo $m$). Let $B$ be a finite set of

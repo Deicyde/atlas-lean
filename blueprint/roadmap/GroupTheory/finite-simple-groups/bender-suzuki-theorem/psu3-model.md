@@ -1,6 +1,6 @@
 # The group $\mathrm{PSU}(3, 2^n)$
 
-**The group $\mathrm{PSU}(3, 2^n)$.** Let $n \ge 1$, let $q = 2^n$ and let $J$ be the
+Let $n \ge 1$, let $q = 2^n$ and let $J$ be the
 $3 \times 3$ matrix with ones on the antidiagonal and zeros elsewhere. Then $\mathrm{PSU}(3, q)$
 is the image in the projective general linear group $\mathrm{PGL}(3, \mathrm{GF}(q^2))$ of the
 group of matrices $A \in \mathrm{GL}(3, \mathrm{GF}(q^2))$ with $\det A = 1$ and

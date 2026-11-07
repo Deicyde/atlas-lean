@@ -1,6 +1,6 @@
 # Mittou's evaluation of a quadratic sum over congruent pairs
 
-**Mittou's evaluation of a quadratic sum over congruent pairs.** Let $p$ be a prime and $l$ a
+Let $p$ be a prime and $l$ a
 positive integer with $\gcd(p, l) = 1$. Let $F(p, l)$ be the sum of
 $\left(\frac{a}{p} - \frac{1}{2}\right)\left(\frac{b}{p} - \frac{1}{2}\right)$ over all pairs of
 integers $a, b$ with $1 \le a, b \le p - 1$ and $b \equiv a l \pmod{p}$, and let

@@ -1,6 +1,6 @@
 # Kourovka Problem 19.43: Fitting height, automorphism order and centralizer size
 
-**Kourovka Problem 19.43: Fitting height, automorphism order and centralizer size.** The
+The
 statement that there is a function $f$ assigning a natural number $f(m, n)$ to every pair of
 natural numbers $m$, $n$ such that every finite soluble group $G$ with an automorphism $\varphi$
 has Fitting height at most $f(|\varphi|, |C_G(\varphi)|)$, where $|\varphi|$ is the order of

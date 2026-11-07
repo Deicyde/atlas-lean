@@ -1,6 +1,6 @@
 # The dense CNF-SAT verifier program
 
-**The dense CNF-SAT verifier program.** The program assigns a statement to each label. Every
+The program assigns a statement to each label. Every
 pop stores the popped symbol, or nothing if the stack was empty, as the machine state.
 
 * $\mathsf{read1}$: pop the input stack; while the popped symbol is some $\mathrm{inl}\,b$, push

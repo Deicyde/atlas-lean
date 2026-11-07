@@ -1,6 +1,6 @@
 # Closed formula and recurrence for Schreier counts
 
-**Closed formula and recurrence for Schreier counts.** Let $p$ and $q$ be positive integers,
+Let $p$ and $q$ be positive integers,
 and write $|S^{p/q}_n|$ for the number of $(p, q)$-Schreier sets with maximum $n$. For every
 natural number $n$,
 

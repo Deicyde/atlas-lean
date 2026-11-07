@@ -1,6 +1,6 @@
 # Period quotients and seeds of $S(U)$
 
-**Period quotients and seeds of $S(U)$.** Let $U = U(P, Q)$ be a nondegenerate Lucas
+Let $U = U(P, Q)$ be a nondegenerate Lucas
 sequence with $Q = -1$, or $Q = 1$, or $Q$ odd and $P = -Q - 1$. Write $\pi_U(m)$ and
 $\rho_U(m)$ for the least period and the least restricted period of $U$ modulo $m$, and $S(U)$
 for the set of positive integers $n$ coprime to $Q$ with $\pi_U(n) \mid n$. For every prime

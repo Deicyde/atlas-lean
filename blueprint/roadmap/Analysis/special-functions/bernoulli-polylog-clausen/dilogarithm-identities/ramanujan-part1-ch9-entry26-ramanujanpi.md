@@ -1,6 +1,6 @@
 # Ramanujan's Landen-type identity in terms of the Entry 24 series
 
-**Ramanujan's Landen-type identity in terms of the Entry 24 series.** For real $\rho$ and
+For real $\rho$ and
 $\alpha$ and $k \ge 1$ let $c_k(\rho, \alpha) = \rho^k \cos(k\alpha) / k^2$ and
 $s_k(\rho, \alpha) = \rho^k \sin(k\alpha) / k^2$ be the terms of the dilogarithm series of
 Entry 24, and write $C(\rho, \alpha) = \sum_{j \ge 0} c_{2j+1}(\rho, \alpha)$ and

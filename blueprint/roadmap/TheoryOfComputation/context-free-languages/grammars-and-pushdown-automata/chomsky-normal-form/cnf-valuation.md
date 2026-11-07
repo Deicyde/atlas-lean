@@ -1,6 +1,6 @@
 # Valuation of the binarized grammar by yields
 
-**Valuation of the binarized grammar by yields.** Let $g$ be a context-free grammar and let
+Let $g$ be a context-free grammar and let
 $a_0, a_1, \dots$ be its list of terminals occurring in production outputs. A basic symbol is a
 nonterminal of $g$ or a natural number (a terminal wrapper); the nonterminals of the binarized
 grammar are the basic symbols together with a chain nonterminal $\langle\sigma\rangle$ for every

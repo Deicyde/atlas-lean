@@ -1,6 +1,6 @@
 # Addition formula for Stirling numbers of the second kind
 
-**Addition formula for Stirling numbers of the second kind.** Write $S(n,k)$ for the Stirling
+Write $S(n,k)$ for the Stirling
 numbers of the second kind. For all natural numbers $u$, $v$ and $k$ with $u > 0$,
 
 $$S(u+v,k) = \sum_{n=1}^{k} S(u,n) \sum_{m=k-n}^{v} \binom{v}{m} S(m,k-n)\, n^{v-m},$$

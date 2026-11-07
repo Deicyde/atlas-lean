@@ -1,6 +1,6 @@
 # The tail part of the map $U$
 
-**The tail part of the map $U$.** A word is a finite sequence $z_{k_1} \cdots z_{k_s}$ of
+A word is a finite sequence $z_{k_1} \cdots z_{k_s}$ of
 letters $z_k$, $k \in \mathbb{N}$. This map sends the empty word to itself and, for $s \ge 1$,
 sends $z_{k_1} \cdots z_{k_s}$ to the formal $\mathbb{Q}$-linear combination of words
 

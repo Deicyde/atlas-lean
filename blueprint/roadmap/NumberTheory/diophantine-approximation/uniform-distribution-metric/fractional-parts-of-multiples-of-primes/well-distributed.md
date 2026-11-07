@@ -1,6 +1,6 @@
 # Well-distributed sequences
 
-**Well-distributed sequences.** A sequence $(x_m)_{m \in \mathbb{N}}$ of real numbers is
+A sequence $(x_m)_{m \in \mathbb{N}}$ of real numbers is
 well-distributed if for every $\varepsilon > 0$ there is a $K$ such that for all $k \ge K$, all
 $n \in \mathbb{N}$ and all real numbers $a, b$ with $0 \le a \le b \le 1$, the number $N$ of
 indices $m$ with $n < m \le n + k$ and $x_m \in [a, b)$ satisfies $|N - (b - a)k| < \varepsilon k$.

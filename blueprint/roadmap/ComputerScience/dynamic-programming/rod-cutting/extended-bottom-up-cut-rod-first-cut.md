@@ -1,6 +1,6 @@
 # The saved first cut attains the saved revenue
 
-**The saved first cut attains the saved revenue.** Let $p = (p_0, \dots, p_{n-1})$ be a
+Let $p = (p_0, \dots, p_{n-1})$ be a
 price vector with entries in an additive commutative monoid carrying a linear order, where
 $p_{\ell - 1}$ is the price of a piece of length $\ell$. Let $r = (r_0, \dots, r_n)$ be the
 revenue table and $s = (s_1, \dots, s_n)$ the saved first cuts computed by the extended bottom-up

@@ -1,6 +1,6 @@
 # Marker-insertion grammar
 
-**Marker-insertion grammar.** Let $g$ be a context-free grammar over $T'$ with start symbol
+Let $g$ be a context-free grammar over $T'$ with start symbol
 $A_0$, and let $T$ be a finite alphabet. The marker-insertion grammar of $g$ is the context-free
 grammar over $T \sqcup T'$ whose nonterminals are those of $g$ together with a new start symbol
 $S$ and a marker $D$, and whose rules are: for each rule $A \to \alpha$ of $g$, the rule

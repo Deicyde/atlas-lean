@@ -1,6 +1,6 @@
 # RAM store destination
 
-**RAM store destination.** A store destination of a random-access machine names, by a
+A store destination of a random-access machine names, by a
 natural number $n$, the register into which the accumulator is stored: either register $n$
 itself (direct) or the register whose index is the contents of register $n$ (indirect).
 

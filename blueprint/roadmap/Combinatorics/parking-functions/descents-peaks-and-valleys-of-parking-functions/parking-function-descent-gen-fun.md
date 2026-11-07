@@ -1,6 +1,6 @@
 # Descent generating function of parking functions
 
-**Descent generating function of parking functions.** Write a sequence of length $n$ as
+Write a sequence of length $n$ as
 $(a_1, \dots, a_n)$; its descents are the $j \in \{1, \dots, n-1\}$ with $a_j > a_{j+1}$, and
 $\operatorname{des}$ is their number. A parking function $f$ of length $n$ is read as the sequence
 $a_j = f(j-1) + 1$. Let $PF_n$ be the set of parking functions of length $n$, $PF^{\uparrow}_n$

@@ -1,6 +1,6 @@
 # Degree-2 ECSDs with one component and $0$ on a cycle
 
-**Degree-2 ECSDs with one component and $0$ on a cycle.** Let $d_1, d_2 \in \{2, -2\}$ and let
+Let $d_1, d_2 \in \{2, -2\}$ and let
 $a_1, a_2$ be integers with $a_1 - a_2$ odd, excluding the case $d_1 = d_2 = -2$ with
 $|a_1 - a_2| = 1$. Consider the exact covering system digraph $G(d_1 n + a_1, d_2 n + a_2)$, with
 an edge $m \to d_i m + a_i$ for every integer $m$ and $i = 1, 2$. It has a single component (any

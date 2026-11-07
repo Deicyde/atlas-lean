@@ -1,6 +1,6 @@
 # The upper density of a packing is at most one
 
-**The upper density of a packing is at most one.** For every packing $P$ of congruent balls in
+For every packing $P$ of congruent balls in
 $\mathbb{R}^4$, the upper density of $P$ is at most $1$.
 
 ## Sources

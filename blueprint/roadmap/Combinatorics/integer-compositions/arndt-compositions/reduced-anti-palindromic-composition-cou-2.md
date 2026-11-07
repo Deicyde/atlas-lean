@@ -1,6 +1,6 @@
 # Reduced anti-palindromic compositions of 6 with three parts
 
-**Reduced anti-palindromic compositions of 6 with three parts.** There are exactly four reduced
+There are exactly four reduced
 anti-palindromic compositions of $6$ with three parts.
 
 ## Sources

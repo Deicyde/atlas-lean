@@ -1,3 +1,3 @@
 # Restriction of g to generalized eigenspaces of fg and gf
 
-**Restriction of g to generalized eigenspaces of fg and gf.** The restriction of `g` to the generalized `μ`-eigenspaces.
+The restriction of `g` to the generalized `μ`-eigenspaces.

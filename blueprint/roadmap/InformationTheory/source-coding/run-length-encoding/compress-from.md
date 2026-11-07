@@ -1,6 +1,6 @@
 # Run-length compression from a pending run
 
-**Run-length compression from a pending run.** For a bit $c$, a natural number $r$ and a
+For a bit $c$, a natural number $r$ and a
 finite bit list $w$, the compression $C(c, r, w)$ of $w$ from the pending run $(c, r)$ is the
 list of natural numbers defined by recursion on $w$. If $w$ is empty, $C(c, r, w)$ is the
 one-entry list $(r)$. If $w$ is a bit $b$ followed by a list $w'$, then $C(c, r, w)$ is $r$

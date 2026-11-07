@@ -1,6 +1,6 @@
 # Mycielski's theorem
 
-**Mycielski's theorem.** Write $\chi(G)$ for the chromatic number of a simple graph $G$. For
+Write $\chi(G)$ for the chromatic number of a simple graph $G$. For
 every simple graph $G$ on a finite vertex set there is a simple graph $H$ on a finite vertex set
 with strictly more vertices than $G$ that contains a subgraph isomorphic to $G$, such that $H$ is
 triangle-free whenever $G$ is, and such that $\chi(H) = \chi(G) + 1$ whenever $\chi(G)$ is

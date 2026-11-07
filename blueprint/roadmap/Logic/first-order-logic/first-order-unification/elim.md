@@ -1,6 +1,6 @@
 # The elimination step preserves the unification specification
 
-**The elimination step preserves the unification specification.** Let $x$ be a variable,
+Let $x$ be a variable,
 $t$ a term in which $x$ does not occur, $e$ an equation and $E$ a list of equations. Suppose
 that for every substitution $s$, the two sides of $e$ become equal under $s$ exactly when
 $s(x)$ equals the result of applying $s$ to $t$. Let $\sigma$ be the substitution that replaces

@@ -1,6 +1,6 @@
 # Partial sums of general qMZVs
 
-**Partial sums of general qMZVs.** Let $(k_1, Q_1), \dots, (k_r, Q_r)$ be pairs of natural
+Let $(k_1, Q_1), \dots, (k_r, Q_r)$ be pairs of natural
 numbers $k_j$ and polynomials $Q_j \in \mathbb{Q}[X]$, and let $M$ be a natural number. The
 partial sum is the formal power series in $q$ over $\mathbb{Q}$
 

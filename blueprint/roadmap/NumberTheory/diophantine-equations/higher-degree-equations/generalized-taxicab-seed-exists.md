@@ -1,6 +1,6 @@
 # Existence of seeds for generalized taxicab numbers
 
-**Existence of seeds for generalized taxicab numbers.** Fix natural numbers $m \ge 1$ and
+Fix natural numbers $m \ge 1$ and
 $t \ge 1$, and let $T(n, m, t)$ be, for each natural number $n$, either a natural number or
 undefined, such that for all natural numbers $n$ and $v$, $T(n, m, t)$ is defined and equals $v$
 exactly when $v$ is the least natural number with at least $t$ representations as a sum of exactly

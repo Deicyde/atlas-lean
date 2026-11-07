@@ -1,6 +1,6 @@
 # Grid Ramsey property for Ls
 
-**Grid Ramsey property for Ls.** Let $k$ and $n$ be natural numbers and write
+Let $k$ and $n$ be natural numbers and write
 $[n] = \{1, \dots, n\}$. An L in the grid $[n] \times [n]$ is a triple of points $(x, y)$,
 $(x + d, y)$, $(x + d, y + d)$ with $x$, $y$, $d$ positive integers, $x + d \le n$ and
 $y + d \le n$. The pair $(k, n)$ has the grid Ramsey property for Ls when every coloring of

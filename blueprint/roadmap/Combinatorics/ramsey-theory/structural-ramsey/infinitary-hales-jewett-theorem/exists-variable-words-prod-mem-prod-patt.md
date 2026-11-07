@@ -1,6 +1,6 @@
 # Variable patterns of variable words in C-sets
 
-**Variable patterns of variable words in C-sets.** Let $A_0 \subseteq A_1 \subseteq \cdots$
+Let $A_0 \subseteq A_1 \subseteq \cdots$
 be finite sets with union $A$, and let $S_0$ be the semigroup of nonempty finite words over $A$
 under concatenation. Let $1 \le k < n$. An $n$-variable word over $A$ is a nonempty finite word
 over $A \cup \{v_0, \dots, v_{n-1}\}$, for distinct variables $v_i \notin A$, in which every $v_i$

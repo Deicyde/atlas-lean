@@ -1,6 +1,6 @@
 # Sums of signed Stirling numbers of the first kind with shifted reciprocal weights
 
-**Sums of signed Stirling numbers of the first kind with shifted reciprocal weights.** Let
+Let
 $s(m, j)$ be the signed Stirling numbers of the first kind, $S(m, j)$ the Stirling numbers of
 the second kind and $B_m^*$ the Bernoulli numbers of the second kind. Let $r \ge 1$ and $n$ be
 natural numbers, and for $0 \le k \le r - 1$ set

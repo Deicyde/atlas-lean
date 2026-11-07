@@ -1,6 +1,6 @@
 # Splitting the numerator of a unified Catalan-type generating function
 
-**Splitting the numerator of a unified Catalan-type generating function.** Let
+Let
 $j, k, m, d, n$ be natural numbers, let $a, b, c, \lambda, x, y$ be real numbers and let $A$ be
 a polynomial with integer coefficients. Let $K(t)$ be the negative real power of the trinomial
 $c - a x t + b (2x - 1)^d t^m$ with exponent $\lambda$ as a power series in $t$ (for $c > 0$ and

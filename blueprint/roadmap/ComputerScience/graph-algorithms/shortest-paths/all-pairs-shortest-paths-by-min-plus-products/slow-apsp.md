@@ -1,6 +1,6 @@
 # Slow all-pairs shortest paths (SLOW-APSP)
 
-**Slow all-pairs shortest paths (SLOW-APSP).** Let $W$ and $L^{(0)}$ be $n \times n$ matrices
+Let $W$ and $L^{(0)}$ be $n \times n$ matrices
 over the min-plus semiring on $\mathbb{Z} \cup \{\infty\}$, in which addition is $\min$ and
 multiplication is $+$. SLOW-APSP copies $L^{(0)}$ cell by cell and then runs $\max(n - 1, 0)$
 phases. Phase $r$ fills a fresh $n \times n$ matrix $M$ with $\infty$, then for each triple

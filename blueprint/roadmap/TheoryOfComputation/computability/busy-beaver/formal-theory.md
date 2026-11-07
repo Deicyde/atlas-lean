@@ -1,6 +1,6 @@
 # Formal theory
 
-**Formal theory.** A formal theory is given by a provability predicate on sentence
+A formal theory is given by a provability predicate on sentence
 codes, which are natural numbers: for each natural number it specifies whether that
 sentence code is provable in the theory.
 

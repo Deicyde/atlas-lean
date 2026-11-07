@@ -1,6 +1,6 @@
 # CTL formulas
 
-**CTL formulas.** The formulas of computation tree logic over a type $A$ of atoms are
+The formulas of computation tree logic over a type $A$ of atoms are
 generated as follows: every atom $a \in A$ is a formula, $\top$ is a formula, and if $\varphi$
 and $\psi$ are formulas then so are the negation $\neg\varphi$, the conjunction
 $\varphi \land \psi$, the existential next $\mathsf{EX}\,\varphi$, the existential until

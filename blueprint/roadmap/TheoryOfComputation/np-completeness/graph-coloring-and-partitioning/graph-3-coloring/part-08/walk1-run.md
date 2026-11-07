@@ -1,6 +1,6 @@
 # The walk towards the farther endpoint decides the edge
 
-**The walk towards the farther endpoint decides the edge.** Let $k$ be a stack of the 3-COLOR
+Let $k$ be a stack of the 3-COLOR
 verifier other than the color stack $P$ and the scratch stack $T$, $(a, b)$ a pair of bits, and
 $\ell$ a label whose statement is the step of the walk towards the farther endpoint on the
 counter $k$, holding the color $(a, b)$ and continuing at $\ell$. Let $j$ be a natural number,

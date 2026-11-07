@@ -1,6 +1,6 @@
 # Initial values of $\varphi_4$
 
-**Initial values of $\varphi_4$.** Let $\varphi_4(n)$ be the number of generalized Frobenius
+Let $\varphi_4(n)$ be the number of generalized Frobenius
 partitions of $n$ in which each integer appears at most $4$ times in each row. Then
 $\varphi_4(0) = 1$ (the empty array) and $\varphi_4(1) = 1$ (the single column with both entries
 $0$).

@@ -1,6 +1,6 @@
 # One vertex step of the Hamiltonian-path verifier
 
-**One vertex step of the Hamiltonian-path verifier.** Let $es$ be an edge list,
+Let $es$ be an edge list,
 $s, t, n, c, b, a$ natural numbers and $q$ a list of natural numbers. Start the verifier, with
 any flag value, at the label $\mathsf{rdA}$ (read the next vertex) with its stacks in the
 between-steps layout for $es$, $s$, $t$, $n$, count $c$, previous vertex $b$ and remaining

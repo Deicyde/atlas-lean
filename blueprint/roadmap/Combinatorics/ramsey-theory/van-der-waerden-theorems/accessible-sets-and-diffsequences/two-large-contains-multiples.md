@@ -1,6 +1,6 @@
 # 2-large sets contain multiples of every positive integer
 
-**2-large sets contain multiples of every positive integer.** Every $2$-large set $D$ of
+Every $2$-large set $D$ of
 positive integers contains a multiple of each positive integer $m$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The Davis–Power constant $c_0$
 
-**The Davis–Power constant $c_0$.** Let $\varphi(t) = e^{-t^2/2}/\sqrt{2\pi}$ be the standard
+Let $\varphi(t) = e^{-t^2/2}/\sqrt{2\pi}$ be the standard
 Gaussian density, $B = \frac12 \int_0^\infty \min(1, 2e^{-t^2/2})\,dt$ and
 $h(x) = 2x e^{-x^2/2} + 2\int_x^\infty e^{-t^2/2}\,dt$. The constant $c_0$ is the infimum of the
 set of reals $c$ for which there are reals $a$, $p_0$, $z$ with $a > \sqrt{2 \log 2}$, $h(a) = B$,

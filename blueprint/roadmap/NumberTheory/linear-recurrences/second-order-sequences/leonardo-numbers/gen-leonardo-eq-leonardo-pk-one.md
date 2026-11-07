@@ -1,6 +1,6 @@
 # Generalized Leonardo numbers as Leonardo $p$-numbers with $p = 1$
 
-**Generalized Leonardo numbers as Leonardo $p$-numbers with $p = 1$.** For all natural numbers
+For all natural numbers
 $k$ and $n$, the generalized Leonardo number $L_{k,n}$ equals the generalized Leonardo $p$-number
 $\mathcal{L}_{1,k}(n)$; both sequences start with $1, 1$ and satisfy the recurrence
 $a_{n+2} = a_{n+1} + a_n + k$.

@@ -1,6 +1,6 @@
 # Odd starting values give a $p$-integral $p$-th term when $p \equiv 1 \pmod 4$
 
-**Odd starting values give a $p$-integral $p$-th term when $p \equiv 1 \pmod 4$.** Let $p$ be
+Let $p$ be
 a prime with $p \equiv 1 \pmod 4$, write $k = (p-1)/2$, and let $g_{k,l}$ denote the
 $(k,l)$-Göbel sequence. Then for every odd natural number $l < p$, the term $g_{k,l}(p)$ lies in
 the localization $\mathbb{Z}_{(p)}$, that is, its $p$-adic valuation is nonnegative.

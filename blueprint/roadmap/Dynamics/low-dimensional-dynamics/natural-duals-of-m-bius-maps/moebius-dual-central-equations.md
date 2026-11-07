@@ -1,6 +1,6 @@
 # Central equations for natural duals of Moebius maps
 
-**Central equations for natural duals of Moebius maps.** Let $\alpha, \beta, \gamma, \delta$
+Let $\alpha, \beta, \gamma, \delta$
 and $\xi$ be real numbers with $\alpha > 0$, $\beta < 1$, $\gamma > -1$ and $\delta \ge 0$. Define
 the dual branches
 $V^\#_{\alpha\gamma}(y) = (\gamma - 2\alpha - \alpha y)/(2\alpha + 1 + \alpha y)$,

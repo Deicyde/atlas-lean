@@ -1,6 +1,6 @@
 # Pythagorean parametrization of rational solutions of the bisector equation
 
-**Pythagorean parametrization of rational solutions of the bisector equation.** Let $a, b, c$
+Let $a, b, c$
 be rational numbers with $|a| \ne |b|$ and $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$, and suppose
 that $a^2 + 1$ and $b^2 + 1$ are squares of rational numbers. Then there are integers $l, m, n$ with
 $|l| \ne |m|$, $l m \ne n^2$ and $l m n \ne 0$ such that

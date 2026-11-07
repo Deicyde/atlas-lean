@@ -1,6 +1,6 @@
 # Ballot numbers with second index zero
 
-**Ballot numbers with second index zero.** For every natural number $n$, the ballot number
+For every natural number $n$, the ballot number
 $B(n, 0)$ equals $1$.
 
 ## Sources

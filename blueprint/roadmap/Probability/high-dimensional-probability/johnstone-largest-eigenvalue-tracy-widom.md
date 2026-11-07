@@ -1,6 +1,6 @@
 # Johnstone's Tracy–Widom limit
 
-**Johnstone's Tracy–Widom limit.** Let `q` be the Hastings–McLeod solution of Painlevé II
+Let `q` be the Hastings–McLeod solution of Painlevé II
 (`q'' = s q + 2 q³` with `q(s) · 2 √π s^{1/4} e^{(2/3) s^{3/2}} → 1` as `s → ∞`). Let
 `n k, p k → ∞` with `n k / p k → γ ≥ 1`, and let `X` have independent standard Gaussian entries
 (`Measure.pi` of `gaussianReal 0 1` over `Fin (n k) × Fin (p k)`). The largest eigenvalue of

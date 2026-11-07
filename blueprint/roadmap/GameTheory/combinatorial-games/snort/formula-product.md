@@ -1,6 +1,6 @@
 # Graph product given by a Boolean formula
 
-**Graph product given by a Boolean formula.** Let $G$ and $H$ be graphs with vertex sets $V$
+Let $G$ and $H$ be graphs with vertex sets $V$
 and $W$, and let $\varphi$ be a Boolean function of four Boolean arguments. The product
 $G \varphi H$ is the graph on $V \times W$ in which two distinct vertices $(g_1, h_1)$ and
 $(g_2, h_2)$ are adjacent exactly when

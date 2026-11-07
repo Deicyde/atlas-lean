@@ -1,6 +1,6 @@
 # Pham–Zakharov theorem on non-averaging sets
 
-**Pham–Zakharov theorem on non-averaging sets.** For every $\varepsilon > 0$ and every
+For every $\varepsilon > 0$ and every
 sufficiently large $N$, some non-averaging subset of $\{1, \dots, N\}$ has at least
 $N^{1/4 - \varepsilon}$ elements, and every non-averaging subset of $\{1, \dots, N\}$ has at most
 $N^{1/4 + \varepsilon}$ elements. Thus the largest non-averaging subset of $\{1, \dots, N\}$ has

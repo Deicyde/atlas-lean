@@ -1,6 +1,6 @@
 # Eavesdropping advantage against a public-key scheme
 
-**Eavesdropping advantage against a public-key scheme.** Let $G$ (key generation) and $E$
+Let $G$ (key generation) and $E$
 (encryption) be maps from bitstrings to bitstrings, let $C$ be an encoded flat Boolean circuit,
 let $\ell$ be a polynomial with natural-number coefficients and let $n$ be a natural number. For
 key coins $r$ and encryption coins $s$, each a string of $\ell(n)$ bits, and a bit $b$, let $pk$

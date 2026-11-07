@@ -1,6 +1,6 @@
 # Reflexive stabilization number
 
-**Reflexive stabilization number.** For a list of natural-number weights
+For a list of natural-number weights
 $q = (q_1, \dots, q_n)$, the reflexive stabilization number $\mathrm{rsn}(q)$ is the least natural
 number $k$ such that the weighted projective simplex with weights $(1^k, q_1, \dots, q_n)$, that
 is, $k$ entries equal to $1$ followed by $q$, is reflexive. If no such $k$ exists, then

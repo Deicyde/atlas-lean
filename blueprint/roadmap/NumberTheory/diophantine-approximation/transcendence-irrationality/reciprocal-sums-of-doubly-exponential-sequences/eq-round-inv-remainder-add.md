@@ -1,6 +1,6 @@
 # Recovering a doubly exponential sequence from its reciprocal sum
 
-**Recovering a doubly exponential sequence from its reciprocal sum.** Let $\beta \ge 0$ and
+Let $\beta \ge 0$ and
 $r$ be real numbers, and let $(a_n)_{n \ge 0}$ be a sequence of positive integers with
 $|a_n^2 / a_{n+1} - \beta| \le 1/3$ for all $n$ and $\sum_n 1 / a_n = r$. Write
 $x_n = r - \sum_{k\lt n} 1 / a_k$. Then for every $n$ with $a_n \ge 8 (\beta + 1/3)^2$ we have

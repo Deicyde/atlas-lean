@@ -1,6 +1,6 @@
 # The row-by-row check of the clique verifier
 
-**The row-by-row check of the clique verifier.** For a mode $m$, the row-by-row check of
+For a mode $m$, the row-by-row check of
 a list of chosen-flags against a list $b$ of pair bits is defined by recursion on the flags.
 For the empty list it holds iff $b$ is empty. For a flag $a$ followed by the flags $r$ of the
 later vertices, write $\rho$ for the reverse of $r$: the check holds iff $|r| \le |b|$,

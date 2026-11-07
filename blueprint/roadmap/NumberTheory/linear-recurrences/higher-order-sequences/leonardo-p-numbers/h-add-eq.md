@@ -1,6 +1,6 @@
 # Convolution identity for sequences in $H(p)$
 
-**Convolution identity for sequences in $H(p)$.** Let $p \ge 2$ be a natural number and let
+Let $p \ge 2$ be a natural number and let
 $\mathcal{H} : \mathbb{Z} \to \mathbb{Z}$ be a sequence in $H(p)$, that is,
 $\mathcal{H}(t) = \mathcal{H}(t-1) + \mathcal{H}(t-p) - \mathcal{H}(t-2p-1)$ for every integer
 $t$. Then for all natural numbers $m \ge 1$ and $n \ge 1$,

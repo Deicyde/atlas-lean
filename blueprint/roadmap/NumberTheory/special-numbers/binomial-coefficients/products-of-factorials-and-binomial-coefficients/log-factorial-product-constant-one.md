@@ -1,6 +1,6 @@
 # Logarithm of the first factorial product constant
 
-**Logarithm of the first factorial product constant.** The factorial product constant $F_1$
+The factorial product constant $F_1$
 satisfies $\log F_1 = \frac{1}{4} \log(2\pi) + \frac{1}{12} - 2 \log A$, where $A$ is the
 Glaisher–Kinkelin constant.
 

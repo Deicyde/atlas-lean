@@ -1,6 +1,6 @@
 # Broder's alternating expansion of the r-Stirling numbers of the first kind
 
-**Broder's alternating expansion of the r-Stirling numbers of the first kind.** Let $n$, $m$
+Let $n$, $m$
 and $r$ be natural numbers with $1 \le r \le n$. Write $[n, m]_r$ for the unsigned $r$-Stirling
 number of the first kind, $[a, b]$ for the unsigned Stirling number of the first kind and
 $\lbrace a, b \rbrace$ for the Stirling number of the second kind. Then, in the integers,

@@ -1,6 +1,6 @@
 # Counting aperiodic necklaces with identity product
 
-**Counting aperiodic necklaces with identity product.** Let $G$ be a finite group and
+Let $G$ be a finite group and
 $n \ge 1$. For an $n$-tuple $x = (x_0, \dots, x_{n-1}) \in G^n$ let its rotation orbit be the set
 of its cyclic rotations $(x_m, x_{m+1}, \dots, x_{m+n-1})$, $m \ge 0$, with indices taken mod
 $n$. Then the number of rotation orbits with exactly $n$ elements of tuples $x$ with

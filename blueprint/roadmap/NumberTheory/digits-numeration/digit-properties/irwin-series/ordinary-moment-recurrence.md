@@ -1,6 +1,6 @@
 # Ordinary moment recurrence
 
-**Ordinary moment recurrence.** Let $b$ and $d$ be natural numbers, and for $i \ge 1$ let
+Let $b$ and $d$ be natural numbers, and for $i \ge 1$ let
 $\gamma_i$ be the sum of the $i$-th powers of the base-$b$ digits $a \in \{0, \dots, b-1\}$ with
 $a \ne d$. A family of real numbers $(u_{j;m})_{j, m \in \mathbb{N}}$ satisfies the ordinary
 moment recurrence for $b$ and $d$ when $u_{0;0} = b$, when for every $m \ge 1$

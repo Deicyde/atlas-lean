@@ -1,6 +1,6 @@
 # Step map of the regression play
 
-**Step map of the regression play.** Let $\Phi = \mu X.\, \nu Y.\, X$ be the regression
+Let $\Phi = \mu X.\, \nu Y.\, X$ be the regression
 formula over the one-element type of atoms, and write game positions over the one-element type
 of worlds as (formula, world, stack of enclosing binders, innermost first). For every world $w$,
 the step map sends $(\Phi, w, [\,])$ to $(\nu Y.\, X, w, [\Phi])$, sends

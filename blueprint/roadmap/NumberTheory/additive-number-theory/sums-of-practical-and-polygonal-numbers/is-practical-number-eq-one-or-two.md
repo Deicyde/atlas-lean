@@ -1,6 +1,6 @@
 # Practical numbers divisible by neither 3 nor 4
 
-**Practical numbers divisible by neither 3 nor 4.** If $q$ is a practical number that is
+If $q$ is a practical number that is
 divisible by neither $3$ nor $4$, then $q = 1$ or $q = 2$.
 
 ## Sources

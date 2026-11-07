@@ -1,6 +1,6 @@
 # Parity of $c_8'$ on residue classes modulo powers of $2$
 
-**Parity of $c_8'$ on residue classes modulo powers of $2$.** Let $c_8'$ be the partition
+Let $c_8'$ be the partition
 function that counts partitions with a possibly distinguished part, and let $k \ge 1$, $n \ge 0$
 and $r \ge 0$ be integers. If $r < 2^{2k}$ and $15r \equiv 2^{2k-1} - 4 \pmod{2^{2k}}$, then
 $c_8'(2^{2k} n + r)$ is even. If $r < 2^{2k}$ and

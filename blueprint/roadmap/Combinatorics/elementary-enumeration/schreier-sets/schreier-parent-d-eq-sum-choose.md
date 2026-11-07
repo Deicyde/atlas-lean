@@ -1,6 +1,6 @@
 # Binomial sum formula for the parent sequence
 
-**Binomial sum formula for the parent sequence.** For all natural numbers $u \ge 2$ and
+For all natural numbers $u \ge 2$ and
 $n \ge 1$, the parent sequence $d_{u,n}$ satisfies
 
 $$

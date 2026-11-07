@@ -1,6 +1,6 @@
 # Weak approximation with prescribed signs at a modulus
 
-**Weak approximation with prescribed signs at a modulus.** Let $K$ be a number field and
+Let $K$ be a number field and
 $\mathfrak m$ a modulus of $K$, with finite part $\mathfrak m_0$ (a nonzero ideal of
 $\mathcal O_K$) and infinite part $\mathfrak m_\infty$ (a finite set of real places of $K$); for
 a real place $w$ write $\sigma_w : K \to \mathbb R$ for its real embedding. For every set $P$ of

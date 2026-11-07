@@ -1,6 +1,6 @@
 # Socialist primes
 
-**Socialist primes.** A natural number $p$ is a socialist prime if $p$ is prime, $p > 5$, and
+A natural number $p$ is a socialist prime if $p$ is prime, $p > 5$, and
 the factorials $2!, 3!, \ldots, (p-1)!$ have pairwise distinct remainders modulo $p$.
 
 ## Sources

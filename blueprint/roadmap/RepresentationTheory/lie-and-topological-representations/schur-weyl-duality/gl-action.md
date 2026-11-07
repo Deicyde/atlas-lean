@@ -1,6 +1,6 @@
 # Diagonal action of the general linear group on tensor powers
 
-**Diagonal action of the general linear group on tensor powers.** Let $R$ be a commutative
+Let $R$ be a commutative
 semiring, $M$ an $R$-module and $k$ a natural number. Write $\mathrm{GL}(M)$ for the group of
 invertible $R$-linear endomorphisms of $M$. The diagonal action of $\mathrm{GL}(M)$ on the $k$-th
 tensor power $M^{\otimes k}$ is the monoid homomorphism from $\mathrm{GL}(M)$ to the

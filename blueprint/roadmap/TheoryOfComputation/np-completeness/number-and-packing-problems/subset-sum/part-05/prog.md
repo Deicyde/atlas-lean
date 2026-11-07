@@ -1,6 +1,6 @@
 # The SUBSET-SUM verifier program
 
-**The SUBSET-SUM verifier program.** The program on the stacks $X, W, T, A, B, P, Q$ over
+The program on the stacks $X, W, T, A, B, P, Q$ over
 the verifier's symbols, with Boolean internal state, given label by label. A popped symbol that
 is not a bit counts as false, as does a pop from an empty stack. Reading a pair of a block off
 $X$ with flag $z$ ("the bits read so far end in false") goes to $\mathsf{no}$ if $X$ is empty;

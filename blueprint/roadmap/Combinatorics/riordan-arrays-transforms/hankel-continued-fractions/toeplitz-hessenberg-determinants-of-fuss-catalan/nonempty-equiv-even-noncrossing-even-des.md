@@ -1,6 +1,6 @@
 # Even noncrossing partitions and Dyck paths with even descents
 
-**Even noncrossing partitions and Dyck paths with even descents.** For every natural number
+For every natural number
 $n$, there is a bijection between the noncrossing partitions of $\{0, \dots, 2n - 1\}$ all of
 whose blocks have even size and the Dyck paths of semilength $2n$ all of whose descents have even
 length. Here the descents of a Dyck path are the lengths of its maximal runs of down steps, one

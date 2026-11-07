@@ -1,6 +1,6 @@
 # Labels of the Hamiltonian path verifier
 
-**Labels of the Hamiltonian path verifier.** The instruction labels of the verifier: reading
+The instruction labels of the verifier: reading
 $s$, $t$, $n$; validating the edge list and putting it back; validating the witness and putting
 it back; the vertex loop, reading a vertex, and the head-or-edge dispatch; for each of the four
 counter comparisons, the comparison itself and, for each of its three outcomes, the two loops

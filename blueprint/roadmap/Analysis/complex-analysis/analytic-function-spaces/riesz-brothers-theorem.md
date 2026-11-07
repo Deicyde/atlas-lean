@@ -1,6 +1,6 @@
 # F. and M. Riesz theorem
 
-**F. and M. Riesz theorem.** Let $\mu$ be a complex Borel measure on the circle
+Let $\mu$ be a complex Borel measure on the circle
 $\mathbb{T} = \mathbb{R}/\mathbb{Z}$. If $\int_{\mathbb{T}} e^{2\pi i n z} \, d\mu(z) = 0$ for
 every integer $n \ge 1$, then $\mu$ is absolutely continuous with respect to the Haar probability
 measure on $\mathbb{T}$.

@@ -1,6 +1,6 @@
 # Dusart's asymptotic expansion of $\pi(x)$ with explicit error
 
-**Dusart's asymptotic expansion of $\pi(x)$ with explicit error.** Let $\pi(x)$ be the number
+Let $\pi(x)$ be the number
 of primes $p \le x$ and $\log$ the natural logarithm. For every real number $x \ge 4 \cdot 10^9$
 there is a real number $E$ with $|E| \le \frac{7.32}{(\log x)^3}$ such that
 

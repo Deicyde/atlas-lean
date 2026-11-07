@@ -1,6 +1,6 @@
 # Correctness of the satisfy-count
 
-**Correctness of the satisfy-count.** Let $m$ be a natural number and $t$ a diagram ordered
+Let $m$ be a natural number and $t$ a diagram ordered
 from $0$ (tested variables strictly increase along every path) in which every tested variable is
 below $m$. Then for every assignment $\sigma$, the satisfy-count of $t$ below $m$ equals the model
 count of the function $\tau \mapsto t(\tau)$ over the variables $0, 1, \dots, m - 1$ from

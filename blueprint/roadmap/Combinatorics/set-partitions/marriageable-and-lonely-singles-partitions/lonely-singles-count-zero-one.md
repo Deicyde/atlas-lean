@@ -1,6 +1,6 @@
 # Small values of the lonely singles count
 
-**Small values of the lonely singles count.** The numbers of lonely singles partitions of
+The numbers of lonely singles partitions of
 $\{0, \dots, n-1\}$ for $n = 0$ and $n = 1$ are $L_0 = 1$ and $L_1 = 1$.
 
 ## Sources

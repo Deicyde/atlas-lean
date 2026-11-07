@@ -1,6 +1,6 @@
 # The mean is the real part of the zeroth Fourier coefficient
 
-**The mean is the real part of the zeroth Fourier coefficient.** For every continuous
+For every continuous
 function $u : \mathbb{T} \to \mathbb{R}$ on the torus $\mathbb{T} = (\mathbb{R}/2\pi\mathbb{Z})^2$,
 the mean of $u$ equals the real part of the zeroth Fourier coefficient
 $\int_{(\mathbb{R}/\mathbb{Z})^2} \tilde u(y)\,dy$, taken with respect to normalized Haar measure,

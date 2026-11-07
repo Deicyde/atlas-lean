@@ -1,6 +1,6 @@
 # Addition and doubling formulas for the negative Pell sequences
 
-**Addition and doubling formulas for the negative Pell sequences.** Let $d$ be a natural
+Let $d$ be a natural
 number such that $x^2 - dy^2 = -1$ has an integral solution, let $(X, Y)$ be the solution of
 $x^2 - dy^2 = -1$ in natural numbers with the least positive $Y$, and let $f_n$ and $g_n$ be the
 integers defined by $f_0 = 1$, $g_0 = 0$, $f_{n+1} = X f_n + dY g_n$ and

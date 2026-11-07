@@ -1,6 +1,6 @@
 # A decomposable lunar number in base 2
 
-**A decomposable lunar number in base 2.** In base $2$, the lunar number with digit string
+In base $2$, the lunar number with digit string
 $(1, 1, 1)$, that is $1 \oplus x \oplus x^2$ with $\oplus$ the lunar sum (digitwise maximum), lies
 both in the set $\Sigma_2^2$ of decomposable lunar numbers of degree at most $2$ and in the set
 $\mathcal{D}_2^2$ of level-decomposable lunar numbers of degree at most $2$.

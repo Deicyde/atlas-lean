@@ -1,6 +1,6 @@
 # Cell literals propagate one step along the real run
 
-**Cell literals propagate one step along the real run.** Let $E$ be an encoding of a machine
+Let $E$ be an encoding of a machine
 $M$ with window depth $d$, let $s$ be a list of symbols of the input stack of $M$, and for each
 $n$ let $c_n$ be the configuration after $n$ steps of the idle-extended run of $M$ from its
 initial configuration on $s$. Let $T, H, t$ be natural numbers with $t < T$ and $d \le H$.

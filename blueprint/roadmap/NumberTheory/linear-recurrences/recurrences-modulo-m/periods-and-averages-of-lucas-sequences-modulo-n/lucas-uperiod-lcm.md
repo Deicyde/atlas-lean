@@ -1,6 +1,6 @@
 # Periods of Lucas sequences modulo a least common multiple
 
-**Periods of Lucas sequences modulo a least common multiple.** Let $U$ be the Lucas sequence
+Let $U$ be the Lucas sequence
 with integer parameters $P$ and $Q \neq 0$, and write $\pi(m)$ and $\rho(m)$ for its period and
 restricted period modulo $m$. Let $m$ and $n$ be positive integers with $\gcd(mn, Q) = 1$. Then
 $\pi(\operatorname{lcm}(m, n)) = \operatorname{lcm}(\pi(m), \pi(n))$ and

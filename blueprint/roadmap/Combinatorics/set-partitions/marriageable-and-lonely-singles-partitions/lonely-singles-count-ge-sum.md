@@ -1,6 +1,6 @@
 # Lower bound for the number of lonely singles partitions
 
-**Lower bound for the number of lonely singles partitions.** For every $n \ge 2$, the number
+For every $n \ge 2$, the number
 $L_n$ of lonely singles partitions of $\{0, \dots, n-1\}$ satisfies
 
 $$

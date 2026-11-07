@@ -1,6 +1,6 @@
 # Reflected triangular recurrence
 
-**Reflected triangular recurrence.** The reflection of a triangular recurrence with
+The reflection of a triangular recurrence with
 parameters $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ is the triangular recurrence with
 parameters $(\alpha' + \beta', -\beta', \gamma'; \alpha + \beta, -\beta, \gamma)$.
 

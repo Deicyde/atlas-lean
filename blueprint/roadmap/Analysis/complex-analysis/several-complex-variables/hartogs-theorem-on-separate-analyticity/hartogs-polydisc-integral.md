@@ -1,6 +1,6 @@
 # Iterated integral over a polydisc
 
-**Iterated integral over a polydisc.** For $n \in \mathbb{N}$, a function
+For $n \in \mathbb{N}$, a function
 $u : \mathbb{C}^n \to \mathbb{R}$, a centre $c \in \mathbb{C}^n$ and a radius $R \in \mathbb{R}$,
 the iterated polydisc integral $I(u, c, R)$ is defined by recursion on $n$. For $n = 0$ it is
 $u(c)$. For $n = m + 1$, writing $c = (c_0, c_1, \dots, c_m)$, it is

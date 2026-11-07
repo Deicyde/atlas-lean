@@ -1,6 +1,6 @@
 # Offline cost with free exchanges
 
-**Offline cost with free exchanges.** Given lists $L_0, L_1, L_2, \dots$, target indices
+Given lists $L_0, L_1, L_2, \dots$, target indices
 $J_0, J_1, J_2, \dots$ and a request sequence $\sigma = x_0 x_1 \cdots x_{m-1}$, let $L_t'$ be the
 list obtained from $L_t$ by the free exchange that moves $x_t$ forward to index $J_t$ (counting
 from $0$); it equals $L_t$ if $x_t$ already has index at most $J_t$. The offline cost with free

@@ -1,6 +1,6 @@
 # $2$-adic multisection of the infinite $q$-Pochhammer symbol
 
-**$2$-adic multisection of the infinite $q$-Pochhammer symbol.** Write
+Write
 $(x; y)_\infty = \prod_{k \ge 0} (1 - x y^k)$ for the infinite $q$-Pochhammer symbol, where $x$
 and $y$ are complex and $|y| < 1$. For complex numbers $a$ and $q$ with $|q| < 1$,
 $\prod_{j \ge 0} \bigl((a q^{2^j - 1}; q^{2^{j+1}})_\infty /

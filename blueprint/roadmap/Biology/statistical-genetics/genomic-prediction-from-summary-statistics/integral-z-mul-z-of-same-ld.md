@@ -1,6 +1,6 @@
 # Equal normalized-cross-product specialization of the residual cross-moment identity
 
-**Equal normalized-cross-product specialization of the residual cross-moment identity**: if
+If
 the two samples have the same normalized cross products with marker `j` and the overlap marker
 is standardized at `j`
 (`∑_{i ∈ S₁ ∩ S₂} X i j ² = N_s`), then

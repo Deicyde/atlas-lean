@@ -1,6 +1,6 @@
 # Morgan–Voyce polynomials
 
-**Morgan–Voyce polynomials.** For a semiring $R$ and a natural number $n$, the Morgan–Voyce
+For a semiring $R$ and a natural number $n$, the Morgan–Voyce
 polynomial of index $n$ over $R$ is
 
 $$b_n(x) = \sum_{k=0}^{n} d(n, k)\, x^k \in R[x],$$

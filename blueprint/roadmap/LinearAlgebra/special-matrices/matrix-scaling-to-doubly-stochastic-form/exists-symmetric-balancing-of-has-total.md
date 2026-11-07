@@ -1,6 +1,6 @@
 # Csima–Datta: sufficiency of total support
 
-**Csima–Datta: sufficiency of total support.** A symmetric nonnegative matrix with total
+A symmetric nonnegative matrix with total
 support has a positive vector `d` with `diag(d) A diag(d)` doubly stochastic.
 
 ## Sources

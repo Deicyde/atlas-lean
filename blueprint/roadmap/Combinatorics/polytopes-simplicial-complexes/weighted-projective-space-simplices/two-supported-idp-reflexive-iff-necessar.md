@@ -1,6 +1,6 @@
 # IDP reflexive two-supported weighted simplices
 
-**IDP reflexive two-supported weighted simplices.** Let $r = (r_1, r_2)$ and
+Let $r = (r_1, r_2)$ and
 $x = (x_1, x_2)$ be pairs of positive integers with $r_1 < r_2$, and let
 $q = (r_1^{x_1}, r_2^{x_2})$ be the weight vector consisting of $r_1$ repeated $x_1$ times
 followed by $r_2$ repeated $x_2$ times. The weighted projective space simplex $\Delta_{(1,q)}$ is

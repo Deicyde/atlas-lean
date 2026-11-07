@@ -1,6 +1,6 @@
 # Peaks of 231-avoiding permutations
 
-**Peaks of 231-avoiding permutations.** Let $n \ge 1$ and $k$ be natural numbers. A permutation
+Let $n \ge 1$ and $k$ be natural numbers. A permutation
 $\sigma$ of $\{0, \dots, n-1\}$ avoids $231$ if there are no positions $i < j < l$ with
 $\sigma(l) < \sigma(i) < \sigma(j)$, and $\sigma$ has a peak at a position $i$ with
 $0 < i < n - 1$ if $\sigma(i-1) < \sigma(i)$ and $\sigma(i+1) < \sigma(i)$. The number of

@@ -1,6 +1,6 @@
 # One step of a pushdown automaton
 
-**One step of a pushdown automaton.** Write a configuration of a pushdown automaton
+Write a configuration of a pushdown automaton
 $M$ as $(q, w, s)$: state $q$, remaining input $w$, and stack $s$ listed from the top.
 A configuration $(q, w, \gamma s)$ steps to $(q', w, u s)$ whenever $(q', u)$ is an
 $\varepsilon$-transition of $M$ from $q$ with top symbol $\gamma$, and a configuration

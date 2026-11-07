@@ -1,6 +1,6 @@
 # Hyper-Leonardo numbers in terms of hyper-Fibonacci numbers
 
-**Hyper-Leonardo numbers in terms of hyper-Fibonacci numbers.** For all natural numbers $r$
+For all natural numbers $r$
 and $n$, the hyper-Leonardo number $\mathrm{Le}^{(r)}_n$ and the hyper-Fibonacci number
 $F^{(r)}_{n+1}$ satisfy $\mathrm{Le}^{(r)}_n = 2F^{(r)}_{n+1} - \binom{n+r}{r}$ as integers.
 

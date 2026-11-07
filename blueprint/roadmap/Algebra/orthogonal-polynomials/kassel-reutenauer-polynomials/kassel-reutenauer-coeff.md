@@ -1,6 +1,6 @@
 # The Kassel–Reutenauer coefficients $a_{n,i}$
 
-**The Kassel–Reutenauer coefficients $a_{n,i}$.** For natural numbers $n$ and $i$, $a_{n,i}$ is
+For natural numbers $n$ and $i$, $a_{n,i}$ is
 the number of positive divisors $d$ of $n$ with
 
 $$\frac{i + \sqrt{2n + i^2}}{2} < d \le i + \sqrt{2n + i^2},$$

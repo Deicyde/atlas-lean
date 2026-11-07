@@ -1,6 +1,6 @@
 # Necessary conditions for admissible lucky sets
 
-**Necessary conditions for admissible lucky sets.** Let $n \ge 1$. If $S$ is an
+Let $n \ge 1$. If $S$ is an
 $n$-admissible lucky set, then $1 \in S$ and $2n \notin S$.
 
 ## Sources

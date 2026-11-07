@@ -1,6 +1,6 @@
 # Level counts of a lunar number
 
-**Level counts of a lunar number.** Let $f$ be a lunar number of base $b$ and degree at most
+Let $f$ be a lunar number of base $b$ and degree at most
 $n$, with digits $c_0, \dots, c_n \in \{0, \dots, b - 1\}$, and let $i$ be a natural number. The
 level count $|f_i|$ is the number of indices $k \le n$ with $c_k \ge i$, that is, the number of
 nonzero coefficients of the $i$-level support $f_i = s_i(f)$, the Boolean polynomial with

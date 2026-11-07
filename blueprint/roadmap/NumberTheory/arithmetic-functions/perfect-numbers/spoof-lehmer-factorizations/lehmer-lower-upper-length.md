@@ -1,6 +1,6 @@
 # The Lehmer bounds of a full-length list
 
-**The Lehmer bounds of a full-length list.** Let $L(t; r)$ and $U(t; r)$ be the lower and
+Let $L(t; r)$ and $U(t; r)$ be the lower and
 upper Lehmer bounds and $\kappa_r$ the Lehmer function. For every nondecreasing list
 $t = (t_1, \dots, t_r)$ of real numbers, $L(t; r) = U(t; r) = \kappa_r(t_1, \dots, t_r)$.
 

@@ -1,6 +1,6 @@
 # Fuel-bounded enumeration of alignments
 
-**Fuel-bounded enumeration of alignments.** Given a fuel $n \in \mathbb{N}$ and sequences
+Given a fuel $n \in \mathbb{N}$ and sequences
 $x$ and $y$ over $\alpha$, this lists alignments column by column from the front. With fuel $0$
 the list is empty. With fuel $n + 1$: two empty sequences give the single empty alignment; if
 only $y$ is nonempty, with first letter $b$ and rest $y'$, each alignment of $x$ and $y'$ with

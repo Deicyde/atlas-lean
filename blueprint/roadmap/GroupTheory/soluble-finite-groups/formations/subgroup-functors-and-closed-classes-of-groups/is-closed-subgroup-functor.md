@@ -1,6 +1,6 @@
 # Closed subgroup functors
 
-**Closed subgroup functors.** Let $\mathfrak{X}$ be a class of finite groups. A subgroup
+Let $\mathfrak{X}$ be a class of finite groups. A subgroup
 assignment $\tau$ is a closed subgroup functor on $\mathfrak{X}$ (A. N. Skiba) when the following
 three conditions hold. For every $G \in \mathfrak{X}$, $G \in \tau(G)$. For every surjective
 homomorphism $\varphi : A \to B$ with $A, B \in \mathfrak{X}$, $\varphi(H) \in \tau(B)$ for every

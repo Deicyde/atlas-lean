@@ -1,6 +1,6 @@
 # Banach–Tarski paradox for the closed unit ball
 
-**Banach–Tarski paradox for the closed unit ball.** In three-dimensional Euclidean space
+In three-dimensional Euclidean space
 $\mathbb{R}^3$, write $\bar B(c, r)$ for the closed ball of radius $r$ about $c$. There are points
 $c_1, c_2 \in \mathbb{R}^3$ such that $\bar B(c_1, 1)$ and $\bar B(c_2, 1)$ are disjoint and the
 closed unit ball $\bar B(0, 1)$ is finitely equidecomposable by isometries with

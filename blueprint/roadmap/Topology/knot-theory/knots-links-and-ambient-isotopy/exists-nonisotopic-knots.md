@@ -1,6 +1,6 @@
 # Existence of non-isotopic knots
 
-**Existence of non-isotopic knots.** There are two oriented smooth knots $K_1$ and $K_2$ in
+There are two oriented smooth knots $K_1$ and $K_2$ in
 $\mathbb{R}^3$ that are not ambient-isotopic.
 
 ## Sources

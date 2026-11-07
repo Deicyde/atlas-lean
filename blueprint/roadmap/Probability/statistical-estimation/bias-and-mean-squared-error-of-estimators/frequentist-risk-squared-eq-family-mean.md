@@ -1,6 +1,6 @@
 # Mean squared error is frequentist risk under squared-error loss
 
-**Mean squared error is frequentist risk under squared-error loss.** Let
+Let
 $(P_\theta)_{\theta \in \Theta}$ be a family of probability measures on $S$,
 $W : S \to \mathbb{R}$ an estimator and $\tau : \Theta \to \mathbb{R}$ a target function such that
 $x \mapsto (W(x) - \tau(\theta))^2$ is $P_\theta$-integrable for every $\theta \in \Theta$. Then for

@@ -1,6 +1,6 @@
 # Continuous nonzero solutions of $f(x)f(y) = f(x+y)$ are exponentials
 
-**Continuous nonzero solutions of $f(x)f(y) = f(x+y)$ are exponentials.** Let
+Let
 $f : \mathbb{R} \to \mathbb{R}$ be a continuous function that is not identically zero and
 satisfies $f(x)f(y) = f(x+y)$ for all real $x$ and $y$. Then there is a real constant $c$ such
 that $f(x) = e^{cx}$ for every real $x$.

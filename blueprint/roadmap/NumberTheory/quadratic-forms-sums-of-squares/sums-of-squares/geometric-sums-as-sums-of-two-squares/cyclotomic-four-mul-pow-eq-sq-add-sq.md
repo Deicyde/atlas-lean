@@ -1,6 +1,6 @@
 # The cyclotomic polynomial $\Phi_{4p^k}$ as a sum of two explicit squares
 
-**The cyclotomic polynomial $\Phi_{4p^k}$ as a sum of two explicit squares.** Let $p$ be an
+Let $p$ be an
 odd prime, let $k \ge 1$, let $X_1 = \sum_{i=0}^{(p-1)/2} (-1)^i x^{p-1-2i}$ and
 $Y_1 = \sum_{i=0}^{(p-3)/2} (-1)^i x^{p-2-2i}$ in $\mathbb{Z}[x]$, and let $\Phi_{4p^k}$ be the
 $4p^k$-th cyclotomic polynomial over $\mathbb{Z}$. Then

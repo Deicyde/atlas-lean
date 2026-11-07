@@ -1,6 +1,6 @@
 # TQBF as a decision problem
 
-**TQBF as a decision problem.** The TQBF decision problem accepts a bitstring $x$ exactly when
+The TQBF decision problem accepts a bitstring $x$ exactly when
 $x$ decodes, under the canonical bitstring encoding, to a pair $(Q, \varphi)$, where $Q$ is a
 quantifier prefix, a list of $m$ pairs $(e_1, v_1), \dots, (e_m, v_m)$ of a flag $e_i$ (true for
 $\exists$, false for $\forall$) and a variable $v_i \in \mathbb{N}$, and $\varphi$ is a CNF

@@ -1,6 +1,6 @@
 # Lovász's finitely forcible optimum conjecture is false
 
-**Lovász's finitely forcible optimum conjecture is false.** There are graphs $H_1, \dots, H_\ell$
+There are graphs $H_1, \dots, H_\ell$
 and reals $d_1, \dots, d_\ell$ such that some graphon $W$ satisfies $d(H_i, W) = d_i$ for every $i$,
 but no finitely forcible graphon $W_0$ satisfies $d(H_i, W_0) = d_i$ for every $i$.
 

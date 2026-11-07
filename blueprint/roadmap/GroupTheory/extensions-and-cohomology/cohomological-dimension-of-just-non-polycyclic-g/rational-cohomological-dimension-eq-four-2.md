@@ -1,6 +1,6 @@
 # The Kropholler group has rational cohomological dimension 4
 
-**The Kropholler group has rational cohomological dimension 4.** Let $G$ be the Kropholler group.
+Let $G$ be the Kropholler group.
 Then $H^4(G, M) \neq 0$ for some $\mathbb{Q}G$-module $M$, and $H^n(G, M) = 0$ for every
 $\mathbb{Q}G$-module $M$ and every integer $n > 4$. This resolves Kourovka Notebook Problem 12.41
 by P. H. Kropholler, which asks whether this cohomological dimension is 3 or 4.

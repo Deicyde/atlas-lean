@@ -1,6 +1,6 @@
 # Weighted greedy set cover
 
-**Weighted greedy set cover.** Let $F = [S_1, \dots, S_n]$ be a list of finite sets, $U$ a
+Let $F = [S_1, \dots, S_n]$ be a list of finite sets, $U$ a
 finite set and $w$ a function giving each finite set $S$ a rational cost $w(S)$. The weighted
 greedy set cover of $U$ from $F$ with costs $w$ is computed as follows. If no $S_i$ meets $U$,
 the result is the empty list. Otherwise let $T$ be the first $S_i$ in the list with

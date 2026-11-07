@@ -1,6 +1,6 @@
 # SUBGRAPH ISOMORPHISM is NP-complete
 
-**SUBGRAPH ISOMORPHISM is NP-complete.** The decision problem SUBGRAPH ISOMORPHISM belongs
+The decision problem SUBGRAPH ISOMORPHISM belongs
 to NP, and every decision problem $L$ in NP has a polynomial-time many-one reduction to
 SUBGRAPH ISOMORPHISM.
 

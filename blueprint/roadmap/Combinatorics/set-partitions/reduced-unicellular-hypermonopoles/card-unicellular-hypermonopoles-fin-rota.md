@@ -1,6 +1,6 @@
 # Unicellular hypermonopoles with a cyclic vertex permutation
 
-**Unicellular hypermonopoles with a cyclic vertex permutation.** Let $n$ and $k$ be natural
+Let $n$ and $k$ be natural
 numbers, let $\sigma$ be the cyclic permutation $i \mapsto i + 1$ (modulo $n$) of
 $\{0, 1, \dots, n - 1\}$, and write $z(\pi)$ for the number of cycles of a permutation $\pi$,
 fixed points included. Then the number of permutations $\alpha$ of $\{0, 1, \dots, n - 1\}$ with

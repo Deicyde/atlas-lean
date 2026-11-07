@@ -1,6 +1,6 @@
 # P-positions of slow face Nim on a cube
 
-**P-positions of slow face Nim on a cube.** Write a position of the cube game as
+Write a position of the cube game as
 $p = (a, b, c, A, B, C)$, the numbers of tokens on the six faces of a cube. A slow face move is
 a face move that removes exactly one token from one face. Let $P$ be the set of positions with
 $a + b + c + A + B + C$ even. Then no slow face move leads from a position in $P$ to a position

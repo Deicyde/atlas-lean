@@ -1,6 +1,6 @@
 # Bounded subsequence sums as a generalized h-fold sumset when zero is a term
 
-**Bounded subsequence sums as a generalized h-fold sumset when zero is a term.** Let $G$ be
+Let $G$ be
 an abelian group, let $m$ be a natural number, let $a_1, \dots, a_m$ be distinct nonzero elements
 of $G$, and put $a_0 = 0$. Let $t_0, \dots, t_m$ be positive integers, let $\mathcal{A}$ be the
 sequence in which each $a_i$ occurs $t_i$ times, and let $h = t_0 + \dots + t_m$ be its length.

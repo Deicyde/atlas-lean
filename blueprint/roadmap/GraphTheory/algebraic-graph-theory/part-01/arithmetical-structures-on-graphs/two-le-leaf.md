@@ -1,6 +1,6 @@
 # Leaves of a smooth coconut structure have label at least 2
 
-**Leaves of a smooth coconut structure have label at least 2.** If $(d, r)$ is a smooth
+If $(d, r)$ is a smooth
 arithmetical structure on the coconut tree $\mathrm{CT}(p, s)$, then $d_{\ell_j} \ge 2$ for every
 leaf $\ell_j$, $1 \le j \le s$.
 

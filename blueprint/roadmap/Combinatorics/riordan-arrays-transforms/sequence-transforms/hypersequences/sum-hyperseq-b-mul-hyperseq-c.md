@@ -1,6 +1,6 @@
 # The product of Parisse's matrices B(n) and C(n)
 
-**The product of Parisse's matrices B(n) and C(n).** For $n, j, m \in \mathbb{N}$ let
+For $n, j, m \in \mathbb{N}$ let
 $b_{j,i}(n) = (-1)^i e_{j-i}(n + 1, \dots, n + j)$ for $i \le j$ be the entries of Parisse's
 matrix $B(n)$, where $e_d$ is the elementary symmetric polynomial of degree $d$, and let
 $c_{i,m}(n) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (k + n + 1)^i$ be the entries

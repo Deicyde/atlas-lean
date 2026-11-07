@@ -1,6 +1,6 @@
 # Endomorphisms of free groups with non-cyclic images are determined by two elements
 
-**Endomorphisms of free groups with non-cyclic images are determined by two elements.** For every
+For every
 natural number $n$, the free group $F_n$ of rank $n$ contains two elements $g$ and $h$ such that
 any two endomorphisms $\varphi, \psi$ of $F_n$ whose images are not cyclic subgroups and which
 satisfy $\varphi(g) = \psi(g)$ and $\varphi(h) = \psi(h)$ are equal.

@@ -1,6 +1,6 @@
 # A twisted sum of digamma values
 
-**A twisted sum of digamma values.** Let $p$ and $k$ be natural numbers with $1 \le k < p$,
+Let $p$ and $k$ be natural numbers with $1 \le k < p$,
 and let $\psi = \Gamma'/\Gamma$ be the digamma function. Then
 
 $$

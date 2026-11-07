@@ -1,6 +1,6 @@
 # Parity vectors induce bijections modulo $q^n$
 
-**Parity vectors induce bijections modulo $q^n$.** Let $A, B \in \mathbb{F}_2[[q]]$ be odd
+Let $A, B \in \mathbb{F}_2[[q]]$ be odd
 (constant term $1$), let $\mathrm{PV}_{A,B}$ be the parity vector map of the $q$-analog $T_{A,B}$
 of the $3x+1$ map, and let $n \ge 1$ be an integer. Then there is a bijection
 $e : \mathbb{F}_2[[q]]/(q^n) \to \mathbb{Z}/2^n\mathbb{Z}$ such that, for every

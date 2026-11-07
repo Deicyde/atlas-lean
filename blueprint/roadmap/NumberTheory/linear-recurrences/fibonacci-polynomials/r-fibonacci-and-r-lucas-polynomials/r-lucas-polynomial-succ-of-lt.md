@@ -1,6 +1,6 @@
 # Initial values of the $r$-Lucas polynomials
 
-**Initial values of the $r$-Lucas polynomials.** Let $R$ be a commutative semiring, let $s$ be
+Let $R$ be a commutative semiring, let $s$ be
 a natural number, let $x, y \in R$, and let $n < r$ be natural numbers. Then the $r$-Lucas
 polynomial of type $s$ satisfies $V^{(r,s)}_{n+1}(x, y) = x^{n+1}$.
 

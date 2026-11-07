@@ -1,6 +1,6 @@
 # NPO optimization problems
 
-**NPO optimization problems.** Let $P$ be an optimization problem whose instances $x$ and
+Let $P$ be an optimization problem whose instances $x$ and
 solutions $s$ are bitstrings, with rational value $\mathrm{val}(x, s)$ and feasibility predicate
 $\mathrm{feas}(x, s)$. Then $P$ is an NPO problem when the map $(x, s) \mapsto \mathrm{feas}(x, s)$
 is polynomial-time computable, and there is a polynomial-time computable map $\mathrm{enc}$

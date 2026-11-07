@@ -1,6 +1,6 @@
 # Sums of consecutive squares form a $k$-additive uniqueness set for every $k \ge 2$
 
-**Sums of consecutive squares form a $k$-additive uniqueness set for every $k \ge 2$.** Let
+Let
 $k \ge 2$, and call a natural number a sum of consecutive squares if it equals
 $(n+1)^2 + (n+2)^2 + \dots + m^2$ for some natural numbers $n < m$. Let $f$ be a complex-valued
 multiplicative arithmetic function (so $f(1) = 1$ and $f(ab) = f(a) f(b)$ for coprime $a$ and

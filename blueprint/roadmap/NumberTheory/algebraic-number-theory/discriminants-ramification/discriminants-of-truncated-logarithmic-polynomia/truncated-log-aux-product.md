@@ -1,6 +1,6 @@
 # Auxiliary product for truncated logarithmic discriminants
 
-**Auxiliary product for truncated logarithmic discriminants.** For a natural number $m$, let
+For a natural number $m$, let
 $f_m(x) = \sum_{k=0}^{m-1} x^k$ and $g_m(x) = c_m + \sum_{j=1}^{m-1} \frac{x^j}{j}$ in
 $\mathbb{Q}[x]$, where $c_m = \frac{1}{m}$ for $m \ge 1$ and $c_0 = 0$. The rational number $X(m)$
 is the resultant $\operatorname{Res}(f_m, g_m)$. For $m \ge 1$, since $f_m$ is monic with roots

@@ -1,3 +1,3 @@
 # Even-flip condition on closed lattice walks
 
-**Even-flip condition on closed lattice walks.** Every closed lattice walk has an even number of flips.
+Every closed lattice walk has an even number of flips.

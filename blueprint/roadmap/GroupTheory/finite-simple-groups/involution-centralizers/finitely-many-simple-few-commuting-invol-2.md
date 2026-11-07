@@ -1,6 +1,6 @@
 # Finitely many finite simple groups with an involution commuting with few involutions
 
-**Finitely many finite simple groups with an involution commuting with few involutions.** For
+For
 every natural number $n$ there is a bound $N$ such that every finite simple group $G$ containing
 an involution $t$ that commutes with at most $n$ involutions of $G$ (counting $t$ itself) has
 order at most $N$.

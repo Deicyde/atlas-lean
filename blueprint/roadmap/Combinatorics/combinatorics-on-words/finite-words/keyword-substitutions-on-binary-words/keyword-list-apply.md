@@ -1,6 +1,6 @@
 # Action of a list of simple maps
 
-**Action of a list of simple maps.** Let $a$ be a keyword and, for $j \in \mathbb{N}$, let
+Let $a$ be a keyword and, for $j \in \mathbb{N}$, let
 $\varphi_j$ be the simple map of $a$ at letter $j$. A list $[j_1, \dots, j_r]$ of natural numbers
 acts on a binary word $u$ of length $n$ by
 $u \mapsto \varphi_{j_r}(\cdots(\varphi_{j_1}(u))\cdots)$: the head of the list acts first, and

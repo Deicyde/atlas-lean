@@ -1,6 +1,6 @@
 # Asymptotic count of tuples coprime along the edges of a graph
 
-**Asymptotic count of tuples coprime along the edges of a graph.** Let $k \ge 2$ and let $E$
+Let $k \ge 2$ and let $E$
 be a set of pairs $(i, j)$ with $0 \le i < j < k$, the edge set of a graph $G$ on the vertices
 $0, \dots, k-1$. Let $d_G$ be the maximum degree of $G$, that is, the largest number of pairs in
 $E$ that contain a single vertex; let $\delta_G$ be the coprimality indicator and $A_G$ the

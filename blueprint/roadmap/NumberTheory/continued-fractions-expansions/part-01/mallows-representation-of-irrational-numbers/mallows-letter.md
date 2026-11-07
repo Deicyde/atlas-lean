@@ -1,6 +1,6 @@
 # The Mallows alphabet
 
-**The Mallows alphabet.** The letters of Mallows representations are the three distinct
+The letters of Mallows representations are the three distinct
 letters $L$, $M$ and $R$, standing for "left", "middle" and "right".
 
 ## Sources

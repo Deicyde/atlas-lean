@@ -1,6 +1,6 @@
 # $k$-Dyck paths of size $n$
 
-**$k$-Dyck paths of size $n$.** Write $U = (1,1)$ and $D^{(k)} = (k,-k)$. The $k$-Dyck paths
+Write $U = (1,1)$ and $D^{(k)} = (k,-k)$. The $k$-Dyck paths
 of size $n$ are the words of length $(k+1)n$ over $\{U, D^{(k)}\}$ with exactly $n$ steps
 $D^{(k)}$ that have $k$ times as many $U$s as $D^{(k)}$s and in which every prefix has at least
 $k$ times as many $U$s as $D^{(k)}$s.

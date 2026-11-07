@@ -1,6 +1,6 @@
 # Reordering invariance of the generalized $h$-fold sumset
 
-**Reordering invariance of the generalized $h$-fold sumset.** Let $G$ be an additive
+Let $G$ be an additive
 commutative monoid, $a_0, \dots, a_{k-1} \in G$, $r_0, \dots, r_{k-1}$ and $h$ natural numbers,
 and write $h^{(\bar r)}A = \{\sum_j s_j a_j : 0 \le s_j \le r_j, \sum_j s_j = h\}$ for the
 generalized $h$-fold sumset of $A = (a_0, \dots, a_{k-1})$ with $\bar r = (r_0, \dots, r_{k-1})$.

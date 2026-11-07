@@ -1,6 +1,6 @@
 # Strong Markov property for a.s.-finite stopping times
 
-**Strong Markov property for a.s.-finite stopping times.** Let $S$ be a nonempty standard
+Let $S$ be a nonempty standard
 Borel space, $\mu$ a finite measure on $S$, $\kappa$ a Markov kernel on $S$, and $P_\mu$ the law
 on the path space $S^{\mathbb{N}}$ of the Markov chain with initial distribution $\mu$ and
 transition kernel $\kappa$. For $x \in S$ write $E_x$ for the expectation under the chain started

@@ -1,3 +1,3 @@
 # Nonnegativity of the product weight
 
-**Nonnegativity of the product weight.** A product of nonnegative coordinate weights is nonnegative.
+A product of nonnegative coordinate weights is nonnegative.

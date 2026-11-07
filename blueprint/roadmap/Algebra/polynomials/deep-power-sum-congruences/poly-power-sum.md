@@ -1,6 +1,6 @@
 # Power sums of a polynomial
 
-**Power sums of a polynomial.** For a polynomial $P$ over a commutative ring $A$, with
+For a polynomial $P$ over a commutative ring $A$, with
 elementary symmetric functions $e_i = e_i(P)$, the power sums $p_n = p_n(P) \in A$ are defined
 recursively: $p_0$ is the degree of $P$ as a natural number ($0$ for $P = 0$), and for
 $n \ge 1$ Newton's identity holds:

@@ -1,6 +1,6 @@
 # The Dirichlet integral
 
-**The Dirichlet integral.** Let $\alpha = (\alpha_0, \dots, \alpha_n) \in \mathbb{R}^{n+1}$ with
+Let $\alpha = (\alpha_0, \dots, \alpha_n) \in \mathbb{R}^{n+1}$ with
 $\alpha_i > 0$ for every $i$, and let
 $\Delta = \{x \in \mathbb{R}^n : x_i > 0 \text{ for all } i \text{ and } \sum_{i=0}^{n-1} x_i < 1\}$
 be the open corner simplex. Then

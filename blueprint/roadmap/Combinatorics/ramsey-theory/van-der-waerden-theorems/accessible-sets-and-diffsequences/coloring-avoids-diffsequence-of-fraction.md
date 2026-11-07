@@ -1,6 +1,6 @@
 # Colorings avoiding long diffsequences under fractional-part bounds
 
-**Colorings avoiding long diffsequences under fractional-part bounds.** Let $r \ge 1$, let
+Let $r \ge 1$, let
 $d_0 < d_1 < \cdots$ be a strictly increasing sequence of natural numbers with $d_0 > 0$, and let
 $D = \{d_n : n \ge 0\}$. Suppose there are real numbers $\alpha$ and $\varepsilon > 0$ such that
 for every $n$ the fractional part of $\alpha d_n$ lies in the closed interval

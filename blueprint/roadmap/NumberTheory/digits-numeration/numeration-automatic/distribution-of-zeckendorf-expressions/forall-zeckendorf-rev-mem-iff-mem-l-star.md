@@ -1,6 +1,6 @@
 # Reversals characterize the nonzero elements of $\bar E^\ast$
 
-**Reversals characterize the nonzero elements of $\bar E^\ast$.** Let $L$ be a list of natural
+Let $L$ be a list of natural
 numbers of length at least $2$ with nonzero first entry, let $E$ be the periodic Zeckendorf
 collection determined by $L$, and let $\bar E^*$ be the closure of the collection $E^*$ determined
 by $L$. For $n \in \mathbb N$ and a coefficient function $\varepsilon : \mathbb N \to \mathbb N$,

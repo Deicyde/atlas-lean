@@ -1,3 +1,3 @@
 # Positivity of binomial probabilities
 
-**Positivity of binomial probabilities.** Binomial probabilities are positive on `{0, …, n}` for `0 < p < 1`.
+Binomial probabilities are positive on `{0, …, n}` for `0 < p < 1`.

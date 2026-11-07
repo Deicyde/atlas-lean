@@ -1,6 +1,6 @@
 # The translation on the slots of a clause
 
-**The translation on the slots of a clause.** Write $\mathrm{conv}(w, \iota, n, k, m, o)$ for
+Write $\mathrm{conv}(w, \iota, n, k, m, o)$ for
 the reversed-string translation run on the bit string $w$ with open-clause flag $\iota$, literal
 count $n$, slot count $k$, clause count $m$ and output $o$; juxtaposition of bit strings is
 concatenation, $w^R$ is the reversal of $w$ and $|x|$ is the length of a list $x$. Let $c$ be a

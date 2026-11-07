@@ -1,6 +1,6 @@
 # Cost of the precomputation of the cell-shift generator
 
-**Cost of the precomputation of the cell-shift generator.** For a layout $L$ with label block
+For a layout $L$ with label block
 size $A$, $K$ stacks and $g$ symbol codes, numbers $T$ and $H$, and the row width
 $W = A + K H g$, this is the step bound
 

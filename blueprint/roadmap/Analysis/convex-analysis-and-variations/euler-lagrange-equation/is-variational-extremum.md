@@ -1,6 +1,6 @@
 # Variational extremum
 
-**Variational extremum.** Let $a, b$ be real numbers and let $L(t, y, v)$
+Let $a, b$ be real numbers and let $L(t, y, v)$
 be a real function of three real variables. A function $x : \mathbb{R} \to \mathbb{R}$ is a
 variational extremum of the action of $L$ on $(a, b)$ if $x$ is continuously differentiable and,
 for every infinitely differentiable function $h : \mathbb{R} \to \mathbb{R}$ of compact support

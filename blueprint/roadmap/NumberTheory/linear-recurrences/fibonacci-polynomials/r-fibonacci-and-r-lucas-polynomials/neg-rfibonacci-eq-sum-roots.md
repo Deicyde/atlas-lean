@@ -1,6 +1,6 @@
 # Binet formula for the (-r)-Fibonacci polynomials
 
-**Binet formula for the (-r)-Fibonacci polynomials.** Let $K$ be a field, $r \ge 2$,
+Let $K$ be a field, $r \ge 2$,
 $x \in K$ and $y \in K$ nonzero, and write $U_n = U^{(-r)}_n(x, y)$. Suppose that
 $\beta_0, \dots, \beta_r \in K$ are pairwise distinct and that
 $t^{r+1} - y^{-1} t + x y^{-1} = \prod_{k=0}^{r} (t - \beta_k)$ as polynomials over $K$. Then for

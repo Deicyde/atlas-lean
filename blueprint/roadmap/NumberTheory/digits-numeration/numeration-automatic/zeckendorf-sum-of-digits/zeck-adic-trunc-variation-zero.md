@@ -1,6 +1,6 @@
 # The truncated variation vanishes for zero steps
 
-**The truncated variation vanishes for zero steps.** Let $T$ be the Zeckendorf odometer and,
+Let $T$ be the Zeckendorf odometer and,
 for a binary sequence $x$, let $s_k(x) = x_2 + \dots + x_k$ and
 $\Delta_k^{(r)}(x) = s_k(T^r(x)) - s_k(x)$. Then $\Delta_k^{(0)}(x) = 0$ for every
 $k \in \mathbb{N}$ and every binary sequence $x$.

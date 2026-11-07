@@ -1,6 +1,6 @@
 # Initial coefficient vector for odd powers of 7
 
-**Initial coefficient vector for odd powers of 7.** For all natural numbers $k$ and $j$,
+For all natural numbers $k$ and $j$,
 the first coefficient vector of Theorem 2 agrees with Garvan's coefficient vector $x_{2k-1}$:
 $y^{(2k-1)}_{1,j} = x_{2k-1,j}$. For $k = 0$ the index $2k - 1$ is read as $0$.
 

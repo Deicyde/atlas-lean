@@ -1,6 +1,6 @@
 # Encoded 2-local Hamiltonian term
 
-**Encoded 2-local Hamiltonian term.** A 2-local Hamiltonian term is encoded as a triple
+A 2-local Hamiltonian term is encoded as a triple
 $(i, j, e)$ of natural numbers $i$ and $j$, the qubits it acts on, and a list $e$ of pairs of
 encoded rational numbers, the real and imaginary parts of the entries of its $4 \times 4$ matrix
 in row-major order.

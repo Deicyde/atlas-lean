@@ -1,6 +1,6 @@
 # Periodicity of Tverberg's sum
 
-**Periodicity of Tverberg's sum.** Let $\ell \ge 2$ and let $F$ be one of
+Let $\ell \ge 2$ and let $F$ be one of
 $\lfloor \cdot \rfloor$, $\lceil \cdot \rceil$, $r^+(y) = \lfloor y + 1/2 \rfloor$ and
 $r^-(y) = \lceil y - 1/2 \rceil$.
 For integers $a_1, \dots, a_\ell$, a natural number $m$ and an integer $k$, let

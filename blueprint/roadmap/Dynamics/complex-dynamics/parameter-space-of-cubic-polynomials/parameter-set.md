@@ -1,6 +1,6 @@
 # Parameters with both critical points in the immediate basin
 
-**Parameters with both critical points in the immediate basin.** The parameter set is the set
+The parameter set is the set
 of $\lambda \in \mathbb{C}$ for which some immediate basin of zero $V$ of
 $f_\lambda(z) = \lambda z^2 + z^3$ contains every critical point of $f_\lambda$.
 

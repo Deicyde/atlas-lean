@@ -1,6 +1,5 @@
 # Type III alternating hyperharmonic power sums weighted by squarefree $k$-prime numbers
 
-**Type III alternating hyperharmonic power sums weighted by squarefree $k$-prime numbers.**
 Let $\alpha, m, k, p, y \ge 1$ and $q \ge 2$ be integers. Let $p_{\ell,k}$ be the $\ell$-th
 squarefree number with exactly $k$ prime factors, let $H_n^{(s,r,3)}$ be the signed iterated
 partial sum of order $r$, with alternating signs, of the alternating generalized harmonic numbers

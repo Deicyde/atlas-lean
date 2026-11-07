@@ -1,6 +1,6 @@
 # Periodicity and average of the fractional parts of $x p^n$
 
-**Periodicity and average of the fractional parts of $x p^n$.** Let $p$ be a prime and $x$ a
+Let $p$ be a prime and $x$ a
 positive rational. Write $\lbrace t \rbrace$ for the fractional part of $t$, $D_x = -v_p(x)$ for
 the delay and $L_x$ for the period of the base-$p$ expansion of $x$ (the order of $p$ modulo the
 prime-to-$p$ part of the denominator of $x$), and $\bar x$ for the average of its repeating

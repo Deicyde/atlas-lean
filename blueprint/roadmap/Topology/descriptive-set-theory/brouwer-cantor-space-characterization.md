@@ -1,6 +1,6 @@
 # Brouwer's characterization of the Cantor space
 
-**Brouwer's characterization of the Cantor space.** Every nonempty compact metrizable perfect totally disconnected space is homeomorphic to the Cantor
+Every nonempty compact metrizable perfect totally disconnected space is homeomorphic to the Cantor
 space.
 
 ## Sources

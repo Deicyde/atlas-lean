@@ -1,6 +1,6 @@
 # Strictly Lorentzian polynomials
 
-**Strictly Lorentzian polynomials.** For natural numbers $n$ and $d$, the set $\mathring{L}^d_n$
+For natural numbers $n$ and $d$, the set $\mathring{L}^d_n$
 of strictly Lorentzian polynomials of degree $d$ in $\mathbb{R}[w_1, \dots, w_n]$ is defined by
 recursion on $d$. Let $P^d_n$ be the set of homogeneous polynomials of degree $d$ in which every
 monomial of degree $d$ has a strictly positive coefficient, and let $\partial_i$ be the partial

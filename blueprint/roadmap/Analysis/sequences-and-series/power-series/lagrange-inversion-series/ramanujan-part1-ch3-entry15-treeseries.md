@@ -1,6 +1,6 @@
 # Ramanujan's tree-function series (Chapter 3, Entry 15)
 
-**Ramanujan's tree-function series (Chapter 3, Entry 15).** Let $x$ and $u$ be real numbers
+Let $x$ and $u$ be real numbers
 with $0 < u < 1$ and $u - \log u = 1 + x^2/2$. Then the series
 
 $$\sum_{k=0}^{\infty} \frac{(k+1)^{k-1}}{k!}\, e^{-k(1 + x^2/2)}$$

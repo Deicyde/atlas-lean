@@ -1,6 +1,6 @@
 # Gowers–Green–Manners–Tao exponent $7 + \sqrt{17}$
 
-**Gowers–Green–Manners–Tao exponent $7 + \sqrt{17}$.** The number $7 + \sqrt{17}$ is an
+The number $7 + \sqrt{17}$ is an
 admissible asymptotic coset-cover exponent.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Beta step of the applied polymorphic identity
 
-**Beta step of the applied polymorphic identity.** The polymorphic identity
+The polymorphic identity
 $\lambda (A : \mathrm{Prop}).\, \lambda (x : A).\, x$ applied to
 $\bot = \Pi (P : \mathrm{Prop}).\, P$ reduces in one beta step to $\lambda (x : \bot).\, x$.
 

@@ -1,6 +1,6 @@
 # Absolute convergence of Ramanujan's Bell-type series (Entry 4)
 
-**Absolute convergence of Ramanujan's Bell-type series (Entry 4).** For every complex
+For every complex
 number $x$ and every natural number $n$, the series
 $\sum_{j=0}^{\infty} \frac{(j+1)^n x^{j+1}}{j!}$ converges absolutely.
 

@@ -1,6 +1,6 @@
 # Uniform bound for covering convex bodies by interior translates
 
-**Uniform bound for covering convex bodies by interior translates.** For $n, q \in \mathbb{N}$,
+For $n, q \in \mathbb{N}$,
 the uniform interior translate bound holds when every convex body $K \subseteq \mathbb{R}^n$ (a
 compact convex set with nonempty interior) is covered by $q$ translates of its interior
 $\operatorname{int} K$, that is, $K \subseteq (v_1 + \operatorname{int} K) \cup \dots \cup

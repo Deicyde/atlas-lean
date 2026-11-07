@@ -1,6 +1,6 @@
 # One iteration of the overflow loop of the cell-shift generator
 
-**One iteration of the overflow loop of the cell-shift generator.** Let $L$ be a layout with
+Let $L$ be a layout with
 label block size $A$, $K$ stacks, $g$ symbol codes and window depth $d$, let $W = A + K H g$ be the
 row width and $V = (T + 1) W$ the number of variables, and let the tables $s_a, p, c, p_u$ be well
 formed for $N$ situations and height $H$. Let $t < T$, $i < N$, $k < K$ and

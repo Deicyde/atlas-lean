@@ -1,6 +1,6 @@
 # Fibonacci shifts have the same Zeckendorf variation densities as shift one
 
-**Fibonacci shifts have the same Zeckendorf variation densities as shift one.** For
+For
 $n \in \mathbb{N}$ let $s(n)$ be the number of terms in the Zeckendorf representation of $n$, and
 let $F_\ell$ be the $\ell$-th Fibonacci number ($F_1 = F_2 = 1$). Let $\ell \ge 2$ and let
 $\mu : \mathbb{Z} \to \mathbb{R}$ be such that for every $d \in \mathbb{Z}$ the set

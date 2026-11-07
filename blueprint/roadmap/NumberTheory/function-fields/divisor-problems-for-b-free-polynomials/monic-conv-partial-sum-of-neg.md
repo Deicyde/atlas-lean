@@ -1,6 +1,6 @@
 # $D(\alpha, \beta)$ vanishes at negative arguments
 
-**$D[\alpha, \beta]$ vanishes at negative arguments.** Let $F$ be a field and let
+Let $F$ be a field and let
 $\alpha, \beta \colon F[T] \to \mathbb{C}$. For every integer $n < 0$, the partial sum of the
 Dirichlet convolution of $\alpha$ and $\beta$ satisfies $D[\alpha, \beta](n) = 0$.
 

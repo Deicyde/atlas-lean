@@ -1,6 +1,6 @@
 # Garvan's 7-adic bounds for the matrix $m_{i,j}$
 
-**Garvan's 7-adic bounds for the matrix $m_{i,j}$.** Let $m_{i,j}$ be Garvan's matrix. For
+Let $m_{i,j}$ be Garvan's matrix. For
 all $i, j \ge 1$, $7^{\lfloor (7j - 2i - 1)/4 \rfloor}$ divides $m_{i,j}$, and in particular
 $7^{\lfloor (7j - i - 1)/4 \rfloor}$ divides $m_{4i,i+j}$, $7^{\lfloor (7j - i - 3)/4 \rfloor}$
 divides $m_{4i+1,i+j}$ and $7^{\lfloor (7j - i - 5)/4 \rfloor}$ divides $m_{4i+2,i+j}$. A negative

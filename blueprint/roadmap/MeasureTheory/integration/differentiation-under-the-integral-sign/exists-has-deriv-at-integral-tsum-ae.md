@@ -1,6 +1,6 @@
 # Differentiating an integral of a series term by term
 
-**Differentiating an integral of a series term by term.** Let $d \in \mathbb{N}$, let $\Omega$
+Let $d \in \mathbb{N}$, let $\Omega$
 be an open subset of $\mathbb{R}^d$, let $a < c < b$ be real numbers, and for each
 $n \in \mathbb{N}$ let $f_n : \mathbb{R}^d \times \mathbb{R} \to \mathbb{C}$ be almost everywhere
 measurable on $\Omega \times (a, b)$ with respect to Lebesgue measure. Write

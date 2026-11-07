@@ -1,6 +1,6 @@
 # Augmented $k$-Dyck paths
 
-**Augmented $k$-Dyck paths.** For natural numbers $k$ and $n$, write $U = (1,1)$ and
+For natural numbers $k$ and $n$, write $U = (1,1)$ and
 $D^{(k)} = (k,-k)$. A $k$-Dyck path of size $n$ is a word of length $(k+1)n$ in the letters $U$
 and $D^{(k)}$ that has exactly $n$ letters $D^{(k)}$ and $k$ times as many letters $U$ as letters
 $D^{(k)}$, and in which every prefix has at least $k$ times as many letters $U$ as letters

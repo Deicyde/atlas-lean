@@ -1,6 +1,6 @@
 # Erdős Problem 477 has a positive answer
 
-**Erdős Problem 477 has a positive answer.** There are a polynomial $f$ with integer
+There are a polynomial $f$ with integer
 coefficients of degree at least $2$ and a set $A$ of integers such that for every integer $n$
 there is exactly one pair $(a, b)$ with $a \in A$, $b = f(k)$ for some integer $k$, and
 $n = a + b$.

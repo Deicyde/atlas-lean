@@ -1,6 +1,6 @@
 # Recursion for triangular $q$-binomial coefficients
 
-**Recursion for triangular $q$-binomial coefficients.** The triangular $q$-binomial
+The triangular $q$-binomial
 coefficients $t[r, s] \in \mathbb{Z}[[q]]$ satisfy the recursion
 $t[r, s] = q^s \sum_{i=0}^{s} t[r - 1, i]$ for all natural numbers $r \ge 1$ and $s \le r$,
 together with the initial conditions $t[1, 1] = q$, $t[2, 1] = q(1 + q)$, $t[r, 0] = 1$ for

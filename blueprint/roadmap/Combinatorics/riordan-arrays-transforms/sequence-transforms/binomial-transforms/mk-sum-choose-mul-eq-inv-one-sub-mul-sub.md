@@ -1,6 +1,6 @@
 # Generating function of the binomial transform over a field
 
-**Generating function of the binomial transform over a field.** Let $K$ be a field and let
+Let $K$ be a field and let
 $a : \mathbb{N} \to K$ be a sequence with ordinary generating function
 $A(X) = \sum_n a_n X^n \in K[[X]]$. Then the ordinary generating function of the binomial
 transform $n \mapsto \sum_{k=0}^{n} \binom{n}{k} a_k$ of $a$ equals

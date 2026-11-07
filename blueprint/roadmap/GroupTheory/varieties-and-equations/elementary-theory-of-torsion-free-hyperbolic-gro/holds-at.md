@@ -1,6 +1,6 @@
 # Truth of a formula in conjunctive normal form
 
-**Truth of a formula in conjunctive normal form.** Let $G$ be a group, let
+Let $G$ be a group, let
 $a \colon \mathbb{N} \to G$ assign values to the variables $x_0, x_1, \dots$, and let $\varphi$ be
 a quantifier-free formula in conjunctive normal form. Then $\varphi$ holds in $G$ under $a$ when
 every clause of $\varphi$ contains a literal $(b, w)$ such that the value of $w$ under $a$ equals

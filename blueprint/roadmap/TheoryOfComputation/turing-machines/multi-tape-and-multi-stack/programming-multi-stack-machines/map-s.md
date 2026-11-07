@@ -1,6 +1,6 @@
 # Translating a statement along a stack embedding
 
-**Translating a statement along a stack embedding.** Let $E$ be a stack embedding with stack
+Let $E$ be a stack embedding with stack
 renaming $e$ and alphabet bijections $\iota_k$, and let $\varphi$ map the sub-machine's labels to
 the host's labels. The translation of a sub-machine statement is the host statement obtained
 recursively, where $s$ denotes the current state. A push of the symbol $f(s)$ on stack $k$

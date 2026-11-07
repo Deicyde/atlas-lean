@@ -1,6 +1,6 @@
 # The partial list coloring conjecture is false
 
-**The partial list coloring conjecture is false.** There exist a finite simple graph $G$ on
+There exist a finite simple graph $G$ on
 $n$ vertices whose choice number $q$ is positive, a natural number $t \le q$, and an assignment
 to each vertex $v$ of a list $L(v)$ of exactly $t$ colors, such that every set $S$ of vertices
 of $G$ whose induced subgraph has a proper coloring giving each vertex a color from its list

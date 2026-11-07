@@ -1,6 +1,6 @@
 # The class NC^k
 
-**The class NC^k.** For a natural number $k$, a decision problem $L$ is in $\mathsf{NC}^k$
+For a natural number $k$, a decision problem $L$ is in $\mathsf{NC}^k$
 when there are a constant $c$, a polynomial $p$ with natural number coefficients and a
 log-space uniform family of flat Boolean circuits $(C_n)_{n \in \mathbb{N}}$, where $C_n$ has
 $n$ inputs, such that for every $n$ the circuit $C_n$ is well formed, has no $\mathrm{mod}$

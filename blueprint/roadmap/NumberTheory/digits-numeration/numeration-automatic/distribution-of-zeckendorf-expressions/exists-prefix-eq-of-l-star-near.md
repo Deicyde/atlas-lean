@@ -1,6 +1,6 @@
 # Nearby expansions share long prefixes
 
-**Nearby expansions share long prefixes.** Let $L$ be a list of natural numbers of length at
+Let $L$ be a list of natural numbers of length at
 least $2$ with nonzero first entry, let $E^*$ be its $L^*$-collection, and let $Q$ be a strictly
 decreasing sequence in $(0, 1)$ such that $\varepsilon \mapsto \sum_k \varepsilon_k Q_k$ is a
 bijection from $E^*$ onto $(0, 1)$; indices start at $0$. Let $\varepsilon \in E^*$, put

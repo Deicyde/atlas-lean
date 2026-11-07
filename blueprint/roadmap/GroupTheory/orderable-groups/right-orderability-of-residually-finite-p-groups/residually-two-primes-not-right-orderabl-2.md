@@ -1,6 +1,6 @@
 # A non-right-orderable group that is residually $p$ for two primes (Linnell)
 
-**A non-right-orderable group that is residually $p$ for two primes (Linnell).** There exist a
+There exist a
 group $G$ and distinct primes $p$ and $q$ such that $G$ is residually a finite $p$-group and
 residually a finite $q$-group but is not right-orderable.
 

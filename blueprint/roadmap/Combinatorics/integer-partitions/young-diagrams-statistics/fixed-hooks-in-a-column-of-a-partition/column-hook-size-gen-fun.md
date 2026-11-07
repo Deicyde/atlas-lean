@@ -1,6 +1,6 @@
 # Generating function for column-$m$ hooks of size $k$
 
-**Generating function for column-$m$ hooks of size $k$.** Let $n$, $m \ge 1$ and $k \ge 1$
+Let $n$, $m \ge 1$ and $k \ge 1$
 be natural numbers. For a partition $\lambda$, write $\lambda_r$ for its $r$-th largest part
 ($0$ if it has fewer than $r$ parts), $\lambda'_m$ for the number of its parts that are at least
 $m$, and $h_{r,m}(\lambda) = \lambda_r + \lambda'_m - r - m + 1$ for the hook length of the square

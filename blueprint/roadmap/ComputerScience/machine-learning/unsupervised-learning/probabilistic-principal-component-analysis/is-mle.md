@@ -1,6 +1,6 @@
 # Probabilistic PCA maximum-likelihood estimate
 
-**Probabilistic PCA maximum-likelihood estimate.** Given data
+Given data
 $x_1, \dots, x_N \in \mathbb{R}^d$, a triple $(\mu_0, W_0, \sigma_0^2)$ of a mean
 $\mu_0 \in \mathbb{R}^d$, a real $d \times q$ loading matrix $W_0$ and a real number $\sigma_0^2$
 is a probabilistic PCA maximum-likelihood estimate when $\sigma_0^2 > 0$ and, for every

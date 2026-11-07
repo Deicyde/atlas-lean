@@ -1,6 +1,6 @@
 # The $(1,t)$-bonacci polynomials
 
-**The $(1,t)$-bonacci polynomials.** Fix a natural number $s$ and put $t = s + 1$. The
+Fix a natural number $s$ and put $t = s + 1$. The
 $(1,t)$-bonacci polynomials $f^{(t)}_n(x)$, $n \ge 0$, are the polynomials with natural-number
 coefficients defined by $f^{(t)}_0(x) = 1$ and, for every $n \ge 0$,
 $f^{(t)}_{n+1}(x) = f^{(t)}_n(x) + x \, f^{(t)}_{n-s}(x)$ if $s \le n$ and

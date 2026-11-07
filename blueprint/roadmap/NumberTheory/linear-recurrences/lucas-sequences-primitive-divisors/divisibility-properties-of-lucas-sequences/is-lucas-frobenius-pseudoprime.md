@@ -1,6 +1,6 @@
 # Frobenius pseudoprime for Lucas parameters
 
-**Frobenius pseudoprime for Lucas parameters.** Let $U$ and $V$ be the Lucas sequences with
+Let $U$ and $V$ be the Lucas sequences with
 integer parameters $P$ and $Q \neq 0$, and let $D = P^2 - 4Q$. A natural number $N$ is a
 Frobenius pseudoprime with parameters $P, Q$ when $\gcd(N, PQD) = 1$ and $N$ is a Lucas
 pseudoprime, a Lucas pseudoprime of the second kind, a Dickson pseudoprime and a Dickson

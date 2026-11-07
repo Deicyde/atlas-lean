@@ -1,6 +1,6 @@
 # Burnside count of torus tilings under the rectangle group
 
-**Burnside count of torus tilings under the rectangle group.** Let $T$ be a finite set of tile
+Let $T$ be a finite set of tile
 designs and let $n, m \ge 1$. Let $R$ be a subgroup of the dihedral group of order $8$, whose
 elements are the rotations $r_i$ and reflections $sr_i$ for $i \in \mathbb{Z}/4\mathbb{Z}$, such
 that every element of $R$ is one of $r_0$, $r_2$, $sr_0$, $sr_2$, and let $R$ act on $T$. Tilings

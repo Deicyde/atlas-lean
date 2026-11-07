@@ -1,6 +1,6 @@
 # Executing a translated statement
 
-**Executing a translated statement.** Let $E$ be a stack embedding with stack renaming $e$, and
+Let $E$ be a stack embedding with stack renaming $e$, and
 let $\varphi$ map sub-machine labels to host labels. Let $q$ be a sub-machine statement, $v$ a
 state, $S$ sub-machine stacks and $S'$ host stacks that agree with $S$. Let executing $q$ from
 state $v$ and stacks $S$ yield the next label $\ell$ (possibly none), state $w$ and stacks $T$.

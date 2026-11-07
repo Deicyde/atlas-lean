@@ -1,6 +1,6 @@
 # From Euler–Lucas to Frobenius pseudoprimes
 
-**From Euler–Lucas to Frobenius pseudoprimes.** Let $P$ and $Q \neq 0$ be integers forming a
+Let $P$ and $Q \neq 0$ be integers forming a
 nondegenerate Lucas pair, and let $D = P^2 - 4Q$. If $N$ is an Euler–Lucas pseudoprime with
 parameters $P, Q$ and an Euler pseudoprime to the base $Q$, and $\gcd(N, PQD) = 1$, then $N$ is a
 Frobenius pseudoprime with parameters $P, Q$.

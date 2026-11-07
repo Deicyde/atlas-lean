@@ -1,6 +1,6 @@
 # Laurent expansion of $\zeta$ at $s = 1$
 
-**Laurent expansion of $\zeta$ at $s = 1$.** Let $(c_k)_{k \ge 0}$ be real numbers such that,
+Let $(c_k)_{k \ge 0}$ be real numbers such that,
 for every $k \ge 0$, $\sum_{j=1}^{m} (\log j)^k / j - (\log m)^{k+1} / (k+1)$ tends to $c_k$ as
 $m \to \infty$. Then for every complex $s \ne 1$ the series
 

@@ -1,6 +1,6 @@
 # Congruences modulo 4 for $\overline{\mathrm{spt2}}$ along powers of 2
 
-**Congruences modulo 4 for $\overline{\mathrm{spt2}}$ along powers of 2.** Let
+Let
 $\overline{\mathrm{spt2}}(N)$ be the number of smallest parts in the overpartitions of $N$ whose
 smallest part is even and not overlined. For all natural numbers $j$ and $n$,
 $\overline{\mathrm{spt2}}(N)$ is divisible by $4$ for each of the six values

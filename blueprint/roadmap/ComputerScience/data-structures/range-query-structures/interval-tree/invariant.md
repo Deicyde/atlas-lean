@@ -1,6 +1,6 @@
 # Representation invariant of an indexed interval tree
 
-**Representation invariant of an indexed interval tree.** An indexed interval tree $T$
+An indexed interval tree $T$
 satisfies the representation invariant when its root tree has exact cached metadata (heights,
 sizes, and attained maximum high endpoints), is strictly ordered by the composite key (low
 endpoint, then identifier), is AVL balanced with exact stored heights, and stores only valid

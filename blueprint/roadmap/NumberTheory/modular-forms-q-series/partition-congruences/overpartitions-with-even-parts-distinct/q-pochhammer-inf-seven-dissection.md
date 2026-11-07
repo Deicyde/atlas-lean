@@ -1,6 +1,6 @@
 # Ramanujan's 7-dissection of Euler's product
 
-**Ramanujan's 7-dissection of Euler's product.** Let $q$ be a complex number with
+Let $q$ be a complex number with
 $|q| < 1$. For $k \ge 1$ let $f_k = (q^k; q^k)_\infty = \prod_{n \ge 0} (1 - q^k q^{kn})$, and
 for complex $a$, $b$ with $|a|, |b| < 1$ let $f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2}
 b^{n(n-1)/2}$ be Ramanujan's general theta function; all these products and series converge,

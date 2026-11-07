@@ -1,6 +1,6 @@
 # Different parts in a residue class and partitions of nonnegative rank
 
-**Different parts in a residue class and partitions of nonnegative rank.** Let $m$, $r$ and
+Let $m$, $r$ and
 $n$ be natural numbers with $r < m$, and for $k \ge 0$ let $a_{r,m}(k)$ be the sum, over all
 partitions of $k$, of the different parts congruent to $r$ modulo $m$, each counted once per
 partition whatever its multiplicity. Let $N(k)$ be the number of partitions of $k$ whose Dyson

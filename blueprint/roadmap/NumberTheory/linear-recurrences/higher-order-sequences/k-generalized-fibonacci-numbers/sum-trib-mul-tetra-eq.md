@@ -1,6 +1,5 @@
 # Convolution of the Fibonacci 3-step and 4-step numbers as a sum weighted by powers of 2
 
-**Convolution of the Fibonacci 3-step and 4-step numbers as a sum weighted by powers of 2.**
 Let $T_j$ and $Q_j$ be the Fibonacci $3$-step and $4$-step numbers, where the Fibonacci $k$-step
 numbers start $0, 1$ and each later term is the sum of the $k$ terms before it (terms of negative
 index being $0$). For every natural number $n$,

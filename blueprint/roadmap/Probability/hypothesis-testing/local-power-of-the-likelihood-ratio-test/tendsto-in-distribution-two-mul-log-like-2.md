@@ -1,6 +1,6 @@
 # Local power of the likelihood-ratio test
 
-**Local power of the likelihood-ratio test.** Let row `n` of the triangular array
+Let row `n` of the triangular array
 `X n 0, X n 1, …` be i.i.d. with law `p θₙ ν`, `θₙ = θ₀ + h / √n`, under the Cramér conditions
 at `θ₀` of `LikelihoodRatioTests.tendstoInDistribution_two_mul_logLikelihood_sub` (all moment
 and envelope conditions are under the null law `p θ₀ ν`). If `θ̂ₙ` solves the likelihood

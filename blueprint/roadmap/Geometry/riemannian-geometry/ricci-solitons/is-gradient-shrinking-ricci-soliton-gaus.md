@@ -1,6 +1,6 @@
 # The Gaussian shrinking soliton
 
-**The Gaussian shrinking soliton.** Let $F$ be a finite-dimensional real inner product space,
+Let $F$ be a finite-dimensional real inner product space,
 viewed as a Riemannian manifold with the metric given by its inner product, and let $a > 0$. The
 function $f(x) = \frac{a}{2} \|x\|^2$ on $F$ is a gradient shrinking Ricci soliton with
 constant $a$.

@@ -1,6 +1,6 @@
 # Solid light condensed abelian groups
 
-**Solid light condensed abelian groups.** Write $\mathbb{Z}[S]$ for the free light condensed
+Write $\mathbb{Z}[S]$ for the free light condensed
 abelian group on a light profinite set $S$, let $\mathbb{N} \cup \{\infty\}$ be the one-point
 compactification of $\mathbb{N}$, and let
 $P = \mathbb{Z}[\mathbb{N} \cup \{\infty\}]/\mathbb{Z}[\infty]$ be the cokernel of the map induced

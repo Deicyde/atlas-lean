@@ -1,6 +1,6 @@
 # Bound on the parameter in the weighted power-sum equation for Lucas sequences
 
-**Bound on the parameter in the weighted power-sum equation for Lucas sequences.** Let $x$
+Let $x$
 be a positive integer, let $y \in \{1, -1\}$, and let $(U_n)$ be the Lucas sequence with
 parameters $(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and $U_{n+2} = x U_{n+1} - y U_n$.
 If $n, p, q$ are positive integers and $k \geq 3$ is an integer with

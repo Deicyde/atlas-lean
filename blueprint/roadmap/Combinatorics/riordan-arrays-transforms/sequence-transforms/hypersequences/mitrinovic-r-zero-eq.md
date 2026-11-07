@@ -1,6 +1,6 @@
 # Mitrinović's numbers at $a = 0$
 
-**Mitrinović's numbers at $a = 0$.** For every complex number $b$, Mitrinović's numbers
+For every complex number $b$, Mitrinović's numbers
 $R^k_j(0, b)$ satisfy the following. First, for every $k \in \mathbb{N}$, $R^k_0(0, b) = 1$ if
 $k = 0$ and $R^k_0(0, b) = 0$ otherwise. Second, for all $j, k \in \mathbb{N}$,
 $R^{k+1}_{j+1}(0, b) = R^k_j(0, b) + (b - b(j + 1))\, R^{k+1}_j(0, b)$. Third, for all

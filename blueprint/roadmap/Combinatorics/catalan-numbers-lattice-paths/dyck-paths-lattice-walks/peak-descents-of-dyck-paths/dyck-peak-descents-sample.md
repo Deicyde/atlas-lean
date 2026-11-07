@@ -1,6 +1,6 @@
 # Peak descents of a sample Dyck path
 
-**Peak descents of a sample Dyck path.** The Dyck path $UUUUDDDUDDUUDUUDDD$, which factors
+The Dyck path $UUUUDDDUDDUUDUUDDD$, which factors
 as $U\,U\,U\,(UD^3)(UD^2)\,U\,(UD)\,U\,(UD^3)$, has four peaks $UD$, and the lengths of the
 maximal runs of $D$ steps starting at the $D$ of each peak are, from left to right,
 $3, 2, 1, 3$.

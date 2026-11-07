@@ -1,6 +1,6 @@
 # Four squares with large nonzero parts
 
-**Four squares with large nonzero parts.** There is a real constant $C > 0$ such that every
+There is a real constant $C > 0$ such that every
 positive integer $n$ can be written as $n = a_1^2 + a_2^2 + a_3^2 + a_4^2$ with integers
 $a_1, a_2, a_3, a_4$, each of which is either $0$ or at least $\sqrt{n} / C$.
 

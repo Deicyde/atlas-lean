@@ -1,6 +1,6 @@
 # PRF advantage
 
-**PRF advantage.** Let $K$, $X$, $Y$ and $S$ be finite sets with $K$, $Y$ and $S$ nonempty,
+Let $K$, $X$, $Y$ and $S$ be finite sets with $K$, $Y$ and $S$ nonempty,
 let $F : K \to X \to Y$ be a keyed function and let $D$ be a distinguisher: an oracle algorithm
 with coins in $S$ that queries a function $X \to Y$ and outputs a bit. The PRF advantage of $D$
 against $F$ is the real number $|p_{\mathrm{real}} - p_{\mathrm{rand}}|$, where

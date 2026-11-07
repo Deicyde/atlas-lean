@@ -1,6 +1,6 @@
 # Capping the multiplicities of a diagonal sequence at two
 
-**Capping the multiplicities of a diagonal sequence at two.** For $m \ge 0$ and a sequence
+For $m \ge 0$ and a sequence
 $s = (s_1, s_2, \dots)$ of natural numbers, let $d(m, s)$ be the sequence
 $(1, 2, \dots, m, m^{(s_m)}, (m-1)^{(s_{m-1})}, \dots, 1^{(s_1)})$ followed by zeros, where
 $v^{(r)}$ means $r$ copies of $v$, and let $n(m, s) = m(m+1)/2 + \sum_{j=1}^{m} j s_j$. Let

@@ -1,6 +1,6 @@
 # Dimension of the space of class functions
 
-**Dimension of the space of class functions.** Let $G$ be a finite group and $k$ a field.
+Let $G$ be a finite group and $k$ a field.
 The space of class functions $G \to k$ is a $k$-vector space whose dimension equals the
 number of conjugacy classes of $G$.
 

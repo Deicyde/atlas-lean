@@ -1,6 +1,6 @@
 # A Catalan generating function for two sets of five patterns
 
-**A Catalan generating function for two sets of five patterns.** Let
+Let
 $B = \{010, 101, 102, 201, 210\}$ and $B' = \{011, 101, 110, 201, 210\}$, where a pattern is
 written as a digit string ($101$ is the triple $(1, 0, 1)$). For a set $A$ of patterns let
 $F_A(x) = \sum_{n \ge 1} |I_n(A)| x^n \in \mathbb{Q}[[x]]$ be the generating function of the

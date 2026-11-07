@@ -1,6 +1,6 @@
 # Ulam's flat-sections problem in dimension three
 
-**Ulam's flat-sections problem in dimension three.** Let $K \subseteq \mathbb{R}^3$ be a compact
+Let $K \subseteq \mathbb{R}^3$ be a compact
 set homeomorphic to the closed unit ball. Suppose that for every nonzero continuous linear
 functional $F : \mathbb{R}^3 \to \mathbb{R}$ and every real $c$ such that the plane
 $\{x : F(x) = c\}$ meets the interior of $K$, the intersection of this plane with the boundary

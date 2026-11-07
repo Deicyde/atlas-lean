@@ -1,6 +1,6 @@
 # Diagonal sums of an array
 
-**Diagonal sums of an array.** For a doubly indexed array $(a_{i,j})_{i, j \ge 0}$ with entries
+For a doubly indexed array $(a_{i,j})_{i, j \ge 0}$ with entries
 in an additive commutative monoid $M$, the $n$-th diagonal sum is
 $d_n = \sum_{i + j = n} a_{i,j} = \sum_{k=0}^{n} a_{k,n-k}$.
 

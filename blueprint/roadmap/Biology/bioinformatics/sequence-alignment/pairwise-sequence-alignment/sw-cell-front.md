@@ -1,6 +1,6 @@
 # Fuel-bounded Smith–Waterman recursion
 
-**Fuel-bounded Smith–Waterman recursion.** Fix a substitution score
+Fix a substitution score
 $\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$, and write $ax$ for
 the sequence with first element $a$ followed by $x$. For a fuel $n \in \mathbb{N}$ and sequences
 $x, y$ over $\alpha$, the value $F_n(x, y) \in \mathbb{Z}$ is defined by $F_0(x, y) = 0$, by

@@ -1,6 +1,6 @@
 # Triangularization of an endomorphism with split characteristic polynomial
 
-**Triangularization of an endomorphism with split characteristic polynomial.** Let $V$ be a
+Let $V$ be a
 finite-dimensional vector space over a field $K$, let $f$ be an endomorphism of $V$ whose
 characteristic polynomial splits over $K$, and let $\iota$ be a finite linearly ordered set with
 exactly $\dim_K V$ elements. Then there is a basis $(b_i)_{i \in \iota}$ of $V$ in which the matrix

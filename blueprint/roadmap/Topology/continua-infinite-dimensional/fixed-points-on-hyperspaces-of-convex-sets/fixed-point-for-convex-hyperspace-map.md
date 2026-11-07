@@ -1,6 +1,6 @@
 # Fixed point theorem for maps of compact convex sets
 
-**Fixed point theorem for maps of compact convex sets.** Let $n \ge 0$ and let $B$ be the
+Let $n \ge 0$ and let $B$ be the
 closed unit ball about the origin in the Euclidean space $\mathbb{R}^n$. Let $f$ be a map from
 subsets of $\mathbb{R}^n$ to subsets of $\mathbb{R}^n$ that sends every nonempty compact convex
 subset of $B$ to a nonempty compact convex subset of $B$, and that is continuous in the Hausdorff

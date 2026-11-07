@@ -1,6 +1,5 @@
 # Fourier slice theorem and injectivity of the Radon transform on Schwartz functions
 
-**Fourier slice theorem and injectivity of the Radon transform on Schwartz functions.**
 Write $R$ for the Radon transform, $\hat g$ for the one-dimensional Fourier transform of
 $g : \mathbb{R} \to \mathbb{C}$ and $\hat f$ for the two-dimensional Fourier transform of
 $f : \mathbb{R}^2 \to \mathbb{C}$. For every Schwartz function

@@ -1,6 +1,6 @@
 # Compositions of five into odd or small even parts
 
-**Compositions of five into odd or small even parts.** Let $c^{2k}_o(n)$ be the number of
+Let $c^{2k}_o(n)$ be the number of
 compositions of $n$ in which every part is odd or at most $2k$. Then $c^0_o(5) = 5$ and
 $c^2_o(5) = 14$.
 

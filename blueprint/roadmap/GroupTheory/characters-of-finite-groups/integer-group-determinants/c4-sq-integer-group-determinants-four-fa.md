@@ -1,6 +1,6 @@
 # Four-factor integer group determinants of $C_4^2$
 
-**Four-factor integer group determinants of $C_4^2$.** Let
+Let
 $P$ be the set of positive primes $p \equiv 5 \pmod 8$, and let $k, l, m, n$ be integers such
 that $16l - 3$, $16l + 5$, $16m - 3$, $16m + 5$, $16n - 3$ and $16n + 5$ all lie in $P$. Then
 the four integers $(16k - 3)(16l + 5)(16m - 3)(16n - 3)$,

@@ -1,6 +1,6 @@
 # $\mathrm{PD}_2(2^\alpha (4n + 3))$ is divisible by 4
 
-**$\mathrm{PD}_2(2^\alpha (4n + 3))$ is divisible by 4.** Write $\mathrm{PD}_2(m)$ for the
+Write $\mathrm{PD}_2(m)$ for the
 number of partitions of $m$ with designated summands in which every part is odd. For all natural
 numbers $\alpha$ and $n$, $\mathrm{PD}_2(2^\alpha (4n + 3)) \equiv 0 \pmod 4$.
 

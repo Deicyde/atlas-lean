@@ -1,6 +1,6 @@
 # Partitions into paths of length 2
 
-**Partitions into paths of length 2.** An instance $(n, E)$ admits a partition into paths of
+An instance $(n, E)$ admits a partition into paths of
 length 2 when there is a list of triples, each a list of three distinct vertices from
 $\{0, \dots, n - 1\}$, such that every vertex occurs exactly once among all the triples taken
 together, and every triple contains pairwise distinct vertices $x$, $y$, $z$ such that $x$ is

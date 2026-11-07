@@ -1,6 +1,6 @@
 # Kourovka 11.55: unique roots in pure braid groups
 
-**Kourovka 11.55: unique roots in pure braid groups.** The proposition that for every
+The proposition that for every
 $n \in \mathbb{N}$ and every integer $k \ge 1$, if pure braids $\alpha$ and $\beta$ on $n + 1$
 strands satisfy $\alpha^k = \beta^k$, then $\alpha = \beta$.
 

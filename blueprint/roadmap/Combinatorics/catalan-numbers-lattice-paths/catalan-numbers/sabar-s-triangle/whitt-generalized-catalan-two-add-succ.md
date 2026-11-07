@@ -1,6 +1,6 @@
 # Consecutive Whitt generalized Catalan numbers at $\alpha = 2$
 
-**Consecutive Whitt generalized Catalan numbers at $\alpha = 2$.** For every natural number
+For every natural number
 $n \ge 1$, Whitt's generalized Catalan numbers at $\alpha = 2$ satisfy
 
 $$C(2, n) + C(2, n+1) = 2^{n+1} c_n,$$

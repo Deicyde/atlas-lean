@@ -1,6 +1,6 @@
 # Riemann sums of two partitions with a common refinement
 
-**Riemann sums of two partitions with a common refinement.** Let $f : \mathbb{R} \to \mathbb{R}$
+Let $f : \mathbb{R} \to \mathbb{R}$
 and let $T_1$, $T_2$ be tagged partitions of $[a, b]$ with meshes $\|T_1\|$ and $\|T_2\|$.
 Suppose $\omega_1, \omega_2 \in \mathbb{R}$ satisfy, for $i = 1, 2$, $|f(x) - f(y)| \le \omega_i$
 for all $x, y \in [a, b]$ with $|x - y| \le \|T_i\|$. Let $T''$ be a tagged partition of

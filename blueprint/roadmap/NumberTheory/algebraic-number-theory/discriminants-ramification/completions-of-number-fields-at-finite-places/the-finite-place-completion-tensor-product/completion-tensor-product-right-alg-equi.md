@@ -1,6 +1,6 @@
 # Tensor product decomposition at a finite place
 
-**Tensor product decomposition at a finite place.** Let $L/K$ be an extension of number fields,
+Let $L/K$ be an extension of number fields,
 $v$ a finite place of $K$ and $K_v$ the completion of $K$ at $v$; for each finite place $w$ of $L$
 lying over $v$, let $L_w$ be the completion of $L$ at $w$, a $K_v$-algebra via the canonical map
 $K_v \to L_w$, and make $L \otimes_K K_v$ a $K_v$-algebra through its second factor. This is the

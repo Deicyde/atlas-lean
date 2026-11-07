@@ -1,6 +1,6 @@
 # Constant sequences are linearly recurrent
 
-**Constant sequences are linearly recurrent.** For every set $\alpha$ and every $c \in \alpha$,
+For every set $\alpha$ and every $c \in \alpha$,
 the constant sequence $n \mapsto c$ on $\mathbb{N}$ is linearly recurrent.
 
 ## Sources

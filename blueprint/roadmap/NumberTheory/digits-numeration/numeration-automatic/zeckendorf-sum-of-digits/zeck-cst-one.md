@@ -1,6 +1,6 @@
 # $\mathrm{CST}_1$ is empty for every positive shift
 
-**$\mathrm{CST}_1$ is empty for every positive shift.** For every $r \ge 1$, the set
+For every $r \ge 1$, the set
 $\mathrm{CST}_1$ for the shift $r$ is empty.
 
 ## Sources

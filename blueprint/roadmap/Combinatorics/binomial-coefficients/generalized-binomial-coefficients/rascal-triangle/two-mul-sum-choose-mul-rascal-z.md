@@ -1,6 +1,6 @@
 # Binomial-weighted row sums of the Rascal triangle
 
-**Binomial-weighted row sums of the Rascal triangle.** For
+For
 every natural number $n$, the Rascal numbers
 $R_{n,k} = k(n-k) + 1$ ($0 \le k \le n$) satisfy
 $2 \sum_{k=0}^{n} \binom{n}{k} R_{n,k} = 2^n \binom{n}{2} + 2^{n+1}$.

@@ -1,6 +1,6 @@
 # The inf-convolution of a lower semicontinuous function is Lipschitz
 
-**The inf-convolution of a lower semicontinuous function is Lipschitz.** Let $X$ be a metric
+Let $X$ be a metric
 space with metric $d$, and let $f : X \to [0,\infty]$ be lower semicontinuous with $f(p) < \infty$
 for at least one $p \in X$. For a natural number $n$ and $x \in X$ let
 

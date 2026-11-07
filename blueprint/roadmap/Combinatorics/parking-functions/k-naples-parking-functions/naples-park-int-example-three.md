@@ -1,6 +1,6 @@
 # A $3$-Naples parking example on $\mathbb{Z}$
 
-**A $3$-Naples parking example on $\mathbb{Z}$.** Under the $3$-Naples rule on $\mathbb{Z}$,
+Under the $3$-Naples rule on $\mathbb{Z}$,
 the cars with preferences $(1, 2, 2, 5, 7, 7, 7, 3)$, arriving in order with no spot occupied,
 park in the spots $1, 2, 0, 5, 7, 6, 4, 3$ respectively.
 

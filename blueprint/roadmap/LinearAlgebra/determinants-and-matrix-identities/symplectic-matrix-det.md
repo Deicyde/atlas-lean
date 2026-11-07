@@ -1,6 +1,6 @@
 # Symplectic matrices have determinant one
 
-**Symplectic matrices have determinant one.** Let $R$ be a commutative ring, $l$ a finite
+Let $R$ be a commutative ring, $l$ a finite
 set, $I$ the identity matrix indexed by $l$, and
 $J = \begin{pmatrix} 0 & -I \\ I & 0 \end{pmatrix}$ the matrix over $R$ indexed by the disjoint
 union $l \sqcup l$. Every square matrix $A$ over $R$ indexed by $l \sqcup l$ with

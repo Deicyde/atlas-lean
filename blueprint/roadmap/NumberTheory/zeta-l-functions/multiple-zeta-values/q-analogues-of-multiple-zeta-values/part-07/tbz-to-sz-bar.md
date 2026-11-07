@@ -1,6 +1,6 @@
 # The TBZ-to-SZ map on the letter $\bar{1}$
 
-**The TBZ-to-SZ map on the letter $\bar{1}$.** The map $U_{\mathrm{TBZ}}$ sends the one-letter
+The map $U_{\mathrm{TBZ}}$ sends the one-letter
 word $\bar{1}$ to the index $(1)$ with coefficient $1$.
 
 ## Sources

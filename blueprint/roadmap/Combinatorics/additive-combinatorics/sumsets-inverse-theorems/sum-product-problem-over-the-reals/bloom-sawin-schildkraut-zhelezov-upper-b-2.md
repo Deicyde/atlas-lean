@@ -1,6 +1,6 @@
 # Bloom–Sawin–Schildkraut–Zhelezov upper bound for the real sum-product exponent
 
-**Bloom–Sawin–Schildkraut–Zhelezov upper bound for the real sum-product exponent.** There is a
+There is a
 real number $c > 0$ such that the real sum-product exponent $C$ satisfies $C \le 2 - c$. Here,
 for a finite set $A \subset \mathbb{R}$, $A + A$ and $A \cdot A$ are the sets of sums $a + b$
 and products $ab$ with $a, b \in A$, and $M(A) = \max(|A + A|, |A \cdot A|)$; for $n \ge 2$,

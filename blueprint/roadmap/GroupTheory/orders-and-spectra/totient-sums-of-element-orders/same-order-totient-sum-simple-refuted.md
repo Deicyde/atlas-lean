@@ -1,6 +1,6 @@
 # Order and totient sum do not determine simplicity (Kourovka 19.25)
 
-**Order and totient sum do not determine simplicity (Kourovka 19.25).** There are finite groups
+There are finite groups
 $G$ and $H$ of the same order with $\sum_{g \in G} \varphi(|g|) = \sum_{h \in H} \varphi(|h|)$,
 where $|g|$ is the order of $g$ and $\varphi$ is Euler's totient function, such that $G$ is
 simple and $H$ is not simple. So the Curtin–Pourgholi question has a negative answer.

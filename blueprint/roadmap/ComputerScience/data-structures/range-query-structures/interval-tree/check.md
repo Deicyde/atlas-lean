@@ -1,6 +1,6 @@
 # Representation check for the indexed interval tree
 
-**Representation check for the indexed interval tree.** For an indexed interval tree, the
+For an indexed interval tree, the
 check returns true exactly when all of the following hold: at every node the cached height and size
 agree with the values recomputed from its children's cached heights and sizes, and the cached
 maximum high endpoint equals the largest of the node's own high endpoint and its children's cached

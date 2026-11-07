@@ -1,6 +1,6 @@
 # Fitting height is bounded by the order of an automorphism and its centralizer
 
-**Fitting height is bounded by the order of an automorphism and its centralizer.** There is a
+There is a
 function $f$ assigning a natural number $f(m, n)$ to every pair of natural numbers $m$, $n$ such
 that every finite soluble group $G$ with an automorphism $\varphi$ has Fitting height at most
 $f(|\varphi|, |C_G(\varphi)|)$, where $|\varphi|$ is the order of $\varphi$ and $|C_G(\varphi)|$ is

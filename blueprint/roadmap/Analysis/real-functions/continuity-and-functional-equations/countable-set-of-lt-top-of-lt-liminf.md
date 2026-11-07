@@ -1,6 +1,6 @@
 # A strict liminf gap at every finite value forces countably many finite values
 
-**A strict liminf gap at every finite value forces countably many finite values.** Let
+Let
 $f : [0,1] \to [0,\infty]$ be such that for every $y \in [0,1]$ with $f(y) \ne \infty$,
 
 $$

@@ -1,6 +1,6 @@
 # Hyperbolicity of Jensen polynomials from a log-ratio expansion
 
-**Hyperbolicity of Jensen polynomials from a log-ratio expansion.** Let $\alpha$, $A$ and
+Let $\alpha$, $A$ and
 $\delta$ be sequences of positive real numbers indexed by $n \in \mathbb{N}$ with
 $\delta(n) \to 0$, let $d \ge 1$ be an integer, and for $3 \le j \le d$ let $g_j$ be a real
 sequence with $g_j(n) = o(\delta(n)^j)$ as $n \to \infty$. Suppose that for every natural number

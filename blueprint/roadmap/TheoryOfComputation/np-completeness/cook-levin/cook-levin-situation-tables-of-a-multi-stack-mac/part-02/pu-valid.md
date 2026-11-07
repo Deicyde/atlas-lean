@@ -1,6 +1,6 @@
 # Pushed codes are valid symbol codes
 
-**Pushed codes are valid symbol codes.** Fix an encoding record $E$ of a finite multi-stack
+Fix an encoding record $E$ of a finite multi-stack
 machine. Let $i$ be a situation, $k$ a stack number, $s$ the stack that the inverse stack numbering
 of $E$ assigns to $k$, $n_s$ the size of the effective alphabet of $s$, and $j < \mathrm{pl}(i, k)$.
 Then there is a symbol $x$ at position $j$ from the top (counting from $0$) among the symbols the

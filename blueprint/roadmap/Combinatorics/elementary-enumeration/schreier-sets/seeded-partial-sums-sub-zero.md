@@ -1,6 +1,6 @@
 # Effect of the seed on seeded partial sums
 
-**Effect of the seed on seeded partial sums.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $a = (a_n)_{n \ge 0}$ and $b = (b_n)_{n \ge 0}$ be sequences in $R$, and write $t^b_{k,n}$ for
 the seeded partial sums of $a$ with seed sequence $b$ and $t^0_{k,n}$ for those with the zero
 seed sequence. Then for all $k, n \ge 0$,

@@ -1,6 +1,6 @@
 # Arithmetic derivative of zero
 
-**Arithmetic derivative of zero.** The arithmetic derivative of $0$ is $0$: $D(0) = 0$.
+The arithmetic derivative of $0$ is $0$: $D(0) = 0$.
 
 ## Sources
 

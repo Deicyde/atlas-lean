@@ -1,6 +1,6 @@
 # The host as a finite multi-stack Turing machine
 
-**The host as a finite multi-stack Turing machine.** Given the five generator programs (update
+Given the five generator programs (update
 and situation-definition programs over the family generator's stacks, a shift program, an accept
 program, and an init program whose input alphabet has $g$ codes), the host machine is the finite
 multi-stack Turing machine whose stacks are the host stacks, with the input-code stack as input

@@ -1,6 +1,6 @@
 # Lomonosov's invariant subspace theorem
 
-**Lomonosov's invariant subspace theorem.** Let $E$ be an infinite-dimensional complex Banach
+Let $E$ be an infinite-dimensional complex Banach
 space, let $K$ be a nonzero compact operator on $E$, and let $T$ be a bounded linear operator on
 $E$ with $TK = KT$. Then there is a closed linear subspace $M$ of $E$ with $M \ne \{0\}$ and
 $M \ne E$ that is invariant under $T$: $T x \in M$ for every $x \in M$.

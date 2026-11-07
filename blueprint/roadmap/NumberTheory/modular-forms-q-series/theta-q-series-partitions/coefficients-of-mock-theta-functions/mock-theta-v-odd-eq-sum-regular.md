@@ -1,6 +1,6 @@
 # Sum formula for the odd-indexed coefficients of $v(q)$
 
-**Sum formula for the odd-indexed coefficients of $v(q)$.** Let $P_v(n)$ be the coefficient
+Let $P_v(n)$ be the coefficient
 of $q^n$ in the eighth-order mock theta function $v(q)$, for $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$, and let $b_4^1(k)$ be the coefficient of $q^k$ in the
 integer power series $f_4 / f_1$. Then for every $n \ge 0$,

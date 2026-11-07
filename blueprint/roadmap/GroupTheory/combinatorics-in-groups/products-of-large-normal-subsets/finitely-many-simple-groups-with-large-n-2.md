@@ -1,6 +1,6 @@
 # Pyber's conjecture for finite simple groups is false
 
-**Pyber's conjecture for finite simple groups is false.** There is no natural number $N$ such that
+There is no natural number $N$ such that
 every nonabelian finite simple group $G$ that has a subset $S$ with $g s g^{-1} \in S$ and
 $s^{-1} \in S$ for all $g \in G$ and $s \in S$, with $|S| > |G| / \log_2 |G|$ and with $S^2 \ne G$,
 where $S^2 = \{st : s, t \in S\}$, has order $|G| \le N$.

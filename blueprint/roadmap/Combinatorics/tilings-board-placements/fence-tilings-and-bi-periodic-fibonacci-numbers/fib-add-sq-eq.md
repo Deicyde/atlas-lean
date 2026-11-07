@@ -1,6 +1,6 @@
 # Addition formula for squared Fibonacci numbers
 
-**Addition formula for squared Fibonacci numbers.** Let $F_k$ denote the Fibonacci numbers
+Let $F_k$ denote the Fibonacci numbers
 ($F_0 = 0$, $F_1 = 1$). For all natural numbers $m \ge 1$ and $n \ge 2$,
 
 $$

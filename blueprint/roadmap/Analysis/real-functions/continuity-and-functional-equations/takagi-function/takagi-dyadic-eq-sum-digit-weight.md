@@ -1,6 +1,6 @@
 # Takagi values at dyadic rationals from binary digits
 
-**Takagi values at dyadic rationals from binary digits.** Let $k$ and $r$ be natural
+Let $k$ and $r$ be natural
 numbers with $r < 2^k$ and put $n = 2^k + r$. Write $\tau(r, k-1)$ for the Takagi value of the
 dyadic presentation $r/2^k$, write $n_j = \lfloor n/2^j \rfloor \bmod 2$ for the binary digit of
 $n$ at position $j$, and write $s_1(m)$ for the number of ones in the binary expansion of $m$.

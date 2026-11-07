@@ -1,6 +1,6 @@
 # Local Edgeworth expansion for the Ewens distribution
 
-**Local Edgeworth expansion for the Ewens distribution.** Let $r \ge 0$ be an integer and let
+Let $r \ge 0$ be an integer and let
 $L \subseteq (0, \infty)$ be compact. For $\theta > 0$ and integers $n \ge 2$ and $1 \le k \le n$,
 let $s(n, k)$ be the unsigned Stirling number of the first kind (the number of permutations of
 $n$ elements with exactly $k$ cycles), let

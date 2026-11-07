@@ -1,6 +1,6 @@
 # The $q$-weighted digit sum of zero
 
-**The $q$-weighted digit sum of zero.** For every element $q$ of a commutative ring, the
+For every element $q$ of a commutative ring, the
 $q$-weighted binary digit sum of $0$ is $s_q(0) = 0$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Containment of a point pattern in d-dimensional grid cells
 
-**Containment of a point pattern in d-dimensional grid cells.** Let $d$ be a natural number,
+Let $d$ be a natural number,
 let $A \subseteq \mathbb{N}^d$ be a set of cells and let $P \subseteq \mathbb{R}^d$. Then $A$
 contains $P$ when there are maps $f_1, \dots, f_d : \mathbb{R} \to \mathbb{N}$ such that each $f_i$
 is strictly increasing on the set $\{p_i : p \in P\}$ of $i$-th coordinates of points of $P$, and

@@ -1,6 +1,6 @@
 # Inversion sequences avoiding $\{011, 102, 120\}$
 
-**Inversion sequences avoiding $\{011, 102, 120\}$.** Let $B = \{011, 102, 120\}$, where a
+Let $B = \{011, 102, 120\}$, where a
 pattern is written as a digit string ($101$ is the triple $(1, 0, 1)$), and let
 $F_B(x) = \sum_{n \ge 1} |I_n(B)| x^n \in \mathbb{Q}[[x]]$ be the generating function of the
 inversion sequences avoiding every pattern in $B$. Then

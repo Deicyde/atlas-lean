@@ -1,6 +1,6 @@
 # Range query on a segment tree
 
-**Range query on a segment tree.** For a segment tree $t$ with values in an additive monoid
+For a segment tree $t$ with values in an additive monoid
 and natural numbers $l, r$, the range query over $[l, r)$, with positions counted from the start
 of the segment of $t$, is defined recursively. On the empty tree it is $0$. On a leaf with value
 $x$ it is $x$ if $l = 0 < r$, and $0$ otherwise. On an internal node with cached aggregate $a$,

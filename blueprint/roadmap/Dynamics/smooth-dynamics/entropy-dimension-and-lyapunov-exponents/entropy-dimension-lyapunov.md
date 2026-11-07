@@ -1,6 +1,6 @@
 # Young's entropy–dimension–Lyapunov formula (planar case)
 
-**Young's entropy–dimension–Lyapunov formula (planar case).** Let $T$ be a $C^2$
+Let $T$ be a $C^2$
 diffeomorphism of the Euclidean plane $\mathbb{R}^2$: $T$ has a two-sided inverse $T^{-1}$ and
 both $T$ and $T^{-1}$ are $C^2$. Let $K \subseteq \mathbb{R}^2$ be a compact set with
 $T(K) = K$, and let $\mu$ be a Borel probability measure on $\mathbb{R}^2$ with

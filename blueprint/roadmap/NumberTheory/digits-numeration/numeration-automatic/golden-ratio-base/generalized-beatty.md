@@ -1,6 +1,6 @@
 # Generalized Beatty sequence
 
-**Generalized Beatty sequence.** Let $\varphi$ be the golden ratio. For integers $p, q, r$, the
+Let $\varphi$ be the golden ratio. For integers $p, q, r$, the
 generalized Beatty sequence $V(p, q, r)$ is the integer sequence defined for every natural number
 $n$, including $n = 0$, by $V(p, q, r)(n) = p\lfloor n\varphi \rfloor + qn + r$.
 

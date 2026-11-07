@@ -1,6 +1,6 @@
 # Palindromic half copy
 
-**Palindromic half copy.** For natural numbers $b$ and $m \ge 1$, write
+For natural numbers $b$ and $m \ge 1$, write
 $m = (a_k a_{k-1} \cdots a_0)_b$ for the base-$b$ digits of $m$. The palindromic half copy of $m$
 is $C_b(m) = \sum_{j=0}^{k} a_{\max(j, k - j)} b^j$: the $b$-adic palindrome with the same number
 of digits as $m$ whose upper digits $a_k, \dots, a_{\lceil k/2 \rceil}$ are those of $m$ and whose

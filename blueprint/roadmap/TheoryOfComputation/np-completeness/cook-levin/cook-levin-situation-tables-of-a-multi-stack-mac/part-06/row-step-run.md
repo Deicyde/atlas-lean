@@ -1,6 +1,6 @@
 # One-step invariant
 
-**One-step invariant.** Fix an encoding $E$ of a machine $M$ with $K$ stacks, window depth $d$
+Fix an encoding $E$ of a machine $M$ with $K$ stacks, window depth $d$
 and $N$ situations, natural numbers $T$, $H$, $t$ with $t < T$ and $d \le H$, an assignment $a$
 and an input list $s$, and let $c_t$ be the configuration at time $t$ of the idle-extended run of
 $M$ from the start configuration on $s$.

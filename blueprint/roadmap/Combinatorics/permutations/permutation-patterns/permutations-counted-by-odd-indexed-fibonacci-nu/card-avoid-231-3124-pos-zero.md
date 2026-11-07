@@ -1,6 +1,6 @@
 # Position of the smallest entry in $(231, 3124)$-avoiding permutations
 
-**Position of the smallest entry in $(231, 3124)$-avoiding permutations.** For a natural
+For a natural
 number $m$, write $S_m(231, 3124)$ for the set of permutations of $\{0, 1, \dots, m-1\}$ that
 avoid both patterns $231$ and $3124$, that is, contain neither of them. Let $n \ge 1$ and let
 $j$ be a position with $j + 1 < n$. Then the number of permutations $\sigma \in S_n(231, 3124)$

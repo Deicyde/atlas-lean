@@ -1,6 +1,6 @@
 # Mixed bronze numeration
 
-**Mixed bronze numeration.** Let $B_n$ be the bronze numbers ($B_0 = 0$, $B_1 = 1$,
+Let $B_n$ be the bronze numbers ($B_0 = 0$, $B_1 = 1$,
 $B_{n+2} = 3B_{n+1} + B_n$, the Lucas sequence $U(3, -1)$), and let $C_n = B_{n+1} - 2B_n$ and
 $D_n = B_{n+1} - B_n$ be the companion bronze numbers of the first and second type. Let $R$ be
 the integer sequence with $R_{3m} = D_{2m}$, $R_{3m+1} = 3B_{2m+1}$ and

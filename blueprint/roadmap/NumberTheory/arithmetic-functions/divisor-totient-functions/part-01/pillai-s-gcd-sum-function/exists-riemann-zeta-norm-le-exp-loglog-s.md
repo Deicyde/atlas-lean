@@ -1,6 +1,6 @@
 # Ramachandra–Sankaranarayanan bound for $\zeta$ at a well-chosen height
 
-**Ramachandra–Sankaranarayanan bound for $\zeta$ at a well-chosen height.** Let $\zeta$ be the
+Let $\zeta$ be the
 Riemann zeta function. There are real constants $C$ and $U_0$ such that for every real
 $U \ge U_0$ there is a real number $T$ with $U < T < 2U$ such that for every real $\sigma \ge 1/2$,
 

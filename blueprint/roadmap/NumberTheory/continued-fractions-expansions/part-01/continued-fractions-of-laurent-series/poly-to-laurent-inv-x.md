@@ -1,6 +1,6 @@
 # The polynomial variable embeds as the Laurent variable
 
-**The polynomial variable embeds as the Laurent variable.** Let $K$ be a field. The
+Let $K$ be a field. The
 embedding $K[x] \to K((x^{-1}))$ sends the polynomial $x$ to the element $x$ of
 $K((x^{-1}))$.
 

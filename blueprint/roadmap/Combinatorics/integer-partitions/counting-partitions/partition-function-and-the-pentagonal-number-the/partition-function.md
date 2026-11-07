@@ -1,6 +1,6 @@
 # The partition function
 
-**The partition function.** For a natural number $n$, $p(n)$ is the number of partitions of
+For a natural number $n$, $p(n)$ is the number of partitions of
 $n$, that is, of ways of writing $n$ as a sum of positive integers, disregarding order.
 
 ## Sources

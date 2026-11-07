@@ -1,3 +1,3 @@
 # Language of a linear bounded automaton
 
-**Language of a linear bounded automaton.** The language of `M`: the words it accepts.
+The language of `M`: the words it accepts.

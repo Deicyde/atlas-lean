@@ -1,6 +1,6 @@
 # A sufficient condition for a non-Bonse sequence
 
-**A sufficient condition for a non-Bonse sequence.** Let $a_0 < a_1 < a_2 < \cdots$ be a
+Let $a_0 < a_1 < a_2 < \cdots$ be a
 strictly increasing sequence of positive integers and write $A_n = a_0 a_1 \cdots a_{n-1}$ for the
 product of its first $n$ terms. Suppose that $(n + 1) \log \log a_n / \log a_{n+1} \to 0$ as
 $n \to \infty$, and that there is a real number $c < 2$ such that $\log A_n / \log a_n < c$ for

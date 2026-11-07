@@ -1,6 +1,6 @@
 # Property (T) for automorphism groups of free groups of rank at least 6
 
-**Property (T) for automorphism groups of free groups of rank at least 6.** For every natural
+For every natural
 number $n \ge 6$, the automorphism group $\operatorname{Aut}(F_n)$ of the free group $F_n$ on $n$
 generators has property (T).
 

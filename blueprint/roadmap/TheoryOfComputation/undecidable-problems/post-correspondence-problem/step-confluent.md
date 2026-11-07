@@ -1,6 +1,6 @@
 # Local confluence on words with one control symbol
 
-**Local confluence on words with one control symbol.** Let $M$ be a single-tape machine with
+Let $M$ be a single-tape machine with
 finite tape alphabet and finite set of states, and let $w$ be a word over the symbols of its
 rewriting system that contains exactly one control symbol (a state symbol or the halting symbol).
 If $w$ rewrites in one step to $w_1$ and in one step to $w_2$ under the rules of $M$, then there is

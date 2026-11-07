@@ -1,6 +1,6 @@
 # Pointer-jumping state as arrays
 
-**Pointer-jumping state as arrays.** A suffix-sum pointer-jumping state on $n$ nodes is
+A suffix-sum pointer-jumping state on $n$ nodes is
 stored as a pair of arrays of length $n$: the array whose entry $v$ is the pointer of node $v$,
 and the array whose entry $v$ is the accumulated value of node $v$.
 

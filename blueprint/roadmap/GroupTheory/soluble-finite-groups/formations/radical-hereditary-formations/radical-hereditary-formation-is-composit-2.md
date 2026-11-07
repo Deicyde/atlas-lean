@@ -1,6 +1,6 @@
 # Radical hereditary formations need not be composition formations
 
-**Radical hereditary formations need not be composition formations.** It is not true that every
+It is not true that every
 radical hereditary formation of finite groups is a composition formation: some class of groups
 that is a formation, a radical class and a hereditary class is not solubly saturated.
 

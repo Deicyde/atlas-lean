@@ -1,6 +1,6 @@
 # The absolute coefficient sum of $C_n$ counts odd divisors
 
-**The absolute coefficient sum of $C_n$ counts odd divisors.** Let $n \ge 1$, let $\bar P_n$ be
+Let $n \ge 1$, let $\bar P_n$ be
 the Kassel–Reutenauer polynomial, and write $C_n(q)/q^n$ for the Laurent polynomial
 $(q - 2 + q^{-1})\,\bar P_n(q + q^{-1})$ in $\mathbb{Z}[q, q^{-1}]$. Then the sum of the absolute
 values of the coefficients of $C_n(q)/q^n$ equals four times the number of odd divisors of $n$.

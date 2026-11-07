@@ -1,6 +1,6 @@
 # Derivability with Armstrong's axioms
 
-**Derivability with Armstrong's axioms.** Let $F$ be a finite set of functional
+Let $F$ be a finite set of functional
 dependencies over a set $A$ of attributes. Derivability from $F$ is the least property of
 functional dependencies over $A$ such that, for all finite sets $X$, $Y$, $Z$ of attributes:
 every dependency of $F$ is derivable; $X \to Y$ is derivable whenever $Y \subseteq X$

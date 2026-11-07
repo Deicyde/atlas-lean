@@ -1,6 +1,6 @@
 # Evidence lower bound of latent distributions
 
-**Evidence lower bound of latent distributions.** Let $Z$ be a finite set, let
+Let $Z$ be a finite set, let
 $p_\theta(x, z)$ be real numbers indexed by parameters $\theta$, observations $x$ and latent values
 $z \in Z$, and let $x_1, \dots, x_N$ be data. For a parameter $\theta$ and functions
 $q_1, \dots, q_N : Z \to \mathbb{R}$ (one latent distribution per data point), the evidence lower

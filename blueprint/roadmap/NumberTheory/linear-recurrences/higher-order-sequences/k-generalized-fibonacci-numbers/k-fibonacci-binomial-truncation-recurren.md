@@ -1,6 +1,6 @@
 # Recurrence for the truncated binomial sums
 
-**Recurrence for the truncated binomial sums.** Let $G_n^{(k)}$ be the truncated binomial
+Let $G_n^{(k)}$ be the truncated binomial
 sum. For all natural numbers $k \ge 2$ and $n \ge 2$,
 $G_{n+k+1}^{(k)} = 2 G_{n+k}^{(k)} - G_n^{(k)}$.
 

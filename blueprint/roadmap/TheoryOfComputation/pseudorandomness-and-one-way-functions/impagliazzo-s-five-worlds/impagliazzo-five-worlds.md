@@ -1,6 +1,6 @@
 # Impagliazzo's five worlds
 
-**Impagliazzo's five worlds.** The following four statements hold. First, if public-key
+The following four statements hold. First, if public-key
 encryption exists, then one-way functions exist. Second, if one-way functions exist, then some
 decision problem $L$ in NP is hard on average for some samplable distribution: there are a
 polynomial $p$ with natural-number coefficients and a family $S$ of maps $S_n$ from $p(n)$-bit

@@ -1,6 +1,6 @@
 # Log-sum inequality
 
-**Log-sum inequality.** Let $s$ be a finite subset of a type $\iota$ and let
+Let $s$ be a finite subset of a type $\iota$ and let
 $p, q : \iota \to \mathbb{R}$ satisfy $p_i \ge 0$ and $q_i > 0$ for all $i \in s$. Then
 
 $$

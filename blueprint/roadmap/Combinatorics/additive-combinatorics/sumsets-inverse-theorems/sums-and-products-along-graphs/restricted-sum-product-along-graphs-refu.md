@@ -1,6 +1,6 @@
 # Erdős Problem 808 is false
 
-**Erdős Problem 808 is false.** There are real numbers $c > 0$ and $\varepsilon > 0$ such
+There are real numbers $c > 0$ and $\varepsilon > 0$ such
 that for infinitely many natural numbers $n$ there are a set $A$ of $n$ positive integers and a
 finite set $E$ of pairs $(a, b)$ with $a, b \in A$ and $a < b$ (the edges of a graph on $A$)
 such that $|E| \ge n^{1+c}$ and

@@ -1,6 +1,6 @@
 # Zhan's small-gap lemma
 
-**Zhan's small-gap lemma.** Let $S$ be a set of natural numbers, let $n_0 \ge 2$ be an
+Let $S$ be a set of natural numbers, let $n_0 \ge 2$ be an
 integer, and write $S(n)$ for the number of elements of $S \cap \{1, \dots, n\}$. If
 $\limsup_{n \to \infty} (S(n) - n / n_0) = \infty$, that is, for every real $M$ there are
 arbitrarily large $n$ with $S(n) - n / n_0 > M$, then there is an integer $d$ with

@@ -1,6 +1,6 @@
 # Perron–Frobenius theorem for nonzero irreducible nonnegative matrices
 
-**Perron–Frobenius theorem for nonzero irreducible nonnegative matrices.** Let $A$ be a nonzero
+Let $A$ be a nonzero
 real square matrix with rows and columns indexed by a nonempty finite set $S$, and suppose $A$ is
 irreducible: its entries are nonnegative, and for all $i, j \in S$ there is a path
 $i = i_0, i_1, \dots, i_k = j$ of length $k \ge 1$ with $A_{i_{t-1} i_t} > 0$ for every $t$. Then

@@ -1,6 +1,6 @@
 # Finite-size lower bound for deterministic online matching
 
-**Finite-size lower bound for deterministic online matching.** Let $n$, $b$, $c$, $d$ be
+Let $n$, $b$, $c$, $d$ be
 natural numbers with $d < 2c$ and $b < n$. For every online matcher $A$ with $2n$ left vertices
 there are a sequence $\sigma$ of arrivals and a perfect matching $m$ of $\sigma$ such that
 $d \cdot \mathrm{ALG} + b < c \cdot |m|$, where $\mathrm{ALG}$ is the number of arrivals of

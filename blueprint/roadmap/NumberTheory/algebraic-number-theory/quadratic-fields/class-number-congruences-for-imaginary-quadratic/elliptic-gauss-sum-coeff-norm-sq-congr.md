@@ -1,6 +1,6 @@
 # Congruences for $|\alpha_\lambda|^2$
 
-**Congruences for $|\alpha_\lambda|^2$.** Let $\rho = e^{2\pi i/3}$, let
+Let $\rho = e^{2\pi i/3}$, let
 $\varpi_1 = \int_0^1 (1 - t^3)^{-2/3}\,dt$, let $\wp$ be the Weierstrass function of the lattice
 spanned by $\varpi_1$ and $\varpi_1\rho$, and put
 $\varphi(u) = 6\wp(\varpi_1 u)/(9 + \wp'(\varpi_1 u))$. Put

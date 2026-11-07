@@ -1,6 +1,6 @@
 # Run length transform at zero
 
-**Run length transform at zero.** For every sequence $S : \mathbb{N} \to \mathbb{Z}$, the run
+For every sequence $S : \mathbb{N} \to \mathbb{Z}$, the run
 length transform of $S$ takes the value $1$ at $0$, since $0$ has no runs of $1$s in binary.
 
 ## Sources

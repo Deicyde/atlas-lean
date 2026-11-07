@@ -1,6 +1,6 @@
 # Seven-cycle lemma for the three-term Hofstadter-like recurrence
 
-**Seven-cycle lemma for the three-term Hofstadter-like recurrence.** Let $K$, $c$ and
+Let $K$, $c$ and
 $\gamma$ be natural numbers with $K \ge 7$, $c \ge 1$, $\gamma \le 6$ and $7c + \gamma \le K$, and
 put $L = K - 7c - \gamma$ and $M = K + L + 5$. For a tuple $(t_0, \dots, t_6)$ write
 $(t_0, \dots, t_6)_\gamma$ for its entry $t_\gamma$. Let $\lambda$ and $\mu$ be integers with

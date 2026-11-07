@@ -1,6 +1,6 @@
 # Cesàro–Fourier means are convolutions with the Fejér kernel
 
-**Cesàro–Fourier means are convolutions with the Fejér kernel.** Let $T > 0$ and let
+Let $T > 0$ and let
 $f : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$ be integrable with respect to the Haar probability
 measure $dt$ on the circle. Then for every $N \in \mathbb{N}$ and every
 $x \in \mathbb{R}/T\mathbb{Z}$, the $N$-th Cesàro–Fourier mean of $f$ satisfies

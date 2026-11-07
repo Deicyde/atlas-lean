@@ -1,6 +1,5 @@
 # Liouville's function does not correlate with polynomial phases on short intervals on average
 
-**Liouville's function does not correlate with polynomial phases on short intervals on average.**
 Let $\lambda$ be the Liouville function, extended to the integers by $\lambda(n) = 0$ for
 $n \le 0$, let $k$ be a natural number and let $\theta$ be a real number with $0 < \theta < 1$.
 For real $x$ and $H > 0$ write

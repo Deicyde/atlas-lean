@@ -1,6 +1,6 @@
 # Hook tableaux of order 2 with row difference 1
 
-**Hook tableaux of order 2 with row difference 1.** The number $\mathrm{SYT}_1(2,1;2)$ of
+The number $\mathrm{SYT}_1(2,1;2)$ of
 standard Young tableaux of order $2$ in the $(2,1)$-hook whose first row is longer than its
 second row by exactly $1$ equals $0$.
 

@@ -1,6 +1,6 @@
 # The lattice-point count of Theorem 1
 
-**The lattice-point count of Theorem 1.** For natural numbers $p$, $d$, $r$ and $n$, put
+For natural numbers $p$, $d$, $r$ and $n$, put
 $\tau = (p + 1)/d$, $\gamma = ((p - 1) r + (p + 1))/d$ and $t_n = \lfloor \gamma^{-1} p^n \rfloor$
 (a floor in $\mathbb{N}$, so $0$ for negative arguments), with the convention that division by
 $0$ gives $0$; thus $\tau = \gamma = 0$ when $d = 0$, and $t_n = 0$ when $\gamma = 0$. For a

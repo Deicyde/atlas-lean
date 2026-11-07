@@ -1,3 +1,3 @@
 # Kimura's fixation probability vanishes at frequency zero
 
-**Kimura's fixation probability vanishes at frequency zero.** An allele that is absent is never fixed.
+An allele that is absent is never fixed.

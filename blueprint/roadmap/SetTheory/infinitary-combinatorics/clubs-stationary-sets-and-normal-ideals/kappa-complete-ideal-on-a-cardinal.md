@@ -1,6 +1,6 @@
 # $\kappa$-complete ideal on a cardinal
 
-**$\kappa$-complete ideal on a cardinal.** A *κ-complete ideal on κ* is a collection I ⊆ 𝒫(κ) such that:
+A *κ-complete ideal on κ* is a collection I ⊆ 𝒫(κ) such that:
 
 1. ∅ ∈ I.
 1. If A ∈ I and B ⊆ A, then B ∈ I.

@@ -1,6 +1,6 @@
 # All-N threshold of $(k+1:k)$-pebbling on $K_3$
 
-**All-N threshold of $(k+1:k)$-pebbling on $K_3$.** For every positive integer $k$, the least
+For every positive integer $k$, the least
 number $m$ such that every $(k+1:k)$-pebbling game on the complete graph $K_3$ with $m$ pebbles in
 total is an N-game, written $m^{(k+1:k)}(K_3)$, exists and equals $6k + 1$.
 

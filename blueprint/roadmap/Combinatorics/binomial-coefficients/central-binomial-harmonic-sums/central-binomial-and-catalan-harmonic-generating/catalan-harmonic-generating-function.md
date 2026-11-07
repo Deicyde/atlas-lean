@@ -1,6 +1,6 @@
 # Catalan–harmonic generating function with explicit coefficients
 
-**Catalan–harmonic generating function with explicit coefficients.** For every real number $x$
+For every real number $x$
 with $|x| < 1/4$,
 
 $$

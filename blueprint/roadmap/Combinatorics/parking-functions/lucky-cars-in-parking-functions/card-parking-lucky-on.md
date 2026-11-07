@@ -1,6 +1,6 @@
 # Parking functions with prescribed lucky and unlucky cars
 
-**Parking functions with prescribed lucky and unlucky cars.** Number the cars and spots
+Number the cars and spots
 $0, \dots, n-1$, and let $L$ and $U$ be disjoint sets of cars. The number of parking functions
 of length $n$ in which every car in $L$ is lucky and no car in $U$ is lucky equals
 

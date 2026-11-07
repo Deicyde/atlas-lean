@@ -1,6 +1,6 @@
 # Complementary pair determined by $a_n = b_{hn} + b_{khn}$
 
-**Complementary pair determined by $a_n = b_{hn} + b_{khn}$.** Sequences
+Sequences
 $a, b : \mathbb{N} \to \mathbb{N}$ form a complementary pair determined by this equation with
 natural-number parameters $h$ and $k$ when they form a complementary pair (both strictly
 increasing with positive terms, and every positive integer is a term of exactly one of them),

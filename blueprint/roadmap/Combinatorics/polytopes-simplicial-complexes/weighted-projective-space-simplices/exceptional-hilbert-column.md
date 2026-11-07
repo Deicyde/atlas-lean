@@ -1,6 +1,6 @@
 # Exceptional Hilbert basis columns
 
-**Exceptional Hilbert basis columns.** Let $n \ge 1$. Write $t_0, \dots, t_8$ for the
+Let $n \ge 1$. Write $t_0, \dots, t_8$ for the
 integer triples $(0,0,0)$, $(0,0,-1)$, $(0,-1,-1)$, $(0,-1,-2)$, $(0,-2,-3)$, $(0,-3,-5)$,
 $(-1,-4,-6)$, $(-2,-7,-10)$ and $(-3,-10,-15)$. For $j = 0, \dots, 8$ the $j$th exceptional
 column is the pair $(h_j, v_j)$, where the height $h_j$ is $1$ for $j \le 6$ and $2$ for

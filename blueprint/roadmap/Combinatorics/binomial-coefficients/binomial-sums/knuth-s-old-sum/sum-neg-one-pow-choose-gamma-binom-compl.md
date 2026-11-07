@@ -1,6 +1,6 @@
 # Alternating convolution of generalized central binomial coefficients
 
-**Alternating convolution of generalized central binomial coefficients.** For every
+For every
 natural number $n$ and every real $v > -1$, the sum
 
 $$

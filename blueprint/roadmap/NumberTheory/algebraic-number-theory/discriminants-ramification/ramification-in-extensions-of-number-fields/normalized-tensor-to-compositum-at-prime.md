@@ -1,6 +1,6 @@
 # Map from the normalized tensor algebra to the local ring of the compositum
 
-**Map from the normalized tensor algebra to the local ring of the compositum.** Let $E$ and
+Let $E$ and
 $F$ be intermediate fields of a number field $L$ over $\mathbb Q$, let $\mathfrak p$ be a prime
 ideal of $\mathbb Z$ that is unramified in $\mathcal O_F$, and let $\mathfrak Q$ be a prime ideal of
 the ring of integers $\mathcal O_{EF}$ of the compositum $EF$ of $E$ and $F$ in $L$ lying over

@@ -1,6 +1,6 @@
 # A vanishing double sum of Bernoulli and Fibonacci numbers
 
-**A vanishing double sum of Bernoulli and Fibonacci numbers.** Let $\beta = (1 - \sqrt{5})/2$,
+Let $\beta = (1 - \sqrt{5})/2$,
 let $F_n$ be the Fibonacci numbers, and let $B_k$ be the Bernoulli numbers, with
 $B_1 = -\tfrac{1}{2}$. For every natural number $m \ge 1$,
 

@@ -1,6 +1,6 @@
 # Finite integer sequences in arithmetic progression
 
-**Finite integer sequences in arithmetic progression.** A sequence $a_0, \dots, a_{k-1}$ of
+A sequence $a_0, \dots, a_{k-1}$ of
 integers is an arithmetic progression with common difference $d$ if $d > 0$ and
 $a_{i+1} = a_i + d$ for every $i$ with $i + 1 < k$.
 

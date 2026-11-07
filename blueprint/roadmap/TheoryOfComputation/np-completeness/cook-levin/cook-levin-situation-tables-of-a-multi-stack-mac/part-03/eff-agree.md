@@ -1,6 +1,6 @@
 # The symbolic effect of a statement agrees with the real step
 
-**The symbolic effect of a statement agrees with the real step.** Let $q$ be a statement tree
+Let $q$ be a statement tree
 of a multi-stack machine, $d \in \mathbb{N}$, and $S_0$ an assignment of a list $S_0(k)$ to each
 stack $k$. Let $v$ be a state, $P$ an assignment of a list $P(k)$ to each stack, and $c$ an
 assignment of a natural number $c(k)$ to each stack with $c(k) + \operatorname{ops}(q) \le d$ for

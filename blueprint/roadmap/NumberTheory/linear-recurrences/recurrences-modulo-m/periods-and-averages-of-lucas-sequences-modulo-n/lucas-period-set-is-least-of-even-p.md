@@ -1,6 +1,6 @@
 # Least multiples of $2^k n_1$ in the period set for even $P$
 
-**Least multiples of $2^k n_1$ in the period set for even $P$.** Let $U$ be the Lucas sequence
+Let $U$ be the Lucas sequence
 $U_0 = 0$, $U_1 = 1$, $U_{j+2} = P U_{j+1} - Q U_j$ with nondegenerate parameters
 $P, Q \in \mathbb{Z}$. Let $S$ be the set of positive integers $m$ coprime to $Q$ such that the
 period of $U$ modulo $m$ divides $m$, and let $S'$ be the set of $m \in S$ with

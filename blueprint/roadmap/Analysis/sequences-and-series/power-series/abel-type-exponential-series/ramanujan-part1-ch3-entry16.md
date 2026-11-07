@@ -1,6 +1,6 @@
 # Ramanujan's three-term recurrence (Chapter 3, Entry 16(a))
 
-**Ramanujan's three-term recurrence (Chapter 3, Entry 16(a)).** Let $a$, $x$, $n$ be complex
+Let $a$, $x$, $n$ be complex
 numbers and $r$ an integer, where $x \ne 0$ and $x = a \log x$ with $\log$ the principal branch of
 the complex logarithm. Suppose that $|a| > e$, or that $a = e$ and $r \le -2$, and that
 $n + k \ne 0$ for every natural number $k$ with $r + k < 0$. For an integer $s$ and a complex

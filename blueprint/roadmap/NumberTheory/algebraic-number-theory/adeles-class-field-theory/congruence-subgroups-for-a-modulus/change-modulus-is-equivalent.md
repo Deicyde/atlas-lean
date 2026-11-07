@@ -1,6 +1,6 @@
 # The change of modulus is equivalent to the original pair
 
-**The change of modulus is equivalent to the original pair.** Let $\mathfrak m_1$ and
+Let $\mathfrak m_1$ and
 $\mathfrak m_2$ be moduli of a number field $K$ with $\mathfrak m_2 \mid \mathfrak m_1$, and let
 $C_1$ be a congruence subgroup for $\mathfrak m_1$. Write $I^{\mathfrak m_1}$ for the group of
 nonzero fractional ideals of $K$ coprime to the finite part of $\mathfrak m_1$ and

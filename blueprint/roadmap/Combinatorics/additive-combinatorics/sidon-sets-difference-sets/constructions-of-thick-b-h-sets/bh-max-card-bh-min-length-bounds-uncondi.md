@@ -1,6 +1,6 @@
 # Unconditional bounds for $R_h(n)$ and $R_h^{-1}(k)$
 
-**Unconditional bounds for $R_h(n)$ and $R_h^{-1}(k)$.** Let $h \ge 2$. Write $R_h(n)$ for the
+Let $h \ge 2$. Write $R_h(n)$ for the
 largest size of a $B_h$-set contained in $\{1, \dots, n\}$, with $R_h(0) = 0$, and $R_h^{-1}(k)$
 for the least $n$ such that $\{1, \dots, n\}$ contains a $B_h$-set with $k$ elements, with
 $R_h^{-1}(0) = 0$ (a $B_h$-set is nonempty). Then every natural number $n$ satisfies

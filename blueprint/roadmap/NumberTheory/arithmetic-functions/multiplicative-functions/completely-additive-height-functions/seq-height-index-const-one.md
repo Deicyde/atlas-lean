@@ -1,6 +1,6 @@
 # Block index of the constant profile
 
-**Block index of the constant profile.** For the constant profile $\pi_k = 1$, whose cumulative
+For the constant profile $\pi_k = 1$, whose cumulative
 profile is $\Pi_k = \sum_{j=1}^{k} \pi_j = k$, the block index $k(i)$, the least $k$ with
 $i \le \Pi_k$, equals $i$ for every natural number $i$.
 

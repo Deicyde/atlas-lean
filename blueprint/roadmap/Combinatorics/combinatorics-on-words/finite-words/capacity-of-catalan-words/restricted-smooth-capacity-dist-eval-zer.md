@@ -1,6 +1,6 @@
 # Zero-capacity restricted smooth words with a given last letter
 
-**Zero-capacity restricted smooth words with a given last letter.** For natural numbers $n$
+For natural numbers $n$
 and $i$ with $3 \le i \le n$, let $r^*(n, i; q)$ be the capacity distribution of the restricted
 smooth words of length $n$ ending in $i$. Its value at $q = 0$, which is the number of such words
 of capacity $0$, is

@@ -1,6 +1,6 @@
 # General matching decision problem
 
-**General matching decision problem.** The decision problem that accepts a bitstring $x$
+The decision problem that accepts a bitstring $x$
 exactly when $x$ decodes, under the canonical bitstring encoding, to a triple $(n, E, K)$ of a
 natural number $n$, a list $E$ of pairs of natural numbers and a natural number $K$ such that
 every pair $(u, v)$ in $E$ has $u < n$, $v < n$ and $u \neq v$, and some sublist $M$ of $E$

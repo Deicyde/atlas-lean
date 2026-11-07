@@ -1,6 +1,6 @@
 # Kourovka Problem 15.32: large automorphisms and cyclic subgroups
 
-**Kourovka Problem 15.32: large automorphisms and cyclic subgroups.** For every prime $p$ and
+For every prime $p$ and
 all natural numbers $k$ and $m$ with $m \ge 64k + 2$, every finite group $G$ of order $p^m$ that
 has an automorphism of order $p^{m-k}$ has a cyclic subgroup of index $p^k$.
 

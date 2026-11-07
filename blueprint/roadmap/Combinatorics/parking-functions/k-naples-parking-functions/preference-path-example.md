@@ -1,6 +1,6 @@
 # The lattice path of $(1, 3, 3, 5, 6, 6)$
 
-**The lattice path of $(1, 3, 3, 5, 6, 6)$.** The lattice path of the parking preference
+The lattice path of the parking preference
 $(1, 3, 3, 5, 6, 6)$ is $\mathrm{UDDUUDDUDUUD}$, where $\mathrm{U}$ is an Up step and
 $\mathrm{D}$ a Down step.
 

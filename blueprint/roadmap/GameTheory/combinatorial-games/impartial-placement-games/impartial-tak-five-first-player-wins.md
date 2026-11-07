@@ -1,6 +1,6 @@
 # The first player wins Impartial Tak on the $5 \times 5$ board
 
-**The first player wins Impartial Tak on the $5 \times 5$ board.** Impartial Tak is the
+Impartial Tak is the
 impartial placement game on the $n \times n$ board in which the players alternately place a token
 on an empty cell, play ends once the tokens contain a road, and the player unable to move loses.
 On the $5 \times 5$ board the first player wins from the empty board.

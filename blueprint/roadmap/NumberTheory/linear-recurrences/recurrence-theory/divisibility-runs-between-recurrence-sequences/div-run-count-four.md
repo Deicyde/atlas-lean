@@ -1,6 +1,6 @@
 # Divisor-sum formula for the length-four run count
 
-**Divisor-sum formula for the length-four run count.** For a natural number $B$, let $A_B(4)$
+For a natural number $B$, let $A_B(4)$
 be the number of integer tuples $(x, y, a, b, c) \in [-B, B]^5$ with $(x, y) \ne (0, 0)$ and
 $(a, b, c) \ne (0, 0, 0)$ that have a divisibility run of length at least $4$. For integers $x, y$
 let $T_B(x, y)$ be the number of integer triples $(a, b, c) \in [-B, B]^3$ with $x \mid a$,

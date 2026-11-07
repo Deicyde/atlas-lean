@@ -1,6 +1,6 @@
 # Trace identities in $\mathrm{SL}(2, \mathbb{Z})$
 
-**Trace identities in $\mathrm{SL}(2, \mathbb{Z})$.** For all $A, B \in \mathrm{SL}(2,
+For all $A, B \in \mathrm{SL}(2,
 \mathbb{Z})$ we have $\operatorname{tr} A = \operatorname{tr} A^{-1}$,
 $\operatorname{tr}(AB) = \operatorname{tr} A \cdot \operatorname{tr} B -
 \operatorname{tr}(AB^{-1})$, and $A^2 = (\operatorname{tr} A) A - I$, where $I$ is the

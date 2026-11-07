@@ -1,6 +1,6 @@
 # Restriction of a single-tape machine to a supporting set of states
 
-**Restriction of a single-tape machine to a supporting set of states.** Let $M$ be a single-tape
+Let $M$ be a single-tape
 Turing machine with tape alphabet $\Gamma$ and states $\Lambda$, and let $S \subseteq \Lambda$
 support $M$: $S$ contains the default state and every transition of $M$ from a state in $S$ leads to
 a state in $S$. The restriction of $M$ to $S$ is the machine with states $S$ that, in state

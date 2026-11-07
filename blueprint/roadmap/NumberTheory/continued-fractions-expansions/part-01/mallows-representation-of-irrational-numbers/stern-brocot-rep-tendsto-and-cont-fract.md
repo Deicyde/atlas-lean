@@ -1,6 +1,6 @@
 # Stern–Brocot representation and continued fractions
 
-**Stern–Brocot representation and continued fractions.** Let $\alpha \in (0, 1)$ be
+Let $\alpha \in (0, 1)$ be
 irrational with continued fraction expansion $\alpha = [0; a_1, a_2, \ldots]$, let
 $f_1(\alpha), f_2(\alpha), \ldots$ be the fractions labelling the vertices visited by its
 Stern–Brocot path, and let $SB(\alpha) = SB_1(\alpha) SB_2(\alpha) \cdots$ be its Stern–Brocot

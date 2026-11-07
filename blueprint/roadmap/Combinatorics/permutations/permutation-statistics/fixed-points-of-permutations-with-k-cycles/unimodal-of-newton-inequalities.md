@@ -1,6 +1,6 @@
 # Positive sequences satisfying Newton's inequalities are unimodal
 
-**Positive sequences satisfying Newton's inequalities are unimodal.** Let $n$ be a natural
+Let $n$ be a natural
 number and let $(a_j)_{j \ge 0}$ be a sequence of real numbers with $a_j > 0$ for every $j \le n$,
 such that
 

@@ -1,6 +1,6 @@
 # Criterion for a uniform bound on the least non-vanishing Bernoulli index
 
-**Criterion for a uniform bound on the least non-vanishing Bernoulli index.** The following
+The following
 are equivalent:
 (a) there is a natural number $M$ such that for every prime $p \ge 5$ there is an odd integer
 $k$ with $3 \le k \le M$, $k < p$ and $p \nmid \operatorname{num}(B_{p-k})$;

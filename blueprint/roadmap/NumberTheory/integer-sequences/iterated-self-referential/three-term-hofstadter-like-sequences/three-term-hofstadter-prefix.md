@@ -1,6 +1,6 @@
 # Initial segment of a three-term Hofstadter-like sequence
 
-**Initial segment of a three-term Hofstadter-like sequence.** Let $x_1, \dots, x_m$ be
+Let $x_1, \dots, x_m$ be
 integers ($m \ge 0$) and let $B$ be the padded or the unpadded three-term Hofstadter-like sequence
 with initial conditions $x_1, \dots, x_m$: $B(i) = x_i$ for $1 \le i \le m$, the padded sequence
 has $B(i) = 0$ for every $i \le 0$ while the unpadded one is undefined there, and for $n > m$

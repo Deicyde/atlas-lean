@@ -1,6 +1,6 @@
 # Zero is a fixed point of the q-analog 3x+1 map
 
-**Zero is a fixed point of the q-analog 3x+1 map.** For all power series
+For all power series
 $A, B \in \mathbb{F}_2[[q]]$, the $q$-analog $3x+1$ map satisfies $T_{A,B}(0) = 0$.
 
 ## Sources

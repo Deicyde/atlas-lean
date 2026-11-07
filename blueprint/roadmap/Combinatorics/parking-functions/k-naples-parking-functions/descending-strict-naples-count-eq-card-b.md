@@ -1,6 +1,6 @@
 # Descending strictly $k$-Naples parking functions and binary trees
 
-**Descending strictly $k$-Naples parking functions and binary trees.** For every $n$ and
+For every $n$ and
 every $k \ge 1$, the number of descending strictly $k$-Naples parking functions of length $n$
 (descending preferences that are $k$-Naples but not $(k - 1)$-Naples) equals the number of
 binary trees $t$ with $n + k$ nodes such that the left spine of $t$ (the root, its left child,

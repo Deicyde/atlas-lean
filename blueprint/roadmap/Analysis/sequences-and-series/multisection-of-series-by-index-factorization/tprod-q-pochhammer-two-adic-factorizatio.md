@@ -1,6 +1,6 @@
 # 2-adic product factorization of the Euler function
 
-**2-adic product factorization of the Euler function.** For every complex number $q$ with
+For every complex number $q$ with
 $|q| < 1$, with the infinite q-Pochhammer symbol $(a; r)_\infty = \prod_{k \ge 0} (1 - a r^k)$,
 the unconditional infinite product over $j \ge 0$ satisfies
 $\prod_{j \ge 0} (q^{2^j}; q^{2^{j+1}})_\infty = (q; q)_\infty$.

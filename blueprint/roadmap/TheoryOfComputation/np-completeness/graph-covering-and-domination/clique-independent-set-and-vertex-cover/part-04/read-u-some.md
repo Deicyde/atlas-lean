@@ -1,6 +1,6 @@
 # The clique verifier's unary reader succeeds
 
-**The clique verifier's unary reader succeeds.** Let $m$ be a mode, $c$ a stack other
+Let $m$ be a mode, $c$ a stack other
 than the input stack $X$, and $\ell$, $\ell'$ labels such that the verifier program of
 mode $m$ runs, at label $\ell$, the unary reader onto $c$ with own label $\ell$ and next
 label $\ell'$. Let $k, j \in \mathbb{N}$, let $r$ be a list of bits, $v$ a state and $S$

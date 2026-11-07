@@ -1,6 +1,6 @@
 # Cheng–Kinlaw–Nguyen reciprocal-sum bounds
 
-**Cheng–Kinlaw–Nguyen reciprocal-sum bounds.** The sum of the
+The sum of the
 reciprocals of all even pseudoprimes lies strictly between `0.000011`
 and `0.0059`.
 

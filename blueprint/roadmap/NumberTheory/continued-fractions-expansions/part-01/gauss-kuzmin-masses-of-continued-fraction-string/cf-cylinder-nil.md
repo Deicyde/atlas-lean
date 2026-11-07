@@ -1,6 +1,6 @@
 # Fundamental interval of the empty string
 
-**Fundamental interval of the empty string.** The fundamental interval of the empty string is
+The fundamental interval of the empty string is
 the whole interval: $I(()) = [0, 1)$.
 
 ## Sources

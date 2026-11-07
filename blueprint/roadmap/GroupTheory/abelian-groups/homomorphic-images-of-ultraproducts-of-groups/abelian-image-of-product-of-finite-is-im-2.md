@@ -1,6 +1,6 @@
 # Abelian images of products of finite groups
 
-**Abelian images of products of finite groups.** Let $A$ be an abelian group. If $A$ is a
+Let $A$ be an abelian group. If $A$ is a
 homomorphic image of a direct product $\prod_{i \in I} G_i$ of an infinite family $(G_i)_{i \in I}$
 of finite (not necessarily abelian) groups, then $A$ is a homomorphic image of the direct product
 $\prod_{j \in J} H_j$ of some family $(H_j)_{j \in J}$ of finite abelian groups.

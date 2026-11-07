@@ -1,6 +1,5 @@
 # Bivariate generating function of the total symmetric peak height over compositions
 
-**Bivariate generating function of the total symmetric peak height over compositions.**
 For $n, k \ge 0$ let $\mathrm{hsp}(n, k)$ be the sum, over all compositions $c$ of $n$ with
 exactly $k$ parts, of the symmetric peak height sum of the sequence of parts of $c$. Then in
 the ring $\mathbb{Z}[y][[x]]$ of formal power series in $x$ over $\mathbb{Z}[y]$,

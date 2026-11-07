@@ -1,6 +1,6 @@
 # Cycles of the digraph $G(2n, 2n - a)$
 
-**Cycles of the digraph $G(2n, 2n - a)$.** For an integer $b$ write $G_b$ for the digraph
+For an integer $b$ write $G_b$ for the digraph
 $G(2n, 2n - b)$ on $\mathbb{Z}$, with an edge $m \to 2m$ and an edge $m \to 2m - b$ for every
 integer $m$. Let $a$ be an odd natural number, write $x \bmod a$ for the residue of $x$ in
 $\{0, \dots, a - 1\}$, and write $\operatorname{ord}(2, q)$ for the multiplicative order of $2$

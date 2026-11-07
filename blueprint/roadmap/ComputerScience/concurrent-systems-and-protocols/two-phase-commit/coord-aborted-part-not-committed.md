@@ -1,6 +1,6 @@
 # An aborted coordinator has no committed participant
 
-**An aborted coordinator has no committed participant.** In every reachable state of the
+In every reachable state of the
 two-phase commit protocol, if the coordinator has decided abort, then no participant has
 committed.
 

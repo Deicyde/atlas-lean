@@ -1,6 +1,6 @@
 # Injective entire functions are affine
 
-**Injective entire functions are affine.** If $f : \mathbb{C} \to \mathbb{C}$ is entire and
+If $f : \mathbb{C} \to \mathbb{C}$ is entire and
 injective, then there are $a, b \in \mathbb{C}$ with $a \ne 0$ such that $f(z) = az + b$ for all
 $z \in \mathbb{C}$.
 

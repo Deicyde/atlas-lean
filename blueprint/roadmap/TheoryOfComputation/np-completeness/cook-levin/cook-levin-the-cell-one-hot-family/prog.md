@@ -1,6 +1,6 @@
 # The one-hot generator
 
-**The one-hot generator.** For a layout with label/state block size $A$, $K$ stacks and $g$
+For a layout with label/state block size $A$, $K$ stacks and $g$
 symbol codes, the program of a counter machine with an output bit stack and the unary counters
 of the generator. Started with $T$ on the time counter $T_n$, $H$ on the height counter $H_s$ and
 every other counter empty, it first sets $T_n = T + 1$, $G_c = g$, $HG = Hg$,

@@ -1,6 +1,6 @@
 # WEIGHTED NUMBER OF TARDY JOBS is NP-complete
 
-**WEIGHTED NUMBER OF TARDY JOBS is NP-complete.** The weighted number of tardy jobs decision
+The weighted number of tardy jobs decision
 problem lies in NP, and every decision problem in NP has a polynomial-time many-one reduction to
 it.
 

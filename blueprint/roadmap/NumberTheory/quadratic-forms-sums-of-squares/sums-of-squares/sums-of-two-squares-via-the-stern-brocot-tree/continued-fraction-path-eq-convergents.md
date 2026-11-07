@@ -1,6 +1,6 @@
 # Continued fraction convergents as matrix paths
 
-**Continued fraction convergents as matrix paths.** Let
+Let
 $R = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ and
 $L = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}$, as matrices over $\mathbb{N}$. Let
 $q_0, q_1, q_2, \dots$ be natural numbers, and define natural numbers $A_k$, $B_k$ for $k \ge -1$

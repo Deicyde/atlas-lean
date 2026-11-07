@@ -1,6 +1,6 @@
 # Ramanujan's asymptotic expansion of Poisson averages
 
-**Ramanujan's asymptotic expansion of Poisson averages.** Let $M \ge 1$ be an integer,
+Let $M \ge 1$ be an integer,
 $\varphi : \mathbb{R} \to \mathbb{C}$ and $G : \mathbb{R} \to \mathbb{R}$ functions, $A \ge 1$ a
 real number and $F$ a finite set of natural numbers. Write $\varphi^{(n)}$ for the $n$-th
 iterated derivative of $\varphi$ and $S_2(n, k)$ for the 2-associated Stirling numbers of the

@@ -1,6 +1,6 @@
 # Möbius-convolution series for the coprimality density
 
-**Möbius-convolution series for the coprimality density.** Let $k \ge 2$, let $E$ be a set of
+Let $k \ge 2$, let $E$ be a set of
 pairs $(a, b)$ with $1 \le a < b \le k$, let $G$ be the graph on $\{1, \dots, k\}$ with edge set
 $E$, and let $A_G$ be its coprimality density. Let $\delta_G(n_1, \dots, n_k)$ be $1$ if
 $\gcd(n_a, n_b) = 1$ for every $(a, b) \in E$, and $0$ otherwise, and for a tuple

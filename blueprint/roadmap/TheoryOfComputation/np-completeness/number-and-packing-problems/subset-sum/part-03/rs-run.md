@@ -1,6 +1,6 @@
 # Run of the mark-return loop of the subset-sum emitter
 
-**Run of the mark-return loop of the subset-sum emitter.** Let $n, w \in \mathbb{N}$ with
+Let $n, w \in \mathbb{N}$ with
 $w + 1 < n$. Start the VERTEX-COVER to SUBSET-SUM machine at label $\mathsf{rs}$ with any state
 bit and with stacks $S$ in which stack $\mathsf{L}$ is empty and stack $\mathsf{R}$ holds, top
 first, the symbols $\mathrm{val}(b_0), \dots, \mathrm{val}(b_{n-1})$, where $b_i$ is true exactly

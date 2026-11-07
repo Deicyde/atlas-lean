@@ -1,6 +1,6 @@
 # Integral representation of Jacobsthal numbers at multiples
 
-**Integral representation of Jacobsthal numbers at multiples.** Let $\ell$ and $n$ be natural
+Let $\ell$ and $n$ be natural
 numbers and let $J_n = U_n(1, -2)$ and $j_n = V_n(1, -2)$ be the Jacobsthal and
 Jacobsthal–Lucas numbers (the case $k = 1$). Then
 

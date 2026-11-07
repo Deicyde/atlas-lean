@@ -1,6 +1,6 @@
 # Propermutability is not inherited by intermediate subgroups
 
-**Propermutability is not inherited by intermediate subgroups.** There exist a finite group $G$
+There exist a finite group $G$
 and subgroups $A \le B \le G$ such that $A$ is propermutable in $G$ but $A$, regarded as a
 subgroup of $B$, is not propermutable in $B$. This is the positive answer to
 Kourovka Problem 18.91(a).

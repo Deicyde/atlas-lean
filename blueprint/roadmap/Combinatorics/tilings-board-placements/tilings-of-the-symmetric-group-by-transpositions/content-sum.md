@@ -1,6 +1,6 @@
 # Twice the content sum of a partition
 
-**Twice the content sum of a partition.** For a partition $\lambda$ of $n$ with row lengths
+For a partition $\lambda$ of $n$ with row lengths
 $\lambda_0 \ge \lambda_1 \ge \dots \ge \lambda_{k-1}$, this is the integer
 $\sum_{i=0}^{k-1} \lambda_i\,(\lambda_i - 2i - 1)$.
 

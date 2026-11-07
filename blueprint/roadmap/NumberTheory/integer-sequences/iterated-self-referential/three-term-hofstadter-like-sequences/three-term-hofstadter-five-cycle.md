@@ -1,6 +1,6 @@
 # Five-cycle lemma for the three-term Hofstadter-like recurrence
 
-**Five-cycle lemma for the three-term Hofstadter-like recurrence.** Let $K \ge 3$ be a
+Let $K \ge 3$ be a
 natural number, $\mu \ge 1$ an integer, and $a_4, \dots, a_K$ arbitrary integers. Let $B$ be
 the sequence given by $B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3))$, padded with
 $B(n) = 0$ for $n \le 0$, with initial conditions

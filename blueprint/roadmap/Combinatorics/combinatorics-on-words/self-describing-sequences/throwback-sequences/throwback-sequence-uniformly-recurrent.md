@@ -1,6 +1,6 @@
 # Throwback sequences of increasing sequences are uniformly recurrent
 
-**Throwback sequences of increasing sequences are uniformly recurrent.** Let
+Let
 $X = (x_0, x_1, \dots)$ be a strictly increasing sequence of positive integers with throwback
 sequence $T(X) = (t_0, t_1, \dots)$. Then every block of consecutive terms of $T(X)$ recurs with
 bounded gaps: for all natural numbers $i$ and $L$ there is a natural number $G$ such that for

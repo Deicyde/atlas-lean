@@ -1,6 +1,5 @@
 # Central binomial transform of a polynomial identity, even exponents at even indices
 
-**Central binomial transform of a polynomial identity, even exponents at even indices.**
 Let $s, n, m, r$ be natural numbers, $f, g : \mathbb{N} \to \mathbb{C}$ and
 $p, q : \mathbb{N} \to \mathbb{N}$ such that
 $\sum_{k=s}^{n} f(k) (1+t)^{p(k)} = \sum_{k=m}^{r} g(k) t^{q(k)}$ for every complex $t$.

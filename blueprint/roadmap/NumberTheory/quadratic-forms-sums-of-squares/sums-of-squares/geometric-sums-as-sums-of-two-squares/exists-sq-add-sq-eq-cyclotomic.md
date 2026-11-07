@@ -1,6 +1,6 @@
 # Every cyclotomic polynomial $\Phi_{4q}$ is a sum of two squares
 
-**Every cyclotomic polynomial $\Phi_{4q}$ is a sum of two squares.** For every integer
+For every integer
 $q \ge 1$ there are polynomials $A, B \in \mathbb{Z}[x]$ such that the $4q$-th cyclotomic
 polynomial $\Phi_{4q}$ over $\mathbb{Z}$ satisfies $\Phi_{4q} = A^2 + B^2$.
 

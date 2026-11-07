@@ -1,6 +1,6 @@
 # Kourovka Problem 11.126 (automorphisms of order four with few fixed points)
 
-**Kourovka Problem 11.126 (automorphisms of order four with few fixed points).** The
+The
 statement that there are a natural number $h$ and a function $f : \mathbb{N} \to \mathbb{N}$ such
 that, for every natural number $m$, every finite soluble group $G$ and every automorphism
 $\varphi$ of $G$ of order $4$ with at most $m$ fixed points, there are normal subgroups $M \le N$

@@ -1,6 +1,6 @@
 # An infinite group without nontrivial proper pronormal subgroups exists
 
-**An infinite group without nontrivial proper pronormal subgroups exists.** There is an infinite
+There is an infinite
 group $G$ in which every pronormal subgroup is trivial or equal to $G$. Here a subgroup $H$ of $G$
 is pronormal when, for every $g \in G$, the subgroups $H$ and $H^g = gHg^{-1}$ are conjugate by an
 element of $\langle H, H^g \rangle$. This answers Kourovka Problem 19.74 in the affirmative.

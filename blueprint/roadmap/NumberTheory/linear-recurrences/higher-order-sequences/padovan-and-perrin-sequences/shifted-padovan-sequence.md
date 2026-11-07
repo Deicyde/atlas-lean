@@ -1,6 +1,6 @@
 # Shifted Padovan sequence
 
-**Shifted Padovan sequence.** The shifted Padovan sequence is the sequence of natural numbers
+The shifted Padovan sequence is the sequence of natural numbers
 $(a_n)_{n \ge 0}$ with $a_0 = 1$, $a_1 = 0$, $a_2 = 1$ and $a_{n+3} = a_{n+1} + a_n$ for every
 $n \ge 0$.
 

@@ -1,6 +1,6 @@
 # Algebraic part of a set
 
-**Algebraic part of a set.** For a set $X \subseteq \mathbb{R}^n$, the algebraic part
+For a set $X \subseteq \mathbb{R}^n$, the algebraic part
 $X^{\mathrm{alg}}$ of $X$ is the union of all connected, infinite semialgebraic sets $Y$ with
 $Y \subseteq X$.
 

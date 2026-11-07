@@ -1,6 +1,6 @@
 # Sylvester's bound on the number of prime divisors of an odd perfect number
 
-**Sylvester's bound on the number of prime divisors of an odd perfect number.** Every odd
+Every odd
 perfect number has at least five distinct prime divisors.
 
 ## Sources

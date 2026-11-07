@@ -1,6 +1,6 @@
 # Shifted sums of (a, b)-Lucas numbers weighted by powers of -b
 
-**Shifted sums of (a, b)-Lucas numbers weighted by powers of -b.** Let $a, b$ be complex
+Let $a, b$ be complex
 numbers with $b \ne 0$, and let $(F_n)$ and $(L_n)$ be the $(a, b)$-Fibonacci and
 $(a, b)$-Lucas numbers. Then for all integers $m, n \ge 0$,
 

@@ -1,6 +1,6 @@
 # Lower bound for bounded subsequence sums of a positive sequence
 
-**Lower bound for bounded subsequence sums of a positive sequence.** Let $k \ge 2$, let
+Let $k \ge 2$, let
 $t_1, \dots, t_k$ be positive integers, let $h = t_1 + \dots + t_k$, and let $\alpha, \beta$ be
 natural numbers with $1 \le \alpha$ and $\alpha + \beta \le h - 1$. Put
 $\bar r = (h - \alpha - \beta, t_1, \dots, t_k)$. For integers $0 < b_1 < \dots < b_k$, let

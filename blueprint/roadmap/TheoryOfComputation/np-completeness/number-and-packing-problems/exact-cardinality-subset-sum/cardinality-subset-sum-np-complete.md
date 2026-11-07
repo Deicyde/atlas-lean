@@ -1,6 +1,6 @@
 # EXACT-CARDINALITY SUBSET SUM is NP-complete
 
-**EXACT-CARDINALITY SUBSET SUM is NP-complete.** The decision problem EXACT-CARDINALITY
+The decision problem EXACT-CARDINALITY
 SUBSET SUM lies in NP, and every decision problem in NP has a polynomial-time many-one reduction
 to it.
 

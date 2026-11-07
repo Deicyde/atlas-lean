@@ -1,6 +1,6 @@
 # Preference profile for $n$ men and $n$ women
 
-**Preference profile for $n$ men and $n$ women.** For a natural number $n$, number $n$ men and
+For a natural number $n$, number $n$ men and
 $n$ women by $0, \dots, n - 1$. A preference profile $P = (M, W)$ for them consists of a
 permutation $M_i$ of $\{0, \dots, n - 1\}$ for each man $i$ and a permutation $W_j$ of
 $\{0, \dots, n - 1\}$ for each woman $j$: $M_i(r)$ is the woman man $i$ ranks at zero-based

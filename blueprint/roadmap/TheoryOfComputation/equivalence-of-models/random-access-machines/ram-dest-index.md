@@ -1,6 +1,6 @@
 # Register written by a RAM store
 
-**Register written by a RAM store.** In a RAM state with register contents $r$, a store
+In a RAM state with register contents $r$, a store
 destination resolves to a register index: the direct destination $n$ resolves to $n$, and the
 indirect destination $n$ resolves to the contents $r(n)$ of register $n$.
 

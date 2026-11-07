@@ -1,6 +1,6 @@
 # Alternating integral sums of $\cos qx - \cos qkx$ for odd $q$ and even $k$
 
-**Alternating integral sums of $\cos qx - \cos qkx$ for odd $q$ and even $k$.** Let $q$ be an
+Let $q$ be an
 odd natural number, for each natural number $m$ put $k = 2m$, and let
 $f(x) = \cos(qx) - \cos(qkx)$. Then, as $m \to \infty$,
 

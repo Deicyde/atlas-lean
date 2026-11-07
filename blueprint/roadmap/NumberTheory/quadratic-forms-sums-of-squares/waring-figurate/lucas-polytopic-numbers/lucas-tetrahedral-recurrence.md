@@ -1,6 +1,6 @@
 # Recurrence for the Lucas tetrahedral numbers
 
-**Recurrence for the Lucas tetrahedral numbers.** Let $(s, t)$ be nondegenerate Lucas
+Let $(s, t)$ be nondegenerate Lucas
 parameters, and write $\{n\}_{s,t}$ for the Lucas brackets and $\binom{n}{k}_{s,t}$ for the
 Lucasnomial coefficients. For every natural number $n$,
 

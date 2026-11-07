@@ -1,6 +1,6 @@
 # Good-sequence probability at length zero
 
-**Good-sequence probability at length zero.** For every finite abelian group $\Gamma$, the
+For every finite abelian group $\Gamma$, the
 probability that a uniformly random sequence of length $0$ in $\Gamma$ is good equals $0$: the
 empty sequence has no nonempty zero-sum subsequence, so it is not good.
 

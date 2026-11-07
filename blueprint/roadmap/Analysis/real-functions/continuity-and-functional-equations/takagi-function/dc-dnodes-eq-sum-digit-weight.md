@@ -1,6 +1,6 @@
 # Binary-digit formula for the divide-and-conquer D-node count
 
-**Binary-digit formula for the divide-and-conquer D-node count.** Let $\delta$ be the
+Let $\delta$ be the
 divide-and-conquer D-node count and let $s_1(m)$ be the number of ones in the binary expansion
 of $m$. For every integer $n > 0$, let $k = \lfloor \log_2 n \rfloor$ and let $n_j$ be the binary
 digit of $n$ at $2^j$. Then

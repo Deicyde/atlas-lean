@@ -1,6 +1,6 @@
 # Dirichlet eigenvalues of $-y'' = \lambda y$ on $(0, \pi)$
 
-**Dirichlet eigenvalues of $-y'' = \lambda y$ on $[0, \pi]$.** For every real number
+For every real number
 $\lambda$, the following are equivalent:
 (i) there are a function $y : \mathbb{R} \to \mathbb{R}$ and an open set $J \subseteq \mathbb{R}$
 containing $[0, \pi]$ such that $y$ is differentiable at every point of $J$, its derivative $y'$

@@ -1,6 +1,6 @@
 # Log-convexity of the even-indexed Riordan numbers
 
-**Log-convexity of the even-indexed Riordan numbers.** Let $r_n$ denote the $n$-th Riordan
+Let $r_n$ denote the $n$-th Riordan
 number. The even-indexed Riordan numbers $r_0, r_2, r_4, \dots$ form a log-convex sequence: for
 every natural number $n$,
 

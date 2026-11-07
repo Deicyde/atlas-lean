@@ -1,6 +1,6 @@
 # Dense sets with unusually large least common multiples
 
-**Dense sets with unusually large least common multiples.** Let $\operatorname{Log}_2$ and
+Let $\operatorname{Log}_2$ and
 $\operatorname{Log}_3$ be the second and third iterated truncated logarithms. For a set $A$ of
 natural numbers and real $x$, write $S_A(x) = \sum_{n \in A,\ 1 \le n \le x} 1/n$, and write
 $L_A(x)$ for the sum of $1/\operatorname{lcm}(n, m)$ over all ordered pairs $(n, m)$ with

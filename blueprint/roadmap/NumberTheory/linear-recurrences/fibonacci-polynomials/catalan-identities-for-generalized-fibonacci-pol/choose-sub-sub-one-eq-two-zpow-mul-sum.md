@@ -1,6 +1,6 @@
 # Webb–Parberry binomial identity
 
-**Webb–Parberry binomial identity.** For natural numbers $m < n$,
+For natural numbers $m < n$,
 
 $$\binom{n-m-1}{m} = 2^{2m-n+1} \sum_{j=m}^{\lfloor (n-1)/2 \rfloor} \binom{j}{m} \binom{n}{2j+1},$$
 

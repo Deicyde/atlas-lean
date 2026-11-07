@@ -1,6 +1,6 @@
 # Diagonal class of a partition
 
-**Diagonal class of a partition.** For a partition $p$ of $n$, its diagonal class
+For a partition $p$ of $n$, its diagonal class
 $\delta^{-1}(\delta(p))$ is the finite set of all partitions $\beta$ of $n$ whose diagonal
 sequence $\delta(\beta)$ equals the diagonal sequence $\delta(p)$ of $p$.
 

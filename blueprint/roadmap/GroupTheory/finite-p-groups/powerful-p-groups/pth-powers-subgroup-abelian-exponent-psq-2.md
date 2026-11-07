@@ -1,6 +1,6 @@
 # Kourovka 21.137 fails for every odd prime
 
-**Kourovka 21.137 fails for every odd prime.** For every odd prime $p$ there is a finite
+For every odd prime $p$ there is a finite
 $p$-group $G$ of exponent $p^2$ with a subgroup $P$ whose underlying set is exactly the set
 $\{x^p : x \in G\}$ of $p$-th powers in $G$, such that $P$ is not abelian.
 

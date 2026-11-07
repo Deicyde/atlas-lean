@@ -1,6 +1,6 @@
 # Complement of the lower Wythoff part of a generalized Beatty sequence
 
-**Complement of the lower Wythoff part of a generalized Beatty sequence.** Let $\varphi$ be the
+Let $\varphi$ be the
 golden ratio and, for integers $a$, $b$, $c$, let $V(a, b, c)$ be the set of integers
 $a \lfloor n\varphi \rfloor + bn + c$ for natural numbers $n \ge 1$. Let $p$, $q$, $r$ be
 integers with $p + q > 0$ and $2p + q > 0$. If $U$ and $W$ are disjoint sets of integers with

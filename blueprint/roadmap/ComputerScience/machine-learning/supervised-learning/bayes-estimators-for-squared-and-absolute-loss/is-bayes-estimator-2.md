@@ -1,6 +1,6 @@
 # A posterior median is a Bayes estimator for absolute loss
 
-**A posterior median is a Bayes estimator for absolute loss.** Let $P$ be a finite kernel from
+Let $P$ be a finite kernel from
 $\mathbb{R}$ to a measurable space $\mathcal{X}$, sending a parameter $\theta$ to the measure
 $P_\theta$ on $\mathcal{X}$, let $\pi$ be a finite prior measure on $\mathbb{R}$, and let
 $f : \mathcal{X} \to \mathbb{R}$ be a measurable choice of posterior medians. Then the

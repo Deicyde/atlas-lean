@@ -1,6 +1,6 @@
 # When the weighted Davenport constant is infinite
 
-**When the weighted Davenport constant is infinite.** Let $G$ be an additive commutative
+Let $G$ be an additive commutative
 monoid, $A$ a finite set of natural numbers and $D_A(G)$ the $A$-weighted Davenport constant
 of $G$. Then $D_A(G) = \infty$ if and only if for every $\ell \in \mathbb{N}$ there is an
 $A$-weighted zero-sum free sequence over $G$ of length $\ell$.

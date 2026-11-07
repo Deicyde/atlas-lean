@@ -1,6 +1,6 @@
 # The $q$-analogue of a real number
 
-**The $q$-analogue of a real number.** For real numbers $q$ and $x$, the $q$-analogue of $x$
+For real numbers $q$ and $x$, the $q$-analogue of $x$
 is
 
 $$[x]_q = \frac{q^x - 1}{q - 1},$$

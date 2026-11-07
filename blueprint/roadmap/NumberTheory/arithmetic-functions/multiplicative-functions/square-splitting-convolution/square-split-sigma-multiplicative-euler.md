@@ -1,6 +1,6 @@
 # A square-splitting divisor function and its Euler product
 
-**A square-splitting divisor function and its Euler product.** Let
+Let
 $\alpha \in \mathbb{C}$, let $\sigma_\beta(m) = \sum_{d \mid m} d^\beta$ for $\beta \in \mathbb{C}$
 (complex powers), and let $f(n) = \sigma_\alpha(u(n))\,\sigma_{2\alpha}(v(n))$, where $u(n)$ is
 the product of the primes dividing $n$ to an odd power and $v(n)$ is the positive integer with

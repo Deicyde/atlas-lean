@@ -1,6 +1,6 @@
 # Gudmundsson's bijection between Dyck words and standard Young tableaux
 
-**Gudmundsson's bijection between Dyck words and standard Young tableaux.** For every $n$
+For every $n$
 there is a map $f$ from Dyck words to semistandard Young tableaux of the two-row shape $(n, n)$
 with the following two properties. First, for every Dyck word $w$ of semilength $n$ and every
 $i \ge 1$, if the $i$th letter of $w$ is an up step $U$ then $i$ is an entry of the first row of

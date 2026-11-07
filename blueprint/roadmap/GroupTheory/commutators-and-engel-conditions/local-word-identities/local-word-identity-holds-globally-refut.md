@@ -1,6 +1,6 @@
 # Local word identities need not hold globally in connected groups
 
-**Local word identities need not hold globally in connected groups.** There are a connected
+There are a connected
 Hausdorff topological group $G$, a word $W(x, y)$ in the free group on two generators $x$, $y$ and
 a nonempty open subset $U$ of $G \times G$ such that $W(a, b) = 1$ for all $(a, b) \in U$ but
 $W(a, b) \ne 1$ for some $a, b \in G$. This answers Kourovka Notebook Problem 18.71 in the

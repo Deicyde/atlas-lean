@@ -1,6 +1,6 @@
 # Totalized remainder of the $E_1$ asymptotic expansion
 
-**Totalized remainder of the $E_1$ asymptotic expansion.** For $n \in \mathbb{N}$ and every
+For $n \in \mathbb{N}$ and every
 complex number $z$, this is $\operatorname{Ein}(z) - \operatorname{Log} z - \gamma - S_n(z)$,
 where $\operatorname{Ein}$ is the entire exponential integral, $\operatorname{Log}$ is the
 principal logarithm extended by $\operatorname{Log} 0 = 0$, $\gamma$ is the Euler–Mascheroni

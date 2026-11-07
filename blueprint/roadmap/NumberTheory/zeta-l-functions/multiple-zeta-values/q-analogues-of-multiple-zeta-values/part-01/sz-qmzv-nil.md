@@ -1,6 +1,6 @@
 # The empty Schlesinger–Zudilin qMZV
 
-**The empty Schlesinger–Zudilin qMZV.** The Schlesinger–Zudilin qMZV of the empty index is
+The Schlesinger–Zudilin qMZV of the empty index is
 $1$: $\zeta_q^{SZ}(\emptyset) = 1$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Classical bounds on Ehrhart roots
 
-**Classical bounds on Ehrhart roots.** Let $P \subseteq \mathbb{R}^d$ be a full-dimensional
+Let $P \subseteq \mathbb{R}^d$ be a full-dimensional
 lattice polytope, the convex hull of a finite set of points of $\mathbb{Z}^d$, and let $E$ be a
 complex polynomial with $E(k) = |kP \cap \mathbb{Z}^d|$ for every natural number $k$. Then every
 complex root $\alpha$ of $E$ satisfies $|\alpha| \le 1 + (d+1)!$, and every real root $\alpha$

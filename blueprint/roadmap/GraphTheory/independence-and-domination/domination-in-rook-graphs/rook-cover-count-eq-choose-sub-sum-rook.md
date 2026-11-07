@@ -1,6 +1,6 @@
 # Recursion for rook placements covering all rows and columns
 
-**Recursion for rook placements covering all rows and columns.** For natural numbers
+For natural numbers
 $n, m \ge 1$ and $k$, let $E_{a,b}(k)$ denote the number of $k$-element sets of cells of the
 $a \times b$ board that contain a cell in every row and a cell in every column. Then
 

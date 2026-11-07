@@ -1,6 +1,6 @@
 # One equal pairing of products excludes the other two
 
-**One equal pairing of products excludes the other two.** Let $a$, $b$, $c$, $d$ be pairwise
+Let $a$, $b$, $c$, $d$ be pairwise
 distinct positive real numbers with $ab = cd$. Then $ad \neq bc$ and $ac \neq bd$.
 
 ## Sources

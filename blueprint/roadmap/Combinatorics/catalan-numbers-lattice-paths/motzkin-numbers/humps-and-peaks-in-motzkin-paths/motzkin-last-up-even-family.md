@@ -1,6 +1,6 @@
 # Motzkin prefixes of even height whose last non-flat step is up
 
-**Motzkin prefixes of even height whose last non-flat step is up.** Use the steps
+Use the steps
 $U = (1,1)$, $F = (1,0)$ and $D = (1,-1)$, and call a word in these steps a Motzkin prefix if
 none of its initial segments ends below height $0$. For a natural number $n$, this is the set
 of pairs $(k, p)$ where $k$ is a natural number with $1 \le k \le \lfloor n/2 \rfloor$ and $p$

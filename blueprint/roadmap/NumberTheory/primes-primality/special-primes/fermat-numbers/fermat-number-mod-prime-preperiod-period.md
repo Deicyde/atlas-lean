@@ -1,6 +1,6 @@
 # Preperiod and period of Fermat residues from the index of $2$
 
-**Preperiod and period of Fermat residues from the index of $2$.** Write $F_n = 2^{2^n} + 1$.
+Write $F_n = 2^{2^n} + 1$.
 Let $p$ be an odd prime, write $p - 1 = 2^r u$ with $u$ odd, and let $s \le r$ and $t \mid u$ be
 natural numbers such that $g^{2^s t} = 2$ for some primitive root $g$ modulo $p$ (an element of
 order $p - 1$ in $\mathbb{Z}/p\mathbb{Z}$). Let $k$ be the multiplicative order of $2$ modulo

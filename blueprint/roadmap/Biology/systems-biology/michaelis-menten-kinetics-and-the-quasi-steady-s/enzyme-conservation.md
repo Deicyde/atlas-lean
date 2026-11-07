@@ -1,3 +1,3 @@
 # Enzyme conservation
 
-**Enzyme conservation**: `e(t) + c(t) = e(0) + c(0)`.
+`e(t) + c(t) = e(0) + c(0)`.

@@ -1,6 +1,6 @@
 # Trace metric on a cyclotomic field
 
-**Trace metric on a cyclotomic field.** Let $p$ be a positive integer and let $K$ be a $p$-th
+Let $p$ be a positive integer and let $K$ be a $p$-th
 cyclotomic extension of $\mathbb{Q}$. The trace distance between $\alpha, \beta \in K$ is the real
 number $d(\alpha, \beta) = \lVert \alpha - \beta \rVert$, where $\lVert \cdot \rVert$ is the trace
 norm on $K$.

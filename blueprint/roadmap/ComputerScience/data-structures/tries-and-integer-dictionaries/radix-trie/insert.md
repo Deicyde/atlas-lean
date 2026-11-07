@@ -1,6 +1,6 @@
 # Insertion into a radix trie
 
-**Insertion into a radix trie.** Inserting a value $v$ at a key $k$ (a list of symbols) into a
+Inserting a value $v$ at a key $k$ (a list of symbols) into a
 radix trie works as follows. If $k$ is empty, the root's value becomes $v$. Otherwise let $c$ be
 the first symbol of $k$. If no child edge of the root has a label starting with $c$, a new edge
 labelled $k$ leading to a leaf storing $v$ is added after the existing edges. Otherwise take the

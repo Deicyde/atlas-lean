@@ -1,6 +1,6 @@
 # The value $A_k^{(1)} = 2/k$
 
-**The value $A_k^{(1)} = 2/k$.** For every rational number $k$, the number $A_k^{(1)}$ for
+For every rational number $k$, the number $A_k^{(1)}$ for
 $k$-Fibonacci Brousseau sums equals $2/k$, where $2/0$ is read as $0$.
 
 ## Sources

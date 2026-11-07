@@ -1,6 +1,6 @@
 # Anti-Tribonacci construction
 
-**Anti-Tribonacci construction.** Write $\mathrm{mex}(U)$ for the least positive integer not in
+Write $\mathrm{mex}(U)$ for the least positive integer not in
 a finite set $U$ of natural numbers. Set $(A_1, B_1, C_1, D_1) = (1, 2, 3, 6)$ and
 $U_1 = \{1, 2, 3, 6\}$. For $k \ge 1$ let $A_{k+1} = \mathrm{mex}(U_k)$,
 $B_{k+1} = \mathrm{mex}(U_k \cup \{A_{k+1}\})$,

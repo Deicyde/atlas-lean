@@ -1,6 +1,6 @@
 # The class NC
 
-**The class NC.** $\mathsf{NC}$ is the complexity class of decision problems that belong to
+$\mathsf{NC}$ is the complexity class of decision problems that belong to
 $\mathsf{NC}^k$ for some natural number $k$, that is, $\mathsf{NC} = \bigcup_{k} \mathsf{NC}^k$.
 
 ## Sources

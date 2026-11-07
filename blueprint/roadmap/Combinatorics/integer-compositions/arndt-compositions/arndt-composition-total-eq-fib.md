@@ -1,6 +1,6 @@
 # Arndt compositions are counted by Fibonacci numbers
 
-**Arndt compositions are counted by Fibonacci numbers.** Let $a(n, m)$ be the number of Arndt
+Let $a(n, m)$ be the number of Arndt
 compositions of $n$ with $m$ parts, let $a(n) = \sum_{m=0}^{n} a(n, m)$ be the number of all
 Arndt compositions of $n$, and let $F_n$ be the $n$-th Fibonacci number ($F_0 = 0$, $F_1 = 1$).
 Then, in $\mathbb{Z}[[x]]$,

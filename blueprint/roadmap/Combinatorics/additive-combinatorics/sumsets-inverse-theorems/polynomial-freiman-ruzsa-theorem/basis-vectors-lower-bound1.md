@@ -1,6 +1,6 @@
 # Statement of the basis-vector lower bound
 
-**Statement of the basis-vector lower bound.** The proposition that every admissible
+The proposition that every admissible
 asymptotic coset-cover exponent $C$ satisfies $C \ge 1$.
 
 The obstruction comes from sets of basis vectors.

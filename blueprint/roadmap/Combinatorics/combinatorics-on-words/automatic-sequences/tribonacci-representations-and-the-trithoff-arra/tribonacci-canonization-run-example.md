@@ -1,6 +1,6 @@
 # Canonizing $2000000$
 
-**Canonizing $2000000$.** Words are written most significant digit first. Running at most
+Words are written most significant digit first. Running at most
 two steps of the canonization procedure on the word $2000000$ yields $10001000$.
 
 Both words have value $88$: with $T_n$ the Tribonacci numbers ($T_0 = T_1 = 0$, $T_2 = 1$)

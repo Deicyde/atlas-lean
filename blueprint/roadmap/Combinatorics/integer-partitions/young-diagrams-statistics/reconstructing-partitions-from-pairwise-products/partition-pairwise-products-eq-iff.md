@@ -1,6 +1,6 @@
 # Li's theorem: partitions are determined by their pairwise products
 
-**Li's theorem: partitions are determined by their pairwise products.** Let $n$ be a positive
+Let $n$ be a positive
 integer and let $\lambda$ and $\mu$ be partitions of $n$. The pairwise products of the parts of
 $\lambda$ and the pairwise products of the parts of $\mu$ form the same multiset if and only if
 $\lambda = \mu$.

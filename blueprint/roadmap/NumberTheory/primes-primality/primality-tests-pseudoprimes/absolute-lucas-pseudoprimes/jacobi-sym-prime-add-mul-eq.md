@@ -1,6 +1,6 @@
 # Jacobi symbols of a discriminant $D$ agree at odd primes congruent modulo $D$
 
-**Jacobi symbols of a discriminant $D$ agree at odd primes congruent modulo $D$.** Let $p$ and
+Let $p$ and
 $p'$ be odd primes and let $D$ be an integer with $D \equiv 0$ or $1 \pmod 4$ that is coprime to
 $p$. If $p' = p + D x$ for some integer $x$, then the Jacobi symbols agree:
 $\left(\frac{D}{p'}\right) = \left(\frac{D}{p}\right)$.

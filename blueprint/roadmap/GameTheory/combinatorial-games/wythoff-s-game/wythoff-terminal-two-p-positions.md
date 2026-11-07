@@ -1,6 +1,6 @@
 # P-positions of Wythoff's game when positions of total at most 2 are terminal
 
-**P-positions of Wythoff's game when positions of total at most 2 are terminal.** In the game
+In the game
 $K^2$ on two piles, a move from a position $(x, y)$ with $x + y > 2$ removes a positive number
 of tokens from one pile or the same positive number from both piles, and no move is allowed
 from a position with $x + y \le 2$. Let $a_n$ be the least integer $m > 2$ that differs from

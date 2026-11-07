@@ -1,6 +1,6 @@
 # Ducci coefficients
 
-**Ducci coefficients.** For natural numbers $n$, $r$ and $s$, the Ducci coefficient is
+For natural numbers $n$, $r$ and $s$, the Ducci coefficient is
 $a_{r,s} = \sum_{0 \le j \le r,\ j \equiv s - 1 \ (\mathrm{mod}\ n)} \binom{r}{j}$, where $s - 1$
 is read as $0$ when $s = 0$ and congruence modulo $0$ is equality.
 

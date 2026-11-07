@@ -1,6 +1,6 @@
 # The empty set is not central in a semigroup
 
-**The empty set is not central in a semigroup.** In every semigroup $S$, the empty subset of
+In every semigroup $S$, the empty subset of
 $S$ is not central.
 
 ## Sources

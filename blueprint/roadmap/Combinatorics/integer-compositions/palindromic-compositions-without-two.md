@@ -1,6 +1,6 @@
 # Palindromic compositions without 2's
 
-**Palindromic compositions without 2's.** For an integer $m \ge 0$, let $C(m)$ be the number of
+For an integer $m \ge 0$, let $C(m)$ be the number of
 compositions of $m$ (finite sequences of positive integers with sum $m$) with no part equal to
 $2$, so that $C(0) = 1$ counts the empty composition, and set $C(m) = 0$ for $m < 0$. For a
 natural number $n$, let $P(n)$ be the number of such compositions of $n$ that are palindromes.

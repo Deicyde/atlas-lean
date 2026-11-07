@@ -1,6 +1,6 @@
 # Explicit completion bound for incomplete exponential sums
 
-**Explicit completion bound for incomplete exponential sums.** Let $p$ be a prime, write
+Let $p$ be a prime, write
 $e_p(t) = e^{2\pi i t/p}$, let $f$ be a polynomial with integer coefficients whose reduction
 modulo $p$ has degree at least $2$, and let $B$ be an integer with $1 \le B \le p$. Put
 $\Phi(f, p) = \max_{0 \le y \le p-1} \left|\sum_{x=1}^{p} e_p(f(x) + yx)\right|$. Then

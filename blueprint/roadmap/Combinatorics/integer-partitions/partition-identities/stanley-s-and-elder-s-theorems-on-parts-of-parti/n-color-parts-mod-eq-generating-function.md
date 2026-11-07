@@ -1,6 +1,6 @@
 # Generating function for parts in a residue class over n-color partitions
 
-**Generating function for parts in a residue class over n-color partitions.** Let $r$ and
+Let $r$ and
 $k$ be natural numbers with $0 < k < r$, and for $i \ge 0$ let $C(k \bmod r, i)$ be the total
 number of parts of size congruent to $k$ modulo $r$, counted with multiplicity, over the
 $n$-color partitions of $i$. Then in the ring $\mathbb{Q}[[q]]$ of formal power series, with

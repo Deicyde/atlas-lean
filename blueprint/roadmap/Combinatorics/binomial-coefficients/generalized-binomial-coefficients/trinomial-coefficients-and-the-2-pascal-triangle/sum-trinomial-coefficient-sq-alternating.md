@@ -1,6 +1,6 @@
 # Alternating sum of squared trinomial coefficients
 
-**Alternating sum of squared trinomial coefficients.** Write $\binom{n}{k}_2$ for the
+Write $\binom{n}{k}_2$ for the
 trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$. For every natural number $n$,
 $\sum_{k=0}^{2n} (-1)^k \binom{n}{k}_2^2 = \binom{n}{n}_2$.
 

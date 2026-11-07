@@ -1,6 +1,6 @@
 # Coprimality density of a graph
 
-**Coprimality density of a graph.** Let $k$ be a natural number and let $E$ be a set of ordered
+Let $k$ be a natural number and let $E$ be a set of ordered
 pairs $(a, b)$ of vertices in $\{1, \dots, k\}$, the edge set of a graph $G$. For $F \subseteq E$
 let $v(F)$ be the number of distinct vertices that occur in some pair of $F$. The coprimality
 density of $G$ is the real number

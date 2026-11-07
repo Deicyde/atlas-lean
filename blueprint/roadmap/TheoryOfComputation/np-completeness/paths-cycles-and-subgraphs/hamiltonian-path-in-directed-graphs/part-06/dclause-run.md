@@ -1,6 +1,6 @@
 # One clause of the detour walk
 
-**One clause of the detour walk.** Let $B, m, i, y, j \in \mathbb{N}$, let $C$ be a clause
+Let $B, m, i, y, j \in \mathbb{N}$, let $C$ be a clause
 with token list $\mathrm{toks}(C)$, let $\rho$ and $\nu$ be lists of symbols and $b$ a state bit,
 and let $s$ be a quiescent state of the emitter such that $F$ holds $\mathrm{toks}(C)$ followed by
 $\rho$, $V$ holds the name of $y$, then a clause separator, then $\nu$, the scratch stack $X$ is

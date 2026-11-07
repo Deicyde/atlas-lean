@@ -1,6 +1,6 @@
 # Ekeland variational principle without a nonemptiness assumption
 
-**Ekeland variational principle without a nonemptiness assumption.** Let $(X, d)$ be a complete
+Let $(X, d)$ be a complete
 metric space, let $f : X \to \mathbb{R}$ be lower semicontinuous and bounded below, and let
 $\varepsilon > 0$. If $x_0 \in X$ satisfies $f(x_0) \le f(x) + \varepsilon$ for every $x \in X$,
 then there is $x_\varepsilon \in X$ with $f(x_\varepsilon) \le f(x_0)$,

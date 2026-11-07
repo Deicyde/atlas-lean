@@ -1,6 +1,6 @@
 # Odd multiples and replacement in perfect covers
 
-**Odd multiples and replacement in perfect covers.** Let $G$ be a finite abelian group of order
+Let $G$ be a finite abelian group of order
 $2^n$ and let $a, b \in G$ be nonzero. Then $b = (2j+1)a$ for some integer $j$ if and only if, for
 every perfect cover $S$ of $G$ with $a \in S$, the set $(S \setminus \{a\}) \cup \{b\}$ is again a
 perfect cover of $G$. If moreover $a \ne b$, then $b = (2j+1)a$ for some integer $j$ if and only if

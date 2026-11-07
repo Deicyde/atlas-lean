@@ -1,6 +1,6 @@
 # Exponent bounds for $k$-Pell–Lucas numbers close to a power of two (Lemma 8)
 
-**Exponent bounds for $k$-Pell–Lucas numbers close to a power of two (Lemma 8).** Let $k$, $n$
+Let $k$, $n$
 and $m$ be natural numbers with $k \ge 2$, $n \ge 1$, $m \ge 2$ and $n \ge k + 1$, and let
 $Q^{(k)}_n$ be the $n$th $k$-Pell–Lucas number. If $|Q^{(k)}_n - 2^m| < 2^{m/2}$, then
 $0.69n - 1.69 < m < 1.39n + 3.78$.

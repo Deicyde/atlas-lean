@@ -1,6 +1,6 @@
 # Arcsine Taylor series
 
-**Arcsine Taylor series.** Let $c_n = \binom{2n}{n}/4^n$. For real $t$, the arcsine Taylor
+Let $c_n = \binom{2n}{n}/4^n$. For real $t$, the arcsine Taylor
 series is
 
 $$S(t) = \sum_{n=0}^{\infty} \frac{c_n\, t^{2n+1}}{2n+1},$$

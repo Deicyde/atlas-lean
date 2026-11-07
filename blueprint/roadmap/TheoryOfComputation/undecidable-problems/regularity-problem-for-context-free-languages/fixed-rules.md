@@ -1,6 +1,6 @@
 # The auxiliary productions of the regularity grammar
 
-**The auxiliary productions of the regularity grammar.** For a natural number $s$, these are
+For a natural number $s$, these are
 the following productions over the nonterminals $\mathbb{N}$ and the alphabet consisting of the
 letters of the finite alphabet $T$, a separator $\#$ and two bits $0$ and $1$, where $A_n$
 denotes nonterminal $n$: $A_0 \to A_{s+4} \# A_1$, $A_0 \to A_2 \# A_3$, $A_1 \to \varepsilon$,

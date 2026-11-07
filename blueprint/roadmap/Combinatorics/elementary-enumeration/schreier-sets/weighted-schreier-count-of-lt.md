@@ -1,6 +1,6 @@
 # Weighted Schreier counts for $n < k$
 
-**Weighted Schreier counts for $n < k$.** For all natural numbers $n < k$, the weighted
+For all natural numbers $n < k$, the weighted
 Schreier count satisfies $a_{k,n} = F_{n+1}$, where $F_j$ is the $j$-th Fibonacci number
 ($F_0 = 0$, $F_1 = 1$).
 

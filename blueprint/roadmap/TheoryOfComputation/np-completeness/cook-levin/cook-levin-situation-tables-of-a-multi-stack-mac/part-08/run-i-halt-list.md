@@ -1,6 +1,6 @@
 # The idle-extended run stays at the halting configuration
 
-**The idle-extended run stays at the halting configuration.** Let $M$ be a machine, $s$ a
+Let $M$ be a machine, $s$ a
 word over its input alphabet and $l'$ a list over its output alphabet. Suppose that $M$, started
 in the initial configuration on $s$, reaches the halting configuration with output $l'$ (halted,
 in the initial state, with $l'$ on the output stack and every other stack empty) in at most $p$

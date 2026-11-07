@@ -1,6 +1,6 @@
 # A least counterexample to the Kaneko–Lagarias inequality is superabundant
 
-**A least counterexample to the Kaneko–Lagarias inequality is superabundant.** Let
+Let
 $\sigma(n)$ be the sum of the divisors of $n$, $H_n = 1 + \frac{1}{2} + \cdots + \frac{1}{n}$ the
 $n$-th harmonic number and $\log$ the natural logarithm. Let $n_0 > 60$ be a natural number for
 which the Kaneko–Lagarias inequality $\sigma(n_0) < e^{H_{n_0}} \log H_{n_0}$ fails, while

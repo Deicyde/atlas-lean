@@ -1,6 +1,6 @@
 # Relative position of a word starting with $ab$
 
-**Relative position of a word starting with $ab$.** If an infinite word $w$ over $\{a, b\}$
+If an infinite word $w$ over $\{a, b\}$
 starts with $ab$, then its relative position function satisfies $r(1) = 1$.
 
 ## Sources

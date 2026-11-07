@@ -1,6 +1,6 @@
 # Unique splitting into multiplicative and antimultiplicative parts
 
-**Unique splitting into multiplicative and antimultiplicative parts.** Every real
+Every real
 arithmetical function $f$ with $f(1) = 1$ can be written in exactly one way as a Dirichlet
 convolution $f = g * h$ of a multiplicative real arithmetical function $g$ and an
 antimultiplicative real arithmetical function $h$.

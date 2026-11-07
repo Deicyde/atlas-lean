@@ -1,6 +1,6 @@
 # Nonzero single digits are repdigits
 
-**Nonzero single digits are repdigits.** Every natural number $d$ with $1 \le d \le 9$ is a
+Every natural number $d$ with $1 \le d \le 9$ is a
 repdigit.
 
 ## Sources

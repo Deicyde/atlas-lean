@@ -1,6 +1,6 @@
 # The only biunitary triperfect number divisible by $27$ is $2160$
 
-**The only biunitary triperfect number divisible by $27$ is $2160$.** For every positive
+For every positive
 integer $N$ divisible by $27$, $\sigma^{**}(N) = 3N$ if and only if $N = 2160$, where
 $\sigma^{**}$ is the biunitary divisor sum.
 

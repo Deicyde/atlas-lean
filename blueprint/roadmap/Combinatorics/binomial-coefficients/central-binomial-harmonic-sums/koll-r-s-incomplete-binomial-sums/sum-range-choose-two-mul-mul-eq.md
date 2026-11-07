@@ -1,6 +1,6 @@
 # Kollár's recursion for incomplete binomial sums with top index $2n$
 
-**Kollár's recursion for incomplete binomial sums with top index $2n$.** Let
+Let
 $(a_k)_{k \ge 0}$ be a sequence of real numbers and let $m$ and $n$ be positive integers with
 $m \le n$. Then
 

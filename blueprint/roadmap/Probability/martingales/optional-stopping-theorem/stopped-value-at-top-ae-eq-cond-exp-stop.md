@@ -1,6 +1,6 @@
 # Conditional optional stopping with UI of the stopped process
 
-**Conditional optional stopping with UI of the stopped process.** Let $\mu$ be a probability
+Let $\mu$ be a probability
 measure on $\Omega$, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration, and let
 $(f_n)_{n \in \mathbb{N}}$ be a real-valued martingale with respect to $(\mathcal{F}_n)$ and $\mu$.
 Let $L \le M$ be stopping times with values in $\mathbb{N} \cup \{\infty\}$, and suppose the

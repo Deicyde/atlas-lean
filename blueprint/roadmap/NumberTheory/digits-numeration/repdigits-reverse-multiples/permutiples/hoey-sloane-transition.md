@@ -1,6 +1,6 @@
 # Hoey–Sloane transition of a digit pair
 
-**Hoey–Sloane transition of a digit pair.** For natural numbers $n$ and $b$ and a pair
+For natural numbers $n$ and $b$ and a pair
 $e = (d_1, d_2)$ of natural numbers, the multi-edge of the $(n, b)$-Hoey–Sloane multigraph
 carrying the label $e$ is $(c_1, c_2)$, where $c_1 = \lambda(d_1 + (b - n) d_2)$ with
 $\lambda$ the least non-negative residue modulo $b$ (computed in the integers), and

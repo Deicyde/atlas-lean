@@ -1,6 +1,6 @@
 # Double reciprocal lcm sum of the empty set
 
-**Double reciprocal lcm sum of the empty set.** For every real number $x$, the double sum of
+For every real number $x$, the double sum of
 reciprocal least common multiples of the empty set up to $x$ is $0$.
 
 ## Sources

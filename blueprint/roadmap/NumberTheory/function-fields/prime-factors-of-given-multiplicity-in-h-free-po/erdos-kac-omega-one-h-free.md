@@ -1,6 +1,6 @@
 # Erdős–Kac theorem for $\omega_1$ on $h$-free polynomials
 
-**Erdős–Kac theorem for $\omega_1$ on $h$-free polynomials.** Let $F$ be a finite field, let
+Let $F$ be a finite field, let
 $h \ge 2$ and let $\alpha \le \beta$ be real numbers. A monic polynomial $f$ over $F$ is $h$-free
 if $P^h \nmid f$ for every monic irreducible $P$, and $\omega_1(f)$ is the number of distinct
 monic irreducible $P$ that divide $f$ with multiplicity exactly $1$. For each $n$, let $p_n$ be

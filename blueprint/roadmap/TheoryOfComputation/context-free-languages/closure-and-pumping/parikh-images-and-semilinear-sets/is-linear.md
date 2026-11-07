@@ -1,6 +1,6 @@
 # Linear set of vectors
 
-**Linear set of vectors.** A set of vectors is linear when it consists of a base vector plus
+A set of vectors is linear when it consists of a base vector plus
 arbitrary nonnegative combinations of finitely many period vectors,
 with one coefficient per position in the period list.
 

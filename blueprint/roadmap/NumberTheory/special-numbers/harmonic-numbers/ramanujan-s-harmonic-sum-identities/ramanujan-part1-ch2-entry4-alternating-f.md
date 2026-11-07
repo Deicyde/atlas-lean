@@ -1,6 +1,6 @@
 # Alternating form of Ramanujan's identity for $1/((4k)^3 - 4k)$, including $n = 0$
 
-**Alternating form of Ramanujan's identity for $1/((4k)^3 - 4k)$, including $n = 0$.** For
+For
 every natural number $n$,
 
 $$

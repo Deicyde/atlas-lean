@@ -1,6 +1,6 @@
 # The Hurwitz-normalized coefficients of 1/Sl
 
-**The Hurwitz-normalized coefficients of 1/Sl.** Let $\mathrm{Sl}, \mathrm{Cl}$ be formal power
+Let $\mathrm{Sl}, \mathrm{Cl}$ be formal power
 series in $\mathbb{Q}[[u]]$ with $\mathrm{Sl}' = \mathrm{Cl}^2$, $\mathrm{Cl}' = -\mathrm{Sl}^2$,
 $\mathrm{Sl}(0) = 0$ and $\mathrm{Cl}(0) = 1$. Write $\mathrm{Sl}(u) = u\,S_0(u)$ with
 $S_0 \in \mathbb{Q}[[u]]$, and let $D_n$ be the coefficient of $u^{n+1}$ in $S_0^{-1}$, so that

@@ -1,6 +1,6 @@
 # Residues of the $(k, l)$-Göbel sequence modulo $p^r$
 
-**Residues of the $(k, l)$-Göbel sequence modulo $p^r$.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $k, l, r \ge 2$ be natural numbers, and let $g_{k,l}$ be the $(k, l)$-Göbel sequence. Let $I$ be
 the set of natural numbers $n$ with $1 \le n < p$ such that $g_{k,l}(n) = 0$ or
 $\nu_p(g_{k,l}(n)) \ge r - 1$, where $\nu_p$ is the $p$-adic valuation on $\mathbb{Q}$; that is,

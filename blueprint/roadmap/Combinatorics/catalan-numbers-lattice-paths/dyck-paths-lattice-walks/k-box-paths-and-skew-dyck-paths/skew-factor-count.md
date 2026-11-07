@@ -1,6 +1,6 @@
 # Occurrences of a factor in a skew Dyck word
 
-**Occurrences of a factor in a skew Dyck word.** For words $f$ and $w$ over the skew Dyck
+For words $f$ and $w$ over the skew Dyck
 steps $U$, $D$, $L$, the factor count of $f$ in $w$ is the number of suffixes of $w$, including
 $w$ itself and the empty suffix, that begin with $f$. Equivalently, it is the number of positions
 of $w$ at which an occurrence of $f$ as a contiguous block starts, overlapping occurrences all

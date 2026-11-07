@@ -1,6 +1,6 @@
 # Number of unique subgraphs
 
-**Number of unique subgraphs.** Let $H$ be a graph on a finite vertex set $V$. The number of
+Let $H$ be a graph on a finite vertex set $V$. The number of
 unique subgraphs of $H$ is the number of spanning subgraphs $G$ of $H$ (graphs on $V$ all of
 whose edges are edges of $H$) that are unique subgraphs of $H$, that is, isomorphic to no other
 spanning subgraph of $H$.

@@ -1,6 +1,6 @@
 # Baranyai's theorem
 
-**Baranyai's theorem.** Let $n$ and $h$ be natural numbers with $h \mid n$, and let
+Let $n$ and $h$ be natural numbers with $h \mid n$, and let
 $V = \{0, \dots, n-1\}$. The $h$-element subsets of $V$, the edges of the complete
 $h$-uniform hypergraph on $V$, can be partitioned into perfect matchings: there is a finite
 family $\mathcal{P}$ of sets of subsets of $V$ such that the union of the members of

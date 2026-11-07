@@ -1,6 +1,6 @@
 # Initial companion bronze numbers
 
-**Initial companion bronze numbers.** The companion bronze numbers $C_n$ of the first type
+The companion bronze numbers $C_n$ of the first type
 satisfy $(C_0, C_1, C_2, C_3, C_4) = (1, 1, 4, 13, 43)$, and the companion bronze numbers $D_n$
 of the second type satisfy $(D_0, D_1, D_2, D_3, D_4) = (1, 2, 7, 23, 76)$.
 

@@ -1,6 +1,6 @@
 # Simion–Schmidt enumeration of permutations avoiding two patterns of length three
 
-**Simion–Schmidt enumeration of permutations avoiding two patterns of length three.** For
+For
 every $n \ge 1$, writing $A_n(\tau, \rho)$ for the number of permutations of
 $\{0, 1, \dots, n - 1\}$ avoiding both patterns $\tau$ and $\rho$:
 (a) $A_n(123, 132) = A_n(123, 213) = A_n(321, 231) = A_n(321, 312) = 2^{n-1}$;

@@ -1,6 +1,6 @@
 # Subsequences $G_{\ell n + m}$ of a Gibonacci sequence as composition sums
 
-**Subsequences $G_{\ell n + m}$ of a Gibonacci sequence as composition sums.** Let $y$ and $z$
+Let $y$ and $z$
 be non-negative integers, not both zero, let $(G_k)$ be the Gibonacci sequence with $G_0 = y$
 and $G_1 = z$, and let $L_k$ be the Lucas numbers. Let $\ell \ge 1$, $m \ge 0$ and $n \ge 1$, and
 let $E$ be a complex number with $E^2 = (-1)^\ell G_\ell (G_\ell - L_\ell y) + y^2$ if $m$ is

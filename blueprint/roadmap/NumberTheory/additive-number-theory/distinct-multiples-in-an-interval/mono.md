@@ -1,6 +1,6 @@
 # Lengthening the interval preserves distinct multiples
 
-**Lengthening the interval preserves distinct multiples.** For natural numbers $n$, $m$, $L$
+For natural numbers $n$, $m$, $L$
 and $L'$ with $L \le L'$, if the interval $(m, m + L]$ contains distinct multiples of
 $1, \dots, n$, then so does the interval $(m, m + L']$.
 

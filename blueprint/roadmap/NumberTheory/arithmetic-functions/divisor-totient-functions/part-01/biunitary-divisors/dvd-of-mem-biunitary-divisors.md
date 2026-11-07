@@ -1,6 +1,6 @@
 # Biunitary divisors divide
 
-**Biunitary divisors divide.** For natural numbers $n$ and $d$, if $d$ is a biunitary
+For natural numbers $n$ and $d$, if $d$ is a biunitary
 divisor of $n$, then $d$ divides $n$.
 
 ## Sources

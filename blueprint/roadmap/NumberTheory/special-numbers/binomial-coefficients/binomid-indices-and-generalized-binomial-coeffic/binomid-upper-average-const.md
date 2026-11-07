@@ -1,6 +1,6 @@
 # Upper average of a constant sequence
 
-**Upper average of a constant sequence.** For every natural number $c$, the upper average
+For every natural number $c$, the upper average
 $A_0$ of the constant sequence $(c, c, c, \dots)$ equals $c$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Tabulated forward algorithm
 
-**Tabulated forward algorithm.** Let $h$ be a hidden Markov model with states
+Let $h$ be a hidden Markov model with states
 $\{0, \dots, n-1\}$ and weights in a semiring $R$, with initial weight $\pi(s)$ and emission
 weight $e(s, o)$ of the observation $o$ from the state $s$, and let $x$ be an observation
 sequence. The forward table is the sequence of vectors in $R^n$ defined by recursion on time: at

@@ -1,6 +1,6 @@
 # Sharp lower bounds for bounded subset sums of nonnegative sets
 
-**Sharp lower bounds for bounded subset sums of nonnegative sets.** Let $k$, $\alpha$, $\beta$
+Let $k$, $\alpha$, $\beta$
 be natural numbers with $k \ge 2$, $\alpha \ge 1$ and $\alpha + \beta + 1 \le k$. For a finite set
 $A$ of integers write $\Sigma_\alpha^\beta(A)$ for the set of sums of subsets $B \subseteq A$ with
 $\alpha \le |B| \le |A| - \beta$. Every set $A$ of $k$ positive integers satisfies

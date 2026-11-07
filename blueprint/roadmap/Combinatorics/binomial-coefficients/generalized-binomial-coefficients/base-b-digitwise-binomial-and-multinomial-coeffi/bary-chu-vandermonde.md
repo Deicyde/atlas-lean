@@ -1,6 +1,6 @@
 # $b$-ary Chu–Vandermonde identity
 
-**$b$-ary Chu–Vandermonde identity.** Let $b \ge 2$. For a natural number $x$ write
+Let $b \ge 2$. For a natural number $x$ write
 $x_l = \lfloor x / b^l \rfloor \bmod b$ for its $l$-th base-$b$ digit, and for natural numbers
 $x$ and $y$ let $C(x, y) = \prod_{l=0}^{x+y} \binom{x_l}{y_l}$. Let $m$, $n$ and $r$ be natural
 numbers such that the addition of $m$ and $n$ in base $b$ has no carries, that is,

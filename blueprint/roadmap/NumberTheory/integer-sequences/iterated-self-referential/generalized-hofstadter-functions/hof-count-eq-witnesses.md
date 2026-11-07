@@ -1,6 +1,6 @@
 # Witnesses that the letter counts of $x_k$ and $x_{k+1}$ are not ordered
 
-**Witnesses that the letter counts of $x_k$ and $x_{k+1}$ are not ordered.** For a natural
+For a natural
 number $k$, let $\tau_k$ be the substitution sending the letter $k$ to $k\,1$ and every other
 letter $a$ to $a + 1$, let $x_k = x_k[0]\,x_k[1] \cdots$ be its fixed point beginning with $k$,
 let $C_k^{(=i)}(n)$ be the number of indices $j < n$ with $x_k[j] = i$, let $L_k(n)$ be the

@@ -1,6 +1,6 @@
 # Body isotropic constants are bounded by the law supremum
 
-**Body isotropic constants are bounded by the law supremum.** For every $n \in \mathbb{N}$,
+For every $n \in \mathbb{N}$,
 the supremum of the isotropic constants of full-dimensional convex bodies in $\mathbb{R}^n$ is at
 most the supremum of the entropy isotropic constants of probability laws on $\mathbb{R}^n$ with a
 log-concave Lebesgue density $f$ such that every coordinate $x_i$ and every product $x_i x_j$ is

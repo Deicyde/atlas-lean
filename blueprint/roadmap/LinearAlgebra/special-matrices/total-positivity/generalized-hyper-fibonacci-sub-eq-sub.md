@@ -1,6 +1,6 @@
 # A binomial-sum formula for generalized hyper-Fibonacci numbers
 
-**A binomial-sum formula for generalized hyper-Fibonacci numbers.** Let $p, a, b$ be integers
+Let $p, a, b$ be integers
 with $p \ne 0$, let $W_{p,n}$ denote the generalized Fibonacci sequence and $W^{(r)}_{p,n}$ the
 generalized hyper-Fibonacci numbers. For all natural numbers $r$ and $n$ with $1 \le r \le n$, the
 following identity of rational numbers holds:

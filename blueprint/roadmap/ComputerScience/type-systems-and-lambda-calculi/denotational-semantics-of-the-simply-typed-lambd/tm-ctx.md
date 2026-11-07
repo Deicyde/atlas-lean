@@ -1,6 +1,6 @@
 # Typed one-hole contexts
 
-**Typed one-hole contexts.** Fix simple types over a type of base types. A one-hole context
+Fix simple types over a type of base types. A one-hole context
 whose hole has type $A$ in variable context $\Gamma$, and which produces a term of type $B$ in
 variable context $\Delta$, is built by four rules. The hole itself is such a context, with
 $\Delta = \Gamma$ and $B = A$. If $C$ produces type $S \Rightarrow T$ in $\Delta$ and $a$ is a term

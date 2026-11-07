@@ -1,6 +1,6 @@
 # Sums of (a, b)-Fibonacci numbers weighted by powers of c
 
-**Sums of (a, b)-Fibonacci numbers weighted by powers of c.** Let $a, b, c$ be complex
+Let $a, b, c$ be complex
 numbers with $c \ne 0$ and $c^2 - ac - b \ne 0$, and let $(F_n)$ be the $(a, b)$-Fibonacci
 numbers. Then for every integer $n \ge 1$,
 

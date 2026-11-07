@@ -1,6 +1,6 @@
 # Product formula for equal-fold partition diamonds
 
-**Product formula for equal-fold partition diamonds.** Let $d$ and $M$ be positive integers.
+Let $d$ and $M$ be positive integers.
 Let $\sigma_{d,M}(a, b)$ be the generating function of multifold partition diamonds of shape
 $(d, \dots, d)$ ($M$ copies), where $a$ marks the fold sum and $b$ marks the link sum, and let
 $E_d(x, y) = \sum_{\tau} x^{\mathrm{des}(\tau)} y^{\mathrm{maj}(\tau)}$ be the Euler–Mahonian

@@ -1,6 +1,6 @@
 # Sabar's triangle
 
-**Sabar's triangle.** For natural numbers $n$ and $i$, the entry $s(n, i)$ of Sabar's triangle
+For natural numbers $n$ and $i$, the entry $s(n, i)$ of Sabar's triangle
 is the integer
 
 $$s(n, i) = \sum_{j=i+1}^{n} (-1)^{n-j} \binom{j}{i}.$$

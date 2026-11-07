@@ -1,6 +1,6 @@
 # Asymptotics of the harmonic Poisson series
 
-**Asymptotics of the harmonic Poisson series.** Let $H_k = \sum_{j=1}^{k} 1/j$ be the $k$-th
+Let $H_k = \sum_{j=1}^{k} 1/j$ be the $k$-th
 harmonic number (so $H_0 = 0$) and let $\gamma$ be the Euler–Mascheroni constant. Then, as
 $x \to \infty$,
 

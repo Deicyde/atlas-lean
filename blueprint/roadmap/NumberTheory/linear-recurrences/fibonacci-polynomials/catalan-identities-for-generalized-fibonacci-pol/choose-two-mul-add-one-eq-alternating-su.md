@@ -1,6 +1,6 @@
 # Binomial coefficients of odd lower index as an alternating sum
 
-**Binomial coefficients of odd lower index as an alternating sum.** For natural numbers $n$
+For natural numbers $n$
 and $k$ with $k < \lfloor (n-1)/2 \rfloor$,
 
 $$\binom{n}{2k+1} = \sum_{i=k}^{\lfloor (n-1)/2 \rfloor} (-1)^{i-k} \, 2^{n-2i-1}

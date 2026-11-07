@@ -1,6 +1,6 @@
 # Koebe quarter theorem
 
-**Koebe quarter theorem.** Let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic and injective on the
+Let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic and injective on the
 open unit disk $\mathbb{D} = \{z : |z| < 1\}$, with $f(0) = 0$ and $f'(0) = 1$. Then the image
 $f(\mathbb{D})$ contains the open disk $\{w : |w| < 1/4\}$.
 

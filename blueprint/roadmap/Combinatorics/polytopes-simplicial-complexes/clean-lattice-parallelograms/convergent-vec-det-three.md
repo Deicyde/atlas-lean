@@ -1,6 +1,6 @@
 # A determinant of three convergent vectors
 
-**A determinant of three convergent vectors.** Let $1 \le a < n$ be integers, let
+Let $1 \le a < n$ be integers, let
 $n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of $n / a$, where $m$ is the
 least index at which it terminates, and let $v_j = (B_j, A_j)$ be its convergent vectors. Then
 for every natural number $i$ with $i + 2 \le m$, the determinant of the $3 \times 3$ matrix with

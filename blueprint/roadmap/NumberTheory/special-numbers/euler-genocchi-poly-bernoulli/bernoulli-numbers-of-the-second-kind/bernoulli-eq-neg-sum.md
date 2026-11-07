@@ -1,6 +1,6 @@
 # Bernoulli numbers in terms of Bernoulli numbers of the second kind
 
-**Bernoulli numbers in terms of Bernoulli numbers of the second kind.** Let $B_m$ be the
+Let $B_m$ be the
 Bernoulli numbers (with $B_1 = -1/2$), $B_m^*$ the Bernoulli numbers of the second kind and
 $S(m, j)$ the Stirling numbers of the second kind. For every natural number $n \ge 1$,
 

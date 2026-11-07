@@ -1,6 +1,6 @@
 # Gcd of the coefficients of $(u + v^{1/p})^n$ for an odd prime $p$
 
-**Gcd of the coefficients of $(u + v^{1/p})^n$ for an odd prime $p$.** Let $p$ be an odd
+Let $p$ be an odd
 prime, let $u, v$ be coprime positive integers such that $\theta = v^{1/p}$, the positive real
 $p$-th root of $v$, is irrational, and let $a_{n,i}$ (for natural $n$ and $0 \le i \le p - 1$) be
 integers with $(u + \theta)^n = \sum_{i=0}^{p-1} a_{n,i} \theta^i$ for every $n \ge 1$. Write

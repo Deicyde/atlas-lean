@@ -1,6 +1,6 @@
 # Flat closure conversion
 
-**Flat closure conversion.** Given accessors $\mathrm{acc}$, a map from natural numbers to
+Given accessors $\mathrm{acc}$, a map from natural numbers to
 target terms, the flat conversion $C_{\mathrm{acc}}(t)$ of a raw term $t$ is defined by recursion
 on $t$. A variable $i$ becomes $\mathrm{acc}(i)$. A lambda $\lambda.\,b$, whose parameter type is
 ignored, becomes the pair $(\mathsf{code}\,C_{\mathrm{acc}'}(b), e)$. Here $i_1, \dots, i_n$ are

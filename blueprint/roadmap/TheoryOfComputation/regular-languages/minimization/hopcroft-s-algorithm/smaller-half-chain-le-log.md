@@ -1,6 +1,6 @@
 # The smaller-half counting lemma
 
-**The smaller-half counting lemma.** In a chain of blocks where each step at least
+In a chain of blocks where each step at least
 halves the size, a block containing a given state can occur at most `Nat.log 2 n` times
 past the start, where `n` is the number of states. In Hopcroft's algorithm, the successive
 smaller halves containing one fixed state form such a chain: each of them is the smaller

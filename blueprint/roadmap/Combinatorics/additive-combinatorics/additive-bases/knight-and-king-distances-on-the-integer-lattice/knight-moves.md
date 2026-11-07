@@ -1,6 +1,6 @@
 # Knight moves
 
-**Knight moves.** For integers $a$ and $b$, the $(a,b)$-knight's move set is
+For integers $a$ and $b$, the $(a,b)$-knight's move set is
 
 $$N_{a,b} = \{(\pm a, \pm b), (\pm b, \pm a)\} \subset \mathbb{Z}^2,$$
 

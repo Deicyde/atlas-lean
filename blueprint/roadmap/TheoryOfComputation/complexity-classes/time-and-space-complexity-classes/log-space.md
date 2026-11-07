@@ -1,6 +1,6 @@
 # Deterministic logarithmic space
 
-**Deterministic logarithmic space.** The class $\mathsf{L}$ consists of the decision problems
+The class $\mathsf{L}$ consists of the decision problems
 $L$ for which there is a constant $c \in \mathbb{N}$ such that the language of $L$ lies in
 $\mathrm{DSPACE}(s)$ for $s(n) = c \lfloor \log_2(n + 1) \rfloor + c$, the class of languages
 decided by a multi-tape Turing machine with binary alphabet and finitely many states, within

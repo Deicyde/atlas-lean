@@ -1,6 +1,6 @@
 # Companion Binet formula for generalized Fibonacci sequences
 
-**Companion Binet formula for generalized Fibonacci sequences.** Let $p$ be a real number and
+Let $p$ be a real number and
 let $W : \mathbb{Z} \to \mathbb{R}$ satisfy $W_{j+2} = p W_{j+1} + W_j$ for every integer $j$. Put
 $\sigma = (p + \sqrt{p^2 + 4})/2$ and $\tau = (p - \sqrt{p^2 + 4})/2$. Then for every integer
 $j$,

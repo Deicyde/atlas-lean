@@ -1,6 +1,6 @@
 # Remainder count
 
-**Remainder count.** For a natural number $n$, $s(n)$ is the number of elements of the
+For a natural number $n$, $s(n)$ is the number of elements of the
 remainder set $S(n)$, that is, the number of distinct values of $n \bmod k$ for
 $1 \le k \le \lfloor n/2 \rfloor$ (OEIS A283190).
 

@@ -1,6 +1,6 @@
 # Negative answer to Scottish Book Problem 15.1
 
-**Negative answer to Scottish Book Problem 15.1.** The Mazur–Orlicz claim of Problem 15.1 is
+The Mazur–Orlicz claim of Problem 15.1 is
 false: there is a real vector space $E$ with a topology that is of type (F) and contains a
 bounded sphere, but is not of type (B).
 

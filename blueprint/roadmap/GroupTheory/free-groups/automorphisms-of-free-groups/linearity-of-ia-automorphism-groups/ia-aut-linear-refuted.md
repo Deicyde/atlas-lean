@@ -1,6 +1,6 @@
 # IA-automorphism group of a free group is not linear
 
-**IA-automorphism group of a free group is not linear.** Resolved false: the Kourovka Archive answers 15.10 No: `IA(Fₙ)` is not linear for `n ≥ 5` (Pettet)
+Resolved false: the Kourovka Archive answers 15.10 No: `IA(Fₙ)` is not linear for `n ≥ 5` (Pettet)
 and for every `n ≥ 3` (Bardakov and Mikhailov). Source: E. I. Khukhro and V. D. Mazurov (eds.),
 Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026),
 Archive of Solved Problems, Problem 15.10 (Yu. I. Merzlyakov; V. G. Bardakov); resolution: V. G.

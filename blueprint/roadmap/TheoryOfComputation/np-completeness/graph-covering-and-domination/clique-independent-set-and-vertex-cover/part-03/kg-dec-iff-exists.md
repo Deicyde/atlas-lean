@@ -1,6 +1,6 @@
 # Verifying a graph language defined by a vertex-set condition
 
-**Verifying a graph language defined by a vertex-set condition.** Let $m$ be a mode and
+Let $m$ be a mode and
 $P$ a property of a number $k$ and a graph on $n$ vertices. Suppose that for all $n$, $k$ and
 every bit list $\mathit{bits}$ with one bit per pair $(i, j)$, $i < j < n$, the property $P$
 holds for $k$ and the graph given by $\mathit{bits}$ exactly when some set of $k$ vertices meets

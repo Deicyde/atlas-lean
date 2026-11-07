@@ -1,6 +1,6 @@
 # Ramanujan's companion series transformation (Chapter 3, Entry 2, formula (2.3))
 
-**Ramanujan's companion series transformation (Chapter 3, Entry 2, formula (2.3)).** Let $x$
+Let $x$
 and $z$ be complex numbers with $z \ne -(n+1)$ for every natural number $n$. Then the series
 $\sum_{j \ge 0} \frac{(-1)^j x^{j+1}}{(z+j+1)\, j!}$ converges absolutely, say with sum $S$, and
 the series $\sum_{j \ge 0} \frac{x^{j+1}}{(z+1)(z+2)\cdots(z+j+1)}$ converges absolutely with sum

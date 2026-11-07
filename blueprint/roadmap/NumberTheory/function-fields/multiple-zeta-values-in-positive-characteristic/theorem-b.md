@@ -1,6 +1,6 @@
 # Linear independence of multiple zeta values with small entries
 
-**Linear independence of multiple zeta values with small entries.** Let $F$ be a finite field
+Let $F$ be a finite field
 with $q$ elements, $K = F(t)$, and $w$ a positive integer. Let $\mathcal{T}^0_w$ be the set of
 multiple zeta values $\zeta_A(s_1, \dots, s_r)$ over $F$ with $r \ge 1$, positive integers
 $s_1, \dots, s_r$ with sum $w$, and $s_i < q$ for all $i$, and let $\mathcal{Z}_w$ be the

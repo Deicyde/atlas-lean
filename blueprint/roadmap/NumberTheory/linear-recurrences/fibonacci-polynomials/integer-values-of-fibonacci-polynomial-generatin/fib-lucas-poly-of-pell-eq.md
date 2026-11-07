@@ -1,6 +1,6 @@
 # Polynomial Pell-type solutions as rescaled Fibonacci–Lucas polynomials
 
-**Polynomial Pell-type solutions as rescaled Fibonacci–Lucas polynomials.** Let $a$ and $b$ be
+Let $a$ and $b$ be
 positive integers, and let $F_n(x), L_n(x) \in \mathbb{Z}[x]$ be the polynomials with $F_0 = 0$,
 $F_1 = 1$, $L_0 = 2$, $L_1 = ax$ and $G_{n+2} = ax\,G_{n+1} + b\,G_n$ for $G = F, L$ and all
 $n \ge 0$. Let $r_0 \in \{0, 1\}$ and let $P(x), Q(x) \in \mathbb{Q}[x]$ have nonnegative leading

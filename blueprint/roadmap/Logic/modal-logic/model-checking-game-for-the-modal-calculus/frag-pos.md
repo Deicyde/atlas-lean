@@ -1,6 +1,6 @@
 # Positions of the totalized fragment game
 
-**Positions of the totalized fragment game.** A position of the totalized fragment game, over
+A position of the totalized fragment game, over
 a type of atoms and a type of worlds, is either an embedded position $(\varphi, w)$ of a
 fixpoint-free formula $\varphi$ and a world $w$, standing for the model-checking game position
 $(\varphi, w, [])$ with $\varphi$ embedded as a μ-calculus formula and the empty fixpoint stack,

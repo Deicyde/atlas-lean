@@ -1,6 +1,6 @@
 # A unique product group need not be left-orderable
 
-**A unique product group need not be left-orderable.** There exists a group $G$ that has unique
+There exists a group $G$ that has unique
 products but is not left-orderable: for all finite nonempty subsets $X, Y \subseteq G$ there are
 $x_0 \in X$ and $y_0 \in Y$ such that $(x_0, y_0)$ is the only pair $(x, y) \in X \times Y$ with
 $xy = x_0 y_0$, and yet $G$ admits no linear order invariant under left multiplication.

@@ -1,6 +1,6 @@
 # A unique maximum is a generalized Markov number
 
-**A unique maximum is a generalized Markov number.** Let $k$ and $b$ be natural numbers.
+Let $k$ and $b$ be natural numbers.
 If $b$ is the maximum of a unique $k$-generalized Markov triple up to order, then $b$ is a
 $k$-generalized Markov number.
 

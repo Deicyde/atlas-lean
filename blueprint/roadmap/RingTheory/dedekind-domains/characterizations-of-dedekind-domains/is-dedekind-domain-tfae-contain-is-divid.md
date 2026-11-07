@@ -1,6 +1,6 @@
 # Equivalent characterizations of Dedekind domains
 
-**Equivalent characterizations of Dedekind domains.** For an integral domain $A$, the
+For an integral domain $A$, the
 following are equivalent: (1) $A$ is a Dedekind domain; (2) $A$ is Noetherian and, for all
 ideals $I$ and $J$ of $A$, $I$ divides $J$ if and only if $J \subseteq I$; (3) for every
 nonzero ideal $I$ of $A$ there is an ideal $J$ of $A$ such that $IJ$ is a nonzero principal

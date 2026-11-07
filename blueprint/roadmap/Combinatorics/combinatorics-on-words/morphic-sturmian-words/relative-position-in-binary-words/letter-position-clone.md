@@ -1,6 +1,6 @@
 # Position functions of a cloned word
 
-**Position functions of a cloned word.** Let $w$ be an infinite binary word over the
+Let $w$ be an infinite binary word over the
 letters $a$ and $b$ in which both letters occur infinitely often, let $k$ be a natural number,
 and let $\varphi_k(w)$ be the word whose letter at position $i$ is the letter of $w$ at position
 $\lfloor i/k \rfloor$ (for $k \ge 1$, the word obtained from $w$ by repeating each letter $k$

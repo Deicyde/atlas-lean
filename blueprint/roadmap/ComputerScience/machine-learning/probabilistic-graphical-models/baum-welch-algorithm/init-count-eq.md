@@ -1,6 +1,6 @@
 # The expected starts from forward-backward
 
-**The expected starts from forward-backward.** Let $h$ be a valid hidden Markov model with
+Let $h$ be a valid hidden Markov model with
 finite state set $S$ and finite observation set $O$, let $T \in \mathbb{N}$, and let
 $x_0, \dots, x_{N-1}$ be observation sequences. For a sequence $x_n$ write $\alpha^n_0(s)$ for its
 forward variable at time $0$ and state $s$, $\beta^n_{T,0}(s)$ for its backward variable from

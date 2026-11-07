@@ -1,6 +1,6 @@
 # A singleton board for $2$ but not for $3$
 
-**A singleton board for $2$ but not for $3$.** The Ferrers board with column heights
+The Ferrers board with column heights
 $(1, 2, 2, 3)$ is a singleton board for $m = 2$ and is not a singleton board for $m = 3$.
 
 ## Sources

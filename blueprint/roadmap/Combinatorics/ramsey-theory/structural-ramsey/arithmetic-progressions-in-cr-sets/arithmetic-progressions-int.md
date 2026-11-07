@@ -1,6 +1,6 @@
 # Furstenberg–Glasner theorem on progressions in piecewise syndetic sets
 
-**Furstenberg–Glasner theorem on progressions in piecewise syndetic sets.** If
+If
 $S \subseteq \mathbb{Z}$ is piecewise syndetic, then for every natural number $k$ the set of pairs
 $(a, d) \in \mathbb{Z} \times \mathbb{Z}$ such that $a + i d \in S$ for all $i = 0, 1, \dots, k$
 is piecewise syndetic in $\mathbb{Z} \times \mathbb{Z}$.

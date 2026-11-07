@@ -1,6 +1,6 @@
 # A power of two minus a much smaller positive number is not a power of two
 
-**A power of two minus a much smaller positive number is not a power of two.** Let $p$
+Let $p$
 and $k$ be natural numbers with $k \ge \lceil \log_2 (p + 1) \rceil + 2$. Then $2^k - (p + 1)$
 is not a power of $2$: there is no natural number $m$ with $2^k - (p + 1) = 2^m$.
 

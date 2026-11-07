@@ -1,6 +1,6 @@
 # Odometer limiting curve is the negative Takagi–Landsberg function
 
-**Odometer limiting curve is the negative Takagi–Landsberg function.** Let $q \in \mathbb{C}$
+Let $q \in \mathbb{C}$
 with $1/2 < |q| < 1$ and put $a = 1/(2q)$. Then for almost every dyadic integer $\omega$ with
 respect to the Haar measure on $\mathbb{Z}_2$ there are a sequence $(l_n)$ of natural numbers and
 a sequence $(R_n)$ of complex numbers such that $(l_n)$ is a stabilizing sequence for

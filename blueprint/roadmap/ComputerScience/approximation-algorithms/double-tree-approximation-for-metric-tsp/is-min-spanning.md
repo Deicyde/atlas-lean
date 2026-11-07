@@ -1,6 +1,6 @@
 # Minimum spanning tree of a vertex list
 
-**Minimum spanning tree of a vertex list.** Let $d$ be a cost function on the vertices with
+Let $d$ be a cost function on the vertices with
 values in a linearly ordered additive commutative monoid. The tree with root $r$ and subtree
 forest $F$ is a minimum spanning tree of a list $V$ of vertices for $d$ when it is a spanning tree
 of $V$ (the vertices of $V$ are distinct and the list of $r$ followed by the vertices of $F$ in

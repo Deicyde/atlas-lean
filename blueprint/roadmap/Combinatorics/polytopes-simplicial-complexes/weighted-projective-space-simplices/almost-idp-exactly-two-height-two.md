@@ -1,6 +1,6 @@
 # Exactly two Hilbert basis elements of height two
 
-**Exactly two Hilbert basis elements of height two.** Let $n \ge 1$ and let
+Let $n \ge 1$ and let
 $q(n) = (1^{2n-1}, 3n, 10n, 15n)$, that is, $2n - 1$ ones followed by $3n$, $10n$, $15n$. Write the
 elements of the Hilbert basis of the cone over the weighted projective simplex $\Delta_{(1,q(n))}$
 as pairs $(k, w)$ with height $k \in \mathbb{N}$ and $w \in \mathbb{Z}^{2n+2}$. Exactly two elements

@@ -1,6 +1,6 @@
 # Translation between bi-brackets and the Schlesinger–Zudilin model
 
-**Translation between bi-brackets and the Schlesinger–Zudilin model.** Let $r$ be a natural
+Let $r$ be a natural
 number, let $g(X_1, \dots, X_r; Y_1, \dots, Y_r)$ be the generating series of bi-brackets of depth
 $r$ and $s(X_1, \dots, X_r; Y_1, \dots, Y_r)$ the generating series of Schlesinger–Zudilin qMZVs of
 depth $r$, both power series in the $2r$ variables over $\mathbb{Q}[[q]]$. For a power series $Z$

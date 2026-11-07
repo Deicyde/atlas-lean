@@ -1,6 +1,6 @@
 # TRIP-Stern tree
 
-**TRIP-Stern tree.** A TRIP-Stern tree with node values in a type $\alpha$ consists of a root
+A TRIP-Stern tree with node values in a type $\alpha$ consists of a root
 seed in $\alpha$ together with two maps from $\alpha$ to $\alpha$, the left transition and the
 right transition. No condition is imposed on the seed or on the two transitions; in the source
 the seed is $(1,1,1)$ and the left and right transitions are induced by the maps $F_0$ and $F_1$

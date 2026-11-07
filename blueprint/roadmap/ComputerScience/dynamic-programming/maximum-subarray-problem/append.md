@@ -1,6 +1,6 @@
 # Maximum subarray sum of a concatenation
 
-**Maximum subarray sum of a concatenation.** Let $\alpha$ be an additive monoid with a linear
+Let $\alpha$ be an additive monoid with a linear
 order such that $b \le c$ implies $a + b \le a + c$ and $b + a \le c + a$, and let $L$ and $R$ be
 lists over $\alpha$. Suppose that $l$ is the maximum sum of a nonempty contiguous run of $L$, $r$
 is the maximum sum of a nonempty contiguous run of $R$, $s$ is the maximum sum of a nonempty

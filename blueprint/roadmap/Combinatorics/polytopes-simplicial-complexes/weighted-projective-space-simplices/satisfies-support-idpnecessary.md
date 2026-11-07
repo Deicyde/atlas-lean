@@ -1,6 +1,6 @@
 # Support form of the IDP necessary condition
 
-**Support form of the IDP necessary condition.** Let $r = (r_1, \dots, r_d)$ and
+Let $r = (r_1, \dots, r_d)$ and
 $x = (x_1, \dots, x_d)$ be tuples of natural numbers. The pair $(r, x)$ satisfies the support
 form of the necessary condition when, for every index $j$,
 $1 + \sum_{i=1}^{d} x_i (r_i \bmod r_j) = r_j$, where $r_i \bmod r_j$ is the remainder of $r_i$

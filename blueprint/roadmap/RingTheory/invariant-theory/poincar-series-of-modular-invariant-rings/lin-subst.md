@@ -1,6 +1,6 @@
 # Linear substitution by a matrix
 
-**Linear substitution by a matrix.** For natural numbers $p$ and $n$ and an $n \times n$ matrix
+For natural numbers $p$ and $n$ and an $n \times n$ matrix
 $g$ over $\mathbb{Z}/p\mathbb{Z}$, the linear substitution by $g$ is the
 $\mathbb{Z}/p\mathbb{Z}$-algebra endomorphism of the polynomial ring
 $(\mathbb{Z}/p\mathbb{Z})[x_0, \dots, x_{n-1}]$ that sends each variable $x_i$ to

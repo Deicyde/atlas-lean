@@ -1,6 +1,6 @@
 # Ramanujan's series $\sum_{k \ge 1} 1/((3k)^3 - 3k) = (\log 3 - 1)/2$
 
-**Ramanujan's series $\sum_{k \ge 1} 1/((3k)^3 - 3k) = (\log 3 - 1)/2$.** The series
+The series
 
 $$\sum_{k=1}^{\infty} \frac{1}{(3k)^3 - 3k}$$
 

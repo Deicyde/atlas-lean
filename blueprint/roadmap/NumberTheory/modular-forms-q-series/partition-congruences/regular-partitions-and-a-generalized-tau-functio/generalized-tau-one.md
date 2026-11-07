@@ -1,6 +1,6 @@
 # The generalized tau function at $1$
 
-**The generalized tau function at $1$.** For every integer $k$, $\tau_k(1) = 1$.
+For every integer $k$, $\tau_k(1) = 1$.
 
 ## Sources
 

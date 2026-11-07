@@ -1,6 +1,6 @@
 # Nine divides $n$ when $n > 3$ and $3n$ divides $2^n + 1$
 
-**Nine divides $n$ when $n > 3$ and $3n$ divides $2^n + 1$.** Let $n > 3$ be a natural
+Let $n > 3$ be a natural
 number. If $3n$ divides $2^n + 1$, then $9$ divides $n$.
 
 For odd $n$ the hypothesis says that $n$ divides the integer $(2^n + 1)/3$, which is the form

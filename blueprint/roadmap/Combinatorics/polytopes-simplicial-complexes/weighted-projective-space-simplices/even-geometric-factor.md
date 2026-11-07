@@ -1,6 +1,6 @@
 # Even geometric factor
 
-**Even geometric factor.** For a natural number $n$, the even geometric factor is the
+For a natural number $n$, the even geometric factor is the
 polynomial $\sum_{k=0}^{n-1} z^{2k} = 1 + z^2 + \dots + z^{2n-2}$ with integer coefficients;
 for $n = 0$ it is the zero polynomial.
 

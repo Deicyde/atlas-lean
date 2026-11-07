@@ -1,6 +1,6 @@
 # Eventual strict upper bound for $R_h^{-1}(k)$ and lower bound for $R_h(n)$
 
-**Eventual strict upper bound for $R_h^{-1}(k)$ and lower bound for $R_h(n)$.** Let $h \ge 2$.
+Let $h \ge 2$.
 Write $R_h(n)$ for the largest size of a $B_h$-set contained in $\{1, \dots, n\}$ and
 $R_h^{-1}(k)$ for the least $n$ such that $\{1, \dots, n\}$ contains a $B_h$-set with $k$
 elements. Then $R_h^{-1}(k) < k^h + 2^h k^{h - 19/40}$ for all sufficiently large natural

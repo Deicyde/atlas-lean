@@ -1,6 +1,6 @@
 # Monochromatic sets that are large relative to their gap size
 
-**Monochromatic sets that are large relative to their gap size.** Let $r, t \in \mathbb{N}$ with
+Let $r, t \in \mathbb{N}$ with
 $t \ge 1$, and let $f : \mathbb{N} \to \mathbb{N}$ be nondecreasing. There is $B \in \mathbb{N}$
 such that for every coloring of $\mathbb{N}^t$ with $r$ colors there is a finite monochromatic set
 $S \subseteq [1, B]^t$ with $|S| > f(\operatorname{gs}(S))$, where $\operatorname{gs}(S)$ is the gap

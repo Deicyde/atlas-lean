@@ -1,6 +1,6 @@
 # Gamma representation of the Stirling combination of generalized harmonic numbers
 
-**Gamma representation of the Stirling combination of generalized harmonic numbers.** Let
+Let
 $s > 0$ be real and let $X_s$ be a random variable with the Gamma distribution
 $\mathrm{Gamma}(s, 1)$ of shape $s$ and rate $1$. Write $[a, b]$ for the unsigned Stirling number
 of the first kind, the number of permutations of $a$ elements with exactly $b$ cycles, and, for

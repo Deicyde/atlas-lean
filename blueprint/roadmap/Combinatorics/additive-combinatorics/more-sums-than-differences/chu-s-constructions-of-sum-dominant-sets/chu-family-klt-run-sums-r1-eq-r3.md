@@ -1,6 +1,6 @@
 # Two families of runs with the same sums (Proposition 1)
 
-**Two families of runs with the same sums (Proposition 1).** Let $k$, $l$, $t$ be natural
+Let $k$, $l$, $t$ be natural
 numbers, let $M^k$ be the block $1, 4, \dots, 4, 3$ with $k$ fours, and let $B$ be the
 concatenation of $l$ copies of $M^k$. For $j \ge 1$ let $R_1(j)$ be the sequence $1, 1$ followed
 by $j$ copies of $2, B, 1, 1$, and let $R_3(j)$ be the sequence $2$ followed by $j$ copies of

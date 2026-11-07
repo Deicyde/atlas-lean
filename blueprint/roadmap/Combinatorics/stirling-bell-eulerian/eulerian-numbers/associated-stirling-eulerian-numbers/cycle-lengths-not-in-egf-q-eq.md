@@ -1,6 +1,6 @@
 # Permutations avoiding a prescribed set of cycle lengths
 
-**Permutations avoiding a prescribed set of cycle lengths.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra, $x, q \in R$, and let $\mathcal{R}$ be a finite set of integers, each at
 least $2$. For a permutation $\sigma$ let $e(\sigma)$ be its number of excedances (indices $i$
 with $\sigma(i) > i$) and $c(\sigma)$ its number of cycles, fixed points included; for

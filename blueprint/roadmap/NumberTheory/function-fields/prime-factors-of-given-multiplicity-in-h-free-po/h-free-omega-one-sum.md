@@ -1,6 +1,6 @@
 # The prime sum $T_h$
 
-**The prime sum $T_h$.** Let $F$ be a finite field with $q$ elements, let $h$ be a natural
+Let $F$ be a finite field with $q$ elements, let $h$ be a natural
 number, and write $|P| = q^{\deg P}$ for a monic irreducible polynomial $P$ over $F$. The prime
 sum $T_h$ is the real number
 

@@ -1,6 +1,6 @@
 # Entries of the powers of the companion matrix $Q_p$
 
-**Entries of the powers of the companion matrix $Q_p$.** Let $p \ge 2$ and $n$ be natural
+Let $p \ge 2$ and $n$ be natural
 numbers, and index the rows and columns of the $(2p+1) \times (2p+1)$ companion matrix $Q_p$ by
 $0, 1, \dots, 2p$. Then for all indices $a$ and $b$, the entry $(a, b)$ of $Q_p^n$ equals
 $A_p(n + 1 - b)$ if $a = 0$, equals $B_p(n - p + 1 + a - b)$ if $1 \le a \le p - 1$, and equals

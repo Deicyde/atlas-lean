@@ -1,6 +1,6 @@
 # Terms of the coconut tree count
 
-**Terms of the coconut tree count.** For natural numbers $x$ and $y$, the term $A(x, y)$ is
+For natural numbers $x$ and $y$, the term $A(x, y)$ is
 defined by $A(x, 0) = C_{x-1}$, $A(x, 1) = C_{x-1} - C_{x-2}$ and, for $y \ge 2$,
 
 $$A(x, y) = \sum_{i=y+1}^{x} B(x - y - 1, x - i) \, |\mathrm{SArith}(CT(i - y, y))|,$$

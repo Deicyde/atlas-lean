@@ -1,6 +1,6 @@
 # Not every axiomatizable formation of groups is a variety
 
-**Not every axiomatizable formation of groups is a variety.** The Gaglione–Spellman question
+The Gaglione–Spellman question
 (Kourovka 14.32) has a negative answer: it is not the case that every first-order axiomatizable
 formation of groups is a variety, that is, some class of groups is a formation and is first-order
 axiomatizable but is not a variety.

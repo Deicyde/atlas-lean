@@ -1,6 +1,6 @@
 # Higher-dimensional continuous Turán numbers are monotone under containment
 
-**Higher-dimensional continuous Turán numbers are monotone under containment.** Let
+Let
 $P, Q \subseteq \mathbb{R}^d$. If $Q$ contains $P$, then
 $\mathrm{opx}(n, P, d) \le \mathrm{opx}(n, Q, d)$ for every real number $n$.
 

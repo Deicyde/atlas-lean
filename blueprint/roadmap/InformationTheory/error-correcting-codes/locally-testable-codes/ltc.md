@@ -1,6 +1,6 @@
 # Locally testable code
 
-**Locally testable code.** Let $C \subseteq \mathbb{F}_2^n$ be a binary code, let $q$ be a
+Let $C \subseteq \mathbb{F}_2^n$ be a binary code, let $q$ be a
 natural number and let $\kappa \ge 0$ be a real number. A $\kappa$-local tester for $C$ with
 $q$ queries consists of a probability distribution on the subsets
 $S \subseteq \{0, 1, \dots, n - 1\}$ with at most $q$ elements, together with, for each such

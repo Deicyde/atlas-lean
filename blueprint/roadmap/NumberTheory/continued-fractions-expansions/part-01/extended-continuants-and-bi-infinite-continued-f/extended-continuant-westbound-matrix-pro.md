@@ -1,6 +1,6 @@
 # Westbound matrix product of extended continuants
 
-**Westbound matrix product of extended continuants.** Let $x : \mathbb{Z} \to \mathbb{Z}$ be a
+Let $x : \mathbb{Z} \to \mathbb{Z}$ be a
 bi-infinite integer sequence, write $K_a(x)_b$ for the extended continuant of order $a$ with start
 index $b$, and put $M_i = \begin{pmatrix} 0 & 1 \\ 1 & -x_{-i} \end{pmatrix}$. Then for every
 integer $n \ge 1$,

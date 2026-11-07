@@ -1,6 +1,6 @@
 # Odd-argument recurrence for the divide-and-conquer D-node count
 
-**Odd-argument recurrence for the divide-and-conquer D-node count.** For every integer
+For every integer
 $m > 0$, the divide-and-conquer D-node count $\delta$ satisfies
 $\delta(2m+1) = \delta(m) + \delta(m+1) + 1$.
 

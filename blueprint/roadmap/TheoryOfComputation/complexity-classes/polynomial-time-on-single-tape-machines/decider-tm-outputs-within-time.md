@@ -1,6 +1,6 @@
 # The decider within time
 
-**The decider within time.** Let $M$ be a finite multi-stack machine with finite stack
+Let $M$ be a finite multi-stack machine with finite stack
 alphabets, whose input alphabet is identified with the bits by $e$ and whose output alphabet by
 $e_1$, and let $C$ be the emulation constant of $M$. Let $w$ be a bit list, $b$ a bit and $t$ a
 natural number. Suppose $M$, started with its input stack holding the bits of $w$ in reverse order

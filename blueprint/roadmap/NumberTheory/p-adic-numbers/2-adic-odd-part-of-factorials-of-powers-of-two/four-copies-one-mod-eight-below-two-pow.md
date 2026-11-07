@@ -1,6 +1,6 @@
 # Four copies of the residues $1 \bmod 8$ below $2^e$
 
-**Four copies of the residues $1 \bmod 8$ below $2^e$.** For a natural number $e$, this is the
+For a natural number $e$, this is the
 multiset of integers containing exactly four copies of each natural number $n < 2^e$ with
 $n \equiv 1 \pmod 8$, that is, of each of $1, 9, \dots, 2^e - 7$ when $e \ge 3$.
 

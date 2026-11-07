@@ -1,6 +1,6 @@
 # Carathéodory extension theorem
 
-**Carathéodory extension theorem.** Let $\mathcal{A}$ be an algebra of sets on $\alpha$ and
+Let $\mathcal{A}$ be an algebra of sets on $\alpha$ and
 let $\mu_0$ be an additive content on $\mathcal{A}$ with values in $[0, \infty]$ that is
 $\sigma$-subadditive: whenever $s_0, s_1, \dots \in \mathcal{A}$ and
 $\bigcup_i s_i \in \mathcal{A}$, we have $\mu_0(\bigcup_i s_i) \le \sum_i \mu_0(s_i)$. Suppose

@@ -1,6 +1,6 @@
 # Generating function of permutations with cycle lengths at most $r$ and $k$ cycles
 
-**Generating function of permutations with cycle lengths at most $r$ and $k$ cycles.** Let
+Let
 $R$ be a commutative $\mathbb{Q}$-algebra, $x \in R$, and let $r, k$ be natural numbers with
 $r \ge 2$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$ for its number of
 excedances (indices $i$ with $\sigma(i) > i$) and $c(\sigma)$ for its number of cycles, fixed

@@ -1,6 +1,6 @@
 # Japanese theorem for concyclic quadrilaterals
 
-**Japanese theorem for concyclic quadrilaterals.** Let $A, B, C, D$ be pairwise distinct
+Let $A, B, C, D$ be pairwise distinct
 points of the Euclidean plane $\mathbb{R}^2$ lying on a circle of positive radius, such that the
 diagonals $AC$ and $BD$, as closed segments, intersect; so $ABCD$ is a convex cyclic
 quadrilateral. Let $r_1, r_2, r_3, r_4 > 0$, and suppose that for each of the triangles $ABC$,

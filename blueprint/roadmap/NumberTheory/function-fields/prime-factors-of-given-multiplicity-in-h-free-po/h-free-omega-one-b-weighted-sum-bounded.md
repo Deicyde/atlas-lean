@@ -1,6 +1,6 @@
 # Weighted coefficient bound for $B_{1,S_h}$
 
-**Weighted coefficient bound for $B_{1,S_h}$.** Let $F$ be a finite field with $q$ elements,
+Let $F$ be a finite field with $q$ elements,
 let $h \ge 2$ be a natural number, and let $A$ and $\sigma > 1/2$ be real numbers. Let $S_h$ be
 the set of $h$-free monic polynomials over $F$ (those divisible by no $P^h$ with $P$ monic
 irreducible) and $\omega_1(f)$ the number of distinct monic irreducible factors of $f$ of

@@ -1,6 +1,6 @@
 # Mazur's mixed partial derivatives claim
 
-**Mazur's mixed partial derivatives claim.** This is the following statement, the claim of
+This is the following statement, the claim of
 Mazur's Problem 66 from the Scottish Book. Let $Q = (0, 1) \times (0, 1)$ be the open unit square.
 For every function $f : \mathbb{R}^2 \to \mathbb{R}$ such that, at every point $(x, y) \in Q$, the
 functions $s \mapsto f(s, y)$ and $s \mapsto f(x, s)$ are differentiable at $x$ and at $y$

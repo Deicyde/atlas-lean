@@ -1,6 +1,6 @@
 # Asymptotics of the logarithmic Poisson series
 
-**Asymptotics of the logarithmic Poisson series.** There are real constants $C > 0$ and
+There are real constants $C > 0$ and
 $x_0$ such that for every real $x \ge x_0$ the series $\sum_{k=1}^{\infty} x^k \log(k + 1) / k!$
 has a sum $S$ satisfying
 

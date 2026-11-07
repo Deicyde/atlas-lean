@@ -1,6 +1,6 @@
 # White's lower bound for the minimum-overlap constant
 
-**White's lower bound for the minimum-overlap constant.** The continuous Erdős minimum-overlap
+The continuous Erdős minimum-overlap
 constant $C_{1b}$ satisfies $0.379005 \le C_{1b}$.
 
 ## Sources

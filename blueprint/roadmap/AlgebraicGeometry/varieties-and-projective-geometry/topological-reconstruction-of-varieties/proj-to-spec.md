@@ -1,6 +1,6 @@
 # Structure morphism of a projective spectrum
 
-**Structure morphism of a projective spectrum.** Let $R$ be a commutative ring and $A$ a
+Let $R$ be a commutative ring and $A$ a
 commutative $R$-algebra graded by $R$-submodules $\mathcal{A}_0, \mathcal{A}_1, \dots$. The
 structure morphism $\operatorname{Proj} \mathcal{A} \to \operatorname{Spec} R$ is the canonical
 morphism $\operatorname{Proj} \mathcal{A} \to \operatorname{Spec} \mathcal{A}_0$ followed by the

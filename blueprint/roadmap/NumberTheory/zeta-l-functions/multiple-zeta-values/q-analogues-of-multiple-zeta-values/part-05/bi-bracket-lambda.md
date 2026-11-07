@@ -1,6 +1,6 @@
 # Bachmann's coefficients
 
-**Bachmann's coefficients.** For natural numbers $a$, $b$ and $j$,
+For natural numbers $a$, $b$ and $j$,
 
 $$\lambda_{a,b}^j = (-1)^{b-1} \binom{a + b - j - 1}{a - j} \frac{B_{a+b-j}}{(a + b - j)!},$$
 

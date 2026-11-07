@@ -1,6 +1,6 @@
 # Integer values of the generalized Fibonacci generating function at rationals
 
-**Integer values of the generalized Fibonacci generating function at rationals.** Let $a$ and
+Let $a$ and
 $b$ be positive integers with $b \mid a$, and let $F_i(x) \in \mathbb{Z}[x]$ be the polynomials
 with $F_0 = 0$, $F_1 = 1$ and $F_{i+2} = ax\,F_{i+1} + b\,F_i$ for all $i \ge 0$. For a rational
 number $q$, the number $q / (1 - aq - bq^2)$ is an integer if and only if

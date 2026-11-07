@@ -1,6 +1,6 @@
 # Feasible directed disjoint paths instances
 
-**Feasible directed disjoint paths instances.** Let $(n, A, P)$ be an instance of DIRECTED
+Let $(n, A, P)$ be an instance of DIRECTED
 DISJOINT PATHS whose list of source-target pairs is
 $P = ((s_0, t_0), \dots, (s_{k-1}, t_{k-1}))$. The instance is feasible when there are lists
 $\pi_0, \dots, \pi_{k-1}$ of natural numbers such that, for every $p < k$, the list $\pi_p$ is

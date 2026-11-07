@@ -1,6 +1,6 @@
 # Fourth-power sum of coordinate differences over a box
 
-**Fourth-power sum of coordinate differences over a box.** Let $p$ be a prime and $N$ a
+Let $p$ be a prime and $N$ a
 natural number, and let $B(p, N)$ be the set of integer vectors $a = (a_1, \dots, a_{p-1})$
 with $|a_i| \le N$ for all $i$. Then
 

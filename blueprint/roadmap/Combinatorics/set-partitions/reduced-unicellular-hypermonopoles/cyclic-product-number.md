@@ -1,6 +1,6 @@
 # Cyclic product numbers
 
-**Cyclic product numbers.** For natural numbers $n$ and $k$, write $c(m, j)$ for the unsigned
+For natural numbers $n$ and $k$, write $c(m, j)$ for the unsigned
 Stirling numbers of the first kind. The cyclic product number $H(n, k)$ is the quotient
 $c(n + 1, k) / \binom{n + 1}{2}$, rounded down to a natural number, when $n + k$ is even
 (equivalently, $n - k$ is even), and $0$ when $n + k$ is odd. Division by zero gives $0$, so

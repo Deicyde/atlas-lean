@@ -1,6 +1,6 @@
 # Partitions into parts $\equiv \pm a \pmod{d+3}$ by largest part and number of parts
 
-**Partitions into parts $\equiv \pm a \pmod{d+3}$ by largest part and number of parts.** For
+For
 natural numbers $d$, $a$, $\alpha$ and $\lambda$, $\ell_d^{(a)}(\alpha, \lambda)$ is the number of
 nonempty partitions into parts congruent to $a$ or $-a$ modulo $d + 3$ with largest part $\alpha$
 and exactly $\lambda$ parts (so $\ell_d^{(a)}(0, 0) = 0$: the empty partition is not counted).

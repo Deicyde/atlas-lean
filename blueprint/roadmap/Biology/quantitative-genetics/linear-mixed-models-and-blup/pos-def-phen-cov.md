@@ -1,3 +1,3 @@
 # Positive definiteness of the phenotypic covariance
 
-**Positive definiteness of the phenotypic covariance.** `V = Z G Zᵀ + R` is positive definite.
+`V = Z G Zᵀ + R` is positive definite.

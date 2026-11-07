@@ -1,6 +1,6 @@
 # ST-connectivity is NL-complete
 
-**ST-connectivity is NL-complete.** Directed $s$-$t$ connectivity is in NL, and every
+Directed $s$-$t$ connectivity is in NL, and every
 decision problem in NL is log-space many-one reducible to directed $s$-$t$ connectivity.
 
 ## Sources

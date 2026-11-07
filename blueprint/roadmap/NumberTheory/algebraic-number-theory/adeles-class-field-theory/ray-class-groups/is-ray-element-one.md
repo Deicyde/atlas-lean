@@ -1,6 +1,6 @@
 # Elements congruent to one modulo a modulus
 
-**Elements congruent to one modulo a modulus.** Let $\mathfrak m$ be a modulus of a number field
+Let $\mathfrak m$ be a modulus of a number field
 $K$, with finite part the nonzero ideal $\mathfrak m_0$ of $\mathcal O_K$ and infinite part the
 finite set $\mathfrak m_\infty$ of real places of $K$. For a nonzero prime ideal $\mathfrak p$ of
 $\mathcal O_K$, write $v_{\mathfrak p}(I)$ for the exponent of $\mathfrak p$ in the factorization

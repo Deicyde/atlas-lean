@@ -1,6 +1,6 @@
 # Condition (etar) on Jacobi symbols of $M_n$
 
-**Condition (etar) on Jacobi symbols of $M_n$.** Let $s^-$, $s^+$ and $n$ be natural
+Let $s^-$, $s^+$ and $n$ be natural
 numbers and let $M_n = 2^n - 1$. For a natural number $s$ write $\left(\frac{M_n}{s}\right)$ for
 the Jacobi symbol, the product of the Legendre symbols $\left(\frac{M_n}{p}\right)$ over the
 prime factors $p$ of $s$ counted with multiplicity (so it is $1$ for $s = 0$ and $s = 1$).

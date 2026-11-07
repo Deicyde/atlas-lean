@@ -1,6 +1,6 @@
 # Number of monic polynomials of bounded degree
 
-**Number of monic polynomials of bounded degree.** Let $F$ be a finite field with $q$
+Let $F$ be a finite field with $q$
 elements and let $N$ be a natural number. The number of monic polynomials in $F[T]$ of degree at
 most $N$ is $(q^{N+1} - 1)/(q - 1)$.
 

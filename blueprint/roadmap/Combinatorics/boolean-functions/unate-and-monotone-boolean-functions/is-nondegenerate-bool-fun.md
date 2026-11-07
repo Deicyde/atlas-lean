@@ -1,6 +1,6 @@
 # Non-degenerate Boolean functions
 
-**Non-degenerate Boolean functions.** An $n$-variable Boolean function $f$ is non-degenerate
+An $n$-variable Boolean function $f$ is non-degenerate
 when it is non-degenerate on every variable $x_i$, $1 \le i \le n$: for each $i$ there is an input
 $x \in \{0,1\}^n$ with $f(x) \ne f(x')$, where $x'$ is $x$ with its $i$-th coordinate negated.
 For $n = 0$ the condition is vacuous, so both $0$-variable (constant) functions are

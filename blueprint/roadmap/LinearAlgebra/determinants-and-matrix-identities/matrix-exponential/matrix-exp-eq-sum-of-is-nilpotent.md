@@ -1,6 +1,6 @@
 # Exponential of a nilpotent matrix
 
-**Exponential of a nilpotent matrix.** If $A$ is a nilpotent complex square matrix indexed by a
+If $A$ is a nilpotent complex square matrix indexed by a
 finite set, then there is a natural number $m$ such that
 $e^A = \sum_{k=0}^{m-1} \frac{1}{k!} A^k$, where $e^A$ is the matrix exponential.
 

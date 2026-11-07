@@ -1,6 +1,6 @@
 # Degenerate harmonic numbers of rank zero
 
-**Degenerate harmonic numbers of rank zero.** For all real $\lambda$ and $\alpha$ and every
+For all real $\lambda$ and $\alpha$ and every
 natural number $n$, the generalized degenerate harmonic number of rank $0$ equals the generalized
 degenerate harmonic number: $H_\lambda(n, 0, \alpha) = H_{n,\lambda}(\alpha)$.
 

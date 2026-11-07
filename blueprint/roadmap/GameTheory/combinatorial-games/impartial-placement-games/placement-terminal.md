@@ -1,6 +1,6 @@
 # Terminal positions of a placement game
 
-**Terminal positions of a placement game.** Let $\alpha$ be a finite set of cells and let $E$
+Let $\alpha$ be a finite set of cells and let $E$
 be a predicate on subsets of $\alpha$, the condition under which play has ended. A position
 $S \subseteq \alpha$ (the set of occupied cells) is terminal when $E(S)$ holds or $S = \alpha$:
 play has ended, or every cell is occupied. These are the positions with no options.

@@ -1,6 +1,6 @@
 # The additive group of the reals embeds in the infinite symmetric group
 
-**The additive group of the reals embeds in the infinite symmetric group.** There is an injective
+There is an injective
 group homomorphism from the additive group $(\mathbb{R}, +)$ of real numbers into the group
 $S_\infty$ of all permutations of the natural numbers.
 

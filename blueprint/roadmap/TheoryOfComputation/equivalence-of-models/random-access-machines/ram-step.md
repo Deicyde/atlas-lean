@@ -1,6 +1,6 @@
 # One step of a RAM machine
 
-**One step of a RAM machine.** Let $P = (P_0, \dots, P_{\ell-1})$ be a program of length
+Let $P = (P_0, \dots, P_{\ell-1})$ be a program of length
 $\ell$ and $s$ a state with program counter $p$, accumulator $a$ and register contents $r$. If
 $p \ge \ell$, the step leaves $s$ unchanged. Otherwise it executes $P_p$, where $v$ denotes
 the value of the instruction's operand in $s$: a load sets the accumulator to $v$, an add sets

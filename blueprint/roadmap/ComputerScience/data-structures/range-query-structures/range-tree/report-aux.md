@@ -1,6 +1,6 @@
 # Accumulator range report
 
-**Accumulator range report.** For integers $a$, $b$ and a list $\mathit{acc}$ of integers, the
+For integers $a$, $b$ and a list $\mathit{acc}$ of integers, the
 accumulator range report of a range tree for $[a, b]$ starting from $\mathit{acc}$ is defined by
 recursion on the tree. The empty tree returns $\mathit{acc}$. A leaf with value $x$ returns $x$
 followed by $\mathit{acc}$ if $a \le x \le b$, and $\mathit{acc}$ otherwise. A node with cached

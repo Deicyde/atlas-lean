@@ -1,6 +1,6 @@
 # Dyadic upper half interval
 
-**Dyadic upper half interval.** For a natural number $e$, $I_e$ is the finite set of natural
+For a natural number $e$, $I_e$ is the finite set of natural
 numbers $i$ with $2^{e-1} < i \le 2^e$, where $e - 1$ is truncated subtraction, so that $I_0$ is
 empty.
 

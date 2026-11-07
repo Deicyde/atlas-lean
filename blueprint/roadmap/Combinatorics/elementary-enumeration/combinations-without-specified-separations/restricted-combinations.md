@@ -1,6 +1,6 @@
 # Restricted combinations
 
-**Restricted combinations.** For a finite set $Q$ of natural numbers and $n, k \ge 0$, the
+For a finite set $Q$ of natural numbers and $n, k \ge 0$, the
 restricted combinations are the $k$-element subsets $s$ of $\{1, \dots, n\}$ such that
 $b - a \notin Q$ for all $a, b \in s$ with $a < b$. Since only distinct elements are compared,
 whether $0 \in Q$ makes no difference.

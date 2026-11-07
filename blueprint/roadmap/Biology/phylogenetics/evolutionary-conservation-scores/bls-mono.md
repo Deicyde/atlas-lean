@@ -1,4 +1,4 @@
 # Monotonicity
 
-**Monotonicity**: with nonnegative edge lengths, more conserving species never lower the
+With nonnegative edge lengths, more conserving species never lower the
 BLS.

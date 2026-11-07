@@ -1,6 +1,6 @@
 # Period of the base-$p$ expansion
 
-**Period of the base-$p$ expansion.** For a natural number $p$ and a rational number $x$, let
+For a natural number $p$ and a rational number $x$, let
 $x_D$ be the denominator of $x$ in lowest terms divided by the largest power of $p$ dividing it.
 The period $L_x$ of the base-$p$ expansion of $x$ is the multiplicative order of $p$ modulo $x_D$:
 the least $n \ge 1$ with $p^n \equiv 1 \pmod{x_D}$, or $0$ if there is no such $n$. For prime $p$

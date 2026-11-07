@@ -1,6 +1,6 @@
 # Differences along a Trithoff row
 
-**Differences along a Trithoff row.** Let $T_0 = T_1 = 0$, $T_2 = 1$ and
+Let $T_0 = T_1 = 0$, $T_2 = 1$ and
 $T_{m+3} = T_{m+2} + T_{m+1} + T_m$ be the Tribonacci numbers, and for a finite word
 $w = (w_0, \dots, w_{\ell-1})$ of natural-number digits, listed from the least significant
 digit, let $[w]_T = \sum_{i=0}^{\ell-1} w_i T_{i+3}$ be its Tribonacci value. Let

@@ -1,6 +1,6 @@
 # Rabin–Karp string matching
 
-**Rabin–Karp string matching.** Given a base $d$, a modulus $q > 0$, a pattern
+Given a base $d$, a modulus $q > 0$, a pattern
 $P = p_0 \dots p_{m-1}$ and a text $T = t_0 \dots t_{n-1}$, both lists of natural numbers, this
 returns the list, in increasing order, of all shifts $s$ with $s + m \le n$ and $t_{s+k} = p_k$
 for every $k < m$. For $m \ge 1$ it computes by Horner's rule the residues modulo $q$ of $P$ and

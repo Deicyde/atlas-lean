@@ -1,6 +1,6 @@
 # Spivey's recurrence for Bell numbers
 
-**Spivey's recurrence for Bell numbers.** For all natural numbers $n$ and $m$,
+For all natural numbers $n$ and $m$,
 
 $$B_{n+m} = \sum_{k=0}^{n} \sum_{j=0}^{m} j^{n-k} \, S(m, j) \binom{n}{k} B_k,$$
 

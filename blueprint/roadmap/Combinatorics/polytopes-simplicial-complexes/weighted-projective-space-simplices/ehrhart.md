@@ -1,6 +1,6 @@
 # Ehrhart function
 
-**Ehrhart function.** For a finite index set $\iota$, a set $P \subseteq \mathbb{R}^\iota$
+For a finite index set $\iota$, a set $P \subseteq \mathbb{R}^\iota$
 and a natural number $t$, the Ehrhart function $L_P(t)$ is the number of integer vectors
 $x \in \mathbb{Z}^\iota$ lying in the dilate $tP = \{t y : y \in P\}$, with the convention that
 $L_P(t) = 0$ when there are infinitely many such vectors.

@@ -1,6 +1,6 @@
 # Counting primes of semiprime index
 
-**Counting primes of semiprime index.** A semiprime is a product of exactly two primes counted
+A semiprime is a product of exactly two primes counted
 with multiplicity. Let $p_i$ denote the $i$th prime ($p_1 = 2$), and for real $x$ let $N_{1,2}(x)$
 be the number of primes $p_i \le x$ whose index $i$ is a semiprime. Let $\beta$ be the
 Meissel–Mertens constant, $\gamma$ the Euler–Mascheroni constant, $\log$ the natural logarithm, and

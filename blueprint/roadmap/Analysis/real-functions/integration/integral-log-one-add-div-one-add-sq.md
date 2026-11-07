@@ -1,6 +1,6 @@
 # Serret's integral
 
-**Serret's integral.** With $\log$ the natural logarithm,
+With $\log$ the natural logarithm,
 
 $$\int_0^1 \frac{\log(1+x)}{1+x^2}\,dx = \frac{\pi}{8}\log 2.$$
 

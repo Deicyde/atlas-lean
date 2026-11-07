@@ -1,6 +1,6 @@
 # Birmajer–Gil–Weiner formula for colored polygon partitions
 
-**Birmajer–Gil–Weiner formula for colored polygon partitions.** Let
+Let
 $\gamma = (\gamma_1, \gamma_2, \dots)$ be a sequence of natural numbers and let $p_{n,k}(\gamma)$
 be the number of partitions of a rooted convex $(n+2)$-gon by $k - 1$ noncrossing diagonals into
 $k$ polygons in which each $(j+2)$-gon carries one of $\gamma_j$ colors. For all natural numbers

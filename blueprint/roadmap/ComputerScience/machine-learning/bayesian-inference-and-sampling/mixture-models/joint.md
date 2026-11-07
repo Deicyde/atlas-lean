@@ -1,6 +1,6 @@
 # Joint distribution of the Bernoulli mixture
 
-**Joint distribution of the Bernoulli mixture.** For valid parameters $\theta$ of a mixture of
+For valid parameters $\theta$ of a mixture of
 $K$ products of $d$ Bernoulli distributions, with mixing weights $\pi_k$ and success probabilities
 $p_{kj}$, the joint probability of a binary vector $x \in \{0, 1\}^d$ and a component $k$ is
 

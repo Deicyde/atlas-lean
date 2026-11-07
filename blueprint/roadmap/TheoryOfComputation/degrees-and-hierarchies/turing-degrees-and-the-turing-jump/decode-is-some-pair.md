@@ -1,6 +1,6 @@
 # The definedness predicate, by cases on the tag
 
-**The definedness predicate, by cases on the tag.** Write $\langle a, b \rangle$ for the
+Write $\langle a, b \rangle$ for the
 pairing bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ of the Gödel numbering, and say
 that a natural number decodes when the computable decoder returns an oracle code on it. Let $t$
 and $p$ be natural numbers and write $p = \langle p_1, p_2 \rangle$. Then $\langle t, p \rangle$

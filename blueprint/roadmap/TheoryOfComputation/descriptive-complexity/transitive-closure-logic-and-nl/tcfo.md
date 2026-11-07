@@ -1,6 +1,6 @@
 # Formulas of first-order logic with transitive closure
 
-**Formulas of first-order logic with transitive closure.** FO + TC formulas, with variables
+FO + TC formulas, with variables
 and relation symbols indexed by natural numbers, are built from equations between two variables
 and relation symbols applied to lists of variables by negation, conjunction, disjunction,
 existential quantification (which binds variable $0$, de Bruijn style) and transitive closure

@@ -1,6 +1,6 @@
 # Classification of compact connected $1$-manifolds with boundary
 
-**Classification of compact connected $1$-manifolds with boundary.** Every compact, connected,
+Every compact, connected,
 Hausdorff, second-countable smooth $1$-manifold $M$ with (possibly empty) boundary is
 diffeomorphic either to the circle $S^1$ or to the closed interval $[0, 1]$.
 

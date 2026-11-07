@@ -1,6 +1,6 @@
 # Elliott–Halberstam conjecture (dyadic form)
 
-**Elliott–Halberstam conjecture (dyadic form).** The Elliott–Halberstam estimate at level
+The Elliott–Halberstam estimate at level
 $\theta$ holds for every real number $\theta$ with $0 < \theta < 1$.
 
 ## Sources

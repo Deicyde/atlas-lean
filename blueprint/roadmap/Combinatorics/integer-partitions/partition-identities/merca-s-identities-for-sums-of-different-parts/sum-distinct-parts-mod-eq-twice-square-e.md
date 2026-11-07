@@ -1,6 +1,6 @@
 # Twice-square sum of $a_{r,m}$ and distinct odd parts
 
-**Twice-square sum of $a_{r,m}$ and distinct odd parts.** Let $m, r, n$ be natural numbers
+Let $m, r, n$ be natural numbers
 with $r < m$. Write $a_{r,m}(k)$ for the sum of the different parts congruent to $r$ modulo $m$
 in all partitions of $k$, and $q_{\mathrm{odd}}(k)$ for the number of partitions of $k$ into
 distinct odd parts. Then

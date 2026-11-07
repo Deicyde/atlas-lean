@@ -1,6 +1,6 @@
 # Balancing numbers that are concatenations of two repdigits
 
-**Balancing numbers that are concatenations of two repdigits.** For every natural number $k$,
+For every natural number $k$,
 if the balancing number $B_k$ is a concatenation of two repdigits, then $B_k = 35$.
 
 ## Sources

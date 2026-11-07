@@ -1,6 +1,6 @@
 # The full machine as a finite multi-stack Turing machine
 
-**The full machine as a finite multi-stack Turing machine.** Given $r \in \mathbb{N}$, an
+Given $r \in \mathbb{N}$, an
 encoding $E$ of the machine $M$, a list $Y_s$ of input symbols of $M$, an output symbol $a$ of
 $M$, a map $\iota$ from $\{0, \dots, r - 1\}$ to input symbols of $M$, an input symbol $\sigma$ of
 $M$ (the separator), a polynomial $k$ with natural coefficients and $c, e \in \mathbb{N}$: the

@@ -1,6 +1,6 @@
 # The regression play
 
-**The regression play.** Write $\ast$ for the unique world, and consider the game positions
+Write $\ast$ for the unique world, and consider the game positions
 (formula, world, binder stack listed innermost first)
 $P_0 = (\mu X.\,\nu Y.\,X,\ \ast,\ [\,])$, $P_1 = (\nu Y.\,X,\ \ast,\ [\mu X.\,\nu Y.\,X])$ and
 $P_2 = (X,\ \ast,\ [\nu Y.\,X,\ \mu X.\,\nu Y.\,X])$. Let $s$ be the step map sending $P_0$ to

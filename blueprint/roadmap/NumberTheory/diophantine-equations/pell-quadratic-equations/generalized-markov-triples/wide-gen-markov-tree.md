@@ -1,6 +1,6 @@
 # The wide generalized Markov tree
 
-**The wide generalized Markov tree.** Fix a natural number $k$. The wide $k$-generalized
+Fix a natural number $k$. The wide $k$-generalized
 Markov tree $\mathrm{WMT}(k)$ is the binary tree of triples of natural numbers with root
 $(1, 1, 1)$ in which a vertex $(a, b, c)$ has left child
 $(a, \lfloor (a^2 + kab + b^2)/c \rfloor, b)$ and right child

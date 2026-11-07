@@ -1,6 +1,6 @@
 # Erdős Problem 755 holds (Clemen–Dumitrescu–Liu)
 
-**Erdős Problem 755 holds (Clemen–Dumitrescu–Liu).** Let $T_1(n)$ be the largest number of unit
+Let $T_1(n)$ be the largest number of unit
 equilateral triangles spanned by a set of $n$ points in $\mathbb{R}^6$, and let $T(n)$ be the
 largest number of equilateral triangles of positive side length spanned by a set of $n$ points in
 $\mathbb{R}^6$; a triangle spanned by a set is a three-element subset of it whose points are

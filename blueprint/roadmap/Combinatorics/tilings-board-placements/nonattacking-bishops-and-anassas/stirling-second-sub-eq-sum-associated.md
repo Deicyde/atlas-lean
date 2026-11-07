@@ -1,6 +1,6 @@
 # Ward's identity for Stirling numbers of the second kind
 
-**Ward's identity for Stirling numbers of the second kind.** For natural numbers $k \le m$,
+For natural numbers $k \le m$,
 
 $$S(m, m - k) = \sum_{p=0}^{k} S_2(k + p, p) \binom{m}{k + p},$$
 

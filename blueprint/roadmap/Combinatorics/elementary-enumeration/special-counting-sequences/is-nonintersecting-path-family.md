@@ -1,6 +1,6 @@
 # Nonintersecting families of southeast paths
 
-**Nonintersecting families of southeast paths.** Let $n \in \mathbb{N}$ and let
+Let $n \in \mathbb{N}$ and let
 $p_1, \dots, p_n$ and $q_1, \dots, q_n$ be points of $\mathbb{N}^2$. A family
 $L = (L_1, \dots, L_n)$, in which $L_i$ is a southeast path from $p_i$ to $q_i$ for each $i$, is
 nonintersecting when for all $i \ne j$ no point occurs both in $L_i$ and in $L_j$.

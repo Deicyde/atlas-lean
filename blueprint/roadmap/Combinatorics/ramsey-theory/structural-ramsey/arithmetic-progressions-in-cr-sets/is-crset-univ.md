@@ -1,6 +1,6 @@
 # The whole commutative semigroup is a CR-set
 
-**The whole commutative semigroup is a CR-set.** If $S$ is a nonempty commutative semigroup,
+If $S$ is a nonempty commutative semigroup,
 then $S$ itself is a CR-set in $S$.
 
 ## Sources

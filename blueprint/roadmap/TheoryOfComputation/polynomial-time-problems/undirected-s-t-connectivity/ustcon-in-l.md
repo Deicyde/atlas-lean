@@ -1,6 +1,6 @@
 # Undirected ST-connectivity is in L (Reingold)
 
-**Undirected ST-connectivity is in L (Reingold).** The undirected $s$-$t$ connectivity
+The undirected $s$-$t$ connectivity
 decision problem lies in the class $\mathsf{L}$ of decision problems decidable in deterministic
 logarithmic space.
 

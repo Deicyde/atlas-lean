@@ -1,6 +1,6 @@
 # Modular equation of degree 2 for Ramanujan's function $k$
 
-**Modular equation of degree 2 for Ramanujan's function $k$.** For every complex number $q$
+For every complex number $q$
 with $|q| < 1$, the values $X = k(q)$ and $Y = k(q^2)$ of Ramanujan's function satisfy
 $X^2 - Y + 2XY + X^2 Y + Y^2 = 0$.
 

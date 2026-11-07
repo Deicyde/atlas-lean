@@ -1,6 +1,6 @@
 # $n$-Lagrange approximability
 
-**$n$-Lagrange approximability.** For a natural number $n$ and a real number $\xi$, the
+For a natural number $n$ and a real number $\xi$, the
 $n$-Lagrange approximability of $\xi$ is the element of the extended reals
 
 $$\lambda_n(\xi) = \limsup_{s/t \to \xi} \frac{\gcd(t, n)}{t^2 \, |s/t - \xi|},$$

@@ -1,6 +1,6 @@
 # Correctness of naive string matching
 
-**Correctness of naive string matching.** Let $\alpha$ be a type whose Boolean equality
+Let $\alpha$ be a type whose Boolean equality
 agrees with equality, and write $|t|$ for the length of a list $t$. For every pattern $p$ and
 text $t$ over $\alpha$ and every natural number $s$, the naive matcher run on $p$ and $t$
 reports the shift $s$ if and only if $p$ matches $t$ at $s$, that is, $s \le |t|$ and $p$ is a

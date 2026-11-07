@@ -1,6 +1,6 @@
 # Andrews' generalization of MacMahon's partition theorem
 
-**Andrews' generalization of MacMahon's partition theorem.** For all natural numbers $r$ and
+For all natural numbers $r$ and
 $n$, the number of partitions of $n$ in which every part occurring an odd number of times occurs
 at least $2r + 1$ times equals the number of partitions of $n$ in which every odd part is
 congruent to $2r + 1$ modulo $4r + 2$.

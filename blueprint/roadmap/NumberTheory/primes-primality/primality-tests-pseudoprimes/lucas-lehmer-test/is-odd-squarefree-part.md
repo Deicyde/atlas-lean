@@ -1,6 +1,6 @@
 # Odd squarefree part
 
-**Odd squarefree part.** For an integer $N$ and a natural number $k$, $k$ is an odd
+For an integer $N$ and a natural number $k$, $k$ is an odd
 squarefree part of $N$, written $N^* = k$, when $k$ is odd and squarefree and $N = 2^a m^2 k$
 for some natural number $a$ and some integer $m$.
 

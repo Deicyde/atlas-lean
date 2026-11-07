@@ -1,4 +1,4 @@
 # Even-degree subgraphs have as many regions as their face count
 
-**Even-degree subgraphs have as many regions as their face count.** Every subgraph `K` of `P` whose image has all degrees even has exactly `faceCount K`
+Every subgraph `K` of `P` whose image has all degrees even has exactly `faceCount K`
 face-region components.

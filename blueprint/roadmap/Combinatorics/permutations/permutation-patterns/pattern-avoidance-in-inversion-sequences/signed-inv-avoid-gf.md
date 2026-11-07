@@ -1,6 +1,6 @@
 # Generating function of signed inversion sequences avoiding a set of patterns
 
-**Generating function of signed inversion sequences avoiding a set of patterns.** For a finite
+For a finite
 set $B$ of length-2 signed patterns, $F_B(x) = \sum_{n \ge 0} |\bar I_n(B)| x^n$ is the formal
 power series with rational coefficients whose coefficient of $x^n$ is the number $|\bar I_n(B)|$
 of signed inversion sequences of length $n$ avoiding every pattern of $B$.

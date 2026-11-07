@@ -1,6 +1,6 @@
 # Recurrence, closed form and row sums of $e_{j,k}(n)$
 
-**Recurrence, closed form and row sums of $e_{j,k}(n)$.** Let $n \in \mathbb{N}$ and let
+Let $n \in \mathbb{N}$ and let
 $e_{j,k}(n)$ be the elementary symmetric polynomial of degree $k$ in $n + 1, \dots, n + j$.
 Write $[j, \ell]$ for the unsigned Stirling numbers of the first kind and
 $x^{\overline{j}} = x (x + 1) \cdots (x + j - 1)$ for the rising factorial. Then

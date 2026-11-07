@@ -1,6 +1,6 @@
 # Fuel-bounded Josephus simulation
 
-**Fuel-bounded Josephus simulation.** For natural numbers $k$ and $s$ (the starting
+For natural numbers $k$ and $s$ (the starting
 position), a fuel $f$ and a list $c$ of natural numbers (the current circle), the simulation
 returns the empty list when $f = 0$ or $c$ is empty. Otherwise, with $L$ the length of $c$ and
 $i = (s + k - 1) \bmod L$, where the subtraction is truncated at $0$, it returns the entry of

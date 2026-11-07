@@ -1,6 +1,6 @@
 # Free products of groups without generalized torsion have no generalized torsion
 
-**Free products of groups without generalized torsion have no generalized torsion.** For every
+For every
 family of groups $(G_i)_{i \in I}$ none of which contains a generalized torsion element (an element
 $h \ne 1$ such that some nonempty product of conjugates of $h$ is trivial), the free product of the
 family contains no generalized torsion element.

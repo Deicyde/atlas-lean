@@ -1,6 +1,6 @@
 # Unimodal polynomials
 
-**Unimodal polynomials.** A polynomial $p = \sum_k a_k z^k \in \mathbb{Z}[z]$ of degree $n$
+A polynomial $p = \sum_k a_k z^k \in \mathbb{Z}[z]$ of degree $n$
 (with $n = 0$ for $p = 0$) is unimodal when there is an index $t \le n$ such that
 $a_0 \le a_1 \le \dots \le a_t$ and $a_t \ge a_{t+1} \ge \dots \ge a_n$.
 

@@ -1,6 +1,6 @@
 # Constant sequences satisfy the Average Condition
 
-**Constant sequences satisfy the Average Condition.** For every natural number $c$, the
+For every natural number $c$, the
 constant sequence $(c, c, c, \dots)$ satisfies the Average Condition.
 
 ## Sources

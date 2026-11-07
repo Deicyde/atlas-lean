@@ -1,6 +1,6 @@
 # Jacobsthal closed form
 
-**Jacobsthal closed form.** Let $J : \mathbb{N} \to \mathbb{N}$ satisfy $J(0) = J(1) = 1$ and
+Let $J : \mathbb{N} \to \mathbb{N}$ satisfy $J(0) = J(1) = 1$ and
 $J(n+2) = J(n+1) + 2J(n)$ for every $n \in \mathbb{N}$. Then for every $m \in \mathbb{N}$,
 
 $$J(m) = \frac{2^{m+1} + (-1)^m}{3}.$$

@@ -1,6 +1,6 @@
 # The three answer groups of Kourovka 17.92 occur
 
-**The three answer groups of Kourovka 17.92 occur.** Each of $L_2(7)$, $L_2(11)$ and $L_5(2)$ is a
+Each of $L_2(7)$, $L_2(11)$ and $L_5(2)$ is a
 composition factor of some finite non-soluble group all of whose maximal subgroups are Hall
 subgroups, so the second half of the answer to Kourovka 17.92 holds. Here $L_n(q)$ is the
 projective special linear group $\mathrm{PSL}_n(\mathbb{Z}/q\mathbb{Z})$, the quotient of

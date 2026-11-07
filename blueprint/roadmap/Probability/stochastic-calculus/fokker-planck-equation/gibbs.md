@@ -1,3 +1,3 @@
 # Gibbs density
 
-**Gibbs density.** The (unnormalized) **Gibbs density** `e^{-Ψ(x) / D}`.
+The (unnormalized) **Gibbs density** `e^{-Ψ(x) / D}`.

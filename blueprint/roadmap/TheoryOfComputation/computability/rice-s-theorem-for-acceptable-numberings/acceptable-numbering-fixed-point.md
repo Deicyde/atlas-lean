@@ -1,6 +1,6 @@
 # Rogers's fixed-point theorem for acceptable numberings
 
-**Rogers's fixed-point theorem for acceptable numberings.** Let $\varphi$ assign to each
+Let $\varphi$ assign to each
 natural number $e$ a partial function $\varphi_e : \mathbb{N} \rightharpoonup \mathbb{N}$, and
 suppose that the universal function $(e, n) \mapsto \varphi_e(n)$ is partial computable, that
 every partial computable function $f : \mathbb{N} \rightharpoonup \mathbb{N}$ equals $\varphi_e$

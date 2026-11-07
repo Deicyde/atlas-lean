@@ -1,6 +1,6 @@
 # Motzkin peak
 
-**Motzkin peak.** Let $p$ be a word of length $n$ in the steps $D$, $F$, $U$, let
+Let $p$ be a word of length $n$ in the steps $D$, $F$, $U$, let
 $k \in \mathbb{N}$, and let $i, j \in \{0, \dots, n-1\}$. The pair $(i, j)$ is a peak of height
 $k$ in $p$ when it is a hump of height $k$ in $p$ and $j = i + 1$, that is, when the down step
 $p_j$ immediately follows the up step $p_i$.

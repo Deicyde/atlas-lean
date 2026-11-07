@@ -1,6 +1,6 @@
 # Stirling-type recursion for the mesh-pattern counting polynomial
 
-**Stirling-type recursion for the mesh-pattern counting polynomial.** Let $1 < k \le n$ and
+Let $1 < k \le n$ and
 $j > 0$. For a permutation $\sigma$ of $m$ elements, with positions numbered $1, \dots, m$, let
 $p$ be the position of its largest value and let $N_r(\sigma)$ be the number of positions $i$
 such that $\sigma(t) < \sigma(i)$ for all $t < i$ and at least $r - 1$ positions $t$ with

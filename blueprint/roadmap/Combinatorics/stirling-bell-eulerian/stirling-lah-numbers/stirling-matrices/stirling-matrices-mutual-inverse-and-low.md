@@ -1,6 +1,6 @@
 # Stirling matrices are mutually inverse and lower triangular
 
-**Stirling matrices are mutually inverse and lower triangular.** Let $N$ be a natural number,
+Let $N$ be a natural number,
 and let $A$ and $B$ be the $N \times N$ integer matrices with rows and columns indexed by
 $0, 1, \dots, N-1$ and entries $A_{ij} = (-1)^{i-j} c(i,j)$ and $B_{ij} = S(i,j)$, where $c(i,j)$
 is the unsigned Stirling number of the first kind and $S(i,j)$ the Stirling number of the second

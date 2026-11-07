@@ -1,3 +1,3 @@
 # Number of markers in a category
 
-**Number of markers in a category.** The number `M_C` of markers in category `C`.
+The number `M_C` of markers in category `C`.

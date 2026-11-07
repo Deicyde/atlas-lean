@@ -1,6 +1,6 @@
 # Moving a Fibonacci number of pairs in the Accelerated Zeckendorf Game
 
-**Moving a Fibonacci number of pairs in the Accelerated Zeckendorf Game.** Index the
+Index the
 Fibonacci numbers as $F_1 = 1$, $F_2 = 2$, $F_{j+1} = F_j + F_{j-1}$, extended by $F_0 = 1$ and
 $F_{-1} = 0$. Let $p \ge 2$ and $i \ge 1$, and let $s$ be a state with $F_{i-1}$ copies of
 $F_{p-1}$, $F_i$ copies of $F_p$ and no copy of $F_{p+1}$. Let $t$ be the state obtained from $s$

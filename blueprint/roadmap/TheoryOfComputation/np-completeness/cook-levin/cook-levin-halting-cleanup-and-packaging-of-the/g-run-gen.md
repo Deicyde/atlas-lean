@@ -1,6 +1,6 @@
 # Running a program, then the drain
 
-**Running a program, then the drain.** Let $g, r \in \mathbb{N}$, let $P$ be a program with
+Let $g, r \in \mathbb{N}$, let $P$ be a program with
 labels $\Lambda$ and Boolean state over the stacks of the full machine with alphabets
 $F\Gamma_{g,r}$, and let $\mathit{fin}$ be a label with $P(\mathit{fin}) = \mathrm{halt}$.
 Suppose $P$ goes in at most $B$ steps from the configuration with label $\ell$, state $v$ and

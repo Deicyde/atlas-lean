@@ -1,6 +1,6 @@
 # Moran's equality for affine-symmetric iterated function systems
 
-**Moran's equality for affine-symmetric iterated function systems.** Let $n \ge 1$ and let
+Let $n \ge 1$ and let
 $(f_i)_{i < n}$ be an affine-symmetric iterated function system on $\mathbb{R}^d$ with common
 contraction factor $\lambda \in (0,1)$ that satisfies the open set condition. Then every attractor
 $S \subseteq \mathbb{R}^d$ of the system has Hausdorff dimension

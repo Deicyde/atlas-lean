@@ -1,6 +1,6 @@
 # q-Ohno relations for Bradley–Zhao qMZVs
 
-**q-Ohno relations for Bradley–Zhao qMZVs.** Let $(a_1, b_1), \dots, (a_r, b_r)$ be pairs of
+Let $(a_1, b_1), \dots, (a_r, b_r)$ be pairs of
 positive integers, write $\{1\}^{n}$ for $n$ repetitions of $1$, let
 $\mathbf{k} = (a_1 + 1, \{1\}^{b_1 - 1}, \dots, a_r + 1, \{1\}^{b_r - 1})$ be the admissible
 index they determine, of depth $\ell$, and let

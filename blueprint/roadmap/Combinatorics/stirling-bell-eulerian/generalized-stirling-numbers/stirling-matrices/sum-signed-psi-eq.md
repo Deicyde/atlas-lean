@@ -1,6 +1,6 @@
 # First-kind Stirling formula for $\Lambda(\alpha, i, j)$
 
-**First-kind Stirling formula for $\Lambda(\alpha, i, j)$.** Let
+Let
 $\alpha \colon \mathbb{N} \to \mathbb{Q}$, let $s(i, k)$ denote the signed Stirling numbers of
 the first kind, let $\Psi_\alpha(k) = \sum_{l=0}^{k-1} \alpha_l / (k-1-l)!$, and for
 $k_1 \le k_2$ let $\Lambda(\alpha, k_1, k_2) = \sum_{l=0}^{k_1-1} \binom{k_1-1}{l}

@@ -1,6 +1,6 @@
 # Pólya eigenvalue benchmark
 
-**Pólya eigenvalue benchmark.** For an open set $\Omega \subseteq \mathbb{R}^n$ and an index
+For an open set $\Omega \subseteq \mathbb{R}^n$ and an index
 $j \ge 0$, the Pólya benchmark at index $j$ is
 
 $$(2\pi)^2 \left(\frac{j+1}{\omega_n |\Omega|}\right)^{2/n},$$

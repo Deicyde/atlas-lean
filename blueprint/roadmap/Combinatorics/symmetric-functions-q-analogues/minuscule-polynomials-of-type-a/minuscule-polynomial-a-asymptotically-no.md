@@ -1,6 +1,6 @@
 # Asymptotic normality of the coefficients of the minuscule polynomials
 
-**Asymptotic normality of the coefficients of the minuscule polynomials.** Let $N_{n,k}$ be
+Let $N_{n,k}$ be
 the coefficient of $x^k$ in the type-A minuscule polynomial $N_n(x)$, and let
 $\sigma_n = \sqrt{(n^2 - n - 2)/(8(n - 1))}$. Then for every real $x$, the sum of the
 coefficients $N_{n,k}$ over $0 \le k < n$ with $k \le n/2 + x \sigma_n$, divided by $N_n(1)$,

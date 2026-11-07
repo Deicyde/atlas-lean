@@ -1,6 +1,6 @@
 # Continuous Turán number of the graph of an increasing function
 
-**Continuous Turán number of the graph of an increasing function.** Let $a > 0$ and $b$ be real
+Let $a > 0$ and $b$ be real
 numbers and let $f : \mathbb{R} \to \mathbb{R}$ be strictly increasing on $[0, a]$ with
 $(f(t) - f(s)) / (t - s) \le b$ for all $s < t$ in $[0, a]$. Then the graph
 $P = \{(t, f(t)) : t \in [0, a]\}$ satisfies $\operatorname{opx}(n, P) = \Theta(n)$ as the real

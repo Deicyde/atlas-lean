@@ -1,6 +1,6 @@
 # Eulerian polynomial factorization implies $p$-solvability
 
-**Eulerian polynomial factorization implies $p$-solvability.** Let $G$ be a finite group, let $p$
+Let $G$ be a finite group, let $p$
 be a prime, and let $\varphi$ be an Eulerian function of $G$, with values in the integer polynomial
 ring $\mathbb{Z}[x_0, x_1, \dots]$. If the Eulerian polynomial $\varphi(G)$ is a product $PQ$ of
 integer polynomials where $P$ involves no variable other than $x_p$ and $x_p$ does not occur in

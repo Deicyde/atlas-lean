@@ -1,6 +1,6 @@
 # Row zero of the one-variable circuit array
 
-**Row zero of the one-variable circuit array.** For every natural number $s \ge 1$, the
+For every natural number $s \ge 1$, the
 one-variable circuit array $C^X$, with entries in the field $\mathbb{Q}(X)$ of rational functions
 over $\mathbb{Q}$, satisfies $C^X_{0,s} = (3 \cdot 9^{s-2} X - 1)/(3 \cdot 9^{s-2} X)$, with an
 integer exponent (so $9^{s-2} = 1/9$ when $s = 1$), and the circuit array $C$ satisfies

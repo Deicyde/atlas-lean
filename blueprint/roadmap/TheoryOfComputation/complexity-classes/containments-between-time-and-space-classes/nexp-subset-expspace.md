@@ -1,6 +1,6 @@
 # NEXP is contained in EXPSPACE
 
-**NEXP is contained in EXPSPACE.** Every decision problem in NEXP, the class of
+Every decision problem in NEXP, the class of
 nondeterministic exponential time, also belongs to EXPSPACE, the class of deterministic
 exponential space.
 

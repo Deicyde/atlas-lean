@@ -1,6 +1,5 @@
 # Every $2$-group with the minimal condition on centralizers is locally finite (Kourovka 11.103)
 
-**Every $2$-group with the minimal condition on centralizers is locally finite (Kourovka 11.103).**
 Every group $G$ in which every element has order a power of $2$ and which satisfies the minimal
 condition on centralizers is locally finite.
 

@@ -1,6 +1,6 @@
 # Parametric $3$-adic dissection of the Euler function
 
-**Parametric $3$-adic dissection of the Euler function.** For real numbers $x$ and $y$ with
+For real numbers $x$ and $y$ with
 $0 < y < 1$ write $(x; y)_\infty = \prod_{k \ge 0} (1 - x y^k)$. For all real numbers $q$ and $p$
 with $0 < q < 1$,
 $\prod_{j \ge 0} \bigl((q^{3^j}; q^{3^{j+1}})_\infty\, (q^{2 \cdot 3^j}; q^{3^{j+1}})_\infty /

@@ -1,6 +1,6 @@
 # Nested sums of reciprocal squares
 
-**Nested sums of reciprocal squares.** For every natural number $k$, the multiple zeta-star
+For every natural number $k$, the multiple zeta-star
 value
 
 $$\zeta^\star(\{2\}^k) =

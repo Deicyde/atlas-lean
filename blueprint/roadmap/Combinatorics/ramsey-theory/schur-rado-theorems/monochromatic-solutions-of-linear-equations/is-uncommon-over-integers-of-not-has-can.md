@@ -1,6 +1,6 @@
 # Uncommonness of even-length equations without a canceling partition
 
-**Uncommonness of even-length equations without a canceling partition.** Let $m \ge 2$
+Let $m \ge 2$
 and let $a_1, \dots, a_{2m}$ be nonzero integers, at least one negative and at least one
 positive, such that the equation $a_1x_1 + \cdots + a_{2m}x_{2m} = 0$ has no canceling
 partition. Then this equation is $r$-uncommon over the integers for every $r \ge 2$.

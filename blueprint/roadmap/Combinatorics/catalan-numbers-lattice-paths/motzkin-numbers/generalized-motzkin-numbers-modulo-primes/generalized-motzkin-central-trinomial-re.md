@@ -1,6 +1,6 @@
 # Generalized Motzkin numbers from three central trinomial coefficients
 
-**Generalized Motzkin numbers from three central trinomial coefficients.** For integers $a$, $b$
+For integers $a$, $b$
 let $T_r$ and $M_r$ be the constant terms of $(a x^{-1} + b + a x)^r$ and of
 $(a x^{-1} + b + a x)^r (1 - x^2)$, the generalized central trinomial coefficients and generalized
 Motzkin numbers. Then for every natural number $n$,

@@ -1,6 +1,6 @@
 # Singular value decomposition of a complex matrix
 
-**Singular value decomposition of a complex matrix.** Rectangular complex singular value decomposition: every complex `m × n` matrix
+Rectangular complex singular value decomposition: every complex `m × n` matrix
 factors as `U * Σ * Vᴴ` with `U` and `V` unitary and `Σ` rectangular diagonal
 with nonnegative entries; the singular values beyond the first `min m n`
 (indices `j` with `m ≤ j.val`) are zero.

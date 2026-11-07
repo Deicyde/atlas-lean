@@ -1,6 +1,6 @@
 # Erasing the end-marker encoding recovers the word
 
-**Erasing the end-marker encoding recovers the word.** Erasing an encoding recovers the word.
+Erasing an encoding recovers the word.
 
 ## Sources
 

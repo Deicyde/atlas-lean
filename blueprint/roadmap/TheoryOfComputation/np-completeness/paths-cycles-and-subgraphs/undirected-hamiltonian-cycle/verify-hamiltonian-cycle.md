@@ -1,6 +1,6 @@
 # Hamiltonian-cycle verifier
 
-**Hamiltonian-cycle verifier.** Given bit strings $x$ and $y$, let
+Given bit strings $x$ and $y$, let
 $m = \lfloor \sqrt{|x|} \rfloor$ and let $w$ be the least natural number with $m \le 2^w$. The
 verifier reads $x$ as the adjacency matrix of a graph on the vertices $0, \dots, m - 1$, stored
 row by row, and $y$ as $m$ words of $w$ bits, the $i$-th word giving a number $v_i$ in binary,

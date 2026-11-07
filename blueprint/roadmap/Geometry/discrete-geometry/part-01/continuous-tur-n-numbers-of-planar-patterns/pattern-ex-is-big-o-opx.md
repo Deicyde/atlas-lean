@@ -1,6 +1,6 @@
 # Lower bound for continuous Turán numbers of finite patterns
 
-**Lower bound for continuous Turán numbers of finite patterns.** Let $P$ be a finite subset of
+Let $P$ be a finite subset of
 $\mathbb{R}^2$. For a natural number $n$, write $\mathrm{opx}(n, P)$ for the continuous Turán
 number of $P$ (the supremum of the Lebesgue measures of the open subsets of $[0, n]^2$ that do not
 contain $P$, or $0$ if there are none) and $\mathrm{ex}(n, M_P)$ for the 0-1 matrix extremal

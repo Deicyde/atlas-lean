@@ -1,6 +1,6 @@
 # Sendov's solution of Blumenthal's minimax angle problem (Erdős Problem 504)
 
-**Sendov's solution of Blumenthal's minimax angle problem (Erdős Problem 504).** For a natural
+For a natural
 number $N$, let $\alpha_N$ be the minimax angle of $N$ points in the plane: the supremum of the
 $\alpha \in [0, \pi]$ such that every set of $N$ points in the plane contains three distinct points
 $x, y, z$ with $\angle xyz \ge \alpha$ (the angle at $y$). Then $\alpha_3 = \pi/3$,

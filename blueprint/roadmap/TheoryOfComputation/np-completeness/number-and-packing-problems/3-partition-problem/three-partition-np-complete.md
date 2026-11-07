@@ -1,6 +1,6 @@
 # 3-PARTITION is NP-complete
 
-**3-PARTITION is NP-complete.** The decision problem 3-PARTITION on bitstrings is in NP, and
+The decision problem 3-PARTITION on bitstrings is in NP, and
 every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

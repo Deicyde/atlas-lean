@@ -1,6 +1,6 @@
 # Proper Forcing Axiom
 
-**Proper Forcing Axiom.** For every proper partial order $\mathbb{P}$, every family
+For every proper partial order $\mathbb{P}$, every family
 $\mathcal{D}$ of at most $\aleph_1$ dense subsets of $\mathbb{P}$, and every condition
 $p \in \mathbb{P}$, there is a filter $G \subseteq \mathbb{P}$ with $p \in G$ that meets every
 member of $\mathcal{D}$, that is, $G \cap D \neq \emptyset$ for every $D \in \mathcal{D}$.

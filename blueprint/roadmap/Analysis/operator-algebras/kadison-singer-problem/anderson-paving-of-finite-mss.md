@@ -1,6 +1,6 @@
 # Anderson paving from the finite MSS bound
 
-**Anderson paving from the finite MSS bound.** Assume the finite-support
+Assume the finite-support
 Marcus–Spielman–Srivastava bound holds. Let $n$ and $r$ be natural numbers with $r > 0$, and let
 $A$ be a Hermitian complex $n \times n$ matrix with zero diagonal and operator norm
 $\|A\| \le 1$. Then there is a coloring $c$ of the indices $\{1, \dots, n\}$ with $r^2$ colors

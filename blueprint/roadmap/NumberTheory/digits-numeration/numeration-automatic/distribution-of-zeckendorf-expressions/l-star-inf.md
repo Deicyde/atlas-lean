@@ -1,6 +1,6 @@
 # The coefficient function $\inf(\varepsilon)$
 
-**The coefficient function $\inf(\varepsilon)$.** Let $L$ be a list of natural numbers and
+Let $L$ be a list of natural numbers and
 $\varepsilon : \mathbb{N} \to \mathbb{N}$ a coefficient function, with indices starting at $0$.
 If $\varepsilon$ has a last nonzero entry, at index $c$, then $\inf(\varepsilon)$ agrees with
 $\varepsilon$ at the indices $i < c$, equals $\varepsilon_c - 1$ at $c$, and agrees with the

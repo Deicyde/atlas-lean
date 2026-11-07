@@ -1,6 +1,6 @@
 # The Berry–Esseen bound with coefficient 42
 
-**The Berry–Esseen bound with coefficient 42.** The number $42$ is an admissible
+The number $42$ is an admissible
 Berry–Esseen coefficient: for every probability measure $\mu$ on $\mathbb{R}$ with mean $0$,
 variance $1$ and finite third absolute moment $\rho = \int |x|^3 \, d\mu(x)$, and every positive
 integer $n$, the Kolmogorov error $\sup_{x \in \mathbb{R}} |F_n(x) - \Phi(x)|$ is at most

@@ -1,6 +1,6 @@
 # Cameron's conjecture on invariant incidence algebras holds (Pouzet)
 
-**Cameron's conjecture on invariant incidence algebras holds (Pouzet).** Let $\Omega$ be an
+Let $\Omega$ be an
 infinite set and let $G$ be a group of permutations of $\Omega$ all of whose orbits are infinite.
 Let $f$ and $g$ be nonzero functions from the finite subsets of $\Omega$ to $\mathbb{Q}$ that are
 $G$-invariant ($f(\sigma(X)) = f(X)$ for all $\sigma \in G$ and all finite $X$, and likewise for

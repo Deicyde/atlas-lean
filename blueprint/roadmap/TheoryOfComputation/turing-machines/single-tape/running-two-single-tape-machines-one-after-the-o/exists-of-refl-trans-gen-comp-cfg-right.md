@@ -1,6 +1,6 @@
 # Runs of a composite from configurations of the second machine
 
-**Runs of a composite from configurations of the second machine.** Let $M_1$ and $M_2$ be
+Let $M_1$ and $M_2$ be
 single-tape Turing machines over the same alphabet, and let $M$ be their composite, whose states
 are the disjoint union of those of $M_1$ and of $M_2$: $M$ starts in the start state of $M_1$ and
 runs $M_1$, where $M_1$ would halt it enters the start state of $M_2$ instead, and it then runs

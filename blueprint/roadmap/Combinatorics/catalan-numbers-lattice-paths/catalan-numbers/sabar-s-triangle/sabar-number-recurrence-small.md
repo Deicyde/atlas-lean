@@ -1,6 +1,6 @@
 # A recurrence for Sabar's triangle in small cases
 
-**A recurrence for Sabar's triangle in small cases.** For all natural numbers $n$ and $i$ with
+For all natural numbers $n$ and $i$ with
 $i < n < 8$, the entries of Sabar's triangle $s$ satisfy
 $s(n + 2, i + 1) = s(n, i + 1) + \binom{n+1}{i}$.
 

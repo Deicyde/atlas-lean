@@ -1,6 +1,6 @@
 # The first three Schatunowsky sets of the Eisenstein integers
 
-**The first three Schatunowsky sets of the Eisenstein integers.** Let $K$ be a number
+Let $K$ be a number
 field of discriminant $-3$ (so $K \cong \mathbb{Q}(\sqrt{-3})$). For $\alpha \in \mathcal{O}_K$ let
 $N(\alpha)$ be the absolute norm of the ideal $(\alpha)$, and let $Q_\ell$ be the set of
 $\alpha \in \mathcal{O}_K$ with $N(\alpha) > 1$ such that every $\beta \in \mathcal{O}_K$ coprime

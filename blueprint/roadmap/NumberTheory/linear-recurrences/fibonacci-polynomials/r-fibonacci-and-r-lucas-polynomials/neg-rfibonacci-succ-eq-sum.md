@@ -1,6 +1,6 @@
 # Explicit sum for the (-r)-Fibonacci polynomials
 
-**Explicit sum for the (-r)-Fibonacci polynomials.** Let $A$ be a commutative ring,
+Let $A$ be a commutative ring,
 $r \ge 2$, $x \in A$ and $y$ a unit of $A$, and write $U_n = U^{(-r)}_n(x, y)$. For every
 $n \ge 0$,
 

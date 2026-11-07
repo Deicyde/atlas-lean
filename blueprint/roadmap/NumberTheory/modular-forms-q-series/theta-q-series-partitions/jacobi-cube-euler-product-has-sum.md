@@ -1,6 +1,6 @@
 # Jacobi's identity for the cube of Euler's product
 
-**Jacobi's identity for the cube of Euler's product.** For every complex number $q$ with
+For every complex number $q$ with
 $|q| < 1$, the series $\sum_{n=0}^{\infty} (-1)^n (2n+1) q^{n(n+1)/2}$ converges
 unconditionally to $(q;q)_\infty^3$, the cube of the infinite q-Pochhammer symbol
 $(q;q)_\infty = \prod_{n=0}^{\infty} (1 - q^{n+1})$.

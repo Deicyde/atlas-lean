@@ -1,6 +1,6 @@
 # Integers below $2$ are not sums of two prime powers
 
-**Integers below $2$ are not sums of two prime powers.** If $n$ is an integer with $n < 2$,
+If $n$ is an integer with $n < 2$,
 then $n$ is not a sum of two prime powers, since every prime power $p^a$ is at least $1$.
 
 ## Sources

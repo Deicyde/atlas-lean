@@ -1,6 +1,6 @@
 # Identity for $t(n) + t(n-2)$ when $n \ge 3$ and $n \equiv 2 \pmod 3$
 
-**Identity for $t(n) + t(n-2)$ when $n \ge 3$ and $n \equiv 2 \pmod 3$.** Let $t$ be the
+Let $t$ be the
 tribonacci numbers with $t(0) = 1$, $t(1) = 0$, $t(2) = 1$ and
 $t(n) = t(n-1) + t(n-2) + t(n-3)$ for $n \ge 3$, extended by $t(n) = 0$ for $n < 0$. For every
 natural number $k \ge 1$, with $n = 3k + 2$,

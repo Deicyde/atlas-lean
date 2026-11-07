@@ -1,6 +1,6 @@
 # Bivariate generating function of a subword in non-decreasing Dyck paths
 
-**Bivariate generating function of a subword in non-decreasing Dyck paths.** For a word $w$
+For a word $w$
 in the steps $U$ and $D$, let $D_n$ be the set of non-decreasing Dyck paths of semilength $n$,
 and let $\#w(P)$ be the number of occurrences of $w$ as a contiguous subword of a path $P$,
 overlapping occurrences counted separately. The bivariate generating function $F_w(x, y)$ is

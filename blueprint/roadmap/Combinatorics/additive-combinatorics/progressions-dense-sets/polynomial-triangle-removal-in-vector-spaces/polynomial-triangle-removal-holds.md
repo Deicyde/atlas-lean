@@ -1,6 +1,6 @@
 # Polynomial triangle removal holds in $\mathbb{F}_2^n$
 
-**Polynomial triangle removal holds in $\mathbb{F}_2^n$.** There are real constants $c > 0$
+There are real constants $c > 0$
 and $C > 0$ such that for every natural number $n$, every finite set $A \subseteq \mathbb{F}_2^n$
 and every real number $\varepsilon$ with $0 < \varepsilon \le 1$ the following holds: if every
 triangle-free $B \subseteq A$ misses at least $\varepsilon 2^n$ elements of $A$, then the

@@ -1,6 +1,6 @@
 # Path weights of a hidden Markov model are bounded by the Viterbi variables
 
-**Path weights of a hidden Markov model are bounded by the Viterbi variables.** Let $h$ be a
+Let $h$ be a
 hidden Markov model with a finite nonempty set of states $S$ and initial weights $\pi$, transition
 weights $a$ and emission weights $b$ that are nonnegative elements of a linearly ordered
 commutative semiring, and let $x_0, x_1, \dots$ be observations. Let $\delta$ be the Viterbi

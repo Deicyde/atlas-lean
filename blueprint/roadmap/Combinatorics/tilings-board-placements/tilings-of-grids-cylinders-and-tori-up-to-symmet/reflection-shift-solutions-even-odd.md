@@ -1,6 +1,6 @@
 # Solutions of $x = -1-x-a$ modulo even $n$ for odd $a$
 
-**Solutions of $x = -1-x-a$ modulo even $n$ for odd $a$.** Let $n$ be a positive even
+Let $n$ be a positive even
 integer and $a \in \mathbb{Z}/n$ whose representative $\bar a \in \{0, \dots, n-1\}$ is odd.
 Then the set of $x \in \mathbb{Z}/n$ with $x = -1-x-a$ consists of the residues mod $n$ of the
 integers $(-1-\bar a)/2$ and $(n-1-\bar a)/2$.

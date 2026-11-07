@@ -1,3 +1,3 @@
 # Cardinality of a sorted prefix
 
-**Cardinality of a sorted prefix.** A prefix of length `k ≤ card ι` has `k` elements.
+A prefix of length `k ≤ card ι` has `k` elements.

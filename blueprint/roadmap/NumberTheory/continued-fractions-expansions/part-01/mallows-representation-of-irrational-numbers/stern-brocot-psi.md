@@ -1,6 +1,6 @@
 # The map $\psi_{SBT}$
 
-**The map $\psi_{SBT}$.** Encode a Stern–Brocot vertex by its gap $(a, b)$ of fractions: its
+Encode a Stern–Brocot vertex by its gap $(a, b)$ of fractions: its
 label is the mediant $a \oplus b$ (numerators added, denominators added), and its left and right
 children are the vertices with gaps $(a, a \oplus b)$ and $(a \oplus b, b)$. Let $v_L$ and $v_R$
 be the left and right children of a vertex $v$. If the label of $v_L$ has odd numerator, then

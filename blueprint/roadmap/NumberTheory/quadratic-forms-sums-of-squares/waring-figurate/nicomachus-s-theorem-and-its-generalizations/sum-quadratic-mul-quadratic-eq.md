@@ -1,6 +1,6 @@
 # Kim–Stolarsky balanced quadratic sum
 
-**Kim–Stolarsky balanced quadratic sum.** Let $k \ge 1$, let $\alpha_k$ be the numbers of
+Let $k \ge 1$, let $\alpha_k$ be the numbers of
 Equation (12) (so $\alpha_1 = 1$ and $\alpha_{k+1} = (15 + 7\alpha_k)/(13 + 6\alpha_k)$), let $u_k$
 be the integers of Proposition 1, and let $T_n = n(n+1)/2$. With
 $(a, b, c) = (1, \alpha_k, -(1 + \alpha_k))$ and $(d, e, f) = (-a, -c, -b)$ as in (17), for every

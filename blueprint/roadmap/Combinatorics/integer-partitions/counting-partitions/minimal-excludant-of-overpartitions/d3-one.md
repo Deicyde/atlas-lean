@@ -1,6 +1,6 @@
 # Three-colored distinct-part partitions of $1$
 
-**Three-colored distinct-part partitions of $1$.** The number $D_3(1)$ of partitions of $1$ into
+The number $D_3(1)$ of partitions of $1$ into
 parts of three colors, with the parts of each color distinct, equals $3$: the single part $1$
 takes one of the three colors.
 

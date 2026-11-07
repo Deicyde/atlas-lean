@@ -1,6 +1,6 @@
 # Brauer–Fowler theorem
 
-**Brauer–Fowler theorem.** There is a function $f \colon \mathbb{N} \to \mathbb{N}$ such that
+There is a function $f \colon \mathbb{N} \to \mathbb{N}$ such that
 for every finite nonabelian simple group $G$ and every element $t \in G$ of order $2$, with
 centralizer $C_G(t)$ in $G$, the order of $G$ satisfies $|G| \le f(|C_G(t)|)$.
 

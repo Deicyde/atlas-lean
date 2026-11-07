@@ -1,6 +1,6 @@
 # Coefficient description of the restricted signed sumset
 
-**Coefficient description of the restricted signed sumset.** For a natural number $h$, a
+For a natural number $h$, a
 finite set $A$ of integers and an integer $x$, $x$ lies in the restricted signed sumset
 $h^{\wedge}_{\pm} A$ if and only if there is a function $c : \mathbb{Z} \to \mathbb{Z}$ with
 $c(a) \in \{-1, 0, 1\}$ for every $a \in A$, $\sum_{a \in A} |c(a)| = h$ and

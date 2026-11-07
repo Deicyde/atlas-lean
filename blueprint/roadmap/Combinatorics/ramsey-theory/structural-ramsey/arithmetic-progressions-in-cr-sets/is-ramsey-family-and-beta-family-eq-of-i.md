@@ -1,6 +1,6 @@
 # Nonempty closed sets of ultrafilters come from Ramsey families
 
-**Nonempty closed sets of ultrafilters come from Ramsey families.** Let $S$ be a set, let
+Let $S$ be a set, let
 $\beta S$ be the space of ultrafilters on $S$, and let $K$ be a nonempty closed subset of
 $\beta S$. Let $\mathcal F_K$ be the collection of the sets $E \subseteq S$ with $E \in p$ for
 some $p \in K$. Then $\mathcal F_K$ is a family with the Ramsey property, and

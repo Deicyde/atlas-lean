@@ -1,3 +1,3 @@
 # Hedge weight update
 
-**Hedge weight update.** After a round with losses `ℓ`, each expert's weight is multiplied by `exp (-η ℓ i)`.
+After a round with losses `ℓ`, each expert's weight is multiplied by `exp (-η ℓ i)`.

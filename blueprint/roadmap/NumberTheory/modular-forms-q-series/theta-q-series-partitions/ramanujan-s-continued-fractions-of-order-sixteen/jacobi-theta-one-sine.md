@@ -1,6 +1,6 @@
 # Jacobi theta function $\theta_1$
 
-**Jacobi theta function $\theta_1$.** For complex numbers $z$ and $\tau$ with
+For complex numbers $z$ and $\tau$ with
 $\operatorname{Im} \tau > 0$, the Jacobi theta function is
 
 $$\theta_1(z \mid \tau) = 2 \sum_{n=0}^{\infty} (-1)^n e^{\pi i \tau (2n+1)^2/4} \sin((2n+1) z).$$

@@ -1,6 +1,6 @@
 # The Bartolomé–Mihăilescu theorem for prime exponents
 
-**The Bartolomé–Mihăilescu theorem for prime exponents.** Let $p \le q$ be primes with
+Let $p \le q$ be primes with
 $p \ge 5$, and let $x, y, z$ be pairwise coprime nonzero integers. Then $x^p + y^p \ne z^q$.
 
 The source quotes this result from Bartolomé and Mihăilescu, arXiv:2108.08572.

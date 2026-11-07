@@ -1,6 +1,6 @@
 # Generating series of a Gibonacci sequence
 
-**Generating series of a Gibonacci sequence.** Let $a$ and $b$ be integers and let
+Let $a$ and $b$ be integers and let
 $(G_n)_{n \ge 0}$ be the Gibonacci sequence with $G_0 = a$ and $G_1 = b$. In the ring
 $\mathbb{Q}[[X]]$ of formal power series with rational coefficients,
 

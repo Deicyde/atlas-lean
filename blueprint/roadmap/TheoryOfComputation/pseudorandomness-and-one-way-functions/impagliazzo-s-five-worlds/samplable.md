@@ -1,6 +1,6 @@
 # Samplable distributions
 
-**Samplable distributions.** Let $p$ be a polynomial with natural-number coefficients and let
+Let $p$ be a polynomial with natural-number coefficients and let
 $S$ be a family of maps $S_n$ from $p(n)$-bit coin strings to bitstrings. The pair $(p, S)$ is
 samplable when every $S_n(r)$ has length exactly $n$ and some polynomial-time computable function
 on bitstrings maps the canonical bitstring encoding of every pair $(n, r)$ to $S_n(r)$.

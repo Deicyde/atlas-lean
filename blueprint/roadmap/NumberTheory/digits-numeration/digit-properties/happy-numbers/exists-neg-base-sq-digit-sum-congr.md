@@ -1,6 +1,6 @@
 # A congruence for the negative-base digit-square map
 
-**A congruence for the negative-base digit-square map.** Let $b \le -12$ be an even integer,
+Let $b \le -12$ be an even integer,
 let $S_{2,b}$ be the map sending an integer to the sum of the squares of its base-$b$ digits, and
 let $v$ be an integer with $0 < v < 2b^2$. Then there are integers $w$ and $c$ with
 $0 \le w < v$ and $0 \le c \le |b| - 2$ such that

@@ -1,6 +1,6 @@
 # No bubbles of size one on two vertices
 
-**No bubbles of size one on two vertices.** $B_{1,1} = 0$: the linear chord diagrams on $2$
+$B_{1,1} = 0$: the linear chord diagrams on $2$
 vertices have no bubble of size $1$. The only such diagram is a single short chord.
 
 ## Sources

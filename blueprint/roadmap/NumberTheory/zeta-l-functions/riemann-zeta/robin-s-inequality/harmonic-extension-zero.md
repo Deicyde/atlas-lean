@@ -1,6 +1,6 @@
 # The real extension of the harmonic numbers vanishes at zero
 
-**The real extension of the harmonic numbers vanishes at zero.** The real extension
+The real extension
 $H(x) = \int_0^1 \frac{t^x - 1}{t - 1}\,dt$ of the harmonic numbers satisfies $H(0) = 0$.
 
 ## Sources

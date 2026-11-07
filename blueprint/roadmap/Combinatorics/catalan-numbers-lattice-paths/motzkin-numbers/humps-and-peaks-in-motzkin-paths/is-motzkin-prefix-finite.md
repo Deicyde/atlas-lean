@@ -1,6 +1,6 @@
 # Bounded Motzkin prefix condition
 
-**Bounded Motzkin prefix condition.** Let $p = p_0 p_1 \cdots p_{n-1}$ be a word of length $n$
+Let $p = p_0 p_1 \cdots p_{n-1}$ be a word of length $n$
 in the steps $D$, $F$, $U$ (encoded as $0$, $1$, $2$), whose vertical displacements are $-1$, $0$
 and $+1$, and let $h \in \mathbb{Z}$. The word $p$ satisfies the bounded Motzkin prefix condition
 for $h$ when, for every $m \in \{0, 1, \dots, n\}$, the sum of the displacements of

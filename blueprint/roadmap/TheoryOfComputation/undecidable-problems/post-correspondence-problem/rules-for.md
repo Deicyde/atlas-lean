@@ -1,6 +1,6 @@
 # The rules for one transition
 
-**The rules for one transition.** Let $M$ be a single-tape Turing machine with finitely many
+Let $M$ be a single-tape Turing machine with finitely many
 states and tape symbols, let $\sqcup$ be its blank symbol, and write $\vdash$, $\dashv$ for the end
 markers and $H$ for the halting symbol. The rules for a state $q$ reading a tape symbol $a$ are:
 the rule $q\,a \to H$ if $M$ has no transition from $q$ reading $a$; the rule

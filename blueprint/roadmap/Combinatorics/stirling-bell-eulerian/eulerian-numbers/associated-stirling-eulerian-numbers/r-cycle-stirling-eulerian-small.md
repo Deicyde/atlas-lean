@@ -1,6 +1,6 @@
 # Small $r$-cycle Stirling Eulerian numbers
 
-**Small $r$-cycle Stirling Eulerian numbers.** Write $A^{(r)}_{n,m}$ for the number of
+Write $A^{(r)}_{n,m}$ for the number of
 permutations $\sigma$ of $\{0, \dots, n-1\}$ all of whose cycles, fixed points counted as
 cycles of length $1$, have length exactly $r$, and that have exactly $m$ excedances (indices $i$
 with $\sigma(i) > i$). Then $A^{(2)}_{0,0} = 1$ (the empty permutation), $A^{(2)}_{2,1} = 1$

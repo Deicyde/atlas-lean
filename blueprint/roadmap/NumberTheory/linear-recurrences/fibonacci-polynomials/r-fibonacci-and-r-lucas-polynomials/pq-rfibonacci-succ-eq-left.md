@@ -1,6 +1,6 @@
 # First recurrence for the $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
-**First recurrence for the $(p,q)$-analogue of the $r$-Fibonacci polynomial.** Let $R$ be a
+Let $R$ be a
 commutative semiring, let $r \ge 1$, $n \ge r$ and $m$ be natural numbers and let
 $x, y, p, q \in R$. Write $U_j(x, y)$ for $U^{(r)}_j(x, y, p, q, m)$, the $(p,q)$-analogue of the
 $r$-Fibonacci polynomial with $r$, $p$, $q$ and $m$ fixed. Then

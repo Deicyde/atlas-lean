@@ -1,6 +1,6 @@
 # The minuscule polynomial $N_1$ vanishes
 
-**The minuscule polynomial $N_1$ vanishes.** The type-A minuscule polynomial $N_1(x)$ is the
+The type-A minuscule polynomial $N_1(x)$ is the
 zero polynomial.
 
 ## Sources

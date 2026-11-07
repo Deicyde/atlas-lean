@@ -1,6 +1,6 @@
 # Statement of Shiganov's Berry–Esseen bound
 
-**Statement of Shiganov's Berry–Esseen bound.** The proposition that the Berry–Esseen
+The proposition that the Berry–Esseen
 constant $C_0$ is at most $0.7655$. Here $C_0$ is the infimum of the real numbers $C$ such that
 for every probability measure $\mu$ on $\mathbb{R}$ with mean $0$, variance $1$ and finite third
 absolute moment $\beta_3 = \int |x|^3 \, d\mu(x)$, and every integer $n \ge 1$, the distribution

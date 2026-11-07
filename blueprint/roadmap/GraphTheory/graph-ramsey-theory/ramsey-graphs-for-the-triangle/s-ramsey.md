@@ -1,6 +1,6 @@
 # Least minimum degree of Ramsey-minimal graphs for the triangle
 
-**Least minimum degree of Ramsey-minimal graphs for the triangle.** For a natural number $r$,
+For a natural number $r$,
 $s_r(K_3)$ is the least natural number $d$ such that, for some $n$, some graph on the vertex set
 $\{0, \dots, n - 1\}$ is $r$-Ramsey-minimal for the triangle and has minimum degree $d$; if no
 such graph exists, $s_r(K_3) = 0$.

@@ -1,6 +1,6 @@
 # Indecomposable prime candidates are lunar primes
 
-**Indecomposable prime candidates are lunar primes.** Let $n$ and $b \ge 2$ be natural
+Let $n$ and $b \ge 2$ be natural
 numbers, let $a = (a_0, \dots, a_{n-1})$ be a digit string with digits in $\{0, \dots, b - 1\}$,
 and let $f$ be its coefficient sequence. If $f$ is a prime candidate in base $b$ and $f$ is
 max-min indecomposable, then $f$ is a lunar prime of base $b$.

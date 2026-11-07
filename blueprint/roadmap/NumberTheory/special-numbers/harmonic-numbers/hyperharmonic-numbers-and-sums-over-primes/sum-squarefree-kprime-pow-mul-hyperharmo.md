@@ -1,6 +1,6 @@
 # Mixed hyperharmonic product sums over squarefree numbers with $k$ prime factors
 
-**Mixed hyperharmonic product sums over squarefree numbers with $k$ prime factors.** Let
+Let
 $q_1 \ge 2$ and $q_2, \alpha, \beta, m, k, s, n, r_1, r_2 \ge 1$ be natural numbers. Let
 $p_{\ell,k}$ be the $\ell$th ($\ell \ge 1$) squarefree number with exactly $k$ prime factors.
 Write $H_\ell^{(q)} = \sum_{j=1}^{\ell} j^{-q}$ and

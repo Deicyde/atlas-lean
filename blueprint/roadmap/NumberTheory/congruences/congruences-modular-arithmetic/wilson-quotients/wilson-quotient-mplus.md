@@ -1,6 +1,6 @@
 # Morozov's sign-adjusted Wilson quotients
 
-**Morozov's sign-adjusted Wilson quotients.** For natural numbers $k$ and $n$, $M_k^+(n)$ is
+For natural numbers $k$ and $n$, $M_k^+(n)$ is
 the rational number
 
 $$M_k^+(n) = \frac{(-1)^k + k! \, (n - k - 1)!}{n},$$

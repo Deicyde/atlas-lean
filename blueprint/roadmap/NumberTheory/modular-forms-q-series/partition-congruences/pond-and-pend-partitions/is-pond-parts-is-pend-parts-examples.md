@@ -1,6 +1,6 @@
 # Examples of POND and PEND parts
 
-**Examples of POND and PEND parts.** The multisets of parts $\{1, 1\}$ and $\{2\}$ satisfy
+The multisets of parts $\{1, 1\}$ and $\{2\}$ satisfy
 the POND condition, while $\{1\}$ and $\{2, 1\}$ do not; the multisets $\{1\}$ and $\{2, 2\}$
 satisfy the PEND condition, while $\{2\}$ and $\{2, 4\}$ do not.
 

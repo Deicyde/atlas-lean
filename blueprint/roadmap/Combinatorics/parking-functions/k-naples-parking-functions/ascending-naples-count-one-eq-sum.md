@@ -1,6 +1,6 @@
 # Counting ascending $1$-Naples parking functions
 
-**Counting ascending $1$-Naples parking functions.** For every natural number $n$, let
+For every natural number $n$, let
 $I_{n,1}$ be the number of weakly increasing $1$-Naples parking functions of length $n$. Then
 
 $$I_{n,1} = \sum_{i=0}^{n} C_i \, F(n - i),$$

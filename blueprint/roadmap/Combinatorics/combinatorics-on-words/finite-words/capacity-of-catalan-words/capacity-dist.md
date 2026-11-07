@@ -1,6 +1,6 @@
 # Capacity distribution
 
-**Capacity distribution.** For a finite set $S$ of words of length $n$ with letters in the
+For a finite set $S$ of words of length $n$ with letters in the
 natural numbers, the capacity distribution of $S$ is the polynomial
 $\sum_{w \in S} q^{\operatorname{cap}(w)}$ in $\mathbb{Z}[q]$, where $\operatorname{cap}(w)$ is the
 capacity of $w$.

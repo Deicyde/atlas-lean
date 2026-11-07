@@ -1,6 +1,6 @@
 # Membership in the Dumont–Thomas image language
 
-**Membership in the Dumont–Thomas image language.** Let $\eta$ send each letter of an
+Let $\eta$ send each letter of an
 alphabet $A$ to a finite word over $A$, let $u : \mathbb{Z} \to A$ and $p \in \mathbb{N}$, and
 let $\mathcal{A}_{\eta,s}$ be the automaton of the seed $s = u_{-1}|u_0$. A word $w$ of natural
 numbers lies in the image language of $\eta$, $u$ and $p$ if and only if the length of $w$ is

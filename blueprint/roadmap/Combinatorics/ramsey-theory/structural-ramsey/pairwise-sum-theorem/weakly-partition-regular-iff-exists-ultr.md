@@ -1,6 +1,6 @@
 # Partition regular families and ultrafilters
 
-**Partition regular families and ultrafilters.** Let $\mathcal{F}$ be a family of subsets of a
+Let $\mathcal{F}$ be a family of subsets of a
 set $S$. Every finite coloring of $S$ has a monochromatic member of $\mathcal{F}$ (that is,
 $\mathcal{F}$ is weakly partition regular) if and only if there is an ultrafilter $U$ on $S$ such
 that every $A \in U$ contains some member of $\mathcal{F}$ ($U$ is a PR-witness of $\mathcal{F}$).

@@ -1,6 +1,6 @@
 # Bottleneck augmentation preserves feasibility
 
-**Bottleneck augmentation preserves feasibility.** Let $c$ be a capacity matrix with
+Let $c$ be a capacity matrix with
 natural-number entries on the vertices $\{0, \dots, n-1\}$, let $s$ and $t$ be vertices,
 and let $f$ be a flow that is feasible for $c$, $s$, $t$. If $P$ is a path from $s$ to $t$
 in the residual graph of $f$, that is, a nonempty list of pairwise distinct vertices

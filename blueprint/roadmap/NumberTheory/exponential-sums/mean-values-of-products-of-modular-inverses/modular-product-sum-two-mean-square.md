@@ -1,6 +1,6 @@
 # Mean square of the error in the modular product sum $S_2(n, m)$
 
-**Mean square of the error in the modular product sum $S_2(n, m)$.** Let $\varphi$ be Euler's
+Let $\varphi$ be Euler's
 totient function, $S_2(n, m)$ the modular product sum and $C_n$ the Xu–Zhang constant of $n$.
 For every real $\varepsilon > 0$ there is a real constant $C$ such that for every odd natural
 number $n \ge 3$,

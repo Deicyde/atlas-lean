@@ -1,6 +1,6 @@
 # Gap lengths of the three-gap configuration
 
-**Gap lengths of the three-gap configuration.** Let $n$ be a natural number and $\alpha$ a real
+Let $n$ be a natural number and $\alpha$ a real
 number. In this definition a point means a three-gap point of $n$ and $\alpha$, that is, a number
 $\operatorname{frac}(k\alpha) = k\alpha - \lfloor k\alpha \rfloor$ for a natural number $k < n$.
 A real number $d$ is a gap length of $n$ and $\alpha$ if either $d = y - x$ for points $x < y$

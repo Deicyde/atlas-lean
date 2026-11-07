@@ -1,6 +1,6 @@
 # Binomial coefficients from products of Rascal numbers
 
-**Binomial coefficients from products of Rascal numbers.** For natural numbers $n$ and $m$
+For natural numbers $n$ and $m$
 with $1 \le m \le n$,
 
 $$(m!)^2 \binom{n-1}{m} = \prod_{k=1}^{m} (R_{n,k} - 1),$$

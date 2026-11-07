@@ -1,6 +1,6 @@
 # A clause detour returns to its own pair (Sipser's separator argument)
 
-**A clause detour returns to its own pair (Sipser's separator argument).** Let $\varphi$ be a
+Let $\varphi$ be a
 CNF formula with $m$ clauses and $k$ distinct variables, write $T_i = m + i(3m + 2)$ and
 $R_{i,l} = T_i + 1 + l$, and let $p$ be a Hamiltonian path from $T_0$ to $T_k$ in the digraph on
 the vertices $0, \dots, T_k$ whose arcs are those of Sipser's construction for $\varphi$. Let

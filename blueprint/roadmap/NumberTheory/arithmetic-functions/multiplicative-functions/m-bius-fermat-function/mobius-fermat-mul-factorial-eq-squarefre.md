@@ -1,6 +1,6 @@
 # Reduction of the Möbius–Fermat function to distinct factors
 
-**Reduction of the Möbius–Fermat function to distinct factors.** Let $u_M$ be the Fermat
+Let $u_M$ be the Fermat
 unit function and let $\mu_M$ be an integer-valued arithmetic function with
 $\mu_M * u_M = \varepsilon$, where $*$ is Dirichlet convolution and $\varepsilon$ is its
 identity, with $\varepsilon(1) = 1$ and $\varepsilon(l) = 0$ for $l \ne 1$; thus $\mu_M$ is the

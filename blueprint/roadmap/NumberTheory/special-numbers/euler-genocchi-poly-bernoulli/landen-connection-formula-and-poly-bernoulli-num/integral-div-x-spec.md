@@ -1,6 +1,6 @@
 # The formal integral against $du/u$ is a right inverse of $z \, d/dz$
 
-**The formal integral against $du/u$ is a right inverse of $z \, d/dz$.** Let
+Let
 $h \in \mathbb{R}[[z]]$ be a power series with zero constant term, and let
 $I(h) = \sum_{n \ge 1} \frac{[z^n] h}{n} z^n$ be its formal integral $\int_0^z h(u) \, du / u$,
 where $[z^n] h$ is the coefficient of $z^n$ in $h$. Then $I(h)$ has zero constant term and

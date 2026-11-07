@@ -1,6 +1,6 @@
 # The backtracked path of a hidden Markov model attains the Viterbi variable
 
-**The backtracked path of a hidden Markov model attains the Viterbi variable.** Let $h$ be a
+Let $h$ be a
 hidden Markov model with states $0, \dots, n - 1$, where $n \ge 1$, initial weights $\pi$,
 transition weights $a$ and emission weights $b$ in a commutative semiring with a linear order, and
 let $x_0, x_1, \dots$ be observations. Let $\delta$ be the Viterbi variables,

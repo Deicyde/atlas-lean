@@ -1,6 +1,6 @@
 # Tails of prime power sums under the Riemann hypothesis
 
-**Tails of prime power sums under the Riemann hypothesis.** Assume the Riemann
+Assume the Riemann
 hypothesis. Then for every integer $n \ge 2$ and every real $x \ge 599$,
 
 $$

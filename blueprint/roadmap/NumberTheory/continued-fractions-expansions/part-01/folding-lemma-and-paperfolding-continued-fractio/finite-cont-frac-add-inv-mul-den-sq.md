@@ -1,6 +1,6 @@
 # Folding lemma for finite continued fractions
 
-**Folding lemma for finite continued fractions.** Let $a_0$ be an integer, let $t$ be even
+Let $a_0$ be an integer, let $t$ be even
 and let $a_1, \dots, a_t$ be integers with $a_i \ge 1$ for every $i$, and let $q$ be the
 denominator in lowest terms of the value $[a_0; a_1, \dots, a_t]$ of the finite continued
 fraction. Then for every integer $x \ge 1$,

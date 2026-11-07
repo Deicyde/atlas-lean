@@ -1,6 +1,6 @@
 # Brioschi's formula: the case $a_0 = 1$ of Trudi's formula
 
-**Brioschi's formula: the case $a_0 = 1$ of Trudi's formula.** Let $R$ be a commutative ring
+Let $R$ be a commutative ring
 and let $a_0, a_1, a_2, \dots$ be elements of $R$ with $a_0 = 1$. For every $n \ge 0$, the
 Toeplitz–Hessenberg determinant $\det A_n$ of size $n$ built from $a$ satisfies
 

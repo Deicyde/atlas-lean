@@ -1,6 +1,6 @@
 # Indecomposability of the formation of finite $p$-groups (Kourovka 10.72)
 
-**Indecomposability of the formation of finite $p$-groups (Kourovka 10.72).** The statement
+The statement
 that for every prime $p$, the class $\mathfrak{N}_p$ of all finite $p$-groups is not the Gaschütz
 product $\mathfrak{F} \circ \mathfrak{G}$ of two formations $\mathfrak{F}$ and $\mathfrak{G}$ that
 consist of $p$-groups, each contain a nontrivial group and each omit some finite $p$-group. Here a

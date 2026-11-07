@@ -1,6 +1,6 @@
 # Substitutions are non-erasing
 
-**Substitutions are non-erasing.** Every substitution $\eta$ in the sense of Labbé and
+Every substitution $\eta$ in the sense of Labbé and
 Lepšová is non-erasing: $\eta(a)$ is a nonempty word for every letter $a$.
 
 ## Sources

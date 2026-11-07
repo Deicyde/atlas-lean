@@ -1,6 +1,6 @@
 # Total output of a composite sequential transducer
 
-**Total output of a composite sequential transducer.** Let $S_1$ be a sequential transducer
+Let $S_1$ be a sequential transducer
 from $I$ to $M$, $S_2$ one from $M$ to $O$, and $C$ their composition. For a sequential
 transducer $S$ with start state $s$, initial output $\iota$ and final output map $\phi$, and a
 word $x$, let $\delta_S(s, x)$ be the state $S$ reaches by reading $x$ from $s$ and

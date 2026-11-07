@@ -1,6 +1,6 @@
 # Choquet's theorem
 
-**Choquet's theorem.** Let $E$ be a second-countable real Banach space with its Borel σ-algebra
+Let $E$ be a second-countable real Banach space with its Borel σ-algebra
 and let $K \subseteq E$ be a nonempty compact convex set. For every $x \in K$ there is a
 probability measure $\mu$ on $E$ such that the set $\operatorname{ext} K$ of extreme points of
 $K$ has $\mu(\operatorname{ext} K) = 1$, the identity map $y \mapsto y$ is Bochner integrable

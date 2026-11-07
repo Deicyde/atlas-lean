@@ -1,6 +1,6 @@
 # The 2-dissections of $1/f_1^4$, $1/f_1^8$ and $1/f_1^{12}$
 
-**The 2-dissections of $1/f_1^4$, $1/f_1^8$ and $1/f_1^{12}$.** Write
+Write
 $f_k = (q^k; q^k)_\infty$ for the Euler products. In the ring of integer power series in $q$,
 the following three identities hold:
 

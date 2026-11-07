@@ -1,6 +1,6 @@
 # An unbiased estimator has mean squared error equal to its variance
 
-**An unbiased estimator has mean squared error equal to its variance.** Let $S$ be a
+Let $S$ be a
 measurable space, $W : S \to \mathbb{R}$ an estimator, $(P_\theta)_{\theta \in \Theta}$ a family of
 probability measures on $S$ and $\tau : \Theta \to \mathbb{R}$ a target function. Suppose that $W$
 is unbiased for $\tau$ under the family, and that for every $\theta \in \Theta$, $W$ has a finite

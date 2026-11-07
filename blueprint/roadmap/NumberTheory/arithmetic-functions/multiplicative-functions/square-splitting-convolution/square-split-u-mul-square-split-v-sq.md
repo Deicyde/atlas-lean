@@ -1,6 +1,6 @@
 # Square-splitting decomposition
 
-**Square-splitting decomposition.** For every natural number $n \ne 0$ with prime
+For every natural number $n \ne 0$ with prime
 factorization $n = \prod_p p^{e_p}$, we have $n = u(n)\,v(n)^2$, where
 $u(n) = \prod_p p^{e_p \bmod 2}$ and $v(n) = \prod_p p^{\lfloor e_p/2 \rfloor}$.
 

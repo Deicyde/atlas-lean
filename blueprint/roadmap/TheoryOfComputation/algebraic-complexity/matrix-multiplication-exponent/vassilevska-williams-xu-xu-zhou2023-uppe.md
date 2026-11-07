@@ -1,6 +1,6 @@
 # Vassilevska Williams–Xu–Xu–Zhou upper bound for matrix multiplication
 
-**Vassilevska Williams–Xu–Xu–Zhou upper bound for matrix multiplication.** For every field
+For every field
 $F$, the square matrix multiplication exponent of $F$ in the arithmetic-circuit model is at
 most $2.371552$.
 

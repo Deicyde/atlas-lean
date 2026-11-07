@@ -1,6 +1,6 @@
 # Kourovka 11.54: only the trivial pure braid is conjugate to its inverse
 
-**Kourovka 11.54: only the trivial pure braid is conjugate to its inverse.** For every
+For every
 $n \in \mathbb{N}$ and every pure braid $\beta$ on $n + 1$ strands, if
 $\gamma \beta \gamma^{-1} = \beta^{-1}$ for some pure braid $\gamma$ on $n + 1$ strands, then
 $\beta = 1$.

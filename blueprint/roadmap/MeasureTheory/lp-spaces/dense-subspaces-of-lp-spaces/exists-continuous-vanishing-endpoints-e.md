@@ -1,6 +1,5 @@
 # Continuous functions vanishing at the endpoints are dense in $L^p$ of a compact interval
 
-**Continuous functions vanishing at the endpoints are dense in $L^p$ of a compact interval.**
 Let $a < b$ be real numbers, let $1 \le p < \infty$ and let $E$ be a real normed space. Write
 $L^p([a, b])$ for $L^p$ with respect to Lebesgue measure restricted to $[a, b]$. For every
 $f : \mathbb{R} \to E$ in $L^p([a, b])$ and every $\varepsilon \in (0, \infty]$, there is a

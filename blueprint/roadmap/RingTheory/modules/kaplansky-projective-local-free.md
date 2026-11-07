@@ -1,6 +1,6 @@
 # Kaplansky's theorem on projective modules over local rings
 
-**Kaplansky's theorem on projective modules over local rings.** Every projective module over a
+Every projective module over a
 commutative local ring is free.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The CPS translation commutes with substitution of values and variables
 
-**The CPS translation commutes with substitution of values and variables.** Fix an answer
+Fix an answer
 type $R$ and write $\llbracket \cdot \rrbracket$ for the call-by-value CPS translation of types,
 contexts (entrywise) and terms; for a variable $x$ of $\Gamma$, $\llbracket x \rrbracket$ is the
 variable of $\llbracket \Gamma \rrbracket$ at the same position. Let $\sigma$ be a substitution from

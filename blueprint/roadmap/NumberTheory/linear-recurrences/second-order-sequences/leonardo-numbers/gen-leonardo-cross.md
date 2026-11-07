@@ -1,6 +1,6 @@
 # Cross-product identity for generalized Leonardo numbers
 
-**Cross-product identity for generalized Leonardo numbers.** Let $k$ be an integer, and let
+Let $k$ be an integer, and let
 $L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual generalized Leonardo
 numbers. For every natural number $n \ge 1$,
 

@@ -1,6 +1,6 @@
 # Sine lower bound at non-divisors
 
-**Sine lower bound at non-divisors.** For all positive integers $k$ and $n$ with $k \nmid n$,
+For all positive integers $k$ and $n$ with $k \nmid n$,
 
 $$\frac{\pi^2 k^2}{2} \sin^2\frac{n\pi}{k} \ge 1.$$
 

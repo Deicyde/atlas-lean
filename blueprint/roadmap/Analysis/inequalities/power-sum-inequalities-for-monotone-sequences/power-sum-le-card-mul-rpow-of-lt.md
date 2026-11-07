@@ -1,6 +1,6 @@
 # Power mean bound for power sums with a smaller exponent
 
-**Power mean bound for power sums with a smaller exponent.** Let $x_1, \dots, x_N$ be
+Let $x_1, \dots, x_N$ be
 $N \ge 1$ positive real numbers, and for real $p$ write $S^{[p]} = \sum_{k=1}^{N} x_k^p$. If
 $\alpha$ and $\beta$ are real numbers with $0 < \alpha < \beta$, then
 $S^{[\alpha]} \le N (S^{[\beta]} / N)^{\alpha/\beta}$. If moreover $x_k \ge 1$ for every $k$,

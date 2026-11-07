@@ -1,6 +1,6 @@
 # Hadamard matrix
 
-**Hadamard matrix.** For a natural number $m$, an $m \times m$ matrix $H$ with integer
+For a natural number $m$, an $m \times m$ matrix $H$ with integer
 entries is a Hadamard matrix when every entry of $H$ is $1$ or $-1$ and
 $H^{\mathsf T} H = m I$, where $I$ is the $m \times m$ identity matrix.
 

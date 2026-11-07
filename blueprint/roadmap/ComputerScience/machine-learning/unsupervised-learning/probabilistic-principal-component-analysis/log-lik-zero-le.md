@@ -1,6 +1,6 @@
 # No latent factors: the noise-variance MLE is the average sample variance
 
-**No latent factors: the noise-variance MLE is the average sample variance.** Let
+Let
 $x_1, \dots, x_N \in \mathbb{R}^d$ be data with sample mean $\bar{x}$ and sample covariance $S$,
 and suppose $\operatorname{tr} S > 0$. Then for every $\mu \in \mathbb{R}^d$ and every real
 $\sigma^2 > 0$, the probabilistic PCA log-likelihood of the data with the zero $d \times q$

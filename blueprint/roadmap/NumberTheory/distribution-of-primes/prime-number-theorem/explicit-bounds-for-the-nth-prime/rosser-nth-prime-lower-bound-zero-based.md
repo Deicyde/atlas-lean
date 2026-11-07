@@ -1,6 +1,6 @@
 # Rosser's lower bound for the $n$th prime
 
-**Rosser's lower bound for the $n$th prime.** For every positive integer $n$, the $n$th prime
+For every positive integer $n$, the $n$th prime
 $p_n$ (counting from $p_1 = 2$) satisfies $p_n > n \log n$.
 
 For $n = 1$ the bound reads $2 > 0$.

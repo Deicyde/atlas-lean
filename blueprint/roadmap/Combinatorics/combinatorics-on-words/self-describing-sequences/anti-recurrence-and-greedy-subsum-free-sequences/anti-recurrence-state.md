@@ -1,6 +1,6 @@
 # State of the anti-recurrence construction
 
-**State of the anti-recurrence construction.** Let $a = (a_1, \dots, a_k)$ be a finite list of
+Let $a = (a_1, \dots, a_k)$ be a finite list of
 natural numbers. The state at step $0$ is the pair of the empty list and the empty set. If the
 state at step $n$ has set $S$, then the state at step $n + 1$ is the pair $(\beta, S')$, where
 $\beta = (x_1, \dots, x_k)$ is the mex block of length $k$ from $S$ (each $x_j$ is the least

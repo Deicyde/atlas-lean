@@ -1,6 +1,6 @@
 # Golden factorial exponent of $1$
 
-**Golden factorial exponent of $1$.** Let $\varphi$ be the golden ratio and, for a natural
+Let $\varphi$ be the golden ratio and, for a natural
 number $n$, let $\alpha(n)$ be the least positive integer $m$ with $n! \le \varphi^m$. Then
 $\alpha(1) = 1$.
 

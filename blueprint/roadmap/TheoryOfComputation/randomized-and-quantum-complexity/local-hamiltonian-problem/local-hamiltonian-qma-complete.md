@@ -1,6 +1,6 @@
 # The 2-local Hamiltonian problem is QMA-complete
 
-**The 2-local Hamiltonian problem is QMA-complete.** The 2-local Hamiltonian promise
+The 2-local Hamiltonian promise
 problem, given by its yes-instances and no-instances, is in QMA, and every promise problem in QMA
 whose sets of yes-instances and no-instances are disjoint sets of bitstrings has a polynomial-time
 reduction to it.

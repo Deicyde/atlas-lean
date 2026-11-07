@@ -1,6 +1,6 @@
 # Positive integer roots of the Nicomachean factor for $s = 1, 2$
 
-**Positive integer roots of the Nicomachean factor for $s = 1, 2$.** Let
+Let
 $\alpha(n, s, a) = 2n^2 + na - a^2 + n(n-1)(s - s^2)/2 - (n-1)as$ and let $F_0 = 0$, $F_1 = 1$,
 $F_{k+2} = F_{k+1} + F_k$ be the Fibonacci numbers. Let $n \ge 1$ be a natural number. Then
 $\alpha(n, 1, h) = 0$ for some positive integer $h$ if and only if $2n^2 = k(k+1)$ for some natural

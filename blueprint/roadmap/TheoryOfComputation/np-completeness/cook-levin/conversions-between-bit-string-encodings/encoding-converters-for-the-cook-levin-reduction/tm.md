@@ -1,6 +1,6 @@
 # Machine converting the separator form of a pair to its canonical encoding
 
-**Machine converting the separator form of a pair to its canonical encoding.** The
+The
 multi-stack Turing machine with the four stacks of the converter to the canonical pair encoding
 (input, output and two stashes), whose input stack holds symbols of the verifier's alphabet
 (left-tagged bits, right-tagged bits and the separator) and whose other stacks hold bits, reading

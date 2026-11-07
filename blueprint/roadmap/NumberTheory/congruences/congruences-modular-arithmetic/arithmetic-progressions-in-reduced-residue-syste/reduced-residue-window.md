@@ -1,6 +1,6 @@
 # The reduced residue system $R_m(n)$
 
-**The reduced residue system $R_m(n)$.** For an integer $m$ and a natural number $n$, the
+For an integer $m$ and a natural number $n$, the
 reduced residue system $R_m(n)$ modulo $n$ is the finite set
 $R_m(n) = \{a \in \mathbb{Z} : m + 1 \le a \le m + n,\ \gcd(a, n) = 1\}$.
 

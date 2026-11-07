@@ -1,6 +1,6 @@
 # Trivial upper bound for the essential dimension of $S_n$
 
-**Trivial upper bound for the essential dimension of $S_n$.** For every natural
+For every natural
 number $n$, the essential dimension of the symmetric group $S_n$ over $\mathbb{C}$, in the
 general-polynomial parameter sense, is at most $n$.
 

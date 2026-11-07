@@ -1,6 +1,6 @@
 # Initial counters of the init generator
 
-**Initial counters of the init generator.** For natural numbers $T, n, e, f$, the counters
+For natural numbers $T, n, e, f$, the counters
 $\mathrm{Tn}$, $\mathrm{Xn}$, $\mathrm{En}$ and $\mathrm{Fn}$ of the generator hold $T$, $n$, $e$
 and $f$ respectively, and every other counter holds $0$.
 

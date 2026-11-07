@@ -1,6 +1,6 @@
 # $x + 1$ is locally nilpotent at $1$
 
-**$x + 1$ is locally nilpotent at $1$.** Let $u(x) = x + 1 \in \mathbb{Z}[x]$ and write
+Let $u(x) = x + 1 \in \mathbb{Z}[x]$ and write
 $u^{(m)}$ for the $m$-fold iterate of $u$ as a map $\mathbb{Z} \to \mathbb{Z}$. Then for every
 prime $p$ there is $m \ge 1$ such that $p$ divides $u^{(m)}(1)$.
 

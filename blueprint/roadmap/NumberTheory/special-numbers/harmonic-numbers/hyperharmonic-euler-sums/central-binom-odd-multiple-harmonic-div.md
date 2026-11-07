@@ -1,6 +1,6 @@
 # Central binomial odd harmonic sum with denominator $4^n (n + 1)^2$
 
-**Central binomial odd harmonic sum with denominator $4^n (n + 1)^2$.** For every integer
+For every integer
 $k \ge 0$, with $O_n(k)$ the depth-$k$ odd harmonic number,
 
 $$\sum_{n \ge 0} \frac{\binom{2n}{n} O_n(k)}{4^n (n + 1)^2} =

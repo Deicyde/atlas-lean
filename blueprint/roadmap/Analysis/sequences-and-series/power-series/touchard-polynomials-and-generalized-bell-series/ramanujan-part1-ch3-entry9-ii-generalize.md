@@ -1,6 +1,6 @@
 # Exponential generating function of the generalized Bell function (Entry 9(ii))
 
-**Exponential generating function of the generalized Bell function (Entry 9(ii)).** Let
+Let
 $F(a, b, x; n)$ be Ramanujan's generalized Bell function. For all complex numbers $a$, $b$, $x$
 and $y$, the series $\sum_{n=0}^{\infty} \frac{y^n}{n!} F(a, b, x; n)$ converges to
 $x e^{(a+b)y} e^{x(e^{by} - 1)}$.

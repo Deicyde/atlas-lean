@@ -1,6 +1,6 @@
 # Cubic series over even-indexed Lucas numbers
 
-**Cubic series over even-indexed Lucas numbers.** Let $F_n$ and $L_n$ denote the Fibonacci and
+Let $F_n$ and $L_n$ denote the Fibonacci and
 Lucas numbers, given by $F_0 = 0$, $F_1 = 1$, $L_0 = 2$, $L_1 = 1$ and the recurrence
 $z_{n+2} = z_{n+1} + z_n$ for both. Then
 

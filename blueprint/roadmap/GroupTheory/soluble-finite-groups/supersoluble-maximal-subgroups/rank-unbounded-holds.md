@@ -1,6 +1,6 @@
 # Unbounded chief-factor rank under Monakhov's condition
 
-**Unbounded chief-factor rank under Monakhov's condition.** For every natural number $r$ there is
+For every natural number $r$ there is
 a finite soluble group $G$ such that every maximal subgroup $M$ of $G$ with $\pi(M) = \pi(G)$ is
 supersoluble, where $\pi(X)$ is the set of prime divisors of $|X|$, and $G$ has a chief factor
 $A/B$ (normal subgroups $B < A$ of $G$ with no normal subgroup of $G$ strictly between them) of

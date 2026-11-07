@@ -1,6 +1,6 @@
 # Positions with the same reduction have the same outcome
 
-**Positions with the same reduction have the same outcome.** Let
+Let
 $A \subseteq \{1, \dots, n\}$. If two positions $p$ and $q$ of Slow$A$-Nim $\mathrm{SN}(n, A)$
 have the same reduction, $r(p) = r(q)$, then $p$ is a P-position if and only if $q$ is a
 P-position.

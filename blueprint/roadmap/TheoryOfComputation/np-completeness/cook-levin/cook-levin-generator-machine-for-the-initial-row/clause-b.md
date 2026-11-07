@@ -1,6 +1,6 @@
 # Step bound for one clause (initial-row generator)
 
-**Step bound for one clause (initial-row generator).** For natural numbers $m$ and $V$,
+For natural numbers $m$ and $V$,
 
 $$\mathrm{clauseB}(m, V) = V(3V + 6) + m \cdot \mathrm{litE}(V) + 3V + 4,$$
 

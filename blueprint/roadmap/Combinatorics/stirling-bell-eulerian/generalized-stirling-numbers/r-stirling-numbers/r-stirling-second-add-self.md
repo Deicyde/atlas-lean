@@ -1,6 +1,6 @@
 # r-Stirling numbers of the second kind with exactly r blocks
 
-**r-Stirling numbers of the second kind with exactly r blocks.** For all natural numbers $n$
+For all natural numbers $n$
 and $r$, the r-Stirling number of the second kind ${n+r \brace r}_r$ equals $r^n$ (with
 $0^0 = 1$).
 

@@ -1,6 +1,6 @@
 # The letters of $x_k$ from the increments of the iterates of $F_k$
 
-**The letters of $x_k$ from the increments of the iterates of $F_k$.** Let $k \ge 1$, let $F_k$
+Let $k \ge 1$, let $F_k$
 be the generalized Hofstadter function with $j$-th iterate $F_k^j$ ($F_k^0$ the identity), and
 let $x_k = x_k[0]\,x_k[1] \cdots$ be the fixed point of the substitution $\tau_k$
 ($k \mapsto k\,1$, $i \mapsto i + 1$ for $i \ne k$). For every natural number $n$: for each $j$

@@ -1,6 +1,6 @@
 # Rank-one tuple count $o_k(f, p)$
 
-**Rank-one tuple count $o_k(f, p)$.** For $f \in \mathbb{Z}[x, y]$ and natural numbers $p$
+For $f \in \mathbb{Z}[x, y]$ and natural numbers $p$
 and $k$, let $C_f(\mathbb{F}_p)$ be the set of pairs $(r, s)$ of natural numbers with $r, s < p$
 such that $p$ divides $f(r, s)$. Then $o_k(f, p)$ is the number of $k$-tuples
 $P = (P_1, \dots, P_k)$ of pairwise distinct points of $C_f(\mathbb{F}_p)$ such that the

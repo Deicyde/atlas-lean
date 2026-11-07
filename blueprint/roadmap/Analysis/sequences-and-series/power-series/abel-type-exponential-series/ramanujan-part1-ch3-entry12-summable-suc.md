@@ -1,6 +1,6 @@
 # Absolute convergence of the shifted series in Entry 12 for every $n$
 
-**Absolute convergence of the shifted series in Entry 12 for every $n$.** Let $r$ be an
+Let $r$ be an
 integer and let $n$ and $a$ be complex numbers with $|a| > e$, or with $a = e$ and $r \le -2$.
 Then
 

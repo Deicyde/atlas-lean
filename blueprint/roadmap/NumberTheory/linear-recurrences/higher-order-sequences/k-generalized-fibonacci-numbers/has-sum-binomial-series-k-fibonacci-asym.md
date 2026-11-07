@@ -1,6 +1,6 @@
 # Difference binomial series at the $k$-Fibonacci root
 
-**Difference binomial series at the $k$-Fibonacci root.** Let $k \ge 2$ be a natural number
+Let $k \ge 2$ be a natural number
 and $\rho > 0$ a real number with $\rho^k = 1 + \rho + \cdots + \rho^{k-1}$, and for an integer
 $x$ and a natural number $j$ let $\binom{x}{j} = x(x-1)\cdots(x-j+1)/j!$. For every natural number
 $n \ne 1$ the series below converges absolutely and

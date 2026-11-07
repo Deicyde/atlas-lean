@@ -1,6 +1,6 @@
 # Metered outcomes of a seven-car example on six spots
 
-**Metered outcomes of a seven-car example on six spots.** On the six spots
+On the six spots
 $\{0, \dots, 5\}$, for seven cars with preferences $(2, 2, 2, 2, 3, 4, 5)$, the $2$-metered
 parking scheme parks the cars in spots $(2, 3, 4, 2, 3, 4, 5)$, while in the $1$-metered scheme
 the first six cars park in spots $(2, 3, 2, 3, 4, 5)$ and the seventh car fails to park.

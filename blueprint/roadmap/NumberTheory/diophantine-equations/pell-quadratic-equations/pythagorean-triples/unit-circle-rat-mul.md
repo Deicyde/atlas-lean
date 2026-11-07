@@ -1,6 +1,6 @@
 # Amato's product on rational points of the unit circle
 
-**Amato's product on rational points of the unit circle.** For rational pairs $(x, y)$ and
+For rational pairs $(x, y)$ and
 $(x', y')$, the product is
 $(x, y) \odot (x', y') = (x x' / (1 + y y'), (y + y') / (1 + y y'))$, where division by $0$
 gives $0$; so the product is $(0, 0)$ when $1 + y y' = 0$.

@@ -1,6 +1,6 @@
 # Ramanujan's series for powers of a root of $x = a \log x$ (Entry 13)
 
-**Ramanujan's series for powers of a root of $x = a \log x$ (Entry 13).** Let $a$ be a real
+Let $a$ be a real
 number with $|a| \ge e$. Then there is a real number $x > 0$ with $x = a \log x$ such that for
 every real number $n$ the series
 

@@ -1,6 +1,6 @@
 # Twin Powers Theorem for pseudo-involutions
 
-**Twin Powers Theorem for pseudo-involutions.** Let $l$ be a natural number, let
+Let $l$ be a natural number, let
 $n = 2l + 1$, and let $g$ be a formal power series over $\mathbb{R}$ with $g(0) \ne 0$. Put
 $f(x) = x\, g(x^n)$ and $h(x) = x\, g(x)^n$. Call a power series $p$ pseudo-involutory if
 $p(0) = 0$, the coefficient of $x$ in $p$ is nonzero, and the compositional inverse $\bar p$ of

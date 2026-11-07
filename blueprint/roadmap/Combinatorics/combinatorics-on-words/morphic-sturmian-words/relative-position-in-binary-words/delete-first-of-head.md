@@ -1,6 +1,6 @@
 # Deleting a leading letter
 
-**Deleting a leading letter.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word
+Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word
 over the letters $a$ and $b$, let $\alpha$ be a letter, and let $D_\alpha$ be the operator that
 deletes the first occurrence of $\alpha$ from a word (and deletes the first letter of a word in
 which $\alpha$ does not occur). If $\ell_0 = \alpha$, then $D_\alpha$ shifts $w$ by one:

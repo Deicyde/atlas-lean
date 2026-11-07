@@ -1,6 +1,6 @@
 # Three-term recurrence for generalized Motzkin numbers
 
-**Three-term recurrence for generalized Motzkin numbers.** For integers $a$, $b$ let $M_r$ be
+For integers $a$, $b$ let $M_r$ be
 the constant term of $(a x^{-1} + b + a x)^r (1 - x^2)$, the generalized Motzkin number. Then for
 every natural number $n$,
 

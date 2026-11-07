@@ -1,6 +1,6 @@
 # Legendre's three-square theorem
 
-**Legendre's three-square theorem.** Every natural number $n$ that is not of the form
+Every natural number $n$ that is not of the form
 $4^a (8b + 7)$ with natural numbers $a, b$ is a sum of three squares: there are natural numbers
 $x, y, z$ with $x^2 + y^2 + z^2 = n$.
 

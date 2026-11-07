@@ -1,6 +1,6 @@
 # Difference-inverses of extraTribs
 
-**Difference-inverses of extraTribs.** Let $S$ be an extraTrib. There is exactly one
+Let $S$ be an extraTrib. There is exactly one
 sequence $Q \colon \mathbb{Z} \to \mathbb{Q}$ that follows the Tribonacci rule
 $Q(n+3) = Q(n+2) + Q(n+1) + Q(n)$ for all $n \in \mathbb{Z}$ and satisfies
 $Q(n+1) - Q(n) = S(n)$ for all $n \in \mathbb{Z}$. Moreover, there is an extraTrib $Q$ with

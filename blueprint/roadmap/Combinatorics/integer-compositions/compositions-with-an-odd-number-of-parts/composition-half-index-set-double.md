@@ -1,6 +1,6 @@
 # Doubling identity for the composition index sets
 
-**Doubling identity for the composition index sets.** For natural numbers $m$, $n$ and $q$,
+For natural numbers $m$, $n$ and $q$,
 let $S(m, n, q)$ be the set of natural numbers $k$ with $2k \equiv n - q \pmod{m}$ and $2k < n$,
 and let $T(m, n, q)$ be the set of natural numbers $k$ with $k \equiv n - q \pmod{m}$ and
 $k < n$, where the difference $n - q$ is taken in the integers. Then for all natural numbers

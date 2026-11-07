@@ -1,6 +1,6 @@
 # Odd multiple harmonic numbers
 
-**Odd multiple harmonic numbers.** For natural numbers $k$ and $n$, the depth-$k$ odd
+For natural numbers $k$ and $n$, the depth-$k$ odd
 harmonic number is the real number
 
 $$O_n(k) = \sum_{1 \le i_1 < \cdots < i_k \le n} \prod_{j=1}^{k} \frac{1}{i_j - 1/2}.$$

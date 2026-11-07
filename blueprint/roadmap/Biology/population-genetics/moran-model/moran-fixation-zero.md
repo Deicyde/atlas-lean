@@ -1,3 +1,3 @@
 # An absent mutant is never fixed
 
-**An absent mutant is never fixed.** A mutant that is absent is never fixed: `φ_0 = 0`.
+A mutant that is absent is never fixed: `φ_0 = 0`.

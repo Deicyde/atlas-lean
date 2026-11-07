@@ -1,6 +1,6 @@
 # Recursive structure of the negative parts of base phi expansions
 
-**Recursive structure of the negative parts of base phi expansions.** Let $n \ge 1$, let $L_k$
+Let $n \ge 1$, let $L_k$
 be the Lucas numbers, and for $j \ge 0$ let $\Lambda_{2j}$ be the set of natural numbers in
 $[L_{2j}, L_{2j+1}]$ and $\Lambda_{2j+1}$ the set of natural numbers in
 $[L_{2j+1} + 1, L_{2j+2} - 1]$. Let $T$ be a base phi expansion of a natural number $M$ and $S$ a

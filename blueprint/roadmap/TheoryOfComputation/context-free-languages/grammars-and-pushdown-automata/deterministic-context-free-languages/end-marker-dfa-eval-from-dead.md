@@ -1,6 +1,6 @@
 # Dead state of the encoding DFA is absorbing
 
-**Dead state of the encoding DFA is absorbing.** The dead state of the encoding DFA stays dead.
+The dead state of the encoding DFA stays dead.
 
 ## Sources
 

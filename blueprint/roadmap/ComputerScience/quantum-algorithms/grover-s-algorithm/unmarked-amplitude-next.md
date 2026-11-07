@@ -1,6 +1,6 @@
 # Unmarked amplitude after a Grover step
 
-**Unmarked amplitude after a Grover step.** Let $M$ be a set of marked elements of a finite
+Let $M$ be a set of marked elements of a finite
 search space of size $N$, let $M^c$ be the set of unmarked elements, and let $a, b \in \mathbb{R}$.
 With $\mu = (|M^c|\, b - |M|\, a) / N$, the next unmarked amplitude is $2\mu - b$.
 

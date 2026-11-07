@@ -1,6 +1,6 @@
 # Tabulated forward-backward smoothing
 
-**Tabulated forward-backward smoothing.** Let $g$ be a hidden Markov model with states
+Let $g$ be a hidden Markov model with states
 $\{0, \dots, n - 1\}$ and weights in a semifield $K$, and let $x_0, x_1, \dots$ be observations.
 For $t, k \in \mathbb{N}$, this is the vector in $K^n$ whose entry at state $s$ is
 $\alpha_t(s)\, \beta_k(t, s) / L_{t+k}$, where $\alpha_t$ is the tabulated forward vector at time

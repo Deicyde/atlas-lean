@@ -1,6 +1,6 @@
 # M-rule length of the position (3, 5, 5)
 
-**M-rule length of the position (3, 5, 5).** In exact slow $2$-NIM on three piles,
+In exact slow $2$-NIM on three piles,
 $\mathrm{NIM}(3, 2)$, where a move removes one stone from each of exactly two nonempty piles, the
 M-rule length of the position $(3, 5, 5)$ is $M(3, 5, 5) = 6$.
 

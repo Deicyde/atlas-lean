@@ -1,6 +1,6 @@
 # The basis polynomial $p^2_0$
 
-**The basis polynomial $p^2_0$.** The symmetric basis polynomial $p^2_0$ equals the complex
+The symmetric basis polynomial $p^2_0$ equals the complex
 polynomial $2(X^2 + X + 1)$.
 
 ## Sources

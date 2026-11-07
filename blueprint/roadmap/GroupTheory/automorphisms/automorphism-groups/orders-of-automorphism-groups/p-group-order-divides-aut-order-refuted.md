@@ -1,6 +1,6 @@
 # Orders of $p$-groups need not divide orders of their automorphism groups
 
-**Orders of $p$-groups need not divide orders of their automorphism groups.** For every prime $p$
+For every prime $p$
 there is a finite non-cyclic $p$-group $P$ of order greater than $p^2$ whose order does not divide
 the order of its automorphism group $\mathrm{Aut}(P)$.
 

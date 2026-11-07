@@ -1,6 +1,6 @@
 # Eigenbasis of a semisimple endomorphism with split characteristic polynomial
 
-**Eigenbasis of a semisimple endomorphism with split characteristic polynomial.** Let $V$ be a
+Let $V$ be a
 finite-dimensional vector space over a field $K$ and let $f$ be a semisimple endomorphism of $V$
 (every $f$-invariant subspace has an $f$-invariant complement) whose characteristic polynomial
 splits over $K$. Then for every finite type $\iota$ with exactly $\dim_K V$ elements there are a

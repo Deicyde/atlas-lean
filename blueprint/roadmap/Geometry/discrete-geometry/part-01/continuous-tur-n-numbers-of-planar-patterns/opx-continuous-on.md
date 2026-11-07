@@ -1,6 +1,6 @@
 # Continuity of the continuous Turán number
 
-**Continuity of the continuous Turán number.** For every $P \subseteq \mathbb{R}^2$, the
+For every $P \subseteq \mathbb{R}^2$, the
 continuous Turán number $\mathrm{opx}(n, P)$ is a continuous function of $n$ on $(0, \infty)$.
 
 ## Sources

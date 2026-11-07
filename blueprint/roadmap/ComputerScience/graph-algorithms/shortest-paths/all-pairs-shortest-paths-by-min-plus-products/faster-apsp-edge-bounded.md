@@ -1,6 +1,6 @@
 # FASTER-APSP computes edge-bounded shortest-path weights
 
-**FASTER-APSP computes edge-bounded shortest-path weights.** Let $W$ be an $n \times n$
+Let $W$ be an $n \times n$
 matrix with entries in $\mathbb{Z} \cup \{\infty\}$, read as edge weights of a directed graph on
 the vertices $0, \dots, n - 1$ (weight $\infty$ meaning no edge), with $W_{ii} = 0$ for every
 $i$, and let $k = \lceil \log_2 (n - 1) \rceil$ be the least natural number with

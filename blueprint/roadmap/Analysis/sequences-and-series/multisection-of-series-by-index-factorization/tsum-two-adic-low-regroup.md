@@ -1,6 +1,6 @@
 # Two-adic regrouping of the non-multiples of a power of two
 
-**Two-adic regrouping of the non-multiples of a power of two.** For every natural number $J$
+For every natural number $J$
 and every sequence $c : \mathbb{N} \to \mathbb{C}$,
 
 $$\sum_{0 \le j < J,\ n \ge 1} c_{(2n-1) 2^j} = \sum_{p \ge 1,\ 2^J \nmid p} c_p,$$

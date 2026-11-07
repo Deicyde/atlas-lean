@@ -1,6 +1,6 @@
 # Roots in braid groups are unique up to conjugacy (González-Meneses)
 
-**Roots in braid groups are unique up to conjugacy (González-Meneses).** For every natural number
+For every natural number
 $n$ and every integer $k \ge 1$, if two elements $\alpha, \beta$ of the braid group $B_n$ on $n$
 strands satisfy $\alpha^k = \beta^k$, then $\alpha$ and $\beta$ are conjugate in $B_n$. This answers
 Kourovka Problem 10.23 (G. S. Makanin) affirmatively.

@@ -1,6 +1,6 @@
 # Symmetric valleys in three compositions of eight
 
-**Symmetric valleys in three compositions of eight.** The word $2\,1\,2\,1\,2$ has two
+The word $2\,1\,2\,1\,2$ has two
 symmetric valleys and total symmetric valley depth $2$, the word $3\,1\,3\,1$ has total symmetric
 valley depth $2$, and the word $3\,2\,3$ has total symmetric valley depth $1$.
 

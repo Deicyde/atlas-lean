@@ -1,6 +1,6 @@
 # Snort positions with a move bound
 
-**Snort positions with a move bound.** Let $G$ be a finite simple graph, let $k$ be a natural
+Let $G$ be a finite simple graph, let $k$ be a natural
 number, and let $A$ and $B$ be finite sets of vertices of $G$, the vertices coloured so far by
 the player to move and by the opponent. A legal move colours a vertex $v$ that lies in neither
 $A$ nor $B$ and has no neighbour in $B$. With move bound $0$ the player to move loses. With move

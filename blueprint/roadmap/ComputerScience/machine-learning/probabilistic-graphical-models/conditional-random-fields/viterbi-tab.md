@@ -1,6 +1,6 @@
 # The tabulated Viterbi variables of a chain CRF
 
-**The tabulated Viterbi variables of a chain CRF.** Let $c$ be a chain conditional random
+Let $c$ be a chain conditional random
 field with states $\{0, \dots, n - 1\}$, where $n \ge 1$, and weights in a linearly ordered
 commutative semiring $R$, and let $x$ be an observation sequence. Write $\phi_0(s)$ for the
 unary potential of $c$ at $x$ of state $s$ at position $0$. The Viterbi table assigns to each

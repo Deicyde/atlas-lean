@@ -1,6 +1,6 @@
 # The Sidon ideal is contained in the lacunary ideal
 
-**The Sidon ideal is contained in the lacunary ideal.** Call a set $A \subseteq \mathbb{N}$
+Call a set $A \subseteq \mathbb{N}$
 lacunary if it is infinite and the gaps $A(n + 1) - A(n)$ between consecutive elements tend to
 infinity, where $A(n)$ is the $n$-th element of $A$ in increasing order. Every set in the Sidon
 ideal is contained in a finite union of lacunary sets, that is, it lies in the ideal

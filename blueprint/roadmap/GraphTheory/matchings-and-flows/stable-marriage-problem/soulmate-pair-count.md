@@ -1,6 +1,6 @@
 # Number of soulmate pairs
 
-**Number of soulmate pairs.** The number of soulmate pairs of a preference profile $P$ for
+The number of soulmate pairs of a preference profile $P$ for
 $n$ men and $n$ women is the number of pairs $(i, j)$ of a man $i$ and a woman $j$ that are
 soulmates in $P$, that is, each ranks the other first.
 

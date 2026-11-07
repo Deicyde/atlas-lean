@@ -1,6 +1,6 @@
 # Generalized tau at $p^2 + 1$ modulo $p$
 
-**Generalized tau at $p^2 + 1$ modulo $p$.** Let $p$ be an odd prime and $n$ a natural number,
+Let $p$ be an odd prime and $n$ a natural number,
 and for an integer $j$ let $P(j) = j(3j - 1)/2$ be the generalized pentagonal number. Then
 $\tau_{p^2 + 1}(n + 1)$ is congruent modulo $p$ to the sum of $(-1)^{r + s}$ over the pairs of
 integers $(r, s)$ with $-n \le r, s \le n$ and $n = P(r) + p^2 P(s)$.

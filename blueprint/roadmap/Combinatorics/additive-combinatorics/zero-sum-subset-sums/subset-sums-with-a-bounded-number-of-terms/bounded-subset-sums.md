@@ -1,6 +1,6 @@
 # Subset sums with a bounded number of terms
 
-**Subset sums with a bounded number of terms.** For natural numbers $\alpha, \beta$ and a
+For natural numbers $\alpha, \beta$ and a
 finite subset $A$ of an additive commutative monoid $G$, the set $\Sigma^{\beta}_{\alpha}(A)$ is
 the union of the restricted sumsets $m^{\wedge} A$ over $\alpha \le m \le |A| - \beta$, that is,
 the set of sums $\sum_{b \in B} b$ over subsets $B \subseteq A$ with

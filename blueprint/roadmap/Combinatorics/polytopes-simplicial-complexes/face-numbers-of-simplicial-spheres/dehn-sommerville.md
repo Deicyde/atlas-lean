@@ -1,6 +1,6 @@
 # Dehn–Sommerville equations
 
-**Dehn–Sommerville equations.** Let $X$ be a finite simplicial $(d-1)$-sphere, that is, a
+Let $X$ be a finite simplicial $(d-1)$-sphere, that is, a
 finite geometric simplicial complex in $\mathbb{R}^d$ whose underlying space is homeomorphic to
 the unit sphere of $\mathbb{R}^d$. Then for every natural number $j \le d$, the h-vector of $X$
 satisfies $h_j = h_{d-j}$. Here $h_j = \sum_{i=0}^{j} (-1)^{j-i} \binom{d-i}{j-i} f_{i-1}$,

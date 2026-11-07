@@ -1,6 +1,6 @@
 # Tribonacci numbers that are products of factorials
 
-**Tribonacci numbers that are products of factorials.** Let $(T_n)_{n \in \mathbb{Z}}$ be the
+Let $(T_n)_{n \in \mathbb{Z}}$ be the
 integer sequence with $T_0 = 0$, $T_1 = T_2 = 1$ and $T_{j+3} = T_{j+2} + T_{j+1} + T_j$ for
 every integer $j$. If $n$ is an integer such that $|T_n| = m_1! \, m_2! \cdots m_k!$ for some
 $k \ge 1$ and some positive integers $m_1, \dots, m_k$, then

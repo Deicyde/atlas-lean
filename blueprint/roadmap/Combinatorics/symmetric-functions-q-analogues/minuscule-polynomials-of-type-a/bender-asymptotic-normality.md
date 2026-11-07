@@ -1,6 +1,6 @@
 # Bender's central limit theorem for polynomials with non-positive real zeros
 
-**Bender's central limit theorem for polynomials with non-positive real zeros.** For each
+For each
 natural number $n$ let $r_{n,0}, \dots, r_{n,n-1}$ be non-negative real numbers, and let $a(n,k)$
 be the coefficient of $x^k$ in the real polynomial $A_n(x) = \prod_{i\lt n} (x + r_{n,i})$. Put
 $\mu_n = \sum_{i\lt n} 1/(1 + r_{n,i})$ and $\sigma_n^2 = \sum_{i\lt n} r_{n,i}/(1 + r_{n,i})^2$, and let

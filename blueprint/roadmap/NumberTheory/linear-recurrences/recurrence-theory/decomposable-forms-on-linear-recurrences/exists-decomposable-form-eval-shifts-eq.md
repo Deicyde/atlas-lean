@@ -1,6 +1,6 @@
 # Decomposable forms on consecutive terms of one recurrence sequence
 
-**Decomposable forms on consecutive terms of one recurrence sequence.** Let
+Let
 $\gamma_0, \dots, \gamma_{k-1} \in \mathbb{C}$, let $\chi(x) = x^k - \sum_{i\lt k} \gamma_i x^i$,
 and let $G \colon \mathbb{Z} \to \mathbb{C}$ satisfy $G_{n+k} = \sum_{i\lt k} \gamma_i G_{n+i}$ for
 every $n \in \mathbb{Z}$. Suppose that the $k$ vectors

@@ -1,6 +1,6 @@
 # Alon–Spencer: the descending-wave number has cubic order
 
-**Alon–Spencer: the descending-wave number has cubic order.** For natural numbers $k$ and $n$, say
+For natural numbers $k$ and $n$, say
 that $n$ forces a $k$-term wave if every colouring of $\{1, \dots, n\}$ with two colours has a
 monochromatic $k$-term descending wave. There are real numbers $c > 0$ and $C$ such that for all
 sufficiently large $k$, every natural number $n$ that forces a $k$-term wave satisfies

@@ -1,6 +1,6 @@
 # Alternating stride sum
 
-**Alternating stride sum.** For natural numbers $q$, $t$ and $n$, let
+For natural numbers $q$, $t$ and $n$, let
 $K = \lfloor (n + q - 1)/q \rfloor$ if $q \ge 1$ and $K = 0$ if $q = 0$. The alternating stride
 sum is the real number
 

@@ -1,6 +1,6 @@
 # Mutual information of a finite joint law
 
-**Mutual information of a finite joint law.** Let $p$ be a probability distribution on
+Let $p$ be a probability distribution on
 $\alpha \times \beta$, where $\alpha$ and $\beta$ are finite measurable spaces in which every
 singleton is measurable, viewed as the joint law of a pair $(X, Y)$. Write $H(X, Y)$, $H(X)$ and
 $H(Y)$ for the Shannon entropies of $p$ and of its first and second marginals. Then the mutual

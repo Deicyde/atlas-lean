@@ -1,6 +1,6 @@
 # Holm's procedure is a closed test
 
-**Holm's procedure is a closed test.** For `α ≥ 0`, the hypotheses rejected by Holm's
+For `α ≥ 0`, the hypotheses rejected by Holm's
 step-down procedure are exactly those rejected by the closed testing procedure built on the
 Bonferroni local tests.
 

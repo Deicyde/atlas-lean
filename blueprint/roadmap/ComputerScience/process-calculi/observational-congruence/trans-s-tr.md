@@ -1,6 +1,6 @@
 # A rooted silent step followed by a weak transition is rooted
 
-**A rooted silent step followed by a weak transition is rooted.** In a labelled transition
+In a labelled transition
 system with a silent label $\tau$, if there is a rooted weak transition from $s$ to $m$ with
 label $\tau$ and a weak transition from $m$ to $t$ with label $\mu$, then there is a rooted weak
 transition from $s$ to $t$ with label $\mu$. Here a weak transition with label $\mu$ is either

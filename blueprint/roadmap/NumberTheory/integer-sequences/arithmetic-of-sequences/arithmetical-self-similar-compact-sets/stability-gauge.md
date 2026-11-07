@@ -1,6 +1,6 @@
 # Stability gauge
 
-**Stability gauge.** Let $K \subseteq \mathbb{R}$, let $\mu$ and $\rho$ be natural numbers, and
+Let $K \subseteq \mathbb{R}$, let $\mu$ and $\rho$ be natural numbers, and
 for a natural number $n$ let $g(n)$ be the un-normalized stability gauge of $n$ for $K$, $\mu$
 and $\rho$: the integer $\ell \mu - u$, where $\ell$ is least such that $n / \rho^\ell$ lies in
 some layer $T_u$ of $K$ and $u$ is the least such index (and $g(n) = 0$ if there is no such

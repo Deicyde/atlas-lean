@@ -1,6 +1,6 @@
 # Degenerate Daehee numbers
 
-**Degenerate Daehee numbers.** For a real number $\lambda$ and $n \in \mathbb{N}$, the
+For a real number $\lambda$ and $n \in \mathbb{N}$, the
 degenerate Daehee number is $D_{n,\lambda} = n! \binom{\lambda}{n+1} / \lambda$, where
 $\binom{\lambda}{k} = \lambda (\lambda - 1) \cdots (\lambda - k + 1) / k!$ is the generalized
 binomial coefficient (for $\lambda = 0$ the value is $0$, by the convention $x / 0 = 0$).

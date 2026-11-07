@@ -1,6 +1,6 @@
 # Applying a 2-local gate to a state
 
-**Applying a 2-local gate to a state.** Let $N$ be a number of qubits, and let a gate consist
+Let $N$ be a number of qubits, and let a gate consist
 of two qubit positions $i$ and $j$ together with a list of entries encoding a $4 \times 4$ complex
 matrix $U$ whose rows and columns are indexed by pairs of bits. For a state vector $\psi$ on $N$
 qubits, that is, a function from $\{0, \dots, 2^N - 1\}$ to $\mathbb{C}$, applying the gate gives

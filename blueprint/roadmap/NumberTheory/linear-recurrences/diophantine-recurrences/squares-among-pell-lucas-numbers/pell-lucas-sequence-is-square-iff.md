@@ -1,6 +1,6 @@
 # Square Pell–Lucas numbers
 
-**Square Pell–Lucas numbers.** For every natural number $n$, the Pell–Lucas number $Q_n$ is a
+For every natural number $n$, the Pell–Lucas number $Q_n$ is a
 perfect square if and only if $n = 0$ or $n = 1$; thus the only square terms of the sequence are
 $Q_0 = Q_1 = 1$.
 

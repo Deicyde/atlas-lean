@@ -1,6 +1,6 @@
 # Pushdown automaton
 
-**Pushdown automaton.** A pushdown automaton over an input alphabet $T$, with
+A pushdown automaton over an input alphabet $T$, with
 states in $\sigma$ and stack alphabet $\Gamma$, consists of a transition function, a start
 state in $\sigma$ and an initial stack symbol in $\Gamma$. The transition function assigns
 to each state $q$, each input option (a letter of $T$, or none for an

@@ -1,6 +1,6 @@
 # First coefficients of Ramanujan's theta function $\psi$
 
-**First coefficients of Ramanujan's theta function $\psi$.** Let
+Let
 $\psi(q) = f(q, q^3) = \sum_{m \in \mathbb{Z}} q^{m(m+1)/2 + 3m(m-1)/2}$, where $f$ is
 Ramanujan's general theta function. The coefficients of $q^0$, $q^1$, $q^2$, $q^3$ in $\psi(q)$
 are $1$, $1$, $0$, $1$.

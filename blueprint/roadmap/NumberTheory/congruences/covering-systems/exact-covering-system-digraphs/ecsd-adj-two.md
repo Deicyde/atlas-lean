@@ -1,6 +1,6 @@
 # Out-neighbours in a two-rule digraph
 
-**Out-neighbours in a two-rule digraph.** For all integers $d_1, d_2, a_1, a_2, x, y$, the
+For all integers $d_1, d_2, a_1, a_2, x, y$, the
 digraph $G(d_1 n + a_1, d_2 n + a_2)$ has an edge $x \to y$ iff $y = d_1 x + a_1$ or
 $y = d_2 x + a_2$.
 

@@ -1,6 +1,6 @@
 # The 0-1 risk of a deterministic classifier
 
-**The 0-1 risk of a deterministic classifier.** Let $C$ be a measurable space of classes with
+Let $C$ be a measurable space of classes with
 measurable singletons, $P$ a kernel from $C$ to the observation space $\mathcal X$, $\pi$ a
 measure on $C$, $f : \mathcal X \to C$ a measurable map, and $\ell(c, y)$ the 0-1 loss ($0$ if
 $y = c$, $1$ otherwise). Then the average 0-1 risk of the deterministic kernel

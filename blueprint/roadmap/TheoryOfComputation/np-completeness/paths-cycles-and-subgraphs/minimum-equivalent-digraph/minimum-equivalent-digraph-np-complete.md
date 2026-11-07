@@ -1,6 +1,6 @@
 # MINIMUM EQUIVALENT DIGRAPH is NP-complete
 
-**MINIMUM EQUIVALENT DIGRAPH is NP-complete.** The decision problem MINIMUM EQUIVALENT
+The decision problem MINIMUM EQUIVALENT
 DIGRAPH belongs to NP, and every decision problem in NP has a polynomial-time many-one reduction
 to it.
 

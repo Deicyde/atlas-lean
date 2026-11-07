@@ -1,6 +1,6 @@
 # Cantor–Straus lower bound for the asymptotic Dobrowolski constant
 
-**Cantor–Straus lower bound for the asymptotic Dobrowolski constant.** The asymptotic
+The asymptotic
 Dobrowolski constant is at least $2$, as an extended real number.
 
 ## Sources

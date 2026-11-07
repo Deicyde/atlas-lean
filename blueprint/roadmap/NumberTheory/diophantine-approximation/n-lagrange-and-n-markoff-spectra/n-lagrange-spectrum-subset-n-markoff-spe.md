@@ -1,6 +1,6 @@
 # The $n$-Lagrange spectrum lies in the $n$-Markoff spectrum, with attained suprema
 
-**The $n$-Lagrange spectrum lies in the $n$-Markoff spectrum, with attained suprema.** Let
+Let
 $n \ge 1$, let $L_n$ and $M_n$ be the $n$-Lagrange and $n$-Markoff spectra, and let $\mu_n$ be the
 $n$-Markoff approximability. Then $L_n \subseteq M_n$. Moreover, for every $\alpha \in L_n$ there
 are distinct irrational real numbers $\xi$ and $\xi'$ with $\mu_n(\xi, \xi') = \alpha$ at which the

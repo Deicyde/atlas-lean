@@ -1,6 +1,6 @@
 # Glaisher's divisor functions as series-divisors
 
-**Glaisher's divisor functions as series-divisors.** Let $n$ be a natural number. For a
+Let $n$ be a natural number. For a
 positive integer $m$, write $\sigma(m)$ for the sum of the divisors of $m$, $d_B(m)$ and
 $d_C(m)$ for the sums of the odd and of the even divisors of $m$, $d_D(m)$ and $d_E(m)$ for the
 sums of the divisors $d$ of $m$ with $m/d$ odd and with $m/d$ even,

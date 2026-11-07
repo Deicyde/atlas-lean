@@ -1,6 +1,6 @@
 # NP/NN duality
 
-**NP/NN duality.** Let $a$ be the array of a triangular recurrence with parameters
+Let $a$ be the array of a triangular recurrence with parameters
 $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$, with weights
 $w(n, k) = \alpha(n + 1) + \beta k + \gamma$ and $w'(n, k) = \alpha'(n + 1) + \beta' k + \gamma'$,
 and let $\tilde a$ be the array of the reflected recurrence, with parameters

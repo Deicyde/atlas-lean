@@ -1,3 +1,3 @@
 # Positivity of expected population counts on polymorphic data
 
-**Positivity of expected population counts on polymorphic data.** On polymorphic data the expected population counts are positive.
+On polymorphic data the expected population counts are positive.

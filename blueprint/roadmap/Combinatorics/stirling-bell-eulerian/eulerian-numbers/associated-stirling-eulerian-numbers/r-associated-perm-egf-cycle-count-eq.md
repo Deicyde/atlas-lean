@@ -1,6 +1,6 @@
 # Permutations with $k$ cycles, all of length greater than $r$, by excedances
 
-**Permutations with $k$ cycles, all of length greater than $r$, by excedances.** Let $R$ be a
+Let $R$ be a
 commutative $\mathbb{Q}$-algebra, $x \in R$ and $r, k \in \mathbb{N}$. For a permutation
 $\sigma$ of $\{0, \dots, n-1\}$ let $e(\sigma)$ be the number of $i$ with $\sigma(i) > i$ and
 $c(\sigma)$ the number of cycles of $\sigma$, fixed points included. Let

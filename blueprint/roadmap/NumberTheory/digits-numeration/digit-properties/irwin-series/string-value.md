@@ -1,6 +1,6 @@
 # Value of a digit string
 
-**Value of a digit string.** For a natural number $b$ and a base-$b$ digit string
+For a natural number $b$ and a base-$b$ digit string
 $X = x_1 x_2 \cdots x_\ell$ with digits $x_i \in \{0, \dots, b-1\}$, written with the most
 significant digit first, the integer value of $X$ is
 

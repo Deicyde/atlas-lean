@@ -1,6 +1,6 @@
 # Fundamental theorem of the reducibility relation
 
-**Fundamental theorem of the reducibility relation.** Let $t$ be a term of type $A$ in a
+Let $t$ be a term of type $A$ in a
 context $\Gamma$, and let $\sigma$ be a reducible substitution sending each variable of $\Gamma$
 to a closed term of the same type. Then the closed term obtained by applying $\sigma$ to $t$ is
 reducible.

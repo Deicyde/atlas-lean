@@ -1,6 +1,6 @@
 # Base change of a resolution to the residue field
 
-**Base change of a resolution to the residue field.** Let $K$ be a field, let
+Let $K$ be a field, let
 $R = K[x_1, \dots, x_n]$, and let $M$ be an $R$-module. Given a projective resolution
 $P_\bullet \to M$ over $R$, its base change is the chain complex of $K$-vector spaces
 $K \otimes_R P_\bullet$, indexed by $\mathbb{N}$ with differentials lowering the index,

@@ -1,6 +1,6 @@
 # Floor sequence parity count
 
-**Floor sequence parity count.** For a natural number $n$, the floor sequence parity count
+For a natural number $n$, the floor sequence parity count
 $\mathcal{F}_n$ is the number of integers $k$ with $1 \le k \le n$ for which
 $\lfloor n/k \rfloor$ is odd (OEIS A059851).
 

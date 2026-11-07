@@ -1,6 +1,6 @@
 # Growth function of the dense-set construction
 
-**Growth function of the dense-set construction.** Let $\operatorname{Log}_2$ be the second
+Let $\operatorname{Log}_2$ be the second
 iterated truncated logarithm. For real numbers $C_0$ and $x$, let $k$ be the natural number
 $\max(\lceil C_0 \sqrt{\operatorname{Log}_2 x}\,\rceil - 1, 0)$, and set
 $h = \operatorname{Log}_2 x - k^2/C_0^2 + 1$, $x' = \exp(\exp((k + 1)^2/C_0^2))$,

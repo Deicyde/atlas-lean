@@ -1,4 +1,4 @@
 # Convolution of coordinate vectors
 
-**Convolution of coordinate vectors.** Convolution of two coordinate vectors: positions add, coefficients
+Convolution of two coordinate vectors: positions add, coefficients
 multiply.

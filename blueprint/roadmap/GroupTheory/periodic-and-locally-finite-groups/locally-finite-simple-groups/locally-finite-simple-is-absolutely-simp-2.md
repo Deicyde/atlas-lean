@@ -1,6 +1,6 @@
 # Locally finite simple groups need not be absolutely simple
 
-**Locally finite simple groups need not be absolutely simple.** There is a locally finite simple
+There is a locally finite simple
 group $G$ with a composition series, in Kurosh's sense, other than the series consisting of the
 trivial subgroup and $G$ alone. That is, the statement of Kourovka Problem 11.108, that every
 locally finite simple group is absolutely simple, is false.

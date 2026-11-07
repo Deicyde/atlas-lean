@@ -1,6 +1,6 @@
 # For odd $p$ the signs in $g_\lambda$ are constant
 
-**For odd $p$ the signs in $g_\lambda$ are constant.** Let $p$ be an odd prime, $\sigma$ a
+Let $p$ be an odd prime, $\sigma$ a
 finite set of variables and $\lambda$ a partition of $n$ with $\ell(\lambda)$ parts. Then the
 $p$-equivalence class sum $g_\lambda$ in $\mathbb{Q}[x_i : i \in \sigma]$ satisfies
 

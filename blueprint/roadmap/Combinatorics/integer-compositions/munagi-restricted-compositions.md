@@ -1,6 +1,6 @@
 # Munagi's theorem on restricted compositions
 
-**Munagi's theorem on restricted compositions.** For positive integers $n$ and $k$, the number
+For positive integers $n$ and $k$, the number
 of compositions of $n$ all of whose parts are congruent to $1$ modulo $k$ equals the number of
 compositions of $n + k - 1$ all of whose parts are at least $k$.
 

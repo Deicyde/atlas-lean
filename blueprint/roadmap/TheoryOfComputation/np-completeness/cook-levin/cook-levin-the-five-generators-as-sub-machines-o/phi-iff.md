@@ -1,6 +1,6 @@
 # Correctness of the assembled formula
 
-**Correctness of the assembled formula.** Let $M$ be a finite multi-stack Turing machine with
+Let $M$ be a finite multi-stack Turing machine with
 encoding data $E$, let $x$ and $Y$ be lists of input symbols of $M$, let $\mathit{acc}$ be an
 output symbol of $M$, and let $m, T \in \mathbb{N}$. Suppose that $|x| \le m$ and that
 $\mathit{acc}$ is one of the effective symbols of the output stack under $E$. Then the formula

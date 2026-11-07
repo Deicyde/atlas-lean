@@ -1,6 +1,5 @@
 # Goodness pulls back along compositions of the digit-square map and the successor map
 
-**Goodness pulls back along compositions of the digit-square map and the successor map.**
 Let $b \le -2$ be an integer, let $S_{2,b}$ be the map sending an integer to the sum of the
 squares of its base-$b$ digits, and let $I(t) = t + 1$. Let $T$ be a finite set of positive
 integers and let $F$ be a composition $F = f_1 \circ \dots \circ f_m$ with $m \ge 0$ (the empty

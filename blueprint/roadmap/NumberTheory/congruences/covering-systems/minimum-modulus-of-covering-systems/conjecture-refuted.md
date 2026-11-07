@@ -1,6 +1,6 @@
 # Hough's minimum modulus theorem
 
-**Hough's minimum modulus theorem.** There is a natural number $N$ such that no finite set of
+There is a natural number $N$ such that no finite set of
 residue classes covering $\mathbb{Z}$ has pairwise distinct moduli that are all at least $N$.
 Hence the conjecture of Open Garden problem OPG-493 is false.
 

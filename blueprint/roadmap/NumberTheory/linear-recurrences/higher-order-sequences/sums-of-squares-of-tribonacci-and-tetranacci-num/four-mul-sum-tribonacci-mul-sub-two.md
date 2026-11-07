@@ -1,6 +1,6 @@
 # Sum of products of Tribonacci terms two apart
 
-**Sum of products of Tribonacci terms two apart.** Let $T \colon \mathbb{Z} \to \mathbb{Z}$
+Let $T \colon \mathbb{Z} \to \mathbb{Z}$
 satisfy $T(m+3) = T(m+2) + T(m+1) + T(m)$ for every integer $m$. Then for every
 natural number $n$,
 

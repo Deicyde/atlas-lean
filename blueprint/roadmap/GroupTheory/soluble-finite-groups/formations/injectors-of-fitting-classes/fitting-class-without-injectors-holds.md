@@ -1,6 +1,6 @@
 # A Fitting class with no injectors in a non-soluble group
 
-**A Fitting class with no injectors in a non-soluble group.** There are a Fitting class
+There are a Fitting class
 $\mathfrak{X}$ of finite groups that contains at least one finite group and a finite non-soluble
 group $G$ such that no subgroup of $G$ is an $\mathfrak{X}$-injector of $G$.
 

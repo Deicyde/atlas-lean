@@ -1,6 +1,6 @@
 # The set $\{1, 3, 4\}$ is not well based
 
-**The set $\{1, 3, 4\}$ is not well based.** The set $\{1, 3, 4\}$ is not well based: in
+The set $\{1, 3, 4\}$ is not well based: in
 $4 = 2 + 2$ neither part lies in the set.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Exact depth of the carry-lookahead adder
 
-**Exact depth of the carry-lookahead adder.** For all $K \ge 1$ and $n \ge 2$, the $n$-bit
+For all $K \ge 1$ and $n \ge 2$, the $n$-bit
 Kogge-Stone carry-lookahead adder with $K$ levels has depth exactly $2K + 3$, the depth being the
 largest depth of an output with the inputs at depth $0$.
 

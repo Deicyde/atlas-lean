@@ -1,6 +1,6 @@
 # Postorder encoding after a prefix
 
-**Postorder encoding after a prefix.** For a regular expression $r$ and a list $l$ of nodes,
+For a regular expression $r$ and a list $l$ of nodes,
 the nodes of $r$ are appended after $l$ in postorder, by recursion on $r$. For $0$, $1$ and a
 letter $a$, append the single node $0$, $1$ or $a$. For a sum $s + t$ (respectively a
 concatenation $st$), append the nodes of $s$ after $l$, giving $l_1$, then the nodes of $t$ after

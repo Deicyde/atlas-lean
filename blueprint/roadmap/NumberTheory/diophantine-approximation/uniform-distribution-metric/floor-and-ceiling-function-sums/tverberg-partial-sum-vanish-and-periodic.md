@@ -1,6 +1,6 @@
 # Vanishing and periodicity of partial Tverberg sums
 
-**Vanishing and periodicity of partial Tverberg sums.** Let $\ell \ge 2$, let
+Let $\ell \ge 2$, let
 $a = (a_1, \dots, a_\ell)$ be integers and let $m$ be a natural number. Let $F$ be one of
 $\lfloor \cdot \rfloor$, $\lceil \cdot \rceil$, $r^+(y) = \lfloor y + 1/2 \rfloor$ and
 $r^-(y) = \lceil y - 1/2 \rceil$, and for an integer $k$ let

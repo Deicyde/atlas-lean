@@ -1,6 +1,6 @@
 # Outer-sector bound for the quadratic integral remainder
 
-**Outer-sector bound for the quadratic integral remainder.** Let $z \ne 0$ be a complex number
+Let $z \ne 0$ be a complex number
 with $\pi/2 \le |\arg z| < \pi$, where $\arg z \in (-\pi, \pi]$ is the principal argument, and
 let $T_2(z) = \frac{e^{-z}}{z} \cdot \frac{(-1)^2 \, 2!}{z^2}$ be the $n = 2$ term of the
 asymptotic expansion of $E_1$. Then

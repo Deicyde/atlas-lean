@@ -1,6 +1,6 @@
 # When every rearrangement of a preference is $k$-Naples
 
-**When every rearrangement of a preference is $k$-Naples.** Let
+Let
 $\alpha = (a_1, \dots, a_n) \in \{1, \dots, n\}^n$ and let $P$ be its lattice path: for each
 spot $s = 1, \dots, n$ in turn, one Up step for every car preferring $s$, then one Down step
 (this is also the lattice path of the ascending rearrangement of $\alpha$). The height of $P$

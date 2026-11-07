@@ -1,6 +1,6 @@
 # $U_{0,j}$ is empty
 
-**$U_{0,j}$ is empty.** For every natural number $j$, the set $U_{0,j}$ is empty.
+For every natural number $j$, the set $U_{0,j}$ is empty.
 
 ## Sources
 

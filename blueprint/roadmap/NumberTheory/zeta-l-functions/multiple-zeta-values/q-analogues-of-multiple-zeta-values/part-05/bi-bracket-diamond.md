@@ -1,6 +1,6 @@
 # Bachmann's product of bi-bracket letters
 
-**Bachmann's product of bi-bracket letters.** Write $z_{k,d}$ for the letter indexed by a pair
+Write $z_{k,d}$ for the letter indexed by a pair
 $(k, d)$ of natural numbers, and let $\lambda_{a,b}^j$ be Bachmann's coefficients. The product of
 the letters $z_{k_1,d_1}$ and $z_{k_2,d_2}$ is the formal $\mathbb{Q}$-linear combination of letters
 

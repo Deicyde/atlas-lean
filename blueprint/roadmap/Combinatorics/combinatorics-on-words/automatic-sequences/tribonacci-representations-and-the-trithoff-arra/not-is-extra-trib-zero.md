@@ -1,6 +1,6 @@
 # The zero sequence is not an extraTrib
 
-**The zero sequence is not an extraTrib.** The constant sequence $n \mapsto 0$ on
+The constant sequence $n \mapsto 0$ on
 $\mathbb{Z}$ is not an extraTrib.
 
 ## Sources

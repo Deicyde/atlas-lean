@@ -1,6 +1,6 @@
 # The map $V$ is a bijection on combinations of SZ-admissible indices
 
-**The map $V$ is a bijection on combinations of SZ-admissible indices.** Call an index
+Call an index
 $(k_1, \dots, k_r)$ of natural numbers SZ-admissible if it is empty or $k_1 \ge 1$ (the entries
 $k_2, \dots, k_r$ may be $0$). Extend the map $V$ from OOZ to SZ indices $\mathbb{Q}$-linearly to
 finite $\mathbb{Q}$-linear combinations of indices. This extension maps the set of

@@ -1,6 +1,6 @@
 # Product DFA of a sequential transducer and a DFA
 
-**Product DFA of a sequential transducer and a DFA.** Let $S$ be a sequential transducer
+Let $S$ be a sequential transducer
 with state type $Q$, input alphabet $\Sigma$ and output alphabet $\Gamma$, and let $M$ be a DFA
 over $\Gamma$ with state type $P$. The product DFA of $S$ and $M$ is the DFA over $\Sigma$ with
 state type $Q \times P$ defined as follows. In state $(q, r)$ on a letter $a$, if $S$ moves from

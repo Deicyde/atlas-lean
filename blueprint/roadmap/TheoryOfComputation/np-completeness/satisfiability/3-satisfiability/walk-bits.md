@@ -1,6 +1,6 @@
 # Walking over name bits keeps the label
 
-**Walking over name bits keeps the label.** Let $\mathrm{cap}$ be a Boolean, $n \in \mathbb{N}$
+Let $\mathrm{cap}$ be a Boolean, $n \in \mathbb{N}$
 and $R$ a list of symbols; stacks are lists written top first, $w_n$ is the walking label after
 $n$ literals and $\mathrm{bit}(b)$ is the name-bit symbol carrying the Boolean $b$. For all
 Booleans $b_1, \dots, b_k$, every list of symbols $U$ and every Boolean $v$ there is a Boolean

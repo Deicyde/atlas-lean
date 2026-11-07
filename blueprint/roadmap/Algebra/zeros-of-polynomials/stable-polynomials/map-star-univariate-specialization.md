@@ -1,6 +1,6 @@
 # Univariate specialization at real values preserves real coefficients
 
-**Univariate specialization at real values preserves real coefficients.** Let $p$ be a
+Let $p$ be a
 complex multivariate polynomial with real coefficients in variables $X_j$ indexed by
 $j \in \sigma$, let $i \in \sigma$, and let $a : \sigma \to \mathbb{C}$ with $a_j$ real for every
 $j \ne i$. Then the univariate specialization of $p$ that keeps $X_i$ as the variable and sets

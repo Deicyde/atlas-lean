@@ -1,6 +1,6 @@
 # Pyber's conjecture for $\mathrm{PSL}(2, p)$ holds
 
-**Pyber's conjecture for $\mathrm{PSL}(2, p)$ holds.** There is a natural number $N$ such that for
+There is a natural number $N$ such that for
 every prime $p$ the following holds. Let $G = \mathrm{PSL}(2, p)$ be the quotient of
 $\mathrm{SL}(2, \mathbb{Z}/p\mathbb{Z})$ by its center. If $G$ has a subset $S$ with
 $g s g^{-1} \in S$ and $s^{-1} \in S$ for all $g \in G$ and $s \in S$, with more than

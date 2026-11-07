@@ -1,6 +1,6 @@
 # Centered cylinders lie in the increment σ-algebra
 
-**Centered cylinders lie in the increment σ-algebra.** Let $B = (B_t)_{t \ge 0}$ be a real
+Let $B = (B_t)_{t \ge 0}$ be a real
 process on a measurable space $\Omega$, let $s \ge 0$ and let $S$ be a finite set of nonnegative
 reals. For $u \ge 0$ let $p_S(u)$ be the largest element of $S$ strictly below $u$, or $0$ if
 there is none, and let $\Delta_u = B_{s+u} - B_{s+p_S(u)}$. Let $\mathcal{G}_S$ be the σ-algebra

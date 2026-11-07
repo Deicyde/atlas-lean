@@ -1,6 +1,6 @@
 # Derived solidification
 
-**Derived solidification.** A functor from the derived category of light condensed abelian
+A functor from the derived category of light condensed abelian
 groups to the derived category of light solid abelian groups.
 
 Separate statements require it to be the left derived functor of degreewise solidification and

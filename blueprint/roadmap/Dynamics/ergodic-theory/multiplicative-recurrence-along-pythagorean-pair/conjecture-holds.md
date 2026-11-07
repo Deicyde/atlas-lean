@@ -1,6 +1,6 @@
 # Multiplicative recurrence along Pythagorean pairs
 
-**Multiplicative recurrence along Pythagorean pairs.** Let $(X, \mu)$ be a probability space
+Let $(X, \mu)$ be a probability space
 and let $(T_a)_{a \ge 1}$, indexed by the positive integers, be measurable bijections of $X$ with
 measurable inverses that preserve $\mu$, such that $T_1$ is the identity and
 $T_{ab} = T_a \circ T_b$ for all positive integers $a, b$. Then for every measurable set

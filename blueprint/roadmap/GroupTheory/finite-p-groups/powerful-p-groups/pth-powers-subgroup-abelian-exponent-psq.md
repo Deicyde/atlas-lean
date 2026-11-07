@@ -1,6 +1,6 @@
 # Kourovka 21.137, odd-prime form
 
-**Kourovka 21.137, odd-prime form.** The proposition that there is an odd prime $p$ such that
+The proposition that there is an odd prime $p$ such that
 for every finite $p$-group $G$ of exponent $p^2$ and every subgroup $P$ of $G$ whose underlying
 set is exactly the set $\{x^p : x \in G\}$ of $p$-th powers in $G$, the subgroup $P$ is abelian.
 

@@ -1,6 +1,6 @@
 # A partition lies in the class of its diagonal sequence
 
-**A partition lies in the class of its diagonal sequence.** Every partition $\beta$ of $n$
+Every partition $\beta$ of $n$
 belongs to the set of partitions of $n$ whose diagonal sequence equals that of $\beta$.
 
 ## Sources

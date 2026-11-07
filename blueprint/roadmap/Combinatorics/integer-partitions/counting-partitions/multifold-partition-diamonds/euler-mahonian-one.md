@@ -1,6 +1,6 @@
 # The first Euler–Mahonian polynomial is $1$
 
-**The first Euler–Mahonian polynomial is $1$.** For every commutative ring $R$ and all
+For every commutative ring $R$ and all
 $x, y \in R$, the Euler–Mahonian polynomial $E_1$ satisfies $E_1(x, y) = 1$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The remainder count of 12
 
-**The remainder count of 12.** The number $s(12)$ of distinct remainders $12 \bmod k$ for
+The number $s(12)$ of distinct remainders $12 \bmod k$ for
 $1 \le k \le 6$ equals $2$.
 
 This is a drop from $s(11) = 4$, the number of distinct remainders $11 \bmod k$ for

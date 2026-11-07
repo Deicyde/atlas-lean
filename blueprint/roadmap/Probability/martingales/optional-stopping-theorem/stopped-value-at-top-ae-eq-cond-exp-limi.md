@@ -1,6 +1,6 @@
 # Stopped value as conditional expectation of the limit
 
-**Stopped value as conditional expectation of the limit.** Let $\mu$ be a probability measure
+Let $\mu$ be a probability measure
 on $\Omega$, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration, and let
 $(f_n)_{n \in \mathbb{N}}$ be a real-valued martingale with respect to $(\mathcal{F}_n)$ and $\mu$
 that is uniformly integrable in $L^1(\mu)$. Let $f_\infty$ be its limit process, a function

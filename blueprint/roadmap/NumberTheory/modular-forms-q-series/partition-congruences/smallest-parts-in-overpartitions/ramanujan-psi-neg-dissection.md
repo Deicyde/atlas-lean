@@ -1,6 +1,6 @@
 # 3-dissection of the product form of Ramanujan's psi function at negated argument
 
-**3-dissection of the product form of Ramanujan's psi function at negated argument.** Let $q$ be
+Let $q$ be
 a complex number with $|q| < 1$, and for $k \ge 1$ let
 $f_k = (q^k; q^k)_\infty = \prod_{n=0}^{\infty} (1 - q^k (q^k)^n)$ be the raw infinite
 q-Pochhammer product. Then

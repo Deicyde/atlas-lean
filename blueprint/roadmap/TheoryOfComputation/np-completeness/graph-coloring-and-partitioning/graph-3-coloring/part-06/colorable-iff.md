@@ -1,6 +1,6 @@
 # 3-colorability by witness bits
 
-**3-colorability by witness bits.** Let $n \in \mathbb{N}$ and let $es$ be a list of pairs of
+Let $n \in \mathbb{N}$ and let $es$ be a list of pairs of
 natural numbers whose entries are all less than $n$. The graph on the vertices $0, \dots, n-1$
 with edge list $es$ (symmetrized, loops dropped) is 3-colorable iff there is a list $w$ of exactly
 $2n$ bits such that, writing the color code of vertex $i$ for the pair of bits $2i$ and $2i+1$ of

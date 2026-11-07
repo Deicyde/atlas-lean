@@ -1,6 +1,6 @@
 # Amortized bound for move-to-front over a request sequence, with free exchanges
 
-**Amortized bound for move-to-front over a request sequence, with free exchanges.** Let $M$ be
+Let $M$ be
 a list without duplicates, $\sigma$ a sequence of $m$ requests, each an item of $M$, $L_0, L_1,
 \dots$ lists that are each a rearrangement of $M$, and $J_0, J_1, \dots$ natural numbers.
 Accessing the item at position $i$ of a list, counting from $1$, costs $i$. Let $C$ be the total

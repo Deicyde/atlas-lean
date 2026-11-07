@@ -1,6 +1,6 @@
 # Monsky's theorem
 
-**Monsky's theorem.** Let $T$ be a finite set of subsets of the Euclidean plane
+Let $T$ be a finite set of subsets of the Euclidean plane
 $\mathbb{R}^2$ such that every member of $T$ is the convex hull of three points $a, b, c$ of the
 plane (not necessarily distinct), the union of the members of $T$ is the closed unit square
 $[0,1]^2$, any two distinct members of $T$ have disjoint interiors, and all members of $T$ have

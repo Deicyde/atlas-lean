@@ -1,6 +1,6 @@
 # Step relation of the stack machine
 
-**Step relation of the stack machine.** Let $P$ be a program, that is a list of instructions,
+Let $P$ be a program, that is a list of instructions,
 and write $a :: \sigma$ for the stack with top $a$ above the stack $\sigma$. A configuration
 $(pc, \sigma, s)$ steps to a configuration $c'$ under $P$ exactly when $pc < |P|$ and, for the
 instruction at position $pc$ of $P$ (counted from $0$), one of the following holds, where

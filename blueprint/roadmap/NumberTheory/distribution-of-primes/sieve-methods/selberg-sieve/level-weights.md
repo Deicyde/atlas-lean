@@ -1,6 +1,6 @@
 # Selberg sieve weights
 
-**Selberg sieve weights.** Let $s$ be a bounding sieve with sifting product $P$ (the product
+Let $s$ be a bounding sieve with sifting product $P$ (the product
 of its sifting primes) and density function $\nu$, let $R$ be a natural number, and let $y_m$
 denote the normalized Selberg coefficients of $s$ at level $R$. For a natural number $d$, the
 level-$R$ Selberg weight of $s$ at $d$ is

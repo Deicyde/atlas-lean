@@ -1,6 +1,6 @@
 # Euler–Maclaurin formula
 
-**Euler–Maclaurin formula.** Let $a < b$ be integers, let $p \ge 1$ be a natural number, and
+Let $a < b$ be integers, let $p \ge 1$ be a natural number, and
 let $f : \mathbb{R} \to \mathbb{R}$ be $p$ times continuously differentiable on $[a, b]$, its
 derivatives $f^{(k)}$ being taken relative to $[a, b]$ (one-sided at the endpoints). Let $B_j$
 be the Bernoulli numbers with $B_1 = -\tfrac{1}{2}$. Then there are $1$-periodic functions

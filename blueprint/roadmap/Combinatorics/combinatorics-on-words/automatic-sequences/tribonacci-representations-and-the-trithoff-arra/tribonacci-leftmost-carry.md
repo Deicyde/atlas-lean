@@ -1,6 +1,6 @@
 # Leftmost carrying
 
-**Leftmost carrying.** Let $w = w_0 w_1 \cdots w_{\ell-1}$ be a word of natural-number digits,
+Let $w = w_0 w_1 \cdots w_{\ell-1}$ be a word of natural-number digits,
 written most significant digit first with positions numbered from $0$, and let $k$ be the least
 index with $k + 3 < \ell$ and $w_{k+1}, w_{k+2}, w_{k+3} > 0$. Leftmost carrying replaces the
 block $w_k w_{k+1} w_{k+2} w_{k+3}$ by $(w_k + 1)(w_{k+1} - 1)(w_{k+2} - 1)(w_{k+3} - 1)$ and

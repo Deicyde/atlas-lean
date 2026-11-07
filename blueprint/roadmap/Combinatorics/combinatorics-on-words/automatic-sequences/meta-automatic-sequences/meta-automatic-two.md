@@ -1,6 +1,6 @@
 # The meta-automatic sequence $\mathcal{M}_2$
 
-**The meta-automatic sequence $\mathcal{M}_2$.** The meta-automatic sequence
+The meta-automatic sequence
 $\mathcal{M}_2 : \mathbb{N} \to \{0, 1\}$ (OEIS A391614) is defined by $\mathcal{M}_2(0) = 0$,
 $\mathcal{M}_2(1) = 1$, $\mathcal{M}_2(4n) = \mathcal{M}_2(2n + \mathcal{M}_2(n))$ and
 $\mathcal{M}_2(4n+1) = 1 - \mathcal{M}_2(4n)$ for $n \ge 1$, and

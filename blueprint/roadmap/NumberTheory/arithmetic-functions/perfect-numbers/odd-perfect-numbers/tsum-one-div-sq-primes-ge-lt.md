@@ -1,6 +1,6 @@
 # Tail bound for the sum of $1/p^2$ over primes
 
-**Tail bound for the sum of $1/p^2$ over primes.** Let $q \ge 3$ be a prime and let
+Let $q \ge 3$ be a prime and let
 $M(q) = \sum_{p \ge q} 1/p^2$ be the sum over all primes $p \ge q$. Then
 $M(q) < \frac{1}{q \log q}\left(1 + \frac{2 \log \log q}{\log q}\right)$,
 where $\log$ is the natural logarithm.

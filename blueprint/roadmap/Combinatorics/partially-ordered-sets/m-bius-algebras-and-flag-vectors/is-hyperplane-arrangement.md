@@ -1,6 +1,6 @@
 # Hyperplane arrangement
 
-**Hyperplane arrangement.** Let $K$ be a field, let $V$ be a finite-dimensional vector space
+Let $K$ be a field, let $V$ be a finite-dimensional vector space
 over $K$, and let $E$ be an affine subspace of $V$, possibly empty. The dimension of a nonempty
 affine subspace $v + W$, with $v \in V$ and $W$ a linear subspace of $V$, is $\dim W$. An affine
 hyperplane of $E$ is a nonempty affine subspace $H$ of $V$ with $H \subseteq E$ and

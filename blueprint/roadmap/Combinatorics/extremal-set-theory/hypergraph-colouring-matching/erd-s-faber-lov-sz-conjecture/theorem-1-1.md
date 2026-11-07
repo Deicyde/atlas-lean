@@ -1,6 +1,6 @@
 # Erdős–Faber–Lovász conjecture for sufficiently many vertices
 
-**Erdős–Faber–Lovász conjecture for sufficiently many vertices.** For every sufficiently large
+For every sufficiently large
 natural number $n$, every linear hypergraph on the vertex set $\{0, 1, \dots, n-1\}$ has chromatic
 index at most $n$.
 

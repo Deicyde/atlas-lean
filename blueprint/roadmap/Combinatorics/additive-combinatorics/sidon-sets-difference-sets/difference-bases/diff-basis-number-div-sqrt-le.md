@@ -1,6 +1,6 @@
 # Upper bound for the $g$-difference basis number
 
-**Upper bound for the $g$-difference basis number.** For natural numbers $g$ and $n$, let
+For natural numbers $g$ and $n$, let
 $\eta_g(n)$ be the least size of a finite set $A \subseteq \mathbb{Z}$ such that every
 $x \in \{1, \dots, n\}$ is the difference $a - a'$ of at least $g$ ordered pairs
 $(a, a') \in A \times A$. Then for all natural numbers $g$ and $n$,

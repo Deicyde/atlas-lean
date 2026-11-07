@@ -1,6 +1,6 @@
 # Melham's gibonacci sum-of-squares identity
 
-**Melham's gibonacci sum-of-squares identity.** Let $G : \mathbb{Z} \to \mathbb{Z}$ satisfy
+Let $G : \mathbb{Z} \to \mathbb{Z}$ satisfy
 $G(j+2) = G(j+1) + G(j)$ for every integer $j$, with $G(0) \ne 0$ or $G(1) \ne 0$, and let $F_m$
 denote the $m$-th Fibonacci number. Then for every integer $k$ and every natural number $n \ge 1$,
 

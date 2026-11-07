@@ -1,6 +1,6 @@
 # Sweep completeness when the leftmost intersection is a left endpoint
 
-**Sweep completeness when the leftmost intersection is a left endpoint.** Let $n$ segments in
+Let $n$ segments in
 the plane over a linearly ordered field be given, where $z_1$ is the abscissa of a point $z$ and
 segment $i$ has left endpoint $l_i$ and right endpoint $r_i$ with $(l_i)_1 < (r_i)_1$, and
 suppose no point lies on three distinct segments. Let $a \ne b$ be segments such that $l_a$ lies

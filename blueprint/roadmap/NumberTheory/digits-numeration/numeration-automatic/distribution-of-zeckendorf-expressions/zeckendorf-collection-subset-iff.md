@@ -1,6 +1,6 @@
 # Criterion for one Zeckendorf collection to contain another
 
-**Criterion for one Zeckendorf collection to contain another.** Let $E$ and $\tilde E$ be
+Let $E$ and $\tilde E$ be
 Zeckendorf collections. For $n \ge 2$ let $\beta^n$ be the basis coefficient function with entry
 $1$ at position $n$ (positions counted from $1$) and $0$ elsewhere, and let $\hat\beta^n$ be the
 immediate predecessor of $\beta^n$ in $E$ (the largest element of $E$ that is $\lt _a \beta^n$ in the

@@ -1,6 +1,6 @@
 # The mean gcd-sum function
 
-**The mean gcd-sum function.** For a natural number $n$, let $P(n) = \sum_{j=1}^{n} \gcd(j, n)$
+For a natural number $n$, let $P(n) = \sum_{j=1}^{n} \gcd(j, n)$
 be Pillai's gcd-sum function. The mean gcd-sum function is the real-valued function given by
 $A(n) = P(n)/n$ for $n \ge 1$ and $A(0) = 0$.
 

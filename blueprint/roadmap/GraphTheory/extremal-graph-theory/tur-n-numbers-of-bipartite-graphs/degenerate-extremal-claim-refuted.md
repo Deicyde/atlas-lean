@@ -1,6 +1,6 @@
 # Counterexample to the Erdős–Simonovits degeneracy conjecture
 
-**Counterexample to the Erdős–Simonovits degeneracy conjecture.** It is not true that for
+It is not true that for
 every finite simple graph $H$ and every natural number $r \ge 1$ such that $H$ is bipartite and
 $r$-degenerate (every nonempty set of vertices contains a vertex with at most $r$ neighbours in
 that set), the extremal number $\mathrm{ex}(n; H)$ (the largest number of edges of a simple

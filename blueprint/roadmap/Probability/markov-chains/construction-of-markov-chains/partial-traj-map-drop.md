@@ -1,6 +1,6 @@
 # Shifted finite-dimensional distributions
 
-**Shifted finite-dimensional distributions.** Let $\kappa$ be a Markov kernel on $S$ and
+Let $\kappa$ be a Markov kernel on $S$ and
 $a, b \in \mathbb{N}$. For a history $x = (x_0, \dots, x_a)$ of states in $S$, let $Q_x$ be the
 law of the history $(X_0, \dots, X_{a+b})$ that equals $x$ at times $0, \dots, a$ and then draws
 each next state from $\kappa$ applied to the current state (the Ionescu–Tulcea partial

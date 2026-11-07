@@ -1,6 +1,6 @@
 # Ramanujan's level-10 theta function identities
 
-**Ramanujan's level-10 theta function identities.** For complex $x$ with $|x| < 1$, let
+For complex $x$ with $|x| < 1$, let
 $\varphi(x) = \sum_{n \in \mathbb{Z}} x^{n^2}$, $\psi(x) = \sum_{n \ge 0} x^{n(n+1)/2}$ and
 $f(-x) = \prod_{n \ge 1} (1 - x^n)$, so that $f(x) = \prod_{n \ge 1} (1 - (-x)^n)$. Then for
 every complex number $q$ with $|q| < 1$,

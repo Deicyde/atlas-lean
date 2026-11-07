@@ -1,6 +1,6 @@
 # Level-number factorization of the $m$-level rook polynomial
 
-**Level-number factorization of the $m$-level rook polynomial.** Let $m \ge 1$ and let
+Let $m \ge 1$ and let
 $B = (b_1, \dots, b_n)$ be a Ferrers board, that is $b_1 \le \dots \le b_n$, with $b_i \le mn$ for
 every $i$. Number the rows from $0$ at the bottom, so that column $i$ has the cells in rows
 $0, \dots, b_i - 1$, and for $1 \le j \le n$ let $l_j$ be the number of cells of $B$ whose row $r$

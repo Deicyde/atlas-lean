@@ -1,6 +1,6 @@
 # Number of $k$-box paths with $j$ long ascents
 
-**Number of $k$-box paths with $j$ long ascents.** Let $k \ge 1$, $n \ge 1$ and $j \ge 1$,
+Let $k \ge 1$, $n \ge 1$ and $j \ge 1$,
 and let $a_{k,n,j}$ be the number of $k$-box paths of size $n$ with exactly $j$ long ascents.
 Then
 

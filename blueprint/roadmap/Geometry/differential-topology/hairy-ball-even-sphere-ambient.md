@@ -1,6 +1,6 @@
 # Hairy ball theorem
 
-**Hairy ball theorem.** Let $k \in \mathbb{N}$ and let $E$ be a real inner product space of
+Let $k \in \mathbb{N}$ and let $E$ be a real inner product space of
 dimension $2k + 1$, with unit sphere $S = \{x \in E : \|x\| = 1\}$. If $f : S \to E$ is
 continuous and $\langle f(x), x \rangle = 0$ for every $x \in S$, then $f(x) = 0$ for some
 $x \in S$.

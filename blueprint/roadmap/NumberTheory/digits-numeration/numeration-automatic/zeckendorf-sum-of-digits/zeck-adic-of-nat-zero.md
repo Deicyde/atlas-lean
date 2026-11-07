@@ -1,6 +1,6 @@
 # Zeckendorf digit sequence of zero
 
-**Zeckendorf digit sequence of zero.** The Zeckendorf digit sequence of $0$ is the zero
+The Zeckendorf digit sequence of $0$ is the zero
 sequence: all of its digits are $0$, because the Zeckendorf representation of $0$ is empty.
 
 ## Sources

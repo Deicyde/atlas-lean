@@ -1,6 +1,6 @@
 # Almost opposable graphs are first-player wins in Snort
 
-**Almost opposable graphs are first-player wins in Snort.** For every finite simple graph $G$
+For every finite simple graph $G$
 that is almost opposable, the first player wins Snort on $G$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The grown prefix is a long iterate of $\tau_k$
 
-**The grown prefix is a long iterate of $\tau_k$.** Let $\tau_k$ be the substitution sending
+Let $\tau_k$ be the substitution sending
 the letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, extended letterwise to words, and
 let $\mathrm{grow}_k(n)$ be the word obtained from the one-letter word $k$ by applying $\tau_k$
 until it has more than $n$ letters, at most $n$ times. For all natural numbers $k$ and $n$ there

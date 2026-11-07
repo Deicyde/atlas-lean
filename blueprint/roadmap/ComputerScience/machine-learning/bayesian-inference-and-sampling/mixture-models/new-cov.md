@@ -1,6 +1,6 @@
 # Covariance update of the full-covariance Gaussian mixture
 
-**Covariance update of the full-covariance Gaussian mixture.** Given data $(x_n)_{n\lt N}$
+Given data $(x_n)_{n\lt N}$
 in $\mathbb{R}^d$, valid parameters $\theta$ and a component $k$, let $r_{nk}$ be the
 responsibility of component $k$ for $x_n$, let $N_k = \sum_n r_{nk}$, and let $\mu_k'$ be the
 responsibility-weighted mean $N_k^{-1} \sum_n r_{nk} x_n$. The covariance update is the real

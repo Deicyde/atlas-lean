@@ -1,6 +1,6 @@
 # Deterministic space classes on multi-tape machines
 
-**Deterministic space classes on multi-tape machines.** For $s : \mathbb{N} \to \mathbb{N}$,
+For $s : \mathbb{N} \to \mathbb{N}$,
 $\mathrm{DSPACE}(s)$ is the set of languages $L$ of Boolean strings for which there are constants
 $c_1, c_2 \in \mathbb{N}$, a function $t : \mathbb{N} \to \mathbb{N}$ and a deterministic
 multi-tape Turing machine with Boolean tape alphabet and finitely many states such that, on every

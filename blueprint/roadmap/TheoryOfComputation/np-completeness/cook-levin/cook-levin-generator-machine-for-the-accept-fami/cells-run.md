@@ -1,6 +1,6 @@
 # Run of the accept cell chain
 
-**Run of the accept cell chain.** Let $L$ be a layout with $g$ symbol codes, let
+Let $L$ be a layout with $g$ symbol codes, let
 $n_1, a_c, k_1, e_a \in \mathbb{N}$ be the parameters of the generator, and let $F$ give a value
 to every counter of the generator such that the scratch counters $\mathsf{Q}$, $\mathsf{tmp}$,
 $\mathsf{md}$, $\mathsf{c1}$, $\mathsf{c2}$ are $0$, $F(\mathsf{Vc}) = V$, $F(\mathsf{P}) = 0$,

@@ -1,6 +1,6 @@
 # Counting prime first nonintegral indices of $g_{k,2}$ for $k \le 10^7$
 
-**Counting prime first nonintegral indices of $g_{k,2}$ for $k \le 10^7$.** Exactly
+Exactly
 $8649270$ natural numbers $k$ with $2 \le k \le 10^7$ have the following property: for the
 $(k, 2)$-Göbel sequence $g_{k,2}$ there is a prime $q$ such that $g_{k,2}(q)$ is not an integer
 and $g_{k,2}(n)$ is an integer for every $1 \le n < q$.

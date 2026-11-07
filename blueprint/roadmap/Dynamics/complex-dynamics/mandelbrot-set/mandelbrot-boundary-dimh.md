@@ -1,6 +1,6 @@
 # Hausdorff dimension of the Mandelbrot boundary (Shishikura)
 
-**Hausdorff dimension of the Mandelbrot boundary (Shishikura).** The boundary of the
+The boundary of the
 Mandelbrot set $M \subseteq \mathbb{C}$ has Hausdorff dimension $2$.
 
 ## Sources

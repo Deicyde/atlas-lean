@@ -1,6 +1,6 @@
 # Edges of an upright triangle
 
-**Edges of an upright triangle.** An upright triangle of the grid has three edges: the left
+An upright triangle of the grid has three edges: the left
 edge $L$, the right edge $R$ and the base $B$.
 
 ## Sources

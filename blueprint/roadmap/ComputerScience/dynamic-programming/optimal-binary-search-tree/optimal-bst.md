@@ -1,6 +1,6 @@
 # Optimal binary search tree procedure
 
-**Optimal binary search tree procedure.** Let $R$ be a linearly ordered additive commutative
+Let $R$ be a linearly ordered additive commutative
 monoid in which addition is monotone, let $n$ be a natural number, and let
 $p_0, \dots, p_{n-1}, q_0, \dots, q_n \in R$. The procedure (CLRS OPTIMAL-BST, with keys indexed
 from $0$) fills a cost table $e$ of size $(n+1) \times (n+1)$, an auxiliary weight table $w$ of

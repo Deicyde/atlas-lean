@@ -1,6 +1,6 @@
 # Weighted Lambert series for the continued fractions of order sixteen
 
-**Weighted Lambert series for the continued fractions of order sixteen.** Write
+Write
 $(a; q)_\infty = \prod_{n \ge 0} (1 - a q^n)$,
 $(a_1, \dots, a_k; q)_\infty = (a_1; q)_\infty \cdots (a_k; q)_\infty$ and
 $f_k = (q^k; q^k)_\infty$. For every complex number $q$ with $|q| < 1$,

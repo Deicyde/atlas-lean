@@ -1,6 +1,6 @@
 # The edges APPROX-VERTEX-COVER takes form a maximal matching of the listed pairs
 
-**The edges APPROX-VERTEX-COVER takes form a maximal matching of the listed pairs.** Let $G$
+Let $G$
 be a simple graph and $L$ a list of ordered pairs of vertices such that $u$ and $v$ are adjacent
 in $G$ for every $(u, v)$ in $L$, and let $C$ be the cover that APPROX-VERTEX-COVER returns on
 $L$. Then there is a sublist $A$ of $L$ such that pairs at different positions of $A$ are

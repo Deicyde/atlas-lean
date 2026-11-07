@@ -1,6 +1,6 @@
 # Row echelon form via a row permutation and a unit lower-triangular matrix
 
-**Row echelon form via a row permutation and a unit lower-triangular matrix.** Let $K$ be a
+Let $K$ be a
 field and let $A$ be a matrix over $K$ whose rows and columns are indexed by finite linearly
 ordered sets. Then there are a permutation $\sigma$ of the row indices and a square matrix $L$ over
 $K$ indexed by the row indices, lower triangular with every diagonal entry equal to $1$, such that

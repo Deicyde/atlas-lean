@@ -1,6 +1,6 @@
 # Convergent matrix of the empty string
 
-**Convergent matrix of the empty string.** The convergent matrix of the empty string is the
+The convergent matrix of the empty string is the
 $2 \times 2$ identity matrix.
 
 ## Sources

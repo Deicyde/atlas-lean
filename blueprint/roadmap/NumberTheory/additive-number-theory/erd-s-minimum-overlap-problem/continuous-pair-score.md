@@ -1,6 +1,6 @@
 # Continuous pair score
 
-**Continuous pair score.** For functions $f, g : \mathbb{R} \to \mathbb{R}$, the pair score of
+For functions $f, g : \mathbb{R} \to \mathbb{R}$, the pair score of
 $f$ and $g$ is the supremum of the overlap values $\int_{-1}^{1} f(t)\,g(x + t)\,dt$ over the
 translations $x \in [-2, 2]$.
 

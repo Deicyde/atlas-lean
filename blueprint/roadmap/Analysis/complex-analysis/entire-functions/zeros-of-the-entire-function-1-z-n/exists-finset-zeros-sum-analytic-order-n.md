@@ -1,6 +1,6 @@
 # Zeros of $1+\sum_{n\ge 1}(z/n)^n$ in a disc
 
-**Zeros of $1+\sum_{n\ge 1}(z/n)^n$ in a disc.** Let $F$ be the entire function
+Let $F$ be the entire function
 
 $$F(z)=1+\sum_{n=1}^{\infty}\left(\frac{z}{n}\right)^{n}.$$
 

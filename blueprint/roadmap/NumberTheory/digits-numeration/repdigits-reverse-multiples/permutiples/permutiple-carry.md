@@ -1,6 +1,6 @@
 # Carries of a permutiple multiplication
 
-**Carries of a permutiple multiplication.** Let $n$, $b$ and $d_0, \dots, d_k$ be
+Let $n$, $b$ and $d_0, \dots, d_k$ be
 natural numbers and let $\sigma$ be a permutation of $\{0, \dots, k\}$. The carries of the
 single-digit multiplication $n \cdot (d_{\sigma(k)}, \dots, d_{\sigma(0)})_b$, where
 $(e_k, \dots, e_0)_b$ denotes the base-$b$ numeral $\sum_{j=0}^{k} e_j b^j$, are the

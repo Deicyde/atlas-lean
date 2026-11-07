@@ -1,6 +1,6 @@
 # Weierstrass preparation theorem
 
-**Weierstrass preparation theorem.** Let $E$ be a finite-dimensional normed vector space over
+Let $E$ be a finite-dimensional normed vector space over
 $\mathbb{C}$ and let $f : E \times \mathbb{C} \to \mathbb{C}$ be analytic at $0$. Suppose that for
 some $d \in \mathbb{N}$ and some $g : \mathbb{C} \to \mathbb{C}$ analytic at $0$ with $g(0) \ne 0$,
 $f(0, w) = w^d g(w)$ for all $w$ in a neighbourhood of $0$. Then there are functions

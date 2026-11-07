@@ -1,6 +1,6 @@
 # The $q$-TSPP theorem
 
-**The $q$-TSPP theorem.** Fix $n$ and let $B_n = \{0, \dots, n - 1\}^3$. A totally symmetric
+Fix $n$ and let $B_n = \{0, \dots, n - 1\}^3$. A totally symmetric
 plane partition in $B_n$ is a subset $\pi \subseteq B_n$ that is a lower set of $\mathbb{N}^3$ for
 the componentwise order and is invariant under every permutation of the three coordinates; the
 empty set is one. Let $T_n$ be the set of triples $(i, j, k) \in B_n$ with $i \le j \le k$, and

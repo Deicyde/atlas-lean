@@ -1,6 +1,6 @@
 # Gates of a flat Boolean circuit
 
-**Gates of a flat Boolean circuit.** A gate of a flat Boolean circuit on $n$ inputs is one of:
+A gate of a flat Boolean circuit on $n$ inputs is one of:
 an input variable $x_i$ for some $i < n$; a Boolean constant; a negation gate with one predecessor
 index $a \in \mathbb{N}$; a conjunction gate or a disjunction gate with a list of predecessor
 indices; or a mod gate with a modulus $m \in \mathbb{N}$ and a list of predecessor indices.

@@ -1,6 +1,6 @@
 # A criterion for maximal intersecting families (Lemma 4)
 
-**A criterion for maximal intersecting families (Lemma 4).** Let $n$ be a natural number and
+Let $n$ be a natural number and
 let $\mathcal U$ be a family of subsets of $X = \{0, \dots, n-1\}$ such that $\mathcal U$ is an
 upper set (if $A \in \mathcal U$ and $A \subseteq B \subseteq X$ then $B \in \mathcal U$) and,
 for every $A \subseteq X$, $A \in \mathcal U$ if and only if $X \setminus A \notin \mathcal U$.

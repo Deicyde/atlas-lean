@@ -1,6 +1,6 @@
 # The first three Schatunowsky sets of the Gaussian integers
 
-**The first three Schatunowsky sets of the Gaussian integers.** Let $K$ be a number field
+Let $K$ be a number field
 of discriminant $-4$ (so $K \cong \mathbb{Q}(i)$). For $\alpha \in \mathcal{O}_K$ let $N(\alpha)$
 be the absolute norm of the ideal $(\alpha)$, and let $Q_\ell$ be the set of
 $\alpha \in \mathcal{O}_K$ with $N(\alpha) > 1$ such that every $\beta \in \mathcal{O}_K$ coprime

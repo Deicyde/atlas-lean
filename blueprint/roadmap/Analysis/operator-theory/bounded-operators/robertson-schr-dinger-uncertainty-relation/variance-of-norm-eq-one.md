@@ -1,3 +1,3 @@
 # Normalized variance on the unit sphere
 
-**Normalized variance on the unit sphere.** On the unit sphere, normalized variance is the centered squared norm.
+On the unit sphere, normalized variance is the centered squared norm.

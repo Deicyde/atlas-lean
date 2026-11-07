@@ -1,6 +1,6 @@
 # Bounded subset sums as a generalized h-fold sumset when zero is in the set
 
-**Bounded subset sums as a generalized h-fold sumset when zero is in the set.** Let $G$ be an
+Let $G$ be an
 abelian group, let $m$ be a natural number, let $a_1, \dots, a_m$ be distinct nonzero elements
 of $G$, put $a_0 = 0$ and $k = m + 1$, and let $A = \{a_0, a_1, \dots, a_m\}$, a set of $k$
 elements. If $\alpha, \beta$ are natural numbers with $\alpha \ge 1$, $\beta \le k - 1$ and

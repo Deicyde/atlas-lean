@@ -1,6 +1,6 @@
 # Lower order at infinity
 
-**Lower order at infinity.** For $\psi : \mathbb{N} \to \mathbb{R}$, the lower order at infinity
+For $\psi : \mathbb{N} \to \mathbb{R}$, the lower order at infinity
 of $1/\psi$ is
 
 $$\tau_\psi = \liminf_{q \to \infty} \max\left(-\frac{\log \psi(q)}{\log q},\, 0\right),$$

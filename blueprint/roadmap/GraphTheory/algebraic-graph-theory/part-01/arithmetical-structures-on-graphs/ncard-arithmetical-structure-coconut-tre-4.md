@@ -1,6 +1,6 @@
 # Number of arithmetical structures on stars
 
-**Number of arithmetical structures on stars.** For $s \ge 2$, the number of arithmetical
+For $s \ge 2$, the number of arithmetical
 structures on the star $CT(1, s)$, a centre joined to $s$ leaves, is
 
 $$1 + \sum_{j=0}^{s-2} \binom{s}{j} N(s - j),$$

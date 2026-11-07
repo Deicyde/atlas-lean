@@ -1,6 +1,6 @@
 # Posterior argmax classifiers are exactly the argmin estimators for the 0-1 loss
 
-**Posterior argmax classifiers are exactly the argmin estimators for the 0-1 loss.** Let the
+Let the
 set $C$ of classes be countable and nonempty with measurable singletons, let $P$ be a finite
 kernel from $C$ to the observation space $\mathcal X$ and $\pi$ a finite measure on $C$, write
 $P \circ \pi$ for the marginal measure on $\mathcal X$, $P^\dagger_\pi$ for the posterior kernel

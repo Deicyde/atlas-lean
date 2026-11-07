@@ -1,6 +1,6 @@
 # Weighted partition coefficients
 
-**Weighted partition coefficients.** Given real weights $(b_k)_{k \ge 0}$, the coefficients
+Given real weights $(b_k)_{k \ge 0}$, the coefficients
 $a_n$ of the weighted partition product $\prod_{k \ge 1} (1 - q^k)^{-b_k}$ are defined by $a_0 = 1$
 and, for $n \ge 1$, the logarithmic-derivative recurrence
 $n a_n = \sum_{m=1}^{n} \big(\sum_{k \mid m} k b_k\big) a_{n-m}$ (valid for real exponents $b_k$).

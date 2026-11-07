@@ -1,6 +1,6 @@
 # Cohen–Macaulay complexes over $\mathbb{Q}$
 
-**Cohen–Macaulay complexes over $\mathbb{Q}$.** A finite family $K$ of finite subsets of
+A finite family $K$ of finite subsets of
 $\mathbb{N}$ is Cohen–Macaulay over $\mathbb{Q}$ when for every member $F$ of $K$ (the empty face
 included, if it belongs to $K$) the link
 $L = \operatorname{lk}_K F = \{G \in K : G \cap F = \emptyset,\ G \cup F \in K\}$ satisfies

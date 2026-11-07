@@ -1,6 +1,6 @@
 # Term extraction from the generating function under cube-root growth
 
-**Term extraction from the generating function under cube-root growth.** Let
+Let
 $t_0, t_1, t_2, \dots$ be natural numbers and let $c \ge 8$ be a natural number. Suppose that
 the real series $\sum_{k \ge 0} t_k c^{-k}$ is summable and that $t_n < c^{n/3}$, a real power,
 for every $n \ge 1$. Then for every $n \ge 1$,

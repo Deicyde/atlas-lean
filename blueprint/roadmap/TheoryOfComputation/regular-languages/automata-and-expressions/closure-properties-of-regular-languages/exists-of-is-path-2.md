@@ -1,6 +1,6 @@
 # Soundness of the paths of the substitution ε-NFA
 
-**Soundness of the paths of the substitution ε-NFA.** Let $M$ be a DFA over $T$ with start
+Let $M$ be a DFA over $T$ with start
 state $q_0$, and for each letter $a \in T$ let $N_a$ be a DFA over $T'$, with accepted language
 $L(N_a)$; for a word $w = a_1 \cdots a_n$ over $T$ write $L_w = L(N_{a_1}) \cdots L(N_{a_n})$,
 which is $\{\varepsilon\}$ when $w$ is empty. Let $x$ be a sequence of labels, each a letter of

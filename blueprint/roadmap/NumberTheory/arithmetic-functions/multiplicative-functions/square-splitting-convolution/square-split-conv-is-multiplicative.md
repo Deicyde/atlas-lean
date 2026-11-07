@@ -1,6 +1,6 @@
 # The square-splitting convolution preserves multiplicativity
 
-**The square-splitting convolution preserves multiplicativity.** If $f$ and $g$ are
+If $f$ and $g$ are
 multiplicative complex arithmetic functions, then their square-splitting convolution $f \star g$
 is multiplicative. Here an arithmetic function $h$ is multiplicative when $h(1) = 1$ and
 $h(mn) = h(m)\, h(n)$ for all coprime $m$ and $n$.

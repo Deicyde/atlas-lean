@@ -1,6 +1,6 @@
 # Self-dual monotone functions on $n+4$ variables as concatenations (Theorem 12)
 
-**Self-dual monotone functions on $n+4$ variables as concatenations (Theorem 12).** Order
+Order
 $\{0,1\}$ by $0 < 1$, inputs coordinatewise and Boolean functions pointwise, with $\vee$ the
 pointwise maximum. Let $D_n$ be the set of monotone Boolean functions on $\{0,1\}^n$, and let
 $f^*(x) = \lnot f(\bar x)$ be the dual of $f$, where $\bar x$ is the coordinatewise complement of

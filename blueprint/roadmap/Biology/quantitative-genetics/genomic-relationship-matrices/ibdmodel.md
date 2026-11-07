@@ -1,6 +1,6 @@
 # Malécot's identity-by-descent model
 
-**Malécot's identity-by-descent model.** Malécot's identity-by-descent model at one biallelic locus, at the level of second
+Malécot's identity-by-descent model at one biallelic locus, at the level of second
 moments. The individuals are `ι`; individual `i` carries the gene copies `(i, 0)` (paternal) and
 `(i, 1)` (maternal), and `allele c ∈ {0, 1}` indicates the reference allele on copy `c`. The
 reference allele has frequency `p ∈ (0, 1)` (a polymorphic locus), and `ibd c d` is the

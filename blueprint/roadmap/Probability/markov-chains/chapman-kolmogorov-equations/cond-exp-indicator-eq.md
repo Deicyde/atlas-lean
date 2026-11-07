@@ -1,6 +1,6 @@
 # Chapman–Kolmogorov equations, conditional form
 
-**Chapman–Kolmogorov equations, conditional form.** Let $X = (X_n)_{n \in \mathbb{N}}$ be a
+Let $X = (X_n)_{n \in \mathbb{N}}$ be a
 Markov chain with state space $S$, with respect to a filtration $(\mathcal{F}_n)$, with Markov
 transition kernel $\kappa$, under a probability measure $\mu$. Then for all $m, n \in \mathbb{N}$
 and every measurable $B \subseteq S$,

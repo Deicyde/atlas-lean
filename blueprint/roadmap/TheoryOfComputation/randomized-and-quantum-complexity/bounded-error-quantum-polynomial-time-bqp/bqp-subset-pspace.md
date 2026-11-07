@@ -1,6 +1,6 @@
 # BQP is contained in PSPACE
 
-**BQP is contained in PSPACE.** Every decision problem in BQP, the class of bounded-error
+Every decision problem in BQP, the class of bounded-error
 quantum polynomial-time decision problems, lies in PSPACE, the class of decision problems
 decidable in polynomial space.
 

@@ -1,6 +1,6 @@
 # Regex nodes as a sum type
 
-**Regex nodes as a sum type.** The bijection between the nodes of encoded regular
+The bijection between the nodes of encoded regular
 expressions over $\alpha$ and $1 \oplus 1 \oplus \alpha \oplus (\mathbb{N} \times \mathbb{N}) \oplus
 (\mathbb{N} \times \mathbb{N}) \oplus \mathbb{N}$, where $1$ is the one-point type, that sends the
 zero node and the empty-word node to the first and second copies of $1$, a character node $a$

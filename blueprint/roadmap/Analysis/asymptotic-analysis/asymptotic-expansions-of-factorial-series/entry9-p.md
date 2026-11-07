@@ -1,6 +1,6 @@
 # Ramanujan's product series
 
-**Ramanujan's product series.** For complex numbers $a$, $b$, $x$, $z$, Ramanujan's product
+For complex numbers $a$, $b$, $x$, $z$, Ramanujan's product
 series of Entry 9(i) is
 
 $$P(a, b, x; z) = \sum_{j=0}^{\infty} \frac{(-b)^j x^{j+1}}{\prod_{r=0}^{j} (z + a + b(r + 1))}.$$

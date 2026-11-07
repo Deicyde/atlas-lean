@@ -1,6 +1,6 @@
 # Points of $\mathrm{NIZ}_k$ have leading digits $00$
 
-**Points of $\mathrm{NIZ}_k$ have leading digits $00$.** Let $r \ge 1$ and $k \ge 2$, and
+Let $r \ge 1$ and $k \ge 2$, and
 let $\mathrm{NIZ}_k$ be the new-information zone of order $k$ for $r$. Every Zeckendorf-adic
 integer $x = (x_i)_{i \ge 2}$ in $\mathrm{NIZ}_k$ has $x_{k+1} = x_k = 0$, that is, the name
 $x_{k+1} \cdots x_2$ of its cylinder of order $k$ starts with $00$.

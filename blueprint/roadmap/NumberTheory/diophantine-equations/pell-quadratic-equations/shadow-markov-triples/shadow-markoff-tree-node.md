@@ -1,6 +1,6 @@
 # Lower nodes of a shadow Markoff tree
 
-**Lower nodes of a shadow Markoff tree.** Fix $v \in \mathbb{Z}^3$ and let $r$ be the
+Fix $v \in \mathbb{Z}^3$ and let $r$ be the
 initial triple with shadow part $v$, viewed as a state (a pair of a classical part and a shadow
 part, both in $\mathbb{Q}^3$, with coordinates indexed by the positions $0, 1, 2$). The lower
 nodes of the shadow Markoff tree of $v$ are pairs $(s, l)$ of a state $s$ and a position $l$, the

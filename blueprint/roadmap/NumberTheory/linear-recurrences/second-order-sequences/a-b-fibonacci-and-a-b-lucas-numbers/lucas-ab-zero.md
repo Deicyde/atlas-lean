@@ -1,6 +1,6 @@
 # Zeroth (a, b)-Lucas number
 
-**Zeroth (a, b)-Lucas number.** For all complex numbers $a$ and $b$, the $(a,b)$-Lucas number
+For all complex numbers $a$ and $b$, the $(a,b)$-Lucas number
 $L^{a,b}_0$ equals $2$.
 
 ## Sources

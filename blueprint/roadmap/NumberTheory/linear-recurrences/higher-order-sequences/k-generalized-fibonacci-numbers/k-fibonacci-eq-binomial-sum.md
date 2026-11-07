@@ -1,6 +1,6 @@
 # Binomial-sum formula for the $k$-Fibonacci numbers
 
-**Binomial-sum formula for the $k$-Fibonacci numbers.** Let $k \ge 2$ and let
+Let $k \ge 2$ and let
 $(F_n)_{n \ge 0}$ be the $k$-Fibonacci sequence, given by $F_0 = \dots = F_{k-2} = 0$,
 $F_{k-1} = 1$ and $F_{m+k} = F_m + F_{m+1} + \dots + F_{m+k-1}$ for all $m \ge 0$. For integers
 $a$ and $j \ge 0$ write $\binom{a}{j} = a(a-1)\cdots(a-j+1)/j!$, and put $\binom{a}{-1} = 0$.

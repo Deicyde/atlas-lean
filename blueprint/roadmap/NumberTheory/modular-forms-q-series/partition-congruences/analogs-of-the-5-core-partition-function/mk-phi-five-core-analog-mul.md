@@ -1,6 +1,6 @@
 # Generating function of the $\varphi$-analog of the 5-core counts
 
-**Generating function of the $\varphi$-analog of the 5-core counts.** Let
+Let
 $\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ and let $\bar a_5(n)$ be the coefficient of $q^n$
 in $\varphi(-q^5)^5 / \varphi(-q)$. Then, as integer power series,
 $\left(\sum_{n \ge 0} \bar a_5(n) q^n\right) \varphi(-q) = \varphi(-q^5)^5$.

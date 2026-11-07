@@ -1,6 +1,6 @@
 # Lattice points of a set
 
-**Lattice points of a set.** Let $P \subseteq \mathbb{R}^\iota$ for an index set $\iota$. An
+Let $P \subseteq \mathbb{R}^\iota$ for an index set $\iota$. An
 integer vector $x \in \mathbb{Z}^\iota$ is a lattice point of $P$ when $x$, viewed as a real vector
 coordinate by coordinate, lies in $P$; thus the lattice points of $P$ are the points of
 $P \cap \mathbb{Z}^\iota$.

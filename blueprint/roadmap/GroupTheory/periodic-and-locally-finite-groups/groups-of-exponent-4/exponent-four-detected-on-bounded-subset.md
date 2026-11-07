@@ -1,6 +1,6 @@
 # Exponent 4 detected on boundedly generated subgroups (Kourovka 13.10)
 
-**Exponent 4 detected on boundedly generated subgroups (Kourovka 13.10).** The proposition
+The proposition
 that there is a function $f : \mathbb{N} \to \mathbb{N}$ with the following property: for every
 $k \in \mathbb{N}$, every group $G$ whose $k$-th derived subgroup $G^{(k)}$ is trivial (a soluble
 group of derived length at most $k$), and every generating set $A$ of $G$, if $x^4 = 1$ for every

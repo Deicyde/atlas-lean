@@ -1,6 +1,6 @@
 # One-element sets are difference smooth
 
-**One-element sets are difference smooth.** For every natural number $y$ and every integer
+For every natural number $y$ and every integer
 $a$, the set $\{a\}$ is difference $y$-smooth.
 
 ## Sources

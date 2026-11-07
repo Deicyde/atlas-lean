@@ -1,6 +1,6 @@
 # The minuscule polynomial $N_2$
 
-**The minuscule polynomial $N_2$.** The type-A minuscule polynomial $N_2(x)$ equals $2x$.
+The type-A minuscule polynomial $N_2(x)$ equals $2x$.
 
 ## Sources
 

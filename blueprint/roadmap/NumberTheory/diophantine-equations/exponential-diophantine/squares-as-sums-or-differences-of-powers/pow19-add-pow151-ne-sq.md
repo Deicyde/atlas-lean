@@ -1,6 +1,6 @@
 # $19^x + 151^y$ is never a perfect square
 
-**$19^x + 151^y$ is never a perfect square.** For all natural numbers $x$, $y$ and $z$,
+For all natural numbers $x$, $y$ and $z$,
 $19^x + 151^y \ne z^2$.
 
 ## Sources

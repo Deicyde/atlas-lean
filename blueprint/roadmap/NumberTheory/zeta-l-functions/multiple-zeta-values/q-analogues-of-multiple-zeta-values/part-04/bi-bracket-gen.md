@@ -1,6 +1,6 @@
 # Generating series of bi-brackets
 
-**Generating series of bi-brackets.** For $r \in \mathbb{N}$, the generating series of the
+For $r \in \mathbb{N}$, the generating series of the
 bi-brackets of depth $r$ is the formal power series in the variables $X_1, \dots, X_r$,
 $Y_1, \dots, Y_r$ with coefficients in $\mathbb{Q}[[q]]$
 

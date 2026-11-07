@@ -1,6 +1,6 @@
 # Central limit theorem for polynomials with nonpositive real zeros
 
-**Central limit theorem for polynomials with nonpositive real zeros.** Let $(Q_n)_{n \ge 0}$
+Let $(Q_n)_{n \ge 0}$
 be real polynomials such that every $Q_n$ has only real zeros and all of them are $\le 0$. Put
 $\mu_n = Q_n'(1) / Q_n(1)$ and $\sigma_n^2 = Q_n'(1) / Q_n(1) + Q_n''(1) / Q_n(1) - \mu_n^2$, and
 let $\sigma_n = \sqrt{\sigma_n^2}$. If $\sigma_n^2 \to \infty$ as $n \to \infty$, then for every

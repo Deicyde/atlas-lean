@@ -1,6 +1,6 @@
 # Weak Morse inequalities
 
-**Weak Morse inequalities.** Let $M$ be a compact Hausdorff smooth ($C^\infty$) manifold
+Let $M$ be a compact Hausdorff smooth ($C^\infty$) manifold
 without boundary, modelled on a finite-dimensional real normed space, and let
 $f \colon M \to \mathbb{R}$ be a Morse function, that is, a smooth function with finitely many
 critical points, all of them non-degenerate. Then for every $k \in \mathbb{N}$ the $k$-th Betti

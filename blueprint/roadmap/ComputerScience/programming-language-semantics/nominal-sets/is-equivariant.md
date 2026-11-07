@@ -1,3 +1,3 @@
 # Equivariant elements of a nominal set
 
-**Equivariant elements of a nominal set.** An element fixed by every permutation has the empty set as a support.
+An element fixed by every permutation has the empty set as a support.

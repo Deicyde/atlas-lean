@@ -1,6 +1,6 @@
 # Trying the candidate predecessors of a right vertex
 
-**Trying the candidate predecessors of a right vertex.** Let $j$ be a right vertex,
+Let $j$ be a right vertex,
 $\mathrm{ok}$ a test on left vertices, $\pi$ a map giving each left vertex an optional right vertex
 (its partner, if any), and $s$ a search taking a right vertex and a dead set (a set of right
 vertices) to an optional path, a list of pairs of a left and a right vertex, and a new dead set.

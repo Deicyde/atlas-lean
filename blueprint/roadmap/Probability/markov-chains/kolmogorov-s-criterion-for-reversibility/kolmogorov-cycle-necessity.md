@@ -1,6 +1,6 @@
 # Kolmogorov's cycle theorem, necessity half
 
-**Kolmogorov's cycle theorem, necessity half.** Let $P$ be an irreducible stochastic matrix
+Let $P$ be an irreducible stochastic matrix
 on the finite state space $\{0, 1, \dots, M\}$. If $P$ is reversible, that is, some probability
 distribution $\pi$ is stationary for $P$ and satisfies the detailed balance equations
 $\pi(i) P(i, j) = \pi(j) P(j, i)$ for all states $i, j$, then $P$ satisfies Kolmogorov's cycle

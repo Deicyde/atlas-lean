@@ -1,6 +1,6 @@
 # Common lift count
 
-**Common lift count.** Let $f \in \mathbb{Z}[x, y]$, let $p$ and $k$ be natural numbers and
+Let $f \in \mathbb{Z}[x, y]$, let $p$ and $k$ be natural numbers and
 let $P = ((r_1, s_1), \dots, (r_k, s_k))$ be a $k$-tuple of pairs of natural numbers. The common
 lift count of $P$ is the number of pairs $(a, b)$ of natural numbers with $a, b < p$ such that
 $p^2$ divides $f(r_i + ap, s_i + bp)$ for every $i$.

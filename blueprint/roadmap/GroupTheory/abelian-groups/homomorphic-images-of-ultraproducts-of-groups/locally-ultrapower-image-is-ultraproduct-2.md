@@ -1,6 +1,6 @@
 # Bergman's question 21.12 has a negative answer
 
-**Bergman's question 21.12 has a negative answer.** For every nonprincipal ultrafilter $U$
+For every nonprincipal ultrafilter $U$
 on $\mathbb{N}$ there is a group $B$ that is locally an image of the ultrapower
 $\mathbb{Z}^{\mathbb{N}}/U$ (every element of $B$ lies in a subgroup of $B$ that is a homomorphic
 image of $\mathbb{Z}^{\mathbb{N}}/U$) but is not a homomorphic image of any ultraproduct

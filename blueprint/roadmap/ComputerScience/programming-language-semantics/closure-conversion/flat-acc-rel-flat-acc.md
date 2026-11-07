@@ -1,6 +1,6 @@
 # Flat accessors implement the variables of a closure body
 
-**Flat accessors implement the variables of a closure body.** Let $b$ be a raw term, let
+Let $b$ be a raw term, let
 $c = (c_0, \dots, c_{m-1})$ be the list of variables captured by $\lambda. b$, let $\rho$ be a list
 of source values of length $|\rho|$, write $\rho_n$ for the entry of $\rho$ at index $n$ (counting
 from $0$), and let $w_0, \dots, w_{m-1}$ be target values such that $c_k < |\rho|$ and $\rho_{c_k}$

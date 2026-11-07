@@ -1,6 +1,6 @@
 # Harmonic sum of a set up to a bound
 
-**Harmonic sum of a set up to a bound.** For a set $A$ of natural numbers and a real number
+For a set $A$ of natural numbers and a real number
 $x$, this is the finite sum $\sum_{n \in A,\, 1 \le n \le x} 1/n$ of the reciprocals of the
 positive integers in $A$ that are at most $x$; it is $0$ when $x < 1$.
 

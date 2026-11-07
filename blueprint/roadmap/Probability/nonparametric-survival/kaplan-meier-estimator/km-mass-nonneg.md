@@ -1,3 +1,3 @@
 # Kaplan–Meier jumps are nonnegative
 
-**Kaplan–Meier jumps are nonnegative.** The Kaplan–Meier jumps are non-negative.
+The Kaplan–Meier jumps are non-negative.

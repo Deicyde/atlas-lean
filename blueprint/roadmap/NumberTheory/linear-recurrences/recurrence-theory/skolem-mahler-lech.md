@@ -1,6 +1,6 @@
 # Skolem–Mahler–Lech theorem
 
-**Skolem–Mahler–Lech theorem.** Let $K$ be a field of characteristic zero, let $k$ be a
+Let $K$ be a field of characteristic zero, let $k$ be a
 natural number, let $c_0, \dots, c_{k-1} \in K$, and let $u_0, u_1, u_2, \dots$ be a sequence in
 $K$ satisfying the linear recurrence $u_{n+k} = \sum_{i=0}^{k-1} c_i u_{n+i}$ for all $n \ge 0$
 (for $k = 0$ the sum is empty and every $u_n$ is $0$). Then there are a finite set

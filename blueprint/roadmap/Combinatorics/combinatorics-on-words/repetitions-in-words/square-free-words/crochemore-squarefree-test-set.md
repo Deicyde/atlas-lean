@@ -1,6 +1,6 @@
 # Crochemore's square-freeness test
 
-**Crochemore's square-freeness test.** Let $f$ map each letter of the three-letter alphabet
+Let $f$ map each letter of the three-letter alphabet
 $\{a, b, c\}$ to a finite word over a set $T$, and extend $f$ to words by concatenation,
 $f(x_1 \cdots x_n) = f(x_1) \cdots f(x_n)$. Then $f$ maps every square-free word over
 $\{a, b, c\}$ to a square-free word if and only if it maps every square-free word over

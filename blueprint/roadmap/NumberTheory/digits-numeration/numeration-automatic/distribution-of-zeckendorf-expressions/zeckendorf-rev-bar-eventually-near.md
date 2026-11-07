@@ -1,6 +1,6 @@
 # Lemma 13: behaviour of $\overline{\mathrm{rev}}$ near a point
 
-**Lemma 13: behaviour of $\overline{\mathrm{rev}}$ near a point.** Let $(L, \tilde L)$ be a
+Let $(L, \tilde L)$ be a
 periodic Zeckendorf pair, let $E^*$ and $\tilde E^*$ be the $L^*$- and $\tilde L^*$-collections,
 $\bar E^*$ the closure collection of $L$, $\overline{\mathrm{rev}}$ the map determined by $L$,
 $\inf$ the $L^*$-infimum map, and $\tilde Q$ a fundamental sequence of $\tilde E^*$. For

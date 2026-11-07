@@ -1,6 +1,6 @@
 # Reduction lemma for counting a subcollection
 
-**Reduction lemma for counting a subcollection.** Let $E \subseteq \tilde E$ be Zeckendorf
+Let $E \subseteq \tilde E$ be Zeckendorf
 collections, and let $\tilde H$ be a strictly increasing sequence of positive integers such that
 $\varepsilon \mapsto \sum_k \varepsilon_k \tilde H_k$ is a bijection from $\tilde E$ onto
 $\mathbb{N}$. For a natural number $x$ let $R(x)$ be the set of natural numbers $n < x$ of the

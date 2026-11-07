@@ -1,6 +1,6 @@
 # Integral of $1/(a + b\cos\theta)$ over a period
 
-**Integral of $1/(a + b\cos\theta)$ over a period.** Let $a$ and $b$ be real numbers with
+Let $a$ and $b$ be real numbers with
 $a > |b|$. Then
 
 $$\int_0^{2\pi} \frac{d\theta}{a + b\cos\theta} = \frac{2\pi}{\sqrt{a^2 - b^2}}.$$

@@ -1,6 +1,6 @@
 # Branch groups containing free subgroups exist (Kourovka 15.14(c))
 
-**Branch groups containing free subgroups exist (Kourovka 15.14(c)).** There is a finitely
+There is a finitely
 generated branch group that contains a free subgroup of rank $2$.
 
 The Kourovka Archive answers 15.14(c) "Such groups do exist": Sidki and Wilson constructed

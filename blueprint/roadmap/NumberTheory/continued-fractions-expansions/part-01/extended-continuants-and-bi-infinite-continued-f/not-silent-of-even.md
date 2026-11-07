@@ -1,6 +1,6 @@
 # No silent sequences of even order
 
-**No silent sequences of even order.** Let $\sigma \ge 0$ be an even integer and write
+Let $\sigma \ge 0$ be an even integer and write
 $K_a(x)_b$ for the extended continuant of order $a$ with start index $b$. For all bi-infinite
 integer sequences $x, z : \mathbb{Z} \to \mathbb{Z}$ it is not the case that
 $K_{-i-\sigma-1}(x)_0 = K_i(z)_0$ and $K_{-i-\sigma-2}(x)_1 = K_{i-1}(z)_1$ for every natural

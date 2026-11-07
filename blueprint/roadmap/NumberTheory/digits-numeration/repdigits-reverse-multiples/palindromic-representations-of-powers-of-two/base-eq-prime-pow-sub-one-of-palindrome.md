@@ -1,6 +1,6 @@
 # Even-length palindromic prime powers have base one less than a power of the prime
 
-**Even-length palindromic prime powers have base one less than a power of the prime.** Let
+Let
 $p$ be a prime and let $n$ and $b \ge 2$ be natural numbers. If the base-$b$ representation of
 $p^n$ is a palindrome with an even number of digits, then $b = p^x - 1$ for some natural number
 $x$.

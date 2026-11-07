@@ -1,6 +1,6 @@
 # Congruences modulo 16 for 16-regular cubic partitions with odd parts overlined
 
-**Congruences modulo 16 for 16-regular cubic partitions with odd parts overlined.** Let
+Let
 $a_{16}(n)$ be the number of $16$-regular cubic partitions of $n$ with odd parts overlined, and
 let $f_k = \prod_{m \ge 1} (1 - q^{km})$. Let $p \ge 5$ be a prime with Legendre symbol
 $\left(\frac{-2}{p}\right) = -1$, and let $\delta \ge 0$. Then for every $n \ge 0$,

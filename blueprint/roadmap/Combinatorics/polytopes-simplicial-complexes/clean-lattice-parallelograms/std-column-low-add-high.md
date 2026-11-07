@@ -1,6 +1,6 @@
 # Lowest and highest interior lattice points of $P_{a,n}$ on paired vertical lines
 
-**Lowest and highest interior lattice points of $P_{a,n}$ on paired vertical lines.** Let $a$
+Let $a$
 and $n$ be natural numbers with $1 \le a < n$ and $\gcd(a, n) = 1$, let $P_{a,n}$ be the
 parallelogram with vertices $(0, 0)$, $(1, 0)$, $(a, n)$, $(a + 1, n)$, and for an integer $k$
 let $S_k$ be the set of integers $y$ such that $(k, y)$ lies in the interior of $P_{a,n}$. Let

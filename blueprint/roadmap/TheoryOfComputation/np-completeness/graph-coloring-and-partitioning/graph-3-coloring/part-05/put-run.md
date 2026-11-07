@@ -1,6 +1,6 @@
 # Recording the current occurrence
 
-**Recording the current occurrence.** Let $m$ be a quiescent state of the 3-COLOR emitter
+Let $m$ be a quiescent state of the 3-COLOR emitter
 with next free vertex $n$, whose name stack holds the name bits of a variable $x$ and whose
 polarity stack holds only the marker for polarity $b$. From the label $\mathsf{putN}$, with
 any local state, the machine runs in exactly $2n + 2|w| + 5$ steps, where $w$ is the binary

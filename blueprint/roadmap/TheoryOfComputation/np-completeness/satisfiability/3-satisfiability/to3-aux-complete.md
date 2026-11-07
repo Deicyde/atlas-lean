@@ -1,6 +1,6 @@
 # Completeness of the auxiliary 3SAT translation
 
-**Completeness of the auxiliary 3SAT translation.** Let $v, v' : \mathbb{N} \to \mathrm{Bool}$
+Let $v, v' : \mathbb{N} \to \mathrm{Bool}$
 be assignments with $v'(2n) = v(n)$ for every $n$, let $\varphi$ be a CNF formula satisfied by
 $v$, and let $N$ be the next free fresh number of the auxiliary SAT-to-3SAT translation of
 $\varphi$. If for every $w < N$ the assignment $v'$ gives fresh variable number $w$, the variable

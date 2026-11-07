@@ -1,6 +1,6 @@
 # Generalized poly-Bernoulli numbers of the first kind
 
-**Generalized poly-Bernoulli numbers of the first kind.** Let $g = (g_0, g_1, \dots, g_s)$ be
+Let $g = (g_0, g_1, \dots, g_s)$ be
 Landen data, where $(c_0, d_0)$ is the bottom row of the matrix $g_0$, let
 $\beta, \gamma \in \mathbb{R}^s$, and let $k = (k_1, \dots, k_r)$ be a list of natural numbers;
 write $k\uparrow = (k_1, \dots, k_r + 1)$, with $k\uparrow = ()$ when $k$ is empty. Let

@@ -1,6 +1,5 @@
 # Two overlapping progressions with rational ratios, outside two open cases, are not MSTD
 
-**Two overlapping progressions with rational ratios, outside two open cases, are not MSTD.**
 For real numbers $x, d$ and a natural number $m$, write
 $J(x, m, d) = \{x + id : i = 0, 1, \ldots, m\}$. Let $x_1, x_2, d_1, d_2$ be real numbers with
 $d_1 > 0$, let $m_1, m_2$ be natural numbers with $x_2 < x_1 + m_1 d_1$, and let

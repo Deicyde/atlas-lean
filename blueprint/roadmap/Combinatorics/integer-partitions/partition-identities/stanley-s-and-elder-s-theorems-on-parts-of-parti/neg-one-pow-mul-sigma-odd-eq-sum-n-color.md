@@ -1,6 +1,6 @@
 # Signed odd-divisor sum via $n$-color partitions into odd parts
 
-**Signed odd-divisor sum via $n$-color partitions into odd parts.** For $r \ge 0$ let
+For $r \ge 0$ let
 $U_o(r)$ (resp. $U_e(r)$) be the total number of parts, counted with multiplicity, over the
 $n$-color partitions of $r$ in which every part has odd size and the number of parts is odd
 (resp. even), and let $C(O, D, r)$ be the number of $n$-color partitions of $r$ into distinct

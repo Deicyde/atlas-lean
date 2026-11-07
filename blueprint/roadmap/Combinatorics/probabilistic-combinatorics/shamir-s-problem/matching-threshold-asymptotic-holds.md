@@ -1,6 +1,6 @@
 # Kahn's theorem: the threshold in Shamir's problem is asymptotic to $n \log n$
 
-**Kahn's theorem: the threshold in Shamir's problem is asymptotic to $n \log n$.** Let $\ell_c(n)$
+Let $\ell_c(n)$
 be the least number $\ell$ such that the uniformly random $3$-uniform hypergraph on $3n$ vertices
 with $\ell$ edges has a perfect matching with probability at least $1/2$. Then
 $\ell_c(n) / (n \log n) \to 1$ as $n \to \infty$, where $\log$ is the natural logarithm.

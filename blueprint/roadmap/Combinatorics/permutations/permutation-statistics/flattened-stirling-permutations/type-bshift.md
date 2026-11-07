@@ -1,6 +1,6 @@
 # The shift map
 
-**The shift map.** For a finite set $S$ of integers, $h(S) = \{|i| + 1 : i \in S\}$, a
+For a finite set $S$ of integers, $h(S) = \{|i| + 1 : i \in S\}$, a
 finite set of natural numbers.
 
 In particular, for every natural number $n$, $h$ sends subsets of $[-n, n]$ to subsets of

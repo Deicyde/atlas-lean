@@ -1,6 +1,6 @@
 # Brousseau sums of Fibonacci numbers along an odd step
 
-**Brousseau sums of Fibonacci numbers along an odd step.** Let $F_n$ be the Fibonacci
+Let $F_n$ be the Fibonacci
 numbers, $L_n$ the Lucas numbers and $C_k^{(p)}$ the coefficient polynomials. For every odd
 natural number $m$ and all $n, p \ge 0$,
 

@@ -1,6 +1,6 @@
 # Sumset of a finite set of integers
 
-**Sumset of a finite set of integers.** For a finite set $A \subseteq \mathbb{Z}$, the sumset
+For a finite set $A \subseteq \mathbb{Z}$, the sumset
 $A + A = \{a + b : a, b \in A\}$, a finite set of integers.
 
 ## Sources

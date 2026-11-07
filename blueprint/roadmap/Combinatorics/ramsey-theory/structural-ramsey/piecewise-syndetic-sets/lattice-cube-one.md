@@ -1,6 +1,6 @@
 # Lattice cube of side one
 
-**Lattice cube of side one.** For $t \in \mathbb{N}$ and $a \in \mathbb{N}^t$, the lattice
+For $t \in \mathbb{N}$ and $a \in \mathbb{N}^t$, the lattice
 cube with least corner $a$ and side $1$ is the singleton $\{a\}$.
 
 ## Sources

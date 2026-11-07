@@ -1,6 +1,6 @@
 # One tuple of $\ell$-regular partitions of total zero
 
-**One tuple of $\ell$-regular partitions of total zero.** For all natural numbers $\ell$
+For all natural numbers $\ell$
 and $k$, writing $T_{\ell,k}(n)$ for the number of $k$-tuples of $\ell$-regular partitions
 with total $n$, we have $T_{\ell,k}(0) = 1$: the only such tuple of total $0$ is the tuple of
 empty partitions.

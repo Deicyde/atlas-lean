@@ -1,6 +1,6 @@
 # Identity-product necklaces with a given smallest period
 
-**Identity-product necklaces with a given smallest period.** Let $G$ be a finite group, let
+Let $G$ be a finite group, let
 $n \ge 1$ and let $k$ be a divisor of $n$. The number of rotation orbits of size $k$ of $n$-tuples
 $(x_1, \dots, x_n) \in G^n$ with $x_1 x_2 \cdots x_n = 1$ (identity-product $n$-necklaces of
 smallest period $k$) is

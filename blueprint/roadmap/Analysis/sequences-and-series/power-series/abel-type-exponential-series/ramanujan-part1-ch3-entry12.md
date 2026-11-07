@@ -1,6 +1,6 @@
 # Ramanujan's recurrence for the series in Entry 12
 
-**Ramanujan's recurrence for the series in Entry 12.** Fix a complex number $a$. For an
+Fix a complex number $a$. For an
 integer $r$ and a complex number $n$, let
 
 $$F_r(n) = \sum_{k=0}^{\infty} \frac{(n+k)^{r+k}}{a^k\, k!},$$

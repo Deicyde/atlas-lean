@@ -1,6 +1,6 @@
 # Classification of the Platonic solids
 
-**Classification of the Platonic solids.** Let $V, E, F, p, q$ be natural numbers with
+Let $V, E, F, p, q$ be natural numbers with
 $V, E, F > 0$ and $p, q \ge 3$, and let $l > 0$ and $d > 0$ be real numbers. Let
 $x_0, \dots, x_{V-1}$ be points of the Euclidean space $\mathbb{R}^3$, let $K$ be their convex
 hull and let $\partial K$ be its topological boundary. Let each edge $e < E$ be an ordered pair

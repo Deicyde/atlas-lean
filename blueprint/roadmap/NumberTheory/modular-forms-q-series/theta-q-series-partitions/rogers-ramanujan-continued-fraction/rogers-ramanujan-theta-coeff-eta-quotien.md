@@ -1,6 +1,6 @@
 # Eta-quotient form of the Gladun–Chaudhary theta coefficient
 
-**Eta-quotient form of the Gladun–Chaudhary theta coefficient.** In the ring of integer
+In the ring of integer
 power series in $q$, let $\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$ be the triangular theta series
 and $E_k = (q^k; q^k)_\infty$ the Euler products, and set $\tau(q) = \psi(q) - 5q^3\psi(q^{25})$
 and $\rho(q) = \psi(q)^2 - 5q\,\psi(q^5)^2$. Then

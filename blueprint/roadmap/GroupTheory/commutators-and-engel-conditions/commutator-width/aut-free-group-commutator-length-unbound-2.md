@@ -1,6 +1,6 @@
 # Commutator length in Aut(Fₙ) is unbounded
 
-**Commutator length in Aut(Fₙ) is unbounded.** Let $n \ge 3$ and let $F_n$ be the free group on
+Let $n \ge 3$ and let $F_n$ be the free group on
 $n$ generators. For every natural number $k$ there is an element of the derived subgroup of
 $\operatorname{Aut}(F_n)$ that is not a product of at most $k$ commutators $xyx^{-1}y^{-1}$ with
 $x, y \in \operatorname{Aut}(F_n)$. Equivalently, the supremum $k_n$ of the commutator lengths of

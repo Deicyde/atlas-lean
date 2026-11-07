@@ -1,6 +1,6 @@
 # All-N threshold of $(2:1)$-pebbling on $K_3$
 
-**All-N threshold of $(2:1)$-pebbling on $K_3$.** The least number $m$ such that every
+The least number $m$ such that every
 $(2:1)$-pebbling game on the complete graph $K_3$ with $m$ pebbles in total is an N-game, written
 $m^{(2:1)}(K_3)$, exists and equals $7$.
 

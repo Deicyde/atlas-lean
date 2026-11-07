@@ -1,6 +1,6 @@
 # Entries of a decoded stack on prefix-form input
 
-**Entries of a decoded stack on prefix-form input.** Let $f : \mathbb{N} \to
+Let $f : \mathbb{N} \to
 \mathrm{Option}\,\alpha$ and write $\bot$ for the absent value. For $j, m \in \mathbb{N}$ let
 $\mathrm{decS}(f, j, m)$ be the list of the values $f(j), f(j + 1), \dots$, read for at most $m$
 positions and stopped at the first $\bot$. Suppose $f$ is in prefix form on the window from $j$

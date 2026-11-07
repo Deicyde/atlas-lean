@@ -1,6 +1,6 @@
 # Algebraic representation of a matroid over some field
 
-**Algebraic representation of a matroid over some field.** Let $M$ be a matroid on a type
+Let $M$ be a matroid on a type
 $E$. An algebraic representation of $M$ over some field consists of a field $K$, a field extension
 $L$ of $K$ and a map $\varphi \colon E \to L$ such that $L$ is generated over $K$ by the image
 under $\varphi$ of the ground set of $M$, and a set $I$ is independent in $M$ exactly when $I$ is

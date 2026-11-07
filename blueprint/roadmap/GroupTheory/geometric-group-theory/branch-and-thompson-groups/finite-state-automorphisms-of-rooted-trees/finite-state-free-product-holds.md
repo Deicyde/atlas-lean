@@ -1,6 +1,6 @@
 # Fedorova–Oliynyk theorem (Kourovka Problem 16.85)
 
-**Fedorova–Oliynyk theorem (Kourovka Problem 16.85).** For all groups $G$ and $H$, if $G$ and $H$
+For all groups $G$ and $H$, if $G$ and $H$
 each act faithfully on a regular rooted tree by finite-state automorphisms, then their free product
 $G \ast H$ acts faithfully on some regular rooted tree by finite-state automorphisms.
 

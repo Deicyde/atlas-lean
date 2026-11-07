@@ -1,6 +1,6 @@
 # Infinite q-Pochhammer symbol
 
-**Infinite q-Pochhammer symbol.** For complex numbers $a$ and $q$ with $|q| < 1$, the infinite
+For complex numbers $a$ and $q$ with $|q| < 1$, the infinite
 q-Pochhammer symbol is $(a;q)_\infty = \prod_{n=0}^{\infty} (1 - a q^n)$, the unconditional
 infinite product of the factors $1 - a q^n$.
 

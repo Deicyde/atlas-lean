@@ -1,6 +1,6 @@
 # Fang–Chen theorem on shortest weakly prime-additive multiples
 
-**Fang–Chen theorem on shortest weakly prime-additive multiples.** For every positive integer
+For every positive integer
 $m$, there are infinitely many weakly prime-additive numbers $n$ with $m \mid n$ and length
 $\kappa_n = 3$ if and only if $8 \nmid m$.
 

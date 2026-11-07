@@ -1,6 +1,6 @@
 # Mean step of three-series necessity
 
-**Mean step of three-series necessity.** For a uniformly bounded
+For a uniformly bounded
 independent sequence with summable variances whose partial sums converge
 almost surely, the partial sums of the means converge (to some limit).
 Proved by centering and applying the canonical centered-sum convergence

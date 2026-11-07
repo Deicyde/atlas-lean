@@ -1,6 +1,6 @@
 # NPN-equivalence of Boolean functions
 
-**NPN-equivalence of Boolean functions.** An $n$-variable Boolean function $f$ is
+An $n$-variable Boolean function $f$ is
 NPN-equivalent to $g$ when $g$ is obtained from $f$ by permuting the variables, negating some
 of the inputs and possibly negating the output: there are a permutation $\sigma$ of
 $\{1, \ldots, n\}$, a vector $a \in \{0,1\}^n$ and a bit $c \in \{0,1\}$ such that

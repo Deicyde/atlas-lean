@@ -1,6 +1,6 @@
 # Domination states
 
-**Domination states.** A domination state is one of three labels: uncovered, covered or
+A domination state is one of three labels: uncovered, covered or
 occupied.
 
 Relative to a set $S$ of vertices of a graph, a vertex is occupied if it lies in $S$, covered if

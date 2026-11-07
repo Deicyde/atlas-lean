@@ -1,6 +1,6 @@
 # Middle matrices of the generalized Cohn tree are distinct
 
-**Middle matrices of the generalized Cohn tree are distinct.** For every natural number $k$
+For every natural number $k$
 and every integer $\ell$, vertices of the $k$-generalized Cohn tree $\mathrm{GCT}(k, \ell)$ at
 different paths have different middle matrices.
 

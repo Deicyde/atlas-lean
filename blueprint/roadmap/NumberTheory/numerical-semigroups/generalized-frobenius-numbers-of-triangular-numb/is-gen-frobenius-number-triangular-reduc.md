@@ -1,6 +1,6 @@
 # Generalized Frobenius numbers of the reduced triangular triple
 
-**Generalized Frobenius numbers of the reduced triangular triple.** For a natural number $r$
+For a natural number $r$
 write $t_r = r(r+1)/2$. Let $n$, $k$, $i$ be natural numbers with $i \le 2k + 1$ and put
 $s = k(k+1) + i$. Let $N_s = 6\lfloor\sqrt{s+1}\rfloor - 6$ if $n$ is even and
 $N_s = 6\lfloor(\sqrt{4s+5} - 1)/2\rfloor - 3$ if $n$ is odd, and suppose $n > N_s$. For even $n$

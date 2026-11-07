@@ -1,6 +1,6 @@
 # The second projection of the pairing function is computable
 
-**The second projection of the pairing function is computable.** Let
+Let
 $\langle a, b \rangle$ denote the pairing bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$,
 $\langle a, b \rangle = b^2 + a$ if $a < b$ and $\langle a, b \rangle = a^2 + a + b$ otherwise.
 The function sending $z \in \mathbb{N}$ to the second component $b$ of the unique pair $(a, b)$

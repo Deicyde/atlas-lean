@@ -1,6 +1,6 @@
 # Bourn–Erickson formula for the minuscule polynomials at one
 
-**Bourn–Erickson formula for the minuscule polynomials at one.** For every integer $n \ge 1$,
+For every integer $n \ge 1$,
 the type-A minuscule polynomial $N_n$ satisfies $N_n(1) = (n - 1)\, 2^{2n-3}$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The exponential equations for the prime pair (2, 3)
 
-**The exponential equations for the prime pair (2, 3).** The six equations
+The six equations
 $(-1)^\alpha 2^x + (-1)^\beta (2^k \cdot 3)^y = z^2$ with $\alpha, \beta, k \in \{0, 1\}$ and
 $\alpha\beta = 0$ have exactly the following solutions in natural numbers $x, y, z$, where the
 equations are read in the integers. The equation $2^x + 3^y = z^2$ holds if and only if

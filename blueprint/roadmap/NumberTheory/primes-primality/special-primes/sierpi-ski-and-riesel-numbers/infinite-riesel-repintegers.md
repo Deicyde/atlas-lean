@@ -1,6 +1,6 @@
 # Covering-produced Riesel numbers give infinitely many Riesel repintegers
 
-**Covering-produced Riesel numbers give infinitely many Riesel repintegers.** Let $k$ be a
+Let $k$ be a
 Riesel number that has Riesel covering data, so that $k$ is produced as a Riesel number by the
 covering system method. Then for every natural number $b \ge 2$ there are infinitely many $t \ge 1$
 such that the $b$-repinteger $k_b^{(t)} = k\,(b^{\ell t} - 1)/(b^{\ell} - 1)$, where $\ell$ is the

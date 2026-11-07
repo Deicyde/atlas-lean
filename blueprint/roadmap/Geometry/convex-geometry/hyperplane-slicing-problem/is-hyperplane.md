@@ -1,6 +1,6 @@
 # Hyperplanes in $\mathbb{R}^n$
 
-**Hyperplanes in $\mathbb{R}^n$.** A set $H$ in the $n$-dimensional Euclidean space
+A set $H$ in the $n$-dimensional Euclidean space
 $\mathbb{R}^n$ is a hyperplane when $H = \{x \in \mathbb{R}^n : f(x) = t\}$ for some nonzero
 linear functional $f \colon \mathbb{R}^n \to \mathbb{R}$ and some $t \in \mathbb{R}$.
 

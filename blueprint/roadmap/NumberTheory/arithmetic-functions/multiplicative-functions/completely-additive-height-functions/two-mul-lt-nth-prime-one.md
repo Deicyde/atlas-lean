@@ -1,6 +1,6 @@
 # The $k$-th prime exceeds $2k$ for $k \ge 6$
 
-**The $k$-th prime exceeds $2k$ for $k \ge 6$.** For every natural number $k \ge 6$, the
+For every natural number $k \ge 6$, the
 $k$-th prime $p_k$, indexed from one so that $p_1 = 2$, satisfies $p_k > 2k$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # PhyloCSF's score threshold test is most powerful for unnormalized weights
 
-**PhyloCSF's score threshold test is most powerful for unnormalized weights**: with
+With
 positive site likelihoods under both models, a randomized test `φ` whose weighted size under
 the non-coding weights is at most that of `scoreTest c` has at most its weighted power under
 the coding weights. This is the dominated Neyman–Pearson inequality for the unnormalized

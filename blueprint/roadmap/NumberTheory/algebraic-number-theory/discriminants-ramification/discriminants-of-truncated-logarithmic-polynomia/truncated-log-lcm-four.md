@@ -1,6 +1,6 @@
 # Least common multiple of $1, 2, 3, 4$
 
-**Least common multiple of $1, 2, 3, 4$.** The least common multiple of the integers from $1$
+The least common multiple of the integers from $1$
 to $4$ is $L_4 = \operatorname{lcm}(1, 2, 3, 4) = 12$.
 
 ## Sources

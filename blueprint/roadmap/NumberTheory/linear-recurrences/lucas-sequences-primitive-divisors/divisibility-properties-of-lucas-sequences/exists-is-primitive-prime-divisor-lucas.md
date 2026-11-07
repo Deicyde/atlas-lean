@@ -1,6 +1,6 @@
 # Carmichael's primitive divisor theorem
 
-**Carmichael's primitive divisor theorem.** Let $P$ and $Q$ be coprime integers forming a
+Let $P$ and $Q$ be coprime integers forming a
 nondegenerate Lucas pair with discriminant $D = P^2 - 4Q > 0$, and let $(U_n)$ be the Lucas
 sequence $U(P, Q)$. Then for every $n \ge 1$ with $n \notin \{1, 2, 6, 12\}$, the term $U_n$ has
 a primitive prime divisor: a prime $p$ that divides $U_n$ but divides no $U_s$ with $1 \le s < n$.

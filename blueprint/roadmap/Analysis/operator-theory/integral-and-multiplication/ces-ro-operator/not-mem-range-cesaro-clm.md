@@ -1,6 +1,6 @@
 # The Cesàro operator is not surjective
 
-**The Cesàro operator is not surjective.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$.
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$.
 The sequence $y \in \ell^2(\mathbb{N}, \mathbb{K})$ with $y_n = (-1)^n/(n + 1)$ is not in the
 range of the Cesàro operator $C$ on $\ell^2(\mathbb{N}, \mathbb{K})$, given by
 $(Cx)_n = (x_0 + x_1 + \dots + x_n)/(n + 1)$. In particular $C$ is not surjective.

@@ -1,6 +1,6 @@
 # Hopcroft–Karp phase
 
-**Hopcroft–Karp phase.** If no round of the alternating breadth-first search reaches an
+If no round of the alternating breadth-first search reaches an
 unmatched right vertex, the phase finds no path. Otherwise let $d$ be the earliest round such that
 round $d + 1$ reaches one. The phase runs the search at level $d$ from each unmatched right vertex
 reached within $d + 1$ rounds, in increasing order, starting with no left vertex used and no right

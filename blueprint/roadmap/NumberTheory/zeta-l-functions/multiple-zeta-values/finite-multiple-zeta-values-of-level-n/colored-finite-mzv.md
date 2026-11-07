@@ -1,6 +1,6 @@
 # Colored finite multiple harmonic sums
 
-**Colored finite multiple harmonic sums.** Let $p$ and $N$ be natural numbers, let
+Let $p$ and $N$ be natural numbers, let
 $k = (k_1, \dots, k_r)$ be a finite sequence of natural numbers and let
 $\alpha = (\alpha_1, \dots, \alpha_r) \in (\mathbb{Z}/N\mathbb{Z})^r$. The colored finite multiple
 harmonic sum $\zeta^{\alpha}_{p,N}(k) \in \mathbb{Z}/p\mathbb{Z}$ is the sum of

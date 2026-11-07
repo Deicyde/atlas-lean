@@ -1,6 +1,6 @@
 # Almost thin sets are infinite
 
-**Almost thin sets are infinite.** Every almost thin set $A \subseteq \mathbb{N}$ is infinite.
+Every almost thin set $A \subseteq \mathbb{N}$ is infinite.
 
 ## Sources
 

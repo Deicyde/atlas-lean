@@ -1,6 +1,6 @@
 # First coefficients of the mock theta function $\lambda$
 
-**First coefficients of the mock theta function $\lambda$.** Write
+Write
 $\lambda(q) = \sum_{n \ge 0} P_\lambda(n) q^n$ for the sixth-order mock theta function $\lambda$.
 Then $P_\lambda(0) = 1$ and $P_\lambda(1) = -1$.
 

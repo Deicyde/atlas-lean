@@ -1,6 +1,6 @@
 # Petechuk's double commutator question has a negative answer (Kourovka 10.46)
 
-**Petechuk's double commutator question has a negative answer (Kourovka 10.46).** There are a
+There are a
 nontrivial associative ring $R$ with identity, an integer $n \ge 3$ and a matrix
 $\sigma \in \mathrm{GL}_n(R)$ such that for all elementary transvections
 $\tau_1, \tau_2 \in \mathrm{GL}_n(R)$ the matrix $[[\sigma, \tau_1], \tau_2] - 1$ is not nilpotent,

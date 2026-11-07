@@ -1,6 +1,6 @@
 # The continued fraction $(1; 2, 2)$
 
-**The continued fraction $[1; 2, 2]$.** The finite continued fraction $[1; 2, 2]$ has value
+The finite continued fraction $[1; 2, 2]$ has value
 $7/5$.
 
 ## Sources

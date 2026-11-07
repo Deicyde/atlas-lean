@@ -1,6 +1,6 @@
 # Number of I-Wilf classes of sets of length-3 patterns
 
-**Number of I-Wilf classes of sets of length-3 patterns.** Let $P$ be the set of the thirteen
+Let $P$ be the set of the thirteen
 length-3 patterns $000, 001, 010, 011, 012, 021, 100, 101, 102, 110, 120, 201, 210$, each written
 as the word of its values. For $B \subseteq P$ let $|I_n(B)|$ be the number of inversion sequences
 of length $n$ that avoid every pattern in $B$, and let $w_d$ be the number of distinct sequences

@@ -1,6 +1,6 @@
 # CL-span of the zero polynomial
 
-**CL-span of the zero polynomial.** The zero polynomial has empty CL-span (its root multiset
+The zero polynomial has empty CL-span (its root multiset
 is empty).
 
 ## Sources

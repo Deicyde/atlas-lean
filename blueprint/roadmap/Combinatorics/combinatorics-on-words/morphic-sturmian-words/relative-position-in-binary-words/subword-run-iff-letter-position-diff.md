@@ -1,6 +1,6 @@
 # Runs of one letter and gaps between letter positions
 
-**Runs of one letter and gaps between letter positions.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$
+Let $w = \ell_0 \ell_1 \ell_2 \cdots$
 be an infinite word over the letters $a$ and $b$ in which both letters occur infinitely often and
 $\ell_0 = a$. For a letter $\alpha$ and $n \ge 1$, let $p_\alpha(n)$ be the position of the $n$-th
 occurrence of $\alpha$ in $w$, counting positions from $0$. Let $k \ge 1$. Then the following are

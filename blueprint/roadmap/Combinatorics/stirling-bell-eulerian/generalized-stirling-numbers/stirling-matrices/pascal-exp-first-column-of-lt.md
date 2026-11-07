@@ -1,6 +1,6 @@
 # Recurrence for the Pascal first-column sequence
 
-**Recurrence for the Pascal first-column sequence.** For all natural numbers $k$ and $i$ with
+For all natural numbers $k$ and $i$ with
 $1 \le k < i$, the first-column sequence $\alpha^{(k)}$ satisfies
 $\alpha^{(k)}_i = \binom{i-2}{k-1} \alpha^{(k)}_{i-k}$.
 

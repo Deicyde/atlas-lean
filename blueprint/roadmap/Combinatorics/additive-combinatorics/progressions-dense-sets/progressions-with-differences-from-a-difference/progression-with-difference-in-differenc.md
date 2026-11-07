@@ -1,6 +1,6 @@
 # Erdős Problem 1185: progressions with difference in a difference set
 
-**Erdős Problem 1185: progressions with difference in a difference set.** This is the
+This is the
 statement that for every real $\delta > 0$ and every natural number $k \ge 3$ there is a natural
 number $m \ge 1$ such that for all sufficiently large natural numbers $N$, whenever $A$ and $B$
 are subsets of $\{1, \dots, N\}$ with $|A| \ge \delta N$ and $|B| \ge m$, there are natural

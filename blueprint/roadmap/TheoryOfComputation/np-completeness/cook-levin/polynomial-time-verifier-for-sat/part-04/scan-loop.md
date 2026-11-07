@@ -1,6 +1,6 @@
 # The scan loop of the lookup machine
 
-**The scan loop of the lookup machine.** Let $q$ be a list of bits, let $R$ be a list of
+Let $q$ be a list of bits, let $R$ be a list of
 symbols that is empty or starts with a symbol other than a name bit, and let $pre$ and $post$ be
 lists of table entries; the live value of $q$ in an entry list is the value of its first entry
 named $q$ that has a value, or false if there is none. Suppose the lookup program is at label

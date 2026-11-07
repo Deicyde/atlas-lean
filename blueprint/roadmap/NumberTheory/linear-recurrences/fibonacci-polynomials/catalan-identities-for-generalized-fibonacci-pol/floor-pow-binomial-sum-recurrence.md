@@ -1,6 +1,6 @@
 # Recurrence for the floor-exponent binomial sums
 
-**Recurrence for the floor-exponent binomial sums.** Let $R$ be a commutative ring, $t \in R$
+Let $R$ be a commutative ring, $t \in R$
 and $\ell \ge 1$ an integer, and for $m \ge 0$ let
 $T_\ell(m; t) = \sum_{j=0}^{m} \binom{m}{j} t^{\lfloor j/\ell \rfloor}$. Then for every integer
 $n \ge 0$,

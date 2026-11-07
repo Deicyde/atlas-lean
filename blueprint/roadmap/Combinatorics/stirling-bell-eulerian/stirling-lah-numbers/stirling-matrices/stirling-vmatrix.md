@@ -1,6 +1,6 @@
 # Upper bidiagonal matrix V(n)
 
-**Upper bidiagonal matrix V(n).** For a natural number $n$, $V(n)$ is the $n \times n$
+For a natural number $n$, $V(n)$ is the $n \times n$
 matrix over $\mathbb{Q}$, with rows and columns indexed by $1, \dots, n$, whose entries are
 $V_{i,i} = i$ on the diagonal, $V_{i,i+1} = 1$ just above the diagonal, and $0$ elsewhere.
 

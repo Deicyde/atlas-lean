@@ -1,6 +1,6 @@
 # Lower bound on the prime reciprocal sum of an odd primitive non-deficient number
 
-**Lower bound on the prime reciprocal sum of an odd primitive non-deficient number.** Let $n$
+Let $n$
 be an odd primitive non-deficient number with least prime factor $p_1$, let
 $T(n) = \sum_{p \mid n} 1/p$ and $H(n) = \prod_{p \mid n} p/(p-1)$, with the sum and product over
 the primes $p$ dividing $n$, and let $S = H(n) - 2$ be the surplus of $n$. Then

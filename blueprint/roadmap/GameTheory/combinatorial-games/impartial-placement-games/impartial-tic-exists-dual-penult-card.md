@@ -1,6 +1,6 @@
 # Token counts of dual Impartial Tic penults
 
-**Token counts of dual Impartial Tic penults.** Let $n \ge 5$ and let $x$ be a natural number
+Let $n \ge 5$ and let $x$ be a natural number
 with $2n \le x \le 4(n - 2)$. Then there is a penult $S$ of Impartial Tic on the $n \times n$
 board such that exactly $x$ cells of the board lie outside $S$.
 

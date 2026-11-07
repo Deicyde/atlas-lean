@@ -1,6 +1,6 @@
 # ZPP is contained in RP
 
-**ZPP is contained in RP.** Every decision problem in $\mathsf{ZPP}$ lies in
+Every decision problem in $\mathsf{ZPP}$ lies in
 $\mathsf{RP}$, that is, $\mathsf{ZPP} \subseteq \mathsf{RP}$.
 
 ## Sources

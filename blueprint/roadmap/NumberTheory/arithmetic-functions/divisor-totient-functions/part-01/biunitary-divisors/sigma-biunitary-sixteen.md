@@ -1,6 +1,6 @@
 # The biunitary divisor sum of $16$
 
-**The biunitary divisor sum of $16$.** The sum $\sigma^{**}(16)$ of the biunitary divisors of
+The sum $\sigma^{**}(16)$ of the biunitary divisors of
 $16$ equals $1 + 2 + 8 + 16 = 27$.
 
 ## Sources

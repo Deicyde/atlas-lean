@@ -1,6 +1,6 @@
 # Shankar–Yuan Hessian estimate for the sigma-2 equation in dimension four
 
-**Shankar–Yuan Hessian estimate for the sigma-2 equation in dimension four.** There is a function
+There is a function
 $C : [0, \infty] \to \mathbb{R}$ with the following property. Let $B_1(0)$ be the open unit ball in
 $\mathbb{R}^4$, and let $u : \mathbb{R}^4 \to \mathbb{R}$ be smooth ($C^\infty$) on $B_1(0)$ with
 finite $C^1$ norm $\|u\|_{C^1(B_1(0))}$ with respect to Lebesgue measure. Suppose that for every

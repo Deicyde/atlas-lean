@@ -1,6 +1,6 @@
 # Counting strongly restricted permutations with displacements $-m$, $0$, $jm$
 
-**Counting strongly restricted permutations with displacements $-m$, $0$, $jm$.** Let
+Let
 $m, j, i, r$ be natural numbers with $j \ge 1$ and $r < m$, and let $F_j$ be the Fibonacci
 $j$-numbers: $F_j(0) = 0$, $F_j(n) = 1$ for $1 \le n \le j$, and
 $F_j(n) = F_j(n-1) + F_j(n-j-1)$ for $n > j$. Then the number of permutations $\pi$ of

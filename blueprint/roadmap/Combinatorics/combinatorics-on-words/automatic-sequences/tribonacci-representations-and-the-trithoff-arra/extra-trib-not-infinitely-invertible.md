@@ -1,6 +1,6 @@
 # ExtraTribs cannot be inverted forever
 
-**ExtraTribs cannot be inverted forever.** Let $S$ be an extraTrib. There is no sequence
+Let $S$ be an extraTrib. There is no sequence
 $S_0, S_1, S_2, \dots$ of functions $\mathbb{Z} \to \mathbb{Z}$ with $S_0 = S$ such that for
 every $k \ge 0$ the function $S_{k+1}$ is an extraTrib and a difference-inverse of $S_k$, that
 is, $S_{k+1}(n+1) - S_{k+1}(n) = S_k(n)$ for all $n \in \mathbb{Z}$.

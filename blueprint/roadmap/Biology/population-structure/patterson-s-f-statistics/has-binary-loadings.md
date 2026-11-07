@@ -1,6 +1,6 @@
 # Binary loadings of a drift model
 
-**Binary loadings of a drift model.** The model has binary loadings if every lineage weight is `0` or `1`.
+The model has binary loadings if every lineage weight is `0` or `1`.
 
 Every tree model has binary loadings: there `weight X e` is the indicator of `e` lying on the
 root-to-`X` path. The converse fails, since nothing forces the weight-`1` edge sets to be

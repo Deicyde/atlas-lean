@@ -1,6 +1,6 @@
 # Fixed column hooks of size $k$ in odd distinct partitions, even column
 
-**Fixed column hooks of size $k$ in odd distinct partitions, even column.** Let $n$, $m$ and
+Let $n$, $m$ and
 $k \ge 1$ be natural numbers with $m \ge 1$ even, and let $h < k$ be an integer.
 For a partition $\lambda$, write $\lambda_r$ for its $r$-th largest part ($0$ if it has fewer
 than $r$ parts), $\lambda'_m$ for the number of its parts that are at least $m$, and

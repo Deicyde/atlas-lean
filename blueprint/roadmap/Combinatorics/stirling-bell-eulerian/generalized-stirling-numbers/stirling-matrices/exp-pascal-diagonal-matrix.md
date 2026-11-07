@@ -1,6 +1,6 @@
 # Exponential of a Pascal diagonal matrix
 
-**Exponential of a Pascal diagonal matrix.** Let $k \ge 1$ and $n \ge 0$. For $m \ge 0$ let
+Let $k \ge 1$ and $n \ge 0$. For $m \ge 0$ let
 $\mathsf{L}_{d^{(m)}}(n)$ be the $n \times n$ real matrix whose $(b + m, b)$ entry is
 $\binom{m+b}{b}$ for each $b$ with $b + m < n$ and whose other entries are $0$ (indices from
 $0$). Let $\alpha^{(k)} = (\alpha^{(k)}_i)_{i \ge 1}$ be given by $\alpha^{(k)}_1 = 1$,

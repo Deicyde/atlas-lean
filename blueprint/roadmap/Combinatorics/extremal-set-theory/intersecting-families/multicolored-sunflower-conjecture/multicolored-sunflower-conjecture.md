@@ -1,6 +1,6 @@
 # Multicolored sunflower conjecture
 
-**Multicolored sunflower conjecture.** There are a real number $\varepsilon > 0$ and a natural
+There are a real number $\varepsilon > 0$ and a natural
 number $n_0$ such that for every $n > n_0$, every finite set $S$ of triples $(x, y, z)$ of vectors
 in $(\mathbb{Z}/3)^n$ with $x + y + z = 0$ for every $(x, y, z) \in S$ and with
 $|S| \ge 3^{(1 - \varepsilon) n}$ contains a multicolored sunflower: triples

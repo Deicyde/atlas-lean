@@ -1,6 +1,6 @@
 # Convolution recurrence for the $r$-associated Stirling Eulerian numbers
 
-**Convolution recurrence for the $r$-associated Stirling Eulerian numbers.** For natural
+For natural
 numbers $r$, $n$, $m$ let $A^r_{n,m}$ be the number of permutations $\sigma$ of
 $\{0, \dots, n-1\}$ with exactly $m$ excedances (points $i$ with $\sigma(i) > i$) all of whose
 cycles (fixed points counted as cycles of length one) have length greater than $r$, and for

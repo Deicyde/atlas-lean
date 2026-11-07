@@ -1,6 +1,6 @@
 # Second-kind Stirling transform of the $\Lambda$ coefficients
 
-**Second-kind Stirling transform of the $\Lambda$ coefficients.** Let
+Let
 $\alpha \colon \mathbb{N} \to \mathbb{Q}$, let $S(i, k)$ denote the Stirling numbers of the
 second kind, let $\Psi_\alpha(k) = \sum_{l=0}^{k-1} \alpha_l / (k-1-l)!$, and for $k_1 \le k_2$
 let $\Lambda(\alpha, k_1, k_2) = \sum_{l=0}^{k_1-1} \binom{k_1-1}{l}

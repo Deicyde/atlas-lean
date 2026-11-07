@@ -1,6 +1,6 @@
 # Value of a MAX-CUT solution
 
-**Value of a MAX-CUT solution.** Let $x$ be a MAX-CUT instance with vertex count
+Let $x$ be a MAX-CUT instance with vertex count
 $n = \lfloor \sqrt{|x|} \rfloor$ and let $s$ be a bitstring, with bits indexed from $0$. If $s$
 is a feasible solution of $x$ (its length is $n$), the value of $s$ is the number, as a rational
 number, of pairs $(i, j)$ with $i < j < n$ such that bit $i n + j$ of $x$ is true and bits $i$

@@ -1,3 +1,3 @@
 # Leaf side of a pendant edge
 
-**Leaf side of a pendant edge.** The leaf side of a pendant edge holds only the leaf's taxon.
+The leaf side of a pendant edge holds only the leaf's taxon.

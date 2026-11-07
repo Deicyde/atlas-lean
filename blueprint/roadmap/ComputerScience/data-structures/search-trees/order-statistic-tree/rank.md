@@ -1,6 +1,6 @@
 # Rank in an order-statistic tree
 
-**Rank in an order-statistic tree.** For a key $q$ of a linearly ordered type, the rank of
+For a key $q$ of a linearly ordered type, the rank of
 $q$ in an order-statistic tree is computed by descending from the root. It is $0$ for the empty
 tree. At a node with key $k$, left subtree $L$ and right subtree $R$, it is the rank of $q$ in
 $L$ if $q < k$; it is $s(L) + 1$ plus the rank of $q$ in $R$ if $k < q$; and it is $s(L)$ if

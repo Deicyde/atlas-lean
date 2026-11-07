@@ -1,6 +1,6 @@
 # Uniformly recurrent sequence
 
-**Uniformly recurrent sequence.** A sequence $s : \mathbb{N} \to \alpha$ is uniformly
+A sequence $s : \mathbb{N} \to \alpha$ is uniformly
 recurrent if for every factor $w$ there is a constant $C_w$ such that every occurrence of $w$ is
 followed by another occurrence at distance at most $C_w$: for all $i, \ell \in \mathbb{N}$ there
 is $C \in \mathbb{N}$ such that for every $i'$ with $s(i' + t) = s(i + t)$ for all $t < \ell$,

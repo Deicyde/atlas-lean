@@ -1,6 +1,6 @@
 # Degenerate harmonic numbers of rank and degenerate Stirling numbers of the first kind
 
-**Degenerate harmonic numbers of rank and degenerate Stirling numbers of the first kind.** Let
+Let
 $\lambda > 0$ and $\alpha > 0$ be real and let $n \ge 1$ be a natural number. Write
 $(1)_{k,\lambda} = 1 \cdot (1 - \lambda) \cdots (1 - (k-1)\lambda)$ for the generalized falling
 factorial, $H_\lambda(m, r, \alpha)$ for the generalized degenerate harmonic numbers of rank $r$,

@@ -1,6 +1,6 @@
 # Uniqueness for the first-step equation of rejection sampling
 
-**Uniqueness for the first-step equation of rejection sampling.** Let $p$ and $q$ be
+Let $p$ and $q$ be
 probability mass functions on $\alpha$ and $M \in [0, \infty]$ with $M \ne 0$, $M \ne \infty$ and
 $p(y) \le M\,q(y)$ for all $y \in \alpha$. For one round of rejection sampling for target $p$,
 proposal $q$ and envelope $M$, write $P(x, \mathrm{accepted})$ for the probability that the round

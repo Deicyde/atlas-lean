@@ -1,6 +1,6 @@
 # Erdős Problem 136: the $(4, 5)$-colouring number of $K_n$ is asymptotically $5n/6$
 
-**Erdős Problem 136: the $(4, 5)$-colouring number of $K_n$ is asymptotically $5n/6$.** Let
+Let
 $f(n)$ be the least number of colours in a $(4, 5)$-colouring of $K_n$, that is, a symmetric
 colouring of the pairs of vertices of $K_n$ in which the six edges of every $K_4$ receive at
 least five distinct colours. Then $f(n)/n \to 5/6$ as $n \to \infty$.

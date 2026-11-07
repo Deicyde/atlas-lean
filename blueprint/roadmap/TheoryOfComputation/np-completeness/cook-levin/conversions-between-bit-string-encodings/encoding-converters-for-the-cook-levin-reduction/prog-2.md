@@ -1,6 +1,6 @@
 # Program of the bit-list decoder
 
-**Program of the bit-list decoder.** The program of the machine that decodes the canonical
+The program of the machine that decodes the canonical
 encoding of a bit list acts on the three stacks of the bit-list converters, all over bits, with an
 optional bit as internal state. At label $\mathrm{read}$ it pops a symbol from the input stack into
 the state (which becomes empty if the input is empty). If that symbol is true, it pops a second

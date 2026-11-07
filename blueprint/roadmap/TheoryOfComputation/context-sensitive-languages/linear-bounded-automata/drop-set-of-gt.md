@@ -1,3 +1,3 @@
 # Dropping past an updated list position
 
-**Dropping past an updated list position.** Dropping past a set position is unaffected by the set.
+Dropping past a set position is unaffected by the set.

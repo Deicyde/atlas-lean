@@ -1,6 +1,6 @@
 # Set integrals of the path expectation
 
-**Set integrals of the path expectation.** Let $\mu$ be a probability measure on $\Omega$, let
+Let $\mu$ be a probability measure on $\Omega$, let
 $(\mathcal{F}_t)_{t \ge 0}$ be a filtration of the σ-algebra of $\Omega$ indexed by
 $\mathbb{R}_{\ge 0}$, and let $(B_t)_{t \ge 0}$ be a real process such that each $B_t$ is
 $\mathcal{F}_t$-measurable and, for all $u \le t$, the increment $B_t - B_u$ is independent of

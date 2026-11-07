@@ -1,6 +1,6 @@
 # An outcome bounded by the mixed characteristic polynomial
 
-**An outcome bounded by the mixed characteristic polynomial.** Let $d$ be a nonempty finite
+Let $d$ be a nonempty finite
 index set. For $i = 1, \dots, m$ let $s_i \ge 1$, let $v_{i,1}, \dots, v_{i,s_i} \in \mathbb{C}^d$,
 let $p_{i,1}, \dots, p_{i,s_i} \ge 0$ be reals with $\sum_a p_{i,a} = 1$, and put
 $A_i = \sum_a p_{i,a} v_{i,a} v_{i,a}^*$. Then there is a choice of indices

@@ -1,6 +1,6 @@
 # The MINIMUM LINEAR ARRANGEMENT decision problem
 
-**The MINIMUM LINEAR ARRANGEMENT decision problem.** It accepts a bitstring $x$ exactly when
+It accepts a bitstring $x$ exactly when
 $x$ decodes, under the canonical bitstring encoding, to a triple $(n, E, K)$ of a natural number
 $n$, a list $E$ of pairs of natural numbers and a natural number $K$ with the following
 properties: every entry of $E$ is a pair $(u, v)$ of distinct numbers below $n$, the list $E$ has

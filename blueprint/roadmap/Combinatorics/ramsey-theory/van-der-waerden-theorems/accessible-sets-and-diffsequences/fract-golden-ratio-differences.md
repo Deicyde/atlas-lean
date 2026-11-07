@@ -1,6 +1,6 @@
 # Differences of fractional parts of multiples of the golden ratio
 
-**Differences of fractional parts of multiples of the golden ratio.** Let $F_m$ be the $m$-th
+Let $F_m$ be the $m$-th
 Fibonacci number, with $F_0 = 0$ and $F_1 = 1$, let $\varphi = (1 + \sqrt{5})/2$ be the golden
 ratio, and write $\{y\} = y - \lfloor y \rfloor$ for the fractional part. Let $i \ge 1$ be a
 natural number, put $g_i = F_{3i}/2$ (an integer, since $F_{3i}$ is even), and let

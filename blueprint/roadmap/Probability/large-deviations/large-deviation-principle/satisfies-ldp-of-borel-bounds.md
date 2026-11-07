@@ -1,6 +1,6 @@
 # Large deviation principle from bounds on measurable sets
 
-**Large deviation principle from bounds on measurable sets.** Let $X$ be a topological space
+Let $X$ be a topological space
 with a $\sigma$-algebra containing every open set, let $(\mu_n)_{n \in \mathbb{N}}$ be a sequence
 of measures on $X$, and let $I$ be a rate function on $X$. Suppose that every measurable set
 $\Gamma \subseteq X$, with interior $\Gamma^\circ$ and closure $\overline{\Gamma}$, satisfies

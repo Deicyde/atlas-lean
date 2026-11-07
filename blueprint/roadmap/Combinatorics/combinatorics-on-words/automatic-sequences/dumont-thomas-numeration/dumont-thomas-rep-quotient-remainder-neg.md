@@ -1,6 +1,6 @@
 # Quotient and remainder for negative positions
 
-**Quotient and remainder for negative positions.** Let $\eta$ be a substitution on an
+Let $\eta$ be a substitution on an
 alphabet $A$ and let $u : \mathbb{Z} \to A$ be a two-sided periodic point of $\eta$ with least
 period $p$ whose seed letters $u_{-1}$ and $u_0$ are both growing. Let $N \ge 2$ and $k$ be
 natural numbers with $p \mid k$ and $N \le |\eta^k(u_{-1})|$, and let

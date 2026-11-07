@@ -1,6 +1,6 @@
 # Divisibility of the median Genocchi numbers
 
-**Divisibility of the median Genocchi numbers.** Let $H_{2m+1}$ denote the odd-indexed median
+Let $H_{2m+1}$ denote the odd-indexed median
 Genocchi values, with the signs given by their defining sum, so that $H_5 = 2$, $H_7 = -8$ and
 $H_9 = 56$. For every natural number $n \ge 1$ there is an integer $z$ with $H_{2n+3} = 2^n z$,
 and $z \equiv 1 \pmod 6$ if $n$ is odd, while $z \equiv 4 \pmod 6$ if $n$ is even.

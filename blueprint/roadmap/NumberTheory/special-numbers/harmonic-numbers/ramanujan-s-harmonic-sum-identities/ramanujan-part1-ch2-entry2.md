@@ -1,6 +1,6 @@
 # Ramanujan's identity for $\sum_{k=1}^{2n+1} 1/(n+k)$
 
-**Ramanujan's identity for $\sum_{k=1}^{2n+1} 1/(n+k)$.** For every positive integer $n$,
+For every positive integer $n$,
 
 $$\sum_{k=1}^{2n+1} \frac{1}{n+k} = 1 + 2 \sum_{k=1}^{n} \frac{1}{(3k)^3 - 3k}.$$
 

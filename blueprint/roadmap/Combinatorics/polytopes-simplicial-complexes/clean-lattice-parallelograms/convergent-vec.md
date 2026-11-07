@@ -1,6 +1,6 @@
 # Convergent vectors of a continued fraction
 
-**Convergent vectors of a continued fraction.** Let $x$ be a rational number with regular
+Let $x$ be a rational number with regular
 continued fraction $[q_0; q_1, q_2, \dots]$, and let $A_j$ and $B_j$ be the numerators and
 denominators of its convergents, given by $A_{-2} = 0$, $A_{-1} = 1$, $B_{-2} = 1$, $B_{-1} = 0$
 and $A_j = q_j A_{j-1} + A_{j-2}$, $B_j = q_j B_{j-1} + B_{j-2}$ for $j \ge 0$. Stark's

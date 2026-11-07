@@ -1,6 +1,6 @@
 # Partial sums of bi-brackets
 
-**Partial sums of bi-brackets.** For pairs $(k_1, d_1), \dots, (k_r, d_r)$ of natural numbers
+For pairs $(k_1, d_1), \dots, (k_r, d_r)$ of natural numbers
 and a bound $M \in \mathbb{N}$, the partial bi-bracket is the $q$-series
 
 $$

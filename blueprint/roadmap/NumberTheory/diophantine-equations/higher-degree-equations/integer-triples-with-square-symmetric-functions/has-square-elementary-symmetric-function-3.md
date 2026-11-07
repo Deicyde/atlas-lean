@@ -1,6 +1,6 @@
 # Pairwise products preserve square symmetric functions
 
-**Pairwise products preserve square symmetric functions.** If $a$, $b$, $c$ are integers
+If $a$, $b$, $c$ are integers
 such that each of $a + b + c$, $ab + bc + ca$ and $abc$ is the square of an integer, then the
 same holds for the triple $ab$, $bc$, $ca$.
 

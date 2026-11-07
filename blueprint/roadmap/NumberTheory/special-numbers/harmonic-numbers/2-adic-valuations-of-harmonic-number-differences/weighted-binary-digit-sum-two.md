@@ -1,6 +1,6 @@
 # Weighted binary digit sum of 2
 
-**Weighted binary digit sum of 2.** The weighted binary digit sum of $2$ is $a(2) = 2$.
+The weighted binary digit sum of $2$ is $a(2) = 2$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Farey intervals lie in reciprocal intervals
 
-**Farey intervals lie in reciprocal intervals.** Let $a, b, c, d$ be natural numbers with
+Let $a, b, c, d$ be natural numbers with
 $a > 0$, $c \le d$ and $bc = ad + 1$, so that $[a/b, c/d] \subseteq [0, 1]$ is a Farey interval
 with positive left endpoint. Then there is a natural number $n \ge 1$ with $1/(n + 1) \le a/b$
 and $c/d \le 1/n$, that is, $[a/b, c/d] \subseteq [1/(n + 1), 1/n]$.

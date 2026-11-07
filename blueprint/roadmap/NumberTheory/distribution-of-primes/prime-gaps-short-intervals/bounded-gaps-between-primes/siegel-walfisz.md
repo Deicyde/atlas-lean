@@ -1,6 +1,6 @@
 # Siegel–Walfisz hypothesis for a family of sequences
 
-**Siegel–Walfisz hypothesis for a family of sequences.** Let $(\beta_x)_{x \in \mathbb{R}}$
+Let $(\beta_x)_{x \in \mathbb{R}}$
 be a family of finitely supported sequences $\beta_x : \mathbb{N} \to \mathbb{R}$ and let
 $M : \mathbb{R} \to \mathbb{R}$. The family satisfies the Siegel–Walfisz hypothesis at scale $M$
 if for every real $A \ge 1$ there are a real number $C > 0$ and a natural number $k$ such that,

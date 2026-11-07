@@ -1,6 +1,6 @@
 # Morphic coding of the Wythoff mex pairs at level one
 
-**Morphic coding of the Wythoff mex pairs at level one.** Let $a_n$ be the least natural
+Let $a_n$ be the least natural
 number $m > 1$ that differs from $a_i$ and $b_i$ for every $i < n$, and let $b_n = a_n + n + 2$,
 so that $(a_0, b_0) = (2, 4)$. Let $f_1$ be the morphism on the alphabet $\{0, 1, 2, 3, 4\}$
 given by $0 \mapsto 0\,1$, $1 \mapsto 2$, $2 \mapsto 3\,4$, $3 \mapsto 3\,1$, $4 \mapsto 2$ and

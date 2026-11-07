@@ -1,6 +1,6 @@
 # Ramanujan's formula for the alternating zeta function at $-r$
 
-**Ramanujan's formula for the alternating zeta function at $-r$.** Let
+Let
 $\eta(s) = (1 - 2^{1-s})\,\zeta(s)$ for $s \ne 1$ and $\eta(1) = \log 2$, where $\zeta$ is the
 Riemann zeta function, and let $B^*(z) = 2\,\Gamma(z + 1)\,\zeta(z) / (2\pi)^z$. Then for every
 $s \in \mathbb{C}$ with $\mathrm{Re}\, s > 0$ the partial sums $\sum_{j=0}^{N-1} (-1)^j / (j+1)^s$

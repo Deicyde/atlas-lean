@@ -1,6 +1,6 @@
 # Gale-Shapley serves every preference profile with $n$ proposers and $n$ receivers
 
-**Gale-Shapley serves every preference profile with $n$ proposers and $n$ receivers.** Let
+Let
 the $n$ proposers and the $n$ receivers both be numbered $0, \dots, n-1$. Let each proposer $m$
 have a strict total order $\lt _m$ of preference on the receivers and each receiver $w$ a strict
 total order $\lt _w$ of preference on the proposers, where $x \lt _m y$ means that $m$ prefers $x$ to

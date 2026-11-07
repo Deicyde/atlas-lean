@@ -1,6 +1,6 @@
 # Existence of a Bernstein set
 
-**Existence of a Bernstein set.** There is a set $B \subseteq \mathbb{R}$ such that every closed,
+There is a set $B \subseteq \mathbb{R}$ such that every closed,
 uncountable set $F \subseteq \mathbb{R}$ meets both $B$ and its complement $\mathbb{R} \setminus B$.
 
 ## Sources

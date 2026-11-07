@@ -1,6 +1,6 @@
 # One row of the clique verifier's walk
 
-**One row of the clique verifier's walk.** Let $m$ be a mode, $s_i$ a bit, $r$ and $b$
+Let $m$ be a mode, $s_i$ a bit, $r$ and $b$
 lists of bits, $v$ a state and $S$ stack contents in which the vertex stack $V$ holds, from
 the top, the bits of the reverse $\rho$ of $r$ followed by $s_i$, the scratch stack $T$ is
 empty, and the input stack $X$ holds the bits $b$. Call the row condition: $|r| \le |b|$,

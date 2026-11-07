@@ -1,6 +1,6 @@
 # Store-irrelevant heap assertions
 
-**Store-irrelevant heap assertions.** A heap assertion $P$ is store-irrelevant when for all
+A heap assertion $P$ is store-irrelevant when for all
 stores $s, s'$ and every heap $h$, $P(s, h)$ implies $P(s', h)$; that is, whether $P$ holds
 does not depend on the store.
 

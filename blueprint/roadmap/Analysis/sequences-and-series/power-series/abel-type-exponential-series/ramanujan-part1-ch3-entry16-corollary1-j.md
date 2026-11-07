@@ -1,6 +1,6 @@
 # Jensen's series (Chapter 3, Entry 16, Corollary 1)
 
-**Jensen's series (Chapter 3, Entry 16, Corollary 1).** Let $\rho$ be a positive real number
+Let $\rho$ be a positive real number
 with $\rho e^{\rho + 1} = 1$, let $n$ be a real number with $-\rho < n < 1$, and let $x$ be a
 complex number. Then the series
 

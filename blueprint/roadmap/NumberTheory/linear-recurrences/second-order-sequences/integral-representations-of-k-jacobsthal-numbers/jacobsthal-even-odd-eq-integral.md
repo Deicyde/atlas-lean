@@ -1,6 +1,6 @@
 # Integral formulas for even- and odd-indexed Jacobsthal numbers
 
-**Integral formulas for even- and odd-indexed Jacobsthal numbers.** Let $J_n = U_n(1, -2)$ be
+Let $J_n = U_n(1, -2)$ be
 the Jacobsthal numbers ($J_0 = 0$, $J_1 = 1$, $J_{n+2} = J_{n+1} + 2J_n$). For every natural
 number $n$, in $\mathbb{R}$,
 

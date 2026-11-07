@@ -1,6 +1,6 @@
 # Power-loop program
 
-**Power-loop program.** Given six counters $b$, $k$, $p$, $q$, $a$, $t$, a label for each
+Given six counters $b$, $k$, $p$, $q$, $a$, $t$, a label for each
 power-loop stage and an exit label, the power loop is the following program on the stages. At
 the head stage it pops one unit from $k$; if $k$ was empty it goes to the exit label, otherwise
 to the first multiplication stage. The multiplication stages add $p \cdot b$ to $q$ (a

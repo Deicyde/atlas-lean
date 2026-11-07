@@ -1,6 +1,6 @@
 # Perfect $m$-cover
 
-**Perfect $m$-cover.** Let $G$ be an abelian group, $m$ a natural number and
+Let $G$ be an abelian group, $m$ a natural number and
 $s = (s_i)_{i \in \iota}$ a family of elements of $G$ indexed by a finite set $\iota$ (a colored
 multiset: repeated values count separately). The family $s$ is a perfect $m$-cover of $G$ when
 every $g \in G$ equals $\sum_{i \in I} s_i$ for exactly $m$ subsets $I \subseteq \iota$ (the

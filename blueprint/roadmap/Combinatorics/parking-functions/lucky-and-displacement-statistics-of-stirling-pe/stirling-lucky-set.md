@@ -1,6 +1,6 @@
 # The lucky set of a word
 
-**The lucky set of a word.** Let $w = w_1 \cdots w_{2n}$ be a word of natural numbers. Car
+Let $w = w_1 \cdots w_{2n}$ be a word of natural numbers. Car
 $i$ prefers spot $q_i = ((w_i - 1) \bmod 2n) + 1$, where $w_i - 1$ is truncated at $0$; when
 every $w_i$ lies in $\{1, \dots, 2n\}$, this is $q_i = w_i$. Cars $1, \dots, 2n$ arrive in
 order, and car $i$ parks in the least spot $p(i) \in \{q_i, \dots, 2n\}$ not taken by an

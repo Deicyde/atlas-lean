@@ -1,6 +1,6 @@
 # Rest of a walk step of the clique verifier
 
-**Rest of a walk step of the clique verifier.** Write $\mathrm{free}_m(s)$ for the condition
+Write $\mathrm{free}_m(s)$ for the condition
 that, in mode $m$, a vertex with chosen-flag $s$ settles every pair of its row, and
 $\mathrm{sat}_m(b', s')$ for the pair condition on pair bit $b'$ and later vertex flag $s'$. In
 mode $m$ with row flag $c$, after a bit $z$ has been popped off the vertex stack $V$: if $V$ is

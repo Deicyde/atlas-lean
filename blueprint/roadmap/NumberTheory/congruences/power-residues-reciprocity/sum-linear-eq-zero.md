@@ -1,6 +1,6 @@
 # Linear Legendre-symbol sums vanish
 
-**Linear Legendre-symbol sums vanish.** Let $p$ be an odd prime and let $b$ and $c$ be
+Let $p$ be an odd prime and let $b$ and $c$ be
 integers with $p \nmid b$. Then the Legendre symbols $\left(\frac{b\ell + c}{p}\right)$ for
 $\ell = 0, 1, \dots, p - 1$ sum to $0$.
 

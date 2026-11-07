@@ -1,6 +1,6 @@
 # Run embedding
 
-**Run embedding.** Let $E$ be a stack embedding with stack renaming $e$, let $\varphi$ map the
+Let $E$ be a stack embedding with stack renaming $e$, let $\varphi$ map the
 labels of a machine $M$ to those of a host machine $M'$, and suppose $M$ embeds in $M'$ along $E$
 and $\varphi$. Suppose $M$ goes in exactly $n$ steps from label $\ell$, state $v$ and stacks $S$ to
 a live label $\ell'$, state $v'$ and stacks $T$, where the start may also be the halted

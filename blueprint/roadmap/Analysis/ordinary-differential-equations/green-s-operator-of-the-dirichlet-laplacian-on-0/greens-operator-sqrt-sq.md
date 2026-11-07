@@ -1,6 +1,6 @@
 # The square root of the Green's operator squares to the Green's operator
 
-**The square root of the Green's operator squares to the Green's operator.** Let
+Let
 $G(x, t) = \min(x, t)\,(1 - \max(x, t))$ be the Green's kernel and let $A$ be a linear map from
 $L^2([0, 1])$ to itself that is symmetric, $\langle Af, g \rangle = \langle f, Ag \rangle$ for all
 $f, g$, and is given by the Green's kernel, $(Af)(x) = \int_{[0, 1]} G(x, t) f(t)\, dt$ for almost

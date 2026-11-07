@@ -1,6 +1,6 @@
 # The initial-repetitions partition function $c_8'$
 
-**The initial-repetitions partition function $c_8'$.** For $n \ge 0$, $c_8'(n)$ is the number
+For $n \ge 0$, $c_8'(n)$ is the number
 of partitions of $n$ into distinct even parts plus the sum, over $m = 1, \dots, n$, of the number
 of partitions of $n$ in which every even number $2i$ with $1 \le i \le m$ is a part, every even
 part at most $m$ appears at most twice, every odd part at most $m$ appears exactly once, and every

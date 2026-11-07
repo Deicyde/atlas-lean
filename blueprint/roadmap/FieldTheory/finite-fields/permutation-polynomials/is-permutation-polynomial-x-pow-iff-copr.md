@@ -1,6 +1,6 @@
 # Monomial permutation polynomials of a finite field
 
-**Monomial permutation polynomials of a finite field.** Let $K$ be a finite field with $q$
+Let $K$ be a finite field with $q$
 elements and let $d \ge 1$ be an integer. Then $X^d$ is a permutation polynomial of $K$ if and
 only if $\gcd(d, q - 1) = 1$.
 

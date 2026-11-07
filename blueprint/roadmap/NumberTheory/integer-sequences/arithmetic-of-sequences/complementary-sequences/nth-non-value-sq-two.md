@@ -1,6 +1,6 @@
 # The second non-square
 
-**The second non-square.** The second smallest positive integer that is not the square of a
+The second smallest positive integer that is not the square of a
 positive integer is $3$; that is, the second non-value of $m \mapsto m^2$ is $3$.
 
 ## Sources

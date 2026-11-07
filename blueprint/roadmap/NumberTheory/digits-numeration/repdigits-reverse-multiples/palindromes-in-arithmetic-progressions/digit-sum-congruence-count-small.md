@@ -1,6 +1,6 @@
 # A small value of the digit-sum congruence count
 
-**A small value of the digit-sum congruence count.** In the notation $N_b(k, q, r, x, y)$
+In the notation $N_b(k, q, r, x, y)$
 of the digit-sum congruence count, $N_3(2, 2, 0, 0, 3) = 5$: exactly five pairs $(x_1, x_2)$ of
 natural numbers with $x_1, x_2 < 3$ have even sum.
 

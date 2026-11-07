@@ -1,6 +1,6 @@
 # Sparse strong Schreier sets and partitions avoiding small parts
 
-**Sparse strong Schreier sets and partitions avoiding small parts.** For all integers
+For all integers
 $n \ge 1$ and $\ell \ge 1$, the number of sparse $\ell$-strong Schreier sets
 $A \subseteq \{1, \dots, n\}$ with $n \in A$ equals the number of partitions of $n - 1$ with no
 part in $\{2, \dots, \ell\}$.

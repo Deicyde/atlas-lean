@@ -1,6 +1,6 @@
 # Orderly generation of union-closed families
 
-**Orderly generation of union-closed families.** Let $n$, $k$ and $m$ be natural numbers with
+Let $n$, $k$ and $m$ be natural numbers with
 $1 \le m \le k$, and let $A_1, \dots, A_k$ be nonempty subsets of $\Omega_n = \{0, \dots, n-1\}$
 with $A_i < A_j$ in the set order whenever $i < j$. Suppose the family
 $U = \{\emptyset, A_1, \dots, A_k\}$ is union-closed, every element of $\Omega_n$ lies in some

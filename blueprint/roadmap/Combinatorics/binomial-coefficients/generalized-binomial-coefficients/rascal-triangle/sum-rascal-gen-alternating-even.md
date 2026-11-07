@@ -1,6 +1,6 @@
 # Alternating row sums of generalized Rascal numbers on even rows
 
-**Alternating row sums of generalized Rascal numbers on even rows.** Write $R^{(j)}_{n,k}$ for
+Write $R^{(j)}_{n,k}$ for
 the number of binary words of length $n$ with exactly $k$ ones and at most $j$ ascents
 (positions where a $0$ is immediately followed by a $1$). For natural numbers $j$ and $m$ with
 $m \ge 1$, $\sum_{k=0}^{2m} (-1)^k R^{(j)}_{2m,k} = (-1)^j \binom{m-1}{j}$, and for $m = 0$ the

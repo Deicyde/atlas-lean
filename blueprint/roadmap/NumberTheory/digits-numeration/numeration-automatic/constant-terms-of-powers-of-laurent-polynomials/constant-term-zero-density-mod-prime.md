@@ -1,6 +1,6 @@
 # Density-one zeros of constant terms modulo $p$
 
-**Density-one zeros of constant terms modulo $p$.** Let $p$ be a prime, let $P$ be a Laurent
+Let $p$ be a prime, let $P$ be a Laurent
 polynomial in $r$ variables with integer coefficients, write $\operatorname{ct}[F]$ for the
 constant term of a Laurent polynomial $F$, and suppose that $p$ divides $\operatorname{ct}[P^n]$
 for some natural number $n$. Then for every Laurent polynomial $Q$ in $r$ variables with integer

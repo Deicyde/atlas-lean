@@ -1,6 +1,6 @@
 # Absolute convergence of a log-weighted difference series
 
-**Absolute convergence of a log-weighted difference series.** Let $f$ be a real function on
+Let $f$ be a real function on
 the natural numbers with $f(n) = O(n^\alpha)$ as $n \to \infty$ for some real $\alpha$ with
 $0 \le \alpha < 1$. Then for every natural number $i$ the series
 

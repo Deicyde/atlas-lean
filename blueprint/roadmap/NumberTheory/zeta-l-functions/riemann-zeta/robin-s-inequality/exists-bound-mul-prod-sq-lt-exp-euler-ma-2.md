@@ -1,6 +1,6 @@
 # Eventual bound for $C(k)B(k)$ by $e^\gamma \log\log$ of a primorial quotient
 
-**Eventual bound for $C(k)B(k)$ by $e^\gamma \log\log$ of a primorial quotient.** Let $p_\ell$
+Let $p_\ell$
 denote the $\ell$-th prime ($p_1 = 2$), $\log$ the natural logarithm, $\gamma$ the
 Euler–Mascheroni constant, $c_1$ the Meissel–Mertens constant and $p\#$ the product of all primes
 at most $p$. For $j \in \{1, 2, 3\}$ and $k \in \mathbb{N}$ put

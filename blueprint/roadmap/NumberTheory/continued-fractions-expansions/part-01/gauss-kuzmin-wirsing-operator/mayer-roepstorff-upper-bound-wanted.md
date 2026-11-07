@@ -1,6 +1,6 @@
 # Mayer–Roepstorff upper bound for the Wirsing constant
 
-**Mayer–Roepstorff upper bound for the Wirsing constant.** The
+The
 Wirsing constant is at most $0.30366327$.
 
 ## Sources

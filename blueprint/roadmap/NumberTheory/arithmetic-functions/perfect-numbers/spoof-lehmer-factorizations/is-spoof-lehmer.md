@@ -1,6 +1,6 @@
 # Spoof Lehmer factorizations
 
-**Spoof Lehmer factorizations.** Let $k$ be an integer and $F$ a finite multiset of pairs
+Let $k$ be an integer and $F$ a finite multiset of pairs
 $(x, a)$ of natural numbers. Write $\tilde e(F) = \prod x^a$ for the spoof evaluation and
 $\tilde\varphi(F) = \prod (x^a - x^{a-1})$ for the spoof totient of $F$, the products running
 over the pairs of $F$ with multiplicity. Then $F$ is a (spoof) $k$-Lehmer factorization if $F$ is

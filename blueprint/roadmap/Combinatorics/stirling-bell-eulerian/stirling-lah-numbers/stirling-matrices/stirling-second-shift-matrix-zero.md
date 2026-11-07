@@ -1,6 +1,6 @@
 # Shift zero gives the Stirling matrix of the second kind
 
-**Shift zero gives the Stirling matrix of the second kind.** For every natural number $n$, the
+For every natural number $n$, the
 shifted Stirling matrix $S^{[0]}(n)$, the $n \times n$ rational matrix with entries $S(i + 0, j)$
 for $1 \le i, j \le n$, equals the Stirling matrix of the second kind $S(n)$, the $n \times n$
 rational matrix with entries $S(i, j)$; here $S(i, j)$ denotes the Stirling numbers of the

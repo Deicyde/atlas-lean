@@ -1,6 +1,6 @@
 # Fundamental matrix of a linear system
 
-**Fundamental matrix of a linear system.** Let $n \in \mathbb{N}$, let
+Let $n \in \mathbb{N}$, let
 $A : \mathbb{R} \to \mathbb{R}^{n \times n}$ be continuous, let $t_0 \in \mathbb{R}$, and write $I$
 for the $n \times n$ identity matrix. Then there is a function
 $\Phi : \mathbb{R} \to \mathbb{R}^{n \times n}$ with $\Phi(t_0) = I$, $\Phi'(t) = A(t) \Phi(t)$ and

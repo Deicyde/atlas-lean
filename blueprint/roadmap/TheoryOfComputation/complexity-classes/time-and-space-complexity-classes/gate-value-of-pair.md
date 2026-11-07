@@ -1,6 +1,6 @@
 # Serial gate evaluation agrees with typed gate evaluation
 
-**Serial gate evaluation agrees with typed gate evaluation.** For every list $v$ of Boolean
+For every list $v$ of Boolean
 values of earlier gates, every assignment of Boolean values to the $n$ inputs and every pair
 $g = (k, r)$ of a natural number $k$ (the gate kind) and a list $r$ of natural numbers (its
 references), evaluating $g$ with the serial $(\mathrm{kind}, \mathrm{refs})$ gate evaluator

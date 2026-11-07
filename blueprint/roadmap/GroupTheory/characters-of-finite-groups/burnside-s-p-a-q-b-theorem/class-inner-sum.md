@@ -1,6 +1,6 @@
 # Contribution of a conjugacy class to the self-pairing sum
 
-**Contribution of a conjugacy class to the self-pairing sum.** Let $\rho$ be an irreducible
+Let $\rho$ be an irreducible
 representation of a finite group $G$ on a finite-dimensional complex vector space $V$, with
 character $\chi$. For a conjugacy class $l$ of $G$, let $g_l$ be its chosen representative and
 $\omega(l)$ the central scalar of $l$, the scalar by which the class sum of $l$ acts on $V$. Then

@@ -1,6 +1,6 @@
 # Weighted number of tardy jobs of an ordering
 
-**Weighted number of tardy jobs of an ordering.** Let $J$ be a list of jobs, each a triple of
+Let $J$ be a list of jobs, each a triple of
 natural numbers (processing time, due date, weight), and write $(p_i, d_i, w_i)$ for the job at
 position $i$ of $J$, counting from $0$, with $(p_i, d_i, w_i) = (0, 0, 0)$ when $J$ has no
 position $i$. For a list $(j_1, \dots, j_m)$ of natural numbers, the weighted number of tardy

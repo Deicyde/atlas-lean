@@ -1,6 +1,6 @@
 # Common unitary divisors are at most the greatest one
 
-**Common unitary divisors are at most the greatest one.** For natural numbers $a$, $b$ and $d$,
+For natural numbers $a$, $b$ and $d$,
 if $d$ is a unitary divisor of both $a$ and $b$, then $d \le \gcd_1(a, b)$, where $\gcd_1(a, b)$ is
 the greatest common unitary divisor of $a$ and $b$.
 

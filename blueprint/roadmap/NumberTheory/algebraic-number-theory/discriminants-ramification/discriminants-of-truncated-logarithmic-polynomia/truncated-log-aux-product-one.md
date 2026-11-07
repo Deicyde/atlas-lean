@@ -1,6 +1,6 @@
 # Auxiliary product at $m = 1$
 
-**Auxiliary product at $m = 1$.** The auxiliary product $X(m)$ takes the value $X(1) = 1$ at
+The auxiliary product $X(m)$ takes the value $X(1) = 1$ at
 $m = 1$; it is an empty product.
 
 ## Sources

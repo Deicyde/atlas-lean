@@ -1,6 +1,6 @@
 # Difference of consecutive Stirling numbers of the second kind
 
-**Difference of consecutive Stirling numbers of the second kind.** For natural numbers
+For natural numbers
 $i \ge 1$ and $j \ge 1$, the Stirling numbers of the second kind $S(i, j)$ satisfy, in $\mathbb{Q}$,
 
 $$

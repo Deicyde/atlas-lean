@@ -1,6 +1,6 @@
 # Affine-gap score from a gap state
 
-**Affine-gap score from a gap state.** Fix an integer substitution score $\sigma$, an integer
+Fix an integer substitution score $\sigma$, an integer
 gap-open cost $o$ and an integer gap-extend cost $e$. The affine-gap score of an alignment started
 from a gap state $p$ is the sum of its column scores, computed left to right while carrying a gap
 state that starts at $p$ and is updated after each column. The empty alignment scores $0$. A

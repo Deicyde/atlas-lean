@@ -1,3 +1,3 @@
 # Increasing family of compact hulls
 
-**Increasing family of compact hulls.** An increasing family `(K_t)` of compact `ℍ`-hulls.
+An increasing family `(K_t)` of compact `ℍ`-hulls.

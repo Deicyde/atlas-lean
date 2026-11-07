@@ -1,6 +1,6 @@
 # Canonical inherently ambiguous context-free language
 
-**Canonical inherently ambiguous context-free language.** The language `{a ^ i b ^ j c ^ k | i = j or j = k}` over the alphabet `Fin 3`
+The language `{a ^ i b ^ j c ^ k | i = j or j = k}` over the alphabet `Fin 3`
 (`0, 1, 2` for `a, b, c`): the standard inherently ambiguous context-free language.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Bi-bracket generating series as a sum of exponentials
 
-**Bi-bracket generating series as a sum of exponentials.** Let $r$ and $N$ be natural numbers
+Let $r$ and $N$ be natural numbers
 and let $g(X_1, \dots, X_r; Y_1, \dots, Y_r)$ be the generating series of bi-brackets of depth $r$,
 a power series in the $2r$ variables over $\mathbb{Q}[[q]]$. The power series over $\mathbb{Q}$
 obtained by taking the coefficient of $q^N$ in every coefficient of $g$ equals the finite sum

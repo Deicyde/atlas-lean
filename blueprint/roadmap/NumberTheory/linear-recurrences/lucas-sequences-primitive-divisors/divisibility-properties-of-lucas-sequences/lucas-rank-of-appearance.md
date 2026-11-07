@@ -1,6 +1,6 @@
 # Rank of appearance in a Lucas sequence
 
-**Rank of appearance in a Lucas sequence.** Let $U = U(P, Q)$ be the Lucas sequence with
+Let $U = U(P, Q)$ be the Lucas sequence with
 integer parameters $P$ and $Q \ne 0$. The rank of appearance $\rho(m)$ of a natural number $m$ in
 $U$ is the least positive integer $r$ with $m \mid U_r$; when no positive $r$ has $m \mid U_r$,
 $\rho(m) = 0$.

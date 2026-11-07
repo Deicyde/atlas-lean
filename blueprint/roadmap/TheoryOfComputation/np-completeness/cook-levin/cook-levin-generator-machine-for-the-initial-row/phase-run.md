@@ -1,6 +1,6 @@
 # One phase loop
 
-**One phase loop.** Fix a layout $L$ with $g$ symbol codes, a start code $i_c$, a stack index
+Fix a layout $L$ with $g$ symbol codes, a start code $i_c$, a stack index
 $k_0$ and a list $y$ of $n$ certificate codes, and let $M$ be the counter part of the initial-row
 generator for these parameters. Let $p$ be a loop phase with loop counter $N_p$ and base counter
 $Z_p$, and let $F$ be counter values with the scratch counters $Q$, $\mathrm{tmp}$, $\mathrm{md}$,

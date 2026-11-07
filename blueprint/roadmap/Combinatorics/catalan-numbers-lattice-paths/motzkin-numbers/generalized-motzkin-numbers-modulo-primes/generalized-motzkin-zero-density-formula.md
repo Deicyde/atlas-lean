@@ -1,6 +1,6 @@
 # Zero density formula for generalized Motzkin numbers modulo a prime
 
-**Zero density formula for generalized Motzkin numbers modulo a prime.** Let $a, b$ be
+Let $a, b$ be
 integers and let $p > 2$ be a prime with $a \not\equiv 0 \pmod p$. Write $T_r = T^{(a,b)}_r$ for
 the generalized central trinomial coefficients and $M_n = M^{(a,b)}_n$ for the generalized Motzkin
 numbers, and suppose that $T_r \not\equiv 0 \pmod p$ for every $r < p$. Let $A$ be the number of

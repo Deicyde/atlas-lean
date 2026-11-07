@@ -1,6 +1,6 @@
 # The $W$-polynomial of a labeled poset
 
-**The $W$-polynomial of a labeled poset.** Let $R$ be a relation on the labels
+Let $R$ be a relation on the labels
 $\{0, 1, \dots, n-1\}$, with $R(i, j)$ read as $i \lt _P j$ in the poset $P$ it generates. A linear
 extension of $P$ is a permutation $w$ of the labels such that $a < b$ whenever $R(w(a), w(b))$,
 that is, a word $w(0)\,w(1) \cdots w(n-1)$ listing every label once with $w(a)$ before $w(b)$

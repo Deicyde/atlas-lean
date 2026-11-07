@@ -1,6 +1,6 @@
 # Lattice-point enumerator
 
-**Lattice-point enumerator.** For a natural number $d$, a bounded set
+For a natural number $d$, a bounded set
 $P \subseteq \mathbb{R}^d$ and a real number $t > 0$, the lattice-point enumerator $L_P(t)$ is
 the number of points of the integer lattice $\mathbb{Z}^d$ in the dilate
 $tP = \{tp : p \in P\}$, that is, $L_P(t) = |(tP) \cap \mathbb{Z}^d|$.

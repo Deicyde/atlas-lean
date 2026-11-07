@@ -1,6 +1,6 @@
 # Binomial parity sums detect run length divisibility
 
-**Binomial parity sums detect run length divisibility.** For all natural numbers $m$ and $n$,
+For all natural numbers $m$ and $n$,
 the sum
 
 $$\sum_{k=0}^{n} \left( \binom{2^m k}{n + k} \binom{n}{k} \bmod 2 \right)$$

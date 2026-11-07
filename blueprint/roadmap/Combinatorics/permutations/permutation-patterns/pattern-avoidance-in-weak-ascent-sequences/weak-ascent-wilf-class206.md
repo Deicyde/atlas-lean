@@ -1,6 +1,6 @@
 # Weak-ascent Wilf equivalence in Class 206
 
-**Weak-ascent Wilf equivalence in Class 206.** For every natural number $n$, the number of
+For every natural number $n$, the number of
 weak ascent sequences of length $n$ avoiding every pattern in $\{100, 102, 120, 210\}$ equals
 the number avoiding every pattern in $\{101, 102, 120, 201\}$, the number avoiding every
 pattern in $\{101, 102, 120, 210\}$ and the number avoiding every pattern in

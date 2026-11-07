@@ -1,3 +1,3 @@
 # Boundary tag of a head position
 
-**Boundary tag of a head position.** The boundary tag of head position `h` on a tape of length `n`.
+The boundary tag of head position `h` on a tape of length `n`.

@@ -1,6 +1,6 @@
 # Primes congruent to $-3$ modulo $8$
 
-**Primes congruent to $-3$ modulo $8$.** $P$ is the set of positive prime integers $p$
+$P$ is the set of positive prime integers $p$
 with $p \equiv -3 \pmod 8$, that is, $p \equiv 5 \pmod 8$.
 
 ## Sources

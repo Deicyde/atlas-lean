@@ -1,6 +1,6 @@
 # Diagonal classes of size at most three
 
-**Diagonal classes of size at most three.** Let $\alpha$ be a partition of $n \ge 1$, let
+Let $\alpha$ be a partition of $n \ge 1$, let
 $d = \delta(\alpha)$ be its diagonal sequence, written without its trailing zeros, and let
 $[\alpha]$ be the set of partitions of $n$ with diagonal sequence $d$, each written by its parts
 in decreasing order. Here $v^{(r)}$ means $r$ copies of $v$, and a run $a, a - 1, \dots, b$ with

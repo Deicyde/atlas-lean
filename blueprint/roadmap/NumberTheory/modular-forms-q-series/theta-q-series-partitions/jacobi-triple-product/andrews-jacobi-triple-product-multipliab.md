@@ -1,6 +1,6 @@
 # Convergence of the product in Andrews' triple product identity
 
-**Convergence of the product in Andrews' triple product identity.** Let $q$ be a complex
+Let $q$ be a complex
 number with $|q| < 1$, and let $k$ and $i$ be natural numbers with $0 < i \le k$. Then the infinite
 product
 

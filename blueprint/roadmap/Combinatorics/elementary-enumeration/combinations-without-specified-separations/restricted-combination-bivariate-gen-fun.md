@@ -1,6 +1,6 @@
 # Bivariate generating function for well-based forbidden differences
 
-**Bivariate generating function for well-based forbidden differences.** Let $Q$ be a finite
+Let $Q$ be a finite
 set of positive integers that is well based, and write $S^Q_{n,k}$ for the number of $k$-subsets
 of $\{1, \dots, n\}$ in which no two elements differ by an element of $Q$. In the ring
 $\mathbb{Z}[y][[x]]$ of formal power series in $x$ with coefficients in $\mathbb{Z}[y]$, let

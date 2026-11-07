@@ -1,6 +1,6 @@
 # Initial-segment sample variance
 
-**Initial-segment sample variance.** For a sequence $a : \mathbb{N} \to \mathbb{N}$ and
+For a sequence $a : \mathbb{N} \to \mathbb{N}$ and
 $n \in \mathbb{N}$, the unbiased initial-segment sample variance is the real number
 $v(a, n) = \frac{1}{n - 1} \sum_{j=1}^{n} \left(a(j) - \frac{1}{n} \sum_{k=1}^{n} a(k)\right)^2$,
 with the convention $1 / 0 = 0$; in particular $v(a, 0) = v(a, 1) = 0$.

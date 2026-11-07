@@ -1,6 +1,6 @@
 # Initial state of a QMA verifier
 
-**Initial state of a QMA verifier.** For a bitstring $x = (x_0, \dots, x_{n-1})$, with true
+For a bitstring $x = (x_0, \dots, x_{n-1})$, with true
 read as $1$ and false as $0$, numbers $m$ and $a$, and a vector $\psi \in \mathbb{C}^{2^m}$ (the
 witness on $m$ qubits), the initial state is the tensor product of the computational basis state
 of $x$, the vector $\psi$ and the all-zero state on $a$ ancilla qubits, in this order. It is the

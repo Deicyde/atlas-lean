@@ -1,6 +1,6 @@
 # Monotonicity of the continuous Turán number in the side length
 
-**Monotonicity of the continuous Turán number in the side length.** For every set
+For every set
 $P \subseteq \mathbb{R}^2$ and all real numbers $m \le n$, the continuous Turán numbers satisfy
 $\operatorname{opx}(m, P) \le \operatorname{opx}(n, P)$.
 

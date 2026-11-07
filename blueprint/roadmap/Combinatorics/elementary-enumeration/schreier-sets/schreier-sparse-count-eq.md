@@ -1,6 +1,6 @@
 # Counting Schreier sparse sets by partition numbers
 
-**Counting Schreier sparse sets by partition numbers.** For every integer $n \ge 1$, the
+For every integer $n \ge 1$, the
 number of Schreier sparse sets $F \subseteq \{1, \dots, n\}$ with $n \in F$ equals $p(n - 1)$,
 the number of partitions of $n - 1$.
 

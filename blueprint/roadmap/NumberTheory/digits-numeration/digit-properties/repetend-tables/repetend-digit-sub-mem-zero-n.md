@@ -1,6 +1,6 @@
 # Digit differences for a base of order $6p^j$ modulo $p^i$
 
-**Digit differences for a base of order $6p^j$ modulo $p^i$.** Let $p$ be a prime with
+Let $p$ be a prime with
 $p \equiv 1 \pmod 6$, let $i$ and $j$ be natural numbers, and put $n = p^i$ and $Q = p^j$. Let
 $B < n$ be a natural number whose multiplicative order modulo $n$ is $6Q$, let $f \in \{1, -1\}$,
 and let $d$ and $e$ be natural numbers with $d \equiv 2fQ \pmod{6Q}$ and $e \equiv fQ \pmod{6Q}$.

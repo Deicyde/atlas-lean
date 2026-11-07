@@ -1,6 +1,6 @@
 # Existence and uniqueness of the Aronson transform
 
-**Existence and uniqueness of the Aronson transform.** Let $n_0$ be a natural number and let
+Let $n_0$ be a natural number and let
 $\beta : \mathbb{N} \to \mathbb{N}$ be strictly increasing with $\beta_i \ge n_0$ for every $i$,
 such that infinitely many integers $m \ge n_0$ are not values of $\beta$. Then there is exactly
 one sequence $\alpha : \mathbb{N} \to \mathbb{N}$ such that $\alpha$ is strictly increasing,

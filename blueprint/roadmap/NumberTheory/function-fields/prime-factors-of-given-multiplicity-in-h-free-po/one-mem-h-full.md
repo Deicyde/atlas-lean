@@ -1,6 +1,6 @@
 # The polynomial $1$ is $h$-full
 
-**The polynomial $1$ is $h$-full.** For every field $F$ and every natural number $h$, the
+For every field $F$ and every natural number $h$, the
 constant polynomial $1 \in F[X]$ is $h$-full: it is monic, and whenever a monic irreducible
 polynomial $P$ divides it, so does $P^h$.
 

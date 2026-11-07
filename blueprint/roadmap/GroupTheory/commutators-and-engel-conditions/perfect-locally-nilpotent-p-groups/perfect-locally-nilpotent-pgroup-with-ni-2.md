@@ -1,6 +1,6 @@
 # No infinite perfect locally nilpotent $p$-group has only nilpotent proper subgroups
 
-**No infinite perfect locally nilpotent $p$-group has only nilpotent proper subgroups.** There is
+There is
 no prime $p$ and no infinite locally nilpotent $p$-group $G$ (every element of $G$ has order a
 power of $p$) such that $G = [G, G]$ and every proper subgroup of $G$ is nilpotent.
 

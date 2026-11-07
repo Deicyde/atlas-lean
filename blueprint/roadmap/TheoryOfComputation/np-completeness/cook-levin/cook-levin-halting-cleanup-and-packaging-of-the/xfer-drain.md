@@ -1,6 +1,6 @@
 # Draining a stack with the transfer loop
 
-**Draining a stack with the transfer loop.** Let $M$ be a TM2 machine whose state type
+Let $M$ be a TM2 machine whose state type
 carries a flag bit, and suppose that the statement of $M$ at label $\ell$ is the transfer loop
 that pops stack $k$ with no target stacks, returning to $\ell$ while the pop succeeds and going
 to label $\ell'$ once stack $k$ is empty. Then for every state $v$ and every stack assignment

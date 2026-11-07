@@ -1,6 +1,6 @@
 # Lasjaunias's criterion for unbounded partial quotients
 
-**Lasjaunias's criterion for unbounded partial quotients.** Let $\mathbb{F}_q$ be a finite
+Let $\mathbb{F}_q$ be a finite
 field, let $A, B, C, D \in \mathbb{F}_q[x]$ with $\Delta = AD - BC \ne 0$ and $C \ne 0$, and let
 $\alpha \in \mathbb{F}_q((x^{-1}))$ be irrational with $\alpha = (A\alpha^q + B)/(C\alpha^q + D)$.
 Write $|y| = |x|^{\deg y}$ for the absolute value on $\mathbb{F}_q((x^{-1}))$, where $\deg y$ is

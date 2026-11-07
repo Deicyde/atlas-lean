@@ -1,6 +1,5 @@
 # Telescoping inverse-power series of gibonacci polynomials at even indices, odd shift
 
-**Telescoping inverse-power series of gibonacci polynomials at even indices, odd shift.**
 Let $x > 0$ be real, and let $g_n$ denote either the Fibonacci polynomials, given by $g_0 = 0$ and
 $g_1 = 1$, or the Lucas polynomials, given by $g_0 = 2$ and $g_1 = x$, both satisfying
 $g_{n+2} = x g_{n+1} + g_n$ and evaluated at $x$. Let $k$ be an odd natural number and

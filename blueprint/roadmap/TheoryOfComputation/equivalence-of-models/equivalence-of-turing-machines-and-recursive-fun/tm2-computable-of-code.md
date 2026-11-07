@@ -1,6 +1,6 @@
 # The wrapped machine computes the function a code evaluates
 
-**The wrapped machine computes the function a code evaluates.** Let $c$ be a code and
+Let $c$ be a code and
 $f : \mathbb{N} \to \mathbb{N}$ a function such that, for every $n$, evaluating $c$ on the
 one-element list $[n]$ returns $[f(n)]$. Then the wrapped machine of $c$, with input and output
 alphabet the booleans, computes $f$ under the binary encoding of natural numbers (least

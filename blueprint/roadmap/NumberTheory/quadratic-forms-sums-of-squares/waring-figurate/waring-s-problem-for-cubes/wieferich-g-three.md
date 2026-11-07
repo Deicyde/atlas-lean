@@ -1,6 +1,6 @@
 # Wieferich's nine cubes theorem
 
-**Wieferich's nine cubes theorem.** Every natural number is a sum of $9$ cubes of natural
+Every natural number is a sum of $9$ cubes of natural
 numbers, and $9$ cannot be replaced by $8$: some natural number is not a sum of $8$ cubes of
 natural numbers.
 

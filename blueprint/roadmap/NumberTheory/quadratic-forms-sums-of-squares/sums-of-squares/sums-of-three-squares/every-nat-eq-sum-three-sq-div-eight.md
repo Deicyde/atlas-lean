@@ -1,6 +1,6 @@
 # Sums of three terms of the sequence ⌊n²/8⌋
 
-**Sums of three terms of the sequence ⌊n²/8⌋.** For every natural number $m$ there are natural
+For every natural number $m$ there are natural
 numbers $a$, $b$, $c$ with
 $m = \lfloor a^2/8 \rfloor + \lfloor b^2/8 \rfloor + \lfloor c^2/8 \rfloor$.
 

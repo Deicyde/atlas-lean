@@ -1,6 +1,6 @@
 # Small disjoint subsets of an infinite group need not be separated
 
-**Small disjoint subsets of an infinite group need not be separated.** There exist an infinite
+There exist an infinite
 group $G$ and disjoint subsets $A, B \subseteq G$ with $|A| < |G|$ and $|B| < |G|$ such that $A$
 and $B$ are not separated. That is, the statement of Kourovka Problem 17.102 is false.
 

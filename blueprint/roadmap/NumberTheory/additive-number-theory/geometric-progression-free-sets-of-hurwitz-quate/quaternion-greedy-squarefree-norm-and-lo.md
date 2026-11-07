@@ -1,6 +1,6 @@
 # Squarefree norms and the lower density of the quaternion greedy set
 
-**Squarefree norms and the lower density of the quaternion greedy set.** A Hurwitz quaternion is
+A Hurwitz quaternion is
 a quaternion whose four rational coordinates are either all integers or all halves of odd integers;
 the norm $\mathrm{Nm}(q)$ of a quaternion $q$ is the sum of the squares of its coordinates. For a
 natural number $N$ let $S(N)$ be the set of nonzero Hurwitz quaternions of norm at most $N$. Let

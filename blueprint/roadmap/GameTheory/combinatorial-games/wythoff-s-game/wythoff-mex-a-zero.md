@@ -1,6 +1,6 @@
 # The term $a_0$ of the mex sequence
 
-**The term $a_0$ of the mex sequence.** For every natural number $\ell$, the mex sequence
+For every natural number $\ell$, the mex sequence
 $(a_n)$ of $K^\ell$ (Wythoff's game in which the positions $(x, y)$ with $x + y \le \ell$ are
 terminal) satisfies $a_0 = \ell + 1$.
 

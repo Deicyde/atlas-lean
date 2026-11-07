@@ -1,6 +1,6 @@
 # Degree neighbours in the polynomial Farey series
 
-**Degree neighbours in the polynomial Farey series.** Let $F$ be a field, let $n \in \mathbb N$,
+Let $F$ be a field, let $n \in \mathbb N$,
 and let $\mathcal F_n$ be the Farey series of order $n$ over $F$. For pairs $(u, v)$ and $(h, k)$
 of polynomials over $F$, read as the fractions $u/v$ and $h/k$, the fraction $h/k$ is a
 $(\deg k)$-neighbour of $u/v$ in $\mathcal F_n$ when both fractions lie in $\mathcal F_n$,

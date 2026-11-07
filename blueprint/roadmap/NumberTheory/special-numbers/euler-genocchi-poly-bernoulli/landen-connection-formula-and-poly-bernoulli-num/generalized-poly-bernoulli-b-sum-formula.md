@@ -1,6 +1,6 @@
 # Sum formula for generalized poly-Bernoulli numbers $B_n$
 
-**Sum formula for generalized poly-Bernoulli numbers $B_n$.** Let $g = (g_0, g_1, \dots, g_s)$
+Let $g = (g_0, g_1, \dots, g_s)$
 be Landen data, let $\beta, \gamma \in \mathbb{R}^s$, let $\mu$ be a real number, and let $k \ge 1$
 and $n \ge 0$ be integers. Write $B_n$ and $C_n$ for Kamano's generalized poly-Bernoulli numbers of
 the second and first kind, $d(\mathbf{k})$ for the number of entries of an index $\mathbf{k}$, and

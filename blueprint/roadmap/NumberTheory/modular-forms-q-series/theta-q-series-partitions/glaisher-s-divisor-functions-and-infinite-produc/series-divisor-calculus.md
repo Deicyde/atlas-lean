@@ -1,6 +1,6 @@
 # Calculus of series-divisors
 
-**Calculus of series-divisors.** Let $R$ be a commutative ring, let $A$ be a formal power
+Let $R$ be a commutative ring, let $A$ be a formal power
 series over $R$, write $[q^k]F$ for the coefficient of $q^k$ in a power series $F$, and let
 $s : \mathbb{N} \to R$ satisfy $n\,[q^n]A = \sum_{i=1}^{n} s(i)\,[q^{n-i}]A$ for every $n \ge 0$
 (that is, $s$ is a series-divisor of $A$). Then the following hold for every $n \ge 0$:

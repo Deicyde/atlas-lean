@@ -1,6 +1,6 @@
 # Clement's criterion for twin primes
 
-**Clement's criterion for twin primes.** For every natural number $p \ge 2$, the numbers
+For every natural number $p \ge 2$, the numbers
 $p$ and $p + 2$ are both prime if and only if
 
 $$4\bigl((p-1)! + 1\bigr) + p \equiv 0 \pmod{p(p+2)}.$$

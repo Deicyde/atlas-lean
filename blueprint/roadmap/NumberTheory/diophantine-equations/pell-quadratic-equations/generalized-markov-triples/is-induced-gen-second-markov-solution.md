@@ -1,6 +1,6 @@
 # Induced solution of the generalized second Markov equation
 
-**Induced solution of the generalized second Markov equation.** For a natural number $k$,
+For a natural number $k$,
 a triple $(a, b, c)$ of integers is an induced positive solution of the $k$-generalized second
 Markov equation $\mathrm{GSME}(k)$ when $a, b, c > 0$,
 

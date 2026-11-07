@@ -1,6 +1,6 @@
 # The Gamma function at $r + \tfrac12$ and at $\tfrac12 - r$
 
-**The Gamma function at $r + \tfrac12$ and at $\tfrac12 - r$.** For every complex number $r$
+For every complex number $r$
 that is not a negative integer,
 
 $$\Gamma\bigl(r + \tfrac12\bigr) =

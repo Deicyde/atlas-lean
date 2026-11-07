@@ -1,6 +1,6 @@
 # Two-sided Tribonacci sequence
 
-**Two-sided Tribonacci sequence.** The integer sequence $(T_n)_{n \in \mathbb{Z}}$ is defined on
+The integer sequence $(T_n)_{n \in \mathbb{Z}}$ is defined on
 the nonnegative indices by $T_0 = 0$, $T_1 = T_2 = 1$ and $T_{n+3} = T_{n+2} + T_{n+1} + T_n$
 for $n \ge 0$, and on the negative indices by $T_{-1} = 0$, $T_{-2} = 1$ and
 $T_{-m-3} = T_{-m} - T_{-m-1} - T_{-m-2}$ for $m \ge 0$, the recurrence solved for its lowest

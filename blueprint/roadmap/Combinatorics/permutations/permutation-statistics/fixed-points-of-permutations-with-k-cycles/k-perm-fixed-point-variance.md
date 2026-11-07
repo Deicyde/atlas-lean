@@ -1,6 +1,5 @@
 # Variance of the number of fixed points of a permutation with a given number of cycles
 
-**Variance of the number of fixed points of a permutation with a given number of cycles.**
 Write $a(n, k, j)$ for the number of permutations of an $n$-element set with exactly $k$ cycles
 (fixed points counted as cycles of length one) and exactly $j$ fixed points, $c(n, k)$ for the
 unsigned Stirling number of the first kind (the number of permutations of an $n$-element set

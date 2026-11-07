@@ -1,6 +1,6 @@
 # Arithmetical compact sets are quasi-arithmetical
 
-**Arithmetical compact sets are quasi-arithmetical.** If $K \subseteq \mathbb{R}$ is an
+If $K \subseteq \mathbb{R}$ is an
 arithmetical compact set of module $\mu$ and ratio $\rho$, then $K$ is a quasi-arithmetical
 compact set of module $\mu$ and ratio $\rho$.
 

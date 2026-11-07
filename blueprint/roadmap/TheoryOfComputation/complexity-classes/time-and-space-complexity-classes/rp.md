@@ -1,6 +1,6 @@
 # The class RP
 
-**The class RP.** A decision problem $L$ is in $\mathsf{RP}$ when there are a polynomial
+A decision problem $L$ is in $\mathsf{RP}$ when there are a polynomial
 $p$ with natural-number coefficients and a polynomial-time computable Boolean function $R$
 on pairs of bitstrings such that for every bitstring $x$: if $L(x)$ is true, then $R(x, r)$
 is true for at least half of the $2^{p(|x|)}$ bitstrings $r$ of length $p(|x|)$; and if

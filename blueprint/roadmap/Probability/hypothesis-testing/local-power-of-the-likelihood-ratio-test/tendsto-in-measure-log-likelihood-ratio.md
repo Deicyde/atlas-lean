@@ -1,6 +1,6 @@
 # Local asymptotic normality of the log-likelihood ratio
 
-**Local asymptotic normality of the log-likelihood ratio.** Suppose that on the ball of
+Suppose that on the ball of
 radius `δ > 0` about `θ₀` the log-likelihood `log p θ x` is differentiable in `θ`, the score
 `∂_θ log p θ x` is twice differentiable in `θ`, and `|∂³_θ log p θ x| ≤ M x`. Let `Y 0, Y 1, …`
 be random variables such that `-(n⁻¹ ∑_{i<n} ∂²_θ log p θ₀ (Y i)) → I` and

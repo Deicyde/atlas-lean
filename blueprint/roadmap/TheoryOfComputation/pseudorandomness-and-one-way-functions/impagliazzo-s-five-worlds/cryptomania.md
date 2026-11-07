@@ -1,6 +1,6 @@
 # Cryptomania
 
-**Cryptomania.** Cryptomania is the statement that public-key cryptography exists: there
+Cryptomania is the statement that public-key cryptography exists: there
 are a polynomial $\ell$ with natural-number coefficients and polynomial-time computable maps
 $G$ (key generation), $E$ (encryption) and $D$ (decryption) from bitstrings to bitstrings with
 the following two properties. First, decryption is correct: for every natural number $n$, all

@@ -1,6 +1,6 @@
 # The Carmichael index of 1
 
-**The Carmichael index of 1.** The Carmichael index of $1$ is $N(1) = 1$.
+The Carmichael index of $1$ is $N(1) = 1$.
 
 ## Sources
 

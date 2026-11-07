@@ -1,6 +1,6 @@
 # Two-colorings avoiding long $D$-progressions
 
-**Two-colorings avoiding long $D$-progressions.** Let $D$ be a set of positive integers,
+Let $D$ be a set of positive integers,
 let $\alpha$ be a real number and let $\varepsilon > 0$ be such that
 $\lVert \alpha d \rVert \ge \varepsilon$ for every $d \in D$, where $\lVert t \rVert$ denotes the
 distance from $t$ to the nearest integer. Then there is a $2$-coloring of the positive integers

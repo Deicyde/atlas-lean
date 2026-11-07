@@ -1,6 +1,6 @@
 # Relations between values of $M$ at neighbouring pairs
 
-**Relations between values of $M$ at neighbouring pairs.** Let $a$, $b$, $p$ be integers with
+Let $a$, $b$, $p$ be integers with
 $p \ne 0$, and for integers $r$, $s$ let
 $M(r, s) = \frac{br^2 + bs^2 - apr^2 + 2ars}{s^2 - prs - r^2}$. Then for all integers $r$, $s$
 that are not both zero, $M(s - pr, r) + (p^2 + 2)M(r, s) + M(s, r + ps) = 0$ and

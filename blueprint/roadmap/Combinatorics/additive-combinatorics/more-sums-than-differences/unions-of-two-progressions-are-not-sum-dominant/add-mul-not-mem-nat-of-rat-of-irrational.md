@@ -1,6 +1,6 @@
 # Nonnegative integer points for a rational start and an irrational difference
 
-**Nonnegative integer points for a rational start and an irrational difference.** Let $x$ be
+Let $x$ be
 a rational number that is not a nonnegative integer, and let $d$ be an irrational real number.
 Then $x + id$ is not a nonnegative integer for any natural number $i$, and $2x + jd$ is not a
 nonnegative integer for any natural number $j \ge 1$.

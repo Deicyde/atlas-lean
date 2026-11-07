@@ -1,6 +1,6 @@
 # Anderson paving theorem
 
-**Anderson paving theorem.** For every real $\varepsilon > 0$ there is a positive integer $r$ such
+For every real $\varepsilon > 0$ there is a positive integer $r$ such
 that for every $n \in \mathbb{N}$ and every Hermitian complex $n \times n$ matrix $A$ with zero
 diagonal and $\|A\| \le 1$, where $\|\cdot\|$ is the operator norm for the Euclidean norm on
 $\mathbb{C}^n$, there is a colouring $c$ of the indices $\{0, \dots, n-1\}$ with the $r$ colours

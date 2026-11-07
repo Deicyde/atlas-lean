@@ -1,6 +1,6 @@
 # A finitely presented simple group with unbounded commutator length
 
-**A finitely presented simple group with unbounded commutator length.** There is a finitely
+There is a finitely
 presented simple group $G$ such that for every natural number $n$ some element of the derived
 subgroup $[G, G]$ is not a product of at most $n$ commutators $x y x^{-1} y^{-1}$ with
 $x, y \in G$. This answers Kourovka Problem 14.13(b) in the affirmative; the Kourovka Archive cites

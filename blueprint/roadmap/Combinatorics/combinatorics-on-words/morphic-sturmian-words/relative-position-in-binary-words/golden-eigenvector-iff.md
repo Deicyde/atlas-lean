@@ -1,6 +1,6 @@
 # Integer matrices with the golden eigenvector
 
-**Integer matrices with the golden eigenvector.** Let $\tau = (1 + \sqrt 5)/2$ be the golden
+Let $\tau = (1 + \sqrt 5)/2$ be the golden
 ratio and $\tau' = (1 - \sqrt 5)/2$ its conjugate, and let $M$ be a $2 \times 2$ integer matrix.
 Then $(\tau, 1)^T$ is a right eigenvector of $M$, that is, $M (\tau, 1)^T = c\,(\tau, 1)^T$ for
 some real number $c$, if and only if

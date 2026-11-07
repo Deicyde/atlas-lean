@@ -1,6 +1,6 @@
 # Levi decomposition
 
-**Levi decomposition.** Let $L$ be a finite-dimensional Lie algebra over a field $K$ of
+Let $L$ be a finite-dimensional Lie algebra over a field $K$ of
 characteristic zero, and let $\operatorname{rad}(L)$ be its radical, the largest solvable ideal
 of $L$. Then there is a semisimple Lie subalgebra $S$ of $L$ (a Levi factor) such that
 $L = \operatorname{rad}(L) \oplus S$ as $K$-vector spaces, that is,

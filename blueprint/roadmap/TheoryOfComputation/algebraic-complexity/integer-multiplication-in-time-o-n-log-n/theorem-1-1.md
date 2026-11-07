@@ -1,6 +1,6 @@
 # Harvey–van der Hoeven: integer multiplication in time $O(n \log n)$
 
-**Harvey–van der Hoeven: integer multiplication in time $O(n \log n)$.** There is a
+There is a
 multi-stack Turing machine with finite alphabets and a function $t : \mathbb{N} \to \mathbb{N}$
 such that, for all natural numbers $x$ and $y$, the machine started on the encoding of the pair
 $(x, y)$ (the binary encodings of $x$ and $y$, zipped) halts within $t(\ell)$ steps with the

@@ -1,6 +1,6 @@
 # Weighted Schreier count $a_{3,3}$
 
-**Weighted Schreier count $a_{3,3}$.** The weighted Schreier count $a_{3,3}$ equals $4$.
+The weighted Schreier count $a_{3,3}$ equals $4$.
 
 ## Sources
 

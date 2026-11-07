@@ -1,6 +1,6 @@
 # Containment of simultaneous cores (Olsson–Stanton question)
 
-**Containment of simultaneous cores (Olsson–Stanton question).** The proposition that for all
+The proposition that for all
 coprime positive integers $s$ and $t$ and every Young diagram $\kappa$ that is both an $s$-core and
 a $t$-core and has at least as many cells as every Young diagram that is both an $s$-core and a
 $t$-core, every Young diagram that is both an $s$-core and a $t$-core is contained in $\kappa$,

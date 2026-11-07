@@ -1,6 +1,6 @@
 # Characters of $p$-defect zero
 
-**Characters of $p$-defect zero.** For a natural number $p$ and a group $G$, the set of
+For a natural number $p$ and a group $G$, the set of
 characters $\chi \colon G \to \mathbb{C}$ of irreducible finite-dimensional complex representations
 of $G$ whose degree is divisible by $p^a$, where $a$ is the exponent of $p$ in the prime
 factorization of the order $|G|$ (and $a = 0$ when $G$ is infinite or $p$ is not prime).

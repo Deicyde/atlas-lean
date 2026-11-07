@@ -1,6 +1,6 @@
 # Kadane's algorithm
 
-**Kadane's algorithm.** Let $\alpha$ be a linearly ordered type with an additive monoid
+Let $\alpha$ be a linearly ordered type with an additive monoid
 structure. On the empty list, Kadane's algorithm returns no value. On a list
 $x_1, x_2, \dots, x_n$ of elements of $\alpha$ with $n \ge 1$, it sets $e = b = x_1$; then for
 $i = 2, \dots, n$ in turn it replaces $e$ by $\max(x_i, e + x_i)$ and then $b$ by $\max(b, e)$;

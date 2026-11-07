@@ -1,6 +1,6 @@
 # Last-letter digit word for the Fibonacci substitution
 
-**Last-letter digit word for the Fibonacci substitution.** Let $\varphi$ be the Fibonacci
+Let $\varphi$ be the Fibonacci
 substitution on the alphabet $\{0, 1\}$, given by $\varphi(0) = 01$ and $\varphi(1) = 0$.
 Following the last letter twice from the letter $1$, where each step from a letter $c$ records
 the digit $|\varphi(c)| - 1$ and moves to the last letter of $\varphi(c)$, gives the digit word

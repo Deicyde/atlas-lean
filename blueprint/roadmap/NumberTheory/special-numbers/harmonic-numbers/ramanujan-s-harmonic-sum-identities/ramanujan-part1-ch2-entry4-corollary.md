@@ -1,6 +1,6 @@
 # Ramanujan's series for $\frac{3}{2}\log 2 - 1$
 
-**Ramanujan's series for $\frac{3}{2}\log 2 - 1$.** The numbers $\frac{2}{(4k)^3 - 4k}$ for
+The numbers $\frac{2}{(4k)^3 - 4k}$ for
 $k = 1, 2, 3, \dots$ are summable with sum $\frac{3}{2}\log 2 - 1$, where $\log$ is the natural
 logarithm.
 

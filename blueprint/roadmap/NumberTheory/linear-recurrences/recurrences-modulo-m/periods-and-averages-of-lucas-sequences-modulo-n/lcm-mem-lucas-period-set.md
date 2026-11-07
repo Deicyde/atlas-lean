@@ -1,6 +1,6 @@
 # Closure of the period set under lcm and products
 
-**Closure of the period set under lcm and products.** Let $U$ be the Lucas sequence with
+Let $U$ be the Lucas sequence with
 parameters $P$ and $Q \ne 0$, given by $U_0 = 0$, $U_1 = 1$ and $U_{k+2} = P U_{k+1} - Q U_k$. Let
 $S(U)$ be the set of positive integers $n$ coprime to $Q$ such that the period $\pi_U(n)$ of $U$
 modulo $n$ divides $n$, and let $S'(U)$ be the set of $n \in S(U)$ with

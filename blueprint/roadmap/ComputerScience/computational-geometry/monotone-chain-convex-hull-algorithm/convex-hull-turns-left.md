@@ -1,6 +1,6 @@
 # The monotone chain hull of non-collinear points turns strictly left at every vertex
 
-**The monotone chain hull of non-collinear points turns strictly left at every vertex.** Let
+Let
 $\Bbbk$ be a linearly ordered field and write $(u_1, u_2) \times (v_1, v_2) = u_1 v_2 - v_1 u_2$
 for the cross product on $\Bbbk^2$. Let $P$ be a list of points of $\Bbbk^2$ that is strictly
 increasing in the lexicographic order on $(x, y)$, and suppose the points of $P$ are not all

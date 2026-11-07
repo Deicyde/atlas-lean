@@ -1,6 +1,6 @@
 # Restricted Gaussian partition
 
-**Restricted Gaussian partition.** Let $q$ and $n$ be natural numbers and let $G$ be a
+Let $q$ and $n$ be natural numbers and let $G$ be a
 Gaussian partition. Then $G$ is a restricted Gaussian partition for $q$ and $n$ when $q$ is a
 prime power, $n > 0$, and there exist blocks $(d_1, m_1), \dots, (d_\ell, m_\ell)$ and, for each
 block $i$, a chain $C_i$ of branch steps $(a, b, c)$, with the following properties.

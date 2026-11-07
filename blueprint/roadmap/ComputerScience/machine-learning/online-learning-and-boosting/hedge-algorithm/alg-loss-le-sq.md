@@ -1,6 +1,6 @@
 # The second-order Hedge bound
 
-**The second-order Hedge bound.** Let $\eta > 0$, and let $\ell_1, \dots, \ell_T$ be loss
+Let $\eta > 0$, and let $\ell_1, \dots, \ell_T$ be loss
 vectors in $\mathbb{R}^n$ for $n$ experts with $\ell_t(j) \ge 0$ for all $t$ and $j$. Run Hedge
 with learning rate $\eta$ from unit weights, that is $w_1(j) = 1$ and
 $w_{t+1}(j) = w_t(j) e^{-\eta \ell_t(j)}$, and let $x_t(j) = w_t(j) / \sum_k w_t(k)$ be the

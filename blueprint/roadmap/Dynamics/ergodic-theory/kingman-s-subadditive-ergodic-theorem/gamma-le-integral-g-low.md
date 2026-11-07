@@ -1,3 +1,3 @@
 # Time constant is at most the integral of the lower limit
 
-**Time constant is at most the integral of the lower limit.** The time constant is at most `∫ g_*`.
+The time constant is at most `∫ g_*`.

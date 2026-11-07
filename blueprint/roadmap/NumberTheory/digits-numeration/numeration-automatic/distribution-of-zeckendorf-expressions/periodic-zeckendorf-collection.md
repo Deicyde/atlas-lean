@@ -1,6 +1,6 @@
 # Periodic Zeckendorf collection
 
-**Periodic Zeckendorf collection.** For a list $L$ of natural numbers, the periodic Zeckendorf
+For a list $L$ of natural numbers, the periodic Zeckendorf
 collection determined by $L$ is the set of finitely supported coefficient functions $\mu$ that
 can be written as a sum $\mu = \zeta_1 + \dots + \zeta_r$ of finitely many $L$-blocks
 $\zeta_1, \dots, \zeta_r$ (possibly none, which gives $\mu = 0$) whose support intervals are

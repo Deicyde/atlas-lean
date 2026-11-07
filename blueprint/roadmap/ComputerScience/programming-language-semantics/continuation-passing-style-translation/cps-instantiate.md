@@ -1,6 +1,6 @@
 # The CPS translation commutes with instantiation by a value or variable
 
-**The CPS translation commutes with instantiation by a value or variable.** Fix an answer
+Fix an answer
 type $R$ and write $\llbracket \cdot \rrbracket$ for the call-by-value CPS translation of types,
 contexts (entrywise) and terms. Let $N$ be a term of type $B$ in a context $A, \Gamma$, let $v$
 be a term of type $A$ in $\Gamma$, and let $p$ be a term of type $\llbracket A \rrbracket$ in

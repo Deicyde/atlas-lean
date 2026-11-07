@@ -1,6 +1,6 @@
 # Locally nilpotent but not nilpotent polynomials at $\pm 1$
 
-**Locally nilpotent but not nilpotent polynomials at $\pm 1$.** The only polynomial
+The only polynomial
 $u \in \mathbb{Z}[x]$ of positive degree that is locally nilpotent at $1$ but not nilpotent at $1$
 is $x + 1$, and the only polynomial of positive degree that is locally nilpotent at $-1$ but not
 nilpotent at $-1$ is $x - 1$.

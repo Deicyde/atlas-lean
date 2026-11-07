@@ -1,6 +1,6 @@
 # The unary mover of the Hamiltonian path verifier moves a terminated number
 
-**The unary mover of the Hamiltonian path verifier moves a terminated number.** Let
+Let
 $\mathsf{src} \ne \mathsf{dst}$ be stacks and $\ell$, $m$ labels such that the verifier's
 statement at $\ell$ is the unary mover from $\mathsf{src}$ to $\mathsf{dst}$ with own label
 $\ell$ and next label $m$. Let $k$ be a natural number and $r$ a bit list, and suppose that

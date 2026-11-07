@@ -1,6 +1,6 @@
 # Partition average sum
 
-**Partition average sum.** For a function $f : \mathbb{R} \to \mathbb{R}$, a real number $p$
+For a function $f : \mathbb{R} \to \mathbb{R}$, a real number $p$
 and real numbers $t_0, t_1, \dots, t_n$, the partition average sum is
 
 $$\sum_{i=0}^{n-1} (t_{i+1} - t_i)

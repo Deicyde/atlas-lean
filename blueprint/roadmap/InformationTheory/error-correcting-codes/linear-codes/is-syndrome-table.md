@@ -1,6 +1,6 @@
 # Syndrome table correct up to a radius
 
-**Syndrome table correct up to a radius.** Let $H$ be a $\rho \times \iota$ matrix over a field
+Let $H$ be a $\rho \times \iota$ matrix over a field
 $F$, with $\iota$ finite, and let $t$ be a natural number. A syndrome table for $H$, that is, a map
 $T$ from syndromes $s \in F^\rho$ to error patterns $T(s) \in F^\iota$, is correct up to radius
 $t$ when, for every word $e \in F^\iota$ of Hamming weight at most $t$, the word $T(He)$ has the

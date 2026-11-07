@@ -1,6 +1,6 @@
 # A second-order upper bound for the $n$-th prime in terms of its logarithm
 
-**A second-order upper bound for the $n$-th prime in terms of its logarithm.** Let $p_n$
+Let $p_n$
 denote the $n$-th prime, so that $p_1 = 2$. For every integer $n \ge 39071$,
 
 $$p_n < n\left(\log p_n - 1 - \frac{1}{\log p_n}\right).$$

@@ -1,6 +1,6 @@
 # Infinitely divisible measures are probability measures
 
-**Infinitely divisible measures are probability measures.** Let $M$ be an additive
+Let $M$ be an additive
 commutative monoid with a measurable structure in which addition is jointly measurable. Every
 infinitely divisible measure on $M$ is a probability measure.
 

@@ -1,6 +1,6 @@
 # Lüroth convergents
 
-**Lüroth convergents.** For a sequence of natural numbers $d_0, d_1, d_2, \dots$ (numbered from
+For a sequence of natural numbers $d_0, d_1, d_2, \dots$ (numbered from
 $0$) with Lüroth denominators $Q_0, Q_1, Q_2, \dots$, the $n$-th Lüroth convergent is the rational
 number
 

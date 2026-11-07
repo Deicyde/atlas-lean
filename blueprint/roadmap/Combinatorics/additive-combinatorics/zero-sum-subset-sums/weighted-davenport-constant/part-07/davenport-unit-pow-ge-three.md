@@ -1,6 +1,6 @@
 # Weighted zero-sum free pairs for $k$-th power weights modulo a prime
 
-**Weighted zero-sum free pairs for $k$-th power weights modulo a prime.** Let $k \ge 2$, let
+Let $k \ge 2$, let
 $p$ be a prime with $p \equiv 1 \pmod k$, and let $U(p)^k = \{u^k : u \in \mathbb{Z}_p^\times\}$.
 Then some sequence $x_1, x_2$ in $\mathbb{Z}_p$ has no $U(p)^k$-weighted zero-sum subsequence:
 there is no nonempty $I \subseteq \{1, 2\}$ with weights $a_i \in U(p)^k$ for $i \in I$ such that

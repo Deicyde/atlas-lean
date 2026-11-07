@@ -1,6 +1,6 @@
 # Counting extremely unlucky Stirling permutations
 
-**Counting extremely unlucky Stirling permutations.** For every integer $n \ge 1$, the number
+For every integer $n \ge 1$, the number
 of Stirling permutations $w$ of order $n$ that are extremely unlucky, that is, whose only lucky
 car is car $1$ ($\mathrm{Lucky}(w) = \{1\}$), is $(n - 1)!$.
 

@@ -1,6 +1,6 @@
 # Continuous Turán number of a horizontal segment
 
-**Continuous Turán number of a horizontal segment.** Let $a, b, c, n$ be real numbers with
+Let $a, b, c, n$ be real numbers with
 $0 \le c \le n$, and let $P = [a, a + c] \times \{b\}$ be the closed horizontal segment of length
 $c$ at height $b$. Then $\operatorname{opx}(n, P) = cn$.
 

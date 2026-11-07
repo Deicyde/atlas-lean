@@ -1,6 +1,6 @@
 # Torsion points of $E_\alpha$ with even integral $x$-coordinate have prime-power order
 
-**Torsion points of $E_\alpha$ with even integral $x$-coordinate have prime-power order.** Let
+Let
 $K$ be a number field with ring of integers $\mathcal{O}_K$ such that some prime ideal of
 $\mathcal{O}_K$ lying over $2$ has ramification index $1$ and inertia degree $1$ over $\mathbb{Z}$.
 Let $\alpha \in \mathcal{O}_K$ satisfy

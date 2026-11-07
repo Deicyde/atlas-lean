@@ -1,6 +1,6 @@
 # The sum-of-pairs score is bounded by the pairwise optima
 
-**The sum-of-pairs score is bounded by the pairwise optima.** Fix a score
+Fix a score
 $\sigma(a, b) \in \mathbb{Z}$ for each pair of letters $a, b$ of an alphabet $\alpha$ and a gap
 score $g \in \mathbb{Z}$. Let $s_0, \dots, s_{k-1}$ be sequences over $\alpha$ and let $A$ be a
 valid multiple alignment of them: no column of $A$ consists only of gaps, and deleting the gaps

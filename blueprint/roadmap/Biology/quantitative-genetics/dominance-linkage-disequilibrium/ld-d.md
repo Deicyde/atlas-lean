@@ -1,3 +1,3 @@
 # Gametic linkage disequilibrium
 
-**Gametic linkage disequilibrium.** The gametic linkage disequilibrium `D = E (X₁ - p) (Y₁ - q)`.
+The gametic linkage disequilibrium `D = E (X₁ - p) (Y₁ - q)`.

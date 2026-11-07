@@ -1,6 +1,6 @@
 # A subset sum of the reduction's numbers in base 4
 
-**A subset sum of the reduction's numbers in base 4.** Let $n \in \mathbb{N}$, let $b$ be a
+Let $n \in \mathbb{N}$, let $b$ be a
 list of booleans, let $m$ be the length of the list of vertex pairs $(i, j)$, $i < j < n$, and let
 $S$ and $F$ be finite sets of natural numbers with every element of $F$ below $m$. Write $x_v$ for
 the vertex number of $v$ and $y_q$ for the pair number of $q$ defined from $n$ and $b$. For $q < m$

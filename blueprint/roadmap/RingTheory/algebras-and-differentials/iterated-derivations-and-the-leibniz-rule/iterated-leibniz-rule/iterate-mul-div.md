@@ -1,3 +1,3 @@
 # Factorial-normalized iterated Leibniz rule
 
-**Factorial-normalized iterated Leibniz rule.** The factorial-normalized iterated Leibniz rule for a rational derivation.
+The factorial-normalized iterated Leibniz rule for a rational derivation.

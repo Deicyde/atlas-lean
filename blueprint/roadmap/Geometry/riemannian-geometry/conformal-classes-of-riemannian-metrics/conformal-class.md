@@ -1,6 +1,6 @@
 # Conformal class of a Riemannian metric
 
-**Conformal class of a Riemannian metric.** Let $M$ be a $C^\infty$ manifold modeled on a
+Let $M$ be a $C^\infty$ manifold modeled on a
 real normed space, and let $g$ be a $C^\infty$ Riemannian metric on $M$, with inner product $g_x$
 on the tangent space $T_x M$. The conformal class of $g$ is the set of $C^\infty$ Riemannian
 metrics $g'$ on $M$ for which there is a $C^\infty$ function $u : M \to \mathbb{R}$ with

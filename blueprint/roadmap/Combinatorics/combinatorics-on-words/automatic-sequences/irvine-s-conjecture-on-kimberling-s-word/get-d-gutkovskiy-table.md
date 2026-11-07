@@ -1,6 +1,6 @@
 # Entries of the Gutkovskiy table
 
-**Entries of the Gutkovskiy table.** For natural numbers $k \le n$, the entry at index $k$
+For natural numbers $k \le n$, the entry at index $k$
 (counting from $0$) of the Gutkovskiy table $T_n$ is the term $g_k$ of Gutkovskiy's sequence.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Stacked graphs of increasing functions in three dimensions
 
-**Stacked graphs of increasing functions in three dimensions.** Let $a > 0$, $b$ and $c > 0$
+Let $a > 0$, $b$ and $c > 0$
 be real numbers and let $f : \mathbb{R} \to \mathbb{R}$ be strictly increasing on $[0, a]$ with
 $(f(t) - f(s)) / (t - s) \le b$ whenever $0 \le s < t \le a$. Let
 $P = \{(t, f(t)) : t \in [0, a]\}$ be the graph of $f$ over $[0, a]$ and, for $k \ge 1$, let

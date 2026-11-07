@@ -1,6 +1,6 @@
 # Transfer-matrix formula for the domination polynomial of the cylinder
 
-**Transfer-matrix formula for the domination polynomial of the cylinder.** For all natural
+For all natural
 numbers $m$ and $n$, let $C_m$ be the cycle graph on the vertices $0, \dots, m - 1$, in which
 distinct $i$ and $j$ are adjacent when $i - j \equiv \pm 1 \pmod m$, and let $P_n$ be the path on
 the vertices $0, \dots, n - 1$. Let $\bar A$ be the domination transfer matrix of the row graph

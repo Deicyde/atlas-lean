@@ -1,6 +1,6 @@
 # Finite groups with $\mathbb{P}$-subnormal Schmidt subgroups are soluble
 
-**Finite groups with $\mathbb{P}$-subnormal Schmidt subgroups are soluble.** Every finite group in
+Every finite group in
 which every Schmidt subgroup is $\mathbb{P}$-subnormal is soluble. This answers Kourovka Notebook
 Problem 18.30 in the affirmative.
 

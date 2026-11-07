@@ -1,6 +1,6 @@
 # Maker wins the $S$-game in five moves when $|S| = 4$
 
-**Maker wins the $S$-game in five moves when $|S| = 4$.** If $S$ is a set of four natural
+If $S$ is a set of four natural
 numbers, then, starting from the position where no number has been claimed, Maker wins the
 $S$-game within $5$ moves.
 

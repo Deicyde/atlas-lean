@@ -1,6 +1,6 @@
 # Finite fields with a primitive element sum
 
-**Finite fields with a primitive element sum.** For every natural number $q$, we have
+For every natural number $q$, we have
 $q \notin \{2, 3, 4, 5, 7, 9, 13, 25, 121\}$ if and only if every finite field $L$ with $q$
 elements contains an element $\alpha$ such that both $\alpha$ and $\alpha + \alpha^{-1}$ generate
 the multiplicative group $L^\times$.

@@ -1,6 +1,6 @@
 # Building a Fenwick tree from a list
 
-**Building a Fenwick tree from a list.** For a list $a$ of length $n$ over a commutative
+For a list $a$ of length $n$ over a commutative
 additive monoid $\alpha$, the Fenwick tree built from $a$ stores the array of length $n + 1$
 whose entry at index $0$ is $0$ and whose entry at each one-indexed position $j$ with
 $1 \le j \le n$ is the sum of the $\operatorname{lowbit}(j)$ entries of $a$ ending at

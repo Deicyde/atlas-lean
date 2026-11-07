@@ -1,6 +1,6 @@
 # Limiting area between even cosine powers
 
-**Limiting area between even cosine powers.** For natural numbers $n$ and $k$, let
+For natural numbers $n$ and $k$, let
 $A_n(k) = \int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$. As $k \to \infty$ through the natural numbers:
 if $n \equiv 2 \pmod 4$, then
 

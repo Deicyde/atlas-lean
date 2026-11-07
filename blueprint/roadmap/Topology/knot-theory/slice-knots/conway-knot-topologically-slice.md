@@ -1,6 +1,6 @@
 # The Conway knot is topologically slice
 
-**The Conway knot is topologically slice.** Let $K$ be the PL knot traced by the braid closure
+Let $K$ be the PL knot traced by the braid closure
 on $4$ strands of the braid word
 $\sigma_1^{-2} \sigma_2 \sigma_1^{-1} \sigma_2 \sigma_1^{-1} \sigma_3 \sigma_2^{-2} \sigma_3^2$
 for the Conway knot 11n34. Then $K$ is topologically slice: there is a smooth knot $J$ whose

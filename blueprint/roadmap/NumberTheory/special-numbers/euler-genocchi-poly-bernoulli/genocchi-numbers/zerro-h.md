@@ -1,6 +1,6 @@
 # The Zerroukhat–Khaldi sum $H_{n,m}$
 
-**The Zerroukhat–Khaldi sum $H_{n,m}$.** For natural numbers $n$ and $m$, define the rational
+For natural numbers $n$ and $m$, define the rational
 number
 
 $$H_{n,m} = (-1)^n \, n \sum_{k=1}^{n-m} U(m+1, k) \, S(n-m, k),$$

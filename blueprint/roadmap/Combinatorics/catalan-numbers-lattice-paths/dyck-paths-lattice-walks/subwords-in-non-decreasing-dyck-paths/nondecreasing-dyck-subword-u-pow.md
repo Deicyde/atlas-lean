@@ -1,6 +1,6 @@
 # Recurrence for the subword $U^m$ in non-decreasing Dyck paths
 
-**Recurrence for the subword $U^m$ in non-decreasing Dyck paths.** Let $m \ge 1$. Let
+Let $m \ge 1$. Let
 $d_w(n)$ be the total number of occurrences of the subword $w$ over all non-decreasing Dyck paths
 of semilength $n$, and let $F_k$ be the Fibonacci numbers ($F_0 = 0$, $F_1 = 1$). Then for every
 $n > m$,

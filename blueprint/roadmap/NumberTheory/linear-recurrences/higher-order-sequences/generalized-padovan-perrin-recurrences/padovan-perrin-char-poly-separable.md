@@ -1,6 +1,6 @@
 # Simple roots of the Padovan–Perrin characteristic polynomial
 
-**Simple roots of the Padovan–Perrin characteristic polynomial.** Let $k_1, k_2, p, s$ be
+Let $k_1, k_2, p, s$ be
 natural numbers with $k_1 > 0$, $p \ge 2$, $p < s$ and $k_1^2 < k_2$. Then the characteristic
 polynomial $P(z) = z^{s+p} - k_1 z^p - k_2$ of the $([k]; p; s)$-generalized Padovan–Perrin
 recurrence is separable over $\mathbb{C}$, that is, it has only simple roots.

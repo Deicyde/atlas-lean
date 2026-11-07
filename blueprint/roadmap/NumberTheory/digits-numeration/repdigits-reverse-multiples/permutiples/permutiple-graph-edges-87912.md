@@ -1,6 +1,6 @@
 # Graph of the permutiple 87912
 
-**Graph of the permutiple 87912.** Let $(d_0, d_1, d_2, d_3, d_4) = (2, 1, 9, 7, 8)$ be
+Let $(d_0, d_1, d_2, d_3, d_4) = (2, 1, 9, 7, 8)$ be
 the decimal digits of $87912$, from the units digit up, and let $\sigma$ be the reversal
 $\sigma(j) = 4 - j$ of $\{0, \dots, 4\}$. The edge set
 $\{(d_j, d_{\sigma(j)}) : 0 \le j \le 4\}$ of the graph of these digits with digit

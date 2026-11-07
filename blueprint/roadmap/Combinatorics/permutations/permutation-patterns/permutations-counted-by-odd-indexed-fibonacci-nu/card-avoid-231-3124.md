@@ -1,6 +1,6 @@
 # $(231, 3124)$-avoiding permutations are counted by odd-indexed Fibonacci numbers
 
-**$(231, 3124)$-avoiding permutations are counted by odd-indexed Fibonacci numbers.** For
+For
 every $n \ge 1$, the number of permutations of $\{0, 1, \dots, n-1\}$ that avoid both patterns
 $231$ and $3124$, that is, contain neither of them, is the Fibonacci number $F_{2n-1}$, where
 $F_0 = 0$ and $F_1 = 1$.

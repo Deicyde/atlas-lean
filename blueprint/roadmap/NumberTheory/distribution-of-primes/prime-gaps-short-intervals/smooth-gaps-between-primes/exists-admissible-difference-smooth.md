@@ -1,6 +1,6 @@
 # Admissible difference-smooth sets of every size
 
-**Admissible difference-smooth sets of every size.** For every natural number $k$ there is
+For every natural number $k$ there is
 an admissible set $H$ of exactly $k$ integers that is difference $k$-smooth: for all distinct
 $h, h' \in H$, every prime factor of $h - h'$ is at most $k$.
 

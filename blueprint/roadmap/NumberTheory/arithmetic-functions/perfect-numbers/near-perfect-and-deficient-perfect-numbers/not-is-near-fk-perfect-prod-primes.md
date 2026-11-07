@@ -1,6 +1,6 @@
 # No product of distinct odd primes is near $F_k$-perfect
 
-**No product of distinct odd primes is near $F_k$-perfect.** Let $k > 1$ and let $s$ be a
+Let $k > 1$ and let $s$ be a
 finite set of odd primes. Then $\prod_{p \in s} p$ is not near $F_k$-perfect.
 
 ## Sources

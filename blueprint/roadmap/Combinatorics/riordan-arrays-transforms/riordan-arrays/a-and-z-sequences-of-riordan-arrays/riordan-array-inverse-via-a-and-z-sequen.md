@@ -1,6 +1,6 @@
 # Inverse of a Riordan array from its A- and Z-sequences (one-sided form)
 
-**Inverse of a Riordan array from its A- and Z-sequences (one-sided form).** Let $K$ be a
+Let $K$ be a
 field, let $g, f, A, Z, \bar f$ be formal power series over $K$, and let $d_{00} \in K$ with
 $d_{00} \ne 0$. Suppose that $g(0) = d_{00}$, $f(0) = 0$, $A(0) \ne 0$, $\bar f(0) = 0$,
 $f(\bar f(x)) = x$, $f(x) = x\, A(f(x))$ and $g(x) = d_{00} \bigl(1 - x\, Z(f(x))\bigr)^{-1}$.

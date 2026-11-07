@@ -1,6 +1,6 @@
 # Spans of the odd and even entries of a perfect cover
 
-**Spans of the odd and even entries of a perfect cover.** Let $m$, $n$ and $k$ be natural
+Let $m$, $n$ and $k$ be natural
 numbers with $k + 1 \le m + n$, and let $s = (s_1, \dots, s_{m+n})$, $s_i = (x_i, y_i)$, be a
 family in $(\mathbb{Z}_2)^m \oplus \mathbb{Z}_{2^n}$ that is a perfect $1$-cover: every element of
 the group is the sum of the $s_i$ over exactly one set of indices. Suppose that $y_i$, read as an

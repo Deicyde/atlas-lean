@@ -1,6 +1,6 @@
 # Generalized Lucasnomial Fuss–Catalan numbers
 
-**Generalized Lucasnomial Fuss–Catalan numbers.** Let $P$ be Lucas parameters, that is, nonzero
+Let $P$ be Lucas parameters, that is, nonzero
 reals $p$ and $q$ whose Lucas bracket sequence $U_0 = 0$, $U_1 = 1$, $U_{m+2} = pU_{m+1} + qU_m$
 satisfies $U_m \ne 0$ for every $m \ge 1$. Write $U_m! = U_1 U_2 \cdots U_m$, and let the
 Lucasnomial coefficient $\binom{m}{k}_U$ be $\frac{U_m!}{U_k! \, U_{m-k}!}$ for $k \le m$ and $0$

@@ -1,6 +1,6 @@
 # Arc consistency invariant of AC-3
 
-**Arc consistency invariant of AC-3.** Let $P$ be a binary CSP with finitely many variables
+Let $P$ be a binary CSP with finitely many variables
 whose constraints are symmetric, that is the arc $(x, y)$ allows $(a, b)$ exactly when the arc
 $(y, x)$ allows $(b, a)$, and whose arcs all join two distinct variables. Let $\mathrm{dom}$ be
 domains and $q$ a queue whose entries are arcs of $P$, such that every arc of $P$ not in $q$ is

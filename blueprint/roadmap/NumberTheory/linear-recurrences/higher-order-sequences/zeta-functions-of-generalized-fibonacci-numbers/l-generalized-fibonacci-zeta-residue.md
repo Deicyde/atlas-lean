@@ -1,6 +1,6 @@
 # Residue expression of the ℓ-generalized Fibonacci zeta function
 
-**Residue expression of the ℓ-generalized Fibonacci zeta function.** Let $\ell$ be a natural
+Let $\ell$ be a natural
 number, let $\alpha$ be a real number, let $R$ be the set of complex roots of
 $X^\ell - \sum_{i\lt \ell} X^i$ other than $\alpha$, let
 $c(\beta) = (\beta - 1)/(2 + (\ell + 1)(\beta - 2))$ be the Dresden–Du coefficient, and put

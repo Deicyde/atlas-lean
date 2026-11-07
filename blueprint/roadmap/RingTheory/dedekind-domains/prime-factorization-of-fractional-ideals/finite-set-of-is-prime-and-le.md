@@ -1,6 +1,6 @@
 # Finitely many primes contain a nonzero ideal
 
-**Finitely many primes contain a nonzero ideal.** In a Dedekind domain $A$, every nonzero
+In a Dedekind domain $A$, every nonzero
 ideal $I$ is contained in only finitely many prime ideals of $A$.
 
 ## Sources

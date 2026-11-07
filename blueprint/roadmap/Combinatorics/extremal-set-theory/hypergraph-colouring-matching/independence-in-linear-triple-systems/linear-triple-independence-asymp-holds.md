@@ -1,6 +1,6 @@
 # Phelps–Rödl theorem on independence in linear triple systems
 
-**Phelps–Rödl theorem on independence in linear triple systems.** For $n \in \mathbb{N}$ let
+For $n \in \mathbb{N}$ let
 $f(n)$ be the largest $m$ such that every linear triple system on $\{0, \dots, n-1\}$ (a family
 of $3$-element sets, any two distinct ones sharing at most one element) has an independent set of
 at least $m$ vertices, that is, a set of at least $m$ vertices containing no triple of the system.

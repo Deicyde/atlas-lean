@@ -1,6 +1,6 @@
 # Probability generating function
 
-**Probability generating function.** For a measure $\mu$ on $\Omega$ and a function
+For a measure $\mu$ on $\Omega$ and a function
 $X : \Omega \to \mathbb{N}$, the probability generating function of $X$ under $\mu$ is the function
 $G_X : \mathbb{R} \to \mathbb{R}$ given by
 

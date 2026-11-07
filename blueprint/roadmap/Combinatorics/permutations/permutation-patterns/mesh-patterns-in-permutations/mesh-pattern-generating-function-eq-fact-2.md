@@ -1,6 +1,6 @@
 # Product formula from the mesh-pattern recurrence, real case
 
-**Product formula from the mesh-pattern recurrence, real case.** Let $0 < k \le n$ be natural
+Let $0 < k \le n$ be natural
 numbers, let $x$ be a real number, and let $P(m, r, y)$ be real numbers indexed by natural
 numbers $m, r$ and a real number $y$. Suppose that $P(k-1, k, x) = (k-1)!$ and that
 $P(m, k, x) = (x + m - 1)\,P(m-1, k, x)$ for every natural number $m \ge k$. Then

@@ -1,6 +1,6 @@
 # One-step shift of a Markov partial trajectory
 
-**One-step shift of a Markov partial trajectory.** Let $\kappa$ be a Markov kernel on a
+Let $\kappa$ be a Markov kernel on a
 measurable space $S$, let $a, b \in \mathbb{N}$ and let $z = (z_0, \dots, z_{a+b})$ be a history
 in $S^{\{0, \dots, a+b\}}$. Let $\mu_z$ be the one-step partial trajectory of the lifted kernel
 of $\kappa$ from time $a + b$ to time $a + b + 1$ started at $z$, that is, the law of

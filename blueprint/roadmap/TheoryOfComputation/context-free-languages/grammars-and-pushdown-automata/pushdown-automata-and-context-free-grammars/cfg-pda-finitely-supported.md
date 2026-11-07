@@ -1,6 +1,6 @@
 # The grammar-simulating pushdown automaton is finitely supported
 
-**The grammar-simulating pushdown automaton is finitely supported.** For every context-free
+For every context-free
 grammar $g$ over an alphabet $T$, the one-state pushdown automaton simulating $g$ is finitely
 supported.
 

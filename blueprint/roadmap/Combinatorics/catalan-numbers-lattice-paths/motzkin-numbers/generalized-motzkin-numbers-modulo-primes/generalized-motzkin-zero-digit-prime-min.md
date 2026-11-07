@@ -1,6 +1,6 @@
 # Zeros of generalized Motzkin numbers with last digit $p - 2$
 
-**Zeros of generalized Motzkin numbers with last digit $p - 2$.** Let $a, b$ be integers and
+Let $a, b$ be integers and
 let $p > 2$ be a prime with $a \not\equiv 0 \pmod p$ and $b^2 - 4a^2 \not\equiv 0 \pmod p$. Write
 $T_r = T^{(a,b)}_r$ for the generalized central trinomial coefficients and suppose that
 $T_r \not\equiv 0 \pmod p$ for every $r < p$. Let $q, m, k$ be natural numbers with $m < p - 1$

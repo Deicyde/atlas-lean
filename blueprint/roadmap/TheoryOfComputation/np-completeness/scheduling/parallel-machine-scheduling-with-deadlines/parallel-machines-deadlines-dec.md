@@ -1,6 +1,6 @@
 # The PARALLEL MACHINES WITH DEADLINES decision problem
 
-**The PARALLEL MACHINES WITH DEADLINES decision problem.** This decision problem accepts a
+This decision problem accepts a
 bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to jobs
 $(p_1, d_1), \dots, (p_k, d_k)$ of natural numbers (processing times and deadlines) and a number
 $m$ of machines for which there are start times $s_1, \dots, s_k \in \mathbb{N}$ and machines

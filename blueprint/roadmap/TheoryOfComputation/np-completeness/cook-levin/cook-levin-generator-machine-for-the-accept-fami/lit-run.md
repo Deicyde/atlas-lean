@@ -1,6 +1,6 @@
 # Run of the literal routine of the accept generator
 
-**Run of the literal routine of the accept generator.** Let $c$ be a clause kind with base
+Let $c$ be a clause kind with base
 counter $b(c)$, offset $\mathrm{off}(c)$ and polarity $\sigma(c)$, and let $F$ assign values to
 the counters of the accept generator (for layout $L$ and parameters $n_1$, $\mathrm{ac}$, $k_1$,
 $\mathrm{ea}$) such that the scratch counters $Q$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$

@@ -1,6 +1,6 @@
 # Sums of a second-order recurrence over whole periods
 
-**Sums of a second-order recurrence over whole periods.** Let $P, Q$ be integers with $Q \ne 0$,
+Let $P, Q$ be integers with $Q \ne 0$,
 let $U = U(P, Q)$ be their Lucas sequence, write $a = P$ and $b = -Q$, and suppose
 $a + b - 1 \ne 0$. Let $n > 0$ be coprime to $b(a + b - 1)$, and let $\pi_U(n)$ be the period of
 $U$ modulo $n$: the least $r > 0$ with $U_r \equiv 0$ and $U_{r+1} \equiv 1 \pmod n$, or $0$ if

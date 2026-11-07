@@ -1,6 +1,6 @@
 # Establishing branches: nieces and nephews of P-positions
 
-**Establishing branches: nieces and nephews of P-positions.** Call a pair $(a, b)$ of natural
+Call a pair $(a, b)$ of natural
 numbers a P-position when the Euclid P-position test returns true at $(a, b)$, and read it as the
 vertex $a/b$ of the Calkin–Wilf tree, with son $a/(a+b)$ and daughter $(a+b)/b$. Let $x, y$ be
 positive integers. If the daughter $(x+y)/y$ of $x/y$ is a P-position, then so is its niece

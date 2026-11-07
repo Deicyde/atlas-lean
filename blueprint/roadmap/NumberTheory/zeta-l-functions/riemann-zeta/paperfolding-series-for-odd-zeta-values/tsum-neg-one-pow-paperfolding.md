@@ -1,6 +1,6 @@
 # The $\pm 1$ paperfolding Dirichlet series at odd integers
 
-**The $\pm 1$ paperfolding Dirichlet series at odd integers.** Let $(f_n)_{n \ge 0}$ be the
+Let $(f_n)_{n \ge 0}$ be the
 regular paperfolding sequence, indexed from $0$, and let $E_{2k}$ be the even-index Euler number.
 For every integer $k \ge 1$,
 

@@ -1,6 +1,6 @@
 # Convolution theorem for the discrete Fourier transform
 
-**Convolution theorem for the discrete Fourier transform.** Let $n \ge 1$. For
+Let $n \ge 1$. For
 $\varphi : \mathbb{Z}/n\mathbb{Z} \to \mathbb{C}$ write
 $\hat\varphi(k) = \sum_{j \in \mathbb{Z}/n\mathbb{Z}} e^{-2\pi i jk/n} \varphi(j)$ for its discrete
 Fourier transform, and let $\mathcal{F}^{-1}$ be the inverse of the map

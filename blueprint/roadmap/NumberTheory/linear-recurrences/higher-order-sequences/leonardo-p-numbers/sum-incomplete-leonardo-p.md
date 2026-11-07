@@ -1,6 +1,6 @@
 # Partial sums of incomplete Leonardo p-numbers
 
-**Partial sums of incomplete Leonardo p-numbers.** For natural numbers $p \ge 1$, $n$, $k$ and
+For natural numbers $p \ge 1$, $n$, $k$ and
 $r$ with $n \ge (p + 1)(k + 1)$, the incomplete Leonardo $p$-numbers $\mathcal{L}_{p,m}(j)$
 satisfy
 

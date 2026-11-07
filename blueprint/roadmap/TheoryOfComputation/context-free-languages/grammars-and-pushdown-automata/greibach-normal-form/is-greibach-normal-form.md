@@ -1,6 +1,6 @@
 # Greibach normal form
 
-**Greibach normal form.** A grammar is in Greibach normal form when every production has
+A grammar is in Greibach normal form when every production has
 output either a single terminal followed by nonterminals, or the
 empty word with the initial nonterminal on the left; and either the
 initial nonterminal occurs in no output (so an empty production

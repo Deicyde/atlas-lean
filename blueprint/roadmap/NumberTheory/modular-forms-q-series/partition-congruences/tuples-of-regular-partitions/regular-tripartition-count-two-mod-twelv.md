@@ -1,6 +1,6 @@
 # Mod 12 congruences for 2-regular tripartitions
 
-**Mod 12 congruences for 2-regular tripartitions.** Let $T_2(n)$ be the number of 2-regular
+Let $T_2(n)$ be the number of 2-regular
 tripartitions of $n$. For all natural numbers $\alpha$ and $n$, put
 $A_\alpha = \sum_{i=0}^{2\alpha+1} 3^{2i}$ and $B_\alpha = \sum_{i=0}^{2\alpha} 3^{2i}$. Then $12$
 divides each of $T_2(3^{4\alpha+4} n + A_\alpha + 3^{4\alpha+3})$,

@@ -1,6 +1,6 @@
 # Geography is PSPACE-complete
 
-**Geography is PSPACE-complete.** The Geography decision problem belongs to PSPACE, and every
+The Geography decision problem belongs to PSPACE, and every
 decision problem in PSPACE has a polynomial-time many-one reduction to it.
 
 ## Sources

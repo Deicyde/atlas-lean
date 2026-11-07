@@ -1,6 +1,6 @@
 # Infinitely many primes of the form $4k^2 + 2k + 1$
 
-**Infinitely many primes of the form $4k^2 + 2k + 1$.** There are infinitely many natural
+There are infinitely many natural
 numbers $k$ such that $4k^2 + 2k + 1$ is prime.
 
 The source derives this from its Conjecture A (Bunyakovsky's conjecture). Only this polynomial

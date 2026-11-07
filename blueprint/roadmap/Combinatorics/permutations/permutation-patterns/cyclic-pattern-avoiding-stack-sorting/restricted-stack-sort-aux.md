@@ -1,6 +1,6 @@
 # Restricted stack-sorting from a given stack
 
-**Restricted stack-sorting from a given stack.** Fix a property of finite sequences of natural
+Fix a property of finite sequences of natural
 numbers, called bad. Given an input sequence $\pi$ and a stack (listed from top to bottom), read
 $\pi$ from left to right. Before pushing the next entry $x$, pop the least number $k$ of entries
 from the top of the stack such that the remaining stack with $x$ pushed on top, read from top to

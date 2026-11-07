@@ -1,6 +1,5 @@
 # Tensor square of an irreducible $\mathfrak{e}_8$-representation of dimension $779247$
 
-**Tensor square of an irreducible $\mathfrak{e}_8$-representation of dimension $779247$.**
 There exist a complex vector space $V$ and a representation of the exceptional Lie algebra
 $\mathfrak{e}_8$ over $\mathbb{C}$ on $V$ such that $V$ has dimension $779247$ over $\mathbb{C}$,
 $V$ is irreducible, and the tensor square $V \otimes_{\mathbb{C}} V$, with the representation

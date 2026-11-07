@@ -1,6 +1,6 @@
 # Howard's formula for potential polynomials
 
-**Howard's formula for potential polynomials.** Let $K$ be a field of characteristic zero,
+Let $K$ be a field of characteristic zero,
 let $r \ge 1$ and $n$ be natural numbers, and let $a_0, a_1, a_2, \dots$ be a sequence in $K$
 with $a_r \ne 0$. Let $g$ be the formal power series
 

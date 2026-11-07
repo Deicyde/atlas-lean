@@ -1,6 +1,6 @@
 # Block stages of the cell-shift generator
 
-**Block stages of the cell-shift generator.** For a layout $L$ with label block size $A$ and
+For a layout $L$ with label block size $A$ and
 $K$ stacks, push-count and consumed-count tables $\mathrm{pl}$ and $\mathrm{cn}$, a number $N$ of
 situations, a situation $i < N$ and a stack $k < K$, write $p = \mathrm{pl}(i, k)$ and
 $c = \mathrm{cn}(i, k)$.

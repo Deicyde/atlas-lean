@@ -1,6 +1,6 @@
 # Asymptotic growth of $R_3(n)$
 
-**Asymptotic growth of $R_3(n)$.** Let $R_3(n)$ be the number of partitions of $n$ with
+Let $R_3(n)$ be the number of partitions of $n$ with
 max-rook number $3$. Then $R_3(n) \sim \frac{2}{3} n^2$ as $n \to \infty$.
 
 ## Sources

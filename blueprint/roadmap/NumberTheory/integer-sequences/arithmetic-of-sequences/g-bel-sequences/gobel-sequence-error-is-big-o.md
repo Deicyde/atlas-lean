@@ -1,6 +1,6 @@
 # The Göbel error term decays faster than every power of $n$
 
-**The Göbel error term decays faster than every power of $n$.** Let $k, l \ge 2$ be natural
+Let $k, l \ge 2$ be natural
 numbers, let $g_{k,l}$ be the $(k, l)$-Göbel sequence, and let $C$ be a real number such that the
 real numbers $C_{k,l}(n) = g_{k,l}(n)^{1/k^n}$ tend to $C$ as $n \to \infty$. Then for every real
 number $R > 0$, as $n \to \infty$,

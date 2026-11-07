@@ -1,6 +1,6 @@
 # An immune set is not recursively enumerable
 
-**An immune set is not recursively enumerable**: it would be an infinite
+It would be an infinite
 RE subset of itself.
 
 ## Sources

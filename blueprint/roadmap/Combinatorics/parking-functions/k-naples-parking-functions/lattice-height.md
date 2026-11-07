@@ -1,6 +1,6 @@
 # Height of a lattice path
 
-**Height of a lattice path.** For a lattice path $p$ of $m$ steps, each an Up step $(1, 1)$
+For a lattice path $p$ of $m$ steps, each an Up step $(1, 1)$
 or a Down step $(1, -1)$, and a natural number $j$, the height of $p$ after $j$ steps is the
 number of Up steps minus the number of Down steps among the first $\min(j, m)$ steps of $p$.
 

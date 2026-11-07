@@ -1,6 +1,6 @@
 # Profinitely rigid group
 
-**Profinitely rigid group.** A group $\Gamma$ is *profinitely rigid* if it is finitely
+A group $\Gamma$ is *profinitely rigid* if it is finitely
 generated and residually finite, and $\Gamma$ is isomorphic to every finitely generated residually
 finite group $\Lambda$ whose profinite completion is isomorphic, as a group, to the profinite
 completion of $\Gamma$.

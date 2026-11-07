@@ -1,6 +1,6 @@
 # The zeroth layer is the set of isolated points
 
-**The zeroth layer is the set of isolated points.** For every set
+For every set
 $K \subseteq \mathbb{R}$, the layer $T_0$ of $K$ equals $K \setminus K'$, where $K'$ is the derived
 set of $K$ (its set of accumulation points); that is, $T_0$ is the set of isolated points of $K$.
 

@@ -1,6 +1,6 @@
 # Exponential generating function for permutations with all cycles of length $r$
 
-**Exponential generating function for permutations with all cycles of length $r$.** Let
+Let
 $r \ge 2$ and, for each $n$, let $S_n^r$ be the set of permutations of $\{0, \dots, n-1\}$ all
 of whose cycles (fixed points counted as cycles of length one) have length exactly $r$. Then, as
 formal power series over $\mathbb{Q}$,

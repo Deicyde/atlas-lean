@@ -1,6 +1,6 @@
 # Cohen's prime sieve for the line problem
 
-**Cohen's prime sieve for the line problem.** Let $q$ and $n$ be natural numbers, let $\omega$
+Let $q$ and $n$ be natural numbers, let $\omega$
 be the number of distinct prime factors of $q^n - 1$, and let $S$ be a set of $s$ prime factors of
 $q^n - 1$ with $\delta = 1 - \sum_{\rho \in S} 1/\rho > 0$. Suppose that
 $q > (n - 1)^2 \, 2^{2(\omega - s)} \left(\frac{s - 1}{\delta} + 2\right)^2$. Then for all finite

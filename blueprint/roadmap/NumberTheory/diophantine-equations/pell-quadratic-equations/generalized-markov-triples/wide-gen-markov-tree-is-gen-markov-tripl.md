@@ -1,6 +1,6 @@
 # Generalized Markov triples in the wide Markov tree
 
-**Generalized Markov triples in the wide Markov tree.** Let $k$ be a natural number. Every
+Let $k$ be a natural number. Every
 vertex of the wide $k$-generalized Markov tree $\mathrm{WMT}(k)$ is a $k$-generalized Markov
 triple. Moreover, every $k$-generalized Markov triple $(a, b, c)$ with $a < b$ and $c < b$ is
 the vertex of $\mathrm{WMT}(k)$ at exactly one path that starts with a left step, and at exactly

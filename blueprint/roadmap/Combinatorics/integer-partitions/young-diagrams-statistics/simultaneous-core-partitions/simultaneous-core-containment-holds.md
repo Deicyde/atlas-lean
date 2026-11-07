@@ -1,6 +1,6 @@
 # Fayers–Vandehey containment theorem for simultaneous cores
 
-**Fayers–Vandehey containment theorem for simultaneous cores.** Call a Young diagram an
+Call a Young diagram an
 $s$-core when none of its cells has hook length divisible by $s$. For all coprime positive
 integers $s$ and $t$, if $\kappa$ is a Young diagram that is both an $s$-core and a $t$-core and
 has at least as many cells as every Young diagram that is both an $s$-core and a $t$-core, then

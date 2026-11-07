@@ -1,6 +1,6 @@
 # Laguerre–Stirling–Bell connection pair
 
-**Laguerre–Stirling–Bell connection pair.** Let $\alpha$, $\beta$ and $x$ be real numbers, and
+Let $\alpha$, $\beta$ and $x$ be real numbers, and
 let $n$ and $r$ be natural numbers. Write $\binom{k}{j}$ for the binomial coefficients, $c(n,k)$
 for the unsigned Stirling numbers of the first kind, $S(n,k)$ for the Stirling numbers of the
 second kind, and $y^{\overline{m}} = y(y+1)\cdots(y+m-1)$ for the rising factorial. For natural

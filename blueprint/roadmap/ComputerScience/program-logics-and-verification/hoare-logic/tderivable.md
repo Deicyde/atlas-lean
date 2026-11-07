@@ -1,6 +1,6 @@
 # Total-correctness Hoare logic
 
-**Total-correctness Hoare logic.** Derivability of total-correctness Hoare triples
+Derivability of total-correctness Hoare triples
 $\{P\}\,c\,\{Q\}$, for assertions $P$, $Q$ (predicates on states) and IMP commands $c$, is the
 least relation closed under the following rules. In an assertion, $b$ for a boolean expression
 means that $b$ evaluates to true and $\neg b$ that it evaluates to false. Skip:

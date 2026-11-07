@@ -1,6 +1,6 @@
 # Influence of an edge on an event
 
-**Influence of an edge on an event.** The influence `I_e^p(A) = ℙ_p(e is pivotal for A)` of the coordinate `e` on the event `A`
+The influence `I_e^p(A) = ℙ_p(e is pivotal for A)` of the coordinate `e` on the event `A`
 under the `p`-biased product measure.
 
 See also `MathlibExt.Analysis.Fourier.BooleanCubeInfluence.boolInfluence`, the influence of a

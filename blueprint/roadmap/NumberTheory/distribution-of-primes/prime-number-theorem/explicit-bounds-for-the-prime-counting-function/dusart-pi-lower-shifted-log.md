@@ -1,6 +1,6 @@
 # Dusart's shifted-logarithm lower bound for $\pi(x)$
 
-**Dusart's shifted-logarithm lower bound for $\pi(x)$.** Let $\pi(x)$ be the number of primes
+Let $\pi(x)$ be the number of primes
 $p \le x$ and let $\log$ be the natural logarithm. For every real number $x \ge 5393$,
 $\pi(x) \ge \frac{x}{\log x - 1}$.
 

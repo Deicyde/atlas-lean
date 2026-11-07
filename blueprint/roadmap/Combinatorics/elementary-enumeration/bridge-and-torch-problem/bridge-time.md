@@ -1,6 +1,6 @@
 # Optimal crossing time of the bridge and torch problem
 
-**Optimal crossing time of the bridge and torch problem.** For a bridge of capacity $c$ and
+For a bridge of capacity $c$ and
 $n$ people $1, \dots, n$, where person $i$ has crossing time $i$, the optimal crossing time is
 the least total time of a complete schedule with one torch; the total time of a schedule is the
 sum, over its crossings, of the largest crossing time among the people in that crossing. It is

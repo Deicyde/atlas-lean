@@ -1,6 +1,6 @@
 # The $2$-adic $3x+1$ map swaps $1$ and $2$
 
-**The $2$-adic $3x+1$ map swaps $1$ and $2$.** The $2$-adic $3x+1$ map
+The $2$-adic $3x+1$ map
 $T : \mathbb{Z}_2 \to \mathbb{Z}_2$ satisfies $T(1) = 2$ and $T(2) = 1$.
 
 ## Sources

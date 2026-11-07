@@ -1,6 +1,6 @@
 # Common divisors of $P$ and the discriminant
 
-**Common divisors of $P$ and the discriminant.** Let $P$ and $Q$ be coprime integers and let
+Let $P$ and $Q$ be coprime integers and let
 $D = P^2 - 4Q$. Then $\gcd(P, D)$ divides $4$, and $\gcd(P, D') = 1$ for every odd integer $D'$
 dividing $D$.
 

@@ -1,6 +1,6 @@
 # Nondegenerate Lucas pair
 
-**Nondegenerate Lucas pair.** A pair of integers $(P, Q)$ is nondegenerate when $Q \ne 0$ and,
+A pair of integers $(P, Q)$ is nondegenerate when $Q \ne 0$ and,
 for all complex numbers $\alpha$ and $\beta$ with $\alpha + \beta = P$ and $\alpha \beta = Q$, the
 quotient $\alpha / \beta$ is not a root of unity. Such $\alpha$ and $\beta$ are the two roots of
 $x^2 - P x + Q$, in either order.

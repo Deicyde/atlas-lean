@@ -1,6 +1,6 @@
 # The count $\Delta_q(n)$ for primitive λ-roots
 
-**The count $\Delta_q(n)$ for primitive λ-roots.** Let $\lambda$ be the Carmichael function
+Let $\lambda$ be the Carmichael function
 and, for natural numbers $p$ and $m$, let $v_p(m)$ be the exponent of $p$ in the prime
 factorization of $m$ (taken to be $0$ when $p$ is not prime or $m = 0$). For natural numbers
 $q$ and $n$, the natural number $\Delta_q(n)$ is defined as follows. If $q = 2$, $v_2(n) = 3$

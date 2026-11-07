@@ -1,6 +1,6 @@
 # One minus shift on P
 
-**One minus shift on P.** Write $\mathbb{Z}[S]$ for the free light condensed abelian group on
+Write $\mathbb{Z}[S]$ for the free light condensed abelian group on
 a light profinite set $S$, let $\mathbb{N} \cup \{\infty\}$ be the one-point compactification of
 $\mathbb{N}$, and let $P = \mathbb{Z}[\mathbb{N} \cup \{\infty\}]/\mathbb{Z}[\infty]$ be the
 cokernel of the map induced by the inclusion of the point $\infty$. Let $\mathrm{shift}$ be the

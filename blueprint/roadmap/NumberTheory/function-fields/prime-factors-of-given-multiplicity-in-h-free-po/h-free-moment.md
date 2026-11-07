@@ -1,6 +1,6 @@
 # Moments of $\omega_k$ over $h$-free polynomials
 
-**Moments of $\omega_k$ over $h$-free polynomials.** Let $F$ be a finite field and let $h$,
+Let $F$ be a finite field and let $h$,
 $k$, $j$, $n$ be natural numbers. Let $S_h$ be the set of $h$-free monic polynomials over $F$
 (those divisible by no $P^h$ with $P$ monic irreducible), $M_n$ the set of monic polynomials of
 degree $n$ over $F$, and $\omega_k(f)$ the number of distinct monic irreducible factors of $f$

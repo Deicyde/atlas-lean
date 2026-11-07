@@ -1,6 +1,6 @@
 # Xu–Zhang twisted fourth moment of weighted character sums
 
-**Xu–Zhang twisted fourth moment of weighted character sums.** Let $\varphi$ be Euler's totient
+Let $\varphi$ be Euler's totient
 function and $C_q$ the Xu–Zhang constant of $q$. For every natural number $\ell$ and every real
 $\varepsilon > 0$ there is a real constant $C$ such that for every odd natural number $q \ge 3$,
 

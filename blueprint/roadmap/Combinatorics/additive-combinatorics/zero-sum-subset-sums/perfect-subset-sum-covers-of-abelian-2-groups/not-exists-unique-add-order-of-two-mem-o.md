@@ -1,6 +1,6 @@
 # Elements of order two among odd combinations of part of a perfect cover
 
-**Elements of order two among odd combinations of part of a perfect cover.** Let $G$ be an
+Let $G$ be an
 abelian group of order $2^n$, let $S$ be a perfect cover of $G$, and let $A \subseteq S$ contain
 no element of order $2$. Let $\mathcal{T}(A)$ be the set of combinations $\sum_{x \in A} c_x x$ in
 which every integer coefficient $c_x$ is $0$ or odd. Then $\mathcal{T}(A)$ does not contain

@@ -1,6 +1,6 @@
 # Sprugnoli's binomial sum theorem
 
-**Sprugnoli's binomial sum theorem.** Write $[t^j]F$ for the coefficient of $t^j$ in a power
+Write $[t^j]F$ for the coefficient of $t^j$ in a power
 series $F$ over $\mathbb{C}$, $\binom{u}{j}$ for the generalized binomial coefficient, and
 $(1 + t)^u = \sum_{j \ge 0} \binom{u}{j} t^j$ for the binomial series of a complex number $u$.
 Let $f$ be a power series over $\mathbb{C}$. For natural numbers $n$, $x$, $a$, $b$ with

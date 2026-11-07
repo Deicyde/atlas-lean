@@ -1,6 +1,6 @@
 # Labels of the Mallows tree
 
-**Labels of the Mallows tree.** For a word $w$ over the letters $L$, $M$, $R$, the label of
+For a word $w$ over the letters $L$, $M$, $R$, the label of
 the Mallows-tree vertex reached from the root by the path $w$ is the pair
 $\langle p, q\rangle$ of fractions that Mallows' insertion rule inserts in the gap $(a, b)$ of
 that vertex.

@@ -1,6 +1,6 @@
 # Two standard families of good values
 
-**Two standard families of good values.** Let $a$ and $b$ be integers and let $(G_n)_{n \ge 0}$
+Let $a$ and $b$ be integers and let $(G_n)_{n \ge 0}$
 be the Gibonacci sequence with $G_0 = a$ and $G_1 = b$. For every natural number $n$, the ratio
 $F_n / F_{n+1}$ of consecutive Fibonacci numbers is good for $(a, b)$, and if $G_n \ne 0$, then
 $-G_{n+1} / G_n$ is good for $(a, b)$.

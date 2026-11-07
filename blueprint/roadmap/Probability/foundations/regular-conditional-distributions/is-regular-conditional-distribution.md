@@ -1,6 +1,6 @@
 # Regular conditional distribution (kernel form)
 
-**Regular conditional distribution (kernel form).** Let $\mu$ be a measure on $\alpha$ and let
+Let $\mu$ be a measure on $\alpha$ and let
 $X : \alpha \to \beta$ and $Y : \alpha \to \Omega$ be maps. A kernel $\kappa$ from $\beta$ to
 $\Omega$ is a regular conditional distribution of $Y$ given $X$ under $\mu$ if $X$ and $Y$ are
 measurable, $\kappa$ is a Markov kernel, and for every measurable set $s \subseteq \Omega$ the

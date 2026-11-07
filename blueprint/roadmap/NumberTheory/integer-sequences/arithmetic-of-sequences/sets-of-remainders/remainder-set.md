@@ -1,6 +1,6 @@
 # Remainder set
 
-**Remainder set.** For a natural number $n$, the remainder set is
+For a natural number $n$, the remainder set is
 $S(n) = \{\, n \bmod k : 1 \le k \le \lfloor n/2 \rfloor \,\}$, the set of remainders of $n$
 modulo the integers from $1$ to $\lfloor n/2 \rfloor$.
 

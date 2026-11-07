@@ -1,6 +1,6 @@
 # Laplace–Beltrami operator
 
-**Laplace–Beltrami operator.** The Laplace-Beltrami operator applied to `f : M → ℝ` at `x`: `Δf(x)` is the metric
+The Laplace-Beltrami operator applied to `f : M → ℝ` at `x`: `Δf(x)` is the metric
 trace `∑ i, hessian I f x (e i) (e i)` over the orthonormal basis
 `e = stdOrthonormalBasis ℝ (TangentSpace I x)`, the same basis convention as
 `Manifold.scalarCurvature`. For the textbook Hessian, which is bilinear, this trace

@@ -1,6 +1,6 @@
 # Lüroth well approximable numbers as a limsup over convergent triples
 
-**Lüroth well approximable numbers as a limsup over convergent triples.** Let $\psi$ be a
+Let $\psi$ be a
 function from the natural numbers to $(0, 1]$ whose lower order at infinity $\tau_\psi$ is greater
 than $1$. Then the set $L(\psi)$ of Lüroth $\psi$-well approximable numbers consists of the real
 numbers $x$ for which there are infinitely many triples $(c, Q, d)$ in the set $S$ of Lüroth

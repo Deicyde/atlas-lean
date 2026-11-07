@@ -1,6 +1,6 @@
 # Topological Poincaré conjecture in dimension 3
 
-**Topological Poincaré conjecture in dimension 3.** Let $M$ be a nonempty, compact, simply
+Let $M$ be a nonempty, compact, simply
 connected Hausdorff space with an atlas of charts to $\mathbb{R}^3$, that is, a topological
 3-manifold without boundary. Then $M$ is homeomorphic to the unit sphere
 $S^3 = \{x \in \mathbb{R}^4 : \|x\| = 1\}$.

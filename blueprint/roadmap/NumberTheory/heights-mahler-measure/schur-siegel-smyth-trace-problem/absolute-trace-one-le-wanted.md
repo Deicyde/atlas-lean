@@ -1,6 +1,6 @@
 # Absolute trace of a totally positive algebraic integer is at least one
 
-**Absolute trace of a totally positive algebraic integer is at least one.** For every
+For every
 complex number $\alpha$ that is a totally positive algebraic integer, the absolute trace of
 $\alpha$ is at least $1$.
 

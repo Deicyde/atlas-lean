@@ -1,6 +1,6 @@
 # The power of $2$ in $D_4(b) D_4(c)$
 
-**The power of $2$ in $D_4(b) D_4(c)$.** Let
+Let
 $a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$ have sums $b_i$ and alternating sums
 $c_i$, let $D_4$ be the $4 \times 4$ circulant determinant, put $D = D_4(b) D_4(c)$, and say
 that $D \in 2^e \mathbb{Z}_{\mathrm{odd}}$ when $D = 2^e (2t + 1)$ for some integer $t$.

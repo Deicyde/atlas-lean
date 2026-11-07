@@ -1,6 +1,6 @@
 # Long-division remainders and small bases of prime order
 
-**Long-division remainders and small bases of prime order.** Let $n$ and $L$ be primes and
+Let $n$ and $L$ be primes and
 let $b$ be a natural number of multiplicative order $L$ modulo $n$. Suppose $m = 1$, or
 $2 \le m \le n - 1$ and $m$ has multiplicative order $L$ modulo $n$. Then removing $1$ from the
 set of remainders $\{m b^j \bmod n : 0 \le j < L\}$ leaves exactly the set of integers $a$ with

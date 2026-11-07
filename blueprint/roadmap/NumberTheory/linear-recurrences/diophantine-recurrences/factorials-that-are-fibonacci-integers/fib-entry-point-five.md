@@ -1,6 +1,6 @@
 # Fibonacci entry point of $5$
 
-**Fibonacci entry point of $5$.** The least $m > 0$ such that $5$ divides the Fibonacci number
+The least $m > 0$ such that $5$ divides the Fibonacci number
 $F_m$ is $5$, that is, the Fibonacci entry point of $5$ is $z(5) = 5$.
 
 ## Sources

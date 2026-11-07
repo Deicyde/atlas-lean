@@ -1,6 +1,6 @@
 # Relatively prime subset counts
 
-**Relatively prime subset counts.** Let $\ell < m$ and $k \ge 1$ be natural numbers, and let
+Let $\ell < m$ and $k \ge 1$ be natural numbers, and let
 $\mu$ be the Möbius function. The number of nonempty subsets of $\{\ell + 1, \dots, m\}$ whose
 elements have greatest common divisor $1$ is
 

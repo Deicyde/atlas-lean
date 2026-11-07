@@ -1,6 +1,6 @@
 # Weight of a fence tiling
 
-**Weight of a fence tiling.** Let $a$, $b$ be elements of a commutative semiring, let $n \ge 0$,
+Let $a$, $b$ be elements of a commutative semiring, let $n \ge 0$,
 and let $F$ be a finite set of natural numbers (fence positions; the fence at $k$ has posts on
 half-cells $k$ and $k + 2$). The weight of $F$ on the $n$-board is the product, over the
 half-cells $h \in \{0, \dots, 2n - 1\}$ that neither lie in $F$ nor equal $k + 2$ for some

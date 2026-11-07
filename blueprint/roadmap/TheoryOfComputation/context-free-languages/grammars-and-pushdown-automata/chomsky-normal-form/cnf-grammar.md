@@ -1,6 +1,6 @@
 # Binarization of a grammar
 
-**Binarization of a grammar.** Let $g$ be a context-free grammar with nonterminals $N$ and
+Let $g$ be a context-free grammar with nonterminals $N$ and
 initial nonterminal $S$, and let $t_0, \dots, t_{k-1}$ be the list of terminals occurring in the
 production outputs of $g$. Encode each symbol of a production output of $g$ as a basic symbol in
 $N \sqcup \mathbb{N}$: a nonterminal $A$ as $A$, and a terminal $a$ as the least index $i$ with

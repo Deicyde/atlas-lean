@@ -1,6 +1,6 @@
 # Cyclic sum formula for strict multiple zeta values of indices
 
-**Cyclic sum formula for strict multiple zeta values of indices.** Let $k = (k_1, \dots, k_l)$
+Let $k = (k_1, \dots, k_l)$
 be a nonempty list of positive integers, not all equal to $1$, with subscripts read modulo $l$,
 and write $\zeta$ for the strict multiple zeta value. For $1 \le j \le l$ and
 $1 \le i \le k_j - 1$ the left-hand index of the cyclic sum formula of $k$ at $(j, i)$ is

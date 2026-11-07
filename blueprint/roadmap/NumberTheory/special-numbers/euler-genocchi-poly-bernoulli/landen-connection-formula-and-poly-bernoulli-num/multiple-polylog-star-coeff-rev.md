@@ -1,6 +1,6 @@
 # Coefficient recursion for the non-strict multiple polylogarithm
 
-**Coefficient recursion for the non-strict multiple polylogarithm.** For a finite list $\ell$
+For a finite list $\ell$
 of natural numbers and $m \in \mathbb{N}$, the real number $c_\ell(m)$ is defined by recursion on
 $\ell$: for the empty list, $c_\ell(m) = 1$ if $m = 0$ and $c_\ell(m) = 0$ otherwise; for a list
 $\ell = (a, \ell')$ with first entry $a$ followed by the list $\ell'$,

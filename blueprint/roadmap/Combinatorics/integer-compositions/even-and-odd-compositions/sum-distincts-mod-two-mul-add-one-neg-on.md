@@ -1,6 +1,6 @@
 # Nyirenda's identity for distinct parts modulo an odd number
 
-**Nyirenda's identity for distinct parts modulo an odd number.** Let $r \ge 1$ and $n$ be
+Let $r \ge 1$ and $n$ be
 natural numbers, and let $E(n)$ and $O(n)$ be the numbers of partitions of $n$ into distinct
 parts, each congruent to $0$, $r$ or $r + 1$ modulo $2r + 1$, with an even and an odd number of
 parts, respectively. If $2n = j((2r + 1)j + 1)$ or $2n = j((2r + 1)j - 1)$ for some integer

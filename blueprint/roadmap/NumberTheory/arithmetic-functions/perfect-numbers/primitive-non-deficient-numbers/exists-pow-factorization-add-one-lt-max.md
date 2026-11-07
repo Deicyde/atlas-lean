@@ -1,6 +1,6 @@
 # Generalized Puchta lemma
 
-**Generalized Puchta lemma.** Let $n$ be a primitive non-deficient number with $k$ distinct
+Let $n$ be a primitive non-deficient number with $k$ distinct
 prime factors, the least of which is $p_1$, and suppose that $(p_1, k) \ne (3, 3)$. Let $\alpha$
 be a rational number with $0 < \alpha < 1$ such that $H(n) \ge 2 + \alpha$, where
 $H(n) = \prod_p p/(p-1)$ is the product over the distinct primes $p$ dividing $n$. Then some

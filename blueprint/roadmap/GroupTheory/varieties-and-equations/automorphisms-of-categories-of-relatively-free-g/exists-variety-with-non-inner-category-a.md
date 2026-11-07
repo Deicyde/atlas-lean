@@ -1,6 +1,6 @@
 # Plotkin's question on outer automorphisms of the category of free groups of a variety
 
-**Plotkin's question on outer automorphisms of the category of free groups of a variety.** The
+The
 statement that there is a set $W$ of words in the free group on $x_0, x_1, \ldots$ such that, for
 the variety $\Theta$ with laws $W$, the category $\Theta^0$ of the free groups of $\Theta$ on the
 finite subsets of $\mathbb{N}$ has an automorphism that is not inner: functors

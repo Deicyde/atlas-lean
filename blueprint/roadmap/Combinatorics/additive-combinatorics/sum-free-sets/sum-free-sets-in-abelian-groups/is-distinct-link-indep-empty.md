@@ -1,6 +1,6 @@
 # The empty set is independent in the distinct link graph
 
-**The empty set is independent in the distinct link graph.** For every set $G$ with an
+For every set $G$ with an
 addition and all $S, B \subseteq G$, the empty set is an independent set of the distinct link
 graph $L^*_S[B]$.
 

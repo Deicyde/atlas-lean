@@ -1,6 +1,6 @@
 # Result of doubly-linked-list insertion
 
-**Result of doubly-linked-list insertion.** For a store $S$ and allocated cells $x$ and $y$
+For a store $S$ and allocated cells $x$ and $y$
 such that the successor of $y$ in $S$, if any, is allocated, let $s$ be the next pointer of $y$
 in $S$. Let $S_1$ be $S$ with cell $x$ replaced by the node of $x$ with next pointer $s$ and
 previous pointer $y$. Let $S_2 = S_1$ if $s$ is NIL; if $s$ is a cell $z$, let $S_2$ be $S_1$

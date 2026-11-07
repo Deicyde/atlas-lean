@@ -1,6 +1,6 @@
 # The maximal commutator width ratio is one sixth
 
-**The maximal commutator width ratio is one sixth.** For every finite non-abelian group $G$,
+For every finite non-abelian group $G$,
 the commutator width $w(G')$ of its derived subgroup satisfies $w(G')/|G| \le 1/6$, and for the
 symmetric group $S_3$ equality holds, $w(S_3')/|S_3| = 1/6$; so Kourovka Problem 16.8 has a
 positive answer.

@@ -1,3 +1,3 @@
 # The 8-cycle graph
 
-**The 8-cycle graph.** The 8-cycle on `Fin 8`.
+The 8-cycle on `Fin 8`.

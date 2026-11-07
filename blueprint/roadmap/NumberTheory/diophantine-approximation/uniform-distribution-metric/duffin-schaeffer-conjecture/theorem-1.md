@@ -1,6 +1,6 @@
 # Koukoulopoulos–Maynard Theorem 1 (Duffin–Schaeffer conjecture)
 
-**Koukoulopoulos–Maynard Theorem 1 (Duffin–Schaeffer conjecture).** Let $\psi$ be a function
+Let $\psi$ be a function
 from the positive integers to the nonnegative reals such that the series
 $\sum_{q \ge 1} \psi(q)\varphi(q)/q$ diverges, where $\varphi$ is Euler's totient function. Let
 $\mathcal{A}(\psi)$ be the set of real numbers $\alpha \in [0, 1]$ for which

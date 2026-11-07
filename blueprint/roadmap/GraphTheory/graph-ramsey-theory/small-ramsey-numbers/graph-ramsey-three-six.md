@@ -1,6 +1,6 @@
 # The value of $R(3, 6)$
 
-**The value of $R(3, 6)$.** The classical Ramsey number $R(3, 6)$ equals $18$.
+The classical Ramsey number $R(3, 6)$ equals $18$.
 
 ## Sources
 

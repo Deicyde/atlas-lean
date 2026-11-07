@@ -1,6 +1,5 @@
 # Elements of order $2$ in perfect covers of $\mathbb{Z}_{2^m} \oplus \mathbb{Z}_{2^n}$
 
-**Elements of order $2$ in perfect covers of $\mathbb{Z}_{2^m} \oplus \mathbb{Z}_{2^n}$.**
 Let $m, n$ be natural numbers with $m + n > 0$. Every perfect cover of
 $\mathbb{Z}_{2^m} \oplus \mathbb{Z}_{2^n}$ contains an element of order $2$.
 

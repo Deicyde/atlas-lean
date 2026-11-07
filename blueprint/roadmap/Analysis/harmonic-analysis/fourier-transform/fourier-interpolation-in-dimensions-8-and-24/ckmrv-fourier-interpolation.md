@@ -1,6 +1,6 @@
 # Cohn–Kumar–Miller–Radchenko–Viazovska Fourier interpolation theorem
 
-**Cohn–Kumar–Miller–Radchenko–Viazovska Fourier interpolation theorem.** Let
+Let
 $(n, k_0)$ be $(8, 1)$ or $(24, 2)$. For a complex-valued Schwartz function $f$ on
 $\mathbb{R}^n$, let $\hat f(\xi) = \int f(x) e^{-2\pi i \langle x, \xi \rangle}\,dx$ be its
 Fourier transform, let $e_1$ be the first standard basis vector and let $r_k = \sqrt{2k}$.

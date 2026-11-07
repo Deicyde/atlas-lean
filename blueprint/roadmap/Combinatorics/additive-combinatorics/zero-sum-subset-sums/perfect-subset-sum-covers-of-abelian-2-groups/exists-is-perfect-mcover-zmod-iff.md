@@ -1,6 +1,6 @@
 # Which families are perfect $m$-covers of $\mathbb{Z}_{2^n}$
 
-**Which families are perfect $m$-covers of $\mathbb{Z}_{2^n}$.** Let $s = (s_i)_{i \in \iota}$
+Let $s = (s_i)_{i \in \iota}$
 be a family in $\mathbb{Z}_{2^n}$ indexed by a finite type $\iota$ (a colored multiset). Then $s$
 is a perfect $m$-cover of $\mathbb{Z}_{2^n}$ for some $m$ if and only if for every $j$ with
 $1 \le j \le n$ some $s_i$ has additive order $2^j$.

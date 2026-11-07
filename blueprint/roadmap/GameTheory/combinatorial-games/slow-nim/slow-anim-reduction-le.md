@@ -1,6 +1,6 @@
 # The reduction never adds tokens
 
-**The reduction never adds tokens.** For every finite set $A$ of natural numbers, every
+For every finite set $A$ of natural numbers, every
 position $p$ of Slow$A$-Nim on $n$ stacks and every stack $i$, the reduction $r(p)$ of $p$
 satisfies $r(p)_i \le p_i$.
 

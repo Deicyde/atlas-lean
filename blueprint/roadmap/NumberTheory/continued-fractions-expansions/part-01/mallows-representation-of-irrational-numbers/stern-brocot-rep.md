@@ -1,6 +1,6 @@
 # Stern–Brocot representation
 
-**Stern–Brocot representation.** For a real number $\alpha$, the Stern–Brocot representation
+For a real number $\alpha$, the Stern–Brocot representation
 $SB(\alpha) = SB_1(\alpha) SB_2(\alpha) \cdots$ is the infinite sequence over $\{L, R\}$ obtained
 by walking down the Stern–Brocot tree from its vertex $1/2$, the vertex with gap $(0/1, 1/1)$.
 The vertex with gap $(a, b)$ has label the mediant $a \oplus b$ and children with gaps

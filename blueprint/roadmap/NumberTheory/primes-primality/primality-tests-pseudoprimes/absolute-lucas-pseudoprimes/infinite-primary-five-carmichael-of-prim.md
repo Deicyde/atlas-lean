@@ -1,6 +1,5 @@
 # Prime $k$-tuples give primary $5$-Carmichael numbers of every three-term signature
 
-**Prime $k$-tuples give primary $5$-Carmichael numbers of every three-term signature.**
 Suppose the prime $k$-tuples conjecture holds in the following form: for every finite list of
 integer pairs $(a_1, b_1), \dots, (a_k, b_k)$ with all $a_i \ge 1$ such that for every prime
 $\ell$ there is an integer $x$ with $\ell \nmid \prod_i (a_i x + b_i)$, there are infinitely many

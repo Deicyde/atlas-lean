@@ -1,6 +1,6 @@
 # Counter part of one I3 iteration
 
-**Counter part of one I3 iteration.** Let $L$ be a layout with $g$ symbol codes. Suppose the
+Let $L$ be a layout with $g$ symbol codes. Suppose the
 counters $F$ of the init generator's counter part have $Q$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$,
 $c_2$ and $\mathrm{CB}$ equal to $0$, $\mathrm{Gc} = g$, $\mathrm{ZA} = Z$ and
 $\mathrm{Xn} = r + 1$. Then for every output $o$ and flag $v$, the counter part, started at the

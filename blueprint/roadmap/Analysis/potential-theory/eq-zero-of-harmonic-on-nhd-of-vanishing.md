@@ -1,6 +1,6 @@
 # A harmonic function vanishing on a set of positive measure is zero
 
-**A harmonic function vanishing on a set of positive measure is zero.** Let
+Let
 $\Omega \subseteq \mathbb{C}$ be a nonempty connected open set and let
 $h : \mathbb{C} \to \mathbb{R}$ be harmonic on $\Omega$. If $h$ vanishes on some subset
 $s \subseteq \Omega$ of positive (outer) Lebesgue measure, then $h(z) = 0$ for all $z \in \Omega$.

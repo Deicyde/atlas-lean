@@ -1,6 +1,6 @@
 # The adjoint of a finite-rank operator is compact
 
-**The adjoint of a finite-rank operator is compact.** Let $E$ and $F$ be Hilbert spaces over
+Let $E$ and $F$ be Hilbert spaces over
 $\mathbb{R}$ or $\mathbb{C}$. If a bounded linear operator $T : E \to F$ has finite-dimensional
 range, then its adjoint $T^* : F \to E$ is a compact operator.
 

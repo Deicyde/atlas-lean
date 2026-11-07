@@ -1,6 +1,6 @@
 # Central binomial sum over $\binom{n+m}{m} (n + 1/2)^2$
 
-**Central binomial sum over $\binom{n+m}{m} (n + 1/2)^2$.** Let $m \ge 1$ be an integer and
+Let $m \ge 1$ be an integer and
 write $O_m = O_m(1) = \sum_{i=1}^{m} 1/(i - 1/2)$ for the depth-one odd harmonic number. Then
 
 $$\sum_{n \ge 0} \frac{\binom{2n}{n}}{4^n \binom{n+m}{m} (n + 1/2)^2} =

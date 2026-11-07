@@ -1,6 +1,6 @@
 # Bloch's theorem
 
-**Bloch's theorem.** There is a constant $B > 0$ with the following property. Let
+There is a constant $B > 0$ with the following property. Let
 $f : \mathbb{C} \to \mathbb{C}$ be holomorphic on the open unit disc $\mathbb{D} = \{z : |z| < 1\}$
 with $f'(0) = 1$. Then there are an open connected set $V \subseteq \mathbb{D}$ and a point
 $w \in \mathbb{C}$ such that $f$ is injective on $V$ and $f(V)$ is the open disc

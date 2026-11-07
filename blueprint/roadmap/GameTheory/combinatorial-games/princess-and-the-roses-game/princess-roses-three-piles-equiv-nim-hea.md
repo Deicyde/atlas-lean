@@ -1,6 +1,6 @@
 # Sprague–Grundy values of three-pile Princess and the Roses
 
-**Sprague–Grundy values of three-pile Princess and the Roses.** For natural numbers
+For natural numbers
 $a \ge b \ge c$, the Princess and the Roses position $(a, b, c)$ is equivalent to the Nim heap
 $*n$, that is, it has Sprague–Grundy value $n$, where $n = 0$ if $a$ and $b$ both have the parity
 of $c$, $n = 1$ if $a$ differs from $c$ in parity and $b$ does not, $n = 2$ if $a$ and $b$ both

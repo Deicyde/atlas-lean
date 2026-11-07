@@ -1,6 +1,6 @@
 # Solutions of |x² − dy²| = z are even when d ≡ 1 and z ≡ 4 (mod 8)
 
-**Solutions of |x² − dy²| = z are even when d ≡ 1 and z ≡ 4 (mod 8).** Let $d$ and $z$ be
+Let $d$ and $z$ be
 integers with $d \equiv 1 \pmod 8$ and $z \equiv 4 \pmod 8$. If integers $x$ and $y$ satisfy
 $|x^2 - dy^2| = z$, then $x$ and $y$ are both even.
 

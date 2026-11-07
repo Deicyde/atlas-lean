@@ -1,6 +1,6 @@
 # Recurrence across consecutive orders of hyper-Leonardo numbers
 
-**Recurrence across consecutive orders of hyper-Leonardo numbers.** For all natural numbers
+For all natural numbers
 $r \ge 1$ and $n \ge 1$, the hyper-Leonardo numbers $Le^{(r)}_n$ satisfy
 $Le^{(r)}_n = Le^{(r)}_{n-1} + Le^{(r-1)}_n$.
 

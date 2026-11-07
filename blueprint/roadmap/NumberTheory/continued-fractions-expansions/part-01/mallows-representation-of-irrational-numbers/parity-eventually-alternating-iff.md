@@ -1,6 +1,6 @@
 # Eventually alternating parities of Stern–Brocot numerators
 
-**Eventually alternating parities of Stern–Brocot numerators.** Let $\alpha$ be an irrational
+Let $\alpha$ be an irrational
 number with $0 < \alpha < 1$, let $f_1(\alpha), f_2(\alpha), \dots$ be the fractions on its
 Stern–Brocot path, and let $M(\alpha) = \langle M_1(\alpha), M_2(\alpha), \dots \rangle$ be its
 Mallows representation. The following are equivalent: (a) there is $j_0$ such that for every

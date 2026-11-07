@@ -1,6 +1,6 @@
 # The diamonds
 
-**The diamonds.** Let $B \in \mathbb{N}$ and let $\varphi$ be a CNF formula with $m$ clauses,
+Let $B \in \mathbb{N}$ and let $\varphi$ be a CNF formula with $m$ clauses,
 token list $\mathrm{toks}(\varphi)$ and list of distinct variables $\mathrm{vars}(\varphi)$ of
 length $k$. Suppose the top of diamond $k$ for $m$ clauses, the length of $\mathrm{toks}(\varphi)$,
 and the length of the binary encoding of every $y \in \mathrm{vars}(\varphi)$ are at most $B$.

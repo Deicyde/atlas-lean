@@ -1,6 +1,6 @@
 # Splicing two red-black trees
 
-**Splicing two red-black trees.** The splice of a red-black tree $t$ with a red-black tree $s$ is
+The splice of a red-black tree $t$ with a red-black tree $s$ is
 defined by recursion on $t$. The splice of the empty tree with $s$ is $s$. The splice of the node
 with color $c$, left subtree $l$, key $k$ and right subtree $r$ with $s$ is the node with color
 $c$, left subtree $l$, key $k$ and right subtree the splice of $r$ with $s$.

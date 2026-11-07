@@ -1,6 +1,6 @@
 # Triangular $q$-binomial coefficients via Gaussian binomials
 
-**Triangular $q$-binomial coefficients via Gaussian binomials.** For natural numbers $r$ and
+For natural numbers $r$ and
 $s$ with $1 \le r$ and $s \le r$, the triangular $q$-binomial coefficient $t[r, s]$ satisfies
 
 $$

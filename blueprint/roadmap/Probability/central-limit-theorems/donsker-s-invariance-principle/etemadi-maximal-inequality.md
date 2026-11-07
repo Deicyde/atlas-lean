@@ -1,6 +1,6 @@
 # Etemadi's maximal inequality
 
-**Etemadi's maximal inequality.** Let $X_0, X_1, \dots$ be independent real random variables
+Let $X_0, X_1, \dots$ be independent real random variables
 on a probability space $(\Omega, P)$ and write $S_k = X_0 + \dots + X_{k-1}$, so that $S_0 = 0$.
 Then for every natural number $n$ and every real number $a$,
 

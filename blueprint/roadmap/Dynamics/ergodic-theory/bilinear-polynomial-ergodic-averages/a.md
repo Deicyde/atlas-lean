@@ -1,6 +1,6 @@
 # Bilinear polynomial ergodic averages
 
-**Bilinear polynomial ergodic averages.** Let $X$ be a measurable space and let
+Let $X$ be a measurable space and let
 $T : X \to X$ be a measurable bijection with measurable inverse. For a real number $N \ge 0$,
 polynomials $P_1, P_2 \in \mathbb{Z}[t]$, functions $f, g : X \to \mathbb{C}$ and a point
 $x \in X$, the bilinear average is the complex number

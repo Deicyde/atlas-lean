@@ -1,6 +1,6 @@
 # Kimura–Ohta mean absorption time, process form
 
-**Kimura–Ohta mean absorption time, process form.** For a solution of the neutral
+For a solution of the neutral
 Wright–Fisher martingale problem started at frequency `x`, the expected time to loss or
 fixation, in units of `2N` generations, is `-2 (x log x + (1 - x) log (1 - x))`.
 

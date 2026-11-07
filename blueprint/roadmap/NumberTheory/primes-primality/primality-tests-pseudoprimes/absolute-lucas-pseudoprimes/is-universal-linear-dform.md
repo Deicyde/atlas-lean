@@ -1,6 +1,6 @@
 # Universal $D$-forms
 
-**Universal $D$-forms.** Let $D$ be an integer, $\sigma$ a list of integers, and
+Let $D$ be an integer, $\sigma$ a list of integers, and
 $f(x) = (a_1 x + b_1) \cdots (a_k x + b_k)$ a product of linear factors with integer coefficients.
 Then $f$ is a universal $D$-form with respect to $\sigma$ when: every factor has $a_i \ne 0$ and
 $\gcd(a_i, b_i) = 1$; for every prime $\ell$ there is an integer $x$ with $\ell \nmid f(x)$; and

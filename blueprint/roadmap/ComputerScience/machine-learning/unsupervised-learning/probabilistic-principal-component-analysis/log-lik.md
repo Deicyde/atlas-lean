@@ -1,6 +1,6 @@
 # Probabilistic PCA log-likelihood
 
-**Probabilistic PCA log-likelihood.** For data $x_1, \dots, x_N \in \mathbb{R}^d$, a mean
+For data $x_1, \dots, x_N \in \mathbb{R}^d$, a mean
 $\mu \in \mathbb{R}^d$, a real $d \times q$ loading matrix $W$ and a real number $\sigma^2$, the
 probabilistic PCA log-likelihood of the data is
 

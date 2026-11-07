@@ -1,6 +1,6 @@
 # Degree identities at convergents of a Möbius–Frobenius fixed point
 
-**Degree identities at convergents of a Möbius–Frobenius fixed point.** Let $K$ be a finite
+Let $K$ be a finite
 field with $q$ elements, let $A, B, C, D \in K[x]$ with $\Delta = AD - BC \ne 0$ and $C \ne 0$,
 and let $\alpha \in K((x^{-1}))$ be irrational with $\alpha = (A \alpha^q + B) / (C \alpha^q + D)$.
 Let $b_0, b_1, \dots$ be the partial quotients of $\alpha$ and $P_n / Q_n$ its convergents, where

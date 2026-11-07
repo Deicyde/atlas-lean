@@ -1,6 +1,6 @@
 # Runge–Kutta stages tend to the vector field as the step shrinks
 
-**Runge–Kutta stages tend to the vector field as the step shrinks.** Let $E$ be a real normed
+Let $E$ be a real normed
 space, fix an explicit Runge–Kutta method with $s$ stages, a vector field $f$ assigning a vector
 $f(t', x) \in E$ to each time $t' \in \mathbb{R}$ and state $x \in E$, a time $t$ and a state
 $y \in E$, and suppose that $(t', x) \mapsto f(t', x)$ is continuous at $(t, y)$. For a step

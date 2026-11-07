@@ -1,6 +1,6 @@
 # Convergence of a factorial series in a sector
 
-**Convergence of a factorial series in a sector.** Let $a_0, a_1, \ldots$ be complex numbers,
+Let $a_0, a_1, \ldots$ be complex numbers,
 let $\lambda$ be either a real number or $-\infty$, and let $\varepsilon > 0$, with
 $\varepsilon < \pi/2$ when $\lambda$ is real and $\varepsilon < \pi$ when $\lambda = -\infty$.
 Suppose that the series

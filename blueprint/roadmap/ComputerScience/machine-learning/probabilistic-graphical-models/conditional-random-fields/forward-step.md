@@ -1,6 +1,6 @@
 # One step of the tabulated CRF forward algorithm
 
-**One step of the tabulated CRF forward algorithm.** Let $c$ be a chain CRF with states
+Let $c$ be a chain CRF with states
 $\{0, \dots, n-1\}$ and weights in a semiring $R$ carrying a relation $\le$, with unary
 potential $\phi_t(s)$ at position $t$ and transition potential $\psi_t(s', s)$ from $s'$ to $s$
 at step $t$, given the observation sequence $x$. For a table $v \in R^n$ and a step $t$, the

@@ -1,6 +1,6 @@
 # Van der Laan windows
 
-**Van der Laan windows.** Four natural numbers $a, b, c, d$ form a Van der Laan window when
+Four natural numbers $a, b, c, d$ form a Van der Laan window when
 the largest of them equals the sum of the two smallest, that is, when
 $\max(a, b, c, d) = \min(a + b, a + c, a + d, b + c, b + d, c + d)$.
 

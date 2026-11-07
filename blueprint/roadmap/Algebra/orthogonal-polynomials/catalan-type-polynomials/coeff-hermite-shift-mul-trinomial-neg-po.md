@@ -1,6 +1,6 @@
 # Hermite-shifted Catalan-type polynomials as convolutions
 
-**Hermite-shifted Catalan-type polynomials as convolutions.** Write $H_n(x, y) = H^2_n(x, y)$
+Write $H_n(x, y) = H^2_n(x, y)$
 for the Kampé de Fériet polynomials. For a natural number $m$ and real numbers $\lambda, z$,
 write $(1 - m t + z t^m)^{-\lambda}$ and $(1 - m z t + t^m)^{-\lambda}$ for the negative real
 powers of the trinomials $1 - m t + z t^m$ and $1 - m z t + t^m$ with exponent $\lambda$ as

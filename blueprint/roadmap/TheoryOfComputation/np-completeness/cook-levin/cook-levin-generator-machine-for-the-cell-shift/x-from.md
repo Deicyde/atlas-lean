@@ -1,6 +1,6 @@
 # Entry label of the in-range chain
 
-**Entry label of the in-range chain.** For a situation $i < N$, a stack $k < K$ and a number
+For a situation $i < N$, a stack $k < K$ and a number
 $n$, the label of the generator with $N$ situations, $K$ stacks, $g$ symbol codes and window
 depth $d$ from which the in-range shift clauses for the symbol codes $x < n$ of the current cell
 pair of block $(i, k)$ are emitted before the in-range drains: the in-range drain stage

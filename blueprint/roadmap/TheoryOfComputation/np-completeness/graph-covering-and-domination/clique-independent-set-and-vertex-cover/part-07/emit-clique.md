@@ -1,6 +1,6 @@
 # The CLIQUE emitter
 
-**The CLIQUE emitter.** The emitter given by the CLIQUE emitter machine, run from its start
+The emitter given by the CLIQUE emitter machine, run from its start
 label to its exit label, with token stack $T$ and output stack $O$. Its output on a CNF formula
 $\varphi$ is Karp's CLIQUE instance of $\varphi$, its output on undecodable input is the string
 $100$, and its step bound on $m$ tokens is $8(m + 1)^3$. Let $\varphi$ be a CNF formula with $m$

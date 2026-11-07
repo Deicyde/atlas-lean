@@ -1,6 +1,6 @@
 # Ham sandwich theorem
 
-**Ham sandwich theorem.** Let $n \ge 1$ and let $\mu_1, \dots, \mu_n$ be finite Borel
+Let $n \ge 1$ and let $\mu_1, \dots, \mu_n$ be finite Borel
 measures on the Euclidean space $\mathbb{R}^n$, each absolutely continuous with respect to
 Lebesgue measure. Then there exist a unit vector $v \in \mathbb{R}^n$ and a real number $t$
 such that for every $i$, both closed half-spaces $\{x : \langle v, x \rangle \le t\}$ and

@@ -1,6 +1,6 @@
 # Infinitely many prime pairs with $47$-smooth difference
 
-**Infinitely many prime pairs with $47$-smooth difference.** There are infinitely many pairs
+There are infinitely many pairs
 of primes $p > q$ such that every prime factor of $p - q$ is at most $47$.
 
 ## Sources

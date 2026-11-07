@@ -1,6 +1,6 @@
 # Every point of the unit circle lies in the spectrum of the bilateral shift
 
-**Every point of the unit circle lies in the spectrum of the bilateral shift.** Let
+Let
 $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $S$ be the bilateral shift on
 $\ell^2(\mathbb{Z}, \mathbb{K})$. Every $\mu \in \mathbb{K}$ with $|\mu| = 1$ lies in the
 spectrum of $S$ in the algebra of bounded operators on $\ell^2(\mathbb{Z}, \mathbb{K})$, that

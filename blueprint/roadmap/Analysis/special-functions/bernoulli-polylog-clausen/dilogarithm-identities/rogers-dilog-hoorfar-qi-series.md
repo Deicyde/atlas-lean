@@ -1,6 +1,6 @@
 # Hoorfar–Qi dilogarithm series
 
-**Hoorfar–Qi dilogarithm series.** Write $L(x) = \sum_{m \ge 1} x^m/m^2 +
+Write $L(x) = \sum_{m \ge 1} x^m/m^2 +
 \frac{1}{2} \log x \log(1 - x)$ for the Rogers dilogarithm on $[0, 1]$ (with $\log 0 = 0$). For
 positive integers $p, q$ and real numbers $\theta, \beta$ with $0 < \theta < 1$ and
 $0 < \beta < 1$,

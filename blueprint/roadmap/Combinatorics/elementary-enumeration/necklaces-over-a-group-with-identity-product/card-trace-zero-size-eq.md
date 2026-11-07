@@ -1,6 +1,6 @@
 # Trace-zero elements with Galois orbits of full size
 
-**Trace-zero elements with Galois orbits of full size.** Let $K$ be a finite field
+Let $K$ be a finite field
 extension of a finite field $F$ and $n = [K : F]$. The number of $z \in K$ with
 $\operatorname{Tr}_{K/F}(z) = 0$ whose Galois orbit, the set of all $\sigma(z)$ with $\sigma$ an
 automorphism of $K$ fixing $F$, has exactly $n$ elements equals the number of tuples

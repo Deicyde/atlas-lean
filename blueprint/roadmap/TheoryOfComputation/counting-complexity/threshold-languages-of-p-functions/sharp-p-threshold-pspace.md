@@ -1,6 +1,6 @@
 # Threshold languages of #P functions are in PSPACE
 
-**Threshold languages of #P functions are in PSPACE.** For every function $f$ in $\#P$,
+For every function $f$ in $\#P$,
 the threshold language of $f$, which accepts a bitstring exactly when it decodes, under the
 canonical bitstring encoding of pairs, to a pair $(x, k)$ of a bitstring $x$ and a natural
 number $k$ with $k \le f(x)$, is in PSPACE.

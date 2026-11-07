@@ -1,6 +1,6 @@
 # Initial values of the supergeneralized Leonardo p-numbers
 
-**Initial values of the supergeneralized Leonardo p-numbers.** For all natural numbers $p$,
+For all natural numbers $p$,
 $k$ and $n$ with $n \le p$ and every real sequence $x$, the supergeneralized Leonardo $p$-number
 $\mathcal{L}_{p,k,x}(n)$ equals $x_n$.
 

@@ -1,6 +1,6 @@
 # Two largest orbits force the dihedral group of order eight (Kourovka 18.44)
 
-**Two largest orbits force the dihedral group of order eight (Kourovka 18.44).** Let $G$ be a
+Let $G$ be a
 finite non-abelian group, let $G'$ be its derived subgroup, and let $V$ be a finite faithful
 irreducible $G$-module, that is, a nonzero finite abelian group on which $G$ acts faithfully by
 automorphisms with no $G$-invariant subgroups other than $0$ and $V$. Write $M = |G/G'|$. If every

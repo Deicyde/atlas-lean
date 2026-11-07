@@ -1,6 +1,6 @@
 # Truncated binomial sum $G_n^{(k)}$
 
-**Truncated binomial sum $G_n^{(k)}$.** For an integer $x$ and a natural number $j$ let
+For an integer $x$ and a natural number $j$ let
 $\binom{x}{j} = x(x-1)\cdots(x-j+1)/j!$. For natural numbers $k$ and $n$, the rational number
 $G_n^{(k)}$ is
 

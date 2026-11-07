@@ -1,6 +1,6 @@
 # Segments of canonical plays through fragment positions are bespoke plays
 
-**Segments of canonical plays through fragment positions are bespoke plays.** Let $M$ be a
+Let $M$ be a
 Kripke model, $\mathit{env}$ an environment and $\sigma$ a Verifier strategy for the
 model-checking game on $M$. Write $\langle \psi, v \rangle$ for the game position with the
 embedding of a fixpoint-free formula $\psi$, the world $v$ and the empty binder stack. Let $\pi$

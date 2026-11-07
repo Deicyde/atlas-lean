@@ -1,6 +1,6 @@
 # The literal routine of the initial-row generator
 
-**The literal routine of the initial-row generator.** For a clause kind $c$ and a literal
+For a clause kind $c$ and a literal
 index $l < n + 2$, where $n$ is the number of certificate codes, the counter program at the
 stages of the routine for literal $l$ of $c$. It copies the base counter of $c$ into the counter
 $Q$ (restoring the base counter through a scratch counter) and adds the offset of literal $l$ to

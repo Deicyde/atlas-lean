@@ -1,6 +1,6 @@
 # Alternating regular projections
 
-**Alternating regular projections.** Let $L$ be a parametrized link whose standard projection
+Let $L$ be a parametrized link whose standard projection
 to the plane is regular. The projection is alternating when, for any two cyclically adjacent
 crossing preimages $a$ and $b$ of $L$ (distinct, on the same component, with no other crossing
 preimage of that component in the open arc of parameters from $a$ to $b$), the over/under status

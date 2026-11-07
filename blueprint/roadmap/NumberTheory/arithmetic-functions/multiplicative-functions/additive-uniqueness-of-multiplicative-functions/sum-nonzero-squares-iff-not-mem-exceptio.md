@@ -1,6 +1,6 @@
 # Dubouis's theorem on sums of nonzero squares
 
-**Dubouis's theorem on sums of nonzero squares.** Let $m \ge 4$ and let $n$ be a positive
+Let $m \ge 4$ and let $n$ be a positive
 integer. Then $n$ is a sum of $m$ squares of positive integers if and only if $n$ does not lie in
 the exceptional set $E_m$, where
 $E_4 = \{1, 3, 5, 9, 11, 17, 29, 41\} \cup \{2 \cdot 4^r, 6 \cdot 4^r, 14 \cdot 4^r : r \ge 0\}$,

@@ -1,6 +1,6 @@
 # Two values of Trudi's partition sum
 
-**Two values of Trudi's partition sum.** For an integer $s$, integers $a_1, a_2, \dots$ and
+For an integer $s$, integers $a_1, a_2, \dots$ and
 $n \ge 0$, write
 $T_n(s; a) = \sum_\alpha s^{|\alpha|} m_n(\alpha) \, a_1^{\alpha_1} \cdots a_n^{\alpha_n}$ for
 Trudi's partition sum, where $\alpha = (\alpha_1, \dots, \alpha_n)$ runs over the tuples of

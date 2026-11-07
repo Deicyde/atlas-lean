@@ -1,6 +1,6 @@
 # A value of the mixed-sign subset-sum bound
 
-**A value of the mixed-sign subset-sum bound.** For $n = 1$, $p = 2$ and $\alpha = \beta = 1$,
+For $n = 1$, $p = 2$ and $\alpha = \beta = 1$,
 the mixed-sign subset-sum bound is $L_{1,2}(1, 1) = 5$; this value comes from its second case.
 
 It is attained by $A = \{-1, 1, 2\}$: the sums of subsets of $A$ with one or two elements form

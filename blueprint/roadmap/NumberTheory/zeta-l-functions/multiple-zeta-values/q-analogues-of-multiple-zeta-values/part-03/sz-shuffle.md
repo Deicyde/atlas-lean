@@ -1,6 +1,6 @@
 # SZ-qshuffle product
 
-**SZ-qshuffle product.** The SZ-qshuffle product $\text{ш}$ of two words in the letters $p$
+The SZ-qshuffle product $\text{ш}$ of two words in the letters $p$
 and $y$ is the formal sum of words, counted with multiplicity, defined recursively by
 $\mathbf{1} \mathbin{\text{ш}} w = w \mathbin{\text{ш}} \mathbf{1} = w$ for the empty word
 $\mathbf{1}$, and, for words $u, v$,

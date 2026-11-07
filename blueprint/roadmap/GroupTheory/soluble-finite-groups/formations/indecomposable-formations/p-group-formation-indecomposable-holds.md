@@ -1,6 +1,6 @@
 # The formation of finite $p$-groups is indecomposable
 
-**The formation of finite $p$-groups is indecomposable.** For every prime $p$, the class
+For every prime $p$, the class
 $\mathfrak{N}_p$ of all finite $p$-groups is not the Gaschütz product $\mathfrak{F} \circ
 \mathfrak{G}$ of two formations $\mathfrak{F}$ and $\mathfrak{G}$ that consist of $p$-groups, each
 contain a nontrivial group and each omit some finite $p$-group. Here a finite group $G$ lies in

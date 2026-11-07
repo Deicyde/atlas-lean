@@ -1,6 +1,6 @@
 # Representation counts between consecutive two-generator Frobenius numbers
 
-**Representation counts between consecutive two-generator Frobenius numbers.** Let $a$ and $b$
+Let $a$ and $b$
 be coprime positive integers. For a natural number $r$ let $g(a, b; r)$ be the generalized
 Frobenius number of $(a, b)$ at $r$, and for an integer $m$ let $d(m; a, b)$ be the number of
 representations of $m$ by $(a, b)$. Let $i$ and $s$ be natural numbers, let $c$ be a positive

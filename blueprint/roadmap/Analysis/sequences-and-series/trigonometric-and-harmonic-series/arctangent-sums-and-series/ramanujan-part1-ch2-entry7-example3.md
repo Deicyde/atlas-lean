@@ -1,6 +1,6 @@
 # Arctangent series with halved squares (Entry 7, Example 3)
 
-**Arctangent series with halved squares (Entry 7, Example 3).** For every real number
+For every real number
 $n > 0$, the series
 
 $$\sum_{k=0}^{\infty} \arctan \frac{1}{2(n + k + 1)^2}$$

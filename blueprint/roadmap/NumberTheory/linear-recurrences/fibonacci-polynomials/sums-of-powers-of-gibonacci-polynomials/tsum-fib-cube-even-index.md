@@ -1,6 +1,6 @@
 # Cubic-denominator series for even-index Fibonacci numbers
 
-**Cubic-denominator series for even-index Fibonacci numbers.** Let $F_n$ be the Fibonacci
+Let $F_n$ be the Fibonacci
 numbers ($F_0 = 0$, $F_1 = 1$, $F_{n+2} = F_{n+1} + F_n$) and $L_n$ the Lucas numbers. Then, as
 series of real numbers,
 

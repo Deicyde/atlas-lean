@@ -1,6 +1,6 @@
 # Even-index binomial sum equal to a scaled central binomial coefficient
 
-**Even-index binomial sum equal to a scaled central binomial coefficient.** For every
+For every
 natural number $n$,
 
 $$\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{1}{2^{2k}} \binom{2k}{k} =

@@ -1,6 +1,6 @@
 # Short prefixes of the negative parts of base phi expansions
 
-**Short prefixes of the negative parts of base phi expansions.** Let $\varphi$ be the golden
+Let $\varphi$ be the golden
 ratio. For integers $p, q, r$ let $V(p, q, r) = \{p \lfloor n\varphi \rfloor + qn + r : n \ge 1\}$
 and $V_0(p, q, r) = \{p \lfloor n\varphi \rfloor + qn + r : n \ge 0\}$. For a word $w$ of length
 $\ell$ let $R_{\cdot w}$ be the set of natural numbers having a base phi expansion whose digits

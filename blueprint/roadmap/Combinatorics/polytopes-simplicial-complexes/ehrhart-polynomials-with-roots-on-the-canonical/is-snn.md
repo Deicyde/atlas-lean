@@ -1,6 +1,6 @@
 # SNN polynomials
 
-**SNN polynomials.** For a complex polynomial $f$ of degree $d$ and a natural number $i$, let
+For a complex polynomial $f$ of degree $d$ and a natural number $i$, let
 $h^*_i(f)$ be the coefficient of $t^i$ in $(1 - t)^{d+1} \sum_{k \ge 0} f(k)\, t^k$. Then $f$ is
 SNN when $f \ne 0$ and its $h^*$-coefficients $h^*_0(f), \dots, h^*_d(f)$ are real and
 nonnegative.

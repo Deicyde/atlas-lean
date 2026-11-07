@@ -1,6 +1,6 @@
 # Factorial matrix of a power series
 
-**Factorial matrix of a power series.** Let $K$ be a field, let $f$ be a formal power series
+Let $K$ be a field, let $f$ be a formal power series
 over $K$ in the variable $t$, and let $n$ be a natural number. The factorial matrix $M_n(f)$ is
 the $n \times n$ matrix over $K$ whose entry in row $a$ and column $b$ (counted from $0$) is
 $(a! \cdot 1_K) / (b! \cdot 1_K)$ times the coefficient of $t^{a-b}$ in $f$ when $b \le a$, and

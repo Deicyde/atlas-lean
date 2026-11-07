@@ -1,6 +1,6 @@
 # Ten classical statistics over permutations avoiding $132$ and $321$
 
-**Ten classical statistics over permutations avoiding $132$ and $321$.** Let $F$ be the
+Let $F$ be the
 joint generating function of the ten classical statistics over the permutations avoiding both
 patterns $132$ and $321$: a formal power series in $x$ over
 $\mathbb{Q}[p, q, u, v, s, t, y, z, \ell, m]$ in which $x$ marks the length and

@@ -1,6 +1,6 @@
 # Number of Schreier-type multisets
 
-**Number of Schreier-type multisets.** For natural numbers $s$, $p$ and $n$, $|A^{(s)}_{p,n}|$
+For natural numbers $s$, $p$ and $n$, $|A^{(s)}_{p,n}|$
 is the number of distinct sub-multisets $F$ of $\{1^s, \dots, (n - 1)^s, n\}$ (each of
 $1, \dots, n - 1$ with multiplicity $s$, and $n$ once) such that $n \in F$ and every element of $F$
 is at least $p|F|$, where $|F|$ counts multiplicity.

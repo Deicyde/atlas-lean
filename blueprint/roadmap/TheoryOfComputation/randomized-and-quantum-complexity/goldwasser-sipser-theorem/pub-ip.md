@@ -1,6 +1,6 @@
 # Public-coin interactive proofs
 
-**Public-coin interactive proofs.** A decision problem $L$ is in $\mathsf{PubIP}$ when there
+A decision problem $L$ is in $\mathsf{PubIP}$ when there
 are polynomials $r$, $q$ and $k$ with natural-number coefficients and polynomial-time functions
 $V_{\mathrm{msg}}$ (the verifier's message function) and $V_{\mathrm{dec}}$ (its decision
 function) with the following property. For a bitstring $x$, a prover $P$ (an arbitrary function

@@ -1,6 +1,6 @@
 # Cell map of the quarter-turn r
 
-**Cell map of the quarter-turn r.** For a natural number $n$, the quarter-turn $r$ acts on the
+For a natural number $n$, the quarter-turn $r$ acts on the
 cells $(x, y) \in \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ of the $n \times n$ grid by
 $(x, y) \mapsto (-1 - y, x)$, that is, $(x, y) \mapsto (n - 1 - y, x)$ modulo $n$.
 

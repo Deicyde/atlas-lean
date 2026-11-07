@@ -1,6 +1,6 @@
 # The empty word represents zero
 
-**The empty word represents zero.** The empty digit list is a Tribonacci representation
+The empty digit list is a Tribonacci representation
 of $0$.
 
 ## Sources

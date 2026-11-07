@@ -1,6 +1,6 @@
 # Holomorphic eigenvalues of the Gauss–Kuzmin–Wirsing operator
 
-**Holomorphic eigenvalues of the Gauss–Kuzmin–Wirsing operator.** Let
+Let
 $D = \{z \in \mathbb{C} : |z - 1| < 3/2\}$ be the Mayer disk. A complex number $\lambda$ is a
 holomorphic eigenvalue of the Gauss–Kuzmin–Wirsing operator when there is a function
 $f : \mathbb{C} \to \mathbb{C}$, holomorphic on $D$ and not identically zero on $D$, such that

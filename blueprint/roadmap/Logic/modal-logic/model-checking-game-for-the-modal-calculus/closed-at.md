@@ -1,6 +1,6 @@
 # Formulas closed at depth $d$
 
-**Formulas closed at depth $d$.** Closedness of a μ-calculus formula $\varphi$ (with de Bruijn
+Closedness of a μ-calculus formula $\varphi$ (with de Bruijn
 variables) at a depth $d \in \mathbb{N}$ is defined by recursion on $\varphi$: atoms, negated
 atoms, $\bot$ and $\top$ are closed at every depth; the variable with index $n$ is closed at
 depth $d$ exactly when $n < d$; $\varphi \wedge \psi$ and $\varphi \vee \psi$ are closed at

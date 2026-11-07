@@ -1,6 +1,6 @@
 # Negative-index Perrin numbers equal to plus or minus a negative-index Perrin square
 
-**Negative-index Perrin numbers equal to plus or minus a negative-index Perrin square.** Let
+Let
 $R_{-k}$ denote the Perrin sequence extended to negative indices. The pairs of positive integers
 $(n, m)$ with $R_{-n} = R_{-m}^2$ or $R_{-n} = -R_{-m}^2$ are exactly the pairs with
 $n, m \in \{1, 2, 7, 11, 29\}$, together with $(5, 3)$, $(5, 6)$, $(5, 20)$, $(18, 8)$ and

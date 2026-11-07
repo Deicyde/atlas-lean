@@ -1,6 +1,6 @@
 # Asymptotics of type I alternating hyperharmonic numbers
 
-**Asymptotics of type I alternating hyperharmonic numbers.** For real $s$ let
+For real $s$ let
 $H_n^{(s)} = \sum_{i=1}^{n} 1/i^s$ be the generalized harmonic numbers, and let the type I
 generalized alternating hyperharmonic numbers be $H_n^{(s,1,1)} = H_n^{(s)}$ and
 $H_n^{(s,r+1,1)} = \sum_{k=1}^{n} (-1)^{k-1} H_k^{(s,r,1)}$. Let $y \ge 1$ and $p \ge 2$ be natural

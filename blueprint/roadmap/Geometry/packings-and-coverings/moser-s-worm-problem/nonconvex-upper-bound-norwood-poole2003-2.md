@@ -1,6 +1,6 @@
 # A Norwood–Poole cover bounds the nonconvex worm cover constant
 
-**A Norwood–Poole cover bounds the nonconvex worm cover constant.** Call a nonempty set
+Call a nonempty set
 $\Omega \subseteq \mathbb{C}$ a universal cover if every continuous curve
 $\gamma : [0, 1] \to \mathbb{C}$ of length exactly $1$ can be moved into $\Omega$ by some rotation
 followed by a translation, and let the nonconvex worm cover constant be the infimum of the areas

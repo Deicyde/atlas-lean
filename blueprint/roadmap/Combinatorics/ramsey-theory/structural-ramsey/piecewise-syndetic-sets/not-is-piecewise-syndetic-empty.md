@@ -1,6 +1,6 @@
 # The empty set is not piecewise syndetic
 
-**The empty set is not piecewise syndetic.** For every $t \in \mathbb{N}$, the empty
+For every $t \in \mathbb{N}$, the empty
 subset of $\mathbb{N}^t$ is not piecewise syndetic.
 
 ## Sources

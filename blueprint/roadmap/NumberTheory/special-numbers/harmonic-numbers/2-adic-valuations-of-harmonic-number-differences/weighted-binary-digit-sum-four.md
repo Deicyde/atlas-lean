@@ -1,6 +1,6 @@
 # Weighted binary digit sum of 4
 
-**Weighted binary digit sum of 4.** The weighted binary digit sum of $4$ is $a(4) = 8$.
+The weighted binary digit sum of $4$ is $a(4) = 8$.
 
 ## Sources
 

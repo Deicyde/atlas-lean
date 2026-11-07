@@ -1,6 +1,6 @@
 # Mean-field (CAVI) update of the first factor
 
-**Mean-field (CAVI) update of the first factor.** Let $A$ and $B$ be finite sets, let
+Let $A$ and $B$ be finite sets, let
 $p : A \times B \to \mathbb{R}$ be a joint and let $q_2 : B \to \mathbb{R}$. The
 coordinate-ascent update of the first factor is the function $q_1 : A \to \mathbb{R}$ given by
 

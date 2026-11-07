@@ -1,6 +1,6 @@
 # The decoder, by cases on the tag
 
-**The decoder, by cases on the tag.** Write $\langle t, p \rangle$ for the pairing of natural
+Write $\langle t, p \rangle$ for the pairing of natural
 numbers used by the Gödel numbering of oracle codes, $(p_1, p_2)$ for the unpairing of $p$ (so that
 $\langle p_1, p_2 \rangle = p$), and $\mathrm{dec}(n)$ for the result of the computable decoder on
 $n$, which is either an oracle code or undefined. Then for all natural numbers $t$ and $p$, the

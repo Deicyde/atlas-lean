@@ -1,6 +1,6 @@
 # The empty block-sum count
 
-**The empty block-sum count.** For every list $L$ of natural numbers, $C_0 = 1$, where $C_n$
+For every list $L$ of natural numbers, $C_0 = 1$, where $C_n$
 is the number of sums of disjoint proper $L^*$-blocks with support intervals inside $[1, n]$:
 for $n = 0$ the zero function is the only such sum.
 

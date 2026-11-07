@@ -1,6 +1,6 @@
 # Power saving for continuous Turán numbers of finite patterns in $\mathbb{R}^d$
 
-**Power saving for continuous Turán numbers of finite patterns in $\mathbb{R}^d$.** Let $d$
+Let $d$
 be a natural number and let $P \subseteq \mathbb{R}^d$ be finite. Then there is a real number
 $\varepsilon > 0$ such that the $d$-dimensional continuous Turán number satisfies
 $\mathrm{opx}(n, P, d) = O(n^{d - \varepsilon})$ as the natural number $n$ tends to infinity.

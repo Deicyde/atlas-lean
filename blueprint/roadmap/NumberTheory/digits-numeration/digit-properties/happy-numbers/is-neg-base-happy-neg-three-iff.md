@@ -1,6 +1,6 @@
 # Happy numbers in base $-3$
 
-**Happy numbers in base $-3$.** There is an integer $n$ such that $n + 2i$ is $(-3)$-happy for
+There is an integer $n$ such that $n + 2i$ is $(-3)$-happy for
 every natural number $i$, and an integer $a$ is $(-3)$-happy if and only if $a \equiv 1 \pmod 2$.
 
 This is part (2) of the Grundman–Harris theorem.

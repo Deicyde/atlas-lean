@@ -1,6 +1,6 @@
 # The degeneralization counter crosses every value below its target
 
-**The degeneralization counter crosses every value below its target.** Let $g$ be a
+Let $g$ be a
 generalized Büchi automaton with acceptance sets $F_0, \dots, F_{k-1}$ and counter update
 $\mathrm{next}$, let $s$ be an infinite sequence of states, and let $c_0, c_1, \dots$ be any
 sequence in $\{0, \dots, k\}$ with $c_{n+1} = \mathrm{next}(c_n, s_{n+1})$ for every $n$. Let

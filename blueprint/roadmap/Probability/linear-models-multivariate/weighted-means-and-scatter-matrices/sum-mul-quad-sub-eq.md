@@ -1,6 +1,6 @@
 # The bias-variance split of a weighted quadratic form
 
-**The bias-variance split of a weighted quadratic form.** Let $I$ and $J$ be finite sets, let
+Let $I$ and $J$ be finite sets, let
 $x_i \in \mathbb{R}^J$ ($i \in I$) be points with real weights $w_i$ such that $\sum_i w_i \ne 0$,
 let $m$ be their weighted mean, let $A$ be a symmetric real $J \times J$ matrix, and let
 $\mu \in \mathbb{R}^J$. Then

@@ -1,6 +1,6 @@
 # Deletion from a binary search tree
 
-**Deletion from a binary search tree.** Let $x$ be a key of a linearly ordered type. Deleting $x$
+Let $x$ be a key of a linearly ordered type. Deleting $x$
 from the empty tree gives the empty tree. Deleting $x$ from a tree with root key $k$, left subtree
 $L$ and right subtree $R$ gives the tree with root key $k$, left subtree $L$ with $x$ deleted and
 right subtree $R$ if $x < k$; the tree with root key $k$, left subtree $L$ and right subtree $R$

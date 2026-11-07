@@ -1,6 +1,6 @@
 # Program of the readout machine
 
-**Program of the readout machine.** The readout machine pops the bits of its input stack
+The readout machine pops the bits of its input stack
 $X$ one at a time and compares them with $\mathrm{true}, \mathrm{true}, \mathrm{true},
 \mathrm{false}$, which encode, at the output of the clocked universal machine, a halt whose
 output is the single symbol of the bit $\mathrm{true}$. If the input is exactly this list, it

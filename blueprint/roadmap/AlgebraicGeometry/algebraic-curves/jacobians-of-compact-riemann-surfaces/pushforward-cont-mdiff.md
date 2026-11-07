@@ -1,6 +1,6 @@
 # The pushforward on Jacobians is holomorphic
 
-**The pushforward on Jacobians is holomorphic.** Let $X$ and $Y$ be compact Riemann surfaces,
+Let $X$ and $Y$ be compact Riemann surfaces,
 that is, compact, connected, Hausdorff complex-analytic manifolds of dimension one, of genera
 $g_X$ and $g_Y$. The Jacobian $J(X)$ of $X$ is a complex-analytic manifold modeled on
 $\mathbb{C}^{g_X}$, and likewise $J(Y)$ on $\mathbb{C}^{g_Y}$. For every holomorphic map

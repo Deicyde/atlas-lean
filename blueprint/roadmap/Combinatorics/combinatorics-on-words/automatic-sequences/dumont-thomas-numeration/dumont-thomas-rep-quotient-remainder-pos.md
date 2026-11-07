@@ -1,6 +1,6 @@
 # Quotient and remainder for positive Dumont–Thomas representations
 
-**Quotient and remainder for positive Dumont–Thomas representations.** Let $\eta$ be a
+Let $\eta$ be a
 substitution and let $u$ be a two-sided periodic point of $\eta$ with least period $p$ whose
 seed letters $u_{-1}$ and $u_0$ are growing, that is, $|\eta^j(u_{-1})|$ and $|\eta^j(u_0)|$
 tend to infinity with $j$. Let $N \ge 1$, let $k$ be a multiple of $p$, and let

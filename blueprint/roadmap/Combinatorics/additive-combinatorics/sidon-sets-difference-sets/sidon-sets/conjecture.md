@@ -1,6 +1,6 @@
 # Erdős Problem 152 on isolated sums of Sidon sets
 
-**Erdős Problem 152 on isolated sums of Sidon sets.** A finite set $A$ of natural numbers is
+A finite set $A$ of natural numbers is
 a Sidon set when $a + b = c + d$ with $a, b, c, d \in A$ implies $\{a, b\} = \{c, d\}$, and its
 sumset is $A + A = \{x + y : x, y \in A\}$. An element $s$ of a finite set $S$ of natural numbers
 is isolated in $S$ when $s + 1 \notin S$ and either $s = 0$ or $s - 1 \notin S$. The proposition

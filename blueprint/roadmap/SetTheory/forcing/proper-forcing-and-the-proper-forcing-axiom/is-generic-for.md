@@ -1,6 +1,6 @@
 # (M, ℙ)-generic conditions
 
-**(M, ℙ)-generic conditions.** Let $\mathbb{P}$ be a partial order and $M$ a subset of the
+Let $\mathbb{P}$ be a partial order and $M$ a subset of the
 disjoint union $\mathbb{P} \sqcup \mathcal{P}(\mathbb{P})$. Write $M_c$ for the set of
 $p \in \mathbb{P}$ whose copy in the disjoint union lies in $M$, and $M_s$ for the set of
 $D \subseteq \mathbb{P}$ whose copy lies in $M$. A condition $q \in \mathbb{P}$ is

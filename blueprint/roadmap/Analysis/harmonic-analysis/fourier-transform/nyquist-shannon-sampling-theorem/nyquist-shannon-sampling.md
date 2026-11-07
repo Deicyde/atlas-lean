@@ -1,6 +1,6 @@
 # Nyquist–Shannon sampling theorem (Whittaker–Shannon interpolation formula)
 
-**Nyquist–Shannon sampling theorem (Whittaker–Shannon interpolation formula).** Let
+Let
 $\operatorname{sinc}(x) = \frac{\sin x}{x}$ for real $x \neq 0$ and $\operatorname{sinc}(0) = 1$,
 and let $f \colon \mathbb{R} \to \mathbb{C}$ be a Schwartz function whose Fourier transform
 $\hat f(\xi) = \int_{\mathbb{R}} f(x)\, e^{-2\pi i x \xi}\, dx$ vanishes at every real $\xi$

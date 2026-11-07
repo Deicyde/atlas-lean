@@ -1,6 +1,6 @@
 # Average distance from square pyramidal numbers to the nearest square
 
-**Average distance from square pyramidal numbers to the nearest square.** Let $a_n$ be the
+Let $a_n$ be the
 distance from the $n$-th square pyramidal number to the nearest square, and for real $x \ge 1$
 let $A(x) = \frac{1}{x} \sum_{1 \le n \le x} a_n$. There is a real constant $C$ such that for
 every real $x \ge 1$,

@@ -1,6 +1,6 @@
 # Window condition for metered parking functions
 
-**Window condition for metered parking functions.** Number the cars $1, \dots, m$ and the
+Number the cars $1, \dots, m$ and the
 spots $1, \dots, n$, and let $a_k$ be the preferred spot of car $k$. If $(a_1, \dots, a_m)$ is a
 $t$-metered $(m, n)$-parking function, then for every $i$ with $1 \le i \le n$ and every $j$ with
 $1 \le j \le m - t$ (truncated subtraction, so there is no such $j$ when $m \le t$),

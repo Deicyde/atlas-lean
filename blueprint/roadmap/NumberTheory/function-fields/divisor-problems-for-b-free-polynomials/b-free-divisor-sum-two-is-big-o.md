@@ -1,6 +1,6 @@
 # Asymptotic for the $B_\kappa$-free sum of the divisor function
 
-**Asymptotic for the $B_\kappa$-free sum of the divisor function.** Let $F$ be a finite field
+Let $F$ be a finite field
 with $q$ elements and let $\kappa$ assign to each polynomial in $F[T]$ a natural number, with
 $\kappa(P) \ge 2$ for every monic irreducible $P$. A polynomial $f$ is $B_\kappa$-free when
 $P^{\kappa(P)}$ does not divide $f$ for any monic irreducible $P$; $d_2(f)$ is the number of

@@ -1,6 +1,6 @@
 # West's stack-sorting map
 
-**West's stack-sorting map.** For a finite sequence $\pi$ of natural numbers, $s(\pi)$ is
+For a finite sequence $\pi$ of natural numbers, $s(\pi)$ is
 computed with a stack that starts empty. The entries of $\pi$ are read from left to right; before
 the next entry $x$ is pushed, the fewest entries are popped from the top of the stack so that the
 stack with $x$ on top, read from top to bottom, avoids the pattern $21$, and the popped entries

@@ -1,6 +1,6 @@
 # Order-three conditions for Runge–Kutta methods
 
-**Order-three conditions for Runge–Kutta methods.** An explicit Runge–Kutta method with
+An explicit Runge–Kutta method with
 tableau $a$, weights $b$ and nodes $c_i = \sum_j a_{ij}$ satisfies the order-three
 conditions when it satisfies the order-two conditions $\sum_i b_i = 1$ and
 $\sum_i b_i c_i = \frac{1}{2}$, and moreover $\sum_i b_i c_i^2 = \frac{1}{3}$ and

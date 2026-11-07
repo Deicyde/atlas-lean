@@ -1,6 +1,6 @@
 # Labbé's palindromic fixed point outside class P
 
-**Labbé's palindromic fixed point outside class P.** The conjecture holds: there exist a
+The conjecture holds: there exist a
 primitive morphism $\varphi$ on the alphabet $\{0, 1, 2\}$ (some power $\varphi^n$ maps every letter
 to a word containing every letter) and an infinite word $u$ such that $u$ is a fixed point of
 $\varphi$, $u$ is palindromic (it has arbitrarily long palindromic factors) and uniformly recurrent

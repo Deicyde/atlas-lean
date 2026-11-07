@@ -1,6 +1,6 @@
 # The empty set has no elements up to any bound
 
-**The empty set has no elements up to any bound.** For every real number $x$, the finite set
+For every real number $x$, the finite set
 of elements $n$ of the empty set with $1 \le n \le x$ is empty.
 
 ## Sources

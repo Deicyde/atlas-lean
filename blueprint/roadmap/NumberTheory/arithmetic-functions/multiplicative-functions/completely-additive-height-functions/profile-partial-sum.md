@@ -1,6 +1,6 @@
 # Cumulative profile
 
-**Cumulative profile.** For a sequence $\pi : \mathbb{N} \to \mathbb{N}$ and a natural number
+For a sequence $\pi : \mathbb{N} \to \mathbb{N}$ and a natural number
 $k$, the cumulative profile is $\Pi_k = \sum_{j=1}^{k} \pi_j$. The value $\pi_0$ is not used, and
 $\Pi_0 = 0$.
 

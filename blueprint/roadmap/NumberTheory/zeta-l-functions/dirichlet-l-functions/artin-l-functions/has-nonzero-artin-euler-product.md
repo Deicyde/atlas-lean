@@ -1,6 +1,6 @@
 # Nonzero convergent Artin Euler product
 
-**Nonzero convergent Artin Euler product.** Let $\rho$ be a representation of a finite group
+Let $\rho$ be a representation of a finite group
 $G$ on a finite-dimensional complex vector space $V$, let $d_p$ be an Artin local datum for $G$ for
 every prime $p$, and let $s, z \in \mathbb{C}$. The Artin Euler product of $\rho$ and $(d_p)$ has
 nonzero value $z$ at $s$ when it has value $z$ at $s$ and $z \ne 0$.

@@ -1,6 +1,6 @@
 # Permutiples with a given digit permutation
 
-**Permutiples with a given digit permutation.** Let $n$, $b$ and $d_0, \dots, d_k$ be
+Let $n$, $b$ and $d_0, \dots, d_k$ be
 natural numbers and let $\sigma$ be a permutation of $\{0, \dots, k\}$. The numeral
 $(d_k, \dots, d_0)_b$ is an $(n, b, \sigma)$-permutiple when $d_j < b$ for every $j$ and
 

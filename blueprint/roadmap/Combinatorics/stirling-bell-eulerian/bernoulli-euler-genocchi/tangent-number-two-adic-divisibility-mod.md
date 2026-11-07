@@ -1,6 +1,6 @@
 # Tangent numbers: 2-adic divisibility and a congruence mod 6
 
-**Tangent numbers: 2-adic divisibility and a congruence mod 6.** Let $T \colon \mathbb{N} \to
+Let $T \colon \mathbb{N} \to
 \mathbb{Z}$ satisfy $T(0) = 0$ and, for every $m \in \mathbb{N}$,
 
 $$T(m+1) = [m = 0] - \sum_{k=0}^{m} \binom{m}{k} T(k)\, T(m-k),$$

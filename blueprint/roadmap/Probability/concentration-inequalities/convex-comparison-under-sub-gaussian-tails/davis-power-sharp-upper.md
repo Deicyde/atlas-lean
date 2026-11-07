@@ -1,6 +1,6 @@
 # Davis–Power upper bound: $c_0^2$ is an admissible variance factor
 
-**Davis–Power upper bound: $c_0^2$ is an admissible variance factor.** Let $c_0$ be the
+Let $c_0$ be the
 Davis–Power constant and $G$ a standard Gaussian. Then $c_0^2 > 0$, and every real random
 variable $X$ on a probability space that is measurable and integrable, has mean $0$ and satisfies
 $\mathbb{P}(|X| > t) \le 2e^{-t^2/2}$ for all $t \ge 0$ is dominated by $|c_0|\,G$ in the convex

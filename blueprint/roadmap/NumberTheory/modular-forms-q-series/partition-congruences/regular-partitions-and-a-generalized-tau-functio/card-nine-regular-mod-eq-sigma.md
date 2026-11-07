@@ -1,6 +1,6 @@
 # 9-regular partitions modulo 3 and the divisor sum
 
-**9-regular partitions modulo 3 and the divisor sum.** Let $R_9(m)$ denote the number of
+Let $R_9(m)$ denote the number of
 partitions of $m$ in which no part is divisible by $9$, and let $\sigma(m)$ be the sum of the
 positive divisors of $m$. For every positive integer $n$, $R_9(n) \equiv \sigma(3n + 1) \pmod 3$.
 

@@ -1,6 +1,6 @@
 # Number of occupied vertices
 
-**Number of occupied vertices.** Let $V$ be a finite set and let $\sigma$ assign a domination
+Let $V$ be a finite set and let $\sigma$ assign a domination
 state (uncovered, covered or occupied) to each element of $V$. The occupied count
 $\operatorname{occ}(\sigma)$ is the number of elements $i \in V$ such that $\sigma(i)$ is occupied.
 

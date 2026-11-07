@@ -1,6 +1,6 @@
 # Ramanujan's function $k(q)$
 
-**Ramanujan's function $k(q)$.** For a complex number $q$, Ramanujan's function is
+For a complex number $q$, Ramanujan's function is
 
 $$
 k(q) = \frac{q\,(q;q^{10})_\infty (q^2;q^{10})_\infty (q^8;q^{10})_\infty (q^9;q^{10})_\infty}

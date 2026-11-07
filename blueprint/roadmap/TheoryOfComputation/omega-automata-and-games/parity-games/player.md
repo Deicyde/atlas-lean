@@ -1,6 +1,6 @@
 # Players of a parity game
 
-**Players of a parity game.** A parity game has exactly two players, the even player and the
+A parity game has exactly two players, the even player and the
 odd player.
 
 The even player is the one who wins the plays whose largest priority occurring infinitely often

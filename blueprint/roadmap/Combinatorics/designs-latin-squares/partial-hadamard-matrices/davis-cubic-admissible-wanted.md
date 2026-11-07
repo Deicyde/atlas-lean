@@ -1,6 +1,6 @@
 # Partial Hadamard counts follow the leading term above the cubic scale
 
-**Partial Hadamard counts follow the leading term above the cubic scale.** The exponent $3$ is
+The exponent $3$ is
 admissible for the partial Hadamard leading term. That is, let $N_{n,m}$ be the number of
 $n \times m$ partial Hadamard matrices and let
 $A_{n,4t} = 2^{4nt + (n-1)^2} (8\pi t)^{-n(n-1)/4}$ be the de Launey–Levin leading term. Then for

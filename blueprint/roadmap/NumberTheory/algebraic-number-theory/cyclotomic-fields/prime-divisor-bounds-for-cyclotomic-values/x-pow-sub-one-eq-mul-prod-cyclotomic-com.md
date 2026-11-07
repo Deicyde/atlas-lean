@@ -1,6 +1,6 @@
 # Factorization into composed cyclotomic polynomials
 
-**Factorization into composed cyclotomic polynomials.** Let $x$ be the indeterminate of the
+Let $x$ be the indeterminate of the
 polynomial ring $\mathbb{Z}[x]$. Let $m$ be a natural number, let $p_1, \dots, p_m$ be primes,
 not necessarily distinct, let $a_1, \dots, a_m$ be natural numbers, and put
 $n = \prod_{i=1}^m p_i^{a_i}$. For $1 \le i \le m$ let $x_i = x^{N_i}$ with

@@ -1,6 +1,6 @@
 # Möbius sum for Jordan's totient
 
-**Möbius sum for Jordan's totient.** For all natural numbers $k$ and $n \neq 0$, the Jordan
+For all natural numbers $k$ and $n \neq 0$, the Jordan
 totient function satisfies, as an identity of integers,
 
 $$J_k(n) = \sum_{d \mid n} \mu(n/d)\, d^k,$$

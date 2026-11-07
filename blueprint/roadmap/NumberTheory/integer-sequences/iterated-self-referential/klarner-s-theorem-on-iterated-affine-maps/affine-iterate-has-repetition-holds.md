@@ -1,6 +1,6 @@
 # Klarner's theorem (Erdős Problem 481)
 
-**Klarner's theorem (Erdős Problem 481).** For every $r \in \mathbb{N}$ and all maps
+For every $r \in \mathbb{N}$ and all maps
 $a, b : \{0, \dots, r - 1\} \to \mathbb{N}$ with $a_i \ge 1$ for every $i$ and
 $\sum_{i < r} 1 / a_i > 1$, let $T$ send a finite sequence $(x_1, \dots, x_n)$ of natural numbers
 to the sequence of all $a_i x_j + b_i$, listed in blocks for $i = 0, 1, \dots, r - 1$. Then,

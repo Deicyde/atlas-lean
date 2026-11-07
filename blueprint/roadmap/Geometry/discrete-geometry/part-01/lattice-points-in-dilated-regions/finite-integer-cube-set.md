@@ -1,6 +1,6 @@
 # Dilated Lipschitz images meet finitely many integer cubes
 
-**Dilated Lipschitz images meet finitely many integer cubes.** Let $d$ and $n$ be natural
+Let $d$ and $n$ be natural
 numbers, let $K \ge 0$, and let $f$ be a $K$-Lipschitz map from the unit cube $[0, 1]^d$ to
 $\mathbb{R}^n$, both carrying the sup distance. For every real $t \ge 1$, the integer cube set of
 $f$ at scale $t$ is finite.

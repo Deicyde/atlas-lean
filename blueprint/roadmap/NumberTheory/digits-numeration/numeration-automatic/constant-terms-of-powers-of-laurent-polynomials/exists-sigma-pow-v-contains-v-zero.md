@@ -1,6 +1,6 @@
 # Return to the initial coefficient vector modulo $p$
 
-**Return to the initial coefficient vector modulo $p$.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $m \in \mathbb{N}$, and let $P$ be a Laurent polynomial with integer coefficients in variables
 $x_1, \dots, x_r$ with $\deg P \le m + 1$, where $\deg P$ is the largest absolute value of an
 exponent of a single variable in a monomial occurring in $P$ (and $0$ if $P = 0$). Let

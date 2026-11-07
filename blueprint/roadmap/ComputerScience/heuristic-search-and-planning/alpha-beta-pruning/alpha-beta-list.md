@@ -1,6 +1,6 @@
 # Alpha-beta scan of the children
 
-**Alpha-beta scan of the children.** Given the player $p$ to move, values $a$ and $b$ in a
+Given the player $p$ to move, values $a$ and $b$ in a
 linear order and a list of game trees (the children of a position), the scan runs alpha-beta
 pruning for the other player on the children in order, each time with the current bounds $a$ and
 $b$. The maximizer replaces $a$ by $\max(a, v)$, where $v$ is the child's returned value, and

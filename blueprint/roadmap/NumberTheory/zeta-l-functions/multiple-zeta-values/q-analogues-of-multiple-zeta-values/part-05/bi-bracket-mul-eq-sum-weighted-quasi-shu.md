@@ -1,6 +1,6 @@
 # Bi-brackets form a quasi-shuffle algebra
 
-**Bi-brackets form a quasi-shuffle algebra.** Let $u$ and $v$ be words in the letters $z_{k,d}$,
+Let $u$ and $v$ be words in the letters $z_{k,d}$,
 indexed by pairs $(k, d)$ of natural numbers, with $k \ge 1$ in every letter. Write
 $\sum_w c_w w$ for the quasi-shuffle product of $u$ and $v$ induced by Bachmann's letter product
 $\boxtimes$, a formal $\mathbb{Q}$-linear combination of words, and $g(w)$ for the bi-bracket of a

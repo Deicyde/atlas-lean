@@ -1,6 +1,6 @@
 # Erdős–Anning theorem
 
-**Erdős–Anning theorem.** An infinite set of points in the plane with pairwise
+An infinite set of points in the plane with pairwise
 integer distances is collinear.
 
 ## Sources

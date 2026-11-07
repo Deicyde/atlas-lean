@@ -1,6 +1,6 @@
 # Upper bound for capacity three
 
-**Upper bound for capacity three.** Let $T_3(n)$ be the optimal crossing time of $n$ people
+Let $T_3(n)$ be the optimal crossing time of $n$ people
 with crossing times $1, \dots, n$ on a bridge of capacity $3$ with one torch. For every
 $n \ge 7$,
 

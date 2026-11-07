@@ -1,6 +1,6 @@
 # Hamiltonian cycles of the source graph give zero-cost tours
 
-**Hamiltonian cycles of the source graph give zero-cost tours.** Let $G$ be a simple graph on
+Let $G$ be a simple graph on
 the vertex set $\{0, \dots, n-1\}$, let $x$ be a Boolean array of length $n^2$ such that for all
 $i, j < n$ the cell of $x$ at index $in + j$ exists and is true exactly when $i$ and $j$ are
 adjacent in $G$, and let $y$ be the array output by the Hamiltonian-cycle to TSP converter on $x$,

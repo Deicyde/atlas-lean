@@ -1,6 +1,6 @@
 # Words with equal recognizer images are syntactically equivalent
 
-**Words with equal recognizer images are syntactically equivalent.** Let
+Let
 $\varphi : \Sigma^* \to M$ be a monoid morphism from the free monoid on an alphabet $\Sigma$ into
 a monoid $M$ that recognizes a language $L$ over $\Sigma$ through a set $A \subseteq M$. If two
 words $x, y \in \Sigma^*$ satisfy $\varphi(x) = \varphi(y)$, then $x$ and $y$ are syntactically

@@ -1,6 +1,6 @@
 # Alternating binomial sum of Fibonacci numbers
 
-**Alternating binomial sum of Fibonacci numbers.** Let $F_m$ denote the $m$-th Fibonacci
+Let $F_m$ denote the $m$-th Fibonacci
 number, with $F_0 = 0$ and $F_1 = 1$. For all natural numbers $n$ and $k$,
 
 $$\sum_{i=0}^{n} (-1)^i \binom{n}{i} F_{2n-i+k} = F_k.$$

@@ -1,6 +1,6 @@
 # Rainbow-free colorings of $\mathbb{Z}/p\mathbb{Z}$ for $x - y = z^k$
 
-**Rainbow-free colorings of $\mathbb{Z}/p\mathbb{Z}$ for $x - y = z^k$.** Let $p$ be a prime,
+Let $p$ be a prime,
 $k$ a natural number, and $c$ a coloring of $\mathbb{Z}/p\mathbb{Z}$ by three colors that uses
 all three. Then $c$ has no solution of $x - y = z^k$ in $\mathbb{Z}/p\mathbb{Z}$ with $c(x)$,
 $c(y)$, $c(z)$ pairwise distinct if and only if the following three conditions hold: $0$ is the

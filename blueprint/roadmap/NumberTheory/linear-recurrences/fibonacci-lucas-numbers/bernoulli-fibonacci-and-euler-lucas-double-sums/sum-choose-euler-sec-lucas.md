@@ -1,6 +1,6 @@
 # A binomial sum of Euler and Lucas numbers
 
-**A binomial sum of Euler and Lucas numbers.** Let $L_n$ be the Lucas numbers and let $E_k$
+Let $L_n$ be the Lucas numbers and let $E_k$
 be the Euler (secant) numbers, given by $2/(e^t + e^{-t}) = \sum_{k \ge 0} E_k t^k / k!$. For
 every natural number $n$,
 

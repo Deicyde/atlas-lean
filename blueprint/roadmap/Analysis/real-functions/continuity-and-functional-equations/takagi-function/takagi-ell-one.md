@@ -1,6 +1,6 @@
 # The first Takagi coefficient vanishes
 
-**The first Takagi coefficient vanishes.** For every natural number $n$ and every integer $k$,
+For every natural number $n$ and every integer $k$,
 the Takagi coefficient $\ell_1(n, k)$ is $0$.
 
 ## Sources

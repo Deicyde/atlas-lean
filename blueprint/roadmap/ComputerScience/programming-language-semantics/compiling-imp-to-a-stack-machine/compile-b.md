@@ -1,6 +1,6 @@
 # Compilation of Boolean expressions
 
-**Compilation of Boolean expressions.** The compiled code of a Boolean expression is the list
+The compiled code of a Boolean expression is the list
 of stack-machine instructions defined by recursion, using the compiled code of arithmetic
 expressions: the truth value true compiles to the single instruction push $1$ and false to push
 $0$; the test $a_1 = a_2$ (respectively $a_1 \le a_2$) compiles to the code of $a_1$, then the

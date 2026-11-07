@@ -1,6 +1,6 @@
 # The greedy action attains the Bellman maximum
 
-**The greedy action attains the Bellman maximum.** Let $M$ be a Markov decision process
+Let $M$ be a Markov decision process
 with a finite set of states $S$, a finite nonempty set of actions, and rewards $r(s,a)$ and
 transition probabilities $P(s,a,s')$ in a field $K$ with a linear order, and let $\gamma \in K$.
 For every $V : S \to K$ and every state $s$, the action $g$ that the greedy policy for $V$

@@ -1,6 +1,6 @@
 # Totalized principal $E_1$ kernel at zero
 
-**Totalized principal $E_1$ kernel at zero.** The totalized kernel
+The totalized kernel
 $\operatorname{Ein}(z) - \operatorname{Log} z - \gamma$, where $\operatorname{Ein}$ is the entire
 exponential integral, $\operatorname{Log}$ is the principal logarithm extended by
 $\operatorname{Log} 0 = 0$ and $\gamma$ is the Euler–Mascheroni constant, equals $-\gamma$ at

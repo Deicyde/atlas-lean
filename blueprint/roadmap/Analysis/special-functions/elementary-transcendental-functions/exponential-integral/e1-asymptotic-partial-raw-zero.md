@@ -1,6 +1,6 @@
 # Totalized partial sums of the $E_1$ expansion vanish at zero
 
-**Totalized partial sums of the $E_1$ expansion vanish at zero.** For every
+For every
 $n \in \mathbb{N}$, the totalized sum of the first $n$ terms of the asymptotic expansion of $E_1$
 equals $0$ at $z = 0$.
 

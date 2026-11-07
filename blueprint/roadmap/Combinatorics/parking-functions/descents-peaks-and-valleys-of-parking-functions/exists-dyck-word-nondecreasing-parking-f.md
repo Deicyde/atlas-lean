@@ -1,6 +1,6 @@
 # Dyck words and nondecreasing parking functions
 
-**Dyck words and nondecreasing parking functions.** For every $n$ there is a map $g$ from Dyck
+For every $n$ there is a map $g$ from Dyck
 words to maps $\{0, \dots, n-1\} \to \{0, \dots, n-1\}$ such that, for every Dyck word $w$ of
 semilength $n$ and every $i < n$, $g(w)(i)$ is the number of down steps $D$ of $w$ before its
 $(i+1)$st up step $U$, and $g$ restricts to a bijection from the Dyck words of semilength $n$

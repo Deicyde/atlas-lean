@@ -1,6 +1,6 @@
 # Failure of the residue sequence detects non-integrality
 
-**Failure of the residue sequence detects non-integrality.** Let $k \ge 2$ and $r \ge 1$ be
+Let $k \ge 2$ and $r \ge 1$ be
 integers, let $p$ be a prime, write $\nu_p$ for the $p$-adic valuation, and let $n \ge 1$ be an
 integer with $\nu_p(n!) \le r$. Then the residue sequence $g_{k,p,r}$ takes the failure value $F$
 at $n$, that is $g_{k,p,r}(n) = F$, if and only if the value $g_{k,2}(n)$ of the $(k, 2)$-Göbel

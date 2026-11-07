@@ -1,6 +1,6 @@
 # Kronecker symbol at odd primes for integers congruent to 1 mod 4
 
-**Kronecker symbol at odd primes for integers congruent to 1 mod 4.** Let $D$ be an integer
+Let $D$ be an integer
 with $D \equiv 1 \pmod 4$ and let $p$ be an odd prime. Then the Jacobi symbol
 $\left(\frac{p}{|D|}\right)$ equals the Kronecker symbol $\left(\frac{D}{p}\right)$.
 

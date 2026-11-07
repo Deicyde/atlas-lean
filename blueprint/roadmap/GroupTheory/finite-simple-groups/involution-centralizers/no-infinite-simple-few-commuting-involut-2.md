@@ -1,6 +1,6 @@
 # An infinite simple group with an involution commuting with few involutions
 
-**An infinite simple group with an involution commuting with few involutions.** There exist a
+There exist a
 natural number $n$ and an infinite simple group $G$ containing an involution $t$ that commutes
 with at most $n$ involutions of $G$ (counting $t$ itself). This answers Kourovka Problem 11.96(b)
 in the negative.

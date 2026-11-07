@@ -1,6 +1,6 @@
 # Initial value of the first-kind (p, q)-Lucas polynomials
 
-**Initial value of the first-kind (p, q)-Lucas polynomials.** Let $R$ be a commutative
+Let $R$ be a commutative
 semiring, let $r$, $s$ and $m$ be natural numbers, and let $x, y, p, q \in R$. The first-kind
 $(p, q)$-analogue $V^{(r,s)}_n(x, y, p, q, m)$ of the $r$-Lucas polynomial of type $s$ satisfies
 $V^{(r,s)}_0(x, y, p, q, m) = s + 1$.

@@ -1,6 +1,6 @@
 # Grover step
 
-**Grover step.** Let $\alpha$ be a finite type and $M \subseteq \alpha$ a set of marked
+Let $\alpha$ be a finite type and $M \subseteq \alpha$ a set of marked
 elements. Write $O_M$ for the phase oracle, which negates the amplitudes at the points of $M$,
 and $D$ for inversion about the mean, which sends an amplitude vector $\varphi$ on $\alpha$ to
 $x \mapsto 2\bar\varphi - \varphi(x)$, where $\bar\varphi$ is the arithmetic mean of the amplitudes

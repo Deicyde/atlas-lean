@@ -1,6 +1,6 @@
 # Row two of the one-variable circuit array
 
-**Row two of the one-variable circuit array.** For every natural number $s \ge 2$, the
+For every natural number $s \ge 2$, the
 one-variable circuit array $C^X$, with entries in the field $\mathbb{Q}(X)$ of rational functions
 over $\mathbb{Q}$, satisfies
 $C^X_{2,s} = (c_{2,0}(s) - c_{2,1}(s) X + c_{2,2}(s) X^2)/(9^{s-2} X - 1)^2$, where

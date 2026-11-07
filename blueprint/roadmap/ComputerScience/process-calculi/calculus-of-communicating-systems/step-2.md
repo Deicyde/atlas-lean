@@ -1,6 +1,6 @@
 # Transitions of recursive CCS
 
-**Transitions of recursive CCS.** Let the channel names have decidable equality and let
+Let the channel names have decidable equality and let
 $\Delta$ be a recursive specification, assigning to each process constant $A$ its defining body
 $\Delta(A)$. The labelled transition relation $P \xrightarrow{\alpha} P'$ relative to $\Delta$ on
 recursive CCS processes, with actions $\alpha$ the CCS labels (silent $\tau$, inputs and outputs),

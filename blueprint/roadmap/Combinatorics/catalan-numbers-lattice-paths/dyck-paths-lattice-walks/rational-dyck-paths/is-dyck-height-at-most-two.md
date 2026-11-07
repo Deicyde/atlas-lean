@@ -1,6 +1,6 @@
 # Dyck words of height at most $2$
 
-**Dyck words of height at most $2$.** A Dyck word has height at most $2$ when no prefix of it
+A Dyck word has height at most $2$ when no prefix of it
 has more than two more up steps $U$ than down steps $D$.
 
 ## Sources

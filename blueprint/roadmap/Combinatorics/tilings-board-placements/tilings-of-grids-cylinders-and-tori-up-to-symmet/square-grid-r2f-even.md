@@ -1,6 +1,6 @@
 # Square-grid tilings fixed by the reflection $r^2 f$ for even $n$
 
-**Square-grid tilings fixed by the reflection $r^2 f$ for even $n$.** Let $n$ be an even
+Let $n$ be an even
 positive integer, let $T$ be a finite set and let $\sigma$ be a permutation of $T$ with
 $\sigma^2 = 1$. Let $r^2 f$ be the reflection of the grid $(\mathbb{Z}/n\mathbb{Z})^2$ given by
 $(r^2 f)(x, y) = (x, -1 - y)$. Then the number of maps $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$

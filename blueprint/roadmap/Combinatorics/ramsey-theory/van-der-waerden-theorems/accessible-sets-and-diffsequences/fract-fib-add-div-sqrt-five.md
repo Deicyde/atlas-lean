@@ -1,6 +1,6 @@
 # Fractional parts of shifted Fibonacci numbers divided by $\sqrt{5}$
 
-**Fractional parts of shifted Fibonacci numbers divided by $\sqrt{5}$.** Let $F_n$ be the
+Let $F_n$ be the
 $n$-th Fibonacci number, with $F_0 = 0$ and $F_1 = 1$, let $\varphi = (1 + \sqrt{5})/2$ be the
 golden ratio, so that $2\varphi - 1 = \sqrt{5}$, and write $\{y\} = y - \lfloor y \rfloor$ for the
 fractional part. Let $n \ge 13$ be a natural number and $\varepsilon \in \{-4, 0, 4\}$, let

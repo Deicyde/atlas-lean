@@ -1,6 +1,6 @@
 # Specialized Stieltjes matrix
 
-**Specialized Stieltjes matrix.** Let $R$ be an additive monoid with one and let
+Let $R$ be an additive monoid with one and let
 $a, b, \lambda, \mu \in R$. The specialized Stieltjes matrix is the tridiagonal Stieltjes
 production matrix with $a_1 = a + \lambda$, $b_1 = b + \mu$ and the same $a$ and $b$: the infinite
 matrix $S$ with rows and columns indexed by $\mathbb{N} = \{0, 1, 2, \dots\}$ whose entries are

@@ -1,6 +1,6 @@
 # Stored keys of the suffix tree
 
-**Stored keys of the suffix tree.** For a list $s$ over $\alpha$, the stored keys of $s$ form
+For a list $s$ over $\alpha$, the stored keys of $s$ form
 the list of keys stored in the suffix tree of $s$, in stored sibling order.
 
 They are exactly the terminated suffixes. This concerns stored keys, not structural trie leaves:

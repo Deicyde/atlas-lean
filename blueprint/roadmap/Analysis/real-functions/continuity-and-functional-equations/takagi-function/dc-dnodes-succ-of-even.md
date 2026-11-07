@@ -1,6 +1,6 @@
 # Successor formula for the D-node count at even arguments
 
-**Successor formula for the D-node count at even arguments.** Let $\delta$ be the
+Let $\delta$ be the
 divide-and-conquer D-node count and $s_1(n)$ the number of ones in the binary expansion of $n$.
 For every even integer $n > 0$, $\delta(n+1) = \delta(n) + \lfloor \log_2 n \rfloor - 2 s_1(n) + 2$.
 

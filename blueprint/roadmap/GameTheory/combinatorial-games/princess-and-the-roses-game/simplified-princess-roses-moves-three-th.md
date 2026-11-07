@@ -1,6 +1,6 @@
 # A terminal position of simplified P&R
 
-**A terminal position of simplified P&R.** In simplified Princess and the Roses, the
+In simplified Princess and the Roses, the
 position $(3, 3, 3, 0)$ has no options.
 
 ## Sources

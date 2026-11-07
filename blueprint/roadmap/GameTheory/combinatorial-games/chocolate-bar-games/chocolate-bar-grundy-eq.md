@@ -1,6 +1,6 @@
 # Mex recursion for the Grundy number of a chocolate bar
 
-**Mex recursion for the Grundy number of a chocolate bar.** Let $f_1, \dots, f_s$ be
+Let $f_1, \dots, f_s$ be
 functions $\mathbb{N} \to \mathbb{N}$ and write $G(x, z)$ for the Grundy number of the chocolate
 bar with coordinates $x = (x_1, \dots, x_s) \in \mathbb{N}^s$ and width $z \in \mathbb{N}$. For
 all $x$ and $z$, $G(x, z)$ is the least natural number $m$ such that $m \ne G(x', z)$ for every

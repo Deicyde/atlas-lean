@@ -1,6 +1,6 @@
 # Generating function for restricted smooth words ending in their largest letter
 
-**Generating function for restricted smooth words ending in their largest letter.** For
+For
 $i \ge 1$, let $s^*(n, i; q)$ be the capacity distribution of the restricted smooth words of
 length $n$ that end in $i$ and all of whose letters are at most $i$. For $j \ge 1$, let
 $t^*(m, j; q) = \sum_w q^{w_1 + \cdots + w_m}$, the sum over the words $w = w_1 \cdots w_m$ over

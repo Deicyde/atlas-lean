@@ -1,6 +1,6 @@
 # Quadratic upper bound for polygonal numbers
 
-**Quadratic upper bound for polygonal numbers.** For a natural number $s > 3$ and a natural
+For a natural number $s > 3$ and a natural
 number $x$, let $P_s(x) = (s-2)\binom{x}{2} + x$ be the $x$-th $s$-gonal number. For every natural
 number $c$ there is a natural number $A$ such that $2 P_s(2cx) \le A x^2$ for every natural
 number $x \ge 1$.

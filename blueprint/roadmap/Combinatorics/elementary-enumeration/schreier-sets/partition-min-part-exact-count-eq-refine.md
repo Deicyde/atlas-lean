@@ -1,6 +1,6 @@
 # Partitions with a fixed number of large parts and refined Schreier sets
 
-**Partitions with a fixed number of large parts and refined Schreier sets.** Let $n$,
+Let $n$,
 $\ell$ and $k$ be natural numbers with $n \ge \ell + 1$ and $k \ge 2$. Let $F_{n,\ell}$ be the
 family of finite sets $A$ of natural numbers such that $A$ has largest element $n + 1$ and at
 least three elements, $A$ is sparse (the differences of consecutive elements, in increasing

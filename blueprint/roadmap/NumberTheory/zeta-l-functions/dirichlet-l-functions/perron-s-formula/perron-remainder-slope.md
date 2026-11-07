@@ -1,6 +1,6 @@
 # Slope of the Perron remainder at the origin
 
-**Slope of the Perron remainder at the origin.** For every real $y$ and every complex
+For every real $y$ and every complex
 $h \neq 0$, the Perron remainder $R_y$ satisfies
 
 $$\frac{R_y(h) - R_y(0)}{h} = (\log y)^2 \int_0^1 t \, E_1(t h \log y)\,dt,$$

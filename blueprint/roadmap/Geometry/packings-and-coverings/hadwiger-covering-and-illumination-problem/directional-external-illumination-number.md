@@ -1,6 +1,6 @@
 # Directional and exterior-point illumination numbers are equal
 
-**Directional and exterior-point illumination numbers are equal.** For every $n \ge 1$ and
+For every $n \ge 1$ and
 every convex body $K \subseteq \mathbb{R}^n$, the directional illumination number of $K$ equals
 its exterior-point illumination number. These are the least $q$ such that some $q$ unit vectors,
 respectively some $q$ points outside $K$, illuminate $K$, with the value $\infty$ when no finite

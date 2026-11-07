@@ -1,6 +1,6 @@
 # Second bi-periodic Fibonacci number squared
 
-**Second bi-periodic Fibonacci number squared.** For elements $a$ and $b$ of a field $K$, the
+For elements $a$ and $b$ of a field $K$, the
 bi-periodic Fibonacci number squared $q^2_2$ equals $a^2$.
 
 ## Sources

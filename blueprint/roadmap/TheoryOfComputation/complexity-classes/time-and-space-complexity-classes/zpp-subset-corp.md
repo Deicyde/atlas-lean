@@ -1,6 +1,6 @@
 # ZPP is contained in coRP
 
-**ZPP is contained in coRP.** Every decision problem in $\mathsf{ZPP}$ lies in
+Every decision problem in $\mathsf{ZPP}$ lies in
 $\mathsf{coRP}$, that is, $\mathsf{ZPP} \subseteq \mathsf{coRP}$.
 
 ## Sources

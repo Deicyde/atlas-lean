@@ -1,6 +1,6 @@
 # Alzer–Richards derivative identity for powers of $1 - f$
 
-**Alzer–Richards derivative identity for powers of $1 - f$.** Let $r, j, n \ge 0$ be
+Let $r, j, n \ge 0$ be
 integers and let $f \colon \mathbb{R} \to \mathbb{R}$ be $r$ times continuously differentiable.
 Writing $g^{(i)}$ for the $i$-th derivative of a function $g$ and taking powers of $f$ pointwise,
 for every real $x$

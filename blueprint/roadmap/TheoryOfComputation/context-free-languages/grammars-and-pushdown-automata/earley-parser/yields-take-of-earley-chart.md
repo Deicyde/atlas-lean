@@ -1,6 +1,6 @@
 # Soundness of the Earley chart
 
-**Soundness of the Earley chart.** Soundness: the recognized prefix of a chart item yields the input
+Soundness: the recognized prefix of a chart item yields the input
 it consumed.
 
 ## Sources

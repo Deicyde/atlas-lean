@@ -1,6 +1,6 @@
 # Weighted zero-sum subsequences are monotone in the weight set
 
-**Weighted zero-sum subsequences are monotone in the weight set.** Let
+Let
 $A \subseteq B \subseteq \mathbb{Z}/n\mathbb{Z}$ and let $S$ be a finite sequence in
 $\mathbb{Z}/n\mathbb{Z}$. If $S$ has an $A$-weighted zero-sum subsequence, then $S$ has a
 $B$-weighted zero-sum subsequence.

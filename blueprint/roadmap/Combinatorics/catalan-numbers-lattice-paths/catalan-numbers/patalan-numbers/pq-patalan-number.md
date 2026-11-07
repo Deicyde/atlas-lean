@@ -1,6 +1,6 @@
 # The (p,q)-Patalan numbers
 
-**The (p,q)-Patalan numbers.** For natural numbers $p$ and $q$ with $p > 1$ and $0 < q < p$,
+For natural numbers $p$ and $q$ with $p > 1$ and $0 < q < p$,
 the $(p,q)$-Patalan number with index $n \in \mathbb{N}$ is the rational number
 $b(n) = -p^{2n+1} \binom{n - q/p}{n+1}$, where $\binom{r}{k} = r(r-1)\cdots(r-k+1)/k!$ is the
 binomial coefficient with rational upper argument $r$.

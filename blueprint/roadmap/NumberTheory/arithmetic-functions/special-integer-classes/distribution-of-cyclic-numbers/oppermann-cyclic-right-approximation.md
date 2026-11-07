@@ -1,6 +1,6 @@
 # Right-hand approximation for cyclic numbers near squares
 
-**Right-hand approximation for cyclic numbers near squares.** Let $\gamma$ be the
+Let $\gamma$ be the
 Euler–Mascheroni constant and, for real $x$, let $L(x) = \log \log \log (x(x+1))$. The right-hand
 approximation is the function of the real variable $x$ given by
 

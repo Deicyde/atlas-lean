@@ -1,6 +1,6 @@
 # The rounding error at the scale of the last place
 
-**The rounding error at the scale of the last place.** Let $x$ be an element of a linearly
+Let $x$ be an element of a linearly
 ordered field with a floor function, let $p$ be a natural number, and let $e$ be the exponent of
 the last place of $x$ at precision $p$. Writing $\operatorname{rne}$ for rounding to the nearest
 integer with ties to even, the rounding $\mathrm{fl}_p(x)$ of $x$ to nearest, ties to even, at

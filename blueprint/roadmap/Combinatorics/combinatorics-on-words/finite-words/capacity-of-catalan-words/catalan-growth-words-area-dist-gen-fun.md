@@ -1,6 +1,6 @@
 # Area generating function of words with unit-bounded rises ending in their maximum
 
-**Area generating function of words with unit-bounded rises ending in their maximum.** For
+For
 natural numbers $n$ and $j$, let $\mathcal{C}_{n,j}$ be the set of words $w = w_1 \cdots w_n$ with
 letters in $\{1, \dots, j\}$, each letter at most one more than the letter before it, and last
 letter $j$, and let $c(n, j; q) \in \mathbb{Z}[q]$ be the sum of $q^{w_1 + \cdots + w_n}$ over

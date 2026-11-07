@@ -1,6 +1,6 @@
 # Chinese remainder solutions with nonzero-digit product one
 
-**Chinese remainder solutions with nonzero-digit product one.** Let $b \ge 3$ and $w \ge 1$
+Let $b \ge 3$ and $w \ge 1$
 be integers, and for $v = 1, \dots, w$ let $m_v$ be a positive integer and $r_v$ an integer.
 Suppose the system of congruences $x \equiv r_v \pmod{m_v}$, $v = 1, \dots, w$, has an integer
 solution, and $r_v = 0$ whenever $\gcd(m_v, b) \ne 1$. Then the system has a positive integer

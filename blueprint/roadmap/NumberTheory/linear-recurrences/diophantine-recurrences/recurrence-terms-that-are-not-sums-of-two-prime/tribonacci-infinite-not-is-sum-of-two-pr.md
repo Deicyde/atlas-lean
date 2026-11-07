@@ -1,6 +1,6 @@
 # Infinitely many Tribonacci numbers are not sums of two prime powers
 
-**Infinitely many Tribonacci numbers are not sums of two prime powers.** Let $(T_n)_{n \ge 0}$
+Let $(T_n)_{n \ge 0}$
 be the Tribonacci sequence, given by $T_0 = 0$, $T_1 = 0$, $T_2 = 1$ and
 $T_{n+3} = T_{n+2} + T_{n+1} + T_n$. There are infinitely many natural numbers $k$ such that
 $T_k$ is not a sum of two prime powers.

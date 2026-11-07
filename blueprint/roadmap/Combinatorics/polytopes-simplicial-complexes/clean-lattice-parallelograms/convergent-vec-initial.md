@@ -1,6 +1,6 @@
 # Initial convergent vectors
 
-**Initial convergent vectors.** For every rational number $x$, the convergent vectors of the
+For every rational number $x$, the convergent vectors of the
 regular continued fraction of $x$ begin with $v_{-2} = (1, 0)$, $v_{-1} = (0, 1)$ and
 $v_0 = (1, \lfloor x \rfloor)$, and its zeroth partial quotient is $q_0 = \lfloor x \rfloor$.
 

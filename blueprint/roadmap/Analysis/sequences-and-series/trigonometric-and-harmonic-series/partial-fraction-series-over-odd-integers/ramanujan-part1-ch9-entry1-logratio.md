@@ -1,6 +1,6 @@
 # Difference series over $2k+1 \pm a$ that are polynomials on $(-\pi, \pi)$
 
-**Difference series over $2k+1 \pm a$ that are polynomials on $(-\pi, \pi)$.** Let $r$ be a
+Let $r$ be a
 positive integer, $a$ a real number that is not an odd integer, and $x$ a real number with
 $|x| < \pi$. For a natural number $s$ let $c_k(s) = (2k+1-a)^{-s} - (2k+1+a)^{-s}$ and
 $C_s(a) = \sum_{k=0}^{\infty} c_k(s)$. Then $\sum_k c_k(r)$ is summable, and either $r$ is odd,

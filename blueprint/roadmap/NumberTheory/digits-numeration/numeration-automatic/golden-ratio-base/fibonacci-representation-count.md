@@ -1,6 +1,6 @@
 # Number of Fibonacci representations
 
-**Number of Fibonacci representations.** For a natural number $m$,
+For a natural number $m$,
 $\mathrm{Tot}_{\mathrm{FIB}}(m)$ is the number of finite sets $T$ of indices $i \ge 2$ with
 $\sum_{i \in T} F_i = m$, where $F_i$ are the Fibonacci numbers ($F_0 = 0$, $F_1 = 1$); that is,
 the number of ways to write $m$ as a sum of Fibonacci numbers with distinct indices at least $2$

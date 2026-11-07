@@ -1,6 +1,6 @@
 # Recurrence for the area distribution by first letter
 
-**Recurrence for the area distribution by first letter.** For natural numbers $m$, $j$ and
+For natural numbers $m$, $j$ and
 $\ell$, let $c(m, j, \ell; q) \in \mathbb{Z}[q]$ be the area distribution of the words of length
 $m$ with letters in $\{1, \dots, j\}$, each letter at most one more than the letter before it,
 that begin with $\ell$ and end with $j$. For all natural numbers $m \ge 2$ and $j$, $\ell$ with

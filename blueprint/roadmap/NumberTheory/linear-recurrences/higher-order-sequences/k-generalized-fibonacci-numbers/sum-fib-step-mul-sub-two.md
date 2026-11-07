@@ -1,6 +1,5 @@
 # Convolution of the $m$-step and $(m-2)$-step Fibonacci numbers via Jacobsthal numbers
 
-**Convolution of the $m$-step and $(m-2)$-step Fibonacci numbers via Jacobsthal numbers.**
 Write $F^{(m)}_n$ for the Fibonacci $m$-step numbers ($F^{(m)}_0 = 0$, $F^{(m)}_1 = 1$, and each
 later term is the sum of the $m$ terms before it, terms at negative indices being $0$), and $J_n$
 for the Jacobsthal numbers ($J_0 = 0$, $J_1 = 1$, $J_{n+2} = J_{n+1} + 2 J_n$). For all natural

@@ -1,6 +1,6 @@
 # Reciprocal totients of the primes between $x^{1/5}$ and $x^{1/2}$
 
-**Reciprocal totients of the primes between $x^{1/5}$ and $x^{1/2}$.** As the real number $x$
+As the real number $x$
 tends to infinity, the sum of $1/\varphi(p)$ over the primes $p$ with $x^{1/5} < p \le x^{1/2}$
 tends to $\log(5/2)$, where $\varphi$ is Euler's totient function.
 

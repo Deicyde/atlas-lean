@@ -1,6 +1,6 @@
 # Skew shape
 
-**Skew shape.** A partition is a finite weakly decreasing sequence
+A partition is a finite weakly decreasing sequence
 $\lambda = (\lambda_1 \ge \lambda_2 \ge \dots \ge \lambda_m)$ of positive integers, possibly empty
 ($m = 0$); set $\lambda_k = 0$ for $k > m$. Its diagram is the set
 $D(\lambda) = \{(i, j) \in \mathbb{Z}_{\ge 1} \times \mathbb{Z}_{\ge 1} : j \le \lambda_i\}$ of

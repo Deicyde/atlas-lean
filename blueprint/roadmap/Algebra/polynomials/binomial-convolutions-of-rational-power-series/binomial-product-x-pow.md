@@ -1,6 +1,6 @@
 # Binomial product with a monomial
 
-**Binomial product with a monomial.** For every field $K$ of characteristic $0$, every
+For every field $K$ of characteristic $0$, every
 $m \in \mathbb{N}$ and every power series $A(x)$ over $K$,
 
 $$x^m \odot A(x) = \frac{x^m}{m!} \frac{d^m}{dx^m}\bigl(x^m A(x)\bigr),$$

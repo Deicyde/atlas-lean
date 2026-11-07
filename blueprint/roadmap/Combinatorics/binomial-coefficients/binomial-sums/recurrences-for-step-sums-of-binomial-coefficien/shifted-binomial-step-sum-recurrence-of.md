@@ -1,6 +1,6 @@
 # Window criterion for shifted step sums of binomial coefficients
 
-**Window criterion for shifted step sums of binomial coefficients.** Let
+Let
 $\alpha, \beta, k, \gamma, p, s$ be natural numbers with $\alpha > 1$, $k > 1$, $\gamma > 1$ and
 $p < k$, and let $\delta_1, \delta_2, \ldots$ be integers. For $n \in \mathbb{N}$ let $c(n)$ be
 the sum of $\binom{\alpha n + \beta}{m}$ over all $m$ with $0 \le m \le \alpha n + \beta$ and

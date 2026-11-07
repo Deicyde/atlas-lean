@@ -1,6 +1,6 @@
 # Sprague–Grundy values of P&R Helper on region L
 
-**Sprague–Grundy values of P&R Helper on region L.** Let $x \le y \le z$ be natural numbers
+Let $x \le y \le z$ be natural numbers
 with $z \ge x + y$ and $y \le 2x$ (the region $L$). For every natural number $n$, the P&R Helper
 game started at $[x, y, z]$ is equivalent to the Nim heap of size $n$ (that is, has
 Sprague–Grundy value $n$) if and only if one of the following holds: $n = 0$ and $x$, $y$, $z$

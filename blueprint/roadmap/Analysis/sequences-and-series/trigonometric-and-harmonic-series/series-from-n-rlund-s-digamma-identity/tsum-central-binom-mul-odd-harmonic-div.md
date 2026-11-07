@@ -1,6 +1,6 @@
 # A shifted central binomial series with odd harmonic numbers
 
-**A shifted central binomial series with odd harmonic numbers.** For every natural number $h$,
+For every natural number $h$,
 write $H_h = \sum_{j=1}^{h} \frac{1}{j}$, $H^{(2)}_h = \sum_{j=1}^{h} \frac{1}{j^2}$ and
 $O_n = \sum_{j=1}^{n} \frac{1}{2j - 1}$. Then
 

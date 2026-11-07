@@ -1,6 +1,6 @@
 # Integral units as ray elements
 
-**Integral units as ray elements.** Let $K$ be a number field with ring of integers
+Let $K$ be a number field with ring of integers
 $\mathcal{O}_K$, let $\mathfrak{m}$ be a modulus of $K$, and let
 $K_{\mathfrak{m}} \subseteq K^\times$ be the group of ray elements for $\mathfrak{m}$. Every unit
 of $\mathcal{O}_K$ has $\mathfrak{p}$-adic valuation $0$ at every prime $\mathfrak{p}$ of

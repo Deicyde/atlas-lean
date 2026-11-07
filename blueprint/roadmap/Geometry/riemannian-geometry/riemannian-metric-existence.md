@@ -1,6 +1,6 @@
 # Existence of Riemannian metrics
 
-**Existence of Riemannian metrics.** Let $E$ be a finite-dimensional real normed space and let
+Let $E$ be a finite-dimensional real normed space and let
 $M$ be a Hausdorff, second-countable $C^\infty$ manifold modeled on $E$ (possibly with boundary
 or corners). Then $M$ admits a $C^\infty$ Riemannian metric on its tangent bundle.
 

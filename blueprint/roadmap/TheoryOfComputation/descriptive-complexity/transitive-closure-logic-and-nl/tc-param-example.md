@@ -1,6 +1,6 @@
 # Example: parameterized transitive closure in FO + TC
 
-**Example: parameterized transitive closure in FO + TC.** The FO + TC formula
+The FO + TC formula
 $\mathrm{TC}(\varphi; (1), (2))$ of arity $1$ whose body $\varphi$ is
 $E(0, 1) \lor (E(0, 2) \land E(2, 1))$, where $E$ is relation symbol $1$ (the edge relation).
 In the body, variable $0$ is the source, variable $1$ the target, and variable $2$ is outer

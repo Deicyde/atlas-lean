@@ -1,6 +1,6 @@
 # Generating function for set partitions by rises
 
-**Generating function for set partitions by rises.** Fix $k \ge 1$. For $n, r \ge 0$ let
+Fix $k \ge 1$. For $n, r \ge 0$ let
 $a_{n,r}$ be the number of words $\pi = \pi_1 \cdots \pi_n$ on the alphabet $\{0, \dots, k-1\}$
 that use every letter, satisfy the restricted growth condition that each $\pi_i$ is at most the
 number of distinct letters among $\pi_1, \dots, \pi_{i-1}$, and have exactly $r$ rises (the

@@ -1,6 +1,6 @@
 # Owners in the totalized fragment game
 
-**Owners in the totalized fragment game.** In the totalized fragment game, an embedded
+In the totalized fragment game, an embedded
 position $(\varphi, w)$ of a fixpoint-free formula $\varphi$ at a world $w$ is owned by the even
 player if Verifier owns the model-checking game position $(\varphi, w, [])$ (with $\varphi$
 embedded as a μ-calculus formula and the empty fixpoint stack), and by the odd player otherwise,

@@ -1,6 +1,6 @@
 # Strict covering system
 
-**Strict covering system.** A covering system of a commutative semiring $R$, given by cosets
+A covering system of a commutative semiring $R$, given by cosets
 $r_i + I_i$, is strict if the ideals $I_i$ are pairwise distinct. In the case $R = \mathbb{Z}$, this
 means that the congruences defining it have pairwise distinct moduli.
 

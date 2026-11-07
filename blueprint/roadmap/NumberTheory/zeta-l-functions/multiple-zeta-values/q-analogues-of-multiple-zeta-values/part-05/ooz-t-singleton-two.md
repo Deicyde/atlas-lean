@@ -1,6 +1,6 @@
 # The OOZ map on a one-letter word
 
-**The OOZ map on a one-letter word.** Let $T$ be the map of the OOZ quasi-shuffle product,
+Let $T$ be the map of the OOZ quasi-shuffle product,
 which sends words in letters $z_k$ ($k$ a natural number) to finite formal $\mathbb{Q}$-linear
 combinations of words. Then $T$ sends the one-letter word $z_2$ to $z_2 - z_1$:
 $T(z_2) = z_2 - z_1$.

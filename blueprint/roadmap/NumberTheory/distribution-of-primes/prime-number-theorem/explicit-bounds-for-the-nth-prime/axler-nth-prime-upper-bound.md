@@ -1,6 +1,6 @@
 # Axler's upper bound for the $n$th prime
 
-**Axler's upper bound for the $n$th prime.** For every integer $n \ge 46254381$, the $n$th
+For every integer $n \ge 46254381$, the $n$th
 prime $p_n$ (so that $p_1 = 2$) satisfies
 $p_n < n \left(\log n + \log\log n - 1 + \frac{\log\log n - 2}{\log n} -
 \frac{(\log\log n)^2 - 6 \log\log n + 10.667}{2 \log^2 n}\right)$.

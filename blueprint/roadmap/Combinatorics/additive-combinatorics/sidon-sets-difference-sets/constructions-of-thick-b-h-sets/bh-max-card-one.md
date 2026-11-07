@@ -1,6 +1,6 @@
 # $R_h(1) = 1$
 
-**$R_h(1) = 1$.** For every natural number $h \ge 1$, the largest size $R_h(1)$ of a $B_h$-set
+For every natural number $h \ge 1$, the largest size $R_h(1)$ of a $B_h$-set
 contained in $\{1\}$ equals $1$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Sheppard's formula (Gaussian arcsine law)
 
-**Sheppard's formula (Gaussian arcsine law).** Let $\rho$ be a real number with $-1 < \rho < 1$,
+Let $\rho$ be a real number with $-1 < \rho < 1$,
 and let $\gamma$ be the multivariate Gaussian measure on $\mathbb{R}^2$ with mean $0$ and
 covariance matrix whose diagonal entries are $1$ and whose off-diagonal entries are $\rho$ (the
 law of a standard bivariate normal vector with correlation $\rho$). Then the open first quadrant

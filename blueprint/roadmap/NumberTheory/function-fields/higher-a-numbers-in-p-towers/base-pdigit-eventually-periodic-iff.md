@@ -1,6 +1,6 @@
 # Minimal period and delay of base-$p$ digits
 
-**Minimal period and delay of base-$p$ digits.** Let $p$ be a prime and $x > 0$ a rational
+Let $p$ be a prime and $x > 0$ a rational
 number, write $[p^j](x)$ for the $j$-th base-$p$ digit of $x$, and let $L_x$ be the period and
 $D_x = -v_p(x)$ the delay of the base-$p$ expansion of $x$. For every integer $D$ and every
 natural number $L > 0$, the identity $[p^{-(k+L)}](x) = [p^{-k}](x)$ holds for all integers

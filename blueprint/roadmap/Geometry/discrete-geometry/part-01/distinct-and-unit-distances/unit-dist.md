@@ -1,6 +1,6 @@
 # Unit distance count of a planar point set
 
-**Unit distance count of a planar point set.** For a finite set $P$ of points in the Euclidean
+For a finite set $P$ of points in the Euclidean
 plane $\mathbb{R}^2$, the unit distance count of $P$ is the number of unordered pairs of points of
 $P$ at distance exactly $1$.
 

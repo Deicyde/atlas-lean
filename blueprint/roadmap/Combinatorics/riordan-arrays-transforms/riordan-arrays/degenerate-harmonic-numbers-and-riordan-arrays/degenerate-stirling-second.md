@@ -1,6 +1,6 @@
 # Degenerate Stirling numbers of the second kind
 
-**Degenerate Stirling numbers of the second kind.** For a real number $\lambda$, let
+For a real number $\lambda$, let
 $e_\lambda(t) = \sum_{n \ge 0} (1)_{n,\lambda} t^n / n!$ be the degenerate exponential series,
 where $(1)_{0,\lambda} = 1$ and $(1)_{n,\lambda} = 1 (1 - \lambda) \cdots (1 - (n - 1)\lambda)$.
 For natural numbers $n$ and $k$, the degenerate Stirling number of the second kind

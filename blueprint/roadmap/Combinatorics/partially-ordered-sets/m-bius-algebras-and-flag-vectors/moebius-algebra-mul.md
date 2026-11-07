@@ -1,6 +1,6 @@
 # Möbius algebra product
 
-**Möbius algebra product.** Let $L$ be a lattice with meet $\wedge$ and let $R$ be a
+Let $L$ be a lattice with meet $\wedge$ and let $R$ be a
 commutative semiring. The Möbius algebra $A(L, R)$ is the set of functions $f \colon L \to R$ with
 $f(s) \neq 0$ for only finitely many $s \in L$. The product of $f, g \in A(L, R)$ is the function
 $f \cdot g \in A(L, R)$ given by

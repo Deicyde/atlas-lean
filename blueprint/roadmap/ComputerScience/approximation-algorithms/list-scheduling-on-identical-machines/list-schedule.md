@@ -1,6 +1,6 @@
 # Graham's list scheduling
 
-**Graham's list scheduling.** Given $m \ge 1$ identical machines and a list of job
+Given $m \ge 1$ identical machines and a list of job
 processing times (natural numbers), start with every machine empty and take the jobs in the
 given order, appending each job to the list of a currently least-loaded machine (the first one in
 index order), where the load of a machine is the sum of its jobs. The result assigns to each

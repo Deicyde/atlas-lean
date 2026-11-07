@@ -1,6 +1,6 @@
 # Accessible part of a DFA, by a bounded search
 
-**Accessible part of a DFA, by a bounded search.** Let $M$ be a DFA over a finite alphabet
+Let $M$ be a DFA over a finite alphabet
 $\alpha$ with a finite state set $\sigma$ with decidable equality, and let $n \ge |\sigma|$. The
 accessible part of $M$ found with $n$ rounds is the DFA over $\alpha$ whose states are the states
 found by the reachability search from the empty set with at most $n$ rounds, whose start state is

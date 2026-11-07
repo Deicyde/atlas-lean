@@ -1,6 +1,6 @@
 # Prime factors at least $7$ of biunitary divisor sums of odd prime powers
 
-**Prime factors at least $7$ of biunitary divisor sums of odd prime powers.** For every odd
+For every odd
 prime $p$ and every integer $g \ge 4$, the biunitary divisor sum $\sigma^{**}(p^g)$ has a prime
 factor $q \ge 7$.
 

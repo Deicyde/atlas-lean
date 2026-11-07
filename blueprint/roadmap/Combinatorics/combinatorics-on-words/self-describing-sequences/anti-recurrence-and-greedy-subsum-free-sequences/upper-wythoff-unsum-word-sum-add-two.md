@@ -1,6 +1,6 @@
 # Digit sums of the words between markers
 
-**Digit sums of the words between markers.** Let $F_n$ be the Fibonacci numbers, with
+Let $F_n$ be the Fibonacci numbers, with
 $F_0 = 0$ and $F_1 = 1$. For every $j$ (words counted from zero), the digit sum of the $j$-th
 word between markers of the unsum gap sequence, plus $2$, equals $F_{\lfloor j/2 \rfloor + 5}$.
 

@@ -1,6 +1,6 @@
 # Compiled Boolean code pushes the truth value of the expression
 
-**Compiled Boolean code pushes the truth value of the expression.** Let $b$ be a Boolean
+Let $b$ be a Boolean
 expression with compiled code $C(b)$ and instruction count $\ell(b)$, let $P$ and $Q$ be lists of
 instructions, $\sigma$ a stack and $s$ a state, and write $|P|$ for the length of $P$. The stack
 machine running the program $P \, C(b) \, Q$ (the concatenation of $P$, $C(b)$ and $Q$) goes in

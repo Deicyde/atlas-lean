@@ -1,6 +1,6 @@
 # In an ender, every smaller move eliminates the largest legal move
 
-**In an ender, every smaller move eliminates the largest legal move.** Let $M$ be a set of
+Let $M$ be a set of
 natural numbers whose set of legal moves $L(M)$ has a greatest element $F > 1$, and suppose that
 $F$ is the only end of $M$ (so $M$ is an ender). Then for every legal move $x$ of $M$ with
 $x < F$, the number $F$ is not a legal move of $M \cup \{x\}$.

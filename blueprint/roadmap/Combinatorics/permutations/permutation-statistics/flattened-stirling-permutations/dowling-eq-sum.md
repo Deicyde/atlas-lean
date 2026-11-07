@@ -1,6 +1,6 @@
 # A binomial–Stirling formula for the Dowling numbers
 
-**A binomial–Stirling formula for the Dowling numbers.** Let $W_{2,1,1}(n, k)$ be the
+Let $W_{2,1,1}(n, k)$ be the
 $(q, r)$-Whitney numbers of the second kind with $m = 2$, $r = 1$ and $q = 1$, and let
 $D_n = \sum_{k=0}^{n} W_{2,1,1}(n, k)$ be the associated Dowling numbers. For every $n \ge 1$,
 

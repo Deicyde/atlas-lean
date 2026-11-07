@@ -1,6 +1,6 @@
 # Pentagonal series expansion of the first Euler product
 
-**Pentagonal series expansion of the first Euler product.** The Euler product
+The Euler product
 $f_1 = \prod_{m \ge 1} (1 - q^m)$ equals the pentagonal series
 $\sum_{j \in \mathbb{Z}} (-1)^j q^{j(3j-1)/2}$ as an integer power series.
 

@@ -1,6 +1,6 @@
 # Negative integers have no representations
 
-**Negative integers have no representations.** For all natural numbers $a_1, \dots, a_k$ and
+For all natural numbers $a_1, \dots, a_k$ and
 every integer $m < 0$, the representation count $d(m; a_1, \dots, a_k)$ is $0$.
 
 ## Sources

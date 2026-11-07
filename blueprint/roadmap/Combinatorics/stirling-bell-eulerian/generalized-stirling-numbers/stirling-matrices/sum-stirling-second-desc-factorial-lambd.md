@@ -1,6 +1,6 @@
 # Stirling and falling-factorial sum of the $\Lambda$ coefficients
 
-**Stirling and falling-factorial sum of the $\Lambda$ coefficients.** Let
+Let
 $\alpha \colon \mathbb{N} \to \mathbb{Q}$, let $S(i, k)$ denote the Stirling numbers of the
 second kind, let $m^{\underline{l}} = m(m-1)\cdots(m-l+1)$ be the falling factorial, let
 $\Omega(\alpha, j) = \sum_{l=0}^{j-1} (j-1)^{\underline{l}} \, \alpha_l$, and for $k_1 \le k_2$

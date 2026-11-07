@@ -1,6 +1,6 @@
 # Divide-and-conquer maximum subarray
 
-**Divide-and-conquer maximum subarray.** The CLRS algorithm FIND-MAXIMUM-SUBARRAY over an
+The CLRS algorithm FIND-MAXIMUM-SUBARRAY over an
 additive monoid with a linear order, returning only the sum. On the empty list it returns no
 value, at no cost. On a nonempty list it returns the value of the divide-and-conquer core on that
 list, at the same cost; the core splits a list of length $n \ge 2$ after its first

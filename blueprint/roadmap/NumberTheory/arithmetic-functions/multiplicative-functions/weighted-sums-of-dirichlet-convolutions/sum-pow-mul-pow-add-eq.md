@@ -1,6 +1,6 @@
 # Product formula for homogeneous sums of powers
 
-**Product formula for homogeneous sums of powers.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $a, b \in R$ and let $\tau, \xi$ be natural numbers. Then
 
 $$

@@ -1,6 +1,6 @@
 # Insertion by identifier with cost
 
-**Insertion by identifier with cost.** Let $T$ be an indexed interval tree and let $e$ be an
+Let $T$ be an indexed interval tree and let $e$ be an
 entry with identifier $i$ and interval $[a, b]$. Inserting $e$ into $T$ first tests $a \le b$. If
 $a > b$, it returns no tree, at a cost of one endpoint comparison. Otherwise, if the identifier
 index of $T$ maps $i$ to a low endpoint $\ell$, the entry with key $(\ell, i)$ is erased from the

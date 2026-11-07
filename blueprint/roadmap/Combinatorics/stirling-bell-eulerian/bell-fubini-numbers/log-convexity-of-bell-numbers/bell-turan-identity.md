@@ -1,6 +1,6 @@
 # Turán-type identity for the Bell numbers
 
-**Turán-type identity for the Bell numbers.** For every natural number $n \ge 2$, the Bell
+For every natural number $n \ge 2$, the Bell
 numbers $B_m$ satisfy
 
 $$B_{n-1} B_{n+1} - B_n^2 = \frac{1}{2e^2} \sum_{k=2}^{\infty} \sum_{j=1}^{k-1}

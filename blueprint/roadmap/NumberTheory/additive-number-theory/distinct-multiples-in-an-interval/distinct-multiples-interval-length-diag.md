@@ -1,6 +1,6 @@
 # Erdős–Pomerance bounds for the diagonal interval length
 
-**Erdős–Pomerance bounds for the diagonal interval length.** For natural numbers $n$ and $m$,
+For natural numbers $n$ and $m$,
 let $f(n, m)$ be the least natural number $L$ such that the interval $(m, m + L]$ contains
 distinct multiples of $1, \dots, n$. For every real $\varepsilon > 0$ and all sufficiently large
 natural numbers $n$,

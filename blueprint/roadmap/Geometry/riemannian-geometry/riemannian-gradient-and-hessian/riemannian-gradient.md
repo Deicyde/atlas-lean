@@ -1,6 +1,6 @@
 # Riemannian gradient
 
-**Riemannian gradient.** Let $M$ be a $C^1$ manifold modelled on a complete real normed
+Let $M$ be a $C^1$ manifold modelled on a complete real normed
 space, with a Riemannian metric, and let $f : M \to \mathbb{R}$ and $x \in M$. The Riemannian
 gradient $\operatorname{grad} f(x) = (df_x)^\sharp \in T_xM$ is the image of the differential
 $df_x$ of $f$ at $x$ under the inverse of the Riesz isomorphism

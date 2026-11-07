@@ -1,6 +1,6 @@
 # SZ-qMZV of the word of a one-entry index
 
-**SZ-qMZV of the word of a one-entry index.** Write $\zeta_q^{SZ}$ for the Schlesinger–Zudilin
+Write $\zeta_q^{SZ}$ for the Schlesinger–Zudilin
 qMZV, extended to words in the letters $p$ and $y$ by sending a word to $\zeta_q^{SZ}$ of the
 index read off it: the number of letters $p$ before each letter $y$ since the previous $y$, with
 letters $p$ after the last $y$ dropped. For every natural number $k$, the value of

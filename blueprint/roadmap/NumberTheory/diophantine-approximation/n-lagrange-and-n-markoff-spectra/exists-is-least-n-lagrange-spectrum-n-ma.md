@@ -1,6 +1,6 @@
 # Common minimum of the $n$-Lagrange and $n$-Markoff spectra
 
-**Common minimum of the $n$-Lagrange and $n$-Markoff spectra.** For every integer $n \ge 1$
+For every integer $n \ge 1$
 there is a real number $\alpha$ that is the least element both of the $n$-Lagrange spectrum $L_n$
 and of the $n$-Markoff spectrum $M_n$.
 

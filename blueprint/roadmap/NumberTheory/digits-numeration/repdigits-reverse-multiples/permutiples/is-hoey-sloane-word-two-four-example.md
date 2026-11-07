@@ -1,6 +1,6 @@
 # The string $(0,0)(2,3)(1,2)(3,1)$ lies in the $(2, 4)$-Hoey–Sloane language
 
-**The string $(0,0)(2,3)(1,2)(3,1)$ lies in the $(2, 4)$-Hoey–Sloane language.** The input
+The input
 string $(d_0, \hat d_0) \cdots (d_3, \hat d_3) = (0,0)(2,3)(1,2)(3,1)$ belongs to the language
 $L$ of the $(2, 4)$-Hoey–Sloane machine.
 

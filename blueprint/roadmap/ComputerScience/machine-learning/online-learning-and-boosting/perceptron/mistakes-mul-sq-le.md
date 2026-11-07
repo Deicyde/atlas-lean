@@ -1,6 +1,6 @@
 # Novikoff's perceptron mistake bound
 
-**Novikoff's perceptron mistake bound.** Let $K$ be a linearly ordered commutative ring,
+Let $K$ be a linearly ordered commutative ring,
 $\iota$ a finite type, $v \cdot w = \sum_{i \in \iota} v_i w_i$ the dot product on $K^\iota$,
 $u \in K^\iota$, and $\gamma, R \in K$ with $\gamma > 0$. Let $L$ be a finite list of labelled
 examples $(x, y)$ with $x \in K^\iota$ and $y$ a Boolean, such that every example in $L$ satisfies

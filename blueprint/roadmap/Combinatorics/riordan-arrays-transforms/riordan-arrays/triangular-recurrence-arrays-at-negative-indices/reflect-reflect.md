@@ -1,6 +1,6 @@
 # Reflection of triangular recurrences is an involution
 
-**Reflection of triangular recurrences is an involution.** Reflecting a triangular
+Reflecting a triangular
 recurrence with parameters $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ twice gives back the
 recurrence with parameters $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$.
 

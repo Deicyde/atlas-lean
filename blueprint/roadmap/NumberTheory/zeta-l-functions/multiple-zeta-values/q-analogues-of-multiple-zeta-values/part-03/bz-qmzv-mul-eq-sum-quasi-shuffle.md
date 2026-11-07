@@ -1,6 +1,6 @@
 # Quasi-shuffle relations for Bradley–Zhao qMZVs
 
-**Quasi-shuffle relations for Bradley–Zhao qMZVs.** Identify an index $(k_1, \dots, k_r)$
+Identify an index $(k_1, \dots, k_r)$
 with the word $z_{k_1} \cdots z_{k_r}$, and let $u$ and $v$ be admissible indices: finite,
 possibly empty, sequences of positive integers whose first entry, if any, is at least $2$. Let
 $u \ast_{BZ} v$ be the quasi-shuffle product of $u$ and $v$ with letter product

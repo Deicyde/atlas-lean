@@ -1,6 +1,6 @@
 # Brunn–Minkowski inequality
 
-**Brunn–Minkowski inequality.** Let $n \ge 1$, let $A$ and $B$ be nonempty compact subsets of
+Let $n \ge 1$, let $A$ and $B$ be nonempty compact subsets of
 $\mathbb{R}^n$, let $A + B = \{a + b : a \in A,\ b \in B\}$ be their Minkowski sum, and let
 $\mathrm{vol}$ denote Lebesgue measure on $\mathbb{R}^n$. Then
 

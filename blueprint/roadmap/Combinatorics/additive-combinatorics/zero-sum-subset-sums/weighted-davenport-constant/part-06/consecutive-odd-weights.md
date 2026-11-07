@@ -1,6 +1,6 @@
 # Consecutive weighted zero-sum constant for odd weights
 
-**Consecutive weighted zero-sum constant for odd weights.** Let $n$ be a positive even
+Let $n$ be a positive even
 integer, let $2^r$ be the largest power of $2$ dividing $n$ and let $m = n / 2^r$. Let
 $A \subseteq \mathbb{Z}_n$ contain the residue of $m$ and consist of odd elements (residues whose
 representative in $\{0, \dots, n - 1\}$ is odd). Let $C_A(n)$ be the least positive integer $k$

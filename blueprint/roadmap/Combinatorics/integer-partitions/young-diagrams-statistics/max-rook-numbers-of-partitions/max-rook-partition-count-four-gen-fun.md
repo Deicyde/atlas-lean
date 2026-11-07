@@ -1,6 +1,6 @@
 # Generating function of partitions with max-rook number 4
 
-**Generating function of partitions with max-rook number 4.** Let $R_4(n)$ be the number of
+Let $R_4(n)$ be the number of
 partitions of $n$ with max-rook number $4$. In the ring of formal power series in $q$ with integer
 coefficients,
 

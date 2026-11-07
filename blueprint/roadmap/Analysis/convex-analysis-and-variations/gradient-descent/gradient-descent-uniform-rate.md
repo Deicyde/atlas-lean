@@ -1,6 +1,6 @@
 # Uniform last-iterate rate of a step schedule
 
-**Uniform last-iterate rate of a step schedule.** A step schedule
+A step schedule
 $s : \mathbb{N} \to \mathbb{R}$ achieves a uniform last-iterate rate with exponent
 $c \in \mathbb{R}$ if there are a real number $C > 0$ and an integer $K \ge 1$ with the following
 property. For every $d \in \mathbb{N}$, every convex differentiable function

@@ -1,6 +1,6 @@
 # First Stern–Brocot letter below one half
 
-**First Stern–Brocot letter below one half.** For every real number $\alpha < 1/2$, the
+For every real number $\alpha < 1/2$, the
 first letter $SB_1(\alpha)$ of the Stern–Brocot representation of $\alpha$ is $L$.
 
 ## Sources

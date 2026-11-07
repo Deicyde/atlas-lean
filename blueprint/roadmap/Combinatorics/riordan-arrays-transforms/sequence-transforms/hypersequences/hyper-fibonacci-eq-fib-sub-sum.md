@@ -1,6 +1,6 @@
 # Hyperfibonacci numbers in terms of Fibonacci numbers
 
-**Hyperfibonacci numbers in terms of Fibonacci numbers.** Let $F_k$ denote the $k$th Fibonacci
+Let $F_k$ denote the $k$th Fibonacci
 number and $F^{(r)}_n$ the hyperfibonacci numbers, given by $F^{(0)}_n = F_n$ and
 $F^{(r+1)}_n = \sum_{k=0}^{n} F^{(r)}_k$. For all natural numbers $r$ and $n$,
 

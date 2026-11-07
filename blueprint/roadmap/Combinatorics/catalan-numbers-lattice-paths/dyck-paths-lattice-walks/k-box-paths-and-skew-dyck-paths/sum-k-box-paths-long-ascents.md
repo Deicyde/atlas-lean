@@ -1,6 +1,6 @@
 # Long ascents of box paths: sum and sum of squares
 
-**Long ascents of box paths: sum and sum of squares.** Let $k \ge 1$ and $n \ge 1$, let
+Let $k \ge 1$ and $n \ge 1$, let
 $B_n^{(k)}$ be the set of $k$-box paths of size $n$, and for a path $w$ let $\mathrm{la}(w)$ be
 its number of long ascents. Then
 

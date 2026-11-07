@@ -1,6 +1,6 @@
 # Misère P-positions of face Nim on a cube
 
-**Misère P-positions of face Nim on a cube.** Write positions of the game $C_F$ (Nim with six
+Write positions of the game $C_F$ (Nim with six
 heaps) as tuples $p = (a, b, c, A, B, C)$ of numbers of tokens on the faces
 $f_a, f_b, f_c, f_A, f_B, f_C$, where $f_A$, $f_B$, $f_C$ are opposite $f_a$, $f_b$, $f_c$, and let
 $\oplus$ be the Nim-sum (bitwise exclusive or) of natural numbers. Let $\mathcal P$ be any set

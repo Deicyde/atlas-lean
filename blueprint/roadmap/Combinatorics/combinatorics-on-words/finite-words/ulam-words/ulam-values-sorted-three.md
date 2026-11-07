@@ -1,6 +1,6 @@
 # Binary values of the Ulam words of length 3
 
-**Binary values of the Ulam words of length 3.** The increasing list of the distinct binary
+The increasing list of the distinct binary
 values $\pi(w)$, read with the most significant letter first, of the Ulam words $w$ of length $3$
 has exactly the entries $1, 3, 4, 6$.
 

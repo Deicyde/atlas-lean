@@ -1,6 +1,6 @@
 # Coefficient recursion for multiple polylogarithms
 
-**Coefficient recursion for multiple polylogarithms.** For a finite list $\ell$ of natural
+For a finite list $\ell$ of natural
 numbers and $m \in \mathbb{N}$, the real number $c_\ell(m)$ is defined by recursion on $\ell$:
 for the empty list, $c_{()}(m)$ is $1$ if $m = 0$ and $0$ otherwise; for the list $(a, \ell')$
 with first entry $a$ followed by the list $\ell'$,

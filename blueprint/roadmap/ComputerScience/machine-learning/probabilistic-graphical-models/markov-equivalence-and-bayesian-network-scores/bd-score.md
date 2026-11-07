@@ -1,4 +1,4 @@
 # Bayesian–Dirichlet network score
 
-**Bayesian–Dirichlet network score.** The BD score of the structure `Pa` with family hyperparameters `α`: the product of the
+The BD score of the structure `Pa` with family hyperparameters `α`: the product of the
 family scores.

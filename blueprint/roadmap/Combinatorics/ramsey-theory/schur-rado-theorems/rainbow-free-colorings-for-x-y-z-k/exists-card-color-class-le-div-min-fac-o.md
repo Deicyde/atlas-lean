@@ -1,6 +1,6 @@
 # Small color classes in rainbow-free 3-colorings modulo an odd integer
 
-**Small color classes in rainbow-free 3-colorings modulo an odd integer.** Let $n$ be an odd
+Let $n$ be an odd
 natural number, let $r_1$ be its smallest prime factor (with $r_1 = 1$ when $n = 1$), let $k$ be a
 natural number, and let $c$ be a coloring of $\mathbb{Z}/n\mathbb{Z}$ with three colors that uses
 every color and is rainbow-free for $x - y = z^k$: no $x, y, z \in \mathbb{Z}/n\mathbb{Z}$ with

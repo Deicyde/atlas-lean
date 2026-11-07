@@ -1,6 +1,6 @@
 # Descendants in the digraph $G(2n, -2n + a)$
 
-**Descendants in the digraph $G(2n, -2n + a)$.** Let $a$ and $m$ be integers and let
+Let $a$ and $m$ be integers and let
 $k \ge 1$. In the digraph $G(2n, -2n + a)$ on $\mathbb{Z}$, with an edge $x \to 2x$ and an edge
 $x \to -2x + a$ for every integer $x$, the $k$-descendants of $m$ (the ends of directed walks of
 exactly $k$ edges from $m$) are exactly the integers $2^k m$, the integers $2^k m - ba$ and

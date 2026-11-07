@@ -1,6 +1,6 @@
 # Parity and side of the Stern–Brocot fractions
 
-**Parity and side of the Stern–Brocot fractions.** Let $\alpha \in (0, 1)$ be irrational,
+Let $\alpha \in (0, 1)$ be irrational,
 let $f_1(\alpha), f_2(\alpha), \dots$ be the fractions on its Stern–Brocot path, and let
 $SB(\alpha) = \langle SB_1, SB_2, \dots \rangle$ be its Stern–Brocot representation. Let
 $Q(SB(\alpha)) = \langle Q_1, Q_2, \dots \rangle$ be the sequence over

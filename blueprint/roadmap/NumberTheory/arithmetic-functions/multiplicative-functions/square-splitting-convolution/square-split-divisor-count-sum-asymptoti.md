@@ -1,6 +1,6 @@
 # Average order of the square-splitting divisor function
 
-**Average order of the square-splitting divisor function.** Let $\tau^\star(n) = |A(n)|$ be
+Let $\tau^\star(n) = |A(n)|$ be
 the number of elements of the square-splitting divisor set $A(n)$, let $\gamma$ be the
 Euler–Mascheroni constant, and let $A_\tau = \prod_p (1 - 1/(p+1)^2)$ and
 $B_\tau = 6 \sum_p \log p / ((p-1)(p+1)(p+2))$, where $p$ runs over the primes. Then, as the real

@@ -1,6 +1,6 @@
 # Asymptotic expansion of a perturbed tail product
 
-**Asymptotic expansion of a perturbed tail product.** Let $\mu$ and $\lambda$ be real numbers
+Let $\mu$ and $\lambda$ be real numbers
 with $1 < \mu < \lambda$, let $c \ne 0$ be a real number, and let $(e_k)_{k \ge 0}$ be a real
 sequence with $e_k = O\bigl((\mu/\lambda^3)^{k/2}\bigr)$ as $k \to \infty$. Then, as
 $n \to \infty$,

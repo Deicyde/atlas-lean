@@ -1,6 +1,6 @@
 # Counting $\ell$-free polynomials coprime to an irreducible
 
-**Counting $\ell$-free polynomials coprime to an irreducible.** Let $F$ be a finite field with
+Let $F$ be a finite field with
 $q$ elements, let $\ell \ge 2$ and let $d$ be a natural number. Call a monic polynomial over $F$
 $\ell$-free if it is divisible by the $\ell$-th power of no monic irreducible polynomial. There is a
 constant $C \ge 0$ such that for every monic irreducible polynomial $P$ over $F$ of degree $d$,

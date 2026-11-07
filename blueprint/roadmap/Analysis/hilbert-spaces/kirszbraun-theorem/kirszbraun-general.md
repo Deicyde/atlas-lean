@@ -1,6 +1,6 @@
 # Kirszbraun extension theorem
 
-**Kirszbraun extension theorem.** Let $E$ be a real inner product space (not necessarily
+Let $E$ be a real inner product space (not necessarily
 complete), let $F$ be a complete real inner product space, let $s \subseteq E$ and let $K \ge 0$.
 Every map $f : E \to F$ that is $K$-Lipschitz on $s$ agrees on $s$ with some map
 $g : E \to F$ that is $K$-Lipschitz on all of $E$.

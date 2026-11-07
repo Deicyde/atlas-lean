@@ -1,6 +1,6 @@
 # Second weight of a triangular recurrence
 
-**Second weight of a triangular recurrence.** For a triangular recurrence with parameters
+For a triangular recurrence with parameters
 $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ and integers $n, k$, the second weight is the
 rational number $\alpha'(n + 1) + \beta' k + \gamma'$.
 

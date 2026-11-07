@@ -1,6 +1,6 @@
 # The Rogers–Ramanujan continued fraction vanishes at zero
 
-**The Rogers–Ramanujan continued fraction vanishes at zero.** The real Rogers–Ramanujan
+The real Rogers–Ramanujan
 continued fraction $R$ satisfies $R(0) = 0$.
 
 ## Sources

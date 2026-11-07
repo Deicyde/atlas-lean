@@ -1,6 +1,6 @@
 # The logarithmic integral above $1$
 
-**The logarithmic integral above $1$.** For every real number $x > 1$, the logarithmic
+For every real number $x > 1$, the logarithmic
 integral $\mathrm{li}$ satisfies
 
 $$

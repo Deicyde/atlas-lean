@@ -1,6 +1,6 @@
 # The weighted Gaussian MLE when the sample covariance is positive definite
 
-**The weighted Gaussian MLE when the sample covariance is positive definite.** Let $I$ and
+Let $I$ and
 $J$ be finite sets, let $x_i \in \mathbb{R}^J$ ($i \in I$) be points with real weights $w_i$ such
 that $\sum_i w_i > 0$, let $m$ be their weighted mean, and let $C$ be their weighted scatter
 matrix about $m$ (the weighted sample covariance); assume $C$ is positive definite. Write

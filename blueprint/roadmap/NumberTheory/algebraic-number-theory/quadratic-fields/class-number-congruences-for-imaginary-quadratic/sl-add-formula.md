@@ -1,6 +1,6 @@
 # Addition formula for the Eisenstein function Sl
 
-**Addition formula for the Eisenstein function Sl.** Let $\mathrm{Sl}, \mathrm{Cl}$ be formal
+Let $\mathrm{Sl}, \mathrm{Cl}$ be formal
 power series in $\mathbb{Q}[[u]]$ with $\mathrm{Sl}' = \mathrm{Cl}^2$,
 $\mathrm{Cl}' = -\mathrm{Sl}^2$, $\mathrm{Sl}(0) = 0$ and $\mathrm{Cl}(0) = 1$. In the ring
 $\mathbb{Q}[[u, v]]$ of formal power series in two variables,

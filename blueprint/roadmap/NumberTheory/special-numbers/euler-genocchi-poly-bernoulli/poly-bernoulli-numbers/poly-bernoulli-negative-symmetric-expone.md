@@ -1,6 +1,6 @@
 # Generating function of negative-index poly-Bernoulli numbers
 
-**Generating function of negative-index poly-Bernoulli numbers.** For natural numbers $n, k$
+For natural numbers $n, k$
 let $B_{n,k} = \sum_{j=0}^{\min(n,k)} (j!)^2 \, S(n+1, j+1) \, S(k+1, j+1)$, where $S$ denotes
 the Stirling numbers of the second kind. Then for all real numbers $x, y$ with
 $(e^{|x|} - 1)(e^{|y|} - 1) < 1$,

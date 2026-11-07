@@ -1,6 +1,6 @@
 # Prime number theorem with error term for Chebyshev's $\theta$
 
-**Prime number theorem with error term for Chebyshev's $\theta$.** Let
+Let
 $\theta(x) = \sum_{p \le x} \log p$ be the sum of $\log p$ over the primes $p \le x$. For every
 real $\varepsilon > 0$, $\theta(x) - x = O(x \exp(-(\log x)^{3/5 - \varepsilon}))$ as
 $x \to \infty$.

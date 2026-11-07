@@ -1,6 +1,6 @@
 # Knuth–Morris–Pratt search
 
-**Knuth–Morris–Pratt search.** For lists $p$ (the pattern) and $t$ (the text) over a type
+For lists $p$ (the pattern) and $t$ (the text) over a type
 with a boolean equality, KMP search for $p$ in $t$ returns either a zero-based offset or no
 offset, together with a cost: the number of symbol comparisons it makes. If $p$ is empty, it
 returns the offset $0$ at cost $0$. Otherwise it first builds the prefix table of $p$, a list of

@@ -1,6 +1,6 @@
 # Accumulating ball-tree search
 
-**Accumulating ball-tree search.** Let $d$ be a dimension and write $\delta(x, y)$ for the
+Let $d$ be a dimension and write $\delta(x, y)$ for the
 squared distance from $x$ to $y$ in $\mathbb{Z}^d$. For a ball tree $T$ over $\mathbb{Z}^d$, a
 query point $q \in \mathbb{Z}^d$, a squared radius $r \in \mathbb{N}$ and a list $A$ of points,
 the accumulating search of $T$ for $q$ and $r$ with accumulator $A$ is $A$ when $T$ is empty;

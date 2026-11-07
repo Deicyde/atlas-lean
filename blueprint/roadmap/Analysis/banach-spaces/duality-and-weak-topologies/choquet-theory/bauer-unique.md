@@ -1,6 +1,6 @@
 # Bauer's uniqueness theorem at extreme points
 
-**Bauer's uniqueness theorem at extreme points.** Let $X$ be a real Banach space with its Borel
+Let $X$ be a real Banach space with its Borel
 σ-algebra, let $K \subseteq X$ be compact and convex, and let $x$ be an extreme point of $K$. If
 $\mu$ is a probability measure on $X$ with $\mu(X \setminus K) = 0$ whose barycenter
 $\int y \, d\mu(y)$ (a Bochner integral) equals $x$, then $\mu$ is the Dirac measure at $x$.

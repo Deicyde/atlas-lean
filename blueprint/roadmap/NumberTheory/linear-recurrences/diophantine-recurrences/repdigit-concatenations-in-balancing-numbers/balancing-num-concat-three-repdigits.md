@@ -1,6 +1,6 @@
 # Balancing numbers that are concatenations of three repdigits
 
-**Balancing numbers that are concatenations of three repdigits.** For every natural number
+For every natural number
 $k$, if the balancing number $B_k$ is a concatenation of three repdigits, then $B_k = 204$ or
 $B_k = 1189$.
 

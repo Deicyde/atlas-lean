@@ -1,6 +1,6 @@
 # The generating function of the elementary symmetric polynomials
 
-**The generating function of the elementary symmetric polynomials.** Let $\sigma$ be a finite
+Let $\sigma$ be a finite
 set of variables, and in $\mathbb{Q}[x_i : i \in \sigma]$ let $e_k$ be the $k$-th elementary
 symmetric polynomial and $p_n = \sum_{i \in \sigma} x_i^n$ the $n$-th power sum. Then, as formal
 power series in $t$ with coefficients in $\mathbb{Q}[x_i : i \in \sigma]$,

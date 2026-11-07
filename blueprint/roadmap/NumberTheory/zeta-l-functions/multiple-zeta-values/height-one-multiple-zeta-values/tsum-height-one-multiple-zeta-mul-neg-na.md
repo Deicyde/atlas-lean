@@ -1,6 +1,6 @@
 # Height one multiple zeta series weighted by powers of a negative integer
 
-**Height one multiple zeta series weighted by powers of a negative integer.** Let $r \ge 1$
+Let $r \ge 1$
 be an integer and let $\zeta(s, \{1\}^j)$ denote the height one multiple zeta function. For
 every complex number $s$ with $\operatorname{Re} s > r + 1$,
 

@@ -1,6 +1,6 @@
 # Explicit estimate for the reciprocal sum of the semiprimes
 
-**Explicit estimate for the reciprocal sum of the semiprimes.** A semiprime is a product of
+A semiprime is a product of
 exactly two primes counted with multiplicity; for real $x$ let $S(x)$ be the sum of $1/n$ over the
 semiprimes $n \le x$. Let $\beta$ be the Meissel–Mertens constant, $\gamma$ the Euler–Mascheroni
 constant and $\log$ the natural logarithm, and put

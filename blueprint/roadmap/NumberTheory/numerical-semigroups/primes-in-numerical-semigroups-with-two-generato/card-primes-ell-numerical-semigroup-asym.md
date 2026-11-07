@@ -1,6 +1,6 @@
 # Asymptotic count of primes with more than $\ell$ representations
 
-**Asymptotic count of primes with more than $\ell$ representations.** For every natural
+For every natural
 number $\ell$ and every $\varepsilon > 0$ there is a natural number $C$ such that the following
 holds for all coprime natural numbers $c$ and $d$ with $C \le c < d$. Put
 $g_\ell(c, d) = (\ell + 1)cd - c - d$, and let $\pi_{\ell,c,d}$ be the number of primes

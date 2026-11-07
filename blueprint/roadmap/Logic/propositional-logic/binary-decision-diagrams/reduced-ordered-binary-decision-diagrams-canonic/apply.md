@@ -1,6 +1,6 @@
 # Bryant's apply operation
 
-**Bryant's apply operation.** For a binary Boolean operation $\mathrm{op}$ and binary decision
+For a binary Boolean operation $\mathrm{op}$ and binary decision
 diagrams $t_1, t_2$, the diagram $A_{\mathrm{op}}(t_1, t_2)$ is defined by recursion. If $t_1$
 and $t_2$ are leaves with values $a$ and $b$, it is the leaf with value $\mathrm{op}(a, b)$.
 Otherwise let $v$ be the smallest variable tested at the root of $t_1$ or of $t_2$ (a leaf tests

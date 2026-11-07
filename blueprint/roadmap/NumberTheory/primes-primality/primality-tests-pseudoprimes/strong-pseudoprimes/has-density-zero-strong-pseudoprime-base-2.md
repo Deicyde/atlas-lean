@@ -1,6 +1,6 @@
 # The subgroup criteria for strong pseudoprime bases hold almost always
 
-**The subgroup criteria for strong pseudoprime bases hold almost always.** For an odd
+For an odd
 composite natural number $n$, let $r$ be the number of distinct prime divisors of $n$, let $v$ be
 the least of the $2$-adic valuations of $p - 1$ over the prime divisors $p$ of $n$, and consider
 the conditions: (a) the units $b$ of $\mathbb{Z}/n\mathbb{Z}$ such that $n$ is a strong

@@ -1,6 +1,6 @@
 # Bernoulli-polynomial expansion from a logarithmic difference equation
 
-**Bernoulli-polynomial expansion from a logarithmic difference equation.** Let $\alpha$, $\beta$
+Let $\alpha$, $\beta$
 and $c$ be real numbers and let $(u_n)$ be a real sequence with $u_n \to 0$ such that, for all
 sufficiently large $n$,
 $u_{n+1} - u_n = \log(1 + \alpha/(n + c)) - \log(1 + \beta/(n + c)) +

@@ -1,6 +1,6 @@
 # Conway-knot ambient isotopies as Euclidean ambient isotopies
 
-**Conway-knot ambient isotopies as Euclidean ambient isotopies.** An ambient isotopy of
+An ambient isotopy of
 $\mathbb{R}^3$ in the sense of the Conway knot statements, given by maps
 $H_t : \mathbb{R}^3 \to \mathbb{R}^3$ for $t \in \mathbb{R}$ with $(t, x) \mapsto H_t(x)$ smooth
 and $H_0 = \mathrm{id}$, and maps $G_t : \mathbb{R}^3 \to \mathbb{R}^3$ with

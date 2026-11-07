@@ -1,6 +1,6 @@
 # Number of colored Dyck paths
 
-**Number of colored Dyck paths.** Let $\gamma = (\gamma_1, \gamma_2, \dots)$ be a sequence of
+Let $\gamma = (\gamma_1, \gamma_2, \dots)$ be a sequence of
 natural numbers and let $n, k$ be natural numbers. In a Dyck path, each peak $UD$ together with the
 maximal run of $D$ steps starting at its $D$ forms a primitive block $UD^j$. The number
 $d_{n,k}(\gamma)$ counts the Dyck paths of semilength $n$ with exactly $k$ peaks in which each

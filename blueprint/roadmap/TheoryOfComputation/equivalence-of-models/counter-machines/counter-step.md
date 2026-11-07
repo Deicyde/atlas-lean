@@ -1,6 +1,6 @@
 # One step of a counter machine
 
-**One step of a counter machine.** Let $p$ be a counter-machine program, a list of
+Let $p$ be a counter-machine program, a list of
 instructions indexed from $0$, and let $s$ be a state with program counter $c$. If $c$ is at
 least the length of $p$ (the machine has halted), the step leaves $s$ unchanged. Otherwise it
 executes instruction $c$ of $p$: increment register $r$ adds $1$ to register $r$ and sets the

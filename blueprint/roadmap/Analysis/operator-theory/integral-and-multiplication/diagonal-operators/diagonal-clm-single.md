@@ -1,6 +1,6 @@
 # Diagonal operators on standard basis vectors
 
-**Diagonal operators on standard basis vectors.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+Let $\mathbb{K}$ be $\mathbb{R}$ or
 $\mathbb{C}$, let $\iota$ be a type, let $a : \iota \to \mathbb{K}$ be a bounded sequence and let
 $D_a$ be the diagonal operator on $\ell^2(\iota, \mathbb{K})$ with coefficients $a$. For
 $i \in \iota$ let $e_i \in \ell^2(\iota, \mathbb{K})$ be the sequence equal to $1$ at $i$ and $0$

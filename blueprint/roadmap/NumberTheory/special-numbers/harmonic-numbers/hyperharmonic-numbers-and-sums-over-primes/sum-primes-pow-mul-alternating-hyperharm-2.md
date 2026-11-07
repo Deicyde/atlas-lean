@@ -1,6 +1,6 @@
 # Prime-weighted power sums of type III alternating hyperharmonic numbers
 
-**Prime-weighted power sums of type III alternating hyperharmonic numbers.** Let
+Let
 $\alpha, m, p, y \ge 1$ and $q \ge 2$ be integers. Let $p_\ell$ be the $\ell$-th prime
 ($p_1 = 2$), let $H_n^{(s,r,3)}$ be the signed iterated partial sum of order $r$, with alternating
 signs, of the alternating generalized harmonic numbers

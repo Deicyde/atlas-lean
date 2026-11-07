@@ -1,6 +1,6 @@
 # Number of maximal $(p, q)$-Schreier sets
 
-**Number of maximal $(p, q)$-Schreier sets.** For natural numbers $p$, $q$ and $n$,
+For natural numbers $p$, $q$ and $n$,
 $|M^{p/q}_n|$ is the number of maximal $(p, q)$-Schreier sets with maximum $n$, that is, of sets
 $F \subseteq \{1, \dots, n\}$ with $n \in F$ and $q \min F = p |F|$.
 

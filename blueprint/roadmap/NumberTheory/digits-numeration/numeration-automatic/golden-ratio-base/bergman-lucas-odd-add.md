@@ -1,6 +1,6 @@
 # Recursive structure of Bergman expansions, odd Lucas case
 
-**Recursive structure of Bergman expansions, odd Lucas case.** Let $n \ge 2$, let $k$ be a
+Let $n \ge 2$, let $k$ be a
 natural number, and write $L_m$ for the $m$-th Lucas number. Call a finite set of integers with no
 two consecutive elements a Bergman expansion. Let $S$ and $T$ be Bergman expansions, let $a$ and
 $t$ be the least and the greatest element of $S$, let $S' = S \setminus \{a, t\}$, and for an

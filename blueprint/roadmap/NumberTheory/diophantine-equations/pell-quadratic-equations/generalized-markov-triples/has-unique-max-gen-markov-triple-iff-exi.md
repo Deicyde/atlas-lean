@@ -1,6 +1,6 @@
 # Unique maximal triple via the fraction labeling
 
-**Unique maximal triple via the fraction labeling.** Let $k$ be a natural number and $b$
+Let $k$ be a natural number and $b$
 a $k$-generalized Markov number. Then $b$ is the maximum of a unique $k$-generalized Markov
 triple up to order if and only if there is exactly one pair $(n, d)$ of natural numbers with
 $n \le d$ such that $b$ is a label of the fraction $n/d$ in the fraction labeling of

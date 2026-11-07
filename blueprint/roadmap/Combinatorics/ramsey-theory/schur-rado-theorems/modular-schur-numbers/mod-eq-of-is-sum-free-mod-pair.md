@@ -1,6 +1,6 @@
 # Elements of a sum-free pair are congruent modulo $p$
 
-**Elements of a sum-free pair are congruent modulo $p$.** Let $p$ be a prime, let $i$ be a
+Let $p$ be a prime, let $i$ be a
 positive integer, and let $l$ be a natural number with $l \ge p^i - 1$ and
 $l \not\equiv 1 \pmod{p}$. If $a$ and $b$ are natural numbers such that $\{a, b\}$ is
 $l$-sum-free modulo $p^i$, then $a \equiv b \pmod{p}$.

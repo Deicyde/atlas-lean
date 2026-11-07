@@ -1,6 +1,6 @@
 # Aygin–Williams evaluation of Kronecker's sums
 
-**Aygin–Williams evaluation of Kronecker's sums.** Let $n = 2^\alpha g h^2$ with $g$ and $h$
+Let $n = 2^\alpha g h^2$ with $g$ and $h$
 odd natural numbers and $g$ squarefree. Let $d = -4g$ if $\alpha$ is even and
 $g \equiv 1 \pmod 4$, $d = -g$ if $\alpha$ is even and $g \equiv 3 \pmod 4$, and $d = -8g$ if
 $\alpha$ is odd. Let $L = \ell(d, h) \cdot h(d)$, where $\ell(d, h)$ is Kronecker's class-number

@@ -1,6 +1,6 @@
 # Characterization of $r$-large sets
 
-**Characterization of $r$-large sets.** Let $r$ be a natural number and $D$ a set of natural
+Let $r$ be a natural number and $D$ a set of natural
 numbers. Then $D$ is $r$-large if and only if every element of $D$ is positive, $r \ge 1$, and for
 every coloring $c$ of the positive integers with the colors $0, 1, \dots, r - 1$ and every natural
 number $k \ge 1$ there are positive integers $x_0, \dots, x_{k-1}$ that are monochromatic for $c$

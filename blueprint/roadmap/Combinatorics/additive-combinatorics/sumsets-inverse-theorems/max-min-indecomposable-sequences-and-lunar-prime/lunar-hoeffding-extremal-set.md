@@ -1,6 +1,6 @@
 # Hoeffding extremal lunar numbers
 
-**Hoeffding extremal lunar numbers.** Let $b$ and $n$ be natural numbers and $d$ a real
+Let $b$ and $n$ be natural numbers and $d$ a real
 number. Let $\mathcal{L}_b^n$ be the set of lunar numbers of base $b$ and degree at most $n$
 (digit strings $c_0, \dots, c_n$ with digits in $\{0, \dots, b - 1\}$), with the max-min product
 $\otimes$, and for $f \in \mathcal{L}_b^n$ let $|f_i|$ be the number of its digits that are at

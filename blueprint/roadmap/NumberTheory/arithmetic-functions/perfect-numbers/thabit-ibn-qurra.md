@@ -1,6 +1,6 @@
 # Thābit ibn Qurra's theorem
 
-**Thābit ibn Qurra's theorem.** Let $n \ge 2$ be a natural number and put $p = 3 \cdot 2^n - 1$,
+Let $n \ge 2$ be a natural number and put $p = 3 \cdot 2^n - 1$,
 $q = 3 \cdot 2^{n-1} - 1$ and $r = 9 \cdot 2^{2n-1} - 1$. If $p$, $q$ and $r$ are all prime, then
 $2^n p q < 2^n r$, the sum of the proper divisors of $2^n p q$ equals $2^n r$, and the sum of the
 proper divisors of $2^n r$ equals $2^n p q$; that is, $2^n p q$ and $2^n r$ are distinct amicable

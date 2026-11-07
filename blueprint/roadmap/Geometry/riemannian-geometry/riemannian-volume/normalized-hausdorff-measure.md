@@ -1,6 +1,6 @@
 # Normalized Hausdorff measure
 
-**Normalized Hausdorff measure.** Let $n$ be a natural number and let $X$ be an extended
+Let $n$ be a natural number and let $X$ be an extended
 metric space with its Borel $\sigma$-algebra. The normalized $n$-dimensional Hausdorff measure of
 $X$ is the measure $\frac{\omega_n}{2^n} \mathcal{H}^n$, where $\omega_n$ is the Lebesgue volume of
 the open unit ball of the Euclidean space $\mathbb{R}^n$ and $\mathcal{H}^n$ is the unnormalized

@@ -1,6 +1,6 @@
 # Central binomial power sums via Stirling numbers
 
-**Central binomial power sums via Stirling numbers.** For every natural number $m$ and every
+For every natural number $m$ and every
 real $x$ with $|x| < 1/4$,
 
 $$\sum_{n=0}^{\infty} \binom{2n}{n} n^m x^n =

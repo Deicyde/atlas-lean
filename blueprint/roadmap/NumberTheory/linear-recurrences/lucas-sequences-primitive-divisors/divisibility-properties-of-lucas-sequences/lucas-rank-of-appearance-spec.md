@@ -1,6 +1,6 @@
 # The rank of appearance in a Lucas sequence is attained
 
-**The rank of appearance in a Lucas sequence is attained.** Let $U = U(P, Q)$ be a Lucas
+Let $U = U(P, Q)$ be a Lucas
 sequence and $m$ a natural number. If $m \mid U_r$ for some positive integer $r$, then the rank of
 appearance $\rho(m)$ of $m$ in $U$ is positive and $m \mid U_{\rho(m)}$.
 

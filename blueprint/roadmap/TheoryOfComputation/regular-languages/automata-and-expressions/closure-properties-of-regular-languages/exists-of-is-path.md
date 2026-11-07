@@ -1,6 +1,6 @@
 # Soundness of the homomorphic-image ε-NFA
 
-**Soundness of the homomorphic-image ε-NFA.** Let $M$ be a DFA over a finite alphabet $T$ with
+Let $M$ be a DFA over a finite alphabet $T$ with
 start state $q_0$, and let $\varphi$ map letters of $T$ to words over $T'$; for a word $w$ over $T$,
 write $\varphi(w)$ for the concatenation of the images of its letters. Suppose the ε-NFA of $M$ and
 $\varphi$ has a path from the state $q_0$ of $M$ to a state $u$, with label sequence $x$, and let

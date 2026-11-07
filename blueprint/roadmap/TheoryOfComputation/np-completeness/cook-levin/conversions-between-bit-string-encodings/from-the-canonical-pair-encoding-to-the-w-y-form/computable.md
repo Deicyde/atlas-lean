@@ -1,6 +1,6 @@
 # Polynomial-time conversion to the verifier's pair encoding
 
-**Polynomial-time conversion to the verifier's pair encoding.** A polynomial-time computation
+A polynomial-time computation
 of the identity map on pairs $(x, w)$ of bit lists, from the canonical bitstring encoding of
 $(x, w)$ to the verifier's pair encoding of $(x, w)$ (the bits of $x$, the separator, then the
 bits of $w$), by the converter machine, with the bits and the verifier's symbols themselves as

@@ -1,6 +1,6 @@
 # Arndt compositions with parts at most 4 and Narayana's cows sequence
 
-**Arndt compositions with parts at most 4 and Narayana's cows sequence.** For every
+For every
 $n \ge 0$, the number of Arndt compositions of $n$ (compositions $(\sigma_1, \dots, \sigma_k)$
 with $\sigma_{2i-1} > \sigma_{2i}$ whenever $2i \le k$) with all parts in $\{1, 2, 3, 4\}$,
 counting the empty composition when $n = 0$, equals $N_{n+1}$, where $(N_m)$ is Narayana's cows

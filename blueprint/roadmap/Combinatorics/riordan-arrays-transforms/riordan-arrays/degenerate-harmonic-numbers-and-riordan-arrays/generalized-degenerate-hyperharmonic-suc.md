@@ -1,6 +1,6 @@
 # Generalized degenerate hyperharmonic numbers of positive order vanish at zero
 
-**Generalized degenerate hyperharmonic numbers of positive order vanish at zero.** For all
+For all
 real numbers $\lambda$ and $\alpha$ and every natural number $r$, the generalized degenerate
 hyperharmonic number of order $r + 1$ at index $0$ is zero: $H^{r+1}_{0,\lambda}(\alpha) = 0$.
 

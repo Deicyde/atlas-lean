@@ -1,6 +1,6 @@
 # Formations of groups in the sense of Gaglione and Spellman
 
-**Formations of groups in the sense of Gaglione and Spellman.** A class $\mathfrak{F}$ of
+A class $\mathfrak{F}$ of
 groups is a formation when it contains at least one group, it is closed under surjective
 homomorphic images (if $G \in \mathfrak{F}$ and $\varphi \colon G \to H$ is a surjective
 homomorphism, then $H \in \mathfrak{F}$), and for every group $G$ and all normal subgroups $N_1$,

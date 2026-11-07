@@ -1,6 +1,6 @@
 # An operator acts as a scalar on a span of eigenvectors modulo a smaller span
 
-**An operator acts as a scalar on a span of eigenvectors modulo a smaller span.** Let $E$ be a
+Let $E$ be a
 normed space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $T$ be a bounded linear operator
 on $E$, let $(\lambda_n)_{n \in \mathbb{N}}$ in $\mathbb{K}$ and $(u_n)_{n \in \mathbb{N}}$ in $E$
 satisfy $T u_n = \lambda_n u_n$ for every $n$, and for each $n$ let $V_n$ be the linear span of

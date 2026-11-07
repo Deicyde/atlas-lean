@@ -1,6 +1,6 @@
 # Hankel determinants of the shifted Eulerian polynomials
 
-**Hankel determinants of the shifted Eulerian polynomials.** Let $n \in \mathbb{N}$ and
+Let $n \in \mathbb{N}$ and
 $x \in \mathbb{R}$. For natural numbers $k \le m$ let
 $W_{m,k} = \sum_{i=0}^{m-k} (-1)^i \binom{m+1}{i} (m-k-i)^m$, with $0^0 = 1$, and let
 $P_m(X) = \sum_{k=0}^{m} W_{m,k} X^k$ be the corresponding Eulerian polynomial. Then the

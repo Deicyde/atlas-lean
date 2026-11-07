@@ -1,6 +1,6 @@
 # Circle covering theorem (Erdős Problem 1121)
 
-**Circle covering theorem (Erdős Problem 1121).** Both parts of Erdős Problem 1121 hold. For
+Both parts of Erdős Problem 1121 hold. For
 every natural number $d$, and in particular in the plane ($d = 2$): if $B(c_1, r_1), \dots,
 B(c_n, r_n)$ are closed balls in Euclidean space $\mathbb{R}^d$ with centres $c_i$ and radii
 $r_i > 0$ such that every hyperplane meeting none of the balls has all the centres $c_i$

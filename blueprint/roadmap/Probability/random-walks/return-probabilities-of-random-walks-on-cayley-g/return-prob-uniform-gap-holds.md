@@ -1,6 +1,6 @@
 # Uniform return-probability gap for transient Cayley graphs
 
-**Uniform return-probability gap for transient Cayley graphs.** For every natural number
+For every natural number
 $k > 1$ there is a real number $C < 1$ such that for every group $G$ and every $k$-regular Cayley
 graph $\Gamma$ on $G$ whose return probability is less than $1$, the return probability of
 $\Gamma$ is at most $C$.

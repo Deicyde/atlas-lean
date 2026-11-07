@@ -1,6 +1,6 @@
 # Schema of a query
 
-**Schema of a query.** Given a database schema assigning a finite set $\mathrm{sch}(n)$ of
+Given a database schema assigning a finite set $\mathrm{sch}(n)$ of
 attributes to each base relation name $n$, the schema of a relational algebra query is either a
 finite set of attributes or undefined (the query is ill-formed), defined by recursion on the
 query: the base relation $n$ has schema $\mathrm{sch}(n)$; if $e$ has schema $S$, then the

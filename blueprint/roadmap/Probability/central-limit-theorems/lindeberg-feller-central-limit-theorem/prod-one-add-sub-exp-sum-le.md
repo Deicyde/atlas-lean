@@ -1,6 +1,6 @@
 # Comparing a finite product with the exponential of a sum
 
-**Comparing a finite product with the exponential of a sum.** Let $s$ be a finite index
+Let $s$ be a finite index
 set and let $u_i \in \mathbb{C}$ for $i \in s$. If $|u_i| \le 1/2$ for every $i \in s$, then
 
 $$

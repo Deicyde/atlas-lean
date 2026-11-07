@@ -1,6 +1,6 @@
 # Ambient subgroup of a change of modulus to a divisor
 
-**Ambient subgroup of a change of modulus to a divisor.** Let $\mathfrak m_1$ and
+Let $\mathfrak m_1$ and
 $\mathfrak m_2$ be moduli of a number field $K$ with $\mathfrak m_2 \mid \mathfrak m_1$, and let
 $C_1$ be a congruence subgroup for $\mathfrak m_1$. Viewed as subgroups of the group of nonzero
 fractional ideals of $K$, the change of modulus of $C_1$ to $\mathfrak m_2$ equals the subgroup

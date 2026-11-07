@@ -1,6 +1,6 @@
 # The Princess and the Roses game
 
-**The Princess and the Roses game.** For $k \in \mathbb{N}$ and $p \in \mathbb{N}^k$, the
+For $k \in \mathbb{N}$ and $p \in \mathbb{N}^k$, the
 Princess and the Roses game (P&R) with $k$ labelled piles started at $p$ is the impartial game
 whose positions are the $q \in \mathbb{N}^k$, with $q_i$ objects on pile $i$, and whose moves
 remove one object from one nonempty pile, or one object from each of two distinct nonempty

@@ -1,6 +1,6 @@
 # Overgroups of Hall subgroups in $D_\pi$-groups (Manzaeva, Vdovin–Manzaeva–Revin)
 
-**Overgroups of Hall subgroups in $D_\pi$-groups (Manzaeva, Vdovin–Manzaeva–Revin).** Let $\pi$ be
+Let $\pi$ be
 a set of natural numbers and let $G$ be a finite $D_\pi$-group. Then every subgroup $K$ of $G$ that
 contains a Hall $\pi$-subgroup of $G$ is itself a $D_\pi$-group. This answers Kourovka Problem
 17.44(b) in the affirmative.

@@ -1,6 +1,6 @@
 # Kourovka Problem 17.37 on permutable subgroups of alternating groups
 
-**Kourovka Problem 17.37 on permutable subgroups of alternating groups.** This proposition
+This proposition
 asserts that there is a natural number $n$ such that for every $m > n$, every $A_m$-permutable
 subgroup of the alternating group $A_m$ is either the trivial subgroup or $A_m$ itself. Here a
 subgroup $A$ of a group $G$ is $G$-permutable when for every subgroup $B$ of $G$ there is $x \in G$

@@ -1,6 +1,6 @@
 # Valid segment trees
 
-**Valid segment trees.** Validity of a segment tree over an additive monoid is defined
+Validity of a segment tree over an additive monoid is defined
 inductively: the empty tree and every leaf are valid, and an internal node with valid left child
 $L$ and valid right child $R$ is valid when its cached aggregate is the aggregate of $L$ plus
 the aggregate of $R$ and its cached length is the size of $L$ plus the size of $R$. Here the

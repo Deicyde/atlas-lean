@@ -1,6 +1,6 @@
 # Non-injective endomorphisms of braid groups on five or more strands have cyclic image
 
-**Non-injective endomorphisms of braid groups on five or more strands have cyclic image.** The
+The
 answer to Kourovka Problem 14.102(a) is negative: there is no $n > 4$ for which the braid group
 $B_n$ on $n$ strands has a non-injective endomorphism whose image is not cyclic. Equivalently, for
 every $n \ge 5$, every non-injective endomorphism of $B_n$ has cyclic image.

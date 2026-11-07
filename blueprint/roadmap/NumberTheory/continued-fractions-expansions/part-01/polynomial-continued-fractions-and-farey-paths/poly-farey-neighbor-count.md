@@ -1,6 +1,6 @@
 # Number of neighbours of a polynomial Farey fraction
 
-**Number of neighbours of a polynomial Farey fraction.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $n \in \mathbb{N}$, and let $u / v$ be a fraction of the Farey series $\mathcal{F}_n$ over
 $\mathbb{F}_p$ with $q = \deg v \ge 1$. Then for every $t \in \mathbb{N}$ with $q + t \le n$,
 exactly $(p - 1) p^t$ fractions $h / k \in \mathcal{F}_n$ with $\deg k = q + t$ are neighbours

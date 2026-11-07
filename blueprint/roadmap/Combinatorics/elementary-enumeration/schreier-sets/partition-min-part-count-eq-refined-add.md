@@ -1,6 +1,6 @@
 # Partitions into large parts and the refined Schreier family
 
-**Partitions into large parts and the refined Schreier family.** Let $n$ and $\ell$ be
+Let $n$ and $\ell$ be
 natural numbers with $n \ge \ell + 1$. Let $F_{n,\ell}$ be the family of finite sets $A$ of
 natural numbers such that $A$ has largest element $n + 1$ and at least three elements, $A$ is
 sparse (the differences of consecutive elements, in increasing order, are non-decreasing) and

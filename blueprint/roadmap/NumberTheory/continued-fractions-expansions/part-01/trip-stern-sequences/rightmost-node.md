@@ -1,6 +1,6 @@
 # Rightmost node of a TRIP-Stern tree
 
-**Rightmost node of a TRIP-Stern tree.** For a TRIP-Stern tree $T$ and a natural number $n$,
+For a TRIP-Stern tree $T$ and a natural number $n$,
 the rightmost node of $T$ at depth $n$ is obtained from the seed of $T$ by applying the right
 transition of $T$ exactly $n$ times: at depth $0$ it is the seed, and at depth $n + 1$ it is the
 image of the rightmost node at depth $n$ under the right transition.

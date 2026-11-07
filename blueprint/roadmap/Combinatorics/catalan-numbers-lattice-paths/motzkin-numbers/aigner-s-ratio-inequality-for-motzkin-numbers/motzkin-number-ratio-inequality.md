@@ -1,6 +1,6 @@
 # Aigner's ratio inequality for Motzkin numbers
 
-**Aigner's ratio inequality for Motzkin numbers.** Let $M_n$ denote the $n$-th Motzkin
+Let $M_n$ denote the $n$-th Motzkin
 number. For every $n \ge 1$,
 
 $$

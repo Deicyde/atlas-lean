@@ -1,6 +1,6 @@
 # Swapping the first two of three digits changes the characteristic number
 
-**Swapping the first two of three digits changes the characteristic number.** For positive
+For positive
 integers $a$, $b$, $c$ with $a \ne b$, the strings $(a, b, c)$ and $(b, a, c)$ have different
 characteristic numbers: $\chi(a, b, c) \ne \chi(b, a, c)$.
 

@@ -1,6 +1,6 @@
 # GRAPH COLORING is NP-complete
 
-**GRAPH COLORING is NP-complete.** The decision problem GRAPH COLORING belongs to NP, and
+The decision problem GRAPH COLORING belongs to NP, and
 every decision problem $L$ in NP has a polynomial-time many-one reduction to GRAPH COLORING.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Fourier inversion on the subsets of a finite set
 
-**Fourier inversion on the subsets of a finite set.** Let $E$ be a finite subset of a type
+Let $E$ be a finite subset of a type
 $\iota$ and let $f$ be a function from finite subsets of $\iota$ to $\mathbb{R}$. For every
 subset $T \subseteq E$,
 

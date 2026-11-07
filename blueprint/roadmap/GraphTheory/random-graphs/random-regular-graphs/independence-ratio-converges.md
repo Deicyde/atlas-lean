@@ -1,6 +1,6 @@
 # Bollobás's question on the independence ratio of random regular graphs
 
-**Bollobás's question on the independence ratio of random regular graphs.** The statement
+The statement
 that for every integer $d \ge 1$ there is a real number $c$ such that, for every $\varepsilon > 0$,
 the probability that the independence ratio $\alpha(G)/n$ of a uniformly random $d$-regular simple
 graph $G$ on the vertex set $\{0, \dots, n - 1\}$ differs from $c$ by more than $\varepsilon$

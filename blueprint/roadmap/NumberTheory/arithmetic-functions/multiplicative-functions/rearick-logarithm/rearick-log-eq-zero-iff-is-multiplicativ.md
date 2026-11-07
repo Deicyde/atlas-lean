@@ -1,6 +1,6 @@
 # Rearick's characterization of multiplicative functions
 
-**Rearick's characterization of multiplicative functions.** Let $f$ be a real-valued arithmetic
+Let $f$ be a real-valued arithmetic
 function with $f(1) > 0$, and let $L(f)$ be its Rearick logarithm. Then $f$ is multiplicative
 (that is, $f(1) = 1$ and $f(mn) = f(m) f(n)$ whenever $m$ and $n$ are coprime) if and only if
 $L(f)(m) = 0$ for every natural number $m$ that is not a prime power, including $m = 0$ and

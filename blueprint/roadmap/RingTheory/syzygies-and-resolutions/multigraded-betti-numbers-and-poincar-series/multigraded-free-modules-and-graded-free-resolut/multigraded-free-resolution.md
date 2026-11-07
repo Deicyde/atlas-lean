@@ -1,6 +1,6 @@
 # Multigraded free resolution
 
-**Multigraded free resolution.** Let $K$ be a field, let $R = K[x_1, \dots, x_n]$, let $M$ be
+Let $K$ be a field, let $R = K[x_1, \dots, x_n]$, let $M$ be
 a multigraded $R$-module, let $\cdots \to P_1 \to P_0 \to M$ be a projective resolution of $M$
 over $R$, and for each $i \in \mathbb{N}$ let $\iota_i$ be an index type. A multigraded free
 resolution structure on this resolution consists of a multigraded free module structure on each

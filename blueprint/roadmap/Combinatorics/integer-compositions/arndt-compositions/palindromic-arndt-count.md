@@ -1,6 +1,6 @@
 # Palindromic Arndt compositions
 
-**Palindromic Arndt compositions.** An Arndt composition of $n$ with $k$ parts is a sequence
+An Arndt composition of $n$ with $k$ parts is a sequence
 $(\sigma_1, \dots, \sigma_k)$ of positive integers with sum $n$ such that
 $\sigma_{2i-1} > \sigma_{2i}$ whenever $2i \le k$; it is palindromic when
 $\sigma_i = \sigma_{k+1-i}$ for all $i$. For $n, k, m \ge 0$, $p(n, k, m)$ is the number of

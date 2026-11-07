@@ -1,6 +1,6 @@
 # Small values of the Fibonacci representation count
 
-**Small values of the Fibonacci representation count.** Let $F_i$ be the Fibonacci numbers
+Let $F_i$ be the Fibonacci numbers
 ($F_0 = 0$, $F_1 = 1$), and let $\mathrm{Tot}_{\mathrm{FIB}}(m)$ be the number of ways to write
 $m$ as a sum of Fibonacci numbers $F_i$ with distinct indices $i \ge 2$. Then
 $\mathrm{Tot}_{\mathrm{FIB}}(0), \dots, \mathrm{Tot}_{\mathrm{FIB}}(8)$ are

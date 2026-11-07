@@ -1,6 +1,6 @@
 # Almost-asymptotic expansion of Watson's cosine sum
 
-**Almost-asymptotic expansion of Watson's cosine sum.** Let $n \ge 2$, $N \ge 2$ and $\nu$ be
+Let $n \ge 2$, $N \ge 2$ and $\nu$ be
 natural numbers with $1 \le \nu \le n - 1$, and let
 
 $$

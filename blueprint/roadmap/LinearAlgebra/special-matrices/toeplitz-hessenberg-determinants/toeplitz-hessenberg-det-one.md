@@ -1,6 +1,6 @@
 # The $1 \times 1$ Toeplitz–Hessenberg determinant
 
-**The $1 \times 1$ Toeplitz–Hessenberg determinant.** For every commutative ring $R$ and every
+For every commutative ring $R$ and every
 sequence $a_0, a_1, a_2, \dots$ in $R$, the Toeplitz–Hessenberg determinant of size $1$ built
 from $a$ is $\det A_1 = a_1$.
 

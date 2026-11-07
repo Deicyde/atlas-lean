@@ -1,6 +1,6 @@
 # The modular product sum $S_k(n, m)$
 
-**The modular product sum $S_k(n, m)$.** For natural numbers $k$, $n$ and $m$, the modular
+For natural numbers $k$, $n$ and $m$, the modular
 product sum $S_k(n, m)$ is the natural number
 
 $$S_k(n, m) = \sum a_1 a_2 \cdots a_k,$$

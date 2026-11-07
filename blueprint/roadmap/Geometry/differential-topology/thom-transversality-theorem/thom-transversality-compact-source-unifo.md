@@ -1,6 +1,6 @@
 # Approximation by maps having zero as a regular value, compact case
 
-**Approximation by maps having zero as a regular value, compact case.** Let $M$ be a compact,
+Let $M$ be a compact,
 Hausdorff, second-countable smooth manifold without boundary modelled on a finite-dimensional real
 normed space, let $f : M \to \mathbb{R}^n$ be $C^\infty$, and let $\varepsilon > 0$. Then there is
 a $C^\infty$ map $g : M \to \mathbb{R}^n$ such that $\lVert f(x) - g(x) \rVert < \varepsilon$ for

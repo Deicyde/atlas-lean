@@ -1,6 +1,6 @@
 # Fibonacci closed form of a binomial sum with powers of two
 
-**Fibonacci closed form of a binomial sum with powers of two.** Let $F_m$ denote the
+Let $F_m$ denote the
 Fibonacci numbers, with $F_0 = 0$ and $F_1 = 1$. For every natural number $n \ge 4$,
 
 $$\sum_{k=1}^{\lfloor n/3 \rfloor - 1} \left( \binom{n-k-4}{2k} 2^{n-3k-4} +

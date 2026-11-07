@@ -1,6 +1,6 @@
 # Reducing before the $123$ cyclic sorting machine does not change the reduced output
 
-**Reducing before the $123$ cyclic sorting machine does not change the reduced output.** For
+For
 every permutation $\pi$ of $[n] = \{1, \ldots, n\}$, applying the cyclic sorting machine
 $\mathrm{SC}_{[123]}$ to the reduction $\operatorname{red}(\pi)$ and reducing the result gives the
 reduction of $\mathrm{SC}_{[123]}(\pi)$:

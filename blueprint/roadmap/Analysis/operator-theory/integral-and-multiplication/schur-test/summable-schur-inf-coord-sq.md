@@ -1,3 +1,3 @@
 # Squared coordinates of a Schur image are summable
 
-**Squared coordinates of a Schur image are summable.** Summability of the squared coordinates of a Schur image.
+Summability of the squared coordinates of a Schur image.

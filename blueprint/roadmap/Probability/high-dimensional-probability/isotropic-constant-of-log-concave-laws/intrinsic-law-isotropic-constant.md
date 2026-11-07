@@ -1,6 +1,6 @@
 # Isotropic constant of an intrinsic log-concave law
 
-**Isotropic constant of an intrinsic log-concave law.** Let $\mu$ be an intrinsic log-concave
+Let $\mu$ be an intrinsic log-concave
 law on $\mathbb{R}^N$, given by a log-concave law $\nu$ on $\mathbb{R}^d$ with density $f$ and an
 affine isometric embedding of $\mathbb{R}^d$ onto the affine span of the support of $\mu$. The
 isotropic constant of $\mu$ is the entropy isotropic constant of $\nu$,

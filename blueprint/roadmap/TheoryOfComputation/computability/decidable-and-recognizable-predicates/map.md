@@ -1,6 +1,6 @@
 # Recognizable languages are closed under alphabet maps
 
-**Recognizable languages are closed under alphabet maps.** Let $\sigma$ and $\tau$ be
+Let $\sigma$ and $\tau$ be
 alphabets with primitive recursive encodings, let $f : \sigma \to \tau$ be primitive recursive,
 and let $L$ be a language over $\sigma$. If membership in $L$ is recognizable by a multi-stack
 machine, then so is membership in the image language

@@ -1,6 +1,6 @@
 # Top coefficients of the Kassel–Reutenauer polynomials
 
-**Top coefficients of the Kassel–Reutenauer polynomials.** For $n \ge 10$, the polynomial
+For $n \ge 10$, the polynomial
 
 $$
 \bar P_n(X) - \Bigl(X^{n-1} + X^{n-2} - (n-2) X^{n-3} - (n-3) X^{n-4} +

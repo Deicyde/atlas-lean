@@ -1,6 +1,6 @@
 # Cycle-continuous maps
 
-**Cycle-continuous maps.** Let $G$ and $H$ be multigraphs. A map $f$ from the edges of $G$
+Let $G$ and $H$ be multigraphs. A map $f$ from the edges of $G$
 to the edges of $H$ is cycle-continuous when, for every binary cycle $C$ of $H$, the preimage
 $f^{-1}(C)$ is a binary cycle of $G$.
 

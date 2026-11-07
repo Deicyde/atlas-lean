@@ -1,6 +1,6 @@
 # The Conlon–Lee subdivision conjecture
 
-**The Conlon–Lee subdivision conjecture.** For a simple graph $H$ and a natural number $k$,
+For a simple graph $H$ and a natural number $k$,
 write $H^{k-1}$ for the $(k-1)$-subdivision of $H$, and for a simple graph $F$ and a natural
 number $n$ write $\mathrm{ex}(n, F)$ for the extremal number of $F$ on $n$ vertices. The
 conjecture is the statement that for every even natural number $k \ge 2$, every natural number

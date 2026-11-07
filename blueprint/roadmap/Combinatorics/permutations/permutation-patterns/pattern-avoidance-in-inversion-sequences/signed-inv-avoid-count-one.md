@@ -1,6 +1,6 @@
 # Signed inversion sequences of length one
 
-**Signed inversion sequences of length one.** The signed inversion sequences of length $1$ are
+The signed inversion sequences of length $1$ are
 $0$ and $\bar 0$, and neither contains a length-2 signed pattern, so for every finite set $B$ of
 length-2 signed patterns the number $|\bar I_1(B)|$ of signed inversion sequences of length $1$
 avoiding every pattern of $B$ is $2$.

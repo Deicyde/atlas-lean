@@ -1,6 +1,6 @@
 # Reversed recursion for Kamano's generalized multiple polylogarithm
 
-**Reversed recursion for Kamano's generalized multiple polylogarithm.** Fix Landen data $g$,
+Fix Landen data $g$,
 with $g_0 = \begin{pmatrix} 1 & -1 \\ c_0 & d_0 \end{pmatrix}$ and
 $g_i = \begin{pmatrix} a_i & b_i \\ c_i & d_i \end{pmatrix}$ for $1 \le i \le s$, and weights
 $\beta, \gamma \in \mathbb{R}^s$. For a real matrix

@@ -1,6 +1,6 @@
 # Perfect cover
 
-**Perfect cover.** Let $G$ be an abelian group. A finite set $S \subseteq G$ is a perfect cover
+Let $G$ be an abelian group. A finite set $S \subseteq G$ is a perfect cover
 of $G$ when every element of $G$ is the sum of exactly one subset of $S$ (the empty subset has
 sum $0$); that is, the family of the elements of $S$ is a perfect $1$-cover of $G$.
 

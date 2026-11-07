@@ -1,6 +1,6 @@
 # The 3SAT emitter reads a literal marker
 
-**The 3SAT emitter reads a literal marker.** For all booleans $f$ and $p$, every token list
+For all booleans $f$ and $p$, every token list
 $t$, output bit list $o$, natural numbers $z$ and $c$, and flag $v$, there is a flag $v'$ such
 that the 3SAT emitter machine, started at the literal label for $f$ with flag $v$, token stack
 the literal marker of polarity $p$ followed by $t$, output stack $o$, fresh counter $z$, clause

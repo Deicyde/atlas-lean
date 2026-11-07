@@ -1,6 +1,6 @@
 # Tandon's dimension-500 code size
 
-**Tandon's dimension-500 code size.** Tandon's dimension-500 code size is the natural number
+Tandon's dimension-500 code size is the natural number
 $M^*$ with $257$ decimal digits given by
 
 $$

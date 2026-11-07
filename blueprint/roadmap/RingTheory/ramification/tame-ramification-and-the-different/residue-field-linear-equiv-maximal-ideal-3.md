@@ -1,6 +1,6 @@
 # Graded pieces as kernels of the transition maps
 
-**Graded pieces as kernels of the transition maps.** Let $A$ and $B$ be discrete valuation
+Let $A$ and $B$ be discrete valuation
 rings with maximal ideals $\mathfrak m_A$ and $\mathfrak m_B$ and residue fields
 $\kappa_A = A/\mathfrak m_A$ and $\kappa_B = B/\mathfrak m_B$, let $B$ be an $A$-algebra whose
 algebra map $A \to B$ is a local homomorphism, so that it induces a field homomorphism

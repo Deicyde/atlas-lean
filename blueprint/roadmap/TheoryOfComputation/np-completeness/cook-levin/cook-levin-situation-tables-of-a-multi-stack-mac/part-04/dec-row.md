@@ -1,6 +1,6 @@
 # C1 decoder (decoding a row)
 
-**C1 decoder (decoding a row).** Let $E$ be an encoding of a machine $M$, let
+Let $E$ be an encoding of a machine $M$, let
 $H, n \in \mathbb{N}$, and let $w : \mathbb{N} \to \mathbb{N} \to \mathbb{N}$. The decoded
 configuration has the label and the state that the inverse (label, state) numbering of $E$
 assigns to $n$. For each stack $k$ of $M$, with stack number $\kappa$, the decoded stack $k$

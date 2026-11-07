@@ -1,6 +1,6 @@
 # Weights cancel on a block with two rooks in the chosen level
 
-**Weights cancel on a block with two rooks in the chosen level.** Let $m \ge 2$, let $B$ be a
+Let $m \ge 2$, let $B$ be a
 singleton board for $m$, with rows numbered from $0$ and row $r$ in level $\lfloor r/m \rfloor$,
 and let $F_0$ be a file placement on $B$. Let $l$ be the chosen level of $F_0$ (among the levels
 holding at least two cells of $F_0$, one holding the fewest, the lowest on ties) and $c_0$ the

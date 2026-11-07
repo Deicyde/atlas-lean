@@ -1,6 +1,6 @@
 # Hurwitz's theorem: the convergent denominators grow in absolute value
 
-**Hurwitz's theorem: the convergent denominators grow in absolute value.** Let $z$ be a
+Let $z$ be a
 complex number and let $Q_0, Q_1, \dots$ be the convergent denominators of its Hurwitz continued
 fraction expansion. For every $n \ge 0$ such that $n + 1$ is a legal index for $z$ (the
 expansion has not terminated before step $n + 1$), $|Q_n| < |Q_{n+1}|$.

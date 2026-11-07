@@ -1,6 +1,6 @@
 # Overflow cells of the next row on a real run
 
-**Overflow cells of the next row on a real run.** Let $E$ be an encoding of a machine $M$ with
+Let $E$ be an encoding of a machine $M$ with
 $K$ stacks and window depth $d$, let $s$ be an input, and let $c_t$ be the configuration at step
 $t$ of the idle-extended run of $M$ from the initial configuration on input $s$. Let $a$ be an
 assignment satisfying the cell-shift clause family of $E$'s layout and tables $\mathrm{sa}$,

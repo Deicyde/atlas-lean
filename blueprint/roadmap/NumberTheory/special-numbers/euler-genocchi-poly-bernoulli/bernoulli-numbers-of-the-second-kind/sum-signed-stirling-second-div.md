@@ -1,6 +1,6 @@
 # Shifted Stirling convolution as a Bernoulli number of the second kind
 
-**Shifted Stirling convolution as a Bernoulli number of the second kind.** Let $s(m, j)$ be
+Let $s(m, j)$ be
 the signed Stirling numbers of the first kind, $S(m, j)$ the Stirling numbers of the second kind
 and $B_m^*$ the Bernoulli numbers of the second kind. For all natural numbers $n$ and $k$ with
 $1 \le k \le n$,

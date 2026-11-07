@@ -1,6 +1,6 @@
 # Leading coefficient of an S-polynomial
 
-**Leading coefficient of an S-polynomial.** For every natural number $l$, the coefficient
+For every natural number $l$, the coefficient
 $s_l = s_{l,l}$ of $x^l$ in Zurita's polynomial $S_l$ equals $8/(1 - 2l)$.
 
 ## Sources

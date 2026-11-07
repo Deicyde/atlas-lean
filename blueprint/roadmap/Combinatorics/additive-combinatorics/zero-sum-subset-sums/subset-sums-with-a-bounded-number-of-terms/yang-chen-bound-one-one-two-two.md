@@ -1,6 +1,6 @@
 # Yang–Chen bound at $(1, 1, 2)$ and $h = 2$
 
-**Yang–Chen bound at $(1, 1, 2)$ and $h = 2$.** The Yang–Chen bound $L(\bar r, h)$ for
+The Yang–Chen bound $L(\bar r, h)$ for
 $\bar r = (1, 1, 2)$ and $h = 2$ equals $4$.
 
 Here $\mu = 2$, $\eta = 1$ and $\delta = \theta = 0$.

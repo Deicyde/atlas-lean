@@ -1,6 +1,6 @@
 # Length of the longest arithmetic progression in a reduced residue system
 
-**Length of the longest arithmetic progression in a reduced residue system.** For an
+For an
 integer $m$ and a natural number $n$, let $R_m(n)$ be the reduced residue system of the
 integers $a$ with $m + 1 \le a \le m + n$ and $\gcd(a, n) = 1$. Then $f_m(n)$ is the largest
 natural number $s$ for which there are an integer $b$ and a positive integer $d$ such that

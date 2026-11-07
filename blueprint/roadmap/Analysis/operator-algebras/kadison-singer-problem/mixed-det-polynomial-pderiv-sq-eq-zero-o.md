@@ -1,6 +1,6 @@
 # Rank-one coefficients make the mixed determinant polynomial affine
 
-**Rank-one coefficients make the mixed determinant polynomial affine.** Let
+Let
 $A_1, \dots, A_m$ be square complex matrices whose rows and columns are indexed by a finite set
 $d$, and suppose that $A_i = u v^{\mathsf T}$ for some index $i$ and vectors
 $u, v \in \mathbb{C}^d$. Consider the mixed determinant polynomial

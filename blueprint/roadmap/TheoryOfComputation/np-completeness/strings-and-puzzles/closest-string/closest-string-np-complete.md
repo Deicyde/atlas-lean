@@ -1,6 +1,6 @@
 # CLOSEST STRING is NP-complete
 
-**CLOSEST STRING is NP-complete.** The CLOSEST STRING decision problem belongs to NP, and
+The CLOSEST STRING decision problem belongs to NP, and
 every decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

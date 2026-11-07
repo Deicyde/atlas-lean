@@ -1,6 +1,6 @@
 # Standard products with an opposable first factor
 
-**Standard products with an opposable first factor.** If $G$ is an opposable graph, then for
+If $G$ is an opposable graph, then for
 every graph $H$ the Cartesian product $G \mathbin{\square} H$, the strong product $G \boxtimes H$,
 and the tensor, lexicographic, co-normal and homomorphic products of $G$ with $H$ are opposable.
 Here distinct pairs $(g_1, h_1)$ and $(g_2, h_2)$ are adjacent in the tensor product when

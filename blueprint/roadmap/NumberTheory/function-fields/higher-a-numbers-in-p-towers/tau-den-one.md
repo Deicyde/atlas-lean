@@ -1,6 +1,6 @@
 # $\tau_D = 1$ when $d = 1$
 
-**$\tau_D = 1$ when $d = 1$.** For every natural number $p$, the denominator $\tau_D$ of
+For every natural number $p$, the denominator $\tau_D$ of
 $\tau = (p + 1)/d$ in lowest terms equals $1$ when $d = 1$.
 
 ## Sources

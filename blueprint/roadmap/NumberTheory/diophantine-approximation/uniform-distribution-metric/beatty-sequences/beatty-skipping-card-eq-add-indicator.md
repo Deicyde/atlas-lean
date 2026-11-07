@@ -1,6 +1,6 @@
 # Multiplicities of Polanco's skipping sequence
 
-**Multiplicities of Polanco's skipping sequence.** Let $k \ge 1$ be an integer, let
+Let $k \ge 1$ be an integer, let
 $\alpha$ be an irrational real number with $(2k - 1)/k < \alpha < (2k + 1)/(k + 1)$, and let
 $\beta$ be a real number with $\alpha^{-1} + \beta^{-1} = 1$. Let
 $A = \{\lfloor j\alpha \rfloor : j \ge 1\}$ and, for each positive integer $n$, let $c_n$ be

@@ -1,6 +1,6 @@
 # Relative position of the extended Pisa fixed point via the positions of $b$
 
-**Relative position of the extended Pisa fixed point via the positions of $b$.** Let
+Let
 $k \ge 1$, $l \ge 0$ and $m \ge 1$ be natural numbers, let $\sigma$ be the substitution
 $a \mapsto a^k b a^l$, $b \mapsto a^m$, and let $w$ be a one-sided fixed point of $\sigma$ (so
 $\sigma(w) = w$) that begins with $a$. Let $p_a(n)$ and $p_b(n)$ be the positions (counted from

@@ -1,6 +1,6 @@
 # Limiting densities of the shifted floor residue counts
 
-**Limiting densities of the shifted floor residue counts.** Let $r$ and $m$ be natural
+Let $r$ and $m$ be natural
 numbers with $1 \le r \le m$, and let $\alpha$ and $\nu$ be real numbers with $0 \le \alpha < 1$
 and $0 \le \nu < 1$. For a natural number $n$ let $\mathcal N_{n,\alpha,\nu,r,m}$ be the number
 of integers $k$ with $1 \le k \le n$ such that

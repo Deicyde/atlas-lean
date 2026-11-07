@@ -1,6 +1,6 @@
 # Rising factorial between consecutive $k$-th powers
 
-**Rising factorial between consecutive $k$-th powers.** Let $k$ and $n$ be natural numbers,
+Let $k$ and $n$ be natural numbers,
 write $n^{\overline{k}} = n (n + 1) \cdots (n + k - 1)$ for the rising factorial, and let
 $r = \lfloor (k^2 - 4k + 6)/4 \rfloor$ if $k$ is even and $r = \lfloor (k^2 - 6k + 11)/4 \rfloor$
 if $k$ is odd. If $n \ge r$, then

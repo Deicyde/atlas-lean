@@ -1,6 +1,6 @@
 # Sum of even-indexed (a, b)-Fibonacci numbers weighted by powers of -b
 
-**Sum of even-indexed (a, b)-Fibonacci numbers weighted by powers of -b.** Let $a, b$ be
+Let $a, b$ be
 complex numbers and let $(F_n)$ be the $(a, b)$-Fibonacci numbers. Then for every integer
 $n \ge 0$,
 

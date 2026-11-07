@@ -1,6 +1,6 @@
 # Endomorphisms of free metabelian groups are not always determined by two elements
 
-**Endomorphisms of free metabelian groups are not always determined by two elements.** For a
+For a
 natural number $n$, let $M_n = F_n / F_n''$ be the free metabelian group of rank $n$, the quotient
 of the free group $F_n$ of rank $n$ by its second derived subgroup. There is an $n$ such that for
 all elements $g, h \in M_n$ there are endomorphisms $\varphi \ne \psi$ of $M_n$ whose images are

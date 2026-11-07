@@ -1,6 +1,6 @@
 # Uniform Brun–Titchmarsh bound
 
-**Uniform Brun–Titchmarsh bound.** Write $\pi(X; k, \ell)$ for the number of primes $p \le X$
+Write $\pi(X; k, \ell)$ for the number of primes $p \le X$
 with $p \equiv \ell \pmod{k}$, and $\varphi$ for Euler's totient function. For every real $\beta$
 with $0 < \beta < 1$ there is a real constant $\xi_1 > 0$ such that for all natural numbers $X$,
 $k$ and $\ell$ with $X \ge 2$, $k \ge 1$ and $k \le X^{\beta}$,

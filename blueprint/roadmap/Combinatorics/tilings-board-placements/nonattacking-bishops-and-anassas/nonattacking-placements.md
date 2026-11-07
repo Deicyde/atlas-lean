@@ -1,6 +1,6 @@
 # Nonattacking placements
 
-**Nonattacking placements.** Let $B$ be a board, that is, a finite set of squares
+Let $B$ be a board, that is, a finite set of squares
 $(i, j) \in \mathbb{Z}^2$, let $M$ be a list of basic moves $v \in \mathbb{Z}^2$, and let $k$ be a
 natural number. The nonattacking placements of $k$ pieces with basic moves $M$ on $B$ are the
 $k$-element subsets $S \subseteq B$ such that for all distinct squares $p, q \in S$ and every

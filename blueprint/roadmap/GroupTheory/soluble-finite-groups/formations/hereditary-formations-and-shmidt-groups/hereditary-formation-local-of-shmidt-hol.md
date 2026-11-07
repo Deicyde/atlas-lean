@@ -1,6 +1,6 @@
 # Skiba's theorem (Kourovka Problem 11.91)
 
-**Skiba's theorem (Kourovka Problem 11.91).** Let $\mathfrak F$ be a hereditary formation of
+Let $\mathfrak F$ be a hereditary formation of
 finite soluble groups: every group in $\mathfrak F$ is finite and soluble, $\mathfrak F$ is closed
 under isomorphisms, subgroups and quotients, and whenever $M$ and $N$ are normal subgroups of a
 finite group $G$ with $G/M$ and $G/N$ in $\mathfrak F$, also $G/(M \cap N)$ lies in $\mathfrak F$.

@@ -1,6 +1,6 @@
 # Erdős Problem 750 is true
 
-**Erdős Problem 750 is true.** The following three statements hold. (i) For every function
+The following three statements hold. (i) For every function
 $f : \mathbb{N} \to \mathbb{R}_{\ge 0}$ with $f(m) \to \infty$ as $m \to \infty$ there is a
 simple graph $G$ with infinite chromatic number such that for every $m > 0$, every set $S$ of
 exactly $m$ vertices of $G$ contains an independent set $I$ of $G$ with $|I| \ge m/2 - f(m)$.

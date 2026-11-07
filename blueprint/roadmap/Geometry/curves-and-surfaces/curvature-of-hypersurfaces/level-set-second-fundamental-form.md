@@ -1,6 +1,6 @@
 # Second fundamental form of a level set
 
-**Second fundamental form of a level set.** Let $E$ be a finite-dimensional real inner
+Let $E$ be a finite-dimensional real inner
 product space, $\rho : E \to \mathbb{R}$ and $p \in E$. Write $\nabla\rho(p)$ for the gradient of
 $\rho$ at $p$ and $D^2\rho(p)$ for the second derivative of $\rho$ at $p$ (a bilinear form on
 $E$). The second fundamental form at $p$ of the level set of $\rho$ through $p$, with respect to

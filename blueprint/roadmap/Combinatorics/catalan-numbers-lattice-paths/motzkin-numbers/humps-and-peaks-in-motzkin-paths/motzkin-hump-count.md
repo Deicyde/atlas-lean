@@ -1,6 +1,6 @@
 # Number of humps of a given height in Motzkin paths
 
-**Number of humps of a given height in Motzkin paths.** A Motzkin path of length $n$ is a
+A Motzkin path of length $n$ is a
 word of $n$ steps $U = (1,1)$, $F = (1,0)$ and $D = (1,-1)$ that ends at height $0$ and never
 goes below height $0$. A hump of height $k$ in such a path is a pair consisting of an up step
 and a later down step with only flat steps between them, where the up step ends at height $k$.

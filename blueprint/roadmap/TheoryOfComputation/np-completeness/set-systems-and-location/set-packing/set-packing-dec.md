@@ -1,6 +1,6 @@
 # The SET PACKING decision problem
 
-**The SET PACKING decision problem.** SET PACKING is the decision problem that accepts a
+SET PACKING is the decision problem that accepts a
 bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a set-packing
 instance $(n, C, K)$ that is both well formed and feasible: every list in $C$ has no repeated
 entries and only entries less than $n$, and some sublist of $C$ with no repeated entries and at

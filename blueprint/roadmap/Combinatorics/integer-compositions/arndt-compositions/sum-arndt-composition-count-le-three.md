@@ -1,6 +1,6 @@
 # Arndt compositions with parts at most 3 and the Padovan numbers
 
-**Arndt compositions with parts at most 3 and the Padovan numbers.** For every $n \ge 0$, the
+For every $n \ge 0$, the
 number of Arndt compositions of $n$ (compositions $(\sigma_1, \dots, \sigma_k)$ with
 $\sigma_{2i-1} > \sigma_{2i}$ whenever $2i \le k$) with all parts in $\{1, 2, 3\}$, counting the
 empty composition when $n = 0$, equals the shifted Padovan number $s_{n+2}$, where $s_0 = 1$,

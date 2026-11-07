@@ -1,6 +1,6 @@
 # Shakov's sequence takes Fibonacci values along the auxiliary sequence
 
-**Shakov's sequence takes Fibonacci values along the auxiliary sequence.** Let $s$ be
+Let $s$ be
 Shakov's $2$-regular sequence, let $a$ be Shakov's auxiliary sequence, and let $F_k$ denote the
 $k$-th Fibonacci number, with $F_0 = 0$ and $F_1 = 1$. For every natural number $n \ge 1$,
 $s(\max(a(n), 0)) = F_{n-1}$.

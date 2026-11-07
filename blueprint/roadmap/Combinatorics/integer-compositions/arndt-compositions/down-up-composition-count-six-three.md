@@ -1,6 +1,6 @@
 # Down/up compositions of 6 with three parts
 
-**Down/up compositions of 6 with three parts.** Among the down/up compositions of $6$ with
+Among the down/up compositions of $6$ with
 three parts (triples $(\sigma_1, \sigma_2, \sigma_3)$ of positive integers with sum $6$ and
 $\sigma_1 > \sigma_2 < \sigma_3$), exactly one has last part $3$, exactly one has last part $2$,
 and none has last part $1$.

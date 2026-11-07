@@ -1,6 +1,6 @@
 # Packed accessors evaluate to an encoded related environment
 
-**Packed accessors evaluate to an encoded related environment.** Let $\rho$ be a list of
+Let $\rho$ be a list of
 source values, $\rho_t$ a list of target values and $\mathit{acc}$ a map from natural numbers
 to target terms, and suppose the accessors $\mathit{acc}$ implement $\rho$ in $\rho_t$: for
 every $i < |\rho|$, the term $\mathit{acc}(i)$ evaluates in $\rho_t$ to a target value related

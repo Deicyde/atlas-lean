@@ -1,6 +1,6 @@
 # Erdős–Sárközy–Sós theorem on monochromatic sums (Erdős Problem 484)
 
-**Erdős–Sárközy–Sós theorem on monochromatic sums (Erdős Problem 484).** There is a real constant
+There is a real constant
 $c > 0$ such that for every integer $k \ge 1$ there is an $N_0 \in \mathbb{N}$ such that for every
 $N \ge N_0$ and every colouring $f : \mathbb{N} \to \{0, \dots, k-1\}$, at least $cN$ of the
 integers $n \in \{1, \dots, N\}$ can be written as $n = a + b$ with $a, b \in \{1, \dots, N\}$,

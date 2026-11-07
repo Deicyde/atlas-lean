@@ -1,6 +1,6 @@
 # Sum-free subsets of $\{1, \dots, n\}$ number $2^{(1 + o(1)) n / 2}$
 
-**Sum-free subsets of $\{1, \dots, n\}$ number $2^{(1 + o(1)) n / 2}$.** Let $f(n)$ be the
+Let $f(n)$ be the
 number of sum-free subsets of $\{1, \dots, n\}$, that is, of sets $A \subseteq \{1, \dots, n\}$
 with no $a, b, c \in A$ satisfying $a = b + c$ (the case $b = c$ included). Then
 $\log_2 f(n) / n \to 1/2$ as $n \to \infty$, that is, $f(n) = 2^{(1 + o(1)) n / 2}$.

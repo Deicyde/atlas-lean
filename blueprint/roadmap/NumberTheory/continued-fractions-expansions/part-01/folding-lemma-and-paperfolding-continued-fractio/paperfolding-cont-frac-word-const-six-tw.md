@@ -1,6 +1,6 @@
 # The paperfolding continued-fraction word $A_2$ for constant $x_k = 6$
 
-**The paperfolding continued-fraction word $A_2$ for constant $x_k = 6$.** Let $x_k = 6$
+Let $x_k = 6$
 for every $k$, and let $A_0 = (1, 1)$ and $A_{k+1} = A_k\,(x_{k+1} - 1)\,A_k^r$, where the
 mirror image $A^r$ of a word $A$ is obtained by reversing $A$ and then replacing a leading $2$
 by $1, 1$, or two leading letters $1, 1$ by $2$, leaving any other word unchanged. Then

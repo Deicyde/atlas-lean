@@ -1,6 +1,6 @@
 # Lattice step of the billiard unfolding in a rectangle
 
-**Lattice step of the billiard unfolding in a rectangle.** For a natural number $j$, let
+For a natural number $j$, let
 $\varepsilon_j = 1$ if $j$ is odd and $\varepsilon_j = 0$ if $j$ is even. Let $a, b > 0$ be real
 numbers with $a n = b m$ for some positive integers $m, n$. Then there are a real number $t > 0$
 and natural numbers $k > 0$, $l > 0$ and $N$ such that $t = k a = l b$, $N + 2 = k + l$, $k$ and

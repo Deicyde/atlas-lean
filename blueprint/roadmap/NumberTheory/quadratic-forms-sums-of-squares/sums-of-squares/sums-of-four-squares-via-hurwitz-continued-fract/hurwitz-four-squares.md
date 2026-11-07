@@ -1,6 +1,6 @@
 # Sums of four squares via Hurwitz continued fractions
 
-**Sums of four squares via Hurwitz continued fractions.** Let $w$, $x$, $y$ be natural numbers
+Let $w$, $x$, $y$ be natural numbers
 such that $w$ is odd and not a perfect square, $2x < w$, $2y < w$ and $w$ divides
 $x^2 + y^2 + 1$. Expand $z = (x + yi)/w$ by the Hurwitz algorithm, with convergent numerators
 $P_n$ and convergent denominators $Q_n$. Then there is exactly one natural number $n$ such that

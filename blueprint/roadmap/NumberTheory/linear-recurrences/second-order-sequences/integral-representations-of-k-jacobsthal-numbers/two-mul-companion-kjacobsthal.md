@@ -1,6 +1,6 @@
 # Companion $k$-Jacobsthal numbers via Lucas sequences
 
-**Companion $k$-Jacobsthal numbers via Lucas sequences.** For a natural number $k$ and
+For a natural number $k$ and
 integers $a, b$, let $\mathcal{J}_{k,n}(a, b)$ be the companion $k$-Jacobsthal numbers, and let
 $J_{k,n} = U_n(k, -2)$ and $j_{k,n} = V_n(k, -2)$ be the $k$-Jacobsthal and $k$-Jacobsthal–Lucas
 numbers, the Lucas sequences $U$ and $V$ with parameters $(P, Q) = (k, -2)$. Then for every

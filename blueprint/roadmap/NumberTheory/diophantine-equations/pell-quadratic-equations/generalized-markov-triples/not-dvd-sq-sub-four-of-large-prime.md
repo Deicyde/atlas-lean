@@ -1,6 +1,6 @@
 # Large odd primes do not divide $k^2 - 4$
 
-**Large odd primes do not divide $k^2 - 4$.** Let $p$ be an odd prime and $k$ a natural
+Let $p$ be an odd prime and $k$ a natural
 number. If either $k \ge 4$ is even and $p > k/2 + 1$, or $k$ is odd and $p > k + 2$, then $p$
 does not divide $k^2 - 4$.
 

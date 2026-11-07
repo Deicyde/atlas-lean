@@ -1,6 +1,6 @@
 # Ruzsa's lower bound for an infinite Sidon set
 
-**Ruzsa's lower bound for an infinite Sidon set.** There is a Sidon set $A \subseteq \mathbb{N}$
+There is a Sidon set $A \subseteq \mathbb{N}$
 such that for every real $\varepsilon > 0$, the inequality
 $|A \cap \{1, \dots, n\}| > n^{\sqrt{2} - 1 - \varepsilon}$ holds for all sufficiently large
 natural numbers $n$; that is, $|A \cap \{1, \dots, n\}| > n^{\sqrt{2} - 1 - o(1)}$.

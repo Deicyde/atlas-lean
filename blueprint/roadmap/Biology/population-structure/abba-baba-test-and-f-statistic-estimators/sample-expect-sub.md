@@ -1,3 +1,3 @@
 # Sampling expectation commutes with subtraction
 
-**Sampling expectation commutes with subtraction.** `sampleExpect` commutes with subtraction of functions.
+`sampleExpect` commutes with subtraction of functions.

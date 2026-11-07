@@ -1,6 +1,6 @@
 # Naive bound for square matrix multiplication
 
-**Naive bound for square matrix multiplication.** For every field $F$, the square matrix
+For every field $F$, the square matrix
 multiplication exponent $\omega(F)$ of the arithmetic-circuit model satisfies $\omega(F) \le 3$.
 
 ## Sources

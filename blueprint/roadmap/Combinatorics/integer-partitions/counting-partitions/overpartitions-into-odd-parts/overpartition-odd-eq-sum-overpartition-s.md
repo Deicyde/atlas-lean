@@ -1,6 +1,6 @@
 # Overpartitions into odd parts from overpartitions and squares
 
-**Overpartitions into odd parts from overpartitions and squares.** Let $\mathrm{po}(m)$
+Let $\mathrm{po}(m)$
 be the number of overpartitions of $m$ into odd parts and $\overline{p}(m)$ the number of
 overpartitions of $m$. For every natural number $n$,
 $\mathrm{po}(n) = \sum_k (-1)^k \, \overline{p}(n - 2k^2)$, the sum running over the

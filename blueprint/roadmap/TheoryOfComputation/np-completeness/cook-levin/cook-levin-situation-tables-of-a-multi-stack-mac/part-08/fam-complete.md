@@ -1,6 +1,6 @@
 # Transition families with a run-literal head are satisfied by the run
 
-**Transition families with a run-literal head are satisfied by the run.** Let $E$ be an
+Let $E$ be an
 encoding of the machine $M$ with layout $L$, $N$ situations, label/state table $\mathrm{la}$ and
 window table $\mathrm{wa}$, let $d$ be the window depth of $M$, and let $T, H \in \mathbb{N}$ with
 $d \le H$. Write $X[r, x]$ for the index of the label/state variable $x$ of row $r$ at height

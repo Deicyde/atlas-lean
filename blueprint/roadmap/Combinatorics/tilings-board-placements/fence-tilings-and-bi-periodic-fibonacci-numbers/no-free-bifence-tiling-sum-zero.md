@@ -1,6 +1,6 @@
 # Tilings of the empty board with no free bifence
 
-**Tilings of the empty board with no free bifence.** For all elements $a$, $b$ of a
+For all elements $a$, $b$ of a
 commutative semiring, the weighted number $R_0$ of tilings of the $0$-board by half-squares and
 $(1/2, 1/2)$-fences with no free bifence, with half-squares weighted by $a$ and $b$, equals $1$.
 

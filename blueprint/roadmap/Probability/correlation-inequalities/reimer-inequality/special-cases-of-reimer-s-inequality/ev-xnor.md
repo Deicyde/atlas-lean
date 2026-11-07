@@ -1,3 +1,3 @@
 # Event that two coordinates agree
 
-**Event that two coordinates agree.** The event `ω 0 = ω 1` on two coordinates.
+The event `ω 0 = ω 1` on two coordinates.

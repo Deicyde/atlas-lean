@@ -1,6 +1,6 @@
 # Continuous mapping theorem for weak convergence of probability measures
 
-**Continuous mapping theorem for weak convergence of probability measures.** Let $\mu_n$
+Let $\mu_n$
 ($n \in \mathbb{N}$) and $\mu$ be probability measures on $\mathbb{R}$, and let
 $g : \mathbb{R} \to \mathbb{R}$ be a measurable function whose set of discontinuity points has
 $\mu$-measure zero. If $\mu_n$ converges weakly to $\mu$ as $n \to \infty$, then the pushforward

@@ -1,6 +1,6 @@
 # Lower bound for $\log n$ in terms of the logarithm of the $n$-th prime
 
-**Lower bound for $\log n$ in terms of the logarithm of the $n$-th prime.** Let $p_n$ denote
+Let $p_n$ denote
 the $n$-th prime, so that $p_1 = 2$. For every integer $n \ge 234057667276344608$,
 $\log n \ge 0.914 \log p_n$.
 

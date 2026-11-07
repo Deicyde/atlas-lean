@@ -1,6 +1,6 @@
 # Some group of singular cardinality has no such partition
 
-**Some group of singular cardinality has no such partition.** There is an infinite group $G$
+There is an infinite group $G$
 whose cardinality $\mathfrak{m} = |G|$ is singular (not regular) such that for all disjoint sets
 $A_1$ and $A_2$ with $A_1 \cup A_2 = G$ there is a subset $F \subseteq G$ with
 $|F| < \mathfrak{m}$ and $A_1 F = G$ or $A_2 F = G$, where $A F = \{a f : a \in A, f \in F\}$.

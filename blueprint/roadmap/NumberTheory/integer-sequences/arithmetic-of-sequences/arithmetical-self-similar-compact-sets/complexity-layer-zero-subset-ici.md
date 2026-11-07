@@ -1,6 +1,6 @@
 # The set $T_0$ is nonnegative
 
-**The set $T_0$ is nonnegative.** Every element of the set $T_0$ of reals $n / 3^k$, where
+Every element of the set $T_0$ of reals $n / 3^k$, where
 $n$ and $k$ are natural numbers, $n$ is stable and $\lVert n \rVert = 3k + 2$ (with
 $\lVert n \rVert$ the integer complexity of $n$), is a nonnegative real number.
 

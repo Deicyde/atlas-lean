@@ -1,6 +1,6 @@
 # Splitting a sum by greatest common divisor
 
-**Splitting a sum by greatest common divisor.** For every function
+For every function
 $f : \mathbb{N} \to \mathbb{C}$ and every natural number $n$,
 
 $$\sum_{k=1}^{n} f(k) = \sum_{d \mid n} \sum_{1 \le h \le n/d,\ \gcd(n/d, h) = 1} f(hd).$$

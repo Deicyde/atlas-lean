@@ -1,6 +1,6 @@
 # Bose's construction of $B_h$-sets
 
-**Bose's construction of $B_h$-sets.** Let $h \ge 2$, let $F$ be a finite field with $q$
+Let $h \ge 2$, let $F$ be a finite field with $q$
 elements, let $K$ be a field extension of $F$ of degree $h$, let $\theta$ be a generator of the
 multiplicative group $K^\times$, and let $b$ be a natural number such that $\theta^b$ has degree
 $h$ over $F$. Then the generalized Bose set $\mathrm{Bose}_h(q, b)$, a subset of

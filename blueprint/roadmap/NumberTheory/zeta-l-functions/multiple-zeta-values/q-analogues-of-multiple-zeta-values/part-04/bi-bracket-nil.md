@@ -1,6 +1,6 @@
 # Empty bi-bracket
 
-**Empty bi-bracket.** The bi-bracket of the empty index is $1$:
+The bi-bracket of the empty index is $1$:
 $g(\varnothing; \varnothing) = 1$.
 
 ## Sources

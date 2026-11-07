@@ -1,6 +1,6 @@
 # Every family is $0$-vanishing
 
-**Every family is $0$-vanishing.** For every natural number $n$ and every family $F$ of
+For every natural number $n$ and every family $F$ of
 functions $f^{(l)} : (\mathbb{Z}/n\mathbb{Z})^l \to M$, $l \ge 0$, into a type $M$ with a zero
 element, $F$ is $0$-vanishing.
 

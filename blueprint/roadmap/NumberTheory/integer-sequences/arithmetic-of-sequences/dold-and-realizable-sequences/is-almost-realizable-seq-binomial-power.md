@@ -1,6 +1,6 @@
 # Binomial-power sequences are almost realizable
 
-**Binomial-power sequences are almost realizable.** For all natural numbers $r \ge 1$ and $s$,
+For all natural numbers $r \ge 1$ and $s$,
 the binomial-power sequence $n \mapsto \sum_{k=0}^{n} \binom{n}{k}^r \binom{n+k}{k}^s$ is almost
 realizable.
 

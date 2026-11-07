@@ -1,6 +1,6 @@
 # Divisibility of a product through the gcd
 
-**Divisibility of a product through the gcd.** Let $a, b, c$ be integers with $a$ and $b$ not
+Let $a, b, c$ be integers with $a$ and $b$ not
 both zero. Then $a$ divides $bc$ if and only if $a / \gcd(a, b)$ divides $c$.
 
 ## Sources

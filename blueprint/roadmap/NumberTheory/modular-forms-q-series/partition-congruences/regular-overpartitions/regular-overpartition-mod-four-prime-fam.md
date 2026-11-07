@@ -1,6 +1,6 @@
 # $\ell$-regular overpartitions vanish modulo $4$ along families of primes
 
-**$\ell$-regular overpartitions vanish modulo $4$ along families of primes.** For a natural
+For a natural
 number $\ell$, let $A_\ell(m)$ be the number of overpartitions of $m$ with no part divisible by
 $\ell$. Let $\ell \equiv 3 \pmod 4$, let $k$, $n$ and $j$ be natural numbers, and let
 $p_1, \dots, p_{k+1}$ be primes, not necessarily distinct, each greater than $2$ and congruent

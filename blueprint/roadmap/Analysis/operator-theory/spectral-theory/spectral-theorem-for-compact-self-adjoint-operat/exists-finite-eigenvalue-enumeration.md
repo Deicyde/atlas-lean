@@ -1,6 +1,6 @@
 # Maximum principle for compact self-adjoint operators in finite dimension
 
-**Maximum principle for compact self-adjoint operators in finite dimension.** Let $H$ be a
+Let $H$ be a
 finite-dimensional Hilbert space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $T$ be a
 compact self-adjoint operator on $H$. Then there are $N \in \mathbb{N}$, nonzero real numbers
 $s_0, \dots, s_{N-1}$ and an orthonormal family $u_0, \dots, u_{N-1}$ in $H$ such that

@@ -1,6 +1,6 @@
 # Alternating binomial sums of shifted Stirling numbers of the second kind
 
-**Alternating binomial sums of shifted Stirling numbers of the second kind.** Write
+Write
 $S(n, k)$ for the Stirling numbers of the second kind. For all natural numbers $i, j, N \ge 1$,
 the following identity holds in the rational numbers:
 

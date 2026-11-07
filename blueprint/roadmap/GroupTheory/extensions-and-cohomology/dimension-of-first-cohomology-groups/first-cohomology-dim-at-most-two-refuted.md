@@ -1,6 +1,6 @@
 # Mazurov's question on first cohomology (Kourovka 16.55) has a negative answer
 
-**Mazurov's question on first cohomology (Kourovka 16.55) has a negative answer.** There exist a
+There exist a
 field $k$, a finite group $G$ and a faithful absolutely irreducible representation of $G$ on a
 finite-dimensional $k$-vector space $V$ such that the first cohomology group $H^1(G, V)$ has
 dimension greater than $2$ over $k$.

@@ -1,6 +1,6 @@
 # Zeroth bi-periodic Fibonacci number squared
 
-**Zeroth bi-periodic Fibonacci number squared.** For elements $a$ and $b$ of a field $K$, the
+For elements $a$ and $b$ of a field $K$, the
 bi-periodic Fibonacci number squared $q^2_0$ equals $0$.
 
 ## Sources

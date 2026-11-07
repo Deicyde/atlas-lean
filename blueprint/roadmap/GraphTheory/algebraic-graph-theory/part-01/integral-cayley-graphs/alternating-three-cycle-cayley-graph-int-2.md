@@ -1,6 +1,6 @@
 # The 3-cycle Cayley graph of the alternating group is integral
 
-**The 3-cycle Cayley graph of the alternating group is integral.** For every $n \ge 3$, let $S$ be
+For every $n \ge 3$, let $S$ be
 the set of $3$-cycles $(1\,2\,k)$ with $3 \le k \le n$ in the alternating group $A_n$, and let
 $R = S \cup S^{-1}$. Then the Cayley graph $\mathrm{Cay}(A_n, R)$, whose vertices are the elements
 of $A_n$ with distinct $x$ and $y$ adjacent when $x^{-1} y \in R$ or $y^{-1} x \in R$, is

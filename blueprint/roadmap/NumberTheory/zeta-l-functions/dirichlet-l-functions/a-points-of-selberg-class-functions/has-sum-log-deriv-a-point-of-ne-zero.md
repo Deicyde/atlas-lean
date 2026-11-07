@@ -1,6 +1,6 @@
 # Lemma 6, case a ≠ 0 (expansion of the logarithmic derivative)
 
-**Lemma 6, case a ≠ 0 (expansion of the logarithmic derivative).** Let $F$ be a function in
+Let $F$ be a function in
 the Selberg class with Dirichlet coefficients $a(n)$, let $k \ge 1$ and let $a \in \mathbb{C}$ with
 $a \ne 0$. Then there is a real number $E$ such that for every $s \in \mathbb{C}$ with
 $\operatorname{Re} s \ge E$,

@@ -1,6 +1,6 @@
 # Riesel covering data
 
-**Riesel covering data.** Let $k$ be a natural number and let $S$ be a finite set of triples
+Let $k$ be a natural number and let $S$ be a finite set of triples
 $(r, m, p)$ of natural numbers. Then $S$ is Riesel covering data for $k$ (data producing $k$ as a
 Riesel number by the covering system method) when every integer is congruent to $r$ modulo $m$
 for some $(r, m, p) \in S$, distinct triples in $S$ have distinct third entries $p$, and every

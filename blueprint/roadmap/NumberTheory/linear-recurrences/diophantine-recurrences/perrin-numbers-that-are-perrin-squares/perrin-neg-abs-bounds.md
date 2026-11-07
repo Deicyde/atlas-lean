@@ -1,6 +1,6 @@
 # Size of the Perrin numbers at negative indices
 
-**Size of the Perrin numbers at negative indices.** Let $\alpha$ be a real number with
+Let $\alpha$ be a real number with
 $\alpha^3 = \alpha + 1$ (the real root of $X^3 - X - 1$), and let $R_{-k}$ denote the Perrin
 sequence extended to negative indices. For every integer $k \ge 6$,
 

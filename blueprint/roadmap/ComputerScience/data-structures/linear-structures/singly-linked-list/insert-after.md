@@ -1,6 +1,6 @@
 # Inserting a node after another in a singly linked list
 
-**Inserting a node after another in a singly linked list.** Let a store $S$ assign to each
+Let a store $S$ assign to each
 identity below $n$ either nothing or a singly linked list node whose next pointer is an identity
 below $n$ or NIL, and let $x$ and $y$ be identities whose store entries are nodes. Inserting $x$
 after $y$ first replaces cell $x$ by the node of $x$ with next pointer replaced by the next

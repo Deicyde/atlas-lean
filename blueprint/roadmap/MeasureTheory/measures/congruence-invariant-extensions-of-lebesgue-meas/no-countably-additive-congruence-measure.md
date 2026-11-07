@@ -1,6 +1,6 @@
 # No countably additive congruence-invariant measure on all plane sets
 
-**No countably additive congruence-invariant measure on all plane sets.** The countably additive reading is false in ZFC. Sketch: let
+The countably additive reading is false in ZFC. Sketch: let
 `V₀ ⊆ [0,1]` meet each `ℚ`-coset of `ℝ` exactly once (Vitali selector)
 and put `V = V₀ × [0,1]`. Enumerating `ℚ ∩ [-1,1]` as `(qₙ)`, the
 translates `Tₙ = V + (qₙ, 0)` are pairwise disjoint, each congruent to

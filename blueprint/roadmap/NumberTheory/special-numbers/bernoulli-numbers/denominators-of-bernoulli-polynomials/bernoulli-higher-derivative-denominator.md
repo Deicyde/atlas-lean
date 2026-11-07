@@ -1,6 +1,6 @@
 # Denominators of higher derivatives of Bernoulli polynomials
 
-**Denominators of higher derivatives of Bernoulli polynomials.** For $m \ge 0$ let
+For $m \ge 0$ let
 $\mathfrak{D}_m$ be the denominator of the Bernoulli polynomial $B_m(x)$, and for $k \ge 1$ let
 $\mathfrak{D}_n^{(k)}$ be the denominator of the $k$-th derivative $B_n^{(k)}(x)$ of $B_n(x)$.
 Write $(n)_k = n(n-1)\cdots(n-k+1)$ for the falling factorial, $s_p(m)$ for the sum of the

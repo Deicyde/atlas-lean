@@ -1,6 +1,6 @@
 # Kernel vectors are velocities of curves in a regular level set
 
-**Kernel vectors are velocities of curves in a regular level set.** Let $E$ be a real
+Let $E$ be a real
 Banach space, $f : E \to \mathbb{R}$ a $C^1$ function, $c \in \mathbb{R}$, and $x \in E$ a point
 with $f(x) = c$ at which the derivative $Df(x) : E \to \mathbb{R}$ is surjective. Then for every
 $v \in E$ with $Df(x)v = 0$ there is a curve $\gamma : \mathbb{R} \to E$ with $\gamma(0) = x$,

@@ -1,6 +1,6 @@
 # Shannon expansion
 
-**Shannon expansion.** Let $f$ assign a truth value to every valuation of the atoms. The
+Let $f$ assign a truth value to every valuation of the atoms. The
 Shannon expansion $S(\ell, f)$ of $f$ over a list $\ell$ of atoms is defined by recursion on
 $\ell$. For the empty list it is $\bot \to \bot$ if $f$ is true at the valuation that makes every
 atom false, and $\bot$ otherwise. For the list $x \cdot \ell$ with head $x$ and tail $\ell$,

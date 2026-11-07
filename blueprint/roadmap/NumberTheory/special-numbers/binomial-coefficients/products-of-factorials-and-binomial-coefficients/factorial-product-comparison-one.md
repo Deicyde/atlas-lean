@@ -1,6 +1,6 @@
 # Value of the factorial-product comparison function at $1$
 
-**Value of the factorial-product comparison function at $1$.** For every natural number
+For every natural number
 $k$, the factorial-product comparison function $P_k$ satisfies $P_k(1) = k^k (2\pi k/e)^{1/2}$.
 
 ## Sources

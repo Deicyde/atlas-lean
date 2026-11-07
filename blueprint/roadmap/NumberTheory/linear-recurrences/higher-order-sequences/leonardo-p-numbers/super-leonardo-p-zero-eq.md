@@ -1,6 +1,6 @@
 # Homogeneous supergeneralized Leonardo p-numbers via Fibonacci p-numbers
 
-**Homogeneous supergeneralized Leonardo p-numbers via Fibonacci p-numbers.** For all
+For all
 natural numbers $p \ge 1$ and $n$ and every real sequence $x$, the supergeneralized Leonardo
 $p$-numbers $\mathcal{L}_{p,0,x}$ with $k = 0$ satisfy $\mathcal{L}_{p,0,x}(n) = x_n$ if
 $n \le p$, and if $n > p$, with $F_p$ denoting the Fibonacci $p$-numbers,

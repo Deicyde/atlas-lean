@@ -1,6 +1,6 @@
 # The counter program's run
 
-**The counter program's run.** Let $k$ be a polynomial with natural-number coefficients, let
+Let $k$ be a polynomial with natural-number coefficients, let
 $c, e, d, n$ be natural numbers, and put $m = n + 1 + k(n)$ and $T = (m + c)^e$. Start the
 counter program for $k, c, e, d$ at its first label with any flag, any output stack $o$, the
 scratch counter $N$ equal to $n$ and every other counter equal to $0$. Then, in a number of

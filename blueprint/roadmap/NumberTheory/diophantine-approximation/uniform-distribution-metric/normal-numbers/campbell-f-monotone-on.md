@@ -1,6 +1,6 @@
 # Monotonicity of Campbell's interpolation
 
-**Monotonicity of Campbell's interpolation.** Campbell's interpolation $f$ is monotone
+Campbell's interpolation $f$ is monotone
 (non-decreasing) on $[0, \infty)$: for all real numbers $x$ and $y$ with $0 \le x \le y$,
 $f(x) \le f(y)$.
 

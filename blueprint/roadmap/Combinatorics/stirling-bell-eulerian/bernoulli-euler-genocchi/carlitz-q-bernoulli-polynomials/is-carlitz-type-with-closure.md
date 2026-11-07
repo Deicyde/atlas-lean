@@ -1,6 +1,6 @@
 # Closure properties of Carlitz-type sequences
 
-**Closure properties of Carlitz-type sequences.** Let $q > 0$ with $q \ne 1$ be real, and let
+Let $q > 0$ with $q \ne 1$ be real, and let
 $(T_n)$ be a Carlitz-type sequence of functions $\mathbb{R} \to \mathbb{R}$ with associated real
 sequence $(a_k)$. Then:
 (i) $n q^x T_{n-1}(x)$ is Carlitz-type with associated sequence $(q - 1) k a_{k-1}$;

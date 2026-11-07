@@ -1,6 +1,6 @@
 # Quantifier elimination yields quantifier-free formulas
 
-**Quantifier elimination yields quantifier-free formulas.** Let $\mathrm{qe}$ be the quantifier
+Let $\mathrm{qe}$ be the quantifier
 elimination map on formulas. For every formula $\varphi$, the formula $\mathrm{qe}(\varphi)$ is
 quantifier free.
 

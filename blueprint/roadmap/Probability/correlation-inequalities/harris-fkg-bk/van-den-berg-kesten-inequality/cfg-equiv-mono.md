@@ -1,3 +1,3 @@
 # Monotonicity of configuration relabeling
 
-**Monotonicity of configuration relabeling.** `cfgEquiv e` is monotone.
+`cfgEquiv e` is monotone.

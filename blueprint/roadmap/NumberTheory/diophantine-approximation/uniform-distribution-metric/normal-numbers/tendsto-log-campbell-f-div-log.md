@@ -1,6 +1,6 @@
 # Growth exponent of Campbell's interpolation
 
-**Growth exponent of Campbell's interpolation.** For Campbell's interpolation $f$,
+For Campbell's interpolation $f$,
 $\log f(x) / \log x \to 2$ as $x \to \infty$ over the reals; that is, $\eta(f) = 2$, where
 $\eta(h) = \lim_{x \to \infty} \log h(x) / \log x$.
 

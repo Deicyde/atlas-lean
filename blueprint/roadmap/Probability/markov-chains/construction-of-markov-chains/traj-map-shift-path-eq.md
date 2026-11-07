@@ -1,6 +1,6 @@
 # The shifted trajectory of a Markov chain restarts from its last state
 
-**The shifted trajectory of a Markov chain restarts from its last state.** Let $\kappa$ be a
+Let $\kappa$ be a
 Markov kernel on a measurable space $S$, let $n \in \mathbb{N}$ and let
 $x = (x_0, \dots, x_n) \in S^{\{0, \dots, n\}}$. Let $P_x$ be the trajectory measure on
 $S^{\mathbb{N}}$ of the lifted kernel of $\kappa$ started at time $n$ from the history $x$, and

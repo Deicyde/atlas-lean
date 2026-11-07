@@ -1,6 +1,6 @@
 # Positions with at most $k$ pebbles on every vertex are P-positions
 
-**Positions with at most $k$ pebbles on every vertex are P-positions.** Let $G$ be a simple
+Let $G$ be a simple
 graph on the vertices $0, \dots, n-1$ and let $k$ be a natural number. In the
 $(k+1:k)$-pebbling game on $G$, every position with at most $k$ pebbles on each vertex is a
 P-position.

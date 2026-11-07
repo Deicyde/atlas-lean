@@ -1,6 +1,6 @@
 # Tail bound for sums of inverse powers
 
-**Tail bound for sums of inverse powers.** For natural numbers $m \ge 2$ and $s \ge 1$,
+For natural numbers $m \ge 2$ and $s \ge 1$,
 $\sum_{n = s+1}^{\infty} n^{-m} < \dfrac{1}{(m-1)\, s^{m-1}}$.
 
 ## Sources

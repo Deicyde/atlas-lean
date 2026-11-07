@@ -1,3 +1,3 @@
 # Symmetry of single-position codon changes
 
-**Symmetry of single-position codon changes.** Differing at exactly one position is symmetric.
+Differing at exactly one position is symmetric.

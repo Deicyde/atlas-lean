@@ -1,6 +1,6 @@
 # Occurrence set of a digit block
 
-**Occurrence set of a digit block.** For an integer $k$ and a word $w = w_1 w_2 \cdots w_\ell$
+For an integer $k$ and a word $w = w_1 w_2 \cdots w_\ell$
 of natural numbers, the occurrence set of $w$ at position $k$ is the set of natural numbers $N$
 that have a base phi expansion $S$ (the set of positions of its digits $1$) whose digits
 $d_k d_{k-1} \cdots d_{k-\ell+1}$ spell $w$: for each $j = 1, \dots, \ell$, the position

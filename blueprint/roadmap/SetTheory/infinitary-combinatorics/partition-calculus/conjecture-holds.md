@@ -1,6 +1,6 @@
 # Erdős Problem 591 is true
 
-**Erdős Problem 591 is true.** Let $\alpha = \omega^{\omega^2}$. For every red/blue colouring of
+Let $\alpha = \omega^{\omega^2}$. For every red/blue colouring of
 the edges of the complete graph on the ordinals less than $\alpha$, that is, every pair of
 complementary simple graphs (red and blue) on this set, there is a red clique whose order type
 is $\alpha$ or a blue clique with exactly $3$ elements. In partition notation,

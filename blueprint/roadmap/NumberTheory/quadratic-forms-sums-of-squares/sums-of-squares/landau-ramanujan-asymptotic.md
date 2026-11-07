@@ -1,6 +1,6 @@
 # Landau–Ramanujan theorem
 
-**Landau–Ramanujan theorem.** For real $x$, let $B(x)$ be the number of natural numbers
+For real $x$, let $B(x)$ be the number of natural numbers
 $m \le x$, including $m = 0$, that can be written as $m = a^2 + b^2$ with natural numbers $a$
 and $b$. Then there is a constant $c_0 > 0$ such that $B(x)$ is asymptotically equivalent to
 $c_0 x / \sqrt{\log x}$ as $x \to \infty$.

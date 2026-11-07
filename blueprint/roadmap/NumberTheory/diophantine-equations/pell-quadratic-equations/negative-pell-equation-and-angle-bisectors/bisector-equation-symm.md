@@ -1,6 +1,6 @@
 # Symmetries of the bisector equation
 
-**Symmetries of the bisector equation.** Let $a, b, c$ be real numbers with
+Let $a, b, c$ be real numbers with
 $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$. Then the triples $(-a, -b, -c)$ and $(b, a, c)$
 satisfy the same equation, and so does $(a, b, -c^{-1})$ when $c \ne 0$.
 

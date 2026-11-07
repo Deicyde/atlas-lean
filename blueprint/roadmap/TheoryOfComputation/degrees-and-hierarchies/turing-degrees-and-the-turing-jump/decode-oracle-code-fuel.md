@@ -1,6 +1,6 @@
 # Fuel-indexed decoder of oracle codes
 
-**Fuel-indexed decoder of oracle codes.** Write $\langle a, b \rangle$ for the pairing
+Write $\langle a, b \rangle$ for the pairing
 bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ of the Gödel numbering. Given a fuel $f$,
 a tag $t$ and a payload $p$, the decoder either returns an oracle code or fails; to decode a
 number $n = \langle n_1, n_2 \rangle$ with fuel $f$ means to run it with fuel $f$, tag $n_1$ and

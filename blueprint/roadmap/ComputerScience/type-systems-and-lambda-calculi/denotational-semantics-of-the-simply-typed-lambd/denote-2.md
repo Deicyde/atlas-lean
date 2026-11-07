@@ -1,6 +1,6 @@
 # Denotation of an STLC term
 
-**Denotation of an STLC term.** Given an interpretation $I$ of the base types, the denotation of
+Given an interpretation $I$ of the base types, the denotation of
 a well-typed term $t$ of type $A$ in context $\Gamma$ in an environment $\eta$ for $\Gamma$ is the
 element of the denotation of $A$ defined by recursion on $t$: a variable $x$ denotes $\eta(x)$, an
 application $f\,a$ denotes the denotation of $f$ applied to the denotation of $a$ (both in

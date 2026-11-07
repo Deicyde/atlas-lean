@@ -1,6 +1,6 @@
 # Odd-to-even ratio of $k$-full numbers
 
-**Odd-to-even ratio of $k$-full numbers.** Let $k \ge 2$. For a natural number $N$ let
+Let $k \ge 2$. For a natural number $N$ let
 $K_o(N)$ and $K_e(N)$ be the numbers of odd and of even $k$-full numbers $n \le N$. Then
 $K_o(N)/K_e(N) \to 2 - 2^{1 - 1/k}$ as $N \to \infty$.
 

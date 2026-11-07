@@ -1,6 +1,6 @@
 # The full derivative of a distribution
 
-**The full derivative of a distribution.** Let $E$ be a real normed space, $\Omega \subseteq E$
+Let $E$ be a real normed space, $\Omega \subseteq E$
 an open set and $F$ a real topological vector space, and let $\mathcal{D}'(\Omega, F)$ be the
 space of $F$-valued distributions on $\Omega$ (continuous linear maps from the real-valued test
 functions on $\Omega$ to $F$), with the topology of uniform convergence on compact sets of test

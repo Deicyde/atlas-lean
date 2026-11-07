@@ -1,6 +1,6 @@
 # Quadratic reciprocity for the Kronecker symbol, positive $D \equiv 1 \pmod 4$
 
-**Quadratic reciprocity for the Kronecker symbol, positive $D \equiv 1 \pmod 4$.** Let $D$ be a
+Let $D$ be a
 positive integer with $D \equiv 1 \pmod 4$ and let $p$ be an odd prime. Then the Jacobi symbol
 $\left(\frac{p}{|D|}\right)$ equals the Kronecker symbol $\left(\frac{D}{p}\right)$.
 

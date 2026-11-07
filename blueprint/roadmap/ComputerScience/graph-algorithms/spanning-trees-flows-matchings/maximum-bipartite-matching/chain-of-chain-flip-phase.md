@@ -1,6 +1,6 @@
 # Shortest chains from a vertex whose level a phase keeps were chains before it
 
-**Shortest chains from a vertex whose level a phase keeps were chains before it.** Let $\mu$
+Let $\mu$
 be a valid partner array whose first free round is defined, and let $\mu'$ be obtained from $\mu$
 by flipping all the paths of the phase of $\mu$. Let $z$ be a right vertex and $m$ a natural
 number such that $z$ is first reached in round $m + 1$ of the layered search both for $\mu$ and

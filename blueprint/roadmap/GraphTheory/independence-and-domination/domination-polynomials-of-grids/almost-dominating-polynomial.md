@@ -1,6 +1,6 @@
 # Almost dominating polynomial
 
-**Almost dominating polynomial.** Let $R$ be a finite graph (the row), $n$ a natural number
+Let $R$ be a finite graph (the row), $n$ a natural number
 and $\sigma$ an assignment of a domination state to each vertex of $R$. Let $H$ be the box
 product of $R$ with the path on the vertices $0, \dots, n$, so that the last row of $H$ consists
 of the vertices $(i, n)$. Relative to a vertex set $S$ of $H$, a vertex is occupied if it lies in

@@ -1,6 +1,6 @@
 # Alternating two-binomial Catalan convolution of U and V
 
-**Alternating two-binomial Catalan convolution of U and V.** Let $p$ be an integer and let $U$
+Let $p$ be an integer and let $U$
 and $V$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so that $U_0 = 0$, $U_1 = 1$, $V_0 = 2$,
 $V_1 = p$, and both satisfy $X_{j+2} = p X_{j+1} + X_j$. Writing $C_j$ for the $j$-th Catalan
 number, for every natural number $n$

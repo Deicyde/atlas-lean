@@ -1,6 +1,6 @@
 # Hirschhorn's constant
 
-**Hirschhorn's constant.** Let $A$ be the Glaisher–Kinkelin constant and $F_1$ the first
+Let $A$ be the Glaisher–Kinkelin constant and $F_1$ the first
 factorial product constant. As $n \to \infty$,
 
 $$n^{-1/12} \prod_{k=1}^{n} \frac{k!}{\sqrt{2\pi k}\,(k/e)^k}

@@ -1,6 +1,6 @@
 # The empty path selects the seed
 
-**The empty path selects the seed.** For every TRIP-Stern tree $T$, the node of $T$ selected
+For every TRIP-Stern tree $T$, the node of $T$ selected
 by the empty binary path is the seed of $T$.
 
 ## Sources

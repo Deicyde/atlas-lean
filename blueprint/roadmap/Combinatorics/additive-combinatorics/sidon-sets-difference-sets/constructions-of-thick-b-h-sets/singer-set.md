@@ -1,6 +1,6 @@
 # Generalized Singer set
 
-**Generalized Singer set.** Let $F$ be a finite field with $q$ elements, let $K$ be a field
+Let $F$ be a finite field with $q$ elements, let $K$ be a field
 extension of $F$, let $\theta \in K$, let $h$ and $b$ be natural numbers, and put
 $M = (q^{h+1} - 1)/(q - 1)$. The generalized Singer set $\mathrm{Singer}_h(q, b)$ is the set of
 residues $a \in \mathbb{Z}/M\mathbb{Z}$ such that $\theta^a = u\theta^b + v$ for some

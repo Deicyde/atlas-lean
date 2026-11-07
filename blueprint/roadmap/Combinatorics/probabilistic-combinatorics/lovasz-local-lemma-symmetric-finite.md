@@ -1,6 +1,6 @@
 # Symmetric Lovász Local Lemma
 
-**Symmetric Lovász Local Lemma.** Let $\Omega$ be a finite set with a probability mass function
+Let $\Omega$ be a finite set with a probability mass function
 $P$, that is, $P(\omega) \ge 0$ for every $\omega \in \Omega$ and
 $\sum_{\omega \in \Omega} P(\omega) = 1$, and write $\Pr[E] = \sum_{\omega \in E} P(\omega)$ for
 $E \subseteq \Omega$. Let $(A_i)_{i \in I}$ be a family of events indexed by a finite set $I$,

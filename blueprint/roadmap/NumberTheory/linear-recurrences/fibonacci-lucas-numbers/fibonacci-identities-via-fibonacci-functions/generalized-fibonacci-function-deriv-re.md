@@ -1,6 +1,6 @@
 # Real part of the derivative of the generalized Fibonacci function at integers
 
-**Real part of the derivative of the generalized Fibonacci function at integers.** Let $p$
+Let $p$
 be a real number and let $W : \mathbb{Z} \to \mathbb{R}$ satisfy $W_{j+2} = p W_{j+1} + W_j$ for
 every integer $j$. Put $\delta = \sqrt{p^2 + 4}$, $\sigma = (p + \delta)/2$,
 $\tau = (p - \delta)/2$, $A = W_1 - W_0 \tau$ and $B = W_1 - W_0 \sigma$. For an integer $m$,

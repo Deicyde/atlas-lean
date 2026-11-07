@@ -1,6 +1,6 @@
 # Half-period symmetry of the repetend of $1/n$
 
-**Half-period symmetry of the repetend of $1/n$.** Let $n$ be a natural number whose unit
+Let $n$ be a natural number whose unit
 group $(\mathbb{Z}/n\mathbb{Z})^\times$ is cyclic, let $L > 0$ be even, and let $b < n$ be a
 natural number whose multiplicative order modulo $n$ is $L$. For natural numbers $m$ write
 $b_m = b^m \bmod n$ and $r_m = \lfloor b^{m+1}/n \rfloor \bmod b$, the $m$-th base-$b$ digit of

@@ -1,6 +1,6 @@
 # Hausdorff continuity on compact convex sets
 
-**Hausdorff continuity on compact convex sets.** Let $E$ be a real normed space, let
+Let $E$ be a real normed space, let
 $K \subseteq E$, let $f$ be a map from subsets of $E$ to subsets of $E$, and write $d_H$ for the
 Hausdorff distance between subsets of $E$. Then $f$ is Hausdorff continuous on the compact convex
 subsets of $K$ if for every nonempty compact convex set $X \subseteq K$ and every

@@ -1,6 +1,6 @@
 # Prefix-restricted reciprocal terms
 
-**Prefix-restricted reciprocal terms.** For natural numbers $b$, $d$, $k$, $n$ and $m$, write
+For natural numbers $b$, $d$, $k$, $n$ and $m$, write
 $L(x)$ for the number of base-$b$ digits of $x$. The term is $1/m$ when $m$ is positive,
 $L(n) \le L(m)$, the leading-digits integer of $m$ keeping its first $L(n)$ digits equals $n$,
 and $m$ has exactly $k$ occurrences of $d$ in base $b$; otherwise the term is $0$. For $b \ge 2$

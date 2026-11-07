@@ -1,6 +1,6 @@
 # The value of $R(4, 4)$
 
-**The value of $R(4, 4)$.** The classical Ramsey number $R(4, 4)$ equals $18$.
+The classical Ramsey number $R(4, 4)$ equals $18$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Run-wise Rabin/Streett duality
 
-**Run-wise Rabin/Streett duality.** Let $r$ be a Rabin automaton and let $s$ be an infinite
+Let $r$ be a Rabin automaton and let $s$ be an infinite
 sequence of states. Then $s$ satisfies the Rabin condition of $r$, that is, for some Rabin pair
 $(E, F)$ of $r$ the sequence $s$ visits $E$ infinitely often and $F$ only finitely often, if and
 only if $s$ fails the Streett condition with the same pairs, that is, it is not the case that for

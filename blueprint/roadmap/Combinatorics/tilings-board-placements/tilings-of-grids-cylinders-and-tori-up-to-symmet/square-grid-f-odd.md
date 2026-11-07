@@ -1,6 +1,6 @@
 # Square-grid tilings fixed by the reflection $f$ for odd $n$
 
-**Square-grid tilings fixed by the reflection $f$ for odd $n$.** Let $n$ be an odd positive
+Let $n$ be an odd positive
 integer, let $T$ be a finite set, let $\sigma$ be a permutation of $T$ with $\sigma^2 = 1$, and
 write $t_\sigma$ for the number of elements $t \in T$ with $\sigma(t) = t$. Let $f$ be the
 reflection of the grid $(\mathbb{Z}/n\mathbb{Z})^2$ given by $f(x, y) = (-1 - x, y)$. Then the

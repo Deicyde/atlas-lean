@@ -1,6 +1,6 @@
 # The $d$-dimensional extremal function of the empty pattern vanishes
 
-**The $d$-dimensional extremal function of the empty pattern vanishes.** For all natural
+For all natural
 numbers $d$ and $n$, $\operatorname{ex}(n, M_\emptyset, d) = 0$.
 
 ## Sources

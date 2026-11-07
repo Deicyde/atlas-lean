@@ -1,6 +1,6 @@
 # Unified recurrences for consecutive high extremal points of $J_3$
 
-**Unified recurrences for consecutive high extremal points of $J_3$.** For every natural
+For every natural
 number $i$, let $a$ and $b$ be the $(i+1)$-th and $(i+2)$-th smallest high extremal points of the
 Josephus function $J_3$. In the integers, put $r = a \bmod 2$, $f = a - J_3(a)$ and
 $s = \lfloor (3a + 2 - r)/2 \rfloor \bmod 2$. Then

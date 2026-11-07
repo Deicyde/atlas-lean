@@ -1,6 +1,6 @@
 # Isoperimetric inequality
 
-**Isoperimetric inequality.** Let $g$ be a continuous, $1$-periodic, Lipschitz map from
+Let $g$ be a continuous, $1$-periodic, Lipschitz map from
 $\mathbb{R}$ to the Euclidean plane $\mathbb{R}^2$ that is injective on $[0, 1)$, so that its
 image $C = g(\mathbb{R})$ is a simple closed curve, and suppose $C$ has finite
 one-dimensional Hausdorff measure. Let $U \subseteq \mathbb{R}^2$ be a bounded, connected open

@@ -1,6 +1,6 @@
 # Moves of simplified P&R
 
-**Moves of simplified P&R.** The simplified Princess and the Roses game on four sorted piles
+The simplified Princess and the Roses game on four sorted piles
 $(a, b, c, d)$ has seven moves, given as the amounts removed from $(a, b, c, d)$: $(1, 0, 0, 0)$,
 $(0, 1, 0, 0)$, $(0, 0, 0, 1)$, $(1, 1, 0, 0)$, $(1, 0, 0, 1)$, $(0, 1, 0, 1)$ and $(0, 0, 1, 1)$.
 

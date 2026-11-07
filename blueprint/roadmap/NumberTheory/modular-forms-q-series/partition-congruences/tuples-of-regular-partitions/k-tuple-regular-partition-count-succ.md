@@ -1,6 +1,6 @@
 # Recurrence for tuples of $\ell$-regular partitions
 
-**Recurrence for tuples of $\ell$-regular partitions.** For all natural numbers $\ell$, $k$
+For all natural numbers $\ell$, $k$
 and $n$, writing $r_\ell(i)$ for the number of $\ell$-regular partitions of $i$ and
 $T_{\ell,k}(n)$ for the number of $k$-tuples of $\ell$-regular partitions with total $n$,
 

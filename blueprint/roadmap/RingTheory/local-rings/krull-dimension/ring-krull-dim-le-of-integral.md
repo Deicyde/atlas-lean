@@ -1,6 +1,6 @@
 # Krull dimension does not increase along integral algebras
 
-**Krull dimension does not increase along integral algebras.** Let $A$ and $B$ be commutative
+Let $A$ and $B$ be commutative
 rings and let $B$ be an $A$-algebra that is integral over $A$. Then the Krull dimension of $B$ is
 at most the Krull dimension of $A$.
 

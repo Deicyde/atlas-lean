@@ -1,6 +1,6 @@
 # Six disjoint families in the sumset of the Chu family set
 
-**Six disjoint families in the sumset of the Chu family set.** Let $k$, $l$, $t$ be positive
+Let $k$, $l$, $t$ be positive
 integers, let $A \subseteq \mathbb{Z}$ be the Chu family set with parameters $k$, $l$, $t$, and
 let $P = 8kl + 8l + 8$. Let $X_1$, $X_2$, $X_4$, $X_5$ be the sets of the integers
 $Pj + (4k + 4)i + 4$, $Pj + (4k + 4)i + 8$, $Pj + 4kl + 4l + (4k + 4)i + 8$ and

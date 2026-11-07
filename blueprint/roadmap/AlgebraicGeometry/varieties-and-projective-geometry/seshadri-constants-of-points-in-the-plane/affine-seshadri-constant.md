@@ -1,6 +1,6 @@
 # Seshadri constant of ten affine points
 
-**Seshadri constant of ten affine points.** For a configuration
+For a configuration
 $x = (x_0, \dots, x_9)$ of ten points of $\mathbb{C}^2$, not necessarily distinct, the
 affine Seshadri constant of $x$ is the infimum of the ratios
 $\deg f / \sum_{i=0}^{9} \operatorname{mult}_{x_i} f$ over all nonzero polynomials

@@ -1,6 +1,6 @@
 # Parisse's coefficients at $n$ from their values at $-1$
 
-**Parisse's coefficients at $n$ from their values at $-1$.** Let $n \in \mathbb{Z}$. For
+Let $n \in \mathbb{Z}$. For
 $j, k \in \mathbb{N}$ let $e_{j,k}(n)$ be the elementary symmetric polynomial of degree $k$ in
 $n + 1, \dots, n + j$, let $b_{j,k}(n) = (-1)^k e_{j,j-k}(n)$ for $k \le j$ and $b_{j,k}(n) = 0$
 for $k > j$, let

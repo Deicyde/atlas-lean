@@ -1,3 +1,3 @@
 # Four unit faces at a lattice site
 
-**Four unit faces at a lattice site.** The four unit faces having the site `c` as a corner.
+The four unit faces having the site `c` as a corner.

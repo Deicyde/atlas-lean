@@ -1,6 +1,6 @@
 # Membership in a lattice cube
 
-**Membership in a lattice cube.** For $t, m \in \mathbb{N}$ and $a, x \in \mathbb{N}^t$,
+For $t, m \in \mathbb{N}$ and $a, x \in \mathbb{N}^t$,
 the point $x$ lies in the lattice cube with least corner $a$ and side $m$ if and only if
 $a_i \le x_i < a_i + m$ for every coordinate $i$.
 

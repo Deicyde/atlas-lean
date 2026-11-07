@@ -1,6 +1,6 @@
 # Half-open interval between increasing endpoints
 
-**Half-open interval between increasing endpoints.** For real numbers $\alpha$ and $\beta$,
+For real numbers $\alpha$ and $\beta$,
 write $\langle \alpha, \beta \rangle$ for $[\alpha, \beta)$ if $\alpha < \beta$ and for
 $(\beta, \alpha]$ otherwise. If $\alpha < \beta$, then
 $\langle \alpha, \beta \rangle = [\alpha, \beta)$.

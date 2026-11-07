@@ -1,6 +1,6 @@
 # Small values of the divide-and-conquer D-node count
 
-**Small values of the divide-and-conquer D-node count.** The divide-and-conquer D-node count
+The divide-and-conquer D-node count
 $\delta$ satisfies $\delta(2) = 0$, $\delta(3) = 1$, $\delta(4) = 0$, $\delta(5) = 2$,
 $\delta(6) = 2$ and $\delta(7) = 2$.
 

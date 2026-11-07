@@ -1,6 +1,6 @@
 # Shadow Markoff mutation
 
-**Shadow Markoff mutation.** A state is a pair $(x, y)$ of a classical part
+A state is a pair $(x, y)$ of a classical part
 $x \in \mathbb{Q}^3$ and a shadow part $y \in \mathbb{Q}^3$, with coordinates indexed by the
 positions $0, 1, 2$. The shadow Markoff mutation at position $i$ replaces $x_i$ by
 $x_i' = \bigl(\sum_{j \ne i} x_j^2\bigr) / x_i$ and $y_i$ by

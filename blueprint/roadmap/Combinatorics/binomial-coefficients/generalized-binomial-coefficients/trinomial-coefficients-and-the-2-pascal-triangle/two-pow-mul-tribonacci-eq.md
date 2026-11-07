@@ -1,6 +1,6 @@
 # Tribonacci numbers from every third term of A077943
 
-**Tribonacci numbers from every third term of A077943.** Let $T_n$ be the Tribonacci
+Let $T_n$ be the Tribonacci
 numbers, $T_0 = T_1 = 0$, $T_2 = 1$ and $T_{n+3} = T_{n+2} + T_{n+1} + T_n$. Let
 $(y_n)_{n \ge 0}$ be a sequence of integers with $y_0 = y_1 = 0$, $y_2 = 1$ and
 $y_{n+3} = 2y_{n+2} - 2y_{n+1} + 2y_n$ for all $n \ge 0$ (the sequence A077943). Then for

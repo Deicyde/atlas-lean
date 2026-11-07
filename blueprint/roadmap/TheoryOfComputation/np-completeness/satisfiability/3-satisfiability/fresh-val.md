@@ -1,6 +1,6 @@
 # Values of the fresh variables in the 3SAT translation
 
-**Values of the fresh variables in the 3SAT translation.** For an assignment
+For an assignment
 $v : \mathbb{N} \to \mathrm{Bool}$, a CNF formula $\varphi$ and a natural number $w$, the value
 $f_v(\varphi, w)$ is defined by recursion on $\varphi$. For the empty formula it is false. For a
 formula with first clause $C$ and remaining clauses $\varphi'$, let $N'$ be the next free fresh

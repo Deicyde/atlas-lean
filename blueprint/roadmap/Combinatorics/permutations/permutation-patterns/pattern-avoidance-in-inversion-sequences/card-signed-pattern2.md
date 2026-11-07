@@ -1,6 +1,6 @@
 # Number of length-2 signed patterns
 
-**Number of length-2 signed patterns.** There are exactly twelve length-2 signed patterns.
+There are exactly twelve length-2 signed patterns.
 
 ## Sources
 

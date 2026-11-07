@@ -1,6 +1,6 @@
 # Razborov: monotone circuits for clique need superpolynomial size
 
-**Razborov: monotone circuits for clique need superpolynomial size.** For every polynomial
+For every polynomial
 $p$ with natural-number coefficients there is a natural number $n$ with the following property.
 Let $C$ be a well-formed monotone flat circuit on $n^2$ inputs, that is, every gate of $C$ is an
 input variable, an and gate or an or gate, and refers only to earlier gates. Suppose that for

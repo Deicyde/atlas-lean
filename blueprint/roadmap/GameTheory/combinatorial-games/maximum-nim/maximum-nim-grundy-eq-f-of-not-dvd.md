@@ -1,6 +1,6 @@
 # Maximum Nim Grundy numbers at non-multiples of the divisor
 
-**Maximum Nim Grundy numbers at non-multiples of the divisor.** Let $k \ge 2$ and let $G$
+Let $k \ge 2$ and let $G$
 be the Grundy number of Maximum Nim with rule function $f(y) = \lfloor y/k \rfloor$. If $x$ is a
 natural number not divisible by $k$, then $G(x) = G(\lfloor (k-1)x/k \rfloor)$.
 

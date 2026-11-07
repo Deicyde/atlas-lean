@@ -1,6 +1,6 @@
 # Optimal capacity-3 schedules with fastest single returns
 
-**Optimal capacity-3 schedules with fastest single returns.** Let $n \ge 1$ and consider the
+Let $n \ge 1$ and consider the
 people $1, \dots, n$, person $i$ having crossing time $i$, on a bridge of capacity $3$ with one
 torch. Then some schedule has total time equal to the optimal crossing time $T_3(n)$ and the
 following property: every return (a crossing at an odd position, counting from $0$) carries a

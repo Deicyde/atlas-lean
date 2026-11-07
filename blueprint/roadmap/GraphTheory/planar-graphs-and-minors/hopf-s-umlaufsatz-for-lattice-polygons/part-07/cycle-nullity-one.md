@@ -1,3 +1,3 @@
 # Cycle graph has cycle rank one
 
-**Cycle graph has cycle rank one.** The cycle graph has nullity (cycle rank) `1`.
+The cycle graph has nullity (cycle rank) `1`.

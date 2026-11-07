@@ -1,6 +1,6 @@
 # Isometric characterization of the unilateral shift
 
-**Isometric characterization of the unilateral shift.** Let $H$ be a separable complex
+Let $H$ be a separable complex
 Hilbert space, and call a bounded linear operator $T : H \to H$ a shift if there is an
 orthonormal basis $(e_n)_{n \in \mathbb{N}}$ of $H$ with $T e_n = e_{n+1}$ for every
 $n \in \mathbb{N}$. Then a bounded linear operator $T : H \to H$ is a shift if and only if the

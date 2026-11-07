@@ -1,6 +1,6 @@
 # Grundy number of a pile of four in halving Maximum Nim
 
-**Grundy number of a pile of four in halving Maximum Nim.** In Maximum Nim with rule
+In Maximum Nim with rule
 function $f(x) = \lfloor x/2 \rfloor$, a pile of $4$ stones has Grundy number $2$.
 
 ## Sources

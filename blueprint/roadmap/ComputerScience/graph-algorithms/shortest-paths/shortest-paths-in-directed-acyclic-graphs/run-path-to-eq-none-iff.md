@@ -1,6 +1,6 @@
 # Predecessor extraction fails exactly at infinite distances
 
-**Predecessor extraction fails exactly at infinite distances.** Let $E$ be a list of
+Let $E$ be a list of
 integer-weighted directed edges on the vertices $\{0, \dots, n-1\}$, $s$ a source vertex, and
 $\sigma$ a topological order of the directed graph with an edge $u \to v$ for each edge of $E$
 from $u$ to $v$. After the one-pass relaxation of $E$ from $s$ in the order $\sigma$, for every

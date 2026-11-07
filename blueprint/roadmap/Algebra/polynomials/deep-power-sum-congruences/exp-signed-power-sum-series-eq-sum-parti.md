@@ -1,6 +1,6 @@
 # Exponential of a power-sum series restricted to a set of degrees
 
-**Exponential of a power-sum series restricted to a set of degrees.** Let $\sigma$ be a finite
+Let $\sigma$ be a finite
 set of variables, and in $\mathbb{Q}[x_i : i \in \sigma]$ let $p_s = \sum_{i \in \sigma} x_i^s$
 be the $s$-th power sum. Let $S$ be a set of natural numbers and let
 $P_S(t) = \sum_{s \in S,\ s \ge 1} \frac{(-1)^{s-1}}{s} p_s t^s$. For a partition $\lambda$ of

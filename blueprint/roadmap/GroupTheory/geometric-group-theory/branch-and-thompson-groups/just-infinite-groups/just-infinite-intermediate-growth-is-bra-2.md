@@ -1,6 +1,6 @@
 # Just infinite groups of intermediate growth need not be branch groups
 
-**Just infinite groups of intermediate growth need not be branch groups.** It is not the case
+It is not the case
 that every finitely generated just infinite group of intermediate growth is a branch group: the
 Kourovka Archive answers Problem 15.17 "No, not every".
 

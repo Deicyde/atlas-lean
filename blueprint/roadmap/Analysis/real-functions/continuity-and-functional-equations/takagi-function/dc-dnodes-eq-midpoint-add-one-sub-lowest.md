@@ -1,6 +1,6 @@
 # Midpoint identity for the divide-and-conquer D-node count
 
-**Midpoint identity for the divide-and-conquer D-node count.** Let $\delta$ be the
+Let $\delta$ be the
 divide-and-conquer D-node count. Let $k$ and $r$ be natural numbers with $0 < r < 2^k$, put
 $n = 2^k + r$, and let $\nu_2(r)$ be the position of the lowest nonzero binary digit of $r$,
 counted from $0$ (the exponent of the largest power of $2$ dividing $r$). Then

@@ -1,6 +1,6 @@
 # Sentinel insertion preserves the circular list
 
-**Sentinel insertion preserves the circular list.** Let $S$ be a store of $n$ cells, each
+Let $S$ be a store of $n$ cells, each
 empty or holding a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is
 not NIL, and the cell it points to is allocated. Suppose $S$ circularly represents the list $L$
 of cells with sentinel $s$, that $L$ is the concatenation of lists $B$ and $A$, and that $y$ is

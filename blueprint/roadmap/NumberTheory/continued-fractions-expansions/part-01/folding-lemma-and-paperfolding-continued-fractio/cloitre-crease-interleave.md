@@ -1,6 +1,6 @@
 # Interleaving creases into a Cloitre word
 
-**Interleaving creases into a Cloitre word.** Given a sequence $c : \mathbb{N} \to \mathbb{N}$
+Given a sequence $c : \mathbb{N} \to \mathbb{N}$
 and a start index $j$, the crease interleaving of a finite word $w$ of natural numbers reads $w$
 from left to right as letters $(2)$ and $(1, 1)$ and inserts $c_j, c_{j+1}, c_{j+2}, \dots$ after
 the successive letters. Precisely, the empty word gives the empty word; a word $2, w'$ gives

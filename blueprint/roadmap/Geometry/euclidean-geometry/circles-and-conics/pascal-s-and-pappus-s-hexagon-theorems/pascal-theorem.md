@@ -1,6 +1,6 @@
 # Pascal's theorem in an affine plane
 
-**Pascal's theorem in an affine plane.** Let $k$ be a field of characteristic different from
+Let $k$ be a field of characteristic different from
 $2$ and let $P$ be an affine plane over $k$, that is, an affine space whose space of translations
 $V$ is a $k$-vector space of dimension $2$. Fix a point $O \in P$ and a nondegenerate symmetric
 bilinear form $\beta$ on $V \times k$, and call the set of points $x \in P$ with

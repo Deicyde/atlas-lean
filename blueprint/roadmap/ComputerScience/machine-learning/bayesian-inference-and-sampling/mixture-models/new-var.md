@@ -1,6 +1,6 @@
 # M-step variance update for an isotropic Gaussian mixture
 
-**M-step variance update for an isotropic Gaussian mixture.** Given data points
+Given data points
 $x_0, \dots, x_{N-1}$ in $\mathbb{R}^d$, valid parameters $\theta$ of a $K$-component isotropic
 Gaussian mixture and a component $k$, the updated variance of $k$ is
 $\sigma_k'^2 = S_k / (d N_k)$, where $r_{nk}$ is the responsibility of component $k$ for $x_n$

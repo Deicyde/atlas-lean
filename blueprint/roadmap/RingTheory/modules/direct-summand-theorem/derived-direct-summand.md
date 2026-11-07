@@ -1,6 +1,6 @@
 # Derived direct summand theorem
 
-**Derived direct summand theorem.** Let $A$ be a regular commutative ring, let $X$ be a
+Let $A$ be a regular commutative ring, let $X$ be a
 scheme and let $f \colon X \to \operatorname{Spec} A$ be a proper morphism that is surjective on
 underlying points. Let $\varphi \colon A \to \Gamma(X, \mathcal{O}_X)$ be the ring map
 corresponding to $f$, and let $R\Gamma$ be the right derived functor, between bounded-below

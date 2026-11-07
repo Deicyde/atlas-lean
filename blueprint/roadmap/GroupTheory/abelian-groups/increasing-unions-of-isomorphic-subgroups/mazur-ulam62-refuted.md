@@ -1,6 +1,6 @@
 # Refutation of Scottish Book Problem 62
 
-**Refutation of Scottish Book Problem 62.** The claim of Scottish Book Problem 62 is false:
+The claim of Scottish Book Problem 62 is false:
 there are an abelian group $G$ and subgroups $H_0 \le H_1 \le H_2 \le \cdots$ of $G$ whose
 union is $G$, each isomorphic to $H_1$, such that $G$ is not isomorphic to $H_1$.
 

@@ -1,6 +1,6 @@
 # Binomial product with a geometric series
 
-**Binomial product with a geometric series.** For every field $K$ of characteristic $0$, every
+For every field $K$ of characteristic $0$, every
 power series $A(x)$ over $K$ and every $\beta \in K$,
 
 $$A(x) \odot \frac{1}{1 - \beta x} = \frac{1}{1 - \beta x} A\left(\frac{x}{1 - \beta x}\right),$$

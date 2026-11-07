@@ -1,6 +1,6 @@
 # Converse of Poisson's theorem for urns
 
-**Converse of Poisson's theorem for urns.** Let $(\Omega, \mu)$ be a probability space, let
+Let $(\Omega, \mu)$ be a probability space, let
 $(p_n)_{n \ge 0}$ be real numbers in $[0, 1]$, and let $(X_n)_{n \ge 0}$ be pairwise independent
 measurable real random variables on $\Omega$ such that each $X_n$ almost surely takes only the
 values $0$ and $1$, and $\mu(X_n = 1) = p_n$. Then for every real number $L$ and almost every

@@ -1,6 +1,6 @@
 # Fermat polygonal number theorem
 
-**Fermat polygonal number theorem.** For every natural number $s \ge 3$, every natural
+For every natural number $s \ge 3$, every natural
 number $n$ is a sum of at most $s$ $s$-gonal numbers: there are a finite set $T$ with at most $s$
 elements and natural numbers $k_i$ for $i \in T$ such that $n = \sum_{i \in T} P_s(k_i)$, where
 $P_s(m) = (s - 2)\binom{m}{2} + m$ is the $m$-th $s$-gonal number. The $k_i$ may repeat, and

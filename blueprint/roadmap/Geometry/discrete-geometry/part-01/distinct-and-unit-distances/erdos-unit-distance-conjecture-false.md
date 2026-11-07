@@ -1,6 +1,6 @@
 # Erdős's unit distance conjecture is false
 
-**Erdős's unit distance conjecture is false.** There is a real number $\delta > 0$ such that for
+There is a real number $\delta > 0$ such that for
 every natural number $N$ there are an integer $n \ge N$ and a set $P$ of exactly $n$ points in the
 Euclidean plane $\mathbb{R}^2$ with at least $n^{1+\delta}$ unordered pairs of points of $P$ at
 distance exactly $1$.

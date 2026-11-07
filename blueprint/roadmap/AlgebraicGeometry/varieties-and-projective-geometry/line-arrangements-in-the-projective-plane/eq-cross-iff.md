@@ -1,6 +1,6 @@
 # Two distinct lines meet in their cross product
 
-**Two distinct lines meet in their cross product.** Let $K$ be a field and let $v \ne w$ be
+Let $K$ be a field and let $v \ne w$ be
 two distinct points of the projective plane $\mathbb{P}(K^3)$. Call two points orthogonal when
 the dot product of representative vectors in $K^3$ vanishes, and let $v \times w$ be the point
 spanned by the cross product of representatives of $v$ and $w$, which is nonzero since

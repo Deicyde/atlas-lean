@@ -1,6 +1,6 @@
 # Witt's formula for the number of Lyndon words of given content
 
-**Witt's formula for the number of Lyndon words of given content.** Let $r$ be a natural
+Let $r$ be a natural
 number and let $n_0, \dots, n_{r-1}$ be natural numbers with $n = n_0 + \dots + n_{r-1} > 0$.
 Order the alphabet $\{0, \dots, r-1\}$ as the natural numbers and order words over it
 lexicographically. Then the number of Lyndon words over this alphabet in which each letter $i$

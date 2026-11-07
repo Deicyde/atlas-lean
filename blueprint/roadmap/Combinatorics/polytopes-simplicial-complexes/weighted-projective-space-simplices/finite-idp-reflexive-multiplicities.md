@@ -1,6 +1,6 @@
 # Finitely many reflexive IDP multiplicity vectors
 
-**Finitely many reflexive IDP multiplicity vectors.** Let $r_1 < r_2 < \dots < r_d$ be
+Let $r_1 < r_2 < \dots < r_d$ be
 positive integers such that $r_j \nmid r_d$ for some $j < d$. Then there are only finitely
 many vectors $x = (x_1, \dots, x_d)$ of positive integers for which the weighted projective
 simplex $\Delta_{(1,q)}$ is reflexive and has the integer decomposition property, where

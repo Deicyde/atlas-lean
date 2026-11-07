@@ -1,6 +1,6 @@
 # Wiener–Lévy theorem
 
-**Wiener–Lévy theorem.** Let $T > 0$, and let $f : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$ be a
+Let $T > 0$, and let $f : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$ be a
 continuous function in the Wiener algebra. Let $U \subseteq \mathbb{C}$ be an open set containing
 the range of $f$, and let $\varphi : \mathbb{C} \to \mathbb{C}$ be analytic at every point of $U$.
 Then there is a continuous function $g : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$ with

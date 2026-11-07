@@ -1,6 +1,6 @@
 # Jordan normal form
 
-**Jordan normal form.** Let $A$ be a square matrix over a field $K$, with rows and columns indexed
+Let $A$ be a square matrix over a field $K$, with rows and columns indexed
 by a finite set $N$, whose characteristic polynomial splits into linear factors over $K$. Then $A$
 is similar to a block-diagonal matrix of Jordan blocks: there are $k \in \mathbb{N}$, positive
 integers $s_0, \dots, s_{k-1}$, scalars $\mu_0, \dots, \mu_{k-1} \in K$, an invertible matrix $P$

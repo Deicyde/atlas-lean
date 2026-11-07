@@ -1,6 +1,6 @@
 # Combined tail of a measure
 
-**Combined tail of a measure.** For a measure $\mu$ on $\mathbb{R}$ and a real number $x$,
+For a measure $\mu$ on $\mathbb{R}$ and a real number $x$,
 the combined tail of $\mu$ at $x$ is the real number $\mu((x, \infty)) + \mu((-\infty, -x))$,
 where each of the two measures is converted from $[0, \infty]$ to a real number, an infinite
 value becoming $0$.

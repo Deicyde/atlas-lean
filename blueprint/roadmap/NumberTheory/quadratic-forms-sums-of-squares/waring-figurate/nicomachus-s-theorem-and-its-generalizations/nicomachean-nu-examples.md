@@ -1,6 +1,6 @@
 # Examples of the Nicomachean defect
 
-**Examples of the Nicomachean defect.** For the Nicomachean defect $\nu$ of a sequence of
+For the Nicomachean defect $\nu$ of a sequence of
 integers, $\nu(1, 2, 3, 4) = 0$, $\nu(1, 2) = 0$, $\nu(3, 3, 3) = 0$,
 $\nu(1, 2, 2, 3, 4, 5, 6, 8) = 0$ and $\nu(1, 2, 2, 3, 4, 6, 6, 8) = -28$.
 

@@ -1,6 +1,6 @@
 # Finite continued fraction with polynomial partial quotients
 
-**Finite continued fraction with polynomial partial quotients.** Let $F$ be a field, let
+Let $F$ be a field, let
 $a_0, a_1, a_2, \ldots$ be polynomials in $F[X]$ and let $n \in \mathbb{N}$. The continued
 fraction $[a_0; a_1, \ldots, a_n]$ is the generalized continued fraction over the field $F(X)$ of
 rational functions with integral part $a_0$ and, for $1 \le i \le n$, an $i$th term with partial

@@ -1,6 +1,6 @@
 # Simultaneous minimum and maximum
 
-**Simultaneous minimum and maximum.** Given a list $xs$ over a linearly ordered type, the
+Given a list $xs$ over a linearly ordered type, the
 paired algorithm returns no result when $xs$ is empty and otherwise returns a pair (a candidate
 minimum and a candidate maximum), counting one unit of time for each comparison of elements. On a
 one-element list $[a]$ it returns $(a, a)$ without a comparison. On a longer list of odd length

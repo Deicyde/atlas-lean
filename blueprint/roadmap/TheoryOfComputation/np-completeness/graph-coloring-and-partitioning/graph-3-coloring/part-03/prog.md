@@ -1,6 +1,6 @@
 # The 3-COLOR emitter machine
 
-**The 3-COLOR emitter machine.** The TM2 program, with the stacks, stack alphabets and
+The TM2 program, with the stacks, stack alphabets and
 labels of the emitter and a Boolean local state, that builds the 3-COLOR instance of a CNF
 formula from its token stack. It first pushes the palette triangle on the output stack and
 adds $3$ to the next free vertex $N$. It then reads the clauses one at a time. For each

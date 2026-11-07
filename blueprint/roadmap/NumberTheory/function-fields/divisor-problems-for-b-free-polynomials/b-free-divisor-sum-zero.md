@@ -1,6 +1,6 @@
 # The $B_\kappa$-free divisor sum at degree zero
 
-**The $B_\kappa$-free divisor sum at degree zero.** Let $F$ be a field and let $\kappa$ assign
+Let $F$ be a field and let $\kappa$ assign
 to each polynomial in $F[T]$ a natural number, with $\kappa(P) \ne 0$ for every monic irreducible
 $P$. Call $f \in F[T]$ $B_\kappa$-free when $P^{\kappa(P)}$ does not divide $f$ for any monic
 irreducible $P$, let $d_h(f)$ be the number of $h$-tuples of monic polynomials with product $f$,

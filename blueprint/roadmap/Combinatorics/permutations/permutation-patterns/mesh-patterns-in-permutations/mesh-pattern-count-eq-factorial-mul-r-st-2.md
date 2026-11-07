@@ -1,6 +1,6 @@
 # Counting permutations by mesh-pattern matches
 
-**Counting permutations by mesh-pattern matches.** Let $2 \le k \le n$ and let $j$ be a
+Let $2 \le k \le n$ and let $j$ be a
 natural number. For a permutation $\sigma$ of $\{1, \dots, n\}$, let $p$ be the position of its
 largest entry, and call a position $i$ a match if $\sigma(t) < \sigma(i)$ for every position
 $t < i$ and at least $k - 1$ positions $q$ with $i < q < p$ have $\sigma(q) > \sigma(i)$. Let

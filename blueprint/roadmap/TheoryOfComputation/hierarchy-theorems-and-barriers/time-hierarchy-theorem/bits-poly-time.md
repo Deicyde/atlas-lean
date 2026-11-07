@@ -1,6 +1,6 @@
 # The readout on raw bits in polynomial time
 
-**The readout on raw bits in polynomial time.** A finite multi-stack Turing machine, whose
+A finite multi-stack Turing machine, whose
 input and output alphabets are identified with the bits, together with a polynomial time bound,
 such that for every bit list $l$, given $l$ as its input, it halts within the bound, evaluated at
 $|l|$, with output the one-bit list $[b]$, where $b$ is true if and only if $l$ differs from the

@@ -1,6 +1,6 @@
 # Even-index coefficients of the mock theta function $\lambda$
 
-**Even-index coefficients of the mock theta function $\lambda$.** Write
+Write
 $\lambda(q) = \sum_{n \ge 0} P_\lambda(n) q^n$ for the sixth-order mock theta function $\lambda$,
 let $f_k = \prod_{m \ge 1} (1 - q^{km})$, and let $b_2^3(m)$ be the coefficient of $q^m$ in
 $(f_2/f_1)^3$. Then for every $n \ge 0$,

@@ -1,6 +1,6 @@
 # Certificate clauses of the initial row (I4)
 
-**Certificate clauses of the initial row (I4).** Let $L$ be a layout with label block size
+Let $L$ be a layout with label block size
 $A$, $K$ stacks and $g$ symbol codes, let $k_0$ be a stack, let $y = (y_1, \dots, y_r)$ be a list
 of natural numbers and let $n, m, T, H$ be natural numbers. For a depth $j$ and a code $x$ write
 $C_{j,x} = A + (k_0 H + j)g + x$ for the row-$0$ variable saying that stack $k_0$ holds code $x$

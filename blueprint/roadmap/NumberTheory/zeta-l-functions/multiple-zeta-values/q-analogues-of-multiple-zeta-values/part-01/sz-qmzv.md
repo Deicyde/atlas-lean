@@ -1,6 +1,6 @@
 # Schlesinger–Zudilin qMZVs
 
-**Schlesinger–Zudilin qMZVs.** For an index $k = (k_1, \dots, k_r)$ of natural numbers, the
+For an index $k = (k_1, \dots, k_r)$ of natural numbers, the
 Schlesinger–Zudilin qMZV $\zeta_q^{SZ}(k)$ is the formal power series in $q$ over $\mathbb{Q}$
 whose coefficient of $q^N$, for each $N \ge 0$, is the coefficient of $q^N$ in the partial sum
 

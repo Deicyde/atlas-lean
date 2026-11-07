@@ -1,6 +1,6 @@
 # Instantiating the outermost bound variable of a formula
 
-**Instantiating the outermost bound variable of a formula.** Let $L$ be a first-order
+Let $L$ be a first-order
 language, $t$ an $L$-term with free variables in $\alpha$, and $\varphi$ a bounded $L$-formula with
 free variables in $\alpha$ and $m + 1$ bound variables $0, \dots, m$. The instantiation of $t$ in
 $\varphi$ is the bounded formula with free variables in $\alpha$ and $m$ bound variables obtained

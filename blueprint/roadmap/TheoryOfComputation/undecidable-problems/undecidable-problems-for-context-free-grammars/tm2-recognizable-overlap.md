@@ -1,6 +1,6 @@
 # The overlap problem for context-free grammars is recognizable
 
-**The overlap problem for context-free grammars is recognizable.** Let $T$ be an alphabet
+Let $T$ be an alphabet
 with a primitive recursive coding into the natural numbers and decidable equality. For an
 encoded context-free grammar $G$ over $T$, write $L(G)$ for the language it generates. The
 problem $\mathrm{OVERLAP}_{\mathrm{CFG}}$, the set of pairs $(G, H)$ of encoded context-free

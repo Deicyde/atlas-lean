@@ -1,6 +1,6 @@
 # Values of the localization-to-local-ring map on fractions
 
-**Values of the localization-to-local-ring map on fractions.** Let $R \to S \to T$ be
+Let $R \to S \to T$ be
 homomorphisms of commutative rings whose algebra structures form a scalar tower, let
 $\mathfrak p$ be a prime ideal of $R$, and let $\mathfrak Q$ be a prime ideal of $T$ lying over
 $\mathfrak p$. Write $S_{\mathfrak p}$ for the localization of $S$ at the image of

@@ -1,6 +1,6 @@
 # Difference identities for a Möbius–Frobenius fixed point
 
-**Difference identities for a Möbius–Frobenius fixed point.** Let $K$ be a finite field with
+Let $K$ be a finite field with
 $q$ elements, let $A, B, C, D \in K[x]$ with $\Delta = AD - BC \ne 0$, and let
 $\alpha \in K((x^{-1}))$ be irrational with $\alpha = (A \alpha^q + B) / (C \alpha^q + D)$. Let
 $P, Q \in K[x]$ with $Q \ne 0$, put $R_1 = DP - BQ$, $S_1 = -CP + AQ$, $R_2 = AP^q + BQ^q$ and

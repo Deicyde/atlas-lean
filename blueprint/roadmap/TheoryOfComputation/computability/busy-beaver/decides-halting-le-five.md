@@ -1,6 +1,6 @@
 # ZFC-like theories decide halting through five states
 
-**ZFC-like theories decide halting through five states.** For every ZFC-like presentation
+For every ZFC-like presentation
 $Z$ and every $n \le 5$, the theory presented by $Z$ decides halting for $n$-state machines: for
 every $n$-state machine it proves the machine's halting sentence or its non-halting sentence.
 

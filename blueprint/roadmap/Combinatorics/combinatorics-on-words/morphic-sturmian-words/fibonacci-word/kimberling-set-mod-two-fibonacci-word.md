@@ -1,6 +1,6 @@
 # Kimberling's set modulo 2 is the Fibonacci word
 
-**Kimberling's set modulo 2 is the Fibonacci word.** Let $K$ be the set of natural numbers
+Let $K$ be the set of natural numbers
 obtained from $1$ by finitely many applications of the maps $x \mapsto 2x$ and
 $x \mapsto 4x - 1$. Let $S$ be a strictly increasing sequence of natural numbers whose set
 of values is $K$, and let $w$ be the binary sequence with $w(n) = 1$ if $S(n + 1)$ is odd

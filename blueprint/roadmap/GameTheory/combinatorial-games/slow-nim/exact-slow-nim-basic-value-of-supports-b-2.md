@@ -1,6 +1,6 @@
 # Moves at a position supported by an (A0) basic vector (Lemma 2)
 
-**Moves at a position supported by an (A0) basic vector (Lemma 2).** Let $k \ge 1$, let
+Let $k \ge 1$, let
 $B$ be the basic-vector value on $\mathbb{N}^{k+1}$, and let $x, z \in \mathbb{N}^{k+1}$ with
 $z \le x$ componentwise, where $z$ is a basic vector of type (A0) with parameter $B(x)$. Let $j$
 be a pile with $x_i > 0$ for every $i \ne j$, and let $x'$ be obtained from $x$ by removing one

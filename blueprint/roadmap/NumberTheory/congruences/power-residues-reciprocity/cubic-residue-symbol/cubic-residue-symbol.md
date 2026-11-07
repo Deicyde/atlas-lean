@@ -1,6 +1,6 @@
 # Cubic residue symbol modulo an element
 
-**Cubic residue symbol modulo an element.** Let $K$ be a number field that is the third
+Let $K$ be a number field that is the third
 cyclotomic extension of $\mathbb{Q}$, with ring of integers $\mathcal{O}_K$, let $\zeta \in K$ be
 a primitive cube root of unity and let $\omega$ be $\zeta$ regarded as an element of
 $\mathcal{O}_K$. For $a \in \mathcal{O}_K$ and a cubic residue denominator $n$ (that is,

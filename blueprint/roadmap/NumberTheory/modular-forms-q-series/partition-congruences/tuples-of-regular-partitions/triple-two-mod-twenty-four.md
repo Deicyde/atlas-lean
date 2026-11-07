@@ -1,6 +1,6 @@
 # Congruences modulo 24 for triples of 2-regular partitions
 
-**Congruences modulo 24 for triples of 2-regular partitions.** Let $T_2(n)$ be the number of
+Let $T_2(n)$ be the number of
 triples of 2-regular partitions (partitions with no even part) whose sizes add up to $n$. If
 $t$ is a positive integer with $\gcd(t, 6) = 1$ and $N \in \{33, 57\}$, then for every natural
 number $n$,

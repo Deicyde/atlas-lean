@@ -1,6 +1,6 @@
 # Shift identity for generalized Leonardo numbers
 
-**Shift identity for generalized Leonardo numbers.** Let $k$ be an integer and let $L_{k,n}$
+Let $k$ be an integer and let $L_{k,n}$
 denote the generalized Leonardo numbers. For all natural numbers $m$, $n$, $t$ with
 $1 \le t \le n$ and $n + 1 \le m + t$,
 

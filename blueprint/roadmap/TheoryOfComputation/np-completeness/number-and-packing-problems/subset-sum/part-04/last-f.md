@@ -1,6 +1,6 @@
 # Whether a bit string ends in false
 
-**Whether a bit string ends in false.** For a Boolean $z$ and a list of bits $p$, the value
+For a Boolean $z$ and a list of bits $p$, the value
 is $z$ when $p$ is empty and the negation of the last bit of $p$ otherwise. So if $z$ records
 whether the bits read so far end in false, the value records whether those bits followed by $p$
 end in false.

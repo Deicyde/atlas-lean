@@ -1,6 +1,6 @@
 # Provisional engagement in the Gale–Shapley algorithm
 
-**Provisional engagement in the Gale–Shapley algorithm.** Let $P$ be a preference profile for
+Let $P$ be a preference profile for
 $n$ men and $n$ women, with positions in each ranking numbered $0, \dots, n - 1$, and consider
 the state of the men-proposing Gale–Shapley algorithm in which each man $i'$ has proposed to the
 women at the positions $r' < p(i')$ of his ranking. Man $i$ is provisionally engaged in this

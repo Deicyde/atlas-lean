@@ -1,6 +1,6 @@
 # Finset and predicate iterations from the top agree
 
-**Finset and predicate iterations from the top agree.** Let $\alpha$ be a finite type, let $f$
+Let $\alpha$ be a finite type, let $f$
 map subsets of $\alpha$ to subsets of $\alpha$, and let $F$ map predicates on $\alpha$ to
 predicates on $\alpha$. For $Z \subseteq \alpha$ write $P_Z$ for the predicate
 $t \mapsto t \in Z$, and suppose that for every $Z \subseteq \alpha$ and every $s \in \alpha$,

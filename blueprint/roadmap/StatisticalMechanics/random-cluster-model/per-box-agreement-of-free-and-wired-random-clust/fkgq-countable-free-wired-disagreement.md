@@ -1,6 +1,6 @@
 # Per-box uniqueness of the random-cluster measures off a countable set
 
-**Per-box uniqueness of the random-cluster measures off a countable set.** For `d ≥ 1`,
+For `d ≥ 1`,
 `q ≥ 1`, and every box `Λ_N`, the free and wired infinite-volume random-cluster measures on
 `ℤ^d` at `p = logistic(t)` give the same mass to every increasing event of `Λ_N`, for all `t`
 outside a countable set.

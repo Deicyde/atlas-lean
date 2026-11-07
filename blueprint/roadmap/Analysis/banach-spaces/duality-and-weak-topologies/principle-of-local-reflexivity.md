@@ -1,6 +1,6 @@
 # Principle of local reflexivity
 
-**Principle of local reflexivity.** Let $E$ be a Banach space over $\mathbb{K} = \mathbb{R}$ or
+Let $E$ be a Banach space over $\mathbb{K} = \mathbb{R}$ or
 $\mathbb{C}$, with dual $E^*$, bidual $E^{**}$ and canonical embedding $J \colon E \to E^{**}$.
 Let $M$ and $N$ be finite-dimensional normed spaces over $\mathbb{K}$ with injective bounded
 linear maps $i_M \colon M \to E^{**}$ and $i_N \colon N \to E^*$, and let $\varepsilon > 0$. Then

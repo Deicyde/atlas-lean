@@ -1,6 +1,6 @@
 # NN-equivalence of monotone Boolean functions
 
-**NN-equivalence of monotone Boolean functions.** Let $f$ and $g$ be monotone $n$-variable
+Let $f$ and $g$ be monotone $n$-variable
 Boolean functions. Then $f$ and $g$ are NN-equivalent ($g$ is obtained from $f$ by negating
 some inputs and possibly the output) if and only if either $g = f$, or $g(x) = \lnot f(x \oplus a)$
 for all $x$, where $a \in \{0,1\}^n$ has $a_i = 1$ exactly for the variables $x_i$ on which $f$

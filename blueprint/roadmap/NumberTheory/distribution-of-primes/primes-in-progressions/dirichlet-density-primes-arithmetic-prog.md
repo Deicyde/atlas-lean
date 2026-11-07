@@ -1,6 +1,6 @@
 # Dirichlet density of primes in an arithmetic progression
 
-**Dirichlet density of primes in an arithmetic progression.** Let $a$ and $m$ be natural numbers
+Let $a$ and $m$ be natural numbers
 with $m > 0$ and $\gcd(a, m) = 1$, and let $\varphi$ be Euler's totient function. As the real
 number $s$ tends to $1$ from above,
 

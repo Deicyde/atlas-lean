@@ -1,6 +1,6 @@
 # The meta-automatic sequence $\mathcal{M}_1$ is balanced
 
-**The meta-automatic sequence $\mathcal{M}_1$ is balanced.** Reading the values of the
+Reading the values of the
 meta-automatic sequence $\mathcal{M}_1$ as $0$ and $1$, we have
 $\mathcal{M}_1(2n) + \mathcal{M}_1(2n+1) = 1$ for every $n \in \mathbb{N}$.
 

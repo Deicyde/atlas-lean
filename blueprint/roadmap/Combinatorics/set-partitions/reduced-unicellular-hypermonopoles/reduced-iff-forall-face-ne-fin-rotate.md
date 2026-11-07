@@ -1,6 +1,6 @@
 # Criterion for a hypermap with a cyclic vertex permutation to have no bud
 
-**Criterion for a hypermap with a cyclic vertex permutation to have no bud.** Let $\sigma$ be
+Let $\sigma$ be
 the cyclic permutation $i \mapsto i + 1$ (modulo $n$) of $\{0, 1, \dots, n - 1\}$. A permutation
 $\alpha$ of $\{0, 1, \dots, n - 1\}$ has no fixed point if and only if
 $\pi = \alpha^{-1} \circ \sigma$ satisfies $\pi(i) \ne i + 1$ (modulo $n$) for every $i$.

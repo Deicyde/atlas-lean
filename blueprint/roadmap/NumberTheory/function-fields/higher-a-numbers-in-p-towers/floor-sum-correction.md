@@ -1,6 +1,6 @@
 # The correction term $A_{x^{-1}}$ for sums of floors
 
-**The correction term $A_{x^{-1}}$ for sums of floors.** For a natural number $p$, a rational
+For a natural number $p$, a rational
 $x$ and a natural number $n$, let $x_D$ be the prime-to-$p$ part of the denominator of $x$, write
 $\lbrace t \rbrace = t - \lfloor t \rfloor$ for the fractional part of $t$, and put
 $y = x^{-1} p^n$ (with $y = 0$ when $x = 0$). Define

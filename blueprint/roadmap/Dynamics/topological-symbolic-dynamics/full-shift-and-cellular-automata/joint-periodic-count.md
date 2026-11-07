@@ -1,6 +1,6 @@
 # Joint periodic count
 
-**Joint periodic count.** For $k \in \mathbb{N}$ and a map $f$ from the full shift
+For $k \in \mathbb{N}$ and a map $f$ from the full shift
 $\{0, \dots, N-1\}^{\mathbb{Z}}$ on $N$ symbols to itself, $P(f, k)$ is the number of
 configurations $x$ with $\sigma^k(x) = x$, where $\sigma$ is the unit shift given by
 $(\sigma x)_i = x_{i+1}$, that are also periodic for $f$, that is, $f^n(x) = x$ for some

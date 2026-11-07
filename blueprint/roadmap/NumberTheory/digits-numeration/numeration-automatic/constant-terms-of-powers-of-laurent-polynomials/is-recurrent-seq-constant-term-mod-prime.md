@@ -1,6 +1,6 @@
 # Recurrence of constant-term sequences modulo a prime
 
-**Recurrence of constant-term sequences modulo a prime.** Let $p$ be a prime and let $P$ and
+Let $p$ be a prime and let $P$ and
 $Q$ be Laurent polynomials in $r$ variables with integer coefficients; write $\mathrm{ct}[F]$ for
 the constant term of a Laurent polynomial $F$. If $p \nmid \mathrm{ct}[P^{n_0}]$ for some
 $n_0 > 0$, then the sequence of residues $(\mathrm{ct}[P^n Q] \bmod p)_{n \ge 0}$ in

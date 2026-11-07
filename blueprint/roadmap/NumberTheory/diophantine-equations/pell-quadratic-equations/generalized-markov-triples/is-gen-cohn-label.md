@@ -1,6 +1,6 @@
 # Fraction labels of generalized Cohn matrices
 
-**Fraction labels of generalized Cohn matrices.** Let $k$ be a natural number and $\ell$ an
+Let $k$ be a natural number and $\ell$ an
 integer, and write a pair $(a, b)$ of natural numbers as the fraction $a/b$. An integer
 $2 \times 2$ matrix $C$ is labeled by the fraction $q$, written $C = C_q(k, \ell)$, if there is a
 path $w$ from the root such that, for one of the three positions (first, second or third), $C$

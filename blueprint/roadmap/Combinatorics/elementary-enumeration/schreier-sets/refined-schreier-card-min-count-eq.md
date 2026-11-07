@@ -1,6 +1,6 @@
 # Refined Schreier sets with a given minimum and partitions with a given top gap
 
-**Refined Schreier sets with a given minimum and partitions with a given top gap.** Let
+Let
 $n$, $\ell$, $k$ and $q$ be natural numbers with $n \ge \ell + 1$, $k \ge 2$ and $q \ge 1$.
 Let $F_{n,\ell}$ be the family of finite sets $A$ of natural numbers such that $A$ has largest
 element $n + 1$ and at least three elements, $A$ is sparse (the differences of consecutive

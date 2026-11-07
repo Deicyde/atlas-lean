@@ -1,6 +1,6 @@
 # Large Sidon sets have many isolated sums
 
-**Large Sidon sets have many isolated sums.** For every natural number $M \ge 1$ there is a
+For every natural number $M \ge 1$ there is a
 natural number $K$ such that every finite Sidon set $A$ of natural numbers with at least $K$
 elements has at least $M$ isolated elements in its sumset $A + A = \{x + y : x, y \in A\}$. Here
 $A$ is a Sidon set when $a + b = c + d$ with $a, b, c, d \in A$ implies $\{a, b\} = \{c, d\}$,

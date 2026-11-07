@@ -1,6 +1,6 @@
 # I-Wilf-equivalence of 101 and 110 alongside 102, 120, 210
 
-**I-Wilf-equivalence of 101 and 110 alongside 102, 120, 210.** Write a length-3 pattern as the
+Write a length-3 pattern as the
 word of its values, so $101$ is the pattern $(1, 0, 1)$, and for a set $S$ of patterns let
 $|I_n(S)|$ be the number of inversion sequences of length $n$ that avoid every pattern in $S$.
 Let $B_\tau = \{100, \tau, 102, 120, 210\}$ and $C_\tau = \{\tau, 102, 120, 201, 210\}$. Then for

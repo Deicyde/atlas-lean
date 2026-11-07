@@ -1,6 +1,6 @@
 # A conflict-serializable schedule has an acyclic precedence graph
 
-**A conflict-serializable schedule has an acyclic precedence graph.** If a schedule $s$ in
+If a schedule $s$ in
 which no operation occurs twice is conflict-serializable, then the precedence graph of $s$ is
 acyclic.
 

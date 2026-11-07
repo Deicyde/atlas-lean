@@ -1,6 +1,6 @@
 # Nicol numbers
 
-**Nicol numbers.** A Nicol number is a positive integer $n$ that divides
+A Nicol number is a positive integer $n$ that divides
 $\varphi(n) + \sigma(n)$, where $\varphi$ is Euler's totient function and $\sigma(n)$ is the sum
 of the positive divisors of $n$.
 

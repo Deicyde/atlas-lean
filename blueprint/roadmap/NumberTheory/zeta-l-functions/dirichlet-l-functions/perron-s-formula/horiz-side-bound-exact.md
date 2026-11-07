@@ -1,6 +1,6 @@
 # Horizontal side bound for the Perron integrand on $(c, U)$
 
-**Horizontal side bound for the Perron integrand on $[c, U]$.** Let $y > 0$ with
+Let $y > 0$ with
 $\log y \ne 0$, let $c \le U$ and $T > 0$ be real numbers, and let $\tau = T$ or $\tau = -T$.
 Then
 

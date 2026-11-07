@@ -1,6 +1,6 @@
 # Trivial lower bound for the real sum-product exponent
 
-**Trivial lower bound for the real sum-product exponent.** The real sum-product exponent is at
+The real sum-product exponent is at
 least $1$. Here the exponent is $\liminf_{n \to \infty} m(n)$, where $m(n)$ is the infimum of
 $\log \max(|A+A|, |AA|) / \log |A|$ over all sets $A$ of $n$ real numbers, and $A+A$ and $AA$ are
 the sumset and the product set of $A$.

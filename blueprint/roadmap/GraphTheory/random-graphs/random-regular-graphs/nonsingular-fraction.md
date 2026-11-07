@@ -1,6 +1,6 @@
 # Proportion of regular graphs with nonsingular adjacency matrix
 
-**Proportion of regular graphs with nonsingular adjacency matrix.** For natural numbers $d$
+For natural numbers $d$
 and $n$, this is the real number obtained by dividing the number of $d$-regular simple graphs on
 the vertex set $\{0, 1, \ldots, n-1\}$ whose adjacency matrix has nonzero determinant over
 $\mathbb{Q}$ by the number of all $d$-regular simple graphs on that vertex set; it is $0$ when

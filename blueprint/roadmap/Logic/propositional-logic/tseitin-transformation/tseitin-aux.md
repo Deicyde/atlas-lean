@@ -1,6 +1,6 @@
 # Tseitin encoding with gates numbered from $k$
 
-**Tseitin encoding with gates numbered from $k$.** Fix a map $\iota$ from atoms to natural
+Fix a map $\iota$ from atoms to natural
 numbers. Given a formula $A$ and a gate number $k$, the encoding returns a literal naming $A$, a
 list of defining clauses and the next unused gate number. For an atom $a$ it returns the
 positive literal of variable $2\iota(a)$, no clauses, and $k$. For $A \circ B$ with $\circ$ one of

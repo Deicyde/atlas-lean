@@ -1,6 +1,6 @@
 # Coefficients of $B_{1,S_h}(u, z)$
 
-**Coefficients of $B_{1,S_h}(u, z)$.** Let $F$ be a finite field with $q$ elements, let $h$
+Let $F$ be a finite field with $q$ elements, let $h$
 be a natural number and let $z$ be a complex number. Let $S_h$ be the set of $h$-free monic
 polynomials over $F$ (those divisible by no $P^h$ with $P$ monic irreducible), and $\omega_1(f)$
 the number of distinct monic irreducible factors of $f$ of multiplicity exactly $1$. Write

@@ -1,6 +1,6 @@
 # The strictly primitive exponent is at most the class number
 
-**The strictly primitive exponent is at most the class number.** Let $d > 1$ be a squarefree
+Let $d > 1$ be a squarefree
 integer with $d \equiv 2$ or $d \equiv 3 \pmod 4$, and let $K$ be a number field of degree $2$
 containing a square root of $d$ (so $K \cong \mathbb{Q}(\sqrt{d})$). Let $S(d)$ be the set of
 primes $p$ for which $|x^2 - d y^2| = p^l$ has a strictly primitive integral solution ($x$ and

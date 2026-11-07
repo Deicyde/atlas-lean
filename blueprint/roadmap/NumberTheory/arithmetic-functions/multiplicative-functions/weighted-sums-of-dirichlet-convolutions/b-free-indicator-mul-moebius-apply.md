@@ -1,6 +1,6 @@
 # The $B_\kappa$-free indicator convolved with the Möbius function
 
-**The $B_\kappa$-free indicator convolved with the Möbius function.** Let $\kappa$ be a
+Let $\kappa$ be a
 function from the natural numbers to the natural numbers with $\kappa(p) \ge 1$ for every prime
 $p$, let $q_{B_\kappa}$ be the indicator of $B_\kappa$-free integers, let $\mu$ be the Möbius
 function and let $*$ denote Dirichlet convolution. Let $n \ge 1$ be a natural number with prime

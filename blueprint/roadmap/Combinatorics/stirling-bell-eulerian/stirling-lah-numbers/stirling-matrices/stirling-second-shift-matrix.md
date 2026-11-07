@@ -1,6 +1,6 @@
 # Shifted Stirling matrix of the second kind
 
-**Shifted Stirling matrix of the second kind.** For natural numbers $m$ and $n$, the shifted
+For natural numbers $m$ and $n$, the shifted
 Stirling matrix $S^{[m]}(n)$ is the $n \times n$ matrix over $\mathbb{Q}$ whose $(i, j)$ entry is
 the Stirling number of the second kind $S(i + m, j)$, for $1 \le i, j \le n$.
 

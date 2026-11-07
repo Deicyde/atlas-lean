@@ -1,6 +1,6 @@
 # Well-based sets
 
-**Well-based sets.** A finite set $Q$ of natural numbers is well based (Kitaev;
+A finite set $Q$ of natural numbers is well based (Kitaev;
 Valyuzhenich) if for every $x \in Q$ and every natural number $a$ with $0 < a < x$, at least one
 of $a$ and $x - a$ lies in $Q$.
 

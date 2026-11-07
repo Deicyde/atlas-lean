@@ -1,6 +1,6 @@
 # Matrix encoded by a list of entries
 
-**Matrix encoded by a list of entries.** Number the pairs $(a, b)$ with $a, b \in \{0, 1\}$
+Number the pairs $(a, b)$ with $a, b \in \{0, 1\}$
 by $2a + b$, and index the rows and columns of a $4 \times 4$ complex matrix by these pairs.
 Given a list $e$ of pairs of encoded rational numbers, the matrix of $e$ has in row $p$ and
 column $q$ the complex number whose real part is the first and whose imaginary part is the

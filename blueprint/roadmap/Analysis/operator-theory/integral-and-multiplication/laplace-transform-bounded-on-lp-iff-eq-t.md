@@ -1,6 +1,6 @@
 # The Laplace transform is bounded on $L^p((0,\infty))$ exactly when $p = 2$
 
-**The Laplace transform is bounded on $L^p([0,\infty))$ exactly when $p = 2$.** For a real
+For a real
 function $f$ on $\mathbb{R}$ let
 
 $$Lf(s) = \int_0^\infty e^{-xs} f(x)\,dx \qquad (s \in \mathbb{R}).$$

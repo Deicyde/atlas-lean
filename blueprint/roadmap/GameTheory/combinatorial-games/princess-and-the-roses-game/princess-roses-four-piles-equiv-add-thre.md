@@ -1,6 +1,6 @@
 # Adding to the three largest piles of four-pile P&R
 
-**Adding to the three largest piles of four-pile P&R.** For natural numbers
+For natural numbers
 $a \ge b \ge c \ge d$ and every natural number $n$, the Princess and the Roses positions
 $(a, b, c, d)$ and $(a + n, b + n, c + n, d)$ are equivalent; that is, they have the same
 Sprague–Grundy value.

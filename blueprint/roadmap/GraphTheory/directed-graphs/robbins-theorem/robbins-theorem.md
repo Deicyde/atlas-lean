@@ -1,6 +1,6 @@
 # Robbins' theorem, allowing the empty graph
 
-**Robbins' theorem, allowing the empty graph.** Let $G$ be a simple graph on a finite,
+Let $G$ be a simple graph on a finite,
 possibly empty, vertex set $V$. Then every vertex of $G$ is reachable from every vertex and,
 after deleting any single edge of $G$, every vertex is still reachable from every vertex, if
 and only if $G$ has a strongly connected orientation: a relation $D$ on $V$ such that $D(u, v)$

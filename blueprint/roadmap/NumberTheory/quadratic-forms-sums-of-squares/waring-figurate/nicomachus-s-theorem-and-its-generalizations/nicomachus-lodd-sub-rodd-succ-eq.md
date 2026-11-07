@@ -1,6 +1,6 @@
 # Generalized Nicomachus identity, odd case
 
-**Generalized Nicomachus identity, odd case.** Let $L_{m,o}$ be the odd-case cube sum,
+Let $L_{m,o}$ be the odd-case cube sum,
 $R_{m,o}$ the odd-case square and $P_{m,o}$ the odd-case polynomial. For every natural number
 $m \ge 2$ and every real number $x$,
 

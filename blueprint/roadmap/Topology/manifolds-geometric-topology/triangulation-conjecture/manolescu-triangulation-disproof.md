@@ -1,6 +1,6 @@
 # Manolescu's disproof of the triangulation conjecture
 
-**Manolescu's disproof of the triangulation conjecture.** For every natural number $n \ge 5$
+For every natural number $n \ge 5$
 there is a closed connected topological $n$-manifold that is not triangulable.
 
 ## Sources

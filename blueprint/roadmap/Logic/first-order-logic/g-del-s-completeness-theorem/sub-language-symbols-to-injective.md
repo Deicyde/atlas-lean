@@ -1,6 +1,6 @@
 # The symbol map of the sublanguage of a finite set of formulas is injective
 
-**The symbol map of the sublanguage of a finite set of formulas is injective.** Let $L$ be
+Let $L$ be
 a first-order language. For every finite set $F$ of formulas of $L$ with free variables in
 $\mathbb{N}$, the map sending each symbol of the sublanguage of $L$ on the symbols occurring in
 $F$ to the same symbol of $L$ is injective.

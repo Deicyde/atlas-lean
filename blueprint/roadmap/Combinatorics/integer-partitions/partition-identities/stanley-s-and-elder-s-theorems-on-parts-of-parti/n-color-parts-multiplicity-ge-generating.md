@@ -1,6 +1,6 @@
 # Generating function for colored parts of multiplicity at least $t$
 
-**Generating function for colored parts of multiplicity at least $t$.** Let $t \ge 1$. For
+Let $t \ge 1$. For
 $m \ge 0$ let $N^t(m)$ be the sum, over all $n$-color partitions of $m$, of the number of
 distinct colored parts that occur at least $t$ times. Then, as formal power series in $q$ with
 rational coefficients,

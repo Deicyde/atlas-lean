@@ -1,6 +1,6 @@
 # The 2-dissection of $f_3^2/f_1^2$
 
-**The 2-dissection of $f_3^2/f_1^2$.** Write $f_k = (q^k; q^k)_\infty$ for the Euler products.
+Write $f_k = (q^k; q^k)_\infty$ for the Euler products.
 In the ring of integer power series in $q$,
 
 $$

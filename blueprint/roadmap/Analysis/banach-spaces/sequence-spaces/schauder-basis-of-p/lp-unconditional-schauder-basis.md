@@ -1,6 +1,6 @@
 # The unit vectors form an unconditional Schauder basis of ℓᵖ
 
-**The unit vectors form an unconditional Schauder basis of ℓᵖ.** Let $\mathbb{K}$ be
+Let $\mathbb{K}$ be
 $\mathbb{R}$ or $\mathbb{C}$, let $1 \le p < \infty$ and let $\iota$ be a type. This is the
 unconditional Schauder basis of $\ell^p(\iota, \mathbb{K})$ whose $i$-th basis vector is the unit
 vector $e_i$, equal to $1$ at $i$ and to $0$ elsewhere, and whose $i$-th coordinate functional is

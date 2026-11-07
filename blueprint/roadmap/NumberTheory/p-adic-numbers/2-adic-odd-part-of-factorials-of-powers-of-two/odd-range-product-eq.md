@@ -1,6 +1,6 @@
 # Odd-range product as a filtered product
 
-**Odd-range product as a filtered product.** For all natural numbers $l$ and $m$, the odd-range
+For all natural numbers $l$ and $m$, the odd-range
 product $\operatorname{odpr}(l, m)$ equals the product $\prod j$ over the odd natural numbers $j$ in
 the closed interval $[l, m]$.
 

@@ -1,6 +1,6 @@
 # Universal formulas from Henkin witnesses
 
-**Universal formulas from Henkin witnesses.** Let $\alpha$ be an infinite set of
+Let $\alpha$ be an infinite set of
 variables and let $\Delta$ be a maximal consistent set of formulas with free variables in
 $\alpha$. Let $\varphi(x)$ be a formula with one bound variable $x$ left open, let
 $c \in \alpha$, and write $\varphi(c)$ for the result of substituting $c$ for $x$. If

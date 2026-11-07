@@ -1,6 +1,6 @@
 # Pairwise path sums with a fixed endpoint
 
-**Pairwise path sums with a fixed endpoint.** Let $h$ be a hidden Markov model with finite
+Let $h$ be a hidden Markov model with finite
 state set $S$, transition weights $a$ and emission weights $b$ in a semiring, and let $x$ be an
 observation sequence. For all $k, t \in \mathbb{N}$ and states $s, s', u$, the sum of the path
 weights of the state paths $z_0, \dots, z_{t + 1 + k}$ with $z_t = s$, $z_{t + 1} = s'$ and

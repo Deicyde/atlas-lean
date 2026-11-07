@@ -1,6 +1,6 @@
 # Runs of constant Carmichael values
 
-**Runs of constant Carmichael values.** For real $x$, let $F_\lambda(x)$ be the largest natural
+For real $x$, let $F_\lambda(x)$ be the largest natural
 number $k$ for which there is a natural number $n \ge 0$ with $n + k \le x$ and
 $\lambda(n + 1) = \lambda(n + 2) = \cdots = \lambda(n + k)$ (and $0$ if there is no such $k$), where
 $\lambda$ is the Carmichael function. Then $F_\lambda(x) = O\left((\log x)^{1000/677}\right)$ as

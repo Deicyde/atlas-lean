@@ -1,6 +1,6 @@
 # Central binomial polynomial identity, Bernstein form
 
-**Central binomial polynomial identity, Bernstein form.** For every natural number $n$ and
+For every natural number $n$ and
 every complex $x$,
 
 $$\sum_{k=0}^{n} \binom{n}{k} 2^{-k} \binom{2k}{k} (1-x)^k x^{n-k} =

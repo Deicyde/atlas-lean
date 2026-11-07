@@ -1,6 +1,6 @@
 # Refutation of Kourovka Problem 12.26
 
-**Refutation of Kourovka Problem 12.26.** The proposition of Kourovka Problem 12.26 is false:
+The proposition of Kourovka Problem 12.26 is false:
 it is not the case that for every prime $p$ and every finite $p$-soluble group $G$, the group $G$
 has a $p$-block of defect zero if and only if some normal subgroup $N$ of $G$ of order prime to $p$
 contains an element $x$ whose centralizer $C_G(x)$ in $G$ has order prime to $p$.

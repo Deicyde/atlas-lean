@@ -1,6 +1,6 @@
 # Regrouping the multiples of B by their B-adic factorization
 
-**Regrouping the multiples of B by their B-adic factorization.** Let $B \ge 2$ be a natural
+Let $B \ge 2$ be a natural
 number and let $(c_m)_{m \ge 1}$ be a sequence of complex numbers such that the family
 $(c_{Bm})_{m \ge 1}$ is summable. Then
 

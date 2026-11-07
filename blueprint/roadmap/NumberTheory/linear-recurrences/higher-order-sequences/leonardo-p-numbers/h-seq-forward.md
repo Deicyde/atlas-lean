@@ -1,6 +1,6 @@
 # Forward evaluation of the $H(p)$ recurrence
 
-**Forward evaluation of the $H(p)$ recurrence.** For a natural number $p$, a function
+For a natural number $p$, a function
 $s : \mathbb{Z} \to \mathbb{Z}$ and $n \in \mathbb{N}$, this is the list of the $2p + n + 1$
 values at $-p, -p+1, \dots, p+n$ (the entry at position $i$ is the value at $i - p$) of the
 sequence $H$ that equals $s$ on $[-p, p]$ and continues by the $H(p)$ recurrence

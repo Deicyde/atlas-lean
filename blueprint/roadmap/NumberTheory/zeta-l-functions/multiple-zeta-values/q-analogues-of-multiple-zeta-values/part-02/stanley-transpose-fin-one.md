@@ -1,6 +1,6 @@
 # Transpose of a one-part partition
 
-**Transpose of a one-part partition.** For all natural numbers $m$ and $n$, the transpose
+For all natural numbers $m$ and $n$, the transpose
 $\rho$ in Stanley coordinates sends the pair of one-entry tuples $((m), (n))$ to $((n), (m))$.
 
 ## Sources

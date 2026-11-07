@@ -1,6 +1,6 @@
 # Correctness of 2-3 tree insertion
 
-**Correctness of 2-3 tree insertion.** Let $\alpha$ be linearly ordered, let $x \in \alpha$,
+Let $\alpha$ be linearly ordered, let $x \in \alpha$,
 and let $t$ be an ordered 2-3 tree of height $h$. Then inserting $x$ into $t$ meets the insertion
 specification. If the insertion returns a single tree $t'$ of height $h$, then $t'$ is ordered
 and its inorder traversal is the ordered insertion of $x$ into the inorder traversal of $t$. If

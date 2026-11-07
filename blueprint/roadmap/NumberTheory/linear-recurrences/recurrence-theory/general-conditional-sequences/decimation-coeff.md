@@ -1,6 +1,6 @@
 # Decimation coefficients
 
-**Decimation coefficients.** Let $(A_j)_{j \ge 0}$ and $(s_n)_{n \ge 0}$ be sequences in a
+Let $(A_j)_{j \ge 0}$ and $(s_n)_{n \ge 0}$ be sequences in a
 commutative ring and let $m$, $r$ be natural numbers. For natural numbers $l$ and $i$, the
 decimation coefficient is
 

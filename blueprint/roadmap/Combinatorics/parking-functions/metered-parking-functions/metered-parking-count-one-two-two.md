@@ -1,6 +1,6 @@
 # 1-metered parking functions with two cars and two spots
 
-**1-metered parking functions with two cars and two spots.** The number of $1$-metered
+The number of $1$-metered
 $(2, 2)$-parking functions is $\mathrm{mpf}_{2,2}(1) = 3$.
 
 This is an entry of the source's Table 1.

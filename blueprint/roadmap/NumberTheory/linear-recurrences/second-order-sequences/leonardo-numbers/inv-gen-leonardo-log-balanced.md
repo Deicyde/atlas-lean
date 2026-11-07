@@ -1,6 +1,6 @@
 # Log-balancedness of the reciprocals of generalized Leonardo numbers
 
-**Log-balancedness of the reciprocals of generalized Leonardo numbers.** Let $k \ge 1$ be an
+Let $k \ge 1$ be an
 integer and let $L_{k,n}$ be the generalized Leonardo numbers. Then the sequence
 $(1/L_{k,n})_{n \ge 3}$ is log-balanced (Došlić): for every integer $n \ge 4$,
 

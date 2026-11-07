@@ -1,6 +1,6 @@
 # Structure of extremal sequences for unit-weighted zero sums of length $2^r$
 
-**Structure of extremal sequences for unit-weighted zero sums of length $2^r$.** Let $r \ge 1$,
+Let $r \ge 1$,
 let $n = 2^r$, let $U(n)$ be the set of units of $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$, and let
 $x = (x_1, \dots, x_{n+r-1})$ be a sequence in $\mathbb{Z}_n$ with no $U(n)$-weighted zero-sum
 subsequence of length $n$: there is no set $I$ of exactly $n$ indices with units $a_i \in U(n)$

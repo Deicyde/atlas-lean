@@ -1,6 +1,6 @@
 # No infinite group has equicardinal maximal direct factors
 
-**No infinite group has equicardinal maximal direct factors.** For every infinite group $G$ there
+For every infinite group $G$ there
 are subsets $A, B_1, B_2 \subseteq G$ such that $B_1$ and $B_2$ are both maximal under inclusion
 among the subsets $B$ for which the product $AB$ is direct, but $B_1$ and $B_2$ have different
 cardinalities. That is, the answer to Kourovka Problem 21.58 is negative.

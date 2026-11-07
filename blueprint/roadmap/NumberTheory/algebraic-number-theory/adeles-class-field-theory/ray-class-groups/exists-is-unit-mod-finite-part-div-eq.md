@@ -1,6 +1,6 @@
 # Coprime representation of ray elements
 
-**Coprime representation of ray elements.** Let $K$ be a number field and $\mathfrak m$ a
+Let $K$ be a number field and $\mathfrak m$ a
 modulus of $K$ with finite part $\mathfrak m_0$, a nonzero ideal of $\mathcal O_K$. Every ray
 element $x$ of $\mathfrak m$ can be written as $x = a / b$ in $K$ with $a, b \in \mathcal O_K$
 whose residue classes are units of $\mathcal O_K / \mathfrak m_0$.

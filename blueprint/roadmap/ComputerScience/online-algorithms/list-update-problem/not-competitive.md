@@ -1,6 +1,6 @@
 # No deterministic online list-update algorithm beats $2 - 2/(\ell + 1)$
 
-**No deterministic online list-update algorithm beats $2 - 2/(\ell + 1)$.** Let $M$ be a
+Let $M$ be a
 nonempty list of $\ell$ distinct items and let $A$ be a deterministic online list-update
 algorithm on the items of $M$. Let $c$, $d$ and $b$ be natural numbers with
 $c (\ell + 1) < 2 \ell d$ (so $d \ge 1$ and $c / d < 2\ell / (\ell + 1) = 2 - 2/(\ell + 1)$).

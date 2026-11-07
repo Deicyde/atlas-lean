@@ -1,6 +1,6 @@
 # Partial sums of the Fibonacci $m$-step numbers
 
-**Partial sums of the Fibonacci $m$-step numbers.** For natural numbers $m \ge 2$ and $n$,
+For natural numbers $m \ge 2$ and $n$,
 the Fibonacci $m$-step numbers $F^{(m)}_k$ satisfy
 
 $$(m-1) \sum_{k=0}^{n} F^{(m)}_k =

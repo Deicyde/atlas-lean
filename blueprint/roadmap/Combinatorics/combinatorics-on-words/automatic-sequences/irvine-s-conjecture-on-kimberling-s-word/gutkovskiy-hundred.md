@@ -1,6 +1,6 @@
 # Gutkovskiy's sequence at $100$
 
-**Gutkovskiy's sequence at $100$.** The term $g_{100}$ of Gutkovskiy's sequence is $74$, in
+The term $g_{100}$ of Gutkovskiy's sequence is $74$, in
 agreement with OEIS A286389.
 
 ## Sources

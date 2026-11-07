@@ -1,6 +1,6 @@
 # Hadamard–Caccioppoli global inverse theorem
 
-**Hadamard–Caccioppoli global inverse theorem.** Let $n \in \mathbb{N}$ and let
+Let $n \in \mathbb{N}$ and let
 $f : \mathbb{R}^n \to \mathbb{R}^n$ be a proper map that is a $C^\infty$ local diffeomorphism.
 Then $f$ is a global $C^\infty$ diffeomorphism: there is a $C^\infty$ diffeomorphism
 $\Phi : \mathbb{R}^n \to \mathbb{R}^n$ whose underlying map is $f$.

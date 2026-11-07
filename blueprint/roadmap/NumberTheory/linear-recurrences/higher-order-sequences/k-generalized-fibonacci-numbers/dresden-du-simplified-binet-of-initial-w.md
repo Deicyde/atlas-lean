@@ -1,6 +1,5 @@
 # Simplified Binet formula for k-generalized Fibonacci numbers from an initial window
 
-**Simplified Binet formula for k-generalized Fibonacci numbers from an initial window.**
 Let $k \ge 2$ and let $F : \mathbb{Z} \to \mathbb{Z}$ satisfy $F(n) = 0$ for all integers $n$ with
 $2 - k \le n < 1$, $F(1) = 1$, and $F(n) = \sum_{i=0}^{k-1} F(n - 1 - i)$ for all integers
 $n > 1$. Let $\alpha$ be a positive real number with $\alpha^k = \sum_{i=0}^{k-1} \alpha^i$, and

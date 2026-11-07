@@ -1,6 +1,6 @@
 # The $C^k$ topology on smooth Riemannian metrics
 
-**The $C^k$ topology on smooth Riemannian metrics.** Let $M$ be a smooth manifold modelled
+Let $M$ be a smooth manifold modelled
 on a real normed space $E$ through a model with corners $I$, and let $k \in \mathbb{N} \cup
 \{\infty\}$. For a chart $\varphi$ of the maximal smooth atlas of $M$, write $T_\varphi \subseteq E$
 for the target of the extended chart $I \circ \varphi$. The (weak, compact-open) $C^k$ topology on

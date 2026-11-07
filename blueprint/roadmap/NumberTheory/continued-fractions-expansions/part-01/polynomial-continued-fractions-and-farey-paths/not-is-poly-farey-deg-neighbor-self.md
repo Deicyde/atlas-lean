@@ -1,6 +1,6 @@
 # No fraction is its own degree neighbour
 
-**No fraction is its own degree neighbour.** Let $F$ be a field and let $n \in \mathbb N$. For
+Let $F$ be a field and let $n \in \mathbb N$. For
 every pair $(u, v)$ of polynomials over $F$, the fraction $u/v$ is not a $(\deg v)$-neighbour of
 itself in the Farey series $\mathcal F_n$ of order $n$ over $F$.
 

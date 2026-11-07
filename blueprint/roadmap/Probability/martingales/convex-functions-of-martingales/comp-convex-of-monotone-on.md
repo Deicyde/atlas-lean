@@ -1,6 +1,6 @@
 # Convex nondecreasing functions preserve submartingales
 
-**Convex nondecreasing functions preserve submartingales.** Let $\mu$ be a probability measure,
+Let $\mu$ be a probability measure,
 let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration, and let $(X_n)_{n \in \mathbb{N}}$ be a
 real-valued submartingale with respect to $(\mathcal{F}_n)$ and $\mu$. Let
 $\varphi : \mathbb{R} \to \mathbb{R}$ be convex and nondecreasing, and suppose $\varphi(X_n)$ is

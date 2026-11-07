@@ -1,6 +1,6 @@
 # Restricted signed sumset
 
-**Restricted signed sumset.** For a natural number $h$ and a finite set $A$ of integers, the
+For a natural number $h$ and a finite set $A$ of integers, the
 restricted signed sumset $h^{\wedge}_{\pm} A$ is the set of all integers
 $\sum_{a \in B} a - 2 \sum_{a \in N} a$, where $B$ ranges over the $h$-element subsets of $A$ and
 $N$ ranges over the subsets of $B$. These are the sums of the elements of $B$ in which the

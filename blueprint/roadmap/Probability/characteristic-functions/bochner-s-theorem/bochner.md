@@ -1,6 +1,6 @@
 # Bochner's theorem
 
-**Bochner's theorem.** Let $f : \mathbb{R} \to \mathbb{C}$. Then $f$ is continuous, satisfies
+Let $f : \mathbb{R} \to \mathbb{C}$. Then $f$ is continuous, satisfies
 $f(0) = 1$, and is positive definite, meaning that for every $n \in \mathbb{N}$, all points
 $x_1, \dots, x_n \in \mathbb{R}$ and all coefficients $c_1, \dots, c_n \in \mathbb{C}$ the sum
 $S = \sum_{i=1}^{n} \sum_{j=1}^{n} \overline{c_i}\, c_j\, f(x_i - x_j)$ is a nonnegative real

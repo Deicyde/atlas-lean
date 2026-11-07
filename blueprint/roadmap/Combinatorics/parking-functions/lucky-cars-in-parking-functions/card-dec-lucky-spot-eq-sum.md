@@ -1,6 +1,6 @@
 # Lucky spots of weakly decreasing parking functions as a sum
 
-**Lucky spots of weakly decreasing parking functions as a sum.** Number the cars and spots
+Number the cars and spots
 $0, \dots, n-1$. For cars $i$ and spots $j$, let $q^d_n(i, j)$ be the number of weakly decreasing
 parking functions $f$ of length $n$ (that is, $f(0) \ge f(1) \ge \dots \ge f(n-1)$) with
 $f(i) = j$ in which car $i$ is lucky. Then for every spot $j$,

@@ -1,6 +1,6 @@
 # Submartingale almost-sure convergence theorem
 
-**Submartingale almost-sure convergence theorem.** Let $(X_n)_{n \ge 0}$ be a real-valued
+Let $(X_n)_{n \ge 0}$ be a real-valued
 submartingale with respect to a filtration $(\mathcal F_n)_{n \ge 0}$ on a probability space
 $(\Omega, \mu)$, and let $C$ be a real number with $\int X_n^+ \, d\mu \le C$ for every $n$, where
 $X_n^+$ is the positive part of $X_n$. Then there is an integrable function

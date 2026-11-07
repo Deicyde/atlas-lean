@@ -1,6 +1,6 @@
 # The Laurent remainder of $1/(e^v - 1)$ is differentiable
 
-**The Laurent remainder of $1/(e^v - 1)$ is differentiable.** For every natural number $N$,
+For every natural number $N$,
 the function $R_N : \mathbb{R} \to \mathbb{R}$ given by $R_N(0) = 0$ and, for $v \neq 0$,
 
 $$

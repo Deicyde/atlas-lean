@@ -1,6 +1,6 @@
 # Passing from $r_0$ to $(r_0 + 1)p + 1$
 
-**Passing from $r_0$ to $(r_0 + 1)p + 1$.** Let $p$ be a prime, $d$ a natural number
+Let $p$ be a prime, $d$ a natural number
 dividing $p - 1$ and $r_0$ a natural number, and put $r_1 = (r_0 + 1)p + 1$. Write
 $\tau = (p + 1)/d$, $\gamma_k = ((p - 1) r_k + (p + 1))/d$ for $k = 0, 1$, and $a^r(X_n)$ for
 the lattice-point expression of Theorem 1. For a rational $\lambda$ and $k = 0, 1$ let

@@ -1,6 +1,6 @@
 # Montel's theorem
 
-**Montel's theorem.** Let $U \subseteq \mathbb{C}$ be open and let $(F_n)_{n \in \mathbb{N}}$ be a
+Let $U \subseteq \mathbb{C}$ be open and let $(F_n)_{n \in \mathbb{N}}$ be a
 sequence of functions $\mathbb{C} \to \mathbb{C}$, each holomorphic on $U$, that is locally
 uniformly bounded on $U$. Then there are a strictly increasing map
 $\varphi : \mathbb{N} \to \mathbb{N}$ and a function $f : \mathbb{C} \to \mathbb{C}$, holomorphic

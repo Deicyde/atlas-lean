@@ -1,6 +1,6 @@
 # Limiting frequencies in throwback sequences
 
-**Limiting frequencies in throwback sequences.** Let $X = (x_0, x_1, \dots)$ be a sequence of
+Let $X = (x_0, x_1, \dots)$ be a sequence of
 pairwise distinct positive integers with throwback sequence $T(X) = (t_0, t_1, \dots)$, and for a
 natural number $w$ let $\sigma(w)$ be the number of indices $i$ with $x_i < w$. Then for every
 index $j$, writing $x = x_j$, the number of $k < N$ with $t_k = x$, divided by $N$, converges as

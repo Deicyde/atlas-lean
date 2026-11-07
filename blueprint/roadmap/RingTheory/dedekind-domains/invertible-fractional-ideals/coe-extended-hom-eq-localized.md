@@ -1,6 +1,6 @@
 # Extension to a localization is localization
 
-**Extension to a localization is localization.** Let $A$ and $B$ be integral domains with $B$
+Let $A$ and $B$ be integral domains with $B$
 a torsion-free $A$-algebra, and let $K$ be a field that is a fraction field of both $A$ and $B$,
 compatibly with $A \to B \to K$. Let $S$ be a submonoid of $A$ such that $B$ is the localization
 of $A$ at $S$ and the identity map of $K$ is a localization of the $A$-module $K$ at $S$. Then for

@@ -1,6 +1,6 @@
 # Vanishing of modular Schur numbers
 
-**Vanishing of modular Schur numbers.** Let $m$, $k$ and $l$ be positive integers. The
+Let $m$, $k$ and $l$ be positive integers. The
 generalized Schur number $S_m(k, l)$, the largest $n$ such that $\{1, \dots, n\}$ admits a
 partition into $k$ classes that are $l$-sum-free modulo $m$, equals $0$ if and only if
 $l \equiv 1 \pmod{m}$.

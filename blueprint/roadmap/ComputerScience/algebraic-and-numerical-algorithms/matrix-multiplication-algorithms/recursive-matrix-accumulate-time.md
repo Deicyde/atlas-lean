@@ -1,6 +1,6 @@
 # Operation count of the recursive matrix multiply-accumulate
 
-**Operation count of the recursive matrix multiply-accumulate.** Let $\alpha$ be a type with
+Let $\alpha$ be a type with
 an addition and a multiplication, let $k$ be a natural number and $n = 2^k$, and let $A$, $B$,
 $C$ be $n \times n$ matrices over $\alpha$. The recursive multiply-accumulate procedure on $A$,
 $B$, $C$ performs exactly $8^k$ scalar multiplications and exactly $8^k$ accumulator additions.

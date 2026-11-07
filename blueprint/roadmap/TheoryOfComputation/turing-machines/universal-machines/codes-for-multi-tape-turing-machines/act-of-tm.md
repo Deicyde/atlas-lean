@@ -1,6 +1,6 @@
 # The code of a machine takes its coded actions
 
-**The code of a machine takes its coded actions.** Let $M$ be a binary multi-tape machine
+Let $M$ be a binary multi-tape machine
 with $k$ work tapes and a finite set of states $Q$, and let $e : Q \to \mathbb{N}$ be injective.
 For every state $q \in Q$, every symbol $a$ under the input head and every tuple $w$ of symbols
 under the $k$ work heads (each a bit or blank), the coded action of the code of $M$ under $e$ at

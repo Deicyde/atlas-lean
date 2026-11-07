@@ -1,6 +1,6 @@
 # Manin degree data over the field with four elements
 
-**Manin degree data over the field with four elements.** Let $F$ be a field with exactly
+Let $F$ be a field with exactly
 four elements, let $W$ be any Weierstrass curve over $F$, and let $N$ be the number of
 nonsingular points of $W$ over $F$, including the point at infinity. Then there is Manin degree
 data for $(4, N)$: a function $d : \mathbb{Z} \to \mathbb{N}$ with $d(0) = 4$, $d(-1) = N$,

@@ -1,6 +1,6 @@
 # Horadam sequences as composition sums
 
-**Horadam sequences as composition sums.** Let $p, q, r, s$ be complex numbers with
+Let $p, q, r, s$ be complex numbers with
 $(q - r)^2 = 4s(p - 1)$ and $4s(p - 1) \ne 0$, and let $(v_k)_{k \ge 0}$ be the complex sequence
 with $v_0 = p$, $v_1 = q$ and $v_{k+2} = r v_{k+1} + s v_k$ for every $k \ge 0$. Put
 $e = 2ps/(r - q)$. Then for every $n \ge 1$,

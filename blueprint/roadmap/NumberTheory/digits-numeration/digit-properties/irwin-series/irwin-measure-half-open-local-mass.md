@@ -1,6 +1,6 @@
 # Local structure of the Irwin measures on cylinders
 
-**Local structure of the Irwin measures on cylinders.** Let $b > 1$ and $d < b$ be natural
+Let $b > 1$ and $d < b$ be natural
 numbers, and for each natural number $k$ let $\mu_k$ be the Irwin measure of base $b$ and digit
 $d$ with index $k$. Let $x \in [0, 1)$ have base-$b$ depth $l$, that is, $l$ is the least natural
 number such that $b^l x$ is an integer; let $X$ be a string of $l$ base-$b$ digits, read most

@@ -1,6 +1,6 @@
 # Prime gaps near $n!$
 
-**Prime gaps near $n!$.** Let $n$ be a natural number and let $r$ be the smallest prime greater
+Let $n$ be a natural number and let $r$ be the smallest prime greater
 than $n$. If $p$ is a prime with $n! + 1 < p < n! + r^2$, then $p - n!$ is prime.
 
 The source's proof: if $p - n!$ were composite, its least prime factor $m$ would satisfy

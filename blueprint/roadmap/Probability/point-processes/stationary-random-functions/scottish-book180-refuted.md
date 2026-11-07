@@ -1,6 +1,6 @@
 # Scottish Book Problem 180 fails
 
-**Scottish Book Problem 180 fails.** The claim of Scottish Book Problem 180 is false: there are a
+The claim of Scottish Book Problem 180 is false: there are a
 probability space $(\Omega, \mu)$ carrying a measurable random variable uniformly distributed on
 $[0, 1]$ and a stationary random function $v$ on $\Omega$ with every $v_t$ measurable, such that
 no measurable random variable $A : \Omega \to \mathbb{R}$ uniformly distributed on $[0, 1]$ and no

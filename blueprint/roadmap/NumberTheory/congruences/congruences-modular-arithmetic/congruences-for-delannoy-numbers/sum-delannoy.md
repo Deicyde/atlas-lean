@@ -1,6 +1,6 @@
 # Sum of the Delannoy triangle entries in rows $0$ to $p - 1$ modulo $p$
 
-**Sum of the Delannoy triangle entries in rows $0$ to $p - 1$ modulo $p$.** Let $p$ be an
+Let $p$ be an
 odd prime and let $T(n, k; 1)$ denote the entry of the ordinary Riordan Pascal-like triangle
 with $r = 1$ (the Delannoy triangle). Then
 

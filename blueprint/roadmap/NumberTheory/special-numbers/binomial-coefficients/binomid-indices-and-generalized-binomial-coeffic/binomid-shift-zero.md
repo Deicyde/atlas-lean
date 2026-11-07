@@ -1,6 +1,6 @@
 # Shifting by zero places is the identity
 
-**Shifting by zero places is the identity.** For every sequence $\eta$ of nonnegative
+For every sequence $\eta$ of nonnegative
 integers, $\sigma^0(\eta) = \eta$, where $\sigma^l$ is the right shift that prepends $l$ zeros.
 
 ## Sources

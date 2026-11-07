@@ -1,6 +1,6 @@
 # The average set is closed under lcm
 
-**The average set is closed under lcm.** Let $P$ and $Q \ne 0$ be integers and $U$ the Lucas
+Let $P$ and $Q \ne 0$ be integers and $U$ the Lucas
 sequence given by $U_0 = 0$, $U_1 = 1$ and $U_{k+2} = P U_{k+1} - Q U_k$. Let $S'(U)$ be the set
 of positive integers $n$ coprime to $Q$ such that the period $\pi_U(n)$ of $U$ modulo $n$ divides
 $n$ and $n \mid U_1 + \dots + U_n$, and say that a natural number $x$ has integral averages if

@@ -1,6 +1,6 @@
 # Sylvester's coin theorem for two distinct odd primes
 
-**Sylvester's coin theorem for two distinct odd primes.** Let $p$ and $q$ be distinct odd
+Let $p$ and $q$ be distinct odd
 primes. Then the number of natural numbers $n$ that cannot be written as $n = px + qy$ with
 natural numbers $x, y$ is $(p-1)(q-1)/2$.
 

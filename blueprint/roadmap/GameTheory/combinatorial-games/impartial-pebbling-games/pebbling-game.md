@@ -1,6 +1,6 @@
 # The $(k+1:k)$-pebbling game
 
-**The $(k+1:k)$-pebbling game.** Let $G$ be a simple graph on the vertices $0, \dots, n-1$ and
+Let $G$ be a simple graph on the vertices $0, \dots, n-1$ and
 let $k$ be a natural number. The impartial two-player $(k+1:k)$-pebbling game
 $\Gamma^{(k+1:k)}_G$ has as positions all distributions $a = (a_0, \dots, a_{n-1})$ of pebbles on
 the vertices, with $a_i \in \mathbb{N}$. A move from $a$ chooses adjacent vertices $i$ and $j$

@@ -1,6 +1,6 @@
 # Erdős Problem 966: progression-free sets that are Ramsey for shorter progressions
 
-**Erdős Problem 966: progression-free sets that are Ramsey for shorter progressions.** This
+This
 is the statement that for all natural numbers $k \ge 2$ and $r \ge 2$ there is a set $A$ of
 natural numbers that contains no arithmetic progression of $k + 1$ distinct terms and such that
 for every colouring $c$ of the natural numbers with $r$ colours there are a subset

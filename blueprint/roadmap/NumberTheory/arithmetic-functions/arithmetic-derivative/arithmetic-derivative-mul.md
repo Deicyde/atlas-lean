@@ -1,6 +1,6 @@
 # Leibniz rule for the arithmetic derivative
 
-**Leibniz rule for the arithmetic derivative.** For all natural numbers $m$ and $n$, the
+For all natural numbers $m$ and $n$, the
 arithmetic derivative $D$ satisfies $D(mn) = D(m)\,n + m\,D(n)$.
 
 ## Sources

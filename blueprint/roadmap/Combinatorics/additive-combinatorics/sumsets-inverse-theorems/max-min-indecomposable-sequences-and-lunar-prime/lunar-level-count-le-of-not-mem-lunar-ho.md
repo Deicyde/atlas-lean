@@ -1,6 +1,6 @@
 # Level counts of a product that is not Hoeffding extremal
 
-**Level counts of a product that is not Hoeffding extremal.** Let $b$ and $n$ be natural
+Let $b$ and $n$ be natural
 numbers, $d$ a real number and $f, g, h$ lunar numbers of base $b$ and degree at most $n$ with
 $h = f \otimes g$ under the max-min product. For a natural number $i$ write $|f_i|$, $|g_i|$ and
 $|h_i|$ for the numbers of digits of $f$, $g$ and $h$ that are at least $i$. If $h$ is not in the

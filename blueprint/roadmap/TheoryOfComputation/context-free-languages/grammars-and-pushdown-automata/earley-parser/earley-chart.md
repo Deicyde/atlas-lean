@@ -1,6 +1,6 @@
 # Earley chart
 
-**Earley chart.** The Earley chart for input `w`: the least set of items closed
+The Earley chart for input `w`: the least set of items closed
 under initialization, prediction, scanning, and completion.
 
 ## Sources

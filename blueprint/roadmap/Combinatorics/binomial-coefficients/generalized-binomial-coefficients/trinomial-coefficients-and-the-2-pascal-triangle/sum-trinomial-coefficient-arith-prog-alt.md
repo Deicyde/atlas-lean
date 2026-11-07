@@ -1,6 +1,6 @@
 # Alternating sums of trinomial coefficients in an arithmetic progression
 
-**Alternating sums of trinomial coefficients in an arithmetic progression.** Write
+Write
 $\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in $(1 + t + t^2)^n$.
 For natural numbers $n$, $x$, $b$ with $b$ even and $x < b$,
 

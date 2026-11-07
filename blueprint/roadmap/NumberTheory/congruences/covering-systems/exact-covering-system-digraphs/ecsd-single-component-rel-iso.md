@@ -1,6 +1,6 @@
 # Single-component degree-2 ECSDs up to isomorphism
 
-**Single-component degree-2 ECSDs up to isomorphism.** Let $d_1, d_2 \in \{2, -2\}$ and let
+Let $d_1, d_2 \in \{2, -2\}$ and let
 $a_1, a_2$ be integers with $a_1 - a_2$ odd. If the exact covering system digraph
 $G(d_1 n + a_1, d_2 n + a_2)$, with an edge $m \to d_i m + a_i$ for every integer $m$ and
 $i = 1, 2$, has a single component, that is, any two integers are joined by a path in its

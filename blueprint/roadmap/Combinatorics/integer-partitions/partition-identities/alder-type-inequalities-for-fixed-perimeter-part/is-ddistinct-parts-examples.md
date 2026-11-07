@@ -1,6 +1,6 @@
 # Examples of 2-distinct partitions
 
-**Examples of 2-distinct partitions.** The partition $5 + 3$ has $2$-distinct parts, and the
+The partition $5 + 3$ has $2$-distinct parts, and the
 partition $4 + 3$ does not.
 
 ## Sources

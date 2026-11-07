@@ -1,6 +1,6 @@
 # Elements of a set up to a bound
 
-**Elements of a set up to a bound.** For a set $A$ of natural numbers and a real number $x$,
+For a set $A$ of natural numbers and a real number $x$,
 this is the finite set of positive integers $n \in A$ with $n \le x$; it is empty when $x < 1$.
 
 ## Sources

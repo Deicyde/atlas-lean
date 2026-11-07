@@ -1,6 +1,6 @@
 # Geodesic velocity curves
 
-**Geodesic velocity curves.** Let $M$ be a $C^2$ manifold (boundary and corners allowed)
+Let $M$ be a $C^2$ manifold (boundary and corners allowed)
 modeled on a finite-dimensional real space, with a $C^1$ Riemannian metric
 $\langle \cdot, \cdot \rangle$ and Levi-Civita connection $\nabla$. A curve
 $u : \mathbb{R} \to TM$, with base curve $\gamma$ ($\gamma(t)$ is the base point of $u(t)$), is a

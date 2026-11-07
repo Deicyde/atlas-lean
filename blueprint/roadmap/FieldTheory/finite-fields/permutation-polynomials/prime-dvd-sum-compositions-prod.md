@@ -1,6 +1,6 @@
 # Vishwakarma–Singh congruence for ordered partitions, linear case
 
-**Vishwakarma–Singh congruence for ordered partitions, linear case.** Let $p$ be an odd
+Let $p$ be an odd
 prime and let $k, s$ be positive integers with $s \le p - 2$ and $k \equiv 1 \pmod{p(p-1)}$.
 Let $\mu = \lfloor ks/(p - 1) \rfloor$. Then
 

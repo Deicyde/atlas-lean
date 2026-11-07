@@ -1,6 +1,6 @@
 # Labels of the subset-sum emitter
 
-**Labels of the subset-sum emitter.** The control labels of the subset-sum emitter machine
+The control labels of the subset-sum emitter machine
 are: $\mathrm{rdK}$, $\mathrm{rdN}$ and $\mathrm{mv}$ (parsing the two unary numbers $k$ and $n$
 that open the input, and moving the pair bits); $\mathrm{tri}$, $\mathrm{triC}$,
 $\mathrm{triC2}$, $\mathrm{cmp}$ and, for every ordering $o$, the labels $\mathrm{rc}(o)$ and

@@ -1,6 +1,6 @@
 # Number of proper fixed polycubes
 
-**Number of proper fixed polycubes.** For natural numbers $n$ and $i$, $\mathrm{DX}(n,i)$ is
+For natural numbers $n$ and $i$, $\mathrm{DX}(n,i)$ is
 the number of fixed $n$-cell polycubes proper in dimension $i$, that is, of fixed $n$-cell
 polycubes in dimension $i$ whose proper dimension is $i$.
 

@@ -1,6 +1,6 @@
 # Kourovka Problem 13.47 has a positive answer
 
-**Kourovka Problem 13.47 has a positive answer.** Every countable abelian group $G$ with only
+Every countable abelian group $G$ with only
 finitely many elements of order $2$ can be partitioned into two disjoint sets $A_1$ and $A_2$ with
 $A_1 \cup A_2 = G$ such that $A_1$ and $A_2$ are both dense in every non-discrete Hausdorff group
 topology on $G$.

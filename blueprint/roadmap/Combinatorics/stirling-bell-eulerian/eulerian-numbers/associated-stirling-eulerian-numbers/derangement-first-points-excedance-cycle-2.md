@@ -1,6 +1,6 @@
 # Derangements with the first $s$ points in distinct cycles, cycle weight $-(s+1)$
 
-**Derangements with the first $s$ points in distinct cycles, cycle weight $-(s+1)$.** Let
+Let
 $n, s \ge 0$. For a permutation $\sigma$ let $e(\sigma)$ be its number of excedances (indices
 $i$ with $\sigma(i) > i$) and $c(\sigma)$ its number of cycles, fixed points included. Summing
 over the derangements $\sigma$ of $n + s$ objects (permutations without fixed points) in which

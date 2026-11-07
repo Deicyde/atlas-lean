@@ -1,6 +1,6 @@
 # Trace on a finite product of algebras
 
-**Trace on a finite product of algebras.** Let $K$ be a field, and for a finite-dimensional
+Let $K$ be a field, and for a finite-dimensional
 commutative $K$-algebra $A$ and $z \in A$ write $\operatorname{Tr}_{A/K}(z)$ for the trace of the
 $K$-linear map given by multiplication by $z$. Let $(A_i)_{i \in I}$ be a family of
 finite-dimensional commutative $K$-algebras indexed by a finite set $I$, and let

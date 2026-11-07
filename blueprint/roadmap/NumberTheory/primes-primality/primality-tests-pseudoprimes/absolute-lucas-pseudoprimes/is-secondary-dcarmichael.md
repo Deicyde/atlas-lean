@@ -1,6 +1,6 @@
 # Secondary $D$-Carmichael number
 
-**Secondary $D$-Carmichael number.** Let $D$ be an integer. A natural number $n$ is a
+Let $D$ be an integer. A natural number $n$ is a
 secondary $D$-Carmichael number when $n$ is a $D$-Carmichael number,
 $|s_p(n) - \varepsilon_n| \le 2 (p - \varepsilon_p)$ for every prime $p \mid n$, and
 $|s_p(n) - \varepsilon_n| > p - \varepsilon_p$ for some prime $p \mid n$, where

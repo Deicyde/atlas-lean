@@ -1,6 +1,6 @@
 # Counting outer cubes by inner cubes and boundary charts
 
-**Counting outer cubes by inner cubes and boundary charts.** Let $S \subseteq \mathbb{R}^n$,
+Let $S \subseteq \mathbb{R}^n$,
 let $f_1, \dots, f_m : [0,1]^d \to \mathbb{R}^n$ be maps whose ranges together cover the frontier
 of $S$, and let $t$ be a real number. Let $O$ and $I$ be the outer and inner cube sets of $S$ at
 scale $t$: the $v \in \mathbb{Z}^n$ for which some, respectively every, point $x$ of the half-open

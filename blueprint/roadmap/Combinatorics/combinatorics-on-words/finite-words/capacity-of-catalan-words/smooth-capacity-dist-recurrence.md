@@ -1,6 +1,6 @@
 # Recurrence for the capacity distribution of smooth words by last letter
 
-**Recurrence for the capacity distribution of smooth words by last letter.** Let $r(n, i; q)$
+Let $r(n, i; q)$
 be the capacity distribution of the smooth words of length $n$ ending in $i$, let $s(n, i; q)$ be
 that of those smooth words of length $n$ ending in $i$ whose largest letter is $i$, and let
 $t(m, j; q)$ be the area distribution (the area of a word is the sum of its letters) of the words

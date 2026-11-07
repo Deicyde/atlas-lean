@@ -1,6 +1,6 @@
 # Square-integrable functions on a modular quotient
 
-**Square-integrable functions on a modular quotient.** For a subgroup $\Gamma$ of
+For a subgroup $\Gamma$ of
 $\mathrm{SL}(2, \mathbb{Z})$, a function $f \colon \mathbb{H} \to \mathbb{C}$ is
 square-integrable on $\Gamma \backslash \mathbb{H}$ when there is a finite set
 $s \subseteq \mathrm{SL}(2, \mathbb{Z})$ whose cosets $\Gamma a$, $a \in s$, cover

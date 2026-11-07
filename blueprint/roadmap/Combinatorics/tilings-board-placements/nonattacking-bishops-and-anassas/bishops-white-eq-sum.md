@@ -1,6 +1,6 @@
 # Extended Stirling formula for bishops on white squares
 
-**Extended Stirling formula for bishops on white squares.** For all natural numbers $m$ and
+For all natural numbers $m$ and
 $k$, the number $R_W(m, k)$ of placements of $k$ nonattacking bishops on the white squares (those
 $(i, j)$ with $i + j$ even) of the $m \times m$ board $[1, m]^2$ satisfies
 

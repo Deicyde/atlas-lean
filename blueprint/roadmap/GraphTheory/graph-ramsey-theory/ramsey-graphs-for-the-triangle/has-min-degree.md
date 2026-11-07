@@ -1,6 +1,6 @@
 # Minimum degree of a finite graph
 
-**Minimum degree of a finite graph.** A graph $G$ on the vertex set $\{0, \dots, n - 1\}$ has
+A graph $G$ on the vertex set $\{0, \dots, n - 1\}$ has
 minimum degree $d$ when every vertex of $G$ has at least $d$ neighbours and some vertex of $G$ has
 exactly $d$ neighbours; in particular $n \ge 1$.
 

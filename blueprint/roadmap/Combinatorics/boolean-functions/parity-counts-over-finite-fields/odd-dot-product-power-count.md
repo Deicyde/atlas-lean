@@ -1,6 +1,6 @@
 # Lower bound on odd-parity pairs in a finite field
 
-**Lower bound on odd-parity pairs in a finite field.** Let a finite field be written as `s` binary coordinates.  For a nonempty
+Let a finite field be written as `s` binary coordinates.  For a nonempty
 set `V` of exponents below `m`, the number of pairs `(a, b)` for which an odd
 number of the dot products `bits (a ^ E) ⬝ᵥ bits b` equal one satisfies the
 cleared-denominator lower bound

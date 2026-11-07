@@ -1,6 +1,6 @@
 # Holomorphy of the Laplace transform under exponential growth
 
-**Holomorphy of the Laplace transform under exponential growth.** Let $E$ be a complex
+Let $E$ be a complex
 Banach space, $a \in \mathbb{R}$, and $f : \mathbb{R} \to E$ locally integrable on $[0, \infty)$
 with $\|f(t)\| = O(e^{a t})$ as $t \to \infty$. Then the Laplace transform
 $s \mapsto \int_{(0, \infty)} e^{-st} f(t)\,dt$ is complex differentiable at every point of the

@@ -1,6 +1,6 @@
 # Structure of a further solution of the Nagell–Ljunggren equation
 
-**Structure of a further solution of the Nagell–Ljunggren equation.** Let $x, y, n, q$ be
+Let $x, y, n, q$ be
 natural numbers with $x \ge 2$, $y \ge 2$, $n \ge 3$ and $q \ge 2$ such that
 $(x^n - 1)/(x - 1) = y^q$, and suppose that $(x, y, n, q)$ is none of the known solutions
 $(3, 11, 5, 2)$, $(7, 20, 4, 2)$ and $(18, 7, 3, 3)$. Then the least prime divisor of $n$ is at

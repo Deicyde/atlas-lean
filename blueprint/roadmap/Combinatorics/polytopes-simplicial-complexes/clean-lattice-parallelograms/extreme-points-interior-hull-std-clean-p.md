@@ -1,6 +1,6 @@
 # Vertices of the interior hull of a standard clean parallelogram
 
-**Vertices of the interior hull of a standard clean parallelogram.** Let $1 \le a < n$ with
+Let $1 \le a < n$ with
 $\gcd(a, n) = 1$, let $P_{a,n} = \{s (1, 0) + t (a, n) : 0 \le s \le 1,\ 0 \le t \le 1\}$, and let
 $n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of $n / a$, with $m \ge 2$.
 Write $A_i / B_i$ for its $i$-th convergent, and put $v_{-1} = (0, 1)$, $v_i = (B_i, A_i)$ for

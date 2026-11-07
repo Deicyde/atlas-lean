@@ -1,6 +1,6 @@
 # Injective differential with complemented range gives an immersion
 
-**Injective differential with complemented range gives an immersion.** Let $\mathbb{K}$ be
+Let $\mathbb{K}$ be
 $\mathbb{R}$ or $\mathbb{C}$, let $n \ge 1$ be a smoothness degree (possibly $\infty$ or
 $\omega$), and let $M$ and $N$ be $C^n$ manifolds without boundary over $\mathbb{K}$, modelled on
 Banach spaces $E$ and $E'$. Let $f \colon M \to N$ be $C^n$ at every point of some neighbourhood

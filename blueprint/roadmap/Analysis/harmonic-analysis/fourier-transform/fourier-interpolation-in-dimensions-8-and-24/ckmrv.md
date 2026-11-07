@@ -1,6 +1,6 @@
 # Radial Fourier interpolation property
 
-**Radial Fourier interpolation property.** Let $n \ge 1$ and $k_0 \ge 0$ be integers. For a
+Let $n \ge 1$ and $k_0 \ge 0$ be integers. For a
 complex-valued Schwartz function $f$ on $\mathbb{R}^n$, let
 $\hat f(\xi) = \int f(x) e^{-2\pi i \langle x, \xi \rangle}\,dx$ be its Fourier transform, let
 $e_1$ be the first standard basis vector and let $r_k = \sqrt{2k}$. The sampling map from index

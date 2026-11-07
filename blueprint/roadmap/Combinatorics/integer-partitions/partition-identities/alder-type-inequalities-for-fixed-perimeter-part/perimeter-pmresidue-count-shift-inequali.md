@@ -1,6 +1,6 @@
 # Monotonicity of fixed perimeter counts with parts $\equiv \pm a \pmod{d+3}$
 
-**Monotonicity of fixed perimeter counts with parts $\equiv \pm a \pmod{d+3}$.** For natural
+For natural
 numbers $d$, $a$ and $n$, let $\ell_d^{(a)}(n)$ be the number of partitions of perimeter $n$
 (largest part plus number of parts minus $1$) into parts congruent to $a$ or $-a$ modulo $d + 3$.
 If $d$, $n$ and $a$ are positive with $a < (d + 3)/2$, then

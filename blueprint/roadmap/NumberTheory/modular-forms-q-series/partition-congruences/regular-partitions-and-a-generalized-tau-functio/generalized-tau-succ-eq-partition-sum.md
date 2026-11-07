@@ -1,6 +1,6 @@
 # Partition formulas for the generalized tau function
 
-**Partition formulas for the generalized tau function.** Let $k \ge 1$ and $n \ge 0$ be natural
+Let $k \ge 1$ and $n \ge 0$ be natural
 numbers. For a partition $\lambda$ of $n$ and a part $a$ of $\lambda$, write $f_a$ for the number
 of times $a$ occurs in $\lambda$. Then
 

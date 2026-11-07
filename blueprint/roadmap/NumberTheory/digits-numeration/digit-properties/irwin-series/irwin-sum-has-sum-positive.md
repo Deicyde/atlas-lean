@@ -1,6 +1,6 @@
 # Complementary-moment series for the Irwin sums
 
-**Complementary-moment series for the Irwin sums.** Let $b > 1$ and $d < b$ be natural
+Let $b > 1$ and $d < b$ be natural
 numbers, let $k$ and $l \ge 1$ be natural numbers, and let $(v_{j,m})_{j, m \ge 0}$ be a family
 of real numbers satisfying the complementary moment recurrence for $b$ and $d$. For a natural
 number $n$ let $k(n)$ be the number of occurrences of $d$ in the base-$b$ representation of $n$,

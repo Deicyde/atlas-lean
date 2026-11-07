@@ -1,6 +1,6 @@
 # Bender's lemma on coefficients of a product of power series
 
-**Bender's lemma on coefficients of a product of power series.** Let $(a_n)$ and $(b_n)$ be
+Let $(a_n)$ and $(b_n)$ be
 real sequences such that $A(z) = \sum_n a_n z^n$ has radius of convergence $\alpha \in [0, \infty]$
 and $\sum_n b_n z^n$ has radius of convergence $\beta$, where $\beta \ge 0$ is a real number with
 $\beta < \alpha$. Suppose that $b_n \neq 0$ for all sufficiently large $n$, that

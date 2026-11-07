@@ -1,6 +1,6 @@
 # Lagrange's theorem for Mallows representations
 
-**Lagrange's theorem for Mallows representations.** For every irrational $\alpha \in (0, 1)$,
+For every irrational $\alpha \in (0, 1)$,
 the Mallows representation $M(\alpha)$ is eventually periodic if and only if $\alpha$ is a real
 quadratic irrational, that is, algebraic of degree $2$ over $\mathbb{Q}$.
 

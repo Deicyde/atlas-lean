@@ -1,6 +1,6 @@
 # Counting values of the variation against the invariant measure
 
-**Counting values of the variation against the invariant measure.** Let $\mathbb{X}$ be the
+Let $\mathbb{X}$ be the
 set of Zeckendorf-adic integers, $T$ the Zeckendorf odometer, and $\mathbb{P}$ a $T$-invariant
 probability measure on binary sequences with $\mathbb{P}(\mathbb{X}^c) = 0$. Let $s(n)$ be the
 number of terms in the Zeckendorf representation of $n \in \mathbb{N}$, let $\iota(n)$ be the

@@ -1,6 +1,6 @@
 # Lévy–Khintchin representation on the real line
 
-**Lévy–Khintchin representation on the real line.** A probability measure $\mu$ on
+A probability measure $\mu$ on
 $\mathbb{R}$ is infinitely divisible, meaning that for every integer $n \ge 1$ there is a
 probability measure $\rho$ on $\mathbb{R}$ whose $n$-fold convolution power $\rho^{\ast n}$
 equals $\mu$, if and only if there are real numbers $\gamma$ and $\sigma \ge 0$ and a measure

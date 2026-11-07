@@ -1,6 +1,6 @@
 # Arndt compositions of 6 with two parts
 
-**Arndt compositions of 6 with two parts.** There are exactly $2$ Arndt compositions of $6$
+There are exactly $2$ Arndt compositions of $6$
 with two parts.
 
 They are $(5, 1)$ and $(4, 2)$.

@@ -1,6 +1,6 @@
 # EDGE COLORING is NP-complete
 
-**EDGE COLORING is NP-complete.** The EDGE COLORING decision problem belongs to NP, and every
+The EDGE COLORING decision problem belongs to NP, and every
 decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

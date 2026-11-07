@@ -1,6 +1,6 @@
 # Solvable pebbling configurations
 
-**Solvable pebbling configurations.** Let $G$ be a simple graph on a vertex set $V$ with
+Let $G$ be a simple graph on a vertex set $V$ with
 natural-number edge costs $w$. A configuration $C : V \to \mathbb{N}$ of pebbles is *solvable*
 if for every target vertex $r$ there is a finite, possibly empty, sequence of pebbling steps on
 $G$ with costs $w$ leading from $C$ to a configuration with at least one pebble on $r$.

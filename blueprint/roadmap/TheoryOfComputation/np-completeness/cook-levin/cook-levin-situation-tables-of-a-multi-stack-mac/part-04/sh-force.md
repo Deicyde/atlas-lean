@@ -1,6 +1,6 @@
 # In-range shift forcing (L1)
 
-**In-range shift forcing (L1).** Let $L$ be a layout with $K$ stacks and $g$ symbol codes,
+Let $L$ be a layout with $K$ stacks and $g$ symbol codes,
 let $sa$, $pl$, $cn$, $pu$ be situation tables and $N, T, H \in \mathbb{N}$, and let $a$ be an
 assignment satisfying the cell-shift clause family of $L$ with these tables and bounds $N$, $T$,
 $H$. Call a variable true when its index is less than the length of $a$ and $a$ is true there.

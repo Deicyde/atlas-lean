@@ -1,6 +1,6 @@
 # Chaitin's incompleteness theorem
 
-**Chaitin's incompleteness theorem.** Let $K$ denote Kolmogorov complexity, and let $S$ be a
+Let $K$ denote Kolmogorov complexity, and let $S$ be a
 recursively enumerable (recognizable) set of pairs $(x, n)$ of a binary string $x$ and a natural
 number $n$ such that $n \le K(x)$ for every $(x, n) \in S$. Then there is a natural number $B$
 with $n \le B$ for every $(x, n) \in S$.

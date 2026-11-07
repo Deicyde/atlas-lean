@@ -1,6 +1,6 @@
 # Dumont–Thomas numeration for right-infinite periodic points
 
-**Dumont–Thomas numeration for right-infinite periodic points.** Let $\eta$ be a
+Let $\eta$ be a
 substitution on an alphabet $A$, let $a \in A$ be a growing letter, i.e.
 $|\eta^k(a)| \to \infty$, and let $u_0 u_1 u_2 \cdots$ be a right-infinite word over $A$ with
 $u_0 = a$. Let $p \ge 1$ be such that for every $n$ the word $\eta^p(u_0 \cdots u_{n-1})$ is a

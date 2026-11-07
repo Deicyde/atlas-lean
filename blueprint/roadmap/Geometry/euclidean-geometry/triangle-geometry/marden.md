@@ -1,6 +1,6 @@
 # Marden's theorem
 
-**Marden's theorem.** Let $a, b, c$ be complex numbers such that $(b - a)/(c - a)$ has
+Let $a, b, c$ be complex numbers such that $(b - a)/(c - a)$ has
 nonzero imaginary part, so that they are the vertices of a nondegenerate triangle, and let
 $p(z) = (z - a)(z - b)(z - c)$. Then there are complex numbers $f_1, f_2$ and a real number $L$
 such that the roots of $p'$, counted with multiplicity, are exactly $f_1$ and $f_2$, and such

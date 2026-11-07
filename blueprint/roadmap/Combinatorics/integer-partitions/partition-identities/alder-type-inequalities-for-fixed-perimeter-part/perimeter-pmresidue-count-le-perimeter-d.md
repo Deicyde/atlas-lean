@@ -1,6 +1,6 @@
 # Alder-type inequality in the degenerate case $a = (d + 3)/2$
 
-**Alder-type inequality in the degenerate case $a = (d + 3)/2$.** Let $n$ be a positive
+Let $n$ be a positive
 integer, let $d$ be an odd natural number and put $a = (d + 3)/2$. Then the number
 $\ell_d^{(a)}(n)$ of partitions of perimeter $n$ into parts congruent to $a$ or $-a$ modulo
 $d + 3$ is at most the number $h_d^{(a)}(n)$ of partitions of perimeter $n$ into $d$-distinct

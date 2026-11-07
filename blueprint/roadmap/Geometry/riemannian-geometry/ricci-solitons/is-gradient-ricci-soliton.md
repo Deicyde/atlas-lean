@@ -1,6 +1,6 @@
 # Gradient Ricci soliton
 
-**Gradient Ricci soliton.** Let $M$ be a smooth manifold (possibly with boundary or corners)
+Let $M$ be a smooth manifold (possibly with boundary or corners)
 modelled on a finite-dimensional real normed space, with a smooth Riemannian metric $g$. A
 function $f : M \to \mathbb{R}$ and a constant $c \in \mathbb{R}$ form a gradient Ricci soliton
 if $f$ is smooth and, for every point $x \in M$ and all tangent vectors $u, v \in T_x M$,

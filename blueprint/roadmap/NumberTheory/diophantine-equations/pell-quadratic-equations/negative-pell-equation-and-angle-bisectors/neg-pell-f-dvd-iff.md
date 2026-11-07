@@ -1,6 +1,6 @@
 # Divisibility between terms of the negative Pell sequence
 
-**Divisibility between terms of the negative Pell sequence.** Let $d > 1$ be a natural
+Let $d > 1$ be a natural
 number such that $x^2 - dy^2 = -1$ has an integral solution, let $(X, Y)$ be the solution of
 $x^2 - dy^2 = -1$ in natural numbers with the least positive $Y$, and for each $n$ let $f_n$ and
 $g_n$ be the integers with $(X + Y\sqrt d)^n = f_n + g_n \sqrt d$. For natural numbers

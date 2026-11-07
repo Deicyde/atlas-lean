@@ -1,6 +1,6 @@
 # Torus shift sum
 
-**Torus shift sum.** Let $n, m \ge 1$, let $T$ be a finite set of tile designs, let $g$ be a
+Let $n, m \ge 1$, let $T$ be a finite set of tile designs, let $g$ be a
 map from $\mathbb{Z}/n \times \mathbb{Z}/m$ (the cells of the $n \times m$ torus) to itself and
 let $\sigma$ be a permutation of $T$. For a shift $(a, b) \in \mathbb{Z}/n \times \mathbb{Z}/m$,
 count the tilings $F \colon \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with

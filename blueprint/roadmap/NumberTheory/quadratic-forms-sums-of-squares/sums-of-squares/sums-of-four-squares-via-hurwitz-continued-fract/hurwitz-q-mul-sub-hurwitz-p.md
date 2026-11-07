@@ -1,6 +1,6 @@
 # Error of the Hurwitz convergents
 
-**Error of the Hurwitz convergents.** Let $z$ be a complex number with Hurwitz iterates
+Let $z$ be a complex number with Hurwitz iterates
 $z_0 = z, z_1, z_2, \dots$, convergent numerators $P_n$ and convergent denominators $Q_n$. For
 every legal index $n$ for $z$,
 

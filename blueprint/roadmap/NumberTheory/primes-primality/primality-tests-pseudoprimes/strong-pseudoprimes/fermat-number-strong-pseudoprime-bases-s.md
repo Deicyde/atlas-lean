@@ -1,6 +1,6 @@
 # A subgroup of strong pseudoprime bases of a composite Fermat number
 
-**A subgroup of strong pseudoprime bases of a composite Fermat number.** Let $k$ be a natural
+Let $k$ be a natural
 number such that the Fermat number $F_k = 2^{2^k} + 1$ is composite, and let $S_k$ be the set of
 residues modulo $F_k$ of the form $2^t$, $2^{2^{k-1}+t} + 2^t$ or $2^{2^{k-1}+t} - 2^t$ with $t$ a
 natural number. Then the units of $\mathbb{Z}/F_k\mathbb{Z}$ that lie in $S_k$ form a subgroup of

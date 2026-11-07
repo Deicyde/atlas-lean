@@ -1,6 +1,6 @@
 # Hyper Lucas-Leonardo p-numbers
 
-**Hyper Lucas-Leonardo p-numbers.** For natural numbers $p$, $n$ and $k$, the hyper
+For natural numbers $p$, $n$ and $k$, the hyper
 Lucas-Leonardo $p$-number $R^{(k)}_{p,n}$ is the rational number defined by
 $R^{(0)}_{p,n} = R_{p,n}$, the Lucas-Leonardo $p$-number; $R^{(k)}_{p,0} = p^2 + p + 1$ for
 $k \ge 1$; and, for $n \ge 1$ and $k \ge 1$,

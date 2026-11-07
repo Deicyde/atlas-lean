@@ -1,6 +1,6 @@
 # Rewriting at a state symbol
 
-**Rewriting at a state symbol.** Let $M$ be a single-tape Turing machine with finitely many
+Let $M$ be a single-tape Turing machine with finitely many
 states and tape symbols, and let $\sqcup$ be its blank symbol. For words $u$, $v$ and a state $q$,
 the successor of $u\,q\,v$ is defined as follows. If $v$ does not begin with a tape symbol, there
 is none. If $v = a\,v'$ for a tape symbol $a$: when $M$ has no transition from $q$ reading $a$,

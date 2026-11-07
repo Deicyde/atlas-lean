@@ -1,6 +1,6 @@
 # Descartes' circle theorem
 
-**Descartes' circle theorem.** Let four circles in the Euclidean plane have centers $c_i$ and
+Let four circles in the Euclidean plane have centers $c_i$ and
 radii $r_i > 0$ for $i = 1, 2, 3, 4$, let $d$ be the Euclidean distance, and let
 $k_1, k_2, k_3, k_4$ be real numbers. Suppose that either
 (a) any two of the circles are externally tangent, $d(c_i, c_j) = r_i + r_j$ for $i \ne j$, and

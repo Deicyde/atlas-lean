@@ -1,6 +1,6 @@
 # Laguerre–Stirling–Bell connection pair, source form
 
-**Laguerre–Stirling–Bell connection pair, source form.** Let $\alpha$, $\beta$ and $x$ be real
+Let $\alpha$, $\beta$ and $x$ be real
 numbers with $\beta \neq 0$, and let $n$ and $r$ be natural numbers. Write $\binom{k}{j}$ for the
 binomial coefficients, $c(n,k)$ for the unsigned Stirling numbers of the first kind, $S(n,k)$ for
 the Stirling numbers of the second kind, and $y^{\overline{m}} = y(y+1)\cdots(y+m-1)$ for the

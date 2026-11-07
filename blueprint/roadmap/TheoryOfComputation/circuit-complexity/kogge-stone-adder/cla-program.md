@@ -1,6 +1,6 @@
 # Gates of the carry-lookahead adder
 
-**Gates of the carry-lookahead adder.** For natural numbers $n$ and $K$, the gate program of
+For natural numbers $n$ and $K$, the gate program of
 the $n$-bit adder with $K$ Kogge–Stone levels is the straight-line program over the XOR/AND/OR
 basis on $2n + 1$ inputs (the $n$ bits of one summand, the $n$ bits of the other and a carry-in
 $c$) made of level $0$ and Kogge–Stone levels $1, \dots, K$, followed by a final level of $3n$

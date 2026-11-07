@@ -1,6 +1,6 @@
 # Unfolding the prime sum $T_h$
 
-**Unfolding the prime sum $T_h$.** Let $F$ be a finite field with $q$ elements, let $h$ be a
+Let $F$ be a finite field with $q$ elements, let $h$ be a
 natural number, and write $|P| = q^{\deg P}$ for a monic irreducible polynomial $P$ over $F$. Then
 the prime sum $T_h$ equals the real sum over all monic irreducible polynomials $P$ over $F$
 

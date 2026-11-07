@@ -1,6 +1,6 @@
 # Weight of a digit string
 
-**Weight of a digit string.** For a natural number $b$ and a base-$b$ digit string $X$ of
+For a natural number $b$ and a base-$b$ digit string $X$ of
 length $|X|$, the weight of $X$ is $b^{-|X|}$, regarded as an element of $[0, \infty]$.
 
 ## Sources

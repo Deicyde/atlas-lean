@@ -1,6 +1,6 @@
 # Existence of finite multigraded free resolutions
 
-**Existence of finite multigraded free resolutions.** Let $K$ be a field, let
+Let $K$ be a field, let
 $R = K[x_1, \dots, x_n]$, and let $M$ be a multigraded $R$-module that is finitely generated over
 $R$. Then there are a projective resolution $P_\bullet \to M$ over $R$, index types $\iota_i$ for
 $i \in \mathbb{N}$, a multigraded free resolution structure on $P_\bullet$ for the given grading

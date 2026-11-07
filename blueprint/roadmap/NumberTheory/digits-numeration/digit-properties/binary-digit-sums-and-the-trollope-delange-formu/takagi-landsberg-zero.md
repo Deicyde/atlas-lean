@@ -1,6 +1,6 @@
 # The Takagi–Landsberg function vanishes at zero
 
-**The Takagi–Landsberg function vanishes at zero.** For every real or complex parameter $a$,
+For every real or complex parameter $a$,
 the Takagi–Landsberg function satisfies $\mathcal{T}_a(0) = 0$.
 
 ## Sources

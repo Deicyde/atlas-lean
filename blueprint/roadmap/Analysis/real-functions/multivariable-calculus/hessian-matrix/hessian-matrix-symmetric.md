@@ -1,6 +1,6 @@
 # Symmetry of the Hessian
 
-**Symmetry of the Hessian.** If $f : \mathbb{R}^n \to \mathbb{R}$ is twice continuously
+If $f : \mathbb{R}^n \to \mathbb{R}$ is twice continuously
 differentiable, then for every $x \in \mathbb{R}^n$ the Hessian matrix of $f$ at $x$ is symmetric:
 it equals its transpose.
 

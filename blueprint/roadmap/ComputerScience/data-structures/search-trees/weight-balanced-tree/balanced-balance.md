@@ -1,6 +1,6 @@
 # Weight-balanced rebalancing restores balance
 
-**Weight-balanced rebalancing restores balance.** Let $L$ and $R$ be weight-balanced trees
+Let $L$ and $R$ be weight-balanced trees
 and $k$ a key, and write $|t|$ for the number of keys of a tree $t$. If
 $4(|L| + 1) \le 3(|L| + |R| + 2) + 1$ and $4(|R| + 1) \le 3(|L| + |R| + 2) + 1$, then the
 rebalanced node $\mathrm{balance}(L, k, R)$ is weight-balanced.

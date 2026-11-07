@@ -1,6 +1,6 @@
 # Hyper Lucas–Leonardo numbers from hyper Leonardo numbers
 
-**Hyper Lucas–Leonardo numbers from hyper Leonardo numbers.** For natural numbers $p \ge 1$,
+For natural numbers $p \ge 1$,
 $n > p$ and $k \ge 1$, the hyper Lucas–Leonardo $p$-number $R^{(k)}_{p,n}$ and the hyper
 Leonardo $p$-numbers $\mathcal{L}^{(k)}_{p,n}$ satisfy
 

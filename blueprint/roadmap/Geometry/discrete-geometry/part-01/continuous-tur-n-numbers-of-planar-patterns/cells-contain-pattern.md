@@ -1,6 +1,6 @@
 # Containment of a point pattern in a set of grid cells
 
-**Containment of a point pattern in a set of grid cells.** A set of cells
+A set of cells
 $A \subseteq \mathbb{N} \times \mathbb{N}$, each cell written (column, row), contains a set
 $P \subseteq \mathbb{R}^2$ when there are maps $f_X, f_Y : \mathbb{R} \to \mathbb{N}$ such that
 $f_X$ is strictly increasing on the set of $x$-coordinates of points of $P$, $f_Y$ is strictly

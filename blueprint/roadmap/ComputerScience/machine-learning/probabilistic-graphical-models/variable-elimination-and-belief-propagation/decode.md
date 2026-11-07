@@ -1,6 +1,6 @@
 # Max-product decoding
 
-**Max-product decoding.** An assignment of a tree model over a finite nonempty set of values,
+An assignment of a tree model over a finite nonempty set of values,
 defined by recursion on the number of vertices. For a single vertex, its value is one that
 maximizes its unary factor. For vertices $0, \dots, n + 1$, the vertices $0, \dots, n$ get the
 decoding of the model with the last vertex maximized out, and the last vertex gets a value $b$

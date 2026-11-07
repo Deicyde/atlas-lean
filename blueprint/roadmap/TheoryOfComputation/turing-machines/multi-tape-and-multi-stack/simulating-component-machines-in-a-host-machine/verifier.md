@@ -1,6 +1,6 @@
 # Verifier host
 
-**Verifier host.** Let $c$ be a component machine with stacks $c_X \ne c_W$, maps $g_X$ and
+Let $c$ be a component machine with stacks $c_X \ne c_W$, maps $g_X$ and
 $g_W$ from bits to the alphabets of $c_X$ and $c_W$, and labels $\mathit{start}$, $\mathit{yes}$
 and $\mathit{no}$ with $\mathit{yes} \ne \mathit{no}$, where the program halts at $\mathit{yes}$
 and at $\mathit{no}$. Let $f$ assign a boolean to each pair of bit lists and let $p$ be a

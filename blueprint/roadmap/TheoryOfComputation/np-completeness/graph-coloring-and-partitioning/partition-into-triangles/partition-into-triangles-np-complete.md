@@ -1,6 +1,6 @@
 # PARTITION INTO TRIANGLES is NP-complete
 
-**PARTITION INTO TRIANGLES is NP-complete.** The decision problem PARTITION INTO TRIANGLES
+The decision problem PARTITION INTO TRIANGLES
 lies in NP, and every decision problem in NP has a polynomial-time many-one reduction to
 PARTITION INTO TRIANGLES.
 

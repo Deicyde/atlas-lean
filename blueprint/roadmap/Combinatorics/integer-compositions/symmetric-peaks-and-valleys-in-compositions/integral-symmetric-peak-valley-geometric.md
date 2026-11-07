@@ -1,6 +1,6 @@
 # Expected symmetric peaks and valleys in geometric words
 
-**Expected symmetric peaks and valleys in geometric words.** Let $n \ge 2$, let
+Let $n \ge 2$, let
 $0 < p < 1$ and $q = 1 - p$, and let $X_1, \dots, X_n$ be independent random variables, each
 geometric on $\{0, 1, 2, \dots\}$ with $\Pr(X_i = k) = q^k p$, and consider the word
 $X_1 X_2 \cdots X_n$. The expected number of its symmetric peaks is

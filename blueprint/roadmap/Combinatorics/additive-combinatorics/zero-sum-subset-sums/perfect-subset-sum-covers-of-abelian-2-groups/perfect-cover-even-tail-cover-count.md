@@ -1,6 +1,6 @@
 # The even tail of a perfect cover
 
-**The even tail of a perfect cover.** Let $s = (s_1, \dots, s_{m+n})$, $s_i = (x_i, y_i)$, be a
+Let $s = (s_1, \dots, s_{m+n})$, $s_i = (x_i, y_i)$, be a
 family in $(\mathbb{Z}_2)^m \oplus \mathbb{Z}_{2^n}$ that is a perfect $1$-cover: every element of
 the group is the sum of the $s_i$ over exactly one set of indices. Let $k + 1 \le m + n$ and suppose
 that $y_i$, read as an integer in $\{0, \dots, 2^n - 1\}$, is odd exactly when $i \le k + 1$. Let

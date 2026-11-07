@@ -1,6 +1,6 @@
 # Simulation for terms evaluating to an abstraction
 
-**Simulation for terms evaluating to an abstraction.** Fix an answer type $R$ and write
+Fix an answer type $R$ and write
 $\llbracket \cdot \rrbracket$ for the call-by-value CPS translation of types, contexts (entrywise)
 and terms. If a term $M$ of type $A \to B$ in a context $\Gamma$ evaluates to $\lambda x. N$ under
 call-by-value big-step evaluation, then for every value $K$ of type

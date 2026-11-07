@@ -1,6 +1,6 @@
 # Blocks of $T(Q(\mathrm{SB}(\alpha)))$ and of $Q(\mathrm{SB}(\alpha))$
 
-**Blocks of $T(Q(\mathrm{SB}(\alpha)))$ and of $Q(\mathrm{SB}(\alpha))$.** Let $X$ be one of
+Let $X$ be one of
 the letters $O_L, E_R, O_R, E_L$, let $u = u_1 \cdots u_\ell$ be a finite word over $\{L, R\}$,
 and let $\dot Q^X(u) = \langle X_0, X_1, \dots, X_\ell \rangle$ be the word with $X_0 = X$ and
 $X_k = \delta(X_{k-1}, u_k)$ for $1 \le k \le \ell$, where $\delta$ is the transition rule that

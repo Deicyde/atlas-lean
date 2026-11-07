@@ -1,6 +1,6 @@
 # Irrationality exponent of the two-step pattern
 
-**Irrationality exponent of the two-step pattern.** Let $\beta \ge 1$ be a natural number,
+Let $\beta \ge 1$ be a natural number,
 let $(\omega_n)_{n \ge 0}$ be positive integers, let $(q_n)_{n \ge 0}$ be the convergent
 denominators of the two-step pattern for $\beta$ and $(\omega_n)$, and let
 $x = \sum_{i \ge 0} (-1)^i / (q_i q_{i+1})$. Let $L$ be the limit superior, in the extended real

@@ -1,6 +1,6 @@
 # A 1-metered example in which the third car fails
 
-**A 1-metered example in which the third car fails.** In the $1$-metered parking scheme on
+In the $1$-metered parking scheme on
 two spots $\{0, 1\}$, if three cars arrive with preferences $0$, $0$, $1$, then the first two
 cars park in spots $0$ and $1$ and the third car fails to park.
 

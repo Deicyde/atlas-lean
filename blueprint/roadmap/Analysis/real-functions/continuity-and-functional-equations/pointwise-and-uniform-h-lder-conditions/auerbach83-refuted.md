@@ -1,6 +1,6 @@
 # Pointwise difference-quotient bounds do not imply Hölder continuity
 
-**Pointwise difference-quotient bounds do not imply Hölder continuity.** Auerbach's Problem 83 is false: the pointwise limsup condition does
+Auerbach's Problem 83 is false: the pointwise limsup condition does
 not imply a Hölder condition. Source: H. Auerbach, Problem 83 of the
 Scottish Book; typescript Ad 83 records the negative answer, with
 Marcinkiewicz's counterexample: a triangular function on intervals

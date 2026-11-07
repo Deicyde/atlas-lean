@@ -1,6 +1,6 @@
 # Backward-induction winning region of the fixpoint-free fragment
 
-**Backward-induction winning region of the fixpoint-free fragment.** Let $M$ be a Kripke
+Let $M$ be a Kripke
 model with accessibility relation $R$. For a fixpoint-free formula $\varphi$ and a world $w$,
 "$\varphi$ is winning at $w$" is defined by recursion on $\varphi$: an atom $a$ is winning at
 $w$ iff $a$ is true at $w$ in $M$; a negated atom $\lnot a$ iff $a$ is not true at $w$; $\bot$

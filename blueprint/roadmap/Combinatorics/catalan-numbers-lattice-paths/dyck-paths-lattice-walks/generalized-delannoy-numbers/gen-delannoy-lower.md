@@ -1,6 +1,6 @@
 # Lower generalized Delannoy number
 
-**Lower generalized Delannoy number.** For natural numbers $k$, $m$ and $n$, the generalized
+For natural numbers $k$, $m$ and $n$, the generalized
 Delannoy number $D_k(m, n)$ is
 
 $$D_k(m, n) = \sum_{j=0}^{n} \binom{m + n - k - j}{n - k} \binom{n}{j},$$

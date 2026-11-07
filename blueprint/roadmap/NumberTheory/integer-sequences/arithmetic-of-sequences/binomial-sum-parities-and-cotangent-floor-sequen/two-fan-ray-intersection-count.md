@@ -1,6 +1,6 @@
 # Intersection points of two fans of rays
 
-**Intersection points of two fans of rays.** Let $m, n \ge 1$, $P = (-1, 0)$ and
+Let $m, n \ge 1$, $P = (-1, 0)$ and
 $Q = (1, 0)$. From $P$ draw the $m$ closed rays at angles $\pi - 2\pi s/m$ for $0 \le s < m$, and
 from $Q$ the $n$ closed rays at angles $2\pi t/n$ for $0 \le t < n$. Let
 $h = \lfloor (m - 1)/2 \rfloor$. Then the number of points that are $P$, $Q$, or a point off the

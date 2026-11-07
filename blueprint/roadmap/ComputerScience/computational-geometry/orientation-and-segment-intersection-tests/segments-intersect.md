@@ -1,6 +1,6 @@
 # The SEGMENTS-INTERSECT procedure
 
-**The SEGMENTS-INTERSECT procedure.** Let $K$ be a field with a linear order and let
+Let $K$ be a field with a linear order and let
 $p_1, p_2, p_3, p_4 \in K^2$. CLRS's procedure SEGMENTS-INTERSECT$(p_1, p_2, p_3, p_4)$, which
 tests whether the segments $p_1p_2$ and $p_3p_4$ meet, first computes, at a cost of $4$, the
 directions $d_1 = \mathrm{DIRECTION}(p_3, p_4, p_1)$, $d_2 = \mathrm{DIRECTION}(p_3, p_4, p_2)$,

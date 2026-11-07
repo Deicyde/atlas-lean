@@ -1,6 +1,6 @@
 # Composition of sequential transducers
 
-**Composition of sequential transducers.** Let $S_1$ be a sequential transducer from $I$ to
+Let $S_1$ be a sequential transducer from $I$ to
 $M$ with start state $s_1$, initial output $\iota_1$ and final output map $\phi_1$, and let $S_2$
 be one from $M$ to $O$ with start state $s_2$, initial output $\iota_2$ and final output map
 $\phi_2$. For a transducer $S$, a state $q$ and a word $w$, write $\delta_S(q, w)$ for the state

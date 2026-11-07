@@ -1,6 +1,6 @@
 # Non-degenerate permutation classes as a difference
 
-**Non-degenerate permutation classes as a difference.** Let $(P_n)_{n \ge 0}$ be a family of
+Let $(P_n)_{n \ge 0}$ be a family of
 properties, $P_n$ a property of $n$-variable Boolean functions, that is invariant under renaming
 variables: for all $m$ and $n$, every injection $e$ from $\{1, \dots, m\}$ to $\{1, \dots, n\}$
 and every $m$-variable function $g$, the $n$-variable function $x \mapsto g(x \circ e)$ has $P_n$

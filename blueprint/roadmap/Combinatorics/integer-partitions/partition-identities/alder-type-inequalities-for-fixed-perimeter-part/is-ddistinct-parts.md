@@ -1,6 +1,6 @@
 # Partitions into d-distinct parts
 
-**Partitions into d-distinct parts.** Let $d$ be a natural number. A finite multiset $s$ of
+Let $d$ be a natural number. A finite multiset $s$ of
 natural numbers has $d$-distinct parts when no element occurs in $s$ more than once and any two
 elements $x < y$ of $s$ satisfy $x + d \le y$.
 

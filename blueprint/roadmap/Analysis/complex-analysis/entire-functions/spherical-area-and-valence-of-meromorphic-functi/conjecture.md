@@ -1,6 +1,6 @@
 # Hayman's spherical-area ratio conjecture
 
-**Hayman's spherical-area ratio conjecture.** The statement that every function
+The statement that every function
 $f\colon \mathbb{C} \to \mathbb{C}$ that is meromorphic on all of $\mathbb{C}$ and nonconstant
 (complex differentiable at two points where it takes different values) has bounded root counts
 (for every real $r$, the numbers of roots of $f(z) = a$ in $|z| < r$, counted with

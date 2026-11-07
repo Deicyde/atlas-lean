@@ -1,6 +1,6 @@
 # Bound on the Laurent remainder of $1/(e^v - 1)$
 
-**Bound on the Laurent remainder of $1/(e^v - 1)$.** For a natural number $N$, let
+For a natural number $N$, let
 $R_N : \mathbb{R} \to \mathbb{R}$ be given by $R_N(0) = 0$ and, for $v \neq 0$,
 
 $$

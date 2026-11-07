@@ -1,6 +1,6 @@
 # Summand of the Breusch grid function
 
-**Summand of the Breusch grid function.** For a natural number $d$, an integer $m$ and a
+For a natural number $d$, an integer $m$ and a
 natural number $j$, the summand of the pair $(d, m)$ at $j$ is the integer
 
 $$

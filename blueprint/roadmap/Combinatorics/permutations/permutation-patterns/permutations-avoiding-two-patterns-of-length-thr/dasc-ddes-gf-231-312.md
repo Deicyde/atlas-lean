@@ -1,6 +1,6 @@
 # Double ascents and double descents over permutations avoiding $231$ and $312$
 
-**Double ascents and double descents over permutations avoiding $231$ and $312$.** Let
+Let
 
 $$H = \sum_{n \ge 0} \sum_{\sigma} x^n y^{\mathrm{dasc}(\sigma)} z^{\mathrm{ddes}(\sigma)},$$
 

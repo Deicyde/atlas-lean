@@ -1,6 +1,6 @@
 # Generalized Lucasnomial Fuss–Catalan numbers are integers (Ballot)
 
-**Generalized Lucasnomial Fuss–Catalan numbers are integers (Ballot).** Let $P$ and $Q$ be
+Let $P$ and $Q$ be
 nonzero integers with $\gcd(P, Q) = 1$, and let $U : \mathbb{N} \to \mathbb{Z}$ satisfy $U_0 = 0$,
 $U_1 = 1$, $U_{m+2} = P U_{m+1} - Q U_m$ for every natural number $m$, and $U_m \ne 0$ for every
 $m \ge 1$. Then for all natural numbers $r \ge 1$, $a \ge 2$ and $n \ge 1$, the rational number

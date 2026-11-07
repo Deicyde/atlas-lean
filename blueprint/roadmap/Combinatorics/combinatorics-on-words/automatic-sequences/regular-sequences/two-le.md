@@ -1,6 +1,6 @@
 # The base of a $k$-regular sequence is at least 2
 
-**The base of a $k$-regular sequence is at least 2.** Let $k$ be a natural number. If an integer
+Let $k$ be a natural number. If an integer
 sequence $f$ is $k$-regular, then $k \ge 2$.
 
 ## Sources

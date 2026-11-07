@@ -1,6 +1,6 @@
 # $\overline{\mathrm{spt2}}$ vanishes at zero
 
-**$\overline{\mathrm{spt2}}$ vanishes at zero.** Let $\overline{\mathrm{spt2}}(n)$ be the
+Let $\overline{\mathrm{spt2}}(n)$ be the
 number of smallest parts in the overpartitions of $n$ whose smallest part is even and not
 overlined. Then $\overline{\mathrm{spt2}}(0) = 0$: the only overpartition of $0$ is empty and has
 no smallest part.

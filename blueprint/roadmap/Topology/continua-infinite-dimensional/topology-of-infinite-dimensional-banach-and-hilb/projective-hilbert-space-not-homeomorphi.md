@@ -1,6 +1,6 @@
 # Projective Hilbert space is not homeomorphic to Hilbert space
 
-**Projective Hilbert space is not homeomorphic to Hilbert space.** Let $E$ be an
+Let $E$ be an
 infinite-dimensional real Hilbert space. Then the projective Hilbert space of $E$, the unit
 sphere $\{x \in E : \|x\| = 1\}$ with each $x$ identified with $-x$ and given the quotient
 topology, is not homeomorphic to $E$.

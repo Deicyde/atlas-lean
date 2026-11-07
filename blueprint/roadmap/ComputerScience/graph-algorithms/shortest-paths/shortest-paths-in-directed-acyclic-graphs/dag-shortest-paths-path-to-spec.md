@@ -1,6 +1,6 @@
 # Extracted DAG shortest paths are shortest paths
 
-**Extracted DAG shortest paths are shortest paths.** Let $E$ be a list of integer-weighted
+Let $E$ be a list of integer-weighted
 directed edges on the vertices $\{0, \dots, n-1\}$ and $s$ a source vertex. Suppose the DAG
 shortest-path algorithm on $E$ from $s$ succeeds, and following its predecessor edges back from a
 vertex $t$ reaches $s$ within $n$ steps, giving the path $P$. Then $P$ is a path from $s$ to $t$

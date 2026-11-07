@@ -1,6 +1,6 @@
 # Statement that an admissible coset-cover exponent exists
 
-**Statement that an admissible coset-cover exponent exists.** The proposition that some
+The proposition that some
 real number $C$ is an admissible asymptotic coset-cover exponent: for every $\varepsilon > 0$
 there is $K_0 \ge 1$ such that for every real $K \ge K_0$, every $n \in \mathbb{N}$ and every
 nonempty finite set $A \subseteq \mathbb{F}_2^n$ with $|A + A| \le K|A|$, there is a subspace $H$

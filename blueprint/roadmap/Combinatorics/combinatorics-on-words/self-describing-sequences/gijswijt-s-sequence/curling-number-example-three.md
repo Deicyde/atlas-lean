@@ -1,6 +1,6 @@
 # Curling number of $222322232223$
 
-**Curling number of $222322232223$.** The string $222322232223$ has curling number
+The string $222322232223$ has curling number
 $\mathcal{C}(222322232223) = 3$.
 
 ## Sources

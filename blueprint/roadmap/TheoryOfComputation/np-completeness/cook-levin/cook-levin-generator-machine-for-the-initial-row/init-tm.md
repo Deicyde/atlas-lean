@@ -1,6 +1,6 @@
 # The init generator as a finite multi-stack machine
 
-**The init generator as a finite multi-stack machine.** For a layout $L$ with $g$ symbol
+For a layout $L$ with $g$ symbol
 codes, a start code $i_c$, a stack $k_0$ and a code list $Y$, this is the finite multi-stack
 Turing machine whose stacks are the generator's counters, its Boolean output stack and an extra
 input stack, with the extra stack as input stack and the Boolean stack as output stack; whose

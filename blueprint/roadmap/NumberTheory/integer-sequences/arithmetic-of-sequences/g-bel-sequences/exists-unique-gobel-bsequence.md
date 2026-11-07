@@ -1,6 +1,6 @@
 # Existence and uniqueness of the sequence $b_{l,s}$
 
-**Existence and uniqueness of the sequence $b_{l,s}$.** Let $l$ be an even natural number and
+Let $l$ be an even natural number and
 $s$ a natural number with $s \le l$ such that $2s + 1$ and $l + 1$ are coprime. Then exactly one
 function $b : \mathbb{Z} \to \mathbb{Z}$ satisfies the defining conditions of $b_{l,s}$:
 $b(n) = \pm 1$ for every integer $n$, $b(n + l + 1) = b(n)$ for every $n$, $b(1) = 1$,

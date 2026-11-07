@@ -1,6 +1,6 @@
 # Two's complement values of small words
 
-**Two's complement values of small words.** The two's complement values $\mathrm{val}_{2c}$
+The two's complement values $\mathrm{val}_{2c}$
 of the binary words $1$, $10$, $101$ and $011$ (most significant digit first) are $-1$, $-2$, $-3$
 and $3$ respectively.
 

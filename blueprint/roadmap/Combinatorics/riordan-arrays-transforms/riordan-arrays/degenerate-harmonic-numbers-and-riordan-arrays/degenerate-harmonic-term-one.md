@@ -1,6 +1,6 @@
 # Degenerate harmonic term of index one
 
-**Degenerate harmonic term of index one.** For every real $\lambda \ne 0$ and every real
+For every real $\lambda \ne 0$ and every real
 $\alpha$, the degenerate harmonic term of index $1$,
 $H^0_{1,\lambda}(\alpha) = \binom{\lambda}{1} / (\lambda \alpha)$, equals $1/\alpha$.
 

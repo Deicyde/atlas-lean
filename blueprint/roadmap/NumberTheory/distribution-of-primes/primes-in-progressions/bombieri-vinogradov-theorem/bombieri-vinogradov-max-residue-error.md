@@ -1,6 +1,6 @@
 # Maximal residue-class error
 
-**Maximal residue-class error.** For natural numbers $y$ and $q$, $E^{\ast}(y; q)$ is the
+For natural numbers $y$ and $q$, $E^{\ast}(y; q)$ is the
 maximum of the residue-class error $E(y; q, a)$ over the natural numbers $a < q$ coprime to $q$,
 and $0$ if there is no such $a$.
 

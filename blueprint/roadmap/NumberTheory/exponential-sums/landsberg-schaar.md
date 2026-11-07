@@ -1,6 +1,6 @@
 # Landsberg–Schaar relation
 
-**Landsberg–Schaar relation.** For all positive integers $p$ and $q$,
+For all positive integers $p$ and $q$,
 
 $$
 \frac{1}{\sqrt{p}} \sum_{n=0}^{p-1} \exp\left(\frac{2 \pi i n^2 q}{p}\right) =

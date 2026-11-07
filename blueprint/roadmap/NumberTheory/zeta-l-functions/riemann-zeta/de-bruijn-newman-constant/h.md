@@ -1,6 +1,6 @@
 # The de Bruijn–Newman deformation
 
-**The de Bruijn–Newman deformation.** For real $\lambda$ and complex $z$,
+For real $\lambda$ and complex $z$,
 
 $$H_\lambda(z) = \int_0^\infty e^{\lambda u^2}\, \Phi(u) \cos(zu)\, du,$$
 

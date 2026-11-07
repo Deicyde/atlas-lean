@@ -1,6 +1,6 @@
 # Kellner's large-prime conjectures imply the Bernoulli derivative conjectures
 
-**Kellner's large-prime conjectures imply the Bernoulli derivative conjectures.** For
+For
 $n \in \mathbb{N}$ let $\mathbb{D}^{+}_n$ be the product of the primes $p > \sqrt{n}$ whose
 base-$p$ digit sum $s_p(n)$ satisfies $s_p(n) \ge p$, let $\omega(m)$ be the number of distinct
 prime factors of $m$, and let $\overline{\mathcal{S}}$ be the set of $n \ge 1$ such that the

@@ -1,6 +1,6 @@
 # Number of unit-distance pairs in a planar point set
 
-**Number of unit-distance pairs in a planar point set.** For a finite set $P$ of points in the
+For a finite set $P$ of points in the
 Euclidean plane $\mathbb{R}^2$, the number of unit-distance pairs of $P$ is the number of unordered
 pairs of points of $P$ at distance exactly $1$.
 

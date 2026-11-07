@@ -1,6 +1,6 @@
 # Calegari–Dimitrov–Tang linear independence theorems
 
-**Calegari–Dimitrov–Tang linear independence theorems.** Let
+Let
 $\chi : \mathbb{Z}/3\mathbb{Z} \to \mathbb{C}$ be given by $\chi(0) = 0$, $\chi(1) = 1$ and
 $\chi(2) = -1$ (the nontrivial Dirichlet character modulo $3$), let $\zeta$ be the Riemann zeta
 function and let $L(s, \chi)$ be the Dirichlet $L$-function of $\chi$. Then the complex numbers

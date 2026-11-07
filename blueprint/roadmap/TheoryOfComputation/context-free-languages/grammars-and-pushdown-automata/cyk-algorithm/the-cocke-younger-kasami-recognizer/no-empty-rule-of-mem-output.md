@@ -1,6 +1,6 @@
 # Nonterminals in outputs have no empty production
 
-**Nonterminals in outputs have no empty production.** Let $g$ be a context-free grammar in
+Let $g$ be a context-free grammar in
 Chomsky normal form. If a nonterminal $B$ occurs in the output of some production of $g$, then
 $g$ has no production $B \to \varepsilon$.
 

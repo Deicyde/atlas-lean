@@ -1,6 +1,6 @@
 # Explicit formula for Stirling numbers of the second kind
 
-**Explicit formula for Stirling numbers of the second kind.** Write $S(t,k)$ for the Stirling
+Write $S(t,k)$ for the Stirling
 numbers of the second kind. For all natural numbers $t$ and $k$,
 
 $$k!\, S(t,k) = \sum_{j=0}^{k} (-1)^{k-j} \binom{k}{j}\, j^t,$$

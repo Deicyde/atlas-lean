@@ -1,6 +1,6 @@
 # Triangular triple at $n = 1$
 
-**Triangular triple at $n = 1$.** The three consecutive triangular numbers
+The three consecutive triangular numbers
 $(t_1, t_2, t_3)$, where $t_m = m(m+1)/2$, are $(1, 3, 6)$.
 
 ## Sources

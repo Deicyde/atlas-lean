@@ -1,3 +1,3 @@
 # Positivity of the motif model
 
-**Positivity of the motif model.** The motif model is positive for a positive background and a positive prior.
+The motif model is positive for a positive background and a positive prior.

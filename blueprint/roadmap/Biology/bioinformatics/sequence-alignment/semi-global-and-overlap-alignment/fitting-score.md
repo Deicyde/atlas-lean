@@ -1,6 +1,6 @@
 # Fitting score
 
-**Fitting score.** Let $\sigma$ be a substitution score and $g$ a gap score. The fitting
+Let $\sigma$ be a substitution score and $g$ a gap score. The fitting
 score of a sequence $x$ against a sequence $y$ is the maximum, over all infixes $l$ of $y$
 (including the empty one), of the Needleman–Wunsch score of $x$ against $l$ with $\sigma$ and
 $g$: the best global alignment score of $x$ against a substring of $y$.

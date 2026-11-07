@@ -1,6 +1,6 @@
 # Simple map
 
-**Simple map.** Let $a$ be a keyword, a binary word of length $m + 1$, and let
+Let $a$ be a keyword, a binary word of length $m + 1$, and let
 $i \in \mathbb{N}$. The simple map $\varphi_i$ sends a binary word $u$ of length $n$ to the word
 obtained by negating the letters of $u$ at positions $i, \dots, i + m$ (positions counted from
 $0$) if $a$ is applicable to $u$ at letter $i$, that is, if $i + m < n$ and the subword of $u$ at

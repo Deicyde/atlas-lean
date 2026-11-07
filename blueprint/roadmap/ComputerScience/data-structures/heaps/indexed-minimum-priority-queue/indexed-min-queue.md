@@ -1,6 +1,6 @@
 # Indexed minimum queue
 
-**Indexed minimum queue.** Let $W$ be a linearly ordered type, let $W \cup \{\top\}$ be $W$
+Let $W$ be a linearly ordered type, let $W \cup \{\top\}$ be $W$
 with a new greatest element $\top$ adjoined, and let $n$ be a natural number. An indexed
 minimum queue over the identities $0, \dots, n-1$ consists of a binary min-heap whose entries are
 pairs $(k, v)$ of a key $k \in W \cup \{\top\}$ and an identity $v < n$, ordered lexicographically

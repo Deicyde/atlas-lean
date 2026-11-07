@@ -1,6 +1,6 @@
 # Upper bound for $\log(1 + 1/(x-1))$
 
-**Upper bound for $\log(1 + 1/(x-1))$.** For every integer $x \ge 2$,
+For every integer $x \ge 2$,
 $\log(1 + 1/(x-1)) \le 1/x + 25/(32x^2)$, where $\log$ is the natural logarithm.
 
 ## Sources

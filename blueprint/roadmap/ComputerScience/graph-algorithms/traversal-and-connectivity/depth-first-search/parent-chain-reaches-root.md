@@ -1,6 +1,6 @@
 # Parent chains in a DFS forest end at a forest root
 
-**Parent chains in a DFS forest end at a forest root.** Let $G$ be a finite directed graph and
+Let $G$ be a finite directed graph and
 $R$ a list of root vertices, and run depth-first search on $G$ from $R$. Say that $p$ is a recorded
 parent of $c$ when the pair $(c, p)$ occurs in the list of (child, parent) pairs recorded by the
 search, and call a discovered vertex with no recorded parent a forest root. Then for every

@@ -1,6 +1,6 @@
 # Leftmost derivation
 
-**Leftmost derivation.** Let $g$ be a context-free grammar, $u$ a sentential form of $g$, $w$ a
+Let $g$ be a context-free grammar, $u$ a sentential form of $g$, $w$ a
 word of terminals and $r_1, \dots, r_n$ a list of rules over the terminals and nonterminals of
 $g$. The list $r_1, \dots, r_n$ is a leftmost derivation of $w$ from $u$ in $g$ when every $r_i$
 is a production of $g$, and, starting from $u$ and for $i = 1, \dots, n$ in turn, the leftmost

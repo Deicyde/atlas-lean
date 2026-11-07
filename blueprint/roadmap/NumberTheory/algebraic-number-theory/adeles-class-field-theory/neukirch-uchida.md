@@ -1,6 +1,6 @@
 # Neukirch–Uchida theorem
 
-**Neukirch–Uchida theorem.** Let $K_1$ and $K_2$ be number fields with separable closures
+Let $K_1$ and $K_2$ be number fields with separable closures
 $\overline{K_1}$ and $\overline{K_2}$, and let
 $\varphi \colon \mathrm{Gal}(\overline{K_1}/K_1) \to \mathrm{Gal}(\overline{K_2}/K_2)$ be a group
 isomorphism that is a homeomorphism for the Krull topologies. Then there is a unique field

@@ -1,6 +1,6 @@
 # Computations of the restriction are computations of the automaton
 
-**Computations of the restriction are computations of the automaton.** Let $M$ be a pushdown
+Let $M$ be a pushdown
 automaton and let $\Gamma_0$ be a finite set of stack symbols that contains the initial stack
 symbol of $M$ and is closed for $M$. If the restriction of $M$ to $\Gamma_0$ can compute from a
 configuration with state $q$, remaining input $w$ and stack $s$ to a configuration with state

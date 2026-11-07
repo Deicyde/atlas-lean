@@ -1,6 +1,6 @@
 # Weighted shifts with truncated weights converge in operator norm
 
-**Weighted shifts with truncated weights converge in operator norm.** Let $\mathbb{K}$ be
+Let $\mathbb{K}$ be
 $\mathbb{R}$ or $\mathbb{C}$ and let $w : \mathbb{N} \to \mathbb{K}$ be a bounded sequence with
 $w_n \to 0$. For $N \in \mathbb{N}$ let $w^{(N)}$ be the truncation of $w$ after $N$ coordinates,
 with $w^{(N)}_n = w_n$ for $n < N$ and $w^{(N)}_n = 0$ for $n \ge N$, and for bounded weights $u$

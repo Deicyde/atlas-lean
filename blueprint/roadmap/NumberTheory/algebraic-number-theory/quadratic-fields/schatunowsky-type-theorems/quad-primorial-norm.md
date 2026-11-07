@@ -1,6 +1,6 @@
 # Norm of the $n$-th primorial
 
-**Norm of the $n$-th primorial.** Let $K$ be a number field with ring of integers
+Let $K$ be a number field with ring of integers
 $\mathcal{O}_K$, and let $n$ be a natural number. The primorial norm $N(\pi_n\#)$ is the product of
 the absolute norms of the nonzero prime ideals of $\mathcal{O}_K$ whose norm is at most $N(\pi_n)$,
 where $N(\pi_n)$ is the $n$-th smallest norm of a nonzero prime ideal of $\mathcal{O}_K$ for

@@ -1,6 +1,6 @@
 # First terms of Gutkovskiy's sequence
 
-**First terms of Gutkovskiy's sequence.** The first four terms of Gutkovskiy's sequence are
+The first four terms of Gutkovskiy's sequence are
 $g_0 = 0$, $g_1 = 1$, $g_2 = 2$ and $g_3 = 2$.
 
 ## Sources

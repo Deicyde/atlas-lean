@@ -1,6 +1,6 @@
 # Alzer–Richards identity for Euler numbers
 
-**Alzer–Richards identity for Euler numbers.** Let $n \ge 1$ be an integer. For integers
+Let $n \ge 1$ be an integer. For integers
 $k, i \ge 0$ let $T(k, i) = 2^{-k} \sum_{j=0}^{k} \binom{k}{j} (k-2j)^i$ (with $0^0 = 1$), and
 let $E_k$ be the Euler numbers: $E_k = 0$ for odd $k$, and for even $k$ they are given by
 $E_0 = 1$ and $E_{2m} = -\sum_{s=0}^{m-1} \binom{2m}{2s} E_{2s}$ for $m \ge 1$. Then

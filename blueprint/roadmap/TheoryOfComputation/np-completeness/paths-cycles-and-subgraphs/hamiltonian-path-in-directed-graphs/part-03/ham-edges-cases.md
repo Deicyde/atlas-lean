@@ -1,6 +1,6 @@
 # Classification of the arcs of Sipser's graph
 
-**Classification of the arcs of Sipser's graph.** Let $\varphi$ be a CNF formula with $m$
+Let $\varphi$ be a CNF formula with $m$
 clauses and $k$ distinct variables, and write $T_i = m + i(3m + 2)$ and $R_{i,l} = T_i + 1 + l$.
 If $(u, v)$ is an arc of Sipser's construction for $\varphi$, then there is $i < k$ such that one
 of the following holds: $u = T_i$ and $v \in \{R_{i,0}, R_{i,3m}\}$; or

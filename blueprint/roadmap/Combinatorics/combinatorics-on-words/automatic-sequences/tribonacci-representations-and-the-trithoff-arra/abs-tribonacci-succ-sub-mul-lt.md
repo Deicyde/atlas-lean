@@ -1,6 +1,6 @@
 # Tribonacci approximation error bound
 
-**Tribonacci approximation error bound.** Let $T_0 = T_1 = 0$, $T_2 = 1$,
+Let $T_0 = T_1 = 0$, $T_2 = 1$,
 $T_{m+3} = T_{m+2} + T_{m+1} + T_m$ be the Tribonacci numbers, let $\alpha$ be the real root of
 $x^3 = x^2 + x + 1$, and let $\beta$ be a non-real complex root of the same equation, with
 $\gamma = \overline{\beta}$ the other non-real root. Then for every natural number $n$,

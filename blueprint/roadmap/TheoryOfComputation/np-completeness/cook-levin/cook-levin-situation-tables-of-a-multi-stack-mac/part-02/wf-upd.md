@@ -1,6 +1,6 @@
 # The transition tables of a machine are well formed
 
-**The transition tables of a machine are well formed.** Let $M$ be a finite multi-stack
+Let $M$ be a finite multi-stack
 Turing machine with window depth $d$, let $E$ be an encoding of $M$ with $A_0$ label/state codes,
 $K$ stacks, $g$ symbol codes and $N$ situations, and let $H \ge d$. For every $i \in \mathbb{N}$,
 the current-code table $\mathrm{la}$, the next-code table $\mathrm{na}$ and the window table

@@ -1,6 +1,6 @@
 # Fields without primitive element sums have few prime factors
 
-**Fields without primitive element sums have few prime factors.** Let $q$ and $n$ be natural
+Let $q$ and $n$ be natural
 numbers with $\gcd(q, n) = 1$. If it is not the case that every finite field $L$ with $q^n$
 elements contains an element $\alpha$ such that both $\alpha$ and $\alpha + \alpha^{-1}$ generate
 the multiplicative group $L^\times$, then $q^n - 1$ has at most $15$ distinct prime factors.

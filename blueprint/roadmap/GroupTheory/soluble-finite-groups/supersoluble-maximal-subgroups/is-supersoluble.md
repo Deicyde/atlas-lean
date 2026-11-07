@@ -1,6 +1,6 @@
 # Supersoluble group (generator form)
 
-**Supersoluble group (generator form).** A group $G$ is supersoluble when there are a natural
+A group $G$ is supersoluble when there are a natural
 number $n$ and elements $g_0, \dots, g_{n-1}$ of $G$ that generate $G$ such that, for every
 $i \le n$, the subgroup $G_i = \langle g_j : j < i \rangle$ is normal in $G$.
 

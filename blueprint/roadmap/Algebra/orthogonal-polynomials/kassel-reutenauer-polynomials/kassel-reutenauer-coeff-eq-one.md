@@ -1,6 +1,6 @@
 # The top coefficients $a_{n,i}$ equal $1$
 
-**The top coefficients $a_{n,i}$ equal $1$.** Let $n \ge 1$ and let $i$ be a natural number
+Let $n \ge 1$ and let $i$ be a natural number
 with $n \le 2i + 2$ and $i \le n - 1$; equivalently $n/2 - 1 \le i \le n - 1$, where $n/2$ is
 the rational number, not the integer quotient. Then the Kassel–Reutenauer coefficient $a_{n,i}$
 equals $1$.

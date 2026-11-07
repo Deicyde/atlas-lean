@@ -1,6 +1,6 @@
 # Inserting into a strictly sorted list
 
-**Inserting into a strictly sorted list.** Let $f$ map a type $\alpha$ to a linearly ordered
+Let $f$ map a type $\alpha$ to a linearly ordered
 set, let $T$ be a list over $\alpha$ with $f(j) < f(k)$ whenever $j$ occurs before $k$, let
 $i \in \alpha$ be such that $f(j) \ne f(i)$ for every $j$ in $T$, and let $P$ be a predicate that
 holds for an element $j$ of $T$ exactly when $f(j) < f(i)$. Insert $i$ just before the first

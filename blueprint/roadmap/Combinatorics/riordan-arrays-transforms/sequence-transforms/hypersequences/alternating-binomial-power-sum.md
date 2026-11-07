@@ -1,6 +1,6 @@
 # Alternating binomial power sum
 
-**Alternating binomial power sum.** For natural numbers $\ell, m$ and complex numbers $x, y$,
+For natural numbers $\ell, m$ and complex numbers $x, y$,
 
 $$p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (kx + y)^\ell,$$
 

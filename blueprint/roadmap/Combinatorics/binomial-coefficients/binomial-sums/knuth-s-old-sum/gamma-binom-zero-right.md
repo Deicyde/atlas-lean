@@ -1,6 +1,6 @@
 # The generalized binomial coefficient with lower argument zero
 
-**The generalized binomial coefficient with lower argument zero.** For every complex number $u$
+For every complex number $u$
 with $\operatorname{Re} u > -1$, the generalized binomial coefficient of complex arguments
 $\binom{u}{0} = \Gamma(u+1)/(\Gamma(1)\,\Gamma(u+1))$ equals $1$.
 

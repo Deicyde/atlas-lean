@@ -1,6 +1,6 @@
 # Kourovka Problem 14.23 fails uniformly in the rank
 
-**Kourovka Problem 14.23 fails uniformly in the rank.** There is no computable function
+There is no computable function
 $f : \mathbb{N} \to \mathbb{N}$ such that for every $n$ and every automorphism $\alpha$ of the
 free group $F_n$ on $x_0, \dots, x_{n-1}$, the fixed subgroup $\mathrm{Fix}(\alpha)$ has a
 finite free basis all of whose elements have reduced word length at most $f(\|\alpha\|)$, where

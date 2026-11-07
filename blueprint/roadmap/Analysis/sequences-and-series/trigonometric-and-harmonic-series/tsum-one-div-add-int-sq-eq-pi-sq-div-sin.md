@@ -1,6 +1,6 @@
 # Partial fraction expansion of $\pi^2/\sin^2(\pi u)$
 
-**Partial fraction expansion of $\pi^2/\sin^2(\pi u)$.** For every real number $u$ that is
+For every real number $u$ that is
 not an integer,
 
 $$\sum_{n \in \mathbb{Z}} \frac{1}{(u+n)^2} = \frac{\pi^2}{\sin^2(\pi u)}.$$

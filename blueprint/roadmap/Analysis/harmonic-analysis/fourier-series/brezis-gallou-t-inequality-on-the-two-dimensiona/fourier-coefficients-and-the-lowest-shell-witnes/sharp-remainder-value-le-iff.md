@@ -1,6 +1,6 @@
 # Upper bounds for the sharp remainder
 
-**Upper bounds for the sharp remainder.** Let $\mathbb{T} = (\mathbb{R}/2\pi\mathbb{Z})^2$. For
+Let $\mathbb{T} = (\mathbb{R}/2\pi\mathbb{Z})^2$. For
 real $\delta$, let $\theta(\delta)$ be the supremum in the extended reals of $u(0)^2$ over all
 continuous functions $u : \mathbb{T} \to \mathbb{R}$ that are zero-mean $H^2$ functions with
 gradient energy $1$ and Laplacian energy $\delta$, and let

@@ -1,6 +1,6 @@
 # In the normal range, rounding stays in the format
 
-**In the normal range, rounding stays in the format.** Let $p \ge 1$, let $q_{\min}$ and
+Let $p \ge 1$, let $q_{\min}$ and
 $q_{\max}$ be integers, and let $x$ be an element of a linearly ordered field with a floor
 function. If $2^{q_{\min} + p - 1} \le |x|$ ($x$ is at least the smallest normal number) and
 $|x| \le (2^p - 1) \cdot 2^{q_{\max}}$ ($x$ is at most the largest finite number), then the

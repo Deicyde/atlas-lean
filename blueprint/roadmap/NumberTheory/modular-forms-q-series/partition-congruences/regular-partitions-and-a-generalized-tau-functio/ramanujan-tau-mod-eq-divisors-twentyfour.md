@@ -1,6 +1,6 @@
 # Ramanujan's tau function modulo divisors of $24$
 
-**Ramanujan's tau function modulo divisors of $24$.** Let $\tau(n) = \tau_{24}(n)$ be
+Let $\tau(n) = \tau_{24}(n)$ be
 Ramanujan's tau function, the generalized tau function with $k = 24$. For every integer
 $m \ge 0$: $\tau(24m + r + 1) \equiv 0 \pmod{24}$ for $r \in \{1, 5, 7, 11, 13, 17, 19, 23\}$;
 $\tau(24m + r + 1) \equiv 0 \pmod 6$ for $r \in \{4, 20\}$;

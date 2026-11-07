@@ -1,6 +1,6 @@
 # A floor inequality for perimeter counts
 
-**A floor inequality for perimeter counts.** Let $d$, $a$ and $n$ be natural numbers with
+Let $d$, $a$ and $n$ be natural numbers with
 $d \ge 1$, $a \ge 1$, $2a < d + 3$ and $a \le n$. Then
 $\lfloor \lfloor (n - a)/(d + 1) \rfloor / 2 \rfloor \le \lfloor (n - a)/(d + 3) \rfloor$
 and

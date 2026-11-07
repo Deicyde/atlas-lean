@@ -1,6 +1,6 @@
 # Sharp bounds for Tverberg's ceiling sum
 
-**Sharp bounds for Tverberg's ceiling sum.** Let $\ell \ge 2$ and let $F = \lceil \cdot \rceil$.
+Let $\ell \ge 2$ and let $F = \lceil \cdot \rceil$.
 For integers $a_1, \dots, a_\ell$, a natural number $m$ and an integer $k$, let
 $f(a, m, k) =
 \sum_{U \subseteq \{1, \dots, \ell\}} (-1)^{\ell - |U|} F((k + \sum_{i \in U} a_i)/m)$

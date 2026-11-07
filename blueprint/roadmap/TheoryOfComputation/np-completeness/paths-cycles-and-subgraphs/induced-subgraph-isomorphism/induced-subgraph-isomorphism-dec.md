@@ -1,6 +1,6 @@
 # INDUCED SUBGRAPH ISOMORPHISM as a decision problem
 
-**INDUCED SUBGRAPH ISOMORPHISM as a decision problem.** The decision problem INDUCED SUBGRAPH
+The decision problem INDUCED SUBGRAPH
 ISOMORPHISM accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
 encoding, to an instance $(n, E, k, F)$ (host vertex count, host edge list, pattern vertex count,
 pattern edge list) that is well-formed and for which there is an injective map $f$ from

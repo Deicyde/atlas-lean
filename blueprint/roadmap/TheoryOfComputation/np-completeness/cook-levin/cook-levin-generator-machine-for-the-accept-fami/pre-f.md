@@ -1,6 +1,6 @@
 # Counters after the precomputation of the accept generator
 
-**Counters after the precomputation of the accept generator.** For a layout $L$ with $A$
+For a layout $L$ with $A$
 label/state variables per row, $K$ stacks and $g$ symbol codes, and for $k_1, T, H \in \mathbb{N}$,
 let $W = A + KHg$ be the row width. The counter values after the precomputation are $T + 1$ on
 $\mathrm{Tn}$, $H$ on $\mathrm{Hs}$, $g$ on $\mathrm{Gc}$, $Hg$ on $\mathrm{HG}$, $W$ on

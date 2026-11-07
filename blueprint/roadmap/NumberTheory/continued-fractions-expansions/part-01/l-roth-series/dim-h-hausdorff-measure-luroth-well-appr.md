@@ -1,6 +1,6 @@
 # Hausdorff dimension and measure of Lüroth well approximable sets for powers
 
-**Hausdorff dimension and measure of Lüroth well approximable sets for powers.** For
+For
 $x \in (0, 1]$ let $P_n(x)/Q_n(x)$ be the $n$-th Lüroth convergent of $x$, with Lüroth
 denominator $Q_n(x)$. For a real number $\tau \ge 0$ let $L(\tau)$ be the set of $x \in (0, 1]$
 such that $|x - P_n(x)/Q_n(x)| < Q_n(x)^{-\tau}/Q_n(x)$ for infinitely many $n$, that is, the set

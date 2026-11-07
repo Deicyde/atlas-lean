@@ -1,6 +1,6 @@
 # Topological recurrence is $1$-topological recurrence
 
-**Topological recurrence is $1$-topological recurrence.** A set $D$ of natural numbers is a
+A set $D$ of natural numbers is a
 set of topological recurrence if and only if it is a set of $\ell$-topological recurrence for
 $\ell = 1$.
 

@@ -1,6 +1,6 @@
 # Running the generic copy loop of the dense-SAT verifier
 
-**Running the generic copy loop of the dense-SAT verifier.** Let $s$ be a work stack, $g$ a
+Let $s$ be a work stack, $g$ a
 partial map on the work alphabet $G$, $t$ an optional target work stack other than $s$, and
 $\ell$, $\ell'$ labels such that the verifier's program at $\ell$ is the generic loop with source
 $s$, map $g$, target $t$, own label $\ell$ and exit $\ell'$. Let $o$ be a list of output bits.

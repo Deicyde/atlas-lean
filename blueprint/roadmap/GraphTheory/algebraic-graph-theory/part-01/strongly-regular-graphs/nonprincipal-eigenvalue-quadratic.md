@@ -1,6 +1,6 @@
 # Non-principal eigenvalues of a strongly regular graph
 
-**Non-principal eigenvalues of a strongly regular graph.** Let $G$ be a finite strongly
+Let $G$ be a finite strongly
 regular graph with parameters $(n, k, \ell, \mu)$: $G$ has $n$ vertices, every vertex has degree
 $k$, any two adjacent vertices have exactly $\ell$ common neighbors, and any two distinct
 nonadjacent vertices have exactly $\mu$ common neighbors. Let $A$ be the adjacency matrix of $G$

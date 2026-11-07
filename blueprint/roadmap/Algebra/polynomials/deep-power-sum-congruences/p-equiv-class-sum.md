@@ -1,6 +1,6 @@
 # The $p$-equivalence class sum
 
-**The $p$-equivalence class sum.** Let $\sigma$ be a finite set of variables, let $p$ be a
+Let $\sigma$ be a finite set of variables, let $p$ be a
 natural number and let $\lambda$ be a multiset of natural numbers whose elements sum to $n$. In
 $\mathbb{Q}[x_i : i \in \sigma]$ let $p_k = \sum_{i \in \sigma} x_i^k$ be the $k$-th power sum. For
 a partition $\mu$ of $n$ with parts $\mu_1, \dots, \mu_\ell$, write

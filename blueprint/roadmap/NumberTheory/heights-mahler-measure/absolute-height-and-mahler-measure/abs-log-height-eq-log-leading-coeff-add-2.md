@@ -1,6 +1,6 @@
 # Logarithmic height from the roots of the minimal polynomial, for an algebraic element
 
-**Logarithmic height from the roots of the minimal polynomial, for an algebraic element.** Let
+Let
 $K$ be a field of characteristic zero and let $x \in K$ be algebraic over $\mathbb{Q}$. Let $d$ be
 the degree of the minimal polynomial of $x$ over $\mathbb{Q}$, and let $P_x \in \mathbb{Z}[X]$ be
 the primitive integral minimal polynomial of $x$, with leading coefficient $a$. Then the absolute

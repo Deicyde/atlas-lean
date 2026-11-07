@@ -1,6 +1,6 @@
 # Prime-factorization formula for Jordan's totient
 
-**Prime-factorization formula for Jordan's totient.** For all natural numbers $k$ and
+For all natural numbers $k$ and
 $n \neq 0$, the Jordan totient function satisfies
 
 $$J_k(n) = \prod_{p \mid n} p^{k(v_p(n) - 1)} (p^k - 1),$$

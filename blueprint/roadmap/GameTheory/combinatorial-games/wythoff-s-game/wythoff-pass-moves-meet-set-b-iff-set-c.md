@@ -1,6 +1,6 @@
 # Moves from a large position meet $B$ exactly when they meet $C$
 
-**Moves from a large position meet $B$ exactly when they meet $C$.** Let
+Let
 $B = \{(0, 0), (1, 3), (3, 1), (2, 5), (5, 2), (4, 8), (8, 4), (6, 7), (7, 6)\}$ and
 $C = \{(0, 1), (1, 0), (2, 2), (3, 6), (6, 3), (4, 8), (8, 4), (5, 7), (7, 5)\}$. Let $x, y$ be
 natural numbers with $x \ge 9$ or $y \ge 9$. Then some pair $(u, y)$ with $u < x$ lies in $B$ if

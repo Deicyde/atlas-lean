@@ -1,6 +1,6 @@
 # Entry 14 of Chapter 9: the integral of $u^n / (2 \sin u)$
 
-**Entry 14 of Chapter 9: the integral of $u^n / (2 \sin u)$.** For an integer $m \ge 2$ write
+For an integer $m \ge 2$ write
 $\lambda(m) = \sum_{k \ge 0} (2k+1)^{-m}$. For real $x$ let
 $C_1(x) = -\tfrac{1}{2} \log|\tan(x/2)|$, and for an integer $m \ge 2$ let $s_m = \sin$ if $m$ is
 even and $s_m = \cos$ if $m$ is odd, and let $C_m(x) = \sum_{k \ge 0} s_m((2k+1)x)/(2k+1)^m$. Let

@@ -1,6 +1,6 @@
 # First tile of a bracelet
 
-**First tile of a bracelet.** For a natural number $p$, a first tile records the tile of a
+For a natural number $p$, a first tile records the tile of a
 bracelet that covers cell $1$ of the circular board, together with its phase (which cell of the
 tile covers cell $1$). It is one of: a curved square, in phase $1$; a curved $p$-mino of length
 $p + 1$ in phase $r + 1$ for some $0 \le r \le p$; a curved $p$-tile of length $p + 1$ in color

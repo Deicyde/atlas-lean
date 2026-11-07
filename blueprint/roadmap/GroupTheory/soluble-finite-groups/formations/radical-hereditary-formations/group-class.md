@@ -1,6 +1,6 @@
 # Isomorphism-closed class of groups
 
-**Isomorphism-closed class of groups.** A class of groups $X$ is a property of groups that is
+A class of groups $X$ is a property of groups that is
 invariant under isomorphism: if a group $H$ belongs to $X$ and $K$ is a group isomorphic to $H$,
 then $K$ belongs to $X$.
 

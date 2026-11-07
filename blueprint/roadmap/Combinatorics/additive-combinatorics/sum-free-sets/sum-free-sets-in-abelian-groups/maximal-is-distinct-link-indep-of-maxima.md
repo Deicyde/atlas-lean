@@ -1,6 +1,6 @@
 # Link-graph extension lemma
 
-**Link-graph extension lemma.** Let $G$ be an abelian group and let $B, S \subseteq G$ be
+Let $G$ be an abelian group and let $B, S \subseteq G$ be
 disjoint distinct sum-free sets. If $I \subseteq B$ and $S \cup I$ is a maximal distinct
 sum-free subset of $G$, then $I$ is a maximal independent set of the distinct link graph
 $L^*_S[B]$: a subset of $B$ with no looped vertex and no two adjacent vertices that is not

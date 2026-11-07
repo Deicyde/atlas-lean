@@ -1,6 +1,6 @@
 # The shifted Pell norm function is at most the bound up to its last crossing
 
-**The shifted Pell norm function is at most the bound up to its last crossing.** Let $D$ be
+Let $D$ be
 an integer, let $(\alpha, \beta)$ be the fundamental solution of the Pell equation
 $X^2 - D Y^2 = 1$, put $\varepsilon = \alpha + \beta \sqrt{D}$ and
 $\bar\varepsilon = \alpha - \beta \sqrt{D}$, and let

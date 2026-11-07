@@ -1,6 +1,6 @@
 # Hayman's spherical-area ratio conjecture is false
 
-**Hayman's spherical-area ratio conjecture is false.** Not every function
+Not every function
 $f\colon \mathbb{C} \to \mathbb{C}$ that is meromorphic on all of $\mathbb{C}$ and nonconstant
 (complex differentiable at two points where it takes different values) has bounded root counts
 and satisfies $\liminf_{r \to \infty} n(f, r)/A(f, r) = 1$, where $n(f, r)$ is the maximum

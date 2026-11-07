@@ -1,6 +1,6 @@
 # Four-part 3-block Arndt compositions of 10
 
-**Four-part 3-block Arndt compositions of 10.** There are exactly $7$ three-block Arndt
+There are exactly $7$ three-block Arndt
 compositions of $10$ with $4$ parts, that is, $a^{(3)}(10, 4) = 7$.
 
 They are $(6,2,1,1)$, $(5,3,1,1)$, $(5,2,1,2)$, $(4,3,2,1)$, $(4,3,1,2)$, $(4,2,1,3)$ and

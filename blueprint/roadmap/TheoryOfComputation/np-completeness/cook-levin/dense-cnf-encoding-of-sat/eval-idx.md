@@ -1,6 +1,6 @@
 # Indexed evaluation of a dense CNF encoding
 
-**Indexed evaluation of a dense CNF encoding.** The scan $I(r, a, j, f)$ takes the formula
+The scan $I(r, a, j, f)$ takes the formula
 bits $r$ still to be read, an assignment $a$ (a list of booleans), the position $j$ of the next
 slot in the current clause and a boolean $f$ recording whether the current clause is already
 satisfied. It reads $r$ two bits at a time; let $r'$ be the bits after the pair read. On $00$

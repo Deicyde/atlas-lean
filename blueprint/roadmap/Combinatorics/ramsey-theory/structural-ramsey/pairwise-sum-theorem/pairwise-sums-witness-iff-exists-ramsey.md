@@ -1,6 +1,6 @@
 # PR-witnesses of the pairwise sum family
 
-**PR-witnesses of the pairwise sum family.** An ultrafilter $W$ on
+An ultrafilter $W$ on
 $\mathbb{N} \times \mathbb{N}$, where $\mathbb{N} = \{0, 1, 2, \dots\}$, is a Ramsey's witness
 when every $X \in W$ contains $\{(h, h') \in H \times H : h < h'\}$ for some infinite
 $H \subseteq \mathbb{N}$. For an ultrafilter $U$ on $\mathbb{N}$ the following are equivalent:

@@ -1,3 +1,3 @@
 # Variance as second moment minus squared mean
 
-**Variance as second moment minus squared mean.** The variance is the second moment minus the squared mean.
+The variance is the second moment minus the squared mean.

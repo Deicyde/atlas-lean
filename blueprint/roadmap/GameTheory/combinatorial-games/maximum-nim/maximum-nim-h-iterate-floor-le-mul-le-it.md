@@ -1,6 +1,6 @@
 # Logarithmic bounds on the iterates of h_k
 
-**Logarithmic bounds on the iterates of h_k.** Let $k \ge 2$ and $n \ge 1$ be natural numbers,
+Let $k \ge 2$ and $n \ge 1$ be natural numbers,
 let $h_k(x) = x + \lfloor x/(k-1) \rfloor + 1$ on natural numbers, write $h_k^p$ for its $p$-fold
 iterate, and let
 

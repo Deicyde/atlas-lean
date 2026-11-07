@@ -1,6 +1,6 @@
 # Capacity distribution of smooth words by last letter
 
-**Capacity distribution of smooth words by last letter.** For $n, i \ge 0$, $r(n, i; q)$ is the
+For $n, i \ge 0$, $r(n, i; q)$ is the
 polynomial $\sum_w q^{\operatorname{cap}(w)} \in \mathbb{Z}[q]$, where $w$ runs over the smooth
 words of length $n$ whose last letter is $i$ and $\operatorname{cap}(w)$ is the capacity of $w$.
 

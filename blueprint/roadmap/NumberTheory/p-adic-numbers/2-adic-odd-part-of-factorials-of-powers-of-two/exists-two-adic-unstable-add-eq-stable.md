@@ -1,6 +1,6 @@
 # A 2-adic constant relating unstable and stable bits
 
-**A 2-adic constant relating unstable and stable bits.** Write
+Write
 $\mathrm{od}(n)$ for the odd part of a natural number $n$, and for natural numbers $d$ and $e$ let
 $\mathrm{uns}(e, d) = \lfloor \mathrm{od}((2^e)!) / 2^{e+1} \rfloor \bmod 2^d$ and
 $\mathrm{stab}(e + 1, d) = \lfloor \mathrm{od}((2^{e+d})!) / 2^{e+1} \rfloor \bmod 2^d$. There is a

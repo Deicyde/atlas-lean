@@ -1,6 +1,6 @@
 # The SZ dual index
 
-**The SZ dual index.** Identify an index $k = (k_1, \dots, k_r)$ of natural numbers with the
+Identify an index $k = (k_1, \dots, k_r)$ of natural numbers with the
 word $p^{k_1} y \cdots p^{k_r} y$ in the letters $p$ and $y$, and let $\tilde\tau$ be the
 anti-automorphism of words with $\tilde\tau(p) = y$ and $\tilde\tau(y) = p$ (reverse the word and
 swap the letters). Write $\tilde\tau(p^{k_1} y \cdots p^{k_r} y)$ as $p^{a_1} y \cdots p^{a_s} y$

@@ -1,6 +1,6 @@
 # The variation for $r = 0$ vanishes
 
-**The variation for $r = 0$ vanishes.** For every digit sequence $x : \mathbb{N} \to \{0, 1\}$,
+For every digit sequence $x : \mathbb{N} \to \{0, 1\}$,
 not only for Zeckendorf-adic integers, the variation satisfies $\Delta^{(0)}(x) = 0$.
 
 ## Sources

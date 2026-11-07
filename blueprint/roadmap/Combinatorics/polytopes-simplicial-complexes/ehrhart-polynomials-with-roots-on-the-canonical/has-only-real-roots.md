@@ -1,6 +1,6 @@
 # Real-rooted polynomials
 
-**Real-rooted polynomials.** A real polynomial $f$ has only real roots when $f \ne 0$ and the
+A real polynomial $f$ has only real roots when $f \ne 0$ and the
 number of real roots of $f$, counted with multiplicity, equals the degree of $f$.
 
 ## Sources

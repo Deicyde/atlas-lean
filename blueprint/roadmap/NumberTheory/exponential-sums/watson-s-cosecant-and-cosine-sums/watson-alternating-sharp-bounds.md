@@ -1,6 +1,6 @@
 # Two-sided bounds for Watson's alternating cosecant sum
 
-**Two-sided bounds for Watson's alternating cosecant sum.** For every even natural number
+For every even natural number
 $n \ge 2$, the alternating cosecant sum $C_n = \sum_{l=1}^{n-1} (-1)^{l+1} / \sin(\pi l / n)$
 satisfies the strict inequalities
 

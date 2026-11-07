@@ -1,6 +1,6 @@
 # Generalized Catalan identity for Horadam sequences
 
-**Generalized Catalan identity for Horadam sequences.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $c_1, c_2 \in R$, and let $W, Y, U : \mathbb{N} \to R$ be sequences that each satisfy
 $x_{n+2} = c_1 x_{n+1} + c_2 x_n$ for every $n \in \mathbb{N}$, with $U_0 = 0$ and $U_1 = 1$.
 Then for all $s, i, j \in \mathbb{N}$,

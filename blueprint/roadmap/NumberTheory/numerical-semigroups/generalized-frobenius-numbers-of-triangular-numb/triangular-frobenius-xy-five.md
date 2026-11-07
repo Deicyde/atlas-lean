@@ -1,6 +1,6 @@
 # Triangular Frobenius parameters at $s = 5$
 
-**Triangular Frobenius parameters at $s = 5$.** Take $k = 1$ and $i = 3$, so that
+Take $k = 1$ and $i = 3$, so that
 $s = k(k+1) + i = 5$. Then $(x_s, y_s) = (1, 1)$ for $n = 0$ (the even case) and
 $(x_s, y_s) = (3, 0)$ for $n = 1$ (the odd case).
 

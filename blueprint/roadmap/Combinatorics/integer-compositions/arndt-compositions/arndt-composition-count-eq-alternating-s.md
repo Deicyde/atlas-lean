@@ -1,6 +1,6 @@
 # Alternating sum and recurrence for Arndt compositions
 
-**Alternating sum and recurrence for Arndt compositions.** Let $a(n, m)$ be the number of
+Let $a(n, m)$ be the number of
 Arndt compositions of $n$ with $m$ parts, and write $K = n - m - \lfloor m/2 \rfloor$. For all
 $n, m \ge 0$: if $m + \lfloor m/2 \rfloor \le n$, then
 

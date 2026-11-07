@@ -1,6 +1,6 @@
 # Negation of the Erdős–Simonovits balanced subgraph claim
 
-**Negation of the Erdős–Simonovits balanced subgraph claim.** The proposition that the
+The proposition that the
 Erdős–Simonovits balanced subgraph claim fails, that is, that it is not the case that for all
 reals $\varepsilon$ and $\alpha$ with $0 < \varepsilon < 1$ and $0 < \alpha < 1$, for all
 sufficiently large real $D$ and then all sufficiently large $n$, every simple graph $G$ on the

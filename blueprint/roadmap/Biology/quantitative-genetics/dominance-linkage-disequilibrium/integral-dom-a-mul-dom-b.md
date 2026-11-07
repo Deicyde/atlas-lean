@@ -1,3 +1,3 @@
 # Dominance linkage disequilibrium is the square of the gametic one
 
-**Dominance linkage disequilibrium is the square of the gametic one.** Dominance LD: `E(d_A d_B) = D²`.
+Dominance LD: `E(d_A d_B) = D²`.

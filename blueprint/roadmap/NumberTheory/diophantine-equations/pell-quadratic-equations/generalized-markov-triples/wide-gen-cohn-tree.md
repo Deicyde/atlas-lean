@@ -1,6 +1,6 @@
 # The wide generalized Cohn tree
 
-**The wide generalized Cohn tree.** Fix a natural number $k$ and an integer $\ell$, and let
+Fix a natural number $k$ and an integer $\ell$, and let
 $S = \begin{pmatrix} k & 0 \\ 3k^2 + 3k & k \end{pmatrix}$. The wide $k$-generalized Cohn tree
 $\mathrm{WGCT}(k, \ell)$ is the binary tree of triples of $2 \times 2$ integer matrices whose
 root is $(P_{1;\ell}, Q_{1;\ell}, R_{1;\ell})$, where

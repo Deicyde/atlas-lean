@@ -1,6 +1,6 @@
 # HAMPATH emitter, phase A: searching the variable stack for a name
 
-**HAMPATH emitter, phase A: searching the variable stack for a name.** For $y \in \mathbb{N}$
+For $y \in \mathbb{N}$
 write $\mathrm{name}(y)$ for the canonical binary encoding of $y$ as name-bit symbols, and for a
 list $\mathit{vs}$ of naturals write $\mathrm{vstk}(\mathit{vs})$ for the variable stack: the
 names of the entries of $\mathit{vs}$, each followed by the separator $\mathrm{cl}$. Let

@@ -1,6 +1,6 @@
 # Solvable generalized Fermat equation
 
-**Solvable generalized Fermat equation.** For natural numbers $m$, $n$, $r$, the equation
+For natural numbers $m$, $n$, $r$, the equation
 $x^m + y^n = z^r$ is called solvable when there are nonzero integers $x$, $y$, $z$ with
 $x^m + y^n = z^r$.
 

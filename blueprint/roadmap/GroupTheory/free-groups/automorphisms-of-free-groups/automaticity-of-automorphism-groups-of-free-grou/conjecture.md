@@ -1,6 +1,6 @@
 # Automaticity of automorphism groups of free groups (Farb's Question 7.3)
 
-**Automaticity of automorphism groups of free groups (Farb's Question 7.3).** The statement
+The statement
 that for every natural number $n > 3$ the automorphism group $\mathrm{Aut}(F_n)$ of the free group
 $F_n$ on $n$ generators is an automatic group.
 

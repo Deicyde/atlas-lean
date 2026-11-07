@@ -1,6 +1,6 @@
 # Expected comparisons of quicksort on a random permutation, as a real number
 
-**Expected comparisons of quicksort on a random permutation, as a real number.** Let $\ell$
+Let $\ell$
 be a list without repeated entries over a linear order. Take the expected number of comparisons
 made by quicksort on the list obtained by rearranging the entries of $\ell$ by a uniformly random
 permutation of their positions, which is an element of $[0, \infty]$, and convert it to a real

@@ -1,6 +1,6 @@
 # Paths whose last non-flat step is up
 
-**Paths whose last non-flat step is up.** A word $p = p_0 p_1 \cdots p_{n-1}$ of length $n$
+A word $p = p_0 p_1 \cdots p_{n-1}$ of length $n$
 in the steps $U$ (up), $F$ (flat) and $D$ (down) has last non-flat step up when some position
 $i$ has $p_i = U$ and every later step $p_j$ with $j > i$ is $F$. In particular, such a word
 contains an up step.

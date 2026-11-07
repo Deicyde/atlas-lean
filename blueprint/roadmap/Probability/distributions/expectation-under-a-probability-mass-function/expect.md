@@ -1,6 +1,6 @@
 # Expectation under a probability mass function
 
-**Expectation under a probability mass function.** Let $\alpha$ be a type carrying a σ-algebra
+Let $\alpha$ be a type carrying a σ-algebra
 in which singletons are measurable, let $p$ be a probability mass function on $\alpha$ and let
 $f : \alpha \to \mathbb{R}$. The expectation of $f$ under $p$ is the Bochner integral
 $\int f \, d\mu_p$, where $\mu_p$ is the probability measure on $\alpha$ associated to $p$.

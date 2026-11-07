@@ -1,6 +1,6 @@
 # Odd-rank curves y² = x³ − 2pqx: rank one or three cases
 
-**Odd-rank curves y² = x³ − 2pqx: rank one or three cases.** Let $p \ne q$ be primes and let
+Let $p \ne q$ be primes and let
 $E$ be the elliptic curve $y^2 = x^3 - 2pqx$ over $\mathbb{Q}$, and write
 $\left(\frac{p}{q}\right)$ for the Legendre symbol. Suppose that $p \equiv q \equiv 1 \pmod 8$
 and $\left(\frac{p}{q}\right) = -1$, or that $p \equiv q \equiv 7 \pmod 8$, or that

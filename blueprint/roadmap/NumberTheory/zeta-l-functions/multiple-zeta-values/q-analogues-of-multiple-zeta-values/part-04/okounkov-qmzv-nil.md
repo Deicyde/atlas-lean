@@ -1,6 +1,6 @@
 # Okounkov qMZV of the empty index
 
-**Okounkov qMZV of the empty index.** The Okounkov $q$-multiple zeta value of the empty
+The Okounkov $q$-multiple zeta value of the empty
 index is $1$: $\zeta_q^{\mathrm{Oko}}(\varnothing) = 1$.
 
 ## Sources

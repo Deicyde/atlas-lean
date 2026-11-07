@@ -1,6 +1,6 @@
 # Value $G_4^{(2)} = 3$
 
-**Value $G_4^{(2)} = 3$.** The truncated binomial sum satisfies $G_4^{(2)} = 3$.
+The truncated binomial sum satisfies $G_4^{(2)} = 3$.
 
 This is the Fibonacci number $F_4$, and $n = 4$ is the first index for which the sum defining
 $G_n^{(2)}$ has two terms.

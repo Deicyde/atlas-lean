@@ -1,6 +1,6 @@
 # Convergent matrix
 
-**Convergent matrix.** For a finite string $a = (a_1, \ldots, a_n)$ of natural numbers, the
+For a finite string $a = (a_1, \ldots, a_n)$ of natural numbers, the
 convergent matrix $C(a)$ is the $2 \times 2$ integer matrix given by the ordered product
 $C(a) = \begin{pmatrix} 0 & 1 \\ 1 & a_1 \end{pmatrix} \cdots
 \begin{pmatrix} 0 & 1 \\ 1 & a_n \end{pmatrix}$ (the identity matrix when $n = 0$). Its entries

@@ -1,6 +1,6 @@
 # Binary run lengths
 
-**Binary run lengths.** For a natural number $n$, the binary run lengths of $n$ form the list
+For a natural number $n$, the binary run lengths of $n$ form the list
 of the lengths of the maximal runs of $1$s in the binary expansion of $n$, in the order in which
 the runs occur when the digits are read from the least significant one. This is the paper's list
 $\mathcal{L}(n)$, whose order does not matter there; for $n = 0$ the list is empty.

@@ -1,6 +1,6 @@
 # The emitter on a list of clauses
 
-**The emitter on a list of clauses.** Let $L_b$ be a natural number, $o_0$ a list of bits,
+Let $L_b$ be a natural number, $o_0$ a list of bits,
 $C_s$ a list of clauses, $s$ a construction state and $\tau$ a natural number, and let $T$ be the
 concatenation over the clauses $C$ of $C_s$, in order, of the tokens of $C$ as they lie on the
 token stack. If the size invariant holds for $\tau$ and $s$ and $\tau + |T| \le L_b$, then for

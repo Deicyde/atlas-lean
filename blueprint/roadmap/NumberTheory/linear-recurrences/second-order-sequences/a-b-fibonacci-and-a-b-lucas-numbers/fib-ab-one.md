@@ -1,6 +1,6 @@
 # First (a, b)-Fibonacci number
 
-**First (a, b)-Fibonacci number.** For all complex numbers $a$ and $b$, the $(a,b)$-Fibonacci
+For all complex numbers $a$ and $b$, the $(a,b)$-Fibonacci
 number $F^{a,b}_1$ equals $1$.
 
 ## Sources

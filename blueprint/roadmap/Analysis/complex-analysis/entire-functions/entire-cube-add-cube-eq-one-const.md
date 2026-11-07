@@ -1,6 +1,6 @@
 # Entire solutions of the Fermat cubic are constant
 
-**Entire solutions of the Fermat cubic are constant.** Let $f$ and $g$ be entire functions
+Let $f$ and $g$ be entire functions
 with $f(z)^3 + g(z)^3 = 1$ for every $z \in \mathbb{C}$. Then $f$ and $g$ are constant.
 
 ## Sources

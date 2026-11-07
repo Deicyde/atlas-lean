@@ -1,6 +1,6 @@
 # Golden-ratio bounds for P-positions of maximal remoteness
 
-**Golden-ratio bounds for P-positions of maximal remoteness.** Let $\varphi$ be the golden
+Let $\varphi$ be the golden
 ratio. If the pair $(m, n)$, read as the fraction $m/n$, lies in row $k$ of the Calkin–Wilf tree,
 $m \ne n$, the position $(m, n)$ of Euclid is a P-position, and its Smith remoteness in Euclid
 equals $k$, then $(\varphi + 2)/(\varphi + 1) < m/n < \varphi$ or

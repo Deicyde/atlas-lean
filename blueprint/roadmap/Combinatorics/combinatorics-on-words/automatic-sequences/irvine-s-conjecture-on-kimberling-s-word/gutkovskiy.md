@@ -1,6 +1,6 @@
 # Gutkovskiy's sequence
 
-**Gutkovskiy's sequence.** Gutkovskiy's sequence (OEIS A286389) is the sequence of natural
+Gutkovskiy's sequence (OEIS A286389) is the sequence of natural
 numbers $g_0, g_1, \dots$ with $g_0 = 0$ and $g_n = n - g_{\lfloor g_{n-1}/2 \rfloor}$ for
 $n \ge 1$ (subtraction of natural numbers, truncated at $0$).
 

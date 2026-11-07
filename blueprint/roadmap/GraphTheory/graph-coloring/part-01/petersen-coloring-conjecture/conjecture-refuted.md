@@ -1,6 +1,6 @@
 # The Petersen coloring conjecture is false
 
-**The Petersen coloring conjecture is false.** There are a finite vertex type $V$ and a
+There are a finite vertex type $V$ and a
 simple graph $G$ on $V$ in which every vertex has exactly three neighbors and no edge is a bridge,
 such that $G$ has no Petersen coloring: no map $f$ from unordered pairs of vertices of $G$ to
 unordered pairs of vertices of the Petersen graph $P$ sends every edge of $G$ to an edge of $P$

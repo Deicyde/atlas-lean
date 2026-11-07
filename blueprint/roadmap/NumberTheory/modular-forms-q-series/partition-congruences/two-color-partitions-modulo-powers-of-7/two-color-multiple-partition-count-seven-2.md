@@ -1,6 +1,6 @@
 # Generating functions for $p_{1,7^{2k-1}}$ on progressions
 
-**Generating functions for $p_{1,7^{2k-1}}$ on progressions.** Let $p_{1,\ell}(n)$ be the
+Let $p_{1,\ell}(n)$ be the
 number of 2-color partitions of $n$ in which the parts of the second color are multiples of
 $\ell$, let $f_k = \prod_{n \ge 1} (1 - q^{kn})$ in $\mathbb{Q}[[q]]$, and let $y^{(2k-1)}_\beta$
 be the coefficient vectors for odd powers of $7$. For all $k \ge 1$ and $\beta \ge 0$, with

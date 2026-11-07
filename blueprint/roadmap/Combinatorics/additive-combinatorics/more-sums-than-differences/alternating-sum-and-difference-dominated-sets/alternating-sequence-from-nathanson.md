@@ -1,6 +1,6 @@
 # Alternating sum- and difference-dominated sets from Nathanson's construction
 
-**Alternating sum- and difference-dominated sets from Nathanson's construction.** For a set
+For a set
 $S$ of integers write $S + S = \{s + s' : s, s' \in S\}$, $S - S = \{s - s' : s, s' \in S\}$,
 $c + S = \{c + s : s \in S\}$ and $c - S = \{c - s : s \in S\}$. Let $m$, $d$, $k$ be integers with
 $m \ge 4$, $m \equiv 0 \pmod 4$ and $4d = m$ or $4d = 3m$, and suppose $k \ge 3$ if $2d < m$ and

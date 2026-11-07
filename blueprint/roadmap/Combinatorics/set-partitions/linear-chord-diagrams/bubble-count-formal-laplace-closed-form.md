@@ -1,6 +1,6 @@
 # Closed form of the bubble generating function
 
-**Closed form of the bubble generating function.** In $\mathbb{Q}[[t, w, y]]$ let
+In $\mathbb{Q}[[t, w, y]]$ let
 $D = 1 - w(1 - wy)$ and let $I(t, w, y)$ be the power series
 
 $$I = \frac{(1-w)^2 (1-wy)^2}{(1+w^2y)\,D^2}

@@ -1,6 +1,6 @@
 # Convexity via the tangent-plane inequality
 
-**Convexity via the tangent-plane inequality.** Let $E$ be a real Banach space, let
+Let $E$ be a real Banach space, let
 $X \subseteq E$ be an open convex set, and let $f \colon E \to \mathbb{R}$ be twice continuously
 differentiable on $X$. Then $f$ is convex on $X$ if and only if
 $f(x) \ge f(a) + Df(a)(x - a)$ for all $a, x \in X$, where $Df(a)$ is the Fréchet derivative of

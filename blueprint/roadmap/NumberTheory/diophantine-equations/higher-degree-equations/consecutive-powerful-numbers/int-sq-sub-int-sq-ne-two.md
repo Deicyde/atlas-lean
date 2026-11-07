@@ -1,6 +1,6 @@
 # Two is not a difference of two squares
 
-**Two is not a difference of two squares.** For all integers $a$ and $b$,
+For all integers $a$ and $b$,
 $a^2 - b^2 \neq 2$.
 
 ## Sources

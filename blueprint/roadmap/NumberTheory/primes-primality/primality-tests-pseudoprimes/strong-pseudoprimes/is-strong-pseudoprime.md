@@ -1,6 +1,6 @@
 # Strong pseudoprime
 
-**Strong pseudoprime.** Let $n$ be a natural number and $b$ a residue class modulo $n$. Then
+Let $n$ be a natural number and $b$ a residue class modulo $n$. Then
 $n$ is a strong pseudoprime to the base $b$ if $n$ is an odd composite number (that is, $n > 1$,
 $n$ is odd and $n$ is not prime) and there are natural numbers $k$ and $d$ with $d$ odd and
 $n - 1 = 2^k d$ such that either $b^d = 1$ or $b^{2^i d} = -1$ for some $i < k$, where the

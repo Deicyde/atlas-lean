@@ -1,6 +1,6 @@
 # Accumulating flattening of a B-tree
 
-**Accumulating flattening of a B-tree.** Given a raw B-tree $T$ and a list $s$, this returns
+Given a raw B-tree $T$ and a list $s$, this returns
 the inorder traversal of $T$ followed by $s$. For a leaf it is the leaf's key list followed by
 $s$. For an internal node with separator keys $k_1, \dots, k_m$ and children $c_0, \dots, c_n$
 it is the sequence $c_0, k_1, c_1, k_2, \dots$, in which children and keys alternate starting

@@ -1,6 +1,6 @@
 # Comparison of products of $1 - 1/x$ under prefix-product domination
 
-**Comparison of products of $1 - 1/x$ under prefix-product domination.** Let $k \ge 0$ and let
+Let $k \ge 0$ and let
 $z_1 \le \dots \le z_k$ and $y_1 \le \dots \le y_k$ be real numbers, all greater than $1$, such
 that $z_1 \cdots z_l \le y_1 \cdots y_l$ for every $l$ with $0 \le l \le k$ (for $l = 0$ both sides
 are the empty product). Then $\prod_{i=1}^k (1 - 1/z_i) \le \prod_{i=1}^k (1 - 1/y_i)$, with

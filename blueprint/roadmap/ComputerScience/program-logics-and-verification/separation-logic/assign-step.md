@@ -1,6 +1,6 @@
 # Assignment rule with a store-irrelevant heap assertion
 
-**Assignment rule with a store-irrelevant heap assertion.** Let $x$ and $y$ be variables,
+Let $x$ and $y$ be variables,
 let $p$ and $q$ be predicates on stores, and let $H$ be a store-irrelevant heap assertion.
 Write $s[x := n]$ for the store that agrees with $s$ except that it maps $x$ to $n$. If every
 store $s$ satisfying $p$ has $q(s[x := s(y)])$, then the separation-logic triple for the

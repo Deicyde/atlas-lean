@@ -1,6 +1,6 @@
 # Permuting along all positions
 
-**Permuting along all positions.** Let $\sigma$ be a permutation of $\{0, \dots, n-1\}$ and
+Let $\sigma$ be a permutation of $\{0, \dots, n-1\}$ and
 let $g$ be a map from $\{0, \dots, n-1\}$ to itself. Applying $\sigma$ to the entries of $g$
 along the set of all positions $\{0, \dots, n-1\}$, listed in increasing order, gives the map
 $g \circ \sigma^{-1}$.

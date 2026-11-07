@@ -1,6 +1,6 @@
 # Baumslag's germ representation is not faithful
 
-**Baumslag's germ representation is not faithful.** Let $B$ be Baumslag's group
+Let $B$ be Baumslag's group
 $\langle a, b \mid (bab^{-1})\, a\, (bab^{-1})^{-1} = a^2 \rangle$, let $f(x) = 2x$ and
 $g(x) = 2^x$, and for $w$ in the free group on $a, b$ with reduced word $l_1 l_2 \cdots l_k$ let
 $\varphi_w = \varphi_{l_1} \circ \varphi_{l_2} \circ \cdots \circ \varphi_{l_k}$, where

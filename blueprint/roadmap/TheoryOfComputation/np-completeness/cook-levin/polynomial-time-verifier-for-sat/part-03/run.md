@@ -1,6 +1,6 @@
 # The clause check
 
-**The clause check.** Suppose the lookup sub-program $lk$ with entry label $l_0$ satisfies
+Suppose the lookup sub-program $lk$ with entry label $l_0$ satisfies
 the lookup contract with constants $a, b \in \mathbb{N}$. Let $\varphi$ be a CNF formula, $es$ a
 list of table entries, $t$ the token list of $\varphi$ and $m$ the length of the table stack of
 $es$. Start the driver with lookup $lk$ at its start label, with any internal state, with $t$

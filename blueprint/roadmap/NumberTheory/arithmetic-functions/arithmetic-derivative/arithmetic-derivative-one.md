@@ -1,6 +1,6 @@
 # Arithmetic derivative of one
 
-**Arithmetic derivative of one.** The arithmetic derivative of $1$ is $0$: $D(1) = 0$.
+The arithmetic derivative of $1$ is $0$: $D(1) = 0$.
 
 ## Sources
 

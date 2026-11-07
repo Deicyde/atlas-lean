@@ -1,6 +1,6 @@
 # Amdeberhan–Sellers–Singh congruences
 
-**Amdeberhan–Sellers–Singh congruences.** For every natural number $n$, the generalized
+For every natural number $n$, the generalized
 cubic partition numbers satisfy $a_3(7n + 4) \equiv 0 \pmod{7}$ and
 $a_5(11n + 10) \equiv 0 \pmod{11}$.
 

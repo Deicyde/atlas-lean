@@ -1,6 +1,6 @@
 # Zagier's matrix
 
-**Zagier's matrix.** For a natural number $K$, Zagier's matrix $A_K$ is the rational matrix
+For a natural number $K$, Zagier's matrix $A_K$ is the rational matrix
 with rows and columns indexed by $1 \le i, j \le K - 1$ (empty when $K \le 1$) whose
 $(i, j)$ entry is
 

@@ -1,6 +1,6 @@
 # Impartial Tic has not ended on the empty board
 
-**Impartial Tic has not ended on the empty board.** For $n \ge 1$, play of Impartial Tic has
+For $n \ge 1$, play of Impartial Tic has
 not ended on the empty $n \times n$ board: no row and no column is full.
 
 ## Sources

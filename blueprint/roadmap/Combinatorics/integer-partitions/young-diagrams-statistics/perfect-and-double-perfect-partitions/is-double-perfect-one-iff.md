@@ -1,6 +1,6 @@
 # Double-perfect partitions from perfect partitions
 
-**Double-perfect partitions from perfect partitions.** Let $N > 3$. A multiset $\lambda$ of
+Let $N > 3$. A multiset $\lambda$ of
 natural numbers is a double-perfect partition of $N$ of order $1$ if and only if there is a
 perfect partition $\beta$ of $N - 2$ such that either $1$ occurs exactly once in $\beta$ and
 $\lambda$ is $\beta$ with two more parts equal to $1$, or $2$ is not a part of $\beta$ and

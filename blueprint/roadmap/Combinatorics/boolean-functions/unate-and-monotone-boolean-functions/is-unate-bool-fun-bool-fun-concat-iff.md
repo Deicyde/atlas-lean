@@ -1,6 +1,6 @@
 # Unateness of a concatenation
 
-**Unateness of a concatenation.** Let $g$ and $h$ be $n$-variable Boolean functions and let
+Let $g$ and $h$ be $n$-variable Boolean functions and let
 $g \| h$ be their concatenation, the $(n+1)$-variable function equal to $g$ of the remaining
 variables when the first variable is $0$ and to $h$ of them when it is $1$. Then $g \| h$ is
 unate if and only if $g$ and $h$ are unate, for each variable $x_i$ either both $g$ and $h$

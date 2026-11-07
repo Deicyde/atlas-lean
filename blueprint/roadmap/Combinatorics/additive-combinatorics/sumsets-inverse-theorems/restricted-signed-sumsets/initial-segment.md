@@ -1,6 +1,6 @@
 # Initial segment of a finite integer sequence
 
-**Initial segment of a finite integer sequence.** For a sequence $a_0, \dots, a_{k-1}$ of
+For a sequence $a_0, \dots, a_{k-1}$ of
 integers and a natural number $n$, the initial segment of length $n$ is the set
 $\{a_i : 0 \le i < k,\ i < n\}$ of the values at indices below $n$; it is the set of all values
 of the sequence when $n \ge k$.

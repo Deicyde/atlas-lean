@@ -1,6 +1,6 @@
 # Neyman–Pearson lemma
 
-**Neyman–Pearson lemma.** Let $\mu$ be a measure on a measurable space $\Omega$, and let
+Let $\mu$ be a measure on a measurable space $\Omega$, and let
 $p, q : \Omega \to \mathbb{R}$ be measurable, nonnegative and $\mu$-integrable. Let $k \ge 0$ be a
 real number and let $\varphi^\star : \Omega \to [0, 1]$ be measurable with $\varphi^\star(x) = 1$
 whenever $q(x) > k\,p(x)$ and $\varphi^\star(x) = 0$ whenever $q(x) < k\,p(x)$. Then every

@@ -1,6 +1,6 @@
 # Euclid P-position test
 
-**Euclid P-position test.** For natural numbers $a$ and $b$, the Euclid P-position test at
+For natural numbers $a$ and $b$, the Euclid P-position test at
 $(a, b)$ is the value at $(a, b)$ of the fuel-bounded evaluation of the P-positions of Euclid with
 fuel $a + b$.
 

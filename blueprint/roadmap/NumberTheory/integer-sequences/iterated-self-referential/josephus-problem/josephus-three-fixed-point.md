@@ -1,6 +1,6 @@
 # Enumeration of the positive fixed points of $J_3$
 
-**Enumeration of the positive fixed points of $J_3$.** Let $J_3$ be the Josephus function
+Let $J_3$ be the Josephus function
 with step $3$. For $\ell \in \mathbb{N}$, $n_\ell$ is the $\ell$-th element, in increasing order
 and counting from $\ell = 0$, of the set of natural numbers $n \ge 1$ with $J_3(n) = n$. Thus
 $n_\ell$ is the paper's $n_p^{(\ell+1)}$.

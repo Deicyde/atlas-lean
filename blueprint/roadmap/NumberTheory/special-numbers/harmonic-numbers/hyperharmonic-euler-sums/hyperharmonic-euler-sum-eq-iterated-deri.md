@@ -1,6 +1,6 @@
 # Beta-function evaluation of hyperharmonic Euler sums
 
-**Beta-function evaluation of hyperharmonic Euler sums.** Let $k, p \ge 0$ be integers and
+Let $k, p \ge 0$ be integers and
 let $r, a$ be complex numbers with $\operatorname{Re}(r) < p + 1$ and $\operatorname{Re}(a) > -k$,
 such that $r$ is not a positive integer and $a$ is not a nonpositive integer. Write
 $H_n^{[r]}(k)$ for the generalized hyperharmonic number and let

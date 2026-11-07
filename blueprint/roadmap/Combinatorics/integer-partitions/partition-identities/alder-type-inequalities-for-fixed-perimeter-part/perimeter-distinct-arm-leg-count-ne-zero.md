@@ -1,6 +1,6 @@
 # Counting d-distinct partitions by largest part and length
 
-**Counting d-distinct partitions by largest part and length.** Let $d$, $a$, $m$ and $k$ be
+Let $d$, $a$, $m$ and $k$ be
 positive integers with $a \le d + 1$, and write $h_d^{(a)}(m, k)$ for the number of partitions into
 $d$-distinct parts, all at least $a$, with largest part $m$ and $k$ parts. Then
 $h_d^{(a)}(m, k) \ne 0$ if and only if $m \ge a + d(k - 1)$, and in that case

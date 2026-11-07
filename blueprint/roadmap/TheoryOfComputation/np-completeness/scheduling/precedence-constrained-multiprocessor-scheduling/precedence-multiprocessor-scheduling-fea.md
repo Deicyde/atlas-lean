@@ -1,6 +1,6 @@
 # Feasible precedence-multiprocessor scheduling instances
 
-**Feasible precedence-multiprocessor scheduling instances.** An instance $(d, P, m, D)$ with
+An instance $(d, P, m, D)$ with
 job durations $d = (d_0, \dots, d_{n-1})$ is feasible when there are start times
 $s_0, \dots, s_{n-1} \in \mathbb{N}$ and machines $\mu_0, \dots, \mu_{n-1} \in \mathbb{N}$ such
 that $\mu_j < m$ and $s_j + d_j \le D$ for every $j < n$, $s_a + d_a \le s_b$ for every

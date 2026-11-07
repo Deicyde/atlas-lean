@@ -1,6 +1,6 @@
 # Finite single-tape emulation of a multi-stack machine
 
-**Finite single-tape emulation of a multi-stack machine.** Let $M$ be a multi-stack machine
+Let $M$ be a multi-stack machine
 with finitely many stacks, labels and internal states, and with finite stack alphabets. Its
 finite single-tape emulation is the single-tape machine that runs the plain single-tape emulation
 of $M$ (through a single-tape machine with a finite store) step for step: its states are those in

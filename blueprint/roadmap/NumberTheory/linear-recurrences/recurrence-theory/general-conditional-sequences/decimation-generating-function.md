@@ -1,6 +1,6 @@
 # Generating function of a decimated linear recurrence
 
-**Generating function of a decimated linear recurrence.** Let $R$ be a commutative ring,
+Let $R$ be a commutative ring,
 let $m$ and $r$ be natural numbers, and let $(A_j)_{j \ge 0}$ and $(s_n)_{n \ge 0}$ be
 sequences in $R$ such that $s_{n+mr} = \sum_{j\lt m} A_j s_{n+jr}$ for all $n \ge 0$. Then, in
 the ring $R[[x]]$ of formal power series,

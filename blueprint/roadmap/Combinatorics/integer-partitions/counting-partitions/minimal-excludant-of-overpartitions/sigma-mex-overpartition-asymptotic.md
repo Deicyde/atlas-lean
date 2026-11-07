@@ -1,6 +1,6 @@
 # Asymptotic formula for the overpartition mex sum
 
-**Asymptotic formula for the overpartition mex sum.** Let $\sigma\overline{\mathrm{mex}}(n)$ be
+Let $\sigma\overline{\mathrm{mex}}(n)$ be
 the sum, over all overpartitions $\pi$ of $n$, of $\overline{\mathrm{mex}}(\pi)$, the least
 positive integer that does not occur among the non-overlined parts of $\pi$. Then
 $\sigma\overline{\mathrm{mex}}(n) \sim e^{\pi\sqrt{n}} / (8 n^{3/4})$ as $n \to \infty$, that is,

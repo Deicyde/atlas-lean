@@ -1,6 +1,6 @@
 # The sixth homotopy group of the 3-sphere
 
-**The sixth homotopy group of the 3-sphere.** Let $S^3$ be the unit sphere in Euclidean space
+Let $S^3$ be the unit sphere in Euclidean space
 $\mathbb{R}^4$. For every point $x \in S^3$, the homotopy group $\pi_6(S^3, x)$ is isomorphic as a
 group to the cyclic group $\mathbb{Z}/12$.
 

@@ -1,6 +1,6 @@
 # Longest progressions of absolute least residues modulo 5
 
-**Longest progressions of absolute least residues modulo 5.** The length $g(5)$ of the
+The length $g(5)$ of the
 longest arithmetic progression in the absolute least reduced residue system modulo $5$ is $2$.
 
 ## Sources

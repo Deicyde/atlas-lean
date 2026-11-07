@@ -1,6 +1,6 @@
 # $x$-log-concavity of the minuscule polynomials
 
-**$x$-log-concavity of the minuscule polynomials.** Let $N_n$ denote the type-A minuscule
+Let $N_n$ denote the type-A minuscule
 polynomial. For all natural numbers $n$ and $k$, the coefficient of $x^k$ in
 $N_n(x)^2 - N_{n+1}(x) N_{n-1}(x)$ is non-negative, where $N_{n-1}$ is read as $N_0$ when $n = 0$.
 

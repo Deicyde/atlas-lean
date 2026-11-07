@@ -1,6 +1,6 @@
 # Moves to the losing state come from terminal losing positions
 
-**Moves to the losing state come from terminal losing positions.** Let $M$ be a Kripke model,
+Let $M$ be a Kripke model,
 $\mathrm{env}$ an environment, $\varphi$ a fixpoint-free formula and $w$ a world. If the
 totalized fragment game has a move from the embedded position $(\varphi, w)$ to the absorbing
 losing state, then the game position $(\varphi, w, [])$, with $\varphi$ viewed as a μ-calculus

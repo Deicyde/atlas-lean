@@ -1,6 +1,6 @@
 # The $n$-Markoff spectrum is closed
 
-**The $n$-Markoff spectrum is closed.** For every integer $n \ge 1$, the $n$-Markoff spectrum
+For every integer $n \ge 1$, the $n$-Markoff spectrum
 $M_n$ is a closed subset of $\mathbb{R}$.
 
 ## Sources

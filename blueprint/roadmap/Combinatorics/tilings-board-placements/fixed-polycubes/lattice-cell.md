@@ -1,6 +1,6 @@
 # Lattice cells
 
-**Lattice cells.** For a natural number $d$, a lattice cell in dimension $d$ is a point of
+For a natural number $d$, a lattice cell in dimension $d$ is a point of
 $\mathbb{Z}^d$, that is, a function assigning an integer to each of the $d$ coordinate axes.
 
 ## Sources

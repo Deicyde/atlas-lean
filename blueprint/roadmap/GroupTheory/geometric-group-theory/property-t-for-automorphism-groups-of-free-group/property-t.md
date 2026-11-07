@@ -1,6 +1,6 @@
 # Property (T)
 
-**Property (T).** Let $G$ be a group. For a finite subset $S \subseteq G$, write
+Let $G$ be a group. For a finite subset $S \subseteq G$, write
 $\Delta_S = |S| - \sum_{s \in S} s$ for the Laplacian of $S$ in the real group ring $\mathbb{R}G$,
 and write $\xi \mapsto \xi^{\star}$ for the involution of $\mathbb{R}G$ that extends inversion on
 $G$ linearly. The group $G$ has Kazhdan's property (T) when there exist a finite subset

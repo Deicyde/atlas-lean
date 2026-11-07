@@ -1,6 +1,6 @@
 # Step budget for one block of the shift generator
 
-**Step budget for one block of the shift generator.** For natural numbers $g$, $K$, $H$,
+For natural numbers $g$, $K$, $H$,
 $d$ and $V$ (in use: the number of symbol codes, the number of stacks, the stack height, the
 window depth and the number of variables), the budget is
 

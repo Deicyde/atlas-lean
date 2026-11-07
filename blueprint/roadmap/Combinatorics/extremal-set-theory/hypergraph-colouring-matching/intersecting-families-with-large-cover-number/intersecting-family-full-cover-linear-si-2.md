@@ -1,6 +1,6 @@
 # Kahn's theorem on the Erdős–Lovász problem
 
-**Kahn's theorem on the Erdős–Lovász problem.** There is a natural number $C$ such that for
+There is a natural number $C$ such that for
 every $n \ge 1$ there is a finite family $\mathcal{F}$ of finite sets of natural numbers with
 the following properties: every member of $\mathcal{F}$ has exactly $n$ elements, any two
 members of $\mathcal{F}$ have a common element, every set of at most $n - 1$ natural numbers is

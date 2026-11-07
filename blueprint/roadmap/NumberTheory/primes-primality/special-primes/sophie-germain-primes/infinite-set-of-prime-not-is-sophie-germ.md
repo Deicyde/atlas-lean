@@ -1,6 +1,6 @@
 # Infinitely many primes are not Sophie Germain primes
 
-**Infinitely many primes are not Sophie Germain primes.** The set of primes $q$ that are not
+The set of primes $q$ that are not
 Sophie Germain primes, that is, the primes $q$ for which $2q + 1$ is not prime, is infinite.
 
 ## Sources

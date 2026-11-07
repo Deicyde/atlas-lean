@@ -1,6 +1,6 @@
 # Two persons crossing a one-edge star
 
-**Two persons crossing a one-edge star.** In the star model with $2$ persons (crossing times
+In the star model with $2$ persons (crossing times
 $1$ and $2$), a star graph with $1$ edge and $1$ torch, the sequence of one step consisting of a
 single movement that carries both persons and the torch from the center to the leaf is a star
 schedule, and its total duration is $2$.

@@ -1,6 +1,6 @@
 # Rounding sequence parity count
 
-**Rounding sequence parity count.** For a natural number $n$, the rounding sequence parity
+For a natural number $n$, the rounding sequence parity
 count $\mathcal R_n$ is the number of integers $k$ with $1 \le k \le n$ for which the nearest
 integer to $n/k$ is odd, where half-integers are rounded up: the nearest integer to a rational
 number $x$ is taken to be $\lfloor x + 1/2 \rfloor$.

@@ -1,6 +1,6 @@
 # Logarithmic integral
 
-**Logarithmic integral.** For a real number $x$ in the domain of the logarithmic integral
+For a real number $x$ in the domain of the logarithmic integral
 (that is, $x \ge 0$ and $x \ne 1$), the logarithmic integral $\mathrm{li}(x)$ is
 $\mathrm{li}(x) = \int_0^x \frac{dt}{\log t}$ if $x < 1$, and if $x > 1$ it is
 

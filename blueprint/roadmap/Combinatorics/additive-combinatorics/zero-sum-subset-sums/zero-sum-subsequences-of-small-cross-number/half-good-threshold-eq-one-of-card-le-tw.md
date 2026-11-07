@@ -1,6 +1,6 @@
 # Half-good threshold of a group of order at most two
 
-**Half-good threshold of a group of order at most two.** If $\Gamma$ is a finite abelian
+If $\Gamma$ is a finite abelian
 group with at most two elements, then its half-good threshold $P_{1/2}(\Gamma)$ equals $1$.
 
 The empty sequence is not good, while the one-term sequence $(0)$ is good, so a uniformly random

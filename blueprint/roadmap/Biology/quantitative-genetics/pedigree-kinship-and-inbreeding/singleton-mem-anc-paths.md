@@ -1,3 +1,3 @@
 # Trivial ancestral path
 
-**Trivial ancestral path.** `[i]` is an ancestral path from `i`.
+`[i]` is an ancestral path from `i`.

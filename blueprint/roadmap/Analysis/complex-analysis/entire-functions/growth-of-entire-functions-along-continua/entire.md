@@ -1,6 +1,6 @@
 # Entire functions
 
-**Entire functions.** A function $f : \mathbb{C} \to \mathbb{C}$ is entire when it is complex
+A function $f : \mathbb{C} \to \mathbb{C}$ is entire when it is complex
 differentiable at every point of $\mathbb{C}$.
 
 ## Sources

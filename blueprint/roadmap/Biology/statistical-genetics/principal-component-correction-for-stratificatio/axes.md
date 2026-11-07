@@ -1,3 +1,3 @@
 # Axes of variation
 
-**Axes of variation.** The axes of variation: an orthonormal eigenbasis of `Ψ`, in decreasing eigenvalue order.
+The axes of variation: an orthonormal eigenbasis of `Ψ`, in decreasing eigenvalue order.

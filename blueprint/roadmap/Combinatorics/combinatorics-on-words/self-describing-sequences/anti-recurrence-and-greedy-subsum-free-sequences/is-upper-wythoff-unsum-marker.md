@@ -1,6 +1,6 @@
 # Markers among the unsum gaps
 
-**Markers among the unsum gaps.** A natural number $i$ is a *marker* if $i \ge 10$ and the
+A natural number $i$ is a *marker* if $i \ge 10$ and the
 $i$-th gap between consecutive unsums of upper Wythoff numbers (counted from zero) equals $2$.
 
 The source marks the entries $2$ of A260311 that follow the irregular prefix $1111122121$ of

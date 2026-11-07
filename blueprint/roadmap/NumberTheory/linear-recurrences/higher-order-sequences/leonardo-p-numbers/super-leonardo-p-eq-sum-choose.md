@@ -1,6 +1,6 @@
 # Explicit formula for the supergeneralized Leonardo p-numbers
 
-**Explicit formula for the supergeneralized Leonardo p-numbers.** For all natural numbers
+For all natural numbers
 $p \ge 1$, $k$ and $n$ with $n > p$ and every real sequence $x$, the supergeneralized Leonardo
 $p$-numbers $\mathcal{L}_{p,k,x}$ satisfy
 

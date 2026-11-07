@@ -1,6 +1,6 @@
 # Inverse theorem for subset sums of a mixed-sign set
 
-**Inverse theorem for subset sums of a mixed-sign set.** Let $n, p, \alpha, \beta$ be natural
+Let $n, p, \alpha, \beta$ be natural
 numbers with $1 \le n \le p$, put $k = n + p$, and assume $1 \le \alpha \le k - 2$,
 $\beta \le k - 2$ and $\alpha + \beta \le k - 1$. Let $A$ be a finite set of integers that does
 not contain $0$ and has exactly $n$ negative and exactly $p$ positive elements, and write $E$ for

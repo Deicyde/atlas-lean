@@ -1,6 +1,6 @@
 # Inverter built from a forger
 
-**Inverter built from a forger.** Let $f : X \to Y$, let $A$ be a one-time forger for messages
+Let $f : X \to Y$, let $A$ be a one-time forger for messages
 of length $\ell$ with coins in $R$, and let $y \in Y$. The inverter's coins are a position $(i, b)$
 with $i < \ell$ and $b \in \{0, 1\}$, a secret key
 $sk : \{0, \dots, \ell - 1\} \times \{0, 1\} \to X$ and forger coins $r \in R$. It forms the

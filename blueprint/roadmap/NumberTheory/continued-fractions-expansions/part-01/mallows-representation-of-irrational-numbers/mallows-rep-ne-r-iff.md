@@ -1,6 +1,6 @@
 # Mallows representations without the letter $R$
 
-**Mallows representations without the letter $R$.** Let $\alpha \in (0, 1)$ be irrational,
+Let $\alpha \in (0, 1)$ be irrational,
 with continued fraction expansion $\alpha = [0; a_1, a_2, \ldots]$. The letter $R$ does not occur
 in the Mallows representation $M(\alpha)$ if and only if $a_2 = 1$, $a_3$ is even, and the
 sequence $a_4, a_5, \ldots$ is a concatenation of blocks, each of the form $(2, b)$ or

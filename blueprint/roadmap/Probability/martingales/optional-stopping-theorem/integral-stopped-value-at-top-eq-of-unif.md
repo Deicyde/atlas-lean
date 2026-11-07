@@ -1,6 +1,6 @@
 # General optional stopping for uniformly integrable martingales
 
-**General optional stopping for uniformly integrable martingales.** Let $\mu$ be a
+Let $\mu$ be a
 probability measure, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration and let
 $(f_n)_{n \in \mathbb{N}}$ be a real-valued martingale with respect to $(\mathcal{F}_n)$ that is
 uniformly integrable. Let $f_\infty$ be the limit process of $f$ (its almost-everywhere limit, by

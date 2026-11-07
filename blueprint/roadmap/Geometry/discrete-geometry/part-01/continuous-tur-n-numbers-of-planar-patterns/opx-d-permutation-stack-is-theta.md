@@ -1,6 +1,6 @@
 # Stacked permutation patterns in three dimensions
 
-**Stacked permutation patterns in three dimensions.** Let $P \subseteq \mathbb{R}^2$ be a
+Let $P \subseteq \mathbb{R}^2$ be a
 finite set of at least two points with pairwise distinct $x$-coordinates and pairwise distinct
 $y$-coordinates, and for $i \in \{2, 3\}$ let
 $P_i = \{(x, y, j) : (x, y) \in P,\ j \in \{1, \dots, i\}\} \subseteq \mathbb{R}^3$. Then, as $n$

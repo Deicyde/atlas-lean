@@ -1,6 +1,6 @@
 # The variable $x$ times $x^{-1}$ is one
 
-**The variable $x$ times $x^{-1}$ is one.** Let $K$ be a field. In $K((x^{-1}))$, the
+Let $K$ be a field. In $K((x^{-1}))$, the
 product of the variable $x$ and the series $x^{-1}$ (coefficient $1$ at $x^{-1}$ and $0$
 elsewhere) is $1$.
 

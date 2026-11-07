@@ -1,6 +1,6 @@
 # Triangular recurrence
 
-**Triangular recurrence.** A triangular recurrence is a tuple
+A triangular recurrence is a tuple
 $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ of six integers, the parameters of the linear
 recurrence
 

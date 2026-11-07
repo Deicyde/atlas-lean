@@ -1,6 +1,5 @@
 # Chapman–Kolmogorov equations for bounded measurable functions
 
-**Chapman–Kolmogorov equations for bounded measurable functions.**
 For a Markov chain `X` with transition kernel `κ`, the conditional
 expectation of `f (X (m + n))` given the past up to time `m` is the
 `κ ^ n`-integral of `f` evaluated at `X m`. For `n = 1` this is the

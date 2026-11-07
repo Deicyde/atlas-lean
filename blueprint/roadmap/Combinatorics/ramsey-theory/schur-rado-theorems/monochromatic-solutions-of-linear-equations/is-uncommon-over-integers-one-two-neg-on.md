@@ -1,6 +1,6 @@
 # Uncommonness of $x + 2y - z - 2w = 0$ over the integers
 
-**Uncommonness of $x + 2y - z - 2w = 0$ over the integers.** For every $r \ge 2$,
+For every $r \ge 2$,
 the equation $x + 2y - z - 2w = 0$ is $r$-uncommon over the integers.
 
 ## Sources

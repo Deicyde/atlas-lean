@@ -1,6 +1,6 @@
 # Majorization of part lists
 
-**Majorization of part lists.** For finite lists $a = (a_1, \dots, a_s)$ and
+For finite lists $a = (a_1, \dots, a_s)$ and
 $b = (b_1, \dots, b_t)$ of natural numbers, $a$ majorizes $b$, written $a \succ b$, when
 $b_1 + \dots + b_k \le a_1 + \dots + a_k$ for every natural number $k \le \min\{s, t\}$.
 

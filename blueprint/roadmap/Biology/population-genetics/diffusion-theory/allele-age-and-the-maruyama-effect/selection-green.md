@@ -1,6 +1,6 @@
 # Sojourn density of the Wright–Fisher diffusion with selection
 
-**Sojourn density of the Wright–Fisher diffusion with selection.** The sojourn density (Green's function) of the Wright–Fisher diffusion with genic selection,
+The sojourn density (Green's function) of the Wright–Fisher diffusion with genic selection,
 time in units of `2N` generations, `σ = 2Ns`. With `u = kimuraFixation σ` and
 `u'(x) = kimuraSlope σ · e^{-2σx}`,
 

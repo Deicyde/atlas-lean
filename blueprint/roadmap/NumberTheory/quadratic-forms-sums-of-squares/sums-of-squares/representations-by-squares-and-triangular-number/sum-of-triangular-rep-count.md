@@ -1,6 +1,6 @@
 # Representation numbers for sums of triangular numbers
 
-**Representation numbers for sums of triangular numbers.** For an integer $k$ and a natural
+For an integer $k$ and a natural
 number $n$, $t_k(n)$ is the coefficient of $q^n$ in $\psi(q)^k$, where
 $\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$. Since $\psi$ has constant coefficient $1$, it is a unit of
 $\mathbb{Z}[[q]]$, so $\psi^k$ is a power series for negative $k$ as well.

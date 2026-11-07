@@ -1,6 +1,6 @@
 # Labelled density
 
-**Labelled density.** For a graph $G$ on the vertex set $\{0, \dots, k-1\}$ and a function $W$
+For a graph $G$ on the vertex set $\{0, \dots, k-1\}$ and a function $W$
 of two real variables, the labelled density of $G$ in $W$ is
 
 $$\tau(G, W) = \int_{[0,1]^k} \prod_{i < j} w_{ij}(x) \, dx,$$

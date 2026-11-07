@@ -1,6 +1,6 @@
 # Homogeneous Sobolev seminorm (band-limited derivative bound)
 
-**Homogeneous Sobolev seminorm (band-limited derivative bound).** For
+For
 $s \in \mathbb{R}$ and a Schwartz function $f : \mathbb{R} \to \mathbb{C}$ with Fourier transform
 $\hat f(\xi) = \int_{\mathbb{R}} f(x) e^{-2\pi i x\xi}\,dx$, the homogeneous Sobolev seminorm of
 order $s$ is

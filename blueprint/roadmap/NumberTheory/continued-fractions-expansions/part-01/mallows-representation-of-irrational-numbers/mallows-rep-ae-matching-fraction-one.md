@@ -1,6 +1,6 @@
 # Matching fractions of almost every Mallows representation
 
-**Matching fractions of almost every Mallows representation.** For almost every irrational
+For almost every irrational
 $\alpha \in (0, 1)$, with respect to Lebesgue measure, the Mallows representation
 $M(\alpha) = M_0(\alpha) M_1(\alpha) M_2(\alpha) \cdots$ satisfies, for every $\ell \ge 0$,
 

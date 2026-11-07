@@ -1,6 +1,6 @@
 # Large sets of complex numbers are determined by their $k$-sums
 
-**Large sets of complex numbers are determined by their $k$-sums.** For a finite set
+For a finite set
 $A \subseteq \mathbb{C}$ and a natural number $k$, let $A_k$ be the multiset of the sums
 $\sum_{z \in S} z$ over the $k$-element subsets $S$ of $A$. For every natural number $k \ge 3$
 there is a natural number $n_0$ such that any two finite sets $A, B \subseteq \mathbb{C}$ with

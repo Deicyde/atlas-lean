@@ -1,6 +1,6 @@
 # Negative-positive numbers
 
-**Negative-positive numbers.** Let $a_{n,k}$ ($n, k \ge 0$) be the triangular array of a
+Let $a_{n,k}$ ($n, k \ge 0$) be the triangular array of a
 triangular recurrence with parameters $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$. Its
 negative-positive numbers $a^{NP}_{n,k} \in \mathbb{Q}$, for $n, k \in \mathbb{Z}$, are defined by
 $a^{NP}_{n,k} = a_{n,k}$ for $n, k \ge 0$, $a^{NP}_{n,k} = 0$ for $k < 0$, and, for $n < 0 \le k$,

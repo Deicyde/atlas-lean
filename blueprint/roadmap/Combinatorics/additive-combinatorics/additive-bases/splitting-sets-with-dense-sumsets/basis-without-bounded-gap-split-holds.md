@@ -1,6 +1,6 @@
 # An asymptotic basis of order 2 admitting no bounded-gap splitting
 
-**An asymptotic basis of order 2 admitting no bounded-gap splitting.** There is a set
+There is a set
 $A \subseteq \mathbb{N}$ that is an asymptotic additive basis of order $2$ (all but finitely many
 natural numbers are sums of two elements of $A$) such that for all disjoint sets
 $A_1, A_2 \subseteq \mathbb{N}$ with $A_1 \cup A_2 = A$, the sumsets

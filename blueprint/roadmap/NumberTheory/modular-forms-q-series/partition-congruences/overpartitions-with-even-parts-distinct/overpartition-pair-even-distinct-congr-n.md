@@ -1,6 +1,6 @@
 # Paksok–Saikia congruences for $(3, 3)$- and $(3, 6)$-overpartition pairs (Theorem 2)
 
-**Paksok–Saikia congruences for $[3, 3]$- and $[3, 6]$-overpartition pairs (Theorem 2).** Let
+Let
 $\mathrm{bped}_{j,k}(n)$ be the number of $[j, k]$-overpartition pairs of $n$ with even parts
 distinct. Let $p \ge 5$ be a prime with Legendre symbol $\left(\frac{-2}{p}\right) = -1$, and let
 $k, m, \alpha, \beta$ be natural numbers with $p \nmid m$. Then

@@ -1,6 +1,6 @@
 # Mallows levels from the Stern–Brocot maps
 
-**Mallows levels from the Stern–Brocot maps.** Encode each vertex of the Stern–Brocot tree
+Encode each vertex of the Stern–Brocot tree
 (left subtree, root $1/2$) by its gap, so that the root is the gap $(0/1, 1/1)$, and extend
 $\psi_{\mathrm{SBT}}$ and $\varphi_{\mathrm{SBT}}$ to lists of vertices by applying them to each
 entry and concatenating the results in order. Then for every $i \ge 1$ the ordered list $MT_i$

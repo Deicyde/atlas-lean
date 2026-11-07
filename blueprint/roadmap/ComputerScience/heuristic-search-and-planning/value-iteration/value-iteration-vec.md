@@ -1,6 +1,6 @@
 # Tabulated value iteration
 
-**Tabulated value iteration.** Let $M$ be a Markov decision process with states
+Let $M$ be a Markov decision process with states
 $\{0, \dots, m-1\}$, a nonempty finite set of actions, and rewards and transition probabilities
 in a field $K$ carrying a linear order, let $\gamma \in K$, and let $T$ be the Bellman optimality
 operator of $M$ with discount $\gamma$. Tabulated value iteration takes a number of steps

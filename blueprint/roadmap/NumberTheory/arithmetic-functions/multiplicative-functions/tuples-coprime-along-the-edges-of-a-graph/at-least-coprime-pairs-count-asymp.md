@@ -1,6 +1,6 @@
 # Asymptotic count of $k$-tuples with at least $r$ coprime pairs
 
-**Asymptotic count of $k$-tuples with at least $r$ coprime pairs.** Let $k \ge 2$ and
+Let $k \ge 2$ and
 $r \ge 1$. For a set $E$ of pairs $(a, b)$ with $1 \le a < b \le k$, let $A_E$ be the coprimality
 density of the graph on $\{1, \dots, k\}$ with edge set $E$, and put
 

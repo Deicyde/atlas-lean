@@ -1,6 +1,6 @@
 # Upper order at infinity of $q^{-\tau}$
 
-**Upper order at infinity of $q^{-\tau}$.** For every real $\tau$, the upper order at infinity
+For every real $\tau$, the upper order at infinity
 of $q \mapsto (q^{\tau})^{-1}$ is $\max(0, \tau)$; in particular it is $\tau$ when $\tau \ge 0$.
 
 ## Sources

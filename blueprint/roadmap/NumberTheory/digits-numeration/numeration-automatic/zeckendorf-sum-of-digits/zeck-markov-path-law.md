@@ -1,6 +1,6 @@
 # The Zeckendorf Markov chain has the invariant law
 
-**The Zeckendorf Markov chain has the invariant law.** Let $\mathbb{X}$ be the set of
+Let $\mathbb{X}$ be the set of
 Zeckendorf-adic integers: the digit sequences $x \in \{0, 1\}^{\mathbb{N}}$ with $x_0 = x_1 = 0$
 and no two consecutive digits equal to $1$. Let $\mu$ be a probability measure on
 $\{0, 1\}^{\mathbb{N}}$ with $\mu(\mathbb{X}^c) = 0$ that is preserved by the odometer $T$. Let

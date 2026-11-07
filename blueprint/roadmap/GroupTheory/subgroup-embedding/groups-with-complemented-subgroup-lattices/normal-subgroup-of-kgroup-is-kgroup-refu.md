@@ -1,6 +1,6 @@
 # Normal subgroups of $K$-groups need not be $K$-groups
 
-**Normal subgroups of $K$-groups need not be $K$-groups.** There is a group $G$ whose subgroup
+There is a group $G$ whose subgroup
 lattice is complemented (a $K$-group) with a normal subgroup $N$ whose own subgroup lattice is not
 complemented; so Kourovka Problem 11.128 has a negative answer.
 

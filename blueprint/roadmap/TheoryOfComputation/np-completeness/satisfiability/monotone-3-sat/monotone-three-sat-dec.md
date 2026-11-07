@@ -1,6 +1,6 @@
 # MONOTONE 3-SAT as a decision problem
 
-**MONOTONE 3-SAT as a decision problem.** The decision problem MONOTONE 3-SAT accepts a
+The decision problem MONOTONE 3-SAT accepts a
 bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a pair
 $(n, \varphi)$ of a natural number $n$ and a CNF formula $\varphi$ such that every clause of
 $\varphi$ is a list of exactly three literals (repetitions allowed), every literal of $\varphi$

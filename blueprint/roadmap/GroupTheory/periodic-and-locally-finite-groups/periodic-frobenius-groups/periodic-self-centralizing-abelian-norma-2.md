@@ -1,6 +1,6 @@
 # Lytkina–Mazurov theorem on periodic Frobenius groups
 
-**Lytkina–Mazurov theorem on periodic Frobenius groups.** Let $G$ be a group in which every element
+Let $G$ be a group in which every element
 has finite order, and let $A$ be a normal abelian subgroup of $G$ that is neither trivial nor all of
 $G$ and such that for every $a \in A$ with $a \ne 1$ the centralizer $C_G(a)$ of $a$ in $G$ is
 contained in $A$. Then there are subgroups $F$ and $H$ of $G$ such that $G$ is a Frobenius group

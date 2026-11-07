@@ -1,6 +1,6 @@
 # Topologically slice (smooth knot version)
 
-**Topologically slice (smooth knot version).** Write points of $\mathbb{R}^3 \times \mathbb{R}$
+Write points of $\mathbb{R}^3 \times \mathbb{R}$
 as $(x, s)$ with $x = (x_1, x_2, x_3)$. Let $H = \{(x, s) : s \ge 0\}$ be the closed upper
 half-space, $P = \{(x, s) : x_2 = x_3 = 0\}$ the model plane and $P_+ = P \cap H$ the model
 half-plane, and let $D^2 = \{(a, b) \in \mathbb{R}^2 : a^2 + b^2 \le 1\}$ and

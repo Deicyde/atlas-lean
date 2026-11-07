@@ -1,6 +1,6 @@
 # Number output of the clique reduction machine
 
-**Number output of the clique reduction machine.** Let $m$ be a mode of the machine and $C$
+Let $m$ be a mode of the machine and $C$
 its final counter stack ($A$ for the flip mode, $D$ for the vertex-cover mode). Let $n, c$ be
 natural numbers, $u$ a symbol of the alphabet of $C$, and $S$ stack contents in which the stack
 $B$ holds $U^n$ ($n$ copies of the unit symbol $U$) and $C$ holds $u^c$. Then for every Boolean

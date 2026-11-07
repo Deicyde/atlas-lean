@@ -1,6 +1,6 @@
 # Plancherel formula on a finite abelian group
 
-**Plancherel formula on a finite abelian group.** Let $G$ be a finite abelian group with $|G|$
+Let $G$ be a finite abelian group with $|G|$
 elements, let $f, g : G \to \mathbb{C}$, and write $\hat h(\psi) = \sum_{x \in G} \psi(x) h(x)$
 for the discrete Fourier transform of $h : G \to \mathbb{C}$ at an additive character $\psi$ of
 $G$ with values in $\mathbb{C}$. Then $\sum_{x \in G} \overline{f(x)} \, g(x)$ equals

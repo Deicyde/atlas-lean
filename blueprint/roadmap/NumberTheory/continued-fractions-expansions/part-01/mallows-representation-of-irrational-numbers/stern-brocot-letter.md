@@ -1,6 +1,6 @@
 # Stern–Brocot letters
 
-**Stern–Brocot letters.** The alphabet of Stern–Brocot representations: the two letters
+The alphabet of Stern–Brocot representations: the two letters
 $L$ ("left") and $R$ ("right").
 
 ## Sources

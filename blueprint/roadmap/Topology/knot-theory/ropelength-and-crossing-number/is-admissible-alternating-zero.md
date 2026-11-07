@@ -1,4 +1,4 @@
 # Zero is an admissible alternating constant
 
-**Zero is an admissible alternating constant.** The constant
+The constant
 $c = 0$ is admissible for the tight alternating knot inequality.

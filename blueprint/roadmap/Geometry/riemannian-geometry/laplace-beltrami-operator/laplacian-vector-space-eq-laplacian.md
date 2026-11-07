@@ -1,6 +1,6 @@
 # The Laplacian on a vector space is the flat Laplacian at twice-differentiable points
 
-**The Laplacian on a vector space is the flat Laplacian at twice-differentiable points.** Let
+Let
 $F$ be a finite-dimensional real inner product space with its standard Riemannian metric, let
 $f : F \to \mathbb{R}$ and $x \in F$, and let $Df$ denote the Fréchet derivative of $f$, taken to
 be $0$ at points where $f$ is not differentiable. Suppose $Df$ is differentiable at $x$, with

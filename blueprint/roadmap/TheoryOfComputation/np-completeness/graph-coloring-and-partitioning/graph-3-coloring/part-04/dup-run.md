@@ -1,6 +1,6 @@
 # Copying a counter through $W$
 
-**Copying a counter through $W$.** Let $s$ be a counter, $c$ a stack different from the stack
+Let $s$ be a counter, $c$ a stack different from the stack
 of $s$ and from $W$, and $x$ a symbol of $c$. Suppose the instruction at label $l_1$ pops the
 stack of $s$ until it is empty, pushing $x$ onto $c$ and the unit symbol onto $W$ for each popped
 symbol, then goes to $l_2$; and the instruction at $l_2$ pops $W$ until it is empty, pushing the

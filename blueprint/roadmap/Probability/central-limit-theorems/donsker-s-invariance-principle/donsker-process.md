@@ -1,6 +1,6 @@
 # Polygonal partial-sum process
 
-**Polygonal partial-sum process.** Let $X_0, X_1, \dots$ be real-valued functions on a set
+Let $X_0, X_1, \dots$ be real-valued functions on a set
 $\Omega$. For $n \in \mathbb{N}$ and $\omega \in \Omega$, $S_n(\omega)$ is the element of the space
 $C([0,1], \mathbb{R})$ of continuous real functions on $[0,1]$ defined by $S_0(\omega) = 0$ and,
 for $n \ge 1$ and $t \in [0,1]$,

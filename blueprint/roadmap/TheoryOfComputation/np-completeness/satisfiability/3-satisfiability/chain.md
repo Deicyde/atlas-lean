@@ -1,6 +1,6 @@
 # The chain of clauses replacing one clause
 
-**The chain of clauses replacing one clause.** Write $y_v$ for the variable with index
+Write $y_v$ for the variable with index
 $2^{v+1} + 1$ (the $v$-th fresh variable) and $\ell'$ for a literal $\ell$ whose variable index $n$
 is replaced by $2n$, with the same polarity. Given a clause $C$ and a natural number $u$, the
 empty clause is replaced by the empty clause alone, a one-literal clause $\ell_1$ by the clause

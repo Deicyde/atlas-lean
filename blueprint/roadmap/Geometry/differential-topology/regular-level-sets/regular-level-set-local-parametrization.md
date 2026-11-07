@@ -1,6 +1,6 @@
 # Regular level sets are locally parametrized by immersions
 
-**Regular level sets are locally parametrized by immersions.** Let
+Let
 $f \colon \mathbb{R}^{k+m} \to \mathbb{R}^m$ be a $C^1$ map and let $x_0 \in \mathbb{R}^{k+m}$ be a
 point at which the derivative $Df(x_0)$ is surjective. Then there exist an open set
 $U \subseteq \mathbb{R}^k$, a point $u_0 \in U$, a map $\varphi \colon \mathbb{R}^k \to

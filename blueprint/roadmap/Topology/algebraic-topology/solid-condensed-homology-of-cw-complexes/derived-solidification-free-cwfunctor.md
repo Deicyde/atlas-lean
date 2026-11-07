@@ -1,6 +1,6 @@
 # Derived solidification on CW complexes
 
-**Derived solidification on CW complexes.** A functor from the category of topological spaces
+A functor from the category of topological spaces
 admitting a CW complex structure, with all continuous maps as morphisms, to the derived category
 of light condensed abelian groups.
 

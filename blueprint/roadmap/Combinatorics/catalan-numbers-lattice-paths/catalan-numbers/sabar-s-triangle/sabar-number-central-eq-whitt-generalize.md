@@ -1,6 +1,6 @@
 # Central entries of Sabar's triangle and Whitt's numbers
 
-**Central entries of Sabar's triangle and Whitt's numbers.** Let $C(2, m)$ denote Whitt's
+Let $C(2, m)$ denote Whitt's
 generalized Catalan numbers at $\alpha = 2$. For every natural number $n \ge 1$, the central
 entry $s(2n, n)$ of Sabar's triangle satisfies
 

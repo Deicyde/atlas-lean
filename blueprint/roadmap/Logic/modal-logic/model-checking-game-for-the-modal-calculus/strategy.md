@@ -1,6 +1,6 @@
 # Verifier strategy
 
-**Verifier strategy.** A Verifier strategy for the model-checking game on a Kripke model $M$
+A Verifier strategy for the model-checking game on a Kripke model $M$
 is a map $\sigma$ from game positions to game positions such that, at every Verifier-owned
 position $p$ from which some move exists, there is a move from $p$ to $\sigma(p)$.
 

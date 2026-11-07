@@ -1,6 +1,6 @@
 # A 2-coloring with no monochromatic 4-term even-Fibonacci diffsequence
 
-**A 2-coloring with no monochromatic 4-term even-Fibonacci diffsequence.** Let $F_m$ denote
+Let $F_m$ denote
 the $m$-th Fibonacci number, with $F_0 = 0$ and $F_1 = 1$, and let
 $E = \{F_{3n+3} : n \ge 0\} = \{2, 8, 34, \dots\}$ be the even Fibonacci set. There is a coloring
 of the positive integers with $2$ colors under which no four positive integers

@@ -1,6 +1,6 @@
 # Contribution of primes with $p^2 > 2100n$
 
-**Contribution of primes with $p^2 > 2100n$.** Write $v_p(m)$ for the exponent of $p$ in $m$
+Write $v_p(m)$ for the exponent of $p$ in $m$
 and $\mu$ for the Möbius function, and set
 $\nu_p(n) = \sum_{d \mid 210} \mu(d)\bigl(v_p((2100n/d)!) - v_p((1890n/d)!) -
 v_p((210n/d)!)\bigr)$. For every natural number $n \ge 1$, the sum of $\nu_p(n) \log p$ over the

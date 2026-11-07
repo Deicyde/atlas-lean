@@ -1,6 +1,6 @@
 # Lower bound for four-cycle-free subgraphs of the eight-dimensional hypercube
 
-**Lower bound for four-cycle-free subgraphs of the eight-dimensional hypercube.** Let $Q_8$
+Let $Q_8$
 be the $8$-dimensional hypercube and $C_4$ the cycle on four vertices. The largest number
 $\mathrm{ex}(Q_8, C_4)$ of edges of a subgraph of $Q_8$ that contains no copy of $C_4$ is at
 least $682$.

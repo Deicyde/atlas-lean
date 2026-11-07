@@ -1,6 +1,6 @@
 # Generalized central binomial polynomial identity, alternating form
 
-**Generalized central binomial polynomial identity, alternating form.** Let $\binom{a}{b}$
+Let $\binom{a}{b}$
 denote the generalized binomial coefficient $\Gamma(a+1)/(\Gamma(b+1)\Gamma(a-b+1))$. For every
 natural number $n$, every real $v > -1$ and every complex $x$,
 

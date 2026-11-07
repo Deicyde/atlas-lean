@@ -1,6 +1,6 @@
 # Monotone Boolean functions are unate
 
-**Monotone Boolean functions are unate.** Every Boolean function $f$ on $n$ variables that
+Every Boolean function $f$ on $n$ variables that
 is monotone, for the coordinatewise order on $\{0,1\}^n$ with $0 \le 1$, is unate.
 
 ## Sources

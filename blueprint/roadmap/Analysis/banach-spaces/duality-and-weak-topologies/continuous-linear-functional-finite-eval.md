@@ -1,6 +1,6 @@
 # Continuous linear functionals on the space of all real functions
 
-**Continuous linear functionals on the space of all real functions.** Let $H$ be a set and give
+Let $H$ be a set and give
 the space $\mathbb{R}^H$ of all real-valued functions on $H$ the topology of pointwise
 convergence. Then for every continuous linear functional $f \colon \mathbb{R}^H \to \mathbb{R}$
 there are a natural number $n$, points $t_1, \dots, t_n \in H$ and real numbers

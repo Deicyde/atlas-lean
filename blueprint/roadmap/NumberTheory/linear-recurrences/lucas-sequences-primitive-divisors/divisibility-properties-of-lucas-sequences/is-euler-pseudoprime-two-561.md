@@ -1,6 +1,6 @@
 # 561 is an Euler pseudoprime to the base 2
 
-**561 is an Euler pseudoprime to the base 2.** The composite number $561 = 3 \cdot 11 \cdot 17$
+The composite number $561 = 3 \cdot 11 \cdot 17$
 is an Euler pseudoprime to the base $2$.
 
 ## Sources

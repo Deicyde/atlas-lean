@@ -1,6 +1,6 @@
 # Difference of the Fibonacci 3-step and 2-step numbers as a convolution
 
-**Difference of the Fibonacci 3-step and 2-step numbers as a convolution.** Let $F_j$ and
+Let $F_j$ and
 $T_j$ be the Fibonacci $2$-step and $3$-step numbers, where the Fibonacci $k$-step numbers start
 $0, 1$ and each later term is the sum of the $k$ terms before it (terms of negative index being
 $0$). For every natural number $n \ge 1$,

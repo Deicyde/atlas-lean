@@ -1,6 +1,6 @@
 # The Erdős–Faudree triangle conjecture is false
 
-**The Erdős–Faudree triangle conjecture is false.** It is not true that for every real
+It is not true that for every real
 $\varepsilon > 0$ and all sufficiently large $n$, every simple graph on the vertex set
 $\{0, \dots, n-1\}$ with more than $n^2/4$ edges contains a triangle $T$ and a set of more than
 $(1/2 - \varepsilon)n$ vertices, each adjacent to two distinct vertices of $T$.

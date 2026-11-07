@@ -1,6 +1,6 @@
 # McMullen's question on Jordan boundaries of cubic parameter components
 
-**McMullen's question on Jordan boundaries of cubic parameter components.** Let
+Let
 $f_\lambda(z) = \lambda z^2 + z^3$ for $\lambda \in \mathbb{C}$. The statement is that for every
 parameter component $U$, that is, every connected component of the set of $\lambda$ for which
 every critical point of $f_\lambda$ lies in the immediate basin of zero of $f_\lambda$, the

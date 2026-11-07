@@ -1,6 +1,6 @@
 # No three non-isomorphic finite non-abelian simple groups are isospectral
 
-**No three non-isomorphic finite non-abelian simple groups are isospectral.** There do not exist
+There do not exist
 three pairwise non-isomorphic finite non-abelian simple groups $G_1, G_2, G_3$ with
 $\omega(G_1) = \omega(G_2) = \omega(G_3)$, where the spectrum $\omega(G)$ of a group $G$ is the
 set of orders of its elements.

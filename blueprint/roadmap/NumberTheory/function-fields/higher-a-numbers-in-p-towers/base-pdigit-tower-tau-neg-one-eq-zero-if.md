@@ -1,6 +1,6 @@
 # Digits of $\tau i$ next to the radix point
 
-**Digits of $\tau i$ next to the radix point.** Let $p$ be a prime, $d$ a divisor of $p - 1$
+Let $p$ be a prime, $d$ a divisor of $p - 1$
 and $\tau = (p + 1)/d$, and write $[p^j](x)$ for the $j$-th base-$p$ digit of a rational number
 $x$. For every natural number $i$, $[p^{-1}](\tau i) = [p^0](\tau i)$ if and only if $p$ divides
 $i$.

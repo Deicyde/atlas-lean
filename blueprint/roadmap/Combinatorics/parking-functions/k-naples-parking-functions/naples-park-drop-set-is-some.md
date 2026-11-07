@@ -1,6 +1,6 @@
 # Remaining cars still park after moving a car to an earlier spot
 
-**Remaining cars still park after moving a car to an earlier spot.** Let $(a_1, \dots, a_n)$
+Let $(a_1, \dots, a_n)$
 be a parking preference with $1 \le a_j \le n$ for every $j$, with which all $n$ cars, arriving in
 order into an empty lot, park under the $k$-Naples rule on the spots $1, \dots, n$, car $j$ in
 spot $d_j$. Let $1 \le l \le i \le n$, and let $q$ be a spot with $1 \le q < d_l$ and $q \ne d_j$

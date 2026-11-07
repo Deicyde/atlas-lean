@@ -1,6 +1,6 @@
 # Integral part of a polynomial continued fraction
 
-**Integral part of a polynomial continued fraction.** Let $F$ be a field, let $n \in \mathbb N$,
+Let $F$ be a field, let $n \in \mathbb N$,
 and let $a_0, a_1, \dots, a_n \in F[X]$. The integral part (head term) of the continued fraction
 $[a_0, a_1, \dots, a_n]$ over $F(X)$ is $a_0$.
 

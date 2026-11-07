@@ -1,6 +1,6 @@
 # Decoding one codeword
 
-**Decoding one codeword.** Let $T$ be a Huffman tree and $w$ a bit string, and write $0$ for
+Let $T$ be a Huffman tree and $w$ a bit string, and write $0$ for
 the bit false and $1$ for the bit true. If $T$ is a single leaf labelled $s$, decoding one
 codeword from $w$ returns $s$ together with the rest of $w$ when $w$ starts with $0$, and fails
 otherwise. If $T$ is a fork with left subtree $L$ and right subtree $R$, it fails when $w$ is

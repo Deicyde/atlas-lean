@@ -1,6 +1,6 @@
 # An $\alpha$-mixing bound for the block variations
 
-**An $\alpha$-mixing bound for the block variations.** Let $\mu$ be a probability measure on
+Let $\mu$ be a probability measure on
 the digit sequences $x : \mathbb{N} \to \{0, 1\}$ that gives the complement of the
 Zeckendorf-adic integers measure zero and is preserved by the odometer $T$. Let $r \ge 1$, let
 $\rho(r)$ be the number of blocks of $r$ and $r[i]$ its block prefixes, and for

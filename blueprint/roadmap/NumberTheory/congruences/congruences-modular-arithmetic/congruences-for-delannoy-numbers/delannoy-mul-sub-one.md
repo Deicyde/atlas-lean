@@ -1,6 +1,6 @@
 # Delannoy triangle entry $T(np-1, p-1; 1)$ modulo $p^3$
 
-**Delannoy triangle entry $T(np-1, p-1; 1)$ modulo $p^3$.** Let $p \ge 5$ be a prime and
+Let $p \ge 5$ be a prime and
 $n \ge 1$ a natural number, let $q_p(2) = (2^{p-1} - 1)/p$ be the Fermat quotient of $2$, and
 let $T(a, b; 1)$ denote the entry of the ordinary Riordan Pascal-like triangle with $r = 1$
 (the Delannoy triangle). Then

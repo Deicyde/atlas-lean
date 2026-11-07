@@ -1,6 +1,6 @@
 # Leftmost carrying does not move the improper boundary left or raise the weight
 
-**Leftmost carrying does not move the improper boundary left or raise the weight.** Let $w$ be
+Let $w$ be
 a word of natural-number digits, written most significant digit first, with some digit $\ge 2$.
 Suppose leftmost carrying applied to the padded word $0w$ gives a word $u$ (of the same length as
 $0w$) that still has a digit $\ge 2$. Then the position of the leftmost digit $\ge 2$ in $u$ is at

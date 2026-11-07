@@ -1,6 +1,6 @@
 # Generalized Markov triple
 
-**Generalized Markov triple.** For a natural number $k$, a $k$-generalized Markov triple
+For a natural number $k$, a $k$-generalized Markov triple
 is a triple $(a, b, c)$ of positive integers satisfying the $k$-generalized Markov equation
 $\mathrm{GME}(k)$:
 

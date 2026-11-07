@@ -1,6 +1,6 @@
 # Greedy cut property of Kruskal's scan
 
-**Greedy cut property of Kruskal's scan.** Let $G$ be an input graph on the vertices
+Let $G$ be an input graph on the vertices
 $\{0, \dots, n-1\}$, give each valid edge with weight $w$ and input ordinal $o$ the key
 $(w, o)$, and compare keys lexicographically. The graph $G$ has the greedy cut property when
 the following holds for every way of splitting the valid edges of $G$, sorted by key, into an

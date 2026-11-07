@@ -1,6 +1,6 @@
 # Phases are maximal
 
-**Phases are maximal.** Suppose the partner array describes a matching and $d$ is the earliest
+Suppose the partner array describes a matching and $d$ is the earliest
 round such that round $d + 1$ of the alternating breadth-first search reaches an unmatched right
 vertex. Then for every $k$, every augmenting path $Q$ at level $k$ with exactly $d + 1$ pairs
 shares a vertex with some path $P$ of the phase: some pair of $Q$ has its left vertex among the

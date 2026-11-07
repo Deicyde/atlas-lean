@@ -1,6 +1,6 @@
 # Daugavet's theorem for compact operators
 
-**Daugavet's theorem for compact operators.** Let $C[0,1]$ be the real Banach space of continuous
+Let $C[0,1]$ be the real Banach space of continuous
 functions $[0,1] \to \mathbb{R}$ with the supremum norm, and let $I$ be the identity operator on
 it. Every compact bounded linear operator $T : C[0,1] \to C[0,1]$ satisfies
 $\|I + T\| = 1 + \|T\|$, where the norms are operator norms.

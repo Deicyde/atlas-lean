@@ -1,6 +1,6 @@
 # Linear recurrence of combinations of constant terms modulo $p^a$
 
-**Linear recurrence of combinations of constant terms modulo $p^a$.** Let $p$ be a prime,
+Let $p$ be a prime,
 let $a \ge 1$, let $P, Q_1, \dots, Q_\ell$ be Laurent polynomials with integer coefficients in
 $r$ variables, let $k_1, \dots, k_\ell \in \mathbb{N}$, and let
 $F \colon (\mathbb{Z}/p^a\mathbb{Z})^\ell \to X$ be a map to a set $X$. Write

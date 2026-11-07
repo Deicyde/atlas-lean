@@ -1,6 +1,6 @@
 # Greatest common unitary divisor with zero on the left
 
-**Greatest common unitary divisor with zero on the left.** For every natural number $b$, the
+For every natural number $b$, the
 greatest common unitary divisor satisfies $\gcd_1(0, b) = 0$, since $0$ has no unitary divisors.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Congruent elementary symmetric functions give deep power-sum congruences
 
-**Congruent elementary symmetric functions give deep power-sum congruences.** Let $p$ be a
+Let $p$ be a
 prime and let $A$ be a commutative ring without additive torsion in which every natural number
 not divisible by $p$ is a unit (a torsion-free $\mathbb{Z}_{(p)}$-algebra). Let
 $\mathfrak{a}$ be a divided-power ideal of $A$, let $P, Q \in A[X]$ be monic and let $N \ge 1$;

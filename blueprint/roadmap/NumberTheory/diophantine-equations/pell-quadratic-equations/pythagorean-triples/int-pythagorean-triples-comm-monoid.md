@@ -1,6 +1,6 @@
 # Integral Pythagorean triples form a commutative monoid
 
-**Integral Pythagorean triples form a commutative monoid.** Let $M$ be the set of integer
+Let $M$ be the set of integer
 triples $(a, b, c)$ with $a^2 + b^2 = c^2$, let $N$ be the set of triples in $M$ whose three
 entries are nonnegative, and let $\star$ be Amato's product of triples. Then the product of two
 triples in $M$ lies in $M$, $\star$ is associative and commutative on $M$, and

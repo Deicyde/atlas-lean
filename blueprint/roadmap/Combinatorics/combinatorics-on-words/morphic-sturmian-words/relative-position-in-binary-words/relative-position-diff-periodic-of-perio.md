@@ -1,6 +1,6 @@
 # Periodicity of the relative position differences
 
-**Periodicity of the relative position differences.** Let $w = w_0 w_1 w_2 \cdots$ be an
+Let $w = w_0 w_1 w_2 \cdots$ be an
 infinite word over $\{a, b\}$ in which both letters occur infinitely often, let $p_a(n)$ and
 $p_b(n)$ be the positions of the $n$-th $a$ and the $n$-th $b$ in $w$, let
 $r(n) = p_b(n) - p_a(n)$, and let $\Delta r(n) = r(n + 1) - r(n)$. If $w$ is purely periodic

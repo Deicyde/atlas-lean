@@ -1,6 +1,6 @@
 # Lower bound for capacity-two schedules
 
-**Lower bound for capacity-two schedules.** Let $n \ge 3$ and let $T(n)$ be the optimal
+Let $n \ge 3$ and let $T(n)$ be the optimal
 crossing time of the $n$ people $1, \dots, n$ (person $i$ crossing in time $i$) on a bridge of
 capacity $2$. Let $\sigma$ be a bridge schedule of capacity $2$ for these people in which person
 $1$ takes part in exactly $a$ forward moves, exactly $m$ returns carry two people and exactly $s$

@@ -1,6 +1,6 @@
 # The convergents $\alpha_k$ in terms of the integers $u_k$
 
-**The convergents $\alpha_k$ in terms of the integers $u_k$.** Let $\alpha_k$ be the
+Let $\alpha_k$ be the
 Kim–Stolarsky convergents, with $\alpha_1 = 1$ and
 $\alpha_{k+1} = (15 + 7\alpha_k)/(13 + 6\alpha_k)$ for $k \ge 1$, and let $u_k$ be the
 coefficient of $x^{k-1}$ in the power series expansion of

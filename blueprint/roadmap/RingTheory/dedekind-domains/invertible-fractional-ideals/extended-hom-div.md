@@ -1,6 +1,6 @@
 # Over a Noetherian domain, extension to a localization commutes with division
 
-**Over a Noetherian domain, extension to a localization commutes with division.** Let $A$ be
+Let $A$ be
 a Noetherian integral domain, $B$ an integral domain that is a torsion-free $A$-algebra, and $K$ a
 field that is a fraction field of both $A$ and $B$, compatibly with $A \to B \to K$. Let $S$ be a
 submonoid of $A$ such that $B$ is the localization of $A$ at $S$. Let $I$ and $J$ be fractional

@@ -1,6 +1,6 @@
 # Remoteness of exact slow k-NIM from a list of piles
 
-**Remoteness of exact slow k-NIM from a list of piles.** For a list $(x_0, \dots, x_{n-1})$
+For a list $(x_0, \dots, x_{n-1})$
 of natural numbers of length $n$, the value is Smith's remoteness of the position
 $(x_0, \dots, x_{n-1})$ of Slow$A$-Nim on $n$ stacks with $A = \{n - 1\}$, where $0 - 1 = 0$. For
 $n = k + 1$ this game is exact slow $k$-NIM $\mathrm{NIM}(k + 1, k)$, so $k$ is part of the input;

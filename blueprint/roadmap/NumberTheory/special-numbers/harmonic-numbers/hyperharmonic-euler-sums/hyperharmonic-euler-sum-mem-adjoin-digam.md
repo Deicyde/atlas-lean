@@ -1,6 +1,6 @@
 # Polygamma structure of hyperharmonic Euler sums
 
-**Polygamma structure of hyperharmonic Euler sums.** Let $k \ge 0$, $r$ and $p$ be integers
+Let $k \ge 0$, $r$ and $p$ be integers
 with $1 \le r \le p$, and let $a \in \mathbb{C} \setminus \mathbb{Z}$. Write $H_n^{[r]}(k)$ for
 the generalized hyperharmonic number. Then the series
 $S(k, r; p + 1; a) = \sum_{n \ge k} H_n^{[r]}(k) / (n + a)^{p+1}$ converges absolutely, and its

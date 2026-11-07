@@ -1,6 +1,6 @@
 # The coded run simulates the machine's run
 
-**The coded run simulates the machine's run.** Let $o$ be either no configuration or a
+Let $o$ be either no configuration or a
 configuration of a finite multi-stack machine all of whose stack symbols are relevant. Let
 running one step send a running configuration to its successor, and a halted configuration or no
 configuration to no configuration. Then for every $j$, applying the coded step on optional

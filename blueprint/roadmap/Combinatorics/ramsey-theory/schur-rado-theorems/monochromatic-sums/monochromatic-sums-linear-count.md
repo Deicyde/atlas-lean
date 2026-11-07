@@ -1,6 +1,6 @@
 # Erdős Problem 484: linearly many monochromatic sums
 
-**Erdős Problem 484: linearly many monochromatic sums.** This is the statement that there is a
+This is the statement that there is a
 real constant $c > 0$ such that for every integer $k \ge 1$ there is an $N_0 \in \mathbb{N}$ with
 the following property: for every $N \ge N_0$ and every colouring
 $f : \mathbb{N} \to \{0, \dots, k-1\}$, at least $cN$ of the integers $n \in \{1, \dots, N\}$ can

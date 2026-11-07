@@ -1,6 +1,6 @@
 # AVL tree deletion
 
-**AVL tree deletion.** Let $\alpha$ be a linearly ordered type and $x \in \alpha$. Deleting $x$
+Let $\alpha$ be a linearly ordered type and $x \in \alpha$. Deleting $x$
 from a tree with cached heights is defined by recursion on the tree, where $\mathrm{balance}$
 denotes the AVL rebalancing function. The empty tree stays empty. For a node with left subtree
 $l$, key $k$ and right subtree $r$: if $x < k$, the result is $\mathrm{balance}(l', k, r)$, where

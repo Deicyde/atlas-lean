@@ -1,6 +1,6 @@
 # Opial's inequality with one boundary condition
 
-**Opial's inequality with one boundary condition.** Let $\alpha \le \beta$ be real numbers and
+Let $\alpha \le \beta$ be real numbers and
 let $f : \mathbb{R} \to \mathbb{R}$ be continuously differentiable on $[\alpha, \beta]$ with
 $f(\alpha) = 0$. Then
 

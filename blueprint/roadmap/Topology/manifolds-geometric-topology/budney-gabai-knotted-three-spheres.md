@@ -1,6 +1,6 @@
 # Budney–Gabai knotted three-spheres in $S^1 \times S^3$
 
-**Budney–Gabai knotted three-spheres in $S^1 \times S^3$.** Let $S^1 \subset \mathbb{R}^2$ and
+Let $S^1 \subset \mathbb{R}^2$ and
 $S^3 \subset \mathbb{R}^4$ be the unit spheres, and fix a point $x_0 \in S^1$. There is a sequence
 $e_0, e_1, e_2, \dots$ of smooth embeddings $S^3 \to S^1 \times S^3$ such that the complement of
 the image of each $e_n$ is connected, each $e_n$ is homotopic to the standard cross-section

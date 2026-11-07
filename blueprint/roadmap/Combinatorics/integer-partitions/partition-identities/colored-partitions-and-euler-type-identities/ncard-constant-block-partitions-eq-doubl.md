@@ -1,6 +1,6 @@
 # Constant-block partitions and double compositions
 
-**Constant-block partitions and double compositions.** For $n \ge 0$, count the pairs
+For $n \ge 0$, count the pairs
 $(A, P)$ where $A$ is a multiset of $n$ positive integers whose distinct elements are exactly
 $1, \dots, k$ for some $k \ge 0$, and $P$ is a partition of $A$ into constant blocks, that is,
 a multiset of nonempty multisets, each with all its elements equal, whose sum is $A$. The number

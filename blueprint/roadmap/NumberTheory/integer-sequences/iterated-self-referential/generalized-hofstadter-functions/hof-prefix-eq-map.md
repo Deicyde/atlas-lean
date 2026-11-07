@@ -1,6 +1,6 @@
 # The prefix $x_k(0:n)$ letter by letter
 
-**The prefix $x_k[0:n)$ letter by letter.** Let $k$ and $n$ be natural numbers, let $x_k$ be
+Let $k$ and $n$ be natural numbers, let $x_k$ be
 the fixed point of the substitution $\tau_k$ with letters $x_k[0], x_k[1], \dots$, and let
 $x_k[0:n)$ be the word formed by the first $n$ letters of the shortest word $\tau_k^j(k)$ with
 more than $n$ letters. Then $x_k[0:n) = x_k[0]\,x_k[1] \cdots x_k[n-1]$, the empty word when

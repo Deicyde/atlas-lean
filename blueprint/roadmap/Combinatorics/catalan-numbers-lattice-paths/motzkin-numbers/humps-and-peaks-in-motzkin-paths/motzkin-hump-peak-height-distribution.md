@@ -1,6 +1,6 @@
 # Humps and peaks at a given height in Motzkin paths
 
-**Humps and peaks at a given height in Motzkin paths.** Let $n \ge 2$ and $k \ge 1$. A Motzkin
+Let $n \ge 2$ and $k \ge 1$. A Motzkin
 path of length $n$ is a sequence of $n$ steps, each up ($+1$), flat ($0$) or down ($-1$), whose
 partial sums are all nonnegative and whose total is $0$. A hump at height $k$ of such a path is
 a pair of positions $i < j$ such that step $i$ is up, step $j$ is down, every step strictly

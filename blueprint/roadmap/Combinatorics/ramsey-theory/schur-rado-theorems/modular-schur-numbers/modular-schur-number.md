@@ -1,6 +1,6 @@
 # Modular Schur number
 
-**Modular Schur number.** For natural numbers $m$, $k$ and $l$, the generalized Schur number
+For natural numbers $m$, $k$ and $l$, the generalized Schur number
 modulo $m$, written $S_m(k, l)$, is the largest natural number $n$ such that $\{1, \dots, n\}$
 admits a partition into $k$ (possibly empty) classes that are each $l$-sum-free modulo $m$; it is
 $0$ when there is no largest such $n$.

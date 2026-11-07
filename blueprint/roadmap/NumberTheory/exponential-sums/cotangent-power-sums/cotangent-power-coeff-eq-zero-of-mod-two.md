@@ -1,6 +1,6 @@
 # Parity of Girstmair's cotangent power coefficients
 
-**Parity of Girstmair's cotangent power coefficients.** For natural numbers $j$ and $r$ with
+For natural numbers $j$ and $r$ with
 $1 \le j \le r$ and $r \not\equiv j \pmod 2$, Girstmair's cotangent power coefficient $c_{r,j}$
 is $0$.
 

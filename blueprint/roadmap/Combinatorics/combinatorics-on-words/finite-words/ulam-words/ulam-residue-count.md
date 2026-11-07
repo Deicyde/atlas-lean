@@ -1,6 +1,6 @@
 # Ulam words in a residue class
 
-**Ulam words in a residue class.** For natural numbers $N$ and $n$ and a residue class
+For natural numbers $N$ and $n$ and a residue class
 $a \in \mathbb{Z}/N\mathbb{Z}$, this is the number of Ulam words $w$ of length $n$ in the letters
 $0$ and $1$ whose binary value $\pi(w)$, read with the most significant letter first, lies in the
 class $a$ modulo $N$. For $N = 0$, $\mathbb{Z}/0\mathbb{Z}$ is $\mathbb{Z}$ and the condition is

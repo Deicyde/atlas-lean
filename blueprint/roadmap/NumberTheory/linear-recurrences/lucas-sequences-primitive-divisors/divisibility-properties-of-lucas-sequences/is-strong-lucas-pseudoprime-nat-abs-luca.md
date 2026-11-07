@@ -1,6 +1,6 @@
 # Strong Lucas pseudoprimes among the terms $|U_m|$
 
-**Strong Lucas pseudoprimes among the terms $|U_m|$.** Let $P, Q$ be integers with
+Let $P, Q$ be integers with
 $\gcd(P, Q) = 1$ such that the Lucas pair $(P, Q)$ is nondegenerate and $D = P^2 - 4Q > 0$, and
 let $U_n$ be the Lucas sequence of $(P, Q)$. Suppose that $P$ is odd, or $P \equiv 0 \pmod 4$ and
 $Q \equiv -1 \pmod 4$, or $P \equiv 2 \pmod 4$ and $Q \equiv -1 \pmod 8$. Let $m \ge 5$ be an

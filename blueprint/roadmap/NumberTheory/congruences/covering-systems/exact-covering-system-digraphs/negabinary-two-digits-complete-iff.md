@@ -1,6 +1,6 @@
 # Negabinary representations with two digits
 
-**Negabinary representations with two digits.** Let $a_1, a_2 \in \mathbb{Z}$ with
+Let $a_1, a_2 \in \mathbb{Z}$ with
 $|a_1 - a_2| \ne 1$. Every integer $z$ can be written as $z = \sum_{j=0}^{k} b_j (-2)^j$ for some
 $k \in \mathbb{N}$ and digits $b_0, \dots, b_k \in \{a_1, a_2\}$ if and only if
 $|a_1 - a_2| = 3^m$ for some integer $m \ge 0$, neither $a_1$ nor $a_2$ is divisible by $3$, and

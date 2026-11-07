@@ -1,6 +1,6 @@
 # Amato's product of triples
 
-**Amato's product of triples.** For a commutative ring $R$, the product of two triples
+For a commutative ring $R$, the product of two triples
 $(x, y, z)$ and $(x', y', z')$ in $R^3$ is
 
 $$(x, y, z) \star (x', y', z') = (x x',\ y z' + z y',\ y z' + z y' + (z - y)(z' - y')).$$

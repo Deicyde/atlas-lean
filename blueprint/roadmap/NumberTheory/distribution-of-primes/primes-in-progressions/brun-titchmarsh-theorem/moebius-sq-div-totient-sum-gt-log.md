@@ -1,6 +1,6 @@
 # Lower bound for the squarefree totient sum
 
-**Lower bound for the squarefree totient sum.** For every natural number $z \ge 6$,
+For every natural number $z \ge 6$,
 $\log(z + 1) + 107/100 < \sum_{r=1}^{z} \mu(r)^2 / \varphi(r)$, where $\mu$ is the Möbius
 function and $\varphi$ is Euler's totient function.
 

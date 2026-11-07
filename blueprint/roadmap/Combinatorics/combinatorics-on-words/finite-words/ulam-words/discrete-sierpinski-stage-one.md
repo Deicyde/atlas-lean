@@ -1,6 +1,6 @@
 # The first stage of the discrete Sierpiński triangle
 
-**The first stage of the discrete Sierpiński triangle.** The stage $S_1$ of the discrete
+The stage $S_1$ of the discrete
 Sierpiński triangle is $\{(2, 1), (3, 1), (3, 2)\}$.
 
 ## Sources

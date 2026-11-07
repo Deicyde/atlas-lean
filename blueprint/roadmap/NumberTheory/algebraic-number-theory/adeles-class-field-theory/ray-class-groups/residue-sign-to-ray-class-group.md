@@ -1,6 +1,6 @@
 # Ray class map on residues and signs
 
-**Ray class map on residues and signs.** Let $\mathfrak m$ be a modulus of a number field
+Let $\mathfrak m$ be a modulus of a number field
 $K$ with finite part $\mathfrak m_0$, let $K_{\mathfrak m}$ be the group of elements of $K^\times$
 whose principal ideal is coprime to $\mathfrak m_0$, and let $K_{\mathfrak m,1}$ be its subgroup
 of elements congruent to $1$ modulo $\mathfrak m_0$ and positive at every real place of

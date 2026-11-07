@@ -1,6 +1,6 @@
 # Polynomial ergodic averages
 
-**Polynomial ergodic averages.** Given a sequence $a : \mathbb{N} \to \mathbb{N}$, a map
+Given a sequence $a : \mathbb{N} \to \mathbb{N}$, a map
 $T : X \to X$, a function $f : X \to \mathbb{R}$, $n \in \mathbb{N}$ and $x \in X$, the $n$-th
 polynomial ergodic average of $f$ at $x$ is
 

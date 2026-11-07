@@ -1,6 +1,6 @@
 # The empty block prefix is zero
 
-**The empty block prefix is zero.** For every natural number $r$, the block prefix $r[0]$,
+For every natural number $r$, the block prefix $r[0]$,
 formed by the first $0$ blocks of the Zeckendorf representation of $r$, equals $0$.
 
 ## Sources

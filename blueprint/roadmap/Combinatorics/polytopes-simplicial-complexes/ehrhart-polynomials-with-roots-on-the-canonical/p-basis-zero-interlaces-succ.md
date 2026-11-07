@@ -1,6 +1,6 @@
 # $p^d_0$ CL-interlaces $p^{d+1}_0$
 
-**$p^d_0$ CL-interlaces $p^{d+1}_0$.** For every natural number $d \ge 1$, the symmetric
+For every natural number $d \ge 1$, the symmetric
 basis polynomial $p^d_0$ CL-interlaces $p^{d+1}_0$.
 
 ## Sources

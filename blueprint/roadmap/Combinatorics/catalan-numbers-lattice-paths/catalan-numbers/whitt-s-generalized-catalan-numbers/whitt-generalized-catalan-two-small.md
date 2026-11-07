@@ -1,6 +1,6 @@
 # First values of Whitt's generalized Catalan numbers with parameter two
 
-**First values of Whitt's generalized Catalan numbers with parameter two.** Whitt's
+Whitt's
 generalized Catalan numbers with parameter $\alpha = 2$ satisfy $C(2, 1) = 1$, $C(2, 2) = 3$,
 $C(2, 3) = 13$ and $C(2, 4) = 67$.
 

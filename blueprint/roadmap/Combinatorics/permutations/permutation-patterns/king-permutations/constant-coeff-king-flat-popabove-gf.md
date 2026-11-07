@@ -1,6 +1,6 @@
 # Constant term of $\bar A_{Q_{j+1}}$
 
-**Constant term of $\bar A_{Q_{j+1}}$.** For every $j \in \{0, 1, 2, 3\}$, the coefficient of
+For every $j \in \{0, 1, 2, 3\}$, the coefficient of
 $x^0$ in the generating function $\bar A_{Q_{j+1}}(x; p, q, s, t)$ of king permutations avoiding
 the flat partially ordered pattern $Q_{j+1}$ is the constant polynomial $1$.
 

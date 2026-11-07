@@ -1,6 +1,6 @@
 # Square-weighted constants of even squares
 
-**Square-weighted constants of even squares.** Let $n \ge 2$ be an even perfect square and let
+Let $n \ge 2$ be an even perfect square and let
 $S(n)$ be the set of nonzero squares in $\mathbb{Z}_n$. Then the $S(n)$-weighted Davenport
 constant of $\mathbb{Z}_n$, with weights the representatives in $\{0, \dots, n - 1\}$ of the
 elements of $S(n)$, equals $4$. Moreover, some positive length $k$ forces every sequence of

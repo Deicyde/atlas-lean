@@ -1,6 +1,6 @@
 # Small solutions of diagonal congruences
 
-**Small solutions of diagonal congruences.** There is a real-valued function $g$ on the natural
+There is a real-valued function $g$ on the natural
 numbers with $g(k) = O(\log \log k / \log k)$ as $k \to \infty$ such that for every $k \ge 2$
 there is a constant $C > 0$ with the following property. Let $n$ satisfy $n \ge 9$ if $k = 2$,
 $n \ge 12$ if $k = 3$, and $n \ge \frac{3}{2} k (\log k + \log \log k + 2 + g(k))$ if $k \ge 4$.

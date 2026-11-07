@@ -1,6 +1,6 @@
 # Derived solidification of free CW complexes computes singular chains
 
-**Derived solidification of free CW complexes computes singular chains.** A natural
+A natural
 isomorphism of functors from the category of spaces admitting a CW structure to the derived
 category of light condensed abelian groups, from the derived solidification functor $F$ to the
 integral singular chain complex functor. Here $F(X)$ is the derived inclusion of the derived

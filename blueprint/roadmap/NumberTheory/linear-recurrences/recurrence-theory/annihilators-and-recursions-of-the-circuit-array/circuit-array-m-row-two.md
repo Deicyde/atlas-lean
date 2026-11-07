@@ -1,6 +1,6 @@
 # Row 2 of the multivariable circuit array
 
-**Row 2 of the multivariable circuit array.** Let $C^M$ be the multivariable circuit array, with
+Let $C^M$ be the multivariable circuit array, with
 values in the field of rational functions over $\mathbb{Q}$ in the variables $X_0, X_1, \dots$.
 For every integer $s \ge 2$,
 

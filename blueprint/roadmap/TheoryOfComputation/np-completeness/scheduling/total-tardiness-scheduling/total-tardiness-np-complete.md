@@ -1,6 +1,6 @@
 # TOTAL TARDINESS is NP-complete
 
-**TOTAL TARDINESS is NP-complete.** The TOTAL TARDINESS decision problem belongs to NP, and
+The TOTAL TARDINESS decision problem belongs to NP, and
 every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

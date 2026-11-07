@@ -1,3 +1,3 @@
 # Product of coordinate weights off one coordinate
 
-**Product of coordinate weights off one coordinate.** The product of the coordinate weights over all coordinates except `e`.
+The product of the coordinate weights over all coordinates except `e`.

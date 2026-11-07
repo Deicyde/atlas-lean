@@ -1,6 +1,6 @@
 # The Fibonacci numbers have degree of accessibility at most $3$
 
-**The Fibonacci numbers have degree of accessibility at most $3$.** The positive Fibonacci set
+The positive Fibonacci set
 $\{1, 2, 3, 5, 8, \dots\}$ is not $r$-accessible for any natural number $r \ge 4$. Moreover, some
 coloring of the positive integers with four colors admits no monochromatic $4$-term
 diffsequence with differences in the positive Fibonacci set: there are no positive integers

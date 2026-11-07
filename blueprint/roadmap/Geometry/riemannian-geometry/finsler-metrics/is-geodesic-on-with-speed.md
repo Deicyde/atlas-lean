@@ -1,6 +1,6 @@
 # Finsler geodesic of given speed on a set of times
 
-**Finsler geodesic of given speed on a set of times.** Let $F$ be a Finsler metric on a
+Let $F$ be a Finsler metric on a
 manifold $M$ with forward distance $d_F$, let $\gamma : \mathbb{R} \to M$ be a curve, let
 $s \subseteq \mathbb{R}$ be a set of times and let $c \ge 0$ be a real number. Then $\gamma$ is a
 geodesic of speed $c$ of $F$ on $s$ if for every $t \in s$ there is $\varepsilon > 0$ such that

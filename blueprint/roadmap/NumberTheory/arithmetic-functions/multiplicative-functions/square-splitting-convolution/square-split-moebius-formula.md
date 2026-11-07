@@ -1,6 +1,6 @@
 # Möbius function of the square-splitting convolution
 
-**Möbius function of the square-splitting convolution.** Let $\star$ be the square-splitting
+Let $\star$ be the square-splitting
 convolution, $\mathbf{1}$ the constant function $1$ on the positive integers, $\varepsilon$ the
 identity element ($\varepsilon(1) = 1$ and $\varepsilon(n) = 0$ for $n \ne 1$), and let $\mu_\star$
 be any complex-valued arithmetic function with $\mathbf{1} \star \mu_\star = \varepsilon$. Then

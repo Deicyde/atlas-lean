@@ -1,6 +1,6 @@
 # Turán's three-value question has a negative answer
 
-**Turán's three-value question has a negative answer.** There is a function
+There is a function
 $f : \mathbb{C} \to \mathbb{C}$, meromorphic on $\mathbb{C}$, such that for every $w \in \mathbb{C}$
 there is a point at which $f - w$ has finite meromorphic order, together with three distinct
 values $w_1, w_2, w_3$ of the Riemann sphere $\mathbb{C} \cup \{\infty\}$ such that for every real

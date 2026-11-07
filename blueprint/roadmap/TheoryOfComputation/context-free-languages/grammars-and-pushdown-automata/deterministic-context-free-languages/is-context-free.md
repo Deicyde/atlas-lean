@@ -1,6 +1,6 @@
 # Deterministic context-free languages are context-free
 
-**Deterministic context-free languages are context-free.** Every deterministic context-free language is context-free: the
+Every deterministic context-free language is context-free: the
 encoded language is accepted by a pushdown automaton, hence
 context-free; intersecting with the regular language of encodings and
 erasing the end marker recovers the original language.

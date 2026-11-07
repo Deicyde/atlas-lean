@@ -1,6 +1,6 @@
 # Identities for the Lucas triangular numbers
 
-**Identities for the Lucas triangular numbers.** Let $(s, t)$ be nondegenerate Lucas
+Let $(s, t)$ be nondegenerate Lucas
 parameters and let $\varphi, \varphi'$ be real numbers with $\varphi + \varphi' = s$ and
 $\varphi\varphi' = -t$; write $\{n\}_{s,t}$ for the Lucas brackets and $\binom{n}{k}_{s,t}$ for
 the Lucasnomial coefficients. Then

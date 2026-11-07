@@ -1,6 +1,6 @@
 # Admissible lucky sets
 
-**Admissible lucky sets.** Let $n$ be a natural number. A finite set $S$ of natural numbers
+Let $n$ be a natural number. A finite set $S$ of natural numbers
 is an $n$-admissible lucky set if $S = \mathrm{Lucky}(w)$ for some Stirling permutation $w$ of
 order $n$, where $\mathrm{Lucky}(w)$ is the set of lucky cars of $w$.
 

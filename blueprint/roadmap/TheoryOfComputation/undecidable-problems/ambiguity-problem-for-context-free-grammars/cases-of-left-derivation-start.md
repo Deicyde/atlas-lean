@@ -1,6 +1,6 @@
 # Leftmost derivations in the ambiguity grammar
 
-**Leftmost derivations in the ambiguity grammar.** Let
+Let
 $P = [(t_0, b_0), \dots, (t_{m-1}, b_{m-1})]$ be a list of dominoes, and let $S$, $A$, $B$ be the
 nonterminals of the ambiguity grammar of $P$. Every leftmost derivation of a word $w$ from $S$ in
 that grammar has one of two forms, for some nonempty sequence $i_1, \dots, i_n$ of indices less

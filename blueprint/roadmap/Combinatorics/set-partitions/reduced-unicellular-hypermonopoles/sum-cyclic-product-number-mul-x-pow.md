@@ -1,6 +1,6 @@
 # Generating polynomial of the cyclic product numbers
 
-**Generating polynomial of the cyclic product numbers.** For every natural number $n$, let
+For every natural number $n$, let
 $H(n, k)$ be the cyclic product numbers, viewed as rational numbers. Then in the polynomial
 ring $\mathbb{Q}[x]$
 

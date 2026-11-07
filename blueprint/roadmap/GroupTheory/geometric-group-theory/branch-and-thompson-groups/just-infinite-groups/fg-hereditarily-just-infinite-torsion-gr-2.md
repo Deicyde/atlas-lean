@@ -1,6 +1,6 @@
 # Finitely generated hereditarily just infinite torsion groups exist
 
-**Finitely generated hereditarily just infinite torsion groups exist.** There is a finitely
+There is a finitely
 generated hereditarily just infinite group $G$ in which every element has finite order.
 
 This answers Kourovka 15.18(a) positively, as recorded in the Kourovka Archive ("Yes, such groups

@@ -1,6 +1,6 @@
 # STEINER TREE is NP-complete
 
-**STEINER TREE is NP-complete.** The decision problem STEINER TREE belongs to NP, and every
+The decision problem STEINER TREE belongs to NP, and every
 decision problem in NP reduces to STEINER TREE by a polynomial-time many-one reduction.
 
 ## Sources

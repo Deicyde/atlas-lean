@@ -1,6 +1,6 @@
 # Hash table with separate chaining
 
-**Hash table with separate chaining.** For a key type $\alpha$, a value type $\beta$ and a hash
+For a key type $\alpha$, a value type $\beta$ and a hash
 function $h : \alpha \to \mathbb{N}$, a hash table with hash function $h$ consists of a positive
 number $m$ of buckets and, for each bucket index $i < m$, a chain stored at bucket $i$: an
 association list of key–value pairs whose keys are pairwise distinct. The structure itself does

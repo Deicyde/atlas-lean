@@ -1,6 +1,6 @@
 # Dead vertices have no escape
 
-**Dead vertices have no escape.** Suppose the partner array describes a matching. Run the
+Suppose the partner array describes a matching. Run the
 search at level $k$ from a right vertex $z$ first reached in round $k + 1$, with a set $U$ of used
 left vertices and an initial set $D$ of dead right vertices, and let $D'$ be the dead set after
 it. Then every right vertex $y$ in $D'$ but not in $D$ has no escape avoiding $U$ and $D'$: if $y$

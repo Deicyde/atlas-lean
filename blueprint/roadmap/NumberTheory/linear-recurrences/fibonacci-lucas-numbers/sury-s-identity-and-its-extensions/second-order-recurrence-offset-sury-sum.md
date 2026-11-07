@@ -1,6 +1,6 @@
 # Offset form of Sury's identity for a second-order recurrence
 
-**Offset form of Sury's identity for a second-order recurrence.** Let $c_1, c_2$ be rational
+Let $c_1, c_2$ be rational
 numbers with $c_2 \neq 0$, and let $(X_n)_{n \in \mathbb{Z}}$ be a sequence of rational numbers
 with $X_{n+2} = c_1 X_{n+1} + c_2 X_n$ for all integers $n$. Let $k$ be an integer with
 $X_k \neq 0$ and $X_{k-1} \neq 0$. Then for every natural number $n$,

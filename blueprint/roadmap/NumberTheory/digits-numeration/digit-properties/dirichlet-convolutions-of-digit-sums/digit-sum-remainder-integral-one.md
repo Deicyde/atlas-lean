@@ -1,6 +1,6 @@
 # The remainder integral vanishes at $1$
 
-**The remainder integral vanishes at $1$.** For every natural number $q$, let $J$ be the
+For every natural number $q$, let $J$ be the
 remainder of the Trollope–Delange formula in base $q$ and $K(x) = \int_1^x J(u) \, du / u^2$.
 Then $K(1) = 0$.
 

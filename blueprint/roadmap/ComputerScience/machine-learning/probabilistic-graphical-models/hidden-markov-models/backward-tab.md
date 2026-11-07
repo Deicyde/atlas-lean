@@ -1,6 +1,6 @@
 # The tabulated backward algorithm
 
-**The tabulated backward algorithm.** For a hidden Markov model $g$ with states
+For a hidden Markov model $g$ with states
 $\{0, \dots, n - 1\}$, transition weights $a$ and emission weights $b$ in a semiring $R$, and an
 observation sequence $x_0, x_1, \dots$, the tables $\beta^{(k)}_t \in R^n$ for $k, t \in \mathbb{N}$
 are defined by recursion on $k$: $\beta^{(0)}_t$ is the all-ones vector, and $\beta^{(k+1)}_t$ is

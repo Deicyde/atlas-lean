@@ -1,6 +1,6 @@
 # Un-normalized stability gauge
 
-**Un-normalized stability gauge.** Let $K \subseteq \mathbb{R}$, let $\mu$, $\rho$ and $n$ be
+Let $K \subseteq \mathbb{R}$, let $\mu$, $\rho$ and $n$ be
 natural numbers, and let $T_u$ denote the layer of $K$ of index $u$. Let $\ell$ be the least
 natural number such that $n / \rho^\ell$ lies in some layer $T_u$ (division by $0$ gives $0$), and
 let $u$ be the least index with $n / \rho^\ell \in T_u$. The un-normalized stability gauge of $n$

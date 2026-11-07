@@ -1,6 +1,6 @@
 # Nonvanishing and binomial count for parts $\equiv \pm a \pmod{d+3}$
 
-**Nonvanishing and binomial count for parts $\equiv \pm a \pmod{d+3}$.** Let $d$, $a$,
+Let $d$, $a$,
 $\alpha$ and $\lambda$ be positive integers with $a < (d + 3)/2$, and let
 $\ell_d^{(a)}(\alpha, \lambda)$ be the number of partitions into parts congruent to $a$ or $-a$
 modulo $d + 3$ with largest part $\alpha$ and exactly $\lambda$ parts. Then

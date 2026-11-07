@@ -1,6 +1,6 @@
 # Least absolute inverse
 
-**Least absolute inverse.** For integers $x$ and $a$ and a natural number $n$, $x$ is the
+For integers $x$ and $a$ and a natural number $n$, $x$ is the
 least absolute inverse of $a$ modulo $n$ when $xa \equiv 1 \pmod{n}$ and $-n < 2x \le n$, that is,
 when $x$ is an inverse of $a$ modulo $n$ in the half-open interval $-n/2 < x \le n/2$.
 

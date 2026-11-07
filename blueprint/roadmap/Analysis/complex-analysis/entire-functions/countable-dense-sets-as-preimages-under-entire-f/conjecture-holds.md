@@ -1,6 +1,6 @@
 # Every countable dense set is a preimage of any other under an entire function
 
-**Every countable dense set is a preimage of any other under an entire function.** For any two
+For any two
 countable dense subsets $A$ and $B$ of $\mathbb{C}$, there is an entire function
 $f : \mathbb{C} \to \mathbb{C}$ such that for every $z \in \mathbb{C}$, $f(z) \in B$ if and only
 if $z \in A$; that is, $f^{-1}(B) = A$.

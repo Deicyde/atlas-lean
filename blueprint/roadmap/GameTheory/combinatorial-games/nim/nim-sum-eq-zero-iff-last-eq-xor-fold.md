@@ -1,6 +1,6 @@
 # Nim-sum zero via the last pile
 
-**Nim-sum zero via the last pile.** For natural numbers $a_1, \dots, a_n$ (the preceding piles)
+For natural numbers $a_1, \dots, a_n$ (the preceding piles)
 and $b$ (the last pile), the nim-sum $a_1 \oplus \cdots \oplus a_n \oplus b$ is $0$ if and only if
 $b = a_1 \oplus \cdots \oplus a_n$, where $\oplus$ is bitwise exclusive or and the nim-sum of no
 piles is $0$.

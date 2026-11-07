@@ -1,6 +1,6 @@
 # Modular Schur numbers modulo 7
 
-**Modular Schur numbers modulo 7.** Let $k$ and $l$ be positive integers and let $S_7(k, l)$
+Let $k$ and $l$ be positive integers and let $S_7(k, l)$
 be the generalized Schur number modulo $7$. If $l \equiv 1 \pmod 7$, then $S_7(k, l) = 0$.
 Otherwise $S_7(k, l) = 1$ if $k = 1$ and $l \ne 3$; $S_7(k, l) = 2$ if $k = 1$ and $l = 3$, or
 $k = 2$ and $l \ge 4$; $S_7(k, l) = 3$ if $k = 2$ and $l \in \{2, 3\}$, or $k = 3$ and $l \ge 5$;

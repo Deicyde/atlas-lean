@@ -1,6 +1,5 @@
 # Linear functionals on doubly stochastic matrices are bounded below at a permutation
 
-**Linear functionals on doubly stochastic matrices are bounded below at a permutation.**
 Let $I$ be a finite set, let $P$ be a doubly stochastic real $I \times I$ matrix (its entries are
 nonnegative and each of its rows and columns sums to $1$), and let $c_{ij} \in \mathbb{R}$ for
 $i, j \in I$. Then there is a permutation $\sigma$ of $I$ with

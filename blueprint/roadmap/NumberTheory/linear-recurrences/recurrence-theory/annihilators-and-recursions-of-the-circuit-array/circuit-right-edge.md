@@ -1,6 +1,6 @@
 # Right-edge function
 
-**Right-edge function.** Let $K$ be a field, let $\Delta(x, y, z) = xy/(x + y + z)$ and
+Let $K$ be a field, let $\Delta(x, y, z) = xy/(x + y + z)$ and
 $Y(a, b, c) = (ab + bc + ca)/a$ be the delta-wye and wye-delta resistance functions, and for an
 upright triangle $t$ write $L_t$, $R_t$, $B_t \in K$ for the values on its left, right and base
 edges. For triangles $t$, $u$, $v$, the right-edge function is

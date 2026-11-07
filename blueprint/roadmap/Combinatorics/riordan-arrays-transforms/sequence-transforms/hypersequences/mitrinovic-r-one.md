@@ -1,6 +1,6 @@
 # Mitrinović's numbers with lower index one
 
-**Mitrinović's numbers with lower index one.** For all complex numbers $a, b$, Mitrinović's
+For all complex numbers $a, b$, Mitrinović's
 numbers satisfy $R^0_1(a, b) = -a$ and $R^1_1(a, b) = 1$.
 
 ## Sources

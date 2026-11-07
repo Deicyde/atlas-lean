@@ -1,6 +1,6 @@
 # Signed count of compositions with parts at least $k$
 
-**Signed count of compositions with parts at least $k$.** Let $k, n \ge 1$. Among the
+Let $k, n \ge 1$. Among the
 compositions of $n + k - 1$ whose parts are all at least $k$, the number with an odd number of
 parts minus the number with an even number of parts equals
 $\sum_{j=0}^{\lfloor (n-1)/k \rfloor} (-1)^j \binom{n-1-j(k-1)}{j}$.

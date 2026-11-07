@@ -1,6 +1,6 @@
 # Truncated logarithmic polynomial
 
-**Truncated logarithmic polynomial.** For a natural number $n$, the truncated logarithmic
+For a natural number $n$, the truncated logarithmic
 polynomial is $F_n(x) = 1 + x + \frac{x^2}{2} + \dots + \frac{x^n}{n} \in \mathbb{Q}[x]$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Riemann–Lebesgue for continuous functions
 
-**Riemann–Lebesgue for continuous functions.** Let $T > 0$ and let $\mu$ be the Haar
+Let $T > 0$ and let $\mu$ be the Haar
 probability measure on the circle $\mathbb{R}/T\mathbb{Z}$. For every continuous function
 $g : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$, the Fourier coefficients
 $\hat g(n) = \int e^{-2\pi i n t / T} g(t)\,d\mu(t)$ tend to $0$ as $|n| \to \infty$, that is,

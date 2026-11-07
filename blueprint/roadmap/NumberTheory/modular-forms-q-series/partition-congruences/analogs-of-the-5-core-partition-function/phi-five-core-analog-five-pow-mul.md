@@ -1,6 +1,6 @@
 # Recurrence for the $\varphi$-analog of the 5-core counts along powers of 5
 
-**Recurrence for the $\varphi$-analog of the 5-core counts along powers of 5.** Let
+Let
 $\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ and let $\bar a_5(n)$ be the coefficient of $q^n$
 in $\varphi(-q^5)^5 / \varphi(-q)$. For every natural number $k \ge 2$ and every natural number
 $n$, $\bar a_5(5^k n) = \frac{5^k - 1}{4}\, \bar a_5(5n) - \frac{5^k - 5}{4}\, \bar a_5(n)$.

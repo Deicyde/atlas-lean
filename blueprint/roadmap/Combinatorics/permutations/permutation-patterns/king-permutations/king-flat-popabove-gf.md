@@ -1,6 +1,6 @@
 # Generating function of king permutations avoiding $Q_{j+1}$
 
-**Generating function of king permutations avoiding $Q_{j+1}$.** For $j \in \{0, 1, 2, 3\}$
+For $j \in \{0, 1, 2, 3\}$
 let $Q_{j+1}$ be the flat partially ordered pattern of length $4$ whose element number $j + 1$
 lies above each of the other three: a permutation $\sigma$ contains $Q_{j+1}$ if there are
 positions $i_0 < i_1 < i_2 < i_3$ with $\sigma(i_m) < \sigma(i_j)$ for every $m \ne j$. A king

@@ -1,6 +1,6 @@
 # Expansion in the Fibonacci fundamental system
 
-**Expansion in the Fibonacci fundamental system.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $k_1, k_2 \in R$ and $p, s \in \mathbb{N}$, and for $1 \le j \le s + p$ let $v^{(j)}$ be the
 solution of the $([k]; p; s)$-Padovan–Perrin recurrence with $v^{(j)}(m) = 1$ if $m + 1 = j$ and
 $v^{(j)}(m) = 0$ otherwise, for $0 \le m < s + p$. Then every solution $v \colon \mathbb{N} \to R$

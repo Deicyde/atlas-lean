@@ -1,6 +1,6 @@
 # Prepending a node to a doubly linked list
 
-**Prepending a node to a doubly linked list.** Let a store assign to each identity below $n$
+Let a store assign to each identity below $n$
 either nothing or a doubly linked list node whose pointers are identities below $n$ or NIL, let
 the head be an identity below $n$ or NIL, and let $x$ be an identity whose store entry is a node,
 where the store entry of the head is also a node when the head is not NIL. The procedure sets the

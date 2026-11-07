@@ -1,6 +1,6 @@
 # Cylinder fixed-tiling count for the identity
 
-**Cylinder fixed-tiling count for the identity.** Let $T$ be a finite set of tile designs,
+Let $T$ be a finite set of tile designs,
 let $n, m \ge 1$, and let $\sigma$ be a permutation of $T$ with $\sigma^1 = 1$, that is, the
 identity. Then the cylinder shift sum of the identity map of $\mathbb{Z}/n \times \mathbb{Z}/m$
 and $\sigma$ equals $\sum_{d \mid n} \varphi(d)\, |T|^{nm/d}$, where $d$ runs over the positive

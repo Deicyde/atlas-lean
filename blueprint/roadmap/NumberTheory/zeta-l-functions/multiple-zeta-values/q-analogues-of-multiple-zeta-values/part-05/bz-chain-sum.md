@@ -1,6 +1,6 @@
 # Weighted chain sums
 
-**Weighted chain sums.** Let $o_1, \dots, o_\ell$ be a word of markers, each either a natural
+Let $o_1, \dots, o_\ell$ be a word of markers, each either a natural
 number (a weighted position) or a blank (an unweighted position); let $W$ be the set of weighted
 positions and $k_t$ the number at position $t \in W$. For natural numbers $M$ and $R$, the
 weighted chain sum of the word at bound $M$ and target $R$ is the natural number

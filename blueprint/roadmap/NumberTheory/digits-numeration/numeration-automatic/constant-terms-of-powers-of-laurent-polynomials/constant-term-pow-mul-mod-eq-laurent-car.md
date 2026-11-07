@@ -1,6 +1,6 @@
 # Rowland–Zeilberger congruence
 
-**Rowland–Zeilberger congruence.** Let $p$ be a prime and let $P$ and $Q$ be Laurent
+Let $p$ be a prime and let $P$ and $Q$ be Laurent
 polynomials in $r$ variables with integer coefficients. Write $\operatorname{ct}[F]$ for the
 constant term of a Laurent polynomial $F$ and $\Lambda_p$ for Kohen's operator, which keeps the
 terms whose exponents are all divisible by $p$ and replaces $x^{pj}$ by $x^j$. Then for all

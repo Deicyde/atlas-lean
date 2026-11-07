@@ -1,6 +1,6 @@
 # Decomposition of finite multiple zeta values into level-$N$ pieces
 
-**Decomposition of finite multiple zeta values into level-$N$ pieces.** Let $N \ge 1$ and
+Let $N \ge 1$ and
 let $k = (k_1, \dots, k_r)$ be a finite sequence of natural numbers (entries equal to $0$ are
 allowed) of weight $w = k_1 + \dots + k_r$. For a prime $p$ put
 $\zeta_p(k) = \sum_{0 < m_1 < \dots < m_r < p} m_1^{-k_1} \cdots m_r^{-k_r}$ in

@@ -1,6 +1,6 @@
 # Norms of β and γ as differences of squares (C₄²)
 
-**Norms of β and γ as differences of squares (C₄²).** Let $a$ be an integer-valued function
+Let $a$ be an integer-valued function
 on $C_4^2 = \mathbb{Z}/4 \times \mathbb{Z}/4$, with associated integers $d_0, \dots, d_7$ and
 Gaussian integers $\beta$, $\gamma$, and write $\beta\bar\beta$, $\gamma\bar\gamma$ for the norms of
 $\beta$ and $\gamma$. Then

@@ -1,6 +1,6 @@
 # Connectivity of $G(-2n + 1, -2n + a)$
 
-**Connectivity of $G(-2n + 1, -2n + a)$.** For an even integer $a$, the underlying undirected
+For an even integer $a$, the underlying undirected
 graph of $G(-2n + 1, -2n + a)$ is connected iff $a = 1 + 3^m$ or $a = 1 - 3^m$ for some
 integer $m \ge 0$.
 

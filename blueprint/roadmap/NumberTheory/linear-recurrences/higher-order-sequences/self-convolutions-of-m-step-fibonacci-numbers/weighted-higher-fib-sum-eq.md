@@ -1,6 +1,6 @@
 # Closed form for weighted sums of an $m$-step Fibonacci sequence
 
-**Closed form for weighted sums of an $m$-step Fibonacci sequence.** Let $m \ge 1$ and let
+Let $m \ge 1$ and let
 $F : \mathbb{Z} \to \mathbb{Q}$ satisfy the $m$-step Fibonacci recurrence
 $F_k = F_{k-1} + \dots + F_{k-m}$ for every integer $k$. For every natural number $n$, every
 integer $l$ and every rational number $q$ with $q^{m+1} - 2q + 1 \ne 0$, the weighted sum

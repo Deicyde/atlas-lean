@@ -1,6 +1,6 @@
 # Prefix value of a digit sequence
 
-**Prefix value of a digit sequence.** For $k \in \mathbb{N}$ and a binary sequence
+For $k \in \mathbb{N}$ and a binary sequence
 $x = (x_i)_{i \in \mathbb{N}}$, the prefix value of order $k$ is the natural number
 $v_k(x) = \sum_{i=2}^{k+1} x_i F_i$, where $F_i$ is the $i$-th Fibonacci number
 ($F_1 = F_2 = 1$). It is the value of the block $x_{k+1} \cdots x_2$ of the $k$ rightmost digits

@@ -1,6 +1,6 @@
 # Death of the unpadded sequence from $1, \dots, N$ for $N = 3$, $4$ or $N \ge 10$
 
-**Death of the unpadded sequence from $1, \dots, N$ for $N = 3$, $4$ or $N \ge 10$.** Let
+Let
 $N$ be a natural number with $N = 3$, $N = 4$ or $N \ge 10$, and let $B_N$ be the sequence with
 initial conditions $B_N(i) = i$ for $1 \le i \le N$, continued without padding by the recurrence
 $B_N(n) = B_N(n - B_N(n-1)) + B_N(n - B_N(n-2)) + B_N(n - B_N(n-3))$. Then $B_N$ dies: there is

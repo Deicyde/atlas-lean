@@ -1,6 +1,6 @@
 # Hook tableaux of order 3 with row difference 1
 
-**Hook tableaux of order 3 with row difference 1.** The number $\mathrm{SYT}_1(2,1;3)$ of
+The number $\mathrm{SYT}_1(2,1;3)$ of
 standard Young tableaux of order $3$ in the $(2,1)$-hook whose first row is longer than its
 second row by exactly $1$ equals $2$.
 

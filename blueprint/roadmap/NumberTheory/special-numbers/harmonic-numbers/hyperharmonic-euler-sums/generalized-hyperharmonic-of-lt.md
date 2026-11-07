@@ -1,6 +1,6 @@
 # Generalized hyperharmonic numbers vanish for $k > n$
 
-**Generalized hyperharmonic numbers vanish for $k > n$.** For all natural numbers $n$ and $k$
+For all natural numbers $n$ and $k$
 with $n < k$ and every complex number $r$, the generalized hyperharmonic number $H_n^{[r]}(k)$
 equals $0$.
 

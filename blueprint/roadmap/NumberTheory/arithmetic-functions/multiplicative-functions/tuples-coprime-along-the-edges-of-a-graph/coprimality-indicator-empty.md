@@ -1,6 +1,6 @@
 # Coprimality indicator of the empty graph
 
-**Coprimality indicator of the empty graph.** Let $k \in \mathbb{N}$ and let $G$ be the graph
+Let $k \in \mathbb{N}$ and let $G$ be the graph
 on $k$ vertices with no edges, and let $\delta_G$ be its coprimality indicator. Then
 $\delta_G(n) = 1$ for every $n = (n_0, \dots, n_{k-1}) \in \mathbb{N}^k$.
 

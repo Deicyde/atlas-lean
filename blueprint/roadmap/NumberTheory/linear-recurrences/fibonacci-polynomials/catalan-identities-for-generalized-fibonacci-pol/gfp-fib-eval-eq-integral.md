@@ -1,6 +1,6 @@
 # Integral representation of Fibonacci-type generalized Fibonacci polynomials
 
-**Integral representation of Fibonacci-type generalized Fibonacci polynomials.** Let $d$ and
+Let $d$ and
 $g$ be polynomials with integer coefficients, and let $F_n$ be the generalized Fibonacci
 polynomials defined by $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = d F_{n+1} + g F_n$. If $x$ is a real
 number with $d(x)^2 + 4 g(x) \ge 0$, then for every $n \ge 2$,

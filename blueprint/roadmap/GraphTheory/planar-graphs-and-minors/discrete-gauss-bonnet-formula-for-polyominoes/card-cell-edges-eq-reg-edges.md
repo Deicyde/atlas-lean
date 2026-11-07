@@ -1,3 +1,3 @@
 # Agreement of the two edge counts of a cell complex
 
-**Agreement of the two edge counts of a cell complex.** The two edge counts of a cell complex agree.
+The two edge counts of a cell complex agree.

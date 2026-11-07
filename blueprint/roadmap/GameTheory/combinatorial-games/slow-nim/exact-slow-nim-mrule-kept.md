@@ -1,6 +1,6 @@
 # Pile kept by the M-rule
 
-**Pile kept by the M-rule.** For a position $x \in \mathbb{N}^{n+1}$ with piles indexed by
+For a position $x \in \mathbb{N}^{n+1}$ with piles indexed by
 $0, \dots, n$: if some entry of $x$ is even, the kept pile is the least index $i$ such that $x_i$
 is even and $x_i \le x_j$ for every $j$ with $x_j$ even; otherwise it is the least index $i$
 such that $x_j \le x_i$ for every $j$.

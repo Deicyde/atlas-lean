@@ -1,6 +1,6 @@
 # The path metric on a partition into sides
 
-**The path metric on a partition into sides.** Let `S` partition the taxa of a binary
+Let `S` partition the taxa of a binary
 phylogenetic `X`-tree `(G, ι)` with positive edge lengths `w` and path-length metric `d` into
 sides of edges. Then there is a system of splits `A e` (`e : E`) of the set of clusters with
 positive weights `w' e`, closed under complement, pairwise compatible, binary, and containing

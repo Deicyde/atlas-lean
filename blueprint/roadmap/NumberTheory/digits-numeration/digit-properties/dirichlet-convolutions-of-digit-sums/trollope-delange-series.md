@@ -1,6 +1,6 @@
 # Delange's series
 
-**Delange's series.** For a natural number $q$, let $g$ be Delange's function in base $q$.
+For a natural number $q$, let $g$ be Delange's function in base $q$.
 Delange's series in base $q$ is the function of a real number $x$ given by
 $h(x) = \sum_{r \ge 0} g(q^r x)/q^r$, where the sum is taken to be $0$ when the series is not
 summable.

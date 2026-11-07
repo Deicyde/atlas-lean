@@ -1,6 +1,6 @@
 # Number of colored compositions
 
-**Number of colored compositions.** Let $\gamma = (\gamma_1, \gamma_2, \dots)$ be a sequence
+Let $\gamma = (\gamma_1, \gamma_2, \dots)$ be a sequence
 of natural numbers and let $n, k$ be natural numbers. The number $c_{n,k}(\gamma)$ of
 $\gamma$-colored compositions of $n$ with $k$ parts counts the compositions of $n$ with exactly $k$
 parts in which each part equal to $j$ carries one of $\gamma_j$ colors: it is the sum, over all

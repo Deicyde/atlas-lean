@@ -1,6 +1,6 @@
 # Factorization of the complex group determinant of $C_4^2$
 
-**Factorization of the complex group determinant of $C_4^2$.** For every
+For every
 $y \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{C}$,
 
 $$

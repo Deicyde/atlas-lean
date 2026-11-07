@@ -1,6 +1,6 @@
 # Polynomially recursive integer sequences are MC-finite
 
-**Polynomially recursive integer sequences are MC-finite.** Call an integer sequence $s$
+Call an integer sequence $s$
 MC-finite if for every natural number $m > 0$ there are natural numbers $p > 0$ and $q > 0$ and
 integers $c_0, \dots, c_{p-1}$ such that $m$ divides $s(n + p) - \sum_{i=0}^{p-1} c_i\, s(n + i)$
 for all $n \ge q$. Every integer sequence $s$ has the following two properties.

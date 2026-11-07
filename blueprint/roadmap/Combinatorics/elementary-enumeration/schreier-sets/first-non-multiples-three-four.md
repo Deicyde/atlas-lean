@@ -1,6 +1,6 @@
 # The first four positive integers not divisible by 3
 
-**The first four positive integers not divisible by 3.** The set $G_{3,4}$ of the first four
+The set $G_{3,4}$ of the first four
 positive integers not divisible by $3$ is $\{1, 2, 4, 5\}$.
 
 ## Sources

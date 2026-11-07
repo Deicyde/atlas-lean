@@ -1,6 +1,6 @@
 # A value of the mixed-sign subset-sum bound with zero
 
-**A value of the mixed-sign subset-sum bound with zero.** For $n = p = 1$ and
+For $n = p = 1$ and
 $\alpha = \beta = 1$, the mixed-sign subset-sum bound with zero is $L^0_{1,1}(1, 1) = 3$; this
 value comes from its third case.
 

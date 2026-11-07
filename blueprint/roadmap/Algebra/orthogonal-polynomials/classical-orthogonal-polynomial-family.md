@@ -1,6 +1,6 @@
 # Classical orthogonal polynomial family
 
-**Classical orthogonal polynomial family.** A classical orthogonal polynomial family consists
+A classical orthogonal polynomial family consists
 of real polynomials $P_0, P_1, P_2, \dots$, each $P_n$ monic of degree exactly $n$, a measure
 $\mu$ on $\mathbb{R}$, a measurable set $D \subseteq \mathbb{R}$ that is an interval with
 nonempty interior, and a function $w : \mathbb{R} \to \mathbb{R}$ (the weight), such that

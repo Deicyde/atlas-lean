@@ -1,6 +1,6 @@
 # Simplicity conjecture
 
-**Simplicity conjecture.** Let $\mathbb{D} \subseteq \mathbb{R}^2$ be the closed unit disc and let
+Let $\mathbb{D} \subseteq \mathbb{R}^2$ be the closed unit disc and let
 $\omega$ be the restriction of Lebesgue measure to $\mathbb{D}$. The group
 $\mathrm{Homeo}_c(\mathbb{D}, \omega)$ of homeomorphisms of $\mathbb{D}$ that preserve $\omega$
 and whose support, the closure of the set of non-fixed points, lies in the open unit disc is not

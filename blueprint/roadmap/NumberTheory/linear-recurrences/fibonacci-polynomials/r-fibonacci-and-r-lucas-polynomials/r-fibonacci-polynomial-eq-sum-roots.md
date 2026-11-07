@@ -1,6 +1,6 @@
 # Binet formula for the $r$-Fibonacci polynomials (distinct zeros)
 
-**Binet formula for the $r$-Fibonacci polynomials (distinct zeros).** Let $K$ be a field, let
+Let $K$ be a field, let
 $r \ge 1$ be a natural number and let $x, y \in K$. Suppose that
 $t^{r+1} - x t^r - y = \prod_{k=0}^{r} (t - \alpha_k)$ in $K[t]$, where
 $\alpha_0, \dots, \alpha_r \in K$ are pairwise distinct. Then for every $n \ge 0$ the

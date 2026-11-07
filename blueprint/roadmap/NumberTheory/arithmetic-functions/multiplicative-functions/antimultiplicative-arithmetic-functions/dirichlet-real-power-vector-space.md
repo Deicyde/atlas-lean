@@ -1,6 +1,6 @@
 # Rearick's real power and its vector space laws
 
-**Rearick's real power and its vector space laws.** Let $L$ denote the Rearick logarithm and
+Let $L$ denote the Rearick logarithm and
 $*$ the Dirichlet convolution. There is a map $(\alpha, f) \mapsto f^{(\alpha)}$, sending a real
 number $\alpha$ and a real arithmetical function $f$ to a real arithmetical function, such that:
 for every real $\alpha$ and every real arithmetical function $f$ with $f(1) = 1$, we have

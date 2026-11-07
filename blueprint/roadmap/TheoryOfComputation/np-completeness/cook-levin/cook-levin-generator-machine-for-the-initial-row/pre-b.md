@@ -1,6 +1,6 @@
 # Step bound for the precomputation
 
-**Step bound for the precomputation.** For a layout $L$ with $A$ label/state variables, $K$
+For a layout $L$ with $A$ label/state variables, $K$
 stacks and $g$ symbol codes, and numbers $k_0, q, T, n, e, f$, write $h = n + e + f$. The bound is
 
 $$

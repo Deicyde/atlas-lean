@@ -1,6 +1,6 @@
 # Closed form of the Catalan generating function
 
-**Closed form of the Catalan generating function.** Let $C_n$ be the $n$th Catalan number.
+Let $C_n$ be the $n$th Catalan number.
 For every real number $x$ with $|x| < 1/4$ and $x \neq 0$,
 
 $$

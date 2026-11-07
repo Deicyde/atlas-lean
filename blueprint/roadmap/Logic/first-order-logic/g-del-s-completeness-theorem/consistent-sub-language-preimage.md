@@ -1,6 +1,6 @@
 # Consistency passes to the finite-symbol sublanguage
 
-**Consistency passes to the finite-symbol sublanguage.** Let $F$ be a finite set of formulas
+Let $F$ be a finite set of formulas
 of a first-order language $L$ with free variables in $\mathbb{N}$, and let $L_F$ be the
 sublanguage of $L$ on the symbols occurring in $F$, with inclusion $\iota : L_F \to L$. If $F$ is
 consistent, then so is the preimage of $F$ in $L_F$: the set of formulas $\psi_0$ of $L_F$ with

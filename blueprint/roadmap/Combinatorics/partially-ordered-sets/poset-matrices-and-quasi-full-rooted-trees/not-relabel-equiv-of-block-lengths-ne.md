@@ -1,6 +1,6 @@
 # Direct sum criterion for relabeling inequivalence
 
-**Direct sum criterion for relabeling inequivalence.** Let $n, t \ge 2$ and let
+Let $n, t \ge 2$ and let
 $M$ and $M'$ be poset matrices of order $n$, Boolean matrices with rows and columns indexed by
 $0, \dots, n - 1$. Let $0 = l_0 < l_1 < \dots < l_t = n$ be such that the gaps $l_{k+1} - l_k$ are
 nondecreasing in $k$. Suppose that for every $k \le t$, $M_{ij}$ is false for all $i < l_k \le j$,

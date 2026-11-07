@@ -1,6 +1,6 @@
 # Kronecker-delta identity for signed Stirling numbers of the first kind
 
-**Kronecker-delta identity for signed Stirling numbers of the first kind.** Let $s(i, k)$
+Let $s(i, k)$
 denote the signed Stirling numbers of the first kind and $\delta_{i,j}$ the Kronecker delta
 ($1$ if $i = j$ and $0$ otherwise). Then for all integers $i, j \ge 1$, in $\mathbb{Q}$,
 

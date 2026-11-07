@@ -1,6 +1,6 @@
 # Alternating binomial transform of a row of trinomial coefficients
 
-**Alternating binomial transform of a row of trinomial coefficients.** Write
+Write
 $\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. For all
 $n, m \in \mathbb{N}$
 

@@ -1,6 +1,6 @@
 # Frobenius conjugacy class
 
-**Frobenius conjugacy class.** Let $S$ be a commutative algebra over a commutative ring $R$,
+Let $S$ be a commutative algebra over a commutative ring $R$,
 and let a finite group $G$ act on $S$ by $R$-algebra automorphisms such that every element of
 $S$ fixed by $G$ is the image of an element of $R$. Let $Q$ be a prime of $S$ with $S/Q$ finite
 at which $S$ is unramified over $R$ (the localization $S_Q$ is formally unramified over $R$).

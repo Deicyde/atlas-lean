@@ -1,6 +1,6 @@
 # Santos's coefficient with all indices zero
 
-**Santos's coefficient with all indices zero.** For every complex number $z$, Santos's
+For every complex number $z$, Santos's
 coefficient satisfies $\beta_0(0, 0, z) = 1$.
 
 ## Sources

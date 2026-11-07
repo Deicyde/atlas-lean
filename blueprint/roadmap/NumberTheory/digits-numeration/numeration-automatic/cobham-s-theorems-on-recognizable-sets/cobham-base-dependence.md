@@ -1,6 +1,6 @@
 # Cobham's theorem
 
-**Cobham's theorem.** Let $k$ and $l$ be multiplicatively independent natural numbers with
+Let $k$ and $l$ be multiplicatively independent natural numbers with
 $l \ge 2$, and let $S$ be a set of natural numbers that is recognizable in base $k$ and is not
 ultimately periodic. Then $S$ is not recognizable in base $l$.
 

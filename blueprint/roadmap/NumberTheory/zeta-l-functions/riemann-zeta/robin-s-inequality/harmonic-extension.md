@@ -1,6 +1,6 @@
 # The real extension of the harmonic numbers
 
-**The real extension of the harmonic numbers.** For a real number $x$, let
+For a real number $x$, let
 
 $$H(x) = \int_0^1 \frac{t^x - 1}{t - 1}\,dt,$$
 

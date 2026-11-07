@@ -1,6 +1,6 @@
 # Hardy–Littlewood admissibility via the set of entries
 
-**Hardy–Littlewood admissibility via the set of entries.** A tuple of integers is
+A tuple of integers is
 Hardy–Littlewood admissible exactly when its set of entries is admissible.
 
 ## Sources

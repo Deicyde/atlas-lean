@@ -1,6 +1,6 @@
 # No MPTQ set has five elements
 
-**No MPTQ set has five elements.** No set of five real numbers is an MPTQ set.
+No set of five real numbers is an MPTQ set.
 
 ## Sources
 

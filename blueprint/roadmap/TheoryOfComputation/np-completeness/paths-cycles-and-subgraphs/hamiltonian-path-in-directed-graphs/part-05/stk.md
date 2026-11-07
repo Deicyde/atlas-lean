@@ -1,6 +1,6 @@
 # Stacks of a quiescent emitter state
 
-**Stacks of a quiescent emitter state.** In a quiescent state $s$, the stacks $T$, $O$, $F$,
+In a quiescent state $s$, the stacks $T$, $O$, $F$,
 $V$, $W$, $G$ and $X$ hold the lists that $s$ records for them; the stack $Q$ holds the edge
 bits of $s$ as bit symbols, reversed so that the last bit is on top; each counter stack $C$,
 $M$, $P$, $N$, $R$, $L$, $J$, $D$ holds as many copies of the symbol $\mathrm{cl}$ as the

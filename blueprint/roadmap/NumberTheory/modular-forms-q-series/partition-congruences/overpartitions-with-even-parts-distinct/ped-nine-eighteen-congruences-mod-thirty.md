@@ -1,6 +1,6 @@
 # Congruences modulo 32 for (9, 18)-overpartitions with even parts distinct
 
-**Congruences modulo 32 for [9, 18]-overpartitions with even parts distinct.** Let
+Let
 $\mathrm{ped}_{9,18}(n)$ be the number of $[9, 18]$-overpartitions of $n$ with even parts
 distinct, let $f_k = \prod_{m \ge 1} (1 - q^{km})$, and read congruences between integer power
 series in $q$ coefficientwise. For all $\alpha, \beta \ge 0$ the following hold modulo $32$, where

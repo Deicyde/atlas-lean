@@ -1,6 +1,6 @@
 # Hurwitz class number
 
-**Hurwitz class number.** The Hurwitz class number is the function $H$ from the natural
+The Hurwitz class number is the function $H$ from the natural
 numbers to the rationals given by $H(0) = -1/12$; $H(N) = 0$ if $N \equiv 1$ or $2 \pmod 4$; and,
 for $N > 0$ with $N \equiv 0$ or $3 \pmod 4$, $H(N)$ is the number of equivalence classes of
 positive-definite integral binary quadratic forms of discriminant $-N$, primitive or not, where

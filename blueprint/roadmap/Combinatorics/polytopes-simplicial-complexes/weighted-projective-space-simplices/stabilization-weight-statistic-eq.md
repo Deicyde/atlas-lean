@@ -1,6 +1,6 @@
 # The first reflexive stabilization preserves the weight statistic
 
-**The first reflexive stabilization preserves the weight statistic.** Let
+Let
 $q = (q_1, \dots, q_n)$ be a vector of natural numbers whose reflexive stabilization number is
 $1$, so that its first reflexive stabilization is $\operatorname{rs}(q) = (1, q_1, \dots, q_n)$.
 Suppose that $\ell(\operatorname{rs}(q)) = 1$, where for a vector $p$ we write

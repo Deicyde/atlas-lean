@@ -1,6 +1,6 @@
 # Kourovka Problem 11.21 has a negative answer
 
-**Kourovka Problem 11.21 has a negative answer.** There are a prime $p$ and a formation
+There are a prime $p$ and a formation
 $\mathfrak F$ all of whose members are $p$-groups such that for every set $W$ of laws, words in the
 free group on countably many generators, some finite $p$-group lies in $\mathfrak F$ and fails a
 law in $W$, or satisfies every law in $W$ and does not lie in $\mathfrak F$. Thus $\mathfrak F$ is

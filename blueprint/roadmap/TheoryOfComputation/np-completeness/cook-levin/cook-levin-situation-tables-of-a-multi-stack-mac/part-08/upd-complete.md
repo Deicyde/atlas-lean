@@ -1,6 +1,6 @@
 # The run assignment satisfies the update family
 
-**The run assignment satisfies the update family.** Let $M$ be a finite stack machine with
+Let $M$ be a finite stack machine with
 encoding data $E$, let $N$ be the number of situations of $E$, let $s$ be an input of $M$, and
 let $T, H \in \mathbb{N}$ with $d \le H$, where $d$ is the window depth of $M$. For
 $t \in \mathbb{N}$ let $c_t$ be the configuration after $t$ steps of the idle-extended run of $M$

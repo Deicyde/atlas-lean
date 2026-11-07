@@ -1,6 +1,6 @@
 # Arbitrarily large integers with a divisor in a short window
 
-**Arbitrarily large integers with a divisor in a short window.** Let $\theta$ and $\varepsilon$
+Let $\theta$ and $\varepsilon$
 be real numbers with $0 < \theta < 1$ and $0 < \varepsilon < \theta$. Then for every natural
 number $N$ there is a natural number $n \ge N$ with at least one divisor $d$ satisfying
 $n^\theta \le d \le n^\theta + n^{\theta - \varepsilon}$.

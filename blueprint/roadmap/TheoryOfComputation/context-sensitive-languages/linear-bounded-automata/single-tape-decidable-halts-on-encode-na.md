@@ -1,6 +1,6 @@
 # A single-tape machine decides the halting problem of a linear bounded automaton
 
-**A single-tape machine decides the halting problem of a linear bounded automaton.** Let $M$
+Let $M$
 be a linear bounded automaton over a finite tape alphabet $\Sigma$, let $\iota$ be any map from
 the Booleans to $\Sigma$, and let $\alpha$ be a primitively encodable type. For $a \in \alpha$, let
 $w_a$ be the word obtained by writing, letter by letter through $\iota$, the binary expansion

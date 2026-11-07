@@ -1,6 +1,6 @@
 # Lucas analogue of the FiboCatalan identity, cleared of denominators
 
-**Lucas analogue of the FiboCatalan identity, cleared of denominators.** Let $\{k\}$ be
+Let $\{k\}$ be
 the Lucas polynomials in $s$ and $t$ ($\{0\} = 0$, $\{1\} = 1$, $\{k+2\} = s\{k+1\} + t\{k\}$)
 and let $\{k\}! = \{1\}\{2\} \cdots \{k\}$ be the Lucas factorial. For every natural number
 $n$, in $\mathbb{Z}[s, t]$,

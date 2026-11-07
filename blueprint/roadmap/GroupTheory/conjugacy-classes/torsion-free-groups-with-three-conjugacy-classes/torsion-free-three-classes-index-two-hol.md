@@ -1,6 +1,6 @@
 # Minasyan's theorem (Kourovka Problem 11.42)
 
-**Minasyan's theorem (Kourovka Problem 11.42).** There is a torsion-free group $G$ (no element of
+There is a torsion-free group $G$ (no element of
 $G$ other than the identity has finite order) that has exactly three conjugacy classes and has a
 subgroup of index $2$.
 

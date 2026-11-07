@@ -1,6 +1,6 @@
 # Zakharov's conjecture on regions cut by cevians
 
-**Zakharov's conjecture on regions cut by cevians.** Let $A$, $B$, $C$ be affinely independent
+Let $A$, $B$, $C$ be affinely independent
 points of $\mathbb{R}^2$ and $T$ the triangle they span; a cevian is a segment joining a vertex
 of $T$ to a point of the open side opposite it. The regions cut out by cevians
 $c_1, \dots, c_n$ are the connected components of the interior of $T$ minus

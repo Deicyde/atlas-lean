@@ -1,6 +1,6 @@
 # DOMINATING SET as a decision problem
 
-**DOMINATING SET as a decision problem.** The decision problem DOMINATING SET accepts a
+The decision problem DOMINATING SET accepts a
 bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a triple
 $(n, E, K)$ of a natural number $n$, a list $E$ of pairs of natural numbers and a natural number
 $K$ such that $E$ has no repeated entries, every pair $(u, v) \in E$ satisfies $u < n$, $v < n$,

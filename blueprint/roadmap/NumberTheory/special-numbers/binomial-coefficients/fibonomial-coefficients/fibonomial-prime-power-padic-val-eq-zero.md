@@ -1,6 +1,6 @@
 # Vanishing $p$-adic valuation of Fibonomial coefficients at prime powers
 
-**Vanishing $p$-adic valuation of Fibonomial coefficients at prime powers.** Let $p$ be a
+Let $p$ be a
 prime with $p \ne 2$ and $p \ne 5$, and let $a, b$ be integers with $0 < a \le b$ such that
 $p \equiv \pm 1 \pmod 5$ or $a \equiv b \pmod 2$. Write $F_n$ for the $n$-th Fibonacci number
 and $F_n! = F_1 F_2 \cdots F_n$ for the Fibonacci factorial, with $F_0! = 1$. Then the $p$-adic

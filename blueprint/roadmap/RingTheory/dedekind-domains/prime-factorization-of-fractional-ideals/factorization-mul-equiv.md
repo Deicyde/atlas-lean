@@ -1,6 +1,6 @@
 # Prime factorization isomorphism for fractional ideals
 
-**Prime factorization isomorphism for fractional ideals.** Let $R$ be a Dedekind domain with
+Let $R$ be a Dedekind domain with
 fraction field $K$, and for a unit fractional ideal $I$ of $R$ in $K$ and a height-one prime $v$
 of $R$ write $\operatorname{val}_v(I)$ for the $v$-adic valuation of $I$. The factorization
 isomorphism is the group isomorphism from the unit group of the fractional ideals of $R$ in $K$

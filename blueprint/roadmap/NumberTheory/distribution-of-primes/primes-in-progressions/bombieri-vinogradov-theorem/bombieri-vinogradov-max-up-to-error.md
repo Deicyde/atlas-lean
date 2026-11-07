@@ -1,6 +1,6 @@
 # Maximal residue-class error up to a level
 
-**Maximal residue-class error up to a level.** For natural numbers $x$ and $q$,
+For natural numbers $x$ and $q$,
 $E^{\ast\ast}(x; q)$ is the maximum of the maximal residue-class error $E^{\ast}(y; q)$ over the
 natural numbers $y \le x$.
 

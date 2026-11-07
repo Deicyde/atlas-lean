@@ -1,6 +1,6 @@
 # First N-step Fibonacci number
 
-**First N-step Fibonacci number.** For every natural number $N$, the $N$-step Fibonacci
+For every natural number $N$, the $N$-step Fibonacci
 number $F^{(N)}_1$ equals $1$.
 
 ## Sources

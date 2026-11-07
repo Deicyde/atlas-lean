@@ -1,6 +1,6 @@
 # Hikita's theorem: the Stanley–Stembridge conjecture holds
 
-**Hikita's theorem: the Stanley–Stembridge conjecture holds.** For every finite $(3+1)$-free
+For every finite $(3+1)$-free
 partially ordered set $P$, the chromatic symmetric function in $|P|$ variables of the
 incomparability graph of $P$ is $e$-positive.
 

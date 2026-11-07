@@ -1,6 +1,6 @@
 # Baby version of the dense-set construction
 
-**Baby version of the dense-set construction.** Let $e$ be Euler's number, let
+Let $e$ be Euler's number, let
 $\operatorname{Log}_2$ and $\operatorname{Log}_3$ be the second and third iterated truncated
 logarithms, and for a set $B$ of natural numbers and real $x$ write
 $S_B(x) = \sum_{n \in B,\ 1 \le n \le x} 1/n$ and $\mathcal{E}_B(x)$ for the gcd defect of $B$ up

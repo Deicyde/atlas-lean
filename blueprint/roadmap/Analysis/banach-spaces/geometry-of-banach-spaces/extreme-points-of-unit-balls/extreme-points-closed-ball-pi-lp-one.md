@@ -1,6 +1,6 @@
 # Extreme points of the unit ball of finite $\ell^1$
 
-**Extreme points of the unit ball of finite $\ell^1$.** The extreme points of the closed unit ball of `PiLp 1 (fun _ : ι => 𝕜)`
+The extreme points of the closed unit ball of `PiLp 1 (fun _ : ι => 𝕜)`
 are exactly the unit multiples of the coordinate vectors. The proof: an
 extreme point must have norm `1` (otherwise a one-coordinate perturbation
 stays in the ball and exhibits it as a midpoint), and it cannot have two

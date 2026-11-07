@@ -1,6 +1,6 @@
 # Closed form of the shifted Alzer–Richards binomial sum
 
-**Closed form of the shifted Alzer–Richards binomial sum.** Let $m \ge 1$ be an integer and
+Let $m \ge 1$ be an integer and
 $x$ a complex number, write $\binom{z}{k} = z(z-1)\cdots(z-k+1)/k!$ for complex $z$, and assume
 $\binom{k-m+1/2-x}{k} \ne 0$ for $0 \le k \le \lfloor m/2 \rfloor$. Put
 

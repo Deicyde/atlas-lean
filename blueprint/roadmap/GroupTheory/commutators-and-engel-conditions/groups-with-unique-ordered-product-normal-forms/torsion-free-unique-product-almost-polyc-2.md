@@ -1,6 +1,6 @@
 # A torsion-free group with a unique product presentation need not be almost polycyclic
 
-**A torsion-free group with a unique product presentation need not be almost polycyclic.** Not
+Not
 every torsion-free group with a unique product presentation is almost polycyclic: there is a group
 $G$ in which no element other than $1$ has finite order, which has a unique product presentation,
 and which is not almost polycyclic.

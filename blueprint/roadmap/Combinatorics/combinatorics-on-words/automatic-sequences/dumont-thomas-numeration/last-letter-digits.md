@@ -1,6 +1,6 @@
 # Digit word along last letters
 
-**Digit word along last letters.** Let $\eta$ send each letter of an alphabet $A$ to a
+Let $\eta$ send each letter of an alphabet $A$ to a
 finite word over $A$. For $k \in \mathbb{N}$ and a letter $c \in A$, the word
 $\mathrm{last}_{\eta,k}(c)$ of natural numbers is defined by recursion on $k$:
 $\mathrm{last}_{\eta,0}(c)$ is the empty word; if $\eta(c)$ is nonempty with last letter $d$,

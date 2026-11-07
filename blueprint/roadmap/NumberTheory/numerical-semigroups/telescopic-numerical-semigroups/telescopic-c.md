@@ -1,6 +1,6 @@
 # Successive gcd quotients
 
-**Successive gcd quotients.** For a finite sequence $G = (g_1, \dots, g_k)$ of natural numbers,
+For a finite sequence $G = (g_1, \dots, g_k)$ of natural numbers,
 let $d_i$ be the greatest common divisor of the first $i$ entries of $G$ (of all of $G$ when
 $i > k$), with $d_0 = 0$. For $j \ge 1$ the successive gcd quotient is $c_j = d_{j-1} / d_j$,
 taken to be $0$ when $d_j = 0$, that is, when the first $j$ entries are all zero; and $c_0 = 0$.

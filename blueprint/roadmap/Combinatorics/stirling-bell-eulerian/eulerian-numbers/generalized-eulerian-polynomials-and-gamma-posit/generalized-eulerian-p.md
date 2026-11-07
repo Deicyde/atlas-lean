@@ -1,6 +1,6 @@
 # Generalized Eulerian polynomials
 
-**Generalized Eulerian polynomials.** For rational numbers $q, t, x, y$ and $n \ge 0$, the
+For rational numbers $q, t, x, y$ and $n \ge 0$, the
 generalized Eulerian polynomial $P_n(q, t; x, y)$ is $n!$ times the coefficient of $z^n$ in the
 formal power series over $\mathbb{Q}$
 

@@ -1,6 +1,6 @@
 # The first two arcsine antiderivative constants
 
-**The first two arcsine antiderivative constants.** Zurita's constants satisfy $C_1 = -24$
+Zurita's constants satisfy $C_1 = -24$
 and $C_2 = -120$, as in Table 1 of the paper.
 
 ## Sources

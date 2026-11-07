@@ -1,6 +1,6 @@
 # The Takagi coefficient at index zero
 
-**The Takagi coefficient at index zero.** For every natural number $n$ and every integer $k$,
+For every natural number $n$ and every integer $k$,
 the Takagi coefficient $\ell_0(n, k)$ is $0$.
 
 The index $0$ is only an auxiliary base value: the Takagi series starts at $\ell_1$.

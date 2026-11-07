@@ -1,6 +1,6 @@
 # Number of permutations with all cycles of length $r$
 
-**Number of permutations with all cycles of length $r$.** Let $r \ge 2$ and $n \ge 0$. The
+Let $r \ge 2$ and $n \ge 0$. The
 number of permutations of $n$ objects all of whose cycles, fixed points counted as cycles of
 length one, have length exactly $r$ equals $n!/(r^{n/r}\,(n/r)!)$ if $r$ divides $n$, and $0$
 otherwise.

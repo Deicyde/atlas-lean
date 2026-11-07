@@ -1,6 +1,6 @@
 # The two-color partition count at zero
 
-**The two-color partition count at zero.** For every natural number $\ell$, including
+For every natural number $\ell$, including
 $\ell = 0$, the two-color partition count $p_{1,\ell}$ satisfies $p_{1,\ell}(0) = 1$.
 
 ## Sources

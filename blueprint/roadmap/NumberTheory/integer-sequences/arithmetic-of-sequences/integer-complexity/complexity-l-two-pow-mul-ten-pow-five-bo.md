@@ -1,6 +1,6 @@
 # Bounds for the 2-complexity of $2^m \cdot 10^5$
 
-**Bounds for the 2-complexity of $2^m \cdot 10^5$.** Write $\|n\|_2$ for the $2$-complexity
+Write $\|n\|_2$ for the $2$-complexity
 of $n$. For every natural number $m$, one has $m + 19 \le \|2^m \cdot 10^5\|_2 \le m + 20$.
 
 ## Sources

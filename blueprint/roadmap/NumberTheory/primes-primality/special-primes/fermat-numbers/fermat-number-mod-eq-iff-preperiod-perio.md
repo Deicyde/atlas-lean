@@ -1,6 +1,6 @@
 # Coincidences among Fermat residues
 
-**Coincidences among Fermat residues.** Write $F_n = 2^{2^n} + 1$. Let $p$ be a prime, and let
+Write $F_n = 2^{2^n} + 1$. Let $p$ be a prime, and let
 $h$ and $k$ be the preperiod and the period of $n \mapsto F_n \bmod p$ in the following sense:
 $k > 0$, the sequence $n \mapsto F_{h+n} \bmod p$ is periodic with period $k$, every positive
 period of it is a multiple of $k$, and for no $h' < h$ is the sequence $n \mapsto F_{h'+n} \bmod p$

@@ -1,6 +1,6 @@
 # The grammar of an encoded regular expression
 
-**The grammar of an encoded regular expression.** For an encoded regular expression $e$ with
+For an encoded regular expression $e$ with
 $n$ nodes, its grammar is the encoded context-free grammar with start nonterminal $n - 1$
 (truncated subtraction, so $0$ when $n = 0$), in which nonterminal $k$ stands for node $k$. Its
 productions are, for each node $k < n$: none if node $k$ is $0$; $k \to \varepsilon$ if it is

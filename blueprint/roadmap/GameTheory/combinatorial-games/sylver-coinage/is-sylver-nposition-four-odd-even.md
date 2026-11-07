@@ -1,6 +1,6 @@
 # Even replies to 4 and an odd number at least 5 lose
 
-**Even replies to 4 and an odd number at least 5 lose.** Let $x \ge 5$ be an odd natural
+Let $x \ge 5$ be an odd natural
 number. For every even legal move $b$ of the position $\{4, x\}$, the position $\{4, x, b\}$ is
 an N-position.
 

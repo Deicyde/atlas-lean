@@ -1,6 +1,6 @@
 # Sum formula for the coefficients of $q^{6n+5}$ in $v(q)$
 
-**Sum formula for the coefficients of $q^{6n+5}$ in $v(q)$.** Let $P_v(n)$ be the
+Let $P_v(n)$ be the
 coefficient of $q^n$ in the eighth-order mock theta function $v(q)$, for $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$, and let $b_6^3(k)$ be the coefficient of $q^k$ in the
 integer power series $(f_6 / f_1)^3$. Then for every $n \ge 0$,

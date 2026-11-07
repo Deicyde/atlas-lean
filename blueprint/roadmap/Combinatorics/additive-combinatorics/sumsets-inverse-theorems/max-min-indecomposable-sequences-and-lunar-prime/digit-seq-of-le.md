@@ -1,6 +1,6 @@
 # A digit string has no coefficients beyond its length
 
-**A digit string has no coefficients beyond its length.** Let $n$ and $b$ be natural numbers
+Let $n$ and $b$ be natural numbers
 and let $a = (a_0, \dots, a_{n-1})$ be a digit string with digits in $\{0, \dots, b - 1\}$. Then
 for every $k \ge n$, the $k$-th term of the coefficient sequence of $a$ is $0$.
 

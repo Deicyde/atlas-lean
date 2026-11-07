@@ -1,6 +1,6 @@
 # Winning strategy for the first player in the Banach–Mazur game
 
-**Winning strategy for the first player in the Banach–Mazur game.** Let
+Let
 $E \subseteq \mathbb{R}$. In this game a move is a pair of reals $(c, d)$, standing for the open
 interval $(c, d)$, and a valid strategy is a map from pairs to pairs answering each pair $(c, d)$
 with $c < d$ by a pair $(c', d')$ with $c \le c' < d' \le d$. Player A has a winning strategy for

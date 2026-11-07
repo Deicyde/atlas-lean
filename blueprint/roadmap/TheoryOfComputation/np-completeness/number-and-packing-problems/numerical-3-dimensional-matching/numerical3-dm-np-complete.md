@@ -1,6 +1,6 @@
 # NUMERICAL 3-DIMENSIONAL MATCHING is NP-complete
 
-**NUMERICAL 3-DIMENSIONAL MATCHING is NP-complete.** The decision problem NUMERICAL
+The decision problem NUMERICAL
 3-DIMENSIONAL MATCHING belongs to NP, and every decision problem in NP reduces to it by a
 polynomial-time many-one reduction.
 

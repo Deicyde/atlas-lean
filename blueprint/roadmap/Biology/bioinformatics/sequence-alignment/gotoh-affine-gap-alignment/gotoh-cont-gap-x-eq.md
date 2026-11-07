@@ -1,6 +1,6 @@
 # First-column recurrence for the continuation after a gap in the second sequence
 
-**First-column recurrence for the continuation after a gap in the second sequence.** Fix an
+Fix an
 integer-valued scoring function $\sigma$ on pairs of letters and integer gap-open and gap-extend
 penalties $g_o$ and $g_e$. For sequences $u$, $v$ let $N(u, v)$, $X(u, v)$ and $Y(u, v)$ be the
 Gotoh continuation values when the previous column was a match, a gap in $v$ and a gap in $u$

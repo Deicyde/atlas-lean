@@ -1,6 +1,6 @@
 # Canonical splitting of a Lucas interval
 
-**Canonical splitting of a Lucas interval.** Let $L_j$ be the $j$-th Lucas number
+Let $L_j$ be the $j$-th Lucas number
 ($L_0 = 2$, $L_1 = 1$, $L_{j+2} = L_{j+1} + L_j$). For a natural number $m$, the canonical
 splitting of the Lucas interval $\Lambda_m$ is the list of pairs $(k, t)$ of natural numbers
 defined by recursion on $m$: for $m \le 5$ it is the one-pair list $[(m, 0)]$, and for $m \ge 6$

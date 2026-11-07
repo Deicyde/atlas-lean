@@ -1,6 +1,6 @@
 # Canonical next move induced by a bespoke strategy
 
-**Canonical next move induced by a bespoke strategy.** Let $M$ be a Kripke model,
+Let $M$ be a Kripke model,
 $\mathit{env}$ an environment and $\sigma$ a Verifier strategy for the model-checking game on
 $M$. Write $\langle \psi, v \rangle$ for the game position with the embedding of a
 fixpoint-free formula $\psi$, the world $v$ and the empty binder stack. The canonical next move

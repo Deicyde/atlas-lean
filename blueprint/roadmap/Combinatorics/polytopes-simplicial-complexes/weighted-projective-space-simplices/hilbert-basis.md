@@ -1,6 +1,6 @@
 # Hilbert basis of the cone over a polytope
 
-**Hilbert basis of the cone over a polytope.** For $P \subseteq \mathbb{R}^n$, call a pair
+For $P \subseteq \mathbb{R}^n$, call a pair
 $(t, w) \in \mathbb{N} \times \mathbb{Z}^n$ a cone lattice point of $P$ when $w$ is a lattice point
 of the dilate $tP = \{t y : y \in P\}$. The Hilbert basis of $P$ is the set of nonzero cone
 lattice points $a$ of $P$ that are irreducible: whenever $a = b + c$ with $b$ and $c$ cone

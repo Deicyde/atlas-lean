@@ -1,6 +1,6 @@
 # First-kind $(p,q)$-analogue of the $r$-Lucas polynomial via two $r$-Fibonacci terms
 
-**First-kind $(p,q)$-analogue of the $r$-Lucas polynomial via two $r$-Fibonacci terms.** Let
+Let
 $R$ be a commutative semiring, let $r \ge 1$, $n \ge r$, $s$ and $m$ be natural numbers and let
 $x, y, p, q \in R$. Write $U_j(x, y)$ for the $(p,q)$-analogue $U^{(r)}_j(x, y, p, q, m)$ of the
 $r$-Fibonacci polynomial and $V_n(x, y)$ for the first-kind $(p,q)$-analogue

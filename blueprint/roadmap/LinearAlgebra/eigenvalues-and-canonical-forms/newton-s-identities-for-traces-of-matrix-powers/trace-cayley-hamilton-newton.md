@@ -1,6 +1,6 @@
 # Newton's trace identities for the characteristic polynomial
 
-**Newton's trace identities for the characteristic polynomial.** Let $A$ be a square matrix
+Let $A$ be a square matrix
 over a commutative ring $R$ whose rows and columns are indexed by a finite set of size $N$. For
 each natural number $k$, let $c_k$ be the coefficient of $X^{N-k}$ in the characteristic
 polynomial $\chi_A(X) = \det(X I - A)$ when $k \le N$, and $c_k = 0$ when $k > N$, so that

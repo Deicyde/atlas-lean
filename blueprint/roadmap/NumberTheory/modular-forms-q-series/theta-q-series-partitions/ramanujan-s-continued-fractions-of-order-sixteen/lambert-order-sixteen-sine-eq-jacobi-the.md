@@ -1,6 +1,6 @@
 # Sine Lambert series of order sixteen as quotients of theta functions
 
-**Sine Lambert series of order sixteen as quotients of theta functions.** Let $\tau$ and $z$
+Let $\tau$ and $z$
 be complex numbers with $\operatorname{Im} \tau > 0$ and
 $|\operatorname{Im} z| < \pi \operatorname{Im} \tau$, let $q = e^{2 \pi i \tau}$, write
 $\theta(w) = \theta_1(w \mid 16\tau)$ for the Jacobi theta function $\theta_1$, and let $\theta'$

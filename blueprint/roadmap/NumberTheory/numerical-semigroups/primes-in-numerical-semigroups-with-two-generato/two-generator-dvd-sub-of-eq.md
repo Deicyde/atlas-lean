@@ -1,6 +1,6 @@
 # Two representations by coprime generators
 
-**Two representations by coprime generators.** Let $c$ and $d$ be coprime natural numbers.
+Let $c$ and $d$ be coprime natural numbers.
 If natural numbers $x, y, x', y'$ satisfy $cx + dy = cx' + dy'$, then $c$ divides $y - y'$ and
 $d$ divides $x - x'$ in the integers.
 

@@ -1,6 +1,6 @@
 # LRU is $k$-competitive against the offline optimum
 
-**LRU is $k$-competitive against the offline optimum.** Let $k \ge 1$, and let $c$ and $c_0$
+Let $k \ge 1$, and let $c$ and $c_0$
 be duplicate-free caches with at most $k$ pages each. For every request sequence $\sigma$, the
 trace that LRU with capacity $k$ emits when serving $\sigma$ from $c$ has at most $k m + k$
 misses, where $m$ is the number of misses of the furthest-in-future manager with capacity $k$

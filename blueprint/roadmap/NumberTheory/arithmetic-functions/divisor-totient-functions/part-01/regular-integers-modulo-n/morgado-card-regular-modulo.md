@@ -1,6 +1,6 @@
 # Morgado's formula for the number of regular residues
 
-**Morgado's formula for the number of regular residues.** Let $n$ be a positive integer. Call
+Let $n$ be a positive integer. Call
 a residue class $m \in \mathbb{Z}/n\mathbb{Z}$ regular if the equation $m^2 x = m$ has a solution
 $x \in \mathbb{Z}/n\mathbb{Z}$, and let $\varrho(n)$ be the number of regular residue classes. Let
 $U(n)$ be the set of positive divisors $d$ of $n$ with $\gcd(d, n/d) = 1$. Then

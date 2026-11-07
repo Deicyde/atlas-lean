@@ -1,6 +1,6 @@
 # Stride series for the Dirichlet lambda function
 
-**Stride series for the Dirichlet lambda function.** Let $q, t \ge 1$ be integers, and let
+Let $q, t \ge 1$ be integers, and let
 $S_{q,t}(n)$ denote the alternating stride sum and $T_{q,t}(n)$ the signed stride sum. Then the
 partial sums
 

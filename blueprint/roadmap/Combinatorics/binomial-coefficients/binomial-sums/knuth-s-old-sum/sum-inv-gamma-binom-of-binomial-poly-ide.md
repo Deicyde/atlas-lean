@@ -1,6 +1,6 @@
 # Reciprocal binomial transform of a polynomial identity
 
-**Reciprocal binomial transform of a polynomial identity.** Let $s, n, m, r$ be natural
+Let $s, n, m, r$ be natural
 numbers, $f, g : \mathbb{N} \to \mathbb{C}$ and $p, q : \mathbb{N} \to \mathbb{N}$ such that
 $\sum_{k=s}^{n} f(k) (1+t)^{p(k)} = \sum_{k=m}^{r} g(k) t^{q(k)}$ for every complex $t$. Then
 for all complex numbers $u, v$ with $\operatorname{Re} u > -1$ and $\operatorname{Re} v > -1$,

@@ -1,6 +1,6 @@
 # Integrality of the Fuss–Catalan numbers
 
-**Integrality of the Fuss–Catalan numbers.** For natural numbers $a \ge 2$ and $n \ge 1$, the
+For natural numbers $a \ge 2$ and $n \ge 1$, the
 integer $(a-1)n + 1$ divides the binomial coefficient $\binom{an}{n}$. Hence the Fuss–Catalan
 number $\frac{1}{(a-1)n+1}\binom{an}{n}$ is an integer.
 

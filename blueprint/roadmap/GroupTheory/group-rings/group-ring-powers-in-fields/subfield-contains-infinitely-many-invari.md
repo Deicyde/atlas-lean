@@ -1,6 +1,6 @@
 # Group-ring powers and invariant elements (Kourovka 11.79)
 
-**Group-ring powers and invariant elements (Kourovka 11.79).** The proposition that the
+The proposition that the
 following holds for every prime $p$, every infinite field $F$ of characteristic $p$, every finite
 group $G$ of ring automorphisms of $F$, and every element $\xi = \sum_{g \in G} \xi_g \, g$ of the
 group ring $\mathbb{Z}G$ with $\xi \notin p\mathbb{Z}G$, that is, with some integer coefficient

@@ -1,6 +1,6 @@
 # Zero has no blocks
 
-**Zero has no blocks.** The list of blocks of $0$ is empty; that is, the number $\rho(0)$ of
+The list of blocks of $0$ is empty; that is, the number $\rho(0)$ of
 blocks of $0$ is $0$.
 
 ## Sources

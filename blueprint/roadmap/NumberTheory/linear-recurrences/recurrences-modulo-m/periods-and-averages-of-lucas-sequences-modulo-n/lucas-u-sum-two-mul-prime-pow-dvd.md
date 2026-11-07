@@ -1,6 +1,6 @@
 # Prime-power divisibility of Lucas sums
 
-**Prime-power divisibility of Lucas sums.** Let $U$ be the Lucas sequence $U_0 = 0$,
+Let $U$ be the Lucas sequence $U_0 = 0$,
 $U_1 = 1$, $U_{j+2} = P U_{j+1} - Q U_j$ with $(P, Q)$ nondegenerate. Let $\ell$ be an odd prime
 and $e \ge 1$ with $\ell^e \mid P$, $\ell^{e+1} \nmid P$ and $Q \equiv -1 \pmod{\ell^{e+1}}$.
 Then $\ell^e \mid P - Q - 1$ and $\ell^{e+1} \nmid P - Q - 1$, and

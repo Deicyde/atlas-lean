@@ -1,6 +1,6 @@
 # The 3-COLOR verifier machine
 
-**The 3-COLOR verifier machine.** The verifier is the program on the seven stacks $X$
+The verifier is the program on the seven stacks $X$
 (input), $W$ (witness), $N$, $P$, $T$, $U$, $V$, with internal state a bit, that runs as follows.
 It reads the unary number $n$ off $X$ onto the counter $N$; loads the first $n$ color codes of
 $W$ onto $T$, rejecting if $W$ runs out or one of these $n$ codes is $11$; moves the bits on top

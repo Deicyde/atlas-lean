@@ -1,6 +1,6 @@
 # Large valuations in short runs of consecutive integers are rare
 
-**Large valuations in short runs of consecutive integers are rare.** For a natural number
+For a natural number
 $x$ let $K = \lfloor \exp(0.8 \sqrt{\log x}) \rfloor$ and, for a prime $p$, let
 $D_p = 1 + \lfloor \log x / \log p \rfloor$. Write $v_p(n)$ for the exponent of $p$ in a
 positive integer $n$. Then the number of integers $m$ with $1 \le m \le x$ for which some prime

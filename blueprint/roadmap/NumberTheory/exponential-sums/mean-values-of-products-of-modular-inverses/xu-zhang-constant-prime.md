@@ -1,6 +1,6 @@
 # Xu–Zhang constant at a prime
 
-**Xu–Zhang constant at a prime.** For every prime $p$, the Xu–Zhang constant of $p$ is
+For every prime $p$, the Xu–Zhang constant of $p$ is
 
 $$C_p = 1 + \frac{2p^3 + p^2 - 1}{(p^2 + 1)(p^2 + p + 1)} - \frac{1}{p^2 + p + 1}.$$
 

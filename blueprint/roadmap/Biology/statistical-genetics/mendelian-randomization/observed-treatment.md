@@ -1,3 +1,3 @@
 # Observed treatment in a potential-outcomes model
 
-**Observed treatment in a potential-outcomes model.** The observed treatment `D = D(Z)`.
+The observed treatment `D = D(Z)`.

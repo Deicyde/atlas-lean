@@ -1,6 +1,6 @@
 # Pointed Gromov–Hausdorff convergence with strict distortion
 
-**Pointed Gromov–Hausdorff convergence with strict distortion.** Let $X_0, X_1, \dots$ and
+Let $X_0, X_1, \dots$ and
 $Y$ be pseudometric spaces with base points $p_n \in X_n$ and $q \in Y$. Then $(X_n, p_n)$
 converges to $(Y, q)$ in the pointed Gromov–Hausdorff sense if and only if for all $R > 0$ and
 $\varepsilon > 0$ there is $N$ such that for every $n \ge N$ there are a map $f$ from the open

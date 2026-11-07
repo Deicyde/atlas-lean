@@ -1,6 +1,6 @@
 # Edit distance algorithm
 
-**Edit distance algorithm.** Given lists $s = s_1 \cdots s_m$ and $t = t_1 \cdots t_n$ over a
+Given lists $s = s_1 \cdots s_m$ and $t = t_1 \cdots t_n$ over a
 type with a Boolean equality test, the algorithm fills a table $D(i, j)$ for $0 \le i \le m$ and
 $0 \le j \le n$ by $D(0, j) = j$, $D(i, 0) = i$ and
 $D(i, j) = \min(D(i-1, j-1) + c_{ij}, D(i-1, j) + 1, D(i, j-1) + 1)$ for $i, j \ge 1$,

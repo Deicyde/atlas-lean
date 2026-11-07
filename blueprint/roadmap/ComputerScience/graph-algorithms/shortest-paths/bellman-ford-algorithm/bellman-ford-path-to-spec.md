@@ -1,6 +1,6 @@
 # Bellman-Ford reconstructed paths are simple and realize the distances
 
-**Bellman-Ford reconstructed paths are simple and realize the distances.** Let $E$ be a list
+Let $E$ be a list
 of integer-weighted directed edges on the vertices $\{0, \dots, n-1\}$ and let $s$ be a vertex.
 Suppose Bellman-Ford run on $E$ from $s$ returns distances $d$ together with predecessor edges,
 and that reconstructing a path to a vertex $t$ (following predecessor edges back from $t$ for at

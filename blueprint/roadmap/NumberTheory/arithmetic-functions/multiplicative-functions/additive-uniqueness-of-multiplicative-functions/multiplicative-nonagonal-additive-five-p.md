@@ -1,6 +1,6 @@
 # Nonagonal additive uniqueness: the step at powers of 5
 
-**Nonagonal additive uniqueness: the step at powers of 5.** Let $f$ be a multiplicative
+Let $f$ be a multiplicative
 arithmetic function with values in $\mathbb{C}$ such that $f(a + b) = f(a) + f(b)$ for all
 positive integers $a$ and $b$ that are generalized nonagonal numbers, that is, $2a = m(7m - 5)$
 and $2b = k(7k - 5)$ for some integers $m$ and $k$. Let $r \ge 3$ be a natural number and put

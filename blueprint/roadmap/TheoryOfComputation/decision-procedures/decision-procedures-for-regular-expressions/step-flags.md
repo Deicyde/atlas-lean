@@ -1,6 +1,6 @@
 # Flags of the next node
 
-**Flags of the next node.** Given the list $A$ of flag triples of the nodes before it, the
+Given the list $A$ of flag triples of the nodes before it, the
 flag triple of a node is $(\mathrm{false}, \mathrm{false}, \mathrm{false})$ for a zero node,
 $(\mathrm{true}, \mathrm{false}, \mathrm{false})$ for an epsilon node and
 $(\mathrm{true}, \mathrm{true}, \mathrm{false})$ for a letter node. For a sum, product or star

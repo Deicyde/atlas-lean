@@ -1,6 +1,6 @@
 # Bipartitions into distinct parts from the partition function
 
-**Bipartitions into distinct parts from the partition function.** Let $q(n)$ be the number of
+Let $q(n)$ be the number of
 ordered pairs of partitions into distinct parts whose sizes add up to $n$, and let $p(m)$ be the
 number of partitions of $m$. For every $n \ge 0$, $q(n) = \sum_{k \ge 0} p(n - k(k+1)/2)$, where
 the sum runs over the $k$ with $k(k+1)/2 \le n$.

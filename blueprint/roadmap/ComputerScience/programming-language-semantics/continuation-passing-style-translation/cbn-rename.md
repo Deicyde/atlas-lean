@@ -1,6 +1,6 @@
 # The call-by-name CPS translation commutes with renaming
 
-**The call-by-name CPS translation commutes with renaming.** Fix an answer type $R$ and write
+Fix an answer type $R$ and write
 $\overline{t}$ for the call-by-name CPS translation of a term $t$. For a renaming $\rho$ from a
 context $\Gamma$ to a context $\Delta$, let $\overline{\rho}$ be the renaming of the translated
 contexts that sends the translation of each variable $x$ of $\Gamma$ to the translation of

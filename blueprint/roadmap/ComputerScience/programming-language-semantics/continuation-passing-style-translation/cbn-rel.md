@@ -1,6 +1,6 @@
 # Logical relation for the call-by-name CPS translation
 
-**Logical relation for the call-by-name CPS translation.** Fix an answer type $R$ and an
+Fix an answer type $R$ and an
 interpretation $I$ of the base types. Write $D(A)$ for the set of values of a simple type $A$
 ($D(b) = I(b)$ for a base type $b$, and $D(A \to B)$ is the set of functions from $D(A)$ to
 $D(B)$), $A^\ast$ for the call-by-name CPS translation of $A$, and

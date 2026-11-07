@@ -1,6 +1,6 @@
 # Gutkovskiy's sequence is bounded by the index
 
-**Gutkovskiy's sequence is bounded by the index.** For every natural number $n$, the term
+For every natural number $n$, the term
 $g_n$ of Gutkovskiy's sequence satisfies $g_n \le n$.
 
 ## Sources

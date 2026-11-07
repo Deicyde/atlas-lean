@@ -1,6 +1,6 @@
 # Liminf of the count of binary expansions without adjacent ones
 
-**Liminf of the count of binary expansions without adjacent ones.** For real $x$ let $z(x)$
+For real $x$ let $z(x)$
 be the number of natural numbers $n < x$ (including $0$) whose binary expansion has no two
 adjacent $1$s, let $\varphi$ be the golden ratio and let $\gamma = \log_2 \varphi$. Then
 $\liminf_{x \to \infty} z(x) / x^{\gamma} = (3\varphi + 1) / 5$.

@@ -1,6 +1,6 @@
 # Craven–Csordas characterization of multiplier $n$-sequences
 
-**Craven–Csordas characterization of multiplier $n$-sequences.** Let $n$ be a natural number
+Let $n$ be a natural number
 and $t_0, t_1, \dots$ real numbers. Say a real polynomial splits over $\mathbb{R}$ if it is a
 constant times a product of linear factors $x - r$ with $r$ real (the zero polynomial splits).
 Then the following are equivalent: for every real polynomial $\sum_k a_k x^k$ of degree at most

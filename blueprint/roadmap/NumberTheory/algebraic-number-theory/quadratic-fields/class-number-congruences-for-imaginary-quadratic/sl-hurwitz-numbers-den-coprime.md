@@ -1,6 +1,6 @@
 # Denominators of the Hurwitz-type numbers of Sl
 
-**Denominators of the Hurwitz-type numbers of Sl.** Let $\mathrm{Sl}, \mathrm{Cl}$ be formal
+Let $\mathrm{Sl}, \mathrm{Cl}$ be formal
 power series in $\mathbb{Q}[[u]]$ with $\mathrm{Sl}' = \mathrm{Cl}^2$,
 $\mathrm{Cl}' = -\mathrm{Sl}^2$, $\mathrm{Sl}(0) = 0$ and $\mathrm{Cl}(0) = 1$. Let $C_n$ be the
 coefficient of $u^n$ in $\mathrm{Sl}$; write $\mathrm{Sl}(u) = u\,S_0(u)$ with

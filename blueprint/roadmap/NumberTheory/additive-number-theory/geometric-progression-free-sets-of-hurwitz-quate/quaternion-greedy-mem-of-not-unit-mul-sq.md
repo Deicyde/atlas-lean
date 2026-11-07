@@ -1,6 +1,6 @@
 # Quaternions of prime-square norm separating the greedy set from Rankin's set
 
-**Quaternions of prime-square norm separating the greedy set from Rankin's set.** A Hurwitz
+A Hurwitz
 quaternion is a quaternion whose four rational coordinates are either all integers or all halves
 of odd integers; its norm $\mathrm{Nm}(q)$ is the sum of the squares of its coordinates, and a
 Hurwitz unit is a Hurwitz quaternion of norm $1$. Let $\mathcal{G}$ be a set of quaternions such

@@ -1,6 +1,6 @@
 # Store-typing weakening
 
-**Store-typing weakening.** Let $\Gamma$ be a variable context and let $S$ and $S'$ be store
+Let $\Gamma$ be a variable context and let $S$ and $S'$ be store
 typings such that $S$ is a prefix of $S'$. If a term $t$ has type $T$ under $\Gamma$ and $S$,
 then $t$ has type $T$ under $\Gamma$ and $S'$.
 

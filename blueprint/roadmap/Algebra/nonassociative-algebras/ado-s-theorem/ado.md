@@ -1,6 +1,6 @@
 # Ado's theorem
 
-**Ado's theorem.** Every finite-dimensional Lie algebra $L$ over a field $K$ of
+Every finite-dimensional Lie algebra $L$ over a field $K$ of
 characteristic zero has a faithful finite-dimensional representation: there are a natural
 number $n$ and an injective homomorphism of Lie algebras over $K$ from $L$ into the Lie algebra
 of $K$-linear endomorphisms of $K^n$ with the commutator bracket.

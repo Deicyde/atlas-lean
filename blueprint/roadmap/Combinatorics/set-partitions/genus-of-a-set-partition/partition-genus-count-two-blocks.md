@@ -1,6 +1,6 @@
 # Genus count of two-block partitions
 
-**Genus count of two-block partitions.** Let $n$, $p$ and $g$ be natural numbers with
+Let $n$, $p$ and $g$ be natural numbers with
 $2 \le p < n$. The number $C_{n,[p,\,n-p]}^{(g)}$ of genus-$g$ set partitions of
 $\{0, \dots, n-1\}$ into two blocks of sizes $p$ and $n - p$ equals
 

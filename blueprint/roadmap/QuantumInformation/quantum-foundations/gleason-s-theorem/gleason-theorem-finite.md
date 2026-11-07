@@ -1,6 +1,6 @@
 # Gleason's theorem in finite dimensions
 
-**Gleason's theorem in finite dimensions.** Let $H$ be a finite-dimensional complex Hilbert
+Let $H$ be a finite-dimensional complex Hilbert
 space of dimension at least $3$, write $\operatorname{tr}$ for the trace of a $\mathbb{C}$-linear
 map on $H$, and let $\mu$ be a frame function on the projection lattice of $H$. Then there is a
 unique continuous linear operator $\rho$ on $H$ such that $\rho$ is positive,

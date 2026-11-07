@@ -1,6 +1,6 @@
 # Integrality via equality of minimal polynomials
 
-**Integrality via equality of minimal polynomials.** Let $A$ be an integrally closed domain
+Let $A$ be an integrally closed domain
 with fraction field $K$, and let $L$ be a field extension of $K$ that is also an $A$-algebra,
 with the $A$-algebra structure on $L$ the composite of $A \to K$ and $K \to L$. An element
 $\alpha \in L$ that is integral over $K$ is integral over $A$ if and only if the minimal

@@ -1,6 +1,6 @@
 # Linear-chain conditional random field
 
-**Linear-chain conditional random field.** Let $S$ be a type of states, $O$ a type of inputs
+Let $S$ be a type of states, $O$ a type of inputs
 and $R$ a type of weights with a zero and a relation $\le$. A linear-chain conditional random
 field consists of a unary potential $\phi(x, t, s) \in R$ and a transition potential
 $\psi(x, t, s, s') \in R$ from $s$ to $s'$, given for every observation sequence

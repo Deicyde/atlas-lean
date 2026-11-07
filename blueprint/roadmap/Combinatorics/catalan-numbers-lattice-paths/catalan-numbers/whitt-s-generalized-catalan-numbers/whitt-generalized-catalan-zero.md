@@ -1,6 +1,6 @@
 # Whitt's generalized Catalan number at zero
 
-**Whitt's generalized Catalan number at zero.** For every rational number $\alpha$, Whitt's
+For every rational number $\alpha$, Whitt's
 generalized Catalan number $C(\alpha, 0)$ equals $0$, being an empty sum.
 
 ## Sources

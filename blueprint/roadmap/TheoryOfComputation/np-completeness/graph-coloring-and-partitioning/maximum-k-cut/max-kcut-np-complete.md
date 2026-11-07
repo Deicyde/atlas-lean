@@ -1,6 +1,6 @@
 # MAXIMUM k-CUT is NP-complete
 
-**MAXIMUM k-CUT is NP-complete.** The decision problem MAXIMUM k-CUT lies in NP, and every
+The decision problem MAXIMUM k-CUT lies in NP, and every
 decision problem in NP has a polynomial-time many-one reduction to MAXIMUM k-CUT.
 
 ## Sources

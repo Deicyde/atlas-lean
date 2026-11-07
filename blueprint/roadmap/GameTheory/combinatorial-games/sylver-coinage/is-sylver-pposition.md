@@ -1,6 +1,6 @@
 # P-positions of Sylver Coinage
 
-**P-positions of Sylver Coinage.** A set $M$ of natural numbers is a P-position of Sylver
+A set $M$ of natural numbers is a P-position of Sylver
 Coinage when $1 \notin M$ and, for every legal move $q$ of $M$, the position $M \cup \{q\}$ is
 an N-position. P-positions and N-positions are defined together, as a mutual inductive
 definition. In particular a position whose only legal move is $1$ is a P-position (the player to

@@ -1,6 +1,6 @@
 # The map $\overline{\mathrm{rev}}$
 
-**The map $\overline{\mathrm{rev}}$.** Fix a list $L$, and let $E$ be its periodic Zeckendorf
+Fix a list $L$, and let $E$ be its periodic Zeckendorf
 collection, $\bar\beta^1$ the maximal $L^*$-block starting at index $0$, $\lt _d$ the descending
 lexicographic order, $\mathrm{rev}_n$ the reversal of the first $n$ entries, and $\bar\mu$ the
 bar of a finitely supported $\mu$ relative to $E$. For a coefficient function

@@ -1,6 +1,6 @@
 # Nonzero squares modulo $n$
 
-**Nonzero squares modulo $n$.** For a natural number $n$, $S(n)$ is the set of elements $x$
+For a natural number $n$, $S(n)$ is the set of elements $x$
 of $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$ with $x \neq 0$ and $x = y^2$ for some
 $y \in \mathbb{Z}_n$.
 

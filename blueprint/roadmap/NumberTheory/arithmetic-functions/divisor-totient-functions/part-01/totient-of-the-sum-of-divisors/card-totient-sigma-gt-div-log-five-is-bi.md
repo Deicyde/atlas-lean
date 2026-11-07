@@ -1,6 +1,6 @@
 # Exceptions to $\varphi(\sigma(n)) \le n / \log_5 n$
 
-**Exceptions to $\varphi(\sigma(n)) \le n / \log_5 n$.** Write $\log_k$ for the $k$-fold
+Write $\log_k$ for the $k$-fold
 iterated natural logarithm, and let $\varphi$ be Euler's totient function and $\sigma$ the sum of
 divisors. The number of integers $n$ with $1 \le n \le x$ and $\varphi(\sigma(n)) > n / \log_5 n$
 is $O(x \log_5 x / \log_4 x)$ as $x \to \infty$.

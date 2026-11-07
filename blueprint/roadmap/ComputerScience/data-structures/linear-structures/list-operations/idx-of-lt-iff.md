@@ -1,3 +1,3 @@
 # List positions agree with values of an increasing map
 
-**List positions agree with values of an increasing map.** In a list along which `f` increases, position order agrees with value order.
+In a list along which `f` increases, position order agrees with value order.

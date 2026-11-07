@@ -1,6 +1,6 @@
 # Strong products of compatibly almost opposable graphs
 
-**Strong products of compatibly almost opposable graphs.** If $G$ and $H$ are compatibly
+If $G$ and $H$ are compatibly
 almost opposable graphs, then their strong product $G \boxtimes H$ is compatibly almost
 opposable.
 

@@ -1,6 +1,6 @@
 # Finite two-way nondeterministic automata accept regular languages
 
-**Finite two-way nondeterministic automata accept regular languages.** Every
+Every
 nondeterministic two-way automaton with finitely many states accepts a regular language.
 
 A run of such an automaton on a word starts in a start state with the head at the first

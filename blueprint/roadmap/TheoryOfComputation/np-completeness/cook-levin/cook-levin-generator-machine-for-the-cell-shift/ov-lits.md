@@ -1,6 +1,6 @@
 # Literals of an overflow clause
 
-**Literals of an overflow clause.** For a layout $L$ with label block size $A$, $K$ stacks and
+For a layout $L$ with label block size $A$, $K$ stacks and
 $g$ symbol codes, row width $W = A + K H g$, situation offsets $s_a$, push counts $p$, consumed
 counts $c$ and numbers $H, t, i, k, r$, write $S[t, i] = (t + 1) W + s_a(i)$ for the situation
 variable (the label/state variable $s_a(i)$ of row $t + 1$), and

@@ -1,6 +1,6 @@
 # Braid groups on five or more strands have proper non-abelian torsion-free quotients
 
-**Braid groups on five or more strands have proper non-abelian torsion-free quotients.** For
+For
 every $n > 4$, the braid group $B_n$ on $n$ strands has a nontrivial normal subgroup $N$ such that
 the quotient $B_n / N$ is non-abelian and torsion-free (no element other than the identity has
 finite order).

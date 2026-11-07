@@ -1,6 +1,6 @@
 # A congruence for partitions with max-rook number 4
 
-**A congruence for partitions with max-rook number 4.** Let $R_4(n)$ be the number of
+Let $R_4(n)$ be the number of
 partitions of $n$ with max-rook number $4$. For all natural numbers $p \ge 2$ and $n > 16$,
 $R_4(n + 12p) \equiv R_4(n) \pmod p$.
 

@@ -1,6 +1,6 @@
 # $p$ divides $\binom{p^r a}{p^s b}$ when $r > s$
 
-**$p$ divides $\binom{p^r a}{p^s b}$ when $r > s$.** Let $p$ be a prime, let $r > s$ be
+Let $p$ be a prime, let $r > s$ be
 natural numbers, and let $a, b$ be natural numbers not divisible by $p$. Then
 $p \mid \binom{p^r a}{p^s b}$.
 

@@ -1,6 +1,6 @@
 # Erdős Problem 884 is false (Larsen)
 
-**Erdős Problem 884 is false (Larsen).** For every real constant $C > 0$ there is a positive
+For every real constant $C > 0$ there is a positive
 integer $n$ whose divisors $d_1 < d_2 < \dots < d_t$, listed in increasing order, satisfy
 $\sum_{1 \le i < j \le t} \frac{1}{d_j - d_i} >
 C \left(1 + \sum_{1 \le i < t} \frac{1}{d_{i+1} - d_i}\right)$.

@@ -1,6 +1,6 @@
 # SZ-qshuffle of $y$ with itself
 
-**SZ-qshuffle of $y$ with itself.** The SZ-qshuffle product of the one-letter word $y$ with
+The SZ-qshuffle product of the one-letter word $y$ with
 itself is the single word $yy$: $y \mathbin{\text{ш}} y = yy$.
 
 ## Sources

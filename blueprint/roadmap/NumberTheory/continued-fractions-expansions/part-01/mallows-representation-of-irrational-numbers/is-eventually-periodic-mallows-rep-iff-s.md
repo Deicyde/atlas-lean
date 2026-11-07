@@ -1,6 +1,6 @@
 # Mallows and Stern–Brocot representations are eventually periodic together
 
-**Mallows and Stern–Brocot representations are eventually periodic together.** For every
+For every
 irrational $\alpha \in (0, 1)$, the Mallows representation $M(\alpha)$ is eventually periodic if
 and only if the Stern–Brocot representation $\mathrm{SB}(\alpha)$ is eventually periodic.
 

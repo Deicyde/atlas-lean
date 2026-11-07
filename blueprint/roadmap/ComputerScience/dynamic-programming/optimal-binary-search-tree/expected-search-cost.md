@@ -1,6 +1,6 @@
 # Expected search cost of a binary search tree
 
-**Expected search cost of a binary search tree.** Let $R$ be an additive commutative monoid,
+Let $R$ be an additive commutative monoid,
 let $n$ be a natural number, and let $p_0, \dots, p_{n-1} \in R$ (key weights) and
 $q_0, \dots, q_n \in R$ (dummy-key weights) be given. Let $T$ be a binary tree whose nodes are
 labelled by elements of $\{0, \dots, n-1\}$ and whose inorder traversal is $0, 1, \dots, n-1$, so

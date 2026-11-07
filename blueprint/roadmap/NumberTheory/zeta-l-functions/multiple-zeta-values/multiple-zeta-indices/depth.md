@@ -1,6 +1,6 @@
 # Depth of an index
 
-**Depth of an index.** The depth of an index $(k_1, \ldots, k_r)$ is its number of
+The depth of an index $(k_1, \ldots, k_r)$ is its number of
 entries $r$.
 
 ## Sources

@@ -1,3 +1,3 @@
 # Norm bound for the Schur linear map
 
-**Norm bound for the Schur linear map.** The Schur operator is bounded by `√(R * C)`.
+The Schur operator is bounded by `√(R * C)`.

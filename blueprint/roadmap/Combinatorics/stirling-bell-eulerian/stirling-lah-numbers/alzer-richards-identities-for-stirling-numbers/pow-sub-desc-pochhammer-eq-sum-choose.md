@@ -1,6 +1,6 @@
 # Sabar's identity for complex arguments
 
-**Sabar's identity for complex arguments.** For a complex number $w$ and a natural number $j$
+For a complex number $w$ and a natural number $j$
 write $\binom{w}{j} = w(w-1)\cdots(w-j+1)/j!$. For every natural number $p \ge 1$ and every
 complex number $z$,
 

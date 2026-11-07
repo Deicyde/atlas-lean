@@ -1,6 +1,6 @@
 # Recurrence for partial sums of $m$-step Fibonacci numbers
 
-**Recurrence for partial sums of $m$-step Fibonacci numbers.** Let $m \ge 1$ and let
+Let $m \ge 1$ and let
 $F : \mathbb{N} \to \mathbb{N}$ satisfy $F(0) = 1$, $F(k) = 2^{k-1}$ for $1 \le k \le m - 1$,
 and $F(k) = F(k-1) + \cdots + F(k-m)$ for $k \ge m$ (the $m$-step Fibonacci numbers). Then a
 real sequence $(S_n)_{n \ge 0}$ satisfies $S_n = F(0) + F(1) + \cdots + F(n)$ for all $n$ if

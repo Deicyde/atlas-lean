@@ -1,6 +1,6 @@
 # Elements of valuation one at the primes dividing a modulus are ray elements
 
-**Elements of valuation one at the primes dividing a modulus are ray elements.** Let $K$ be a
+Let $K$ be a
 number field, $\mathfrak m$ a modulus of $K$ with finite part $\mathfrak m_0$, and
 $a \in K^\times$. If the multiplicative $\mathfrak p$-adic valuation of $a$ equals $1$ at every
 nonzero prime ideal $\mathfrak p$ of $\mathcal O_K$ containing $\mathfrak m_0$, then $a$ is

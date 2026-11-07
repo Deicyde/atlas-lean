@@ -1,6 +1,6 @@
 # Möbius sum over the monic divisors of a polynomial over a finite field
 
-**Möbius sum over the monic divisors of a polynomial over a finite field.** Let $F$ be a finite
+Let $F$ be a finite
 field with $q$ elements and let $\mu$ be the Möbius function of $F[T]$. For every monic
 $f \in F[T]$,
 

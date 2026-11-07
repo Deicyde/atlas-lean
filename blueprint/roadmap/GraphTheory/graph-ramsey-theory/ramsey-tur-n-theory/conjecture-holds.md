@@ -1,6 +1,6 @@
 # Resolution of Erdős Problem 22 (Fox–Loh–Zhao)
 
-**Resolution of Erdős Problem 22 (Fox–Loh–Zhao).** For a graph $G$ write $\alpha(G)$ for its
+For a graph $G$ write $\alpha(G)$ for its
 independence number and $e(G)$ for its number of edges, and call $G$ $K_4$-free if it has no four
 pairwise adjacent vertices. All four of the following assertions hold.
 

@@ -1,6 +1,6 @@
 # Ulam words with three leading ones
 
-**Ulam words with three leading ones.** For every $n \ge 3$, the word $1^3 0^{n-3}$ (three
+For every $n \ge 3$, the word $1^3 0^{n-3}$ (three
 ones followed by $n - 3$ zeros) is an Ulam word if and only if $n \equiv 0 \pmod 4$ or
 $n \equiv 1 \pmod 4$.
 

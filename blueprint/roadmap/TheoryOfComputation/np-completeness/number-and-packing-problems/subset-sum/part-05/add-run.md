@@ -1,6 +1,6 @@
 # Adding a canonical chosen block
 
-**Adding a canonical chosen block.** Let $p$ and $\mathit{rest}$ be bit lists and $z$ a bit
+Let $p$ and $\mathit{rest}$ be bit lists and $z$ a bit
 such that $p$ is nonempty and ends in true, or $p$ is empty and $z$ is false (the flag $z$
 records whether the bits of the block read so far end in false), and let $c$ be a bit. Start the
 SUBSET-SUM verifier machine at the label that adds a chosen number with carry $c$ and flag $z$,

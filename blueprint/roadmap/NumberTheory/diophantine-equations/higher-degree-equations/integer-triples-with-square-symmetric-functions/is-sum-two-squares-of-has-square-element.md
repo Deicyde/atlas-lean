@@ -1,6 +1,6 @@
 # Rational solutions are sums of two squares and rescale to integer solutions
 
-**Rational solutions are sums of two squares and rescale to integer solutions.** Let $a$, $b$,
+Let $a$, $b$,
 $c$ be rational numbers such that $a + b + c$, $ab + bc + ca$ and $abc$ are squares of rational
 numbers. Then each of $a$, $b$ and $c$ is a sum of two squares of rational numbers. Moreover,
 there is a nonzero rational number $k$ such that $A = ka$, $B = kb$ and $C = kc$ are integers,

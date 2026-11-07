@@ -1,6 +1,6 @@
 # Components avoiding the color of zero are monochromatic
 
-**Components avoiding the color of zero are monochromatic.** Let $n$ and $t$ be natural
+Let $n$ and $t$ be natural
 numbers, let $f$ be a map from $\mathbb{Z}/n\mathbb{Z}$ to itself, and let $c$ be a coloring of
 $\mathbb{Z}/n\mathbb{Z}$ with $t$ colors that uses every color and is rainbow-free for
 $x - y = f(z)$: no $x, y, z \in \mathbb{Z}/n\mathbb{Z}$ with $x - y = f(z)$ have $c(x), c(y), c(z)$

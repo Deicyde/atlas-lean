@@ -1,6 +1,6 @@
 # Bonse's inequality
 
-**Bonse's inequality.** Let $p_1 = 2, p_2 = 3, p_3 = 5, \dots$ be the prime numbers in
+Let $p_1 = 2, p_2 = 3, p_3 = 5, \dots$ be the prime numbers in
 increasing order. For every natural number $k > 4$, the square of the $(k+1)$-st prime is
 smaller than the product of the first $k$ primes: $p_{k+1}^2 < p_1 p_2 \cdots p_k$.
 

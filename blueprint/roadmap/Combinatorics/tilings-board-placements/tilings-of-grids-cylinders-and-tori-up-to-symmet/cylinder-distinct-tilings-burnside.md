@@ -1,6 +1,6 @@
 # Burnside count of cylinder tilings under rectangle symmetries
 
-**Burnside count of cylinder tilings under rectangle symmetries.** Let $T$ be a finite set of
+Let $T$ be a finite set of
 tile designs, let $n, m \ge 1$, and let $R$ be a subgroup of the dihedral group
 $\langle r, f \rangle$ of order $8$ that is contained in the rectangle group
 $\lbrace 1, r^2, f, r^2 f \rbrace$ and acts on $T$. For $g \in R$ let $\phi_g$ be its cell map on

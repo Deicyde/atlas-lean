@@ -1,6 +1,6 @@
 # Powers of $k + 1$ via Stirling numbers of the second kind
 
-**Powers of $k + 1$ via Stirling numbers of the second kind.** For all natural numbers $k$
+For all natural numbers $k$
 and $\ell$,
 
 $$(k + 1)^\ell = \sum_{j=0}^{k} \binom{k}{j}\, j!\, S(\ell + 1, j + 1),$$

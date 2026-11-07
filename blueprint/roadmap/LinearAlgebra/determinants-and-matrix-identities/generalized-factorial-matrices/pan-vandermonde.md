@@ -1,6 +1,6 @@
 # Pan's theorem on generalized factorial matrices
 
-**Pan's theorem on generalized factorial matrices.** Let $K$ be $\mathbb{R}$ or $\mathbb{C}$,
+Let $K$ be $\mathbb{R}$ or $\mathbb{C}$,
 let $p$ be a positive integer, let $x_0, \dots, x_{p-1} \in K$ be pairwise distinct, and let
 $\alpha, \beta, \gamma \in \mathbb{R}$. For $y \in K$, $a \in \mathbb{R}$ and $n \in \mathbb{N}$
 write $(y \mid a)_n = \prod_{j=0}^{n-1} (y - ja)$. Let numbers $S(a, b, c; n, k) \in K$, for

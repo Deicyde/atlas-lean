@@ -1,6 +1,6 @@
 # PEND partitions of zero
 
-**PEND partitions of zero.** The number of PEND partitions of $0$ is $1$, that is,
+The number of PEND partitions of $0$ is $1$, that is,
 $\mathrm{pend}(0) = 1$.
 
 ## Sources

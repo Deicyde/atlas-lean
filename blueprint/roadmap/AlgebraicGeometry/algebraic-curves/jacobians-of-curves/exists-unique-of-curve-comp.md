@@ -1,6 +1,6 @@
 # Universal property of the Jacobian
 
-**Universal property of the Jacobian.** Let $C$ be a proper, smooth, geometrically irreducible
+Let $C$ be a proper, smooth, geometrically irreducible
 curve over a field $k$, let $J(C)$ be its Jacobian, let $P$ be a $k$-rational point of $C$, and
 let $\iota_P : C \to J(C)$ be the Abel–Jacobi map based at $P$. Let $A$ be a group scheme over $k$
 that is smooth, proper and geometrically irreducible. For every morphism of $k$-schemes

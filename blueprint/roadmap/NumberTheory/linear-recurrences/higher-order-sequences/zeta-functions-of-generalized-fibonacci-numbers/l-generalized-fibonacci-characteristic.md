@@ -1,6 +1,6 @@
 # Characteristic polynomial of the ℓ-generalized Fibonacci recurrence
 
-**Characteristic polynomial of the ℓ-generalized Fibonacci recurrence.** For a natural number
+For a natural number
 $\ell$, the characteristic polynomial of the $\ell$-generalized Fibonacci recurrence is the
 polynomial $\varphi_\ell(X) = X^\ell - \sum_{i=0}^{\ell-1} X^i$ in $\mathbb{C}[X]$; for
 $\ell \ge 2$ this is $X^\ell - X^{\ell-1} - \cdots - X - 1$.

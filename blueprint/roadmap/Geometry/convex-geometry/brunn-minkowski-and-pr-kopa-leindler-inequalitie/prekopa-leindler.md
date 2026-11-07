@@ -1,6 +1,6 @@
 # Prékopa–Leindler inequality
 
-**Prékopa–Leindler inequality.** Let $n \ge 0$ and $0 < t < 1$, and let
+Let $n \ge 0$ and $0 < t < 1$, and let
 $f, g, h : \mathbb{R}^n \to [0, \infty]$ be Borel measurable functions on Euclidean space
 $\mathbb{R}^n$ such that $f(x)^{1-t} g(y)^t \le h((1-t)x + ty)$ for all $x, y \in \mathbb{R}^n$.
 Then, with all integrals taken over $\mathbb{R}^n$ against Lebesgue measure,

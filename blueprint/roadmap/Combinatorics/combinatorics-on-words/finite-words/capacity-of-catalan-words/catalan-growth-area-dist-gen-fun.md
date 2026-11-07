@@ -1,6 +1,6 @@
 # Area generating function of words with unit-bounded rises, by first letter
 
-**Area generating function of words with unit-bounded rises, by first letter.** For natural
+For natural
 numbers $i$ and $j$ with $1 \le i \le j$ and for $n \ge 0$, let $c(n, j, i; q) \in \mathbb{Z}[q]$
 be the area distribution of the words of length $n$ with letters in $\{1, \dots, j\}$, each letter
 at most one more than the letter before it, that begin with $i$ and end with $j$: the sum of

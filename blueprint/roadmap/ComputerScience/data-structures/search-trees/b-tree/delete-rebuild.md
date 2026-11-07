@@ -1,6 +1,6 @@
 # B-tree deletion by rebuilding
 
-**B-tree deletion by rebuilding.** For a minimum degree $t$, a key $x$ and a tree $T$, the
+For a minimum degree $t$, a key $x$ and a tree $T$, the
 rebuilding deletion of $x$ from $T$ is the tree obtained by inserting the keys of the list $L$,
 from right to left, into the empty tree with B-tree insertion of minimum degree $t$, where $L$ is
 the inorder flattening of $T$ with the first occurrence of $x$ removed ($L$ is the flattening

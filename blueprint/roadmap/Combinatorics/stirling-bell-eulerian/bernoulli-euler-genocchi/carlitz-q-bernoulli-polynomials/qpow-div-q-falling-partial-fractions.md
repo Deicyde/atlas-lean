@@ -1,6 +1,6 @@
 # Partial fraction decomposition of $q^{kx}$ over a $q$-falling factorial
 
-**Partial fraction decomposition of $q^{kx}$ over a $q$-falling factorial.** Let $q > 0$ with
+Let $q > 0$ with
 $q \ne 1$, let $[x] = (q^x - 1)/(q - 1)$, write $[m]! = [1][2]\cdots[m]$ (with $[0]! = 1$) and
 $\binom{k}{i}_q = [k]!/([i]!\,[k-i]!)$. Then for every natural number $k$ and every real number
 $x \notin \{0, 1, \dots, k\}$,

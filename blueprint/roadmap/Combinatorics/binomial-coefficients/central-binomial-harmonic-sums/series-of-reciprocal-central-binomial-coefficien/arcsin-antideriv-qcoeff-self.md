@@ -1,6 +1,6 @@
 # Leading coefficient of a Q-polynomial
 
-**Leading coefficient of a Q-polynomial.** For every natural number $l \ge 1$, the coefficient
+For every natural number $l \ge 1$, the coefficient
 $q_l = q_{l,l}$ of $x^l$ in Zurita's polynomial $Q_l$ equals $-4/l$.
 
 ## Sources

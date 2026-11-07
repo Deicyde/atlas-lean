@@ -1,6 +1,6 @@
 # Generalized tau at a prime power modulo the prime
 
-**Generalized tau at a prime power modulo the prime.** Let $p$ be a prime, let $s \ge 1$ and
+Let $p$ be a prime, let $s \ge 1$ and
 $n \ge 0$ be natural numbers, and for an integer $t$ let $P(t) = t(3t - 1)/2$ be the generalized
 pentagonal number. Then $\tau_{p^s}(n + 1)$ is congruent modulo $p$ to the sum of $(-1)^t$ over
 the integers $t$ with $-n \le t \le n$ and $n = p^s P(t)$.

@@ -1,4 +1,4 @@
 # Eigenvalue finiteness for finite-rank operators
 
-**Eigenvalue finiteness for finite-rank operators.** A finite-rank
+A finite-rank
 operator has only finitely many distinct nonzero eigenvalues.

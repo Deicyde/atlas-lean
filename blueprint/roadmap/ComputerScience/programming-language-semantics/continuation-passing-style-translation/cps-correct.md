@@ -1,6 +1,6 @@
 # Denotational correctness of the CPS translation (Meyer–Wand)
 
-**Denotational correctness of the CPS translation (Meyer–Wand).** Fix an answer type $R$
+Fix an answer type $R$
 and an interpretation $I$ of the base types; write $D(A)$ for the set interpreting a type $A$,
 $\overline{A}$, $\overline{\Gamma}$ and $\overline{t}$ for the call-by-value CPS translations of
 types, contexts and terms, and $[t]_\eta$ for the denotation of a term $t$ in an environment

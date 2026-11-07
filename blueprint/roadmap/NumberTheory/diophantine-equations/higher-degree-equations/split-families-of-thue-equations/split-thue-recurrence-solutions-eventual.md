@@ -1,6 +1,6 @@
 # Split Thue families eventually have only trivial solutions
 
-**Split Thue families eventually have only trivial solutions.** Let $(d, G, \gamma, \delta)$
+Let $(d, G, \gamma, \delta)$
 be a split Thue recurrence family. Then there is $n_0$ such that for every $n \ge n_0$ and all
 integers $x, y$,
 

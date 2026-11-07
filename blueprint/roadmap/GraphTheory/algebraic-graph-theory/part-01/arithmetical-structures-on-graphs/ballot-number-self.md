@@ -1,6 +1,6 @@
 # Diagonal ballot numbers are Catalan numbers
 
-**Diagonal ballot numbers are Catalan numbers.** For every natural number $n$, the ballot
+For every natural number $n$, the ballot
 number $B(n, n)$ equals the $n$-th Catalan number $C_n$.
 
 ## Sources

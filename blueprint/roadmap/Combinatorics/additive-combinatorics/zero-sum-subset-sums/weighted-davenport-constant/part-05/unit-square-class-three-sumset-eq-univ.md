@@ -1,6 +1,6 @@
 # Three-term sums with prescribed square classes cover $\mathbb{Z}_{p^r}$
 
-**Three-term sums with prescribed square classes cover $\mathbb{Z}_{p^r}$.** Let $p \ge 7$ be
+Let $p \ge 7$ be
 a prime, $r \ge 1$ and $n = p^r$; write $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$, $U(n)$ for its
 group of units, $A_1 = U(n)^2$ for the set of squares of units and $A_2 = U(n) \setminus U(n)^2$.
 For all units $x_1, x_2, x_3$ of $\mathbb{Z}_n$ and every $f : \{1, 2, 3\} \to \{1, 2\}$,

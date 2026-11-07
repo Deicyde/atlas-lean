@@ -1,6 +1,6 @@
 # Integral of $\exp(Lx)$
 
-**Integral of $\exp(Lx)$.** For real numbers $L \ne 0$, $a$ and $b$,
+For real numbers $L \ne 0$, $a$ and $b$,
 
 $$\int_a^b \exp(Lx)\,dx = \frac{\exp(Lb) - \exp(La)}{L},$$
 

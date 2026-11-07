@@ -1,6 +1,6 @@
 # Weakly prime-additive length
 
-**Weakly prime-additive length.** For a natural number $n$, the length $\kappa_n$ is the least
+For a natural number $n$, the length $\kappa_n$ is the least
 $t$ such that $n$ is a sum of positive powers of $t$ distinct prime divisors of $n$, and
 $\kappa_n = 0$ when $n$ has no such representation.
 

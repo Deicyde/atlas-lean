@@ -1,6 +1,6 @@
 # There are exactly 17 wallpaper groups
 
-**There are exactly 17 wallpaper groups.** Call a group $G$ of isometries of the Euclidean
+Call a group $G$ of isometries of the Euclidean
 plane $\mathbb{R}^2$ crystallographic if it is discrete, meaning that for every point $x$ and
 every $\varepsilon > 0$ only finitely many $g \in G$ satisfy
 $\operatorname{dist}(g x, x) \le \varepsilon$, and it contains translations by two linearly

@@ -1,6 +1,6 @@
 # Moments of the distance from square pyramidal numbers to the nearest square
 
-**Moments of the distance from square pyramidal numbers to the nearest square.** Let $a_n$
+Let $a_n$
 be the distance from the $n$-th square pyramidal number to the nearest square, and for a
 positive integer $k$ and real $x \ge 1$ let $M_k(x) = \sum_{1 \le n \le x} a_n^k$. For every
 positive integer $k$ there is a real constant $C_k$ such that for every real $x \ge 1$,

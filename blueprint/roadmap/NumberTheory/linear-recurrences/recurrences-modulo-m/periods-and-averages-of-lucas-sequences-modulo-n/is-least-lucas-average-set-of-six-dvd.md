@@ -1,6 +1,6 @@
 # Multiples of $6$ in the average set when $P \equiv 1$ and $Q \equiv 1$
 
-**Multiples of $6$ in the average set when $P \equiv 1$ and $Q \equiv 1$.** Let $(P, Q)$ be a
+Let $(P, Q)$ be a
 nondegenerate Lucas pair with Lucas sequence $U$, period set $S(U)$ and average set $S'(U)$. Let
 $n \ge 1$ be divisible by $6$, and suppose that $P \equiv 1$ and $Q \equiv 1 \pmod{\ell}$ for
 every prime $\ell$ dividing $n$. Then $n$ is the least element of $S'(U)$ divisible by $n$ and the

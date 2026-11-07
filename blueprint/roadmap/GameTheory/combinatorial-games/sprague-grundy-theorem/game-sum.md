@@ -1,6 +1,6 @@
 # Sum of impartial games
 
-**Sum of impartial games.** The sum $G + H$ of two impartial games $G$ and $H$ is the
+The sum $G + H$ of two impartial games $G$ and $H$ is the
 impartial game whose positions are the pairs $(a, b)$ of a position $a$ of $G$ and a position $b$
 of $H$, and in which a move changes exactly one component: from $(a, b)$ one may move to
 $(a', b)$ for any move from $a$ to $a'$ in $G$, or to $(a, b')$ for any move from $b$ to $b'$ in

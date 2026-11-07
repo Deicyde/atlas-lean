@@ -1,6 +1,6 @@
 # Sylvester–Schur criterion from the Erdős layer bound
 
-**Sylvester–Schur criterion from the Erdős layer bound.** Let $1 \le n < k$ be natural
+Let $1 \le n < k$ be natural
 numbers, put $N = k + n - 1$ and $L = \lfloor \log_2 N \rfloor$, and write $m\#$ for the product
 of the primes at most $m$. If
 

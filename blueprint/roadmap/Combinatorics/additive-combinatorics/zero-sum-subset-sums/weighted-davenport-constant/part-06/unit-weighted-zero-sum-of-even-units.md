@@ -1,6 +1,6 @@
 # Luca's lemma on unit-weighted zero sums modulo $2^r$
 
-**Luca's lemma on unit-weighted zero sums modulo $2^r$.** Let $r$ and $k$ be natural numbers
+Let $r$ and $k$ be natural numbers
 and let $x_1, \dots, x_k \in \mathbb{Z}/2^r\mathbb{Z}$. If the number of indices $j$ for which
 $x_j$ is a unit is even and nonzero, then there are units $a_1, \dots, a_k$ of
 $\mathbb{Z}/2^r\mathbb{Z}$ with $a_1 x_1 + \dots + a_k x_k = 0$.

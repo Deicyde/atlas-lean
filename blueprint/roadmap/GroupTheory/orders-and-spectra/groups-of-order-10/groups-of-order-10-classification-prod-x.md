@@ -1,6 +1,6 @@
 # Exclusive classification of groups of order 10, product form
 
-**Exclusive classification of groups of order 10, product form.** Let $G$ be a finite group
+Let $G$ be a finite group
 of order $10$, let $C_n$ denote the cyclic group of order $n$, and let $D_5$ denote the dihedral
 group of order $10$. Then exactly one of the following holds: $G$ is isomorphic to the direct
 product $C_5 \times C_2$, or $G$ is isomorphic to $D_5$.

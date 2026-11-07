@@ -1,6 +1,6 @@
 # Bounds on the ratio of the two spans
 
-**Bounds on the ratio of the two spans.** For every solution $(a, b, c)$ of the sum of
+For every solution $(a, b, c)$ of the sum of
 consecutive squares problem, $1 < (b - a)/(c - b) < 1 + 2^{1/3} + 2^{2/3}$.
 
 ## Sources

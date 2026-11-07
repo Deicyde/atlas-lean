@@ -1,6 +1,6 @@
 # Phase paths are disjoint augmenting paths
 
-**Phase paths are disjoint augmenting paths.** Let $\mathrm{mate}$ be a valid partner
+Let $\mathrm{mate}$ be a valid partner
 assignment, $k$ a level, $J$ a list of right vertices each unmatched and reached within $k + 1$
 rounds of the alternating layered search, and $U_L$, $U_R$ sets of left and right vertices. Then
 every path that the phase search at level $k$ collects from $J$ with used left vertices $U_L$ and

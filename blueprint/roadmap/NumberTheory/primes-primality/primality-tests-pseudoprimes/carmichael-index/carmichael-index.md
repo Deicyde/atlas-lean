@@ -1,6 +1,6 @@
 # Carmichael index
 
-**Carmichael index.** For a natural number $n$, the Carmichael index $N(n)$ is the number of
+For a natural number $n$, the Carmichael index $N(n)$ is the number of
 integers $a$ with $0 \le a \le n - 1$ and $a^n \equiv a \pmod{n}$.
 
 ## Sources

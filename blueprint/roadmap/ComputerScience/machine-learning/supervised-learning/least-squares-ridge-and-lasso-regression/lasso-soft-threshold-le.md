@@ -1,6 +1,6 @@
 # Lasso with an orthonormal design
 
-**Lasso with an orthonormal design.** Let $X$ be a real matrix with $m$ rows and columns indexed
+Let $X$ be a real matrix with $m$ rows and columns indexed
 by a finite set $\iota$ such that $X^\top X = I$, let $y \in \mathbb{R}^m$ and let $\lambda \ge 0$.
 Let $\hat\theta \in \mathbb{R}^\iota$ be given by $\hat\theta_i = S_{\lambda/2}((X^\top y)_i)$,
 where $S_t$ is soft thresholding at $t$. Then $\hat\theta$ minimizes the lasso objective: for every

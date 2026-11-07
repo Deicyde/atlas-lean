@@ -1,6 +1,6 @@
 # Kellner–Sondow factorization of the denominators of Bernoulli polynomials
 
-**Kellner–Sondow factorization of the denominators of Bernoulli polynomials.** Let $B_k$
+Let $B_k$
 denote the $k$-th Bernoulli number, with $B_1 = -1/2$, let
 $B_n(x) = \sum_{k=0}^{n} \binom{n}{k} B_k x^{n-k}$ be the $n$-th Bernoulli polynomial, and let
 $D_n$ be the least common multiple of the denominators of its nonzero coefficients. For a prime

@@ -1,6 +1,6 @@
 # Expansion by generalized Stirling numbers of the second kind
 
-**Expansion by generalized Stirling numbers of the second kind.** For every natural number
+For every natural number
 $n$, every real number $x$ and all real numbers $a(m, t)$, indexed by natural numbers $m$ and $t$,
 such that $a(m, t + 1) = m\,a(m, t) - (m + 1)\,a(m + 1, t)$ for all $m$ and $t$, writing
 ${n \brace m}_x$ for the generalized Stirling numbers of the second kind,

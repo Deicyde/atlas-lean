@@ -1,6 +1,6 @@
 # Two Fibonacci series for $\pi^2$
 
-**Two Fibonacci series for $\pi^2$.** Writing $F_m$ for the Fibonacci numbers ($F_0 = 0$,
+Writing $F_m$ for the Fibonacci numbers ($F_0 = 0$,
 $F_1 = 1$),
 
 $$\pi^2 = \frac{250}{8\sqrt{5}} \sum_{k=0}^{\infty} \frac{(k!)^2 \, F_{2k+2}}{(2k+2)!}

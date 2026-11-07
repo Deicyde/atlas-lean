@@ -1,6 +1,6 @@
 # Constant term and row sum of a shifted array
 
-**Constant term and row sum of a shifted array.** Let $R$ be a commutative semiring, let
+Let $R$ be a commutative semiring, let
 $(A_{i,k})_{i,k \in \mathbb{N}}$ be an array with entries in $R$, and let $r \in R$ and
 $n \in \mathbb{N}$. For $s \in R$ let $A^{(s)}$ be the $s$-shifted array with entries
 $A^{(s)}_{i,j} = \sum_{k=j}^{i} \binom{k}{j} A_{i,k} s^{k-j}$ (an empty sum when $j > i$), and let

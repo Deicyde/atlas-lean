@@ -1,6 +1,6 @@
 # Chain of triple nonterminals
 
-**Chain of triple nonterminals.** Write $(p, \gamma, q)$ for the nonterminal symbol given by
+Write $(p, \gamma, q)$ for the nonterminal symbol given by
 states $p, q$ and a stack symbol $\gamma$ (the nonterminals of the triple grammar are these
 triples and one extra initial nonterminal). The chain form of a list $\gamma_1 \cdots \gamma_k$
 of stack symbols along a nonempty list $s_0, s_1, \dots, s_m$ of states is the word

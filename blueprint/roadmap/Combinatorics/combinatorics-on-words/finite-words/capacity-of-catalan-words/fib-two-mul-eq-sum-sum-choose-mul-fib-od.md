@@ -1,6 +1,6 @@
 # A double-sum identity for even-indexed Fibonacci numbers
 
-**A double-sum identity for even-indexed Fibonacci numbers.** Let $F_k$ be the Fibonacci
+Let $F_k$ be the Fibonacci
 numbers, with $F_0 = 0$, $F_1 = 1$ and $F_{k+2} = F_{k+1} + F_k$, and set $F_{-1} = 1$. For every
 natural number $n \ge 1$,
 

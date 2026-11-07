@@ -1,6 +1,6 @@
 # LATIN SQUARE COMPLETION as a decision problem
 
-**LATIN SQUARE COMPLETION as a decision problem.** The decision problem LATIN SQUARE
+The decision problem LATIN SQUARE
 COMPLETION accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
 encoding of pairs of a natural number and a list of lists of natural numbers, to an instance
 $(n, G)$ that is well formed ($n > 0$ and $G$ consists of $n$ rows of length $n$ with entries at

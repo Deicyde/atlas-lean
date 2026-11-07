@@ -1,6 +1,6 @@
 # Preferred paths cover each vertex at most once
 
-**Preferred paths cover each vertex at most once.** In a valid link-cut tree state, the
+In a valid link-cut tree state, the
 concatenation of all preferred paths of the decomposition has no repeated vertex: no vertex
 occurs twice on one path or on two different paths.
 

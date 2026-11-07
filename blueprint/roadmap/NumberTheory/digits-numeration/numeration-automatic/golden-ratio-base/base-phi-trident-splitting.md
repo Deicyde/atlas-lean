@@ -1,6 +1,6 @@
 # Trident splitting at an even Lucas number
 
-**Trident splitting at an even Lucas number.** Let $n \ge 1$ and let $L_{2n}$ be the $2n$-th
+Let $n \ge 1$ and let $L_{2n}$ be the $2n$-th
 Lucas number. If $S_1$, $S_2$ and $S_3$ are base phi expansions of $L_{2n} - 1$, $L_{2n}$ and
 $L_{2n} + 1$ respectively, each given as the set of positions of its digits $1$, then the
 negative positions $i < 0$ of $S_1$, of $S_2$ and of $S_3$ are the same.

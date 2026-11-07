@@ -1,6 +1,6 @@
 # Finite satisfiability
 
-**Finite satisfiability.** Let $L$ be a first-order language, with no countability hypothesis
+Let $L$ be a first-order language, with no countability hypothesis
 on its symbols. Every finite consistent set $F$ of formulas of $L$ with free variables in
 $\mathbb{N}$ is satisfiable: there are a nonempty $L$-structure $M$, in the universe of the
 function symbols of $L$, and an assignment $v : \mathbb{N} \to M$ under which every formula of $F$

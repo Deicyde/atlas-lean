@@ -1,6 +1,6 @@
 # Integer sequences with linear Fibonacci coefficients and an alternating term
 
-**Integer sequences with linear Fibonacci coefficients and an alternating term.** Let $F_n$
+Let $F_n$
 be the $n$-th Fibonacci number and put $F_{-1} = 1$, so that $F_{n-1} = F_{n+1} - F_n$ for every
 $n \ge 0$. For rational numbers $a, b, c, d, e, f$, the number
 $w_n = (an + b)F_n + (cn + d)F_{n-1} + e + f(-1)^n$ is an integer for every natural number $n$

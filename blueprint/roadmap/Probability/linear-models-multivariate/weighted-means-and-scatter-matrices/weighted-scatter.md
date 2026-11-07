@@ -1,6 +1,6 @@
 # Weighted scatter matrix
 
-**Weighted scatter matrix.** Let $I$ be a finite set and $J$ an index set, let
+Let $I$ be a finite set and $J$ an index set, let
 $x_i \in \mathbb{R}^J$ ($i \in I$) be points with real weights $w_i$, and let
 $\mu \in \mathbb{R}^J$. The weighted scatter matrix of the $x_i$ about $\mu$ is the real
 $J \times J$ matrix

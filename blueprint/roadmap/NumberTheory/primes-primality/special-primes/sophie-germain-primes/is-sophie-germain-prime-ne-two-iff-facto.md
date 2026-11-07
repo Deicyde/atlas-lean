@@ -1,6 +1,6 @@
 # Wilson-type characterization of Sophie Germain primes
 
-**Wilson-type characterization of Sophie Germain primes.** Let $a \ge 2$ be a natural number.
+Let $a \ge 2$ be a natural number.
 Then $a$ is a Sophie Germain prime other than $2$ if and only if
 $(a - 1)! \equiv 2a - 1 \pmod{a(2a + 1)}$ or $(a - 1)! \equiv -(6a + 1) \pmod{a(2a + 1)}$, the
 congruences being taken in the integers.

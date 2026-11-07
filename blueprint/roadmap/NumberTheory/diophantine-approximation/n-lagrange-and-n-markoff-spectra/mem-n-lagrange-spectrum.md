@@ -1,6 +1,6 @@
 # Membership in the $n$-Lagrange spectrum
 
-**Membership in the $n$-Lagrange spectrum.** For every natural number $n$ and real number
+For every natural number $n$ and real number
 $\alpha$, $\alpha$ lies in the $n$-Lagrange spectrum $L_n$ if and only if $\alpha = \lambda_n(\xi)$
 for some irrational real number $\xi$, where $\lambda_n$ is the $n$-Lagrange approximability.
 

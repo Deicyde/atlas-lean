@@ -1,6 +1,6 @@
 # Growth exponent of the derivative of Campbell's interpolation
 
-**Growth exponent of the derivative of Campbell's interpolation.** For Campbell's
+For Campbell's
 interpolation $f$, $\log f'(x) / \log x \to 1$ as $x \to \infty$ over the reals; that is,
 $\eta(f') = 1$, where $\eta(h) = \lim_{x \to \infty} \log h(x) / \log x$. Here $f'(x)$ is taken
 to be $0$ at any point where $f$ is not differentiable, and $\log 0 = 0$.

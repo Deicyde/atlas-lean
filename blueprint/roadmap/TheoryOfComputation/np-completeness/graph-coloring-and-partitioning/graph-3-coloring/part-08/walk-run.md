@@ -1,6 +1,6 @@
 # The joint walk of the 3-COLOR verifier decides one edge
 
-**The joint walk of the 3-COLOR verifier decides one edge.** Let $u, v$ be natural numbers,
+Let $u, v$ be natural numbers,
 $\mathit{pre}$ and $\mathit{post}$ lists of color codes (pairs of bits), $s$ a bit and $S$ an
 assignment of a list of symbols to every stack. Suppose that $S$ holds $u$ unit symbols on the
 counter $U$ and $v$ on the counter $V$, the bits of $\mathit{post}$ on the color stack $P$ (each

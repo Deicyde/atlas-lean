@@ -1,6 +1,6 @@
 # The zero sequence is almost realizable
 
-**The zero sequence is almost realizable.** The constant sequence $a(n) = 0$ is almost
+The constant sequence $a(n) = 0$ is almost
 realizable.
 
 It is realized by the self-map of the empty set, with multiplier $m = 1$.

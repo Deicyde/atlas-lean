@@ -1,6 +1,6 @@
 # Product recurrence for three gibonacci sequences
 
-**Product recurrence for three gibonacci sequences.** Let
+Let
 $G, H, I : \mathbb{Z} \to \mathbb{R}$, written $j \mapsto G_j$, $j \mapsto H_j$ and
 $j \mapsto I_j$, satisfy $G_{j+2} = G_{j+1} + G_j$, $H_{j+2} = H_{j+1} + H_j$ and
 $I_{j+2} = I_{j+1} + I_j$ for every integer $j$. Then for all integers $k$, $r$ and $s$,

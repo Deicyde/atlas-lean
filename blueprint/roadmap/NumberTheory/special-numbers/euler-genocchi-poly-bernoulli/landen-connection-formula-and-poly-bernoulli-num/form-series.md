@@ -1,6 +1,6 @@
 # Weighted form series
 
-**Weighted form series.** Let $g = (g_0, g_1, \dots, g_s)$ be Landen data, where $g_i$ has
+Let $g = (g_0, g_1, \dots, g_s)$ be Landen data, where $g_i$ has
 rows $(a_i, b_i)$ and $(c_i, d_i)$ for $1 \le i \le s$, and let $w_1, \dots, w_s$ be real
 numbers. The weighted form series of $g$ with weights $w$ is the formal power series
 $u \sum_{i=1}^{s} w_i G_{g_i}(u) \in \mathbb{R}[[u]]$, where $u\,G_{g_i}(u)$ is the Landen form

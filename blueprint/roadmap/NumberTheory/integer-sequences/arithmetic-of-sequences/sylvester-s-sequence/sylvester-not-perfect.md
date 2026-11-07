@@ -1,6 +1,6 @@
 # No Sylvester number is perfect
 
-**No Sylvester number is perfect.** For every natural number $n$, the $n$-th Sylvester number
+For every natural number $n$, the $n$-th Sylvester number
 $S_n$ is not a perfect number.
 
 ## Sources

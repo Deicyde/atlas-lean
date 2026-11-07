@@ -1,6 +1,6 @@
 # Zero has one $\ell$-regular partition
 
-**Zero has one $\ell$-regular partition.** For every natural number $\ell$, the number of
+For every natural number $\ell$, the number of
 $\ell$-regular partitions of $0$ is $1$; the only one is the empty partition.
 
 ## Sources

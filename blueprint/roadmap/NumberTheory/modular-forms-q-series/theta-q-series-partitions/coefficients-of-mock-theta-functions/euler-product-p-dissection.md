@@ -1,6 +1,6 @@
 # The $p$-dissection of $f_1$
 
-**The $p$-dissection of $f_1$.** Let $p \ge 5$ be a prime, let
+Let $p \ge 5$ be a prime, let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ for $k \ge 1$, and let
 $f(a, b) = \sum_{m \in \mathbb{Z}} a^{m(m+1)/2} b^{m(m-1)/2}$ be Ramanujan's general theta
 function. Put $c = (p-1)/6$ if $p \equiv 1 \pmod 6$ and $c = (-p-1)/6$ otherwise. Then, as

@@ -1,6 +1,6 @@
 # Size of the Euler product of a sieve of dimension $k$
 
-**Size of the Euler product of a sieve of dimension $k$.** Let $P$ be a set of primes, $k > 0$
+Let $P$ be a set of primes, $k > 0$
 a real number, and $\omega$ a real-valued function on the natural numbers with
 $0 \le \omega(p) < p$ for $p \in P$. Suppose there is a constant $C_0$ with
 $|\sum_{p \in P,\ t \le p < z} \omega(p) \log p / p - k \log(z/t)| \le C_0$ for all real $t$ and

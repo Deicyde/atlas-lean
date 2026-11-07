@@ -1,6 +1,6 @@
 # An identity between consecutive FiboCatalan numbers
 
-**An identity between consecutive FiboCatalan numbers.** Let $F_k$ be the Fibonacci
+Let $F_k$ be the Fibonacci
 numbers, $F_k! = F_1 F_2 \cdots F_k$ the Fibonacci factorial and
 $C_{k,F} = F_{2k}!/(F_k! \, F_{k+1}!)$ the FiboCatalan number. For every natural number $n$,
 in $\mathbb{Q}$,

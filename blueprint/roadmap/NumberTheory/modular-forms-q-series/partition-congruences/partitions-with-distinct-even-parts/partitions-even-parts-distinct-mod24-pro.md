@@ -1,6 +1,6 @@
 # Congruences modulo 24 for partitions with distinct even parts
 
-**Congruences modulo 24 for partitions with distinct even parts.** Write $\mathrm{ped}(m)$ for the
+Write $\mathrm{ped}(m)$ for the
 number of partitions of $m$ in which the even parts are distinct (odd parts may repeat). For every
 natural number $n$, each of $\mathrm{ped}(225n+43)$, $\mathrm{ped}(225n+88)$,
 $\mathrm{ped}(225n+133)$ and $\mathrm{ped}(225n+223)$ is congruent to $0$ modulo $24$.

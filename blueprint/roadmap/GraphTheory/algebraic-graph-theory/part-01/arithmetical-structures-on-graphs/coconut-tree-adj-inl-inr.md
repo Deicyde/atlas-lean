@@ -1,6 +1,6 @@
 # Adjacency of leaves and path vertices in a coconut tree
 
-**Adjacency of leaves and path vertices in a coconut tree.** Let the coconut tree
+Let the coconut tree
 $CT(p, s)$ have path vertices $v_1, \dots, v_p$, with central vertex $v_p$. A leaf of $CT(p, s)$
 is adjacent to a path vertex $v_k$ if and only if $k = p$.
 

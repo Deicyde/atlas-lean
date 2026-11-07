@@ -1,6 +1,6 @@
 # Counting elements of each order forces prime-power orders
 
-**Counting elements of each order forces prime-power orders.** Let $G$ be a finite group such
+Let $G$ be a finite group such
 that for every divisor $d > 1$ of $|G|$ and every subgroup $H$ of $G$ whose order is coprime to
 $d$, the order $|H|$ divides the number of elements of $G$ of order $d$. Then every non-identity
 element of $G$ has prime-power order.

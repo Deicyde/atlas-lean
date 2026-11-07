@@ -1,6 +1,6 @@
 # The zeroth degenerate Daehee number
 
-**The zeroth degenerate Daehee number.** For every real number $\lambda \ne 0$, the degenerate
+For every real number $\lambda \ne 0$, the degenerate
 Daehee number $D_{0,\lambda}$ equals $1$.
 
 ## Sources

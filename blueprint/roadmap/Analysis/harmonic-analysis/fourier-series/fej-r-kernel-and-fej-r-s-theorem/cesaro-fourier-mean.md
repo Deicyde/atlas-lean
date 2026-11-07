@@ -1,6 +1,6 @@
 # Cesàro–Fourier means
 
-**Cesàro–Fourier means.** Let $T > 0$ and $f : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$. For
+Let $T > 0$ and $f : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$. For
 $N \in \mathbb{N}$, the $N$-th Cesàro–Fourier mean of $f$ is the average of its first $N + 1$
 partial Fourier sums,
 

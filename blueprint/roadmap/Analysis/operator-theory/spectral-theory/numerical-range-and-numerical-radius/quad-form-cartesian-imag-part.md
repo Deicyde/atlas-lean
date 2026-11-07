@@ -1,6 +1,6 @@
 # Quadratic form of the imaginary Cartesian part
 
-**Quadratic form of the imaginary Cartesian part.** Let $T$ be a bounded operator on a complex
+Let $T$ be a bounded operator on a complex
 Hilbert space $H$, whose inner product $\langle \cdot, \cdot \rangle$ is conjugate-linear in its
 first argument, and let $B = (T - T^*)/(2i)$ be the imaginary Cartesian part of $T$. Then for
 every $x \in H$ one has $\langle B x, x \rangle = -\operatorname{Im} \langle T x, x \rangle$.

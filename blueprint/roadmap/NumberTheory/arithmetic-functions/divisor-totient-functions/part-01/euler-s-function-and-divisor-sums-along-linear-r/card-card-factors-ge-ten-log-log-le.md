@@ -1,6 +1,6 @@
 # Integers with many prime factors are rare
 
-**Integers with many prime factors are rare.** Let $\Omega(n)$ be the number of prime factors
+Let $\Omega(n)$ be the number of prime factors
 of $n$ counted with multiplicity. There is a constant $C$ such that for every real $x \ge 10$, the
 number of integers $1 \le n \le x$ with $\Omega(n) \ge 10 \log\log x$ is at most
 $C x / (\log x)^2$.

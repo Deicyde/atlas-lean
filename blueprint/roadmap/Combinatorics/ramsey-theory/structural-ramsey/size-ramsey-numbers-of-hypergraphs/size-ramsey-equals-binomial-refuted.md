@@ -1,6 +1,6 @@
 # The Dudek–Rödl size Ramsey question has a negative answer
 
-**The Dudek–Rödl size Ramsey question has a negative answer.** It is not true that for every
+It is not true that for every
 natural number $n$ the 3-uniform size Ramsey number $\hat r_3(n, n)$ equals the binomial
 coefficient $\binom{r_3(n, n)}{3}$, where $r_3(n, n)$ is the diagonal 3-uniform Ramsey number.
 

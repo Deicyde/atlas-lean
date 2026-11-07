@@ -1,6 +1,6 @@
 # Menelaus's theorem
 
-**Menelaus's theorem.** Let $A$, $B$, $C$ be pairwise distinct points of the Euclidean plane
+Let $A$, $B$, $C$ be pairwise distinct points of the Euclidean plane
 $\mathbb{R}^2$ with $C$ not on the line $AB$. Let $D$, $E$, $F$ be points on the lines $BC$, $CA$
 and $AB$ respectively, with $D \ne B$, $D \ne C$, $E \ne C$, $E \ne A$, $F \ne A$ and $F \ne B$.
 Let $\alpha, \alpha', \beta, \beta', \gamma, \gamma'$ be real numbers with

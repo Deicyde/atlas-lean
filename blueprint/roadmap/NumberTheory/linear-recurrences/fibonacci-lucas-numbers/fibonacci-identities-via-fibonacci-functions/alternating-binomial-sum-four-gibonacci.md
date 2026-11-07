@@ -1,6 +1,6 @@
 # Hoggatt–Bicknell-type binomial sum of four gibonacci sequences
 
-**Hoggatt–Bicknell-type binomial sum of four gibonacci sequences.** Let
+Let
 $E, G, H, I : \mathbb{Z} \to \mathbb{R}$ satisfy $E_{j+2} = E_{j+1} + E_j$ for every integer $j$,
 and likewise $G$, $H$ and $I$. Then for every natural number $n$ and all integers $k$, $r$, $s$
 and $t$,

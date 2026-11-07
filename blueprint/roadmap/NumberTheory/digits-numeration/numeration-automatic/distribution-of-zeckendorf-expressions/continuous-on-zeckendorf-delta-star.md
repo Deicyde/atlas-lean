@@ -1,6 +1,6 @@
 # Continuity and local monotonicity of $\delta^{\ast}$
 
-**Continuity and local monotonicity of $\delta^{\ast}$.** Let $L$ and $\tilde L$ form a
+Let $L$ and $\tilde L$ form a
 periodic Zeckendorf pair, let $Q$ be a fundamental sequence of the collection $E^*$ determined by
 $L$, and let $\tilde Q$ be a fundamental sequence of the collection $\tilde E^*$ determined by
 $\tilde L$. Then the function $\delta^*$ built from $L, \tilde L, Q, \tilde Q$ is continuous on

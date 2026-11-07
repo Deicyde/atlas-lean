@@ -1,6 +1,6 @@
 # Counting Lucas–Leonardo bracelets
 
-**Counting Lucas–Leonardo bracelets.** For all natural numbers $p \ge 1$ and $n \ge 1$, let
+For all natural numbers $p \ge 1$ and $n \ge 1$, let
 $B_{p,n}$ be the set of tilings of a circular $n$-board by curved squares (length $1$), curved
 $p$-minos (length $p + 1$) and at most one curved $p$-tile in one of $p$ colors, which if present
 is the tile covering cell $1$ and either has length $p + 1$, in any of its $p + 1$ phases, or has

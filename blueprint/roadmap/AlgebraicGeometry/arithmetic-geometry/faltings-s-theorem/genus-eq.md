@@ -1,6 +1,6 @@
 # Genus as the dimension of the adele class space
 
-**Genus as the dimension of the adele class space.** Let $F$ be a function field over a
+Let $F$ be a function field over a
 field $K$, that is, a finite extension of the rational function field $K(t)$. The genus $g$ of
 $F/K$ equals the dimension over $K$ of the quotient
 $\mathcal{A}_F / (\mathcal{A}_F(0) + F)$, where $\mathcal{A}_F$ is the adele ring,

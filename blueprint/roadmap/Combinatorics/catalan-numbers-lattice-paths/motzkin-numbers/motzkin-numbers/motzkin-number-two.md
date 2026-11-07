@@ -1,6 +1,6 @@
 # Value of the Motzkin number at 2
 
-**Value of the Motzkin number at 2.** The second Motzkin number is $M(2) = 2$.
+The second Motzkin number is $M(2) = 2$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Mountain pass theorem
 
-**Mountain pass theorem.** Let $E$ be a real Banach space and let $f : E \to \mathbb{R}$ be
+Let $E$ be a real Banach space and let $f : E \to \mathbb{R}$ be
 continuously differentiable and satisfy the Palais–Smale condition. Let $a, b \in E$ and let
 $\varepsilon, r$ be real numbers such that $a$ and $b$ are separated by a mountain range of $f$
 at height $\varepsilon$ and radius $r$: $f(a) = 0$, $\varepsilon > 0$, $r > 0$,

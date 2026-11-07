@@ -1,6 +1,6 @@
 # A Fibonacci–Lucas identity for gibonacci sequences
 
-**A Fibonacci–Lucas identity for gibonacci sequences.** Let $F_m$ denote the Fibonacci
+Let $F_m$ denote the Fibonacci
 numbers, extended to all integers $m$ by $F_{-m} = (-1)^{m+1} F_m$, and let
 $L_m = F_{m-1} + F_{m+1}$ be the Lucas numbers, for every integer $m$. If
 $G : \mathbb{Z} \to \mathbb{R}$ satisfies $G_{j+2} = G_{j+1} + G_j$ for every integer $j$, then

@@ -1,6 +1,6 @@
 # Finite-support Marcus–Spielman–Srivastava bound
 
-**Finite-support Marcus–Spielman–Srivastava bound.** The proposition that the following holds
+The proposition that the following holds
 for every natural number $m$ and every finite index set $D$. Let $s_1, \dots, s_m$ be positive
 integers, let $p_{i,a} \ge 0$ be reals and $v_{i,a} \in \mathbb{C}^D$ be vectors for
 $1 \le i \le m$ and $1 \le a \le s_i$, and let $\eta \ge 0$ be real. Suppose that

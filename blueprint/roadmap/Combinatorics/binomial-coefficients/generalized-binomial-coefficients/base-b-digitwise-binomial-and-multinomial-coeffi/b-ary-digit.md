@@ -1,6 +1,6 @@
 # Base-$b$ digit of a natural number
 
-**Base-$b$ digit of a natural number.** For natural numbers $b$, $n$ and $l$, the rank-$l$
+For natural numbers $b$, $n$ and $l$, the rank-$l$
 base-$b$ digit $n_l$ of $n$ is the entry at position $l$ (counting from $0$) of the list of
 base-$b$ digits of $n$, least significant digit first, and $0$ when $l$ is at least the length of
 that list (with $0$ having no digits). For $b \ge 2$ this is the coefficient of $b^l$ in the

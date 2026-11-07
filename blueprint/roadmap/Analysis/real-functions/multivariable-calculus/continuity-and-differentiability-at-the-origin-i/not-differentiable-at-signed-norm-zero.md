@@ -1,6 +1,6 @@
 # The signed radial function is not differentiable at the origin
 
-**The signed radial function is not differentiable at the origin.** Let
+Let
 $f : \mathbb{R}^2 \to \mathbb{R}$ be the function
 
 $$

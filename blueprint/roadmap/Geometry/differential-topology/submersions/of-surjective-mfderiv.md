@@ -1,6 +1,6 @@
 # Surjective differential into a finite-dimensional manifold gives a submersion
 
-**Surjective differential into a finite-dimensional manifold gives a submersion.** Let
+Let
 $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, let $n \in \mathbb{N} \cup \{\infty, \omega\}$ with
 $n \ge 1$, let $M$ be a $C^n$ manifold without boundary over $\mathbb{K}$ modelled on a Banach
 space, and let $N$ be a $C^n$ manifold, possibly with boundary or corners, over $\mathbb{K}$

@@ -1,6 +1,6 @@
 # Polynomial growth of the off-diagonal van der Waerden numbers (claim)
 
-**Polynomial growth of the off-diagonal van der Waerden numbers (claim).** There are natural
+There are natural
 numbers $C$ and $A$ such that for every $k \ge 1$, every colouring of the natural numbers in red
 and blue has a red $3$-term or a blue $k$-term arithmetic progression $a, a + d, \dots$ with
 $a \ge 1$, $d \ge 1$ and all terms in $\{1, \dots, C k^A\}$. Equivalently, the van der Waerden

@@ -1,6 +1,6 @@
 # Lattice polytopes
 
-**Lattice polytopes.** The lattice polytope spanned by a finite set $V \subseteq \mathbb{Z}^d$
+The lattice polytope spanned by a finite set $V \subseteq \mathbb{Z}^d$
 is the convex hull in $\mathbb{R}^d$ of the points of $V$.
 
 ## Sources

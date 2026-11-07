@@ -1,6 +1,6 @@
 # Closed form for the total symmetric peak height over compositions
 
-**Closed form for the total symmetric peak height over compositions.** For $n \ge 0$ let
+For $n \ge 0$ let
 $\mathrm{hsp}(n)$ be the sum, over all compositions $c$ of $n$, of the symmetric peak height
 sum of the sequence of parts of $c$, and let $\omega_\pm = 1 \pm i\sqrt{3}$. Then for every
 $n \ge 0$, as complex numbers,

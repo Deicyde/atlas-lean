@@ -1,6 +1,6 @@
 # The lattice-point count at $p = 3$, $d = 2$, $r = 1$, $n = 0$
 
-**The lattice-point count at $p = 3$, $d = 2$, $r = 1$, $n = 0$.** Let
+Let
 $\gamma = ((p - 1) r + (p + 1))/d$ and $t_n = \lfloor \gamma^{-1} p^n \rfloor$, and let $\Delta_n$
 be the set of pairs of integers $(i, j)$ with $t_n < i \le p^n$, $1 \le j \le p^n - 1$ and
 $\mu(i) \le j$, where $\mu$ is the lattice boundary of Definition 1. For $p = 3$, $d = 2$,

@@ -1,6 +1,6 @@
 # A nonzero value in the vanishing range of the dichotomy forces the identity
 
-**A nonzero value in the vanishing range of the dichotomy forces the identity.** Let
+Let
 $k \ge 5$ and let $f$ be a complex-valued multiplicative function such that
 
 $$f\Big(\sum_{j=1}^{k} (x_j^2 + y_j^2)\Big) = \sum_{j=1}^{k} f(x_j^2 + y_j^2)$$

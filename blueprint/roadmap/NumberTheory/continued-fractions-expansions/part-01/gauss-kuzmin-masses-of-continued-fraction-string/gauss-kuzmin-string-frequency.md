@@ -1,6 +1,6 @@
 # Generalized Gauss–Kuzmin theorem
 
-**Generalized Gauss–Kuzmin theorem.** For a real number $x$, let $a_1(x), a_2(x), \dots$ be
+For a real number $x$, let $a_1(x), a_2(x), \dots$ be
 the partial denominators of the continued fraction expansion of $x$. For almost every real $x$,
 with respect to Lebesgue measure, the following holds: for every string $b = (b_1, \dots, b_n)$
 of positive integers, the number of indices $i \in \{0, \dots, N - 1\}$ such that

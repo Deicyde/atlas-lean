@@ -1,6 +1,6 @@
 # Engel lengths of products admit no polynomial bound (Kourovka 11.88)
 
-**Engel lengths of products admit no polynomial bound (Kourovka 11.88).** There is a group $G$
+There is a group $G$
 such that for every polynomial $\varphi(x, y)$ in two variables with natural-number coefficients
 there are $u, v \in G$ such that $u$, $v$ and $uv$ are Engel elements and
 $l(uv) > \varphi(l(u), l(v))$. Here $g \in G$ is an Engel element if there is a $k \ge 1$ with

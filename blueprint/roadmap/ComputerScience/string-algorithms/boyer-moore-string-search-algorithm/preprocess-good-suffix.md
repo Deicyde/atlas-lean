@@ -1,6 +1,6 @@
 # Good-suffix table of Boyer–Moore preprocessing
 
-**Good-suffix table of Boyer–Moore preprocessing.** Let $p = p_0 \cdots p_{m-1}$ be a
+Let $p = p_0 \cdots p_{m-1}$ be a
 pattern over the alphabet $\{0, \dots, \sigma - 1\}$, let $G$ be the good-suffix table computed
 by the Boyer–Moore preprocessing of $p$, and let $i < m$. Call a positive integer $e$ an
 admissible shift at $i$ if $p_{t - e} = p_t$ for every $t < m$ with $i < t$ and $e \le t$, and

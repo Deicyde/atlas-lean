@@ -1,6 +1,6 @@
 # Infinite family of congruences modulo 3 for POND partitions
 
-**Infinite family of congruences modulo 3 for POND partitions.** Let $\mathrm{pond}(m)$ be
+Let $\mathrm{pond}(m)$ be
 the number of POND partitions of $m$. For all natural numbers $\alpha \ge 1$ and $n$,
 $\mathrm{pond}\left(3^{2\alpha+1} n + (23 \cdot 3^{2\alpha} + 1)/8\right) \equiv 0 \pmod{3}$.
 

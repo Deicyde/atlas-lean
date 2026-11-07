@@ -1,6 +1,6 @@
 # Erdős Problem 822 is true
 
-**Erdős Problem 822 is true.** The set $\{n + \varphi(n) : n \in \mathbb{N}\}$, where $\varphi$
+The set $\{n + \varphi(n) : n \in \mathbb{N}\}$, where $\varphi$
 is Euler's totient function, has positive lower density in $\mathbb{N}$.
 
 ## Sources

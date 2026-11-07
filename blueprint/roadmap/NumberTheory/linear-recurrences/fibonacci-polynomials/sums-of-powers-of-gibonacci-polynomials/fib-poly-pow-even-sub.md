@@ -1,6 +1,6 @@
 # Even powers of Fibonacci polynomials at $n \pm k$
 
-**Even powers of Fibonacci polynomials at $n \pm k$.** Let $f_i \in \mathbb{Z}[x]$ be the
+Let $f_i \in \mathbb{Z}[x]$ be the
 Fibonacci polynomials, defined by $f_0 = 0$, $f_1 = 1$ and $f_{i+2} = x f_{i+1} + f_i$. For all
 natural numbers $k \le n$ and every natural number $m$,
 

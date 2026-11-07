@@ -1,6 +1,5 @@
 # Phase two: inserting left endpoints on a vertical line keeps the status weakly sorted
 
-**Phase two: inserting left endpoints on a vertical line keeps the status weakly sorted.**
 Fix a number $p_x$ in the field of coordinates. Suppose no segment is vertical (each segment's
 left endpoint has smaller $x$-coordinate than its right endpoint) and every point common to two
 distinct segments has $x$-coordinate at least $p_x$. Split the sorted list of events as $P_1$,

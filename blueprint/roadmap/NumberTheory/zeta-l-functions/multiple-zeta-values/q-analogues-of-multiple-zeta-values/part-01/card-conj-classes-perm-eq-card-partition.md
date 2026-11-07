@@ -1,6 +1,6 @@
 # Number of conjugacy classes of the symmetric group
 
-**Number of conjugacy classes of the symmetric group.** For every natural number $n$, the
+For every natural number $n$, the
 number of conjugacy classes of the symmetric group $S_n$ equals the number $p(n)$ of partitions
 of $n$.
 

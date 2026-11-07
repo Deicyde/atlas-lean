@@ -1,6 +1,6 @@
 # Generalized Eulerian polynomials with zero cycle weight
 
-**Generalized Eulerian polynomials with zero cycle weight.** For all rational numbers
+For all rational numbers
 $t, x, y$ and every $n \ge 0$, the generalized Eulerian polynomial satisfies
 $P_0(0, t; x, y) = 1$ and $P_n(0, t; x, y) = 0$ for $n \ge 1$.
 

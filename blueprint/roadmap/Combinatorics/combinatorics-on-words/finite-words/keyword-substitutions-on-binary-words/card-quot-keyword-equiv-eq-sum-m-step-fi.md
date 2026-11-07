@@ -1,6 +1,6 @@
 # Keyword classes are counted by partial sums of $m$-step Fibonacci numbers
 
-**Keyword classes are counted by partial sums of $m$-step Fibonacci numbers.** Let
+Let
 $m, n \ge 1$ and let $F_0, F_1, F_2, \dots$ be the $m$-step Fibonacci numbers: $F_0 = 1$,
 $F_k = 2^{k-1}$ for $1 \le k \le m - 1$, and $F_k = F_{k-1} + F_{k-2} + \dots + F_{k-m}$ for
 $k \ge m$. Then for every binary keyword $a$ of length $m + 1$, the number of equivalence

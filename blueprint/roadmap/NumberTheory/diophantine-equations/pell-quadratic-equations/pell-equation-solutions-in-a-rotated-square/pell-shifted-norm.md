@@ -1,6 +1,6 @@
 # The $L^1$ norm along a shifted Pell curve
 
-**The $L^1$ norm along a shifted Pell curve.** For integers $D$, $\alpha$, $\beta$, $a$, $b$,
+For integers $D$, $\alpha$, $\beta$, $a$, $b$,
 $i$ and $j$, put $\varepsilon = \alpha + \beta \sqrt{D}$ and
 $\bar\varepsilon = \alpha - \beta \sqrt{D}$, and let
 $u(x) = (\varepsilon^x + \bar\varepsilon^x) / 2$ and

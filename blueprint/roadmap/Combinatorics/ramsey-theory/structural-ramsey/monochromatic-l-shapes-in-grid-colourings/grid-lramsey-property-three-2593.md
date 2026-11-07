@@ -1,6 +1,6 @@
 # Three-coloring the 2593 × 2593 grid forces a monochromatic L
 
-**Three-coloring the 2593 × 2593 grid forces a monochromatic L.** Write
+Write
 $[n] = \{1, \dots, n\}$. Every coloring of the grid $[2593] \times [2593]$ with $3$ colors contains
 a monochromatic L: positive integers $x$, $y$, $d$ with $x + d \le 2593$ and $y + d \le 2593$ such
 that the points $(x, y)$, $(x + d, y)$ and $(x + d, y + d)$ have the same color. Equivalently,

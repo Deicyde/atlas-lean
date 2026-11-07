@@ -1,6 +1,6 @@
 # Labels of the SAT tokenizer
 
-**Labels of the SAT tokenizer.** The labels of the SAT tokenizer are: $\mathsf{un}(c)$ for a
+The labels of the SAT tokenizer are: $\mathsf{un}(c)$ for a
 bit $c$, which reads a unary count onto the clause counter $\mathsf{CC}$ if $c$ is true and onto
 the literal counter $\mathsf{LC}$ otherwise; $\mathsf{cls}$, which starts a clause;
 $\mathsf{lits}$, which starts a literal; $\mathsf{nm}(\ell)$, where $\ell$ is a bit or none,

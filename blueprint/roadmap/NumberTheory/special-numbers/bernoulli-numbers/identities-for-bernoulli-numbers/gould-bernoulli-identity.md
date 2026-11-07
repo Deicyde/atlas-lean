@@ -1,6 +1,6 @@
 # Gould's alternating identity for Bernoulli polynomials
 
-**Gould's alternating identity for Bernoulli polynomials.** Let $B_i$ denote the $i$-th
+Let $B_i$ denote the $i$-th
 Bernoulli number, with $B_1 = -1/2$, and let $B_j(x) = \sum_{i=0}^{j} \binom{j}{i} B_i x^{j-i}$
 be the $j$-th Bernoulli polynomial. For every natural number $n$ and every rational number $x$,
 

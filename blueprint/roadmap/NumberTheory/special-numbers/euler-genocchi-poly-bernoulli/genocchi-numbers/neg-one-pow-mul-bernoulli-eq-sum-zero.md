@@ -1,6 +1,6 @@
 # Bernoulli numbers via forward differences at $0$
 
-**Bernoulli numbers via forward differences at $0$.** Let $n$ and $r$ be positive integers
+Let $n$ and $r$ be positive integers
 with $n \ge r + 1$, let $B_n$ be the $n$-th Bernoulli number, let $S(a, b)$ denote the Stirling
 numbers of the second kind and let $\Delta^k 0^m$ be the $k$-th forward difference of
 $y \mapsto y^m$ at $0$. For $k \ge 1$ write

@@ -1,6 +1,6 @@
 # Congruences modulo powers of two for $3 \cdot 2^\alpha$-regular overpartitions
 
-**Congruences modulo powers of two for $3 \cdot 2^\alpha$-regular overpartitions.** Write
+Write
 $A_\ell(m)$ for the number of overpartitions of $m$ none of whose parts is divisible by $\ell$.
 For every natural number $\alpha \ge 1$ there is a natural number $c$ with the following
 property. Let $d \ge 1$ be a natural number, let $p_1, \dots, p_{c+d}$ be distinct primes, each

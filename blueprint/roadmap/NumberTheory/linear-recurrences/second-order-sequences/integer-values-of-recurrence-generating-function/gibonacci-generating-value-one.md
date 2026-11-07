@@ -1,6 +1,6 @@
 # Value of the Gibonacci generating function at one
 
-**Value of the Gibonacci generating function at one.** For all integers $a$ and $b$, the
+For all integers $a$ and $b$, the
 Gibonacci generating function $G^{(a,b)}(x) = \frac{(b - a)x + a}{1 - x - x^2}$ takes the value
 $G^{(a,b)}(1) = -b$ at $x = 1$.
 

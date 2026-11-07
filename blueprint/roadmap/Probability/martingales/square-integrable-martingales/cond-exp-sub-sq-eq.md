@@ -1,6 +1,6 @@
 # Conditional variance theorem for martingales
 
-**Conditional variance theorem for martingales.** Let $(\Omega, \mu)$ be a probability space
+Let $(\Omega, \mu)$ be a probability space
 with a filtration $(\mathcal{F}_n)_{n \in \mathbb{N}}$, and let $(X_n)_{n \in \mathbb{N}}$ be a
 real-valued martingale with respect to $(\mathcal{F}_n)$ and $\mu$ such that $X_n$ is
 square-integrable for every $n$. Then for all $m \le n$, almost surely

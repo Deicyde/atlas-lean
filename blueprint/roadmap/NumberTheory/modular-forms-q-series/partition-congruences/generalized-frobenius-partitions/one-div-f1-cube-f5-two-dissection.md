@@ -1,6 +1,6 @@
 # A 2-dissection of the reciprocal Euler product of levels 1 and 5
 
-**A 2-dissection of the reciprocal Euler product of levels 1 and 5.** Let
+Let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ in the ring of integer power series in $q$. Then
 
 $$f_2^{10} f_8^2 f_{10}^3 f_{20} = f_1^3 f_2^3 f_4^4 f_5 f_8^2 f_{10}^2 f_{20} -

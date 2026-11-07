@@ -1,6 +1,6 @@
 # Finite separable residue extensions lift to finite DVR extensions
 
-**Finite separable residue extensions lift to finite DVR extensions.** Let $A$ be a discrete
+Let $A$ be a discrete
 valuation ring with residue field $k$, and let $L$ be a finite separable field extension of $k$.
 Then there is a discrete valuation ring $B$ with an $A$-algebra structure such that $B$ is
 finitely generated as an $A$-module and the structure map $A \to B$ is a local homomorphism,

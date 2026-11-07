@@ -1,6 +1,6 @@
 # The EM objective of a full-covariance Gaussian mixture splits by component
 
-**The EM objective of a full-covariance Gaussian mixture splits by component.** Let
+Let
 $x_1, \dots, x_N$ be points of $\mathbb{R}^d$, and let $\theta'$ and $\theta$ be valid parameters
 of a $K$-component full-covariance Gaussian mixture, where $\theta'$ has weights $\pi_k'$, means
 $\mu_k'$ and covariance matrices $\Sigma_k'$. Then the EM objective of the mixture's joint density

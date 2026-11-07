@@ -1,6 +1,6 @@
 # Weighted diagonal sums of trinomial coefficients and the sequence A075115
 
-**Weighted diagonal sums of trinomial coefficients and the sequence A075115.** Write
+Write
 $\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$. Let
 $(\lambda_m)$ be the integer sequence with $\lambda_0 = 3$, $\lambda_1 = 2$, $\lambda_2 = 0$ and
 $\lambda_{m+3} = 2\lambda_{m+2} - 2\lambda_{m+1} + 2\lambda_m$ (OEIS A075115). For every natural

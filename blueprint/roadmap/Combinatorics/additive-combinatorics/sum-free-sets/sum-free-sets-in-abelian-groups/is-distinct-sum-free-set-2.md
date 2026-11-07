@@ -1,6 +1,6 @@
 # Sum-free sets are distinct sum-free
 
-**Sum-free sets are distinct sum-free.** For every set $G$ with an addition, every sum-free
+For every set $G$ with an addition, every sum-free
 subset of $G$ is distinct sum-free.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Local solutions of the incompressible Euler equations
 
-**Local solutions of the incompressible Euler equations.** Let $T \in \mathbb{R}$, let
+Let $T \in \mathbb{R}$, let
 $u_0 : \mathbb{R}^3 \to \mathbb{R}^3$, and let $p : \mathbb{R}^3 \times \mathbb{R} \to \mathbb{R}$
 and $u : \mathbb{R}^3 \times \mathbb{R} \to \mathbb{R}^3$. Write $\partial_t u$ for the time
 derivative of $u$, $(u \cdot \nabla_x) u$ for the spatial directional derivative of $u$ in the

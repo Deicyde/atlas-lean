@@ -1,6 +1,6 @@
 # The accept family of a layout
 
-**The accept family of a layout.** Let $L$ be a layout with label block size $A$, $K$ stacks
+Let $L$ be a layout with label block size $A$, $K$ stacks
 and $g$ symbol codes, let $n_1, a, k_1, e, T, H$ be natural numbers, $W = A + K H g$ and
 $V = (T + 1) W$. The accept family is the CNF formula over $V$ variables made of, first, for each
 $u < n_1$ in increasing order, the clause whose only literal is the label variable $X[T, u]$

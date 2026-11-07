@@ -1,6 +1,6 @@
 # Generalized Frobenius numbers of triangular triples in parametrized form
 
-**Generalized Frobenius numbers of triangular triples in parametrized form.** For a natural
+For a natural
 number $r$ write $t_r = r(r+1)/2$. Let $n$, $k$, $i$ be natural numbers with $i \le 2k + 1$ and
 put $s = k(k+1) + i$. Suppose that $s \le 2$ or that $s$ is neither $m^2$ nor $m(m+1)$ for any
 integer $m \ge 1$. Let $N_s = 6\lfloor\sqrt{s+1}\rfloor - 6$ if $n$ is even and

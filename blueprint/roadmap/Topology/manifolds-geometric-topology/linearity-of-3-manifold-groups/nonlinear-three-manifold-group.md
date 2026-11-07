@@ -1,6 +1,6 @@
 # A closed 3-manifold group with no faithful representation in $GL_4(\mathbb{R})$
 
-**A closed 3-manifold group with no faithful representation in $GL_4(\mathbb{R})$.** There
+There
 is a closed connected topological 3-manifold $M$ with a point $x$ such that no group
 homomorphism from the fundamental group $\pi_1(M, x)$ to $GL_4(\mathbb{R})$ is injective.
 

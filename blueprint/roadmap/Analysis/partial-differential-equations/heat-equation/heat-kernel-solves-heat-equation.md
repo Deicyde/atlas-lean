@@ -1,6 +1,6 @@
 # The Gaussian heat kernel solves the heat equation
 
-**The Gaussian heat kernel solves the heat equation.** Let $f\colon \mathbb{R} \to \mathbb{R}$
+Let $f\colon \mathbb{R} \to \mathbb{R}$
 be continuous and bounded, and let $u(t, x)$ be the heat solution of $f$. Then for every
 $t > 0$ and every $x \in \mathbb{R}$ there are a function $u_x\colon \mathbb{R} \to \mathbb{R}$
 and a real number $u_{xx}$ such that $u(t, \cdot)$ has derivative $u_x(y)$ at every

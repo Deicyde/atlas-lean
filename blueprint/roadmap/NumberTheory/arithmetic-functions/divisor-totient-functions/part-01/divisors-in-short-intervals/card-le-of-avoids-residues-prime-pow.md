@@ -1,6 +1,6 @@
 # Arithmetic large sieve with prime-power moduli
 
-**Arithmetic large sieve with prime-power moduli.** Let $N \ge 1$ be an integer and let $M$
+Let $N \ge 1$ be an integer and let $M$
 be a finite set of integers contained in $[a, a + N)$ for some integer $a$. Let $S$ be a finite
 set of primes and, for each $p \in S$, let $\beta_p \ge 1$ be an integer and let $\Omega_p$ be a
 set of fewer than $p^{\beta_p}$ integers in $[0, p^{\beta_p})$ such that no $m \in M$ has its

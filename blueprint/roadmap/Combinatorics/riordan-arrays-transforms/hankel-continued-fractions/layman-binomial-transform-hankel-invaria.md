@@ -1,6 +1,6 @@
 # Layman's theorem: the binomial transform preserves the Hankel transform
 
-**Layman's theorem: the binomial transform preserves the Hankel transform.** For every
+For every
 sequence of integers $(a_n)_{n \ge 0}$, the Hankel transform of the binomial transform of $a$
 equals the Hankel transform of $a$. Here the binomial transform of $a$ is the sequence
 $b_n = \sum_{i=0}^{n} \binom{n}{i} a_i$, and the Hankel transform of a sequence $c$ is the

@@ -1,6 +1,6 @@
 # Bounds for the binomial-product constants
 
-**Bounds for the binomial-product constants.** Let $a$ and $b$ be natural numbers with
+Let $a$ and $b$ be natural numbers with
 $1 \le b < a$, and let $F_k$ denote the factorial-product constants. Then
 $c_{a,b} = F_a / (F_b F_{a-b})$ satisfies
 

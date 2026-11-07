@@ -1,6 +1,6 @@
 # Labels of the SAT-to-CLIQUE emitter
 
-**Labels of the SAT-to-CLIQUE emitter.** For bits $p, q, f, b$ the labels are
+For bits $p, q, f, b$ the labels are
 $\mathsf{start}$, $\mathsf{lits}$, $\mathsf{nm}(p)$, $\mathsf{walk}(p, f)$, $\mathsf{cmp}(p, q)$,
 $\mathsf{res}(p, b)$, $\mathsf{rsA}(p)$, $\mathsf{rsD}(p)$, $\mathsf{mvN}(p, f)$,
 $\mathsf{back}(p)$, $\mathsf{put}(p)$, $\mathsf{put2}(p)$, $\mathsf{put3}(p)$, $\mathsf{fin}$,

@@ -1,6 +1,6 @@
 # Arbitrarily long arithmetic progressions of powerful numbers
 
-**Arbitrarily long arithmetic progressions of powerful numbers.** For every integer $k \ge 3$
+For every integer $k \ge 3$
 there are positive integers $a$ and $d$ such that each of the $k$ numbers $a + id$ with
 $0 \le i < k$ is powerful: every prime that divides $a + id$ has its square dividing $a + id$.
 

@@ -1,6 +1,6 @@
 # Benson–Crawley-Boevey hyperplane formula (Kourovka 12.36)
 
-**Benson–Crawley-Boevey hyperplane formula (Kourovka 12.36).** For every prime $p$, every
+For every prime $p$, every
 $n \in \mathbb{N}$ and every subgroup $G$ of $\mathrm{GL}_n(\mathbb{F}_p)$, with $P(t)$ the
 Poincaré series of the invariant ring of $G$ and $r$ the hyperplane sum of $G$, there are
 polynomials $A, B \in \mathbb{Q}[t]$ with $B(1) \ne 0$ and $B(t) (1 - t)^n P(t) = A(t)$ in

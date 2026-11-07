@@ -1,6 +1,6 @@
 # Curtis–Hedlund–Lyndon theorem
 
-**Curtis–Hedlund–Lyndon theorem.** Let $A$ and $B$ be finite sets with the discrete
+Let $A$ and $B$ be finite sets with the discrete
 topology, and give $A^{\mathbb{Z}}$ and $B^{\mathbb{Z}}$ the product topology. For
 $k \in \mathbb{Z}$ let $\sigma^k$ be the shift on either space given by
 $(\sigma^k x)_n = x_{n+k}$ for all $n \in \mathbb{Z}$. A map

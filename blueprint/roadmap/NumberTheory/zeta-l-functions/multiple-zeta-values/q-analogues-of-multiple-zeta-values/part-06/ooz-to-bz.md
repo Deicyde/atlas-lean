@@ -1,6 +1,6 @@
 # The map $U$ from OOZ to BZ words
 
-**The map $U$ from OOZ to BZ words.** A word is a finite sequence $z_{k_1} \cdots z_{k_r}$ of
+A word is a finite sequence $z_{k_1} \cdots z_{k_r}$ of
 letters $z_k$, $k \in \mathbb{N}$. The map $U$ sends each word to a formal $\mathbb{Q}$-linear
 combination of words: $U(\mathbf{1}) = \mathbf{1}$ for the empty word $\mathbf{1}$, and for
 $r \ge 1$

@@ -1,6 +1,6 @@
 # Existence of Banach limits
 
-**Existence of Banach limits.** There is a continuous linear functional $L$ on the real Banach
+There is a continuous linear functional $L$ on the real Banach
 space $\ell^\infty$ of bounded real sequences with the supremum norm such that $L(f) \ge 0$
 whenever $f_n \ge 0$ for every $n$, $L$ maps the constant sequence $1$ to $1$, $L(f) = L(g)$
 whenever $g_n = f_{n+1}$ for every $n$, and $L(f) = l$ whenever the sequence $f_n$ converges

@@ -1,6 +1,6 @@
 # Unrealizable parity patterns for $(1 + \sqrt d)/2$ with even $l$
 
-**Unrealizable parity patterns for $(1 + \sqrt d)/2$ with even $l$.** Let $l \ge 2$ be
+Let $l \ge 2$ be
 even. Call a parity pattern $(v_1, \dots, v_{l/2}) \in (\mathbb{Z}/2)^{l/2}$ realizable if there
 are positive integers $a_1, \dots, a_{l-1}$ with $a_i = a_{l-i}$ for $1 \le i < l$ and
 $a_j \equiv v_j \pmod 2$ for $1 \le j \le l/2$, together with natural numbers $d$ and $a_0$

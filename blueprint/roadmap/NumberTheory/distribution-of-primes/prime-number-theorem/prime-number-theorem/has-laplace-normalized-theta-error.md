@@ -1,6 +1,6 @@
 # Laplace transform of the normalized Chebyshev error
 
-**Laplace transform of the normalized Chebyshev error.** Let
+Let
 $\theta(x) = \sum_{p \le x} \log p$ be the Chebyshev function (the sum over primes $p \le x$),
 let $H(t) = \theta(e^t) e^{-t} - 1$ for real $t$ be the normalized Chebyshev error, viewed as a
 complex-valued function, and let $F$ be the normalized-error continuation. For every

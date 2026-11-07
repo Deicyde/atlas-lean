@@ -1,6 +1,6 @@
 # Gap sequence of the pseudo-greedy expansion
 
-**Gap sequence of the pseudo-greedy expansion.** Let $r$ be a real number, and let $(x_n)$
+Let $r$ be a real number, and let $(x_n)$
 be the remainder sequence and $(a_n)$ the pseudo-greedy expansion of $r$. The gap sequence of
 $r$ is the real sequence $\varepsilon_n = x_n^{-1} + 1 - a_n$ for $n \ge 0$.
 

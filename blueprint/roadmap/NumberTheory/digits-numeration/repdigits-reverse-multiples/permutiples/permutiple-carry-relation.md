@@ -1,6 +1,6 @@
 # Carry relation for permutiples
 
-**Carry relation for permutiples.** Let $n$ and $b \ge 2$ be natural numbers, let
+Let $n$ and $b \ge 2$ be natural numbers, let
 $\sigma$ be a permutation of $\{0, \dots, k\}$, and let $(d_k, \dots, d_0)_b$ be an
 $(n, b, \sigma)$-permutiple, where $(e_k, \dots, e_0)_b$ denotes the base-$b$ numeral
 $\sum_{j=0}^{k} e_j b^j$. Let $c_0, c_1, \dots$ be the carries of the multiplication

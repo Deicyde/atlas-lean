@@ -1,6 +1,6 @@
 # The class FPTAS
 
-**The class FPTAS.** FPTAS is the class of optimization problems that have a fully
+FPTAS is the class of optimization problems that have a fully
 polynomial-time approximation scheme.
 
 ## Sources

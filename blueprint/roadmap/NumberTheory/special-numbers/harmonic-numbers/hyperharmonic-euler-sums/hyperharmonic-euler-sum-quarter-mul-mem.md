@@ -1,6 +1,6 @@
 # Products of quarter-shift hyperharmonic Euler sums
 
-**Products of quarter-shift hyperharmonic Euler sums.** Let $k_1, k_2 \ge 0$ be integers,
+Let $k_1, k_2 \ge 0$ be integers,
 let $r_1, r_2 \in \tfrac12 + \mathbb{Z}$, $a \in \tfrac14 + \mathbb{Z}$ and
 $b \in \tfrac34 + \mathbb{Z}$, and let $p_1, p_2$ be integers with $p_1 > r_1$ and $p_2 > r_2$.
 Write $H_n^{[r]}(k)$ for the generalized hyperharmonic numbers and

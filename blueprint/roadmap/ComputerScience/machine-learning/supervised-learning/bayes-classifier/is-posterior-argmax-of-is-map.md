@@ -1,6 +1,6 @@
 # MAP classifiers are posterior argmax classifiers
 
-**MAP classifiers are posterior argmax classifiers.** Let the set $C$ of classes be countable
+Let the set $C$ of classes be countable
 and nonempty with measurable singletons, let the observation space $\mathcal X$ be countable with
 measurable singletons, let $P$ be a Markov kernel from $C$ to $\mathcal X$ and $\pi$ a finite
 measure on $C$, and write $P \circ \pi$ for the marginal measure on $\mathcal X$. If

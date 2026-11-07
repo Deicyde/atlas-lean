@@ -1,6 +1,6 @@
 # Sign balance for differences of shifted linear residues
 
-**Sign balance for differences of shifted linear residues.** Let $p$ be prime, $j \ge 1$ and
+Let $p$ be prime, $j \ge 1$ and
 $Q = p^j$. Let $g_1, g_2, f_1, f_2$ be natural numbers with $g_1, g_2 < Q$ and $f_1 \le f_2 < Q$
 such that $p$ divides none of $g_1$, $g_2$, $g_2 - g_1$, and let $e_1, e_2$ be reals with
 $0 < e_1 < e_2 < 1$. For natural $z$ put $c_i(z) = ((g_i z + f_i) \bmod Q) + e_i$ and

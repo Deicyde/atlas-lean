@@ -1,6 +1,6 @@
 # Closed form for the Pell–Fibonacci–tribonacci triple convolution
 
-**Closed form for the Pell–Fibonacci–tribonacci triple convolution.** Write $\mathcal{P}_n$
+Write $\mathcal{P}_n$
 for the Pell numbers, $F_n$ for the Fibonacci numbers and $T_n$ for the tribonacci numbers (the
 Fibonacci $m$-step numbers $F^{(m)}_n$ with $m = 2$ and $m = 3$). For every integer $n \ge 0$,
 $2 \sum \mathcal{P}_{k_1} F_{k_2} T_{k_3} = \mathcal{P}_{n+1} - T_{n+3} - T_{n+2} + 2F_{n+2}$,

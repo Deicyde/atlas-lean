@@ -1,6 +1,6 @@
 # Antiderivative of $x^{l - 1/2} H(x)$
 
-**Antiderivative of $x^{l - 1/2} H(x)$.** Let $l \ge 0$, let $S_l$ be Zurita's polynomial, and
+Let $l \ge 0$, let $S_l$ be Zurita's polynomial, and
 let $H$ be the closed form of the reciprocal central binomial series. Then there is a polynomial
 $T$ with rational coefficients such that $(4 - x)(2x T'(x) + T(x)) = 8x^l - S_l(x)$ as
 polynomials. Moreover, for every such $T$ and every real number $x$ with $0 < x < 4$, the real

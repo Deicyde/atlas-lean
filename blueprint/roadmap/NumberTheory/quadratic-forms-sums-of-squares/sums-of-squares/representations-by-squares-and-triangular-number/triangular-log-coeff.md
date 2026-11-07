@@ -1,6 +1,6 @@
 # Logarithmic coefficients of the triangular theta series
 
-**Logarithmic coefficients of the triangular theta series.** For a natural number $n$, let
+For a natural number $n$, let
 $b_n$ be the rational number
 $b_n = \sum_{d \mid n,\ n/d \text{ odd}} 1/d - \sum_{d \mid n,\ n/d \text{ even}} 1/d$, where $d$
 runs over the positive divisors of $n$; for $n = 0$ the sums are taken to be empty, so $b_0 = 0$.

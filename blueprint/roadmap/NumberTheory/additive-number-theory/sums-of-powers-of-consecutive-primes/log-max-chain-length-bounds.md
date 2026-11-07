@@ -1,6 +1,6 @@
 # Bounds for the logarithm of the maximal gleeful chain length
 
-**Bounds for the logarithm of the maximal gleeful chain length.** Let
+Let
 $p_1 = 2, p_2 = 3, \dots$ be the primes in increasing order. Let $k > 1$, $M_0 \ge 6$, $M \ge M_0$
 and $x$ be natural numbers with $p_1^k + \cdots + p_M^k \le x < p_1^k + \cdots + p_{M+1}^k$.
 Put $y = M_0$, let $\log$ be the natural logarithm, and set

@@ -1,6 +1,6 @@
 # Bridge and torch on star graphs
 
-**Bridge and torch on star graphs.** Consider the star model with $n \ge 2$ persons of crossing
+Consider the star model with $n \ge 2$ persons of crossing
 times $1, \dots, n$, $k \ge 1$ edges and $t \ge 1$ torches, let $T(n, k, t)$ be its optimal time,
 and let $m = \min(k, t)$ and $s = \lceil n/(2m) \rceil$. Let $T(n)$ be the optimal crossing time
 of $n$ persons with crossing times $1, \dots, n$ on a bridge of capacity $2$ with one torch. Then

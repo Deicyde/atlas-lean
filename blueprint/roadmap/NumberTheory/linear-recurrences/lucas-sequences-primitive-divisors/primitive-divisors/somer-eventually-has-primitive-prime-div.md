@@ -1,6 +1,6 @@
 # Somer's primitive divisor theorem
 
-**Somer's primitive divisor theorem.** Let $P$ and $Q$ be integers with $Q \ne 0$, and let
+Let $P$ and $Q$ be integers with $Q \ne 0$, and let
 $(u_n)_{n \ge 0}$ be the integer sequence with $u_0 = 0$, $u_1 = 1$ and
 $u_{n+2} = Pu_{n+1} - Qu_n$ (the Lucas sequence of the first kind). Suppose the sequence is
 nondegenerate: whenever complex numbers $\alpha$ and $\beta$ satisfy $\alpha + \beta = P$,

@@ -1,6 +1,6 @@
 # McKay conjecture (Cabanes–Späth theorem)
 
-**McKay conjecture (Cabanes–Späth theorem).** For every finite group $G$, every prime $p$ and
+For every finite group $G$, every prime $p$ and
 every Sylow $p$-subgroup $P$ of $G$, with normalizer $N_G(P)$ in $G$, the sets
 $\mathrm{Irr}_{p'}(G)$ and $\mathrm{Irr}_{p'}(N_G(P))$ of irreducible complex characters of
 degree not divisible by $p$ have the same cardinality.

@@ -1,6 +1,6 @@
 # Invariant of deferred acceptance
 
-**Invariant of deferred acceptance.** Let each proposer $m$ have a ranking $\sigma_m$ of the
+Let each proposer $m$ have a ranking $\sigma_m$ of the
 $n$ receivers and each receiver $w$ a ranking $\tau_w$ of the $n$ proposers, where $\sigma_m(k)$
 is the choice of $m$ of rank $k$ (rank $0$ is the best) and $\tau_w^{-1}(x)$ is the rank of $x$
 for $w$. A state $s$ of deferred acceptance satisfies the invariant when: every proposer has made

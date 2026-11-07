@@ -1,6 +1,6 @@
 # The rank-two tuple count vanishes for $k = 1$
 
-**The rank-two tuple count vanishes for $k = 1$.** For every $f \in \mathbb{Z}[x, y]$ and
+For every $f \in \mathbb{Z}[x, y]$ and
 every prime $p$, the rank-two tuple count $m_1(f, p)$ is $0$: a matrix with a single row has rank
 at most $1$.
 

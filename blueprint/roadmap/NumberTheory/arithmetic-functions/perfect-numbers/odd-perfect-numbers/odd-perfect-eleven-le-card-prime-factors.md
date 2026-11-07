@@ -1,6 +1,6 @@
 # Odd perfect numbers not divisible by three have at least eleven prime divisors
 
-**Odd perfect numbers not divisible by three have at least eleven prime divisors.** Every odd
+Every odd
 perfect number that is not divisible by $3$ has at least $11$ distinct prime divisors. This is due
 to Kishore (1981) and Hagis (1983).
 

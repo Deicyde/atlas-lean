@@ -1,6 +1,6 @@
 # Hölder space $C^{r,\alpha}(\mathbb{R}^n)$
 
-**Hölder space $C^{r,\alpha}(\mathbb{R}^n)$.** For a natural number $r$ and a real number
+For a natural number $r$ and a real number
 $\alpha$, a function $g : \mathbb{R}^n \to \mathbb{R}$ belongs to $C^{r,\alpha}(\mathbb{R}^n)$ when
 $g$ is $r$ times continuously differentiable, its iterated derivatives $D^j g$ for $j \le r$ are
 bounded on $\mathbb{R}^n$, and its $r$-th derivative is $\alpha$-Hölder: there is $C \ge 0$ with

@@ -1,6 +1,6 @@
 # The upper chain turns strictly left
 
-**The upper chain turns strictly left.** Let $K$ be an ordered field, let
+Let $K$ be an ordered field, let
 $p_1, \dots, p_n \in K^2$ be strictly increasing in the lexicographic $(x, y)$ order, and let
 $c_0, c_1, \dots, c_{m-1}$ be the upper chain of $p_1, \dots, p_n$. Then for every $i$ with
 $i + 2 < m$, we have $(c_{i+1} - c_i) \times (c_{i+2} - c_i) > 0$, where

@@ -1,6 +1,6 @@
 # Brun's theorem on twin primes
 
-**Brun's theorem on twin primes.** The series
+The series
 $\sum_{p} \left(\frac{1}{p} + \frac{1}{p + 2}\right)$, taken over all primes $p$ such that
 $p + 2$ is also prime, converges in $\mathbb{R}$.
 

@@ -1,6 +1,6 @@
 # Ideal period words
 
-**Ideal period words.** For $n \ge 1$, the ideal period word $d_n$ is a finite list of blocks
+For $n \ge 1$, the ideal period word $d_n$ is a finite list of blocks
 of partial quotients, each block being $a = 2, 1, 1$ or $b = 2, 2$. Writing lists of blocks by
 juxtaposition, with commas between parts, $d_1 = [ab]$, $d_2 = [abb]$, $d_3 = [abb, ab, ab]$ and
 $d_4 = [abb, ab, ab, abb, abb]$; for $n \ge 5$, if $d_{n-1} = [j, ab, ab]$ for a list $j$ then

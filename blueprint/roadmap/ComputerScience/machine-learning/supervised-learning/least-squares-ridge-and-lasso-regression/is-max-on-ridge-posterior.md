@@ -1,6 +1,6 @@
 # The ridge estimate maximizes the ridge posterior
 
-**The ridge estimate maximizes the ridge posterior.** Let $X$ be a real design matrix with $m$
+Let $X$ be a real design matrix with $m$
 rows and columns indexed by a finite type $\iota$, let $y \in \mathbb{R}^m$, and let $v$ and $\tau$
 be positive reals. Let $p$ be the posterior kernel of linear regression with Gaussian noise of
 variance $v$ and independent $N(0, \tau)$ priors on the coordinates of the parameter, and let

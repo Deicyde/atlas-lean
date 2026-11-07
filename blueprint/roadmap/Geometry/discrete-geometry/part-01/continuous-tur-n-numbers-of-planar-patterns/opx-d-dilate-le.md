@@ -1,6 +1,6 @@
 # Dilation bound for the d-dimensional continuous Turán number
 
-**Dilation bound for the d-dimensional continuous Turán number.** Let $d$ be a natural
+Let $d$ be a natural
 number, let $P \subseteq \mathbb{R}^d$ be finite and let $c_1, c_2, q, n$ be real numbers with
 $c_1 > 0$, $q > 1$ and $n > 0$. Suppose that for every coordinate $i$ and all $p, p' \in P$ with
 $p_i < p'_i$ such that no $r \in P$ has $p_i < r_i < p'_i$, we have

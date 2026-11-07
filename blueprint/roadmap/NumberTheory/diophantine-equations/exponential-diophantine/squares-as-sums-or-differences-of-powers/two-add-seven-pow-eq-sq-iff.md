@@ -1,6 +1,6 @@
 # Solutions of $2 + 7^y = z^2$
 
-**Solutions of $2 + 7^y = z^2$.** For natural numbers $y, z$, we have $2 + 7^y = z^2$ if and
+For natural numbers $y, z$, we have $2 + 7^y = z^2$ if and
 only if $(y, z) = (1, 3)$.
 
 ## Sources

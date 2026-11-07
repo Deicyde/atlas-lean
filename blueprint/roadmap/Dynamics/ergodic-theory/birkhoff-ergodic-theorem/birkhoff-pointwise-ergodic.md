@@ -1,6 +1,6 @@
 # Birkhoff pointwise ergodic theorem (ergodic case)
 
-**Birkhoff pointwise ergodic theorem (ergodic case).** Let $\mu$ be a probability measure on a
+Let $\mu$ be a probability measure on a
 measurable space $\alpha$, let $T : \alpha \to \alpha$ be ergodic with respect to $\mu$ (in
 particular $T$ preserves $\mu$), and let $g : \alpha \to \mathbb{R}$ be $\mu$-integrable. Then for
 $\mu$-almost every $x \in \alpha$, the Birkhoff averages $\frac{1}{n} \sum_{k=0}^{n-1} g(T^k x)$

@@ -1,6 +1,6 @@
 # The single bitter cube has Grundy number zero
 
-**The single bitter cube has Grundy number zero.** For every $s \in \mathbb{N}$ and every
+For every $s \in \mathbb{N}$ and every
 $F : \mathbb{N}^s \to \mathbb{N}$, the chocolate bar $\mathrm{CB}(F, 0, \dots, 0, 0)$ has no move,
 so its Grundy number is $0$.
 

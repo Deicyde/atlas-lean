@@ -1,6 +1,6 @@
 # Position differences in the Fibonacci word
 
-**Position differences in the Fibonacci word.** Let $f = \ell_0 \ell_1 \ell_2 \cdots =
+Let $f = \ell_0 \ell_1 \ell_2 \cdots =
 abaab\cdots$ be the Fibonacci word, the infinite Fibonacci word with each $0$ written as $a$
 and each $1$ as $b$. Let $p_a(n)$ and $p_b(n)$ be the positions (counted from $0$) of the
 $n$-th $a$ and the $n$-th $b$ in $f$, and let $r(n) = p_b(n) - p_a(n)$. Then for every $n \ge 1$:

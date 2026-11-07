@@ -1,6 +1,6 @@
 # Intervals and residues of the anti-$k$-bonacci numbers
 
-**Intervals and residues of the anti-$k$-bonacci numbers.** Let $k > 1$, let $A_n$ be the
+Let $k > 1$, let $A_n$ be the
 anti-recurrence numbers of the linear form $(1, \dots, 1)$ of length $k$, and put
 $i = \lfloor k/2 \rfloor$ and $\kappa = k^2 + 1$. Then for every $n \ge 1$, $A_n$ lies in the
 interval $[\kappa(n - 1) + 1, \kappa n]$, and $A_n \equiv ik + c \pmod{\kappa}$ for some natural

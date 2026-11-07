@@ -1,6 +1,6 @@
 # Independent sets of the distinct link graph
 
-**Independent sets of the distinct link graph.** Let $G$ be a set with an addition and let
+Let $G$ be a set with an addition and let
 $S, B, I \subseteq G$. The set $I$ is an independent set of the distinct link graph $L^*_S[B]$
 (the graph on vertex set $B$ given by the edges and loops of the distinct link graph of $S$) if
 $I \subseteq B$, no element of $I$ carries a loop, and no two elements of $I$ are adjacent.

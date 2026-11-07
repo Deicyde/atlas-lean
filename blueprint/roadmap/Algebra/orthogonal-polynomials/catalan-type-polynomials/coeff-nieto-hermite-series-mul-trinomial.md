@@ -1,6 +1,6 @@
 # Nieto–Hermite Catalan-type polynomials as convolutions
 
-**Nieto–Hermite Catalan-type polynomials as convolutions.** Let $j, k, m, r$ be natural
+Let $j, k, m, r$ be natural
 numbers with $k \le r$ and let $\lambda, x, y$ be real numbers. Let $E(t) = e^{2yt - t^2}$ be the
 exponential series, so that its coefficient of $t^n$ is $H_n(y) / n!$ with $H_n$ the Hermite
 polynomials, and let $F(t)$ be the power series whose coefficient of $t^n$ is $H_n(y) / n!$ when

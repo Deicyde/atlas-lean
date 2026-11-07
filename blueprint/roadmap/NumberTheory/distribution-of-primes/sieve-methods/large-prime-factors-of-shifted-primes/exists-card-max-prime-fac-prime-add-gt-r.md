@@ -1,6 +1,6 @@
 # Baker–Harman: shifted primes with a large prime factor
 
-**Baker–Harman: shifted primes with a large prime factor.** For every integer $a$ and every
+For every integer $a$ and every
 real $\theta$ with $0 < \theta \le 0.677$ there is a real $\delta$ with $0 < \delta < 1$ such that,
 for all sufficiently large real $x$, the number of primes $p \le x$ for which the largest prime
 factor $P(|p + a|)$ of $|p + a|$ exceeds $x^\theta$ is greater than $\delta x / \log x$. Here

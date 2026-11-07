@@ -1,6 +1,6 @@
 # Graph non-isomorphism is in AM
 
-**Graph non-isomorphism is in AM.** The directed graph non-isomorphism decision problem
+The directed graph non-isomorphism decision problem
 belongs to the class $\mathsf{AM}$ of decision problems decided by Arthur–Merlin protocols.
 
 ## Sources

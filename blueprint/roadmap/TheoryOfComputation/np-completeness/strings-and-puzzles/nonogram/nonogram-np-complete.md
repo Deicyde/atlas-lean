@@ -1,6 +1,6 @@
 # NONOGRAM is NP-complete
 
-**NONOGRAM is NP-complete.** The NONOGRAM decision problem belongs to NP, and every decision
+The NONOGRAM decision problem belongs to NP, and every decision
 problem in NP reduces to NONOGRAM by a polynomial-time many-one reduction.
 
 ## Sources

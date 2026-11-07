@@ -1,6 +1,6 @@
 # An example of compatible semiprimes
 
-**An example of compatible semiprimes.** The semiprimes $71 \cdot 1609 = 114239$ and
+The semiprimes $71 \cdot 1609 = 114239$ and
 $349 \cdot 491$ are compatible.
 
 ## Sources

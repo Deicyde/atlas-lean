@@ -1,6 +1,6 @@
 # Total occurrences of a subword in non-decreasing Dyck paths
 
-**Total occurrences of a subword in non-decreasing Dyck paths.** For a word $w$ in the steps
+For a word $w$ in the steps
 $U$ and $D$ and for $n \ge 0$, $d_w(n)$ is the total number of occurrences of $w$ as a contiguous
 subword (overlapping occurrences counted separately), summed over all non-decreasing Dyck paths
 of semilength $n$.

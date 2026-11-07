@@ -1,6 +1,6 @@
 # Second-derivative test, necessary condition
 
-**Second-derivative test, necessary condition.** Let $f : \mathbb{R}^n \to \mathbb{R}$ be twice
+Let $f : \mathbb{R}^n \to \mathbb{R}$ be twice
 continuously differentiable and let $x$ be a local minimum of $f$. Then the Hessian quadratic
 form of $f$ at $x$ is nonnegative: writing $H$ for the Hessian matrix of $f$ at $x$, every
 $v \in \mathbb{R}^n$ satisfies $\sum_{i, j} v_i H_{ij} v_j \ge 0$.

@@ -1,6 +1,6 @@
 # Upper bound on the number of decomposable lunar numbers
 
-**Upper bound on the number of decomposable lunar numbers.** Fix an integer $b \ge 2$. There
+Fix an integer $b \ge 2$. There
 is a constant $C > 0$ such that for every integer $n \ge 2$ and all reals $d > 0$ and $v > 0$, the
 set $\Sigma_b^n$ of decomposable lunar numbers of base $b$ and degree at most $n$ satisfies
 

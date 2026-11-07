@@ -1,6 +1,6 @@
 # The evidence density of Bayesian linear regression
 
-**The evidence density of Bayesian linear regression.** For $m_0 \in \mathbb{R}$,
+For $m_0 \in \mathbb{R}$,
 $s_0, \sigma^2 \ge 0$ and $x, y \in \mathbb{R}^n$, let $m$ and $v$ be the posterior mean and
 variance of the weight, write $\varphi(t; \mu, \tau) = (2\pi\tau)^{-1/2} e^{-(t - \mu)^2 / (2\tau)}$
 for the Gaussian density with mean $\mu$ and variance $\tau$ at $t$ (read as $0$ when $\tau = 0$),

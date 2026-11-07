@@ -1,6 +1,6 @@
 # Square-torus fixed points of the rotation $r$, even $n$
 
-**Square-torus fixed points of the rotation $r$, even $n$.** Let $n$ be an even positive
+Let $n$ be an even positive
 integer, let $T$ be a finite set of tile designs, and let $\sigma$ be a permutation of $T$ with
 $\sigma^4 = 1$. For $k \ge 1$ let $t_k$ be the number of designs in $T$ fixed by $\sigma^k$. Let
 $r$ be the cell map $(x, y) \mapsto (-1-y, x)$ of $(\mathbb{Z}/n\mathbb{Z})^2$, and let $S$ be the

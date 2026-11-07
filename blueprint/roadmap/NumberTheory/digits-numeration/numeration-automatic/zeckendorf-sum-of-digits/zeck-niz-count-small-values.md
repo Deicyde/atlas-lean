@@ -1,6 +1,6 @@
 # Exactly $2r$ new-information cylinders carry each small value
 
-**Exactly $2r$ new-information cylinders carry each small value.** Let $r \ge 1$, and let
+Let $r \ge 1$, and let
 $F_n$ denote the $n$-th Fibonacci number ($F_1 = F_2 = 1$). There is an integer $D$ such that for
 every integer $d \le D$ there are exactly $2r$ pairs $(k, v)$ of natural numbers with
 $v < F_{k+2}$ such that the Zeckendorf digit sequence $i(v)$ of $v$ lies in the new-information

@@ -1,6 +1,6 @@
 # Tabulating a list-ranking state
 
-**Tabulating a list-ranking state.** The tabulation of a pointer-jumping state $s$ on the
+The tabulation of a pointer-jumping state $s$ on the
 nodes $0, \dots, n - 1$ is the pair of arrays of length $n$ whose entries at $v$ are the pointer
 and the distance of $v$ in $s$.
 

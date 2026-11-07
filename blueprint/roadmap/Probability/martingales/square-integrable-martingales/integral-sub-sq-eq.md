@@ -1,6 +1,6 @@
 # Pythagorean identity for martingale increments
 
-**Pythagorean identity for martingale increments.** Let $(\Omega, \mu)$ be a probability
+Let $(\Omega, \mu)$ be a probability
 space with a filtration $(\mathcal{F}_n)_{n \in \mathbb{N}}$, and let $(X_n)_{n \in \mathbb{N}}$ be
 a real-valued martingale with respect to $(\mathcal{F}_n)$ and $\mu$ such that
 $\mathbb{E}[X_k^2] < \infty$ for every $k$. Then for all $m \le n$,

@@ -1,6 +1,6 @@
 # Banach–Mazur embedding theorem
 
-**Banach–Mazur embedding theorem.** Every separable real Banach space $E$ admits a linear
+Every separable real Banach space $E$ admits a linear
 isometric embedding $e \colon E \to C([0, 1], \mathbb{R})$ into the space of continuous real
 functions on $[0, 1]$ with the supremum norm, such that the range of $e$ is closed.
 

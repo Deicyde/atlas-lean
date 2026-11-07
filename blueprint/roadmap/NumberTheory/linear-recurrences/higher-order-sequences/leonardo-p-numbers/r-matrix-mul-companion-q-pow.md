@@ -1,6 +1,6 @@
 # Powers of $Q_p$ shift the Hankel matrices $R_{p,m}$
 
-**Powers of $Q_p$ shift the Hankel matrices $R_{p,m}$.** Let $p \ge 2$ be a natural number and
+Let $p \ge 2$ be a natural number and
 let $H : \mathbb{Z} \to \mathbb{Z}$ satisfy $H(t) = H(t-1) + H(t-p) - H(t-2p-1)$ for every
 integer $t$. For a natural number $m$, let $R_{p,m}$ be the $(2p+1) \times (2p+1)$ integer matrix
 whose $(a, b)$ entry is $H(m - a - b)$ for $0 \le a, b \le 2p$, and let $Q_p$ be the

@@ -1,6 +1,6 @@
 # Situation injectivity
 
-**Situation injectivity.** Let $M$ be a finite stack machine with encoding data $E$, and write
+Let $M$ be a finite stack machine with encoding data $E$, and write
 $N$ for the number of situations of $E$, $K$ for the number of stacks of $E$ and $d$ for the
 window depth of $M$. Let $c$ be a configuration of $M$ all of whose stack symbols lie in the
 effective alphabets of $E$, and let $i < N$. If the label/state code of situation $i$ equals the

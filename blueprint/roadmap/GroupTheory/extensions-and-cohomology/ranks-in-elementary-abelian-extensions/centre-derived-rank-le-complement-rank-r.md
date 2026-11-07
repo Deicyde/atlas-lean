@@ -1,6 +1,6 @@
 # Zenkov's rank bound fails (Kourovka 21.150)
 
-**Zenkov's rank bound fails (Kourovka 21.150).** Call a subgroup elementary abelian if it is
+Call a subgroup elementary abelian if it is
 abelian and there is a prime $p$ with $x^p = 1$ for all its elements $x$. There are a finite group
 $G$, elementary abelian subgroups $A$ and $B$ of $G$ with $A$ normal, $A \cap B = 1$ and
 $\langle A, B \rangle = G$, and an element $a \in A$ whose centralizer $C_B(a)$ in $B$ is trivial,

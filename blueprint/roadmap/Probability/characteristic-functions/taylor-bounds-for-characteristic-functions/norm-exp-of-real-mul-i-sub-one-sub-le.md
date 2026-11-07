@@ -1,6 +1,6 @@
 # Global second-order bound for the imaginary exponential
 
-**Global second-order bound for the imaginary exponential.** For every real number $u$,
+For every real number $u$,
 $|e^{iu} - 1 - iu| \le u^2$, with no restriction on the size of $u$.
 
 The proof splits at $u^2 \le 27$: in that range the squared norm is

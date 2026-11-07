@@ -1,6 +1,6 @@
 # CONNECTED DOMINATING SET is NP-complete
 
-**CONNECTED DOMINATING SET is NP-complete.** The decision problem CONNECTED DOMINATING SET
+The decision problem CONNECTED DOMINATING SET
 belongs to NP, and every decision problem in NP reduces to it by a polynomial-time many-one
 reduction.
 

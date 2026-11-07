@@ -1,6 +1,6 @@
 # A congruence modulo 3 for 3-regular tripartitions at primes $p \equiv 3 \pmod 4$
 
-**A congruence modulo 3 for 3-regular tripartitions at primes $p \equiv 3 \pmod 4$.** Let
+Let
 $T_3(m)$ be the number of $3$-regular tripartitions of $m$, and let $p$ be a prime with
 $p \equiv 3 \pmod 4$. For all natural numbers $\alpha$ and $n$ and every integer $i$ with
 $1 \le i \le p - 1$,

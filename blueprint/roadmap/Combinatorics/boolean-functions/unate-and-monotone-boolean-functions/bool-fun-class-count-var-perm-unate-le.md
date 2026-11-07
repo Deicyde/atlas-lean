@@ -1,6 +1,6 @@
 # Unate versus monotone permutation classes
 
-**Unate versus monotone permutation classes.** Write $[Q]_n$ for the number of classes of
+Write $[Q]_n$ for the number of classes of
 $n$-variable Boolean functions with property $Q$ under permutation of the variables. Let $U$, $M$,
 $B$ and $\mathrm{nd}$ be the properties of being unate, monotone (nondecreasing for the
 coordinatewise order with $0 < 1$), balanced (true of a function $f$ when $2\,\mathrm{wt}(f) = 2^n$,

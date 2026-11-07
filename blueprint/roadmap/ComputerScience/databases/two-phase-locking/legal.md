@@ -1,6 +1,6 @@
 # Legal locked schedule
 
-**Legal locked schedule.** A locked schedule $s$ of length $\ell$ is legal when it satisfies
+A locked schedule $s$ of length $\ell$ is legal when it satisfies
 lock compatibility at every point $p \le \ell$: just before position $p$, no two distinct
 transactions both hold locks on the same item unless both locks are shared.
 

@@ -1,6 +1,6 @@
 # The generalized Hofstadter substitution does not shorten words
 
-**The generalized Hofstadter substitution does not shorten words.** For every natural
+For every natural
 number $k$, let $\tau_k$ be the substitution on letters in $\mathbb{N}$ sending $k$ to the
 two-letter word $k\,1$ and every other letter $i$ to the one-letter word $i + 1$. For every
 finite word $w$ over $\mathbb{N}$, the word $\tau_k(w)$, obtained by replacing each letter of

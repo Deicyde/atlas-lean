@@ -1,6 +1,6 @@
 # Rampersad–Wiebe Theorem 3
 
-**Rampersad–Wiebe Theorem 3.** Let $(F_j)_{j \ge 0}$ be the Fibonacci numbers, $F_0 = 0$,
+Let $(F_j)_{j \ge 0}$ be the Fibonacci numbers, $F_0 = 0$,
 $F_1 = 1$, and let $T$ be the run length transform of $S(i) = F_{i+2}$, i.e. of
 $1, 2, 3, 5, 8, \dots$. Then for every natural number $n$,
 $\sum_{k=0}^{n} \left(\binom{3k}{k} \binom{n}{k} \bmod 2\right) = T(n)$.

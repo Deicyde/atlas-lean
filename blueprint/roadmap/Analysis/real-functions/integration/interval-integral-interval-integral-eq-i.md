@@ -1,6 +1,6 @@
 # Cauchy's formula for the twice-iterated integral
 
-**Cauchy's formula for the twice-iterated integral.** Let $E$ be a real Banach space, let
+Let $E$ be a real Banach space, let
 $\alpha \le \beta$ be real numbers and let $f : \mathbb{R} \to E$ be continuous on
 $[\alpha, \beta]$. Then for every $s \in [\alpha, \beta]$,
 

@@ -1,6 +1,6 @@
 # The correction $F_y$ vanishes at $y = 0$
 
-**The correction $F_y$ vanishes at $y = 0$.** For all natural numbers $p$, $d$ and $e$, the
+For all natural numbers $p$, $d$ and $e$, the
 correction $F_y(e)$ of Lemma 9, taken at $y = 0$, is $0$.
 
 ## Sources

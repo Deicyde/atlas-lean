@@ -1,6 +1,6 @@
 # Generalized tau function
 
-**Generalized tau function.** For an integer $k$ and a natural number $n$, the generalized tau
+For an integer $k$ and a natural number $n$, the generalized tau
 function $\tau_k(n)$ is the coefficient of $q^n$ in the integer power series
 $q \prod_{m \ge 1} (1 - q^m)^k$. For negative $k$ the power is taken in the group of units of
 $\mathbb{Z}[[q]]$, where $\prod_{m \ge 1} (1 - q^m)$ is invertible because its constant term is $1$.

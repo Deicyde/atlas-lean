@@ -1,6 +1,6 @@
 # Token sequence of a CNF formula
 
-**Token sequence of a CNF formula.** For a CNF formula $\varphi$ with clauses
+For a CNF formula $\varphi$ with clauses
 $C_1, \dots, C_k$ (in order), the token sequence of $\varphi$ is the concatenation of the token
 sequences of $C_1, \dots, C_k$. The token sequence of a clause is the concatenation of the token
 sequences of its literals, in order, followed by a clause-end symbol; the token sequence of a

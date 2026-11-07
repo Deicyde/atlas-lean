@@ -1,6 +1,6 @@
 # The situation-definition tables of a machine are well formed
 
-**The situation-definition tables of a machine are well formed.** Let $M$ be a finite
+Let $M$ be a finite
 multi-stack Turing machine with window depth $d$, let $E$ be an encoding of $M$ with $A_0$
 label/state codes, $K$ stacks, $g$ symbol codes and $N$ situations, and let $H \ge d$. For every
 situation $i < N$, the current-code table $\mathrm{la}$ of $E$, the table

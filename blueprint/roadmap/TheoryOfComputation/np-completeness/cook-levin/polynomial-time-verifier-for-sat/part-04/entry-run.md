@@ -1,6 +1,6 @@
 # One scan step of the lookup
 
-**One scan step of the lookup.** Write stack contents top first; for a list of bits $u$ let
+Write stack contents top first; for a list of bits $u$ let
 $\overleftarrow{u}$ be its bit symbols in reverse order; for a list $E$ of table entries let
 $\tau(E)$ be the symbols of its entries in reading order (each entry's name bits, then its marker)
 and $\mathrm{val}_E(q)$ the value of the first live entry of $E$ named $q$, or false if there is

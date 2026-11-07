@@ -1,6 +1,6 @@
 # Two-layer stacks of patterns with linear continuous Turán number
 
-**Two-layer stacks of patterns with linear continuous Turán number.** Let
+Let
 $P \subseteq \mathbb{R}^2$ have at least two points, and suppose that
 $\mathrm{opx}(n, P) = O(n)$ as the real number $n$ tends to infinity. Let $c > 0$ and
 $Q_{P,2,c} = \{(x, y, z) : (x, y) \in P,\ z \in \{c, 2c\}\} \subseteq \mathbb{R}^3$. Then

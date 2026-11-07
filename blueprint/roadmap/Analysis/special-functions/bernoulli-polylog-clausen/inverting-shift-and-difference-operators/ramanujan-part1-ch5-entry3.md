@@ -1,6 +1,6 @@
 # Eulerian-polynomial inverse of a shift-plus-multiple operator
 
-**Eulerian-polynomial inverse of a shift-plus-multiple operator.** Let $A(n, k)$ be the
+Let $A(n, k)$ be the
 Eulerian numbers, given by $A(0, 0) = 1$, $A(0, k) = 0$ for $k \ge 1$ and
 $A(n + 1, k) = (k + 1) A(n, k) + (n + 1 - k) A(n, k - 1)$, the last term read as $0$ when
 $k = 0$. For $p \in \mathbb{C}$ set $\psi_0(p) = 1$ and

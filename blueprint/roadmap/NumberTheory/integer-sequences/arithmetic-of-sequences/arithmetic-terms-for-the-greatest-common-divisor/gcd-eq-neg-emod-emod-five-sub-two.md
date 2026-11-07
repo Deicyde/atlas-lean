@@ -1,6 +1,6 @@
 # Second arithmetic term for the gcd in base $5$
 
-**Second arithmetic term for the gcd in base $5$.** For all natural numbers $a, b \ge 1$,
+For all natural numbers $a, b \ge 1$,
 
 $$
 \gcd(a, b) = \Big( \big( (-5^{ab(ab+a+b)}) \bmod \big( (5^{a^2 b} - 1)(5^{a b^2} - 1) \big) \big)

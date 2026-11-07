@@ -1,6 +1,6 @@
 # The whole space is piecewise syndetic
 
-**The whole space is piecewise syndetic.** For every $t \in \mathbb{N}$, the whole space
+For every $t \in \mathbb{N}$, the whole space
 $\mathbb{N}^t$ is piecewise syndetic.
 
 ## Sources

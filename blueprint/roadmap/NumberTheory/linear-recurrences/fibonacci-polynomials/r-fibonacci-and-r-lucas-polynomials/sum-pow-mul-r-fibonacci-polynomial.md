@@ -1,6 +1,6 @@
 # Geometrically weighted sum of $r$-Fibonacci polynomials
 
-**Geometrically weighted sum of $r$-Fibonacci polynomials.** Let $K$ be a field, let $r \ge 1$
+Let $K$ be a field, let $r \ge 1$
 be a natural number, let $x, y, m \in K$ with $1 - m x - m^{r+1} y \ne 0$, and write $U_j$ for
 the $r$-Fibonacci polynomial $U^{(r)}_j(x, y)$. Then for every natural number $n$,
 

@@ -1,6 +1,6 @@
 # Generating function of the gcd-term sequence
 
-**Generating function of the gcd-term sequence.** For natural numbers $a, b \ge 1$, in the
+For natural numbers $a, b \ge 1$, in the
 ring $\mathbb{Q}[[z]]$ of formal power series, the gcd-term sequence $s_{a,b}$ satisfies
 
 $$

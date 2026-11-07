@@ -1,6 +1,6 @@
 # Derived solidification is the left derived functor of solidification
 
-**Derived solidification is the left derived functor of solidification.** Let $Q$ denote the
+Let $Q$ denote the
 localization functors from cochain complexes indexed by $\mathbb{Z}$ to derived categories.
 Derived solidification, together with the comparison natural transformation from $Q$ followed by
 derived solidification to degreewise solidification followed by $Q$, is a left derived functor of

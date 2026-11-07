@@ -1,6 +1,6 @@
 # Black height of a possibly double-black tree
 
-**Black height of a possibly double-black tree.** The black height of a genuine red-black tree
+The black height of a genuine red-black tree
 is its usual black height. The double-black empty tree has black height $2$, and a double-black
 node with left subtree $L$ has black height $h(L) + 2$, where $h(L)$ is the usual black height of
 $L$. Thus a double-black root counts as two black nodes, where the usual black height counts the

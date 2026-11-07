@@ -1,6 +1,6 @@
 # Mazur's symmetric hull claim (Scottish Book Problem 65)
 
-**Mazur's symmetric hull claim (Scottish Book Problem 65).** The claim that for every real
+The claim that for every real
 Banach space $E$ and every convex set $W \subseteq E$ with $0 \in W$, if the closure of $W$ has
 empty interior (that is, $W$ is nowhere dense), then the closure of the convex hull of
 $W \cup (-W)$ also has empty interior. The convex hull of $W \cup (-W)$ is the smallest convex

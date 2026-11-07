@@ -1,6 +1,6 @@
 # First entry and tail of permutations sorted by the consecutive $321$-cyclic stack
 
-**First entry and tail of permutations sorted by the consecutive $321$-cyclic stack.** Let
+Let
 $n \ge 2$ and let $\mathrm{Sort}_n(s^{[321]})$ be the set of permutations of
 $[n] = \{1, \ldots, n\}$ that the consecutive-cyclic-pattern-avoiding stack-sorting map
 $s^{[321]}$ sends to the identity $12 \cdots n$. Every $\pi = \pi_1 \pi_2 \cdots \pi_n$ in

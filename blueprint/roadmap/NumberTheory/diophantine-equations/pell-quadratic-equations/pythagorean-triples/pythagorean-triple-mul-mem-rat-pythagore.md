@@ -1,6 +1,6 @@
 # Amato's product preserves rational Pythagorean triples
 
-**Amato's product preserves rational Pythagorean triples.** Let $E$ be the set of rational
+Let $E$ be the set of rational
 triples $(x, y, z)$ with $x \ne 0$ and $x^2 + y^2 = z^2$, and let $\star$ be Amato's product of
 triples. If $u \in E$ and $v \in E$, then $u \star v \in E$; that is, $\star$ is a binary
 operation on $E$.

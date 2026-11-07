@@ -1,6 +1,6 @@
 # MacMahon's partition theorem
 
-**MacMahon's partition theorem.** For every natural number $n$, the number of partitions of
+For every natural number $n$, the number of partitions of
 $n$ in which no part occurs exactly once equals the number of partitions of $n$ all of whose parts
 are even or congruent to $3$ modulo $6$.
 

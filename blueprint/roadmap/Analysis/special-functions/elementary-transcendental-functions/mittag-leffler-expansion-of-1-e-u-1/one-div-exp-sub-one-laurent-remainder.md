@@ -1,6 +1,6 @@
 # Remainder of the Laurent expansion of $1/(e^v - 1)$
 
-**Remainder of the Laurent expansion of $1/(e^v - 1)$.** For a natural number $N$, the
+For a natural number $N$, the
 function $R_N : \mathbb{R} \to \mathbb{R}$ is defined by $R_N(0) = 0$ and, for $v \neq 0$,
 
 $$

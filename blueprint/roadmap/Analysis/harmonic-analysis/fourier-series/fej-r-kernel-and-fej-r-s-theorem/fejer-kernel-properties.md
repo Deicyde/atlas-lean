@@ -1,6 +1,6 @@
 # Properties of the Fejér kernel
 
-**Properties of the Fejér kernel.** Let $T > 0$, let $N$ be a natural number, let $K_N$ be
+Let $T > 0$, let $N$ be a natural number, let $K_N$ be
 the $N$-th Fejér kernel on the circle $\mathbb{R}/T\mathbb{Z}$, let $\mu$ be the normalized Haar
 measure on $\mathbb{R}/T\mathbb{Z}$ (of total mass $1$), and let $e_1(x) = e^{2\pi i x / T}$.
 Then $\operatorname{Re} K_N(x) \ge 0$ for every $x \in \mathbb{R}/T\mathbb{Z}$;

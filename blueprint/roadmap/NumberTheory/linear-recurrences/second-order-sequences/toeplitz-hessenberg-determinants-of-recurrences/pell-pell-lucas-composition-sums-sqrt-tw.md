@@ -1,6 +1,6 @@
 # Pell and Pell–Lucas numbers as composition sums with $\sqrt 2$ weights
 
-**Pell and Pell–Lucas numbers as composition sums with $\sqrt 2$ weights.** Let $P_n$ be the
+Let $P_n$ be the
 Pell numbers and $Q_n$ the Pell–Lucas numbers ($Q_0 = Q_1 = 2$, $Q_{k+2} = 2Q_{k+1} + Q_k$). For
 every $n \ge 1$, with $c$ running over the compositions of $n$ (ordered tuples of positive
 integers with sum $n$) and the products running over the parts $j$ of $c$, the real number

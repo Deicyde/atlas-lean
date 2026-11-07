@@ -1,6 +1,6 @@
 # Landau-type formula for the a-points of the k-th derivative (Theorem 2, a ≠ 0)
 
-**Landau-type formula for the a-points of the k-th derivative (Theorem 2, a ≠ 0).** Let $F$ be
+Let $F$ be
 a function in the Selberg class with Dirichlet coefficients $a_F(n)$, write $F^{(k)}$ for the
 $k$-th derivative of $F$, let $k \ge 1$, let $a \ne 0$ be a complex number and let $x > 1$ be
 real. Let $E_1$, $E_2$ and $\tau$ be real numbers such that $F^{(k)}(s) \ne a$ whenever

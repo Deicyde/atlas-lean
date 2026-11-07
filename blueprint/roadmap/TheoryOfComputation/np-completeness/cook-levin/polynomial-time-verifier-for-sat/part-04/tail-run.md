@@ -1,6 +1,6 @@
 # Restoring and stashing after a comparison in the lookup machine
 
-**Restoring and stashing after a comparison in the lookup machine.** Let $q$, $n$, $c$ be
+Let $q$, $n$, $c$ be
 lists of bits such that $c$ is a prefix of both the reverse of $q$ and the reverse of $n$; let
 $R$, $r$, $s$, $w$ be lists of symbols with $r$ empty or starting with a symbol other than a name
 bit; and for a list of bits $x$ write $\bar x$ for the list of its bits as name bits. Suppose the

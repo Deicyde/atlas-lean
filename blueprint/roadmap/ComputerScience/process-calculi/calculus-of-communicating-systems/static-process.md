@@ -1,6 +1,6 @@
 # Static CCS processes
 
-**Static CCS processes.** Finite CCS processes with the static operators, over a type of
+Finite CCS processes with the static operators, over a type of
 channel names, are built from the inactive process $0$ by the prefix $\alpha.P$ of a CCS action
 $\alpha$ (silent, an input or an output) and a process $P$, the choice $P + Q$, the parallel
 composition $P \mid Q$, the restriction $P \setminus L$ of $P$ by a finite list $L$ of names, and

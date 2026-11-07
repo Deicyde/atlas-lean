@@ -1,6 +1,6 @@
 # A prime factor $8l - 3$ of $D_4(b) D_4(c)$
 
-**A prime factor $8l - 3$ of $D_4(b) D_4(c)$.** Let
+Let
 $a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$ have sums $b_i$, alternating sums
 $c_i$ and Gaussian integer $\beta$, let $D_4$ be the $4 \times 4$ circulant determinant, and let
 $P$ be the set of positive primes $p \equiv 5 \pmod 8$. Suppose

@@ -1,6 +1,6 @@
 # Noncrossing partitions split into lonely and marriageable singles partitions
 
-**Noncrossing partitions split into lonely and marriageable singles partitions.** For every
+For every
 $n \ge 0$, the number $C_n$ of noncrossing partitions of $\{0, \dots, n-1\}$ equals $L_n + M_n$,
 where $M_n$ is the number of those that are marriageable singles partitions and $L_n$ is the
 number of those that are not.

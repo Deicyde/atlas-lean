@@ -1,6 +1,6 @@
 # Genocchi–Lucas sum for powers of the conjugate golden ratio
 
-**Genocchi–Lucas sum for powers of the conjugate golden ratio.** Let
+Let
 $\beta = (1 - \sqrt{5})/2$, let $G_k$ be the Genocchi numbers and let $L_k$ be the Lucas numbers
 ($L_0 = 2$, $L_1 = 1$, $L_{k+2} = L_{k+1} + L_k$). For every natural number $n$,
 

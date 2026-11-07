@@ -1,6 +1,6 @@
 # Changing the target chart of a submersion at a point
 
-**Changing the target chart of a submersion at a point.** Let $\mathbb{K}$ be a nontrivially
+Let $\mathbb{K}$ be a nontrivially
 normed field, let $n \in \mathbb{N} \cup \{\infty, \omega\}$, and let $M$ and $N$ be charted spaces
 modelled, through models with corners, on normed spaces $E$ and $E''$ over $\mathbb{K}$, both
 models without boundary. Let $f : M \to N$ be a $C^n$ submersion at $x \in M$ with complement $F$,

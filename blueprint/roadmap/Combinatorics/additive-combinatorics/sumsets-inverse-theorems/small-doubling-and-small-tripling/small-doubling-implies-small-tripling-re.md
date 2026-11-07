@@ -1,6 +1,6 @@
 # Small doubling does not imply small tripling
 
-**Small doubling does not imply small tripling.** There is no function
+There is no function
 $f : \mathbb{R} \to \mathbb{R}$ such that for every group $G$, every finite nonempty subset
 $A \subseteq G$ and every real number $K$ with $|A \cdot A| \le K |A|$ one has
 $|A \cdot A \cdot A| \le f(K) |A|$. Here $A \cdot A = \{ab : a, b \in A\}$ and

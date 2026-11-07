@@ -1,6 +1,5 @@
 # Tower formula for decomposition groups
 
-**Tower formula for decomposition groups.**
 Let $L/K$ be a finite Galois extension with Galois group $G$. Let $A$ and $B$ be Dedekind domains
 with $B$ a finite torsion-free $A$-algebra, and let $G$ act on $B$ by ring automorphisms as a
 Galois group of $B$ over $A$: faithfully, fixing the image of $A$, and with every element of $B$

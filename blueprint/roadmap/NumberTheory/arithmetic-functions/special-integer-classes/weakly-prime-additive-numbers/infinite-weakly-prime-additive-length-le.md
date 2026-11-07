@@ -1,6 +1,6 @@
 # Weakly prime-additive multiples of length at most four
 
-**Weakly prime-additive multiples of length at most four.** Assume $(\ast)$: for all natural
+Assume $(\ast)$: for all natural
 numbers $a$, $f$, $g$ with $1 \le a \le f$, $\gcd(a, f) = 1$ and $4 \mid f$, and $g$ an odd prime
 dividing $f$ with Jacobi symbol $\left(\frac{g}{a}\right) = -1$, there is a prime
 $\ell \equiv a \pmod f$ such that $g$ is a primitive root modulo $\ell$. Then for every positive

@@ -1,6 +1,6 @@
 # Stable strings
 
-**Stable strings.** For a finite string $a = (a_1, \dots, a_n)$ of natural numbers, let
+For a finite string $a = (a_1, \dots, a_n)$ of natural numbers, let
 $M(t) = \begin{pmatrix} 0 & 1 \\ 1 & t \end{pmatrix}$ and write the convergent matrix of $a$ as
 
 $$C(a) = M(a_1) M(a_2) \cdots M(a_n) = \begin{pmatrix} p' & p \\ q' & q \end{pmatrix},$$

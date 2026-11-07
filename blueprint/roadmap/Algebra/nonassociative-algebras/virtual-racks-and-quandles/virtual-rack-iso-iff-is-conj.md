@@ -1,6 +1,6 @@
 # Isomorphism of virtual structures is conjugacy
 
-**Isomorphism of virtual structures is conjugacy.** Let $R$ be a rack and let $f_1$ and $f_2$
+Let $R$ be a rack and let $f_1$ and $f_2$
 be elements of its automorphism group $\operatorname{Aut} R$. Then the virtual racks $(R, f_1)$
 and $(R, f_2)$ are isomorphic if and only if $f_1$ and $f_2$ are conjugate in
 $\operatorname{Aut} R$.

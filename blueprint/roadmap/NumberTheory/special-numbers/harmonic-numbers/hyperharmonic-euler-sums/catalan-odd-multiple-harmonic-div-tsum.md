@@ -1,6 +1,6 @@
 # Catalan–odd harmonic sum with denominator $4^n n$
 
-**Catalan–odd harmonic sum with denominator $4^n n$.** Let $k \ge 1$ be an integer, let $C_n$
+Let $k \ge 1$ be an integer, let $C_n$
 denote the $n$-th Catalan number and $O_n(k)$ the depth-$k$ odd harmonic number. Then
 
 $$\sum_{n \ge 1} \frac{C_n O_n(k)}{4^n n} = (2^{k+1} - 1) \zeta(k + 1) - 2^{k+1}.$$

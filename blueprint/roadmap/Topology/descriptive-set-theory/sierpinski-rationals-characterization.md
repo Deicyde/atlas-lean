@@ -1,6 +1,6 @@
 # Sierpinski's characterization of the rationals
 
-**Sierpinski's characterization of the rationals.** Every nonempty countable metrizable space with no isolated points is homeomorphic to Q.
+Every nonempty countable metrizable space with no isolated points is homeomorphic to Q.
 
 ## Sources
 

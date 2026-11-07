@@ -1,6 +1,6 @@
 # Newton series of locally integer polynomial functions
 
-**Newton series of locally integer polynomial functions.** Let $U \subseteq \mathbb{Z}$, let
+Let $U \subseteq \mathbb{Z}$, let
 $\mathbb{N} = \{0, 1, 2, \dots\}$, and let $\sigma : \mathbb{N} \to U$ be a bijection. For a
 sequence of integers $a = (a_k)_{k \in \mathbb{N}}$ define $f_a : U \to \mathbb{Z}$ by
 

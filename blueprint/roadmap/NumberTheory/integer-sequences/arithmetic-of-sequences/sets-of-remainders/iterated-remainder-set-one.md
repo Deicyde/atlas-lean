@@ -1,6 +1,6 @@
 # The first iterated remainder set is the remainder set
 
-**The first iterated remainder set is the remainder set.** For every natural number $n$, the
+For every natural number $n$, the
 iterated remainder set $S_1(n)$ equals the remainder set
 $S(n) = \{n \bmod k : 1 \le k \le \lfloor n/2 \rfloor\}$.
 

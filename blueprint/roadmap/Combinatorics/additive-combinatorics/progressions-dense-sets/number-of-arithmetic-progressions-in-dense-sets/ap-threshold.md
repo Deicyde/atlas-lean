@@ -1,6 +1,6 @@
 # The progression threshold $F_k(N, \ell)$
 
-**The progression threshold $F_k(N, \ell)$.** For natural numbers $k$, $\ell$ and $N$,
+For natural numbers $k$, $\ell$ and $N$,
 $F_k(N, \ell)$ is the least natural number $m$ such that every $N$-element set
 $A \subseteq \mathbb{N}$ with $\mathrm{AP}_k(A) \ge m$ contains an $\ell$-term arithmetic
 progression, where $\mathrm{AP}_k(A)$ is the number of pairs $(a, d)$ with $a \in A$,

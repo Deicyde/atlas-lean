@@ -1,6 +1,6 @@
 # Gap codings single out the reflected Fibonacci word among words starting with $b$
 
-**Gap codings single out the reflected Fibonacci word among words starting with $b$.** Let
+Let
 $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite binary word over the letters $a$ and $b$ in which
 both letters occur infinitely often and $\ell_0 = b$. For a letter $\alpha$ let $p_\alpha(n)$ be
 the position (counting from $0$) of the $n$-th occurrence of $\alpha$ in $w$ and

@@ -1,6 +1,6 @@
 # Shifted partial sums vanish below $\deg f$
 
-**Shifted partial sums vanish below $\deg f$.** Let $F$ be a field, let
+Let $F$ be a field, let
 $\alpha, \beta \colon F[T] \to \mathbb{C}$ and let $f \in F[T]$. For every natural number
 $n < \deg f$, the shifted partial sum of the Dirichlet convolution satisfies
 $S_f[\alpha, \beta](n) = 0$.

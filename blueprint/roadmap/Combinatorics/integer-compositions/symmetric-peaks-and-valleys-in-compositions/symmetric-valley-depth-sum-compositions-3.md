@@ -1,6 +1,6 @@
 # Total depth of symmetric valleys over compositions with $k > 3$ parts
 
-**Total depth of symmetric valleys over compositions with $k > 3$ parts.** For natural
+For natural
 numbers $n$ and $k$ with $k > 3$, the sum, over all compositions $c$ of $n$ with exactly $k$
 parts, of the total depth of the symmetric valleys of the sequence of parts of $c$ equals
 

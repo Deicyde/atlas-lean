@@ -1,6 +1,6 @@
 # Every operator annihilates the zero sequence
 
-**Every operator annihilates the zero sequence.** For every semiring $K$ and every polynomial
+For every semiring $K$ and every polynomial
 $p \in K[X]$, the operator $p(E)$ annihilates the zero sequence, where $E$ is the translation
 operator $E(G_s) = G_{s+1}$.
 

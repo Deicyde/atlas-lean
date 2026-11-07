@@ -1,6 +1,6 @@
 # Posterior argmax classifier
 
-**Posterior argmax classifier.** Let the set $C$ of classes be countable and nonempty with
+Let the set $C$ of classes be countable and nonempty with
 measurable singletons, let $P$ be a finite kernel from $C$ to the observation space $\mathcal X$
 and $\pi$ a finite measure on $C$, write $P \circ \pi$ for the marginal measure on $\mathcal X$
 and $P^\dagger_\pi$ for the posterior kernel from $\mathcal X$ to $C$. A map

@@ -1,6 +1,6 @@
 # Forward-backward smoothing is a joint-to-likelihood ratio
 
-**Forward-backward smoothing is a joint-to-likelihood ratio.** Let $g$ be a hidden Markov model
+Let $g$ be a hidden Markov model
 with finite state set $S$ and weights in a semifield, and let $x_0, x_1, \dots$ be observations.
 For all $t, k \in \mathbb{N}$ and $s \in S$, the smoothing weight
 $\alpha_t(s)\, \beta_k(t, s) / L_{t+k}$, where $\alpha$ and $\beta$ are the forward and backward

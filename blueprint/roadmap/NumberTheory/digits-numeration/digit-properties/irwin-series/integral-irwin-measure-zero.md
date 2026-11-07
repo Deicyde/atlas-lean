@@ -1,6 +1,6 @@
 # Digit decomposition of the Irwin measure, zero index
 
-**Digit decomposition of the Irwin measure, zero index.** Let $b > 1$ and $d < b$ be natural
+Let $b > 1$ and $d < b$ be natural
 numbers, and let $\mu_0$ be the Irwin measure of base $b$ and digit $d$ with index $0$. For every
 measurable function $f : \mathbb{R} \to \mathbb{R}$ that is bounded on $[0, b)$,
 

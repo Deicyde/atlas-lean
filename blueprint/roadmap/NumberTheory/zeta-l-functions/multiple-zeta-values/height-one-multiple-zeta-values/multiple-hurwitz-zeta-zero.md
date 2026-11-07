@@ -1,6 +1,6 @@
 # Multiple Hurwitz zeta function of order zero
 
-**Multiple Hurwitz zeta function of order zero.** For every complex number $s$, the multiple
+For every complex number $s$, the multiple
 Hurwitz zeta function of order $0$ is identically one: $\zeta_0(s) = 1$.
 
 ## Sources

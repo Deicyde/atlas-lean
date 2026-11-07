@@ -1,6 +1,6 @@
 # Fibonacci series for $\pi^2$ with polynomial weights
 
-**Fibonacci series for $\pi^2$ with polynomial weights.** Let $p_1, p_2, \dots$ be polynomials
+Let $p_1, p_2, \dots$ be polynomials
 with integer coefficients such that $p_1 = 1$ and, for every $n \ge 1$,
 $p_{n+1}(x) = (2x + 2n + 1)(2x + 2n + 2)\, p_n(x) - (x + 1)^2 p_n(x + 1)$. Let $(a_n)_{n \ge 0}$
 be real numbers with $a_0 = -8\sqrt{5}/250$, $a_1 = (25 - 4\sqrt{5})/250$ and

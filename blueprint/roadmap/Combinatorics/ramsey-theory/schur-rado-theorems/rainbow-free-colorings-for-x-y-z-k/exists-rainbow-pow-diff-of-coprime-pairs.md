@@ -1,6 +1,5 @@
 # Coprime pairs in both non-dominant colors force a rainbow solution of $x - y = z^k$
 
-**Coprime pairs in both non-dominant colors force a rainbow solution of $x - y = z^k$.**
 Let $k \ge 2$ and $n_0 \ge 2$ be integers, and let $c$ be a coloring of the positive integers
 by three distinct colors $R$, $B$, $G$. For a color $e$ write $N_e(n)$ for the number of
 $x \in \{1, \dots, n\}$ with $c(x) = e$. Assume that for every real $M$ there are arbitrarily

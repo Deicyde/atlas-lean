@@ -1,6 +1,6 @@
 # n-color compositions avoiding colors 1 and 2 versus avoiding color 2
 
-**n-color compositions avoiding colors 1 and 2 versus avoiding color 2.** For a natural number
+For a natural number
 $m$, let $\operatorname{cco}_{\widehat{1,2}}(m)$ be the number of $n$-color compositions of $m$ in
 which no part has color $1$ or $2$, and let $\operatorname{cco}_{\hat 2}(m)$ be the number in which
 no part has color $2$. Then for every natural number $k \ge 1$,

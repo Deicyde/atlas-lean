@@ -1,6 +1,6 @@
 # Constant term of Ramanujan's theta function
 
-**Constant term of Ramanujan's theta function.** For all positive integers $i$ and $j$, the
+For all positive integers $i$ and $j$, the
 integer power series $f(q^i, q^j) = \sum_{n \in \mathbb{Z}} q^{i n(n+1)/2 + j n(n-1)/2}$ has
 constant term $1$: only $n = 0$ contributes to $q^0$.
 

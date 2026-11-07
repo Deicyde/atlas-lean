@@ -1,6 +1,6 @@
 # $\varphi_r(-1/4) - \varphi_r(-3/4)$ through the Dirichlet beta function
 
-**$\varphi_r(-1/4) - \varphi_r(-3/4)$ through the Dirichlet beta function.** Let $\chi$ be the
+Let $\chi$ be the
 function on $\mathbb{Z}/4\mathbb{Z}$ with $\chi(1) = 1$, $\chi(3) = -1$ and $\chi(0) = \chi(2) = 0$,
 let $\beta$ be its Dirichlet $L$-function (analytically continued to $\mathbb{C}$), and let
 $E^*(s) = 2\,\Gamma(s)\,\beta(s) / (\pi/2)^s$. For complex $r$ and real $-1 < y < 0$ let

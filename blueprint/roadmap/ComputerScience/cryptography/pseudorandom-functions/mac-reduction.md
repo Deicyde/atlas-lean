@@ -1,6 +1,6 @@
 # The distinguisher built from a forger
 
-**The distinguisher built from a forger.** For a list $L$ of messages in $M$ and a forger $c$,
+For a list $L$ of messages in $M$ and a forger $c$,
 an adaptive oracle algorithm with queries in $M$, answers in $T$ and output in $M \times T$, the
 MAC reduction is the oracle algorithm with the same queries and answers and a Boolean output,
 defined by recursion on $c$. If $c$ stops with output $(m, t)$, it queries $m$ and, on answer

@@ -1,6 +1,6 @@
 # Valid Fibonacci forests
 
-**Valid Fibonacci forests.** Let $\alpha$ carry a relation $\le$. A Fibonacci forest,
+Let $\alpha$ carry a relation $\le$. A Fibonacci forest,
 a list of Fibonacci trees with values in $\alpha$, is valid when every tree in it is a valid
 Fibonacci tree.
 

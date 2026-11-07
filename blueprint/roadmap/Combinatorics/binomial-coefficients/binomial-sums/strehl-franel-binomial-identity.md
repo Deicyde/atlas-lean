@@ -1,6 +1,6 @@
 # Strehl's identity for the Franel numbers
 
-**Strehl's identity for the Franel numbers.** For every natural number $n$,
+For every natural number $n$,
 
 $$\sum_{k=0}^{n} \binom{n}{k}^2 \binom{2k}{n} = \sum_{k=0}^{n} \binom{n}{k}^3,$$
 

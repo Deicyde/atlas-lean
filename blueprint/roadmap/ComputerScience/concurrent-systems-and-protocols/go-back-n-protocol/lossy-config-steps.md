@@ -1,6 +1,6 @@
 # Transitions of lossy go-back-N configurations
 
-**Transitions of lossy go-back-N configurations.** The transitions of a configuration of
+The transitions of a configuration of
 the lossy go-back-N variant come from the parallel composition of the sender, the data
 channel, the lossy-variant receiver and the acknowledgement channel (in each composition
 either side moves alone, or the two sides synchronize on complementary input and output

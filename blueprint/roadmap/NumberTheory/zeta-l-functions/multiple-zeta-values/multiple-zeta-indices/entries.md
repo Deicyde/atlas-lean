@@ -1,6 +1,6 @@
 # Entries of an index
 
-**Entries of an index.** The entries of an index $(k_1, \ldots, k_r)$ form the list
+The entries of an index $(k_1, \ldots, k_r)$ form the list
 $[k_1, \ldots, k_r]$ of its terms, in order.
 
 ## Sources

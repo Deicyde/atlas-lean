@@ -1,6 +1,6 @@
 # Run of the literal routines of a clause (initial-row generator)
 
-**Run of the literal routines of a clause (initial-row generator).** Let $c$ be a clause
+Let $c$ be a clause
 kind with $k$ literals at base $B$, the $j$-th at position $B + \mathrm{off}(j)$, such that the
 offsets are strictly increasing and every position is below $V$. For $l \le k$ let $b_l$ be
 $B + \mathrm{off}(l)$ if $l < k$ and $V$ otherwise, let $\lambda_l$ be the list of literals of

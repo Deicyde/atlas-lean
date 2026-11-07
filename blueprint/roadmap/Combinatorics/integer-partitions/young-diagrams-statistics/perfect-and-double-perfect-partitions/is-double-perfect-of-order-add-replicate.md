@@ -1,6 +1,6 @@
 # Inserting copies of a part into a double-perfect partition
 
-**Inserting copies of a part into a double-perfect partition.** Let $r \ge 1$,
+Let $r \ge 1$,
 $n \ge 2(r+1)$, and let $\lambda$ be a double-perfect partition of $n$ of order $r$. For every
 $m \ge 0$, adding $m$ parts equal to $n - r$ to $\lambda$ gives a double-perfect partition of
 $n + m(n - r)$ of order $r$.

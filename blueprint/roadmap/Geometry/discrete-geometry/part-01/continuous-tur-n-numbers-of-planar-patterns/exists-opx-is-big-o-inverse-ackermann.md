@@ -1,6 +1,6 @@
 # Almost linear bound for patterns with at most one point in each row
 
-**Almost linear bound for patterns with at most one point in each row.** Let
+Let
 $P \subseteq \mathbb{R}^2$ be a finite set whose points have pairwise distinct $y$-coordinates.
 Then there is a natural number $t$ such that $\operatorname{opx}(n, P) = O(n \cdot 2^{\alpha(n)^t})$
 as the natural number $n$ tends to infinity, where $\operatorname{opx}$ is the continuous Turán

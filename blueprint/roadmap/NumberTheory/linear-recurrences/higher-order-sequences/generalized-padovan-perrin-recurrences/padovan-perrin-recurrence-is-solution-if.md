@@ -1,6 +1,6 @@
 # Characterization of solutions of the generalized Padovan–Perrin recurrence
 
-**Characterization of solutions of the generalized Padovan–Perrin recurrence.** Let $R$ be a
+Let $R$ be a
 commutative semiring, $k_1, k_2 \in R$, and $p, s \in \mathbb{N}$ with $s > 0$. A sequence
 $v \colon \mathbb{N} \to R$ is a solution of the $([k]; p; s)$-Padovan–Perrin recurrence if and
 only if $v_{n+s+p} = k_1 v_{n+p} + k_2 v_n$ for every $n \ge 0$.

@@ -1,6 +1,6 @@
 # Integer binomial coefficient
 
-**Integer binomial coefficient.** For an integer $m$ write $m!$ for the extended factorial
+For an integer $m$ write $m!$ for the extended factorial
 and $\frac{1}{m!}$ for the inverse factorial; both are $0$ when $m < 0$. For integers $n$ and
 $k$, the integer binomial coefficient is the rational number
 $\binom{n}{k} = n! \cdot \frac{1}{k!} \cdot \frac{1}{(n - k)!}$.

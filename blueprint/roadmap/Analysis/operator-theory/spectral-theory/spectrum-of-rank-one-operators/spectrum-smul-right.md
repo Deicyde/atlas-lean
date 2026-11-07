@@ -1,6 +1,6 @@
 # Spectrum of the operator $x \mapsto f(x)\,y$
 
-**Spectrum of the operator $x \mapsto f(x)\,y$.** Let $\mathbb{K}$ be
+Let $\mathbb{K}$ be
 $\mathbb{R}$ or $\mathbb{C}$, let $E$ be a Banach space over $\mathbb{K}$, let
 $f \colon E \to \mathbb{K}$ be a continuous linear functional, and let $y \in E$ with $y \neq 0$.
 If some $w \in E$ with $w \neq 0$ satisfies $f(w) = 0$, then the spectrum of the bounded

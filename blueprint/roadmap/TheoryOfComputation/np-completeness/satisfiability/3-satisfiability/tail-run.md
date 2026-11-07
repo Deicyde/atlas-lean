@@ -1,6 +1,6 @@
 # Closing an output clause in the SAT-to-3SAT emitter
 
-**Closing an output clause in the SAT-to-3SAT emitter.** Let $f$ be a Boolean, $R$ a list of
+Let $f$ be a Boolean, $R$ a list of
 tokens, $o$ a list of bits and $z, c \in \mathbb{N}$, and let $m = 1$ if $f$ is true and $m = 2$
 otherwise. Start the emitter machine at its clause-closing label $\mathrm{aft}(f)$, with any
 internal state, with stack contents $\mathrm{st}(R, o, z, c)$: token stack $R$, output stack $o$,

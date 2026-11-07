@@ -1,6 +1,6 @@
 # Correctness invariant of the Tseitin encoding
 
-**Correctness invariant of the Tseitin encoding.** Let $\iota$ map atoms to natural numbers,
+Let $\iota$ map atoms to natural numbers,
 let $A$ be a proposition and $k$ a natural number, and let $(\ell, \Phi, k')$ be the reference
 Tseitin encoding of $A$ with gates numbered from $k$: the literal naming $A$, its defining
 clauses and the next unused gate number. For an assignment $\sigma$ of Boolean values to the

@@ -1,6 +1,6 @@
 # A closed form for $\sum \sin^2(n\delta)/(n^2\delta)$
 
-**A closed form for $\sum \sin^2(n\delta)/(n^2\delta)$.** For every real $\delta$ with
+For every real $\delta$ with
 $0 < \delta < \pi$,
 
 $$\sum_{n=1}^{\infty} \frac{\sin^2(n\delta)}{n^2\delta} = \frac{\pi - \delta}{2}.$$

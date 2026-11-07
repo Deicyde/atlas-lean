@@ -1,6 +1,6 @@
 # Fundamental theorem of Riordan arrays
 
-**Fundamental theorem of Riordan arrays.** Write $[t^m]F$ for the coefficient of $t^m$ in a
+Write $[t^m]F$ for the coefficient of $t^m$ in a
 power series $F$. Let $R$ be a commutative ring and let $d$, $h$, $f$ be power series over
 $R$ with $h(0) = 0$. Then for every $n \in \mathbb{N}$,
 

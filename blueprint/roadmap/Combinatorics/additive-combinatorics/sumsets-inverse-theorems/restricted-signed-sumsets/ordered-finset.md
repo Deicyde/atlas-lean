@@ -1,6 +1,6 @@
 # Set of values of a finite integer sequence
 
-**Set of values of a finite integer sequence.** For a sequence $a_0, \dots, a_{k-1}$ of
+For a sequence $a_0, \dots, a_{k-1}$ of
 integers, this is the finite set $\{a_i : 0 \le i < k\}$ of its values.
 
 No order or injectivity is assumed; the statements that use it assume what they need.

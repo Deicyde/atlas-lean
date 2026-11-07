@@ -1,6 +1,6 @@
 # Oesper's determinant formula for three-strand weaving knots
 
-**Oesper's determinant formula for three-strand weaving knots.** Let $k \ge 1$ be an integer,
+Let $k \ge 1$ be an integer,
 let $F_i$ be the Fibonacci numbers ($F_0 = 0$, $F_1 = 1$), let
 $C_j = \sum_{i=1}^{j} (-1)^{i+1} F_i$ for $j \ge 0$, and let $M$ be the $3 \times 3$ integer
 matrix with rows $(2, -1, 0)$, $(0, 0, 1)$ and $(-1, 0, 2)$. Then the absolute value of the

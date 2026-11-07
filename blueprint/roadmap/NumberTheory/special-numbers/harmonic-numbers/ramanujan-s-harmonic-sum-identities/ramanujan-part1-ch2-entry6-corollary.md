@@ -1,6 +1,6 @@
 # Ramanujan's harmonic sum identity (corollary to Entry 6)
 
-**Ramanujan's harmonic sum identity (corollary to Entry 6).** For every natural number
+For every natural number
 $r > 0$, the following identity holds in $\mathbb{Q}$:
 
 $$

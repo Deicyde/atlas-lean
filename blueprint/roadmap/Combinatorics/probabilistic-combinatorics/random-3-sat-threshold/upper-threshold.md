@@ -1,6 +1,6 @@
 # Upper threshold of random 3-SAT
 
-**Upper threshold of random 3-SAT.** The upper threshold is the infimum, in the real numbers,
+The upper threshold is the infimum, in the real numbers,
 of the set of upper threshold cutoffs: the reals $\rho$ such that, for every real $r > \rho$, the
 probability that a uniformly random formula with $\lfloor rn \rfloor$ clauses on $n$ variables
 (no clauses when $rn < 0$) is satisfiable tends to $0$ as $n \to \infty$. The infimum is taken

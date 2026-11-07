@@ -1,6 +1,6 @@
 # Gronwall's theorem
 
-**Gronwall's theorem.** Let $\sigma(n)$ be the sum of the positive divisors of $n$ and let
+Let $\sigma(n)$ be the sum of the positive divisors of $n$ and let
 $\gamma$ be the Euler–Mascheroni constant. Then, as $n$ runs over the natural numbers,
 $\limsup_{n \to \infty} \sigma(n) / (n \log \log n) = e^{\gamma}$.
 

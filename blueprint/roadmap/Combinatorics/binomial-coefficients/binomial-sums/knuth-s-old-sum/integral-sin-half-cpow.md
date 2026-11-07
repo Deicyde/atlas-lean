@@ -1,6 +1,6 @@
 # Integral of $\sin(x/2)$ to a complex power over $(0, \pi)$
 
-**Integral of $\sin(x/2)$ to a complex power over $[0, \pi]$.** For every complex number $u$
+For every complex number $u$
 with $\operatorname{Re} u > -1$,
 
 $$

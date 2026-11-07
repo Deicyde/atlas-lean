@@ -1,6 +1,6 @@
 # A telescoping series of powers of gibonacci polynomial ratios
 
-**A telescoping series of powers of gibonacci polynomial ratios.** Let $x > 0$ be real, let
+Let $x > 0$ be real, let
 $\alpha = (x + \sqrt{x^2 + 4})/2$, and let $g_n$ be either the Fibonacci polynomials $f_n(x)$,
 given by $f_0 = 0$ and $f_1 = 1$, or the Lucas polynomials $l_n(x)$, given by $l_0 = 2$ and
 $l_1 = x$, where both satisfy $z_{n+2} = x z_{n+1} + z_n$. Let $k$, $r$, $t$, $\lambda$ be positive

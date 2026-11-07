@@ -1,6 +1,6 @@
 # Recurrence for the Kim–Stolarsky integers $u_k$
 
-**Recurrence for the Kim–Stolarsky integers $u_k$.** Let $u_k$ be the coefficient of
+Let $u_k$ be the coefficient of
 $x^{k-1}$ in the power series expansion of $(1 + 502x + x^2)/((1 - x)(1 - 398x + x^2))$. For every
 integer $k \ge 1$,
 

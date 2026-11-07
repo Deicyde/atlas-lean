@@ -1,6 +1,6 @@
 # Square values of the discriminant $2^{2k+2} + 2^{k+2} - 2^{a+2} - 7$
 
-**Square values of the discriminant $2^{2k+2} + 2^{k+2} - 2^{a+2} - 7$.** Let $a$ and $k$ be
+Let $a$ and $k$ be
 natural numbers with $1 \le a \le k$. If $2^{2k+2} + 2^{k+2} - 2^{a+2} - 7$ is the square of an
 integer, then $k = a = 1$.
 

@@ -1,6 +1,6 @@
 # Base change of $K(X)/(f)$ along a factorization of $f$ over $K'$
 
-**Base change of $K[X]/(f)$ along a factorization of $f$ over $K'$.** Let $K$ and $K'$
+Let $K$ and $K'$
 be fields with $K'$ a $K$-algebra, let $f \in K[X]$, and let $(g_i)_{i \in \iota}$ be a family
 of irreducible polynomials in $K'[X]$, indexed by a finite type $\iota$, that are pairwise
 non-associated and whose product $\prod_i g_i$ is associated (equal up to a unit) to the image

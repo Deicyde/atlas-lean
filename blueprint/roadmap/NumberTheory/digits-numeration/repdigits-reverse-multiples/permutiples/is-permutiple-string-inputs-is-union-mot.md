@@ -1,6 +1,6 @@
 # Inputs of a permutiple string lie on mother-graph cycles
 
-**Inputs of a permutiple string lie on mother-graph cycles.** Let $1 < n < b$ and let $s$ be
+Let $1 < n < b$ and let $s$ be
 an $(n, b)$-permutiple string. Then every input $(d, \hat d)$ of $s$ is an edge of the
 $(n, b)$-mother graph, and $\hat d$ reaches $d$ along a (possibly empty) directed path in the
 graph whose edges are the inputs of $s$, so $(d, \hat d)$ lies on a directed cycle of that graph.

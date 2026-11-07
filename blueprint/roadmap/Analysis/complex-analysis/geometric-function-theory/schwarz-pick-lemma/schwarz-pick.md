@@ -1,6 +1,6 @@
 # Schwarz–Pick lemma
 
-**Schwarz–Pick lemma.** Let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic on the open unit disc
+Let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic on the open unit disc
 $\mathbb{D} = \{z : |z| < 1\}$ and map $\mathbb{D}$ into itself. Then for all $z, w \in \mathbb{D}$,
 $|f(z) - f(w)| / |1 - \overline{f(w)}\, f(z)| \le |z - w| / |1 - \bar w z|$.
 

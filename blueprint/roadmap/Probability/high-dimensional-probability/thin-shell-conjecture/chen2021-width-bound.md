@@ -1,6 +1,6 @@
 # Chen's thin-shell bound
 
-**Chen's thin-shell bound.** For every real $\varepsilon > 0$ there is a natural number
+For every real $\varepsilon > 0$ there is a natural number
 $N \ge 3$ such that for every natural number $n \ge N$ the thin-shell width
 $\sigma_n \in [0, \infty]$ of dimension $n$ satisfies
 $\sigma_n \le \exp\big((\log n)^{1/2 + \varepsilon}\big)$.

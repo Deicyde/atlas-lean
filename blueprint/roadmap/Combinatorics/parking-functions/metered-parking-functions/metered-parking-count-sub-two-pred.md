@@ -1,6 +1,6 @@
 # Metered parking functions with one spot fewer than cars
 
-**Metered parking functions with one spot fewer than cars.** Let $m \ge 2$ be a natural
+Let $m \ge 2$ be a natural
 number. The number $\mathrm{mpf}_{m,m-1}(m-2)$ of $(m-2)$-metered $(m, m-1)$-parking functions
 equals the sum, over all parking functions $f$ of length $m - 1$, of $f(0) + 1$ (the preferred
 spot of the first car, with spots numbered from $1$), and it also equals

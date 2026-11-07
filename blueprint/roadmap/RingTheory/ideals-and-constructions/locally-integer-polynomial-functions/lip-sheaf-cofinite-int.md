@@ -1,6 +1,6 @@
 # Locally integer polynomial functions on cofinite subsets of the integers
 
-**Locally integer polynomial functions on cofinite subsets of the integers.** Let
+Let
 $U \subseteq \mathbb{Z}$ have finite complement, let $f : \mathbb{Z} \to \mathbb{Z}$, and for
 $S \subseteq \mathbb{Z}$ write $\mathrm{LIP}(S)$ for the ring of locally integer polynomial (LIP)
 functions $S \to \mathbb{Z}$. Then the restriction of $f$ to $U$ lies in $\mathrm{LIP}(U)$ if and

@@ -1,6 +1,6 @@
 # $|U_m|$ is a strong Lucas and Frobenius pseudoprime when $Q = \pm 1$
 
-**$|U_m|$ is a strong Lucas and Frobenius pseudoprime when $Q = \pm 1$.** Let $P$ and $Q$ be
+Let $P$ and $Q$ be
 integers with $Q = 1$ or $Q = -1$ such that the Lucas pair $(P, Q)$ is nondegenerate, let $U_n$
 be the Lucas sequence $U(P, Q)$, and let $D = P^2 - 4Q$. Let $m \ge 5$ be either an odd prime or
 a Lucas pseudoprime of the second kind for $(P, Q)$, with $\gcd(m, PD) = 1$ and with $3 \nmid m$

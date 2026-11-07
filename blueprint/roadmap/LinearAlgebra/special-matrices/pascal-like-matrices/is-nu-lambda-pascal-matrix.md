@@ -1,6 +1,6 @@
 # Nu-lambda Pascal matrix with coefficients
 
-**Nu-lambda Pascal matrix with coefficients.** Let $N$ and $n$ be natural numbers with
+Let $N$ and $n$ be natural numbers with
 $n > 0$, let $\nu, \lambda \in \mathbb{C}$ and $\beta_0, \dots, \beta_{N-1} \in \mathbb{C}$.
 An array $S = (S_{i,j})_{i,j \ge 0}$ of complex numbers, indexed from $0$, is a
 $(\nu, \lambda)$-Pascal matrix of size $2n$ with coefficients $\beta$ when the following

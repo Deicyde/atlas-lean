@@ -1,6 +1,6 @@
 # Partial-sum criterion for lex-minimal extensions
 
-**Partial-sum criterion for lex-minimal extensions.** Let $k \ge 1$, let
+Let $k \ge 1$, let
 $\eta = (e_1, e_2, \dots)$ be a sequence of nonnegative integers and write
 $S_i = e_1 + \dots + e_i$. Suppose $S_i + S_j \le S_{i+j}$ for all $i, j \ge 1$ with
 $i + j \le k$. Then $\eta$ is the lex-minimal extension of $(e_1, \dots, e_k)$ if and only if,

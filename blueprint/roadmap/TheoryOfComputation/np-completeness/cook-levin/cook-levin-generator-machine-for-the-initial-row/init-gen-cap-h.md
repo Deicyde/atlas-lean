@@ -1,6 +1,6 @@
 # The init generator at the stack cap
 
-**The init generator at the stack cap.** Let $E$ be an encoding of a machine $M$ with window
+Let $E$ be an encoding of a machine $M$ with window
 depth $d$, let $x$ and $Y$ be lists of symbols of the input stack of $M$, let $m, T$ be natural
 numbers with $|x| \le m$, let $H = m + (T + 1)d + 1$ be the stack cap, and let $o$ be a bit
 string. Let $C$ be the time constant for the layout of $E$, the number of distinct codes of $Y$

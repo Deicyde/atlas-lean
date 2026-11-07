@@ -1,6 +1,6 @@
 # Unweighted Hurwitz class number
 
-**Unweighted Hurwitz class number.** For an integer $d$, the unweighted Hurwitz class number
+For an integer $d$, the unweighted Hurwitz class number
 $H(d)$ is the number of elements of the set $R(d)$ of reduced forms of discriminant $d$, that is,
 the number of integer triples $(a, b, c)$, primitive or not, for which $a x^2 + b x y + c y^2$ is
 a Gauss-reduced binary quadratic form of discriminant $b^2 - 4ac = d$. Every reduced form is

@@ -1,6 +1,6 @@
 # Base-ten digits are less than ten
 
-**Base-ten digits are less than ten.** For all natural numbers $N$ and $i$, the base-ten digit
+For all natural numbers $N$ and $i$, the base-ten digit
 of $N$ in position $i$ (counted from $0$ at the units digit), namely
 $\lfloor N / 10^{i} \rfloor \bmod 10$, is less than $10$.
 

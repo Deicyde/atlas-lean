@@ -1,6 +1,6 @@
 # At most half the bases are non-witnesses for a Carmichael number
 
-**At most half the bases are non-witnesses for a Carmichael number.** Let $n$ be a Carmichael
+Let $n$ be a Carmichael
 number: $n > 2$, $n$ is not prime, and $b^{n-1} \equiv 1 \pmod n$ for every $b$ coprime to $n$.
 Then at most $(n - 1)/2$ of the bases $1, \dots, n - 1$ are non-witnesses for $n$.
 

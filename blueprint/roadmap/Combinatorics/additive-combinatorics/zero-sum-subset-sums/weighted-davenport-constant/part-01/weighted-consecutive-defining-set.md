@@ -1,6 +1,6 @@
 # Lengths forcing a consecutive weighted zero sum
 
-**Lengths forcing a consecutive weighted zero sum.** Let $n$ be a natural number and $A$ a
+Let $n$ be a natural number and $A$ a
 subset of $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$. This is the set of positive integers $k$ such
 that every sequence $(x_1, \dots, x_k)$ of elements of $\mathbb{Z}_n$ has a nonempty block of
 consecutive terms $x_i, \dots, x_j$ with weights $a_i, \dots, a_j \in A$ such that

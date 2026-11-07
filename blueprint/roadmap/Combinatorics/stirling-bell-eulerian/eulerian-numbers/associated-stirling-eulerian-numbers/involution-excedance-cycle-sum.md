@@ -1,6 +1,6 @@
 # Excedances and cycles of involutions
 
-**Excedances and cycles of involutions.** Let $R$ be a commutative $\mathbb{Q}$-algebra,
+Let $R$ be a commutative $\mathbb{Q}$-algebra,
 $x, q \in R$ and $n \ge 0$. For a permutation $\sigma$ write $e(\sigma)$ for the number of $i$ with
 $\sigma(i) > i$ and $c(\sigma)$ for its number of cycles, fixed points included. For each $m$ let
 $W(m) = \sum_{\sigma} x^{e(\sigma)} q^{c(\sigma)}$, summed over the involutions $\sigma$ of

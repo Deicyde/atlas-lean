@@ -1,6 +1,6 @@
 # Vanishing higher finite differences of Rascal numbers
 
-**Vanishing higher finite differences of Rascal numbers.** For natural numbers $n$, $k$ and
+For natural numbers $n$, $k$ and
 $r$ with $k \le n$ and $r \ge 2$, the Rascal numbers satisfy
 $\sum_{j=0}^{r} (-1)^{r-j} \binom{r}{j} R_{n+j,k} = 0$.
 

@@ -1,6 +1,6 @@
 # Initial-segment mean
 
-**Initial-segment mean.** For a sequence $a : \mathbb{N} \to \mathbb{N}$ and $n \in \mathbb{N}$,
+For a sequence $a : \mathbb{N} \to \mathbb{N}$ and $n \in \mathbb{N}$,
 the initial-segment mean is the real number $m(a, n) = \frac{1}{n} \sum_{j=1}^{n} a(j)$, with
 the convention $1 / 0 = 0$, so that $m(a, 0) = 0$.
 

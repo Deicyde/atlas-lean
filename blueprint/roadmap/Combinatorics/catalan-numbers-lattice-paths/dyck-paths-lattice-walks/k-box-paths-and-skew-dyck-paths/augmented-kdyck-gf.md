@@ -1,6 +1,6 @@
 # Generating function of augmented $k$-Dyck paths
 
-**Generating function of augmented $k$-Dyck paths.** Let $k \ge 0$ and let $\hat D_n^{(k)}$
+Let $k \ge 0$ and let $\hat D_n^{(k)}$
 be the set of augmented $k$-Dyck paths of size $n$. Then $G_k(x)$ is the formal power series with
 integer coefficients
 

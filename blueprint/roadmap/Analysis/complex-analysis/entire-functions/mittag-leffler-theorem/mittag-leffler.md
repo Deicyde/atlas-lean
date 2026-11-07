@@ -1,6 +1,6 @@
 # Mittag-Leffler theorem
 
-**Mittag-Leffler theorem.** Let $S \subseteq \mathbb{C}$ be a closed set such that every $z \in S$
+Let $S \subseteq \mathbb{C}$ be a closed set such that every $z \in S$
 has a radius $\varepsilon > 0$ for which the punctured disk $\{w : 0 < |w - z| < \varepsilon\}$
 contains no point of $S$, and for each $s \in S$ let $c_s$ be a finitely supported sequence of
 complex coefficients. Then there is a function $f : \mathbb{C} \to \mathbb{C}$ that is holomorphic

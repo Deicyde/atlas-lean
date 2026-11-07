@@ -1,6 +1,6 @@
 # Grundy number of a chocolate bar with a height function
 
-**Grundy number of a chocolate bar with a height function.** Let $s \in \mathbb{N}$ and
+Let $s \in \mathbb{N}$ and
 $F : \mathbb{N}^s \to \mathbb{N}$. The $(s + 1)$-dimensional chocolate bar
 $\mathrm{CB}(F, x_1, \dots, x_s, y)$ has, at each $u = (u_1, \dots, u_s)$ with $u_t \le x_t$ for
 all $t$, a column of height $\min(F(u), y) + 1$. A move either lowers one coordinate $x_i$ to some

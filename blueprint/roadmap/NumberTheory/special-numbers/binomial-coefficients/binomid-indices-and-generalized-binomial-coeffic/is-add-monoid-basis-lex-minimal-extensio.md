@@ -1,6 +1,6 @@
 # Basis of the monoid of lex-minimal extensions
 
-**Basis of the monoid of lex-minimal extensions.** Let $L$ be the set of lex-minimal
+Let $L$ be the set of lex-minimal
 extensions, viewed inside the sequences of nonnegative integers under componentwise addition.
 A set $B$ of sequences of nonnegative integers is a basis of $L$ if and only if $B$ is the set
 of nonzero atomic binomid indices that belong to $L$. Hence that set is the unique basis of $L$.

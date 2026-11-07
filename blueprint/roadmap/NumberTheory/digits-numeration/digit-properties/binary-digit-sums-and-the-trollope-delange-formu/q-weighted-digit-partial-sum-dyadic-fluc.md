@@ -1,6 +1,6 @@
 # Dyadic values of the normalized $q$-weighted fluctuation
 
-**Dyadic values of the normalized $q$-weighted fluctuation.** Let $q$ be a complex number
+Let $q$ be a complex number
 with $|q| > 1/2$, let $N > 0$ be a natural number, and let $j \le 2^{N-1}$ be a natural number.
 Put $t_j = j / 2^{N-1}$ and $a = 1/(2q)$. Then
 

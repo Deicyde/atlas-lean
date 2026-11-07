@@ -1,6 +1,6 @@
 # Generating function for hook tableau counts
 
-**Generating function for hook tableau counts.** For a natural number $k$, let
+For a natural number $k$, let
 $\mathrm{SYT}_k(2,1;n)$ be the number of standard Young tableaux of order $n$ in the
 $(2,1)$-hook whose first row is longer than its second row by exactly $k$, and let
 $M(x) = \sum_{n \ge 0} m_n x^n$ be the generating function of the Motzkin numbers $m_n$. Then,

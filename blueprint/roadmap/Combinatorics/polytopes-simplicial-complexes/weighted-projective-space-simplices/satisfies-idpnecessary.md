@@ -1,6 +1,6 @@
 # IDP-necessary condition
 
-**IDP-necessary condition.** A vector of natural-number weights $q = (q_1, \dots, q_n)$
+A vector of natural-number weights $q = (q_1, \dots, q_n)$
 satisfies the IDP-necessary condition when $1 + \sum_{i=1}^n (q_i \bmod q_j) = q_j$ for every
 $j$, where $q_i \bmod q_j$ is the remainder of $q_i$ on division by $q_j$ (with the convention
 $q_i \bmod 0 = q_i$).

@@ -1,6 +1,6 @@
 # Transitive subtournament number
 
-**Transitive subtournament number.** For $n \in \mathbb{N}$, $f(n)$ is the largest $m$ such
+For $n \in \mathbb{N}$, $f(n)$ is the largest $m$ such
 that every tournament $T$ on $\{0, \dots, n-1\}$ is transitive on some set of exactly $m$
 vertices, that is, contains a transitive subtournament on $m$ vertices.
 

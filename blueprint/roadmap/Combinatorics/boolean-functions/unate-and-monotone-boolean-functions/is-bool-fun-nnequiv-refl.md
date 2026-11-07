@@ -1,6 +1,6 @@
 # NN-equivalence is reflexive
 
-**NN-equivalence is reflexive.** Every Boolean function is NN-equivalent to itself.
+Every Boolean function is NN-equivalent to itself.
 
 ## Sources
 

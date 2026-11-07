@@ -1,6 +1,6 @@
 # Bernoulli numbers from Stirling and harmonic numbers
 
-**Bernoulli numbers from Stirling and harmonic numbers.** Let $j < n$ be natural numbers. Write
+Let $j < n$ be natural numbers. Write
 ${n \brace k}$ for the Stirling numbers of the second kind, ${k \brack j}$ for the unsigned
 Stirling numbers of the first kind (the number of permutations of $k$ elements with exactly $j$
 cycles), $H_k = \sum_{i=1}^{k} 1/i$ for the harmonic numbers (so $H_0 = 0$), and $B_m$ for the

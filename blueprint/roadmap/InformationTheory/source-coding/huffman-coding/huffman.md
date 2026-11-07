@@ -1,6 +1,6 @@
 # Huffman's algorithm
 
-**Huffman's algorithm.** Let $L$ be a list of $n$ pairs $(a_0, w_0), \dots, (a_{n-1}, w_{n-1})$
+Let $L$ be a list of $n$ pairs $(a_0, w_0), \dots, (a_{n-1}, w_{n-1})$
 of symbols and natural-number weights, with decidable equality on symbols. The construction
 fails when $L$ is empty or two pairs share a symbol. Otherwise it starts from $n$ leaves, the
 leaf for $(a_i, w_i)$ having priority (weight $w_i$, serial $i$), and performs $n - 1$ merges:

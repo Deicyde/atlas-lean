@@ -1,6 +1,6 @@
 # With one color the 2 × 2 grid contains an L
 
-**With one color the 2 × 2 grid contains an L.** Write $[n] = \{1, \dots, n\}$. An L in the
+Write $[n] = \{1, \dots, n\}$. An L in the
 grid $[n] \times [n]$ is a triple of points $(x, y)$, $(x + d, y)$, $(x + d, y + d)$ with $x$, $y$,
 $d$ positive integers, $x + d \le n$ and $y + d \le n$. Every coloring of
 $\mathbb{N} \times \mathbb{N}$ with a single color gives the three points of some L in

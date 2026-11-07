@@ -1,6 +1,6 @@
 # Boundary-fixing homeomorphisms of the disc are not right-orderable
 
-**Boundary-fixing homeomorphisms of the disc are not right-orderable.** Let
+Let
 $I^2 = [0, 1] \times [0, 1]$ be the closed square, a model of the closed disc, and let
 $\mathrm{Homeo}(I^2; \partial I^2)$ be the group of homeomorphisms of $I^2$ that fix every point of
 the boundary $\partial I^2$. There is no linear order $\le$ on $\mathrm{Homeo}(I^2; \partial I^2)$

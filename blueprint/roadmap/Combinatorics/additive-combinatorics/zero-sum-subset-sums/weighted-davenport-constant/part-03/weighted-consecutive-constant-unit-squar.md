@@ -1,6 +1,6 @@
 # Unit-square-weighted consecutive constant modulo 25 equals nine
 
-**Unit-square-weighted consecutive constant modulo 25 equals nine.** Let $U(25)^2$ be the set
+Let $U(25)^2$ be the set
 of squares of units of $\mathbb{Z}_{25} = \mathbb{Z}/25\mathbb{Z}$. Some positive length $k$ has the
 property that every sequence of $k$ elements of $\mathbb{Z}_{25}$ has a nonempty block of
 consecutive terms with a $U(25)^2$-weighted sum equal to zero, and the least such length, the

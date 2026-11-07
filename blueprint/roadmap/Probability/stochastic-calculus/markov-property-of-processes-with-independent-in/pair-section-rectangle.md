@@ -1,6 +1,6 @@
 # The pair identity on cylinder rectangles
 
-**The pair identity on cylinder rectangles.** Let $\mu$ be a probability measure and let
+Let $\mu$ be a probability measure and let
 $(B_t)_{t \ge 0}$ be a real process adapted to a filtration $(\mathcal{F}_t)_{t \ge 0}$ such that
 $B_t - B_s$ is independent of $\mathcal{F}_s$ under $\mu$ whenever $s \le t$. Fix
 $s \in \mathbb{R}_{\ge 0}$, let $W^s$ be the centered shifted path $t \mapsto B_{s+t} - B_s$ and

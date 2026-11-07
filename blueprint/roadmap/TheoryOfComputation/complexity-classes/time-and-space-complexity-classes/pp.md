@@ -1,6 +1,6 @@
 # Probabilistic polynomial time with unbounded error
 
-**Probabilistic polynomial time with unbounded error.** The class PP consists of the decision
+The class PP consists of the decision
 problems $L$ for which there are a polynomial $p$ with natural-number coefficients and a
 polynomial-time computable function $R$ on pairs of bitstrings such that, for every bitstring $x$
 and $r$ uniformly random among the bitstrings of length $p(|x|)$, the probability that $R(x, r)$

@@ -1,6 +1,6 @@
 # Khintchine's theorem
 
-**Khintchine's theorem.** Let $\psi : \mathbb{N} \to \mathbb{R}$ be non-increasing on all of
+Let $\psi : \mathbb{N} \to \mathbb{R}$ be non-increasing on all of
 $\mathbb{N}$ (including $\psi(0) \ge \psi(1)$) with $0 \le \psi(q) \le 1/2$ for every $q$. If the
 series $\sum_q \psi(q)$ converges, then the set $W(\psi)$ of $\psi$-well approximable numbers has
 Lebesgue measure $0$; if the series diverges, then $W(\psi)$ has Lebesgue measure $1$.

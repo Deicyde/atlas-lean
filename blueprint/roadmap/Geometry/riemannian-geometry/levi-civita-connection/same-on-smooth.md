@@ -1,6 +1,6 @@
 # Agreement of covariant derivatives on smooth vector fields
 
-**Agreement of covariant derivatives on smooth vector fields.** Let $M$ be a smooth manifold,
+Let $M$ be a smooth manifold,
 possibly with boundary or corners, modelled on a finite-dimensional real normed space, whose
 tangent bundle carries a smooth Riemannian metric. Two covariant derivatives $\nabla$ and
 $\nabla'$ on the tangent bundle of $M$ agree on smooth sections when $\nabla_v Y = \nabla'_v Y$

@@ -1,6 +1,6 @@
 # Aaronson-Wigderson: the algebrization barrier
 
-**Aaronson-Wigderson: the algebrization barrier.** Call an oracle a function from bitstrings
+Call an oracle a function from bitstrings
 to booleans. There are oracles $B$ and $\tilde B$ such that $\tilde B$ is an algebraic extension
 of $B$ and $\mathsf{P}^B = \mathsf{NP}^{\tilde B}$. There are also oracles $B$ and $\tilde B$ such
 that $\tilde B$ is an algebraic extension of $B$ and $\mathsf{NP}^B$ is not contained in

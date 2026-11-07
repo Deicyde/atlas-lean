@@ -1,6 +1,6 @@
 # Erdős Problem 118 fails for ordinals
 
-**Erdős Problem 118 fails for ordinals.** There exist an ordinal $\alpha$ satisfying the partition
+There exist an ordinal $\alpha$ satisfying the partition
 relation $\alpha \to (\alpha, 3)^2$ and a natural number $n \ge 3$ such that $\alpha$ does not
 satisfy $\alpha \to (\alpha, n)^2$.
 

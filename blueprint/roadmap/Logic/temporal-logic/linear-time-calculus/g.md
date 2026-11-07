@@ -1,3 +1,3 @@
 # Always operator in the linear μ-calculus
 
-**Always operator in the linear μ-calculus.** `G p`: `p` holds at every future position.
+`G p`: `p` holds at every future position.

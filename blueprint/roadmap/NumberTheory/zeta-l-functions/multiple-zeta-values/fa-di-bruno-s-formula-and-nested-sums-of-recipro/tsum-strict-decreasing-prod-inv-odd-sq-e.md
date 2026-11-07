@@ -1,6 +1,6 @@
 # Strictly nested sums of reciprocal odd squares
 
-**Strictly nested sums of reciprocal odd squares.** For every natural number $k$,
+For every natural number $k$,
 
 $$\sum_{i_1 > i_2 > \cdots > i_k \ge 1} \prod_{j=1}^{k} \frac{1}{(2 i_j - 1)^2} =
 \frac{(\pi/2)^{2k}}{(2k)!},$$

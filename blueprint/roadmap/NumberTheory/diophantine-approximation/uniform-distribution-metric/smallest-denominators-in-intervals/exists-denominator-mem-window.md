@@ -1,6 +1,6 @@
 # Every real number has arbitrarily close rationals
 
-**Every real number has arbitrarily close rationals.** For every real number $x$ and every
+For every real number $x$ and every
 real $\delta > 0$ there are a positive integer $q$ and an integer $p$ with $|x - p/q| < \delta/2$.
 
 Taking $q > 1/\delta$ and $p$ the integer nearest to $qx$ gives

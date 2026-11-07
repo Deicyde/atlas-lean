@@ -1,6 +1,6 @@
 # Weak prime number theorem in arithmetic progressions
 
-**Weak prime number theorem in arithmetic progressions.** Let $q$ and $a$ be natural numbers with
+Let $q$ and $a$ be natural numbers with
 $a < q$ and $\gcd(a, q) = 1$, let $\Lambda$ be the von Mangoldt function and let $\varphi$ be
 Euler's totient function. Then, as $N \to \infty$ through the natural numbers,
 

@@ -1,6 +1,6 @@
 # Number of $r \times s$ rectangles in a bargraph
 
-**Number of $r \times s$ rectangles in a bargraph.** Let $w = w_0 w_1 \cdots w_{m-1}$ be a word
+Let $w = w_0 w_1 \cdots w_{m-1}$ be a word
 of natural numbers, drawn as a bargraph whose column $i$ has height $w_i$. The number of
 occurrences of an $r \times s$ rectangle (height $r$, width $s$) in $w$ is the number of pairs
 $(i, y)$ of natural numbers with $i < m$, $i + s \le m$ and $y \le w_0 + \cdots + w_{m-1}$ such

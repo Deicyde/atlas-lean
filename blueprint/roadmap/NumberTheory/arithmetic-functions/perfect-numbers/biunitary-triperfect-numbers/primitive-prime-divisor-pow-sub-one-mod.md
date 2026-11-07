@@ -1,6 +1,6 @@
 # Primitive prime divisors of $a^n - 1$ are $1$ modulo $n$
 
-**Primitive prime divisors of $a^n - 1$ are $1$ modulo $n$.** Let $a \ge 2$ and $n \ge 2$ be
+Let $a \ge 2$ and $n \ge 2$ be
 natural numbers, and let $p$ be a primitive prime divisor of the integer sequence $m \mapsto
 a^m - 1$ at index $n$, that is, a prime that divides $a^n - 1$ and divides no $a^m - 1$ with
 $1 \le m < n$. Then $p \equiv 1 \pmod n$.

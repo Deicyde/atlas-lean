@@ -1,6 +1,6 @@
 # Yao's XOR lemma: hardness amplification by XOR
 
-**Yao's XOR lemma: hardness amplification by XOR.** There is a natural number $c$ such that
+There is a natural number $c$ such that
 the following holds for all natural numbers $n \ge 1$ and $k$, every rational $\delta$ with
 $0 < \delta \le 1/2$, every Boolean function $f$ on $n$ bits and every natural number $s$.
 Suppose every circuit given as a list of at most $s$ encoded gates has agreement at most

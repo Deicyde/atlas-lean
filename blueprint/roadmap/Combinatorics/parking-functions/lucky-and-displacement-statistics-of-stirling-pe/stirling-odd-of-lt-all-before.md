@@ -1,6 +1,6 @@
 # Left-to-right minima of a Stirling permutation sit at odd positions
 
-**Left-to-right minima of a Stirling permutation sit at odd positions.** Let
+Let
 $w = w_1 \cdots w_{2n}$ be a Stirling permutation of order $n$ and let $j \in \{1, \dots, 2n\}$.
 If $w_j < w_i$ for every $i < j$, then $j$ is odd.
 

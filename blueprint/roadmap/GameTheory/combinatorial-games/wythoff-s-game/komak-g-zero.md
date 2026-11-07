@@ -1,6 +1,6 @@
 # Value of the Komak sequence at 0
 
-**Value of the Komak sequence at 0.** The sequence $g$ of Komak et al. satisfies
+The sequence $g$ of Komak et al. satisfies
 $g(0) = 1$.
 
 ## Sources

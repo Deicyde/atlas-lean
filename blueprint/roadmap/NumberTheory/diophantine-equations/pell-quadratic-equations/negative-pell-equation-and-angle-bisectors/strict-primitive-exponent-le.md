@@ -1,6 +1,6 @@
 # Minimality of the strictly primitive exponent
 
-**Minimality of the strictly primitive exponent.** Let $d$ be an integer and let $S(d)$ be the
+Let $d$ be an integer and let $S(d)$ be the
 set of primes $p$ for which $|x^2 - d y^2| = p^l$ has a strictly primitive integral solution
 ($x$ and $d y$ coprime) for some integer $l > 0$; for $p \in S(d)$ let $l_p$ be the least such
 $l$. If $p \in S(d)$ and $l > 0$ is an integer for which $|x^2 - d y^2| = p^l$ has a strictly

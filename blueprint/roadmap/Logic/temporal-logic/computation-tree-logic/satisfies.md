@@ -1,6 +1,6 @@
 # Satisfaction of CTL formulas
 
-**Satisfaction of CTL formulas.** Fix a labelled transition system and a valuation saying
+Fix a labelled transition system and a valuation saying
 which atoms hold at which states. Satisfaction of a CTL formula at a state $s$ is defined by
 recursion on the formula. An atom $a$ holds at $s$ when the valuation makes $a$ true at $s$;
 $\top$ always holds; $\neg\varphi$ holds when $\varphi$ does not; $\varphi \land \psi$ holds

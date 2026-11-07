@@ -1,6 +1,6 @@
 # Row-shift identity for the Rascal numbers
 
-**Row-shift identity for the Rascal numbers.** For integers $n$, $m$ and $k$ with $m \ge 0$
+For integers $n$, $m$ and $k$ with $m \ge 0$
 and $0 \le k \le n$,
 
 $$R_{n+m,k} = R_{n,k} + R_{m+k,k} - 1,$$

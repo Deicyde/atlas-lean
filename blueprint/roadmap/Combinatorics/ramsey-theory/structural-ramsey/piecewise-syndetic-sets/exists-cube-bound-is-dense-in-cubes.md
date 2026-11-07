@@ -1,6 +1,6 @@
 # A color class is dense in a large subcube (Brown, Lemma 2)
 
-**A color class is dense in a large subcube (Brown, Lemma 2).** Let $r, t \in \mathbb{N}$ and
+Let $r, t \in \mathbb{N}$ and
 let $f : \mathbb{N} \to \mathbb{N}$. There is $A \in \mathbb{N}$ such that for every coloring of
 $\mathbb{N}^t$ with $r$ colors there are natural numbers $d \ge 1$ and $m > f(d)$, a color $j$, and
 a subcube $M$ of side $m$ with $M \subseteq [1, A]^t$ in which the class of color $j$ is

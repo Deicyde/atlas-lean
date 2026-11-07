@@ -1,6 +1,6 @@
 # Hyperbolic structure
 
-**Hyperbolic structure.** Let $T : \mathbb{R}^d \to \mathbb{R}^d$ be a homeomorphism and let
+Let $T : \mathbb{R}^d \to \mathbb{R}^d$ be a homeomorphism and let
 $K \subseteq \mathbb{R}^d$. Write $DF_x$ for the derivative of a map $F$ at $x$, $T^n$ for the
 $n$-fold iterate of $T$ and $T^{-n}$ for the $n$-fold iterate of $T^{-1}$. A hyperbolic structure
 for $T$ on $K$ consists of the following: $T$ and $T^{-1}$ are $C^1$; $T(K) = K$; to every

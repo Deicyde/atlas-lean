@@ -1,6 +1,6 @@
 # Stacks of height at most one give a one-cell tape
 
-**Stacks of height at most one give a one-cell tape.** Let $M$ be a finite multi-stack
+Let $M$ be a finite multi-stack
 machine, and let $S$ assign to every stack $k$ of $M$ a list $S_k$ of length at most $1$. Let $L'$
 be a tape of stack columns whose $k$-th track, for every $k$, is $S_k$ laid out bottom first and
 followed by blanks. Then adding the bottom marker to $L'$, as in the translation of $M$ to a

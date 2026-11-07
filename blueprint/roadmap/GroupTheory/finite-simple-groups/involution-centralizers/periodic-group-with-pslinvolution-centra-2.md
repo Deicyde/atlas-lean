@@ -1,6 +1,6 @@
 # Negative answer to Kourovka Problem 18.59
 
-**Negative answer to Kourovka Problem 18.59.** There is no periodic group $G$ that contains an
+There is no periodic group $G$ that contains an
 involution, in which all involutions are conjugate, and for which there is an infinite locally
 finite field $P$ of characteristic $2$ such that the centralizer of every involution $i$ of $G$ is
 isomorphic to $\langle i \rangle \times \mathrm{PSL}_2(P)$. Here $\langle i \rangle$ is the cyclic

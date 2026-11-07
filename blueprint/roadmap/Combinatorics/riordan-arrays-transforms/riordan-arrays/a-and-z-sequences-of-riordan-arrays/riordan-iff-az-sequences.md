@@ -1,6 +1,6 @@
 # A- and Z-sequence characterization of integer Riordan arrays
 
-**A- and Z-sequence characterization of integer Riordan arrays.** Let $(d_{n,k})_{n,k \ge 0}$ be
+Let $(d_{n,k})_{n,k \ge 0}$ be
 an integer matrix that is lower triangular, that is, $d_{n,k} = 0$ whenever $n < k$. Then the
 following are equivalent: (i) there are power series $g, f \in \mathbb{Z}[[x]]$ with $g(0) = 1$,
 $f(0) = 0$ and $[x^1]\, f \ne 0$ such that $d_{n,k} = [x^n]\, g f^k$ for all $n, k \ge 0$;

@@ -1,6 +1,6 @@
 # A halted configuration rewrites to the halting word
 
-**A halted configuration rewrites to the halting word.** Let $M$ be a single-tape Turing
+Let $M$ be a single-tape Turing
 machine with finitely many states and tape symbols, and let $\vdash$, $\dashv$ be the end markers
 and $H$ the halting symbol of the rewriting system simulating $M$. Let $c$ be a configuration of
 $M$ at which $M$ has no next step, and let $w$ be a word that spells $c$: for some state $q$, tape

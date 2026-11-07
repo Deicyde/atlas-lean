@@ -1,6 +1,6 @@
 # Unit spheres of infinite-dimensional Banach spaces are unicoherent
 
-**Unit spheres of infinite-dimensional Banach spaces are unicoherent.** Let $E$ be a real
+Let $E$ be a real
 Banach space that is not finite-dimensional, and let $S = \{x \in E : \|x\| = 1\}$ be its unit
 sphere. If $A$ and $B$ are closed connected subsets of $S$ with $A \cup B = S$, then $A \cap B$ is
 connected. Here connected sets are nonempty by definition.

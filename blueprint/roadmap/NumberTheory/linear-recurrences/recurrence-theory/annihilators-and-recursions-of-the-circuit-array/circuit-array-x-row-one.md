@@ -1,6 +1,6 @@
 # Row one of the one-variable circuit array
 
-**Row one of the one-variable circuit array.** For every natural number $s \ge 2$, the
+For every natural number $s \ge 2$, the
 one-variable circuit array $C^X$, with entries in the field $\mathbb{Q}(X)$ of rational functions
 over $\mathbb{Q}$, satisfies $C^X_{1,s} = (3 \cdot 9^{s-2} X - 1)/(3 \cdot 9^{s-2} X - 3)$.
 

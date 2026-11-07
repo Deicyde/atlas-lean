@@ -1,6 +1,6 @@
 # Metatiles with at most two combs
 
-**Metatiles with at most two combs.** Let $Q$ be a finite set of natural numbers and $q$ its
+Let $Q$ be a finite set of natural numbers and $q$ its
 largest element ($q = 0$ for $Q = \emptyset$). The set $Q$ has metatiles with at most two combs
 if for all natural numbers $N$ and $k$ and every restricted-overlap tiling of an $N$-board with
 squares and $k$ $Q$-combs, with set $P$ of comb start cells, any three combs $a < b < c$ in $P$

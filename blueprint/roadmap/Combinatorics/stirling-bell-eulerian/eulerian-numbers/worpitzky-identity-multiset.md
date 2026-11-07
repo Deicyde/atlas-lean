@@ -1,6 +1,6 @@
 # Worpitzky identity for multiset permutations
 
-**Worpitzky identity for multiset permutations.** Let $m$ and $x$ be natural numbers, let
+Let $m$ and $x$ be natural numbers, let
 $k_1, \dots, k_m$ be natural numbers with sum $K = k_1 + \dots + k_m$, and for $p \ge 1$ let
 $a_p$ be the number of words $w_1 w_2 \cdots w_K$ over the alphabet $\{1, \dots, m\}$ in which
 each letter $i$ occurs exactly $k_i$ times and which have exactly $p - 1$ descents, that is,

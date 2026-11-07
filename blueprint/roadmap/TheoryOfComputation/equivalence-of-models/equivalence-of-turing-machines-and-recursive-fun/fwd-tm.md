@@ -1,6 +1,6 @@
 # The wrapped machine of a code
 
-**The wrapped machine of a code.** Let $c$ be a code for a partial recursive function on lists
+Let $c$ be a code for a partial recursive function on lists
 of natural numbers, and let $\mathrm{tr}$ be Mathlib's multi-stack machine that evaluates such
 codes, with stacks $K' = \{\mathrm{main}, \mathrm{rev}, \mathrm{aux}, \mathrm{stack}\}$ and
 alphabet $\Gamma' = \{\mathtt{cons}_l, \mathtt{cons}, \mathtt{bit0}, \mathtt{bit1}\}$. The

@@ -1,6 +1,6 @@
 # Bounds for tail sums of Tverberg's ceiling sum
 
-**Bounds for tail sums of Tverberg's ceiling sum.** Let $\ell \ge 2$. For a tuple
+Let $\ell \ge 2$. For a tuple
 $a = (a_1, \dots, a_\ell)$ of integers and natural numbers $m, K$, let
 $T(a, m, K) = \sum_{k=1}^{K} f^{(\lceil \cdot \rceil)}(a, m, k)$, where $f^{(\lceil \cdot \rceil)}$
 is Tverberg's sum with $F$ the ceiling function. Then

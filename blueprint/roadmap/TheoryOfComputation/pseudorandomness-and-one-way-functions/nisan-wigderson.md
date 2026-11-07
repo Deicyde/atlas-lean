@@ -1,6 +1,6 @@
 # Nisan-Wigderson: exponential hardness in E derandomizes BPP
 
-**Nisan-Wigderson: exponential hardness in E derandomizes BPP.** Suppose there are a decision
+Suppose there are a decision
 problem $f$ in E and a natural number $c > 0$ such that, for every $n$, every well-formed flat
 Boolean circuit $C$ on $n$ inputs without mod gates that computes $f$ on all bitstrings of length
 $n$ (for every bitstring $x$ of length $n$, the value of its last gate on input $x$ is $f(x)$)

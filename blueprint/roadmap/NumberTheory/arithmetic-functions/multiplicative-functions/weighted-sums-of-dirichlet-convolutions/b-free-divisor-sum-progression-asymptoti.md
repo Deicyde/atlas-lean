@@ -1,6 +1,5 @@
 # Asymptotic for the divisor function summed over $B_\kappa$-free integers in a progression
 
-**Asymptotic for the divisor function summed over $B_\kappa$-free integers in a progression.**
 Let $\kappa$ be a function from the natural numbers to the natural numbers and let $K$ be the
 minimum of $\kappa(p)$ over the primes $p$: $\kappa(p) \ge K$ for every prime $p$, with equality
 for some prime. Assume $K \ge 2$ and $K \ne 3$. Let $a$ and $\xi$ be natural numbers with

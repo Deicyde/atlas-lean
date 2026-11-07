@@ -1,6 +1,6 @@
 # Higher-order Bernoulli numbers
 
-**Higher-order Bernoulli numbers.** For a complex number $\alpha$ and a natural number $n$, the
+For a complex number $\alpha$ and a natural number $n$, the
 higher-order Bernoulli number $B_n^{(\alpha)}$ is $n!$ times the coefficient of $t^n$ in the
 formal power series $\left(t / (e^t - 1)\right)^{\alpha}$. Here $t / (e^t - 1)$ is the Bernoulli
 generating series $\sum_{k \ge 0} B_k t^k / k!$ (with $B_1 = -1/2$), and its $\alpha$-th power is

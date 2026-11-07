@@ -1,6 +1,6 @@
 # Edge set of the graph of a numeral
 
-**Edge set of the graph of a numeral.** Let $b$ be a base, let $d_0, \dots, d_k$ be
+Let $b$ be a base, let $d_0, \dots, d_k$ be
 natural numbers, the digits of the base-$b$ numeral
 $(d_k, \dots, d_0)_b = \sum_{j=0}^{k} d_j b^j$, and let $\sigma$ be a permutation of
 $\{0, \dots, k\}$. The graph $G$ of these digits with digit permutation $\sigma$ has edge set

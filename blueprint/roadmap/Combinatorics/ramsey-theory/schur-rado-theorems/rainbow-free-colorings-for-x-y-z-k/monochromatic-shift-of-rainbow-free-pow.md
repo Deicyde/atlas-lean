@@ -1,6 +1,6 @@
 # Shifting monochromatic strings by $k$-th powers
 
-**Shifting monochromatic strings by $k$-th powers.** Let $k$ be a natural number and let $c$
+Let $k$ be a natural number and let $c$
 be a coloring of the positive integers by three distinct colors $R$, $B$, $G$ with no rainbow
 solution of $x - y = z^k$: there are no positive integers $x, y, z$ with $x = y + z^k$ and
 $c(x)$, $c(y)$, $c(z)$ pairwise distinct. Assume that $R$ is dominant: for all positive integers

@@ -1,6 +1,6 @@
 # A rational lower bound for $(1 + mx)^{1/m}$
 
-**A rational lower bound for $(1 + mx)^{1/m}$.** For every natural number $m \ge 2$ and every
+For every natural number $m \ge 2$ and every
 real $x > 0$,
 
 $$\frac{2 + (m + 1)x}{2 + (m - 1)x} < (1 + mx)^{1/m}.$$

@@ -1,6 +1,6 @@
 # Language of a deterministic two-way automaton
 
-**Language of a deterministic two-way automaton.** The language of a deterministic two-way
+The language of a deterministic two-way
 automaton $A$ is the set of words accepted by $A$ viewed as a nondeterministic two-way
 automaton: a word $w$ belongs to it when, starting in the start state with the head at the
 first position of $w$ and following the step function of $A$ (which moves the head one

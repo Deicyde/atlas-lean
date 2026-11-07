@@ -1,6 +1,6 @@
 # Discriminant condition for prime-power generalized Markov numbers
 
-**Discriminant condition for prime-power generalized Markov numbers.** Let $p$ be an odd
+Let $p$ be an odd
 prime and $m \ge 2$, and suppose that some $k$-generalized Markov number $b$ equals $p^m$ or
 $2p^m$. Suppose moreover that either $k \ge 4$ is even and $p^2$ divides neither $k/2 + 1$ nor
 $k/2 - 1$, or $k$ is odd and $p^2$ divides neither $k + 2$ nor $k - 2$. Then $p$ does not

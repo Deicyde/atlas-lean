@@ -1,6 +1,6 @@
 # Correspondence of labels between the code evaluator and the wrapped machine
 
-**Correspondence of labels between the code evaluator and the wrapped machine.** Let $c$ be a
+Let $c$ be a
 code for a partial recursive function on lists of natural numbers and let $\mathrm{tr}$ be
 Mathlib's multi-stack machine that evaluates such codes. An optional label $o$ of $\mathrm{tr}$
 (a label, or none for halting) corresponds to an optional label $o'$ of the wrapped machine for

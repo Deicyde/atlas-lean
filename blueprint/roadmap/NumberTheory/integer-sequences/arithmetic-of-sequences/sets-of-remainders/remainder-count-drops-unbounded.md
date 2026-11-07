@@ -1,6 +1,6 @@
 # Unbounded drops in the number of remainders
 
-**Unbounded drops in the number of remainders.** Let $s(n)$ be the number of distinct
+Let $s(n)$ be the number of distinct
 remainders $n \bmod k$ with $1 \le k \le \lfloor n/2 \rfloor$. For every natural number $M$
 there are infinitely many $n$ with $s(n+1) + M \le s(n)$; equivalently,
 $\liminf_{n \to \infty} (s(n+1) - s(n)) = -\infty$.

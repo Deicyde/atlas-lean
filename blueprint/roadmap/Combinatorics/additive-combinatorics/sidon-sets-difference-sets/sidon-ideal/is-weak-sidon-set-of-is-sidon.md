@@ -1,6 +1,6 @@
 # Sidon sets are weak Sidon sets
 
-**Sidon sets are weak Sidon sets.** Every Sidon set $A \subseteq \mathbb{N}$ is a weak Sidon
+Every Sidon set $A \subseteq \mathbb{N}$ is a weak Sidon
 set.
 
 ## Sources

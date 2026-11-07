@@ -1,6 +1,6 @@
 # DENSEST k-SUBGRAPH is NP-complete
 
-**DENSEST k-SUBGRAPH is NP-complete.** The decision problem DENSEST k-SUBGRAPH belongs to the
+The decision problem DENSEST k-SUBGRAPH belongs to the
 class NP, and every decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

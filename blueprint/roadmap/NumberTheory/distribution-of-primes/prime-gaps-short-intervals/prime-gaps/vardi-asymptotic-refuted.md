@@ -1,6 +1,6 @@
 # Vardi's prime-gap asymptotic is false
 
-**Vardi's prime-gap asymptotic is false.** Let $\pi$ be the prime-counting function and, for
+Let $\pi$ be the prime-counting function and, for
 real $x$, let $d(x)$ be the largest prime gap $p_{n+1} - p_n$ over the primes $p_n < x$. It is
 not true that for every real $C > 1$,
 $\pi(\lfloor y + C\,d(x) \rfloor) - \pi(\lfloor y \rfloor)$ is asymptotically equivalent to

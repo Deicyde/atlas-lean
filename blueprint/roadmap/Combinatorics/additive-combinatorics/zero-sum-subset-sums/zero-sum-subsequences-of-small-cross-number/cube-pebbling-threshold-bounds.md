@@ -1,6 +1,6 @@
 # Pebbling threshold bounds for the cubes (Czygrinow–Wagner, Alon)
 
-**Pebbling threshold bounds for the cubes (Czygrinow–Wagner, Alon).** For $d \ge 0$ let
+For $d \ge 0$ let
 $Q_d$ be the $d$-cube, the grid graph on $\{0, 1\}^d$, with cost $2$ on every edge, and let
 $t : \mathbb{N} \to \mathbb{R}$ be a threshold function, as $d \to \infty$, for the probability
 that a uniformly random configuration of $s$ pebbles on $Q_d$ is solvable. Write $n = 2^d$ and

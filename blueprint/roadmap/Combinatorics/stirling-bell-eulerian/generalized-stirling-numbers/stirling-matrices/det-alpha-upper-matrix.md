@@ -1,6 +1,6 @@
 # Determinant of the α-upper matrix
 
-**Determinant of the α-upper matrix.** Let $R$ be a commutative ring and let $\alpha$ be a
+Let $R$ be a commutative ring and let $\alpha$ be a
 sequence in $R$. For every $n \ge 0$, the determinant of the $n \times n$ α-upper matrix
 $\mathsf{U}_\alpha(n)$ is $\det \mathsf{U}_\alpha(n) = \prod_{i=1}^{n} \alpha_i^{i-1}$.
 

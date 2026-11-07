@@ -1,6 +1,6 @@
 # Recurrence for incomplete Lucas-Leonardo p-numbers
 
-**Recurrence for incomplete Lucas-Leonardo p-numbers.** For natural numbers $p \ge 1$,
+For natural numbers $p \ge 1$,
 $n > p + 1$ and $k \le \lfloor n/(p+1) \rfloor$, the incomplete Lucas-Leonardo $p$-numbers
 $R_{p,m}(j)$ satisfy
 

@@ -1,6 +1,6 @@
 # Run of the vertex-number phase of the subset-sum emitter
 
-**Run of the vertex-number phase of the subset-sum emitter.** Let $n \in \mathbb{N}$, let
+Let $n \in \mathbb{N}$, let
 $p_0, \dots, p_{P-1}$ be the vertex pairs $(i, j)$ with $i < j < n$, listed with $i$ ascending
 and, for each $i$, with $j$ descending, let $\beta_0, \dots, \beta_{P-1}$ be bits, and let
 $w < n$. For a vertex $u$ let $a_u$ be $4^P$ plus the sum of $4^q$ over the indices $q < P$ such

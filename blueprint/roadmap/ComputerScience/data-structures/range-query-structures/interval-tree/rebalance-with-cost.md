@@ -1,6 +1,6 @@
 # AVL rebalancing step with cost
 
-**AVL rebalancing step with cost.** Rebalancing a tree $T$ returns a tree and a cost, where
+Rebalancing a tree $T$ returns a tree and a cost, where
 heights are the stored heights. If $T$ is empty, or neither subtree of its root is more than one
 taller than the other, it returns $T$ unchanged with zero cost. If the left subtree $L$ is more
 than one taller than the right subtree, it applies a right rotation, costing $2$ cache writes and

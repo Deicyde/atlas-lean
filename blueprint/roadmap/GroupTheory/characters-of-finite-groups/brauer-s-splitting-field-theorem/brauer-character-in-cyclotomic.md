@@ -1,6 +1,6 @@
 # Character values of a finite group lie in a cyclotomic field
 
-**Character values of a finite group lie in a cyclotomic field.** Let $G$ be a finite group of
+Let $G$ be a finite group of
 exponent $n$, and let $\mathbb{Q}(\zeta_n)$ be the $n$-th cyclotomic field. There is a ring
 homomorphism $\varphi \colon \mathbb{Q}(\zeta_n) \to \mathbb{C}$ such that for every
 finite-dimensional complex representation $\rho$ of $G$ on a vector space $V$ and every $g \in G$,

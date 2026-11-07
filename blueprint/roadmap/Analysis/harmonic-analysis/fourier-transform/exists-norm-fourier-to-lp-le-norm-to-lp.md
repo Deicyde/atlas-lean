@@ -1,6 +1,6 @@
 # Hausdorff–Young inequality for Schwartz functions
 
-**Hausdorff–Young inequality for Schwartz functions.** Let $n$ be a natural number and let
+Let $n$ be a natural number and let
 $\mathcal{F}$ be the Fourier transform on $\mathbb{R}^n$,
 $\mathcal{F}f(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2\pi i \langle x, \xi \rangle}\, dx$. There is a
 constant $C > 0$ such that for all $p, p' \in [0, \infty]$ with $1 \le p \le 2$ and

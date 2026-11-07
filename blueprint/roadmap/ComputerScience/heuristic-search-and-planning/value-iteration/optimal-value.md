@@ -1,6 +1,6 @@
 # Optimal value of a discounted Markov decision process
 
-**Optimal value of a discounted Markov decision process.** Let $M$ be a Markov decision
+Let $M$ be a Markov decision
 process with finitely many states $S$, finitely many actions (at least one), real rewards
 $r(s,a)$, and transition probabilities $P(s,a,s')$ that are nonnegative and sum to $1$ over
 $s'$, and let $0 \le \gamma < 1$. The optimal value of $M$ with discount $\gamma$ is the unique

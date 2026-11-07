@@ -1,6 +1,6 @@
 # The $L^0$ pseudometric on $(0,1)$
 
-**The $L^0$ pseudometric on $[0,1]$.** For Borel measurable functions
+For Borel measurable functions
 $f, g : \mathbb{R} \to \mathbb{R}$,
 
 $$

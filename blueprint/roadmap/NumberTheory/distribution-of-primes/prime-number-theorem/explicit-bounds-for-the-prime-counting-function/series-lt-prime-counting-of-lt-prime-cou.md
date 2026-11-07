@@ -1,6 +1,6 @@
 # Converting a lower bound for $\pi(x)$ into a truncated series
 
-**Converting a lower bound for $\pi(x)$ into a truncated series.** Let $\pi(x)$ be the number
+Let $\pi(x)$ be the number
 of primes $p \le x$. Let $n \ge 1$ be an integer, let $a_0, \dots, a_n$ be reals with $a_0 > 0$
 and $a_1, \dots, a_n < 0$, and let $x_0 > 0$. Suppose that for every real $x \ge x_0$ the
 denominator $D(x) = a_0 \log x + \sum_{i=1}^{n} a_i / \log^{i-1} x$ is positive and

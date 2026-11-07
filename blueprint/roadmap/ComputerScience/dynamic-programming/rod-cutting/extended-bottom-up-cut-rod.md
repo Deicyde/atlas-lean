@@ -1,6 +1,6 @@
 # Extended bottom-up rod cutting
 
-**Extended bottom-up rod cutting.** Let $\alpha$ be an additive commutative monoid with a
+Let $\alpha$ be an additive commutative monoid with a
 linear order, and let $p_1, \dots, p_n \in \alpha$ be the prices of pieces of length
 $1, \dots, n$ (the price vector's entry $i - 1$ is $p_i$). The algorithm fills a revenue table
 $r_0, \dots, r_n$ and a first-cut table $s_1, \dots, s_n$ for the lengths $j = 0, 1, \dots, n$ in

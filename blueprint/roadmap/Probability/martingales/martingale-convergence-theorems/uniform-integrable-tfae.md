@@ -1,6 +1,6 @@
 # Equivalent conditions for uniform integrability of a submartingale
 
-**Equivalent conditions for uniform integrability of a submartingale.** Let $(\Omega, \mu)$ be
+Let $(\Omega, \mu)$ be
 a probability space with a filtration $(\mathcal{F}_n)_{n \in \mathbb{N}}$, and let
 $(X_n)_{n \in \mathbb{N}}$ be a real-valued submartingale with respect to $(\mathcal{F}_n)$ and
 $\mu$. The following are equivalent:

@@ -1,6 +1,6 @@
 # Recursion for self-dual monotone functions from $n$ to $n + 1$ variables
 
-**Recursion for self-dual monotone functions from $n$ to $n + 1$ variables.** Let $n \ge 1$,
+Let $n \ge 1$,
 let $\lambda_m$ be the number of self-dual monotone Boolean functions on $m$ variables, and let
 $d_n$ be the number of monotone Boolean functions on $n$ variables. For a Boolean function $b$
 on $n$ variables let $b^*$ be its dual and $\ell(b)$ the number of inputs at which $b$ is true,

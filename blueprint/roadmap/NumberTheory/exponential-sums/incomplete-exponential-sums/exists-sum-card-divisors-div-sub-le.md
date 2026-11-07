@@ -1,6 +1,6 @@
 # Explicit asymptotic for the logarithmic mean of the divisor function
 
-**Explicit asymptotic for the logarithmic mean of the divisor function.** Let $\tau(n)$ be
+Let $\tau(n)$ be
 the number of positive divisors of $n$ and let $\gamma$ be the Euler–Mascheroni constant. There
 is a real constant $C$ such that $\sum_{k=1}^{N} \frac{\log k}{k} - \frac{(\log N)^2}{2}$ tends
 to $\frac{\gamma^2 - C}{2}$ as $N \to \infty$ and such that for every real $x \ge 2$,

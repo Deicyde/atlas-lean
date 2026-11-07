@@ -1,6 +1,6 @@
 # The first five powers of $x^{-1} + 1 + x$
 
-**The first five powers of $x^{-1} + 1 + x$.** In the ring of Laurent polynomials over
+In the ring of Laurent polynomials over
 $\mathbb{Z}$,
 $(x^{-1} + 1 + x)^0 = 1$,
 $(x^{-1} + 1 + x)^1 = x^{-1} + 1 + x$,

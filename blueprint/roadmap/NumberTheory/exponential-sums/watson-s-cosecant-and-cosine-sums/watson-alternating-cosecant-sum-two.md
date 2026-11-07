@@ -1,6 +1,6 @@
 # Watson's alternating cosecant sum at $n = 2$
 
-**Watson's alternating cosecant sum at $n = 2$.** The alternating cosecant sum
+The alternating cosecant sum
 $C_2 = \sum_{l=1}^{1} (-1)^{l+1} / \sin(\pi l / 2)$ equals $1$.
 
 ## Sources

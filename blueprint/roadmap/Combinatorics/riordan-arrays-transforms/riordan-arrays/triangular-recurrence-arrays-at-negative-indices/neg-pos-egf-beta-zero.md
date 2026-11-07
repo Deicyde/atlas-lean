@@ -1,6 +1,6 @@
 # Generating function of the negative-positive numbers for $\beta = \beta' = 0$
 
-**Generating function of the negative-positive numbers for $\beta = \beta' = 0$.** Let
+Let
 $\alpha, \gamma, \alpha', \gamma'$ be integers and let $a^{NP}$ be the negative-positive numbers
 for the parameters $(\alpha, 0, \gamma; \alpha', 0, \gamma')$. For every $n \ge 0$, in the ring
 $\mathbb{Q}[[u]]$ of formal power series,

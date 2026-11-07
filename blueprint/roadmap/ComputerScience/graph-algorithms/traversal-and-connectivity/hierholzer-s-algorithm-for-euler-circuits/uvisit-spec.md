@@ -1,6 +1,6 @@
 # Invariant of the undirected Hierholzer recursion
 
-**Invariant of the undirected Hierholzer recursion.** Let $R$ be a list of edges, $v$, $t$
+Let $R$ be a list of edges, $v$, $t$
 vertices such that exactly $v$ and $t$ have odd degree in $R$ (no vertex when $v = t$), $A$ a list
 of vertices, and $f > |R|$ a fuel bound. Run the undirected Hierholzer recursion with fuel $f$
 from $v$ on $R$ with accumulator $A$, and let $R'$ be the remaining edge list it returns and $c$

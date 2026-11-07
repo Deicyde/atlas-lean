@@ -1,6 +1,6 @@
 # The full program
 
-**The full program.** Let $\gamma : \mathrm{Fin}\,r \to \mathrm{Fin}\,g$ code the raw
+Let $\gamma : \mathrm{Fin}\,r \to \mathrm{Fin}\,g$ code the raw
 symbols, let $\sigma \in \mathrm{Fin}\,g$ be a separator code, let $k$ be a polynomial with
 natural-number coefficients, let $c, e, d \in \mathbb{N}$, and let $h$ be a host program with
 labels $\Lambda$ and start label $\lambda_0 \in \Lambda$. The full program, whose counter-program

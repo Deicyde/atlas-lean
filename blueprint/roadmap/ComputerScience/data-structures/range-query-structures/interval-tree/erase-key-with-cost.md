@@ -1,6 +1,6 @@
 # Keyed erasure with cost
 
-**Keyed erasure with cost.** Erasing a key $k \in \mathbb{Z} \times \mathbb{N}$ from an
+Erasing a key $k \in \mathbb{Z} \times \mathbb{N}$ from an
 interval tree returns a new tree together with its cost; the key of an entry is the pair of its low
 endpoint and identifier, and keys are compared lexicographically. The empty tree is returned
 unchanged at a cost of one node visit. At a node with entry $x$, the key $k$ is compared with the

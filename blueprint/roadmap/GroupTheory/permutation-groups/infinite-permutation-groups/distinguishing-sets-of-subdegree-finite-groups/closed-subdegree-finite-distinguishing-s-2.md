@@ -1,6 +1,6 @@
 # Lehner's theorem on distinguishing sets of subdegree-finite groups
 
-**Lehner's theorem on distinguishing sets of subdegree-finite groups.** Let $\Omega$ be a
+Let $\Omega$ be a
 countably infinite set and let $G$ be a subgroup of the symmetric group $\mathrm{Sym}(\Omega)$
 that is closed in the topology of pointwise convergence and subdegree-finite: for all
 $a, b \in \Omega$ the orbit of $b$ under the stabilizer of $a$ in $G$ is finite. If every

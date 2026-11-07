@@ -1,6 +1,6 @@
 # Trollope–Delange formula for real $x$
 
-**Trollope–Delange formula for real $x$.** Let $q \ge 2$ be an integer, let $s_q(n)$ denote
+Let $q \ge 2$ be an integer, let $s_q(n)$ denote
 the sum of the base-$q$ digits of $n$, and let $F$ be the Trollope–Delange fluctuation and $h$
 Delange's series in base $q$. For every real number $x \ge 1$,
 

@@ -1,6 +1,6 @@
 # Reversal symmetry of the Gauss–Kuzmin mass
 
-**Reversal symmetry of the Gauss–Kuzmin mass.** For every string $a$ of positive integers,
+For every string $a$ of positive integers,
 $P_{GK}(\overleftarrow{a}) = P_{GK}(a)$, where $P_{GK}$ is the Gauss–Kuzmin mass and
 $\overleftarrow{a}$ is the reverse of $a$.
 

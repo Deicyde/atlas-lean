@@ -1,6 +1,6 @@
 # Formula for colored partitions into fully different parts
 
-**Formula for colored partitions into fully different parts.** A colored part is a pair
+A colored part is a pair
 $(m, j)$ of integers with $1 \le j \le m$, read as the part $m$ in color $j$. For $n \ge 0$, let
 $\mathrm{pf}_c(n)$ be the number of finite sets of colored parts whose sizes $m$ sum to $n$ and
 in which no two colored parts have the same size and no two have the same color. Then

@@ -1,6 +1,6 @@
 # Doubly ruled graphs are planes or hyperbolic paraboloids
 
-**Doubly ruled graphs are planes or hyperbolic paraboloids.** Let $f$ be a real-valued
+Let $f$ be a real-valued
 function of two real variables whose graph is doubly ruled; no continuity of $f$ is assumed. Then
 there are real numbers $a, b, c, d, e, g$ such that
 $f(x, y) = ax^2 + bxy + cy^2 + dx + ey + g$ for all real $x$ and $y$, and either $a = b = c = 0$

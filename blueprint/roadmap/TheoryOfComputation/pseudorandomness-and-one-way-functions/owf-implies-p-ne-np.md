@@ -1,6 +1,6 @@
 # One-way functions imply P ≠ NP
 
-**One-way functions imply P ≠ NP.** If some family $f$, assigning to each natural number $n$
+If some family $f$, assigning to each natural number $n$
 and each $n$-bit string $x$ a bitstring $f_n(x)$, is a one-way function family, then
 $\mathrm{P} \neq \mathrm{NP}$.
 

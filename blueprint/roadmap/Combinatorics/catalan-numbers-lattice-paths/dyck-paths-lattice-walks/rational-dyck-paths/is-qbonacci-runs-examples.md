@@ -1,6 +1,6 @@
 # Examples of the $Q$-bonacci run condition for $q = 4/5$
 
-**Examples of the $Q$-bonacci run condition for $q = 4/5$.** Writing $1$ for true and $0$ for
+Writing $1$ for true and $0$ for
 false, for $r = 4$ and $s = 5$ the maximal runs of the Boolean word $1001100$ do not satisfy the
 $Q$-bonacci run condition, while the maximal runs of $100111100$ and of $100111$ do.
 

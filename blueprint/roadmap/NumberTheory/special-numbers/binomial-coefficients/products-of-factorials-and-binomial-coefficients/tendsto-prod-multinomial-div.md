@@ -1,6 +1,6 @@
 # Asymptotics of products of multinomial coefficients
 
-**Asymptotics of products of multinomial coefficients.** Let $r \ge 2$, let
+Let $r \ge 2$, let
 $b_1, \dots, b_r \ge 1$ be natural numbers with $a = b_1 + \dots + b_r$, let $F_k$ denote the
 factorial product constants and $P_k$ the factorial comparison functions, and put
 $c_{a,b} = F_a / (F_{b_1} \cdots F_{b_r})$. As $m \to \infty$, the ratio of

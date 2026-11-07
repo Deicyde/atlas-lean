@@ -1,6 +1,6 @@
 # Multi-target transfer
 
-**Multi-target transfer.** Let $M$ be a counter machine with counters indexed by $C$, a
+Let $M$ be a counter machine with counters indexed by $C$, a
 Boolean output stack and a Boolean state, let $x \in C$, and let $Y$ be a list of distinct
 counters not containing $x$. Suppose the instruction at label $\ell$ is the transfer loop that
 pops counter $x$ and pushes one unit on every counter of $Y$, returning to $\ell$ while $x$ is

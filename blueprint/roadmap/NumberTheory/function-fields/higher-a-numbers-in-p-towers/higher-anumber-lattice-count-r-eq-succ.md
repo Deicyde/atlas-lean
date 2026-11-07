@@ -1,6 +1,6 @@
 # The lattice-point count for $r = p + 1$
 
-**The lattice-point count for $r = p + 1$.** Let $p$ be a prime and $d$ a natural number
+Let $p$ be a prime and $d$ a natural number
 dividing $p - 1$. Put $\tau = (p + 1)/d$ and $\gamma = ((p - 1)(p + 1) + (p + 1))/d$, the value
 at $r = p + 1$ of $\gamma = ((p - 1) r + (p + 1))/d$, and write $a^{p+1}(X_n)$ for the
 lattice-point expression of Theorem 1 with $r = p + 1$. Then for every $n \ge 1$,

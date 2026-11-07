@@ -1,6 +1,6 @@
 # Base phi expansion of zero
 
-**Base phi expansion of zero.** The empty set of positions, the expansion with no digit $1$, is
+The empty set of positions, the expansion with no digit $1$, is
 a base phi expansion of $0$: it has no two adjacent digits $1$, and its value, the empty sum, is
 equal to $0$.
 

@@ -1,6 +1,6 @@
 # Odd prime divisors of an even pseudoprime
 
-**Odd prime divisors of an even pseudoprime.** Let $N$ be an even pseudoprime and $p$ an
+Let $N$ be an even pseudoprime and $p$ an
 odd prime dividing $N$, and write $\ell_2(p)$ for the multiplicative order of $2$ modulo $p$.
 Then $N \equiv p \pmod{p\,\ell_2(p)}$, $\ell_2(p)$ is odd, $p \equiv 1$ or $7 \pmod 8$, and
 $14p \le N$.

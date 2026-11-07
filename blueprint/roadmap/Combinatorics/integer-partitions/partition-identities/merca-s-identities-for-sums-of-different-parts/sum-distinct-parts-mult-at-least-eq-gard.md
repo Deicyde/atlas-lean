@@ -1,6 +1,6 @@
 # Garden of Eden identity for $s_m$
 
-**Garden of Eden identity for $s_m$.** Let $m \ge 1$ and $n$ be natural numbers. Write
+Let $m \ge 1$ and $n$ be natural numbers. Write
 $s_m(k)$ for the sum of the different parts that appear at least $m$ times in partitions of
 $k$, and $G(k)$ for the number of Garden of Eden partitions of $k$, those whose Dyson rank is
 at most $-2$ (so $G(0) = 0$). Then

@@ -1,6 +1,6 @@
 # Zero is never a legal move
 
-**Zero is never a legal move.** For every set $M$ of natural numbers, $0$ is not a legal move
+For every set $M$ of natural numbers, $0$ is not a legal move
 of the Sylver Coinage position $M$.
 
 ## Sources

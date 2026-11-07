@@ -1,3 +1,3 @@
 # Nonnegativity of Kendall's probabilities
 
-**Nonnegativity of Kendall's probabilities.** Kendall's probabilities are nonnegative.
+Kendall's probabilities are nonnegative.

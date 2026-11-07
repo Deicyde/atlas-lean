@@ -1,6 +1,6 @@
 # TOTAL DOMINATING SET is NP-complete
 
-**TOTAL DOMINATING SET is NP-complete.** The decision problem TOTAL DOMINATING SET belongs to
+The decision problem TOTAL DOMINATING SET belongs to
 NP, and every decision problem in NP reduces to TOTAL DOMINATING SET by a polynomial-time
 many-one reduction.
 

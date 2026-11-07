@@ -1,6 +1,6 @@
 # The terminal Smith–Waterman cell
 
-**The terminal Smith–Waterman cell.** Given a substitution score $\sigma(a, b) \in \mathbb{Z}$
+Given a substitution score $\sigma(a, b) \in \mathbb{Z}$
 for letters $a, b$ and a gap score $g \in \mathbb{Z}$, and writing $sc$ for a sequence $s$
 followed by a letter $c$, the terminal Smith–Waterman cell $H(x, y)$ of two sequences $x$ and
 $y$ is the integer defined by $H(x, y) = 0$ when $x$ or $y$ is empty, and

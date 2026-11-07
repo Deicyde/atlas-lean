@@ -1,6 +1,6 @@
 # Sum of the four local statistics of a permutation
 
-**Sum of the four local statistics of a permutation.** Let $\sigma$ be a permutation of
+Let $\sigma$ be a permutation of
 $\{0, 1, \dots, n-1\}$, and write $\mathrm{dasc}(\sigma)$, $\mathrm{ddes}(\sigma)$,
 $\mathrm{pk}(\sigma)$ and $\mathrm{vl}(\sigma)$ for its numbers of double ascents, double
 descents, peaks and valleys. Then

@@ -1,6 +1,6 @@
 # Recurrence for Euler polynomials of order α
 
-**Recurrence for Euler polynomials of order α.** Let $E_m(x)$ denote the Euler polynomial
+Let $E_m(x)$ denote the Euler polynomial
 and $E_m^{(\alpha)}(x)$ the Euler polynomial of order $\alpha$. For every complex number
 $\alpha$ and every integer $n \ge 1$, as polynomials in $x$,
 $E_n^{(\alpha)}(x) = (x - \alpha/2) \, E_{n-1}^{(\alpha)}(x) +

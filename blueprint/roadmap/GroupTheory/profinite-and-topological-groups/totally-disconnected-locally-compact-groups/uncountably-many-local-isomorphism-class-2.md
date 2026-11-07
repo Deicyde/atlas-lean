@@ -1,6 +1,6 @@
 # Uncountably many local isomorphism classes of simple tdlc groups
 
-**Uncountably many local isomorphism classes of simple tdlc groups.** There is a family
+There is a family
 $(G_i)_{i \in I}$ of groups in Caprace's class $\mathcal{S}$ (non-discrete, compactly generated,
 topologically simple, totally disconnected, locally compact Hausdorff topological groups), indexed
 by an uncountable set $I$, such that $G_i$ and $G_j$ are not locally isomorphic whenever $i \ne j$.

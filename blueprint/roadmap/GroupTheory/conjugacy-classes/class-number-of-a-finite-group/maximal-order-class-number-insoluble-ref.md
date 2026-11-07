@@ -1,6 +1,6 @@
 # A finite group of maximal order with a given class number can be soluble
 
-**A finite group of maximal order with a given class number can be soluble.** There are an
+There are an
 integer $k \ge 1$, an insoluble finite group with exactly $k$ conjugacy classes, and a soluble
 finite group $G$ with exactly $k$ conjugacy classes whose order is at least the order of every
 finite group with exactly $k$ conjugacy classes. So it is not true that whenever some insoluble

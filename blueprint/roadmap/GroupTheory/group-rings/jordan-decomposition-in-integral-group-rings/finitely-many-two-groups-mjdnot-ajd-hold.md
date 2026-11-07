@@ -1,6 +1,6 @@
 # Finitely many $2$-groups have MJD but not AJD
 
-**Finitely many $2$-groups have MJD but not AJD.** There is a natural number $B$ such that every
+There is a natural number $B$ such that every
 finite $2$-group $G$ whose integral group ring $\mathbb{Z}[G]$ has the multiplicative Jordan
 decomposition property (MJD) but not the additive Jordan decomposition property (AJD) has order
 at most $B$. In particular, only finitely many isomorphism classes of finite $2$-groups have MJD

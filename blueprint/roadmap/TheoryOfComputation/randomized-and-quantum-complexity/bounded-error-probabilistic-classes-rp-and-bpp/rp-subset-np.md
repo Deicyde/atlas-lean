@@ -1,6 +1,6 @@
 # RP is contained in NP
 
-**RP is contained in NP.** Every decision problem in the class $\mathsf{RP}$ of
+Every decision problem in the class $\mathsf{RP}$ of
 one-sided-error randomized polynomial-time decision problems also belongs to the class
 $\mathsf{NP}$.
 

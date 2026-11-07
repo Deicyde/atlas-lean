@@ -1,6 +1,6 @@
 # Ratio of consecutive $k$-Jacobsthal numbers
 
-**Ratio of consecutive $k$-Jacobsthal numbers.** For every positive integer $k$, the
+For every positive integer $k$, the
 $k$-Jacobsthal numbers $J_{k,n} = U_n(k, -2)$, the Lucas sequence $U$ with parameters
 $(P, Q) = (k, -2)$, satisfy $J_{k,n+1}/J_{k,n} \to (k + \sqrt{k^2 + 8})/2$ as $n \to \infty$,
 the quotients taken in $\mathbb{R}$.

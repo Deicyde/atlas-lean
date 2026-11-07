@@ -1,6 +1,6 @@
 # Kernel membership in a finite product of fields is componentwise
 
-**Kernel membership in a finite product of fields is componentwise.** Let $K$ be a field,
+Let $K$ be a field,
 $\iota$ a finite type, $(F_i)_{i \in \iota}$ a family of fields that are $K$-algebras, $B$ a
 commutative $K$-algebra and $\varphi : \prod_{i \in \iota} F_i \to B$ a $K$-algebra
 homomorphism. For $x \in \prod_{i \in \iota} F_i$, $\varphi(x) = 0$ if and only if for every

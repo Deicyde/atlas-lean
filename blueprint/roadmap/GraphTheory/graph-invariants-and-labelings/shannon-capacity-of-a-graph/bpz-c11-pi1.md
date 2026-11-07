@@ -1,6 +1,6 @@
 # One-block BPZ profile for the 11-cycle
 
-**One-block BPZ profile for the 11-cycle.** The one-block eleven-cycle profile of Buys,
+The one-block eleven-cycle profile of Buys,
 Polak and Zuiddam is the profile with code coordinate $148$, pairs coordinate $3$, auxiliary
 coordinate $148$ and neutral coordinate $142$.
 

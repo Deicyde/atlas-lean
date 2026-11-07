@@ -1,6 +1,6 @@
 # Lucas-number count for the left-shift strategy
 
-**Lucas-number count for the left-shift strategy.** Let $n \ge 4$ and let $\mathrm{CSL}_n$
+Let $n \ge 4$ and let $\mathrm{CSL}_n$
 be the strategy whose component on $n$ positions is the left cyclic shift
 $j \mapsto j - 1 \bmod n$ and whose component on $m \ne n$ positions is the cyclic shift
 $j \mapsto j + 1 \bmod m$. The number of permutations $\pi$ of $\{0, \dots, n-1\}$ that

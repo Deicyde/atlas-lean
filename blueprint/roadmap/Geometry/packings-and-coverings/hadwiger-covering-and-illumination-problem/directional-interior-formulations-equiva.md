@@ -1,6 +1,6 @@
 # Directional illumination is equivalent to covering by interior translates
 
-**Directional illumination is equivalent to covering by interior translates.** Let $n \ge 1$,
+Let $n \ge 1$,
 let $K \subseteq \mathbb{R}^n$ be a convex body and let $q$ be a natural number. Then some $q$ unit
 vectors illuminate $K$ if and only if $K$ is covered by $q$ translates
 $v_1 + \operatorname{int} K, \dots, v_q + \operatorname{int} K$ of its interior, repetitions

@@ -1,6 +1,6 @@
 # Binomial coefficients dividing the middle binomial coefficient
 
-**Binomial coefficients dividing the middle binomial coefficient.** The set of natural
+The set of natural
 numbers $m$ such that $\binom{m+k}{k}$ divides $\binom{2m}{m}$ for every integer $k$ with
 $1 \le k \le \exp(0.8 \sqrt{\log m})$ has natural density $1$.
 

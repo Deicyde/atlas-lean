@@ -1,6 +1,6 @@
 # Li's coefficient $d(0, 1)$
 
-**Li's coefficient $d(0, 1)$.** Li's coefficient $d(0, 1)$ equals $1$.
+Li's coefficient $d(0, 1)$ equals $1$.
 
 ## Sources
 

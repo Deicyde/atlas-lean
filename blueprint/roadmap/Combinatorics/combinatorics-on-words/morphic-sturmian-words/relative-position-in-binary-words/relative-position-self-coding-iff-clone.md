@@ -1,6 +1,6 @@
 # Characterization of the cloned Thue–Morse words by their relative positions
 
-**Characterization of the cloned Thue–Morse words by their relative positions.** Let $k > 1$
+Let $k > 1$
 be an integer, let $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over $\{a, b\}$ that starts
 with $a$ and in which both letters occur infinitely often, and let $r$ be its relative position
 function. Then $r(n) = k$ when $\ell_{n-1} = a$ and $r(n) = -k$ when $\ell_{n-1} = b$, for all

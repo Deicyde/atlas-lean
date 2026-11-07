@@ -1,6 +1,6 @@
 # Series for the extended Carlitz $q$-Bernoulli numbers
 
-**Series for the extended Carlitz $q$-Bernoulli numbers.** Let $0 < q < 1$, write
+Let $0 < q < 1$, write
 $[x] = (q^x - 1)/(q - 1)$, and let $\beta_n^{(r)} = \beta_n^{(r)}(0)$ be the extended Carlitz
 $q$-Bernoulli numbers. For every natural number $n \ge 1$,
 $\beta_n^{(0)} = -n \sum_{k=0}^{\infty} q^k [k]^{n-1} + (1 - q)^{-n}$, and for every natural number

@@ -1,6 +1,6 @@
 # Input of the verifier on a pair
 
-**Input of the verifier on a pair.** Let $V$ be a polynomial-time machine computing a function
+Let $V$ be a polynomial-time machine computing a function
 of pairs of bit lists from their pair encoding, whose input alphabet is identified with the pair
 alphabet $\mathrm{Bool} \oplus \mathrm{Option}\ \mathrm{Bool}$, and let $\beta$ be the fixed
 bijection from $\{0, 1\}$ onto the Booleans. For bit lists $a$ and $y$, translating the pair

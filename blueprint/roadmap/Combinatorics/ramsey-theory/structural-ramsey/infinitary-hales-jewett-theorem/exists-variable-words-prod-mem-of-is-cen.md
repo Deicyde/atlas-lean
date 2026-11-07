@@ -1,6 +1,6 @@
 # Infinitary Hales–Jewett configurations in central sets
 
-**Infinitary Hales–Jewett configurations in central sets.** Let
+Let
 $A_0 \subseteq A_1 \subseteq \cdots$ be finite sets with union $A$, and let $S_0$ be the semigroup
 of nonempty finite words over $A$ under concatenation. For $n \in \mathbb{N}$, an $n$-variable
 word over $A$ is a nonempty finite word over $A \cup \{v_0, \dots, v_{n-1}\}$, for distinct

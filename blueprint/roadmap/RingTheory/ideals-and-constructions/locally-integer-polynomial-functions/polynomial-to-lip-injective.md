@@ -1,6 +1,6 @@
 # Integer polynomials embed in LIP(U)
 
-**Integer polynomials embed in LIP(U).** For every infinite set $U \subseteq \mathbb{Z}$, the
+For every infinite set $U \subseteq \mathbb{Z}$, the
 evaluation map $\mathbb{Z}[x] \to \mathrm{LIP}(U)$, sending $p$ to the function $u \mapsto p(u)$,
 is injective: distinct integer polynomials give distinct functions on $U$.
 

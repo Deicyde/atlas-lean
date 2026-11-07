@@ -1,6 +1,6 @@
 # The polynomial $1$ is $B_\kappa$-free
 
-**The polynomial $1$ is $B_\kappa$-free.** Let $F$ be a field and let $\kappa$ assign to each
+Let $F$ be a field and let $\kappa$ assign to each
 polynomial in $F[T]$ a natural number, with $\kappa(P) \ne 0$ for every monic irreducible $P$.
 Then $1$ is $B_\kappa$-free: $P^{\kappa(P)}$ does not divide $1$ for any monic irreducible $P$.
 

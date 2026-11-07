@@ -1,6 +1,6 @@
 # 3-DIMENSIONAL MATCHING is NP-complete
 
-**3-DIMENSIONAL MATCHING is NP-complete.** The decision problem 3-DIMENSIONAL MATCHING on
+The decision problem 3-DIMENSIONAL MATCHING on
 bitstrings is in NP, and every decision problem in NP reduces to it by a polynomial-time many-one
 reduction.
 

@@ -1,6 +1,6 @@
 # Step of the HAMPATH verifier's unary comparison loop
 
-**Step of the HAMPATH verifier's unary comparison loop.** For stacks $\mathit{src}$,
+For stacks $\mathit{src}$,
 $\mathit{sv}$, $c$ of the HAMPATH verifier, label families $\mathit{self}$ and $\mathit{fin}$
 indexed by booleans, and a boolean verdict $\mathit{ok}$, this is the instruction that pops the top
 of $\mathit{src}$, reads it as a bit $b$ (false if $\mathit{src}$ is empty or its top is not a bit

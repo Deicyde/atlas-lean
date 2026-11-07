@@ -1,6 +1,6 @@
 # Correctness of the memoized rod-cutting auxiliary
 
-**Correctness of the memoized rod-cutting auxiliary.** Let $\alpha$ be a linearly ordered
+Let $\alpha$ be a linearly ordered
 additive commutative monoid (that is, $a \le b$ implies $a + c \le b + c$) and let
 $p = (p_1, \dots, p_n) \in \alpha^n$ be prices, where $p_i$ is the price of a piece of length $i$.
 Call a cache $c = (c_0, \dots, c_n)$, whose entries are each unknown or a value in $\alpha$, valid

@@ -1,6 +1,6 @@
 # $k$-Dyck words
 
-**$k$-Dyck words.** A word $w$ over the Booleans is a $k$-Dyck word when the number of
+A word $w$ over the Booleans is a $k$-Dyck word when the number of
 letters $\mathrm{true}$ in $w$ is $k$ times the number of letters $\mathrm{false}$, and every
 prefix of $w$ contains at least $k$ times as many letters $\mathrm{true}$ as letters
 $\mathrm{false}$.

@@ -1,6 +1,6 @@
 # Ramanujan's harmonic sum identity (corollary to Entry 6, general form)
 
-**Ramanujan's harmonic sum identity (corollary to Entry 6, general form).** For every
+For every
 natural number $r$, the following identity holds in $\mathbb{Q}$:
 
 $$

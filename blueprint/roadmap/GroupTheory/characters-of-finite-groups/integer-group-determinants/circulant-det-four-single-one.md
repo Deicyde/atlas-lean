@@ -1,6 +1,6 @@
 # The 4 × 4 circulant determinant of (1, 0, 0, 0)
 
-**The 4 × 4 circulant determinant of (1, 0, 0, 0).** Over every commutative ring $R$, the
+Over every commutative ring $R$, the
 $4 \times 4$ circulant determinant satisfies $D_4(1, 0, 0, 0) = 1$.
 
 ## Sources

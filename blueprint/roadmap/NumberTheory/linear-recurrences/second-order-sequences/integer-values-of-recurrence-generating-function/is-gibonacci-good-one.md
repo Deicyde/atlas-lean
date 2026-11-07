@@ -1,6 +1,6 @@
 # One is good for every pair
 
-**One is good for every pair.** For all integers $a$ and $b$, the rational number $1$ is good
+For all integers $a$ and $b$, the rational number $1$ is good
 for $(a, b)$.
 
 The value of the Gibonacci generating function there is $G^{(a,b)}(1) = -b$.

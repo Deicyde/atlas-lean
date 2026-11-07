@@ -1,6 +1,6 @@
 # Road coloring theorem
 
-**Road coloring theorem.** Let $V$ be a finite nonempty set and let $\to$ be a relation
+Let $V$ be a finite nonempty set and let $\to$ be a relation
 on $V$, viewed as a directed graph on $V$ without parallel edges (loops allowed). Suppose that the
 graph is strongly connected (for all $u, v \in V$ there is a directed walk, possibly of length $0$,
 from $u$ to $v$), aperiodic (for every integer $d > 1$ there is a closed directed walk of positive

@@ -1,6 +1,6 @@
 # Solutions with odd span $c - a$
 
-**Solutions with odd span $c - a$.** For every odd integer $N \ge 3$ there is a solution
+For every odd integer $N \ge 3$ there is a solution
 $(a, b, c)$ of the sum of consecutive squares problem with $c - a = N$, together with infinitely
 many distinct solutions $(x, y, z)$ of that problem with $z - x$ odd, all lying in the plane
 $(b - c)x + (c - a)y + (a - b)z = 0$, which passes through $(a, b, c)$ and contains the line

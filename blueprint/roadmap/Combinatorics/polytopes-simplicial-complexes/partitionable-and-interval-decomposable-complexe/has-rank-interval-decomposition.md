@@ -1,6 +1,6 @@
 # Rank-$k$ interval decomposition with a subcomplex of bottoms
 
-**Rank-$k$ interval decomposition with a subcomplex of bottoms.** For a natural number $k$, a
+For a natural number $k$, a
 finite family $K$ of finite subsets of $\mathbb{N}$ has a rank-$k$ interval decomposition with a
 subcomplex of bottoms if there are a finite family $B$ of finite subsets of $\mathbb{N}$, closed
 under taking subsets, and an assignment of a finite set $\mathrm{top}(F) \subseteq \mathbb{N}$ to

@@ -1,6 +1,6 @@
 # The computable decoder inverts the encoder
 
-**The computable decoder inverts the encoder.** For every oracle code $c$, the computable
+For every oracle code $c$, the computable
 decoder applied to the Gödel number of $c$ returns $c$.
 
 ## Sources

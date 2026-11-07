@@ -1,6 +1,6 @@
 # Partial sums along the positive and negative indices are records
 
-**Partial sums along the positive and negative indices are records.** Let $T_n$ be the
+Let $T_n$ be the
 Tribonacci numbers ($T_0 = T_1 = 0$, $T_2 = 1$, $T_{n+3} = T_{n+2} + T_{n+1} + T_n$) and let
 $\alpha$ be a real number with $\alpha^3 = \alpha^2 + \alpha + 1$. For each $n$ fix a Tribonacci
 representation $R(n) = (r_0, r_1, \dots, r_{\ell-1})$ of $n$: digits in $\{0, 1\}$ with no three

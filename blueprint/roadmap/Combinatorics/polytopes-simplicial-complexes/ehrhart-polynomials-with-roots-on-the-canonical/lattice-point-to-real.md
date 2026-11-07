@@ -1,6 +1,6 @@
 # Lattice points as real points
 
-**Lattice points as real points.** A lattice point $x = (x_1, \dots, x_d) \in \mathbb{Z}^d$
+A lattice point $x = (x_1, \dots, x_d) \in \mathbb{Z}^d$
 is regarded as the point of $\mathbb{R}^d$ with the same coordinates $x_1, \dots, x_d$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Farey triples
 
-**Farey triples.** Write a pair $(a, b)$ of natural numbers as the fraction $a/b$, so that
+Write a pair $(a, b)$ of natural numbers as the fraction $a/b$, so that
 $1/0$ is allowed. Three such fractions $(a/b, c/d, e/f)$ form a Farey triple if
 $\gcd(a, b) = \gcd(c, d) = \gcd(e, f) = 1$ and
 

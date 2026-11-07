@@ -1,6 +1,6 @@
 # Constant coefficient of $B_{1,S_h}$
 
-**Constant coefficient of $B_{1,S_h}$.** Let $F$ be a finite field with $q$ elements and let
+Let $F$ be a finite field with $q$ elements and let
 $h \ge 1$ be a natural number. Let $S_h$ be the set of $h$-free monic polynomials over $F$ (those
 divisible by no $P^h$ with $P$ monic irreducible) and $\omega_1(f)$ the number of distinct monic
 irreducible factors of $f$ of multiplicity exactly $1$. For every complex number $z$, the

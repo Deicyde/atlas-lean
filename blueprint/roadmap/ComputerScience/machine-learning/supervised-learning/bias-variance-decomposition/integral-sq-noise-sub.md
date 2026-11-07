@@ -1,6 +1,6 @@
 # The bias-variance decomposition
 
-**The bias-variance decomposition.** Let $(\Omega, \mu)$ be a probability space, with
+Let $(\Omega, \mu)$ be a probability space, with
 expectation $\mathbb{E}$ and variance $\operatorname{Var}$ taken with respect to $\mu$. Let $f$ be
 a real number, and let $\varepsilon$ (the noise) and $\hat Y$ (the predictor) be square-integrable
 real random variables on $\Omega$ such that $\mathbb{E}[\varepsilon] = 0$ and $\varepsilon$ is

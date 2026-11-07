@@ -1,6 +1,6 @@
 # Coprime solutions of $x^2 + 3 = 4y^n$
 
-**Coprime solutions of $x^2 + 3 = 4y^n$.** For natural numbers $n$, $x$ and $y$, the
+For natural numbers $n$, $x$ and $y$, the
 conditions $n \ge 3$, $x \ge 1$, $y \ge 1$, $\gcd(x, y) = 1$ and $x^2 + 3 = 4y^n$ hold if and only
 if $n \ge 3$ and either $x = y = 1$ or $(n, x, y) = (3, 37, 7)$ (Luca–Tengely–Togbé).
 

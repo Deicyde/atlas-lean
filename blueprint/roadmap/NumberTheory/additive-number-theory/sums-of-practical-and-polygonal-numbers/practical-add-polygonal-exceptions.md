@@ -1,6 +1,6 @@
 # Exceptions to sums of a practical number and polygonal numbers
 
-**Exceptions to sums of a practical number and polygonal numbers.** (a) Let $s \ge 3$ with
+(a) Let $s \ge 3$ with
 $s \equiv 0$ or $s \equiv 4 \pmod{12}$. Then there are infinitely many positive integers $n$ that
 cannot be written as $n = q + p_s(m)$ with $q$ a practical number and $m \ge 0$ an integer, where
 $p_s(m)$ is the $m$-th $s$-gonal number. (b) For every natural number $M$ there is a natural

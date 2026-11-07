@@ -1,6 +1,6 @@
 # Weighted sum of cubes of Lucas brackets
 
-**Weighted sum of cubes of Lucas brackets.** Let $(s, t)$ be nondegenerate Lucas parameters,
+Let $(s, t)$ be nondegenerate Lucas parameters,
 with Lucas brackets $\{n\}_{s,t}$ and Lucasnomial coefficients $\binom{n}{k}_{s,t}$. For every
 natural number $n$,
 

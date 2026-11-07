@@ -1,6 +1,6 @@
 # Left repair after double-black deletion
 
-**Left repair after double-black deletion.** Write $\mathrm{R}$ and $\mathrm{B}$ for red and
+Write $\mathrm{R}$ and $\mathrm{B}$ for red and
 black, and $N(c, T, y, T')$ for the node of color $c$ with left subtree $T$, key $y$ and right
 subtree $T'$. Given a color $c$, a tree $D$, a key $k$ and a tree $S$, the left repair returns a
 tree whose root may be double black, by the first case that applies. If

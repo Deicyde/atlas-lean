@@ -1,6 +1,6 @@
 # Permutations of prescribed orders with product of prescribed order
 
-**Permutations of prescribed orders with product of prescribed order.** For every natural
+For every natural
 number $n$ and all natural numbers $a, b, c$ with $1 < a \le n - 2$, $1 < b \le n - 2$ and
 $1 < c \le n - 2$, the symmetric group $S_n$ contains permutations $x$ and $y$ of orders $a$ and
 $b$ whose product $xy$ has order $c$.

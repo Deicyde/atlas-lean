@@ -1,6 +1,6 @@
 # Integrality and prime factorization of totienomial coefficients
 
-**Integrality and prime factorization of totienomial coefficients.** For all natural numbers
+For all natural numbers
 $n$ and $m$, the totienomial coefficient $\binom{n+m}{n}_\varphi$ of Euler's totient function
 $\varphi$ is a natural number, namely
 

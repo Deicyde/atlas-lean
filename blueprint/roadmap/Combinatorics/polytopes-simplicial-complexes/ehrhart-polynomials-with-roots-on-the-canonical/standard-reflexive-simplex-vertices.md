@@ -1,6 +1,6 @@
 # Vertices of the standard reflexive simplex
 
-**Vertices of the standard reflexive simplex.** For a natural number $d$, this is the finite
+For a natural number $d$, this is the finite
 set of integer points $\{e_1, \dots, e_d, (-1, \dots, -1)\} \subseteq \mathbb{Z}^d$, where
 $e_1, \dots, e_d$ are the standard basis vectors of $\mathbb{Z}^d$, so that
 $(-1, \dots, -1) = -(e_1 + \dots + e_d)$. These points are the vertices of the standard

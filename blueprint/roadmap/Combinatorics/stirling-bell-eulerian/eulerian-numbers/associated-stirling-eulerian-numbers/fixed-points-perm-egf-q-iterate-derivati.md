@@ -1,6 +1,6 @@
 # Cycle-counting excedance generating function of s-fixed-points permutations
 
-**Cycle-counting excedance generating function of s-fixed-points permutations.** Let $R$ be a
+Let $R$ be a
 commutative $\mathbb{Q}$-algebra, $x, q \in R$ and $s$ a natural number. Call a permutation
 $\sigma$ of $\{0, \dots, n-1\}$ an $s$-fixed-points permutation if every fixed point of $\sigma$
 is less than $s$ and any two points less than $s$ in the same cycle of $\sigma$ are equal. Write

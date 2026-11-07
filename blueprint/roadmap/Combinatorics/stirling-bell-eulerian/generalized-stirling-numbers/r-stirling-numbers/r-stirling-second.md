@@ -1,6 +1,6 @@
 # r-Stirling numbers of the second kind
 
-**r-Stirling numbers of the second kind.** For natural numbers $n$, $m$ and $r$, Broder's
+For natural numbers $n$, $m$ and $r$, Broder's
 r-Stirling number of the second kind ${n \brace m}_r$ is $0$ unless $r \le m$ and $r \le n$, and
 otherwise
 

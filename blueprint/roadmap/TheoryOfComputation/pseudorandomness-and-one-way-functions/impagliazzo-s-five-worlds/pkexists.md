@@ -1,6 +1,6 @@
 # Public-key encryption exists
 
-**Public-key encryption exists.** There are a polynomial $\ell$ with natural-number
+There are a polynomial $\ell$ with natural-number
 coefficients and polynomial-time computable functions $G$ (key generation), $E$ (encryption) and
 $D$ (decryption) on bitstrings with the following two properties. Here tuples are passed to
 these functions and to circuits through their canonical bitstring encodings, and for a bitstring

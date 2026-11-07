@@ -1,6 +1,6 @@
 # Table lookup agrees with the verifier's variable lookup
 
-**Table lookup agrees with the verifier's variable lookup.** Let $n = (n_0, \dots, n_{k-1})$
+Let $n = (n_0, \dots, n_{k-1})$
 be a list of natural numbers, $w$ a list of booleans and $x$ a natural number. Write $[m]$ for
 the binary name of a natural number $m$: its canonical binary representation, least significant
 bit first, empty for $m = 0$. Form the table whose $i$-th entry, for $i < k$, pairs $[n_i]$

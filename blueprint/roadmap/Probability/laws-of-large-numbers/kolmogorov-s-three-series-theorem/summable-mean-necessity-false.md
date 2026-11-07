@@ -1,6 +1,6 @@
 # The `Summable`-means necessity claim in v1 is false
 
-**The `Summable`-means necessity claim in v1 is false.** The
+The
 deterministic sequence `X k ω = (-1)^k / (k + 1)` on the one-point
 probability space `(Unit, dirac ())` has converging partial sums, is
 constant (hence measurable and independent), agrees with its truncations

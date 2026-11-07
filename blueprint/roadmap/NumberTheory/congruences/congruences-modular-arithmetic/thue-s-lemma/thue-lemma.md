@@ -1,6 +1,6 @@
 # Thue's lemma
 
-**Thue's lemma.** Let $a$ and $n$ be integers with $a > 1$, $n > 1$ and $\gcd(a, n) = 1$. Then
+Let $a$ and $n$ be integers with $a > 1$, $n > 1$ and $\gcd(a, n) = 1$. Then
 there exist nonzero integers $x$ and $y$ with $|x| < \sqrt{n}$, $|y| < \sqrt{n}$ and
 $x \equiv a y \pmod{n}$.
 

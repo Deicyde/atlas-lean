@@ -1,6 +1,6 @@
 # Comparison of iterated factorials
 
-**Comparison of iterated factorials.** For natural numbers $j$ and $m$ let $F_j(m)$ be the
+For natural numbers $j$ and $m$ let $F_j(m)$ be the
 $j$-fold iterated factorial $m!\cdots!$ (with $j$ factorials). Let $n, n' \ge 3$ and $k > k'$ be
 natural numbers. If $n' < F_{k-k'}(n)$, then $F_{k'}(n') < F_k(n)$.
 

@@ -1,6 +1,6 @@
 # Cube lower bound for the supremal isotropic constant
 
-**Cube lower bound for the supremal isotropic constant.** The supremum, over all positive
+The supremum, over all positive
 integers $n$ and all full-dimensional convex bodies $K \subseteq \mathbb{R}^n$, of the isotropic
 constant $L_K = \left(\det \mathrm{Cov}(K) / \mathrm{Vol}(K)^2\right)^{1/(2n)}$, where
 $\mathrm{Cov}(K)$ is the covariance matrix of the uniform distribution on $K$, is at least

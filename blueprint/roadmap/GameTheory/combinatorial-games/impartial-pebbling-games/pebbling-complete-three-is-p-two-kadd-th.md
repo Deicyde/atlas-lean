@@ -1,6 +1,6 @@
 # Pebbling on the triangle: a single pile of 2k+3 pebbles is a P-position
 
-**Pebbling on the triangle: a single pile of 2k+3 pebbles is a P-position.** Let $k$ be a
+Let $k$ be a
 positive integer and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a
 move removes $k+1$ pebbles from one vertex and adds $k$ pebbles to another. Every position with
 $2k + 3$ pebbles on one vertex and none on the other two is a P-position.

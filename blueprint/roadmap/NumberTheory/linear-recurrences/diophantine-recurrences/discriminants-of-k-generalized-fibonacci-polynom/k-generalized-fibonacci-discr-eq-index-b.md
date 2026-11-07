@@ -1,6 +1,6 @@
 # Bounds on the index in Luca's discriminant equation
 
-**Bounds on the index in Luca's discriminant equation.** Let $k > 100$ be a natural number
+Let $k > 100$ be a natural number
 and let $F : \mathbb{Z} \to \mathbb{Z}$ satisfy $F(n) = 0$ for every integer $n$ with
 $2 - k \le n \le 0$, $F(1) = 1$, and $F(n) = F(n-1) + F(n-2) + \cdots + F(n-k)$ for every
 integer $n \ge 2$ (the $k$-generalized Fibonacci sequence). Write

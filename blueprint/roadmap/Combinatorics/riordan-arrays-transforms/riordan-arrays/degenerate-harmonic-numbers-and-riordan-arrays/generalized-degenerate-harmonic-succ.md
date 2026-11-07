@@ -1,6 +1,6 @@
 # Recurrence for generalized degenerate harmonic numbers
 
-**Recurrence for generalized degenerate harmonic numbers.** For all real numbers $\lambda$ and
+For all real numbers $\lambda$ and
 $\alpha$ and every natural number $n$, the generalized degenerate harmonic numbers satisfy
 
 $$

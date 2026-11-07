@@ -1,6 +1,6 @@
 # Mallows representations without the letter $L$
 
-**Mallows representations without the letter $L$.** Let $\alpha \in (0, 1)$ be irrational,
+Let $\alpha \in (0, 1)$ be irrational,
 with continued fraction expansion $\alpha = [0; a_1, a_2, \ldots]$. The letter $L$ does not occur
 in the Mallows representation $M(\alpha)$ if and only if $a_1 = 1$, $a_2$ is odd, and the
 sequence $a_3, a_4, \ldots$ is a concatenation of blocks, each of the form $(2, b)$ or

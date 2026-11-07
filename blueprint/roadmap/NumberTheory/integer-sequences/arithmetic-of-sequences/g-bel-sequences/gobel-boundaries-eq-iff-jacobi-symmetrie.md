@@ -1,6 +1,6 @@
 # Equality of the left and right boundaries via Legendre symbols
 
-**Equality of the left and right boundaries via Legendre symbols.** Let $p$ be a prime with
+Let $p$ be a prime with
 $p \equiv 1 \pmod 4$ and, for each $l$, let $\tilde g_l$ be the residue walk of $l$ for $p$.
 Suppose that $l_0$ is the largest even $l < p$ with $\tilde g_l(p) = 0$, put $l_L = l_0 + 2$, and
 suppose that $l_R$ is the smallest even $l < p$ with $\tilde g_l(p) = p$. Then $l_L = l_R$ if and

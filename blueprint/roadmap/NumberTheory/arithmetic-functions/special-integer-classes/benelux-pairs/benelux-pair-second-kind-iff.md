@@ -1,6 +1,6 @@
 # Benelux pairs of the second kind below $1.4 \cdot 10^{12}$
 
-**Benelux pairs of the second kind below $1.4 \cdot 10^{12}$.** Let $m < n$ be
+Let $m < n$ be
 non-negative integers with $n < 1.4 \cdot 10^{12}$. Then $m$ and $n + 1$ have the same prime
 factors and $m + 1$ and $n$ have the same prime factors (that is, $(m, n)$ is a Benelux pair
 of the second kind) if and only if $(m, n) = (35, 4374)$ or

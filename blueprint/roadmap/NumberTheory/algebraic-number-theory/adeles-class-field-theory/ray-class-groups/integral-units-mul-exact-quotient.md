@@ -1,6 +1,6 @@
 # Exactness of the ray sequence at the integral units
 
-**Exactness of the ray sequence at the integral units.** Let $K$ be a number field with ring
+Let $K$ be a number field with ring
 of integers $\mathcal{O}_K$ and let $\mathfrak{m}$ be a modulus of $K$. Write $K_{\mathfrak{m}}$
 for the group of ray elements for $\mathfrak{m}$, $K_{\mathfrak{m},1}$ for its ray-one subgroup,
 and $U_{\mathfrak{m},1} \subseteq \mathcal{O}_K^\times$ for the subgroup of ray-one integral units.

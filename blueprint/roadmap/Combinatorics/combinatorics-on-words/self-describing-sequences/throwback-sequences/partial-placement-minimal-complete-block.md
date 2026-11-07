@@ -1,6 +1,6 @@
 # Minimal complete blocks of partial placements match configurations
 
-**Minimal complete blocks of partial placements match configurations.** Let
+Let
 $X = (x_0, x_1, \dots)$ be a strictly increasing sequence of positive integers, let $\tau$ be
 the throwback, let $n \ge 0$, and write $P_n(X)_z$ for the entry, possibly empty, of the
 partial placement sequence $P_n(X)$ at position $z \in \mathbb{Z}$. The minimal complete block

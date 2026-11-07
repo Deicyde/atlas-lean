@@ -1,6 +1,6 @@
 # SLOW-APSP computes shortest-path weights
 
-**SLOW-APSP computes shortest-path weights.** Let $W$ and $L^{(0)}$ be $n \times n$ matrices
+Let $W$ and $L^{(0)}$ be $n \times n$ matrices
 over the min-plus semiring on $\mathbb{Z} \cup \{\infty\}$, and let $w_{xy}$ be the underlying value
 in $\mathbb{Z} \cup \{\infty\}$ of $W_{xy}$. Suppose that $w_{ii} = 0$ for every $i$, that the
 underlying value of $L^{(0)}_{ij}$ is $0$ if $i = j$ and $\infty$ otherwise, and that $w$ has no

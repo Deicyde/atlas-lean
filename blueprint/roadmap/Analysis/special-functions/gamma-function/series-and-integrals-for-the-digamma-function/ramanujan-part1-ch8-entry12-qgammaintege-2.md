@@ -1,6 +1,6 @@
 # Ramanujan's integral for $\varphi(x) - 1$ (Chapter 8, Entry 12)
 
-**Ramanujan's integral for $\varphi(x) - 1$ (Chapter 8, Entry 12).** Let $x$ be a complex
+Let $x$ be a complex
 number with $\operatorname{Re} x > 1$. For real $u$ and complex $s$ put $P_s(u) = 0$ if $u = 0$
 and $P_s(u) = e^{s \log |u|}$ otherwise, and define $K_x(0) = 0$, $K_x(1) = 0$ and
 $K_x(u) = \frac{P_{x-2}(u)\,(1 - u)^2}{1 - P_x(u)}$ for every other real $u$, the quotient being

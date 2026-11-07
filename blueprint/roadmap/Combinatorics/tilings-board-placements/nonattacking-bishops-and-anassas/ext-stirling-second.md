@@ -1,6 +1,6 @@
 # Extended Stirling numbers of the second kind
 
-**Extended Stirling numbers of the second kind.** Knuth's extended Stirling number of the
+Knuth's extended Stirling number of the
 second kind at integers $n$ and $k$ is the natural number equal to the Stirling number of the
 second kind $S(n, k)$ if $n \ge 0$ and $k \ge 0$, equal to the unsigned Stirling number of the
 first kind $c(-k, -n)$ if $n < 0$ and $k < 0$, and equal to $0$ otherwise. Here $c(j, i)$ is the

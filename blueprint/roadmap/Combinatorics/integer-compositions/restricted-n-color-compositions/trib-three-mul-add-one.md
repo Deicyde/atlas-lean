@@ -1,6 +1,6 @@
 # Tribonacci partial-sum identity for $t(3k+1)$
 
-**Tribonacci partial-sum identity for $t(3k+1)$.** Let $t$ be the tribonacci numbers with
+Let $t$ be the tribonacci numbers with
 $t(0) = 1$, $t(1) = 0$, $t(2) = 1$ and $t(n) = t(n-1) + t(n-2) + t(n-3)$ for $n \ge 3$,
 extended by $t(n) = 0$ for $n < 0$. For every natural number $k$,
 

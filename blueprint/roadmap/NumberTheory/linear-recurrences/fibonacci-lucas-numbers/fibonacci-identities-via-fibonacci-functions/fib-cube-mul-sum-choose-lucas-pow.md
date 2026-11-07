@@ -1,6 +1,6 @@
 # Binomial sum with even powers of a Lucas number
 
-**Binomial sum with even powers of a Lucas number.** Let $F_m$ and $L_m$ denote the Fibonacci
+Let $F_m$ and $L_m$ denote the Fibonacci
 and Lucas numbers. For all natural numbers $k$ and $n$,
 
 $$

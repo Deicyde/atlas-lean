@@ -1,6 +1,6 @@
 # Shortest interval containing a $B_h$-set of given size
 
-**Shortest interval containing a $B_h$-set of given size.** For natural numbers $h$ and $k$,
+For natural numbers $h$ and $k$,
 $R_h^{-1}(k)$ is the smallest natural number $n$ such that some $B_h$-set of natural numbers with
 exactly $k$ elements is contained in $\{1, \dots, n\}$; it is $0$ when no such $n$ exists, for
 example when $k = 0$, since a $B_h$-set is nonempty.

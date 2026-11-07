@@ -1,6 +1,6 @@
 # Every odd composite is a strong pseudoprime to base 1
 
-**Every odd composite is a strong pseudoprime to base 1.** Every odd composite number $n$
+Every odd composite number $n$
 is a strong pseudoprime to the base $1$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # AM is contained in $\Pi_2^p$ (Babai)
 
-**AM is contained in $\Pi_2^p$ (Babai).** Every decision problem in the Arthur–Merlin class
+Every decision problem in the Arthur–Merlin class
 $\mathsf{AM}$ lies in $\Pi_2^p$, the second universal level of the polynomial hierarchy.
 
 ## Sources

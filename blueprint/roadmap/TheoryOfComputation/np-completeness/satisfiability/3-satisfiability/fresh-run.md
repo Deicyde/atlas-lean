@@ -1,6 +1,6 @@
 # Fresh-literal subroutine of the 3SAT emitter
 
-**Fresh-literal subroutine of the 3SAT emitter.** For all booleans $s$ and $x$, every token
+For all booleans $s$ and $x$, every token
 list $t$, output bit list $o$, natural numbers $z$ and $c$, and flag $v$, there is a flag $v'$
 such that the 3SAT emitter machine, started at the fresh-literal label for $(s, x)$ with flag
 $v$, token stack $t$, output stack $o$, fresh counter $z$, clause count $c$ and empty scratch

@@ -1,6 +1,6 @@
 # Gradient shrinking Ricci soliton
 
-**Gradient shrinking Ricci soliton.** On a Riemannian manifold $(M, g)$, a function
+On a Riemannian manifold $(M, g)$, a function
 $f : M \to \mathbb{R}$ and a constant $c \in \mathbb{R}$ form a gradient shrinking Ricci soliton
 if they form a gradient Ricci soliton and $c > 0$.
 

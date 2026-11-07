@@ -1,6 +1,6 @@
 # Fitting a symbol at a position
 
-**Fitting a symbol at a position.** Write $\langle s, t \rangle$ for the pairing bijection
+Write $\langle s, t \rangle$ for the pairing bijection
 $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ given by $\langle s, t \rangle = t^2 + s$ if $s < t$
 and $\langle s, t \rangle = s^2 + s + t$ otherwise. Given a word $w$, a list $R$ of items, a
 list $S$ of positions and an encoded symbol $X$, the test at a position $i$ succeeds when either

@@ -1,6 +1,6 @@
 # Zahorski's negative answer to Ulam's perfect set problem
 
-**Zahorski's negative answer to Ulam's perfect set problem.** Problem 17.1 is false: the answer is negative. Source: S. Ulam, Problem 17.1
+Problem 17.1 is false: the answer is negative. Source: S. Ulam, Problem 17.1
 of the Scottish Book; Z. Zahorski gave a negative answer by constructing a
 `C ^ ∞` function that agrees with every real-analytic function on at most
 finitely many points, so no nonempty perfect set `C` can work for it: Z.

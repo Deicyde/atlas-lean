@@ -1,6 +1,6 @@
 # Products of abelian and locally quaternion groups are soluble
 
-**Products of abelian and locally quaternion groups are soluble.** Let $G$ be a group with
+Let $G$ be a group with
 subgroups $A$ and $B$ such that $A$ is abelian, $B$ is locally quaternion, and $G = AB$, that is,
 every element of $G$ is a product $ab$ with $a \in A$ and $b \in B$. Then $G$ is soluble.
 

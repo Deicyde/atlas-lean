@@ -1,6 +1,6 @@
 # 495 is fixed by the three-digit Kaprekar map
 
-**495 is fixed by the three-digit Kaprekar map.** The Kaprekar map with $n = 3$ sends $495$ to
+The Kaprekar map with $n = 3$ sends $495$ to
 itself: $954 - 459 = 495$.
 
 ## Sources

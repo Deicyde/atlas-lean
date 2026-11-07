@@ -1,6 +1,6 @@
 # Ramanujan's asymptotic expansion of power sums
 
-**Ramanujan's asymptotic expansion of power sums.** Let $r \in \mathbb{C}$ with $r \ne -1$,
+Let $r \in \mathbb{C}$ with $r \ne -1$,
 and let $N$ be a positive integer with $\mathrm{Re}\, r < 2N$. For natural $n$ put
 $A_N(n) = \zeta(-r) + \frac{n^{r+1}}{r+1} + \frac{n^r}{2} + \sum_{k=1}^{N} T_k(n)$, where
 $T_k(n) = \frac{B_{2k}}{(2k)!}\, r(r-1)\cdots(r-2k+2)\, n^{r-2k+1}$ (a product of $2k - 1$

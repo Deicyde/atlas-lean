@@ -1,6 +1,6 @@
 # The upper Wythoff numbers below 30
 
-**The upper Wythoff numbers below 30.** The positive integers $p < 30$ such that the letter at
+The positive integers $p < 30$ such that the letter at
 index $p - 1$ (indices start at $0$) of the infinite Fibonacci word is $1$, that is, the upper
 Wythoff numbers below $30$, are exactly $2, 5, 7, 10, 13, 15, 18, 20, 23, 26, 28$.
 

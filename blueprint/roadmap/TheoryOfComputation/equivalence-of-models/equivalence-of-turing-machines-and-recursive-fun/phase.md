@@ -1,6 +1,6 @@
 # Adapter labels
 
-**Adapter labels.** The type with exactly the five elements pre0, pre1, pre2, post1 and post2,
+The type with exactly the five elements pre0, pre1, pre2, post1 and post2,
 with decidable equality.
 
 They label the wrapped machine's pre-phase, which copies the input bits onto the main stack of

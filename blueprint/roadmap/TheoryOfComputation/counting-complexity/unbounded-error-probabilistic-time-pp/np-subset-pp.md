@@ -1,6 +1,6 @@
 # NP is contained in PP
 
-**NP is contained in PP.** Every decision problem in NP also belongs to PP, the class of
+Every decision problem in NP also belongs to PP, the class of
 decision problems decided in probabilistic polynomial time with unbounded error.
 
 ## Sources

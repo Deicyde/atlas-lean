@@ -1,6 +1,6 @@
 # Egorov's theorem on the real line under integrable domination
 
-**Egorov's theorem on the real line under integrable domination.** Let
+Let
 $f : \mathbb{R} \to \mathbb{R}$ be any function and let $f_n : \mathbb{R} \to \mathbb{R}$,
 $n \in \mathbb{N}$, be Borel measurable functions with $f_n(x) \to f(x)$ for almost every
 $x \in \mathbb{R}$. Let $g : \mathbb{R} \to \mathbb{R}$ be Lebesgue integrable with

@@ -1,6 +1,6 @@
 # The 4-dissection of the generating function of $PD_2$
 
-**The 4-dissection of the generating function of $PD_2$.** Let
+Let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ in the ring of integer power series in $q$, and let $PD_2(n)$
 be the number of partitions of $n$ with designated summands in which every part is odd. Then
 $f_1^8 f_3^4 f_4^4 f_6^4 f_{12}^4 \sum_{n \ge 0} PD_2(4n) q^n =

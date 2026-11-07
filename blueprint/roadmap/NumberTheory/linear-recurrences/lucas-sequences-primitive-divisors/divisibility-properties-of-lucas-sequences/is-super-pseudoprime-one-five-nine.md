@@ -1,6 +1,6 @@
 # $9$ is a super Lucas pseudoprime for $(P, Q) = (1, 5)$
 
-**$9$ is a super Lucas pseudoprime for $(P, Q) = (1, 5)$.** The number $9$ is a super Lucas
+The number $9$ is a super Lucas
 pseudoprime with parameters $P = 1$, $Q = 5$: its divisors greater than $1$ are $3$, a prime, and
 $9$, a Lucas pseudoprime with these parameters.
 

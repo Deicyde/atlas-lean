@@ -1,6 +1,6 @@
 # Convergence of the pseudo-greedy expansion
 
-**Convergence of the pseudo-greedy expansion.** For every real number $r > 0$, the
+For every real number $r > 0$, the
 pseudo-greedy expansion $(a_n)_{n \ge 0}$ of $r$ satisfies $\sum_n 1 / a_n = r$.
 
 ## Sources

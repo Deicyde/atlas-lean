@@ -1,6 +1,6 @@
 # Square-integrable martingale convergence
 
-**Square-integrable martingale convergence.** Let $(X_n)_{n \in \mathbb{N}}$ be a
+Let $(X_n)_{n \in \mathbb{N}}$ be a
 real-valued martingale with respect to a filtration $(\mathcal{F}_n)$ on a probability space,
 with $E[X_n^2] < \infty$ for every $n$, and let $(A_n)$ be its predictable quadratic variation.
 Then for almost every $\omega$: if $A_n(\omega)$ converges to a real limit as $n \to \infty$,

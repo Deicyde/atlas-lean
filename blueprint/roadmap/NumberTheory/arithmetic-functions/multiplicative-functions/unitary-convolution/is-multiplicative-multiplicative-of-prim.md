@@ -1,6 +1,6 @@
 # Multiplicativity of the function with prescribed prime-power values
 
-**Multiplicativity of the function with prescribed prime-power values.** Let $R$ be a
+Let $R$ be a
 commutative monoid with zero and $g : \mathbb{N} \to R$. The arithmetic function
 $n \mapsto \prod_{q \mid n} g(v_q(n))$ for $n \ge 1$, where $q$ runs over the primes dividing $n$
 and $v_q(n)$ is the exponent of $q$ in $n$, is multiplicative.

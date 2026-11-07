@@ -1,6 +1,6 @@
 # Small values of the fixed-perimeter partition counts
 
-**Small values of the fixed-perimeter partition counts.** Take $d = a = 1$. Among the
+Take $d = a = 1$. Among the
 partitions with perimeter $3$, exactly two have $1$-distinct parts that are all at least $1$,
 exactly two have all parts congruent to $1$ modulo $2$, and exactly two have all parts congruent
 to $1$ or $-1$ modulo $4$. Moreover, exactly one partition with largest part $2$ and $2$ parts has

@@ -1,6 +1,6 @@
 # Odd s-Zumkeller numbers divisible by $3$ have at least eight prime factors
 
-**Odd s-Zumkeller numbers divisible by $3$ have at least eight prime factors.** Every odd
+Every odd
 s-Zumkeller number divisible by $3$ has at least $8$ distinct prime factors.
 
 ## Sources

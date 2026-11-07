@@ -1,6 +1,6 @@
 # Sellers' domino tiling theorem, recursive Pell form
 
-**Sellers' domino tiling theorem, recursive Pell form.** Let $W_4$ be the complete graph
+Let $W_4$ be the complete graph
 $K_4$ with one edge removed and $P_{n-1}$ the path graph on $n - 1$ vertices. For every natural
 number $n \ge 2$, the number of perfect matchings (domino tilings) of the Cartesian product
 $W_4 \square P_{n-1}$ equals $f_n p_n$, where $f_n$ is the $n$-th Fibonacci number

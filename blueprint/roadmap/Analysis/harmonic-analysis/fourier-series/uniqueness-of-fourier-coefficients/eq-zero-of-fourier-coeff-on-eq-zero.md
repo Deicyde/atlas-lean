@@ -1,6 +1,6 @@
 # Uniqueness of Fourier coefficients on an interval
 
-**Uniqueness of Fourier coefficients on an interval.** Let $a, T \in \mathbb{R}$ with
+Let $a, T \in \mathbb{R}$ with
 $T > 0$, and let $f : \mathbb{R} \to \mathbb{C}$ be continuous with $f(a) = f(a + T)$. If the
 Fourier coefficients of $f$ on $[a, a + T]$,
 

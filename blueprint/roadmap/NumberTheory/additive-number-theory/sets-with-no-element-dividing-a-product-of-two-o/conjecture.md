@@ -1,6 +1,6 @@
 # Statement of Erdős Problem 793
 
-**Statement of Erdős Problem 793.** For a natural number $n$, let $F(n)$ be the largest size
+For a natural number $n$, let $F(n)$ be the largest size
 of a set $A \subseteq \{1, \dots, n\}$ with $a \nmid bc$ for all $a, b, c \in A$ such that
 $a \ne b$ and $a \ne c$, and let $\pi(n)$ be the number of primes at most $n$. This is the
 proposition that there is a real constant $C > 0$ such that

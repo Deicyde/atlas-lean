@@ -1,6 +1,6 @@
 # Multiplicative functions additive on pairs of squares
 
-**Multiplicative functions additive on pairs of squares.** Let $f$ be a complex-valued
+Let $f$ be a complex-valued
 multiplicative arithmetic function (so $f(1) = 1$ and $f(ab) = f(a) f(b)$ for coprime $a$ and
 $b$) such that $f(m^2 + n^2) = f(m^2) + f(n^2)$ for all positive integers $m$ and $n$. Then
 $f(4)$ is $0$ or $4$; $f(q^{2k}) = f(q^2)^k$ for all positive integers $q$ and $k$; and if

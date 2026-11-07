@@ -1,3 +1,3 @@
 # Symmetry of the Robinson–Foulds distance
 
-**Symmetry of the Robinson–Foulds distance.** The Robinson–Foulds distance is symmetric.
+The Robinson–Foulds distance is symmetric.

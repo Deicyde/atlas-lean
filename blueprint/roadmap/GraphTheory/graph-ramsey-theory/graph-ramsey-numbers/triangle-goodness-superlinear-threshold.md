@@ -1,6 +1,6 @@
 # Superlinear threshold for triangle-good graphs (Erdős Problem 1182)
 
-**Superlinear threshold for triangle-good graphs (Erdős Problem 1182).** The statement that for
+The statement that for
 every real number $C$, for all sufficiently large natural numbers $n$, every connected graph $G$ on
 the vertex set $\{0, \dots, n - 1\}$ with at most $Cn$ edges has $R(K_3, G) = 2n - 1$. Here
 $R(K_3, G)$ is the Ramsey number of the pair: the least $N$ such that every graph on $N$ vertices

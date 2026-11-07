@@ -1,6 +1,6 @@
 # Bounds for $\sigma(n)/n$ over primes avoiding $p_j$
 
-**Bounds for $\sigma(n)/n$ over primes avoiding $p_j$.** For $\ell \ge 1$ let $p_\ell$ be the
+For $\ell \ge 1$ let $p_\ell$ be the
 $\ell$-th prime, so that $p_1 = 2$. Let $1 \le j \le k$, let $q_1 < \cdots < q_k$ be primes
 different from $p_j$, let $\alpha_1, \dots, \alpha_k \ge 1$, and put
 $n = \prod_{i=1}^k q_i^{\alpha_i}$. Let $\sigma(n)$ be the sum of the divisors of $n$ and let

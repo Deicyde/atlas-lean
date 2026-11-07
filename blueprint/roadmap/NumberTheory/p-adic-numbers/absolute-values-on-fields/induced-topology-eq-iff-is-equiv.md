@@ -1,6 +1,6 @@
 # Absolute values inducing the same topology are equivalent
 
-**Absolute values inducing the same topology are equivalent.** Let $K$ be a field and
+Let $K$ be a field and
 $v$, $w$ real-valued absolute values on $K$. The topologies induced on $K$ by $v$ and by $w$
 are equal if and only if $v$ and $w$ are equivalent.
 

@@ -1,6 +1,6 @@
 # Draining a counter while prepending a block
 
-**Draining a counter while prepending a block.** Let $k$ and $o$ be stack indices, $ys$ a list
+Let $k$ and $o$ be stack indices, $ys$ a list
 of symbols of the alphabet of stack $o$, and $\ell$ and $\ell'$ labels. This is the TM2 statement
 that pops stack $k$ and sets the internal state to the flag bit recording whether a symbol was
 popped. If one was, it prepends $ys$ to stack $o$ (so that $ys$ reads from the top down) and goes

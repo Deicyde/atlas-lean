@@ -1,3 +1,3 @@
 # Derivative of the configuration weight
 
-**Derivative of the configuration weight.** The derivative in `p` of the product weight (product rule).
+The derivative in `p` of the product weight (product rule).

@@ -1,6 +1,6 @@
 # Comparison map for the derived inclusion
 
-**Comparison map for the derived inclusion.** Let $\iota$ be the inclusion of light solid
+Let $\iota$ be the inclusion of light solid
 abelian groups into light condensed abelian groups, $D(\iota)$ the induced derived inclusion, and
 $Q$ the localization functors from cochain complexes to derived categories. The comparison map is
 the natural transformation from $K \mapsto Q(\iota K)$ to $K \mapsto D(\iota)(Q K)$, for cochain

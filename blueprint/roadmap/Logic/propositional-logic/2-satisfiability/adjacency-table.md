@@ -1,6 +1,6 @@
 # Adjacency table of the implication graph
 
-**Adjacency table of the implication graph.** For a CNF formula $\varphi$, the hash map that
+For a CNF formula $\varphi$, the hash map that
 sends each literal over the variables of $\varphi$ to the list of its implication-graph
 successors, that is, of the literals $m$ over the variables of $\varphi$ with an implication edge
 from it to $m$.

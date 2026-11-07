@@ -1,6 +1,6 @@
 # SUBSET-SUM is NP-hard
 
-**SUBSET-SUM is NP-hard.** Let SUBSET-SUM be the decision problem on bit strings that
+Let SUBSET-SUM be the decision problem on bit strings that
 accepts exactly the strings encoding a target $t$ followed by natural numbers $a_1, \dots, a_n$
 (each written in binary and delimited) such that some, possibly empty, sublist of
 $a_1, \dots, a_n$ sums to $t$. Every decision problem $L$ in NP reduces to SUBSET-SUM by a

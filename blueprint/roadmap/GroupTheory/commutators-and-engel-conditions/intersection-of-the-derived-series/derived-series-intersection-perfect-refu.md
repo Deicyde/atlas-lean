@@ -1,6 +1,6 @@
 # The intersection of the derived series need not be perfect
 
-**The intersection of the derived series need not be perfect.** There exists a finitely presented
+There exists a finitely presented
 group $G$ such that the intersection $D = \bigcap_{n} G^{(n)}$ of the terms $G^{(n)}$ of the
 derived series of $G$ satisfies $[D, D] \ne D$. That is, the conjecture of Kourovka Problem 17.82
 is false; the Kourovka Archive credits this answer to V. A. Roman'kov (2011).

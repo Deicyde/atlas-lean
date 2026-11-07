@@ -1,6 +1,6 @@
 # Bounded optional stopping, conditional form, supermartingale dual
 
-**Bounded optional stopping, conditional form, supermartingale dual.** Let $\mu$ be a
+Let $\mu$ be a
 measure on a measurable space $\Omega$, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration
 such that $\mu$ is σ-finite on every $\mathcal{F}_n$, and let $(f_n)_{n \in \mathbb{N}}$ be a
 real-valued supermartingale with respect to $(\mathcal{F}_n)$ and $\mu$. Let $L$ and $M$ be

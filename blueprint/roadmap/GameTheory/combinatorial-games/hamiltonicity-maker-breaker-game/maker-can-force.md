@@ -1,6 +1,6 @@
 # Maker can force a win in the biased Maker-Breaker game
 
-**Maker can force a win in the biased Maker-Breaker game.** Fix a finite board $X$, a bias
+Fix a finite board $X$, a bias
 $b \in \mathbb{N}$ and a property of finite sets, Maker's target. At a position $(M, R)$, where
 $M$ and $R$ are the sets claimed so far by Maker and by Breaker, an element of $X$ is free if it
 lies in neither $M$ nor $R$. The relation "Maker, to move at $(M, R)$, can force a win" is the

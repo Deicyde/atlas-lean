@@ -1,6 +1,6 @@
 # Avoiding color 2 counts even colored compositions
 
-**Avoiding color 2 counts even colored compositions.** For every $k \ge 0$, the number of
+For every $k \ge 0$, the number of
 $n$-color compositions of $k$ that do not use the color $2$ equals the number
 $e(k) = c_{2,0}(k)$ of even colored compositions of $k$, in which only the parts at even
 positions are colored. In such an $n$-color composition a part $p \ge 2$ has the $p - 1$ colors

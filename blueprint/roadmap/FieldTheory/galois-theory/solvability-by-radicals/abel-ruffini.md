@@ -1,6 +1,6 @@
 # Abel–Ruffini theorem
 
-**Abel–Ruffini theorem.** Let $n \ge 1$ be a natural number. Every complex root of every
+Let $n \ge 1$ be a natural number. Every complex root of every
 polynomial with rational coefficients of degree exactly $n$ is expressible by radicals over
 $\mathbb{Q}$ if and only if $n \le 4$. Here a complex number is expressible by radicals over
 $\mathbb{Q}$ when it lies in the smallest subfield $S$ of $\mathbb{C}$ such that $z \in S$

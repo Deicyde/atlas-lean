@@ -1,6 +1,6 @@
 # Sums with at least $r$ distinct terms
 
-**Sums with at least $r$ distinct terms.** Let $G$ be an additive commutative monoid, $A$ a
+Let $G$ be an additive commutative monoid, $A$ a
 finite subset of $G$ and $h, r$ natural numbers. The sumset $h^{(\ge r)}A$ is the set of all sums
 of $h$ elements of $A$, repetitions allowed, in which at least $r$ distinct elements occur, that
 is, the elements $\sum_{a \in B} x_a a$ with $B \subseteq A$, $|B| \ge r$, positive integers

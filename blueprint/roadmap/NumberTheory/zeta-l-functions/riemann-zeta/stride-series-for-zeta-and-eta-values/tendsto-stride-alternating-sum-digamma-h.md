@@ -1,6 +1,6 @@
 # Digamma series for the alternating stride sum
 
-**Digamma series for the alternating stride sum.** Let $q \ge 1$ and $t \ge 1$ be integers,
+Let $q \ge 1$ and $t \ge 1$ be integers,
 let $S_{q,t}$ denote the alternating stride sum and $\psi$ the digamma function. As
 $N \to \infty$, the partial sums
 

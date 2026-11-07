@@ -1,6 +1,6 @@
 # The cell-shift tables of a machine are well formed
 
-**The cell-shift tables of a machine are well formed.** Let $M$ be a finite multi-stack Turing
+Let $M$ be a finite multi-stack Turing
 machine with window depth $d$, let $E$ be an encoding of $M$ with $A_0$ label/state codes, $K$
 stacks, $g$ symbol codes and $N$ situations, and let $H \ge d$. Then the table
 $\mathrm{sa}(i) = A_0 + i$, the push counts $\mathrm{pl}$, the consumption counts $\mathrm{cn}$

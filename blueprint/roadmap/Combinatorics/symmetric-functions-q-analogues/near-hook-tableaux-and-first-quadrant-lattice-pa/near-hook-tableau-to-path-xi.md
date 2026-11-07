@@ -1,6 +1,6 @@
 # The map $\xi$ from near-hook tableaux to lattice paths
 
-**The map $\xi$ from near-hook tableaux to lattice paths.** Let $n \in \mathbb{N}$ and let
+Let $n \in \mathbb{N}$ and let
 $T$ be a semistandard Young tableau of shape $\theta^{(n)}$, with rows and columns numbered from
 $0$; call row $0$ of $\theta^{(n)}$ the arm and the cell in row $1$ and column $1$ the heart, and
 let $H$ be the entry of $T$ in the heart. Then $\xi(T)$ is the word $(s_1, \dots, s_{2n+2})$ of

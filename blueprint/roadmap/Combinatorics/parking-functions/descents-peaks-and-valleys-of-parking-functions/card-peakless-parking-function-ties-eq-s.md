@@ -1,6 +1,6 @@
 # Peakless parking functions with $n - 2$ ties
 
-**Peakless parking functions with $n - 2$ ties.** For every $n \ge 2$, the number of parking
+For every $n \ge 2$, the number of parking
 functions $(a_1, \dots, a_n)$ of length $n$ that have no peaks (no $i$ with $a_{i-1} < a_i$ and
 $a_i > a_{i+1}$) and exactly $n - 2$ ties (indices $i \in \{1, \dots, n - 1\}$ with
 $a_i = a_{i+1}$) is $(n - 1)n$.

@@ -1,6 +1,5 @@
 # Parallelogram induction: primes congruent to 3 mod 4 from 19 on
 
-**Parallelogram induction: primes congruent to 3 mod 4 from 19 on.**
 Let $f$ be a complex-valued multiplicative arithmetic function
 (so $f(0) = 0$) such that $f(m^2 + n^2) + f(m^2 - n^2) = 2f(m^2) + 2f(n^2)$ for all integers
 $m > n \ge 1$.

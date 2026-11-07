@@ -1,6 +1,6 @@
 # Recurrence for raising the last entry
 
-**Recurrence for raising the last entry.** Let $g = (g_0, g_1, \dots, g_s)$ be Landen data and
+Let $g = (g_0, g_1, \dots, g_s)$ be Landen data and
 let $\beta, \gamma \in \mathbb{R}^s$. For every list $(k_1, \dots, k_{r-1})$ of natural numbers
 (possibly empty) and every natural number $m$, writing $\mathbf{k} = (k_1, \dots, k_{r-1}, m + 1)$,
 $\mathrm{Li}_{(k_1, \dots, k_{r-1}, m + 2)}(g; (\beta, \gamma); z) =

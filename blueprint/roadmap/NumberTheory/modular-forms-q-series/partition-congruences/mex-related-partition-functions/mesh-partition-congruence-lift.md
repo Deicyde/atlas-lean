@@ -1,6 +1,6 @@
 # Lifting partition congruences to mex partition functions
 
-**Lifting partition congruences to mex partition functions.** For a partition $\lambda$, a
+For a partition $\lambda$, a
 positive integer $A$ and a natural number $c$, let $\operatorname{mex}_{A,c}(\lambda)$ be the
 smallest positive integer congruent to $c$ modulo $A$ that is not a part of $\lambda$, and let
 $p_{A,c}(N)$ be the number of partitions $\lambda$ of $N$ with

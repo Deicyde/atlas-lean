@@ -1,6 +1,6 @@
 # Asymptotics of the self-convolution of $e^{-\sqrt{\|x\|}}$
 
-**Asymptotics of the self-convolution of $e^{-\sqrt{\|x\|}}$.** Let $f : \mathbb{R}^2 \to
+Let $f : \mathbb{R}^2 \to
 \mathbb{R}$ be $f(x) = e^{-\sqrt{\|x\|}}$, where $\|x\|$ is the Euclidean norm, and let $f * f$ be
 the convolution of $f$ with itself with respect to Lebesgue measure. Then
 

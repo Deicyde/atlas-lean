@@ -1,6 +1,6 @@
 # Halving consecutive unit-weighted zero-sum free sequences modulo a power of two
 
-**Halving consecutive unit-weighted zero-sum free sequences modulo a power of two.** Let
+Let
 $s \ge 0$, $n = 2^{s+1}$ and $n' = 2^s$. Say that a sequence $y_1, \dots, y_L$ in $\mathbb{Z}_m$ has
 no consecutive unit-weighted zero-sum if there are no indices $1 \le i \le j \le L$ and units
 $a_i, \dots, a_j$ of $\mathbb{Z}_m$ with $a_i y_i + \dots + a_j y_j = 0$. For a sequence

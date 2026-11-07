@@ -1,6 +1,6 @@
 # Golden-ratio formula for Wythoff's game with terminal positions up to total 3
 
-**Golden-ratio formula for Wythoff's game with terminal positions up to total 3.** Let
+Let
 $\varphi$ be the golden ratio. Let $a_n$ be the least integer greater than $3$ that differs from
 $a_i$ and $b_i$ for all $i < n$, and let $b_n = a_n + n + 4$. Then there is a Fibonacci-automatic
 sequence $g_3 : \mathbb{N} \to \mathbb{N}$ with $g_3(n) \le 2$ for all $n$ such that, for every

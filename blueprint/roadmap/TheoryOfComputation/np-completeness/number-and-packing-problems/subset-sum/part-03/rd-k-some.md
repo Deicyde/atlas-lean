@@ -1,6 +1,6 @@
 # Subset-sum emitter: reading the unary k
 
-**Subset-sum emitter: reading the unary k.** Let $k$ and $i$ be natural numbers, $v$ a Boolean
+Let $k$ and $i$ be natural numbers, $v$ a Boolean
 state, $r = (r_1, \dots, r_m)$ a list of bits and $S$ stack contents such that stack $X$ holds,
 top first, $k$ copies of $\mathrm{bit}(\mathrm{true})$, then $\mathrm{bit}(\mathrm{false})$, then
 $\mathrm{bit}(r_1), \dots, \mathrm{bit}(r_m)$, and stack $A$ holds exactly $i$ copies of the

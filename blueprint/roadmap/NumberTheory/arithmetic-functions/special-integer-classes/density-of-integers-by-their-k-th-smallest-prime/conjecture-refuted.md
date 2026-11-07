@@ -1,6 +1,6 @@
 # Erdős Problem 690 is false
 
-**Erdős Problem 690 is false.** There is a natural number $k \ge 1$ such that the $k$-th
+There is a natural number $k \ge 1$ such that the $k$-th
 prime-factor density $d_k$ is not unimodal on the primes, that is, there is no prime $p_0$ such
 that $d_k(p) \le d_k(q)$ for all primes $p$ and $q$ with $p \le q \le p_0$ and
 $d_k(q) \le d_k(p)$ for all primes $p$ and $q$ with $p_0 \le p \le q$. Here $d_k(p)$ is the

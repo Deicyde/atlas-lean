@@ -1,6 +1,6 @@
 # Karp-Luby: FPRAS for DNF counting
 
-**Karp-Luby: FPRAS for DNF counting.** For a bitstring $x$, let $N(x)$ be the number of
+For a bitstring $x$, let $N(x)$ be the number of
 satisfying assignments of the DNF formula encoded by $x$: if $x$ decodes, under the canonical
 bitstring encoding, to a pair $(u, \varphi)$ of a bitstring $u$ of length $m$ and a DNF formula
 $\varphi$ whose variables are all less than $m$, then $N(x)$ is the number of assignments of

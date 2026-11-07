@@ -1,6 +1,6 @@
 # Vishwakarma–Singh congruence for ordered partitions into multiples
 
-**Vishwakarma–Singh congruence for ordered partitions into multiples.** Let $p$ be an odd
+Let $p$ be an odd
 prime and let $a, k, s, t$ be positive integers with $\gcd(a, p - 1) = 1$, $s \le p - 2$ and
 $k \equiv 1 \pmod{p(p-1)}$, such that $p^2 \mid k - 1$ whenever $p - 1 \mid t$. Let
 $\mu = \lfloor aks/(p - 1) \rfloor$. Then

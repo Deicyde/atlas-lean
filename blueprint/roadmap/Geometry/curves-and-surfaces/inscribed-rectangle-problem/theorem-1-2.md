@@ -1,6 +1,6 @@
 # Rectangular peg theorem (Greene–Lobb)
 
-**Rectangular peg theorem (Greene–Lobb).** Let $\gamma : S^1 \to \mathbb{C}$ be a $C^\infty$
+Let $\gamma : S^1 \to \mathbb{C}$ be a $C^\infty$
 embedding of the unit circle (a smooth Jordan curve in the plane). For $z, w \in \mathbb{C}$ and
 an angle $\theta$, write $R(z, w, \theta)$ for the list of the four points $z e^{i\theta}$,
 $(\operatorname{Re} w + i \operatorname{Im} z) e^{i\theta}$, $w e^{i\theta}$,

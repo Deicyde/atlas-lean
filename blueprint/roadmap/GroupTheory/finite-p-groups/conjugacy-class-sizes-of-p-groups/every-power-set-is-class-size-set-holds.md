@@ -1,6 +1,6 @@
 # Cossey–Hawkes theorem on conjugacy class sizes of p-groups
 
-**Cossey–Hawkes theorem on conjugacy class sizes of p-groups.** For every prime $p$ and every
+For every prime $p$ and every
 finite set $X$ of natural numbers that contains $1$ and consists of powers of $p$, there is a
 finite $p$-group whose set of conjugacy class sizes is exactly $X$. This answers Kourovka
 Problem 14.77 (Sangroniz) in the affirmative.

@@ -1,6 +1,6 @@
 # Browder–Göhde–Kirk fixed point theorem
 
-**Browder–Göhde–Kirk fixed point theorem.** Let $E$ be a uniformly convex real Banach space and
+Let $E$ be a uniformly convex real Banach space and
 let $K \subseteq E$ be a nonempty, closed, bounded, convex set. If a map $f : E \to E$ sends $K$
 into $K$ and is nonexpansive on $K$, that is, $\|f(x) - f(y)\| \le \|x - y\|$ for all
 $x, y \in K$, then $f$ has a fixed point in $K$: there is $y \in K$ with $f(y) = y$.

@@ -1,6 +1,6 @@
 # Linearly recurrent sequences are uniformly recurrent
 
-**Linearly recurrent sequences are uniformly recurrent.** Every linearly recurrent sequence
+Every linearly recurrent sequence
 $s : \mathbb{N} \to \alpha$, with values in any type $\alpha$, is uniformly recurrent.
 
 ## Sources

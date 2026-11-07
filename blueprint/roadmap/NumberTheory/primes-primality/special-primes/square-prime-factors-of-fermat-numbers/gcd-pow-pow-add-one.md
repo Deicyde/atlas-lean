@@ -1,6 +1,6 @@
 # Greatest common divisors of generalized Fermat numbers
 
-**Greatest common divisors of generalized Fermat numbers.** For natural numbers $a$, $b$ and
+For natural numbers $a$, $b$ and
 $k$ write $F_k(a, b) = a^{b^k} + 1$, and let $a, b \ge 2$ and $m$, $n$ be natural numbers. If
 $n < m$ and $a$ and $b$ are both even, then $\gcd(F_m(a, b), F_n(a, b)) = 1$. If $n < m$, $a$ is
 odd and $b$ is even, then $\gcd(F_m(a, b), F_n(a, b)) = 2$. If $n \le m$ and $b$ is odd, then

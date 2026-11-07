@@ -1,6 +1,6 @@
 # Multivariate Gaussian density function
 
-**Multivariate Gaussian density function.** Let $\iota$ be a finite set of size $n$. For
+Let $\iota$ be a finite set of size $n$. For
 $\mu, x \in \mathbb{R}^\iota$ and a real $\iota \times \iota$ matrix $S$, this is the real number
 
 $$\frac{1}{(2\pi)^{n/2}\sqrt{\det S}} \exp\left(-\frac{(x - \mu)^\top S^{-1}(x - \mu)}{2}\right).$$

@@ -1,6 +1,6 @@
 # Equal diagonal sequences of the maximal and minimal partitions
 
-**Equal diagonal sequences of the maximal and minimal partitions.** Let $q \ge 0$ and
+Let $q \ge 0$ and
 $s_1, \dots, s_q \ge 0$ be natural numbers, write $v^{(m)}$ for $m$ copies of $v$, and let
 $\bar\alpha$ and $\underline\alpha$ be the partitions with parts
 $\bar\alpha_i = q - i + 1 + s_i + s_{i+1} + \dots + s_q$ for $1 \le i \le q$ and

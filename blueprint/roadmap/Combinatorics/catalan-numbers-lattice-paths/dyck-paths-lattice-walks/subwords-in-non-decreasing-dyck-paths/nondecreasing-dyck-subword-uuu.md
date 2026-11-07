@@ -1,6 +1,6 @@
 # Subword $UUU$ in non-decreasing Dyck paths
 
-**Subword $UUU$ in non-decreasing Dyck paths.** Let $F_{UUU}(x, y) \in \mathbb{Z}[y][[x]]$ be
+Let $F_{UUU}(x, y) \in \mathbb{Z}[y][[x]]$ be
 the bivariate generating function with constant term $0$ in which, for $n \ge 1$, the coefficient
 of $x^n$ is the sum of $y^{k(P)}$ over the non-decreasing Dyck paths $P$ of semilength $n$, where
 $k(P)$ is the number of occurrences of the subword $UUU$ in $P$ (overlapping occurrences counted

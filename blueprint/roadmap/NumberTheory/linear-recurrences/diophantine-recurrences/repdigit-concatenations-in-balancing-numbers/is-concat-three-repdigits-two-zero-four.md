@@ -1,6 +1,6 @@
 # $204$ is a concatenation of three repdigits
 
-**$204$ is a concatenation of three repdigits.** The number $204$, whose decimal expansion
+The number $204$, whose decimal expansion
 consists of the one-digit blocks $2$, $0$ and $4$, is a concatenation of three repdigits.
 
 ## Sources

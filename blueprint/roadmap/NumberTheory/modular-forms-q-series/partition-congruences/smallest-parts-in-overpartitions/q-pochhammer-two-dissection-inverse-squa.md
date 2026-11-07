@@ -1,6 +1,6 @@
 # 2-dissection of the reciprocal square of Euler's product
 
-**2-dissection of the reciprocal square of Euler's product.** Let $q$ be a complex number with
+Let $q$ be a complex number with
 $|q| < 1$, and for $k \ge 1$ let $f_k = (q^k; q^k)_\infty = \prod_{n=0}^{\infty} (1 - q^k (q^k)^n)$
 be the raw infinite q-Pochhammer product. Then
 

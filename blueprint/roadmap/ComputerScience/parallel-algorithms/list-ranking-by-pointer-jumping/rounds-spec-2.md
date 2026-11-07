@@ -1,6 +1,6 @@
 # The invariant of pointer jumping for list ranking
 
-**The invariant of pointer jumping for list ranking.** Let $\mathrm{succ}$ map each of the
+Let $\mathrm{succ}$ map each of the
 nodes $0, \dots, n - 1$ to its successor or to nothing, and suppose the lists terminate: from
 every node, $n$ steps run off the end. Write $\mathrm{rank}(v)$ for the number of nodes after
 $v$. Then for every $t \ge 0$ and every node $v$, after $t$ rounds of pointer jumping, the

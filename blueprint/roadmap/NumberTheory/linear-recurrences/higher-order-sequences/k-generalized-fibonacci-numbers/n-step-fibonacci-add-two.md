@@ -1,6 +1,6 @@
 # Recurrence for the N-step Fibonacci numbers
 
-**Recurrence for the N-step Fibonacci numbers.** For all natural numbers $N$ and $n$, the
+For all natural numbers $N$ and $n$, the
 $N$-step Fibonacci numbers $F^{(N)}$ satisfy
 $F^{(N)}_{n+2} = \sum_{i=0}^{N-1} F^{(N)}_{\max(n+1-i,\,0)}$.
 

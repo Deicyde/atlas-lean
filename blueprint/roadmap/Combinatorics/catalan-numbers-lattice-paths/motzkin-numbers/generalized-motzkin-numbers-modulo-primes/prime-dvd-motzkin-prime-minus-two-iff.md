@@ -1,6 +1,6 @@
 # Primes dividing the Motzkin number $M_{p-2}$
 
-**Primes dividing the Motzkin number $M_{p-2}$.** A prime $p$ divides the Motzkin number
+A prime $p$ divides the Motzkin number
 $M_{p-2} = M^{(1,1)}_{p-2}$ if and only if $p \equiv 1 \pmod 3$.
 
 For $p = 2$ both sides are false, since $M_0 = 1$.

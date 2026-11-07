@@ -1,6 +1,6 @@
 # Labels of the HAMPATH emitter
 
-**Labels of the HAMPATH emitter.** Let $f$, $p_p$, $p_n$ and $b$ range over bits and $j$ over
+Let $f$, $p_p$, $p_n$ and $b$ range over bits and $j$ over
 copy sites. A label of the emitter is one of $\mathrm{a0}$, $\mathrm{anm}$, $\mathrm{aw}(f)$,
 $\mathrm{ac}(f)$, $\mathrm{ar1}(f)$, $\mathrm{ar2}(f)$, $\mathrm{amv}(f)$, $\mathrm{asep}(f)$,
 $\mathrm{ab}(f)$, $\mathrm{ad2}$, $\mathrm{ad3}$, $\mathrm{b0}$, $\mathrm{b1}$,

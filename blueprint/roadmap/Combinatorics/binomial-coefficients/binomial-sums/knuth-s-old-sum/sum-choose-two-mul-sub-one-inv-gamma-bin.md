@@ -1,6 +1,5 @@
 # Odd-index binomial sum with inverse generalized binomial coefficients
 
-**Odd-index binomial sum with inverse generalized binomial coefficients.**
 Write $\binom{u}{w} = \Gamma(u+1)/(\Gamma(w+1)\Gamma(u-w+1))$ for the generalized binomial
 coefficient of complex $u$, $w$, which for natural $u$, $w$ is the ordinary binomial coefficient.
 For every natural number $n$ and every real $v > -1$,

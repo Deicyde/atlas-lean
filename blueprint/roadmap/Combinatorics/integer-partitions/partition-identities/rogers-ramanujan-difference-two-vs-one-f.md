@@ -1,6 +1,6 @@
 # Rogers–Ramanujan identity (first form)
 
-**Rogers–Ramanujan identity (first form).** For every natural number $n$, the number of
+For every natural number $n$, the number of
 partitions of $n$ into distinct parts, any two of which differ by at least $2$, equals the number
 of partitions of $n$ all of whose parts are congruent to $1$ or $4$ modulo $5$.
 

@@ -1,6 +1,5 @@
 # Entire continuations of the power-difference series agree and take Bernoulli values
 
-**Entire continuations of the power-difference series agree and take Bernoulli values.**
 Let $f$ and $g$ be complex-valued functions of two complex variables $(r, x)$ such that, for every
 admissible $x$, both $r \mapsto f(r, x)$ and $r \mapsto g(r, x)$ are entire, and for every
 admissible $x$ and every complex $r$ with $\operatorname{Re} r < 0$ the series

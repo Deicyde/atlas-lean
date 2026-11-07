@@ -1,6 +1,6 @@
 # Lit cells of weakly decreasing partitions with few parts
 
-**Lit cells of weakly decreasing partitions with few parts.** Let $k$ and $s$ be natural
+Let $k$ and $s$ be natural
 numbers with $s \le k$. Write $\binom{M}{m}_q$ for the Gaussian binomial coefficient, and $t[s, i]$
 for the triangular $q$-binomial coefficient: the generating function of partitions with exactly
 $i$ parts $x_1 \ge \cdots \ge x_i$ such that $x_j + j - 1 \le s$ for $1 \le j \le i$. Let

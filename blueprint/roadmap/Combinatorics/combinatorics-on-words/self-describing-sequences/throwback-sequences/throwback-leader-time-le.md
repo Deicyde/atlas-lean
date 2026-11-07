@@ -1,6 +1,6 @@
 # Recursive bound on the time to become leader
 
-**Recursive bound on the time to become leader.** Let $X = (x_0, x_1, \dots)$ be a sequence
+Let $X = (x_0, x_1, \dots)$ be a sequence
 of pairwise distinct positive integers, with positions numbered from $0$, the leader being at
 position $0$. Let $\tau$ be the throwback and $T(X) = (t_0, t_1, \dots)$ the throwback
 sequence, so $t_k$ is the leader of $\tau^k(X)$. Let $n \ge 1$, and let $N$ be the number of

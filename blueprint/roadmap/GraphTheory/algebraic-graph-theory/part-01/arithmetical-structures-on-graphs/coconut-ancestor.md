@@ -1,6 +1,6 @@
 # Ancestors of labelings of coconut trees
 
-**Ancestors of labelings of coconut trees.** Let $x$ be a pair of vertex labelings $(d, r)$
+Let $x$ be a pair of vertex labelings $(d, r)$
 of the coconut tree $CT(p, s)$ and $y$ a pair of vertex labelings of $CT(q, t)$. Then $y$ is an
 ancestor of $x$, and $x$ a descendant of $y$, when $y$ is obtained from $x$ by a finite,
 possibly empty, sequence of smoothings, each performed at a vertex where the current

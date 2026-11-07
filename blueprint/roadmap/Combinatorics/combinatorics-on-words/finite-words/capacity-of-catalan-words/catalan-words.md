@@ -1,6 +1,6 @@
 # Catalan words
 
-**Catalan words.** For a natural number $n$, the set $\mathcal{A}_n$ of Catalan words of length
+For a natural number $n$, the set $\mathcal{A}_n$ of Catalan words of length
 $n$ consists of the words $w = w_1 w_2 \cdots w_n$ of positive integers with $w_1 = 1$ and
 $w_{i+1} \le w_i + 1$ for $1 \le i < n$; for $n = 0$ it contains only the empty word.
 

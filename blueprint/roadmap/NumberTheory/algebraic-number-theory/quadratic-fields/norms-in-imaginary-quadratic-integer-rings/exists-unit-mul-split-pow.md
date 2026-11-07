@@ -1,6 +1,6 @@
 # Elements of norm $p^e$ over a split prime
 
-**Elements of norm $p^e$ over a split prime.** Let $d < 0$ be an integer such that the ring
+Let $d < 0$ be an integer such that the ring
 $\mathbb{Z}[\sqrt{d}]$ of numbers $a + b\sqrt{d}$ with $a, b \in \mathbb{Z}$ is a unique
 factorization domain, with norm $N(a + b\sqrt{d}) = a^2 - db^2$ and conjugation
 $\overline{a + b\sqrt{d}} = a - b\sqrt{d}$. Let $p$ be a prime number and let $\pi$ be a prime of

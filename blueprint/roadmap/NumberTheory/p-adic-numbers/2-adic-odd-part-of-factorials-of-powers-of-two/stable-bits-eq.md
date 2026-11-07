@@ -1,6 +1,6 @@
 # Formula for the stable bits
 
-**Formula for the stable bits.** Write $\operatorname{od}(n)$ for the odd part of a natural
+Write $\operatorname{od}(n)$ for the odd part of a natural
 number $n$. For all natural numbers $s$ and $d$, the stable bits are
 $\operatorname{stab}(s, d) = \lfloor \operatorname{od}((2^{s+d-1})!) / 2^s \rfloor \bmod 2^d$,
 where $s + d - 1$ is read as $0$ when $s = d = 0$.

@@ -1,6 +1,6 @@
 # Duality for restricted OOZ-qMZVs
 
-**Duality for restricted OOZ-qMZVs.** Call an index $(k_1, \dots, k_r)$ of natural numbers
+Call an index $(k_1, \dots, k_r)$ of natural numbers
 admissible if $k_j \ge 1$ for all $j$ and, when $r \ge 1$, $k_1 \ge 2$. Extend
 $\zeta_q^{\mathrm{OOZ}}$ and the map $U$ linearly to formal $\mathbb{Q}$-linear combinations of
 indices, and let $\tau$ act on such a combination by replacing each index with its BZ dual index.

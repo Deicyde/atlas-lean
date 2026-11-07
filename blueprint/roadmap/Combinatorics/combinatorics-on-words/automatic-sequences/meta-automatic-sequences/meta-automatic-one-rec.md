@@ -1,6 +1,6 @@
 # Recurrences of the meta-automatic sequence $\mathcal{M}_1$
 
-**Recurrences of the meta-automatic sequence $\mathcal{M}_1$.** Reading the values of the
+Reading the values of the
 meta-automatic sequence $\mathcal{M}_1$ as $0$ and $1$, for every $n \ge 1$ we have
 $\mathcal{M}_1(4n) = \mathcal{M}_1(n)$ and $\mathcal{M}_1(4n+1) = 1 - \mathcal{M}_1(n)$, and for
 every $n \in \mathbb{N}$ we have $\mathcal{M}_1(4n+2) = \mathcal{M}_1(2n + 1 - \mathcal{M}_1(n))$

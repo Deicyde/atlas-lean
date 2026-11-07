@@ -1,6 +1,5 @@
 # Subgroup lattices of Chernikov groups without a quasicyclic square have finite dimension
 
-**Subgroup lattices of Chernikov groups without a quasicyclic square have finite dimension.**
 Let $G$ be a Chernikov group, that is, a group with a normal subgroup of finite index isomorphic to
 a direct product of finitely many quasicyclic groups (infinite abelian groups all of whose proper
 subgroups are finite). Suppose that $G$ does not contain a direct product of two quasicyclic groups

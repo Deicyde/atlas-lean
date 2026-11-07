@@ -1,6 +1,6 @@
 # Computability over codes
 
-**Computability over codes.** Let $g : \alpha \to \beta$ be a function, let inputs in $\alpha$
+Let $g : \alpha \to \beta$ be a function, let inputs in $\alpha$
 and outputs in $\beta$ be encoded by injective maps into binary words, and let
 $t, s : \alpha \to \mathbb{N}$. Say a machine computes $g$ within $t$ and $s$ when, started on the
 encoding of any input $x$, it halts with the encoding of $g(x)$ as output, halts within $t(x)$

@@ -1,6 +1,6 @@
 # Every positive integer is the size of a diagonal class
 
-**Every positive integer is the size of a diagonal class.** For every positive integer $m$
+For every positive integer $m$
 there are a natural number $n$ and a partition $\alpha$ of $n$ whose class, the set of partitions
 of $n$ with the same diagonal sequence as $\alpha$, has exactly $m$ elements.
 

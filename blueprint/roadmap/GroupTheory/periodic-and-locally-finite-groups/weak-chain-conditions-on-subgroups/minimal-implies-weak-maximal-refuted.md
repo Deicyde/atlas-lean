@@ -1,6 +1,6 @@
 # A group with the minimal condition can fail the weak maximal condition
 
-**A group with the minimal condition can fail the weak maximal condition.** There is a group $G$
+There is a group $G$
 satisfying the minimal condition on subgroups (there is no infinite strictly descending chain of
 subgroups of $G$) that has an infinite ascending chain $H_0 \le H_1 \le \cdots$ of subgroups in
 which every index $|H_{i+1} : H_i|$ is infinite. This answers Kourovka Problem 10.14(a) negatively.

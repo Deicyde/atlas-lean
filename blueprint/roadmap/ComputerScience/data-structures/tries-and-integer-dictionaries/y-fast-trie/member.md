@@ -1,6 +1,6 @@
 # Membership query of a grouped y-fast trie
 
-**Membership query of a grouped y-fast trie.** Given a grouped y-fast trie $t$ over $w$-bit
+Given a grouped y-fast trie $t$ over $w$-bit
 keys and a key $x$, the query first finds a representative $r$: $r = x$ if the membership probe of
 the representative x-fast trie accepts $x$, and otherwise $r$ is the successor of $x$ in the
 representative trie. If there is no such $r$, the query returns false. Otherwise it returns

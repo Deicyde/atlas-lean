@@ -1,6 +1,6 @@
 # Generating function of digitwise binomial products
 
-**Generating function of digitwise binomial products.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $x \in R$, let $b \ge 2$, and let $n$ have base-$b$ digits $n_0, \dots, n_{m-1}$, where $m$ is
 the number of base-$b$ digits of $n$ ($m = 0$ for $n = 0$). For each natural number $k$ let
 $k_l$ be its $l$-th base-$b$ digit, taken to be $0$ beyond the last digit. Then

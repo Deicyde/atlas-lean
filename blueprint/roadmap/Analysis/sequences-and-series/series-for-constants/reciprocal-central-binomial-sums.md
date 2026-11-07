@@ -1,6 +1,6 @@
 # Sums of reciprocals of central binomial coefficients
 
-**Sums of reciprocals of central binomial coefficients.** The following three series converge
+The following three series converge
 absolutely, with the stated sums:
 
 $$\sum_{n=1}^{\infty} \frac{1}{n \binom{2n}{n}} = \frac{\pi \sqrt{3}}{9},$$

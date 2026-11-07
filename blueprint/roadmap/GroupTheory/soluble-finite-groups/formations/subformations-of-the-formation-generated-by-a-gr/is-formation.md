@@ -1,6 +1,6 @@
 # Formations of finite groups, possibly empty
 
-**Formations of finite groups, possibly empty.** A class $\mathfrak{F}$ of finite groups is a
+A class $\mathfrak{F}$ of finite groups is a
 formation if it is closed under homomorphic images (whenever $f \colon G \to H$ is a surjective
 homomorphism of finite groups and $G \in \mathfrak{F}$, then $H \in \mathfrak{F}$) and under finite
 subdirect products (whenever $N_1$ and $N_2$ are normal subgroups of a finite group $G$ with

@@ -1,6 +1,6 @@
 # Interleaved sequences and tensor products of ultrafilters
 
-**Interleaved sequences and tensor products of ultrafilters.** For ultrafilters $U$, $V$ on
+For ultrafilters $U$, $V$ on
 $\mathbb{N} = \{0, 1, 2, \dots\}$ and $X \subseteq \mathbb{N} \times \mathbb{N}$, write
 $X \in U \otimes V$ when $\{n : \{m : (n, m) \in X\} \in V\} \in U$. For every
 $X \subseteq \mathbb{N} \times \mathbb{N}$ the following are equivalent: (1) there are strictly

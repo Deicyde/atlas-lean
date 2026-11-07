@@ -1,6 +1,6 @@
 # Dixon's alternating cubic binomial sum
 
-**Dixon's alternating cubic binomial sum.** For every natural number $n$,
+For every natural number $n$,
 $\sum_{k=0}^{2n} (-1)^k \binom{2n}{k}^3 = (-1)^n \binom{2n}{n} \binom{3n}{2n}$.
 
 Mikić attributes the identity to A. C. Dixon, "On the sum of the cubes of the

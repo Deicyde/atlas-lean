@@ -1,6 +1,6 @@
 # Membership in the $n$-Markoff spectrum
 
-**Membership in the $n$-Markoff spectrum.** For every natural number $n$ and real number
+For every natural number $n$ and real number
 $\alpha$, $\alpha$ lies in the $n$-Markoff spectrum $M_n$ if and only if $\alpha = \mu_n(\xi, \xi')$
 for some distinct irrational real numbers $\xi$ and $\xi'$, where $\mu_n$ is the $n$-Markoff
 approximability.

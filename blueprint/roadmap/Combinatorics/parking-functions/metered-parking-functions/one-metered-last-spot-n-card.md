@@ -1,6 +1,6 @@
 # 1-metered parking functions whose last car parks in the last spot
 
-**1-metered parking functions whose last car parks in the last spot.** Let $1 \le m \le n$
+Let $1 \le m \le n$
 and number the spots $1, \dots, n$. The number of $1$-metered $(m, n)$-parking functions whose
 last car parks in spot $n$ equals $\mathrm{mpf}_{m-1,n}(1)$, the number of $1$-metered
 $(m - 1, n)$-parking functions.

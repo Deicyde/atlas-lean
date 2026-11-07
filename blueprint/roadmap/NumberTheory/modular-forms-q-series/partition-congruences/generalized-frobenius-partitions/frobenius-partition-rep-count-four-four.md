@@ -1,6 +1,6 @@
 # $\varphi_4(4n+3)$ is even
 
-**$\varphi_4(4n+3)$ is even.** Let $\varphi_4(n)$ be the number of generalized Frobenius
+Let $\varphi_4(n)$ be the number of generalized Frobenius
 partitions of $n$ in which each integer appears at most $4$ times in each row. For every natural
 number $n$, $\varphi_4(4n + 3) \equiv 0 \pmod 2$.
 

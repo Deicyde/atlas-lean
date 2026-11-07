@@ -1,6 +1,6 @@
 # Divisor sums over $B_\kappa$-free polynomials in short intervals
 
-**Divisor sums over $B_\kappa$-free polynomials in short intervals.** Let $F$ be a finite field
+Let $F$ be a finite field
 with $q$ elements and let $\kappa$ assign to each polynomial in $F[T]$ a natural number, with
 $\kappa(P) \ge 2$ for every monic irreducible $P$. Suppose that $\kappa$ is symmetric:
 $\kappa(P^*) = \kappa(P)$ for every monic irreducible $P$ with $P(0) \ne 0$, where $P^*$ is the

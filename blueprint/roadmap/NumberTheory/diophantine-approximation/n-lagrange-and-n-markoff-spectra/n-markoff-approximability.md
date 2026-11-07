@@ -1,6 +1,6 @@
 # $n$-Markoff approximability
 
-**$n$-Markoff approximability.** For a natural number $n$ and real numbers $\xi$ and $\xi'$, the
+For a natural number $n$ and real numbers $\xi$ and $\xi'$, the
 $n$-Markoff approximability is the supremum in the extended reals
 
 $$\mu_n(\xi, \xi') = \sup_{(s,t) \ne 0} \frac{\gcd(t, n)\,|\xi - \xi'|}{|s - t\xi|\,|s - t\xi'|}$$

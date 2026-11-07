@@ -1,6 +1,6 @@
 # Permuting variables preserves monotonicity, duals and self-duality
 
-**Permuting variables preserves monotonicity, duals and self-duality.** Let $f$ be a Boolean
+Let $f$ be a Boolean
 function on $n$ variables, let $\pi$ be a permutation of the $n$ coordinates, and let $f^\pi$
 be the function $x \mapsto f(x \circ \pi)$. If $f$ is monotone, then $f^\pi$ is monotone and
 $(f^*)^\pi = (f^\pi)^*$, where $f^*$ is the dual of $f$. If $f$ is self-dual monotone, then so

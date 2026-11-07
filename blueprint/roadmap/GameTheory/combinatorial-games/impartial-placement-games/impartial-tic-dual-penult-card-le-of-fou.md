@@ -1,6 +1,6 @@
 # Dual Impartial Tic penults on the 4 × 4 board have at most 9 tokens
 
-**Dual Impartial Tic penults on the 4 × 4 board have at most 9 tokens.** If $S$ is a penult of
+If $S$ is a penult of
 Impartial Tic on the $4 \times 4$ board, then at most $9$ cells of the board lie outside $S$.
 
 In the dual of Impartial Tic, tokens are removed from a full board and play ends once some row or

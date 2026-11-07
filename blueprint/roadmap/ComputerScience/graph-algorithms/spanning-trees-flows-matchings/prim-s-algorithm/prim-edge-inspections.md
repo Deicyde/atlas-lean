@@ -1,6 +1,6 @@
 # Adjacency inspections of Prim's algorithm on a simple graph
 
-**Adjacency inspections of Prim's algorithm on a simple graph.** Let $W$ be a linearly
+Let $W$ be a linearly
 ordered type with a zero element, let $G$ be a simple graph on the vertices $0, \dots, n-1$, let
 $D$ be a directed adjacency structure on the same vertices with adjacency lists $A(u)$, let $w$
 assign a weight in $W$ to every unordered pair of vertices, not necessarily distinct, and let

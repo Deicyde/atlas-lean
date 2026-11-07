@@ -1,6 +1,6 @@
 # Digamma evaluation of a hyperbolic Laplace integral
 
-**Digamma evaluation of a hyperbolic Laplace integral.** Let $b > 0$ be a real number and let
+Let $b > 0$ be a real number and let
 $\alpha, \beta$ be complex numbers with $\operatorname{Re}(\alpha + b - \beta) > 0$ and
 $\operatorname{Re}(\alpha + b + \beta) > 0$. Then the function
 $x \mapsto e^{-\alpha x} \cosh(\beta x) / \cosh(bx)$ is integrable on $(0, \infty)$, and, writing

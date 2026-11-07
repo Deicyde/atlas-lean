@@ -1,6 +1,6 @@
 # Girard's translation preserves provability
 
-**Girard's translation preserves provability.** Let $f$ map atoms to CLL propositions and
+Let $f$ map atoms to CLL propositions and
 write $B^\circ$ for Girard's translation of a propositional formula $B$ with atoms translated by
 $f$. Let $T$ be a propositional theory such that the one-formula sequent $\vdash B^\circ$ is
 provable in CLL for every $B \in T$. If $\Gamma$ is a finite set of propositional formulas and

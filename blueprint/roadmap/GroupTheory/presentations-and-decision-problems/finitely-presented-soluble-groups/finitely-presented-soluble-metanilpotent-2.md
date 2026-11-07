@@ -1,6 +1,6 @@
 # Groves's question (Kourovka 16.35) has a negative answer
 
-**Groves's question (Kourovka 16.35) has a negative answer.** Not every finitely presented
+Not every finitely presented
 soluble group is (nilpotent-by-nilpotent)-by-finite: there is a finitely presented soluble group
 $G$ such that for no normal subgroup $M$ of finite index in $G$ is there a normal subgroup $N$ of
 $M$ with $N$ and $M/N$ both nilpotent.

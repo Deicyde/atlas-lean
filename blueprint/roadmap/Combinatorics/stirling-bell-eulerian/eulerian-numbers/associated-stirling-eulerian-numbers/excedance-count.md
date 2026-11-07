@@ -1,6 +1,6 @@
 # Number of excedances
 
-**Number of excedances.** For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$, an excedance
+For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$, an excedance
 of $\sigma$ is a point $i$ with $\sigma(i) > i$, and the excedance count $e(\sigma)$ is the number
 of excedances of $\sigma$.
 

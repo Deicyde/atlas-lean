@@ -1,6 +1,6 @@
 # Capacity of a word
 
-**Capacity of a word.** The capacity of a word $w = w_1 \cdots w_n$ of natural numbers,
+The capacity of a word $w = w_1 \cdots w_n$ of natural numbers,
 viewed as a bargraph, is
 
 $$\mathrm{cap}(w) = \sum_{i=1}^{n}

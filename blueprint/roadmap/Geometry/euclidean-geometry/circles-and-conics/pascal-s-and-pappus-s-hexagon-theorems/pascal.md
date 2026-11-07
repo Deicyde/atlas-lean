@@ -1,6 +1,6 @@
 # Pascal's theorem for real projective conics
 
-**Pascal's theorem for real projective conics.** Let $M$ be a real symmetric $3 \times 3$
+Let $M$ be a real symmetric $3 \times 3$
 matrix with $\det M \ne 0$, and let $a_1, a_2, a_3, b_1, b_2, b_3 \in \mathbb{R}^3$ be nonzero
 vectors on the conic $x^\top M x = 0$, no two of which represent the same projective point.
 Writing $\cdot$ and $\times$ for the dot and cross products on $\mathbb{R}^3$, let

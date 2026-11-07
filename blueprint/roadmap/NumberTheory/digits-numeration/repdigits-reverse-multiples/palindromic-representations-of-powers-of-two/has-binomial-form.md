@@ -1,6 +1,6 @@
 # Binomial form
 
-**Binomial form.** A natural number $N$ has a base-$b$ representation in binomial form if
+A natural number $N$ has a base-$b$ representation in binomial form if
 there are natural numbers $\alpha \ge 1$ and $k \ge 1$ such that the base-$b$ digits of $N$, from
 the most significant to the least significant, are
 $\alpha\binom{k}{k}, \alpha\binom{k}{k-1}, \dots, \alpha\binom{k}{0}$.

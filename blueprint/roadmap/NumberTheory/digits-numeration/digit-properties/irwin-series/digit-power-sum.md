@@ -1,6 +1,6 @@
 # Digit power sum
 
-**Digit power sum.** For natural numbers $b$, $d$ and $j$, the digit power sum $\gamma_j$ is
+For natural numbers $b$, $d$ and $j$, the digit power sum $\gamma_j$ is
 the real number $\sum_{0 \le a < b,\ a \ne d} a^j$, the sum of the $j$-th powers of the base-$b$
 digits other than $d$, with the convention $0^0 = 1$.
 

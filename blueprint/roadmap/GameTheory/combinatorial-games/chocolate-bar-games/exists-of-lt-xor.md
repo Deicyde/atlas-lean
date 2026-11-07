@@ -1,6 +1,6 @@
 # Mex step for chocolate bars with one function
 
-**Mex step for chocolate bars with one function.** Let $g : \mathbb{N} \to \mathbb{N}$ have
+Let $g : \mathbb{N} \to \mathbb{N}$ have
 the NS property, and let $x, z, c$ be natural numbers with $x \le g(z)$ and $c < x \oplus z$,
 where $\oplus$ is nim-sum (bitwise exclusive or). Then $c = u \oplus z$ for some $u < x$, or
 $c = \min(g(w), x) \oplus w$ for some $w < z$.

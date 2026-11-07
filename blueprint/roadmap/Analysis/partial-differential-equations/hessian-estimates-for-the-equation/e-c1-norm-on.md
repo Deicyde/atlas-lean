@@ -1,6 +1,6 @@
 # C¹ norm on a set
 
-**C¹ norm on a set.** Let $E$ and $F$ be real normed spaces and let $\mu$ be a measure on $E$
+Let $E$ and $F$ be real normed spaces and let $\mu$ be a measure on $E$
 (by default the volume measure). For a function $f : E \to F$ and a set $s \subseteq E$, write
 $\mu_s$ for the restriction of $\mu$ to $s$. The $C^1$ norm of $f$ on $s$ is the extended
 nonnegative real number

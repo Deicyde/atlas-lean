@@ -1,6 +1,6 @@
 # Hook tableau counts as differences of hump counts
 
-**Hook tableau counts as differences of hump counts.** For natural numbers $m$ and $j$, let
+For natural numbers $m$ and $j$, let
 $\mathrm{SYT}_j(2,1;m)$ be the number of standard Young tableaux of order $m$ in the
 $(2,1)$-hook whose first row is longer than its second row by exactly $j$, and let $H_{m,j}$ be
 the number of Motzkin paths of length $m$ with one distinguished hump of height $j$ (a hump is

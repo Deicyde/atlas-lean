@@ -1,6 +1,6 @@
 # The zeroth Kampé de Fériet polynomial
 
-**The zeroth Kampé de Fériet polynomial.** For every natural number $m$ and all elements
+For every natural number $m$ and all elements
 $x, y$ of a commutative $\mathbb{R}$-algebra, $H^m_0(x, y) = 1$.
 
 ## Sources

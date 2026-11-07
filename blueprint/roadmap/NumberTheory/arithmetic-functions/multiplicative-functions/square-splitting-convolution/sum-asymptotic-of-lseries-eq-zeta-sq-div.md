@@ -1,6 +1,6 @@
 # Partial-sum asymptotics for a Riemann zeta quotient times a Dirichlet series
 
-**Partial-sum asymptotics for a Riemann zeta quotient times a Dirichlet series.** Let
+Let
 $f, g : \mathbb{N} \to \mathbb{C}$ and let $\sigma_0 < 1/2$ be a real number. Suppose that the
 Dirichlet series $G(s) = \sum_{n \ge 1} g(n) n^{-s}$ converges absolutely for
 $\operatorname{Re} s > \sigma_0$, that $G(1) \ne 0$, and that for every complex $s$ with

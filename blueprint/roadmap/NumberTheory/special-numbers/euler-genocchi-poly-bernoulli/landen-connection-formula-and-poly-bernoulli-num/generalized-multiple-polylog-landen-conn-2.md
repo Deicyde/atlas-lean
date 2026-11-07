@@ -1,6 +1,6 @@
 # Landen formula in the classical case
 
-**Landen formula in the classical case.** Let $g = (g_0, g_1, g_2)$ be the Landen data in
+Let $g = (g_0, g_1, g_2)$ be the Landen data in
 which $g_0 = g_2$ has rows $(1, -1)$ and $(1, 0)$ and $g_1$ is the identity matrix, so that
 $G_{g_1}(t) = 1/t$ and $G_{g_2}(t) = 1/(1 - t)$. For all real numbers $\beta_1$, $\beta_2$,
 $\gamma_1$, $\gamma_2$ and every finite (possibly empty) sequence $\mathbf{k}$ of positive

@@ -1,6 +1,6 @@
 # The frequency of $b$ from the growth of the relative position
 
-**The frequency of $b$ from the growth of the relative position.** Let $w$ be an infinite
+Let $w$ be an infinite
 binary word in which both letters $a$ and $b$ occur infinitely often, let $r$ be its relative
 position function, and suppose that $r(n)/n$ converges to $L$ in the extended real line
 $[-\infty, \infty]$. Let $\#_b(m)$ be the number of letters $b$ among the first $m$ letters of

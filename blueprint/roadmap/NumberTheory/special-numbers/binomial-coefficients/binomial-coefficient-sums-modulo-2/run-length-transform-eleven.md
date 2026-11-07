@@ -1,6 +1,6 @@
 # Run length transform at eleven
 
-**Run length transform at eleven.** For every sequence $S : \mathbb{N} \to \mathbb{Z}$, the run
+For every sequence $S : \mathbb{N} \to \mathbb{Z}$, the run
 length transform $T$ of $S$ satisfies $T(11) = S(1) S(2)$: in binary $11$ is $1011$, whose maximal
 runs of $1$s have lengths $2$ and $1$.
 

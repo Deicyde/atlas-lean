@@ -1,6 +1,6 @@
 # Sums of eight degenerate second-order recurrences
 
-**Sums of eight degenerate second-order recurrences.** For an integer sequence
+For an integer sequence
 $(w_j)_{j \ge 0}$ write $B_w(n) = w_1 + \dots + w_n$. Let $u$ be the sequence with $u_0 = 0$,
 $u_1 = 1$ and $u_{j+2} = u_j$, and $v$ the sequence with $v_0 = 0$, $v_1 = 1$ and
 $v_{j+2} = -2 v_{j+1} - v_j$. For every $n \ge 1$: $B_u(n) = \lfloor (n + 1) / 2 \rfloor$ and

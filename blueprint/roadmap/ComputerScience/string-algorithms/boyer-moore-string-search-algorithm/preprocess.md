@@ -1,6 +1,6 @@
 # Boyer–Moore preprocessing
 
-**Boyer–Moore preprocessing.** Given a pattern $p = p_0 \cdots p_{m-1}$ over the alphabet
+Given a pattern $p = p_0 \cdots p_{m-1}$ over the alphabet
 $\{0, \dots, \sigma - 1\}$, this computes a bad-character table $B$ of length $\sigma$ and a
 strong good-suffix table $G$ of length $m$. The table $B$ starts with every entry equal to $m$,
 and then for $k = 0, 1, \dots, m - 2$ in turn the entry $B_{p_k}$ is set to $m - 1 - k$. For

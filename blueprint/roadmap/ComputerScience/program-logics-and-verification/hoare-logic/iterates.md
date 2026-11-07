@@ -1,6 +1,6 @@
 # Loop runs with a given number of iterations
 
-**Loop runs with a given number of iterations.** Let $b$ be a Boolean expression and $c$ a
+Let $b$ be a Boolean expression and $c$ a
 command. For a natural number $n$ and states $s$, $s'$, the loop $\mathtt{while}\ b\ \mathtt{do}\ c$
 runs from $s$ to $s'$ in $n$ iterations when, started in $s$, it exits in $s'$ after exactly $n$
 executions of the body $c$. This is the least relation such that the loop runs from $s$ to $s$ in

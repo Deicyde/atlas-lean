@@ -1,6 +1,6 @@
 # Normalized Selberg coefficients
 
-**Normalized Selberg coefficients.** Let $s$ be a bounding sieve with density function $\nu$
+Let $s$ be a bounding sieve with density function $\nu$
 and Selberg terms $g(l) = \nu(l) \prod_{p \mid l} (1 - \nu(p))^{-1}$, the product running over
 the primes $p$ dividing $l$, and let $R$ be a natural number. Write $D_R$ for the level set of $s$
 at level $R$ (the divisors of the sifting product of $s$ that are at most $R$) and

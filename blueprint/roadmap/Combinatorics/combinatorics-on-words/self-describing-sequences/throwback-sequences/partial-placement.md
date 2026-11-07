@@ -1,6 +1,6 @@
 # Partial placement sequences
 
-**Partial placement sequences.** Let $X = (x_0, x_1, \dots)$ be a sequence of natural
+Let $X = (x_0, x_1, \dots)$ be a sequence of natural
 numbers; the source takes $X$ strictly increasing with positive terms. The partial placement
 sequences $P_n(X)$, for $n \ge 0$, are indexed by positions $z \in \mathbb{Z}$, and each
 position is either empty or holds a term of $X$. $P_0(X)$ holds $x_0$ at the multiples of

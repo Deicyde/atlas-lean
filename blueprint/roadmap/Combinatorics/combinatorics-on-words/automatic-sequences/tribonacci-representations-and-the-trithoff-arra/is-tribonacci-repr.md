@@ -1,6 +1,6 @@
 # Tribonacci representation
 
-**Tribonacci representation.** Let $T_n$ be the Tribonacci numbers, $T_0 = T_1 = 0$,
+Let $T_n$ be the Tribonacci numbers, $T_0 = T_1 = 0$,
 $T_2 = 1$ and $T_{n+3} = T_{n+2} + T_{n+1} + T_n$. A list $w = (w_0, \dots, w_{\ell-1})$ of
 natural numbers, read least significant digit first, is a Tribonacci representation of a
 natural number $n$ when every digit $w_i$ is $0$ or $1$, no three consecutive entries of $w$

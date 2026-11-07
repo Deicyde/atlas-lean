@@ -1,6 +1,6 @@
 # Frobenius pseudoprime
 
-**Frobenius pseudoprime.** A natural number $n$ is a Frobenius pseudoprime with respect to a
+A natural number $n$ is a Frobenius pseudoprime with respect to a
 polynomial $f \in \mathbb{Z}[x]$ when $n$ is not prime and $n$ is a Frobenius probable prime with
 respect to $f$.
 

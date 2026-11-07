@@ -1,6 +1,6 @@
 # The $47$-adic valuation of Tribonacci numbers near $\pm 1$
 
-**The $47$-adic valuation of Tribonacci numbers near $\pm 1$.** Let $(T_n)_{n \in \mathbb{Z}}$
+Let $(T_n)_{n \in \mathbb{Z}}$
 be the two-sided Tribonacci sequence, determined by $T_0 = 0$, $T_1 = T_2 = 1$ and
 $T_{n+3} = T_{n+2} + T_{n+1} + T_n$ for all integers $n$. Let $\nu_{47}$ be the $47$-adic
 valuation on the integers, with the convention $\nu_{47}(0) = 0$, and let

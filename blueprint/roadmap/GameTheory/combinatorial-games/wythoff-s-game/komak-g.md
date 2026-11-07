@@ -1,6 +1,6 @@
 # The Komak sequence $g$
 
-**The Komak sequence $g$.** Let $\varphi$ be the golden ratio. The sequence
+Let $\varphi$ be the golden ratio. The sequence
 $g : \mathbb{N} \to \mathbb{N}$ of Komak et al. is defined by recursion on $n$: if some
 $m < n$ satisfies $\lfloor n\varphi \rfloor = \lfloor m\varphi^2 \rfloor + 1$, then
 $g(n) = 1 - g(m)$ for the least such $m$; otherwise $g(n) = 1$.

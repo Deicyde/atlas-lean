@@ -1,6 +1,6 @@
 # Draining the work stacks of the dense-SAT verifier
 
-**Draining the work stacks of the dense-SAT verifier.** Let $\mathit{ans}$ be a Boolean, let
+Let $\mathit{ans}$ be a Boolean, let
 $i$, $a$, $b$ be lists of symbols of the work alphabet $G$, and let $v$ be any state. Start the
 verifier's program at the label $\mathrm{drainI}(\mathit{ans})$ in state $v$, with the input
 stack holding $i$, the formula stash empty, the assignment stacks $A$ and $B$ holding $a$ and

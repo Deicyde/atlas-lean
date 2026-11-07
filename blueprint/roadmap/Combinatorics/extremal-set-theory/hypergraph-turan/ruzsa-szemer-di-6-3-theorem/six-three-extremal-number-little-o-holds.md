@@ -1,6 +1,6 @@
 # The Ruzsa–Szemerédi (6, 3) theorem
 
-**The Ruzsa–Szemerédi (6, 3) theorem.** For $n \in \mathbb{N}$ let $\mathrm{ex}_3(n)$ be the
+For $n \in \mathbb{N}$ let $\mathrm{ex}_3(n)$ be the
 largest number of $3$-element subsets of $\{1, \dots, n\}$ such that every set of at most $6$ of
 these points contains at most $2$ of the chosen subsets. Then $\mathrm{ex}_3(n) / n^2 \to 0$ as
 $n \to \infty$, that is, $\mathrm{ex}_3(n) = o(n^2)$.

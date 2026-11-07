@@ -1,6 +1,6 @@
 # The coprimality density of the empty graph is $1$
 
-**The coprimality density of the empty graph is $1$.** For every natural number $k$, the
+For every natural number $k$, the
 coprimality density of the graph on $\{1, \dots, k\}$ with no edges equals $1$.
 
 ## Sources

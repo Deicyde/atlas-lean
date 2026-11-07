@@ -1,6 +1,6 @@
 # Generating function of the hyper-Leonardo numbers
 
-**Generating function of the hyper-Leonardo numbers.** For every natural number $r$, the
+For every natural number $r$, the
 formal power series $\sum_{n \ge 0} \mathrm{Le}^{(r)}_n t^n$ of the hyper-Leonardo numbers of
 order $r$ satisfies
 $\left(\sum_{n \ge 0} \mathrm{Le}^{(r)}_n t^n\right)(1-2t+t^3)(1-t)^r = 1-t+t^2$ in

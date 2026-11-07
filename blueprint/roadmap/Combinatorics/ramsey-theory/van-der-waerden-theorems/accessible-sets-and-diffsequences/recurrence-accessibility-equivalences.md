@@ -1,6 +1,6 @@
 # Topological recurrence, accessibility and chromatic intersectivity
 
-**Topological recurrence, accessibility and chromatic intersectivity.** Let $D$ be a set
+Let $D$ be a set
 of positive integers. Say that $D$ has *diffsequence recurrence* if for every compact metric
 space $X$, every minimal homeomorphism $T$ of $X$, every nonempty open set $U \subseteq X$ and
 every $k \ge 1$ there are integers $s_1, \dots, s_k$ forming a $D$-diffsequence such that

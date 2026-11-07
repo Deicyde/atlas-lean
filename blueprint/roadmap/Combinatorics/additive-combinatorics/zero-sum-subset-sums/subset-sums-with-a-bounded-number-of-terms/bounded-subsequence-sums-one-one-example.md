@@ -1,6 +1,6 @@
 # An example of bounded subsequence sums
 
-**An example of bounded subsequence sums.** For the sequence of integers
+For the sequence of integers
 $\mathcal{A} = (-2, 7, 7)$, in which $-2$ occurs once and $7$ twice,
 $\Sigma^1_1(\mathcal{A}) = \{-2, 5, 7, 14\}$: the sums of the subsequences with at least one and
 at most two terms are $-2$, $7$, $-2 + 7 = 5$ and $7 + 7 = 14$.

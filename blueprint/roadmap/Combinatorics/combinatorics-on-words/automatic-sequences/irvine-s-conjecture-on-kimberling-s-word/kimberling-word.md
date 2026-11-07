@@ -1,6 +1,6 @@
 # Kimberling's word
 
-**Kimberling's word.** Let $K_n$ be the $n$-th Kimberling block, a finite word over
+Let $K_n$ be the $n$-th Kimberling block, a finite word over
 $\{0, 1\}$. Kimberling's word $k = k_1 k_2 k_3 \cdots = 1101101111\cdots$ (OEIS A285431) is the
 infinite word over $\{0, 1\}$ whose letter $k_{i+1}$, for $i \ge 0$, is the $(i+1)$-th letter of
 $K_m$, where $m = \lfloor \log_2 i \rfloor + 1$ for $i \ge 1$ and $m = 1$ for $i = 0$. The block

@@ -1,6 +1,6 @@
 # Step sums of a rational Riordan array satisfy a common recurrence
 
-**Step sums of a rational Riordan array satisfy a common recurrence.** Let
+Let
 $g_1, g_2, h_1, h_2 \in \mathbb{Z}[x]$ with $g_2(0) = h_1(0) = h_2(0) = 1$, let $\nu \ge 1$ and
 $k \ge 1$ be natural numbers, and in $\mathbb{Q}[[x]]$ let $g = g_1/g_2$ and
 $h = x^\nu h_1/h_2$. For $p, n \in \mathbb{N}$ let

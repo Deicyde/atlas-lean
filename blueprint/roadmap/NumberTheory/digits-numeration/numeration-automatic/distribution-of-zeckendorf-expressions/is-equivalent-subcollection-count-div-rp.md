@@ -1,6 +1,6 @@
 # Transition from the subcollection count to $\delta^\ast$
 
-**Transition from the subcollection count to $\delta^\ast$.** Let $L$ and $\tilde L$ form a
+Let $L$ and $\tilde L$ form a
 periodic Zeckendorf pair, with periodic Zeckendorf collections $E \subsetneq \tilde E$, and let
 $Q$ and $\tilde Q$ be fundamental sequences of the $L^*$-collection $E^*$ and the
 $\tilde L^*$-collection $\tilde E^*$. Put $\omega = Q_0$, $\tilde\omega = \tilde Q_0$ and

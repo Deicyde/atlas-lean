@@ -1,6 +1,6 @@
 # Finite Kullback–Leibler formula
 
-**Finite Kullback–Leibler formula.** Let $Z$ be a finite set and let $q, r : Z \to \mathbb{R}$.
+Let $Z$ be a finite set and let $q, r : Z \to \mathbb{R}$.
 The Kullback–Leibler formula of $q$ against $r$ is
 $\mathrm{KL}(q \,\|\, r) = \sum_{z \in Z} q(z) \bigl(\log q(z) - \log r(z)\bigr)$; terms with
 $q(z) = 0$ vanish.

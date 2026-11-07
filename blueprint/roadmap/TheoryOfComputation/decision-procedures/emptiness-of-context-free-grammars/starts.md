@@ -1,6 +1,6 @@
 # Start positions of a right-hand side
 
-**Start positions of a right-hand side.** Write $\langle s, t \rangle$ for the pairing
+Write $\langle s, t \rangle$ for the pairing
 bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ given by $\langle s, t \rangle = t^2 + s$
 if $s < t$ and $\langle s, t \rangle = s^2 + s + t$ otherwise. Given a word $w$, a list $R$ of
 items (natural numbers), a position $j$ and an encoded right-hand side $X_1 \cdots X_m$, a

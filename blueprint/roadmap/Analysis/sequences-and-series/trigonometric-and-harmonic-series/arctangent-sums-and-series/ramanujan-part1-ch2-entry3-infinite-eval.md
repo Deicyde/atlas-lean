@@ -1,6 +1,6 @@
 # Ramanujan's arctangent series for $\log 3 - \pi/4$
 
-**Ramanujan's arctangent series for $\log 3 - \pi/4$.** The series
+The series
 
 $$\sum_{k=1}^{\infty} \arctan \frac{10k}{(3k^2 + 2)(9k^2 - 1)}$$
 

@@ -1,6 +1,6 @@
 # Characterization of $(m-2)$-metered parking functions
 
-**Characterization of $(m-2)$-metered parking functions.** Let $2 < m \le n + 1$,
+Let $2 < m \le n + 1$,
 $f : \{0, \dots, m-1\} \to \{0, \dots, n-1\}$, $1 \le k \le n$ and $j \in \mathbb{N}$. Write
 $\mathrm{Sh}_p(q - 1, N - q)$ for the set of $(p, N)$-parking-function shuffles with parameter
 $q$, words of length $p - 1$ with entries in $\{0, \dots, N-1\}$. Suppose that the middle word

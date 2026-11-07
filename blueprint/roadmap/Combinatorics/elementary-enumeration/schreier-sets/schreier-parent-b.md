@@ -1,6 +1,6 @@
 # Parent sequence b for Schreier-type multisets
 
-**Parent sequence b for Schreier-type multisets.** For natural numbers $s$ and $p$, the
+For natural numbers $s$ and $p$, the
 sequence $b^{(s)}_{p,n}$, $n \ge 0$, is defined by $b^{(s)}_{p,n} = 0$ for $n \le (p - 1)s$,
 $b^{(s)}_{p,n} = 1$ for $(p - 1)s < n \le ps + 1$, and
 $b^{(s)}_{p,n} = b^{(s)}_{p,n-1} + b^{(s)}_{p,n-1-ps}$ for $n \ge ps + 2$, where $p - 1$ is read

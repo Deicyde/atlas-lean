@@ -1,6 +1,6 @@
 # Closest conjugate roots of nearby monic polynomials
 
-**Closest conjugate roots of nearby monic polynomials.** Let $K$ be a complete nontrivially
+Let $K$ be a complete nontrivially
 normed field whose norm is ultrametric, with algebraic closure $\overline{K}$, and let
 $f \in K[X]$ be monic, irreducible and separable. Then there is a real $\delta > 0$ such that for
 every monic $g \in K[X]$ with $\lVert f - g \rVert_1 < \delta$, where $\lVert \cdot \rVert_1$ is

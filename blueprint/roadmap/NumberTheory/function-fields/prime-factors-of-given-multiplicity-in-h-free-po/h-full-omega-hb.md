@@ -1,6 +1,6 @@
 # The coefficients $B_z(n)$ of the $h$-full series
 
-**The coefficients $B_z(n)$ of the $h$-full series.** Let $F$ be a finite field with $q$
+Let $F$ be a finite field with $q$
 elements, let $h$ and $n$ be natural numbers and let $z$ be a complex number. Write $N_h$ for the
 set of $h$-full monic polynomials over $F$ (monic $f$ such that $P^h$ divides $f$ for every monic
 irreducible $P$ dividing $f$), $\omega_h(f)$ for the number of monic irreducible polynomials that

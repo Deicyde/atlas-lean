@@ -1,6 +1,6 @@
 # Carries of the Hoey–Sloane machine
 
-**Carries of the Hoey–Sloane machine.** Let $n$ and $b$ be natural numbers and let
+Let $n$ and $b$ be natural numbers and let
 $(d_0, \hat d_0)(d_1, \hat d_1) \cdots (d_k, \hat d_k)$ be an input string of pairs of natural
 numbers. The carries $c_0, c_1, c_2, \dots$ of the $(n, b)$-Hoey–Sloane machine on this string
 are the integers given by $c_0 = 0$,

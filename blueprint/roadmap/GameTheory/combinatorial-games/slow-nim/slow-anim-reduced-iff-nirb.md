@@ -1,6 +1,6 @@
 # NIRB criterion for reduced positions
 
-**NIRB criterion for reduced positions.** Let $A \subseteq \{1, \dots, n\}$ be nonempty with
+Let $A \subseteq \{1, \dots, n\}$ be nonempty with
 least element $a$, and let $p$ be a position of Slow $A$-Nim on $n$ stacks. Then $p$ is reduced
 if and only if $a \cdot M \le \sum_i p_i$, where $M$ is the largest stack height of $p$ (taken
 to be $0$ when $n = 0$).

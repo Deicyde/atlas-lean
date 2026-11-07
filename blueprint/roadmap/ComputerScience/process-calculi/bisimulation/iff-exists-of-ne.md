@@ -1,6 +1,6 @@
 # Weak transitions with a visible label
 
-**Weak transitions with a visible label.** In a labelled transition system with a silent
+In a labelled transition system with a silent
 label $\tau$, write $\Rightarrow$ for the reflexive-transitive closure of the
 $\tau$-transition relation. A weak transition $s \stackrel{\mu}{\Longrightarrow} t$ is either
 the trivial one $s \stackrel{\tau}{\Longrightarrow} s$ or a composite

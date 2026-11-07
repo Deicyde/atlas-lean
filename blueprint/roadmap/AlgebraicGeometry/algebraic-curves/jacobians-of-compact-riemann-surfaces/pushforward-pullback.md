@@ -1,6 +1,6 @@
 # Pushforward of a pullback is multiplication by the degree
 
-**Pushforward of a pullback is multiplication by the degree.** Let $X$ and $Y$ be compact
+Let $X$ and $Y$ be compact
 Riemann surfaces, that is, compact, connected, Hausdorff complex-analytic manifolds of dimension
 one, and write $J(Y)$ for the Jacobian of $Y$, an abelian group. For every holomorphic map
 $f : X \to Y$ and every $P \in J(Y)$, the pushforward along $f$ of the pullback of $P$ along $f$

@@ -1,6 +1,6 @@
 # Signed triangular sum of $a_{r,m}$ and distinct partitions
 
-**Signed triangular sum of $a_{r,m}$ and distinct partitions.** Let $m, r, n$ be natural
+Let $m, r, n$ be natural
 numbers with $r < m$. Write $a_{r,m}(k)$ for the sum of the different parts congruent to $r$
 modulo $m$ in all partitions of $k$, $q(k)$ for the number of partitions of $k$ into distinct
 parts, and $\tilde q(\ell)$ for $q(\ell/2)$ when $\ell$ is even and for $0$ when $\ell$ is odd.

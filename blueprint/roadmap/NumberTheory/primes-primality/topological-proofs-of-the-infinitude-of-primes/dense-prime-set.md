@@ -1,6 +1,6 @@
 # The primes are dense in the coprime topology without 1
 
-**The primes are dense in the coprime topology without 1.** The set of prime numbers is dense
+The set of prime numbers is dense
 in the set of positive integers different from $1$, with the subspace topology induced by
 Macías's coprime topology on the positive integers.
 

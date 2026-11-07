@@ -1,6 +1,6 @@
 # Oresme–Pell congruence modulo 49
 
-**Oresme–Pell congruence modulo 49.** For every natural number $n$, the Pell numbers $P_n$
+For every natural number $n$, the Pell numbers $P_n$
 satisfy $2^n (5 P_{n+1} - 4 P_n) \equiv 7n + 5 \pmod{49}$ as integers.
 
 ## Sources

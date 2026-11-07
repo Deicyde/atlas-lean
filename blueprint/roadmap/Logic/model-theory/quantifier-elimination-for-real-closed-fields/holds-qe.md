@@ -1,6 +1,6 @@
 # Quantifier elimination preserves truth
 
-**Quantifier elimination preserves truth.** Let $\mathrm{qe}$ be the quantifier elimination map
+Let $\mathrm{qe}$ be the quantifier elimination map
 on formulas. For every formula $\varphi$ and every environment $e : \mathbb{N} \to \mathbb{R}$,
 the formula $\mathrm{qe}(\varphi)$ holds in $\mathbb{R}$ under $e$ if and only if $\varphi$ holds
 in $\mathbb{R}$ under $e$.

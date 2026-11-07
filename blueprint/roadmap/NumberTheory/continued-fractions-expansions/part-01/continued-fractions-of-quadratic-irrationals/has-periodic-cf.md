@@ -1,6 +1,6 @@
 # Continued fractions with a prescribed period
 
-**Continued fractions with a prescribed period.** For a real number $x$, natural numbers
+For a real number $x$, natural numbers
 $a_0$, $l$, $c$ and a sequence of natural numbers $a_1, a_2, \dots$, we write
 $x = [a_0; \overline{a_1, \dots, a_{l-1}, c}]$ when the regular continued fraction of $x$ is the
 infinite expansion $[a_0; a_1, \dots, a_{l-1}, c, a_1, \dots, a_{l-1}, c, \dots]$: its integer

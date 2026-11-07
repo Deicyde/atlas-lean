@@ -1,6 +1,6 @@
 # Maslova's theorem on groups with Hall maximal subgroups
 
-**Maslova's theorem on groups with Hall maximal subgroups.** Every non-abelian composition factor
+Every non-abelian composition factor
 of a finite non-soluble group all of whose maximal subgroups are Hall subgroups is isomorphic to
 $L_2(7)$, $L_2(11)$ or $L_5(2)$, so the first half of the answer to Kourovka 17.92 holds. Here
 $L_n(q)$ is the projective special linear group $\mathrm{PSL}_n(\mathbb{Z}/q\mathbb{Z})$, the

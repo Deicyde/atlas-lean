@@ -1,6 +1,6 @@
 # Counting reduced unicellular hypermonopoles by genus
 
-**Counting reduced unicellular hypermonopoles by genus.** Fix $g \in \mathbb{N}$. For
+Fix $g \in \mathbb{N}$. For
 each $n \in \mathbb{N}$ let $\zeta_n$ be the cyclic permutation of $\{0, \ldots, n - 1\}$
 sending $i$ to $i + 1$ modulo $n$, and let $z(\pi)$ be the number of cycles of a permutation
 $\pi$, fixed points included. Let $U_g$ be the set of pairs $(n, \alpha)$, with

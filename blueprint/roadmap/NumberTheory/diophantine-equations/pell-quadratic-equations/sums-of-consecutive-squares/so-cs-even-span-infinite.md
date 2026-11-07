@@ -1,6 +1,6 @@
 # Infinitely many solutions with $c - a$ even
 
-**Infinitely many solutions with $c - a$ even.** There are infinitely many solutions
+There are infinitely many solutions
 $(a, b, c)$ of the sum of consecutive squares problem with $c - a$ even.
 
 ## Sources

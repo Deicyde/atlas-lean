@@ -1,6 +1,6 @@
 # The all-true assignment satisfies the transition, shift and init families
 
-**The all-true assignment satisfies the transition, shift and init families.** Let $E$ be an
+Let $E$ be an
 encoding of a machine $M$ with window depth $d$, let $x$ and $Y$ be lists of symbols of the input
 stack of $M$, and let $m, T, H \in \mathbb{N}$ with $|x| \le m < H$ and $d \le H$. Write
 $\mathrm{la}, \mathrm{na}, \mathrm{sa}, \mathrm{wa}, \mathrm{pl}, \mathrm{cn}, \mathrm{pu}$ for the

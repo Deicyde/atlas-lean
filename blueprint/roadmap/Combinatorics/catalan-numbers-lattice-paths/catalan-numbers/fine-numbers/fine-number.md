@@ -1,6 +1,6 @@
 # Fine numbers
 
-**Fine numbers.** For a natural number $n$, the Fine number $F(n)$, indexed from $0$ so
+For a natural number $n$, the Fine number $F(n)$, indexed from $0$ so
 that $F(0) = 1$, is the rational number
 
 $$F(n) = \frac{1}{n+1} \sum_{i=0}^{n} (-2)^i \, (i+1) \binom{2(n+1)}{n-i}.$$

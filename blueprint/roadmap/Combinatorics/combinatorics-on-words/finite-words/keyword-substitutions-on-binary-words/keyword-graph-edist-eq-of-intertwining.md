@@ -1,6 +1,6 @@
 # Intertwining bijections preserve distances in the substitution graph
 
-**Intertwining bijections preserve distances in the substitution graph.** Let $a$ and $b$ be
+Let $a$ and $b$ be
 keywords of length $m + 1$, and write $\varphi_i^{(a)}$ and $\varphi_i^{(b)}$ for the simple maps
 of $a$ and $b$ at letter $i$ on binary words of length $n$. Let $f$ be a bijection of the set of
 binary words of length $n$ and $\sigma$ a permutation of the positions $\{0, \dots, n - 1\}$, and

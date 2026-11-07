@@ -1,6 +1,6 @@
 # Closed form and recurrence for colored Schreier multiset counts
 
-**Closed form and recurrence for colored Schreier multiset counts.** Let $s \ge 1$ and
+Let $s \ge 1$ and
 $p \ge 1$, and write $|B^{(s)}_{p,n}|$ for the number of colored Schreier-type multisets. For
 $1 \le n \le sp + 1$,
 

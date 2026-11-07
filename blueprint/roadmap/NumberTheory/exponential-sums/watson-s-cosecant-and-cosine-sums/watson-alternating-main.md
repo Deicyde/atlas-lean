@@ -1,6 +1,6 @@
 # Main part of the asymptotic expansion of Watson's alternating cosecant sum
 
-**Main part of the asymptotic expansion of Watson's alternating cosecant sum.** For natural numbers
+For natural numbers
 $N$ and $n$, the main part is the real number
 
 $$

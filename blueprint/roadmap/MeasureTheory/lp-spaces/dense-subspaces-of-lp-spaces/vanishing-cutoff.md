@@ -1,6 +1,6 @@
 # Vanishing cutoff factor
 
-**Vanishing cutoff factor.** For real numbers $a$, $b$, $\delta$ and $x$, the value at $x$
+For real numbers $a$, $b$, $\delta$ and $x$, the value at $x$
 of the vanishing cutoff factor with endpoints $a$, $b$ and width $\delta$ is
 $\max\bigl(0, \min\bigl(1, \min((x - a)/\delta, (b - x)/\delta)\bigr)\bigr)$, where division
 by $0$ is read as $0$.

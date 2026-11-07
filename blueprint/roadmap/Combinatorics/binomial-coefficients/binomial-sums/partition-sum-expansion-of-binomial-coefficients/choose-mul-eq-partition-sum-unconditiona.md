@@ -1,6 +1,6 @@
 # Partition-sum expansion of $\binom{nm}{l}$, unconditional form
 
-**Partition-sum expansion of $\binom{nm}{l}$, unconditional form.** For all natural numbers $n$,
+For all natural numbers $n$,
 $m$ and $l$, let $P$ be the set of tuples $s = (s_1, \dots, s_m)$ of natural numbers with
 $\sum_{j=1}^{m} j\,s_j = l$, and for $s \in P$ write $T_j(s) = s_{j+1} + \dots + s_m$. Then
 

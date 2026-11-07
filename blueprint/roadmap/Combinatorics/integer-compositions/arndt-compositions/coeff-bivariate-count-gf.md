@@ -1,6 +1,6 @@
 # Coefficients of a bivariate generating function
 
-**Coefficients of a bivariate generating function.** For every function $a$ assigning a natural
+For every function $a$ assigning a natural
 number $a(n, m)$ to each pair of natural numbers and every $n \ge 0$, the coefficient of $x^n$ in
 the bivariate generating function of $a$ is the polynomial
 $\sum_{m = 0}^{n} a(n, m)\, y^m \in \mathbb{Z}[y]$.

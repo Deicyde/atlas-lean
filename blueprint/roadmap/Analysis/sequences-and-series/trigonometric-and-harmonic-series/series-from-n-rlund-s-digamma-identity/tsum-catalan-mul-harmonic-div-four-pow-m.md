@@ -1,6 +1,6 @@
 # A Catalan series weighted by harmonic numbers of complex argument
 
-**A Catalan series weighted by harmonic numbers of complex argument.** Let $z$ be a complex
+Let $z$ be a complex
 number with $\operatorname{Re} z > 0$, let $\binom{n+z}{n} = \prod_{j=1}^{n} \frac{z + j}{j}$, let
 $C_n$ be the $n$th Catalan number, $\psi$ the digamma function and $\gamma$ the Euler–Mascheroni
 constant. Then

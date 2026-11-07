@@ -1,6 +1,6 @@
 # Furstenberg multiple recurrence theorem
 
-**Furstenberg multiple recurrence theorem.** Let $\mu$ be a probability measure on a measurable
+Let $\mu$ be a probability measure on a measurable
 space $\alpha$, let $T : \alpha \to \alpha$ be a measurable map preserving $\mu$, and let $A$ be a
 measurable set with $\mu(A) > 0$. For $m \in \mathbb{N}$ write $T^{-m}(A)$ for the preimage of $A$
 under the $m$-th iterate of $T$. Then for every integer $k > 0$ there is an integer $n > 0$ such

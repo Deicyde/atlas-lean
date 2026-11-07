@@ -1,6 +1,6 @@
 # Admissible constants for the tight-knot inequality
 
-**Admissible constants for the tight-knot inequality.** A real number $c$ is admissible for
+A real number $c$ is admissible for
 the tight-knot inequality when $c \ge 0$ and, for every $n \in \mathbb{N}$, every parametrized
 link $L$ with $n$ components and every $k \in \mathbb{N}$ such that the crossing number of $L$
 equals $k$, the ropelength of $L$ is at least $c \, k^{3/4}$, the inequality being read in

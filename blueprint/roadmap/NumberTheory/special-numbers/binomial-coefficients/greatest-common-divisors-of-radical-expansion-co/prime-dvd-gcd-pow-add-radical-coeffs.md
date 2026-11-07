@@ -1,6 +1,6 @@
 # Common prime factors of $u^N + (-1)^{N+1} v$ and the coefficient gcd divide $N$
 
-**Common prime factors of $u^N + (-1)^{N+1} v$ and the coefficient gcd divide $N$.** Let
+Let
 $N \ge 2$, let $u, v$ be coprime natural numbers such that $x^N - v$ is irreducible over
 $\mathbb{Q}$, let $\theta = v^{1/N}$ be the nonnegative real $N$-th root of $v$, and let $a_{n,i}$
 (for natural $n$ and $0 \le i \le N - 1$) be integers with

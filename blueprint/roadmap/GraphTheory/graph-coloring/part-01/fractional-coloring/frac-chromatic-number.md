@@ -1,6 +1,6 @@
 # Fractional chromatic number
 
-**Fractional chromatic number.** Let $X$ be a graph with finite vertex set $V(X)$. A
+Let $X$ be a graph with finite vertex set $V(X)$. A
 *fractional colouring* of $X$ assigns to each set $S$ of vertices of $X$ a real weight
 $f(S) \ge 0$, with $f(S) = 0$ unless $S$ is independent, such that $\sum_{S \ni x} f(S) \ge 1$
 for every vertex $x$ of $X$, the sum running over all sets of vertices containing $x$. The

@@ -1,6 +1,6 @@
 # Smooth retraction onto a closed embedded manifold in $\mathbb{R}^n$
 
-**Smooth retraction onto a closed embedded manifold in $\mathbb{R}^n$.** Let $M$ be a Hausdorff,
+Let $M$ be a Hausdorff,
 second-countable smooth ($C^\infty$) manifold without boundary, modelled on a finite-dimensional
 real normed space, and let $e \colon M \to \mathbb{R}^n$ be a smooth embedding (a $C^\infty$
 immersion that is a topological embedding) whose image $e(M)$ is closed in $\mathbb{R}^n$. Then

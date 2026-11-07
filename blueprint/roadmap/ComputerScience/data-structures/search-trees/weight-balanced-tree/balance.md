@@ -1,6 +1,6 @@
 # Weight-balanced rebalancing
 
-**Weight-balanced rebalancing.** For binary trees $L$, $R$ and a key $k$, write $|t|$ for
+For binary trees $L$, $R$ and a key $k$, write $|t|$ for
 the number of keys of a tree $t$, $w(t) = |t| + 1$ for its weight, $w = w(L) + w(R)$, and
 $\langle X, x, Y \rangle$ for the node with key $x$, left subtree $X$ and right subtree
 $Y$. The rebalanced node $\mathrm{balance}(L, k, R)$ is defined as follows.

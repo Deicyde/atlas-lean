@@ -1,6 +1,6 @@
 # Carmichael's function on coprime products
 
-**Carmichael's function on coprime products.** For coprime natural numbers $m, n > 1$,
+For coprime natural numbers $m, n > 1$,
 the Carmichael function $\lambda$ satisfies
 $\lambda(mn) = \operatorname{lcm}(\lambda(m), \lambda(n))$.
 

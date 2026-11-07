@@ -1,6 +1,6 @@
 # Max-min indecomposable sequences
 
-**Max-min indecomposable sequences.** A coefficient sequence $f : \mathbb{N} \to \mathbb{N}$
+A coefficient sequence $f : \mathbb{N} \to \mathbb{N}$
 is indecomposable (in the arXiv version: irreducible) when for all sequences
 $g, h : \mathbb{N} \to \mathbb{N}$ with $g \otimes h = f$, where $\otimes$ is the max-min product,
 $g$ or $h$ is a max-min monomial, that is, a sequence with exactly one nonzero term.

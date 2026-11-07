@@ -1,6 +1,6 @@
 # Parity of the smallest index in a non-commuting list
 
-**Parity of the smallest index in a non-commuting list.** Let $a$ be a binary keyword of
+Let $a$ be a binary keyword of
 length $m + 1$, let $n$ and $i$ be natural numbers with $i < n$, and for each index $k$ let
 $\varphi_k$ be the simple map of $a$ at letter $k$ on binary words of length $n$. Let
 $l = [j_1, \dots, j_r]$ be a list of indices that are all greater than $i$, and let

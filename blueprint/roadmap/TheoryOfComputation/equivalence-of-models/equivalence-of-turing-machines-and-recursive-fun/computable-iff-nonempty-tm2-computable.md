@@ -1,6 +1,6 @@
 # Turing computable equals recursive
 
-**Turing computable equals recursive.** A function $f : \mathbb{N} \to \mathbb{N}$ is
+A function $f : \mathbb{N} \to \mathbb{N}$ is
 computable (recursive) if and only if some bundled finite multi-stack Turing machine computes it
 in binary. Here the binary word of $m \in \mathbb{N}$ is its list of binary digits, least
 significant first, with $1$ read as true, $0$ as false and no leading zeros (so the word of $0$

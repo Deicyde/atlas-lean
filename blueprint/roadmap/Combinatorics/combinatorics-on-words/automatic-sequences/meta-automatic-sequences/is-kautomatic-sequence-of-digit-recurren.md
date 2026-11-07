@@ -1,6 +1,6 @@
 # Allouche–Shallit criterion for automatic sequences
 
-**Allouche–Shallit criterion for automatic sequences.** Let $A$ be a finite set,
+Let $A$ be a finite set,
 $U : \mathbb{N} \to A$ a sequence and $q \ge 2$ a natural number. Let $t, a, b, n_0$ be natural
 numbers, let $P$ be the set of pairs $(i, j')$ of natural numbers with $i \le t$, $j' < q^i$ and
 $(i, j') \ne (0, 0)$, and for each natural number $j$ let $f_j$ map families of elements of $A$

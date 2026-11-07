@@ -1,6 +1,6 @@
 # Lidskii's inequality
 
-**Lidskii's inequality.** Let $A$ and $B$ be Hermitian complex square matrices indexed by a
+Let $A$ and $B$ be Hermitian complex square matrices indexed by a
 finite set with $N$ elements. List the eigenvalues of $A$, of $B$ and of $B - A$, each with
 multiplicity and in decreasing order, as $\alpha_1 \ge \dots \ge \alpha_N$,
 $\beta_1 \ge \dots \ge \beta_N$ and $\gamma_1 \ge \dots \ge \gamma_N$. Then for every real

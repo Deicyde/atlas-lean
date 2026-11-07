@@ -1,6 +1,6 @@
 # The Fibonacci switch
 
-**The Fibonacci switch.** Let $f = abaab\cdots$ be the Fibonacci word, the infinite
+Let $f = abaab\cdots$ be the Fibonacci word, the infinite
 Fibonacci word with each $0$ written as $a$ and each $1$ as $b$, and let $\mu$ be the
 substitution $a \mapsto aab$, $b \mapsto ab$. Then $D(f)$ is the image $\mu(f)$ of $f$ under
 $\mu$, where $D$ deletes the first $b$ and the first $a$ of a word.

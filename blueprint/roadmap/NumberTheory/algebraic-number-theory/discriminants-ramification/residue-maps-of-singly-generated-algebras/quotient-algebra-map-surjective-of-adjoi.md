@@ -1,6 +1,6 @@
 # Surjectivity of the residue map for a singly generated algebra
 
-**Surjectivity of the residue map for a singly generated algebra.** Let $A$ and $B$ be
+Let $A$ and $B$ be
 commutative rings, $B$ an $A$-algebra, $\mathfrak q$ an ideal of $B$ and $\mathfrak p$ its
 preimage under $A \to B$. If $B$ is generated as an $A$-algebra by a single element
 $\pi \in \mathfrak q$, then the canonical map $A/\mathfrak p \to B/\mathfrak q$ is surjective.

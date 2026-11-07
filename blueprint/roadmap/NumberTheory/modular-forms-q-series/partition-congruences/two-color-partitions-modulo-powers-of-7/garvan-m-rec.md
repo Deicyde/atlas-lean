@@ -1,6 +1,6 @@
 # Recurrence for Garvan's matrix
 
-**Recurrence for Garvan's matrix.** For all natural numbers $i \ge 8$ and $j \ge 3$, the
+For all natural numbers $i \ge 8$ and $j \ge 3$, the
 entries of Garvan's matrix $(m_{i,j})$ satisfy
 
 $$m_{i,j} = 7m_{i-3,j-1} + 35m_{i-2,j-1} + 49m_{i-1,j-1} + m_{i-7,j-2} + 7m_{i-6,j-2} +

@@ -1,6 +1,6 @@
 # Powers of shifted products over the odd numbers below $2^e$
 
-**Powers of shifted products over the odd numbers below $2^e$.** For all integers $A$ and $B$ and
+For all integers $A$ and $B$ and
 all natural numbers $j$ and $e$ with $e \ge 2$, let $S_e$ be the set of odd integers $i$ with
 $1 \le i < 2^e$. Then
 

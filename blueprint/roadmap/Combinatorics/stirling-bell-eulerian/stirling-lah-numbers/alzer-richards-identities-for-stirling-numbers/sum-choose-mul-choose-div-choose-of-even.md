@@ -1,6 +1,6 @@
 # Closed form of the Alzer–Richards binomial sum for even $m$
 
-**Closed form of the Alzer–Richards binomial sum for even $m$.** Let $m \ge 2$ be an even
+Let $m \ge 2$ be an even
 integer and $x$ a complex number, and write $\binom{z}{k} = z(z-1)\cdots(z-k+1)/k!$ for complex
 $z$. Put
 

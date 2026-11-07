@@ -1,6 +1,6 @@
 # A prime $p \equiv 1 \pmod 4$ does not divide $\mathcal{P}_{p^e}$
 
-**A prime $p \equiv 1 \pmod 4$ does not divide $\mathcal{P}_{p^e}$.** Let $p$ be a prime with
+Let $p$ be a prime with
 $p \equiv 1 \pmod 4$, let $e \ge 1$, and let $\mathcal{P}_n$ be the truncated logarithmic
 resultant product. Then $p$ does not divide $\mathcal{P}_{p^e}$.
 

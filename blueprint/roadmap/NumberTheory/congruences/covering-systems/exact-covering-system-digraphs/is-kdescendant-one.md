@@ -1,6 +1,6 @@
 # The $1$-descendants are the out-neighbours
 
-**The $1$-descendants are the out-neighbours.** Let $R$ be a digraph on $\mathbb{Z}$ and let
+Let $R$ be a digraph on $\mathbb{Z}$ and let
 $m, n \in \mathbb{Z}$. Then $n$ is a $1$-descendant of $m$ in $R$ if and only if $R$ has an edge
 $m \to n$.
 

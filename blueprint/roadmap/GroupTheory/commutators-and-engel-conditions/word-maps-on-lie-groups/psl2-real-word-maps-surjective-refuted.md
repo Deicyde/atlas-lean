@@ -1,6 +1,5 @@
 # Some nontrivial word map on $\mathrm{PSL}(2, \mathbb{R})$ is not surjective (Kourovka 16.68(a))
 
-**Some nontrivial word map on $\mathrm{PSL}(2, \mathbb{R})$ is not surjective (Kourovka 16.68(a)).**
 There is a nontrivial element $w$ of the free group $F_2$ on two generators whose word map
 $\mathrm{PSL}(2, \mathbb{R}) \times \mathrm{PSL}(2, \mathbb{R}) \to \mathrm{PSL}(2, \mathbb{R})$,
 $(x, y) \mapsto w(x, y)$, is not surjective. That is, Mycielski's question has a negative answer

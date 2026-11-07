@@ -1,6 +1,6 @@
 # Lee–Huang–Yang error constant
 
-**Lee–Huang–Yang error constant.** $\mathcal{C}$ is a real-valued function of two real
+$\mathcal{C}$ is a real-valued function of two real
 variables, not given explicitly. Let $v$ be a potential with scattering length $a$ whose closed
 support lies in the open ball $B(0, R)$, and let $\mathcal{R}(v) = \int v/(8\pi a)$. In the
 Lee–Huang–Yang lower bound (Theorem 1.2) for $v$ at density $\rho$, the error term is

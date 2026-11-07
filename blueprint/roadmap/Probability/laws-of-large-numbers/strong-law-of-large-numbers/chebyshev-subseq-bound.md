@@ -1,6 +1,6 @@
 # Chebyshev bound along the subsequence
 
-**Chebyshev bound along the subsequence.** Let $\mu$ be a probability measure on $\Omega$, let
+Let $\mu$ be a probability measure on $\Omega$, let
 $A_0, A_1, \dots \subseteq \Omega$ be pairwise independent measurable sets, let
 $S_n = \sum_{i\lt n} 1_{A_i}$, and suppose that $\mathbb{E}[S_n] \to \infty$. For $k \in \mathbb{N}$
 let $\varphi(k)$ be the least $n$ with $\mathbb{E}[S_n] \ge (k+1)^2$. Then for every

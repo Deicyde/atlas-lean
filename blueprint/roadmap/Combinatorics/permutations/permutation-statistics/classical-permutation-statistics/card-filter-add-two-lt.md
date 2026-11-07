@@ -1,6 +1,6 @@
 # Number of positions with two successors
 
-**Number of positions with two successors.** For every natural number $n$, exactly $n - 2$ of
+For every natural number $n$, exactly $n - 2$ of
 the positions $i \in \{0, 1, \dots, n-1\}$ satisfy $i + 2 < n$, where $n - 2$ is truncated
 subtraction (it is $0$ when $n < 2$).
 

@@ -1,6 +1,6 @@
 # HAMPATH emitter, phase A: one clause
 
-**HAMPATH emitter, phase A: one clause.** Notation: $\mathrm{name}(x)$ is the canonical
+Notation: $\mathrm{name}(x)$ is the canonical
 binary encoding of $x \in \mathbb{N}$ as name-bit symbols; a literal $\ell = (x, p)$ has tokens
 $\mathrm{name}(x)$ followed by the polarity marker $\mathrm{lit}(p)$ and reversed tokens
 $r_\ell$, namely $\mathrm{lit}(p)$ followed by the reverse of $\mathrm{name}(x)$;

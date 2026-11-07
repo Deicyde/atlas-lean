@@ -1,6 +1,6 @@
 # A creative set is not computable
 
-**A creative set is not computable**: its complement is productive, hence
+Its complement is productive, hence
 not RE, but the complement of a computable set is RE.
 
 ## Sources

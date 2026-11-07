@@ -1,6 +1,6 @@
 # Example of the ascent-to-descent rearrangement
 
-**Example of the ascent-to-descent rearrangement.** The ascent-to-descent rearrangement $\nu$
+The ascent-to-descent rearrangement $\nu$
 satisfies $\nu(1\,4\,1\,3\,4\,3\,1\,2\,1) = 4\,1\,4\,3\,1\,1\,2\,1\,3$, $\nu(1\,4) = 4\,1$ and
 $\nu(3\,1\,2\,1) = 1\,2\,1\,3$.
 

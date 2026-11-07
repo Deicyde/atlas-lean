@@ -1,6 +1,6 @@
 # Nonzero integral ideals coprime to the modulus are coprime fractional ideals
 
-**Nonzero integral ideals coprime to the modulus are coprime fractional ideals.** Let $K$
+Let $K$
 be a number field with ring of integers $\mathcal O_K$, let $\mathfrak m$ be a modulus of $K$
 with finite part $\mathfrak m_0$, and let $I$ be a nonzero ideal of $\mathcal O_K$ with
 $I + \mathfrak m_0 = \mathcal O_K$. Then $I$, viewed as an invertible fractional ideal of $K$,

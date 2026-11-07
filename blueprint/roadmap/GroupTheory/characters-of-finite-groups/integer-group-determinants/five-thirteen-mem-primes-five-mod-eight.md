@@ -1,6 +1,6 @@
 # $5$ and $13$ lie in $P$
 
-**$5$ and $13$ lie in $P$.** The integers $5$ and $13$ both belong to the set $P$ of
+The integers $5$ and $13$ both belong to the set $P$ of
 positive primes $p \equiv -3 \pmod 8$.
 
 ## Sources

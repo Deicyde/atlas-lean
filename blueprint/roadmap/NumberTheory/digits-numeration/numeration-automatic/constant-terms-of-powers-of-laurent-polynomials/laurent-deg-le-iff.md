@@ -1,6 +1,6 @@
 # Exponent criterion for the degree of a Laurent polynomial
 
-**Exponent criterion for the degree of a Laurent polynomial.** Let $R$ be a semiring, let
+Let $R$ be a semiring, let
 $r$ and $m$ be natural numbers, and let $f$ be a Laurent polynomial in $r$ variables
 $x_1, \dots, x_r$ with coefficients in $R$. Then Kohen's degree of $f$ (the largest absolute
 value of a single exponent occurring in $f$, or $0$ if there is none) is at most $m$ if and only

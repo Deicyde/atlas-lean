@@ -1,6 +1,6 @@
 # Splitting the verifier input
 
-**Splitting the verifier input.** For all bit strings $w$ and $y$, the verifier program
+For all bit strings $w$ and $y$, the verifier program
 leads in exactly $(|w| + 1) + (|y| + 1) + (|w| + 1) + (|y| + 1)$ steps from the configuration at
 label $\mathsf{read1}$ with empty machine state, the input stack holding (from the top) the bits
 $b$ of $w$ as $\mathrm{inl}\,b$, the separator $\mathrm{inr}\,\mathrm{none}$ and the bits $b$ of

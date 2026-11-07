@@ -1,6 +1,6 @@
 # Strassen's theorem on a finite poset, equal-mass form
 
-**Strassen's theorem on a finite poset, equal-mass form.** Let $\alpha$ be a finite partially
+Let $\alpha$ be a finite partially
 ordered set and let $p, q : \alpha \to \mathbb{R}$ be nonnegative functions with
 $\sum_{x \in \alpha} p(x) = \sum_{x \in \alpha} q(x)$. Then
 $\sum_{x \in U} p(x) \le \sum_{x \in U} q(x)$ for every upper set $U \subseteq \alpha$ if and only

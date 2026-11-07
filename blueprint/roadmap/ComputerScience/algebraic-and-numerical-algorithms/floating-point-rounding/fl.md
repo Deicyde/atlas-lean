@@ -1,6 +1,6 @@
 # Round to nearest, ties to even
 
-**Round to nearest, ties to even.** For a natural number $p$ and an element $x$ of a linearly
+For a natural number $p$ and an element $x$ of a linearly
 ordered field with a floor function, let $e$ be the exponent of the last place of $x$ at precision
 $p$, and let $\operatorname{rne}$ round to the nearest integer with ties to the even one. The
 rounding of $x$ to nearest, ties to even, is

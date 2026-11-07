@@ -1,6 +1,6 @@
 # Multiplicativity of $c^{\Omega}$
 
-**Multiplicativity of $c^{\Omega}$.** Let $R$ be a monoid with zero and $c \in R$. The
+Let $R$ be a monoid with zero and $c \in R$. The
 arithmetic function $n \mapsto c^{\Omega(n)}$ for $n \ge 1$, where $\Omega(n)$ is the number of
 prime factors of $n$ counted with multiplicity, is multiplicative.
 

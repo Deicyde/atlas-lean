@@ -1,6 +1,6 @@
 # Red-black tree deletion by the double-black method
 
-**Red-black tree deletion by the double-black method.** For a key $x$ of a linearly ordered
+For a key $x$ of a linearly ordered
 type and a red-black tree $t$, deleting $x$ from $t$ runs the double-black deletion of $x$ from
 $t$, which returns a tree whose root may be double black, and then absorbs a remaining double
 black at the root and recolors the root black.

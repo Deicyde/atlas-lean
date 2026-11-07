@@ -1,6 +1,6 @@
 # Markov–Kakutani fixed-point theorem
 
-**Markov–Kakutani fixed-point theorem.** Let $K$ be a nonempty compact convex subset of a real
+Let $K$ be a nonempty compact convex subset of a real
 normed space $E$, and let $(F_i)_{i \in I}$ be a family of continuous affine maps $E \to E$ such
 that each $F_i$ maps $K$ into $K$ and $F_i(F_j(x)) = F_j(F_i(x))$ for all $i, j \in I$ and all
 $x \in E$. Then there is $x \in K$ with $F_i(x) = x$ for every $i \in I$.

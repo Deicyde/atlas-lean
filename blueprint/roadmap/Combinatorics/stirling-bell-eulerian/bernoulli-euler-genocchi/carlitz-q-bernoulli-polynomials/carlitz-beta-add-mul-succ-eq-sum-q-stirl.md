@@ -1,6 +1,6 @@
 # Carlitz $q$-Bernoulli numbers via $q$-Stirling numbers
 
-**Carlitz $q$-Bernoulli numbers via $q$-Stirling numbers.** Let $q > 0$ with $q \ne 1$, write
+Let $q > 0$ with $q \ne 1$, write
 $[x] = (q^x - 1)/(q - 1)$, $[x]_k = [x][x - 1] \cdots [x - k + 1]$ and $[k]! = [1][2] \cdots [k]$
 (empty products are $1$), and let $\beta_n = \beta_n(0)$ be Carlitz's $q$-Bernoulli numbers. If
 real numbers $S_q(m,k)$ satisfy $[x]^m = \sum_{k=0}^{m} q^{k(k-1)/2} S_q(m,k) [x]_k$ for every

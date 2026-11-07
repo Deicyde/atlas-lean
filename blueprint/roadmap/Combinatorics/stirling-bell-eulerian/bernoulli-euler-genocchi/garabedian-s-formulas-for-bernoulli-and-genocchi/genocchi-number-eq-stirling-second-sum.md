@@ -1,6 +1,6 @@
 # Garabedian's formula for the Genocchi numbers
 
-**Garabedian's formula for the Genocchi numbers.** For every natural number $n \ge 1$, the
+For every natural number $n \ge 1$, the
 Genocchi number $G_n$, defined by $\sum_{m \ge 0} G_m x^m / m! = 2x/(e^x + 1)$, satisfies
 
 $$G_n = n \sum_{k=1}^{n} \frac{(-1)^{n-k} (k-1)!\, S(n, k)}{2^{k-1}},$$

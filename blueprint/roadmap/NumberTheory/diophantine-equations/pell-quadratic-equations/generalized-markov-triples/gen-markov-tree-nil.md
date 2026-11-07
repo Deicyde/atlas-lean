@@ -1,6 +1,6 @@
 # Root of the generalized Markov tree
 
-**Root of the generalized Markov tree.** For every natural number $k$, the root of the
+For every natural number $k$, the root of the
 $k$-generalized Markov tree $MT(k)$, its vertex at the empty path, is $(1, k + 2, 1)$.
 
 ## Sources

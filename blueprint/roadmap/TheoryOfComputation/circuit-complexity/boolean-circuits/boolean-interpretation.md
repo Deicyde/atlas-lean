@@ -1,6 +1,6 @@
 # Boolean interpretation
 
-**Boolean interpretation.** The Boolean interpretation evaluates the gates of the Boolean
+The Boolean interpretation evaluates the gates of the Boolean
 signature on the truth values $\{\mathrm{false}, \mathrm{true}\}$: NOT sends its input $x$ to
 $\lnot x$, and for each natural number $a$, the AND gate and the OR gate with inputs
 $x_0, \dots, x_a$ return $(\cdots((\mathrm{true} \land x_0) \land x_1) \cdots) \land x_a$ and

@@ -1,6 +1,6 @@
 # Pascal-row asymptotics as a limit of binomial-product asymptotics
 
-**Pascal-row asymptotics as a limit of binomial-product asymptotics.** Let $F_k$ denote the
+Let $F_k$ denote the
 factorial product constants and $P_{a,b}$ the binomial comparison functions, and let $n \ge 1$
 be a natural number and $x > 0$ a real number. Then, as $a \to \infty$ through the natural
 numbers, $\frac{F_a}{F_1 F_{a-1}} (2\pi)^{-1/4} \to \left(F_1 (2\pi)^{1/4}\right)^{-1}$,

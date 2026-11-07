@@ -1,6 +1,6 @@
 # Linear recurrences via powers of the companion matrix
 
-**Linear recurrences via powers of the companion matrix.** Let $r$ be a natural number, let
+Let $r$ be a natural number, let
 $d_0, \dots, d_r$ be integers, and let $S : \mathbb{N} \to \mathbb{Z}$ satisfy $S(0) = 1$ and
 $S(m + 1) = d_0 S(m) + d_1 S(m - 1) + \dots + d_r S(m - r)$ for every $m \ge r$. Let $\gamma(1)$
 be the $(r + 1) \times (r + 1)$ integer matrix with rows and columns indexed by $0, \dots, r$

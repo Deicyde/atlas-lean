@@ -1,6 +1,6 @@
 # Complete continuity of compact operators
 
-**Complete continuity of compact operators.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+Let $\mathbb{K}$ be $\mathbb{R}$ or
 $\mathbb{C}$, let $E$ and $F$ be normed spaces over $\mathbb{K}$, and let $T : E \to F$ be a
 compact continuous linear operator. If a sequence $(u_n)$ in $E$ converges weakly to $x \in E$,
 that is, $f(u_n) \to f(x)$ for every continuous linear functional $f : E \to \mathbb{K}$, then

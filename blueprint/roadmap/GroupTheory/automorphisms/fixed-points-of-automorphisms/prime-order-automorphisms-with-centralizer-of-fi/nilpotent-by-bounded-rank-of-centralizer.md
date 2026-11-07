@@ -1,6 +1,6 @@
 # Nilpotent-by-bounded-rank problem for automorphisms of prime order (Kourovka 13.58)
 
-**Nilpotent-by-bounded-rank problem for automorphisms of prime order (Kourovka 13.58).** The
+The
 statement that there are functions $f \colon \mathbb{N} \to \mathbb{N}$ and
 $g \colon \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ with the following property. Let $G$ be a
 nilpotent group in which every element has finite order, let $\varphi$ be an automorphism of $G$ of

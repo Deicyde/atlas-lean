@@ -1,3 +1,3 @@
 # Diagonalization of the Jukes–Cantor rate matrix
 
-**Diagonalization of the Jukes–Cantor rate matrix.** Diagonalization of `t • jcRateMatrix μ`.
+Diagonalization of `t • jcRateMatrix μ`.

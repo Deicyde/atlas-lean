@@ -1,6 +1,6 @@
 # Alternating arctangent series (Entry 7, Example 2)
 
-**Alternating arctangent series (Entry 7, Example 2).** For every real number $n > 0$, the
+For every real number $n > 0$, the
 series
 
 $$\sum_{k=0}^{\infty} (-1)^k \arctan \frac{2}{(n + k + 1)^2}$$

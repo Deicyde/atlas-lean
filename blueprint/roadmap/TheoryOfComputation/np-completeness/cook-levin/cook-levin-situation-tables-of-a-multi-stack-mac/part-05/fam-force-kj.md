@@ -1,6 +1,6 @@
 # Transition clauses force the next label, stack-and-depth form
 
-**Transition clauses force the next label, stack-and-depth form.** Let $L$ be a layout with
+Let $L$ be a layout with
 $K$ stacks and window depth $d$, let $\mathrm{la}, \mathrm{na} : \mathbb{N} \to \mathbb{N}$ and
 $\mathrm{wa} : \mathbb{N} \to \mathbb{N} \to \mathbb{N} \to \mathbb{N}$ be tables, and let $a$ be
 an assignment satisfying the transition clause family of $L$, $\mathrm{la}$, $\mathrm{na}$ and

@@ -1,6 +1,6 @@
 # Zeckendorf collections contain zero
 
-**Zeckendorf collections contain zero.** Every Zeckendorf collection $E$ of finitely supported
+Every Zeckendorf collection $E$ of finitely supported
 coefficient functions $\mathbb N \to \mathbb N$ contains the zero coefficient function.
 
 ## Sources

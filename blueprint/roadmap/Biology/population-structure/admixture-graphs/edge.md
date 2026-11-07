@@ -1,3 +1,3 @@
 # Edges of an admixture graph
 
-**Edges of an admixture graph.** The edges `(child, parent)` of the graph.
+The edges `(child, parent)` of the graph.

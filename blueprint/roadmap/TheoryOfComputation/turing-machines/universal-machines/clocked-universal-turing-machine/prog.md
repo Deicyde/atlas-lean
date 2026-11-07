@@ -1,6 +1,6 @@
 # The clocked universal program
 
-**The clocked universal program.** The program of the clocked universal machine gives an
+The program of the clocked universal machine gives an
 instruction for every label. Numbers sit on stacks as counters of units (the bit true), and a cell
 is a counter followed by a marker (the bit false).
 

@@ -1,6 +1,6 @@
 # Ramanujan's binomial series transformation without the radius hypothesis
 
-**Ramanujan's binomial series transformation without the radius hypothesis.** Let $n$ and $x$
+Let $n$ and $x$
 be complex numbers with $|x| < 1$, write $(n)_k = n(n-1)\cdots(n-k+1)$ for the falling factorial
 (with $(n)_0 = 1$), and let $Q_0, Q_1, Q_2, \ldots$ be complex numbers such that the double series
 

@@ -1,6 +1,6 @@
 # Partitions with a prescribed diagonal sequence
 
-**Partitions with a prescribed diagonal sequence.** For a natural number $n$ and a sequence
+For a natural number $n$ and a sequence
 $d = (d_k)_{k \ge 0}$ of natural numbers, $[d]$ is the finite set of partitions $\beta$ of $n$
 whose diagonal sequence $\delta(\beta)$ equals $d$.
 

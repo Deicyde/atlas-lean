@@ -1,6 +1,6 @@
 # Hyperfibonacci numbers are the hypersequences of the Fibonacci numbers
 
-**Hyperfibonacci numbers are the hypersequences of the Fibonacci numbers.** Let $F_k$ denote
+Let $F_k$ denote
 the $k$th Fibonacci number. For all natural numbers $r$ and $n$, the hyperfibonacci number
 $F^{(r)}_n$ equals the $r$th hypersequence of the Fibonacci sequence at $n$, that is,
 $F^{(r)}_n = a^{(r)}_n$ for $a_k = F_k$, where $a^{(0)}_n = a_n$ and

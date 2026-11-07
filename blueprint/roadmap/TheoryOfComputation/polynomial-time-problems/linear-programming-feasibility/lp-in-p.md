@@ -1,6 +1,6 @@
 # Linear programming is in P (Khachiyan)
 
-**Linear programming is in P (Khachiyan).** The decision problem of rational linear-program
+The decision problem of rational linear-program
 feasibility is in the complexity class P. This problem accepts exactly the bitstrings that decode,
 under the canonical bitstring encoding, to a list $A$ of $m$ rows of integers, all of the same
 length $n$, and a list $b$ of $m$ integers, for which some $x \in \mathbb{Q}^n$ satisfies

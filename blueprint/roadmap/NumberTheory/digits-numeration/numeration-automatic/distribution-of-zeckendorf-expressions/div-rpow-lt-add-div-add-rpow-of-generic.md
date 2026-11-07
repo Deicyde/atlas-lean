@@ -1,6 +1,6 @@
 # Monotonicity of the ratio under steep increments
 
-**Monotonicity of the ratio under steep increments.** Let $L$ and $\tilde L$ form a periodic
+Let $L$ and $\tilde L$ form a periodic
 Zeckendorf pair, let $Q$ be a fundamental sequence of the collection $E^*$ determined by $L$, and
 let $\tilde Q$ be a fundamental sequence of the collection $\tilde E^*$ determined by $\tilde L$.
 Put $\omega = Q_0$, $\tilde\omega = \tilde Q_0$ and $\gamma = \log_{\tilde\omega} \omega$, and let

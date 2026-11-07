@@ -1,6 +1,6 @@
 # Convolution of the $B_\kappa$-free indicator with the Möbius function
 
-**Convolution of the $B_\kappa$-free indicator with the Möbius function.** Let $F$ be a field
+Let $F$ be a field
 and let $\kappa$ assign a natural number to each polynomial in $F[T]$, with $\kappa(P) \ne 0$ for
 every monic irreducible $P \in F[T]$. Let $\mathbf{1}_{B_\kappa} \colon F[T] \to \mathbb{C}$ be
 the indicator function of the $B_\kappa$-free polynomials, let $\mu$ be the Möbius function of

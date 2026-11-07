@@ -1,6 +1,6 @@
 # Norin–Yepremyan theorem for $\mathcal{T}_5$
 
-**Norin–Yepremyan theorem for $\mathcal{T}_5$.** There exist a Steiner system $D$ of type
+There exist a Steiner system $D$ of type
 $S(4, 5, 11)$ on $\{0, \dots, 10\}$ and an $n_0 \in \mathbb{N}$ such that for every $n \ge n_0$,
 the Turán number $\mathrm{ex}(n, \mathcal{T}_5)$ of the generalized triangle $\mathcal{T}_5$ (the
 book $B_{5,2}$) equals the largest number of edges of a $5$-uniform blow-up of $D$ along a map

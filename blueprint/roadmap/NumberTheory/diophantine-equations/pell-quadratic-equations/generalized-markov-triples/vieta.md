@@ -1,6 +1,6 @@
 # Vieta jumping preserves induced solutions of the generalized second Markov equation
 
-**Vieta jumping preserves induced solutions of the generalized second Markov equation.** If
+If
 $(a, b, c)$ is an induced solution of the $k$-generalized second Markov equation
 $\mathrm{GSME}(k)$, then so are $(a, ab - c - k^2 - 2k, b)$ and $(b, bc - a - k^2 - 2k, c)$.
 

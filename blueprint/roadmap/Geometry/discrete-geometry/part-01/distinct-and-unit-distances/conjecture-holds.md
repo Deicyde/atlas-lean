@@ -1,6 +1,6 @@
 # Erdős Problem 652 is true
 
-**Erdős Problem 652 is true.** For a finite set $X$ of points in the Euclidean plane and
+For a finite set $X$ of points in the Euclidean plane and
 $x \in X$, let $R_X(x)$ be the number of distinct distances from $x$ to the other points of
 $X$. For $k \in \mathbb{N}$ let $\alpha_k$ be the infimum of the reals $c$ for which there is
 $N$ such that for every $n \ge N$ some set $X$ of exactly $n$ points in the plane has at least

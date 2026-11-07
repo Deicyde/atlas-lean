@@ -1,6 +1,6 @@
 # Generating function for humps of a fixed height
 
-**Generating function for humps of a fixed height.** Let $H_{n,k}$ be the number of pairs
+Let $H_{n,k}$ be the number of pairs
 $(P, h)$ where $P$ is a Motzkin path of length $n$ and $h$ is a hump of height $k$ in $P$ (an up
 step and a later down step with only flat steps between them, the up step ending at height
 $k$), and let $M(x) = \sum_{n \ge 0} m_n x^n$, where $m_n$ is the $n$-th Motzkin number. For

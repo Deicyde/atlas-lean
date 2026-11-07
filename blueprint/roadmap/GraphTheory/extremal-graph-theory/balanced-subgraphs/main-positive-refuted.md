@@ -1,6 +1,6 @@
 # The Erdős–Simonovits balanced subgraph claim is false
 
-**The Erdős–Simonovits balanced subgraph claim is false.** It is not the case that for all reals
+It is not the case that for all reals
 $\varepsilon$ and $\alpha$ with $0 < \varepsilon < 1$ and $0 < \alpha < 1$, for all sufficiently
 large real $D$ and then all sufficiently large $n$, every simple graph $G$ on the vertex set
 $\{0, \dots, n-1\}$ with more than $n^{1+\alpha}$ edges has a (not necessarily induced) subgraph

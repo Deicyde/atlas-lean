@@ -1,6 +1,6 @@
 # When $\sum_{n=1}^k h(n) X^n$ induces the identity on $\mathbb{F}_q$
 
-**When $\sum_{n=1}^k h(n) X^n$ induces the identity on $\mathbb{F}_q$.** Let $p$ be a
+Let $p$ be a
 prime, $\ell \ge 1$ and $q = p^\ell > 2$, and let $K$ be a finite field of characteristic
 $p$ with $q$ elements. Let $k$ be a positive integer with $k \equiv 1 \pmod{p(q-1)}$ and
 let $h \in K[X]$, with degree $d$ (taken to be $0$ when $h = 0$) and coefficient $h_i$ of

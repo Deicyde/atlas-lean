@@ -1,6 +1,6 @@
 # Characterization of reverse divisors
 
-**Characterization of reverse divisors.** A natural number $n$ is a reverse divisor if and
+A natural number $n$ is a reverse divisor if and
 only if $n > 0$ and there is a natural number $k \ge 2$ such that the decimal reversal of $n$
 equals $kn$.
 

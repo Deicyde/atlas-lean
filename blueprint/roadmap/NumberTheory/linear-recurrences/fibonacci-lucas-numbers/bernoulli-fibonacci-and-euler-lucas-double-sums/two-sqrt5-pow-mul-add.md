@@ -1,6 +1,6 @@
 # Multinomial Genocchi–Lucas expansion of $(x + q\beta)^m$
 
-**Multinomial Genocchi–Lucas expansion of $(x + q\beta)^m$.** Let
+Let
 $\beta = (1 - \sqrt{5})/2$, let $G_k$ be the Genocchi numbers and $L_k$ the Lucas numbers, and for
 every natural number $n$ let
 

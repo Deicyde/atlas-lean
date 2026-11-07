@@ -1,6 +1,6 @@
 # Eventual periodicity of the $r$-Fubini numbers modulo $K$
 
-**Eventual periodicity of the $r$-Fubini numbers modulo $K$.** For a natural number $r \ge 1$
+For a natural number $r \ge 1$
 and a natural number $m$, let $F_r(m)$ be the number of pairs $(k, f)$ of a natural number
 $k \le m$ and a surjection $f : \{0, \dots, m - 1\} \to \{0, \dots, k - 1\}$ that is injective on
 the elements less than $r$; equivalently, $F_r(m)$ counts the weak orderings of $m$ elements in

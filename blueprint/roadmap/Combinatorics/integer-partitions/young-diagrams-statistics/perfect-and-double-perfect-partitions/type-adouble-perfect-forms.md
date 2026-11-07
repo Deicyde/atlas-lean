@@ -1,6 +1,6 @@
 # Shapes of Type-A double-perfect partitions
 
-**Shapes of Type-A double-perfect partitions.** Let $r \ge 1$ and $N \ge 2(r+1)$. For a
+Let $r \ge 1$ and $N \ge 2(r+1)$. For a
 finite sequence $(a_1, \dots, a_k)$ write
 $P(a_1, \dots, a_k) = (1^{a_1-1}, a_1^{a_2-1}, \dots, (a_1\cdots a_{k-1})^{a_k-1})$ for the
 partition that MacMahon's bijection attaches to the ordered factorization $a_1 \cdots a_k$,

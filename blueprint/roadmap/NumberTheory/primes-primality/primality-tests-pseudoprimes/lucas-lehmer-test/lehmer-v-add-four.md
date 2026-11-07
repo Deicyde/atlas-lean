@@ -1,6 +1,6 @@
 # Fourth-order recurrence of Lehmer's companion sequence
 
-**Fourth-order recurrence of Lehmer's companion sequence.** For all integers $R$ and $Q$ and
+For all integers $R$ and $Q$ and
 every natural number $k$, Lehmer's companion sequence satisfies
 $\bar V_{k+4}(R, Q) = (R - 2Q)\,\bar V_{k+2}(R, Q) - Q^2\,\bar V_k(R, Q)$.
 

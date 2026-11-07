@@ -1,6 +1,6 @@
 # Non-algebraic complete lattices of formations exist
 
-**Non-algebraic complete lattices of formations exist.** There is a set $\Theta$ of classes of
+There is a set $\Theta$ of classes of
 groups that is a complete lattice of formations of finite groups and is not algebraic; that is,
 Kourovka Problem 18.92(a) has a positive answer.
 

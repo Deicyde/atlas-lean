@@ -1,6 +1,6 @@
 # Prime counting from the exact divisor count
 
-**Prime counting from the exact divisor count.** For every natural number $n \ge 2$,
+For every natural number $n \ge 2$,
 
 $$\sum_{m=2}^{n} e^{-m(\tau(m) - 2)} - \pi(n) < \frac{1}{e^3(e - 1)},$$
 

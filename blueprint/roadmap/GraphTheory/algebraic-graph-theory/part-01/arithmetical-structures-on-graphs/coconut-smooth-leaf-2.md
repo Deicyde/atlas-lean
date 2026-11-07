@@ -1,6 +1,6 @@
 # Smoothing a leaf preserves arithmetical structures
 
-**Smoothing a leaf preserves arithmetical structures.** Let $p$ and $s$ be natural numbers
+Let $p$ and $s$ be natural numbers
 with $p + s \ge 2$, let $(d, r)$ be an arithmetical structure on the coconut tree
 $CT(p, s + 1)$, and let $\ell$ be a leaf with $d(\ell) = 1$. Then the labelings $(d', r')$
 obtained by smoothing $(d, r)$ at $\ell$ form an arithmetical structure on $CT(p, s)$.

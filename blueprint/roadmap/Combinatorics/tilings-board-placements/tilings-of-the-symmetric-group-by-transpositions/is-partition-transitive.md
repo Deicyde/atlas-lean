@@ -1,6 +1,6 @@
 # λ-transitive sets of permutations
 
-**λ-transitive sets of permutations.** Let $\lambda$ be a partition of $n$ with row lengths
+Let $\lambda$ be a partition of $n$ with row lengths
 $\lambda_0 \ge \dots \ge \lambda_{k-1}$. A set $Y$ of permutations of $\{0, \dots, n-1\}$ is
 $\lambda$-transitive, in the sense of Martin and Sagan, if there is a positive integer $r$ such
 that for any two ordered set partitions $P = (P_0, \dots, P_{k-1})$ and

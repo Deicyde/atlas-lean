@@ -1,6 +1,6 @@
 # Integer decomposition property
 
-**Integer decomposition property.** A set $P \subseteq \mathbb{R}^\iota$, for a finite index
+A set $P \subseteq \mathbb{R}^\iota$, for a finite index
 set $\iota$, has the integer decomposition property (IDP) if for every integer $m \ge 1$, every
 lattice point $w \in \mathbb{Z}^\iota$ of the dilate $mP = \{m y : y \in P\}$ is a sum
 $w = x_1 + \dots + x_m$ of $m$ lattice points $x_1, \dots, x_m \in \mathbb{Z}^\iota$ of $P$.

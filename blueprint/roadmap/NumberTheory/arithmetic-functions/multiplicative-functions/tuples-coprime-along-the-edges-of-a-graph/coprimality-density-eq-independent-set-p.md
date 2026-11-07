@@ -1,6 +1,6 @@
 # Hu's independent-set formula for the coprimality density
 
-**Hu's independent-set formula for the coprimality density.** Let $k$ be a natural number, let
+Let $k$ be a natural number, let
 $E$ be a set of pairs $(a, b)$ with $1 \le a < b \le k$, let $G$ be the graph on $\{1, \dots, k\}$
 with edge set $E$, and let $A_G$ be its coprimality density. For $0 \le m \le k$, let $i_m(G)$ be
 the number of independent sets of $G$ of size $m$, that is, of sets $S \subseteq \{1, \dots, k\}$

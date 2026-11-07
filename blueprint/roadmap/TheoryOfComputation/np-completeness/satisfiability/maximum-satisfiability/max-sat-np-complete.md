@@ -1,6 +1,6 @@
 # MAXIMUM SATISFIABILITY is NP-complete
 
-**MAXIMUM SATISFIABILITY is NP-complete.** The decision problem MAXIMUM SATISFIABILITY over
+The decision problem MAXIMUM SATISFIABILITY over
 bitstrings lies in NP, and every decision problem in NP has a polynomial-time many-one
 reduction to it.
 

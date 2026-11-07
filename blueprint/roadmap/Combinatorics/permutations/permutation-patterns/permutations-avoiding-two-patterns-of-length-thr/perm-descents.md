@@ -1,6 +1,6 @@
 # Descent number of a permutation
 
-**Descent number of a permutation.** For a permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$,
+For a permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$,
 $\operatorname{des}(\sigma)$ is the number of positions $i$ with $i + 1 < n$ and
 $\sigma(i + 1) < \sigma(i)$.
 

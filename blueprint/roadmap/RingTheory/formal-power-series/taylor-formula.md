@@ -1,6 +1,6 @@
 # Taylor's formula for formal power series
 
-**Taylor's formula for formal power series.** Let $R$ be a commutative $\mathbb{Q}$-algebra
+Let $R$ be a commutative $\mathbb{Q}$-algebra
 and $f$ a formal power series over $R$, with $j$-th formal derivative $f^{(j)}$, and write
 $[X^i]h$ for the coefficient of $X^i$ in a power series $h$. In the ring of formal power series
 over $R$ in two variables $t$ and $u$,

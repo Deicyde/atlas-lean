@@ -1,6 +1,6 @@
 # Banaszczyk's volume bound as an upper bound for vector balancing (statement)
 
-**Banaszczyk's volume bound as an upper bound for vector balancing (statement).** This is the
+This is the
 proposition that there are real constants $C$ and $c$ such that for every natural number $d \ge 2$,
 all norms $X$ and $Y$ on $\mathbb{R}^d$, every natural number $n$ and all vectors
 $v_1, \dots, v_n \in \mathbb{R}^d$ with $X(v_i) \le 1$ for every $i$, there are signs

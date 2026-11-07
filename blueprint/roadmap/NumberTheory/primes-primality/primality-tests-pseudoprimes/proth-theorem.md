@@ -1,6 +1,6 @@
 # Proth's theorem
 
-**Proth's theorem.** Let $h$ and $k$ be natural numbers with $h$ odd and $h < 2^k$, and let
+Let $h$ and $k$ be natural numbers with $h$ odd and $h < 2^k$, and let
 $N = h \cdot 2^k + 1$. Then $N$ is prime if and only if there is a residue class $a$ modulo $N$
 with $a^{(N-1)/2} = -1$ in $\mathbb{Z}/N\mathbb{Z}$.
 

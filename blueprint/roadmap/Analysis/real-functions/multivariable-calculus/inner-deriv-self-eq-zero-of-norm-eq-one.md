@@ -1,6 +1,6 @@
 # A unit-norm curve in $\mathbb{R}^3$ is orthogonal to its derivative
 
-**A unit-norm curve in $\mathbb{R}^3$ is orthogonal to its derivative.** Let
+Let
 $f : \mathbb{R} \to \mathbb{R}^3$ be a differentiable map such that $\|f(t)\| = 1$ for every real
 $t$, where $\|\cdot\|$ is the Euclidean norm. Then $\langle f'(t), f(t) \rangle = 0$ for every
 real $t$, where $\langle \cdot, \cdot \rangle$ is the standard inner product on $\mathbb{R}^3$.

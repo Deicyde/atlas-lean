@@ -1,6 +1,6 @@
 # Characterization of multiple topological recurrence
 
-**Characterization of multiple topological recurrence.** A set $D$ of natural numbers is a set
+A set $D$ of natural numbers is a set
 of multiple topological recurrence if and only if $D$ is a set of $\ell$-topological recurrence for
 every natural number $\ell \ge 1$.
 

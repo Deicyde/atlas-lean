@@ -1,6 +1,6 @@
 # Binomial identities with steps three and four for generalized Leonardo numbers
 
-**Binomial identities with steps three and four for generalized Leonardo numbers.** Let $k$ be
+Let $k$ be
 an integer, and let $L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual
 generalized Leonardo numbers. For all natural numbers $n$ and $r$,
 

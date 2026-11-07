@@ -1,6 +1,6 @@
 # Norm of a polynomial over a finite field
 
-**Norm of a polynomial over a finite field.** Let $F$ be a finite field with $q$ elements. The
+Let $F$ be a finite field with $q$ elements. The
 norm of a nonzero $f \in F[T]$ is the real number $|f| = q^{\deg f}$, and $|0| = 0$.
 
 ## Sources

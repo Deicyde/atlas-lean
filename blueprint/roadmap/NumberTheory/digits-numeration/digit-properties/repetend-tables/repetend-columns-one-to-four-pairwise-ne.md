@@ -1,6 +1,6 @@
 # Columns $1$ to $4$ of the order-$6$ repetend table of $t p^k$ are pairwise different
 
-**Columns $1$ to $4$ of the order-$6$ repetend table of $t p^k$ are pairwise different.** Let
+Let
 $p$ be a prime with $p \equiv 1 \pmod 6$, let $k \ge 1$ and $t \in \{1, 2\}$, and put $n = t p^k$.
 Let the rows be the integers $b$ with $1 \le b < n$, $\gcd(b, n) = 1$ and multiplicative order $6$
 modulo $n$, and let column $j$ be the multiset of the digits $\lfloor b^{j+1}/n \rfloor \bmod b$

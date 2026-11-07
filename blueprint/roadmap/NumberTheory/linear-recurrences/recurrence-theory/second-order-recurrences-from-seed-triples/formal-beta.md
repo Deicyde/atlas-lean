@@ -1,6 +1,6 @@
 # Constant term of the formal-sequence recurrence
 
-**Constant term of the formal-sequence recurrence.** For elements $a$, $b$, $c$ of a field
+For elements $a$, $b$, $c$ of a field
 $F$, the constant term of the formal-sequence recurrence determined by the seed triplet
 $(a, b, c)$ is $\beta = \frac{b^2 - ac}{b}$.
 

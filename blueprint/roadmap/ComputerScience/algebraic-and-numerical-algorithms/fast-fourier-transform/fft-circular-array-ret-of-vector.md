@@ -1,6 +1,6 @@
 # Array circular FFT convolution agrees with the vector version
 
-**Array circular FFT convolution agrees with the vector version.** Let $R$ be a field
+Let $R$ be a field
 with a star-ring structure, let $d$ be a natural number, let $\omega \in R$ be arbitrary, and
 let $x, y$ be vectors over $R$ of length $2^d$. Then array circular FFT convolution with root
 $\omega$, run on the arrays underlying $x$ and $y$, succeeds and returns the array underlying

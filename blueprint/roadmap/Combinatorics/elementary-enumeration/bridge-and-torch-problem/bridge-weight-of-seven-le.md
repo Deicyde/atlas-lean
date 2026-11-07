@@ -1,6 +1,6 @@
 # Weights of the capacity-3 lower bound from $7$ on
 
-**Weights of the capacity-3 lower bound from $7$ on.** For every natural number $i \ge 7$,
+For every natural number $i \ge 7$,
 the weight $y_i$ of the capacity-3 lower bound equals $(4i - 8)/3$.
 
 ## Sources

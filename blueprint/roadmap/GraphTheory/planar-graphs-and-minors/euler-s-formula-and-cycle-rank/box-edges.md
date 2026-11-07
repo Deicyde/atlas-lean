@@ -1,3 +1,3 @@
 # Edges of the grid $(-n, n)^2$
 
-**Edges of the grid $[-n, n]^2$.** The edges of the grid `[-n, n]²`.
+The edges of the grid `[-n, n]²`.

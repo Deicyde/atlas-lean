@@ -1,6 +1,6 @@
 # Consecutive ratios of a shifted Gibonacci sequence are good
 
-**Consecutive ratios of a shifted Gibonacci sequence are good.** Let $a$ and $b$ be integers
+Let $a$ and $b$ be integers
 and let $(H_n)_{n \ge 0}$ be the Gibonacci sequence with $H_0 = -b$ and $H_1 = a$. For every
 natural number $n$ with $H_{n+1} \ne 0$, the ratio $H_n / H_{n+1}$ is good for $(a, b)$.
 

@@ -1,6 +1,6 @@
 # Composition-sum formulas for $F_{n+3}$, $F_{3n+1}$ and Jacobsthal and Pell numbers
 
-**Composition-sum formulas for $F_{n+3}$, $F_{3n+1}$ and Jacobsthal and Pell numbers.** Let
+Let
 $F_k$ be the Fibonacci numbers, $P_k$ the Pell numbers and $J_k$ the Jacobsthal numbers, that is,
 the Lucas sequence $U(1, -2)$, with $J_0 = 0$, $J_1 = 1$ and $J_{k+2} = J_{k+1} + 2 J_k$. For
 every $n \ge 1$, with each sum running over all compositions $(c_1, \dots, c_r)$ of $n$ (tuples

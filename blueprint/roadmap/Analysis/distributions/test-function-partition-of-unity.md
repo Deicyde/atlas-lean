@@ -1,6 +1,6 @@
 # Smooth partitions of unity subordinate to a finite open cover
 
-**Smooth partitions of unity subordinate to a finite open cover.** Let $E$ be a
+Let $E$ be a
 finite-dimensional real normed space, $K \subseteq E$ a compact set, and $(U_i)_{i \in \iota}$ a
 finite family of open subsets of $E$ with $K \subseteq \bigcup_i U_i$. Then there are smooth
 compactly supported functions $\varphi_i : E \to \mathbb{R}$, one for each $i \in \iota$, such

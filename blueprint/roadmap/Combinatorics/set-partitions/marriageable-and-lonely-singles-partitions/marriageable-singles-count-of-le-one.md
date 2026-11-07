@@ -1,6 +1,6 @@
 # Small values of the marriageable singles count
 
-**Small values of the marriageable singles count.** For every $n \le 1$, the number of
+For every $n \le 1$, the number of
 marriageable singles partitions of $\{0, \dots, n-1\}$ is $M_n = 0$: a marriageable singles
 partition needs two distinct points.
 

@@ -1,6 +1,6 @@
 # One step of the walk over earlier occurrences
 
-**One step of the walk over earlier occurrences.** Let $l = (x, p)$ be a new occurrence and
+Let $l = (x, p)$ be a new occurrence and
 $q = (x', b', L', M')$ an earlier one with $M' = L' + 1$. Let $m$ be a quiescent state whose
 stack $D$ holds the tokens of $q$ (the marker of polarity $b'$, the name bits of $x'$, then $L'$
 unary unit symbols) above a list $S$ whose first symbol, if any, is neither a unary unit nor a

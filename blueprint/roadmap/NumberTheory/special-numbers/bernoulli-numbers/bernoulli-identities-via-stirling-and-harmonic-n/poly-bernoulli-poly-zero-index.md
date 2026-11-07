@@ -1,6 +1,6 @@
 # Poly-Bernoulli polynomials of degree zero
 
-**Poly-Bernoulli polynomials of degree zero.** For every integer $k$ and every rational number
+For every integer $k$ and every rational number
 $x$, the poly-Bernoulli polynomial of degree $0$ and order $k$ satisfies $B_0^{(k)}(x) = 1$.
 
 ## Sources

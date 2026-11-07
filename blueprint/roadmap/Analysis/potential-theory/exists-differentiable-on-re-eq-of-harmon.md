@@ -1,6 +1,6 @@
 # Harmonic functions on simply connected domains are real parts
 
-**Harmonic functions on simply connected domains are real parts.** Let
+Let
 $\Omega \subseteq \mathbb{C}$ be a simply connected open set and let $u : \mathbb{C} \to \mathbb{R}$
 be harmonic on $\Omega$. Then there is a function $f$ holomorphic on $\Omega$ with
 $\operatorname{Re} f(z) = u(z)$ for all $z \in \Omega$, and $f$ is unique up to an additive

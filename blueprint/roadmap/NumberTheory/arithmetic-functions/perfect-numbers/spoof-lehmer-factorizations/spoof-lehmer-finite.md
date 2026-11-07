@@ -1,6 +1,6 @@
 # Finitely many nontrivial spoof Lehmer factorizations with $r$ factors
 
-**Finitely many nontrivial spoof Lehmer factorizations with $r$ factors.** For every natural
+For every natural
 number $r$, there are only finitely many finite multisets $F$ of pairs (base, exponent) of natural
 numbers with exactly $r$ elements such that $F$ is a nontrivial spoof $k$-Lehmer factorization for
 some integer $k$.

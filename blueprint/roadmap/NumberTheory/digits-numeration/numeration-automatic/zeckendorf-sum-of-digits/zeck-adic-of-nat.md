@@ -1,6 +1,6 @@
 # Zeckendorf digit sequence of a natural number
 
-**Zeckendorf digit sequence of a natural number.** Let $F_k$ be the Fibonacci numbers
+Let $F_k$ be the Fibonacci numbers
 ($F_0 = 0$, $F_1 = F_2 = 1$). Every $n \in \mathbb{N}$ has a unique Zeckendorf representation
 $n = F_{k_1} + \dots + F_{k_m}$ with $k_1 > \dots > k_m \ge 2$ and no two consecutive indices.
 The Zeckendorf digit sequence of $n$ is the binary sequence $(x_k)_{k \in \mathbb{N}}$ with

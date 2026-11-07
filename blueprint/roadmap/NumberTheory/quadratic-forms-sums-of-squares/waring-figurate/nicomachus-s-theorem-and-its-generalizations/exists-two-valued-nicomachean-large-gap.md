@@ -1,6 +1,6 @@
 # Two-valued Nicomachean sequences with a large gap
 
-**Two-valued Nicomachean sequences with a large gap.** Write
+Write
 $\nu(a_1, \dots, a_n) = (a_1 + \dots + a_n)^2 - (a_1^3 + \dots + a_n^3)$ for the Nicomachean defect
 of a finite sequence. For every real $\varepsilon > 0$ there are integers $0 < a < b$ and a finite
 sequence $\sigma$ whose entries all equal $a$ or $b$, in which both $a$ and $b$ occur, such that

@@ -1,6 +1,6 @@
 # General qMZV of the empty index
 
-**General qMZV of the empty index.** The general q-multiple zeta value of the empty data is
+The general q-multiple zeta value of the empty data is
 $\zeta_q(\varnothing; \varnothing) = 1$.
 
 ## Sources

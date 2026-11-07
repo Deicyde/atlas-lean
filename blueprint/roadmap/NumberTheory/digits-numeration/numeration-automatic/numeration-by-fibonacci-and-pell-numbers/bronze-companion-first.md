@@ -1,6 +1,6 @@
 # Companion bronze numbers of the first type
 
-**Companion bronze numbers of the first type.** Let $B_n$ denote the bronze numbers, the
+Let $B_n$ denote the bronze numbers, the
 Lucas sequence $U(3, -1)$: $B_0 = 0$, $B_1 = 1$ and $B_{n+2} = 3B_{n+1} + B_n$. For every
 natural number $n$, the $n$-th companion bronze number of the first type is the integer
 $C_n = B_{n+1} - 2B_n$.

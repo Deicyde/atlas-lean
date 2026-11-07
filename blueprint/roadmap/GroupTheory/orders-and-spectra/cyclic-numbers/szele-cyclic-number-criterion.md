@@ -1,6 +1,6 @@
 # Szele's criterion for cyclic numbers
 
-**Szele's criterion for cyclic numbers.** Let $n$ be a positive integer. Every group of order $n$
+Let $n$ be a positive integer. Every group of order $n$
 is cyclic if and only if $n$ is relatively prime to $\varphi(n)$, that is,
 $\gcd(n, \varphi(n)) = 1$, where $\varphi$ is Euler's totient function.
 

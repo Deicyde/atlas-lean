@@ -1,6 +1,6 @@
 # Six recursions for Glaisher's divisor functions from the theta functions
 
-**Six recursions for Glaisher's divisor functions from the theta functions.** Let $n \ge 1$
+Let $n \ge 1$
 be a natural number. Write $\sigma(m)$ for the sum of the positive divisors of $m$, $d_D(m)$ for
 the sum of the divisors $d$ of $m$ with $m/d$ odd, $d_F(m) = \sum_{d \mid m} (-1)^{d-1} d$,
 $\bar\sigma_3(m) = \sum_{d \mid m,\ m/d \text{ odd}} d^3$,

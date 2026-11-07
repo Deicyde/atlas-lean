@@ -1,6 +1,6 @@
 # Spectral decomposition of the Dirichlet Green's operator
 
-**Spectral decomposition of the Dirichlet Green's operator.** Write $L^2([0, 1])$ for the real
+Write $L^2([0, 1])$ for the real
 Hilbert space of square-integrable functions on $[0, 1]$ with Lebesgue measure, let
 $G(x, t) = \min(x, t)\,(1 - \max(x, t))$ be the Green's kernel, and for each positive integer $k$
 let $u_k(x) = \sqrt{2} \sin(k\pi x)$ and $\lambda_k = \frac{1}{k^2\pi^2}$. Let $A$ be a linear map

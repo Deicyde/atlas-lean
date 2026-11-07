@@ -1,6 +1,6 @@
 # Chosen Frobenius element at a coprime prime
 
-**Chosen Frobenius element at a coprime prime.** Let $m$ be a modulus of a number field
+Let $m$ be a modulus of a number field
 $K$, let $L / K$ be a Galois extension of number fields that is unramified outside $m$, and
 let $\mathfrak p$ be a finite prime of $K$ not dividing the finite part of $m$. Fix a prime
 $\mathfrak P$ of $\mathcal O_L$ lying over $\mathfrak p$. The chosen Frobenius element at

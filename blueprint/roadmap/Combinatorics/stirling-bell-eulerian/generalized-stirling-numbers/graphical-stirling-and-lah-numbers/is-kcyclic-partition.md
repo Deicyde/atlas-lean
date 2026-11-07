@@ -1,6 +1,6 @@
 # $k$-cyclic partition
 
-**$k$-cyclic partition.** Let $V$ be a finite linearly ordered set, $\sigma$ a
+Let $V$ be a finite linearly ordered set, $\sigma$ a
 permutation of $V$, $E$ a relation on $V$ (the directed edges of a labeled graph) and $k$ a
 natural number. Then $\sigma$ is a $k$-cyclic partition for $E$ when $\sigma$ has exactly $k$
 cycles, fixed points counted as cycles of length one, and for all $i, j \in V$, if $j$ is the

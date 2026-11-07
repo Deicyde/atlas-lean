@@ -1,6 +1,6 @@
 # The Josephus function between consecutive fixed points
 
-**The Josephus function between consecutive fixed points.** For every natural number $\ell$,
+For every natural number $\ell$,
 let $a$ and $b$ be the $(\ell+1)$-th and $(\ell+2)$-th smallest fixed points of the Josephus
 function $J_3$, and let $m = \nu_2(3a + 2)$ be the $2$-adic valuation of $3a + 2$. For every
 natural number $n$ with $a + 1 \le n \le b$, put

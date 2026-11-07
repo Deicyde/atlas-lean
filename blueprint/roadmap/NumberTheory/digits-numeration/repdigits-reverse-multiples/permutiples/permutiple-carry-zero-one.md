@@ -1,6 +1,6 @@
 # First two carries of a permutiple multiplication
 
-**First two carries of a permutiple multiplication.** Let $n$, $b$ and $d_0, \dots, d_k$
+Let $n$, $b$ and $d_0, \dots, d_k$
 be natural numbers, let $\sigma$ be a permutation of $\{0, \dots, k\}$, and write
 $(e_k, \dots, e_0)_b$ for the base-$b$ numeral $\sum_{j=0}^{k} e_j b^j$. The carries
 $c_0, c_1, \dots$ of the single-digit multiplication

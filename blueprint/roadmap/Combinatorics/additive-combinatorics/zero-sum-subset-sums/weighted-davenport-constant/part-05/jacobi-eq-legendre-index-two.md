@@ -1,6 +1,6 @@
 # Units with equal Jacobi and Legendre symbols form a subgroup of index two
 
-**Units with equal Jacobi and Legendre symbols form a subgroup of index two.** Let $n$ be an
+Let $n$ be an
 odd natural number and $p$ a prime divisor of $n$, and suppose that $p$ is not the unique prime
 divisor of $n$ with odd exponent in $n$; that is, it is not the case that the exponent of $p$ in
 $n$ is odd and every prime divisor of $n$ with odd exponent in $n$ equals $p$. Then the set of

@@ -1,6 +1,6 @@
 # The oral messages algorithm
 
-**The oral messages algorithm.** Fix which generals are loyal and a strategy for the traitors,
+Fix which generals are loyal and a strategy for the traitors,
 which assigns a value to each list of generals and each recipient. Let $c$ be a commander holding
 the value $v$, let $\sigma$ be the list of the commanders above $c$, and let $S$ be a finite set
 of lieutenants. For a general $q$, let $r_q$ be the value $q$ receives from $c$: $v$ if $c$ is

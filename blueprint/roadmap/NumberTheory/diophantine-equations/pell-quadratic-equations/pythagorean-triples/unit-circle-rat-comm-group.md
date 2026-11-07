@@ -1,6 +1,6 @@
 # Amato's group law on rational points of the unit circle
 
-**Amato's group law on rational points of the unit circle.** Let
+Let
 $P = \{(x, y) \in \mathbb{Q}^2 : x \neq 0,\ x^2 + y^2 = 1\}$ and let $\odot$ be Amato's product
 $(x, y) \odot (x', y') = (x x' / (1 + y y'), (y + y') / (1 + y y'))$. Then $(1, 0) \in P$; for all
 $p, q \in P$ we have $p \odot q \in P$; $\odot$ is associative and commutative on $P$; for every

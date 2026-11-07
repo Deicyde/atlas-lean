@@ -1,6 +1,6 @@
 # Infinitely many packings with many missing curvatures
 
-**Infinitely many packings with many missing curvatures.** For a primitive Apollonian circle
+For a primitive Apollonian circle
 packing $\mathcal{A}$ and a real number $N$, let $M_{\mathcal{A}}(N)$ be the number of missing
 curvatures of $\mathcal{A}$ up to $N$. There are infinitely many primitive Apollonian circle
 packings $\mathcal{A}$ such that $\sqrt{N} = O(M_{\mathcal{A}}(N))$ as $N$ tends to infinity.

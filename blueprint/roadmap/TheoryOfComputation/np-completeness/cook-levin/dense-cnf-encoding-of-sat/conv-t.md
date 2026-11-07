@@ -1,6 +1,6 @@
 # Step count of the main loop
 
-**Step count of the main loop.** Write $0$ for false, $1$ for true, and $xyr$ for the bit
+Write $0$ for false, $1$ for true, and $xyr$ for the bit
 string whose first two bits are $x, y$ followed by $r$. For a bit string $l$, a flag $\iota$
 (whether a clause is open) and natural numbers $n, k, m$, let $c = n + 1$ if $\iota$ is true and
 $c = 0$ otherwise. The step count $T(l, \iota, n, k, m)$ is defined by recursion on $l$:

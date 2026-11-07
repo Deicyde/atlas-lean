@@ -1,6 +1,6 @@
 # Cutting an edge of a link-cut tree
 
-**Cutting an edge of a link-cut tree.** For vertices $x$ and $y$ and a link-cut tree state
+For vertices $x$ and $y$ and a link-cut tree state
 $s$, cutting the edge between $x$ and $y$ works as follows. If $x$ and $y$ are adjacent in some
 tree of the represented forest of $s$, the result is obtained from $s$ by first making $x$ the
 root of its represented tree and then cutting off the subtree rooted at $y$. Otherwise the

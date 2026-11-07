@@ -1,6 +1,6 @@
 # A greedy schedule never idles
 
-**A greedy schedule never idles.** Let $S$ be a greedy schedule of a task graph on $p$
+Let $S$ be a greedy schedule of a task graph on $p$
 processors that takes $T$ steps, numbered $0, \dots, T - 1$. Then every step $t < T$ of $S$
 runs at least one task.
 

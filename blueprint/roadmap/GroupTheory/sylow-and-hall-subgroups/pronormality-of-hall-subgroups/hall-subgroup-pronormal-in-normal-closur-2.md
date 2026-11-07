@@ -1,6 +1,6 @@
 # Hall subgroups need not be pronormal in their normal closure
 
-**Hall subgroups need not be pronormal in their normal closure.** There exist a finite group
+There exist a finite group
 $G$ and a Hall subgroup $H$ of $G$ (that is, the order $|H|$ is coprime to the index $|G : H|$)
 such that $H$ is not pronormal in its normal closure $\langle H^G \rangle$, the smallest normal
 subgroup of $G$ containing $H$: for some $g \in \langle H^G \rangle$, no element $x$ of the subgroup

@@ -1,6 +1,6 @@
 # Gijswijt blocks
 
-**Gijswijt blocks.** For natural numbers $m$ and $t$, the block $B_t^{(m)}$ is the prefix of
+For natural numbers $m$ and $t$, the block $B_t^{(m)}$ is the prefix of
 length $\beta^{(m)}(t)$ of the $m$th order Gijswijt sequence $A^{(m)}$, where $\beta^{(m)}(t)$ is
 the $t$th block length.
 

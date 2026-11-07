@@ -1,6 +1,6 @@
 # Even-index recurrence for the Stern sequence
 
-**Even-index recurrence for the Stern sequence.** For every natural number $n \ge 1$, the
+For every natural number $n \ge 1$, the
 Stern sequence $s$ satisfies $s(2n) = s(n)$.
 
 ## Sources

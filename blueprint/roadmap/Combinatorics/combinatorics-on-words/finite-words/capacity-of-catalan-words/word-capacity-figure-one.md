@@ -1,6 +1,6 @@
 # Capacity of the word $122341123212323$
 
-**Capacity of the word $122341123212323$.** The word
+The word
 $w = 1\,2\,2\,3\,4\,1\,1\,2\,3\,2\,1\,2\,3\,2\,3$ of length $15$ has capacity $10$ (Mansour and
 Shattuck's Figure 1).
 

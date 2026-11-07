@@ -1,6 +1,6 @@
 # Divisibility of constant terms of powers of $P$ and $\tilde P$
 
-**Divisibility of constant terms of powers of $P$ and $\tilde P$.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $a \ge 1$ and $\ell$ be natural numbers, and let $P$ and $\tilde P$ be Laurent polynomials in $r$
 variables with integer coefficients such that $P^{p^{a-1}} \equiv \tilde P(x^{p^\ell}) \pmod{p^a}$
 coefficientwise, where $\tilde P(x^q)$ is obtained from $\tilde P$ by replacing each monomial

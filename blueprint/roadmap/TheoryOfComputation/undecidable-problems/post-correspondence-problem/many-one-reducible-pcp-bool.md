@@ -1,6 +1,6 @@
 # PCP over a finite alphabet many-one reduces to PCP over the binary alphabet
 
-**PCP over a finite alphabet many-one reduces to PCP over the binary alphabet.** Let $\alpha$
+Let $\alpha$
 be a finite alphabet with a primitive recursive encoding of its letters as natural numbers. Then
 the Post correspondence problem over $\alpha$ is many-one reducible to the Post correspondence
 problem over the two-letter alphabet of Booleans $\mathrm{true}$ and $\mathrm{false}$: there is a

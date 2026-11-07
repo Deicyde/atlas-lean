@@ -1,6 +1,6 @@
 # Infinitely many dimensions with Komlós constant at least $1 + \sqrt{2}$ (statement)
 
-**Infinitely many dimensions with Komlós constant at least $1 + \sqrt{2}$ (statement).** The
+The
 statement that there are infinitely many natural numbers $n \ge 1$ such that the Komlós constant
 in dimension $n$ is at least $1 + \sqrt{2}$.
 

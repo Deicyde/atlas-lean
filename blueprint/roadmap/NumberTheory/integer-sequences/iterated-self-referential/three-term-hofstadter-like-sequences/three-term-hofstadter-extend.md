@@ -1,6 +1,6 @@
 # Computing further terms of a three-term Hofstadter-like sequence
 
-**Computing further terms of a three-term Hofstadter-like sequence.** Given terms
+Given terms
 $B(1), \dots, B(m)$, padded with $0$ at nonpositive indices or not, and a natural number $k$,
 this is the list $B(1), \dots, B(m + k)$ obtained by computing $B(m + 1), \dots, B(m + k)$ one
 after another from $B(n) = B(n - B(n-1)) + B(n - B(n-2)) + B(n - B(n-3))$. It is undefined if

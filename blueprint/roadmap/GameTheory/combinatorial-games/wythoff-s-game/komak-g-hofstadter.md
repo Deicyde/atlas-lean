@@ -1,6 +1,6 @@
 # Hofstadter recursion for the Komak sequence
 
-**Hofstadter recursion for the Komak sequence.** Let $h$ be Hofstadter's $G$-sequence
+Let $h$ be Hofstadter's $G$-sequence
 (OEIS A005206), given by $h(0) = 0$ and $h(n) = n - h(h(n - 1))$ for $n \ge 1$. The sequence
 $g$ of Komak et al. satisfies $g(0) = 1$, $g(1) = 0$, and for every $n \ge 2$,
 $g(n) = 1 - g(h(n - 1))$ if $h(n - 2) < h(n - 1)$, and $g(n) = 1$ otherwise.

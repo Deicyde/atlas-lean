@@ -1,6 +1,6 @@
 # Evaluating a flat environment
 
-**Evaluating a flat environment.** Let $\rho$ be a source environment, $\rho_t$ a target
+Let $\rho$ be a source environment, $\rho_t$ a target
 environment, $\mathrm{acc}$ a map from natural numbers to target terms, and $i_1, \dots, i_n$ a
 list of natural numbers. Write $\rho_i$ for the entry of $\rho$ at index $i$, counting from $0$.
 Suppose every $i$ in the list is less than the length of $\rho$ and $\mathrm{acc}(i)$ evaluates

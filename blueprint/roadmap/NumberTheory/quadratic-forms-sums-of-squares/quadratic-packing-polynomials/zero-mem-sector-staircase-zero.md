@@ -1,6 +1,6 @@
 # The origin lies on the zeroth staircase
 
-**The origin lies on the zeroth staircase.** For all natural numbers $m, n$, the origin
+For all natural numbers $m, n$, the origin
 $(0, 0)$ lies on the staircase $J_0$ of the sector of slope $n/m$.
 
 ## Sources

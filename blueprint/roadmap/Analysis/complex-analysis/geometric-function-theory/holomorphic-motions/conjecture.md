@@ -1,6 +1,6 @@
 # Extension problem for holomorphic motions
 
-**Extension problem for holomorphic motions.** Let $\mathbb{D}$ be the open unit disc. The
+Let $\mathbb{D}$ be the open unit disc. The
 proposition asserts the following. Let $E$ be a set of complex numbers and $F$ a function
 assigning a complex number $F(w, z)$ to each pair of complex numbers $w, z$, such that (a) for
 every $z \in \mathbb{D}$ the map $w \mapsto F(w, z)$ is injective on $E$, (b) for every

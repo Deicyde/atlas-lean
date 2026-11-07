@@ -1,4 +1,4 @@
 # Fundamental imaginary quadratic discriminants are fundamental discriminants
 
-**Fundamental imaginary quadratic discriminants are fundamental discriminants.** Every
+Every
 fundamental imaginary quadratic discriminant $D$ is a fundamental discriminant.

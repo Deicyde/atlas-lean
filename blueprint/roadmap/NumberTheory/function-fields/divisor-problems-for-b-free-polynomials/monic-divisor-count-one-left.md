@@ -1,6 +1,6 @@
 # The divisor function $d_1$ on monic polynomials
 
-**The divisor function $d_1$ on monic polynomials.** Let $F$ be a field. For every monic
+Let $F$ be a field. For every monic
 $f \in F[T]$, $d_1(f) = 1$, where $d_h(f)$ is the number of $h$-tuples of monic polynomials in
 $F[T]$ whose product is $f$.
 

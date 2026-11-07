@@ -1,6 +1,6 @@
 # Extremal coefficients
 
-**Extremal coefficients.** Let $p$ be a kernel-admissible extremal parameter and write
+Let $p$ be a kernel-admissible extremal parameter and write
 $|k|^2 = k_1^2 + k_2^2$ for $k \in \mathbb{Z}^2$. The extremal coefficients $c_p(k)$, complex
 numbers indexed by $k \in \mathbb{Z}^2$, are as follows. If $p$ is a finite parameter $\mu$, then
 $c_p(0) = 0$ and $c_p(k) = 2\pi / (|k|^2 (1 + \mu |k|^2))$ for $k \neq 0$. If $p$ is the

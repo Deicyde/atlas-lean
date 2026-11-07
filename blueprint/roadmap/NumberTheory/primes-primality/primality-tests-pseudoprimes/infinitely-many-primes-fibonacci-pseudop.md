@@ -1,6 +1,6 @@
 # Infinitely many Fibonacci pseudoprimes at twice-prime indices
 
-**Infinitely many Fibonacci pseudoprimes at twice-prime indices.** Let $F_m$ denote the
+Let $F_m$ denote the
 $m$-th Fibonacci number. There are infinitely many primes $p$ such that $n = F_{2p}$ satisfies
 $n > 1$, $n$ is not prime, and $n$ divides $F_{n - \left(\frac{5}{n}\right)}$, where
 $\left(\frac{5}{n}\right)$ is the Jacobi symbol. In other words, $F_{2p}$ is a Fibonacci

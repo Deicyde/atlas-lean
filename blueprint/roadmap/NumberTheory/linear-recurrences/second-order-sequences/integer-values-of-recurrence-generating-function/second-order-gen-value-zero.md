@@ -1,6 +1,6 @@
 # Value of the generating function at zero
 
-**Value of the generating function at zero.** For all integers $a, b, p$, the function
+For all integers $a, b, p$, the function
 $A(x) = \frac{a(1 - px) + bx}{1 - px - x^2}$ on the rationals satisfies $A(0) = a$.
 
 ## Sources

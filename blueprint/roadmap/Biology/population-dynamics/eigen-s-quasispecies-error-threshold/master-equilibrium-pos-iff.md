@@ -1,3 +1,3 @@
 # Error threshold
 
-**Error threshold.** For `σ > 1`, the interior equilibrium is positive iff `σ Q > 1`.
+For `σ > 1`, the interior equilibrium is positive iff `σ Q > 1`.

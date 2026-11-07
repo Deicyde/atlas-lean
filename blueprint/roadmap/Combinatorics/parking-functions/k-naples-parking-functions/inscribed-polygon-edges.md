@@ -1,6 +1,6 @@
 # Edges of an inscribed polygon
 
-**Edges of an inscribed polygon.** Let $R$ be a set of vertices of the convex $s$-gon with
+Let $R$ be a set of vertices of the convex $s$-gon with
 vertices $0, 1, \dots, s - 1$. The edges of the polygon with vertex set $R$ are the pairs
 $(a, b)$ of elements of $R$ with $a < b$ such that either no element of $R$ lies strictly
 between $a$ and $b$, or $a$ is the least and $b$ the greatest element of $R$.

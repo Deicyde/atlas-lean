@@ -1,6 +1,6 @@
 # Exponential weight lower bound for weight-balanced trees
 
-**Exponential weight lower bound for weight-balanced trees.** Write $w(t)$ for the
+Write $w(t)$ for the
 weight of a binary tree $t$ (its number of keys plus one), and measure height so that the empty
 tree has height $0$ and a node has height one more than the taller of its children. If $t$ is
 weight balanced with parameter $1/4$ (at every node, each child has weight at most three

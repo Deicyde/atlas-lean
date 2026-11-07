@@ -1,6 +1,6 @@
 # Compositions with parts $1$, $2$, $3$ are counted by Tribonacci numbers
 
-**Compositions with parts $1$, $2$, $3$ are counted by Tribonacci numbers.** Let $T$ be a
+Let $T$ be a
 sequence of natural numbers with $T_1 = T_2 = 1$, $T_3 = 2$ and
 $T_m = T_{m-1} + T_{m-2} + T_{m-3}$ for every $m > 3$. Then for every positive integer $n$, the
 number of compositions of $n$ (ordered sequences of positive integers with sum $n$) whose parts

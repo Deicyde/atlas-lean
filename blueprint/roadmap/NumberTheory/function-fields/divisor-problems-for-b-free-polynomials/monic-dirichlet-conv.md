@@ -1,6 +1,6 @@
 # Dirichlet convolution over monic divisors
 
-**Dirichlet convolution over monic divisors.** Let $F$ be a field. The Dirichlet convolution
+Let $F$ be a field. The Dirichlet convolution
 of functions $\alpha$ and $\beta$ from $F[T]$ to $\mathbb{C}$ is the function $\alpha * \beta$
 given at $f \in F[T]$ by
 

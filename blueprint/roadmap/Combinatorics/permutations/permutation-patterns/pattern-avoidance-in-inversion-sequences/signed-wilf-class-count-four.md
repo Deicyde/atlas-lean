@@ -1,6 +1,6 @@
 # Signed Wilf classes of sets of four patterns
 
-**Signed Wilf classes of sets of four patterns.** The number $\mathrm{sw}_4$ of
+The number $\mathrm{sw}_4$ of
 Wilf-equivalence classes among the sets of $4$ length-2 signed patterns is $195$.
 
 ## Sources

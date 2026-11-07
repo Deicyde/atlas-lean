@@ -1,6 +1,6 @@
 # Labels of the Stern–Brocot tree
 
-**Labels of the Stern–Brocot tree.** Fractions are pairs (numerator, denominator) of
+Fractions are pairs (numerator, denominator) of
 natural numbers, and the mediant of $n_1/m_1$ and $n_2/m_2$ is $(n_1 + n_2)/(m_1 + m_2)$. For a
 word $w$ over $\{L, R\}$, start from the gap $(0/1, 1/1)$ and read $w$ from left to right,
 replacing the current gap $(a, b)$, with mediant $c$, by $(a, c)$ for each $L$ and by $(c, b)$

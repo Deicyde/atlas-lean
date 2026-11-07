@@ -1,6 +1,6 @@
 # Bayes' rule for discrete observations
 
-**Bayes' rule for discrete observations.** Let the parameter space $\Theta$ be a nonempty
+Let the parameter space $\Theta$ be a nonempty
 standard Borel space and the observation space $\mathcal X$ be countable with measurable
 singletons. Let $\kappa$ be a Markov kernel from $\Theta$ to $\mathcal X$ (the likelihood),
 writing $\kappa_\theta$ for the probability measure it assigns to $\theta \in \Theta$, let $\mu$

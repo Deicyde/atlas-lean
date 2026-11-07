@@ -1,6 +1,6 @@
 # Derivative formula for permutations whose first $s$ points lie in distinct cycles
 
-**Derivative formula for permutations whose first $s$ points lie in distinct cycles.** Let
+Let
 $R$ be a commutative $\mathbb{Q}$-algebra, $x \in R$ and $s \in \mathbb{N}$. For a permutation
 $\sigma$ of $\{0, \dots, n-1\}$ let $e(\sigma)$ be the number of $i$ with $\sigma(i) > i$. Let
 $A(x,u) = \sum_{n \ge 0} \frac{u^n}{n!} \sum_{\sigma} x^{e(\sigma)} \in R[[u]]$, the inner sum

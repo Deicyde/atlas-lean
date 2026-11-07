@@ -1,6 +1,6 @@
 # The threshold constant $k_0$ in the Bennett–Siksek theorem
 
-**The threshold constant $k_0$ in the Bennett–Siksek theorem.** A natural number $k_0$, to
+A natural number $k_0$, to
 be supplied: the absolute constant from which Theorem 2 holds, that is, for every natural
 number $k \ge k_0$, every solution in integers $n$, $d$, $y$ and a prime natural number $l$ of
 $\prod_{i=0}^{k-1} (n + i d) = y^l$ with $\gcd(n, d) = 1$ has $y = 0$ or $d = 0$ or

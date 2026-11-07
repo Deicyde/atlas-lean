@@ -1,6 +1,6 @@
 # Values of the map $V$
 
-**Values of the map $V$.** The map $V$ sends $(2, 3)$ to $(1, 1, 3)$, $(1, 4)$ to $(5)$,
+The map $V$ sends $(2, 3)$ to $(1, 1, 3)$, $(1, 4)$ to $(5)$,
 $(4, 1)$ to $(1, 1, 1, 2)$, $(1, 3, 1)$ to $(1, 3, 1)$ and $(2, 2, 1)$ to $(4, 1)$.
 
 ## Sources

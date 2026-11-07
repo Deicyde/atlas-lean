@@ -1,6 +1,6 @@
 # Ruciński's question on perfect matchings in dense hypergraphs
 
-**Ruciński's question on perfect matchings in dense hypergraphs.** The statement that for every
+The statement that for every
 natural number $k \ge 2$ and every rational $c$ with $1/k \le c < 1/2$, the decision problem
 $\mathrm{PM}(k, c)$ is in the complexity class P. Here $\mathrm{PM}(k, c)$ accepts a list of edges
 of a $k$-uniform hypergraph $H$ on the vertices $0, \dots, n-1$ iff every edge consists of $k$

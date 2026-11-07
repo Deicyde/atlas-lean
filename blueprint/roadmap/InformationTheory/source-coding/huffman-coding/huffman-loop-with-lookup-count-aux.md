@@ -1,6 +1,6 @@
 # Huffman loop with an accumulated lookup count
 
-**Huffman loop with an accumulated lookup count.** The loop takes a fuel $n$, a next serial
+The loop takes a fuel $n$, a next serial
 number $s$, a binary min-heap $H$ of Huffman priorities, ordered lexicographically by weight and
 then serial number, a table $T$ whose cells each hold at most one work item, and a counter $c$.
 Taking serial $i$ from a table succeeds when cell $i$ holds a work item whose priority has serial

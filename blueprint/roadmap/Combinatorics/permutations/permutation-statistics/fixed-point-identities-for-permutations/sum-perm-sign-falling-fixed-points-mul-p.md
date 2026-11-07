@@ -1,6 +1,6 @@
 # Pain's signed falling-factorial identity for fixed points
 
-**Pain's signed falling-factorial identity for fixed points.** Let $n$ and $k$ be natural
+Let $n$ and $k$ be natural
 numbers with $n \ge 2$, $k \ge 1$ and $k + 1 \le n$, and let $x$ be a real number. For a
 permutation $\sigma$ of $\lbrace 0, 1, \dots, n-1 \rbrace$, write $\operatorname{sgn}(\sigma)$ for
 its sign and $\operatorname{fix}(\sigma)$ for its number of fixed points, and for a natural number

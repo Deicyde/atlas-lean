@@ -1,6 +1,6 @@
 # Kummer's congruence
 
-**Kummer's congruence.** Let $p$ be a prime, let $B_j$ denote the $j$-th Bernoulli number,
+Let $p$ be a prime, let $B_j$ denote the $j$-th Bernoulli number,
 with $B_1 = -1/2$, and let $t$ be a natural number. Let $m$ and $n$ be natural numbers, neither
 divisible by $p - 1$, with $m \equiv n \pmod{(p-1)p^t}$. Then the rational numbers
 

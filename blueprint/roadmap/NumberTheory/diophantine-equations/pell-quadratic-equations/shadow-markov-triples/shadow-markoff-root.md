@@ -1,6 +1,6 @@
 # Initial triple of a shadow Markoff tree
 
-**Initial triple of a shadow Markoff tree.** For
+For
 $v = (\alpha, \beta, \gamma) \in \mathbb{Z}^3$, the initial triple with shadow part $v$ is
 $(1 + \alpha\varepsilon, 1 + \beta\varepsilon, 1 + \gamma\varepsilon)$, where
 $\varepsilon^2 = 0$. It is stored as the state $(x, y)$ with classical part

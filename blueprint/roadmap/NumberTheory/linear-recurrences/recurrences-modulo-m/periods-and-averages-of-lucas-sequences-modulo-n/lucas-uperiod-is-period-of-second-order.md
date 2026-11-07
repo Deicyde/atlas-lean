@@ -1,6 +1,6 @@
 # Periods of second-order recurrences modulo $m$
 
-**Periods of second-order recurrences modulo $m$.** Let $U$ be the Lucas sequence with
+Let $U$ be the Lucas sequence with
 integer parameters $P$ and $Q \neq 0$, let $m$ be a positive integer with $\gcd(m, Q) = 1$, and
 write $\pi(m)$ and $\rho(m)$ for the period and the restricted period of $U$ modulo $m$. Then
 $\pi(m) > 0$ and $\rho(m) > 0$, and every integer sequence $w$ with

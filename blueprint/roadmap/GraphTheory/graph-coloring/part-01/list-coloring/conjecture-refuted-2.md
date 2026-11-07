@@ -1,6 +1,6 @@
 # The partial list colouring conjecture is false
 
-**The partial list colouring conjecture is false.** There exist a finite graph $G$ with choice
+There exist a finite graph $G$ with choice
 number $\chi_\ell$ and natural numbers $r$, $s$ with $1 \le r \le s \le \chi_\ell$ such that
 $\lambda_r / r < \lambda_s / s$, where $\lambda_t$ is the minimum, over all assignments of lists
 of exactly $t$ colours to the vertices, of the largest number of vertices of $G$ that can be

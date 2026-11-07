@@ -1,6 +1,6 @@
 # Partial sums of the iterated digit-sum convolutions
 
-**Partial sums of the iterated digit-sum convolutions.** Let $q \ge 2$ be an integer, let
+Let $q \ge 2$ be an integer, let
 $s_q(n)$ be the sum of the base-$q$ digits of $n$, let $s_q^{(k)}$ be the $k$-fold Dirichlet
 convolution $s_q * \cdots * s_q$, and let $a(k)$ be the base-$q$ digit-convolution coefficients.
 For every integer $k \ge 2$,

@@ -1,6 +1,6 @@
 # Passing from $P$ to $\tilde P$ modulo $p^a$
 
-**Passing from $P$ to $\tilde P$ modulo $p^a$.** Let $p$ be a prime, let $a \ge 1$ and $\ell$
+Let $p$ be a prime, let $a \ge 1$ and $\ell$
 be natural numbers, and let $P$ and $\tilde P$ be Laurent polynomials in $r$ variables with
 integer coefficients such that $P^{p^{a-1}} \equiv \tilde P(x^{p^\ell}) \pmod{p^a}$
 coefficientwise, where $\tilde P(x^q)$ is obtained from $\tilde P$ by replacing each monomial

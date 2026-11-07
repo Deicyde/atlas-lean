@@ -1,6 +1,6 @@
 # Composition of combinatorial subspaces
 
-**Composition of combinatorial subspaces.** A combinatorial subspace $V$ of $\alpha^\iota$ with
+A combinatorial subspace $V$ of $\alpha^\iota$ with
 parameter set $\eta$ assigns to each coordinate $i \in \iota$ either a fixed value in $\alpha$ or a
 parameter in $\eta$, with every parameter assigned to some coordinate. Let $V$ be such a subspace
 and let $W$ be a combinatorial subspace of $\alpha^\eta$ with parameter set $\eta'$. The composite

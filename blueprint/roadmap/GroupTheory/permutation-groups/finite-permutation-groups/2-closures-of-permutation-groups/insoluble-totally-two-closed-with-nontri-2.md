@@ -1,6 +1,6 @@
 # A finite insoluble totally 2-closed group with nontrivial Fitting subgroup
 
-**A finite insoluble totally 2-closed group with nontrivial Fitting subgroup.** There exists a
+There exists a
 finite group $G$ that is not soluble, is totally $2$-closed, and has a nontrivial nilpotent normal
 subgroup (equivalently, a nontrivial Fitting subgroup).
 

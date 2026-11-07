@@ -1,6 +1,6 @@
 # Alternating binomial transform of the squared harmonic numbers
 
-**Alternating binomial transform of the squared harmonic numbers.** For a complex number
+For a complex number
 $z$ and $k \in \mathbb{N}$ write $\binom{z}{k} = z(z-1)\cdots(z-k+1)/k!$ (the empty product
 being $1$), and let $H_k = 1 + \frac{1}{2} + \cdots + \frac{1}{k}$ be the $k$-th harmonic number.
 Let $s$ be a complex number that is not a negative integer, and let $n \ge 1$. Then

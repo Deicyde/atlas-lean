@@ -1,6 +1,6 @@
 # Growth of the iterated generalized Hofstadter substitution
 
-**Growth of the iterated generalized Hofstadter substitution.** For natural numbers $k$
+For natural numbers $k$
 and $j$, let $\tau_k$ be the substitution on letters in $\mathbb{N}$ sending $k$ to the
 two-letter word $k\,1$ and every other letter $i$ to the one-letter word $i + 1$, extended
 letter by letter to finite words. The word $\tau_k^j(k)$, obtained by applying $\tau_k$

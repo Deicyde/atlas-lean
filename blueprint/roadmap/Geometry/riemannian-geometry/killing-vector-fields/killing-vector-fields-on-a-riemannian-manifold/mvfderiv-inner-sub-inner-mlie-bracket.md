@@ -1,6 +1,6 @@
 # The Lie derivative of the metric via the Levi-Civita connection
 
-**The Lie derivative of the metric via the Levi-Civita connection.** Let $M$ be a smooth
+Let $M$ be a smooth
 manifold modeled on a finite-dimensional real normed space (possibly with corners), with a smooth
 Riemannian metric $g = \langle \cdot, \cdot \rangle$ and Levi-Civita connection $\nabla$, and let
 $X$, $Y$, $Z$ be vector fields on $M$ that are differentiable at a point $x$. Write $[\cdot, \cdot]$

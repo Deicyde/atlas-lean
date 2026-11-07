@@ -1,6 +1,6 @@
 # Every positive integer is a practical number plus a triangular number
 
-**Every positive integer is a practical number plus a triangular number.** For every natural
+For every natural
 number $n > 0$ there are a practical number $q$ and a natural number $k$ with
 $n = q + k(k+1)/2$; the case $k = 0$, where the triangular number is $0$, is allowed.
 

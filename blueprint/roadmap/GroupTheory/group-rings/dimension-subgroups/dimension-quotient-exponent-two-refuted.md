@@ -1,6 +1,6 @@
 # Dimension quotients need not have exponent dividing 2
 
-**Dimension quotients need not have exponent dividing 2.** There exist a group $G$, an integer
+There exist a group $G$, an integer
 $n \ge 1$ and an element $x$ of the $n$-th dimension subgroup $D_n(G)$ such that $x^2$ does not lie
 in $\gamma_n(G)$, the $n$-th term of the lower central series of $G$ (indexed so that
 $\gamma_1(G) = G$). That is, the answer to Kourovka Problem 12.22(b) is negative: the image of

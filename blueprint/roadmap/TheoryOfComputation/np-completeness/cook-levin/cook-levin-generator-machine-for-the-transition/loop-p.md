@@ -1,6 +1,6 @@
 # Time-loop invariant of the transition-family generator
 
-**Time-loop invariant of the transition-family generator.** Let $L$ be a layout with
+Let $L$ be a layout with
 label/state block size $A$, $K$ stacks and $g$ symbol codes, let $T, H \in \mathbb{N}$, and write
 $W = A + KHg$ for the number of variables per time step and $V = (T + 1)W$ for the total number of
 variables. Counter values $f$ of the generator satisfy the time-loop invariant when the scratch

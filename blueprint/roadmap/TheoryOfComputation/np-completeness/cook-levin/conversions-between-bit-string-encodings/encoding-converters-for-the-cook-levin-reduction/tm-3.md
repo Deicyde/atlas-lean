@@ -1,6 +1,6 @@
 # Machine writing the canonical encoding of a bit list
 
-**Machine writing the canonical encoding of a bit list.** The multi-stack Turing machine with
+The multi-stack Turing machine with
 the three stacks of the bit-list converters (input, output and a stash), all over bits, reading
 its input from the input stack and leaving its output on the output stack, with the two labels
 $\mathrm{read}$ and $\mathrm{emit}$ and start label $\mathrm{read}$, an optional bit as internal

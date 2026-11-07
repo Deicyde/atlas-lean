@@ -1,6 +1,6 @@
 # Fagin's theorem: NP is existential second-order logic
 
-**Fagin's theorem: NP is existential second-order logic.** Let $K$ be a class of finite
+Let $K$ be a class of finite
 graphs, each given as a pair $(n, t)$ of a number $n$ of vertices and a row-major edge table $t$
 (a list of booleans), and suppose that $K$ is closed under graph isomorphism. Then the decision
 problem that accepts exactly the bitstrings decoding to a member $(n, t)$ of $K$ whose edge table

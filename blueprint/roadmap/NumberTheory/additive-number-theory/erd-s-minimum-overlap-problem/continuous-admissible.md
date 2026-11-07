@@ -1,6 +1,6 @@
 # Admissible pairs for the continuous minimum-overlap problem
 
-**Admissible pairs for the continuous minimum-overlap problem.** A pair of functions
+A pair of functions
 $f, g : \mathbb{R} \to \mathbb{R}$ is admissible when $f$ and $g$ are almost everywhere measurable
 with respect to Lebesgue measure, take values in $[0, 1]$ at every point, vanish at every point
 outside the support interval $[-1, 1]$, satisfy $f(t) + g(t) = 1$ for every $t \in [-1, 1]$, and

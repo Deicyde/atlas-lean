@@ -1,6 +1,6 @@
 # Split Thue recurrence family
 
-**Split Thue recurrence family.** Let $d \in \mathbb{N}$, let $G_i(n)$ be integers for
+Let $d \in \mathbb{N}$, let $G_i(n)$ be integers for
 $i, n \in \mathbb{N}$, and let $\gamma_i \in \mathbb{R}$ and $\delta_i \in \mathbb{C}$ for
 $i \in \mathbb{N}$. Then $(d, G, \gamma, \delta)$ is a split Thue recurrence family when $d \ge 3$
 and there are finite sets $R_i \subseteq \mathbb{C}$ and complex numbers $c_i(r)$

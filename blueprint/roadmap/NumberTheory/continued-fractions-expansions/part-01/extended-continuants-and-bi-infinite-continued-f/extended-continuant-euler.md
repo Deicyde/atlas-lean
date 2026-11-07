@@ -1,6 +1,6 @@
 # Euler's continuant identity for extended continuants
 
-**Euler's continuant identity for extended continuants.** Let $x : \mathbb{Z} \to \mathbb{Z}$
+Let $x : \mathbb{Z} \to \mathbb{Z}$
 be an integer sequence and write $K_a(x)_b$ for its extended continuant of order $a$ with start
 index $b$. For all integers $h$, $k$, $\ell$, $m$,
 

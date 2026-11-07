@@ -1,6 +1,6 @@
 # End blocks of length at most three ending in $0$
 
-**End blocks of length at most three ending in $0$.** Let $\varphi$ be the golden ratio.
+Let $\varphi$ be the golden ratio.
 For integers $p, q, r$ let $V(p, q, r) = \{p \lfloor n\varphi \rfloor + qn + r : n \ge 1\}$ and
 $V_0(p, q, r) = \{p \lfloor n\varphi \rfloor + qn + r : n \ge 0\}$. For a word $w$ of length $\ell$
 let $R_w$ be the set of natural numbers having a base phi expansion whose digits

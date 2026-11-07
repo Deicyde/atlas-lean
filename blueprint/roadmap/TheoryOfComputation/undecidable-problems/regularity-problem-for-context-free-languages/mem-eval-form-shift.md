@@ -1,6 +1,6 @@
 # Shifted right-hand sides denote images of words of $g$
 
-**Shifted right-hand sides denote images of words of $g$.** Let $g$ be an encoded context-free
+Let $g$ be an encoded context-free
 grammar over $T$, let $L_g(n)$ be the language $g$ generates from nonterminal $n$ and $L(g)$ its
 language. For a word $u$ over $T$ write $\bar u$ for the same word over $T \sqcup \{\#, 0, 1\}$.
 Let $V$ assign to each $m \in \mathbb{N}$ the language $V(m)$ over $T \sqcup \{\#, 0, 1\}$ given by

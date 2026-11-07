@@ -1,6 +1,6 @@
 # Hyperplane slicing theorem
 
-**Hyperplane slicing theorem.** There is a constant $c > 0$ such that for every $n \ge 1$ and
+There is a constant $c > 0$ such that for every $n \ge 1$ and
 every convex body $K \subseteq \mathbb{R}^n$ (a convex compact set with nonempty interior) of
 Lebesgue volume $1$ there exist a hyperplane $H \subseteq \mathbb{R}^n$ (a set
 $\{x : f(x) = t\}$ for a nonzero linear functional $f$ on $\mathbb{R}^n$ and some

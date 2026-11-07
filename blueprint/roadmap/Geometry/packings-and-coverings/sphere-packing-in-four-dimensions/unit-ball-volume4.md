@@ -1,6 +1,6 @@
 # Volume of the unit ball in $\mathbb{R}^4$
 
-**Volume of the unit ball in $\mathbb{R}^4$.** The volume of the unit ball in $\mathbb{R}^4$ is
+The volume of the unit ball in $\mathbb{R}^4$ is
 the Lebesgue measure, as an extended nonnegative real number, of the open ball of radius $1$ about
 the origin in four-dimensional Euclidean space $\mathbb{R}^4$.
 

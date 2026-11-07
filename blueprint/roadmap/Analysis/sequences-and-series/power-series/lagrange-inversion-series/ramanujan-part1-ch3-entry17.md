@@ -1,6 +1,6 @@
 # Taylor coefficients of the solution of $x^x = a^a e^h$ (Chapter 3, Entry 17)
 
-**Taylor coefficients of the solution of $x^x = a^a e^h$ (Chapter 3, Entry 17).** For every
+For every
 real number $a > 1/e$ there exist a real number $R > 0$ and a function
 $x : \mathbb{R} \to \mathbb{R}$, analytic at $0$, with $x(0) = a$, such that $x(h) > 0$ and
 $x(h)^{x(h)} = a^a e^h$ for all real $h$ with $|h| < R$, and such that the numbers

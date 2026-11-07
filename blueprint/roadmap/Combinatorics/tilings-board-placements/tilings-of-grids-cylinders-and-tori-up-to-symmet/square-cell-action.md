@@ -1,6 +1,6 @@
 # The dihedral action on the cells of the square grid
 
-**The dihedral action on the cells of the square grid.** For a natural number $n$, let $r$ and
+For a natural number $n$, let $r$ and
 $f$ be the maps of $(\mathbb{Z}/n\mathbb{Z})^2$ given by $r(x, y) = (-1 - y, x)$ (the quarter-turn)
 and $f(x, y) = (-1 - x, y)$ (the reflection). The dihedral group of order $8$ has the rotations
 $r_i$ and the reflections $sr_i$ for $i \in \mathbb{Z}/4\mathbb{Z}$. The action sends $r_i$ to the

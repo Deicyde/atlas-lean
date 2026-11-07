@@ -1,6 +1,6 @@
 # The term $b_0$ of the companion sequence
 
-**The term $b_0$ of the companion sequence.** For every natural number $\ell$, the companion
+For every natural number $\ell$, the companion
 sequence $(b_n)$ of the mex sequence of $K^\ell$ (Wythoff's game in which the positions $(x, y)$
 with $x + y \le \ell$ are terminal) satisfies $b_0 = 2\ell + 2$.
 

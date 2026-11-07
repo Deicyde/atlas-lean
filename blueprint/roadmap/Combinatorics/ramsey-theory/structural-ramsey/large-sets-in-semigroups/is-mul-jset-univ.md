@@ -1,6 +1,6 @@
 # A nonempty semigroup is a J-set in itself
 
-**A nonempty semigroup is a J-set in itself.** If $S$ is a nonempty semigroup, then $S$ is a
+If $S$ is a nonempty semigroup, then $S$ is a
 $J$-set in $S$.
 
 ## Sources

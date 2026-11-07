@@ -1,6 +1,6 @@
 # Hyperharmonic Euler sums as sums over all indices
 
-**Hyperharmonic Euler sums as sums over all indices.** For every integer $k \ge 0$, complex
+For every integer $k \ge 0$, complex
 numbers $r$ and $a$, and integer $p$, write $H_n^{[r]}(k)$ for the generalized hyperharmonic
 number. Then the hyperharmonic Euler sum $S(k, r; p; a) = \sum_{n \ge k} H_n^{[r]}(k) / (n + a)^p$
 equals $\sum_{n \ge 0} H_n^{[r]}(k) / (n + a)^p$, because $H_n^{[r]}(k) = 0$ for $n < k$.

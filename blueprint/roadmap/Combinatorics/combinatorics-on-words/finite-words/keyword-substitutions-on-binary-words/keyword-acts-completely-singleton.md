@@ -1,6 +1,6 @@
 # Complete action of a one-element list
 
-**Complete action of a one-element list.** For a binary keyword $a$, an index $j$ and a
+For a binary keyword $a$, an index $j$ and a
 binary word $u$, the one-element list $[j]$ acts completely on $u$ if and only if the simple map
 $\varphi_j$ of $a$ changes $u$, that is, $\varphi_j(u) \ne u$.
 

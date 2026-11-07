@@ -1,6 +1,6 @@
 # Bi-brackets
 
-**Bi-brackets.** For integers $k_1, \dots, k_r \ge 1$ and $d_1, \dots, d_r \ge 0$, the
+For integers $k_1, \dots, k_r \ge 1$ and $d_1, \dots, d_r \ge 0$, the
 bi-bracket is the $q$-series
 
 $$

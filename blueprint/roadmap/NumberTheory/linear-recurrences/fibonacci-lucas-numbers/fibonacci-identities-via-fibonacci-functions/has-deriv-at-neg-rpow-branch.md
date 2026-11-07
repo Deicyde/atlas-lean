@@ -1,6 +1,6 @@
 # Derivative of a branch of $\lambda^x$ for negative $\lambda$
 
-**Derivative of a branch of $\lambda^x$ for negative $\lambda$.** Let $\lambda < 0$ be real
+Let $\lambda < 0$ be real
 and $m$ an integer, and consider the branch $\lambda^y = (-\lambda)^y e^{i\pi(2m+1)y}$, a function
 of real $y$ with complex values, where $(-\lambda)^y$ is the real power of the positive number
 $-\lambda$. For every real $x$ this function has derivative

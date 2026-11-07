@@ -1,6 +1,6 @@
 # Products of two class transpositions have only finitely many orders
 
-**Products of two class transpositions have only finitely many orders.** The claim of Kourovka
+The claim of Kourovka
 Problem 18.48 holds: the set of positive integers $k$ such that $\sigma\tau$ has order $k$ for some
 class transpositions $\sigma$ and $\tau$ of $\mathbb{Z}$ is finite.
 

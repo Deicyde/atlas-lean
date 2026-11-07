@@ -1,6 +1,6 @@
 # Oresme–Pell–Lucas congruence modulo 49
 
-**Oresme–Pell–Lucas congruence modulo 49.** Let $Q_n$ denote the Pell–Lucas numbers, with
+Let $Q_n$ denote the Pell–Lucas numbers, with
 $Q_0 = Q_1 = 1$. For every natural number $n$,
 $2^{n+1} (5 Q_{n+1} - 4 Q_n) \equiv 2 - 7n \pmod{49}$ as integers.
 

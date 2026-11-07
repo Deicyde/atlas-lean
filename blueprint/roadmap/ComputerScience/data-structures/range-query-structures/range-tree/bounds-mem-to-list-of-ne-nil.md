@@ -1,6 +1,6 @@
 # The cached bounds of a nonempty bounds-valid range tree are leaf values
 
-**The cached bounds of a nonempty bounds-valid range tree are leaf values.** Let $t$ be a
+Let $t$ be a
 bounds-valid range tree with at least one leaf. Then the cached lower bound of $t$ and the cached
 upper bound of $t$ are both leaf values of $t$.
 

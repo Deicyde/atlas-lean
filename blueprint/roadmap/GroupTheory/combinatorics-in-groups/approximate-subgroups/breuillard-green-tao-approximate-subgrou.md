@@ -1,6 +1,6 @@
 # Breuillard–Green–Tao structure theorem for approximate subgroups
 
-**Breuillard–Green–Tao structure theorem for approximate subgroups.** For every real number
+For every real number
 $K$ there is a natural number $C \ge 1$ with the following property. Let $G$ be a group and let
 $A \subseteq G$ be a $K$-approximate subgroup, that is, $1 \in A$, $A^{-1} = A$, and $A^2$ is
 covered by at most $K$ left translates of $A$. Then there are a subgroup $H$ of $G$, a normal

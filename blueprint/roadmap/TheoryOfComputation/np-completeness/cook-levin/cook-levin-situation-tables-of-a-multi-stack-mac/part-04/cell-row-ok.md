@@ -1,6 +1,6 @@
 # C1c (cell arrays of good configurations are well-formed rows)
 
-**C1c (cell arrays of good configurations are well-formed rows).** Let $E$ be an encoding
+Let $E$ be an encoding
 of a machine $M$ with $K$ numbered stacks, and let $c$ be a good configuration of $M$, that is,
 every symbol on every stack of $c$ lies in the effective alphabet of $E$. Let $w$ be the cell
 array of $c$: $w(k, j)$ is the code of the symbol at depth $j$ from the top of stack number $k$,

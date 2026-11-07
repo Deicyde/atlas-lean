@@ -1,6 +1,6 @@
 # The greatest common unitary divisor is a common unitary divisor
 
-**The greatest common unitary divisor is a common unitary divisor.** For positive natural
+For positive natural
 numbers $a$ and $b$, the greatest common unitary divisor $\gcd_1(a, b)$ is a unitary divisor of
 $a$ and a unitary divisor of $b$.
 

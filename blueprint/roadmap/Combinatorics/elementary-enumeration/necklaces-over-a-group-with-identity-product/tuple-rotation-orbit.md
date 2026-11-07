@@ -1,6 +1,6 @@
 # Rotation orbit of a tuple
 
-**Rotation orbit of a tuple.** Let $x = (x_0, \dots, x_{n-1})$ be a tuple of length $n$ with
+Let $x = (x_0, \dots, x_{n-1})$ be a tuple of length $n$ with
 entries in a type $\alpha$, and let $\sigma$ be the cyclic rotation of $\{0, \dots, n-1\}$ that
 sends $i$ to $i + 1$ for $i < n - 1$ and sends $n - 1$ to $0$. The rotation orbit of $x$ is the
 set of tuples $x \circ \sigma^m$ for $m \in \mathbb{N}$, that is, of the cyclic shifts

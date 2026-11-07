@@ -1,6 +1,6 @@
 # Roth's theorem with divisibility conditions
 
-**Roth's theorem with divisibility conditions.** Let $\alpha$ be a real algebraic number, let
+Let $\alpha$ be a real algebraic number, let
 $0 < \varepsilon \le 1$, and let $S$ be a finite index set carrying, for each $l \in S$, a natural
 number $p_l$ and reals $\mu_l, \nu_l \ge 0$ with $\sigma = \sum_{l \in S} (\mu_l + \nu_l)$ less
 than $2 + \varepsilon$. Then there are only finitely many rationals $q$, written in lowest terms

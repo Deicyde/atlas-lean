@@ -1,6 +1,6 @@
 # Sift-up restores $d$-ary heap order
 
-**Sift-up restores $d$-ary heap order.** Let $a$ be an array over a linearly ordered type,
+Let $a$ be an array over a linearly ordered type,
 of length $|a|$ with entries $a_0, \dots, a_{|a|-1}$, let $d$ and $i$ be natural numbers, and
 write $p(j) = \lfloor (j-1)/d \rfloor$ for the parent of an index $j > 0$. Suppose $a$ is ready
 for sift-up at $i$: $d \ge 2$, $i < |a|$, $a_{p(j)} \le a_j$ for every $0 < j < |a|$ with

@@ -1,6 +1,6 @@
 # Binary conversion (SUBSET-SUM reduction machine)
 
-**Binary conversion (SUBSET-SUM reduction machine).** Let $k$ be a natural number, $v$ a value
+Let $k$ be a natural number, $v$ a value
 of the machine's Boolean flag and $S$ an assignment of contents to the stacks, and list the binary
 digits of $k$ least significant first, without leading zeros (so there are none for $k = 0$).
 Suppose stack $A$ holds $k$ copies of the unit symbol and stack $H$ is empty. Then, starting at

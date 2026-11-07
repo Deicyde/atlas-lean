@@ -1,6 +1,6 @@
 # Optimal vertices of linear programs
 
-**Optimal vertices of linear programs.** Consider a linear program with $m$ variables and
+Consider a linear program with $m$ variables and
 objective vector $c \in \mathbb{R}^m$, and let $P \subseteq \mathbb{R}^m$ be its feasible region
 and $f(x) = c \cdot x$ its objective function. If $P$ is nonempty and bounded, then some
 $x \in P$ maximises $f$ on $P$ and is an extreme point of $P$, that is, $x$ does not lie in the

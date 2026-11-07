@@ -1,6 +1,6 @@
 # Bound on the number of generalized Markov triples with a given maximum
 
-**Bound on the number of generalized Markov triples with a given maximum.** Let $k$ be a
+Let $k$ be a
 natural number such that either $k \ge 4$ is even and $k/2 + 1$ and $k/2 - 1$ are squarefree,
 or $k$ is odd and the integers $k + 2$ and $k - 2$ are squarefree. Let $b$ be a $k$-generalized
 Markov number that is not divisible by $4$, and suppose that the number $n$ of odd primes

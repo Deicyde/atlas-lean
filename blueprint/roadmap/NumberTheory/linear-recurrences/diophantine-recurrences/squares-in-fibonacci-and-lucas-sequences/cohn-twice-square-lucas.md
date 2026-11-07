@@ -1,6 +1,6 @@
 # Cohn's theorem on Lucas numbers of the form $2x^2$
 
-**Cohn's theorem on Lucas numbers of the form $2x^2$.** Let $L_n$ denote the Lucas numbers,
+Let $L_n$ denote the Lucas numbers,
 with $L_0 = 2$, $L_1 = 1$ and $L_{n+2} = L_{n+1} + L_n$. If $n$ and $x$ are natural numbers
 with $n \ge 1$ and $L_n = 2x^2$, then $n = 6$.
 

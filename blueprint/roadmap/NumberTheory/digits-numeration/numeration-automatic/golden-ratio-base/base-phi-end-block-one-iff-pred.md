@@ -1,6 +1,6 @@
 # End blocks $u1 \cdot 0$ and $u0 \cdot 0$ of consecutive numbers
 
-**End blocks $u1 \cdot 0$ and $u0 \cdot 0$ of consecutive numbers.** Let $u$ be a nonempty
+Let $u$ be a nonempty
 word of length $m - 1$, read as the digits $d_{m-1} \cdots d_1$ (a letter $1$ is a digit $1$,
 any other letter a digit $0$), such that the word $u1$ has no two adjacent letters $1$. Then
 for every $N \ge 1$, some base phi expansion of $N$ has digits

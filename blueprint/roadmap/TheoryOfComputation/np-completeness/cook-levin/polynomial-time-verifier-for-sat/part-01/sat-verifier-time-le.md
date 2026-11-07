@@ -1,6 +1,6 @@
 # Declared time bound of the SAT verifier
 
-**Declared time bound of the SAT verifier.** For all lists of Booleans $x$ (the input) and
+For all lists of Booleans $x$ (the input) and
 $w$ (the witness), the declared time cost of the SAT verifier on $(x, w)$ is at most $N^2 + N$,
 where $N = |x| + |w|$ is the sum of their lengths.
 

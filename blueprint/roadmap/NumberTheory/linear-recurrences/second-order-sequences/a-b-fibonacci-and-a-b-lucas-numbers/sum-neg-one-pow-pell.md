@@ -1,6 +1,6 @@
 # Alternating sums of Pell and Pell–Lucas numbers
 
-**Alternating sums of Pell and Pell–Lucas numbers.** Let $(P_n)$ and $(Q_n)$ be the Pell
+Let $(P_n)$ and $(Q_n)$ be the Pell
 and Pell–Lucas numbers, that is, the $(2, 1)$-Fibonacci and $(2, 1)$-Lucas numbers, viewed as
 complex numbers. Then for every integer $n \ge 0$,
 

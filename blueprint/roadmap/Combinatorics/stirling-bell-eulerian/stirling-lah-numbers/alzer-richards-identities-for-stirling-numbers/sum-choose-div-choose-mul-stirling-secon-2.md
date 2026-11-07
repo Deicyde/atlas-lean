@@ -1,6 +1,6 @@
 # Vanishing alternating Stirling sums with $\binom{r+m}{k}$
 
-**Vanishing alternating Stirling sums with $\binom{r+m}{k}$.** Write $S(n, k)$ for the
+Write $S(n, k)$ for the
 Stirling numbers of the second kind. For every natural number $m \ge 1$ and every natural number
 $r$,
 

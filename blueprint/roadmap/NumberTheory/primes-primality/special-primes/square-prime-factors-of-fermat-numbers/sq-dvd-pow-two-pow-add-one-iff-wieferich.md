@@ -1,6 +1,6 @@
 # Squared prime factors of $a^{2^n} + 1$
 
-**Squared prime factors of $a^{2^n} + 1$.** Let $p$ be an odd prime, let $a$ be a natural
+Let $p$ be an odd prime, let $a$ be a natural
 number not divisible by $p$, and let $n$ be a natural number. Then $p^2$ divides $a^{2^n} + 1$ if
 and only if $a^{p-1} \equiv 1 \pmod{p^2}$ (that is, $p$ is a Wieferich prime to base $a$) and the
 multiplicative order of $a$ modulo $p$ is $2^{n+1}$.

@@ -1,6 +1,6 @@
 # Baker–Wüstholz theorem on linear forms in logarithms
 
-**Baker–Wüstholz theorem on linear forms in logarithms.** Let $n \ge 1$, let $K$ be a number
+Let $n \ge 1$, let $K$ be a number
 field of degree $d = [K : \mathbb{Q}]$, let $\varphi : K \to \mathbb{C}$ be a ring homomorphism,
 and let $\alpha_1, \dots, \alpha_n$ be nonzero elements of $K$. Let $b_1, \dots, b_n$ be integers
 and let $B \ge 2$ be a natural number with $|b_i| \le B$ for every $i$. With $\log$ the principal

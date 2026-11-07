@@ -1,6 +1,6 @@
 # Unconditional bounds for $R_h^{-1}(k)$, $k \ge 4$, and $R_h(n)$, $n \ge h + 3$
 
-**Unconditional bounds for $R_h^{-1}(k)$, $k \ge 4$, and $R_h(n)$, $n \ge h + 3$.** Let
+Let
 $h \ge 2$. Write $R_h(n)$ for the largest size of a $B_h$-set contained in $\{1, \dots, n\}$ and
 $R_h^{-1}(k)$ for the least $n$ such that $\{1, \dots, n\}$ contains a $B_h$-set with $k$
 elements. Then every natural number $k \ge 4$ satisfies

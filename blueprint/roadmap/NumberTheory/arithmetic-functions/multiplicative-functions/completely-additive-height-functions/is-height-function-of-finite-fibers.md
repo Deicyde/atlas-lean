@@ -1,6 +1,6 @@
 # Height functions with prescribed values at the primes
 
-**Height functions with prescribed values at the primes.** Let $f : \mathbb{N} \to \mathbb{N}$
+Let $f : \mathbb{N} \to \mathbb{N}$
 satisfy $f(i) \ge 1$ for every $i \ge 1$, and suppose that for every $t \ge 1$ only finitely many
 $i \ge 1$ have $f(i) = t$. Let $H$ be the completely additive function on the positive integers
 with $H(p) = f(i)$ when $p$ is the $i$-th prime (so $H(2) = f(1)$). Then $H$ is a height function,

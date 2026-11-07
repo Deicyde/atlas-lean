@@ -1,6 +1,6 @@
 # Cesàro means of Fourier series
 
-**Cesàro means of Fourier series.** For $f \colon \mathbb{R} \to \mathbb{C}$, a natural number
+For $f \colon \mathbb{R} \to \mathbb{C}$, a natural number
 $N$ and $x \in \mathbb{R}$, the $N$-th Cesàro mean of the Fourier series of $f$ at $x$ is the
 average of the first $N + 1$ symmetric Fourier partial sums,
 $\sigma_N(f)(x) = \frac{1}{N+1} \sum_{k=0}^{N} S_k(f)(x)$, where

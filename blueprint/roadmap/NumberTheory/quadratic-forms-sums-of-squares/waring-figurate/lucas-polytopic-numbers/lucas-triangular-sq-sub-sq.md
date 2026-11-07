@@ -1,6 +1,6 @@
 # Weighted difference of consecutive squared Lucas triangular numbers
 
-**Weighted difference of consecutive squared Lucas triangular numbers.** Let $(s, t)$ be
+Let $(s, t)$ be
 nondegenerate Lucas parameters, with Lucas brackets $\{n\}_{s,t}$ and Lucasnomial coefficients
 $\binom{n}{k}_{s,t}$. For every natural number $n$,
 

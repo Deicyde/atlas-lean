@@ -1,6 +1,6 @@
 # The map $\psi$ is a bijection from near-hook tableaux to first-quadrant paths
 
-**The map $\psi$ is a bijection from near-hook tableaux to first-quadrant paths.** For every
+For every
 $n \in \mathbb{N}$, the map $\psi$ restricts to a bijection from the standard Young tableaux of
 shape $\theta^{(n)}$ onto the set $\mathcal{P}_n$ of first-quadrant paths. Here a standard Young
 tableau of shape $\theta^{(n)}$ is a semistandard Young tableau of that shape whose entries map

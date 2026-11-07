@@ -1,6 +1,6 @@
 # Some interval contains distinct multiples
 
-**Some interval contains distinct multiples.** For all natural numbers $n$ and $m$ there is a
+For all natural numbers $n$ and $m$ there is a
 natural number $L$ such that the interval $(m, m + L]$ contains distinct multiples of
 $1, \dots, n$.
 

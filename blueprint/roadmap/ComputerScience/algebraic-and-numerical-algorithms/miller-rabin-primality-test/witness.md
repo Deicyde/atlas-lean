@@ -1,6 +1,6 @@
 # Miller–Rabin witness test
 
-**Miller–Rabin witness test.** For natural numbers $a$ and $n$, write $n - 1 = 2^t u$ with $u$
+For natural numbers $a$ and $n$, write $n - 1 = 2^t u$ with $u$
 odd (here $n - 1$ is truncated at $0$, and $t = u = 0$ when $n \le 1$). The test sets $x_0$ to the
 result of modular exponentiation of $a$ to the power $u$ modulo $n$, which is $a^u \bmod n$ when
 $u > 0$ and $1$ when $u = 0$. For $i = 1, \dots, t$ it computes $x_i = x_{i-1}^2 \bmod n$ and

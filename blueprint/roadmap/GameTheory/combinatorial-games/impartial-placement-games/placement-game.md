@@ -1,6 +1,6 @@
 # The placement game
 
-**The placement game.** Let $\alpha$ be a finite set of cells and let $E$ be a predicate on
+Let $\alpha$ be a finite set of cells and let $E$ be a predicate on
 subsets of $\alpha$, the condition under which play has ended. The placement game is the impartial
 game whose positions are the subsets $S \subseteq \alpha$ (the occupied cells), starting from the
 empty board $\emptyset$. If $E(S)$ holds there are no moves from $S$; otherwise the moves from $S$

@@ -1,6 +1,6 @@
 # 3-dissection of $f_1 f_2$
 
-**3-dissection of $f_1 f_2$.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ denote the Euler
+Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ denote the Euler
 products in $\mathbb{Z}[[q]]$. Then
 $f_1 f_2 f_3 f_6 f_9^2 f_{18}^2 = f_6^2 f_9^6 - q f_3 f_6 f_9^3 f_{18}^3 -
 2 q^2 f_3^2 f_{18}^6$.

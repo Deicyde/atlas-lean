@@ -1,6 +1,6 @@
 # Each extension of a prime-adic valuation comes from exactly one prime above
 
-**Each extension of a prime-adic valuation comes from exactly one prime above.** Let $A$ be a
+Let $A$ be a
 Dedekind domain with fraction field $K$, let $L$ be a finite separable extension of $K$, and let
 $B$ be a Dedekind domain that is the integral closure of $A$ in $L$ and has fraction field $L$.
 Let $\mathfrak{p}$ be a height-one prime of $A$, and consider valuations on $L$ with values in the

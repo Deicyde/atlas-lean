@@ -1,6 +1,6 @@
 # Peak generating function for set partitions
 
-**Peak generating function for set partitions.** Let $k \ge 1$. Work in the fraction field of
+Let $k \ge 1$. Work in the fraction field of
 the ring $\mathbb{Z}[q][[x]]$ of power series in $x$ with coefficients in $\mathbb{Z}[q]$. For
 a word $w = w_0 \cdots w_{n-1}$, let $\mathrm{pk}(w)$ be the number of positions $a$ with
 $a + 2 < n$ and $w_a < w_{a+1} > w_{a+2}$, and let $W_{n,k}$ be the set of surjective

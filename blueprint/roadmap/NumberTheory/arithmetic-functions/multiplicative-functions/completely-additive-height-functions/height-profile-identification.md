@@ -1,6 +1,6 @@
 # Identifying the profile from the growth of the levels
 
-**Identifying the profile from the growth of the levels.** Let $H$ be a height function, for
+Let $H$ be a height function, for
 $k \ge 0$ let $\pi_k$ be the number of primes $p$ with $H(p) = k$, and for $n \ge 0$ let $N_n$ be
 the number of integers $m \ge 1$ with $H(m) = n$. Let $r > 0$ and $A > 0$ be real numbers and
 suppose that the weights $(\pi_k)$ satisfy Meinardus' hypotheses with exponent $r$, residue $A$

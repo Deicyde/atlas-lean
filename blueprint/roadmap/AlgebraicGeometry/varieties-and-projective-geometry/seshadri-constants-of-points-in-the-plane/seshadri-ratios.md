@@ -1,6 +1,6 @@
 # Seshadri ratios of ten points
 
-**Seshadri ratios of ten points.** For a configuration $x = (x_0, \dots, x_9)$ of ten
+For a configuration $x = (x_0, \dots, x_9)$ of ten
 points of $\mathbb{C}^2$, not necessarily distinct, the Seshadri ratios of $x$ are the real
 numbers $\deg f / \sum_{i=0}^{9} \operatorname{mult}_{x_i} f$, where $f$ ranges over the
 nonzero polynomials in $\mathbb{C}[X_0, X_1]$ with

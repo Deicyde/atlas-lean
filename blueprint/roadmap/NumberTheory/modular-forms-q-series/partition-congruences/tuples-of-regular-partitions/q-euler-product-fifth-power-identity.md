@@ -1,6 +1,6 @@
 # A fifth-power Euler product identity
 
-**A fifth-power Euler product identity.** Write $f_k = \prod_{i \ge 1} (1 - q^{ki})$ for the
+Write $f_k = \prod_{i \ge 1} (1 - q^{ki})$ for the
 Euler products, as integer power series in $q$. Then
 
 $$f_1^5 = f_2^2 \sum_{m \in \mathbb{Z}} (6m + 1)\, q^{m(3m+1)/2}.$$

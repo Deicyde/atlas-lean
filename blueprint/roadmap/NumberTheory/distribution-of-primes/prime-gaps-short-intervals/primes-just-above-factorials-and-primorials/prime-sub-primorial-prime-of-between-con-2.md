@@ -1,6 +1,6 @@
 # Primes just above a primorial (Čejchan–Křížek–Somer)
 
-**Primes just above a primorial (Čejchan–Křížek–Somer).** Let $q < r$ be consecutive primes,
+Let $q < r$ be consecutive primes,
 so that no prime lies strictly between them, and let $q\#$ be the primorial of $q$, the product
 of all primes at most $q$. If $p$ is a prime with $q\# + 1 < p < q\# + r^2$, then $p - q\#$ is
 prime.

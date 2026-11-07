@@ -1,6 +1,6 @@
 # The sets $\mathrm{CST}_k$
 
-**The sets $\mathrm{CST}_k$.** Fix $r, k \in \mathbb{N}$. For a digit sequence
+Fix $r, k \in \mathbb{N}$. For a digit sequence
 $x = (x_i)_{i \in \mathbb{N}}$ in $\{0, 1\}$ let $v_k(x) = \sum_{i=2}^{k+1} x_i F_i$, where $F_i$
 is the $i$-th Fibonacci number ($F_1 = F_2 = 1$). The set $\mathrm{CST}_k$ (for the shift $r$)
 consists of the digit sequences $x$ such that either $v_k(x) + r < F_{k+1}$, or both

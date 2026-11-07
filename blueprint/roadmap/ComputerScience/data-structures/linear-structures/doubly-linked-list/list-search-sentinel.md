@@ -1,6 +1,6 @@
 # Search in a circular list with a sentinel
 
-**Search in a circular list with a sentinel.** Let a store have cells indexed by
+Let a store have cells indexed by
 $\{0, \dots, m-1\}$, each empty or holding a node that carries a key, satellite data and optional
 next and prev links, and let the cell $s$ be the sentinel of some list of data nodes that the
 store circularly represents. Sentinel search for a key $k$ first overwrites the key of the

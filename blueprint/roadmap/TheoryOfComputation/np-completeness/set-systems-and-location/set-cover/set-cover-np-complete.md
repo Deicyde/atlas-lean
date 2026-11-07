@@ -1,6 +1,6 @@
 # SET COVER is NP-complete
 
-**SET COVER is NP-complete.** The SET COVER decision problem lies in NP, and every decision
+The SET COVER decision problem lies in NP, and every decision
 problem $L$ in NP has a polynomial-time many-one reduction to SET COVER.
 
 ## Sources

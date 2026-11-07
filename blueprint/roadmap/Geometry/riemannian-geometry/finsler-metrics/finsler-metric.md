@@ -1,6 +1,6 @@
 # Finsler metric
 
-**Finsler metric.** Let $M$ be a $C^\infty$ manifold (possibly with boundary or corners)
+Let $M$ be a $C^\infty$ manifold (possibly with boundary or corners)
 modelled on a finite-dimensional real normed space $E$, so that each tangent space $T_xM$ is $E$.
 A $C^\infty$ Finsler metric on $M$ is a continuous function $F : TM \to \mathbb{R}$ that is
 $C^\infty$ off the zero section, satisfies $F(x, v) > 0$ for every $x \in M$ and every nonzero

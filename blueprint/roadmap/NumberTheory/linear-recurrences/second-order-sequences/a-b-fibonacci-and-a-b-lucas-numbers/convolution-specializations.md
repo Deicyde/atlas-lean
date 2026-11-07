@@ -1,6 +1,6 @@
 # Fibonacci, Jacobsthal and Pell convolution identities
 
-**Fibonacci, Jacobsthal and Pell convolution identities.** Write $F_n$ and $L_n$ for the
+Write $F_n$ and $L_n$ for the
 Fibonacci and Lucas numbers (the $(1,1)$-Fibonacci and $(1,1)$-Lucas numbers), $J_n$ and $j_n$
 for the Jacobsthal and Jacobsthal–Lucas numbers (the $(1,2)$-Fibonacci and $(1,2)$-Lucas
 numbers), and $P_n$ and $Q_n$ for the Pell and Pell–Lucas numbers (the $(2,1)$-Fibonacci and

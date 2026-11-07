@@ -1,6 +1,6 @@
 # Uniform bound for covering centrally symmetric convex bodies by interior translates
 
-**Uniform bound for covering centrally symmetric convex bodies by interior translates.** For
+For
 $n, q \in \mathbb{N}$, the uniform symmetric interior translate bound holds when every convex body
 $K \subseteq \mathbb{R}^n$ (a compact convex set with nonempty interior) that is centrally
 symmetric, meaning that there is $c \in \mathbb{R}^n$ such that for all $x \in \mathbb{R}^n$,

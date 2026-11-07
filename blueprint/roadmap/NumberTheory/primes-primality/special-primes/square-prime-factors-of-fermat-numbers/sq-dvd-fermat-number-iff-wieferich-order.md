@@ -1,6 +1,6 @@
 # Squared prime factors of Fermat numbers via Wieferich primes and orders
 
-**Squared prime factors of Fermat numbers via Wieferich primes and orders.** Let
+Let
 $F_n = 2^{2^n} + 1$ be the $n$-th Fermat number. For every natural number $n$ and every odd prime
 $p$, $p^2$ divides $F_n$ if and only if $p$ is a Wieferich prime (to base $2$) and the
 multiplicative order of $2$ modulo $p$ is $2^{n+1}$.

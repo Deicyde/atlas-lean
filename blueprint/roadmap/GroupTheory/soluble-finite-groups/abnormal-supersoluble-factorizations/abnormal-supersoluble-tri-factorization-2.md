@@ -1,6 +1,6 @@
 # Kourovka Problem 19.100 has a positive answer
 
-**Kourovka Problem 19.100 has a positive answer.** Let $G$ be a finite group and let $A$, $B$,
+Let $G$ be a finite group and let $A$, $B$,
 $C$ be subgroups of $G$, each abnormal in $G$ and supersoluble, such that $G = AB = BC = CA$ as
 sets. Then $G$ is supersoluble.
 

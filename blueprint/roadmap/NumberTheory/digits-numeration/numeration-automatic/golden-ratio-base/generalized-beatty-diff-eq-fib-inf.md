@@ -1,6 +1,6 @@
 # First differences of a generalized Beatty sequence
 
-**First differences of a generalized Beatty sequence.** Let $\varphi$ be the golden ratio, for
+Let $\varphi$ be the golden ratio, for
 integers $p, q, r$ let $V(p, q, r)$ be the sequence $n \mapsto p\lfloor n\varphi \rfloor + qn + r$
 on the natural numbers, and let $x_0 x_1 x_2 \cdots$ be the infinite Fibonacci word. For all
 integers $p, q, r$ and every $n \ge 1$, the difference $V(p, q, r)(n+1) - V(p, q, r)(n)$ equals

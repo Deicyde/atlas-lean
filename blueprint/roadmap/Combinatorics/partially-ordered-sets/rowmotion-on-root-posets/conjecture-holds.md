@@ -1,6 +1,6 @@
 # Antichain size is homomesic under type-A rowmotion
 
-**Antichain size is homomesic under type-A rowmotion.** Let $n$ be a natural number and let $P$
+Let $n$ be a natural number and let $P$
 be a finite partially ordered set that is a type-A root poset of rank $n$: there is a bijection
 $a \mapsto (i_a, j_a)$ from $P$ onto the set of pairs $(i, j)$ of integers with $0 \le i \le j < n$
 such that $a \le b$ holds exactly when $[i_a, j_a] \subseteq [i_b, j_b]$, that is, $i_b \le i_a$

@@ -1,6 +1,6 @@
 # Tseitin encoding invariant
 
-**Tseitin encoding invariant.** Let $k$ be a natural number, let $r = (\ell, \Phi, k')$
+Let $k$ be a natural number, let $r = (\ell, \Phi, k')$
 consist of a literal $\ell$, a CNF formula $\Phi$ and a natural number $k'$, and let $v$ map
 each assignment of Boolean values to the natural-number variables to a Boolean value. Call a
 variable a gate in range if it equals $2j + 1$ for some $j$ with $k \le j < k'$. The invariant

@@ -1,6 +1,6 @@
 # Vu's problem on nonsingular adjacency matrices of random regular graphs
 
-**Vu's problem on nonsingular adjacency matrices of random regular graphs.** This is the
+This is the
 statement that for every natural number $d \ge 3$, the probability that the adjacency matrix of
 the uniformly random $d$-regular simple graph on $n$ labeled vertices is nonsingular tends to $1$
 as $n \to \infty$, where $n$ runs over the natural numbers with $nd$ even. Here the probability is

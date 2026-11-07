@@ -1,6 +1,6 @@
 # Tail σ-algebra of a sequence of functions
 
-**Tail σ-algebra of a sequence of functions.** Let $\beta$ be a measurable space and let
+Let $\beta$ be a measurable space and let
 $X_n : \Omega \to \beta$ for $n \in \mathbb{N}$. The tail σ-algebra of $X$ is
 
 $$\mathcal{T} = \bigcap_{n \in \mathbb{N}} \sigma(X_n, X_{n+1}, \dots),$$

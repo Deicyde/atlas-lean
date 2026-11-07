@@ -1,6 +1,6 @@
 # Hypersequences through elementary symmetric polynomials
 
-**Hypersequences through elementary symmetric polynomials.** Let $a$ be a sequence of complex
+Let $a$ be a sequence of complex
 numbers and let $j, n \in \mathbb{N}$. Write $a^{(r)}_n$ for the hypersequence of generation $r$
 of $a$, write $e_{j,k}(n)$ for the elementary symmetric polynomial of degree $k$ in
 $n + 1, \dots, n + j$, and put $t_i(n) = \sum_{k=0}^{n} k^i a_k$, with $0^0 = 1$. Then

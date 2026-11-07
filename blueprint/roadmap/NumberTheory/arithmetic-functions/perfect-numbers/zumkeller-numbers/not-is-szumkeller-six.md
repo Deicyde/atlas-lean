@@ -1,6 +1,6 @@
 # The number 6 is not s-Zumkeller
 
-**The number 6 is not s-Zumkeller.** The number $6$ is not an s-Zumkeller number: the squares of
+The number $6$ is not an s-Zumkeller number: the squares of
 its proper divisors sum to $1^2 + 2^2 + 3^2 = 14$, and they admit no split into two parts with
 equal sums.
 

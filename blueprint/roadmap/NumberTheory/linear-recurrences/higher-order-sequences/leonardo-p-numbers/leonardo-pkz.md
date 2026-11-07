@@ -1,6 +1,6 @@
 # Generalized Leonardo $p$-numbers at integer arguments
 
-**Generalized Leonardo $p$-numbers at integer arguments.** For natural numbers $p$ and $k$
+For natural numbers $p$ and $k$
 and an integer $z$, the value is the generalized Leonardo $p$-number $\mathcal{L}_{p,k}(z)$ if
 $z \ge 0$, and $-k$ if $z < 0$.
 

@@ -1,6 +1,6 @@
 # Unbounded chief-factor rank under Monakhov's condition (the claim)
 
-**Unbounded chief-factor rank under Monakhov's condition (the claim).** The statement that for
+The statement that for
 every natural number $r$ there is a finite soluble group $G$ satisfying Monakhov's condition
 (every maximal subgroup $M$ of $G$ with $\pi(M) = \pi(G)$ is supersoluble, where $\pi(X)$ is the
 set of prime divisors of $|X|$) that has a chief factor $A/B$ of order $p^k$ for some prime $p$

@@ -1,6 +1,6 @@
 # Three unit terms force a square-weighted zero sum modulo $p^r$
 
-**Three unit terms force a square-weighted zero sum modulo $p^r$.** Let $p \ge 7$ be a prime,
+Let $p \ge 7$ be a prime,
 $r$ a natural number and $n = p^r$, and let $U(n)^2$ be the set of squares of units of
 $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$. If a sequence $(x_1, \dots, x_k)$ in $\mathbb{Z}_n$ has
 at least three indices $i$ with $x_i$ a unit, then there are $a_1, \dots, a_k \in U(n)^2$ with

@@ -1,6 +1,6 @@
 # Existence of the reduced row echelon form
 
-**Existence of the reduced row echelon form.** Let $K$ be a field, let $m$ and $n$ be finite
+Let $K$ be a field, let $m$ and $n$ be finite
 linearly ordered sets, and let $A$ be an $m \times n$ matrix over $K$. Then there are an
 $m \times n$ matrix $R$ over $K$ in reduced row echelon form and an invertible $m \times m$
 matrix $P$ over $K$ with $R = PA$. In other words, $A$ is row-equivalent to a matrix in reduced

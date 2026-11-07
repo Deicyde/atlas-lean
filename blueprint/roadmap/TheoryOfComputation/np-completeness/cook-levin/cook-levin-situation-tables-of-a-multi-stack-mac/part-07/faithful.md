@@ -1,6 +1,6 @@
 # Faithful literal list
 
-**Faithful literal list.** A list $\ell$ of literals $(p, b)$, each a variable index
+A list $\ell$ of literals $(p, b)$, each a variable index
 $p \in \mathbb{N}$ with a sign $b$, is faithful for $V \in \mathbb{N}$ when every literal $(p, b)$
 of $\ell$ has $p < V$ and the first literal of $\ell$ with index $p$ is $(p, b)$.
 

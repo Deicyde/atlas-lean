@@ -1,6 +1,6 @@
 # Longest common subsequence by dynamic programming
 
-**Longest common subsequence by dynamic programming.** Given lists $x = x_1 \cdots x_m$ and
+Given lists $x = x_1 \cdots x_m$ and
 $y = y_1 \cdots y_n$ over a type with a boolean equality test, fill a table $c_{i,j}$ for
 $0 \le i \le m$ and $0 \le j \le n$ by $c_{i,0} = c_{0,j} = 0$, by $c_{i,j} = c_{i-1,j-1} + 1$ when
 the test reports $x_i = y_j$, and by $c_{i,j} = \max(c_{i-1,j}, c_{i,j-1})$ otherwise. Then build

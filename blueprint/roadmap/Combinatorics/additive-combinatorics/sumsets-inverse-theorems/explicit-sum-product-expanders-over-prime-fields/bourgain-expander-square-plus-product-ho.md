@@ -1,6 +1,6 @@
 # x² + xy is an explicit expander over prime fields
 
-**x² + xy is an explicit expander over prime fields.** Bourgain's expander property for
+Bourgain's expander property for
 $f(x, y) = x^2 + xy$ holds: there is a real $\varepsilon > 0$ such that for every real $C \ge 1$
 there are a real $c > 0$ and a natural number $p_0$ such that for every prime $p \ge p_0$ and all
 sets $A, B \subseteq \mathbb{F}_p$ with $\sqrt{p}/C \le |A| \le C\sqrt{p}$ and

@@ -1,6 +1,6 @@
 # Polynomial-time encoder to the canonical bit-list encoding
 
-**Polynomial-time encoder to the canonical bit-list encoding.** This is a multi-stack Turing
+This is a multi-stack Turing
 machine whose input and output alphabets are the bits, together with the polynomial time bound
 $t(n) = 2n + 2$, such that for every bit list $x$ of length $n$, the machine started with $x$ on
 its input stack and all other stacks empty halts within $t(n)$ steps with the canonical bitstring

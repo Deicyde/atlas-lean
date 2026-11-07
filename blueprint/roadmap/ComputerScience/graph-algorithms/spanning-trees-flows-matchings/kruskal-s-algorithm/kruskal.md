@@ -1,6 +1,6 @@
 # Kruskal's algorithm
 
-**Kruskal's algorithm.** For a finite weighted multigraph $G$ on the vertices
+For a finite weighted multigraph $G$ on the vertices
 $\{0, \dots, n-1\}$, Kruskal's algorithm starts from the partition of the vertices into
 singletons and processes the valid input edges of $G$ (those whose endpoints are both less than
 $n$) in lexicographic order of (weight, input position). An edge whose endpoints lie in different

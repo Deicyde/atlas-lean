@@ -1,6 +1,6 @@
 # Composite terms of Lucas sequences with positive discriminant
 
-**Composite terms of Lucas sequences with positive discriminant.** Let $U = U(P, Q)$ be the
+Let $U = U(P, Q)$ be the
 Lucas sequence with integer parameters $P \ne 0$ and $Q \ne 0$ such that $\gcd(P, Q) = 1$ and
 $D = P^2 - 4Q > 0$, and let $m \ge 5$ be an odd integer. If $m$ is not prime, then $U_m$ is
 composite; and $U_{2m}/P$ is always composite. Here an integer $N$ is composite when $|N| > 1$

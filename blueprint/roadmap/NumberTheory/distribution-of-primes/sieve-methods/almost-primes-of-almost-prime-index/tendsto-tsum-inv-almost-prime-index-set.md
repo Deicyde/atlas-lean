@@ -1,6 +1,6 @@
 # Reciprocal sums over iterated almost prime index sets tend to zero
 
-**Reciprocal sums over iterated almost prime index sets tend to zero.** A $k$-almost prime is
+A $k$-almost prime is
 a positive integer with exactly $k$ prime factors counted with multiplicity. For positive integers
 $k_1, \dots, k_m$ let $N_{k_1}$ be the set of $k_1$-almost primes and, for $m \ge 2$, let
 $N_{k_1 k_2 \cdots k_m}$ be the set of $k_1$-almost primes whose index in the increasing

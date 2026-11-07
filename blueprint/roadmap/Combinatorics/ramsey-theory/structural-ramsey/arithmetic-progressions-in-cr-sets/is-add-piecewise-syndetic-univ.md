@@ -1,6 +1,6 @@
 # The whole commutative semigroup is piecewise syndetic
 
-**The whole commutative semigroup is piecewise syndetic.** If $S$ is a nonempty commutative
+If $S$ is a nonempty commutative
 semigroup, then $S$ itself is a piecewise syndetic subset of $S$.
 
 ## Sources

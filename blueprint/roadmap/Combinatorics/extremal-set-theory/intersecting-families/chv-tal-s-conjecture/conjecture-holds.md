@@ -1,6 +1,6 @@
 # Chvátal's conjecture holds
 
-**Chvátal's conjecture holds.** For every finite set $X$ and every hereditary family $F$ of
+For every finite set $X$ and every hereditary family $F$ of
 subsets of $X$ (one containing every subset of each of its members) that contains a nonempty set,
 there is a point $x \in X$ such that every intersecting subfamily $G \subseteq F$ (one in which
 any two distinct members meet) has at most as many members as the star $\{A \in F : x \in A\}$.

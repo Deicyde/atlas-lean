@@ -1,6 +1,6 @@
 # Parikh image of the empty language is empty
 
-**Parikh image of the empty language is empty.** The Parikh image of the empty language is empty.
+The Parikh image of the empty language is empty.
 
 ## Sources
 

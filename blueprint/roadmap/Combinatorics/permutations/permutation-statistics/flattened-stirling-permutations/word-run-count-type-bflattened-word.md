@@ -1,6 +1,6 @@
 # Number of runs of the word of a type $B$ set partition
 
-**Number of runs of the word of a type $B$ set partition.** Let $\pi$ be a type $B$ set
+Let $\pi$ be a type $B$ set
 partition of $[-n, n]$ and let $\varphi(\pi)$ be the word of length $2(n + 1)$ that the map
 $\varphi$ of Proposition 1 assigns to it. Write $P_0$ for the set of nonnegative elements of the
 block of $\pi$ containing $0$. Let $\beta_1, \dots, \beta_m$ be the blocks kept by Adler's

@@ -1,6 +1,6 @@
 # Ford's theorem on totient multiplicities
 
-**Ford's theorem on totient multiplicities.** For every natural number $k \ge 2$ there is a
+For every natural number $k \ge 2$ there is a
 natural number $m$ such that exactly $k$ natural numbers $x$ satisfy $\varphi(x) = m$, where
 $\varphi$ is Euler's totient function.
 

@@ -1,6 +1,6 @@
 # Axler's Table 6 lower bounds for the prime-counting function
 
-**Axler's Table 6 lower bounds for the prime-counting function.** Let $\pi(x)$ denote the
+Let $\pi(x)$ denote the
 number of primes $p \le x$ and $\log$ the natural logarithm. For each of the five rows
 $(b_5, b_6, b_7, b_8, x_0)$ equal to
 $(23.975666, 119.87833, 719.26998, 5034.88986, 1681111802141)$,

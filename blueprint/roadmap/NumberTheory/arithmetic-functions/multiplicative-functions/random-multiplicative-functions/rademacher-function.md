@@ -1,6 +1,6 @@
 # Rademacher random multiplicative function
 
-**Rademacher random multiplicative function.** Let $(X_p)_p$ be a family of maps
+Let $(X_p)_p$ be a family of maps
 $X_p : \Omega \to \{-1, 1\}$ indexed by the primes, and let $\omega \in \Omega$. The Rademacher
 random multiplicative function at $\omega$ is the arithmetic function
 $f : \mathbb{N} \to \mathbb{Z}$ with $f(0) = 0$ and

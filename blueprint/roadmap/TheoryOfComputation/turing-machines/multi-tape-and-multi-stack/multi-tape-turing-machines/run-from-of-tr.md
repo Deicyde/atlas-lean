@@ -1,6 +1,6 @@
 # Runs of a machine given by a transition function
 
-**Runs of a machine given by a transition function.** Let $\delta$ be a transition function
+Let $\delta$ be a transition function
 that assigns an action to every state, symbol or blank read on the input tape, and tuple of
 symbols or blanks read on the work tapes, and let $M$ be the deterministic multi-tape Turing
 machine with initial state $q_0$ and transition function $\delta$. Let $S_\delta$ be the map on

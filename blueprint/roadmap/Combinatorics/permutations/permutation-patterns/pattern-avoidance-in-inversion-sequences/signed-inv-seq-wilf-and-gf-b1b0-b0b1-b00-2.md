@@ -1,6 +1,6 @@
 # Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar00, 00\}$
 
-**Signed inversion sequences avoiding $\{\bar1\bar0, \bar0\bar1, \bar00, 00\}$.** For a set $B$
+For a set $B$
 of length-2 signed patterns (a bar marks a barred letter), let $|\bar I_n(B)|$ be the number of
 signed inversion sequences of length $n$ avoiding every pattern of $B$, and let
 $F_B(x) = \sum_{n \ge 0} |\bar I_n(B)| x^n \in \mathbb{Q}[[x]]$. Let

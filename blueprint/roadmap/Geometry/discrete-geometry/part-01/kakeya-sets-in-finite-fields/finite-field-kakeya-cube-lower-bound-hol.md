@@ -1,6 +1,6 @@
 # Finite field Kakeya sets in dimension three have cubic size
 
-**Finite field Kakeya sets in dimension three have cubic size.** There is a real number $c > 0$
+There is a real number $c > 0$
 such that for every finite field $F$ and every Kakeya set $E \subseteq F^3$, that is, a set such
 that for every $x \in F^3$ there is $y \in F^3$ with $\{y + a x : a \in F\} \subseteq E$, we have
 $|E| \ge c\,|F|^3$.

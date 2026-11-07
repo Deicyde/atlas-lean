@@ -1,6 +1,6 @@
 # A finite group with exactly one non-commutator
 
-**A finite group with exactly one non-commutator.** There is a finite group $G$ of order greater
+There is a finite group $G$ of order greater
 than $2$ in which exactly one element is not a commutator, that is, not of the form $x^{-1}y^{-1}xy$
 with $x, y \in G$.
 

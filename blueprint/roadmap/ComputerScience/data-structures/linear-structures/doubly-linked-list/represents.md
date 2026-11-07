@@ -1,6 +1,6 @@
 # Store representing a doubly linked list
 
-**Store representing a doubly linked list.** Let a store assign to each identity below $n$
+Let a store assign to each identity below $n$
 either nothing or a doubly linked list node whose pointers are identities below $n$ or NIL, and
 let the head be an identity below $n$ or NIL. The store and head represent the list of identities
 $i_0, \dots, i_{k-1}$ when these identities are pairwise distinct, the head is $i_0$ (and NIL

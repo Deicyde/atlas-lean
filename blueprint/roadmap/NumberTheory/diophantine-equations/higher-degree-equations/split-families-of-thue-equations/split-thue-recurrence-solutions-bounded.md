@@ -1,6 +1,6 @@
 # Hilgart's theorem on split families of Thue equations
 
-**Hilgart's theorem on split families of Thue equations.** Let $(d, G, \gamma, \delta)$ be a
+Let $(d, G, \gamma, \delta)$ be a
 split Thue recurrence family. Then there is $\kappa \in \mathbb{R}$ such that for every
 $n \in \mathbb{N}$ and all integers $x, y$ with $|y| \ge 2$ and
 

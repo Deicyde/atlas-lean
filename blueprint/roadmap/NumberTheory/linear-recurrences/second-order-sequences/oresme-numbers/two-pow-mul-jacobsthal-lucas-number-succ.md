@@ -1,6 +1,6 @@
 # Powers of two times Jacobsthal–Lucas numbers modulo 9
 
-**Powers of two times Jacobsthal–Lucas numbers modulo 9.** Let $j_m$ denote the
+Let $j_m$ denote the
 Jacobsthal–Lucas numbers. For every natural number $n$, $2^n j_{n+1} \equiv 1 \pmod{9}$.
 
 ## Sources

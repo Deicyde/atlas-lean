@@ -1,6 +1,6 @@
 # Sequences without small parts satisfy Huang's placement condition
 
-**Sequences without small parts satisfy Huang's placement condition.** If every entry of a
+If every entry of a
 finite sequence of natural numbers is at least $k$, then the sequence satisfies Huang's placement
 condition for $k$, vacuously.
 

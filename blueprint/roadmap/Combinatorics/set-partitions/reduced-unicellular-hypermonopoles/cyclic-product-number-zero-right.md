@@ -1,6 +1,6 @@
 # Cyclic product numbers with second argument zero
 
-**Cyclic product numbers with second argument zero.** For every natural number $n$, the
+For every natural number $n$, the
 cyclic product number $H(n, 0)$ is $0$, since the unsigned Stirling number of the first kind
 $c(n + 1, 0)$ is $0$.
 

@@ -1,6 +1,6 @@
 # States of the single-tape emulation
 
-**States of the single-tape emulation.** Let $M$ be a multi-stack machine with finitely many
+Let $M$ be a multi-stack machine with finitely many
 stacks, labels and internal states and a finite input alphabet. Its plain single-tape emulation
 is the translation of $M$ to a single-tape machine with a finite store, followed by the
 translation of that machine to a plain single-tape machine, whose states are pairs of a

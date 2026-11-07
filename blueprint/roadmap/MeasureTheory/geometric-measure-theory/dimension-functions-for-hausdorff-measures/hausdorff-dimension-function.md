@@ -1,6 +1,6 @@
 # Hausdorff dimension function
 
-**Hausdorff dimension function.** A Hausdorff dimension function (gauge) is a continuous,
+A Hausdorff dimension function (gauge) is a continuous,
 non-decreasing function $\psi : [0,\infty) \to [0,\infty)$ with $\psi(0) = 0$ and $\psi(r) > 0$
 for every $r > 0$. In particular $\psi(r) \to 0$ as $r \to 0^+$.
 

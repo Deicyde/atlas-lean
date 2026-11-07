@@ -1,6 +1,6 @@
 # Young's theorem on reverse multiples
 
-**Young's theorem on reverse multiples.** Let $g$ and $k$ be natural numbers with $2 \le k < g$.
+Let $g$ and $k$ be natural numbers with $2 \le k < g$.
 A $(g, k)$ reverse multiple is a list of base-$g$ digits $d_1, d_2, \dots, d_n$, most significant
 first, with $n \ge 2$, $d_1 \ne 0$, $d_n \ne 0$ and $d_i < g$ for every $i$, such that $k$ times
 the number $\sum_{i=1}^{n} d_i g^{n-i}$ equals the number $\sum_{i=1}^{n} d_{n+1-i} g^{n-i}$

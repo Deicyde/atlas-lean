@@ -1,6 +1,6 @@
 # Evaluation of a coefficient function at an integer sequence
 
-**Evaluation of a coefficient function at an integer sequence.** For a sequence $H$ of
+For a sequence $H$ of
 natural numbers and a finitely supported coefficient function
 $\varepsilon \colon \mathbb{N} \to \mathbb{N}$, the evaluation of $\varepsilon$ at $H$ is the
 natural number $\mathrm{eval}_H(\varepsilon) = \sum_{k \ge 0} \varepsilon_k H_k$.

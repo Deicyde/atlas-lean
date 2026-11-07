@@ -1,3 +1,3 @@
 # Nonnegativity of site pattern probabilities
 
-**Nonnegativity of site pattern probabilities.** The pattern probabilities are nonnegative for change probabilities in `[0, 1]`.
+The pattern probabilities are nonnegative for change probabilities in `[0, 1]`.

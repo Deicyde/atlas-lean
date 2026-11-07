@@ -1,6 +1,6 @@
 # Bounded subset sums of $\{-1, 1, 2\}$
 
-**Bounded subset sums of $\{-1, 1, 2\}$.** The set $\Sigma^{1}_{1}(\{-1, 1, 2\})$ of sums of
+The set $\Sigma^{1}_{1}(\{-1, 1, 2\})$ of sums of
 subsets of the integer set $\{-1, 1, 2\}$ with at least $1$ and at most $2$ elements is
 $\{-1, 0, 1, 2, 3\}$.
 

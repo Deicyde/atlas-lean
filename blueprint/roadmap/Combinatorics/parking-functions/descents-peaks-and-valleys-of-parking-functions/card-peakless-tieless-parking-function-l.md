@@ -1,6 +1,6 @@
 # Peakless-tieless parking functions by last entry
 
-**Peakless-tieless parking functions by last entry.** Write a parking function $f$ of length
+Write a parking function $f$ of length
 $n$ as the sequence $(a_1, \dots, a_n)$ with $a_j = f(j-1) + 1 \in \{1, \dots, n\}$. It is
 peakless-tieless if there is no $j$ with $a_{j-1} < a_j > a_{j+1}$ (a peak) and no $j$ with
 $a_j = a_{j+1}$ (a tie). For natural numbers $i$ and $n$ with $1 \le i \le n$, the number of

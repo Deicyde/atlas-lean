@@ -1,6 +1,6 @@
 # An example of difference notation
 
-**An example of difference notation.** The set with least element $0$ and consecutive
+The set with least element $0$ and consecutive
 differences $1, 5, 1, 1, 9, 7$ is $(0 \mid 1, 5, 1, 1, 9, 7) = \{0, 1, 6, 7, 8, 17, 24\}$.
 
 ## Sources

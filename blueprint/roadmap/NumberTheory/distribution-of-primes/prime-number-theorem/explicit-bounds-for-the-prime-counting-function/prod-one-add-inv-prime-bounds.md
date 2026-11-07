@@ -1,6 +1,6 @@
 # Explicit bounds for $\prod_{p \le x} (1 + 1/p)$
 
-**Explicit bounds for $\prod_{p \le x} (1 + 1/p)$.** Let $\gamma$ be the Euler–Mascheroni
+Let $\gamma$ be the Euler–Mascheroni
 constant and $f(x) = \frac{0.024334}{3 \log^3 x} \left(1 + \frac{15}{4 \log x}\right)$. For every
 real $x \ge 1757126630797$, the product over the primes $p \le x$ satisfies
 $\frac{6 e^{\gamma}}{\pi^2} \exp\left(-f(x) - \frac{1.02}{(x - 1) \log x}\right) \log x <

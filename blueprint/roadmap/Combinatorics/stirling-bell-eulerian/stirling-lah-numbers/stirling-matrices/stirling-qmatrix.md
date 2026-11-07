@@ -1,6 +1,6 @@
 # Strictly upper triangular matrix $Q^{(N)}(n)$
 
-**Strictly upper triangular matrix $Q^{[N]}(n)$.** For natural numbers $N$ and $n$,
+For natural numbers $N$ and $n$,
 $Q^{[N]}(n)$ is the $n \times n$ matrix with rational entries
 
 $$Q^{[N]}(n)_{i,j} = \frac{(-1)^{j-i+1}\, i^{N-1}}{(i-1)!\,(j-i-1)!} \quad (1 \le i < j \le n)$$

@@ -1,6 +1,6 @@
 # Bits pushed by a walk of the CLIQUE emitter
 
-**Bits pushed by a walk of the CLIQUE emitter.** Let $l = (x, p)$ be a literal occurrence
+Let $l = (x, p)$ be a literal occurrence
 with name $x \in \mathbb{N}$ and polarity $p$, let $f$ be a Boolean, and let $ds$ be a list whose
 items are literal occurrences or clause markers. The bit list $\mathrm{walkBits}(l, f, ds)$ is
 defined by recursion on $ds$: it is empty if $ds$ is empty; if $ds$ is a clause marker followed

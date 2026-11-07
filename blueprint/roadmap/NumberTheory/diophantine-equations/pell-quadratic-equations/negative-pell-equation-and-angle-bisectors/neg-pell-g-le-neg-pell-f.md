@@ -1,6 +1,6 @@
 # Comparison of the negative Pell sequences
 
-**Comparison of the negative Pell sequences.** Let $d > 1$ be a natural number such that
+Let $d > 1$ be a natural number such that
 $x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its fundamental solution (the one with
 $X, Y > 0$ and $Y$ least), and write $(X + Y \sqrt{d})^n = f_n + g_n \sqrt{d}$. Then for every
 $n \ge 0$, $g_n \le f_n$, with equality if and only if $d = 2$ and $n = 1$.

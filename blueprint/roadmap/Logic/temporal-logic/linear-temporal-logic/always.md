@@ -1,6 +1,6 @@
 # The always operator of LTL
 
-**The always operator of LTL.** For an LTL formula $\varphi$, the formula
+For an LTL formula $\varphi$, the formula
 $\mathbf{G}\,\varphi$ ("always $\varphi$") is defined as $\neg\,\mathbf{F}\,\neg\varphi$, the
 negation of "eventually $\neg\varphi$".
 

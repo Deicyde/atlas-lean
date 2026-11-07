@@ -1,6 +1,6 @@
 # The betweenness group of the rationals is closed and highly homogeneous
 
-**The betweenness group of the rationals is closed and highly homogeneous.** Let $G$ be the
+Let $G$ be the
 group of permutations $\sigma$ of $\mathbb{Q}$ preserving strict betweenness in both directions:
 for all $a, b, c \in \mathbb{Q}$, $b$ lies strictly between $a$ and $c$ (that is, $a < b < c$ or
 $c < b < a$) if and only if $\sigma(b)$ lies strictly between $\sigma(a)$ and $\sigma(c)$. Then

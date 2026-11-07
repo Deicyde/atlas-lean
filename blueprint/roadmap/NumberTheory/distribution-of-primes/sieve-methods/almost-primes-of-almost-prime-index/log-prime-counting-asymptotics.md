@@ -1,6 +1,6 @@
 # Logarithmic expansions of the prime counting function
 
-**Logarithmic expansions of the prime counting function.** Let $\pi(x)$ be the number of
+Let $\pi(x)$ be the number of
 primes $p \le x$. As $x \to \infty$,
 
 $$

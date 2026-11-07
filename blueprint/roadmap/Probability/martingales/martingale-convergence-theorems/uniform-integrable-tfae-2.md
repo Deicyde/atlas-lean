@@ -1,6 +1,6 @@
 # Equivalent conditions for uniform integrability of a martingale
 
-**Equivalent conditions for uniform integrability of a martingale.** Let $(\Omega, \mu)$ be a
+Let $(\Omega, \mu)$ be a
 probability space with a filtration $(\mathcal{F}_n)_{n \in \mathbb{N}}$, and let
 $(X_n)_{n \in \mathbb{N}}$ be a real-valued martingale with respect to $(\mathcal{F}_n)$ and $\mu$.
 The following are equivalent:

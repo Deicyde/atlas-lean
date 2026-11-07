@@ -1,6 +1,6 @@
 # Generalized harmonic numbers
 
-**Generalized harmonic numbers.** For a real number $s$ and a natural number $n$, the
+For a real number $s$ and a natural number $n$, the
 generalized harmonic number of order $s$ is $H_n^{(s)} = \sum_{k=1}^{n} 1/k^s$, where $k^s$ is the
 real power.
 

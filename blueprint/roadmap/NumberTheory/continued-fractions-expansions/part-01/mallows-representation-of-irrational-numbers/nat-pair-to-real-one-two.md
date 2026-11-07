@@ -1,6 +1,6 @@
 # The pair $(1, 2)$ encodes $1/2$
 
-**The pair $(1, 2)$ encodes $1/2$.** The real value of the fraction encoded by the pair
+The real value of the fraction encoded by the pair
 $(1, 2)$ is $1/2$.
 
 ## Sources

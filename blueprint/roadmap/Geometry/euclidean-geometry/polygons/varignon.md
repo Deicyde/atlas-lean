@@ -1,6 +1,6 @@
 # Varignon's theorem
 
-**Varignon's theorem.** Let $A$, $B$, $C$, $D$ be any four points of the Euclidean plane
+Let $A$, $B$, $C$, $D$ be any four points of the Euclidean plane
 $\mathbb{R}^2$, degenerate and self-crossing configurations included, and let $P$, $Q$, $R$,
 $S$ be the midpoints of $AB$, $BC$, $CD$, $DA$, that is $2P = A + B$, $2Q = B + C$,
 $2R = C + D$ and $2S = D + A$. Write $[XYZ]$ for the oriented area of the triangle $XYZ$,

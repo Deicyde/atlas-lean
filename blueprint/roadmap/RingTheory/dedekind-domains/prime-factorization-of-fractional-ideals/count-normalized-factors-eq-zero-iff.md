@@ -1,6 +1,6 @@
 # Vanishing multiplicity of a prime factor
 
-**Vanishing multiplicity of a prime factor.** Let $A$ be a Dedekind domain, let $\mathfrak p$
+Let $A$ be a Dedekind domain, let $\mathfrak p$
 be a prime ideal of $A$ and let $I$ be a nonzero ideal of $A$. Then the multiplicity of
 $\mathfrak p$ in the factorization of $I$ into prime ideals is zero if and only if
 $I \not\subseteq \mathfrak p$.

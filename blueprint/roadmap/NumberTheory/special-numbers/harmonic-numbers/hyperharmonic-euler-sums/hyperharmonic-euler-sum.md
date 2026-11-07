@@ -1,6 +1,6 @@
 # Generalized hyperharmonic Euler sum
 
-**Generalized hyperharmonic Euler sum.** For an integer $k \ge 0$, complex numbers $r$ and
+For an integer $k \ge 0$, complex numbers $r$ and
 $a$ and an integer $p$, the generalized hyperharmonic Euler sum is
 $S(k, r; p; a) = \sum_{n \ge k} H_n^{[r]}(k) / (n + a)^p$, where $H_n^{[r]}(k)$ is the
 generalized hyperharmonic number. A term whose denominator $(n + a)^p$ vanishes counts as $0$,

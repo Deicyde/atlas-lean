@@ -1,6 +1,6 @@
 # Descending $k$-Naples parking functions and $k$-Dyck paths
 
-**Descending $k$-Naples parking functions and $k$-Dyck paths.** For all natural numbers
+For all natural numbers
 $n \ge 1$ and $k \ge 1$, the number of weakly decreasing $k$-Naples parking functions of length
 $n$ equals the number of $k$-Dyck paths of length $n$: sequences of $2n$ Up and Down steps that
 end at height $0$, never go below height $-k$, and end with a Down step.

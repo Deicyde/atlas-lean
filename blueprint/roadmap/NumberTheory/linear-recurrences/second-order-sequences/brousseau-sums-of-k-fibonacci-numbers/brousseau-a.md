@@ -1,6 +1,6 @@
 # The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums
 
-**The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums.** For a rational number $k$, the
+For a rational number $k$, the
 rational numbers $A_k^{(p)}$, $p \ge 0$, are defined by $A_k^{(0)} = 1$ and, for $p \ge 1$,
 
 $$

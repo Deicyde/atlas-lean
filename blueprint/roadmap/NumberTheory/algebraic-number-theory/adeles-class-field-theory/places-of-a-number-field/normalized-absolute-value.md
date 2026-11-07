@@ -1,6 +1,6 @@
 # Degree-normalized absolute value at a finite place
 
-**Degree-normalized absolute value at a finite place.** Let $K$ be a number field of degree
+Let $K$ be a number field of degree
 $d = [K : \mathbb{Q}]$ and let $v$ be a finite place of $K$, with absolute value $|\cdot|_v$. The
 degree-normalized absolute value at $v$ is the absolute value $x \mapsto |x|_v^{1/d}$ on $K$.
 

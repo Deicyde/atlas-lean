@@ -1,6 +1,6 @@
 # Sprague–Grundy theorem
 
-**Sprague–Grundy theorem.** Every impartial game $G$ is equivalent to a Nim heap: there is a
+Every impartial game $G$ is equivalent to a Nim heap: there is a
 natural number $n$ such that $G$ is equivalent to the Nim heap of size $n$.
 
 ## Sources

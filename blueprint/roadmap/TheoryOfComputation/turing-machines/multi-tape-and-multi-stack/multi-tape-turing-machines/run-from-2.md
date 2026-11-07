@@ -1,6 +1,6 @@
 # Lockstep runs
 
-**Lockstep runs.** Let $M$ and $M'$ be multi-tape Turing machines with the same number of
+Let $M$ and $M'$ be multi-tape Turing machines with the same number of
 work tapes and the same alphabet, with state sets $Q$ and $Q'$, such that $M'$ simulates $M$ up
 to the state relabelling $f : Q \to Q'$. For a configuration $c$ of $M$, write $f_*(c)$ for the
 configuration of $M'$ obtained by replacing the state $q$ of $c$ by $f(q)$ and keeping the input

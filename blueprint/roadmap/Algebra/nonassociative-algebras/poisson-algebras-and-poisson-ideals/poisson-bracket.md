@@ -1,6 +1,6 @@
 # Poisson bracket
 
-**Poisson bracket.** Let $A$ be a commutative $\mathbb{C}$-algebra. A Poisson bracket on $A$
+Let $A$ be a commutative $\mathbb{C}$-algebra. A Poisson bracket on $A$
 is a map assigning to $x, y \in A$ an element $\lbrace x, y \rbrace \in A$ such that for all
 $x, y, z \in A$ and $c \in \mathbb{C}$: $\lbrace x + y, z \rbrace = \lbrace x, z \rbrace +
 \lbrace y, z \rbrace$ and $\lbrace x, y + z \rbrace = \lbrace x, y \rbrace + \lbrace x, z \rbrace$;

@@ -1,6 +1,6 @@
 # Power-law bounds for the subcollection count
 
-**Power-law bounds for the subcollection count.** Let $L$ and $\tilde L$ be lists of natural
+Let $L$ and $\tilde L$ be lists of natural
 numbers of length at least $2$ with nonzero first entries, and let $E$ and $\tilde E$ be the
 periodic Zeckendorf collections they determine, with $E$ a proper subset of $\tilde E$. Let
 $\tilde H$ be a strictly increasing sequence of positive integers such that

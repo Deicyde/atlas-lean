@@ -1,6 +1,6 @@
 # Channel names of go-back-N
 
-**Channel names of go-back-N.** The channel names of the go-back-N protocol are
+The channel names of the go-back-N protocol are
 $\mathsf{acc}$ (accept a message from the user), $\mathsf{del}$ (deliver a message to the user)
 and, for every natural number $k$: $\mathsf{send}\,k$ (sender to data channel, a frame with
 sequence number $k$), $\mathsf{recv}\,k$ (data channel to receiver), $\mathsf{ack}\,k$ (receiver

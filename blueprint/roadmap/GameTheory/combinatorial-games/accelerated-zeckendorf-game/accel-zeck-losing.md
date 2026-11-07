@@ -1,6 +1,6 @@
 # Losing states of the Accelerated Zeckendorf Game
 
-**Losing states of the Accelerated Zeckendorf Game.** The losing and the winning states of
+The losing and the winning states of
 the Accelerated Zeckendorf Game are defined by simultaneous induction: a state is losing when
 every move from it leads to a winning state, and a state is winning when some move from it leads
 to a losing state. In particular every state from which no move is possible is losing.

@@ -1,6 +1,6 @@
 # Burness–Guralnick–Harper spread theorem
 
-**Burness–Guralnick–Harper spread theorem.** Let $G$ be a finite group. Then the spread $s(G)$
+Let $G$ be a finite group. Then the spread $s(G)$
 is at least $2$ if and only if every proper quotient of $G$ is cyclic, that is, $G/N$ is cyclic
 for every non-trivial normal subgroup $N$ of $G$.
 

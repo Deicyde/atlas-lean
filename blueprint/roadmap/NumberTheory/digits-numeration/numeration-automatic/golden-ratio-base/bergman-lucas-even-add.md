@@ -1,6 +1,6 @@
 # Bergman expansion of $L_{2n} + k$
 
-**Bergman expansion of $L_{2n} + k$.** Let $n \ge 1$ and let $k$ be a natural number with
+Let $n \ge 1$ and let $k$ be a natural number with
 $k \le L_{2n-1}$, where $L_m$ is the $m$-th Lucas number. Let $S$ and $T$ be finite sets of
 integers, each with no two consecutive elements (Bergman expansions), whose base phi values are
 $k$ and $L_{2n} + k$ respectively. Then $2n \notin S$, $-2n \notin S$, and

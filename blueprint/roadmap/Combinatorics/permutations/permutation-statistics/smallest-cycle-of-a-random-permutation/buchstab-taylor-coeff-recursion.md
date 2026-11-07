@@ -1,6 +1,6 @@
 # Recursion for the Taylor coefficients of the Buchstab function
 
-**Recursion for the Taylor coefficients of the Buchstab function.** Let $\omega$ be a real
+Let $\omega$ be a real
 function with $\omega(x) = 1/x$ for $1 \le x \le 2$ and
 $x\,\omega(x) = 1 + \int_1^{x-1} \omega(t)\,dt$ for $x \ge 2$, and let $c_{n,i}$ ($n, i \ge 0$)
 be real numbers such that for every integer $n \ge 1$ and every real $z$ with $-1 \le z < 1$ the

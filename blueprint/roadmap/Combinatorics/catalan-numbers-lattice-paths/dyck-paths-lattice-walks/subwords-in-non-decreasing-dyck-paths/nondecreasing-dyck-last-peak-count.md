@@ -1,6 +1,6 @@
 # Non-decreasing Dyck paths by height of the last peak
 
-**Non-decreasing Dyck paths by height of the last peak.** For natural numbers $n$ and $k$,
+For natural numbers $n$ and $k$,
 $l_{n,k}$ is the number of non-decreasing Dyck paths of semilength $n$ whose last peak (the last
 factor $UD$) has height $k$.
 

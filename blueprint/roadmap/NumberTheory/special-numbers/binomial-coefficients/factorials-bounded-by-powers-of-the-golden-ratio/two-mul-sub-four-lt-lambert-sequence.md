@@ -1,6 +1,6 @@
 # A linear lower bound for the Lambert sequence
 
-**A linear lower bound for the Lambert sequence.** Let $n \ge 4$ be a natural number, write
+Let $n \ge 4$ be a natural number, write
 $h(y) = y e^y$ for the Lambert map, and let $a$ be a real number with $a \ge n - 1$ such that
 
 $$h\left(-\frac{a}{n - 1}\right) = -\frac{1}{n - 1} \left(\frac{4}{7}\right)^{1/(n - 1)}.$$

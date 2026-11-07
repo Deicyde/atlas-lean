@@ -1,6 +1,6 @@
 # Rankin–Selberg coefficients at primes
 
-**Rankin–Selberg coefficients at primes.** Let $f$ be a cusp form of weight $k \in \mathbb{Z}$
+Let $f$ be a cusp form of weight $k \in \mathbb{Z}$
 for $\mathrm{SL}_2(\mathbb{Z})$, with normalized Fourier coefficients $\lambda_f$ and
 Rankin–Selberg coefficients $\lambda_{f \times f}$. Then $\lambda_{f \times f}(p) = \lambda_f(p)^2$
 for every prime $p$.

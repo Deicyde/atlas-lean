@@ -1,6 +1,6 @@
 # Shifting the odd numbers below $2^e$ by $2^e$
 
-**Shifting the odd numbers below $2^e$ by $2^e$.** For every natural number $e \ge 2$, let $S_e$ be
+For every natural number $e \ge 2$, let $S_e$ be
 the set of odd integers $i$ with $1 \le i < 2^e$. Then
 
 $$

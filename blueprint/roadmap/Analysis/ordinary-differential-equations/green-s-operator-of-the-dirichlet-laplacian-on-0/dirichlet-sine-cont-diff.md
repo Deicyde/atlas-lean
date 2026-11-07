@@ -1,3 +1,3 @@
 # Smoothness of the Dirichlet sine eigenfunctions
 
-**Smoothness of the Dirichlet sine eigenfunctions.** The sine eigenfunctions are smooth.
+The sine eigenfunctions are smooth.

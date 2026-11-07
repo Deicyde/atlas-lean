@@ -1,6 +1,6 @@
 # Hensel's lemma with a derivative bound
 
-**Hensel's lemma with a derivative bound.** Let $A$ be a discrete valuation ring with maximal
+Let $A$ be a discrete valuation ring with maximal
 ideal $\mathfrak{m}$ that is complete and Hausdorff for the $\mathfrak{m}$-adic topology, and let
 $v \colon A \to \mathbb{N} \cup \{\infty\}$ be its normalized additive valuation. Let $f \in A[X]$
 have derivative $f'$, and let $a_0 \in A$ satisfy $2 v(f'(a_0)) < v(f(a_0))$. Then $f$ has a root

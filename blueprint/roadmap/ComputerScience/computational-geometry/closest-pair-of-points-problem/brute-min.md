@@ -1,6 +1,6 @@
 # Brute-force closest pair
 
-**Brute-force closest pair.** Let $K$ be a field with a linear order, and write
+Let $K$ be a field with a linear order, and write
 $d(p, q) = (x - x')^2 + (y - y')^2$ for the squared distance between points $p = (x, y)$ and
 $q = (x', y')$ of $K^2$. On a list $c_1, \dots, c_n$ of points in $K^2$, the brute-force scan
 returns no value if $n < 2$, and otherwise returns $\min_{i < j} d(c_i, c_j)$: for each $i$ it

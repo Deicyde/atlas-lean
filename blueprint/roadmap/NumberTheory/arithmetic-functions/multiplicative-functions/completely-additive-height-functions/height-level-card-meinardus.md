@@ -1,6 +1,6 @@
 # Meinardus asymptotics for the levels of a height function
 
-**Meinardus asymptotics for the levels of a height function.** Let $H$ be a height function,
+Let $H$ be a height function,
 for $k \ge 0$ let $\pi_k$ be the number of primes $p$ with $H(p) = k$, and for $n \ge 0$ let $N_n$
 be the number of integers $m \ge 1$ with $H(m) = n$. Let $\alpha > 0$ and $C > 0$ be real numbers
 and suppose that the weights $(\pi_k)$ satisfy Meinardus' hypotheses with exponent $\alpha$,

@@ -1,6 +1,6 @@
 # The complement radix order
 
-**The complement radix order.** For finite words $w$ and $w'$ over $\mathbb{N}$, write
+For finite words $w$ and $w'$ over $\mathbb{N}$, write
 $|w|$ for the length of $w$. Then $w \prec w'$ holds exactly in the following three cases:
 $w$ starts with $1$ and $w'$ starts with $0$; both words start with $0$, and either
 $|w| < |w'|$, or $|w| = |w'|$ and $w$ is lexicographically smaller than $w'$ (radix order);

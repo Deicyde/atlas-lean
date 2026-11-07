@@ -1,6 +1,6 @@
 # Second coordinate of the fundamental negative Pell solution
 
-**Second coordinate of the fundamental negative Pell solution.** For a natural number $d$,
+For a natural number $d$,
 $Y$ is the least positive integer $y$ such that $x^2 - d y^2 = -1$ for some integer $x$, and
 $Y = 0$ when there is no such $y$.
 

@@ -1,6 +1,6 @@
 # General reduction lemma
 
-**General reduction lemma.** Let $A \subseteq \{1, \dots, n\}$ be nonempty with least element
+Let $A \subseteq \{1, \dots, n\}$ be nonempty with least element
 $a$, and let $p$ be a reduced position of Slow$A$-Nim $\mathrm{SN}(n, A)$ with largest stack
 height $M$ and total $\Sigma(p) = \sum_i p_i$. Let $S$ be a set of $\ell \in A$ stacks, each
 holding at least one token, and suppose that the position obtained from $p$ by removing one token

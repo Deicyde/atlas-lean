@@ -1,6 +1,6 @@
 # Copying a counter through a scratch stack
 
-**Copying a counter through a scratch stack.** Let $a, c, t$ be pairwise distinct stacks with
+Let $a, c, t$ be pairwise distinct stacks with
 unit symbols $u_a, u_c, u_t$. Write $\mathrm{xfer}(k, ps, \ell, \ell')$ for the transfer loop at
 label $\ell$ that pops stack $k$ until it is empty, pushing $x$ onto stack $j$ for each pair
 $(j, x)$ in $ps$ per popped symbol, and then goes to $\ell'$. Suppose the machine $M$ has

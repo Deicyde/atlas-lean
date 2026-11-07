@@ -1,6 +1,6 @@
 # Integer values of $(1 - px + x)/(1 - px - x^2)$
 
-**Integer values of $(1 - px + x)/(1 - px - x^2)$.** Let $p \ne 0$ be an integer, let
+Let $p \ne 0$ be an integer, let
 $A(x) = \frac{1 - px + x}{1 - px - x^2}$ for rational $x$, and for integers $r, s$ let $A^{(r,s)}$
 be the two-sided integer sequence with $A^{(r,s)}_0 = r$, $A^{(r,s)}_1 = s$ and
 $A^{(r,s)}_{n+2} = pA^{(r,s)}_{n+1} + A^{(r,s)}_n$ for all integers $n$. If $x$ is a rational

@@ -1,6 +1,6 @@
 # Schur–Weyl duality: the symmetric group side
 
-**Schur–Weyl duality: the symmetric group side.** Let $R$ be a field, $M$ a finite-dimensional
+Let $R$ be a field, $M$ a finite-dimensional
 vector space over $R$, and $k$ a natural number such that $k!$ is invertible in $R$. In the
 algebra of $R$-linear endomorphisms of the tensor power $M^{\otimes k}$, the subalgebra generated
 by the image of the action of the symmetric group $S_k$ by permuting tensor factors equals the

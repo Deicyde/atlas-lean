@@ -1,6 +1,6 @@
 # Grothendieck's inequality (real case)
 
-**Grothendieck's inequality (real case).** There is a constant $K > 0$ such that for all
+There is a constant $K > 0$ such that for all
 $m, n \in \mathbb{N}$, every real $m \times n$ matrix $A = (a_{ij})$, every real Hilbert space $H$
 and all vectors $x_1, \dots, x_m, y_1, \dots, y_n \in H$ of norm at most $1$, there are signs
 $\varepsilon_1, \dots, \varepsilon_m, \delta_1, \dots, \delta_n \in \{1, -1\}$ such that

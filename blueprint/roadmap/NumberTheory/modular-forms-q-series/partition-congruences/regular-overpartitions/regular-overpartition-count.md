@@ -1,6 +1,6 @@
 # Number of $\ell$-regular overpartitions
 
-**Number of $\ell$-regular overpartitions.** For natural numbers $\ell$ and $n$, $A_\ell(n)$ is
+For natural numbers $\ell$ and $n$, $A_\ell(n)$ is
 the number of overpartitions of $n$ in which no part is divisible by $\ell$.
 
 No positivity restriction is placed on $\ell$; for $\ell = 0$ every overpartition of $n$ is

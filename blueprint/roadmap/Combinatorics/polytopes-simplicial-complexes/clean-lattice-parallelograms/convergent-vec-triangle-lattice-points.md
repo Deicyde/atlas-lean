@@ -1,6 +1,6 @@
 # Lattice points of the triangle with vertices $0$, $v_{i-2}$, $v_i$
 
-**Lattice points of the triangle with vertices $0$, $v_{i-2}$, $v_i$.** Let $1 \le a < n$ be
+Let $1 \le a < n$ be
 integers, let $n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of $n / a$, where
 $m$ is the least index at which it terminates, and let $v_j$ be its convergent vectors. For every
 integer $i$ with $0 \le i \le m$, let $T_i$ be the closed triangle with vertices $0$, $v_{i-2}$

@@ -1,6 +1,6 @@
 # Open maps can raise the dimension of a cube
 
-**Open maps can raise the dimension of a cube.** There are natural numbers $p < q$ and a
+There are natural numbers $p < q$ and a
 continuous, open, surjective map $f \colon I^p \to I^q$, where $I^p = [0,1]^p$ and
 $I^q = [0,1]^q$ are the $p$- and $q$-dimensional cubes.
 

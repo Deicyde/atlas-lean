@@ -1,6 +1,6 @@
 # Almost prime index sets with one index
 
-**Almost prime index sets with one index.** For every natural number $k$, the almost prime
+For every natural number $k$, the almost prime
 index set $N_k$ with the single index $k$ is the set of $k$-almost primes, the natural numbers
 $n \ne 0$ with exactly $k$ prime factors counted with multiplicity.
 

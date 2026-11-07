@@ -1,6 +1,6 @@
 # Square-torus fixed points of the identity
 
-**Square-torus fixed points of the identity.** Let $n$ be a positive integer, let $T$ be a
+Let $n$ be a positive integer, let $T$ be a
 finite set of tile designs, and let $\sigma$ be the identity permutation of $T$. Let $S$ be the
 sum, over all shifts $v \in (\mathbb{Z}/n\mathbb{Z})^2$, of the number of tilings
 $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with $F(c + v) = \sigma(F(c))$ for every cell $c$. Then

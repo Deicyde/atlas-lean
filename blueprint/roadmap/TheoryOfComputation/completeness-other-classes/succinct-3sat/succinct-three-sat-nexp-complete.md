@@ -1,6 +1,6 @@
 # Succinct 3SAT is NEXP-complete
 
-**Succinct 3SAT is NEXP-complete.** The succinct 3SAT decision problem lies in NEXP, and every
+The succinct 3SAT decision problem lies in NEXP, and every
 decision problem in NEXP has a polynomial-time many-one reduction to it.
 
 ## Sources

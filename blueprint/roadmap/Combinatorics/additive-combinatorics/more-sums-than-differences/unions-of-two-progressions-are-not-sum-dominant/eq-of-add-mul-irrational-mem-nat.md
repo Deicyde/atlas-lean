@@ -1,6 +1,6 @@
 # At most one nonnegative integer point on a progression with irrational difference
 
-**At most one nonnegative integer point on a progression with irrational difference.** Let $x$
+Let $x$
 and $d$ be real numbers with $d$ irrational. If $i$ and $j$ are natural numbers such that $x + id$
 and $x + jd$ are both nonnegative integers, then $i = j$.
 

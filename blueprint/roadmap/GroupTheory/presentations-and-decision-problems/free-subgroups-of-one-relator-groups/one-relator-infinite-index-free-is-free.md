@@ -1,6 +1,6 @@
 # Kourovka Problem 20.41: one-relator groups with free infinite-index subgroups
 
-**Kourovka Problem 20.41: one-relator groups with free infinite-index subgroups.** The
+The
 proposition that every non-cyclic residually finite group $G$ such that every subgroup of finite
 index in $G$ (including $G$ itself) is isomorphic to a one-relator group
 $\langle x_0, \dots, x_{n-1} \mid r \rangle$ for some natural number $n$ and some element $r$ of

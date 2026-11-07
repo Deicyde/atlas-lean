@@ -1,6 +1,5 @@
 # No large solutions of the central binomial product equation with shift at least two
 
-**No large solutions of the central binomial product equation with shift at least two.**
 For natural numbers $a$, $b$, $x$ with $a \ge 1$, $b \ge 1$, $x \ge 2$ and $a + b \ge 150$, we have
 $\binom{2(a+b)}{a+b} \ne \binom{2a}{a}\binom{x+2b}{b}$.
 

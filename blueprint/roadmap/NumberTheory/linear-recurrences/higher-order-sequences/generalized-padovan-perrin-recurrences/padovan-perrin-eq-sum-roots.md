@@ -1,6 +1,6 @@
 # Analytic expression of the Padovan–Perrin sequences
 
-**Analytic expression of the Padovan–Perrin sequences.** Let $k_1, k_2, p, s$ be natural
+Let $k_1, k_2, p, s$ be natural
 numbers with $k_1 > 0$, $p \ge 2$, $p < s$ and $k_1^2 < k_2$, let
 $P(z) = z^{s+p} - k_1 z^p - k_2$, and let $v \colon \mathbb{N} \to \mathbb{C}$ satisfy
 $v(n + s + p) = k_1 v(n + p) + k_2 v(n)$ for every $n$. For $0 \le m \le s + p - 1$ put

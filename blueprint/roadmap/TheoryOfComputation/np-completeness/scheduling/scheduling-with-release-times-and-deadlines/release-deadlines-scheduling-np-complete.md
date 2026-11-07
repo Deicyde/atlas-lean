@@ -1,6 +1,6 @@
 # SINGLE-MACHINE SCHEDULING WITH RELEASE TIMES AND DEADLINES is NP-complete
 
-**SINGLE-MACHINE SCHEDULING WITH RELEASE TIMES AND DEADLINES is NP-complete.** The
+The
 decision problem SINGLE-MACHINE SCHEDULING WITH RELEASE TIMES AND DEADLINES belongs to NP, and
 every decision problem in NP has a polynomial-time many-one reduction to it.
 

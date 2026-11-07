@@ -1,6 +1,6 @@
 # Decomposition of sums with at least $r$ distinct terms
 
-**Decomposition of sums with at least $r$ distinct terms.** Let $G$ be an abelian group, $A$
+Let $G$ be an abelian group, $A$
 a nonempty finite subset of $G$, and $r, h$ natural numbers with $1 \le r \le |A|$ and $r \le h$.
 Write $h^{(\ge r)}A$ for the set of sums of $h$ elements of $A$, repetitions allowed, in which at
 least $r$ distinct elements occur, $(h - r)A$ for the set of sums of $h - r$ elements of $A$,

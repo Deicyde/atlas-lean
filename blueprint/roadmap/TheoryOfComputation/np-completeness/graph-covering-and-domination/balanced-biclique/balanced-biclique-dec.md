@@ -1,6 +1,6 @@
 # The decision problem BALANCED BICLIQUE
 
-**The decision problem BALANCED BICLIQUE.** BALANCED BICLIQUE is the decision problem that
+BALANCED BICLIQUE is the decision problem that
 accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a
 balanced biclique instance $(n, es, K)$ that is well formed (the entries of $es$ are distinct,
 and every pair $(u, v)$ in $es$ has $u < n$, $v < n$, $u \neq v$ and $(v, u) \notin es$) and for

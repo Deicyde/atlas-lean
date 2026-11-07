@@ -1,6 +1,6 @@
 # Enflo type
 
-**Enflo type.** Let $X$ be a real Banach space, $C \in [0, \infty]$ and $p$ a real number. We
+Let $X$ be a real Banach space, $C \in [0, \infty]$ and $p$ a real number. We
 say that $X$ has Enflo type $p$ with constant $C$ if for every $n \ge 1$ and every function
 $f : \{-1, 1\}^n \to X$,
 

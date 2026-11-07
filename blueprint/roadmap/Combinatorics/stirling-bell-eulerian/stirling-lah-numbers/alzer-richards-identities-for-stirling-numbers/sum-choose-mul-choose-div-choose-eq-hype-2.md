@@ -1,6 +1,6 @@
 # A binomial sum as a terminating ${}_2F_1$ series
 
-**A binomial sum as a terminating ${}_2F_1$ series.** Write
+Write
 $x^{\overline{n}} = x(x+1)\cdots(x+n-1)$ for the rising factorial of a complex number $x$, and
 $\binom{w}{k} = w(w-1)\cdots(w-k+1)/k!$ for a complex number $w$ and a natural number $k$. Let
 $m$ and $\nu$ be natural numbers with $1 \le \nu \le \lfloor m/2 \rfloor$, and let $p$ be a

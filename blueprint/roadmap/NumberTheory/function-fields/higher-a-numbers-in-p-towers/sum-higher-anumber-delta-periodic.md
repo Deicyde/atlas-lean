@@ -1,6 +1,6 @@
 # Eventual periodicity of the $\delta$ sums
 
-**Eventual periodicity of the $\delta$ sums.** Let $p$ be a prime and $d$ a divisor of
+Let $p$ be a prime and $d$ a divisor of
 $p - 1$; let $\delta$ be the rounding indicator, $\tau_D$ the denominator of $\tau = (p + 1)/d$
 in lowest terms, and $F_y(e)$ the $\delta_0$ correction sum of Lemma 9. Let $x$ be a positive
 rational such that the prime-to-$p$ part $x_D$ of the denominator of $x$ equals $\tau_D$, and

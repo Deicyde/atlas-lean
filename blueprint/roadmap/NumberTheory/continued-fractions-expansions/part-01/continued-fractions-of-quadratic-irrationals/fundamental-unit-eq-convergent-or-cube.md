@@ -1,6 +1,6 @@
 # Fundamental unit from the period of $\sqrt{d}$
 
-**Fundamental unit from the period of $\sqrt{d}$.** Let $d \ge 2$ be a squarefree integer, let
+Let $d \ge 2$ be a squarefree integer, let
 $\varepsilon$ be the least real number $u > 1$ of the form $u = (x + y\sqrt{d})/2$ with
 $x, y \in \mathbb{Z}$ and $x^2 - d y^2 = \pm 4$ (the fundamental unit of $\mathbb{Q}(\sqrt{d})$),
 let $\sqrt{d} = [a_0; a_1, a_2, \dots]$ be the regular continued fraction of $\sqrt{d}$, with

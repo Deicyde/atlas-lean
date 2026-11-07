@@ -1,6 +1,6 @@
 # The cotangent limit $4/x$
 
-**The cotangent limit $4/x$.** For every nonzero real number $x$, as $k \to \infty$ through the
+For every nonzero real number $x$, as $k \to \infty$ through the
 natural numbers,
 
 $$\left(\frac{1}{k} - 1\right)\cot\frac{x}{k-1} + \left(\frac{1}{k} + 1\right)\cot\frac{x}{k+1}

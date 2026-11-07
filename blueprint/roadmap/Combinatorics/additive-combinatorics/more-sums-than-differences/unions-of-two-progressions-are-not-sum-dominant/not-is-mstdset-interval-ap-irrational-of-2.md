@@ -1,6 +1,6 @@
 # Interval plus irrational-step progression meeting the naturals is not MSTD
 
-**Interval plus irrational-step progression meeting the naturals is not MSTD.** Let
+Let
 $I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$, as finite
 sets of reals. Let $n \ge 3$ and $m$ be natural numbers, $d$ a positive irrational real number
 and $x > n - 1$ a real number that is not a natural number, and suppose that $x + jd$ is a

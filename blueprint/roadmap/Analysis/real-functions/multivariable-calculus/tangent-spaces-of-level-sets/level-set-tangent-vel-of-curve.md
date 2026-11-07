@@ -1,6 +1,6 @@
 # Velocities of curves in a level set lie in the kernel of the derivative
 
-**Velocities of curves in a level set lie in the kernel of the derivative.** Let $E$ be a
+Let $E$ be a
 real normed space, $c \in \mathbb{R}$, and $f : E \to \mathbb{R}$ a function differentiable at
 $x \in E$. If a curve $\gamma : \mathbb{R} \to E$ satisfies $\gamma(0) = x$, has derivative $v$ at
 $0$, and satisfies $f(\gamma(t)) = c$ for all $t \in \mathbb{R}$, then $Df(x)v = 0$.

@@ -1,6 +1,6 @@
 # Zeroth term of the companion sequence $V^{(-r)}$
 
-**Zeroth term of the companion sequence $V^{(-r)}$.** Let $A$ be a commutative ring, $r$ a
+Let $A$ be a commutative ring, $r$ a
 natural number, $x \in A$ and $y$ a unit of $A$. The companion sequence of the
 $(-r)$-Fibonacci polynomials satisfies $V^{(-r)}_0(x, y) = r + 1$.
 

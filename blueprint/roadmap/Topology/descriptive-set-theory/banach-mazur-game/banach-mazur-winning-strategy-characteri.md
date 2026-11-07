@@ -1,6 +1,6 @@
 # Banach–Mazur game theorem
 
-**Banach–Mazur game theorem.** For every set $E \subseteq \mathbb{R}$, player A has a winning
+For every set $E \subseteq \mathbb{R}$, player A has a winning
 strategy in the Banach–Mazur game for $E$ if and only if there are reals $a < b$ such that
 $(a, b) \setminus E$ is meagre, and player B has a winning strategy in the Banach–Mazur game for
 $E$ if and only if $E$ is meagre.

@@ -1,6 +1,6 @@
 # Big-step semantics of IMP
 
-**Big-step semantics of IMP.** The big-step relation says when running a command $c$ from a
+The big-step relation says when running a command $c$ from a
 state $s$ terminates in a state $t$; we then say that $c$ takes $s$ to $t$. It is the least
 relation satisfying the following rules. The command $\mathtt{skip}$ takes $s$ to $s$. The
 assignment $x := a$ takes $s$ to the state $s[x \mapsto a(s)]$, which agrees with $s$ except that

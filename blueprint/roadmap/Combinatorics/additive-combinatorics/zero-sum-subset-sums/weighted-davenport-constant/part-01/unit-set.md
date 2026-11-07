@@ -1,6 +1,6 @@
 # Units modulo n
 
-**Units modulo n.** For a natural number $n$, $U(n)$ is the set of units of the ring
+For a natural number $n$, $U(n)$ is the set of units of the ring
 $\mathbb{Z}/n\mathbb{Z}$ of integers modulo $n$.
 
 ## Sources

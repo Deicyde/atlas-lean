@@ -1,6 +1,6 @@
 # Sum-free partitions modulo $m$
 
-**Sum-free partitions modulo $m$.** For natural numbers $m$, $k$, $l$ and $n$, the range
+For natural numbers $m$, $k$, $l$ and $n$, the range
 $\{1, \dots, n\}$ admits a partition into $k$ classes that are $l$-sum-free modulo $m$ if there
 is a coloring $c$ of the natural numbers with $k$ colors such that, for each color $j$, the set
 of integers $a$ with $1 \le a \le n$ and $c(a) = j$ is $l$-sum-free modulo $m$. Classes may be

@@ -1,6 +1,6 @@
 # Recurrence for the Padovan-like sequence
 
-**Recurrence for the Padovan-like sequence.** For natural numbers $p$, $q$ and $n$ with
+For natural numbers $p$, $q$ and $n$ with
 $q \ge 1$ and $n \ge p + q$, the Padovan-like sequence satisfies
 $a_{p,q,n} = a_{p,q,n-q} + a_{p,q,n-p-q}$.
 

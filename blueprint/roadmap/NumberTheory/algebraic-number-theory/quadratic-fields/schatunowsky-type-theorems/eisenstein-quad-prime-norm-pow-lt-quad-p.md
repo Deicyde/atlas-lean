@@ -1,6 +1,6 @@
 # Explicit primorial thresholds for the Eisenstein integers
 
-**Explicit primorial thresholds for the Eisenstein integers.** Let $K$ be a number field of
+Let $K$ be a number field of
 discriminant $-3$ (so $K \cong \mathbb{Q}(\sqrt{-3})$). Put $N(\pi_0) = 1$ and, for $n \ge 1$, let
 $N(\pi_n)$ be the $n$-th smallest number that is the norm of a nonzero prime ideal of
 $\mathcal{O}_K$; let $N(\pi_n\#)$ be the product of the norms of the nonzero prime ideals of

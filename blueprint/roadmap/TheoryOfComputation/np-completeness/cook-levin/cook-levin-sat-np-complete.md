@@ -1,6 +1,6 @@
 # Cook–Levin theorem: SAT is NP-complete
 
-**Cook–Levin theorem: SAT is NP-complete.** Let SAT be the decision problem on
+Let SAT be the decision problem on
 bitstrings that accepts exactly the encodings of satisfiable CNF formulas. Then SAT belongs to
 NP, and every decision problem $L$ in NP is polynomial-time many-one reducible to SAT: there
 is a function $f$ from bitstrings to bitstrings, computable in polynomial time, such that

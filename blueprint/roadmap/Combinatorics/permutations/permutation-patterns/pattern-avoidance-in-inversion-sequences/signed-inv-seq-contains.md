@@ -1,6 +1,6 @@
 # Containment of a length-2 signed pattern
 
-**Containment of a length-2 signed pattern.** Let $e = e_1 \cdots e_n$ be a sequence whose
+Let $e = e_1 \cdots e_n$ be a sequence whose
 entries are natural numbers $|e_i|$, each barred or not, and let $\tau_1\tau_2$ be a length-2
 signed pattern. Then $e$ contains $\tau_1\tau_2$ if there are positions $i < j$ such that $|e_i|$
 is equal to, smaller than or larger than $|e_j|$ exactly as $|\tau_1|$ is equal to, smaller than

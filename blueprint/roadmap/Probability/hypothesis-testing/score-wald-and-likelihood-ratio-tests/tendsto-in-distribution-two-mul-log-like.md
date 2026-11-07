@@ -1,6 +1,6 @@
 # Wilks' theorem (simple null)
 
-**Wilks' theorem (simple null).** Under the conditions of `tendstoInDistribution_waldStatistic`
+Under the conditions of `tendstoInDistribution_waldStatistic`
 and joint measurability of `(θ, x) ↦ p θ x`, the log-likelihood-ratio statistic
 `2 (ℓₙ(θ̂ₙ) - ℓₙ(θ₀))`, `ℓₙ θ = ∑_{i<n} log p θ (X i)`, of a consistent root `θ̂ₙ` of the
 likelihood equation converges in distribution to `χ²₁`.

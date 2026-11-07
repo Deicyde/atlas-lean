@@ -1,4 +1,4 @@
 # Balanced sentential form
 
-**Balanced sentential form.** A sentential form is balanced when its `a`-, `b`- and `c`-counts
+A sentential form is balanced when its `a`-, `b`- and `c`-counts
 agree.

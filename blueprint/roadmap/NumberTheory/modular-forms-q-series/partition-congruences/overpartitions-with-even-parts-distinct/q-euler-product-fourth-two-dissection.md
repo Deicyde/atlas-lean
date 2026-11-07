@@ -1,6 +1,6 @@
 # The 2-dissection of $f_1^4$
 
-**The 2-dissection of $f_1^4$.** For $k \ge 1$ let $f_k = \prod_{m \ge 1} (1 - q^{km})$, an
+For $k \ge 1$ let $f_k = \prod_{m \ge 1} (1 - q^{km})$, an
 integer power series in $q$. Then
 
 $$f_1^4 f_2^2 f_4^2 f_8^4 = f_4^{12} - 4 q f_2^4 f_8^8.$$

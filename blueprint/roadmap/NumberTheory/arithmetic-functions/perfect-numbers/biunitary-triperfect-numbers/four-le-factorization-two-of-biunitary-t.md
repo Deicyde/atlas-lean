@@ -1,6 +1,6 @@
 # Biunitary triperfect numbers divisible by $27$ are divisible by $16$
 
-**Biunitary triperfect numbers divisible by $27$ are divisible by $16$.** Let $N$ be a
+Let $N$ be a
 biunitary triperfect number, that is, a positive integer with $\sigma^{**}(N) = 3N$, where
 $\sigma^{**}$ is the biunitary divisor sum. If $3^3$ divides $N$, then $2^4$ divides $N$.
 

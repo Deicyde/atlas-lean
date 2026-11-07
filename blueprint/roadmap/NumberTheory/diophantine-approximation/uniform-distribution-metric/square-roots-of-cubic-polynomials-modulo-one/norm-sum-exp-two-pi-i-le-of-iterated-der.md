@@ -1,6 +1,6 @@
 # Second-derivative test for exponential sums
 
-**Second-derivative test for exponential sums.** Let $a < b$ be integers, let $\rho > 0$,
+Let $a < b$ be integers, let $\rho > 0$,
 and let $f : \mathbb{R} \to \mathbb{R}$ be twice continuously differentiable, with either
 $f''(t) \ge \rho$ for every $t \in [a, b]$ or $f''(t) \le -\rho$ for every $t \in [a, b]$. Then
 

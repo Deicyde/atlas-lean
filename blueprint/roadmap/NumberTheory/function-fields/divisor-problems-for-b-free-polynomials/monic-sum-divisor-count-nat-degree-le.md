@@ -1,6 +1,6 @@
 # Summatory divisor function for monic polynomials over a finite field
 
-**Summatory divisor function for monic polynomials over a finite field.** Let $F$ be a finite
+Let $F$ be a finite
 field with $q$ elements. For monic $f \in F[T]$, the Dirichlet convolution $(1 * 1)(f)$ of the
 constant function $1$ with itself is the number of monic divisors of $f$. Then for every natural
 number $N$,

@@ -1,6 +1,6 @@
 # Symmetric sets of a given type
 
-**Symmetric sets of a given type.** Let $S = \{s_0 < s_1 < \dots < s_{n-1}\}$ be a finite
+Let $S = \{s_0 < s_1 < \dots < s_{n-1}\}$ be a finite
 set of $n$ rational numbers and let $i, j < n$. Then $S$ is called symmetric of type $(i, j)$ if
 $i < j$ and $S \setminus \{s_i\}$ is a copy of $S \setminus \{s_j\}$.
 

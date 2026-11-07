@@ -1,6 +1,6 @@
 # Operation cost counters for interval trees
 
-**Operation cost counters for interval trees.** A cost record for the interval tree consists
+A cost record for the interval tree consists
 of seven natural-number counters, each defaulting to $0$: node visits, key comparisons, endpoint
 comparisons, cached-maximum reads, cache writes, rotations, and identifier-index operations.
 

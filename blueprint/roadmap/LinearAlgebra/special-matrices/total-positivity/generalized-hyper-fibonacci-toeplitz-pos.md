@@ -1,6 +1,6 @@
 # Eventually positive bounded-order minors of hyper-Fibonacci Toeplitz matrices
 
-**Eventually positive bounded-order minors of hyper-Fibonacci Toeplitz matrices.** Let
+Let
 $p, a, b$ be integers with $p \ge 1$, $a \ge 0$ and $b > 0$, let $W^{(r)}_{p,n}$ denote the
 generalized hyper-Fibonacci numbers, and let $r \ge 1$ be a natural number. For a natural number
 $n$ let $T_n$ be the real $(r+2) \times (r+2)$ Toeplitz matrix with entry $W^{(r)}_{p,n+i-j}$ in

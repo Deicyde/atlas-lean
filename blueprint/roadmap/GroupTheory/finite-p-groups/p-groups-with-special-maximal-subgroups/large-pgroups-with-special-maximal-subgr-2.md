@@ -1,6 +1,6 @@
 # Arbitrarily large $p$-groups all of whose maximal subgroups are special
 
-**Arbitrarily large $p$-groups all of whose maximal subgroups are special.** For every prime $p$
+For every prime $p$
 and every natural number $n$ there is a finite $p$-group $G$ of order greater than $n$ such that
 every maximal subgroup $H$ of $G$ is special, that is, its center $Z(H)$, its commutator subgroup
 $[H, H]$ and its Frattini subgroup $\Phi(H)$ coincide. This answers Kourovka Problem 16.13

@@ -1,6 +1,6 @@
 # Mean of the Dirichlet distribution
 
-**Mean of the Dirichlet distribution.** Let
+Let
 $\alpha = (\alpha_0, \dots, \alpha_n) \in \mathbb{R}^{n+1}$ with $\alpha_j > 0$ for every $j$. For
 every $i$, the $i$-th coordinate of a random vector $\theta$ with the Dirichlet distribution
 $\mathrm{Dir}(\alpha)$ has mean

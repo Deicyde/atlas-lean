@@ -1,6 +1,6 @@
 # Kaplansky density theorem
 
-**Kaplansky density theorem.** Let $H$ be a complex Hilbert space and let $S$ be a unital
+Let $H$ be a complex Hilbert space and let $S$ be a unital
 $*$-subalgebra of the algebra $B(H)$ of bounded operators on $H$, with operator norm $\|\cdot\|$.
 Take closures in the strong operator topology on $B(H)$, the topology of pointwise convergence on
 $H$, and write $\overline{S}$ for the strong closure of $S$. Then the strong closure of the unit

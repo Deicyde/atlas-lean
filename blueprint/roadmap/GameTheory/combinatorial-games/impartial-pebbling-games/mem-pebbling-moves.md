@@ -1,6 +1,6 @@
 # Successors of a pebbling position
 
-**Successors of a pebbling position.** Let $G$ be a simple graph on the vertices
+Let $G$ be a simple graph on the vertices
 $0, \dots, n-1$, let $k$ be a natural number, and let $a$ and $b$ be distributions of pebbles on
 the vertices of $G$. Then $b$ is reachable from $a$ by one $(k+1:k)$-pebbling move on $G$ if and
 only if there are adjacent vertices $i$ and $j$ of $G$ such that $i$ holds at least $k + 1$

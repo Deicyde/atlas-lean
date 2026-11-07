@@ -1,6 +1,6 @@
 # Rokhlin lemma for non-invertible maps
 
-**Rokhlin lemma for non-invertible maps.** Let $\Omega$ be a standard Borel space with a
+Let $\Omega$ be a standard Borel space with a
 probability measure $\mu$, and let $T : \Omega \to \Omega$ be a measure-preserving map that is
 aperiodic with respect to $\mu$. Then for every integer $n \ge 1$ and every
 $\varepsilon \in (0, \infty]$ there is a measurable set $B \subseteq \Omega$ such that the

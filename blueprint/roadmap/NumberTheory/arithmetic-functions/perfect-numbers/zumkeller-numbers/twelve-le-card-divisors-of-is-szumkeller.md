@@ -1,6 +1,6 @@
 # Even s-Zumkeller numbers have at least twelve divisors
 
-**Even s-Zumkeller numbers have at least twelve divisors.** If $n$ is an even s-Zumkeller
+If $n$ is an even s-Zumkeller
 number, then $n$ has at least $12$ positive divisors.
 
 ## Sources

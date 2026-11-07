@@ -1,6 +1,6 @@
 # Coefficient bound for the divided derivatives $D^n/n!$
 
-**Coefficient bound for the divided derivatives $D^n/n!$.** Let $p$ be a prime and $B$ a
+Let $p$ be a prime and $B$ a
 normed vector space over $\mathbb{Q}_p$ whose norm is ultrametric. Let $(a_k)_{k \ge 0}$ be a
 sequence in $B$ and $C$ a real number with $\|a_k\| \le C$ for every $k$. Then for all natural
 numbers $n$ and $k$,

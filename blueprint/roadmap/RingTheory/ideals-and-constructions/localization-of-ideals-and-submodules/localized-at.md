@@ -1,6 +1,6 @@
 # Saturation of a submodule at a submonoid
 
-**Saturation of a submodule at a submonoid.** Let $A$ be a commutative ring, $V$ an
+Let $A$ be a commutative ring, $V$ an
 $A$-module, $M$ a submodule of $V$ and $S$ a submonoid of $A$. The saturation of $M$ at $S$ is the
 submodule of $V$ consisting of the elements $v \in V$ such that $s v \in M$ for some $s \in S$.
 

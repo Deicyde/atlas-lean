@@ -1,6 +1,6 @@
 # Power-weighted Pell sums along odd multiples
 
-**Power-weighted Pell sums along odd multiples.** Let $P_n$ be the Pell numbers and $Q_n$ the
+Let $P_n$ be the Pell numbers and $Q_n$ the
 Pell–Lucas numbers, the Lucas sequence $V(2, -1)$: $Q_0 = Q_1 = 2$ and
 $Q_{n+2} = 2 Q_{n+1} + Q_n$. Let $m$ be an odd natural number and write $k = Q_m$. Let
 $A_k^{(0)} = 1$ and

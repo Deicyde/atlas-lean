@@ -1,6 +1,6 @@
 # Jaeger's modular orientation conjecture is false
 
-**Jaeger's modular orientation conjecture is false.** There exist an integer $k \ge 1$ and a
+There exist an integer $k \ge 1$ and a
 finite multigraph (loops and parallel edges allowed) with at least two vertices, in which every
 partition of the vertices into two nonempty sets is crossed by at least $4k$ edges, such that no
 orientation of the edges makes the indegree minus the outdegree of every vertex divisible by

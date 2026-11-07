@@ -1,6 +1,6 @@
 # The input encoding of the single-tape emulation is primitive recursive
 
-**The input encoding of the single-tape emulation is primitive recursive.** Let $M$ be a
+Let $M$ be a
 multi-stack machine together with a bijection $e$ from the alphabet of its input stack to the
 Booleans, and suppose the tape alphabet $\Gamma'$ of the single-tape emulation of $M$ is finite and
 carries a primitive recursive coding. Then the map sending $n \in \mathbb{N}$ to the initial tape

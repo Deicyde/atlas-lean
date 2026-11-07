@@ -1,6 +1,6 @@
 # Partitions whose even parts are distinct
 
-**Partitions whose even parts are distinct.** For a natural number $n$, $\mathrm{ped}(n)$ is
+For a natural number $n$, $\mathrm{ped}(n)$ is
 the number of partitions of $n$ in which every even part occurs exactly once; the odd parts are
 unrestricted.
 

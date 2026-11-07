@@ -1,6 +1,6 @@
 # Divisor–logarithm bound for a family of sequences
 
-**Divisor–logarithm bound for a family of sequences.** A family $(\alpha_x)_{x \in \mathbb{R}}$
+A family $(\alpha_x)_{x \in \mathbb{R}}$
 of finitely supported sequences $\alpha_x : \mathbb{N} \to \mathbb{R}$ satisfies the
 divisor–logarithm bound if there are a real number $C > 0$ and natural numbers $k$ and $l$ such
 that for all sufficiently large real $x$ and all integers $n \ge 1$,

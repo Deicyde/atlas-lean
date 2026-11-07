@@ -1,6 +1,6 @@
 # The table-driven step
 
-**The table-driven step.** Fix an encoding $E$ of a finite TM2 machine $M$, with $K$ stacks
+Fix an encoding $E$ of a finite TM2 machine $M$, with $K$ stacks
 and window depth $d$, and a natural number $H$. Let $c$ be a configuration such that every symbol
 on every stack of $c$ lies in the effective alphabet of $E$ and every stack of $c$ has length at
 most $H \mathbin{\dot{-}} d$ (truncated subtraction). Let $c'$ be the idle-extended step of $M$ at

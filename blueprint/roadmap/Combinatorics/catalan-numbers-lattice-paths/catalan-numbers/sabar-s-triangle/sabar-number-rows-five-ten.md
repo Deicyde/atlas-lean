@@ -1,6 +1,6 @@
 # Rows 5 and 10 of Sabar's triangle
 
-**Rows 5 and 10 of Sabar's triangle.** The entries $s(5, i)$ of Sabar's triangle for
+The entries $s(5, i)$ of Sabar's triangle for
 $i = 0, 1, \dots, 4$ are $1, 2, 7, 6, 5$, and the entries $s(10, i)$ for $i = 0, 1, \dots, 9$
 are $0, 6, 24, 71, 129, 167, 147, 92, 36, 10$.
 

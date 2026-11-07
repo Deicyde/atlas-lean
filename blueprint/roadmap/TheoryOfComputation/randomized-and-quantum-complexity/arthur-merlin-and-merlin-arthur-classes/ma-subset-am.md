@@ -1,6 +1,6 @@
 # MA is contained in AM
 
-**MA is contained in AM.** Every decision problem in the class $\mathsf{MA}$ is in the class
+Every decision problem in the class $\mathsf{MA}$ is in the class
 $\mathsf{AM}$.
 
 ## Sources

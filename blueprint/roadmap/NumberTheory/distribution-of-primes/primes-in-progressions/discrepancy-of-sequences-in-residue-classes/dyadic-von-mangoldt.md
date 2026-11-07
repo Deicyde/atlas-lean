@@ -1,6 +1,6 @@
 # Von Mangoldt function on a dyadic interval
 
-**Von Mangoldt function on a dyadic interval.** For a real number $x$, this is the finitely
+For a real number $x$, this is the finitely
 supported function on $\mathbb{N}$ whose value at $n$ is $\Lambda(n)$ when $n \ge 1$ and
 $x \le n \le 2x$, and $0$ otherwise, where $\Lambda$ is the von Mangoldt function.
 

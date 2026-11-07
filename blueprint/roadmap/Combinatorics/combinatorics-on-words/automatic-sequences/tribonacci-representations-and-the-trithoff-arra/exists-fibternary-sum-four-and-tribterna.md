@@ -1,6 +1,6 @@
 # Sums of Fibternary and Tribternary numbers
 
-**Sums of Fibternary and Tribternary numbers.** Call a natural number Fibternary if its
+Call a natural number Fibternary if its
 base-$3$ digits are all $0$ or $1$ with no two consecutive $1$s, and Tribternary if its
 base-$3$ digits are all $0$ or $1$ with no three consecutive $1$s. Every natural number is a
 sum of four Fibternary numbers and also a sum of three Tribternary numbers (the summands

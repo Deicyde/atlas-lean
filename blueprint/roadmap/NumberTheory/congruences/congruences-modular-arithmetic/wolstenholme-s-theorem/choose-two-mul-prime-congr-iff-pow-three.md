@@ -1,6 +1,6 @@
 # Equivalent forms of Wolstenholme's congruence
 
-**Equivalent forms of Wolstenholme's congruence.** Let $p \ge 5$ be a prime and let $n$ and
+Let $p \ge 5$ be a prime and let $n$ and
 $k$ be natural numbers. Then the congruences $\binom{2p}{p} \equiv 2$, $\binom{np}{p} \equiv n$ and
 $\binom{np}{kp} \equiv \binom{n}{k}$ modulo $p^3$ are equivalent.
 

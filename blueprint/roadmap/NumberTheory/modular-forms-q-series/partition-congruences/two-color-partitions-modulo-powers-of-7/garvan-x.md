@@ -1,6 +1,6 @@
 # Garvan's coefficient vectors
 
-**Garvan's coefficient vectors.** Let $(m_{i,j})$ be Garvan's matrix. Garvan's coefficient
+Let $(m_{i,j})$ be Garvan's matrix. Garvan's coefficient
 vectors $x_k = (x_{k,1}, x_{k,2}, \dots)$ for $k \ge 1$ are defined by $x_{1,1} = 7$,
 $x_{1,2} = 7^2$ and $x_{1,i} = 0$ for $i \ge 3$, and, for $k \ge 1$ and $i \ge 1$, by
 

@@ -1,6 +1,6 @@
 # Set arithmetic progressions with given first term and difference
 
-**Set arithmetic progressions with given first term and difference.** Let $M$ be an
+Let $M$ be an
 additive commutative monoid, $l \in \mathbb{N} \cup \{\infty\}$ and $a, d \in M$. A set
 $s \subseteq M$ is an arithmetic progression of length $l$ with first term $a$ and difference
 $d$ if $s = \{a + n d : n \in \mathbb{N},\ n < l\}$ and $s$ has exactly $l$ elements, counting

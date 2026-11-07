@@ -1,6 +1,6 @@
 # $\mathcal{M}_2$ as a coding of a uniform morphic word
 
-**$\mathcal{M}_2$ as a coding of a uniform morphic word.** Let $\sigma$ be the $4$-uniform
+Let $\sigma$ be the $4$-uniform
 morphism on $\{0, 1, 2, 3\}$ with $\sigma(0) = 0132$, $\sigma(1) = 2310$, $\sigma(2) = 3201$ and
 $\sigma(3) = 1023$. There is a sequence $w$ with values in $\{0, 1, 2, 3\}$ such that $w(0) = 0$,
 $w(4n + r)$ is the letter of $\sigma(w(n))$ in position $r$ (counting from $0$) for all $n \ge 0$

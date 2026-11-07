@@ -1,6 +1,6 @@
 # Central binomial products with $x \ge 2$ and $a + b < 150$
 
-**Central binomial products with $x \ge 2$ and $a + b < 150$.** Let $x$, $a$, $b$ be natural
+Let $x$, $a$, $b$ be natural
 numbers with $a \ge 1$, $b \ge 1$, $x \ge 2$ and $x < a + b < 150$. Then
 $\binom{2(a+b)}{a+b} \ne \binom{2a}{a}\binom{x+2b}{b}$.
 

@@ -1,6 +1,6 @@
 # PARTITION INTO PATHS OF LENGTH 2 is NP-complete
 
-**PARTITION INTO PATHS OF LENGTH 2 is NP-complete.** The decision problem PARTITION INTO PATHS
+The decision problem PARTITION INTO PATHS
 OF LENGTH 2 belongs to NP, and every decision problem in NP has a polynomial-time many-one
 reduction to it.
 

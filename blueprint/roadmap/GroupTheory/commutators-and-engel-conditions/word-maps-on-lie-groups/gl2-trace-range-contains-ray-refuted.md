@@ -1,6 +1,5 @@
 # Mycielski's trace-range question for $\mathrm{GL}(2, \mathbb{R})$ has a negative answer
 
-**Mycielski's trace-range question for $\mathrm{GL}(2, \mathbb{R})$ has a negative answer.**
 There is a nontrivial element $w$ of the free group on two generators $x, y$ such that some real
 number $t \ge -2$ is not the trace of $w(A, B)$ for any $A, B \in \mathrm{GL}(2, \mathbb{R})$, where
 $w(A, B)$ is obtained by substituting $A$ for $x$ and $B$ for $y$.

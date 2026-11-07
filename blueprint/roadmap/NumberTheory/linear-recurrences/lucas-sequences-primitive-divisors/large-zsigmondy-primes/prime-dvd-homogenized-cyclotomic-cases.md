@@ -1,6 +1,6 @@
 # Prime divisors of homogenized cyclotomic values
 
-**Prime divisors of homogenized cyclotomic values.** Let $a > b$ be coprime positive
+Let $a > b$ be coprime positive
 integers, let $n \ge 2$, let $\Phi_n(a, b)$ be the homogenized cyclotomic value, let $p$ be a
 prime dividing $\Phi_n(a, b)$, and let $k$ be the least positive integer such that $p$ divides
 $a^k - b^k$. Then one of the following holds: (i) $p = 2$ and $n = 2^\beta$ for some

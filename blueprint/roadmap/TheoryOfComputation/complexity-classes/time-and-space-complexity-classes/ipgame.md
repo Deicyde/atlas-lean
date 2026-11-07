@@ -1,6 +1,6 @@
 # Interactive-proof game
 
-**Interactive-proof game.** The game takes a length cap $c$, a verifier message function
+The game takes a length cap $c$, a verifier message function
 $V_{\mathrm{msg}}$, a verifier decision function $V_{\mathrm{dec}}$, a prover $P$ mapping
 transcripts (lists of bitstrings) to bitstrings, an input $x$, a coin string $\rho$, a number
 $k$ of rounds and a transcript $t$, and returns a Boolean outcome. If $k = 0$, the outcome is

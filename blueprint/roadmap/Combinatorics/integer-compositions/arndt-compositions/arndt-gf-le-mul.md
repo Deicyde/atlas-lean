@@ -1,6 +1,6 @@
 # Generating function of Arndt compositions with bounded largest part
 
-**Generating function of Arndt compositions with bounded largest part.** For a natural number
+For a natural number
 $\ell$, let $A(x, y; \ell)$ be the formal power series in $x$ over $\mathbb{Z}[y]$ whose
 coefficient of $x^n y^k$ is the number of Arndt compositions of $n$ with $k$ parts, all at most
 $\ell$, and let

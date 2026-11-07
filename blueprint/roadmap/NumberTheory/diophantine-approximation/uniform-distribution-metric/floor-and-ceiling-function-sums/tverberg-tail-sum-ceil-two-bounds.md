@@ -1,6 +1,6 @@
 # Sharp bounds for two-term tail sums of Tverberg's ceiling sum
 
-**Sharp bounds for two-term tail sums of Tverberg's ceiling sum.** For integers $a, b$ and
+For integers $a, b$ and
 natural numbers $m, K$, let
 $T(a, b, m, K) = \sum_{k=1}^{K} f^{(\lceil \cdot \rceil)}((a, b), m, k)$, where
 $f^{(\lceil \cdot \rceil)}$ is Tverberg's sum with $F$ the ceiling function. Then

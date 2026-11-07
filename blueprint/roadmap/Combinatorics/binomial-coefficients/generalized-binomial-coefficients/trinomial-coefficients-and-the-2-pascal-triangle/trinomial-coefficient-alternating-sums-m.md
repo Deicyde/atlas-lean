@@ -1,6 +1,6 @@
 # Alternating trinomial sums over residue classes modulo 3 and 5
 
-**Alternating trinomial sums over residue classes modulo 3 and 5.** Write
+Write
 $\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$, and
 $L_m$ for the Lucas numbers ($L_0 = 2$, $L_1 = 1$, $L_{m+2} = L_{m+1} + L_m$). Let $n$ and $x$ be
 natural numbers.

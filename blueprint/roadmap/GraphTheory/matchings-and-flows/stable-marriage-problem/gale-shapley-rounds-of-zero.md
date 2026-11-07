@@ -1,6 +1,6 @@
 # Gale–Shapley rounds with no participants
 
-**Gale–Shapley rounds with no participants.** For the preference profile with no men and no
+For the preference profile with no men and no
 women, the men-proposing Gale–Shapley algorithm takes zero rounds.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Banded Hessenberg–Toeplitz determinants and linear recurrences
 
-**Banded Hessenberg–Toeplitz determinants and linear recurrences.** Let $R$ be a commutative
+Let $R$ be a commutative
 ring, let $k \ge 1$, and let $(c_j)_{j \ge 1}$ and $(\beta_m)_{m \ge 1}$ be sequences in $R$ such
 that $\beta_1 = \cdots = \beta_{k-1} = 0$, $\beta_k = 1$ and
 $\beta_m = \sum_{j=1}^{k} c_j \beta_{m-j}$ for every $m > k$. For $n \ge 0$ let $H_n$ be the

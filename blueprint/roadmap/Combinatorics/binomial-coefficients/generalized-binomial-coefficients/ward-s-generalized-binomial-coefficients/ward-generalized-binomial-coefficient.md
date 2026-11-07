@@ -1,6 +1,6 @@
 # Ward generalized binomial coefficient
 
-**Ward generalized binomial coefficient.** Let $R$ be a commutative monoid and
+Let $R$ be a commutative monoid and
 $s = (s_b)_{b \in \mathbb{N}}$ a sequence in $R$. For natural numbers $n$ and $m$, the Ward
 generalized binomial coefficient is
 

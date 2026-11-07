@@ -1,4 +1,4 @@
 # Forward map of the binary word residue equivalence
 
-**Forward map of the binary word residue equivalence.** The forward equivalence is the canonical quotient constructor applied to the polynomial
+The forward equivalence is the canonical quotient constructor applied to the polynomial
 encoding.

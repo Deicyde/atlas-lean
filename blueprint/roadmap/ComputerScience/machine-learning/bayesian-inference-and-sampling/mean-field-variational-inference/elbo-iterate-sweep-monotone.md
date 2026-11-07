@@ -1,6 +1,6 @@
 # Mean-field coordinate ascent never decreases the ELBO
 
-**Mean-field coordinate ascent never decreases the ELBO.** Let $A$ and $B$ be nonempty finite
+Let $A$ and $B$ be nonempty finite
 sets, let $p : A \times B \to \mathbb{R}$ be a joint, and let $q_1^{(0)}$ and $q_2^{(0)}$ be
 probability distributions on $A$ and $B$. A sweep of coordinate ascent replaces $q_1$ by its CAVI
 update $q_1'(a) \propto \exp \sum_{b} q_2(b) \log p(a, b)$ and then $q_2$ by its CAVI update

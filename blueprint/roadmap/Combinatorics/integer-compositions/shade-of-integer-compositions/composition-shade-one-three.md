@@ -1,6 +1,6 @@
 # Shade of the composition 1 + 3
 
-**Shade of the composition 1 + 3.** The composition $1 + 3$ has shade $3$: its bargraph
+The composition $1 + 3$ has shade $3$: its bargraph
 has $3$ shaded cells.
 
 All three shaded cells lie to the right of the bargraph.

@@ -1,6 +1,6 @@
 # Formula for the fourth greedy $B_h$ term
 
-**Formula for the fourth greedy $B_h$ term.** For every integer $h \ge 1$, the fourth positive
+For every integer $h \ge 1$, the fourth positive
 element $a_4(h)$ of the greedy $B_h$-set is $(h^3 + 3h^2 + 3h + 1)/2$ if $h$ is odd and
 $(h^3 + 2h^2 + 3h + 2)/2$ if $h$ is even.
 

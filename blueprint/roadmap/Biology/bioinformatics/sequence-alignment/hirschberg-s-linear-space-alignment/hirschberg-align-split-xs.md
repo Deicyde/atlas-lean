@@ -1,6 +1,6 @@
 # Hirschberg reconstruction splits the longer first list
 
-**Hirschberg reconstruction splits the longer first list.** Fix a type $\alpha$, a
+Fix a type $\alpha$, a
 substitution score $\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$.
 Write $H_n(u, v)$ for the Hirschberg reconstruction of lists $u$, $v$ with fuel $n$, $S(u, v)$
 for their Needleman–Wunsch score, and $u_{\lt m}$, $u_{\ge m}$ for the first $m$ elements of $u$

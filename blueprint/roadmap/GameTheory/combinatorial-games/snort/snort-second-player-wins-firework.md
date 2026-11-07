@@ -1,6 +1,6 @@
 # Fireworks preserve second-player wins in Snort
 
-**Fireworks preserve second-player wins in Snort.** Let $G$ be a finite simple graph and let
+Let $G$ be a finite simple graph and let
 $(u, v)$ be a response pair of $G$ whose distance in $G$ is at least $3$ (infinite distance,
 when $u$ and $v$ lie in different components, is allowed). If the second player wins Snort on
 $G$, then for every natural number $n$ at least the number $|V(G)|$ of vertices of $G$, the

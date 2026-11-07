@@ -1,6 +1,6 @@
 # Bounds on position functions for words with bounded runs
 
-**Bounds on position functions for words with bounded runs.** Let $w$ be an infinite binary
+Let $w$ be an infinite binary
 word over $\{a, b\}$ that starts with $a$ and in which both letters occur infinitely often, and
 let $c \ge 0$ be an integer such that every block of consecutive equal letters of $w$ has length
 at most $c$. Write $p_\alpha(n)$ for the position (counted from $0$) of the $n$-th occurrence of

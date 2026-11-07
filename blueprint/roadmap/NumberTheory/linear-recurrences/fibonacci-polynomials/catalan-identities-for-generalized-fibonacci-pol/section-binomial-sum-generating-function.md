@@ -1,6 +1,6 @@
 # Generating function of the binomial section sums
 
-**Generating function of the binomial section sums.** Let $R$ be a commutative ring, $t \in R$,
+Let $R$ be a commutative ring, $t \in R$,
 and let $\ell$ and $s$ be natural numbers with $s < \ell$. Put
 $T_{\ell,s}(n; t) = \sum_{i=0}^{n} \binom{n}{\ell i + s} t^i$. Then, as formal power series in $x$
 over $R$,

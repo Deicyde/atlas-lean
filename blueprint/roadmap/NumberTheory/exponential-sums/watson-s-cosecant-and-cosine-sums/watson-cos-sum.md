@@ -1,6 +1,6 @@
 # Generalized Watson trigonometric sum
 
-**Generalized Watson trigonometric sum.** For natural numbers $n$ and $\nu$, $C_n(\nu)$ is the real
+For natural numbers $n$ and $\nu$, $C_n(\nu)$ is the real
 number
 
 $$

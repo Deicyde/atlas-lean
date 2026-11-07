@@ -1,6 +1,6 @@
 # The 230 space groups
 
-**The 230 space groups.** In dimension $3$ there are exactly $230$ classes of crystallographic
+In dimension $3$ there are exactly $230$ classes of crystallographic
 groups under orientation-preserving affine equivalence, exactly $219$ classes of crystallographic
 groups under affine equivalence (conjugation by an arbitrary affine bijection of $\mathbb{R}^3$),
 and exactly $65$ classes under orientation-preserving affine equivalence of crystallographic

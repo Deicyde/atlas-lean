@@ -1,6 +1,6 @@
 # Characterization of unramified extensions of a complete DVR
 
-**Characterization of unramified extensions of a complete DVR.** Let $A$ and $B$ be
+Let $A$ and $B$ be
 discrete valuation rings, with $A$ complete with respect to its maximal ideal, and let $B$
 be an $A$-algebra via a local homomorphism $A \to B$, such that $B$ is finitely generated
 and torsion-free as an $A$-module. Let $k_A$ and $k_B$ be the residue fields of $A$ and $B$.

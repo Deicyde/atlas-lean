@@ -1,6 +1,6 @@
 # The coefficient function $\bar\mu$
 
-**The coefficient function $\bar\mu$.** Let $E$ be a set of finitely supported coefficient
+Let $E$ be a set of finitely supported coefficient
 functions $\mathbb{N} \to \mathbb{N}$ and $\mu$ a finitely supported coefficient function. If
 $\mu$ has an immediate predecessor $\check\mu$ in $E$ (the largest element of $E$ that is
 $\lt _a \mu$ in the ascending lexicographic order) and $\check\mu$ has an immediate successor in

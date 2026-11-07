@@ -1,6 +1,6 @@
 # Odd-length down/up compositions from even-length ones
 
-**Odd-length down/up compositions from even-length ones.** Let $F(x, y, z)$ and $G(x, y, z)$
+Let $F(x, y, z)$ and $G(x, y, z)$
 in $\mathbb{Q}[[x, y, z]]$ be the generating functions of down/up compositions with an even,
 respectively odd, number of parts by weight ($x$), number of parts ($y$) and last part ($z$).
 Then

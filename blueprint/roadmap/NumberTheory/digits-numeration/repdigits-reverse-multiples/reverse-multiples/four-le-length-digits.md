@@ -1,6 +1,6 @@
 # Reverse divisors have at least four digits
 
-**Reverse divisors have at least four digits.** Every reverse divisor has at least four
+Every reverse divisor has at least four
 decimal digits.
 
 ## Sources

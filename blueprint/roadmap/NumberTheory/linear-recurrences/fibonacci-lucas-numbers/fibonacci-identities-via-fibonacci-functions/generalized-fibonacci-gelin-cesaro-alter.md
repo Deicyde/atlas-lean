@@ -1,6 +1,6 @@
 # Alternating Gelin–Cesàro sum for generalized Fibonacci sequences
 
-**Alternating Gelin–Cesàro sum for generalized Fibonacci sequences.** Let $p$ be a real
+Let $p$ be a real
 number, let $W : \mathbb{Z} \to \mathbb{R}$ satisfy $W_{j+2} = p W_{j+1} + W_j$ for every integer
 $j$, and put $\gamma_W = (p W_0 W_1 + W_0^2 - W_1^2)(p^2 - 1)$. Let $n \ge 0$ and $k$ be
 integers such that $W_{j+k-2} W_{j+k-1} W_{j+k+1} W_{j+k+2} \ne 0$ for $1 \le j \le n$ and

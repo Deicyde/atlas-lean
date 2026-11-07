@@ -1,6 +1,6 @@
 # Every finite set contains a copy of the empty set
 
-**Every finite set contains a copy of the empty set.** Every finite set $M$ of natural
+Every finite set $M$ of natural
 numbers contains a homothetic copy of the empty set.
 
 ## Sources

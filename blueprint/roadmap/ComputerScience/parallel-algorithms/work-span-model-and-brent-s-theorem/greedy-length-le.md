@@ -1,6 +1,6 @@
 # The greedy scheduling bound
 
-**The greedy scheduling bound.** Let $G$ be a computation DAG with $n$ tasks and span $D$, and
+Let $G$ be a computation DAG with $n$ tasks and span $D$, and
 let $S$ be a greedy schedule of $G$ on $p$ processors taking $T$ steps. Then
 $pT \le n + (p - 1)D$.
 

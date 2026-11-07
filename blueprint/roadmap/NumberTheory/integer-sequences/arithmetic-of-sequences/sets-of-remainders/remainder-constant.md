@@ -1,6 +1,6 @@
 # The remainder-set constant
 
-**The remainder-set constant.** The remainder-set constant is
+The remainder-set constant is
 $c = \sum_{p} \frac{1}{p(p+1)} \prod_{q < p} \left(1 - \frac{1}{q}\right)$, where $p$ runs
 over all primes and, for each $p$, $q$ runs over the primes less than $p$.
 

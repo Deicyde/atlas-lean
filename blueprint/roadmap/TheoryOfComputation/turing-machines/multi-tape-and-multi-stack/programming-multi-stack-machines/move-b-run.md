@@ -1,6 +1,6 @@
 # Running the bit-moving loop
 
-**Running the bit-moving loop.** Let $a \ne b$ be stacks of a program $M$ whose state carries
+Let $a \ne b$ be stacks of a program $M$ whose state carries
 a flag bit, $d$ a decoder reading each symbol of $a$ as a bit or a marker, $g$ an encoder from bits
 to symbols of $b$, and $\mathit{self}$, $\mathit{next}$ labels such that $M$ runs at
 $\mathit{self}$ the bit-moving loop from $a$ to $b$ with decoder $d$ and encoder $g$, looping at

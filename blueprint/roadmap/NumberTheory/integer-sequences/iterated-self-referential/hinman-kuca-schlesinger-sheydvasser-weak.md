@@ -1,6 +1,6 @@
 # Hinman–Kuca–Schlesinger–Sheydvasser weak rigidity theorem for Ulam sequences
 
-**Hinman–Kuca–Schlesinger–Sheydvasser weak rigidity theorem for Ulam sequences.** There
+There
 exist sequences of integers $(a_k)$, $(b_k)$, $(c_k)$, $(d_k)$ indexed by $k \in \mathbb{N}$ with
 the following property. For every real $C > 0$ there is a natural number $N > 0$ such that for
 every natural number $n \ge N$ with $n > 1$, and every sequence of natural numbers

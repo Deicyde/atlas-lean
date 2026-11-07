@@ -1,6 +1,6 @@
 # Time bound of the transition-clause generator on the tables of a machine
 
-**Time bound of the transition-clause generator on the tables of a machine.** Let $M$ be a
+Let $M$ be a
 finite multi-stack Turing machine with window depth $d$, let $E$ be an encoding of $M$ with $N$
 situations, and let $H \ge d$ and $T \in \mathbb{N}$. Run the transition-clause generator for the
 layout of $E$, the current-code table $\mathrm{la}$, the next-code table $\mathrm{na}$ and the

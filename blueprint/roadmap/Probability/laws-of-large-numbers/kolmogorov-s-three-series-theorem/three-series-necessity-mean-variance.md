@@ -1,6 +1,6 @@
 # Kolmogorov three-series necessity, series (2)–(3)
 
-**Kolmogorov three-series necessity, series (2)–(3).** If the partial
+If the partial
 sums of an independent sequence `Xₙ` converge almost surely, then for
 every `A > 0` the truncations `Yₙ = Xₙ · 1_{|Xₙ| ≤ A}` have convergent
 mean partial sums and summable variances. This is the corrected form of

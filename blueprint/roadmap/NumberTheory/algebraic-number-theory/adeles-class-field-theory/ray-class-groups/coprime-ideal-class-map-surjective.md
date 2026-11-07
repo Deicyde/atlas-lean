@@ -1,6 +1,6 @@
 # Every ideal class contains a fractional ideal coprime to the modulus
 
-**Every ideal class contains a fractional ideal coprime to the modulus.** Let $K$ be a
+Let $K$ be a
 number field and $\mathfrak m$ a modulus of $K$ with finite part $\mathfrak m_0$. The homomorphism
 from the group of fractional ideals of $K$ coprime to $\mathfrak m_0$ (those whose exponent at
 every prime dividing $\mathfrak m_0$ is $0$) to the class group of $\mathcal O_K$, sending each

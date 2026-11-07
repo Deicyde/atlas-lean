@@ -1,6 +1,6 @@
 # Moving one color code from the color stack
 
-**Moving one color code from the color stack.** Let $f$ assign a label to each pair of
+Let $f$ assign a label to each pair of
 bits, and suppose the color stack $P$ of stacks $S$ holds, from the top, the bit symbols $c_1$
 and $c_2$ followed by a rest $r$. Then executing the color-moving block with continuation $f$,
 from any internal value and the stacks $S$, ends at label $f(c_1, c_2)$ with internal value

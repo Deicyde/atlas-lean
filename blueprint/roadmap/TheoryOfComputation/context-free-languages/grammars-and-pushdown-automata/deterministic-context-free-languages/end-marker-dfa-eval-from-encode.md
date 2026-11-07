@@ -1,6 +1,6 @@
 # Encoding DFA accepts every end-marker encoding
 
-**Encoding DFA accepts every end-marker encoding.** The encoding DFA accepts exactly the encodings: it reaches the
+The encoding DFA accepts exactly the encodings: it reaches the
 accepting state on an encoding.
 
 ## Sources

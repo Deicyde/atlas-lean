@@ -1,6 +1,6 @@
 # Red ordered copy
 
-**Red ordered copy.** Let $H$ be a simple graph on $\{0, \dots, n - 1\}$ with a strict total
+Let $H$ be a simple graph on $\{0, \dots, n - 1\}$ with a strict total
 order $\lt _H$ on its vertices, and let $G$ be a simple graph on $\{0, \dots, N - 1\}$, the red
 graph. Then $G$ contains a red ordered copy of $(H, \lt _H)$ when there is an ordered embedding $f$
 of $(\{0, \dots, n - 1\}, \lt _H)$ into $\{0, \dots, N - 1\}$ such that $f(a)$ and $f(b)$ are

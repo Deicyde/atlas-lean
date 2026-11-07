@@ -1,6 +1,6 @@
 # Birkhoff's ergodic theorem in $L^1$ for bounded functions
 
-**Birkhoff's ergodic theorem in $L^1$ for bounded functions.** Let $\mu$ be a probability
+Let $\mu$ be a probability
 measure on a measurable space $\alpha$, let $T : \alpha \to \alpha$ be ergodic with respect to
 $\mu$ (in particular $T$ preserves $\mu$), let $M \ge 0$, and let $g : \alpha \to \mathbb{R}$ be
 $\mu$-integrable with $|g(x)| \le M$ for every $x \in \alpha$. For $n \ge 1$ let

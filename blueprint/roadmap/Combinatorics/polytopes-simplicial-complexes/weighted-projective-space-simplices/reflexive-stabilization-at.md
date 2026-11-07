@@ -1,6 +1,6 @@
 # Higher reflexive stabilizations
 
-**Higher reflexive stabilizations.** For a list of natural-number weights
+For a list of natural-number weights
 $q = (q_1, \dots, q_n)$ and a natural number $m$, the $m$th reflexive stabilization of $q$ is the
 list $\mathrm{rs}(q, m) = (1^k, q_1, \dots, q_n)$ obtained by prepending $k$ entries equal to $1$,
 where $k = \mathrm{rsn}(q) + (m - 1) \operatorname{lcm}(q)$. Here $\mathrm{rsn}(q)$ is the

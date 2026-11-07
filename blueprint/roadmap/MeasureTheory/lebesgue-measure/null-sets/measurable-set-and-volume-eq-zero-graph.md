@@ -1,6 +1,6 @@
 # The graph of a measurable function is a null set
 
-**The graph of a measurable function is a null set.** Let $d \ge 0$ be an integer and let
+Let $d \ge 0$ be an integer and let
 $f : \mathbb{R}^d \to \mathbb{R}$ be Borel measurable. Identify $\mathbb{R}^d \times \mathbb{R}$
 with $\mathbb{R}^{d+1}$ by taking the last coordinate as $y$. Then the graph
 $\Gamma = \{(x, y) \in \mathbb{R}^d \times \mathbb{R} : y = f(x)\}$ is a Borel measurable subset

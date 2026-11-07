@@ -1,6 +1,6 @@
 # Pole multiplicity vanishes where the function is not meromorphic
 
-**Pole multiplicity vanishes where the function is not meromorphic.** Let
+Let
 $f \colon \mathbb{C} \to \mathbb{C}$ and $z \in \mathbb{C}$. If $f$ is not meromorphic at $z$, then
 the pole multiplicity of $f$ at $z$ is $0$.
 

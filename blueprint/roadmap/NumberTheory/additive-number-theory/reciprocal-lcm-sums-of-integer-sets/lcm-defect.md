@@ -1,6 +1,6 @@
 # Gcd defect
 
-**Gcd defect.** For a set $A$ of natural numbers and a real number $x$, let
+For a set $A$ of natural numbers and a real number $x$, let
 $S_A(x) = \sum_{n \in A,\ 1 \le n \le x} 1/n$ be the harmonic sum of $A$ up to $x$, and let
 $G_A(x)$ be the sum of $\gcd(n, m)/(nm)$ over all ordered pairs $(n, m)$ with $n, m \in A$,
 $1 \le n \le x$ and $1 \le m \le x$. The gcd defect of $A$ up to $x$ is

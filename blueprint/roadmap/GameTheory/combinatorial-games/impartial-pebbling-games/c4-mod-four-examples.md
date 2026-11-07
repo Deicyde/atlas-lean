@@ -1,6 +1,6 @@
 # Examples of positions in the sets $Y$ for $C_4$
 
-**Examples of positions in the sets $Y$ for $C_4$.** Writing $(a_0, a_1, a_2, a_3)$ for the
+Writing $(a_0, a_1, a_2, a_3)$ for the
 position with $a_j$ pebbles on vertex $v_j$ of $C_4$: the position $(2, 0, 0, 1)$ lies in
 $Y_{aabc}$, the position $(0, 1, 0, 0)$ lies in $\hat Y_{abac}$, the position $(0, 0, 0, 0)$ lies
 in $\hat Y_{abab}$, and the position $(1, 1, 0, 0)$ lies in $(\hat Y_{abab})^c$.

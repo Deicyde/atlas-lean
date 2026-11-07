@@ -1,6 +1,6 @@
 # The Jacobian matrix computes the derivative
 
-**The Jacobian matrix computes the derivative.** Let $f : \mathbb{R}^m \to \mathbb{R}^n$ be
+Let $f : \mathbb{R}^m \to \mathbb{R}^n$ be
 differentiable at $x \in \mathbb{R}^m$, and let $J$ be the Jacobian matrix of $f$ at $x$. Then for
 every $v \in \mathbb{R}^m$, the product $J v$ equals $Df(x)\, v$, the Fréchet derivative of $f$ at
 $x$ applied to $v$.

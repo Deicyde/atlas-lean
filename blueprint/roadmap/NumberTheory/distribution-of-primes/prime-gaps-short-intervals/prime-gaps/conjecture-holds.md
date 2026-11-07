@@ -1,6 +1,6 @@
 # Erdős Problem 6 (increasing prime gaps)
 
-**Erdős Problem 6 (increasing prime gaps).** Let $p_0 = 2$, $p_1 = 3$, $p_2 = 5, \dots$ be the
+Let $p_0 = 2$, $p_1 = 3$, $p_2 = 5, \dots$ be the
 primes in increasing order and let $d_n = p_{n+1} - p_n$ be the prime gap at $n$. There are
 infinitely many natural numbers $n$ with $d_n < d_{n+1} < d_{n+2}$.
 

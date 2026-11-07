@@ -1,6 +1,6 @@
 # Peeling off the leading letter of a digit block
 
-**Peeling off the leading letter of a digit block.** Let $S$ be a finite set of integers, read
+Let $S$ be a finite set of integers, read
 as the positions of the digits $1$ of an expansion. For every integer $k$, every natural number
 $b$ and every finite word $w$ over the natural numbers, the word $bw$ (the letter $b$ followed by
 $w$) occurs as a digit block of $S$ at position $k$ if and only if both $k \in S$ holds exactly

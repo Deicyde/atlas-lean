@@ -1,6 +1,6 @@
 # The orbit index of $1$ is zero
 
-**The orbit index of $1$ is zero.** For every Lucas sequence $U = U(P, Q)$, the orbit index
+For every Lucas sequence $U = U(P, Q)$, the orbit index
 of $1$ is $\omega(1) = 0$.
 
 ## Sources

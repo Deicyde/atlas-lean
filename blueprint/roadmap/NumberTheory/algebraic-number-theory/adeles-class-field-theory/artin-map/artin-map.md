@@ -1,6 +1,6 @@
 # Artin map
 
-**Artin map.** Let $L/K$ be an abelian Galois extension of number fields and $\mathfrak m$
+Let $L/K$ be an abelian Galois extension of number fields and $\mathfrak m$
 a modulus of $K$ with finite part $\mathfrak m_0$, such that every prime of $\mathcal O_K$ not
 dividing $\mathfrak m_0$ is unramified in $L$. Let $I^{\mathfrak m}$ be the group of fractional
 ideals of $K$ coprime to $\mathfrak m_0$ and $F$ the free group on the primes $\mathfrak p$ of

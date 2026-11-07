@@ -1,6 +1,6 @@
 # Nonempty Greibach productions begin with a terminal
 
-**Nonempty Greibach productions begin with a terminal.** In Greibach normal form, every nonempty production output begins
+In Greibach normal form, every nonempty production output begins
 with a terminal followed by nonterminals.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Evaluation of a quantified CNF formula
 
-**Evaluation of a quantified CNF formula.** Let $\varphi$ be a CNF formula, let
+Let $\varphi$ be a CNF formula, let
 $a : \mathbb{N} \to \{\mathrm{true}, \mathrm{false}\}$ be an assignment, and let $Q$ be a
 quantifier prefix, a list of pairs $(e, v)$ of a flag $e$ (true for $\exists$, false for
 $\forall$) and a variable $v \in \mathbb{N}$. Write $a[v \mapsto b]$ for the assignment that

@@ -1,6 +1,6 @@
 # Longest progression with a given common difference
 
-**Longest progression with a given common difference.** For an integer $m$ and natural numbers
+For an integer $m$ and natural numbers
 $n$ and $d$, let $R_m(n)$ be the set of integers $a$ with $m + 1 \le a \le m + n$ and
 $\gcd(a, n) = 1$. Then $f_m(d, n)$ is the supremum of the natural numbers $s$ for which some
 integer $b$ has $b + i d \in R_m(n)$ for every natural number $i < s$. For $d > 0$ every such $s$

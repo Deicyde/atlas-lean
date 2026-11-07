@@ -1,6 +1,6 @@
 # Product lower bound for the consecutive weighted zero-sum constant
 
-**Product lower bound for the consecutive weighted zero-sum constant.** For a natural number
+For a natural number
 $n$ and $A \subseteq \mathbb{Z}/n\mathbb{Z}$, let $C_A(n)$ denote the least positive integer $k$
 such that every sequence $(x_1, \dots, x_k)$ in $\mathbb{Z}/n\mathbb{Z}$ has a block of
 consecutive terms $x_s, \dots, x_t$ with $s \le t$ and weights $a_s, \dots, a_t \in A$ such that

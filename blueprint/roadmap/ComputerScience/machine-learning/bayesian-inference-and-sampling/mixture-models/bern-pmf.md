@@ -1,6 +1,6 @@
 # Product Bernoulli probability mass function
 
-**Product Bernoulli probability mass function.** For a vector $p \in \mathbb{R}^d$ of success
+For a vector $p \in \mathbb{R}^d$ of success
 probabilities and a binary vector $x \in \{0, 1\}^d$, the probability of $x$ under the product of
 $d$ independent Bernoulli distributions with parameters $p_1, \dots, p_d$ is
 

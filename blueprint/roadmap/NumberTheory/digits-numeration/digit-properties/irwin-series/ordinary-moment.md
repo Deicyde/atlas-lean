@@ -1,6 +1,6 @@
 # Ordinary moments of the Irwin measures
 
-**Ordinary moments of the Irwin measures.** For natural numbers $b$, $d$, $k$, $m$ with
+For natural numbers $b$, $d$, $k$, $m$ with
 $d < b$, the ordinary moment $u_{k;m}$ is the integral of $x^m$ over $[0,1)$ with respect to the
 Irwin measure $\mu_k$ of base $b$ and digit $d$:
 

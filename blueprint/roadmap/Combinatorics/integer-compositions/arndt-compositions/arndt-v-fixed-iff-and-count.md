@@ -1,6 +1,6 @@
 # Compositions fixed by $V$ and their Fibonacci count
 
-**Compositions fixed by $V$ and their Fibonacci count.** A composition $(c_1, \dots, c_m)$
+A composition $(c_1, \dots, c_m)$
 of $n$ is fixed by the map $V$ if and only if $c_i = 1$ for every odd $i$ and $c_i$ is odd and
 at least $3$ for every even $i$. Let $c_V(n)$ be the number of compositions of $n$ fixed by $V$.
 Then $c_V(n) = c_V(n - 2) + c_V(n - 4)$ for every $n \ge 5$, $c_V(1) = c_V(4) = 1$,

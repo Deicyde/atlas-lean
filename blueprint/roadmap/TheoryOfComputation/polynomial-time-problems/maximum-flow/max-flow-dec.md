@@ -1,6 +1,6 @@
 # Max-flow decision problem
 
-**Max-flow decision problem.** The decision problem that accepts a bitstring $x$ exactly when
+The decision problem that accepts a bitstring $x$ exactly when
 $x$ decodes, under the canonical bitstring encoding, to a tuple $(n, E, s, t, K)$ of a natural
 number $n$, a list $E = (e_0, \dots, e_{m-1})$ of triples $e_j = (u_j, v_j, c_j)$ of natural
 numbers and natural numbers $s$, $t$ and $K$ such that $u_j < n$, $v_j < n$ and $u_j \neq v_j$

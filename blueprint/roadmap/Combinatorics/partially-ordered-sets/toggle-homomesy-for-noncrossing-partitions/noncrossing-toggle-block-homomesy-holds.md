@@ -1,6 +1,6 @@
 # Block-count homomesy for toggling noncrossing partitions
 
-**Block-count homomesy for toggling noncrossing partitions.** The block-count homomesy claim
+The block-count homomesy claim
 holds: with $\sigma_n$ the toggle composite on $n$ points and $\sigma_n^k$ its $k$-fold iterate,
 for every $n \ge 1$, every noncrossing arc set $P$ on $n$ points and every $L \ge 1$ with
 $\sigma_n^L(P) = P$, twice the sum of the block counts of

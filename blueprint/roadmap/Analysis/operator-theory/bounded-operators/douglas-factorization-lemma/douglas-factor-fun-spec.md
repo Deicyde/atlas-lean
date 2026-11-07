@@ -1,3 +1,3 @@
 # Defining properties of the Douglas preimage
 
-**Defining properties of the Douglas preimage.** The defining properties of the chosen preimage.
+The defining properties of the chosen preimage.

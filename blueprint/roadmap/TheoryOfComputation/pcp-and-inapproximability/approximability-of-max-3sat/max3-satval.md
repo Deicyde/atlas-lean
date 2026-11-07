@@ -1,6 +1,6 @@
 # The MAX-3SAT objective
 
-**The MAX-3SAT objective.** The value of MAX-3SAT on an instance $x$ under an assignment $a$,
+The value of MAX-3SAT on an instance $x$ under an assignment $a$,
 both bitstrings, is defined as follows. Suppose $x$ decodes, under the canonical bitstring
 encoding, to a pair $(u, \varphi)$ of a bitstring $u$ and a CNF formula $\varphi$, and suppose
 moreover that $|a| \le |x|$, that every literal of $\varphi$ has variable index less than $|u|$

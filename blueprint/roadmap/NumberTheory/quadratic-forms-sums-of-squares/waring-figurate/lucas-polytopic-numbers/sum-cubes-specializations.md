@@ -1,6 +1,6 @@
 # Sum-of-cubes identities for Fibonacci, Pell, Jacobsthal and Mersenne numbers
 
-**Sum-of-cubes identities for Fibonacci, Pell, Jacobsthal and Mersenne numbers.** Let $F_n$
+Let $F_n$
 be the Fibonacci numbers, $P_n$ the Pell numbers, and $J_n$ the Jacobsthal numbers, that is, the
 Lucas sequence $U(1, -2)$, with $J_0 = 0$, $J_1 = 1$ and $J_{n+2} = J_{n+1} + 2 J_n$. For every
 natural number $n$,

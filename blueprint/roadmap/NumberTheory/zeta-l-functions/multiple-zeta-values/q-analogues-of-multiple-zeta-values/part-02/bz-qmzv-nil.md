@@ -1,6 +1,6 @@
 # Bradley–Zhao qMZV of the empty index
 
-**Bradley–Zhao qMZV of the empty index.** The Bradley–Zhao q-multiple zeta value of the
+The Bradley–Zhao q-multiple zeta value of the
 empty index is $\zeta_q^{BZ}(\varnothing) = 1$.
 
 ## Sources

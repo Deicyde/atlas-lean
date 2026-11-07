@@ -1,6 +1,6 @@
 # Kolmogorov–Arnold superposition with a single outer function
 
-**Kolmogorov–Arnold superposition with a single outer function.** Let $n \ge 1$ and let
+Let $n \ge 1$ and let
 $f : \mathbb{R}^n \to \mathbb{R}$ be continuous on the unit cube $[0, 1]^n$. Then there exist a
 continuous function $g : \mathbb{R} \to \mathbb{R}$ and continuous functions
 $\varphi_{k,l} : \mathbb{R} \to \mathbb{R}$ for $0 \le k \le 2n$ and $0 \le l < n$ such that for

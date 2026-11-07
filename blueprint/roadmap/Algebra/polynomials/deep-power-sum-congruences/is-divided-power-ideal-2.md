@@ -1,6 +1,6 @@
 # Ideals with divided powers are divided-power ideals
 
-**Ideals with divided powers are divided-power ideals.** Let $I$ be an ideal of a commutative
+Let $I$ be an ideal of a commutative
 ring $A$. If $I$ carries a divided-power structure $(\gamma_k)_{k \ge 0}$ in the usual sense, then
 $I$ is a divided-power ideal: for every $a \in I$ and every $k \ge 1$ there is $c \in I$ with
 $a^k = k!\, c$.

@@ -1,6 +1,6 @@
 # Common refinement of two tagged partitions
 
-**Common refinement of two tagged partitions.** Let $a, b$ be real numbers. For any two
+Let $a, b$ be real numbers. For any two
 tagged partitions $T_1$ and $T_2$ of $[a, b]$, there is a tagged partition $T''$ of $[a, b]$
 that is a tagged refinement of both $T_1$ and $T_2$.
 

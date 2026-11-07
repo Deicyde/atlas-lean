@@ -1,6 +1,6 @@
 # Normal subgroups of the identity component of the homeomorphism group of a sphere
 
-**Normal subgroups of the identity component of the homeomorphism group of a sphere.** Let
+Let
 $n \ne 4$ be a natural number and let $S^n$ be the unit sphere in $\mathbb{R}^{n+1}$. Give the
 group $\mathrm{Homeo}(S^n)$ of homeomorphisms of $S^n$ the topology induced by the embedding
 $h \mapsto (h, h^{-1})$ into pairs of continuous self-maps of $S^n$ with the compact-open

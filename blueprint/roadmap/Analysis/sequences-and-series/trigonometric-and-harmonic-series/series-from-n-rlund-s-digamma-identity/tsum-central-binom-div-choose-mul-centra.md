@@ -1,6 +1,6 @@
 # A shifted central binomial series
 
-**A shifted central binomial series.** For every natural number $h$, with
+For every natural number $h$, with
 $H_h = \sum_{j=1}^{h} \frac{1}{j}$ the $h$th harmonic number,
 
 $$\sum_{n=0}^{\infty} \frac{\binom{2n}{n}}{\binom{n+h}{h} \binom{2(n+h+1)}{n+h+1} (n + h + 1)^2} =

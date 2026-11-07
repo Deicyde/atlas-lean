@@ -1,6 +1,6 @@
 # Alternating sum of shifted binomial coefficients
 
-**Alternating sum of shifted binomial coefficients.** Let $\ell$, $n$, $j$ and $s$ be natural
+Let $\ell$, $n$, $j$ and $s$ be natural
 numbers with $1 \le \ell \le n$, $j \ge 1$ and $\ell j + s \le n$. Then
 
 $$\sum_{i=0}^{\ell} (-1)^i \binom{\ell}{i} \binom{n-i}{\ell j+s} = \binom{n-\ell}{\ell(j-1)+s}.$$

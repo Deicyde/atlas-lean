@@ -1,6 +1,6 @@
 # Leftmost derivations from the start symbol along an index sequence
 
-**Leftmost derivations from the start symbol along an index sequence.** Let
+Let
 $P = [(t_0, b_0), \dots, (t_{m-1}, b_{m-1})]$ be a list of dominoes, and let $S$, $A$, $B$ be the
 nonterminals of the ambiguity grammar of $P$. For every nonempty sequence $i_1, \dots, i_n$ of
 indices less than $m$, the production $S \to A$ followed by the canonical rule sequence from $A$

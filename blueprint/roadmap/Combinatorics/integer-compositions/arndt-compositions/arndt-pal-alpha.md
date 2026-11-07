@@ -1,6 +1,6 @@
 # The auxiliary series $\alpha$ for down/up compositions
 
-**The auxiliary series $\alpha$ for down/up compositions.** In $\mathbb{Q}[[x, y, z]]$ write
+In $\mathbb{Q}[[x, y, z]]$ write
 $(a; x)_m = \prod_{j=0}^{m-1} (1 - a x^j)$. For a power series $w$ in $\mathbb{Q}[[x, y, z]]$, the
 series $\alpha(x, y, w)$ is the coefficientwise convergent sum
 $\alpha(x, y, w) = \sum_{n \ge 0} \frac{(-1)^n x^{n^2+n} y^{2n} w^n}{(xw; x)_{2n}}$.

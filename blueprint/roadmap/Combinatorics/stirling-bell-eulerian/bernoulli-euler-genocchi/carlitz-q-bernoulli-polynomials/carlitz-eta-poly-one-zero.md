@@ -1,6 +1,6 @@
 # Carlitz's initial value $\eta_1 = 0$
 
-**Carlitz's initial value $\eta_1 = 0$.** For real $q \ne 1$, the value $\eta_1 = \eta_1(0)$ of
+For real $q \ne 1$, the value $\eta_1 = \eta_1(0)$ of
 Carlitz's $q$-polynomial $\eta_1$ at $0$ equals $0$.
 
 ## Sources

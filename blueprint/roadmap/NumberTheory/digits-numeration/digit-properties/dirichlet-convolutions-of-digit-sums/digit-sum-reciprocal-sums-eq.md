@@ -1,6 +1,6 @@
 # Exact formulas for the reciprocal digit sums
 
-**Exact formulas for the reciprocal digit sums.** Let $q \ge 2$ be an integer and let $s_q(n)$
+Let $q \ge 2$ be an integer and let $s_q(n)$
 denote the sum of the base-$q$ digits of $n$. Let $F$ be the Trollope–Delange fluctuation and $J$
 the remainder of the Trollope–Delange formula in base $q$, and for real $x$ put
 $G(x) = \int_1^x F(\log u / \log q) \, du / u$, $H(x) = \int_1^x G(u) \, du / u$,

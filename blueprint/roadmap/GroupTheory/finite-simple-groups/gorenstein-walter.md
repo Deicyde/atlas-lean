@@ -1,6 +1,6 @@
 # Gorenstein–Walter theorem
 
-**Gorenstein–Walter theorem.** Let $G$ be a finite nonabelian simple group, and let $P$ be a
+Let $G$ be a finite nonabelian simple group, and let $P$ be a
 Sylow $2$-subgroup of $G$ that is isomorphic to the dihedral group $D_n$ for some natural number
 $n$ (of order $2n$ when $n \ge 1$; $D_0$ is the infinite dihedral group). Then $G$ is isomorphic
 to the alternating group $A_7$, or to the projective special linear group

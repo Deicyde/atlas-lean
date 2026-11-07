@@ -1,6 +1,6 @@
 # Partial fraction decomposition over $\mathbb{R}$
 
-**Partial fraction decomposition over $\mathbb{R}$.** For every real rational function
+For every real rational function
 $f \in \mathbb{R}(X)$ there exist a polynomial $q \in \mathbb{R}[X]$, a finite set $S$ of monic
 polynomials in $\mathbb{R}[X]$, each of degree $1$ or irreducible of degree $2$, and, for each
 $p \in S$, a natural number $m_p$ and polynomials $g_{p,k} \in \mathbb{R}[X]$ for $k < m_p$, each

@@ -1,6 +1,6 @@
 # Number of restricted-overlap tilings
 
-**Number of restricted-overlap tilings.** For a finite set $Q$ of natural numbers and natural
+For a finite set $Q$ of natural numbers and natural
 numbers $n$ and $k$, $B^Q_{n,k}$ is the number of restricted-overlap tilings of an $n$-board with
 squares and $k$ $Q$-combs.
 

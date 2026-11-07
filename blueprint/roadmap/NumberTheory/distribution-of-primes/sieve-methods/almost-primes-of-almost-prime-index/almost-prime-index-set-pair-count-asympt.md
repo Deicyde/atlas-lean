@@ -1,6 +1,6 @@
 # Counting almost primes of almost prime index
 
-**Counting almost primes of almost prime index.** Let $j, k \ge 1$ be integers and, for real
+Let $j, k \ge 1$ be integers and, for real
 $x$, let $N_{jk}(x)$ be the number of $j$-almost primes $n \le x$ whose index in the increasing
 enumeration of the $j$-almost primes, counted from $1$, is a $k$-almost prime. Writing
 $M(x) = \frac{x \, (\log \log x)^{j+k-2}}{(\log x)^2 \, (j-1)! \, (k-1)!}$, we have

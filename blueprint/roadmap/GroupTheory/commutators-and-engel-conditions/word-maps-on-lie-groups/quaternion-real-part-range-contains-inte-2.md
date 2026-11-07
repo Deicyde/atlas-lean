@@ -1,6 +1,6 @@
 # Mycielski's real-part question for quaternion word maps has a negative answer
 
-**Mycielski's real-part question for quaternion word maps has a negative answer.** There is a
+There is a
 nontrivial element $w$ of the free group on two generators $x, y$ such that some real number $t$
 with $-5/27 \le t \le 1$ is not the real part of $w(p, q)$ for any nonzero real quaternions $p, q$,
 where $w(p, q)$ is obtained by substituting $p$ for $x$ and $q$ for $y$.

@@ -1,6 +1,6 @@
 # Gaps between unsums
 
-**Gaps between unsums.** Let $a_1 < a_2 < \cdots$ be the unsums (OEIS A260317): the
+Let $a_1 < a_2 < \cdots$ be the unsums (OEIS A260317): the
 positive integers that are not a sum $p + q$ of upper Wythoff numbers $p < q$. For $i \ge 0$,
 the $i$-th gap between consecutive unsums (counted from zero) is $a_{i+2} - a_{i+1}$; this
 is OEIS A260311 shifted by one.

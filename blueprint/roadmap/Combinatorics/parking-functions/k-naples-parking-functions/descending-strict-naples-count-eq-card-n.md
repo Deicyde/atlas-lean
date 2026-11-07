@@ -1,6 +1,6 @@
 # Descending strictly $k$-Naples parking functions and noncrossing partitions
 
-**Descending strictly $k$-Naples parking functions and noncrossing partitions.** For every
+For every
 $n$ and every $k \ge 1$, the number of descending strictly $k$-Naples parking functions of
 length $n$ (descending preferences that are $k$-Naples but not $(k - 1)$-Naples) equals the
 number of noncrossing partitions of $\{0, 1, \dots, n + k\}$ in which the block containing $0$

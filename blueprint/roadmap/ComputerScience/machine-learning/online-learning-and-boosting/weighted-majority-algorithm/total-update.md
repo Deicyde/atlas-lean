@@ -1,6 +1,6 @@
 # Total weight after an update
 
-**Total weight after an update.** Let $\beta$ be an element of a linearly ordered field $K$,
+Let $\beta$ be an element of a linearly ordered field $K$,
 let $w_0, \dots, w_{n-1} \in K$ be weights on $n$ experts, and let $r$ be a round with advice
 $a \in \{\mathrm{true}, \mathrm{false}\}^n$ and outcome $y$. If $w'$ are the weights after the
 update with penalty $\beta$ on $r$, then

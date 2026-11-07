@@ -1,6 +1,6 @@
 # Every periodic group embeds in a simple periodic group
 
-**Every periodic group embeds in a simple periodic group.** For every group $G$ in which every
+For every group $G$ in which every
 element has finite order, there are a simple group $S$ in which every element has finite order and
 an injective homomorphism $G \to S$. This answers Kourovka Problem 11.106 (R. Phillips) in the
 affirmative; the result is due to A. Yu. Olshanskii (1992).

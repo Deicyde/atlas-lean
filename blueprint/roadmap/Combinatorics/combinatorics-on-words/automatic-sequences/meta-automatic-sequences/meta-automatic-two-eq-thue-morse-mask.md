@@ -1,6 +1,6 @@
 # $\mathcal{M}_2$ is the Thue–Morse sequence along a binary digit mask
 
-**$\mathcal{M}_2$ is the Thue–Morse sequence along a binary digit mask.** For a natural
+For a natural
 number $m$ with binary digits $b_i = \lfloor m / 2^i \rfloor \bmod 2$, let $q(m)$ be the sum of
 $b_i 2^i$ over the $i \le m$ with $i \not\equiv 2 \pmod 3$, that is, the number obtained from $m$
 by setting its binary digits in the positions $i \equiv 2 \pmod 3$ to zero. Then for every natural

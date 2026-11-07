@@ -1,6 +1,6 @@
 # Adding a copy of the largest part to a double-perfect partition
 
-**Adding a copy of the largest part to a double-perfect partition.** Let $r \ge 1$,
+Let $r \ge 1$,
 $n \ge 2(r+1)$, and let $\lambda$ be a double-perfect partition of $n$ of order $r$ whose largest
 part $\ell$ is not $r + 1$. Then $\lambda$ with one more part $\ell$ is a double-perfect partition
 of $n + \ell$ of order $r$. The condition $\ell \ne r + 1$ cannot be dropped: $(1^2, 3^4, 6)$ is

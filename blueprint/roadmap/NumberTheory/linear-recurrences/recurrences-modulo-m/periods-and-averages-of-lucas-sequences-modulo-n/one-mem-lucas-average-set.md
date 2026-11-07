@@ -1,6 +1,6 @@
 # The Lucas average set contains $1$
 
-**The Lucas average set contains $1$.** For all integers $P, Q$ with $Q \ne 0$, the number $1$
+For all integers $P, Q$ with $Q \ne 0$, the number $1$
 lies in the Lucas average set $S'(U)$ of $U = U(P, Q)$: the set of $n$ in the Lucas period set
 $S(U)$ with $n \mid U_1 + \dots + U_n$.
 

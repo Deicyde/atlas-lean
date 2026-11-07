@@ -1,6 +1,6 @@
 # Sum series over $2k+1 \pm a$ on $(0, \pi)$
 
-**Sum series over $2k+1 \pm a$ on $(0, \pi)$.** Let $r \ge 2$ be an integer, $a$ a real
+Let $r \ge 2$ be an integer, $a$ a real
 number that is not an odd integer, and $x$ a real number with $0 < x < \pi$. For a natural
 number $s$ let $d_k(s) = (2k+1-a)^{-s} + (2k+1+a)^{-s}$ and
 $D_s(a) = \sum_{k=0}^{\infty} d_k(s)$. Then $\sum_k d_k(r)$ is summable, and either $r$ is

@@ -1,6 +1,6 @@
 # Trees of triangles
 
-**Trees of triangles.** The trees of triangles on a vertex set $V$ are the graphs on $V$
+The trees of triangles on a vertex set $V$ are the graphs on $V$
 built recursively as follows. A graph whose edges are exactly the three edges of a triangle on
 distinct vertices $a, b, c$ is a tree of triangles. If $H_0$ is a tree of triangles, $xy$ is an
 edge of $H_0$, and $z$ is a vertex different from $x$ and $y$ with no neighbours in $H_0$, then

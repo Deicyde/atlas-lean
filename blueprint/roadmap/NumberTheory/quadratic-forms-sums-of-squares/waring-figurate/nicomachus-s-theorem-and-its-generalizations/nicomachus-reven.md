@@ -1,6 +1,6 @@
 # The even-case square $R_{m,e}$
 
-**The even-case square $R_{m,e}$.** For a natural number $m$ and a real number $x$,
+For a natural number $m$ and a real number $x$,
 
 $$R_{m,e}(x) = \bigl(T_{2m} + (1 + T_m)\,x\bigr)^2,$$
 

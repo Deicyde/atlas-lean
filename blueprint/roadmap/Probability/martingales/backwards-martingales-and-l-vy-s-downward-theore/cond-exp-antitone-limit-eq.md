@@ -1,6 +1,6 @@
 # Identifying the a.e. limit of conditional expectations
 
-**Identifying the a.e. limit of conditional expectations.** Let $\mu$ be a finite measure on a
+Let $\mu$ be a finite measure on a
 measurable space $(\Omega, \mathcal{F})$, let $(\mathcal{G}_n)_{n \in \mathbb{N}}$ be any
 sequence of sub-σ-algebras of $\mathcal{F}$ (not assumed monotone), and let
 $g : \Omega \to \mathbb{R}$ be integrable. Write $\mu[g \mid \mathcal{G}]$ for the conditional

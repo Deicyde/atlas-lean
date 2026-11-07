@@ -1,6 +1,6 @@
 # Hardy–Littlewood sign changes in the prime race modulo 4
 
-**Hardy–Littlewood sign changes in the prime race modulo 4.** There are infinitely many
+There are infinitely many
 natural numbers $n$ for which the primes $p \le n$ with $p \equiv 3 \pmod 4$ strictly outnumber
 the primes $p \le n$ with $p \equiv 1 \pmod 4$, and infinitely many natural numbers $n$ for which
 the primes $p \le n$ with $p \equiv 1 \pmod 4$ strictly outnumber the primes $p \le n$ with

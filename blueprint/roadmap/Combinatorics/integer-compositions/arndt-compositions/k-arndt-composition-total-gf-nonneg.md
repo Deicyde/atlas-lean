@@ -1,6 +1,6 @@
 # Counting $k$-Arndt compositions for nonnegative $k$
 
-**Counting $k$-Arndt compositions for nonnegative $k$.** Let $k \ge 0$ be an integer and let
+Let $k \ge 0$ be an integer and let
 $a_k(n) = \sum_{m = 0}^{n} a_k(n, m)$ be the number of $k$-Arndt compositions of $n$. Then, in
 $\mathbb{Z}[[x]]$,
 

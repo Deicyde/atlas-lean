@@ -1,6 +1,6 @@
 # Alternating form of Ramanujan's sum identity for $1/((4k)^3 - 4k)$
 
-**Alternating form of Ramanujan's sum identity for $1/((4k)^3 - 4k)$.** For every positive
+For every positive
 integer $n$,
 
 $$

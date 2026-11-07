@@ -1,6 +1,6 @@
 # Logarithmic Mahler measure
 
-**Logarithmic Mahler measure.** For a complex Laurent polynomial $F$ in $m$ variables, the
+For a complex Laurent polynomial $F$ in $m$ variables, the
 logarithmic Mahler measure of $F$ is the real number
 $(2\pi)^{-m} \int_{[0, 2\pi]^m} \log |F(e^{i\theta_1}, \dots, e^{i\theta_m})| \, d\theta$,
 the integral taken with respect to Lebesgue measure.

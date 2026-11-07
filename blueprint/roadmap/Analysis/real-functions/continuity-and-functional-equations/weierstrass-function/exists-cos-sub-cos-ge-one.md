@@ -1,6 +1,6 @@
 # Cosine oscillation (phase-shift form)
 
-**Cosine oscillation (phase-shift form).** For every real number $\theta$ there is a real
+For every real number $\theta$ there is a real
 number $\varphi$ with $\pi < \varphi < 3\pi$ such that
 $|\cos\theta - \cos(\theta + \varphi)| \ge 1$.
 

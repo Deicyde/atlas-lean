@@ -1,6 +1,6 @@
 # Wigner matrices are Hermitian
 
-**Wigner matrices are Hermitian.** For every family of real functions
+For every family of real functions
 $X_{ij} : \Omega \to \mathbb{R}$, $i, j \in \mathbb{N}$, on a set $\Omega$, every $n \in \mathbb{N}$
 and every $\omega \in \Omega$, the Wigner matrix $W_n(\omega)$ is Hermitian.
 

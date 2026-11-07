@@ -1,6 +1,6 @@
 # The Nagell–Ljunggren cube equation when $5 \mid n$
 
-**The Nagell–Ljunggren cube equation when $5 \mid n$.** There are no natural numbers
+There are no natural numbers
 $x \ge 2$, $y \ge 2$ and $n \ge 3$ with $5 \mid n$ such that $(x^n - 1)/(x - 1) = y^3$.
 
 ## Sources

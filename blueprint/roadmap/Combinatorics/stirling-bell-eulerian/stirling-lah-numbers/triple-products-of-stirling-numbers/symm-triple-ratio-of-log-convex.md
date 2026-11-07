@@ -1,6 +1,6 @@
 # Gy's triple-ratio inequalities for log-convex sequences
 
-**Gy's triple-ratio inequalities for log-convex sequences.** Let $n$, $p$ and $j$ be
+Let $n$, $p$ and $j$ be
 positive integers, at least two of which equal $1$, and let $x_1, x_2, \dots$ be positive reals
 with $x_k^2 \le x_{k-1} x_{k+1}$ for all $k \ge 2$. For $m \ge 0$ write $e_i(m)$ and $h_i(m)$ for
 the elementary and the complete homogeneous symmetric polynomials of degree $i$ evaluated at

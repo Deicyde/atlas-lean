@@ -1,6 +1,6 @@
 # Kronecker's sum $F_e(n)$
 
-**Kronecker's sum $F_e(n)$.** For a natural number $n$, $F_e(n)$ is the sum of the weights of
+For a natural number $n$, $F_e(n)$ is the sum of the weights of
 the reduced positive-definite integral binary quadratic forms $ax^2 + bxy + cy^2$ of
 discriminant $b^2 - 4ac = -4n$ in which $a$ and $c$ are both even. Here a form is reduced when
 $|b| \le a \le c$, with $b \ge 0$ whenever $|b| = a$ or $a = c$, and its weight is $1/2$ if

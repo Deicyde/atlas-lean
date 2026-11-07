@@ -1,6 +1,6 @@
 # The Kolmogorov error is nonnegative
 
-**The Kolmogorov error is nonnegative.** For every measure $\mu$ on $\mathbb{R}$ and every
+For every measure $\mu$ on $\mathbb{R}$ and every
 positive integer $n$, the Kolmogorov error of $\mu$ at $n$, that is
 $\sup_{x \in \mathbb{R}} |F_{\mu,n}(x) - \Phi(x)|$ where $F_{\mu,n}$ is Mathlib's cumulative
 distribution function of the normalized law of $\mu$ at $n$ and $\Phi$ is the standard normal

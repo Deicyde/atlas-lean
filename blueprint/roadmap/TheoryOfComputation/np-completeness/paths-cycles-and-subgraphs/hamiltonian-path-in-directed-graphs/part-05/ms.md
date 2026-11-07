@@ -1,6 +1,6 @@
 # Quiescent states of the HAMPATH emitter
 
-**Quiescent states of the HAMPATH emitter.** A quiescent state consists of lists of token
+A quiescent state consists of lists of token
 symbols $t$, $f$, $v$, $w$, $g$, $x$ (meant as the token stack, the tokens in reading order, the
 distinct variables, the other side of the variable walk, garbage, and the first comparison
 scratch stack), a list of bits $o$ (the output stack), a list of bits $q$ (the edge bits so far,

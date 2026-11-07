@@ -1,6 +1,6 @@
 # Scottish Book Problem 9 (a common element of small finite sets)
 
-**Scottish Book Problem 9 (a common element of small finite sets).** Let $n$ be a natural
+Let $n$ be a natural
 number, let $\alpha$ be a nonempty set, and let $(E_i)_{i \in I}$ be a family of finite subsets
 of $\alpha$, indexed by an arbitrary set $I$, with $|E_i| \le n$ for every $i \in I$. Suppose
 that for all indices $i_0, i_1, \dots, i_n \in I$, not necessarily distinct, the sets

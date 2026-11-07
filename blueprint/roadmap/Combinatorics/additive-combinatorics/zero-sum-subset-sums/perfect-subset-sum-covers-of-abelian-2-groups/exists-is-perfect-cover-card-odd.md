@@ -1,6 +1,6 @@
 # Perfect covers with a prescribed number of odd last coordinates
 
-**Perfect covers with a prescribed number of odd last coordinates.** Let $H$ be a finite
+Let $H$ be a finite
 abelian group of order $2^m$, let $n \ge 1$, and let $G = H \oplus \mathbb{Z}_{2^n}$. For every
 $k$ with $1 \le k \le m + 1$, some perfect cover $S$ of $G$ has exactly $k$ elements $(h, y)$
 whose coordinate $y \in \mathbb{Z}_{2^n}$ is odd.

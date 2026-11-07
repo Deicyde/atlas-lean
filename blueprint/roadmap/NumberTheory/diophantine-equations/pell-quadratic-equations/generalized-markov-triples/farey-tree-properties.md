@@ -1,6 +1,6 @@
 # Basic properties of the Farey tree
 
-**Basic properties of the Farey tree.** Write a fraction $a/b$, with $a$ and $b$ natural
+Write a fraction $a/b$, with $a$ and $b$ natural
 numbers, for the pair $(a, b)$, so that $1/0$ stands for $\infty$, and compare fractions by
 cross multiplication: $a/b < c/d$ means $ad < cb$. (1) If $(a/b, c/d, e/f)$ is a Farey triple,
 then so are $(a/b, (a+c)/(b+d), c/d)$ and $(c/d, (c+e)/(d+f), e/f)$; and the vertex of the

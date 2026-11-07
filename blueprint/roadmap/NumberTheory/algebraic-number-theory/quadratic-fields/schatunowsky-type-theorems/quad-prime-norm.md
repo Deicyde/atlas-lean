@@ -1,6 +1,6 @@
 # Norm of the $n$-th prime
 
-**Norm of the $n$-th prime.** Let $K$ be a number field with ring of integers $\mathcal{O}_K$.
+Let $K$ be a number field with ring of integers $\mathcal{O}_K$.
 For $n \ge 1$, $N(\pi_n)$ is the $n$-th smallest natural number that is the absolute norm of some
 nonzero prime ideal of $\mathcal{O}_K$, each such norm counted once however many prime ideals
 have it; and $N(\pi_0) = 1$.

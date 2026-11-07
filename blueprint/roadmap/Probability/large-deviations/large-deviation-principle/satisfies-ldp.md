@@ -1,6 +1,6 @@
 # Large deviation principle for a sequence of measures
 
-**Large deviation principle for a sequence of measures.** Let $X$ be a topological space with
+Let $X$ be a topological space with
 a $\sigma$-algebra containing every open set, let $(\mu_n)_{n \in \mathbb{N}}$ be a sequence of
 measures on $X$, and let $I : X \to [0, \infty]$. The sequence $(\mu_n)$ satisfies the large
 deviation principle with rate function $I$ and speed $n$ if $I$ is a rate function, every open

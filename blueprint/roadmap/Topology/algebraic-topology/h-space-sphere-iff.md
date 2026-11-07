@@ -1,6 +1,6 @@
 # Adams' theorem on spheres that are H-spaces
 
-**Adams' theorem on spheres that are H-spaces.** For every natural number $n$, the unit sphere
+For every natural number $n$, the unit sphere
 $S^n$ of the Euclidean space $\mathbb{R}^{n+1}$ admits an H-space structure if and only if
 $n = 0$, $n = 1$, $n = 3$ or $n = 7$. Here an H-space structure on $S^n$ is a continuous map
 $\mu \colon S^n \times S^n \to S^n$ together with a point $e \in S^n$ such that

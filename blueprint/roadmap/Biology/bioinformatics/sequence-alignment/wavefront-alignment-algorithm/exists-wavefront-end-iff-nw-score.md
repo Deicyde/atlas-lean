@@ -1,4 +1,4 @@
 # The wavefront algorithm computes the optimal alignment cost
 
-**The wavefront algorithm computes the optimal alignment cost**: the end cell is reached by
+The end cell is reached by
 some score `s' ≤ s` iff `s` is at least the optimal Needleman–Wunsch cost.

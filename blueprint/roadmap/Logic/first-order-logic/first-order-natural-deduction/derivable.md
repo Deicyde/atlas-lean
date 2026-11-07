@@ -1,6 +1,6 @@
 # Natural deduction
 
-**Natural deduction.** Fix a first-order language $L$ and a type $\alpha$ of variables;
+Fix a first-order language $L$ and a type $\alpha$ of variables;
 formulas and terms below are those of $L$ with free variables in $\alpha$. For a formula
 $\varphi$ with one additional bound variable and a term $t$, write $\varphi[t]$ for $\varphi$
 with $t$ substituted for that bound variable and $\forall \varphi$ for its universal

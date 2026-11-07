@@ -1,6 +1,6 @@
 # Identities relating the ψ-analog to the 5-core counts and the φ-analog
 
-**Identities relating the ψ-analog to the 5-core counts and the φ-analog.** Let
+Let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$, $\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ and
 $\psi(q) = \sum_{n \ge 0} q^{n(n+1)/2}$, and let $c_5(n)$, $\bar a_5(n)$ and $\bar b_5(n)$ be the
 coefficients of $q^n$ in $f_5^5/f_1$, $\varphi^5(-q^5)/\varphi(-q)$ and $\psi^5(-q^5)/\psi(-q)$.

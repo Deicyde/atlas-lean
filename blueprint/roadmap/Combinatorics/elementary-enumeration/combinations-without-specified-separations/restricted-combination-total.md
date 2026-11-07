@@ -1,6 +1,6 @@
 # Number of subsets avoiding a set of differences
 
-**Number of subsets avoiding a set of differences.** For a finite set $Q$ of natural numbers
+For a finite set $Q$ of natural numbers
 and $n \ge 0$, $S^Q_n$ is the number of subsets of $\{1, \dots, n\}$ in which no two distinct
 elements differ by an element of $Q$. That is, $S^Q_n = \sum_{k=0}^{n} S^Q_{n,k}$, where
 $S^Q_{n,k}$ is the number of such subsets with $k$ elements.

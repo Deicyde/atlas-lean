@@ -1,6 +1,6 @@
 # Monotonicity of the ratio under fundamental increments (Corollary 3)
 
-**Monotonicity of the ratio under fundamental increments (Corollary 3).** Let $L$ and
+Let $L$ and
 $\tilde L$ form a periodic Zeckendorf pair, let $Q$ be a fundamental sequence of the collection
 $E^*$ determined by $L$, and let $\tilde Q$ be a fundamental sequence of the collection
 $\tilde E^*$ determined by $\tilde L$; indices start at $0$. Put $\omega = Q_0$,

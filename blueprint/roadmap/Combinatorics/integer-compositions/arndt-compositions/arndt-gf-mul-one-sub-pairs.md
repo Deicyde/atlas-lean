@@ -1,6 +1,6 @@
 # Pair decomposition of the Arndt generating function
 
-**Pair decomposition of the Arndt generating function.** Let $S$ be a set of positive
+Let $S$ be a set of positive
 integers and let $A_S(x, y)$ be the generating function of Arndt compositions with parts in $S$:
 the formal power series in $x$ over $\mathbb{Z}[y]$ whose coefficient of $x^n y^k$ is the number
 of Arndt compositions of $n$ with $k$ parts, all in $S$. Put $P_S(x) = \sum_{i \in S} x^i$ and

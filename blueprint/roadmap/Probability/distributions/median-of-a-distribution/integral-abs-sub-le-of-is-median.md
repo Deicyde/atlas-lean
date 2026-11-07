@@ -1,6 +1,6 @@
 # A median minimizes the expected absolute loss
 
-**A median minimizes the expected absolute loss.** Let $\nu$ be a probability measure on
+Let $\nu$ be a probability measure on
 $\mathbb{R}$ and let $m$ be a median of $\nu$. Then for every $y \in \mathbb{R}$,
 
 $$

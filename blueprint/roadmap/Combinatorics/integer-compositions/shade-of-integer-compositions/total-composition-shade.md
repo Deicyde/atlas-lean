@@ -1,6 +1,6 @@
 # Total shade of compositions
 
-**Total shade of compositions.** For a natural number $n$, the total shade $c(n)$ is the
+For a natural number $n$, the total shade $c(n)$ is the
 sum of the shades of all compositions of $n$.
 
 ## Sources

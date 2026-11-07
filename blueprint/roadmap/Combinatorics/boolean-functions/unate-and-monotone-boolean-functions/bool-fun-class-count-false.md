@@ -1,6 +1,6 @@
 # The empty property has no classes
 
-**The empty property has no classes.** For every relation $R$ on $n$-variable Boolean
+For every relation $R$ on $n$-variable Boolean
 functions, the number of $R$-inequivalent $n$-variable Boolean functions with the property that
 holds for no function is $0$.
 

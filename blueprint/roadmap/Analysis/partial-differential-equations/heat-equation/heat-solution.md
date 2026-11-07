@@ -1,6 +1,6 @@
 # Heat-kernel solution
 
-**Heat-kernel solution.** For $f\colon \mathbb{R} \to \mathbb{R}$, the heat solution
+For $f\colon \mathbb{R} \to \mathbb{R}$, the heat solution
 $u(t, x)$ of $f$ is given for $t > 0$ by
 
 $$u(t, x) = (4 \pi t)^{-1/2} \int_{\mathbb{R}} e^{-(x - y)^2/(4t)} f(y) \, dy$$

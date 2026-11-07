@@ -1,6 +1,6 @@
 # Double coset representatives for $\Gamma_0(N)$
 
-**Double coset representatives for $\Gamma_0(N)$.** Let $N$ be a natural number such that
+Let $N$ be a natural number such that
 either $N$ is squarefree, or $N$ is even and $N/2$ is squarefree. Write $\Gamma_0(N)$ for the
 group of matrices in $\mathrm{SL}_2(\mathbb{Z})$ whose lower left entry is divisible by $N$, and
 $T = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$. Then for every

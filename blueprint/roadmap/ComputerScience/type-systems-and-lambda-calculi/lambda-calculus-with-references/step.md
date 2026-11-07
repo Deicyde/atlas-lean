@@ -1,6 +1,6 @@
 # One-step evaluation with references
 
-**One-step evaluation with references.** One step of call-by-value evaluation
+One step of call-by-value evaluation
 $t \mid \mu \to t' \mid \mu'$, from a term $t$ with a store $\mu$ to a term $t'$ with a store
 $\mu'$, is the least relation closed under the following rules, in which $v$, $v_1$ and $v_2$ are
 values. If $t \mid \mu \to t' \mid \mu'$, then $t\,t_2 \mid \mu \to t'\,t_2 \mid \mu'$,

@@ -1,6 +1,6 @@
 # Lemma 3, occupied recurrence
 
-**Lemma 3, occupied recurrence.** Let $k \ge 1$, let $p_1 < p_2 < \cdots$ be the primes in
+Let $k \ge 1$, let $p_1 < p_2 < \cdots$ be the primes in
 increasing order, and let $r_1, \dots, r_{k+1}$ be natural numbers. For $m \in \{k, k + 1\}$
 write $P_m = p_1 \cdots p_m$, let $\gamma_m(n)$ be the number of $i \le m$ with
 $n \equiv r_i \pmod{p_i}$, let $\mathrm{occ}(m)$ be the number of integers $n$ with

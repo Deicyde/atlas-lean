@@ -1,6 +1,6 @@
 # Boundary values of lucky-car counts (Lemma 9)
 
-**Boundary values of lucky-car counts (Lemma 9).** Let $n \ge 1$, number the cars and spots
+Let $n \ge 1$, number the cars and spots
 $0, \dots, n-1$, and let $q_n(i, j)$ be the number of parking functions of length $n$ in which
 car $i$ prefers spot $j$ and is lucky. Then for all $i, j \in \{0, \dots, n-1\}$, with powers
 taken in $\mathbb{Q}$ (the integer exponents may be negative),

@@ -1,6 +1,6 @@
 # Class number congruences for $\mathbb{Q}(\sqrt{-p})$
 
-**Class number congruences for $\mathbb{Q}(\sqrt{-p})$.** Let $p > 3$ be a prime and let $K$
+Let $p > 3$ be a prime and let $K$
 be a number field of degree $2$ over $\mathbb{Q}$ that contains a square root of $-p$, with class
 number $h$. Let $B_n$ be the Bernoulli numbers, $t/(e^t - 1) = \sum_n B_n t^n/n!$, and $E_n$ the
 Euler numbers, $2/(e^t + e^{-t}) = \sum_n E_n t^n/n!$ (so $E_2 = -1$). If $p \equiv 3 \pmod 4$,

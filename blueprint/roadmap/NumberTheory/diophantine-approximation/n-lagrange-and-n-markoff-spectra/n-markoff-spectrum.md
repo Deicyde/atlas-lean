@@ -1,6 +1,6 @@
 # The $n$-Markoff spectrum
 
-**The $n$-Markoff spectrum.** For a natural number $n$ and irrational numbers $\xi \ne \xi'$,
+For a natural number $n$ and irrational numbers $\xi \ne \xi'$,
 the $n$-Markoff approximability $\mu_n(\xi, \xi')$ is the extended real number
 $\sup_{(s, t) \in \mathbb{Z}^2 \setminus \{0\}}
 \gcd(t, n) \, |\xi - \xi'| / (|s - t\xi| \, |s - t\xi'|)$. The $n$-Markoff spectrum $M_n$ is the

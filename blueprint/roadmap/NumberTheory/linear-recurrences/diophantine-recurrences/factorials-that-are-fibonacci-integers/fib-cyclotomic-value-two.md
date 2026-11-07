@@ -1,6 +1,6 @@
 # Fibonacci cyclotomic value at $2$
 
-**Fibonacci cyclotomic value at $2$.** The Fibonacci cyclotomic value
+The Fibonacci cyclotomic value
 $\Phi_2 = \prod_{d \mid 2} F_{2/d}^{\mu(d)} = F_2 / F_1$, where $F_k$ is the $k$-th Fibonacci number
 and $\mu$ is the Möbius function, equals $1$.
 

@@ -1,6 +1,6 @@
 # Hyperbolic groups are equationally Noetherian
 
-**Hyperbolic groups are equationally Noetherian.** Every word-hyperbolic group $G$ has the
+Every word-hyperbolic group $G$ has the
 Noetherian Equation Property: for every natural number $n$, every system of equations over $G$ in
 the unknowns $x_0, \dots, x_{n-1}$ has the same solution set in $G^n$ as some finite subsystem.
 

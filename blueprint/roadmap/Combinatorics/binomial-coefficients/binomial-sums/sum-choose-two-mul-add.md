@@ -1,6 +1,6 @@
 # Generalized hockey stick identity of Lynch and Weselcouch
 
-**Generalized hockey stick identity of Lynch and Weselcouch.** For all natural numbers
+For all natural numbers
 $n$ and $k$,
 
 $$\sum_{i=0}^{k} \binom{2i + n}{i} =

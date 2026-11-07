@@ -1,6 +1,5 @@
 # Generating functions and closed form for the subword $UDU$ in non-decreasing Dyck paths
 
-**Generating functions and closed form for the subword $UDU$ in non-decreasing Dyck paths.**
 For $n \ge 0$ let $\mathcal{D}_n$ be the set of non-decreasing Dyck paths of semilength $n$, let
 $\#_{UDU}(P)$ be the number of occurrences of the subword $UDU$ in a path $P$, and let
 $d_{UDU}(n) = \sum_{P \in \mathcal{D}_n} \#_{UDU}(P)$. Let

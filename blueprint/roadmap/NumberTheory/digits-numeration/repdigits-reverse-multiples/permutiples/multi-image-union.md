@@ -1,6 +1,6 @@
 # Multi-image union of a multiset of cycles
 
-**Multi-image union of a multiset of cycles.** Let $n$ and $b$ be natural numbers and let $I$
+Let $n$ and $b$ be natural numbers and let $I$
 be a multiset of vertex lists. Let $C_I$ be the multiset cycle union of $I$: the multiset sum,
 over the lists in $I$, of their edges, where a nonempty list $[v_0, \dots, v_{r-1}]$ has the
 edges $(v_0, v_1), \dots, (v_{r-2}, v_{r-1}), (v_{r-1}, v_0)$ and the empty list has none. The

@@ -1,6 +1,6 @@
 # Smoothing at a path vertex of a coconut tree
 
-**Smoothing at a path vertex of a coconut tree.** Let the coconut tree $CT(p + 1, s)$ have
+Let the coconut tree $CT(p + 1, s)$ have
 path vertices $v_1, \dots, v_{p+1}$, central vertex $v_{p+1}$ and leaves $\ell_1, \dots, \ell_s$,
 let $d$ and $r$ be labelings of its vertices by natural numbers, and let $1 \le k \le p + 1$.
 Smoothing $(d, r)$ at $v_k$ gives the labelings $(d', r')$ of $CT(p, s)$ obtained by deleting

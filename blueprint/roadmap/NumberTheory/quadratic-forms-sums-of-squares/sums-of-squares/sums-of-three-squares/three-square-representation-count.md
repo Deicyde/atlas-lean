@@ -1,6 +1,6 @@
 # Number of representations as a sum of three squares
 
-**Number of representations as a sum of three squares.** For a natural number $n$, $r_3(n)$
+For a natural number $n$, $r_3(n)$
 is the number of ordered triples $(x, y, z)$ of integers in the interval $[-n, n]$ with
 $x^2 + y^2 + z^2 = n$. Every integer solution of $x^2 + y^2 + z^2 = n$ lies in this interval
 (also for $n = 0$), so $r_3(n)$ is the number of all ordered integer solutions.

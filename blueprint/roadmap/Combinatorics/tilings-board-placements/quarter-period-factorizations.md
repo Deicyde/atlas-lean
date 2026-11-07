@@ -1,6 +1,6 @@
 # Quarter-period factorizations of the triangular tiling numbers
 
-**Quarter-period factorizations of the triangular tiling numbers.** Let
+Let
 $Q \colon \mathbb{N} \to \mathbb{N}$ satisfy $Q(0) = Q(1) = 1$, $Q(2) = 4$ and
 $Q(n) = Q(n-1) + 3Q(n-2) + Q(n-3)$ for every $n \ge 3$. Then for every $m \ge 1$,
 

@@ -1,6 +1,6 @@
 # Second differences of roots of translated Nicomachean bag squares
 
-**Second differences of roots of translated Nicomachean bag squares.** Write
+Write
 $\nu(a_1, \dots, a_k) = (a_1 + \dots + a_k)^2 - (a_1^3 + \dots + a_k^3)$ for the Nicomachean defect
 of a finite sequence. For natural numbers $m$ let
 

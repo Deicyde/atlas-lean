@@ -1,6 +1,6 @@
 # The reduced residue system $R_{-3}(5)$
 
-**The reduced residue system $R_{-3}(5)$.** The reduced residue system $R_{-3}(5)$ of the
+The reduced residue system $R_{-3}(5)$ of the
 integers $a$ with $-2 \le a \le 2$ and $\gcd(a, 5) = 1$ is $\{-2, -1, 1, 2\}$: an integer $a$
 lies in $R_{-3}(5)$ if and only if $a$ is one of $-2$, $-1$, $1$, $2$.
 

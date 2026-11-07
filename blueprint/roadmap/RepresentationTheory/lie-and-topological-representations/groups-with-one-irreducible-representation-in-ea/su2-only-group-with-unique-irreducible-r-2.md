@@ -1,6 +1,6 @@
 # McKay's question 16.58 has a negative answer
 
-**McKay's question 16.58 has a negative answer.** It is not the case that a group has exactly
+It is not the case that a group has exactly
 one irreducible complex representation of each dimension $n \ge 1$, up to equivalence, if and only
 if it is isomorphic to $\mathrm{SU}_2(\mathbb{C})$. Here a representation of dimension $n$ is any
 homomorphism to $\mathrm{GL}_n(\mathbb{C})$ of abstract groups, with no continuity required.

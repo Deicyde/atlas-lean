@@ -1,6 +1,6 @@
 # Upper bound for the inverse Ackermann function
 
-**Upper bound for the inverse Ackermann function.** For all natural numbers $n$ and $k$, if
+For all natural numbers $n$ and $k$, if
 $n \le A(k, k)$, where $A$ is the two-argument Ackermann function, then $\alpha(n) \le k$, where
 $\alpha$ is the inverse Ackermann function.
 

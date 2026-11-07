@@ -1,6 +1,6 @@
 # Acceptance by the Earley recognizer
 
-**Acceptance by the Earley recognizer.** Acceptance by the Earley recognizer: some completed item for a
+Acceptance by the Earley recognizer: some completed item for a
 production of the initial nonterminal consumes the whole input.
 
 ## Sources

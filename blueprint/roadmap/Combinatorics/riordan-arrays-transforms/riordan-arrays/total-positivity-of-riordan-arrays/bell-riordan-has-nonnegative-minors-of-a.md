@@ -1,6 +1,6 @@
 # Bell-type Riordan arrays with a Pólya frequency A-sequence are totally positive
 
-**Bell-type Riordan arrays with a Pólya frequency A-sequence are totally positive.** Let $g$
+Let $g$
 be a formal power series over $\mathbb{R}$ with $g(0) \neq 0$, write $[x^n]F$ for the coefficient
 of $x^n$ in a power series $F$, and let $D = (d_{n,k})_{n,k \ge 0}$ be the Bell-type Riordan array
 $(g(x), x g(x))$, with entries $d_{n,k} = [x^n]\, g(x) (x g(x))^k$. Let $(a_j)_{j \ge 0}$ be a

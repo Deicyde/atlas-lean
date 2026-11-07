@@ -1,6 +1,6 @@
 # Power-weighted binomial sums of a second-order linear recurrence
 
-**Power-weighted binomial sums of a second-order linear recurrence.** Let $a$ and $b$ be real
+Let $a$ and $b$ be real
 numbers and let $(W_n)_{n \ge 0}$ be a real sequence with $W_{n+2} = a W_{n+1} + b W_n$ for all
 $n \ge 0$. Write $S(r, i)$ for the Stirling numbers of the second kind and
 $(N)_i = N(N-1) \cdots (N-i+1)$ for the falling factorial, with $(N)_0 = 1$. Then for all natural

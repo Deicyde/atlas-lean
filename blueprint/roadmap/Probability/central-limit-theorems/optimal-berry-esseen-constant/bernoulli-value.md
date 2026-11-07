@@ -1,6 +1,6 @@
 # Bernoulli Berry–Esseen constant
 
-**Bernoulli Berry–Esseen constant.** The Bernoulli Berry–Esseen constant is the infimum, in
+The Bernoulli Berry–Esseen constant is the infimum, in
 $\mathbb{R}$, of the set of real numbers $C$ that are admissible Berry–Esseen coefficients for the
 Bernoulli subclass: for every standardized law $\mu$ (a probability measure on $\mathbb{R}$ with
 mean $0$, variance $1$ and finite third absolute moment) concentrated on two distinct points, and

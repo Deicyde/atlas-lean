@@ -1,6 +1,6 @@
 # Totalized principal exponential integral
 
-**Totalized principal exponential integral.** For every complex number $z$, this is
+For every complex number $z$, this is
 $\operatorname{Ein}(z) - \operatorname{Log} z - \gamma$, where
 $\operatorname{Ein}(z) = \sum_{j \ge 1} (-1)^{j+1} z^j / (j \cdot j!)$ is the entire exponential
 integral, $\operatorname{Log}$ is the principal branch of the complex logarithm (imaginary part

@@ -1,6 +1,6 @@
 # Examples of lace decompositions
 
-**Examples of lace decompositions.** The lace decomposition of $(3, 3, 3, 3, 4, 6)$ is
+The lace decomposition of $(3, 3, 3, 3, 4, 6)$ is
 $((3, 3), (3, 3, 4), (6))$, and the lace decomposition of $(4, 1, 2, 2, 3, 4, 5, 5, 1, 2)$ is
 $((4), (1), (2, 2, 3, 4, 5), (5), (1), (2))$.
 

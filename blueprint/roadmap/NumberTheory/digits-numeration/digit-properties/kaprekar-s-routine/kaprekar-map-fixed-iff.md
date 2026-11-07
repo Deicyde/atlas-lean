@@ -1,6 +1,6 @@
 # Classification of decimal Kaprekar numbers
 
-**Classification of decimal Kaprekar numbers.** Let $n \ge 3$ and $0 < \alpha < 10^n$. Then
+Let $n \ge 3$ and $0 < \alpha < 10^n$. Then
 the Kaprekar map on $n$-digit strings fixes $\alpha$ if and only if $\alpha$ is the Kaprekar
 difference of some string $s$ of exactly $n$ decimal digits of one of the following five forms,
 where juxtaposition is concatenation, $(w)^k$ is the block $w$ repeated $k$ times, and in each

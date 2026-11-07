@@ -1,6 +1,6 @@
 # The number of $(j, k)$-overpartition pairs with even parts distinct
 
-**The number of $[j, k]$-overpartition pairs with even parts distinct.** For natural numbers
+For natural numbers
 $j$, $k$ and $n$, $\mathrm{bped}_{j,k}(n)$ is the integer coefficient of $q^n$ in the generating
 function of $[j, k]$-overpartition pairs with even parts distinct.
 

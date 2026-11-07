@@ -1,6 +1,6 @@
 # Conditional supremum of the squared value at the origin
 
-**Conditional supremum of the squared value at the origin.** For real $\delta$,
+For real $\delta$,
 $\theta(\delta)$ is the supremum, taken in the extended reals $[-\infty, \infty]$, of the
 conditional point values at $\delta$: the numbers $u(0)^2$ over all continuous
 $u : \mathbb{T}^2 \to \mathbb{R}$ on the torus $\mathbb{T}^2 = (\mathbb{R}/2\pi\mathbb{Z})^2$

@@ -1,6 +1,6 @@
 # Class functions factor through conjugacy classes
 
-**Class functions factor through conjugacy classes.** Let $G$ be a group and $k$ a set,
+Let $G$ be a group and $k$ a set,
 and write $[x]$ for the conjugacy class of $x \in G$. A function $f : G \to k$ is a class
 function if and only if there is a function $q$ from the set of conjugacy classes of $G$
 to $k$ such that $f(x) = q([x])$ for all $x \in G$.

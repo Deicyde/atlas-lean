@@ -1,6 +1,6 @@
 # Binomial-power sequences
 
-**Binomial-power sequences.** For natural numbers $r$, $s$ and $n$, the binomial-power number
+For natural numbers $r$, $s$ and $n$, the binomial-power number
 $A_{r,s}(n)$ is the natural number
 
 $$A_{r,s}(n) = \sum_{k=0}^{n} \binom{n}{k}^r \binom{n+k}{k}^s.$$

@@ -1,6 +1,6 @@
 # Diagonalization across models
 
-**Diagonalization across models.** There is a decision problem in the class P that no code
+There is a decision problem in the class P that no code
 decides within $n^2 + 1$ steps: no code halts on every input $x$ within $|x|^2 + 1$ steps with
 the answer for $x$ as its output.
 

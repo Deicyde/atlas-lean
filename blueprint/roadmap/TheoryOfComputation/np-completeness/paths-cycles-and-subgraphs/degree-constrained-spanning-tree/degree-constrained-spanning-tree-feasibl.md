@@ -1,6 +1,6 @@
 # Feasibility for DEGREE-CONSTRAINED SPANNING TREE
 
-**Feasibility for DEGREE-CONSTRAINED SPANNING TREE.** An instance $(n, E, K)$ of
+An instance $(n, E, K)$ of
 DEGREE-CONSTRAINED SPANNING TREE is feasible when there is a list $T$ of pairs of natural numbers
 such that $T$ is a sublist of $E$ (obtained by deleting entries and keeping the order), $T$ has no
 repeated entries, $T$ has exactly $n - 1$ entries, the graph of $T$ on $n$ vertices is connected,

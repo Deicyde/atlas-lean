@@ -1,6 +1,6 @@
 # Continuous polynomial functions on a complex normed space
 
-**Continuous polynomial functions on a complex normed space.** Let $E$ be a complex normed
+Let $E$ be a complex normed
 space. A function $F : E \to \mathbb{C}$ is a continuous polynomial function if there are a
 natural number $n$, natural numbers $m_1, \dots, m_n$ and continuous $\mathbb{C}$-multilinear
 maps $A_i : E^{m_i} \to \mathbb{C}$, with $A_i$ taking $m_i$ arguments, such that

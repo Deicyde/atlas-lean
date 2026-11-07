@@ -1,6 +1,6 @@
 # Puiseux's theorem
 
-**Puiseux's theorem.** Let $K$ be an algebraically closed field of characteristic zero, let
+Let $K$ be an algebraically closed field of characteristic zero, let
 $K((t))$ be the field of formal Laurent series over $K$, and let $K((t^{\mathbb{Q}}))$ be the field
 of Hahn series over $K$ with exponents in $\mathbb{Q}$ (formal sums $\sum_r a_r t^r$ with
 $a_r \in K$ whose support $\{r \in \mathbb{Q} : a_r \neq 0\}$ is well-ordered). Then:

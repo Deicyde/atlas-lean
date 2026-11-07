@@ -1,6 +1,6 @@
 # Correctness of the CTL model checker
 
-**Correctness of the CTL model checker.** Let a labelled transition system have finitely many
+Let a labelled transition system have finitely many
 states and finitely many labels, with decidable transitions and decidable equality of states, and
 let the valuation of the atoms be decidable. For every CTL formula $\varphi$ and every state $s$,
 the state $s$ lies in the set $\mathrm{sat}(\varphi)$ computed by the model checker if and only if

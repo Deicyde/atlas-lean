@@ -1,6 +1,6 @@
 # Box words
 
-**Box words.** Let $k \ge 0$ and let $a = (a_1, \dots, a_n)$ be a list of natural numbers
+Let $k \ge 0$ and let $a = (a_1, \dots, a_n)$ be a list of natural numbers
 with $n \ge 1$. The box word of $k$ and $a$ is the word in the skew Dyck steps
 
 $$

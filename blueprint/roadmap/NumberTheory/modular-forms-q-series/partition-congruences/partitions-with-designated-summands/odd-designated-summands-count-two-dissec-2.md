@@ -1,6 +1,6 @@
 # The 2-dissection of $\mathrm{PD}_2$ modulo 4
 
-**The 2-dissection of $\mathrm{PD}_2$ modulo 4.** Write $\mathrm{PD}_2(m)$ for the number of
+Write $\mathrm{PD}_2(m)$ for the number of
 partitions of $m$ with designated summands in which every part is odd, and write
 $f_k = \prod_{j \ge 1} (1 - q^{kj})$ for the Euler product, an integer power series in $q$. For
 every natural number $n$, the $n$th coefficient of

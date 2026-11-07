@@ -1,6 +1,6 @@
 # Bombieri–Vinogradov theorem
 
-**Bombieri–Vinogradov theorem.** Let $\psi(y; q, a)$ denote Chebyshev's function in the
+Let $\psi(y; q, a)$ denote Chebyshev's function in the
 residue class of $a$ modulo $q$, and let $\varphi$ be Euler's totient function. For a natural
 number $x$ and a real number $A$, let $S(x, A)$ be the sum, over the integers $q$ with
 $1 \le q \le x$ and $q \le \sqrt{x} / (\log x)^{A + 5}$, of the maximum of

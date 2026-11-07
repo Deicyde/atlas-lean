@@ -1,6 +1,6 @@
 # Coinduction for the greatest fixed point
 
-**Coinduction for the greatest fixed point.** Let $M$ be a Kripke model, $\rho$ an
+Let $M$ be a Kripke model, $\rho$ an
 environment, $\varphi$ a μ-calculus formula and $P$ a set of worlds of $M$. Write
 $\llbracket\psi\rrbracket_\sigma$ for the set of worlds at which $\psi$ holds under the
 environment $\sigma$, and $\rho[P]$ for the extension of $\rho$ under a binder by $P$ (variable

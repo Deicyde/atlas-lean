@@ -1,6 +1,6 @@
 # Greedy optimality
 
-**Greedy optimality.** Let $\alpha$ be a finite type and let $\mathrm{indep}$ be an
+Let $\alpha$ be a finite type and let $\mathrm{indep}$ be an
 independence oracle on the finite subsets of $\alpha$. The greedy algorithm is optimal for
 $\mathrm{indep}$ when, for every weight function $w : \alpha \to \mathbb{N}$ and every list $L$
 that contains every element of $\alpha$ exactly once, in nonincreasing order of $w$, the set $T$

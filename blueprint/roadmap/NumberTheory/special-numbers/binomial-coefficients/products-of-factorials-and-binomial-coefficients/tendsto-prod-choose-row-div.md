@@ -1,6 +1,6 @@
 # Asymptotics of the product of a row of Pascal's triangle
 
-**Asymptotics of the product of a row of Pascal's triangle.** Let $F_1$ be the first factorial
+Let $F_1$ be the first factorial
 product constant and $A$ the Glaisher–Kinkelin constant, and put
 $C_{\mathrm{row}} = \left(F_1 (2\pi)^{1/4}\right)^{-1}$. As $n \to \infty$, the ratio of
 $\prod_{\nu=0}^{n} \binom{n}{\nu}$ to $e^{n^2/2 + n} / \left((2\pi)^{n/2} n^{n/2 + 1/3}\right)$

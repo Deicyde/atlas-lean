@@ -1,6 +1,6 @@
 # Height levels are counted by coloured partitions
 
-**Height levels are counted by coloured partitions.** Let $H$ be a height function and, for
+Let $H$ be a height function and, for
 $\ell \ge 1$, let $\pi_\ell$ be the number of primes $p$ with $H(p) = \ell$. For every $n \ge 0$,
 the number of positive integers $m$ with $H(m) = n$ equals the number of families
 $(\alpha_{\ell,j})$ of nonnegative integers indexed by $1 \le \ell \le n$ and $0 \le j < \pi_\ell$

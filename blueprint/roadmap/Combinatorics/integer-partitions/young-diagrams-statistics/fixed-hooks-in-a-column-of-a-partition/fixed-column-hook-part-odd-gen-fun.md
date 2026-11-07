@@ -1,6 +1,6 @@
 # Odd partitions with a fixed hook in a given column arising from an odd part
 
-**Odd partitions with a fixed hook in a given column arising from an odd part.** Let $n$, $m$
+Let $n$, $m$
 and $k$ be natural numbers with $1 \le m \le k$ and $k$ odd, and let $h$ be an integer with
 $h \le k - m$. Count the partitions $\lambda$ of $n$ into odd parts that have an $h$-fixed hook in
 column $m$ at some row $s$ with $\lambda_s = k$. Write $(q^2;q^2)_j = \prod_{i\lt j} (1 - q^{2i+2})$

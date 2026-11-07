@@ -1,6 +1,6 @@
 # Aperiodic continuous tiling equations in high-dimensional Euclidean space
 
-**Aperiodic continuous tiling equations in high-dimensional Euclidean space.** There is a natural
+There is a natural
 number $d_0$ such that for every natural number $d \ge d_0$ there exists a bounded measurable set
 $\sigma \subseteq \mathbb{R}^d$ of positive Lebesgue measure that forms an aperiodic continuous
 tiling equation.

@@ -1,6 +1,6 @@
 # Integral representation of the Jacobsthal-Lucas numbers at multiples of an index
 
-**Integral representation of the Jacobsthal-Lucas numbers at multiples of an index.** Let
+Let
 $J_m = U_m(1, -2)$ be the Jacobsthal numbers and $j_m = V_m(1, -2)$ the Jacobsthal-Lucas numbers
 ($j_0 = 2$, $j_1 = 1$, $j_{m+2} = j_{m+1} + 2j_m$). For all natural numbers $\ell$ and $n$, in
 $\mathbb{R}$,

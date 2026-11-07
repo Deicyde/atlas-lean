@@ -1,6 +1,6 @@
 # $|x^2 - d y^2|$ is never $2 \bmod 4$ when $d \equiv 1 \pmod 4$
 
-**$|x^2 - d y^2|$ is never $2 \bmod 4$ when $d \equiv 1 \pmod 4$.** Let $d$ and $z$ be integers
+Let $d$ and $z$ be integers
 with $d \equiv 1 \pmod 4$ and $z \equiv 2 \pmod 4$. Then $|x^2 - d y^2| \ne z$ for all integers $x$
 and $y$.
 

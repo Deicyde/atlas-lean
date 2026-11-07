@@ -1,6 +1,6 @@
 # Digit block of an expansion
 
-**Digit block of an expansion.** Let $S$ be a finite set of integers, read as the positions of
+Let $S$ be a finite set of integers, read as the positions of
 the digits $1$ of an expansion with digits $d_i$, so $d_i = 1$ if $i \in S$ and $d_i = 0$
 otherwise. For an integer $k$ and a finite word $w = w_0 w_1 \cdots w_{m-1}$ over the natural
 numbers, $w$ occurs as a digit block of $S$ at position $k$ when the digits

@@ -1,6 +1,6 @@
 # $\tau_{-k}$ and partition convolutions modulo a prime
 
-**$\tau_{-k}$ and partition convolutions modulo a prime.** Let $l$ be an odd prime, let $k$ be a
+Let $l$ be an odd prime, let $k$ be a
 natural number with $2 \le k < l$, let $n$ be a natural number, and write $p(s)$ for the number of
 partitions of $s$. Then
 

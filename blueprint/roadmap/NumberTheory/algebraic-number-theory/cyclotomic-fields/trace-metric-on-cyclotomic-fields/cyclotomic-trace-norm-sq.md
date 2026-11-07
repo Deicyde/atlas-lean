@@ -1,6 +1,6 @@
 # Squared trace norm on a cyclotomic field
 
-**Squared trace norm on a cyclotomic field.** Let $p$ be a positive integer, let $K$ be a
+Let $p$ be a positive integer, let $K$ be a
 $p$-th cyclotomic extension of $\mathbb{Q}$, and let $\omega$ be the chosen primitive $p$-th root
 of unity in $K$. The squared trace norm of $\alpha \in K$ is the rational number
 

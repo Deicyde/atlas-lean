@@ -1,6 +1,6 @@
 # Prefix sums as complementary-moment series
 
-**Prefix sums as complementary-moment series.** Let $b > 1$, let $d < b$ be a digit, let $n$
+Let $b > 1$, let $d < b$ be a digit, let $n$
 be a positive integer, let $k(n)$ be the number of occurrences of $d$ in the base-$b$ expansion
 of $n$, and let $k \ge k(n)$. Write $v_{j;m} = \int_{[0,1)} (1 - x)^m \, d\mu_j(x)$ for the
 complementary moments of the Irwin measure $\mu_j$. Then there is a real number $S$ such that

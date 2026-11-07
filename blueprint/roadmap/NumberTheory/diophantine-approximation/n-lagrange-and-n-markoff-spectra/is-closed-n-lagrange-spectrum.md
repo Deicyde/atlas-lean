@@ -1,6 +1,6 @@
 # The $n$-Lagrange spectrum is closed
 
-**The $n$-Lagrange spectrum is closed.** For every integer $n \ge 1$, the $n$-Lagrange spectrum
+For every integer $n \ge 1$, the $n$-Lagrange spectrum
 $L_n$ is a closed subset of $\mathbb{R}$.
 
 ## Sources

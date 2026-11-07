@@ -1,6 +1,6 @@
 # Degree of a Laurent polynomial
 
-**Degree of a Laurent polynomial.** Let $R$ be a semiring and let $f$ be a Laurent polynomial
+Let $R$ be a semiring and let $f$ be a Laurent polynomial
 in $r$ variables $x_1, \dots, x_r$ with coefficients in $R$. Kohen's degree $\deg f$ of $f$ is the
 largest absolute value $|j_i|$ of a single exponent, taken over all $i$ and all exponent vectors
 $j \in \mathbb{Z}^r$ whose monomial $x^j$ has nonzero coefficient in $f$, and is $0$ if there is

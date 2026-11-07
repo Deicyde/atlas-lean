@@ -1,6 +1,6 @@
 # Zeroth (a, b)-Fibonacci number
 
-**Zeroth (a, b)-Fibonacci number.** For all complex numbers $a$ and $b$, the $(a,b)$-Fibonacci
+For all complex numbers $a$ and $b$, the $(a,b)$-Fibonacci
 number $F^{a,b}_0$ equals $0$.
 
 ## Sources

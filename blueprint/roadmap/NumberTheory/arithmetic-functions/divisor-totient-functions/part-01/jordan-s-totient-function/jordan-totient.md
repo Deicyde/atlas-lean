@@ -1,6 +1,6 @@
 # Jordan's totient function
 
-**Jordan's totient function.** For a natural number $k$, Jordan's totient function $J_k$ is
+For a natural number $k$, Jordan's totient function $J_k$ is
 the arithmetic function with natural-number values given by $J_k(0) = 0$ and, for $n \ne 0$,
 
 $$J_k(n) = \prod_{p \mid n} p^{k(v_p(n) - 1)} (p^k - 1),$$

@@ -1,6 +1,6 @@
 # Posterior predictive of the Dirichlet–multinomial model
 
-**Posterior predictive of the Dirichlet–multinomial model.** Let $\alpha \in \mathbb{R}^{n+1}$
+Let $\alpha \in \mathbb{R}^{n+1}$
 with $\alpha_i > 0$ for every $i$, and let $s$ be a sequence of $N$ labels in $\{0, \dots, n\}$
 with label counts $n_i(s)$. Under the multinomial sampling model with the Dirichlet prior
 $\mathrm{Dir}(\alpha)$, drawing a parameter from the posterior after observing $s$ and then one

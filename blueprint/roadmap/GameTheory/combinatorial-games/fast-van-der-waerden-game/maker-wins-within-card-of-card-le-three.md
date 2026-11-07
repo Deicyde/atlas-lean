@@ -1,6 +1,6 @@
 # Maker wins the $S$-game in $|S|$ moves when $|S| \le 3$
 
-**Maker wins the $S$-game in $|S|$ moves when $|S| \le 3$.** If $S$ is a finite set of
+If $S$ is a finite set of
 natural numbers with $|S| \le 3$, then, starting from the position where no number has been
 claimed, Maker wins the $S$-game within $|S|$ moves.
 

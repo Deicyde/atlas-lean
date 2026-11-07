@@ -1,6 +1,6 @@
 # The counter part of the initial-row generator
 
-**The counter part of the initial-row generator.** Let $L$ be a layout with label block size
+Let $L$ be a layout with label block size
 $A$, $K$ stacks and $g$ symbol codes, let $i_c$ and $k_0$ be natural numbers and let $y$ be a list
 of $n$ certificate codes. The counter part assigns to each label of the initial-row generator for
 $g$ and $n$ a statement of the counter machine with the generator's counters and a Boolean flag,

@@ -1,6 +1,6 @@
 # Genus of a set partition
 
-**Genus of a set partition.** Let $\sigma$ be the cyclic permutation $i \mapsto i + 1 \pmod n$
+Let $\sigma$ be the cyclic permutation $i \mapsto i + 1 \pmod n$
 of $\{0, \dots, n-1\}$. For a permutation $\tau$ of $\{0, \dots, n-1\}$, thought of as encoding the
 set partition whose blocks are its cycles, let $|\alpha|$ be the number of cycles of $\tau$ and $c$
 the number of cycles of $\sigma \circ \tau^{-1}$, fixed points counted as cycles in both. The genus

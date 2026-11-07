@@ -1,6 +1,6 @@
 # The Bartuccelli–Deane–Zelik constant $\beta$
 
-**The Bartuccelli–Deane–Zelik constant $\beta$.** Let
+Let
 $\beta = \pi \left( 2\gamma + 2 \log 2 + 3 \log \pi - 4 \log \Gamma(\tfrac14) \right)$, where
 $\gamma$ is the Euler–Mascheroni constant and $\Gamma$ is the gamma function.
 

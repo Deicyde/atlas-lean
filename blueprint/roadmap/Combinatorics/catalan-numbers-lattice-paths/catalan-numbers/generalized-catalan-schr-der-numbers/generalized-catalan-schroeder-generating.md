@@ -1,6 +1,6 @@
 # Generating function of the generalized Catalan–Schröder numbers
 
-**Generating function of the generalized Catalan–Schröder numbers.** Let $R$ be a commutative
+Let $R$ be a commutative
 ring, let $s, t, p \in R$, and let $(a_n)_{n \ge 0}$ be a sequence in $R$ with $a_0 = 1$,
 $a_1 = p$ and
 

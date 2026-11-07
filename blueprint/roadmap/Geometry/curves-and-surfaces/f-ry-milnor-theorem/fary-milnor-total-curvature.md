@@ -1,6 +1,6 @@
 # Fáry–Milnor theorem
 
-**Fáry–Milnor theorem.** Let $r \colon \mathbb{R} \to \mathbb{R}^3$ be a smooth knot, that is,
+Let $r \colon \mathbb{R} \to \mathbb{R}^3$ be a smooth knot, that is,
 a real-analytic, $2\pi$-periodic curve that is injective on $[0, 2\pi)$ and has nonzero velocity
 everywhere. If the total curvature of $r$ is at most $4\pi$, then $r$ is unknotted: there is a
 real-analytic isotopy from $r$ to the standard circle through smooth knots.

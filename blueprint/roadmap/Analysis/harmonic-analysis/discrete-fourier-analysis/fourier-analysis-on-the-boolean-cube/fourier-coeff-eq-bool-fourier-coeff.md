@@ -1,6 +1,6 @@
 # Subset Fourier coefficients agree with cube Fourier coefficients
 
-**Subset Fourier coefficients agree with cube Fourier coefficients.** Let $E$ be a finite
+Let $E$ be a finite
 subset of a type $\iota$ with $m$ elements, listed in a fixed order as $e_0, \dots, e_{m-1}$, and
 decode a point $x$ of the Boolean cube of dimension $m$ as the subset
 $D(x) = \{e_j : x_j = \mathrm{false}\}$ of $E$. Let $f$ be a function from finite subsets of

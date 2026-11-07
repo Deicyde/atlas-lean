@@ -1,6 +1,6 @@
 # Riesz separation for nested spans
 
-**Riesz separation for nested spans.** Let $E$ be a normed space over
+Let $E$ be a normed space over
 $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $(u_n)_{n \in \mathbb{N}}$ be vectors in $E$, and
 for each $n$ let $V_n$ be the linear span of $\{u_i : i < n\}$. Suppose $u_n \notin V_n$ for
 every $n$. Then for every $n$ there is a vector $y \in V_{n+1}$ with $\|y\| = 1$ and

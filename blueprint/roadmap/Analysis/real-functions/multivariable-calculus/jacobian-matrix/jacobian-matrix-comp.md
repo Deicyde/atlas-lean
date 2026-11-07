@@ -1,6 +1,6 @@
 # Chain rule for Jacobian matrices
 
-**Chain rule for Jacobian matrices.** Let $f : \mathbb{R}^m \to \mathbb{R}^n$,
+Let $f : \mathbb{R}^m \to \mathbb{R}^n$,
 $g : \mathbb{R}^n \to \mathbb{R}^p$ and $x \in \mathbb{R}^m$, and write $J_h(y)$ for the Jacobian
 matrix of $h$ at $y$. If $f$ is differentiable at $x$ and $g$ is differentiable at $f(x)$, then
 $J_{g \circ f}(x) = J_g(f(x))\, J_f(x)$, a product of a $p \times n$ and an $n \times m$ matrix.

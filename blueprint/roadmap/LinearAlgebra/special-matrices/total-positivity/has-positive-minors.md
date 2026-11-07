@@ -1,6 +1,6 @@
 # Matrices with positive minors
 
-**Matrices with positive minors.** A real matrix $M$ whose rows and columns are indexed by
+A real matrix $M$ whose rows and columns are indexed by
 linearly ordered sets $R$ and $C$ has positive minors (is totally positive) when, for every
 natural number $k$ and all strictly increasing maps $r : \{1, \dots, k\} \to R$ and
 $c : \{1, \dots, k\} \to C$, the $k \times k$ submatrix $(M_{r(a), c(b)})_{1 \le a, b \le k}$ has

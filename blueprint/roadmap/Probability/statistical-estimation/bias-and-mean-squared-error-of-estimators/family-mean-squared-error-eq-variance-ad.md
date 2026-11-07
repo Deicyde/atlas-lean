@@ -1,6 +1,6 @@
 # Bias–variance decomposition for a parametric family
 
-**Bias–variance decomposition for a parametric family.** Let $S$ be a measurable space,
+Let $S$ be a measurable space,
 $W : S \to \mathbb{R}$ an estimator, $(P_\theta)_{\theta \in \Theta}$ a family of probability
 measures on $S$ and $\tau : \Theta \to \mathbb{R}$ a target function. Suppose that for every
 $\theta \in \Theta$, $W$ has a finite second moment under $P_\theta$, and $W$ and

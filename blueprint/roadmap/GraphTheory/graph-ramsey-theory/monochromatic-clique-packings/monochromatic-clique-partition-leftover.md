@@ -1,6 +1,6 @@
 # Erdős Problem 1015 in the Burr–Erdős–Spencer form
 
-**Erdős Problem 1015 in the Burr–Erdős–Spencer form.** This is the statement that for every
+This is the statement that for every
 natural number $k \ge 2$ there is $n_0$ such that for every $n \ge n_0$ the following holds. Let
 $r = R(k, k - 1)$ be the classical two-colour Ramsey number and let
 $L = r - 1 + \big((n + 1 - r) \bmod k\big)$, where $n + 1 - r$ is read as $0$ if it is negative.

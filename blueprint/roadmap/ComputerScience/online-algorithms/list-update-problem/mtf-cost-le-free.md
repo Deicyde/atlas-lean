@@ -1,6 +1,6 @@
 # Move-to-front is 2-competitive
 
-**Move-to-front is 2-competitive.** In the model of Sleator and Tarjan (1985) with free
+In the model of Sleator and Tarjan (1985) with free
 exchanges, let $M$ be a list of distinct items and $\sigma$ a sequence of $m$ requests, each an
 item of $M$. Consider an offline algorithm given by lists $L_0, L_1, \ldots$, each a
 rearrangement of $M$ with $L_0 = M$, and natural numbers $J_0, J_1, \ldots$. It serves request

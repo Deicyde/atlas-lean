@@ -1,6 +1,6 @@
 # Linear bounded automaton
 
-**Linear bounded automaton.** A single-tape machine is a linear bounded automaton when it runs
+A single-tape machine is a linear bounded automaton when it runs
 in space $n + 1$ on inputs of length $n$: every configuration of its run on an input of length $n$
 uses at most $n + 1$ cells, whether or not the run halts.
 

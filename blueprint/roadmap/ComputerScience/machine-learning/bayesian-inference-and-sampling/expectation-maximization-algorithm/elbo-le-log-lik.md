@@ -1,6 +1,6 @@
 # The evidence lower bound
 
-**The evidence lower bound.** Let $Z$ be a finite set, let $p_\theta(x, z)$ be real numbers
+Let $Z$ be a finite set, let $p_\theta(x, z)$ be real numbers
 indexed by parameters $\theta$, observations $x$ and latent values $z \in Z$, with
 $p_\theta(x, z) > 0$ for all $\theta$, $x$, $z$, and let $x_1, \dots, x_N$ be data. For every
 parameter $\theta$ and all probability distributions $q_1, \dots, q_N$ on $Z$,

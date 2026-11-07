@@ -1,6 +1,6 @@
 # Hanner polytopes
 
-**Hanner polytopes.** For $K \subseteq \mathbb{R}^m$ and $L \subseteq \mathbb{R}^n$, identify
+For $K \subseteq \mathbb{R}^m$ and $L \subseteq \mathbb{R}^n$, identify
 $\mathbb{R}^{m+n}$ with $\mathbb{R}^m \times \mathbb{R}^n$ by splitting off the first $m$
 coordinates; the $\ell_\infty$ sum of $K$ and $L$ is $K \times L$, and their $\ell_1$ sum is the
 convex hull of $(K \times \{0\}) \cup (\{0\} \times L)$, both viewed as subsets of

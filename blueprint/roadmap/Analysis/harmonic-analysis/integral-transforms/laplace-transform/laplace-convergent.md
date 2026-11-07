@@ -1,6 +1,6 @@
 # Convergence of the Laplace transform
 
-**Convergence of the Laplace transform.** Let $E$ be a complex normed space,
+Let $E$ be a complex normed space,
 $f : \mathbb{R} \to E$ and $s \in \mathbb{C}$. The Laplace transform of $f$ converges at $s$
 when the function $t \mapsto e^{-st} f(t)$ is integrable on $(0, \infty)$ with respect to
 Lebesgue measure.

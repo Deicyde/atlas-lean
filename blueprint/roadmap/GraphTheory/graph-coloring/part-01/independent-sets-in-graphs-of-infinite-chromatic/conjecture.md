@@ -1,6 +1,6 @@
 # Erdős Problem 750
 
-**Erdős Problem 750.** The statement that the following three assertions all hold.
+The statement that the following three assertions all hold.
 (i) For every function
 $f : \mathbb{N} \to \mathbb{R}_{\ge 0}$ with $f(m) \to \infty$ as $m \to \infty$ there is a
 simple graph $G$ with infinite chromatic number such that for every $m > 0$, every set $S$ of

@@ -1,6 +1,6 @@
 # Admissible asymptotic coset-cover exponents
 
-**Admissible asymptotic coset-cover exponents.** A real number $C$ is an admissible asymptotic
+A real number $C$ is an admissible asymptotic
 coset-cover exponent if for every real $\varepsilon > 0$ there is a real $K_0 \ge 1$ such that
 for every real $K \ge K_0$, every $n \in \mathbb{N}$ and every nonempty finite set
 $A \subseteq \mathbb{F}_2^n$ with $|A + A| \le K|A|$, there is an $\mathbb{F}_2$-linear subspace

@@ -1,6 +1,6 @@
 # Borrowing a key from the right sibling
 
-**Borrowing a key from the right sibling.** Given a tree $c$ (the child), a separator key $k$
+Given a tree $c$ (the child), a separator key $k$
 and a tree $s$ (the right sibling) such that $c$ and $s$ are both leaves or both internal nodes,
 $s$ has at least one key, and, when they are internal nodes, $s$ has at least one child: $k$
 becomes the last key of $c$, the first key of $s$ is removed from $s$ and becomes the new

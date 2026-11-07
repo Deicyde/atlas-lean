@@ -1,6 +1,6 @@
 # Prepending a part to a multiset
 
-**Prepending a part to a multiset.** For natural numbers $m$ and $k$, the map that sends a
+For natural numbers $m$ and $k$, the map that sends a
 multiset $t$ of $k$ natural numbers to the multiset obtained from $t$ by adding one copy of $m$
 is injective, so it embeds the multisets of size $k$ into all multisets of natural numbers.
 

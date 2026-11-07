@@ -1,6 +1,6 @@
 # Davenport constant of the group of order two
 
-**Davenport constant of the group of order two.** The ordinary Davenport constant of
+The ordinary Davenport constant of
 $\mathbb{Z}/2\mathbb{Z}$, that is, its $\{1\}$-weighted Davenport constant, is
 $D_{\{1\}}(\mathbb{Z}/2\mathbb{Z}) = 2$.
 

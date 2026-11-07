@@ -1,6 +1,6 @@
 # Eidelheit's Problem 176 has a negative answer
 
-**Eidelheit's Problem 176 has a negative answer.** The claim of Scottish Book Problem 176 is
+The claim of Scottish Book Problem 176 is
 false: there are a complete normed ring $A$ that is a normed algebra over $\mathbb{R}$ and
 elements $a, b \in A$ with $ab = 1$ and $ba = 1$ such that $b$ is not the limit of any sequence
 $(p_n(a))_{n \ge 0}$ with $p_n$ real polynomials.

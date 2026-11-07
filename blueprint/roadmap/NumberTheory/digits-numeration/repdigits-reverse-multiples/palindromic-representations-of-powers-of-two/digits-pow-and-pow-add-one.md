@@ -1,6 +1,6 @@
 # Digits of a power of the base and of its successor
 
-**Digits of a power of the base and of its successor.** Let $z \ge 2$ and $n$ be natural
+Let $z \ge 2$ and $n$ be natural
 numbers. Then the base-$z$ digits of $z^n$ are a $1$ followed by $n$ zeros, and, if $n \ge 1$,
 the base-$z$ digits of $z^n + 1$ are a $1$, then $n - 1$ zeros, then a $1$.
 

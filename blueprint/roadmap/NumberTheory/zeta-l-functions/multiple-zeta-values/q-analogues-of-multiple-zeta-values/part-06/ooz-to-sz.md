@@ -1,6 +1,6 @@
 # The map $V$ from OOZ to SZ words
 
-**The map $V$ from OOZ to SZ words.** Identify an index $(k_1, \dots, k_r)$ of natural
+Identify an index $(k_1, \dots, k_r)$ of natural
 numbers with the word $p^{k_1} y \cdots p^{k_r} y$ in the letters $p$ and $y$. The map $V$ sends
 each such word to a formal $\mathbb{Q}$-linear combination of words: $V(\mathbf{1}) = \mathbf{1}$
 for the empty word $\mathbf{1}$, and for $r \ge 1$

@@ -1,6 +1,6 @@
 # A posterior argmax classifier has minimal 0-1 risk
 
-**A posterior argmax classifier has minimal 0-1 risk.** Let the set $C$ of classes be countable
+Let the set $C$ of classes be countable
 and nonempty with measurable singletons, let $P$ be a finite kernel from $C$ to the observation
 space $\mathcal X$ and $\pi$ a finite measure on $C$, and let $\ell(c, y)$ be the 0-1 loss
 ($0$ if $y = c$, $1$ otherwise). For a kernel $\kappa$ from $\mathcal X$ to $C$, its average 0-1

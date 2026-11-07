@@ -1,6 +1,6 @@
 # The meta-automatic sequence $\mathcal{M}_1$
 
-**The meta-automatic sequence $\mathcal{M}_1$.** The sequence
+The sequence
 $\mathcal{M}_1 : \mathbb{N} \to \{0, 1\}$ (OEIS A392736) is defined by $\mathcal{M}_1(0) = 0$,
 $\mathcal{M}_1(1) = 1$, the recurrences $\mathcal{M}_1(4n) = \mathcal{M}_1(n)$ and
 $\mathcal{M}_1(4n+1) = 1 - \mathcal{M}_1(n)$ for every $n \ge 1$, and the recurrences

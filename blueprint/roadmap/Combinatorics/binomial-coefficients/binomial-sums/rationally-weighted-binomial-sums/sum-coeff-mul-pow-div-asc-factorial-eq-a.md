@@ -1,6 +1,6 @@
 # Rising-factorial weighted sums via iterated antiderivatives
 
-**Rising-factorial weighted sums via iterated antiderivatives.** Let $N$ and $s$ be natural
+Let $N$ and $s$ be natural
 numbers, $a_0, \dots, a_N$ real numbers and $f(y) = \sum_{k=0}^{N} a_k y^k$. Let
 $I_0, I_1, I_2, \dots$ be functions $\mathbb{R} \to \mathbb{R}$ with $I_0 = f$ such that for every
 $j \ge 0$ the function $I_{j+1}$ is differentiable on $\mathbb{R}$ with derivative $I_j$ (the

@@ -1,6 +1,6 @@
 # Thompson's conjecture on conjugacy class sizes is true
 
-**Thompson's conjecture on conjugacy class sizes is true.** For all finite groups $G$ and $H$, if
+For all finite groups $G$ and $H$, if
 $G$ is simple and non-abelian, $H$ has trivial centre, and $G$ and $H$ have the same set of
 conjugacy class sizes, then $G$ and $H$ are isomorphic.
 

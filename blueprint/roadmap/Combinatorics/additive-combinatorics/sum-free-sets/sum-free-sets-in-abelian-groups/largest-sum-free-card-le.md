@@ -1,6 +1,6 @@
 # Trivial bound on sum-free subsets
 
-**Trivial bound on sum-free subsets.** Let $G$ be a set with an addition. For every finite
+Let $G$ be a set with an addition. For every finite
 subset $S \subseteq G$, the largest size of a sum-free subset of $S$ is at most $|S|$.
 
 ## Sources

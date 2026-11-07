@@ -1,6 +1,6 @@
 # Scottish Book Problem 116(b) fails for arbitrary measurable sets
 
-**Scottish Book Problem 116(b) fails for arbitrary measurable sets.** The measurable-set form
+The measurable-set form
 of Scottish Book Problem 116(b) is false. For $\varphi, \psi$ in a group $G$ and a Boolean
 sequence $c : \mathbb{N} \to \{\mathrm{false}, \mathrm{true}\}$, let $f_{n+1} = \varphi$ if
 $c(n) = \mathrm{false}$ and $f_{n+1} = \psi$ if $c(n) = \mathrm{true}$, and define the successive

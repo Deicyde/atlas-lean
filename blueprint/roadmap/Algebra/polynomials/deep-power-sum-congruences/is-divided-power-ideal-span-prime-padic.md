@@ -1,6 +1,6 @@
 # $(p)$ is a divided-power ideal of $\mathbb{Z}_p$
 
-**$(p)$ is a divided-power ideal of $\mathbb{Z}_p$.** For every prime $p$, the ideal generated
+For every prime $p$, the ideal generated
 by $p$ in the ring $\mathbb{Z}_p$ of $p$-adic integers is a divided-power ideal.
 
 ## Sources

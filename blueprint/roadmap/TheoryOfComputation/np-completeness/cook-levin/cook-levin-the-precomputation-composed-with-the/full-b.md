@@ -1,6 +1,6 @@
 # Step bound of the full machine
 
-**Step bound of the full machine.** For an encoding $E$ of a machine $M$, a list $Y$ of
+For an encoding $E$ of a machine $M$, a list $Y$ of
 symbols of the input stack alphabet of $M$, a polynomial $k$ with natural-number coefficients and
 $c, e, n \in \mathbb{N}$, write $m = n + 1 + k(n)$ and $T = (m + c)^e$. The bound is
 $n + 1 + C + 1 + R$, where $C$ is the step budget of the counter program for $k$, $c$, $e$,

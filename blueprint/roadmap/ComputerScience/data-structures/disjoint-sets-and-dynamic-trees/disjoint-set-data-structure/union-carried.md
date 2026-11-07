@@ -1,6 +1,6 @@
 # Union unfolds to two finds and a link
 
-**Union unfolds to two finds and a link.** Let $U$ be a union-find structure on
+Let $U$ be a union-find structure on
 $\{0, \dots, n-1\}$ and let $x, y < n$. Run find with path compression on $x$ in $U$, giving a
 structure $U_1$ and a root $r_x$; then run find on $y$ in $U_1$ (not in $U$), giving a structure
 $U_2$ and a root $r_y$. Then the node array of the union of $x$ and $y$ in $U$ equals the array

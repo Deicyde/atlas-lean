@@ -1,6 +1,6 @@
 # Representatives of a set of residues
 
-**Representatives of a set of residues.** Let $n$ be a natural number and $A$ a subset of
+Let $n$ be a natural number and $A$ a subset of
 $\mathbb{Z}_n$. The representatives of $A$ form the finite set of natural numbers $a$ with
 $0 \le a < n$ whose residue modulo $n$ lies in $A$.
 

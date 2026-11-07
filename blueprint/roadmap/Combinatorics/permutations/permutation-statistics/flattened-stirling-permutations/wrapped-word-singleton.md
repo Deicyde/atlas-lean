@@ -1,6 +1,6 @@
 # Wrapped word of a singleton
 
-**Wrapped word of a singleton.** For every natural number $s$, the wrapped word of the
+For every natural number $s$, the wrapped word of the
 singleton $\{s\}$ is $g(\{s\}) = s\,s$, the word of length two both of whose letters are $s$.
 
 ## Sources

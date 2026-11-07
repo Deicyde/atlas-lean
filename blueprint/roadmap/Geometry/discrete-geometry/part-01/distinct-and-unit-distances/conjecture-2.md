@@ -1,6 +1,6 @@
 # Statement of Erdős Problem 756 on rich distances
 
-**Statement of Erdős Problem 756 on rich distances.** For a finite set $A$ of points in the
+For a finite set $A$ of points in the
 Euclidean plane, call a distance $k$-rich for $A$ if at least $k$ unordered pairs of distinct points
 of $A$ lie at that distance, and let $f(n)$ be the largest number of $(n+1)$-rich distances of a
 set of $n$ points. This is the assertion that there is a constant $C$ with $n \le C f(n)$ for all

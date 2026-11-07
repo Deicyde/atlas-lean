@@ -1,6 +1,6 @@
 # Mazur's Scottish Book Problem 75 fails in general Banach spaces
 
-**Mazur's Scottish Book Problem 75 fails in general Banach spaces.** The Scottish Book Problem 75
+The Scottish Book Problem 75
 claim is false: there are a real Banach space $E$, a set $R \subseteq E$, a continuous bilinear
 form $B$ on $E$ and a real $\alpha \ne 0$ such that $|B(x, x)|$ is bounded on some open
 $\varepsilon$-neighbourhood of $R$ with $\varepsilon > 0$, but is unbounded on every open

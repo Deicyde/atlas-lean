@@ -1,6 +1,6 @@
 # Odd-range product
 
-**Odd-range product.** For natural numbers $l$ and $m$, the odd-range product
+For natural numbers $l$ and $m$, the odd-range product
 $\operatorname{odpr}(l, m)$ is the product of the odd natural numbers $j$ with $l \le j \le m$;
 it equals $1$ when there are none.
 

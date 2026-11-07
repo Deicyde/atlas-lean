@@ -1,6 +1,6 @@
 # Optimality of furthest-in-future caching
 
-**Optimality of furthest-in-future caching.** Let $k$ be a capacity, $R$ a list of requested
+Let $k$ be a capacity, $R$ a list of requested
 blocks and $C$ a duplicate-free list of blocks of length at most $k$. Let $E'$ be any list of
 cache events that leads from $C$ to some final cache by legal cache transitions for capacity $k$
 and whose events request, in order, exactly the blocks of $R$. Then the furthest-in-future

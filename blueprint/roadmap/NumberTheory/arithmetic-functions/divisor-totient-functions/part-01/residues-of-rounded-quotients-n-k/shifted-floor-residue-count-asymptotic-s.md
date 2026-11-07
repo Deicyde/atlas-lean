@@ -1,6 +1,6 @@
 # Series asymptotics for the shifted floor residue counts with $2 \le r \le m$
 
-**Series asymptotics for the shifted floor residue counts with $2 \le r \le m$.** Let $r$ and
+Let $r$ and
 $m$ be natural numbers with $2 \le r \le m$, and let $\alpha$ and $\nu$ be real numbers with
 $0 \le \alpha < 1$ and $0 \le \nu < 1$. For a natural number $n$ let
 $\mathcal N_{n,\alpha,\nu,r,m}$ be the number of integers $k$ with $1 \le k \le n$ such that

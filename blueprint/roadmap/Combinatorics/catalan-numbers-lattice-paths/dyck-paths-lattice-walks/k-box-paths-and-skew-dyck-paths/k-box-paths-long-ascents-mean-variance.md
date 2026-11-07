@@ -1,6 +1,6 @@
 # Mean and variance of long ascents in $k$-box paths
 
-**Mean and variance of long ascents in $k$-box paths.** Let $k \ge 1$ and $n \ge 1$. Over the
+Let $k \ge 1$ and $n \ge 1$. Over the
 $k$-box paths of size $n$, taken with equal weight, the mean number of long ascents is
 
 $$

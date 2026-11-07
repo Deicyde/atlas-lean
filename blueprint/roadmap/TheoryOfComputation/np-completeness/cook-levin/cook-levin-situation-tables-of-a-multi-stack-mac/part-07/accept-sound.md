@@ -1,6 +1,6 @@
 # Satisfying assignments yield accepting runs
 
-**Satisfying assignments yield accepting runs.** Let $E$ be an encoding of a finite stack
+Let $E$ be an encoding of a finite stack
 machine $M$ with input stack $k_0$ and output stack $k_1$, let $x$ and $Y$ be lists of symbols of
 $k_0$, let $m, T \in \mathbb{N}$ with $|x| \le m$, and let $\alpha$ be a symbol of $k_1$ that is one
 of the effective symbols of $E$ for $k_1$. Put $H = m + (T + 1)d + 1$, where $d$ is the window

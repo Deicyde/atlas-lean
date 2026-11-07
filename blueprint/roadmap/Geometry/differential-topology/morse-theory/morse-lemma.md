@@ -1,6 +1,6 @@
 # Morse lemma
 
-**Morse lemma.** Let $f \colon \mathbb{R}^n \to \mathbb{R}$ be a $C^\infty$ function with
+Let $f \colon \mathbb{R}^n \to \mathbb{R}$ be a $C^\infty$ function with
 $Df(0) = 0$ whose Hessian at $0$ is nondegenerate: if $v \in \mathbb{R}^n$ satisfies
 $D^2 f(0)(v, w) = 0$ for all $w \in \mathbb{R}^n$, then $v = 0$. Then there exist an integer
 $0 \le k \le n$, a map $\varphi \colon \mathbb{R}^n \to \mathbb{R}^n$ that is a local $C^\infty$

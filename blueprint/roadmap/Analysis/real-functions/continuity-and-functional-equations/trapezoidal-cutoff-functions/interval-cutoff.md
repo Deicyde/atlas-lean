@@ -1,6 +1,6 @@
 # Interval cutoff
 
-**Interval cutoff.** For real numbers $a$, $b$ and $\delta$, the interval cutoff is the
+For real numbers $a$, $b$ and $\delta$, the interval cutoff is the
 function $\chi_{a,b,\delta} \colon \mathbb{R} \to \mathbb{R}$ defined by
 
 $$

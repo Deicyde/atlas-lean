@@ -1,6 +1,6 @@
 # Finitely supported pushdown automata
 
-**Finitely supported pushdown automata.** A pushdown automaton $M$ is finitely supported when
+A pushdown automaton $M$ is finitely supported when
 there are finite sets $\sigma_0$ of states, $\Gamma_0$ of stack symbols and $T_0$ of input letters
 such that the start state lies in $\sigma_0$, the initial stack symbol lies in $\Gamma_0$, every
 transition from a state in $\sigma_0$ that pops a symbol in $\Gamma_0$ (on any input letter or on

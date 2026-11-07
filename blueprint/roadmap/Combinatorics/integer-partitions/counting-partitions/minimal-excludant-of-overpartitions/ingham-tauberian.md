@@ -1,6 +1,6 @@
 # Ingham's Tauberian theorem
 
-**Ingham's Tauberian theorem.** Let $a : \mathbb{N} \to \mathbb{R}$ be nonnegative and weakly
+Let $a : \mathbb{N} \to \mathbb{R}$ be nonnegative and weakly
 increasing, let $A : \mathbb{C} \to \mathbb{C}$ be a function, and let $\alpha$, $\beta$, $C$
 be real numbers with $C > 0$. Suppose that for every complex $q$ with $|q| < 1$ the series
 $\sum_{n \ge 0} a(n) q^n$ is summable with sum $A(q)$, and that for every complex $q$ with

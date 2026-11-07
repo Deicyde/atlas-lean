@@ -1,6 +1,6 @@
 # Lüroth digits
 
-**Lüroth digits.** For a real number $x$ and $n \ge 1$, the $n$-th Lüroth digit of $x$ is
+For a real number $x$ and $n \ge 1$, the $n$-th Lüroth digit of $x$ is
 $d_n(x) = d_1(L^{n-1}(x))$, where $d_1$ is the first Lüroth digit, $L$ is the Lüroth map and
 $L^{n-1}$ is its $(n-1)$-fold iterate ($L^0$ is the identity).
 

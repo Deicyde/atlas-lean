@@ -1,6 +1,6 @@
 # The shifted Pell norm function is increasing past its last crossing of the bound
 
-**The shifted Pell norm function is increasing past its last crossing of the bound.** Let $D$
+Let $D$
 be an integer, let $(\alpha, \beta)$ be the fundamental solution of the Pell equation
 $X^2 - D Y^2 = 1$, put $\varepsilon = \alpha + \beta \sqrt{D}$ and
 $\bar\varepsilon = \alpha - \beta \sqrt{D}$, and let

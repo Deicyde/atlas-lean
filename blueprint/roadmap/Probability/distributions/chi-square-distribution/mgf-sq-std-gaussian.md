@@ -1,6 +1,6 @@
 # Moment generating function of the square of a standard normal
 
-**Moment generating function of the square of a standard normal.** Let $\gamma$ be the
+Let $\gamma$ be the
 standard Gaussian measure on $\mathbb{R}$ (mean $0$, variance $1$). For every real $t$,
 $\int_{\mathbb{R}} e^{t x^2} \, d\gamma(x) = 1/\sqrt{1 - 2t}$.
 

@@ -1,6 +1,6 @@
 # Long-ascent generating function of $k$-box paths
 
-**Long-ascent generating function of $k$-box paths.** Let $B_n^{(k)}$ be the set of $k$-box
+Let $B_n^{(k)}$ be the set of $k$-box
 paths of size $n$, and let $\mathrm{la}(\mu)$ be the number of long ascents of a path $\mu$. The
 long-ascent generating function of $k$-box paths is the power series
 

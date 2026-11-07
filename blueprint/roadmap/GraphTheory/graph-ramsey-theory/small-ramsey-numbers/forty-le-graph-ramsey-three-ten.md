@@ -1,6 +1,6 @@
 # Exoo's lower bound for $R(3, 10)$
 
-**Exoo's lower bound for $R(3, 10)$.** The classical Ramsey number $R(3, 10)$ is at
+The classical Ramsey number $R(3, 10)$ is at
 least $40$.
 
 ## Sources

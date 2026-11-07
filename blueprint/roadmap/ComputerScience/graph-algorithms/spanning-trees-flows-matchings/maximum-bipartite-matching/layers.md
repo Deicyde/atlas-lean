@@ -1,6 +1,6 @@
 # Alternating breadth-first layers
 
-**Alternating breadth-first layers.** Let $\mu$ give each right vertex $j$ of a bipartite
+Let $\mu$ give each right vertex $j$ of a bipartite
 graph at most one partner $\mu(j)$ among the left vertices. The layers are pairs $(Z_k, R_k)$ of a
 set $Z_k$ of left vertices and a set $R_k$ of right vertices, defined by recursion on $k$: $Z_0$ is
 the set of unmatched left vertices (those that are the partner of no right vertex) and

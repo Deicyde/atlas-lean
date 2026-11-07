@@ -1,6 +1,6 @@
 # Forward variables of a hidden Markov model
 
-**Forward variables of a hidden Markov model.** Let $h$ be a hidden Markov model with a finite
+Let $h$ be a hidden Markov model with a finite
 set of states $S$ and weights in a semiring $R$, with initial weights $\pi(s)$, transition weights
 $a(s', s)$ from $s'$ to $s$ and emission weights $e(s, o)$ of the observation $o$ from the state
 $s$, and let $x$ be an observation sequence. The forward variables are defined by

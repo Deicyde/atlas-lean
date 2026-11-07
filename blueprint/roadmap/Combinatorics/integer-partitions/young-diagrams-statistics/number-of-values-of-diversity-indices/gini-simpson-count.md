@@ -1,6 +1,6 @@
 # Number of values of the Gini–Simpson index
 
-**Number of values of the Gini–Simpson index.** For a natural number $N$, $\gamma(N)$ is the
+For a natural number $N$, $\gamma(N)$ is the
 number of distinct values of $a_1^2 + \dots + a_k^2$ over all finite sequences $(a_1, \dots, a_k)$
 of natural numbers with $a_1 + \dots + a_k = N$.
 

@@ -1,6 +1,6 @@
 # Infinite sign map of a modulus
 
-**Infinite sign map of a modulus.** Let $m$ be a modulus of a number field $K$ and let
+Let $m$ be a modulus of a number field $K$ and let
 $m_\infty$ be its finite set of real places. The infinite sign map of $m$ is the group
 homomorphism from the ray elements of $m$ to the group of functions
 $m_\infty \to \mathbb{Z}/2\mathbb{Z}$, with $\mathbb{Z}/2\mathbb{Z}$ written multiplicatively and

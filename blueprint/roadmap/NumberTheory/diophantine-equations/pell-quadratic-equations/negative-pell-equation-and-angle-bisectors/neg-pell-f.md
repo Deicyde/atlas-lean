@@ -1,6 +1,6 @@
 # First coordinates of the powers of the fundamental negative Pell solution
 
-**First coordinates of the powers of the fundamental negative Pell solution.** For a natural
+For a natural
 number $d$, let $Y$ be the least positive integer $y$ such that $x^2 - d y^2 = -1$ for some
 integer $x$, let $X$ be the nonnegative integer with $X^2 - d Y^2 = -1$, and set $X = Y = 0$
 when there is no such $y$. In the ring $\mathbb{Z}[\sqrt{d}]$ of formal expressions

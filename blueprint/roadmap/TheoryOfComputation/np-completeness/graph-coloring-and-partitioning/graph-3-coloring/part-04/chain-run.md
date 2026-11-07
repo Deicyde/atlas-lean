@@ -1,6 +1,6 @@
 # Running a sequence of copy sites of the 3-COLOR emitter
 
-**Running a sequence of copy sites of the 3-COLOR emitter.** Let copy sites
+Let copy sites
 $j_1, \dots, j_k$ run in sequence from label $\ell_0$ to label $\ell$, and let $m$ be a quiescent
 state of the 3-COLOR emitter whose counters $N$, $R$, $U$ have values $n$, $r$, $u$. Then for
 every Boolean $v$ there is a Boolean $v'$ such that the emitter goes in at most

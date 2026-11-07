@@ -1,6 +1,6 @@
 # Weight of an assignment in a tree model
 
-**Weight of an assignment in a tree model.** Let $\alpha$ be a type and let $m$ be a pairwise
+Let $\alpha$ be a type and let $m$ be a pairwise
 model on a tree with vertices $0, \dots, n$, with unary factors $\varphi_i : \alpha \to \mathbb{R}$
 for each vertex $i$, and with factor $\psi_k : \alpha \times \alpha \to \mathbb{R}$ on the edge
 between vertex $k + 1$ and its parent $p(k + 1)$ for each $k < n$. The unnormalized weight of an

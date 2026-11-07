@@ -1,6 +1,6 @@
 # The identity has no double excedances
 
-**The identity has no double excedances.** For every $n$, the identity permutation of
+For every $n$, the identity permutation of
 $\{0, 1, \dots, n-1\}$ has no double excedances.
 
 ## Sources

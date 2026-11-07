@@ -1,6 +1,6 @@
 # Uniformly large level sets under a reverse Hölder bound
 
-**Uniformly large level sets under a reverse Hölder bound.** Let $\mu$ be Lebesgue measure
+Let $\mu$ be Lebesgue measure
 on $[0,1]$, and let $f_0, f_1, f_2, \ldots : \mathbb{R} \to \mathbb{R}$ lie in $L^2(\mu)$ with
 $\|f_n\|_{L^2(\mu)} \le 2024\,\|f_n\|_{L^1(\mu)}$ for every $n$ and
 $\|f_n\|_{L^1(\mu)} \to \infty$ as $n \to \infty$. Then there is a sequence of real numbers

@@ -1,6 +1,6 @@
 # The variation of the Zeckendorf digit sum
 
-**The variation of the Zeckendorf digit sum.** For $r \in \mathbb{N}$ and a digit sequence
+For $r \in \mathbb{N}$ and a digit sequence
 $x : \mathbb{N} \to \{0, 1\}$, let $\Delta_k^{(r)}(x)$ be the truncated variation of order $k$. If
 the integer sequence $(\Delta_k^{(r)}(x))_k$ is eventually constant, the variation
 $\Delta^{(r)}(x) = \lim_{k \to \infty} \Delta_k^{(r)}(x)$ is its eventual value; otherwise

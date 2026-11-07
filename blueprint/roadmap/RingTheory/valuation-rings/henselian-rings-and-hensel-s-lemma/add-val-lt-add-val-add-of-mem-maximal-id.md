@@ -1,6 +1,6 @@
 # Elements of the maximal ideal have positive valuation
 
-**Elements of the maximal ideal have positive valuation.** Let $A$ be a discrete valuation
+Let $A$ be a discrete valuation
 ring with maximal ideal $\mathfrak{m}$ and normalized additive valuation
 $v \colon A \to \mathbb{N} \cup \{\infty\}$. If $d \in A$ is nonzero and $q \in \mathfrak{m}$, then
 $v(d) < v(d) + v(q)$.

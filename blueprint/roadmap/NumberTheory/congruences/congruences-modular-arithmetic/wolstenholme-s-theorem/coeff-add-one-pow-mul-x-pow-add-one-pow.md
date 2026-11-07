@@ -1,6 +1,6 @@
 # Coefficients of $(x + 1)^{jp} (x^p + 1)^{n-j}$
 
-**Coefficients of $(x + 1)^{jp} (x^p + 1)^{n-j}$.** Let $n$, $j$ and $k$ be natural numbers and
+Let $n$, $j$ and $k$ be natural numbers and
 $p$ a positive integer, and let $d = \max(n - j, 0)$. Then the coefficient of $x^{kp}$ in the
 polynomial $(x + 1)^{jp} (x^p + 1)^{d}$ is
 

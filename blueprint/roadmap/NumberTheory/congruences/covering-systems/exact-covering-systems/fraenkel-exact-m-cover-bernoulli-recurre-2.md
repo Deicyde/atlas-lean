@@ -1,6 +1,6 @@
 # Fraenkel's Bernoulli recurrence for exact covers
 
-**Fraenkel's Bernoulli recurrence for exact covers.** Let $q \ge 2$, $m \ge 1$ and $M$ be
+Let $q \ge 2$, $m \ge 1$ and $M$ be
 natural numbers, and for $i = 1, \dots, q$ let $n_i$ be a positive integer and $a_i$ an integer
 with $0 \le a_i < n_i$. Suppose the residue classes $a_i \bmod n_i$, counted with repetition,
 form an exact $M$-cover of $\mathbb{Z}$: every integer $k$ satisfies $k \equiv a_i \pmod{n_i}$

@@ -1,6 +1,6 @@
 # Double integral of the Trollope–Delange remainder
 
-**Double integral of the Trollope–Delange remainder.** For a natural number $q$ and a real
+For a natural number $q$ and a real
 number $x$, let $J$ be the remainder of the Trollope–Delange formula in base $q$. Then $L(x)$ is
 the real number
 

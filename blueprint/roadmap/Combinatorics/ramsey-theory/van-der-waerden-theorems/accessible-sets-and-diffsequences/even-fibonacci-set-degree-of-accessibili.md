@@ -1,6 +1,6 @@
 # The even Fibonacci numbers have degree of accessibility $1$
 
-**The even Fibonacci numbers have degree of accessibility $1$.** The even Fibonacci set
+The even Fibonacci set
 $\{2, 8, 34, \dots\}$ is $1$-accessible, and it is not $r$-accessible for any natural number
 $r \ge 2$.
 

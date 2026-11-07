@@ -1,6 +1,6 @@
 # Divisors near $\sqrt{an/b}$
 
-**Divisors near $\sqrt{an/b}$.** Let $a$ and $b$ be coprime positive integers. For a natural
+Let $a$ and $b$ be coprime positive integers. For a natural
 number $n$ and real numbers $X$, $Y$, let $D_n(X, Y)$ be the number of divisors $d$ of $n$ with
 $X \le d \le X + Y$, and let $\omega(m)$ be the number of distinct prime factors of $m$. There is
 a constant $C$, depending on $a$ and $b$, such that for all integers $n \ge 1$ and $i \ge 1$,

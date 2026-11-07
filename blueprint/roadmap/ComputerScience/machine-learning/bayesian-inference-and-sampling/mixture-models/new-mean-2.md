@@ -1,6 +1,6 @@
 # Mean update of the full-covariance Gaussian mixture
 
-**Mean update of the full-covariance Gaussian mixture.** Given data $(x_n)_{n\lt N}$ in
+Given data $(x_n)_{n\lt N}$ in
 $\mathbb{R}^d$, valid parameters $\theta$ and a component $k$, let $r_{nk}$ be the
 responsibility of component $k$ for $x_n$ and let $N_k = \sum_n r_{nk}$. The mean update is the
 responsibility-weighted mean

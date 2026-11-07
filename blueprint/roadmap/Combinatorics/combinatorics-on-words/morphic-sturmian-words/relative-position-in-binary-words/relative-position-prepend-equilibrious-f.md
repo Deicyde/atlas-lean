@@ -1,6 +1,6 @@
 # Relative positions of the Fibonacci word with an equilibrious word prepended
 
-**Relative positions of the Fibonacci word with an equilibrious word prepended.** Let
+Let
 $f = abaab\cdots$ be the infinite Fibonacci word with $0$ read as $a$ and $1$ as $b$, let $j \ge 0$,
 let $u$ be a finite word over $\{a, b\}$ of length $2j$ in which $a$ and $b$ occur equally often
 (an equilibrious word), and let $r$ be the relative position function of the concatenation $uf$.

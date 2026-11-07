@@ -1,6 +1,6 @@
 # Triangular recurrence for second-kind (q, r)-Whitney numbers
 
-**Triangular recurrence for second-kind (q, r)-Whitney numbers.** For all complex numbers
+For all complex numbers
 $m$, $r$, $q$ and all natural numbers $n$ and $k$, the $(q, r)$-Whitney numbers of the second kind
 $W_{m,r,q}(n, k)$ satisfy
 

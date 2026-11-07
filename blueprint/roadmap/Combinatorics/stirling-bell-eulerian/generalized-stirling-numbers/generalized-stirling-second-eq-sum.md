@@ -1,6 +1,6 @@
 # Sum formula for generalized Stirling numbers of the second kind
 
-**Sum formula for generalized Stirling numbers of the second kind.** For natural numbers
+For natural numbers
 $m \le n$ and every real number $x$, the generalized Stirling number of the second kind satisfies
 
 $${n \brace m}_x = \sum_{i=0}^{n-m} \binom{n}{i} {n-i \brace m} x^i,$$

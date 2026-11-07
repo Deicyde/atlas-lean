@@ -1,6 +1,6 @@
 # Pizza theorem
 
-**Pizza theorem.** Let $n \ge 2$ be a natural number, let $D$ be the open disk of radius
+Let $n \ge 2$ be a natural number, let $D$ be the open disk of radius
 $R > 0$ centered at a point $c$ of $\mathbb{R}^2$, let $p$ be a point of $D$, and let $\theta_0$
 be a real number. Put $\alpha = \pi / (2n)$ and, for $k = 0, 1, \dots, 4n - 1$, let $S_k$ be the
 set of points of $D$ of the form $p + r(\cos\theta, \sin\theta)$ with $r \ge 0$ and

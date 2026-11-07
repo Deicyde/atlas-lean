@@ -1,6 +1,6 @@
 # Solutions of |x² − dy²| = z are even when d ≡ 5 and z ≡ 0 (mod 8)
 
-**Solutions of |x² − dy²| = z are even when d ≡ 5 and z ≡ 0 (mod 8).** Let $d$ and $z$ be
+Let $d$ and $z$ be
 integers with $d \equiv 5 \pmod 8$ and $z \equiv 0 \pmod 8$. If integers $x$ and $y$ satisfy
 $|x^2 - dy^2| = z$, then $x$ and $y$ are both even.
 

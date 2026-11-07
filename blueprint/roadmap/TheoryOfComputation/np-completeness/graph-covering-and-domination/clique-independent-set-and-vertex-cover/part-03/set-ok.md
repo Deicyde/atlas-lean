@@ -1,6 +1,6 @@
 # Vertex sets meeting a mode's pair condition
 
-**Vertex sets meeting a mode's pair condition.** For a mode $m$, a number $n$, a list of
+For a mode $m$, a number $n$, a list of
 pair bits and a set $s$ of vertices in $\{0, \dots, n - 1\}$, the set $s$ meets the condition
 of $m$ when for all vertices $i < j$ the pair condition
 $\mathrm{ok}_m(b_{ij}, [i \in s], [j \in s])$ holds, where $[i \in s]$ says whether $i$ is

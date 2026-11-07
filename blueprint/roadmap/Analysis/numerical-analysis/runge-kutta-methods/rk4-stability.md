@@ -1,6 +1,6 @@
 # Stability function of the classical RK4 method
 
-**Stability function of the classical RK4 method.** For all real numbers $\lambda$, $y$
+For all real numbers $\lambda$, $y$
 and $h$, one step of size $h$ of the classical fourth-order Runge–Kutta method applied to
 the scalar linear test equation $u' = \lambda u$ on $\mathbb{R}$, starting from the state
 $y$ at time $0$, gives $y \, R(\lambda h)$, where

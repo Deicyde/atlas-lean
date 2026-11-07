@@ -1,6 +1,6 @@
 # Trudi's partition sum as a sum over compositions
 
-**Trudi's partition sum as a sum over compositions.** Let $R$ be a commutative semiring, let
+Let $R$ be a commutative semiring, let
 $s \in R$, let $a_0, a_1, a_2, \dots$ be elements of $R$ and let $n \ge 0$. Trudi's partition sum
 
 $$\sum_\alpha s^{|\alpha|} m_n(\alpha) \, a_1^{\alpha_1} a_2^{\alpha_2} \cdots a_n^{\alpha_n},$$

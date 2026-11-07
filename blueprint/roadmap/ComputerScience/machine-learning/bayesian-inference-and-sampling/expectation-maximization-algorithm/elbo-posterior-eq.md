@@ -1,6 +1,6 @@
 # The ELBO at the posterior is the EM objective plus the entropy
 
-**The ELBO at the posterior is the EM objective plus the entropy.** Let $Z$ be a finite set,
+Let $Z$ be a finite set,
 let $p_\theta(x, z)$ be real numbers indexed by parameters $\theta$, observations $x$ and latent
 values $z \in Z$, let $x_1, \dots, x_N$ be data, and write
 $p_\theta(z \mid x) = p_\theta(x, z) / \sum_{z' \in Z} p_\theta(x, z')$ for the posterior,

@@ -1,6 +1,6 @@
 # Certificate symbols of the verifier
 
-**Certificate symbols of the verifier.** Let $V$ be a polynomial-time machine computing a
+Let $V$ be a polynomial-time machine computing a
 function of pairs of bit lists from their pair encoding, whose input alphabet is identified with
 the pair alphabet $\mathrm{Bool} \oplus \mathrm{Option}\ \mathrm{Bool}$. This is the list of the
 symbols of $V$'s input alphabet corresponding to the right-tagged bits

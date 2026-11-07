@@ -1,6 +1,6 @@
 # Limit law of the smallest denominator
 
-**Limit law of the smallest denominator.** For real $x$ and $\delta > 0$ let
+For real $x$ and $\delta > 0$ let
 $q_{\min}(x, \delta)$ be the smallest positive integer $q$ such that some rational $p/q$ lies in
 the open interval $(x - \delta/2, x + \delta/2)$, and let $\eta_{\log}$ be the log smallest
 denominator density. Then $\eta_{\log}$ is a probability density on $\mathbb{R}$:

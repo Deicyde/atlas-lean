@@ -1,6 +1,6 @@
 # Two's complement as a Dumont–Thomas numeration system
 
-**Two's complement as a Dumont–Thomas numeration system.** Let $\psi$ send each letter of an
+Let $\psi$ send each letter of an
 alphabet $A$ to a word of length $2$ over $A$, and let $\beta$ be a two-sided infinite word over
 $A$ that is a periodic point of $\psi$ with period $1$, that is, $\psi(\beta) = \beta$. For a
 finite word $w = w_{k-1} \cdots w_1 w_0$ of natural numbers (most significant digit first), let

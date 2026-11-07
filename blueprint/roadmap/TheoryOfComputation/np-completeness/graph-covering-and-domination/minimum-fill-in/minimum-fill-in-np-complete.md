@@ -1,6 +1,6 @@
 # MINIMUM FILL-IN (CHORDAL COMPLETION) is NP-complete
 
-**MINIMUM FILL-IN (CHORDAL COMPLETION) is NP-complete.** The decision problem
+The decision problem
 MINIMUM FILL-IN lies in NP, and every decision problem in NP has a polynomial-time many-one
 reduction to MINIMUM FILL-IN.
 

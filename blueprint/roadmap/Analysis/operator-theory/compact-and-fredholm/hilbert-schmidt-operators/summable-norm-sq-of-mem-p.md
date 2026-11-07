@@ -1,3 +1,3 @@
 # Square-summability of coordinates of an ℓ² vector
 
-**Square-summability of coordinates of an ℓ² vector.** Summability of squared coordinate norms from `Memℓp`.
+Summability of squared coordinate norms from `Memℓp`.

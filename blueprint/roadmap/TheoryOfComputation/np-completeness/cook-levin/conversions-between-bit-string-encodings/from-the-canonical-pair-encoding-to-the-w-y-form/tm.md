@@ -1,6 +1,6 @@
 # The pair-encoding converter machine
 
-**The pair-encoding converter machine.** The converter is the finite multi-stack Turing
+The converter is the finite multi-stack Turing
 machine whose stacks are the input stack, the output stack and the two stash stacks, with bits
 as the alphabet of every stack except the output stack, which holds the verifier's symbols. Its
 labels are the five phases (read the first component, read the second, emit the second, emit

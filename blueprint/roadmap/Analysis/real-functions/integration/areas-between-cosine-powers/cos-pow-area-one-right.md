@@ -1,6 +1,6 @@
 # The area between cosine powers vanishes at frequency one
 
-**The area between cosine powers vanishes at frequency one.** For natural numbers $n$ and $k$,
+For natural numbers $n$ and $k$,
 let $A_n(k) = \int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$ be the area between $\cos^n x$ and
 $\cos^n(kx)$ on $[0, \pi]$. Then $A_n(1) = 0$ for every natural number $n$, since the two curves
 then coincide.

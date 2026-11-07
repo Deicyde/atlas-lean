@@ -1,4 +1,4 @@
 # Directed reaction relation on complexes
 
-**Directed reaction relation on complexes.** The directed reaction relation on complexes: `y ⟶ y'` if some reaction has source `y` and
+The directed reaction relation on complexes: `y ⟶ y'` if some reaction has source `y` and
 product `y'`.

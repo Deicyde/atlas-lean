@@ -1,6 +1,6 @@
 # A fast Maker win forces symmetry
 
-**A fast Maker win forces symmetry.** Let $S$ be a finite set of natural numbers with at
+Let $S$ be a finite set of natural numbers with at
 least two elements. If Maker, moving first with no numbers claimed, can force a win in the
 game on $S$ within $|S|$ selections, then $S$, viewed as a set of rational numbers, is
 symmetric.

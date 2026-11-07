@@ -1,6 +1,6 @@
 # Joint law of two random variables on a rectangle
 
-**Joint law of two random variables on a rectangle.** Let $P$ be a measure on a measurable
+Let $P$ be a measure on a measurable
 space $\Omega$, and let $X : \Omega \to \mathcal{X}$ and $Y : \Omega \to \mathcal{Y}$ be
 $P$-almost everywhere measurable maps into measurable spaces. For measurable sets
 $s \subseteq \mathcal{X}$ and $t \subseteq \mathcal{Y}$, the pushforward of $P$ under

@@ -1,3 +1,3 @@
 # Nonnegativity of somatic allelic fractions
 
-**Nonnegativity of somatic allelic fractions.** Somatic allelic fractions are nonnegative in the biological domain.
+Somatic allelic fractions are nonnegative in the biological domain.

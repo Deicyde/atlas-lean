@@ -1,6 +1,6 @@
 # Signed stride sum with a single term
 
-**Signed stride sum with a single term.** For natural numbers $q$, $t$ and $n$ with
+For natural numbers $q$, $t$ and $n$ with
 $1 \le n \le q$, the signed stride sum satisfies $T_{q,t}(n) = 1/n^t$.
 
 ## Sources

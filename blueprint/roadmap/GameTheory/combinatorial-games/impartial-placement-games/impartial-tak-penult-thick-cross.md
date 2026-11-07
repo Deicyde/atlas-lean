@@ -1,6 +1,6 @@
 # Every Thick Cross holds three tokens of an Impartial Tak penult
 
-**Every Thick Cross holds three tokens of an Impartial Tak penult.** Impartial Tak is the
+Impartial Tak is the
 placement game on the $n \times n$ board whose play ends once the tokens contain a road. Index the
 rows and columns by $0, \dots, n - 1$, let $S$ be an Impartial Tak penult on the $n \times n$
 board, and let $r, c$ be natural numbers with $r + 4 \le n$ and $c + 4 \le n$. The Thick Cross at

@@ -1,6 +1,6 @@
 # Words of frequency zero in almost every Mallows representation
 
-**Words of frequency zero in almost every Mallows representation.** Let $w$ be a finite word
+Let $w$ be a finite word
 over $\{L, M, R\}$ that contains the letter $M$ or contains both $L$ and $R$. Then for almost
 every irrational $\alpha \in (0, 1)$, with respect to Lebesgue measure, $w$ has frequency $0$ in
 the Mallows representation $M(\alpha) = M_0(\alpha) M_1(\alpha) M_2(\alpha) \cdots$: if $N_n$ is

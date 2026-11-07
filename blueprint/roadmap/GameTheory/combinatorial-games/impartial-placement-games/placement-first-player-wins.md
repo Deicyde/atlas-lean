@@ -1,6 +1,6 @@
 # First-player win in a placement game
 
-**First-player win in a placement game.** Let $\alpha$ be a finite set of cells and $E$ a
+Let $\alpha$ be a finite set of cells and $E$ a
 predicate on subsets of $\alpha$ saying when play has ended. The player to move from a position
 $S \subseteq \alpha$ wins the placement game on $\alpha$ with end predicate $E$ when $S$ is not a
 P-position of that game under normal play, in which the player unable to move loses.

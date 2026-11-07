@@ -1,6 +1,6 @@
 # Moving a bit block through a buffer
 
-**Moving a bit block through a buffer.** Let $a$, $t$, $b$ be pairwise distinct stacks of a
+Let $a$, $t$, $b$ be pairwise distinct stacks of a
 program $M$ with Boolean state, and let $l_1$, $l_2$, $l_3$ be labels such that $M$ runs at $l_1$
 the bit-moving loop from $a$ to $t$ with decoder $d$ and encoder $g_t$, looping at $l_1$ and
 exiting to $l_2$, and at $l_2$ the bit-moving loop from $t$ to $b$ with decoder $d_t$ and encoder

@@ -1,6 +1,6 @@
 # Weighted power mean bound for power sums with a smaller exponent
 
-**Weighted power mean bound for power sums with a smaller exponent.** Let
+Let
 $x_1, \dots, x_N$ be $N \ge 1$ positive real numbers and $w_1, \dots, w_N$ positive real
 weights, write $W = \sum_{k=1}^{N} w_k$, and for real $p$ write
 $S^{[p]} = \sum_{k=1}^{N} w_k x_k^p$. If $\alpha$ and $\beta$ are real numbers with

@@ -1,6 +1,6 @@
 # Almost thin set
 
-**Almost thin set.** A set $A \subseteq \mathbb{N}$ is *almost thin* if it is infinite and,
+A set $A \subseteq \mathbb{N}$ is *almost thin* if it is infinite and,
 writing $A(n)$ for its $n$-th element in increasing order (counting from $n = 0$), there is a
 real number $\alpha < 1$ such that $A(n)/A(n+1) \le \alpha$ for all sufficiently large $n$.
 

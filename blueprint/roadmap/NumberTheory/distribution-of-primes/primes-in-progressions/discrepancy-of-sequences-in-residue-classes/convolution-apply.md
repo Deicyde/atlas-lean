@@ -1,6 +1,6 @@
 # Coefficients of the multiplicative convolution
 
-**Coefficients of the multiplicative convolution.** Let $R$ be a semiring and let
+Let $R$ be a semiring and let
 $\alpha, \beta \colon \mathbb{N} \to R$ be finitely supported, with convolution
 $\alpha \star \beta$. For every $n \in \mathbb{N}$,
 

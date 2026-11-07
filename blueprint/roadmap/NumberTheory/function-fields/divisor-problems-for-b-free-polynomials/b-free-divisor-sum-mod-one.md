@@ -1,6 +1,6 @@
 # The progression sum modulo 1 is the full sum
 
-**The progression sum modulo 1 is the full sum.** Let $F$ be a field, let
+Let $F$ be a field, let
 $\kappa : F[T] \to \mathbb{N}$, and let $h$ and $N$ be natural numbers. Write
 $\tilde D_{\kappa,h}(N)$ for the sum of $d_h(f)$ over the monic $B_\kappa$-free $f \in F[T]$ of
 degree at most $N$, and for $a, m \in F[T]$ write $\tilde D_{\kappa,h}(N, a, m)$ for the same sum

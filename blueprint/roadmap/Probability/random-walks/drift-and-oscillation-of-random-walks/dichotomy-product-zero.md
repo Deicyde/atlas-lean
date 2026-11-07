@@ -1,6 +1,6 @@
 # Random-walk dichotomy on sequence space
 
-**Random-walk dichotomy on sequence space.** Let $\rho$ be a probability measure on
+Let $\rho$ be a probability measure on
 $\mathbb{R}$, let $\nu = \rho^{\otimes \mathbb{N}}$ be the product measure on
 $\mathbb{R}^{\mathbb{N}}$, and let $S_n(\omega) = \sum_{i < n} \omega_i$ be the partial sums of
 the coordinates. Then one of the following holds: $\nu$-almost surely $S_n = 0$ for every $n$;

@@ -1,6 +1,6 @@
 # Small values of $h_1$
 
-**Small values of $h_1$.** Campbell's auxiliary sequence $h_1$ satisfies $h_1(9) = 0$,
+Campbell's auxiliary sequence $h_1$ satisfies $h_1(9) = 0$,
 $h_1(10) = 10$, $h_1(99) = 10$ and $h_1(100) = 100$.
 
 ## Sources

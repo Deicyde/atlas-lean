@@ -1,6 +1,6 @@
 # Hermite–Lindemann theorem
 
-**Hermite–Lindemann theorem.** If $\alpha$ is a nonzero complex number that is algebraic over
+If $\alpha$ is a nonzero complex number that is algebraic over
 $\mathbb{Q}$, then $e^{\alpha}$ is transcendental over $\mathbb{Q}$.
 
 ## Sources

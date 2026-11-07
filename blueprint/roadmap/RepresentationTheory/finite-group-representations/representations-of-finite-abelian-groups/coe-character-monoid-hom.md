@@ -1,6 +1,6 @@
 # The character homomorphism has the character as its underlying function
 
-**The character homomorphism has the character as its underlying function.** Let $k$ be an
+Let $k$ be an
 algebraically closed field, let $G$ be a commutative monoid, and let $V$ be a finite-dimensional
 representation of $G$ over $k$ that is simple as an object of the category of finite-dimensional
 representations of $G$ over $k$. The character of $V$, regarded as a monoid homomorphism from $G$

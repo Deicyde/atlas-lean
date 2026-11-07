@@ -1,6 +1,5 @@
 # One-parameter extension of the alternating sum of $\binom{n}{k} 2^{n-2k} \binom{2k}{k}$
 
-**One-parameter extension of the alternating sum of $\binom{n}{k} 2^{n-2k} \binom{2k}{k}$.**
 Write $\binom{u}{w} = \Gamma(u+1)/(\Gamma(w+1)\,\Gamma(u-w+1))$ for the generalized binomial
 coefficient of complex numbers $u$ and $w$. For every natural number $n$ and every real
 number $v > -1$, the following identity holds in $\mathbb{C}$:

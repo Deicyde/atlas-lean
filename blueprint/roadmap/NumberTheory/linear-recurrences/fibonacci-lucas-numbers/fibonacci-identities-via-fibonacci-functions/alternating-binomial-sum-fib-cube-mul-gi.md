@@ -1,6 +1,6 @@
 # Hoggatt–Bicknell-type binomial sum with Fibonacci cubes
 
-**Hoggatt–Bicknell-type binomial sum with Fibonacci cubes.** Let $F_m$ denote the Fibonacci
+Let $F_m$ denote the Fibonacci
 numbers, extended to all integers $m$ by $F_{-m} = (-1)^{m+1} F_m$. If
 $G : \mathbb{Z} \to \mathbb{R}$ satisfies $G_{j+2} = G_{j+1} + G_j$ for every integer $j$, then
 for every natural number $n$ and all integers $k$ and $r$,

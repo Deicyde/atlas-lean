@@ -1,6 +1,6 @@
 # Polynomial identity in $x$ and $1 - x$ with weights $2^k/(k+1)$
 
-**Polynomial identity in $x$ and $1 - x$ with weights $2^k/(k+1)$.** For every natural
+For every natural
 number $n$ and every complex number $x$,
 
 $$

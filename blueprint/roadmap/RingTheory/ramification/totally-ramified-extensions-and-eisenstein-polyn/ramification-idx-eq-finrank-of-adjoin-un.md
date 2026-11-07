@@ -1,6 +1,6 @@
 # A generating uniformizer gives total ramification
 
-**A generating uniformizer gives total ramification.** Let $A \subseteq B$ be an extension of
+Let $A \subseteq B$ be an extension of
 discrete valuation rings with $B$ finite over $A$ and the inclusion a local homomorphism, and let
 $K \subseteq L$ be their fraction fields, with the maps $A \to B \to L$ and $A \to K \to L$
 agreeing. If a uniformizer $\pi$ of $B$ satisfies $B = A[\pi]$, then the ramification index of the

@@ -1,6 +1,6 @@
 # Gauss–Wantzel theorem
 
-**Gauss–Wantzel theorem.** For every natural number $n \ge 3$, the real number
+For every natural number $n \ge 3$, the real number
 $\cos(2\pi/n)$ is constructible (it lies in the smallest subfield of $\mathbb{R}$ closed under
 square roots) if and only if $n$ is a Gauss–Wantzel number, that is, every prime factor of $n$ is
 $2$ or a Fermat prime and every odd prime factor of $n$ divides $n$ only once.

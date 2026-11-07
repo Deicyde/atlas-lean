@@ -1,6 +1,6 @@
 # Gibonacci squares recurrence
 
-**Gibonacci squares recurrence.** Let $g : \mathbb{N} \to \mathbb{Z}$ satisfy
+Let $g : \mathbb{N} \to \mathbb{Z}$ satisfy
 $g(n+2) = g(n+1) + g(n)$ for every $n \in \mathbb{N}$, and let $F_3 = 2$ be the third Fibonacci
 number. Then for every $n \in \mathbb{N}$,
 

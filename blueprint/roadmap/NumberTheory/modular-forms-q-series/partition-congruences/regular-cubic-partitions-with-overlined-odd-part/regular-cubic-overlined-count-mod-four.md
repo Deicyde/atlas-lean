@@ -1,6 +1,6 @@
 # Congruences modulo 4 for regular cubic partitions with odd parts overlined
 
-**Congruences modulo 4 for regular cubic partitions with odd parts overlined.** Write
+Write
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ for the Euler products in the ring of integer power series
 in $q$. For $\ell \ge 1$ let $a_\ell(n)$ be the $n$th coefficient of
 $f_2 f_\ell^2 f_{4\ell} / (f_1^2 f_4 f_{2\ell})$; for $\ell > 2$ this is the number of

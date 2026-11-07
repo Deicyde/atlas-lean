@@ -1,6 +1,6 @@
 # Cycle term of Landin's knot
 
-**Cycle term of Landin's knot.** The term $(!\ell_0)\ \mathrm{unit}$: the dereference of
+The term $(!\ell_0)\ \mathrm{unit}$: the dereference of
 the store location $\ell_0$ (location $0$), applied to the unit value.
 
 When $\ell_0$ holds $b_0 = \lambda x{:}\mathrm{Unit}.\,(!\ell_0)\,x$, this term steps to

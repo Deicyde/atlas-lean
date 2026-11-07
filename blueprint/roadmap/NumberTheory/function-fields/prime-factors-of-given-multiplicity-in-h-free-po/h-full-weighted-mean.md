@@ -1,6 +1,6 @@
 # The $h$-full weighted mean
 
-**The $h$-full weighted mean.** Let $F$ be a finite field with $q$ elements, let
+Let $F$ be a finite field with $q$ elements, let
 $h, n \in \mathbb{N}$, $\xi \in \mathbb{C}$ and $X : \mathbb{N} \to \mathbb{C}$. Let
 $N_h \cap M_n$ be the set of $h$-full monic polynomials of degree $n$ over $F$. For each $j$ let
 $\rho_j = q^{1/h}\xi^j$ be the pole parameter and let

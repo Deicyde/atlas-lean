@@ -1,6 +1,6 @@
 # Number of subpartitions with a given sum
 
-**Number of subpartitions with a given sum.** For a multiset $\lambda$ of natural numbers and
+For a multiset $\lambda$ of natural numbers and
 $m \in \mathbb{N}$, the number of partitions of $m$ contained in $\lambda$ is the number of
 distinct sub-multisets of $\lambda$ whose elements sum to $m$.
 

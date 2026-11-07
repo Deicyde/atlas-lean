@@ -1,6 +1,6 @@
 # First step of the continued fraction of a Laurent series
 
-**First step of the continued fraction of a Laurent series.** Let $K$ be a field and
+Let $K$ be a field and
 $\alpha \in K((x^{-1}))$. The partial quotient $b_0$ of $\alpha$ is its polynomial part
 $[\alpha]$, and the complete quotient $\alpha_1$ is $(\alpha - [\alpha])^{-1}$, where
 $0^{-1} = 0$.

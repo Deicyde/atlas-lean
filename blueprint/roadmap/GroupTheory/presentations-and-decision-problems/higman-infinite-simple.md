@@ -1,6 +1,6 @@
 # Infinite finitely presented simple groups exist
 
-**Infinite finitely presented simple groups exist.** There exist a natural number $n$ and a
+There exist a natural number $n$ and a
 finite set $R$ of elements of the free group on generators $x_1, \dots, x_n$ such that the group
 $\langle x_1, \dots, x_n \mid R \rangle$ presented by these generators and relators is simple
 and infinite.

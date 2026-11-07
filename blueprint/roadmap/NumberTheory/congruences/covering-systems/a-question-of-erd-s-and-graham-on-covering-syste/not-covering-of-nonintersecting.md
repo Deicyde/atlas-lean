@@ -1,6 +1,6 @@
 # Non-intersecting integers admit no covering system of divisor form
 
-**Non-intersecting integers admit no covering system of divisor form.** Let $n$ be a natural
+Let $n$ be a natural
 number and let $D$ be the finite set of divisors of $n$ greater than $1$, taken empty when $n = 0$.
 Call $n$ non-intersecting if there are integers $a_d$, one for each natural number $d$, such that
 for all distinct natural numbers $d, d' > 1$ dividing $n$ (every $d$ divides $0$), if the classes

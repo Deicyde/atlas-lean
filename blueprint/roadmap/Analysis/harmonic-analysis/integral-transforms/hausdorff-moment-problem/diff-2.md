@@ -1,6 +1,6 @@
 # Iterated backward difference
 
-**Iterated backward difference.** For a real sequence $a$ indexed by $\mathbb{N}^d$ and
+For a real sequence $a$ indexed by $\mathbb{N}^d$ and
 multi-indices $k, n \in \mathbb{N}^d$, the iterated backward difference of $a$ is the real number
 
 $$(\Delta^k a)_n = \sum_{j \le k} (-1)^{|k| - |j|} \binom{k}{j} a_{n - j},$$

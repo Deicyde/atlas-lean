@@ -1,6 +1,6 @@
 # Arithmetic derivative
 
-**Arithmetic derivative.** For a natural number $n$, the arithmetic derivative of $n$ is
+For a natural number $n$, the arithmetic derivative of $n$ is
 
 $$D(n) = \sum_{p} \nu_p(n) \cdot \frac{n}{p},$$
 

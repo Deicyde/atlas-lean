@@ -1,6 +1,6 @@
 # The unary reader of the Hamiltonian path verifier reads a terminated number
 
-**The unary reader of the Hamiltonian path verifier reads a terminated number.** Let
+Let
 $\mathsf{src} \ne c$ be stacks and $\ell$, $m$ labels such that the verifier's statement at
 $\ell$ is the unary reader from $\mathsf{src}$ onto $c$ with own label $\ell$ and next label
 $m$. Let $k, j$ be natural numbers and $r$ a bit list, and suppose that $\mathsf{src}$ holds

@@ -1,6 +1,6 @@
 # Orders of finite $5$-transitive permutation groups
 
-**Orders of finite $5$-transitive permutation groups.** Let a finite group $G$ act
+Let a finite group $G$ act
 faithfully on a finite set $X$ with $n = |X| \ge 5$, and suppose that the action is
 $5$-transitive: for any two injective maps $a, b \colon \{0, 1, 2, 3, 4\} \to X$ there is
 $g \in G$ with $g \cdot a(i) = b(i)$ for all $i$. Then $|G| = n!$, or $n \ge 7$ and

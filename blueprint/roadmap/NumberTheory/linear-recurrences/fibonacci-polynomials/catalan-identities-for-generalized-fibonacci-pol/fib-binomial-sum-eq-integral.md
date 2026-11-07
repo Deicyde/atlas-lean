@@ -1,6 +1,6 @@
 # Binomial sum of Fibonacci numbers as an integral
 
-**Binomial sum of Fibonacci numbers as an integral.** Let $F \colon \mathbb{Z} \to \mathbb{R}$
+Let $F \colon \mathbb{Z} \to \mathbb{R}$
 be a function whose value $F_m$ at every $m \ge 0$ is the $m$-th Fibonacci number (with $F_0 = 0$
 and $F_1 = 1$) and which satisfies $F_{m+2} = F_{m+1} + F_m$ for every integer $m$. Then for every
 real $k \ge 2$ and every integer $n \ge 1$,

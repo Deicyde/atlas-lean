@@ -1,6 +1,6 @@
 # Diffusion approximation of the transition operators (Trotter–Kato, concrete form)
 
-**Diffusion approximation of the transition operators (Trotter–Kato, concrete form).** For
+For
 every continuous `f`, `⌊tM⌋` generations of the neutral Wright–Fisher chain with `M` gene copies
 applied to `f` converge uniformly on `[0, 1]` to `wfSemigroup t f`.
 

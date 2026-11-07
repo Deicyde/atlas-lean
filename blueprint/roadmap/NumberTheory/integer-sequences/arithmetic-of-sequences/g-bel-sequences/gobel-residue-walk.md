@@ -1,6 +1,6 @@
 # The residue walk $\tilde g_l$
 
-**The residue walk $\tilde g_l$.** For natural numbers $p$ and $l$, write
+For natural numbers $p$ and $l$, write
 $\left(\frac{a}{p}\right)$ for the Jacobi symbol. The residue walk
 $\tilde g_l \colon \mathbb{N} \to \mathbb{N}$ of $p$ starting at $l$ is defined by
 $\tilde g_l(0) = 0$, $\tilde g_l(1) = l$ and, for every $n \ge 1$,

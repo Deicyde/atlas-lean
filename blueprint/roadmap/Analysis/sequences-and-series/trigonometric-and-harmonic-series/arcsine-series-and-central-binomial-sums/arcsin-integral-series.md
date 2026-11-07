@@ -1,6 +1,6 @@
 # Integrated arcsine series
 
-**Integrated arcsine series.** Let $c_n = \binom{2n}{n}/4^n$. For real $t$, the integrated
+Let $c_n = \binom{2n}{n}/4^n$. For real $t$, the integrated
 arcsine series is
 
 $$F(t) = \sum_{n=0}^{\infty} \frac{c_n\, t^{2n+1}}{(2n+1)^2},$$

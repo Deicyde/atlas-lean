@@ -1,6 +1,6 @@
 # Hyper Lucas-Leonardo p-numbers of order zero
 
-**Hyper Lucas-Leonardo p-numbers of order zero.** For all natural numbers $p$ and $n$, the
+For all natural numbers $p$ and $n$, the
 hyper Lucas-Leonardo $p$-number of order $0$ equals the Lucas-Leonardo $p$-number:
 $R^{(0)}_{p,n} = R_{p,n}$.
 

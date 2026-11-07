@@ -1,6 +1,6 @@
 # Rosenthal's $\ell^1$ theorem
 
-**Rosenthal's $\ell^1$ theorem.** Let $E$ be a Banach space over $\mathbb{K} = \mathbb{R}$ or
+Let $E$ be a Banach space over $\mathbb{K} = \mathbb{R}$ or
 $\mathbb{C}$ and let $(x_n)_{n \in \mathbb{N}}$ be a bounded sequence in $E$. Then there is a
 strictly increasing $\varphi : \mathbb{N} \to \mathbb{N}$ such that either the subsequence
 $(x_{\varphi(n)})_{n \in \mathbb{N}}$ is weakly Cauchy, that is, for every continuous linear

@@ -1,6 +1,6 @@
 # The parent sequence $d_{u,n}$
 
-**The parent sequence $d_{u,n}$.** For natural numbers $u$ and $n$, define $d_{u,n}$ by
+For natural numbers $u$ and $n$, define $d_{u,n}$ by
 recursion on $n$: $d_{u,n} = 1$ if $n < 2u$ or $u = 0$, and otherwise
 $d_{u,n} = d_{u,n-u} + d_{u,n-2u+1}$.
 

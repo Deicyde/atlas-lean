@@ -1,6 +1,6 @@
 # Polynomial-size colouring list conjecture
 
-**Polynomial-size colouring list conjecture.** The statement that there exist a real number
+The statement that there exist a real number
 $C > 0$ and a natural number $k$ such that for all positive integers $n$ and $m$ and every real
 $n \times m$ matrix $A$ there is a set $L$ of at most $m^k$ sign vectors in $\{-1, 1\}^m$ with
 the following property: for every set $S$ of columns of $A$ some $\varepsilon \in L$ satisfies

@@ -1,3 +1,3 @@
 # Replacing a single cell is a derivation step
 
-**Replacing a single cell is a derivation step.** One grammar step replacing a single cell by a single cell.
+One grammar step replacing a single cell by a single cell.

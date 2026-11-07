@@ -1,6 +1,6 @@
 # Asymptotic count of tuples with exactly $r$ coprime pairs
 
-**Asymptotic count of tuples with exactly $r$ coprime pairs.** Let $k \ge 2$ and $r \ge 0$.
+Let $k \ge 2$ and $r \ge 0$.
 For a set $E$ of pairs $(a, b)$ with $0 \le a < b < k$, let $A_E$ be the coprimality density of
 the graph with edge set $E$, and put
 

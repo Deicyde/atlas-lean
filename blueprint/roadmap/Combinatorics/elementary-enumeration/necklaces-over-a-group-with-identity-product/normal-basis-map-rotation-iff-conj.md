@@ -1,6 +1,6 @@
 # Rotation orbits correspond to conjugate elements
 
-**Rotation orbits correspond to conjugate elements.** Let $K$ be a finite field that is an
+Let $K$ be a finite field that is an
 algebra over a finite field $F$, let $q = |F|$ and $n = [K : F]$, and let $\beta \in K$ be such
 that $\beta, \beta^q, \dots, \beta^{q^{n-1}}$ are linearly independent over $F$. Define
 $\Phi : F^n \to K$ by $\Phi(a_0, \dots, a_{n-1}) = \sum_{i=0}^{n-1} a_i \beta^{q^i}$. Then for all

@@ -1,6 +1,6 @@
 # Gauss's theta identity for the Euler products
 
-**Gauss's theta identity for the Euler products.** Write $f_k = \prod_{i \ge 1} (1 - q^{ki})$
+Write $f_k = \prod_{i \ge 1} (1 - q^{ki})$
 for the Euler products, as integer power series in $q$, and let
 $\theta = \sum_{m \in \mathbb{Z}} (-1)^m q^{m^2}$. Then $f_1^2 = f_2\, \theta$ and
 $\theta = 1 + 2 \sum_{m \ge 1} (-1)^m q^{m^2}$.

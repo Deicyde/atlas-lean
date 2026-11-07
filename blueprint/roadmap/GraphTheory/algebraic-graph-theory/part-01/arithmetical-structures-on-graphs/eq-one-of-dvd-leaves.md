@@ -1,6 +1,6 @@
 # The leaf labels of a smooth arithmetical structure on a coconut tree are coprime
 
-**The leaf labels of a smooth arithmetical structure on a coconut tree are coprime.** Let
+Let
 $(d, r)$ be a smooth arithmetical structure on the coconut tree $\mathrm{CT}(p, s)$ with leaves
 $v_{\ell_1}, \dots, v_{\ell_s}$. If a natural number $g$ divides $r(v_{\ell_j})$ for every
 $j = 1, \dots, s$, then $g = 1$.

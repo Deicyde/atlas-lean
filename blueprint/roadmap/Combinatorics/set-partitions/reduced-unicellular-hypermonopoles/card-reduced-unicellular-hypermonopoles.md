@@ -1,6 +1,6 @@
 # Counting reduced unicellular hypermonopoles with a cyclic vertex permutation
 
-**Counting reduced unicellular hypermonopoles with a cyclic vertex permutation.** Let
+Let
 $n \ge 2$ and $k \ge 1$ be natural numbers with $2k \le n$, let $\sigma$ be the cyclic
 permutation $i \mapsto i + 1$ (modulo $n$) of $\{0, 1, \dots, n - 1\}$, and write $z(\pi)$ for
 the number of cycles of a permutation $\pi$, fixed points included. Let $r(n, k)$ be the number

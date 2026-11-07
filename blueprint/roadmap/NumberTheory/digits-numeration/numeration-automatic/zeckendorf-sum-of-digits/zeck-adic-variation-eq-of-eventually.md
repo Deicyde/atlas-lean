@@ -1,6 +1,6 @@
 # The variation is the eventual value of the truncated variations
 
-**The variation is the eventual value of the truncated variations.** Let $r \in \mathbb{N}$,
+Let $r \in \mathbb{N}$,
 let $x$ be a binary sequence and let $d \in \mathbb{Z}$. If the truncated variation
 $\Delta_k^{(r)}(x)$ equals $d$ for all sufficiently large $k$, then the variation
 $\Delta^{(r)}(x)$ equals $d$.

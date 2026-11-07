@@ -1,6 +1,6 @@
 # Coefficient denominators divide the denominator of a polynomial
 
-**Coefficient denominators divide the denominator of a polynomial.** For every polynomial
+For every polynomial
 $P \in \mathbb{Q}[x]$ and every $i \in \mathbb{N}$, the denominator (in lowest terms) of the
 coefficient of $x^i$ in $P$ divides the denominator $\operatorname{denom}(P)$ of $P$.
 

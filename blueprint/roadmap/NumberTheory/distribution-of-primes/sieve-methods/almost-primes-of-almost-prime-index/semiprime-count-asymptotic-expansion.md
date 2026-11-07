@@ -1,6 +1,6 @@
 # Crişan–Erban expansion of the semiprime counting function
 
-**Crişan–Erban expansion of the semiprime counting function.** A semiprime is a product of
+A semiprime is a product of
 exactly two primes counted with multiplicity; for real $x$ let $N_2(x)$ be the number of semiprimes
 at most $x$. Let $\beta$ be the Meissel–Mertens constant, $\gamma$ the Euler–Mascheroni constant
 and $\log$ the natural logarithm. There are real constants $c_0, c_1, c_2, \dots$ with

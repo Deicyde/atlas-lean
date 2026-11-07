@@ -1,6 +1,6 @@
 # Second-kind (p, q)-Lucas polynomials
 
-**Second-kind (p, q)-Lucas polynomials.** Let $K$ be a field, let $r$, $s$ and $m$ be natural
+Let $K$ be a field, let $r$, $s$ and $m$ be natural
 numbers, let $x, y, p, q \in K$, and write $[a, b]_{p,q}$ for the $(p, q)$-binomial
 coefficients. The second-kind $(p, q)$-analogue $\mathbb{V}^{(r,s)}_n(x, y, p, q, m)$ of the
 $r$-Lucas polynomial of type $s$, written $\mathbb{V}_n$, is defined by $\mathbb{V}_0 = s + 1$

@@ -1,6 +1,6 @@
 # Size of the quotient of $F(T)$ by a nonzero polynomial
 
-**Size of the quotient of $F[T]$ by a nonzero polynomial.** Let $F$ be a field and let
+Let $F$ be a field and let
 $f \in F[T]$ be a nonzero polynomial. Then the cardinality of the quotient ring $F[T]/(f)$ is
 $|F|^{\deg f}$, where cardinalities are natural numbers and an infinite set has cardinality $0$.
 

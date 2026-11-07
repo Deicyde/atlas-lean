@@ -1,6 +1,6 @@
 # Negative-negative numbers on and below the diagonal (auxiliary)
 
-**Negative-negative numbers on and below the diagonal (auxiliary).** For integer parameters
+For integer parameters
 $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ and $p, q \ge 0$, put $n = -(p + 1)$ and
 $k = n - q$. The rational numbers $b_{p,q}$ are defined by recursion on $p$ and then on $q$ through
 $b_{p,q} = (c - (\alpha(n+1) + \beta(k+1) + \gamma)\, e) / (\alpha'(n+1) + \beta'(k+1) + \gamma')$,

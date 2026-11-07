@@ -1,6 +1,5 @@
 # Ramanujan's multiplication formula for the series $\sum_k (\log k/k - \log(k+x)/(k+x))$
 
-**Ramanujan's multiplication formula for the series $\sum_k (\log k/k - \log(k+x)/(k+x))$.**
 For real $x$ let
 
 $$\varphi(x) = \sum_{k=1}^{\infty} \left(\frac{\log k}{k} - \frac{\log(k+x)}{k+x}\right),$$

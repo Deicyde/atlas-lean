@@ -1,6 +1,6 @@
 # Recurrence for triangular representation numbers
 
-**Recurrence for triangular representation numbers.** For an integer $k$, let $t_k(n)$ be the
+For an integer $k$, let $t_k(n)$ be the
 coefficient of $q^n$ in $\psi(q)^k$, where $\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$. For $m \ge 1$
 let $b_m = \sum_{d \mid m,\ m/d \text{ odd}} 1/d - \sum_{d \mid m,\ m/d \text{ even}} 1/d$, the
 coefficient of $q^m$ in $\log \psi(q)$. Then for every integer $k$ and natural number $n$,

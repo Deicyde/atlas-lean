@@ -1,6 +1,6 @@
 # Landin's knot
 
-**Landin's knot.** The term
+The term
 
 $$
 (\lambda r{:}\mathrm{Ref}\,(\mathrm{Unit}\to\mathrm{Unit}).\ (\lambda y{:}\mathrm{Unit}.\ (!r)\,

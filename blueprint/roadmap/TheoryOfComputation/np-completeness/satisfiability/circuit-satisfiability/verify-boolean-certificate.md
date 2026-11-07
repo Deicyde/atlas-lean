@@ -1,6 +1,6 @@
 # Boolean certificate verifier
 
-**Boolean certificate verifier.** Let $c$ be a circuit over the Boolean signature with $n$
+Let $c$ be a circuit over the Boolean signature with $n$
 inputs, $s$ gates and one output, and let $b = (b_0, \dots, b_{m-1})$ be an array of truth values,
 read as a value for each wire: input $k$ at position $k$ and gate $j$ at position $n + j$. The
 verifier is a computation with a counted cost. It first checks whether $m = n + s$, at cost $1$;

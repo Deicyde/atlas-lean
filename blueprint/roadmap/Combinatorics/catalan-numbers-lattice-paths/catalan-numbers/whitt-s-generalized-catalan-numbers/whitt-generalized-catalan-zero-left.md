@@ -1,6 +1,6 @@
 # Whitt's generalized Catalan numbers with parameter zero
 
-**Whitt's generalized Catalan numbers with parameter zero.** For every natural number
+For every natural number
 $n \ge 1$, Whitt's generalized Catalan number $C(0, n)$ equals $1$: only the term $k = 0$ of the
 defining sum survives.
 

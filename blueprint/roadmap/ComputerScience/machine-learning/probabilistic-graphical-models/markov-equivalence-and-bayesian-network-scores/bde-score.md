@@ -1,3 +1,3 @@
 # BDe network score
 
-**BDe network score.** The BDe score of the structure `Pa`.
+The BDe score of the structure `Pa`.

@@ -1,6 +1,6 @@
 # Parts of a partition in decreasing order
 
-**Parts of a partition in decreasing order.** For a partition $p$ of $n$ with $\ell$ parts,
+For a partition $p$ of $n$ with $\ell$ parts,
 this is the list $x_1 \ge x_2 \ge \cdots \ge x_\ell$ of the parts of $p$, each repeated according
 to its multiplicity, sorted in weakly decreasing order.
 

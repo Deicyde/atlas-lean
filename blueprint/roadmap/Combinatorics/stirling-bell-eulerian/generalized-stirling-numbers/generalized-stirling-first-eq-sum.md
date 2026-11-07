@@ -1,6 +1,6 @@
 # Sum formula for generalized Stirling numbers of the first kind
 
-**Sum formula for generalized Stirling numbers of the first kind.** For natural numbers
+For natural numbers
 $m \le n$ and every real number $x$, the generalized Stirling number of the first kind satisfies
 
 $${n \brack m}_x = \sum_{i=0}^{n-m} \binom{i+m}{m} {n \brack i+m} x^i,$$

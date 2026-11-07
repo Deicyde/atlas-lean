@@ -1,6 +1,6 @@
 # Gap-lacunary set
 
-**Gap-lacunary set.** A set $A \subseteq \mathbb{N}$ is *gap-lacunary* (called *lacunary* in
+A set $A \subseteq \mathbb{N}$ is *gap-lacunary* (called *lacunary* in
 the source) if it is infinite and, writing $A(n)$ for its $n$-th element in increasing order
 (counting from $n = 0$), the gaps $A(n+1) - A(n)$ tend to infinity as $n \to \infty$.
 

@@ -1,6 +1,6 @@
 # Ulam words made of ones followed by zeros
 
-**Ulam words made of ones followed by zeros.** For natural numbers $x$ and $y$ with
+For natural numbers $x$ and $y$ with
 $1 \le y \le x$, the word $1^y 0^{x-y}$ ($y$ ones followed by $x - y$ zeros) is an Ulam word if
 and only if $(x, y) = (1, 1)$ or $(x, y)$ belongs to the discrete Sierpiński triangle
 $\mathcal{S}$.

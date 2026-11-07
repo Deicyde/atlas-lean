@@ -1,6 +1,6 @@
 # Exact success probability of Grover search
 
-**Exact success probability of Grover search.** Let $\alpha$ be a finite search space and
+Let $\alpha$ be a finite search space and
 $M \subseteq \alpha$ a marked set such that both $M$ and its complement are nonempty, and let
 $\theta = \arcsin \sqrt{|M| / |\alpha|}$ be the Grover angle of $M$. For $k \in \mathbb{N}$, let
 $\psi_k$ be the vector obtained by applying the Grover step for $M$ $k$ times to the uniform

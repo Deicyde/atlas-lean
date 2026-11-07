@@ -1,6 +1,6 @@
 # Multiplicativity of $g_\lambda$ over disjoint parts
 
-**Multiplicativity of $g_\lambda$ over disjoint parts.** Let $p$ be a prime, $\sigma$ a finite
+Let $p$ be a prime, $\sigma$ a finite
 set of variables, and for a multiset $\lambda$ of parts let $g_\lambda$ be its $p$-equivalence class
 sum in $\mathbb{Q}[x_i : i \in \sigma]$. Let $\lambda$ and $\mu$ be multisets of natural numbers,
 none of whose elements is divisible by $p$ (so no part is $0$), with no part in common. Then

@@ -1,6 +1,6 @@
 # Von Neumann's double commutant theorem
 
-**Von Neumann's double commutant theorem.** Let $H$ be a complex Hilbert space and let $S$ be
+Let $H$ be a complex Hilbert space and let $S$ be
 a unital $*$-subalgebra of the algebra of bounded linear operators on $H$. Write $S'$ for the
 commutant of $S$, the set of bounded operators on $H$ that commute with every element of $S$.
 The following are equivalent: $S$ equals its double commutant $S''$; $S$ is closed in the weak

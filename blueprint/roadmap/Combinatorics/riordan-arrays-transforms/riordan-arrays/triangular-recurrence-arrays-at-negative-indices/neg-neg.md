@@ -1,6 +1,6 @@
 # Negative-negative numbers
 
-**Negative-negative numbers.** For parameters
+For parameters
 $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ with triangular array $a_{n,k}$ ($n, k \ge 0$),
 the negative-negative numbers $a^{NN}_{n,k} \in \mathbb{Q}$, $n, k \in \mathbb{Z}$, are defined
 as follows (Definition 2): $a^{NN}_{0,k} = \delta_{k,0}$ for all $k$; $a^{NN}_{n,k} = a_{n,k}$ for

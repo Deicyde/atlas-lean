@@ -1,6 +1,6 @@
 # Rectangular-grid tilings fixed by the reflection $f$, $n$ odd
 
-**Rectangular-grid tilings fixed by the reflection $f$, $n$ odd.** Let $n$ and $m$ be positive
+Let $n$ and $m$ be positive
 integers with $n$ odd, let $T$ be a finite set of tiles, let $\sigma$ be a permutation of $T$ with
 $\sigma^2 = 1$, and let $t$ be the number of tiles $d \in T$ with $\sigma(d) = d$. Let $f$ be the
 reflection of $\mathbb{Z}/n \times \mathbb{Z}/m$ given by $f(x, y) = (-1 - x, y)$. Then the number

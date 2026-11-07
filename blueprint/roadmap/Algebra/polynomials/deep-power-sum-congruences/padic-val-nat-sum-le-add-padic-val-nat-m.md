@@ -1,6 +1,6 @@
 # A valuation bound from Kummer's theorem
 
-**A valuation bound from Kummer's theorem.** Let $p$ be a prime, let $r_1, \dots, r_k$ be
+Let $p$ be a prime, let $r_1, \dots, r_k$ be
 natural numbers with sum $m$, and let $j$ be an index with $r_j \ne 0$. Then
 
 $$v_p(m) \le v_p(r_j) + v_p\binom{m}{r_1, \dots, r_k},$$

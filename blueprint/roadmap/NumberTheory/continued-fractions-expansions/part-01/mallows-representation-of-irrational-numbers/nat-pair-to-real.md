@@ -1,6 +1,6 @@
 # Real value of a fraction encoded as a pair
 
-**Real value of a fraction encoded as a pair.** The pair $(n, m)$ of natural numbers encodes
+The pair $(n, m)$ of natural numbers encodes
 the fraction with numerator $n$ and denominator $m$, whose real value is $n / m$ (taken to be $0$
 when $m = 0$).
 

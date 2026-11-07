@@ -1,6 +1,6 @@
 # Generalized Cohn triples give generalized Markov triples
 
-**Generalized Cohn triples give generalized Markov triples.** Let $k$ be a natural number.
+Let $k$ be a natural number.
 If $(P, Q, R)$ is a $k$-generalized Cohn triple associated with $(a, b, c)$, then $(a, b, c)$ is
 a $k$-generalized Markov triple.
 

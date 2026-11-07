@@ -1,6 +1,6 @@
 # The side grammar of a PCP instance
 
-**The side grammar of a PCP instance.** Let $P = (d_0, \dots, d_{k-1})$ be a list of dominoes
+Let $P = (d_0, \dots, d_{k-1})$ be a list of dominoes
 over $\alpha$, let $\sigma$ assign a word over $\alpha$ to each domino, and write
 $w_i = \sigma(d_i)$. The side grammar of $\sigma$ and $P$ is the encoded context-free grammar
 whose terminals are the letters of $\alpha$ and the index terminals $0, 1, 2, \dots$, whose start

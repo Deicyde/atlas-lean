@@ -1,6 +1,6 @@
 # Stuffle product formula for Schlesinger–Zudilin qMZVs
 
-**Stuffle product formula for Schlesinger–Zudilin qMZVs.** Write $\zeta_q^{SZ}$ for the
+Write $\zeta_q^{SZ}$ for the
 Schlesinger–Zudilin qMZV. Let $v$ and $w$ be finite lists of natural numbers that are
 SZ-admissible, that is, each is empty or has first entry at least $1$. Then
 

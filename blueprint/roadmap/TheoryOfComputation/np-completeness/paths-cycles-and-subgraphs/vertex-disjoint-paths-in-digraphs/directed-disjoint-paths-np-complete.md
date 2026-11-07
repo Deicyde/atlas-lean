@@ -1,6 +1,6 @@
 # DIRECTED DISJOINT PATHS is NP-complete
 
-**DIRECTED DISJOINT PATHS is NP-complete.** The decision problem DIRECTED DISJOINT PATHS
+The decision problem DIRECTED DISJOINT PATHS
 belongs to NP, and every decision problem in NP reduces to it by a polynomial-time many-one
 reduction.
 

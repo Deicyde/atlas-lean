@@ -1,6 +1,6 @@
 # The map from TBZ words to SZ indices
 
-**The map from TBZ words to SZ indices.** Words in the letters $\bar{1}$ and $k \in \mathbb{N}$
+Words in the letters $\bar{1}$ and $k \in \mathbb{N}$
 are sent to formal $\mathbb{Q}$-linear combinations of finite sequences of natural numbers (SZ
 indices) letter by letter: the empty word goes to the empty index with coefficient $1$, and a
 word $x w$ with first letter $x$ goes to the image of $w$ with a new first entry prepended to each

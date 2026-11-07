@@ -1,3 +1,3 @@
 # The 4-cycle graph
 
-**The 4-cycle graph.** The 4-cycle on `Fin 4`.
+The 4-cycle on `Fin 4`.

@@ -1,6 +1,6 @@
 # Sums of two polygonal numbers modulo prime powers
 
-**Sums of two polygonal numbers modulo prime powers.** For a natural number $s > 3$ and a
+For a natural number $s > 3$ and a
 natural number $x$, let $P_s(x) = (s-2)\binom{x}{2} + x$ be the $x$-th $s$-gonal number. There
 is a prime $p$ with $p \equiv 1 \pmod{4}$ and $p \nmid s - 2$ such that for all natural numbers
 $k > 0$ and $n > 0$ there are natural numbers $x, y > 0$ with

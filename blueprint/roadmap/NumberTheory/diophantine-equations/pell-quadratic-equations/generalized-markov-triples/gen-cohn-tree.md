@@ -1,6 +1,6 @@
 # The $k$-generalized Cohn tree
 
-**The $k$-generalized Cohn tree.** For $k \in \mathbb{N}$ and $\ell \in \mathbb{Z}$, the
+For $k \in \mathbb{N}$ and $\ell \in \mathbb{Z}$, the
 $k$-generalized Cohn tree $\mathrm{GCT}(k, \ell)$ is the full subtree of the wide
 $k$-generalized Cohn tree $\mathrm{WGCT}(k, \ell)$ rooted at the left child of its root. For a
 finite sequence $w$ of left and right moves, this is the vertex of $\mathrm{GCT}(k, \ell)$

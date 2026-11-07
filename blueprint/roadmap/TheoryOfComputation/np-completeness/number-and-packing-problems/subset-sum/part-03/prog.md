@@ -1,6 +1,6 @@
 # The subset-sum emitter machine
 
-**The subset-sum emitter machine.** A multi-stack machine with the labels of the subset-sum
+A multi-stack machine with the labels of the subset-sum
 emitter as control labels, a Boolean internal state, and the stacks of the emitter: the output
 stack $O$ holds bits, every other stack holds symbols. Stacks are read top first, $U$ is the
 counter unit, and to prepend a list to $O$ is to push it so that it reads top first. The labels

@@ -1,6 +1,6 @@
 # Green's theorem
 
-**Green's theorem.** Let $U \subseteq \mathbb{R}^2$ be open, let $D \subseteq U$ be bounded and
+Let $U \subseteq \mathbb{R}^2$ be open, let $D \subseteq U$ be bounded and
 measurable, and let $L, M : \mathbb{R}^2 \to \mathbb{R}$ be continuously differentiable on $U$.
 Let $a\lt b$ and let $\gamma=(\gamma_1,\gamma_2) : \mathbb{R} \to \mathbb{R}^2$ be continuous on
 $[a,b]$, with $\gamma(a)=\gamma(b)$, injective on $[a,b)$, with $\gamma(t)\ne\gamma(a)$ for

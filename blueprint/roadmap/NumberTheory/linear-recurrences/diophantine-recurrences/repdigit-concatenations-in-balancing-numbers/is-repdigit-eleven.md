@@ -1,6 +1,6 @@
 # Eleven is a repdigit
 
-**Eleven is a repdigit.** The number $11$ is a repdigit.
+The number $11$ is a repdigit.
 
 ## Sources
 

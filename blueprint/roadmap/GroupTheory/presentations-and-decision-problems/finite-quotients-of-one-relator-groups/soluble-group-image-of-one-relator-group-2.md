@@ -1,6 +1,6 @@
 # Finite soluble groups are images of one-relator groups
 
-**Finite soluble groups are images of one-relator groups.** Every
+Every
 finite soluble group $G$ has a natural number $d$ such that for every element $w$ of the free
 group on $x_1, \dots, x_d$ there is a surjective homomorphism from the one-relator group
 $\langle x_1, \dots, x_d \mid w \rangle$ onto $G$. That is, Kourovka Problem 18.75 has a positive

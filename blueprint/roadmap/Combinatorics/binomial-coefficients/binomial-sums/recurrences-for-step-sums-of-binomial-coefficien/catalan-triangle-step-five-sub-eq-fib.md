@@ -1,6 +1,6 @@
 # Alternating step-five sums of Catalan's triangle are Fibonacci numbers
 
-**Alternating step-five sums of Catalan's triangle are Fibonacci numbers.** For natural
+For natural
 numbers $n$ and $k$ let $d(n, k) = \frac{k + 1}{n + 1} \binom{2(n + 1)}{n - k}$ if $k \le n$,
 and $d(n, k) = 0$ if $k > n$. Let $F_m$ be the Fibonacci numbers ($F_0 = 0$, $F_1 = 1$). Then
 for every $n \in \mathbb{N}$,

@@ -1,6 +1,6 @@
 # Gauss–Kuzmin mass of a string
 
-**Gauss–Kuzmin mass of a string.** For a finite string $a$ of natural numbers with
+For a finite string $a$ of natural numbers with
 fundamental interval $I(a)$, the Gauss–Kuzmin mass of $a$ is
 $P_{GK}(a) = \frac{1}{\log 2} \int_{I(a)} \frac{dx}{1 + x}$, the measure of $I(a)$ under the
 Gauss–Kuzmin measure with density $\frac{1}{(1 + x) \log 2}$.

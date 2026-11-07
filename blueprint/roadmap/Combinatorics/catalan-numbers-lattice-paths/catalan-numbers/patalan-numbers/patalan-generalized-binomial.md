@@ -1,6 +1,6 @@
 # Binomial coefficient with rational upper argument
 
-**Binomial coefficient with rational upper argument.** For a rational number $r$ and a natural
+For a rational number $r$ and a natural
 number $k$, the generalized binomial coefficient is the rational number
 $\binom{r}{k} = r(r-1)\cdots(r-k+1)/k!$, which is $1$ for $k = 0$.
 

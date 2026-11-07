@@ -1,3 +1,3 @@
 # Symmetry of Goldman–Yang exchangeabilities
 
-**Symmetry of Goldman–Yang exchangeabilities.** The Goldman–Yang exchangeabilities are symmetric.
+The Goldman–Yang exchangeabilities are symmetric.

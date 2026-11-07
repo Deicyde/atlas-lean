@@ -1,6 +1,6 @@
 # Füredi's theorem on four-cycle-free graphs
 
-**Füredi's theorem on four-cycle-free graphs.** For a natural number $n$, let
+For a natural number $n$, let
 $\mathrm{ex}(n; C_4)$ be the largest number of edges of a simple graph on $n$ vertices that
 contains no four-cycle $C_4$ as a (not necessarily induced) subgraph. For every prime power
 $q > 13$, $\mathrm{ex}(q^2 + q + 1; C_4) = q (q + 1)^2 / 2$; the division is exact because

@@ -1,3 +1,3 @@
 # Derivation in an unrestricted grammar
 
-**Derivation in an unrestricted grammar.** Derivation: the reflexive-transitive closure of rewriting.
+Derivation: the reflexive-transitive closure of rewriting.

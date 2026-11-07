@@ -1,6 +1,6 @@
 # Words without bounded gaps in almost every Mallows representation
 
-**Words without bounded gaps in almost every Mallows representation.** For Lebesgue-almost
+For Lebesgue-almost
 every $\alpha \in (0, 1)$, if $\alpha$ is irrational, then there is a finite word $w$ over
 $\{L, M, R\}$ that does not occur relatively densely in the Mallows representation
 $M(\alpha) = M_1(\alpha) M_2(\alpha) \cdots$: there is no $\ell > 0$ such that, for every

@@ -1,6 +1,6 @@
 # The host program
 
-**The host program.** Given the five generator programs (update, situation definition, shift,
+Given the five generator programs (update, situation definition, shift,
 accept and init), the host program runs init, then update, then situation definition, then shift,
 then accept. At each label of a generator other than its final label, the host executes that
 generator's statement with the generator's stacks embedded into the host stacks (output onto the

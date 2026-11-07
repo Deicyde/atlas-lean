@@ -1,6 +1,6 @@
 # Generalized hypergeometric function
 
-**Generalized hypergeometric function.** For finite multisets $a$ and $b$ of complex numbers
+For finite multisets $a$ and $b$ of complex numbers
 and $z \in \mathbb{C}$, the value ${}_pF_q(a; b; z)$, where $p = |a|$ and $q = |b|$, is the sum
 $\sum_{n \ge 0} c_n z^n$, where $c_n$ is the $n$-th generalized hypergeometric coefficient with
 upper parameters $a$ and lower parameters $b$.

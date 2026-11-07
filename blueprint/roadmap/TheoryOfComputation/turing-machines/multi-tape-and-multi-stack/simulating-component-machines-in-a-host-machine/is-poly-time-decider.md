@@ -1,6 +1,6 @@
 # Decider host
 
-**Decider host.** Let $c$ be a component machine with stacks $c_X$ and $c_O$ and labels
+Let $c$ be a component machine with stacks $c_X$ and $c_O$ and labels
 $\mathit{start}$ and $\mathit{done}$, where the statement at $\mathit{done}$ is the halting
 statement. Let $g_X$ map bits to symbols of $c_X$, let $e_O$ be a bijection from the alphabet of
 $c_O$ to the booleans, let $L$ map bit lists to booleans, and let $p$ be a polynomial with

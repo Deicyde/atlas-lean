@@ -1,6 +1,6 @@
 # Ulam words with a block of two ones
 
-**Ulam words with a block of two ones.** For natural numbers $a$ and $b$, the binary word
+For natural numbers $a$ and $b$, the binary word
 $0^a 11 0^b$ ($a$ zeros, then two ones, then $b$ zeros) is an Ulam word if and only if $a + b$ is
 odd.
 

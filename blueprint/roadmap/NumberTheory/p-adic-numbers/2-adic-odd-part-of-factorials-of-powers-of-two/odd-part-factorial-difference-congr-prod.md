@@ -1,6 +1,6 @@
 # Normalized difference of odd parts of dyadic factorials
 
-**Normalized difference of odd parts of dyadic factorials.** Write $\mathrm{od}(n)$ for the odd
+Write $\mathrm{od}(n)$ for the odd
 part of $n$, $(2^e-1)!!$ for the product of the odd numbers from $1$ to $2^e-1$, and
 $\lfloor x \rfloor$ for the floor of $x$; congruences are taken in the $2$-adic integers
 $\mathbb{Z}_2$. Let $z, w \in \mathbb{Z}_2$ satisfy $z \equiv \mathrm{od}((2^{e-1})!) \pmod{2^e}$

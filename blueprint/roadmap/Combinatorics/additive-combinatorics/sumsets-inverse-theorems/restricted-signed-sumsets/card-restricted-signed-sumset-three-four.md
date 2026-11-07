@@ -1,6 +1,6 @@
 # The restricted signed 3-fold sumset of $\{1, 2, 3, 4\}$
 
-**The restricted signed 3-fold sumset of $\{1, 2, 3, 4\}$.** The restricted signed 3-fold
+The restricted signed 3-fold
 sumset $3^{\wedge}_{\pm} \{1, 2, 3, 4\}$ has exactly $19$ elements.
 
 ## Sources

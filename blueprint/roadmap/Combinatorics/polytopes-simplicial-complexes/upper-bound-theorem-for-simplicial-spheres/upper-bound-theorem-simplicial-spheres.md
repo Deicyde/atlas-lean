@@ -1,6 +1,6 @@
 # Upper bound theorem for simplicial spheres
 
-**Upper bound theorem for simplicial spheres.** Let $d$, $n$ and $k$ be natural numbers
+Let $d$, $n$ and $k$ be natural numbers
 with $k < d$, and let $X$ be a finite simplicial $(d-1)$-sphere, that is, a finite geometric
 simplicial complex in $\mathbb{R}^d$ whose underlying space is homeomorphic to the unit sphere
 of $\mathbb{R}^d$. If $X$ has $n$ vertices, then the number of $k$-dimensional faces of $X$

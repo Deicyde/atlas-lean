@@ -1,6 +1,6 @@
 # Binomial sum for supergeneralized Leonardo p-numbers with linear initial values
 
-**Binomial sum for supergeneralized Leonardo p-numbers with linear initial values.** Let
+Let
 $p \ge 1$ be a natural number and $y$ the real sequence $y_i = i + 1$, so that the initial values
 are $y_0, \dots, y_p = 1, \dots, p + 1$. For every natural number $n$, the supergeneralized
 Leonardo $p$-numbers $\mathcal{L}_{p,1,y}$ with $k = 1$ and initial values $y$ satisfy

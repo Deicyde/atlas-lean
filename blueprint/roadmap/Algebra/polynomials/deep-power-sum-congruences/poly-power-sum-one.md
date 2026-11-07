@@ -1,6 +1,6 @@
 # The first power sum is the first elementary symmetric function
 
-**The first power sum is the first elementary symmetric function.** For every polynomial $P$
+For every polynomial $P$
 over a commutative ring, $p_1(P) = e_1(P)$.
 
 ## Sources

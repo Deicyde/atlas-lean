@@ -1,3 +1,3 @@
 # Merging lineages from singletons gives the ancestral blocks
 
-**Merging lineages from singletons gives the ancestral blocks.** Starting from the singletons, `mergeAlong` is `blocksAfter`.
+Starting from the singletons, `mergeAlong` is `blocksAfter`.

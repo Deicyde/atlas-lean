@@ -1,6 +1,6 @@
 # Consecutive Pell–Lucas numbers are coprime
 
-**Consecutive Pell–Lucas numbers are coprime.** For every natural number $n$, the Pell–Lucas
+For every natural number $n$, the Pell–Lucas
 numbers $Q_n$ and $Q_{n+1}$ satisfy $\gcd(Q_n, Q_{n+1}) = 1$.
 
 ## Sources

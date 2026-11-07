@@ -1,6 +1,6 @@
 # Ramanujan's binomial series transformation (Chapter 3, Entry 1, Corollary 1)
 
-**Ramanujan's binomial series transformation (Chapter 3, Entry 1, Corollary 1).** Let $n$ and
+Let $n$ and
 $x$ be complex numbers with $|x| < 1$, write $(n)_k = n(n-1)\cdots(n-k+1)$ for the falling
 factorial (with $(n)_0 = 1$), and let $Q_0, Q_1, Q_2, \ldots$ be complex numbers such that, for
 some $R > 0$, the power series $\sum_k Q_k z^k$ converges absolutely for every complex $z$ with

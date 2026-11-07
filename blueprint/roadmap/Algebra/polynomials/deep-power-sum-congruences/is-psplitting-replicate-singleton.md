@@ -1,6 +1,6 @@
 # $p$ copies of $u$ form a $p$-splitting of $\{pu\}$
 
-**$p$ copies of $u$ form a $p$-splitting of $\{pu\}$.** For every natural number $p$ and every
+For every natural number $p$ and every
 integer $u \ge 1$, the multiset consisting of $p$ copies of $u$ is a $p$-splitting of the
 one-element multiset $\{pu\}$.
 

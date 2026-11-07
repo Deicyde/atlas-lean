@@ -1,6 +1,6 @@
 # Two interlocking $\{2\}$-combs on a 4-board
 
-**Two interlocking $\{2\}$-combs on a 4-board.** For $Q = \{2\}$, there is exactly one
+For $Q = \{2\}$, there is exactly one
 restricted-overlap tiling of a $4$-board with squares and two $Q$-combs.
 
 Here the $Q$-comb has length $3$, with teeth in cells $0$ and $2$ and a gap in cell $1$; in

@@ -1,6 +1,6 @@
 # Hoffman basis of $\mathfrak{H}^1$
 
-**Hoffman basis of $\mathfrak{H}^1$.** Let $\mathfrak{H} = \mathbb{Q}\langle x, y \rangle$ be
+Let $\mathfrak{H} = \mathbb{Q}\langle x, y \rangle$ be
 the free associative $\mathbb{Q}$-algebra on two generators $x$ and $y$, let $\mathfrak{H}^1$ be
 the $\mathbb{Q}$-linear span of the empty word and the words ending in $y$ (a subalgebra), and
 for each positive integer $k$ let $z_k = x^{k-1} y$. The family of monomials

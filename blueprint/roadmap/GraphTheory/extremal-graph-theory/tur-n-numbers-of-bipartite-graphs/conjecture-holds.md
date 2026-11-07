@@ -1,6 +1,6 @@
 # The Conlon–Lee subdivision conjecture holds
 
-**The Conlon–Lee subdivision conjecture holds.** For a simple graph $F$ and a natural number
+For a simple graph $F$ and a natural number
 $n$, let $\mathrm{ex}(n, F)$ be the maximum number of edges of a simple graph on $n$ vertices
 that contains no copy of $F$ (not necessarily induced), or $0$ if there is no such graph. For a
 simple graph $H$ and a natural number $k \ge 2$, let $H^{k-1}$ be the graph obtained from $H$ by

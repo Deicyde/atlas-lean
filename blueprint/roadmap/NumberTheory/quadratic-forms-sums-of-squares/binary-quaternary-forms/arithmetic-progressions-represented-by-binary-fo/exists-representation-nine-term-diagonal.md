@@ -1,6 +1,6 @@
 # Nine-term arithmetic progressions represented by $px^2 + qy^2$
 
-**Nine-term arithmetic progressions represented by $px^2 + qy^2$.** Let $p, q, g, h$ be
+Let $p, q, g, h$ be
 integers such that $-4pq$ is not a perfect square, and put
 
 $$

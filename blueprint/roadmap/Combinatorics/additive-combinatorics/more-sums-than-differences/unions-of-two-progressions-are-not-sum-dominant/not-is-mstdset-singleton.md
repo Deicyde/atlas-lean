@@ -1,6 +1,6 @@
 # A single point is not an MSTD set
 
-**A single point is not an MSTD set.** For every real number $a$, the set $\{a\}$ is not an
+For every real number $a$, the set $\{a\}$ is not an
 MSTD set.
 
 ## Sources

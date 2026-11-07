@@ -1,6 +1,6 @@
 # A stopping-time event is independent of a later observation
 
-**A stopping-time event is independent of a later observation.** Let $\mu$ be a probability
+Let $\mu$ be a probability
 measure on a measurable space $\Omega$, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration
 on $\Omega$, and let $X_0, X_1, X_2, \dots$ be measurable maps from $\Omega$ to a measurable space
 $S$ that are mutually independent under $\mu$. Suppose that for every $n$ the σ-algebra

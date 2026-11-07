@@ -1,6 +1,6 @@
 # The mex sequence of Wythoff's game with terminal positions
 
-**The mex sequence of Wythoff's game with terminal positions.** Fix a natural number $\ell$.
+Fix a natural number $\ell$.
 The sequence $(a_n)_{n \ge 0}$ is defined recursively: $a_n$ is the least natural number greater
 than $\ell$ that differs from $a_i$ and from $a_i + i + \ell + 1$ for every $i < n$. Writing
 $b_i = a_i + i + \ell + 1$, this says that $a_n$ is the least natural number outside

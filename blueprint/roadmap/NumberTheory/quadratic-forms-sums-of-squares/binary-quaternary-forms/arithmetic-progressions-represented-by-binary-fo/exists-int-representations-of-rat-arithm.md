@@ -1,6 +1,6 @@
 # Rational representations of an arithmetic progression scale to integral ones
 
-**Rational representations of an arithmetic progression scale to integral ones.** Let
+Let
 $a, b, c$ be integers, $n$ a natural number and $u_0, d$ rational numbers. If for every natural
 number $i < n$ there are rational numbers $x, y$ with $ax^2 + bxy + cy^2 = u_0 + id$, then there
 is a nonzero integer $k$ such that for every natural number $i < n$ there are integers $x, y$

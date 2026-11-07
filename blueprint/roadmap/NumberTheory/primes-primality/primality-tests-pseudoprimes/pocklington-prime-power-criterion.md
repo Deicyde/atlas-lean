@@ -1,6 +1,6 @@
 # Pocklington's criterion for $N = Kp^e + 1$
 
-**Pocklington's criterion for $N = Kp^e + 1$.** Let $N$, $K$ and $e$ be natural numbers and
+Let $N$, $K$ and $e$ be natural numbers and
 let $p$ be a prime, with $0 < K < p^e$ and $N = Kp^e + 1$. If some natural number $a$ satisfies
 $a^{N-1} \equiv 1 \pmod{N}$ and $\gcd\big(a^{(N-1)/p} - 1, N\big) = 1$, where $(N-1)/p$ is the
 quotient of $N - 1$ by $p$ rounded down and $a^{(N-1)/p} - 1$ is truncated at $0$, then $N$ is

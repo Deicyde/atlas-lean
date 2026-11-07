@@ -1,6 +1,6 @@
 # Wolff's planar distance set condition, as a proposition
 
-**Wolff's planar distance set condition, as a proposition.** The proposition that every
+The proposition that every
 compact set $E \subseteq \mathbb{R}^2$ with Hausdorff dimension greater than $4/3$ has a distance
 set $\{|x - y| : x, y \in E\}$ of positive Lebesgue measure.
 

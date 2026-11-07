@@ -1,6 +1,6 @@
 # Run lifting
 
-**Run lifting.** Let $M$ be a counter machine (unit counters indexed by $C$ and a Boolean
+Let $M$ be a counter machine (unit counters indexed by $C$ and a Boolean
 output stack) and $M'$ a machine on the same stacks plus an input stack over $G$, such that $M'$
 embeds $M$ along the inclusion of the counter stacks with the same labels (at every label whose
 statement is not the halt statement, $M'$ runs $M$'s statement). If $M$ runs in $n$ steps from

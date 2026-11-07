@@ -1,6 +1,6 @@
 # Gessel's Bernoulli-number identity
 
-**Gessel's Bernoulli-number identity.** Let $B_j$ denote the $j$-th Bernoulli number, with
+Let $B_j$ denote the $j$-th Bernoulli number, with
 $B_1 = -1/2$. For all natural numbers $n$, $r$ and $m$ with $r$ odd and $m \ge 1$,
 
 $$\sum_{k=0}^{n+r} m^{n+r-k} \binom{n+r}{k} \binom{n+k+r}{r} B_{n+k} =

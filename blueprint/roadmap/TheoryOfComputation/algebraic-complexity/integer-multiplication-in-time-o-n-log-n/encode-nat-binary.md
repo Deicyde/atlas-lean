@@ -1,6 +1,6 @@
 # Binary encoding of natural numbers
 
-**Binary encoding of natural numbers.** The binary encoding of a natural number $n$ is the
+The binary encoding of a natural number $n$ is the
 list of its base-$2$ digits, least significant first, with the digit $1$ written as the Boolean
 value true and the digit $0$ as false. The list has no trailing zero digit, so $0$ is encoded by
 the empty list.

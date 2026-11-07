@@ -1,6 +1,6 @@
 # Restricted sumset
 
-**Restricted sumset.** For a natural number $h$ and a finite subset $A$ of an additive
+For a natural number $h$ and a finite subset $A$ of an additive
 commutative monoid $G$, the restricted sumset $h^{\wedge} A$ is the set of all sums
 $\sum_{a \in B} a$ with $B$ an $h$-element subset of $A$, that is, the sums of $h$ distinct
 elements of $A$. In particular $0^{\wedge} A = \{0\}$.

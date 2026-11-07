@@ -1,6 +1,6 @@
 # Maximum longest progression length over all reduced residue windows
 
-**Maximum longest progression length over all reduced residue windows.** Let $n > 1$ be a
+Let $n > 1$ be a
 natural number, $\operatorname{rad}(n)$ the product of its distinct prime factors and
 $\operatorname{gpf}(n)$ its largest prime factor. For an integer $m$ let $f_m(n)$ be the length of
 the longest arithmetic progression with positive common difference contained in the set $R_m(n)$

@@ -1,6 +1,6 @@
 # Number of restricted combinations
 
-**Number of restricted combinations.** For a finite set $Q$ of natural numbers and natural
+For a finite set $Q$ of natural numbers and natural
 numbers $n$ and $k$, $S^Q_{n,k}$ is the number of $k$-subsets of $\{1, \dots, n\}$ in which no
 two distinct elements differ by an element of $Q$.
 

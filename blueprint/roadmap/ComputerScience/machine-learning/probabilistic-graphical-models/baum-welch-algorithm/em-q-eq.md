@@ -1,6 +1,6 @@
 # The Baum-Welch objective in terms of expected counts
 
-**The Baum-Welch objective in terms of expected counts.** Let $S$ and $O$ be finite sets, let
+Let $S$ and $O$ be finite sets, let
 $T$ be a natural number, and let $x_1, \dots, x_N$ be sequences $x_n = (x_{n,0}, x_{n,1}, \dots)$ of
 observations in $O$. For a valid hidden Markov model $h$ on states $S$ and observations $O$
 (positive initial, transition and emission probabilities, each distribution summing to one), write

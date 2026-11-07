@@ -1,6 +1,6 @@
 # Elder's theorem
 
-**Elder's theorem.** Let $n$ and $k$ be natural numbers with $k \ge 1$. The total number of
+Let $n$ and $k$ be natural numbers with $k \ge 1$. The total number of
 times the part $k$ occurs, counted with multiplicity, over all partitions of $n$ equals the sum,
 over all partitions $\lambda$ of $n$, of the number of distinct parts of $\lambda$ that occur at
 least $k$ times in $\lambda$.

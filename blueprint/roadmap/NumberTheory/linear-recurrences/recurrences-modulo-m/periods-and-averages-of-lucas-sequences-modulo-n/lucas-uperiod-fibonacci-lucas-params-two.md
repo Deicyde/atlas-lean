@@ -1,6 +1,6 @@
 # Period of the Fibonacci sequence modulo 2
 
-**Period of the Fibonacci sequence modulo 2.** The Fibonacci sequence, that is, the Lucas
+The Fibonacci sequence, that is, the Lucas
 sequence with parameters $(P, Q) = (1, -1)$, has period $3$ modulo $2$.
 
 ## Sources

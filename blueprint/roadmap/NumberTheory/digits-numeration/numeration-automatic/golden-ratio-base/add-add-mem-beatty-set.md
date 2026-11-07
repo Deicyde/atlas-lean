@@ -1,6 +1,6 @@
 # The value at one is a term of a generalized Beatty sequence
 
-**The value at one is a term of a generalized Beatty sequence.** Let $\varphi$ be the golden
+Let $\varphi$ be the golden
 ratio. For all integers $p, q, r$, the number $p + q + r$ is a term
 $p \lfloor n \varphi \rfloor + q n + r$, $n \ge 1$, of the generalized Beatty sequence
 $V(p, q, r)$; it is the term at $n = 1$, since $\lfloor \varphi \rfloor = 1$.

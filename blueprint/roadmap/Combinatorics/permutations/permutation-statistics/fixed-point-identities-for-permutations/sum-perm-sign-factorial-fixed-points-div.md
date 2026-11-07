@@ -1,6 +1,6 @@
 # Pain's signed factorial-ratio identity for fixed points
 
-**Pain's signed factorial-ratio identity for fixed points.** Let $n$ and $k$ be natural
+Let $n$ and $k$ be natural
 numbers with $n \ge 2$ and $k \ge 1$. For a permutation $\sigma$ of
 $\lbrace 0, 1, \dots, n-1 \rbrace$, write $\operatorname{sgn}(\sigma)$ for its sign and
 $\operatorname{fix}(\sigma)$ for its number of fixed points. Then, summing over all permutations

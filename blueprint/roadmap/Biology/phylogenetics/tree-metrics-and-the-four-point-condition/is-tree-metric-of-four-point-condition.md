@@ -1,6 +1,6 @@
 # Buneman's theorem, converse direction
 
-**Buneman's theorem, converse direction.** A symmetric dissimilarity on a finite set that
+A symmetric dissimilarity on a finite set that
 vanishes on the diagonal and satisfies the four-point condition is a tree metric.
 
 ## Sources

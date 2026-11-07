@@ -1,6 +1,6 @@
 # The first odd harmonic number
 
-**The first odd harmonic number.** The depth-one odd harmonic number $O_1(1)$ equals $2$.
+The depth-one odd harmonic number $O_1(1)$ equals $2$.
 
 ## Sources
 

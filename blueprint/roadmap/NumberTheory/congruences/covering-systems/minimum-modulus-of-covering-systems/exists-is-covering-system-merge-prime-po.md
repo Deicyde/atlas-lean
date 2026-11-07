@@ -1,6 +1,6 @@
 # Merging the p classes whose modulus is divisible by a prime power
 
-**Merging the p classes whose modulus is divisible by a prime power.** Let $C$ be a
+Let $C$ be a
 covering system with positive moduli: a finite set of congruences $x \equiv r \pmod m$ with
 $r \in \mathbb{Z}$ and $m \ge 1$ such that every integer satisfies at least one of them. Let $p$
 be a prime and $a \ge 1$, and suppose exactly $p$ congruences of $C$ have modulus divisible by

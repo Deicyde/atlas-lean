@@ -1,6 +1,6 @@
 # Square-grid tilings fixed by the half-turn for odd $n$
 
-**Square-grid tilings fixed by the half-turn for odd $n$.** Let $n$ be an odd positive
+Let $n$ be an odd positive
 integer, let $T$ be a finite set, let $\sigma$ be a permutation of $T$ with $\sigma^2 = 1$, and
 write $t_\sigma$ for the number of elements $t \in T$ with $\sigma(t) = t$. Let $r^2$ be the
 half-turn of the grid $(\mathbb{Z}/n\mathbb{Z})^2$ given by $r^2(x, y) = (-1 - x, -1 - y)$.

@@ -1,6 +1,5 @@
 # Lower bound for restricted signed 4-fold sumsets of nonnegative sets containing zero
 
-**Lower bound for restricted signed 4-fold sumsets of nonnegative sets containing zero.**
 Let $k \ge 5$, let $A$ be a set of $k$ nonnegative integers with $0 \in A$, and write
 $4^{\wedge}_{\pm} A$ for the restricted signed 4-fold sumset of $A$. Then
 $|4^{\wedge}_{\pm} A| \ge 8k - 19$.

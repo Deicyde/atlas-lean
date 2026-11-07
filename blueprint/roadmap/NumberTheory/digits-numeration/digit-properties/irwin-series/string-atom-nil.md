@@ -1,6 +1,6 @@
 # The atom of the empty string is the unit Dirac mass at the origin
 
-**The atom of the empty string is the unit Dirac mass at the origin.** For every natural
+For every natural
 number $b$, the atom $b^{-|X|}\,\delta_{n(X)/b^{|X|}}$ of a base-$b$ digit string $X$ is the
 Dirac measure $\delta_0$ when $X$ is the empty string.
 

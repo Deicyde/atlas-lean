@@ -1,6 +1,6 @@
 # Restricting the stack alphabet of a pushdown automaton
 
-**Restricting the stack alphabet of a pushdown automaton.** Let $M$ be a pushdown
+Let $M$ be a pushdown
 automaton with stack alphabet $\Gamma$, and let $\Gamma_0 \subseteq \Gamma$ be a finite set
 of stack symbols that contains the initial stack symbol of $M$ and is closed for $M$.
 The restriction of $M$ to $\Gamma_0$ is the pushdown automaton with the same input

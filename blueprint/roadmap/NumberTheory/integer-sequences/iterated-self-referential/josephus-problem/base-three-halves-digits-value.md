@@ -1,6 +1,6 @@
 # Value of the base-3/2 digits
 
-**Value of the base-3/2 digits.** For every natural number $N$, if
+For every natural number $N$, if
 $(d_0, d_1, \dots, d_{k-1})$ is the base-$3/2$ digit list of $N$, least significant digit first,
 then in $\mathbb{Q}$
 

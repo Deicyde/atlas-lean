@@ -1,6 +1,6 @@
 # Smith's counterexample to Erdős Problem 1198
 
-**Smith's counterexample to Erdős Problem 1198.** There is a colouring
+There is a colouring
 $c : \mathbb{N} \to \{0, 1\}$ such that for every strictly increasing sequence
 $0 < a_0 < a_1 < \cdots$ of natural numbers, the numbers $\sum_{j < k} \prod_{i \in S_j} a_i$,
 taken over all $k \ge 1$ and all pairwise disjoint nonempty finite sets

@@ -1,6 +1,6 @@
 # Timed smaller-child selection
 
-**Timed smaller-child selection.** Let $a$ be an array over a linearly ordered type and $i$
+Let $a$ be an array over a linearly ordered type and $i$
 an index, with left child $2i + 1$ and right child $2i + 2$; cost is counted as the pair
 (value comparisons, array swaps). If both children are valid indices of $a$, the selection costs
 $(1, 0)$ and returns the right child when its value is strictly less than the value at the left

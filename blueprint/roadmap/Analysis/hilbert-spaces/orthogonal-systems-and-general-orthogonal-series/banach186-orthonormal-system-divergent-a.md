@@ -1,6 +1,6 @@
 # Banach's Problem 186: a complete orthonormal system with divergent Fourier series
 
-**Banach's Problem 186: a complete orthonormal system with divergent Fourier series.** There is a
+There is a
 sequence $(\varphi_i)_{i \ge 0}$ of square-integrable real functions on $[0, 1]$, with respect to
 Lebesgue measure, that is orthonormal, $\int_0^1 \varphi_i \varphi_j \, dx = \delta_{ij}$ for
 all $i, j$, and complete, in the sense that every square-integrable $g$ on $[0, 1]$ with

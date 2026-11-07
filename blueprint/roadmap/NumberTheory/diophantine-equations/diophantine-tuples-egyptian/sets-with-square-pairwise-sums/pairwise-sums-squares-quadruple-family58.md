@@ -1,6 +1,6 @@
 # First three-parameter family of rational quadruples with square pairwise sums
 
-**First three-parameter family of rational quadruples with square pairwise sums.** For
+For
 rational numbers $m, q, r$, let
 $a_1 = 16 m^2 (m^4 - 1)^2 \bigl((5m^4 - 2m^2 + 1) q^2 - 2(m^4 - 6m^2 + 1) q r +
 (m^4 - 2m^2 + 5) r^2\bigr)^2$,

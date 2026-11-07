@@ -1,6 +1,6 @@
 # Skew Dyck steps
 
-**Skew Dyck steps.** A skew Dyck path is built from three kinds of step: the up step
+A skew Dyck path is built from three kinds of step: the up step
 $U = (1,1)$, the down step $D = (1,-1)$ and the left step $L = (-1,-1)$.
 
 ## Sources

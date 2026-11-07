@@ -1,6 +1,6 @@
 # ElGamal eavesdropping experiment
 
-**ElGamal eavesdropping experiment.** Let $G$ be a commutative group, $g \in G$ and $q \ge 1$.
+Let $G$ be a commutative group, $g \in G$ and $q \ge 1$.
 For an eavesdropping adversary $A$ with coins in a finite nonempty type $R$, the experiment draws
 $x, y \in \mathbb{Z}/q$, coins $r \in R$ and a bit $b$ independently and uniformly. It sets the
 public key $h = g^x$, lets $A$ choose messages $(m_0, m_1)$ from $h$ and $r$, and gives $A$ the

@@ -1,6 +1,6 @@
 # Generating function for parts of a given size in distinct $n$-color partitions
 
-**Generating function for parts of a given size in distinct $n$-color partitions.** Call an
+Call an
 $n$-color partition distinct when no colored part occurs more than once. For a natural number
 $j$, let $Q(D, j, m)$ be the total number of parts of size $j$ (of any color) over the distinct
 $n$-color partitions of $m$, and let $C(D, m)$ be the number of distinct $n$-color partitions of

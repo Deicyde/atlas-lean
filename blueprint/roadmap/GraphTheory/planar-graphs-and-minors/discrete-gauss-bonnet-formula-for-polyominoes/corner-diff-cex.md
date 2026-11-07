@@ -1,3 +1,3 @@
 # Corner defect of two diagonally touching cells
 
-**Corner defect of two diagonally touching cells.** Two diagonally touching cells have corner defect `6`.
+Two diagonally touching cells have corner defect `6`.

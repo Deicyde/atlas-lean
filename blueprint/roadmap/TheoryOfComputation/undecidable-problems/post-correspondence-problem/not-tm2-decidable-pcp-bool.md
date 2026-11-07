@@ -1,6 +1,6 @@
 # The Post correspondence problem is undecidable over the binary alphabet
 
-**The Post correspondence problem is undecidable over the binary alphabet.** The Post
+The Post
 correspondence problem over the two-letter alphabet of Booleans $\mathrm{true}$ and
 $\mathrm{false}$, that is, the property of a finite list $P$ of dominoes over the Booleans of
 having a PCP solution, is not decidable by a multi-stack Turing machine: no multi-stack machine

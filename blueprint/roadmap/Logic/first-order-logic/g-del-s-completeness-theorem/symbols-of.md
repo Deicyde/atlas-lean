@@ -1,6 +1,6 @@
 # Symbols of a finite set of formulas
 
-**Symbols of a finite set of formulas.** For a finite set $F$ of first-order formulas of a
+For a finite set $F$ of first-order formulas of a
 language $L$ with free variables indexed by $\mathbb{N}$, the symbols of $F$ are the finite set
 of function and relation symbols of $L$ that occur in some formula of $F$, that is, the union over
 $\psi \in F$ of the finite sets of symbols occurring in $\psi$.

@@ -1,6 +1,6 @@
 # Language homomorphisms commute with instantiation in terms
 
-**Language homomorphisms commute with instantiation in terms.** Let $h \colon L \to L'$ be a
+Let $h \colon L \to L'$ be a
 homomorphism of first-order languages, and for an $L$-term $u$ write $h(u)$ for the $L'$-term
 obtained by replacing every function symbol by its image under $h$. Let $t$ be an $L$-term with
 free variables in $\alpha$ and $s$ an $L$-term with free variables in $\alpha$ and $m + 1$

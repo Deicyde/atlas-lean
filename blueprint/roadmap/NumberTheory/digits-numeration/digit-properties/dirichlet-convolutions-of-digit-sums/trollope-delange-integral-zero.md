@@ -1,6 +1,6 @@
 # Delange's function vanishes at zero
 
-**Delange's function vanishes at zero.** For every natural number $q$, Delange's function $g$
+For every natural number $q$, Delange's function $g$
 in base $q$ satisfies $g(0) = 0$.
 
 ## Sources

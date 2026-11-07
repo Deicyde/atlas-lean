@@ -1,6 +1,6 @@
 # Gould-type identities for binomial and extended trinomial coefficients
 
-**Gould-type identities for binomial and extended trinomial coefficients.** For complex $u$
+For complex $u$
 and $j \in \mathbb{N}$ write $\binom{u}{j}$ for the generalized binomial coefficient and
 $\binom{u}{j}_2$ for the coefficient of $t^j$ in
 $(1 + t + t^2)^u = \sum_{i \ge 0} \binom{u}{i}(t + t^2)^i$ (Comtet's extension). Then for all

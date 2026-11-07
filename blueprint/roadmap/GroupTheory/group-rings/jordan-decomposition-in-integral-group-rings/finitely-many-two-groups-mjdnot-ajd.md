@@ -1,6 +1,6 @@
 # Kourovka Problem 16.104
 
-**Kourovka Problem 16.104.** The proposition that there is a natural number $B$ such that
+The proposition that there is a natural number $B$ such that
 every finite $2$-group $G$ whose integral group ring $\mathbb{Z}[G]$ has the multiplicative Jordan
 decomposition property (MJD) but not the additive Jordan decomposition property (AJD) has order
 at most $B$.

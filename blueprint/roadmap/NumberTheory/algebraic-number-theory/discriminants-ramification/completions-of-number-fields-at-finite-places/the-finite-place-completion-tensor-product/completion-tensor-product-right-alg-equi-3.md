@@ -1,6 +1,6 @@
 # Tensor product decomposition at a finite place over the base field
 
-**Tensor product decomposition at a finite place over the base field.** Let $L/K$ be an
+Let $L/K$ be an
 extension of number fields, $v$ a finite place of $K$ and $K_v$ the completion of $K$ at $v$; for
 each finite place $w$ of $L$ lying over $v$, let $L_w$ be the completion of $L$ at $w$. There
 exists an isomorphism of $K$-algebras $L \otimes_K K_v \cong \prod_{w \mid v} L_w$.

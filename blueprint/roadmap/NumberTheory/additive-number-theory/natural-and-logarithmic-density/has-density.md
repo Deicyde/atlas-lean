@@ -1,6 +1,6 @@
 # Density of a set
 
-**Density of a set.** Let $\beta$ be a preorder in which every set
+Let $\beta$ be a preorder in which every set
 $\{x \in \beta \mid x \le b\}$ is finite, let $S, A \subseteq \beta$ and $\alpha \in \mathbb{R}$,
 and write $\beta_{\lt b} = \{x \in \beta \mid x < b\}$. The set $S$ has density $\alpha$ relative to
 $A$ if the partial density

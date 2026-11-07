@@ -1,6 +1,6 @@
 # Result of doubly-linked list prepend
 
-**Result of doubly-linked list prepend.** Fix a capacity $n$ and let $s$ be a store assigning to
+Fix a capacity $n$ and let $s$ be a store assigning to
 each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an identity, and let
 $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an identity,
 $s(\mathrm{head})$ is a node. Let $u$ be $s$ with the cell at $x$ replaced by the node $s(x)$ with

@@ -1,6 +1,6 @@
 # Shannon source coding lower bound
 
-**Shannon source coding lower bound.** Let $\alpha$ and $\beta$ be finite types with
+Let $\alpha$ and $\beta$ be finite types with
 $q = |\beta| \ge 2$, and let $p : \alpha \to \mathbb{R}$ satisfy $p(a) > 0$ for every $a \in \alpha$
 and $\sum_{a \in \alpha} p(a) = 1$. Let $c$ assign to each $a \in \alpha$ a finite word $c(a)$ over
 $\beta$, of length $|c(a)|$, such that $c$ is injective and its set of codewords is uniquely

@@ -1,6 +1,6 @@
 # Repetend tables with at most three rows have no matched columns
 
-**Repetend tables with at most three rows have no matched columns.** For natural numbers $n$
+For natural numbers $n$
 and $L$, let the rows be the integers $b$ with $1 \le b < n$, $\gcd(b, n) = 1$ and multiplicative
 order $L$ modulo $n$, and let column $j$ be the multiset of the digits
 $\lfloor b^{j+1}/n \rfloor \bmod b$ over these rows. If there are at least one and at most three

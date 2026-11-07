@@ -1,6 +1,6 @@
 # Graph isomorphism is in NP and coAM
 
-**Graph isomorphism is in NP and coAM.** The directed graph isomorphism decision problem
+The directed graph isomorphism decision problem
 belongs to NP and to coAM.
 
 ## Sources

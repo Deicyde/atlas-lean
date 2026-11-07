@@ -1,6 +1,6 @@
 # Explicit formula for type II alternating hyperharmonic numbers
 
-**Explicit formula for type II alternating hyperharmonic numbers.** For real $s$ write
+For real $s$ write
 $\overline{H}_n^{(s)} = \sum_{i=1}^{n} (-1)^{i-1}/i^s$ for the alternating generalized harmonic
 numbers. For a natural number $p$, the type II generalized alternating hyperharmonic numbers are
 $H_n^{(p,1,2)} = \overline{H}_n^{(p)}$ and $H_n^{(p,r+1,2)} = \sum_{k=1}^{n} H_k^{(p,r,2)}$. Let

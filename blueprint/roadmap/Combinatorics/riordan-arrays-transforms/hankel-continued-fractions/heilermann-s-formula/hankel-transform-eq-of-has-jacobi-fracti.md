@@ -1,6 +1,6 @@
 # Hankel transforms of Jacobi fractions do not depend on the linear coefficients
 
-**Hankel transforms of Jacobi fractions do not depend on the linear coefficients.** Let $K$
+Let $K$
 be a commutative ring. Say that a sequence $a$ in $K$ has Jacobi fraction data
 $(\alpha, \beta, \mu_0)$, where $\alpha$, $\beta$ are sequences in $K$ and $\mu_0 \in K$, when there
 are power series $F_0, F_1, \dots$ over $K$ with $\sum_{n \ge 0} a_n x^n = \mu_0 F_0$ and

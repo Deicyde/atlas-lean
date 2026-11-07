@@ -1,6 +1,6 @@
 # The sum $\Lambda(\alpha, k_1, k_2)$
 
-**The sum $\Lambda(\alpha, k_1, k_2)$.** For a sequence $\alpha = (\alpha_0, \alpha_1, \dots)$
+For a sequence $\alpha = (\alpha_0, \alpha_1, \dots)$
 of rationals and natural numbers $k_1, k_2$,
 
 $$

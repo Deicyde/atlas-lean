@@ -1,6 +1,6 @@
 # Conditional entropy of a finite joint law
 
-**Conditional entropy of a finite joint law.** Let $p$ be a probability distribution on
+Let $p$ be a probability distribution on
 $\alpha \times \beta$, where $\alpha$ and $\beta$ are finite, viewed as the joint law of a pair
 $(X, Y)$, and let $p_X(a) = \sum_{b \in \beta} p(a, b)$ be its first marginal. The conditional
 entropy of $Y$ given $X$, in bits, is

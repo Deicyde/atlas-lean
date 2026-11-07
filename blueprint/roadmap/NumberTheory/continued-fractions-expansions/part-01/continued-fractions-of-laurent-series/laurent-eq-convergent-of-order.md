@@ -1,6 +1,6 @@
 # Close rational approximations and convergents
 
-**Close rational approximations and convergents.** Let $K$ be a field and let
+Let $K$ be a field and let
 $\alpha \in K((x^{-1}))$ be irrational, with partial quotients $b_0, b_1, \dots$ and convergents
 $P_n / Q_n$, where $P_{-1} = 1$, $Q_{-1} = 0$, $P_0 = b_0$, $Q_0 = 1$,
 $P_{n+1} = b_{n+1} P_n + P_{n-1}$ and $Q_{n+1} = b_{n+1} Q_n + Q_{n-1}$. For a Laurent series

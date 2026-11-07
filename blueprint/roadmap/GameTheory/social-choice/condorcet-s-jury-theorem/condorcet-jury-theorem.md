@@ -1,6 +1,6 @@
 # Condorcet's jury theorem
 
-**Condorcet's jury theorem.** Let $\mu$ be a probability measure on a measurable space
+Let $\mu$ be a probability measure on a measurable space
 $\Omega$, let $X_0, X_1, \dots$ be measurable maps from $\Omega$ to $\{\text{true}, \text{false}\}$
 (the votes, true meaning a correct vote), and let $p$ be a number with $1/2 < p < 1$. Suppose that
 each vote is correct with probability $p$, that is $\mu(X_i = \text{true}) = p$ for every $i$, and

@@ -1,6 +1,6 @@
 # Length of a longest common subsequence
 
-**Length of a longest common subsequence.** For binary strings $x$ and $y$ of length $n$,
+For binary strings $x$ and $y$ of length $n$,
 $\mathrm{LCS}(x, y)$ is the length returned by the dynamic-programming algorithm for the longest
 common subsequence, applied to $x$ and $y$ read as lists of bits.
 

@@ -1,6 +1,6 @@
 # $3x + 1$ is even for odd $2$-adic $x$
 
-**$3x + 1$ is even for odd $2$-adic $x$.** For every $2$-adic integer $x \in \mathbb{Z}_2$ whose
+For every $2$-adic integer $x \in \mathbb{Z}_2$ whose
 residue modulo $2$ is nonzero, the residue of $3x + 1$ modulo $2$ is zero.
 
 ## Sources

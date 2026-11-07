@@ -1,6 +1,6 @@
 # Rough numbers
 
-**Rough numbers.** Let $n$ and $k$ be natural numbers. Then $n$ is $k$-rough if $n \neq 0$
+Let $n$ and $k$ be natural numbers. Then $n$ is $k$-rough if $n \neq 0$
 and every prime $p$ dividing $n$ satisfies $k < p$; that is, $n$ is positive and has no prime
 factor at most $k$.
 

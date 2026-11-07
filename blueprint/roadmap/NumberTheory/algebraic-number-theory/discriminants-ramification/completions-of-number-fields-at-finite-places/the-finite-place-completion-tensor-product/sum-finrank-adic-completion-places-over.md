@@ -1,6 +1,6 @@
 # Local degrees sum to the global degree
 
-**Local degrees sum to the global degree.** Let $L/K$ be an extension of number fields, $v$ a
+Let $L/K$ be an extension of number fields, $v$ a
 finite place of $K$ and $K_v$ the completion of $K$ at $v$; for each finite place $w$ of $L$ lying
 over $v$, let $L_w$ be the completion of $L$ at $w$, a $K_v$-algebra via the canonical map
 $K_v \to L_w$. Then $\sum_{w \mid v} [L_w : K_v] = [L : K]$.

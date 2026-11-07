@@ -1,6 +1,6 @@
 # Impartial Tak penults with about $n^2/3$ tokens
 
-**Impartial Tak penults with about $n^2/3$ tokens.** Impartial Tak is the placement game on
+Impartial Tak is the placement game on
 the $n \times n$ board whose play ends once the tokens contain a road. For every $n \ge 6$ there
 is an Impartial Tak penult $S$ on the $n \times n$ board whose number of tokens $|S|$ satisfies
 $3|S| + 8 = n^2 + 4n$ if $n \equiv 1$ or $4 \pmod 6$, $3|S| + 12 = n^2 + 4n$ if

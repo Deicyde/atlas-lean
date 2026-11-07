@@ -1,6 +1,6 @@
 # Rosser–Iwaniec linear sieve
 
-**Rosser–Iwaniec linear sieve.** Let $\gamma$ be the Euler–Mascheroni constant, $C_0$ a real
+Let $\gamma$ be the Euler–Mascheroni constant, $C_0$ a real
 number, and $F, f \colon \mathbb{R} \to \mathbb{R}$ functions continuous on $(0, \infty)$ with
 $F(s) = 2e^{\gamma}/s$ for $0 < s \le 3$ and $f(s) = 0$ for $0 < s \le 2$, such that
 $u \mapsto uF(u)$ has derivative $f(s - 1)$ at every $s > 3$ and $u \mapsto uf(u)$ has derivative

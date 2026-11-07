@@ -1,6 +1,6 @@
 # Monochromatic sets of large logarithmic weight exist
 
-**Monochromatic sets of large logarithmic weight exist.** For every real $C > 0$ there is an
+For every real $C > 0$ there is an
 $N$ such that for every $n \ge N$ and every graph $G$ on the natural numbers there is a finite
 set $X \subseteq \{2, \dots, n\}$ that is a clique or an independent set of $G$ and satisfies
 $\sum_{x \in X} 1 / \log x \ge C$.

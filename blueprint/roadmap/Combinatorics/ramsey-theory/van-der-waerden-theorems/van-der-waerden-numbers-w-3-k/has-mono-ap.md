@@ -1,6 +1,6 @@
 # Monochromatic arithmetic progressions in an initial interval
 
-**Monochromatic arithmetic progressions in an initial interval.** Let $c$ be a red/blue
+Let $c$ be a red/blue
 colouring of the natural numbers, given as a map to the Booleans ($\mathrm{true}$ is red,
 $\mathrm{false}$ is blue), let $b$ be a colour and let $\ell$ and $N$ be natural numbers. Then $c$
 has an $\ell$-term arithmetic progression of colour $b$ inside $\{1, \dots, N\}$ if there are

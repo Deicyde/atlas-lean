@@ -1,6 +1,6 @@
 # Characters of a product of abelian groups
 
-**Characters of a product of abelian groups.** For all abelian groups $A$ and $B$, the group of
+For all abelian groups $A$ and $B$, the group of
 characters of $A \times B$ is isomorphic to the product of the character groups of $A$ and $B$.
 Here a character of $A$ is a map $\chi : A \to \mathbb{C}$ with $\chi(0) = 1$ and
 $\chi(a + a') = \chi(a)\chi(a')$ for all $a, a' \in A$, and the characters of $A$ form a group

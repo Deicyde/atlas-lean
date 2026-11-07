@@ -1,6 +1,6 @@
 # Approximation by irreducible separable polynomials over a dense field
 
-**Approximation by irreducible separable polynomials over a dense field.** Let $K$ be a field
+Let $K$ be a field
 and $L$ a complete nontrivially normed field whose norm is ultrametric, with a $K$-algebra
 structure such that the image of $K$ in $L$ is dense. Let $f \in L[X]$ be monic, irreducible and
 separable, and let $\varepsilon > 0$ be real. Then there is a monic $g \in K[X]$ with

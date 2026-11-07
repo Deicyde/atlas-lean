@@ -1,6 +1,6 @@
 # $(1^{2n-1}, 3n, 10n, 15n)$ is a reflexive stabilization
 
-**$(1^{2n-1}, 3n, 10n, 15n)$ is a reflexive stabilization.** For every $n \ge 1$, the weight
+For every $n \ge 1$, the weight
 vector $(1^{2n-1}, 3n, 10n, 15n)$, consisting of $2n - 1$ ones followed by $3n$, $10n$, $15n$, is
 the first reflexive stabilization of $(3n, 10n, 15n)$.
 

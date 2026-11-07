@@ -1,6 +1,6 @@
 # Braid word for the Conway knot
 
-**Braid word for the Conway knot.** The braid word
+The braid word
 $\sigma_1^{-2} \sigma_2 \sigma_1^{-1} \sigma_2 \sigma_1^{-1} \sigma_3 \sigma_2^{-2} \sigma_3^{2}$
 on $4$ strands, encoded as the list of integers $[-1, -1, 2, -1, 2, -1, 3, -2, -2, 3, 3]$, where
 an entry $i > 0$ stands for the generator $\sigma_i$ and $-i$ for $\sigma_i^{-1}$. It has

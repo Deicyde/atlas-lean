@@ -1,6 +1,6 @@
 # Subword shift sets are well based
 
-**Subword shift sets are well based.** Let $l$ be a natural number and $\omega$ a binary word
+Let $l$ be a natural number and $\omega$ a binary word
 of length $l$, read as a natural number $\omega < 2^l$. Then the set $Q$ of those
 $j \in \{1, \dots, l-1\}$ for which the leftmost $l - j$ bits of $\omega$ differ from its
 rightmost $l - j$ bits, that is $\lfloor \omega / 2^j \rfloor \ne \omega \bmod 2^{l-j}$, is well

@@ -1,6 +1,6 @@
 # Five non-decreasing Dyck paths of semilength 3
 
-**Five non-decreasing Dyck paths of semilength 3.** There are exactly $5$ non-decreasing
+There are exactly $5$ non-decreasing
 Dyck paths of semilength $3$.
 
 These are all five Dyck paths of semilength $3$.

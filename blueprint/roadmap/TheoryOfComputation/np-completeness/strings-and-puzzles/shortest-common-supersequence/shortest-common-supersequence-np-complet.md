@@ -1,6 +1,6 @@
 # SHORTEST COMMON SUPERSEQUENCE is NP-complete
 
-**SHORTEST COMMON SUPERSEQUENCE is NP-complete.** The SHORTEST COMMON SUPERSEQUENCE decision
+The SHORTEST COMMON SUPERSEQUENCE decision
 problem over binary strings belongs to NP, and every decision problem in NP reduces to it by a
 polynomial-time many-one reduction.
 

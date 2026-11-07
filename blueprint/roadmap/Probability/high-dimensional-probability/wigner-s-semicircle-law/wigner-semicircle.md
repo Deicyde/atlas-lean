@@ -1,6 +1,6 @@
 # Wigner's semicircle law
 
-**Wigner's semicircle law.** Let $(\Omega, \mu)$ be a probability space and let
+Let $(\Omega, \mu)$ be a probability space and let
 $X_{ij} : \Omega \to \mathbb{R}$, for $i, j \in \mathbb{N}$, be measurable functions. Suppose that
 the family $(X_{ij})_{i \le j}$ is mutually independent, that all $X_{ij}$ with $i \le j$ have the
 same distribution, and that for $i \le j$ both $X_{ij}$ and $X_{ij}^2$ are integrable with

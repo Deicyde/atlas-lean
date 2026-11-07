@@ -1,6 +1,6 @@
 # Relative position of the deleted Fibonacci word
 
-**Relative position of the deleted Fibonacci word.** Let $f = abaababaabaab\cdots$ be the
+Let $f = abaababaabaab\cdots$ be the
 Fibonacci word, the fixed point of $a \mapsto ab$, $b \mapsto a$. Let $D(f)$ be the word obtained
 from $f$ by deleting its first $b$ and then the first $a$ of the result, and for an infinite
 word $v$ over $\{a, b\}$ let $r_v(n) = p_b(n) - p_a(n)$, where $p_a(n)$ and $p_b(n)$ are the

@@ -1,6 +1,6 @@
 # Triangulable closed manifold
 
-**Triangulable closed manifold.** A closed topological $n$-manifold $M$ is triangulable if,
+A closed topological $n$-manifold $M$ is triangulable if,
 for some natural number $N$, there is a simplicial complex $K$ in $\mathbb{R}^N$ with finitely
 many faces such that $M$ is homeomorphic to the geometric realization of $K$, the union of its
 faces with the subspace topology from $\mathbb{R}^N$.

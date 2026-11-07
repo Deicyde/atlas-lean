@@ -1,6 +1,6 @@
 # Counting Boolean factor pairs with a small sumset
 
-**Counting Boolean factor pairs with a small sumset.** Let $n$ and $k$ be natural numbers with
+Let $n$ and $k$ be natural numbers with
 $0 < k \le n$, and let $d > 0$ be a real number. Then the number of pairs $(A, B)$ of finite sets
 of natural numbers such that $0 \in A$, the largest element of $A$ is $k$, the largest element of
 $B$ is $n - k$, and $|A + B| \le |A| + |B| + d$, where $A + B = \{a + b : a \in A, b \in B\}$ is

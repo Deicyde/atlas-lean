@@ -1,6 +1,6 @@
 # Weight of a Boolean function
 
-**Weight of a Boolean function.** The weight $\mathrm{wt}(f)$ of an $n$-variable Boolean
+The weight $\mathrm{wt}(f)$ of an $n$-variable Boolean
 function $f \colon \{0,1\}^n \to \{0,1\}$ is the number of inputs $x \in \{0,1\}^n$ with
 $f(x) = 1$.
 

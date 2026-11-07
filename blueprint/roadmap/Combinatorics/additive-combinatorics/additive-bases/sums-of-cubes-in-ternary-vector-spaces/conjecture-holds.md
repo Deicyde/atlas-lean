@@ -1,6 +1,6 @@
 # Any $100$ cubes sum to all of $\mathbb{F}_3^n$
 
-**Any $100$ cubes sum to all of $\mathbb{F}_3^n$.** For every $n \ge 1$ and every family
+For every $n \ge 1$ and every family
 $A_1, \dots, A_{100}$ of cubes in $\mathbb{F}_3^n$ (not necessarily distinct), that is, images
 of $\{0, 1\}^n$ under linear automorphisms of $\mathbb{F}_3^n$, the sumset
 $A_1 + \dots + A_{100}$ is all of $\mathbb{F}_3^n$.

@@ -1,6 +1,6 @@
 # Sums of squared Rankin–Selberg coefficients twisted by a primitive character
 
-**Sums of squared Rankin–Selberg coefficients twisted by a primitive character.** Let $f$ be
+Let $f$ be
 a level-one cusp form of weight $k$ that is a normalized Hecke eigenform, let
 $\lambda_{f\times f}$ be its Rankin–Selberg coefficients, and put $\eta = 23/261$. For every
 $\varepsilon > 0$ there is a constant $C$ such that for every prime $q$, every primitive Dirichlet

@@ -1,6 +1,6 @@
 # Groups with element orders $1$ to $7$ are isomorphic to $A_7$
 
-**Groups with element orders $1$ to $7$ are isomorphic to $A_7$.** Every group, finite or
+Every group, finite or
 infinite, whose set of element orders is exactly $\{1, 2, \dots, 7\}$ is isomorphic to the
 alternating group $A_7$. This answers Kourovka Problem 19.80 positively (Mamontov and Jabara).
 

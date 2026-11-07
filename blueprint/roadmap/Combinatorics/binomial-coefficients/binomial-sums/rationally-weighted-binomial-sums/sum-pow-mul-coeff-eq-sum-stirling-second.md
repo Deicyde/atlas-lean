@@ -1,6 +1,6 @@
 # Scherk's identity
 
-**Scherk's identity.** Write $S(r, i)$ for the Stirling numbers of the second kind. Let $N$ and
+Write $S(r, i)$ for the Stirling numbers of the second kind. Let $N$ and
 $r$ be natural numbers, let $a_0, \dots, a_N$ be real numbers, and let $f$ be the polynomial
 $f(y) = \sum_{k=0}^{N} a_k y^k$, with $i$-th derivative $f^{(i)}$. Then for every real number $x$,
 with the convention $0^0 = 1$,

@@ -1,6 +1,6 @@
 # Generating function of binomial Motzkin paths
 
-**Generating function of binomial Motzkin paths.** Let $t \ge 1$. A binomial $[t]$-Motzkin step
+Let $t \ge 1$. A binomial $[t]$-Motzkin step
 is one of $\binom{t}{k}$ differently colored steps that change the height by $1 - k$, for some
 $k \in \{0, 1, \dots, t\}$. For $n \ge 0$ let $M_n$ be the number of sequences of $n$ such steps
 for which, starting from height $0$, the height after the first $m$ steps is nonnegative for

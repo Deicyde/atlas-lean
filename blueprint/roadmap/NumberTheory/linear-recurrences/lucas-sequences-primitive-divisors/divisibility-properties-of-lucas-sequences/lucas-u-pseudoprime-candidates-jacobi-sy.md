@@ -1,6 +1,6 @@
 # Pseudoprime candidates from a Lucas sequence
 
-**Pseudoprime candidates from a Lucas sequence.** Let $U = U(P, Q)$ be the Lucas sequence with
+Let $U = U(P, Q)$ be the Lucas sequence with
 integer parameters $P \ne 0$ and $Q \ne 0$ such that $\gcd(P, Q) = 1$ and $D = P^2 - 4Q > 0$.
 Let $m > 1$ be an odd integer with $\gcd(m, PQD) = 1$, and assume $3 \nmid m$ when $P$ and $Q$
 are both odd. Put $N_1 = U_m$ and $N_2 = U_{2m}/P$. Then $N_1$ and $N_2$ are positive and odd,

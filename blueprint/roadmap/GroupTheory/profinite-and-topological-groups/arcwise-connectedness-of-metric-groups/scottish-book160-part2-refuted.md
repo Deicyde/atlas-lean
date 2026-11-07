@@ -1,6 +1,6 @@
 # Connected metric groups need not be arcwise connected
 
-**Connected metric groups need not be arcwise connected.** The claim of part (2) of Scottish
+The claim of part (2) of Scottish
 Book Problem 160 is false: there is a metric group $G$ (a group with a metric for which
 multiplication and inversion are continuous) that is connected in the sense of Hausdorff but
 not arcwise connected, that is, there are points $x, y \in G$ such that no continuous map

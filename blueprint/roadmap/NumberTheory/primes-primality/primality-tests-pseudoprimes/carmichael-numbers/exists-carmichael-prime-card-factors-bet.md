@@ -1,6 +1,6 @@
 # Carmichael numbers with a prime number of prime factors in a range
 
-**Carmichael numbers with a prime number of prime factors in a range.** Assume Heath-Brown's
+Assume Heath-Brown's
 conjecture in the following form: there is a real constant $C$ such that for every natural
 number $d \ge 2$ and every natural number $c$ coprime to $d$ there is a prime $p \equiv c
 \pmod{d}$ with $p \le C d (\log d)^2$. Let $1 < \theta < 2$, and let $\gamma > 0$ be such that

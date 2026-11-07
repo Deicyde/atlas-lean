@@ -1,6 +1,6 @@
 # Floor quotient of a negated non-multiple
 
-**Floor quotient of a negated non-multiple.** Let $A$ and $B$ be integers with $A \ge 1$ and
+Let $A$ and $B$ be integers with $A \ge 1$ and
 $B \ge 2$ such that $B$ does not divide $A$. Then
 $-\lfloor -A/B \rfloor = \lfloor A/B \rfloor + 1$.
 

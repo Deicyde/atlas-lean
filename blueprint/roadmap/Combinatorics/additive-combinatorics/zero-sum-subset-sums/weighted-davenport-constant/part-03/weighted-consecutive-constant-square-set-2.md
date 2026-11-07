@@ -1,6 +1,6 @@
 # Consecutive square-weighted constant of an odd square is at most nine
 
-**Consecutive square-weighted constant of an odd square is at most nine.** For every odd
+For every odd
 natural number $n \ge 2$ that is a perfect square, the consecutive $S(n)$-weighted zero-sum
 constant satisfies $C_{S(n)} \le 9$, where $S(n)$ is the set of nonzero squares of
 $\mathbb{Z}/n\mathbb{Z}$.

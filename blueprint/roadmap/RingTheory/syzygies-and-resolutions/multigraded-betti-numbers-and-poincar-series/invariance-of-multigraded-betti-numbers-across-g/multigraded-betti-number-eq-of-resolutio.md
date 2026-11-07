@@ -1,6 +1,6 @@
 # Betti numbers agree across comparable resolutions
 
-**Betti numbers agree across comparable resolutions.** Let $K$ be a field, let
+Let $K$ be a field, let
 $R = K[x_1, \dots, x_n]$, and let $M$ be a $\mathbb{Z}^n$-graded $R$-module with two
 multigraded free resolutions, each equipped with multigraded base change data, whose
 degree-$\alpha$ component complexes are $C^\alpha$ and $D^\alpha$ for $\alpha \in \mathbb{Z}^n$.

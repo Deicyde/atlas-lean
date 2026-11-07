@@ -1,6 +1,6 @@
 # The word of a type $B$ set partition is a flattened Stirling permutation
 
-**The word of a type $B$ set partition is a flattened Stirling permutation.** For every
+For every
 natural number $n$ and every type $B$ set partition $P$ of $[-n, n] = \{-n, \dots, n\}$, the word
 $\varphi(P) = w_1 w_2 \cdots w_{2(n+1)}$ of $P$ is a Stirling permutation of order $n + 1$ and is
 flattened.

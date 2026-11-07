@@ -1,6 +1,6 @@
 # Feasible Sudoku instances
 
-**Feasible Sudoku instances.** A Sudoku instance $(n, G)$, with block size $n$ and grid $G$ a
+A Sudoku instance $(n, G)$, with block size $n$ and grid $G$ a
 list of rows of natural numbers, is feasible when there is a grid $C$ of natural numbers with
 exactly $n^2$ rows, each of exactly $n^2$ entries, such that, indexing rows and columns from $0$:
 for all $r, c < n^2$ the entry $G_{rc}$ is $0$ or equals $C_{rc}$, where an entry missing from

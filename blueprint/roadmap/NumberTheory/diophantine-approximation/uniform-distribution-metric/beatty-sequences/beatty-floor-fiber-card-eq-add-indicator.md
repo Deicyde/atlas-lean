@@ -1,6 +1,6 @@
 # Multiplicities of $\lfloor n\alpha\rfloor$ are $k$ plus the indicator of a Beatty set
 
-**Multiplicities of $\lfloor n\alpha\rfloor$ are $k$ plus the indicator of a Beatty set.** Let
+Let
 $k$ be a positive integer and let $\alpha$ be an irrational number with
 $1/(k + 1) < \alpha < 1/k$. Then there is a real number $\delta > 0$ such that, writing $D$ for
 the set of the numbers $\lfloor m\delta\rfloor$ for positive integers $m$, every non-negative

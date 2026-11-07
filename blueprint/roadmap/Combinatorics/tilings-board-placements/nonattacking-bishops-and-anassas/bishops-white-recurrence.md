@@ -1,6 +1,6 @@
 # Recurrence for bishops on white squares
 
-**Recurrence for bishops on white squares.** Write $R_W(m, k)$ for the number of placements of
+Write $R_W(m, k)$ for the number of placements of
 $k$ nonattacking bishops on the white squares (those $(i, j)$ with $i + j$ even) of the
 $m \times m$ board $[1, m]^2$, and $\pi(n) \in \lbrace 0, 1 \rbrace$ for the remainder of $n$
 modulo $2$. For all natural numbers $m$ and $k$,

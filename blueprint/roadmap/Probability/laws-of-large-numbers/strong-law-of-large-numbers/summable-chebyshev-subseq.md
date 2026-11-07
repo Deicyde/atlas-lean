@@ -1,6 +1,6 @@
 # Summable deviation probabilities along the quadratic subsequence
 
-**Summable deviation probabilities along the quadratic subsequence.** Let $\mu$ be a
+Let $\mu$ be a
 probability measure on $\Omega$, let $A_0, A_1, \dots$ be pairwise independent measurable
 subsets of $\Omega$, write $S_n = \sum_{i < n} 1_{A_i}$, and suppose that
 $\mathbb{E}[S_n] = \int S_n \, d\mu \to \infty$ as $n \to \infty$. Let $\varphi(k)$ be the least

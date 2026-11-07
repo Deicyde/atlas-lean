@@ -1,6 +1,6 @@
 # Parity of $R_3(n)$
 
-**Parity of $R_3(n)$.** Let $R_3(n)$ be the number of partitions of $n$ with max-rook number
+Let $R_3(n)$ be the number of partitions of $n$ with max-rook number
 $3$. For every natural number $n > 9$, $R_3(n)$ is even if $n$ is odd and odd if $n$ is even.
 
 ## Sources

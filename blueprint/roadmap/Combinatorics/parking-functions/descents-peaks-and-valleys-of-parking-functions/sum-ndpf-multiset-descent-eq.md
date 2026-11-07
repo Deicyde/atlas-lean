@@ -1,6 +1,6 @@
 # Counting parking functions with a given descent set by their content
 
-**Counting parking functions with a given descent set by their content.** The descent set
+The descent set
 of a word $w = (w_1, \dots, w_n)$ is $\{i : 1 \le i \le n - 1,\ w_i > w_{i+1}\}$. Let
 $n \in \mathbb{N}$ and $I \subseteq \{1, \dots, n - 1\}$. Then the number of parking functions of
 length $n$ with descent set $I$ equals the sum, over the nondecreasing parking functions $\beta$

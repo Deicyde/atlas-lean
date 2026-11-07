@@ -1,6 +1,6 @@
 # Finite-set projections of the unconditional ℓᵖ basis
 
-**Finite-set projections of the unconditional ℓᵖ basis.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+Let $\mathbb{K}$ be $\mathbb{R}$ or
 $\mathbb{C}$, let $1 \le p < \infty$ and let $\iota$ be a type. For every finite set
 $A \subseteq \iota$ and every $x \in \ell^p(\iota, \mathbb{K})$, the projection $P_A$ of the
 unconditional Schauder basis of $\ell^p(\iota, \mathbb{K})$ by unit vectors onto the basis vectors

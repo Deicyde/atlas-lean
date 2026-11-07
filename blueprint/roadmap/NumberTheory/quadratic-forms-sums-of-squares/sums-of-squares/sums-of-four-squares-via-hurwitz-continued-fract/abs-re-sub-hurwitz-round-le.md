@@ -1,6 +1,6 @@
 # Rounding error of the nearest Gaussian integer
 
-**Rounding error of the nearest Gaussian integer.** For every complex number $z$, let $[z]$ be
+For every complex number $z$, let $[z]$ be
 the Gaussian integer nearest to $z$, obtained by rounding the real and imaginary parts to the
 nearest integer with halves rounded up. Then $|\operatorname{Re}(z - [z])| \le 1/2$ and
 $|\operatorname{Im}(z - [z])| \le 1/2$.

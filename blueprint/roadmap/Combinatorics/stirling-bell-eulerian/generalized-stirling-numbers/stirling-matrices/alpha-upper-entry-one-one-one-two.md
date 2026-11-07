@@ -1,6 +1,6 @@
 # Small α-upper entries
 
-**Small α-upper entries.** Let $R$ be a commutative ring, let $\alpha$ be a sequence in $R$,
+Let $R$ be a commutative ring, let $\alpha$ be a sequence in $R$,
 and let $u_{i,j}$ ($i, j \ge 0$) be the α-upper entries of $\alpha$. Then $u_{1,1} = \alpha_2$ and
 $u_{1,2} = \alpha_2 + \alpha_3$.
 

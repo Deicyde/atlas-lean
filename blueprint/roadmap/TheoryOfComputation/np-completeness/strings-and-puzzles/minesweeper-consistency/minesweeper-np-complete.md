@@ -1,6 +1,6 @@
 # MINESWEEPER CONSISTENCY is NP-complete
 
-**MINESWEEPER CONSISTENCY is NP-complete.** The Minesweeper consistency decision problem lies
+The Minesweeper consistency decision problem lies
 in NP, and every decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

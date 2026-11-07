@@ -1,6 +1,6 @@
 # Dixon's summation theorem
 
-**Dixon's summation theorem.** For an integer $m$ write $m!$ for the extended factorial
+For an integer $m$ write $m!$ for the extended factorial
 and $\frac{1}{m!}$ for the inverse factorial; both are $0$ when $m < 0$. For all integers
 $a_1, a_2, a_3$, the Dixon sum $\Upsilon_3(a_1, a_2, a_3)$ equals
 

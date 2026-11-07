@@ -1,6 +1,6 @@
 # Parity of sums of two polygonal numbers
 
-**Parity of sums of two polygonal numbers.** For a natural number $s > 3$ and a natural
+For a natural number $s > 3$ and a natural
 number $x$, let $P_s(x) = (s-2)\binom{x}{2} + x$ be the $x$-th $s$-gonal number. For every
 natural number $n > 0$ there are natural numbers $x, y > 0$ such that
 $P_s(x_1) + P_s(y_1) \equiv n \pmod{2}$ for all natural numbers $x_1, y_1 > 0$ with

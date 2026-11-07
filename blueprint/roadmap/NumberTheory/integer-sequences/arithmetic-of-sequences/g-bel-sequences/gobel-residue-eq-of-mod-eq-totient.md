@@ -1,6 +1,6 @@
 # Periodicity of the Göbel residue sequence in the exponent
 
-**Periodicity of the Göbel residue sequence in the exponent.** Let $p$ be a prime, $r \ge 1$,
+Let $p$ be a prime, $r \ge 1$,
 and $k$, $l$ integers with $r + 1 \le k \le l$ and $k \equiv l \pmod{\varphi(p^r)}$, where
 $\varphi$ is Euler's totient function. Write $\nu_p$ for the $p$-adic valuation. Then every
 integer $n \ge 1$ with $\nu_p(n!) \le r$ satisfies $g_{k,p,r}(n) = g_{l,p,r}(n)$, where both

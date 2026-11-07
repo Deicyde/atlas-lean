@@ -1,6 +1,6 @@
 # Genus bounds for reduced unicellular hypermonopoles
 
-**Genus bounds for reduced unicellular hypermonopoles.** Let $\sigma$ and $\alpha$ be
+Let $\sigma$ and $\alpha$ be
 permutations of $\{0, 1, \dots, n - 1\}$, and write $z(\pi)$ for the number of cycles of a
 permutation $\pi$, fixed points included. Suppose that $z(\sigma) = 1$, that
 $z(\alpha^{-1} \circ \sigma) = 1$, that $\alpha$ has no fixed point, and that the natural

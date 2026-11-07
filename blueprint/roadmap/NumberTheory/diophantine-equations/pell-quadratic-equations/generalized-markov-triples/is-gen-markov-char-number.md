@@ -1,6 +1,6 @@
 # Characteristic number
 
-**Characteristic number.** For natural numbers $m_r$, $m_t$, $m_s$, a natural number $x$ is
+For natural numbers $m_r$, $m_t$, $m_s$, a natural number $x$ is
 a characteristic number of $(m_r, m_t, m_s)$ when $0 < x < m_t/2$ and
 $m_r x \equiv \pm m_s \pmod{m_t}$, that is, $m_t$ divides $m_r x - m_s$ or $m_r x + m_s$ in
 $\mathbb{Z}$.

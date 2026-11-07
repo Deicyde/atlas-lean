@@ -1,6 +1,6 @@
 # The position $\{2, 3\}$ is a P-position
 
-**The position $\{2, 3\}$ is a P-position.** In Sylver Coinage, the position
+In Sylver Coinage, the position
 $\{2, 3\}$ is a P-position: its only legal move is $1$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Briggs–Remmel factorization on singleton boards
 
-**Briggs–Remmel factorization on singleton boards.** Let $m \ge 1$ and let
+Let $m \ge 1$ and let
 $B = (b_1, \dots, b_n)$ be a singleton board for $m$. Then for every integer $x$,
 
 $$

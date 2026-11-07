@@ -1,6 +1,6 @@
 # Curling number of the empty string
 
-**Curling number of the empty string.** The empty string $\varepsilon$ has curling number
+The empty string $\varepsilon$ has curling number
 $\mathcal{C}(\varepsilon) = 1$.
 
 ## Sources

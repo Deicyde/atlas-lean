@@ -1,6 +1,6 @@
 # Nielsen's bound on the number of prime divisors of an odd perfect number
 
-**Nielsen's bound on the number of prime divisors of an odd perfect number.** Every odd perfect
+Every odd perfect
 number $N$ has at least ten distinct prime divisors, and at least twelve if $3$ does not divide $N$.
 
 ## Sources

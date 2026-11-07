@@ -1,6 +1,6 @@
 # Lehmer-sequence primality criterion for Mersenne numbers
 
-**Lehmer-sequence primality criterion for Mersenne numbers.** Let $n \ge 3$ be odd, let
+Let $n \ge 3$ be odd, let
 $M_n = 2^n - 1$, and let $R$ and $Q$ be integers with $\gcd(M_n, Q) = 1$. If $M_n$ divides
 Lehmer's companion term $\bar V_{2^{n-1}}(R, Q)$, then $M_n$ is prime.
 

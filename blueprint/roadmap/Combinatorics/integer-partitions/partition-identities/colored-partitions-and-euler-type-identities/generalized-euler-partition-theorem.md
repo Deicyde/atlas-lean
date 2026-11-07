@@ -1,6 +1,6 @@
 # Generalized Euler partition theorem
 
-**Generalized Euler partition theorem.** Let $S$ be a set of compositions (finite sequences
+Let $S$ be a set of compositions (finite sequences
 of positive integers) such that doubling every summand of a member of $S$ gives a member of $S$,
 and halving every summand of a member of $S$ whose summands are all even gives a member of $S$.
 Let $n \ge 0$. The number of partitions of $n$ into colored parts in which each part $k$ is

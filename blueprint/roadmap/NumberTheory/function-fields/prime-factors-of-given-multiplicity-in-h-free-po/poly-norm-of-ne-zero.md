@@ -1,6 +1,6 @@
 # A nonzero polynomial has norm $q^{\deg f}$
 
-**A nonzero polynomial has norm $q^{\deg f}$.** Let $F$ be a finite field with $q$
+Let $F$ be a finite field with $q$
 elements. Every nonzero polynomial $f \in F[X]$ has norm $|f| = q^{\deg f}$.
 
 ## Sources

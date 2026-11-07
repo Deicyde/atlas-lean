@@ -1,6 +1,6 @@
 # A series in even powers of $\tan x$ with odd harmonic numbers
 
-**A series in even powers of $\tan x$ with odd harmonic numbers.** Let $x$ be a real number
+Let $x$ be a real number
 with $|x| \le \pi/4$. Let $h_k = \sum_{j=0}^{k-1} \frac{1}{2j+1}$, let
 $N(x) = \frac{x^2}{2} \log|\tan x|$ for $x \ne 0$ and $N(0) = 0$, and let
 $\lambda(3) = \sum_{j=0}^{\infty} (2j+1)^{-3}$. Then the series $\sum_{j=0}^{\infty} (2j+1)^{-3}$,

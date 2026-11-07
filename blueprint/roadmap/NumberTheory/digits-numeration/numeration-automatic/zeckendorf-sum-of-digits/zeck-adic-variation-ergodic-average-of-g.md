@@ -1,6 +1,6 @@
 # Ergodic averages of the variation for functions of polynomial growth
 
-**Ergodic averages of the variation for functions of polynomial growth.** Let $\mathbb{X}$ be
+Let $\mathbb{X}$ be
 the set of Zeckendorf-adic integers, $T$ the Zeckendorf odometer, and $\mathbb{P}$ a
 $T$-invariant probability measure on binary sequences with $\mathbb{P}(\mathbb{X}^c) = 0$. Let
 $s(n)$ be the number of terms in the Zeckendorf representation of $n \in \mathbb{N}$, let

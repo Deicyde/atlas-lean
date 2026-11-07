@@ -1,6 +1,6 @@
 # Touch bits from the pair walk of a vertex
 
-**Touch bits from the pair walk of a vertex.** Let $n$ and $v$ be natural numbers, let $m$ be
+Let $n$ and $v$ be natural numbers, let $m$ be
 the number of vertex pairs in encoding order for $n$, and let $b$ be a list of $m$ pair bits. Let
 $L$ be the list of vertex marks for $v$ among $n$, let $(x_0, y_0), \dots, (x_{k-1}, y_{k-1})$ be
 the pair walk $W(L, [\,])$, and let $c_0, \dots, c_{m-1}$ be the list $b$ reversed. Then the list

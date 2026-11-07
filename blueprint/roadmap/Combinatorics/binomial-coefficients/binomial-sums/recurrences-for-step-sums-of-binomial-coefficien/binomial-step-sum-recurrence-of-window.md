@@ -1,6 +1,6 @@
 # Window criterion for step sums of binomial coefficients
 
-**Window criterion for step sums of binomial coefficients.** Let $\alpha, k, \gamma, p, s$
+Let $\alpha, k, \gamma, p, s$
 be natural numbers with $\alpha > 1$, $k > 1$, $\gamma \ge 1$ and $p < k$, and let
 $\delta_1, \delta_2, \ldots$ be integers. For $n \in \mathbb{N}$ let $c(n)$ be the sum of
 $\binom{\alpha n}{m}$ over all $m$ with $0 \le m \le \alpha n$ and

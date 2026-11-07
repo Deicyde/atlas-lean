@@ -1,6 +1,6 @@
 # Strong operator convergence characterized by weak operator convergence
 
-**Strong operator convergence characterized by weak operator convergence.** Let $H$ be a real
+Let $H$ be a real
 or complex Hilbert space with inner product $\langle \cdot, \cdot \rangle$, let
 $(T_n)_{n \in \mathbb{N}}$ be a sequence of bounded linear operators on $H$, let $T$ be a bounded
 linear operator on $H$, and write $S^*$ for the adjoint of an operator $S$. Then $T_n \to T$ in

@@ -1,6 +1,6 @@
 # For odd $n$, every permutation fixes a self-dual monotone function
 
-**For odd $n$, every permutation fixes a self-dual monotone function.** Let $n$ be odd and
+Let $n$ be odd and
 let $\pi$ be a permutation of the $n$ coordinates. Then there is a self-dual monotone Boolean
 function $f$ on $n$ variables with $f(x \circ \pi) = f(x)$ for every input $x$.
 

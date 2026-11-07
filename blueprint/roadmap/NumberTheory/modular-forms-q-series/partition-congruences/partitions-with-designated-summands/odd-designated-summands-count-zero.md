@@ -1,6 +1,6 @@
 # Odd designated-summand partitions of zero
 
-**Odd designated-summand partitions of zero.** The odd designated-summand partition function
+The odd designated-summand partition function
 satisfies $\mathrm{PD}_2(0) = 1$.
 
 ## Sources

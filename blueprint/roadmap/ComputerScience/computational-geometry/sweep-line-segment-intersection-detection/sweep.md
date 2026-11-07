@@ -1,6 +1,6 @@
 # The any-segments-intersect sweep
 
-**The any-segments-intersect sweep.** CLRS `ANY-SEGMENTS-INTERSECT`, lines 3-11: the sweep
+CLRS `ANY-SEGMENTS-INTERSECT`, lines 3-11: the sweep
 processes a list of events with a status list $T$ of segments ordered from bottom to top, returns
 true as soon as an intersection test succeeds, and returns false once the events run out. At the
 left endpoint $p$ of segment $i$, split $T$ as $A$ followed by $B$, where $A$ is the longest

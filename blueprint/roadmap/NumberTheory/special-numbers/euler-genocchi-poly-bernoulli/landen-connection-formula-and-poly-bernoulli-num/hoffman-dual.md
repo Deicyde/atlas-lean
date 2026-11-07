@@ -1,6 +1,6 @@
 # Hoffman dual index
 
-**Hoffman dual index.** For an index $k = (k_1, \dots, k_r)$ of positive integers write
+For an index $k = (k_1, \dots, k_r)$ of positive integers write
 $k\uparrow = (k_1, \dots, k_r + 1)$ and $k\rightarrow = (k_1, \dots, k_r, 1)$. The Hoffman dual
 index $k^\vee$ is defined recursively by $(1)^\vee = (1)$, $(k\uparrow)^\vee = (k^\vee)\rightarrow$
 and $(k\rightarrow)^\vee = (k^\vee)\uparrow$. On other finite lists of natural numbers, the empty

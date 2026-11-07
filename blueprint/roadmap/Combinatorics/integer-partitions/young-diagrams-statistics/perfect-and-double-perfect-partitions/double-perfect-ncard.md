@@ -1,6 +1,6 @@
 # Lee's count of double-perfect partitions
 
-**Lee's count of double-perfect partitions.** Let $f(m)$ be the number of ordered
+Let $f(m)$ be the number of ordered
 factorizations of $m$ into factors greater than $1$, with $f(0) = 0$ and $f(1) = 1$. For every
 $n \ge 4$, the number $d(n)$ of double-perfect partitions of $n$ of order $1$ is $f(n-1)$ unless
 $n \equiv 1 \pmod 4$, in which case $d(n) = f(n-1) - f((n-1)/4)$.

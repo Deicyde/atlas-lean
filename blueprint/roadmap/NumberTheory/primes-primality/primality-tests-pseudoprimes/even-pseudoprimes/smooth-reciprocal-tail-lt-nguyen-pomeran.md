@@ -1,6 +1,6 @@
 # Nguyen–Pomerance bound for reciprocal sums of smooth numbers
 
-**Nguyen–Pomerance bound for reciprocal sums of smooth numbers.** Let $x, y$ be real numbers
+Let $x, y$ be real numbers
 with $2 \le y < x$. Call a positive integer $y$-smooth if all its prime factors are at most $y$,
 let $S(x, y)$ be the sum of $1/n$ over the $y$-smooth integers $n > x$, and let
 $\zeta(\sigma, y)$ be the sum of $n^{-\sigma}$ over all $y$-smooth integers $n$. Put

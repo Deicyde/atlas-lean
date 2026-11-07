@@ -1,6 +1,6 @@
 # A non-modular complete lattice of formations exists (Kourovka 18.92(b))
 
-**A non-modular complete lattice of formations exists (Kourovka 18.92(b)).** There is a complete
+There is a complete
 lattice of formations of finite groups that is not modular: a nonempty set $\Theta$ of formations
 of finite groups, ordered by inclusion, that contains the intersection of each of its nonempty
 subsets and has a largest element, in which the modular law $A \vee (B \wedge C) = (A \vee B)

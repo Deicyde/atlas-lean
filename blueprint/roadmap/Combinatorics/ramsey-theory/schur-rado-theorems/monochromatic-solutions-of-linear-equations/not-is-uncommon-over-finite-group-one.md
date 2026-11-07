@@ -1,6 +1,6 @@
 # No equation is 1-uncommon over a finite abelian group
 
-**No equation is 1-uncommon over a finite abelian group.** For every finite abelian group
+For every finite abelian group
 $G$, every $k \ge 0$ and all integers $a_1, \dots, a_k$, the equation
 $a_1 x_1 + \dots + a_k x_k = 0$ is not $1$-uncommon over $G$.
 

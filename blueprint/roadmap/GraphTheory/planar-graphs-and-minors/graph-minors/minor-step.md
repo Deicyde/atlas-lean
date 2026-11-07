@@ -1,6 +1,6 @@
 # One-step graph minor
 
-**One-step graph minor.** For finite graphs $H$ and $G$, $H$ arises from $G$ by one minor step
+For finite graphs $H$ and $G$, $H$ arises from $G$ by one minor step
 when one of the following holds. Isomorphism: $H$ is isomorphic to $G$. Vertex deletion: for some
 vertex $a$ of $G$ there is an injective map $f$ from the vertices of $H$ to the vertices of $G$
 whose image consists of all vertices other than $a$, such that vertices $u, v$ of $H$ are adjacent

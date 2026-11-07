@@ -1,6 +1,6 @@
 # Partitions into d-distinct parts by largest part and length
 
-**Partitions into d-distinct parts by largest part and length.** For natural numbers $d$, $a$,
+For natural numbers $d$, $a$,
 $m$ and $k$, $h_d^{(a)}(m, k)$ is the number of nonempty finite multisets of positive integers with
 largest element $m$, exactly $k$ elements counted with multiplicity, all elements at least $a$,
 and $d$-distinct parts. Such a partition has perimeter $m + k - 1$.

@@ -1,6 +1,6 @@
 # Jacobian matrix
 
-**Jacobian matrix.** For $f : \mathbb{R}^m \to \mathbb{R}^n$ and $x \in \mathbb{R}^m$, the
+For $f : \mathbb{R}^m \to \mathbb{R}^n$ and $x \in \mathbb{R}^m$, the
 Jacobian matrix of $f$ at $x$ is the $n \times m$ real matrix whose $(i, j)$ entry is the partial
 derivative of the $i$-th component $f_i$ of $f$ in the $j$-th coordinate direction at $x$: the
 derivative at $t = 0$ of $t \mapsto f_i(x + t e_j)$, where $e_j$ is the $j$-th standard basis

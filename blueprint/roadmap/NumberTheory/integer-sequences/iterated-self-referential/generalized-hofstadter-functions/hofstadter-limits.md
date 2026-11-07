@@ -1,6 +1,6 @@
 # Limits of Hofstadter iterates and letter frequencies
 
-**Limits of Hofstadter iterates and letter frequencies.** Let $k \ge 1$ and $j \ge 0$, let
+Let $k \ge 1$ and $j \ge 0$, let
 $\alpha > 0$ satisfy $\alpha^k + \alpha - 1 = 0$ and let $\beta > 0$ satisfy
 $\beta^k - \beta^{k-1} - 1 = 0$. Write $f^j$ for the $j$-fold iterate of a function $f$ and let
 $F_k$ be the generalized Hofstadter function. Let $\tau_k$ be the substitution on letters with

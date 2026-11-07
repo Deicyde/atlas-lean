@@ -1,6 +1,5 @@
 # Odd harmonic central binomial sums with weight $\binom{n}{m}$ at half-integer shifts
 
-**Odd harmonic central binomial sums with weight $\binom{n}{m}$ at half-integer shifts.**
 Let $k, m \ge 0$ and $p > m$ be integers, let $a = d + 1/2$ with $d$ an integer, and let $O_n(k)$
 denote the depth-$k$ odd harmonic number. Then the series of real numbers
 

@@ -1,6 +1,6 @@
 # Correctness and running time of the clocked universal machine
 
-**Correctness and running time of the clocked universal machine.** Let $c$ be a code, $x$ a
+Let $c$ be a code, $x$ a
 list of bits and $T$ a natural number. Start the clocked universal stack program at the label
 $\mathrm{pc0}$ with internal bit $\mathrm{false}$, with every stack empty except $X$, which holds
 the input encoding of $(c, x, T)$: the cell of $T$, the cells of the input symbols of $x$ (the

@@ -1,6 +1,6 @@
 # Mansour–Safadi Theorem 3, class C16 (signed patterns 0̄1̄, 0̄0, 01̄, 01)
 
-**Mansour–Safadi Theorem 3, class C16 (signed patterns 0̄1̄, 0̄0, 01̄, 01).** A signed inversion
+A signed inversion
 sequence of length $n$ is a word $e_1 \cdots e_n$ with $e_k \in \{0, \bar 0, 1, \bar 1, \dots,
 k - 1, \overline{k - 1}\}$. It avoids a length-2 signed pattern $\tau_1\tau_2$ (one of $00$, $01$,
 $10$, each letter possibly barred) when no $i < j$ have $|e_i|$, $|e_j|$ in the same order as

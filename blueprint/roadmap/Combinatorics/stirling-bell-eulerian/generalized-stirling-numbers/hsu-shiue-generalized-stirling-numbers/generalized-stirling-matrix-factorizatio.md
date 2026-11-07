@@ -1,6 +1,6 @@
 # Factorization of the generalized Stirling matrix
 
-**Factorization of the generalized Stirling matrix.** Let $S$ assign to real numbers $a, b, c$
+Let $S$ assign to real numbers $a, b, c$
 and natural numbers $n, k$ a real number $S(a, b, c; n, k)$, such that for all real $a, b, c, x$
 and every natural number $n$
 

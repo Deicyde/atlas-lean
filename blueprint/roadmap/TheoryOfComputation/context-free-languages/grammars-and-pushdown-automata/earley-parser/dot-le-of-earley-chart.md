@@ -1,6 +1,6 @@
 # Earley item dot stays within its production
 
-**Earley item dot stays within its production.** The dot of a chart item never passes the end of its production.
+The dot of a chart item never passes the end of its production.
 
 ## Sources
 

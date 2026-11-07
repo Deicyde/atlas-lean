@@ -1,3 +1,3 @@
 # Sample second-moment matrix
 
-**Sample second-moment matrix.** The sample second-moment matrix `m⁻¹ ∑ₛ xₛ xₛᵀ` of `m` observations in `ℝ^ι`.
+The sample second-moment matrix `m⁻¹ ∑ₛ xₛ xₛᵀ` of `m` observations in `ℝ^ι`.

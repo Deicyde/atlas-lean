@@ -1,6 +1,6 @@
 # Howard's formula for the series $\sum_{k \ge 0} 2x^k/(k+2)!$
 
-**Howard's formula for the series $\sum_{k \ge 0} 2x^k/(k+2)!$.** Let $n$ be a natural
+Let $n$ be a natural
 number, let
 
 $$h(x) = \sum_{k \ge 0} \frac{2}{(k+2)!}\, x^k \in \mathbb{Q}[[x]],$$

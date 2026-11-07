@@ -1,6 +1,6 @@
 # Two telescoping relations between Lucas and Fibonacci numbers
 
-**Two telescoping relations between Lucas and Fibonacci numbers.** Let $F_m$ be the Fibonacci
+Let $F_m$ be the Fibonacci
 numbers extended to all integers $m$ ($F_0 = 0$, $F_1 = 1$, $F_{m+2} = F_{m+1} + F_m$) and
 $L_m = F_{m-1} + F_{m+1}$ the Lucas numbers. Then for every integer $k$,
 

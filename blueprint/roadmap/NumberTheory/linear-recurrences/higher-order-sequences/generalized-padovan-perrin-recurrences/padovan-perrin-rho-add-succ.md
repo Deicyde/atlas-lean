@@ -1,6 +1,6 @@
 # Recurrence for the generalized Padovan–Perrin coefficients ρ
 
-**Recurrence for the generalized Padovan–Perrin coefficients ρ.** Let $R$ be a commutative
+Let $R$ be a commutative
 semiring, $k_1, k_2 \in R$, and $p, s \in \mathbb{N}$ with $s > 0$, and write $\rho(m, s+p)$ for
 the Padovan–Perrin coefficient. For every $n \ge 0$,
 

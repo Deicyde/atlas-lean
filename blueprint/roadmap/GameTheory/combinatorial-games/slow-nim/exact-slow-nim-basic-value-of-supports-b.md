@@ -1,6 +1,6 @@
 # Positions supported by a (B) basic vector (Lemma 1)
 
-**Positions supported by a (B) basic vector (Lemma 1).** Let $k \ge 1$, let $B$ be the
+Let $k \ge 1$, let $B$ be the
 basic-vector value on $\mathbb{N}^{k+1}$, and let $x, z \in \mathbb{N}^{k+1}$ with $z \le x$
 componentwise, where $z$ is a basic vector of type (B) with parameter $B(x)$. Then $x = z$, and
 every option $x'$ of $x$ in Slow$\{k\}$-Nim on $k + 1$ stacks (a move removes one token from

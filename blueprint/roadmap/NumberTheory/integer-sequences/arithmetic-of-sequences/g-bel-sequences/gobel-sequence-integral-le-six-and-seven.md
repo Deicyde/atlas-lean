@@ -1,6 +1,6 @@
 # Integrality of the early terms of $(k, l)$-Göbel sequences
 
-**Integrality of the early terms of $(k, l)$-Göbel sequences.** Let $g_{k,l}$ denote the
+Let $g_{k,l}$ denote the
 $(k, l)$-Göbel sequence. For all natural numbers $k, l \ge 2$ and $1 \le n \le 6$, the value
 $g_{k,l}(n)$ is an integer. Moreover, for all natural numbers $k, l \ge 2$, the value $g_{k,l}(7)$
 is not an integer if and only if $k \equiv 2 \pmod 6$ and $l \equiv 3 \pmod 7$.

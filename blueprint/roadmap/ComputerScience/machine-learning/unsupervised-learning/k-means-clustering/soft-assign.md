@@ -1,6 +1,6 @@
 # Responsibilities with a common variance
 
-**Responsibilities with a common variance.** Given weights $w_1, \dots, w_K \in \mathbb{R}$,
+Given weights $w_1, \dots, w_K \in \mathbb{R}$,
 means $\mu_1, \dots, \mu_K \in \mathbb{R}^d$ and a real $v$, the common-variance responsibility
 of component $k$ at a point $x \in \mathbb{R}^d$ is
 

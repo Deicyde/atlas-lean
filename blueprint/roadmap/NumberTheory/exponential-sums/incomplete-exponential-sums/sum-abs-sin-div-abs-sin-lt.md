@@ -1,6 +1,6 @@
 # Bound for a sum of sine ratios
 
-**Bound for a sum of sine ratios.** Let $q$, $K$ and $B$ be natural numbers with
+Let $q$, $K$ and $B$ be natural numbers with
 $1 \le K < q$ and $B \ge 1$, and let $\gamma$ be the Euler–Mascheroni constant. Then
 
 $$

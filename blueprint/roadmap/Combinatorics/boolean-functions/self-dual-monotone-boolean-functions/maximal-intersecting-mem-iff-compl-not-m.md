@@ -1,6 +1,6 @@
 # Maximal intersecting families split complementary pairs (Lemma 3, L2)
 
-**Maximal intersecting families split complementary pairs (Lemma 3, L2).** Let $n \ge 1$ and
+Let $n \ge 1$ and
 let $\mathcal U$ be a maximal intersecting family of subsets of $X = \{0, \dots, n-1\}$: any two
 members of $\mathcal U$, not necessarily distinct, have nonempty intersection, and no family of
 subsets of $X$ strictly containing $\mathcal U$ has this property. Then for every

@@ -1,6 +1,6 @@
 # Base-edge function
 
-**Base-edge function.** Let $K$ be a field. For a triangle with left, right and base
+Let $K$ be a field. For a triangle with left, right and base
 resistances $L$, $R$, $B$ in $K$, its top arm is $\Delta(L, R, B)$, its bottom-right arm is
 $\Delta(R, B, L)$ and its bottom-left arm is $\Delta(B, L, R)$, where
 $\Delta(x, y, z) = xy/(x + y + z)$. For triangles $t$, $u$, $v$, the base-edge function is

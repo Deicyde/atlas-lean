@@ -1,6 +1,6 @@
 # The Weil conjectures
 
-**The Weil conjectures.** Let $F$ be a finite field with $q$ elements, and let $X$ be a scheme
+Let $F$ be a finite field with $q$ elements, and let $X$ be a scheme
 over $\operatorname{Spec} F$ whose structure morphism is proper, geometrically irreducible and
 smooth of relative dimension $d$. Then there is a sequence $A_0, A_1, A_2, \dots$ of finite
 multisets of complex numbers with $A_0 = \{1\}$ such that, for every $0 \le i \le 2d$, the

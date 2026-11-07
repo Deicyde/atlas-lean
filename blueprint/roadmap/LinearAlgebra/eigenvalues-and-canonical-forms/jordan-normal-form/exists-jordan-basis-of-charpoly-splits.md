@@ -1,6 +1,6 @@
 # Jordan chain basis for an endomorphism with split characteristic polynomial
 
-**Jordan chain basis for an endomorphism with split characteristic polynomial.** Let $V$ be
+Let $V$ be
 a finite-dimensional vector space over a field $K$ and let $f$ be a linear endomorphism of $V$
 whose characteristic polynomial splits into linear factors over $K$. Then there are
 $k \in \mathbb{N}$, natural numbers $d_0, \dots, d_{k-1}$, scalars $\mu_0, \dots, \mu_{k-1} \in K$

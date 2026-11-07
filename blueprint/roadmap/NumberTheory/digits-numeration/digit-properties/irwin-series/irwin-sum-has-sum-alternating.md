@@ -1,6 +1,6 @@
 # Alternating series for the Irwin sum
 
-**Alternating series for the Irwin sum.** Let $b > 1$ and $d < b$ be natural numbers, let
+Let $b > 1$ and $d < b$ be natural numbers, let
 $(u_{j;m})_{j, m \in \mathbb{N}}$ be a family of real numbers satisfying the ordinary moment
 recurrence for $b$ and $d$, and let $k$ and $l \ge 1$ be natural numbers. For a natural number
 $n$ write $c(n)$ for the number of occurrences of the digit $d$ in the base-$b$ expansion of $n$,

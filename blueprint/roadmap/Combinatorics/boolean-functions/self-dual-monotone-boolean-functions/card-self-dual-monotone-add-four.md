@@ -1,6 +1,6 @@
 # Counting self-dual monotone functions on $n + 4$ variables
 
-**Counting self-dual monotone functions on $n + 4$ variables.** Let $D_n$ be the set of
+Let $D_n$ be the set of
 monotone Boolean functions on $n$ variables, ordered pointwise, with $\lor$ the pointwise
 disjunction and $f^*$ the dual of $f$. For $x, h \in D_n$ let $\mathrm{re}(x, h)$ be the number
 of $z \in D_n$ with $x \le z \le h$. Then the number of self-dual monotone Boolean functions on

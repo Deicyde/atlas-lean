@@ -1,6 +1,6 @@
 # Shifted partial sums of a Dirichlet convolution
 
-**Shifted partial sums of a Dirichlet convolution.** Let $F$ be a field, let
+Let $F$ be a field, let
 $\alpha, \beta \colon F[T] \to \mathbb{C}$, let $\alpha * \beta$ be their Dirichlet convolution
 over monic divisors, let $f \in F[T]$ and let $n$ be a natural number. Then
 $S_f[\alpha, \beta](n) = \sum_g (\alpha * \beta)(fg)$, the sum over the monic $g \in F[T]$ with

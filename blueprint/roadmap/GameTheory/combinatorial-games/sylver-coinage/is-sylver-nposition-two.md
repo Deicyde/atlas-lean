@@ -1,6 +1,6 @@
 # Opening with 2 loses
 
-**Opening with 2 loses.** The position $\{2\}$ of Sylver Coinage is an N-position: the player
+The position $\{2\}$ of Sylver Coinage is an N-position: the player
 to move wins by naming $3$, which leaves the P-position $\{2, 3\}$.
 
 ## Sources

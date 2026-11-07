@@ -1,6 +1,6 @@
 # A nested ceiling identity for divisors
 
-**A nested ceiling identity for divisors.** For all natural numbers $m, n \ge 2$ with
+For all natural numbers $m, n \ge 2$ with
 $m \mid n$, we have $\lceil n / (\lceil n/(m-1) \rceil - 1) \rceil = m$.
 
 ## Sources

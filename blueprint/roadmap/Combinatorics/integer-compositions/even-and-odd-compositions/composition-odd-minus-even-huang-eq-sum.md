@@ -1,6 +1,6 @@
 # Signed count of Huang's compositions, binomial form
 
-**Signed count of Huang's compositions, binomial form.** Let $k, n \ge 1$ and $m \ge 0$.
+Let $k, n \ge 1$ and $m \ge 0$.
 Among the compositions of $n + k - 1$ with exactly $m$ parts less than $k$ in which every part
 less than $k$ is preceded by a part at least $k$ and followed by a part that is either the last
 part or greater than $k$, let $b^{(m)}_{k,n}$ be the number with an odd number of parts minus the

@@ -1,6 +1,6 @@
 # Characterization of 0,1-polynomials
 
-**Characterization of 0,1-polynomials.** A polynomial $f \in \mathbb{Z}[x]$ is a
+A polynomial $f \in \mathbb{Z}[x]$ is a
 $0,1$-polynomial if and only if, for every $n \ge 0$, the coefficient of $x^n$ in $f$ is
 $0$ or $1$.
 

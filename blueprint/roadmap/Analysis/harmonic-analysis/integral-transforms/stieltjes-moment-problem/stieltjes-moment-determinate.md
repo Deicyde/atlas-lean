@@ -1,6 +1,6 @@
 # Stieltjes moment determinacy
 
-**Stieltjes moment determinacy.** A measure $\mu$ on $\mathbb{R}$ is Stieltjes moment
+A measure $\mu$ on $\mathbb{R}$ is Stieltjes moment
 determinate when every probability measure $\nu$ on $\mathbb{R}$ such that $\nu((-\infty, 0)) = 0$,
 $\int |x|^k \, d\nu(x) < \infty$ for every integer $k \ge 1$, and
 $\int x^k \, d\nu(x) = \int x^k \, d\mu(x)$ for every integer $k \ge 1$ is equal to $\mu$.

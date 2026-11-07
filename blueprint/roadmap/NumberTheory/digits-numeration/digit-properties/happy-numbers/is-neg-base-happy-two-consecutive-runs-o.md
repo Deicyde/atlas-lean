@@ -1,6 +1,6 @@
 # Arithmetic progressions of happy numbers in odd negative bases
 
-**Arithmetic progressions of happy numbers in odd negative bases.** Let $b \le -3$ be an odd
+Let $b \le -3$ be an odd
 integer. For every natural number $N$ there is an integer $n$ such that $n + 2i$ is $b$-happy for
 every natural number $i < N$. Thus there are arbitrarily long finite arithmetic progressions with
 common difference $2$ of $b$-happy integers.

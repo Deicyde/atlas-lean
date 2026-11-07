@@ -1,6 +1,6 @@
 # The contracted maximal prime of the normalized tensor algebra
 
-**The contracted maximal prime of the normalized tensor algebra.** Let $L$ be a number field,
+Let $L$ be a number field,
 let $E$ and $F$ be intermediate fields of $L/\mathbb{Q}$ with compositum $EF$, let $p$ be a prime
 ideal of $\mathbb{Z}$ that is unramified in $\mathcal{O}_F$, and let $Q$ be a prime ideal of
 $\mathcal{O}_{EF}$ lying over $p$. Write $R = \mathbb{Z}_{(p)}$, let $S_F$ be the localization of

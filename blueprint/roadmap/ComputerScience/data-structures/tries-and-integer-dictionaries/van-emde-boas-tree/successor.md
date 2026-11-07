@@ -1,6 +1,6 @@
 # Successor query in a two-level van Emde Boas tree
 
-**Successor query in a two-level van Emde Boas tree.** Let $T$ be a two-level van Emde Boas
+Let $T$ be a two-level van Emde Boas
 tree over the universe $\{0, \dots, m^2 - 1\}$ and let $x = hm + \ell$ with $0 \le h, \ell < m$, so
 that $x$ sits at position $\ell$ of cluster $h$. If cluster $h$ has a set position after $\ell$, the
 successor of $x$ in $T$ is $hm + \ell'$ for the least such position $\ell'$. Otherwise, let $h'$ be

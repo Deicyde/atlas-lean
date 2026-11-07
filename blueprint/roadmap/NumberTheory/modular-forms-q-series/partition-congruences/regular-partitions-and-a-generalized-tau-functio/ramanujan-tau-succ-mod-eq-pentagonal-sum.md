@@ -1,6 +1,6 @@
 # Ramanujan's $\tau$ modulo $11$ via pentagonal numbers
 
-**Ramanujan's $\tau$ modulo $11$ via pentagonal numbers.** Let $\tau = \tau_{24}$ be Ramanujan's
+Let $\tau = \tau_{24}$ be Ramanujan's
 tau function, where $\tau_k$ is the generalized tau function, and let $P(r) = r(3r - 1)/2$ for
 integers $r$. For every integer $n \ge 1$, $\tau(n + 1)$ is congruent modulo $11$ to the sum of
 $(-1)^{l + m + s + r}$ over all quadruples of integers $(l, m, s, r)$ with

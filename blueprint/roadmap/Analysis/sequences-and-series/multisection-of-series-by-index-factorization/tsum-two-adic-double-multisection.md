@@ -1,6 +1,6 @@
 # Double 2-adic multisection of a double series
 
-**Double 2-adic multisection of a double series.** Let $(b_{p,q})_{p, q \ge 1}$ be a double
+Let $(b_{p,q})_{p, q \ge 1}$ be a double
 sequence of complex numbers such that each of the four families
 $2^{j+k} b_{(2n-1) 2^j, (2m-1) 2^k}$, $2^{j+k} b_{(2n) 2^j, (2m) 2^k}$,
 $2^{j+k} b_{(2n) 2^j, (2m-1) 2^k}$ and $2^{j+k} b_{(2n-1) 2^j, (2m) 2^k}$, indexed by the

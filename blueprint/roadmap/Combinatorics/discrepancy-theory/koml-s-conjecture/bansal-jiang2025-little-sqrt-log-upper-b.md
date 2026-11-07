@@ -1,6 +1,6 @@
 # Statement of the little-o square-root-log Komlós bound
 
-**Statement of the little-o square-root-log Komlós bound.** The proposition that for every
+The proposition that for every
 real $\varepsilon > 0$ there is a natural number $N \ge 3$ such that for every natural number
 $n \ge N$, the Komlós constant in dimension $n$ is at most $\varepsilon \sqrt{\log n}$, where
 $\log$ is the natural logarithm. In other words, the Komlós constant in dimension $n$ is

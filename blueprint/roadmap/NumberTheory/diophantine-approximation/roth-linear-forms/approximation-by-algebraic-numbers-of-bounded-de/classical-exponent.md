@@ -1,6 +1,6 @@
 # Classical exponent of approximation by algebraic numbers
 
-**Classical exponent of approximation by algebraic numbers.** For a natural number $n$ and a
+For a natural number $n$ and a
 real number $\xi$, let $H(\alpha)$ denote the height of a real algebraic number $\alpha$. The
 classical exponent $\omega^*_n(\xi)$ is the supremum in $[0, \infty]$ of the set of real numbers
 $\omega > 0$ for which there are infinitely many real algebraic numbers $\alpha$ of degree at

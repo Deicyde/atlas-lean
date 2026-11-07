@@ -1,6 +1,6 @@
 # Mazur's torsion theorem
 
-**Mazur's torsion theorem.** Let $E$ be an elliptic curve over $\mathbb{Q}$. The torsion
+Let $E$ be an elliptic curve over $\mathbb{Q}$. The torsion
 subgroup of the group $E(\mathbb{Q})$ of rational points of $E$ is finite and has at most $16$
 elements.
 

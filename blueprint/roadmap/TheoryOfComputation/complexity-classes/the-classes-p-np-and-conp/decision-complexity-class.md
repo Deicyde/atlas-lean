@@ -1,6 +1,6 @@
 # Complexity classes
 
-**Complexity classes.** A complexity class is a set of decision problems.
+A complexity class is a set of decision problems.
 
 ## Sources
 

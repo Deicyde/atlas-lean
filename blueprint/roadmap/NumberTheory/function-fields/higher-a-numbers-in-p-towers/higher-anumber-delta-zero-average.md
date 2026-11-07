@@ -1,6 +1,6 @@
 # Average of the indicator $\delta_0$
 
-**Average of the indicator $\delta_0$.** Let $p$ be a prime, let $d$ be a natural number
+Let $p$ be a prime, let $d$ be a natural number
 dividing $p - 1$, let $\tau_D$ be the denominator of $(p + 1)/d$ in lowest terms, and let
 $\delta_0$ be the variant of the rounding indicator for $p$ and $d$. Then
 

@@ -1,6 +1,6 @@
 # The first (-r)-Fibonacci polynomial
 
-**The first (-r)-Fibonacci polynomial.** For every commutative ring $A$, natural number
+For every commutative ring $A$, natural number
 $r$, $x \in A$ and unit $y$ of $A$, the $(-r)$-Fibonacci polynomial satisfies
 $U^{(-r)}_1(x, y) = 1$.
 

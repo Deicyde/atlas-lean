@@ -1,6 +1,6 @@
 # Result of a treap split
 
-**Result of a treap split.** For key type $\kappa$ and value type $\nu$, a split result
+For key type $\kappa$ and value type $\nu$, a split result
 consists of a lower tree, an optional entry given by a value in $\nu$ together with a
 natural-number priority, and an upper tree, where both trees are treap trees with keys in
 $\kappa$ and values in $\nu$.

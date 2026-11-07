@@ -1,6 +1,6 @@
 # Descendants modulo the difference of offsets
 
-**Descendants modulo the difference of offsets.** Let $a_1, a_2, x, y$ be integers and
+Let $a_1, a_2, x, y$ be integers and
 $k \in \mathbb{N}$. If $y$ is a $k$-descendant of $x$ in $G(-2n + a_1, -2n + a_2)$, that is,
 the end of a directed walk of exactly $k$ edges from $x$, then
 

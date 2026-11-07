@@ -1,6 +1,6 @@
 # Integrality of the elliptic Gauss sum
 
-**Integrality of the elliptic Gauss sum.** Let $\rho = e^{2\pi i/3}$, let
+Let $\rho = e^{2\pi i/3}$, let
 $\varpi_1 = \int_0^1 (1 - t^3)^{-2/3}\,dt$, let $\wp$ be the Weierstrass function of the lattice
 $\varpi_1 \mathbb{Z} + \varpi_1 \rho \mathbb{Z}$, and let
 $\varphi(u) = 6\wp(\varpi_1 u)/(9 + \wp'(\varpi_1 u))$. Let $a, b$ be integers with

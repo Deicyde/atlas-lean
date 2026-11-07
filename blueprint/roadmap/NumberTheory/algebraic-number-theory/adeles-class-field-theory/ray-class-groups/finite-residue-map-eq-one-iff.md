@@ -1,6 +1,6 @@
 # Kernel criterion for the finite residue map
 
-**Kernel criterion for the finite residue map.** Let $K$ be a number field and $\mathfrak m$ a
+Let $K$ be a number field and $\mathfrak m$ a
 modulus of $K$. A ray element $x$ of $\mathfrak m$ is sent to $1$ by the finite residue map of
 $\mathfrak m$ if and only if $x$ is congruent to $1$ at the finite part of $\mathfrak m$.
 

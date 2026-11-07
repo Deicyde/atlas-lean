@@ -1,6 +1,6 @@
 # Functional equation of the Dirichlet beta function
 
-**Functional equation of the Dirichlet beta function.** Let $\chi$ be the non-principal
+Let $\chi$ be the non-principal
 Dirichlet character modulo $4$, so $\chi(1) = 1$, $\chi(3) = -1$ and $\chi(0) = \chi(2) = 0$; let
 $\beta(s) = L(s, \chi)$ be its Dirichlet $L$-function (the Dirichlet beta function, continued to
 all of $\mathbb{C}$); and put $E^*(s) = 2\,\Gamma(s)\,\beta(s) / (\pi/2)^s$. Then the functions

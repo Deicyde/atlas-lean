@@ -1,6 +1,6 @@
 # $2$-adic dissection of the Gamma quadratic ratio
 
-**$2$-adic dissection of the Gamma quadratic ratio.** Let $a, b, z$ be complex numbers such
+Let $a, b, z$ be complex numbers such
 that $m^2 + 2am + b \ne 0$ and $m^2 + 2am + b - z \ne 0$ for every integer $m$ that is nonnegative
 or of the form $m = -2^j$ with $j \ge 0$ an integer. For $j \ge 0$ put $a_j = a / 2^{j+1} - 1/2$
 and $b_j = 1/4 - a / 2^{j+1} + b / 2^{2j+2}$. Then the Gamma quadratic ratio $g$ satisfies

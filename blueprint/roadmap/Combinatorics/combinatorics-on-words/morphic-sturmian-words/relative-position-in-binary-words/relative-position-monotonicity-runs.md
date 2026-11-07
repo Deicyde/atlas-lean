@@ -1,6 +1,6 @@
 # Monotonicity of the relative position function and runs of letters
 
-**Monotonicity of the relative position function and runs of letters.** Let $w$ be an
+Let $w$ be an
 infinite word over $\{a, b\}$ that starts with $a$ and in which both letters occur infinitely
 often, let $r$ be its relative position function, and write $\Delta r(n) = r(n+1) - r(n)$. A
 factor of $w$ is a block of consecutive letters. (a) If $r(n) < r(n+1)$ for all $n \ge 1$, then

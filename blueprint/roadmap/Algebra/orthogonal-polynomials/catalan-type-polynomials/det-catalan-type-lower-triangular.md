@@ -1,6 +1,6 @@
 # Determinant of the lower-triangular Catalan-type matrix
 
-**Determinant of the lower-triangular Catalan-type matrix.** Let $m, N$ be natural numbers,
+Let $m, N$ be natural numbers,
 let $\lambda, x$ be real numbers, let $A$ be a polynomial with integer coefficients, and let
 $P_n$ be the coefficient of $t^n$ in $(1 + A(x)\, t)(1 - m t + x t^m)^{-\lambda}$, where
 $(1 - m t + x t^m)^{-\lambda}$ denotes the negative real power of the trinomial

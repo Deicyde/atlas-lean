@@ -1,6 +1,6 @@
 # Mazur's Problem 65 has a negative answer
 
-**Mazur's Problem 65 has a negative answer.** The symmetric hull claim of Scottish Book
+The symmetric hull claim of Scottish Book
 Problem 65 is false: there are a real Banach space $E$ and a convex set $W \subseteq E$ with
 $0 \in W$ whose closure has empty interior, such that the closure of the convex hull of
 $W \cup (-W)$ has nonempty interior.

@@ -1,6 +1,6 @@
 # Accepting run of the SAT tokenizer
 
-**Accepting run of the SAT tokenizer.** Let $x$ and $w$ be bit strings such that $x$ decodes
+Let $x$ and $w$ be bit strings such that $x$ decodes
 to the CNF formula $\varphi$, and let $S$ be contents of the tokenizer's stacks in which $X$
 holds the bits of $x$, $W$ holds the bits of $w$, and the counters $CC$ and $LC$ are empty.
 Started at the start label with stacks $S$ and any value of its Boolean variable, the tokenizer

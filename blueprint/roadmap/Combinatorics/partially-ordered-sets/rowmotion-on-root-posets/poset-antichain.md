@@ -1,6 +1,6 @@
 # Finite antichains of a poset
 
-**Finite antichains of a poset.** For a partially ordered set $P$, the finite antichains of
+For a partially ordered set $P$, the finite antichains of
 $P$ are the finite subsets $A \subseteq P$ in which no element is below a different element.
 
 ## Sources

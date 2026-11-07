@@ -1,6 +1,6 @@
 # Height of an index
 
-**Height of an index.** The height of an index $(k_1, \ldots, k_r)$ is the number of
+The height of an index $(k_1, \ldots, k_r)$ is the number of
 positions $i$ with $1 \le i \le r$ and $k_i \ge 2$.
 
 ## Sources

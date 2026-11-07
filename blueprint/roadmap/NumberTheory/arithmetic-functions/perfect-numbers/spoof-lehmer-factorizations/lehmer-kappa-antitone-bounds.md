@@ -1,6 +1,6 @@
 # Bounds and monotonicity of the Lehmer function
 
-**Bounds and monotonicity of the Lehmer function.** For real numbers $t_1, \dots, t_r$ let
+For real numbers $t_1, \dots, t_r$ let
 $\kappa_r(t_1, \dots, t_r) = (t_1 \cdots t_r - 1) / ((t_1 - 1) \cdots (t_r - 1))$. Let $r \ge 2$
 and let $t_1, \dots, t_r \ge 2$ be real numbers. Then
 $1 < \kappa_r(t_1, \dots, t_r) \le 2^r - 1$. Moreover, for every index $j$ and every real

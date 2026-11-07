@@ -1,6 +1,6 @@
 # The admissible parity sequences $I$
 
-**The admissible parity sequences $I$.** The set $I$ consists of the infinite sequences
+The set $I$ consists of the infinite sequences
 $x = (x_0, x_1, \dots)$ over the alphabet $\{O_L, E_R, O_R, E_L\}$ such that $x_0 = O_L$; no two
 consecutive terms $(x_j, x_{j+1})$ form one of the pairs $(O_L, O_R)$, $(O_L, E_L)$,
 $(E_R, E_L)$, $(E_R, E_R)$, $(O_R, O_L)$, $(O_R, E_R)$, $(E_L, E_L)$, $(E_L, E_R)$; $x$ is not

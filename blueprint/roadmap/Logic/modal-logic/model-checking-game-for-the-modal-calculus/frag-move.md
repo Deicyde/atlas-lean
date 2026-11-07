@@ -1,6 +1,6 @@
 # Moves of the totalized fragment game
 
-**Moves of the totalized fragment game.** Let $M$ be a Kripke model and $e$ an environment,
+Let $M$ be a Kripke model and $e$ an environment,
 and read each fixpoint-free formula $\varphi$ as a μ-calculus formula. The totalized fragment game
 of $M$ and $e$ has these moves: from an embedded position $(\varphi, w)$ to $(\varphi', w')$
 whenever the model-checking game of $M$ has a move from $(\varphi, w)$ to $(\varphi', w')$ with

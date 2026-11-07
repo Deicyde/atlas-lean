@@ -1,6 +1,6 @@
 # L-reductions
 
-**L-reductions.** Write $\mathrm{opt}_M(x)$ for the optimum of an NPO problem $M$ on an
+Write $\mathrm{opt}_M(x)$ for the optimum of an NPO problem $M$ on an
 instance $x$ and $v_M(x, s)$ for the value of a solution $s$ for $x$. An NPO problem $M_1$
 L-reduces to an NPO problem $M_2$ when there are polynomial-time computable maps $f$, from
 bitstrings to bitstrings, and $g$, from pairs of bitstrings to bitstrings, and rational numbers

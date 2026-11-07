@@ -1,6 +1,6 @@
 # Cotangent power coefficients through even Bernoulli numbers
 
-**Cotangent power coefficients through even Bernoulli numbers.** Let $c_{r,j}$ be
+Let $c_{r,j}$ be
 Girstmair's cotangent power coefficients and $B_m$ the $m$-th Bernoulli number. For natural
 numbers $j$ and $r$ with $1 \le j \le r$ and $j \equiv r \pmod 2$,
 

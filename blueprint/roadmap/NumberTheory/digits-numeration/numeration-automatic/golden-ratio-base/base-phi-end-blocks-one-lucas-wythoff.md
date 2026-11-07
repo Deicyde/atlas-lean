@@ -1,6 +1,6 @@
 # End blocks ending in $1$ are Lucas–Wythoff sequences
 
-**End blocks ending in $1$ are Lucas–Wythoff sequences.** Let $\varphi$ be the golden ratio
+Let $\varphi$ be the golden ratio
 and $L_n$ the Lucas numbers. For integers $p, q, r$ let $V(p, q, r)$ be the set of the integers
 $p \lfloor n\varphi \rfloor + qn + r$ with $n \ge 1$, and $V_0(p, q, r)$ the same set with
 $n \ge 0$. For a word $w = w_{m-1} \cdots w_0$ of length $m$ over the natural numbers, let $R_w$ be

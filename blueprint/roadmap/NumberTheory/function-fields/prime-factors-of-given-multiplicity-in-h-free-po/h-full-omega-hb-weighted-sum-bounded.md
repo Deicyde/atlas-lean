@@ -1,6 +1,6 @@
 # Uniform bound for the weighted coefficients of $B_{h,N_h}(u, z)$
 
-**Uniform bound for the weighted coefficients of $B_{h,N_h}(u, z)$.** Let $F$ be a finite
+Let $F$ be a finite
 field with $q$ elements, let $h \ge 2$ be a natural number, and let $A$ and $\sigma$ be real
 numbers with $\sigma > 1/(h + 1)$. Then there is a real constant $c$ such that for every complex
 number $z$ with $|z| \le A$ and every natural number $n \ge 2$,

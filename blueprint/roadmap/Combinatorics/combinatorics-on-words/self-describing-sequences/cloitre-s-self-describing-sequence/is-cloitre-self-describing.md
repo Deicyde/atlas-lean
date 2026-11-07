@@ -1,6 +1,6 @@
 # Cloitre's self-describing property
 
-**Cloitre's self-describing property.** A sequence $s : \mathbb{N} \to \mathbb{N}$ is
+A sequence $s : \mathbb{N} \to \mathbb{N}$ is
 self-describing in Cloitre's sense when there is a sequence $b : \mathbb{N} \to \mathbb{N}$ with
 $b(0) = 0$, $b$ strictly increasing, $s$ constant on each block $[b(n), b(n+1))$ and each value of
 $s$ on a block different from each value on the next block (so the blocks are the maximal runs of

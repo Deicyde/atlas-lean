@@ -1,6 +1,6 @@
 # Six-squares moments of Dedekind zeta coefficients
 
-**Six-squares moments of Dedekind zeta coefficients.** For a number field $K$, a natural
+For a number field $K$, a natural
 number $\ell$ and a real number $x$, the moment is the real number
 $S_\ell(x) = \sum_{1 \le n \le x} r_6(n)\, a_K(n)^\ell$, where $n$ runs over the integers in
 $[1, x]$, $a_K(n)$ is the number of ideals of the ring of integers of $K$ of absolute norm $n$,

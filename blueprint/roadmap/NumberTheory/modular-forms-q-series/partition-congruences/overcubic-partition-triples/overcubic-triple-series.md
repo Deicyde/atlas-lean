@@ -1,6 +1,6 @@
 # The overcubic partition triple series
 
-**The overcubic partition triple series.** The generating function of overcubic partition
+The generating function of overcubic partition
 triples is the integer power series $f_4^3 / (f_1^6 f_2^3)$ in $q$, where
 $f_k = \prod_{j \ge 1} (1 - q^{kj})$; the inverse of $f_1^6 f_2^3$ exists because its constant
 coefficient is $1$.

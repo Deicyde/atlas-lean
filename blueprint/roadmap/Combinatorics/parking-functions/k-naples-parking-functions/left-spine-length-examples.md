@@ -1,6 +1,6 @@
 # Left spine lengths of small binary trees
 
-**Left spine lengths of small binary trees.** The empty binary tree has left spine length
+The empty binary tree has left spine length
 $0$, and the binary tree with three nodes, a root whose left child and right child have no
 children, has left spine length $2$.
 

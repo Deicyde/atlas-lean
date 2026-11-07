@@ -1,6 +1,6 @@
 # Order of iterates of $L_k$ against order of iterates of $F_k$
 
-**Order of iterates of $L_k$ against order of iterates of $F_k$.** Let $F_k$ be the
+Let $F_k$ be the
 generalized Hofstadter function, let $x_k[0]\,x_k[1] \cdots$ be the fixed point, beginning with
 $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every other letter $i$ to
 $i + 1$, let $L_k(n)$ be the length of the word $\tau_k(x_k[0] \cdots x_k[n-1])$, and write

@@ -1,6 +1,6 @@
 # Dedekind domains: UFD iff PID
 
-**Dedekind domains: UFD iff PID.** A Dedekind domain $R$ is a unique factorization domain if
+A Dedekind domain $R$ is a unique factorization domain if
 and only if it is a principal ideal domain.
 
 ## Sources

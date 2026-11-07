@@ -1,6 +1,6 @@
 # Erdős–Fowler–Sós–Wilson gap above a projective plane (Erdős Problem 903)
 
-**Erdős–Fowler–Sós–Wilson gap above a projective plane (Erdős Problem 903).** Let $p$ be a prime
+Let $p$ be a prime
 power and $n = p^2 + p + 1$. Let $A_1, \dots, A_t$ be a $2$-design on $\{1, \dots, n\}$: every
 block $A_i$ has at least two points and every pair of distinct points lies in exactly one block.
 If $t > n$, then $t \ge n + p$.

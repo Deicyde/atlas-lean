@@ -1,6 +1,6 @@
 # Membership in three greedy 3-subsumfree sequences
 
-**Membership in three greedy 3-subsumfree sequences.** For $x < y < z$, the greedy
+For $x < y < z$, the greedy
 $3$-subsumfree sequence $S_{x,y,z}$ consists of $x$, $y$, $z$ and every $m > z$ that is not the
 sum of three different members of $S_{x,y,z}$ smaller than $m$. For every positive integer $n$:
 $n \in S_{1,2,3}$ if and only if $n \in \{1, 5, 13\}$ or $n \bmod 23 \in \{2, 3, 4, 14, 15\}$;

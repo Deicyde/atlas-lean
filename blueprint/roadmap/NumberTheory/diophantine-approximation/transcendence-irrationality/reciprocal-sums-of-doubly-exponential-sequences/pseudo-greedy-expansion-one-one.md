@@ -1,6 +1,6 @@
 # Second term of the pseudo-greedy expansion of $1$
 
-**Second term of the pseudo-greedy expansion of $1$.** The pseudo-greedy expansion
+The pseudo-greedy expansion
 $(a_n)_{n \ge 0}$ of $1$ satisfies $a_1 = 3$.
 
 The remainder after the first term $a_0 = 2$ is $1 - 1/2 = 1/2$.

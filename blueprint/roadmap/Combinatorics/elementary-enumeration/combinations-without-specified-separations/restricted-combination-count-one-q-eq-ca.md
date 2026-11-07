@@ -1,6 +1,6 @@
 # Forbidden differences 1 and q and windowed adjacent-swap permutations
 
-**Forbidden differences 1 and q and windowed adjacent-swap permutations.** For all natural
+For all natural
 numbers $q$, $n$ and $k$, the number of $k$-subsets of $\{1, \dots, n\}$ in which no two
 distinct elements differ by $1$ or by $q$ equals the number of permutations $\pi$ of
 $\{0, 1, \dots, n\}$ such that $|\pi(i) - i| \le 1$ for every $i$; for every $i_0 \ge 0$ with

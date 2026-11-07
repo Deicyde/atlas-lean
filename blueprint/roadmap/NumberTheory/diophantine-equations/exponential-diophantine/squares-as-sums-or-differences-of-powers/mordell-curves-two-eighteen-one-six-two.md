@@ -1,6 +1,6 @@
 # Integer points on three Mordell curves
 
-**Integer points on three Mordell curves.** The integer solutions of $y^2 = x^3 - 2$ are
+The integer solutions of $y^2 = x^3 - 2$ are
 exactly $(x, y) = (3, 5)$ and $(3, -5)$, the integer solutions of $y^2 = x^3 - 18$ are exactly
 $(x, y) = (3, 3)$ and $(3, -3)$, and $y^2 = x^3 - 162$ has no integer solutions.
 

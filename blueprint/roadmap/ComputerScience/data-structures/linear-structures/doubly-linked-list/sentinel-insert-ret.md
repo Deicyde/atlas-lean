@@ -1,6 +1,6 @@
 # The store after sentinel insertion
 
-**The store after sentinel insertion.** Let $S$ be a store of $n$ cells, each empty or holding
+Let $S$ be a store of $n$ cells, each empty or holding
 a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is not NIL, and the
 cell $w$ it points to is allocated; write $S[c]$ for the node at an allocated cell $c$. Then the
 store returned by sentinel insertion of $x$ after $y$ is obtained from $S$ by three updates, each

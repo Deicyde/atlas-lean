@@ -1,6 +1,6 @@
 # Some group without generalized torsion is not right-orderable (Kourovka 16.48)
 
-**Some group without generalized torsion is not right-orderable (Kourovka 16.48).** The
+The
 Kopytov–Medvedev proposition is false: there is a group $H$ with no generalized torsion element
 that admits no right order.
 

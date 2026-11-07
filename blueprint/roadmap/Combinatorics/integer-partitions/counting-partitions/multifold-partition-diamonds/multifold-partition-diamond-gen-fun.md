@@ -1,6 +1,6 @@
 # Product formula for multifold partition diamonds
 
-**Product formula for multifold partition diamonds.** Let $d_1, \dots, d_M$ be positive
+Let $d_1, \dots, d_M$ be positive
 integers with $M \ge 1$, and let $\omega_k = \sum_{m=k+1}^{M} d_m$ for $0 \le k \le M$. Let
 $\sigma_{d_1, \dots, d_M}(a, b)$ be the generating function of multifold partition diamonds of
 shape $(d_1, \dots, d_M)$, where $a$ marks the fold sum and $b$ marks the link sum, and let

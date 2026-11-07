@@ -1,6 +1,6 @@
 # First two columns of the coefficient matrix of a Riordan array
 
-**First two columns of the coefficient matrix of a Riordan array.** For real sequences
+For real sequences
 $(z_n)$ and $(a_n)$ with generating functions $Z(x)$ and $A(x)$, and for every $n \ge 0$, the
 coefficient matrix $J(Z(x), A(x))$ has entry $z_n$ in row $n$, column $0$, and entry $a_n$ in
 row $n$, column $1$.

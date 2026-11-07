@@ -1,6 +1,6 @@
 # Shortest walks to $\pm(a - 1)$ in $G(-2n + 1, -2n + a)$
 
-**Shortest walks to $\pm(a - 1)$ in $G(-2n + 1, -2n + a)$.** Let $m \ge 1$ be an integer and
+Let $m \ge 1$ be an integer and
 $a = 1 + 3^m$ or $a = 1 - 3^m$. Then in $G(-2n + 1, -2n + a)$ the least $k \in \mathbb{N}$ such
 that $a - 1$ is a $k$-descendant of $0$ (the end of a directed walk of exactly $k$ edges from
 $0$) is $3^m$, and the least $k$ such that $-(a - 1)$ is a $k$-descendant of $0$ is also $3^m$.

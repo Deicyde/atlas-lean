@@ -1,6 +1,6 @@
 # $\ell$-regular overpartitions vanish modulo $4$ along powers of one prime
 
-**$\ell$-regular overpartitions vanish modulo $4$ along powers of one prime.** For a natural
+For a natural
 number $\ell$, let $A_\ell(m)$ be the number of overpartitions of $m$ with no part divisible by
 $\ell$. Let $\ell \equiv 3 \pmod 4$, and let $p > 2$ be a prime with $p \not\equiv 1 \pmod 6$.
 Then for all natural numbers $k$, $n$ and $j$ with $j \not\equiv 0 \pmod p$,

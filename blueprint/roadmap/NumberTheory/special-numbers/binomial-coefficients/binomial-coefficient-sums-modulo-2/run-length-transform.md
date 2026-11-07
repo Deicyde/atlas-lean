@@ -1,6 +1,6 @@
 # Run length transform
 
-**Run length transform.** For a sequence $S : \mathbb{N} \to \mathbb{Z}$, the run length
+For a sequence $S : \mathbb{N} \to \mathbb{Z}$, the run length
 transform of $S$ is the sequence $T : \mathbb{N} \to \mathbb{Z}$ given by
 $T(n) = \prod_{\ell \in \mathcal{L}(n)} S(\ell)$, where $\mathcal{L}(n)$ is the list of the
 lengths of the maximal runs of $1$s in the binary expansion of $n$, so that each run contributes

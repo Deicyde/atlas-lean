@@ -1,6 +1,6 @@
 # Partition relation for bi-brackets
 
-**Partition relation for bi-brackets.** For every natural number $r$, the generating series
+For every natural number $r$, the generating series
 $g(X_1, \dots, X_r; Y_1, \dots, Y_r)$ of bi-brackets of depth $r$ satisfies
 
 $$g(X_1, \dots, X_r; Y_1, \dots, Y_r) = g(Y_1 + \dots + Y_r, \dots, Y_1 + Y_2, Y_1;

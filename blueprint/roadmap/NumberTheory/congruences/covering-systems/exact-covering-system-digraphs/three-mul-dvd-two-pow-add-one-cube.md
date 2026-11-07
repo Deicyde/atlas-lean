@@ -1,6 +1,6 @@
 # Divisibility of $2^{3n} + 1$ from $2^n + 1$
 
-**Divisibility of $2^{3n} + 1$ from $2^n + 1$.** For every natural number $n$, if $3n$
+For every natural number $n$, if $3n$
 divides $2^n + 1$, then $9n$ divides $2^{3n} + 1$.
 
 Equivalently, if $3$ divides $2^n + 1$ and $n$ divides $(2^n + 1)/3$, then $3n$ divides

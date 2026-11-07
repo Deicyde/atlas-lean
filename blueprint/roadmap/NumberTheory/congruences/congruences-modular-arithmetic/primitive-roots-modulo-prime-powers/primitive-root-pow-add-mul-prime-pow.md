@@ -1,6 +1,6 @@
 # Primitive roots modulo $p^\ell$ of the form $g^p + kp$
 
-**Primitive roots modulo $p^\ell$ of the form $g^p + kp$.** Let $p$ be an odd prime and let
+Let $p$ be an odd prime and let
 $g$ be a natural number that is a primitive root modulo $p$. If $k$ is a natural number not
 divisible by $p$, then $g^p + kp$ is a primitive root modulo $p^\ell$ for every natural number
 $\ell > 1$.

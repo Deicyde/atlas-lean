@@ -1,6 +1,6 @@
 # Characterization of the Hsu–Shiue generalized Stirling numbers
 
-**Characterization of the Hsu–Shiue generalized Stirling numbers.** Let $K$ be $\mathbb{R}$ or
+Let $K$ be $\mathbb{R}$ or
 $\mathbb{C}$ and let $\alpha, \beta, r \in K$. For $z \in K$ write $(z \mid \alpha)_0 = 1$ and
 $(z \mid \alpha)_n = z (z - \alpha) \cdots (z - (n-1)\alpha)$ for $n \ge 1$ (the generalized
 falling factorial). An array $(S(n,k))_{n, k \ge 0}$ in $K$ is a Hsu–Shiue family with

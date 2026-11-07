@@ -1,6 +1,6 @@
 # Formula for the generating function of even-length down/up compositions
 
-**Formula for the generating function of even-length down/up compositions.** Let
+Let
 $F(x, y, z) \in \mathbb{Q}[[x, y, z]]$ be the generating function of down/up compositions with an
 even number of parts (including the empty composition, with last part $0$) by weight ($x$),
 number of parts ($y$) and last part ($z$). For a power series $w$, write

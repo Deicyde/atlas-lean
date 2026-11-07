@@ -1,6 +1,6 @@
 # The ratio $\tau = (p + 1)/d$
 
-**The ratio $\tau = (p + 1)/d$.** For natural numbers $p$ and $d$, $\tau$ is the rational
+For natural numbers $p$ and $d$, $\tau$ is the rational
 number $(p + 1)/d$, which is $0$ when $d = 0$.
 
 ## Sources

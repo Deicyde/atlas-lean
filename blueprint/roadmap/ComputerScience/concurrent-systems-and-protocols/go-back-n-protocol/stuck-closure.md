@@ -1,6 +1,6 @@
 # Silent closure of the stuck lossy go-back-N configuration
 
-**Silent closure of the stuck lossy go-back-N configuration.** The list of the seven
+The list of the seven
 configurations of go-back-N with a lossy acknowledgement channel in which the sender's window has
 base $0$ with two outstanding messages, the receiver holds frame $1$ about to deliver it, and the
 acknowledgement channel is empty, while the sender's offset of the next frame to transmit and the

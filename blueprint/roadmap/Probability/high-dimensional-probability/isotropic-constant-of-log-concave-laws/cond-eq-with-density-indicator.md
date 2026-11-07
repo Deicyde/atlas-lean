@@ -1,6 +1,6 @@
 # Conditioning on a set is the normalized indicator density
 
-**Conditioning on a set is the normalized indicator density.** Let $\mu$ be a measure on a
+Let $\mu$ be a measure on a
 measurable space $\alpha$ and let $K \subseteq \alpha$ be a measurable set with $\mu(K) \neq 0$.
 Then the conditional measure $\mu(\cdot \mid K)$, that is $\mu(K)^{-1}$ times the restriction of
 $\mu$ to $K$, equals the measure with density $x \mapsto \mu(K)^{-1} \mathbf{1}_K(x)$ with respect

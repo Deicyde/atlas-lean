@@ -1,6 +1,6 @@
 # The matrix $\tilde R_\alpha(n)$
 
-**The matrix $\tilde R_\alpha(n)$.** For a sequence $\alpha = (\alpha_0, \alpha_1, \dots)$ of
+For a sequence $\alpha = (\alpha_0, \alpha_1, \dots)$ of
 rationals and a natural number $n$, $\tilde R_\alpha(n)$ is the $n \times n$ rational matrix
 whose $(i, j)$ entry, for $1 \le i, j \le n$, is $(j-1)^{\underline{i-1}} / \Omega(\alpha, j)$
 if $i \le j$ and $0$ if $i > j$, where

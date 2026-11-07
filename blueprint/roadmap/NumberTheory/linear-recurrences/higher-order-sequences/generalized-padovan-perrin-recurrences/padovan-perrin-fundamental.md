@@ -1,6 +1,6 @@
 # Fibonacci fundamental system of the generalized Padovan–Perrin recurrence
 
-**Fibonacci fundamental system of the generalized Padovan–Perrin recurrence.** Let $R$ be a
+Let $R$ be a
 commutative semiring, $k_1, k_2 \in R$ and $p, s \in \mathbb{N}$. For a natural number $j$, the
 $j$-th fundamental sequence $v^{(j)} \colon \mathbb{N} \to R$ is the solution of the
 $([k]; p; s)$-Padovan–Perrin recurrence with initial values $v^{(j)}_n = 1$ if $n + 1 = j$ and

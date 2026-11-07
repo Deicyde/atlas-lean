@@ -1,6 +1,6 @@
 # Generalized Pell matrix as a Riordan array, for every k
 
-**Generalized Pell matrix as a Riordan array, for every k.** Let $k$ be a natural number
+Let $k$ be a natural number
 and let $p(n, m)$, for natural numbers $n$ and $m$, be natural numbers such that for every $n$
 the power series $\sum_{m \ge 0} p(n, m)\, x^m$ over $\mathbb{Q}$ satisfies
 $\left(\sum_{m \ge 0} p(n, m)\, x^m\right)(1 - x)^{n+1} = (1 + x + \dots + x^k)^n$. Then for all

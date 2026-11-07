@@ -1,6 +1,6 @@
 # Goldman–Joichi–White factorization theorem
 
-**Goldman–Joichi–White factorization theorem.** Let $B = (b_1, \dots, b_n)$ be a Ferrers
+Let $B = (b_1, \dots, b_n)$ be a Ferrers
 board, that is $b_1 \le \dots \le b_n$, and let $r_k(B) = r_{k,1}(B)$ be the number of placements
 of $k$ non-attacking rooks on $B$ (no two in the same row or column). Then for every integer $x$,
 

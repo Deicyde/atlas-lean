@@ -1,6 +1,6 @@
 # The 3-dissection of $f_1^3$
 
-**The 3-dissection of $f_1^3$.** For $k \ge 1$ let $f_k = \prod_{m \ge 1} (1 - q^{km})$, an
+For $k \ge 1$ let $f_k = \prod_{m \ge 1} (1 - q^{km})$, an
 integer power series in $q$. Then
 
 $$

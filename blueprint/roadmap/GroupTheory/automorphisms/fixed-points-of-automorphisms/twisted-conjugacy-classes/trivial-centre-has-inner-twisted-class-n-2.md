@@ -1,6 +1,6 @@
 # Negative answer to Kourovka Problem 18.15
 
-**Negative answer to Kourovka Problem 18.15.** The conjecture of Kourovka Problem 18.15 is
+The conjecture of Kourovka Problem 18.15 is
 false: there is a nontrivial group $G$ with trivial centre such that for every $a \in G$, with
 $\varphi$ the inner automorphism $\varphi(g) = aga^{-1}$, the twisted conjugacy class of the
 identity $[e]_\varphi = \{g^{-1}\varphi(g) : g \in G\}$ is a subgroup of $G$.

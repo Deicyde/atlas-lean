@@ -1,6 +1,6 @@
 # Campbell's auxiliary function $h_3^{(m)}$
 
-**Campbell's auxiliary function $h_3^{(m)}$.** For a natural number $m$, let
+For a natural number $m$, let
 $H(m) = h_2(10^m) - h_2(10^m - 1)$, where $h_2$ is Campbell's sequence (in the paper's notation
 $H(m) = y_1(m + 1) - y_2(m)$ with $y_1(n) = h_2(10^{n-1})$ and $y_2(n) = h_2(10^n - 1)$). Define
 $h_3^{(m)} : \mathbb{R} \to \mathbb{R}$ by $h_3^{(m)}(t) = a(m)\,t + b(m)$ for

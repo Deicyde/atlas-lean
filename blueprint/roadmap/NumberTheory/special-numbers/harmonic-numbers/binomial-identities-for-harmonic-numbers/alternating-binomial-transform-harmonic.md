@@ -1,6 +1,6 @@
 # Alternating binomial transform of the harmonic numbers
 
-**Alternating binomial transform of the harmonic numbers.** Let $s$ be a complex number that
+Let $s$ be a complex number that
 is not a negative integer, let $n$ be a positive integer, and let $H_k = \sum_{j=1}^{k} 1/j$
 be the $k$-th harmonic number. For complex $z$ and natural $k$ write
 $\binom{z}{k} = \Gamma(z + 1) / (\Gamma(k + 1)\,\Gamma(z - k + 1))$, with $1/\Gamma$ taken to

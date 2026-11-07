@@ -1,6 +1,6 @@
 # Tracing a strand through one crossing
 
-**Tracing a strand through one crossing.** Let a traversal state consist of a current
+Let a traversal state consist of a current
 strand position $p \in \mathbb{N}$ and a list of vertices in $\mathbb{R}^3$, let
 $w \in \mathbb{Z}$ be a braid generator with $i = |w|$, and let
 $z_{\mathrm{top}}, z_{\mathrm{bot}} \in \mathbb{R}$. Put

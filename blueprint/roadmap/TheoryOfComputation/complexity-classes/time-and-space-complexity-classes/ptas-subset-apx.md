@@ -1,6 +1,6 @@
 # PTAS is contained in APX
 
-**PTAS is contained in APX.** Every optimization problem in the class PTAS belongs to the
+Every optimization problem in the class PTAS belongs to the
 class APX.
 
 The algorithm that the approximation scheme provides for error $1/2$ achieves the constant

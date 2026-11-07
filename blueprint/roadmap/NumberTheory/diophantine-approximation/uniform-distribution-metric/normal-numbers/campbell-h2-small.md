@@ -1,6 +1,6 @@
 # Small values of Campbell's sequence $h_2$
 
-**Small values of Campbell's sequence $h_2$.** The sequence $h_2$ satisfies $h_2(9) = 0$,
+The sequence $h_2$ satisfies $h_2(9) = 0$,
 $h_2(10) = 10$, $h_2(21) = 120$, $h_2(99) = 900$ and $h_2(100) = 1000$.
 
 ## Sources

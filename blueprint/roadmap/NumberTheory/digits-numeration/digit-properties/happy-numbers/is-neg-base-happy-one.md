@@ -1,6 +1,6 @@
 # $1$ is happy in every negative base
 
-**$1$ is happy in every negative base.** For every integer $b \le -2$, the integer $1$ is
+For every integer $b \le -2$, the integer $1$ is
 $b$-happy.
 
 ## Sources

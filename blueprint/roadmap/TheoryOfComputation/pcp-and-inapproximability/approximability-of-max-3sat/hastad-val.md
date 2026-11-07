@@ -1,6 +1,6 @@
 # Value of a MAX-3SAT assignment
 
-**Value of a MAX-3SAT assignment.** For bitstrings $x$ and $a$, read $a$ as the assignment
+For bitstrings $x$ and $a$, read $a$ as the assignment
 giving variable $v$ the value $a_v$ if $v < |a|$ and false otherwise. If $x$ decodes, under the
 canonical bitstring decoding, to a pair $(u, \varphi)$ of a bitstring $u$ and a CNF formula
 $\varphi$ in which every variable index is less than $|u|$ and every clause is nondegenerate,

@@ -1,6 +1,6 @@
 # Weighted consecutive zero-sum constant
 
-**Weighted consecutive zero-sum constant.** Let $n$ be a natural number and $A$ a subset of
+Let $n$ be a natural number and $A$ a subset of
 $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$. The $A$-weighted consecutive constant $C_A$ of
 $\mathbb{Z}_n$ is the least positive integer $k$ such that every sequence $(x_1, \dots, x_k)$ of
 elements of $\mathbb{Z}_n$ has a nonempty block of consecutive terms $x_i, \dots, x_j$ with

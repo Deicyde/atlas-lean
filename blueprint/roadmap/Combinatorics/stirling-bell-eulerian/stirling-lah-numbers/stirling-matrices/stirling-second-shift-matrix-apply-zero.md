@@ -1,6 +1,6 @@
 # First column of a shifted Stirling matrix
 
-**First column of a shifted Stirling matrix.** Let $m$ and $n$ be natural numbers with $n > 0$,
+Let $m$ and $n$ be natural numbers with $n > 0$,
 and let $S^{[m]}(n)$ be the $n \times n$ rational matrix with entries $S(i + m, j)$ for
 $1 \le i, j \le n$, where $S(i, j)$ denotes the Stirling numbers of the second kind. Every entry
 of the first column of $S^{[m]}(n)$ equals $1$: $S(i + m, 1) = 1$ for $1 \le i \le n$.

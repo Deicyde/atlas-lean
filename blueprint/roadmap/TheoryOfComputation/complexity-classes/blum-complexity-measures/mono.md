@@ -1,6 +1,6 @@
 # Blum classes are monotone in the bound
 
-**Blum classes are monotone in the bound**: if `t` is eventually
+If `t` is eventually
 dominated by `t'`, every function in the `t`-class is in the `t'`-class.
 
 ## Sources

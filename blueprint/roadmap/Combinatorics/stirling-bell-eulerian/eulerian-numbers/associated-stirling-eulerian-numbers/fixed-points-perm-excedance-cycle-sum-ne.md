@@ -1,6 +1,6 @@
 # Signed excedance–cycle sum over s-fixed-points permutations, cycle weight -s
 
-**Signed excedance–cycle sum over s-fixed-points permutations, cycle weight -s.** Let $R$ be a
+Let $R$ be a
 commutative ring, $x \in R$, and $s \le n$ natural numbers. Call a permutation $\sigma$ of
 $\{0, \dots, n-1\}$ an $s$-fixed-points permutation if every fixed point of $\sigma$ is less than
 $s$ and any two points less than $s$ in the same cycle of $\sigma$ are equal. Write $e(\sigma)$

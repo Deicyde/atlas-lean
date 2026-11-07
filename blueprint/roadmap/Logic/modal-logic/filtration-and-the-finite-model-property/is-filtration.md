@@ -1,6 +1,6 @@
 # Filtration relations
 
-**Filtration relations.** Let $M$ be a Kripke model, $\varphi$ a modal formula, $\Sigma$ the
+Let $M$ be a Kripke model, $\varphi$ a modal formula, $\Sigma$ the
 set of subformulas of $\varphi$, and for a world $w$ let $[w]$, the type of $w$, be the set of
 formulas of $\Sigma$ true at $w$ in $M$. A relation $R$ on finite sets of formulas is a
 filtration of $M$ through $\Sigma$ when (min) for all worlds $w, v$ related in $M$, the pair

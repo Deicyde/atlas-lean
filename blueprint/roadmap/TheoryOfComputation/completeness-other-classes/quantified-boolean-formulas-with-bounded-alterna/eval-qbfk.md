@@ -1,6 +1,6 @@
 # Truth of a quantified Boolean formula with circuit matrix
 
-**Truth of a quantified Boolean formula with circuit matrix.** Let $P$ be a quantifier prefix,
+Let $P$ be a quantifier prefix,
 a list of pairs $(q, v)$ of a quantifier $q$, $\exists$ (true) or $\forall$ (false), and a
 variable $v \in \mathbb{N}$; let $\varphi$ be a matrix circuit and $\alpha$ an assignment of a
 truth value to every natural number. Truth of $(P, \varphi)$ under $\alpha$ is defined by

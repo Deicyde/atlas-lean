@@ -1,6 +1,6 @@
 # Renaming step of the substitution lemma
 
-**Renaming step of the substitution lemma.** Let $\Gamma$ be a typing context, $\tau$ a
+Let $\Gamma$ be a typing context, $\tau$ a
 monotype and $s$ a type substitution. Write $s\Gamma$ for the context obtained by applying $s$ to
 every scheme of $\Gamma$, and let $N$ be one more than the largest free type variable of
 $s\Gamma$, with $N = 1$ if $s\Gamma$ has none. Let $\rho$ be the substitution sending a type

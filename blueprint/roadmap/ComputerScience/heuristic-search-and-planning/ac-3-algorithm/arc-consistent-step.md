@@ -1,6 +1,6 @@
 # Arc consistency after one AC-3 revision
 
-**Arc consistency after one AC-3 revision.** Let $P$ be a binary CSP whose constraints are
+Let $P$ be a binary CSP whose constraints are
 symmetric, that is the arc $(x, y)$ allows $(a, b)$ exactly when the arc $(y, x)$ allows $(b, a)$.
 Let $\mathrm{dom}$ be domains, let $x \ne y$ be variables, let $R$ be the set of values
 $a \in \mathrm{dom}(x)$ for which some $b \in \mathrm{dom}(y)$ has the arc $(x, y)$ allowing

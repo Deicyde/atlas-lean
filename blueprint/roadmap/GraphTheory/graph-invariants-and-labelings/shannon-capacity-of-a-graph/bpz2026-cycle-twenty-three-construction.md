@@ -1,6 +1,6 @@
 # Buys–Polak–Zuiddam code for the 23-cycle in length 2048
 
-**Buys–Polak–Zuiddam code for the 23-cycle in length 2048.** Let $c$ be the code coordinate
+Let $c$ be the code coordinate
 of BPZ's final twenty-three-cycle profile after nine squarings, and let $M = \max(c, 0)$. There
 is a finite set of words of length $2048$ over $\mathbb{Z}/23\mathbb{Z}$ that is an independent
 code for the $23$-cycle and has exactly $M$ elements.

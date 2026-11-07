@@ -1,6 +1,6 @@
 # Exponent two is admissible at aspect zero
 
-**Exponent two is admissible at aspect zero.** For every field $F$, the exponent $2$ is an
+For every field $F$, the exponent $2$ is an
 admissible rectangular circuit exponent at aspect $0$ over $F$: for every $\varepsilon > 0$ there
 are a real $C > 0$ and a natural number $N \ge 1$ such that for every $n \ge N$ some arithmetic
 circuit over $F$ computes the product of an $n \times \lceil n^0 \rceil$ matrix and a

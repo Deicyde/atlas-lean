@@ -1,6 +1,6 @@
 # Infinite family of congruences modulo 2 for $v(q)$
 
-**Infinite family of congruences modulo 2 for $v(q)$.** Let $P_v(n)$ be the coefficient of
+Let $P_v(n)$ be the coefficient of
 $q^n$ in the eighth-order mock theta function $v(q)$, and for $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$. Let $p \ge 3$ be a prime whose Legendre symbol
 $\left(\frac{-2}{p}\right)$ equals $-1$, and let $\alpha \ge 0$ be an integer. Then the integer

@@ -1,6 +1,6 @@
 # The h-star coefficients of a polynomial
 
-**The h-star coefficients of a polynomial.** Let $f$ be a complex polynomial of degree $d$,
+Let $f$ be a complex polynomial of degree $d$,
 with $d = 0$ for the zero polynomial. For a natural number $i$, the $i$-th $h^*$-coefficient of
 $f$ is
 

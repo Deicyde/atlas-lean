@@ -1,6 +1,6 @@
 # Binomial product of shifted powers of geometric series
 
-**Binomial product of shifted powers of geometric series.** For every field $K$ of
+For every field $K$ of
 characteristic $0$, all $j, k \in \mathbb{N}$ and all $\alpha, \beta \in K$,
 
 $$\frac{x^j}{(1 - \alpha x)^{j+1}} \odot \frac{x^k}{(1 - \beta x)^{k+1}} =

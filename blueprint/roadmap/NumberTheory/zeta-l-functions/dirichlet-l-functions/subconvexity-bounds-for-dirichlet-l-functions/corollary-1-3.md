@@ -1,6 +1,6 @@
 # Petrow–Young Weyl bound on the critical line
 
-**Petrow–Young Weyl bound on the critical line.** For every real $\varepsilon > 0$ there is a
+For every real $\varepsilon > 0$ there is a
 real number $C$ such that for every cube-free natural number $q$ (that is, $q > 0$ and $p^3$ does
 not divide $q$ for any prime $p$), every primitive Dirichlet character $\chi$ modulo $q$ and
 every real $t$, the analytically continued Dirichlet $L$-function satisfies

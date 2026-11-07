@@ -1,6 +1,6 @@
 # Pass versus a pile of one stone in Wythoff's game
 
-**Pass versus a pile of one stone in Wythoff's game.** Let $\mathcal{G}_1(x, y, p)$ be the
+Let $\mathcal{G}_1(x, y, p)$ be the
 Grundy numbers of Wythoff's game with a pass, where $p = 1$ means the pass is still available,
 and let $\mathcal{G}_2(x, y, p)$ be the Grundy numbers of the sum of Wythoff's game and a pile of
 $p \in \{0, 1\}$ stones. If $x \ge 9$ or $y \ge 9$, then $\mathcal{G}_1(x, y, 1) = 0$ if and only

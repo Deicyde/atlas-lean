@@ -1,6 +1,6 @@
 # Number of multifold partition diamonds
 
-**Number of multifold partition diamonds.** Let $d_1, \dots, d_M$ be natural numbers. Put
+Let $d_1, \dots, d_M$ be natural numbers. Put
 $L_k = \sum_{m=1}^{k} (d_m + 1)$ for $0 \le k \le M$ and $c = L_M + 1$. A multifold partition
 diamond of shape $(d_1, \dots, d_M)$ is a sequence $(b_0, \dots, b_{c-1})$ of nonnegative integers
 such that $b_{L_{k-1}} \le b_{L_{k-1} + f} \le b_{L_k}$ for all $1 \le k \le M$ and

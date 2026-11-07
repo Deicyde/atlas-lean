@@ -1,6 +1,6 @@
 # Coefficients of qMZVs as polynomial functions on partitions
 
-**Coefficients of qMZVs as polynomial functions on partitions.** Let $r \ge 1$ and let
+Let $r \ge 1$ and let
 $(k_1, Q_1), \dots, (k_r, Q_r)$ be pairs of a natural number $k_j$ and a polynomial
 $Q_j \in \mathbb{Q}[X]$ with $\deg Q_j \le k_j$ for every $j$ and $Q_1(0) = 0$. For $s, N \ge 0$
 let $\mathcal{P}_s(N)$ be the set of pairs $(\mathbf{m}, \mathbf{n})$ of tuples

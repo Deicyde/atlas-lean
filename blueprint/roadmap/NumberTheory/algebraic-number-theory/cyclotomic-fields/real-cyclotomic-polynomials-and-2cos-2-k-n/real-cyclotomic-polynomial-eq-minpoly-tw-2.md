@@ -1,6 +1,6 @@
 # Minimal polynomial of $2\cos(2\pi k/n)$ for $1 \le k \le n$ coprime to $n$
 
-**Minimal polynomial of $2\cos(2\pi k/n)$ for $1 \le k \le n$ coprime to $n$.** Let $n$ and
+Let $n$ and
 $k$ be natural numbers with $n > 2$, $1 \le k \le n$ and $\gcd(k, n) = 1$. Then the real
 cyclotomic polynomial $\psi_n$ equals the minimal polynomial over $\mathbb{Z}$ of the complex
 number $2\cos(2\pi k/n)$.

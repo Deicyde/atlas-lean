@@ -1,6 +1,6 @@
 # The function with prescribed prime-power values is $1$ at $1$
 
-**The function with prescribed prime-power values is $1$ at $1$.** Let $R$ be a commutative
+Let $R$ be a commutative
 monoid with zero and $g : \mathbb{N} \to R$. The multiplicative function with prime-power values
 $g$, given by $n \mapsto \prod_{q \mid n} g(v_q(n))$ for $n \ge 1$ (with $q$ running over the
 primes dividing $n$ and $v_q(n)$ the exponent of $q$ in $n$), takes the value $1$ at $n = 1$,

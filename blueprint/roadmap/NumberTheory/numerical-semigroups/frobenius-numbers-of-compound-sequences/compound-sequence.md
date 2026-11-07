@@ -1,6 +1,6 @@
 # Compound sequence
 
-**Compound sequence.** Let $n$ be a natural number and let $a = (a_i)$ and $b = (b_i)$ be
+Let $n$ be a natural number and let $a = (a_i)$ and $b = (b_i)$ be
 sequences of natural numbers. For a natural number $j$, the $j$-th term of the compound sequence
 of $a$ and $b$ is
 

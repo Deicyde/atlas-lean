@@ -1,6 +1,6 @@
 # Dvoretzky–Rogers theorem
 
-**Dvoretzky–Rogers theorem.** Every infinite-dimensional real Banach space $E$ contains a series
+Every infinite-dimensional real Banach space $E$ contains a series
 that converges unconditionally but not absolutely: there is a sequence $(x_n)_{n \ge 0}$ in $E$
 such that the rearranged series $\sum_n x_{\sigma(n)}$ converges for every permutation $\sigma$
 of $\mathbb{N}$, while $\sum_n \lVert x_n \rVert$ diverges.

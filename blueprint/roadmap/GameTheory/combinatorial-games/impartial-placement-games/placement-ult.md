@@ -1,6 +1,6 @@
 # Ults of a placement game
 
-**Ults of a placement game.** Let $\alpha$ be a finite set of cells and let $E$ be a predicate
+Let $\alpha$ be a finite set of cells and let $E$ be a predicate
 on subsets of $\alpha$, the condition under which play has ended. A position $S \subseteq \alpha$
 is an ult when it is not terminal but has a terminal option: $S$ is not terminal, and there is a
 cell $c \notin S$ such that $S \cup \{c\}$ is terminal.

@@ -1,6 +1,6 @@
 # Polanco's floor identity for $\lfloor (2 - \alpha) n \rfloor$
 
-**Polanco's floor identity for $\lfloor (2 - \alpha) n \rfloor$.** Let $\alpha$ be an
+Let $\alpha$ be an
 irrational real number with $1 < \alpha < 2$, let $\beta$ be a real number with
 $\alpha^{-1} + \beta^{-1} = 1$, and write $a_m = \lfloor m\alpha \rfloor$ and
 $b_m = \lfloor m\beta \rfloor$ for integers $m$ (so $b_0 = 0$). Then for every positive

@@ -1,6 +1,6 @@
 # OOZ qMZVs respect the OOZ quasi-shuffle product
 
-**OOZ qMZVs respect the OOZ quasi-shuffle product.** Identify words in letters $z_k$ with
+Identify words in letters $z_k$ with
 lists $(k_1, \dots, k_r)$ of natural numbers, and call such a word admissible if every
 $k_i \ge 1$ and, when $r \ge 1$, $k_1 \ge 2$. Let $T$ send the empty word $\mathbf{1}$ to
 $\mathbf{1}$ and a word $z_n v$ with first letter $z_n$ to the formal $\mathbb{Q}$-linear

@@ -1,6 +1,6 @@
 # Ceiling parity count
 
-**Ceiling parity count.** For a natural number $n$, the ceiling parity count $\mathcal{C}_n$
+For a natural number $n$, the ceiling parity count $\mathcal{C}_n$
 is the number of integers $k$ with $1 \le k \le n$ for which $\lceil n/k \rceil$ is odd
 (OEIS A330926).
 

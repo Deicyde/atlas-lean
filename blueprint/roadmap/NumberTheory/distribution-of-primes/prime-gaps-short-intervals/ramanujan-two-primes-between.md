@@ -1,6 +1,6 @@
 # Ramanujan's two-primes refinement of Bertrand's postulate
 
-**Ramanujan's two-primes refinement of Bertrand's postulate.** For every natural number
+For every natural number
 $n \ge 6$ there are primes $p$ and $q$ with $n < p < q < 2n$; that is, the open interval
 $(n, 2n)$ contains two distinct primes.
 

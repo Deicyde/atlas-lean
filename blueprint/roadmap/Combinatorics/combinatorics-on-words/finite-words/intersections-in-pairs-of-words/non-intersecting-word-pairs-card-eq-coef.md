@@ -1,6 +1,6 @@
 # Non-intersecting pairs of words
 
-**Non-intersecting pairs of words.** Fix natural numbers $k$, $n \ge 1$ and $r \ge 1$, and call
+Fix natural numbers $k$, $n \ge 1$ and $r \ge 1$, and call
 a pair of words over an alphabet of $k$ letters non-intersecting when no letter occurs in both.
 Write $[x^m] F$ for the coefficient of $x^m$ in a formal power series $F$ over $\mathbb{Q}$ and
 $S(m, j)$ for the Stirling numbers of the second kind. Let $N$ be the number of non-intersecting

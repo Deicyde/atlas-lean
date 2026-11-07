@@ -1,6 +1,6 @@
 # Weighted central binomial sum
 
-**Weighted central binomial sum.** For a sequence $a = (a_k)_{k \ge 0}$ of rational numbers
+For a sequence $a = (a_k)_{k \ge 0}$ of rational numbers
 and natural numbers $r$ and $n$, the weighted central binomial sum is the rational number
 
 $$S_r^a(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r a_k,$$

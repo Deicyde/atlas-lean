@@ -1,6 +1,6 @@
 # The count of overpartition pairs of $0$ with even parts distinct
 
-**The count of overpartition pairs of $0$ with even parts distinct.** For natural numbers
+For natural numbers
 $j \ge 1$ and $k \ge 1$, the number $\mathrm{bped}_{j,k}(0)$ of $[j, k]$-overpartition pairs of $0$
 with even parts distinct equals $1$ (the pair of empty overpartitions).
 

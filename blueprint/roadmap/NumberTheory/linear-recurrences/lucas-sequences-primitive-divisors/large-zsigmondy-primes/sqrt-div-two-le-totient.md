@@ -1,6 +1,6 @@
 # Square-root lower bound for Euler's totient
 
-**Square-root lower bound for Euler's totient.** For every positive integer $n$,
+For every positive integer $n$,
 $\varphi(n) \ge \sqrt{n}/2$, where $\varphi$ is Euler's totient function.
 
 ## Sources

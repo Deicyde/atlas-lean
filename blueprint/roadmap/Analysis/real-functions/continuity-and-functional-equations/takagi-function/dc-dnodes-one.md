@@ -1,6 +1,6 @@
 # The divide-and-conquer D-node count at one leaf
 
-**The divide-and-conquer D-node count at one leaf.** The divide-and-conquer D-node count
+The divide-and-conquer D-node count
 $\delta$ satisfies $\delta(1) = 0$.
 
 ## Sources

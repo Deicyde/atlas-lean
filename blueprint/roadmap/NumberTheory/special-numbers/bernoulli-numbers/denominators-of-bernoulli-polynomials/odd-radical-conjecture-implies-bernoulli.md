@@ -1,6 +1,6 @@
 # The odd radical conjecture implies the integral-derivative conjecture
 
-**The odd radical conjecture implies the integral-derivative conjecture.** For $n \ge 1$, let
+For $n \ge 1$, let
 $\mathbb{D}_n$ be the product of the primes $p$ with $s_p(n) \ge p$, where $s_p(n)$ is the sum of
 the base-$p$ digits of $n$, and let $\operatorname{rad}(m)$ be the product of the distinct primes
 dividing $m$. Let $\overline{\mathcal{S}}$ be the set of $n \ge 1$ such that the derivative

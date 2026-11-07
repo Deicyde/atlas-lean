@@ -1,6 +1,6 @@
 # Landmines of the comma sequence
 
-**Landmines of the comma sequence.** Let $b \ge 2$ and let $n$ be a positive integer. Then no
+Let $b \ge 2$ and let $n$ be a positive integer. Then no
 digit $y < b$ is a comma candidate for $n$ in base $b$ (so $n$ has no comma successor) if and
 only if the base-$b$ representation of $n$, most significant digit first, is
 $(b-1) \cdots (b-1)\, x\, (b-1-x)$ with some number $i \ge 0$ of leading digits $b - 1$ and

@@ -1,6 +1,6 @@
 # A square–triangular number identity
 
-**A square–triangular number identity.** Let $t_v = v(v + 1)/2$ denote the $v$-th triangular
+Let $t_v = v(v + 1)/2$ denote the $v$-th triangular
 number. For every natural number $n \ge 2$, $n^2 + t_{n-2} = (n - 1)^2 + t_n$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Eventual log-concavity of the hyper-Leonardo numbers of positive order
 
-**Eventual log-concavity of the hyper-Leonardo numbers of positive order.** For all natural
+For all natural
 numbers $r \ge 1$ and $n \ge 2$, the hyper-Leonardo numbers $Le^{(r)}_n$ of order $r$ satisfy
 $Le^{(r)}_{n-1} Le^{(r)}_{n+1} \le (Le^{(r)}_n)^2$.
 

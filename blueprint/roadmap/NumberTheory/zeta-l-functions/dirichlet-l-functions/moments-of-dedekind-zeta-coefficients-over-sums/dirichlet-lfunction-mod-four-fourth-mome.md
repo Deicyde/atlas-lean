@@ -1,6 +1,6 @@
 # Fourth moment of the $L$-function modulo $4$
 
-**Fourth moment of the $L$-function modulo $4$.** Let $\chi$ be a nontrivial Dirichlet
+Let $\chi$ be a nontrivial Dirichlet
 character modulo $4$ and let $\varepsilon > 0$. Then there is a real constant $C$ such that for
 every real $T \ge 1$, $\int_1^T |L(1/2 + it, \chi)|^4 \, dt \le C\, T^{1 + \varepsilon}$.
 

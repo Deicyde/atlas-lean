@@ -1,6 +1,6 @@
 # Radon transform on the plane
 
-**Radon transform on the plane.** For $f : \mathbb{R}^2 \to \mathbb{C}$ and
+For $f : \mathbb{R}^2 \to \mathbb{C}$ and
 $p, \theta \in \mathbb{R}$, the Radon transform of $f$ at $(p, \theta)$ is the integral of $f$
 along the line $x \cos\theta + y \sin\theta = p$ with respect to arc length,
 

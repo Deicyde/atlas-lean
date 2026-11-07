@@ -1,6 +1,6 @@
 # Correctness of the inverse FFT
 
-**Correctness of the inverse FFT.** Let $N = 2^d$, let $\omega \in \mathbb{C}$ be a primitive
+Let $N = 2^d$, let $\omega \in \mathbb{C}$ be a primitive
 $N$-th root of unity and let $x \in \mathbb{C}^N$. For every $k < N$, entry $k$ of the output of
 the inverse FFT procedure on $x$ with root $\omega$ equals $N^{-1}$ times the discrete Fourier sum
 of length $N$ with root $\overline{\omega}$ at frequency $k$ of the sequence $j \mapsto x_j$ (set

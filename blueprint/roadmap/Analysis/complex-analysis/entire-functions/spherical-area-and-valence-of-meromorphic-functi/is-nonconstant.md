@@ -1,6 +1,6 @@
 # Germ-wise nonconstant function
 
-**Germ-wise nonconstant function.** A function $f\colon \mathbb{C} \to \mathbb{C}$ is
+A function $f\colon \mathbb{C} \to \mathbb{C}$ is
 nonconstant if there are points $u, v \in \mathbb{C}$ at which $f$ is complex differentiable and
 $f(u) \ne f(v)$.
 

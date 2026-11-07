@@ -1,6 +1,6 @@
 # Minimal period of a lex-minimal extension
 
-**Minimal period of a lex-minimal extension.** Let $m \ge 1$ and let
+Let $m \ge 1$ and let
 $\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of $(e_1, \dots, e_m)$. For
 $1 \le i \le m$ let $A_i = (e_1 + \dots + e_i)/i$, and let $A_{\max}$ be the largest of
 $A_1, \dots, A_m$. Let $g$ be the greatest common divisor of the indices $1 \le i \le m$ with

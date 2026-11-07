@@ -1,4 +1,4 @@
 # The CTL operator AF (inevitably)
 
-**The CTL operator AF (inevitably).** `AF φ`: every maximal path reaches a state satisfying `φ`, as
+`AF φ`: every maximal path reaches a state satisfying `φ`, as
 `A[⊤ U φ]`.

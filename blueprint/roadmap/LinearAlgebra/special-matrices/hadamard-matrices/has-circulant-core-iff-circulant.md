@@ -1,6 +1,6 @@
 # A circulant core is a circulant submatrix
 
-**A circulant core is a circulant submatrix.** Let $n$ be a natural number and let $H$ be an
+Let $n$ be a natural number and let $H$ be an
 $(n + 1) \times (n + 1)$ integer matrix with rows and columns indexed by $0, 1, \dots, n$. Then
 $H$ has a circulant core, meaning that there is a function
 $v \colon \{0, \dots, n - 1\} \to \mathbb{Z}$ with $H_{i+1, j+1} = v(i - j)$ for all

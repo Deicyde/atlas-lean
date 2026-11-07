@@ -1,6 +1,6 @@
 # The PEND condition
 
-**The PEND condition.** A multiset $s$ of natural numbers (the parts of a partition)
+A multiset $s$ of natural numbers (the parts of a partition)
 satisfies the PEND condition when no even number occurs in $s$ exactly once; equivalently,
 every even part that occurs in $s$ has multiplicity at least $2$, so the even parts are not
 distinct.

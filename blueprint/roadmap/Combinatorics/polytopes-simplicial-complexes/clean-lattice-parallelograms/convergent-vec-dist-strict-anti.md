@@ -1,6 +1,6 @@
 # Distances of the convergent vectors to the line $y = (n / a) x$
 
-**Distances of the convergent vectors to the line $y = (n / a) x$.** Let $1 \le a < n$ be
+Let $1 \le a < n$ be
 coprime integers, let $n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of
 $n / a$, where $m$ is the least index at which it terminates, and let $v_j = (B_j, A_j)$ be its
 convergent vectors. For $p = (x, y) \in \mathbb{R}^2$ let $d(p) = |n x - a y| / \sqrt{n^2 + a^2}$

@@ -1,6 +1,6 @@
 # Simultaneous diagonalization by congruence
 
-**Simultaneous diagonalization by congruence.** Let $S$ and $P$ be real square matrices with rows
+Let $S$ and $P$ be real square matrices with rows
 and columns indexed by a finite set $n$, where $S$ is symmetric and $P$ is positive definite. Then
 there is an invertible real matrix $C$, indexed by $n$, such that $C^{\mathsf T} S C$ is diagonal
 and $C^{\mathsf T} P C$ is the identity matrix.

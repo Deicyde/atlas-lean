@@ -1,6 +1,6 @@
 # Upper bound for continuous Turán numbers of stacked patterns
 
-**Upper bound for continuous Turán numbers of stacked patterns.** Let $d \ge 2$ and $t \ge 2$
+Let $d \ge 2$ and $t \ge 2$
 be natural numbers and let $c > 0$. For $P \subseteq \mathbb{R}^d$ let
 $Q_{P,t,c} = \{(x, ic) : x \in P,\ i \in \{1, \dots, t\}\} \subseteq \mathbb{R}^{d+1}$. Then there
 is a real constant $K$, depending only on $d$, $t$ and $c$, such that for every

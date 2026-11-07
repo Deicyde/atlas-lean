@@ -1,6 +1,6 @@
 # The Cook–Levin reduction
 
-**The Cook–Levin reduction.** Let $V$ be a polynomial-time Turing machine that computes a
+Let $V$ be a polynomial-time Turing machine that computes a
 Boolean function on pairs of bit strings, reading a pair $(a, y)$ as the bits of $a$, a separator,
 then the bits of $y$, and writing its answer as one bit; let $t$ be its time bound and fix
 constants $c \ge 1$ and $e$ with $t(j) \le (j + c)^e$ for all $j$. For a polynomial $p$ with

@@ -1,6 +1,6 @@
 # Lower bound for bounded subsequence sums of a mixed-sign sequence
 
-**Lower bound for bounded subsequence sums of a mixed-sign sequence.** Let $1 \le n \le p$, let
+Let $1 \le n \le p$, let
 $t_0, \dots, t_{n-1}$ and $t_{n+1}, \dots, t_{n+p}$ be positive integers, let $h$ be their sum,
 and let $\alpha, \beta$ be natural numbers with $1 \le \alpha$ and $\alpha + \beta \le h - 1$.
 Put $\bar r = (t_0, \dots, t_{n-1}, h - \alpha - \beta, t_{n+1}, \dots, t_{n+p})$. For integers

@@ -1,6 +1,6 @@
 # Zero-sum van der Waerden theorem
 
-**Zero-sum van der Waerden theorem.** For every positive integer $n$, the family over
+For every positive integer $n$, the family over
 $\mathbb{Z}/n\mathbb{Z}$ sending a block $(b_1, \dots, b_l)$ to $\sum_i b_i$ is vanishing: for
 every $m > 0$, every sequence over $\mathbb{Z}/n\mathbb{Z}$ contains $m$ consecutive blocks of a
 common length $l > 1$, each with sum zero.

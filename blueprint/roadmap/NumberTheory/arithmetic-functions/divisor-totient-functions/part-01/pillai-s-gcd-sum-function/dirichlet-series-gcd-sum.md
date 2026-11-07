@@ -1,6 +1,6 @@
 # Dirichlet series of the gcd-sum function
 
-**Dirichlet series of the gcd-sum function.** For $n \ge 1$ let
+For $n \ge 1$ let
 $g(n) = \sum_{i=1}^{n} \gcd(n, i)$. For every complex number $s$ with $\operatorname{Re} s > 2$,
 the series $\sum_{n \ge 1} g(n)/n^s$ sums to $\zeta(s-1)^2/\zeta(s)$, where $\zeta$ is the
 Riemann zeta function.

@@ -1,6 +1,6 @@
 # The weak form of Erdős Problem 707 is false
 
-**The weak form of Erdős Problem 707 is false.** It is not the case that every finite Sidon set
+It is not the case that every finite Sidon set
 $A \subseteq \mathbb{N}$ is contained in a perfect difference set modulo $m^2 + m + 1$ for some
 natural number $m \ge 1$: there is a finite Sidon set $A \subseteq \mathbb{N}$ such that for every
 $m \ge 1$, no set $B \subseteq \mathbb{N}$ with $A \subseteq B$ is a perfect difference set modulo

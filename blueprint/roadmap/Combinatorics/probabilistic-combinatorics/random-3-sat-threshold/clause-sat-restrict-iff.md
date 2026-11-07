@@ -1,6 +1,6 @@
 # Satisfying a clause through a restricted assignment
 
-**Satisfying a clause through a restricted assignment.** Let $A$ assign a Boolean value to
+Let $A$ assign a Boolean value to
 every natural-number variable, and let $c$ be a 3-clause on the $n$ variables $0, \dots, n - 1$.
 Then the restriction of $A$ to these $n$ variables satisfies $c$ if and only if $A$ satisfies
 the CNF clause of $c$: the list with one literal $(i, p_i)$ for each of the three variables $i$

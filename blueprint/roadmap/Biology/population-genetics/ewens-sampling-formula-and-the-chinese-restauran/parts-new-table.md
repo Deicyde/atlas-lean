@@ -1,3 +1,3 @@
 # Blocks of the partition after opening a new table
 
-**Blocks of the partition after opening a new table.** The blocks of `newTable π`.
+The blocks of `newTable π`.

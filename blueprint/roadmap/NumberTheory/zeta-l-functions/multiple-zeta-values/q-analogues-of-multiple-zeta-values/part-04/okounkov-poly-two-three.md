@@ -1,6 +1,6 @@
 # The Okounkov polynomials $p_2$ and $p_3$
 
-**The Okounkov polynomials $p_2$ and $p_3$.** The Okounkov polynomials of index $2$ and $3$
+The Okounkov polynomials of index $2$ and $3$
 are $p_2(X) = X$ and $p_3(X) = X(1 + X)$.
 
 ## Sources

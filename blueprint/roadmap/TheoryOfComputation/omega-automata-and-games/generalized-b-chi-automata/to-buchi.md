@@ -1,6 +1,6 @@
 # Degeneralization of a generalized Büchi automaton
 
-**Degeneralization of a generalized Büchi automaton.** Let $g$ be a generalized Büchi
+Let $g$ be a generalized Büchi
 automaton with $k$ acceptance sets. Its degeneralization is the Büchi automaton over the same
 alphabet whose states are the pairs $(s, i)$ of a state $s$ of $g$ and a counter value
 $i \in \{0, \dots, k\}$. On a symbol $x$ there is a transition from $(s, i)$ to $(s', i')$ iff $g$

@@ -1,6 +1,6 @@
 # Right-down diagonal families of order $k$
 
-**Right-down diagonal families of order $k$.** For a natural number $k$, a family
+For a natural number $k$, a family
 $(A_j)_{0 \le j \le k+1}$ of integer sequences $A_j : \mathbb{N} \to \mathbb{Z}$ is a family of
 right-down diagonal sequences of order $k$ when $k \ge 1$ and, for every $j$ and every natural
 number $n \ge \lfloor k/2 \rfloor + 1$,

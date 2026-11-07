@@ -1,6 +1,6 @@
 # Compositions of $5$ into even or small odd parts
 
-**Compositions of $5$ into even or small odd parts.** $c^1_e(5) = 10$ and $c^3_e(5) = 15$,
+$c^1_e(5) = 10$ and $c^3_e(5) = 15$,
 where $c^{2k+1}_e(n)$ is the number of compositions of $n$ in which every part is even or at
 most $2k + 1$.
 

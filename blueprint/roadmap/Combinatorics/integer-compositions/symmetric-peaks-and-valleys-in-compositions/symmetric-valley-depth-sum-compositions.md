@@ -1,6 +1,6 @@
 # Generating function for the total depth of symmetric valleys over compositions
 
-**Generating function for the total depth of symmetric valleys over compositions.** For
+For
 $n \ge 0$, let $\operatorname{dsv}(n)$ be the sum, over all compositions $c$ of $n$, of the total
 depth of the symmetric valleys of the sequence of parts of $c$. Then in the ring $\mathbb{Z}[[x]]$
 of formal power series,

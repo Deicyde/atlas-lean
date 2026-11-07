@@ -1,6 +1,6 @@
 # Parametric two-adic multisection
 
-**Parametric two-adic multisection.** Let $q \in \mathbb{C}$ and let $b : \mathbb{N} \to
+Let $q \in \mathbb{C}$ and let $b : \mathbb{N} \to
 \mathbb{C}$ be a sequence (its value at $0$ is not used). Suppose that the families
 $(q^j b_{(2n-1) 2^j})$ and $(q^j (q - 1) b_{2n \cdot 2^j})$, indexed by the pairs $(j, n)$ of
 natural numbers with $n \ge 1$, are summable. Then

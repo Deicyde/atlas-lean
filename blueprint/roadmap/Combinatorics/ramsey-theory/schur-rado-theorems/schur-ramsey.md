@@ -1,6 +1,6 @@
 # Schur's theorem
 
-**Schur's theorem.** For every integer $r \ge 1$ there is a natural number $S$ such that for
+For every integer $r \ge 1$ there is a natural number $S$ such that for
 every coloring of the natural numbers with $r$ colors there are $x, y, z \in \{1, \dots, S\}$,
 not necessarily distinct, with the same color and $x + y = z$.
 

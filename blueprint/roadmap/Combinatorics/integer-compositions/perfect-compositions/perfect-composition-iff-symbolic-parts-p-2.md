@@ -1,6 +1,6 @@
 # Munagi's theorem on perfect compositions
 
-**Munagi's theorem on perfect compositions.** Call a list $L$ of positive integers perfect for
+Call a list $L$ of positive integers perfect for
 $n$ if for every integer $m$ with $0 < m < n$ there is exactly one list of integers that is a
 sublist of $L$ (its entries taken in order, not necessarily contiguous) and has sum $m$. A
 symbolic part $(a, u)$ with $a, u > 0$ stands for a run of $u$ copies of $a$, and the expansion

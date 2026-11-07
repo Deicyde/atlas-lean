@@ -1,3 +1,3 @@
 # Monotonicity of bounded runs in time and resources
 
-**Monotonicity of bounded runs in time and resources.** Increasing time and resource bounds preserves initialized runs.
+Increasing time and resource bounds preserves initialized runs.

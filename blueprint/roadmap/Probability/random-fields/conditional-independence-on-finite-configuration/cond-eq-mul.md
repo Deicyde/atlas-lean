@@ -1,6 +1,6 @@
 # Conditional independence in ratio form
 
-**Conditional independence in ratio form.** Let $V$ and $\alpha$ be finite types, let $p$ be a
+Let $V$ and $\alpha$ be finite types, let $p$ be a
 real-valued weight on the configurations $x : V \to \alpha$, and for $U \subseteq V$ write
 $p(x_U)$ for the marginal of $p$ on $U$ at $x$. If, for $A, B, S \subseteq V$, the variables in
 $A$ and in $B$ are conditionally independent given those in $S$ under $p$, then every

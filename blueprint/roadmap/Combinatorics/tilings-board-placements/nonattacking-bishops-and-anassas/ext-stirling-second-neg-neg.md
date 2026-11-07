@@ -1,6 +1,6 @@
 # Extended Stirling numbers at negative arguments
 
-**Extended Stirling numbers at negative arguments.** For all positive integers $a$ and $b$,
+For all positive integers $a$ and $b$,
 the extended Stirling number of the second kind at $(-a, -b)$ equals the unsigned Stirling number
 of the first kind $c(b, a)$, the number of permutations of $b$ elements with exactly $a$ cycles.
 

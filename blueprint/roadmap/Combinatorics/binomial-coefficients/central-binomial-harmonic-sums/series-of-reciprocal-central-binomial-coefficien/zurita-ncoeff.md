@@ -1,6 +1,6 @@
 # Coefficients of Zurita's polynomial $N_{n-2}$
 
-**Coefficients of Zurita's polynomial $N_{n-2}$.** For natural numbers $n$ and $k$, let $m_k$
+For natural numbers $n$ and $k$, let $m_k$
 be Zurita's coefficient, given by $m_0 = 2/(2n - 1)$ and
 $m_k = \frac{2(k - n)}{2k - 2n + 1}\, m_{k-1}$ for $k \ge 1$. This is the rational number
 $m_k / (2(k - n + 1))$, taken to be $0$ when $k = n - 1$. For $k \le n - 2$ it is the

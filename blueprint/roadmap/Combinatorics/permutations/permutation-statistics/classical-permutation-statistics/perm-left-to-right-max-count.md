@@ -1,6 +1,6 @@
 # Number of left-to-right maxima
 
-**Number of left-to-right maxima.** For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$,
+For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$,
 $\mathrm{lmax}(\sigma)$ is the number of positions $i$ such that $\sigma(j) < \sigma(i)$ for
 every position $j < i$, that is, the number of entries larger than every entry to their left.
 

@@ -1,6 +1,6 @@
 # Derivability in Hoare logic for partial correctness
 
-**Derivability in Hoare logic for partial correctness.** Here an assertion is a predicate on
+Here an assertion is a predicate on
 states, and an assertion $P$ entails an assertion $P'$ when every state satisfying $P$ satisfies
 $P'$. For an assertion $P$ and a Boolean expression $b$, the assertion $P \land b$ holds in a
 state when $P$ holds there and $b$ evaluates to true in it, and the assertion $P \land \lnot b$

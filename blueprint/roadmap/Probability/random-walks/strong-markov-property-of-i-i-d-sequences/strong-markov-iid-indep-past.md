@@ -1,6 +1,6 @@
 # Strong Markov property (independence from the past)
 
-**Strong Markov property (independence from the past).** Let $X_0, X_1, \dots$ be measurable
+Let $X_0, X_1, \dots$ be measurable
 random variables on a probability space $(\Omega, \mu)$ with values in a measurable space $S$,
 mutually independent and all with the same distribution. Let $(\mathcal F_n)_{n \ge 0}$ be a
 filtration with $\mathcal F_n \subseteq \sigma(X_0, \dots, X_n)$ for every $n$, and let

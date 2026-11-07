@@ -1,6 +1,6 @@
 # The SAT-to-3SAT emitter machine
 
-**The SAT-to-3SAT emitter machine.** The emitter is the multi-stack machine on the stacks
+The emitter is the multi-stack machine on the stacks
 $T, O, U, Z, W, C$ of the emitter ($O$ holds bits, the others token symbols), with the labels of
 the emitter and one internal Boolean variable. A unit is the clause symbol, and prepending bits
 $b_1, \dots, b_k$ to $O$ pushes them so that $O$ reads $b_1, \dots, b_k$ from the top. The labels

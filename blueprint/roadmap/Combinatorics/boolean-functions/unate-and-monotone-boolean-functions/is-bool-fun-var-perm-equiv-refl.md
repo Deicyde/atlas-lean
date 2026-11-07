@@ -1,6 +1,6 @@
 # Permutation equivalence is reflexive
 
-**Permutation equivalence is reflexive.** Every $n$-variable Boolean function is
+Every $n$-variable Boolean function is
 permutation-equivalent to itself.
 
 ## Sources

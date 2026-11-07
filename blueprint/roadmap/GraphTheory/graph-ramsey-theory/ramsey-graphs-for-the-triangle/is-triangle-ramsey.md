@@ -1,6 +1,6 @@
 # Ramsey graphs for the triangle
 
-**Ramsey graphs for the triangle.** A graph $G$ on the vertex set $\{0, \dots, n - 1\}$ is
+A graph $G$ on the vertex set $\{0, \dots, n - 1\}$ is
 $r$-Ramsey for the triangle when every colouring $c$ of the ordered pairs of vertices with $r$
 colours that is symmetric ($c(a, b) = c(b, a)$) admits three distinct vertices $u, v, w$ that form
 a triangle in $G$ with $c(u, v) = c(v, w) = c(w, u)$.

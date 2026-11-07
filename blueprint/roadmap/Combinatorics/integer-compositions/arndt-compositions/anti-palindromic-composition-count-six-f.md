@@ -1,6 +1,6 @@
 # Anti-palindromic compositions of 6 with four parts
 
-**Anti-palindromic compositions of 6 with four parts.** There are exactly four
+There are exactly four
 anti-palindromic compositions of $6$ with four parts, and exactly one reduced anti-palindromic
 composition of $6$ with four parts.
 

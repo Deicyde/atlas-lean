@@ -1,6 +1,6 @@
 # The generalized Padovan–Perrin fundamental sequences solve the recurrence
 
-**The generalized Padovan–Perrin fundamental sequences solve the recurrence.** Let $R$ be a
+Let $R$ be a
 commutative semiring, $k_1, k_2 \in R$ and $p, s \in \mathbb{N}$. For every natural number $j$,
 the $j$-th sequence $v^{(j)}$ of the Fibonacci fundamental system is a solution of the
 $([k]; p; s)$-Padovan–Perrin recurrence.

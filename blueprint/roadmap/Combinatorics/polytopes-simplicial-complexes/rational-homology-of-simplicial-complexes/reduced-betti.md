@@ -1,6 +1,6 @@
 # Reduced rational Betti numbers
 
-**Reduced rational Betti numbers.** For a finite family $K$ of finite subsets of $\mathbb{N}$
+For a finite family $K$ of finite subsets of $\mathbb{N}$
 and $k \in \mathbb{N}$, let $f_k$ be the number of faces of $K$ with $k$ vertices and let
 $\partial_k$ be the boundary matrix of $K$ from the faces with $k + 1$ vertices to the faces with
 $k$ vertices. The reduced Betti number of $K$ indexed by $k$ is the integer

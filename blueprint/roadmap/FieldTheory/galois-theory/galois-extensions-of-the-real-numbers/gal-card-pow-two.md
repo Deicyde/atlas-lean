@@ -1,6 +1,6 @@
 # Galois groups over the reals have order a power of 2
 
-**Galois groups over the reals have order a power of 2.** If $E$ is a finite Galois extension
+If $E$ is a finite Galois extension
 of $\mathbb{R}$, then the Galois group $\mathrm{Gal}(E/\mathbb{R})$ has order $2^n$ for some natural
 number $n$.
 

@@ -1,6 +1,6 @@
 # Deterministic context-free language
 
-**Deterministic context-free language.** A language is deterministic context-free when some deterministic
+A language is deterministic context-free when some deterministic
 pushdown automaton with finite state and stack alphabets, whose
 transitions consume letters from a finite set, accepts by empty stack
 exactly the end-marker encodings of its words.

@@ -1,6 +1,6 @@
 # Recursion for the Euclidean chain function
 
-**Recursion for the Euclidean chain function.** For natural numbers $x$ and $y$ with $y \ne 0$,
+For natural numbers $x$ and $y$ with $y \ne 0$,
 the Euclidean chain function $F$ satisfies $F(x, y) = 1 + F(y, (-x) \bmod y)$, where
 $(-x) \bmod y$ is the least nonnegative residue of $-x$ modulo $y$.
 

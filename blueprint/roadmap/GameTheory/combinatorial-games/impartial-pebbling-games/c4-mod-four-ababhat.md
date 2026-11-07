@@ -1,6 +1,6 @@
 # The set $\hat Y_{abab}$ of $C_4$ positions
 
-**The set $\hat Y_{abab}$ of $C_4$ positions.** A position $a = (a_0, a_1, a_2, a_3)$ of
+A position $a = (a_0, a_1, a_2, a_3)$ of
 natural-number pebble counts on the vertices $v_0, v_1, v_2, v_3$ of $C_4$ lies in
 $\hat Y_{abab}$ when $a_0 \equiv a_2 \pmod 4$ and $a_1 \equiv a_3 \pmod 4$.
 

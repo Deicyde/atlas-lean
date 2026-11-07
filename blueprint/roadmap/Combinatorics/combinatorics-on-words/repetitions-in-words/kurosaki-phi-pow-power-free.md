@@ -1,6 +1,6 @@
 # Kurosaki's words are $(7/4)^+$-power-free
 
-**Kurosaki's words are $(7/4)^+$-power-free.** On the alphabet $\{1, 2, 3\}$, let $\sigma$ be the
+On the alphabet $\{1, 2, 3\}$, let $\sigma$ be the
 permutation that swaps $1$ and $2$ and fixes $3$, let $\rho$ be the permutation that swaps $2$ and
 $3$ and fixes $1$, and for a finite word $w$ let $\varphi(w) = \sigma(w)\,w\,\rho(w)$, where
 $\sigma(w)$ and $\rho(w)$ apply the permutation to each letter of $w$. Call $p \ge 1$ a period of

@@ -1,6 +1,6 @@
 # Name copy loop of the 3SAT emitter
 
-**Name copy loop of the 3SAT emitter.** Let $f$ and $e$ be booleans, $R$ a token list whose
+Let $f$ and $e$ be booleans, $R$ a token list whose
 first token, if there is one, is not a name bit, $z$ and $c$ natural numbers, $b_1, \dots, b_m$
 bits, $v$ a flag and $o$ an output bit list. Then there is a flag $v'$ such that the 3SAT emitter
 machine, started at the copy label for $(f, e)$ with flag $v$, token stack the name-bit tokens

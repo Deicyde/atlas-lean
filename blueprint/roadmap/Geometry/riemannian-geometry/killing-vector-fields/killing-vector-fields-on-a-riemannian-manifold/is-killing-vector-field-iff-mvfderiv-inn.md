@@ -1,6 +1,6 @@
 # Killing fields are those with vanishing Lie derivative of the metric
 
-**Killing fields are those with vanishing Lie derivative of the metric.** Let $M$ be a smooth
+Let $M$ be a smooth
 Riemannian manifold with metric $g = \langle \cdot, \cdot \rangle$. A vector field $X$ on $M$ is
 a Killing vector field if and only if $X$ is smooth and, for every point $x \in M$ and all vector
 fields $Y$ and $Z$ on $M$ that are differentiable at $x$,

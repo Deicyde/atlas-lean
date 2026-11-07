@@ -1,6 +1,6 @@
 # Congruences for overcubic partition triples at arguments congruent to 2 modulo 4
 
-**Congruences for overcubic partition triples at arguments congruent to 2 modulo 4.** Let
+Let
 $\mathrm{bt}(n)$ be the number of overcubic partition triples of $n$. For all natural numbers $n$
 and $\alpha$, both $\mathrm{bt}(16n+14)$ and $\mathrm{bt}(16n+10)$ are divisible by $16$; each of
 $\mathrm{bt}(144n+66)$, $\mathrm{bt}(144n+114)$, $\mathrm{bt}(1296n+594)$, $\mathrm{bt}(1296n+1026)$

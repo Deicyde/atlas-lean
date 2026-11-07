@@ -1,6 +1,6 @@
 # Cuckoo eviction loop
 
-**Cuckoo eviction loop.** The eviction loop takes a cuckoo hash table with hash functions $h_1$
+The eviction loop takes a cuckoo hash table with hash functions $h_1$
 and $h_2$, a key–value pair $(k, v)$, a choice of the first or second table, and a natural
 number as fuel, and either returns a table or fails. With fuel $0$ it fails. With fuel $n + 1$
 and the first table chosen, it writes $(k, v)$ into slot $h_1(k)$ of the first table; if that

@@ -1,6 +1,6 @@
 # Reachable states of an encoded DFA
 
-**Reachable states of an encoded DFA.** For an encoded DFA $D$ over an alphabet $\alpha$ with
+For an encoded DFA $D$ over an alphabet $\alpha$ with
 decidable equality, the reachable states of $D$ form the list returned by the bounded reachability
 search on lists of states started at the start state of $D$, kept inside the states of $D$, in
 which the successors of a state $s$ are the states that the transition function of $D$ takes $s$

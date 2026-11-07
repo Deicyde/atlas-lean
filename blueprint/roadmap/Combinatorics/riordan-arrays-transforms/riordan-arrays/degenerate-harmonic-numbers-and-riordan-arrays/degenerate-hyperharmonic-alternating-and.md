@@ -1,6 +1,6 @@
 # Alternating and binomial sums of degenerate hyperharmonic numbers
 
-**Alternating and binomial sums of degenerate hyperharmonic numbers.** Let $\lambda > 0$ and
+Let $\lambda > 0$ and
 $\alpha > 0$ be real numbers and let $n$ be a natural number. Write $H_{m,\lambda}(\alpha)$ for the
 generalized degenerate harmonic numbers, $H^s_{m,\lambda}(\alpha)$ for the generalized degenerate
 hyperharmonic numbers of order $s$, and $D_{n,\lambda}$ for the degenerate Daehee numbers. Then

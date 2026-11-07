@@ -1,3 +1,3 @@
 # One-relator group
 
-**One-relator group.** A group `G` is called one-relator if it has a presentation with a single relation.
+A group `G` is called one-relator if it has a presentation with a single relation.

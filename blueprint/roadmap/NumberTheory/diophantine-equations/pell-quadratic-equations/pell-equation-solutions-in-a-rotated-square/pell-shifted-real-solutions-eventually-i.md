@@ -1,6 +1,6 @@
 # Shifted real Pell solutions eventually lie in the closed quadrants
 
-**Shifted real Pell solutions eventually lie in the closed quadrants.** Let $D$ be an integer
+Let $D$ be an integer
 and let $(\alpha, \beta)$ be a fundamental solution of $X^2 - DY^2 = 1$, that is, an integer
 solution with $\alpha > 1$ and $\beta > 0$ such that $\alpha \le X$ for every integer solution
 $(X, Y)$ with $X > 1$ (one exists only when $D$ is positive and not a square). For real $x$ let

@@ -1,6 +1,6 @@
 # The counter program
 
-**The counter program.** For a polynomial $k$ with natural-number coefficients, whose
+For a polynomial $k$ with natural-number coefficients, whose
 coefficient list $\kappa_0, \dots, \kappa_{D-1}$ has length $D$, and $c, e, d \in \mathbb{N}$,
 the counter program is the program with the labels of the counter program for $D$ Horner rounds
 that acts on a Boolean output stack and on the scratch and target counters of the counter

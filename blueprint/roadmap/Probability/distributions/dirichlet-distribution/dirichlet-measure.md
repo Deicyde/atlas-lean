@@ -1,6 +1,6 @@
 # Dirichlet distribution
 
-**Dirichlet distribution.** Let $\alpha = (\alpha_0, \dots, \alpha_n) \in \mathbb{R}^{n+1}$, let
+Let $\alpha = (\alpha_0, \dots, \alpha_n) \in \mathbb{R}^{n+1}$, let
 $D_\alpha$ be the unnormalized Dirichlet density on $\mathbb{R}^n$ with parameters $\alpha$, and let
 $B(\alpha) = \prod_{i=0}^{n} \Gamma(\alpha_i) / \Gamma(\sum_{i=0}^{n} \alpha_i)$ be the
 multivariate Beta function. The Dirichlet distribution $\mathrm{Dir}(\alpha)$ is the measure on

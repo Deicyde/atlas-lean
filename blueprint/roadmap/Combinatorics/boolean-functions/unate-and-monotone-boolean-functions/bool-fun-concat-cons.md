@@ -1,6 +1,6 @@
 # Evaluating a concatenation
 
-**Evaluating a concatenation.** For $n$-variable Boolean functions $g$ and $h$, every
+For $n$-variable Boolean functions $g$ and $h$, every
 $b \in \{0, 1\}$ and every $x \in \{0, 1\}^n$, the concatenation $g \,\|\, h$ takes the value $g(x)$
 at the input $(b, x_1, \dots, x_n)$ if $b = 0$ and the value $h(x)$ there if $b = 1$.
 

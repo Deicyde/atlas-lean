@@ -1,6 +1,6 @@
 # Deterministic time classes on multi-tape machines
 
-**Deterministic time classes on multi-tape machines.** For $t : \mathbb{N} \to \mathbb{N}$,
+For $t : \mathbb{N} \to \mathbb{N}$,
 $\mathrm{DTIME}(t)$ is the set of languages $L$ of Boolean strings for which there are constants
 $c_1, c_2 \in \mathbb{N}$, a function $s : \mathbb{N} \to \mathbb{N}$ and a deterministic
 multi-tape Turing machine with Boolean tape alphabet and finitely many states such that, on every

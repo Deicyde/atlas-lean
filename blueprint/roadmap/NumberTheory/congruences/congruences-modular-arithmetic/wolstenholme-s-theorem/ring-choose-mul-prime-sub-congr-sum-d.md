@@ -1,6 +1,6 @@
 # The general congruence for $\binom{np}{kp}$
 
-**The general congruence for $\binom{np}{kp}$.** Let $p$ be a prime, let $m$ and $k$ be
+Let $p$ be a prime, let $m$ and $k$ be
 natural numbers with $m + 1 < p$, and let $n$ be an integer. For an integer $x$ and a natural
 number $r$ write $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$, and let $v_p$ be the $p$-adic
 valuation on $\mathbb{Q}$. For natural numbers $j$ and $l$ put

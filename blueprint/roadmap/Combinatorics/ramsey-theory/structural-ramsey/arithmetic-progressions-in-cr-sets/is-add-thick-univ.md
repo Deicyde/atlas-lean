@@ -1,6 +1,6 @@
 # The whole commutative semigroup is thick
 
-**The whole commutative semigroup is thick.** If $S$ is a nonempty commutative semigroup,
+If $S$ is a nonempty commutative semigroup,
 then $S$ itself is a thick subset of $S$.
 
 ## Sources

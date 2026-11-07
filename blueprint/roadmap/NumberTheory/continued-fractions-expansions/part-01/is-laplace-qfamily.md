@@ -1,6 +1,6 @@
 # Laplace Q-polynomial families
 
-**Laplace Q-polynomial families.** Let $R$ be a semiring and let $(P_k)_{k \ge 0}$ and
+Let $R$ be a semiring and let $(P_k)_{k \ge 0}$ and
 $(Q_k)_{k \ge 0}$ be sequences of polynomials in $R[X]$. The sequence $(Q_k)$ is a Laplace
 Q-polynomial family companion to $(P_k)$ when $Q_0 = 1$ and, for every natural number $k \ge 1$,
 

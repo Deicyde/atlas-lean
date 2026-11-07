@@ -1,6 +1,6 @@
 # There is a PSPACE language outside L (space-hierarchy separation)
 
-**There is a PSPACE language outside L (space-hierarchy separation).** There is a decision
+There is a decision
 problem that belongs to PSPACE but not to the class $\mathsf{L}$ of decision problems decidable
 in deterministic logarithmic space.
 

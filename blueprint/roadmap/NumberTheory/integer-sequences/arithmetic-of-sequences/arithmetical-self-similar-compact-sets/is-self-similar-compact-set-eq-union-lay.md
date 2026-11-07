@@ -1,6 +1,6 @@
 # Decomposition of a self-similar compact set into layers
 
-**Decomposition of a self-similar compact set into layers.** Let $K$ be a self-similar
+Let $K$ be a self-similar
 compact set of module $\mu$ and ratio $\rho$, and for $u \ge 0$ let
 $T_u = K^{(u)} \setminus K^{(u+1)}$, where $K^{(u)}$ is the $u$-th derived set of $K$. Then
 

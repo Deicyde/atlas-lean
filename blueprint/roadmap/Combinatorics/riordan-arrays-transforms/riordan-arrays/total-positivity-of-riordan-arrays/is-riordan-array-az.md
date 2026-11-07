@@ -1,6 +1,6 @@
 # Riordan array with given A- and Z-sequences
 
-**Riordan array with given A- and Z-sequences.** For real sequences $(a_n)_{n \ge 0}$ and
+For real sequences $(a_n)_{n \ge 0}$ and
 $(z_n)_{n \ge 0}$, an infinite real matrix $R = (r_{n,k})_{n,k \ge 0}$ is the Riordan array with
 $A$-sequence $(a_n)$ and $Z$-sequence $(z_n)$ when $r_{0,0} = 1$, $r_{0,k} = 0$ for $k \ge 1$, and
 for all $n, k \ge 0$

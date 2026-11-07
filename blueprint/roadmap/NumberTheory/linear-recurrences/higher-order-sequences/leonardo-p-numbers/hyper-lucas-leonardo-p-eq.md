@@ -1,6 +1,6 @@
 # Hyper Lucas–Leonardo numbers from incomplete ones
 
-**Hyper Lucas–Leonardo numbers from incomplete ones.** For natural numbers $p \ge 1$, $n > p$
+For natural numbers $p \ge 1$, $n > p$
 and $k \ge 1$, write $R_{p,m}$ for the Lucas–Leonardo $p$-numbers and $R_{p,m}(j)$ for the
 incomplete Lucas–Leonardo $p$-numbers. Then the hyper Lucas–Leonardo $p$-number $R^{(k)}_{p,n}$
 satisfies

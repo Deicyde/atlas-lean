@@ -1,6 +1,6 @@
 # Compatible semiprimes
 
-**Compatible semiprimes.** Natural numbers $p, q, r, s$ form a compatible semiprime pair,
+Natural numbers $p, q, r, s$ form a compatible semiprime pair,
 and the semiprimes $pq$ and $rs$ are called compatible, when $p, q, r, s$ are primes with
 $2(r + s) = p + q$ and $2rs = 3pq + 1$; equivalently, $r$ and $s$ are the roots of
 $2x^2 - (p + q)x + 3pq + 1 = 0$.

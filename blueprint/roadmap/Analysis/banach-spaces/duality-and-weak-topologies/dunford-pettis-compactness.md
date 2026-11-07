@@ -1,6 +1,6 @@
 # Dunford–Pettis weak compactness criterion
 
-**Dunford–Pettis weak compactness criterion.** Let $\mu$ be a finite measure on a measurable
+Let $\mu$ be a finite measure on a measurable
 space $\alpha$ and let $(f_i)_{i \in \iota}$ be a family of integrable real functions on $\alpha$.
 The family is uniformly integrable, meaning that it is bounded in $L^1(\mu)$ and that for every
 $\varepsilon > 0$ there is $\delta > 0$ with $\int_s |f_i| \, d\mu \le \varepsilon$ for every $i$

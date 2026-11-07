@@ -1,6 +1,6 @@
 # Ramanujan's series for powers of the Catalan generating function
 
-**Ramanujan's series for powers of the Catalan generating function.** Let $n$ and $a$ be real
+Let $n$ and $a$ be real
 numbers with $|a| \le 1/4$. For a natural number $k$ put $t_k = 0$ if $k < 2$, and
 
 $$t_k = \frac{a^k}{k!} \prod_{j=k+1}^{2k-1} (n + j)$$

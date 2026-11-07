@@ -1,3 +1,3 @@
 # Weight of a family off one coordinate
 
-**Weight of a family off one coordinate.** `fmarg` with coordinate `i` omitted from the weights.
+`fmarg` with coordinate `i` omitted from the weights.

@@ -1,6 +1,6 @@
 # Prime powers fixed by a uniform power sum of their prime factors
 
-**Prime powers fixed by a uniform power sum of their prime factors.** For positive integers $y$
+For positive integers $y$
 and $s$, let $T_s(y) = \sum_q e_q q^s$, where $q$ runs over the primes dividing $y$ and $e_q$ is
 the exponent of $q$ in $y$, so that each prime factor is counted with multiplicity. Let $p$ be a
 prime, let $m$ be a positive integer and let $y = p^m$. Then for every positive integer $s$,

@@ -1,6 +1,6 @@
 # The odd cotangent derivatives in Watson's expansion are negative
 
-**The odd cotangent derivatives in Watson's expansion are negative.** Let $r$, $n$ and $\nu$ be
+Let $r$, $n$ and $\nu$ be
 natural numbers with $r \ge 1$ and $1 \le \nu \le n - 1$. Then
 $\mathcal{H}_{2r-1}(\nu/n) = \cot^{(2r-1)}(\pi\nu/n)$, the $(2r-1)$st derivative of the cotangent
 evaluated at $\pi\nu/n$, is strictly negative.

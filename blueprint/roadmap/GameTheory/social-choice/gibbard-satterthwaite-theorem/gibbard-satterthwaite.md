@@ -1,6 +1,6 @@
 # Gibbard–Satterthwaite theorem
 
-**Gibbard–Satterthwaite theorem.** Let the set of alternatives be finite and the set of voters be
+Let the set of alternatives be finite and the set of voters be
 finite and nonempty, and suppose there are at least three distinct alternatives. Then every
 resolute social choice function on profiles of strict preference orders that is onto and
 strategy-proof is dictatorial.

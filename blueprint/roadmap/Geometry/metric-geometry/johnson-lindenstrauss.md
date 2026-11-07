@@ -1,6 +1,6 @@
 # Johnson–Lindenstrauss lemma
 
-**Johnson–Lindenstrauss lemma.** There is a constant $C > 0$ with the following property. Let
+There is a constant $C > 0$ with the following property. Let
 $\varepsilon > 0$, let $m$ and $N \ge 2$ be natural numbers, let $X$ be a set of exactly $N$
 points of $\mathbb{R}^m$ with the Euclidean norm, and let $d$ be a natural number with
 $d > C \varepsilon^{-2} \log N$. Then there is a map $f : \mathbb{R}^m \to \mathbb{R}^d$ such

@@ -1,6 +1,6 @@
 # Two-sided periodic points with growing seed
 
-**Two-sided periodic points with growing seed.** Let $\eta$ map each letter of an alphabet
+Let $\eta$ map each letter of an alphabet
 $A$ to a finite word over $A$, extended to finite words by concatenation, with iterates
 $\eta^k$; let $u = (u_i)_{i \in \mathbb{Z}}$ be a two-sided word over $A$ and let $p$ be a
 natural number. Then $u$ is a periodic point of $\eta$ with growing seed and least period $p$

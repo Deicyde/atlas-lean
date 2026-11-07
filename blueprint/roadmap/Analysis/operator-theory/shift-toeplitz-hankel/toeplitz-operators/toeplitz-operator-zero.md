@@ -1,3 +1,3 @@
 # Toeplitz operator of the zero symbol
 
-**Toeplitz operator of the zero symbol.** The zero symbol gives the zero operator.
+The zero symbol gives the zero operator.

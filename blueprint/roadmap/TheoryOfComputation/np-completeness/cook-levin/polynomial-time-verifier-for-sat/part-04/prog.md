@@ -1,6 +1,6 @@
 # The tokenizer program
 
-**The tokenizer program.** The tokenizer is a multi-stack machine with stacks $X$ (formula
+The tokenizer is a multi-stack machine with stacks $X$ (formula
 bits), $W$ (witness bits), $T$ (tokens), $B$ (table) and the unary counters $CC$, $LC$ (over the
 unit symbol $\mathsf{cl}$), and one bit of internal state. Its instruction at each label is:
 

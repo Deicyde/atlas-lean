@@ -1,6 +1,6 @@
 # The Gamma quadratic ratio
 
-**The Gamma quadratic ratio.** For complex numbers $a$, $b$ and $z$, the Gamma quadratic ratio
+For complex numbers $a$, $b$ and $z$, the Gamma quadratic ratio
 is $g(a, b, z) = \dfrac{b}{b - z} \cdot
 \dfrac{\Gamma(a - \sqrt{a^2 - b})\, \Gamma(a + \sqrt{a^2 - b})}
 {\Gamma(a - \sqrt{a^2 - b + z})\, \Gamma(a + \sqrt{a^2 - b + z})}$, where $\sqrt{\cdot}$ is the

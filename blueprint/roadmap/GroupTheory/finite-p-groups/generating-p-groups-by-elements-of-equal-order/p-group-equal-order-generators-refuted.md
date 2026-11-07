@@ -1,6 +1,6 @@
 # Finite p-groups without a generating set of elements of equal order
 
-**Finite p-groups without a generating set of elements of equal order.** For some odd prime $p$
+For some odd prime $p$
 there is a finite $p$-group $G$ such that no generating set of $G$ consists of elements that all
 have the same order. This answers Kourovka Problem 11.6 (Bagiński) in the negative (O'Brien,
 Scoppola and Vaughan-Lee).

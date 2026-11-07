@@ -1,6 +1,6 @@
 # Restricted-overlap tilings
 
-**Restricted-overlap tilings.** Let $Q$ be a finite set of natural numbers and let $q$ be its
+Let $Q$ be a finite set of natural numbers and let $q$ be its
 largest element ($q = 0$ if $Q$ is empty). The $Q$-comb is a piece of length $q + 1$ whose cell
 $0$ and cells $j \in Q$ are teeth and whose other cells are gaps. A restricted-overlap tiling of an
 $n$-board (cells $0, \dots, n - 1$) with squares and $k$ $Q$-combs is recorded by the set $P$ of

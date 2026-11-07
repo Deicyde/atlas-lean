@@ -1,6 +1,6 @@
 # Anti-palindromic compositions of 6 with three parts
 
-**Anti-palindromic compositions of 6 with three parts.** There are exactly eight
+There are exactly eight
 anti-palindromic compositions of $6$ with three parts.
 
 ## Sources

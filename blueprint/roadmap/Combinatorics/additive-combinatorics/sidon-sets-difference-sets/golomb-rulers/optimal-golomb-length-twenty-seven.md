@@ -1,6 +1,6 @@
 # Optimal 27-mark Golomb ruler
 
-**Optimal 27-mark Golomb ruler.** The optimal Golomb ruler length with $27$ marks is $553$.
+The optimal Golomb ruler length with $27$ marks is $553$.
 
 ## Sources
 

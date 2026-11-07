@@ -1,6 +1,6 @@
 # A product identity for Ramanujan's $f(q)f(q^3)f(q^5)f(q^{15})$
 
-**A product identity for Ramanujan's $f(q)f(q^3)f(q^5)f(q^{15})$.** Let $q$ be a complex
+Let $q$ be a complex
 number with $|q| < 1$. Write $f_k = \prod_{m \ge 1} (1 - q^{km})$, and let
 $f(x) = \prod_{m \ge 1} (1 - (-x)^m) = (-x; -x)_\infty$ be Ramanujan's function. Then
 

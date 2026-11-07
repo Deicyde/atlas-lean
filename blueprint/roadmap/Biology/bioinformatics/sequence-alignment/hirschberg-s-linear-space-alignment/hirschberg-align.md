@@ -1,6 +1,6 @@
 # Hirschberg reconstruction with fuel
 
-**Hirschberg reconstruction with fuel.** Fix a substitution score $\sigma$ assigning an
+Fix a substitution score $\sigma$ assigning an
 integer to each pair of letters and an integer gap score $g$, and write $\mathrm{NW}$ for the
 Needleman–Wunsch score. For a sequence $s$, write $s_{\lt j}$ for its first $j$ letters and
 $s_{\ge j}$ for the remaining letters. The Hirschberg reconstruction of sequences $x$ and $y$

@@ -1,6 +1,6 @@
 # Yield of a sentential form
 
-**Yield of a sentential form.** For a context-free grammar $g$ with terminal alphabet
+For a context-free grammar $g$ with terminal alphabet
 $T$, the relation "the sentential form $u$ yields the terminal word $w$" is the smallest
 relation such that: the empty form yields the empty word; if $u$ yields $w$, then for every
 terminal $a$ the form $a u$ yields $a w$; and if $A \to \alpha$ is a production of $g$,

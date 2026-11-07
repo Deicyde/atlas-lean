@@ -1,6 +1,6 @@
 # Characterization of smooth words
 
-**Characterization of smooth words.** For a natural number $n$, let $\mathcal{R}_n$ be the
+For a natural number $n$, let $\mathcal{R}_n$ be the
 set of smooth words of length $n$, defined as the words $w = w_1 \cdots w_n$ with letters in
 $\{1, \dots, n\}$ such that $w_1 = 1$ when $n \ge 1$, and $w_{k+1} \le w_k + 1$ and
 $w_k \le w_{k+1} + 1$ for $1 \le k < n$. A word $w = w_1 \cdots w_n$ of natural numbers belongs

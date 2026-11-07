@@ -1,6 +1,6 @@
 # Recurrence for the bi-periodic Fibonacci numbers squared
 
-**Recurrence for the bi-periodic Fibonacci numbers squared.** For elements $a$ and $b$ of a
+For elements $a$ and $b$ of a
 field $K$ and every $n \ge 0$, the bi-periodic Fibonacci numbers squared $q^2_m$ satisfy
 
 $$

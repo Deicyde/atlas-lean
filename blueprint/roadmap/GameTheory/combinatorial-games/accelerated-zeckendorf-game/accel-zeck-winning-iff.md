@@ -1,6 +1,6 @@
 # Characterization of winning states
 
-**Characterization of winning states.** A state $s$ is winning if and only if some move
+A state $s$ is winning if and only if some move
 takes $s$ to a losing state.
 
 ## Sources

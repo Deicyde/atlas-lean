@@ -1,6 +1,6 @@
 # Fourier solution of the Airy equation
 
-**Fourier solution of the Airy equation.** For $u_0 : \mathbb{R} \to \mathbb{C}$, let
+For $u_0 : \mathbb{R} \to \mathbb{C}$, let
 $\widehat{u_0}(\xi) = (2\pi)^{-1/2} \int_{\mathbb{R}} u_0(y) e^{-iy\xi}\,dy$ be its unitary
 Fourier transform. The Airy solution with initial datum $u_0$ is the function
 $u : \mathbb{R}^2 \to \mathbb{C}$ given by

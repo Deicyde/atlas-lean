@@ -1,6 +1,6 @@
 # Solutions of the $N$-body problem
 
-**Solutions of the $N$-body problem.** Let $E$ be a finite-dimensional real inner product
+Let $E$ be a finite-dimensional real inner product
 space, let $N$ be a natural number, give $E^N$ the inner product
 $\langle u, v \rangle = \sum_i \langle u_i, v_i \rangle$, and let
 $m = (m_1, \dots, m_N) \in \mathbb{R}^N$ be masses. Let

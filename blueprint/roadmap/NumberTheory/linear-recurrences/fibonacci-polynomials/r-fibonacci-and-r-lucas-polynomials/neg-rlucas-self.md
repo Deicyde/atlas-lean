@@ -1,6 +1,6 @@
 # The $r$-th term of the companion sequence $V^{(-r)}$
 
-**The $r$-th term of the companion sequence $V^{(-r)}$.** Let $A$ be a commutative ring,
+Let $A$ be a commutative ring,
 $r \ge 1$ a natural number, $x \in A$ and $y$ a unit of $A$. The companion sequence of the
 $(-r)$-Fibonacci polynomials satisfies $V^{(-r)}_r(x, y) = r y^{-1}$.
 

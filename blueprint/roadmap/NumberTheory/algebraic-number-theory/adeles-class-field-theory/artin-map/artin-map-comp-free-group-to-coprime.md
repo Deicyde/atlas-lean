@@ -1,6 +1,6 @@
 # The Artin map factors the free-group Frobenius map
 
-**The Artin map factors the free-group Frobenius map.** Let $L/K$ be an abelian Galois
+Let $L/K$ be an abelian Galois
 extension of number fields and $\mathfrak m$ a modulus of $K$ with finite part $\mathfrak m_0$,
 such that every prime of $\mathcal O_K$ not dividing $\mathfrak m_0$ is unramified in $L$. Let
 $F$ be the free group on the primes $\mathfrak p$ of $\mathcal O_K$ not dividing $\mathfrak m_0$,

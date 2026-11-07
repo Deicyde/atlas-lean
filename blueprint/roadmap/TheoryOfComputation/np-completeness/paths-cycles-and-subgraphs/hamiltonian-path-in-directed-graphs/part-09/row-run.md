@@ -1,6 +1,6 @@
 # A row entered at one end is run to the other end
 
-**A row entered at one end is run to the other end.** Let $\varphi$ be a CNF formula with
+Let $\varphi$ be a CNF formula with
 $m$ clauses and $n$ distinct variables. For $k \le n$ let $t_k = m + k(3m + 2)$ be the top of
 diamond $k$, and for $k < n$ let row $k$ consist of the vertices $t_k + 1 + l$ with
 $0 \le l \le 3m$; its left end is $t_k + 1$ and its right end is $t_k + 1 + 3m$. Let $p$ be a

@@ -1,6 +1,6 @@
 # Buturlakin's theorem on locally finite groups of finite $c$-dimension
 
-**Buturlakin's theorem on locally finite groups of finite $c$-dimension.** There is a function
+There is a function
 $f : \mathbb{N} \to \mathbb{N}$ such that the following holds for every $k \in \mathbb{N}$. Let $G$
 be a locally finite group of $c$-dimension at most $k$, let $R$ be a normal locally soluble
 subgroup of $G$ that contains every normal locally soluble subgroup of $G$ (the locally soluble

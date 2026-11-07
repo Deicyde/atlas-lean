@@ -1,6 +1,6 @@
 # Grundy-one positions of Wythoff's game lie near P-positions
 
-**Grundy-one positions of Wythoff's game lie near P-positions.** Let
+Let
 $\mathcal{G}_1(x, y, 0)$ be the Grundy number of the position $(x, y, 0)$ of Wythoff's game with
 a pass, in which the pass has been used; this is the Grundy number of $(x, y)$ in classical
 Wythoff's game. If $\mathcal{G}_1(x, y, 0) = 1$, then there are $v, w \in \mathbb{N}$ with

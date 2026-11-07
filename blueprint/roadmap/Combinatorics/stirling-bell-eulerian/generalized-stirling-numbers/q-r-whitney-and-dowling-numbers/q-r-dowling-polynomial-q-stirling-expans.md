@@ -1,6 +1,6 @@
 # (q, r)-Dowling polynomial expansion from the defining recurrences
 
-**(q, r)-Dowling polynomial expansion from the defining recurrences.** Let
+Let
 $q, m, r, x \in \mathbb{C}$ and $n \in \mathbb{N}$, and write $[k + 1]_q = \sum_{i=0}^{k} q^i$.
 Let $S$ and $W$ be complex-valued functions on pairs of natural numbers, and let $D(a, y)$ be a
 complex-valued function of $a \in \mathbb{N}$ and $y \in \mathbb{C}$, such that for all

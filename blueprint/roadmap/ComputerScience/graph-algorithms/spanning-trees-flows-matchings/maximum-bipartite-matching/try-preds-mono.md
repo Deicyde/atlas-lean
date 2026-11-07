@@ -1,6 +1,5 @@
 # Trying candidates keeps dead vertices dead
 
-**Trying candidates keeps dead vertices dead.**
 For a right vertex $j$, a test $\mathrm{ok}$ on left vertices, a map $\pi$ giving each left vertex
 an optional right vertex, and a search $s$ taking a right vertex and a dead set (a set of right
 vertices) to an optional path and a new dead set, write $T(l, D)$ for the optional path and the

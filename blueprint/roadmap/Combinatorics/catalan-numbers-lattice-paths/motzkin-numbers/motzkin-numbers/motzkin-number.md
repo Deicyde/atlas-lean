@@ -1,6 +1,6 @@
 # Motzkin numbers as a Catalan-weighted binomial sum
 
-**Motzkin numbers as a Catalan-weighted binomial sum.** Let $C_k$ denote the $k$-th Catalan
+Let $C_k$ denote the $k$-th Catalan
 number (OEIS A000108). For a natural number $n$, the $n$-th Motzkin number (OEIS A001006) is
 
 $$M(n) = \sum_{k=0}^{n} \binom{n}{2k} C_k.$$

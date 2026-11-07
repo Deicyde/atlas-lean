@@ -1,6 +1,6 @@
 # Alternating sum of $r$-Fibonacci polynomials
 
-**Alternating sum of $r$-Fibonacci polynomials.** Let $K$ be a field, let $r \ge 1$ be a
+Let $K$ be a field, let $r \ge 1$ be a
 natural number, let $x, y \in K$ with $1 + x + (-1)^r y \ne 0$, and write $U_j$ for the
 $r$-Fibonacci polynomial $U^{(r)}_j(x, y)$. Then for every natural number $n$,
 

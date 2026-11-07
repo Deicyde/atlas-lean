@@ -1,6 +1,6 @@
 # Poly-Bernoulli polynomials at zero
 
-**Poly-Bernoulli polynomials at zero.** For every natural number $n$ and every integer $k$, the
+For every natural number $n$ and every integer $k$, the
 poly-Bernoulli polynomial of degree $n$ and order $k$ evaluated at $0$ equals the
 poly-Bernoulli number of index $n$ and order $k$: $B_n^{(k)}(0) = B_n^{(k)}$.
 

@@ -1,6 +1,6 @@
 # Lambert bounds for the left factorial
 
-**Lambert bounds for the left factorial.** Let $n \ge 5$ be an integer, let
+Let $n \ge 5$ be an integer, let
 $!n = \sum_{k=0}^{n-1} k!$ be the left factorial, let
 $K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ be Kurepa's partial integral, let
 $h(y) = y e^y$ be the Lambert map, and let $a$ be a real number with $a \ge n - 1$ and

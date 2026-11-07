@@ -1,6 +1,6 @@
 # Bessel numbers of the first kind
 
-**Bessel numbers of the first kind.** For natural numbers $n$ and $k$ with $1 \le k \le n$, the
+For natural numbers $n$ and $k$ with $1 \le k \le n$, the
 Bessel number of the first kind is the rational number
 
 $$b(n,k) = \frac{(-1)^{n-k}\,(2n-k-1)!}{2^{n-k}\,(k-1)!\,(n-k)!}.$$

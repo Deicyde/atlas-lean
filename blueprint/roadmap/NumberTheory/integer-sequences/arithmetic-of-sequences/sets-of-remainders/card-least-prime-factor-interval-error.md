@@ -1,6 +1,6 @@
 # Counting integers with a given least prime factor in an interval
 
-**Counting integers with a given least prime factor in an interval.** Let $a$ and $t$ be
+Let $a$ and $t$ be
 positive integers and let $p$ be a prime. Let $N$ be the number of integers $m$ with
 $a + 1 \le m \le a + t$ that are divisible by $p$ and by no prime $q < p$. Then
 

@@ -1,6 +1,6 @@
 # Strong Schreier sets of given size and compositions
 
-**Strong Schreier sets of given size and compositions.** For all integers $n \ge 1$ and
+For all integers $n \ge 1$ and
 $m \ge 1$ and every natural number $\ell$, the number of $\ell$-strong Schreier sets
 $B \subseteq \{1, \dots, n\}$ with $n \in B$ and exactly $m$ elements equals the number of
 compositions of $n + \ell$ into exactly $m$ parts, each at least $\ell + 1$.

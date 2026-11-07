@@ -1,6 +1,6 @@
 # Diagonal congruences in $k$ variables are solvable
 
-**Diagonal congruences in $k$ variables are solvable.** Let $p$ be a prime and $k \ge 1$. For
+Let $p$ be a prime and $k \ge 1$. For
 all integers $a_1, \dots, a_k$ not divisible by $p$ and every integer $c$, there are integers
 $x_1, \dots, x_k$ with $a_1 x_1^k + \dots + a_k x_k^k \equiv c \pmod p$.
 

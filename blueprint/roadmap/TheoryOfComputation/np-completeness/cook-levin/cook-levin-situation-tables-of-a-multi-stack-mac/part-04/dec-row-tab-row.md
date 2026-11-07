@@ -1,6 +1,6 @@
 # C2' (decoding the table-driven row gives the next configuration)
 
-**C2' (decoding the table-driven row gives the next configuration).** Let $E$ be an encoding
+Let $E$ be an encoding
 of a machine $M$ with window depth $d$, let $H \ge d$ be a natural number, and let $c$ be a good
 configuration of $M$ (every symbol on every stack of $c$ lies in the effective alphabet of $E$)
 all of whose stacks have length at most $H - d$. Let $i$ be the situation index of $c$. Then the

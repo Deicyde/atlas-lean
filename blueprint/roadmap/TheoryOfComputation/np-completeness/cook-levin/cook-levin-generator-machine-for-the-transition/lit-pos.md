@@ -1,6 +1,6 @@
 # Position of a literal in a transition clause
 
-**Position of a literal in a transition clause.** Fix a layout with $K$ stacks and window
+Fix a layout with $K$ stacks and window
 depth $d$, a height bound $H$, and tables giving for each situation $i$ a current label $a(i)$, a
 next label $a'(i)$ and window symbol codes $w(i, k, r)$. The position of literal $j$ of clause
 $(t, i)$ is: for $j = 0$, the index of the label/state variable $a(i)$ at time $t$; for

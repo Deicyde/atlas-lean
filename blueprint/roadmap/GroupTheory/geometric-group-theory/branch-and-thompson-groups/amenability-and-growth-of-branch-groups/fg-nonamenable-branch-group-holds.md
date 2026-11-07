@@ -1,6 +1,6 @@
 # Non-amenable branch groups exist (Kourovka 15.14(a))
 
-**Non-amenable branch groups exist (Kourovka 15.14(a)).** There is a finitely generated branch
+There is a finitely generated branch
 group that is not amenable.
 
 The Kourovka Archive answers 15.14(a) "Such groups do exist" (Sidki and Wilson): their finitely

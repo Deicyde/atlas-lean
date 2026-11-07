@@ -1,6 +1,6 @@
 # Franklin's partition identity
 
-**Franklin's partition identity.** Let $k \ge 1$ and let $m$ and $n$ be natural numbers. The
+Let $k \ge 1$ and let $m$ and $n$ be natural numbers. The
 number of partitions of $n$ in which exactly $m$ distinct part sizes occur at least $k$ times
 equals the number of partitions of $n$ in which exactly $m$ distinct part sizes are divisible by
 $k$.

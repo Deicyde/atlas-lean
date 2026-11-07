@@ -1,6 +1,6 @@
 # Conjugacy in the holomorph of $\mathbb{Z}/n\mathbb{Z}$
 
-**Conjugacy in the holomorph of $\mathbb{Z}/n\mathbb{Z}$.** Let $n > 0$, let
+Let $n > 0$, let
 $A = \mathbb{Z}/n\mathbb{Z}$, and write $(a, u)$ for the element of the holomorph
 $A \rtimes A^\times$ with $a \in A$ and $u \in A^\times$. Two elements $(a, u)$ and $(b, v)$ are
 conjugate if and only if $u = v$ and there is a unit $y \in A^\times$ with $b \equiv y a$ modulo

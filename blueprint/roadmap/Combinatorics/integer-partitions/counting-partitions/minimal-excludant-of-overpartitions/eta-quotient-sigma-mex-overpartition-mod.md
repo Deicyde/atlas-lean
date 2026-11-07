@@ -1,6 +1,6 @@
 # Eta-quotient congruence for sums of overpartition minimal excludants
 
-**Eta-quotient congruence for sums of overpartition minimal excludants.** Let $r \ge 1$ and
+Let $r \ge 1$ and
 $k \ge 1$ be integers, and for $n \ge 0$ let $\sigma_r \overline{\mathrm{mex}}(n)$ be the sum, over
 all overpartitions of $n$, of the least positive integer occurring fewer than $r$ times among the
 non-overlined parts. Then there are integers $c_0, c_1, c_2, \dots$ such that for every complex $q$

@@ -1,6 +1,6 @@
 # Configuration stacks of the CLIQUE emitter
 
-**Configuration stacks of the CLIQUE emitter.** For a token stack $t$, an output stack $o$
+For a token stack $t$, an output stack $o$
 of bits, stacks $a$, $d$, $e$ of token symbols and natural numbers $c$ and $n$, this assigns to
 each stack of the CLIQUE emitter its contents: the token stack $T$ holds $t$, the output stack
 $O$ holds $o$, the name stack $A$ holds $a$, the walked-occurrence stack $D$ holds $d$, the

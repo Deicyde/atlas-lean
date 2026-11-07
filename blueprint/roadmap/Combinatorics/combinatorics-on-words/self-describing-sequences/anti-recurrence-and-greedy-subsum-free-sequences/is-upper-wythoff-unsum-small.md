@@ -1,6 +1,6 @@
 # The unsums up to 21
 
-**The unsums up to 21.** The unsums (OEIS A260317) that are at most $21$ are exactly
+The unsums (OEIS A260317) that are at most $21$ are exactly
 $1, 2, 3, 4, 5, 6, 8, 10, 11, 13, 14, 16, 19, 21$.
 
 ## Sources

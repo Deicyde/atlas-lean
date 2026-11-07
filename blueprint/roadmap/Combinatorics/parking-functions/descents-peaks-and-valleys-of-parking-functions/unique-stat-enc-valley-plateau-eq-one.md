@@ -1,6 +1,6 @@
 # Valley plateaus of a uniquely encoded parking function equal $1$
 
-**Valley plateaus of a uniquely encoded parking function equal $1$.** For a map
+For a map
 $g : \{0, \dots, n-1\} \to \{0, \dots, n-1\}$, its statistic encoding is the word of length
 $n - 1$ whose $k$-th letter, for $1 \le k \le n - 1$, is $<$, $=$ or $>$ according as
 $g(k-1) < g(k)$, $g(k-1) = g(k)$ or $g(k-1) > g(k)$. Let $f$ be a parking function of length $n$

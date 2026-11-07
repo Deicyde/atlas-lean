@@ -1,6 +1,6 @@
 # Isomorphism of affine virtual dihedral quandles
 
-**Isomorphism of affine virtual dihedral quandles.** Let $n > 0$, let $R_n$ be the dihedral
+Let $n > 0$, let $R_n$ be the dihedral
 quandle on $\mathbb{Z}/n\mathbb{Z}$ (with $x \triangleleft y = 2x - y$), and for
 $a \in \mathbb{Z}/n\mathbb{Z}$ and $u \in (\mathbb{Z}/n\mathbb{Z})^\times$ let $T_{a,u}$ be the
 permutation $x \mapsto a + u x$ of $R_n$. For all $a, b \in \mathbb{Z}/n\mathbb{Z}$ and

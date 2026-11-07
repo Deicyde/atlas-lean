@@ -1,6 +1,6 @@
 # Four-point intersections of constrained T's
 
-**Four-point intersections of constrained T's.** For a point $c \in \mathbb{R}^2$ and an angle
+For a point $c \in \mathbb{R}^2$ and an angle
 $\theta \in \mathbb{R}$, the constrained long-legged T $\bar T(c, \theta)$ is the union of the
 crossbar, the line $\{c + s(-\sin\theta, \cos\theta) : s \in \mathbb{R}\}$, and the stem, the ray
 $\{c + s(\cos\theta, \sin\theta) : s \ge 0\}$. For all $c_1, c_2 \in \mathbb{R}^2$ and

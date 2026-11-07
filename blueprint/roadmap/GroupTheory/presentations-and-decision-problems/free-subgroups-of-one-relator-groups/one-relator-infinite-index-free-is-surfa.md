@@ -1,6 +1,6 @@
 # Kourovka Problem 20.22 (statement)
 
-**Kourovka Problem 20.22 (statement).** The statement that every group $G$ with the following
+The statement that every group $G$ with the following
 properties is a surface group: $G$ is isomorphic to $\langle x_1, \dots, x_n \mid r \rangle$ for
 some $n \ge 0$ and some element $r$ of the free group on $x_1, \dots, x_n$; $G$ is neither free nor
 cyclic; and every subgroup of infinite index in $G$ is free. Here $G$ is a surface group if it is

@@ -1,6 +1,6 @@
 # Russo–Dye theorem
 
-**Russo–Dye theorem.** In a unital C*-algebra $A$, the norm closure of the convex hull of the
+In a unital C*-algebra $A$, the norm closure of the convex hull of the
 unitary elements of $A$ equals the closed unit ball $\{a \in A : \|a\| \le 1\}$.
 
 ## Sources

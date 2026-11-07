@@ -1,6 +1,6 @@
 # Legal move sequences in Slow A-Nim
 
-**Legal move sequences in Slow A-Nim.** Let $A$ be a finite set of natural numbers and $p$ a
+Let $A$ be a finite set of natural numbers and $p$ a
 position of Slow$A$-Nim on $n$ stacks. A finite sequence $S_1, \dots, S_m$ of sets of stacks is
 legal from $p$ when it is empty, or when $S_1$ is nonempty, $|S_1| \in A$, every stack in $S_1$
 holds at least one token in $p$, and $S_2, \dots, S_m$ is legal from the position obtained from

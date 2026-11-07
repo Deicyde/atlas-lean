@@ -1,6 +1,6 @@
 # Left child of the root of the Farey tree
 
-**Left child of the root of the Farey tree.** The left child of the root $(0/1, 1/1, 1/0)$
+The left child of the root $(0/1, 1/1, 1/0)$
 of the Farey tree is $(0/1, 1/2, 1/1)$.
 
 ## Sources

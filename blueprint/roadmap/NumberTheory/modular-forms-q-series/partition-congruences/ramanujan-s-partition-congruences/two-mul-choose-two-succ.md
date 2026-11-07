@@ -1,3 +1,3 @@
 # Twice a triangular number
 
-**Twice a triangular number.** For every natural number $a$, $2\binom{a+1}{2} = a(a+1)$.
+For every natural number $a$, $2\binom{a+1}{2} = a(a+1)$.

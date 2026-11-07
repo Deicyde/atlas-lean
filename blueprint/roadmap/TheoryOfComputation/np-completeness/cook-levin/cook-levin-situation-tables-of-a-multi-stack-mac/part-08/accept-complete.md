@@ -1,6 +1,6 @@
 # Completeness of the five clause families
 
-**Completeness of the five clause families.** Let $E$ be an encoding of the machine $M$, let
+Let $E$ be an encoding of the machine $M$, let
 $x$, $y$ and $Y$ be words over the input alphabet such that every letter of $y$ occurs in $Y$, and
 let $m$ and $T$ be natural numbers with $|xy| \le m$, where $xy$ is the concatenation. Let $d$ be
 the window depth of $M$, let $H = m + (T + 1)d + 1$ be the stack cap, and let $a$ be the

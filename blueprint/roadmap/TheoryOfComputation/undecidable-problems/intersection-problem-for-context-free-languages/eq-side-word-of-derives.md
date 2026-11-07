@@ -1,6 +1,6 @@
 # The analysis of derivations
 
-**The analysis of derivations.** Let $P$ be a list of dominoes, $\sigma$ a map assigning a word
+Let $P$ be a list of dominoes, $\sigma$ a map assigning a word
 over $\alpha$ to each domino, and $G$ the context-free grammar of the side grammar of $P$ for
 $\sigma$, with start nonterminal $S$ and terminals $\alpha \oplus \mathbb{N}$ (letters and
 indices). Let $u, v, x$ be words over $\alpha \oplus \mathbb{N}$. If $G$ derives the terminal word

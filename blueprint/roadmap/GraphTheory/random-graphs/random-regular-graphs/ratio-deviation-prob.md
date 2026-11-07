@@ -1,6 +1,6 @@
 # Deviation probability of the independence ratio of a random regular graph
 
-**Deviation probability of the independence ratio of a random regular graph.** For natural
+For natural
 numbers $n$ and $d$ and real numbers $c$ and $\varepsilon$, the probability that the independence
 ratio $\alpha(G)/n$ of a uniformly random $d$-regular simple graph $G$ on the vertex set
 $\{0, \dots, n - 1\}$ differs from $c$ by more than $\varepsilon$, where $\alpha(G)$ is the

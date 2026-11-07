@@ -1,6 +1,6 @@
 # Cells of a pushed prefix over a truncated stack
 
-**Cells of a pushed prefix over a truncated stack.** Let $e$ map elements of $\alpha$ to natural
+Let $e$ map elements of $\alpha$ to natural
 numbers, and for a list $L$ over $\alpha$ and $i \in \mathbb{N}$ let $L\langle i\rangle$ be $e$ of
 the entry of $L$ at position $i$ (counting from $0$), or $0$ if $L$ has at most $i$ entries.
 Subtraction of natural numbers is truncated at $0$. Let $P$ and $S$ be lists over $\alpha$ and

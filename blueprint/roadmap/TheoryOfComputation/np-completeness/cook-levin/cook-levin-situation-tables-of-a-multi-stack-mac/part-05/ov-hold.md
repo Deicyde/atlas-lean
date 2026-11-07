@@ -1,6 +1,6 @@
 # Overflow cells of the next row hold the table value
 
-**Overflow cells of the next row hold the table value.** Let $E$ be an encoding of a machine
+Let $E$ be an encoding of a machine
 $M$ with $K$ stacks and window depth $d$, and let $a$ be an assignment satisfying the cell-shift
 clause family of $E$'s layout and tables $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$,
 $\mathrm{pu}$ for $E$'s number of situations and bounds $T$ and $H$. Write $X[t, b]$ and

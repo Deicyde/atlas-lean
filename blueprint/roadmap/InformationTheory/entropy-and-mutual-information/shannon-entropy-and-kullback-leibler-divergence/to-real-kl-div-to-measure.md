@@ -1,6 +1,6 @@
 # Kullback–Leibler divergence of finite probability laws
 
-**Kullback–Leibler divergence of finite probability laws.** Let $p$ and $q$ be probability
+Let $p$ and $q$ be probability
 mass functions on a finite type $\alpha$ in which every singleton is measurable, such that
 $p(a) = 0$ whenever $q(a) = 0$, and let $P$ and $Q$ be the measures they define. Then the
 Kullback–Leibler divergence $\mathrm{KL}(P \parallel Q)$, taken as a real number, equals

@@ -1,6 +1,6 @@
 # Partial sums of SZ-star qMZVs
 
-**Partial sums of SZ-star qMZVs.** For an index $k = (k_1, \dots, k_r)$ of natural numbers and
+For an index $k = (k_1, \dots, k_r)$ of natural numbers and
 a bound $M \in \mathbb{N}$, the partial sum is the formal power series in $q$ over $\mathbb{Q}$
 
 $$

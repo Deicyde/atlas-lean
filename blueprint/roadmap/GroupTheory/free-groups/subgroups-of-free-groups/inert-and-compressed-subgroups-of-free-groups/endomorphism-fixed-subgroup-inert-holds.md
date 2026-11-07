@@ -1,6 +1,6 @@
 # Fixed subgroups of endomorphisms of free groups are inert
 
-**Fixed subgroups of endomorphisms of free groups are inert.** Let $n \in \mathbb{N}$, let $F_n$ be
+Let $n \in \mathbb{N}$, let $F_n$ be
 the free group on $n$ generators, and for a subgroup $H \le F_n$ let $r(H)$ be its rank, the least
 size of a finite generating set of $H$, or $\infty$ if $H$ is not finitely generated. For every
 endomorphism $\varphi$ of $F_n$, the fixed subgroup $\{x \in F_n \mid \varphi(x) = x\}$ of

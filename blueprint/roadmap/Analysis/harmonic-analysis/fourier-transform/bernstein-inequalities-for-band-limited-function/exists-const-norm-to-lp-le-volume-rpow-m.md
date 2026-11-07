@@ -1,6 +1,5 @@
 # Bernstein inequality for Schwartz functions with Fourier support of finite measure
 
-**Bernstein inequality for Schwartz functions with Fourier support of finite measure.**
 Fix $n \in \mathbb{N}$. For a Schwartz function $f : \mathbb{R}^n \to \mathbb{C}$ write
 $\hat f(\xi) = \int_{\mathbb{R}^n} f(x) e^{-2\pi i \langle x, \xi \rangle}\,dx$ for its Fourier
 transform, and write $|E|$ for the Lebesgue measure of a set $E \subseteq \mathbb{R}^n$. There

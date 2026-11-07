@@ -1,6 +1,6 @@
 # Run of the load phase of the 3-COLOR verifier
 
-**Run of the load phase of the 3-COLOR verifier.** Let $n$ be a natural number and $w$, $a$
+Let $n$ be a natural number and $w$, $a$
 lists of bits. Start the verifier at its load label, in any internal state, with stacks in which
 the counter $N$ holds exactly $n$ units, the witness stack $W$ holds $w$ and the scratch stack $T$
 holds $a$. Then within at most $n + 1$ steps the verifier reaches the label that moves the codes

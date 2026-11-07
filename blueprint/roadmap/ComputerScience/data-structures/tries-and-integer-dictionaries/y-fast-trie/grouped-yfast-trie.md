@@ -1,6 +1,6 @@
 # Grouped y-fast trie
 
-**Grouped y-fast trie.** For natural numbers $w$ and $B$, a grouped y-fast trie over $w$-bit
+For natural numbers $w$ and $B$, a grouped y-fast trie over $w$-bit
 keys with group bound $B$ consists of an x-fast trie over $w$-bit keys, which holds the
 representatives, and a list of groups, each a list of $w$-bit keys. The structure itself imposes
 no condition on these fields; the intended invariants (the representative trie is a valid x-fast

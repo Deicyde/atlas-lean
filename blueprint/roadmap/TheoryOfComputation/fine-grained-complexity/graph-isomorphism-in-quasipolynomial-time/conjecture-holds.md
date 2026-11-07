@@ -1,6 +1,6 @@
 # Babai's theorem: graph isomorphism in quasipolynomial time
 
-**Babai's theorem: graph isomorphism in quasipolynomial time.** The quasipolynomial graph
+The quasipolynomial graph
 isomorphism statement holds: there are a function $D$ from pairs of graph codes to Booleans, an
 exponent $c \in \mathbb{N}$, and a deterministic multi-stack Turing machine with a time function
 $t : \mathbb{N} \to \mathbb{N}$ that, on the bit encoding of every pair $(G, H)$, outputs the

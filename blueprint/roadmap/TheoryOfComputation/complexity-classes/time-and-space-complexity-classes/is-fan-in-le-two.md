@@ -1,6 +1,6 @@
 # Circuits of fan-in at most two
 
-**Circuits of fan-in at most two.** A flat Boolean circuit $C$ on $n$ inputs has fan-in at
+A flat Boolean circuit $C$ on $n$ inputs has fan-in at
 most two when every and gate, or gate and mod gate of $C$ has an argument list of length at
 most $2$.
 

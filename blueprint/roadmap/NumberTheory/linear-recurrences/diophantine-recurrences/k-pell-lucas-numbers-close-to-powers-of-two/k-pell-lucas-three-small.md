@@ -1,6 +1,6 @@
 # Two values of the $3$-generalized Pell–Lucas numbers
 
-**Two values of the $3$-generalized Pell–Lucas numbers.** The $3$-generalized Pell–Lucas
+The $3$-generalized Pell–Lucas
 numbers $Q^{(3)}_n$ satisfy $Q^{(3)}_3 = 16$ and $Q^{(3)}_6 = 260$.
 
 ## Sources

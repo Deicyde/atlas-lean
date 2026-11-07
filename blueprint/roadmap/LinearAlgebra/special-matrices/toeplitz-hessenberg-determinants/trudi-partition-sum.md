@@ -1,6 +1,6 @@
 # Trudi's partition sum
 
-**Trudi's partition sum.** Let $R$ be a commutative semiring, let $s \in R$, let $n$ be a
+Let $R$ be a commutative semiring, let $s \in R$, let $n$ be a
 natural number, and let $a : \mathbb{N} \to R$ (only $a_1, \dots, a_n$ enter). Trudi's
 partition sum is
 

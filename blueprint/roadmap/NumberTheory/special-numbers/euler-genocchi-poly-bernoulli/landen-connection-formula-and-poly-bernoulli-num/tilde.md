@@ -1,6 +1,6 @@
 # Transformed Landen data
 
-**Transformed Landen data.** For Landen data $g = (g_0, g_1, \dots, g_s)$ with
+For Landen data $g = (g_0, g_1, \dots, g_s)$ with
 $g_0 = \begin{pmatrix} 1 & -1 \\ c_0 & d_0 \end{pmatrix}$ and
 $g_i = \begin{pmatrix} a_i & b_i \\ c_i & d_i \end{pmatrix}$ for $1 \le i \le s$, the transformed
 data $\tilde g = (\tilde g_0, \tilde g_1, \dots, \tilde g_s)$ has the same $s$, with

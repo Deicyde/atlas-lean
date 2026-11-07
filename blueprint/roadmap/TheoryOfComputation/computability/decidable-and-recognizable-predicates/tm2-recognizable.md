@@ -1,6 +1,6 @@
 # Recognizability by multi-stack machines
 
-**Recognizability by multi-stack machines.** Let $\alpha$ be a primcodable type (it has an
+Let $\alpha$ be a primcodable type (it has an
 encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is primitive recursive). A
 predicate $p$ on $\alpha$ is recognizable by a multi-stack machine when there are a multi-stack
 Turing machine $M$ and an identification of its input alphabet with the Booleans such that for

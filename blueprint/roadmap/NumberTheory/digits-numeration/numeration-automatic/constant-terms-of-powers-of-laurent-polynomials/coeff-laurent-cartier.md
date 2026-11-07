@@ -1,6 +1,6 @@
 # Coefficients of Kohen's operator $\Lambda_k$
 
-**Coefficients of Kohen's operator $\Lambda_k$.** Let $R$ be a semiring and let $r$ and
+Let $R$ be a semiring and let $r$ and
 $k \ne 0$ be natural numbers. For every Laurent polynomial $f$ in $r$ variables with coefficients
 in $R$ and every $j \in \mathbb{Z}^r$, the coefficient of $x^j$ in $\Lambda_k f$ is the
 coefficient of $x^{kj}$ in $f$.

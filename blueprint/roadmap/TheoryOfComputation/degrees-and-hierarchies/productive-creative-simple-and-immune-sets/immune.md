@@ -1,6 +1,6 @@
 # Immune set
 
-**Immune set.** A set $A$ of natural numbers is immune when it is infinite and every
+A set $A$ of natural numbers is immune when it is infinite and every
 recursively enumerable set $B \subseteq A$ is finite.
 
 ## Sources

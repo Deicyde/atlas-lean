@@ -1,6 +1,6 @@
 # Extending a pattern by a horizontal segment at its right edge
 
-**Extending a pattern by a horizontal segment at its right edge.** Let
+Let
 $P \subseteq \mathbb{R}^2$ and $(x_0, y_0) \in P$ with $x \le x_0$ for every $(x, y) \in P$, and let
 $c \ge 0$ and $n > 0$ be real numbers. Then
 

@@ -1,6 +1,6 @@
 # The cyclotomic box
 
-**The cyclotomic box.** For natural numbers $p$ and $N$, the box $B(p, N)$ is the finite set
+For natural numbers $p$ and $N$, the box $B(p, N)$ is the finite set
 of integer vectors $a = (a_1, \dots, a_{p-1}) \in \mathbb{Z}^{p-1}$ with $-N \le a_i \le N$ for
 every $i$.
 

@@ -1,6 +1,6 @@
 # Hilbert–Waring theorem
 
-**Hilbert–Waring theorem.** For every integer $k \ge 1$ there is a natural number $g$ such that
+For every integer $k \ge 1$ there is a natural number $g$ such that
 every natural number $n$ is a sum of $g$ $k$-th powers of natural numbers, that is,
 $n = x_1^k + \dots + x_g^k$ for some $x_1, \dots, x_g \in \mathbb{N}$.
 

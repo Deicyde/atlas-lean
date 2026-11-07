@@ -1,6 +1,6 @@
 # Number of Type-B double-perfect partitions
 
-**Number of Type-B double-perfect partitions.** Let $f(n)$ be the number of ordered
+Let $f(n)$ be the number of ordered
 factorizations of $n$ into factors greater than $1$. Let $r \ge 1$ and $N \ge 3r + 4$, that is,
 $1 \le r \le \lfloor (N-4)/3 \rfloor$, and put $M = 2(r+1)$ and $c = f(M) - 1 - f(r+1)$. The
 number $e_r(N)$ of Type-B double-perfect partitions of $N$ of order $r$, that is, of

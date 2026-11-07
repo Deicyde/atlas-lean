@@ -1,6 +1,6 @@
 # Values of $\mathrm{ped}_{9,9}$ and $\mathrm{ped}_{9,18}$ at $0$
 
-**Values of $\mathrm{ped}_{9,9}$ and $\mathrm{ped}_{9,18}$ at $0$.** For $k \ge 1$ let
+For $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$, an integer power series in $q$, and let
 $\mathrm{ped}_{9,9}(n)$ and $\mathrm{ped}_{9,18}(n)$ be the coefficients of $q^n$ in
 $f_4 f_{18} / (f_1 f_9)$ and in $f_4 f_{18}^2 / (f_1 f_9 f_{36})$. Then

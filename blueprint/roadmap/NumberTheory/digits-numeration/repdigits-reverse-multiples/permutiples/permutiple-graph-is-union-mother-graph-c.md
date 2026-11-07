@@ -1,6 +1,6 @@
 # Edges of a permutiple's graph lie on cycles of the mother graph
 
-**Edges of a permutiple's graph lie on cycles of the mother graph.** Let $n \ge 1$, $b$ and $k$
+Let $n \ge 1$, $b$ and $k$
 be natural numbers, let $\sigma$ be a permutation of $\{0, \dots, k\}$ and let
 $(d_k, \dots, d_0)_b$ be an $(n, b, \sigma)$-permutiple, that is, $d_i < b$ for all $i$ and
 $(d_k, \dots, d_0)_b = n \cdot (d_{\sigma(k)}, \dots, d_{\sigma(0)})_b$. Its graph has the edges

@@ -1,6 +1,6 @@
 # Inverse theorem for bounded subsequence sums of nonnegative sequences containing zero
 
-**Inverse theorem for bounded subsequence sums of nonnegative sequences containing zero.** Let
+Let
 $m \ge 2$, let $0 < a_1 < \dots < a_m$ be integers, put $a_0 = 0$ and
 $A = \{a_0, a_1, \dots, a_m\}$, let $t_0, t_1, \dots, t_m$ be positive integers, let
 $\mathcal{A}$ be the sequence in which each $a_i$ occurs $t_i$ times, and let

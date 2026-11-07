@@ -1,6 +1,6 @@
 # P-positions of the bronze game
 
-**P-positions of the bronze game.** Let $\alpha = (3 + \sqrt{13})/2$ and
+Let $\alpha = (3 + \sqrt{13})/2$ and
 $\beta = (5 + \sqrt{13})/6$, let $B_n$ be the bronze numbers, and let $C_n$ and $D_n$ be the
 companion bronze numbers of the first and second type. Let $P$ be the set of natural numbers
 $x$ such that $x = 0$ or $x \in \{B_{2k+1}, C_{2k+2}, D_{2k+2}\}$ for some natural number $k$.

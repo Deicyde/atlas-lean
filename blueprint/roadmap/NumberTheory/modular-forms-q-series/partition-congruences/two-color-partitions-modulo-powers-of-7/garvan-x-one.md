@@ -1,6 +1,6 @@
 # Initial entries of Garvan's first coefficient vector
 
-**Initial entries of Garvan's first coefficient vector.** The first of Garvan's coefficient
+The first of Garvan's coefficient
 vectors, $x_1$, has entries $x_{1,1} = 7$, $x_{1,2} = 7^2 = 49$ and $x_{1,3} = 0$.
 
 ## Sources

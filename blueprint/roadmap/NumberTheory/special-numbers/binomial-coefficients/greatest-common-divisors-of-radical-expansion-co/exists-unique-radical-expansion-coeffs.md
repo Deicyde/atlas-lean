@@ -1,6 +1,6 @@
 # Unique integer coordinates of powers of $u + v^{1/N}$
 
-**Unique integer coordinates of powers of $u + v^{1/N}$.** Let $N$ be a natural number with
+Let $N$ be a natural number with
 at least two distinct prime divisors, let $u, v$ be coprime positive integers such that
 $x^N - v$ is irreducible over $\mathbb{Q}$, and let $\theta = v^{1/N}$ be the positive real
 $N$-th root of $v$. Then for every natural number $n$ there is exactly one tuple of integers

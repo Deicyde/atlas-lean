@@ -1,6 +1,6 @@
 # Fixed points split off a derangement
 
-**Fixed points split off a derangement.** Write $a(n, k, j)$ for the number of permutations of
+Write $a(n, k, j)$ for the number of permutations of
 an $n$-element set with exactly $k$ cycles (fixed points counted as cycles of length one) and
 exactly $j$ fixed points, and $d(m, i) = a(m, i, 0)$ for the number of derangements of an
 $m$-element set with $i$ cycles. For all natural numbers $n$, $k$ and $j$ with $j \le k$,

@@ -1,6 +1,6 @@
 # The second player wins Snort on opposable graphs
 
-**The second player wins Snort on opposable graphs.** If a finite simple graph $G$ is
+If a finite simple graph $G$ is
 opposable, then the second player wins Snort on $G$.
 
 ## Sources

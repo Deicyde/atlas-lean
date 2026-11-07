@@ -1,6 +1,6 @@
 # Robbins' theorem
 
-**Robbins' theorem.** Let $G$ be a simple graph on a finite nonempty vertex set $V$. Then $G$
+Let $G$ be a simple graph on a finite nonempty vertex set $V$. Then $G$
 is connected and, after deleting any single edge of $G$, every vertex is still reachable from
 every vertex (that is, $G$ is 2-edge-connected) if and only if $G$ has a strongly connected
 orientation: a relation $D$ on $V$ such that $D(u, v)$ holds only when $u$ and $v$ are

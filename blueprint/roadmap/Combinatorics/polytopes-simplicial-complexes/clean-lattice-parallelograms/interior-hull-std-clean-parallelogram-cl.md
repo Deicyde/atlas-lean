@@ -1,6 +1,6 @@
 # Clean interior hulls and Fibonacci numbers
 
-**Clean interior hulls and Fibonacci numbers.** Let $F_0 = 0$, $F_1 = 1$,
+Let $F_0 = 0$, $F_1 = 1$,
 $F_{k+2} = F_{k+1} + F_k$ be the Fibonacci numbers. Let $1 \le a < n$ with $\gcd(a, n) = 1$, let
 $P_{a,n} = \{s (1, 0) + t (a, n) : 0 \le s \le 1,\ 0 \le t \le 1\}$, and let $H$ be the convex
 hull of the lattice points in the interior of $P_{a,n}$. Then the lattice points on the boundary of

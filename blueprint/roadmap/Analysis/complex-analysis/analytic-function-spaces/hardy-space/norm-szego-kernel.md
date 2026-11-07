@@ -1,3 +1,3 @@
 # Norm of the Szegő kernel
 
-**Norm of the Szegő kernel.** The norm of the Szegő kernel is `1 / √(1 - ‖z‖²)`.
+The norm of the Szegő kernel is `1 / √(1 - ‖z‖²)`.

@@ -1,6 +1,6 @@
 # Fuel-bounded Euclid classifier
 
-**Fuel-bounded Euclid classifier.** The fuel-bounded evaluation of the P-positions of Euclid is
+The fuel-bounded evaluation of the P-positions of Euclid is
 the function $E(f, a, b)$ of natural numbers $f, a, b$ with Boolean values defined by recursion on
 the fuel $f$. With no fuel, $E(0, a, b)$ is true. Otherwise $E(f + 1, a, b)$ is true when $a = b$,
 $a = 0$ or $b = 0$; when $0 < a < b$ it is true iff $E(f, a, b - ja)$ is false for every $j \ge 1$

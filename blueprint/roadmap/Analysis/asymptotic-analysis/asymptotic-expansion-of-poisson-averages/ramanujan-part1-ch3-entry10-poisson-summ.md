@@ -1,6 +1,6 @@
 # Eventual summability of the series in Entry 10
 
-**Eventual summability of the series in Entry 10.** Let $\varphi : \mathbb{R} \to \mathbb{C}$
+Let $\varphi : \mathbb{R} \to \mathbb{C}$
 be polynomially bounded at infinity, that is, there are a real number $C \ge 0$ and a natural
 number $p$ such that $|\varphi(x)| \le C x^p$ for all sufficiently large real $x$. Let $F$ be a
 finite set of natural numbers. Then for all sufficiently large real $x$, the family indexed by

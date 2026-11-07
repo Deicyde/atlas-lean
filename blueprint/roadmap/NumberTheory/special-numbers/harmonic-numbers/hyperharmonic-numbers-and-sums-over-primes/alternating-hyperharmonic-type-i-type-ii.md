@@ -1,6 +1,6 @@
 # Explicit formulas for type I and type III alternating hyperharmonic numbers
 
-**Explicit formulas for type I and type III alternating hyperharmonic numbers.** For real $s$
+For real $s$
 write $H_n^{(s)} = \sum_{i=1}^{n} 1/i^s$ and $\overline{H}_n^{(s)} = \sum_{i=1}^{n} (-1)^{i-1}/i^s$
 for the generalized and the alternating generalized harmonic numbers. For a natural number $p$,
 the type I and type III generalized alternating hyperharmonic numbers are

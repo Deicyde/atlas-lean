@@ -1,6 +1,6 @@
 # Kd-tree point traversal with an accumulator
 
-**Kd-tree point traversal with an accumulator.** For a kd-tree $t$ over points of
+For a kd-tree $t$ over points of
 $\mathbb{Z}^d$ and a list $\mathit{acc}$ of such points, the accumulator traversal of $t$ onto
 $\mathit{acc}$ is $\mathit{acc}$ when $t$ is empty, the point $p$ followed by $\mathit{acc}$ when
 $t$ is a leaf holding $p$, and, when $t$ is a split node with left subtree $L$ and right subtree

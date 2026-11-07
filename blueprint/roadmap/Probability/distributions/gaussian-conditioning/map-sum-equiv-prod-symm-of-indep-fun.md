@@ -1,6 +1,6 @@
 # Concatenation of independent Gaussian random vectors
 
-**Concatenation of independent Gaussian random vectors.** Write $\mathcal{N}(a, \Sigma)$ for
+Write $\mathcal{N}(a, \Sigma)$ for
 the multivariate Gaussian distribution with mean $a$ and covariance matrix $\Sigma$. Let $\iota$
 and $\kappa$ be finite index sets, and let $x$ and $v$ be independent measurable random vectors in
 $\mathbb{R}^\iota$ and $\mathbb{R}^\kappa$ on a probability space, with laws $\mathcal{N}(m, S)$

@@ -1,6 +1,6 @@
 # Bridgeman's dilogarithm series for a negative Pell solution
 
-**Bridgeman's dilogarithm series for a negative Pell solution.** Write
+Write
 $L(x) = \sum_{m \ge 1} x^m/m^2 + \frac{1}{2} \log x \log(1 - x)$ for the Rogers dilogarithm on
 $[0, 1]$ (with $\log 0 = 0$). Let $n$ be a natural number that is not a perfect square, let
 $a, b$ be positive rationals with $a^2 - n b^2 = -1$, and put $u = a + b\sqrt{n}$. Define rationals

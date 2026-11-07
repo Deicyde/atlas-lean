@@ -1,6 +1,6 @@
 # Generic copy loop of the dense-SAT verifier
 
-**Generic copy loop of the dense-SAT verifier.** For a work stack $s$, a partial map $g$ on
+For a work stack $s$, a partial map $g$ on
 the work alphabet $G$, an optional target work stack $t$, and labels $\ell$ (the loop's own
 label) and $\ell'$ (its exit), the generic loop is the program statement that does the following.
 It pops the top of $s$ and stores the popped symbol $x$ as the machine state (nothing if $s$ is

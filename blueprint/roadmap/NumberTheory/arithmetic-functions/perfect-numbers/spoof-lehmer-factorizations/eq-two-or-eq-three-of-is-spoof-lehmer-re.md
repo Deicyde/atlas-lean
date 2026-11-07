@@ -1,6 +1,6 @@
 # Repeated unitary Lehmer factorizations
 
-**Repeated unitary Lehmer factorizations.** Let $k$ be an integer and let $x \ge 2$ and $s$ be
+Let $k$ be an integer and let $x \ge 2$ and $s$ be
 natural numbers. If the spoof factorization $x \cdots x$ with $s$ factors, each with base $x$ and
 exponent $1$, is a spoof $k$-Lehmer factorization (a unitary $k$-Lehmer factorization), then
 either $x = 2$ and $s \ge 2$, or $x = 3$ and $s \in \{2, 4\}$.

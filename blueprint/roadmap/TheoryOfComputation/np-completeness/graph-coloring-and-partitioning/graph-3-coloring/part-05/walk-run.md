@@ -1,6 +1,6 @@
 # Walking the earlier occurrences
 
-**Walking the earlier occurrences.** Let $l = (x, b)$ be a literal and let
+Let $l = (x, b)$ be a literal and let
 $q_1, \dots, q_k$ be earlier occurrences, each a tuple $(y, c, L, M)$ of a variable, a polarity,
 a literal vertex and a negation vertex with $M = L + 1$. Let $m$ be a quiescent state of the
 3-coloring emitter whose earlier-occurrence stack $D$ holds the concatenation $\delta$ of the

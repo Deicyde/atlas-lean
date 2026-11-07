@@ -1,6 +1,6 @@
 # Linking two roots by rank
 
-**Linking two roots by rank.** Let $U$ be a union-find structure on $\{0, \dots, n-1\}$ and
+Let $U$ be a union-find structure on $\{0, \dots, n-1\}$ and
 let $x, y < n$ be roots of $U$, i.e. each is its own parent. Let $U'$ be obtained by linking $x$
 and $y$ by rank: nothing changes if $x = y$; otherwise, if $\operatorname{rank}(y) <
 \operatorname{rank}(x)$ then $y$ gets parent $x$, and if not then $x$ gets parent $y$ and, when

@@ -1,6 +1,6 @@
 # Inverse theorem for bounded subsequence sums of mixed-sign sequences containing zero
 
-**Inverse theorem for bounded subsequence sums of mixed-sign sequences containing zero.** Let
+Let
 $1 \le n \le p$, let $c_1 < \dots < c_n < 0 < d_1 < \dots < d_p$ be integers and
 $A = \{c_1, \dots, c_n, 0, d_1, \dots, d_p\}$, a set of $k = n + p + 1$ elements, let
 $s_1, \dots, s_n, z, t_1, \dots, t_p$ be positive integers, let $\mathcal{A}$ be the sequence in

@@ -1,6 +1,6 @@
 # Algebraic extension oracles
 
-**Algebraic extension oracles.** Let $B$ and $O$ be oracles, that is, functions from
+Let $B$ and $O$ be oracles, that is, functions from
 bitstrings to booleans. Then $O$ is an algebraic extension of $B$ when there are polynomials
 $\pi_0, \pi_1, \pi_2, \ldots$ over $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$, each $\pi_n$ monic and
 irreducible of degree $n + 1$, with the following two properties, where $F_n$ is the field

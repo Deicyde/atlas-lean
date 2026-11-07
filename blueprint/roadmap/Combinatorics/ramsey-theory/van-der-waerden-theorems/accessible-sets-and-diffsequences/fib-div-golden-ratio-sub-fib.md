@@ -1,6 +1,6 @@
 # Fibonacci numbers divided by the golden ratio
 
-**Fibonacci numbers divided by the golden ratio.** Let $F_n$ be the $n$-th Fibonacci number,
+Let $F_n$ be the $n$-th Fibonacci number,
 with $F_0 = 0$ and $F_1 = 1$, and let $\varphi = (1 + \sqrt{5})/2$ be the golden ratio. For every
 natural number $n \ge 2$,
 

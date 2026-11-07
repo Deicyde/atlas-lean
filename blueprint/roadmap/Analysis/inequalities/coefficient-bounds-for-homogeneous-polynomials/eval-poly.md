@@ -1,6 +1,6 @@
 # Evaluation of a homogeneous polynomial
 
-**Evaluation of a homogeneous polynomial.** Given a natural number $n$, real coefficients
+Given a natural number $n$, real coefficients
 $a_k$ indexed by multi-indices $k = (k_1, \dots, k_n) \in \mathbb{N}^n$, and a point
 $t = (t_1, \dots, t_n) \in \mathbb{R}^n$, the value is
 

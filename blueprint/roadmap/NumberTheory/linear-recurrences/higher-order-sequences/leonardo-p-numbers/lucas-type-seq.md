@@ -1,6 +1,6 @@
 # Lucas-type recurrence lists
 
-**Lucas-type recurrence lists.** Let $\alpha$ be a type with a zero, a one and an addition, let
+Let $\alpha$ be a type with a zero, a one and an addition, let
 $p$ be a natural number and let $a_0, c \in \alpha$. Define $a_i = 1$ for $1 \le i \le p$ and
 $a_n = a_{n-1} + a_{n-p-1} + c$ for $n > p$. For every natural number $n$, the Lucas-type list
 with parameters $p$, $a_0$, $c$ ending at index $n$ is $[a_0, a_1, \dots, a_n]$.

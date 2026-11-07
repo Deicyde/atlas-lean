@@ -1,6 +1,6 @@
 # Beeger's theorem
 
-**Beeger's theorem.** There are infinitely many even pseudoprimes.
+There are infinitely many even pseudoprimes.
 
 ## Sources
 

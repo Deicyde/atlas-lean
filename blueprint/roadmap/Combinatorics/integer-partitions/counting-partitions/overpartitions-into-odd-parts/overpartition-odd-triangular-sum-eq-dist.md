@@ -1,6 +1,6 @@
 # Overpartitions into odd parts and partitions into distinct parts
 
-**Overpartitions into odd parts and partitions into distinct parts.** Write $\mathrm{po}(m)$
+Write $\mathrm{po}(m)$
 for the number of overpartitions of $m$ into odd parts and $\mathrm{pd}(m)$ for the number of
 partitions of $m$ into distinct parts. For every natural number $n$,
 $\sum_{k \ge 0,\ k(k+1)/2 \le n} (-1)^{\lceil k/2 \rceil} \, \mathrm{po}(n - k(k+1)/2) =

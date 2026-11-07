@@ -1,6 +1,6 @@
 # The Baum-Welch M-step
 
-**The Baum-Welch M-step.** Let $h$ be a valid HMM with finite state set $S$ and finite
+Let $h$ be a valid HMM with finite state set $S$ and finite
 observation set $O$, let $x_0, \dots, x_{N-1}$ be observation sequences, and consider state paths
 $(z_0, \dots, z_T)$. Write $I(s)$, $A(s, s')$ and $E(s, o)$ for the expected numbers, under the
 posterior of $h$ and summed over the sequences, of sequences starting in $s$, of transitions

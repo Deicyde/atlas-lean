@@ -1,6 +1,6 @@
 # A nonempty semigroup is piecewise syndetic in itself
 
-**A nonempty semigroup is piecewise syndetic in itself.** If $S$ is a nonempty semigroup,
+If $S$ is a nonempty semigroup,
 then $S$ is a piecewise syndetic subset of $S$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Total displacement of a Stirling permutation is invariant under rearrangement
 
-**Total displacement of a Stirling permutation is invariant under rearrangement.** Let
+Let
 $w = w_1 \cdots w_{2n}$ be a Stirling permutation of order $n$ and let $\sigma$ be a permutation
 of $\{1, \dots, 2n\}$. Read words of length $2n$ as parking functions, and let $d(v)$ denote the
 total displacement of a word $v$, the sum of the displacements of its cars. Then the rearranged

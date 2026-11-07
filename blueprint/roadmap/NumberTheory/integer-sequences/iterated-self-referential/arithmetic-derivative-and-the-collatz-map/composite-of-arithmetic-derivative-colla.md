@@ -1,6 +1,6 @@
 # Positive solutions of the Collatz arithmetic differential equation are composite
 
-**Positive solutions of the Collatz arithmetic differential equation are composite.** Let
+Let
 $D$ be the arithmetic derivative and $C$ the accelerated Collatz map. Every positive integer $n$
 with $D(C(n)) = C(D(n))$ is composite, that is, $n > 1$ and $n$ is not prime.
 

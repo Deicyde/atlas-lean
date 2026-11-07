@@ -1,6 +1,6 @@
 # End of a diamond
 
-**End of a diamond.** Let $\varphi$ be a CNF formula with token list $\mathrm{toks}(\varphi)$,
+Let $\varphi$ be a CNF formula with token list $\mathrm{toks}(\varphi)$,
 let $y \in \mathbb{N}$ have binary encoding $\mathrm{bin}(y)$, let $\nu$ be a list of symbols and
 $b$ a state bit, and let $s$ be a quiescent state of the emitter whose stack $T$ holds
 $\mathrm{toks}(\varphi)$ reversed, whose stack $F$ is empty, and whose stack $V$ holds the name of

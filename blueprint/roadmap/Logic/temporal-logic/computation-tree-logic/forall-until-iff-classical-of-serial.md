@@ -1,6 +1,6 @@
 # Classical form of $\mathsf{A}(\varphi\,\mathsf{U}\,\psi)$ on serial systems
 
-**Classical form of $\mathsf{A}[\varphi\,\mathsf{U}\,\psi]$ on serial systems.** Let $s$ be a
+Let $s$ be a
 state of a serial labelled transition system with an atom valuation, and let $\varphi$ and $\psi$
 be CTL formulas. Then $s$ satisfies $\mathsf{A}[\varphi\,\mathsf{U}\,\psi]$ if and only if $s$
 satisfies neither $\mathsf{E}[\neg\psi\,\mathsf{U}\,(\neg\varphi \land \neg\psi)]$ nor

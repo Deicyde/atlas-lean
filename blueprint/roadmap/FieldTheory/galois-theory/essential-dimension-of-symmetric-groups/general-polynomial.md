@@ -1,6 +1,6 @@
 # General polynomial
 
-**General polynomial.** For a natural number $n$, let $x_1, \dots, x_n$ be the
+For a natural number $n$, let $x_1, \dots, x_n$ be the
 indeterminates of the rational function field $\mathbb{C}(x_1, \dots, x_n)$, let $a_0 = 1$ and,
 for $1 \le k \le n$, let $a_k$ be the $k$-th elementary symmetric function of
 $x_1, \dots, x_n$. The general polynomial of degree $n$ is the polynomial

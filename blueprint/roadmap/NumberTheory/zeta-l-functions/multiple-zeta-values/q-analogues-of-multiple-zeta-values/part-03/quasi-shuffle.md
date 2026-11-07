@@ -1,6 +1,6 @@
 # Quasi-shuffle product
 
-**Quasi-shuffle product.** Fix an alphabet and a product of letters $a \diamond b$, a formal
+Fix an alphabet and a product of letters $a \diamond b$, a formal
 sum of letters given as a finite list (possibly empty, possibly with repetitions). The
 quasi-shuffle product $u \ast v$ of two words $u$ and $v$ is the formal sum of words, recorded as
 a list, defined recursively by $\mathbf{1} \ast w = w \ast \mathbf{1} = w$ for the empty word

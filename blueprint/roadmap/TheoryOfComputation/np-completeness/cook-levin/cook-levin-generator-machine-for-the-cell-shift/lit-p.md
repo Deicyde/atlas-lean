@@ -1,6 +1,6 @@
 # Literal routine of the cell-shift generator
 
-**Literal routine of the cell-shift generator.** For a situation $i < N$, a stack $k < K$, a
+For a situation $i < N$, a stack $k < K$, a
 clause kind $c$ and a literal index $l < 3$, this is the program fragment, indexed by the stages
 of the literal routine, that emits literal $l$ of clause $c$ in block $(i, k)$. Write $B$ for the
 base counter of literal $l$ and $a$ for its constant offset in block $(i, k)$. Started with $Q$

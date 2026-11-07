@@ -1,6 +1,5 @@
 # Shitov's theorem: almost all Boolean polynomials with nonzero constant term are prime
 
-**Shitov's theorem: almost all Boolean polynomials with nonzero constant term are prime.**
 For $n \in \mathbb{N}$, consider the Boolean polynomials of degree exactly $n$ with nonzero
 constant term, that is, the base-$2$ lunar numbers given by digit strings
 $(a_0, \dots, a_n) \in \{0, 1\}^{n+1}$ with $a_0 \ne 0$ and $a_n \ne 0$. The proportion of

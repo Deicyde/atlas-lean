@@ -1,6 +1,6 @@
 # Correctness and running time of the edge loop
 
-**Correctness and running time of the edge loop.** Let $cs$ be a list of color codes (pairs
+Let $cs$ be a list of color codes (pairs
 of bits) and $r$ a list of bits, and encode an edge $(u, v)$ of natural numbers as $u$ ones, a
 zero, $v$ ones and a zero. Call $r$ good for $cs$ when $r$ is a concatenation of encoded edges
 such that, for every edge $(u, v)$ among them, $u$ and $v$ are below the length of $cs$ and, if

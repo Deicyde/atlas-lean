@@ -1,3 +1,3 @@
 # Existence of greedy backward-selection rules
 
-**Existence of greedy backward-selection rules.** Greedy rules exist for every `g`.
+Greedy rules exist for every `g`.

@@ -1,6 +1,6 @@
 # Overgroups of Hall subgroups in $C_\pi$-groups (Vdovin–Revin)
 
-**Overgroups of Hall subgroups in $C_\pi$-groups (Vdovin–Revin).** Let $\pi$ be a set of natural
+Let $\pi$ be a set of natural
 numbers and let $G$ be a finite $C_\pi$-group. Then every subgroup $K$ of $G$ that contains a Hall
 $\pi$-subgroup of $G$ is itself a $C_\pi$-group. This answers Kourovka Problem 17.44(a) in the
 affirmative.

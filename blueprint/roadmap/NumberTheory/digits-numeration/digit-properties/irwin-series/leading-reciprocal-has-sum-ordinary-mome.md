@@ -1,6 +1,6 @@
 # Prefix sums as alternating ordinary-moment series
 
-**Prefix sums as alternating ordinary-moment series.** Let $b > 1$, let $d < b$ be a digit, let
+Let $b > 1$, let $d < b$ be a digit, let
 $n$ be a positive integer, let $k(n)$ be the number of occurrences of $d$ in the base-$b$
 expansion of $n$, and let $k \ge k(n)$. Write $u_{j;m} = \int_{[0,1)} x^m \, d\mu_j(x)$ for the
 ordinary moments of the Irwin measure $\mu_j$. Then there is a real number $S$ such that the

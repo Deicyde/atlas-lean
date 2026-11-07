@@ -1,6 +1,6 @@
 # Kravitz's question: the normalized difference basis numbers converge
 
-**Kravitz's question: the normalized difference basis numbers converge.** For a finite set
+For a finite set
 $A$ of integers and an integer $x$, write $r_{A-A}(x)$ for the number of ordered pairs
 $(a, a') \in A \times A$ with $a - a' = x$. For every integer $g \ge 1$, let $\eta_g(n)$ be the
 least size of a finite set $A$ of integers with $r_{A-A}(x) \ge g$ for every integer

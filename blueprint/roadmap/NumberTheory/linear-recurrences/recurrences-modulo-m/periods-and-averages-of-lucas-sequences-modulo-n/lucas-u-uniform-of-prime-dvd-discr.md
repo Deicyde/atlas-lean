@@ -1,6 +1,6 @@
 # Uniform distribution of Lucas sequences modulo primes dividing the discriminant
 
-**Uniform distribution of Lucas sequences modulo primes dividing the discriminant.** Let $U$
+Let $U$
 be the Lucas sequence with integer parameters $P$ and $Q$, where the pair $(P, Q)$ is
 nondegenerate, and write $\pi(m)$ and $\rho(m)$ for the period and the restricted period of $U$
 modulo $m$; for a positive integer $N$ and a residue $r$ modulo $N$, let $c_N(r)$ be the number of

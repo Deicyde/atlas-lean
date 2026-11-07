@@ -1,6 +1,6 @@
 # Balogh–Liu–Sharifzadeh–Treglown bound
 
-**Balogh–Liu–Sharifzadeh–Treglown bound.** Let $k \ge 1$ be a real number and let $\Gamma$
+Let $k \ge 1$ be a real number and let $\Gamma$
 be a finite graph with $n$ vertices, minimum degree $\delta(\Gamma)$ and maximum degree
 $\Delta(\Gamma) \le k\,\delta(\Gamma)$, and put $b = \sqrt{\delta(\Gamma)}$. Then the number
 $\mathrm{mis}(\Gamma)$ of maximal independent sets of $\Gamma$ satisfies

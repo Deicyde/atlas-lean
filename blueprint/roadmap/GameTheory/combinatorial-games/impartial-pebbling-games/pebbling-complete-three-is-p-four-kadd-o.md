@@ -1,6 +1,6 @@
 # Pebbling on the triangle: piles 4k+1, k-1, k-1 form a P-position
 
-**Pebbling on the triangle: piles 4k+1, k-1, k-1 form a P-position.** Let $k$ be a positive
+Let $k$ be a positive
 integer and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a move removes
 $k+1$ pebbles from one vertex and adds $k$ pebbles to another. Every position whose three piles
 are $4k + 1$, $k - 1$ and $k - 1$ in some order is a P-position.

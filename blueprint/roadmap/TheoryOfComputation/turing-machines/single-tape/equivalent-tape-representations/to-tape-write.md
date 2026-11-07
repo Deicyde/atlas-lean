@@ -1,6 +1,6 @@
 # Writing commutes with the Post–Turing reading of a tape
 
-**Writing commutes with the Post–Turing reading of a tape.** Let $\Gamma_0$ be an alphabet
+Let $\Gamma_0$ be an alphabet
 whose default symbol is the blank, and for a two-way tape $t$ whose cells are blank or hold
 non-blank symbols of $\Gamma_0$, let $\tau(t)$ be the Post–Turing reading of $t$, a Post–Turing
 machine tape over $\Gamma_0$. For every such $t$ and every cell $o$, blank or holding a non-blank

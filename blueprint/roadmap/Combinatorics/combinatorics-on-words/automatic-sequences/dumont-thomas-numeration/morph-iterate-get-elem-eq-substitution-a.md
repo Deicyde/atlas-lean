@@ -1,6 +1,6 @@
 # Letters of an iterated image are read by the automaton
 
-**Letters of an iterated image are read by the automaton.** Let $\eta$ be a substitution
+Let $\eta$ be a substitution
 on an alphabet $A$, let $p \ge 1$ and $x \in A$, let $(m_i, a_i)_{i = 0, \dots, p-1}$ be an
 $x$-admissible sequence, and put $\ell = \sum_{j=0}^{p-1} |\eta^j(m_j)|$. Let
 $\mathcal{A}_{\eta,x}$ be the automaton of $\eta$ started at $x$. Then $\eta^p(x)$ has a letter

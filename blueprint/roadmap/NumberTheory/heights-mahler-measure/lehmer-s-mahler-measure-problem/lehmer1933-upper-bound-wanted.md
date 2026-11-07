@@ -1,6 +1,6 @@
 # Lehmer's upper bound for Lehmer's constant
 
-**Lehmer's upper bound for Lehmer's constant.** Lehmer's constant is at most
+Lehmer's constant is at most
 $1176281/1000000 = 1.176281$.
 
 ## Sources

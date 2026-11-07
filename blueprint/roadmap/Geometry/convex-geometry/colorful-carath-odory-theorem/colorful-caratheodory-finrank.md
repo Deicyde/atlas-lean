@@ -1,6 +1,6 @@
 # Colorful Carathéodory theorem in finite-dimensional inner product spaces
 
-**Colorful Carathéodory theorem in finite-dimensional inner product spaces.** Let $V$ be a
+Let $V$ be a
 finite-dimensional real inner product space of dimension $n$, and let $S_0, \dots, S_n$ be
 finite subsets of $V$ such that $0$ lies in the convex hull of each $S_l$. Then there are
 points $t_0 \in S_0, \dots, t_n \in S_n$ such that $0$ lies in the convex hull of

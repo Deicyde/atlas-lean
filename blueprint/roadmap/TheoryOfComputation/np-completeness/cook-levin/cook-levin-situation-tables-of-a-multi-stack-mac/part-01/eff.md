@@ -1,6 +1,6 @@
 # Symbolic effect of a statement tree
 
-**Symbolic effect of a statement tree.** Let $W$ assign to each stack $k$ a window $W_k$, a
+Let $W$ assign to each stack $k$ a window $W_k$, a
 list of cells each holding a symbol or $\bot$. The window top of stack $k$ for pushed lists $P$
 and consumption counts $c$ is the head of $P_k$ if $P_k$ is nonempty, and otherwise the entry of
 $W_k$ at position $c_k$ (counting from $0$), or $\bot$ if there is none. The effect of a statement

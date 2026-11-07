@@ -1,6 +1,6 @@
 # Keyword equivalence of binary words
 
-**Keyword equivalence of binary words.** Let $a$ be a binary keyword of length $m + 1$.
+Let $a$ be a binary keyword of length $m + 1$.
 Two binary words $u$ and $v$ of length $n$ satisfy $u \sim_a v$ when some finite composition
 of simple maps of $a$, possibly the empty composition, sends $u$ to $v$.
 

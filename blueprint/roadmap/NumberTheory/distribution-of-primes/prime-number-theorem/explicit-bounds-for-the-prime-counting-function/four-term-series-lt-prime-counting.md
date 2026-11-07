@@ -1,6 +1,6 @@
 # Axler's four-term series lower bound for the prime-counting function
 
-**Axler's four-term series lower bound for the prime-counting function.** Let $\pi(x)$ denote
+Let $\pi(x)$ denote
 the number of primes $p \le x$ and $\log$ the natural logarithm. For every real $x \ge 10384261$,
 
 $$

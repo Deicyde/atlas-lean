@@ -1,6 +1,6 @@
 # Probability of no recombination on a pair's genealogy
 
-**Probability of no recombination on a pair's genealogy.** The probability that no recombination falls on the genealogy of a pair of lineages within
+The probability that no recombination falls on the genealogy of a pair of lineages within
 genetic distance `d` of the core, given that the pair coalesces at time `t` (time in units of
 `2N` generations, `ρ = 4Nr` the scaled recombination rate per site): the two lineages carry
 recombination events at total rate `ρ * d` until they coalesce.

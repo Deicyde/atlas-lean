@@ -1,6 +1,6 @@
 # A nonzero entire power series with infinitely many zeros
 
-**A nonzero entire power series with infinitely many zeros.** There is a sequence
+There is a sequence
 $(a_k)_{k \ge 0}$ of complex numbers, not all zero, such that the power series
 $\sum_{k=0}^{\infty} a_k z^k$ converges absolutely for every $z \in \mathbb{C}$ and its sum
 vanishes at infinitely many points $z \in \mathbb{C}$.

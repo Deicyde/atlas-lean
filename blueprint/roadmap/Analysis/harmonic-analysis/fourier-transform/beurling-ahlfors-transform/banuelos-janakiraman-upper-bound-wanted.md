@@ -1,6 +1,6 @@
 # Bañuelos–Janakiraman upper bound for the Beurling–Ahlfors transform
 
-**Bañuelos–Janakiraman upper bound for the Beurling–Ahlfors transform.** For a function
+For a function
 $f : \mathbb{C} \to \mathbb{C}$ let $Bf(z)$ be the limit as $\varepsilon \to 0^+$ of
 $-\frac{1}{\pi} \int_{|w - z| > \varepsilon} \frac{f(w)}{(z - w)^2} \, dA(w)$, where $dA$ is
 Lebesgue area measure (a junk value where the limit does not exist), and for real $p > 1$ let

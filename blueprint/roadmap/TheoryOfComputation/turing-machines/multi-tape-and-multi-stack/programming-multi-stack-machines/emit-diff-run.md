@@ -1,6 +1,6 @@
 # Gap emission
 
-**Gap emission.** Let $P, Q, T_1, T_2, o$ be pairwise distinct stacks, with unit symbols
+Let $P, Q, T_1, T_2, o$ be pairwise distinct stacks, with unit symbols
 $u_P, u_Q, u_{T_1}, u_{T_2}$ for the first four, and let $ys$ be a list of symbols of stack $o$.
 Write $\mathrm{xfer}(k, ps, \ell, \ell')$ for the transfer loop at label $\ell$ that pops stack
 $k$ until it is empty, pushing $x$ onto stack $j$ for each pair $(j, x)$ in $ps$ per popped

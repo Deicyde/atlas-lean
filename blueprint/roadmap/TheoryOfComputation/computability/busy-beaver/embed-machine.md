@@ -1,6 +1,6 @@
 # Embedding a machine into one more state
 
-**Embedding a machine into one more state.** An $n$-state machine $M$ is embedded
+An $n$-state machine $M$ is embedded
 into $n + 1$ states as follows. In a working state $q < n$ reading a symbol $s$, the new
 machine writes the symbol, makes the move and enters the next state that $M$ prescribes
 in state $q$ on $s$, halting when $M$ halts. In the new state $n$ it writes $0$, moves

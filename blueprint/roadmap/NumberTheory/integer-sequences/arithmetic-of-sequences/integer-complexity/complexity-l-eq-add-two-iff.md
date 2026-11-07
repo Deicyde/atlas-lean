@@ -1,6 +1,6 @@
 # Even numbers in $(2^m, 2^{m+1})$ with 2-complexity $m + 2$
 
-**Even numbers in $(2^m, 2^{m+1}]$ with 2-complexity $m + 2$.** Write $\|n\|_2$ for the
+Write $\|n\|_2$ for the
 2-complexity of $n$. Let $m \ge 3$ and let $n$ be an even natural number with
 $2^m < n \le 2^{m+1}$. Then $\|n\|_2 = m + 2$ if and only if $n$ has one of the following
 forms, where all exponents are natural numbers:

@@ -1,6 +1,6 @@
 # Integrability of finite groups is decidable
 
-**Integrability of finite groups is decidable.** Integrable group tables form a decidable set: some
+Integrable group tables form a decidable set: some
 computable function decides, for every finite list $t = (t_0, \dots, t_{n-1})$ of finite lists of
 natural numbers, whether there is a group structure on $\{0, \dots, n-1\}$ in which, for all
 $i, j < n$, the product of $i$ and $j$ is the entry of $t_i$ at index $j$, counting from $0$ (an

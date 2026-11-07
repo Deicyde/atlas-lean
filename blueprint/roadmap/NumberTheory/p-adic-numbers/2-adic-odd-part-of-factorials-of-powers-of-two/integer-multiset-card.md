@@ -1,6 +1,6 @@
 # Cardinality of the integer multiset
 
-**Cardinality of the integer multiset.** For every finite set $s$ of natural numbers, the integer
+For every finite set $s$ of natural numbers, the integer
 multiset of $s$ has the same number of elements, counted with multiplicity, as $s$.
 
 ## Sources

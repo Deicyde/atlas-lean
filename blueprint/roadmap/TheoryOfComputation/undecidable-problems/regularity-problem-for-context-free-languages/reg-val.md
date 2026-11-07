@@ -1,6 +1,6 @@
 # Languages assigned to the nonterminals of the regularity grammar
 
-**Languages assigned to the nonterminals of the regularity grammar.** Let $g$ be an encoded
+Let $g$ be an encoded
 context-free grammar over a finite alphabet $T$ with decidable equality, let $L(g)$ be its
 language and $L_g(n)$ the language $g$ generates from nonterminal $n$. Over the alphabet
 $T \sqcup \{\#, 0, 1\}$ (the letters of $T$, a separator $\#$ and two bits $0$ and $1$), write

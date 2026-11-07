@@ -1,6 +1,6 @@
 # Mann's product criterion for orthogonal Latin squares
 
-**Mann's product criterion for orthogonal Latin squares.** Let $n$ be a natural number,
+Let $n$ be a natural number,
 write $[n] = \{0, \dots, n-1\}$, and let $A$ and $B$ be Latin squares of order $n$ with rows,
 columns and entries indexed by $[n]$: every row and every column of each square is a bijection
 of $[n]$. For a row index $i$ write $A_i$ and $B_i$ for the permutations $j \mapsto A_{ij}$ and

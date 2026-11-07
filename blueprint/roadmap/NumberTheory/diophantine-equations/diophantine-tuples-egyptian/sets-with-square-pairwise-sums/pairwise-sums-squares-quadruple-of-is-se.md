@@ -1,6 +1,6 @@
 # Extending the triples to quadruples with square pairwise sums
 
-**Extending the triples to quadruples with square pairwise sums.** Let $E = (e_{ij})$,
+Let $E = (e_{ij})$,
 $G = (g_{ij})$ and $H = (h_{ij})$ be $3 \times 3$ integer matrices, each of whose squared entries
 have all three row sums and all three column sums equal to one common integer, such that
 $e_{12}^2 = g_{12}^2$, $e_{13}^2 = g_{13}^2$, $e_{21}^2 = g_{21}^2$, $e_{31}^2 = g_{31}^2$,

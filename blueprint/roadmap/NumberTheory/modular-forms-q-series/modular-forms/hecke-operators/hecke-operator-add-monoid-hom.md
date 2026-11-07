@@ -1,3 +1,3 @@
 # Hecke operator as an additive homomorphism
 
-**Hecke operator as an additive homomorphism.** The Hecke operator `T(g)` as an additive monoid homomorphism.
+The Hecke operator `T(g)` as an additive monoid homomorphism.

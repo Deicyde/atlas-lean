@@ -1,6 +1,6 @@
 # Mex recursion for the Grundy numbers of Wythoff's game with an extra move
 
-**Mex recursion for the Grundy numbers of Wythoff's game with an extra move.** In both
+In both
 variants (strict: the pass of Wythoff's game with a pass; non-strict: a pile of one stone), the
 Grundy number of a position $(x, y, p)$ with $x, y \in \mathbb{N}$ and $p \in \{0, 1\}$ is the
 least natural number $m$ that differs from the Grundy number of $(u, y, p)$ for every $u < x$,

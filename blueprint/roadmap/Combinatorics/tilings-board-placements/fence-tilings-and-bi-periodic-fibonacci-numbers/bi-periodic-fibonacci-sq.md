@@ -1,6 +1,6 @@
 # Bi-periodic Fibonacci numbers squared
 
-**Bi-periodic Fibonacci numbers squared.** For elements $a$ and $b$ of a field $K$, the
+For elements $a$ and $b$ of a field $K$, the
 bi-periodic Fibonacci numbers squared $q^2_n \in K$ ($n \ge 0$) are defined by $q^2_0 = 0$,
 $q^2_1 = 1$, $q^2_2 = a^2$ and, for $n \ge 3$,
 

@@ -1,6 +1,6 @@
 # Exact cost of BFS with parents
 
-**Exact cost of BFS with parents.** Let $G$ be a finite directed graph with vertex list $V$
+Let $G$ be a finite directed graph with vertex list $V$
 and adjacency lists $\mathrm{adj}(u)$, let $s$ be a vertex, and let $L$ be the list of vertices in
 the order in which breadth-first search from $s$ discovers them. The cost of breadth-first search
 with parents from $s$, counting dequeue attempts, adjacency checks, enqueues and parent writes,

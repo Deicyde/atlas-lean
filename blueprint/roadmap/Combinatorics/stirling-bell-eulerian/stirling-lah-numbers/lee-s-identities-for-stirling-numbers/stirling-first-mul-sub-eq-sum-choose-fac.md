@@ -1,6 +1,6 @@
 # Lee's identity for Stirling numbers of the first kind from smaller rows
 
-**Lee's identity for Stirling numbers of the first kind from smaller rows.** Write $c(n, k)$
+Write $c(n, k)$
 for the unsigned Stirling number of the first kind, the number of permutations of $n$ elements
 with exactly $k$ cycles. For natural numbers $k$ and $n$ with $k \ge 1$ and $n \ge k + 1$, the
 following identity of integers holds:

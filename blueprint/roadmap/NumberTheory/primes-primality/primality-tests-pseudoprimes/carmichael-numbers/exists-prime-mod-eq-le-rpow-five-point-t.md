@@ -1,6 +1,6 @@
 # Linnik's theorem with exponent 5.2 (Xylouris)
 
-**Linnik's theorem with exponent 5.2 (Xylouris).** There is a real constant $C$ such that for
+There is a real constant $C$ such that for
 every natural number $d \ge 1$ and every natural number $c$ coprime to $d$, there is a prime
 $p \equiv c \pmod{d}$ with $p \le C d^{5.2}$.
 

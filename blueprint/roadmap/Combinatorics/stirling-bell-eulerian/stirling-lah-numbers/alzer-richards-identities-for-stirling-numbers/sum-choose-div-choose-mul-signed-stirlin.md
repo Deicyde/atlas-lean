@@ -1,6 +1,6 @@
 # Alternating sums of signed Stirling numbers of the first kind
 
-**Alternating sums of signed Stirling numbers of the first kind.** Write $s(n, k)$ for the
+Write $s(n, k)$ for the
 signed Stirling numbers of the first kind. For all natural numbers $j$ and $n$ and every natural
 number $r \le n$,
 

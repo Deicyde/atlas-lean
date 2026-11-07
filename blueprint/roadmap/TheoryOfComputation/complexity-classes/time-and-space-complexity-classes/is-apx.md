@@ -1,6 +1,6 @@
 # Constant-factor approximable problems
 
-**Constant-factor approximable problems.** A maximization problem $P$ is in $\mathsf{APX}$
+A maximization problem $P$ is in $\mathsf{APX}$
 when $P$ is an NPO problem and there are a rational number $\rho$ with $0 < \rho \le 1$ and a
 polynomial-time algorithm $A$ such that, for every instance $x$ and every feasible solution $s$
 for $x$, the output $A(x, 1^2)$ of $A$ on $x$ with the unary precision tape of length $2$ is a

@@ -1,6 +1,6 @@
 # Kourovka Problem 18.59 on involution centralizers
 
-**Kourovka Problem 18.59 on involution centralizers.** The proposition (Kourovka 18.59, D. V.
+The proposition (Kourovka 18.59, D. V.
 Lytkina) that there are a periodic group $G$ which contains an involution and in which all
 involutions are conjugate, and an infinite locally finite field $P$ of characteristic $2$, such
 that the centralizer of every involution $i$ of $G$ is isomorphic to

@@ -1,6 +1,6 @@
 # Forward variables of a chain CRF
 
-**Forward variables of a chain CRF.** For a chain conditional random field with a finite set
+For a chain conditional random field with a finite set
 of states, weights in a semiring, unary potentials $u_t(s)$ and transition potentials
 $\tau_t(s', s)$ given the observation stream $x$, the forward variables are defined by
 $\alpha_0(s) = u_0(s)$ and

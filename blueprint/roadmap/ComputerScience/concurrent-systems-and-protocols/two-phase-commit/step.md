@@ -1,6 +1,6 @@
 # Transitions of two-phase commit
 
-**Transitions of two-phase commit.** The protocol steps from a global state $s$ to a
+The protocol steps from a global state $s$ to a
 global state $t$ by an action exactly in the following cases. A working participant $p$ may vote
 yes, after which $p$ is prepared, or vote no, after which $p$ is aborted. If the coordinator is
 waiting and every participant is prepared, the coordinator may decide commit, after which it is

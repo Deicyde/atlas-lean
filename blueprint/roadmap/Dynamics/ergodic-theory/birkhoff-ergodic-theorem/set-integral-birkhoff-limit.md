@@ -1,3 +1,3 @@
 # Birkhoff limit preserves integrals over invariant sets
 
-**Birkhoff limit preserves integrals over invariant sets.** On every measurable invariant set `E`, `∫_E birkhoffLimit T f dμ = ∫_E f dμ`.
+On every measurable invariant set `E`, `∫_E birkhoffLimit T f dμ = ∫_E f dμ`.

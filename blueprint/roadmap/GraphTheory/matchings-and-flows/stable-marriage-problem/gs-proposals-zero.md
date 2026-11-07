@@ -1,6 +1,6 @@
 # No proposals before the first round
 
-**No proposals before the first round.** For every preference profile, after zero rounds of
+For every preference profile, after zero rounds of
 the men-proposing Gale–Shapley algorithm every man has made zero proposals.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Degree counts incident edges in a loopless edge set
 
-**Degree counts incident edges in a loopless edge set.** Let
+Let
 $\mathrm{end}_1, \mathrm{end}_2 : E \to V$ be maps, viewed as an undirected multigraph on $V$ in
 which each edge $e \in E$ has endpoints $\mathrm{end}_1(e)$ and $\mathrm{end}_2(e)$. Let
 $F \subseteq E$ be a finite set of edges with no loops, that is,

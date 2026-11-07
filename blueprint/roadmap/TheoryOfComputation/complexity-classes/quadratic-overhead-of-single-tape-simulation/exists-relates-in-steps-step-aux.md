@@ -1,6 +1,6 @@
 # Running one statement on the emulator
 
-**Running one statement on the emulator.** Let $M$ be a multi-stack machine and $N$ a
+Let $M$ be a multi-stack machine and $N$ a
 statement over the same stack alphabets, labels and internal states, and write $|N|$ for the
 structural size of $N$. Let $H \in \mathbb{N}$, let $v$ be an internal state, let $S$ be a
 family of stacks $S_k$, each of height at most $H$, and let $L$ be tape contents whose $k$-th

@@ -1,6 +1,6 @@
 # Topological idele group
 
-**Topological idele group.** Let $R$ be a Dedekind domain with fraction field $K$. The
+Let $R$ be a Dedekind domain with fraction field $K$. The
 topological idele group is the product $\mathbb{I}_{K,\infty} \times \mathbb{I}_{K,f}$ of the
 infinite idele group $\mathbb{I}_{K,\infty} = \prod_w K_w^\times$, the product of the unit groups
 of the completions of $K$ at its infinite places $w$, and the finite idele group

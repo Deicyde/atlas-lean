@@ -1,6 +1,6 @@
 # Trace norm on a cyclotomic field
 
-**Trace norm on a cyclotomic field.** Let $p$ be a positive integer, let $K$ be a $p$-th
+Let $p$ be a positive integer, let $K$ be a $p$-th
 cyclotomic extension of $\mathbb{Q}$, and let $\omega$ be the chosen primitive $p$-th root of
 unity in $K$. The trace norm of $\alpha \in K$ is the real number
 

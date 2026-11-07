@@ -1,6 +1,6 @@
 # Odd combinations are closed under odd multiples
 
-**Odd combinations are closed under odd multiples.** Let $A$ be a finite subset of an abelian
+Let $A$ be a finite subset of an abelian
 group $G$. If $g$ lies in the set $\mathcal{T}(A)$ of odd combinations of $A$, then
 $(2j+1)g \in \mathcal{T}(A)$ for every integer $j$.
 

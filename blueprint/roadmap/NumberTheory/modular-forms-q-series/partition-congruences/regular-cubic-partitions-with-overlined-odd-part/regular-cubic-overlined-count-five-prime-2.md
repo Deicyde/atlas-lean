@@ -1,6 +1,6 @@
 # Congruences modulo 4 for 5-regular cubic partitions with odd parts overlined
 
-**Congruences modulo 4 for 5-regular cubic partitions with odd parts overlined.** Write
+Write
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ for the Euler products in the ring of integer power series
 in $q$, and $a_5(n)$ for the $n$th coefficient of $f_2 f_5^2 f_{20} / (f_1^2 f_4 f_{10})$, the
 number of $5$-regular cubic partitions of $n$ with odd parts overlined. Let $p \ge 5$ be a prime

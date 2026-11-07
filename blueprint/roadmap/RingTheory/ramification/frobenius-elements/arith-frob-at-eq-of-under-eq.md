@@ -1,6 +1,6 @@
 # In an abelian group the Frobenius element depends only on the prime below
 
-**In an abelian group the Frobenius element depends only on the prime below.** Let $S$ be
+Let $S$ be
 a commutative algebra over a commutative ring $R$, and let a finite commutative group $G$ act on
 $S$ by $R$-algebra automorphisms such that every element of $S$ fixed by $G$ is the image of an
 element of $R$. For a prime $Q$ of $S$ with $S/Q$ finite, let $\mathrm{Frob}_Q \in G$ be the

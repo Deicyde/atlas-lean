@@ -1,6 +1,6 @@
 # Unique odd partner after 4
 
-**Unique odd partner after 4.** Let $q > 3$ be an odd natural number. Then $\{4, q\}$ is an
+Let $q > 3$ be an odd natural number. Then $\{4, q\}$ is an
 N-position of Sylver Coinage, and there is a unique odd natural number $x_q$ such that
 $\{4, x_q\}$ is an N-position and $\{4, q, x_q\}$ is a P-position.
 

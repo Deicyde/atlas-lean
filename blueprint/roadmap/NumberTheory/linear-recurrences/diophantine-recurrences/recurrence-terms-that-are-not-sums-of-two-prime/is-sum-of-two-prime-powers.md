@@ -1,6 +1,6 @@
 # Sums of two prime powers
 
-**Sums of two prime powers.** An integer $n$ is a sum of two prime powers if
+An integer $n$ is a sum of two prime powers if
 $n = p^a + q^b$ for some primes $p$ and $q$ and some natural numbers $a$ and $b$. Since the
 exponents may be $0$, the number $1 = p^0$ counts as a prime power here.
 

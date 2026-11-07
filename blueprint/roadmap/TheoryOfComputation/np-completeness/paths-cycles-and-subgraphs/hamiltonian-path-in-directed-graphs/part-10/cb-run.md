@@ -1,6 +1,6 @@
 # Run of the HAMPATH verifier's unary comparison loop
 
-**Run of the HAMPATH verifier's unary comparison loop.** Let $\mathit{src}$, $\mathit{sv}$, $c$
+Let $\mathit{src}$, $\mathit{sv}$, $c$
 and the scratch stack $R$ be four distinct stacks of the HAMPATH verifier, and let $\mathrm{cb}$ and
 $\mathrm{fin}$ be families of labels indexed by booleans such that for every boolean $\mathit{ok}$
 the instruction at $\mathrm{cb}(\mathit{ok})$ is the unary comparison step on $\mathit{src}$,

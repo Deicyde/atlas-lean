@@ -1,6 +1,6 @@
 # Fundamental theorem of topos theory
 
-**Fundamental theorem of topos theory.** If $E$ is an elementary topos and $X$ is an object
+If $E$ is an elementary topos and $X$ is an object
 of $E$, then the slice category $E/X$ of objects of $E$ over $X$ is again an elementary topos.
 
 ## Sources

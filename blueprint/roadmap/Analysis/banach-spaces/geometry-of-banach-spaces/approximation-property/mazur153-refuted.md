@@ -1,6 +1,6 @@
 # Negative answer to Mazur's Problem 153
 
-**Negative answer to Mazur's Problem 153.** There are a continuous function
+There are a continuous function
 $f \colon [0,1]^2 \to \mathbb{R}$ and a real number $\varepsilon > 0$ such that for every natural
 number $n$, all points $a_1, \dots, a_n, b_1, \dots, b_n \in [0,1]$ and all real numbers
 $c_1, \dots, c_n$ there are $x, y \in [0,1]$ with

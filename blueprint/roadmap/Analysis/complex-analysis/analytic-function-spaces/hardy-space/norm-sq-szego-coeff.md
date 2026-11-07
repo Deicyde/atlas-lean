@@ -1,4 +1,4 @@
 # Squared norms of the Szegő kernel coefficients
 
-**Squared norms of the Szegő kernel coefficients.** The squared norms of the Szegő kernel coefficients form a geometric
+The squared norms of the Szegő kernel coefficients form a geometric
 progression with ratio `‖z‖²`.

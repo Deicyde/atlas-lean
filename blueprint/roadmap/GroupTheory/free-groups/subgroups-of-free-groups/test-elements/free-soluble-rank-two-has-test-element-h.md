@@ -1,6 +1,6 @@
 # Free soluble groups of rank two have test elements
 
-**Free soluble groups of rank two have test elements.** Resolved true: the Kourovka Archive answers 14.88 "Yes, it does" (Timoshenko): for every `d > 2` the
+Resolved true: the Kourovka Archive answers 14.88 "Yes, it does" (Timoshenko): for every `d > 2` the
 free soluble group `F₂/F₂⁽ᵈ⁾` of rank `2` and derived length `d` has a test element. Source: E. I.
 Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st
 issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 14.88 (B. Fine, V. Shpilrain);

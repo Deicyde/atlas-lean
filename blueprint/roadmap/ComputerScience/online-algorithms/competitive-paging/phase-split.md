@@ -1,6 +1,6 @@
 # Splitting off a phase
 
-**Splitting off a phase.** Given a capacity $k$ and a list $s$ of pages (the pages already in
+Given a capacity $k$ and a list $s$ of pages (the pages already in
 the current phase, most recent first), a request sequence $\sigma$ is split into a phase and a
 remainder as follows. The empty sequence splits into two empty parts. For a sequence $p$
 followed by $\sigma'$: if $p$ is in $s$, then $p$ joins the phase and $\sigma'$ is split with $s$

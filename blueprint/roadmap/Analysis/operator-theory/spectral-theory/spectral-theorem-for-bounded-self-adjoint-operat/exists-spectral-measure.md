@@ -1,6 +1,6 @@
 # Scalar spectral measure of a vector
 
-**Scalar spectral measure of a vector.** Let $E$ be a complex Hilbert space, $T$ a bounded
+Let $E$ be a complex Hilbert space, $T$ a bounded
 self-adjoint operator on $E$ and $v \in E$. There is a finite regular measure $\mu$ on the
 spectrum $\sigma(T) \subseteq \mathbb{C}$ of $T$ such that for every continuous function
 $f : \sigma(T) \to \mathbb{R}$,

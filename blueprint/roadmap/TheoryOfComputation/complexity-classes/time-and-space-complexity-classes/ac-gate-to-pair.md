@@ -1,6 +1,6 @@
 # Encoding a gate as a (kind, references) pair
 
-**Encoding a gate as a (kind, references) pair.** A gate of a flat Boolean circuit on $n$
+A gate of a flat Boolean circuit on $n$
 inputs is encoded as a pair of a natural number (its kind) and a list of natural numbers (its
 references), the shared encoding used by decoding-based problems such as Circuit Value and
 succinct circuits: the input variable $x_i$ is encoded as $(0, [i])$; the constant true as

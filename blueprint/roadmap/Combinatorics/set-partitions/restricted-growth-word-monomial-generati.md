@@ -1,6 +1,6 @@
 # Restricted-growth word generating function
 
-**Restricted-growth word generating function.** Fix $k \ge 0$. A word $u_1 u_2 \cdots u_n$
+Fix $k \ge 0$. A word $u_1 u_2 \cdots u_n$
 in the letters $1, \dots, k$ is a restricted-growth word if for every $i$, either $u_i = 1$ or
 $u_i \le u_j + 1$ for some $j < i$ (so a nonempty such word begins with $1$). For
 $d = (d_1, \dots, d_k) \in \mathbb{N}^k$, let $r(d)$ be the number of restricted-growth words in

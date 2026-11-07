@@ -1,6 +1,6 @@
 # A digit criterion for $\delta(i) = 1$
 
-**A digit criterion for $\delta(i) = 1$.** Let $p$ be a prime, $d$ a divisor of $p - 1$ and
+Let $p$ be a prime, $d$ a divisor of $p - 1$ and
 $\tau = (p + 1)/d$. For a rational $t$ and an integer $k$ write $[p^k](t)$ for the $k$-th base-$p$
 digit of $t$, the residue of $\lfloor t / p^k \rfloor$ modulo $p$ in
 $\lbrace 0, \dots, p - 1 \rbrace$, and let $\delta$ be the rounding indicator. If $i$ is a natural

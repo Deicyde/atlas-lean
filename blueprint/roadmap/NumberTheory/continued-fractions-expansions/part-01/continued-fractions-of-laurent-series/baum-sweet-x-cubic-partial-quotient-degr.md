@@ -1,6 +1,6 @@
 # Baum–Sweet cubic: partial quotients of degree at most 2
 
-**Baum–Sweet cubic: partial quotients of degree at most 2.** If
+If
 $\alpha \in \mathbb{F}_2((x^{-1}))$ satisfies $x\alpha^3 + \alpha + x = 0$, then every partial
 quotient $b_n$ of $\alpha$, $n \ge 0$, has degree at most $2$ in $x$.
 

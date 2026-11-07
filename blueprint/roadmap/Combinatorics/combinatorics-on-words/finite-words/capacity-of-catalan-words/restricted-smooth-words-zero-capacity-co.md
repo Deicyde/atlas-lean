@@ -1,6 +1,6 @@
 # Zero-capacity restricted smooth words
 
-**Zero-capacity restricted smooth words.** For $n \ge 1$ and a letter $i$, let $r^{\ast}(n, i)$
+For $n \ge 1$ and a letter $i$, let $r^{\ast}(n, i)$
 be the number of restricted smooth words of length $n$ ending in $i$ that have capacity $0$, and
 let $r^{\ast}(n)$ be the number of restricted smooth words of length $n$ with capacity $0$; these
 are the values at $q = 0$ of the corresponding capacity distributions. Then $r^{\ast}(n, 1) = 1$

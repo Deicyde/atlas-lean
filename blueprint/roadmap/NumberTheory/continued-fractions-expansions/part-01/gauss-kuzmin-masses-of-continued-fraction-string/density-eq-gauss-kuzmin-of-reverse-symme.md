@@ -1,6 +1,6 @@
 # Reversal symmetry forces the Gauss–Kuzmin density
 
-**Reversal symmetry forces the Gauss–Kuzmin density.** Let $f$ be a real function that is
+Let $f$ be a real function that is
 continuous and nonnegative on $[0, 1]$ with $\int_0^1 f(x)\,dx = 1$, and let $S$ be an infinite
 set of natural numbers. Write $I(a)$ for the fundamental interval of a string $a$ and
 $\overleftarrow{a}$ for the reverse of $a$. If

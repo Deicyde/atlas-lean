@@ -1,6 +1,6 @@
 # Integer values of the generalized Lucas generating function at rationals
 
-**Integer values of the generalized Lucas generating function at rationals.** Let $a$ and $b$
+Let $a$ and $b$
 be positive integers with $b \mid a$, and let $F_i(x), L_i(x) \in \mathbb{Z}[x]$ be the
 polynomials with $F_0 = 0$, $F_1 = 1$, $L_0 = 2$, $L_1 = ax$ and
 $G_{i+2} = ax\,G_{i+1} + b\,G_i$ for $G = F, L$ and all $i \ge 0$. For a rational number $q$, the

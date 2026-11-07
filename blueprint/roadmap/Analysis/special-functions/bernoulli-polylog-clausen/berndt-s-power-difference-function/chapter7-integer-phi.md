@@ -1,6 +1,6 @@
 # Bernoulli-polynomial form of Berndt's $\varphi_r$
 
-**Bernoulli-polynomial form of Berndt's $\varphi_r$.** For a natural number $r$ and
+For a natural number $r$ and
 $x \in \mathbb{C}$, $P_r(x) = \frac{B_{r+1}(x + 1) - B_{r+1}(1)}{r + 1}$, where $B_{r+1}$ is the
 Bernoulli polynomial of degree $r + 1$.
 

@@ -1,6 +1,6 @@
 # Number of $k$-box paths of size $n$
 
-**Number of $k$-box paths of size $n$.** Let $k \ge 1$ and $n \ge 1$, and let $f_{k,n}$ be
+Let $k \ge 1$ and $n \ge 1$, and let $f_{k,n}$ be
 the number of $k$-box paths of size $n$. Then
 
 $$

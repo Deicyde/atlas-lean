@@ -1,6 +1,6 @@
 # Denominator one characterizes integer polynomials
 
-**Denominator one characterizes integer polynomials.** For every polynomial
+For every polynomial
 $P \in \mathbb{Q}[x]$, its denominator $\operatorname{denom}(P)$ equals $1$ if and only if, for
 every $i \in \mathbb{N}$, the coefficient of $x^i$ in $P$ is an integer.
 

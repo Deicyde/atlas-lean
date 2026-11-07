@@ -1,6 +1,6 @@
 # There is no Diophantine quintuple
 
-**There is no Diophantine quintuple.** The statement that no Diophantine quintuple exists holds:
+The statement that no Diophantine quintuple exists holds:
 no finite set of natural numbers with exactly five elements is a Diophantine tuple.
 
 This was an open conjecture, resolved by He, Togbé, and Ziegler.

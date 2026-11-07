@@ -1,6 +1,6 @@
 # Terms of 3-silent sequences
 
-**Terms of 3-silent sequences.** Let $x, y, z : \mathbb{Z} \to \mathbb{Z}$ be bi-infinite
+Let $x, y, z : \mathbb{Z} \to \mathbb{Z}$ be bi-infinite
 integer sequences, and write $K_a(x)_b$ for the extended continuant of $x$ of order $a$ with start
 index $b$. Suppose that for every natural number $i$ we have $K_i(x)_0 = K_i(y)_0$,
 $K_{i-1}(x)_1 = K_{i-1}(y)_1$, $K_{-i-4}(x)_0 = K_i(z)_0$ and

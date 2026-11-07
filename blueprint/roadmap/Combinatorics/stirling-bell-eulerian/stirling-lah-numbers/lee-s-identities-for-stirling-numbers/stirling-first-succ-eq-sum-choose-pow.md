@@ -1,6 +1,6 @@
 # Lee's expansion of shifted Stirling numbers of the first kind
 
-**Lee's expansion of shifted Stirling numbers of the first kind.** Write $c(n, k)$ for the
+Write $c(n, k)$ for the
 unsigned Stirling number of the first kind, the number of permutations of $n$ elements with
 exactly $k$ cycles. For natural numbers $m \le n$, the following identity of integers holds:
 

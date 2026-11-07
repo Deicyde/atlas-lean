@@ -1,6 +1,6 @@
 # Higher moments of the smallest cycle length
 
-**Higher moments of the smallest cycle length.** Let $\omega$ be a real function with
+Let $\omega$ be a real function with
 $\omega(x) = 1/x$ for $1 \le x \le 2$ and $x\,\omega(x) = 1 + \int_1^{x-1} \omega(t)\,dt$ for
 $x \ge 2$, and for $n \ge 1$ let $X_n$ be the length of the smallest cycle of a uniformly random
 permutation of $\{1, \dots, n\}$. For every integer $\ell \ge 2$ there are real constants

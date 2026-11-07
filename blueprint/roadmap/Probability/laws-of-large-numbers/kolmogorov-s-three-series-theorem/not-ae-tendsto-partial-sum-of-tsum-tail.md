@@ -1,6 +1,6 @@
 # Divergent tail probabilities prevent almost-sure convergence of partial sums
 
-**Divergent tail probabilities prevent almost-sure convergence of partial sums.** Let
+Let
 $(X_n)_{n \ge 0}$ be a sequence of independent measurable real random variables on a probability
 space $(\Omega, \mu)$, and let $A > 0$. If $\sum_n \mu(\{\omega : |X_n(\omega)| > A\}) = \infty$,
 then there is no function $S : \Omega \to \mathbb{R}$ such that, for $\mu$-almost every $\omega$,

@@ -1,6 +1,6 @@
 # Carroll (Desnanot–Jacobi) identity
 
-**Carroll (Desnanot–Jacobi) identity.** Let $R$ be a commutative ring, let $n$ be a natural
+Let $R$ be a commutative ring, let $n$ be a natural
 number, and let $C$ be an $(n + 2) \times (n + 2)$ matrix over $R$. For indices $a$ and $b$,
 write $C^{a}_{b}$ for the $(n + 1) \times (n + 1)$ matrix obtained from $C$ by deleting row $a$
 and column $b$. Let $i \ne j$ be distinct indices and let $C^{ij}_{ij}$ be the $n \times n$

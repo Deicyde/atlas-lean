@@ -1,6 +1,6 @@
 # Huffman loop invariant
 
-**Huffman loop invariant.** Let $n$ be a natural number, $H$ a binary min-heap of Huffman
+Let $n$ be a natural number, $H$ a binary min-heap of Huffman
 priorities and $T$ an array of optional Huffman work items, and let $F$ be the list of work
 items stored in $T$, in array order. The invariant holds when the multiset of elements of $H$
 equals the multiset of priorities of the items of $F$; the serial numbers of the items of $F$ are

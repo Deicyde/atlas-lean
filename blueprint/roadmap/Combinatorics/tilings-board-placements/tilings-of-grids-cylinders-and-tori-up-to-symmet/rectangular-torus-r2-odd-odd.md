@@ -1,6 +1,6 @@
 # Half-turn fixed points on the rectangular torus, both sides odd
 
-**Half-turn fixed points on the rectangular torus, both sides odd.** Let $T$ be a finite
+Let $T$ be a finite
 set of tile designs, $\sigma$ a permutation of $T$ with $\sigma^2 = 1$, and $n, m$ positive odd
 integers. For a shift $(a, b) \in \mathbb{Z}/n \times \mathbb{Z}/m$, count the maps
 $F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with $F(-1-x-a, -1-y-b) = \sigma(F(x, y))$ for all

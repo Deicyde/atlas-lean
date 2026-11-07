@@ -1,6 +1,6 @@
 # The verifier's main scan
 
-**The verifier's main scan.** For all bit strings $r$, $bs$, $as$, every flag $fl$ and every
+For all bit strings $r$, $bs$, $as$, every flag $fl$ and every
 machine state $v$, the verifier program leads in exactly $T(r, bs, as, fl)$ steps from the
 configuration at label $\mathsf{c0}(fl)$ with machine state $v$, the input stack holding the bits
 of $r$, the stack $A$ holding the bits of $as$ and the stack $B$ holding the bits of $bs$ (each bit

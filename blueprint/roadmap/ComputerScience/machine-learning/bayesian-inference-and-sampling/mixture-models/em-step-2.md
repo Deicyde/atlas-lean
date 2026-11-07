@@ -1,6 +1,6 @@
 # The EM step for isotropic Gaussian mixtures
 
-**The EM step for isotropic Gaussian mixtures.** Let $x_1, \dots, x_N$ be points of
+Let $x_1, \dots, x_N$ be points of
 $\mathbb{R}^d$ that are not all equal and let $\theta$ be valid parameters of a $K$-component
 isotropic Gaussian mixture. With $r_{nk}$ the responsibility of component $k$ for $x_n$ under
 $\theta$ (the E-step), the EM step sends $\theta$ to the valid parameters with weights

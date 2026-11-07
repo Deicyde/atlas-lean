@@ -1,6 +1,6 @@
 # Weighted Hardy inequality on the annulus
 
-**Weighted Hardy inequality on the annulus.** For $r > 0$ let $B_r$ be the open disc of
+For $r > 0$ let $B_r$ be the open disc of
 radius $r$ about the origin of $\mathbb{R}^2$, let $|x|$ be the Euclidean norm, and let
 $\phi(x) = \max\{|x| - 1, 0\}$ be the distance from $x$ to the closed unit disc. Let
 $\Omega_1 = B_3 \setminus \overline{B}_1$ and $\Omega_2 = B_3 \setminus \overline{B}_2$, with

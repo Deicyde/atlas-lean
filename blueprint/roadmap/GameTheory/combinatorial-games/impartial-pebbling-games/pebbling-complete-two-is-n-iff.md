@@ -1,6 +1,6 @@
 # Winning positions of $(2:1)$-pebbling on $K_2$
 
-**Winning positions of $(2:1)$-pebbling on $K_2$.** Let $a = (a_0, a_1)$ be a position of the
+Let $a = (a_0, a_1)$ be a position of the
 $(2:1)$-pebbling game on the complete graph $K_2$, with $a_0$ and $a_1$ pebbles on its two
 vertices. If $a_0 + a_1$ is even, then $a$ is an N-position (that is, not a P-position) if and
 only if $a_0 \not\equiv a_1 \pmod 3$. If $a_0 + a_1$ is odd, then $a$ is an N-position if and

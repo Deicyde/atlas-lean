@@ -1,6 +1,6 @@
 # Projective order of 2 is at most half the totient
 
-**Projective order of 2 is at most half the totient.** For every odd natural number $B > 3$,
+For every odd natural number $B > 3$,
 the projective order of $2$ modulo $B$ satisfies $\lambda(B) \le \lfloor \varphi(B)/2 \rfloor$,
 where $\varphi$ is Euler's totient function.
 

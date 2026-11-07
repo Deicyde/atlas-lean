@@ -1,6 +1,6 @@
 # $(1, 3, 8)$ is a $\{2, 3, 5\}$-Diophantine triple
 
-**$(1, 3, 8)$ is a $\{2, 3, 5\}$-Diophantine triple.** The set $\{1, 3, 8\}$ is a
+The set $\{1, 3, 8\}$ is a
 $\{2, 3, 5\}$-Diophantine tuple, since $1 \cdot 3 + 1 = 2^2$, $1 \cdot 8 + 1 = 3^2$ and
 $3 \cdot 8 + 1 = 5^2$.
 

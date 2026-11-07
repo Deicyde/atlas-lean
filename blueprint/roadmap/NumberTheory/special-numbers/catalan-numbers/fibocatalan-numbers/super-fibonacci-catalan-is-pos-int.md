@@ -1,6 +1,6 @@
 # Super FiboCatalan numbers are positive integers
 
-**Super FiboCatalan numbers are positive integers.** For all natural numbers $m$ and $n$, the
+For all natural numbers $m$ and $n$, the
 super FiboCatalan number
 
 $$S(m, n)_F = \frac{F_{2m}!\, F_{2n}!}{F_m!\, F_n!\, F_{m+n}!},$$

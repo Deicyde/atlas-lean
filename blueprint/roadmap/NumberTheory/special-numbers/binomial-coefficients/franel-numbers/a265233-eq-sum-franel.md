@@ -1,6 +1,6 @@
 # Explicit formula for A265233 in terms of Franel numbers
 
-**Explicit formula for A265233 in terms of Franel numbers.** Let $(a_n)_{n \ge 0}$ be the
+Let $(a_n)_{n \ge 0}$ be the
 sequence A265233 and let $f_m = \sum_{k=0}^{m} \binom{m}{k}^3$ be the $m$-th Franel number. For
 every integer $n \ge 1$,
 

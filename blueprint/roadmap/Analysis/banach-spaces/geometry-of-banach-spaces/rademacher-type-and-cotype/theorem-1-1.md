@@ -1,6 +1,6 @@
 # Comparison of Rademacher and Enflo type constants
 
-**Comparison of Rademacher and Enflo type constants.** For every real Banach space $X$ and every
+For every real Banach space $X$ and every
 real number $p$ with $1 \le p \le 2$, the Rademacher type constant and the Enflo type constant
 of $X$ satisfy $T^R_p(X) \le T^E_p(X) \le \frac{\pi}{\sqrt{2}}\, T^R_p(X)$.
 

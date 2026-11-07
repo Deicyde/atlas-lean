@@ -1,6 +1,6 @@
 # Every $k$-Naples parking function is $(k + 1)$-Naples
 
-**Every $k$-Naples parking function is $(k + 1)$-Naples.** For all natural numbers $k$
+For all natural numbers $k$
 and $n$, every $k$-Naples parking function $\alpha$ of length $n$ is also a $(k + 1)$-Naples
 parking function.
 

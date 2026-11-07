@@ -1,6 +1,6 @@
 # Binary binomial interpolated triangle
 
-**Binary binomial interpolated triangle.** For real numbers $a_0, a_1, \alpha, \beta$, a real
+For real numbers $a_0, a_1, \alpha, \beta$, a real
 array $(a_{n,k})_{n,k \ge 0}$ is the binary binomial interpolated triangle
 $BT(a_0, a_1, \alpha, \beta; \alpha, \beta)$ when $\alpha\beta \ne 0$, $|a_0| + |a_1| \ne 0$,
 $a_{0,0} = a_0$, $a_{1,0} = a_1$, $a_{n,0} = \alpha\, a_{n-1,0} + \beta\, a_{n-2,0}$ for every

@@ -1,6 +1,6 @@
 # The pole parameter $q^{1/h}\xi^j$
 
-**The pole parameter $q^{1/h}\xi^j$.** Let $F$ be a finite set with $q$ elements, and let
+Let $F$ be a finite set with $q$ elements, and let
 $h, j \in \mathbb{N}$ and $\xi \in \mathbb{C}$. The pole parameter is the complex number
 $q^{1/h}\xi^j$, where $q^{1/h}$ is the nonnegative real $h$-th root of $q$ (for $h = 0$ the
 exponent $1/h$ is read as $0$, so that $q^{1/h} = 1$).

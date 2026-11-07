@@ -1,6 +1,6 @@
 # Cohn steps reach every generalized Cohn triple whose middle entry is largest
 
-**Cohn steps reach every generalized Cohn triple whose middle entry is largest.** Let
+Let
 $k \in \mathbb{N}$ and let $S$ be the integer matrix with rows $(k, 0)$ and $(3k^2 + 3k, k)$.
 Call $(P, Q, R) \mapsto (P, PQ - S, Q)$ the left step and $(P, Q, R) \mapsto (Q, QR - S, R)$ the
 right step. First, if $(P, Q, R)$ is a $k$-generalized Cohn triple associated with $(a, b, c)$

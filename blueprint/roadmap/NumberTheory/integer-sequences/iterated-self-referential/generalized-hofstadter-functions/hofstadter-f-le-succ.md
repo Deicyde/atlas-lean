@@ -1,6 +1,6 @@
 # Pointwise order of the generalized Hofstadter functions
 
-**Pointwise order of the generalized Hofstadter functions.** For every $k \ge 1$ and every
+For every $k \ge 1$ and every
 natural number $n$, the generalized Hofstadter functions satisfy $F_k(n) \le F_{k+1}(n)$.
 
 ## Sources

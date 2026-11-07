@@ -1,6 +1,6 @@
 # Dickson pseudoprimes of the second kind
 
-**Dickson pseudoprimes of the second kind.** Let $P$ and $Q \ne 0$ be integers with
+Let $P$ and $Q \ne 0$ be integers with
 discriminant $D = P^2 - 4Q$, and let $(V_n)$ be the companion Lucas sequence $V(P, Q)$. A
 natural number $N$ is a Dickson pseudoprime of the second kind with parameters $P$ and $Q$ if
 $N$ is odd, $N > 1$, $N$ is not prime, $\gcd(N, QD) = 1$, and

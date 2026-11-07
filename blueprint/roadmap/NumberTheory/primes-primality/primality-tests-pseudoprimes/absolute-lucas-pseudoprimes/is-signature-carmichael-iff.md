@@ -1,6 +1,6 @@
 # Korselt criterion for $\sigma$-Carmichael numbers
 
-**Korselt criterion for $\sigma$-Carmichael numbers.** Let
+Let
 $\sigma = (\varepsilon_1, \dots, \varepsilon_r)$ be a list of signs $\varepsilon_i \in \{1, -1\}$ of
 length $r \ge 2$, put $\varepsilon_\sigma = \varepsilon_1 \cdots \varepsilon_r$, and let $n$ be an
 odd natural number. Then $n$ is $\sigma$-Carmichael if and only if $n$ is squarefree, has exactly

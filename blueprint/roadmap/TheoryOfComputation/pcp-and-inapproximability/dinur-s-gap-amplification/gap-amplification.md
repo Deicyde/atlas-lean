@@ -1,6 +1,6 @@
 # Gap amplification with given constants
 
-**Gap amplification with given constants.** Let $c, \alpha$ be rationals and $d, D, e$ natural
+Let $c, \alpha$ be rationals and $d, D, e$ natural
 numbers. A map $T$ from 2CSP instances to 2CSP instances is a gap amplification with constants
 $c, \alpha, d, D, e$ when $c > 1$, $0 < \alpha < 1$, $d \ge 1$, $D \ge 1$, and for every 2CSP
 instance $I$ with $n$ variables, alphabet size $\Sigma$ and $m$ constraints: $T(I)$ has exactly $n$

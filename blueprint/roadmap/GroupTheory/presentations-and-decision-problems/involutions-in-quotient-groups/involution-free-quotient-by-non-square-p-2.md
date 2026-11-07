@@ -1,6 +1,6 @@
 # Quotients by the normal closure of an odd power of a non-square can have involutions
 
-**Quotients by the normal closure of an odd power of a non-square can have involutions.** There
+There
 exist a group $G$ without involutions (if $g^2 = 1$ then $g = 1$), an element $a \in G$ that is
 not the square of any element of $G$, and an odd natural number $n$ such that the quotient of $G$
 by the normal closure of $a^n$ contains an involution, that is, an element $y \ne 1$ with

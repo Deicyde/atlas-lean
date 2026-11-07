@@ -1,6 +1,6 @@
 # The composite polynomial-time TM2 computation
 
-**The composite polynomial-time TM2 computation.** Let $h_1$ be a polynomial-time TM2
+Let $h_1$ be a polynomial-time TM2
 computation of $f : \alpha \to \beta$ with respect to encodings $e_\alpha$ and $e_\beta$, and
 let $h_2$ be one of $g : \beta \to \gamma$ with respect to $e_\beta$ and $e_\gamma$. This is the
 polynomial-time TM2 computation of $g \circ f$ with respect to $e_\alpha$ and $e_\gamma$ whose

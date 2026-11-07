@@ -1,6 +1,6 @@
 # Rational points of open patterns have quadratic continuous Turán number
 
-**Rational points of open patterns have quadratic continuous Turán number.** Let
+Let
 $P \subseteq \mathbb{R}^2$ be a nonempty open set and let $Q_P$ be the set of points of $P$ both
 of whose coordinates are rational. Then $\operatorname{opx}(n, Q_P) = \Theta(n^2)$ as the real
 number $n$ tends to infinity.

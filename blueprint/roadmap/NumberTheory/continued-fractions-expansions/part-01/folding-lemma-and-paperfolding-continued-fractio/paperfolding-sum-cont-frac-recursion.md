@@ -1,6 +1,6 @@
 # Continued fraction of a paperfolding sum via the words $A_k$
 
-**Continued fraction of a paperfolding sum via the words $A_k$.** Let $x = (x_k)_{k \ge 0}$ be
+Let $x = (x_k)_{k \ge 0}$ be
 natural numbers with $x_0 = 2$ and $x_k \ge 2$ for all $k$, let $s_k$ be the paperfolding sum
 terms defined by $x$, and let $S = \sum_{k \ge 0} s_k$, with continued fraction expansion
 $[a_0; a_1, a_2, \ldots]$. Let $A_k$ be the continued-fraction words defined by $x$, so that

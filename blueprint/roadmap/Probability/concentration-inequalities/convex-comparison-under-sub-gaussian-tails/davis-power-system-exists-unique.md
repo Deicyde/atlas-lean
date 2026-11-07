@@ -1,6 +1,6 @@
 # Existence and uniqueness for the Davis–Power system
 
-**Existence and uniqueness for the Davis–Power system.** There is exactly one quadruple
+There is exactly one quadruple
 $(a, p_0, z, c_0)$ of real numbers that is a valid solution of the Davis–Power system.
 
 ## Sources

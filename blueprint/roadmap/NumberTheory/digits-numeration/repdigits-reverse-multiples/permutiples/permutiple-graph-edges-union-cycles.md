@@ -1,6 +1,6 @@
 # Permutiple graphs are unions of simple cycles of the mother graph
 
-**Permutiple graphs are unions of simple cycles of the mother graph.** Let $n \ge 1$
+Let $n \ge 1$
 and $b \ge 2$ be natural numbers, let $\sigma$ be a permutation of $\{0, \dots, k\}$, and
 let $(d_k, \dots, d_0)_b$ be an $(n, b, \sigma)$-permutiple, where $(e_k, \dots, e_0)_b$
 denotes the base-$b$ numeral $\sum_{j=0}^{k} e_j b^j$. Let

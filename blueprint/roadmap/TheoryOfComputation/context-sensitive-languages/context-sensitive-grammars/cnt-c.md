@@ -1,3 +1,3 @@
 # Count of c's in a sentential form
 
-**Count of c's in a sentential form.** The `c`-count: terminal `c`'s plus unborn `C`'s.
+The `c`-count: terminal `c`'s plus unborn `C`'s.

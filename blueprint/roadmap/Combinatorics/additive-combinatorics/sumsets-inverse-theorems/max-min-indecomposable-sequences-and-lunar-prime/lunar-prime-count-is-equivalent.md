@@ -1,6 +1,6 @@
 # Asymptotic count of lunar primes
 
-**Asymptotic count of lunar primes.** Fix an integer $b \ge 2$. For $n \ge 1$ let $\pi_b(n)$
+Fix an integer $b \ge 2$. For $n \ge 1$ let $\pi_b(n)$
 be the number of digit strings $(a_0, \dots, a_{n-1})$ with $a_k \in \{0, \dots, b - 1\}$ and
 leading digit $a_{n-1} \ne 0$ whose coefficient sequence $(a_0, \dots, a_{n-1}, 0, 0, \dots)$ is a
 lunar prime of base $b$; these are the prime lunar numbers of base $b$ with $n$ digits. Then

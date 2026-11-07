@@ -1,6 +1,6 @@
 # Binomial coefficients at multiples of a prime divisor
 
-**Binomial coefficients at multiples of a prime divisor.** Let $p$ be a prime and let
+Let $p$ be a prime and let
 $n \ge 1$ be an integer divisible by $p$. Then for every integer $\lambda \ge 0$ with
 $\lambda p \ne n$,
 

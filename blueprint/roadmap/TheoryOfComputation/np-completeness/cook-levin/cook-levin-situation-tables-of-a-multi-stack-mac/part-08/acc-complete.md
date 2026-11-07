@@ -1,6 +1,6 @@
 # Completeness of the accept family
 
-**Completeness of the accept family.** Let $E$ be an encoding of the machine $M$, let $s$ be
+Let $E$ be an encoding of the machine $M$, let $s$ be
 a word over the input alphabet, let $T$ and $H$ be natural numbers with $H > 0$, and let
 $\mathrm{acc}$ be a symbol of the output stack. Suppose that the configuration reached after $T$
 steps of the idle-extended run of $M$ from the initial configuration on $s$ is accepting for

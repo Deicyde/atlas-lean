@@ -1,6 +1,6 @@
 # Asymptotic formula for the higher moments of the mean gcd-sum function
 
-**Asymptotic formula for the higher moments of the mean gcd-sum function.** For $n \ge 1$ let
+For $n \ge 1$ let
 $A(n) = \frac{1}{n} \sum_{j=1}^{n} \gcd(j, n)$ be the mean gcd-sum function, and let $k \ge 5$ be
 an integer. There is a real polynomial $P$ such that for every $\varepsilon > 0$, as
 $x \to \infty$,

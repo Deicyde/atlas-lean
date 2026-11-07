@@ -1,6 +1,6 @@
 # Parity of the shifted continuant of a symmetric sequence, even length
 
-**Parity of the shifted continuant of a symmetric sequence, even length.** Let $l \ge 4$ be
+Let $l \ge 4$ be
 even and let $a_1, \dots, a_{l-1}$ be natural numbers with $a_i = a_{l-i}$ for
 $1 \le i \le l - 1$. For $j \ge 1$ let $r_j = K(a_2, \dots, a_j)$ be the continuant, given by
 $r_1 = 1$, $r_2 = a_2$ and $r_{j+2} = a_{j+2} r_{j+1} + r_j$. Then

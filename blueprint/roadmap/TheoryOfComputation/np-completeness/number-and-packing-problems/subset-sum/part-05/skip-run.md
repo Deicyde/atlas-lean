@@ -1,6 +1,6 @@
 # Skipping a number block
 
-**Skipping a number block.** Let $p$ and $s$ be lists of bits, and write $\mathrm{delimit}(p)$
+Let $p$ and $s$ be lists of bits, and write $\mathrm{delimit}(p)$
 for the self-delimiting encoding of $p$ (each bit $b$ written as true followed by $b$, then a
 terminating false). Suppose the SUBSET-SUM verifier machine is in the state that skips an
 unchosen number block, with flag $z$ recording whether the bits read so far end in false and any

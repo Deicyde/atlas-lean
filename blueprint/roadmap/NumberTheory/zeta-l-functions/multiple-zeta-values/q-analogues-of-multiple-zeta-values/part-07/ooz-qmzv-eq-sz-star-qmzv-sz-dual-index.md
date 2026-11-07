@@ -1,6 +1,6 @@
 # OOZ-qMZVs are SZ-star qMZVs of the dual index
 
-**OOZ-qMZVs are SZ-star qMZVs of the dual index.** For every index $k = (k_1, \dots, k_r)$ of
+For every index $k = (k_1, \dots, k_r)$ of
 natural numbers that is empty or has $k_1 \ge 1$, the Ohno–Okuda–Zudilin qMZV of $k$ equals the
 SZ-star qMZV of the SZ dual index $k^\dagger$: $\zeta_q^{OOZ}(k) = \zeta_q^{SZ,\star}(k^\dagger)$.
 

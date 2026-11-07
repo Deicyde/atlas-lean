@@ -1,6 +1,6 @@
 # The meromorphic Stirling numbers $S_{-1;1}(n,k)$
 
-**The meromorphic Stirling numbers $S_{-1;1}(n,k)$.** For natural numbers $n$ and $k$ with
+For natural numbers $n$ and $k$ with
 $k \le n \le 2k$, the meromorphic Stirling number $S_{-1;1}(n,k)$ is the rational number
 
 $$S_{-1;1}(n,k) = \frac{(2n-2k)!}{2^{n-k}\,(n-k)!}\binom{n}{2k-n}.$$

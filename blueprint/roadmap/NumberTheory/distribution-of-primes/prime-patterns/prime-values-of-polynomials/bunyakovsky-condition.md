@@ -1,6 +1,6 @@
 # Bunyakovsky condition
 
-**Bunyakovsky condition.** An integer polynomial $f \in \mathbb{Z}[x]$ satisfies the
+An integer polynomial $f \in \mathbb{Z}[x]$ satisfies the
 Bunyakovsky condition when it has degree at least $1$, is irreducible in $\mathbb{Z}[x]$, and has
 positive leading coefficient.
 

@@ -1,6 +1,6 @@
 # Every mismatched word is derivable from the mismatch nonterminal
 
-**Every mismatched word is derivable from the mismatch nonterminal.** Let $P$ be a list of
+Let $P$ be a list of
 dominoes over a finite alphabet, $s$ a map from dominoes to words (in use, the top or the bottom),
 $w_i = s(d_i)$ for the $i$-th domino $d_i$ of $P$, and $\mathrm{code}(i)$ the unary code of $i$ as
 bits. Let $A$ be a nonterminal such that every mismatch production of $A$ for $s$ and $P$ is a

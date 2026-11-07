@@ -1,6 +1,6 @@
 # Program of the checking machine
 
-**Program of the checking machine.** Writing $1$ for true and $0$ for false, this is the
+Writing $1$ for true and $0$ for false, this is the
 program of a multi-stack machine whose stacks $X, Y, W, V, Q, A, P_Q, P_A, T_1, T_2, J, O$ all
 hold bits. To read a cell from $V$ onto a stack $S$ means to pop the leading $1$s of $V$, pushing
 a $1$ on $S$ for each, and then to pop the $0$ that follows; if $V$ is empty at that point, the

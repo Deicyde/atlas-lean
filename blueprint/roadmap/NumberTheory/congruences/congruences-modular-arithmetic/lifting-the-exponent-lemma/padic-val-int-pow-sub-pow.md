@@ -1,6 +1,6 @@
 # Lifting the exponent for odd primes
 
-**Lifting the exponent for odd primes.** Let $p$ be an odd prime, let $a \ne b$ be integers
+Let $p$ be an odd prime, let $a \ne b$ be integers
 such that $p$ divides $a - b$ but does not divide $ab$, and let $n \ge 1$ be a natural number.
 Then
 

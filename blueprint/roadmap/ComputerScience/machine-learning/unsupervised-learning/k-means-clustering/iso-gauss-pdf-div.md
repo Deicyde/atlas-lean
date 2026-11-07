@@ -1,6 +1,6 @@
 # Ratio of isotropic Gaussian densities with a common variance
 
-**Ratio of isotropic Gaussian densities with a common variance.** For all points
+For all points
 $\mu, \nu, x \in \mathbb{R}^d$ and every real $v > 0$, writing $\mathcal{N}(x \mid \mu, vI)$ for
 the isotropic Gaussian density with mean $\mu$ and covariance $vI$,
 

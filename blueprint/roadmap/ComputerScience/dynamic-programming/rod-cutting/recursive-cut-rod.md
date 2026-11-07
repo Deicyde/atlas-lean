@@ -1,6 +1,6 @@
 # Recursive CUT-ROD
 
-**Recursive CUT-ROD.** Let $\alpha$ be an additive commutative monoid with a linear order,
+Let $\alpha$ be an additive commutative monoid with a linear order,
 and let $p_1, \dots, p_n \in \alpha$ be prices, $p_i$ being the price of a piece of length $i$.
 Recursive CUT-ROD returns $r(n)$, where $r(0) = 0$ and, for $1 \le j \le n$,
 $r(j) = \max(p_1 + r(j - 1), p_2 + r(j - 2), \dots, p_j + r(0))$. The first cuts

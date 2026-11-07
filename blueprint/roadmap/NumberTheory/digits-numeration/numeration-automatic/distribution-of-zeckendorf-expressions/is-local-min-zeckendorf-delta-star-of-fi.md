@@ -1,6 +1,6 @@
 # Local minima of $\delta^\ast$ at finitely supported points
 
-**Local minima of $\delta^\ast$ at finitely supported points.** Let $L$ and $\tilde L$ form a
+Let $L$ and $\tilde L$ form a
 periodic Zeckendorf pair, let $Q$ and $\tilde Q$ be fundamental sequences of the $L^*$-collection
 $E^*$ and the $\tilde L^*$-collection $\tilde E^*$, and let $\delta^*$ be the function determined
 by $L$, $\tilde L$, $Q$ and $\tilde Q$. If $\varepsilon \in E^*$ has finite support, then

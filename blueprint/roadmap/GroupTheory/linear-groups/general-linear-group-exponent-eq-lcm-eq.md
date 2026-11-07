@@ -1,6 +1,6 @@
 # Exponent of the general linear group over a prime field
 
-**Exponent of the general linear group over a prime field.** Let $p$ be a prime and let
+Let $p$ be a prime and let
 $m \ge 1$. The exponent of the group $\mathrm{GL}_m(\mathbb{F}_p)$ of invertible $m \times m$
 matrices over $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ is
 

@@ -1,6 +1,6 @@
 # Digit decomposition of the Irwin measures, positive index
 
-**Digit decomposition of the Irwin measures, positive index.** Let $b > 1$ and $d < b$ be
+Let $b > 1$ and $d < b$ be
 natural numbers, and for each natural number $j$ let $\mu_j$ be the Irwin measure of base $b$ and
 digit $d$ with index $j$. Let $f : \mathbb{R} \to \mathbb{R}$ be measurable and bounded on
 $[0, b)$, and let $k \ge 1$. Then

@@ -1,6 +1,6 @@
 # Lim's theorem on five-pile P&R
 
-**Lim's theorem on five-pile P&R.** Let $a \ge b \ge c \ge d \ge e$ be natural numbers. The
+Let $a \ge b \ge c \ge d \ge e$ be natural numbers. The
 Princess and the Roses position $(a, b, c, d, e)$ is a P-position if and only if the parities of
 $a, b, c, d, e$ are, in this order, (even, even, even, even, even), (odd, odd, odd, even, even),
 (even, odd, odd, odd, odd) or (odd, even, even, odd, odd).

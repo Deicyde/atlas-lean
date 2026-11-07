@@ -1,6 +1,6 @@
 # Generalized binomial coefficient
 
-**Generalized binomial coefficient.** Let $f \colon \mathbb{N} \to \mathbb{N}$ be a sequence and
+Let $f \colon \mathbb{N} \to \mathbb{N}$ be a sequence and
 write $k!_f = f(1) f(2) \cdots f(k)$ for its generalized factorial, so that $0!_f = 1$. For
 natural numbers $n$ and $m$, the generalized binomial coefficient of $f$ is the rational number
 

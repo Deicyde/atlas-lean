@@ -1,6 +1,6 @@
 # Asymptotic for B-free divisor sums in progressions when h is at most 2
 
-**Asymptotic for B-free divisor sums in progressions when h is at most 2.** Let $F$ be a
+Let $F$ be a
 finite field with $q$ elements, write $|f| = q^{\deg f}$ for nonzero $f \in F[T]$, and let
 $\kappa$ assign a natural number to each polynomial in $F[T]$, with $\kappa(P) \ge 2$ for every
 monic irreducible $P$. Let $m \ne 0$ and $a$ be polynomials in $F[T]$ with $a$ coprime to $m$, let

@@ -1,6 +1,6 @@
 # The work-span bound for greedy schedules
 
-**The work-span bound for greedy schedules.** Let $G$ be a computation DAG with $n$ tasks and
+Let $G$ be a computation DAG with $n$ tasks and
 span $D$, and let $S$ be a greedy schedule of $G$ on $p$ processors taking $T$ steps. Then
 $pT \le n + pD$, that is, $T \le n/p + D$ when $p \ge 1$.
 

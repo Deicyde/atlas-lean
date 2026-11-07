@@ -1,6 +1,6 @@
 # The Zeckendorf odometer
 
-**The Zeckendorf odometer.** The odometer is the map $T$ on digit sequences
+The odometer is the map $T$ on digit sequences
 $x = (x_k)_{k \in \mathbb{N}}$ with $x_k \in \{0, 1\}$ defined as follows. If $x_k = x_{k+1} = 0$
 for some $k \ge 2$, let $k$ be the least such index; then $T(x)_j = 0$ for $j < k$, $T(x)_k = 1$
 and $T(x)_j = x_j$ for $j > k$. If there is no such $k$, then $T(x)$ is the zero sequence.

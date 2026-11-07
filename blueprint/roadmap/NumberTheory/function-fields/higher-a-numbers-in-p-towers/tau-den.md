@@ -1,6 +1,6 @@
 # The denominator $\tau_D$
 
-**The denominator $\tau_D$.** For natural numbers $p$ and $d$, $\tau_D$ is the denominator in
+For natural numbers $p$ and $d$, $\tau_D$ is the denominator in
 lowest terms of the rational number $\tau = (p + 1)/d$ (when $d = 0$, $\tau$ is taken to be $0$,
 so $\tau_D = 1$).
 

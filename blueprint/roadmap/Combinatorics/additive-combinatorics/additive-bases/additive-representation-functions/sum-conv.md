@@ -1,6 +1,6 @@
 # Sum convolution
 
-**Sum convolution.** Let $R$ be a semiring. The sum convolution, or Cauchy product, of two
+Let $R$ be a semiring. The sum convolution, or Cauchy product, of two
 functions $f, g \colon \mathbb{N} \to R$ is the function $\mathbb{N} \to R$ whose value at
 $n \in \mathbb{N}$ is
 

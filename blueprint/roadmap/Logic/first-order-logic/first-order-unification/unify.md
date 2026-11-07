@@ -1,6 +1,6 @@
 # Martelli–Montanari unification
 
-**Martelli–Montanari unification.** The algorithm takes a list of equations between terms and
+The algorithm takes a list of equations between terms and
 returns a substitution or fails. On the empty list it returns the identity substitution.
 Otherwise it looks at the first equation $t = u$ and the remaining list $E$. If $t$ and $u$ are
 the same variable, or the same constant, the equation is dropped and the algorithm continues on

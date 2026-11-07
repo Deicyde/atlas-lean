@@ -1,6 +1,6 @@
 # Largeness is partition regular
 
-**Largeness is partition regular.** If $D_1, D_2 \subseteq \mathbb{N}$ and their union
+If $D_1, D_2 \subseteq \mathbb{N}$ and their union
 $D = D_1 \cup D_2$ is large, then $D_1$ is large or $D_2$ is large.
 
 ## Sources

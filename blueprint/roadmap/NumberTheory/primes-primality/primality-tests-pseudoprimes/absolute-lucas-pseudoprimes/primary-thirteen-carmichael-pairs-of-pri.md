@@ -1,6 +1,6 @@
 # Primary and secondary $13$-Carmichael numbers from prime quadruples
 
-**Primary and secondary $13$-Carmichael numbers from prime quadruples.** Assume the prime
+Assume the prime
 $k$-tuples conjecture (the paper's Conjecture 1) in the following form: for every finite list
 of linear forms $a_i x + b_i$ with integers $a_i \ge 1$ and $b_i$ such that for every prime
 $\ell$ there is an integer $x$ with $\ell \nmid \prod_i (a_i x + b_i)$, there are infinitely

@@ -1,6 +1,6 @@
 # Shifted Vandermonde matrix
 
-**Shifted Vandermonde matrix.** For a natural number $n$, the shifted Vandermonde matrix
+For a natural number $n$, the shifted Vandermonde matrix
 $E(n)$ is the $n \times n$ matrix with rational entries $E(n)_{i,j} = (j + 1)^{i-1}$ for
 $1 \le i, j \le n$.
 

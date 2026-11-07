@@ -1,6 +1,6 @@
 # Kourovka Problem 18.60 (field-like transitive automorphism groups)
 
-**Kourovka Problem 18.60 (field-like transitive automorphism groups).** The conjecture of
+The conjecture of
 D. V. Lytkina, as a proposition: for every countably infinite elementary abelian $2$-group $V$
 (an abelian group with $v + v = 0$ for all $v \in V$) there is no subgroup $G$ of the symmetric
 group $\mathrm{Sym}(V)$ consisting of additive bijections such that (a) $G$ is transitive on

@@ -1,6 +1,6 @@
 # Divisibility of $x^p - 1$ by $p$
 
-**Divisibility of $x^p - 1$ by $p$.** Let $p$ be a prime, let $x$ be a positive integer, and
+Let $p$ be a prime, let $x$ be a positive integer, and
 let $\Phi_p$ be the $p$-th cyclotomic polynomial with integer coefficients. Then
 $p \mid x^p - 1$ if and only if $p \mid x - 1$ and $p \mid \Phi_p(x)$.
 

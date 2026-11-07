@@ -1,6 +1,6 @@
 # Parametric rational solutions of the bisector equation
 
-**Parametric rational solutions of the bisector equation.** Let $l, m, n$ be integers with
+Let $l, m, n$ be integers with
 $|l| \ne |m|$, $l m \ne n^2$ and $l m n \ne 0$, and put
 
 $$a = \frac{l^2 - n^2}{2 l n}, \qquad b = \frac{m^2 - n^2}{2 m n}.$$

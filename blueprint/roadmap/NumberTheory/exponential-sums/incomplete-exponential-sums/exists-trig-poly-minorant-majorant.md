@@ -1,6 +1,6 @@
 # Trigonometric polynomials bounding the indicator of an arc
 
-**Trigonometric polynomials bounding the indicator of an arc.** Let $a \le b$ be real
+Let $a \le b$ be real
 numbers with $b - a < 1$ and let $K \ge 1$ be an integer. Let $\chi(x) = 1$ if
 $a \le x - n \le b$ for some integer $n$, and $\chi(x) = 0$ otherwise. Then there are complex
 numbers $\alpha_-(k)$ and $\alpha_+(k)$, for $k \in \mathbb{Z}$, with

@@ -1,6 +1,6 @@
 # Transitions of the restricted pushdown automaton
 
-**Transitions of the restricted pushdown automaton.** Let $M$ be a pushdown
+Let $M$ be a pushdown
 automaton with stack alphabet $\Gamma$, and let $M|_{\Gamma_0}$ be its restriction to a
 finite set $\Gamma_0 \subseteq \Gamma$ of stack symbols that contains the initial stack
 symbol and is closed for $M$. Let $q, q'$ be states, $o$ an input option (an input

@@ -1,6 +1,6 @@
 # Zagier's formula for products of two cyclic permutations
 
-**Zagier's formula for products of two cyclic permutations.** Let $n$ and $k$ be integers
+Let $n$ and $k$ be integers
 with $n \ge 1$ and $1 \le k \le n$. Call a permutation of an $n$-element set cyclic when it has
 exactly one cycle, fixed points counted as cycles. Write $c(n+1, k)$ for the unsigned Stirling
 number of the first kind, the number of permutations of $n + 1$ elements with exactly $k$

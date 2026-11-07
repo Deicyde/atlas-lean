@@ -1,6 +1,6 @@
 # The whole semigroup is a J-set
 
-**The whole semigroup is a J-set.** In every nonempty commutative semigroup $S$, the set $S$
+In every nonempty commutative semigroup $S$, the set $S$
 itself is a $J$-set.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Splitting a set whose sumset has positive upper density
 
-**Splitting a set whose sumset has positive upper density.** For every set
+For every set
 $A \subseteq \mathbb{N}$ whose sumset $A + A = \{a + b : a, b \in A\}$ has positive upper density,
 there are disjoint sets $A_1, A_2 \subseteq \mathbb{N}$ with $A_1 \cup A_2 = A$ such that both
 $A_1 + A_1$ and $A_2 + A_2$ have positive upper density.

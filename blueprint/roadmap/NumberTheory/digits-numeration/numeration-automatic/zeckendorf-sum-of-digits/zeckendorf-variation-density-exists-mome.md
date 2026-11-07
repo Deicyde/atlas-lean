@@ -1,6 +1,6 @@
 # Zeckendorf variation densities exist, with finite moments and mean zero
 
-**Zeckendorf variation densities exist, with finite moments and mean zero.** For
+For
 $n \in \mathbb{N}$ let $s(n)$ be the number of terms in the Zeckendorf representation of $n$. For
 every $r \in \mathbb{N}$ there is a function $\mu : \mathbb{Z} \to \mathbb{R}$ such that for every
 $d \in \mathbb{Z}$ the set $\{n \in \mathbb{N} : s(n + r) - s(n) = d\}$ has natural density

@@ -1,6 +1,6 @@
 # P&R Helper positions of Sprague–Grundy value 6 or 7 on region U
 
-**P&R Helper positions of Sprague–Grundy value 6 or 7 on region U.** For natural numbers
+For natural numbers
 $x \le y \le z$ with $z < x + y$ and $y \le 2x + 1$ (the region $U$), the P&R Helper game started
 at $[x, y, z]$ is equivalent to the Nim heap of size $6$ (that is, has Sprague–Grundy value $6$)
 if and only if $y = x + 2$, $z = x + 5$ and $x \equiv 1 \pmod 8$; and it is never equivalent to

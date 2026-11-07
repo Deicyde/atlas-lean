@@ -1,6 +1,6 @@
 # Characterization of Type-A double-perfect partitions
 
-**Characterization of Type-A double-perfect partitions.** Let $r \ge 1$ and $N \ge 2(r+1)$
+Let $r \ge 1$ and $N \ge 2(r+1)$
 be integers. A multiset $\lambda$ of natural numbers is a Type-A double-perfect partition of $N$
 of order $r$ if and only if there is a perfect partition $\beta$ of $N - r - 1$ such that either
 $1$ occurs exactly $r$ times in $\beta$ and $\lambda$ is $\beta$ with $r + 1$ parts equal to $1$

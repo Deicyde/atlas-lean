@@ -1,6 +1,6 @@
 # Burr–Erdős–Spencer theorem on monochromatic clique packings
 
-**Burr–Erdős–Spencer theorem on monochromatic clique packings.** For every natural number
+For every natural number
 $k \ge 2$ there is $n_0$ such that for every $n \ge n_0$ the following holds. Let
 $r = R(k, k - 1)$ be the classical two-colour Ramsey number and let
 $L = r - 1 + \big((n + 1 - r) \bmod k\big)$, where $n + 1 - r$ is read as $0$ if it is negative.

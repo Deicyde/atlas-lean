@@ -1,6 +1,6 @@
 # Explicit formula for the polynomials $p_n$
 
-**Explicit formula for the polynomials $p_n$.** Let $p_1, p_2, \dots$ be polynomials with
+Let $p_1, p_2, \dots$ be polynomials with
 integer coefficients such that $p_1 = 1$ and, for every $n \ge 1$,
 $p_{n+1}(x) = (2x + 2n + 1)(2x + 2n + 2)\, p_n(x) - (x + 1)^2 p_n(x + 1)$. Then for every
 $n \ge 1$, as polynomials in $x$,

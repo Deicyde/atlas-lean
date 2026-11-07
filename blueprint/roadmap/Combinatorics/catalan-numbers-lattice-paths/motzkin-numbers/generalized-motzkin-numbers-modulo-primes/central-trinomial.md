@@ -1,6 +1,6 @@
 # Generalized central trinomial coefficients
 
-**Generalized central trinomial coefficients.** For integers $a, b$ and a natural number $n$,
+For integers $a, b$ and a natural number $n$,
 the generalized central trinomial coefficient $T_n^{(a/b)}$ is the constant term of the Laurent
 polynomial $(a x^{-1} + b + a x)^n$.
 

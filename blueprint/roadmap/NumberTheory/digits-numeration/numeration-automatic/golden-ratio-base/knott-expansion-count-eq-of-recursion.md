@@ -1,6 +1,6 @@
 # Recursion for the number of Knott expansions
 
-**Recursion for the number of Knott expansions.** Let $\varphi$ be the golden ratio, let
+Let $\varphi$ be the golden ratio, let
 $N \ge 2$ and $n$ be natural numbers, and let $p_0, \dots, p_n$ be integers with
 $p_{k+1} \ge p_k + 2$ for all $k < n$ and $\sum_{k=0}^{n} \varphi^{p_k} = N$. Thus $N$ has the
 base phi expansion $10^{s_n} \cdots 10^{s_1} 1$ with digits $1$ at positions $p_0 < \dots < p_n$,

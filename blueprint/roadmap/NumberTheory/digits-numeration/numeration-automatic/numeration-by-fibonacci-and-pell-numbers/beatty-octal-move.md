@@ -1,6 +1,6 @@
 # Moves of the Beatty octal game
 
-**Moves of the Beatty octal game.** Let $\alpha$ and $\beta$ be real numbers. In the Beatty
+Let $\alpha$ and $\beta$ be real numbers. In the Beatty
 octal game for $\alpha$ and $\beta$, a move takes a heap of $n$ tokens to a heap of $m$ tokens
 exactly when one of the following holds: $n \ge 1$, $n = \lfloor k\alpha \rfloor$ for some
 integer $k \ge 1$, and $m = 0$ (the whole heap is removed); or $m = n - i$ for some natural

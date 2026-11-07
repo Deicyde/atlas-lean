@@ -1,6 +1,6 @@
 # Universality of the mod-prime family
 
-**Universality of the mod-prime family.** Let $p$ be a prime and $m$ a positive natural number.
+Let $p$ be a prime and $m$ a positive natural number.
 The indexed mod-prime family, whose member at the index $(a, b)$, with
 $a, b \in \mathbb{Z}/p\mathbb{Z}$ and $a \neq 0$, is the mod-prime hash function $h_{a,b}$, is
 universal over the set of all such indices: this set is nonempty, and for all distinct keys

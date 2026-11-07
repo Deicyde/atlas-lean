@@ -1,6 +1,6 @@
 # Odd numbers with two prime factors are deficient
 
-**Odd numbers with two prime factors are deficient.** If $n$ is an odd natural number with
+If $n$ is an odd natural number with
 exactly two distinct prime divisors, then $\sigma(n) < 2n$, where $\sigma(n)$ is the sum of the
 positive divisors of $n$.
 

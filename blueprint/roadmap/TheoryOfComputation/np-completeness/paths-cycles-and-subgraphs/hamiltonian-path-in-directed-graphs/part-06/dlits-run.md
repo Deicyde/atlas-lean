@@ -1,6 +1,6 @@
 # The literals of a clause in the detour walk
 
-**The literals of a clause in the detour walk.** Let $y \in \mathbb{N}$ have binary encoding
+Let $y \in \mathbb{N}$ have binary encoding
 $\mathrm{bin}(y)$ and let $\nu$ and $\rho$ be lists of symbols. For every list $C$ of literals
 with token list $\tau$ (the tokens of its literals in order, without a clause separator), all
 bits $p_+, p_-, b$, and every quiescent state $s$ of the emitter such that $F$ holds $\tau$

@@ -1,6 +1,6 @@
 # The class number can exceed the order of every nilpotent subgroup
 
-**The class number can exceed the order of every nilpotent subgroup.** There is a finite group
+There is a finite group
 $G$ such that the number $k(G)$ of conjugacy classes of $G$ is greater than $|N|$ for every
 nilpotent subgroup $N$ of $G$.
 

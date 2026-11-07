@@ -1,6 +1,6 @@
 # The partitions of perimeter three
 
-**The partitions of perimeter three.** There are exactly four partitions with perimeter $3$,
+There are exactly four partitions with perimeter $3$,
 that is, four finite multisets of positive integers whose largest element plus number of elements
 (counted with multiplicity) equals $4$.
 

@@ -1,6 +1,6 @@
 # Free products of subgroups of $\mathrm{Aut}(F_n)$ embed in some $\mathrm{Aut}(F_m)$
 
-**Free products of subgroups of $\mathrm{Aut}(F_n)$ embed in some $\mathrm{Aut}(F_m)$.** For
+For
 every natural number $n \ge 2$ and all subgroups $G$ and $H$ of the automorphism group
 $\mathrm{Aut}(F_n)$ of the free group $F_n$ of rank $n$, there are a natural number $m$ and an
 injective group homomorphism from the free product $G \ast H$ to $\mathrm{Aut}(F_m)$.

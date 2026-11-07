@@ -1,6 +1,6 @@
 # Log-balancedness of reciprocals along a three-term recurrence
 
-**Log-balancedness of reciprocals along a three-term recurrence.** Let $c_1$ and $c_2$ be
+Let $c_1$ and $c_2$ be
 real numbers with $c_2 \ge 0$, and let $(z_n)_{n \ge 0}$ be a sequence of positive real numbers
 with $z_{n+1} = c_1 z_n - c_2 z_{n-2}$ for every $n \ge 2$. Write $w_n = 1/z_n$ and
 $x_n = z_{n+1}/z_n$, and let $n_0 \ge 0$ be an integer. Suppose that for $n = n_0 + 1$ and

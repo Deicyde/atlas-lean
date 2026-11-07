@@ -1,6 +1,6 @@
 # Equal last two gaps: an arithmetic progression or many nontrivial sums
 
-**Equal last two gaps: an arithmetic progression or many nontrivial sums.** Let $G$ be a
+Let $G$ be a
 linearly ordered additive commutative group, let $h$ and $k \ge 4$ be natural numbers, and let
 $a_0, a_1, \ldots$ be a sequence in $G$ with $0 = a_0 < a_1 < \cdots < a_{k-1}$ and
 $a_{k-1} - a_{k-2} = a_{k-2} - a_{k-3}$. Then either $a_i = i a_1$ for every $i < k$, or at

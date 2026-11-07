@@ -1,6 +1,6 @@
 # The elimination step of unification introduces no variables
 
-**The elimination step of unification introduces no variables.** Write $V(F)$ for the set
+Write $V(F)$ for the set
 of variables of a list $F$ of equations. Let $x_0$ be a variable, $t$ a term in which $x_0$ does
 not occur, $e = (e_1, e_2)$ an equation such that every variable of $t$ occurs in $e_1$ or $e_2$,
 and $E$ a list of equations, and let $E'$ be obtained from $E$ by substituting $t$ for $x_0$ on

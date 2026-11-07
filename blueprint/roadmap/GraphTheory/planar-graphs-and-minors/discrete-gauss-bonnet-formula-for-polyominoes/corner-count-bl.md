@@ -1,3 +1,3 @@
 # Corner count at the bottom-left corner of a new cell
 
-**Corner count at the bottom-left corner of a new cell.** The corner count at the bottom-left corner of a cell `(x, y) ∉ S`.
+The corner count at the bottom-left corner of a cell `(x, y) ∉ S`.

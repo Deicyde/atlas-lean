@@ -1,6 +1,6 @@
 # Counting primes with more than $\ell$ representations
 
-**Counting primes with more than $\ell$ representations.** Let $c$ and $d$ be coprime
+Let $c$ and $d$ be coprime
 natural numbers with $1 < c < d$, let $\ell$ be a natural number, and put
 $g_\ell(c, d) = (\ell + 1)cd - c - d$. Write $\pi_{\ell,c,d}$ for the number of primes
 $n \le g_\ell(c, d)$ such that the equation $n = cx + dy$ has more than $\ell$ solutions

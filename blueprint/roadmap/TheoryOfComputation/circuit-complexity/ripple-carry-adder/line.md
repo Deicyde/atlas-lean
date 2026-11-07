@@ -1,6 +1,6 @@
 # Gates of the ripple-carry adder
 
-**Gates of the ripple-carry adder.** For natural numbers $n$ and $g$ with $g < 5n$, gate $g$ of
+For natural numbers $n$ and $g$ with $g < 5n$, gate $g$ of
 the $n$-bit ripple-carry adder is the following binary gate of the arithmetic basis, whose
 arguments are among the $2n + 1$ inputs and the $g$ gates before it. Write $g = 5i + r$ with
 $0 \le r < 5$, let $a$ be input $i$ and $b$ input $n + i$, and let $c$ be the carry into bit $i$:

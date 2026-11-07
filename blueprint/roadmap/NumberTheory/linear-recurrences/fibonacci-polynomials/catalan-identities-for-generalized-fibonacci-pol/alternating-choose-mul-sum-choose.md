@@ -1,6 +1,6 @@
 # Alternating sum of binomial row sums
 
-**Alternating sum of binomial row sums.** For all natural numbers $\ell$ and $n$,
+For all natural numbers $\ell$ and $n$,
 
 $$\sum_{i=0}^{n} (-1)^i \binom{\ell}{i} \sum_{j=0}^{n-i} \binom{n-i}{j}
   = \sum_{i=0}^{n} (-1)^i \binom{i+\ell-n-1}{i},$$

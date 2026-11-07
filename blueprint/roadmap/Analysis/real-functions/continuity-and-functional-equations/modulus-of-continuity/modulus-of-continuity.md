@@ -1,6 +1,6 @@
 # Modulus of continuity
 
-**Modulus of continuity.** For a function $f : \mathbb{R} \to \mathbb{R}$, real numbers $a$
+For a function $f : \mathbb{R} \to \mathbb{R}$, real numbers $a$
 and $b$, and a scale $\eta \in \mathbb{R}$, the modulus of continuity of $f$ on $[a, b]$ at scale
 $\eta$ is
 

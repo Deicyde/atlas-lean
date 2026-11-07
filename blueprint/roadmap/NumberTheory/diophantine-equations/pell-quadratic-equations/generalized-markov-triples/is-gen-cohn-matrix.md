@@ -1,6 +1,6 @@
 # Generalized Cohn matrices
 
-**Generalized Cohn matrices.** Let $k$ be a natural number. An integer $2 \times 2$ matrix
+Let $k$ be a natural number. An integer $2 \times 2$ matrix
 $P = (p_{ij})$ is a $k$-generalized Cohn matrix if $\det P = 1$, its entry $p_{12}$ is a
 $k$-generalized Markov number, and its trace equals $(3 + 3k) p_{12} - k$.
 

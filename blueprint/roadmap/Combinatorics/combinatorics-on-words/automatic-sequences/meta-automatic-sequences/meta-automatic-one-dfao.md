@@ -1,6 +1,6 @@
 # An automaton for the meta-automatic sequence $\mathcal{M}_1$
 
-**An automaton for the meta-automatic sequence $\mathcal{M}_1$.** The meta-automatic sequence
+The meta-automatic sequence
 $\mathcal{M}_1$ is $4$-automatic. Moreover, let $\delta$ be the transition map on the states
 $\{0, 1, 2, 3\}$ and the digits $\{0, 1, 2, 3\}$ given by $\delta(0, \cdot) = 0112$,
 $\delta(1, \cdot) = 1230$, $\delta(2, \cdot) = 2301$ and $\delta(3, \cdot) = 3023$, where the

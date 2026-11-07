@@ -1,6 +1,6 @@
 # Two-sided bound for the integral of the square root of one plus a square
 
-**Two-sided bound for the integral of the square root of one plus a square.** Let $\mu$ be a
+Let $\mu$ be a
 probability measure on a measurable space $\Omega$ and let $h : \Omega \to [0,\infty)$ be a
 measurable function with $\int_\Omega h\,d\mu < \infty$. If $A = \int_\Omega h\,d\mu$, then
 

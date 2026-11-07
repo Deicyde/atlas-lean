@@ -1,6 +1,6 @@
 # Lee's form of double-perfect partitions
 
-**Lee's form of double-perfect partitions.** Let $N \ge 4$ and let $\lambda$ be a
+Let $N \ge 4$ and let $\lambda$ be a
 double-perfect partition of $N$ of order $1$. Then there are integers $q_1 \ge 2$ and
 $q_2 \ge 1$, with $q_2 = 1$ unless $q_1 = 3$, an integer $k \ge 2$ and integers
 $q_3, \dots, q_k \ge 1$ such that, with $B = q_1 + 2q_2 - 1$,

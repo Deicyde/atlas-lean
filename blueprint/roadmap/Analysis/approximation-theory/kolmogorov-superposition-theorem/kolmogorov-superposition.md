@@ -1,6 +1,6 @@
 # Kolmogorov superposition theorem
 
-**Kolmogorov superposition theorem.** Let $n \ge 2$. There are continuous functions
+Let $n \ge 2$. There are continuous functions
 $\psi_{q,p} : [0,1] \to \mathbb{R}$ for $0 \le q \le 2n$ and $0 \le p < n$, depending only on
 $n$, such that for every continuous function $f : [0,1]^n \to \mathbb{R}$ there are continuous
 functions $\varphi_q : \mathbb{R} \to \mathbb{R}$ for $0 \le q \le 2n$ with

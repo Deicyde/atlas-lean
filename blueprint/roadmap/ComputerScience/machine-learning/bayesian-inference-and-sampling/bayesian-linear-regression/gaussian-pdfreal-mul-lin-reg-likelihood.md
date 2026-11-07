@@ -1,6 +1,6 @@
 # Completing the square for linear regression
 
-**Completing the square for linear regression.** Let $m_0 \in \mathbb{R}$, let
+Let $m_0 \in \mathbb{R}$, let
 $s_0, \sigma^2 \ge 0$ be nonzero, and let $x, y \in \mathbb{R}^n$. Write $\varphi(t; \mu, \tau)$
 for the Gaussian density with mean $\mu$ and variance $\tau$ at $t$, $p(w) = \varphi(w; m_0, s_0)$
 for the prior density, $L(y \mid w) = \prod_i \varphi(y_i; w x_i, \sigma^2)$ for the likelihood

@@ -1,3 +1,3 @@
 # Power-free numbers are positive
 
-**Power-free numbers are positive.** If a natural number $n$ is $k$-free, then $n > 0$.
+If a natural number $n$ is $k$-free, then $n > 0$.

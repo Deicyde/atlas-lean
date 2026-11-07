@@ -1,6 +1,5 @@
 # Lifting a cylinder of $\mathrm{NIZ}_k$ to order $k + 2$ lowers the variation by $1$
 
-**Lifting a cylinder of $\mathrm{NIZ}_k$ to order $k + 2$ lowers the variation by $1$.**
 Let $\ell \ge 2$, let $r$ satisfy $F_\ell \le r < F_{\ell+1}$, where $F_1 = F_2 = 1, F_3 = 2,
 \dots$ are the Fibonacci numbers, and let $k \ge \ell$. Write $\Delta^{(r)}$ for the variation
 of the Zeckendorf sum of digits under adding $r$ on the Zeckendorf-adic integers $\mathbb{X}$,

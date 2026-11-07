@@ -1,6 +1,6 @@
 # Classification of connected $1$-manifolds without boundary
 
-**Classification of connected $1$-manifolds without boundary.** Every connected, Hausdorff,
+Every connected, Hausdorff,
 second-countable smooth $1$-manifold $M$ without boundary is diffeomorphic either to the circle
 $S^1$ or to the real line $\mathbb{R}$.
 

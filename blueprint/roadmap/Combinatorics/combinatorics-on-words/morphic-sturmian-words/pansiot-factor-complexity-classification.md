@@ -1,6 +1,6 @@
 # Pansiot's classification of the factor complexity of pure morphic words
 
-**Pansiot's classification of the factor complexity of pure morphic words.** Let $A$ be a
+Let $A$ be a
 finite alphabet, let $\sigma$ be a morphism of the free monoid on $A$ that is non-erasing
 (no $\sigma(x)$ is empty), let $a \in A$, and let $w = w_0 w_1 w_2 \cdots$ be an infinite word
 over $A$ that is a pure fixed point of $\sigma$ from $a$: $\sigma^n(a)$ is a prefix of $w$ for

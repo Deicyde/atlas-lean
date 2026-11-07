@@ -1,6 +1,6 @@
 # A tuple lies in its own rotation orbit
 
-**A tuple lies in its own rotation orbit.** Every tuple $x$ of length $n$ with entries in a
+Every tuple $x$ of length $n$ with entries in a
 type $\alpha$ belongs to the rotation orbit of $x$.
 
 ## Sources

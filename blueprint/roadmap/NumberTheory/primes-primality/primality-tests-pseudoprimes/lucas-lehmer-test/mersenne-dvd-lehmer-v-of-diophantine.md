@@ -1,6 +1,6 @@
 # Divisibility of Lehmer's companion sequence by a Mersenne prime, Diophantine form
 
-**Divisibility of Lehmer's companion sequence by a Mersenne prime, Diophantine form.** Let
+Let
 $n \ge 3$ be an odd natural number such that $M_n = 2^n - 1$ is prime, and let $r$, $d$, $q$,
 $X$, $Y$, $Z$ be integers with $\gcd(M_n, Y) = 1$ and $4qY^2 = rX^2 - dZ^2$. Put $R = rX^2$ and
 $Q = qY^2$, and let $\bar V_k(R, Q)$ denote Lehmer's companion sequence. If the Jacobi symbols

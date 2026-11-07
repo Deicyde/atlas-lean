@@ -1,6 +1,6 @@
 # Wintner's mean-value theorem
 
-**Wintner's mean-value theorem.** Let $f$ be a complex-valued arithmetic function, let $\mu$
+Let $f$ be a complex-valued arithmetic function, let $\mu$
 be the Möbius function, and let $\mu * f$ be their Dirichlet convolution,
 $(\mu * f)(n) = \sum_{d \mid n} \mu(d) f(n/d)$. If the series $\sum_{n \ge 1} |(\mu * f)(n)|/n$
 converges, then

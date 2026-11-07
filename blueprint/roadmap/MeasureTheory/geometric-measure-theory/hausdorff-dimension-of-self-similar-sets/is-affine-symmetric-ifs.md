@@ -1,6 +1,6 @@
 # Affine-symmetric iterated function system
 
-**Affine-symmetric iterated function system.** Let $(f_i)_{i < n}$ be a finite family of maps
+Let $(f_i)_{i < n}$ be a finite family of maps
 $f_i \colon \mathbb{R}^d \to \mathbb{R}^d$ on Euclidean space. The family is affine-symmetric with
 common contraction factor $\lambda$ if $0 < \lambda < 1$ and there are linear isometries
 $A_i \colon \mathbb{R}^d \to \mathbb{R}^d$ (orthogonal transformations) and vectors

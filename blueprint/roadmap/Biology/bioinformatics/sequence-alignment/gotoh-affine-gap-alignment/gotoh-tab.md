@@ -1,3 +1,3 @@
 # The Gotoh table
 
-**The Gotoh table**: the `M` value of the cell `(xs, ys)`.
+The `M` value of the cell `(xs, ys)`.

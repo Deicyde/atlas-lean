@@ -1,6 +1,6 @@
 # Safety formulas as LTL formulas
 
-**Safety formulas as LTL formulas.** The translation $t$ of safety formulas into LTL formulas
+The translation $t$ of safety formulas into LTL formulas
 is defined by recursion: $t(\varphi)$ is the LTL translation of $\varphi$ for a propositional
 formula $\varphi$; $t(\psi \wedge \rho) = t(\psi) \wedge t(\rho)$;
 $t(\psi \vee \rho) = \neg(\neg t(\psi) \wedge \neg t(\rho))$, the derived LTL disjunction;

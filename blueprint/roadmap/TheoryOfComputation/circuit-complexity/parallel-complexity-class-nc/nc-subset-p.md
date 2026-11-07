@@ -1,6 +1,6 @@
 # NC is contained in P
 
-**NC is contained in P.** Every decision problem in $\mathsf{NC}$ belongs to $\mathsf{P}$.
+Every decision problem in $\mathsf{NC}$ belongs to $\mathsf{P}$.
 
 ## Sources
 

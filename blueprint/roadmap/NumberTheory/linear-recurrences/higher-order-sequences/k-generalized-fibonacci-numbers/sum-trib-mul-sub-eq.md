@@ -1,6 +1,5 @@
 # Convolution of the Fibonacci 3-step numbers with differences of 4- and 5-step numbers
 
-**Convolution of the Fibonacci 3-step numbers with differences of 4- and 5-step numbers.**
 Let $T_j$, $Q_j$ and $P_j$ be the Fibonacci $3$-, $4$- and $5$-step numbers, where the Fibonacci
 $k$-step numbers start $0, 1$ and each later term is the sum of the $k$ terms before it (terms of
 negative index being $0$). For every natural number $n \ge 1$,

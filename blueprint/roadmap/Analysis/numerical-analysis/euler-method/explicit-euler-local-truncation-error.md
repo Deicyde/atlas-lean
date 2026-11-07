@@ -1,6 +1,6 @@
 # Local truncation error of the explicit Euler method
 
-**Local truncation error of the explicit Euler method.** Let $E$ be a real Banach space, let
+Let $E$ be a real Banach space, let
 $t_0 < T$, let $f : \mathbb{R} \times E \to E$ be $C^2$, let $x_0 \in E$, and let
 $x : \mathbb{R} \to E$ satisfy $x(t_0) = x_0$ and $x'(t) = f(t, x(t))$ for every
 $t \in [t_0, T]$. Then there is a constant $C$ such that

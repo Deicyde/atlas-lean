@@ -1,6 +1,6 @@
 # Kampé de Fériet polynomials
 
-**Kampé de Fériet polynomials.** For natural numbers $m, n$ and elements $x, y$ of a
+For natural numbers $m, n$ and elements $x, y$ of a
 commutative $\mathbb{R}$-algebra, the Kampé de Fériet (two-variable Hermite) polynomial is
 
 $$H^m_n(x, y) = \sum_{r=0}^{q} \frac{n!}{r!\,(n - m r)!}\, y^r x^{n - m r},$$

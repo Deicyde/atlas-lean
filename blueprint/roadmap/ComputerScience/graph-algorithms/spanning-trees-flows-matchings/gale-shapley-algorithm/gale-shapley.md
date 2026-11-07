@@ -1,6 +1,6 @@
 # Deferred acceptance
 
-**Deferred acceptance.** Let each of $n$ proposers rank the $n$ receivers, and each receiver
+Let each of $n$ proposers rank the $n$ receivers, and each receiver
 rank the $n$ proposers, with rank $0$ the best. Deferred acceptance is the state reached from the
 initial state, in which no one has proposed and no receiver holds anyone, by repeating the
 following step at most $n^2$ times, stopping early once no proposer is both free and has made

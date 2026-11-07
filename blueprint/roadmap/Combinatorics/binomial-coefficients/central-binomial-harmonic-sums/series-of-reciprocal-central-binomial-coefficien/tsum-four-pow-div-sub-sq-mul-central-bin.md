@@ -1,6 +1,6 @@
 # Zurita's series $\sum_{k > n} 4^k x^k / ((k - n)^2\binom{2k}{k})$
 
-**Zurita's series $\sum_{k > n} 4^k x^k / ((k - n)^2\binom{2k}{k})$.** For $j \ge 1$ write
+For $j \ge 1$ write
 Zurita's polynomials as $S_j(x) = \sum_{k=0}^{j} s^{(j)}_k x^k$,
 $T_{j-2}(x) = \sum_{k=0}^{j-2} t^{(j)}_k x^k$ and $M_{j-1}(x) = \sum_{k=0}^{j-1} m^{(j)}_k x^k$.
 Let $n \ge 1$, let $x$ be real with $0 < x < 1$, and put

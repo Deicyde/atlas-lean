@@ -1,6 +1,6 @@
 # No accepting certificate, no satisfying assignment
 
-**No accepting certificate, no satisfying assignment.** Let $E$ be an encoding of a machine
+Let $E$ be an encoding of a machine
 $M$ with window depth $d$, let $x$ and $Y$ be lists of symbols of the input stack of $M$, let
 $m, T \in \mathbb{N}$ with $|x| \le m$, let $H = m + (T + 1)d + 1$, and let $\alpha$ be a symbol
 of the output stack of $M$ in the effective alphabet of $E$. Write

@@ -1,6 +1,6 @@
 # Reconstructed Dijkstra paths are simple and have the output weight
 
-**Reconstructed Dijkstra paths are simple and have the output weight.** Let $G$ be a directed
+Let $G$ be a directed
 graph on the vertices $0, \dots, n-1$, let $w(u, v)$ be a natural-number weight for every
 ordered pair of vertices, and let $s$ and $t$ be vertices. Suppose that following the
 predecessor pointers output by Dijkstra's algorithm on $G$ with weights $w$ from source $s$

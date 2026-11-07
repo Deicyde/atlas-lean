@@ -1,3 +1,3 @@
 # Turns of a cyclic direction sequence sum to zero
 
-**Turns of a cyclic direction sequence sum to zero.** The turns of a cyclic direction sequence sum to zero in `Fin 4`.
+The turns of a cyclic direction sequence sum to zero in `Fin 4`.

@@ -1,6 +1,6 @@
 # Infinitely many Perrin numbers are not sums of two prime powers
 
-**Infinitely many Perrin numbers are not sums of two prime powers.** Let $(E_n)_{n \ge 0}$ be
+Let $(E_n)_{n \ge 0}$ be
 the Perrin sequence, given by $E_0 = 3$, $E_1 = 0$, $E_2 = 2$ and $E_{n+3} = E_{n+1} + E_n$.
 There are infinitely many natural numbers $k$ such that $E_k$ is not a sum of two prime powers.
 

@@ -1,6 +1,6 @@
 # Locally integer polynomial functions on a union of sets
 
-**Locally integer polynomial functions on a union of sets.** For $S \subseteq \mathbb{Z}$, write
+For $S \subseteq \mathbb{Z}$, write
 $\mathrm{LIP}(S)$ for the ring of locally integer polynomial functions $S \to \mathbb{Z}$. Let
 $(V_i)_{i \in I}$ be a family of subsets of $\mathbb{Z}$ with union $U = \bigcup_{i \in I} V_i$.
 Suppose that for all $i, j \in I$, not necessarily distinct, and all $a_1 \in V_i$ and

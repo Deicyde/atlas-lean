@@ -1,6 +1,6 @@
 # The map $\psi$ from near-hook tableaux to lattice paths
 
-**The map $\psi$ from near-hook tableaux to lattice paths.** Let $n \in \mathbb{N}$ and let
+Let $n \in \mathbb{N}$ and let
 $T$ be a semistandard Young tableau of shape $\theta^{(n)}$, with rows and columns numbered from
 $0$; call row $0$ of $\theta^{(n)}$ the arm and column $0$ the leg. Then $\psi(T)$ is the word
 $(s_1, \dots, s_{2n+2})$ of steps in $\mathbb{Z}^2$ in which $s_i$ is $E = (1, 0)$ if $i + 2$ is an

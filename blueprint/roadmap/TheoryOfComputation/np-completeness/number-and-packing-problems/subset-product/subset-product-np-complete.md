@@ -1,6 +1,6 @@
 # SUBSET PRODUCT is NP-complete
 
-**SUBSET PRODUCT is NP-complete.** The decision problem SUBSET PRODUCT lies in NP, and every
+The decision problem SUBSET PRODUCT lies in NP, and every
 decision problem in NP has a polynomial-time many-one reduction to SUBSET PRODUCT.
 
 ## Sources

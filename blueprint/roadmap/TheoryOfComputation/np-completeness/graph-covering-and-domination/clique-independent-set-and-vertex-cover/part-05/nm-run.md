@@ -1,6 +1,6 @@
 # CLIQUE emitter: reading a variable name
 
-**CLIQUE emitter: reading a variable name.** Stacks are listed top first. Let $p$ be a Boolean,
+Stacks are listed top first. Let $p$ be a Boolean,
 $x \in \mathbb{N}$ with name $w$ (its binary encoding written as bit symbols) of length $\ell$, and
 $R$ a list of symbols that is empty or whose top symbol is not a bit symbol. Let $v$ be a flag,
 $o$ a list of Booleans, $d$ and $e$ lists of symbols, and $c, n \in \mathbb{N}$. Started at label

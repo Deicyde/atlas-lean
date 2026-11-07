@@ -1,6 +1,5 @@
 # An interval and a later natural-start progression with few terms or large step are not MSTD
 
-**An interval and a later natural-start progression with few terms or large step are not MSTD.**
 Let $n \ge 3$, $m$ and $x$ be natural numbers with $x \ge n + 1$, and let $d = s + p/q$, where
 $s, p, q$ are natural numbers with $0 < p < q$ and $\gcd(p, q) = 1$. Suppose that either
 $2 \le m \le q - 1$, or $m \ge q$ and $qd > n - 1$. Write $I_n = \{0, 1, \dots, n - 1\}$ and

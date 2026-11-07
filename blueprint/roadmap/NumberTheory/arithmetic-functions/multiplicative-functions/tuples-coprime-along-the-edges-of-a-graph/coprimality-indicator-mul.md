@@ -1,6 +1,6 @@
 # Multiplicativity of the coprimality indicator
 
-**Multiplicativity of the coprimality indicator.** Let $G$ be a graph on the vertices
+Let $G$ be a graph on the vertices
 $0, \dots, k-1$ given by an arbitrary set $E$ of ordered pairs of vertices, with coprimality
 indicator $\delta_G$. If $m, n \in \mathbb{N}^k$ satisfy
 $\gcd(m_0 m_1 \cdots m_{k-1}, n_0 n_1 \cdots n_{k-1}) = 1$, then

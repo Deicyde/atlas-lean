@@ -1,6 +1,6 @@
 # Counting $k$-vn-arrangements of a multiset
 
-**Counting $k$-vn-arrangements of a multiset.** Let $k \le t$ be natural numbers, let
+Let $k \le t$ be natural numbers, let
 $b_0, b_1, \dots$ be natural numbers, and let $M$ be the multiset of integers containing $b_i$
 copies of $i$ for each $0 \le i \le t$, so that $M$ has $m = b_0 + \dots + b_t$ elements. Then
 the number of $k$-vn-arrangements of $M$, that is, orderings $(v_1, \dots, v_m)$ of $M$ with

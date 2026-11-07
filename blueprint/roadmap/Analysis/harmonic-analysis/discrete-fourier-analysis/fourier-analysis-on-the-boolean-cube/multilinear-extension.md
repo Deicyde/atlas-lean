@@ -1,6 +1,6 @@
 # Multilinear extension
 
-**Multilinear extension.** Let $f$ be a Boolean-valued function on the Boolean cube of
+Let $f$ be a Boolean-valued function on the Boolean cube of
 dimension $n$, and read each coordinate and each value as $1$ for true and $0$ for false. The real
 multilinear extension of $f$ is the polynomial in $\mathbb{R}[X_0, \dots, X_{n-1}]$
 

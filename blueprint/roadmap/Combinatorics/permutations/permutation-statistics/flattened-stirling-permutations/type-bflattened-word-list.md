@@ -1,6 +1,6 @@
 # The word of a set partition of $(-n, n)$, as a list
 
-**The word of a set partition of $[-n, n]$, as a list.** Let $n$ be a natural number and let
+Let $n$ be a natural number and let
 $P$ be a set partition of $[-n, n] = \{-n, \dots, n\}$. For a finite set $S$ of integers let
 $h(S) = \{|i| + 1 : i \in S\}$, and for a finite set $T$ of natural numbers with elements
 $t_1 < \dots < t_k$ let $f(T) = t_1 t_1 t_2 t_2 \cdots t_k t_k$ and

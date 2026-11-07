@@ -1,6 +1,6 @@
 # Mahler measure of Lehmer's polynomial
 
-**Mahler measure of Lehmer's polynomial.** The Mahler measure of Lehmer's polynomial is at most
+The Mahler measure of Lehmer's polynomial is at most
 $1176281/1000000 = 1.176281$.
 
 ## Sources

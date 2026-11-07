@@ -1,6 +1,6 @@
 # Exactness of the Wilson quotient
 
-**Exactness of the Wilson quotient.** For every prime $p$, the Wilson quotient $W(p)$ of $p$
+For every prime $p$, the Wilson quotient $W(p)$ of $p$
 satisfies $p \, W(p) = (p-1)! + 1$ in $\mathbb{Z}$.
 
 By Wilson's theorem $p$ divides $(p-1)! + 1$, so the division defining $W(p)$ is exact.

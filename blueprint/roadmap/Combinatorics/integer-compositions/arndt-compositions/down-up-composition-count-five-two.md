@@ -1,6 +1,6 @@
 # Down/up compositions of 5 with two parts
 
-**Down/up compositions of 5 with two parts.** Among the down/up compositions of $5$ with two
+Among the down/up compositions of $5$ with two
 parts (pairs $(\sigma_1, \sigma_2)$ of positive integers with $\sigma_1 + \sigma_2 = 5$ and
 $\sigma_1 > \sigma_2$), exactly one has last part $1$, exactly one has last part $2$, and none has
 last part $3$.

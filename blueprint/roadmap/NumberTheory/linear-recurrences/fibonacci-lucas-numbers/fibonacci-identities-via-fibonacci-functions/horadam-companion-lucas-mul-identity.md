@@ -1,6 +1,6 @@
 # Companion Lucas sequence identity for Horadam sequences
 
-**Companion Lucas sequence identity for Horadam sequences.** Let $P$, $Q$ be real numbers
+Let $P$, $Q$ be real numbers
 with $Q \neq 0$. Let $W \colon \mathbb{Z} \to \mathbb{R}$ satisfy $W_{j+2} = P W_{j+1} - Q W_j$
 for every integer $j$, and let $V \colon \mathbb{Z} \to \mathbb{R}$ (the companion Lucas sequence)
 satisfy the same recurrence with $V_0 = 2$ and $V_1 = P$. Then for all integers $k$, $r$,

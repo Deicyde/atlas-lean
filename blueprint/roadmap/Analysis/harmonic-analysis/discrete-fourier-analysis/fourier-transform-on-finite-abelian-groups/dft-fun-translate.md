@@ -1,6 +1,6 @@
 # Translation modulates the discrete Fourier transform
 
-**Translation modulates the discrete Fourier transform.** Let $G$ be a finite abelian group,
+Let $G$ be a finite abelian group,
 $f : G \to \mathbb{C}$, $t \in G$, and $\psi$ an additive character of $G$ with values in
 $\mathbb{C}$, and write $\hat h(\psi) = \sum_{x \in G} \psi(x) h(x)$ for the discrete Fourier
 transform of $h : G \to \mathbb{C}$. If $g(x) = f(x - t)$ for all $x \in G$, then

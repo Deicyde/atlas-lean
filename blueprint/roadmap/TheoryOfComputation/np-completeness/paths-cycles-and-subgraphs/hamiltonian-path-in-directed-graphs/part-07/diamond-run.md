@@ -1,6 +1,6 @@
 # One diamond
 
-**One diamond.** Let $B, i, y \in \mathbb{N}$, let $u$ be a list of natural numbers, let
+Let $B, i, y \in \mathbb{N}$, let $u$ be a list of natural numbers, let
 $\varphi$ be a CNF formula with $m$ clauses and token list $\mathrm{toks}(\varphi)$, let $b$ be a
 state bit, and let $s$ be a quiescent state of the emitter such that $T$ and the scratch stack $X$
 are empty, $F$ holds $\mathrm{toks}(\varphi)$, $V$ is the variable stack of the list $y$ followed

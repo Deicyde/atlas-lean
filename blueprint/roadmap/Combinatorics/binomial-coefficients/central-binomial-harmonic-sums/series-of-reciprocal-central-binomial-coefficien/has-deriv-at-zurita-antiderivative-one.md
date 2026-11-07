@@ -1,6 +1,6 @@
 # Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/(1-x)^{3/2}$
 
-**Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/(1-x)^{3/2}$.** Let $n \ge 1$, let
+Let $n \ge 1$, let
 $c_n$ be Zurita's constant and let $S_n$ and $T_{n-2}$ be Zurita's polynomials (with
 $T_{-1} = 0$). For every real $x$ with $0 < x < 1$, the function
 

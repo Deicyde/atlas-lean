@@ -1,6 +1,6 @@
 # Gibonacci generating function
 
-**Gibonacci generating function.** For integers $a$ and $b$ and a rational number $x$, the
+For integers $a$ and $b$ and a rational number $x$, the
 value of the Gibonacci generating function at $x$ is the rational number
 
 $$G^{(a,b)}(x) = \frac{(b - a)x + a}{1 - x - x^2}.$$

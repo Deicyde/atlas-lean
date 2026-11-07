@@ -1,6 +1,6 @@
 # Largest cap set in dimension four
 
-**Largest cap set in dimension four.** Let $\mathbb{F}_3$ be the field with three elements.
+Let $\mathbb{F}_3$ be the field with three elements.
 The largest subset of $\mathbb{F}_3^4$ containing no three-term arithmetic progression, that is,
 no elements $a, b, c$ of the subset with $a + c = 2b$ and $a \neq b$, has exactly $20$ elements.
 

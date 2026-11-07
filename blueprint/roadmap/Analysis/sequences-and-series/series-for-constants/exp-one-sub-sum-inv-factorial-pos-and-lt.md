@@ -1,6 +1,6 @@
 # Error bound for the partial sums of the series for $e$
 
-**Error bound for the partial sums of the series for $e$.** For every integer $n \ge 1$,
+For every integer $n \ge 1$,
 
 $$0 < e - \sum_{k=0}^{n} \frac{1}{k!} < \frac{1}{n \cdot n!}.$$
 

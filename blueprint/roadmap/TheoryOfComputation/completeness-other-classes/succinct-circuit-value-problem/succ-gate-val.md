@@ -1,6 +1,6 @@
 # Value of a gate of a succinct circuit (Succinct Circuit Value)
 
-**Value of a gate of a succinct circuit (Succinct Circuit Value).** Let $C$ be a list of
+Let $C$ be a list of
 encoded gates, let $n, i \in \mathbb{N}$, let $x$ be a list of booleans (the input) and let $v$
 be a list of booleans (the values of earlier gates), where an entry outside $x$ or $v$ reads as
 false. Let $(t, p_1, p_2)$ be the decoded description of gate $i$ of the circuit succinctly

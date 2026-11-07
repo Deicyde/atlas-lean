@@ -1,6 +1,6 @@
 # Problems in P are decided in polynomial time by single-tape machines
 
-**Problems in P are decided in polynomial time by single-tape machines.** Every decision
+Every decision
 problem in the class $\mathrm{P}$ (defined with multi-stack machines) belongs to the class of
 decision problems decided in polynomial time by single-tape machines.
 

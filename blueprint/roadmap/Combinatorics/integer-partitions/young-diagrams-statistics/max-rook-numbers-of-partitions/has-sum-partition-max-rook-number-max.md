@@ -1,6 +1,6 @@
 # Generating function of the largest max-rook number
 
-**Generating function of the largest max-rook number.** Let $F(n)$ be the largest max-rook
+Let $F(n)$ be the largest max-rook
 number of a partition of $n$ for $n \ge 1$, and $F(0) = 1$. For every complex number $q$ with
 $|q| < 1$, the series $\sum_{n \ge 0} F(n) q^n$ is summable with sum
 

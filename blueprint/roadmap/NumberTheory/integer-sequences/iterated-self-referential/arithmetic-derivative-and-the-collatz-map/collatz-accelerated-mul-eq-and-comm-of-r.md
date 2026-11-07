@@ -1,6 +1,6 @@
 # Prime roots give semiprime solutions
 
-**Prime roots give semiprime solutions.** Let $D$ be the arithmetic derivative and $C$ the
+Let $D$ be the arithmetic derivative and $C$ the
 accelerated Collatz map. Let $p$ and $q$ be primes and let $t \ge 0$ be an integer with
 $t^2 = p^2 - 22pq + q^2 - 8$. If $r = (p + q + t)/4$ and $s = (p + q - t)/4$ are both primes,
 then $C(pq) = rs$ and $D(C(pq)) = C(D(pq))$.

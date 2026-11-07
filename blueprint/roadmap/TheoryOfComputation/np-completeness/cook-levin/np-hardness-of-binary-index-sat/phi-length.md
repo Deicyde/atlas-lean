@@ -1,6 +1,6 @@
 # Every clause of the Cook–Levin formula has one slot per variable
 
-**Every clause of the Cook–Levin formula has one slot per variable.** Let $E$ be an encoding
+Let $E$ be an encoding
 of a machine $M$, let $x$ and $Y$ be lists of input symbols of $M$, let $a$ be a symbol of its
 output stack, and let $m, T \in \mathbb{N}$. Put $H = m + (T + 1)d + 1$, where $d$ is the window
 depth of $M$. Then every clause of the Cook–Levin formula $\Phi(E, x, Y, a, m, T)$ is a dense

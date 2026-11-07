@@ -1,6 +1,6 @@
 # Maximum Nim Grundy numbers at multiples of the divisor
 
-**Maximum Nim Grundy numbers at multiples of the divisor.** Let $k \ge 2$ and let $G$ be
+Let $k \ge 2$ and let $G$ be
 the Grundy number of Maximum Nim with rule function $f(y) = \lfloor y/k \rfloor$. Every positive
 multiple $x$ of $k$ satisfies $G(x) = x/k$.
 

@@ -1,6 +1,6 @@
 # The map $T$
 
-**The map $T$.** Let $x = \langle x_1, x_2, \dots \rangle$ be a sequence over
+Let $x = \langle x_1, x_2, \dots \rangle$ be a sequence over
 $\{O_L, E_R, O_R, E_L\}$ and let $o(1) < o(2) < \cdots$ be the positions $j$ with
 $x_j \in \{O_L, O_R\}$. The sequence $T(x) = \langle T_1(x), T_2(x), \dots \rangle$ over
 $\{L, M, R\}$ is defined as follows. If $o(i + 1) = o(i) + 1$, then $T_i(x)$ is $L$ when

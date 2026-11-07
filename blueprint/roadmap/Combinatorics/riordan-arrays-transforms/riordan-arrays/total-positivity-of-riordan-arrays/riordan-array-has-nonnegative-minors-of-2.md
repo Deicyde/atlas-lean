@@ -1,6 +1,6 @@
 # A total positivity criterion for Riordan arrays
 
-**A total positivity criterion for Riordan arrays.** Let $P, Q, A, Z$ be formal power series
+Let $P, Q, A, Z$ be formal power series
 over $\mathbb{R}$ with $P(0) \ne 0$, write $[x^n]F$ for the coefficient of $x^n$ in a power
 series $F$, and let $a, b, r, s, t \ge 0$ be real numbers. Suppose that
 

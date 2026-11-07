@@ -1,6 +1,6 @@
 # One min-plus multiplication extends shortest paths by one edge
 
-**One min-plus multiplication extends shortest paths by one edge.** Let $A$ and $B$ be
+Let $A$ and $B$ be
 $n \times n$ matrices with entries in $\mathbb{Z} \cup \{\infty\}$, viewed in the min-plus
 semiring, and let $r$ be a natural number. Suppose that $B_{jj} = 0$ for every $j$, and that for
 all $i$ and $j$ the entry $A_{ij}$ is the shortest weight of a path from $i$ to $j$ with at most

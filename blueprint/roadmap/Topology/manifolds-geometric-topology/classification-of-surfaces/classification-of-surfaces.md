@@ -1,6 +1,6 @@
 # Classification of compact surfaces
 
-**Classification of compact surfaces.** Let $S$ be a nonempty, compact, connected Hausdorff
+Let $S$ be a nonempty, compact, connected Hausdorff
 space that is a topological manifold of dimension $2$ with boundary, with charts in the closed
 half-plane $\{x \in \mathbb{R}^2 : x_1 \ge 0\}$. Then $S$ is homeomorphic to the unit sphere in
 $\mathbb{R}^3$, or there are natural numbers $p$ and $n$ for which one of the following holds:

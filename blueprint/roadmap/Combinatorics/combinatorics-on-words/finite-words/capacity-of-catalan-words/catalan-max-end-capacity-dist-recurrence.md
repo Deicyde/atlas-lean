@@ -1,6 +1,6 @@
 # Recurrence for the capacity of Catalan words ending in their largest letter
 
-**Recurrence for the capacity of Catalan words ending in their largest letter.** For natural
+For natural
 numbers $n$ and $i$, let $b(n, i; q)$ be the capacity distribution of the Catalan words of length
 $n$ that end in $i$ and have all letters at most $i$. For natural numbers $m$ and $k$, let
 $c(m, k; q) \in \mathbb{Z}[q]$ be the area distribution of the words of length $m$ with letters

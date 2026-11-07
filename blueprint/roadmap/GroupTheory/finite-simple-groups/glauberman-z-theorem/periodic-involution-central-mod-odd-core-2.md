@@ -1,6 +1,6 @@
 # A periodic counterexample to Borovik's question (Kourovka 11.13)
 
-**A periodic counterexample to Borovik's question (Kourovka 11.13).** For a group $G$, let $O(G)$
+For a group $G$, let $O(G)$
 be the join of all normal subgroups of $G$ all of whose elements have odd order. There exist a
 periodic group $G$ and an involution $i \in G$ such that $g^{-1} i g i$ has odd order for every
 $g \in G$, but the image of $i$ in $G / O(G)$ is not central: $g i g^{-1} i^{-1} \notin O(G)$ for

@@ -1,4 +1,4 @@
 # Negation of a formula
 
-**Negation of a formula.** The negation $\neg\varphi$ of a formula $\varphi$ is the formula
+The negation $\neg\varphi$ of a formula $\varphi$ is the formula
 $\varphi \to \bot$.

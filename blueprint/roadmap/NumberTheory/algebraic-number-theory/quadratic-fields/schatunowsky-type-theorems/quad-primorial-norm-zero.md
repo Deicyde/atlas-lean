@@ -1,6 +1,6 @@
 # The zeroth primorial norm is one
 
-**The zeroth primorial norm is one.** For every number field $K$ with ring of integers
+For every number field $K$ with ring of integers
 $\mathcal{O}_K$, the primorial norm $N(\pi_0\#)$ of $K$ equals $1$: no nonzero prime ideal of
 $\mathcal{O}_K$ has norm at most $1$.
 

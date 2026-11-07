@@ -1,6 +1,6 @@
 # Tails are injective and order-preserving
 
-**Tails are injective and order-preserving.** Let $\eta$ be a substitution, let $x$ be a
+Let $\eta$ be a substitution, let $x$ be a
 letter, let $p \ge 1$, and let $(m_j, a_j)_{j = 0, \dots, p-1}$ and
 $(m'_j, a'_j)_{j = 0, \dots, p-1}$ be $x$-admissible sequences. Put
 $n = \sum_{j\lt p} |\eta^j(m_j)|$ and $n' = \sum_{j\lt p} |\eta^j(m'_j)|$, and let $t$ and $t'$ be the

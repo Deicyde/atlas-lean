@@ -1,6 +1,6 @@
 # Bézout's theorem (with multiplicity)
 
-**Bézout's theorem (with multiplicity).** Let $K$ be an algebraically closed field, let
+Let $K$ be an algebraically closed field, let
 $n \in \mathbb{N}$, and let $f_1, \dots, f_n \in K[X_0, \dots, X_n]$ and integers
 $d_1, \dots, d_n \ge 1$ be such that each $f_k$ is homogeneous of degree $d_k$ and has total
 degree exactly $d_k$. Suppose the common projective zero set

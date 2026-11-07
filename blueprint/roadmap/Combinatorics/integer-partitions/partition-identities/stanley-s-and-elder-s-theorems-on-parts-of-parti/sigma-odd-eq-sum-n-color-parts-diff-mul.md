@@ -1,6 +1,6 @@
 # Odd-divisor sum via the total number of parts of $n$-color partitions
 
-**Odd-divisor sum via the total number of parts of $n$-color partitions.** For $r \ge 0$
+For $r \ge 0$
 let $T_o(r)$ (resp. $T_e(r)$) be the total number of parts, counted with multiplicity, over the
 $n$-color partitions of $r$ having an odd (resp. even) number of parts, and let $C(D, r)$ be the
 number of $n$-color partitions of $r$ into distinct colored parts. Then for every $m \ge 1$,

@@ -1,6 +1,6 @@
 # Minimum degree of minimal Ramsey graphs for the triangle (Guo–Warnke)
 
-**Minimum degree of minimal Ramsey graphs for the triangle (Guo–Warnke).** Let $s_r(K_3)$ be
+Let $s_r(K_3)$ be
 the least minimum degree of a graph that is $r$-Ramsey-minimal for the triangle, with
 $s_r(K_3) = 0$ if there is no such graph, as defined for the conjecture. Then
 $s_r(K_3) = \Theta(r^2 \log r)$ as the natural number $r$ tends to infinity, where $\log$ is the

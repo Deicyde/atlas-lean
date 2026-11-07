@@ -1,6 +1,6 @@
 # Resultant product for truncated logarithmic polynomials
 
-**Resultant product for truncated logarithmic polynomials.** For a natural number $n$, let
+For a natural number $n$, let
 $F_n(x) = 1 + x + \frac{x^2}{2} + \dots + \frac{x^n}{n}$, let
 $L_n = \operatorname{lcm}(1, \dots, n)$, and let $\tilde F_n = L_n F_n \in \mathbb{Z}[x]$. The
 integer $\mathcal{P}_n$ is the resultant $\operatorname{Res}(1 + x + \dots + x^{n-1}, \tilde F_n)$.

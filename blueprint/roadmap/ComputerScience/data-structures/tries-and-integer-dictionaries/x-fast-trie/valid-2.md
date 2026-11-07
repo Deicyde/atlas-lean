@@ -1,6 +1,6 @@
 # Valid y-fast trie skeleton
 
-**Valid y-fast trie skeleton.** A y-fast trie skeleton $t$ over $w$-bit keys, with bucket $B_r$
+A y-fast trie skeleton $t$ over $w$-bit keys, with bucket $B_r$
 owned by each key $r$, is valid when its representative x-fast trie is valid, a key $r$ is stored
 in the representative x-fast trie exactly when its bucket $B_r$ is nonempty, and every key $r$
 stored in the representative x-fast trie lies in its own bucket $B_r$.

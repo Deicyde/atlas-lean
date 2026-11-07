@@ -1,6 +1,6 @@
 # Not every finite modular lattice embeds in the lattice of formations
 
-**Not every finite modular lattice embeds in the lattice of formations.** There is a finite modular
+There is a finite modular
 lattice $L$ that admits no injective map $f$ from $L$ to the formations of finite groups such that,
 for all $a, b \in L$, $f(a \wedge b) = f(a) \cap f(b)$ and $f(a \vee b)$ is the smallest formation
 containing $f(a) \cup f(b)$. This answers Kourovka Problem 13.51 (Skiba) in the negative.

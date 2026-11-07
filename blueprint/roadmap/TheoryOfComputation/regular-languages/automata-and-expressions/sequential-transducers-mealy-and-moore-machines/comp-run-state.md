@@ -1,6 +1,6 @@
 # States reached by a composite sequential transducer
 
-**States reached by a composite sequential transducer.** Let $S_1$ be a sequential transducer
+Let $S_1$ be a sequential transducer
 from $I$ to $M$, $S_2$ one from $M$ to $O$, and $C$ their composition. For a transducer $S$, a
 state $q$ and a word $w$, write $\delta_S(q, w)$ for the state $S$ reaches by reading $w$ from
 $q$ and $\lambda_S(q, w)$ for the concatenation of the words it emits along the way (without

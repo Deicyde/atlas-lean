@@ -1,6 +1,6 @@
 # A singleton set of vectors is linear
 
-**A singleton set of vectors is linear.** A singleton set of vectors is linear, with no periods.
+A singleton set of vectors is linear, with no periods.
 
 ## Sources
 

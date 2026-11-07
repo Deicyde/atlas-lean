@@ -1,6 +1,6 @@
 # $k$-degenerate graphs are $(k + 1)$-colorable
 
-**$k$-degenerate graphs are $(k + 1)$-colorable.** Let $k$ be a natural number. Every
+Let $k$ be a natural number. Every
 $k$-degenerate simple graph on a finite vertex set is $(k + 1)$-colorable.
 
 ## Sources

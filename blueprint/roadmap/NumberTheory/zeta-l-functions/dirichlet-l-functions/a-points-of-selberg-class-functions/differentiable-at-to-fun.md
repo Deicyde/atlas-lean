@@ -1,6 +1,6 @@
 # Holomorphy of Selberg class functions away from $s = 1$
 
-**Holomorphy of Selberg class functions away from $s = 1$.** For a function $F$ in the
+For a function $F$ in the
 Selberg class, $F$ is complex differentiable at every $s \in \mathbb{C}$ with $s \ne 1$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Binet formula for second-order linear recurrences
 
-**Binet formula for second-order linear recurrences.** Let $K$ be a field, let
+Let $K$ be a field, let
 $P, Q, \alpha, \beta \in K$ with $\alpha \ne \beta$, and suppose that $\alpha$ and $\beta$ are
 both roots of $z^2 - Pz + Q$. If a sequence $u : \mathbb{N} \to K$ satisfies
 $u_{n+2} = P u_{n+1} - Q u_n$ for all $n$, then for every natural number $n$,

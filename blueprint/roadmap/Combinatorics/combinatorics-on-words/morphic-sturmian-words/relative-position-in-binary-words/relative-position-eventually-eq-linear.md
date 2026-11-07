@@ -1,6 +1,6 @@
 # Eventually linear relative position functions with positive slope
 
-**Eventually linear relative position functions with positive slope.** Let $k \ge 1$, $q$
+Let $k \ge 1$, $q$
 and $c$ be integers with $0 \le c \le k - 1$, and put $j = qk - c$. Let $w$ be an infinite word
 over $\{a, b\}$ that starts with $a$ and is a fixed point of the Pisa substitution
 $\sigma_{k-c,c,1}$, given by $a \mapsto a^{k-c} b a^c$ and $b \mapsto a$. For an infinite word $v$

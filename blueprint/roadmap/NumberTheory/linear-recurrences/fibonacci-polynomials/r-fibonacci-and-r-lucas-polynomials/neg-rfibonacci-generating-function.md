@@ -1,6 +1,6 @@
 # Generating function of the (-r)-Fibonacci polynomials
 
-**Generating function of the (-r)-Fibonacci polynomials.** Let $A$ be a commutative ring,
+Let $A$ be a commutative ring,
 $r \ge 2$, $x \in A$ and $y$ a unit of $A$, and write $U_n = U^{(-r)}_n(x, y)$. In the ring
 $A[[z]]$ of formal power series,
 

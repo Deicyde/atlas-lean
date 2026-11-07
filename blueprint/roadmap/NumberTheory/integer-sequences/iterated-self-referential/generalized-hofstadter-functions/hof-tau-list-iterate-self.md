@@ -1,6 +1,6 @@
 # Iterates of the Hofstadter substitution on the letter $k$
 
-**Iterates of the Hofstadter substitution on the letter $k$.** Let $k \ge 1$, let $\tau_k$ be
+Let $k \ge 1$, let $\tau_k$ be
 the morphism of finite words over $\mathbb{N}$ that replaces the letter $k$ by the word $k\,1$ and
 every other letter $i$ by $i + 1$, and write $\tau_k^j(k)$ for the word obtained by applying
 $\tau_k$ $j$ times to the one-letter word $k$. For every natural number $j$: if $j \le k$, then

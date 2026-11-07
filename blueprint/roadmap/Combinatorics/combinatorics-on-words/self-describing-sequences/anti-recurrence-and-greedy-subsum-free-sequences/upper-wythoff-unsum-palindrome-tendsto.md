@@ -1,6 +1,6 @@
 # The words $W_i$ converge to $3$ followed by the coded Fibonacci word
 
-**The words $W_i$ converge to $3$ followed by the coded Fibonacci word.** Let
+Let
 $u_0 u_1 u_2 \cdots$ be the infinite Fibonacci word over $\{0, 1\}$, indexed from $0$, and let
 $\mathbf{V}$ be the infinite word obtained from it by replacing each $0$ by $5$ and each
 $1$ by $3$. Then the words $W_i$ of the unsum gap sequence converge to the infinite word

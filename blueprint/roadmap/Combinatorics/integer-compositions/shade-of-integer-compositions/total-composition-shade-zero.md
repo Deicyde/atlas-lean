@@ -1,6 +1,6 @@
 # Total shade of the compositions of zero
 
-**Total shade of the compositions of zero.** The total shade $c(0)$ of the compositions
+The total shade $c(0)$ of the compositions
 of $0$ is zero: $c(0) = 0$.
 
 The only composition of $0$ is the empty one, whose bargraph has no shaded cells.

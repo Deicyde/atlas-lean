@@ -1,6 +1,6 @@
 # Congruence conditions for Markoff points in the $p$-Lagrange spectrum
 
-**Congruence conditions for Markoff points in the $p$-Lagrange spectrum.** Let $p$ be a prime
+Let $p$ be a prime
 and let $L_p$ be the $p$-Lagrange spectrum. Then: (a) $\sqrt{5} \in L_p$ if and only if
 $p \equiv 0, \pm 1 \pmod 5$; (b) $2\sqrt{2} \in L_p$ if and only if $p \equiv 2, \pm 1 \pmod 8$;
 (c) $\sqrt{221}/5 \in L_p$ if and only if $p$ is a square modulo $13$ and modulo $17$;

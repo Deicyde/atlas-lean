@@ -1,6 +1,6 @@
 # Instrumented search in a one-entry tree
 
-**Instrumented search in a one-entry tree.** Let $e$ be an entry whose interval is $[a, b]$,
+Let $e$ be an entry whose interval is $[a, b]$,
 let $q = [c, d]$ be a query interval, and let $k = 2$ if $a \le d$ and $k = 1$ otherwise.
 Consider the single-node tree built from $e$ with empty subtrees and exact cached fields. If
 $[a, b]$ and $[c, d]$ overlap (that is, $a \le d$ and $c \le b$), the instrumented overlap search

@@ -1,6 +1,6 @@
 # Extended Stirling numbers at natural arguments
 
-**Extended Stirling numbers at natural arguments.** For all natural numbers $n$ and $k$, the
+For all natural numbers $n$ and $k$, the
 extended Stirling number of the second kind at $(n, k)$ equals the Stirling number of the second
 kind $S(n, k)$.
 

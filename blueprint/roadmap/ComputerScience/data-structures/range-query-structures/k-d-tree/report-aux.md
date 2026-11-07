@@ -1,6 +1,6 @@
 # Accumulator range report of a kd-tree
 
-**Accumulator range report of a kd-tree.** Points are vectors in $\mathbb{Z}^d$ with
+Points are vectors in $\mathbb{Z}^d$ with
 coordinates $p_0, \dots, p_{d-1}$; the box $[lo, hi]$ consists of the points $p$ with
 $lo_i \le p_i \le hi_i$ for every $i$. For a kd-tree $t$ and a list $acc$ of points, the
 accumulator report of $t$ for $[lo, hi]$ onto $acc$ is defined by recursion on $t$. For the

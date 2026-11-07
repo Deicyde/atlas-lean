@@ -1,6 +1,6 @@
 # The $2$-adic $3x+1$ map
 
-**The $2$-adic $3x+1$ map.** The map $T : \mathbb{Z}_2 \to \mathbb{Z}_2$ is defined by
+The map $T : \mathbb{Z}_2 \to \mathbb{Z}_2$ is defined by
 $T(x) = x/2$ if $x$ is even and $T(x) = (3x+1)/2$ if $x$ is odd, where even and odd refer to the
 residue of $x$ modulo $2$.
 

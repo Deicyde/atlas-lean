@@ -1,6 +1,6 @@
 # Instruction count of a command
 
-**Instruction count of a command.** The instruction count $\ell(c)$ of an IMP command $c$ is
+The instruction count $\ell(c)$ of an IMP command $c$ is
 defined by recursion on $c$, using the instruction counts $\ell(a)$ and $\ell(b)$ of arithmetic
 and Boolean expressions: $\ell(\mathbf{skip}) = 0$; $\ell(x := a) = \ell(a) + 1$;
 $\ell(c_1; c_2) = \ell(c_1) + \ell(c_2)$;

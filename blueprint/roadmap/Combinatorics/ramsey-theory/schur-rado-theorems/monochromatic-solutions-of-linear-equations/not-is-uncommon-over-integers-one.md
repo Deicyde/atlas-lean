@@ -1,6 +1,6 @@
 # No equation is 1-uncommon over the integers
 
-**No equation is 1-uncommon over the integers.** For every $k \ge 0$ and all integers
+For every $k \ge 0$ and all integers
 $a_1, \dots, a_k$, the equation $a_1 x_1 + \dots + a_k x_k = 0$ is not $1$-uncommon over the
 integers.
 

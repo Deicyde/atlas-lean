@@ -1,6 +1,6 @@
 # Indicator of a statement
 
-**Indicator of a statement.** For a proposition $P$, the indicator $\mathbf{1}_P$ is the real
+For a proposition $P$, the indicator $\mathbf{1}_P$ is the real
 number $1$ if $P$ holds and $0$ otherwise.
 
 ## Sources

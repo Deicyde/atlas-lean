@@ -1,6 +1,6 @@
 # Cell-by-cell check of a code stack
 
-**Cell-by-cell check of a code stack.** The check of a bit list $x$ from a key $(p_q, p_a)$
+The check of a bit list $x$ from a key $(p_q, p_a)$
 of natural numbers is defined as follows. The empty list passes. Otherwise, calling the cell of a
 number $n$ the $n$ bits $\mathrm{true}$ followed by one bit $\mathrm{false}$, read four cells off
 the front of $x$, those of $q$, $a$, $q'$ and $s$ in this order, leaving the rest $r$. The check

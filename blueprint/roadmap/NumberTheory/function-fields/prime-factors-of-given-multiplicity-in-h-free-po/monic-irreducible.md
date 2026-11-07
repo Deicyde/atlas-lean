@@ -1,6 +1,6 @@
 # Monic irreducible polynomials
 
-**Monic irreducible polynomials.** For a field $F$, $\mathcal{P}$ is the set of polynomials over
+For a field $F$, $\mathcal{P}$ is the set of polynomials over
 $F$ that are monic and irreducible; these are the prime polynomials of the paper.
 
 ## Sources

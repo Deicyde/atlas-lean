@@ -1,6 +1,6 @@
 # Nonattacking bishops on the white squares
 
-**Nonattacking bishops on the white squares.** For natural numbers $m$ and $k$, $R_W(m, k)$ is
+For natural numbers $m$ and $k$, $R_W(m, k)$ is
 the number of $k$-element sets of white squares of the $m \times m$ board $S_m = [1, m]^2$ (the
 squares $(i, j)$ with $i + j$ even) no two of which lie on a common line of slope $1$ or $-1$, that
 is, the number of ways to place $k$ nonattacking bishops on the white squares of $S_m$.

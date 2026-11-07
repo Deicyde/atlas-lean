@@ -1,6 +1,6 @@
 # The initial value $A_k^{(0)} = 1$
 
-**The initial value $A_k^{(0)} = 1$.** For every rational number $k$, the number $A_k^{(0)}$
+For every rational number $k$, the number $A_k^{(0)}$
 for $k$-Fibonacci Brousseau sums equals $1$.
 
 ## Sources

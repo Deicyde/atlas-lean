@@ -1,6 +1,6 @@
 # The Fejér kernel
 
-**The Fejér kernel.** Let $T > 0$ and, for $n \in \mathbb{Z}$, let
+Let $T > 0$ and, for $n \in \mathbb{Z}$, let
 $e_n(x) = e^{2\pi i n x / T}$ be the $n$-th Fourier character on the circle
 $\mathbb{R}/T\mathbb{Z}$. For a natural number $N$, the $N$-th Fejér kernel is the function
 $K_N : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$ given by the Cesàro mean of the Dirichlet kernels,

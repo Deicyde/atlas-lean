@@ -1,6 +1,6 @@
 # The $1$-Lagrange approximability is the classical one
 
-**The $1$-Lagrange approximability is the classical one.** For every real number $\xi$, the
+For every real number $\xi$, the
 $1$-Lagrange approximability of $\xi$ is
 
 $$\lambda_1(\xi) = \limsup_{s/t \to \xi} \frac{1}{t^2 \, |s/t - \xi|},$$

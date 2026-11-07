@@ -1,6 +1,6 @@
 # Maximal fluctuation of the odometer partial sums
 
-**Maximal fluctuation of the odometer partial sums.** Let $q$ be a complex number, let
+Let $q$ be a complex number, let
 $\omega = (\omega_0, \omega_1, \dots)$ be a dyadic integer (a sequence of binary digits), let $l$
 be a natural number, and let $S_{q,\omega}$ denote the interpolated odometer partial sums. The
 maximal fluctuation is the supremum over $t \in [0, 1]$ of

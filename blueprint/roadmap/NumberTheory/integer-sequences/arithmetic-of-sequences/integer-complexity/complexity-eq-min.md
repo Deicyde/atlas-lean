@@ -1,6 +1,6 @@
 # Integer complexity as a minimum over factorizations and sums
 
-**Integer complexity as a minimum over factorizations and sums.** Write
+Write
 $\lVert m \rVert$ for the integer complexity of a positive integer $m$, the least number of ones
 needed to write $m$ using $1$, $+$, $\times$ and parentheses. For every integer $n \ge 2$,
 $\lVert n \rVert$ is the least element of the set consisting of the numbers

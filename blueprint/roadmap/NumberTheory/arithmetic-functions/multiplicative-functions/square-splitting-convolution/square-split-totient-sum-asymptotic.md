@@ -1,6 +1,6 @@
 # Average order of the square-splitting totient function
 
-**Average order of the square-splitting totient function.** Let $A(n)$ be the set of
+Let $A(n)$ be the set of
 square-splitting divisors of $n$, and let $\varphi_\star$ be any integer-valued arithmetic function
 with $\sum_{d \in A(n)} \varphi_\star(d) = n$ for every $n \ge 1$. Then the product
 $M = \prod_p \left(1 - \frac{1}{p^2} + \frac{(p-1)^2}{p^5}\right)$ converges absolutely, that is,

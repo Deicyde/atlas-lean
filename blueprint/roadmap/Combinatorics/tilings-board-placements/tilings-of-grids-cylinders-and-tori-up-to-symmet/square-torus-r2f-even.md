@@ -1,6 +1,6 @@
 # Fixed tilings of the even square torus under the reflection $r^2 f$
 
-**Fixed tilings of the even square torus under the reflection $r^2 f$.** Let $n$ be an even
+Let $n$ be an even
 positive integer, $T$ a finite set of tile designs and $\sigma$ a permutation of $T$ with
 $\sigma^2 = 1$; for $k \in \mathbb{N}$ write $t_k$ for the number of designs $d \in T$ with
 $\sigma^k(d) = d$, and let $\varphi$ be Euler's totient function. Let $S$ be the torus shift sum

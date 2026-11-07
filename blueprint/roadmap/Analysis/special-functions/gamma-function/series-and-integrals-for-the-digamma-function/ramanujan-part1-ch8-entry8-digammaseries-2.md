@@ -1,6 +1,6 @@
 # Ramanujan's alternating digamma series (Chapter 8, Entry 8)
 
-**Ramanujan's alternating digamma series (Chapter 8, Entry 8).** Let $a$ and $b$ be complex
+Let $a$ and $b$ be complex
 numbers with $b \ne 0$ and $a + kb \ne 0$ for every integer $k \ge 1$, suppose that
 $\Gamma\left(\frac{a+2b}{2b}\right) \ne 0$ and $\Gamma\left(\frac{a+b}{2b}\right) \ne 0$, and let
 $\psi(z) = \Gamma'(z)/\Gamma(z)$. Then the partial sums of

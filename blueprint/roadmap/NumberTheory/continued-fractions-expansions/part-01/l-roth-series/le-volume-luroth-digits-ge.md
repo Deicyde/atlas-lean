@@ -1,6 +1,6 @@
 # Lower bound for the measure of large Lüroth digit values
 
-**Lower bound for the measure of large Lüroth digit values.** Let $m$ be a natural number,
+Let $m$ be a natural number,
 let $D = [2, \infty)^m$, let $F : \mathbb{R}^m \to \mathbb{R}$ satisfy $F(x) > 0$ for every
 $x \in D$, and let $M$ be a real number with
 $F(x) \le M\,F(\lfloor x_1 \rfloor, \ldots, \lfloor x_m \rfloor)$ for every $x \in D$ (the

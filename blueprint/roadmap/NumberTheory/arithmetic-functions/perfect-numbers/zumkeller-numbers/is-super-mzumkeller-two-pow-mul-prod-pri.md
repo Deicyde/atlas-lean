@@ -1,6 +1,6 @@
 # Powers of $2$ times at least three distinct odd primes are super-m-Zumkeller
 
-**Powers of $2$ times at least three distinct odd primes are super-m-Zumkeller.** Let $k$ be
+Let $k$ be
 a natural number and $S$ a finite set of at least three odd primes. Then $2^k \prod_{p \in S} p$
 is super-m-Zumkeller.
 

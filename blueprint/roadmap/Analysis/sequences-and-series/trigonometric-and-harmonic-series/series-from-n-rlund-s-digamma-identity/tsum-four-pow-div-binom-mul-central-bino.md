@@ -1,6 +1,6 @@
 # Digamma evaluation of a central binomial series with a complex binomial parameter
 
-**Digamma evaluation of a central binomial series with a complex binomial parameter.** Let
+Let
 $\Gamma$ be the Gamma function and $\psi$ the digamma function, and let $h$ be a complex number
 that is not a nonnegative integer and has $\operatorname{Re} h > -1/2$. Writing $\binom{n}{h}^{-1}$
 for $\Gamma(h+1)\,\Gamma(n-h+1)/n!$, we have

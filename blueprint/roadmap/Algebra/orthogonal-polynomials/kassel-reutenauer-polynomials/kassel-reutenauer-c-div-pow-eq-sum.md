@@ -1,6 +1,6 @@
 # $C_n(q)/q^n$ as a sum over the solutions of $h(h + 1 + 2a) = 2n$
 
-**$C_n(q)/q^n$ as a sum over the solutions of $h(h + 1 + 2a) = 2n$.** Let $n \ge 1$, let
+Let $n \ge 1$, let
 $\bar P_n$ be the Kassel–Reutenauer polynomial, and write $C_n(q)/q^n$ for the Laurent polynomial
 $(q - 2 + q^{-1})\,\bar P_n(q + q^{-1})$ in $\mathbb{Z}[q, q^{-1}]$. Then
 

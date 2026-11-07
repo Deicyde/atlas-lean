@@ -1,6 +1,5 @@
 # The five Cook–Levin clause families are satisfiable iff some certificate is accepted
 
-**The five Cook–Levin clause families are satisfiable iff some certificate is accepted.**
 Let $E$ be an encoding of the multi-stack machine $M$, with input stack $k_0$, output stack
 $k_1$ and window depth $d$. Let $x$ and $Y$ be lists of input symbols, let $m, T \in \mathbb{N}$,
 let $\mathrm{acc}$ be an output symbol, and let $H = m + (T + 1)d + 1$ be the stack cap. Suppose

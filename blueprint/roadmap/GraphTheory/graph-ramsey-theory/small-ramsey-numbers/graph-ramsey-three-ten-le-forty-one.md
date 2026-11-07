@@ -1,6 +1,6 @@
 # Angeltveit's upper bound for $R(3, 10)$
 
-**Angeltveit's upper bound for $R(3, 10)$.** The classical Ramsey number $R(3, 10)$
+The classical Ramsey number $R(3, 10)$
 is at most $41$.
 
 ## Sources

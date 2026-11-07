@@ -1,6 +1,6 @@
 # The 290 theorem
 
-**The 290 theorem.** Let $n$ be a natural number and let $M$ be a real $n \times n$ matrix
+Let $n$ be a natural number and let $M$ be a real $n \times n$ matrix
 that is positive definite (symmetric, with $x^{\top} M x > 0$ for every nonzero
 $x \in \mathbb{R}^n$) and integral (for every $x \in \mathbb{Z}^n$, the value $x^{\top} M x$ is
 an integer). If $M$ represents each of the 29 critical numbers of the 290 theorem, that is,

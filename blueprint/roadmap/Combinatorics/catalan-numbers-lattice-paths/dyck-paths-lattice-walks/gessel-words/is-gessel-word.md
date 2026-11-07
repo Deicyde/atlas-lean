@@ -1,6 +1,6 @@
 # Gessel word
 
-**Gessel word.** Let $n$ be a natural number. For a word $u$ over the Gessel alphabet over
+Let $n$ be a natural number. For a word $u$ over the Gessel alphabet over
 $S = [n] = \{1, \dots, n\}$ and a natural number $m$, write $\beta_u(m)$ for the signed balance of
 $m$ in $u$: the number of occurrences of the unbarred letter $m$ in $u$ minus the number of
 occurrences of the barred letter $\bar{m}$ in $u$. A word $w$ over this alphabet is a Gessel word

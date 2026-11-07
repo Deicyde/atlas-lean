@@ -1,6 +1,6 @@
 # Weighted Davenport constant of a product of modules
 
-**Weighted Davenport constant of a product of modules.** Let $R$ be a ring and
+Let $R$ be a ring and
 $A \subseteq R$. For an $R$-module $P$, let $D_A(P)$ be the least positive integer $k$, if one
 exists, such that every sequence $x_1, \dots, x_k$ in $P$ has a nonempty set of indices $I$ and
 weights $a_i \in A$ for $i \in I$ with $\sum_{i \in I} a_i x_i = 0$. If $M$ and $N$ are

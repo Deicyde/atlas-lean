@@ -1,6 +1,6 @@
 # Dixon-type alternating sum with Lucas sequences
 
-**Dixon-type alternating sum with Lucas sequences.** Let $p$ be an integer and let $U_n$ and
+Let $p$ be an integer and let $U_n$ and
 $V_n$ be the Lucas sequences $U(p, -1)$ and $V(p, -1)$, so $U_0 = 0$, $U_1 = 1$, $V_0 = 2$,
 $V_1 = p$ and both satisfy $X_{j+2} = p X_{j+1} + X_j$. Then for every natural number $n$,
 

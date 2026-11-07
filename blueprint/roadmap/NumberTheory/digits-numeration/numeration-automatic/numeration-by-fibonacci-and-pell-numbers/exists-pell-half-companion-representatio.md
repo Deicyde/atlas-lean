@@ -1,6 +1,6 @@
 # Numeration by Pell and half-companion Pell numbers
 
-**Numeration by Pell and half-companion Pell numbers.** Let $P_n$ be the Pell numbers
+Let $P_n$ be the Pell numbers
 ($P_0 = 0$, $P_1 = 1$, $P_{n+2} = 2P_{n+1} + P_n$) and $H_n$ the half-companion Pell numbers
 ($H_0 = H_1 = 1$, $H_{n+2} = 2H_{n+1} + H_n$), and let $R_k = P_k$ for odd $k$ and
 $R_k = H_k$ for even $k$. Then for every positive integer $t$ there are a natural number $n \ge 1$

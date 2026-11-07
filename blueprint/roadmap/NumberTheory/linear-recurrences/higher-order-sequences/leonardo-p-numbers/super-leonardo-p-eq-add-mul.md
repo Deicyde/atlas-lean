@@ -1,6 +1,6 @@
 # Reduction of supergeneralized Leonardo p-numbers to the homogeneous case
 
-**Reduction of supergeneralized Leonardo p-numbers to the homogeneous case.** Let $p \ge 1$
+Let $p \ge 1$
 and $k$ be natural numbers, $x$ a real sequence, $y$ the real sequence $y_i = i + 1$, and write
 $\mathcal{L}_{p,k,x}(n)$ for the supergeneralized Leonardo $p$-numbers. For every natural number
 $n$, $\mathcal{L}_{p,k,x}(n) = \mathcal{L}_{p,0,x}(n)$ if $n \le p$, and

@@ -1,6 +1,6 @@
 # Ramanujan's integral formula with Bernoulli numbers
 
-**Ramanujan's integral formula with Bernoulli numbers.** Let $f(-1, x) = 1$ and, for natural
+Let $f(-1, x) = 1$ and, for natural
 numbers $n$, let $f(n, x) = e^{-x} \sum_{j=0}^{\infty} (j + 1)^n x^{j+1} / j!$ for complex $x$.
 Let $B_n$ be the Bernoulli numbers, with $B_1 = -1/2$. Then for every natural number $m$ and every
 complex number $x$,

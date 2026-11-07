@@ -1,6 +1,6 @@
 # Binet formula for the r-Fibonacci polynomials with one double zero
 
-**Binet formula for the r-Fibonacci polynomials with one double zero.** Let $K$ be a field
+Let $K$ be a field
 of characteristic zero, let $r \ge 1$ be a natural number, and let $x, y, \alpha \in K$. Let
 $\beta_1, \dots, \beta_{r-1} \in K$ be pairwise distinct and all different from $\alpha$, put
 $\tilde P(t) = \prod_{k=1}^{r-1} (t - \beta_k)$, and suppose that

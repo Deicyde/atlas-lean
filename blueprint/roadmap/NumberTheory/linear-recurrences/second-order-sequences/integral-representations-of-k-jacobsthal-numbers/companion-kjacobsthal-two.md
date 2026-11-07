@@ -1,6 +1,6 @@
 # The second companion $k$-Jacobsthal number
 
-**The second companion $k$-Jacobsthal number.** For every natural number $k$ and all integers
+For every natural number $k$ and all integers
 $a, b$, the companion $k$-Jacobsthal numbers satisfy $\mathcal{J}_{k,2}(a, b) = bk + 2a$.
 
 ## Sources

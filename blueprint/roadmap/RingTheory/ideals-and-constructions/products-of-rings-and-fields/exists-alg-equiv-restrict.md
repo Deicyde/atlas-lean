@@ -1,6 +1,5 @@
 # Surjections from a finite product of fields are coordinate restrictions up to isomorphism
 
-**Surjections from a finite product of fields are coordinate restrictions up to isomorphism.**
 Let $K$ be a field, $\iota$ a finite type, $(F_i)_{i \in \iota}$ a family of fields that are
 $K$-algebras, and $B$ a commutative $K$-algebra. For every surjective $K$-algebra homomorphism
 $\varphi : \prod_{i \in \iota} F_i \to B$ there are a finite subset $S \subseteq \iota$ and a

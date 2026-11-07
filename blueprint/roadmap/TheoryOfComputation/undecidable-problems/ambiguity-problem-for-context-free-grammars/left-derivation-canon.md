@@ -1,6 +1,6 @@
 # The leftmost derivation along an index sequence
 
-**The leftmost derivation along an index sequence.** Let
+Let
 $P = [(t_0, b_0), \dots, (t_{m-1}, b_{m-1})]$ be a list of dominoes, and let $A$, $B$ be the
 nonterminals of the ambiguity grammar of $P$ for its top and bottom words. For every nonempty
 sequence $i_1, \dots, i_n$ of indices less than $m$ and all words of terminals $u$, $v$, the

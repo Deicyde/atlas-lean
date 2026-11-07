@@ -1,6 +1,6 @@
 # Generator machine for the transition clause families
 
-**Generator machine for the transition clause families.** Fix a layout $L$ with label/state
+Fix a layout $L$ with label/state
 block size $A$, $K$ stacks and $g$ symbol codes, tables $\mathrm{la}$, $\mathrm{na}$,
 $\mathrm{wa}$, and a number $N$ of situations, and let $n = Kd + 2$ be the number of literals of
 a clause, where $d$ is the window depth. The generator is a multi-stack machine with a Boolean

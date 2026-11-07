@@ -1,6 +1,6 @@
 # Solutions of $P u^2 + Q u y + R y^2 = 1$ give convergents of $-Q/(2P)$
 
-**Solutions of $P u^2 + Q u y + R y^2 = 1$ give convergents of $-Q/(2P)$.** Let $P, Q, R, u, y$
+Let $P, Q, R, u, y$
 be integers with $P > 0$ and $y > 0$, and let $D = Q^2 - 4PR$. Assume that $D < 0$, that
 $D \ne -3$, and that $P \ne 2$ if $D = -4$. If $P u^2 + Q u y + R y^2 = 1$, then, writing
 $\omega = -Q/(2P)$ with regular continued fraction expansion $\omega = [a_0; a_1, a_2, \dots]$,

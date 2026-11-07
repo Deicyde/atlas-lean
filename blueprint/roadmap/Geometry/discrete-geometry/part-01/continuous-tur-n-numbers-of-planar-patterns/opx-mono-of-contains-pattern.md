@@ -1,6 +1,6 @@
 # Monotonicity of the continuous Turán number under containment
 
-**Monotonicity of the continuous Turán number under containment.** Let $n$ be a real number
+Let $n$ be a real number
 and let $P, Q \subseteq \mathbb{R}^2$. If $Q$ contains $P$ in the sense of containment of planar
 point sets, then $\operatorname{opx}(n, P) \le \operatorname{opx}(n, Q)$.
 

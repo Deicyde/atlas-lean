@@ -1,6 +1,6 @@
 # Solubility is not determined by the type
 
-**Solubility is not determined by the type.** The answer to Kourovka Problem 12.37 is negative:
+The answer to Kourovka Problem 12.37 is negative:
 there are finite groups $G$ and $H$ of the same type such that $H$ is soluble and $G$ is not
 soluble.
 

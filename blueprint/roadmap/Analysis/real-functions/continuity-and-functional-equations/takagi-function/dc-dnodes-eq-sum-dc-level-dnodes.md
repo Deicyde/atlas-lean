@@ -1,6 +1,6 @@
 # Level-sum formula for the divide-and-conquer D-node count
 
-**Level-sum formula for the divide-and-conquer D-node count.** Let $\delta$ be the
+Let $\delta$ be the
 divide-and-conquer D-node count. For every integer $n > 0$, let $k = \lfloor \log_2 n \rfloor$,
 let $\lambda_i(n)$ be the level-$i$ D-node count, and let $n_i$ be the binary digit of $n$ at
 $2^i$. Then

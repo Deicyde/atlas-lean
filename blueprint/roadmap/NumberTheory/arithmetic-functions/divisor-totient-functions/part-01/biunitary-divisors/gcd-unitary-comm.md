@@ -1,6 +1,6 @@
 # Symmetry of the greatest common unitary divisor
 
-**Symmetry of the greatest common unitary divisor.** For all natural numbers $a$ and $b$, the
+For all natural numbers $a$ and $b$, the
 greatest common unitary divisor satisfies $\gcd_1(a, b) = \gcd_1(b, a)$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Decision problems
 
-**Decision problems.** A decision problem is a function from finite lists of booleans
+A decision problem is a function from finite lists of booleans
 (bitstrings) to booleans.
 
 ## Sources

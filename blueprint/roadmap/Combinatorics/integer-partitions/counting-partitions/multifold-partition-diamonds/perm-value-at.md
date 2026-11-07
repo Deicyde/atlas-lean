@@ -1,6 +1,6 @@
 # Value of a permutation at a natural position
 
-**Value of a permutation at a natural position.** For a permutation $\tau$ of
+For a permutation $\tau$ of
 $\{0, 1, \dots, d - 1\}$ and a natural number $j$, this is the natural number $\tau(j)$ when
 $j < d$, and $0$ when $j \ge d$. It is used to read off descents.
 

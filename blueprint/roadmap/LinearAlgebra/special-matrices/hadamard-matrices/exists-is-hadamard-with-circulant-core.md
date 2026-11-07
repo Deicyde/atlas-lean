@@ -1,6 +1,6 @@
 # Circulant-core Hadamard matrices with orthogonal rows and columns
 
-**Circulant-core Hadamard matrices with orthogonal rows and columns.** Let $n$ be a natural
+Let $n$ be a natural
 number such that either $n$ is a prime with $n \equiv 3 \pmod 4$, or $n = p(p + 2)$ for some
 natural number $p$ with $p$ and $p + 2$ both prime. Then there is an $(n + 1) \times (n + 1)$
 integer matrix $H$, with rows and columns indexed by $0, 1, \dots, n$, such that every entry of

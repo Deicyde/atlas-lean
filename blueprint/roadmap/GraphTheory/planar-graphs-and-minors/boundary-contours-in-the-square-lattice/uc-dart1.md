@@ -1,3 +1,3 @@
 # Downward boundary dart of the unit cell
 
-**Downward boundary dart of the unit cell.** The boundary dart of the unit cell pointing down.
+The boundary dart of the unit cell pointing down.

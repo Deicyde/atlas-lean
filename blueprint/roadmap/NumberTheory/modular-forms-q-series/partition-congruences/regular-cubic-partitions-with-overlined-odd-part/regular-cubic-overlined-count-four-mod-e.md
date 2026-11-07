@@ -1,6 +1,5 @@
 # Congruences modulo 8, 56 and 24 for 4-regular cubic partitions with odd parts overlined
 
-**Congruences modulo 8, 56 and 24 for 4-regular cubic partitions with odd parts overlined.**
 Let $a_4(n)$ be the number of $4$-regular cubic partitions of $n$ with odd parts overlined, that
 is, the $n$th coefficient of $f_2 f_4^2 f_{16} / (f_1^2 f_4 f_8)$, where
 $f_k = \prod_{m \ge 1} (1 - q^{km})$. Then for every $n \ge 0$, $8$ divides $a_4(4n + 3)$, $56$

@@ -1,6 +1,6 @@
 # Sup-norm bound by the $H^1$ energy for functions vanishing at both ends
 
-**Sup-norm bound by the $H^1$ energy for functions vanishing at both ends.** Let
+Let
 $\alpha \le \beta$ be real numbers and let $f : \mathbb{R} \to \mathbb{R}$ be continuously
 differentiable on $[\alpha, \beta]$ with $f(\alpha) = f(\beta) = 0$. Then
 

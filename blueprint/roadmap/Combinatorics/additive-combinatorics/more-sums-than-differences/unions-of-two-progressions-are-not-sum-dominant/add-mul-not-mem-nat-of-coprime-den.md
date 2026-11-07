@@ -1,6 +1,6 @@
 # No integer points for coprime denominators, the first at least 3
 
-**No integer points for coprime denominators, the first at least 3.** Let
+Let
 $s_1, s_2, p_1, p_2, q_1, q_2$ be natural numbers with $\gcd(p_1, q_1) = 1$, $\gcd(q_1, q_2) = 1$
 and $q_1 \ge 3$, and let $x = s_1 + p_1/q_1$ and $d = s_2 + p_2/q_2$. Then for all natural numbers
 $i$ and $j$, neither $x + id$ nor $2x + jd$ is a nonnegative integer.

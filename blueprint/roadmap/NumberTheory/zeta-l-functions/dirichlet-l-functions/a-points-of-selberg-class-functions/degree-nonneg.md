@@ -1,6 +1,6 @@
 # Nonnegativity of the degree
 
-**Nonnegativity of the degree.** Let $F$ be a function in the Selberg class with Gamma-factor
+Let $F$ be a function in the Selberg class with Gamma-factor
 scalings $\lambda_1, \dots, \lambda_r$. Then the degree $d_F = 2 \sum_{j=1}^{r} \lambda_j$
 satisfies $d_F \ge 0$.
 

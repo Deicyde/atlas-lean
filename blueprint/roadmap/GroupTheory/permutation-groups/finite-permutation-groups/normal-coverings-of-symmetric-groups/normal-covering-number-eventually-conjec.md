@@ -1,6 +1,6 @@
 # Bubboloni–Praeger–Spiga normal covering conjecture (eventual form)
 
-**Bubboloni–Praeger–Spiga normal covering conjecture (eventual form).** There is a natural
+There is a natural
 number $N$ such that, for every $n \ge N$, the normal covering number $\gamma(S_n)$ of the
 symmetric group $S_n$ equals the Bubboloni–Praeger–Spiga conjectured value of $n$.
 

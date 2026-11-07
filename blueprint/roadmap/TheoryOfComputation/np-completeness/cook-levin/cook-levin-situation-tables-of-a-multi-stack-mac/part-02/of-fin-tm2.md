@@ -1,6 +1,6 @@
 # The classical encoding record of a finite multi-stack machine
 
-**The classical encoding record of a finite multi-stack machine.** For every finite
+For every finite
 multi-stack Turing machine $M$, an encoding record of $M$, built with classical choice. If $M$ has
 $K$ stacks, they are numbered $0, \dots, K - 1$ by a bijection, and numbers $n \ge K$ decode to the
 input stack. The pairs of an optional label and a state are numbered $0, \dots, A_0 - 1$ by a

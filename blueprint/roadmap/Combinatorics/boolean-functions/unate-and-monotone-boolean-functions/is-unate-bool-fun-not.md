@@ -1,6 +1,6 @@
 # The negation of a unate function is unate
 
-**The negation of a unate function is unate.** If an $n$-variable Boolean function $f$ is
+If an $n$-variable Boolean function $f$ is
 unate, then so is its negation $x \mapsto \lnot f(x)$.
 
 ## Sources

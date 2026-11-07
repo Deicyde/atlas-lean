@@ -1,6 +1,6 @@
 # Total displacement of a Stirling permutation
 
-**Total displacement of a Stirling permutation.** Let $w = w_1 \cdots w_{2n}$ be a Stirling
+Let $w = w_1 \cdots w_{2n}$ be a Stirling
 permutation of order $n$, read as a parking function of length $2n$. Then the total displacement
 of $w$, the sum $d(1) + \dots + d(2n)$ of the displacements of its cars, is $n^2$.
 

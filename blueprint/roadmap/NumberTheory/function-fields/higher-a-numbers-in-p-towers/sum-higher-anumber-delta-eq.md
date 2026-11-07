@@ -1,6 +1,6 @@
 # Sum of $\delta$ up to $\lfloor p^n/x \rfloor$
 
-**Sum of $\delta$ up to $\lfloor p^n/x \rfloor$.** Let $p$ be a prime and $d$ a divisor of
+Let $p$ be a prime and $d$ a divisor of
 $p - 1$; let $\delta$ be the rounding indicator, $\tau_D$ the denominator of $\tau = (p + 1)/d$
 in lowest terms, and $F_y(e)$ the $\delta_0$ correction sum of Lemma 9. For every rational
 $x \ge 1$ and every natural number $n$,

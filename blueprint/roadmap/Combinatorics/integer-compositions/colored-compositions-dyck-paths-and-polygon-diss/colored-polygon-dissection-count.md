@@ -1,6 +1,6 @@
 # Colored polygon dissection count
 
-**Colored polygon dissection count.** Let $\gamma : \mathbb{N} \to \mathbb{N}$ and
+Let $\gamma : \mathbb{N} \to \mathbb{N}$ and
 $n, k \in \mathbb{N}$. For $n \ge 1$, label the vertices of the convex $(n+2)$-gon $0, \dots, n+1$
 in cyclic order, with root side $(0, n+1)$. Then $p_{n,k}(\gamma)$ is the sum, over all sets $D$ of
 $k - 1$ pairwise noncrossing diagonals of this polygon, of the product, over the root side and

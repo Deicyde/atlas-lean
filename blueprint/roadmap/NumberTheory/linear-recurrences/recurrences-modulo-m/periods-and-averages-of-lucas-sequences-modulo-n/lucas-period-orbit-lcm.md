@@ -1,6 +1,6 @@
 # The orbit lcm $L(n)$
 
-**The orbit lcm $L(n)$.** For a Lucas sequence $U = U(P, Q)$ and a natural number $n$, let
+For a Lucas sequence $U = U(P, Q)$ and a natural number $n$, let
 $\pi_U(m)$ be the period of $U$ modulo $m$, with iterates $\pi_U^i$ and $\pi_U^0(n) = n$, and let
 $\omega(n)$ be the orbit index of $n$ (the least step at which the period orbit of $n$ closes, or
 $0$ if there is none). Then $L(n)$ is defined by

@@ -1,6 +1,6 @@
 # Priority of a game position
 
-**Priority of a game position.** Only fixpoint-binder positions carry a priority. For a
+Only fixpoint-binder positions carry a priority. For a
 formula $\varphi$, a world $w$ and a binder stack $s$ of length $k$, the position
 $(\mu X.\,\varphi, w, s)$, whose formula is the least fixpoint with body $\varphi$, has priority
 $2k+1$, the position $(\nu X.\,\varphi, w, s)$, whose formula is the greatest fixpoint with body

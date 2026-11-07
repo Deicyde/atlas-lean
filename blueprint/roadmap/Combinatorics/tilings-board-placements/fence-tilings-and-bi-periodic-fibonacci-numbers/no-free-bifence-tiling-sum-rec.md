@@ -1,6 +1,6 @@
 # Recurrence for weighted tilings with no free bifence
 
-**Recurrence for weighted tilings with no free bifence.** Let $a$ and $b$ be nonzero elements
+Let $a$ and $b$ be nonzero elements
 of a field, and let $R_n$ be the weighted number of tilings of an $n$-board by half-squares and
 $(1/2, 1/2)$-fences with no free bifence, where a half-square has weight $a$ in an odd cell and
 $b$ in an even cell (cells numbered $1, \dots, n$). For every $n \ge 2$,

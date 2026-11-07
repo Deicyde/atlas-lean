@@ -1,3 +1,3 @@
 # Leftward boundary dart of the unit cell
 
-**Leftward boundary dart of the unit cell.** The boundary dart of the unit cell pointing left.
+The boundary dart of the unit cell pointing left.

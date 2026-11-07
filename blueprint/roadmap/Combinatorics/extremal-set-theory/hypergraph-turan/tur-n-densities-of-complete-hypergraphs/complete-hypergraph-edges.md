@@ -1,6 +1,6 @@
 # Edges of the complete uniform hypergraph
 
-**Edges of the complete uniform hypergraph.** For natural numbers $k$ and $m$, the edge
+For natural numbers $k$ and $m$, the edge
 family of the complete $k$-uniform hypergraph on the vertex set $\{0, 1, \dots, m-1\}$ is the
 family of all $k$-element subsets of $\{0, 1, \dots, m-1\}$.
 

@@ -1,6 +1,6 @@
 # The I3 loop
 
-**The I3 loop.** Let $L$ be a layout with $g$ symbol codes, consider the init generator for a
+Let $L$ be a layout with $g$ symbol codes, consider the init generator for a
 start code, a stack $k_0$ and a list of $\ell$ certificate codes, and let
 $x = (x_0, \dots, x_{s-1})$ be a list of codes $x_j < g$. Suppose its counters $F$ have $Q$,
 $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$, $\mathrm{CB}$ and $P$ equal to $0$,

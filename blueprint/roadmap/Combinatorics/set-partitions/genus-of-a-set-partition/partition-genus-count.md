@@ -1,6 +1,6 @@
 # Number of set partitions of given type and genus
 
-**Number of set partitions of given type and genus.** For natural numbers $n$ and $g$ and a
+For natural numbers $n$ and $g$ and a
 multiset $\alpha$ of natural numbers, $C_{n,[\alpha]}^{(g)}$ is the number of increasing-cycle
 permutations $\tau$ of $\{0, \dots, n-1\}$ whose multiset of cycle lengths, fixed points counted
 as cycles of length $1$, is $\alpha$ and whose genus is $g$.

@@ -1,6 +1,6 @@
 # Kourovka Problem 14.48 (equations over free groups in finite quotients)
 
-**Kourovka Problem 14.48 (equations over free groups in finite quotients).** The statement
+The statement
 that for every free group $F$ on an arbitrary set of generators, every natural number $n$ and every
 equation $w$ over $F$ in the unknowns $x_0, \dots, x_{n-1}$ (an element of the free product of $F$
 with the free group on $x_0, \dots, x_{n-1}$): if no $g_0, \dots, g_{n-1} \in F$ are such that

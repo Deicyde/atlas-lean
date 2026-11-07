@@ -1,6 +1,6 @@
 # Classical Fibonacci sum identities
 
-**Classical Fibonacci sum identities.** Let $F_k$ denote the $k$-th Fibonacci number, with
+Let $F_k$ denote the $k$-th Fibonacci number, with
 $F_0 = 0$ and $F_1 = 1$. For every natural number $n \ge 1$, the following identities hold in
 the integers: $\sum_{i=1}^{n} F_{2i-1} = F_{2n}$; $\sum_{i=1}^{n} F_{2i} = F_{2n+1} - 1$;
 $\sum_{i=1}^{n} i F_i = n F_{n+2} - F_{n+3} + 2$;

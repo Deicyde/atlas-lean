@@ -1,6 +1,5 @@
 # Balanced unate and balanced monotone functions have equally many NN- and NPN-classes
 
-**Balanced unate and balanced monotone functions have equally many NN- and NPN-classes.**
 For every $n$, call an $n$-variable Boolean function $f$ balanced when $2\,\mathrm{wt}(f) = 2^n$,
 where $\mathrm{wt}(f)$ is the weight of $f$. The number of NN-inequivalent balanced unate
 $n$-variable Boolean functions equals the number of NN-inequivalent balanced monotone ones, and

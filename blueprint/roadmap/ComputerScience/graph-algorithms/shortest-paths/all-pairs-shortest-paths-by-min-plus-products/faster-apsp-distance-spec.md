@@ -1,6 +1,6 @@
 # FASTER-APSP computes shortest-path weights
 
-**FASTER-APSP computes shortest-path weights.** Let $W$ be an $n \times n$ matrix with
+Let $W$ be an $n \times n$ matrix with
 entries in $\mathbb{Z} \cup \{\infty\}$, read as edge weights of a directed graph on the
 vertices $0, \dots, n - 1$ (weight $\infty$ meaning no edge), such that $W_{ii} = 0$ for every
 $i$ and $W$ has no negative cycle. Run FASTER-APSP on $W$ over the min-plus semiring, whose

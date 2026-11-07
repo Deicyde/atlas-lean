@@ -1,6 +1,6 @@
 # Inclusion–exclusion for tuples with exactly $r$ coprime pairs
 
-**Inclusion–exclusion for tuples with exactly $r$ coprime pairs.** Let $k \ge 2$, $r \ge 0$
+Let $k \ge 2$, $r \ge 0$
 and $n \in \mathbb{N}^k$, and let $\beta_r(n)$ be $1$ if $n$ has exactly $r$ coprime pairs and $0$
 otherwise. For a set $E$ of pairs $(a, b)$ with $0 \le a < b < k$, let $\delta_E$ be the
 coprimality indicator of the graph with edge set $E$. Then, as integers,

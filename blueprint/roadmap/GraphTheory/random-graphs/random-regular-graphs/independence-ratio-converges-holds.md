@@ -1,6 +1,6 @@
 # The independence ratio of random regular graphs converges
 
-**The independence ratio of random regular graphs converges.** For every integer $d \ge 1$
+For every integer $d \ge 1$
 there is a real number $c$ such that, for every $\varepsilon > 0$, the probability that the
 independence ratio $\alpha(G)/n$ of a uniformly random $d$-regular simple graph $G$ on the vertex
 set $\{0, \dots, n - 1\}$ differs from $c$ by more than $\varepsilon$ tends to $0$ as

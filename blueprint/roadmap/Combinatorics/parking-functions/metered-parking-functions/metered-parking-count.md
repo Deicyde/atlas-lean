@@ -1,6 +1,6 @@
 # Number of metered parking functions
 
-**Number of metered parking functions.** For natural numbers $t$, $m$ and $n$,
+For natural numbers $t$, $m$ and $n$,
 $\mathrm{mpf}_{m,n}(t)$ is the number of $t$-metered $(m, n)$-parking functions, that is, of maps
 $f$ from the $m$ cars $\{0, \dots, m-1\}$ to the $n$ spots $\{0, \dots, n-1\}$ under which every
 car parks in the $t$-metered parking scheme.

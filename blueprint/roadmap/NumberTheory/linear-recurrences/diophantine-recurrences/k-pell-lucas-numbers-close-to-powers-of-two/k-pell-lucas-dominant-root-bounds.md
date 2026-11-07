@@ -1,6 +1,6 @@
 # Bounds for the dominant root of the $k$-Pell–Lucas polynomial (Lemma 1)
 
-**Bounds for the dominant root of the $k$-Pell–Lucas polynomial (Lemma 1).** Let $k \ge 2$ be
+Let $k \ge 2$ be
 a natural number and let $\alpha > 0$ be a real number with
 $\alpha^k = 2\alpha^{k-1} + \sum_{i=0}^{k-2} \alpha^i$, that is, a positive real root of
 $\Phi_k(x) = x^k - 2x^{k-1} - \sum_{i=0}^{k-2} x^i$. Write

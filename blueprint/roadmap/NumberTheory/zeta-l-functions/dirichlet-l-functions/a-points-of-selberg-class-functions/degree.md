@@ -1,6 +1,6 @@
 # Degree of a function in the Selberg class
 
-**Degree of a function in the Selberg class.** For a function $F$ in the Selberg class whose
+For a function $F$ in the Selberg class whose
 functional equation has Gamma-factor scalings $\lambda_1, \dots, \lambda_r$, the degree of $F$ is
 $d_F = 2 \sum_{j=1}^{r} \lambda_j$.
 

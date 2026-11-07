@@ -1,6 +1,6 @@
 # Landen form series of the identity matrix
 
-**Landen form series of the identity matrix.** For the identity matrix $g$, with rows $(1, 0)$
+For the identity matrix $g$, with rows $(1, 0)$
 and $(0, 1)$, the Landen form series $u \cdot G_g(u)$ is the constant power series $1$ in
 $\mathbb{R}[[u]]$; that is, $G_g(t) = 1/t$.
 

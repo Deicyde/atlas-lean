@@ -1,6 +1,6 @@
 # From an indexed walk to a walk in the underlying graph
 
-**From an indexed walk to a walk in the underlying graph.** Let $M$ be an edge-indexed
+Let $M$ be an edge-indexed
 multigraph. An indexed walk $p$ in $M$ from $u$ to $v$ yields a walk from $u$ to $v$ in the
 underlying simple graph of $M$ by forgetting edge identities: the empty indexed walk at $w$ goes
 to the empty walk at $w$, and an indexed walk that first traverses an edge $e$ with endpoints

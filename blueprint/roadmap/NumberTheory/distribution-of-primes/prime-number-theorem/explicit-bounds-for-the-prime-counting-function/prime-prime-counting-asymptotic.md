@@ -1,6 +1,6 @@
 # Counting primes with prime subscripts
 
-**Counting primes with prime subscripts.** Let $\pi(x)$ be the number of primes at most $x$,
+Let $\pi(x)$ be the number of primes at most $x$,
 and let $\operatorname{Li}(x) = \int_2^x dt / \log t$. Then $\pi(\pi(x)) \sim x / (\log x)^2$ as
 the real number $x$ tends to infinity, and there is a constant $A > 0$ such that, as $x \to \infty$,
 

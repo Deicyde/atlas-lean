@@ -1,6 +1,6 @@
 # Series of even powers of Fibonacci polynomials at even indices
 
-**Series of even powers of Fibonacci polynomials at even indices.** Let $f_i$ be the
+Let $f_i$ be the
 Fibonacci polynomials, defined by $f_0 = 0$, $f_1 = 1$ and $f_{i+2} = x f_{i+1} + f_i$. Let
 $x > 0$ be real and let $k$ and $m$ be positive integers. If $k$ is odd, put $L = (k + 1)/2$ and
 $s_r = 2r - 1$; if $k$ is even, put $L = k/2 + 1$ and $s_r = 2r$. Then

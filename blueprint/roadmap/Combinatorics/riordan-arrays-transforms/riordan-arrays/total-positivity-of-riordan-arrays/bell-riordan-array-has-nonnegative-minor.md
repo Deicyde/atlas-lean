@@ -1,6 +1,6 @@
 # Total positivity of Bell-type Riordan arrays from a Pólya frequency series
 
-**Total positivity of Bell-type Riordan arrays from a Pólya frequency series.** Let $P$ and
+Let $P$ and
 $A$ be formal power series over $\mathbb{R}$ with $P(0) \ne 0$, write $[x^n]F$ for the
 coefficient of $x^n$ in a power series $F$, and let $r, s, t \ge 0$ be real numbers with
 $s^2 \ge 4t$. Suppose that $P$ is a Pólya frequency series, that is, every minor of the lower

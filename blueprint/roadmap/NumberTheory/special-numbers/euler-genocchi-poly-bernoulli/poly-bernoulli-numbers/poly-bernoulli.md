@@ -1,6 +1,6 @@
 # Poly-Bernoulli numbers
 
-**Poly-Bernoulli numbers.** Let $S(n, r)$ denote the Stirling numbers of the second kind. For
+Let $S(n, r)$ denote the Stirling numbers of the second kind. For
 a natural number $n$ and an integer $k$, the poly-Bernoulli number $B_n^{(k)}$ is the rational
 number given by Kaneko's explicit formula
 

@@ -1,6 +1,6 @@
 # Rerooting a link-cut tree state preserves validity
 
-**Rerooting a link-cut tree state preserves validity.** For every valid link-cut tree state
+For every valid link-cut tree state
 $s$ and every vertex $x$, the state obtained from $s$ by making $x$ the root of its represented
 tree is valid.
 

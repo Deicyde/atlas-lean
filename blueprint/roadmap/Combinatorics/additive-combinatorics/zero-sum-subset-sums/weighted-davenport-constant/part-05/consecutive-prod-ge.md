@@ -1,6 +1,6 @@
 # Consecutive weighted zero-sum constant of a product of modules
 
-**Consecutive weighted zero-sum constant of a product of modules.** Let $R$ be a ring and
+Let $R$ be a ring and
 $A \subseteq R$. For an $R$-module $P$, let $C_A(P)$ be the least positive integer $k$, if one
 exists, such that every sequence $x_1, \dots, x_k$ in $P$ has indices $s \le t$ and weights
 $a_s, \dots, a_t \in A$ with $a_s x_s + \dots + a_t x_t = 0$. If $M$ and $N$ are $R$-modules

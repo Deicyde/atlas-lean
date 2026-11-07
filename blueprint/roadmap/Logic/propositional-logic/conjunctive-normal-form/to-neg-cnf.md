@@ -1,6 +1,6 @@
 # CNF of the complement of a proposition
 
-**CNF of the complement of a proposition.** Let $\iota$ number the atoms by natural numbers.
+Let $\iota$ number the atoms by natural numbers.
 The complement CNF of a proposition $A$ is its CNF at polarity false, with the atom $a$ as the
 variable $\iota(a)$.
 

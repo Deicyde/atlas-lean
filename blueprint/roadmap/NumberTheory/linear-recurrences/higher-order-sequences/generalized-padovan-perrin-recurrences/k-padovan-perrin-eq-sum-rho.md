@@ -1,6 +1,6 @@
 # Combinatorial formula for the $k$-Padovan–Perrin numbers
 
-**Combinatorial formula for the $k$-Padovan–Perrin numbers.** Let $R$ be a commutative ring,
+Let $R$ be a commutative ring,
 let $k \in R$, and let $v \colon \mathbb{N} \to R$ satisfy $v(n + 3) = v(n + 1) + k\,v(n)$ for
 every $n$, that is, $v$ solves the Padovan–Perrin recurrence with $k_1 = 1$, $k_2 = k$, $p = 1$,
 $s = 2$. Let $\rho(m) = \rho(m, 3)$ be the Padovan–Perrin coefficient for these parameters:

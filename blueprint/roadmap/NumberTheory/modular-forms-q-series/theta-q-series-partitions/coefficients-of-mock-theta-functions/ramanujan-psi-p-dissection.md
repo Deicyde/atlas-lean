@@ -1,6 +1,6 @@
 # The p-dissection of Ramanujan's psi function
 
-**The p-dissection of Ramanujan's psi function.** Let $p$ be an odd prime, let $f(c, d)$ be
+Let $p$ be an odd prime, let $f(c, d)$ be
 Ramanujan's theta function and $\psi(q) = f(q, q^3)$. Then, as integer power series,
 $\psi(q) = \sum_{m=0}^{(p-3)/2} q^{(m^2+m)/2} f(q^{(p^2+(2m+1)p)/2}, q^{(p^2-(2m+1)p)/2}) +
 q^{(p^2-1)/8} f(q^{p^2}, q^{3p^2})$, where the last factor is $\psi(q^{p^2})$. Moreover

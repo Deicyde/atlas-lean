@@ -1,6 +1,6 @@
 # At least two Kaprekar cycles whose length is the projective order of 2
 
-**At least two Kaprekar cycles whose length is the projective order of 2.** Let $\lambda(B)$
+Let $\lambda(B)$
 denote the projective order of $2$ modulo $B$. For every odd base $B > 17$, at least $2\lambda(B)$
 points of the state space $X_B$ have minimal period exactly $\lambda(B)$ under the four-digit
 Kaprekar map $K_B$.

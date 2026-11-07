@@ -1,6 +1,6 @@
 # Weighted Cross bound for Impartial Tak penults
 
-**Weighted Cross bound for Impartial Tak penults.** Let $S$ be a penult of Impartial Tak on
+Let $S$ be a penult of Impartial Tak on
 the $n \times n$ board, with rows and columns numbered from $0$. For all natural numbers $r, c$
 with $r + 5 \le n$ and $c + 5 \le n$, consider the $5 \times 5$ window of rows $r, \dots, r + 4$
 and columns $c, \dots, c + 4$, and give each token of $S$ in the window, lying in row $i$ and

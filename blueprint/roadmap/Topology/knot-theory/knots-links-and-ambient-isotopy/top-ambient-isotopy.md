@@ -1,6 +1,6 @@
 # Topological ambient isotopy
 
-**Topological ambient isotopy.** A topological ambient isotopy of $\mathbb{R}^3$ is a family of
+A topological ambient isotopy of $\mathbb{R}^3$ is a family of
 maps $H_t : \mathbb{R}^3 \to \mathbb{R}^3$, indexed by $t \in \mathbb{R}$, together with a family
 $G_t : \mathbb{R}^3 \to \mathbb{R}^3$ such that $(t, x) \mapsto H_t(x)$ and $(t, x) \mapsto G_t(x)$
 are continuous, $G_t$ is a two-sided inverse of $H_t$ for every $t$ (so each $H_t$ is a

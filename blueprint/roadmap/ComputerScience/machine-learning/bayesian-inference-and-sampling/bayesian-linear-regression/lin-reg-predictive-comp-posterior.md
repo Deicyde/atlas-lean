@@ -1,6 +1,6 @@
 # Posterior predictive at a new input
 
-**Posterior predictive at a new input.** Let $m_0 \in \mathbb{R}$, let $s_0 > 0$ and
+Let $m_0 \in \mathbb{R}$, let $s_0 > 0$ and
 $\sigma^2 > 0$, and let $x \in \mathbb{R}^n$ and $x' \in \mathbb{R}$. Put the prior
 $N(m_0, s_0)$ (mean $m_0$, variance $s_0$) on a scalar weight $w$, and let the responses be
 independent given $w$ with $y_i \sim N(w x_i, \sigma^2)$. Then for Lebesgue-almost every

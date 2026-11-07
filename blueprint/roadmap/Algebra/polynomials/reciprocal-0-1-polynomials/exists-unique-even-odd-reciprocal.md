@@ -1,6 +1,6 @@
 # Even–odd decomposition of a reciprocal polynomial
 
-**Even–odd decomposition of a reciprocal polynomial.** Let $h \in \mathbb{Z}[x]$ be an
+Let $h \in \mathbb{Z}[x]$ be an
 irreducible reciprocal polynomial of degree $2k$ such that $h \ne g(x^2)$ for every
 $g \in \mathbb{Z}[x]$. Then there is exactly one $h_e \in \mathbb{Z}[x]$ for which there is
 exactly one $h_o \in \mathbb{Z}[x]$ for which there is exactly one natural number $\ell$

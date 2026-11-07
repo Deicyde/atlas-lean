@@ -1,6 +1,6 @@
 # Isotropic Gaussian mixtures: the weight update maximizes the weights term
 
-**Isotropic Gaussian mixtures: the weight update maximizes the weights term.** Let
+Let
 $x_1, \dots, x_N$ be $N > 0$ points of $\mathbb{R}^d$, let $\theta$ be valid parameters of a
 $K$-component isotropic Gaussian mixture in $d$ dimensions, and let $N_k = \sum_n r_{nk}$ be the
 mass of component $k$, where $r_{nk}$ is the responsibility of component $k$ for $x_n$ under

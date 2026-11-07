@@ -1,6 +1,6 @@
 # $b_{4,9}(32n + 25)$ is divisible by $4$
 
-**$b_{4,9}(32n + 25)$ is divisible by $4$.** Let $b_{4,9}(n)$ be the number of partitions of
+Let $b_{4,9}(n)$ be the number of partitions of
 $n$ with no part divisible by $4$ or by $9$. For every natural number $n$,
 $b_{4,9}(32n + 25) \equiv 0 \pmod 4$.
 

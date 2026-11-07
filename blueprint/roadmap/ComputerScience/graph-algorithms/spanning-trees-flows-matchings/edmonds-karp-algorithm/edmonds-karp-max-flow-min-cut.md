@@ -1,6 +1,6 @@
 # Edmonds-Karp computes a maximum flow and a minimum cut
 
-**Edmonds-Karp computes a maximum flow and a minimum cut.** Let $c$ be a capacity function on
+Let $c$ be a capacity function on
 the vertices $0, \dots, n-1$ with natural-number values, viewed as real capacities, and let
 $s \ne t$ be vertices. Let $f$ be the real arc flow of the flow computed by the Edmonds-Karp
 algorithm on $c$, $s$, $t$ (its positive part, viewed as real numbers), and let $S_0$ be the set

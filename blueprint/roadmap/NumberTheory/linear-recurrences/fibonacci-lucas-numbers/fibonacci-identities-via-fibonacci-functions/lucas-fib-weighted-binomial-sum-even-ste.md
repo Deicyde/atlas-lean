@@ -1,6 +1,6 @@
 # Weighted binomial sums of Lucas and Fibonacci numbers with even step
 
-**Weighted binomial sums of Lucas and Fibonacci numbers with even step.** Let $F_m$ be the
+Let $F_m$ be the
 Fibonacci numbers extended to all integers $m$ ($F_0 = 0$, $F_1 = 1$, $F_{m+2} = F_{m+1} + F_m$)
 and $L_m = F_{m-1} + F_{m+1}$ the Lucas numbers. For every natural number $n$ and all integers
 $k$, $r$ with $k$ even,

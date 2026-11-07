@@ -1,6 +1,6 @@
 # Numbers that are not comma successors
 
-**Numbers that are not comma successors.** Let $b \ge 3$ and $n \ge b^2 - 1$. Then $n$ is not
+Let $b \ge 3$ and $n \ge b^2 - 1$. Then $n$ is not
 the comma successor in base $b$ of any positive integer if and only if $n = c\, b^i$ for some
 $i \ge 2$ and some $c$ with $2 \le c \le b - 1$.
 

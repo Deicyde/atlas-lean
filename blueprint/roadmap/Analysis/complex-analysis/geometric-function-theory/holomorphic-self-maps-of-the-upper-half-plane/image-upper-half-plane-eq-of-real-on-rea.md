@@ -1,6 +1,6 @@
 # Surjectivity for half-plane self-maps that are real on the real axis
 
-**Surjectivity for half-plane self-maps that are real on the real axis.** Let
+Let
 $\mathbb{C}_{+} = \{z \in \mathbb{C} : \operatorname{Im} z > 0\}$ be the open upper half-plane and
 $\overline{\mathbb{C}_{+}} = \{z \in \mathbb{C} : \operatorname{Im} z \ge 0\}$ the closed one. Let
 $f : \mathbb{C} \to \mathbb{C}$ be continuous on $\overline{\mathbb{C}_{+}}$ with

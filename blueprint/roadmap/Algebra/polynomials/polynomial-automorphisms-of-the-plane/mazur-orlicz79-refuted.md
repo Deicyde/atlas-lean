@@ -1,6 +1,6 @@
 # Mazur–Orlicz Problem 79 has a negative answer
 
-**Mazur–Orlicz Problem 79 has a negative answer.** The claim of Problem 79 of the Scottish Book
+The claim of Problem 79 of the Scottish Book
 for the plane is false: there is a polynomial map $P$ of $\mathbb{R}^2$ to itself with a
 polynomial two-sided inverse that is not of the form $x \mapsto Ax + c$ with $A$ an invertible
 real $2 \times 2$ matrix and $c \in \mathbb{R}^2$. For example, the map

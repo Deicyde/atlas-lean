@@ -1,6 +1,6 @@
 # Reducible quadratics with coefficients in an arithmetic progression
 
-**Reducible quadratics with coefficients in an arithmetic progression.** Let $d \ge 2$ be an
+Let $d \ge 2$ be an
 integer and, for a positive integer $a$, let $A_2(x) = ax^2 + (a + d)x + (a + 2d)$ in
 $\mathbb{Z}[x]$. There is a positive integer $a$ coprime to $d$ for which $A_2$ is not
 irreducible in $\mathbb{Z}[x]$ if and only if every prime divisor of $d$ is congruent to $1$

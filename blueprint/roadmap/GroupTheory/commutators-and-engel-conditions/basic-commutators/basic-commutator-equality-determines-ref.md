@@ -1,6 +1,6 @@
 # Equal commutators of basic commutators do not determine their entries
 
-**Equal commutators of basic commutators do not determine their entries.** The Gaglione–Spellman
+The Gaglione–Spellman
 claim on equal commutators of basic commutators (Kourovka Problem 11.20) is false: writing
 $[x, y] = x^{-1} y^{-1} x y$, there are a linearly ordered type $\alpha$, a linear order $<$ on the
 formal commutators in the letters $\alpha$ that orders the letters as in $\alpha$ and puts formal

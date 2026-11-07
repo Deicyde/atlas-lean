@@ -1,6 +1,6 @@
 # Degree bound for the Rowland–Zeilberger states
 
-**Degree bound for the Rowland–Zeilberger states.** Let $p$ be a prime and let $P$ and $Q$
+Let $p$ be a prime and let $P$ and $Q$
 be Laurent polynomials in $r$ variables with integer coefficients. Write $\deg F$ for the largest
 absolute value of an exponent of a variable occurring in $F$, and $\Lambda_p$ for the operator
 that keeps the terms whose exponents are all multiples of $p$ and substitutes $x_s^p \mapsto x_s$.

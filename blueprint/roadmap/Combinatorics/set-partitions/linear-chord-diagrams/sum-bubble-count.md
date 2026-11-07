@@ -1,6 +1,6 @@
 # Total number of bubbles in linear chord diagrams
 
-**Total number of bubbles in linear chord diagrams.** For every natural number $n \ge 2$,
+For every natural number $n \ge 2$,
 let $B_{n,p}$ be the total number of bubbles of size $p$ over all linear chord diagrams on $2n$
 vertices. Then
 

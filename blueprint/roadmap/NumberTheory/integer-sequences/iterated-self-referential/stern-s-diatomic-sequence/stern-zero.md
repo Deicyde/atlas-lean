@@ -1,6 +1,6 @@
 # Stern sequence at zero
 
-**Stern sequence at zero.** The Stern sequence $s$ satisfies $s(0) = 0$.
+The Stern sequence $s$ satisfies $s(0) = 0$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Generalized hyperharmonic numbers with both indices zero
 
-**Generalized hyperharmonic numbers with both indices zero.** For every complex number $r$,
+For every complex number $r$,
 the generalized hyperharmonic number $H_0^{[r]}(0)$ equals $1$.
 
 ## Sources

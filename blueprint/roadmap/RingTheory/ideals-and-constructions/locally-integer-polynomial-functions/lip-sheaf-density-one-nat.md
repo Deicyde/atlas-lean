@@ -1,6 +1,6 @@
 # Locally integer polynomial functions on density one sets of positive integers
 
-**Locally integer polynomial functions on density one sets of positive integers.** Say that
+Say that
 a set $S$ of positive integers has natural density one if $\#(S \cap [1, x]) / x \to 1$ as the
 natural number $x$ tends to infinity, and write $\mathrm{LIP}(S)$ for the ring of locally
 integer polynomial (LIP) functions $S \to \mathbb{Z}$. Let $U$ be a set of positive integers of

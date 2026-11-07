@@ -1,6 +1,6 @@
 # Coefficient vectors for even powers of 7
 
-**Coefficient vectors for even powers of 7.** Let $(m_{i,j})$ be Garvan's matrix and
+Let $(m_{i,j})$ be Garvan's matrix and
 $x_k$ Garvan's coefficient vectors, and fix $k \ge 1$. The coefficient vectors
 $y^{(2k)}_\beta = (y^{(2k)}_{\beta,1}, y^{(2k)}_{\beta,2}, \dots)$ of Theorem 3, $\beta \ge 1$,
 are defined by $y^{(2k)}_{1,j} = x_{2k-1,j}$ and, for $\beta \ge 1$,

@@ -1,6 +1,6 @@
 # Prepending $1$ to valleyless-tieless parking functions
 
-**Prepending $1$ to valleyless-tieless parking functions.** Identify a parking function $f$
+Identify a parking function $f$
 of length $m$ with the word $(f(0) + 1, \dots, f(m-1) + 1)$. A word $(a_1, \dots, a_m)$ has a
 tie if $a_k = a_{k+1}$ for some $k$, and a valley if $a_{k-1} > a_k < a_{k+1}$ for some $k$;
 write $\mathrm{VTPF}_m$ for the set of parking functions of length $m$ with no ties and no

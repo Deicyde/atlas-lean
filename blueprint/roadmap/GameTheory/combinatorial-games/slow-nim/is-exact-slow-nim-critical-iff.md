@@ -1,6 +1,6 @@
 # $m$-critical positions of exact slow $k$-NIM with $k + 1$ piles (Theorem 1)
 
-**$m$-critical positions of exact slow $k$-NIM with $k + 1$ piles (Theorem 1).** Let $k \ge 1$
+Let $k \ge 1$
 and $m$ be natural numbers, and let $x = (x_0, \dots, x_k)$ be a position of
 $\mathrm{NIM}(k + 1, k)$, the game on $k + 1$ piles in which a move removes one stone from each
 of exactly $k$ nonempty piles. Call $x$ $m$-critical when its Smith remoteness is $m$ and no

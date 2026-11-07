@@ -1,6 +1,6 @@
 # Chen's Stirling expansion
 
-**Chen's Stirling expansion.** Let $a(m, s)$, for natural numbers $m$ and $s$, be real
+Let $a(m, s)$, for natural numbers $m$ and $s$, be real
 numbers satisfying $a(m, s + 1) = m \, a(m, s) - (m + 1) \, a(m + 1, s)$ for all $m$ and $s$.
 Then for every natural number $t$,
 

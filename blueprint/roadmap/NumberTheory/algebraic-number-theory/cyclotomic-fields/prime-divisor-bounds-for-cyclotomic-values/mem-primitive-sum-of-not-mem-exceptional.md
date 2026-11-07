@@ -1,6 +1,6 @@
 # Primitive element sums away from exceptional pairs
 
-**Primitive element sums away from exceptional pairs.** Let $q$ and $n > 1$ be coprime natural
+Let $q$ and $n > 1$ be coprime natural
 numbers, and let $\omega$ be the number of distinct prime factors of $q^n - 1$. Suppose that the
 pair $(n, \omega)$ is none of the following $33$ pairs: $(2, w)$ for $1 \le w \le 11$; $(3, w)$ for
 $2 \le w \le 7$; $(4, w)$ for $w \in \{2, 3, 4, 5, 6, 7, 9\}$; $(5, 3)$ and $(5, 5)$; $(6, w)$ for

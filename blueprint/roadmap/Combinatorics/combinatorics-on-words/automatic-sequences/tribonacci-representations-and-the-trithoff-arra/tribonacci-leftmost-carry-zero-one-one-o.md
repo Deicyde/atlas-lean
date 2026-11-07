@@ -1,6 +1,6 @@
 # Leftmost carrying of $0111$
 
-**Leftmost carrying of $0111$.** Leftmost carrying takes the word $0111$, written most
+Leftmost carrying takes the word $0111$, written most
 significant digit first, to $1000$.
 
 ## Sources

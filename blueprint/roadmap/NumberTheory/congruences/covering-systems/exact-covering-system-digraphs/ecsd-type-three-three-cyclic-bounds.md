@@ -1,6 +1,6 @@
 # Bounds on the cyclic vertices of $G(-2n + 1, -2n + a)$ when $a \equiv 2 \pmod 3$
 
-**Bounds on the cyclic vertices of $G(-2n + 1, -2n + a)$ when $a \equiv 2 \pmod 3$.** Let $a$
+Let $a$
 be an even integer with $a \equiv 2 \pmod 3$, and let $m$ be an integer such that the digraph
 $G(-2n + 1, -2n + a)$ on $\mathbb{Z}$, with an edge $x \to -2x + 1$ and an edge $x \to -2x + a$
 for every integer $x$, has a directed walk of positive length from $m$ back to $m$. If $a \ge 2$,

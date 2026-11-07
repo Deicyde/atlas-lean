@@ -1,6 +1,6 @@
 # Eulerian q-series
 
-**Eulerian q-series.** For natural numbers $k$ and $m \ge 1$, the Eulerian $q$-series is
+For natural numbers $k$ and $m \ge 1$, the Eulerian $q$-series is
 
 $$
 \sum_{n \ge 1} \frac{n^{k-1}}{(k-1)!} \, q^{mn},

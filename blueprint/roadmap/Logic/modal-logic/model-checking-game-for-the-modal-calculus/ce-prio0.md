@@ -1,6 +1,6 @@
 # Priority of the outer binder in the regression play
 
-**Priority of the outer binder in the regression play.** The starting position of the
+The starting position of the
 regression play, consisting of the formula $\mu X.\,\nu Y.\,X$, the unique world and the empty
 binder stack, has priority $1$: a $\mu$-binder position with $k$ binders on the stack has
 priority $2k + 1$, and here $k = 0$.

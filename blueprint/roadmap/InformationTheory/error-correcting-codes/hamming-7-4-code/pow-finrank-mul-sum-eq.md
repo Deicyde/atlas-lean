@@ -1,6 +1,6 @@
 # The Hamming bound is attained
 
-**The Hamming bound is attained.** Let $k$ be the dimension of the Hamming (7,4) code over
+Let $k$ be the dimension of the Hamming (7,4) code over
 $\mathbb{F}_2$. Then $2^k \cdot \sum_{i=0}^{1} \binom{7}{i} (2 - 1)^i = 2^7$: the Hamming bound
 for one error holds with equality.
 

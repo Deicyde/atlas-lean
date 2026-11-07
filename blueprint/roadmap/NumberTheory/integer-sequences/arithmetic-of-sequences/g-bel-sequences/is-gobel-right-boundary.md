@@ -1,6 +1,6 @@
 # Right boundary of the even Göbel residue walks
 
-**Right boundary of the even Göbel residue walks.** Fix a natural number $p$ and, for each
+Fix a natural number $p$ and, for each
 natural number $l$, let $\tilde g_l$ denote the Göbel residue walk for $p$ starting at $l$. A
 natural number $l_R$ is the right boundary for $p$ when $l_R$ is even, $l_R < p$,
 $\tilde g_{l_R}(p) = p$, and every even natural number $l < p$ with $\tilde g_l(p) = p$

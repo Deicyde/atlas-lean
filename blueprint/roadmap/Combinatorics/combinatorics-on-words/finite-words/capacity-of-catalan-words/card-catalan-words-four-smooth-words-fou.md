@@ -1,6 +1,6 @@
 # Catalan and smooth words of length four
 
-**Catalan and smooth words of length four.** There are $14$ Catalan words of length $4$,
+There are $14$ Catalan words of length $4$,
 $13$ smooth words of length $4$, and $7$ restricted smooth words of length $4$. Here $14$ is the
 Catalan number $C_4$, $13 = C_4 - 1$, and $7$ is the central trinomial coefficient $G_3$.
 

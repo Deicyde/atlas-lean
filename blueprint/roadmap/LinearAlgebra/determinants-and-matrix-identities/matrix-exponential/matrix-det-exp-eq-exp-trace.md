@@ -1,6 +1,6 @@
 # Determinant of the matrix exponential
 
-**Determinant of the matrix exponential.** For every complex square matrix $A$ indexed by a
+For every complex square matrix $A$ indexed by a
 finite set, $\det(e^A) = e^{\operatorname{tr} A}$, where $e^A$ is the matrix exponential. This
 identity is sometimes called Jacobi's formula.
 

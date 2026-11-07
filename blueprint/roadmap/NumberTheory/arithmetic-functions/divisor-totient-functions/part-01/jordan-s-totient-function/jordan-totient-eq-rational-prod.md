@@ -1,6 +1,6 @@
 # Euler product for Jordan's totient
 
-**Euler product for Jordan's totient.** For all natural numbers $k$ and $n \neq 0$, the Jordan
+For all natural numbers $k$ and $n \neq 0$, the Jordan
 totient function satisfies, as an identity of rational numbers,
 
 $$J_k(n) = n^k \prod_{p \mid n} \left(1 - \frac{1}{p^k}\right),$$

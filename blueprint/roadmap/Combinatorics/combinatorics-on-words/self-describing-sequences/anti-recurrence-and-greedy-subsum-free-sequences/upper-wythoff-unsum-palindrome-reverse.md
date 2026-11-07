@@ -1,6 +1,6 @@
 # The gap words are palindromes
 
-**The gap words are palindromes.** Let $g_k$ be the $k$-th gap between
+Let $g_k$ be the $k$-th gap between
 consecutive unsums (OEIS A260317), counted from zero, and let $m_0 < m_1 < \cdots$ be the
 markers, the indices $k \ge 10$ with $g_k = 2$, in increasing order. For $i \ge 1$ let $W_i$
 be the word of the gaps $g_k$ with $m_{2i-2} < k < m_{2i-1}$, in increasing order of $k$. Then

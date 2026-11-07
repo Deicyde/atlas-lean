@@ -1,6 +1,6 @@
 # Classical upper bound for the Schur–Siegel–Smyth constant
 
-**Classical upper bound for the Schur–Siegel–Smyth constant.** The Schur–Siegel–Smyth trace
+The Schur–Siegel–Smyth trace
 constant $C_{86}$, an extended real number, satisfies $C_{86} \le 2$.
 
 ## Sources

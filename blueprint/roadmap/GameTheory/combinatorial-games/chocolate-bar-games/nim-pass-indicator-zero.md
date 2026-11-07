@@ -1,6 +1,6 @@
 # The pass is unavailable from the empty position
 
-**The pass is unavailable from the empty position.** Let $s \in \mathbb{N}$ and
+Let $s \in \mathbb{N}$ and
 $m \in \mathbb{N}^s$ with $m_i > 0$ for every $i < s$. Then the pass indicator of $m$ takes the
 value $0$ at the zero tuple $(0, \dots, 0)$.
 

@@ -1,6 +1,6 @@
 # The row of a diamond in the HAMPATH emitter
 
-**The row of a diamond in the HAMPATH emitter.** Let $B$, $m$ and $i$ be natural numbers,
+Let $B$, $m$ and $i$ be natural numbers,
 write $\tau = m + i(3m+2)$ for the top vertex of diamond $i$ and $\rho_l = \tau + 1 + l$ for its
 row vertices, and encode an arc $(a, b)$ by the bits $1^a 0 1^b 0$. Let $s$ be a quiescent state
 of the emitter whose counters satisfy $P = \tau$, $M = 3m$, $L = 0$, $R = 0$, $N \le B$,

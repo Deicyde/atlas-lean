@@ -1,6 +1,6 @@
 # The basic value is attained
 
-**The basic value is attained.** Let $k$ be a natural number, let $x$ be a position on
+Let $k$ be a natural number, let $x$ be a position on
 $k + 1$ piles, and let $b = B(x)$ be its basic value. Then some $z \le x$ (componentwise) is a
 basic vector of type (A0), (A1) or (B) with parameter $b$, that is, $z$ supports $x$. Here type
 (A0) means $\sum_i z_i = kb$, $z_i \le b$ for all $i$, and $b$ and every $z_i$ are even; type

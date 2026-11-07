@@ -1,6 +1,6 @@
 # Ratios of consecutive prime ideal norms in an imaginary quadratic field tend to $1$
 
-**Ratios of consecutive prime ideal norms in an imaginary quadratic field tend to $1$.** Let
+Let
 $K$ be an imaginary quadratic field, that is, a totally complex number field of degree $2$ over
 $\mathbb{Q}$, with ring of integers $\mathcal{O}_K$. For $m \ge 1$ let $r_m$ be the least natural
 number $x$ such that at least $m$ nonzero prime ideals of $\mathcal{O}_K$ have absolute norm at

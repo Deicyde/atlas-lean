@@ -1,6 +1,6 @@
 # Subexponential upper bound for $W(3, k)$ (statement)
 
-**Subexponential upper bound for $W(3, k)$ (statement).** Write $W(3, k)$ for the van der
+Write $W(3, k)$ for the van der
 Waerden number: the least $n$ such that every red/blue colouring of $\{1, \dots, n\}$ has a red
 $3$-term or a blue $k$-term arithmetic progression (progressions have common difference
 $d > 0$). Say that $N$ forces $W(3, k)$ if every red/blue colouring of $\{1, \dots, N\}$ has a red

@@ -1,6 +1,6 @@
 # Fourth moment of weighted odd character sums
 
-**Fourth moment of weighted odd character sums.** There is a real constant $C$ such that for
+There is a real constant $C$ such that for
 every odd integer $n \ge 3$,
 
 $$\sum_{\chi \text{ odd}} \Bigl|\sum_{a=1}^{n} a\, \chi(a)\Bigr|^4 \le

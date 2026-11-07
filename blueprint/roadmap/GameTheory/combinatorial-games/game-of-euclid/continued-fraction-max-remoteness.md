@@ -1,6 +1,6 @@
 # Continued fractions with maximal optimal play in Euclid
 
-**Continued fractions with maximal optimal play in Euclid.** For natural numbers
+For natural numbers
 $a_0, \dots, a_r$ write $[a_0, \dots, a_r]$ for the continued fraction
 $a_0 + 1/(a_1 + 1/(\cdots + 1/a_r))$, and $1^j$ for a block of $j$ ones; read a positive rational
 $u/v$ in lowest terms as the position $(u, v)$ of the Euclid game. Let $n \ge 1$, $i$ and $k$ be

@@ -1,6 +1,6 @@
 # Mallows representation
 
-**Mallows representation.** For a real number $\alpha$, the Mallows representation
+For a real number $\alpha$, the Mallows representation
 $M(\alpha) = M_1(\alpha) M_2(\alpha) \cdots$ is the infinite word over $\{L, M, R\}$ that records
 the path of $\alpha$ down the Mallows tree. Fractions are written as numerator–denominator pairs.
 Start with the gap between $0/1$ and $1/1$. At step $i \ge 1$, if the current gap lies between

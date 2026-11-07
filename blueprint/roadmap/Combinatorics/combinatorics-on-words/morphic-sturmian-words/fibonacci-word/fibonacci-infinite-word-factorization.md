@@ -1,6 +1,6 @@
 # The infinite Fibonacci word as $0$ followed by the finite Fibonacci words
 
-**The infinite Fibonacci word as $0$ followed by the finite Fibonacci words.** Let $f$ be an
+Let $f$ be an
 infinite word over $\{0, 1\}$ and let $f_1, f_2, f_3, \ldots$ be finite words over $\{0, 1\}$ with
 $f_1 = 1$, $f_2 = 0$ and $f_{n+3} = f_{n+2} f_{n+1}$ for every natural number $n$, such that for
 every natural number $n$ the word $f_{n+2}$ consists of the first $|f_{n+2}|$ letters of $f$.

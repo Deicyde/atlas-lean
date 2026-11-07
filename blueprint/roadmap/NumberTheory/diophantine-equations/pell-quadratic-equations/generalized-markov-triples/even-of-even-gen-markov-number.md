@@ -1,6 +1,6 @@
 # An even generalized Markov number forces $k$ to be even
 
-**An even generalized Markov number forces $k$ to be even.** Let $k$ be a natural number. If
+Let $k$ be a natural number. If
 some $k$-generalized Markov number $b$ is even, then $k$ is even.
 
 ## Sources

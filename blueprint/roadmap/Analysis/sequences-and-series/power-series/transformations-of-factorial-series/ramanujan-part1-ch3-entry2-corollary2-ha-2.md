@@ -1,6 +1,6 @@
 # Ramanujan's series for the harmonic numbers (Chapter 3, Entry 2, Corollary 2)
 
-**Ramanujan's series for the harmonic numbers (Chapter 3, Entry 2, Corollary 2).** Let
+Let
 $H_k = \sum_{i=1}^{k} \frac{1}{i}$ be the $k$-th harmonic number. For every complex number $x$, the
 series $\sum_{k \ge 1} \frac{H_k x^k}{k!}$ and $\sum_{k \ge 1} \frac{(-1)^{k-1} x^k}{k!\, k}$
 converge absolutely, and $\sum_{k=1}^{\infty} \frac{H_k x^k}{k!} =

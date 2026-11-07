@@ -1,6 +1,6 @@
 # Counting self-dual monotone functions on $n + 2$ variables
 
-**Counting self-dual monotone functions on $n + 2$ variables.** Let $n \ge 0$ and let
+Let $n \ge 0$ and let
 $\lambda_{n+2}$ be the number of self-dual monotone Boolean functions on $n + 2$ variables. For
 a monotone Boolean function $b$ on $n$ variables let $r(b)$ be the number of monotone Boolean
 functions $z$ on $n$ variables with $b \lor b^* \le z$, where $b^*$ is the dual of $b$, $\lor$

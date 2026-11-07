@@ -1,6 +1,6 @@
 # The (6, 3) extremal number
 
-**The (6, 3) extremal number.** For $n \in \mathbb{N}$, $\mathrm{ex}_3(n)$ is the largest
+For $n \in \mathbb{N}$, $\mathrm{ex}_3(n)$ is the largest
 number of $3$-element subsets of $\{1, \dots, n\}$ such that every set of at most $6$ of these
 points contains at most $2$ of the chosen subsets.
 

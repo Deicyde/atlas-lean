@@ -1,6 +1,6 @@
 # Karush–Kuhn–Tucker conditions for inequality constraints
 
-**Karush–Kuhn–Tucker conditions for inequality constraints.** Let $E$ be a finite-dimensional
+Let $E$ be a finite-dimensional
 real normed space, let $f \colon E \to \mathbb{R}$ and $g_1, \dots, g_m \colon E \to \mathbb{R}$,
 and let $x \in E$ be a point at which $f$ and every $g_i$ are differentiable; write $D$ for
 the Fréchet derivative at $x$. Suppose that $x$ is feasible, that is $g_i(x) \le 0$ for every

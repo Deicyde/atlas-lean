@@ -1,3 +1,3 @@
 # A lattice point lies on a walk step
 
-**A lattice point lies on a walk step.** The lattice point `p` lies on the closed segment traversed by step `k`.
+The lattice point `p` lies on the closed segment traversed by step `k`.

@@ -1,6 +1,6 @@
 # Bayes' rule for densities
 
-**Bayes' rule for densities.** Let $\Theta$ be a nonempty standard Borel space, $\nu$ an
+Let $\Theta$ be a nonempty standard Borel space, $\nu$ an
 s-finite measure on $\Theta$ and $\rho$ an s-finite measure on a measurable space $\mathcal{X}$.
 Let $p : \Theta \to [0, \infty]$, $q : \Theta \times \mathcal{X} \to [0, \infty]$,
 $c : \mathcal{X} \to [0, \infty]$ and $r : \mathcal{X} \times \Theta \to [0, \infty]$ be measurable

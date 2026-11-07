@@ -1,6 +1,6 @@
 # Closed form of the Fibonacci–tribonacci–tetranacci triple sum
 
-**Closed form of the Fibonacci–tribonacci–tetranacci triple sum.** Write $F_k$, $T_k$ and
+Write $F_k$, $T_k$ and
 $Q_k$ for the Fibonacci $2$-, $3$- and $4$-step numbers, and write $\sum_{K(3,n)}$ for a sum over
 all $(k_1, k_2, k_3) \in \mathbb{N}^3$ with $k_1 + k_2 + k_3 = n$. For every natural number $n$,
 

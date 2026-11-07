@@ -1,6 +1,6 @@
 # Bounded value distribution
 
-**Bounded value distribution.** A function $f : \mathbb{C} \to \mathbb{C}$ has bounded value
+A function $f : \mathbb{C} \to \mathbb{C}$ has bounded value
 distribution if for every real $r > 0$ there is a natural number $C$ such that, for every value
 $w$ of the Riemann sphere $\mathbb{C} \cup \{\infty\}$ and every open disc of radius $r$, the
 multiplicities of $w$ as a value of $f$ at the points of any finite subset of the disc add up

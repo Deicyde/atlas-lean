@@ -1,6 +1,6 @@
 # Partitions whose odd parts are distinct
 
-**Partitions whose odd parts are distinct.** For a natural number $n$, $\mathrm{pod}(n)$ is
+For a natural number $n$, $\mathrm{pod}(n)$ is
 the number of partitions of $n$ in which every odd part occurs exactly once; the even parts are
 unrestricted.
 

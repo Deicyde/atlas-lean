@@ -1,3 +1,3 @@
 # Uniform initial law over haplotypes sums to one
 
-**Uniform initial law over haplotypes sums to one.** The initial law (uniform over the `K` haplotypes) sums to `1`.
+The initial law (uniform over the `K` haplotypes) sums to `1`.

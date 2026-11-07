@@ -1,6 +1,6 @@
 # Robust cherry lemma for neighbor joining
 
-**Robust cherry lemma for neighbor joining**: the selection step of Atteson's theorem
+The selection step of Atteson's theorem
 (Atteson 1999), with a proof after Mihaescu, Levy & Pachter (2009, Theorem 16). Let `d` be
 the path-length metric of a binary phylogenetic `X`-tree `(G, ι)` with positive edge lengths
 `w` and at least four taxa, and let `μ` be a lower bound on the lengths of the internal edges

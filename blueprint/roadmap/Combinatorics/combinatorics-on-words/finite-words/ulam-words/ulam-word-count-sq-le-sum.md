@@ -1,6 +1,6 @@
 # Square of the Ulam word count is at most a block sum
 
-**Square of the Ulam word count is at most a block sum.** For every natural number $n$,
+For every natural number $n$,
 $(\#U_n)^2 \le \sum_{i=n}^{2n} \#U_i$, where $\#U_i$ is the number of Ulam words of length $i$.
 
 ## Sources

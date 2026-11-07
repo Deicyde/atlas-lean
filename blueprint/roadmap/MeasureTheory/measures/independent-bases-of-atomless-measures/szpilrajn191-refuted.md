@@ -1,6 +1,6 @@
 # Szpilrajn's Problem 191 has a negative answer
 
-**Szpilrajn's Problem 191 has a negative answer.** The claim of Szpilrajn's Problem 191 is false:
+The claim of Szpilrajn's Problem 191 is false:
 not every convex measure possesses a base. That is, there are a measurable space $X$ and a convex
 measure $\mu$ on $X$ such that no class of subsets of $X$ is a base of $\mu$.
 

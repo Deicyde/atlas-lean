@@ -1,6 +1,6 @@
 # The square-splitting totient function
 
-**The square-splitting totient function.** Let $A(n)$ be the set of square-splitting divisors
+Let $A(n)$ be the set of square-splitting divisors
 of $n$, and let $\varphi_\star$ be any integer-valued arithmetic function with
 $\sum_{d \in A(n)} \varphi_\star(d) = n$ for every $n \ge 1$. Then $\varphi_\star$ is
 multiplicative and $\varphi_\star(1) = 1$. For every prime $p$, $\varphi_\star(p) = p - 1$, and

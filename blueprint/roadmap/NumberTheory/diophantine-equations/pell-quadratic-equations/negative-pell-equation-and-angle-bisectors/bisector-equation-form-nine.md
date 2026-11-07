@@ -1,6 +1,6 @@
 # Bisector-equation solutions from the negative Pell sequences
 
-**Bisector-equation solutions from the negative Pell sequences.** Let $d > 1$ be a natural
+Let $d > 1$ be a natural
 number such that $x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its solution in
 positive integers with $Y$ least, and define integers $f_k$ and $g_k$ by
 $f_k + g_k \sqrt{d} = (X + Y \sqrt{d})^k$ for natural numbers $k$. Let $m, n > 0$ be natural

@@ -1,6 +1,5 @@
 # Diagonalizability from a split characteristic polynomial and a squarefree minimal polynomial
 
-**Diagonalizability from a split characteristic polynomial and a squarefree minimal polynomial.**
 Let $K$ be a field and let $A$ be a square matrix over $K$ with rows and columns indexed by a
 finite type $n$. If the characteristic polynomial of $A$ splits over $K$ and the minimal
 polynomial of $A$ (that is, of the linear map $x \mapsto Ax$ on $K^n$) is squarefree, then there

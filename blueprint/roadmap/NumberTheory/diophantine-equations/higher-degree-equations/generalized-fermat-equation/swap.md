@@ -1,6 +1,6 @@
 # Swapping the first two exponents of a generalized Fermat equation
 
-**Swapping the first two exponents of a generalized Fermat equation.** For natural numbers
+For natural numbers
 $m$, $n$, $r$, if $x^m + y^n = z^r$ has a solution in nonzero integers, then so does
 $x^n + y^m = z^r$.
 

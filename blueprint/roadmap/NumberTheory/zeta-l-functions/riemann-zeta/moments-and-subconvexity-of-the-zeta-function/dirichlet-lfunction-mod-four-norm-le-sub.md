@@ -1,6 +1,6 @@
 # Subconvexity bound for the Dirichlet L-function modulo 4
 
-**Subconvexity bound for the Dirichlet L-function modulo 4.** Let $\varepsilon > 0$ and let
+Let $\varepsilon > 0$ and let
 $\chi$ be a non-principal Dirichlet character modulo $4$ (there is exactly one). Then there is a
 constant $C$ such that for all real $\sigma$ and $t$ with $1/2 \le \sigma \le 1 + \varepsilon$ and
 $|t| \ge 1$,

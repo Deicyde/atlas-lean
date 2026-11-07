@@ -1,6 +1,6 @@
 # Symmetric one-digit extensions fix the density at a rational point
 
-**Symmetric one-digit extensions fix the density at a rational point.** Let $f$ be a real
+Let $f$ be a real
 function that is continuous and nonnegative on $[0, 1]$ with $\int_0^1 f(x)\,dx = 1$. Let
 $a = (a_1, \dots, a_n)$ be a string of positive integers, let $p$ and $q$ be the upper-right and
 lower-right entries of its convergent matrix $C(a)$, so that $p/q = [0; a_1, \dots, a_n]$, and let

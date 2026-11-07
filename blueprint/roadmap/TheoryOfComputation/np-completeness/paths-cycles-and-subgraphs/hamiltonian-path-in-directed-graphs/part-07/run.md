@@ -1,6 +1,6 @@
 # Correctness and running time of the HAMPATH emitter
 
-**Correctness and running time of the HAMPATH emitter.** Let $\varphi$ be a CNF formula with
+Let $\varphi$ be a CNF formula with
 token sequence $\mathrm{toks}(\varphi)$, let $o$ be a list of bits, and let $S$ be stacks in which
 the token stack $T$ holds $\mathrm{toks}(\varphi)$ reversed, the output stack $O$ holds $o$, and
 every other stack is empty. Then for every internal bit $v$ there are an internal bit $v'$ and

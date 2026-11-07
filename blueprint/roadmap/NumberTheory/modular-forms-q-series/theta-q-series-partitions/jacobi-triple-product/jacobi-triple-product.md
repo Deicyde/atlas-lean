@@ -1,6 +1,6 @@
 # Jacobi triple product identity
 
-**Jacobi triple product identity.** For complex numbers $z \ne 0$ and $q$ with $|q| < 1$,
+For complex numbers $z \ne 0$ and $q$ with $|q| < 1$,
 the bilateral series $\sum_{n \in \mathbb{Z}} z^n q^{n^2}$ is summable, the family of factors
 $(1 - q^{2n+2})(1 + z q^{2n+1})(1 + z^{-1} q^{2n+1})$, $n \ge 0$, is multipliable, and
 

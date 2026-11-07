@@ -1,6 +1,6 @@
 # Bridge weights of a hidden Markov model
 
-**Bridge weights of a hidden Markov model.** Let $h$ be a hidden Markov model with finite state
+Let $h$ be a hidden Markov model with finite state
 set $S$, transition weights $a$ and emission weights $b$ in a semiring $R$, and let
 $x_0, x_1, \dots$ be observations. The bridge weights $B_k(t, s, u) \in R$, for
 $k, t \in \mathbb{N}$ and $s, u \in S$, are defined from the end by $B_0(t, s, u) = 1$ if $s = u$

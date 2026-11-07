@@ -1,6 +1,6 @@
 # Lemma 10: $\mathrm{rev}_n$ of the bar of $\mathrm{rev}_n(\varepsilon)$
 
-**Lemma 10: $\mathrm{rev}_n$ of the bar of $\mathrm{rev}_n(\varepsilon)$.** Let
+Let
 $(L, \tilde L)$ be a periodic Zeckendorf pair, $E$ the periodic Zeckendorf collection of $L$, and
 $E^*$ and $\tilde E^*$ the $L^*$- and $\tilde L^*$-collections. Indices start at $0$. Write $\lt _d$
 for the descending lexicographic order, $\bar\beta^{s+1}$ for the maximal $L^*$-block starting at

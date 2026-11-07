@@ -1,6 +1,6 @@
 # The expected emissions from forward-backward
 
-**The expected emissions from forward-backward.** Let $h$ be a valid hidden Markov model with
+Let $h$ be a valid hidden Markov model with
 finite state set $S$ and finite observation set $O$, let $T \in \mathbb{N}$, and let
 $x_0, \dots, x_{N-1}$ be observation sequences. For a sequence $x_n$ write $\alpha^n_t(s)$ for its
 forward variable at time $t$ and state $s$, $\beta^n_{k,t}(s)$ for its backward variable (the

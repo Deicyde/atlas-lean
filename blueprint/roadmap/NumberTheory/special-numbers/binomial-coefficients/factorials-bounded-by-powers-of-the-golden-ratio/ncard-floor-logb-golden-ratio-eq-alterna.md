@@ -1,6 +1,6 @@
 # Counting integers by their golden-ratio logarithm
 
-**Counting integers by their golden-ratio logarithm.** Let $d$ be the integer sequence with
+Let $d$ be the integer sequence with
 $d(0) = 0$, $d(1) = 1$ and $d(m) = d(m-1) + d(m-2) + (-1)^m$ for $m \ge 2$, and let $\varphi$ be
 the golden ratio. For every integer $m \ge 1$, the number of positive integers $n$ with
 $\lfloor \log_\varphi n \rfloor = m$ equals $d(m)$.

@@ -1,6 +1,6 @@
 # Vertices of the wide generalized Cohn tree are generalized Cohn triples
 
-**Vertices of the wide generalized Cohn tree are generalized Cohn triples.** Let $k$ be a
+Let $k$ be a
 natural number. For every integer $\ell$ and every path $w$, the vertex of the wide
 $k$-generalized Cohn tree $\mathrm{WGCT}(k, \ell)$ at $w$ is a $k$-generalized Cohn triple
 associated with the vertex of the wide $k$-generalized Markov tree $\mathrm{WMT}(k)$ at $w$.

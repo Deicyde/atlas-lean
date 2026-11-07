@@ -1,6 +1,6 @@
 # Generating functions for the parts of distinct $n$-color partitions
 
-**Generating functions for the parts of distinct $n$-color partitions.** Call an $n$-color
+Call an $n$-color
 partition distinct when no colored part occurs more than once, and let $C_o(D, m)$ (resp.
 $C_e(D, m)$) be the total number of parts over the distinct $n$-color partitions of $m$ with an
 odd (resp. even) number of parts. Then, as formal power series in $q$ over $\mathbb{Q}$, with

@@ -1,6 +1,6 @@
 # Extended mean squared error
 
-**Extended mean squared error.** Let $\mu$ be a probability measure on a measurable space $S$,
+Let $\mu$ be a probability measure on a measurable space $S$,
 let $W : S \to \mathbb{R}$ be an estimator and let $\theta \in \mathbb{R}$ be a target value. The
 extended mean squared error of $W$ at $\theta$ under $\mu$ is the (lower) Lebesgue integral
 $\int_S (W(x) - \theta)^2 \, d\mu(x)$ of the nonnegative squared error, computed in $[0, \infty]$.

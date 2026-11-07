@@ -1,6 +1,6 @@
 # Binomial products of series with a cubic denominator
 
-**Binomial products of series with a cubic denominator.** Let $K$ be a field of characteristic
+Let $K$ be a field of characteristic
 $0$, let $A, B, C \in K$ with $C \ne 0$, and let $D(x) = 1 + Ax + Bx^2 + Cx^3$. Suppose that
 $D(x) = \prod_{i=1}^{3} (1 - \alpha_i x)$ with $\alpha_1, \alpha_2, \alpha_3 \in K$ and that
 $2\alpha_i \ne \alpha_j + \alpha_k$ whenever $i, j, k \in \{1, 2, 3\}$ are not all equal. Let $r$

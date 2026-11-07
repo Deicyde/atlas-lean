@@ -1,6 +1,6 @@
 # The tail of an $L^\ast$-block decomposition lies in $\tilde E^\ast$
 
-**The tail of an $L^\ast$-block decomposition lies in $\tilde E^\ast$.** Let $L$ and
+Let $L$ and
 $\tilde L$ be lists of natural numbers of length at least $2$ with nonzero first entries, such
 that the periodic Zeckendorf collection $E$ of $L$ is a proper subset of the periodic Zeckendorf
 collection $\tilde E$ of $\tilde L$, and let $\tilde E^*$ be the set of nonzero coefficient

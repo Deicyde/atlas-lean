@@ -1,6 +1,6 @@
 # The full board is terminal
 
-**The full board is terminal.** Let $\alpha$ be a finite set of cells. For every predicate $E$
+Let $\alpha$ be a finite set of cells. For every predicate $E$
 on subsets of $\alpha$, the full board $\alpha$ is a terminal position of the placement game with
 ending condition $E$.
 

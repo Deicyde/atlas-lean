@@ -1,6 +1,6 @@
 # Longest progressions of absolute least residues: odd squarefree composite moduli
 
-**Longest progressions of absolute least residues: odd squarefree composite moduli.** Let
+Let
 $n > 1$ be an odd squarefree natural number that is not prime, let $P$ be its largest prime
 factor and $d = n / P$, and let $g(n)$ be the length of the longest arithmetic progression in the
 absolute least reduced residue system modulo $n$. Then

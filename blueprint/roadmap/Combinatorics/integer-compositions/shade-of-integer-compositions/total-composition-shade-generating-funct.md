@@ -1,6 +1,6 @@
 # Generating function for the total shade of compositions
 
-**Generating function for the total shade of compositions.** Let $c(n)$ be the total
+Let $c(n)$ be the total
 shade of the compositions of $n$, and let $q$ be a real number with $0 < q < 1/4$. For natural
 numbers $i_2, i_3, s_1, s_3$ put
 

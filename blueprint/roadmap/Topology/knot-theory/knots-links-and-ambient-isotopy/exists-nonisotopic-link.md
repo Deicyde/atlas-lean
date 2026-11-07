@@ -1,6 +1,6 @@
 # Non-isotopic two-component links exist
 
-**Non-isotopic two-component links exist.** There exist two oriented smooth two-component
+There exist two oriented smooth two-component
 links $L_1$ and $L_2$ in $\mathbb{R}^3$ that are not ambient isotopic as oriented links with
 ordered components: no ambient isotopy of $\mathbb{R}^3$ carries the first component of $L_1$ to
 the first component of $L_2$ and the second component of $L_1$ to the second component of $L_2$,

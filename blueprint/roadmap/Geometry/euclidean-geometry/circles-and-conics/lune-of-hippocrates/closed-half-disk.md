@@ -1,6 +1,6 @@
 # Closed half-disk on a diameter
 
-**Closed half-disk on a diameter.** Given points $p$ and $q$ of the coordinate plane and a
+Given points $p$ and $q$ of the coordinate plane and a
 property $S$ of real numbers, this is the set of points $x$ such that the squared Euclidean
 distance from $x$ to the midpoint of $p$ and $q$ is at most one quarter of the squared Euclidean
 distance from $p$ to $q$ (so $x$ lies in the closed disk with diameter $pq$), and $S$ holds of

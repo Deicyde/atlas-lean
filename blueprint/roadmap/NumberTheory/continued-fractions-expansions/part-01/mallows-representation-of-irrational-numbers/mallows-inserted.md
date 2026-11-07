@@ -1,6 +1,6 @@
 # Fractions inserted by one Mallows step
 
-**Fractions inserted by one Mallows step.** Fractions $n/m$ are written as pairs $(n, m)$ of
+Fractions $n/m$ are written as pairs $(n, m)$ of
 natural numbers. For a list of fractions $a_0, a_1, \dots, a_k$, this is the list obtained by
 taking, for $j = 0, 1, \dots, k - 1$ in turn, the two fractions $p_j, q_j$ (in this order) that
 Mallows' insertion rule inserts between $a_j$ and $a_{j+1}$, that is, the list

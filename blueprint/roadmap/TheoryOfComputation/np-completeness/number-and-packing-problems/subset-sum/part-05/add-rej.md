@@ -1,6 +1,6 @@
 # The verifier rejects a chosen block that ends in false
 
-**The verifier rejects a chosen block that ends in false.** Let $p$ and $\mathit{rest}$ be bit
+Let $p$ and $\mathit{rest}$ be bit
 lists and $z$ a bit such that $p$ is nonempty and ends in false, or $p$ is empty and $z$ is true
 (the flag $z$ records whether the bits of the block read so far end in false). Let $c$ be a bit and
 $u$ a bit list. Start the SUBSET-SUM verifier machine at the label that adds a chosen number with

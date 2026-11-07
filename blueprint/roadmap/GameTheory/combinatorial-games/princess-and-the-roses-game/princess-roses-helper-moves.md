@@ -1,6 +1,6 @@
 # Options in P&R Helper
 
-**Options in P&R Helper.** The P&R Helper game is played on triples of natural numbers with
+The P&R Helper game is played on triples of natural numbers with
 the seven moves that subtract $(1, 1, 1)$, $(1, 0, 0)$, $(1, 2, 1)$, $(1, 1, 2)$, $(0, 1, 0)$,
 $(0, 1, 1)$ or $(0, 0, 1)$. The options of a position $(x, y, z)$ are the triples
 $(x - u, y - v, z - w)$ for those moves $(u, v, w)$ with $u \le x$, $v \le y$, $w \le z$ and

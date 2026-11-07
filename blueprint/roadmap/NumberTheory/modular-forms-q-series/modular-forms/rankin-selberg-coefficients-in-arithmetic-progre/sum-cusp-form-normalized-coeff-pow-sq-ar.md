@@ -1,6 +1,6 @@
 # Sums of squared normalized coefficients at perfect powers in arithmetic progressions
 
-**Sums of squared normalized coefficients at perfect powers in arithmetic progressions.** Let
+Let
 $f$ be a normalized Hecke eigenform of weight $k \in \mathbb{Z}$ for $\mathrm{SL}_2(\mathbb{Z})$,
 with normalized Fourier coefficients $\lambda_f$, let $j \ge 2$ be an integer, and put
 $\delta = 92/597$ if $j = 2$ and $\delta = 92/(69(j-1)(j+3) + 247)$ if $j \ge 3$. Then there are

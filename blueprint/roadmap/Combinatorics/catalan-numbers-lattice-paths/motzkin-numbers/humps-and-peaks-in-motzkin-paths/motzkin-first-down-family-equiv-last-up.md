@@ -1,6 +1,6 @@
 # A bijection between first-down and even-height last-up Motzkin prefixes
 
-**A bijection between first-down and even-height last-up Motzkin prefixes.** Use the steps
+Use the steps
 $U = (1,1)$, $F = (1,0)$ and $D = (1,-1)$, and call a word in these steps a Motzkin prefix if
 none of its initial segments ends below height $0$. For every natural number $n$ there is a
 bijection between the set of pairs $(k, p)$, where $k$ is a natural number with $k + 2 \le n$ and

@@ -1,6 +1,6 @@
 # Breadth-first search with parent pointers
 
-**Breadth-first search with parent pointers.** Given a finite directed graph $G$ on a vertex
+Given a finite directed graph $G$ on a vertex
 type $V$, with ordered adjacency lists, and a source vertex $s$, this runs first-in-first-out
 breadth-first search from $s$ for $|V|$ rounds. The queue starts with $s$ at distance $0$. Each
 round tries to dequeue a vertex $u$; if it succeeds, it scans the neighbors of $u$ in

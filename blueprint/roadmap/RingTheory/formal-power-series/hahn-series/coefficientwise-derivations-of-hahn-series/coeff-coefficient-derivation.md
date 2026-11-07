@@ -1,3 +1,3 @@
 # Coefficients of the coefficientwise derivation
 
-**Coefficients of the coefficientwise derivation.** The coefficient of the lifted derivation is the derivative of that coefficient.
+The coefficient of the lifted derivation is the derivative of that coefficient.

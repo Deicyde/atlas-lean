@@ -1,6 +1,6 @@
 # Nearest-integer estimate in the Baker–Davenport reduction
 
-**Nearest-integer estimate in the Baker–Davenport reduction.** For a real number $x$ write
+For a real number $x$ write
 $\lVert x \rVert = |x - \operatorname{round}(x)|$ for the distance from $x$ to a nearest integer.
 Let $q$, $M$, $u$ be natural numbers with $u \le M$, let $v$ be an integer, and let $\kappa$ and
 $\mu$ be real numbers. If $\varepsilon = \lVert \mu q \rVert - M \lVert \kappa q \rVert$, then

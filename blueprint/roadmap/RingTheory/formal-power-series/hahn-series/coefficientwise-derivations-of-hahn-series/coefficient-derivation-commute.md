@@ -1,3 +1,3 @@
 # Commuting derivations lift to commuting coefficientwise derivations
 
-**Commuting derivations lift to commuting coefficientwise derivations.** Commuting coefficient derivations lift to commuting derivations of Hahn series.
+Commuting coefficient derivations lift to commuting derivations of Hahn series.

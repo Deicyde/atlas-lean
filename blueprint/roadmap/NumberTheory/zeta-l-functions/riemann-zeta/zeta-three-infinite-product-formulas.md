@@ -1,6 +1,6 @@
 # Kachi–Tzermias infinite products for $\zeta(3)$
 
-**Kachi–Tzermias infinite products for $\zeta(3)$.** Let $\zeta$ be the Riemann zeta function
+Let $\zeta$ be the Riemann zeta function
 and, for $n \ge 1$, put $a_n = \left(1 - \frac{1}{n+1}\right)^{(-1)^n n(n+1)/2}$. Then, as
 $m \to \infty$,
 

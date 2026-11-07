@@ -1,6 +1,6 @@
 # Upper bound for four-cycle-free subgraphs of the seven-dimensional hypercube
 
-**Upper bound for four-cycle-free subgraphs of the seven-dimensional hypercube.** Let $Q_7$
+Let $Q_7$
 be the $7$-dimensional hypercube and $C_4$ the cycle on four vertices. The largest number
 $\mathrm{ex}(Q_7, C_4)$ of edges of a subgraph of $Q_7$ that contains no copy of $C_4$ is at
 most $308$.

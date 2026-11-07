@@ -1,6 +1,6 @@
 # First terms of Gijswijt's sequence
 
-**First terms of Gijswijt's sequence.** The first nine terms of Gijswijt's sequence $A^{(1)}$
+The first nine terms of Gijswijt's sequence $A^{(1)}$
 are $1, 1, 2, 1, 1, 2, 2, 2, 3$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Two $\ell$-regular overpartitions of one
 
-**Two $\ell$-regular overpartitions of one.** For every natural number $\ell \ge 2$, the number
+For every natural number $\ell \ge 2$, the number
 $A_\ell(1)$ of overpartitions of $1$ with no part divisible by $\ell$ equals $2$: they are the
 single part $1$, without and with an overline.
 

@@ -1,4 +1,4 @@
 # Quantifier-free formulas
 
-**Quantifier-free formulas.** A formula is quantifier free if it contains no universal
+A formula is quantifier free if it contains no universal
 quantifier $\forall$.

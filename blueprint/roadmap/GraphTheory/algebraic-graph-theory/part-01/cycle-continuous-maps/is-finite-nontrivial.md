@@ -1,6 +1,6 @@
 # Finite multigraphs with at least one edge
 
-**Finite multigraphs with at least one edge.** A multigraph $G$ is finite and nontrivial
+A multigraph $G$ is finite and nontrivial
 when its set of vertices and its set of edges are both finite and it has at least one edge.
 These are the graphs on which the cycle-continuous order is considered.
 

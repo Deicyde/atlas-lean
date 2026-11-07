@@ -1,6 +1,6 @@
 # Morrison–Walker lemma on adapting families of maps to an open cover
 
-**Morrison–Walker lemma on adapting families of maps to an open cover.** Let $X$ be a compact
+Let $X$ be a compact
 topological space, $T$ a topological space, $P \subseteq \mathbb{R}^k$ a convex linear polyhedron,
 $(U_\alpha)_{\alpha \in \iota}$ a family of open subsets of $X$, and $\rho$ a partition of unity on
 $X$ indexed by $\iota$ and subordinate to $U$ (the closed support of $\rho_\alpha$ lies in

@@ -1,6 +1,6 @@
 # Binary repintegers of 18107 that are Sierpiński numbers
 
-**Binary repintegers of 18107 that are Sierpiński numbers.** For every natural number
+For every natural number
 $t \equiv 25 \pmod{56}$, the binary repinteger $18107_2^{(t)} = 18107\,(2^{15t} - 1)/(2^{15} - 1)$,
 whose binary expansion is that of $18107$ (fifteen binary digits) written $t$ times, is a
 Sierpiński number.

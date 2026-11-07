@@ -1,6 +1,6 @@
 # Two-color partitions with one color restricted to multiples
 
-**Two-color partitions with one color restricted to multiples.** For natural numbers $\ell$
+For natural numbers $\ell$
 and $n$, let $p(m)$ be the number of partitions of $m$, and define
 
 $$

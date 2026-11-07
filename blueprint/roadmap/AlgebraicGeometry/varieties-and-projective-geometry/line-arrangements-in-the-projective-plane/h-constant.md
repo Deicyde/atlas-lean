@@ -1,6 +1,6 @@
 # Harbourne constant of a line arrangement
 
-**Harbourne constant of a line arrangement.** Let $A$ be an arrangement of $d$ lines in the
+Let $A$ be an arrangement of $d$ lines in the
 projective plane over a field, let $S$ be its set of singular points, with $s$ elements, and let
 $m_p$ be the multiplicity of a point $p$ in $A$. The Harbourne constant of $A$ is the real number
 

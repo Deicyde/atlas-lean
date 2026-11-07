@@ -1,6 +1,6 @@
 # Hankel determinants of generalized hyper-Fibonacci numbers
 
-**Hankel determinants of generalized hyper-Fibonacci numbers.** Let $p, a, b$ be integers, let
+Let $p, a, b$ be integers, let
 $W^{(r)}_{p,n}$ denote the generalized hyper-Fibonacci numbers and put $\Delta = a^2 + pab - b^2$.
 For all natural numbers $r$ and $n$, the $(r+2) \times (r+2)$ Hankel matrix
 $H_{r,n} = (W^{(r)}_{p,n+i+j})_{0 \le i, j \le r+1}$ has determinant

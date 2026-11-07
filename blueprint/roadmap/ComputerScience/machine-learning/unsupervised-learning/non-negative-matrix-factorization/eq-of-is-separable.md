@@ -1,6 +1,6 @@
 # Essential uniqueness of NMF when both factors are separable
 
-**Essential uniqueness of NMF when both factors are separable.** Suppose `X = W * H`, where
+Suppose `X = W * H`, where
 `W` has a pure row for every factor (`IsSeparable Wᵀ`: for each `a` a row `i` with
 `W i · = e • e_a`, `e > 0`) and `H` has a pure column for every factor (`IsSeparable H`). Then
 every factorization `X = W' * H'` with `W', H' ≥ 0` and the same inner dimension agrees with

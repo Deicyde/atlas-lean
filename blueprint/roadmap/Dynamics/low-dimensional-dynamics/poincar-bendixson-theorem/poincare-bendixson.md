@@ -1,6 +1,6 @@
 # Poincaré–Bendixson theorem
 
-**Poincaré–Bendixson theorem.** Let $F \colon \mathbb{R}^2 \to \mathbb{R}^2$ be a continuously
+Let $F \colon \mathbb{R}^2 \to \mathbb{R}^2$ be a continuously
 differentiable vector field on the Euclidean plane, and let
 $\gamma \colon \mathbb{R} \to \mathbb{R}^2$ be a curve such that for every $t \ge 0$ the derivative
 of $\gamma$ at $t$ within $[0, \infty)$ is $F(\gamma(t))$. Let

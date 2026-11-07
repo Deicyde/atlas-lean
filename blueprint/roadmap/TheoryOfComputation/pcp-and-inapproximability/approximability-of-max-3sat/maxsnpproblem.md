@@ -1,6 +1,6 @@
 # MAXSNP problems
 
-**MAXSNP problems.** A MAXSNP problem, in the normal form of Papadimitriou and
+A MAXSNP problem, in the normal form of Papadimitriou and
 Yannakakis, is an NPO problem $M$, with value function $v$ and solution length bound $b$,
 together with natural numbers $k$ and $N$, a polynomial-time computable map $W$ sending each
 instance $x$ to a list $W(x)$ of windows, each a pair $(w, j)$ of a list

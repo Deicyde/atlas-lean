@@ -1,6 +1,6 @@
 # Condition (etar) for the seed $37$
 
-**Condition (etar) for the seed $37$.** For the seed $s_1 = 37$, the odd squarefree parts of
+For the seed $s_1 = 37$, the odd squarefree parts of
 $s_1 - 2 = 35$ and $s_1 + 2 = 39$ are $s_1^- = 35$ and $s_1^+ = 39$. Condition (etar) for
 $s_1^- = 35$ and $s_1^+ = 39$ holds for $n = 7$ and fails for $n = 1$.
 

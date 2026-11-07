@@ -1,6 +1,6 @@
 # Boolean evaluation in a finite model
 
-**Boolean evaluation in a finite model.** Given a finite set $U$ of finite sets of formulas, a
+Given a finite set $U$ of finite sets of formulas, a
 finite set $R$ of pairs of such sets and a finite set $s$ of formulas, the Boolean value of a
 formula at $s$ is defined by recursion on the formula: an atom $p$ is true iff $p \in s$; $\bot$ is
 false; $\varphi \to \psi$ is true iff $\varphi$ is false or $\psi$ is true at $s$; and $\Box\varphi$

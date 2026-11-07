@@ -1,6 +1,6 @@
 # Recurrence linking central trinomial coefficients and Motzkin numbers
 
-**Recurrence linking central trinomial coefficients and Motzkin numbers.** For $n \in \mathbb{N}$
+For $n \in \mathbb{N}$
 let $T_n$ be the central trinomial coefficient, the coefficient of $X^n$ in $(1 + X + X^2)^n$.
 Let $M : \mathbb{N} \to \mathbb{N}$ be any function with
 $M_n = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} C_k$ for every $n$, where $C_k$ is the

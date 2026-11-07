@@ -1,6 +1,6 @@
 # Sums of expectations over distinct tuples tend to one
 
-**Sums of expectations over distinct tuples tend to one.** Let $f \in \mathbb{Z}[x, y]$ have
+Let $f \in \mathbb{Z}[x, y]$ have
 partial derivatives $f_x$ and $f_y$, and for a prime $p$ let $C_f(\mathbb{F}_p)$ be the set of
 pairs of integers $0 \le r, s < p$ with $p \mid f(r, s)$. Suppose that there is a natural number
 $P_0$ such that for every prime $p \ge P_0$ and all integers $x, y$, the integers $f(x, y)$,

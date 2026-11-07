@@ -1,6 +1,6 @@
 # Minimal system
 
-**Minimal system.** Let $X$ be a compact metric space and $T$ a homeomorphism of $X$. The
+Let $X$ be a compact metric space and $T$ a homeomorphism of $X$. The
 system $(X, T)$ is minimal when there is no closed set $K \subseteq X$ that is nonempty, different
 from $X$ and invariant, meaning $T(K) = K$.
 

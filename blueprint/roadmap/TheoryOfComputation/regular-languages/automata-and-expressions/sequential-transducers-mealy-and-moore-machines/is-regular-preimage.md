@@ -1,6 +1,6 @@
 # Inverse sequential transduction preserves regular languages
 
-**Inverse sequential transduction preserves regular languages.** Let $S$ be a sequential
+Let $S$ be a sequential
 transducer with finitely many states, input alphabet $I$ and output alphabet $O$, and let $L$ be
 a regular language over $O$. Then the preimage of $L$ under $S$, the set of words over $I$ that
 $S$ translates to some word of $L$, is regular.

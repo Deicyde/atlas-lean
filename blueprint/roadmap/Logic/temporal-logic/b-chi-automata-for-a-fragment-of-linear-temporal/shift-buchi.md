@@ -1,6 +1,6 @@
 # The shift of a Büchi automaton
 
-**The shift of a Büchi automaton.** Let $A$ be a Büchi automaton over the alphabet of sets of
+Let $A$ be a Büchi automaton over the alphabet of sets of
 atoms. Its shift is the Büchi automaton whose states are the states of $A$ together with one new
 state $\bot$, whose only start state is $\bot$, and whose accepting states are the accepting states
 of $A$. Its transitions are exactly the following: on every letter, from $\bot$ to each start state

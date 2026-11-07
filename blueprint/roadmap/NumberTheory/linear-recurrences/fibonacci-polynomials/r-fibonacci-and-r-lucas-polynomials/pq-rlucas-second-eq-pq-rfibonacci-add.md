@@ -1,6 +1,6 @@
 # Splitting formula for second-kind (p, q)-Lucas polynomials
 
-**Splitting formula for second-kind (p, q)-Lucas polynomials.** Let $K$ be a field, let
+Let $K$ be a field, let
 $r \ge 1$, $s$ and $m$ be natural numbers, and let $x, y, p, q \in K$ with $p \ne 0$ and
 $q \ne 0$. Write $U_n(x, y)$ for the $(p, q)$-analogue of the $r$-Fibonacci polynomial with
 parameters $p, q, m$, and $\mathbb{V}_n(x, y)$ for the second-kind $(p, q)$-analogue of the

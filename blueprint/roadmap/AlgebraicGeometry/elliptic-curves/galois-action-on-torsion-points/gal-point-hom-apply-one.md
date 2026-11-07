@@ -1,6 +1,6 @@
 # The identity acts trivially on points
 
-**The identity acts trivially on points.** Let $W$ be a Weierstrass curve over $\mathbb{Q}$
+Let $W$ be a Weierstrass curve over $\mathbb{Q}$
 and let $W(\overline{\mathbb{Q}})$ be the group of nonsingular points of $W$ with coordinates in
 the algebraic closure $\overline{\mathbb{Q}}$, together with the point at infinity. For $\sigma$
 in the absolute Galois group $G_{\mathbb{Q}}$ and $P \in W(\overline{\mathbb{Q}})$, let

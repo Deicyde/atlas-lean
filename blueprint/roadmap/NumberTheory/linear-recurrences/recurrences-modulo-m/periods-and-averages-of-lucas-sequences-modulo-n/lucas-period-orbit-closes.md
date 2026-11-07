@@ -1,6 +1,6 @@
 # Closing of the period orbit
 
-**Closing of the period orbit.** Let $U = U(P, Q)$ be the Lucas sequence with integer
+Let $U = U(P, Q)$ be the Lucas sequence with integer
 parameters $P$ and $Q \ne 0$ (the paper's $U(a, b)$ with $a = P$ and $b = -Q$). For $m \ge 0$ let
 $\pi_U(m)$ be the least $r > 0$ with $U_r \equiv 0$ and $U_{r+1} \equiv 1 \pmod m$ (congruence
 modulo $0$ being equality), or $0$ if there is none, and let $\pi_U^i$ be its $i$-th iterate, with

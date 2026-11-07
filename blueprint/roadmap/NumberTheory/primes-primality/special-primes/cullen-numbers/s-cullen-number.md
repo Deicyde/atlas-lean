@@ -1,6 +1,6 @@
 # The $s$-Cullen value
 
-**The $s$-Cullen value.** For natural numbers $s$ and $n$, the $s$-Cullen value is
+For natural numbers $s$ and $n$, the $s$-Cullen value is
 $C_{n,s} = n s^n + 1$.
 
 JIS concept: `jis_sem_281a433c6542caee86b48369`; defining statement:

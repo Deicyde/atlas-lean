@@ -1,6 +1,6 @@
 # Sift-up with comparison and swap counts
 
-**Sift-up with comparison and swap counts.** Given an array $a$ of length $|a|$ over a
+Given an array $a$ of length $|a|$ over a
 linearly ordered type and an index $i$, this computes the sift-up of $a$ at $i$ together
 with a cost $(c, s) \in \mathbb{N} \times \mathbb{N}$, where $c$ counts value comparisons
 and $s$ counts swaps. If $i \ge |a|$ or $i = 0$, the result is $a$ with cost $(0, 0)$.

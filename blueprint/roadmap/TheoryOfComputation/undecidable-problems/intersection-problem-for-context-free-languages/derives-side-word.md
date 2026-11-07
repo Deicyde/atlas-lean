@@ -1,6 +1,6 @@
 # The construction of derivations
 
-**The construction of derivations.** Let $P$ be a list of dominoes, $\sigma$ a map assigning a
+Let $P$ be a list of dominoes, $\sigma$ a map assigning a
 word over $\alpha$ to each domino, and $G$ the context-free grammar of the side grammar of $P$ for
 $\sigma$, with start nonterminal $S$ and terminals $\alpha \oplus \mathbb{N}$ (letters and
 indices). For every nonempty sequence $i_1, \dots, i_n$ of indices, each less than the length of

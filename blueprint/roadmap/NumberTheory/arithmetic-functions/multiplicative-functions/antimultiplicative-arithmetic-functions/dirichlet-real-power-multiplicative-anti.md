@@ -1,6 +1,6 @@
 # Real powers preserve multiplicativity and antimultiplicativity
 
-**Real powers preserve multiplicativity and antimultiplicativity.** Let $L$ denote the
+Let $L$ denote the
 Rearick logarithm. Let $f$ and $F$ be real arithmetical functions with $f(1) = F(1) = 1$, and let
 $\alpha$ be a real number with $L(F) = \alpha L(f)$. If $f$ is multiplicative, then $F$ is
 multiplicative, and if $f$ is antimultiplicative, then $F$ is antimultiplicative. Moreover, every

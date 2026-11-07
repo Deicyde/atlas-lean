@@ -1,6 +1,6 @@
 # Start of the period of generalized Fermat numbers modulo the square of a prime
 
-**Start of the period of generalized Fermat numbers modulo the square of a prime.** For
+For
 natural numbers $a$, $b$ and $k$ write $F_k(a, b) = a^{b^k} + 1$. Let $a, b \ge 2$, let $p$ be a
 prime, and let $n_0$ be the least natural number with $p^2 \mid F_{n_0}(a, b)$. Say that the
 sequence $(F_k(a, b))_k$ is periodic modulo $p^2$ from index $m$ if there is a $T > 0$ with

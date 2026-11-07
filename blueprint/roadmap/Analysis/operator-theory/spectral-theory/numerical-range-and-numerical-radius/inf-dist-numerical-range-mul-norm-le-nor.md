@@ -1,6 +1,6 @@
 # Lower bound from the numerical range
 
-**Lower bound from the numerical range.** Let $H$ be a complex Hilbert space with inner
+Let $H$ be a complex Hilbert space with inner
 product $\langle \cdot, \cdot \rangle$, conjugate-linear in the first argument and linear in the
 second, and let $T : H \to H$ be a bounded linear operator. Let
 $N(T) = \{\langle \psi, T\psi \rangle : \psi \in H,\ \|\psi\| = 1\} \subseteq \mathbb{C}$ be the

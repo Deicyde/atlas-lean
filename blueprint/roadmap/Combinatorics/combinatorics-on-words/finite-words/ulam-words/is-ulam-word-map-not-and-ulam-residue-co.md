@@ -1,6 +1,6 @@
 # Complement symmetry of Ulam words
 
-**Complement symmetry of Ulam words.** For a word $w$ over $\{0, 1\}$, let $\bar w$ be its
+For a word $w$ over $\{0, 1\}$, let $\bar w$ be its
 complement (every letter swapped) and let $\pi(w)$ be the integer whose binary expansion is $w$,
 most significant letter first. If $w$ is an Ulam word of length $n$, then $\bar w$ is an Ulam
 word and $\pi(\bar w) + \pi(w) = 2^n - 1$. Moreover, for all natural numbers $N$ and $n$ and every

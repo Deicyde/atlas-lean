@@ -1,6 +1,6 @@
 # Fano's inequality, general form
 
-**Fano's inequality, general form.** Let $\alpha$ and $\beta$ be finite nonempty sets with
+Let $\alpha$ and $\beta$ be finite nonempty sets with
 $|\alpha| \ge 2$, let $p : \alpha \times \beta \to \mathbb{R}$ satisfy $p(a, b) > 0$ for all
 $a, b$ and $\sum_{a, b} p(a, b) = 1$, and let $g : \beta \to \alpha$. Put
 $p_Y(b) = \sum_a p(a, b)$, let $P_e = \sum_b \sum_{a \ne g(b)} p(a, b)$ be the probability that

@@ -1,6 +1,6 @@
 # Moment generating function of the law of the square of a standard normal
 
-**Moment generating function of the law of the square of a standard normal.** Let $\gamma$
+Let $\gamma$
 be the standard Gaussian measure on $\mathbb{R}$ (mean $0$, variance $1$) and let $\nu$ be its
 image under $x \mapsto x^2$. For every real $t$, $\int_{\mathbb{R}} e^{t y} \, d\nu(y) =
 1/\sqrt{1 - 2t}$.

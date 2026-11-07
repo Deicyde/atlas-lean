@@ -1,6 +1,6 @@
 # Order of $2$ modulo a product of coprime odd numbers
 
-**Order of $2$ modulo a product of coprime odd numbers.** Let $m_1$ and $m_2$ be coprime odd
+Let $m_1$ and $m_2$ be coprime odd
 natural numbers, and write $\omega(m)$ for the multiplicative order of $2$ modulo $m$. Then
 $\omega(m_1 m_2) = \operatorname{lcm}(\omega(m_1), \omega(m_2))$.
 

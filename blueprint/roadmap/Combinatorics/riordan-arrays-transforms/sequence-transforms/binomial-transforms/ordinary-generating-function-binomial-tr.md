@@ -1,6 +1,6 @@
 # Ordinary generating function of the binomial transform
 
-**Ordinary generating function of the binomial transform.** Let $a : \mathbb{N} \to \mathbb{R}$
+Let $a : \mathbb{N} \to \mathbb{R}$
 be a real sequence with ordinary generating function $A(X) = \sum_n a_n X^n \in \mathbb{R}[[X]]$.
 Then the ordinary generating function of the binomial transform
 $n \mapsto \sum_{k=0}^{n} \binom{n}{k} a_k$ of $a$ equals

@@ -1,6 +1,6 @@
 # Level count of D-nodes when the binary digit is zero
 
-**Level count of D-nodes when the binary digit is zero.** Let $n$ and $i$ be natural numbers
+Let $n$ and $i$ be natural numbers
 such that the binary digit $n_i$ of $n$ (the coefficient of $2^i$ in the binary expansion of
 $n$) equals $0$. Then the level count of D-nodes is $\lambda_i(n) = n \bmod 2^i$.
 

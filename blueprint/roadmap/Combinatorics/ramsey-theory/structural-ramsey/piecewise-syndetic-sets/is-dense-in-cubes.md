@@ -1,6 +1,6 @@
 # Density in subcubes
 
-**Density in subcubes.** Let $d \in \mathbb{N}$ and let $C, M \subseteq \mathbb{N}^t$. The set
+Let $d \in \mathbb{N}$ and let $C, M \subseteq \mathbb{N}^t$. The set
 $C$ is $d$-dense in $M$ when every subcube of $\mathbb{N}^t$ of side $d$ that is contained in $M$
 meets $C$.
 

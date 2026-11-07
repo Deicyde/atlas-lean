@@ -1,6 +1,6 @@
 # Finitely many classes of solutions of a general Pell equation
 
-**Finitely many classes of solutions of a general Pell equation.** Let $d > 0$ be an integer
+Let $d > 0$ be an integer
 that is not a perfect square, let $\varepsilon$ be the fundamental solution of $x^2 - dy^2 = 1$,
 viewed as a unit of $\mathbb{Z}[\sqrt d]$, and let $z \ne 0$ be an integer such that
 $x^2 - dy^2 = z$ has an integral solution. Then there is a finite set $S$ of integral solutions

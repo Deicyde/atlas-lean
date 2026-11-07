@@ -1,6 +1,6 @@
 # Values of small Fibonacci complement words
 
-**Values of small Fibonacci complement words.** The Fibonacci complement values of the
+The Fibonacci complement values of the
 digit words $1$, $100$, $001$ and $010$ (most significant digit first) are $-1$, $-2$, $1$ and
 $2$, respectively.
 

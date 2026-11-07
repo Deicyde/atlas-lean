@@ -1,6 +1,6 @@
 # Brent's level schedule
 
-**Brent's level schedule.** Let $G$ be a computation DAG and $p \ge 1$. For each $d$ let
+Let $G$ be a computation DAG and $p \ge 1$. For each $d$ let
 $L_d$ be the number of tasks of depth $d$ and $o_d = \sum_{e < d} \lceil L_e / p \rceil$, and for
 each task $v$ let $r(v)$ be the number of tasks of the same depth as $v$ with a smaller number.
 Brent's level schedule is the schedule of $G$ on $p$ processors that runs each task $v$ at step

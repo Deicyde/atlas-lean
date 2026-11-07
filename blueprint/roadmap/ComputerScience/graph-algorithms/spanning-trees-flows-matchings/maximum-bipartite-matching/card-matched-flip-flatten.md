@@ -1,6 +1,6 @@
 # Flipping disjoint augmenting paths matches at least one more vertex
 
-**Flipping disjoint augmenting paths matches at least one more vertex.** Let $\mu$ be a
+Let $\mu$ be a
 partner array and let $P_1, \dots, P_n$, with $n \ge 1$, be augmenting paths for $\mu$, all for
 the same number $k$ of search rounds, such that no right vertex occurs twice in the concatenation
 $P_1 P_2 \cdots P_n$. Then flipping this concatenation in $\mu$ gives a partner array with at

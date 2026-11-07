@@ -1,6 +1,6 @@
 # $p$-regular overpartitions are almost always divisible by $2^j$
 
-**$p$-regular overpartitions are almost always divisible by $2^j$.** Let $p$ be an odd prime,
+Let $p$ be an odd prime,
 let $j \ge 1$, and let $A_p(n)$ be the number of overpartitions of $n$ with no part divisible by
 $p$. Then
 

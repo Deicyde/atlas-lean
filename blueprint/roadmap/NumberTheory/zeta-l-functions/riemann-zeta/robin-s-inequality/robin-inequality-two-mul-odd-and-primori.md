@@ -1,6 +1,6 @@
 # Robin's inequality for $2n$ with $n \ge 620$ odd and for primorials above $30$
 
-**Robin's inequality for $2n$ with $n \ge 620$ odd and for primorials above $30$.** Let
+Let
 $\sigma(N)$ denote the sum of the divisors of $N$ and $\gamma$ the Euler–Mascheroni constant. For
 every odd natural number $n \ge 620$, Robin's inequality
 $\sigma(2n) < e^{\gamma} \cdot 2n \log \log (2n)$ holds. For every natural number $m$ whose

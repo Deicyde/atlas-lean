@@ -1,6 +1,6 @@
 # A gap in the possible sumset sizes
 
-**A gap in the possible sumset sizes.** Let $G$ be a torsion-free additive commutative
+Let $G$ be a torsion-free additive commutative
 group and let $h$ and $k \ge 4$ be natural numbers. For every $k$-element set $A \subseteq G$,
 the $h$-fold sumset $hA$ (the set of sums of $h$ elements of $A$) does not satisfy
 $hk - h + 2 \le |hA| \le hk - 1$.

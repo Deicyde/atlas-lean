@@ -1,6 +1,6 @@
 # Higher-dimensional continuous Turán numbers are monotone in the side length
 
-**Higher-dimensional continuous Turán numbers are monotone in the side length.** For every
+For every
 set $P \subseteq \mathbb{R}^d$ and all real numbers $m \le n$,
 $\mathrm{opx}(m, P, d) \le \mathrm{opx}(n, P, d)$.
 

@@ -1,6 +1,6 @@
 # Interchange of limits and derivatives on a closed interval
 
-**Interchange of limits and derivatives on a closed interval.** Let $a < b$ be real
+Let $a < b$ be real
 numbers, and let $f_n, f_n' : \mathbb{R} \to \mathbb{R}$ for $n \in \mathbb{N}$ and
 $g, g' : \mathbb{R} \to \mathbb{R}$ be functions. Suppose that for every $n$ and every
 $x \in [a, b]$, $f_n$ is differentiable at $x$ (two-sided, also at the endpoints) with

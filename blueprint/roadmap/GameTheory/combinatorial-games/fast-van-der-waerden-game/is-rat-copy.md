@@ -1,6 +1,6 @@
 # Copies of finite sets of rationals
 
-**Copies of finite sets of rationals.** Let $A$ and $B$ be finite sets of rational numbers.
+Let $A$ and $B$ be finite sets of rational numbers.
 $B$ is a copy of $A$ if there are rationals $a > 0$ and $b$ such that
 $B = aA + b = \{ax + b : x \in A\}$.
 

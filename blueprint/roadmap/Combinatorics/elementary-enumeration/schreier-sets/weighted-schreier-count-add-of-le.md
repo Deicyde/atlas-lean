@@ -1,6 +1,6 @@
 # Weighted Schreier counts equal twice a Fibonacci number for small offsets
 
-**Weighted Schreier counts equal twice a Fibonacci number for small offsets.** Let
+Let
 $a_{k,n}$ be the weighted Schreier count and let $F_n$ denote the Fibonacci numbers, with
 $F_0 = 0$ and $F_1 = 1$. For all $k, \ell \ge 0$ with $k \ge \ell + 2$, we have
 $a_{k,k+\ell} = 2F_{k+\ell}$.

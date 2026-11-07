@@ -1,6 +1,6 @@
 # Lower bound for $\log F_9(n)$
 
-**Lower bound for $\log F_9(n)$.** Let $w_9$ be the table of divisors $d$ of $Q_9 = 210$
+Let $w_9$ be the table of divisors $d$ of $Q_9 = 210$
 paired with their Möbius values $\varepsilon$, and for a natural number $n$ let
 
 $$\log F_9(n) = \sum_{(d, \varepsilon) \in w_9}

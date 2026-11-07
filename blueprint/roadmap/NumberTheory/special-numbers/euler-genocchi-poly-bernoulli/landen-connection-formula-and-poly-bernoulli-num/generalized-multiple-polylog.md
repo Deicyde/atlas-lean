@@ -1,6 +1,6 @@
 # Kamano's generalized multiple polylogarithm
 
-**Kamano's generalized multiple polylogarithm.** Let $g = (g_0, g_1, \dots, g_s)$ be Landen
+Let $g = (g_0, g_1, \dots, g_s)$ be Landen
 data, where $g_0$ has rows $(1, -1)$ and $(c_0, d_0)$ and $g_i$ has rows $(a_i, b_i)$ and
 $(c_i, d_i)$, and let $\beta, \gamma \in \mathbb{R}^s$. For a matrix $h$ with rows $(a, b)$ and
 $(c, d)$ put $G_h(u) = \frac{c}{a - c u} - \frac{d}{b - d u}$, a fraction with zero numerator and

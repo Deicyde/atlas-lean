@@ -1,6 +1,6 @@
 # Functions whose ones lie in a given set
 
-**Functions whose ones lie in a given set.** A function $f : \mathbb{C} \to \mathbb{C}$ has
+A function $f : \mathbb{C} \to \mathbb{C}$ has
 all its ones in a set $m \subseteq \mathbb{C}$ if every $z \in \mathbb{C}$ with $f(z) = 1$ lies
 in $m$.
 

@@ -1,6 +1,6 @@
 # Toeplitz–Hessenberg determinants with Catalan entries
 
-**Toeplitz–Hessenberg determinants with Catalan entries.** Write $\det(a_0; a_1, \dots, a_n)$
+Write $\det(a_0; a_1, \dots, a_n)$
 for the determinant of the $n \times n$ Toeplitz–Hessenberg matrix whose entry in row $i$ and
 column $j$ is $a_{i+1-j}$ for $j \le i + 1$ and $0$ above the superdiagonal (so $a_0$ fills the
 superdiagonal and $a_1, \dots, a_n$ the first column); for $n = 0$ it is $1$. Let $C_n$ be the

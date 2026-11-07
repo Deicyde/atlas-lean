@@ -1,6 +1,6 @@
 # Correctness of the accept generator, with its explicit time bound
 
-**Correctness of the accept generator, with its explicit time bound.** Let $L$ be a layout
+Let $L$ be a layout
 with label block size $A$ and $K$ stacks, and let $n_1, a, k_1, e, T, H$ be natural numbers with
 $n_1 \le A$, $k_1 < K$ and $H > 0$. Start the accept generator for $L$, $n_1$, $a$, $k_1$, $e$ at
 its start label, with internal state false, $T$ and $H$ in unary on its counters $T_n$ and $H_s$,

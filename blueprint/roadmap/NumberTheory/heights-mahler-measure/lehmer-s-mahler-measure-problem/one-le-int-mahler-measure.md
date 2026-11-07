@@ -1,6 +1,6 @@
 # Nonzero integer polynomials have Mahler measure at least one
 
-**Nonzero integer polynomials have Mahler measure at least one.** If
+If
 $f \in \mathbb{Z}[X]$ is a nonzero polynomial, then its Mahler measure satisfies $M(f) \ge 1$.
 
 Indeed, $M(f) = |a| \prod_i \max(1, |\alpha_i|)$, where the leading coefficient $a$ of $f$ is a

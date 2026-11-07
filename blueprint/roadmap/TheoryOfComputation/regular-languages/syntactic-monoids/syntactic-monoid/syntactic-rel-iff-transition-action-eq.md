@@ -1,6 +1,6 @@
 # Syntactic equivalence via transition actions
 
-**Syntactic equivalence via transition actions.** Let $M$ be a DFA over an alphabet $\Sigma$
+Let $M$ be a DFA over an alphabet $\Sigma$
 that is accessible (every state is reached from the start state by some word) and
 state-separated (distinct states have distinct continuation languages), and let $L$ be the
 language accepted by $M$. Then two words $x, y \in \Sigma^*$ are syntactically equivalent for $L$

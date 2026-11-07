@@ -1,3 +1,3 @@
 # The ν unfolding
 
-**The ν unfolding**: `ν X. φ ≡ φ[ν X. φ / X]`.
+`ν X. φ ≡ φ[ν X. φ / X]`.

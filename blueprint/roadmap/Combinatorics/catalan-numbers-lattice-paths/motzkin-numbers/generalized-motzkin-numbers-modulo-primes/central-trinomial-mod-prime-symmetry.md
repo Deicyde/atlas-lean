@@ -1,6 +1,6 @@
 # Mirror symmetry of central trinomial coefficients modulo a prime
 
-**Mirror symmetry of central trinomial coefficients modulo a prime.** Let $a, b$ be integers
+Let $a, b$ be integers
 and let $T_n$ be the constant term of $(a x^{-1} + b + a x)^n$. For every prime $p > 2$ and every
 natural number $k \le (p - 1)/2$,
 

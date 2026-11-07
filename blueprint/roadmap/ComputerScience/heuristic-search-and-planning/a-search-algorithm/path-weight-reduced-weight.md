@@ -1,6 +1,6 @@
 # Reduced weights telescope along paths
 
-**Reduced weights telescope along paths.** Let $G$ be a directed graph on the vertices
+Let $G$ be a directed graph on the vertices
 $\{0, \dots, n-1\}$ with natural edge weights $w$, let $h$ be a consistent heuristic with natural
 values, and let $w_h(x, y) = w(x, y) + h(y) - h(x)$ be the reduced weight, with the subtraction
 truncated at $0$. For all vertices $u$ and $v$ and every nonempty list of vertices

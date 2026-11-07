@@ -1,6 +1,6 @@
 # Catalan polynomial identity, Bernstein form
 
-**Catalan polynomial identity, Bernstein form.** Let $C_m = \binom{2m}{m}/(m+1)$ denote the
+Let $C_m = \binom{2m}{m}/(m+1)$ denote the
 $m$-th Catalan number. For every natural number $n$ and every complex $x$,
 
 $$\sum_{k=0}^{n} \binom{n}{k} 2^{-k} C_{k+1} (1-x)^k x^{n-k} =

@@ -1,6 +1,6 @@
 # DAG shortest-path distances are shortest-path weights
 
-**DAG shortest-path distances are shortest-path weights.** Let $E$ be a list of
+Let $E$ be a list of
 integer-weighted directed edges on the vertices $\{0, \dots, n-1\}$ and $s$ a source vertex.
 Suppose the DAG shortest-path algorithm on $E$ from $s$ succeeds and returns a finite distance
 $d \in \mathbb{Z}$ for a vertex $t$. Then some path from $s$ to $t$ in $E$ has weight $d$, and

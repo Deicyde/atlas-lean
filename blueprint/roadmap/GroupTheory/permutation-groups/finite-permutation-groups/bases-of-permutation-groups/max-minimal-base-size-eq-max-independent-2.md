@@ -1,6 +1,6 @@
 # Kourovka Problem 16.45 has a negative answer
 
-**Kourovka Problem 16.45 has a negative answer.** It is not true that $b(G) = \mu'(G)$ for every
+It is not true that $b(G) = \mu'(G)$ for every
 finite group $G$, where $b(G)$ is the largest size of a minimal base of $G$ over all actions of $G$
 on a set, and $\mu'(G)$ is the largest size of an independent subset of $G$.
 

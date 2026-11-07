@@ -1,6 +1,6 @@
 # NS property
 
-**NS property.** A function $h : \mathbb{N} \to \mathbb{N}$ has the *NS property* if it is
+A function $h : \mathbb{N} \to \mathbb{N}$ has the *NS property* if it is
 monotone (weakly increasing) and, for all $z, z' \in \mathbb{N}$ and every natural number
 $i \ge 1$, $\lfloor z / 2^i \rfloor = \lfloor z' / 2^i \rfloor$ implies
 $\lfloor h(z) / 2^{i-1} \rfloor = \lfloor h(z') / 2^{i-1} \rfloor$.

@@ -1,6 +1,6 @@
 # The theta identity for the second Euler product
 
-**The theta identity for the second Euler product.** Write
+Write
 $f_k = \prod_{i \ge 1} (1 - q^{ki})$ for the Euler products, as integer power series in $q$. Then
 
 $$f_2^2 = f_4 \left(1 + 2 \sum_{n \ge 1} (-1)^n q^{2n^2}\right).$$

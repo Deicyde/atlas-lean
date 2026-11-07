@@ -1,6 +1,6 @@
 # Denominator of the top coefficient on a circuit
 
-**Denominator of the top coefficient on a circuit.** Let $f : \mathbb{Z} \to \mathbb{Z}$, and
+Let $f : \mathbb{Z} \to \mathbb{Z}$, and
 for a finite set $Y \subseteq \mathbb{Z}$ write $f_Y \in \mathbb{Q}[x]$ for the interpolation
 polynomial of $f$ on $Y$. Let $X \subseteq \mathbb{Z}$ be a finite circuit for $f$: $f_X$ does not
 have integer coefficients, but $f_{X \setminus \{a\}}$ has integer coefficients for every

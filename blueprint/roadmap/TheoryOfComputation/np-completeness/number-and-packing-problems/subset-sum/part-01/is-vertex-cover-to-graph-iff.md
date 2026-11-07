@@ -1,6 +1,6 @@
 # Vertex covers in terms of the pair bits
 
-**Vertex covers in terms of the pair bits.** Let $n \in \mathbb{N}$, let $b$ be a list of
+Let $n \in \mathbb{N}$, let $b$ be a list of
 booleans with one entry for each pair in the list of vertex pairs $(i, j)$, $i < j < n$, and let
 $G$ be the graph on the vertices $0, \dots, n - 1$ encoded by the pair bits $b$. Let $s$ be a
 finite set of vertices of $G$ and $S$ a finite set of natural numbers such that each vertex $i$

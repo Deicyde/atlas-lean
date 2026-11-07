@@ -1,6 +1,6 @@
 # Shape of the generalized Cohn matrices for $\ell = -k$
 
-**Shape of the generalized Cohn matrices for $\ell = -k$.** Let $k$ be a natural number and
+Let $k$ be a natural number and
 $w$ a path, and suppose that the middle fraction $n/d$ of the vertex of the Farey tree at $w$
 satisfies $0 < n < d$. Let $(a, b, c)$ be the vertex of the $k$-generalized Markov tree
 $\mathrm{MT}(k)$ at $w$, and let $C$ be the middle matrix of the vertex of the $k$-generalized

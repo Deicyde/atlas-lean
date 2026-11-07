@@ -1,6 +1,6 @@
 # Counting subgroups by order and by index
 
-**Counting subgroups by order and by index.** In a finite abelian group $G$, for every
+In a finite abelian group $G$, for every
 natural number $k$ the number of subgroups of order $k$ equals the number of subgroups of
 index $k$.
 

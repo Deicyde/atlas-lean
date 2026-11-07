@@ -1,6 +1,6 @@
 # Hadamard product of two Fibonacci-type series
 
-**Hadamard product of two Fibonacci-type series.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $a, b \in R$, and let $n \ge 2$ be a natural number. For each $k$, let $f_k$ be the coefficient of
 $x^k$ in $1/(1 - ax - x^2)$ and $g_k$ the coefficient of $x^k$ in $1/(1 - bx - x^n)$, the
 inverses taken in $R[[x]]$. Then the Hadamard product $\sum_{k \ge 0} f_k g_k x^k$ equals

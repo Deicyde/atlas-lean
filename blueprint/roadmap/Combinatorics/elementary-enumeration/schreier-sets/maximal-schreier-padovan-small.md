@@ -1,6 +1,6 @@
 # First values of the Padovan-like sequences of maximal Schreier sets
 
-**First values of the Padovan-like sequences of maximal Schreier sets.** For
+For
 $n = 0, 1, \dots, 7$, the Padovan-like sequence $a^{(m)}_{1,2,n}$ of maximal Schreier sets takes
 the values $0, 0, 1, 0, 1, 1, 1, 2$, and $a^{(m)}_{2,1,n}$ takes the values
 $0, 1, 0, 0, 1, 1, 1, 2$.

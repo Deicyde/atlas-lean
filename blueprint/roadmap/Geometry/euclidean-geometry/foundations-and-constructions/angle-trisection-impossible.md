@@ -1,6 +1,6 @@
 # Impossibility of angle trisection
 
-**Impossibility of angle trisection.** Let "constructible" be any property of real numbers such
+Let "constructible" be any property of real numbers such
 that a real number $x$ is constructible exactly when there are $n \ge 0$ and subfields
 $K_0 \subseteq K_1 \subseteq \dots \subseteq K_n$ of $\mathbb{R}$ with $K_0 = \mathbb{Q}$ (the
 smallest subfield of $\mathbb{R}$), $x \in K_n$, and, for each $i < n$, some $b \in K_{i+1}$ with

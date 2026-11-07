@@ -1,6 +1,6 @@
 # Second Griffiths inequality (GKS II)
 
-**Second Griffiths inequality (GKS II).** For the ferromagnetic Ising model on a finite graph
+For the ferromagnetic Ising model on a finite graph
 with `β ≥ 0` and `h ≥ 0`, spin correlations are positively correlated: `⟨σ_A⟩ ⟨σ_B⟩ ≤ ⟨σ_A σ_B⟩
 = ⟨σ_{A ∆ B}⟩`.
 

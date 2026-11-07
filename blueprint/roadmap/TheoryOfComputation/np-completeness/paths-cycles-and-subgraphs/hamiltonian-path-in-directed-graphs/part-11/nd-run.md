@@ -1,6 +1,6 @@
 # The repeat scan of the Hamiltonian path verifier
 
-**The repeat scan of the Hamiltonian path verifier.** For a list $p$ of natural numbers
+For a list $p$ of natural numbers
 write $\mathrm{enc}(p)$ for its witness encoding: each entry in unary (that many copies of
 `true`) followed by `false`. Let $a$ be a natural number and $q$, $d$ lists of natural numbers.
 Suppose that the verifier's stacks hold, as bit symbols with the first bit on top, the bits of

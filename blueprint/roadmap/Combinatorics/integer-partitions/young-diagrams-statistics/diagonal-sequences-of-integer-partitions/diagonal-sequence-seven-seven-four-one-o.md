@@ -1,6 +1,6 @@
 # Diagonal sequence of $(7, 7, 4, 1, 1, 1)$
 
-**Diagonal sequence of $(7, 7, 4, 1, 1, 1)$.** The diagonal sequence of the partition
+The diagonal sequence of the partition
 $(7, 7, 4, 1, 1, 1)$ takes the values $0, 1, 2, 3, 4, 4, 4, 2, 1, 0$ at the indices
 $0, 1, \dots, 9$. This is the paper's running example.
 

@@ -1,6 +1,6 @@
 # Typing the polymorphic identity applied to falsity
 
-**Typing the polymorphic identity applied to falsity.** Write $\bot$ for
+Write $\bot$ for
 $\Pi (P : \mathrm{Prop}).\, P$. In the empty context, the application of the polymorphic
 identity $\lambda (A : \mathrm{Prop}).\, \lambda (x : A).\, x$ to $\bot$ has type
 $\Pi (x : \bot).\, \bot$.

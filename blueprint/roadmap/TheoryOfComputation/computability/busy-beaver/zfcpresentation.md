@@ -1,6 +1,6 @@
 # Proof-checker presentation of a ZFC-like theory
 
-**Proof-checker presentation of a ZFC-like theory.** A ZFC-like presentation consists of a
+A ZFC-like presentation consists of a
 formal theory $T$, given by a provability predicate on sentence codes in $\mathbb{N}$, together
 with a Boolean proof checker $\mathrm{check}(p, s)$ on pairs of natural numbers, such that the
 following hold. A sentence code $s$ is provable in $T$ if and only if $\mathrm{check}(p, s)$ is true

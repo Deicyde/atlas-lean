@@ -1,6 +1,6 @@
 # Terms of a $\sigma$-silent sequence for odd $\sigma \ge 5$
 
-**Terms of a $\sigma$-silent sequence for odd $\sigma \ge 5$.** Let $\sigma \ge 5$ be an odd
+Let $\sigma \ge 5$ be an odd
 integer, let $x, y, z : \mathbb{Z} \to \mathbb{Z}$ be bi-infinite integer sequences, and write
 $K_a(x)_b$ for the extended continuant of order $a$ with start index $b$. Suppose that for every
 natural number $i$, $K_i(x)_0 = K_i(y)_0$, $K_{i-1}(x)_1 = K_{i-1}(y)_1$,

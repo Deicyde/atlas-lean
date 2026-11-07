@@ -1,6 +1,6 @@
 # Cycle-weighted exponential formula for $r$-cycle permutations
 
-**Cycle-weighted exponential formula for $r$-cycle permutations.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra, $x, q \in R$, and let $r \ge 2$ be a natural number. For a permutation
 $\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$ for its number of excedances (indices $i$ with
 $\sigma(i) > i$) and $c(\sigma)$ for its number of cycles, fixed points included, and let

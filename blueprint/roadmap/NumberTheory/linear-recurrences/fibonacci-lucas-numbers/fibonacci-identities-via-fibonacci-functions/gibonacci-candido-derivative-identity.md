@@ -1,6 +1,6 @@
 # Cubic gibonacci identity from Candido's identity
 
-**Cubic gibonacci identity from Candido's identity.** Let $G : \mathbb{Z} \to \mathbb{R}$ be
+Let $G : \mathbb{Z} \to \mathbb{R}$ be
 a gibonacci sequence, that is, $G_{j+2} = G_{j+1} + G_j$ for every integer $j$. Then for every
 integer $k$,
 

@@ -1,6 +1,6 @@
 # Number of $D$-nodes of a full binary tree
 
-**Number of $D$-nodes of a full binary tree.** A $D$-node of a full binary tree is an
+A $D$-node of a full binary tree is an
 interior node whose two subtrees have different numbers of leaves. The number of $D$-nodes of a
 full binary tree is the number of its interior nodes that are $D$-nodes.
 

@@ -1,6 +1,6 @@
 # Napoleon's theorem
 
-**Napoleon's theorem.** Let $A$, $B$, $C$ be pairwise distinct, non-collinear points of the
+Let $A$, $B$, $C$ be pairwise distinct, non-collinear points of the
 Euclidean plane $\mathbb{R}^2$, and let $A_2$, $B_2$, $C_2$ be points with
 $|BA_2| = |CA_2| = |BC|$, $|CB_2| = |AB_2| = |CA|$ and $|AC_2| = |BC_2| = |AB|$, such that $A_2$
 and $A$ lie strictly on opposite sides of the line $BC$, $B_2$ and $B$ lie strictly on opposite

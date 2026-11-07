@@ -1,6 +1,6 @@
 # Different parts in a residue class and even-minus-odd partition counts
 
-**Different parts in a residue class and even-minus-odd partition counts.** Let $m$, $r$ and
+Let $m$, $r$ and
 $n$ be natural numbers with $r < m$, and for $k \ge 0$ let $a_{r,m}(k)$ be the sum, over all
 partitions of $k$, of the different parts congruent to $r$ modulo $m$, each counted once per
 partition whatever its multiplicity. Let $p_{e-o}(k) = \sum_{\mu} (-1)^{\ell(\mu)}$, the sum over

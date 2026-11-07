@@ -1,6 +1,6 @@
 # Dumas irreducibility criterion
 
-**Dumas irreducibility criterion.** Let $p$ be a prime, write $v_p$ for the $p$-adic
+Let $p$ be a prime, write $v_p$ for the $p$-adic
 valuation on $\mathbb{Q}$, and let $f = a_0 + a_1 x + \dots + a_n x^n \in \mathbb{Z}[x]$ have
 degree $n \ge 1$, with $a_0 \ne 0$ and $a_n \ne 0$. Suppose that no integer $k > 1$ dividing $n$
 divides $v_p(a_0) - v_p(a_n)$, that is, $\gcd(v_p(a_0) - v_p(a_n), n) = 1$, and that for every

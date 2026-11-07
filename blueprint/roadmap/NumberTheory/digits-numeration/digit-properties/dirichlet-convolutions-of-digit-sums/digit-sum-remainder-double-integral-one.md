@@ -1,6 +1,6 @@
 # The double remainder integral vanishes at $1$
 
-**The double remainder integral vanishes at $1$.** For every natural number $q$, let $J$ be
+For every natural number $q$, let $J$ be
 the remainder of the Trollope–Delange formula in base $q$ and
 $L(x) = \int_1^x \frac{1}{u} \int_1^u \frac{J(v)}{v^2} \, dv \, du$. Then $L(1) = 0$.
 

@@ -1,6 +1,6 @@
 # Lucas–Lehmer test with a general seed
 
-**Lucas–Lehmer test with a general seed.** Let $n \ge 3$ be an odd natural number, let
+Let $n \ge 3$ be an odd natural number, let
 $M_n = 2^n - 1$, and let $s_1$ be an integer. Define $s_{k+1} = s_k^2 - 2$ for $k \ge 1$. If the
 Jacobi symbols satisfy $\left(\frac{s_1 + 2}{M_n}\right) = -1$ and
 $\left(\frac{s_1 - 2}{M_n}\right) = 1$, then $M_n$ is prime if and only if $M_n$ divides

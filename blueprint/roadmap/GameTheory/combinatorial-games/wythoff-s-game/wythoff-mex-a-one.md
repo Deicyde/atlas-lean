@@ -1,6 +1,6 @@
 # The term $a_1$ of the mex sequence
 
-**The term $a_1$ of the mex sequence.** Let $\ell \ge 1$, let $K^\ell$ be Wythoff's game in
+Let $\ell \ge 1$, let $K^\ell$ be Wythoff's game in
 which the positions $(x, y)$ with $x + y \le \ell$ are terminal, and let $(a_n)$ be the mex
 sequence of $K^\ell$. Then $a_1 = \ell + 2$.
 

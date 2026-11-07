@@ -1,6 +1,6 @@
 # Genocchi–Lucas expansion of $(x + \beta)^m$
 
-**Genocchi–Lucas expansion of $(x + \beta)^m$.** Let $\beta = (1 - \sqrt{5})/2$, and for every
+Let $\beta = (1 - \sqrt{5})/2$, and for every
 natural number $n$ let
 
 $$

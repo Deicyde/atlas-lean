@@ -1,6 +1,6 @@
 # Digitally robust composite numbers
 
-**Digitally robust composite numbers.** A natural number $N$ is a digitally robust composite if
+A natural number $N$ is a digitally robust composite if
 it is composite (greater than $1$ and not prime), coprime to $10$, and each of the following
 numbers is greater than $1$ and not prime: the result of replacing the base-ten digit of $N$ in
 any position $i$ by any digit $d < 10$ other than $\lfloor N / 10^{i} \rfloor \bmod 10$; the

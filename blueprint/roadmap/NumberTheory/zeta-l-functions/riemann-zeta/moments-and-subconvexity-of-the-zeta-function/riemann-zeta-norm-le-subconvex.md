@@ -1,6 +1,6 @@
 # Subconvexity bound for the Riemann zeta function
 
-**Subconvexity bound for the Riemann zeta function.** For every $\varepsilon > 0$ there is
+For every $\varepsilon > 0$ there is
 a constant $C$ such that for all real $\sigma$ and $t$ with $1/2 \le \sigma \le 1 + \varepsilon$
 and $|t| \ge 1$,
 

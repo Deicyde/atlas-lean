@@ -1,6 +1,6 @@
 # Thue–Morse sequence
 
-**Thue–Morse sequence.** The Thue–Morse sequence $t_0 t_1 t_2 \cdots$ over $\{0, 1\}$ is
+The Thue–Morse sequence $t_0 t_1 t_2 \cdots$ over $\{0, 1\}$ is
 indexed from $0$, and $t_n = 1$ exactly when the binary expansion of $n$ has an odd number of
 digits equal to $1$; otherwise $t_n = 0$.
 

@@ -1,6 +1,6 @@
 # Couveignes: number fields have small models
 
-**Couveignes: number fields have small models.** There is a positive integer $Q$ such that for
+There is a positive integer $Q$ such that for
 every natural number $n \ge Q$ and every number field $K$ of degree $n$ over $\mathbb{Q}$, with
 discriminant $d_K$ and root discriminant $\delta_K = |d_K|^{1/n}$, there are natural numbers $r$
 and $d$ with $r \le Q \log n$, $d \le Q \log n$ and $\binom{d + r}{r} \le Q n \log n$, and

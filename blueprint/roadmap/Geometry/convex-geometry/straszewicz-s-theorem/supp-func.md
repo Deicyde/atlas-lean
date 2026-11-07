@@ -1,6 +1,6 @@
 # Support function
 
-**Support function.** For a set $K$ in a real normed space $E$, the support function of $K$
+For a set $K$ in a real normed space $E$, the support function of $K$
 sends a continuous linear functional $\ell$ on $E$ to the supremum $\sup_{x \in K} \ell(x)$ of the
 values of $\ell$ on $K$.
 

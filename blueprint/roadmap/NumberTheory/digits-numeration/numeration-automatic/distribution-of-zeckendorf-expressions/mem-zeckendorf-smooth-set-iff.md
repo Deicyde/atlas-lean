@@ -1,6 +1,6 @@
 # Membership in the set $U$
 
-**Membership in the set $U$.** Let $L$ and $\tilde L$ be lists of natural numbers and let
+Let $L$ and $\tilde L$ be lists of natural numbers and let
 $\tilde Q = (\tilde Q_k)$ be a sequence of real numbers. Let $\tilde E^*$ be the collection $E^*$
 determined by $\tilde L$, let $\bar E^*$ be the closure $\bar E^*$ determined by $L$, and let $U$
 be the image of $\tilde E^* \setminus \bar E^*$ under the map

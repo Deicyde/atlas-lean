@@ -1,6 +1,6 @@
 # Weakest liberal precondition
 
-**Weakest liberal precondition.** For a command $c$ and an assertion $Q$, the weakest
+For a command $c$ and an assertion $Q$, the weakest
 liberal precondition of $c$ with respect to $Q$ is the assertion that holds in a state $s$
 exactly when every state $t$ in which an execution of $c$ from $s$ terminates, under the
 big-step semantics, satisfies $Q$.

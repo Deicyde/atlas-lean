@@ -1,6 +1,6 @@
 # Stem–circle intersections of two lollipops
 
-**Stem–circle intersections of two lollipops.** For a point $c = (a, b) \in \mathbb{R}^2$, a
+For a point $c = (a, b) \in \mathbb{R}^2$, a
 radius $r > 0$ and an angle $\theta \in \mathbb{R}$, the lollipop with center $c$, radius $r$ and
 stem direction $(\cos\theta, \sin\theta)$ consists of the circle
 $\{(x, y) \in \mathbb{R}^2 : (x - a)^2 + (y - b)^2 = r^2\}$ and the stem

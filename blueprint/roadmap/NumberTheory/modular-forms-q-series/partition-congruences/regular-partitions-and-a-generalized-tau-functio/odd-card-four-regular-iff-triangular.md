@@ -1,6 +1,6 @@
 # Parity of the $4$-regular partition function
 
-**Parity of the $4$-regular partition function.** For a positive integer $n$, let $R_4(n)$ be
+For a positive integer $n$, let $R_4(n)$ be
 the number of partitions of $n$ with no part divisible by $4$. Then $R_4(n)$ is odd if and only if
 $n$ is a triangular number, that is, $n = m(m + 1)/2$ for some integer $m \ge 0$.
 

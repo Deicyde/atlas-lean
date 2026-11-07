@@ -1,6 +1,6 @@
 # Interval plus integer progression starting inside the interval is not MSTD
 
-**Interval plus integer progression starting inside the interval is not MSTD.** Let
+Let
 $I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$, as finite
 sets of reals. For natural numbers $n \ge 3$, $m \ge 2$, $d \ge 2$ and $x \le n - 1$, the set
 $I_n \cup J(x, m, d)$ is not an MSTD set.

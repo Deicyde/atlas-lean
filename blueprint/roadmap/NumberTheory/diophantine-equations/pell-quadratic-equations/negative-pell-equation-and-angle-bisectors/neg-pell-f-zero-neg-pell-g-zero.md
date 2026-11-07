@@ -1,6 +1,6 @@
 # Initial values of the negative Pell sequences
 
-**Initial values of the negative Pell sequences.** For every natural number $d$, the
+For every natural number $d$, the
 sequences $f_n$ and $g_n$ of the negative Pell equation $x^2 - d y^2 = -1$ satisfy $f_0 = 1$ and
 $g_0 = 0$.
 

@@ -1,6 +1,6 @@
 # Exponential specialization
 
-**Exponential specialization.** Let $\mathbb{Q}[[x_1, x_2, \dots]]$ be the ring of formal
+Let $\mathbb{Q}[[x_1, x_2, \dots]]$ be the ring of formal
 power series in the variables $x_1, x_2, \dots$ with rational coefficients: its elements are the
 formal sums $f = \sum_\alpha c_\alpha x^\alpha$, where $\alpha = (\alpha_1, \alpha_2, \dots)$
 runs over the sequences of nonnegative integers with only finitely many nonzero terms,

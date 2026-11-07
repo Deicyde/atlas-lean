@@ -1,6 +1,6 @@
 # Cyclic shift maximizes three-guess solves among inductive strategies
 
-**Cyclic shift maximizes three-guess solves among inductive strategies.** Let $n \ge 4$ and let
+Let $n \ge 4$ and let
 $S$ be an inductive strategy of length $n$ whose component $S[n]$ is not the rotation
 $i \mapsto i + 1 \pmod n$. Then strictly fewer permutations of $\{0, \dots, n-1\}$ are guessed in
 exactly three guesses with $S$ than with the cyclic shift strategy.

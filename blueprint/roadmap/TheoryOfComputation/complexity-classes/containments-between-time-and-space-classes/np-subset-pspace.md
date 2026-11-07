@@ -1,6 +1,6 @@
 # NP is contained in PSPACE
 
-**NP is contained in PSPACE.** Every decision problem in NP also belongs to PSPACE, the class
+Every decision problem in NP also belongs to PSPACE, the class
 of decision problems decidable in polynomial space.
 
 ## Sources

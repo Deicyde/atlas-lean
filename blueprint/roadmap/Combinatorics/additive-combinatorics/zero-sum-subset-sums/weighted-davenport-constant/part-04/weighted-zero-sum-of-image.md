@@ -1,6 +1,6 @@
 # Lifting weighted zero sums along a coprime factor
 
-**Lifting weighted zero sums along a coprime factor.** Let $d$ and $n'$ be coprime natural
+Let $d$ and $n'$ be coprime natural
 numbers, put $n = d n'$, and let $f : \mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n'\mathbb{Z}$ be
 reduction modulo $n'$. Let $A \subseteq \mathbb{Z}/n\mathbb{Z}$ and
 $A' \subseteq \mathbb{Z}/n'\mathbb{Z}$ with $A' \subseteq f(A)$, and let

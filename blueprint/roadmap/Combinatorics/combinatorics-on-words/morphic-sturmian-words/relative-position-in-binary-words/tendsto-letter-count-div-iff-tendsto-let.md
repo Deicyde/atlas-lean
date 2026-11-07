@@ -1,6 +1,6 @@
 # Letter frequency and growth of letter positions
 
-**Letter frequency and growth of letter positions.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be
+Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be
 an infinite word over the letters $a$ and $b$ in which both letters occur infinitely often, and
 let $\alpha$ be a letter. Write $\#_\alpha(m)$ for the number of occurrences of $\alpha$ among
 $\ell_0, \ldots, \ell_{m-1}$, and for $n \ge 1$ write $p_\alpha(n)$ for the position of the

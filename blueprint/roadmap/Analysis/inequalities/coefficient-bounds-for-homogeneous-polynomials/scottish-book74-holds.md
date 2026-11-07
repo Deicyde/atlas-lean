@@ -1,6 +1,6 @@
 # Scottish Book Problem 74: the coefficient bound holds
 
-**Scottish Book Problem 74: the coefficient bound holds.** Let $n \ge 1$, let $a_k$ be real
+Let $n \ge 1$, let $a_k$ be real
 coefficients indexed by multi-indices $k = (k_1, \dots, k_n) \in \mathbb{N}^n$, and let
 $P(t) = \sum_{k_1 + \cdots + k_n = n} a_k \, t_1^{k_1} \cdots t_n^{k_n}$ be the corresponding
 homogeneous polynomial of degree $n$ on $\mathbb{R}^n$. If $|P(t)| \le 1$ for every

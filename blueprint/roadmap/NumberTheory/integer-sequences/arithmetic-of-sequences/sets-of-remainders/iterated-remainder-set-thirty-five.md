@@ -1,6 +1,6 @@
 # Iterated remainder sets of 35
 
-**Iterated remainder sets of 35.** The iterated remainder sets of $35$ satisfy
+The iterated remainder sets of $35$ satisfy
 $S_6(35) = \{0\}$ and $S_7(35) = \emptyset$.
 
 ## Sources

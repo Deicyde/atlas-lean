@@ -1,6 +1,6 @@
 # Satisfaction of LTL formulas on ω-words
 
-**Satisfaction of LTL formulas on ω-words.** Let $v$ be a valuation that says which atoms are
+Let $v$ be a valuation that says which atoms are
 true at each letter, and for an ω-word $w$ and a natural number $k$ let $w^{(k)}$ be the suffix
 $i \mapsto w(k + i)$. Whether $w$ satisfies an LTL formula $\varphi$ under $v$, written
 $w \models \varphi$, is defined by recursion on $\varphi$: an atom $a$ holds when $v$ makes $a$

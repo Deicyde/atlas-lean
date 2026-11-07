@@ -1,6 +1,6 @@
 # Pushed-fill forcing
 
-**Pushed-fill forcing.** Let $L$ be a layout with $A$ label/state variables, $K$ stacks and
+Let $L$ be a layout with $A$ label/state variables, $K$ stacks and
 $g$ symbol codes, let $\mathrm{sa}, \mathrm{pl}, \mathrm{cn}, \mathrm{pu}$ be situation tables and
 $N, T, H \in \mathbb{N}$, and write $W = A + KHg$, $X[t, x] = tW + x$ and
 $C[t, k, j, x] = tW + A + (kH + j)g + x$. If the assignment $a$ satisfies the cell-shift family

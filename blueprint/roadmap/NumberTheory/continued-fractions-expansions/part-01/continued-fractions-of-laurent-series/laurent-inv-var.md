@@ -1,6 +1,6 @@
 # The variable $x$ of $K((x^{-1}))$
 
-**The variable $x$ of $K((x^{-1}))$.** Let $K$ be a field. Formal Laurent series in $x^{-1}$
+Let $K$ be a field. Formal Laurent series in $x^{-1}$
 over $K$ are realized as Laurent series $\sum_n c_n X^n$ in $X = x^{-1}$, and the variable $x$
 is the series $X^{-1}$, with coefficient $1$ at $X^{-1}$ and $0$ elsewhere.
 

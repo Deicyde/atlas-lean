@@ -1,6 +1,6 @@
 # The language $a^n b^n c^n$ is not context-free
 
-**The language $a^n b^n c^n$ is not context-free.** Over the three-letter alphabet $\{a, b, c\}$
+Over the three-letter alphabet $\{a, b, c\}$
 (the letters $0, 1, 2$), the language of the words $a^n b^n c^n$ for $n \in \mathbb{N}$ is not
 context-free.
 

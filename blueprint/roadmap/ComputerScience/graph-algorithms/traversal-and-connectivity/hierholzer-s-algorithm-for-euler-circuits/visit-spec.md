@@ -1,6 +1,6 @@
 # Contract of Hierholzer's recursion
 
-**Contract of Hierholzer's recursion.** Let $G$ be a finite directed multigraph, let $R$
+Let $G$ be a finite directed multigraph, let $R$
 assign to each vertex $u$ a list $R(u)$ of remaining out-neighbours, and let $E(R)$ be the list
 of remaining edge occurrences, one pair $(u, w)$ for each entry $w$ of $R(u)$. Let $v$ and $t$ be
 vertices, $\mathit{acc}$ a list of vertices and $n$ a natural number with $|E(R)| < n$, and

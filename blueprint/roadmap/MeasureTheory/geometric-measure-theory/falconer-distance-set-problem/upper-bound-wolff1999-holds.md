@@ -1,6 +1,6 @@
 # Wolff's upper bound for the planar Falconer threshold
 
-**Wolff's upper bound for the planar Falconer threshold.** The planar Falconer distance
+The planar Falconer distance
 threshold, the infimum of the $s \in [0, 2]$ such that every compact set
 $E \subseteq \mathbb{R}^2$ with Hausdorff dimension greater than $s$ has a distance set
 $\{|x - y| : x, y \in E\}$ of positive Lebesgue measure, is at most $4/3$.

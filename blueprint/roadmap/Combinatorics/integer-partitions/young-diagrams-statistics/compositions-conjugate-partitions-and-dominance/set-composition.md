@@ -1,6 +1,6 @@
 # Ordered set partition
 
-**Ordered set partition.** Let S be a finite set and let k∈ℕ. An
+Let S be a finite set and let k∈ℕ. An
 ordered set partition of S into k blocks is an ordered
 tuple
 

@@ -1,6 +1,6 @@
 # Ballot's Lemma 3: the three divisibilities persist modulo $c_1 c_2 c_3$
 
-**Ballot's Lemma 3: the three divisibilities persist modulo $c_1 c_2 c_3$.** Let
+Let
 $\varepsilon_1, \varepsilon_2, \varepsilon_3 \in \{1, -1\}$, let $c_1, c_2, c_3$ be pairwise coprime
 positive integers, let $\varepsilon = \varepsilon_1 \varepsilon_2 \varepsilon_3$, and let $g \ne 0$
 be an integer such that $c_i g$ divides

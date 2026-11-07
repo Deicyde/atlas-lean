@@ -1,6 +1,6 @@
 # Basic properties of lucky cars
 
-**Basic properties of lucky cars.** Let $n \ge 1$ and let $w$ be a Stirling permutation of
+Let $n \ge 1$ and let $w$ be a Stirling permutation of
 order $n$, read as a parking function of length $2n$. Then (a) car $1$ is lucky; (b) the first
 car $i$ with $w_i = 1$ is lucky; (c) the number of lucky cars of $w$ is at least $1$ and at
 most $n$.

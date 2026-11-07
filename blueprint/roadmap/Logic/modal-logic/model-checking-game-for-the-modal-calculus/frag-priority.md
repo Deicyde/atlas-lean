@@ -1,6 +1,6 @@
 # Priorities in the totalized fragment game
 
-**Priorities in the totalized fragment game.** In the totalized fragment game, every embedded
+In the totalized fragment game, every embedded
 position $(\varphi, w)$ of a fixpoint-free formula $\varphi$ at a world $w$ has priority $0$, the
 absorbing winning state has priority $0$, and the absorbing losing state has priority $1$.
 

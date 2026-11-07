@@ -1,6 +1,6 @@
 # The minimal generating set as the least Frobenius-preserving subset
 
-**The minimal generating set as the least Frobenius-preserving subset.** Let $n$ be a natural
+Let $n$ be a natural
 number and let $a_1, \dots, a_n$ and $b_1, \dots, b_n$ be natural numbers with $0 < a_i < b_i$
 for $1 \le i \le n$ and $\gcd(a_i, b_j) = 1$ whenever $1 \le j \le i \le n$; let
 $C = \{c_0, \dots, c_n\}$ be the set of terms of their compound sequence and $S$ the additive

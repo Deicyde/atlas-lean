@@ -1,6 +1,6 @@
 # Word of the empty index
 
-**Word of the empty index.** The word of the empty index is the empty word.
+The word of the empty index is the empty word.
 
 ## Sources
 

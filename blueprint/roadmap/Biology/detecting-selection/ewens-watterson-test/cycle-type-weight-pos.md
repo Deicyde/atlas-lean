@@ -1,3 +1,3 @@
 # Positivity of the cycle-type weight
 
-**Positivity of the cycle-type weight.** The cycle-type weight is positive.
+The cycle-type weight is positive.

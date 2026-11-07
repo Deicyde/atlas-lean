@@ -1,6 +1,6 @@
 # Maximal Kaprekar cycle length in odd bases
 
-**Maximal Kaprekar cycle length in odd bases.** Let $B > 3$ be odd, let $K_B$ be the
+Let $B > 3$ be odd, let $K_B$ be the
 four-digit Kaprekar map and $X_B$ its state space, and let $\lambda(B)$ be the projective order
 of $2$ modulo $B$. Every point of $X_B$ that is periodic for $K_B$ has minimal period at most
 $(B - 1)/2$. Moreover, some point of $X_B$ has minimal period exactly $(B - 1)/2$ under $K_B$

@@ -1,6 +1,6 @@
 # Borwein's eta–Lambert correspondence
 
-**Borwein's eta–Lambert correspondence.** Let $(a_n)$ and $(b_n)$ be sequences of complex
+Let $(a_n)$ and $(b_n)$ be sequences of complex
 numbers and let $C$ and $K$ be real numbers with $|a_n| \le C n^K$ and $|b_n| \le C n^K$ for every
 $n \ge 1$. Let $\eta(s) = \sum_{n \ge 1} (-1)^{n-1} n^{-s}$ be the Dirichlet eta function. Then
 $\eta(s) \sum_{n \ge 1} a_n n^{-s} = \sum_{n \ge 1} b_n n^{-s}$ for every real number

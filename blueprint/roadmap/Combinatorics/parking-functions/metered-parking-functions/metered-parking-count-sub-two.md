@@ -1,6 +1,6 @@
 # Closed form for (m-2)-metered parking functions
 
-**Closed form for (m-2)-metered parking functions.** Let $m, n$ be natural numbers with
+Let $m, n$ be natural numbers with
 $2 < m \le n + 1$. Then the number $\mathrm{mpf}_{m,n}(m-2)$ of $(m-2)$-metered
 $(m, n)$-parking functions is
 

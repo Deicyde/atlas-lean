@@ -1,6 +1,6 @@
 # Fibonacci numbers as a truncated binomial sum
 
-**Fibonacci numbers as a truncated binomial sum.** Let $F_n$ be the Fibonacci numbers
+Let $F_n$ be the Fibonacci numbers
 ($F_0 = 0$, $F_1 = 1$, $F_{n+2} = F_{n+1} + F_n$), and for an integer $x$ and a natural number
 $j$ let $\binom{x}{j} = x(x-1)\cdots(x-j+1)/j!$. For every natural number $n \ge 2$,
 

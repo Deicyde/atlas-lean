@@ -1,6 +1,6 @@
 # Generating function of Arndt compositions by last part
 
-**Generating function of Arndt compositions by last part.** Let $b(n, m)$ be the number of
+Let $b(n, m)$ be the number of
 Arndt compositions of $n$ with last part $m$, where the empty composition of $0$ counts as
 having last part $0$ (so $b(0, 0) = 1$), and let
 $B(x, y) = \sum_{n \ge 0} \sum_{m=0}^{n} b(n, m)\, x^n y^m \in \mathbb{Z}[y][[x]]$. Then

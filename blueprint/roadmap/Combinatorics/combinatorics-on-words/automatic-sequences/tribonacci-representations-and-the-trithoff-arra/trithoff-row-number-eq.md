@@ -1,6 +1,6 @@
 # Row numbers of the Trithoff array
 
-**Row numbers of the Trithoff array.** Let $T_0 = T_1 = 0$, $T_2 = 1$ and
+Let $T_0 = T_1 = 0$, $T_2 = 1$ and
 $T_{k+3} = T_{k+2} + T_{k+1} + T_k$ be the Tribonacci numbers, and let $U_i = T_i + T_{i+1}$,
 so that $U_0, U_1, U_2, \dots = 0, 1, 2, 3, 6, 11, \dots$. Let $n$ have Tribonacci
 representation $a1$, where $a$ is a digit word written most significant digit first, and let

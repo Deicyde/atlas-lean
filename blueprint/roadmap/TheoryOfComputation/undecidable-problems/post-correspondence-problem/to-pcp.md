@@ -1,6 +1,6 @@
 # The reduction from MPCP to PCP
 
-**The reduction from MPCP to PCP.** Write $\star$ for the star and $\diamond$ for the end
+Write $\star$ for the star and $\diamond$ for the end
 marker of the extended alphabet; for a word $u$ over $\alpha$, $\star u$ puts a star before every
 letter of $u$ and $u \star$ puts a star after every letter of $u$. The empty list of dominoes is
 sent to the empty list. A list $P = [d_0, d_1, \ldots, d_n]$ of dominoes over $\alpha$, with

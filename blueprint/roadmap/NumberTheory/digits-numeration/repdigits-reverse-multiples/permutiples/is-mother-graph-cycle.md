@@ -1,6 +1,6 @@
 # Cycles of the mother graph
 
-**Cycles of the mother graph.** Let $n$ and $b$ be natural numbers. A list
+Let $n$ and $b$ be natural numbers. A list
 $[v_0, \dots, v_{r-1}]$ of natural numbers is a (directed) cycle of the $(n, b)$-mother graph when
 it is nonempty, has no repeated entry, and each of its edges
 $(v_0, v_1), \dots, (v_{r-2}, v_{r-1}), (v_{r-1}, v_0)$ is an edge of the $(n, b)$-mother graph.

@@ -1,6 +1,6 @@
 # Frobenius partitions with at most $k$ repetitions
 
-**Frobenius partitions with at most $k$ repetitions.** For natural numbers $k$ and $n$,
+For natural numbers $k$ and $n$,
 $\varphi_k(n)$ is the number of generalized Frobenius partitions of $n$ in which each integer
 appears at most $k$ times in each row. Concretely, $\varphi_k(n)$ is the number of pairs of
 functions $m_1, m_2 \colon \{0, 1, \dots, n\} \to \{0, 1, \dots, k\}$ with

@@ -1,6 +1,6 @@
 # The survivor is the last entry of the Josephus elimination order
 
-**The survivor is the last entry of the Josephus elimination order.** For natural numbers
+For natural numbers
 $k \ge 1$ and $n \ge 1$, the Josephus elimination order with step $k$ on the circle
 $1, \dots, n$ is nonempty and its last entry is $J_k(n)$, the value at $n$ of the Josephus
 function for elimination step $k$.

@@ -1,6 +1,6 @@
 # The shift block of a situation and a stack
 
-**The shift block of a situation and a stack.** Fix a layout with $A$ label variables, $K$
+Fix a layout with $A$ label variables, $K$
 stacks and $g$ symbol codes, the generator's parameters $sa$, $pl$, $cn$, $pu$, and
 $T, H, t, i, k \in \mathbb{N}$. Write $p = pl(i, k)$, $c = cn(i, k)$, $W = A + K H g$ for the row
 width and $V = (T + 1) W$ for the number of variables. The block is the CNF formula consisting, in

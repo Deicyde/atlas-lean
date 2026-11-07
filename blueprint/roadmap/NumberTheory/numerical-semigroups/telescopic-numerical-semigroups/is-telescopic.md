@@ -1,6 +1,6 @@
 # Telescopic sequences
 
-**Telescopic sequences.** Let $G = (g_1, \dots, g_k)$ be a finite sequence of natural numbers.
+Let $G = (g_1, \dots, g_k)$ be a finite sequence of natural numbers.
 For $0 \le i \le k$ let $d_i$ be the greatest common divisor of $g_1, \dots, g_i$, with $d_0 = 0$,
 and for $1 \le j \le k$ let $c_j = d_{j-1} / d_j$ be the successive gcd quotient, taken to be $0$
 when $d_j = 0$. The sequence $G$ is telescopic when $k \ge 2$, $g_1 + g_2 > 0$, and for every $j$

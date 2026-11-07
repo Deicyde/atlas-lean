@@ -1,6 +1,6 @@
 # $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
-**$(p,q)$-analogue of the $r$-Fibonacci polynomial.** Let $R$ be a commutative semiring, let
+Let $R$ be a commutative semiring, let
 $r$ and $m$ be natural numbers and let $x, y, p, q \in R$. The $(p,q)$-analogue
 $U^{(r)}_n(x, y, p, q, m) \in R$ of the $r$-Fibonacci polynomial is defined by
 $U^{(r)}_0(x, y, p, q, m) = 0$ and, for every natural number $n$,

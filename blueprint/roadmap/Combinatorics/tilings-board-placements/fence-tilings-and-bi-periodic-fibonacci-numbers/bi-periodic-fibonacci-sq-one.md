@@ -1,6 +1,6 @@
 # First bi-periodic Fibonacci number squared
 
-**First bi-periodic Fibonacci number squared.** For elements $a$ and $b$ of a field $K$, the
+For elements $a$ and $b$ of a field $K$, the
 bi-periodic Fibonacci number squared $q^2_1$ equals $1$.
 
 ## Sources

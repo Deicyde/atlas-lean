@@ -1,6 +1,6 @@
 # Root invariant of a B-tree
 
-**Root invariant of a B-tree.** For a minimum degree $t$ and a height $h$, a tree
+For a minimum degree $t$ and a height $h$, a tree
 satisfies the root invariant when either $h = 0$ and the tree is a leaf with at most
 $2t - 1$ keys (possibly none, for the empty tree), or $h = h' + 1$ and the tree is an
 internal node with between $1$ and $2t - 1$ keys and exactly one more child than keys,

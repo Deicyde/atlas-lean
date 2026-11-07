@@ -1,6 +1,6 @@
 # Zone factorization of the $m$-level rook polynomial
 
-**Zone factorization of the $m$-level rook polynomial.** Let $m \ge 1$ and let
+Let $m \ge 1$ and let
 $B = (b_1, \dots, b_n)$ be a Ferrers board, that is $b_1 \le \dots \le b_n$. Write
 $\lfloor b \rfloor_m = m \lfloor b/m \rfloor$ for the largest multiple of $m$ that is at most $b$,
 and $\rho_i = b_i - \lfloor b_i \rfloor_m$. The zone of column $i$ is the set $z$ of columns $k$

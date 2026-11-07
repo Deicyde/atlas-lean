@@ -1,6 +1,6 @@
 # Square recurrence for overpartitions into odd parts
 
-**Square recurrence for overpartitions into odd parts.** Write $\mathrm{po}(m)$ for the
+Write $\mathrm{po}(m)$ for the
 number of overpartitions of $m$ into odd parts. For every natural number $n$, the sum
 $\mathrm{po}(n) + 2 \sum_{k \ge 1,\ 2k^2 \le n} (-1)^k \, \mathrm{po}(n - 2k^2)$ equals $1$ if
 $n = 0$, equals $2$ if $n = m^2$ for some integer $m \ge 1$, and equals $0$ otherwise.

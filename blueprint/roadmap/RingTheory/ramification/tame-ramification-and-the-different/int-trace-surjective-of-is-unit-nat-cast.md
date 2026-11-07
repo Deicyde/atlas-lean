@@ -1,6 +1,6 @@
 # Tame extensions have surjective integral trace
 
-**Tame extensions have surjective integral trace.** Let $A$ and $B$ be discrete valuation
+Let $A$ and $B$ be discrete valuation
 rings with maximal ideals $\mathfrak m_A$, $\mathfrak m_B$ and residue fields $\kappa_A$,
 $\kappa_B$, and let $B$ be an $A$-algebra that is finitely generated and torsion-free as an
 $A$-module, with $\kappa_B / \kappa_A$ separable. Let $e$ be a natural number that is a unit

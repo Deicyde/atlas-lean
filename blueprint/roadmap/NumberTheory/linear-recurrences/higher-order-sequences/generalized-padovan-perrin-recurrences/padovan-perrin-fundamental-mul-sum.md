@@ -1,6 +1,6 @@
 # Product identity for the generalized Padovan–Perrin fundamental system
 
-**Product identity for the generalized Padovan–Perrin fundamental system.** Let $R$ be a
+Let $R$ be a
 commutative ring, $k_1, k_2 \in R$, and $p, s \ge 1$. Write $r = s + p$ and $v^{(\ell)}$ for the
 $\ell$-th sequence of the Fibonacci fundamental system of the $([k]; p; s)$-Padovan–Perrin
 recurrence. Then for all $m, n \ge 0$ and all $1 \le i, j \le r$,

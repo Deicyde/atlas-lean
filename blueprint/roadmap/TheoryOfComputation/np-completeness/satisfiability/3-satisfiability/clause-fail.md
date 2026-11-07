@@ -1,6 +1,6 @@
 # A clause with more than three literals makes the capped 3SAT filter fail
 
-**A clause with more than three literals makes the capped 3SAT filter fail.** Let $C$ be a
+Let $C$ be a
 clause with more than three literals, let $\overline{C}$ be its tokens as they lie on the token
 stack (the clause marker on top, then the literals' tokens, last literal first), and let $w_n$ be
 the walking label after $n$ literals. For every $n$, all lists of symbols $R$ and $U$ and every

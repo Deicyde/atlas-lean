@@ -1,6 +1,6 @@
 # Asymptotic stability of linear ODEs with eigenvalues in the open left half-plane
 
-**Asymptotic stability of linear ODEs with eigenvalues in the open left half-plane.** Let
+Let
 $n \ge 0$ and let $A$ be a real $n \times n$ matrix such that every complex eigenvalue $\mu$ of $A$
 (an eigenvalue of $A$ viewed as a complex matrix acting on $\mathbb{C}^n$) satisfies
 $\operatorname{Re} \mu < 0$. Let $x : \mathbb{R} \to \mathbb{R}^n$ be a function that, at every

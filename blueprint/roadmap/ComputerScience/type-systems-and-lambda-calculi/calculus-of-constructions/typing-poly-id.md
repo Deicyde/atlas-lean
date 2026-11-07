@@ -1,6 +1,6 @@
 # Typing the polymorphic identity
 
-**Typing the polymorphic identity.** In the empty context, the polymorphic identity
+In the empty context, the polymorphic identity
 $\lambda (A : \mathrm{Prop}).\, \lambda (x : A).\, x$ has type
 $\Pi (A : \mathrm{Prop}).\, \Pi (x : A).\, A$.
 

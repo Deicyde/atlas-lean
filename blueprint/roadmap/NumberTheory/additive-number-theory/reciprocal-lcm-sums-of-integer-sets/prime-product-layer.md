@@ -1,6 +1,6 @@
 # Products of a fixed number of distinct primes
 
-**Products of a fixed number of distinct primes.** For a set $\mathcal{P}$ of natural numbers
+For a set $\mathcal{P}$ of natural numbers
 and $k \in \mathbb{N}$, $\mathcal{P}^{[k]}$ is the set of squarefree natural numbers $n$ whose prime
 divisors all lie in $\mathcal{P}$ and which have exactly $k$ distinct prime divisors; that is, the
 products of exactly $k$ distinct primes from $\mathcal{P}$. In particular,

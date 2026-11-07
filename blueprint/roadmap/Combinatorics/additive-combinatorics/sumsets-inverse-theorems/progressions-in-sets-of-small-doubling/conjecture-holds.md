@@ -1,6 +1,6 @@
 # Sets of small doubling contain many arithmetic progressions
 
-**Sets of small doubling contain many arithmetic progressions.** For a finite set
+For a finite set
 $A \subseteq \mathbb{Z}$ write $A + A = \{a + b : a, b \in A\}$. For every natural number $k \ge 3$
 and every real number $C \ge 2$ there is a real number $c > 0$ such that every finite set
 $A \subseteq \mathbb{Z}$ with $|A + A| < C|A|$ has at least $c|A|^2$ pairs $(a, d)$ of integers

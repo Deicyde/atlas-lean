@@ -1,6 +1,6 @@
 # Truth of a prenex formula
 
-**Truth of a prenex formula.** Let $G$ be a group, $\varphi$ a quantifier-free formula in
+Let $G$ be a group, $\varphi$ a quantifier-free formula in
 conjunctive normal form, $q$ a finite list of Booleans read as a quantifier prefix ($\mathrm{true}$
 for $\forall$, $\mathrm{false}$ for $\exists$), $i$ a natural number and $a \colon \mathbb{N} \to G$
 an assignment of values to the variables $x_0, x_1, \dots$. Truth in $G$ under $a$ of the formula

@@ -1,6 +1,6 @@
 # Gould–Quaintance double-sum formula for Bell numbers
 
-**Gould–Quaintance double-sum formula for Bell numbers.** Write $B_n$ for the $n$-th Bell
+Write $B_n$ for the $n$-th Bell
 number and $s(p, m) = (-1)^{p-m} {p \brack m}$ for the signed Stirling number of the first kind,
 where ${p \brack m}$ is the number of permutations of $p$ elements with exactly $m$ cycles. For all
 natural numbers $n$ and $p$, with the convention $0^0 = 1$,

@@ -1,6 +1,6 @@
 # Banach's Scottish Book Problem 86 fails
 
-**Banach's Scottish Book Problem 86 fails.** The Scottish Book Problem 86 claim is false: there
+The Scottish Book Problem 86 claim is false: there
 are a real $M > 0$ and a sequence $(\varphi_n)_{n \in \mathbb{N}}$ of functions
 $\mathbb{R} \to \mathbb{R}$, almost everywhere measurable on $[0, 1]$, orthonormal in
 $L^2[0, 1]$ and with $|\varphi_n(t)| \le M$ for all $n$ and all $t \in [0, 1]$, such that there

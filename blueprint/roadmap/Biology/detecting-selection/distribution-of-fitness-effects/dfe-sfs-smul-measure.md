@@ -1,3 +1,3 @@
 # DFE spectrum is homogeneous in the measure
 
-**DFE spectrum is homogeneous in the measure.** The spectrum is homogeneous in the DFE.
+The spectrum is homogeneous in the DFE.

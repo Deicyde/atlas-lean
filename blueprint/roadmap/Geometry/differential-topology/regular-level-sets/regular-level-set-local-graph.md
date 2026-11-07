@@ -1,6 +1,6 @@
 # Regular level sets are locally graphs
 
-**Regular level sets are locally graphs.** Let $f \colon \mathbb{R}^{k+m} \to \mathbb{R}^m$ be a
+Let $f \colon \mathbb{R}^{k+m} \to \mathbb{R}^m$ be a
 $C^1$ map and let $x_0 \in \mathbb{R}^{k+m}$ be a point at which the derivative $Df(x_0)$ is
 surjective. Then there exist a linear isomorphism
 $e \colon \mathbb{R}^{k+m} \to \mathbb{R}^k \times \mathbb{R}^m$, a neighbourhood $U$ in

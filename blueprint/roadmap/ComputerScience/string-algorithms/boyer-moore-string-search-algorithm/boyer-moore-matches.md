@@ -1,6 +1,6 @@
 # Boyer–Moore matcher for all occurrences
 
-**Boyer–Moore matcher for all occurrences.** Let $p = p_0 \cdots p_{m-1}$ and
+Let $p = p_0 \cdots p_{m-1}$ and
 $t = t_0 \cdots t_{n-1}$ be words over the alphabet $\{0, \dots, \sigma - 1\}$. The matcher
 returns a list of offsets together with a cost. If $m = 0$ it returns $0, 1, \dots, n$ at cost
 $n + 1$, and if $n < m$ it returns the empty list at cost $0$. Otherwise it charges $m + n$ for

@@ -1,6 +1,6 @@
 # RP is contained in BPP
 
-**RP is contained in BPP.** Every decision problem in the class $\mathsf{RP}$ of
+Every decision problem in the class $\mathsf{RP}$ of
 one-sided-error randomized polynomial-time decision problems also belongs to the class
 $\mathsf{BPP}$ of bounded-error probabilistic polynomial-time decision problems.
 

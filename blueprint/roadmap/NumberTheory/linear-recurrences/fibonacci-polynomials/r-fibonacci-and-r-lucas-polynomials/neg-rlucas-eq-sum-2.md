@@ -1,6 +1,6 @@
 # Explicit sum for the (-r)-Lucas polynomials, second form
 
-**Explicit sum for the (-r)-Lucas polynomials, second form.** Let $K$ be a field of
+Let $K$ be a field of
 characteristic zero, $r \ge 2$, $x \in K$ and $y \in K$ nonzero, and write
 $V_n = V^{(-r)}_n(x, y)$ for the companion $(-r)$-Lucas sequence. For every $n \ge 1$, $V_n$ is
 the sum of

@@ -1,6 +1,6 @@
 # Increasing-sequence formula for the Kassel–Reutenauer polynomials
 
-**Increasing-sequence formula for the Kassel–Reutenauer polynomials.** Let $n \ge 1$ and
+Let $n \ge 1$ and
 work in the ring $\mathbb{Z}[q, q^{-1}]$ of Laurent polynomials. For integers $a$ and $h$ let
 $IS(a, h) = \{a+1, \dots, a+h\}$. For an odd divisor $d$ of $n$ put $r_n(d) = n/d - (d+1)/2$,
 $A_d = IS(r_n(d), d)$ and $\check A_d = IS(-r_n(d) - 1, 2n/d)$. Then the Kassel–Reutenauer

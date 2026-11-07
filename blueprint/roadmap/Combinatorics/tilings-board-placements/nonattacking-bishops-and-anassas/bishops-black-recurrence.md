@@ -1,6 +1,6 @@
 # Recurrence for bishops on the black squares
 
-**Recurrence for bishops on the black squares.** Let $R_K(m, k)$ be the number of
+Let $R_K(m, k)$ be the number of
 nonattacking placements of $k$ bishops on the black squares $(i, j)$, with $i + j$ odd, of the
 board $\{1, \dots, m\}^2$, and let $\pi(m) \in \{0, 1\}$ be the remainder of $m$ modulo $2$.
 For $m, k \ge 1$,

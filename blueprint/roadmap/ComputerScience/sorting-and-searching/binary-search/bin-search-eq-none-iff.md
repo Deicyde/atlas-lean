@@ -1,6 +1,6 @@
 # Bounded binary search on a sorted array fails exactly when the key is absent
 
-**Bounded binary search on a sorted array fails exactly when the key is absent.** Let
+Let
 $A = (a_0, \dots, a_{n-1})$ be an array of length $n$ with entries in a linearly ordered type,
 with $a_i \le a_j$ whenever $i < j$. Let $k$ be an element of that type and $\ell$, $h$ natural
 numbers. Lean core's array binary search for $k$ in $A$, with the strict order $<$ as comparison

@@ -1,6 +1,6 @@
 # Fully polynomial-time approximation schemes
 
-**Fully polynomial-time approximation schemes.** A maximization problem $P$ has an FPTAS
+A maximization problem $P$ has an FPTAS
 when $P$ is an NPO problem and there is one polynomial-time algorithm $A$ such that, for every
 integer $k \ge 1$, every instance $x$ and every feasible solution $s$ for $x$, the output
 $A(x, 1^k)$ of $A$ on $x$ with the unary precision tape of length $k$ is a feasible solution for

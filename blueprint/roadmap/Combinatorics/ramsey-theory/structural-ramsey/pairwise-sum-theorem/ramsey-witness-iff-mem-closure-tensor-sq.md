@@ -1,6 +1,6 @@
 # Ramsey's witnesses are the closure of tensor squares
 
-**Ramsey's witnesses are the closure of tensor squares.** For an ultrafilter $U$ on
+For an ultrafilter $U$ on
 $\mathbb{N} = \{0, 1, 2, \dots\}$, the tensor square $U \otimes U$ is the ultrafilter on
 $\mathbb{N} \times \mathbb{N}$ whose members are the sets $X$ with
 $\{n : \{m : (n, m) \in X\} \in U\} \in U$. An ultrafilter $W$ on $\mathbb{N} \times \mathbb{N}$ is

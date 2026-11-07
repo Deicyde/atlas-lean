@@ -1,6 +1,6 @@
 # Smith's upper bound for the Schur–Siegel–Smyth trace constant
 
-**Smith's upper bound for the Schur–Siegel–Smyth trace constant.** The
+The
 Schur–Siegel–Smyth trace constant $C_{86}$, an extended real number, satisfies
 $C_{86} < 1.89831$.
 

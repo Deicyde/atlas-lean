@@ -1,6 +1,6 @@
 # Tefera–Zeleke identity with powers of $2$, $3$ and $4$
 
-**Tefera–Zeleke identity with powers of $2$, $3$ and $4$.** Let $n$ and $j$ be natural numbers,
+Let $n$ and $j$ be natural numbers,
 let $N = n + 2j + 1$, and let $w(m) = (4^m + 2^m)/2$ be the weight in Knuth's old sum. Then, in the
 rational numbers,
 

@@ -1,6 +1,6 @@
 # The eight kinds of rules of the machine-simulating rewriting system
 
-**The eight kinds of rules of the machine-simulating rewriting system.** Let $M$ be a
+Let $M$ be a
 single-tape Turing machine with a finite tape alphabet $\Gamma$, a default (blank) symbol
 $\beta \in \Gamma$ and finitely many states. The symbols are the tape symbols, the states, the end
 markers $\vdash$ and $\dashv$, and the halting symbol $H$. Every rule $l \to r$ of the rewriting

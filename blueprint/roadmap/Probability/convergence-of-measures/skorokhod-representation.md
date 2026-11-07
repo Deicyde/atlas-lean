@@ -1,6 +1,6 @@
 # Skorokhod representation theorem
 
-**Skorokhod representation theorem.** Let $X$ be a Polish space with its Borel
+Let $X$ be a Polish space with its Borel
 $\sigma$-algebra, let $(\mu_n)_{n \in \mathbb{N}}$ be a sequence of probability measures on $X$,
 and let $\mu$ be a probability measure on $X$ such that $\mu_n$ converges weakly to $\mu$. Write
 $\lambda$ for Lebesgue measure on $\mathbb{R}$ restricted to $[0, 1]$. Then there exist measurable

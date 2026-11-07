@@ -1,6 +1,6 @@
 # Reachable pairs of states of two encoded DFAs
 
-**Reachable pairs of states of two encoded DFAs.** For encoded DFAs $D$ and $E$ over the same
+For encoded DFAs $D$ and $E$ over the same
 alphabet, code a pair $(s, t)$ of natural numbers by its image $\langle s, t \rangle \in \mathbb{N}$
 under Mathlib's pairing function. The reachable pairs of $D$ and $E$ form the list returned by the
 bounded reachability search on lists of states started at $\langle s_D, s_E \rangle$, where $s_D$

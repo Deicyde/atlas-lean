@@ -1,6 +1,6 @@
 # Palindromic uniformly recurrent fixed point outside class P
 
-**Palindromic uniformly recurrent fixed point outside class P.** The proposition that there
+The proposition that there
 exist a primitive morphism $\varphi$ on the alphabet $\{0, 1, 2\}$ and an infinite word $u$ such
 that $u$ is a fixed point of $\varphi$, $u$ is palindromic and uniformly recurrent, and no morphism
 $\psi$ that has $u$ as a fixed point and is not the identity is conjugate to a morphism in class P.

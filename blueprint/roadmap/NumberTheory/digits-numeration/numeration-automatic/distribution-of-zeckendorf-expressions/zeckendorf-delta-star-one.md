@@ -1,6 +1,6 @@
 # The function $\delta_1^\ast$
 
-**The function $\delta_1^\ast$.** Let $L$ and $\tilde L$ be lists of natural numbers and $Q$
+Let $L$ and $\tilde L$ be lists of natural numbers and $Q$
 and $\tilde Q$ real sequences with first terms $\omega = Q_0$ and $\tilde\omega = \tilde Q_0$
 (indices start at $0$), and put $\gamma = \log_{\tilde\omega} \omega$. Let $\tilde E^*$ be the
 collection $E^*$ determined by $\tilde L$, let $\overline{\mathrm{rev}}$ be the map determined by

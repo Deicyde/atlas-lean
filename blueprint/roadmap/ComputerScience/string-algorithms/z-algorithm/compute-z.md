@@ -1,6 +1,6 @@
 # Z-algorithm
 
-**Z-algorithm.** Given a word $s = s_0 \dots s_{n-1}$ over a type $\alpha$ with a Boolean
+Given a word $s = s_0 \dots s_{n-1}$ over a type $\alpha$ with a Boolean
 equality test, Gusfield's Z-box algorithm returns an array $Z$ of $n$ natural numbers with
 $Z_0 = n$. It visits $i = 1, \dots, n - 1$ in turn, keeping a box $[\ell, r)$, initially empty,
 that is the rightmost match of a prefix of $s$ found so far. If $\ell \le i < r$ and

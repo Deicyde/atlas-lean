@@ -1,6 +1,6 @@
 # Hinge theorem
 
-**Hinge theorem.** Let $A, B, C$ and $D, E, F$ be two triples of pairwise distinct points of
+Let $A, B, C$ and $D, E, F$ be two triples of pairwise distinct points of
 the Euclidean plane $\mathbb{R}^2$ forming nondegenerate triangles: $C - A$ is not a real
 multiple of $B - A$, and $F - D$ is not a real multiple of $E - D$. Write $XY$ for the distance
 between points $X$ and $Y$. If $AB = DE$, $AC = DF$ and

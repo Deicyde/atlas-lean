@@ -1,6 +1,6 @@
 # A packing has countably many centers
 
-**A packing has countably many centers.** For every packing of congruent balls in
+For every packing of congruent balls in
 $\mathbb{R}^4$, the set of centers of its balls is countable.
 
 ## Sources

@@ -1,6 +1,6 @@
 # LONGEST PATH is NP-complete
 
-**LONGEST PATH is NP-complete.** The LONGEST PATH decision problem belongs to NP, and every
+The LONGEST PATH decision problem belongs to NP, and every
 decision problem in NP has a polynomial-time many-one reduction to LONGEST PATH.
 
 ## Sources

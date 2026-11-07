@@ -1,6 +1,6 @@
 # Number of natural expansions
 
-**Number of natural expansions.** For a natural number $N$, $\mathrm{Tot}_\nu(N)$ is the
+For a natural number $N$, $\mathrm{Tot}_\nu(N)$ is the
 number of natural base phi expansions of $N$.
 
 ## Sources

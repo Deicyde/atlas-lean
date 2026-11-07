@@ -1,6 +1,6 @@
 # Coefficients are exactly the reals below the constant
 
-**Coefficients are exactly the reals below the constant.** A real number $c$ is an asymptotic
+A real number $c$ is an asymptotic
 Dobrowolski coefficient if and only if $c$ is at most the asymptotic Dobrowolski constant, as
 extended real numbers.
 

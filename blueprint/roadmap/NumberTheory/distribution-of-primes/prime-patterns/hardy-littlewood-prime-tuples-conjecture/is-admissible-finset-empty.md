@@ -1,6 +1,6 @@
 # The empty set is admissible
 
-**The empty set is admissible.** The empty set of integers is admissible: for every prime
+The empty set of integers is admissible: for every prime
 $p$, some residue class modulo $p$ contains none of its elements.
 
 ## Sources

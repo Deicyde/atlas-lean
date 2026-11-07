@@ -1,6 +1,6 @@
 # Lower bound for the number of marriageable singles partitions
 
-**Lower bound for the number of marriageable singles partitions.** Extend the binomial
+Extend the binomial
 coefficient $\binom{a}{b}$ to all integers $a$, $b$ by setting it to $0$ when $a < 0$ or $b < 0$,
 and for every natural number $N$ let
 

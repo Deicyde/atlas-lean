@@ -1,6 +1,6 @@
 # Empty-stack clauses of the init family
 
-**Empty-stack clauses of the init family.** Let $E$ be an encoding of a machine $M$ with $K$
+Let $E$ be an encoding of a machine $M$ with $K$
 numbered stacks and let $T, H$ be natural numbers. The empty-stack clauses form the CNF formula
 that lists, for each stack number $k < K$ other than the number of the input stack in increasing
 order and, within it, each depth $j < H$ in increasing order, the dense clause over the

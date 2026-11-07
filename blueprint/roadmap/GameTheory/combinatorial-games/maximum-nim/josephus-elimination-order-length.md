@@ -1,6 +1,6 @@
 # Length of the Josephus elimination order
 
-**Length of the Josephus elimination order.** For all natural numbers $k$ and $n$, the
+For all natural numbers $k$ and $n$, the
 Josephus elimination order with step $k$ on the circle $1, \dots, n$ has exactly $n$ entries.
 
 ## Sources

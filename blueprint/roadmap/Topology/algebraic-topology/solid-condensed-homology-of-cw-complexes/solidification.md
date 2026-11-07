@@ -1,6 +1,6 @@
 # Solidification
 
-**Solidification.** The solidification functor from the category of light condensed abelian
+The solidification functor from the category of light condensed abelian
 groups to the category of light solid abelian groups.
 
 This declaration fixes only the functor. Its intended characterization, as left adjoint to the

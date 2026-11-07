@@ -1,6 +1,6 @@
 # Multigraded base change data
 
-**Multigraded base change data.** Let $K$ be a field, let $R = K[x_1, \dots, x_n]$,
+Let $K$ be a field, let $R = K[x_1, \dots, x_n]$,
 and let $M$ be a $\mathbb{Z}^n$-graded $R$-module with a multigraded free resolution
 $P_\bullet \to M$. Write $K \otimes_R P_\bullet$ for its base change along the
 augmentation $R \to K$ and $(K \otimes_R P_i)_\beta$ for the degree-$\beta$ piece of its

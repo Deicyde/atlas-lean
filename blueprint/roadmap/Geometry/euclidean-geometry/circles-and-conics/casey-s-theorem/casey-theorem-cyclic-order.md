@@ -1,6 +1,6 @@
 # Casey's theorem for four circles in arbitrary cyclic order
 
-**Casey's theorem for four circles in arbitrary cyclic order.** In the Euclidean plane, write
+In the Euclidean plane, write
 $d(p, q)$ for the distance between points $p$ and $q$. Let $O$ be a point and $R > 0$, and let
 $c_1, c_2, c_3, c_4$ be points and $r_1, r_2, r_3, r_4$ real numbers with $0 < r_i < R$ and
 $d(c_i, O) + r_i = R$ for each $i$, so that the circle with center $c_i$ and radius $r_i$ is

@@ -1,6 +1,6 @@
 # Log-space uniform circuit families
 
-**Log-space uniform circuit families.** A family $(C_n)_{n \in \mathbb{N}}$ of flat Boolean
+A family $(C_n)_{n \in \mathbb{N}}$ of flat Boolean
 circuits, $C_n$ having $n$ inputs, is log-space uniform when there is a log-space computable
 function $D$ on bitstrings such that, for every $n$, decoding $D(1^n)$ (where $1^n$ is the string
 of $n$ ones) as a list of (gate kind, references) pairs succeeds and returns the serial encoding

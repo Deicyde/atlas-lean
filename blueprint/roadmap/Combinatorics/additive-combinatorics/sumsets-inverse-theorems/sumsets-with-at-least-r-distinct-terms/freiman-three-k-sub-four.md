@@ -1,6 +1,6 @@
 # Freiman's $3k - 4$ theorem
 
-**Freiman's $3k - 4$ theorem.** Let $A$ be a finite set of integers with $|A| = k \ge 3$,
+Let $A$ be a finite set of integers with $|A| = k \ge 3$,
 $\min A = 0$ and $\gcd(A) = 1$, and let $b$ be a natural number. If
 $|2A| = 2k - 1 + b \le 3k - 4$, where $2A = \{a + a' : a, a' \in A\}$, then $A$ is contained in
 an arithmetic progression of length at most $k + b$.

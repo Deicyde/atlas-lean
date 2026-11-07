@@ -1,6 +1,6 @@
 # Schur number
 
-**Schur number.** For $k \ge 1$, the Schur number $S(k)$ is $N_0 - 1$, where $N_0$ is the
+For $k \ge 1$, the Schur number $S(k)$ is $N_0 - 1$, where $N_0$ is the
 least natural number $N$ that forces a monochromatic Schur triple in $k$ colours: every colouring
 $c$ of the natural numbers with $k$ colours has $x, y, z \in \{1, \dots, N\}$ with $x + y = z$ and
 $c(x) = c(y) = c(z)$. For $k = 0$, $S(0) = 0$.

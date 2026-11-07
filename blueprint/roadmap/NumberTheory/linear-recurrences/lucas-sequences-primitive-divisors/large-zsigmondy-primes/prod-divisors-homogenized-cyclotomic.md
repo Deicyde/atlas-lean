@@ -1,6 +1,6 @@
 # Factorization of $a^n - b^n$ into homogenized cyclotomic values
 
-**Factorization of $a^n - b^n$ into homogenized cyclotomic values.** For every positive
+For every positive
 integer $n$ and all integers $a$ and $b$,
 
 $$a^n - b^n = \prod_{d \mid n} \Phi_d(a, b),$$

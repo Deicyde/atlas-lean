@@ -1,6 +1,6 @@
 # Square-weighted constants of numbers with odd $2$-adic valuation
 
-**Square-weighted constants of numbers with odd $2$-adic valuation.** Let $n$ be a positive
+Let $n$ be a positive
 even natural number whose $2$-adic valuation $v_2(n)$ is odd, and let $S(n)$ be the set of
 nonzero squares in $\mathbb{Z}_n$. Then the $S(n)$-weighted Davenport constant of
 $\mathbb{Z}_n$, with weights the representatives in $\{0, \dots, n - 1\}$ of the elements of

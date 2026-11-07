@@ -1,6 +1,6 @@
 # Ricci contraction of the curvature expression
 
-**Ricci contraction of the curvature expression.** Let $M$ be a manifold modelled on a
+Let $M$ be a manifold modelled on a
 finite-dimensional normed space over a nontrivially normed field $\mathbb{K}$, let $\nabla$ be a
 covariant derivative on the tangent bundle of $M$, let $R$ be its curvature expression on
 extensions, let $x \in M$ and let $v, w \in T_x M$. With $e_1, \dots, e_n$ the fixed basis of

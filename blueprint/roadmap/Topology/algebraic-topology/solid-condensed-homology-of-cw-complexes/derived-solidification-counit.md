@@ -1,6 +1,6 @@
 # Comparison map from derived to degreewise solidification
 
-**Comparison map from derived to degreewise solidification.** Let $Q$ denote the localization
+Let $Q$ denote the localization
 functors from cochain complexes to derived categories. This is a natural transformation from the
 functor sending a cochain complex $K$ of light condensed abelian groups to the derived
 solidification of $Q(K)$ to the functor sending $K$ to $Q(\mathrm{Sol}(K))$, where

@@ -1,6 +1,6 @@
 # Centered coloring
 
-**Centered coloring.** A proper vertex coloring $\varphi$ of a simple graph $G$ is centered
+A proper vertex coloring $\varphi$ of a simple graph $G$ is centered
 if, for every set $s$ of vertices of $G$ whose induced subgraph is connected, some vertex is a
 $\varphi$-center of $s$.
 

@@ -1,6 +1,6 @@
 # Letter counts of the Hofstadter word as cardinalities
 
-**Letter counts of the Hofstadter word as cardinalities.** Let $x_k$ be the fixed point,
+Let $x_k$ be the fixed point,
 starting with $k$, of the substitution sending the letter $k$ to $k\,1$ and every other letter
 $i$ to $i + 1$, and write $x_k[j]$ for its letter at index $j$. For every predicate $P$ on letters
 and every $n$, the number $C_k^{(P)}(n)$ of letters satisfying $P$ in the prefix

@@ -1,6 +1,6 @@
 # Sum formulas for $|U_{n,1}|$ and $|V_{n,1}|$ (Proposition 2)
 
-**Sum formulas for $|U_{n,1}|$ and $|V_{n,1}|$ (Proposition 2).** For every natural number
+For every natural number
 $n$ let $f(n, a) = \min(n - 3 - a, \lfloor (a - 1)/2 \rfloor)$ and
 
 $$

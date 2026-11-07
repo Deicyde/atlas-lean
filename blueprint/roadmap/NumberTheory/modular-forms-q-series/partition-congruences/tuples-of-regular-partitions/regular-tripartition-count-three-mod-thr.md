@@ -1,6 +1,6 @@
 # Congruences modulo 3 and 9 for 3-regular tripartitions
 
-**Congruences modulo 3 and 9 for 3-regular tripartitions.** Let $T_3(m)$ be the number of
+Let $T_3(m)$ be the number of
 $3$-regular tripartitions of $m$. For every natural number $n$, $3 \mid T_3(3n + 1)$ and
 $9 \mid T_3(3n + 2)$.
 

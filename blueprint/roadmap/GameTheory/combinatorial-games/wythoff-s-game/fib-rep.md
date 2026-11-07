@@ -1,6 +1,6 @@
 # Greedy Fibonacci representation
 
-**Greedy Fibonacci representation.** Let $F_0 = 1$, $F_1 = 2$ and $F_{i+2} = F_{i+1} + F_i$.
+Let $F_0 = 1$, $F_1 = 2$ and $F_{i+2} = F_{i+1} + F_i$.
 The greedy Fibonacci representation $\mathrm{rep}_F(n)$ of $n \in \mathbb{N}$ is the word of
 digits $d_{k-1} \cdots d_0$, most significant first, where $k$ is the least integer with
 $n < F_k$ and the digits are chosen greedily: starting from the remainder $n$, for

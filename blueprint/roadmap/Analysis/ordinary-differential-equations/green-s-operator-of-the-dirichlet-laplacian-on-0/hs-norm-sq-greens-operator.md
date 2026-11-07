@@ -1,6 +1,6 @@
 # Squared Hilbert–Schmidt norm of the Green's operator
 
-**Squared Hilbert–Schmidt norm of the Green's operator.** Let
+Let
 $G(x, t) = \min(x, t)\,(1 - \max(x, t))$ be the Green's kernel and let $A$ be a continuous linear
 operator on $L^2([0, 1])$ that is symmetric, $\langle Af, g \rangle = \langle f, Ag \rangle$ for
 all $f, g$, and is given by the Green's kernel, $(Af)(x) = \int_{[0, 1]} G(x, t) f(t)\, dt$ for

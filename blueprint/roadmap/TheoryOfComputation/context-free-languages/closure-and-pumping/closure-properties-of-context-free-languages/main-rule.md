@@ -1,6 +1,6 @@
 # Main production of the substitution grammar
 
-**Main production of the substitution grammar.** Let $g$ be a context-free grammar over $T$
+Let $g$ be a context-free grammar over $T$
 with nonterminals $N_g$, and let $e$ assign to each letter $a \in T$ an encoded grammar $e(a)$
 over $T'$. A production $A \to \alpha$ over $T$ with nonterminals in $N_g$ gives the production
 $A \to \alpha'$ over $T'$ with nonterminals in $N_g \sqcup (\mathbb{N} \times \mathbb{N})$, where

@@ -1,6 +1,6 @@
 # Small values of the two-step pattern denominators
 
-**Small values of the two-step pattern denominators.** For $\beta = 1$ and $\omega_n = 1$ for
+For $\beta = 1$ and $\omega_n = 1$ for
 all $n$, the convergent denominators $q_0, \dots, q_7$ of the two-step pattern are
 $1, 1, 2, 3, 5, 18, 23, 432$ (the paper's first example).
 

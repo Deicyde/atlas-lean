@@ -1,6 +1,6 @@
 # Bounds for short incomplete exponential sums of monic cubics
 
-**Bounds for short incomplete exponential sums of monic cubics.** Let $p$ be a prime, write
+Let $p$ be a prime, write
 $e_p(t) = e^{2\pi i t/p}$, let $b, c$ be integers, let $B$ be an integer with
 $4 p^{1/3} < B < \sqrt{p/12}$, and put $S = \sum_{x=1}^{B} e_p(x^3 + b x^2 + c x)$. Then
 $|S| < (Bp)^{1/4} \left(\log \frac{B^3}{p}\right)^{1/4} (\log (Bp))^{1/4}$ and

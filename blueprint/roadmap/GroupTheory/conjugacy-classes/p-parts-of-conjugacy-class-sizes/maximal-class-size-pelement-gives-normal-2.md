@@ -1,6 +1,6 @@
 # A maximal p-part of a class size does not force a normal p-complement
 
-**A maximal p-part of a class size does not force a normal p-complement.** For a prime $p$, the
+For a prime $p$, the
 $p$-part of a positive integer $m$ is the largest power of $p$ dividing $m$. There exist a finite
 group $G$, a prime $p$ and a $p$-element $g$ of $G$ (that is, $g^{p^k} = 1$ for some natural
 number $k$) such that for every $x \in G$ the $p$-part of the size of the conjugacy class of $x$

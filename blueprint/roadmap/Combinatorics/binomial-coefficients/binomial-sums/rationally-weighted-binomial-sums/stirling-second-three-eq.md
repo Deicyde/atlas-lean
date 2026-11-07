@@ -1,6 +1,6 @@
 # Stirling numbers of the second kind with three blocks
 
-**Stirling numbers of the second kind with three blocks.** For every integer $r \ge 1$, the
+For every integer $r \ge 1$, the
 Stirling number of the second kind $S(r, 3)$ satisfies
 $S(r, 3) = \frac{3^{r-1} + 1}{2} - 2^{r-1}$.
 

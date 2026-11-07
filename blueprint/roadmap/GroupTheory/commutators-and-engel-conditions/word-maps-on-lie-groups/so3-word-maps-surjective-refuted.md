@@ -1,6 +1,5 @@
 # Some nontrivial word map on $\mathrm{SO}(3, \mathbb{R})$ is not surjective (Kourovka 16.68(c))
 
-**Some nontrivial word map on $\mathrm{SO}(3, \mathbb{R})$ is not surjective (Kourovka 16.68(c)).**
 There is a nontrivial element $w$ of the free group $F_2$ on two generators whose word map
 $\mathrm{SO}(3, \mathbb{R}) \times \mathrm{SO}(3, \mathbb{R}) \to \mathrm{SO}(3, \mathbb{R})$,
 $(x, y) \mapsto w(x, y)$, is not surjective. That is, Mycielski's question has a negative answer

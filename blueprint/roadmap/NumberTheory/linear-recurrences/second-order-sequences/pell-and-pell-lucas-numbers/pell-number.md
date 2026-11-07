@@ -1,6 +1,6 @@
 # Pell numbers
 
-**Pell numbers.** The Pell numbers $P_n$, for natural numbers $n$, are defined by $P_0 = 0$,
+The Pell numbers $P_n$, for natural numbers $n$, are defined by $P_0 = 0$,
 $P_1 = 1$ and $P_{n+2} = 2P_{n+1} + P_n$ for every $n$. They begin $0, 1, 2, 5, 12, \dots$
 
 ## Sources

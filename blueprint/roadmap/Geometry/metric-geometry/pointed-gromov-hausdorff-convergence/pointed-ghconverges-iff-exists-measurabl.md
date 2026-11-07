@@ -1,6 +1,6 @@
 # Pointed Gromov–Hausdorff convergence with measurable maps
 
-**Pointed Gromov–Hausdorff convergence with measurable maps.** Let $X_0, X_1, \dots$ be
+Let $X_0, X_1, \dots$ be
 separable pseudometric spaces, each with its Borel $\sigma$-algebra, with base points
 $p_n \in X_n$, and let $Y$ be a pseudometric space with any $\sigma$-algebra and a base point
 $q \in Y$. Then $(X_n, p_n)$ converges to $(Y, q)$ in the pointed Gromov–Hausdorff sense if and

@@ -1,6 +1,6 @@
 # Suryanarayana's bound for $H(n)/h(n)$ with one odd exponent
 
-**Suryanarayana's bound for $H(n)/h(n)$ with one odd exponent.** For a positive integer
+For a positive integer
 $n$ write $h(n) = \sigma(n)/n$ for its abundancy index, where $\sigma(n)$ is the sum of the
 divisors of $n$, and $H(n) = \prod_{p \mid n} p/(p-1)$ for the product over its prime divisors.
 Let $n$ be odd and let $j$ be a prime divisor of $n$ whose exponent in $n$ is odd, while the

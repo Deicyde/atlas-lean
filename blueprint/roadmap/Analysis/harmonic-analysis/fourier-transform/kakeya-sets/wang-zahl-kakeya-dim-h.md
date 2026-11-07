@@ -1,6 +1,6 @@
 # Wang–Zahl theorem: the Kakeya conjecture in three dimensions
 
-**Wang–Zahl theorem: the Kakeya conjecture in three dimensions.** Every Kakeya set in
+Every Kakeya set in
 three-dimensional Euclidean space has Hausdorff dimension $3$.
 
 ## Sources

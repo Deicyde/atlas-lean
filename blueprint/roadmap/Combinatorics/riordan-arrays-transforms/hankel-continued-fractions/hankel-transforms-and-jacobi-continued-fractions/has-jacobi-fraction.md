@@ -1,6 +1,6 @@
 # Jacobi continued fraction expansion
 
-**Jacobi continued fraction expansion.** Let $K$ be a ring, not necessarily commutative, let
+Let $K$ be a ring, not necessarily commutative, let
 $(a_n)_{n \ge 0}$, $(\alpha_n)_{n \ge 0}$ and $(\beta_n)_{n \ge 0}$ be sequences in $K$, let
 $\mu_0 \in K$, and let $(F_i)_{i \ge 0}$ be a sequence of formal power series over $K$ in the
 variable $x$. These data form a Jacobi continued fraction expansion of $a$ when

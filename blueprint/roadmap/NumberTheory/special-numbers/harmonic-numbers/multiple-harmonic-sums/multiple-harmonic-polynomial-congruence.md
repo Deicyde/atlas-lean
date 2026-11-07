@@ -1,6 +1,6 @@
 # Mattarei–Tauraso polynomial congruence for multiple harmonic sums
 
-**Mattarei–Tauraso polynomial congruence for multiple harmonic sums.** Let $n \ge 1$ and let
+Let $n \ge 1$ and let
 $p$ be a prime with $p > n + 1$, write $H_r^{(m)}$ for the multiple harmonic sum modulo $p$, and
 write $k^{-1}$ for the inverse of $k$ in $\mathbb{Z}/p\mathbb{Z}$. Then, as polynomials in $x$
 over $\mathbb{Z}/p\mathbb{Z}$,

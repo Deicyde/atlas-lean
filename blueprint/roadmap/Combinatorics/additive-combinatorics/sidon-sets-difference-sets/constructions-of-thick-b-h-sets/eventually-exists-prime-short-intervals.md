@@ -1,6 +1,6 @@
 # Baker–Harman–Pintz theorem
 
-**Baker–Harman–Pintz theorem.** There is a real number $x_0$ such that for every real
+There is a real number $x_0$ such that for every real
 $x \ge x_0$ there is a prime $p$ with $x - x^{21/40} \le p \le x$ and a prime $p'$ with
 $x \le p' \le x + x^{21/40}$.
 

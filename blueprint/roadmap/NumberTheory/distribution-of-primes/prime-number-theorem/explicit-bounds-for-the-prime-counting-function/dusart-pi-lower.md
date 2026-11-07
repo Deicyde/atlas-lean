@@ -1,6 +1,6 @@
 # Dusart's lower bound for $\pi(x)$ for $x \ge 599$
 
-**Dusart's lower bound for $\pi(x)$ for $x \ge 599$.** Let $\pi(x)$ be the number of primes
+Let $\pi(x)$ be the number of primes
 $p \le x$ and $\log$ the natural logarithm. For every real number $x \ge 599$,
 $\frac{x}{\log x} \bigl(1 + \frac{1}{\log x}\bigr) \le \pi(x)$.
 

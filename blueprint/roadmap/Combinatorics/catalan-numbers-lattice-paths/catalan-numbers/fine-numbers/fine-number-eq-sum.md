@@ -1,6 +1,6 @@
 # Explicit formula for the Fine numbers
 
-**Explicit formula for the Fine numbers.** For every natural number $n$, the Fine number
+For every natural number $n$, the Fine number
 $F(n)$, indexed from $0$ so that $F(0) = 1$, satisfies
 
 $$F(n) = \frac{1}{n+1} \sum_{i=0}^{n} (-2)^i \, (i+1) \binom{2(n+1)}{n-i}.$$

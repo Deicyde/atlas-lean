@@ -1,6 +1,6 @@
 # Recursively presented group
 
-**Recursively presented group.** Let $G$ be a group, $k$ a natural number and $\varphi$ a
+Let $G$ be a group, $k$ a natural number and $\varphi$ a
 homomorphism from the free group on $k$ generators to $G$. The group $G$ is recursively presented
 with respect to $\varphi$ when the set of words $w$ (finite lists of letters $(i, \varepsilon)$
 with $i < k$ and $\varepsilon$ true or false, the letter $(i, \mathrm{false})$ standing for the

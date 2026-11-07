@@ -1,6 +1,6 @@
 # Recursion for partial sums of Schlesinger–Zudilin qMZVs
 
-**Recursion for partial sums of Schlesinger–Zudilin qMZVs.** For natural numbers $k_1$ and
+For natural numbers $k_1$ and
 $M$ and an index $\kappa = (k_2, \dots, k_r)$ (possibly empty), write $Z_M(k_1, \kappa)$ and
 $Z_m(\kappa)$ for the partial sums of Schlesinger–Zudilin qMZVs with bounds $M$ and $m$. Then
 

@@ -1,6 +1,6 @@
 # Blocks of a Zeckendorf representation
 
-**Blocks of a Zeckendorf representation.** Let $r \in \mathbb{N}$ have Zeckendorf
+Let $r \in \mathbb{N}$ have Zeckendorf
 representation $r = F_{i_1} + \dots + F_{i_s}$ with $i_1 > \dots > i_s \ge 2$ (Fibonacci numbers
 with $F_1 = F_2 = 1$). The blocks of $r$ are the maximal runs of successive terms of the list
 $i_1, \dots, i_s$ in which each index is exactly $2$ less than the one before it (the maximal

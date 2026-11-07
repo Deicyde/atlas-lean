@@ -1,6 +1,6 @@
 # Valid link-cut tree states
 
-**Valid link-cut tree states.** A link-cut tree state $s$ is valid when four conditions
+A link-cut tree state $s$ is valid when four conditions
 hold: the concatenation of the vertex lists of the trees of its represented forest has no
 duplicates (so the trees are vertex-disjoint); its list of preferred edges has no duplicates;
 every preferred edge $(a, b)$ is a parent-child edge of some tree of the represented forest,

@@ -1,6 +1,6 @@
 # Stopping at a later time does not change the stopped value
 
-**Stopping at a later time does not change the stopped value.** Let $(f_n)_{n \in \mathbb{N}}$
+Let $(f_n)_{n \in \mathbb{N}}$
 be a sequence of real-valued functions on $\Omega$ and let
 $L, M : \Omega \to \mathbb{N} \cup \{\infty\}$ satisfy $L(\omega) \le M(\omega)$ for every
 $\omega$. Then the value at $L$ of the stopped process $n \mapsto f_{M \wedge n}$ equals the value

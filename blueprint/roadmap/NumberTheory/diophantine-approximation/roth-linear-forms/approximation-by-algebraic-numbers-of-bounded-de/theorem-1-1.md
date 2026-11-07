@@ -1,6 +1,6 @@
 # Poëls' lower bound for the classical exponent
 
-**Poëls' lower bound for the classical exponent.** Let $n \ge 2$ be an integer and let
+Let $n \ge 2$ be an integer and let
 $a = 1/(2 - \log 2)$. For every real number $\xi$ that is transcendental over $\mathbb{Q}$, the
 classical exponent of approximation to $\xi$ by real algebraic numbers of degree at most $n$
 satisfies $\omega^*_n(\xi) \ge a n$.

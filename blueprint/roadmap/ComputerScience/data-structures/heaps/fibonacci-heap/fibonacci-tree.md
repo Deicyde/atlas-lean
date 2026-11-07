@@ -1,6 +1,6 @@
 # Fibonacci tree
 
-**Fibonacci tree.** A Fibonacci tree over a type $\alpha$ is a rose tree: a node carrying a
+A Fibonacci tree over a type $\alpha$ is a rose tree: a node carrying a
 stored degree $d \in \mathbb{N}$, a root value in $\alpha$, and a finite list of child Fibonacci
 trees.
 

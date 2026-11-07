@@ -1,6 +1,6 @@
 # Ramanujan's congruence modulo 5
 
-**Ramanujan's congruence modulo 5.** For every natural number $m$, the number of partitions
+For every natural number $m$, the number of partitions
 of $5m + 4$ is divisible by $5$.
 
 ## Sources

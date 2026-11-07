@@ -1,6 +1,6 @@
 # Lévy's continuity theorem
 
-**Lévy's continuity theorem.** Let $d \in \mathbb{N}$, let $(\mu_n)_{n \in \mathbb{N}}$ be a
+Let $d \in \mathbb{N}$, let $(\mu_n)_{n \in \mathbb{N}}$ be a
 sequence of probability measures on the Euclidean space $\mathbb{R}^d$, and let
 $\varphi : \mathbb{R}^d \to \mathbb{C}$. Suppose that for every $t \in \mathbb{R}^d$ the
 characteristic functions $\hat\mu_n$ of the $\mu_n$ satisfy $\hat\mu_n(t) \to \varphi(t)$ as

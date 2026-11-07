@@ -1,6 +1,6 @@
 # P-positions of Wythoff's game with a pass for $x, y \le 8$
 
-**P-positions of Wythoff's game with a pass for $x, y \le 8$.** Let $\mathcal{G}_1(x, y, p)$ be
+Let $\mathcal{G}_1(x, y, p)$ be
 the Grundy number of Wythoff's game with a one-time pass ($p = 1$: the pass is still available;
 $p = 0$: classical Wythoff's game), and $\mathcal{G}_2(x, y, p)$ the Grundy number of the sum of
 Wythoff's game and a pile of $p$ stones. Let

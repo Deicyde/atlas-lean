@@ -1,6 +1,6 @@
 # Derangements weighted by excedances and cycle weight $-2$
 
-**Derangements weighted by excedances and cycle weight $-2$.** Let $n \ge 1$. For a
+Let $n \ge 1$. For a
 permutation $\sigma$ let $e(\sigma)$ be its number of excedances (indices $i$ with
 $\sigma(i) > i$) and $c(\sigma)$ its number of cycles. Summing over the derangements $\sigma$ of
 $n$ objects (permutations without fixed points), the polynomial

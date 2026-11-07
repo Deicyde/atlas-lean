@@ -1,6 +1,6 @@
 # Least period and average multiples for $Q = 1$
 
-**Least period and average multiples for $Q = 1$.** Let $U$ be the Lucas sequence
+Let $U$ be the Lucas sequence
 $U_0 = 0$, $U_1 = 1$, $U_{j+2} = P U_{j+1} - Q U_j$ with $Q = 1$ and $(P, Q)$ nondegenerate. Let
 $S$ be the set of positive integers $m$ coprime to $Q$ such that the period of $U$ modulo $m$
 divides $m$, and $S'$ the set of $m \in S$ with $m \mid U_1 + \cdots + U_m$. For $n \ge 1$ let

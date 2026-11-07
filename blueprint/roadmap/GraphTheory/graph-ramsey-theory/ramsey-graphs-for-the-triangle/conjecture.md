@@ -1,6 +1,6 @@
 # Minimum-degree conjecture for minimal Ramsey graphs of the triangle
 
-**Minimum-degree conjecture for minimal Ramsey graphs of the triangle.** The statement that
+The statement that
 $s_r(K_3) = \Theta(r^2 \log r)$ as the natural number $r$ tends to infinity, where $s_r(K_3)$ is
 the least minimum degree of a graph that is $r$-Ramsey-minimal for the triangle ($0$ if there is
 none) and $\log$ is the natural logarithm: there are constants $c, C > 0$ such that

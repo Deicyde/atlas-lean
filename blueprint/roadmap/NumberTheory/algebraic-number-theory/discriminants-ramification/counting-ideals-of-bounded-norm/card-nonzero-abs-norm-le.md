@@ -1,6 +1,6 @@
 # Bound on the number of ideals of bounded norm, integer threshold
 
-**Bound on the number of ideals of bounded norm, integer threshold.** Let $K$ be a number
+Let $K$ be a number
 field of degree $n = [K : \mathbb{Q}]$ with ring of integers $\mathcal{O}_K$, let $M$ be a natural
 number, and let $k$ be the largest natural number with $2^k \le M$, with $k = 0$ if $M = 0$.
 Then the number of nonzero ideals $I$ of $\mathcal{O}_K$ whose absolute norm

@@ -1,6 +1,6 @@
 # Bedert's theorem on large sum-free subsets
 
-**Bedert's theorem on large sum-free subsets.** There is a function $\omega$ from the natural
+There is a function $\omega$ from the natural
 numbers to the real numbers with $\omega(n) \to \infty$ as $n \to \infty$ such that every finite
 set $A$ of positive integers contains a subset $B \subseteq A$ with $x + y \notin B$ for all
 $x, y \in B$ (a sum-free subset) and $|B| \ge |A|/3 + \omega(|A|)$.

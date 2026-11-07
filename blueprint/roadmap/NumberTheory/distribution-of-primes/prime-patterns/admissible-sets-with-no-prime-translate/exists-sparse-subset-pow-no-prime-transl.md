@@ -1,6 +1,6 @@
 # Sparse subsets of powers with no prime translate
 
-**Sparse subsets of powers with no prime translate.** Let $a$ be a natural number that is a
+Let $a$ be a natural number that is a
 primitive root modulo infinitely many primes, and let $S = \{a^k : k \ge 1\}$. For every
 non-decreasing unbounded function $f : \mathbb{N} \to \mathbb{N}$ there is an infinite set
 $A \subseteq S$ such that $|A \cap \{1, \dots, N\}| \le f(N)$ for every natural number $N$, and

@@ -1,6 +1,6 @@
 # Rational points of an embedded open planar set
 
-**Rational points of an embedded open planar set.** Let $m$ be a natural number and let
+Let $m$ be a natural number and let
 $P \subseteq \mathbb{R}^2$ be a nonempty open set. Let
 $P' = P \times \{0\}^{m+1} \subseteq \mathbb{R}^{m+3}$, and let $Q_{P'}$ be the set of points of
 $P'$ all of whose coordinates are rational. Then $\mathrm{opx}(n, Q_{P'}, m + 3) = \Theta(n^{m+3})$

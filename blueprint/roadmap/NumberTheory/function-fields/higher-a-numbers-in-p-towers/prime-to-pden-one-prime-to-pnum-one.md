@@ -1,6 +1,6 @@
 # The prime-to-$p$ parts of $1$
 
-**The prime-to-$p$ parts of $1$.** For every natural number $p$, the prime-to-$p$ part $x_D$
+For every natural number $p$, the prime-to-$p$ part $x_D$
 of the denominator and the prime-to-$p$ part $x_N$ of the numerator of $x = 1$ are both $1$.
 
 ## Sources

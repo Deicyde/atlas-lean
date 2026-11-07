@@ -1,6 +1,6 @@
 # Winner at a terminal position
 
-**Winner at a terminal position.** Let $M$ be a Kripke model and $\mathit{env}$ an environment
+Let $M$ be a Kripke model and $\mathit{env}$ an environment
 assigning a predicate on worlds to every index. At a game position $(\varphi, w, st)$, where $st$
 is the stack of enclosing fixpoint binders and $|st|$ its length, Verifier wins exactly when
 $\varphi$ is an atom $a$ true at $w$, a negated atom $\neg a$ with $a$ false at $w$, $\top$, a

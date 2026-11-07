@@ -1,6 +1,6 @@
 # Product of the nonic theta functions
 
-**Product of the nonic theta functions.** Let
+Let
 $f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta function and
 write $f(-x) = f(-x,-x^2)$. For every complex number $q$ with $|q| < 1$,
 $f(-q,-q^8) f(-q^2,-q^7) f(-q^4,-q^5) f(-q^3) = f(-q) f(-q^9)^3$, that is,

@@ -1,6 +1,6 @@
 # Nonsingularity of adjacency matrices of random regular graphs
 
-**Nonsingularity of adjacency matrices of random regular graphs.** For every natural number
+For every natural number
 $d \ge 3$, the probability that the adjacency matrix of the uniformly random $d$-regular simple
 graph on $n$ labeled vertices has nonzero determinant (over $\mathbb{Q}$, equivalently over
 $\mathbb{R}$) tends to $1$ as $n \to \infty$ along the natural numbers $n$ with $nd$ even.

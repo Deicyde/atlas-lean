@@ -1,3 +1,3 @@
 # Poisson distribution function vanishes as the mean grows
 
-**Poisson distribution function vanishes as the mean grows.** For fixed `k`, `F_k(x) → 0` as the mean `x → ∞`.
+For fixed `k`, `F_k(x) → 0` as the mean `x → ∞`.

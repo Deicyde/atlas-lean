@@ -1,6 +1,6 @@
 # The alternating polynomial $X_1$
 
-**The alternating polynomial $X_1$.** For a natural number $p$, $X_1$ is the polynomial with
+For a natural number $p$, $X_1$ is the polynomial with
 integer coefficients
 
 $$

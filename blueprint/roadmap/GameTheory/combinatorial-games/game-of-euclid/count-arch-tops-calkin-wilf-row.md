@@ -1,6 +1,6 @@
 # Number of arch tops in a row of the Calkin–Wilf tree
 
-**Number of arch tops in a row of the Calkin–Wilf tree.** For $k \ge 2$ let $T_k$ be the
+For $k \ge 2$ let $T_k$ be the
 number of vertices of row $k$ of the Calkin–Wilf tree of the form $(2m+n)/(m+n)$ with $m/n$ a
 P-position of Euclid in row $k - 2$. Then $3T_k = 2^{k-2} + 2(-1)^k$, that is,
 $T_k = 2^{k-2}/3 + 2(-1)^k/3$.

@@ -1,6 +1,6 @@
 # Fixed points of $r^2 f$ on the rectangular torus, $m$ odd
 
-**Fixed points of $r^2 f$ on the rectangular torus, $m$ odd.** Let $T$ be a finite set of
+Let $T$ be a finite set of
 tile designs, $\sigma$ a permutation of $T$ with $\sigma^2 = 1$, $n$ a positive integer and $m$ a
 positive odd integer. For a shift $(a, b) \in \mathbb{Z}/n \times \mathbb{Z}/m$, count the maps
 $F : \mathbb{Z}/n \times \mathbb{Z}/m \to T$ with $F(x+a, -1-y-b) = \sigma(F(x, y))$ for all

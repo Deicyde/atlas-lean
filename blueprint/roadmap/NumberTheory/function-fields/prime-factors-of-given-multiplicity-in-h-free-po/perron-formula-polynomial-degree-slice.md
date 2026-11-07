@@ -1,6 +1,6 @@
 # Perron's formula for degree slices of monic polynomials
 
-**Perron's formula for degree slices of monic polynomials.** Let $F$ be a finite field,
+Let $F$ be a finite field,
 let $M_m$ be the set of monic polynomials of degree $m$ over $F$, let
 $a \colon F[X] \to \mathbb{C}$, and write $c_m = \sum_{f \in M_m} a(f)$. Let $r$ be a real
 number with $0 < r < 1$ such that the series $\sum_{m \ge 0} |c_m| r^m$ converges, and let

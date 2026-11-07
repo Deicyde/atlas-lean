@@ -1,6 +1,6 @@
 # Correctness of the alpha-beta scan
 
-**Correctness of the alpha-beta scan.** Let $p$ be the player to move, $ts$ a list of game
+Let $p$ be the player to move, $ts$ a list of game
 trees with values in a bounded linear order, and $a \le b$. Let $r$ be the value returned by the
 alpha-beta scan of $ts$ for $p$ with window $[a, b]$, and let $m$ be the best value for $p$ among
 $ts$: the maximum of the minimax values of the trees in $ts$ for the minimizer ($\bot$ if $ts$ is

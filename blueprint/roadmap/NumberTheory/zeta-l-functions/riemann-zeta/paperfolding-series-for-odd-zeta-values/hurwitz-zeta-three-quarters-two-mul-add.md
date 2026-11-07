@@ -1,6 +1,6 @@
 # Hurwitz zeta at $3/4$ and odd arguments
 
-**Hurwitz zeta at $3/4$ and odd arguments.** For every integer $k \ge 1$,
+For every integer $k \ge 1$,
 
 $$
 \zeta(2k+1, \tfrac34) = -\frac{2^{2k-1} \pi^{2k+1} |E_{2k}|}{(2k)!} +

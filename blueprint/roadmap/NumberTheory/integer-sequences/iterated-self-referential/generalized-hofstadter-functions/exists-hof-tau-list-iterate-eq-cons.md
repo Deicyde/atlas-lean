@@ -1,6 +1,6 @@
 # Every iterate $\tau_k^j(k)$ starts with $k$
 
-**Every iterate $\tau_k^j(k)$ starts with $k$.** Let $\tau_k$ be the substitution sending the
+Let $\tau_k$ be the substitution sending the
 letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, extended letterwise to words. For all
 natural numbers $k$ and $j$, the word $\tau_k^j(k)$, obtained by applying $\tau_k$ to the
 one-letter word $k$ a total of $j$ times, has the form $k\,r$ for some word $r$.

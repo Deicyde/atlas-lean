@@ -1,6 +1,6 @@
 # Coefficient vectors from Chan's matrix
 
-**Coefficient vectors from Chan's matrix.** Let $(m_{i,j})_{i,j \ge 1}$ be Chan's matrix, and
+Let $(m_{i,j})_{i,j \ge 1}$ be Chan's matrix, and
 for $i, j \ge 1$ let $a_{i,j} = m_{4i-3,i+j-1}$ and $b_{i,j} = m_{4i-1,i+j-1}$ be the entries of
 the infinite matrices $A$ and $B$. The coefficient vectors
 $X_\alpha = (x_{\alpha,1}, x_{\alpha,2}, \dots)$ of integers, for $\alpha \ge 0$, are defined by

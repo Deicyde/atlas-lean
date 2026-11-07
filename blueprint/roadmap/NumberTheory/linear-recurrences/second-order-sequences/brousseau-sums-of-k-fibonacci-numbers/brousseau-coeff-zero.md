@@ -1,6 +1,6 @@
 # The polynomial $C_k^{(0)}$ is constant $1$
 
-**The polynomial $C_k^{(0)}$ is constant $1$.** For all rational numbers $k$ and $n$, the
+For all rational numbers $k$ and $n$, the
 coefficient polynomial $C_k^{(0)}$ for $k$-Fibonacci Brousseau sums satisfies $C_k^{(0)}(n) = 1$.
 
 ## Sources

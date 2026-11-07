@@ -1,6 +1,6 @@
 # 25011 is not a digitally robust composite
 
-**25011 is not a digitally robust composite.** The number $25011$ is not a digitally robust
+The number $25011$ is not a digitally robust
 composite: replacing its units digit $1$ by $3$ gives the prime $25013$.
 
 ## Sources

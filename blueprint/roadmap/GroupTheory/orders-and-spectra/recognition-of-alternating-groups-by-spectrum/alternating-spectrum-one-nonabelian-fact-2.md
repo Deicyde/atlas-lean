@@ -1,6 +1,6 @@
 # Groups isospectral to an alternating group (Kourovka Problem 16.27)
 
-**Groups isospectral to an alternating group (Kourovka Problem 16.27).** Let $n$ be a natural
+Let $n$ be a natural
 number and let $G$ be a finite group whose spectrum, the set of orders of its elements, equals the
 spectrum of the alternating group $A_n$. Then every composition series of $G$ has at most one
 non-abelian factor.

@@ -1,6 +1,6 @@
 # Unsigned Lah number
 
-**Unsigned Lah number.** For natural numbers $n$ and $k$, the unsigned Lah number $L(n, k)$
+For natural numbers $n$ and $k$, the unsigned Lah number $L(n, k)$
 is $\binom{n-1}{k-1} \frac{n!}{k!}$ when $1 \le k \le n$, $L(0, 0) = 1$, and $L(n, k) = 0$
 otherwise.
 

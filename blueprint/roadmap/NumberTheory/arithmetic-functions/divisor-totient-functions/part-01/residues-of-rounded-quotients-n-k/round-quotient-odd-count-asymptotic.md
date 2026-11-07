@@ -1,6 +1,6 @@
 # Asymptotic density of odd rounded quotients
 
-**Asymptotic density of odd rounded quotients.** There is a constant $C$ such that the
+There is a constant $C$ such that the
 rounding sequence parity count $\mathcal{R}_n$ satisfies $|\mathcal{R}_n - (\pi/2 - 1)n| \le
 C\sqrt{n}$ for every natural number $n \ge 1$; moreover $\mathcal{R}_n / n \to \pi/2 - 1$ as
 $n \to \infty$.

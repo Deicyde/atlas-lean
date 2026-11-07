@@ -1,6 +1,6 @@
 # Generalized regular expressions
 
-**Generalized regular expressions.** A generalized regular expression over an alphabet
+A generalized regular expression over an alphabet
 $\alpha$ is built from ordinary regular expressions over $\alpha$ by complement, union,
 concatenation and Kleene star: every ordinary regular expression over $\alpha$ is one, and if
 $e$, $e_1$, $e_2$ are generalized regular expressions, then so are the complement $\neg e$, the

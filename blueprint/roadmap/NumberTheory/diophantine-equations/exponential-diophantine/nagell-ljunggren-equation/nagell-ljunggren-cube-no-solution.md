@@ -1,6 +1,6 @@
 # The Nagell–Ljunggren cube equation for $x \equiv 2, 3, 5, 6 \pmod 9$
 
-**The Nagell–Ljunggren cube equation for $x \equiv 2, 3, 5, 6 \pmod 9$.** Let $n \ge 3$ be a
+Let $n \ge 3$ be a
 natural number. Then there are no integers $x$ and $y$ with $x \equiv 2, 3, 5$ or $6 \pmod 9$
 such that $x^n - 1 = (x - 1) y^3$. Since such an $x$ is not $1$, this says that
 $(x^n - 1)/(x - 1) = y^3$ has no such integer solution.

@@ -1,6 +1,6 @@
 # Sum of squares of a Tetranacci sequence
 
-**Sum of squares of a Tetranacci sequence.** Let $Q \colon \mathbb{Z} \to \mathbb{Z}$ satisfy
+Let $Q \colon \mathbb{Z} \to \mathbb{Z}$ satisfy
 $Q(m+4) = Q(m+3) + Q(m+2) + Q(m+1) + Q(m)$ for every integer $m$. Then for every natural
 number $n$,
 

@@ -1,6 +1,6 @@
 # Angle bisectors satisfy the bisector equation
 
-**Angle bisectors satisfy the bisector equation.** Let $a, b, c$ be real numbers with
+Let $a, b, c$ be real numbers with
 $|a| \ne |b|$ and $c \ne 0$, and suppose that the lines $y = cx$ and $y = -c^{-1} x$ both bisect
 the angles between the lines $y = ax$ and $y = bx$, that is,
 

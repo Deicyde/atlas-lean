@@ -1,6 +1,6 @@
 # Continuous Hyers–Ulam stability
 
-**Continuous Hyers–Ulam stability.** If `f` is continuous at `0` (in
+If `f` is continuous at `0` (in
 particular if `f` itself is continuous), the additive approximant from
 Hyers' theorem is continuous, hence a continuous real-linear map. The proof:
 continuity of `f` at `0` bounds `f` on a small ball, so the approximant is

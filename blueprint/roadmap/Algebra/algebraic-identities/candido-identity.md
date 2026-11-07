@@ -1,6 +1,6 @@
 # Candido's identity
 
-**Candido's identity.** For all elements $x$ and $y$ of a commutative semiring,
+For all elements $x$ and $y$ of a commutative semiring,
 $2\left(x^4 + y^4 + (x + y)^4\right) = \left(x^2 + y^2 + (x + y)^2\right)^2$.
 
 ## Sources

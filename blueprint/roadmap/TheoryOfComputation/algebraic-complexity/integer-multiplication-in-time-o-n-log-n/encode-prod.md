@@ -1,6 +1,6 @@
 # Encoding of pairs
 
-**Encoding of pairs.** Given encodings $e_A : A \to \Gamma_A^*$ and $e_B : B \to \Gamma_B^*$
+Given encodings $e_A : A \to \Gamma_A^*$ and $e_B : B \to \Gamma_B^*$
 of types $A$ and $B$ as lists over alphabets $\Gamma_A$ and $\Gamma_B$, and a new symbol $\bot$
 in neither alphabet, a pair $(a, b)$ is encoded as a list over the alphabet
 $(\Gamma_A \cup \{\bot\}) \times (\Gamma_B \cup \{\bot\})$ by zipping: its length is the larger of

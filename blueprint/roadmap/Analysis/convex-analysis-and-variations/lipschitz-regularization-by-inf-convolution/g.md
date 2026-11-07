@@ -1,6 +1,6 @@
 # Inf-convolution with a multiple of the distance
 
-**Inf-convolution with a multiple of the distance.** Let $X$ be a metric space with metric
+Let $X$ be a metric space with metric
 $d$, let $f : X \to [0,\infty]$, and let $n$ be a natural number. For $x \in X$,
 
 $$

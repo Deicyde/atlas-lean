@@ -1,6 +1,6 @@
 # Lamport's order is total
 
-**Lamport's order is total.** In every execution, for any two distinct positions $a \ne b$
+In every execution, for any two distinct positions $a \ne b$
 that both hold events, $a$ precedes $b$ or $b$ precedes $a$ in Lamport's total order.
 
 Two events of the same process have different timestamps (an earlier event of a process has

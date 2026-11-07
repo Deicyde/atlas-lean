@@ -1,6 +1,6 @@
 # Order of the inertia group
 
-**Order of the inertia group.** Let $A$ and $B$ be integral domains, with $B$ an $A$-algebra
+Let $A$ and $B$ be integral domains, with $B$ an $A$-algebra
 that is finite and flat as an $A$-module, and let $G$ be a finite group acting faithfully on $B$
 by $A$-algebra automorphisms such that every $G$-invariant element of $B$ comes from $A$. Let
 $\mathfrak p$ be a maximal ideal of $A$ and $\mathfrak P$ a maximal ideal of $B$ lying over

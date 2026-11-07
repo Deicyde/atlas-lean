@@ -1,6 +1,6 @@
 # Wilkie's conjecture for the real exponential field
 
-**Wilkie's conjecture for the real exponential field.** Let $X \subseteq \mathbb{R}^n$ be
+Let $X \subseteq \mathbb{R}^n$ be
 definable in $\mathbb{R}_{\exp}$. Then there is a polynomial $f$ in two variables with real
 coefficients such that the following holds for all natural numbers $g$ and $H$. Let
 $X^{\mathrm{trans}}(g, H)$ be the set of points $x = (x_1, \dots, x_n)$ of the transcendental part

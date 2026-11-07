@@ -1,3 +1,3 @@
 # Diagonal identity in Wald's second equation
 
-**Diagonal identity in Wald's second equation.** Wald's equation applied to the squared increments gives the diagonal identity.
+Wald's equation applied to the squared increments gives the diagonal identity.

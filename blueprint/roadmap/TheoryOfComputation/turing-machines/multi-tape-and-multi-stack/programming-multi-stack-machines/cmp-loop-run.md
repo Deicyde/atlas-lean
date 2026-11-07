@@ -1,6 +1,6 @@
 # The comparison loop
 
-**The comparison loop.** Let $a, b, t_a, t_b$ be pairwise distinct stacks with unit symbols
+Let $a, b, t_a, t_b$ be pairwise distinct stacks with unit symbols
 $u_a, u_b, u_{t_a}, u_{t_b}$, and let $r$ map each ordering to a label. Suppose the machine $M$
 has at label $\ell$ the comparison round of $a$ and $b$ with scratch stacks $t_a, t_b$ and units
 $u_{t_a}, u_{t_b}$ that repeats at $\ell$ and exits to $r(\mathrm{lt})$, $r(\mathrm{eq})$ and

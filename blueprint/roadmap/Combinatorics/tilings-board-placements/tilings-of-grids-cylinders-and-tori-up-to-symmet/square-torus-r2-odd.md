@@ -1,6 +1,6 @@
 # Fixed tilings of the odd square torus under a half-turn
 
-**Fixed tilings of the odd square torus under a half-turn.** Let $n$ be an odd positive
+Let $n$ be an odd positive
 integer, $T$ a finite set of tile designs and $\sigma$ a permutation of $T$ with $\sigma^2 = 1$,
 and write $t_1$ for the number of designs $d \in T$ with $\sigma(d) = d$. Let $S$ be the torus
 shift sum of the half-turn cell map $r^2(x, y) = (-1-x, -1-y)$ on $(\mathbb{Z}/n\mathbb{Z})^2$,

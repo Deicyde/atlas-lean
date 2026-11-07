@@ -1,6 +1,6 @@
 # MULTIPLE KNAPSACK is NP-complete
 
-**MULTIPLE KNAPSACK is NP-complete.** The decision problem MULTIPLE KNAPSACK belongs to NP,
+The decision problem MULTIPLE KNAPSACK belongs to NP,
 and every decision problem in NP has a polynomial-time many-one reduction to MULTIPLE KNAPSACK.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Past events factor against grid increments
 
-**Past events factor against grid increments.** Let $\mu$ be a probability measure and let
+Let $\mu$ be a probability measure and let
 $(B_t)_{t \ge 0}$ be a real process adapted to a filtration $(\mathcal{F}_t)_{t \ge 0}$ such that
 $B_t - B_s$ is independent of $\mathcal{F}_s$ under $\mu$ whenever $s \le t$. Let
 $s \in \mathbb{R}_{\ge 0}$ and let $S \subseteq \mathbb{R}_{\ge 0}$ be finite. For $t \in S$ let

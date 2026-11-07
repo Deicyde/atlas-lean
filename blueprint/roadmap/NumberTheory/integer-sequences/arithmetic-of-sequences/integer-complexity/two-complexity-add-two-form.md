@@ -1,6 +1,6 @@
 # Zhang's four exceptional forms
 
-**Zhang's four exceptional forms.** For natural numbers $m$ and $n$, $n$ has one of the four
+For natural numbers $m$ and $n$, $n$ has one of the four
 exceptional forms for $m$ when one of the following holds:
 (a) $n = 2^m + 2^{m_2} + 2^{m_3}$ for some natural numbers $m > m_2 > m_3 \ge 1$;
 (b) $n = 2^m + 2^{m_2} + 2^{m_3} + 2^{m_4}$ for some natural numbers $m > m_2 > m_3 > m_4 \ge 2$

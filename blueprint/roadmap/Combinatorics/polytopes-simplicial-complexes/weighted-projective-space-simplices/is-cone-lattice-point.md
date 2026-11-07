@@ -1,6 +1,6 @@
 # Lattice points of the cone over a polytope
 
-**Lattice points of the cone over a polytope.** For a set $P \subseteq \mathbb{R}^n$, a pair
+For a set $P \subseteq \mathbb{R}^n$, a pair
 $(t, w)$ with $t \in \mathbb{N}$ and $w \in \mathbb{Z}^n$ is a lattice point of the cone over $P$
 when $w$ is a lattice point of the dilate $tP = \{t y : y \in P\}$.
 

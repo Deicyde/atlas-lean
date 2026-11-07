@@ -1,6 +1,6 @@
 # The 1-in-3-SAT decision problem
 
-**The 1-in-3-SAT decision problem.** The 1-in-3-SAT decision problem accepts a bitstring $x$
+The 1-in-3-SAT decision problem accepts a bitstring $x$
 exactly when $x$ decodes, under the canonical bitstring encoding, to a pair $(n, \varphi)$ of a
 natural number $n$ and a CNF formula $\varphi$ such that every clause of $\varphi$ has exactly
 three literals, every literal $(y, b)$ of $\varphi$ has variable index $y < n$, and some

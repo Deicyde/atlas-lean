@@ -1,6 +1,6 @@
 # Right-special factors
 
-**Right-special factors.** Let $a$ be an infinite binary word and $n$ a natural number. The
+Let $a$ be an infinite binary word and $n$ a natural number. The
 right-special factors of $a$ of length $n$ are the binary words $u$ of length $n$ such that both
 $u0$ and $u1$ are factors of $a$.
 

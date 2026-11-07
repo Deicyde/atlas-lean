@@ -1,6 +1,6 @@
 # Hyperplane sum
 
-**Hyperplane sum.** For natural numbers $p$ and $n$ and a subgroup $G$ of
+For natural numbers $p$ and $n$ and a subgroup $G$ of
 $\mathrm{GL}_n(\mathbb{Z}/p\mathbb{Z})$, the hyperplane sum of $G$ is the rational number
 $r = \sum_W ((p - 1) \alpha_W + s_W - 1)$, where $W$ runs over the maximal proper submodules
 of $V = (\mathbb{Z}/p\mathbb{Z})^n$ (the hyperplanes of $V$ when $p$ is prime) and

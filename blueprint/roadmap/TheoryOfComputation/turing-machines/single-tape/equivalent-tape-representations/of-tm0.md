@@ -1,6 +1,6 @@
 # Single-tape simulation of a Post–Turing machine
 
-**Single-tape simulation of a Post–Turing machine.** Let $\Gamma_0$ be a finite alphabet with
+Let $\Gamma_0$ be a finite alphabet with
 blank symbol $b$ and at least one non-blank symbol, and let $M$ be a Post–Turing machine over
 $\Gamma_0$ with start state $q_0$, supported by the finite set of states $S$ (so $q_0 \in S$, and
 from a state in $S$ the machine $M$ only enters states in $S$). The single-tape machine simulating

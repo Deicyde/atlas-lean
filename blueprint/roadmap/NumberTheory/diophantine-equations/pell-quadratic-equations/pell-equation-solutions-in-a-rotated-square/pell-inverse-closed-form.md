@@ -1,6 +1,6 @@
 # Closed form for inverting the sum of the Pell interpolating functions
 
-**Closed form for inverting the sum of the Pell interpolating functions.** Let $D$ be an
+Let $D$ be an
 integer, let $(\alpha, \beta)$ be the fundamental solution of the Pell equation $X^2 - D Y^2 = 1$,
 put $\varepsilon = \alpha + \beta \sqrt{D}$ and $\bar\varepsilon = \alpha - \beta \sqrt{D}$, and let
 $u(t) = (\varepsilon^t + \bar\varepsilon^t) / 2$ and

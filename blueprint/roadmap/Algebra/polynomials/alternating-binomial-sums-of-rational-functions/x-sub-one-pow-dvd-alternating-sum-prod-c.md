@@ -1,6 +1,6 @@
 # The factor $(x - 1)^n$ for polynomials with distinct real roots
 
-**The factor $(x - 1)^n$ for polynomials with distinct real roots.** Let $c$ be a real
+Let $c$ be a real
 number, let $s$ be a finite set of real numbers, and let $f(x) = c \prod_{r \in s} (x - r)$ in
 $\mathbb{R}[x]$. For every natural number $n$, the polynomial $(x - 1)^n$ divides the polynomial
 

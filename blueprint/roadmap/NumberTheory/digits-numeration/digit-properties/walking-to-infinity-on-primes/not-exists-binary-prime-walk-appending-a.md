@@ -1,6 +1,6 @@
 # No binary prime walk to infinity in steps of one or two digits
 
-**No binary prime walk to infinity in steps of one or two digits.** There is no sequence of
+There is no sequence of
 primes $p_0, p_1, p_2, \ldots$ such that for every $i \ge 0$ there are $n \in \{1, 2\}$ and a
 natural number $k < 2^n$ with $p_{i+1} = 2^n p_i + k$. That is, starting from any prime, one
 cannot walk to infinity on primes by appending one or two binary digits at a time on the right.

@@ -1,6 +1,6 @@
 # Conditional entropy of a finite observation given a sub-$\sigma$-algebra
 
-**Conditional entropy of a finite observation given a sub-$\sigma$-algebra.** Let $\mu$ be a
+Let $\mu$ be a
 probability measure on a measurable space $\Omega$, let $m$ be a sub-$\sigma$-algebra of the
 $\sigma$-algebra of $\Omega$, let $n \in \mathbb{N}$, and let $f : \Omega \to \{0, \dots, n-1\}$ be
 measurable. For each $i < n$ let $P_i = \mathbb{E}_\mu[\mathbf{1}_{\{f = i\}} \mid m]$ be the

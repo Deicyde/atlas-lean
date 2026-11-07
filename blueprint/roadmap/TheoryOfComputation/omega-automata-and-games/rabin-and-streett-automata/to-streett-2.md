@@ -1,6 +1,6 @@
 # Streett automaton with the pairs of a Rabin automaton
 
-**Streett automaton with the pairs of a Rabin automaton.** Given a Rabin automaton, this is
+Given a Rabin automaton, this is
 the Streett automaton with the same states, initial states and transitions and the same set
 of pairs.
 

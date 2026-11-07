@@ -1,6 +1,6 @@
 # Admissible exponents for the partial Hadamard leading term
 
-**Admissible exponents for the partial Hadamard leading term.** For natural numbers $n$ and
+For natural numbers $n$ and
 $m$, let $N_{n,m}$ be the number of $n \times m$ partial Hadamard matrices, and for natural
 numbers $n$ and $t$ let $A_{n,4t} = 2^{4nt + (n-1)^2} (8\pi t)^{-n(n-1)/4}$ be the de
 Launey–Levin leading term. A real number $\alpha$ is admissible for the leading term when, for

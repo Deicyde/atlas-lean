@@ -1,6 +1,6 @@
 # Primes congruent to $-1$ modulo $165$ are not Euler primes
 
-**Primes congruent to $-1$ modulo $165$ are not Euler primes.** For all natural numbers
+For all natural numbers
 $q$ and $N$ with $q \equiv -1 \pmod{165}$, $q$ is not an Euler prime of $N$. In particular, no
 prime $q \equiv -1 \pmod{165}$ is the Euler prime of an odd perfect number.
 

@@ -1,6 +1,6 @@
 # Nagell–Lutz integrality
 
-**Nagell–Lutz integrality.** Let $E : y^2 = x^3 + A x + B$ be an elliptic curve over
+Let $E : y^2 = x^3 + A x + B$ be an elliptic curve over
 $\mathbb{Q}$ with $A, B \in \mathbb{Z}$. Every point $P = (x, y) \in E(\mathbb{Q})$ of finite order
 $m \ge 2$ has $x, y \in \mathbb{Z}$.
 

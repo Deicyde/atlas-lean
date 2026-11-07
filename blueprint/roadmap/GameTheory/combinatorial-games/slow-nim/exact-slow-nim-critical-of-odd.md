@@ -1,6 +1,6 @@
 # Unique critical-lowering move for odd parameter (Corollary 1 (ii))
 
-**Unique critical-lowering move for odd parameter (Corollary 1 (ii)).** Let $k \ge 2$, let
+Let $k \ge 2$, let
 $m$ be odd, and let $x \in \mathbb{N}^{k+1}$ be an $m$-critical position of Slow$\{k\}$-Nim on
 $k + 1$ stacks. Then $x$ has exactly one even entry $x_i$. The position $x'$ obtained from $x$ by
 removing one token from every pile other than $i$ is an option of $x$, it is the only option of

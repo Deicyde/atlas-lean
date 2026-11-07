@@ -1,6 +1,6 @@
 # The first Mallows letter below one half
 
-**The first Mallows letter below one half.** For every real number $\alpha < 1/2$, the first
+For every real number $\alpha < 1/2$, the first
 letter $M_1(\alpha)$ of the Mallows representation of $\alpha$ is $L$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Max flow is in P (Edmonds-Karp)
 
-**Max flow is in P (Edmonds-Karp).** The max-flow decision problem belongs to the complexity
+The max-flow decision problem belongs to the complexity
 class P. This is the problem of deciding, for a vertex count $n$, a list of edges joining
 distinct vertices below $n$ with natural-number capacities, distinct vertices $s, t < n$ and a
 target $K$, encoded as a bitstring, whether some flow in natural numbers that respects the

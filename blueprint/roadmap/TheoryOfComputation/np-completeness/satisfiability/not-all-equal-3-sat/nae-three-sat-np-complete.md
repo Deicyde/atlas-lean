@@ -1,6 +1,6 @@
 # NOT-ALL-EQUAL 3-SAT is NP-complete
 
-**NOT-ALL-EQUAL 3-SAT is NP-complete.** The decision problem NOT-ALL-EQUAL 3-SAT over
+The decision problem NOT-ALL-EQUAL 3-SAT over
 bitstrings belongs to NP, and every decision problem in NP has a polynomial-time many-one
 reduction to it.
 

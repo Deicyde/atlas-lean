@@ -1,6 +1,6 @@
 # Odd multiple harmonic numbers of depth zero
 
-**Odd multiple harmonic numbers of depth zero.** For every natural number $n$, the
+For every natural number $n$, the
 depth-zero odd harmonic number $O_n(0)$ equals $1$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Ripple-carry adder
 
-**Ripple-carry adder.** The $n$-bit ripple-carry adder is the circuit with $2n + 1$ inputs,
+The $n$-bit ripple-carry adder is the circuit with $2n + 1$ inputs,
 $5n$ binary gates, each an XOR, AND or OR gate, and $n + 1$ outputs, built as follows. Write $a_i$
 for input $i$, $b_i$ for input $n + i$ and $c_0$ for input $2n$, where $i < n$. For each $i < n$,
 gates $g_{5i}, \dots, g_{5i+4}$ form a full adder for position $i$: $g_{5i} = a_i \oplus b_i$,

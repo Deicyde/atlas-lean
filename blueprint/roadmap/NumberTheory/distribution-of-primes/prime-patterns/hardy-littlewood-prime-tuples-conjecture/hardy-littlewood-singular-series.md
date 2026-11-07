@@ -1,6 +1,6 @@
 # The Hardy–Littlewood singular series
 
-**The Hardy–Littlewood singular series.** For an $m$-tuple $b$ of integers, the singular
+For an $m$-tuple $b$ of integers, the singular
 series $\mathfrak{S}(b)$ is the product over all primes $p$ of the Euler factors
 
 $$\left(\frac{p}{p-1}\right)^{m-1} \frac{p - v_p(b)}{p - 1},$$

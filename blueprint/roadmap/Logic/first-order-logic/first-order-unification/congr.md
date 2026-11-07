@@ -1,6 +1,6 @@
 # Lists of equations with the same unifiers satisfy the same specification
 
-**Lists of equations with the same unifiers satisfy the same specification.** Let $E$ and
+Let $E$ and
 $E'$ be lists of equations such that a substitution unifies $E$ exactly when it unifies $E'$.
 If an optional substitution $r$ satisfies the unification specification for $E'$ (a returned
 substitution $s$ unifies the list and every unifier $s'$ of it satisfies $s' = s \gg s'$,

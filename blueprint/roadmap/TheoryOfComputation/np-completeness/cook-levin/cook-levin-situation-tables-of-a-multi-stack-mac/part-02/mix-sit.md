@@ -1,6 +1,6 @@
 # Mixed-radix index of a situation
 
-**Mixed-radix index of a situation.** Fix an encoding record $E$ of a finite multi-stack
+Fix an encoding record $E$ of a finite multi-stack
 machine $M$. Let $K$ be the number of stacks of $E$, $d$ the window depth of $M$, $A_0$ the number
 of (label, state) codes of $E$, $g$ the symbol-code bound of $E$ and $N$ the number of situations.
 For a code $c < A_0$ and window contents $w(k, j)$ with $w(k, j) < g$ for all $k < K$ and $j < d$,

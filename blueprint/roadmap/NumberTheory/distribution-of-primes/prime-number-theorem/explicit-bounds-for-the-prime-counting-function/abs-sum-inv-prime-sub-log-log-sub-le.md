@@ -1,6 +1,6 @@
 # Axler's explicit Mertens second theorem
 
-**Axler's explicit Mertens second theorem.** For every real $x \ge 1757126630797$,
+For every real $x \ge 1757126630797$,
 
 $$
 \Big|\sum_{p \le x} \frac{1}{p} - \log\log x - B\Big| \le

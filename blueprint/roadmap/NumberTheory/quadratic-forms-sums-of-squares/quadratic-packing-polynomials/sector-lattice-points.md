@@ -1,6 +1,6 @@
 # Lattice points of a sector
 
-**Lattice points of a sector.** For a real number $\alpha$, let
+For a real number $\alpha$, let
 $S(\alpha) = \{(x, y) \in \mathbb{R}^2 : 0 \le y \le \alpha x\}$ be the sector of slope
 $\alpha$. Its lattice points are $I(\alpha) = S(\alpha) \cap \mathbb{Z}^2$, viewed as a subset
 of $\mathbb{R}^2$.

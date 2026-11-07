@@ -1,6 +1,6 @@
 # Colored Schreier multiset counts are a subsequence of the parent sequence
 
-**Colored Schreier multiset counts are a subsequence of the parent sequence.** For all
+For all
 positive integers $s$, $p$ and $n$, the number $|B^{(s)}_{p,n}|$ of colored Schreier-type
 multisets equals the term $b^{(s)}_{p,ns-s+1}$ of the parent sequence $b^{(s)}_{p,m}$.
 

@@ -1,6 +1,6 @@
 # Related environments for the call-by-name CPS translation
 
-**Related environments for the call-by-name CPS translation.** Fix an answer type $R$ and an
+Fix an answer type $R$ and an
 interpretation of the base types, and write $C(A) = (A^\ast \to R) \to R$, where $A^\ast$ is the
 call-by-name CPS translation of a simple type $A$. Let $\eta$ be an environment for a context
 $\Gamma = A_1, \dots, A_n$, assigning to each variable $x$ of type $A$ a value $\eta(x)$ of type

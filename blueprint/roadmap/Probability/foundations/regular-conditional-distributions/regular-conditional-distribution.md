@@ -1,6 +1,6 @@
 # Regular conditional distribution (measure-valued family)
 
-**Regular conditional distribution (measure-valued family).** Let $P$ be a measure on a
+Let $P$ be a measure on a
 measurable space $(\Omega, \mathcal{F})$, let $S$ be a measurable space, $X : \Omega \to S$ a
 map, $\mathcal{G}$ a σ-algebra on $\Omega$, and $\rho$ a family assigning a measure $\rho_\omega$
 on $S$ to each $\omega \in \Omega$. Then $\rho$ is a regular conditional distribution of $X$

@@ -1,6 +1,6 @@
 # The evidence is the integral of the likelihood
 
-**The evidence is the integral of the likelihood.** Let $\kappa$ be a kernel from a measurable
+Let $\kappa$ be a kernel from a measurable
 space $\Theta$ to a measurable space $\mathcal X$ with measurable singletons, and $\mu$ a measure on
 $\Theta$. For every $x \in \mathcal X$,
 

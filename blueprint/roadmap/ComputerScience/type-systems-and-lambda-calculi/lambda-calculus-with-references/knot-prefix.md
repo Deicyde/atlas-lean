@@ -1,6 +1,6 @@
 # The first four steps of Landin's knot
 
-**The first four steps of Landin's knot.** Write $\ell_0$ for store location $0$ and $[t]$
+Write $\ell_0$ for store location $0$ and $[t]$
 for the store whose only entry, at $\ell_0$, is $t$, and let
 $\mathrm{id} = \lambda x{:}\mathrm{Unit}.\ x$ and $b_0 = \lambda x{:}\mathrm{Unit}.\ (!\ell_0)\,x$.
 Each of the following is one call-by-value step: Landin's knot with the empty store steps to

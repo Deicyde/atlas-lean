@@ -1,6 +1,6 @@
 # Polynomials are not irrational
 
-**Polynomials are not irrational.** Let $K$ be a field. For every polynomial $P \in K[x]$,
+Let $K$ be a field. For every polynomial $P \in K[x]$,
 the image of $P$ in $K((x^{-1}))$ is not irrational.
 
 ## Sources

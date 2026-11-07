@@ -1,6 +1,6 @@
 # Duality for OOZ-qMZVs
 
-**Duality for OOZ-qMZVs.** Call an index $(k_1, \dots, k_r)$ of natural numbers SZ-admissible
+Call an index $(k_1, \dots, k_r)$ of natural numbers SZ-admissible
 if it is empty or $k_1 \ge 1$. Extend $\zeta_q^{\mathrm{OOZ}}$ and the map $V$ linearly to formal
 $\mathbb{Q}$-linear combinations of indices, and let $\tilde\tau$ act on such a combination by
 replacing each index with its SZ dual index. Let $w$ be an SZ-admissible index and let $x$ be a

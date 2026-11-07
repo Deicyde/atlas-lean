@@ -1,6 +1,6 @@
 # Labels of the initial-row generator
 
-**Labels of the initial-row generator.** For natural numbers $g$ and $n$, the labels are: a
+For natural numbers $g$ and $n$, the labels are: a
 label for each stage of the first precomputation part and one for each stage of the second; for
 each loop phase $p$, a loop-head label, a counter-reset label, two base-copy labels, a
 multiplication label for each multiplication stage and a base-drain label; for the input loop,

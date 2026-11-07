@@ -1,6 +1,6 @@
 # The empty set is sum-free
 
-**The empty set is sum-free.** For every set $G$ with an addition, the empty subset of $G$ is
+For every set $G$ with an addition, the empty subset of $G$ is
 sum-free.
 
 ## Sources

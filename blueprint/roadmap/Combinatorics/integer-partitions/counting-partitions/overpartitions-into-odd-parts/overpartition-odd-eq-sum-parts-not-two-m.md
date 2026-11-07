@@ -1,6 +1,5 @@
 # Overpartitions into odd parts from partitions with no part congruent to 2 modulo 4
 
-**Overpartitions into odd parts from partitions with no part congruent to 2 modulo 4.**
 Let $\mathrm{po}(m)$ be the number of overpartitions of $m$ into odd parts and $P_2(m)$ the
 number of partitions of $m$ with no part congruent to $2$ modulo $4$. For every natural
 number $n$, $\mathrm{po}(n) = \sum_k P_2(n - k(k+1)/2)$, the sum running over the natural

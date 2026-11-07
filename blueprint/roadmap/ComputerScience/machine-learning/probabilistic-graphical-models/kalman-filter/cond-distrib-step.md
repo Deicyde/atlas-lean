@@ -1,6 +1,6 @@
 # One filter step is the exact posterior
 
-**One filter step is the exact posterior.** Let $x$ and $w$ be measurable random vectors in
+Let $x$ and $w$ be measurable random vectors in
 $\mathbb{R}^n$ and $v$ a measurable random vector in $\mathbb{R}^p$ on a probability space, with
 $x$ independent of $w$ and the pair $(x, w)$ independent of $v$. Suppose $x$ has the law
 $N(m, P)$ of a belief with mean $m$ and positive semidefinite covariance $P$, $w$ has law

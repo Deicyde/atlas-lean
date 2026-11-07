@@ -1,6 +1,6 @@
 # Maximal distinct sum-free sets in groups of even order
 
-**Maximal distinct sum-free sets in groups of even order.** Write $f^*_{\max}(G)$ for the
+Write $f^*_{\max}(G)$ for the
 number of maximal distinct sum-free subsets of an abelian group $G$. There is a natural number
 $C$ such that for every real $\varepsilon > 0$ there is $n_0$ with the following property. Let
 $r \ge 1$, let $\alpha_1, \dots, \alpha_r \ge 1$, let $K$ be a finite abelian group of odd order,

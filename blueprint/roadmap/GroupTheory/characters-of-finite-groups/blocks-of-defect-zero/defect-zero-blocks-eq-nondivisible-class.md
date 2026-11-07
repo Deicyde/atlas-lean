@@ -1,6 +1,6 @@
 # Kourovka Problem 12.80(a): blocks of defect zero and commutator equations
 
-**Kourovka Problem 12.80(a): blocks of defect zero and commutator equations.** For every prime
+For every prime
 $p$ and every finite group $G$ whose order is divisible by $p$, the number of irreducible complex
 characters of $G$ of $p$-defect zero equals the number of conjugacy classes of $G$ containing an
 element $g$ for which the number of pairs $(x, y) \in G \times G$ with

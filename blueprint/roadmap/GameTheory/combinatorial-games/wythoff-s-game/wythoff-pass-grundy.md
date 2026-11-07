@@ -1,6 +1,6 @@
 # Grundy numbers of Wythoff's game with a pass
 
-**Grundy numbers of Wythoff's game with a pass.** Wythoff's game with a pass has positions
+Wythoff's game with a pass has positions
 $(x, y, p)$ with $x, y \in \mathbb{N}$ and $p \in \{0, 1\}$, where $p = 1$ means the one-time pass
 is still available. A move goes from $(x, y, p)$ to $(u, y, p)$ with $u < x$, to $(x, v, p)$
 with $v < y$, or to $(x - t, y - t, p)$ with $1 \le t \le \min(x, y)$, or, when $p = 1$ and

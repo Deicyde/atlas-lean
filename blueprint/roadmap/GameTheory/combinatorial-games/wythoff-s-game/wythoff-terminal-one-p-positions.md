@@ -1,6 +1,6 @@
 # P-positions of $K^1$
 
-**P-positions of $K^1$.** Let $a_n$ be the least natural number $m > 1$ with $m \ne a_i$ and
+Let $a_n$ be the least natural number $m > 1$ with $m \ne a_i$ and
 $m \ne b_i$ for all $i < n$, where $b_i = a_i + i + 2$; so $(a_0, b_0) = (2, 4)$. Let $P$ be the
 set of positions $(x, y)$ with $x + y \le 1$, together with the pairs $(a_n, b_n)$ and
 $(b_n, a_n)$ for $n \ge 0$. Then $P$ is stable, meaning no move of $K^1$ leads from a position

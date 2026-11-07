@@ -1,6 +1,6 @@
 # Convolution of the Pell numbers with the Fibonacci numbers
 
-**Convolution of the Pell numbers with the Fibonacci numbers.** Let $\mathcal{P}_j$ be the
+Let $\mathcal{P}_j$ be the
 Pell numbers ($\mathcal{P}_0 = 0$, $\mathcal{P}_1 = 1$,
 $\mathcal{P}_{j+2} = 2\mathcal{P}_{j+1} + \mathcal{P}_j$) and $F_j$ the Fibonacci numbers
 ($F_0 = 0$, $F_1 = 1$, $F_{j+2} = F_{j+1} + F_j$), that is, the Fibonacci $2$-step numbers. For

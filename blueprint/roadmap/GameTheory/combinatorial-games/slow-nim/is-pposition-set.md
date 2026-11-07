@@ -1,6 +1,6 @@
 # Set of P-positions
 
-**Set of P-positions.** Let $R$ be a move relation on a type of positions, where $R\,x\,y$
+Let $R$ be a move relation on a type of positions, where $R\,x\,y$
 means that $y$ is an option of $x$. A set $P$ of positions is a set of P-positions for $R$ when
 no position of $P$ has an option in $P$, and every position outside $P$ has an option in $P$.
 

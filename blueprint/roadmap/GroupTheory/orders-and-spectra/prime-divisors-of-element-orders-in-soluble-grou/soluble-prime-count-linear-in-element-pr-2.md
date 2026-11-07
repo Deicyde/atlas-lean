@@ -1,6 +1,6 @@
 # Finite soluble groups satisfy a linear prime-divisor bound
 
-**Finite soluble groups satisfy a linear prime-divisor bound.** There are natural numbers $a$ and
+There are natural numbers $a$ and
 $b$ such that for every finite soluble group $G$ and every natural number $m$, if the order of
 every element of $G$ has at most $m$ distinct prime divisors, then $|G|$ has at most $am + b$
 distinct prime divisors. That is, Kourovka Problem 14.66 has a positive answer.

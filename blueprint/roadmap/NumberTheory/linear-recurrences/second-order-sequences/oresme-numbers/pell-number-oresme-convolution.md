@@ -1,6 +1,6 @@
 # Pell–Oresme convolution
 
-**Pell–Oresme convolution.** Let $P_m$ denote the Pell numbers and let $O_m = m/2^m$ denote
+Let $P_m$ denote the Pell numbers and let $O_m = m/2^m$ denote
 the Oresme numbers. For every natural number $n$,
 $\sum_{k=0}^{n} P_k O_{n-k} = \frac{2}{49}(5 P_{n+1} - 4 P_n) - \frac{2(7n + 5)}{49 \cdot 2^n}$.
 

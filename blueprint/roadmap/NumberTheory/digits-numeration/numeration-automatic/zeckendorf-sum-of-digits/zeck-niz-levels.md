@@ -1,6 +1,6 @@
 # The new-information zones as tower levels
 
-**The new-information zones as tower levels.** Let $\ell \ge 2$ and let $r$ satisfy
+Let $\ell \ge 2$ and let $r$ satisfy
 $F_\ell \le r < F_{\ell+1}$, where $F_1 = F_2 = 1, F_3 = 2, \dots$ are the Fibonacci numbers. For
 a Zeckendorf-adic integer $x = (x_i)_{i \ge 2}$ let $v_k(x) = \sum_{i=2}^{k+1} x_i F_i$, and let
 $\mathrm{NIZ}_k$ be the new-information zone of order $k$ for $r$. Then for every

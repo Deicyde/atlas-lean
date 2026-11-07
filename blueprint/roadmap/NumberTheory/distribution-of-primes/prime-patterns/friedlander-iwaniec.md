@@ -1,6 +1,6 @@
 # Friedlander–Iwaniec theorem
 
-**Friedlander–Iwaniec theorem.** There are infinitely many primes $p$ of the form
+There are infinitely many primes $p$ of the form
 $p = a^2 + b^4$ with $a$ and $b$ natural numbers.
 
 ## Sources

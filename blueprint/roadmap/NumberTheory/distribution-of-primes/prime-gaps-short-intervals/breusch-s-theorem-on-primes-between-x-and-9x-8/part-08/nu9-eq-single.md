@@ -1,6 +1,6 @@
 # Single-term valuation identity for large primes
 
-**Single-term valuation identity for large primes.** Write $v_p(m)$ for the exponent of $p$
+Write $v_p(m)$ for the exponent of $p$
 in $m$ and $\mu$ for the Möbius function, and set
 $\nu_p(n) = \sum_{d \mid 210} \mu(d)\bigl(v_p((2100n/d)!) - v_p((1890n/d)!) -
 v_p((210n/d)!)\bigr)$ and, for real $x \ge 0$,

@@ -1,6 +1,6 @@
 # Parity is not in AC0
 
-**Parity is not in AC0.** The parity language, which accepts a bitstring exactly when an odd
+The parity language, which accepts a bitstring exactly when an odd
 number of its entries are true, is not in the class $\mathsf{AC}^0$.
 
 ## Sources

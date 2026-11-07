@@ -1,6 +1,6 @@
 # Ramanujan's infinite identity for $\sum_k r^k/(1-ax^k)$
 
-**Ramanujan's infinite identity for $\sum_k r^k/(1-ax^k)$.** Let $a, r, x$ be complex
+Let $a, r, x$ be complex
 numbers with $|r| < 1$ and $|x| \le 1$ such that $1 - a x^k \ne 0$ for every integer $k \ge 1$,
 and such that, if $|x| = 1$, then $|a r| < 1$ and there is a real $\delta > 0$ with
 $|1 - a x^k| \ge \delta$ for every $k \ge 1$. Then $1 - r x^{k-1} \ne 0$ for every $k \ge 1$, the

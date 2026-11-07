@@ -1,6 +1,6 @@
 # Appending to the second sequence loses at most one gap
 
-**Appending to the second sequence loses at most one gap.** Let
+Let
 $\sigma : \alpha \to \alpha \to \mathbb{Z}$ be a substitution score, $g \in \mathbb{Z}$ a gap
 score, and write $N(x, y)$ for the Needleman–Wunsch score of sequences $x, y$ over $\alpha$ with
 respect to $\sigma$ and $g$. For all sequences $x, y$ and every letter $b \in \alpha$, writing

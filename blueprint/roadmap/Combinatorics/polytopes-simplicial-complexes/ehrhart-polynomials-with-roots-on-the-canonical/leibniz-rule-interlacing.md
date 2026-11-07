@@ -1,6 +1,6 @@
 # Fisk's Leibniz rule for interlacing
 
-**Fisk's Leibniz rule for interlacing.** Let $f, f_1, g, g_1$ be real polynomials with
+Let $f, f_1, g, g_1$ be real polynomials with
 positive leading coefficients, each having only real roots, such that $f$ and $g$ have no common
 real root, $f_1$ interlaces $f$, and $g_1$ interlaces $g$. Then $f_1 g_1$ interlaces
 $f g_1 + f_1 g$, the polynomial $f g_1 + f_1 g$ interlaces $f g$, the roots of $f g_1 + f_1 g$

@@ -1,6 +1,6 @@
 # Correctness of compilation to the stack machine
 
-**Correctness of compilation to the stack machine.** Let $c$ be a command and $s$, $s'$ states
+Let $c$ be a command and $s$, $s'$ states
 such that $c$ run from $s$ terminates in $s'$ under the big-step semantics. Let $C_0(c)$ be the
 compiled code of $c$ at base program counter $0$ and $\ell(c)$ the instruction count of $c$.
 Then the stack machine running $C_0(c)$ goes in finitely many steps from program counter $0$,

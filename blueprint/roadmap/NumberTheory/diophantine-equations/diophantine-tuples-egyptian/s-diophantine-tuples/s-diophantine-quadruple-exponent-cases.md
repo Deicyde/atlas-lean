@@ -1,6 +1,6 @@
 # Exponent cases for $\{p, q\}$-Diophantine quadruples with $p \equiv 3 \pmod 4$
 
-**Exponent cases for $\{p, q\}$-Diophantine quadruples with $p \equiv 3 \pmod 4$.** Let
+Let
 $p \ne q$ be primes with $p \equiv 3 \pmod 4$, and let $a < b < c < d$ be natural numbers such
 that $\{a, b, c, d\}$ is a $\{p, q\}$-Diophantine tuple. Write $s_1, \dots, s_6$ for
 $ab + 1, ac + 1, ad + 1, bc + 1, bd + 1, cd + 1$, and let $\alpha_i$ and $\beta_i$ be the

@@ -1,6 +1,6 @@
 # The clocked universal machine on stacks
 
-**The clocked universal machine on stacks.** Let $c$ be a code, $x$ a list of bits and $T$ a
+Let $c$ be a code, $x$ a list of bits and $T$ a
 natural number, and let $|C|$ be the length of the code stack of $c$. Start the program of the
 clocked universal machine at the label $\mathsf{sc0}$, with any value of its internal variable,
 on the stacks holding the code $c$, the clock $T$ and the initial configuration on $x$, all other

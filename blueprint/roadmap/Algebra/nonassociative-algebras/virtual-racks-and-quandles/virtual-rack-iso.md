@@ -1,6 +1,6 @@
 # Isomorphism of virtual racks
 
-**Isomorphism of virtual racks.** Write $x \triangleleft y$ for the operation of a rack. A
+Write $x \triangleleft y$ for the operation of a rack. A
 virtual rack $(R, f)$ is a rack $R$ together with a rack automorphism $f$ of $R$, its virtual
 structure. Let $R_1$ and $R_2$ be racks and let $f_1$ and $f_2$ be permutations of $R_1$ and
 $R_2$. Then $(R_1, f_1)$ and $(R_2, f_2)$ are isomorphic when there is a bijection

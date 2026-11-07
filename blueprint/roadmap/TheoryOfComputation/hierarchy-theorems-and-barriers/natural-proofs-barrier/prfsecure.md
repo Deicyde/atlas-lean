@@ -1,6 +1,6 @@
 # Security of a keyed function family against truth-table distinguishers
 
-**Security of a keyed function family against truth-table distinguishers.** Let
+Let
 $F = (F_n)_{n \in \mathbb{N}}$ be a keyed family of Boolean functions: $F_n(k, x)$ is a Boolean
 value for every key $k \in \{0,1\}^{n^2}$ and every input $x \in \{0,1\}^n$. Write $F_{n,k}$ for the
 Boolean function $x \mapsto F_n(k, x)$ on $n$ bits and $T(g)$ for the truth table of a Boolean

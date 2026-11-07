@@ -1,6 +1,6 @@
 # Edmonds' matroid intersection theorem for matroids on the whole type
 
-**Edmonds' matroid intersection theorem for matroids on the whole type.** Let $M_1$ and $M_2$ be
+Let $M_1$ and $M_2$ be
 matroids on a finite type $\alpha$, each with ground set all of $\alpha$, and let $k$ be a natural
 number. There is a set $I \subseteq \alpha$ independent in both $M_1$ and $M_2$ with $|I| \ge k$
 if and only if every $X \subseteq \alpha$ satisfies $k \le r_1(X) + r_2(\alpha \setminus X)$,

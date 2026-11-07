@@ -1,6 +1,6 @@
 # Run of one literal routine (one-hot generator)
 
-**Run of one literal routine (one-hot generator).** Let $L$ be a layout with $g$ symbol
+Let $L$ be a layout with $g$ symbol
 codes, let $c$ be a clause kind of a cell with $g$ symbol codes, let $l < g$ be a literal index
 with offset $\mathrm{off}_c(l)$, and let $F$ be counter values of the one-hot generator whose
 scratch counters $Q$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$ are $0$. Let

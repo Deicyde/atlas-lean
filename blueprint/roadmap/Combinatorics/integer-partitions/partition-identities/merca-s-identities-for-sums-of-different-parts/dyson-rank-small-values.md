@@ -1,6 +1,6 @@
 # Rank of the partitions of $0$ and $1$
 
-**Rank of the partitions of $0$ and $1$.** The empty partition of $0$ and the partition $(1)$
+The empty partition of $0$ and the partition $(1)$
 of $1$ both have Dyson rank $0$.
 
 Consequently the number of partitions of $k$ with nonnegative rank is $1$ for $k = 0$ and

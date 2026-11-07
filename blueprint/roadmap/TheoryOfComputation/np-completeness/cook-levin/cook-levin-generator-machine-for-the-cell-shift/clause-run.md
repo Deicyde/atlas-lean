@@ -1,6 +1,6 @@
 # One clause of the cell-shift generator
 
-**One clause of the cell-shift generator.** Let $M$ be the cell-shift generator for a layout
+Let $M$ be the cell-shift generator for a layout
 $L$ with $K$ stacks, $g$ symbol codes and window depth $d$, situation offsets $\mathrm{sa}$, push
 counts $\mathrm{pl}$, consumed counts $\mathrm{cn}$, pushed codes $\mathrm{pu}$ and $N$
 situations. Fix a situation $i < N$, a stack $k < K$, a clause kind $c$ with parameters $g$ and

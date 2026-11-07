@@ -1,6 +1,6 @@
 # Newton's identities for absolutely summable sequences
 
-**Newton's identities for absolutely summable sequences.** Let $(a_j)_{j \ge 0}$ be a sequence
+Let $(a_j)_{j \ge 0}$ be a sequence
 of complex numbers with $\sum_j |a_j| < \infty$. Let $(e_n)_{n \ge 0}$ and $(p_k)_{k \ge 1}$ be
 complex numbers such that for every $n$ the family $\prod_{j \in s} a_j$, indexed by the
 $n$-element finite sets $s$ of natural numbers, is summable with sum $e_n$, and for every

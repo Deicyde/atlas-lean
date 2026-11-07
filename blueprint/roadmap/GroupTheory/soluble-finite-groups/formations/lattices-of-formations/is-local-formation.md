@@ -1,6 +1,6 @@
 # Local formation of finite groups
 
-**Local formation of finite groups.** A class $\mathfrak{F}$ of finite groups is a local
+A class $\mathfrak{F}$ of finite groups is a local
 formation when it is a formation, contains the trivial group, and is saturated: a finite group $G$
 belongs to $\mathfrak{F}$ whenever $G/\Phi(G)$ does, where $\Phi(G)$ is the Frattini subgroup of
 $G$.

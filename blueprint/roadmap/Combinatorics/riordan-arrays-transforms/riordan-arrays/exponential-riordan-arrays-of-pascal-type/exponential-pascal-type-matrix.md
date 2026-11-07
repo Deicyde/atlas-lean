@@ -1,6 +1,6 @@
 # Exponential Pascal-type matrix
 
-**Exponential Pascal-type matrix.** Let $R$ be a commutative ring that is a
+Let $R$ be a commutative ring that is a
 $\mathbb{Q}$-algebra and let $r \in \mathbb{Q}$. The exponential Pascal-type matrix with
 parameter $r$ is the exponential Riordan array $[e^t, t + r t^2/2]$ over $R$: the matrix with
 rows and columns indexed by the natural numbers whose $(n, k)$ entry is

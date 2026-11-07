@@ -1,6 +1,6 @@
 # Generating function of Toeplitz–Hessenberg determinants
 
-**Generating function of Toeplitz–Hessenberg determinants.** Let $R$ be a commutative ring and
+Let $R$ be a commutative ring and
 $a_0, a_1, a_2, \dots$ a sequence in $R$. Write $\det(a_0; a_1, \dots, a_n)$ for the determinant
 of the $n \times n$ Toeplitz–Hessenberg matrix whose entry in row $i$ and column $j$ is
 $a_{i+1-j}$ for $j \le i + 1$ and $0$ above the superdiagonal. In the ring of formal power series

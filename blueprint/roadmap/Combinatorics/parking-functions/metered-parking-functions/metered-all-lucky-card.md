@@ -1,6 +1,6 @@
 # Metered parking functions in which every car is lucky
 
-**Metered parking functions in which every car is lucky.** Let $m \ge 2$, $n \ge 2$ and
+Let $m \ge 2$, $n \ge 2$ and
 $t \le m - 1$. The number of $t$-metered $(m, n)$-parking functions in which every car parks in
 its preferred spot is $n(n-1)\cdots(n-t+1) \cdot (n-t)^{m-t}$, where the falling factorial
 $n(n-1)\cdots(n-t+1)$ has $t$ factors (it equals $1$ for $t = 0$ and $0$ for $t > n$).

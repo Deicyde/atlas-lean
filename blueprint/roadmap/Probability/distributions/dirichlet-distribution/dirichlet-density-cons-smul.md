@@ -1,6 +1,6 @@
 # Splitting off the first coordinate of the Dirichlet density
 
-**Splitting off the first coordinate of the Dirichlet density.** Let
+Let
 $\alpha = (\alpha_0, \dots, \alpha_{n+1}) \in \mathbb{R}^{n+2}$, write $D_\alpha$ for the
 unnormalized Dirichlet density with parameters $\alpha$ (a function on $\mathbb{R}^{n+1}$), and let
 $\alpha' = (\alpha_1, \dots, \alpha_{n+1}) \in \mathbb{R}^{n+1}$. For every real $t$ with

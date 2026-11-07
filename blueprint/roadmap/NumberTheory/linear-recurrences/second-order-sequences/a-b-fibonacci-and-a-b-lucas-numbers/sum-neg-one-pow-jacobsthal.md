@@ -1,6 +1,6 @@
 # Weighted alternating sums of Jacobsthal and Jacobsthal–Lucas numbers
 
-**Weighted alternating sums of Jacobsthal and Jacobsthal–Lucas numbers.** Let $(J_n)$ and
+Let $(J_n)$ and
 $(j_n)$ be the Jacobsthal and Jacobsthal–Lucas numbers, that is, the $(1, 2)$-Fibonacci and
 $(1, 2)$-Lucas numbers, viewed as complex numbers. Then for every integer $n \ge 0$,
 

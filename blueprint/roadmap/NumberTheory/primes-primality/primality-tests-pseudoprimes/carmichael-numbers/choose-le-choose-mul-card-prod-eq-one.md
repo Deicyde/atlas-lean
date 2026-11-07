@@ -1,6 +1,6 @@
 # Alford–Granville–Pomerance count of zero-sum subsequences
 
-**Alford–Granville–Pomerance count of zero-sum subsequences.** Let $G$ be an abelian group
+Let $G$ be an abelian group
 and let $n$ be the least natural number $m$ such that every sequence of $m$ elements of $G$ has a
 nonempty subsequence with product $1$ (the Davenport constant of $G$). Let $r$ and $t$ be natural
 numbers with $n < t < r$. Then for every sequence $s_1, \dots, s_r$ of elements of $G$, the number

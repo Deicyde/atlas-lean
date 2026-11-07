@@ -1,3 +1,3 @@
 # Even-degree condition on a subgraph
 
-**Even-degree condition on a subgraph.** Every vertex of `K` has even degree.
+Every vertex of `K` has even degree.

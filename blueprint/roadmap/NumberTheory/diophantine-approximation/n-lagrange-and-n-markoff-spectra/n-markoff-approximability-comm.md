@@ -1,6 +1,6 @@
 # Symmetry of the $n$-Markoff approximability
 
-**Symmetry of the $n$-Markoff approximability.** For every natural number $n$ and all real
+For every natural number $n$ and all real
 numbers $\xi$ and $\xi'$, the $n$-Markoff approximability satisfies
 $\mu_n(\xi, \xi') = \mu_n(\xi', \xi)$.
 

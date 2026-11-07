@@ -1,6 +1,6 @@
 # Least multiples in $S(U)$ and the orbit lcm $L(n)$
 
-**Least multiples in $S(U)$ and the orbit lcm $L(n)$.** Let $P$ and $Q \ne 0$ be integers and
+Let $P$ and $Q \ne 0$ be integers and
 $U$ the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and $U_{k+2} = P U_{k+1} - Q U_k$. Let
 $\pi_U(m)$ be the period of $U$ modulo $m$ and $\pi_U^i$ its $i$-th iterate, with
 $\pi_U^0(m) = m$. Let $S(U)$ be the set of positive integers $m$ coprime to $Q$ with

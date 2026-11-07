@@ -1,6 +1,6 @@
 # Bounds for $n$ times the $n$-th prime minus the sum of the first $n$ primes
 
-**Bounds for $n$ times the $n$-th prime minus the sum of the first $n$ primes.** Let $p_k$
+Let $p_k$
 denote the $k$-th prime, so that $p_1 = 2$, and for $n \ge 1$ put $L = \log p_n$ and
 $S(n) = n p_n - \sum_{k=1}^{n} p_k$. For every integer $n \ge 440200309$,
 

@@ -1,6 +1,6 @@
 # The slope-$12/7$ example on the sheared sector
 
-**The slope-$12/7$ example on the sheared sector.** Let $M(x, y) = (x - y/2, y)$ and let
+Let $M(x, y) = (x - y/2, y)$ and let
 $\hat I(12/7) = M(I(12/7))$ be the image under $M$ of the lattice points $I(12/7)$ of the sector
 of slope $12/7$. Then $\hat P(x, y) = 6x(x - 3/2) + x + \frac{3}{2} y + 2$ is a quadratic
 packing polynomial on $\hat I(12/7)$.

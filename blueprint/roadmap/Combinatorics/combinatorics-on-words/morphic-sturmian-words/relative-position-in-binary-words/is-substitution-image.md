@@ -1,6 +1,6 @@
 # Image of an infinite word under a substitution
 
-**Image of an infinite word under a substitution.** Let $\varrho$ be a substitution on the
+Let $\varrho$ be a substitution on the
 letters $a$ and $b$, sending each letter to a finite word and extended to finite words by
 concatenation, and let $w = \ell_0 \ell_1 \ell_2 \cdots$ and $v$ be infinite binary words. Then
 $v$ is the image $\varrho(w)$ of $w$ when, for every $m$, the finite word

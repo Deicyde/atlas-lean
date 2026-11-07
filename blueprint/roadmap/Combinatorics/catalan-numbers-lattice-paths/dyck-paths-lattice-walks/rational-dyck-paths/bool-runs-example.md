@@ -1,6 +1,6 @@
 # Maximal runs of the word $1001100$
 
-**Maximal runs of the word $1001100$.** Writing $1$ for true and $0$ for false, the maximal
+Writing $1$ for true and $0$ for false, the maximal
 runs of the Boolean word $1001100$, listed from left to right as pairs (letter, length), are
 $(1, 1), (0, 2), (1, 2), (0, 2)$.
 

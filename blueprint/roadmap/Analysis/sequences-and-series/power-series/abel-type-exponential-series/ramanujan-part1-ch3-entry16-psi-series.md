@@ -1,6 +1,6 @@
 # Ramanujan's $\psi$-series (Chapter 3, Entry 16)
 
-**Ramanujan's $\psi$-series (Chapter 3, Entry 16).** For natural numbers $r$, $k$ and a complex
+For natural numbers $r$, $k$ and a complex
 number $n$ define $\psi(r, k, n)$ recursively by $\psi(0, 1, n) = 1$, $\psi(0, k, n) = 0$ for
 $k \ne 1$, and
 

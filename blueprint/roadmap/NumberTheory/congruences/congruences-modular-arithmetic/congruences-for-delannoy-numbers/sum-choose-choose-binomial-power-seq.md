@@ -1,6 +1,6 @@
 # A binomial sum through central Delannoy numbers
 
-**A binomial sum through central Delannoy numbers.** For every natural number $k$,
+For every natural number $k$,
 
 $$4 \sum_{j=0}^{k} \binom{k}{j} \binom{k+j}{k+1} = D_{k+1} - 3 D_k,$$
 

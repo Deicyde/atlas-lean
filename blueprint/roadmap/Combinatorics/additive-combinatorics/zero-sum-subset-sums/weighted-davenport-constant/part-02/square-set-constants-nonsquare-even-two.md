@@ -1,6 +1,6 @@
 # Square-weighted constants of nonsquares with even $2$-adic valuation
 
-**Square-weighted constants of nonsquares with even $2$-adic valuation.** Let $n \ge 2$ be a
+Let $n \ge 2$ be a
 natural number that is not a perfect square and whose $2$-adic valuation $v_2(n)$ is even
 (possibly zero), and let $S(n)$ be the set of nonzero squares in $\mathbb{Z}_n$. Then the
 $S(n)$-weighted Davenport constant of $\mathbb{Z}_n$, with weights the representatives in

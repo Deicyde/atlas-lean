@@ -1,6 +1,6 @@
 # Quadratic Dirichlet character of a fundamental discriminant
 
-**Quadratic Dirichlet character of a fundamental discriminant.** Let $D$ be a fundamental
+Let $D$ be a fundamental
 discriminant. Then there is a unique integer-valued Dirichlet character $\chi$ modulo $|D|$ such
 that $\chi(n \bmod |D|) = \left(\frac{D}{n}\right)$ for every natural number $n$, where
 $\left(\frac{D}{n}\right)$ is the Kronecker symbol.

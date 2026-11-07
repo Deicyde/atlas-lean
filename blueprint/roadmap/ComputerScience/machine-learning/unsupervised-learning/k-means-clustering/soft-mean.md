@@ -1,6 +1,6 @@
 # Common-variance M-step mean
 
-**Common-variance M-step mean.** Given weights $w_1, \dots, w_K \in \mathbb{R}$, means
+Given weights $w_1, \dots, w_K \in \mathbb{R}$, means
 $\mu_1, \dots, \mu_K \in \mathbb{R}^d$, a real $v$ and data $x_1, \dots, x_N \in \mathbb{R}^d$,
 the common-variance M-step mean of component $k$ is
 

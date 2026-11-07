@@ -1,6 +1,6 @@
 # Half-good threshold
 
-**Half-good threshold.** For a finite abelian group $\Gamma$, $P_{1/2}(\Gamma)$ is the least
+For a finite abelian group $\Gamma$, $P_{1/2}(\Gamma)$ is the least
 $t \ge 0$ such that a uniformly random sequence of $t$ elements of $\Gamma$ is good (has a
 nonempty zero-sum subsequence with cross number at most one) with probability at least $1/2$,
 that is, such that at least half of the $|\Gamma|^t$ sequences of length $t$ are good. If no

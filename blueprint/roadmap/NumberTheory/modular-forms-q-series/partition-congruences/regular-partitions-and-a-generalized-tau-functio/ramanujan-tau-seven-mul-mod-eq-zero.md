@@ -1,6 +1,6 @@
 # Ramanujan's congruence modulo $7$
 
-**Ramanujan's congruence modulo $7$.** Let $\tau(n) = \tau_{24}(n)$ be Ramanujan's tau
+Let $\tau(n) = \tau_{24}(n)$ be Ramanujan's tau
 function, the generalized tau function with $k = 24$. For every positive integer $n$,
 $\tau(7n) \equiv 0 \pmod 7$.
 

@@ -1,6 +1,6 @@
 # Midpoint recurrence for the Takagi function at dyadic rationals
 
-**Midpoint recurrence for the Takagi function at dyadic rationals.** Let $k$ and $r$ be
+Let $k$ and $r$ be
 natural numbers with $1 \le r < 2^k$. For a natural number $m$, write $\tau(m / 2^k)$ for the
 Takagi value of the dyadic presentation $m / 2^k$, and let $\rho_1$ be the $2$-adic valuation of
 $r$, the position (counted from $0$) of the lowest nonzero binary digit of $r$. Then

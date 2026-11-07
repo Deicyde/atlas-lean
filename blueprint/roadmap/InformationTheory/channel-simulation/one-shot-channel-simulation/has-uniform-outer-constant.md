@@ -1,6 +1,6 @@
 # Uniform outer constant for channel simulation
 
-**Uniform outer constant for channel simulation.** A real number $\alpha$ is a uniform
+A real number $\alpha$ is a uniform
 outer constant when there is a real $\beta > 0$ such that for every finite joint law $p$ of
 $(X, Y)$ there is a finite extension of $p$ by an auxiliary variable $S$ with $I(X; S) = 0$
 and $H(Y \mid X, S) = 0$ and

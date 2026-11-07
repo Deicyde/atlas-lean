@@ -1,6 +1,6 @@
 # Von Szily's identity for super Catalan numbers
 
-**Von Szily's identity for super Catalan numbers.** For all natural numbers $m$ and $n$,
+For all natural numbers $m$ and $n$,
 
 $$
 \left\lfloor \frac{(2m)!\,(2n)!}{m!\,n!\,(m+n)!} \right\rfloor

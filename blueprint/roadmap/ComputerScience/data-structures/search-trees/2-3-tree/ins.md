@@ -1,6 +1,6 @@
 # Insertion into a height-indexed 2-3 tree
 
-**Insertion into a height-indexed 2-3 tree.** Inserting a key $x$ into a 2-3 tree of
+Inserting a key $x$ into a 2-3 tree of
 height $h$ yields either a single tree of height $h$ or a split into two trees of height $h$
 around a promoted key. Inserting into a leaf gives the split of two leaves around $x$. At a
 2-node with key $a$, insertion recurses into the left child if $x < a$ and into the right child

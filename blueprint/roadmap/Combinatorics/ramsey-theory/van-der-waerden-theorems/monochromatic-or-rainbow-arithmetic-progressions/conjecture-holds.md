@@ -1,6 +1,6 @@
 # Solution of Erdős Problem 190 on monochromatic or rainbow progressions
 
-**Solution of Erdős Problem 190 on monochromatic or rainbow progressions.** For a natural number
+For a natural number
 $k$, let $H(k)$ be the least natural number $N$ such that every colouring
 $f : \mathbb{N} \to \mathbb{N}$ has a good $k$-term arithmetic progression below $N$, that is,
 there are natural numbers $a$ and $d > 0$ with $a + d(k - 1) < N$, where $k - 1$ is natural-number

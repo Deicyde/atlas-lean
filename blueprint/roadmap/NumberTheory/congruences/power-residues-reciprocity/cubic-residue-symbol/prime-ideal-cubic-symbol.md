@@ -1,6 +1,6 @@
 # Cubic residue symbol at a prime ideal
 
-**Cubic residue symbol at a prime ideal.** Let $K$ be a number field that is the third
+Let $K$ be a number field that is the third
 cyclotomic extension of $\mathbb{Q}$, with ring of integers $\mathcal{O}_K$, let $\zeta \in K$ be
 a primitive cube root of unity and let $\omega$ be $\zeta$ regarded as an element of
 $\mathcal{O}_K$. For a nonzero prime ideal $P$ of $\mathcal{O}_K$ whose absolute norm $N(P)$ is

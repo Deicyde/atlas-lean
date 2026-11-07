@@ -1,3 +1,3 @@
 # Structure constants are bounded by one
 
-**Structure constants are bounded by one.** A structure constant has absolute value at most one.
+A structure constant has absolute value at most one.

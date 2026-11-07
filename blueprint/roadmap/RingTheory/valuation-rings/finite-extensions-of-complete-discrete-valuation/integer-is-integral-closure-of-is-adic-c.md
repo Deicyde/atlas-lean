@@ -1,6 +1,6 @@
 # Valuation rings dominating a complete DVR are integral closures
 
-**Valuation rings dominating a complete DVR are integral closures.** Let $A$ be a discrete
+Let $A$ be a discrete
 valuation ring that is complete with respect to its maximal ideal, $K$ its fraction field, and
 $L$ a finite separable extension of $K$. Let $v$ be a valuation on $L$ with values in a linearly
 ordered commutative group with zero, with valuation ring $\mathcal O_v = \{x \in L : v(x) \le 1\}$.

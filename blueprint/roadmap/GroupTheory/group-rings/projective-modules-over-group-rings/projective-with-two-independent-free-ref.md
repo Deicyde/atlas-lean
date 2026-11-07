@@ -1,6 +1,6 @@
 # Artamonov's freeness question has a negative answer
 
-**Artamonov's freeness question has a negative answer.** It is not the case that for every
+It is not the case that for every
 commutative ring $k$, every torsion-free almost polycyclic group $G$ (no element $g \ne 1$ of $G$
 has finite order) and every finitely generated projective module $P$ over the group ring $kG$
 containing two elements that are linearly independent over $kG$, the module $P$ is free over $kG$.

@@ -1,6 +1,6 @@
 # Entries of the Jacobian matrix are partial derivatives
 
-**Entries of the Jacobian matrix are partial derivatives.** Let
+Let
 $f : \mathbb{R}^m \to \mathbb{R}^n$ and $x \in \mathbb{R}^m$. For every row index $i$ and column
 index $j$, the $(i, j)$ entry of the Jacobian matrix of $f$ at $x$ is the derivative at $t = 0$
 of $t \mapsto f_i(x + t e_j)$, where $f_i$ is the $i$-th component of $f$ and $e_j$ is the

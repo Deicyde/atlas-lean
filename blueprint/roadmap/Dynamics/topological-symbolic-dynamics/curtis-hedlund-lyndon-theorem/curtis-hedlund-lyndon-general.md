@@ -1,6 +1,6 @@
 # Curtis–Hedlund–Lyndon theorem with an arbitrary discrete output alphabet
 
-**Curtis–Hedlund–Lyndon theorem with an arbitrary discrete output alphabet.** Let $A$ be a
+Let $A$ be a
 finite set and $B$ any set, both with the discrete topology, and give $A^{\mathbb{Z}}$ and
 $B^{\mathbb{Z}}$ the product topology. For $k \in \mathbb{Z}$ let $\sigma^k$ be the shift on
 either space given by $(\sigma^k x)_n = x_{n+k}$ for all $n \in \mathbb{Z}$. A map

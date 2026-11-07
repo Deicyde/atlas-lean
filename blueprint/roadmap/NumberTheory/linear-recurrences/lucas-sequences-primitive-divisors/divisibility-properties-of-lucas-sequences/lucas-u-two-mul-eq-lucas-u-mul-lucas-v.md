@@ -1,6 +1,6 @@
 # Doubling formula $U_{2n} = U_n V_n$ for Lucas sequences
 
-**Doubling formula $U_{2n} = U_n V_n$ for Lucas sequences.** Let $P$ and $Q$ be integers with
+Let $P$ and $Q$ be integers with
 $Q \ne 0$, and let $U$ and $V$ be the Lucas sequences $U(P, Q)$ and $V(P, Q)$. Then
 $U_{2n} = U_n V_n$ for every natural number $n$.
 

@@ -1,6 +1,6 @@
 # Plugging a term into an STLC context
 
-**Plugging a term into an STLC context.** Let $E$ be a typed one-hole context whose hole
+Let $E$ be a typed one-hole context whose hole
 has type $A$ in variable context $\Gamma$ and which produces a term of type $B$ in variable
 context $\Delta$. For a term $t$ of type $A$ in $\Gamma$, the plugged term $E[t]$ of type $B$
 in $\Delta$ is defined by recursion on $E$: $[\,][t] = t$, $(E\,a)[t] = E[t]\,a$,

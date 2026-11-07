@@ -1,6 +1,6 @@
 # Generalized Rascal numbers count subsets with few small elements
 
-**Generalized Rascal numbers count subsets with few small elements.** For all natural numbers
+For all natural numbers
 $j$, $n$ and $k$, the generalized Rascal number $R^{(j)}_{n,k}$ equals the number of $k$-element
 subsets of $\{0, 1, \dots, n-1\}$ that have at most $j$ elements smaller than $n - k$.
 

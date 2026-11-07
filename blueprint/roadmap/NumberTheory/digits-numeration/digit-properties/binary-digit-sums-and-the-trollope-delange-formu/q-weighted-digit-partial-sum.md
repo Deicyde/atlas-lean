@@ -1,6 +1,6 @@
 # Partial sums of the $q$-weighted binary digit sum
 
-**Partial sums of the $q$-weighted binary digit sum.** For an element $q$ of a commutative
+For an element $q$ of a commutative
 ring and a natural number $n$, the partial sum is $S_q(n) = \sum_{k=0}^{n-1} s_q(k)$, where $s_q$
 is the $q$-weighted binary digit sum.
 

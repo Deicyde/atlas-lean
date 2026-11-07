@@ -1,6 +1,6 @@
 # The pumping lemma for a grammar, with an explicit bound
 
-**The pumping lemma for a grammar, with an explicit bound.** Let $g$ be a context-free grammar
+Let $g$ be a context-free grammar
 over an alphabet $T$ and let $R$, $K$, $n$ be natural numbers with $R \ge 2$ such that the
 right-hand side of every production of $g$ has length at most $R$, some list of at most $K$
 nonterminals contains the left-hand side of every production of $g$, and $R^{K+1} \le n$. Then

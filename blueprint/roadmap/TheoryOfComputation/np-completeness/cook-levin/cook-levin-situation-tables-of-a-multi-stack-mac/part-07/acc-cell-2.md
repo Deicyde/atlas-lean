@@ -1,6 +1,6 @@
 # Accept-cell clauses pin the top output symbol
 
-**Accept-cell clauses pin the top output symbol.** Let $E$ be an encoding of a finite stack
+Let $E$ be an encoding of a finite stack
 machine $M$ with output stack $k_1$, $g$ symbol codes and stack numbering $\kappa$, let $\alpha$
 be a symbol of stack $k_1$, and let $T, H, x \in \mathbb{N}$ with $x < g$. In the layout of $E$
 at height $H$, let $C[t, k, j, z]$ be the variable for stack $k$, depth $j$ and symbol code $z$

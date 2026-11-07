@@ -1,6 +1,6 @@
 # Discriminant times an (a, b)-Fibonacci number
 
-**Discriminant times an (a, b)-Fibonacci number.** Let $a$ and $b$ be complex numbers with
+Let $a$ and $b$ be complex numbers with
 $a^2 + 4b \ne 0$, and write $F_n$ and $L_n$ for the $(a,b)$-Fibonacci and $(a,b)$-Lucas
 numbers. Then for every natural number $m$,
 

@@ -1,6 +1,6 @@
 # The coefficients of $q^{6n+5}$ in $v(q)$ are divisible by 3
 
-**The coefficients of $q^{6n+5}$ in $v(q)$ are divisible by 3.** Let $P_v(n)$ be the
+Let $P_v(n)$ be the
 coefficient of $q^n$ in the eighth-order mock theta function $v(q)$. Then
 $P_v(6n+5) \equiv 0 \pmod 3$ for every $n \ge 0$.
 

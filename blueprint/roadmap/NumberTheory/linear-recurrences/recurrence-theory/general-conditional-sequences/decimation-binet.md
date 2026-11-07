@@ -1,6 +1,6 @@
 # Binet formula for decimated linear recurrences
 
-**Binet formula for decimated linear recurrences.** Let $m$ and $r$ be natural numbers and
+Let $m$ and $r$ be natural numbers and
 let $(A_j)_{j \ge 0}$ and $(s_n)_{n \ge 0}$ be sequences of complex numbers such that
 $s_{n+mr} = \sum_{j\lt m} A_j s_{n+jr}$ for all $n \ge 0$. Let $f(x) = x^m - \sum_{j\lt m} A_j x^j$
 and let $\alpha_1, \ldots, \alpha_m$ be pairwise distinct roots of $f$ in $\mathbb{C}$. Then

@@ -1,6 +1,6 @@
 # Powers of elements congruent modulo a divided-power ideal
 
-**Powers of elements congruent modulo a divided-power ideal.** Let $p$ be a prime, let $A$ be
+Let $p$ be a prime, let $A$ be
 a commutative ring in which every natural number not divisible by $p$ is a unit (a
 $\mathbb{Z}_{(p)}$-algebra), and let $\mathfrak{a}$ be a divided-power ideal of $A$. If
 $x, y \in A$ satisfy $x - y \in \mathfrak{a}$, then for every $m \ge 0$ there is

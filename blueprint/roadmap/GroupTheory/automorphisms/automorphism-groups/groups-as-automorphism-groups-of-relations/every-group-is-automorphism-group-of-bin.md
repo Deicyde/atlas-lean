@@ -1,6 +1,6 @@
 # Birkhoff's theorem: every group is the automorphism group of a binary relation
 
-**Birkhoff's theorem: every group is the automorphism group of a binary relation.** For every
+For every
 group $G$ there are a set $Z$ and a binary relation $X \subseteq Z \times Z$ such that $G$ is
 the full automorphism group of $X$: there is an injective group homomorphism $\varphi$ from $G$
 to the group of permutations of $Z$ whose image is exactly the set of permutations $f$ of $Z$

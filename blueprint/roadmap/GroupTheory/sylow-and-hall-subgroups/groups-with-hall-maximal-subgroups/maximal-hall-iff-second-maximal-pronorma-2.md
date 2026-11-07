@@ -1,6 +1,6 @@
 # Negative answer to Zenkov's question (Kourovka Problem 19.109)
 
-**Negative answer to Zenkov's question (Kourovka Problem 19.109).** It is not true that for every
+It is not true that for every
 non-abelian finite simple group $G$, all maximal subgroups of $G$ are Hall subgroups if and only
 if every second maximal subgroup of $G$ is pronormal in $G$.
 

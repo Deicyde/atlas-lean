@@ -1,6 +1,6 @@
 # Velocity formula for the (a, b)-knight
 
-**Velocity formula for the (a, b)-knight.** Let $a$ and $b$ be natural numbers with
+Let $a$ and $b$ be natural numbers with
 $1 \le a < b$, $\gcd(a, b) = 1$ and $a + b$ odd, let
 $N_{a,b} = \{(\pm a, \pm b), (\pm b, \pm a)\}$ be the $(a,b)$-knight's move set, and for
 $p \in \mathbb{Z}^2$ let $d_{a,b}(p)$ be the piece distance of $p$ for $N_{a,b}$. For a natural

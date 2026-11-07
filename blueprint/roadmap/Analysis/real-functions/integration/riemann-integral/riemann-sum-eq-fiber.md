@@ -1,6 +1,6 @@
 # Riemann sum regrouped over a refinement
 
-**Riemann sum regrouped over a refinement.** Let $f : \mathbb{R} \to \mathbb{R}$, let $T$ be
+Let $f : \mathbb{R} \to \mathbb{R}$, let $T$ be
 a tagged partition of $[a, b]$ with points $x_0 < \dots < x_n$ and tags
 $\xi_0, \dots, \xi_{n-1}$, and let $T'$ be a tagged partition of $[a, b]$ with points
 $x'_0 < \dots < x'_{n'}$, together with tagged-refinement data from $T$ to $T'$ assigning to

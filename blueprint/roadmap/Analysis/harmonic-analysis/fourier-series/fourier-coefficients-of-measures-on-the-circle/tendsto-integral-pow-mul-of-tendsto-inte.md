@@ -1,6 +1,6 @@
 # Fourier decay of a circle measure passes to integrable densities
 
-**Fourier decay of a circle measure passes to integrable densities.** Let $\mu$ be a finite
+Let $\mu$ be a finite
 Borel measure on $\mathbb{C}$ concentrated on the unit circle $T = \{z \in \mathbb{C} : |z| = 1\}$,
 that is, $\mu$-almost every $z$ lies in $T$, and suppose that $\int z^n \, d\mu(z) \to 0$ as
 $n \to \infty$ through $\mathbb{N}$. Then for every $\mu$-integrable function

@@ -1,6 +1,6 @@
 # Cuckoo hash table
 
-**Cuckoo hash table.** Given a type $K$ of keys, a type $V$ of values, a number $m$ of slots,
+Given a type $K$ of keys, a type $V$ of values, a number $m$ of slots,
 and two hash functions $h_1, h_2 : K \to \{0, \dots, m - 1\}$, a cuckoo hash table consists of
 two tables, each a vector of $m$ slots; every slot is either empty or holds a key–value pair
 $(k, v)$ with $k \in K$ and $v \in V$. The structure itself does not require a pair $(k, v)$ to

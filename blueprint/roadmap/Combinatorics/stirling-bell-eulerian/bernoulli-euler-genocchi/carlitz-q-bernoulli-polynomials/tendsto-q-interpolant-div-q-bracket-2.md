@@ -1,6 +1,6 @@
 # Second closed form of a limit of $q$-interpolated falling-factorial sums
 
-**Second closed form of a limit of $q$-interpolated falling-factorial sums.** Let $q > 0$
+Let $q > 0$
 with $q \ne 1$, let $[x] = (q^x - 1)/(q - 1)$, write $[x]_m = [x][x-1]\cdots[x-m+1]$ and
 $[m]! = [1][2]\cdots[m]$ (both equal to $1$ when $m = 0$), and let $r \ge 1$ and $k$ be natural
 numbers. Let $P$ be a real polynomial such that

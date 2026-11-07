@@ -1,6 +1,6 @@
 # No uniform bound on the number of groups with a given spectrum
 
-**No uniform bound on the number of groups with a given spectrum.** For a set $\Gamma$ of natural
+For a set $\Gamma$ of natural
 numbers, let $h(\Gamma)$ be the number of isomorphism classes of finite groups $G$ whose spectrum
 $\pi_e(G)$ (set of element orders) is $\Gamma$; $h(\Gamma) \le k$ means that among any $k + 1$
 finite groups with spectrum $\Gamma$ two are isomorphic, and $h(\Gamma) = \infty$ means that for

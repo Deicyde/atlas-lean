@@ -1,6 +1,6 @@
 # Harmonic sums of sets with small gcd defect
 
-**Harmonic sums of sets with small gcd defect.** For a set $A$ of natural numbers and a real
+For a set $A$ of natural numbers and a real
 number $x$, let $S_A(x)$ be the sum of $1/n$ over $n \in A$ with $1 \le n \le x$, and let the
 defect of $A$ at $x$ be the sum of $\gcd(n, m)/(nm)$ over $n, m \in A$ with $1 \le n, m \le x$,
 divided by $S_A(x)^2$, minus $1$ (the defect is $-1$ when $S_A(x) = 0$). Let

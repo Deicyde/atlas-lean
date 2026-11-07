@@ -1,6 +1,6 @@
 # Davies' odd distance theorem
 
-**Davies' odd distance theorem.** The odd distance graph on the Euclidean plane $\mathbb{R}^2$,
+The odd distance graph on the Euclidean plane $\mathbb{R}^2$,
 in which two points are adjacent when their distance is an odd integer, has infinite chromatic
 number: it has no proper colouring with finitely many colours.
 

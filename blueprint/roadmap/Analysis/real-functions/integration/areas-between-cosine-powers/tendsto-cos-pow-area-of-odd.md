@@ -1,6 +1,6 @@
 # Area between $\cos^n x$ and $\cos^n(kx)$ in the limit, odd $n$
 
-**Area between $\cos^n x$ and $\cos^n(kx)$ in the limit, odd $n$.** Let $n$ be an odd natural
+Let $n$ be an odd natural
 number. As $k \to \infty$ through the natural numbers, the area
 $\int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$ between $\cos^n x$ and $\cos^n(kx)$ on $[0, \pi]$
 converges to

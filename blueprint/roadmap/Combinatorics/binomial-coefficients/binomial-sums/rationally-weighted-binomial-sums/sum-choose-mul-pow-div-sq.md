@@ -1,6 +1,6 @@
 # Binomial sums weighted by $x^k/k^2$
 
-**Binomial sums weighted by $x^k/k^2$.** For every natural number $n$ and every real number
+For every natural number $n$ and every real number
 $x$,
 
 $$\sum_{k=1}^{n} \binom{n}{k} \frac{x^k}{k^2} =

@@ -1,6 +1,6 @@
 # Perfect graphs have an NP description
 
-**Perfect graphs have an NP description.** The perfect-graph decision problem, which accepts
+The perfect-graph decision problem, which accepts
 exactly the bitstrings that decode to a valid adjacency-matrix instance whose graph is perfect,
 lies in the complexity class NP.
 

@@ -1,6 +1,6 @@
 # Model count by enumeration
 
-**Model count by enumeration.** An assignment is a map $\sigma$ from the variables, which are
+An assignment is a map $\sigma$ from the variables, which are
 natural numbers, to the truth values $\mathrm{false}$ and $\mathrm{true}$. For a list
 $x_1, \dots, x_k$ of variables, a function $f$ from assignments to truth values, and an assignment
 $\sigma$, the model count of $f$ over $x_1, \dots, x_k$ from $\sigma$ is the number of tuples

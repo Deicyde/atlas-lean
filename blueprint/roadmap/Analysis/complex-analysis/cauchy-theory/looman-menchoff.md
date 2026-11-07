@@ -1,6 +1,6 @@
 # Looman–Menchoff theorem
 
-**Looman–Menchoff theorem.** Let $s \subseteq \mathbb{C}$ be open and let
+Let $s \subseteq \mathbb{C}$ be open and let
 $f : \mathbb{C} \to \mathbb{C}$ be continuous on $s$. Write $u = \operatorname{Re} f$ and
 $v = \operatorname{Im} f$ as functions of $z = x + iy$, and suppose that at every $z \in s$ the
 partial derivatives $u_x(z)$, $u_y(z)$, $v_x(z)$, $v_y(z)$ exist and satisfy the Cauchy–Riemann

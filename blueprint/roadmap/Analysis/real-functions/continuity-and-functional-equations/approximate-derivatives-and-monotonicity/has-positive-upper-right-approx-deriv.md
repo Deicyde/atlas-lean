@@ -1,6 +1,6 @@
 # Positive upper right approximate derivative
 
-**Positive upper right approximate derivative.** The upper right-hand approximate derivative
+The upper right-hand approximate derivative
 of $f \colon \mathbb{R} \to \mathbb{R}$ at $x$ is positive: there are $a > 0$ and $\varepsilon > 0$
 such that for every $\delta > 0$ there is $\delta' \in (0, \delta]$ for which the Lebesgue outer
 measure of $\{h \in (0, \delta'] : (f(x + h) - f(x))/h > a\}$ is at least $\varepsilon \delta'$.

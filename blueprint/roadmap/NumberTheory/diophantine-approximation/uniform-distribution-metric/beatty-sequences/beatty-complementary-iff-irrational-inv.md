@@ -1,6 +1,6 @@
 # Beatty's theorem and its converse
 
-**Beatty's theorem and its converse.** Let $\alpha$ and $\beta$ be positive real numbers. The
+Let $\alpha$ and $\beta$ be positive real numbers. The
 set of the numbers $\lfloor k\alpha\rfloor$ for positive integers $k$ and the set of the numbers
 $\lfloor k\beta\rfloor$ for positive integers $k$ are disjoint and their union is the set of
 positive integers if and only if $\alpha$ is irrational and $\alpha^{-1} + \beta^{-1} = 1$.

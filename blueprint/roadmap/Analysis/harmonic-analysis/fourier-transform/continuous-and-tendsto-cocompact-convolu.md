@@ -1,6 +1,5 @@
 # Convolution of two square-integrable functions is continuous and vanishes at infinity
 
-**Convolution of two square-integrable functions is continuous and vanishes at infinity.**
 Let $n$ be a natural number and let $f, g : \mathbb{R}^n \to \mathbb{C}$ be square-integrable.
 Then the convolution $(f \ast g)(x) = \int_{\mathbb{R}^n} f(x - y) \, g(y) \, dy$ is a continuous
 function of $x \in \mathbb{R}^n$, and $(f \ast g)(x) \to 0$ as $|x| \to \infty$.

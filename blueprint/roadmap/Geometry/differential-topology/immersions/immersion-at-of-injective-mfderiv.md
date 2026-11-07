@@ -1,6 +1,6 @@
 # Injective differential gives an immersion
 
-**Injective differential gives an immersion.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+Let $\mathbb{K}$ be $\mathbb{R}$ or
 $\mathbb{C}$, let $n \ge 1$ be a smoothness degree (possibly $\infty$ or $\omega$), and let
 $M$ and $N$ be $C^n$ manifolds without boundary over $\mathbb{K}$, modelled on
 finite-dimensional normed $\mathbb{K}$-vector spaces. If a map $f \colon M \to N$ is $C^n$ at

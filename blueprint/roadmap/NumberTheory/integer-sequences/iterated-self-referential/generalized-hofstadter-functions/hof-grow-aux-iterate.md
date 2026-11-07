@@ -1,6 +1,6 @@
 # Growing from an iterate of $\tau_k$ gives an iterate of $\tau_k$
 
-**Growing from an iterate of $\tau_k$ gives an iterate of $\tau_k$.** Let $\tau_k$ be the
+Let $\tau_k$ be the
 substitution sending the letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, extended
 letterwise to words, and let $\mathrm{grow}_{k,n}^f(w)$ be the word obtained from $w$ by applying
 $\tau_k$ until it has more than $n$ letters, at most $f$ times. For all $k, n, f, j$ there is an

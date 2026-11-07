@@ -1,6 +1,6 @@
 # The dense CNF-SAT verifier machine
 
-**The dense CNF-SAT verifier machine.** The finite multi-stack Turing machine with an output
+The finite multi-stack Turing machine with an output
 stack over the Booleans and four work stacks (the input stack, a formula stash $F$ and two
 assignment stacks $A$ and $B$) over the alphabet $G$, the disjoint union of the Booleans and the
 Booleans extended by a separator $\#$. It reads its input from the input stack, writes its

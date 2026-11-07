@@ -1,6 +1,6 @@
 # Counting palindromes up to $m$ and by parity
 
-**Counting palindromes up to $m$ and by parity.** Let $b \ge 2$ and $m \ge 1$, and write
+Let $b \ge 2$ and $m \ge 1$, and write
 $m = (a_k a_{k-1} \cdots a_0)_b$ in base $b$, with leading digit $a_k \ne 0$. For natural numbers
 $q$ and $r$, let $A_b(m, q, r)$ be the number of $b$-adic palindromes $n$ with $1 \le n \le m$
 and $n \equiv r \pmod q$, and let $C_b(m)$ be the palindromic half copy of $m$. Put $\delta = 1$

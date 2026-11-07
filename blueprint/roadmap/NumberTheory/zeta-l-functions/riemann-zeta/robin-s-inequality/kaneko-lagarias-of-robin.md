@@ -1,6 +1,6 @@
 # Robin's inequality implies the Kaneko–Lagarias inequality
 
-**Robin's inequality implies the Kaneko–Lagarias inequality.** Let $\sigma(n)$ be the sum of
+Let $\sigma(n)$ be the sum of
 the divisors of $n$, $\gamma$ the Euler–Mascheroni constant, $\log$ the natural logarithm and
 $H_n = 1 + \frac{1}{2} + \cdots + \frac{1}{n}$ the $n$-th harmonic number. For every natural
 number $n$, if Robin's inequality $\sigma(n) < e^{\gamma} n \log \log n$ holds, then so does the

@@ -1,6 +1,6 @@
 # Continued-fraction lower bound for rational approximations
 
-**Continued-fraction lower bound for rational approximations.** Let $\tau$ be an irrational real
+Let $\tau$ be an irrational real
 number with simple continued fraction expansion $[a_0; a_1, a_2, \ldots]$, so that
 $a_0 = \lfloor \tau \rfloor$, and let $q_0, q_1, \ldots$ be the denominators of its convergents. Let
 $M > 0$ be a real number, let $N$ be the least positive integer with $q_N > M$, and put

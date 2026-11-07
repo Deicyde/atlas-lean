@@ -1,6 +1,6 @@
 # Mountain pass level
 
-**Mountain pass level.** Let $E$ be a real Banach space, $f : E \to \mathbb{R}$ and
+Let $E$ be a real Banach space, $f : E \to \mathbb{R}$ and
 $a, b \in E$. The mountain pass level of $f$ between $a$ and $b$ is
 
 $$

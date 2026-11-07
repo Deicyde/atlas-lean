@@ -1,6 +1,6 @@
 # Deficiency-zero theorem, weakly reversible case
 
-**Deficiency-zero theorem, weakly reversible case.** A weakly reversible mass-action
+A weakly reversible mass-action
 network of deficiency zero has, for any positive rate constants, exactly one equilibrium in
 each positive stoichiometric compatibility class.
 

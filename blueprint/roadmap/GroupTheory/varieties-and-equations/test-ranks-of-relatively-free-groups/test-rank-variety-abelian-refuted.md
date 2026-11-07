@@ -1,6 +1,6 @@
 # Negative answer to Timoshenko's test rank question, part (a)
 
-**Negative answer to Timoshenko's test rank question, part (a).** There is a set $W$ of laws
+There is a set $W$ of laws
 in the free group $F_\mathbb{N}$ on countably many generators such that for every $r \ge 1$ the
 free $r$-generator group $G_r$ of the variety defined by $W$ has test rank $r$, but the variety is
 not abelian: some group satisfying the laws $W$ is not abelian.

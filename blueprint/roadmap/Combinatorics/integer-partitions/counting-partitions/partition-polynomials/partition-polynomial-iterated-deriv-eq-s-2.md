@@ -1,6 +1,6 @@
 # Derivatives of the partition polynomial via Stirling numbers
 
-**Derivatives of the partition polynomial via Stirling numbers.** Let $k \ge 1$, let
+Let $k \ge 1$, let
 $m \colon \mathbb{N} \to \mathbb{N}$, and write $m_i = m(i)$. Assume $m_k \ne 0$ and $m_i = 0$
 for every $i$ outside $\{1, \dots, k\}$, so that $m$ lists the part multiplicities of a
 partition $\lambda = \langle 1^{m_1}, \dots, k^{m_k} \rangle$ with largest part $k$. Let

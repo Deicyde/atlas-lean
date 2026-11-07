@@ -1,6 +1,6 @@
 # Dinur's gap amplification and alphabet reduction
 
-**Dinur's gap amplification and alphabet reduction.** There exist natural numbers
+There exist natural numbers
 $S_0, e, d, D, d', V$ and rationals $c, \alpha, c', \alpha'$ with $S_0 \ge 2$, $e \ge 2$, $c > 1$,
 $0 < \alpha < 1$, $d \ge 1$, $D \ge 1$, $0 < c' \le 1$, $0 < \alpha' < 1$, $d' \ge 1$ and $V \ge 1$,
 and maps $A$ and $R$ from 2CSP instances to 2CSP instances, with the following properties.

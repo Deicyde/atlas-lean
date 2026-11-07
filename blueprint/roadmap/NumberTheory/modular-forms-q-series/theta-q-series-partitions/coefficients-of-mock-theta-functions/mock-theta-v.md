@@ -1,6 +1,6 @@
 # The eighth-order mock theta function $v(q)$
 
-**The eighth-order mock theta function $v(q)$.** The mock theta function
+The mock theta function
 $v(q) = \sum_{n \ge 0} q^{(n+1)^2} (-q; q^2)_n / (q; q^2)_{n+1}$, where
 $(-q; q^2)_n = \prod_{k=0}^{n-1} (1 + q^{2k+1})$ and
 $(q; q^2)_{n+1} = \prod_{k=0}^{n} (1 - q^{2k+1})$, is taken as a power series in $q$ with integer

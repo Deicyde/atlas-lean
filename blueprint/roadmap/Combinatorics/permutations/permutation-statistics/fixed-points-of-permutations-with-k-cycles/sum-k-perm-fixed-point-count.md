@@ -1,6 +1,6 @@
 # Stirling numbers from fixed-point counts
 
-**Stirling numbers from fixed-point counts.** For natural numbers $n$, $k$ and $j$, let
+For natural numbers $n$, $k$ and $j$, let
 $a(n, k, j)$ be the number of permutations of an $n$-element set with exactly $k$ cycles (fixed
 points counted as cycles of length one) and exactly $j$ fixed points. Then for all natural
 numbers $n$ and $k$,

@@ -1,6 +1,6 @@
 # Longest progressions of absolute least residues: twice an odd prime
 
-**Longest progressions of absolute least residues: twice an odd prime.** For an odd prime
+For an odd prime
 $p$, the length $g(2p)$ of the longest arithmetic progression in the absolute least reduced
 residue system modulo $2p$ is $p - 1$.
 

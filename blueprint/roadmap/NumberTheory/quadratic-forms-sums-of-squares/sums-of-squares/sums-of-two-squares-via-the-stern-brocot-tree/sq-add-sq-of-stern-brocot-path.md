@@ -1,6 +1,6 @@
 # Sums of two squares from the Stern–Brocot tree
 
-**Sums of two squares from the Stern–Brocot tree.** Let $p$ be a prime with
+Let $p$ be a prime with
 $p \equiv 1 \pmod 4$, and let $x_0$ be an integer with $0 < x_0 < p/2$ and
 $x_0^2 \equiv -1 \pmod p$. Let $n \ge 0$ and let $q_0, q_1, \dots, q_n$ be positive integers with
 $p / x_0 = [q_0; q_1, \dots, q_n, q_n, \dots, q_1, q_0]$, where

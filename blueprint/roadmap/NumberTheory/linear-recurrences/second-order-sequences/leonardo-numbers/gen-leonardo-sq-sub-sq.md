@@ -1,6 +1,6 @@
 # Square-difference identity for generalized Leonardo numbers
 
-**Square-difference identity for generalized Leonardo numbers.** For every integer $k$ and
+For every integer $k$ and
 every natural number $n \ge 1$, the generalized Leonardo numbers $L_{k,n}$ and the dual
 generalized Leonardo numbers $M_{k,n}$ satisfy
 

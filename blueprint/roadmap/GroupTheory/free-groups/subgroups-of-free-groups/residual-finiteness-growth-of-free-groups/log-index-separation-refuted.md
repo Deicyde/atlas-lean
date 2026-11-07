@@ -1,6 +1,6 @@
 # Bogopolski's logarithmic-index separation fails in free groups of rank at least 2
 
-**Bogopolski's logarithmic-index separation fails in free groups of rank at least 2.** For every
+For every
 integer $r \ge 2$ and every real number $C$, there is an element $w$ of the free group $F_r$ of
 rank $r$ whose reduced word length $n$ satisfies $n > 1$ and such that every subgroup of finite
 index in $F_r$ that does not contain $w$ has index greater than $C \log n$, where $\log$ is the

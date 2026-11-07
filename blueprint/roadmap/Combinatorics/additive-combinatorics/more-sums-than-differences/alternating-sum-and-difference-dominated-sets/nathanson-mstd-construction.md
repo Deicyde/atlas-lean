@@ -1,6 +1,6 @@
 # Nathanson's sum-dominated set
 
-**Nathanson's sum-dominated set.** For a set $S$ of integers write
+For a set $S$ of integers write
 $S + S = \{s + s' : s, s' \in S\}$ and $S - S = \{s - s' : s, s' \in S\}$. Let $m$, $d$, $k$ be
 integers with $m \ge 4$, $1 \le d \le m - 1$ and $2d \ne m$, and suppose $k \ge 3$ if $2d < m$
 and $k \ge 4$ if $2d > m$. Let $B = \{0, 1, \dots, m - 1\} \setminus \{d\}$,

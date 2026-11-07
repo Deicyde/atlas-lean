@@ -1,6 +1,6 @@
 # Right bank after a sequence of crossings
 
-**Right bank after a sequence of crossings.** Let $n$ be a natural number and let
+Let $n$ be a natural number and let
 $\tau = (A_1, \dots, A_k)$ be a finite sequence of finite sets of natural numbers. The right bank
 after $\tau$ is the set of those $p \in \{1, \dots, n\}$ for which the number of indices $i$ with
 $p \in A_i$ is odd.

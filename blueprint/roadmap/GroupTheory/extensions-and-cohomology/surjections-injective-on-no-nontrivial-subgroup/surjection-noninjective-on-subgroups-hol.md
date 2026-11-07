@@ -1,6 +1,6 @@
 # Burichenko's theorem on surjections injective on no nontrivial subgroup
 
-**Burichenko's theorem on surjections injective on no nontrivial subgroup.** For every finite
+For every finite
 group $G$ there are a finite group $F$ and a surjective homomorphism $f \colon F \to G$ such that
 for every nontrivial subgroup $H$ of $F$ the restriction of $f$ to $H$ is not injective.
 

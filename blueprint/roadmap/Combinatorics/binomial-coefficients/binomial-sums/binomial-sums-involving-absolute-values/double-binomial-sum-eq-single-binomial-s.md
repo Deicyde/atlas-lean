@@ -1,6 +1,6 @@
 # Reduction of a double binomial absolute-value sum
 
-**Reduction of a double binomial absolute-value sum.** For all natural numbers $\beta$, $m$ and
+For all natural numbers $\beta$, $m$ and
 $n$,
 
 $$\sum_{i=0}^{2m} \sum_{j=0}^{2n} \binom{2m}{i} \binom{2n}{j} \lvert (i-m)-(j-n) \rvert^{\beta}

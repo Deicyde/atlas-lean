@@ -1,6 +1,6 @@
 # Instrumented overlap search
 
-**Instrumented overlap search.** Given a query interval $q = [c, d]$ and an interval tree
+Given a query interval $q = [c, d]$ and an interval tree
 $T$, the instrumented overlap search returns an optional entry together with a cost record,
 defined by recursion on $T$. On the empty tree it returns no entry and records one node visit.
 At a node with left subtree $L$, entry $e$ with interval $[a, b]$ and right subtree $R$, it

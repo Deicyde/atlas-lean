@@ -1,3 +1,3 @@
 # Nonnegativity of the beta density
 
-**Nonnegativity of the beta density.** The beta density is nonnegative for positive shape parameters.
+The beta density is nonnegative for positive shape parameters.

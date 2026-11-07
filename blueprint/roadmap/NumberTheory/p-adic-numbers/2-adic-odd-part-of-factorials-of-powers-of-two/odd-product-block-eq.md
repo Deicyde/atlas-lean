@@ -1,6 +1,6 @@
 # Odd product block as an odd-range product
 
-**Odd product block as an odd-range product.** For every natural number $m$, the odd product block
+For every natural number $m$, the odd product block
 $h(m)$ equals $\operatorname{odpr}(2^{m-1}+1, 2^m-1)$, the product of the odd integers $j$ with
 $2^{m-1}+1 \le j \le 2^m-1$.
 

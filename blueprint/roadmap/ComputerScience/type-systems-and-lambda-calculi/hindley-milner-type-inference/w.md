@@ -1,6 +1,6 @@
 # Algorithm W
 
-**Algorithm W.** Given a typing context $\Gamma$, an expression $e$ and a counter $n$,
+Given a typing context $\Gamma$, an expression $e$ and a counter $n$,
 Algorithm W either fails or returns a substitution, a monotype and a new counter; type variables
 $\alpha_m$ with $m \ge n$ serve as fresh. Write $\tau_1 \to \tau_2$ for the arrow type, $s\Gamma$
 for $\Gamma$ with the substitution $s$ applied to every type scheme, and $s(\tau)$ for $s$

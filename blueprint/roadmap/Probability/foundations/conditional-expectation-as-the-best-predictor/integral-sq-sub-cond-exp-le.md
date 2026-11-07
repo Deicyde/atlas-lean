@@ -1,6 +1,6 @@
 # The conditional mean minimizes the expected squared error
 
-**The conditional mean minimizes the expected squared error.** Let $\mu$ be a finite measure
+Let $\mu$ be a finite measure
 on a measurable space $(\Omega, \mathcal{F})$, let $\mathcal{G} \subseteq \mathcal{F}$ be a
 sub-σ-algebra, and let $Y : \Omega \to \mathbb{R}$ be square-integrable with respect to $\mu$.
 Write $\mathbb{E}[Y \mid \mathcal{G}]$ for the conditional expectation of $Y$ with respect to

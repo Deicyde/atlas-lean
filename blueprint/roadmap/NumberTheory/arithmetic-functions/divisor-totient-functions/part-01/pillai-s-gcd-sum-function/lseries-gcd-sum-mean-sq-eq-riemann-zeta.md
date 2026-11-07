@@ -1,6 +1,6 @@
 # Dirichlet series of the square of the mean gcd-sum function
 
-**Dirichlet series of the square of the mean gcd-sum function.** Let $A$ be the mean gcd-sum
+Let $A$ be the mean gcd-sum
 function. There is a function $h \colon \mathbb{N} \to \mathbb{C}$ such that the Dirichlet series
 $\tilde G_{2,2}(s) = \sum_{n \ge 1} h(n) n^{-s}$ converges absolutely for every complex $s$ with
 $\operatorname{Re} s > 0$, and for every complex $s$ with $\operatorname{Re} s > 1$,

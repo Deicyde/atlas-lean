@@ -1,6 +1,6 @@
 # Ascents and descents over permutations avoiding $132$ and $321$
 
-**Ascents and descents over permutations avoiding $132$ and $321$.** Let
+Let
 
 $$G = \sum_{n \ge 0} \sum_{\sigma} x^n p^{\mathrm{asc}(\sigma)} q^{\mathrm{des}(\sigma)},$$
 

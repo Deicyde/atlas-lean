@@ -1,3 +1,3 @@
 # Inhomogeneous Bernoulli product with constant parameter
 
-**Inhomogeneous Bernoulli product with constant parameter.** For a constant parameter, the inhomogeneous product is `bernoulliProductMeasure`.
+For a constant parameter, the inhomogeneous product is `bernoulliProductMeasure`.

@@ -1,6 +1,6 @@
 # Viterbi computes the MAP value
 
-**Viterbi computes the MAP value.** Let $h$ be a hidden Markov model with a finite nonempty set
+Let $h$ be a hidden Markov model with a finite nonempty set
 of states $S$ and initial weights $\pi$, transition weights $a$ and emission weights $b$ that are
 nonnegative elements of a linearly ordered commutative semiring, and let $x_0, x_1, \dots$ be
 observations. Let $\delta$ be the Viterbi variables, $\delta_0(s) = \pi(s)\, b(s, x_0)$ and

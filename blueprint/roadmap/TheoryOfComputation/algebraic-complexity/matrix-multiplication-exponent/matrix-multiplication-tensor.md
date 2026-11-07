@@ -1,6 +1,6 @@
 # Matrix multiplication tensor
 
-**Matrix multiplication tensor.** For a field $F$ and natural numbers $m$, $n$, $p$, the matrix
+For a field $F$ and natural numbers $m$, $n$, $p$, the matrix
 multiplication tensor is the array over $F$ indexed by triples $((i, j), (j', k), (k', i'))$ of an
 $m \times n$, an $n \times p$ and a $p \times m$ matrix coordinate, whose entry is $1$ if $j = j'$,
 $k = k'$ and $i' = i$, and $0$ otherwise.

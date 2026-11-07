@@ -1,6 +1,6 @@
 # Summability of Ramanujan's factorial series in a sector
 
-**Summability of Ramanujan's factorial series in a sector.** Let $x$ be a nonzero complex
+Let $x$ be a nonzero complex
 number and let $\varepsilon$ be a real number with $0 < \varepsilon < \pi$. Then there is a real
 number $R$ such that for every complex number $z$ with $|z| \ge R$ whose principal argument
 satisfies $-\pi + \varepsilon \le \arg z \le \pi - \varepsilon$, the series

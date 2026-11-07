@@ -1,6 +1,6 @@
 # Two runs of the Fibonacci automaton
 
-**Two runs of the Fibonacci automaton.** For the Fibonacci substitution $0 \mapsto 01$,
+For the Fibonacci substitution $0 \mapsto 01$,
 $1 \mapsto 0$ on the alphabet $\{0, 1\}$, the substitution automaton started at the letter $0$
 ends in the state $0$ after reading the digit word $10$, and its run on the digit word $11$ is
 undefined, so $11$ is rejected.

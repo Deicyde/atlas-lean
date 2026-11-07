@@ -1,6 +1,6 @@
 # Sum-free sets modulo $m$
 
-**Sum-free sets modulo $m$.** For natural numbers $m$ and $l$, a set $A$ of integers is
+For natural numbers $m$ and $l$, a set $A$ of integers is
 $l$-sum-free modulo $m$ if there are no $x_1, \dots, x_l, y \in A$ (repetitions allowed) with
 $x_1 + \dots + x_l \equiv y \pmod{m}$.
 

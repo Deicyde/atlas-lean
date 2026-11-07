@@ -1,6 +1,6 @@
 # Lower bounds for the Irwin sum without the digit
 
-**Lower bounds for the Irwin sum without the digit.** Let $b > 2$ be a base and let $d$ be a
+Let $b > 2$ be a base and let $d$ be a
 nonzero digit, $0 < d < b$. Let $H^{(0)}$ be the Irwin sum of $1/n$ over the positive integers $n$
 whose base-$b$ expansion does not contain $d$. Then
 $b \log b - b \log(1 + 1/d) < H^{(0)}$ and $b \log(b/2) < H^{(0)}$.

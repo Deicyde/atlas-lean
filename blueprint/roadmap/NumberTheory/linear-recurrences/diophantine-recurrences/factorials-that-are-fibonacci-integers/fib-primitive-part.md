@@ -1,6 +1,6 @@
 # Primitive part of a Fibonacci number
 
-**Primitive part of a Fibonacci number.** For a natural number $m$, the primitive part of the
+For a natural number $m$, the primitive part of the
 Fibonacci number $F_m$ is $\Psi_m = \prod_p p^{a_p}$, where the product runs over the primes $p$
 dividing $F_m$ whose Fibonacci entry point is $z(p) = m$, and $a_p$ is the exponent of $p$ in
 $F_m$.

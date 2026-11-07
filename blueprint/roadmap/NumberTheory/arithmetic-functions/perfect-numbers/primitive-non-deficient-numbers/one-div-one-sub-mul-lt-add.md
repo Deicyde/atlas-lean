@@ -1,6 +1,6 @@
 # Zelinsky's reciprocal bound
 
-**Zelinsky's reciprocal bound.** For real numbers $k$ and $m$ with $k \ge 2$ and
+For real numbers $k$ and $m$ with $k \ge 2$ and
 $0 < m < 1/(k(k+1))$, we have $1/(1 - km) < 1 + (k+1)m$.
 
 ## Sources

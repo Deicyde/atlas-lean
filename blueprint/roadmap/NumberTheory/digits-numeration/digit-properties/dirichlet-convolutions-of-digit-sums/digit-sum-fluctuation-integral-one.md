@@ -1,6 +1,6 @@
 # The fluctuation integral vanishes at $1$
 
-**The fluctuation integral vanishes at $1$.** For every natural number $q$, let $F$ be the
+For every natural number $q$, let $F$ be the
 Trollope–Delange fluctuation in base $q$ and $G(x) = \int_1^x F(\log u / \log q) \, du / u$.
 Then $G(1) = 0$.
 

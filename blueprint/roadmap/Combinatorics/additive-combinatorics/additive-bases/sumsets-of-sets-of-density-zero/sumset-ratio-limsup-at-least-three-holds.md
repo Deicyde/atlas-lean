@@ -1,6 +1,6 @@
 # Freiman's theorem on sumsets of sets of density zero
 
-**Freiman's theorem on sumsets of sets of density zero.** For $N \in \mathbb{N}$ write
+For $N \in \mathbb{N}$ write
 $[1, N] = \{1, \dots, N\}$, and for $A \subseteq \mathbb{N}$ write
 $A + A = \{a + b \mid a, b \in A\}$. Let $A \subseteq \mathbb{N}$ be an infinite set with
 $\lvert A \cap [1, N] \rvert / N \to 0$ as $N \to \infty$. Then for every real $\varepsilon > 0$

@@ -1,6 +1,6 @@
 # PRECEDENCE-CONSTRAINED MULTIPROCESSOR SCHEDULING is NP-complete
 
-**PRECEDENCE-CONSTRAINED MULTIPROCESSOR SCHEDULING is NP-complete.** The
+The
 precedence-constrained multiprocessor scheduling decision problem is in NP, and every decision
 problem in NP has a polynomial-time many-one reduction to it.
 

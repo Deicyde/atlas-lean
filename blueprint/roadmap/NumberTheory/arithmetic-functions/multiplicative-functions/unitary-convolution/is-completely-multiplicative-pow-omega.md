@@ -1,6 +1,6 @@
 # Complete multiplicativity of $c^{\Omega}$
 
-**Complete multiplicativity of $c^{\Omega}$.** Let $R$ be a monoid with zero and $c \in R$.
+Let $R$ be a monoid with zero and $c \in R$.
 Let $c^{\Omega}$ be the arithmetic function $n \mapsto c^{\Omega(n)}$ for $n \ge 1$, where
 $\Omega(n)$ is the number of prime factors of $n$ counted with multiplicity. Then $c^{\Omega}$ is
 completely multiplicative: for all natural numbers $m$ and $n$, its value at $mn$ is the product

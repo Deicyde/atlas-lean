@@ -1,6 +1,6 @@
 # Liouville integrable system on a subset of $\mathbb{R}^{2n}$
 
-**Liouville integrable system on a subset of $\mathbb{R}^{2n}$.** Functions
+Functions
 $F_0, \dots, F_{n-1} \colon \mathbb{R}^{2n} \to \mathbb{R}$ are Liouville integrable on a set
 $U \subseteq \mathbb{R}^{2n}$ if each $F_i$ is $C^\infty$ on $U$, the Poisson brackets
 $\{F_i, F_j\}$ vanish at every point of $U$ for all $i, j$, and at every $x \in U$ the

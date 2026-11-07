@@ -1,6 +1,6 @@
 # Csóka–Lo–Norin–Wu–Yepremyan theorem on 2-regular minors
 
-**Csóka–Lo–Norin–Wu–Yepremyan theorem on 2-regular minors.** For every natural number $t$,
+For every natural number $t$,
 every finite simple graph $G$ whose average degree (the sum of the vertex degrees divided by the
 number of vertices, taken to be $0$ when $G$ has no vertices) is at least $4t/3 - 2$ contains
 every 2-regular simple graph $H$ on $t$ vertices as a minor: there are nonempty, pairwise

@@ -1,6 +1,6 @@
 # Two-row patterns of growing width
 
-**Two-row patterns of growing width.** For each real $n$ let $Q_n \subseteq \mathbb{R}^2$
+For each real $n$ let $Q_n \subseteq \mathbb{R}^2$
 be a set all of whose points have $y$-coordinate $0$ or $1$, whose least $x$-coordinate is $0$
 and whose greatest $x$-coordinate is $s(n)$. Then the following are equivalent: for every
 $\varepsilon > 0$, $\operatorname{opx}(n, Q_n) \ge n^{2 - \varepsilon}$ for all sufficiently large

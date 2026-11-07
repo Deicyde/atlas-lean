@@ -1,6 +1,6 @@
 # Recursion for the words $W_i$ of the unsum gap sequence
 
-**Recursion for the words $W_i$ of the unsum gap sequence.** For each $i$ let $V_i$ be the
+For each $i$ let $V_i$ be the
 word $W_i$ with its first and last digit removed, write $|W|$ for the length of a word $W$, and
 denote concatenation of words by juxtaposition. For every $i \ge 2$: if $i$ is odd, then
 $W_{i+1} = W_i \, 5 \, V_{i-1} \, 3$; if $i$ is even, then $W_{i+1} = 3 \, V_i \, 5 \, W_{i-1}$;

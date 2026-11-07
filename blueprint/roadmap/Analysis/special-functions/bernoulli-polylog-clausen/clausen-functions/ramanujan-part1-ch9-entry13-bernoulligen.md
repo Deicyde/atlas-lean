@@ -1,6 +1,6 @@
 # Integrals of $u^n \cot(u/2)$ via Clausen functions (Chapter 9, Entry 13)
 
-**Integrals of $u^n \cot(u/2)$ via Clausen functions (Chapter 9, Entry 13).** For real $x$
+For real $x$
 let $C_1(x) = -\log\lvert 2\sin(x/2)\rvert$ and, for $m \ge 2$, let
 $C_m(x) = \sum_{k \ge 1} \sin(kx)/k^m$ if $m$ is even and $C_m(x) = \sum_{k \ge 1} \cos(kx)/k^m$
 if $m$ is odd. Let $n \ge 1$ be a natural number and $x$ a nonzero real number with

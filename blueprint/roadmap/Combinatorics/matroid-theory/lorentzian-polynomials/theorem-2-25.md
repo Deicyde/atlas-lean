@@ -1,6 +1,6 @@
 # Lorentzian polynomials as the closure of strictly Lorentzian polynomials
 
-**Lorentzian polynomials as the closure of strictly Lorentzian polynomials.** For all natural
+For all natural
 numbers $n \ge 1$ and $d$, the closure of the set $\mathring{L}^d_n$ of strictly Lorentzian
 polynomials of degree $d$ in $n$ variables, taken in the space $H^d_n$ of homogeneous polynomials
 of degree $d$ in $\mathbb{R}[w_1, \dots, w_n]$ with the Euclidean topology on coefficients, is the

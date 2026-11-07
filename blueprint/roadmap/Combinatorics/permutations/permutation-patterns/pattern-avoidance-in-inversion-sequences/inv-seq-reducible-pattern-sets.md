@@ -1,6 +1,6 @@
 # Reducible sets of length-3 patterns for inversion sequences
 
-**Reducible sets of length-3 patterns for inversion sequences.** An inversion sequence of
+An inversion sequence of
 length $n$ is a sequence $e_0 e_1 \cdots e_{n-1}$ of natural numbers with $e_i \le i$ for all $i$;
 write a length-3 pattern as a digit string ($101$ is the pattern $(1, 0, 1)$). For each pair
 $(C, \tau)$ listed below and every $n$, every inversion sequence of length $n$ that avoids every

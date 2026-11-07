@@ -1,6 +1,6 @@
 # The rounding sequence parity count drops by at most one
 
-**The rounding sequence parity count drops by at most one.** For every natural number $n$,
+For every natural number $n$,
 the rounding sequence parity count $\mathcal{R}$ satisfies
 $\mathcal{R}_{n+1} \ge \mathcal{R}_n - 1$.
 

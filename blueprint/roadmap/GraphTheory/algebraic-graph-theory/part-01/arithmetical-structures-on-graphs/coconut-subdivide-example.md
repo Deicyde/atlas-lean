@@ -1,6 +1,6 @@
 # Example of subdividing a coconut tree
 
-**Example of subdividing a coconut tree.** List a labeling of a coconut tree as its values on
+List a labeling of a coconut tree as its values on
 the path vertices $v_1, v_2, \dots$, then $\mid$, then its values on the leaves. Subdividing the
 labelings $d = (2, 2, 2, 2 \mid 2, 2, 4)$ and $r = (1, 2, 3, 4 \mid 2, 2, 1)$ of $CT(4, 3)$ at
 position $2$ gives the labelings $d' = (3, 1, 3, 2, 2 \mid 2, 2, 4)$ and

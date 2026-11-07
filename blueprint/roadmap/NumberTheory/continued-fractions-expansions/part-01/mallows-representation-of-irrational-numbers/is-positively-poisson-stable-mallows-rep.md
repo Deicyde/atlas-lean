@@ -1,6 +1,6 @@
 # Poisson stability of the Mallows and Stern–Brocot representations
 
-**Poisson stability of the Mallows and Stern–Brocot representations.** For every irrational
+For every irrational
 $\alpha \in (0, 1)$, the Mallows representation of $\alpha$ is positively Poisson stable if and
 only if the Stern–Brocot representation of $\alpha$ is positively Poisson stable.
 

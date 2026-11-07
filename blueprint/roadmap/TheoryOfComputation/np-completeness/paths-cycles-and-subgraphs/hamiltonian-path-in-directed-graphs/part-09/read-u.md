@@ -1,6 +1,6 @@
 # The unary reader of the Hamiltonian path verifier
 
-**The unary reader of the Hamiltonian path verifier.** For stacks $\mathsf{src}$ and $c$ and
+For stacks $\mathsf{src}$ and $c$ and
 labels $\ell$ (its own) and $m$ (the next one), the statement that goes to label $\mathrm{no}$
 if $\mathsf{src}$ is empty; otherwise it pops the top symbol of $\mathsf{src}$ and, if that
 symbol is the bit `true`, pushes the bit `true` (one unit) onto $c$ and goes to $\ell$, while

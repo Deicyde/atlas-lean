@@ -1,6 +1,6 @@
 # Weight of an improper word
 
-**Weight of an improper word.** Let $w$ be a word of natural-number digits, written most
+Let $w$ be a word of natural-number digits, written most
 significant digit first, and let $v = 0w$ be $w$ padded with a $0$ on the left, with positions
 numbered from $0$. Let $p$ be the position of the leftmost digit $\ge 2$ of $v$ (the improper
 boundary), or the length of $v$ if there is no such digit. The weight of $w$ is the sum of the

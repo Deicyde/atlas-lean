@@ -1,6 +1,6 @@
 # Vanishing of families of sums of transformed entries
 
-**Vanishing of families of sums of transformed entries.** Let $n$ be a positive integer, $d$ a
+Let $n$ be a positive integer, $d$ a
 natural number and $g_1, \dots, g_d : \mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ maps.
 Then the family over $\mathbb{Z}/n\mathbb{Z}$ sending a block $(b_1, \dots, b_l)$ to the vector
 $\left(\sum_i g_1(b_i), \dots, \sum_i g_d(b_i)\right) \in (\mathbb{Z}/n\mathbb{Z})^d$ is

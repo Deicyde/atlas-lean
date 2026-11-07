@@ -1,6 +1,6 @@
 # Rank of appearance and super Lucas pseudoprimes
 
-**Rank of appearance and super Lucas pseudoprimes.** Let $P, Q$ be integers with $Q \neq 0$
+Let $P, Q$ be integers with $Q \neq 0$
 such that the pair $(P, Q)$ is nondegenerate, let $D = P^2 - 4Q$, and write $\rho(m)$ for the rank
 of appearance of $m$ in the Lucas sequence $U(P, Q)$. Let $N > 1$ be an odd number that is not
 prime, with $\gcd(N, QD) = 1$, and for each prime $p \mid N$ let $k_p$ be the exponent of $p$ in

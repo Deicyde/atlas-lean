@@ -1,6 +1,6 @@
 # Spanning set of Bradley–Zhao qMZVs
 
-**Spanning set of Bradley–Zhao qMZVs.** Let $\mathcal{Z}_{q,1}$ be the space
+Let $\mathcal{Z}_{q,1}$ be the space
 $\mathcal{Z}_{q,d}$ of general qMZVs for $d = 1$. Then $\mathcal{Z}_{q,1}$ is the
 $\mathbb{Q}$-span of the Bradley–Zhao qMZVs $\zeta_q^{\mathrm{BZ}}(k_1, \dots, k_r)$ over all
 admissible indices, that is, all indices of natural numbers with $k_i \ge 1$ for every $i$ and

@@ -1,6 +1,6 @@
 # Representation numbers for sums of squares
 
-**Representation numbers for sums of squares.** For an integer $k$ and a natural number $n$,
+For an integer $k$ and a natural number $n$,
 $r_k(n)$ is the coefficient of $q^n$ in $\theta(q)^k$, where
 $\theta(q) = \sum_{m \in \mathbb{Z}} q^{m^2}$. Since $\theta$ has constant coefficient $1$, it is a
 unit of $\mathbb{Z}[[q]]$, so $\theta^k$ is a power series for negative $k$ as well.

@@ -1,6 +1,6 @@
 # The single-tape simulation outputs within one extra step
 
-**The single-tape simulation outputs within one extra step.** Let $\Gamma_0$ be a finite
+Let $\Gamma_0$ be a finite
 alphabet with at least one non-blank symbol, let $M$ be a Post–Turing machine over $\Gamma_0$
 supported by the finite set of states $S$, and let $l$ and $l'$ be words of non-blank symbols of
 $\Gamma_0$. If $M$, started on $l$, reaches in exactly $n$ steps a configuration $c$ in which it

@@ -1,6 +1,6 @@
 # Factorial form of the Wilson quotient identity
 
-**Factorial form of the Wilson quotient identity.** For every prime $p$, the Wilson
+For every prime $p$, the Wilson
 quotient $W(p)$ of $p$ satisfies $(p-1)! = p \, W(p) - 1$ in $\mathbb{Z}$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Diploid Baum–Eagon mean-fitness inequality, sharp form
 
-**Diploid Baum–Eagon mean-fitness inequality, sharp form.** With
+With
 nonnegative allele frequencies and genotype fitnesses and positive mean fitness, one generation
 of selection raises the log mean fitness by at least twice the relative entropy
 `∑ i, p'_i log (p'_i / p_i)` of the new allele frequencies `p'` from the old ones `p`

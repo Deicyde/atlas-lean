@@ -1,6 +1,6 @@
 # A bound on a difference of reciprocals
 
-**A bound on a difference of reciprocals.** For all real numbers $a > 1$ and $x \ge 1$,
+For all real numbers $a > 1$ and $x \ge 1$,
 
 $$
 \frac{1}{1+x}-\frac{1}{1+ax}\le \frac{\sqrt{a}-1}{\sqrt{a}+1}.

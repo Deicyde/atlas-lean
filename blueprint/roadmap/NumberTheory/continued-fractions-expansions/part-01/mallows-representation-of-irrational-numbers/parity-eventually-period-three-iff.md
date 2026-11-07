@@ -1,6 +1,6 @@
 # Eventual period three of the numerator parities
 
-**Eventual period three of the numerator parities.** Let $\alpha \in (0, 1)$ be
+Let $\alpha \in (0, 1)$ be
 irrational, let $f_1(\alpha), f_2(\alpha), \dots$ be the fractions on its Stern–Brocot path,
 with numerators $p_1, p_2, \dots$, and let $M(\alpha) = \langle M_1, M_2, \dots \rangle$ be its
 Mallows representation. Then there is $j_0 \ge 1$ with $p_{j+3} \equiv p_j \pmod 2$ for all

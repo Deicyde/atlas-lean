@@ -1,6 +1,6 @@
 # Lower bound for the number of metered parking functions
 
-**Lower bound for the number of metered parking functions.** For all natural numbers $t$,
+For all natural numbers $t$,
 $m$ and $n$, $\mathrm{mpf}_{m,n}(t) \ge (n - t)^m$, where $n - t$ is truncated subtraction
 (equal to $0$ when $t \ge n$).
 

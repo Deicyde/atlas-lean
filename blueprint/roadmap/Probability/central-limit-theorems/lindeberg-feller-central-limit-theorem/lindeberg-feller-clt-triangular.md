@@ -1,6 +1,6 @@
 # Lindeberg–Feller central limit theorem
 
-**Lindeberg–Feller central limit theorem.** Let $\mu$ be a probability measure on $\Omega$
+Let $\mu$ be a probability measure on $\Omega$
 and let $X_{n,k}$ ($n \in \mathbb{N}$, $0 \le k < n$) be a triangular array of real random
 variables on $\Omega$ such that for each $n$ the variables $X_{n,0}, \dots, X_{n,n-1}$ are
 independent, each $X_{n,k}$ has mean $0$, and each $X_{n,k}^2$ is integrable (expectations are

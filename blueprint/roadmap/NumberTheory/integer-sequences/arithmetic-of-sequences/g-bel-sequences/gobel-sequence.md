@@ -1,6 +1,6 @@
 # The (k, l)-Göbel sequence
 
-**The (k, l)-Göbel sequence.** For natural numbers $k$ and $l$, the $(k, l)$-Göbel sequence
+For natural numbers $k$ and $l$, the $(k, l)$-Göbel sequence
 is the sequence of rational numbers $g_{k,l}(n)$, $n \ge 0$, given by $g_{k,l}(0) = 0$,
 $g_{k,l}(1) = l$ and, for $n \ge 1$,
 

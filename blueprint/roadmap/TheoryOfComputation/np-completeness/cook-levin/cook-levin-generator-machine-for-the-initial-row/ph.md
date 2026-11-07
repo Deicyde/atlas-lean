@@ -1,6 +1,6 @@
 # Loop phases of the initial-row generator
 
-**Loop phases of the initial-row generator.** The five phase loops of the generator for the
+The five phase loops of the generator for the
 initial-row clauses, in the order the generator runs them (its input loop runs between the
 certificate phase and the two stack phases): the tail phase (the row-$0$ cells of the stack $k_0$
 holding the input, past the certificate block, are empty), the prefix phase (an empty cell in the

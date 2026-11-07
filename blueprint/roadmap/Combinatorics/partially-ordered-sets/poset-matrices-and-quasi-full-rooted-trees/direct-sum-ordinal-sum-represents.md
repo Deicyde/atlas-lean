@@ -1,6 +1,6 @@
 # Direct and ordinal sums of poset matrices represent sums of posets
 
-**Direct and ordinal sums of poset matrices represent sums of posets.** A poset matrix $M$ of
+A poset matrix $M$ of
 order $n$, a Boolean matrix with rows and columns indexed by $0, \dots, n - 1$, represents a
 partial order $P$ when there is a bijection $e$ from $\{0, \dots, n - 1\}$ to $P$ such that
 $e(i) \le e(j)$ if and only if $M_{ij}$ is true. Let $A$ and $B$ be poset matrices of orders $m$

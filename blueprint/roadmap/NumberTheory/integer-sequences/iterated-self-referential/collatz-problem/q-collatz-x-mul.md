@@ -1,6 +1,6 @@
 # The q-analog 3x+1 map on multiples of $q$
 
-**The q-analog 3x+1 map on multiples of $q$.** For all power series
+For all power series
 $A, B, y \in \mathbb{F}_2[[q]]$, the $q$-analog $3x+1$ map satisfies $T_{A,B}(qy) = y$.
 
 ## Sources

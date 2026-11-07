@@ -1,6 +1,6 @@
 # Monge–Kantorovich existence theorem
 
-**Monge–Kantorovich existence theorem.** Let $X$ and $Y$ be Polish spaces with their Borel
+Let $X$ and $Y$ be Polish spaces with their Borel
 $\sigma$-algebras, let $P$ and $Q$ be probability measures on $X$ and $Y$, and let
 $c \colon X \times Y \to [0, \infty]$ be continuous. Then there is a coupling $\pi$ of $P$ and $Q$
 whose Kantorovich cost $\int c \, d\pi$ is at most the Kantorovich cost $\int c \, d\pi'$ of every

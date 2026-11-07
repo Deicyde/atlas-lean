@@ -1,6 +1,6 @@
 # The variation by $F_\ell$ on $\mathrm{NIZ}_{\ell+2}$ is $0$
 
-**The variation by $F_\ell$ on $\mathrm{NIZ}_{\ell+2}$ is $0$.** Let $\ell \ge 3$, let
+Let $\ell \ge 3$, let
 $F_1 = F_2 = 1, F_3 = 2, \dots$ be the Fibonacci numbers, and let $\Delta^{(F_\ell)}$ be the
 variation of the Zeckendorf sum of digits under adding $F_\ell$ on the Zeckendorf-adic integers
 $\mathbb{X}$. Then $\Delta^{(F_\ell)}(x) = 0$ for every $x \in \mathbb{X}$ in the

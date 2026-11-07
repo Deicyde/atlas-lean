@@ -1,6 +1,6 @@
 # Marginal of a weight
 
-**Marginal of a weight.** Let $V$ and $\alpha$ be finite types, a configuration being a map
+Let $V$ and $\alpha$ be finite types, a configuration being a map
 $x : V \to \alpha$, and let $p$ be a real-valued weight on configurations. The (unnormalized)
 marginal of $p$ on a set of variables $U \subseteq V$ at a configuration $x$ is
 

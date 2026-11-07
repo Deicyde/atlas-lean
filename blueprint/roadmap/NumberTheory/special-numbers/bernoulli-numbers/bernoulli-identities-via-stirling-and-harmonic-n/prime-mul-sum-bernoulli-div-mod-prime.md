@@ -1,6 +1,6 @@
 # The congruence $p\sum_{j=0}^{p} B_j/(p-j+1) \equiv -1 \pmod p$
 
-**The congruence $p\sum_{j=0}^{p} B_j/(p-j+1) \equiv -1 \pmod p$.** Let $B_j$ denote the
+Let $B_j$ denote the
 Bernoulli numbers with $B_1 = -\tfrac12$. For every odd prime $p$, the rational number
 
 $$S = p \sum_{j=0}^{p} \frac{B_j}{p-j+1}$$

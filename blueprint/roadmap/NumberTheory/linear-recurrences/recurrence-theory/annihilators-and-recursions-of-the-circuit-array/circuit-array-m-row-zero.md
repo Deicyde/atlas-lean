@@ -1,6 +1,6 @@
 # Row 0 of the multivariable circuit array
 
-**Row 0 of the multivariable circuit array.** Let $C^M$ be the multivariable circuit array, with
+Let $C^M$ be the multivariable circuit array, with
 values in the field of rational functions over $\mathbb{Q}$ in the variables $X_0, X_1, \dots$.
 For every integer $s \ge 1$, $C^M_{0,s} = (9^{s-1} - 1 + X_1)/9^{s-1}$.
 

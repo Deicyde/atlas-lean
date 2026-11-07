@@ -1,6 +1,6 @@
 # Outcome of the metered parking scheme
 
-**Outcome of the metered parking scheme.** Let $t, n \in \mathbb{N}$, number the $n$ spots
+Let $t, n \in \mathbb{N}$, number the $n$ spots
 $0, \dots, n-1$, and let $a_0, a_1, \dots, a_{m-1}$ be a list of preferences in $\mathbb{N}$.
 Cars arrive in order, and car $i$ parks in the least spot $s$ with $a_i \le s < n$ that is not
 taken by one of the previous $t$ cars (cars $\max(0, i - t), \dots, i - 1$) that parked; if

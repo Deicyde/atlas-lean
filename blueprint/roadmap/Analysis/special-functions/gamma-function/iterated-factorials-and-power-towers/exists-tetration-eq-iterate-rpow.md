@@ -1,6 +1,6 @@
 # Power towers rewritten in another base
 
-**Power towers rewritten in another base.** Let $a, b > e^{1/e}$ be real numbers and $n > 0$
+Let $a, b > e^{1/e}$ be real numbers and $n > 0$
 a natural number. Let $a \uparrow\uparrow n$ be the $n$-fold iterate of $x \mapsto a^x$ starting
 at $1$, and $E_p(b, c)$ the $p$-fold iterate of $x \mapsto b^x$ starting at $c$. Then there are
 a natural number $p$ and a real number $c$ with $1 < c \le b$ such that

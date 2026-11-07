@@ -1,6 +1,6 @@
 # Excedance generating function of circular permutations of more than $r$ objects
 
-**Excedance generating function of circular permutations of more than $r$ objects.** Let $R$
+Let $R$
 be a commutative $\mathbb{Q}$-algebra, $x \in R$ and $r \ge 2$, and work with formal power series
 in $u$ over $R$. For a permutation $\sigma$ let $e(\sigma)$ be its number of excedances (indices
 $i$ with $\sigma(i) > i$). For $j \ge 0$ let $A_j(x) = \sum_{\sigma} x^{e(\sigma)}$, summed over

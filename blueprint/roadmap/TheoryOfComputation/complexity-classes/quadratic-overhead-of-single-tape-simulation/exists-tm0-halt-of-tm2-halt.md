@@ -1,6 +1,6 @@
 # Single-tape emulation of halting multi-stack runs
 
-**Single-tape emulation of halting multi-stack runs.** Let $M$ be a bundled multi-stack
+Let $M$ be a bundled multi-stack
 machine with emulation constant $C$, and $L$ an input for its input stack. If $M$, started on
 $L$, reaches after $t$ steps a configuration $c$ from which it does not step, then the
 single-tape emulation of $M$, started on the encoding of $L$, reaches in some number

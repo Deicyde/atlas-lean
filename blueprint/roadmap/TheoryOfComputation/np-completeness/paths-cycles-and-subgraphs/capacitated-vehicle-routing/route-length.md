@@ -1,6 +1,6 @@
 # Length of a route
 
-**Length of a route.** Let $D$ be a list of lists of natural numbers, read as a distance
+Let $D$ be a list of lists of natural numbers, read as a distance
 matrix whose entry $D_{u,v}$ is the entry at position $v$ of the row at position $u$ (positions
 counted from $0$), or $0$ if there is no such entry, and let $o$ be a natural number, the depot.
 The length of the empty route is $0$, and the length of a route given by a list

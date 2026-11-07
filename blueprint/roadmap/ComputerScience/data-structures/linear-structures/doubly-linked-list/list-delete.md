@@ -1,6 +1,6 @@
 # Deletion from a doubly linked list
 
-**Deletion from a doubly linked list.** Let the store be an array of cells, each either empty
+Let the store be an array of cells, each either empty
 or holding a node with a payload and optional next and previous pointers to cells, let $h$ be
 the optional head pointer, and let $x$ be a cell holding a node such that each cell named by its
 previous or next pointer also holds a node. Following CLRS `LIST-DELETE`, deleting $x$ returns a

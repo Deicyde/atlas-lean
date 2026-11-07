@@ -1,6 +1,6 @@
 # Independent Gaussian blocks
 
-**Independent Gaussian blocks.** Write $\mathcal{N}(a, \Sigma)$ for the multivariate
+Write $\mathcal{N}(a, \Sigma)$ for the multivariate
 Gaussian distribution with mean $a$ and covariance matrix $\Sigma$. Let $\iota$ and $\kappa$ be
 finite index sets, let $m \in \mathbb{R}^\iota$ and $m' \in \mathbb{R}^\kappa$, and let $S$ and
 $R$ be positive semidefinite real matrices indexed by $\iota$ and by $\kappa$. Then the image of

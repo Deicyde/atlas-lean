@@ -1,6 +1,6 @@
 # The inverse Ackermann function at 2
 
-**The inverse Ackermann function at 2.** The inverse Ackermann function $\alpha$ satisfies
+The inverse Ackermann function $\alpha$ satisfies
 $\alpha(2) = 1$, since $A(0, 0) = 1 < 2 \le 3 = A(1, 1)$, where $A$ is the two-argument
 Ackermann function.
 

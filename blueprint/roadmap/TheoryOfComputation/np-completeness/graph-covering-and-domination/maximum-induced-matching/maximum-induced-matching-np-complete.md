@@ -1,6 +1,6 @@
 # MAXIMUM INDUCED MATCHING is NP-complete
 
-**MAXIMUM INDUCED MATCHING is NP-complete.** The MAXIMUM INDUCED MATCHING decision problem
+The MAXIMUM INDUCED MATCHING decision problem
 belongs to NP, and every decision problem in NP reduces to it by a polynomial-time many-one
 reduction.
 

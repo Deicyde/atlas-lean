@@ -1,6 +1,6 @@
 # Signed Wilf classes of sets of three patterns
 
-**Signed Wilf classes of sets of three patterns.** The number $\mathrm{sw}_3$ of
+The number $\mathrm{sw}_3$ of
 Wilf-equivalence classes among the sets of $3$ length-2 signed patterns is $93$.
 
 ## Sources

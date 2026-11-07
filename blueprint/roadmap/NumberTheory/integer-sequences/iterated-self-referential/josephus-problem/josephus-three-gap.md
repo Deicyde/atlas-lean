@@ -1,6 +1,6 @@
 # Gaps between consecutive positive fixed points of $J_3$
 
-**Gaps between consecutive positive fixed points of $J_3$.** Let $J_3$ be the Josephus
+Let $J_3$ be the Josephus
 function with step $3$ and let $n_\ell$ be the $\ell$-th natural number $n \ge 1$ with
 $J_3(n) = n$, in increasing order and counting from $\ell = 0$. For $\ell \in \mathbb{N}$, the gap
 $g_\ell$ is the number of natural numbers $n$ with $n_\ell < n < n_{\ell+1}$ and

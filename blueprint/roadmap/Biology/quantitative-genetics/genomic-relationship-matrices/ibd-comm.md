@@ -1,3 +1,3 @@
 # Symmetry of identity by descent
 
-**Symmetry of identity by descent.** Identity by descent is symmetric.
+Identity by descent is symmetric.

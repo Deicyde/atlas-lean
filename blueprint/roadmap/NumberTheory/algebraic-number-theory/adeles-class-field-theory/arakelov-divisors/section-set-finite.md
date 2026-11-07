@@ -1,6 +1,6 @@
 # Finiteness of section sets
 
-**Finiteness of section sets.** For every Arakelov divisor $D$ of a number field $K$, the
+For every Arakelov divisor $D$ of a number field $K$, the
 section set of $D$ is finite.
 
 Multiplying by a nonzero $d \in \mathcal{O}_K$ that clears the denominators of the fractional

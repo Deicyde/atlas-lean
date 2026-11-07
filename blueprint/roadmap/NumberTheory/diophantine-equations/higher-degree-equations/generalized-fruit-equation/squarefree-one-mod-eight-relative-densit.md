@@ -1,6 +1,6 @@
 # Relative density of square-free integers congruent to $1$ modulo $8$
 
-**Relative density of square-free integers congruent to $1$ modulo $8$.** As $X \to \infty$
+As $X \to \infty$
 through the natural numbers, the number of square-free integers $t$ with $1 \le t \le X$ and
 $t \equiv 1 \pmod 8$, divided by the number of square-free integers $t$ with $1 \le t \le X$,
 tends to $1/6$.

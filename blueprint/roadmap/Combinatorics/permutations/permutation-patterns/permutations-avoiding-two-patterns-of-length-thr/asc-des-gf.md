@@ -1,6 +1,6 @@
 # Ascent–descent generating function of a pair of patterns
 
-**Ascent–descent generating function of a pair of patterns.** For permutations $\tau$ and
+For permutations $\tau$ and
 $\rho$ of $\{0, 1, 2\}$, let $S_n(\tau, \rho)$ be the set of permutations of
 $\{0, 1, \dots, n-1\}$ that contain neither $\tau$ nor $\rho$ as a classical pattern. The
 ascent–descent generating function of $(\tau, \rho)$ is the formal power series

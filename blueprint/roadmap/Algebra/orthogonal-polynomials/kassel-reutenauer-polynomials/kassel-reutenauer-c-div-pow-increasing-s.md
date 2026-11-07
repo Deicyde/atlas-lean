@@ -1,6 +1,6 @@
 # Increasing-sequence and odd-divisor formulas for $C_n(q)/q^n$
 
-**Increasing-sequence and odd-divisor formulas for $C_n(q)/q^n$.** Let $n \ge 1$, let
+Let $n \ge 1$, let
 $\bar P_n$ be the Kassel–Reutenauer polynomial, and write $C_n(q)/q^n$ for the Laurent polynomial
 $(q - 2 + q^{-1})\,\bar P_n(q + q^{-1})$ in $\mathbb{Z}[q, q^{-1}]$. For integers $h \ge 1$ and
 $a$ let $IS(a, h) = \{a + 1, \dots, a + h\}$.

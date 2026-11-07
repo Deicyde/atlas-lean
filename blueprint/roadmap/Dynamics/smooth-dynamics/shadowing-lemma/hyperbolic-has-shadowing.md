@@ -1,6 +1,6 @@
 # Anosov–Bowen shadowing lemma
 
-**Anosov–Bowen shadowing lemma.** Let $T : \mathbb{R}^d \to \mathbb{R}^d$ be a homeomorphism and
+Let $T : \mathbb{R}^d \to \mathbb{R}^d$ be a homeomorphism and
 let $K \subseteq \mathbb{R}^d$ be a compact set that is a hyperbolic invariant set for $T$. Then $K$
 has the shadowing property for $T$.
 

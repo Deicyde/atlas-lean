@@ -1,6 +1,6 @@
 # The gcd-sum as a divisor sum of totients
 
-**The gcd-sum as a divisor sum of totients.** For every positive integer $n$,
+For every positive integer $n$,
 $\sum_{j=1}^{n} \gcd(j, n) = n \sum_{d \mid n} \varphi(d)/d$, where $\varphi$ is Euler's totient
 function and $d$ runs over the positive divisors of $n$.
 

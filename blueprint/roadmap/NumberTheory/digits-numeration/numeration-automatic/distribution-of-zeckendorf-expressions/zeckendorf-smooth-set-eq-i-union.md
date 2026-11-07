@@ -1,6 +1,6 @@
 # Proposition 3: $U$ is a disjoint union of open intervals
 
-**Proposition 3: $U$ is a disjoint union of open intervals.** Let $(L, \tilde L)$ be a
+Let $(L, \tilde L)$ be a
 periodic Zeckendorf pair, $E^*$ and $\tilde E^*$ the $L^*$- and $\tilde L^*$-collections,
 $\bar E^*$ the closure collection of $L$, and $\tilde Q$ a fundamental sequence of $\tilde E^*$.
 Write $x(\eta) = \sum_k \eta_k \tilde Q_k$, $\tilde\omega = \tilde Q_0$, and $\bar\beta^{b+1}$

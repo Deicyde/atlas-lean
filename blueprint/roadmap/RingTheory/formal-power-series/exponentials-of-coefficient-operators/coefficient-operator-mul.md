@@ -1,3 +1,3 @@
 # Product rule for coefficient operators
 
-**Product rule for coefficient operators.** A family of coefficient derivations gives the source product rule, without commutation.
+A family of coefficient derivations gives the source product rule, without commutation.

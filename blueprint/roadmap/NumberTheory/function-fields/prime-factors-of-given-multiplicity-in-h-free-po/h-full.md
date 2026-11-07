@@ -1,6 +1,6 @@
 # $h$-full polynomials
 
-**$h$-full polynomials.** Let $F$ be a field and $h \in \mathbb{N}$. The set $N_h$ of $h$-full
+Let $F$ be a field and $h \in \mathbb{N}$. The set $N_h$ of $h$-full
 polynomials over $F$ consists of the monic polynomials $f$ such that $P^h$ divides $f$ for
 every monic irreducible polynomial $P$ that divides $f$.
 

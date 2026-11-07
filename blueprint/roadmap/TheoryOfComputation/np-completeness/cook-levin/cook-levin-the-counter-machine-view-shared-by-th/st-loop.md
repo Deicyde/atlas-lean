@@ -1,6 +1,6 @@
 # A runtime `for` loop in the counter view
 
-**A runtime `for` loop in the counter view.** Let $M$ be a counter machine, let $c \ne c_d$
+Let $M$ be a counter machine, let $c \ne c_d$
 be counters, and let $\mathrm{head}$, $\mathrm{body}$, $\mathrm{rest}$, $\mathrm{next}$ be labels
 such that at $\mathrm{head}$, $M$ pops a unit from $c$, then pushes a unit onto $c_d$ and goes to
 $\mathrm{body}$, or goes to $\mathrm{rest}$ if $c$ was empty; and at $\mathrm{rest}$, $M$ pops a

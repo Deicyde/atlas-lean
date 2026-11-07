@@ -1,6 +1,6 @@
 # Watson's lemma for Laplace integrals
 
-**Watson's lemma for Laplace integrals.** Let $g : \mathbb{R} \to \mathbb{R}$ and let
+Let $g : \mathbb{R} \to \mathbb{R}$ and let
 $(c_k)_{k \ge 1}$ be real numbers such that for every $N \ge 0$,
 $g(s) - \sum_{k=1}^{N} c_k s^k = O(s^{N+1})$ as $s \to 0^+$. Suppose there is $m_0 \in \mathbb{R}$
 such that $s \mapsto g(s) e^{-ms}$ is integrable on $(0, \infty)$ for every $m \ge m_0$. Then

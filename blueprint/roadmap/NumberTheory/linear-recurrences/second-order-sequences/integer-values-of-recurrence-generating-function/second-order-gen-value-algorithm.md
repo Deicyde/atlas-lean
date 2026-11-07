@@ -1,6 +1,6 @@
 # Algorithm for integer values of a second-order generating function
 
-**Algorithm for integer values of a second-order generating function.** Let $a, b, p$ be
+Let $a, b, p$ be
 integers with $p \ne 0$ and $(a, b) \ne (0, 0)$, let $A(x) = \frac{a(1 - px) + bx}{1 - px - x^2}$
 for rational $x$, and for integers $r, s$ let $A^{(r,s)}$ be the two-sided integer sequence with
 $A^{(r,s)}_0 = r$, $A^{(r,s)}_1 = s$ and $A^{(r,s)}_{n+2} = pA^{(r,s)}_{n+1} + A^{(r,s)}_n$ for all

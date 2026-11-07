@@ -1,6 +1,6 @@
 # Shifted binomial–harmonic convolution (Alzer–Kwong, Corollary 2)
 
-**Shifted binomial–harmonic convolution (Alzer–Kwong, Corollary 2).** For natural numbers $k$
+For natural numbers $k$
 and $n$ with $1 \le k \le n - 1$,
 
 $$

@@ -1,6 +1,6 @@
 # Path length of a smooth arithmetical structure on a coconut tree
 
-**Path length of a smooth arithmetical structure on a coconut tree.** Let $F$ be the
+Let $F$ be the
 Euclidean chain function, let $p \ge 1$, and let $(d, r)$ be a smooth arithmetical structure on
 the coconut tree $\mathrm{CT}(p, s)$, with path vertices $v_1, \dots, v_p$ and leaves
 $v_{\ell_1}, \dots, v_{\ell_s}$. Then $p = F(r(v_{\ell_1}) + \dots + r(v_{\ell_s}), r(v_p)) - 1$.

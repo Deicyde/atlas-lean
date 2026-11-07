@@ -1,6 +1,6 @@
 # Shifted partial sums for completely multiplicative functions
 
-**Shifted partial sums for completely multiplicative functions.** Let $F$ be a finite field
+Let $F$ be a finite field
 and let $\alpha, \beta \colon F[T] \to \mathbb{C}$ be completely multiplicative, that is, monoid
 homomorphisms from the multiplicative monoid of $F[T]$ to $\mathbb{C}$. Write $\mu$ for the Möbius
 function of $F[T]$. For $f \in F[T]$, a natural number $n$ and an integer $k$, write

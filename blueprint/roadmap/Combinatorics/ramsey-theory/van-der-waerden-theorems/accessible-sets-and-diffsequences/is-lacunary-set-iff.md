@@ -1,6 +1,6 @@
 # Characterization of lacunary sets
 
-**Characterization of lacunary sets.** A set $D$ of natural numbers is lacunary if and only
+A set $D$ of natural numbers is lacunary if and only
 if there is a lacunary sequence $(m_n)_{n \ge 0}$ of natural numbers with
 $D = \{m_n : n \ge 0\}$.
 

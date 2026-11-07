@@ -1,6 +1,6 @@
 # Strassen's matrix accumulator
 
-**Strassen's matrix accumulator.** Let $R$ be a type with a zero, an addition, a subtraction
+Let $R$ be a type with a zero, an addition, a subtraction
 and a multiplication (no ring axioms are assumed). For $k \ge 0$ and $2^k \times 2^k$ matrices
 $A$, $B$, $C$ over $R$, this procedure runs Strassen's seven-product recursion for adding $AB$ to
 $C$. It returns a $2^k \times 2^k$ matrix together with a pair of counts: the number of scalar

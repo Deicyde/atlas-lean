@@ -1,6 +1,6 @@
 # Symmetry and Pascal's recurrence for $b$-ary binomial coefficients
 
-**Symmetry and Pascal's recurrence for $b$-ary binomial coefficients.** Let $b \ge 2$. For a
+Let $b \ge 2$. For a
 natural number $m$ write $m_i = \lfloor m / b^i \rfloor \bmod b$ for its $i$-th base-$b$ digit.
 For integers $m$ and $j$, let $C_b(m, j) = \prod_{i=0}^{m+j} \binom{m_i}{j_i}$ if $m \ge 0$ and
 $j \ge 0$, and $C_b(m, j) = 0$ otherwise. Then for all integers $n$ and $k$ with $0 < n$ and

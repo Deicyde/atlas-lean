@@ -1,6 +1,6 @@
 # MINIMUM 2-SATISFIABILITY is NP-complete
 
-**MINIMUM 2-SATISFIABILITY is NP-complete.** Let MINIMUM 2-SATISFIABILITY be the decision
+Let MINIMUM 2-SATISFIABILITY be the decision
 problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
 encoding, to a triple $(n, \varphi, K)$ of a natural number $n$, a CNF formula $\varphi$ with
 clauses $C_0, \dots, C_{m-1}$ and a natural number $K$ such that every clause has at most two

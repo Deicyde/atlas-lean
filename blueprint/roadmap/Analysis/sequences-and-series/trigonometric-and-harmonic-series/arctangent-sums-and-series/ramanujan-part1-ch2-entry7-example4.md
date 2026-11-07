@@ -1,6 +1,6 @@
 # Series of arctangents of 2/k² (Entry 7, Example 4)
 
-**Series of arctangents of 2/k² (Entry 7, Example 4).** The series
+The series
 
 $$\sum_{k=0}^{\infty} \arctan \frac{2}{(k + 1)^2}$$
 

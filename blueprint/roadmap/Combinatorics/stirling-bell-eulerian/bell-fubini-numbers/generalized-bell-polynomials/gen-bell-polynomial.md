@@ -1,6 +1,6 @@
 # Generalized Bell polynomials
 
-**Generalized Bell polynomials.** For a commutative ring $R$, elements $s, h \in R$, a natural
+For a commutative ring $R$, elements $s, h \in R$, a natural
 number $n$ and $x \in R$, the generalized Bell polynomial evaluated at $x$ is
 
 $$\mathfrak{B}_{s;h|n}(x) = \sum_{k=0}^{n} \mathfrak{S}_{s;h}(n, k)\, x^k,$$

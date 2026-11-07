@@ -1,6 +1,6 @@
 # Consecutive vertices of the contracted path are joined by arcs
 
-**Consecutive vertices of the contracted path are joined by arcs.** Let $\varphi$ be a CNF
+Let $\varphi$ be a CNF
 formula with $m$ clauses and $k$ distinct variables. In Sipser's HAMPATH graph for $\varphi$, clause
 $j$ is vertex $j < m$, the top of diamond $i$ is $t_i = m + i(3m + 2)$, and vertex $l \le 3m$ of
 its row is $r_{i,l} = t_i + 1 + l$. Let $p$ be a Hamiltonian path of this graph (on the vertices

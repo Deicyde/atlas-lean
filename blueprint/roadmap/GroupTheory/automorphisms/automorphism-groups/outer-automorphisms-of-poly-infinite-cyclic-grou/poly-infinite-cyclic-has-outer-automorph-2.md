@@ -1,6 +1,5 @@
 # Only inner automorphisms despite an infinite cyclic normal series (Kourovka 13.23 refuted)
 
-**Only inner automorphisms despite an infinite cyclic normal series (Kourovka 13.23 refuted).**
 There is a nontrivial group $G$ with a normal series with infinite cyclic factors such that every
 automorphism of $G$ is inner. So the conjecture of Kourovka Problem 13.23 is false.
 

@@ -1,6 +1,6 @@
 # Expansion of the reciprocal logarithm of the semiprime count
 
-**Expansion of the reciprocal logarithm of the semiprime count.** Let $\pi_2(x)$ be the
+Let $\pi_2(x)$ be the
 number of integers $n$ with $1 \le n \le x$ that have exactly two prime factors counted with
 multiplicity, and let $\beta$ be the Meissel–Mertens constant. Then, as $x \to \infty$,
 

@@ -1,6 +1,6 @@
 # Hilbert basis of $\Delta_{(1,q(n))}$
 
-**Hilbert basis of $\Delta_{(1,q(n))}$.** Let $n \ge 1$ and let
+Let $n \ge 1$ and let
 $q(n) = (1^{2n-1}, 3n, 10n, 15n)$, that is, $2n - 1$ ones followed by $3n$, $10n$, $15n$. Write
 lattice points of the cone over the weighted projective simplex
 $\Delta_{(1,q(n))} \subseteq \mathbb{R}^{2n+2}$ as pairs $(k, w)$ with height $k \in \mathbb{N}$

@@ -1,6 +1,6 @@
 # Mean-field coordinate-ascent sweep
 
-**Mean-field coordinate-ascent sweep.** Let $A$ and $B$ be finite sets and
+Let $A$ and $B$ be finite sets and
 $p : A \times B \to \mathbb{R}$. One sweep of coordinate ascent (CAVI) sends a pair of factors
 $(q_1, q_2)$, with $q_1 : A \to \mathbb{R}$ and $q_2 : B \to \mathbb{R}$, to $(q_1', q_2')$, where
 $q_1'$ is the CAVI update of the first factor given $q_2$,

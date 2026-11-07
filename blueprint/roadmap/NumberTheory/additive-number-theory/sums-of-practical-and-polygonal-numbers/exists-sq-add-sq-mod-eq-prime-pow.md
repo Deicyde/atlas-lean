@@ -1,6 +1,6 @@
 # Sums of two squares modulo prime powers
 
-**Sums of two squares modulo prime powers.** Let $p$ be a prime with $p \equiv 1 \pmod{4}$.
+Let $p$ be a prime with $p \equiv 1 \pmod{4}$.
 For all natural numbers $n > 0$ and $k > 0$ there are natural numbers $x, y > 0$ with
 $x^2 + y^2 \equiv n \pmod{p^k}$ and $p \nmid y$.
 

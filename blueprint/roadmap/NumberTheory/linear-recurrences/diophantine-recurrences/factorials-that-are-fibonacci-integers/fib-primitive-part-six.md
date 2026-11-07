@@ -1,6 +1,6 @@
 # Primitive part of $F_6$
 
-**Primitive part of $F_6$.** The primitive part of the Fibonacci number $F_6$ is $\Psi_6 = 1$:
+The primitive part of the Fibonacci number $F_6$ is $\Psi_6 = 1$:
 $F_6 = 8 = 2^3$ and the Fibonacci entry point of $2$ is $z(2) = 3 \ne 6$, so $F_6$ has no prime
 factor $p$ with $z(p) = 6$.
 

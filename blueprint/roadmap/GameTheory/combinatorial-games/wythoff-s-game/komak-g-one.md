@@ -1,6 +1,6 @@
 # Value of the Komak sequence at 1
 
-**Value of the Komak sequence at 1.** The sequence $g$ of Komak et al. satisfies
+The sequence $g$ of Komak et al. satisfies
 $g(1) = 0$: with $\varphi$ the golden ratio, $\lfloor \varphi \rfloor = 1 =
 \lfloor 0 \cdot \varphi^2 \rfloor + 1$, so $g(1) = 1 - g(0) = 0$.
 

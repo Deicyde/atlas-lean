@@ -1,6 +1,6 @@
 # Run of the subset-sum emitter's pair walk
 
-**Run of the subset-sum emitter's pair walk.** Let $L_m \ne []$, $r_m$ and $w$ be lists of
+Let $L_m \ne []$, $r_m$ and $w$ be lists of
 booleans, and for a list $\ell$ of booleans write $\bar\ell$ for the list of mark symbols
 $\mathrm{val}(x)$, $x \in \ell$. Let $(a_1, c_1), \dots, (a_m, c_m)$ be the mark pairs
 $\mathrm{walkM}(L_m, r_m)$, and suppose $w = (b_1, \dots, b_m)$ has the same length $m$. Start the

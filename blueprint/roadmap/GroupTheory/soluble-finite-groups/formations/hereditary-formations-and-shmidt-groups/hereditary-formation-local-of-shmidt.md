@@ -1,6 +1,6 @@
 # Kourovka Problem 11.91 (statement)
 
-**Kourovka Problem 11.91 (statement).** The statement that every hereditary formation
+The statement that every hereditary formation
 $\mathfrak F$ of finite soluble groups such that every finite soluble non-simple minimal
 non-$\mathfrak F$-group (a group outside $\mathfrak F$ all of whose proper subgroups lie in
 $\mathfrak F$) is a Shmidt group is saturated, that is, every finite soluble group $G$ whose

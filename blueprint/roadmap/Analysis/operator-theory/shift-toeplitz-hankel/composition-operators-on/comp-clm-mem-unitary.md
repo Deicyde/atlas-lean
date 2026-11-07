@@ -1,3 +1,3 @@
 # Permutation composition operators are unitary
 
-**Permutation composition operators are unitary.** A permutation symbol gives a unitary composition operator.
+A permutation symbol gives a unitary composition operator.

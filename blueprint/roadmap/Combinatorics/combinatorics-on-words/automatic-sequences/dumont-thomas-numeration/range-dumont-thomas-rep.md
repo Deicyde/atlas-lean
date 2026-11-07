@@ -1,6 +1,6 @@
 # The image of the Dumont–Thomas complement representation
 
-**The image of the Dumont–Thomas complement representation.** Let $\eta$ be a substitution
+Let $\eta$ be a substitution
 on an alphabet $A$, and let $u : \mathbb{Z} \to A$ be a two-sided periodic point of $\eta$
 whose least period is $p$ and whose seed letters $u_{-1}$ and $u_0$ are growing
 ($|\eta^k(u_{-1})| \to \infty$ and $|\eta^k(u_0)| \to \infty$ as $k \to \infty$). Let

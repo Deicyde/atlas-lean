@@ -1,6 +1,6 @@
 # Three generals simulating a protocol
 
-**Three generals simulating a protocol.** Let $P$ be an oral-message protocol for the
+Let $P$ be an oral-message protocol for the
 generals $G$ with orders in $V$, states $\sigma$ and messages $M$, let $c \in G$, let
 $\mathrm{grp} : G \to \{0, 1, 2\}$ split the generals into three groups and let
 $\mathrm{rep} : \{0, 1, 2\} \to G$. The simulation of $P$ with $c$, $\mathrm{grp}$ and

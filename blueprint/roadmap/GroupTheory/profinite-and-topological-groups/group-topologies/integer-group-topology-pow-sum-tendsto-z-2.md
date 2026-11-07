@@ -1,6 +1,6 @@
 # A Hausdorff group topology on the integers in which 2ⁿ + 3ⁿ tends to zero
 
-**A Hausdorff group topology on the integers in which 2ⁿ + 3ⁿ tends to zero.** There is a
+There is a
 topology on $\mathbb{Z}$ that makes $(\mathbb{Z}, +)$ a Hausdorff topological group and in which
 the sequence $(2^n + 3^n)_{n \in \mathbb{N}}$ converges to $0$. That is, Kourovka Problem 15.79 has
 a positive answer.

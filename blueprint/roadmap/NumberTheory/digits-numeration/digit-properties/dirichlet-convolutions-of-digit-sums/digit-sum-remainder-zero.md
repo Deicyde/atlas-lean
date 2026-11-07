@@ -1,6 +1,6 @@
 # The Trollope–Delange remainder vanishes at zero
 
-**The Trollope–Delange remainder vanishes at zero.** For every natural number $q$, the
+For every natural number $q$, the
 remainder $J$ of the Trollope–Delange formula in base $q$ satisfies $J(0) = 0$.
 
 ## Sources

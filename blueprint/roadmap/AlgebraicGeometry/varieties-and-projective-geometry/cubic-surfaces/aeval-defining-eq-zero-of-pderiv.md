@@ -1,6 +1,6 @@
 # Vanishing partial derivatives force the cubic to vanish when $3 \neq 0$
 
-**Vanishing partial derivatives force the cubic to vanish when $3 \neq 0$.** Let $S$ be a
+Let $S$ be a
 cubic surface over a field $k$ in which $3 \neq 0$, and let $f \in k[x_0, x_1, x_2, x_3]$ be its
 defining cubic form. If $x \in k^4$ is a point at which every partial derivative
 $\partial f / \partial x_i$ vanishes, then $f(x) = 0$.

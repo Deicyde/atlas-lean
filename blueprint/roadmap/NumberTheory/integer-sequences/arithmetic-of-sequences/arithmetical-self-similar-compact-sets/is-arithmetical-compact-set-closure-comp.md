@@ -1,6 +1,6 @@
 # The closure of $T_0$ is an arithmetical compact set (Theorem 2)
 
-**The closure of $T_0$ is an arithmetical compact set (Theorem 2).** Let $T_0$ be the set of
+Let $T_0$ be the set of
 reals $n / 3^k$, where $n$ and $k$ are natural numbers, $n$ is stable and
 $\lVert n \rVert = 3k + 2$ (with $\lVert n \rVert$ the integer complexity of $n$), and let $K$ be
 the closure of $T_0$ in $\mathbb{R}$. Then $K$ is an arithmetical compact set of module $3$ and

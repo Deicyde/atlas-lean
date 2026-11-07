@@ -1,6 +1,6 @@
 # The letter T
 
-**The letter T.** The letter-T curve is the subset
+The letter-T curve is the subset
 
 $$T = \{(0, y) : 0 \le y \le 1\} \cup \{(x, 1) : -1 \le x \le 1\}$$
 

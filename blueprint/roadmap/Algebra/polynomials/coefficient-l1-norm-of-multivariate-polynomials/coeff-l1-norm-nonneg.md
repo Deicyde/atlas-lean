@@ -1,3 +1,3 @@
 # Nonnegativity of the coefficient L1 norm
 
-**Nonnegativity of the coefficient L1 norm.** The coefficient L1 norm is nonnegative.
+The coefficient L1 norm is nonnegative.

@@ -1,6 +1,6 @@
 # The stable bits $\operatorname{stab}(5, 2)$ vanish
 
-**The stable bits $\operatorname{stab}(5, 2)$ vanish.** Writing $\operatorname{od}(m)$ for the odd
+Writing $\operatorname{od}(m)$ for the odd
 part of $m$, the binary digits of $\operatorname{od}(64!)$ in positions $5$ and $6$ (the units
 digit being position $0$) are both $0$; that is,
 $\operatorname{stab}(5, 2) = \lfloor \operatorname{od}(64!) / 2^5 \rfloor \bmod 4 = 0$.

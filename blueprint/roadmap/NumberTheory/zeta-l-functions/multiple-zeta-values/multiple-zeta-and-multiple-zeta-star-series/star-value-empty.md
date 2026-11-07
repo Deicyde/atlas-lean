@@ -1,6 +1,6 @@
 # Multiple-zeta-star value of the empty index
 
-**Multiple-zeta-star value of the empty index.** The multiple-zeta-star value of the empty
+The multiple-zeta-star value of the empty
 index is $1$.
 
 ## Sources

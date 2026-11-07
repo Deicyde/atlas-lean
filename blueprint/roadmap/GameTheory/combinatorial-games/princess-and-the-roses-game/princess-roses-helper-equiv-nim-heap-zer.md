@@ -1,6 +1,6 @@
 # P&R Helper positions of Sprague–Grundy value 0
 
-**P&R Helper positions of Sprague–Grundy value 0.** For natural numbers $x \le y \le z$,
+For natural numbers $x \le y \le z$,
 the P&R Helper game started at $[x, y, z]$ is equivalent to the Nim heap of size $0$ (that is,
 has Sprague–Grundy value $0$) if and only if $x$, $y$ and $z$ are all even.
 

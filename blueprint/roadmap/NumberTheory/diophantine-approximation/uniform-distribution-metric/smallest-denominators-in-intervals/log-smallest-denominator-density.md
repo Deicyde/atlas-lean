@@ -1,6 +1,6 @@
 # Density of the logarithmic smallest denominator
 
-**Density of the logarithmic smallest denominator.** The function $\eta_{\log}$ on the real
+The function $\eta_{\log}$ on the real
 line is defined by $\eta_{\log}(s) = \frac{6}{\pi^2} e^{2s}$ for $s \le 0$, by
 $\eta_{\log}(s) = \frac{6}{\pi^2}\left(-e^{2s} + 2 + 4s\right)$ for $0 < s \le \log 2$, and by
 

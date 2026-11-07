@@ -1,6 +1,6 @@
 # Stirling matrix of the second kind times powers of $V(n) - I_n$
 
-**Stirling matrix of the second kind times powers of $V(n) - I_n$.** Let $n$ and $N$ be
+Let $n$ and $N$ be
 natural numbers with $N \ge 1$. Let $S(n)$ be the $n \times n$ Stirling matrix of the second
 kind, with entries the Stirling numbers of the second kind $S(i, j)$ for $1 \le i, j \le n$; let
 $V(n)$ be the $n \times n$ upper bidiagonal matrix with $V(n)_{i,i} = i$, $V(n)_{i,i+1} = 1$

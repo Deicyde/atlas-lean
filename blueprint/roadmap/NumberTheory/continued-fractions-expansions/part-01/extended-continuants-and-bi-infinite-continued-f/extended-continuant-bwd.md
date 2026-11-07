@@ -1,6 +1,6 @@
 # Backward branch of the extended continuant
 
-**Backward branch of the extended continuant.** For an integer sequence
+For an integer sequence
 $x : \mathbb{Z} \to \mathbb{Z}$ and an integer $b$, the backward branch with start index $b$ is
 the sequence $(B_m)_{m \ge 0}$ of integers defined by $B_0 = 1$, $B_1 = 0$ and
 $B_{m+2} = -x_{b-1-m} B_{m+1} + B_m$. Its value $B_m$ is the extended continuant

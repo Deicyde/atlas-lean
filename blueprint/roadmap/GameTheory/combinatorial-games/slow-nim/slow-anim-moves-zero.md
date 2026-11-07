@@ -1,6 +1,6 @@
 # The empty position has no options
 
-**The empty position has no options.** For every finite set $A$ of natural numbers, the
+For every finite set $A$ of natural numbers, the
 position of Slow$A$-Nim on $n$ stacks in which every stack is empty has no options.
 
 ## Sources

@@ -1,3 +1,3 @@
 # Truncation of a matrix to its top-left block
 
-**Truncation of a matrix to its top-left block.** The truncation of a matrix to the top-left `N × N` block.
+The truncation of a matrix to the top-left `N × N` block.

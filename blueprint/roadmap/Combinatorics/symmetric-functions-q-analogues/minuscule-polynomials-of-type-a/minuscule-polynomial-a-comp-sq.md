@@ -1,6 +1,6 @@
 # Binomial closed form of the minuscule polynomials
 
-**Binomial closed form of the minuscule polynomials.** For every natural number $n$, the
+For every natural number $n$, the
 type-A minuscule polynomial $N_n$ satisfies the identity of polynomials with rational
 coefficients
 $16x\, N_n(x^2) = 2(n+1)x \bigl((1+x)^{2n} + (1-x)^{2n}\bigr) -

@@ -1,6 +1,6 @@
 # Equal partial derivatives give a factor $x+y$
 
-**Equal partial derivatives give a factor $x+y$.** Let $f : \mathbb{R}^2 \to \mathbb{R}$ be
+Let $f : \mathbb{R}^2 \to \mathbb{R}$ be
 continuously differentiable with $\partial_1 f = \partial_2 f$ on $\mathbb{R}^2$ and $f(0,0)=0$.
 Then there is a continuous $g : \mathbb{R}^2 \to \mathbb{R}$ with $f(x,y)=g(x,y)\,(x+y)$ for all
 $(x,y)\in\mathbb{R}^2$.

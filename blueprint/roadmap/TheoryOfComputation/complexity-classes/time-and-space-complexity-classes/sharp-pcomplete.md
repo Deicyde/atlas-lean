@@ -1,6 +1,6 @@
 # $\#P$-complete functions
 
-**$\#P$-complete functions.** A function $f$ from bitstrings to natural numbers is
+A function $f$ from bitstrings to natural numbers is
 $\#P$-complete when $f$ is in $\#P$ and every function $g$ in $\#P$ is computed from $f$ by a
 polynomial-time oracle machine. That is, there are polynomials $p$ and $q$ with natural-number
 coefficients and polynomial-time computable functions choosing the next query and the final

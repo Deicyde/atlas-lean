@@ -1,6 +1,6 @@
 # Bordellès–Luca–Moree–Shparlinski asymptotic and finiteness of integral derivatives
 
-**Bordellès–Luca–Moree–Shparlinski asymptotic and finiteness of integral derivatives.** For
+For
 $n \in \mathbb{N}$ let $\mathbb{D}^{+}_n$ be the product of the primes $p > \sqrt{n}$ whose
 base-$p$ digit sum $s_p(n)$ satisfies $s_p(n) \ge p$, and let $\omega(m)$ be the number of
 distinct prime factors of $m$. There is a real number $\kappa > 1$ with

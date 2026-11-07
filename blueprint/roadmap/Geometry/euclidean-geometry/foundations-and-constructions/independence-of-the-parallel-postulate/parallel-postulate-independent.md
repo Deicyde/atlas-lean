@@ -1,6 +1,6 @@
 # Independence of the parallel postulate
 
-**Independence of the parallel postulate.** Tarski's Euclidean axiom A10 is independent of
+Tarski's Euclidean axiom A10 is independent of
 Tarski's axioms of absolute plane geometry: there is a model of absolute plane geometry in which
 the Euclidean axiom holds, and there is a model of absolute plane geometry in which it fails.
 

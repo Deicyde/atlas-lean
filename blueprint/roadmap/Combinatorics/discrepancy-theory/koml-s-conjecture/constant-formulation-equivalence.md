@@ -1,6 +1,6 @@
 # Equivalence of the square and rectangular Komlós formulations (statement)
 
-**Equivalence of the square and rectangular Komlós formulations (statement).** The statement
+The statement
 that the uniform discrepancy bound for vectors in the unit ball holds if and only if the Komlós
 constant is finite.
 

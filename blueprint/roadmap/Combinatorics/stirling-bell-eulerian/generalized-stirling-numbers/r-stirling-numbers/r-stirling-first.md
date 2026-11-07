@@ -1,6 +1,6 @@
 # Unsigned r-Stirling numbers of the first kind
 
-**Unsigned r-Stirling numbers of the first kind.** For natural numbers $n$, $m$ and $r$, the
+For natural numbers $n$, $m$ and $r$, the
 unsigned $r$-Stirling number of the first kind $[n, m]_r$ is the coefficient of $x^m$ in the
 polynomial with natural-number coefficients
 

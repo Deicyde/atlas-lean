@@ -1,6 +1,6 @@
 # Mostow rigidity, algebraic form
 
-**Mostow rigidity, algebraic form.** Let $n \ge 3$, and let $\Gamma$ and $\Lambda$ be lattices
+Let $n \ge 3$, and let $\Gamma$ and $\Lambda$ be lattices
 in the projective orthogonal group $\mathrm{PO}(n,1)$: discrete subgroups that have a fundamental
 domain for their action by left multiplication and finite covolume with respect to Haar measure.
 Then every group isomorphism $f : \Gamma \to \Lambda$ is a conjugation: there is

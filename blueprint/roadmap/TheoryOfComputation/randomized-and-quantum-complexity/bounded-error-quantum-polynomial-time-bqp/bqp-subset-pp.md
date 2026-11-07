@@ -1,6 +1,6 @@
 # BQP is contained in PP
 
-**BQP is contained in PP.** Every decision problem in BQP lies in PP.
+Every decision problem in BQP lies in PP.
 
 ## Sources
 

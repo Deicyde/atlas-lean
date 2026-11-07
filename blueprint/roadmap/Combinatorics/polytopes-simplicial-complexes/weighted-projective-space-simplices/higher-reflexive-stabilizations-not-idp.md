@@ -1,6 +1,6 @@
 # Higher reflexive stabilizations are not IDP
 
-**Higher reflexive stabilizations are not IDP.** Let $q = (q_1, \dots, q_n)$ be a nonempty
+Let $q = (q_1, \dots, q_n)$ be a nonempty
 list of integers with $q_i \ge 2$ for all $i$, and let $m \ge 2$. Let $\operatorname{rsn}(q)$ be
 the least $k$ for which the weighted simplex of $(1^k, q)$, the list $q$ preceded by $k$ ones, is
 reflexive, and let

@@ -1,6 +1,6 @@
 # Generating function of the companion sequence $V^{(-r)}$
 
-**Generating function of the companion sequence $V^{(-r)}$.** Let $A$ be a commutative
+Let $A$ be a commutative
 ring, $r \ge 2$ a natural number, $x \in A$ and $y$ a unit of $A$, and let $V^{(-r)}_n(x, y)$
 be the companion sequence of the $(-r)$-Fibonacci polynomials. In the ring $A[[z]]$ of formal
 power series,

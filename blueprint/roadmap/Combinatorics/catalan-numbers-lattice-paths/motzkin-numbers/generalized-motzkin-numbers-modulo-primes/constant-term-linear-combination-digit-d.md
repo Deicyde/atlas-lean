@@ -1,6 +1,6 @@
 # Digit decomposition of shifted sums of constant terms modulo a prime
 
-**Digit decomposition of shifted sums of constant terms modulo a prime.** Let $\alpha, \beta,
+Let $\alpha, \beta,
 \gamma$ be integers with $\alpha \ne 0$ or $\gamma \ne 0$, let $a_r$ be the constant term of
 $(\alpha x^{-1} + \beta + \gamma x)^r$, let $p$ be a prime, let $h < p$ be a natural number, let
 $c_0, c_1, \ldots$ be integers, and let $b_r = \sum_{i=0}^{h} c_i a_{r+i}$. Let $q, k$ be natural

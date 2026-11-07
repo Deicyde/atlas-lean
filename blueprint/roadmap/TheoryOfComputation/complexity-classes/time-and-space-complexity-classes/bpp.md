@@ -1,6 +1,6 @@
 # BPP
 
-**BPP.** The class BPP of bounded-error probabilistic polynomial-time decision problems
+The class BPP of bounded-error probabilistic polynomial-time decision problems
 consists of the decision problems $L$ for which there are a polynomial $p$ with natural number
 coefficients and a polynomial-time computable function $R$ from pairs of bitstrings to booleans
 such that, for every bitstring $x$, writing $m = p(|x|)$ and $c_x$ for the number of strings

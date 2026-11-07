@@ -1,6 +1,6 @@
 # Even–odd decomposition of a reciprocal 0,1-polynomial
 
-**Even–odd decomposition of a reciprocal 0,1-polynomial.** Let $f \in \mathbb{Z}[x]$ be
+Let $f \in \mathbb{Z}[x]$ be
 an irreducible reciprocal $0,1$-polynomial of degree $2m$ such that $f(x^2)$ is not
 irreducible. Then there is exactly one $f_e \in \mathbb{Z}[x]$ for which there is exactly
 one $f_o \in \mathbb{Z}[x]$ for which there is exactly one natural number $\ell$ such that

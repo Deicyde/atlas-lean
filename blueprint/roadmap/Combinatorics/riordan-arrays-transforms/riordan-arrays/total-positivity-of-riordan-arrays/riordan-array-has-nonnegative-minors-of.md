@@ -1,6 +1,6 @@
 # Total positivity of a Riordan array from its coefficient matrix
 
-**Total positivity of a Riordan array from its coefficient matrix.** Let $(a_n)$ and $(z_n)$
+Let $(a_n)$ and $(z_n)$
 be real sequences with generating functions $A(x)$ and $Z(x)$, and let $R$ be the Riordan array
 with $A$-sequence $(a_n)$ and $Z$-sequence $(z_n)$. If the coefficient matrix $J(Z(x), A(x))$ is
 totally positive, that is, every minor of it is nonnegative, then every minor of $R$ is

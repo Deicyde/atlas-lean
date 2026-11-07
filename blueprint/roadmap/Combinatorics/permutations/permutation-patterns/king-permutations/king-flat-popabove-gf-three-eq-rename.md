@@ -1,6 +1,6 @@
 # The king generating function avoiding $Q_4$
 
-**The king generating function avoiding $Q_4$.** Let $A_{P_1}(x, p, q, u, v)$ be the
+Let $A_{P_1}(x, p, q, u, v)$ be the
 generating function of king permutations avoiding the flat pattern $P_1$ (label $1$ below labels
 $2, 3, 4$), where $x, p, q, u, v$ mark length, ascents, descents, left-to-right maxima and
 right-to-left maxima, and let $\bar A_{Q_4}(x, p, q, s, t)$ be the generating function of king

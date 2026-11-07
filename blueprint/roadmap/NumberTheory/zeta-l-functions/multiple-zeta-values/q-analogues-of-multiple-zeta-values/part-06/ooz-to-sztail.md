@@ -1,6 +1,6 @@
 # The tail part of the map $V$
 
-**The tail part of the map $V$.** Identify an index $(k_1, \dots, k_s)$ of natural numbers
+Identify an index $(k_1, \dots, k_s)$ of natural numbers
 with the word $p^{k_1} y \cdots p^{k_s} y$ in the letters $p$ and $y$. This map sends the empty
 word to itself and, for $s \ge 1$, sends $p^{k_1} y \cdots p^{k_s} y$ to the formal
 $\mathbb{Q}$-linear combination of words

@@ -1,6 +1,6 @@
 # Binary search for the first occurrence
 
-**Binary search for the first occurrence.** Given an array $a = (a_0, \dots, a_{n-1})$ over a
+Given an array $a = (a_0, \dots, a_{n-1})$ over a
 linearly ordered type and a key $k$, binary search for the first occurrence of $k$ in $a$ runs
 lower-bound search for $k$ in $a$, obtaining an index $\ell$. If $\ell < n$, it makes one further
 comparison, charged one unit, and returns $\ell$ when $a_\ell = k$ and no index otherwise; if

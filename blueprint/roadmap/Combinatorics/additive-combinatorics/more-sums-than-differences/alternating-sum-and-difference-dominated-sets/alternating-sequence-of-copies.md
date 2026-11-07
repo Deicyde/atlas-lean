@@ -1,6 +1,6 @@
 # Alternating sum- and difference-dominated sets from shifted copies
 
-**Alternating sum- and difference-dominated sets from shifted copies.** For a set $S$ of
+For a set $S$ of
 integers write $S + S = \{s + s' : s, s' \in S\}$ and $S - S = \{s - s' : s, s' \in S\}$. Let $A_1$
 be a finite set of integers with $|A_1 - A_1| < |A_1 + A_1|$ and $0 \in A_1$, and let $n$ be an
 integer with $0 \le a < n$ for every $a \in A_1$. Suppose that (a) $A_1 + A_1$ and $A_1 - A_1$

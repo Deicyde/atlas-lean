@@ -1,6 +1,6 @@
 # Selberg's lemma
 
-**Selberg's lemma.** Let $K$ be a field of characteristic zero and let $n$ be a natural number.
+Let $K$ be a field of characteristic zero and let $n$ be a natural number.
 Every finitely generated subgroup $G$ of $\mathrm{GL}_n(K)$ has a subgroup $H$ of finite index in
 $G$ that is torsion-free: the identity is the only element of finite order in $H$.
 

@@ -1,6 +1,6 @@
 # The path sets $\tilde R_n^{r/s}$
 
-**The path sets $\tilde R_n^{r/s}$.** For natural numbers $r$, $s$ and $n$,
+For natural numbers $r$, $s$ and $n$,
 $\tilde R_n^{r/s}$ is the finite set of Dyck paths of semilength $n$ and height at most $2$
 that satisfy the following run condition. For $n \ge 1$ such a path factors as
 $U X_1 \cdots X_{n-1} D$ with each $X_i$ either a $1$-peak $UD$ or a $0$-valley $DU$, and its

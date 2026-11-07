@@ -1,6 +1,6 @@
 # The Dixon sum $\upsilon_3$
 
-**The Dixon sum $\upsilon_3$.** For integers $a_1, a_2, a_3$, let
+For integers $a_1, a_2, a_3$, let
 $B = \max(|a_1|, |a_2|, |a_3|)$. Then $\upsilon_3(a_1, a_2, a_3)$ is the rational number
 
 $$\upsilon_3(a_1, a_2, a_3) = \sum_{k=-B}^{B} (-1)^k \prod_{i=1}^{3} \binom{2a_i}{a_i + k},$$

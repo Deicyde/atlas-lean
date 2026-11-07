@@ -1,6 +1,6 @@
 # Finite removal preserves $r$-largeness
 
-**Finite removal preserves $r$-largeness.** Let $r$ be a natural number. If a set
+Let $r$ be a natural number. If a set
 $D \subseteq \mathbb{N}$ is $r$-large and $F \subseteq \mathbb{N}$ is finite, then $D \setminus F$
 is $r$-large.
 

@@ -1,6 +1,6 @@
 # Multiplying by the ratio raises the gauge index by the module (Proposition 6)
 
-**Multiplying by the ratio raises the gauge index by the module (Proposition 6).** Let
+Let
 $K \subseteq \mathbb{R}$ be a quasi-arithmetical compact set of module $\mu$ and ratio $\rho$. For
 each natural number $j$ let $K^{(j)}$ be the $j$-th iterated derived set of $K$ and
 $T_j = K^{(j)} \setminus K^{(j+1)}$ its $j$-th layer. If $n, \ell, u, \ell', u'$ are natural

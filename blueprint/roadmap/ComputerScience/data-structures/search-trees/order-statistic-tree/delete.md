@@ -1,6 +1,6 @@
 # Deletion from an order-statistic tree
 
-**Deletion from an order-statistic tree.** Deleting a key $k$ from an order-statistic tree over a
+Deleting a key $k$ from an order-statistic tree over a
 linearly ordered type follows the comparison path from the root. The empty tree stays empty. At a
 node with key $x$, left subtree $L$ and right subtree $R$: if $k < x$, the result is the node with
 key $x$, left subtree the deletion of $k$ from $L$ and right subtree $R$; if $x < k$, it is the

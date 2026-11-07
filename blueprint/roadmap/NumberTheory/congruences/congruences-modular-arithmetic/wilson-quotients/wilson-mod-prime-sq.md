@@ -1,6 +1,6 @@
 # Wilson's theorem modulo $p^2$
 
-**Wilson's theorem modulo $p^2$.** Let $p$ be an odd prime and, for $1 \le k \le p - 1$, let
+Let $p$ be an odd prime and, for $1 \le k \le p - 1$, let
 $q_p(k)$ be the Fermat quotient of $k$, the integer with $k^{p-1} = 1 + p\, q_p(k)$. Then
 
 $$

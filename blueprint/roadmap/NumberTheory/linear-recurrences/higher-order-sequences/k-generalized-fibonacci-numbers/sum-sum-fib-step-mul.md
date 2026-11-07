@@ -1,6 +1,6 @@
 # Iterated convolution of Fibonacci $m$-step and $(m+p)$-step numbers
 
-**Iterated convolution of Fibonacci $m$-step and $(m+p)$-step numbers.** Let $F^{(k)}_j$ be
+Let $F^{(k)}_j$ be
 the $j$-th Fibonacci $k$-step number: the sequence starts $F^{(k)}_0 = 0$, $F^{(k)}_1 = 1$, and each
 later term is the sum of the $k$ terms before it (terms of negative index being $0$). For all
 natural numbers $m$, $p$ and $n$ with $m \ge 1$ and $n \ge m$,

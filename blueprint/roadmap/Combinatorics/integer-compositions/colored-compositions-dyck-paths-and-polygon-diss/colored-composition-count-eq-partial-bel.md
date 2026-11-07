@@ -1,6 +1,6 @@
 # Hoggatt–Lind formula for colored compositions
 
-**Hoggatt–Lind formula for colored compositions.** Let $\gamma = (\gamma_1, \gamma_2, \dots)$
+Let $\gamma = (\gamma_1, \gamma_2, \dots)$
 be a sequence of natural numbers and let $c_{n,k}(\gamma)$ be the number of compositions of $n$
 with $k$ parts in which each part $j$ carries one of $\gamma_j$ colors. For every natural number
 $n \ge 1$ and every natural number $k$, as rational numbers,

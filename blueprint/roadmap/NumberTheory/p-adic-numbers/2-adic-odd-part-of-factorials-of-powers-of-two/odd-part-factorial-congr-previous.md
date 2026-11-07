@@ -1,6 +1,6 @@
 # Odd parts of consecutive dyadic factorials agree modulo a power of two
 
-**Odd parts of consecutive dyadic factorials agree modulo a power of two.** For every natural
+For every natural
 number $e \ge 3$, $\mathrm{od}((2^{e-1})!) \equiv \mathrm{od}((2^e)!) \pmod{2^e}$, where
 $\mathrm{od}(n)$ denotes the odd part of $n$.
 

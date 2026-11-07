@@ -1,6 +1,6 @@
 # Correctness of the finite-automaton matcher
 
-**Correctness of the finite-automaton matcher.** For every pattern $P$ and text $T$ over the
+For every pattern $P$ and text $T$ over the
 alphabet $\{0, \dots, A-1\}$, the list of shifts returned by the finite-automaton matcher equals
 the list returned by the naive string matcher.
 

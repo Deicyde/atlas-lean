@@ -1,6 +1,6 @@
 # Moving the pair bits onto stack $Y$
 
-**Moving the pair bits onto stack $Y$.** Fix a mode $m$ of the CLIQUE/VERTEX-COVER
+Fix a mode $m$ of the CLIQUE/VERTEX-COVER
 reduction machine, a list of bits $r$ and a list of symbols $y$. Start the machine for $m$ at the
 label for moving the pair bits, with any internal state and any stacks such that stack $X$ holds
 $r$ as the symbols $\mathrm{bit}(b)$ and stack $Y$ holds $y$. Then after exactly $|r| + 1$ steps

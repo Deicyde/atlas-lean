@@ -1,6 +1,6 @@
 # Walking to a vertex and setting its mark
 
-**Walking to a vertex and setting its mark.** Let $c$ be a stack other than the mark stack $M$
+Let $c$ be a stack other than the mark stack $M$
 and the parking stack $P$, and let $\mathit{self}$, $\mathit{back}$, $\mathit{next}$ be labels
 such that the marking machine at $\mathit{self}$ is the walk step counted by $c$ that loops at
 $\mathit{self}$ and finishes with the mark-setting step to $\mathit{back}$, and at

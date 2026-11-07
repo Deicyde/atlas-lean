@@ -1,6 +1,6 @@
 # The value of $R(3, 9)$
 
-**The value of $R(3, 9)$.** The classical Ramsey number $R(3, 9)$ equals $36$.
+The classical Ramsey number $R(3, 9)$ equals $36$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # The rounding sequence parity count at $10$
 
-**The rounding sequence parity count at $10$.** The number $\mathcal{R}_{10}$ of integers $k$
+The number $\mathcal{R}_{10}$ of integers $k$
 with $1 \le k \le 10$ for which the nearest integer to $10/k$ (half-integers rounded up) is odd
 equals $7$.
 

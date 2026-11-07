@@ -1,6 +1,6 @@
 # Program of the tokenize-then-emit machine
 
-**Program of the tokenize-then-emit machine.** For an emitter $E$, the combined machine acts as
+For an emitter $E$, the combined machine acts as
 follows. At a label of the SAT tokenizer it runs the tokenizer's statement for that label, with the
 tokenizer's token stack replaced by the token stack of $E$ (token symbols identified with those of
 $E$), its other stacks kept as copies, and its labels renamed: acceptance goes to the start label

@@ -1,6 +1,6 @@
 # The extremal function of the empty pattern vanishes
 
-**The extremal function of the empty pattern vanishes.** For every natural number $n$,
+For every natural number $n$,
 $\operatorname{ex}(n, M_\emptyset) = 0$, since every set of cells contains the empty pattern.
 
 ## Sources

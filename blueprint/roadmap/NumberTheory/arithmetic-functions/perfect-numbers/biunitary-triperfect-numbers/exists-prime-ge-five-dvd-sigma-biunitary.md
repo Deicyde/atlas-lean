@@ -1,6 +1,6 @@
 # Prime factors at least $5$ of biunitary divisor sums of prime powers
 
-**Prime factors at least $5$ of biunitary divisor sums of prime powers.** For every prime $p$
+For every prime $p$
 and every integer $g \ge 2$ with $(p, g) \ne (2, 4)$, the biunitary divisor sum $\sigma^{**}(p^g)$
 has a prime factor $q \ge 5$.
 

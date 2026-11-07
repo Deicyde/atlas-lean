@@ -1,6 +1,6 @@
 # A characteristic function equal to one detects lattice support
 
-**A characteristic function equal to one detects lattice support.** Let $\mu$ be a
+Let $\mu$ be a
 probability measure on $\mathbb{R}$ with characteristic function
 $\varphi(t) = \int e^{itx} \, d\mu(x)$, and let $l \ne 0$ be real. Then $\varphi(l) = 1$ if and
 only if $\mu$ gives mass $1$ to the lattice $\{(2\pi / l) k : k \in \mathbb{Z}\}$.

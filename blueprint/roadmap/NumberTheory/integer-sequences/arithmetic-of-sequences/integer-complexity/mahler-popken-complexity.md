@@ -1,6 +1,6 @@
 # Mahler–Popken complexity
 
-**Mahler–Popken complexity.** For natural numbers $m$ and $n$, the $m$-ary Mahler–Popken
+For natural numbers $m$ and $n$, the $m$-ary Mahler–Popken
 complexity $\lVert n \rVert_m$ is the smallest number of leaves (counted with repetition) of an
 $m$-ary Mahler–Popken expression whose value is $n$: the smallest number of possibly repeated
 selections from $\{1, \dots, m\}$ needed to express $n$ with addition, multiplication and legal

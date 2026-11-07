@@ -1,6 +1,6 @@
 # Convergence of multiple zeta series
 
-**Convergence of multiple zeta series.** Let $\mathbf{k} = (k_1, \dots, k_r)$ be an admissible
+Let $\mathbf{k} = (k_1, \dots, k_r)$ be an admissible
 index, that is, a nonempty index of positive integers with $k_1 \ge 2$. Then the strict
 multiple-zeta series of $\mathbf{k}$, the family of terms $(m_1^{k_1} \cdots m_r^{k_r})^{-1}$
 indexed by the strictly decreasing tuples $m_1 > \cdots > m_r$ of positive integers, is summable.

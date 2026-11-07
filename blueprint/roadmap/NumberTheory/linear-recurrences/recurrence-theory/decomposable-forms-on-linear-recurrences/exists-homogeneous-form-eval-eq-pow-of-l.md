@@ -1,6 +1,6 @@
 # Homogeneous forms taking the values of a power on recurrence sequences
 
-**Homogeneous forms taking the values of a power on recurrence sequences.** Let
+Let
 $\gamma_0, \dots, \gamma_{k-1} \in \mathbb{C}$ and let $\chi(x) = x^k - \sum_{i\lt k} \gamma_i x^i$
 be the characteristic polynomial of the recurrence $G_{n+k} = \sum_{i\lt k} \gamma_i G_{n+i}$. Let
 $G^{(1)}, \dots, G^{(k)} \colon \mathbb{Z} \to \mathbb{C}$ be $\mathbb{C}$-linearly independent

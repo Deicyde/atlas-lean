@@ -1,6 +1,6 @@
 # Face numbers of the cyclic polytope
 
-**Face numbers of the cyclic polytope.** For natural numbers $n$, $d$ and $k$, the value is
+For natural numbers $n$, $d$ and $k$, the value is
 
 $$
 \sum_{j=0}^{k+1} \binom{d-j}{k+1-j} \binom{n-d-1+m_j}{m_j}, \qquad m_j = \min(j, d-j),

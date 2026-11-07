@@ -1,6 +1,6 @@
 # Bounded index and bounded class under a $p$-automorphism (Kourovka 10.68)
 
-**Bounded index and bounded class under a $p$-automorphism (Kourovka 10.68).** The proposition
+The proposition
 that there are functions $f(p, m)$ and $g(m)$ of natural numbers, with natural-number values, such
 that for every prime $p$, every $m \in \mathbb{N}$, every finite $p$-group $G$ and every
 automorphism $\varphi$ of $G$ of order $p$ with exactly $p^m$ fixed points, $G$ has a subgroup $H$

@@ -1,6 +1,6 @@
 # Curling number of $112112223$
 
-**Curling number of $112112223$.** The string $112112223$ has curling number
+The string $112112223$ has curling number
 $\mathcal{C}(112112223) = 1$.
 
 ## Sources

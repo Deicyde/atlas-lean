@@ -1,6 +1,6 @@
 # Optional stopping for supermartingales at two bounded stopping times
 
-**Optional stopping for supermartingales at two bounded stopping times.** Let $\mu$ be a
+Let $\mu$ be a
 measure on $\Omega$ and $(\mathcal G_n)_{n \ge 0}$ a filtration such that the restriction of $\mu$
 to each $\mathcal G_n$ is σ-finite, and let $(f_n)_{n \ge 0}$ be a real-valued supermartingale
 with respect to $(\mathcal G_n)$ and $\mu$. Let $\tau$ and $\pi$ be stopping times for

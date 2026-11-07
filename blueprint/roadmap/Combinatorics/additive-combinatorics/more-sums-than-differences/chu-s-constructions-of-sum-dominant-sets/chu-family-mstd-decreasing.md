@@ -1,6 +1,6 @@
 # MSTD sets with $M^{k+1}$ before $M^k$ (Theorem 4)
 
-**MSTD sets with $M^{k+1}$ before $M^k$ (Theorem 4).** Let $k$ be a positive integer, let
+Let $k$ be a positive integer, let
 $M^n$ denote the block $1, 4, \dots, 4, 3$ with $n$ fours, and let $M_1$ be one of the
 sequences $(1, 1)$, $(1, 1, 2)$, $(1, 1, 2, 1)$. Let $A = (0 \mid 1, 1, 2, M^{k+1}, M^k, M_1)$
 be the set of partial sums, starting from $0$, of the concatenated sequence

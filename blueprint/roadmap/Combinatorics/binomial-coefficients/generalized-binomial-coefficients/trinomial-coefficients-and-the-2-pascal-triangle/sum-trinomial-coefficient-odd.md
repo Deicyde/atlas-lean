@@ -1,6 +1,6 @@
 # Generating polynomial of trinomial coefficients with odd index
 
-**Generating polynomial of trinomial coefficients with odd index.** Write $\binom{n}{k}_2$
+Write $\binom{n}{k}_2$
 for the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. For every
 $n \in \mathbb{N}$ and all complex numbers $z$ and $s$ with $s^2 = z$ and $s \ne 0$
 

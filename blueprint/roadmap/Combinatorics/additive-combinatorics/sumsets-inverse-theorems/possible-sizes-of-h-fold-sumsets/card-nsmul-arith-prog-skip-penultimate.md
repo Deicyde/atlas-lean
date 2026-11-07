@@ -1,6 +1,6 @@
 # Sumset of an arithmetic progression with its second-to-last term removed
 
-**Sumset of an arithmetic progression with its second-to-last term removed.** Let $G$ be a
+Let $G$ be a
 linearly ordered additive commutative group, let $a \in G$ with $a > 0$, and let $k \ge 3$ and
 $h \ge 1$ be natural numbers. The set $A = \{0, a, 2a, \ldots, (k - 2)a, ka\}$, obtained from
 $\{0, a, 2a, \ldots, ka\}$ by removing $(k - 1)a$, has $|hA| = hk$, where $hA$ is the $h$-fold

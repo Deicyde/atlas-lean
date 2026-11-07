@@ -1,6 +1,6 @@
 # Restricted smooth words
 
-**Restricted smooth words.** For $n \ge 0$, the set $\mathcal{R}^{\ast}_n$ of restricted smooth
+For $n \ge 0$, the set $\mathcal{R}^{\ast}_n$ of restricted smooth
 words of length $n$ consists of the smooth words of length $n$ in which no two adjacent letters
 are both equal to $1$.
 

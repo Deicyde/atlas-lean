@@ -1,6 +1,6 @@
 # Residue of an integer
 
-**Residue of an integer.** For every natural number $m$ and every integer $z$, the residue
+For every natural number $m$ and every integer $z$, the residue
 modulo $m$ of $z$, viewed as a rational number, is the image of $z$ in $\mathbb{Z}/m\mathbb{Z}$.
 
 ## Sources

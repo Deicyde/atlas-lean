@@ -1,6 +1,6 @@
 # Distinct $k$-tuples of points of $C_f(\mathbb{F}_p)$
 
-**Distinct $k$-tuples of points of $C_f(\mathbb{F}_p)$.** For $f \in \mathbb{Z}[x, y]$ and
+For $f \in \mathbb{Z}[x, y]$ and
 natural numbers $p$ and $k$, let $C_f(\mathbb{F}_p)$ be the set of pairs $(r, s)$ of natural
 numbers with $r, s < p$ such that $p$ divides $f(r, s)$. The distinct $k$-tuples of points of
 $C_f(\mathbb{F}_p)$ are the $k$-tuples $(P_1, \dots, P_k)$ with every $P_i$ in $C_f(\mathbb{F}_p)$

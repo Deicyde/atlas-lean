@@ -1,6 +1,6 @@
 # The polynomial $C_k^{(1)}(n) = n - 2/k$
 
-**The polynomial $C_k^{(1)}(n) = n - 2/k$.** For all rational numbers $k$ and $n$, the
+For all rational numbers $k$ and $n$, the
 coefficient polynomial $C_k^{(1)}$ for $k$-Fibonacci Brousseau sums satisfies
 $C_k^{(1)}(n) = n - 2/k$, where $2/0$ is read as $0$.
 

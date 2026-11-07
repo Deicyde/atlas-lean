@@ -1,6 +1,6 @@
 # Positive corner entry of the generalized Cohn tree for $\ell = -k$
 
-**Positive corner entry of the generalized Cohn tree for $\ell = -k$.** Let $k$ be a natural
+Let $k$ be a natural
 number and $w$ a path, and suppose that the middle fraction $n/d$ of the vertex of the Farey
 tree at $w$ satisfies $0 < n < d$. Then the $(1,1)$-entry of the middle matrix of the vertex of
 the $k$-generalized Cohn tree $\mathrm{GCT}(k, -k)$ at $w$ is positive.

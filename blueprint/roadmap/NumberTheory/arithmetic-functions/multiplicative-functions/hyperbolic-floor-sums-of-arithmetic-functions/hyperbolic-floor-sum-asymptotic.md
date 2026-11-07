@@ -1,6 +1,6 @@
 # Asymptotics of hyperbolic floor sums
 
-**Asymptotics of hyperbolic floor sums.** Let $r \ge 2$ and let $\tau_r(n)$ be the number of
+Let $r \ge 2$ and let $\tau_r(n)$ be the number of
 ordered factorizations $n = n_1 \cdots n_r$ of $n$ into $r$ positive factors. Let
 $P(t) = \sum_j a_j t^j$ be a real polynomial with
 $\sum_{1 \le n \le x} \tau_r(n) - x P(\log x) = O(x^{1 - 1/r} (\log x)^{r-2})$ as $x \to \infty$.

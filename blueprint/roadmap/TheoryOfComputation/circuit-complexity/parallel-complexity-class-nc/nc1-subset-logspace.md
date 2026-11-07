@@ -1,6 +1,6 @@
 # NC^1 is contained in L
 
-**NC^1 is contained in L.** Every decision problem in $\mathsf{NC}^1$ belongs to the class
+Every decision problem in $\mathsf{NC}^1$ belongs to the class
 $\mathsf{L}$ of decision problems decidable in deterministic logarithmic space.
 
 ## Sources

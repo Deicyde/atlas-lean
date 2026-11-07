@@ -1,6 +1,6 @@
 # One-block BPZ profile of the thirteen-cycle
 
-**One-block BPZ profile of the thirteen-cycle.** The one-block BPZ profile of the
+The one-block BPZ profile of the
 thirteen-cycle is the BPZ profile with code coordinate $62530$, pairs coordinate $1014$,
 auxiliary coordinate $62530$ and neutral coordinate $60502$.
 

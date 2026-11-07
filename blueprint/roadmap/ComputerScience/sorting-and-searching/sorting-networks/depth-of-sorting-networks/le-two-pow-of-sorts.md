@@ -1,6 +1,6 @@
 # Sorting comparator lists on $n$ wires have depth at least $\log_2 n$
 
-**Sorting comparator lists on $n$ wires have depth at least $\log_2 n$.** Let $ps$ be a list
+Let $ps$ be a list
 of comparators on wires indexed by $\mathbb{N}$, all of whose wires lie in $[0, n)$, and let $d$
 be a natural number. Suppose that for every Boolean input $v$ on the wires $0, \dots, n - 1$,
 extended by $\mathrm{false}$ to the wires $\ge n$, the output $w$ of $ps$ satisfies

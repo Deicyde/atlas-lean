@@ -1,6 +1,6 @@
 # Totalized $E_1$ remainder at zero
 
-**Totalized $E_1$ remainder at zero.** For every $n \in \mathbb{N}$, the totalized remainder
+For every $n \in \mathbb{N}$, the totalized remainder
 of the asymptotic expansion of $E_1$ after $n$ terms equals $-\gamma$ at $z = 0$, where $\gamma$
 is the Euler–Mascheroni constant.
 

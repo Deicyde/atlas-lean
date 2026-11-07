@@ -1,6 +1,6 @@
 # No near $F$-perfect number of the form $2^a p$
 
-**No near $F$-perfect number of the form $2^a p$.** For every prime $p$ and every natural
+For every prime $p$ and every natural
 number $a$, the number $n = 2^a p$ is not near $F$-perfect: there is no divisor $d$ of $n$ with
 $d < n$ and $\sigma_2(n) = n^2 + d^2 + 3n$, where $\sigma_2(n)$ is the sum of the squares of the
 divisors of $n$.

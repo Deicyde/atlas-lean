@@ -1,4 +1,4 @@
 # Imaginary axis
 
-**Imaginary axis.** The imaginary axis is the set
+The imaginary axis is the set
 $\{z \in \mathbb{C} : \operatorname{Re} z = 0\}$.

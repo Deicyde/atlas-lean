@@ -1,6 +1,6 @@
 # Counting coconut structures whose leaves cannot be smoothed
 
-**Counting coconut structures whose leaves cannot be smoothed.** For $p \ge 1$ and $s \ge 2$,
+For $p \ge 1$ and $s \ge 2$,
 the number of arithmetical structures $(d, r)$ on the coconut tree $CT(p, s)$ with $d(\ell_j) \ge 2$
 at every leaf $\ell_j$ is
 

@@ -1,6 +1,6 @@
 # Furstenberg–Sárközy theorem
 
-**Furstenberg–Sárközy theorem.** Let $A$ be a set of natural numbers, and suppose there is a real
+Let $A$ be a set of natural numbers, and suppose there is a real
 number $\delta > 0$ such that for every natural number $M$ there is a natural number $N \ge M$
 with $\delta N \le |A \cap \{0, 1, \dots, N - 1\}|$. Then there are $a, b \in A$ and a natural
 number $k > 0$ with $a < b$ and $b = a + k^2$.

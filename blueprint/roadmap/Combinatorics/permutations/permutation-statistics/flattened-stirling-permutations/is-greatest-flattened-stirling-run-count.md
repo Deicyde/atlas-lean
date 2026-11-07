@@ -1,6 +1,6 @@
 # Maximum number of runs of a flattened Stirling permutation
 
-**Maximum number of runs of a flattened Stirling permutation.** For every natural number
+For every natural number
 $n \ge 1$, some flattened Stirling permutation of order $n$ has exactly
 $\lceil 2n/3 \rceil$ runs, and no flattened Stirling permutation of order $n$ has more.
 

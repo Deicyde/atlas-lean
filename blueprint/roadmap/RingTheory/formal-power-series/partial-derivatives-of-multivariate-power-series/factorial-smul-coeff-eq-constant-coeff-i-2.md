@@ -1,3 +1,3 @@
 # Rational factorial coefficient as a constant term of an iterated derivative
 
-**Rational factorial coefficient as a constant term of an iterated derivative.** The source rational-factorial constant coefficient equation.
+The source rational-factorial constant coefficient equation.

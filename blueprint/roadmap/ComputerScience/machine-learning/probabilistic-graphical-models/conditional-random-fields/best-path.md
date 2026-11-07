@@ -1,6 +1,6 @@
 # Backtracked path of the tabulated CRF Viterbi algorithm
 
-**Backtracked path of the tabulated CRF Viterbi algorithm.** Let $c$ be a chain CRF with
+Let $c$ be a chain CRF with
 states $\{0, \dots, n-1\}$, where $n \ge 1$, and weights in a linearly ordered commutative
 semiring, and fix an observation sequence $x$. For a state $s$, the backtracked path
 $b_t(s) = (b_t(s)_0, \dots, b_t(s)_t)$ of length $t + 1$ is defined by recursion on $t$:

@@ -1,6 +1,6 @@
 # Singleton bound
 
-**Singleton bound.** Let $\alpha$ be a nonempty finite alphabet with $q$ letters, and let $n$
+Let $\alpha$ be a nonempty finite alphabet with $q$ letters, and let $n$
 and $d$ be natural numbers with $1 \le d \le n$. If $C$ is a set of words of length $n$ over
 $\alpha$ in which any two distinct words are at Hamming distance at least $d$, then $C$ has at
 most $q^{n - d + 1}$ elements.

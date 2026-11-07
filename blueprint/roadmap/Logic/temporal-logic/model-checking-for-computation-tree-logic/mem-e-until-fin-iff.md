@@ -1,6 +1,6 @@
 # Correctness of the finite fixed-point computation of EU
 
-**Correctness of the finite fixed-point computation of EU.** Let a labelled transition system
+Let a labelled transition system
 have finitely many states and finitely many labels, with decidable transitions and decidable
 equality of states, and fix a valuation of the atoms. For a finite set $Z$ of states let
 $\mathrm{Pre}_\exists(Z)$ be the set of states with a transition into $Z$, and for finite sets

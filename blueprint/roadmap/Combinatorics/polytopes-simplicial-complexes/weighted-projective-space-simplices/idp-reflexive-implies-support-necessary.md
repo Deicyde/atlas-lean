@@ -1,6 +1,6 @@
 # Necessary condition for IDP reflexive weighted simplices, support form
 
-**Necessary condition for IDP reflexive weighted simplices, support form.** Let
+Let
 $r_1, \dots, r_d$ be pairwise distinct positive integers with $d \ge 1$, let $x_1, \dots, x_d$ be
 positive integers, let $n = x_1 + \dots + x_d$, and let $q = (q_1, \dots, q_n)$ be the weight
 vector $(r_1^{x_1}, \dots, r_d^{x_d})$ in which each $r_i$ is repeated $x_i$ times. If the

@@ -1,6 +1,6 @@
 # Mazur's Problem 24: additive functionals measurable along curves are continuous
 
-**Mazur's Problem 24: additive functionals measurable along curves are continuous.** Let $E$
+Let $E$
 be a real Banach space and let $F \colon E \to \mathbb{R}$ be additive, that is,
 $F(x + y) = F(x) + F(y)$ for all $x, y \in E$. If for every continuous map
 $x \colon [0, 1] \to E$ the function $t \mapsto F(x(t))$ on $[0, 1]$ is Borel measurable,

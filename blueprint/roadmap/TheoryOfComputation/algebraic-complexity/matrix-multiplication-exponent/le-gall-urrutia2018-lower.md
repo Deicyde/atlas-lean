@@ -1,6 +1,6 @@
 # Le Gall–Urrutia bound on the dual exponent
 
-**Le Gall–Urrutia bound on the dual exponent.** For every field $F$, the dual matrix
+For every field $F$, the dual matrix
 multiplication exponent $\alpha(F)$ of the arithmetic-circuit model satisfies
 $\alpha(F) \ge 0.31389$.
 

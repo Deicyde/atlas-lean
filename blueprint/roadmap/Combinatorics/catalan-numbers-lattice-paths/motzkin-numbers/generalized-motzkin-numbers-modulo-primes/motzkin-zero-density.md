@@ -1,6 +1,6 @@
 # Zero density of Motzkin numbers modulo a prime
 
-**Zero density of Motzkin numbers modulo a prime.** Let $p$ be a prime, and write
+Let $p$ be a prime, and write
 $M_n = M^{(1,1)}_n$ for the Motzkin numbers and $T_r = T^{(1,1)}_r$ for the central trinomial
 coefficients. If $T_r \equiv 0 \pmod p$ for some $r < p$, then the set of $n \in \mathbb{N}$ with
 $M_n \equiv 0 \pmod p$ has natural density $1$. If instead $T_r \not\equiv 0 \pmod p$ for every

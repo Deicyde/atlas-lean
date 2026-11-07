@@ -1,6 +1,6 @@
 # Szemerédi–Trotter bound on line-compatible sequences
 
-**Szemerédi–Trotter bound on line-compatible sequences.** There is a real constant $C$ such that
+There is a real constant $C$ such that
 for every natural number $n$, the number of line-compatible sequences for $n$, that is, of
 distinct multisets of the numbers $|\ell \cap P|$ over the distinct lines $\ell$ through two
 distinct points of an $n$-point set $P \subseteq \mathbb{R}^2$, each line counted once, is at

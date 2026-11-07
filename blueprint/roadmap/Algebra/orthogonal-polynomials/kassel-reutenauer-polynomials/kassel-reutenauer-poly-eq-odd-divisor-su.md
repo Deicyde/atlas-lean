@@ -1,6 +1,6 @@
 # Odd-divisor formula for the Kassel–Reutenauer polynomials
 
-**Odd-divisor formula for the Kassel–Reutenauer polynomials.** Let $n \ge 1$, and for each
+Let $n \ge 1$, and for each
 odd divisor $d$ of $n$ put $r_n(d) = n/d - (d+1)/2$, an integer. Then the Kassel–Reutenauer
 polynomial $\bar P_n$ satisfies
 

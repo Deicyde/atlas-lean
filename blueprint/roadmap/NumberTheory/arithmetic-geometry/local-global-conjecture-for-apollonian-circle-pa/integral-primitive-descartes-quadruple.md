@@ -1,6 +1,6 @@
 # Integral primitive Descartes quadruple
 
-**Integral primitive Descartes quadruple.** An integral primitive Descartes quadruple is a
+An integral primitive Descartes quadruple is a
 vector $(a, b, c, d) \in \mathbb{Z}^4$ such that $a + b + c + d > 0$, the Descartes equation
 $(a + b + c + d)^2 = 2(a^2 + b^2 + c^2 + d^2)$ holds, and $\gcd(a, b, c, d) = 1$.
 

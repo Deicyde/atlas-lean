@@ -1,6 +1,6 @@
 # Constant term of the Euler products
 
-**Constant term of the Euler products.** For every natural number $k \ge 1$, the integer power
+For every natural number $k \ge 1$, the integer power
 series $f_k = \prod_{m \ge 1} (1 - q^{km})$ has constant coefficient $1$.
 
 ## Sources

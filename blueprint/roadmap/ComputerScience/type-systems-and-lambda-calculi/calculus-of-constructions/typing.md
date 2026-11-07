@@ -1,6 +1,6 @@
 # Typing judgement of the calculus of constructions with universes
 
-**Typing judgement of the calculus of constructions with universes.** A context $\Gamma$ is a
+A context $\Gamma$ is a
 list of terms whose head is the type of the most recent variable; write $\Gamma, A$ for
 $\Gamma$ extended by $A$ at the head. The judgement $\Gamma \vdash t : A$ ($t$ has type $A$
 in $\Gamma$) is defined together with well-formedness of contexts as the least relation

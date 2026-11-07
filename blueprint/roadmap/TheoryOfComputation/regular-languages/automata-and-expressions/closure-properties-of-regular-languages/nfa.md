@@ -1,6 +1,6 @@
 # The ε-NFA for the homomorphic image
 
-**The ε-NFA for the homomorphic image.** Let $M$ be a DFA over a finite alphabet $T$ with start
+Let $M$ be a DFA over a finite alphabet $T$ with start
 state $q_0$, transition function $\delta$ and accepting states $F$, let $\varphi$ map letters of $T$
 to words over $T'$, and let $N$ be the maximum of the lengths $|\varphi(a)|$ over $a \in T$. The
 ε-NFA over $T'$ has as states the states of $M$ together with the triples $(q, a, i)$ with $q$ a

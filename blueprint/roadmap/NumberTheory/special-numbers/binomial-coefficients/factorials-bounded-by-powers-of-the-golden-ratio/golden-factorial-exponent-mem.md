@@ -1,6 +1,6 @@
 # Defining property of the golden factorial exponent
 
-**Defining property of the golden factorial exponent.** Let $\varphi$ be the golden ratio
+Let $\varphi$ be the golden ratio
 and, for a natural number $n$, let $\alpha(n)$ be the least positive integer $m$ with
 $n! \le \varphi^m$. For every natural number $n$, $\alpha(n) \ge 1$ and
 $n! \le \varphi^{\alpha(n)}$.

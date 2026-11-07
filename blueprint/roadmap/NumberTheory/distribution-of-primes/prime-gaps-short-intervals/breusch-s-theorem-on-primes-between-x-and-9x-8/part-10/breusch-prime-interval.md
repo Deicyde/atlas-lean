@@ -1,6 +1,6 @@
 # Breusch's theorem on primes between $x$ and $9x/8$
 
-**Breusch's theorem on primes between $x$ and $9x/8$.** For every real number $x \ge 48$
+For every real number $x \ge 48$
 there is a prime $p$ with $x < p < \frac{9}{8}x$.
 
 ## Sources

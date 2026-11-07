@@ -1,6 +1,6 @@
 # Value of a finite continued fraction
 
-**Value of a finite continued fraction.** For a finite list $a_0, a_1, \dots, a_t$ of integers
+For a finite list $a_0, a_1, \dots, a_t$ of integers
 (possibly zero or negative), the value $[a_0; a_1, \dots, a_t]$ is the rational number
 $a_0 + 1/(a_1 + 1/(\cdots + 1/a_t))$, computed from the right: the empty list has value $0$, and
 the list $a_0, a_1, \dots, a_t$ has value $a_0 + v^{-1}$, where $v$ is the value of the list

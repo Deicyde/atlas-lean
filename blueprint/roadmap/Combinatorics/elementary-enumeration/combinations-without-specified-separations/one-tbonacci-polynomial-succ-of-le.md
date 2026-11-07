@@ -1,6 +1,6 @@
 # Recurrence for the $(1,t)$-bonacci polynomials
 
-**Recurrence for the $(1,t)$-bonacci polynomials.** For all natural numbers $s$ and $n$ with
+For all natural numbers $s$ and $n$ with
 $s \le n$, the $(1,s+1)$-bonacci polynomials $f^{(s+1)}_m(x)$, $m \ge 0$, satisfy
 $f^{(s+1)}_{n+1}(x) = f^{(s+1)}_n(x) + x \, f^{(s+1)}_{n-s}(x)$.
 

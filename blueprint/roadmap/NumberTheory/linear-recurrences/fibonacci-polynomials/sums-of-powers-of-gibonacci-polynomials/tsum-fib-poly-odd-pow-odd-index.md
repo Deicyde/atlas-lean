@@ -1,6 +1,6 @@
 # Odd-power series over odd-indexed Fibonacci polynomials
 
-**Odd-power series over odd-indexed Fibonacci polynomials.** Let $x > 0$ be real, let $f_n$
+Let $x > 0$ be real, let $f_n$
 and $\ell_n$ denote the Fibonacci and Lucas polynomials evaluated at $x$, given by $f_0 = 0$,
 $f_1 = 1$, $\ell_0 = 2$, $\ell_1 = x$ and the recurrence $z_{n+2} = x z_{n+1} + z_n$ for both, and
 let $k$ be a positive integer and $m$ a natural number. Put $M = (k + 1)/2$ if $k$ is odd and

@@ -1,6 +1,6 @@
 # Perfect covers of a cyclic 2-group times a cyclic group of order 2, 4 or 8
 
-**Perfect covers of a cyclic 2-group times a cyclic group of order 2, 4 or 8.** Write
+Write
 $C(K)$ for the number of perfect covers of a group $K$. For every $n \ge 0$,
 $C(\mathbb{Z}_{2^n} \oplus \mathbb{Z}_2) = 2^{n-1} \, 2^{n(n-1)/2} \, (n + 2)$, where $2^{n-1}$
 is an integer power of $2$ (equal to $1/2$ at $n = 0$). For every $n \ge 1$,

@@ -1,6 +1,6 @@
 # Number of restricted smooth words of maximum capacity
 
-**Number of restricted smooth words of maximum capacity.** Let $n = 8m + p \ge 1$ with
+Let $n = 8m + p \ge 1$ with
 natural numbers $m$ and $p \le 7$, and let $c_n$ be the leading coefficient of the capacity
 distribution $\sum_{w} q^{\mathrm{cap}(w)}$ over the restricted smooth words $w$ of length $n$
 (smooth words with no two adjacent letters equal to $1$), that is, the number of restricted

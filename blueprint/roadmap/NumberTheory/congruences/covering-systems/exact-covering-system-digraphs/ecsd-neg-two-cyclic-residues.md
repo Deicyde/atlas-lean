@@ -1,6 +1,6 @@
 # Cyclic vertices in every residue class
 
-**Cyclic vertices in every residue class.** Let $a_1, a_2$ be integers with $a_1 - a_2$
+Let $a_1, a_2$ be integers with $a_1 - a_2$
 odd. Then every residue class modulo $|a_1 - a_2|$ contains a vertex that lies on a directed
 cycle of $G(-2n + a_1, -2n + a_2)$.
 

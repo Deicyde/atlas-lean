@@ -1,6 +1,6 @@
 # Nonempty Bradley–Zhao qMZVs have no constant term
 
-**Nonempty Bradley–Zhao qMZVs have no constant term.** For every nonempty index
+For every nonempty index
 $(k_1, \dots, k_r)$ of natural numbers, the constant coefficient of the Bradley–Zhao
 q-multiple zeta value $\zeta_q^{BZ}(k_1, \dots, k_r)$ is $0$.
 

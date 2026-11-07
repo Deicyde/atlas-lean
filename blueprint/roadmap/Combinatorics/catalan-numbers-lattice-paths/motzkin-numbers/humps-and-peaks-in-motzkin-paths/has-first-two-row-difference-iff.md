@@ -1,6 +1,6 @@
 # Characterization of the first-two-row difference
 
-**Characterization of the first-two-row difference.** Let $T$ assign to each entry $i < n$ a
+Let $T$ assign to each entry $i < n$ a
 cell $(r_i, c_i)$ with zero-based row $r_i < n$ and column $c_i < n$, and let $\lambda_1$ and
 $\lambda_2$ be the numbers of entries $i$ with $r_i = 0$ and with $r_i = 1$ respectively. For a
 natural number $k$, $T$ has first-two-row difference $k$ if and only if

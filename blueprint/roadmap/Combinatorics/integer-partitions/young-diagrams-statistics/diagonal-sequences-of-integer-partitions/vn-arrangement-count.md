@@ -1,6 +1,6 @@
 # Number of $k$-vn-arrangements
 
-**Number of $k$-vn-arrangements.** Let $k$ be a natural number and $M$ a finite multiset of
+Let $k$ be a natural number and $M$ a finite multiset of
 integers. A $k$-vn-arrangement of $M$ is a finite sequence $(v_1, \dots, v_b)$ of integers whose
 multiset of entries is $M$ and with $v_{i+1} - v_i \le k$ for all $1 \le i < b$. This is the
 number of distinct such sequences; sequences are compared entry by entry, so exchanging two

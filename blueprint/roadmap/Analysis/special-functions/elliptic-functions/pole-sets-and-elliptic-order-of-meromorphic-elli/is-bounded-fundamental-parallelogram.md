@@ -1,6 +1,6 @@
 # Fundamental parallelograms are bounded
 
-**Fundamental parallelograms are bounded.** Let $L$ be a period pair. For every
+Let $L$ be a period pair. For every
 $\alpha \in \mathbb{C}$, the fundamental parallelogram of $L$ with vertex $\alpha$ is a bounded
 subset of $\mathbb{C}$.
 

@@ -1,6 +1,6 @@
 # The quaternion greedy set and the norm preimage of Rankin's set differ infinitely
 
-**The quaternion greedy set and the norm preimage of Rankin's set differ infinitely.** A
+A
 Hurwitz quaternion is a quaternion whose four rational coordinates are either all integers or all
 halves of odd integers; the norm $\mathrm{Nm}(q)$ of a quaternion $q$ is the sum of the squares of
 its coordinates. Let $\mathcal{G}$ be a set of quaternions such that a quaternion $q$ lies in

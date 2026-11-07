@@ -1,6 +1,6 @@
 # Prime reduction for summatory heights
 
-**Prime reduction for summatory heights.** Let $H : \mathbb{N} \to \mathbb{N}$ be completely
+Let $H : \mathbb{N} \to \mathbb{N}$ be completely
 additive on the positive integers, and for real $x$ let $F(x) = \sum_{1 \le m \le x} H(m)$. Then
 there is a real constant $C$ such that for every real $x \ge 2$,
 

@@ -1,6 +1,6 @@
 # Vertices and area of the interior hull of a standard clean parallelogram
 
-**Vertices and area of the interior hull of a standard clean parallelogram.** Let
+Let
 $1 \le a < n$ with $\gcd(a, n) = 1$, let
 $P_{a,n} = \{s (1, 0) + t (a, n) : 0 \le s \le 1,\ 0 \le t \le 1\}$, let
 $n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of $n / a$, and let $H$ be the

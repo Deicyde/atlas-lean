@@ -1,6 +1,6 @@
 # Recovering even coefficients from the 2-Pascal transform
 
-**Recovering even coefficients from the 2-Pascal transform.** Write $[t^m]F$ for the
+Write $[t^m]F$ for the
 coefficient of $t^m$ in a power series $F$. Let $S$, $Q$, $R$ be power series over $\mathbb{Q}$
 with $S^2 = 4 - 3t^2$, $S(0) = 2$, $2Q^2 = 2 - t^2 - tS$, $Q(0) = 1$, $R^2 = 1 - t + t^2$ and
 $R(0) = 1$, and put

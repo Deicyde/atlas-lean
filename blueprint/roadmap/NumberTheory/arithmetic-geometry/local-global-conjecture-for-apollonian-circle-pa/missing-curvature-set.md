@@ -1,6 +1,6 @@
 # Missing curvature set
 
-**Missing curvature set.** Let $A$ be a primitive Apollonian circle packing. The missing
+Let $A$ be a primitive Apollonian circle packing. The missing
 curvature set of $A$ is the set of positive integers $n$ that do not lie in the curvature set
 of $A$ but are congruent modulo $24$ to some element of the curvature set of $A$.
 

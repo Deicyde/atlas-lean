@@ -1,6 +1,6 @@
 # Radix-2 Cooley–Tukey splitting
 
-**Radix-2 Cooley–Tukey splitting.** For $\omega \in \mathbb{C}$, $f : \mathbb{N} \to \mathbb{C}$
+For $\omega \in \mathbb{C}$, $f : \mathbb{N} \to \mathbb{C}$
 and natural numbers $N$ and $k$, write $D_N(\omega, f, k) = \sum_{j < N} \omega^{jk} f(j)$ for the
 discrete Fourier sum. Let $n$ be a natural number and let $\omega \in \mathbb{C}$ satisfy
 $\omega^{2n} = 1$. Then for every $f : \mathbb{N} \to \mathbb{C}$ and every natural number $K$,

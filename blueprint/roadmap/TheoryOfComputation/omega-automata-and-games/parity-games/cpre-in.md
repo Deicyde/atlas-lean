@@ -1,6 +1,6 @@
 # Controllable predecessor inside a set of positions
 
-**Controllable predecessor inside a set of positions.** Let $G$ be an encoded parity game,
+Let $G$ be an encoded parity game,
 $p$ a player (encoded as a Boolean: false for even, true for odd), and $U$, $X$ sets of
 positions. The controllable predecessor of $X$ for $p$ inside $U$ is the set of positions
 $v \in U$ such that either $v$ is owned by $p$ and some move of $G$ goes from $v$ to a position

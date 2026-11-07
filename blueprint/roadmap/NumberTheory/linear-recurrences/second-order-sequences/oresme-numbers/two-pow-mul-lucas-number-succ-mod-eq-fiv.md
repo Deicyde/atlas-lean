@@ -1,6 +1,6 @@
 # Powers of two times Lucas numbers modulo 5
 
-**Powers of two times Lucas numbers modulo 5.** Let $L_m$ denote the Lucas numbers. For every
+Let $L_m$ denote the Lucas numbers. For every
 natural number $n$, $2^n L_{n+1} \equiv 1 \pmod{5}$.
 
 ## Sources

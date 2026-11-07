@@ -1,6 +1,6 @@
 # Wilton's theorem (Kourovka Problem 20.22)
 
-**Wilton's theorem (Kourovka Problem 20.22).** Let $G$ be a group isomorphic to
+Let $G$ be a group isomorphic to
 $\langle x_1, \dots, x_n \mid r \rangle$ for some $n \ge 0$ and some element $r$ of the free group
 on $x_1, \dots, x_n$. If $G$ is neither free nor cyclic and every subgroup of infinite index in $G$
 is free, then $G$ is a surface group: $G$ is isomorphic to

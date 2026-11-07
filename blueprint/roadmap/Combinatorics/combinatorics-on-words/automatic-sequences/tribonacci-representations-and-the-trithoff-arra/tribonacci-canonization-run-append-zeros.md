@@ -1,6 +1,6 @@
 # Canonizing a word followed by zeros
 
-**Canonizing a word followed by zeros.** Words are written most significant digit first.
+Words are written most significant digit first.
 Let $w$ be a word of natural numbers with some digit at least $2$, and suppose that running at
 most $n$ steps of the canonization procedure on $w$ yields a word $v$ whose digits are all $0$
 or $1$ and which has no three consecutive $1$s. Then for every $k$, running at most $n$ steps

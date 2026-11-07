@@ -1,6 +1,6 @@
 # The gcd of $x \mp 1$ and $x^2 \pm x + 1$
 
-**The gcd of $x \mp 1$ and $x^2 \pm x + 1$.** For every integer $x$,
+For every integer $x$,
 $\gcd(x - 1, x^2 + x + 1) = \gcd(x - 1, 3)$ and $\gcd(x + 1, x^2 - x + 1) = \gcd(x + 1, 3)$.
 
 ## Sources

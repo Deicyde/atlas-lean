@@ -1,6 +1,6 @@
 # Online and offline costs on the adversary's sequence
 
-**Online and offline costs on the adversary's sequence.** Let $M$ be a nonempty list of $\ell$
+Let $M$ be a nonempty list of $\ell$
 distinct items, let $A$ be a deterministic online list-update algorithm on the items of $M$, let
 $d$ be an item and $n$ a natural number, and let $\sigma$ be the adversary's sequence of $n$
 requests against $A$ from its initial state, with default item $d$. Then the cost of $A$ on

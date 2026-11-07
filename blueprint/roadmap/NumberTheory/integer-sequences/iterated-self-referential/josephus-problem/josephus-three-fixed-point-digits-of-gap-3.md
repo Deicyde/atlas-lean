@@ -1,6 +1,6 @@
 # Base-3/2 digits of the next Josephus fixed point, gap at least two
 
-**Base-3/2 digits of the next Josephus fixed point, gap at least two.** Let $J_3$ be the
+Let $J_3$ be the
 Josephus function with elimination step $3$, let $n_\ell$ be the $\ell$-th positive fixed point
 of $J_3$ in increasing order (counting from $\ell = 0$), and let $m_\ell$ be the number of
 integers $n$ with $n_\ell < n < n_{\ell+1}$ and $J_3(n) + 1 = n$ (the pure high extremal points

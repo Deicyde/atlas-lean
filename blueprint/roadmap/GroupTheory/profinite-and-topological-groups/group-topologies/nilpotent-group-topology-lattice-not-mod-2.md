@@ -1,6 +1,6 @@
 # A nilpotent group with non-modular lattice of group topologies
 
-**A nilpotent group with non-modular lattice of group topologies.** There is a nilpotent group $G$
+There is a nilpotent group $G$
 whose lattice of all (not necessarily Hausdorff) group topologies is not modular.
 
 Arnautov and Topală found such a group; the Kourovka Notebook (21st issue) answers 14.4(a) "Yes".

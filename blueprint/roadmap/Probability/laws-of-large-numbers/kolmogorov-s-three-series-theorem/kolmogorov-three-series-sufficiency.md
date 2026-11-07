@@ -1,6 +1,6 @@
 # Kolmogorov's three-series theorem (sufficiency direction)
 
-**Kolmogorov's three-series theorem (sufficiency direction).** Let $X_0, X_1, \dots$ be
+Let $X_0, X_1, \dots$ be
 independent real random variables on a probability space $(\Omega, P)$, fix $A > 0$, and write
 $Y_n = X_n \mathbf{1}_{\{|X_n| \le A\}}$ for the truncations. If
 $\sum_n P(|X_n| > A) < \infty$, the series $\sum_n E[Y_n]$ converges absolutely, and

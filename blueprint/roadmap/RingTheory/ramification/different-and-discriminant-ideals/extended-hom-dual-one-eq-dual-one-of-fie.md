@@ -1,6 +1,6 @@
 # The trace dual commutes with localization
 
-**The trace dual commutes with localization.** Let $A$ be a Dedekind domain with fraction
+Let $A$ be a Dedekind domain with fraction
 field $K$, let $L/K$ be a finite separable extension, and let $B$ be the integral closure of $A$
 in $L$, a Dedekind domain with fraction field $L$. Let $S \subseteq A$ be a multiplicative set of
 nonzerodivisors, let $A_S \subseteq K$ be the localization of $A$ at $S$ inside $K$, and let

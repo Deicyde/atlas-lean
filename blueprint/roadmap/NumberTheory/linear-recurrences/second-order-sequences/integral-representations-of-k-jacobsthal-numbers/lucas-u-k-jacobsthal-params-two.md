@@ -1,6 +1,6 @@
 # The second k-Jacobsthal number
 
-**The second k-Jacobsthal number.** For every natural number $k$, the $k$-Jacobsthal number
+For every natural number $k$, the $k$-Jacobsthal number
 $J_{k,2} = U_2(k, -2)$ equals $k$.
 
 ## Sources

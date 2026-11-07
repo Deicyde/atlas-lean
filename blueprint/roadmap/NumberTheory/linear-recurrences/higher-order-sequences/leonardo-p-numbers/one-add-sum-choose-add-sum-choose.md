@@ -1,6 +1,6 @@
 # Schütz–Kelly binomial sum identity
 
-**Schütz–Kelly binomial sum identity.** For all natural numbers $J$, $n$ and $p$,
+For all natural numbers $J$, $n$ and $p$,
 
 $$1 + \sum_{i=0}^{J} \binom{\max(n-pi,\,0)}{i+1} + \sum_{i=0}^{J-1} \binom{\max(n-pi-p,\,0)}{i+1} =
 \sum_{i=0}^{J} \binom{\max(n-pi,\,0)+1}{i+1}.$$

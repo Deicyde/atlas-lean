@@ -1,6 +1,6 @@
 # The algebraic Mahler measure is at least one
 
-**The algebraic Mahler measure is at least one.** For every element $x$ of a field $K$ that
+For every element $x$ of a field $K$ that
 is an algebra over $\mathbb{Q}$, the algebraic Mahler measure $M(x)$ of $x$ satisfies
 $1 \le M(x)$.
 

@@ -1,6 +1,6 @@
 # The word $00203413$ contains $011$
 
-**The word $00203413$ contains $011$.** The word $00203413$ contains the pattern $011$.
+The word $00203413$ contains the pattern $011$.
 
 For example, its subsequence $033$ is order-isomorphic to $011$.
 

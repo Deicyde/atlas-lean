@@ -1,6 +1,6 @@
 # Alternating sum of $\binom{n}{k} 2^{2k}/(k+1)$
 
-**Alternating sum of $\binom{n}{k} 2^{2k}/(k+1)$.** For every natural number $n$, the
+For every natural number $n$, the
 following identity holds in $\mathbb{Q}$:
 
 $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \frac{2^{2k}}{k+1}

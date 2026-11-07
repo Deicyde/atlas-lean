@@ -1,6 +1,6 @@
 # Ramsey graphs for the triangle that are locally trees of triangles
 
-**Ramsey graphs for the triangle that are locally trees of triangles.** For every natural number
+For every natural number
 $\ell$ there is a finite graph $G$ with at least $\ell$ vertices such that $G \to_2 K_3$, that is,
 every colouring of the edges of $G$ with two colours contains a monochromatic triangle, and such
 that for every set $S$ of exactly $\ell$ vertices of $G$, some tree of triangles on the vertex set

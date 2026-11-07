@@ -1,6 +1,6 @@
 # Schatunowsky set of a number field
 
-**Schatunowsky set of a number field.** Let $K$ be a number field with ring of integers
+Let $K$ be a number field with ring of integers
 $\mathcal{O}_K$ and let $\ell$ be a natural number. For $\alpha \in \mathcal{O}_K$ write $N(\alpha)$
 for the absolute norm of the principal ideal $(\alpha)$ and $\Omega(\alpha)$ for the number of
 prime ideal factors of $(\alpha)$ counted with multiplicity. The Schatunowsky set $Q_\ell(K)$ is

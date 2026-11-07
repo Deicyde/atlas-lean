@@ -1,6 +1,6 @@
 # Eta-quotient expressions for Ramanujan's function $k$
 
-**Eta-quotient expressions for Ramanujan's function $k$.** Let $q$ be a complex number with
+Let $q$ be a complex number with
 $0 < |q| < 1$, write $f_m = (q^m;q^m)_\infty = \prod_{n \ge 1} (1 - q^{mn})$ for $m \ge 1$, and let
 $k = k(q)$ be the value of Ramanujan's function. Then
 

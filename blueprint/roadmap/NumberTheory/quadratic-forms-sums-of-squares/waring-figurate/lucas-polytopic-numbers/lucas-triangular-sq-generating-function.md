@@ -1,6 +1,6 @@
 # Generating function of the squared Lucas triangular numbers
 
-**Generating function of the squared Lucas triangular numbers.** Let $(s, t)$ be nondegenerate
+Let $(s, t)$ be nondegenerate
 Lucas parameters, with Lucas brackets $\{n\}_{s,t}$ and Lucasnomial coefficients
 $\binom{n}{k}_{s,t}$, and let $\varphi$ and $\varphi'$ be real numbers with
 $\varphi + \varphi' = s$ and $\varphi \varphi' = -t$. Then, as formal power series in $x$ with

@@ -1,6 +1,6 @@
 # Restricting a statement of the code evaluator to the wrapped machine
 
-**Restricting a statement of the code evaluator to the wrapped machine.** Let $\mathrm{tr}$ be
+Let $\mathrm{tr}$ be
 Mathlib's four-stack machine that evaluates partial recursive codes, and let $S$ be the support
 of a code $c$. A statement $q$ of $\mathrm{tr}$ all of whose jump targets lie in $S$ becomes a
 statement of the wrapped machine of $c$ with the same structure: each push, peek and pop acts on

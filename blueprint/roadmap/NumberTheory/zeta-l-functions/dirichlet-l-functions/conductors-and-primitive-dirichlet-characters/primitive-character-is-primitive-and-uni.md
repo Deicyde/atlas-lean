@@ -1,6 +1,6 @@
 # Existence and uniqueness of the primitive character inducing a Dirichlet character
 
-**Existence and uniqueness of the primitive character inducing a Dirichlet character.** Let
+Let
 $R$ be a commutative monoid with zero, let $n \ge 1$, and let $\chi$ be a Dirichlet character of
 level $n$ with values in $R$. The primitive character associated to $\chi$, whose level is the
 conductor of $\chi$, is primitive, and its change of level to $n$ is $\chi$. Moreover, if

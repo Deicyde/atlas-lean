@@ -1,6 +1,6 @@
 # The Nagell–Ljunggren equation in natural numbers (Bugeaud–Mihăilescu)
 
-**The Nagell–Ljunggren equation in natural numbers (Bugeaud–Mihăilescu).** Let $x, y, n, q$
+Let $x, y, n, q$
 be natural numbers with $x \ge 2$, $y \ge 2$, $n \ge 3$ and $q \ge 2$ such that
 $(x^n - 1)/(x - 1) = y^q$. If $q = 2$, or $3 \mid n$, or $4 \mid n$, or $q = 3$ and
 $n \not\equiv 5 \pmod 6$, then $(x, y, n, q)$ is one of $(3, 11, 5, 2)$, $(7, 20, 4, 2)$ and

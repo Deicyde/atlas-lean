@@ -1,6 +1,6 @@
 # The alphabet preimage morphism refines the preimage's syntactic congruence
 
-**The alphabet preimage morphism refines the preimage's syntactic congruence.** Let
+Let
 $f \colon \Sigma \to \Gamma$ be a map between alphabets, $L$ a language over $\Gamma$ with
 syntactic monoid $M(L)$, and $\varphi \colon \Sigma^* \to M(L)$ the alphabet preimage morphism,
 which sends a word $w$ to the class in $M(L)$ of the word $f^*(w)$ obtained by applying $f$ to

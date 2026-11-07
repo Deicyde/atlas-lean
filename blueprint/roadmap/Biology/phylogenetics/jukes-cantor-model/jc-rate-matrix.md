@@ -1,3 +1,3 @@
 # Jukes–Cantor rate matrix as a matrix
 
-**Jukes–Cantor rate matrix as a matrix.** The Jukes–Cantor rate matrix as a `Matrix`.
+The Jukes–Cantor rate matrix as a `Matrix`.

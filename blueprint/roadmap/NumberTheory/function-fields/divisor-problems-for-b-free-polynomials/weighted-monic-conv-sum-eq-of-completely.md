@@ -1,6 +1,6 @@
 # Camargo's identity over $F(T)$
 
-**Camargo's identity over $F[T]$.** Let $F$ be a finite field and let $\mu$ be the Möbius
+Let $F$ be a finite field and let $\mu$ be the Möbius
 function of $F[T]$. For functions $\alpha, \beta \colon F[T] \to \mathbb{C}$ let
 $(\alpha * \beta)(f) = \sum_{g \mid f} \alpha(g) \beta(f/g)$, over monic divisors $g$, be their
 Dirichlet convolution, and let $D[\alpha, \beta](k)$ be the sum of $(\alpha * \beta)(g)$ over the

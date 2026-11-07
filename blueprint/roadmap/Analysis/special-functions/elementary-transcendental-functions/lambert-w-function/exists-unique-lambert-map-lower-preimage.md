@@ -1,6 +1,6 @@
 # Lower-branch preimages of the Lambert map
 
-**Lower-branch preimages of the Lambert map.** Let $h(y) = y e^y$ be the Lambert map on the
+Let $h(y) = y e^y$ be the Lambert map on the
 real numbers. Every real $x$ with $-e^{-1} \le x < 0$ has exactly one preimage $y \le -1$ under
 $h$, that is, there is exactly one real number $y \le -1$ with $y e^y = x$.
 

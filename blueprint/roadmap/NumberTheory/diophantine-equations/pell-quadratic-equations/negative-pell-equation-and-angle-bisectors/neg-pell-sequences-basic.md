@@ -1,6 +1,6 @@
 # Basic properties of the negative Pell sequences
 
-**Basic properties of the negative Pell sequences.** Let $d > 1$ be a natural number such that
+Let $d > 1$ be a natural number such that
 $x^2 - d y^2 = -1$ has an integral solution, let $(X, Y)$ be its solution in natural numbers with
 least positive $Y$, and define integers $f_n, g_n$ by $(X + Y\sqrt{d})^n = f_n + g_n\sqrt{d}$.
 Then $f_n^2 - d g_n^2 = (-1)^n$ for every $n \ge 0$, the sequence $(g_n)_{n \ge 0}$ is strictly

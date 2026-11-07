@@ -1,3 +1,3 @@
 # Fubini number of two
 
-**Fubini number of two.** The Fubini number $F(2)$ equals $3$.
+The Fubini number $F(2)$ equals $3$.

@@ -1,6 +1,6 @@
 # Ramanujan-type congruences modulo 7 for 7-regular overpartitions
 
-**Ramanujan-type congruences modulo 7 for 7-regular overpartitions.** Write $A_7(m)$ for the
+Write $A_7(m)$ for the
 number of overpartitions of $m$ none of whose parts is divisible by $7$. For every natural number
 $n$, we have $A_7(16n+4) \equiv 0 \pmod 7$; $A_7(64n+i) \equiv 0 \pmod 7$ for every natural
 number $i < 64$ with $i \equiv 4 \pmod{32}$; $A_7(256n+i) \equiv 0 \pmod 7$ for every natural

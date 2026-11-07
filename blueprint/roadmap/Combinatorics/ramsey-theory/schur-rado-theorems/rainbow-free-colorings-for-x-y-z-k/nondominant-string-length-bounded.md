@@ -1,6 +1,6 @@
 # Non-dominant monochromatic strings have bounded length
 
-**Non-dominant monochromatic strings have bounded length.** Let $k$ be a natural number, let
+Let $k$ be a natural number, let
 $n_0 \ge 2$ be an integer, and let $c$ be a coloring of the positive integers by three colors
 with no rainbow solution of $x - y = z^k$: there are no positive integers $x, y, z$ with
 $x = y + z^k$ and $c(x)$, $c(y)$, $c(z)$ pairwise distinct. For a color $e$ write $N_e(n)$ for

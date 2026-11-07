@@ -1,6 +1,6 @@
 # When the strong pseudoprime bases form a subgroup
 
-**When the strong pseudoprime bases form a subgroup.** Let $n > 1$ be an odd number that is
+Let $n > 1$ be an odd number that is
 not prime, let $r$ be the number of distinct prime factors of $n$, and let $v$ be the least
 exponent of $2$ in $p - 1$ over the prime factors $p$ of $n$. Then the following are equivalent:
 (a) there is a subgroup of the unit group $(\mathbb{Z}/n\mathbb{Z})^\times$ whose elements are

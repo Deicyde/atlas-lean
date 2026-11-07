@@ -1,6 +1,6 @@
 # Lower Lyapunov exponent
 
-**Lower Lyapunov exponent.** For a map $T : \mathbb{R}^2 \to \mathbb{R}^2$ of the Euclidean
+For a map $T : \mathbb{R}^2 \to \mathbb{R}^2$ of the Euclidean
 plane and a point $x \in \mathbb{R}^2$, the lower Lyapunov exponent of $T$ at $x$ is
 
 $$\underline{\lambda}(T, x) = -\limsup_{n \to \infty} \frac{1}{n} \log \|(D(T^n)_x)^{-1}\|,$$

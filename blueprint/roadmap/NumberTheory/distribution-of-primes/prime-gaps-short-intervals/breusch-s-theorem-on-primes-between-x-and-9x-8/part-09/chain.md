@@ -1,6 +1,6 @@
 # Breusch's prime chain
 
-**Breusch's prime chain.** The chain is the list of the following 111 natural numbers, in
+The chain is the list of the following 111 natural numbers, in
 order:
 
 53, 59, 61, 67, 73, 79, 83, 89, 97, 109, 113, 127, 139, 151, 167, 181, 199, 223, 241, 271, 293,

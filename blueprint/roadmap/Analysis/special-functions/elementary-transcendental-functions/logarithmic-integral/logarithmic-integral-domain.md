@@ -1,6 +1,6 @@
 # Domain of the logarithmic integral
 
-**Domain of the logarithmic integral.** The domain of the logarithmic integral is the set of
+The domain of the logarithmic integral is the set of
 real numbers $x$ with $x \ge 0$ and $x \ne 1$.
 
 The point $1$ is excluded because $1 / \log t$ is singular at $t = 1$; the classical integral

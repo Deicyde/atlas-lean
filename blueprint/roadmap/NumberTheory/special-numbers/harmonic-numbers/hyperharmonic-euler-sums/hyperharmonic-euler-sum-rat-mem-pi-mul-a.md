@@ -1,6 +1,6 @@
 # Hyperharmonic Euler sums with rational parameters
 
-**Hyperharmonic Euler sums with rational parameters.** Let $a$ and $r$ be rational numbers
+Let $a$ and $r$ be rational numbers
 that are not integers, with $a - r \in \mathbb{Z}$, let $N \ge 1$ be an integer with
 $N a \in \mathbb{Z}$, and let $k \ge 0$ and $p > r$ be integers. Put $M = \mathrm{lcm}(2N, 4)$
 and $\omega = e^{2 \pi i / M}$, a primitive $M$-th root of unity. Write $H_n^{[r]}(k)$ for the

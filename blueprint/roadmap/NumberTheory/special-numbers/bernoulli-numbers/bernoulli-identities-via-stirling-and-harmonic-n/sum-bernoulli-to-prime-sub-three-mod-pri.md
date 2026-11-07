@@ -1,6 +1,6 @@
 # The congruence $\sum_{j=0}^{p-3} B_j \equiv -1 \pmod p$
 
-**The congruence $\sum_{j=0}^{p-3} B_j \equiv -1 \pmod p$.** Let $B_j$ denote the Bernoulli
+Let $B_j$ denote the Bernoulli
 numbers with $B_1 = -\tfrac12$. For every prime $p \ge 5$, the rational number
 $S = B_0 + B_1 + \dots + B_{p-3}$ has denominator not divisible by $p$, and its residue modulo
 $p$ (its numerator times the inverse of its denominator in $\mathbb{Z}/p\mathbb{Z}$) equals $-1$.

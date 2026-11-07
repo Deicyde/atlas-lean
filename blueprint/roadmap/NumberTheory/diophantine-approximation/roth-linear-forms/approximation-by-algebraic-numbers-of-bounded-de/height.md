@@ -1,6 +1,6 @@
 # Height of a real algebraic number
 
-**Height of a real algebraic number.** Let $\alpha$ be a real algebraic number, let $p$ be its
+Let $\alpha$ be a real algebraic number, let $p$ be its
 monic minimal polynomial over $\mathbb{Q}$, and let $D$ be the least common multiple of the
 denominators of the nonzero coefficients of $p$. The height $H(\alpha)$ is the largest absolute
 value of a coefficient of the integer polynomial $D p$. For a real number that is not algebraic

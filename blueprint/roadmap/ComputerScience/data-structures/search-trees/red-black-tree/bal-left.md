@@ -1,6 +1,6 @@
 # Rebalancing after deletion from the left subtree
 
-**Rebalancing after deletion from the left subtree.** Let $c$ be a color, $L$ a tree whose
+Let $c$ be a color, $L$ a tree whose
 root may be double black, $k$ a key and $R$ a red-black tree. If $L$ is a genuine red-black tree,
 the result is the genuine node with color $c$, left subtree $L$, key $k$ and right subtree $R$.
 Otherwise the double black of $L$ is absorbed first: a double-black empty tree becomes the empty

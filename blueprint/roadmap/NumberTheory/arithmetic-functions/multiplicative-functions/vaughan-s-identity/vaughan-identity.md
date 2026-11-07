@@ -1,6 +1,6 @@
 # Vaughan's identity
 
-**Vaughan's identity.** Let $R$ be a commutative ring, let $\mu$ and $\Lambda$ be arithmetic
+Let $R$ be a commutative ring, let $\mu$ and $\Lambda$ be arithmetic
 functions with values in $R$ (so $\mu(0) = \Lambda(0) = 0$), and let $L : \mathbb{N} \to R$ be
 any function. Suppose that for every natural number $m$, $\sum_{d \mid m} \mu(d)$ is $1$ if
 $m = 1$ and $0$ otherwise, and $\Lambda(m) = \sum_{d \mid m} \mu(d) \, L(m/d)$, where both sums

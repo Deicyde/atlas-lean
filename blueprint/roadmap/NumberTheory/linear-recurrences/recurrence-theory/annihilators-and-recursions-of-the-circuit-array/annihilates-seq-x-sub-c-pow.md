@@ -1,6 +1,6 @@
 # The operator $E - c$ annihilates the powers of $c$
 
-**The operator $E - c$ annihilates the powers of $c$.** Let $K$ be a field, $c \in K$, and let
+Let $K$ be a field, $c \in K$, and let
 $E$ be the translation operator $E(G_s) = G_{s+1}$ on sequences $G \colon \mathbb{N} \to K$. Then
 the operator $E - c$, that is, $p(E)$ for the polynomial $p = X - c \in K[X]$, annihilates the
 sequence $s \mapsto c^s$.

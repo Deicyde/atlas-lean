@@ -1,6 +1,6 @@
 # Real-rootedness of the minuscule polynomials
 
-**Real-rootedness of the minuscule polynomials.** For every natural number $n$, the type-A
+For every natural number $n$, the type-A
 minuscule polynomial $N_n$, viewed as a complex polynomial, is real-rooted: every element of its
 multiset of roots is real.
 

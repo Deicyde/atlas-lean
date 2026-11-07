@@ -1,6 +1,6 @@
 # Ornstein–Weiss Rokhlin lemma for $\mathbb{Z}^d$-actions
 
-**Ornstein–Weiss Rokhlin lemma for $\mathbb{Z}^d$-actions.** Let $d \ge 1$, let $\Omega$ be a
+Let $d \ge 1$, let $\Omega$ be a
 standard Borel space with a probability measure $\mu$, and let $T$ assign to each
 $v \in \mathbb{Z}^d$ a map $T_v \colon \Omega \to \Omega$ such that $T_0$ is the identity,
 $T_{u + v} = T_u \circ T_v$ for all $u, v \in \mathbb{Z}^d$, every $T_v$ is measure preserving

@@ -1,6 +1,6 @@
 # Formula for the unstable bits
 
-**Formula for the unstable bits.** Write $\operatorname{od}(n)$ for the odd part of a natural
+Write $\operatorname{od}(n)$ for the odd part of a natural
 number $n$. For all natural numbers $e$ and $d$, the unstable bits are
 $\operatorname{uns}(e,d) = \lfloor \operatorname{od}((2^e)!) / 2^{e+1} \rfloor \bmod 2^d$.
 

@@ -1,6 +1,6 @@
 # Tsen's theorem
 
-**Tsen's theorem.** Let $k$ be an algebraically closed field and $k(X)$ the field of rational
+Let $k$ be an algebraically closed field and $k(X)$ the field of rational
 functions over $k$. For all natural numbers $n$ and $d$ with $0 < d < n$, every homogeneous
 polynomial $f$ of degree $d$ in $n$ variables over $k(X)$ has a nontrivial zero: there is
 $x = (x_1, \dots, x_n) \in k(X)^n$ with $x_i \neq 0$ for some $i$ and $f(x) = 0$. In other

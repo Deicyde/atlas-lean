@@ -1,3 +1,3 @@
 # Derivations compose under concatenation
 
-**Derivations compose under concatenation.** Derivations compose under append.
+Derivations compose under append.

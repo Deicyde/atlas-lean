@@ -1,6 +1,6 @@
 # The third Kassel–Reutenauer polynomial
 
-**The third Kassel–Reutenauer polynomial.** The Kassel–Reutenauer polynomial $\bar P_3$ is
+The Kassel–Reutenauer polynomial $\bar P_3$ is
 $X^2 + X - 2$.
 
 ## Sources

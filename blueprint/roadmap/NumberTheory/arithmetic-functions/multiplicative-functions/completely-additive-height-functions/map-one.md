@@ -1,6 +1,6 @@
 # A completely additive function vanishes at one
 
-**A completely additive function vanishes at one.** If $H : \mathbb{N} \to \mathbb{N}$ is
+If $H : \mathbb{N} \to \mathbb{N}$ is
 completely additive on the positive integers, that is, $H(ab) = H(a) + H(b)$ for all $a, b \ge 1$,
 then $H(1) = 0$.
 

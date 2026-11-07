@@ -1,6 +1,6 @@
 # Absorption in finite time
 
-**Absorption in finite time.** A solution of the Wright–Fisher martingale problem is
+A solution of the Wright–Fisher martingale problem is
 almost surely absorbed: from some time on it is constantly `0` or constantly `1`.
 
 ## Sources

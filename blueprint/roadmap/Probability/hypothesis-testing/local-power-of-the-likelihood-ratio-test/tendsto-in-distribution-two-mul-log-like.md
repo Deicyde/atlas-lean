@@ -1,6 +1,6 @@
 # Wilks' expansion for a triangular array
 
-**Wilks' expansion for a triangular array.** Let `X n i` be random variables (row `n` is the
+Let `X n i` be random variables (row `n` is the
 sample of size `n`) and `θ̂ₙ` estimators that solve the likelihood equation
 `∑_{i<n} ∂_θ log p θ (X n i) = 0` with probability tending to one and converge to `θ₀` in
 probability. Suppose that on the ball of radius `δ > 0` about `θ₀` the log-likelihood is

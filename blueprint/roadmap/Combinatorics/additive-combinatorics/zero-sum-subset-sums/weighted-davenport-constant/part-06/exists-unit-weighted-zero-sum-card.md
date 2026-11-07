@@ -1,6 +1,6 @@
 # Unit-weighted zero sums of even length in $\mathbb{Z}_n$
 
-**Unit-weighted zero sums of even length in $\mathbb{Z}_n$.** Let $n \ge 1$, let $\Omega(n)$ be
+Let $n \ge 1$, let $\Omega(n)$ be
 the number of prime factors of $n$ counted with multiplicity, and let $m$ be even with
 $2^{\Omega(n)} \le m$. Then every sequence $x_1, \dots, x_{m + \Omega(n)}$ in
 $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$ has a unit-weighted zero-sum subsequence of length $m$:

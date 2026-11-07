@@ -1,6 +1,6 @@
 # Transfer-matrix formula for the domination polynomial of the grid
 
-**Transfer-matrix formula for the domination polynomial of the grid.** For all natural
+For all natural
 numbers $m$ and $n$, let $P_k$ denote the path on the vertices $0, \dots, k - 1$, let $A$ be the
 domination transfer matrix of the row graph $P_m$, indexed by the signatures of $P_m$, and let
 $\sigma_\bullet$ be the all-covered signature. Then the domination polynomial of the grid

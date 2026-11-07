@@ -1,6 +1,6 @@
 # Rotation move on the cube
 
-**Rotation move on the cube.** Label the faces of a cube $f_a, f_b, f_c, f_A, f_B, f_C$, where
+Label the faces of a cube $f_a, f_b, f_c, f_A, f_B, f_C$, where
 $f_A$, $f_B$, $f_C$ are opposite $f_a$, $f_b$, $f_c$, and record a position as the tuple
 $p = (a, b, c, A, B, C)$ of numbers of tokens on these faces. A rotation is one of the three
 belts of four faces $\{f_a, f_b, f_A, f_B\}$, $\{f_a, f_c, f_A, f_C\}$ and

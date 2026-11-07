@@ -1,6 +1,6 @@
 # Alternating Fibonacci and Lucas sums from the Gelin–Cesàro identity
 
-**Alternating Fibonacci and Lucas sums from the Gelin–Cesàro identity.** Let $F_m$ and $L_m$
+Let $F_m$ and $L_m$
 denote the Fibonacci and Lucas numbers. For every natural number $n$,
 
 $$

@@ -1,6 +1,6 @@
 # Polynomial multiples of a function in the Dirichlet space
 
-**Polynomial multiples of a function in the Dirichlet space.** For $g$ in the Dirichlet
+For $g$ in the Dirichlet
 space $\mathcal{D}$, the set $Pg$ consists of the functions $h \in \mathcal{D}$ for which there is
 a polynomial $p$ with complex coefficients such that $h(z) = p(z) g(z)$ for all $|z| < 1$; only
 values on the open unit disc are compared.

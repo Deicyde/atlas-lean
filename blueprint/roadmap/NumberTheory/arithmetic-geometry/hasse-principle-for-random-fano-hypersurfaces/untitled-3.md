@@ -1,6 +1,6 @@
 # Proportion of soluble hypersurfaces of bounded height
 
-**Proportion of soluble hypersurfaces of bounded height.** For a real number $A$,
+For a real number $A$,
 $\rho_{d,n}(A)$ is the proportion of hypersurfaces in $\mathbb{V}_{d,n}(A)$, the degree-$d$
 hypersurfaces in $\mathbb{P}^n$ of height at most $A$, that have a rational point: it is the
 number of $V \in \mathbb{V}_{d,n}(A)$ with $V(\mathbb{Q}) \ne \emptyset$ divided by the number of

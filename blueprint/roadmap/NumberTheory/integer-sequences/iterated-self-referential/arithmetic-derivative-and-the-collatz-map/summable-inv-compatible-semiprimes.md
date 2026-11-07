@@ -1,6 +1,6 @@
 # Reciprocals of compatible semiprimes have a finite sum
 
-**Reciprocals of compatible semiprimes have a finite sum.** Call a natural number $n$ a
+Call a natural number $n$ a
 compatible semiprime if $n = pq$ for primes $p, q$ for which there are primes $r, s$ with
 $2(r + s) = p + q$ and $2rs = 3pq + 1$. The sum of $1/n$ over all compatible semiprimes $n$
 converges.

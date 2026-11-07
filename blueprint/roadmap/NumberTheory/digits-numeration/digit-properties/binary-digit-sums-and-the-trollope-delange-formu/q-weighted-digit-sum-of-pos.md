@@ -1,6 +1,6 @@
 # Binary recursion for the $q$-weighted digit sum
 
-**Binary recursion for the $q$-weighted digit sum.** Let $q$ be an element of a commutative
+Let $q$ be an element of a commutative
 ring and let $k > 0$ be a natural number. Then the $q$-weighted binary digit sum satisfies
 $s_q(k) = q\,(k \bmod 2) + q\,s_q(\lfloor k/2 \rfloor)$.
 

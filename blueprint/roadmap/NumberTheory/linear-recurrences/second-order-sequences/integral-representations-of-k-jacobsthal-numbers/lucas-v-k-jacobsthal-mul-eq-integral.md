@@ -1,6 +1,6 @@
 # Integral representation of k-Jacobsthal–Lucas numbers at multiples
 
-**Integral representation of k-Jacobsthal–Lucas numbers at multiples.** Let $k$, $\ell$ and
+Let $k$, $\ell$ and
 $n$ be natural numbers, let $J_{k,n} = U_n(k, -2)$ and $j_{k,n} = V_n(k, -2)$ be the
 $k$-Jacobsthal and $k$-Jacobsthal–Lucas numbers, and let $\Delta_k = \sqrt{k^2 + 8}$. Then
 

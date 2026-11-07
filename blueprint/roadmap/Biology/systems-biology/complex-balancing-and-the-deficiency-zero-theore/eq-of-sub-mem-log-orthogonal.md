@@ -1,6 +1,6 @@
 # Birch's theorem, uniqueness
 
-**Birch's theorem, uniqueness.** Two positive vectors whose difference lies in a subspace
+Two positive vectors whose difference lies in a subspace
 `W` and whose logarithms differ by a vector orthogonal to `W` are equal.
 
 ## Sources

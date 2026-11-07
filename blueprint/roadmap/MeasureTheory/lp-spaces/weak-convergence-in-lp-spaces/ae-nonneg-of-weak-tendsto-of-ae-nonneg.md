@@ -1,6 +1,6 @@
 # Weak $L^p$ limits of nonnegative functions are nonnegative
 
-**Weak $L^p$ limits of nonnegative functions are nonnegative.** Let $1 < p < \infty$
+Let $1 < p < \infty$
 and write $L^p([0,1])$ for the Lebesgue space of real functions on $[0,1]$ with Lebesgue measure.
 Let $(f_n)_{n \in \mathbb{N}}$ be a sequence in $L^p([0,1])$ such that for each $n$,
 $f_n(x) \ge 0$ for almost every $x \in [0,1]$, and let $f \in L^p([0,1])$. If $f_n$ converges

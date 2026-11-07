@@ -1,6 +1,6 @@
 # $1$ is not a Sierpiński number
 
-**$1$ is not a Sierpiński number.** The number $1$ is not a Sierpiński number, since
+The number $1$ is not a Sierpiński number, since
 $1 \cdot 2 + 1 = 3$ is prime.
 
 ## Sources

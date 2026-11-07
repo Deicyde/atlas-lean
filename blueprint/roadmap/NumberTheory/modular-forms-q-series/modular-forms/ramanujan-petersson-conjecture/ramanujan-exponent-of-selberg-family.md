@@ -1,6 +1,6 @@
 # The Selberg family's exponent is Selberg's constant
 
-**The Selberg family's exponent is Selberg's constant.** The Ramanujan exponent of the
+The Ramanujan exponent of the
 canonical Selberg family of archimedean exponents is exactly Selberg's congruence spectral-gap
 constant.
 

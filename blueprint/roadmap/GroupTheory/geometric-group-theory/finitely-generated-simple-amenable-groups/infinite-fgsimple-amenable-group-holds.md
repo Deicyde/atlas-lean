@@ -1,6 +1,6 @@
 # Juschenko–Monod theorem (Kourovka Problem 15.5)
 
-**Juschenko–Monod theorem (Kourovka Problem 15.5).** There exists a group $G$ that is infinite,
+There exists a group $G$ that is infinite,
 finitely generated, simple and amenable, where amenable means that $G$ satisfies the Følner
 condition.
 

@@ -1,3 +1,3 @@
 # Transposition fixes atoms other than the swapped pair
 
-**Transposition fixes atoms other than the swapped pair.** A transposition fixes every atom distinct from its two swapped atoms.
+A transposition fixes every atom distinct from its two swapped atoms.

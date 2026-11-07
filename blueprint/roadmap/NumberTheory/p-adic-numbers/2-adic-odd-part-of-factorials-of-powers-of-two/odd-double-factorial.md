@@ -1,6 +1,6 @@
 # Odd double factorial below a power of two
 
-**Odd double factorial below a power of two.** For a natural number $e$, $(2^e-1)!!$ is the
+For a natural number $e$, $(2^e-1)!!$ is the
 product of the odd natural numbers in the closed interval $[1, 2^e-1]$. The parameter is the
 exponent $e$, not the odd endpoint $2^e-1$.
 

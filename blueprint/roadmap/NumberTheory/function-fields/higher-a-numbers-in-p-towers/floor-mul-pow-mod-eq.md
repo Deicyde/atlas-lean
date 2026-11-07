@@ -1,6 +1,6 @@
 # Periodicity of $\lfloor x p^n \rfloor$ modulo $x_N$ and modulo $p$
 
-**Periodicity of $\lfloor x p^n \rfloor$ modulo $x_N$ and modulo $p$.** Let $p$ be a prime and
+Let $p$ be a prime and
 $x$ a positive rational. Write $x_N$ for the prime-to-$p$ part of the numerator of $x$,
 $D_x = -v_p(x)$ for the delay of its base-$p$ expansion, and $L_x$ for its period, the order of
 $p$ modulo the prime-to-$p$ part of the denominator of $x$. Then for every integer $n$:

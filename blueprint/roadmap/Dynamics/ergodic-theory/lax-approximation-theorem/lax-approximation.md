@@ -1,6 +1,6 @@
 # Lax's approximation theorem
 
-**Lax's approximation theorem.** Let $d \ge 1$ be a natural number and let $T$ be a toral
+Let $d \ge 1$ be a natural number and let $T$ be a toral
 dynamical system on the torus $\mathbb{T}^d = (\mathbb{R}/\mathbb{Z})^d$, regarded as a
 measurable, invertible, volume-preserving transformation of $\mathbb{T}^d$. Then for every
 $\varepsilon \in (0, \infty]$ there are a natural number $n$ and a measurable, invertible,

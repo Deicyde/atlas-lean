@@ -1,6 +1,6 @@
 # A perfect partition of seven
 
-**A perfect partition of seven.** The partition $(1^3, 4)$ of $7$, with three parts equal
+The partition $(1^3, 4)$ of $7$, with three parts equal
 to $1$ and one part equal to $4$, is a perfect partition of $7$.
 
 ## Sources

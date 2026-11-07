@@ -1,6 +1,6 @@
 # Family containing all bounded subsets of a cardinal
 
-**Family containing all bounded subsets of a cardinal.** A set X⊆κ is *bounded in κ* if there is some
+A set X⊆κ is *bounded in κ* if there is some
 β<κ with α<β for every α∈ X; equivalently,
 X⊆β for some β<κ.
 

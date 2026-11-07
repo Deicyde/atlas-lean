@@ -1,6 +1,6 @@
 # Odd combinations of disjoint parts of a perfect cover
 
-**Odd combinations of disjoint parts of a perfect cover.** Let $G$ be an abelian group of
+Let $G$ be an abelian group of
 order $2^n$ and $S$ a perfect cover of $G$. For a finite $A \subseteq G$, let $\mathcal{T}(A)$ be
 the set of combinations $\sum_{x \in A} c_x x$ in which every integer coefficient $c_x$ is $0$
 or odd. Then: (a) for disjoint $A, B \subseteq S$, $\mathcal{T}(A) \cap \mathcal{T}(B) = \{0\}$;

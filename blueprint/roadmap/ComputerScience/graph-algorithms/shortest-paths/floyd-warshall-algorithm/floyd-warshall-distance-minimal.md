@@ -1,6 +1,6 @@
 # No path is shorter than the Floyd–Warshall distance
 
-**No path is shorter than the Floyd–Warshall distance.** Let $w$ assign a weight in
+Let $w$ assign a weight in
 $\mathbb{Z} \cup \{\infty\}$ to each ordered pair of vertices in $\{0, \dots, n-1\}$, suppose that
 $w$ has no negative cycle, and let $D$ be the distance matrix computed by Floyd–Warshall from $w$.
 Then for all vertices $s$ and $t$ and every weighted path $p$ from $s$ to $t$ (a nonempty vertex

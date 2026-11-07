@@ -1,6 +1,6 @@
 # Unnormalized Dirichlet density
 
-**Unnormalized Dirichlet density.** For parameters
+For parameters
 $\alpha = (\alpha_0, \dots, \alpha_n) \in \mathbb{R}^{n+1}$, the unnormalized Dirichlet density is
 the function $D_\alpha \colon \mathbb{R}^n \to [0, \infty]$ defined by
 

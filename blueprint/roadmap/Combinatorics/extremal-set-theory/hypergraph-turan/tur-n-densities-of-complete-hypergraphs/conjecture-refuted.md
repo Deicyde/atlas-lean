@@ -1,6 +1,6 @@
 # De Caen's conjecture is false
 
-**De Caen's conjecture is false.** It is not the case that $k \, (1 - \pi(K_{k+1}^{(k)}))$
+It is not the case that $k \, (1 - \pi(K_{k+1}^{(k)}))$
 tends to $\infty$ as $k \to \infty$, where $\pi(K_{k+1}^{(k)})$ is the Turán density of the
 complete $k$-uniform hypergraph $K_{k+1}^{(k)}$ on $k+1$ vertices.
 

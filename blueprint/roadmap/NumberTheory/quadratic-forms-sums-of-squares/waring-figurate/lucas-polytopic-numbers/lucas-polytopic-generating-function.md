@@ -1,6 +1,6 @@
 # Generating function of the simplicial Lucas-polytopic numbers
 
-**Generating function of the simplicial Lucas-polytopic numbers.** Let $(s, t)$ be
+Let $(s, t)$ be
 nondegenerate Lucas parameters, let $\varphi, \varphi'$ be real numbers with
 $\varphi + \varphi' = s$ and $\varphi\varphi' = -t$, let $d$ be a natural number and write
 $\binom{n}{k}_{s,t}$ for the Lucasnomial coefficients, so that the $n$-th simplicial

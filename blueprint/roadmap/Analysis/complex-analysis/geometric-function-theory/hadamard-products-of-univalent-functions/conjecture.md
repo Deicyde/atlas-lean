@@ -1,6 +1,6 @@
 # Statement of the Hadamard product circle bound
 
-**Statement of the Hadamard product circle bound.** The proposition that for every
+The proposition that for every
 $n \in \mathbb{N}$, every function $f(z) = \sum_{m \ge 0} a_m z^m$ of the class $S$ of normalized
 univalent functions on the unit disk, and every complex polynomial $P(z) = \sum_k p_k z^k$ of
 degree at most $n$,

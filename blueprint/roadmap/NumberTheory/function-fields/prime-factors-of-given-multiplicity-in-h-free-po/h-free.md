@@ -1,6 +1,6 @@
 # $h$-free polynomials
 
-**$h$-free polynomials.** Let $F$ be a field and $h$ a natural number. The set $S_h$ of
+Let $F$ be a field and $h$ a natural number. The set $S_h$ of
 $h$-free polynomials over $F$ consists of the monic polynomials $f$ over $F$ such that no monic
 irreducible polynomial $P$ over $F$ satisfies $P^h \mid f$.
 

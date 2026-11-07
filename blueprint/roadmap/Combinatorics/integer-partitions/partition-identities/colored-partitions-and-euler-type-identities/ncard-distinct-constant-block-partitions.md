@@ -1,6 +1,6 @@
 # Distinct constant-block partitions and colored compositions
 
-**Distinct constant-block partitions and colored compositions.** For $n \ge 0$, count the
+For $n \ge 0$, count the
 pairs $(A, P)$ where $A$ is a multiset of $n$ positive integers whose distinct elements are
 exactly $1, \dots, k$ for some $k \ge 0$, and $P$ is a partition of $A$ into pairwise distinct
 constant blocks, that is, a multiset of pairwise distinct nonempty multisets, each with all its

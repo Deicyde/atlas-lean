@@ -1,6 +1,6 @@
 # Resultant product at $n = 1$
 
-**Resultant product at $n = 1$.** The resultant product satisfies $\mathcal{P}_1 = 1$; it is an
+The resultant product satisfies $\mathcal{P}_1 = 1$; it is an
 empty product.
 
 ## Sources

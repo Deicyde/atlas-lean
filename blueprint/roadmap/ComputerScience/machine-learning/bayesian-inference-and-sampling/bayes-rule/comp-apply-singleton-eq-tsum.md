@@ -1,6 +1,6 @@
 # The evidence as a sum over hypotheses
 
-**The evidence as a sum over hypotheses.** Let $\Theta$ be a countable measurable space and
+Let $\Theta$ be a countable measurable space and
 $\mathcal X$ a measurable space, both with measurable singletons, let $\kappa$ be a kernel from
 $\Theta$ to $\mathcal X$ and $\mu$ a measure on $\Theta$. For every $x \in \mathcal X$,
 

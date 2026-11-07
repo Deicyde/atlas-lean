@@ -1,6 +1,6 @@
 # Kourovka Problem 15.80 has a negative answer
 
-**Kourovka Problem 15.80 has a negative answer.** It is not true that every topological group $G$
+It is not true that every topological group $G$
 admitting a sequence $(P_i)_{i \in \mathbb{N}}$ of pairwise disjoint dense subsets with union $G$
 has an expansive sequence, that is, a sequence $(F_n)_{n \in \mathbb{N}}$ of pairwise disjoint
 finite subsets of $G$ such that every nonempty open set $U \subseteq G$ meets $F_n$ for all $n$

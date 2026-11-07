@@ -1,6 +1,6 @@
 # Local normal convergence implies locally uniform convergence
 
-**Local normal convergence implies locally uniform convergence.** Let $E$ be a complete
+Let $E$ be a complete
 normed additive commutative group, $S$ a subset of a topological space $X$ and
 $f_n \colon X \to E$ for $n \in \mathbb{N}$. If the series $\sum_n f_n$ converges locally
 normally on $S$, that is every $x \in S$ has a neighbourhood $U$ with

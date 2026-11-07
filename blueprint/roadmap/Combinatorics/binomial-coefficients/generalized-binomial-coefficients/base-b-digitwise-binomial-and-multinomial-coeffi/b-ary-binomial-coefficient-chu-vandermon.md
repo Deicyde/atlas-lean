@@ -1,6 +1,6 @@
 # Chu–Vandermonde identity for $b$-ary binomial coefficients
 
-**Chu–Vandermonde identity for $b$-ary binomial coefficients.** Let $b \ge 2$ and write
+Let $b \ge 2$ and write
 $\binom{n}{k}_b$ for the $b$-ary binomial coefficient. Let $m$ and $n$ be natural numbers that
 add without carries in base $b$, that is,
 $\lfloor m / b^l \rfloor \bmod b + \lfloor n / b^l \rfloor \bmod b < b$ for every natural number

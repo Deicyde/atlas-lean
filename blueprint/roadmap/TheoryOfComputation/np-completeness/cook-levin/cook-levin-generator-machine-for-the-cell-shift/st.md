@@ -1,6 +1,6 @@
 # Setup and loop stages of a cell-shift block
 
-**Setup and loop stages of a cell-shift block.** The finite type of stages of the setup and
+The finite type of stages of the setup and
 loops of an $(i, k)$ block of the cell-shift generator: the base stages $\mathrm{kbE}$,
 $\mathrm{kbC1}$, $\mathrm{kbC2}$, $\mathrm{kbK}$, $\mathrm{kbM}(s)$ for each stage $s$ of the
 multiplication routine, $\mathrm{kbD}$, $\mathrm{uC1}$ and $\mathrm{uC2}$; the overflow-loop

@@ -1,6 +1,6 @@
 # The verifier machine for clique, independent set and vertex cover
 
-**The verifier machine for clique, independent set and vertex cover.** Let $m$ be a
+Let $m$ be a
 mode, $x$ and $w$ lists of bits, $v$ a state and $S$ stack contents in which the input
 stack $X$ holds the bits of $x$, the witness stack $W$ holds the bits of $w$, and every other
 stack is empty. Then there are a state $v'$ and stack contents $S'$ such that within at most

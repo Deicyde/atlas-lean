@@ -1,6 +1,6 @@
 # Zero density of A005717 modulo a prime
 
-**Zero density of A005717 modulo a prime.** Let $p$ be a prime, let $T_m$ be the central
+Let $p$ be a prime, let $T_m$ be the central
 trinomial coefficient, the constant term of $(x^{-1} + 1 + x)^m$, and let $a_n$ be the constant
 term of $x (x^{-1} + 1 + x)^n$ (OEIS A005717). If $T_r \equiv 0 \pmod p$ for some $r < p$, then
 the set of $n \in \mathbb{N}$ with $a_n \equiv 0 \pmod p$ has natural density $1$. If instead

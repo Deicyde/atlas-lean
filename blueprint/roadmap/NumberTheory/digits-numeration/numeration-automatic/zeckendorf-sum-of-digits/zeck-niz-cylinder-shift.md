@@ -1,6 +1,6 @@
 # Shifting a new-information cylinder by two orders
 
-**Shifting a new-information cylinder by two orders.** Let $\mathbb{X}$ be the set of
+Let $\mathbb{X}$ be the set of
 Zeckendorf-adic integers: the digit sequences $x = (x_i)_{i \in \mathbb{N}}$ in $\{0, 1\}$ with
 $x_0 = x_1 = 0$ and no two consecutive digits equal to $1$. Let $r \ge 1$, $k \ge 2$ and
 $y \in \mathbb{X}$. Suppose that every $x \in \mathbb{X}$ with $x_{k+1} = x_k = 0$ and $x_i = y_i$

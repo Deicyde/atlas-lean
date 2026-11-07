@@ -1,6 +1,6 @@
 # Unit-weighted Erdős–Ginzburg–Ziv constant of $\mathbb{Z}_n$ for even $n$
 
-**Unit-weighted Erdős–Ginzburg–Ziv constant of $\mathbb{Z}_n$ for even $n$.** Let $n$ be a
+Let $n$ be a
 positive even integer, let $U(n)$ be the set of units of $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$,
 and let $\Omega(n)$ be the number of prime factors of $n$ counted with multiplicity. Then
 $E_{U(n)}(n) = n + \Omega(n)$, where $E_{U(n)}(n)$ is the least positive integer $k$ such that

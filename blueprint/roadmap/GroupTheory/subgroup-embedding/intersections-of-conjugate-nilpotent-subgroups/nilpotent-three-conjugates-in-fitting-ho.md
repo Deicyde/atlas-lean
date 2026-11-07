@@ -1,6 +1,6 @@
 # Three conjugates of a nilpotent subgroup meet inside the Fitting subgroup
 
-**Three conjugates of a nilpotent subgroup meet inside the Fitting subgroup.** For every finite
+For every finite
 group $G$ and every nilpotent subgroup $N$ of $G$ there are $x, y \in G$ with
 $N \cap x N x^{-1} \cap y N y^{-1} \le F(G)$, where $F(G)$ is the Fitting subgroup of $G$.
 

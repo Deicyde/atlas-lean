@@ -1,3 +1,3 @@
 # Variance of the stationary Ornstein–Uhlenbeck process
 
-**Variance of the stationary Ornstein–Uhlenbeck process.** The stationary variance `σ² / (2θ)`.
+The stationary variance `σ² / (2θ)`.

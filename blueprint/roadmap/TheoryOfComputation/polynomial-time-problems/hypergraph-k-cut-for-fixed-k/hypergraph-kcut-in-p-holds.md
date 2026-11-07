@@ -1,6 +1,6 @@
 # Hypergraph $k$-cut for fixed $k$ is in P
 
-**Hypergraph $k$-cut for fixed $k$ is in P.** For every natural number $k$, the decision version
+For every natural number $k$, the decision version
 of hypergraph $k$-cut is in the complexity class P. That problem accepts a hypergraph on the
 vertices $0, \dots, n-1$, given by hyperedges with natural-number costs, and a budget $B$ iff every
 hyperedge lists only vertices below $n$ and some partition of the vertices into $k$ non-empty parts

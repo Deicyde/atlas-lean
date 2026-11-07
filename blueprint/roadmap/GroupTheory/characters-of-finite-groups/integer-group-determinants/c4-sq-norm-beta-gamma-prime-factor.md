@@ -1,6 +1,6 @@
 # A prime factor p ≡ −3 mod 8 of ββ̄γγ̄ in the even case (C₄²)
 
-**A prime factor p ≡ −3 mod 8 of ββ̄γγ̄ in the even case (C₄²).** Let $a$ be an integer-valued
+Let $a$ be an integer-valued
 function on $C_4^2 = \mathbb{Z}/4 \times \mathbb{Z}/4$, with associated integers $b_i$, $c_i$
 $(0 \le i \le 3)$ and Gaussian integers $\beta$, $\gamma$, write $\beta\bar\beta$ and
 $\gamma\bar\gamma$ for the norms of $\beta$ and $\gamma$, and let $P$ be the set of primes

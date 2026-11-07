@@ -1,6 +1,6 @@
 # Ramanujan's identity for $\sum_{k=1}^{n} 1/(n+k)$
 
-**Ramanujan's identity for $\sum_{k=1}^{n} 1/(n+k)$.** For every positive integer $n$,
+For every positive integer $n$,
 
 $$\sum_{k=1}^{n} \frac{1}{n+k} = \frac{n}{2n+1} + \sum_{k=1}^{n} \frac{1}{(2k)^3 - 2k}.$$
 

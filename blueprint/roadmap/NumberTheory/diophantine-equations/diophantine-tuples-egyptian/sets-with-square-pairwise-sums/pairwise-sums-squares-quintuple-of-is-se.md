@@ -1,6 +1,6 @@
 # Five integers with square sums from two semi-magic squares of squares
 
-**Five integers with square sums from two semi-magic squares of squares.** Let $e_{ij}$ and
+Let $e_{ij}$ and
 $f_{ij}$, $1 \le i, j \le 3$, be integers such that the matrices of squares $(e_{ij}^2)$ and
 $(f_{ij}^2)$ are both semi-magic (in each matrix all row sums and all column sums are equal) and
 have the same diagonal, $e_{ii}^2 = f_{ii}^2$ for $i = 1, 2, 3$. Put $a_1 = e_{13}^2$,

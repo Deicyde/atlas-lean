@@ -1,6 +1,6 @@
 # Evaluation of IMP Boolean expressions
 
-**Evaluation of IMP Boolean expressions.** The truth value of a Boolean expression in a
+The truth value of a Boolean expression in a
 state $\sigma : \mathbb{N} \to \mathbb{N}$ is defined by recursion on the expression: the
 constants true and false have values true and false; for arithmetic expressions $a_1$ and $a_2$,
 the comparison $a_1 = a_2$ is true exactly when the values of $a_1$ and $a_2$ in $\sigma$ are

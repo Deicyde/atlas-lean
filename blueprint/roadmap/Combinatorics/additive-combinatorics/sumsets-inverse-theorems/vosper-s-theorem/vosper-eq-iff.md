@@ -1,6 +1,6 @@
 # Vosper's theorem
 
-**Vosper's theorem.** Let $p$ be a prime and let $A$ and $B$ be nonempty subsets of
+Let $p$ be a prime and let $A$ and $B$ be nonempty subsets of
 $\mathbb{Z}/p\mathbb{Z}$ whose sumset $A + B = \{a + b : a \in A, b \in B\}$ is not all of
 $\mathbb{Z}/p\mathbb{Z}$. Then $|A + B| = |A| + |B| - 1$ if and only if one of the following
 holds: (i) $\min(|A|, |B|) = 1$; (ii) $|A + B| = p - 1$ and there is an element

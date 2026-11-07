@@ -1,6 +1,6 @@
 # Ramanujan's distribution relation for the power-difference function
 
-**Ramanujan's distribution relation for the power-difference function.** Let
+Let
 $\varphi : \mathbb{C} \times \mathbb{C} \to \mathbb{C}$, written $(r, x) \mapsto \varphi_r(x)$, be
 such that for every $x \in \mathbb{C}$ the function $r \mapsto \varphi_r(x)$ is meromorphic on
 $\mathbb{C}$, and such that for all $r, x \in \mathbb{C}$ with $\operatorname{Re} r < 0$ the

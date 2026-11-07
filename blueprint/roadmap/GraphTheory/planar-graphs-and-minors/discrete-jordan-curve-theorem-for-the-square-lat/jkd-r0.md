@@ -1,3 +1,3 @@
 # Grid vertex $(0, 0)$
 
-**Grid vertex $(0, 0)$.** The vertex `(0, 0)` of the grid.
+The vertex `(0, 0)` of the grid.

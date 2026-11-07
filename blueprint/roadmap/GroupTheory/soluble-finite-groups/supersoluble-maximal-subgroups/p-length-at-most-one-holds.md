@@ -1,6 +1,6 @@
 # Moretó: soluble groups in Kourovka 19.55 have p-length at most one
 
-**Moretó: soluble groups in Kourovka 19.55 have p-length at most one.** Let $G$ be a finite
+Let $G$ be a finite
 soluble group in which every maximal subgroup $H$ with $\pi(H) = \pi(G)$ is supersoluble, where
 $\pi(X)$ is the set of primes dividing the order of $X$. Then for every prime $p$ the group $G$ has
 $p$-length at most $1$: there are normal subgroups $N \le M$ of $G$ such that $p$ does not divide

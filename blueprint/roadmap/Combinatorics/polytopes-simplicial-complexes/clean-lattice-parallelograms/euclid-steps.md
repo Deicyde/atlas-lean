@@ -1,6 +1,6 @@
 # Number of steps of Euclid's algorithm
 
-**Number of steps of Euclid's algorithm.** For natural numbers $u$ and $v$, the number of
+For natural numbers $u$ and $v$, the number of
 division steps of Euclid's algorithm on $(u, v)$ is $0$ if $v = 0$, and otherwise one more than
 the number of division steps on $(v, u \bmod v)$.
 

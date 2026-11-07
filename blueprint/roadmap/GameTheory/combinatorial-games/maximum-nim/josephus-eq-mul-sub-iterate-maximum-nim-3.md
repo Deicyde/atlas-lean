@@ -1,6 +1,6 @@
 # Logarithmic bounds for the Josephus iteration count
 
-**Logarithmic bounds for the Josephus iteration count.** Let $k \ge 2$ and $n \ge 2$ be
+Let $k \ge 2$ and $n \ge 2$ be
 natural numbers, let $h_k(x) = x + \lfloor x/(k-1) \rfloor + 1$ for natural numbers $x$, write
 $h_k^p$ for the $p$-th iterate of $h_k$, and define the real numbers
 $v = \log n / (\log k - \log(k-1))$ and $w = (\log(n+1) - \log 2) / (\log k - \log(k-1))$,

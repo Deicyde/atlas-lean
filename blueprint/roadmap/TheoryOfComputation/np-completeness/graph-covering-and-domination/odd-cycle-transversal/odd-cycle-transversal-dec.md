@@ -1,6 +1,6 @@
 # ODD CYCLE TRANSVERSAL as a decision problem
 
-**ODD CYCLE TRANSVERSAL as a decision problem.** The decision problem ODD CYCLE TRANSVERSAL
+The decision problem ODD CYCLE TRANSVERSAL
 accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to an
 odd cycle transversal instance $(n, es, K)$ that is well formed and feasible. Well formed means
 that $es$ has no repeated entries and every pair $(u, v)$ in $es$ satisfies $u < n$, $v < n$,

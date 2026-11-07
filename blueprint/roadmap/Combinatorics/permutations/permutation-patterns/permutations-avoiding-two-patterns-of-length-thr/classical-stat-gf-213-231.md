@@ -1,6 +1,6 @@
 # Ten classical statistics over permutations avoiding $213$ and $231$
 
-**Ten classical statistics over permutations avoiding $213$ and $231$.** Let $F$ be the
+Let $F$ be the
 joint generating function of the ten classical statistics over the permutations avoiding both
 patterns $213$ and $231$: a formal power series in $x$ over
 $\mathbb{Q}[p, q, u, v, s, t, y, z, \ell, m]$ in which $x$ marks the length and

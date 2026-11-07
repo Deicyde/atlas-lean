@@ -1,6 +1,6 @@
 # First summands of the anti-Fibonacci construction
 
-**First summands of the anti-Fibonacci construction.** For $n \ge 1$, $A_n$ is the first
+For $n \ge 1$, $A_n$ is the first
 entry of the $n$-th triple $(A_n, B_n, C_n)$ of the anti-Fibonacci construction: $A_1 = 1$, and
 for $n \ge 2$, $A_n$ is the least positive integer that is not among the values $A_k$, $B_k$,
 $C_k$ with $1 \le k < n$. At $n = 0$ the definition gives $A_0 = A_1 = 1$.

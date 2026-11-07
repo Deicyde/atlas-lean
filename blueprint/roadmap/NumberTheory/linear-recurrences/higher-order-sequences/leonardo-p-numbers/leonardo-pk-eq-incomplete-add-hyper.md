@@ -1,6 +1,6 @@
 # Leonardo p-numbers split into incomplete and hyper parts
 
-**Leonardo p-numbers split into incomplete and hyper parts.** For natural numbers $p \ge 1$,
+For natural numbers $p \ge 1$,
 $n > p$ and $k \ge 1$, let $N = n + (p + 1)k$. Then
 
 $$

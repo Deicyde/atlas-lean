@@ -1,6 +1,6 @@
 # P-positions of Slow A-Nim with A = {1, n}, n even
 
-**P-positions of Slow A-Nim with A = {1, n}, n even.** Let $n \ge 1$ be even and let
+Let $n \ge 1$ be even and let
 $A = \{1, n\}$. A position $p = (p_1, \dots, p_n)$ of Slow$A$-Nim on $n$ stacks is a P-position
 if and only if its total number of tokens $p_1 + \dots + p_n$ and its smallest stack
 $\min_i p_i$ are both even.

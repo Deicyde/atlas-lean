@@ -1,6 +1,6 @@
 # Recurrence for the (a, b)-Fibonacci numbers
 
-**Recurrence for the (a, b)-Fibonacci numbers.** For all complex numbers $a$ and $b$ and every
+For all complex numbers $a$ and $b$ and every
 natural number $n$, the $(a,b)$-Fibonacci numbers satisfy
 $F^{a,b}_{n+2} = a F^{a,b}_{n+1} + b F^{a,b}_n$.
 

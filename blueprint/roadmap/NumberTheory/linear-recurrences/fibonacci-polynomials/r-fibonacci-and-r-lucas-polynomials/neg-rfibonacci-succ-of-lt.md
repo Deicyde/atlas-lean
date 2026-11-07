@@ -1,6 +1,6 @@
 # The (-r)-Fibonacci polynomials vanish at indices 2 to r
 
-**The (-r)-Fibonacci polynomials vanish at indices 2 to r.** Let $A$ be a commutative ring,
+Let $A$ be a commutative ring,
 $x \in A$ and $y$ a unit of $A$. For natural numbers $r$ and $n$ with $1 \le n < r$, the
 $(-r)$-Fibonacci polynomial satisfies $U^{(-r)}_{n+1}(x, y) = 0$.
 

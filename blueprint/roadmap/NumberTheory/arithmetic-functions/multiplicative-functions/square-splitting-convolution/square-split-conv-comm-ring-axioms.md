@@ -1,6 +1,6 @@
 # Ring axioms for the square-splitting convolution
 
-**Ring axioms for the square-splitting convolution.** For all complex arithmetic functions
+For all complex arithmetic functions
 $f$, $g$ and $h$, the square-splitting convolution $\star$ satisfies $f \star g = g \star f$,
 $(f \star g) \star h = f \star (g \star h)$, $f \star (g + h) = f \star g + f \star h$ and
 $\varepsilon \star f = f$, where $\varepsilon$ is the arithmetic function with $\varepsilon(1) = 1$

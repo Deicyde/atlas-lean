@@ -1,6 +1,6 @@
 # Piecewise syndetic set
 
-**Piecewise syndetic set.** Let $t \in \mathbb{N}$. A set $A \subseteq \mathbb{N}^t$ is
+Let $t \in \mathbb{N}$. A set $A \subseteq \mathbb{N}^t$ is
 piecewise syndetic if there is $d \in \mathbb{N}$ such that, writing
 $[0, d] = \{0, 1, \dots, d\}$, for every $m \in \mathbb{N}$ the set
 $A + [0, d]^t = \{y + z : y \in A,\ z \in [0, d]^t\}$ contains a lattice cube of side $m$.

@@ -1,6 +1,6 @@
 # Period of a generalized bi-periodic Fibonacci sequence modulo a prime, given the roots
 
-**Period of a generalized bi-periodic Fibonacci sequence modulo a prime, given the roots.** Let
+Let
 $p$ be an odd prime and let $a, b, c, d \in \mathbb{Z}/p\mathbb{Z}$ with $a \ne 0$, $c \ne 0$,
 $d \ne 0$, and $a \ne b$ or $c \ne d$. Let $F : \mathbb{N} \to \mathbb{Z}/p\mathbb{Z}$ satisfy
 $F_0 = 0$, $F_1 = 1$ and, for every $n \ge 2$, $F_n = a F_{n-1} + c F_{n-2}$ if $n$ is even and

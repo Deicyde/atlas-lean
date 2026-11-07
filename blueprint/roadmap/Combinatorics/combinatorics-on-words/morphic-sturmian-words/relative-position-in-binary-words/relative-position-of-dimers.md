@@ -1,6 +1,6 @@
 # Relative positions of a word made of $ab$ and $ba$ blocks
 
-**Relative positions of a word made of $ab$ and $ba$ blocks.** Let
+Let
 $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over $\{a, b\}$ such that every block
 $\ell_{2i} \ell_{2i+1}$ ($i \ge 0$) is $ab$ or $ba$, and let $r$ be its relative position
 function. Then for every $n \ge 1$, $r(n) = 1$ if $\ell_{2n-2} = a$ and $r(n) = -1$ if

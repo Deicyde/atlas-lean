@@ -1,6 +1,6 @@
 # Lucas–Leonardo bracelets
 
-**Lucas–Leonardo bracelets.** For natural numbers $p$ and $n$, the bracelet set $B_{p,n}$
+For natural numbers $p$ and $n$, the bracelet set $B_{p,n}$
 consists of the tilings of a circular $n$-board by curved squares (length $1$), curved $p$-minos
 (length $p + 1$) and at most one curved $p$-tile, which comes in one of $p$ colors and has either
 length $p + 1$, in any of its $p + 1$ phases, or length $l \ge p + 2$, starting at cell $1$; a

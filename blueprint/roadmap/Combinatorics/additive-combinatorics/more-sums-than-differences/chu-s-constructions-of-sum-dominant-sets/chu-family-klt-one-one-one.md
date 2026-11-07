@@ -1,6 +1,6 @@
 # The Kumar–Mohan–Pandey set $A_{1,1,1}$
 
-**The Kumar–Mohan–Pandey set $A_{1,1,1}$.** For $k = l = t = 1$, the Kumar–Mohan–Pandey set
+For $k = l = t = 1$, the Kumar–Mohan–Pandey set
 $A_{1,1,1}$, the set of partial sums starting from $0$ of the sequence
 $1, 1, 2, 1, 4, 3, 1, 1, 2, 1$, is $\{0, 1, 2, 4, 5, 9, 12, 13, 14, 16, 17\}$.
 

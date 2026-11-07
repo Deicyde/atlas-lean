@@ -1,6 +1,6 @@
 # BALANCED BICLIQUE is NP-complete
 
-**BALANCED BICLIQUE is NP-complete.** The decision problem BALANCED BICLIQUE belongs to NP,
+The decision problem BALANCED BICLIQUE belongs to NP,
 and every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Cost-counted FIND auxiliary
 
-**Cost-counted FIND auxiliary.** For a union-find structure $S$ with node array $A$ and a
+For a union-find structure $S$ with node array $A$ and a
 node $x < |S|$, this is the recursive path-compression routine of FIND, paired with a cost in
 $\mathbb{N} \times \mathbb{N}$. It charges $(1, 0)$ for testing whether $x$ is a root. If the
 parent $y$ of $x$ in $A$ equals $x$, it returns $A$ and the root $x$. Otherwise it runs on $y$,

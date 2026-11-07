@@ -1,6 +1,6 @@
 # Partial-quotient lower bound for rational approximation
 
-**Partial-quotient lower bound for rational approximation.** Let $\gamma$ be an irrational real
+Let $\gamma$ be an irrational real
 number with continued fraction $[a_0; a_1, a_2, \dots]$, so that $a_0 = \lfloor \gamma \rfloor$,
 and let $q_0 = 1, q_1, q_2, \dots$ be the denominators of its convergents. Let $M \ge 1$ and
 $N \ge 0$ be integers with $q_N \le M < q_{N+1}$, and let $A$ be a real number with $a_i \le A$

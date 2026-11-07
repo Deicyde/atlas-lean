@@ -1,6 +1,6 @@
 # Number of regions cut out of the plane
 
-**Number of regions cut out of the plane.** For a set $K \subseteq \mathbb{R}^2$ of cuts, the
+For a set $K \subseteq \mathbb{R}^2$ of cuts, the
 number of regions into which $K$ divides the plane is the number of connected components of the
 complement $\mathbb{R}^2 \setminus K$, or $0$ if there are infinitely many components.
 

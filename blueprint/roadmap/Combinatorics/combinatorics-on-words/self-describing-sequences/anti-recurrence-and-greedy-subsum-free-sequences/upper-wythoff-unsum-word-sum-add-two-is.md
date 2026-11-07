@@ -1,6 +1,6 @@
 # Digit sums between markers are two less than Fibonacci numbers
 
-**Digit sums between markers are two less than Fibonacci numbers.** For every $j$, the digit
+For every $j$, the digit
 sum of the $j$-th word between markers of the unsum gap sequence, plus $2$, is a Fibonacci
 number: it equals $F_m$ for some natural number $m$.
 

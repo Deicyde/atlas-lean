@@ -1,6 +1,6 @@
 # Power-equation type does not characterize almost simple groups
 
-**Power-equation type does not characterize almost simple groups.** There exist finite
+There exist finite
 groups $G$ and $H$ such that $G$ is almost simple, $G$ and $H$ have the same power-equation type,
 and $G$ is not isomorphic to $H$. That is, the conjecture of Kourovka Problem 21.134(b) is false.
 

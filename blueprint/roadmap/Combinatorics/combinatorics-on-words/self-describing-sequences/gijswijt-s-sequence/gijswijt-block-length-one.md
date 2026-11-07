@@ -1,6 +1,6 @@
 # The first block has length one
 
-**The first block has length one.** For every natural number $m$, the first block length
+For every natural number $m$, the first block length
 $\beta^{(m)}(1)$ of the $m$th order Gijswijt sequence equals $1$.
 
 ## Sources

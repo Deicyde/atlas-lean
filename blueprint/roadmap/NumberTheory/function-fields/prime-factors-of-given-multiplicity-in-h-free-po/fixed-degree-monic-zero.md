@@ -1,6 +1,6 @@
 # The only monic polynomial of degree zero
 
-**The only monic polynomial of degree zero.** For every finite field $F$, the set $M_0$ of monic
+For every finite field $F$, the set $M_0$ of monic
 polynomials of degree $0$ over $F$ is $\{1\}$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Factorization and determinant of shifted Stirling matrices
 
-**Factorization and determinant of shifted Stirling matrices.** For natural numbers $m$ and
+For natural numbers $m$ and
 $n$, let $S(n)$ and $S^{[m]}(n)$ be the $n \times n$ rational matrices with entries $S(i, j)$ and
 $S(i + m, j)$, where $S(i, j)$ denotes the Stirling numbers of the second kind, and let $V(n)$ be
 the upper bidiagonal matrix with $V(n)_{i,i} = i$, $V(n)_{i,i+1} = 1$ and all other entries $0$,

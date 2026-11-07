@@ -1,6 +1,6 @@
 # Profiles with Latin-square men's preferences, counted by soulmate pairs
 
-**Profiles with Latin-square men's preferences, counted by soulmate pairs.** For all
+For all
 $n, k \in \mathbb{N}$, the number of preference profiles of $n$ men and $n$ women in which, for
 every position $r$, different men rank different women at position $r$ (the men's rankings form
 a Latin square), and which have exactly $k$ soulmate pairs, is

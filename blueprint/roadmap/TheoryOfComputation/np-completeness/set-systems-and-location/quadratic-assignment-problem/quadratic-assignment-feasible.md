@@ -1,6 +1,6 @@
 # Feasible quadratic assignment instances
 
-**Feasible quadratic assignment instances.** An instance $(n, F, D, K)$ of quadratic
+An instance $(n, F, D, K)$ of quadratic
 assignment is feasible when there is a permutation $\pi$ of the numbers $0, \dots, n - 1$ such
 that
 

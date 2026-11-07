@@ -1,6 +1,6 @@
 # Mansour–Sun formula for colored Dyck paths
 
-**Mansour–Sun formula for colored Dyck paths.** Let $\gamma = (\gamma_1, \gamma_2, \dots)$ be
+Let $\gamma = (\gamma_1, \gamma_2, \dots)$ be
 a sequence of natural numbers and let $d_{n,k}(\gamma)$ be the number of Dyck paths of semilength
 $n$ with $k$ peaks in which each block $UD^j$, formed by a peak and the maximal run of $D$ steps
 starting at its $D$, carries one of $\gamma_j$ colors. For every natural number $n \ge 1$ and

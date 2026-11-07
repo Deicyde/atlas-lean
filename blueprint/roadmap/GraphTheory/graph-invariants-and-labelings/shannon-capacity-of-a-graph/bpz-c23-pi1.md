@@ -1,6 +1,6 @@
 # Buys–Polak–Zuiddam one-block profile for the 23-cycle
 
-**Buys–Polak–Zuiddam one-block profile for the 23-cycle.** This is the Buys–Polak–Zuiddam
+This is the Buys–Polak–Zuiddam
 (BPZ) profile whose code, pairs, auxiliary and neutral coordinates are $16466$, $30$,
 $16466$ and $16323$.
 

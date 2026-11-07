@@ -1,6 +1,6 @@
 # Joint recurrence for $\mathcal{M}_1$ and its nested companion
 
-**Joint recurrence for $\mathcal{M}_1$ and its nested companion.** Read the values of the
+Read the values of the
 meta-automatic sequence $\mathcal{M}_1$ as $0$ and $1$, write $\oplus$ for addition modulo $2$,
 and let $b(m) = \mathcal{M}_1(2m + 1 - \mathcal{M}_1(m))$ for every $m \in \mathbb{N}$. Then for
 every $n \ge 1$, with $x = \mathcal{M}_1(n)$ and $y = b(n)$, the pairs

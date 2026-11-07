@@ -1,6 +1,6 @@
 # Heap commands
 
-**Heap commands.** Heap commands extend the commands of IMP with heap operations. A heap
+Heap commands extend the commands of IMP with heap operations. A heap
 command is one of: $\mathbf{skip}$; an assignment $x := a$; a sequence $c_1; c_2$; a
 conditional $\mathbf{if}\ b\ \mathbf{then}\ c_1\ \mathbf{else}\ c_2$; a loop
 $\mathbf{while}\ b\ \mathbf{do}\ c$; a heap read $x := [a]$; a heap write $[a] := e$; an

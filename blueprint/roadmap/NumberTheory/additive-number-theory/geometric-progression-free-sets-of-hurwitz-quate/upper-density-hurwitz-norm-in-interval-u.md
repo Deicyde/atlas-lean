@@ -1,6 +1,6 @@
 # Upper density of Hurwitz quaternions with norms in a lacunary union of intervals
 
-**Upper density of Hurwitz quaternions with norms in a lacunary union of intervals.** Let
+Let
 $Q_{\mathrm{Hur}}$ be the set of Hurwitz quaternions, the rational quaternions whose four
 coordinates are all integers or all lie in $\mathbb{Z} + \tfrac12$, and let $\mathrm{Nm}(q)$ be
 the sum of the squares of the coordinates of $q$. For $N \in \mathbb{N}$ let $S(N)$ be the set of

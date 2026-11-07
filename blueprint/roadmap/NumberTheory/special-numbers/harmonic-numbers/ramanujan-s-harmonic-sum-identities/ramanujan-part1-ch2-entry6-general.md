@@ -1,6 +1,6 @@
 # Ramanujan's harmonic sum identity (Entry 6, general form)
 
-**Ramanujan's harmonic sum identity (Entry 6, general form).** For all natural numbers $n$
+For all natural numbers $n$
 and $r$, the following identity holds in $\mathbb{Q}$:
 
 $$

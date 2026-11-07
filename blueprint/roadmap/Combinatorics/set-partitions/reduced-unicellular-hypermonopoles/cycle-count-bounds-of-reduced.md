@@ -1,6 +1,6 @@
 # Cycle count of a fixed-point-free permutation
 
-**Cycle count of a fixed-point-free permutation.** Let $n \ge 1$ and let $\alpha$ be a
+Let $n \ge 1$ and let $\alpha$ be a
 permutation of $\{0, 1, \dots, n - 1\}$ with no fixed point. Then the number $z(\alpha)$ of
 cycles of $\alpha$ satisfies $1 \le z(\alpha)$ and $2 z(\alpha) \le n$.
 

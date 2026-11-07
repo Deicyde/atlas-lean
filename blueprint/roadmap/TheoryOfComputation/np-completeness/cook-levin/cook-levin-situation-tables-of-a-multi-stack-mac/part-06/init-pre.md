@@ -1,6 +1,6 @@
 # Prefix clauses of the init family
 
-**Prefix clauses of the init family.** Let $E$ be an encoding of a machine $M$, let $x$ be a
+Let $E$ be an encoding of a machine $M$, let $x$ be a
 list of symbols of the input stack of $M$, and let $m, T, H$ be natural numbers. For a depth $j$,
 write $Z_j$ for the cell variable of row $0$, input stack, depth $j$ and code $0$ (the empty cell)
 in the layout of $E$ at height $H$. The prefix clauses form the CNF formula that lists, for

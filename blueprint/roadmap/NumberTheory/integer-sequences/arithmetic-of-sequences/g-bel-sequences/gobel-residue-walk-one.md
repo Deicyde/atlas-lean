@@ -1,6 +1,6 @@
 # Initial value of the residue walk
 
-**Initial value of the residue walk.** For all natural numbers $p$ and $l$, the residue walk
+For all natural numbers $p$ and $l$, the residue walk
 $\tilde g_l$ of $p$ starting at $l$ satisfies $\tilde g_l(1) = l$.
 
 ## Sources

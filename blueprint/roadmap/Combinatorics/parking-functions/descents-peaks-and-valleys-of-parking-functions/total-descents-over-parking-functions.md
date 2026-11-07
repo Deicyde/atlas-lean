@@ -1,6 +1,6 @@
 # Total number of descents over parking functions
 
-**Total number of descents over parking functions.** Let $n$ be a natural number. A descent of
+Let $n$ be a natural number. A descent of
 a function $f \colon \{0, \dots, n-1\} \to \{0, \dots, n-1\}$ is an index $i$ with $i + 1 < n$
 and $f(i) > f(i+1)$. Summed over all parking functions
 $f \colon \{0, \dots, n-1\} \to \{0, \dots, n-1\}$ of length $n$, the number of descents is

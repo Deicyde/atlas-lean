@@ -1,6 +1,6 @@
 # Lüroth map
 
-**Lüroth map.** For a real number $x$ with first Lüroth digit $d = d_1(x)$, the Lüroth
+For a real number $x$ with first Lüroth digit $d = d_1(x)$, the Lüroth
 map is $L(x) = d(d - 1)x - (d - 1)$.
 
 ## Sources

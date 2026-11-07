@@ -1,6 +1,6 @@
 # The $h$-full prime sum $\sum_P b_P$
 
-**The $h$-full prime sum $\sum_P b_P$.** Let $F$ be a finite field with $q$ elements, let
+Let $F$ be a finite field with $q$ elements, let
 $h, k, j \in \mathbb{N}$ and $\xi \in \mathbb{C}$, and let $\rho = q^{1/h}\xi^j$ be the pole
 parameter, where $q^{1/h}$ is a real power whose exponent $1/h$ is read as $0$ when $h = 0$.
 For a monic irreducible polynomial $P$ over $F$ put $|P| = q^{\deg P}$,

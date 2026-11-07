@@ -1,6 +1,5 @@
 # Digamma evaluation of the $(2n+1)$-weighted Catalan series with binomial denominators
 
-**Digamma evaluation of the $(2n+1)$-weighted Catalan series with binomial denominators.**
 Let $C_n$ be the $n$-th Catalan number and $\psi$ the digamma function, and for complex $z$ write
 $\binom{n+z}{n} = \prod_{j=1}^{n} (z+j)/j$. For every complex number $z$ with
 $\operatorname{Re} z > 1/2$,

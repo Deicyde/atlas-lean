@@ -1,6 +1,6 @@
 # Parikh image of a language
 
-**Parikh image of a language.** The Parikh image of a language: the set of Parikh vectors of its
+The Parikh image of a language: the set of Parikh vectors of its
 words.
 
 ## Sources

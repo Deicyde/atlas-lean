@@ -1,6 +1,6 @@
 # The 3-dissection of $1/f_1^3$
 
-**The 3-dissection of $1/f_1^3$.** For $k \ge 1$ let $f_k = \prod_{m \ge 1} (1 - q^{km})$ be
+For $k \ge 1$ let $f_k = \prod_{m \ge 1} (1 - q^{km})$ be
 the Euler product, an integer power series in $q$. Then
 
 $$

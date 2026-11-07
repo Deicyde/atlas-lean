@@ -1,6 +1,6 @@
 # Wieferich's criterion for the first case of Fermat's Last Theorem
 
-**Wieferich's criterion for the first case of Fermat's Last Theorem.** Let $p$ be a prime
+Let $p$ be a prime
 that is not a Wieferich prime, that is, $p^2 \nmid 2^{p-1} - 1$. Then there are no integers
 $x, y, z$ with $p \nmid xyz$ and $x^p + y^p = z^p$.
 

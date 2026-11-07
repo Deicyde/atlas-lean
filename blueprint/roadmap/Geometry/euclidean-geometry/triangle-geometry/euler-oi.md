@@ -1,6 +1,6 @@
 # Euler's theorem on the circumcenter–incenter distance
 
-**Euler's theorem on the circumcenter–incenter distance.** Let $P_0, P_1, P_2$ be affinely
+Let $P_0, P_1, P_2$ be affinely
 independent points of the Euclidean plane, $d$ the Euclidean distance and $\langle x, y \rangle$
 the inner product. Let $O$ be a point and $R \ge 0$ with $d(O, P_i) = R$ for each $i$, so that
 $O$ is the circumcenter and $R$ the circumradius. Let $I = w_0 P_0 + w_1 P_1 + w_2 P_2$ with

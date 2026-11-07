@@ -1,6 +1,6 @@
 # A monoid basis does not contain zero
 
-**A monoid basis does not contain zero.** Let $\alpha$ be an additive commutative monoid and
+Let $\alpha$ be an additive commutative monoid and
 let $M$ and $B$ be subsets of $\alpha$. If $B$ is a basis of $M$, then $0 \notin B$.
 
 ## Sources

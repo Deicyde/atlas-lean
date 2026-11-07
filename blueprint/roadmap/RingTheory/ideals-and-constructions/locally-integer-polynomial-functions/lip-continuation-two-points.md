@@ -1,6 +1,6 @@
 # LIP continuation at two points
 
-**LIP continuation at two points.** Let $f : \mathbb{Z} \to \mathbb{Z}$, and for a finite set
+Let $f : \mathbb{Z} \to \mathbb{Z}$, and for a finite set
 $Y \subseteq \mathbb{Z}$ write $f_Y \in \mathbb{Q}[x]$ for the interpolation polynomial of $f$ on
 $Y$. For $S \subseteq \mathbb{Z}$ write $\mathrm{LIP}(S)$ for the ring of locally integer
 polynomial functions on $S$: the functions $S \to \mathbb{Z}$ whose restriction to every finite

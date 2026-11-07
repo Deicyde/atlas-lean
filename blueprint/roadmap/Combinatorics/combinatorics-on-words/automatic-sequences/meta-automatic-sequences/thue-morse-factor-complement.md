@@ -1,6 +1,6 @@
 # Factors of the Thue–Morse word are closed under complement
 
-**Factors of the Thue–Morse word are closed under complement.** For every natural number
+For every natural number
 $n$, if a binary word $v$ of length $n$ is a factor of the Thue–Morse sequence, then so is the
 word obtained from $v$ by exchanging $0$ and $1$ in every position.
 

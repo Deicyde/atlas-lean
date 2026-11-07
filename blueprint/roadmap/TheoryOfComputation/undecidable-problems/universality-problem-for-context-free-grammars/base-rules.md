@@ -1,6 +1,6 @@
 # Domino-independent productions of the universality grammar
 
-**Domino-independent productions of the universality grammar.** For a finite alphabet
+For a finite alphabet
 $\alpha$ and $k \in \mathbb{N}$, this is a list of productions whose nonterminals $N_0, N_1, \dots$
 are encoded as natural numbers and whose terminals are the letters $a \in \alpha$ and the two bits
 $\mathbf{t}$ (true) and $\mathbf{f}$ (false). Writing $c(i) = \mathbf{t}\,\mathbf{f}^i$ for the

@@ -1,6 +1,6 @@
 # Unique winning first move
 
-**Unique winning first move.** For every $n$, if the state consisting of $n$ copies of $F_1$
+For every $n$, if the state consisting of $n$ copies of $F_1$
 is winning, then exactly one state reachable from it in one move is losing: when the first
 player has a winning strategy in the game on $n$, exactly one first move preserves it.
 

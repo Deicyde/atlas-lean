@@ -1,6 +1,6 @@
 # Feuerbach's theorem
 
-**Feuerbach's theorem.** Let $T$ be a triangle in a two-dimensional Euclidean affine space,
+Let $T$ be a triangle in a two-dimensional Euclidean affine space,
 with incircle $\omega$, nine-point circle $N$, and excircle $\omega_i$ opposite its $i$-th vertex
 for each $i$. If $T$ is not equilateral, then there is a point $F$ at which $\omega$ is internally
 tangent to $N$ (that is, $F$ lies on both circles and the center of $\omega$ lies on the segment

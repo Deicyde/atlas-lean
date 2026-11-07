@@ -1,6 +1,6 @@
 # The post-stopping-time sequence is a.e. measurable
 
-**The post-stopping-time sequence is a.e. measurable.** Let $\mu$ be a measure on a measurable
+Let $\mu$ be a measure on a measurable
 space $\Omega$, let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration on $\Omega$, let
 $X_0, X_1, X_2, \dots$ be maps from $\Omega$ to a measurable space $S$ that are each
 $\mu$-almost-everywhere measurable, and let $T : \Omega \to \mathbb{N}$ be a stopping time for

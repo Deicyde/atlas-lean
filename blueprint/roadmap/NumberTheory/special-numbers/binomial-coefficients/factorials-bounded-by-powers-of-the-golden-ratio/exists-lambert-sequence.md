@@ -1,6 +1,6 @@
 # Existence of the Lambert sequences
 
-**Existence of the Lambert sequences.** Let $h(y) = y e^y$ be the Lambert map. For every
+Let $h(y) = y e^y$ be the Lambert map. For every
 natural number $n \ge 4$ and every real number $c$ with $0 < c \le 1$ there is a real number
 $a \ge n - 1$ with
 

@@ -1,6 +1,6 @@
 # Lovász's weak perfect graph theorem
 
-**Lovász's weak perfect graph theorem.** A finite simple graph $G$ is perfect if and only if
+A finite simple graph $G$ is perfect if and only if
 its complement $\overline{G}$ is perfect.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Valley heights
 
-**Valley heights.** For a finite sequence $l$ of up steps $U$ and down steps $D$, the valley
+For a finite sequence $l$ of up steps $U$ and down steps $D$, the valley
 heights of $l$ form the list with one entry for each factor $DU$ of $l$, from left to right:
 the number of $U$ steps minus the number of $D$ steps in $l$ up to and including the $D$ of
 that factor, taken to be $0$ when negative.

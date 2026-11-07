@@ -1,6 +1,6 @@
 # Solvability from one-variable factorizations of the Eulerian polynomial
 
-**Solvability from one-variable factorizations of the Eulerian polynomial.** Let $G$ be a finite
+Let $G$ be a finite
 group and let $\varphi$ be an Eulerian function of $G$, with values in the integer polynomial ring
 $\mathbb{Z}[x_0, x_1, \dots]$. If there are a finite set $S$ of primes and, for each $q \in S$, an
 integer polynomial $P_q$ involving no variable other than $x_q$, such that the Eulerian polynomial

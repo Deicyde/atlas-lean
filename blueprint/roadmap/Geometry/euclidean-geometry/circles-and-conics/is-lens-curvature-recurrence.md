@@ -1,6 +1,6 @@
 # Lens curvature recurrence
 
-**Lens curvature recurrence.** For real numbers $K$ and $A$, a real sequence
+For real numbers $K$ and $A$, a real sequence
 $(b_n)_{n \ge 0}$ satisfies the lens curvature recurrence with parameters $K$ and $A$ when
 $1 + K \neq 0$ and, for every $n \ge 0$,
 

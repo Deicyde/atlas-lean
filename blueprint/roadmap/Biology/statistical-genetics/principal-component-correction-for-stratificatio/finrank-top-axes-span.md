@@ -1,3 +1,3 @@
 # Dimension of the span of the top axes
 
-**Dimension of the span of the top axes.** The top `K` axes span a `K`-dimensional subspace.
+The top `K` axes span a `K`-dimensional subspace.

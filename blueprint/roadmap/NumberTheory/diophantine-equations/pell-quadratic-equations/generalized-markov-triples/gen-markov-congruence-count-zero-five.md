@@ -1,6 +1,6 @@
 # The congruence $x^2 + 1 \equiv 0 \pmod 5$ has two solutions
 
-**The congruence $x^2 + 1 \equiv 0 \pmod 5$ has two solutions.** Exactly two integers $x$
+Exactly two integers $x$
 with $0 \le x < 5$ satisfy $x^2 + 1 \equiv 0 \pmod 5$.
 
 They are $x = 2$ and $x = 3$.

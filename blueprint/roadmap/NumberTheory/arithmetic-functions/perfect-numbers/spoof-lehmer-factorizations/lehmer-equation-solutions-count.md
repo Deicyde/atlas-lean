@@ -1,6 +1,6 @@
 # Solutions of the Lehmer equation with at most six variables
 
-**Solutions of the Lehmer equation with at most six variables.** Call a finite multiset
+Call a finite multiset
 $\{x_1, \dots, x_r\}$ of natural numbers a solution of the Lehmer equation if $x_i \ge 2$ for
 every $i$ and $k (x_1 - 1) \cdots (x_r - 1) = x_1 \cdots x_r - 1$ for some integer $k > 0$.
 There are exactly $76$ solutions with $2 \le r \le 6$ (counted over all such $r$ together).

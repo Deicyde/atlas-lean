@@ -1,6 +1,6 @@
 # Lehmer's companion sequence for $R = 2$ and $Q = -1$
 
-**Lehmer's companion sequence for $R = 2$ and $Q = -1$.** For $R = 2$ and $Q = -1$, Lehmer's
+For $R = 2$ and $Q = -1$, Lehmer's
 companion sequence has $\bar V_2(2, -1) = 4$, $\bar V_4(2, -1) = 14$ and
 $\bar V_8(2, -1) = 194$.
 

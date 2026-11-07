@@ -1,6 +1,6 @@
 # Formula and recurrence for Schreier-type multisets
 
-**Formula and recurrence for Schreier-type multisets.** Let $s, p \ge 1$, and for $n \ge 1$
+Let $s, p \ge 1$, and for $n \ge 1$
 let $|A^{(s)}_{p,n}|$ be the number of distinct sub-multisets $F$ of
 $\{1^s, \dots, (n - 1)^s, n\}$ with $n \in F$ and $\min F \ge p|F|$, where $|F|$ counts
 multiplicity. For $1 \le n \le sp + 1$,

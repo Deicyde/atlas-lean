@@ -1,6 +1,6 @@
 # Generating function for $\ell$-regular cubic partitions with odd parts overlined
 
-**Generating function for $\ell$-regular cubic partitions with odd parts overlined.** Let
+Let
 $\ell \ge 1$, write $f_k = \prod_{m \ge 1} (1 - q^{km})$ for the Euler products in the ring of
 integer power series in $q$, and let $a_\ell(n)$ be the $n$th coefficient of
 $f_2 f_\ell^2 f_{4\ell} / (f_1^2 f_4 f_{2\ell})$ (the denominator has constant term $1$, so it

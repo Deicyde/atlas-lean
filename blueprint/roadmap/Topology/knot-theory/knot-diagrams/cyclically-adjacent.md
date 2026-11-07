@@ -1,6 +1,6 @@
 # Cyclically adjacent crossing preimages
 
-**Cyclically adjacent crossing preimages.** Let $L$ be an oriented labeled parametrized link,
+Let $L$ be an oriented labeled parametrized link,
 with each component parametrized by $t \in [0, 2\pi)$. Two distinct parameter points $a$ and $b$
 of $L$ on the same component are cyclically adjacent, in this order, when both are crossing
 preimages (they project to double points of the standard projection) and no crossing preimage on

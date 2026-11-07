@@ -1,6 +1,6 @@
 # Inverse theorem for the extremal restricted signed sumset of positive integers
 
-**Inverse theorem for the extremal restricted signed sumset of positive integers.** Let $h$
+Let $h$
 and $k$ be natural numbers with $4 \le h \le k - 1$, and let
 $A = \{a_1 < a_2 < \cdots < a_k\}$ be a set of $k$ positive integers. Write
 $A_{h+1} = \{a_1, \dots, a_{h+1}\}$, $A' = \{a_2, \dots, a_k\}$ and $-A' = \{-x : x \in A'\}$.

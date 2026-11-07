@@ -1,6 +1,6 @@
 # Raw Jacobi theta function $\theta_1$
 
-**Raw Jacobi theta function $\theta_1$.** For complex numbers $z$ and $\tau$, the raw Jacobi
+For complex numbers $z$ and $\tau$, the raw Jacobi
 theta function is
 
 $$\theta_1(z \mid \tau) = 2 \sum_{n=0}^{\infty} (-1)^n e^{\pi i \tau (2n+1)^2/4} \sin((2n+1) z)$$

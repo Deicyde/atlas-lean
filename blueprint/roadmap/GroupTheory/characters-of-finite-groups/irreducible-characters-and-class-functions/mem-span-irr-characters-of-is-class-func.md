@@ -1,6 +1,6 @@
 # Irreducible characters span the class functions
 
-**Irreducible characters span the class functions.** Let $G$ be a finite group and let
+Let $G$ be a finite group and let
 $f : G \to \mathbb{C}$ satisfy $f(hgh^{-1}) = f(g)$ for all $g, h \in G$. Then $f$ is a
 $\mathbb{C}$-linear combination of irreducible complex characters of $G$, that is, of functions
 $G \to \mathbb{C}$ that are the character of some simple finite-dimensional complex representation

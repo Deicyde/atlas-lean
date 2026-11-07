@@ -1,6 +1,6 @@
 # A single-tape machine halts iff its start word rewrites to the halting word
 
-**A single-tape machine halts iff its start word rewrites to the halting word.** Let $M$ be a
+Let $M$ be a
 single-tape machine with finite tape alphabet and finite set of states, and write $\vdash$ and
 $\dashv$ for the left and right end markers and $H$ for the halting symbol. For every input word
 $l$, $M$ halts on $l$ if and only if the start word ${\vdash}\,q_0\,h\,R\,{\dashv}$ of $l$

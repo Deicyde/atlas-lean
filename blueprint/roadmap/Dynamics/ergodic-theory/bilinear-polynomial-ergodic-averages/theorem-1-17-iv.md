@@ -1,6 +1,6 @@
 # Long variational inequality for bilinear polynomial averages
 
-**Long variational inequality for bilinear polynomial averages.** Let $(X, \mu)$ be a
+Let $(X, \mu)$ be a
 $\sigma$-finite measure space and let $T : X \to X$ be a measurable bijection with measurable
 inverse that preserves $\mu$. Let $P \in \mathbb{Z}[t]$ have degree at least $2$, and let
 $p_1, p_2 \in (1, \infty)$ and $p \in [0, \infty]$ satisfy $p_1^{-1} + p_2^{-1} = p^{-1}$ and

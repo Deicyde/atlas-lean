@@ -1,6 +1,6 @@
 # Restricted combinations counted by compositions
 
-**Restricted combinations counted by compositions.** Let $Q$ be a finite set of natural
+Let $Q$ be a finite set of natural
 numbers whose largest element $q$ is positive, and let $S^Q_n$ be the number of subsets of
 $\{1, \dots, n\}$ in which no two elements differ by an element of $Q$. Then the following are
 equivalent: (i) there is a finite set $A$ of natural numbers such that, for every $n \ge 0$,

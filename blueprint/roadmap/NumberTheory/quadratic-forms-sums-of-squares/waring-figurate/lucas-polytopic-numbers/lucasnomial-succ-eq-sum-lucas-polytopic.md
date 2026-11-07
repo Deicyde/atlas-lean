@@ -1,6 +1,6 @@
 # Sum formula for Lucasnomial coefficients
 
-**Sum formula for Lucasnomial coefficients.** Let $(s, t)$ be nondegenerate Lucas parameters,
+Let $(s, t)$ be nondegenerate Lucas parameters,
 with Lucasnomial coefficients $\binom{n}{k}_{s,t}$, and let $\varphi$ and $\varphi'$ be real
 numbers with $\varphi + \varphi' = s$ and $\varphi \varphi' = -t$. For all natural numbers
 $n \ge 1$ and $d$,

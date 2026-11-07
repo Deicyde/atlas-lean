@@ -1,6 +1,6 @@
 # Continuous Turán number in $\mathbb{R}^d$
 
-**Continuous Turán number in $\mathbb{R}^d$.** For a natural number $d$, a real number $n$
+For a natural number $d$, a real number $n$
 and a set $P \subseteq \mathbb{R}^d$, the continuous Turán number $\mathrm{opx}(n, P, d)$ is the
 supremum of the $d$-dimensional Lebesgue measures $\mu_d(S)$ over all open sets
 $S \subseteq [0, n]^d$ that do not contain $P$ in the sense of containment of point sets in

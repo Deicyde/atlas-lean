@@ -1,6 +1,6 @@
 # Stănică's bounds for the binomial coefficient $\binom{mn}{rn}$
 
-**Stănică's bounds for the binomial coefficient $\binom{mn}{rn}$.** Let $m$, $n$ and $r$ be
+Let $m$, $n$ and $r$ be
 natural numbers with $1 \le r < m$ and $n \ge 1$, and put
 
 $$B = \frac{m^{mn + 1/2}}{(m-r)^{(m-r)n + 1/2}\, r^{rn + 1/2}}.$$

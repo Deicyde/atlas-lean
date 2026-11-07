@@ -1,6 +1,6 @@
 # Flag $f$-vector
 
-**Flag $f$-vector.** Let $P$ be a finite partially ordered set with a grade function
+Let $P$ be a finite partially ordered set with a grade function
 $\rho \colon P \to \mathbb{Z}_{\ge 0}$, that is, $\rho(s) < \rho(t)$ whenever $s < t$,
 $\rho(t) = \rho(s) + 1$ whenever $t$ covers $s$ (that is, $s < t$ and no $u \in P$ satisfies
 $s < u < t$), and $\rho(t) = 0$ whenever $t$ is minimal. For a finite set

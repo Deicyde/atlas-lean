@@ -1,6 +1,6 @@
 # Two distinct $\ell^\infty$ unit vectors in $\mathbb{R}^2$ with a unit midpoint
 
-**Two distinct $\ell^\infty$ unit vectors in $\mathbb{R}^2$ with a unit midpoint.** In
+In
 $\mathbb{R}^2$ with the $\ell^\infty$ norm there exist vectors $x \neq y$ with
 $\|x\| = \|y\| = 1$ and $\|\tfrac{1}{2} (x + y)\| = 1$.
 

@@ -1,6 +1,6 @@
 # Token-list encoding of linear μ-calculus formulas
 
-**Token-list encoding of linear μ-calculus formulas.** A polynomial-size token-list encoding of linear μ-calculus formulas over
+A polynomial-size token-list encoding of linear μ-calculus formulas over
 `ℕ` atoms, used for the complexity statements in `WantedExt`. Each connective
 contributes one tag token (`Nat.pair` of a small tag with `0`), and each atom
 or variable contributes one token `Nat.pair tag value`, whose binary size is

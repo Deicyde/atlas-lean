@@ -1,6 +1,6 @@
 # Two generators with one prescribed give principal quotients
 
-**Two generators with one prescribed give principal quotients.** Let $A$ be an integral
+Let $A$ be an integral
 domain such that for every nonzero ideal $I$ of $A$ and every nonzero $a \in I$ there is $b \in A$
 with $I = (a, b)$. Then for every nonzero ideal $I$ of $A$, the quotient ring $A/I$ is a
 principal ideal ring.

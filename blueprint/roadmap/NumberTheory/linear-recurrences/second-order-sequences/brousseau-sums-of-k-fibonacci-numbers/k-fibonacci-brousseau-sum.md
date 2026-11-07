@@ -1,6 +1,6 @@
 # Brousseau sums of $k$-Fibonacci numbers
 
-**Brousseau sums of $k$-Fibonacci numbers.** For an integer $k$, let $F_{k,n}$ be the
+For an integer $k$, let $F_{k,n}$ be the
 $k$-Fibonacci numbers, the Lucas sequence $U(k, -1)$ ($F_{k,0} = 0$, $F_{k,1} = 1$,
 $F_{k,n+2} = k F_{k,n+1} + F_{k,n}$), and let $C_k^{(p)}$ be the coefficient polynomials. For
 every nonzero integer $k$ and all $n, p \ge 0$,

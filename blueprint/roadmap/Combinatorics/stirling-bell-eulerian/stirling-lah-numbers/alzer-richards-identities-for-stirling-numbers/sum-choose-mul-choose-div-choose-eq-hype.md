@@ -1,6 +1,6 @@
 # The Alzer–Richards binomial sum as a ${}_3F_2$ series
 
-**The Alzer–Richards binomial sum as a ${}_3F_2$ series.** Let $m \ge 1$ be an integer and
+Let $m \ge 1$ be an integer and
 let $p, x$ be complex numbers with $p \ne -j$ and $x \ne -j$ for every integer $j$ with
 $1 \le j \le \lfloor m/2 \rfloor$. Write $\binom{z}{k} = z(z-1)\cdots(z-k+1)/k!$ for complex $z$
 and $(z)_n = z(z+1)\cdots(z+n-1)$ for the rising factorial. Then

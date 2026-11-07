@@ -1,6 +1,6 @@
 # Riemann Hypothesis bounds for $R_h(n)$ and $R_h^{-1}(k)$
 
-**Riemann Hypothesis bounds for $R_h(n)$ and $R_h^{-1}(k)$.** Assume the Riemann Hypothesis
+Assume the Riemann Hypothesis
 and let $h \ge 2$. Write $R_h(n)$ for the largest size of a $B_h$-set contained in
 $\{1, \dots, n\}$, with $R_h(0) = 0$ (a $B_h$-set is nonempty), and $R_h^{-1}(k)$ for the least
 $n$ such that $\{1, \dots, n\}$ contains a $B_h$-set with $k$ elements, and let $\log$ be the

@@ -1,6 +1,6 @@
 # Two identities for the 5-core counts
 
-**Two identities for the 5-core counts.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ and let
+Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ and let
 $c_5(n)$ be the coefficient of $q^n$ in $f_5^5 / f_1$. For every natural number $n$,
 $c_5(4n+1) = c_5(2n)$ and $c_5(5n+4) = 5\, c_5(n)$.
 

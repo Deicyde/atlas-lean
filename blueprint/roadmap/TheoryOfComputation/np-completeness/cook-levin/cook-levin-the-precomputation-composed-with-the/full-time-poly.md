@@ -1,6 +1,6 @@
 # Polynomial time bound of the composed machine
 
-**Polynomial time bound of the composed machine.** Let $M$ be a finite multi-stack machine
+Let $M$ be a finite multi-stack machine
 with encoding data $E$, let $Y$ be a list of symbols of the input stack of $M$, $a$ a symbol of
 its output stack, $\iota$ a map from the raw symbols $\mathrm{Fin}\,r$ to symbols of the input
 stack, $\sigma$ a symbol of the input stack (the separator), $k$ a polynomial with

@@ -1,6 +1,6 @@
 # Carmichael's congruence for primitive prime divisors of Fibonacci numbers
 
-**Carmichael's congruence for primitive prime divisors of Fibonacci numbers.** Let $F_n$
+Let $F_n$
 denote the $n$-th Fibonacci number. For every natural number $m > 12$, every primitive prime
 divisor $p$ of $F_m$ (a prime $p$ that divides $F_m$ but divides no $F_n$ with $0 < n < m$)
 satisfies $p \equiv \pm 1 \pmod{m}$, that is, $p \equiv 1 \pmod{m}$ or $p + 1 \equiv 0 \pmod{m}$.

@@ -1,6 +1,6 @@
 # Capacity distribution of Catalan words ending in their largest letter
 
-**Capacity distribution of Catalan words ending in their largest letter.** For natural
+For natural
 numbers $n$ and $i$, $b(n, i; q) \in \mathbb{Z}[q]$ is the sum of $q^{\mathrm{cap}(w)}$, where
 $\mathrm{cap}(w)$ is the capacity of $w$, over the Catalan words $w$ of length $n$ whose last
 letter is $i$ and all of whose letters are at most $i$.

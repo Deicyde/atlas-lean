@@ -1,6 +1,6 @@
 # Six-step recurrence for capacity three
 
-**Six-step recurrence for capacity three.** Let $T_3(n)$ be the optimal crossing time of
+Let $T_3(n)$ be the optimal crossing time of
 $n$ people with crossing times $1, \dots, n$ on a bridge of capacity $3$ with one torch. For
 every $n \ge 13$, $T_3(n) = T_3(n - 6) + 2n + 6$.
 

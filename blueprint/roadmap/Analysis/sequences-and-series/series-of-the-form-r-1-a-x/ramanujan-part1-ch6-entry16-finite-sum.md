@@ -1,6 +1,6 @@
 # Ramanujan's finite identity for $\sum_k r^k/(1-ax^k)$
 
-**Ramanujan's finite identity for $\sum_k r^k/(1-ax^k)$.** Let $a, r, x$ be real numbers
+Let $a, r, x$ be real numbers
 and let $n$ be a positive integer. Suppose that $1 - a x^k \ne 0$ and $1 - r x^{k-1} \ne 0$ for
 every integer $k$ with $1 \le k \le n$. Then
 $\sum_{k=1}^{n} \frac{r^k}{1 - a x^k} = \sum_{k=1}^{n} \frac{(a r x^k)^k}{1 - a x^k} +

@@ -1,6 +1,6 @@
 # Conjugate rearrangements have the same graph
 
-**Conjugate rearrangements have the same graph.** Let $d_0, \dots, d_k$ be natural numbers
+Let $d_0, \dots, d_k$ be natural numbers
 and let $\pi_1, \pi_2, \tau_1, \tau_2$ be permutations of $\{0, \dots, k\}$ with
 $\pi_1 \tau_1 \pi_1^{-1} = \pi_2 \tau_2 \pi_2^{-1}$. Then the graph of the digits
 $d_{\pi_1(0)}, \dots, d_{\pi_1(k)}$ with digit permutation $\tau_1$ and the graph of the digits

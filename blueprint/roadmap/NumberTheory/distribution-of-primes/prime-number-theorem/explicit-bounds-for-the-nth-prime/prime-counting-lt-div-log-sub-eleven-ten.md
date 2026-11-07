@@ -1,6 +1,6 @@
 # Dusart's upper bound $x / (\log x - 1.1)$ for the prime-counting function
 
-**Dusart's upper bound $x / (\log x - 1.1)$ for the prime-counting function.** For every
+For every
 real number $x \ge 60184$, the number $\pi(x)$ of primes at most $x$ satisfies
 $\pi(x) < x / (\log x - 1.1)$.
 

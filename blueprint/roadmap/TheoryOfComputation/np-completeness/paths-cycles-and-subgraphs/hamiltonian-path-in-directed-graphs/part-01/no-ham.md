@@ -1,6 +1,6 @@
 # A fixed HAMPATH no-instance
 
-**A fixed HAMPATH no-instance.** The encoded PATH instance on the two vertices $0$ and $1$,
+The encoded PATH instance on the two vertices $0$ and $1$,
 with no arcs, whose source and target are both $0$.
 
 It is a no-instance of HAMPATH: a Hamiltonian path would visit both vertices and start and end

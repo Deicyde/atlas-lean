@@ -1,6 +1,6 @@
 # Members of $S(U)$ of the form $2^i 3^j$
 
-**Members of $S(U)$ of the form $2^i 3^j$.** Let $P, Q$ be integers with $Q \ne 0$ such that
+Let $P, Q$ be integers with $Q \ne 0$ such that
 the Lucas pair $(P, Q)$ is nondegenerate, let $U = U(P, Q)$ be its Lucas sequence, write $a = P$
 and $b = -Q$, and suppose $a + b - 1 \ne 0$. Call a positive integer $n$ good if $n$ lies in the
 Lucas period set $S(U)$ (the positive integers $n$ coprime to $Q$ whose period $\pi_U(n)$ modulo

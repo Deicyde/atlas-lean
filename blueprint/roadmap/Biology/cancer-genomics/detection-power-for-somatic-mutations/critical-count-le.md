@@ -1,3 +1,3 @@
 # Upper bound on the critical count
 
-**Upper bound on the critical count.** The critical count is at most `n + 1` (for `FPR ≥ 0`).
+The critical count is at most `n + 1` (for `FPR ≥ 0`).

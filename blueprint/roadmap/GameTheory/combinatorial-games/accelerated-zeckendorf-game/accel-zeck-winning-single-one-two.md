@@ -1,6 +1,6 @@
 # The first player wins the game on $2$
 
-**The first player wins the game on $2$.** The state consisting of two copies of $F_1$ is
+The state consisting of two copies of $F_1$ is
 winning.
 
 The winning move is $1 \cdot C_1$, which reaches the terminal state with one copy of $F_2$.

@@ -1,6 +1,6 @@
 # Integer values of $x/(1 - px - x^2)$ come from Lucas ratios
 
-**Integer values of $x/(1 - px - x^2)$ come from Lucas ratios.** Let $p \ne 0$ be an integer,
+Let $p \ne 0$ be an integer,
 let $(U_n)_{n \ge 0}$ be the Lucas sequence $U(p, -1)$, so $U_0 = 0$, $U_1 = 1$ and
 $U_{n+2} = pU_{n+1} + U_n$, and let $G(x) = \frac{x}{1 - px - x^2}$ for rational $x$. Then
 $G(U_n/U_{n+1})$ is an integer for every natural number $n$; and if $G(x) = k$ for a rational

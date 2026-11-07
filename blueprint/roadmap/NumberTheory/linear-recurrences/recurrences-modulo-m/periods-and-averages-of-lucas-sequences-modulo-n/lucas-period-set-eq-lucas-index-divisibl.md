@@ -1,6 +1,6 @@
 # Period set equals index-divisible set for nondegenerate $U(P, Q)$ with $P = Q + 1$
 
-**Period set equals index-divisible set for nondegenerate $U(P, Q)$ with $P = Q + 1$.** Let
+Let
 $U = U(P, Q)$ be a nondegenerate Lucas sequence with integer parameters $P$ and $Q \ne 0$ and
 $P = Q + 1$ (in the paper's notation $U(a, b)$ with $a = P$ and $b = -Q$, this is $a = -b + 1$).
 Then $S(U) = T(U)$, where $S(U)$ is the set of positive integers $n$ with $\gcd(n, Q) = 1$ and

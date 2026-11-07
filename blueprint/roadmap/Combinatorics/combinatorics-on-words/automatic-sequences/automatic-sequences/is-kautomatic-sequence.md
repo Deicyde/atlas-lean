@@ -1,6 +1,6 @@
 # Automatic sequences via finite automata
 
-**Automatic sequences via finite automata.** Let $k$ be a natural number and $B$ a finite
+Let $k$ be a natural number and $B$ a finite
 alphabet. A sequence $w : \mathbb{N} \to B$ is $k$-automatic when $k \ge 2$ and there is a
 deterministic finite automaton with output, consisting of a nonempty finite set of states $Q$, an
 initial state $s \in Q$, a transition map $\delta : Q \times \{0, 1, \dots, k-1\} \to Q$ and an

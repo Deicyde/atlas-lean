@@ -1,6 +1,6 @@
 # MAXIMUM COVERAGE is NP-complete
 
-**MAXIMUM COVERAGE is NP-complete.** The MAXIMUM COVERAGE decision problem belongs to NP,
+The MAXIMUM COVERAGE decision problem belongs to NP,
 and every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

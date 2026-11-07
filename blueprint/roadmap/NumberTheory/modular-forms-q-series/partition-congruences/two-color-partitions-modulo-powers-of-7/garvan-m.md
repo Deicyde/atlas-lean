@@ -1,6 +1,6 @@
 # Garvan's matrix
 
-**Garvan's matrix.** Garvan's matrix $(m_{i,j})_{i,j \ge 1}$ is the array of natural
+Garvan's matrix $(m_{i,j})_{i,j \ge 1}$ is the array of natural
 numbers defined as follows. For $1 \le i \le 7$, $m_{i,j}$ is the entry in row $i$ and column
 $j$ of the tabulated rows of Garvan's matrix (Tables 1 and 2 of the source), and $0$ beyond the
 printed columns. For $i \ge 8$, $m_{i,1} = m_{i,2} = 0$ and, for $j \ge 3$,

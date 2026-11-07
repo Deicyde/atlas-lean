@@ -1,6 +1,6 @@
 # Edmonds–Karp maximum flow
 
-**Edmonds–Karp maximum flow.** Let $c$ be a capacity function assigning a natural number
+Let $c$ be a capacity function assigning a natural number
 $c(u, v)$ to each ordered pair of vertices, and let $s$ and $t$ be vertices. If $s = t$, the
 Edmonds–Karp flow is the zero flow. Otherwise it is the result of running at most $C + 1$ rounds
 of bottleneck augmentation from the zero flow, where $C = \sum_v c(s, v)$ is the total capacity

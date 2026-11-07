@@ -1,6 +1,6 @@
 # Goldreich-Levin: hardcore predicate from one-way permutations
 
-**Goldreich-Levin: hardcore predicate from one-way permutations.** Let $\pi$ be a family of
+Let $\pi$ be a family of
 bijections $\pi_n$ of the set of $n$-bit strings, one for each natural number $n$. Suppose that
 $\pi$ is computable by polynomial-size circuits: there is a polynomial $q$ with natural number
 coefficients such that for every $n$ some list of at most $q(n)$ serialized gates has, on every

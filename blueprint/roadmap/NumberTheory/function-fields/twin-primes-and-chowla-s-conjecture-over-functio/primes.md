@@ -1,6 +1,6 @@
 # Primes of $F(T)$
 
-**Primes of $F[T]$.** Let $F$ be a finite field. The primes of the polynomial ring $F[T]$ are
+Let $F$ be a finite field. The primes of the polynomial ring $F[T]$ are
 its monic irreducible polynomials.
 
 ## Sources

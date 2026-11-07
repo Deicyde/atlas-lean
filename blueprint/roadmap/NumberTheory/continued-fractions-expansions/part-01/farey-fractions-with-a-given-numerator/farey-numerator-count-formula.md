@@ -1,6 +1,6 @@
 # Formula for the number of Farey fractions with a given numerator
 
-**Formula for the number of Farey fractions with a given numerator.** Let $h$ and $n$ be
+Let $h$ and $n$ be
 natural numbers with $0 < h < n$, and let $N_n(h)$ be the number of integers $b$ with
 $h \le b \le n$ and $\gcd(h, b) = 1$ (the number of fractions with numerator $h$ in the Farey
 sequence of order $n$). Then

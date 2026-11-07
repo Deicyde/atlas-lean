@@ -1,6 +1,6 @@
 # Norm of a nonzero polynomial
 
-**Norm of a nonzero polynomial.** Let $F$ be a finite field and give $F[T]$ its ring norm.
+Let $F$ be a finite field and give $F[T]$ its ring norm.
 For every nonzero $f \in F[T]$, the norm of $f$ is $|f| = |F|^{\deg f}$, where $|F|$ is the number
 of elements of $F$.
 

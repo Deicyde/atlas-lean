@@ -1,6 +1,6 @@
 # Initial Lucas $p$-number
 
-**Initial Lucas $p$-number.** For every natural number $p$, the Lucas $p$-number $L_{p,0}$
+For every natural number $p$, the Lucas $p$-number $L_{p,0}$
 equals $p + 1$.
 
 ## Sources

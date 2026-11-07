@@ -1,6 +1,6 @@
 # Upper bound for continuous Turán numbers of finite patterns
 
-**Upper bound for continuous Turán numbers of finite patterns.** Let $P$ be a finite subset of
+Let $P$ be a finite subset of
 $\mathbb{R}^2$. Then the continuous Turán number $\mathrm{opx}(n, P)$ and the 0-1 matrix extremal
 function $\mathrm{ex}(n, M_P)$ of $P$ on the $n \times n$ grid satisfy
 $\mathrm{opx}(n, P) = O(\mathrm{ex}(n, M_P))$ as $n \to \infty$ through the natural numbers.

@@ -1,6 +1,6 @@
 # Adjoining an element doubles the multiplicity of a perfect cover
 
-**Adjoining an element doubles the multiplicity of a perfect cover.** Let $G$ be an abelian
+Let $G$ be an abelian
 group and let $s = (s_1, \dots, s_k)$ be a perfect $m$-cover of $G$. For every $g \in G$, the
 family $(g, s_1, \dots, s_k)$ is a perfect $2m$-cover of $G$.
 

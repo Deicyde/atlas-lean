@@ -1,6 +1,6 @@
 # Generalized Fuss–Catalan numbers at $n = 1$
 
-**Generalized Fuss–Catalan numbers at $n = 1$.** For all natural numbers $m$ and $k$, the
+For all natural numbers $m$ and $k$, the
 generalized Fuss–Catalan number $F_m(1, k)$ equals $k$.
 
 ## Sources

@@ -1,3 +1,3 @@
 # Residuals lie in the orthogonal complement
 
-**Residuals lie in the orthogonal complement.** Residuals are orthogonal to the adjustment subspace.
+Residuals are orthogonal to the adjustment subspace.

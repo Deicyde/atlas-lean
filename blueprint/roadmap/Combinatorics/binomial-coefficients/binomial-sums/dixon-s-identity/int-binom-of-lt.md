@@ -1,4 +1,4 @@
 # Integer binomial coefficients vanish when the lower index exceeds the upper
 
-**Integer binomial coefficients vanish when the lower index exceeds the upper.** For
+For
 integers $n < k$, the integer binomial coefficient $\binom{n}{k}$ is $0$.

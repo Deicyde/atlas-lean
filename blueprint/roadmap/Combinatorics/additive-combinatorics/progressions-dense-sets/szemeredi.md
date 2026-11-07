@@ -1,6 +1,6 @@
 # Szemerédi's theorem
 
-**Szemerédi's theorem.** For every natural number $k \ge 1$ and every real number $\delta > 0$
+For every natural number $k \ge 1$ and every real number $\delta > 0$
 there is a natural number $N$ such that for every $n \ge N$, every set
 $A \subseteq \{0, 1, \dots, n - 1\}$ with $\delta n \le |A|$ contains an arithmetic progression
 of length $k$: there are natural numbers $a$ and $d > 0$ with $a + i d \in A$ for all $i < k$.

@@ -1,6 +1,6 @@
 # Factorization of the 4 × 4 circulant determinant
 
-**Factorization of the 4 × 4 circulant determinant.** For every commutative ring $R$ and all
+For every commutative ring $R$ and all
 $x_0, x_1, x_2, x_3 \in R$, the $4 \times 4$ circulant determinant $D_4$ satisfies
 
 $$D_4(x_0, x_1, x_2, x_3) =

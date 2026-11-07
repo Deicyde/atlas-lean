@@ -1,6 +1,6 @@
 # Choquet's representation theorem in Banach spaces
 
-**Choquet's representation theorem in Banach spaces.** Let $X$ be a real Banach space with its
+Let $X$ be a real Banach space with its
 Borel σ-algebra and let $K \subseteq X$ be compact and convex. For every $x \in K$ there is a
 probability measure $\mu$ on $X$ such that the complement of the set of extreme points of $K$ has
 $\mu$-measure $0$ and the barycenter $\int y \, d\mu(y)$ (a Bochner integral) equals $x$.

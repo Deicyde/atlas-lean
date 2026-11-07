@@ -1,6 +1,6 @@
 # Okounkov $q$-multiple zeta values
 
-**Okounkov $q$-multiple zeta values.** For a natural number $k$ let $p_k$ be Okounkov's
+For a natural number $k$ let $p_k$ be Okounkov's
 polynomial: $p_k(X) = X^{k/2}$ if $k$ is even and $p_k(X) = X^{(k-1)/2}(1 + X)$ if $k$ is odd.
 For an index $(k_1, \dots, k_r)$ of natural numbers, the Okounkov qMZV is the general qMZV
 $\zeta_q^{\mathrm{Oko}}(k_1, \dots, k_r) = \zeta_q(k_1, \dots, k_r; p_{k_1}, \dots, p_{k_r})$,

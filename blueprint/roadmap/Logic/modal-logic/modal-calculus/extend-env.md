@@ -1,6 +1,6 @@
 # Extending an environment under a binder
 
-**Extending an environment under a binder.** An environment $\rho$ assigns to each variable
+An environment $\rho$ assigns to each variable
 index $n \in \mathbb{N}$ a predicate $\rho(n)$ on worlds. Its extension by a predicate $S$ on
 worlds is the environment that assigns $S$ to index $0$ and $\rho(n)$ to index $n + 1$.
 

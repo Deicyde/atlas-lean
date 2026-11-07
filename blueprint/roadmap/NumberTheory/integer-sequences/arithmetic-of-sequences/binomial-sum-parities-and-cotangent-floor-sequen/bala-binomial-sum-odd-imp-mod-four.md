@@ -1,6 +1,6 @@
 # Odd values of Bala's binomial sum are $1$ modulo $4$
 
-**Odd values of Bala's binomial sum are $1$ modulo $4$.** For a natural number $n$, let
+For a natural number $n$, let
 $a(n) = \sum_{k=0}^{n} \binom{2n+1}{n+k+1} (-2)^k$. If $a(n)$ is odd, then $a(n) \equiv 1 \pmod 4$.
 
 The paper's $a(n)$ is A026641 (the number of even-outdegree nodes in all ordered trees with $n$

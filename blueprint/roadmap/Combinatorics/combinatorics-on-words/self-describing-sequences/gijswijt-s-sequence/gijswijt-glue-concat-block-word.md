@@ -1,6 +1,6 @@
 # Concatenated glue strings inside a block of the next order
 
-**Concatenated glue strings inside a block of the next order.** Let $m \ge 1$ and $u \ge 2$,
+Let $m \ge 1$ and $u \ge 2$,
 and for exponents $a_1, \ldots, a_{u-1}$ let
 $W(a) = (B^{(m+1)}_{u-1})^{a_{u-1}} \cdots (B^{(m+1)}_1)^{a_1}$ be the word in the blocks of the
 $(m+1)$th order Gijswijt sequence. (a) If $t \ge 1$ and the concatenated glue string $T^{(m)}_t$

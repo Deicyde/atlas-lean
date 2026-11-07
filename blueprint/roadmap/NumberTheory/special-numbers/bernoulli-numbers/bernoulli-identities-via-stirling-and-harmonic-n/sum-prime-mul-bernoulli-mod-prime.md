@@ -1,6 +1,6 @@
 # The congruence $\sum_{j=0}^{p} pB_j \equiv -1 \pmod p$
 
-**The congruence $\sum_{j=0}^{p} pB_j \equiv -1 \pmod p$.** Let $B_j$ denote the Bernoulli
+Let $B_j$ denote the Bernoulli
 numbers with $B_1 = -\tfrac12$. For every odd prime $p$, the rational number
 $S = \sum_{j=0}^{p} p B_j$ has denominator not divisible by $p$, and its residue modulo $p$ (its
 numerator times the inverse of its denominator in $\mathbb{Z}/p\mathbb{Z}$) equals $-1$.

@@ -1,6 +1,6 @@
 # The extension from prime values is completely additive
 
-**The extension from prime values is completely additive.** For every function
+For every function
 $v : \mathbb{N} \to \mathbb{N}$, let $H_v$ be the function with $H_v(m) = \sum_p a_p v(p)$ for
 $m = \prod_p p^{a_p}$. Then $H_v$ is completely additive on the positive integers:
 $H_v(ab) = H_v(a) + H_v(b)$ for all integers $a, b \ge 1$.

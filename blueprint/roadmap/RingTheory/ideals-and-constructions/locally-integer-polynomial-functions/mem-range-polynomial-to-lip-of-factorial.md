@@ -1,6 +1,6 @@
 # LIP functions on $\mathbb{Z}$ below the factorial bound are polynomials
 
-**LIP functions on $\mathbb{Z}$ below the factorial bound are polynomials.** Let $f$ lie in
+Let $f$ lie in
 $\mathrm{LIP}(\mathbb{Z})$, the ring of locally integer polynomial functions
 $\mathbb{Z} \to \mathbb{Z}$. If $|f(x)| < (2|x| - 1)!/2^{2|x| - 1}$ for all but finitely many
 $x \in \mathbb{Z}$, then there is a polynomial $p \in \mathbb{Z}[x]$ with $f(x) = p(x)$ for all

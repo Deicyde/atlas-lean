@@ -1,6 +1,6 @@
 # Square-grid tilings fixed by the quarter-turn for even $n$
 
-**Square-grid tilings fixed by the quarter-turn for even $n$.** Let $n$ be an even positive
+Let $n$ be an even positive
 integer, let $T$ be a finite set and let $\sigma$ be a permutation of $T$ with $\sigma^4 = 1$.
 Let $r$ be the quarter-turn of the grid $(\mathbb{Z}/n\mathbb{Z})^2$ given by
 $r(x, y) = (-1 - y, x)$. Then the number of maps $F : (\mathbb{Z}/n\mathbb{Z})^2 \to T$ with

@@ -1,6 +1,6 @@
 # The first ten letters of Wesley's words $S$ and $T$
 
-**The first ten letters of Wesley's words $S$ and $T$.** Indexing letters from $0$, the
+Indexing letters from $0$, the
 letters of $S$ at indices $0, 1, \dots, 9$ are $1, 0, 0, 1, 1, 0, 1, 0, 0, 1$ and the letters of
 $T$ at indices $0, 1, \dots, 9$ are $1, 0, 0, 1, 1, 0, 0, 1, 0, 0$; that is, $S$ begins with
 $1001101001$ and $T$ begins with $1001100100$.

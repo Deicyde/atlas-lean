@@ -1,6 +1,6 @@
 # Locally integer polynomial functions on cofinite sets of primes
 
-**Locally integer polynomial functions on cofinite sets of primes.** Let $P$ be the set of
+Let $P$ be the set of
 positive prime numbers in $\mathbb{Z}$, let $U \subseteq P$ with $P \setminus U$ finite, let
 $f : \mathbb{Z} \to \mathbb{Z}$, and for $S \subseteq \mathbb{Z}$ write $\mathrm{LIP}(S)$ for the
 ring of locally integer polynomial (LIP) functions $S \to \mathbb{Z}$. Then the restriction of

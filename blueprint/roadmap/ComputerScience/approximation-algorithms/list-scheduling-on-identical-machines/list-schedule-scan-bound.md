@@ -1,6 +1,6 @@
 # Invariant bound for list scheduling
 
-**Invariant bound for list scheduling.** Let $m \ge 1$ and $a, b, M \in \mathbb{N}$. Let
+Let $m \ge 1$ and $a, b, M \in \mathbb{N}$. Let
 $\sigma$ assign job lists to the $m$ machines so that $\sigma$ is a schedule of a list $P$ of
 jobs already placed, let $L(i)$ be the sum of $\sigma(i)$ for each machine $i$, and let $R$ be a
 list of remaining jobs. Assume that $a$ times the makespan of $\sigma$ is at most $bM$. Assume

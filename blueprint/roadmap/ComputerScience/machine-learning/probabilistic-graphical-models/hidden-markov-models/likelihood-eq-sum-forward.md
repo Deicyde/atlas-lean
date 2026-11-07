@@ -1,6 +1,6 @@
 # The forward algorithm computes the likelihood
 
-**The forward algorithm computes the likelihood.** Let $h$ be a hidden Markov model with a
+Let $h$ be a hidden Markov model with a
 finite set of states $S$, initial weights $\pi$, transition weights $a$ and emission weights $b$ in
 a semiring, and let $x_0, x_1, \dots$ be observations. Let $\alpha$ be the forward variables,
 $\alpha_0(s) = \pi(s)\, b(s, x_0)$ and

@@ -1,6 +1,6 @@
 # Sums of powers of $\sin(nt)/n$
 
-**Sums of powers of $\sin(nt)/n$.** Let $k \ge 1$ be a natural number, suppose that the
+Let $k \ge 1$ be a natural number, suppose that the
 limit $L = \lim_{R \to \infty} \int_0^R (\sin x / x)^k \, dx$ exists, and let $t$ be a real
 number with $0 < t < 2\pi$ if $k = 1$ and $0 \le t \le 2\pi/k$ if $k \ge 2$. Then the partial
 sums of $\sum_{n \ge 1} \sin^k(nt)/n^k$ converge and

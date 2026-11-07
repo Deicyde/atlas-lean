@@ -1,6 +1,6 @@
 # Eventual hyperbolicity for colored partitions
 
-**Eventual hyperbolicity for colored partitions.** Let $r \ge 1$ and $d \ge 1$ be integers. For
+Let $r \ge 1$ and $d \ge 1$ be integers. For
 $m \in \mathbb{N}$ let
 
 $$

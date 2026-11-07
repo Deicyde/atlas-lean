@@ -1,6 +1,6 @@
 # Shafarevich's relation-rank bound
 
-**Shafarevich's relation-rank bound.** Let $F$ be a number field, let $p$ be an odd prime,
+Let $F$ be a number field, let $p$ be an odd prime,
 and let $G = \mathrm{Gal}(F^{\mathrm{un},p}/F)$ be the Galois group of the maximal unramified
 pro-$p$ extension of $F$. Write $d(G)$ for the generator rank and $r(G)$ for the relation rank
 of $G$, $r_1$ and $r_2$ for the numbers of real and complex places of $F$, and $\delta$ for $1$

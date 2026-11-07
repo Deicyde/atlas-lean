@@ -1,6 +1,6 @@
 # Weighted zero-sum criterion for the Jacobi–Legendre weights
 
-**Weighted zero-sum criterion for the Jacobi–Legendre weights.** Let $n$ be a squarefree
+Let $n$ be a squarefree
 natural number all of whose prime divisors are at least $7$, let $p'$ be a prime divisor of $n$,
 let $n' = n/p'$, and let $L(n;p')$ be the set of units $x$ of $\mathbb{Z}/n\mathbb{Z}$ whose Jacobi
 symbol $\left(\frac{x}{n}\right)$ equals the Legendre symbol $\left(\frac{x}{p'}\right)$. Let

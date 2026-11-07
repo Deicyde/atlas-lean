@@ -1,6 +1,6 @@
 # Novikov–Boone theorem (unsolvability of the word problem)
 
-**Novikov–Boone theorem (unsolvability of the word problem).** There exist a natural number
+There exist a natural number
 $n$ and a finite set $R$ of elements of the free group $F_n$ on generators $g_1, \dots, g_n$ such
 that the word problem of the canonical surjection from $F_n$ onto the presented group
 $\langle g_1, \dots, g_n \mid R \rangle$ is not solvable: no algorithm decides, for a word $w$ in

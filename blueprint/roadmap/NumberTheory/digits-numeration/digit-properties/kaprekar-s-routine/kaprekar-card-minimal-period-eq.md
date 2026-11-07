@@ -1,6 +1,6 @@
 # Explicit count of Kaprekar cycles of each length
 
-**Explicit count of Kaprekar cycles of each length.** Let $B > 3$ be odd and $L \ge 1$, let
+Let $B > 3$ be odd and $L \ge 1$, let
 $K_B$ be the four-digit Kaprekar map and $X_B$ its state space, let $\varphi$ be Euler's totient
 function, and let $\lambda(n)$ denote the projective order of $2$ modulo $n$. For $a \ge 1$ put
 

@@ -1,6 +1,6 @@
 # The intersection of two compressed subgroups of a finite-rank free group is compressed
 
-**The intersection of two compressed subgroups of a finite-rank free group is compressed.** For
+For
 every natural number $n$ and all subgroups $H$ and $K$ of the free group $F_n$ on $n$
 generators, if $H$ and $K$ are compressed, then $H \cap K$ is compressed. That is, Kourovka
 Problem 19.103 has a positive answer for the intersection of two subgroups of a free group of

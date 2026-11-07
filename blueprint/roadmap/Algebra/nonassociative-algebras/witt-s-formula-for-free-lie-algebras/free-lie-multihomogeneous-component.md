@@ -1,6 +1,6 @@
 # Multihomogeneous components of a free Lie algebra
 
-**Multihomogeneous components of a free Lie algebra.** Let $K$ be a field, $r$ a natural
+Let $K$ be a field, $r$ a natural
 number, and $L$ the free Lie algebra over $K$ on generators $x_0, \dots, x_{r-1}$. For a
 multidegree $d \in \mathbb{N}^r$, the multihomogeneous component of $L$ of multidegree $d$ is the
 $K$-linear span of the homogeneous Lie monomials of multidegree $d$, that is, of the iterated

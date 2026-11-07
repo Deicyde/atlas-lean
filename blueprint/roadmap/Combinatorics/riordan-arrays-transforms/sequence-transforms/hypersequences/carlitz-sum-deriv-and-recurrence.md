@@ -1,6 +1,6 @@
 # Derivative and recurrence of the shifted alternating binomial power sums
 
-**Derivative and recurrence of the shifted alternating binomial power sums.** Let
+Let
 $p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (kx + y)^\ell$ and, for a complex number
 $n$, let $c_{\ell,m}(n) = p_{\ell,m}(1, n + 1)$. For natural numbers $\ell, m \ge 1$ and every
 complex number $n$, the complex derivative of $c_{\ell,m}$ at $n$ is $\ell\, c_{\ell-1,m}(n)$, and

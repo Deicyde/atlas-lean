@@ -1,6 +1,6 @@
 # Erdős Problem 179: $F_3(N, 4) = o(N^2)$
 
-**Erdős Problem 179: $F_3(N, 4) = o(N^2)$.** As $N \to \infty$ over the natural numbers,
+As $N \to \infty$ over the natural numbers,
 $F_3(N, 4) / N^2 \to 0$, that is, $F_3(N, 4) = o(N^2)$, where $F_3(N, 4)$ is the least natural
 number $m$ such that every $N$-element set $A \subseteq \mathbb{N}$ containing at least $m$
 three-term arithmetic progressions $a, a + d, a + 2d$ with $d \ge 1$ contains a $4$-term

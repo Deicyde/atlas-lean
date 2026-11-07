@@ -1,6 +1,6 @@
 # Quasi-arithmetical compact sets are self-similar
 
-**Quasi-arithmetical compact sets are self-similar.** If $K$ is a quasi-arithmetical compact
+If $K$ is a quasi-arithmetical compact
 set of module $\mu$ and natural-number ratio $\rho$, then $K$ is a self-similar compact set of
 module $\mu$ and ratio $\rho$.
 

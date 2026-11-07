@@ -1,6 +1,6 @@
 # Baum–Sweet: unbounded partial quotients for higher degrees
 
-**Baum–Sweet: unbounded partial quotients for higher degrees.** Let $n > 1$ and let
+Let $n > 1$ and let
 $g \in \mathbb{F}_2[x]$ have degree at least $1$. If $f \in \mathbb{F}_2((x^{-1}))$ satisfies
 $f^{2^n+1} + g^{-1} f + 1 = 0$, then $f$ does not have bounded partial quotients.
 

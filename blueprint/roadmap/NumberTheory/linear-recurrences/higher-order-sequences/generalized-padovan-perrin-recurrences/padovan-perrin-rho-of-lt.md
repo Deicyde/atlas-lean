@@ -1,6 +1,6 @@
 # The Padovan–Perrin coefficients vanish below the order
 
-**The Padovan–Perrin coefficients vanish below the order.** Let $R$ be a commutative
+Let $R$ be a commutative
 semiring, let $k_1, k_2 \in R$ and let $p, s, n$ be natural numbers with $n < s + p$. Then the
 Padovan–Perrin coefficient $\rho(n, s + p)$ attached to $k_1, k_2, p, s$ equals $0$.
 

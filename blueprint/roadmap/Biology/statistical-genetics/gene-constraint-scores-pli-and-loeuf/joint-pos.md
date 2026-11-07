@@ -1,3 +1,3 @@
 # Positivity of the Poisson mixture joint likelihood
 
-**Positivity of the Poisson mixture joint likelihood.** The joint likelihood is positive for positive rates.
+The joint likelihood is positive for positive rates.

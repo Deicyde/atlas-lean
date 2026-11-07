@@ -1,6 +1,6 @@
 # Binomial sum of generalized Fibonacci polynomials as an integral
 
-**Binomial sum of generalized Fibonacci polynomials as an integral.** Let $d$ and $g$ be
+Let $d$ and $g$ be
 polynomials with integer coefficients, let $F_m$ be the generalized Fibonacci polynomials with
 $F_0 = 0$, $F_1 = 1$ and $F_{m+2} = d F_{m+1} + g F_m$, and let $x$ be a real number with
 $d(x)^2 + 4 g(x) \ge 0$ and $g(x) \ne 0$. Let $\Phi \colon \mathbb{Z} \to \mathbb{R}$ satisfy

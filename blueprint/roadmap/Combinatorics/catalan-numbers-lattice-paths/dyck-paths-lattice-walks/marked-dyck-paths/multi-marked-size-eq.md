@@ -1,6 +1,6 @@
 # Two expressions for the size of a multi-marked Dyck path
 
-**Two expressions for the size of a multi-marked Dyck path.** For every multi-marked Dyck
+For every multi-marked Dyck
 path $P$, the size $E(P) + \sum (t - 1)$ of $P$ equals $N(P) + \sum t$, where $E(P)$ is the
 number of horizontal steps $E$ of $P$, $N(P)$ is the number of plain vertical steps $N$ of $P$,
 and both sums run over all occurrences of marked steps $N^*_t$ in $P$.

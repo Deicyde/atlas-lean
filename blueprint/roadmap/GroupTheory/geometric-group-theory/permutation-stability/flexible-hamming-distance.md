@@ -1,6 +1,6 @@
 # Flexible Hamming distance
 
-**Flexible Hamming distance.** Let $n \le m$ be natural numbers, $\sigma$ a permutation of
+Let $n \le m$ be natural numbers, $\sigma$ a permutation of
 $\{0, \dots, n-1\}$ and $\tau$ a permutation of $\{0, \dots, m-1\}$. The flexible Hamming distance
 of $\sigma$ and $\tau$ is the real number
 

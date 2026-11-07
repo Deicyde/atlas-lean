@@ -1,6 +1,6 @@
 # Sum of squared Fibonacci numbers from three consecutive squares
 
-**Sum of squared Fibonacci numbers from three consecutive squares.** Let $F_j$ denote the
+Let $F_j$ denote the
 $j$-th Fibonacci number, with $F_0 = 0$ and $F_1 = 1$. For every integer $n \ge 3$,
 
 $$2 \sum_{j=1}^{n-2} F_j^2 = F_n^2 - F_{n-1}^2 - F_{n-2}^2.$$

@@ -1,6 +1,6 @@
 # Thue–Morse substitution
 
-**Thue–Morse substitution.** The Thue–Morse substitution $\sigma$ on the alphabet $\{0, 1\}$
+The Thue–Morse substitution $\sigma$ on the alphabet $\{0, 1\}$
 sends each letter to a word of length two: $\sigma(0) = 01$ and $\sigma(1) = 10$.
 
 ## Sources

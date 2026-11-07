@@ -1,6 +1,6 @@
 # The eventually operator of LTL
 
-**The eventually operator of LTL.** For an LTL formula $\varphi$, the formula
+For an LTL formula $\varphi$, the formula
 $\mathbf{F}\,\varphi$ ("eventually $\varphi$") is defined as the until formula
 $\top \mathbin{\mathbf{U}} \varphi$.
 

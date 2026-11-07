@@ -1,6 +1,6 @@
 # All-orders logarithmic expansion of the Catalan numbers at a real shift
 
-**All-orders logarithmic expansion of the Catalan numbers at a real shift.** Let $c$ be a real
+Let $c$ be a real
 number, let $C_n$ be the $n$-th Catalan number and $B_k(x)$ the $k$-th Bernoulli polynomial, and
 for $j \ge 0$ put
 $a_j = (-1)^j \left(B_{j+2}(1/2 - c) - B_{j+2}(2 - c)\right) / ((j + 1)(j + 2))$.

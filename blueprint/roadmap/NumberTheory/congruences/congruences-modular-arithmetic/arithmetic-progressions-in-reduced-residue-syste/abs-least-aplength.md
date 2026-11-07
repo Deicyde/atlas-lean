@@ -1,6 +1,6 @@
 # Longest progression in the absolute least reduced residues
 
-**Longest progression in the absolute least reduced residues.** For a natural number $n$,
+For a natural number $n$,
 let $R(n)$ be the set of integers $a$ with $1 - \lceil n/2 \rceil \le a \le n - \lceil n/2 \rceil$
 and $\gcd(a, n) = 1$, the system of absolute least reduced residues modulo $n$. Then $g(n)$ is
 the largest $s \ge 0$ for which there are an integer $b$ and a positive integer $d$ with

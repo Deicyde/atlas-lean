@@ -1,6 +1,6 @@
 # Banach–Stone theorem for real scalars
 
-**Banach–Stone theorem for real scalars.** Let $X$ and $Y$ be compact Hausdorff spaces, and let
+Let $X$ and $Y$ be compact Hausdorff spaces, and let
 $C(X, \mathbb{R})$ and $C(Y, \mathbb{R})$ be the real Banach spaces of continuous real functions
 on them with the supremum norm. If there is a surjective linear isometry from $C(X, \mathbb{R})$
 onto $C(Y, \mathbb{R})$, then $X$ and $Y$ are homeomorphic.

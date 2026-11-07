@@ -1,6 +1,6 @@
 # Longest progressions of absolute least residues: primes congruent to 3 mod 4
 
-**Longest progressions of absolute least residues: primes congruent to 3 mod 4.** For a
+For a
 prime $p \equiv 3 \pmod 4$, the length $g(p)$ of the longest arithmetic progression in the
 absolute least reduced residue system modulo $p$ is $(p + 1)/2$.
 

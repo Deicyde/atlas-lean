@@ -1,6 +1,6 @@
 # The shortest long iterate $\tau_k^j(k)$
 
-**The shortest long iterate $\tau_k^j(k)$.** Let $\tau_k$ be the substitution sending the
+Let $\tau_k$ be the substitution sending the
 letter $k$ to $k\,1$ and every other letter $i$ to $i + 1$, extended letterwise to words. For
 natural numbers $k$ and $n$, $\mathrm{grow}_k(n)$ is the word obtained from the one-letter word
 $k$ by applying $\tau_k$ until it has more than $n$ letters, at most $n$ times. Since

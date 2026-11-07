@@ -1,6 +1,6 @@
 # Normalized Fourier coefficients of a cusp form
 
-**Normalized Fourier coefficients of a cusp form.** Let $f$ be a cusp form of weight
+Let $f$ be a cusp form of weight
 $k \in \mathbb{Z}$ for $\mathrm{SL}_2(\mathbb{Z})$, with $q$-expansion
 $f(z) = \sum_{n \ge 0} a_f(n) e(nz)$, where $e(z) = e^{2\pi i z}$. For each natural number $n$,
 the normalized Fourier coefficient of $f$ is the complex number

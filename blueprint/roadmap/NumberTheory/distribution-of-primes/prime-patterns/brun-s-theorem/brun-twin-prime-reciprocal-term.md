@@ -1,6 +1,6 @@
 # Twin-prime reciprocal term
 
-**Twin-prime reciprocal term.** For a natural number $p$, the twin-prime reciprocal term
+For a natural number $p$, the twin-prime reciprocal term
 $t(p)$ is the real number $\frac{1}{p} + \frac{1}{p + 2}$ when $p$ and $p + 2$ are both prime,
 and $0$ otherwise.
 

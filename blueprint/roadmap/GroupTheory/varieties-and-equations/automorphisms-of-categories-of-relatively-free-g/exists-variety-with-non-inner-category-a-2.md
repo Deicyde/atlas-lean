@@ -1,6 +1,6 @@
 # Some variety of groups has an outer automorphism of its category of free groups
 
-**Some variety of groups has an outer automorphism of its category of free groups.** There is a
+There is a
 set $W$ of words in the free group on $x_0, x_1, \ldots$ such that, for the variety $\Theta$ with
 laws $W$, the category $\Theta^0$, whose objects are the free groups $F_\Theta(X)$ of $\Theta$ on
 the finite subsets $X \subseteq \mathbb{N}$ and whose morphisms are all group homomorphisms, has an

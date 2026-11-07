@@ -1,6 +1,6 @@
 # The gcd-term sequence is integral and recovers the gcd
 
-**The gcd-term sequence is integral and recovers the gcd.** Let $a, b \ge 1$ be natural
+Let $a, b \ge 1$ be natural
 numbers and let $s_{a,b}$ be the gcd-term sequence. Every value $s_{a,b}(n)$ is a natural number,
 and $s_{a,b}(ab) = \gcd(a, b) + 1$.
 

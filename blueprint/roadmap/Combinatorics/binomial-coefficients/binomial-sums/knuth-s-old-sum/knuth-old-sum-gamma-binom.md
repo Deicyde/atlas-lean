@@ -1,6 +1,6 @@
 # One-parameter generalization of Knuth's old sum
 
-**One-parameter generalization of Knuth's old sum.** For every natural number $n$ and every
+For every natural number $n$ and every
 real number $v > -1$,
 
 $$

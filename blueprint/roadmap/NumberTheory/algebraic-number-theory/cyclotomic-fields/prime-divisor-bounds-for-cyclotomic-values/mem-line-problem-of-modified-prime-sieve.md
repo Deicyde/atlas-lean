@@ -1,6 +1,6 @@
 # Cohen's modified prime sieve for the line problem
 
-**Cohen's modified prime sieve for the line problem.** Let $q$ and $n$ be natural numbers such
+Let $q$ and $n$ be natural numbers such
 that $q^n - 1$ has $\omega \ge 2$ distinct prime factors. Let $S$ be a set of $s$ prime factors of
 $q^n - 1$, let $l$ be a prime factor of $q^n - 1$ not in $S$, let $k$ be the product of the prime
 factors of $q^n - 1$ that are neither $l$ nor in $S$, and put

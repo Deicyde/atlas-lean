@@ -1,6 +1,6 @@
 # Five color theorem
 
-**Five color theorem.** Every straight-line planar simple graph $G$ on a finite vertex set
+Every straight-line planar simple graph $G$ on a finite vertex set
 has a proper vertex coloring with five colors.
 
 ## Sources

@@ -1,6 +1,6 @@
 # $k$-Fibonacci numbers as a power-weighted convolution
 
-**$k$-Fibonacci numbers as a power-weighted convolution.** For an integer $k$, let $F_{k,n}$
+For an integer $k$, let $F_{k,n}$
 be the $k$-Fibonacci numbers, the Lucas sequence $U(k, -1)$: $F_{k,0} = 0$, $F_{k,1} = 1$ and
 $F_{k,n+2} = k F_{k,n+1} + F_{k,n}$. For every integer $k$, every $n \ge 0$ and every $p \ge 1$,
 

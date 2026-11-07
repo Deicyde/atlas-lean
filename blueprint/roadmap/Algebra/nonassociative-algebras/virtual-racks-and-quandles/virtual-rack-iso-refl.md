@@ -1,6 +1,6 @@
 # Reflexivity of virtual rack isomorphism
 
-**Reflexivity of virtual rack isomorphism.** For every rack $R$ and every permutation $f$ of
+For every rack $R$ and every permutation $f$ of
 $R$, the pair $(R, f)$ is isomorphic to itself in the sense of virtual rack isomorphism. The
 permutation $f$ need not be a rack automorphism.
 

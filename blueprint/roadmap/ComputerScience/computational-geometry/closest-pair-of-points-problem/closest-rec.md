@@ -1,6 +1,6 @@
 # Closest-pair recursion
 
-**Closest-pair recursion.** Let $K$ be a linearly ordered field and $c_1, \dots, c_n$ a list
+Let $K$ be a linearly ordered field and $c_1, \dots, c_n$ a list
 of points $c_i = (x_i, y_i)$ of $K^2$. If $n \le 3$, the recursion returns the brute-force scan of
 the list. Otherwise let $m = \lfloor n/2 \rfloor$, and run the recursion on $c_1, \dots, c_m$ and
 on $c_{m+1}, \dots, c_n$. If neither call returns a value, it returns no value. Otherwise let

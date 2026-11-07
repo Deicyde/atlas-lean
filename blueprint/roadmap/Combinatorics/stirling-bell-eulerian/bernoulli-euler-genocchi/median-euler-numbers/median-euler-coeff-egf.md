@@ -1,6 +1,6 @@
 # Exponential generating function of the Euler coefficients
 
-**Exponential generating function of the Euler coefficients.** Let $E_n$ denote the Euler
+Let $E_n$ denote the Euler
 coefficients, let $e^x$ be the exponential series, and let $e^{-x}$ be the series obtained from
 it by replacing $x$ with $-x$. In the ring $\mathbb{Q}[[x]]$ of formal power series with rational
 coefficients, $(e^x + e^{-x}) \sum_{n \ge 0} E_n x^n / n! = 2 + e^x - e^{-x}$.

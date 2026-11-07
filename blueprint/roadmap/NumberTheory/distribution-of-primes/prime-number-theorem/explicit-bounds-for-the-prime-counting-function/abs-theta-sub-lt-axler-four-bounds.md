@@ -1,6 +1,6 @@
 # Axler's four bounds for Chebyshev's theta function
 
-**Axler's four bounds for Chebyshev's theta function.** Let
+Let
 $\vartheta(x) = \sum_{p \le x} \log p$ be Chebyshev's function, the sum over the primes
 $p \le x$. Then for real $x$ we have
 $|\vartheta(x) - x| < 0.043\, x / \log^3 x$ for $x \ge e^{40}$,

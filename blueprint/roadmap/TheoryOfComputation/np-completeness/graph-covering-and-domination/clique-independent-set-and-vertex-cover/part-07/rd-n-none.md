@@ -1,6 +1,6 @@
 # Unterminated second unary number in the KG-map machine
 
-**Unterminated second unary number in the KG-map machine.** Let $m$ be a mode and $r$ a list
+Let $m$ be a mode and $r$ a list
 of bits on which reading a unary length prefix fails (this happens exactly when $r$ contains no
 false). From any configuration of the KG-map machine $M_m$ at the label read $n$, with any
 internal bit, in which stack $X$ holds the input symbols $\mathrm{bit}(b)$ for the bits $b$ of

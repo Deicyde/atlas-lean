@@ -1,6 +1,6 @@
 # Elliptic billiard invariant $k_{602}$
 
-**Elliptic billiard invariant $k_{602}$.** Write $|XY|$ for the distance between points $X$
+Write $|XY|$ for the distance between points $X$
 and $Y$ of the Euclidean plane. For every natural number $N$, all points $O, f_1, f_2$ of the
 plane and all reals $a, a_c$ with $O = \frac{1}{2}(f_1 + f_2)$, $|f_1 f_2| < a$,
 $|f_1 f_2| < a_c$ and $a_c < a$, there is a real number $C$ with the following property. Let

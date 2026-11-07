@@ -1,6 +1,6 @@
 # Piece distance from a minimal fold
 
-**Piece distance from a minimal fold.** Let $A \subset \mathbb{Z}^2$ be a finite set, let
+Let $A \subset \mathbb{Z}^2$ be a finite set, let
 $p \in \mathbb{Z}^2$ be nonzero and let $n \ge 1$ be a natural number. If $p$ lies in the
 $n$-fold sumset $nA = \{a_1 + \dots + a_n : a_1, \dots, a_n \in A\}$, and every natural number
 $h \ge 1$ with $p \in hA$ satisfies $n \le h$, then the piece distance of $p$ for $A$ is $n$.

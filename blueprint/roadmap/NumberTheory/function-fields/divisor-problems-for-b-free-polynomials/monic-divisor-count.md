@@ -1,6 +1,6 @@
 # The $h$-fold divisor function
 
-**The $h$-fold divisor function.** Let $F$ be a field and $h$ a natural number. For
+Let $F$ be a field and $h$ a natural number. For
 $f \in F[T]$, $d_h(f)$ is the number of $h$-tuples $(g_1, \dots, g_h)$ of monic polynomials in
 $F[T]$ with $g_1 \cdots g_h = f$.
 

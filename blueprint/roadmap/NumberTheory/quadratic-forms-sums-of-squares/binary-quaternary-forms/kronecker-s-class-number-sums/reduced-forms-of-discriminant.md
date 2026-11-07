@@ -1,6 +1,6 @@
 # Reduced forms of a given discriminant
 
-**Reduced forms of a given discriminant.** For an integer $d$, $R(d)$ is the finite set of
+For an integer $d$, $R(d)$ is the finite set of
 integer triples $(a, b, c)$ such that the binary quadratic form $a x^2 + b x y + c y^2$ is Gauss
 reduced (that is, $a > 0$, $b^2 - 4ac < 0$, $|b| \le a \le c$, and $b \ge 0$ whenever $|b| = a$ or
 $a = c$) and has discriminant $b^2 - 4ac = d$. In particular $R(d)$ is empty when $d \ge 0$.

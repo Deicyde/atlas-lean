@@ -1,6 +1,6 @@
 # Peaks of the word $1322141251$
 
-**Peaks of the word $1322141251$.** The word $1322141251$ (the list
+The word $1322141251$ (the list
 $1, 3, 2, 2, 1, 4, 1, 2, 5, 1$) has exactly one symmetric peak, the factor $141$, and exactly two
 non-symmetric peaks, the factors $132$ and $251$.
 

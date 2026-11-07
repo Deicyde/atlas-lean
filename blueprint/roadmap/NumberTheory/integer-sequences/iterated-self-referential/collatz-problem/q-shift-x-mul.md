@@ -1,6 +1,6 @@
 # Dividing a multiple of $q$ by $q$
 
-**Dividing a multiple of $q$ by $q$.** For every power series $y \in \mathbb{F}_2[[q]]$,
+For every power series $y \in \mathbb{F}_2[[q]]$,
 applying the shift $\sum_n x_n q^n \mapsto \sum_n x_{n+1} q^n$ to $qy$ gives back $y$.
 
 ## Sources

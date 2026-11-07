@@ -1,6 +1,6 @@
 # Alternating binomial sums of partial sums
 
-**Alternating binomial sums of partial sums.** For every sequence $a_0, a_1, a_2, \dots$ of
+For every sequence $a_0, a_1, a_2, \dots$ of
 complex numbers and every natural number $n$,
 
 $$\sum_{k=0}^{n} (-1)^k \binom{n}{k} \sum_{j=1}^{k} a_j =

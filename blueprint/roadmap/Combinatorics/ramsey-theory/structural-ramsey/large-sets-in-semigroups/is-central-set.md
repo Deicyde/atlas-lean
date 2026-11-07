@@ -1,6 +1,6 @@
 # Central sets in a semigroup
 
-**Central sets in a semigroup.** Let $S$ be a semigroup and let $\beta S$ be the set of
+Let $S$ be a semigroup and let $\beta S$ be the set of
 ultrafilters on $S$, with the product for which $D \in pq$ exactly when
 $\{x \in S : \{y \in S : xy \in D\} \in q\} \in p$. A two-sided ideal of $\beta S$ is a set
 $I \subseteq \beta S$ with $rq \in I$ and $qr \in I$ for all $q \in I$ and $r \in \beta S$. A set

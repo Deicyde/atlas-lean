@@ -1,6 +1,6 @@
 # Three-term recurrence for central trinomial coefficients
 
-**Three-term recurrence for central trinomial coefficients.** For a natural number $m$, let
+For a natural number $m$, let
 $T_m$ be the central trinomial coefficient, the coefficient of $x^m$ in $(1 + x + x^2)^m$.
 For every natural number $n$ the following holds, where for $n = 0$ the index $n - 1$ is read
 as $0$ (the last term then vanishes, since $3n = 0$):

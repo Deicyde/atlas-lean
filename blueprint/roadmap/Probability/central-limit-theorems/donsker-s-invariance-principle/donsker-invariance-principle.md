@@ -1,6 +1,6 @@
 # Donsker's invariance principle
 
-**Donsker's invariance principle.** Let $X_0, X_1, \dots$ be independent, identically
+Let $X_0, X_1, \dots$ be independent, identically
 distributed, measurable real random variables on a probability space $(\Omega, P)$ such that
 $X_0$ is integrable, $\mathbb{E}[X_0^2] < \infty$, $\mathbb{E}[X_0] = 0$ and
 $\operatorname{Var}(X_0) = 1$. Let $(B_t)_{t \ge 0}$ be a real Brownian motion on a probability

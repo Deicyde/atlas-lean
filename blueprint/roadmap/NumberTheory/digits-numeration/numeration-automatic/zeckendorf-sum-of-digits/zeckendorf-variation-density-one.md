@@ -1,6 +1,6 @@
 # Distribution of the Zeckendorf digit-sum variation for shift one
 
-**Distribution of the Zeckendorf digit-sum variation for shift one.** For $n \in \mathbb{N}$
+For $n \in \mathbb{N}$
 let $s(n)$ be the number of terms in the Zeckendorf representation of $n$, and let $\varphi$ be the
 golden ratio. For every $d \in \mathbb{Z}$ the set $\{n \in \mathbb{N} : s(n + 1) - s(n) = d\}$
 has natural density $0$ if $d \ge 2$, $1/\varphi^2$ if $d = 1$, and $1/\varphi^{2 - 2d}$ if

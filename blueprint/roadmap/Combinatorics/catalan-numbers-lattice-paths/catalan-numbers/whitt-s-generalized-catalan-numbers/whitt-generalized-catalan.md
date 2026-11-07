@@ -1,6 +1,6 @@
 # Whitt's generalized Catalan numbers
 
-**Whitt's generalized Catalan numbers.** For a rational number $\alpha$ and a natural number
+For a rational number $\alpha$ and a natural number
 $n$, Whitt's generalized Catalan number $C(\alpha, n)$ is the rational number
 
 $$C(\alpha, n) = \sum_{k=0}^{n-1} \left(1 - \frac{k}{n}\right) \binom{n-1+k}{k} \alpha^k.$$

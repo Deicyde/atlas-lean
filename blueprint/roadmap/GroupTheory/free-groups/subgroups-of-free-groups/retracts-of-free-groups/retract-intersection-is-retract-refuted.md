@@ -1,6 +1,6 @@
 # Negative answer to Bergman's retract intersection question (Kourovka Problem 17.19)
 
-**Negative answer to Bergman's retract intersection question (Kourovka Problem 17.19).** It is not
+It is not
 the case that for every natural number $n$, every retract $R$ of the free group $F_n$ on $n$
 generators and every finitely generated subgroup $H$ of $F_n$, the intersection $H \cap R$ is a
 retract of $H$.

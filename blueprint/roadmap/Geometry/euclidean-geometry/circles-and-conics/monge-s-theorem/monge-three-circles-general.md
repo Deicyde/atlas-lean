@@ -1,6 +1,6 @@
 # Monge's three-circle theorem, algebraic form
 
-**Monge's three-circle theorem, algebraic form.** Let $V$ be a real vector space, let
+Let $V$ be a real vector space, let
 $c_1, c_2, c_3 \in V$, and let $r_1, r_2, r_3$ be pairwise distinct real numbers. Then the three
 points $(r_1 - r_2)^{-1}(r_1 c_2 - r_2 c_1)$, $(r_2 - r_3)^{-1}(r_2 c_3 - r_3 c_2)$ and
 $(r_1 - r_3)^{-1}(r_1 c_3 - r_3 c_1)$ of $V$ are collinear.

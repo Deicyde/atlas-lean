@@ -1,6 +1,6 @@
 # Divisibility of the biunitary divisor sum of an even number by a power of two
 
-**Divisibility of the biunitary divisor sum of an even number by a power of two.** For every
+For every
 positive even natural number $n$, writing $\omega(n)$ for the number of distinct prime factors of
 $n$, the power $2^{\omega(n) - 1}$ divides the biunitary divisor sum $\sigma^{**}(n)$.
 

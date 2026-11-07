@@ -1,6 +1,6 @@
 # Symmetric identity for modified degenerate Bernoulli polynomials
 
-**Symmetric identity for modified degenerate Bernoulli polynomials.** Let $m \ge 2$ and
+Let $m \ge 2$ and
 $n \ge 1$ be integers, let $\lambda$ be a complex number with $\lambda \ne 0$ and $\lambda \ne -1$,
 let $r_1, \ldots, r_m$ and $x_1, \ldots, x_m$ be complex numbers, write
 $\mathfrak{B}_{k,\lambda}(x)$ for the modified degenerate Bernoulli polynomials, and put

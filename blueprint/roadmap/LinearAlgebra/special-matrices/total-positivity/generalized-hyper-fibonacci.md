@@ -1,6 +1,6 @@
 # Generalized hyper-Fibonacci numbers
 
-**Generalized hyper-Fibonacci numbers.** Let $p, a, b$ be integers and let $W_{p,n}$ denote the
+Let $p, a, b$ be integers and let $W_{p,n}$ denote the
 generalized Fibonacci sequence, with $W_{p,0} = a$, $W_{p,1} = b$ and
 $W_{p,n+2} = p W_{p,n+1} + W_{p,n}$. The generalized hyper-Fibonacci numbers $W^{(r)}_{p,n}$, for
 natural numbers $r$ and $n$, are the integers defined by $W^{(0)}_{p,n} = W_{p,n}$ and, for

@@ -1,6 +1,6 @@
 # The saturation function is nonnegative
 
-**The saturation function is nonnegative.** For every real number $n$ and every set
+For every real number $n$ and every set
 $P \subseteq \mathbb{R}^2$, $\operatorname{osat}(n, P) \ge 0$.
 
 ## Sources

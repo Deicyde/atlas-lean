@@ -1,6 +1,6 @@
 # Integer sequences with linear Fibonacci coefficients
 
-**Integer sequences with linear Fibonacci coefficients.** Let $F_n$ be the $n$-th Fibonacci
+Let $F_n$ be the $n$-th Fibonacci
 number and put $F_{-1} = 1$, so that $F_{n-1} = F_{n+1} - F_n$ for every $n \ge 0$. For rational
 numbers $a, b, c, d$, the number $w_n = (an + b)F_n + (cn + d)F_{n-1}$ is an integer for every
 natural number $n$ if and only if $d$ is an integer and there are integers $z_1, z_2, z_3$ with

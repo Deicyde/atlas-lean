@@ -1,6 +1,6 @@
 # Evaluation of FO + TC formulas
 
-**Evaluation of FO + TC formulas.** Fix an ordered graph with domain
+Fix an ordered graph with domain
 $D = \{0, \dots, n - 1\}$, an assignment $\rho$ of an element of $D$ to each variable index and
 an assignment $S$ of a relation on lists of elements of $D$ to each relation symbol. The truth
 value of a formula is defined by recursion. The equation between variables $i$ and $j$ holds

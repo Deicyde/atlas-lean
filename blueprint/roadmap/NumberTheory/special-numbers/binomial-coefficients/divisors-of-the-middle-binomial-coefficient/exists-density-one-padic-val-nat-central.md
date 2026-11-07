@@ -1,6 +1,6 @@
 # Valuations of the middle binomial coefficient on a set of density one
 
-**Valuations of the middle binomial coefficient on a set of density one.** Write $v_p(n)$ for
+Write $v_p(n)$ for
 the exponent of a prime $p$ in a positive integer $n$, and for $m \ge 2$ let
 $\alpha_p(m) = v_p\bigl(\binom{2m}{m}\bigr) / (\log m / \log p)$. There is a set $S$ of natural
 numbers of natural density $1$ such that: $\alpha_2(m) \to 1/2$ as $m \to \infty$ within $S$; for

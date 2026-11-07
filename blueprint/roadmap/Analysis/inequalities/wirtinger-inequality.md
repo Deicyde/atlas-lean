@@ -1,6 +1,6 @@
 # Wirtinger's inequality
 
-**Wirtinger's inequality.** Let $f, f' : \mathbb{R} \to \mathbb{R}$ be functions such that
+Let $f, f' : \mathbb{R} \to \mathbb{R}$ be functions such that
 for every $x \in [0, \pi]$ the function $f$ has derivative $f'(x)$ at $x$ within $[0, \pi]$, $f'$
 is continuous on $[0, \pi]$, and $f(0) = f(\pi) = 0$. Then
 $\int_0^\pi f(x)^2 \, dx \le \int_0^\pi f'(x)^2 \, dx$.

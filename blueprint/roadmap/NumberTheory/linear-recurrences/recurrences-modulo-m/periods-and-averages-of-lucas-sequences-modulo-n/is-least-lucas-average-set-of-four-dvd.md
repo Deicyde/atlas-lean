@@ -1,6 +1,6 @@
 # Multiples of $4$ in the average set when $P \equiv 0$ and $Q \equiv 1$
 
-**Multiples of $4$ in the average set when $P \equiv 0$ and $Q \equiv 1$.** Let $(P, Q)$ be a
+Let $(P, Q)$ be a
 nondegenerate Lucas pair with Lucas sequence $U$, period set $S(U)$ and average set $S'(U)$. Let
 $k \ge 2$, let $n_1$ be odd and put $n = 2^k n_1$. Suppose that $P \equiv 0$ and
 $Q \equiv 1 \pmod 4$, and that $P \equiv 0$ and $Q \equiv 1 \pmod{\ell}$ for every prime $\ell$

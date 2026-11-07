@@ -1,6 +1,6 @@
 # Parikh vectors add over concatenation
 
-**Parikh vectors add over concatenation.** Parikh vectors add over concatenation.
+Parikh vectors add over concatenation.
 
 ## Sources
 

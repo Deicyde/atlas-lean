@@ -1,6 +1,6 @@
 # Komatsu's conjecture on generalized Frobenius numbers of triangular triples
 
-**Komatsu's conjecture on generalized Frobenius numbers of triangular triples.** For a natural
+For a natural
 number $r$ write $t_r = r(r+1)/2$. Let $n$ and $s$ be natural numbers, let
 $N_{s+1} = 6\lfloor\sqrt{s+2}\rfloor - 6$ if $n$ is even and
 $N_{s+1} = 6\lfloor(\sqrt{4s+9} - 1)/2\rfloor - 3$ if $n$ is odd, and suppose $n > N_{s+1}$. Let

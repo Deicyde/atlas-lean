@@ -1,6 +1,6 @@
 # Permutations with all cycles of length $r$
 
-**Permutations with all cycles of length $r$.** A permutation $\sigma$ of
+A permutation $\sigma$ of
 $\{0, 1, \dots, n-1\}$ is an $r$-cycle permutation when every cycle of $\sigma$, fixed points
 counted as cycles of length one, has exactly $r$ elements: for every point $i$, exactly $r$
 points $j$ satisfy $\sigma^k(i) = j$ for some integer $k$. For $n = 0$ the condition holds for

@@ -1,6 +1,6 @@
 # The code of a finite-state binary machine
 
-**The code of a finite-state binary machine.** Let $M$ be a machine over the binary alphabet
+Let $M$ be a machine over the binary alphabet
 with $k$ work tapes and a finite set of states $Q$, and let $e : Q \to \mathbb{N}$. The code of
 $M$ with states numbered by $e$ has one table entry for each state $q \in Q$, symbol $a$ under
 the input head and symbols $w$ under the $k$ work heads (each a bit or blank): its key is

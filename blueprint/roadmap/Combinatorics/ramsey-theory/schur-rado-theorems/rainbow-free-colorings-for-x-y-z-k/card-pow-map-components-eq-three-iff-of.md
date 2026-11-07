@@ -1,6 +1,6 @@
 # Power digraphs modulo a prime with three components
 
-**Power digraphs modulo a prime with three components.** Let $p$ be a prime and $k \ge 3$ an
+Let $p$ be a prime and $k \ge 3$ an
 odd natural number, and let $G^k_p$ be the directed graph on $\mathbb{Z}/p\mathbb{Z}$ with an edge
 $a \to a^k$ from every vertex $a$. Its (weak) components are the classes of the equivalence
 relation "$a^{k^m} = b^{k^n}$ for some natural numbers $m, n$". Then $G^k_p$ has exactly three

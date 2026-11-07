@@ -1,6 +1,6 @@
 # Encoding DFA stays in its start state on left letters
 
-**Encoding DFA stays in its start state on left letters.** The encoding DFA stays in its start state while reading left
+The encoding DFA stays in its start state while reading left
 letters.
 
 ## Sources

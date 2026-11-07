@@ -1,3 +1,3 @@
 # False discovery proportion is nonnegative
 
-**False discovery proportion is nonnegative.** The false discovery proportion is nonnegative.
+The false discovery proportion is nonnegative.

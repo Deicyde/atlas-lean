@@ -1,6 +1,6 @@
 # Incomplete Lucas-Leonardo p-numbers
 
-**Incomplete Lucas-Leonardo p-numbers.** For natural numbers $p$, $n$ and $k$, the
+For natural numbers $p$, $n$ and $k$, the
 incomplete Lucas-Leonardo $p$-number is the rational number
 
 $$

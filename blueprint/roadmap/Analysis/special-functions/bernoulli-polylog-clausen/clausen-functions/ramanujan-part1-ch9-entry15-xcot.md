@@ -1,6 +1,6 @@
 # Entry 15 of Chapter 9: integrals of $u^n \cot u$ at $\pi/2 - x$
 
-**Entry 15 of Chapter 9: integrals of $u^n \cot u$ at $\pi/2 - x$.** For an integer $k \ge 0$
+For an integer $k \ge 0$
 and real $y$ write $F_k(y) = \int_{\pi/4}^{y} u^k \cot u \, du$. Let $n \ge 0$ be an integer. Then
 for every integer $k$ with $0 \le k \le n$ and every real $y$ with $0 < y < \pi$, the function
 $u \mapsto u^k \cot u$ is integrable on the interval between $\pi/4$ and $y$; and for every real

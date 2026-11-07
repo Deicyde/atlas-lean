@@ -1,6 +1,6 @@
 # Lit cells of a one-part increasing bargraph
 
-**Lit cells of a one-part increasing bargraph.** For every natural number $n \ge 1$, the
+For every natural number $n \ge 1$, the
 partition $(n)$ of $n$ with a single part has $n$ lit cells as a weakly increasing bargraph.
 
 ## Sources

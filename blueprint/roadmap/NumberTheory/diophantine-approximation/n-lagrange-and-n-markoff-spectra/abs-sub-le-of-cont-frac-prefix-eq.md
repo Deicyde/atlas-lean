@@ -1,6 +1,6 @@
 # Real numbers with a common continued fraction prefix are close
 
-**Real numbers with a common continued fraction prefix are close.** Let $\xi$ and $\xi'$ be
+Let $\xi$ and $\xi'$ be
 real numbers with continued fraction expansions $[a_0; a_1, a_2, \dots]$ and
 $[a_0'; a_1', a_2', \dots]$, computed by $\xi_0 = \xi$, $a_i = \lfloor \xi_i \rfloor$ and
 $\xi_{i+1} = 1/(\xi_i - a_i)$, stopping when $\xi_i = a_i$ (so an expansion is finite exactly when

@@ -1,6 +1,6 @@
 # Callan sequences
 
-**Callan sequences.** Let $k$ and $n$ be natural numbers. Form the blue base set
+Let $k$ and $n$ be natural numbers. Form the blue base set
 $\{1, \dots, k\} \cup \{\star_B\}$ and the red base set $\{1, \dots, n\} \cup \{\star_R\}$,
 where the blue star $\star_B$ and the red star $\star_R$ are new elements. An (unbarred)
 Callan sequence of size $k \times n$ consists of a natural number $m \le n$ together with a

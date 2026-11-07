@@ -1,6 +1,6 @@
 # MAX-CUT as an optimization problem
 
-**MAX-CUT as an optimization problem.** MAX-CUT is the optimization problem whose instances
+MAX-CUT is the optimization problem whose instances
 are bitstrings $x$, read as an adjacency matrix on $n = \lfloor \sqrt{|x|} \rfloor$ vertices in
 which, for $i < j < n$, bit $i n + j$ of $x$ (bits indexed from $0$) says whether $\{i, j\}$ is
 an edge. Its feasible solutions for $x$ are the bitstrings of length $n$, one bit per vertex;

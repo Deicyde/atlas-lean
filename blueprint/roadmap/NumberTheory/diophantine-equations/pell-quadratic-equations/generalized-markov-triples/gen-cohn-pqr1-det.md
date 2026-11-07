@@ -1,6 +1,6 @@
 # The matrices $P_{1;\ell}$, $Q_{1;\ell}$ and $R_{1;\ell}$ have determinant $1$
 
-**The matrices $P_{1;\ell}$, $Q_{1;\ell}$ and $R_{1;\ell}$ have determinant $1$.** For every
+For every
 natural number $k$ and every integer $\ell$, the $2 \times 2$ integer matrices $P_{1;\ell}$,
 $Q_{1;\ell}$ and $R_{1;\ell}$ (which depend on $k$) all have determinant $1$.
 

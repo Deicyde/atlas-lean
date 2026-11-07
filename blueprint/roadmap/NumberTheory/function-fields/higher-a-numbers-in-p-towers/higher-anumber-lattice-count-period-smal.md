@@ -1,6 +1,6 @@
 # Period of higher $a$-numbers for $d = 1$ or $d = 2$
 
-**Period of higher $a$-numbers for $d = 1$ or $d = 2$.** Let $p$ be a prime, let $d$ be $1$
+Let $p$ be a prime, let $d$ be $1$
 or $2$ with $d \mid p - 1$, let $r \ge 1$, let $\tau = (p + 1)/d$ and
 $\gamma = ((p - 1) r + (p + 1))/d$, and for each natural number $n$ let $A_r(n)$ be the
 lattice-point count for the $r$-th higher $a$-number at level $n$ and

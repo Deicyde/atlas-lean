@@ -1,6 +1,6 @@
 # Sum of squared distances about the centroid
 
-**Sum of squared distances about the centroid.** Let $x_i$ ($i \in \iota$) be points in a
+Let $x_i$ ($i \in \iota$) be points in a
 real inner product space $E$, let $s$ be a finite set of indices, and let $\mu$ be the centroid of
 the points $x_i$ with $i \in s$. Then for every point $c \in E$,
 

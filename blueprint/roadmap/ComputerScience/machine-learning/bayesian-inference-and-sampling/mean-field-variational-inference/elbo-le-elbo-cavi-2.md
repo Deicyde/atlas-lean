@@ -1,6 +1,6 @@
 # The CAVI update of the second factor does not decrease the ELBO
 
-**The CAVI update of the second factor does not decrease the ELBO.** Let $A$ and $B$ be finite
+Let $A$ and $B$ be finite
 sets with $B$ nonempty, let $p : A \times B \to \mathbb{R}$ be a joint, and let $q_1$ and $q_2$ be
 probability distributions on $A$ and $B$. Let $q_2^*$ be the CAVI update of the second factor
 given $q_1$, $q_2^*(b) = \exp F(b) / \sum_{b' \in B} \exp F(b')$ with

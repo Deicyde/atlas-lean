@@ -1,6 +1,6 @@
 # Number of non-overlined copies of a part size
 
-**Number of non-overlined copies of a part size.** For an overpartition $O$ of $n$ and a natural
+For an overpartition $O$ of $n$ and a natural
 number $a$, the number of non-overlined parts of size $a$ in $O$ is the multiplicity of $a$ in the
 underlying partition of $O$, minus $1$ if $a$ is overlined in $O$ and minus $0$ otherwise.
 

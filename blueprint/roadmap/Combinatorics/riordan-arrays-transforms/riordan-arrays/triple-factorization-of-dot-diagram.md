@@ -1,6 +1,6 @@
 # Peart–Woodson triple factorization of Riordan arrays
 
-**Peart–Woodson triple factorization of Riordan arrays.** Let $b$ be an integer, let
+Let $b$ be an integer, let
 $\varepsilon$, $\delta$ and $\lambda$ be real numbers, and let $g$ and $f$ be formal power series
 over $\mathbb{R}$ with $g(0) = 1$ and $f(0) = 0$. Write $r_{n,k}$ for the coefficient of $x^n$
 in $g f^k$, and suppose that for all natural numbers $n$ and $k$

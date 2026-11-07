@@ -1,6 +1,6 @@
 # Lower bounds for unitary s-Zumkeller numbers
 
-**Lower bounds for unitary s-Zumkeller numbers.** Let $n$ be a unitary s-Zumkeller
+Let $n$ be a unitary s-Zumkeller
 number, let $q$ be the least unitary divisor of $n$ greater than $1$, and for each prime $p$
 dividing $n$ let $k_p$ be the exponent of $p$ in $n$. Then, with both sums over all unitary
 divisors $d$ of $n$ (including $n$ itself), $n^2 (2/q^2 + 1) \le \sum_d d^2$ and

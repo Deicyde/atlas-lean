@@ -1,6 +1,6 @@
 # Reading a unary count
 
-**Reading a unary count.** Let $c$ be a bit, $n$ a natural number, $r$ a bit string, $w, t, b$
+Let $c$ be a bit, $n$ a natural number, $r$ a bit string, $w, t, b$
 symbol lists and $m, \ell$ counter values. Started at the label $\mathrm{un}(c)$ with any value
 of its Boolean variable, with $X$ holding the bits of $1^n 0 r$, with $W$, $T$, $B$ holding $w$,
 $t$, $b$, and with the counters $CC$ and $LC$ holding $m$ and $\ell$ in unary, the tokenizer

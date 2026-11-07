@@ -1,6 +1,6 @@
 # The Carmichael indices of 4 and 66
 
-**The Carmichael indices of 4 and 66.** The Carmichael index satisfies $N(4) = 2$ and
+The Carmichael index satisfies $N(4) = 2$ and
 $N(66) = 24$.
 
 ## Sources

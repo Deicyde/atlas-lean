@@ -1,6 +1,6 @@
 # Generating function for fixed column hooks of size $k$ in odd partitions
 
-**Generating function for fixed column hooks of size $k$ in odd partitions.** Let $n$,
+Let $n$,
 $m \ge 1$ and $k \ge 1$ be natural numbers and let $h < k$ be an integer.
 For a partition $\lambda$, write $\lambda_r$ for its $r$-th largest part ($0$ if it has fewer
 than $r$ parts), $\lambda'_m$ for the number of its parts that are at least $m$, and

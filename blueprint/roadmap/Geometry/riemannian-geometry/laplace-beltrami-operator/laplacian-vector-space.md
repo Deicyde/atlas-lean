@@ -1,6 +1,6 @@
 # Laplacian on a vector space as a sum of second directional derivatives
 
-**Laplacian on a vector space as a sum of second directional derivatives.** Let $F$ be a
+Let $F$ be a
 finite-dimensional real inner product space of dimension $n$ with its standard Riemannian
 metric, let $f : F \to \mathbb{R}$ and $x \in F$, and let $e_1, \dots, e_n$ be the orthonormal
 basis of the tangent space $T_xF$ used in the definition of the Laplacian, viewed as vectors of

@@ -1,6 +1,6 @@
 # Bubbles of size one on four vertices
 
-**Bubbles of size one on four vertices.** $B_{2,1} = 2$: the linear chord diagrams on $4$
+$B_{2,1} = 2$: the linear chord diagrams on $4$
 vertices have $2$ bubbles of size $1$ in total.
 
 ## Sources

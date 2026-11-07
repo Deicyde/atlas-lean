@@ -1,6 +1,6 @@
 # Zeilberger's lemma for gamma vectors
 
-**Zeilberger's lemma for gamma vectors.** Let $n$ be a natural number, let
+Let $n$ be a natural number, let
 $\gamma_0, \gamma_1, \gamma_2, \dots$ be rational numbers, and let $h \in \mathbb{Q}[x]$ be the
 polynomial $h(x) = \sum_{j=0}^{\lfloor n/2 \rfloor} \gamma_j \, x^j (1 + x)^{n - 2j}$. Let
 $c(x) = \sum_{m \ge 0} C_m x^m \in \mathbb{Q}[[x]]$ be the generating function of the Catalan

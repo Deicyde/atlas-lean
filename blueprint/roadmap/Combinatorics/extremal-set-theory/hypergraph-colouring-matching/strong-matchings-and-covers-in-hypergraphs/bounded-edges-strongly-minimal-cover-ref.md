@@ -1,6 +1,6 @@
 # Aharoni's strongly minimal cover conjecture is false
 
-**Aharoni's strongly minimal cover conjecture is false.** There are a type $V$, a set $E$ of
+There are a type $V$, a set $E$ of
 finite subsets of $V$ (the edges of a hypergraph) and a natural number $k$ such that every edge in
 $E$ is nonempty and has at most $k$ elements, but no strongly minimal cover of $E$ exists. Here a
 cover of $E$ is a set $X \subseteq V$ that meets every edge in $E$, and a cover $X$ is strongly

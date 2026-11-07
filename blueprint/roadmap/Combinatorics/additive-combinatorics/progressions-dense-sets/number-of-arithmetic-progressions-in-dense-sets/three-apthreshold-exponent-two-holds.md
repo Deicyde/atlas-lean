@@ -1,6 +1,6 @@
 # Erdős Problem 179: $\log F_3(N, \ell) / \log N$ tends to $2$
 
-**Erdős Problem 179: $\log F_3(N, \ell) / \log N$ tends to $2$.** For every natural number
+For every natural number
 $\ell > 3$, $\log F_3(N, \ell) / \log N \to 2$ as $N \to \infty$ over the natural numbers, where
 $F_3(N, \ell)$ is the least natural number $m$ such that every $N$-element set
 $A \subseteq \mathbb{N}$ containing at least $m$ three-term arithmetic progressions

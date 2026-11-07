@@ -1,6 +1,6 @@
 # The Gaussian-mixture responsibilities are the common-variance responsibilities
 
-**The Gaussian-mixture responsibilities are the common-variance responsibilities.** Let
+Let
 $\theta$ be valid parameters of an isotropic Gaussian mixture with $K$ components on
 $\mathbb{R}^d$, with weights $w_k$, means $\mu_k$ and variances all equal to a real number $v$.
 Then for every point $x \in \mathbb{R}^d$ and every component $k$, the responsibility of $k$ at

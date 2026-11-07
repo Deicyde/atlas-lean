@@ -1,6 +1,6 @@
 # Prime-power congruences modulo 24 for triples of 2-regular partitions
 
-**Prime-power congruences modulo 24 for triples of 2-regular partitions.** Let $T_2(n)$ be
+Let $T_2(n)$ be
 the number of triples of 2-regular partitions (partitions with no even part) whose sizes add up
 to $n$. Let $p \ne 3$ be a prime with $p \equiv 3$, $5$ or $7 \pmod 8$. Then for all natural
 numbers $n$ and $\alpha$ with $p \nmid n$,

@@ -1,6 +1,6 @@
 # Iterated prime-power congruence for Euler products
 
-**Iterated prime-power congruence for Euler products.** For a natural number $l$ write
+For a natural number $l$ write
 $f_l = \prod_{i \ge 1} (1 - q^{li})$, an integer power series in $q$. Let $p$ be a prime and let
 $k, l, s, m$ be natural numbers with $l \ge 1$, $s \ge 1$, $m \ge 1$ and $s \le k$. Then for
 every natural number $n$, the coefficients of $q^n$ in $f_l^{p^k m}$ and in

@@ -1,6 +1,6 @@
 # Iterated Gamma values as power towers
 
-**Iterated Gamma values as power towers.** Let $z > 1$ be a real number with
+Let $z > 1$ be a real number with
 $\Gamma(z) = z$, let $b > e^{1/e}$ and $x > z$ be real numbers, let $\Gamma^n$ be the $n$-fold
 iterate of $\Gamma$, and for a real number $c$ and $m \ge 0$ let $E_m(b, c)$ be the $m$-fold
 iterate of $y \mapsto b^y$ starting at $c$. Then there are an integer $\ell$, a natural number

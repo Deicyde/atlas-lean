@@ -1,6 +1,6 @@
 # Li's coefficients $a(r, m, j)$
 
-**Li's coefficients $a(r, m, j)$.** The rational numbers $a(r, m, j)$, for natural numbers
+The rational numbers $a(r, m, j)$, for natural numbers
 $r$, $m$, $j$, are defined by recursion on $r$. For all $m$ and $j$, $a(0, m, j) = 0$; moreover
 $a(1, 0, 0) = 1$ and $a(1, m, j) = 0$ for $(m, j) \ne (0, 0)$. For $r \ge 1$ the values of
 order $r + 1$ are as follows. First,

@@ -1,6 +1,6 @@
 # Zero is good for every pair
 
-**Zero is good for every pair.** For all integers $a$ and $b$, the rational number $0$ is good
+For all integers $a$ and $b$, the rational number $0$ is good
 for $(a, b)$.
 
 ## Sources

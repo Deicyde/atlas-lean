@@ -1,6 +1,6 @@
 # Repetend digits are symmetric under inverse indices
 
-**Repetend digits are symmetric under inverse indices.** Let $n, b, x, j, j'$ be natural
+Let $n, b, x, j, j'$ be natural
 numbers and $L \ge 1$, and suppose $b$ has multiplicative order $L$ modulo $n$. For $y, c \ge 0$
 put $b_y = b^y \bmod n$ and $r_{y,c} = \lfloor b_y^{c+1}/n \rfloor \bmod b_y$, the $c$-th digit
 of $1/n$ in base $b_y$. If $\gcd(j, L) = 1$ and $j j' \equiv 1 \pmod L$, then

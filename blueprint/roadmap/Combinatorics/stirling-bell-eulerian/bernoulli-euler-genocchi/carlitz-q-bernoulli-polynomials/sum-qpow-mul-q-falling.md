@@ -1,6 +1,6 @@
 # Sums of $q^{ir}$ times $q$-falling factorials
 
-**Sums of $q^{ir}$ times $q$-falling factorials.** Let $q > 0$ with $q \ne 1$, let
+Let $q > 0$ with $q \ne 1$, let
 $[x] = (q^x - 1)/(q - 1)$, and write $[x]_m = [x][x-1]\cdots[x-m+1]$ for the $q$-falling factorial
 (with $[x]_0 = 1$). Then for all natural numbers $r \ge 1$, $k$ and $N$,
 

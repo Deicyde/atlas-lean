@@ -1,6 +1,6 @@
 # Dirichlet's theorem on pointwise convergence of Fourier series
 
-**Dirichlet's theorem on pointwise convergence of Fourier series.** Let
+Let
 $f \colon \mathbb{R} \to \mathbb{C}$ be $2\pi$-periodic and continuously differentiable, and for
 $n \in \mathbb{Z}$ let $\hat f_n = \frac{1}{2\pi} \int_0^{2\pi} e^{-int} f(t)\,dt$ be the $n$-th
 Fourier coefficient of $f$ on $[0, 2\pi]$. Then for every $x \in \mathbb{R}$ the symmetric Fourier

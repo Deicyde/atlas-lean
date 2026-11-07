@@ -1,6 +1,6 @@
 # Gcd of the coefficients of $(u + \sqrt{v})^n$
 
-**Gcd of the coefficients of $(u + \sqrt{v})^n$.** Let $u, v$ be coprime positive integers
+Let $u, v$ be coprime positive integers
 with $\sqrt{v}$ irrational, let $a_n, b_n$ (for natural $n$) be integers with
 $(u + \sqrt{v})^n = a_n + b_n \sqrt{v}$ for every $n \ge 1$, and let $D_n \ge 0$ be the greatest
 common divisor of $a_n$ and $b_n$. Then for every $n \ge 1$:

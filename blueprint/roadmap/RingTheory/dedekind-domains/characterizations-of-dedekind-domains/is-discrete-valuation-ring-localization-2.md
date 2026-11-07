@@ -1,6 +1,6 @@
 # Principal quotients give discrete valuation rings at nonzero primes
 
-**Principal quotients give discrete valuation rings at nonzero primes.** Let $A$ be an
+Let $A$ be an
 integral domain such that for every nonzero ideal $I$ of $A$ the quotient ring $A/I$ is a
 principal ideal ring. Then for every nonzero prime ideal $P$ of $A$, the localization $A_P$ is a
 discrete valuation ring.

@@ -1,6 +1,6 @@
 # Linear bounded automaton
 
-**Linear bounded automaton.** A **linear bounded automaton**: a nondeterministic Turing machine whose
+A **linear bounded automaton**: a nondeterministic Turing machine whose
 tape is the input word. The transition function gives, for a state, the
 symbol under the head (`none` for a blank cell), and the boundary tag of
 the head position, the finite set of possible next states, symbols to

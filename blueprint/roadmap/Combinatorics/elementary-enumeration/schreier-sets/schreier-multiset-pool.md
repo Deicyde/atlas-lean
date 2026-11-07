@@ -1,6 +1,6 @@
 # Ground multiset for Schreier-type multisets
 
-**Ground multiset for Schreier-type multisets.** For natural numbers $s$ and $n$, this is the
+For natural numbers $s$ and $n$, this is the
 multiset $\{1^s, \dots, (n - 1)^s, n\}$, in which each of $1, \dots, n - 1$ has multiplicity $s$
 and $n$ appears once.
 

@@ -1,6 +1,6 @@
 # Ramanujan's $\tau$ modulo $19$ via $\tau_5$
 
-**Ramanujan's $\tau$ modulo $19$ via $\tau_5$.** Let $\tau = \tau_{24}$ be Ramanujan's tau
+Let $\tau = \tau_{24}$ be Ramanujan's tau
 function, where $\tau_k$ is the generalized tau function, and let $P(r) = r(3r - 1)/2$ for
 integers $r$. For every integer $n \ge 1$,
 

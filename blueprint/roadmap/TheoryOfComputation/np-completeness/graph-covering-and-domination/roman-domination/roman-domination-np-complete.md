@@ -1,6 +1,6 @@
 # ROMAN DOMINATION is NP-complete
 
-**ROMAN DOMINATION is NP-complete.** The decision problem ROMAN DOMINATION belongs to NP, and
+The decision problem ROMAN DOMINATION belongs to NP, and
 every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

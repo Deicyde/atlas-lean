@@ -1,6 +1,6 @@
 # Constant offset of a literal in a block
 
-**Constant offset of a literal in a block.** Let $L$ be a layout with $K$ stacks, $g$ symbol
+Let $L$ be a layout with $K$ stacks, $g$ symbol
 codes and window depth $d$, let $N \in \mathbb{N}$ be the number of situations, and let
 $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$ and $\mathrm{pu}$ give the situation offsets, push
 counts, consumed counts and pushed codes. For a situation $i < N$, a stack $k < K$, a clause kind

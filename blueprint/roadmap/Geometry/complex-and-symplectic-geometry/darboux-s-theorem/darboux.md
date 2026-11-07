@@ -1,6 +1,6 @@
 # Darboux's theorem
 
-**Darboux's theorem.** Let $n$ be a natural number, let $U$ be an open subset of the model
+Let $n$ be a natural number, let $U$ be an open subset of the model
 space $\mathbb{R}^{2n}$, and let $\alpha$ be a field of continuous alternating 2-forms on
 $\mathbb{R}^{2n}$ that is symplectic on $U$. Then for every $x \in U$ there is an open partial
 homeomorphism $\varphi$ of $\mathbb{R}^{2n}$ whose source contains $x$ and is contained in $U$, such

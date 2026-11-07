@@ -1,6 +1,6 @@
 # Three-colored distinct-part partitions of $0$
 
-**Three-colored distinct-part partitions of $0$.** The number $D_3(0)$ of partitions of $0$ into
+The number $D_3(0)$ of partitions of $0$ into
 parts of three colors, with the parts of each color distinct, equals $1$: the empty partition is
 the only one.
 

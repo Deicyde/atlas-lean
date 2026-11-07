@@ -1,6 +1,6 @@
 # Whitt's generalized Catalan number at one
 
-**Whitt's generalized Catalan number at one.** For every rational number $\alpha$, Whitt's
+For every rational number $\alpha$, Whitt's
 generalized Catalan number $C(\alpha, 1)$ equals $1$.
 
 ## Sources

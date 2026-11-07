@@ -1,6 +1,6 @@
 # Almost primes of almost prime index
 
-**Almost primes of almost prime index.** For natural numbers $k_1, \dots, k_m$ with $m \ge 1$,
+For natural numbers $k_1, \dots, k_m$ with $m \ge 1$,
 the set $N_{k_1 \cdots k_m}$ of natural numbers is defined by recursion on $m$: $N_{k_1}$ is the
 set of $k_1$-almost primes (the $n \ne 0$ with exactly $k_1$ prime factors counted with
 multiplicity), and for $m \ge 2$, $N_{k_1 \cdots k_m}$ is the set of the $i$th $k_1$-almost

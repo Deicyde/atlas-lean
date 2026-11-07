@@ -1,6 +1,6 @@
 # Knight distance asymptotics
 
-**Knight distance asymptotics.** There is an absolute constant $M \in \mathbb{R}$ with the
+There is an absolute constant $M \in \mathbb{R}$ with the
 following property. Let $a$ and $b$ be natural numbers with $1 \le a < b$, $\gcd(a, b) = 1$ and
 $a + b$ odd, let $N_{a,b} = \{(\pm a, \pm b), (\pm b, \pm a)\}$ be the $(a,b)$-knight's move set,
 and for $p \in \mathbb{Z}^2$ let $d_{a,b}(p)$ be the piece distance of $p$ for $N_{a,b}$. Then

@@ -1,6 +1,6 @@
 # One-hot generator: the routine for one literal
 
-**One-hot generator: the routine for one literal.** Let $L$ be a layout with $g$ symbol codes,
+Let $L$ be a layout with $g$ symbol codes,
 $c$ a clause kind of a cell of $L$ and $l < g$ a literal index, and write $\mathrm{off}_c(l)$ for
 the offset of literal $l$ of $c$ from the cell base. The routine for literal $l$ of $c$ is the
 following fragment of the one-hot generator for $L$, which acts on unit counters and a Boolean

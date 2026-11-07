@@ -1,6 +1,6 @@
 # CAT(0) four-point condition
 
-**CAT(0) four-point condition.** A metric space $X$ satisfies the CAT(0) four-point
+A metric space $X$ satisfies the CAT(0) four-point
 comparison condition if for all points $x, y, z, w \in X$ (not necessarily distinct),
 
 $$d(x, z)^2 + d(y, w)^2 \le d(x, y)^2 + d(y, z)^2 + d(z, w)^2 + d(w, x)^2,$$

@@ -1,6 +1,6 @@
 # σ-soluble supplements to the maximal subgroups of Sylow subgroups (Kourovka 19.87)
 
-**σ-soluble supplements to the maximal subgroups of Sylow subgroups (Kourovka 19.87).** Let $\sigma$
+Let $\sigma$
 be a partition of the set of all primes and let $G$ be a finite group. If for every prime $p$, every
 Sylow $p$-subgroup $P$ of $G$ and every maximal subgroup $V$ of $P$ there is a $\sigma$-soluble
 subgroup $T$ of $G$ with $VT = G$, that is, every element of $G$ is a product $vt$ with $v \in V$

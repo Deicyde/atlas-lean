@@ -1,6 +1,6 @@
 # The Cohn labeling is injective and increasing
 
-**The Cohn labeling is injective and increasing.** Fix a natural number $k$ and an integer
+Fix a natural number $k$ and an integer
 $\ell$. Write fractions $a/b$, with $a$ and $b$ natural numbers, as pairs $(a, b)$, compared by
 cross multiplication ($a/b < c/d$ means $ad < cb$), and write $C = C_q(k, \ell)$ when the
 matrix $C$ carries the fraction label $q$ in the $k$-generalized Cohn tree $\mathrm{GCT}(k, \ell)$.

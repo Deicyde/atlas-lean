@@ -1,6 +1,6 @@
 # Schmidt's subspace theorem
 
-**Schmidt's subspace theorem.** Let $\sigma$ be a finite set with at least two elements, and
+Let $\sigma$ be a finite set with at least two elements, and
 for $i \in \sigma$ let $L_i(x) = \sum_{j \in \sigma} a_{ij} x_j$ be linear forms whose
 coefficients $a_{ij} \in \mathbb{C}$ are algebraic over $\mathbb{Q}$ and whose coefficient
 vectors $(a_{ij})_{j \in \sigma}$ are linearly independent over $\mathbb{C}$. Let

@@ -1,6 +1,6 @@
 # Lifting a substitution under a binder (simply typed lambda calculus)
 
-**Lifting a substitution under a binder (simply typed lambda calculus).** Write $A :: \Gamma$
+Write $A :: \Gamma$
 for the context $\Gamma$ extended by a newest variable of type $A$. Given a substitution $\sigma$
 from a context $\Gamma$ to a context $\Delta$ and a type $A$, its lift is the substitution from
 $A :: \Gamma$ to $A :: \Delta$ that sends the newest variable to the term consisting of the

@@ -1,6 +1,6 @@
 # Direct limit of topological spaces
 
-**Direct limit of topological spaces.** Let $I$ be a preorder, $(X_i)_{i \in I}$ a family
+Let $I$ be a preorder, $(X_i)_{i \in I}$ a family
 of topological spaces, and $f_{ij} : X_i \to X_j$ for $i \le j$ continuous maps forming a
 directed system ($f_{ii}$ is the identity and $f_{jk} \circ f_{ij} = f_{ik}$ for
 $i \le j \le k$). The direct limit $\varinjlim X_i$ is the quotient of the disjoint union

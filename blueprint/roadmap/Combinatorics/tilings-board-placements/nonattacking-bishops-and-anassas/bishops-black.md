@@ -1,6 +1,6 @@
 # Nonattacking bishops on the black squares
 
-**Nonattacking bishops on the black squares.** For natural numbers $m$ and $k$, $R_K(m, k)$ is
+For natural numbers $m$ and $k$, $R_K(m, k)$ is
 the number of $k$-element sets of black squares of the $m \times m$ board $S_m = [1, m]^2$ (the
 squares $(i, j)$ with $i + j$ odd) no two of which lie on a common line of slope $1$ or $-1$, that
 is, the number of ways to place $k$ nonattacking bishops on the black squares of $S_m$.

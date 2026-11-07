@@ -1,6 +1,6 @@
 # Formulas for the Lehmer bounds
 
-**Formulas for the Lehmer bounds.** Let $L(t; r)$ and $U(t; r)$ be the lower and upper
+Let $L(t; r)$ and $U(t; r)$ be the lower and upper
 Lehmer bounds of a list $t$ of real numbers, and write $\emptyset$ for the empty list. Then
 $L(\emptyset; r) = 1$ for every $r \ge 1$, and $U(\emptyset; r) = 2^r - 1$ for every natural
 number $r$. Let $t = (t_1, \dots, t_s)$ with $s \ge 1$ and $2 \le t_1 \le \dots \le t_s$, and

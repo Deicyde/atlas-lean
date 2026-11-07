@@ -1,6 +1,6 @@
 # Alfred's determinant of consecutive Fibonacci powers
 
-**Alfred's determinant of consecutive Fibonacci powers.** Let $F_n$ denote the Fibonacci numbers
+Let $F_n$ denote the Fibonacci numbers
 extended to all integers $n$ by $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = F_{n+1} + F_n$, so that
 $F_{-n} = (-1)^{n+1} F_n$. For every natural number $r$ and all integers $s$ and $k$, the
 $(r+1) \times (r+1)$ integer matrix whose entry in row $i$ and column $j$, for

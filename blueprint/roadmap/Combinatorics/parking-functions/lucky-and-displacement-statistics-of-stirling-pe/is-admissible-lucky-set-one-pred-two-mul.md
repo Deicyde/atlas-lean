@@ -1,6 +1,6 @@
 # When $\{1, n - 1, 2n - 2\}$ is an admissible lucky set
 
-**When $\{1, n - 1, 2n - 2\}$ is an admissible lucky set.** For every integer $n \ge 4$, the
+For every integer $n \ge 4$, the
 set $\{1, n - 1, 2n - 2\}$ is an $n$-admissible lucky set if and only if $n$ is even.
 
 As printed the claim covers all $n$, but it fails at $n = 3$: $w = 133221$ is a Stirling

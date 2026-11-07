@@ -1,6 +1,6 @@
 # Cost of the Fisher–Yates shuffle
 
-**Cost of the Fisher–Yates shuffle.** For every vector $x$ of length $n$ and every draw
+For every vector $x$ of length $n$ and every draw
 history $d$, which assigns to each position $i < n$ a number $d_i$ with $0 \le d_i < n - i$, the
 Fisher–Yates computation on $x$ and $d$ has cost pair $(n, n)$: it retrieves exactly $n$ draws
 and performs exactly $n$ swaps.

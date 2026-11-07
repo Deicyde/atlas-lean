@@ -1,6 +1,6 @@
 # Composition of shifted Stirling matrices
 
-**Composition of shifted Stirling matrices.** For natural numbers $m$ and $n$, let $S^{[m]}(n)$
+For natural numbers $m$ and $n$, let $S^{[m]}(n)$
 be the $n \times n$ rational matrix with entries $S(i + m, j)$ for $1 \le i, j \le n$, where
 $S(i, j)$ denotes the Stirling numbers of the second kind, and let $s(n)$ be the $n \times n$
 rational matrix with entries the signed Stirling numbers of the first kind $s(i, j)$ for

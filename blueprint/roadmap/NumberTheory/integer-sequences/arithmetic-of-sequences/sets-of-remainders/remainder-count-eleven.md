@@ -1,6 +1,6 @@
 # The remainder count of 11
 
-**The remainder count of 11.** The number $s(11)$ of distinct remainders $11 \bmod k$ for
+The number $s(11)$ of distinct remainders $11 \bmod k$ for
 $1 \le k \le 5$ equals $4$.
 
 These remainders form the set $S(11) = \{0, 1, 2, 3\}$ (Table 1 of the paper).

@@ -1,6 +1,6 @@
 # A $(k+1:k)$-pebbling move
 
-**A $(k+1:k)$-pebbling move.** Let $a = (a_0, \dots, a_{n-1})$ be a distribution of pebbles on
+Let $a = (a_0, \dots, a_{n-1})$ be a distribution of pebbles on
 the vertices $0, \dots, n-1$, let $k$ be a natural number and let $i$ and $j$ be vertices. The
 position after the $(k+1:k)$-pebbling move from $i$ to $j$ is the distribution $b$ with
 $b_j = a_j + k$, $b_i = a_i - (k + 1)$ if $i \ne j$, and $b_x = a_x$ for every other vertex $x$.

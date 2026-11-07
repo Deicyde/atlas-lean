@@ -1,6 +1,5 @@
 # Perfect covers of an elementary abelian group of order 4 or 8 times a cyclic 2-group
 
-**Perfect covers of an elementary abelian group of order 4 or 8 times a cyclic 2-group.**
 Write $C(K)$ for the number of perfect covers of a group $K$. For every $n \ge 0$,
 $C((\mathbb{Z}_2)^2 \oplus \mathbb{Z}_{2^n}) = 2^{2n-2} \, 2^{n(n-1)/2} \, (3n^2 + 13n + 12)$
 and

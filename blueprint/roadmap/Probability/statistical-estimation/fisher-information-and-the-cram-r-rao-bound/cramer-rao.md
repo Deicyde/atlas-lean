@@ -1,6 +1,6 @@
 # Cramér–Rao inequality
 
-**Cramér–Rao inequality.** Let `p θ'` be probability densities with respect to `ν` for
+Let `p θ'` be probability densities with respect to `ν` for
 `θ'` near `θ`, differentiable in the parameter at `θ`, with finite positive Fisher information
 `I(θ)`, and let `T` be an estimator with finite second moment that is unbiased for `g θ'` near
 `θ`. If `∫ p θ' dν` and `∫ T p θ' dν` can be differentiated under the integral sign at `θ`,

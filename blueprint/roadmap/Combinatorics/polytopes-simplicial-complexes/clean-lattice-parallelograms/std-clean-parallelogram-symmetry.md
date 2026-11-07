@@ -1,6 +1,6 @@
 # The point reflection symmetry of $P_{a,n}$
 
-**The point reflection symmetry of $P_{a,n}$.** Let $a$ and $n$ be natural numbers with
+Let $a$ and $n$ be natural numbers with
 $1 \le a < n$ and $\gcd(a, n) = 1$, let $P_{a,n} \subseteq \mathbb{R}^2$ be the parallelogram
 with vertices $(0, 0)$, $(1, 0)$, $(a, n)$, $(a + 1, n)$, and let
 $S : \mathbb{R}^2 \to \mathbb{R}^2$ be $S(x, y) = (a + 1 - x, n - y)$. Then $S(P_{a,n}) = P_{a,n}$,

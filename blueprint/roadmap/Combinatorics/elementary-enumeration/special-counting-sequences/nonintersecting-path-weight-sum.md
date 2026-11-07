@@ -1,6 +1,6 @@
 # Weighted sum over nonintersecting path families
 
-**Weighted sum over nonintersecting path families.** Let $R$ be a commutative semiring, let
+Let $R$ be a commutative semiring, let
 $x = (x_j)_{j \in \mathbb{N}}$ be a family of elements of $R$, let $n \in \mathbb{N}$, and let
 $p = (p_1, \dots, p_n)$ and $q = (q_1, \dots, q_n)$ be tuples of points of $\mathbb{N}^2$. The
 nonintersecting path weight sum of type $(p, q)$ is

@@ -1,3 +1,3 @@
 # Change of a vertex weight when one more cell is incident
 
-**Change of a vertex weight when one more cell is incident.** The change of a vertex weight when one more cell becomes incident.
+The change of a vertex weight when one more cell becomes incident.

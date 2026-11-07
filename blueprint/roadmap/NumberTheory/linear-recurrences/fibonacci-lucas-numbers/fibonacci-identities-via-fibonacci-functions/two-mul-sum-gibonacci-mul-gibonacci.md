@@ -1,6 +1,6 @@
 # Sum of products of two gibonacci sequences
 
-**Sum of products of two gibonacci sequences.** Let $G, H \colon \mathbb{Z} \to \mathbb{R}$
+Let $G, H \colon \mathbb{Z} \to \mathbb{R}$
 satisfy $G_{j+2} = G_{j+1} + G_j$ and $H_{j+2} = H_{j+1} + H_j$ for every integer $j$. For every
 natural number $n$ and all integers $k$ and $s$,
 

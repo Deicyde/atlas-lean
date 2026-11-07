@@ -1,6 +1,6 @@
 # Uniform covering of symmetric bodies and uniform illumination by external points
 
-**Uniform covering of symmetric bodies and uniform illumination by external points.** For
+For
 integers $n \ge 1$ and $q \ge 0$, every centrally symmetric convex body in $\mathbb{R}^n$ (a
 compact convex set with nonempty interior that is symmetric about some point) can be covered by
 $q$ translates of its interior if and only if every centrally symmetric convex body $K$ in

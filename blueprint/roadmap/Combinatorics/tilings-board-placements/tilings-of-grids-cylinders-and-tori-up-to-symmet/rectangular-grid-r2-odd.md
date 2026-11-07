@@ -1,6 +1,6 @@
 # Rectangular-grid tilings fixed by the half-turn, $nm$ odd
 
-**Rectangular-grid tilings fixed by the half-turn, $nm$ odd.** Let $n$ and $m$ be positive
+Let $n$ and $m$ be positive
 integers with $nm$ odd, let $T$ be a finite set of tiles, let $\sigma$ be a permutation of $T$ with
 $\sigma^2 = 1$, and let $t$ be the number of tiles $d \in T$ with $\sigma(d) = d$. Let $r^2$ be
 the half-turn of $\mathbb{Z}/n \times \mathbb{Z}/m$ given by $r^2(x, y) = (-1 - x, -1 - y)$. Then

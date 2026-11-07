@@ -1,6 +1,6 @@
 # Existential until as a least fixed point
 
-**Existential until as a least fixed point.** In a labelled transition system with a
+In a labelled transition system with a
 valuation of atoms, let $\varphi$ and $\psi$ be CTL formulas, write $\mathrm{Sat}(\chi)$ for the
 set of states satisfying a formula $\chi$, and write $\mathrm{Pre}_\exists(Z)$ for the set of
 states having a transition into a set $Z$ of states. Then the set of states satisfying

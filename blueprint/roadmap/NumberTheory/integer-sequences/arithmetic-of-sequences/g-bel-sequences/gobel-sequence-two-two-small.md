@@ -1,6 +1,6 @@
 # Göbel's original sequence
 
-**Göbel's original sequence.** The $(2, 2)$-Göbel sequence $g_{2,2}$ satisfies
+The $(2, 2)$-Göbel sequence $g_{2,2}$ satisfies
 $g_{2,2}(2) = 3$, $g_{2,2}(3) = 5$, $g_{2,2}(4) = 10$ and $g_{2,2}(5) = 28$.
 
 ## Sources

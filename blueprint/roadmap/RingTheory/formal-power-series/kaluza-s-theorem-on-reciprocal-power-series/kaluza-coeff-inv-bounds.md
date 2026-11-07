@@ -1,6 +1,6 @@
 # Kaluza's bounds for the coefficients of a reciprocal power series
 
-**Kaluza's bounds for the coefficients of a reciprocal power series.** Let
+Let
 $f = \sum_n a_n X^n$ be a real formal power series with positive log-convex coefficients, and
 let $f^{-1} = \sum_n b_n X^n$ be its reciprocal in the ring of formal power series. Then
 $b_0 = a_0^{-1}$, $b_0 > 0$, and $-a_n / a_0^2 \le b_n \le 0$ for every $n \ge 1$.

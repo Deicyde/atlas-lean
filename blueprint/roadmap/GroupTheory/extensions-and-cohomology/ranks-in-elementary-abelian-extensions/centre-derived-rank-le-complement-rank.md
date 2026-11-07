@@ -1,6 +1,6 @@
 # Zenkov's rank bound in elementary abelian extensions (Kourovka 21.150)
 
-**Zenkov's rank bound in elementary abelian extensions (Kourovka 21.150).** Call a subgroup
+Call a subgroup
 elementary abelian if it is abelian and there is a prime $p$ with $x^p = 1$ for all its elements
 $x$. This is the proposition that for every finite group $G$, all elementary abelian subgroups $A$
 and $B$ of $G$ (possibly for different primes) with $A$ normal, $A \cap B = 1$ and

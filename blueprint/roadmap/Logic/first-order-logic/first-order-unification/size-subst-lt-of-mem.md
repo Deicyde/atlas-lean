@@ -1,6 +1,6 @@
 # Occurs check: size bound
 
-**Occurs check: size bound.** Let $x$ be a variable and $t$ a term in which $x$ occurs, with
+Let $x$ be a variable and $t$ a term in which $x$ occurs, with
 $t$ not the variable $x$ itself. Then for every substitution $\sigma$, the term $\sigma(x)$ has
 strictly smaller size than $t\sigma$, the result of applying $\sigma$ to $t$.
 

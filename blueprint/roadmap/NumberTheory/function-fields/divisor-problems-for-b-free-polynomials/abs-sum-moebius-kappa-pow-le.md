@@ -1,6 +1,6 @@
 # Bound on the Möbius sum over κ-th powers
 
-**Bound on the Möbius sum over κ-th powers.** Let $F$ be a finite field with $q$ elements and
+Let $F$ be a finite field with $q$ elements and
 let $\kappa$ assign a natural number to each polynomial in $F[T]$, with $\kappa(P) \ge 2$ for
 every monic irreducible $P$. Let $\kappa_{\min}$ be the minimum of $\kappa(P)$ over the monic
 irreducible $P$, and for monic $r = \prod_P P^{\nu_P}$ write

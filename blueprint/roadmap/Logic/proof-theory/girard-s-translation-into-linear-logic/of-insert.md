@@ -1,6 +1,6 @@
 # Separating a new hypothesis in the translation
 
-**Separating a new hypothesis in the translation.** Let $f$ map propositional atoms to CLL
+Let $f$ map propositional atoms to CLL
 propositions, let $\Gamma$ be a finite set of propositional formulas, $A$ a propositional formula
 and $c$ a CLL proposition. Write $B^\circ$ for Girard's translation of a formula $B$ with atoms
 translated by $f$, and $?\Delta^{\circ\perp}$ for the multiset of the propositions

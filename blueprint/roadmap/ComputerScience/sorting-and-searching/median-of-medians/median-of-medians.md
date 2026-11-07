@@ -1,6 +1,6 @@
 # Median-of-medians selection
 
-**Median-of-medians selection.** Given a list $L$ over a linear order and a zero-based rank
+Given a list $L$ over a linear order and a zero-based rank
 $k$, median-of-medians selection returns either an element of $L$ or nothing, charging one unit
 of cost per order comparison. If $k \ge |L|$, where $|L|$ is the length of $L$, it returns
 nothing at no cost. Otherwise it runs the following recursive procedure on $(L, k)$ with a budget

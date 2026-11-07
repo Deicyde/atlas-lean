@@ -1,6 +1,6 @@
 # Gowers–Green–Manners–Tao theorem (polynomial Freiman–Ruzsa over $\mathbb{F}_2$)
 
-**Gowers–Green–Manners–Tao theorem (polynomial Freiman–Ruzsa over $\mathbb{F}_2$).** The
+The
 polynomial Freiman–Ruzsa conjecture over $\mathbb{F}_2$ holds: there are real polynomials $P$ and
 $Q$, with $P(K) > 0$ and $Q(K) > 0$ for every real $K \ge 1$, such that for every
 $n \in \mathbb{N}$, every nonempty finite set $A \subseteq \mathbb{F}_2^n$ and every real $K \ge 1$

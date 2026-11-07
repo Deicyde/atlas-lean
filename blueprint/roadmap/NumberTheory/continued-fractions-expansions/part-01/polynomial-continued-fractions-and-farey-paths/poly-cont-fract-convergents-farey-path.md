@@ -1,6 +1,6 @@
 # Convergents of a polynomial continued fraction form a Farey path
 
-**Convergents of a polynomial continued fraction form a Farey path.** Let $F$ be a field, let
+Let $F$ be a field, let
 $n \in \mathbb N$, and let $a_0, a_1, \dots, a_n \in F[X]$ with $a_i$ nonconstant for
 $1 \le i \le n$. Write $A_i$ and $B_i$ for the numerator and the denominator of the $i$th
 convergent $A_i / B_i$ of the continued fraction $[a_0, a_1, \dots, a_n]$ over $F(X)$. Then for

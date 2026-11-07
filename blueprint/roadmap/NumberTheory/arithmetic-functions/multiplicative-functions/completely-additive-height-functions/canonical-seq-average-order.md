@@ -1,6 +1,6 @@
 # Average order of the canonical sequential realization
 
-**Average order of the canonical sequential realization.** Let $(\pi_k)_{k \ge 1}$ be a
+Let $(\pi_k)_{k \ge 1}$ be a
 sequence of nonnegative integers with partial sums $\Pi_k = \sum_{1 \le j \le k} \pi_j$, let
 $H_{\mathrm{seq}}$ be its canonical sequential realization, and suppose that $C > 0$ and
 $\alpha > 0$ are real numbers with $\Pi_k \sim C k^\alpha$ as $k \to \infty$. Then, as

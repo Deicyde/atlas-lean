@@ -1,6 +1,6 @@
 # Arithmetic billiards in a tilted rectangle
 
-**Arithmetic billiards in a tilted rectangle.** Let $p$ be a prime with $p \equiv 1 \pmod 4$
+Let $p$ be a prime with $p \equiv 1 \pmod 4$
 and let $l$ be an even natural number with $l + 3 \le p$. Put $m = l + 1$ if $2l + 5 \le p$ and
 $m = p - (l + 1)$ otherwise, and let $R \subseteq \mathbb{R}^2$ be the convex hull of the four
 points $(0, m)$, $(m, 0)$, $(p/2, p/2 - m)$ and $(p/2 - m, p/2)$. Let $L$ be the set of integer

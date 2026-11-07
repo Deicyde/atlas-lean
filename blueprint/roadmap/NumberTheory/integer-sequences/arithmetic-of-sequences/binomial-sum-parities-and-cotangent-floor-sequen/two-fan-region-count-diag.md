@@ -1,6 +1,6 @@
 # Blomberg's conjecture on regions cut out by two equal fans
 
-**Blomberg's conjecture on regions cut out by two equal fans.** Let $n \ge 3$, $P = (-1, 0)$
+Let $n \ge 3$, $P = (-1, 0)$
 and $Q = (1, 0)$. From $P$ draw the $n$ closed rays at angles $\pi - 2\pi s/n$ for $0 \le s < n$,
 and from $Q$ the $n$ closed rays at angles $2\pi t/n$ for $0 \le t < n$, and let $U$ be the union
 of these rays. Then there is a real $R_0$ such that for every real $R \ge R_0$, if $K_R$ is the

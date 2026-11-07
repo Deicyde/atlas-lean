@@ -1,6 +1,5 @@
 # Divisibility conjecture for orders of automorphism groups of $p$-groups (Kourovka 12.77)
 
-**Divisibility conjecture for orders of automorphism groups of $p$-groups (Kourovka 12.77).**
 The statement that there is a prime $p$ such that for every finite non-cyclic $p$-group $P$ of
 order greater than $p^2$, the order of $P$ divides the order of its automorphism group
 $\mathrm{Aut}(P)$.

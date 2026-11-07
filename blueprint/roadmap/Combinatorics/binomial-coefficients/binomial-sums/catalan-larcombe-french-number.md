@@ -1,6 +1,6 @@
 # Catalan–Larcombe–French numbers
 
-**Catalan–Larcombe–French numbers.** For a natural number $n$, the $n$th
+For a natural number $n$, the $n$th
 Catalan–Larcombe–French number (OEIS A053175) is
 
 $$

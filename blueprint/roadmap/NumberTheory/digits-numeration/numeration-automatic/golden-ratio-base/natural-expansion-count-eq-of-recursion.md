@@ -1,6 +1,6 @@
 # Recursion for the number of natural expansions
 
-**Recursion for the number of natural expansions.** Let $N$ and $n$ be natural numbers and
+Let $N$ and $n$ be natural numbers and
 let $p_0, \dots, p_n$ be integers with $p_k + 2 \le p_{k+1}$ for $k < n$ such that the base phi
 expansion with digits $1$ at positions $p_0, \dots, p_n$ represents $N$. Put
 $s_k = p_k - p_{k-1} - 1$ for $1 \le k \le n$. Let $r_0, r_1, \dots$ be integers with

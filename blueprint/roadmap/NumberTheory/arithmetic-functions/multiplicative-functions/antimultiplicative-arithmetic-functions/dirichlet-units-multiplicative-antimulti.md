@@ -1,6 +1,6 @@
 # Multiplicative and antimultiplicative units form subgroups
 
-**Multiplicative and antimultiplicative units form subgroups.** Let $U$ be the group of units
+Let $U$ be the group of units
 of the ring of real arithmetical functions under Dirichlet convolution. The units $f$ with
 $f(1) = 1$, the multiplicative units and the antimultiplicative units form subgroups $U_1$, $U_M$
 and $U_A$ of $U$, respectively. Moreover $U_M \le U_1$, $U_A \le U_1$ and

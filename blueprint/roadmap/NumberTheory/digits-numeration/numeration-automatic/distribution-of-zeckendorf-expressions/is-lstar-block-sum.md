@@ -1,6 +1,6 @@
 # Sums of disjoint proper $L^\ast$-blocks
 
-**Sums of disjoint proper $L^\ast$-blocks.** Let $L$ be a list of natural numbers, and for
+Let $L$ be a list of natural numbers, and for
 each $s$ let $\bar\beta^{s+1}$ be the maximal $L^*$-block starting at (zero-based) index $s$. Let
 $I$ be a finite or infinite set of pairs $(s, k)$ of natural numbers. A coefficient function
 $\varepsilon : \mathbb N \to \mathbb N$ is the sum of the disjoint proper $L^*$-blocks with

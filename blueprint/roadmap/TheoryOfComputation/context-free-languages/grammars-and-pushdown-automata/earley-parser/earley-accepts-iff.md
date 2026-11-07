@@ -1,6 +1,6 @@
 # Correctness of the Earley recognizer
 
-**Correctness of the Earley recognizer.** The Earley recognizer accepts exactly the grammar's language.
+The Earley recognizer accepts exactly the grammar's language.
 
 ## Sources
 

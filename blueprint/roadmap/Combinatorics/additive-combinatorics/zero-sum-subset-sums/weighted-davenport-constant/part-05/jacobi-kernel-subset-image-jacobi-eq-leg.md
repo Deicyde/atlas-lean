@@ -1,6 +1,6 @@
 # Lifting the Jacobi kernel into the Jacobi agreement set
 
-**Lifting the Jacobi kernel into the Jacobi agreement set.** Let $n$ be an odd natural number
+Let $n$ be an odd natural number
 and let $p$, $p'$ be prime divisors of $n$ with $p$ coprime to $n' = n/p$. For a residue $x$ modulo
 $N$ and an odd $m$, write $(x/m)$ for the Jacobi symbol $(a/m)$ of the representative
 $0 \le a < N$ of $x$. Let $U(m)$ be the group of units of $\mathbb{Z}_m = \mathbb{Z}/m\mathbb{Z}$,

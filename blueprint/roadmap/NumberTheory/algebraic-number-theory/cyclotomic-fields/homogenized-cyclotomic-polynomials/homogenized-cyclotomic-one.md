@@ -1,6 +1,6 @@
 # Homogenized cyclotomic value of index one
 
-**Homogenized cyclotomic value of index one.** For all integers $a$ and $b$, the
+For all integers $a$ and $b$, the
 homogenized cyclotomic value $\Phi_1(a, b)$ equals $a - b$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The $p$-dissection of $f_1^3$
 
-**The $p$-dissection of $f_1^3$.** Let $p$ be an odd prime and, for $k \ge 1$, let
+Let $p$ be an odd prime and, for $k \ge 1$, let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$. Then, as integer power series,
 
 $$

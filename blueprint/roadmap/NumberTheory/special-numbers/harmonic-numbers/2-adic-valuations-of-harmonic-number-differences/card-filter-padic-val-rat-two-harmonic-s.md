@@ -1,6 +1,6 @@
 # Fiber counts of the 2-adic valuations of $H_n - H_m$
 
-**Fiber counts of the 2-adic valuations of $H_n - H_m$.** Let $H_k = \sum_{j=1}^{k} 1/j$ be
+Let $H_k = \sum_{j=1}^{k} 1/j$ be
 the $k$-th harmonic number (so $H_0 = 0$) and let $\nu_2$ denote the $2$-adic valuation on the
 rational numbers. Let $n$ and $a$ be natural numbers such that the binary digit of $n$ in
 position $a$ is $1$, that is, $2^a$ occurs in the binary expansion of $n$. Then exactly $2^a$ of

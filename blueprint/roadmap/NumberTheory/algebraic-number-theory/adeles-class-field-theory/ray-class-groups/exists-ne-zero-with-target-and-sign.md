@@ -1,6 +1,6 @@
 # Weak approximation with a finite target and prescribed signs
 
-**Weak approximation with a finite target and prescribed signs.** Let $K$ be a number field
+Let $K$ be a number field
 and $\mathfrak m$ a modulus of $K$, with finite part $\mathfrak m_0$ (a nonzero ideal of
 $\mathcal O_K$) and infinite part $\mathfrak m_\infty$ (a finite set of real places of $K$). For
 a nonzero prime $\mathfrak p$ of $\mathcal O_K$ write $v_{\mathfrak p}$ for the

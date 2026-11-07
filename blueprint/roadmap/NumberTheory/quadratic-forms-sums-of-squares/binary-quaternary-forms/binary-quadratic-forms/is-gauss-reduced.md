@@ -1,6 +1,6 @@
 # Gauss-reduced binary quadratic forms
 
-**Gauss-reduced binary quadratic forms.** The integral binary quadratic form
+The integral binary quadratic form
 $a x^2 + b x y + c y^2$ is Gauss reduced when $a > 0$, its discriminant $b^2 - 4ac$ is negative,
 $|b| \le a \le c$, and $b \ge 0$ whenever $|b| = a$ or $a = c$.
 

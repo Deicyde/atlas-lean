@@ -1,6 +1,6 @@
 # Every $m$-dimensional subspace of $\mathbb{Z}_2^{m+a}$ has a vector of weight $m$
 
-**Every $m$-dimensional subspace of $\mathbb{Z}_2^{m+a}$ has a vector of weight $m$.** Let
+Let
 $\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$ and let $m$ be even with $2^a \le m$. Then every subspace
 $W$ of $\mathbb{Z}_2^{m+a}$ of dimension $m$ contains a vector with exactly $m$ coordinates equal
 to $1$.

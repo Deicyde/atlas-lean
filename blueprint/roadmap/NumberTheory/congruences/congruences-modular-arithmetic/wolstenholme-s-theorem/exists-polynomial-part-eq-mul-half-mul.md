@@ -1,6 +1,6 @@
 # Divisibility of the polynomial parts by $k(n-k)/2$
 
-**Divisibility of the polynomial parts by $k(n-k)/2$.** Let $m$ be a natural number and $n$ an
+Let $m$ be a natural number and $n$ an
 integer. For an integer $x$ and a natural number $r$ write $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$,
 and for a rational number $x$ write $(x)_r = x(x-1)\cdots(x-r+1)$ for the falling factorial. Then
 there is a polynomial $Q \in \mathbb{Q}[X]$ such that for every natural number $k$

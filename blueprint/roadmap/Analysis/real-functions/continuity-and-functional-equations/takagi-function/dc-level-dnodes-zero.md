@@ -1,6 +1,6 @@
 # Level count of D-nodes on level zero
 
-**Level count of D-nodes on level zero.** For every natural number $n$, the level count of
+For every natural number $n$, the level count of
 D-nodes on level $0$ is $\lambda_0(n) = n \bmod 2$.
 
 ## Sources

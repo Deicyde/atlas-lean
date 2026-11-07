@@ -1,6 +1,5 @@
 # Lower bound and inverse theorem for sums with at least $r$ distinct terms in $\mathbb{Z}$
 
-**Lower bound and inverse theorem for sums with at least $r$ distinct terms in $\mathbb{Z}$.**
 Let $A$ be a nonempty finite set of integers with $|A| = k$, and let $r, h$ be natural numbers
 with $1 \le r \le k$, $r \le h$ and $h \ge 2$. Write $h^{(\ge r)}A$ for the set of sums of $h$
 elements of $A$, repetitions allowed, in which at least $r$ distinct elements occur. Then

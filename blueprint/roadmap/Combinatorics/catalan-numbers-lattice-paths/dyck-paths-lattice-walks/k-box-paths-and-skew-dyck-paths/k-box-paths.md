@@ -1,6 +1,6 @@
 # $k$-box paths
 
-**$k$-box paths.** For natural numbers $k$ and $n$, the set $B_n^{(k)}$ of $k$-box paths of
+For natural numbers $k$ and $n$, the set $B_n^{(k)}$ of $k$-box paths of
 size $n$ consists of the skew Dyck paths of semilength $(k+2)n - 1$ that contain exactly $n$
 occurrences of the factor $U D^k L$. The subtraction is truncated at $0$, so $B_0^{(k)}$
 consists of the empty path alone.

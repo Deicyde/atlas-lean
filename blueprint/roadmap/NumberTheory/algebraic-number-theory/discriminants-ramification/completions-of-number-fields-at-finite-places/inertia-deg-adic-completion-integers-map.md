@@ -1,6 +1,6 @@
 # Completion preserves the inertia degree
 
-**Completion preserves the inertia degree.** Let $L/K$ be an extension of number fields, let
+Let $L/K$ be an extension of number fields, let
 $v$ be a nonzero prime ideal of $\mathcal{O}_K$ and $w$ a nonzero prime ideal of $\mathcal{O}_L$
 lying over $v$. Let $\mathcal{O}_{K_v}$ and $\mathcal{O}_{L_w}$ be the rings of integers of the
 completions $K_v$ and $L_w$, with $\mathcal{O}_{L_w}$ an algebra over $\mathcal{O}_{K_v}$ via the

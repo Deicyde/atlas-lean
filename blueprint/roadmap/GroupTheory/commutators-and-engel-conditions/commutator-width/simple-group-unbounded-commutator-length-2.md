@@ -1,6 +1,6 @@
 # A simple group with unbounded commutator length
 
-**A simple group with unbounded commutator length.** There is a simple group $G$ such that for
+There is a simple group $G$ such that for
 every natural number $n$ some element of the derived subgroup $[G, G]$ is not a product of at most
 $n$ commutators $x y x^{-1} y^{-1}$ with $x, y \in G$. This answers Kourovka Problem 14.13(a) in
 the affirmative; the Kourovka Archive records examples constructed by Barge and Ghys, and finitely

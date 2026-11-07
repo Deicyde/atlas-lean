@@ -1,6 +1,6 @@
 # Inversion sequences avoiding nine patterns
 
-**Inversion sequences avoiding nine patterns.** Let
+Let
 $B = \{000, 010, 100, 101, 102, 110, 120, 201, 210\}$, where a pattern is written as a digit
 string ($101$ is the triple $(1, 0, 1)$), and let
 $F_B(x) = \sum_{n \ge 1} |I_n(B)| x^n \in \mathbb{Q}[[x]]$ be the generating function of the

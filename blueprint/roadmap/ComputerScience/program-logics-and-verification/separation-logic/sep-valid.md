@@ -1,6 +1,6 @@
 # Separation-logic triple validity
 
-**Separation-logic triple validity.** For heap assertions $P$, $Q$ and a heap command $c$,
+For heap assertions $P$, $Q$ and a heap command $c$,
 the triple $\lbrace P \rbrace\ c\ \lbrace Q \rbrace$ is valid (in the fault-avoiding sense)
 when, for every store $s$ and heap $h$ with $P(s, h)$, the configuration $(c, s, h)$ is safe
 (no configuration reachable from it is stuck at a command other than $\mathtt{skip}$), and

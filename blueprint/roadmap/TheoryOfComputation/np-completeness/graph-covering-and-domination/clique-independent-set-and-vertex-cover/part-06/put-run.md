@@ -1,6 +1,6 @@
 # CLIQUE emitter: putting the current occurrence on the walked stack
 
-**CLIQUE emitter: putting the current occurrence on the walked stack.** Stacks are listed top
+Stacks are listed top
 first. Let $p$ be a Boolean, $u$ a list of Booleans and $\bar u$ the list of bit symbols
 $\mathrm{bit}(b)$ for $b$ in $u$, let $v$ be a flag, $t$, $d$, $e$ lists of symbols, $o$ a list of
 Booleans and $c, n \in \mathbb{N}$. Started at label $\mathrm{put}(p)$ with flag $v$, stacks $T$,

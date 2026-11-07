@@ -1,6 +1,6 @@
 # Sums of squares and products of trinomial coefficients with even index
 
-**Sums of squares and products of trinomial coefficients with even index.** Write
+Write
 $\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. For
 every $n \in \mathbb{N}$ let $c_n = \binom{n}{n/2}_2$ if $n$ is even and $c_n = 0$ if $n$ is odd.
 Then

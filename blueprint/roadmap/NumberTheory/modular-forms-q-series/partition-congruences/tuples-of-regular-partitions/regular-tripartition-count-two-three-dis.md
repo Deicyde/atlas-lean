@@ -1,6 +1,6 @@
 # The 3-dissection of the 2-regular tripartition generating function
 
-**The 3-dissection of the 2-regular tripartition generating function.** Let $T_2(n)$ be the
+Let $T_2(n)$ be the
 number of 2-regular tripartitions of $n$ and $f_k = \prod_{m \ge 1} (1 - q^{km})$. In the ring
 $\mathbb{Z}[[q]]$ of integer power series,
 $f_1^6 f_3 \sum_{n \ge 0} T_2(3n) q^n = f_1^5 f_2 f_3 + 12 q f_2^2 f_6^5$,

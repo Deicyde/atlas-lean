@@ -1,6 +1,6 @@
 # Owner of a game position
 
-**Owner of a game position.** The owner of a game position $(\varphi, w, s)$ is Verifier when
+The owner of a game position $(\varphi, w, s)$ is Verifier when
 $\varphi$ is a disjunction, a diamond formula or a greatest fixed point, and Refuter for every
 other formula.
 

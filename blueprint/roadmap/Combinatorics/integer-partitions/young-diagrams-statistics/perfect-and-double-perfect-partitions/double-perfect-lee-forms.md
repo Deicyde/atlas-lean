@@ -1,6 +1,6 @@
 # Lee's two forms of double-perfect partitions
 
-**Lee's two forms of double-perfect partitions.** For an integer $B$, an integer $k \ge 2$ and
+For an integer $B$, an integer $k \ge 2$ and
 integers $q_3, \dots, q_k \ge 1$, write $T_B(q_3, \dots, q_k)$ for the parts
 $B^{q_3}, (B(q_3+1))^{q_4}, \dots, (B(q_3+1) \cdots (q_{k-1}+1))^{q_k}$ (no parts when $k = 2$).
 Let $N \ge 4$ and let $\lambda$ be a double-perfect partition of $N$ of order $1$. Then either

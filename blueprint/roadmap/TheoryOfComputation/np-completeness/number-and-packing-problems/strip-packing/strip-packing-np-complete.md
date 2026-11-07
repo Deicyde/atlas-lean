@@ -1,6 +1,6 @@
 # STRIP PACKING is NP-complete
 
-**STRIP PACKING is NP-complete.** The STRIP PACKING decision problem belongs to NP, and every
+The STRIP PACKING decision problem belongs to NP, and every
 decision problem $L$ in NP reduces to STRIP PACKING by a polynomial-time many-one reduction.
 
 ## Sources

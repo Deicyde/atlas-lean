@@ -1,6 +1,6 @@
 # Normalized density family
 
-**Normalized density family.** Let $\Omega$ be a measurable space with a measure $\mu$ and
+Let $\Omega$ be a measurable space with a measure $\mu$ and
 let $\Theta$ be a set of parameters. A normalized density family on $\Omega$ indexed by $\Theta$
 with dominating measure $\mu$ consists of a function $f_\theta : \Omega \to [0, \infty]$ for
 each $\theta \in \Theta$ such that $f_\theta$ is $\mu$-almost everywhere measurable and

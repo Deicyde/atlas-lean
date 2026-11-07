@@ -1,6 +1,6 @@
 # Maximum capacity of smooth words
 
-**Maximum capacity of smooth words.** A smooth word is a word of positive integers with first
+A smooth word is a word of positive integers with first
 letter $1$ whose consecutive letters differ by at most $1$. Let
 $r(n; q) = \sum_w q^{\mathrm{cap}(w)}$, summed over the smooth words $w$ of length $n$, where
 $\mathrm{cap}(w)$ is the capacity of $w$. For all $m \ge 1$ and $0 \le p \le 3$, the degree of

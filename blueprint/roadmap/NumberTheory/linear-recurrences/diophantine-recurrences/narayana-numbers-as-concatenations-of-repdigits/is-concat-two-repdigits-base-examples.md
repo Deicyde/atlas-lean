@@ -1,6 +1,6 @@
 # Examples of two-repdigit concatenations in bases 2 and 5
 
-**Examples of two-repdigit concatenations in bases 2 and 5.** The number $4$ is a
+The number $4$ is a
 concatenation of two repdigits in base $2$, since $4 = (100)_2$, and the number $406$ is a
 concatenation of two repdigits in base $5$, since $406 = (3111)_5$.
 

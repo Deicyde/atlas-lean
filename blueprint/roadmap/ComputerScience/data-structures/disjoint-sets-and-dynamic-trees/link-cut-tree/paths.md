@@ -1,6 +1,6 @@
 # Preferred-path decomposition of a link-cut tree state
 
-**Preferred-path decomposition of a link-cut tree state.** For a link-cut tree state $s$, its
+For a link-cut tree state $s$, its
 preferred paths are obtained by taking, for each represented tree of $s$ in forest order, the
 preferred paths of that tree under the preferred edges of $s$, and concatenating these lists.
 Within a tree these are its maximal chains of preferred edges when each vertex has at most one

@@ -1,6 +1,6 @@
 # Lifting residue-field isomorphisms between Henselian étale DVR extensions
 
-**Lifting residue-field isomorphisms between Henselian étale DVR extensions.** Let $A$, $B$,
+Let $A$, $B$,
 $C$ be discrete valuation rings, with $B$ and $C$ finite $A$-algebras whose structure maps are local
 homomorphisms, both étale over $A$ and both Henselian local rings. Write $\kappa(R)$ for the
 residue field of a local ring $R$. Then every $\kappa(A)$-algebra isomorphism

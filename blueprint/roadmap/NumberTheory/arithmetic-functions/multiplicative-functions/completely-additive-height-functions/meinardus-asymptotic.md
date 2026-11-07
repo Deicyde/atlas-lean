@@ -1,6 +1,6 @@
 # Meinardus' theorem
 
-**Meinardus' theorem.** Let $b_0, b_1, b_2, \dots$ be nonnegative reals with $b_k \ne 0$ for
+Let $b_0, b_1, b_2, \dots$ be nonnegative reals with $b_k \ne 0$ for
 some $k \ge 1$, and let $a_n$ be the coefficients of the weighted partition product
 $\prod_{k \ge 1} (1 - q^k)^{-b_k}$. Suppose that the weights satisfy Meinardus' hypotheses
 (M1)–(M3) with exponent $\alpha > 0$, residue $A > 0$ and continuation $G$, and put

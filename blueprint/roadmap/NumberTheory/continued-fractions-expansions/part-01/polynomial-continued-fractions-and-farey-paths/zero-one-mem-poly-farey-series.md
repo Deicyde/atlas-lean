@@ -1,6 +1,6 @@
 # The fraction $0/1$ lies in every Farey series
 
-**The fraction $0/1$ lies in every Farey series.** For every field $F$ and every natural number
+For every field $F$ and every natural number
 $n$, the pair $(0, 1)$, that is the fraction $0 / 1$, belongs to the Farey series $\mathcal{F}_n$
 of order $n$ over $F$.
 

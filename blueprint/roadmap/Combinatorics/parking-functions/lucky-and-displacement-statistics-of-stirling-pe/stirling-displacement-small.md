@@ -1,6 +1,6 @@
 # Displacement compositions of 1122 and 11244233
 
-**Displacement compositions of 1122 and 11244233.** The displacement composition of a word
+The displacement composition of a word
 $w = w_1 \cdots w_{2n}$ is $\mathrm{dis}(w) = (d(1), \dots, d(2n))$, where $d(i)$ is the
 displacement of car $i$. For the Stirling permutations $1122$ of order $2$ and $11244233$ of
 order $4$, $\mathrm{dis}(1122) = (0, 1, 1, 2)$ and

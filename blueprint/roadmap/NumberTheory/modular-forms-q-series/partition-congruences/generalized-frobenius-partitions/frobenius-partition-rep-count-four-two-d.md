@@ -1,6 +1,6 @@
 # The 2-dissection of the generating function of $\varphi_4$
 
-**The 2-dissection of the generating function of $\varphi_4$.** Let $\varphi_4(n)$ be the
+Let $\varphi_4(n)$ be the
 number of generalized Frobenius partitions of $n$ in which each integer appears at most $4$ times
 in each row, and let $f_k = \prod_{m \ge 1} (1 - q^{km})$ in the ring of integer power series in
 $q$. Then

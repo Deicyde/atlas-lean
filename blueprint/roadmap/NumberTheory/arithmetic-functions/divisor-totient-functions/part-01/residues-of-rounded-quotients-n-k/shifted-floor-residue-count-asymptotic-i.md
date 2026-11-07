@@ -1,6 +1,6 @@
 # Integral asymptotics for the shifted floor residue counts
 
-**Integral asymptotics for the shifted floor residue counts.** Let $m \ge 1$ be a natural
+Let $m \ge 1$ be a natural
 number and let $\alpha$ and $\nu$ be real numbers with $0 \le \alpha < 1$ and $0 \le \nu < 1$.
 For natural numbers $n$ and $r$ let $\mathcal N_{n,\alpha,\nu,r,m}$ be the number of integers $k$
 with $1 \le k \le n$ such that $\lfloor (n - \nu)/k + \alpha \rfloor \equiv r \pmod m$, and put

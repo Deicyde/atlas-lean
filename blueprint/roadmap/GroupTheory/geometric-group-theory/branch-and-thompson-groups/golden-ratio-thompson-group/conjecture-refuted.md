@@ -1,6 +1,6 @@
 # Cleary's golden-ratio group does not embed in Thompson's group F
 
-**Cleary's golden-ratio group does not embed in Thompson's group F.** There is no map $\varphi$
+There is no map $\varphi$
 from permutations of $\mathbb{R}$ to permutations of $\mathbb{R}$ that sends every element of
 Cleary's golden-ratio Thompson group $F_\tau$ into Thompson's group $F$, is injective on
 $F_\tau$, and satisfies $\varphi(g h) = \varphi(g) \varphi(h)$ for all $g, h \in F_\tau$, where

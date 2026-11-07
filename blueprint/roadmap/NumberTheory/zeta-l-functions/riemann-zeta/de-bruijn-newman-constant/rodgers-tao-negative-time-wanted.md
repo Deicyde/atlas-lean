@@ -1,6 +1,6 @@
 # Nonreal zeros of the de Bruijn–Newman deformation at negative times
 
-**Nonreal zeros of the de Bruijn–Newman deformation at negative times.** For every real
+For every real
 $\lambda < 0$, not every zero of the de Bruijn–Newman deformation $H_\lambda$ is real: there is
 a complex $z$ with $H_\lambda(z) = 0$ and nonzero imaginary part.
 

@@ -1,6 +1,6 @@
 # Matiyasevich-type identity for modified degenerate Bernoulli numbers
 
-**Matiyasevich-type identity for modified degenerate Bernoulli numbers.** Let $n \ge 4$, let
+Let $n \ge 4$, let
 $\lambda$ be a complex number with $\lambda \ne 0$ and $\lambda \ne -1$, and write
 $\mathfrak{B}_{k,\lambda} = \mathfrak{B}_{k,\lambda}(0)$ for the value at $0$ of the modified
 degenerate Bernoulli polynomial $\mathfrak{B}_{k,\lambda}(x)$. Then

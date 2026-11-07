@@ -1,6 +1,6 @@
 # Pronilpotent subgroup
 
-**Pronilpotent subgroup.** A subgroup $H$ of a group $G$ carrying a topology is pronilpotent
+A subgroup $H$ of a group $G$ carrying a topology is pronilpotent
 when, for every open normal subgroup $N$ of $G$, the image of $H$ in the quotient $G/N$ is
 nilpotent.
 

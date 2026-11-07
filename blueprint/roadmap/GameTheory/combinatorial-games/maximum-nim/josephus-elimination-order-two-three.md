@@ -1,6 +1,6 @@
 # Josephus elimination order for three people and step two
 
-**Josephus elimination order for three people and step two.** The Josephus elimination
+The Josephus elimination
 order with step $2$ on the circle $1, 2, 3$ is $2, 1, 3$: the entry $2$ is removed first, then
 the entry $1$, and the survivor $3$ comes last.
 

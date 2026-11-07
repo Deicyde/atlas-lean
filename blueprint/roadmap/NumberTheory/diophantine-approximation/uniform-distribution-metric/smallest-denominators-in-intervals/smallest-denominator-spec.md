@@ -1,6 +1,6 @@
 # The smallest denominator is positive and attained
 
-**The smallest denominator is positive and attained.** For every real number $x$ and every
+For every real number $x$ and every
 real $\delta > 0$, the smallest denominator $q = q_{\min}(x, \delta)$ is positive and there is an
 integer $p$ with $|x - p/q| < \delta/2$.
 

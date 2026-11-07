@@ -1,6 +1,6 @@
 # Items found by the membership procedure
 
-**Items found by the membership procedure.** Let $g$ be an encoded context-free grammar and
+Let $g$ be an encoded context-free grammar and
 $w = w_0 \cdots w_{n-1}$ a word. An item is a triple $(A, i, j)$ of natural numbers, coded as a
 natural number by nested pairing. A round sends a list $R$ of items to the items $(A, i, j)$ such
 that $A \to X_1 \cdots X_m$ is a production of $g$, $j \le n$, and there are positions

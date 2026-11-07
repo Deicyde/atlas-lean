@@ -1,6 +1,6 @@
 # Weighted Davenport constant of the trivial group
 
-**Weighted Davenport constant of the trivial group.** For every non-empty finite set $A$ of
+For every non-empty finite set $A$ of
 natural numbers, the $A$-weighted Davenport constant of the trivial group $\mathbb{Z}/1\mathbb{Z}$
 is $D_A(\mathbb{Z}/1\mathbb{Z}) = 1$.
 

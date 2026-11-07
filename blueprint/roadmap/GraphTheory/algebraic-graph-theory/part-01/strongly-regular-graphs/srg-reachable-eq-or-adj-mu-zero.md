@@ -1,6 +1,6 @@
 # Components of a strongly regular graph with μ = 0 are cliques
 
-**Components of a strongly regular graph with μ = 0 are cliques.** Let $G$ be a finite strongly
+Let $G$ be a finite strongly
 regular graph with parameters $(n, k, \ell, \mu)$ where $\mu = 0$: $G$ has $n$ vertices, every
 vertex has degree $k$, any two adjacent vertices have exactly $\ell$ common neighbors, and any
 two distinct nonadjacent vertices have no common neighbor. If $v$ and $w$ are vertices of $G$

@@ -1,6 +1,6 @@
 # Sprague–Grundy values of P&R Helper on region R
 
-**Sprague–Grundy values of P&R Helper on region R.** Let $x \le y \le z$ be natural numbers
+Let $x \le y \le z$ be natural numbers
 with $z < x + y$ and $y > 2x + 1$ (the region $R$), and write $s = y + z - x$. For every natural
 number $n$, the P&R Helper game started at $[x, y, z]$ is equivalent to the Nim heap of size $n$
 (that is, has Sprague–Grundy value $n$) if and only if one of the following holds: $n = 0$ and

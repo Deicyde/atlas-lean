@@ -1,6 +1,6 @@
 # Central binomial series for $\pi^2/8$ and a series for $2\ln 2$
 
-**Central binomial series for $\pi^2/8$ and a series for $2\ln 2$.** We have
+We have
 
 $$\sum_{n=0}^{\infty} \frac{4^n}{\binom{2(n+1)}{n+1} (n+1)^2} = \frac{\pi^2}{8}$$
 

@@ -1,6 +1,6 @@
 # The empty digit block occurs everywhere
 
-**The empty digit block occurs everywhere.** For every finite set $S$ of integers, read as the
+For every finite set $S$ of integers, read as the
 positions of the digits $1$ of an expansion, and every integer $k$, the empty word occurs as a
 digit block of $S$ at position $k$.
 

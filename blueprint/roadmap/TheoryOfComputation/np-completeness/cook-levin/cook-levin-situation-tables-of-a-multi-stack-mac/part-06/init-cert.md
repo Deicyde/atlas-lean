@@ -1,6 +1,6 @@
 # Certificate clauses of the init family
 
-**Certificate clauses of the init family.** Let $E$ be an encoding of a machine $M$, let $x$
+Let $E$ be an encoding of a machine $M$, let $x$
 and $Y$ be lists of symbols of the input stack of $M$, and let $m, T, H$ be natural numbers. For a
 depth $j$ and a symbol code $c$, write $C_0[j, c]$ for the cell variable of row $0$, input stack,
 depth $j$ and code $c$ in the layout of $E$ at height $H$, and let $e$ be the symbol code of $E$

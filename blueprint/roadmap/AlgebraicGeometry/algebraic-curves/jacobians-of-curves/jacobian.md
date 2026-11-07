@@ -1,6 +1,6 @@
 # Jacobian of a smooth proper curve
 
-**Jacobian of a smooth proper curve.** For a field $k$ and a curve $C$ over $k$, that is, a
+For a field $k$ and a curve $C$ over $k$, that is, a
 $k$-scheme that is proper, smooth of relative dimension $1$ and geometrically irreducible, the
 Jacobian $J(C)$ of $C$ is a $k$-scheme.
 

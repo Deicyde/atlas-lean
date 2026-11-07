@@ -1,6 +1,6 @@
 # Conditional expectation of a future path functional
 
-**Conditional expectation of a future path functional.** Let $\mu$ be a probability measure
+Let $\mu$ be a probability measure
 on $\Omega$, let $(\mathcal{F}_t)_{t \ge 0}$ be a filtration indexed by $\mathbb{R}_{\ge 0}$, and
 let $(B_t)_{t \ge 0}$ be a real-valued process that is adapted (each $B_t$ is
 $\mathcal{F}_t$-measurable) and has independent increments (for $u \le t$, the increment

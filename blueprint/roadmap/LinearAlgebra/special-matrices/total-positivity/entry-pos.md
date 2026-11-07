@@ -1,6 +1,6 @@
 # Entries of a matrix with positive minors are positive
 
-**Entries of a matrix with positive minors are positive.** Let $M$ be a real matrix whose rows
+Let $M$ be a real matrix whose rows
 and columns are indexed by linearly ordered sets $R$ and $C$. If $M$ has positive minors, then
 $M_{ij} > 0$ for all $i \in R$ and $j \in C$; these entries are the $1 \times 1$ minors of $M$.
 

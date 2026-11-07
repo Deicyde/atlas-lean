@@ -1,6 +1,6 @@
 # Upper bound for higher-dimensional grid patterns
 
-**Upper bound for higher-dimensional grid patterns.** Let $X_1, \dots, X_d$ be finite sets of
+Let $X_1, \dots, X_d$ be finite sets of
 real numbers, $k_i = |X_i|$, and $P = X_1 \times \dots \times X_d \subseteq \mathbb{R}^d$. Put
 $\alpha = \max_i k_i / \prod_i k_i$ if $d \ge 1$ and every $k_i$ is positive, and $\alpha = 0$
 otherwise. Then $\mathrm{opx}(n, P, d) = O(n^{d - \alpha})$ as the natural number $n \to \infty$.

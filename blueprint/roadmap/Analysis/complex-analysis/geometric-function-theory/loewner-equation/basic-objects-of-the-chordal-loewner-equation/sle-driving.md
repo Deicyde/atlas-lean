@@ -1,3 +1,3 @@
 # SLE driving function
 
-**SLE driving function.** The SLE`_κ` driving function `W_t = √κ B_t(ω)`.
+The SLE`_κ` driving function `W_t = √κ B_t(ω)`.

@@ -1,6 +1,6 @@
 # The index set $T(m, 0, q)$ is empty
 
-**The index set $T(m, 0, q)$ is empty.** For all natural numbers $m$ and $q$, the index set
+For all natural numbers $m$ and $q$, the index set
 $T(m, 0, q)$ is empty.
 
 ## Sources

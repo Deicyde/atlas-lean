@@ -1,6 +1,6 @@
 # The open unit ball lies in the spectrum of the backward shift
 
-**The open unit ball lies in the spectrum of the backward shift.** Let $\mathbb{K}$ be
+Let $\mathbb{K}$ be
 $\mathbb{R}$ or $\mathbb{C}$ and let $B$ be the backward shift on $\ell^2(\mathbb{N}, \mathbb{K})$.
 Every $\mu \in \mathbb{K}$ with $\|\mu\| < 1$ lies in the spectrum of $B$ in the algebra of
 bounded operators on $\ell^2(\mathbb{N}, \mathbb{K})$.

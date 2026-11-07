@@ -1,6 +1,6 @@
 # Strong completeness of polynomial values plus reciprocals (Erdős Problem 351)
 
-**Strong completeness of polynomial values plus reciprocals (Erdős Problem 351).** For every
+For every
 polynomial $p$ with rational coefficients and positive leading coefficient, let $A_p$ be the set
 of rational numbers $p(n) + 1/n$, where $n$ ranges over the positive integers. Then $A_p$ is
 strongly complete: for every finite set $B$ of rational numbers there is an integer $N_0$ such

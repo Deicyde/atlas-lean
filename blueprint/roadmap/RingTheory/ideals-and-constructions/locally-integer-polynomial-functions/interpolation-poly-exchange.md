@@ -1,6 +1,6 @@
 # Exchange formula for interpolation polynomials
 
-**Exchange formula for interpolation polynomials.** Let $f : \mathbb{Z} \to \mathbb{Z}$, and for
+Let $f : \mathbb{Z} \to \mathbb{Z}$, and for
 a finite set $Y \subseteq \mathbb{Z}$ write $f_Y \in \mathbb{Q}[x]$ for the interpolation polynomial
 of $f$ on $Y$. Let $X \subseteq \mathbb{Z}$ be finite and $a, b \in \mathbb{Z} \setminus X$, and let
 $c$ be the coefficient of $x^{|X|+1}$ in $f_{X \cup \{a, b\}}$. Then

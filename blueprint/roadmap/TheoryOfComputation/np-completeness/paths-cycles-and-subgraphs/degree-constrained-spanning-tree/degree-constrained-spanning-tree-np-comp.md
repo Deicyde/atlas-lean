@@ -1,6 +1,6 @@
 # DEGREE-CONSTRAINED SPANNING TREE is NP-complete
 
-**DEGREE-CONSTRAINED SPANNING TREE is NP-complete.** The decision problem
+The decision problem
 DEGREE-CONSTRAINED SPANNING TREE belongs to the class NP, and every decision problem in NP has a
 polynomial-time many-one reduction to it.
 

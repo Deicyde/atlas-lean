@@ -1,6 +1,6 @@
 # Homogenized cyclotomic value of index two
 
-**Homogenized cyclotomic value of index two.** For all integers $a$ and $b$, the
+For all integers $a$ and $b$, the
 homogenized cyclotomic value $\Phi_2(a, b)$ equals $a + b$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Multiplicative Jordan decomposition property
 
-**Multiplicative Jordan decomposition property.** For a group $G$, let $\mathbb{Z}[G]$ be
+For a group $G$, let $\mathbb{Z}[G]$ be
 the set of elements of the rational group algebra $\mathbb{Q}[G]$ all of whose coefficients are
 integers. Then $\mathbb{Z}[G]$ has the multiplicative Jordan decomposition property (MJD) when,
 for all $a, b, s, u \in \mathbb{Q}[G]$ such that $a, b \in \mathbb{Z}[G]$, $ab = ba = 1$,

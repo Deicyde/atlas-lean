@@ -1,6 +1,6 @@
 # Target terms of closure conversion
 
-**Target terms of closure conversion.** The terms of the closure-conversion target language,
+The terms of the closure-conversion target language,
 with variables as de Bruijn indices, are: a variable $n$ for each natural number $n$; code
 $\mathsf{code}\,b$ of one parameter, whose body $b$ is evaluated with only its parameter in scope,
 as variable $0$; application $f\,a$ of code to an argument; the unit term $\mathsf{unit}$ (the

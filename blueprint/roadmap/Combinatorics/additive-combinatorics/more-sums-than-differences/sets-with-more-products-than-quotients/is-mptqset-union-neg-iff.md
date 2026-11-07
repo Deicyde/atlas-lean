@@ -1,6 +1,6 @@
 # Adjoining negatives preserves the MPTQ property
 
-**Adjoining negatives preserves the MPTQ property.** Let $A$ be a finite set of positive real
+Let $A$ be a finite set of positive real
 numbers and $-A = \{-a : a \in A\}$. Then $A \cup (-A)$ is an MPTQ set if and only if $A$ is an
 MPTQ set.
 

@@ -1,6 +1,6 @@
 # The return loop of the lookup machine
 
-**The return loop of the lookup machine.** Let $t$ and $w$ be lists of symbols, let $pre$ and
+Let $t$ and $w$ be lists of symbols, let $pre$ and
 $post$ be lists of table entries, and let $m$ be the total number of symbols of the entries of
 $post$. Suppose the lookup program is at label $\mathsf{back}$, with any internal bit, and its
 stacks are: $T$ holds $t$; $B$ holds the table stack of $pre$; $S$ holds the symbols of the

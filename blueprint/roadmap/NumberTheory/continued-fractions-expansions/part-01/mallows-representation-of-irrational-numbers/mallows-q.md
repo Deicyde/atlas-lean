@@ -1,6 +1,6 @@
 # The parity sequence of a Stern–Brocot word
 
-**The parity sequence of a Stern–Brocot word.** Let $x = x_0 x_1 x_2 \cdots$ be an infinite
+Let $x = x_0 x_1 x_2 \cdots$ be an infinite
 word over $\{L, R\}$. Its parity sequence $Q(x) = Q_0 Q_1 Q_2 \cdots$ over the parity alphabet
 $\{O_L, E_R, O_R, E_L\}$ is defined by $Q_0 = O_L$ and $Q_{j+1} = \mathrm{step}(Q_j, x_j)$ for
 every $j \ge 0$, where $\mathrm{step}$ is the transition rule of the parity sequence.

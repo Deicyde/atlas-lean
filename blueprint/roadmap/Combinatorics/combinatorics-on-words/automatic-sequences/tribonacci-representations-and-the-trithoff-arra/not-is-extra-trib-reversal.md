@@ -1,6 +1,6 @@
 # The reversal of an extraTrib is not an extraTrib
 
-**The reversal of an extraTrib is not an extraTrib.** If $S : \mathbb{Z} \to \mathbb{Z}$
+If $S : \mathbb{Z} \to \mathbb{Z}$
 is an extraTrib, then the sequence $n \mapsto |S(-n)|$ is not an extraTrib.
 
 ## Sources

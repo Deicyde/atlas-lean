@@ -1,6 +1,6 @@
 # Higher-power stride series for the Dirichlet eta function
 
-**Higher-power stride series for the Dirichlet eta function.** Let $q, t \ge 1$ be integers,
+Let $q, t \ge 1$ be integers,
 let $p \ge 0$ be an even integer, and let $T_{q,t}(n)$ denote the signed stride sum. Then the
 partial sums
 

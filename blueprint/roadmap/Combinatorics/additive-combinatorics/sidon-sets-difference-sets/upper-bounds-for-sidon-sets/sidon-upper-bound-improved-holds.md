@@ -1,6 +1,6 @@
 # Lindström's upper bound for Sidon sets can be improved
 
-**Lindström's upper bound for Sidon sets can be improved.** Let $F(N)$ be the largest size of a
+Let $F(N)$ be the largest size of a
 Sidon subset of $\{1, \dots, N\}$. There are a real constant $c < 1$ and a natural number $N_0$
 such that $F(N) \le \sqrt{N} + c N^{1/4}$ for all $N \ge N_0$.
 

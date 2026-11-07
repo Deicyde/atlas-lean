@@ -1,6 +1,6 @@
 # Closed form for Gutkovskiy's sequence
 
-**Closed form for Gutkovskiy's sequence.** Let $g_0, g_1, \dots$ be Gutkovskiy's sequence,
+Let $g_0, g_1, \dots$ be Gutkovskiy's sequence,
 let $|K_i|$ be the length of the Kimberling block $K_i$, and let $\alpha = (\sqrt{3} - 1)/2$ and
 $\beta = \sqrt{3}/3$. Let $n$ be a natural number and let $a_0, a_1, \dots, a_{m-1}$ be digits in
 $\{0, 1, 2\}$ such that no two consecutive digits $a_i, a_{i+1}$ are both $2$ and

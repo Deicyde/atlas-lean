@@ -1,6 +1,6 @@
 # The value of $R(3, 5)$
 
-**The value of $R(3, 5)$.** The classical Ramsey number $R(3, 5)$ equals $14$.
+The classical Ramsey number $R(3, 5)$ equals $14$.
 
 ## Sources
 

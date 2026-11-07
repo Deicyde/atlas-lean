@@ -1,6 +1,6 @@
 # Vanishing of the cyclic product numbers for odd $n - k$
 
-**Vanishing of the cyclic product numbers for odd $n - k$.** For natural numbers $n$ and $k$
+For natural numbers $n$ and $k$
 such that $n + k$ is odd (equivalently, $n - k$ is odd), the cyclic product number $H(n, k)$ is
 $0$.
 

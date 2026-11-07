@@ -1,6 +1,6 @@
 # Entry formula for the powers of $Q_p$
 
-**Entry formula for the powers of $Q_p$.** For natural numbers $p$ and $n$ and indices
+For natural numbers $p$ and $n$ and indices
 $a, b \in \{0, 1, \dots, 2p\}$, the value is the integer $A_p(n + 1 - b)$ if $a = 0$, the integer
 $B_p(n - p + 1 + a - b)$ if $1 \le a \le p - 1$, and the integer $-A_p(n - 2p + a - b)$ otherwise,
 where $A_p$ and $B_p$ are the two-sided auxiliary sequences of the generalized Leonardo

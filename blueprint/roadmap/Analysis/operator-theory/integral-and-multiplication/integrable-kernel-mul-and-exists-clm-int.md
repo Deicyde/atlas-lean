@@ -1,6 +1,6 @@
 # Integral operators with an $L^p$ kernel map $L^q$ to $L^p$
 
-**Integral operators with an $L^p$ kernel map $L^q$ to $L^p$.** Let $1 < p < \infty$ and let
+Let $1 < p < \infty$ and let
 $q \ge 1$ be the dual exponent, $p^{-1} + q^{-1} = 1$. Let $K : \mathbb{R}^2 \to \mathbb{R}$ lie
 in $L^p((0,1)^2)$, where $L^p((0,1)^2)$, $L^p(0,1)$ and $L^q(0,1)$ are spaces of real functions
 for Lebesgue measure. Then for every $f \in L^q(0,1)$ the function $y \mapsto K(x,y)f(y)$ is

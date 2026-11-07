@@ -1,6 +1,6 @@
 # Correctness of the clause-family generator
 
-**Correctness of the clause-family generator.** Let $L$ be a layout,
+Let $L$ be a layout,
 $\mathit{la}, \mathit{na} : \mathbb{N} \to \mathbb{N}$ and
 $\mathit{wa} : \mathbb{N}^3 \to \mathbb{N}$ tables, and $N, T, H \in \mathbb{N}$, and suppose the
 tables are well formed at height $H$ for every situation $i < N$. Start the generator for $L$,

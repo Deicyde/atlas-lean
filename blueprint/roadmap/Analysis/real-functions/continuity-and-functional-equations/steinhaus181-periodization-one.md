@@ -1,6 +1,6 @@
 # Steinhaus's periodization problem (Scottish Book Problem 181)
 
-**Steinhaus's periodization problem (Scottish Book Problem 181).** There is a continuous function
+There is a continuous function
 $f : \mathbb{R} \to \mathbb{R}$ with $f(x) > 0$ for every real $x$ such that, for every real $x$,
 the series $\sum_{n \in \mathbb{Z}} f(x + n)$ converges and its sum is $1$.
 

@@ -1,6 +1,6 @@
 # Formulas of the modal μ-calculus
 
-**Formulas of the modal μ-calculus.** The formulas over a type of atoms are built from
+The formulas over a type of atoms are built from
 atoms $a$, negated atoms $\neg a$, variables $X_n$ for $n \in \mathbb{N}$ (de Bruijn indices for
 the fixed-point binders), $\bot$ and $\top$ by conjunction $\varphi \wedge \psi$, disjunction
 $\varphi \vee \psi$, the modalities $\Box\varphi$ and $\Diamond\varphi$, and the fixed-point

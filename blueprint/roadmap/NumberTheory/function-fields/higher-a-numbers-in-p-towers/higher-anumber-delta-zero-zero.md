@@ -1,6 +1,6 @@
 # The indicator $\delta_0$ vanishes at $0$
 
-**The indicator $\delta_0$ vanishes at $0$.** For all natural numbers $p$ and $d$, the variant
+For all natural numbers $p$ and $d$, the variant
 $\delta_0$ of the rounding indicator for $p$ and $d$ satisfies $\delta_0(0) = 0$.
 
 ## Sources

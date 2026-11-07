@@ -1,6 +1,6 @@
 # The lookup contract
 
-**The lookup contract.** A lookup sub-program $lk$ with start label $l_0$ meets the contract
+A lookup sub-program $lk$ with start label $l_0$ meets the contract
 with constants $a$ and $b$ when the following holds. For every name $q$ (a list of bits), every
 table $es$, with table stack $B_{es}$, and every list of symbols $R$ whose first symbol, if any,
 is not a bit, start the clause-check machine with lookup $lk$ at label $l_0$, with any internal

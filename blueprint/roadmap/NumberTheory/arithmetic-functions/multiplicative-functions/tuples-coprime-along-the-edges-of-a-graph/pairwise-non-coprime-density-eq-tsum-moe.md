@@ -1,6 +1,5 @@
 # The Möbius series for pairwise non-coprime tuples equals the inclusion–exclusion sum
 
-**The Möbius series for pairwise non-coprime tuples equals the inclusion–exclusion sum.**
 Let $k \ge 2$. For a $k$-tuple $n = (n_1, \dots, n_k)$ of positive integers let $\beta(n) = 1$
 if the number of coprime pairs of $n$ is $0$, that is, if $\gcd(n_i, n_j) \ne 1$ for all
 $1 \le i < j \le k$, and $\beta(n) = 0$ otherwise. Let

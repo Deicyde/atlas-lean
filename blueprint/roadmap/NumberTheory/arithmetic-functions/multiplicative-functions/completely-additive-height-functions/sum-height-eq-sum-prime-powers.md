@@ -1,6 +1,6 @@
 # Prime-power decomposition of summatory heights
 
-**Prime-power decomposition of summatory heights.** Let $H : \mathbb{N} \to \mathbb{N}$ be
+Let $H : \mathbb{N} \to \mathbb{N}$ be
 completely additive on the positive integers, and let $x \ge 2$ be a natural number. Then
 
 $$\sum_{m=1}^{x} H(m) = \sum_{p \le x} \sum_{\alpha \ge 1,\ p^\alpha \le x} H(p)

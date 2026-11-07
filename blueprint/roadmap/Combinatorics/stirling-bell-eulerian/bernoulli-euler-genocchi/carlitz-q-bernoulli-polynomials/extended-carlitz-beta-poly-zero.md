@@ -1,6 +1,6 @@
 # Extended Carlitz $q$-Bernoulli polynomials of order zero
 
-**Extended Carlitz $q$-Bernoulli polynomials of order zero.** For every real $q$, natural number
+For every real $q$, natural number
 $n$ and real $x$, the extended Carlitz $q$-Bernoulli polynomial $\beta_n^{(0)}(x)$ equals Carlitz's
 $q$-polynomial $\eta_n(x)$.
 

@@ -1,6 +1,6 @@
 # Exact running time of a for loop over a counter
 
-**Exact running time of a for loop over a counter.** Let $M$ be a multi-stack machine whose
+Let $M$ be a multi-stack machine whose
 states carry a flag bit, with $\mathrm{tag}(\beta)$ the state storing the bit $\beta$; write $(\ell,
 v, S)$ for the configuration at label $\ell$ with state $v$ and stack contents $S$, and $u^m$ for a
 stack holding exactly $m$ copies of the symbol $u$. Let $c \ne c'$ be stacks with a symbol $u$ of

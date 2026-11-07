@@ -1,6 +1,6 @@
 # Constants listing their transitions realize them
 
-**Constants listing their transitions realize them.** Fix a recursive specification, a map
+Fix a recursive specification, a map
 $\iota$ from codes to process constants and a function $s$ listing labelled transitions for
 each code. Suppose that for every code $x$, writing $(a_1, y_1), \dots, (a_n, y_n)$ for the
 entries of $s(x)$ in order, the body of the constant $\iota(x)$ is

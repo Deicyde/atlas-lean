@@ -1,6 +1,6 @@
 # Composition of immersions with fixed complements
 
-**Composition of immersions with fixed complements.** Let $\mathbb{K}$ be a nontrivially normed
+Let $\mathbb{K}$ be a nontrivially normed
 field, let $n \in \mathbb{N} \cup \{\infty, \omega\}$, and let $M$, $N$, $N'$ be charted spaces
 modelled through models with corners on normed spaces over $\mathbb{K}$, where the models of $N$
 and $N'$ are boundaryless. Let $F_1$ and $F_2$ be normed spaces over $\mathbb{K}$. If

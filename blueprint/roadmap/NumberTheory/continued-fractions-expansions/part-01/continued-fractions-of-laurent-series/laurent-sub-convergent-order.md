@@ -1,6 +1,6 @@
 # Distance from an irrational Laurent series to its convergents
 
-**Distance from an irrational Laurent series to its convergents.** Let $K$ be a field, let
+Let $K$ be a field, let
 $\alpha \in K((x^{-1}))$ be irrational with convergents $P_n/Q_n$ ($n \ge 0$), and for nonzero
 $y \in K((x^{-1}))$ let $|y| = |x|^{\deg y}$, where $\deg y$ is the largest exponent of $x$
 occurring in $y$ and $|x| > 1$ is fixed. (i) If $|\alpha| \ge 1$, then

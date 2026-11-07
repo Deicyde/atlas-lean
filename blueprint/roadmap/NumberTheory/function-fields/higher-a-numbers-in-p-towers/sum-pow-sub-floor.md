@@ -1,6 +1,6 @@
 # Sum of $p^n - \lfloor x i \rfloor$
 
-**Sum of $p^n - \lfloor x i \rfloor$.** Let $p$ be a prime and $x$ a positive rational with
+Let $p$ be a prime and $x$ a positive rational with
 $v_p(x) \ge 0$. Let $x_D$ be the prime-to-$p$ part of the denominator of $x$, let $D_{x^{-1}}$
 and $L_{x^{-1}}$ be the delay and the period of the base-$p$ expansion of $x^{-1}$, and let
 $A_{x^{-1}}(n)$ be the periodic correction of Proposition 4. Then for every natural number $n$,

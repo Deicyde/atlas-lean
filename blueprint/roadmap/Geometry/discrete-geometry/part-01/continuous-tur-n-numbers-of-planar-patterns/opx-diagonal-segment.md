@@ -1,6 +1,6 @@
 # Continuous Turán number of a diagonal segment
 
-**Continuous Turán number of a diagonal segment.** Let $a, b, n$ be real numbers with
+Let $a, b, n$ be real numbers with
 $0 < a \le n$ and $0 < b \le n$, and let $P$ be the closed segment from $(0, 0)$ to $(a, b)$.
 Then the continuous Turán number satisfies $\operatorname{opx}(n, P) = (a + b)n - ab$.
 

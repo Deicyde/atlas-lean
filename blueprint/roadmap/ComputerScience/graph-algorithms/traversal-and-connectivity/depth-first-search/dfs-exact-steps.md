@@ -1,6 +1,6 @@
 # Exact transition count of depth-first search
 
-**Exact transition count of depth-first search.** Let $G$ be a finite directed graph with
+Let $G$ be a finite directed graph with
 ordered adjacency lists $N(v)$, whose entries may repeat, and let $R$ be a list of roots, possibly
 with repetitions. Run the depth-first search machine from $R$ (each transition drops a pending
 vertex that is already visited, discovers a new vertex, or finishes a vertex). Let

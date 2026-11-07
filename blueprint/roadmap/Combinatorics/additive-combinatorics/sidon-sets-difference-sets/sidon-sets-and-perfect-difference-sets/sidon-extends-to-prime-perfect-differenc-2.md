@@ -1,6 +1,6 @@
 # Erdős Problem 707 is false
 
-**Erdős Problem 707 is false.** It is not the case that every finite Sidon set
+It is not the case that every finite Sidon set
 $A \subseteq \mathbb{N}$ is contained in a perfect difference set modulo $p^2 + p + 1$ for some
 prime $p$: there is a finite Sidon set $A \subseteq \mathbb{N}$ such that for every prime $p$, no
 set $B \subseteq \mathbb{N}$ with $A \subseteq B$ is a perfect difference set modulo

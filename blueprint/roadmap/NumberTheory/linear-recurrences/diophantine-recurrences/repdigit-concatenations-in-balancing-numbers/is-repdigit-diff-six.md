@@ -1,6 +1,6 @@
 # Six is a difference of two repdigits
 
-**Six is a difference of two repdigits.** The number $6$ is a difference of two repdigits:
+The number $6$ is a difference of two repdigits:
 $6 = 11 - 5$, where $11$ and $5$ are repdigits.
 
 ## Sources

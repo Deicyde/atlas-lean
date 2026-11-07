@@ -1,6 +1,6 @@
 # Maximal Pierce length via iterated remainder sets
 
-**Maximal Pierce length via iterated remainder sets.** Let $n \ge 3$ and $t$ be natural
+Let $n \ge 3$ and $t$ be natural
 numbers, let $P(n)$ be the maximal Pierce length of $n$ and let $S_j(n)$ be the iterated
 remainder sets of $n$. Then the following are equivalent: $P(n) = t + 1$; $S_t(n) = \{0\}$;
 $S_t(n)$ has exactly one element and $S_{t+j}(n) = \emptyset$ for every $j \ge 1$.

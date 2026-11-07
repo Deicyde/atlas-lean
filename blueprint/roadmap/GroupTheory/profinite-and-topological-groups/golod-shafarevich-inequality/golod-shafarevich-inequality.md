@@ -1,6 +1,6 @@
 # Golod–Shafarevich inequality
 
-**Golod–Shafarevich inequality.** Let $p$ be a prime and let $Q$ be a nontrivial finite
+Let $p$ be a prime and let $Q$ be a nontrivial finite
 $p$-group, viewed as a topological group with the discrete topology. Then the generator rank
 $d(Q)$ and the relation rank $r(Q)$, the dimension over $\mathbb{F}_p$ of the continuous
 cohomology group $H^2(Q, \mathbb{F}_p)$ with trivial coefficients, satisfy $d(Q)^2 < 4\, r(Q)$.

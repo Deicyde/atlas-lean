@@ -1,6 +1,6 @@
 # The Gödel numbering of oracle codes
 
-**The Gödel numbering of oracle codes.** Write $\langle a, b \rangle$ for the pairing of
+Write $\langle a, b \rangle$ for the pairing of
 natural numbers equal to $b^2 + a$ if $a < b$ and to $a^2 + a + b$ otherwise. The code number
 $\ulcorner c \urcorner$ of an oracle code $c$ is defined by recursion on $c$: $\mathsf{zero}$,
 $\mathsf{succ}$, $\mathsf{left}$, $\mathsf{right}$ and $\mathsf{oracle}$ have code numbers

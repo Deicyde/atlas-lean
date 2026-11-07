@@ -1,6 +1,6 @@
 # The Viterbi variables of a chain CRF
 
-**The Viterbi variables of a chain CRF.** Let $c$ be a chain conditional random field with
+Let $c$ be a chain conditional random field with
 a finite nonempty set of states $S$ and weights in a linearly ordered commutative semiring $R$,
 and let $x$ be an observation sequence. Write $\phi_t(s)$ for the unary potential of $c$ at $x$
 of state $s$ at position $t$, and $\psi_t(s', s)$ for its transition potential from $s'$ to $s$

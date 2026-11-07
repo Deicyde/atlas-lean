@@ -1,6 +1,6 @@
 # Example of the tie-and-value map
 
-**Example of the tie-and-value map.** For $n = 6$, the tie-and-value map $\varphi$ sends
+For $n = 6$, the tie-and-value map $\varphi$ sends
 $(0, 0, 1, 2, 3, 3)$ to $(5, 1, 0, 1, 2, 3)$; in the paper's one-based values this reads
 $\varphi(1, 1, 2, 3, 4, 4) = (6, 2, 1, 2, 3, 4)$.
 

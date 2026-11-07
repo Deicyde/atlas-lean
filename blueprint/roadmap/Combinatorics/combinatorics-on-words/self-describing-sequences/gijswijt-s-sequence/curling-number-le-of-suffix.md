@@ -1,6 +1,6 @@
 # The curling number is monotone under suffixes
 
-**The curling number is monotone under suffixes.** For strings $S$ and $T$ of natural numbers,
+For strings $S$ and $T$ of natural numbers,
 if $T$ is a suffix of $S$, then $\mathcal{C}(T) \le \mathcal{C}(S)$.
 
 ## Sources

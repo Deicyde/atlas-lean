@@ -1,6 +1,6 @@
 # Alahmadi–Luca theorem on Carmichael numbers
 
-**Alahmadi–Luca theorem on Carmichael numbers.** For every natural number $n$ and every odd
+For every natural number $n$ and every odd
 prime $p$, the number $2^n p + 1$ is not a Carmichael number.
 
 ## Sources

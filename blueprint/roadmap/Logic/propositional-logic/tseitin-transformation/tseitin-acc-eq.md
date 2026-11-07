@@ -1,6 +1,5 @@
 # The linear-time Tseitin builder agrees with the reference encoding
 
-**The linear-time Tseitin builder agrees with the reference encoding.**
 For every map $\iota$ from atoms to natural numbers, every formula $A$, every gate number $k$
 and every clause list $\mathit{acc}$, the linear-time Tseitin builder run on $A$ from gate $k$
 with accumulator $\mathit{acc}$ returns the same literal naming $A$ and the same next unused

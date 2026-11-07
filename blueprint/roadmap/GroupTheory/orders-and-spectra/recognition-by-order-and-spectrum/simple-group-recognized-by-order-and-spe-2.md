@@ -1,6 +1,6 @@
 # Finite simple groups are recognized by order and element orders
 
-**Finite simple groups are recognized by order and element orders.** For every finite group $G$
+For every finite group $G$
 and every finite simple group $S$, if $G$ and $S$ have the same order and the same set of element
 orders, then $G$ is isomorphic to $S$. That is, Shi's conjecture (Kourovka Problem 12.39) holds.
 

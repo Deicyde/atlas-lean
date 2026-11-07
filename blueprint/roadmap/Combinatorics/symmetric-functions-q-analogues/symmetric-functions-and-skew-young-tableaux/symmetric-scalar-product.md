@@ -1,6 +1,6 @@
 # Scalar product of symmetric polynomials
 
-**Scalar product of symmetric polynomials.** Let $n \ge 0$, let $R$ be a commutative ring, and
+Let $n \ge 0$, let $R$ be a commutative ring, and
 call a polynomial in $R[x_1, \dots, x_n]$ symmetric if it is unchanged by every permutation of the
 variables. Let $a_\delta = \prod_{1 \le i < j \le n} (x_i - x_j)$, so that $a_\delta = 1$ when
 $n \le 1$. For a sequence $\lambda = (\lambda_1, \dots, \lambda_n)$ of

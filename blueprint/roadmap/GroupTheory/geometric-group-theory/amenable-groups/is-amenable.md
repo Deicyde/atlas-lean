@@ -1,6 +1,6 @@
 # Amenable group (Følner condition)
 
-**Amenable group (Følner condition).** A discrete group $G$ is *amenable* if it satisfies the
+A discrete group $G$ is *amenable* if it satisfies the
 Følner condition: for every finite subset $K \subseteq G$ and every real $\varepsilon > 0$ there is
 a finite nonempty subset $F \subseteq G$ such that
 $|sF \mathbin{\triangle} F| / |F| < \varepsilon$ for every $s \in K$. Here

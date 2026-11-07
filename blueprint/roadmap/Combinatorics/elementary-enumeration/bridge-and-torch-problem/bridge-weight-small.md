@@ -1,6 +1,6 @@
 # First seven weights of the capacity-3 lower bound
 
-**First seven weights of the capacity-3 lower bound.** The weights $y_1, \dots, y_7$ of the
+The weights $y_1, \dots, y_7$ of the
 capacity-3 lower bound are $0, 0, 0, 2, 4, 5, 20/3$.
 
 ## Sources

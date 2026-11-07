@@ -1,6 +1,6 @@
 # Shape of ascent sequences avoiding 001 and 210
 
-**Shape of ascent sequences avoiding 001 and 210.** Let $n$ and $k$ be natural numbers and
+Let $n$ and $k$ be natural numbers and
 let $w$ be an ascent sequence of length $n$ with exactly $k$ ascents that avoids the patterns
 $001$ and $210$. Then either $w$ consists of $0, 1, \ldots, k-1$ followed by $n - k$ copies of
 $k$, or there are natural numbers $x$ and $y$ with $1 \le y < n - k$ and $x < k$ such that $w$

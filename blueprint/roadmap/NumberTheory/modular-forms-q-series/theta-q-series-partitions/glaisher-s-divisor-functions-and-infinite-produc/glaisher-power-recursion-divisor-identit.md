@@ -1,6 +1,6 @@
 # Six divisor-function identities from the power recursion lemma
 
-**Six divisor-function identities from the power recursion lemma.** Let $n \ge 1$ be a
+Let $n \ge 1$ be a
 natural number. Write $\sigma(m)$ for the sum of the positive divisors of $m$,
 $\bar\sigma_3(m) = \sum_{d \mid m,\ m/d \text{ odd}} d^3$,
 $\tilde\sigma_3(m) = \sum_{d \mid m} (-1)^{d-1} d^3$ and $S(m) = \sigma(m) - 4\sigma(m/4)$, where

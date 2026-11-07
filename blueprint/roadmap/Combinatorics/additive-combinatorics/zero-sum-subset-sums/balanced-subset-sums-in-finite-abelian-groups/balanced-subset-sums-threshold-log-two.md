@@ -1,6 +1,6 @@
 # Erdős Problem 1179 (balanced subset sums of random subsets)
 
-**Erdős Problem 1179 (balanced subset sums of random subsets).** The statement of Erdős
+The statement of Erdős
 Problem 1179 is the proposition that, for every real $\varepsilon$ with $0 < \varepsilon < 1$, the
 following two bounds hold. Upper bound: there is a function $k : \mathbb{N} \to \mathbb{N}$ with
 $k(N) / \log_2 N \to 1$ as $N \to \infty$ such that, for every sequence $(G_i)_{i \in \mathbb{N}}$

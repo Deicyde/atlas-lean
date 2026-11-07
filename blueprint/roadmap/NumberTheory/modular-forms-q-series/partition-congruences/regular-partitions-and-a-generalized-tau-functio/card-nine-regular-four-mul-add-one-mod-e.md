@@ -1,6 +1,6 @@
 # A congruence for 9-regular partitions at $4n + 1$
 
-**A congruence for 9-regular partitions at $4n + 1$.** Let $R_9(m)$ denote the number of
+Let $R_9(m)$ denote the number of
 partitions of $m$ in which no part is divisible by $9$. For every positive integer $n$,
 $R_9(4n + 1) \equiv R_9(n) \pmod 3$.
 

@@ -1,6 +1,6 @@
 # Companion sequence of the $(-r)$-Fibonacci polynomials
 
-**Companion sequence of the $(-r)$-Fibonacci polynomials.** Let $A$ be a commutative ring,
+Let $A$ be a commutative ring,
 $r$ a natural number, $x \in A$ and $y$ a unit of $A$. The companion sequence
 $V^{(-r)}_n(x, y) \in A$, $n \ge 0$, is defined by $V^{(-r)}_0 = r + 1$ and, if $r \ge 1$, by
 $V^{(-r)}_n = 0$ for $1 \le n < r$, $V^{(-r)}_r = r y^{-1}$ and

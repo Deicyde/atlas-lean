@@ -1,6 +1,6 @@
 # Special values of the $n$-weighted Catalan–harmonic series
 
-**Special values of the $n$-weighted Catalan–harmonic series.** Let $C_n$ be the $n$-th
+Let $C_n$ be the $n$-th
 Catalan number, $H_k = \sum_{j=1}^{k} 1/j$ the $k$-th harmonic number and
 $O_k = \sum_{j=1}^{k} 1/(2j-1)$ the $k$-th odd harmonic number. Then
 

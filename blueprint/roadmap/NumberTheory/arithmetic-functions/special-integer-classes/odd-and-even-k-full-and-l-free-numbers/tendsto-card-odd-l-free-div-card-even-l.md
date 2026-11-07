@@ -1,6 +1,6 @@
 # Odd-to-even ratio of $l$-free numbers
 
-**Odd-to-even ratio of $l$-free numbers.** Let $l \ge 2$. For a natural number $N$ let $O(N)$
+Let $l \ge 2$. For a natural number $N$ let $O(N)$
 and $E(N)$ be the numbers of odd and of even $l$-free positive integers $n \le N$. Then
 $O(N)/E(N) \to 2^l/(2^l - 2)$ as $N \to \infty$.
 

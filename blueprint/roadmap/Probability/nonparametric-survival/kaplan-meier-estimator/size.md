@@ -1,3 +1,3 @@
 # Sample size of censored survival data
 
-**Sample size of censored survival data.** The number of subjects in the sample.
+The number of subjects in the sample.

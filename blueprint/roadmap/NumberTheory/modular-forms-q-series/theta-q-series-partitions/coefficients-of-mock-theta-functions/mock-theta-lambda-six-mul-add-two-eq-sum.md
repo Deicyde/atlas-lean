@@ -1,6 +1,6 @@
 # Coefficients of the mock theta function $\lambda$ at indices $6n+2$
 
-**Coefficients of the mock theta function $\lambda$ at indices $6n+2$.** Write
+Write
 $\lambda(q) = \sum_{n \ge 0} P_\lambda(n) q^n$ for the sixth-order mock theta function $\lambda$,
 let $f_k = \prod_{m \ge 1} (1 - q^{km})$, and let $\overline{p}_3(j)$ be the coefficient of
 $q^j$ in $(f_2/f_1^2)^3$. Then for every $n \ge 0$,

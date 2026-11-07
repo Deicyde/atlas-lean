@@ -1,6 +1,6 @@
 # Small values of the Padovan-like sequences
 
-**Small values of the Padovan-like sequences.** For $n = 0, 1, \dots, 7$, the Padovan-like
+For $n = 0, 1, \dots, 7$, the Padovan-like
 sequence $a_{1,2,n}$ takes the values $1, 1, 2, 2, 3, 4, 5, 7$, and $a_{2,1,n}$ takes the values
 $0, 1, 1, 1, 2, 3, 4, 6$.
 

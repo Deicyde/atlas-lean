@@ -1,6 +1,6 @@
 # Iterates of an integer polynomial map modulo a natural number
 
-**Iterates of an integer polynomial map modulo a natural number.** Let $F$ be an integer
+Let $F$ be an integer
 polynomial map from $n$ variables to $n$ components, let $p$ be a natural number, and let
 $\bar F \colon (\mathbb{Z}/p\mathbb{Z})^n \to (\mathbb{Z}/p\mathbb{Z})^n$ be the map obtained by
 reducing the coefficients of $F$ modulo $p$ and evaluating. For a natural number $k$ and

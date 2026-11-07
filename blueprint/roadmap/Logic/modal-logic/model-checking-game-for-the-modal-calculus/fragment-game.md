@@ -1,6 +1,6 @@
 # Fragment parity game
 
-**Fragment parity game.** Let $M$ be a Kripke model and $\rho$ an environment, and write
+Let $M$ be a Kripke model and $\rho$ an environment, and write
 $(\varphi, w, [])$ for the game position with formula $\varphi$, world $w$ and empty binder
 stack. The fragment game of $M$ and $\rho$ is the parity game on the totalized fragment
 positions defined as follows. An embedded position $(\varphi, w)$ moves to $(\varphi', w')$

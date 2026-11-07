@@ -1,6 +1,6 @@
 # The Dumont–Thomas image language
 
-**The Dumont–Thomas image language.** Let $\eta$ send each letter of an alphabet $A$ to a
+Let $\eta$ send each letter of an alphabet $A$ to a
 finite word over $A$, let $u : \mathbb{Z} \to A$ and let $p \in \mathbb{N}$. Write
 $\mathcal{A}_{\eta,s}$ for the seed automaton of $\eta$ with seed $s = u_{-1} | u_0$, and
 $W_{\max}$ for the digit word obtained by following the last letter from $u_{-1}$ for at most

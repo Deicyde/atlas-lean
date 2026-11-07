@@ -1,6 +1,6 @@
 # Zelinsky's bound on the smallest prime divisor of an odd perfect number
 
-**Zelinsky's bound on the smallest prime divisor of an odd perfect number.** If $N$ is an odd
+If $N$ is an odd
 perfect number with $m$ distinct prime divisors, then the smallest prime divisor $p$ of $N$
 satisfies $p < (m - 1)/2$.
 

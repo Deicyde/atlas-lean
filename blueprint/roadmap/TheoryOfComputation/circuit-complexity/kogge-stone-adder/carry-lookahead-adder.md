@@ -1,6 +1,6 @@
 # Kogge–Stone carry-lookahead adder
 
-**Kogge–Stone carry-lookahead adder.** For natural numbers $n$ and $K$, the $n$-bit
+For natural numbers $n$ and $K$, the $n$-bit
 carry-lookahead adder with $K$ levels is the circuit over the XOR/AND/OR basis with $2n + 1$
 inputs (the bits $x_0, \dots, x_{n-1}$ of one summand, the bits $y_0, \dots, y_{n-1}$ of the
 other, and a carry-in $c$) and $n + 1$ outputs, whose gates are those of the $n$-bit adder

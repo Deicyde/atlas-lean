@@ -1,6 +1,6 @@
 # Hirschberg recursion step splitting the second sequence
 
-**Hirschberg recursion step splitting the second sequence.** Fix a substitution score
+Fix a substitution score
 $\sigma$ assigning an integer to each pair of letters and an integer gap score $g$, and write
 $\mathrm{NW}$ for the Needleman–Wunsch score. For a sequence $s$, write $s_{\lt j}$ for its first
 $j$ letters and $s_{\ge j}$ for the remaining letters. Let $x$, $y$ be sequences with

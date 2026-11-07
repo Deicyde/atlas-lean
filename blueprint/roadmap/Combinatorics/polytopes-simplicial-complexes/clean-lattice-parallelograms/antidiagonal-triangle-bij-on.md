@@ -1,6 +1,6 @@
 # Point reflection between the two triangles of a parallelogram
 
-**Point reflection between the two triangles of a parallelogram.** Let $u$ and $v$ be
+Let $u$ and $v$ be
 linearly independent vectors in $\mathbb{R}^2$ and let $P$ be the parallelogram they span. The map
 $p \mapsto u + v - p$ is a bijection from the set of points of the triangle
 $\operatorname{conv}\{0, u, v\}$ that lie in the interior of $P$ onto the set of points of the

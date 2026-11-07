@@ -1,6 +1,6 @@
 # Simulating the encryption oracle with a function oracle
 
-**Simulating the encryption oracle with a function oracle.** Let $X$ be a set, $Y$ an abelian
+Let $X$ be a set, $Y$ an abelian
 group written additively, $q \in \mathbb{N}$ and $\rho : \{0, \dots, q - 1\} \to X$ the
 encryption randomness of the queries. Started at query index $i \in \mathbb{N}$, the simulation
 turns an oracle algorithm with messages in $Y$ as queries, answers in $X \times Y$ and outputs in

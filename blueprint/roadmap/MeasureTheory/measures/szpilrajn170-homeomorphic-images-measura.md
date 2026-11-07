@@ -1,6 +1,6 @@
 # Szpilrajn's Problem 170: plane sets with measurable homeomorphic copies
 
-**Szpilrajn's Problem 170: plane sets with measurable homeomorphic copies.** Let $S$ be a subset
+Let $S$ be a subset
 of the plane $\mathbb{R}^2$ such that every subset $T$ of $\mathbb{R}^2$ homeomorphic to $S$ (as
 a subspace) is Lebesgue measurable, that is, Carathéodory measurable with respect to Lebesgue
 outer measure on $\mathbb{R}^2$. Then $S$ is absolutely measurable: for every measure $\mu$ on

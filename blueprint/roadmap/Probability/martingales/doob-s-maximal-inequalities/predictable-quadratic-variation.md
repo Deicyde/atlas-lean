@@ -1,6 +1,6 @@
 # Predictable quadratic variation
 
-**Predictable quadratic variation.** Let $\mu$ be a measure on $\Omega$, let
+Let $\mu$ be a measure on $\Omega$, let
 $(\mathcal{F}_k)_{k \in \mathbb{N}}$ be a filtration and let $(f_k)_{k \in \mathbb{N}}$ be a
 real-valued process. The predictable quadratic variation of $f$ with respect to
 $(\mathcal{F}_k)$ and $\mu$ is the process defined pointwise by

@@ -1,6 +1,6 @@
 # Weighted diagonal sums of trinomial coefficients by coefficient extraction
 
-**Weighted diagonal sums of trinomial coefficients by coefficient extraction.** Write
+Write
 $\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$,
 $[t^m]\,g$ for the coefficient of $t^m$ in a power series $g$, and $f_k = [t^k]\,f$. For every
 integer $n > 0$ and every formal power series $f \in \mathbb{Q}[[t]]$

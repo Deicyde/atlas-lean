@@ -1,6 +1,6 @@
 # Carlisle–Kropholler conjecture on the second Laurent coefficient (Kourovka 12.36)
 
-**Carlisle–Kropholler conjecture on the second Laurent coefficient (Kourovka 12.36).** The
+The
 statement that for every prime $p$, every $n \in \mathbb{N}$ and every subgroup $G$ of
 $\mathrm{GL}_n(\mathbb{F}_p)$, with $P(t)$ the Poincaré series of the invariant ring of $G$ and
 $r$ the hyperplane sum of $G$, there are polynomials $A, B \in \mathbb{Q}[t]$ with $B(1) \ne 0$

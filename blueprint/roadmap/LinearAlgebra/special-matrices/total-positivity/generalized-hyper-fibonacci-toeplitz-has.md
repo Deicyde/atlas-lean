@@ -1,6 +1,6 @@
 # Eventual total positivity of hyper-Fibonacci Toeplitz matrices
 
-**Eventual total positivity of hyper-Fibonacci Toeplitz matrices.** Let $p, a, b$ be integers
+Let $p, a, b$ be integers
 with $p \ge 1$, $a \ge 0$ and $b > 0$, put $\Delta = a^2 + pab - b^2$, let $W^{(r)}_{p,n}$
 denote the generalized hyper-Fibonacci numbers, and let $r \ge 1$ be a natural number. For a
 natural number $s$ write $T_s$ for the real $(r+2) \times (r+2)$ Toeplitz matrix with entry

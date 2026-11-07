@@ -1,6 +1,6 @@
 # The convex worm cover constant is nonnegative
 
-**The convex worm cover constant is nonnegative.** The convex worm cover constant is at
+The convex worm cover constant is at
 least $0$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Products of two $k$-Fibonacci numbers that are repdigits
 
-**Products of two $k$-Fibonacci numbers that are repdigits.** Let $k \ge 3$ and let
+Let $k \ge 3$ and let
 $(F_n)_{n \ge 2-k}$ be the $k$-generalized Fibonacci sequence, given by
 $F_{2-k} = \dots = F_0 = 0$, $F_1 = 1$ and $F_n = F_{n-1} + F_{n-2} + \dots + F_{n-k}$
 for $n \ge 2$. Let $a, \ell, m, n$ be natural numbers with $3 \le m \le n$, $\ell \ge 2$ and

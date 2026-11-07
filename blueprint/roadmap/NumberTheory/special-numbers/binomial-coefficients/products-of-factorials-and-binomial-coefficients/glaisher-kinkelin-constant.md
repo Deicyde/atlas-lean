@@ -1,6 +1,6 @@
 # Glaisher–Kinkelin constant
 
-**Glaisher–Kinkelin constant.** The Glaisher–Kinkelin constant is the real number
+The Glaisher–Kinkelin constant is the real number
 
 $$A = \exp\left(\frac{1}{12} - \operatorname{Re} \zeta'(-1)\right),$$
 

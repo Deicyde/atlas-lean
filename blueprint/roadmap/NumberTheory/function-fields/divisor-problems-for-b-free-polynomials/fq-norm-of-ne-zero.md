@@ -1,6 +1,6 @@
 # The norm of a nonzero polynomial
 
-**The norm of a nonzero polynomial.** Let $F$ be a finite field with $q$ elements. For every
+Let $F$ be a finite field with $q$ elements. For every
 nonzero $f \in F[T]$, the norm of $f$ is $|f| = q^{\deg f}$.
 
 ## Sources

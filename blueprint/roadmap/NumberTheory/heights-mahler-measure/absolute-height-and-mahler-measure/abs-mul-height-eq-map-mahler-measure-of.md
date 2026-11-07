@@ -1,6 +1,6 @@
 # Multiplicative height as a Mahler measure, for an integral element
 
-**Multiplicative height as a Mahler measure, for an integral element.** Let $K$ be a field of
+Let $K$ be a field of
 characteristic zero and let $x \in K$ be integral over $\mathbb{Q}$. Let $d$ be the degree of the
 minimal polynomial of $x$ over $\mathbb{Q}$, and let $P_x \in \mathbb{Z}[X]$ be the primitive
 integral minimal polynomial of $x$. Then the absolute multiplicative height of $x$ is

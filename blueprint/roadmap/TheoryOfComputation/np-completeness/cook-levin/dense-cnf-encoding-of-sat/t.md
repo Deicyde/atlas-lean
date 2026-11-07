@@ -1,6 +1,6 @@
 # Step count of the verifier's main scan
 
-**Step count of the verifier's main scan.** The number $T(r, bs, as, fl) \in \mathbb{N}$, for
+The number $T(r, bs, as, fl) \in \mathbb{N}$, for
 bit strings $r$, $bs$, $as$ and a flag $fl$, is defined by recursion on $r$, where $0$ is false
 and $1$ is true, juxtaposition denotes concatenation (so $b\,r$ is $r$ with the bit $b$
 prepended), $[\,]$ is the empty string, $\mathrm{rev}$ reverses a string and $|\cdot|$ is length:

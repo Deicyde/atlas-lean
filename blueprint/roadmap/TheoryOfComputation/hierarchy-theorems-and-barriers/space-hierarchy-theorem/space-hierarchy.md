@@ -1,6 +1,6 @@
 # Deterministic space hierarchy: quadratic versus linear space
 
-**Deterministic space hierarchy: quadratic versus linear space.** There is a language $L$
+There is a language $L$
 of bitstrings that lies in $\mathrm{DSPACE}(n^2)$ but not in $\mathrm{DSPACE}(n)$, the
 deterministic space classes of multi-tape Turing machines for the space bounds $n \mapsto n^2$
 and $n \mapsto n$.

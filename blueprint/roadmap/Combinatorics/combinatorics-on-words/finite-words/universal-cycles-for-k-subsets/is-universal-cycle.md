@@ -1,6 +1,6 @@
 # Universal cycle for $k$-subsets
 
-**Universal cycle for $k$-subsets.** For natural numbers $n$ and $k$, let $N = \binom{n}{k}$.
+For natural numbers $n$ and $k$, let $N = \binom{n}{k}$.
 A sequence $c_0, \dots, c_{N-1}$ of elements of $\{0, \dots, n-1\}$, read cyclically, is a
 universal cycle for the $k$-subsets of $\{0, \dots, n-1\}$ when, for every starting position
 $i < N$, the $k$ consecutive entries $c_i, c_{i+1}, \dots, c_{i+k-1}$ (indices taken modulo $N$)

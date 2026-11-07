@@ -1,6 +1,6 @@
 # Singularity of natural duals of Moebius maps (algebraic form)
 
-**Singularity of natural duals of Moebius maps (algebraic form).** Let
+Let
 $\alpha, \beta, \gamma, \delta$ be real numbers with $\alpha > 0$, $\beta < 1$, $\gamma > -1$ and
 $\delta \ge 0$. Define the dual branches
 $V^\#_{\alpha\gamma}(y) = (\gamma - 2\alpha - \alpha y)/(2\alpha + 1 + \alpha y)$,

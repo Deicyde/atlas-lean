@@ -1,6 +1,6 @@
 # Program of the converter to the canonical pair encoding
 
-**Program of the converter to the canonical pair encoding.** The machine has an input stack
+The machine has an input stack
 of symbols, each a left-tagged bit, a right-tagged bit or the separator, and three stacks of
 bits: the output and two stashes. Its program first pops input symbols and pushes the bit of
 each left-tagged one onto the first stash, until the input is empty or the symbol popped is not

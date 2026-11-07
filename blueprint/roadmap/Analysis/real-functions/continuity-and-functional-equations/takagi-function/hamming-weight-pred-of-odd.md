@@ -1,6 +1,6 @@
 # Hamming weight of the predecessor of an odd number
 
-**Hamming weight of the predecessor of an odd number.** For a natural number $m$, write
+For a natural number $m$, write
 $s_1(m)$ for the sum of the binary digits of $m$ (the number of ones in its binary expansion).
 If $n$ is an odd natural number, then $s_1(n - 1) = s_1(n) - 1$.
 

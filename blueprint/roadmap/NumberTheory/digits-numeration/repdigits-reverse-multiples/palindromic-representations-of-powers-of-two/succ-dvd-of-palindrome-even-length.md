@@ -1,6 +1,6 @@
 # Even-length palindromes are divisible by the base plus one
 
-**Even-length palindromes are divisible by the base plus one.** Let $b \ge 2$ and let $N$ be a
+Let $b \ge 2$ and let $N$ be a
 natural number whose base-$b$ digits form a palindrome with an even number of digits. Then
 $b + 1$ divides $N$.
 

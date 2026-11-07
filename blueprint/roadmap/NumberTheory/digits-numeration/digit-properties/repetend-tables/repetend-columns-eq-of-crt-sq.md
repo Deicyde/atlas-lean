@@ -1,6 +1,6 @@
 # Class C matched columns of repetend tables
 
-**Class C matched columns of repetend tables.** Let $p$ be a prime with $p \equiv 1 \pmod 6$,
+Let $p$ be a prime with $p \equiv 1 \pmod 6$,
 let $j \ge 1$ and $i \ge 2j$, and put $n = p^i$, $Q = p^j$ and $L = 6Q$. Let $b$ be a natural
 number of multiplicative order $L$ modulo $n$, and let $d, e < L$ be natural numbers with
 $d \equiv b^2 \pmod Q$, $e \equiv b^4 \pmod Q$ and $d \equiv e \equiv 4 \pmod 6$. Let the rows be

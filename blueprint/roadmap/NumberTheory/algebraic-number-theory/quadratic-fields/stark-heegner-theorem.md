@@ -1,6 +1,6 @@
 # Stark–Heegner theorem
 
-**Stark–Heegner theorem.** Let $d$ be a positive squarefree integer and let $K$ be a number
+Let $d$ be a positive squarefree integer and let $K$ be a number
 field of degree $2$ over $\mathbb{Q}$ that contains an element $x$ with $x^2 = -d$, so that
 $K = \mathbb{Q}(\sqrt{-d})$. Then $K$ has class number $1$ if and only if
 $d \in \{1, 2, 3, 7, 11, 19, 43, 67, 163\}$.

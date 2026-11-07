@@ -1,6 +1,5 @@
 # Central binomial sums from a polynomial identity: right exponents odd at even indices
 
-**Central binomial sums from a polynomial identity: right exponents odd at even indices.**
 Write $\binom{u}{w} = \Gamma(u+1)/(\Gamma(w+1)\Gamma(u-w+1))$ for the generalized binomial
 coefficient of complex $u$, $w$. Let $s, n, m, r$ be natural numbers, let $f, g$ be
 complex-valued functions and $p, q$ natural-number-valued functions on the natural numbers, and

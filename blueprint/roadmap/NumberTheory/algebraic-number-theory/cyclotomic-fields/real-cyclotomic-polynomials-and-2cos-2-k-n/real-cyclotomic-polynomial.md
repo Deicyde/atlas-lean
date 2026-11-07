@@ -1,6 +1,6 @@
 # Real cyclotomic polynomial
 
-**Real cyclotomic polynomial.** For a natural number $n$, the real cyclotomic polynomial
+For a natural number $n$, the real cyclotomic polynomial
 $\psi_n \in \mathbb{Z}[X]$ is the minimal polynomial over $\mathbb{Z}$ of the complex number
 $\zeta + \zeta^{-1}$, where $\zeta = e^{2\pi i/n}$; for $n \ge 1$ this number is $2\cos(2\pi/n)$.
 

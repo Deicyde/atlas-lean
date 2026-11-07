@@ -1,6 +1,6 @@
 # The knight reaches $(1,2)$ in one move
 
-**The knight reaches $(1,2)$ in one move.** Let $N \subseteq \mathbb{Z}^2$ be the move set of the
+Let $N \subseteq \mathbb{Z}^2$ be the move set of the
 usual knight, consisting of the eight vectors $(\pm 1, \pm 2)$ and $(\pm 2, \pm 1)$. The piece
 distance of the point $(1,2)$ for $N$ is $1$.
 

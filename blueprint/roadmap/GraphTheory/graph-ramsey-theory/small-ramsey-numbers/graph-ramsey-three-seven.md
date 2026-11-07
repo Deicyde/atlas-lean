@@ -1,6 +1,6 @@
 # The value of $R(3, 7)$
 
-**The value of $R(3, 7)$.** The classical Ramsey number $R(3, 7)$ equals $23$.
+The classical Ramsey number $R(3, 7)$ equals $23$.
 
 ## Sources
 

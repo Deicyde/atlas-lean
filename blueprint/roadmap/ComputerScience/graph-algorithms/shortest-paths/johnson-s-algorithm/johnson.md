@@ -1,6 +1,6 @@
 # Johnson's algorithm
 
-**Johnson's algorithm.** Let $E$ be a list of directed edges on the vertices
+Let $E$ be a list of directed edges on the vertices
 $\{0, \dots, n-1\}$ with integer weights. Johnson's algorithm adds a new vertex $s$ with an
 edge of weight $0$ to every original vertex and runs Bellman–Ford from $s$. If Bellman–Ford
 reports a negative cycle, the algorithm returns no table. Otherwise let $h(v)$ be the

@@ -1,6 +1,6 @@
 # The squared prime sum $U_h$ for multiplicity $1$ on $h$-free polynomials
 
-**The squared prime sum $U_h$ for multiplicity $1$ on $h$-free polynomials.** Let $F$ be a
+Let $F$ be a
 finite field with $q$ elements, let $h$ be a natural number, and for a monic irreducible
 polynomial $P$ over $F$ write $|P| = q^{\deg P}$. Then $U_h$ is the real number
 

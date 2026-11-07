@@ -1,6 +1,6 @@
 # Grundy number where the rule function is flat
 
-**Grundy number where the rule function is flat.** Let $f : \mathbb{N} \to \mathbb{N}$
+Let $f : \mathbb{N} \to \mathbb{N}$
 satisfy $f(0) = 0$ and $f(m-1) \le f(m) \le f(m-1) + 1$ for every $m \ge 1$, and let $G$ be the
 Grundy number of Maximum Nim with rule function $f$. If $x \ge 1$ and $f(x) = f(x-1)$, then
 $G(x) = G(x - f(x) - 1)$.

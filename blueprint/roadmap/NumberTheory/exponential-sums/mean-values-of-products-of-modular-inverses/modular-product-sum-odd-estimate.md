@@ -1,6 +1,6 @@
 # Estimate for the modular product sum $S_k(n, m)$ at odd moduli
 
-**Estimate for the modular product sum $S_k(n, m)$ at odd moduli.** Let $\varphi$ be Euler's
+Let $\varphi$ be Euler's
 totient function and $S_k(n, m)$ the modular product sum. For every natural number $k \ge 4$
 there is a real constant $C_k$ such that for every odd natural number $n \ge 3$ and every natural
 number $m$ with $\gcd(m, n) = 1$,

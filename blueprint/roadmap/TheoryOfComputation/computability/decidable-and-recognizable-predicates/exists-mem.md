@@ -1,6 +1,6 @@
 # Bounded existential quantification preserves recursive enumerability
 
-**Bounded existential quantification preserves recursive enumerability.** Let $\alpha$ and
+Let $\alpha$ and
 $\beta$ be types with primitive recursive encodings into $\mathbb{N}$, let $R$ be a relation
 between $\alpha$ and $\beta$ that is recursively enumerable as a predicate on pairs $(a, b)$, and
 let $c$ be a primitive recursive function sending each $a \in \alpha$ to a finite list $c(a)$ of

@@ -1,6 +1,6 @@
 # Narayana numbers that concatenate two repdigits in bases 2 to 9
 
-**Narayana numbers that concatenate two repdigits in bases 2 to 9.** Let $(N_n)$ be
+Let $(N_n)$ be
 Narayana's cows sequence and let $2 \le b \le 9$. Then $N_n$ is a concatenation of two repdigits
 in base $b$ if and only if $(n, b)$ is one of the following $43$ pairs: $n = 4$ and $b = 2$;
 $n = 5$ and $b = 3$; $n = 6$ and $b \in \{2, 4\}$; $n = 7$ and $b \in \{2, 3, 4, 6\}$; $n = 8$

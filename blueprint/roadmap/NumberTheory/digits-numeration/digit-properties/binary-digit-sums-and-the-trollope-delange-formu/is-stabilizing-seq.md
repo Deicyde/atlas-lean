@@ -1,6 +1,6 @@
 # Stabilizing sequence for the dyadic odometer
 
-**Stabilizing sequence for the dyadic odometer.** Let $q \in \mathbb{C}$, let $\omega$ be a
+Let $q \in \mathbb{C}$, let $\omega$ be a
 dyadic integer, let $S_{q,\omega}$ be the interpolated odometer partial sum, and for a natural
 number $l$ let $M_{q,\omega}(l) = \sup_{t \in [0, 1]} |S_{q,\omega}(tl) - t S_{q,\omega}(l)|$ be the
 maximal fluctuation. A sequence $(l_n)$ of natural numbers is a stabilizing sequence for

@@ -1,3 +1,3 @@
 # Coefficient L1 norm of a multivariate polynomial
 
-**Coefficient L1 norm of a multivariate polynomial.** The rational sum of the absolute values of a polynomial's coefficients.
+The rational sum of the absolute values of a polynomial's coefficients.

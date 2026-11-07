@@ -1,6 +1,6 @@
 # Deaconescu's totient lower bound conjecture fails (Kourovka 15.43(a))
 
-**Deaconescu's totient lower bound conjecture fails (Kourovka 15.43(a)).** Not every finite group
+Not every finite group
 $G$ satisfies $\varphi(|G|) \le |\mathrm{Aut}(G)|$: there is a finite group $G$ with
 $|\mathrm{Aut}(G)| < \varphi(|G|)$, where $\varphi$ is Euler's totient function and
 $\mathrm{Aut}(G)$ is the group of automorphisms of $G$.

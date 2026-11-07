@@ -1,6 +1,6 @@
 # Generator run over the first rows and the at-least-one clause
 
-**Generator run over the first rows and the at-least-one clause.** Let $L$ be a layout with
+Let $L$ be a layout with
 $g$ symbol codes, let $V$ and $B$ be natural numbers with $B + g \le V$, write $p_i$ for the
 variable with index $i$, and let $F$ assign a value to each counter of the one-hot generator such
 that the scratch counters are empty ($\mathrm{Rest}(F)$), $F(CB) = B$, $F(Vc) = V$ and

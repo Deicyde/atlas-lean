@@ -1,6 +1,6 @@
 # Emitter
 
-**Emitter.** An emitter is a multi-stack machine, given by a type of stacks and a type of
+An emitter is a multi-stack machine, given by a type of stacks and a type of
 labels (both with decidable equality), an alphabet for each stack and a program with boolean
 state, together with a start label and a different exit label at which the program halts, a
 token stack and a different output stack, a bijection from the SAT token symbols to the token

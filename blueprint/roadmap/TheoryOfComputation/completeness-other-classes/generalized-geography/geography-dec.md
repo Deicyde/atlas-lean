@@ -1,6 +1,6 @@
 # Geography as a decision problem
 
-**Geography as a decision problem.** The Geography decision problem accepts a bitstring $x$
+The Geography decision problem accepts a bitstring $x$
 exactly when $x$ decodes, under the canonical bitstring encoding of triples $(n, E, s)$ of a
 natural number, a list of pairs of natural numbers and a natural number, to a triple with
 $s < n$, with both entries of every pair in $E$ less than $n$, and with

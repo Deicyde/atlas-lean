@@ -1,6 +1,6 @@
 # Karagiannis's infinitary Hales–Jewett theorem for increasing alphabets
 
-**Karagiannis's infinitary Hales–Jewett theorem for increasing alphabets.** Let $X$ be a set,
+Let $X$ be a set,
 let $A_0 \subseteq A_1 \subseteq \cdots$ be finite subsets of $X$ with union $A$, and color the
 finite words over $X$ with finitely many colors. A variable word over $A$ is a finite word over
 $A \cup \{v\}$, for a variable $v \notin X$, in which $v$ occurs, and $w(a)$ is the word obtained

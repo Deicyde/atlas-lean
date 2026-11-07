@@ -1,6 +1,6 @@
 # Power saving for continuous Turán numbers of finite planar patterns
 
-**Power saving for continuous Turán numbers of finite planar patterns.** Let
+Let
 $P \subseteq \mathbb{R}^2$ be finite. Then there is a real number $\varepsilon > 0$ such that the
 continuous Turán number satisfies $\operatorname{opx}(n, P) = O(n^{2 - \varepsilon})$ as the
 natural number $n$ tends to infinity.

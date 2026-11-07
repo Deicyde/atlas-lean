@@ -1,6 +1,6 @@
 # EFFICIENT DOMINATION (PERFECT CODE) is NP-complete
 
-**EFFICIENT DOMINATION (PERFECT CODE) is NP-complete.** The decision problem EFFICIENT
+The decision problem EFFICIENT
 DOMINATION belongs to NP, and every decision problem in NP reduces to it by a polynomial-time
 many-one reduction.
 

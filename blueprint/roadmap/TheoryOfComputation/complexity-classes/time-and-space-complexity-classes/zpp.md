@@ -1,6 +1,6 @@
 # ZPP
 
-**ZPP.** The class $\mathsf{ZPP}$ (zero-error probabilistic polynomial time) is defined as
+The class $\mathsf{ZPP}$ (zero-error probabilistic polynomial time) is defined as
 the set of decision problems that lie in both $\mathsf{RP}$ and $\mathsf{coRP}$, that is,
 $\mathsf{ZPP} = \mathsf{RP} \cap \mathsf{coRP}$.
 

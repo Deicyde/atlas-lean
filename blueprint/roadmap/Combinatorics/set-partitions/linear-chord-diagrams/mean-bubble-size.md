@@ -1,6 +1,6 @@
 # Mean bubble size
 
-**Mean bubble size.** Let $B_{n,p}$ be the total number of bubbles of size $p$ in all linear
+Let $B_{n,p}$ be the total number of bubbles of size $p$ in all linear
 chord diagrams on $2n$ vertices. For every integer $n \ge 2$, the mean bubble size satisfies
 
 $$\frac{\sum_{p=1}^{2n} p\,B_{n,p}}{\sum_{p=1}^{2n} B_{n,p}} = \frac{2(2n-1)(n-1)}{4n-5}.$$

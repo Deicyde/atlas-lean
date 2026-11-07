@@ -1,6 +1,6 @@
 # Class numbers of finite general linear groups via OOZ-qMZVs
 
-**Class numbers of finite general linear groups via OOZ-qMZVs.** Let $K$ be a finite field
+Let $K$ be a finite field
 with $c$ elements and, for $n \ge 0$, let $a_{n,K}$ be the number of conjugacy classes of
 $\mathrm{GL}_n(K)$, so that $a_{0,K} = 1$ because $\mathrm{GL}_0(K)$ is the trivial group. Write
 $\{1\}^r$ for the index consisting of $r$ ones and $\zeta_q^{\mathrm{OOZ}}$ for the

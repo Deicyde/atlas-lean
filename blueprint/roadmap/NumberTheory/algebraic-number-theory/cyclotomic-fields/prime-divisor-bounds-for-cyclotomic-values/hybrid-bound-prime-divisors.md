@@ -1,6 +1,6 @@
 # Hybrid bound for prime divisors of $x^n - 1$
 
-**Hybrid bound for prime divisors of $x^n - 1$.** The hybrid bound. Let `n = ∏_{i=1}^m p_i^{a_i}` with distinct primes `p_i` (in any order),
+The hybrid bound. Let `n = ∏_{i=1}^m p_i^{a_i}` with distinct primes `p_i` (in any order),
 `x > 1`, and `ω_n = ω(x^n - 1)`. With `p_0 := 1`, let
 `Π^j = {ρ prime : ρ ≡ 1 (mod p_j), ρ ≢ 1 (mod p_s) for j < s ≤ m}` and `r_{i,j}` its `i`-th
 element (`Nat.nth`, `0`-indexed here). The source's

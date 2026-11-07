@@ -1,6 +1,6 @@
 # NP relative to an oracle
 
-**NP relative to an oracle.** Let $O$ be a function from bitstrings to booleans. The class
+Let $O$ be a function from bitstrings to booleans. The class
 $\mathrm{NP}^O$ is the set of decision problems $L$ for which there are polynomials $p$ and $q$
 with natural-number coefficients and polynomial-time computable functions $\mathrm{nextQ}$ and
 $\mathrm{final}$, each taking a bitstring and a list of query/answer pairs, such that for every

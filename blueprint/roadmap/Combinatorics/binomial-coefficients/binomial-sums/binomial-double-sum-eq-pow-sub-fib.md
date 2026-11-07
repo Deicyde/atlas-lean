@@ -1,6 +1,6 @@
 # A binomial double sum equal to a power of two minus a Fibonacci number
 
-**A binomial double sum equal to a power of two minus a Fibonacci number.** For every natural
+For every natural
 number $n$,
 
 $$\sum_{k=0}^{\lfloor n/2 \rfloor} \sum_{q=0}^{n-2k} \binom{n-k}{q} = 2^{n+1} - F_{n+2},$$

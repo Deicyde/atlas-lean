@@ -1,6 +1,6 @@
 # One crossing of three people under capacities two and three
 
-**One crossing of three people under capacities two and three.** For the people $1, 2, 3$,
+For the people $1, 2, 3$,
 the single forward crossing $\{1, 2, 3\}$ is not a schedule on a bridge of capacity $2$, but it
 is a schedule on a bridge of capacity $3$.
 

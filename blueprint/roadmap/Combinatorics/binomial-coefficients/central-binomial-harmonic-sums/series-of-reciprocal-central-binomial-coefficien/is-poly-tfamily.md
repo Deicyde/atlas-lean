@@ -1,6 +1,6 @@
 # Polynomial family defined by an antiderivative
 
-**Polynomial family defined by an antiderivative.** Let $S$ and $T$ be sequences of real
+Let $S$ and $T$ be sequences of real
 polynomials indexed by the natural numbers, with terms $S(l)$ and $T(l)$. The pair $(S, T)$
 satisfies this predicate when $T(0) = 0$; for every $l \ge 1$ the polynomial $T(l)$ is nonzero
 and has degree $l - 1$; and for every $l \ge 1$ and every real $x$ with $0 < x < 4$, the function

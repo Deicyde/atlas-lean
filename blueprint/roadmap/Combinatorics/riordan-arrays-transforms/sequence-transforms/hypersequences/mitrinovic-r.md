@@ -1,6 +1,6 @@
 # Mitrinović's numbers
 
-**Mitrinović's numbers.** For complex numbers $a$ and $b$, Mitrinović's numbers
+For complex numbers $a$ and $b$, Mitrinović's numbers
 $R^k_j(a, b)$, $j, k \in \mathbb{N}$ (lower index $j$, upper index $k$), are defined by
 $R^k_0(a, b) = 1$ if $k = 0$ and $R^k_0(a, b) = 0$ otherwise, and, for all $j, k$, by
 $R^0_{j+1}(a, b) = -(a + b j)\, R^0_j(a, b)$ and

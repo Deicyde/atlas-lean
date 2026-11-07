@@ -1,6 +1,6 @@
 # Extremal numbers of the four-cycle up to twenty vertices
 
-**Extremal numbers of the four-cycle up to twenty vertices.** For a natural number $n$, let
+For a natural number $n$, let
 $\mathrm{ex}(n; C_4)$ be the largest number of edges of a simple graph on $n$ vertices that
 contains no four-cycle $C_4$ as a (not necessarily induced) subgraph. For
 $n = 1, 2, \dots, 20$ the values of $\mathrm{ex}(n; C_4)$ are, in order,

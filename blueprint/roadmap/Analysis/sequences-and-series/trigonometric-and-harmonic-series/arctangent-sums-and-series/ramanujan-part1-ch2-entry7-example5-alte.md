@@ -1,6 +1,6 @@
 # Alternating series of arctangents of 2/k² (Entry 7, Example 5)
 
-**Alternating series of arctangents of 2/k² (Entry 7, Example 5).** The series
+The series
 
 $$\sum_{n=0}^{\infty} (-1)^n \arctan \frac{2}{(n + 1)^2}$$
 

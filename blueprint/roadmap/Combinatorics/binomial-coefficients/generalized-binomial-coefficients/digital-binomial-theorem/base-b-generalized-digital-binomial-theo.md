@@ -1,6 +1,6 @@
 # Base-$b$ generalized digital binomial theorem
 
-**Base-$b$ generalized digital binomial theorem.** Let $b \ge 2$, let $N$ and $n$ be natural
+Let $b \ge 2$, let $N$ and $n$ be natural
 numbers with $n < b^N$, and let $x$ and $y$ be real numbers. For a natural number $m$ write
 $m_i = \lfloor m / b^i \rfloor \bmod b$ for its $i$-th base-$b$ digit, and write
 $z^{\overline{j}} = z(z+1)\cdots(z+j-1)$ for the rising factorial. Then

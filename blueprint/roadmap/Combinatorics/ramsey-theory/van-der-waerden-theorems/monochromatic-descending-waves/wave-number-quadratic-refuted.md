@@ -1,6 +1,6 @@
 # Erdős Problem 781 is false
 
-**Erdős Problem 781 is false.** For natural numbers $k$ and $n$, say that $n$ forces a $k$-term
+For natural numbers $k$ and $n$, say that $n$ forces a $k$-term
 wave if every colouring of $\{1, \dots, n\}$ with two colours has a monochromatic $k$-term
 descending wave. It is not the case that for every natural number $k \ge 1$ the number
 $k^2 - k + 1$ forces a $k$-term wave and the number $k^2 - k$ does not. Writing $f(k)$ for the

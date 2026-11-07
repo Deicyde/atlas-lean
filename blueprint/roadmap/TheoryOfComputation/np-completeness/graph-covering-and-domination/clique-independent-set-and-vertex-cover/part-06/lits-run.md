@@ -1,6 +1,6 @@
 # Emitter run over a clause's literals
 
-**Emitter run over a clause's literals.** Write
+Write
 $\langle \ell, v \mid t, o, a, d, e, c, n\rangle$ for the configuration of the SAT-to-CLIQUE
 emitter at label $\ell$ with local bit $v$, stacks $T = t$, $O = o$, $A = a$, $D = d$, $E = e$,
 empty scratch stacks $B$ and $X$, and $c$ and $n$ marks on the counters $C$ and $N$;

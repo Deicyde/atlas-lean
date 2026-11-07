@@ -1,6 +1,6 @@
 # Uniqueness of the polar density
 
-**Uniqueness of the polar density.** Let $K$ be a number field and let $S$ be a set of
+Let $K$ be a number field and let $S$ be a set of
 height-one primes of the ring of integers of $K$. If $\rho_1$ and $\rho_2$ are both polar
 densities of $S$, then $\rho_1 = \rho_2$.
 

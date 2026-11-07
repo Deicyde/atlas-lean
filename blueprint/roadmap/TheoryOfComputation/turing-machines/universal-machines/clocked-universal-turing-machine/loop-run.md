@@ -1,6 +1,6 @@
 # The clocked loop
 
-**The clocked loop.** Let $c$ be a code, let $M$ be at least the length of the code stack of
+Let $c$ be a code, let $M$ be at least the length of the code stack of
 $c$, let $k$ be a configuration whose state and cells are all at most $M$, let $t$ be a natural
 number and $v$ a bit, and let $k_t$ be the result of $t$ steps of $c$ from $k$, where a halted
 configuration stays put. Start the program of the clocked universal machine at label `sc0` with

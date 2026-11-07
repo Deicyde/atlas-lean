@@ -1,6 +1,6 @@
 # A projection is non-degenerate on its own variable
 
-**A projection is non-degenerate on its own variable.** For every $n$ and every index
+For every $n$ and every index
 $i \in \{1, \ldots, n\}$, the projection $x \mapsto x_i$ on $\{0,1\}^n$ is non-degenerate on
 the variable $x_i$.
 

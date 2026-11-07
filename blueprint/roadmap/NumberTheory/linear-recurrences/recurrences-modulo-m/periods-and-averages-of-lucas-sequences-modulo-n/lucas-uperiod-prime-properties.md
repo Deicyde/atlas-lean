@@ -1,6 +1,6 @@
 # Periods of a Lucas sequence modulo a prime
 
-**Periods of a Lucas sequence modulo a prime.** Let $U = U(P, Q)$ be a nondegenerate Lucas
+Let $U = U(P, Q)$ be a nondegenerate Lucas
 sequence with discriminant $D = P^2 - 4Q$, and let $p$ be a prime. Write $\pi_U(m)$ and
 $\rho_U(m)$ for the least period and the least restricted period of $U$ modulo $m$, and
 $\left(\frac{x}{p}\right)$ for the Jacobi symbol.

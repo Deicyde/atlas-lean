@@ -1,6 +1,6 @@
 # Bridge schedules
 
-**Bridge schedules.** Let $c$ and $n$ be natural numbers. A finite sequence $\sigma$ of finite
+Let $c$ and $n$ be natural numbers. A finite sequence $\sigma$ of finite
 sets of natural numbers (the crossings) is a schedule for the people $1, \dots, n$ on a bridge of
 capacity $c$ with one torch when the following holds. Start with all of $1, \dots, n$ and the
 torch on the left bank. The crossings at even positions (counting from $0$) are forward moves:

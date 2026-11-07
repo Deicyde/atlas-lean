@@ -1,6 +1,6 @@
 # Terms of the $m$th order Gijswijt sequence
 
-**Terms of the $m$th order Gijswijt sequence.** For $k \ge 1$, $A^{(m)}(k)$ is the $k$th
+For $k \ge 1$, $A^{(m)}(k)$ is the $k$th
 term of the $m$th order sequence $A^{(m)}$, that is, the last entry of the list of its first $k$
 terms. For $k = 0$ the value is $0$ by convention.
 

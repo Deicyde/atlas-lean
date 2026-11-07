@@ -1,6 +1,6 @@
 # Linear polynomials weakly locally nilpotent but not nilpotent at $1$
 
-**Linear polynomials weakly locally nilpotent but not nilpotent at $1$.** Let $A$ be a finite
+Let $A$ be a finite
 set of primes, and let $c$ range over the positive integers all of whose prime factors lie in $A$.
 A polynomial $u \in \mathbb{Z}[x]$ of degree $1$ is weakly locally nilpotent at $1$ outside $A$ and
 not nilpotent at $1$ if and only if $u$ is one of: $x + c$; $x - c$ with $c \ne 1$; $cx + 1$ or

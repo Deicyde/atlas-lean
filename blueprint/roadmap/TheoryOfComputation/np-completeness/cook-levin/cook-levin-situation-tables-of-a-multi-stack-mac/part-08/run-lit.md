@@ -1,6 +1,6 @@
 # The real run's literals
 
-**The real run's literals.** Let $M$ be a finite stack machine with encoding data $E$, let $s$
+Let $M$ be a finite stack machine with encoding data $E$, let $s$
 be an input of $M$ and $H \in \mathbb{N}$, and for $t \in \mathbb{N}$ let $c_t$ be the
 configuration after $t$ steps of the idle-extended run of $M$ from its start configuration on $s$.
 Variable indices are those of the layout of $E$ at height $H$, $K$ is the number of stacks of $E$,

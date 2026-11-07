@@ -1,6 +1,6 @@
 # Carry phase of the SUBSET-SUM verifier
 
-**Carry phase of the SUBSET-SUM verifier.** Let $x$, $w$, $t$ and $\mathit{acc}$ be lists of
+Let $x$, $w$, $t$ and $\mathit{acc}$ be lists of
 stack symbols, $u$ a list of bits, $c$ a carry bit and $v$ a Boolean, and write
 $\mathrm{inc}(c, u)$ for the result of adding the carry $c$ to $u$ (least significant bit first).
 Started at label $\mathrm{fin}(c)$ with variable $v$, with $x$, $w$, $t$ on the stacks $X$, $W$,

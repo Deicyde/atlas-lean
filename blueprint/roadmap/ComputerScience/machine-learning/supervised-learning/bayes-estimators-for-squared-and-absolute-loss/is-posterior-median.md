@@ -1,6 +1,6 @@
 # Measurable choices of posterior medians
 
-**Measurable choices of posterior medians.** Let $P$ be a finite kernel from $\mathbb{R}$ to a
+Let $P$ be a finite kernel from $\mathbb{R}$ to a
 measurable space $\mathcal{X}$, sending $\theta$ to the measure $P_\theta$, let $\pi$ be a finite
 measure on $\mathbb{R}$, and write $P^\dagger\pi$ for the posterior kernel from $\mathcal{X}$ to
 $\mathbb{R}$. A function $f : \mathcal{X} \to \mathbb{R}$ is a measurable choice of posterior

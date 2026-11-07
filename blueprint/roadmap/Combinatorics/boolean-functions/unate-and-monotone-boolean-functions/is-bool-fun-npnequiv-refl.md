@@ -1,6 +1,6 @@
 # NPN-equivalence is reflexive
 
-**NPN-equivalence is reflexive.** Every $n$-variable Boolean function is NPN-equivalent to
+Every $n$-variable Boolean function is NPN-equivalent to
 itself.
 
 ## Sources

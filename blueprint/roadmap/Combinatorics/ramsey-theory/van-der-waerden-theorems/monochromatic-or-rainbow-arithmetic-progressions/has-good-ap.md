@@ -1,6 +1,6 @@
 # Good arithmetic progressions
 
-**Good arithmetic progressions.** Let $f : \mathbb{N} \to \mathbb{N}$ be a colouring and let
+Let $f : \mathbb{N} \to \mathbb{N}$ be a colouring and let
 $N$ and $k$ be natural numbers. The colouring $f$ has a good $k$-term arithmetic progression below
 $N$ if there are natural numbers $a$ and $d > 0$ with $a + d(k - 1) < N$, where $k - 1$ is
 natural-number subtraction (so it is $0$ when $k = 0$), such that the colours $f(a + di)$ for

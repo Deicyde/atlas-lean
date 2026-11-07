@@ -1,6 +1,6 @@
 # Multifold partition diamonds with given fold and link sums
 
-**Multifold partition diamonds with given fold and link sums.** Let $d_1, \dots, d_M$ be
+Let $d_1, \dots, d_M$ be
 natural numbers, let $L_k = \sum_{m=1}^{k} (d_m + 1)$ for $0 \le k \le M$ be the link
 positions, let $c = L_M + 1$, and let $i$ and $j$ be natural numbers. A function
 $b : \mathbb{N} \to \mathbb{N}$ is a multifold partition diamond with fold sum $i$ and link sum

@@ -1,6 +1,6 @@
 # Index-scaled Göbel terms with $k = (p-1)/2$ are congruent to the residue walk
 
-**Index-scaled Göbel terms with $k = (p-1)/2$ are congruent to the residue walk.** Let $p$
+Let $p$
 be an odd prime and $l \le p - 1$ a natural number. Write $k = (p-1)/2$, let $g_{k,l}$ be the
 $(k,l)$-Göbel sequence, and let $\tilde g_l$ be the residue walk of $p$ starting at $l$. Then
 (a) for every $1 \le n \le p$, the rational number $n\,g_{k,l}(n) - \tilde g_l(n)$ is either $0$

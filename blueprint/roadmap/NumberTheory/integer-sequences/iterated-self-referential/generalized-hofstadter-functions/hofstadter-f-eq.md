@@ -1,6 +1,6 @@
 # Recursion for the generalized Hofstadter function
 
-**Recursion for the generalized Hofstadter function.** For every $k \ge 0$ and every $n \ge 1$,
+For every $k \ge 0$ and every $n \ge 1$,
 the generalized Hofstadter function $F_k$ satisfies $F_k(n) = n - F_k^k(n - 1)$, where $F_k^k$
 is the $k$-fold iterate of $F_k$.
 

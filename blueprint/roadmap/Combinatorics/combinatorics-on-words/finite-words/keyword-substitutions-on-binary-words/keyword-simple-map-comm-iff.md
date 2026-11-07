@@ -1,6 +1,6 @@
 # When two simple maps commute
 
-**When two simple maps commute.** Let $a$ be a keyword of length $m + 1$ and let $n$ be a
+Let $a$ be a keyword of length $m + 1$ and let $n$ be a
 natural number. Let $i < j$ be natural numbers with $j + m < n$, and put $\Delta = j - i$. The
 simple maps $\varphi_i$ and $\varphi_j$ of $a$ on binary words of length $n$ satisfy
 $\varphi_i \circ \varphi_j = \varphi_j \circ \varphi_i$ if and only if $\Delta \ge m + 1$, or the

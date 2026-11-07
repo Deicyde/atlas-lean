@@ -1,6 +1,6 @@
 # Components of the cyclic shift strategy
 
-**Components of the cyclic shift strategy.** For every $m$, the component of the cyclic shift
+For every $m$, the component of the cyclic shift
 strategy on $m$ positions is the rotation $i \mapsto i + 1 \pmod m$ of $\{0, 1, \dots, m-1\}$.
 
 ## Sources

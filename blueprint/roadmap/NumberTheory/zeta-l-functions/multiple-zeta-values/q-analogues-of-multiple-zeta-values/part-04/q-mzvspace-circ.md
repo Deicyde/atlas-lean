@@ -1,6 +1,6 @@
 # The spaces $\mathcal{Z}^\circ_{q,d}$
 
-**The spaces $\mathcal{Z}^\circ_{q,d}$.** For a natural number $d$, the space
+For a natural number $d$, the space
 $\mathcal{Z}^\circ_{q,d}$ is the $\mathbb{Q}$-linear span, in the formal power series ring
 $\mathbb{Q}[[q]]$, of the general qMZVs $\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r)$ over all
 $r \ge 0$, natural numbers $k_1, \dots, k_r$ and polynomials $Q_1, \dots, Q_r \in \mathbb{Q}[X]$

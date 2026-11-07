@@ -1,6 +1,6 @@
 # A zeta-twisted cyclotomic product identity
 
-**A zeta-twisted cyclotomic product identity.** For $n \ge 1$ and complex $z$, let
+For $n \ge 1$ and complex $z$, let
 $\hat\Phi_n(z) = \prod_\omega (1 - z\omega)$, the product over the primitive $n$-th roots of
 unity $\omega$. Let $z$ be a complex number with $|z| < 1$, let $s > 1$ be real, and let
 $\zeta$ be the Riemann zeta function. Then

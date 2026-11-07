@@ -1,6 +1,6 @@
 # Partition convolution modulo $3$
 
-**Partition convolution modulo $3$.** Let $p(a)$ be the number of partitions of $a$, and let
+Let $p(a)$ be the number of partitions of $a$, and let
 $\omega(t)$ be the coefficient of $q^t$ in Euler's product $\prod_{m \ge 1} (1 - q^m)$. For every
 integer $n \ge 0$,
 

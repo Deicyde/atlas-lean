@@ -1,3 +1,3 @@
 # Unordered pairs of blocks
 
-**Unordered pairs of blocks.** The unordered pairs of positions `i < j` among `k` blocks.
+The unordered pairs of positions `i < j` among `k` blocks.

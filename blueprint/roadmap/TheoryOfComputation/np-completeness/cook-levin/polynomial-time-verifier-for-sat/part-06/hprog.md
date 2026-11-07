@@ -1,6 +1,6 @@
 # Program of the SAT verifier host
 
-**Program of the SAT verifier host.** For a value $c$ of the 3SAT flag, the host program
+For a value $c$ of the 3SAT flag, the host program
 acts at each host label as follows. Here moving a bit block from one stack to another means
 repeatedly popping the top symbol of the first stack while it is a bit and pushing it, as a bit
 token, onto the second, and continuing at the next label once the top is not a bit or the stack

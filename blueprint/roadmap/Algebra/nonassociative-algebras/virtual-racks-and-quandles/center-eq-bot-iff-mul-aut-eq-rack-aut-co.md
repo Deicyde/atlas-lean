@@ -1,6 +1,6 @@
 # Trivial center and automorphisms of the conjugation quandle
 
-**Trivial center and automorphisms of the conjugation quandle.** For a group $G$, let
+For a group $G$, let
 $\operatorname{Conj}(G)$ be the conjugation quandle on $G$, with $x \triangleleft y = x y x^{-1}$.
 Then $G$ has trivial center if and only if the permutations of $G$ that are group automorphisms
 are exactly the rack automorphisms of $\operatorname{Conj}(G)$.

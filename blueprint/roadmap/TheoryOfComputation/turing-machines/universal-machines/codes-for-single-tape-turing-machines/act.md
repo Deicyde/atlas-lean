@@ -1,6 +1,6 @@
 # Acting on a configuration
 
-**Acting on a configuration.** Let $k$ be a configuration with left cells $L$ (nearest
+Let $k$ be a configuration with left cells $L$ (nearest
 first), head cell $h$ and right cells $R$ (nearest first), let $q'$ be a state and let $s$ be an
 action code. Acting on $k$ with $q'$ and $s$ gives a configuration with state $q'$, as follows.
 For $s = 0$ (move left), its head cell is the first entry of $L$, or the blank $0$ if $L$ is

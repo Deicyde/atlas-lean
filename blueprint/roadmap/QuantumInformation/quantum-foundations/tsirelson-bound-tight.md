@@ -1,6 +1,6 @@
 # Tsirelson's bound is attained
 
-**Tsirelson's bound is attained.** There exist $4 \times 4$ complex matrices $A_0, A_1, B_0, B_1$
+There exist $4 \times 4$ complex matrices $A_0, A_1, B_0, B_1$
 such that each of them is Hermitian and squares to the identity matrix, each $A_i$ commutes with
 each $B_j$, and the CHSH operator $A_0 B_0 + A_0 B_1 + A_1 B_0 - A_1 B_1$ has $2\sqrt{2}$ as an
 eigenvalue.

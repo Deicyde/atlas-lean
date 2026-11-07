@@ -1,6 +1,6 @@
 # Successful insertion into an indexed min queue
 
-**Successful insertion into an indexed min queue.** Let $q$ be an indexed min queue over a
+Let $q$ be an indexed min queue over a
 linear order $W$ with identities in $\{0, \dots, n-1\}$, let $v$ be an identity and let
 $k \in W \cup \{\top\}$, and suppose that inserting $v$ with key $k$ into $q$ returns the
 queue $q'$. Then the heap of $q'$ is the binary min-heap push of the entry $(k, v)$ onto the

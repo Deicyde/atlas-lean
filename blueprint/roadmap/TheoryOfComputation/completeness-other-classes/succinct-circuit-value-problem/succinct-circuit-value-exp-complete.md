@@ -1,6 +1,6 @@
 # Succinct Circuit Value is EXP-complete
 
-**Succinct Circuit Value is EXP-complete.** The decision problem Succinct Circuit Value
+The decision problem Succinct Circuit Value
 belongs to the class EXP, and every decision problem in EXP reduces to Succinct Circuit Value
 by a polynomial-time many-one reduction.
 

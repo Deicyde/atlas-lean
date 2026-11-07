@@ -1,6 +1,6 @@
 # Non-expanding sets in the Grassmann graph (Khot–Minzer–Safra)
 
-**Non-expanding sets in the Grassmann graph (Khot–Minzer–Safra).** For every real $\alpha$
+For every real $\alpha$
 with $0 < \alpha < 1$ there are a real $\varepsilon > 0$ and a natural number $r$ such that for
 all sufficiently large natural numbers $\ell$ and, for each such $\ell$, all sufficiently large
 natural numbers $k$, the following holds. For subspaces $A$ and $B$ of $\mathbb{F}_2^k$, let

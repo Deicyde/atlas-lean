@@ -1,6 +1,6 @@
 # Counting noncrossing partitions with no or one singleton block
 
-**Counting noncrossing partitions with no or one singleton block.** Write $NC_{n,m,k}$ for the
+Write $NC_{n,m,k}$ for the
 number of noncrossing partitions of $\{0, \dots, n-1\}$ with $m$ blocks of which $k$ are
 singletons, and extend the binomial coefficient $\binom{a}{b}$ to all integers $a$, $b$ by setting
 it to $0$ when $a < 0$ or $b < 0$. For all natural numbers $n$ and $m$: if $(n, m) \ne (0, 0)$,

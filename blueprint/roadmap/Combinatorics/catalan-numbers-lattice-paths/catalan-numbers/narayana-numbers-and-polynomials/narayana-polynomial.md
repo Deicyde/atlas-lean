@@ -1,6 +1,6 @@
 # Narayana polynomials
 
-**Narayana polynomials.** For a semiring $R$ and a natural number $n$, the $n$-th Narayana
+For a semiring $R$ and a natural number $n$, the $n$-th Narayana
 polynomial is
 
 $$N_n(X) = \sum_{k=0}^{n} a(n, k)\, X^k \in R[X],$$

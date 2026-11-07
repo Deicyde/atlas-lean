@@ -1,6 +1,6 @@
 # Conjugate partition
 
-**Conjugate partition.** Let $\lambda = [\lambda_1, \dots, \lambda_L]$ be a finite list of
+Let $\lambda = [\lambda_1, \dots, \lambda_L]$ be a finite list of
 natural numbers, with $L \ge 0$. Its conjugate $\lambda'$ is the empty list if $L = 0$, and
 otherwise the list $[\lambda'_1, \dots, \lambda'_{\lambda_1}]$ of length $\lambda_1$ with
 $\lambda'_j = \#\{i : 1 \le i \le L,\ \lambda_i \ge j\}$ for $1 \le j \le \lambda_1$. The length

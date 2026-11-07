@@ -1,6 +1,6 @@
 # Radial symmetry of positive solutions of the semilinear Poisson problem
 
-**Radial symmetry of positive solutions of the semilinear Poisson problem.** Let $n \ge 1$,
+Let $n \ge 1$,
 let $f : \mathbb{R} \to \mathbb{R}$ be Lipschitz, and let $u : \mathbb{R}^n \to \mathbb{R}$ be a
 function on Euclidean space that is $C^2$ on the closed unit ball $\overline{B}$. Suppose that $u$
 solves the semilinear Poisson problem for $f$, that is, $-\Delta u = f(u)$ on the open unit ball

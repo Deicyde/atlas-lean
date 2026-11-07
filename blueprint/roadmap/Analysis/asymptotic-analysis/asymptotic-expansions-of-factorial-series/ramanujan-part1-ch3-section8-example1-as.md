@@ -1,6 +1,6 @@
 # Asymptotic expansion of a factorial series
 
-**Asymptotic expansion of a factorial series.** Let $a_0, a_1, \ldots$ be complex numbers, let
+Let $a_0, a_1, \ldots$ be complex numbers, let
 $\psi : \mathbb{C} \to \mathbb{C}$, let $\lambda$ be either a real number or $-\infty$, and let
 $0 < \varepsilon < \pi/2$. Suppose that for every complex $z$ that is not a negative integer and
 satisfies $\operatorname{Re} z > \lambda$, the series

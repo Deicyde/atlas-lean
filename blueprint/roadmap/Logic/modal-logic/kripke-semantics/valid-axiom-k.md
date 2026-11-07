@@ -1,3 +1,3 @@
 # Validity of axiom K on Kripke models
 
-**Validity of axiom K on Kripke models.** The K axiom is valid on every Kripke model.
+The K axiom is valid on every Kripke model.

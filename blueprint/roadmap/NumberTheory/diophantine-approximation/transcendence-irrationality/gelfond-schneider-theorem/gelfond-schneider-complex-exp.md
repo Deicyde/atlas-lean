@@ -1,6 +1,6 @@
 # Gelfond–Schneider theorem for every value of a complex power
 
-**Gelfond–Schneider theorem for every value of a complex power.** Let $a, b \in \mathbb{C}$
+Let $a, b \in \mathbb{C}$
 be algebraic over $\mathbb{Q}$ with $a \neq 1$ and $b \notin \mathbb{Q}$, and let $z \in \mathbb{C}$
 satisfy $e^z = a$. Then $e^{bz}$ is transcendental over $\mathbb{Q}$.
 

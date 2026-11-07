@@ -1,6 +1,6 @@
 # Odd harmonic central binomial sums at integer shifts
 
-**Odd harmonic central binomial sums at integer shifts.** Let $k \ge 0$ and $p > 0$ be
+Let $k \ge 0$ and $p > 0$ be
 integers, let $a$ be an integer with $a > -k$, and let $O_n(k)$ denote the depth-$k$ odd harmonic
 number. Then the series of real numbers
 

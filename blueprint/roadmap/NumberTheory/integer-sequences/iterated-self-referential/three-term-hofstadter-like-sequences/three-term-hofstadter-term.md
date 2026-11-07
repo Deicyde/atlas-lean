@@ -1,6 +1,6 @@
 # Three-term Hofstadter-like sequence
 
-**Three-term Hofstadter-like sequence.** Let $x_1, \dots, x_m$ be integers ($m \ge 0$), the
+Let $x_1, \dots, x_m$ be integers ($m \ge 0$), the
 initial conditions, and choose whether the sequence is padded. The sequence $B$ has $B(i) = x_i$
 for $1 \le i \le m$; the padded sequence has $B(i) = 0$ for every integer $i \le 0$, while the
 unpadded one is undefined at every $i \le 0$. For $n > m$,

@@ -1,6 +1,6 @@
 # Membership in the odd numbers below $2^e$
 
-**Membership in the odd numbers below $2^e$.** For natural numbers $e$ and $i$, $i$ belongs to the
+For natural numbers $e$ and $i$, $i$ belongs to the
 set $S_e$ of odd positive integers below $2^e$ if and only if $1 \le i$, $i < 2^e$ and $i$ is odd.
 
 ## Sources

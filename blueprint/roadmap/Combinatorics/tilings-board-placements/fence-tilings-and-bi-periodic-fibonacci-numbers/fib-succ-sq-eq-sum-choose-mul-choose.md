@@ -1,6 +1,6 @@
 # Squared Fibonacci numbers as a double binomial sum
 
-**Squared Fibonacci numbers as a double binomial sum.** Let $F_k$ denote the Fibonacci
+Let $F_k$ denote the Fibonacci
 numbers ($F_0 = 0$, $F_1 = 1$). For every natural number $n$,
 
 $$

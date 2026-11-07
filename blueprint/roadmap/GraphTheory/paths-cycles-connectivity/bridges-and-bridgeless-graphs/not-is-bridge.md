@@ -1,4 +1,4 @@
 # Edges of a bridgeless graph are not bridges
 
-**Edges of a bridgeless graph are not bridges.** Every edge of a bridgeless graph is not a
+Every edge of a bridgeless graph is not a
 bridge.

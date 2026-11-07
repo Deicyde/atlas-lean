@@ -1,6 +1,6 @@
 # Toeplitz–Hessenberg determinants of Fuss–Catalan numbers
 
-**Toeplitz–Hessenberg determinants of Fuss–Catalan numbers.** Write
+Write
 $\det(a_0; a_1, \dots, a_n)$ for the determinant of the $n \times n$ Toeplitz–Hessenberg matrix
 whose entry in row $i$ and column $j$ is $a_{i+1-j}$ for $j \le i + 1$ and $0$ above the
 superdiagonal. For natural numbers $p, r, n$ let $A_n(p, r) = \frac{r}{pn + r} \binom{pn + r}{n}$

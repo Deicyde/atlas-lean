@@ -1,6 +1,6 @@
 # $(p,q)$-binomial coefficients with lower index zero
 
-**$(p,q)$-binomial coefficients with lower index zero.** For all elements $p, q$ of a
+For all elements $p, q$ of a
 commutative semiring and every natural number $n$, the $(p,q)$-binomial coefficient
 $\binom{n}{0}_{p,q}$ equals $1$.
 

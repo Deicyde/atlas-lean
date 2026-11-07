@@ -1,6 +1,6 @@
 # $PD_2(48n+26)$ is divisible by 4
 
-**$PD_2(48n+26)$ is divisible by 4.** Let $PD_2(n)$ be the number of partitions of $n$ with
+Let $PD_2(n)$ be the number of partitions of $n$ with
 designated summands in which every part is odd. For every $n \ge 0$,
 $PD_2(48n + 26) \equiv 0 \pmod 4$.
 

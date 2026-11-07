@@ -1,6 +1,6 @@
 # Schreier's theorem on Cesàro means of random subsequences
 
-**Schreier's theorem on Cesàro means of random subsequences.** Let $(a_n)_{n \ge 0}$ be a
+Let $(a_n)_{n \ge 0}$ be a
 bounded sequence of real numbers whose Cesàro means $\frac{1}{n} \sum_{i < n} a_i$ converge
 to a real number $S$ as $n \to \infty$. Give the space of Boolean sequences
 $\omega = (\omega_n)_{n \ge 0}$ the infinite product of fair coin measures. For such $\omega$

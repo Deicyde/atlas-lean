@@ -1,6 +1,6 @@
 # Signed count of residue-class compositions with parts at least $2r - s$
 
-**Signed count of residue-class compositions with parts at least $2r - s$.** Let $r > s \ge 0$,
+Let $r > s \ge 0$,
 let $k = 2r - s$ and let $n \ge 1$. Among the compositions of $n + k - 1$ whose parts are all at
 least $k$ and congruent to $k + s$ modulo $r$, let $b^{r,s}_{k,n}$ be the number with an odd
 number of parts minus the number with an even number of parts. Then $b^{r,s}_{k,n} = (-1)^j$ if

@@ -1,3 +1,3 @@
 # Closed contour as an even-degree edge set
 
-**Closed contour as an even-degree edge set.** Every site has even degree in the edge set `E`.
+Every site has even degree in the edge set `E`.

@@ -1,6 +1,6 @@
 # Schulz's Bernoulli Berry–Esseen optimum
 
-**Schulz's Bernoulli Berry–Esseen optimum.** Let $C_B$ be the infimum of all
+Let $C_B$ be the infimum of all
 real $C$ such that for every real probability law $\mu$ with mean $0$, variance $1$ and finite
 third absolute moment $\rho = \int |x|^3\,d\mu$ that is concentrated on two points, that is,
 $\mu(\mathbb{R} \setminus \{a, b\}) = 0$ for some reals $a \ne b$, and every integer $n \ge 1$,

@@ -1,6 +1,6 @@
 # Conditionals of the joint of a chain
 
-**Conditionals of the joint of a chain.** Let $c$ be a chain of conditional distributions
+Let $c$ be a chain of conditional distributions
 with values in a type $\alpha$, let $P_m$ be its joint distribution of the first $m$ variables,
 and let $p_n(\cdot \mid y)$ be its conditional distribution of variable $n$ given values
 $y \in \alpha^n$ of the earlier ones. For every $n$, every $y \in \alpha^n$ with $P_n(y) \ne 0$

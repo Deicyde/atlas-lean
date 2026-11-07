@@ -1,6 +1,6 @@
 # Kernel of the finite residue map
 
-**Kernel of the finite residue map.** Let $K$ be a number field and $\mathfrak m$ a modulus of
+Let $K$ be a number field and $\mathfrak m$ a modulus of
 $K$. The kernel of the finite residue map of $\mathfrak m$ is the finite ray-one subgroup of
 $\mathfrak m$.
 

@@ -1,6 +1,6 @@
 # Asymptotics of the derivatives of the reflected function (Lemma 2)
 
-**Asymptotics of the derivatives of the reflected function (Lemma 2).** Let $F$ be a function
+Let $F$ be a function
 in the Selberg class with Gamma-factor data $\lambda_j$, $\mu_j$ for $1 \le j \le r$, conductor
 $Q$, root number $\omega$ and degree $d_F = 2 \sum_j \lambda_j$, let $k \ge 1$ and let $c > 1$.
 Write $\log$ for the principal branch of the logarithm and put

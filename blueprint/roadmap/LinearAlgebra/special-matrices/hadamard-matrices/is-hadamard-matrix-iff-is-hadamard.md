@@ -1,6 +1,6 @@
 # One-sided orthogonality characterizes Hadamard matrices
 
-**One-sided orthogonality characterizes Hadamard matrices.** Let $m$ be a natural number and
+Let $m$ be a natural number and
 let $H$ be an $m \times m$ integer matrix. Then every entry of $H$ is $1$ or $-1$ and
 $H^{\mathsf T} H = m I$ if and only if every entry of $H$ is a unitary element of $\mathbb{Z}$
 (that is, $1$ or $-1$), $H H^{\mathsf T} = m I$ and $H^{\mathsf T} H = m I$. The right-hand side

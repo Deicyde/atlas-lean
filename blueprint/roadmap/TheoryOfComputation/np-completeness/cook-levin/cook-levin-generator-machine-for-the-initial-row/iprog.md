@@ -1,6 +1,6 @@
 # The initial-row generator
 
-**The initial-row generator.** Let $L$ be a layout with $g$ symbol codes, let $i_c$ and $k_0$
+Let $L$ be a layout with $g$ symbol codes, let $i_c$ and $k_0$
 be natural numbers and let $y$ be a list of certificate codes. The generator assigns to each label
 of the initial-row generator for $L$ and $y$ a machine statement with a Boolean flag on the stacks
 of the counter machine with the generator's counters plus an input stack of codes below $g$, as

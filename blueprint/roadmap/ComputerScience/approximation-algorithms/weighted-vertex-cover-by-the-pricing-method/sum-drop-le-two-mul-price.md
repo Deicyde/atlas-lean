@@ -1,6 +1,6 @@
 # Pricing scan: the vertices pay at most twice the price
 
-**Pricing scan: the vertices pay at most twice the price.** Let $V$ be a finite vertex set,
+Let $V$ be a finite vertex set,
 let $r$ be rational residual weights with $r(v) \ge 0$ for every vertex $v$, let $P$ be a
 rational number and let $L$ be a list of edges. If the pricing scan of $L$ from residual
 weights $r$ and total price $P$ ends with residual weights $r'$ and total price $P'$, then

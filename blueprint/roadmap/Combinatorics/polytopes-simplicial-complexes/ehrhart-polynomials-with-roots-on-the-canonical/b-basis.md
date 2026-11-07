@@ -1,6 +1,6 @@
 # The basis polynomials $b^d_j$
 
-**The basis polynomials $b^d_j$.** For natural numbers $d$ and $j$, $b^d_j$ is the complex
+For natural numbers $d$ and $j$, $b^d_j$ is the complex
 polynomial $b^d_j = \prod_{i=0}^{d-1} (X + d - j - i)$.
 
 Integer constants are used before mapping to $\mathbb{C}$, avoiding any convention about rising

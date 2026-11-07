@@ -1,6 +1,6 @@
 # Power sums of $\binom{t}{k}(H_t - H_{t-k})$ in r-Stirling form
 
-**Power sums of $\binom{t}{k}(H_t - H_{t-k})$ in r-Stirling form.** Let $t$ be a complex
+Let $t$ be a complex
 number that is not an integer. For complex $x$ write $\binom{x}{k} = x(x-1)\cdots(x-k+1)/k!$,
 and write $H_x = \psi(x+1) + \gamma$, where $\psi$ is the digamma function and $\gamma$ is the
 Euler–Mascheroni constant (only differences $H_x - H_y = \psi(x+1) - \psi(y+1)$ occur below).

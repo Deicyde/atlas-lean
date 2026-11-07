@@ -1,6 +1,6 @@
 # First value of the $(p,q)$-analogue of the $r$-Fibonacci polynomial
 
-**First value of the $(p,q)$-analogue of the $r$-Fibonacci polynomial.** For all natural
+For all natural
 numbers $r$ and $m$ and all elements $x, y, p, q$ of a commutative semiring, the
 $(p,q)$-analogue of the $r$-Fibonacci polynomial satisfies $U^{(r)}_1(x, y, p, q, m) = 1$.
 

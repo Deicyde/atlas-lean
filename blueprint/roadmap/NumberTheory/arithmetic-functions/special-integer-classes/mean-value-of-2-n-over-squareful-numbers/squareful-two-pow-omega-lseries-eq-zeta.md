@@ -1,6 +1,6 @@
 # Fine zeta factorization of the squareful $2^{\omega(n)}$ Dirichlet series
 
-**Fine zeta factorization of the squareful $2^{\omega(n)}$ Dirichlet series.** Let
+Let
 $\omega(n)$ be the number of distinct prime factors of $n$, call $n$ squareful when $n \ne 0$ and
 $p^2 \mid n$ for every prime $p \mid n$ (that is, $n$ is $2$-full), and let
 $F(s) = \sum_{n \text{ squareful}} 2^{\omega(n)} n^{-s}$. There is a sequence

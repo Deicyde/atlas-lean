@@ -1,6 +1,6 @@
 # First sixteen-cycle lemma for the three-term Hofstadter-like recurrence
 
-**First sixteen-cycle lemma for the three-term Hofstadter-like recurrence.** Let $K \ge 1$ be
+Let $K \ge 1$ be
 a natural number and let $\lambda$, $\mu_1$, $\mu_2$, $\gamma$ be integers with $\lambda > 31 + K$
 and $\mu_1, \mu_2, \gamma > \lambda$. Let $a_1, \dots, a_K$ be arbitrary integers and let $B$ be
 the padded three-term Hofstadter-like sequence with initial conditions

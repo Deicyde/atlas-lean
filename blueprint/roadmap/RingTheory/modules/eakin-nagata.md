@@ -1,6 +1,6 @@
 # Eakin–Nagata theorem
 
-**Eakin–Nagata theorem.** Let $A$ and $B$ be commutative rings and let $B$ be an $A$-algebra
+Let $A$ and $B$ be commutative rings and let $B$ be an $A$-algebra
 that is finitely generated as an $A$-module. If the structure map $A \to B$ is injective and $B$
 is Noetherian, then $A$ is Noetherian.
 

@@ -1,6 +1,6 @@
 # A common generating function for three sets of seven patterns
 
-**A common generating function for three sets of seven patterns.** Let
+Let
 $B_1 = \{010, 011, 100, 101, 102, 201, 210\}$, $B_2 = \{010, 011, 100, 102, 110, 201, 210\}$ and
 $B_3 = \{010, 011, 101, 102, 110, 201, 210\}$, where a pattern is written as a digit string ($101$
 is the triple $(1, 0, 1)$). For a set $B$ of patterns let

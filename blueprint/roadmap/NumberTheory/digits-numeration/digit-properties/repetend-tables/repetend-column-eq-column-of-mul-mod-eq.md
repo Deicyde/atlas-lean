@@ -1,6 +1,6 @@
 # Columns $j$ and $j^{-1}$ of a repetend table match
 
-**Columns $j$ and $j^{-1}$ of a repetend table match.** Let $n$ and $L \ge 1$ be natural
+Let $n$ and $L \ge 1$ be natural
 numbers, and consider the repetend table of $1/n$ whose rows are the natural numbers $1 \le b < n$
 coprime to $n$ of multiplicative order $L$ modulo $n$, and whose column $j$ holds the digits
 $\lfloor b^{j+1}/n \rfloor \bmod b$. If $j$ and $j'$ are natural numbers with $j$ coprime to $L$,

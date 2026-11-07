@@ -1,6 +1,6 @@
 # Stern–Brocot tree: labels, order and paths
 
-**Stern–Brocot tree: labels, order and paths.** Consider the subtree of the Stern–Brocot
+Consider the subtree of the Stern–Brocot
 tree with root $1/2$, and identify each vertex with its path $w$ from the root, a finite word over
 $\{L, R\}$. Then:
 (i) every rational $q$ with $0 < q < 1$ is the label of exactly one vertex;

@@ -1,6 +1,6 @@
 # Coefficients of the basic hypergeometric series
 
-**Coefficients of the basic hypergeometric series.** Let $r$ and $s$ be natural numbers, let
+Let $r$ and $s$ be natural numbers, let
 $a_1, \dots, a_r$, $b_1, \dots, b_s$ and $q$ be complex numbers, and write
 $(x;q)_n = \prod_{j=0}^{n-1} (1 - x q^j)$ for the finite $q$-Pochhammer symbol, so that
 $(q;q)_n = \prod_{j=0}^{n-1} (1 - q^{j+1})$. For a natural number $n$, the coefficient of $z^n$ in

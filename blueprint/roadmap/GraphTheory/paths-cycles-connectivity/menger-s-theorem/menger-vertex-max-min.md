@@ -1,6 +1,6 @@
 # Menger's theorem for vertex cuts and internally disjoint paths
 
-**Menger's theorem for vertex cuts and internally disjoint paths.** Let $G$ be a simple graph on a
+Let $G$ be a simple graph on a
 finite vertex set and let $s$ and $t$ be distinct, nonadjacent vertices of $G$. Then there is a
 natural number $k$ such that there exist $k$ internally vertex-disjoint paths from $s$ to $t$ and
 an $s$-$t$ vertex cut with exactly $k$ vertices, every family of internally vertex-disjoint

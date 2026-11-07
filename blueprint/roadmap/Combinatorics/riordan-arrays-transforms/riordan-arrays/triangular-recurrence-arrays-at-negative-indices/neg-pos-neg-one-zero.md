@@ -1,6 +1,6 @@
 # The negative-positive number at $(-1, 0)$
 
-**The negative-positive number at $(-1, 0)$.** For every triangular recurrence with
+For every triangular recurrence with
 parameters $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$, its negative-positive number at
 row $-1$ and column $0$ is $a^{NP}_{-1,0} = 1/\gamma$, computed in $\mathbb{Q}$ with $1/0 = 0$.
 

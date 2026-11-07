@@ -1,6 +1,6 @@
 # Classification of degenerate Lucas sequences
 
-**Classification of degenerate Lucas sequences.** Let $P, Q$ be integers, let
+Let $P, Q$ be integers, let
 $\alpha, \beta \in \mathbb{C}$ satisfy $\alpha + \beta = P$ and $\alpha\beta = Q$ (so they are the
 roots of $x^2 - Px + Q$), and let $D = P^2 - 4Q$. Let $(u_n)$ be the Lucas sequence of the first
 kind with parameters $P, Q$, and let $(v_n)$ be the integer sequence with $v_0 = 2$, $v_1 = P$ and

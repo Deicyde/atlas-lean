@@ -1,6 +1,6 @@
 # The symmetric basis polynomials on the canonical line
 
-**The symmetric basis polynomials on the canonical line.** Let $d \ge 1$ and $j$ be natural
+Let $d \ge 1$ and $j$ be natural
 numbers with $2j \le d$, let $p^d_j$ be the symmetric basis polynomial, and let $i$ be the
 imaginary unit. Then:
 (a) the real part of $p^d_j(it - \tfrac12) / i^d$ tends to $+\infty$ as the real number $t$

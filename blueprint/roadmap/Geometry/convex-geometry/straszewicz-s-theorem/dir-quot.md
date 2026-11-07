@@ -1,6 +1,6 @@
 # Difference quotients
 
-**Difference quotients.** Let $E$ be a real normed space and $E^*$ its continuous dual. For
+Let $E$ be a real normed space and $E^*$ its continuous dual. For
 $h : E^* \to \mathbb{R}$ and $x, v \in E^*$, the difference quotients of $h$ at $x$ in direction
 $v$ form the set $\{(h(x + t v) - h(x))/t : t > 0\}$.
 

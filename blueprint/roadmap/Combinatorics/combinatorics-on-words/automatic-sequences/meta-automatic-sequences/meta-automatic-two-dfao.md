@@ -1,6 +1,6 @@
 # A four-state automaton computing $\mathcal{M}_2$
 
-**A four-state automaton computing $\mathcal{M}_2$.** Let
+Let
 $\delta : \{0, 1, 2, 3\} \times \{0, 1, 2, 3\} \to \{0, 1, 2, 3\}$ be the map for which the word
 $\delta(q, 0)\,\delta(q, 1)\,\delta(q, 2)\,\delta(q, 3)$ is $0132$ for $q = 0$, $2310$ for $q = 1$,
 $3201$ for $q = 2$ and $1023$ for $q = 3$. For every natural number $n$, the meta-automatic

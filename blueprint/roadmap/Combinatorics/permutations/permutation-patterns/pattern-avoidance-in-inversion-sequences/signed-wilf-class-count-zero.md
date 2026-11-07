@@ -1,6 +1,6 @@
 # The empty pattern set forms one signed Wilf class
 
-**The empty pattern set forms one signed Wilf class.** The number $\mathrm{sw}_0$ of
+The number $\mathrm{sw}_0$ of
 Wilf-equivalence classes among the sets of $0$ length-2 signed patterns is $1$: the empty set is
 the only set of no patterns.
 

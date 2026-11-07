@@ -1,6 +1,6 @@
 # Dedekind domains via principal products
 
-**Dedekind domains via principal products.** An integral domain $A$ is a Dedekind domain if
+An integral domain $A$ is a Dedekind domain if
 and only if for every nonzero ideal $I$ of $A$ there is an ideal $J$ of $A$ such that $IJ$ is a
 nonzero principal ideal.
 

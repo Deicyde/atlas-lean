@@ -1,6 +1,6 @@
 # The exponent $a_{0,\ell}$
 
-**The exponent $a_{0,\ell}$.** For a natural number $\ell$, define
+For a natural number $\ell$, define
 
 $$a_{0,\ell} = 1 + \sum_{i=1}^{\lfloor \ell/2 \rfloor} \binom{\ell}{2i} C_i,$$
 

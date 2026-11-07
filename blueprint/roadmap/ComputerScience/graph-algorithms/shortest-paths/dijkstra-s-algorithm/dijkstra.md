@@ -1,6 +1,6 @@
 # Dense Dijkstra's algorithm
 
-**Dense Dijkstra's algorithm.** Let $G$ be a directed graph on the vertices $0, \dots, n-1$
+Let $G$ be a directed graph on the vertices $0, \dots, n-1$
 given by a fixed enumeration of its vertices and adjacency lists, let $w(u, v) \in \mathbb{N}$ be
 a weight for each ordered pair of vertices, and let $s$ be a source vertex. The algorithm starts
 with $d(s) = 0$, $d(v) = \infty$ for $v \ne s$, no predecessors and no settled vertices, and runs

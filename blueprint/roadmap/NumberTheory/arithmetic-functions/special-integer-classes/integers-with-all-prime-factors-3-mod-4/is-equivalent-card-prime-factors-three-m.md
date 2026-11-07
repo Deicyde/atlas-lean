@@ -1,6 +1,6 @@
 # Counting integers whose prime factors are all $\equiv 3 \pmod 4$
 
-**Counting integers whose prime factors are all $\equiv 3 \pmod 4$.** Let $C$ be a real
+Let $C$ be a real
 number such that $\sqrt{\ln x} \prod_{q \le x} (1 - 1/q) \to C$ as the natural number $x$ tends
 to infinity, where $q$ runs over the primes with $q \equiv 1 \pmod 4$. Let $g(x)$ be the number
 of integers $n$ with $1 \le n \le x$ all of whose prime factors are $\equiv 3 \pmod 4$ (so

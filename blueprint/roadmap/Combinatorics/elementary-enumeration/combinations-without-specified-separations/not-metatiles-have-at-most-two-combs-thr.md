@@ -1,6 +1,6 @@
 # For $Q = \{3\}$, a metatile can contain three combs
 
-**For $Q = \{3\}$, a metatile can contain three combs.** For $Q = \{3\}$ it is not true that
+For $Q = \{3\}$ it is not true that
 every metatile of every restricted-overlap tiling with squares and $Q$-combs contains at most
 two combs.
 

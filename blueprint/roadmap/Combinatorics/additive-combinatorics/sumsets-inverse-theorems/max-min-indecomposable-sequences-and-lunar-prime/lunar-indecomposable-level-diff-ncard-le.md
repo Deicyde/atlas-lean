@@ -1,6 +1,6 @@
 # Bound on decomposable lunar numbers neither level decomposable nor extremal
 
-**Bound on decomposable lunar numbers neither level decomposable nor extremal.** Fix an integer
+Fix an integer
 $b \ge 2$. For a natural number $n$ let $\mathcal{I}_b^n = \Sigma_b^n \setminus \mathcal{D}_b^n$,
 where $\Sigma_b^n$ is the set of decomposable lunar numbers of base $b$ and degree at most $n$ and
 $\mathcal{D}_b^n$ the set of level-decomposable ones, and for a real $d$ let $\mathcal{H}_b^n(d)$

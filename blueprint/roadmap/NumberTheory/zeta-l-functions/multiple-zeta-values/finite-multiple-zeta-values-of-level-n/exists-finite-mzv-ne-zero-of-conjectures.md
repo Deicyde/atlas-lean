@@ -1,6 +1,5 @@
 # Regular and non-Wieferich primes give non-vanishing finite multiple zeta values
 
-**Regular and non-Wieferich primes give non-vanishing finite multiple zeta values.**
 (i) Suppose that infinitely many odd primes $p$ are regular, in the sense that $p$ does not
 divide the class number of any $p$-th cyclotomic field over $\mathbb{Q}$. Then for every
 natural number $w \notin \{1, 2, 4\}$ there is an index $k = (k_1, \dots, k_r)$ of positive

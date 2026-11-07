@@ -1,6 +1,6 @@
 # Sylow 2-subgroups of rational groups need not be rational (Kourovka 16.36)
 
-**Sylow 2-subgroups of rational groups need not be rational (Kourovka 16.36).** There is a
+There is a
 finite rational group with a Sylow $2$-subgroup that is not rational as a group in its own right.
 Here a group is rational if every element $g$ is conjugate to $g^k$ for every natural number $k$
 coprime to the order of $g$.

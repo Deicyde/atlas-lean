@@ -1,6 +1,6 @@
 # Guth–Maynard large values estimate
 
-**Guth–Maynard large values estimate.** There is a function $o : \mathbb{R} \to \mathbb{R}$
+There is a function $o : \mathbb{R} \to \mathbb{R}$
 with $o(T) \to 0$ as $T \to \infty$ such that the following holds. Let $(b_n)_{n \ge 0}$ be
 complex numbers with $|b_n| \le 1$ for all $n$, let $N \ge 1$ and $R$ be natural numbers,
 let $V > 0$ and $T > 1$ be real numbers, and let $t_0, \dots, t_{R-1}$ be points of $[0, T]$

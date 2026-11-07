@@ -1,6 +1,6 @@
 # Asymptotic for the sum of $2^{\omega(n)}$ over squareful $n$
 
-**Asymptotic for the sum of $2^{\omega(n)}$ over squareful $n$.** Let $\omega(n)$ be the
+Let $\omega(n)$ be the
 number of distinct prime factors of $n$, and let $f(n) = 2^{\omega(n)}$ if $n$ is squareful
 ($n \ne 0$ and $p^2 \mid n$ for every prime $p \mid n$; so $f(1) = 1$) and $f(n) = 0$ otherwise.
 There are real constants $C_1$, $C_2$, $C_3$, $C_4$, $c > 0$, $K$ and $x_0$ such that for every

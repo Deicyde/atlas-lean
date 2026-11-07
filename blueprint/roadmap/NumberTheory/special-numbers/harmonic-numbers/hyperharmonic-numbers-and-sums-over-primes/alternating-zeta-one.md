@@ -1,6 +1,6 @@
 # Alternating zeta value at one
 
-**Alternating zeta value at one.** The alternating zeta value at $1$ is $\bar\zeta(1) = \log 2$.
+The alternating zeta value at $1$ is $\bar\zeta(1) = \log 2$.
 
 ## Sources
 

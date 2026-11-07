@@ -1,4 +1,4 @@
 # Accumulator-stopped prefix when the head update continues
 
-**Accumulator-stopped prefix when the head update continues.** If the accumulator continues after the head update, the same updated accumulator processes the
+If the accumulator continues after the head update, the same updated accumulator processes the
 tail.

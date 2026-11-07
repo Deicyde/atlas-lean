@@ -1,6 +1,6 @@
 # Eventual order of iterates of consecutive Hofstadter functions
 
-**Eventual order of iterates of consecutive Hofstadter functions.** Let $k \ge 1$, let $F_k$ be
+Let $k \ge 1$, let $F_k$ be
 the generalized Hofstadter function, write $F_k^i$ for its $i$-fold iterate, let $\alpha > 0$ be
 a root of $X^k + X - 1$, and let $\alpha' > 0$ be a root of $X^{k+1} + X - 1$. Then for all
 sufficiently large $n$, $F_k(n) < F_{k+1}(n)$, $F_{k+1}^{k+1}(n) < F_k^k(n)$ and

@@ -1,6 +1,6 @@
 # Watson's alternating cosecant sum vanishes for odd $n$
 
-**Watson's alternating cosecant sum vanishes for odd $n$.** For every odd natural number $n$,
+For every odd natural number $n$,
 
 $$
 \sum_{l=1}^{n-1} \frac{(-1)^{l+1}}{\sin(\pi l / n)} = 0.

@@ -1,6 +1,6 @@
 # Encoded gates for weighted circuit satisfiability
 
-**Encoded gates for weighted circuit satisfiability.** An encoded gate is a pair $(k, r)$ of a
+An encoded gate is a pair $(k, r)$ of a
 natural number $k$, its kind, and a list $r$ of natural numbers, its references.
 
 Gates are read as in the shared (kind, references) encoding of flat Boolean circuits on $n$

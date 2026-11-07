@@ -1,6 +1,5 @@
 # Permutability with minimal non-nilpotent subgroups does not force a nilpotent core quotient
 
-**Permutability with minimal non-nilpotent subgroups does not force a nilpotent core quotient.**
 There exist a finite group $G$ and a subgroup $H$ of $G$ with $HM = MH$ (as sets of products) for
 every minimal non-nilpotent subgroup $M$ of $G$ such that the quotient $H/H_G$ is not nilpotent,
 where the normal core $H_G$ is the largest normal subgroup of $G$ contained in $H$.

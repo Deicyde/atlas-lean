@@ -1,6 +1,6 @@
 # Insertion into an indexed minimum queue
 
-**Insertion into an indexed minimum queue.** Let $W$ be a linearly ordered type and let
+Let $W$ be a linearly ordered type and let
 $W \cup \{\top\}$ be $W$ with a new greatest element $\top$ adjoined. Costs are counted as five
 event counts: comparisons, swaps, reads of the position vector, writes to the position vector,
 and entry appends, pops or replacements. Given an indexed minimum queue $q$ over the identities

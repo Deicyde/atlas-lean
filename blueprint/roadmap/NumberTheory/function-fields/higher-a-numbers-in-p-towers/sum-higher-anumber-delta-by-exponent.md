@@ -1,6 +1,6 @@
 # Splitting the sum of $\delta$ by powers of $p$
 
-**Splitting the sum of $\delta$ by powers of $p$.** Let $p$ be a prime, $d$ a natural number
+Let $p$ be a prime, $d$ a natural number
 dividing $p - 1$, $x \ge 1$ a rational number and $n$ a natural number. With $\tau = (p + 1)/d$,
 let $\delta(i)$ be $0$ if the sequence of base-$p$ digits of $\tau i$ at $p^0, p^1, p^2, \ldots$
 is lexicographically larger than its sequence of digits at $p^{-1}, p^{-2}, \ldots$, and $1$

@@ -1,6 +1,5 @@
 # Iterated derivative for $k$ cycles longer than $r$ with $s$ points in distinct cycles
 
-**Iterated derivative for $k$ cycles longer than $r$ with $s$ points in distinct cycles.**
 Let $R$ be a commutative $\mathbb{Q}$-algebra, $x \in R$, and let $r$, $s$, $k$ be natural
 numbers with $r \ge 1$ and $s \le k$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ let
 $\operatorname{exc}(\sigma)$ be the number of points $i$ with $\sigma(i) > i$, let

@@ -1,6 +1,6 @@
 # Primes are $(a, a)$-Carmichael numbers
 
-**Primes are $(a, a)$-Carmichael numbers.** For every integer $a$, every prime $p$ is an
+For every integer $a$, every prime $p$ is an
 $(a, a)$-Carmichael number.
 
 ## Sources

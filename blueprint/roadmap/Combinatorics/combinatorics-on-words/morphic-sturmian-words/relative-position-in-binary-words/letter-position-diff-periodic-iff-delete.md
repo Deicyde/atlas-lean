@@ -1,6 +1,6 @@
 # Periodicity of the gaps between the $b$'s
 
-**Periodicity of the gaps between the $b$'s.** Let $w$ be an infinite binary word over the
+Let $w$ be an infinite binary word over the
 letters $a$ and $b$ in which both letters occur infinitely often, let $p_b(n)$ be the position
 (counting from $0$) of the $n$-th $b$ in $w$, and let $\Delta p_b(n) = p_b(n+1) - p_b(n)$. Let
 $D_a$ delete the first $a$ of a word, and let $v = D_a^{p_b(1)}(w)$, the word $w$ with its initial

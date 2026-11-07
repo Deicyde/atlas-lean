@@ -1,6 +1,6 @@
 # Letendre's exponent as the largest admissible exponent
 
-**Letendre's exponent as the largest admissible exponent.** Let $\theta$ and $\eta$ be real
+Let $\theta$ and $\eta$ be real
 numbers with $\theta^2 \le \eta < \theta$. Then Letendre's saving exponent $\xi(\theta, \eta)$ is
 the largest real number $A$ with $0 < A \le 1$ such that
 

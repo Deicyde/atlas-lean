@@ -1,6 +1,6 @@
 # Same block after merging two blocks
 
-**Same block after merging two blocks.** Let $P$ be a set partition of $\{0, \dots, n-1\}$ and
+Let $P$ be a set partition of $\{0, \dots, n-1\}$ and
 let $i, j, x, y \in \{0, \dots, n-1\}$. Then $x$ and $y$ lie in the same block after merging the
 blocks of $i$ and $j$ if either $x$ and $y$ lie in the same block of $P$, or each of $x$ and $y$
 lies in the block of $i$ or in the block of $j$. For singleton blocks $\{i\}$ and $\{j\}$ this

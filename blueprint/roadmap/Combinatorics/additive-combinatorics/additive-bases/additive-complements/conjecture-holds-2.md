@@ -1,6 +1,6 @@
 # Lorentz's theorem on additive complements (Erdős Problem 31)
 
-**Lorentz's theorem on additive complements (Erdős Problem 31).** For every infinite set
+For every infinite set
 $A$ of natural numbers there is a set $B$ of natural numbers of natural density $0$ such that
 every sufficiently large natural number lies in $A + B = \{a + b \mid a \in A,\ b \in B\}$.
 

@@ -1,6 +1,6 @@
 # Kaneko's Stirling-number formula for the Bernoulli numbers
 
-**Kaneko's Stirling-number formula for the Bernoulli numbers.** Let $B_n$ denote the $n$-th
+Let $B_n$ denote the $n$-th
 Bernoulli number, with $B_1 = -1/2$, and let $S(n, j)$ denote the Stirling numbers of the second
 kind. For every natural number $n$,
 

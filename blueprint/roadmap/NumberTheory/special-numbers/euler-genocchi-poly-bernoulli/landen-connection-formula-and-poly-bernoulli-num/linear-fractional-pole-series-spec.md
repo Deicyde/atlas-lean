@@ -1,6 +1,6 @@
 # The linear fractional pole series solves its defining equation
 
-**The linear fractional pole series solves its defining equation.** For all real numbers
+For all real numbers
 $a$ and $c$, the linear fractional pole series $F_{a,c}(u)$, the power series of
 $\frac{cu}{a - cu}$, satisfies $(a - cu) \cdot F_{a,c}(u) = cu$ in $\mathbb{R}[[u]]$.
 

@@ -1,6 +1,6 @@
 # Congruences modulo 2, 3 and 4 for POND partitions
 
-**Congruences modulo 2, 3 and 4 for POND partitions.** Let $\mathrm{pond}(m)$ be the number
+Let $\mathrm{pond}(m)$ be the number
 of POND partitions of $m$. For every natural number $n$, $\mathrm{pond}(3n + 2) \equiv 0 \pmod{2}$,
 $\mathrm{pond}(27n + 26) \equiv 0 \pmod{3}$ and $\mathrm{pond}(3n + 1) \equiv 0 \pmod{4}$.
 

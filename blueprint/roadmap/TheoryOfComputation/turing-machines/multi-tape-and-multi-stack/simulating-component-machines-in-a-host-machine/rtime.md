@@ -1,6 +1,6 @@
 # Step bound of the reduction host
 
-**Step bound of the reduction host.** Let $c$ be a component machine with stacks $c_X$ and
+Let $c$ be a component machine with stacks $c_X$ and
 $c_O$, an encoding $g_X$ of bits as symbols of $c_X$ and labels $\mathit{start}$ and
 $\mathit{done}$, and let $B$ be the push bound of the reduction host machine built from these
 data. For a polynomial $p$ with natural-number coefficients, the step bound of the reduction host

@@ -1,6 +1,5 @@
 # Every homomorphism of a finite abelian group to the complex numbers is a simple character
 
-**Every homomorphism of a finite abelian group to the complex numbers is a simple character.**
 Let $G$ be a finite abelian group and let $\varphi : G \to \mathbb{C}$ be a monoid homomorphism.
 Then there is a simple finite-dimensional complex representation $V$ of $G$ whose character
 equals $\varphi$.

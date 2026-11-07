@@ -1,6 +1,6 @@
 # Uniform bound for knight distance on a box
 
-**Uniform bound for knight distance on a box.** There is an absolute constant $M \in \mathbb{R}$
+There is an absolute constant $M \in \mathbb{R}$
 such that for all natural numbers $a$ and $b$ with $1 \le a < b$, $\gcd(a, b) = 1$ and $a + b$
 odd, every lattice point $(x, y) \in \mathbb{Z}^2$ with $\max(|x|, |y|) \le a + b$ has piece
 distance at most $Mb$ for the $(a,b)$-knight's move set

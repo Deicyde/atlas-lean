@@ -1,6 +1,6 @@
 # Tripathi's pseudo-Frobenius formula without assuming $d > 0$
 
-**Tripathi's pseudo-Frobenius formula without assuming $d > 0$.** Let $a$, $h$ and $k$ be
+Let $a$, $h$ and $k$ be
 positive integers and $d$ a natural number with $\gcd(a, d) = 1$, and let $q$ and $r$ be natural
 numbers with $1 \le r \le k$ and $a - 1 = qk + r$. Let $S$ be the set of all sums
 $c_0 a + \sum_{i=1}^{k} c_i (ha + id)$ with natural numbers $c_0, \dots, c_k$. Then the natural

@@ -1,6 +1,6 @@
 # Rational form of the power-weighted geometric sum
 
-**Rational form of the power-weighted geometric sum.** For positive integers $t$ and $k$,
+For positive integers $t$ and $k$,
 the following identity holds in $\mathbb{Z}[X]$:
 
 $$(1 - X)^{t+1} \sum_{n=1}^{k} n^t X^n =

@@ -1,6 +1,6 @@
 # Triangle partition series at zero
 
-**Triangle partition series at zero.** The triangle partition series $T_q(r)$ at $r = 0$
+The triangle partition series $T_q(r)$ at $r = 0$
 equals $1$, that is, $T_q(0) = 1$ in $\mathbb{Z}[[q]]$.
 
 ## Sources

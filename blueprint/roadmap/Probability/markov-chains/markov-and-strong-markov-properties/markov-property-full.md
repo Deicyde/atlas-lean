@@ -1,6 +1,6 @@
 # Markov property
 
-**Markov property.** Let $S$ be a nonempty standard Borel space, $\mu$ a finite measure on
+Let $S$ be a nonempty standard Borel space, $\mu$ a finite measure on
 $S$, $\kappa$ a Markov kernel on $S$, and $P_\mu$ the path measure on $S^{\mathbb{N}}$ of the
 Markov chain with initial measure $\mu$ and transition kernel $\kappa$. Let
 $Y : S^{\mathbb{N}} \to \mathbb{R}$ be bounded and measurable for the product $\sigma$-algebra,

@@ -1,6 +1,6 @@
 # Pebbling on the triangle: N-positions with an empty vertex
 
-**Pebbling on the triangle: N-positions with an empty vertex.** Let $k$ be a natural number
+Let $k$ be a natural number
 and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a move removes $k+1$
 pebbles from one vertex and adds $k$ pebbles to another. Let $\ell$ be an integer with
 $1 \le \ell \le k - 1$, and let $a_1, a_2$ be natural numbers with $a_1 + a_2 = 6k - 2\ell + 1$

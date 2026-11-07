@@ -1,6 +1,6 @@
 # The coefficient $a(1, 0, 0)$
 
-**The coefficient $a(1, 0, 0)$.** The coefficient $a(1, 0, 0)$ of Li's Lemma 3 equals $1$.
+The coefficient $a(1, 0, 0)$ of Li's Lemma 3 equals $1$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Pole multiplicity via the divisor
 
-**Pole multiplicity via the divisor.** Let $U \subseteq \mathbb{C}$, let
+Let $U \subseteq \mathbb{C}$, let
 $f \colon \mathbb{C} \to \mathbb{C}$ be meromorphic on $U$ and let $z \in U$. Let $D(z)$ be the
 value at $z$ of the divisor of $f$ on $U$, that is, the order of $f$ at $z$, taken to be $0$ when
 that order is infinite. Then the pole multiplicity of $f$ at $z$ equals $\max(0, -D(z))$.

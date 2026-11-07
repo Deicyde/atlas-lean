@@ -1,6 +1,6 @@
 # Labels of the first Mallows-tree vertices
 
-**Labels of the first Mallows-tree vertices.** In the Mallows tree, the root is labelled
+In the Mallows tree, the root is labelled
 $\langle 1/2, 2/3\rangle$, its middle child is labelled $\langle 4/7, 3/5\rangle$ and its right
 child is labelled $\langle 3/4, 4/5\rangle$.
 

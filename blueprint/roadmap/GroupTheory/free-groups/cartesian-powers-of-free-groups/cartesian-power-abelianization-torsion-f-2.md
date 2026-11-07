@@ -1,6 +1,6 @@
 # Abelianized Cartesian powers of free groups can have torsion
 
-**Abelianized Cartesian powers of free groups can have torsion.** For some integer $n \ge 2$, the
+For some integer $n \ge 2$, the
 abelianization of the unrestricted (Cartesian) product $F_n^{\mathbb{N}}$ of countably many copies
 of the free group $F_n$ of rank $n$ contains a nontrivial element of finite order. That is, the
 torsion-freeness asked for in Kourovka Problem 13.18 fails.

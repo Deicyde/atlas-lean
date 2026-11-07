@@ -1,6 +1,6 @@
 # Campbell's concatenation of $h_2$ is not normal in base $10$
 
-**Campbell's concatenation of $h_2$ is not normal in base $10$.** Let $h_2$ be Campbell's
+Let $h_2$ be Campbell's
 sequence and let $c_0, c_1, c_2, \ldots$ be the base-$10$ digits of $h_2(1), h_2(2), \ldots$,
 each number written most significant digit first and the numbers written one after another (with
 $h_2(n) = 0$ written as the single digit $0$). The real number

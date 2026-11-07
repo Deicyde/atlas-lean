@@ -1,6 +1,6 @@
 # BICLIQUE EDGE COVER is NP-complete
 
-**BICLIQUE EDGE COVER is NP-complete.** The biclique edge cover decision problem belongs to
+The biclique edge cover decision problem belongs to
 NP, and every decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

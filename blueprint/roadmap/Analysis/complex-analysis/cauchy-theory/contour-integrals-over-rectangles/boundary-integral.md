@@ -1,6 +1,6 @@
 # Boundary integral over a rectangle
 
-**Boundary integral over a rectangle.** Let $E$ be a complex Banach space and let $R$ be a
+Let $E$ be a complex Banach space and let $R$ be a
 rectilinear rectangle with first corner $z$ and second corner $w$. The boundary integral of a
 function $f : \mathbb{C} \to E$ over $R$ is
 

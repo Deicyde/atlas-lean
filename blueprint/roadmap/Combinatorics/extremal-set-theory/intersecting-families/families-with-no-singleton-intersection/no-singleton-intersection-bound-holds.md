@@ -1,6 +1,6 @@
 # Frankl's theorem on families with no singleton intersection
 
-**Frankl's theorem on families with no singleton intersection.** For every $k \ge 4$ and every
+For every $k \ge 4$ and every
 sufficiently large $n$ (depending on $k$), every family of more than $\binom{n-2}{k-2}$ subsets of
 $\{1, \dots, n\}$, each with exactly $k$ elements, contains two sets $A$ and $B$ with
 $|A \cap B| = 1$.

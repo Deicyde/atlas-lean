@@ -1,6 +1,6 @@
 # Andrews' form of the Jacobi triple product identity
 
-**Andrews' form of the Jacobi triple product identity.** Let $q$ be a complex number with
+Let $q$ be a complex number with
 $|q| < 1$, and let $k$ and $i$ be natural numbers with $0 < i \le k$. Then
 
 $$\sum_{n \in \mathbb{Z}} (-1)^n q^{(2k+1)n(n+1)/2 - in} =

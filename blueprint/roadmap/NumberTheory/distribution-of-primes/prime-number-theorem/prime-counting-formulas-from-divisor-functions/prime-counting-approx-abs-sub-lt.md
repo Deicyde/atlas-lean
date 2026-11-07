@@ -1,6 +1,6 @@
 # Prime-counting function from the smooth divisor count
 
-**Prime-counting function from the smooth divisor count.** For a natural number $k$ let
+For a natural number $k$ let
 
 $$\tilde\tau(k) = \sum_{j=1}^{k} \exp\left(-\frac{\pi^2}{2} k j^3 \sin^2\frac{k\pi}{j}\right),$$
 

@@ -1,6 +1,6 @@
 # Equal endomorphism and partial isomorphism counts do not force commutativity
 
-**Equal endomorphism and partial isomorphism counts do not force commutativity.** There is a
+There is a
 finite non-abelian group $G$ with $|\mathrm{End}(G)| = |\mathrm{PIso}(G)|$. Here $\mathrm{End}(G)$
 is the set of endomorphisms of $G$, and $\mathrm{PIso}(G)$ is the set of partial isomorphisms of
 $G$: the triples $(H, K, f)$ of subgroups $H$, $K$ of $G$ and an isomorphism $f \colon H \to K$.

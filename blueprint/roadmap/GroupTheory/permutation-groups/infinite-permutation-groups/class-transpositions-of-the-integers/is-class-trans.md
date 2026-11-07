@@ -1,6 +1,6 @@
 # Class transposition of two residue classes
 
-**Class transposition of two residue classes.** For integers $r_1, m_1, r_2, m_2$, write
+For integers $r_1, m_1, r_2, m_2$, write
 $r_1(m_1) = r_1 + m_1\mathbb{Z}$ and $r_2(m_2) = r_2 + m_2\mathbb{Z}$ for the residue classes. A
 permutation $\sigma$ of $\mathbb{Z}$ is the class transposition $\tau_{r_1(m_1), r_2(m_2)}$ when
 $0 \le r_1 < m_1$ and $0 \le r_2 < m_2$, the residue classes $r_1(m_1)$ and $r_2(m_2)$ are

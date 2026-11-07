@@ -1,6 +1,6 @@
 # Branch groups
 
-**Branch groups.** A group $G$ is a branch group (Kourovka 15.12) if there are a sequence
+A group $G$ is a branch group (Kourovka 15.12) if there are a sequence
 $m : \mathbb{N} \to \mathbb{N}$ with $m(i) \ge 2$ for all $i$ and a homomorphism $\rho$ from $G$ to
 the group of permutations of the vertices of the rooted tree with branching sequence $m$ such that
 $\rho$ is injective; every $\rho(g)$ is a tree automorphism, that is, for all vertices $v$ and $w$,

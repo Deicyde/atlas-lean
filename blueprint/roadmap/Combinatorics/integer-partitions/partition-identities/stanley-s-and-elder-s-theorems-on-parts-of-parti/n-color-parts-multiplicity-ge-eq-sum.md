@@ -1,6 +1,6 @@
 # Parts of multiplicity at least t in n-color partitions
 
-**Parts of multiplicity at least t in n-color partitions.** Let $t \ge 1$. For $i \ge 0$ let
+Let $t \ge 1$. For $i \ge 0$ let
 $N^t(i)$ be the number of distinct colored parts occurring at least $t$ times in an $n$-color
 partition of $i$, summed over all $n$-color partitions of $i$, and let $C(i)$ be the number of
 $n$-color partitions of $i$. Then for every $m \ge t$,

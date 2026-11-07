@@ -1,6 +1,6 @@
 # The constant in the thinned Wallis-type prime product asymptotic
 
-**The constant in the thinned Wallis-type prime product asymptotic.** Let $m \ge 2$, let
+Let $m \ge 2$, let
 $q = 2^m$, and let $S$ be a set of units of $\mathbb{Z}/q\mathbb{Z}$. Let $\varphi$ be Euler's
 totient function and $\chi_4$ the nontrivial Dirichlet character modulo $4$, put
 $\mu(S) = \sum_{a \in S} \chi_4(a)$, where $\chi_4(a)$ means $\chi_4$ of the reduction of $a$

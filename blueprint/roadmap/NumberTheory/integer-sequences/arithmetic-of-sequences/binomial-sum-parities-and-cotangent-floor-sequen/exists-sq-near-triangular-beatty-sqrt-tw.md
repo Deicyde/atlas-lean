@@ -1,6 +1,6 @@
 # Triangular numbers near squares along $\lfloor n\sqrt{2} \rfloor$
 
-**Triangular numbers near squares along $\lfloor n\sqrt{2} \rfloor$.** For a natural number
+For a natural number
 $n$ let $a = \lfloor n\sqrt{2} \rfloor$ (A001951) and $T_a = a(a+1)/2$. Then some integer $k$
 satisfies $|T_a - k^2| \le \lfloor a/2 \rfloor$; that is, the distance from $T_a$ to the nearest
 perfect square is at most $\lfloor a/2 \rfloor$.

@@ -1,6 +1,6 @@
 # Staircases of a rational sector
 
-**Staircases of a rational sector.** For natural numbers $m, n, i$, let
+For natural numbers $m, n, i$, let
 $l = \gcd(m - 1, n)$. The $i$-th staircase of the sector of slope $n/m$ is
 $J_i = \{(x, y) \in I(n/m) : nx - (m - 1)y = li\}$, where $I(n/m)$ is the set of lattice points
 of that sector.

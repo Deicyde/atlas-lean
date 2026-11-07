@@ -1,6 +1,6 @@
 # Letters of the Takeyama–Bradley–Zhao model as qMZV data
 
-**Letters of the Takeyama–Bradley–Zhao model as qMZV data.** The letters of the TBZ model
+The letters of the TBZ model
 are the symbol $\bar 1$ and the natural numbers $k \ge 1$. The letter $\bar 1$, with summand
 $f(\bar 1, m) = q^m / (1 - q^m)$, is sent to the pair $(1, X)$, and the letter $k$, with
 summand $f(k, m) = q^{(k-1)m} / (1 - q^m)^k$, is sent to the pair $(k, X^{k-1})$. Here a pair

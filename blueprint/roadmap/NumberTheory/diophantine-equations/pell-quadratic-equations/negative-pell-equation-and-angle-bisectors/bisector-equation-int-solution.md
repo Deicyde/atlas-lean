@@ -1,6 +1,6 @@
 # Integer solutions of the bisector equation
 
-**Integer solutions of the bisector equation.** For a natural number $d > 1$ such that
+For a natural number $d > 1$ such that
 $x^2 - d y^2 = -1$ has an integer solution, let $(X, Y)$ be its solution in positive integers
 with $Y$ least, and define integers $f^{(d)}_k$ and $g^{(d)}_k$ by
 $f^{(d)}_k + g^{(d)}_k \sqrt{d} = (X + Y \sqrt{d})^k$ for natural numbers $k$. Let $a, b, c$ be

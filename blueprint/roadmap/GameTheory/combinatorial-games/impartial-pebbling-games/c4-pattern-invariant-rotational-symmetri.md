@@ -1,6 +1,6 @@
 # Invariance of the mod-$3$ pattern classes under symmetric replies on $C_4$
 
-**Invariance of the mod-$3$ pattern classes under symmetric replies on $C_4$.** Consider the
+Consider the
 $(2:1)$-pebbling game on the cycle $C_4$ with vertices $v_0, v_1, v_2, v_3$, indices read modulo
 $4$, and let $a = (a_0, a_1, a_2, a_3)$ be a position with $a_i$ pebbles on $v_i$. Let $j$ be an
 index with $a_j \ge 2$, let $\varepsilon \in \{1, -1\}$, and let $b$ be the position obtained from

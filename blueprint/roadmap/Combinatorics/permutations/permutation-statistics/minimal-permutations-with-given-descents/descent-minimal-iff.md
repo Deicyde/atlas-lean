@@ -1,6 +1,6 @@
 # Characterization of minimal permutations with a given number of descents
 
-**Characterization of minimal permutations with a given number of descents.** Let $\sigma$ be a
+Let $\sigma$ be a
 permutation of $\{1, \dots, n\}$ and let $d$ be a natural number. A descent of a permutation
 $\tau$ of $\{1, \dots, k\}$ is an index $1 \le i \le k - 1$ with $\tau(i+1) < \tau(i)$, and $\tau$
 occurs in $\sigma$ if there are positions $\varphi(1) < \dots < \varphi(k)$ in $\{1, \dots, n\}$

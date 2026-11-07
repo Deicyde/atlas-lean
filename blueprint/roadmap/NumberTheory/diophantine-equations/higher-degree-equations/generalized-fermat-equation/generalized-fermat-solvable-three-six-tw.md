@@ -1,6 +1,6 @@
 # A solution of x³ + y⁶ = z²
 
-**A solution of x³ + y⁶ = z².** The equation $x^3 + y^6 = z^2$ has a solution in nonzero
+The equation $x^3 + y^6 = z^2$ has a solution in nonzero
 integers, namely $2^3 + 1^6 = 3^2$.
 
 ## Sources

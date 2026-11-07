@@ -1,6 +1,6 @@
 # Operation counts of connected components
 
-**Operation counts of connected components.** Let $n$ be a natural number, let $E$ be a list
+Let $n$ be a natural number, let $E$ be a list
 of pairs of vertices in $\{0, \dots, n-1\}$ and let $m$ be the length of $E$. Let $G$ be the
 simple graph on $\{0, \dots, n-1\}$ whose edges are the unordered pairs $\{u, v\}$ with $(u, v)$
 in $E$ and $u \ne v$, and let $k$ be the number of connected components of $G$. Running

@@ -1,6 +1,6 @@
 # Microscopic weighting is not equivalent to finite concentration
 
-**Microscopic weighting is not equivalent to finite concentration.** It is not true that every
+It is not true that every
 nonempty finite metric space $X$ has a microscopic weighting if and only if it has finite
 concentration. Here, for real $t$, $Z_t$ is the $X \times X$ matrix with entries
 $e^{-t\,d(x,y)}$ and $w_t = Z_t^{-1}\mathbf{1}$ is its weighting, where $\mathbf{1}$ is the

@@ -1,6 +1,6 @@
 # Interlacing of consecutive minuscule polynomials
 
-**Interlacing of consecutive minuscule polynomials.** Let $n \ge 2$. There are nonzero real
+Let $n \ge 2$. There are nonzero real
 numbers $c, d$ and real numbers $r_0 \le \dots \le r_{n-1}$ and $s_0 \le \dots \le s_{n-2}$ such
 that the type-A minuscule polynomials factor over $\mathbb{R}$ as
 $N_{n+1}(x) = c \prod_{i=0}^{n-1} (x - r_i)$ and $N_n(x) = d \prod_{j=0}^{n-2} (x - s_j)$, and

@@ -1,6 +1,6 @@
 # Comparison pops a common prefix
 
-**Comparison pops a common prefix.** Suppose the program has at label $\ell$ the bit-block
+Suppose the program has at label $\ell$ the bit-block
 comparison statement of stacks $a$ and $b$ (decoders $d_a$, $d_b$) with scratch stacks $t_a$ and
 $t_b$ (encoders $e_a$, $e_b$) and loop label $\ell$, and that $a$, $b$, $t_a$, $t_b$ are pairwise
 distinct. Let $p = p_1 \dots p_n$ be a bit string, and take a configuration at label $\ell$, with

@@ -1,6 +1,6 @@
 # The class APX
 
-**The class APX.** APX is the set of maximization problems $P$ that are NP optimization
+APX is the set of maximization problems $P$ that are NP optimization
 problems (feasibility is decidable in polynomial time, and a polynomial-time computable map
 sends every instance-solution pair to a signed fraction with nonzero denominator that equals the
 objective value whenever the solution is feasible) and for which there are a rational number

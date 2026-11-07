@@ -1,6 +1,6 @@
 # Leaves of a coconut tree are pairwise nonadjacent
 
-**Leaves of a coconut tree are pairwise nonadjacent.** No leaf of the coconut tree $CT(p, s)$
+No leaf of the coconut tree $CT(p, s)$
 is adjacent to a leaf.
 
 ## Sources

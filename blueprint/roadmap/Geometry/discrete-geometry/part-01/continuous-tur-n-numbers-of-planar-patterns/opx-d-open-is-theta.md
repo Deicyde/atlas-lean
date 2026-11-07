@@ -1,6 +1,6 @@
 # Nonempty open patterns in dimension at least two
 
-**Nonempty open patterns in dimension at least two.** Let $d \ge 2$, let
+Let $d \ge 2$, let
 $P \subseteq \mathbb{R}^d$ be a nonempty open set, and let $Q_P$ be the set of points of $P$ all
 of whose coordinates are rational. Then, as the real number $n \to \infty$,
 $\mathrm{opx}(n, P, d) = \Theta(n^d)$ and $\mathrm{opx}(n, Q_P, d) = \Theta(n^d)$.

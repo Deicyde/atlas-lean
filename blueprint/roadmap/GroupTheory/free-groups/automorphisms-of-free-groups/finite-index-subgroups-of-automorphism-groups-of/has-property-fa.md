@@ -1,6 +1,6 @@
 # Serre's Property FA
 
-**Serre's Property FA.** A group $G$ has Property FA when every action of $G$ on a tree
+A group $G$ has Property FA when every action of $G$ on a tree
 without edge inversion has a global fixed vertex: for every tree $T$ with vertex set $V$ and every
 homomorphism $\alpha$ from $G$ to the group of permutations of $V$ such that each $\alpha(g)$
 satisfies $\alpha(g)(u) \sim \alpha(g)(v) \iff u \sim v$ for all vertices $u, v$ (where $\sim$ is

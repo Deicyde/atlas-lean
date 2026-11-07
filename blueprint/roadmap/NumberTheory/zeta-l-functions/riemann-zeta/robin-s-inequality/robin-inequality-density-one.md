@@ -1,6 +1,6 @@
 # Robin's inequality holds on a set of natural density one
 
-**Robin's inequality holds on a set of natural density one.** Let $\sigma(n)$ be the sum of
+Let $\sigma(n)$ be the sum of
 the divisors of $n$, $\gamma$ the Euler–Mascheroni constant and $\log$ the natural logarithm. The
 proportion of the integers $n$ with $1 \le n \le N$ that satisfy Robin's inequality
 $\sigma(n) < e^{\gamma} n \log \log n$ tends to $1$ as $N \to \infty$.

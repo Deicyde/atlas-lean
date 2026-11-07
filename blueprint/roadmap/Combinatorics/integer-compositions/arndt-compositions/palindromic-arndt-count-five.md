@@ -1,6 +1,6 @@
 # Palindromic Arndt compositions of 5
 
-**Palindromic Arndt compositions of 5.** There is exactly one palindromic Arndt composition of
+There is exactly one palindromic Arndt composition of
 $5$ with one part and middle summand $5$, exactly one with three parts and middle summand $1$,
 and none with three parts and middle summand $2$.
 

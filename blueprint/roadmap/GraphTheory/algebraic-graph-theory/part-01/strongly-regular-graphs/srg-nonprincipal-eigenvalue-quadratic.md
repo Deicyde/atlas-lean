@@ -1,6 +1,6 @@
 # Non-principal eigenvalues of a connected non-complete strongly regular graph
 
-**Non-principal eigenvalues of a connected non-complete strongly regular graph.** Let $G$ be a
+Let $G$ be a
 finite strongly regular graph with parameters $(n, k, \ell, \mu)$: $G$ has $n$ vertices, every
 vertex has degree $k$, any two adjacent vertices have exactly $\ell$ common neighbors, and any
 two distinct nonadjacent vertices have exactly $\mu$ common neighbors. Suppose that $G$ is

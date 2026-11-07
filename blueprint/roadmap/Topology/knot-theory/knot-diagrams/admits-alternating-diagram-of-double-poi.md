@@ -1,6 +1,6 @@
 # Links with a crossing-free regular projection admit alternating diagrams
 
-**Links with a crossing-free regular projection admit alternating diagrams.** If a
+If a
 parametrized link $L$ has a regular standard projection whose double-point set is empty, then
 $L$ admits an alternating diagram.
 

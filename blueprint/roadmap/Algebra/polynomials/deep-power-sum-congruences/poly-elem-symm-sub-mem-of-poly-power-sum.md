@@ -1,6 +1,6 @@
 # Power-sum congruences imply elementary symmetric congruences
 
-**Power-sum congruences imply elementary symmetric congruences.** Let $p$ be a prime and $A$ a
+Let $p$ be a prime and $A$ a
 torsion-free commutative ring in which every natural number not divisible by $p$ is a unit (a
 torsion-free $\mathbb{Z}_{(p)}$-algebra). Let $\mathfrak{a}$ be a divided-power ideal of $A$, let
 $P, Q \in A[X]$ be monic and let $N$ be a natural number. Suppose that for every $n$ with

@@ -1,6 +1,6 @@
 # Height one multiple zeta series weighted by powers of a natural number
 
-**Height one multiple zeta series weighted by powers of a natural number.** Let $n \ge 0$ be
+Let $n \ge 0$ be
 an integer. Write $\zeta(s, \{1\}^j)$ for the height one multiple zeta function, $\zeta$ for the
 Riemann zeta function, $c(n, m)$ for the unsigned Stirling numbers of the first kind and
 $B_j^{(k)}(x)$ for the poly-Bernoulli polynomials. For every complex $s$ with

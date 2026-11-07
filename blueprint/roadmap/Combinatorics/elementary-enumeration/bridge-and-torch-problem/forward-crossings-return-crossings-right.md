@@ -1,6 +1,6 @@
 # Forward moves, returns and right bank of a four-person schedule
 
-**Forward moves, returns and right bank of a four-person schedule.** For the schedule whose
+For the schedule whose
 crossings are, in order, $\{1,2\}$, $\{1\}$, $\{1,3\}$, $\{1\}$, $\{1,4\}$, the forward crossings
 are $\{1,2\}, \{1,3\}, \{1,4\}$ and the returns are $\{1\}, \{1\}$. For the people $1, 2, 3, 4$,
 the right bank after the crossings $\{1,2\}$, $\{1\}$ (the first two of the schedule) is $\{2\}$.

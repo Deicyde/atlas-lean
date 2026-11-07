@@ -1,6 +1,6 @@
 # Ball-tree similarity search
 
-**Ball-tree similarity search.** The search of a ball tree $T$ for a query point
+The search of a ball tree $T$ for a query point
 $q \in \mathbb{Z}^d$ and a squared radius $r \in \mathbb{N}$ is the accumulating search of $T$ for
 $q$ and $r$ started with the empty accumulator.
 

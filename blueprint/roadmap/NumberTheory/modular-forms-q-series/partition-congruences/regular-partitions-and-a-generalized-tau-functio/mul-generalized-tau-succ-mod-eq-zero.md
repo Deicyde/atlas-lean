@@ -1,6 +1,6 @@
 # Divisibility of $n\,\tau_k(n + 1)$ by $|k|$
 
-**Divisibility of $n\,\tau_k(n + 1)$ by $|k|$.** Let $\tau_k$ be the generalized tau function.
+Let $\tau_k$ be the generalized tau function.
 For every positive integer $n$ and every integer $k$ with $|k| \ge 2$,
 $n\,\tau_k(n + 1) \equiv 0 \pmod{|k|}$.
 

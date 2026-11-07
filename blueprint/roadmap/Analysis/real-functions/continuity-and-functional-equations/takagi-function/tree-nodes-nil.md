@@ -1,6 +1,6 @@
 # The single-leaf tree
 
-**The single-leaf tree.** The full binary tree consisting of a single leaf has no $D$-nodes
+The full binary tree consisting of a single leaf has no $D$-nodes
 and no $S$-nodes, and it is a divide-and-conquer tree.
 
 ## Sources

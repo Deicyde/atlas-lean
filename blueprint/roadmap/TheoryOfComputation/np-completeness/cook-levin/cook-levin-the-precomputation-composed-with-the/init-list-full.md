@@ -1,6 +1,6 @@
 # Initial configuration of the full machine
 
-**Initial configuration of the full machine.** Let $E$ be encoding data for a finite
+Let $E$ be encoding data for a finite
 multi-stack Turing machine $M$, and let $r$ be a natural number. Fix a list $Y$ of input-stack
 symbols of $M$, an output-stack symbol $a$ of $M$, a map $\iota$ from $\{0, \dots, r-1\}$ to
 input-stack symbols of $M$, a separator input-stack symbol $\sigma$ of $M$, a polynomial $k$ with

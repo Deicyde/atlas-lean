@@ -1,6 +1,6 @@
 # Rational generating function for king permutations avoiding $P_1$
 
-**Rational generating function for king permutations avoiding $P_1$.** Let $P_1$ be the flat
+Let $P_1$ be the flat
 partially ordered pattern of length $4$ whose first element lies below each of the other three,
 and let $A_{P_1}(x; p, q, u, v)$ be the generating function of king permutations avoiding $P_1$,
 in which $x$ marks length and $p$, $q$, $u$, $v$ mark ascents, descents, left-to-right maxima and

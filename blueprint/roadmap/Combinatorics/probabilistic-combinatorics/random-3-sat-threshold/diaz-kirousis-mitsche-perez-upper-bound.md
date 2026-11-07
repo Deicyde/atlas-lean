@@ -1,6 +1,6 @@
 # Díaz–Kirousis–Mitsche–Pérez-Giménez upper bound for random 3-SAT
 
-**Díaz–Kirousis–Mitsche–Pérez-Giménez upper bound for random 3-SAT.** The number $4.49$ is an
+The number $4.49$ is an
 upper threshold cutoff for random 3-SAT: for every real $r > 4.49$, the probability that a
 uniformly random formula with $\lfloor r n \rfloor$ clauses on $n$ variables is satisfiable tends
 to $0$ as $n \to \infty$.

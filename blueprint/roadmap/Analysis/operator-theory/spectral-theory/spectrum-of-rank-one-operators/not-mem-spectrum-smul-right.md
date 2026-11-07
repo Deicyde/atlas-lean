@@ -1,6 +1,6 @@
 # The spectrum of $x \mapsto f(x)\,y$ lies in $\{0, f(y)\}$
 
-**The spectrum of $x \mapsto f(x)\,y$ lies in $\{0, f(y)\}$.** Let $\mathbb{K}$ be
+Let $\mathbb{K}$ be
 $\mathbb{R}$ or $\mathbb{C}$, let $E$ be a normed space over $\mathbb{K}$, let
 $f \colon E \to \mathbb{K}$ be a continuous linear functional, let $y \in E$, and let $T$ be the
 bounded operator on $E$ given by $T x = f(x)\,y$. If $\mu \in \mathbb{K}$ satisfies $\mu \neq 0$

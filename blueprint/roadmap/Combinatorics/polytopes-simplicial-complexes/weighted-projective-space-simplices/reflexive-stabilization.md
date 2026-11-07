@@ -1,6 +1,6 @@
 # Reflexive stabilization
 
-**Reflexive stabilization.** For a list of natural-number weights $q = (q_1, \dots, q_n)$,
+For a list of natural-number weights $q = (q_1, \dots, q_n)$,
 the reflexive stabilization of $q$ is the list $\mathrm{rs}(q) = (1^k, q_1, \dots, q_n)$ obtained
 by prepending $k = \mathrm{rsn}(q)$ entries equal to $1$, where $\mathrm{rsn}(q)$ is the
 reflexive stabilization number of $q$.

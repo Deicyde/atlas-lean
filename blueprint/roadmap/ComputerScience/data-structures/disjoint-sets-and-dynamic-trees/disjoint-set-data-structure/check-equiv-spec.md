@@ -1,6 +1,6 @@
 # Correctness of the union-find equivalence query
 
-**Correctness of the union-find equivalence query.** Call two natural numbers $a$ and $c$
+Call two natural numbers $a$ and $c$
 equivalent in a union-find structure when they have the same root, where a number that is not a
 node is its own root. Let $U$ be a union-find structure with nodes $0, \dots, N-1$ and let
 $x, y < N$. The equivalence query on $x$ and $y$, which runs FIND-SET with path compression on

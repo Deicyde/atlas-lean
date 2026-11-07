@@ -1,6 +1,6 @@
 # Recursion for the (k, l)-Göbel sequence
 
-**Recursion for the (k, l)-Göbel sequence.** For all natural numbers $k$, $l$ and $n \ge 1$,
+For all natural numbers $k$, $l$ and $n \ge 1$,
 the $(k, l)$-Göbel sequence $g_{k,l}$ satisfies, in $\mathbb{Q}$,
 
 $$(n + 1)\, g_{k,l}(n + 1) = g_{k,l}(n) \bigl(n + g_{k,l}(n)^{k-1}\bigr),$$

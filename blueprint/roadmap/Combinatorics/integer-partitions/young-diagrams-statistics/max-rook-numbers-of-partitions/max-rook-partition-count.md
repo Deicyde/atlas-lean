@@ -1,6 +1,6 @@
 # Partitions with a given max-rook number
 
-**Partitions with a given max-rook number.** For natural numbers $k$ and $n$, $R_k(n)$ is
+For natural numbers $k$ and $n$, $R_k(n)$ is
 the number of partitions of $n$ whose max-rook number, the largest number of non-attacking rooks
 on the Ferrers board, equals $k$.
 

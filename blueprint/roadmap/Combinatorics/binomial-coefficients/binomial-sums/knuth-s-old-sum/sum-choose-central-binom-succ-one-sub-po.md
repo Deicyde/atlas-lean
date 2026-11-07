@@ -1,6 +1,6 @@
 # A polynomial identity for weighted central binomial coefficients
 
-**A polynomial identity for weighted central binomial coefficients.** For every natural
+For every natural
 number $n$ and every complex number $x$,
 
 $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \frac{1}{(k+2) 2^k} \binom{2k+2}{k+1} (1-x)^{n-k} =

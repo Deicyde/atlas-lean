@@ -1,6 +1,6 @@
 # Relations between the order-eighteen and the nonic Rogers–Ramanujan functions
 
-**Relations between the order-eighteen and the nonic Rogers–Ramanujan functions.** Let $q$
+Let $q$
 be a complex number with $|q| < 1$. Write $(a;q)_\infty = \prod_{n \ge 0} (1 - a q^n)$ and
 $f_k = (q^k;q^k)_\infty$, let $f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be
 Ramanujan's theta function, and set $P_n = f(-q^{7n},-q^{11n})/f_{6n}$,

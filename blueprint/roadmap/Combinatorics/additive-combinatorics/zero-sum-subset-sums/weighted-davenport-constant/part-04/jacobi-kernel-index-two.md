@@ -1,6 +1,6 @@
 # The index of the Jacobi symbol kernel
 
-**The index of the Jacobi symbol kernel.** Let $n$ be an odd natural number, let $U(n)$
+Let $n$ be an odd natural number, let $U(n)$
 be the group of units of $\mathbb{Z}_n = \mathbb{Z}/n\mathbb{Z}$, and let
 $S(n) = \{u \in U(n) : (u/n) = 1\}$, where $(u/n)$ is the Jacobi symbol $(a/n)$ of the
 representative $0 \le a < n$ of $u$. If $n$ is not a perfect square, then $S(n)$ is a subgroup of

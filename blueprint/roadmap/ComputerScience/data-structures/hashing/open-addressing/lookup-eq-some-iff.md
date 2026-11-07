@@ -1,6 +1,6 @@
 # Lookup in a valid table returns exactly the stored binding
 
-**Lookup in a valid table returns exactly the stored binding.** Let $T$ be a valid
+Let $T$ be a valid
 open-addressing table, $k$ a key and $v$ a value. Then looking up $k$ in $T$ returns $v$ if and
 only if the binding $k \mapsto v$ is stored in some slot of $T$.
 

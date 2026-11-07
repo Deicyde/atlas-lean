@@ -1,6 +1,6 @@
 # Perfect covers of ℤ₄: an example and a non-example
 
-**Perfect covers of ℤ₄: an example and a non-example.** In the cyclic group
+In the cyclic group
 $\mathbb{Z}_4 = \mathbb{Z}/4\mathbb{Z}$, the set $\{1, 2\}$ is a perfect cover and the set
 $\{1, 3\}$ is not, since $1 + 3 = 0$.
 

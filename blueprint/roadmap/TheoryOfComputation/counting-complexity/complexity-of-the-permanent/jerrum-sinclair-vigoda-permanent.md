@@ -1,6 +1,6 @@
 # Jerrum-Sinclair-Vigoda: FPRAS for the permanent
 
-**Jerrum-Sinclair-Vigoda: FPRAS for the permanent.** For a bitstring $x$, let
+For a bitstring $x$, let
 $\operatorname{perm}(x)$ be the permanent of the 0-1 matrix encoded by $x$: if $x$ decodes, under
 the canonical bitstring encoding, to a pair $(k, e)$ of a natural number $k$ and a list $e$ of
 $k^2$ natural numbers each at most $1$, then $\operatorname{perm}(x)$ is the permanent of the

@@ -1,6 +1,6 @@
 # Lower bound for primes $n$ with $n + a$ prime, up to a sieve error
 
-**Lower bound for primes $n$ with $n + a$ prime, up to a sieve error.** Let $a$ be a nonzero
+Let $a$ be a nonzero
 even integer, and call a prime $n$ admissible at level $x$ if no prime $q < x^{1/5}$ divides
 $n + a$. For a prime $p$ and real $x$ let
 $\bar\Delta_p(x) = \#\{n \le x \text{ admissible} : n \equiv -a \pmod p\} -

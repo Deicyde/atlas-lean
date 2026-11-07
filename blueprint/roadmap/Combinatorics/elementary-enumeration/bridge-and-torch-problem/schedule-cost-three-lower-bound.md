@@ -1,6 +1,6 @@
 # Lower bound for capacity-three schedules
 
-**Lower bound for capacity-three schedules.** Let $n \ge 7$. Every bridge schedule of
+Let $n \ge 7$. Every bridge schedule of
 capacity $3$ for the $n$ people $1, \dots, n$ (person $i$ crossing in time $i$) has total cost at
 least $V(n) = n^2/6 + 2n - 11/2$.
 

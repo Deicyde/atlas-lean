@@ -1,3 +1,3 @@
 # Variance bound for a truncated random variable
 
-**Variance bound for a truncated random variable.** The variance of canonical truncation is at most `A²`.
+The variance of canonical truncation is at most `A²`.

@@ -1,6 +1,6 @@
 # Receiver transitions of the alternating-bit protocol with data
 
-**Receiver transitions of the alternating-bit protocol with data.** The transitions of each
+The transitions of each
 receiver state, as a list of pairs of a label and a successor state, for bits $b$ and $d$:
 $\mathsf{expect}(b)$ inputs on $\mathsf{recv}(b, d)$ and moves to $\mathsf{deliver}(b, d)$, or
 inputs a duplicate on $\mathsf{recv}(\lnot b, d)$ and moves to the state $\mathsf{reply}(\lnot b)$,

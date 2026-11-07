@@ -1,6 +1,6 @@
 # Responsibilities of the full-covariance Gaussian mixture
 
-**Responsibilities of the full-covariance Gaussian mixture.** For valid parameters
+For valid parameters
 $\theta = (\pi_j, \mu_j, \Sigma_j)_{j\lt K}$, a point $x \in \mathbb{R}^d$ and a component $k$, write
 $p_k(x) = \pi_k \, \mathcal{N}(x \mid \mu_k, \Sigma_k)$, where $\mathcal{N}(\cdot \mid \mu, \Sigma)$
 is the multivariate Gaussian density. The responsibility of $k$ for $x$ is the posterior

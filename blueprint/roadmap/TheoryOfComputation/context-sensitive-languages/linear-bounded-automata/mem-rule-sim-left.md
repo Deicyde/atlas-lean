@@ -1,3 +1,3 @@
 # Left transitions give simulation rules
 
-**Left transitions give simulation rules.** A left transition gives a simulation rule.
+A left transition gives a simulation rule.

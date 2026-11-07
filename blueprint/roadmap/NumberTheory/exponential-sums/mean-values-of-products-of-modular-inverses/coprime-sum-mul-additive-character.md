@@ -1,6 +1,6 @@
 # Weighted additive character sum over reduced residues
 
-**Weighted additive character sum over reduced residues.** For a positive integer $r$ and an
+For a positive integer $r$ and an
 integer $x$ write $e_r(x) = \exp(2\pi i x / r)$, and let $\mu$ be the Möbius function. For all
 natural numbers $n \ge 2$ and $k \ge 1$,
 

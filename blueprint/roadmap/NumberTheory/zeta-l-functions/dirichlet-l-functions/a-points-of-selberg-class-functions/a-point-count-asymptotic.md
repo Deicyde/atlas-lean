@@ -1,6 +1,6 @@
 # Asymptotic count of a-points of derivatives in the Selberg class
 
-**Asymptotic count of a-points of derivatives in the Selberg class.** Let $F$ be a function in
+Let $F$ be a function in
 the Selberg class with conductor $Q$, Gamma-factor scalings $\lambda_1, \dots, \lambda_r$ and
 degree $d_F$, let $k \ge 1$ and $a \in \mathbb{C}$ with $a \ne 0$, and put
 $\lambda = \prod_{j=1}^{r} \lambda_j^{2\lambda_j}$. Let $E_1, E_2, \tau$ be real numbers such that

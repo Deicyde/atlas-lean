@@ -1,6 +1,6 @@
 # A woman's rank of a man
 
-**A woman's rank of a man.** For a preference profile for $n$ men and $n$ women, the rank
+For a preference profile for $n$ men and $n$ women, the rank
 that woman $j$ gives man $i$ is the zero-based position at which she ranks him, that is, the
 paper's ranking minus one.
 

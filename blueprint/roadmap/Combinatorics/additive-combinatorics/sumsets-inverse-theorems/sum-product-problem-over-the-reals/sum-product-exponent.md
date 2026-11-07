@@ -1,6 +1,6 @@
 # Sum-product exponent of the reals
 
-**Sum-product exponent of the reals.** For $n \in \mathbb{N}$ let $m(n)$ be the sum-product
+For $n \in \mathbb{N}$ let $m(n)$ be the sum-product
 level minimum: the least value of $\log \max(|A + A|, |AA|) / \log |A|$ over sets
 $A \subset \mathbb{R}$ with $n$ elements, where $A + A$ and $AA$ are the sets of sums $a + b$ and
 products $ab$ of elements $a, b \in A$. The real sum-product exponent is

@@ -1,6 +1,6 @@
 # Binomial transform of the Pell numbers
 
-**Binomial transform of the Pell numbers.** Let $P \colon \mathbb{N} \to \mathbb{Z}$ satisfy
+Let $P \colon \mathbb{N} \to \mathbb{Z}$ satisfy
 $P_0 = 0$, $P_1 = 1$ and $P_{n+2} = 2 P_{n+1} + P_n$ for every $n$, so that $P_n$ is the
 $n$-th Pell number. Then for every natural number $n$,
 

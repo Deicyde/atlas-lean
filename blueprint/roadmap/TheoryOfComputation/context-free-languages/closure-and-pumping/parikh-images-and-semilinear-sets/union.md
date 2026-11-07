@@ -1,6 +1,6 @@
 # Semilinear sets are closed under union
 
-**Semilinear sets are closed under union.** Semilinear sets are closed under union.
+Semilinear sets are closed under union.
 
 ## Sources
 

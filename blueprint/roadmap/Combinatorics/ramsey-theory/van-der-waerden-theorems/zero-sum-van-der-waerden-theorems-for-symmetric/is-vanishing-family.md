@@ -1,6 +1,6 @@
 # Vanishing family
 
-**Vanishing family.** Let $n$ be a natural number. A family $F$ of functions on blocks over
+Let $n$ be a natural number. A family $F$ of functions on blocks over
 $\mathbb{Z}/n\mathbb{Z}$ with values in a type with a zero is vanishing if it is $m$-vanishing for
 every positive integer $m$.
 

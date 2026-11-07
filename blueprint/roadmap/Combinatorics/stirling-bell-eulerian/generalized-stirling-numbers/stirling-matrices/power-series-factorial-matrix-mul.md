@@ -1,6 +1,6 @@
 # Multiplicativity of the factorial matrix of a power series
 
-**Multiplicativity of the factorial matrix of a power series.** Let $K$ be a field of
+Let $K$ be a field of
 characteristic zero, let $f$ and $g$ be formal power series over $K$ in the variable $t$, and let
 $n$ be a natural number. For a power series $h$ over $K$, write $M_n(h)$ for the $n \times n$
 factorial matrix of $h$, whose entry in row $a$ and column $b$ (counted from $0$) is

@@ -1,6 +1,6 @@
 # Bardakov–Bellingeri: $B_4$ does not embed in $\operatorname{Aut}(F_2)$
 
-**Bardakov–Bellingeri: $B_4$ does not embed in $\operatorname{Aut}(F_2)$.** There is no injective
+There is no injective
 group homomorphism from the braid group $B_4$ on four strands to the automorphism group
 $\operatorname{Aut}(F_2)$ of the free group $F_2$ of rank $2$. Kourovka Problem 17.14
 (V. G. Bardakov) asks whether, for $n \ge 4$, the braid group $B_n$ embeds in the automorphism

@@ -1,6 +1,6 @@
 # Alweiss–Lovett–Wu–Zhang sunflower bound
 
-**Alweiss–Lovett–Wu–Zhang sunflower bound.** Let $C$ be the sunflower constant, a real number
+Let $C$ be the sunflower constant, a real number
 not depending on $r$ or $w$. Let $r \ge 3$ and $w \ge 2$ be natural numbers, let $X$ be a finite
 type, and let $\mathcal{F}$ be a $w$-set system of subsets of $X$, that is, every member of
 $\mathcal{F}$ has at most $w$ elements. If $\mathcal{F}$ has at least

@@ -1,6 +1,6 @@
 # Homogeneous set
 
-**Homogeneous set.** Let $c$ assign a colour in $\gamma$ to each finite subset of a type
+Let $c$ assign a colour in $\gamma$ to each finite subset of a type
 $I$, and let $n \in \mathbb{N}$. A set $H \subseteq I$ is homogeneous for $c$ with colour
 $k \in \gamma$ if $c(s) = k$ for every $n$-element subset $s$ of $H$.
 

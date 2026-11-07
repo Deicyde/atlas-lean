@@ -1,6 +1,6 @@
 # Solymosi's $14/11$ lower bound for the real sum-product exponent
 
-**Solymosi's $14/11$ lower bound for the real sum-product exponent.** Let $C$ be the real
+Let $C$ be the real
 sum-product exponent: the limit inferior, as $n \to \infty$, of the least value of
 $\log \max(|A + A|, |AA|) / \log |A|$ over $n$-element sets $A \subset \mathbb{R}$, where
 $A + A$ and $AA$ are the sets of sums $a + b$ and products $ab$ of elements $a, b \in A$. Then

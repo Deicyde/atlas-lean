@@ -1,6 +1,6 @@
 # Wetzel's sector covering claim
 
-**Wetzel's sector covering claim.** The proposition that the closed circular sector $S$ of
+The proposition that the closed circular sector $S$ of
 radius $1$ and angle $30^\circ$ with apex $0$ and symmetric about the positive real axis, that is,
 the set of complex numbers $z$ with $|z| \le 1$, $\operatorname{Re} z \ge 0$ and
 $|\operatorname{Im} z| \le \tan(\pi/12)\operatorname{Re} z$, covers every unit arc: for every

@@ -1,6 +1,6 @@
 # The program of the composite machine
 
-**The program of the composite machine.** Let $M_1$ and $M_2$ be finite multi-stack Turing
+Let $M_1$ and $M_2$ be finite multi-stack Turing
 machines and $\varphi$ a map from $M_1$'s output alphabet to $M_2$'s input alphabet. At a label
 of $M_1$ or of $M_2$ the composite program runs the lifted statement of that machine at that
 label. At the pop label of the first copy loop it pops $M_1$'s output stack, stores the image

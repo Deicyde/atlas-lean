@@ -1,6 +1,6 @@
 # Search-path split at a key
 
-**Search-path split at a key.** Let $\alpha$ be a linearly ordered type, let $x \in \alpha$, and
+Let $\alpha$ be a linearly ordered type, let $x \in \alpha$, and
 write $(k; L, R)$ for the binary tree with root key $k$, left subtree $L$ and right subtree $R$.
 The split of a binary tree with keys in $\alpha$ at $x$ is the pair of trees defined by
 recursion: the empty tree splits into two empty trees; if $x < k$ and $L$ splits into

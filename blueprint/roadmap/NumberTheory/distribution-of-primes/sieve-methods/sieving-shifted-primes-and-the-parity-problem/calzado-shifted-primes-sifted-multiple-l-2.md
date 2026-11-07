@@ -1,6 +1,6 @@
 # Relative bound for sifted shifted primes divisible by a large prime
 
-**Relative bound for sifted shifted primes divisible by a large prime.** Let $a$ be a nonzero
+Let $a$ be a nonzero
 even integer. For real $x$ let $S(x)$ be the number of primes $n \le x$ such that no prime
 $q < x^{1/5}$ divides $n + a$, and for a prime $\ell$ let $S_\ell(x)$ be the number of those $n$
 for which moreover $\ell$ divides $n + a$. There is a constant $C$ such that for all sufficiently

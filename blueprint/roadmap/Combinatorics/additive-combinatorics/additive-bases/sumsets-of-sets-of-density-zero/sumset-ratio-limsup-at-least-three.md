@@ -1,6 +1,6 @@
 # Erdős Problem 245 on sumsets of sets of density zero
 
-**Erdős Problem 245 on sumsets of sets of density zero.** For $N \in \mathbb{N}$ write
+For $N \in \mathbb{N}$ write
 $[1, N] = \{1, \dots, N\}$, and for $A \subseteq \mathbb{N}$ write
 $A + A = \{a + b \mid a, b \in A\}$. This is the statement that for every infinite set
 $A \subseteq \mathbb{N}$ with $\lvert A \cap [1, N] \rvert / N \to 0$ as $N \to \infty$ and every

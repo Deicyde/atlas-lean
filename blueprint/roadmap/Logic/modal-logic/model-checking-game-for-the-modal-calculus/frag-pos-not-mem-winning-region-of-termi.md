@@ -1,6 +1,6 @@
 # Terminal losing positions are not won by the even player
 
-**Terminal losing positions are not won by the even player.** Let $M$ be a Kripke model,
+Let $M$ be a Kripke model,
 $\mathit{env}$ an environment assigning a set of worlds to each free-variable index, $\varphi$ a
 fixpoint-free formula and $w$ a world. If the model-checking game position $(\varphi, w, [])$,
 with $\varphi$ embedded as a μ-calculus formula and the empty fixpoint stack, has no moves in $M$

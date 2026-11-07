@@ -1,6 +1,6 @@
 # Smoothed state weights
 
-**Smoothed state weights.** For a hidden Markov model with a finite set of states $S$ and
+For a hidden Markov model with a finite set of states $S$ and
 weights in a semifield $K$, observations $x_0, x_1, \dots$, times $t, k \in \mathbb{N}$ and a
 state $s \in S$, the smoothed weight of $s$ at time $t$ is
 

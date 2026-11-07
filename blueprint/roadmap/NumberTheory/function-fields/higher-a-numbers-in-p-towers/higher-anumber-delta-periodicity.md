@@ -1,6 +1,6 @@
 # Periodicity and reflection of $\delta$ and $\delta_0$
 
-**Periodicity and reflection of $\delta$ and $\delta_0$.** Let $p$ be a prime and $d$ a divisor
+Let $p$ be a prime and $d$ a divisor
 of $p - 1$, let $\tau_D$ be the denominator of $\tau = (p + 1)/d$ in lowest terms, let $\delta$ be
 the rounding indicator, and let $\delta_0(i)$ be $0$ if $p \mid i$ and $\delta(i)$ otherwise. Then
 for all natural numbers $i$ and $n$: (i) $\delta(p^n i) = \delta(i)$;

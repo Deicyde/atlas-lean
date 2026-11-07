@@ -1,6 +1,6 @@
 # Cubic family
 
-**Cubic family.** For a parameter $\lambda \in \mathbb{C}$, the cubic polynomial map
+For a parameter $\lambda \in \mathbb{C}$, the cubic polynomial map
 $f_\lambda : \mathbb{C} \to \mathbb{C}$ is given by $f_\lambda(z) = \lambda z^2 + z^3$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Proper prefixes of a block with curling number at most $m + 1$
 
-**Proper prefixes of a block with curling number at most $m + 1$.** Let $m \ge 1$ and
+Let $m \ge 1$ and
 $u \ge 1$, and write $B_t$ for the block $B_t^{(m+1)}$ of the $(m+1)$th order Gijswijt sequence.
 A string $P$ is a proper prefix of $B_u$ (a prefix strictly shorter than $B_u$) with curling
 number $\mathcal{C}(P) \le m + 1$ if and only if $P = B_{u-1}^{a_{u-1}} \cdots B_2^{a_2} B_1^{a_1}$

@@ -1,6 +1,6 @@
 # A decidable predicate that no single-tape NTM recognizes
 
-**A decidable predicate that no single-tape NTM recognizes.** There is a predicate $p$ on the
+There is a predicate $p$ on the
 natural numbers that is decidable by a single-tape deterministic Turing machine but is not
 recognizable by any single-tape nondeterministic Turing machine.
 

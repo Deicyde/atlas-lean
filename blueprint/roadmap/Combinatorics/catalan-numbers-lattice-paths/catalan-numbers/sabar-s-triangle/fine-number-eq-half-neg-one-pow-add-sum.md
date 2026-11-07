@@ -1,6 +1,6 @@
 # Fine numbers as an alternating binomial sum
 
-**Fine numbers as an alternating binomial sum.** For every natural number $n \ge 2$, the Fine
+For every natural number $n \ge 2$, the Fine
 number $F(n)$ satisfies
 
 $$F(n) = \frac{1}{2} (-1)^n +

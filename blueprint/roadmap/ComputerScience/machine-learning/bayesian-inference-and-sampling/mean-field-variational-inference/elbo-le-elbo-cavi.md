@@ -1,6 +1,6 @@
 # The CAVI update maximizes the ELBO over the first factor
 
-**The CAVI update maximizes the ELBO over the first factor.** Let $A$ and $B$ be finite sets
+Let $A$ and $B$ be finite sets
 with $A$ nonempty, let $p : A \times B \to \mathbb{R}$ be a joint, and let $q_1$ and $q_2$ be
 probability distributions on $A$ and $B$. Let $q_1^*$ be the CAVI update of the first factor
 given $q_2$, $q_1^*(a) = \exp E(a) / \sum_{a' \in A} \exp E(a')$ with

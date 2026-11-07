@@ -1,6 +1,6 @@
 # Continued-fraction denominators have constant term one
 
-**Continued-fraction denominators have constant term one.** Let $B$ be a power series in $x$
+Let $B$ be a power series in $x$
 over $\mathbb{Z}[q]$ with constant term $1$, and define power series $K_k$ in $x$ over
 $\mathbb{Z}[q]$ by $K_0 = 1$, $K_1 = B$ and $K_k = 1 - q^k x - q^{2k-1} x^2 / K_{k-1}$ for
 $k \ge 2$. Then $K_k$ has constant term $1$ for every $k \ge 0$.

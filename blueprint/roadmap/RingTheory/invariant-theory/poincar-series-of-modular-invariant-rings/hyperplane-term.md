@@ -1,6 +1,6 @@
 # Hyperplane term
 
-**Hyperplane term.** For natural numbers $p$ and $n$, a subgroup $G$ of
+For natural numbers $p$ and $n$, a subgroup $G$ of
 $\mathrm{GL}_n(\mathbb{Z}/p\mathbb{Z})$ and a submodule $W$ of $V = (\mathbb{Z}/p\mathbb{Z})^n$, let
 $N$ be the number of elements of the pointwise stabilizer $G_W$ of $W$ in $G$ (taken to be $0$
 if $G_W$ is infinite), let $\alpha_W$ be the exponent of $p$ in the prime factorization of $N$

@@ -1,6 +1,6 @@
 # Statement of the Cohn–Elkies upper bound in dimension four
 
-**Statement of the Cohn–Elkies upper bound in dimension four.** The proposition that the
+The proposition that the
 sphere packing density $\Delta_4$ of $\mathbb{R}^4$, the supremum of the upper densities of all
 packings of congruent balls in $\mathbb{R}^4$, satisfies
 $\Delta_4 \le \frac{\pi^2}{2} \cdot \frac{13126}{100000}$.

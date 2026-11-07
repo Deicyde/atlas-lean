@@ -1,6 +1,6 @@
 # Continuous invariant valuation
 
-**Continuous invariant valuation.** For a natural number $n$, a real-valued function $f$ on
+For a natural number $n$, a real-valued function $f$ on
 the convex bodies (nonempty compact convex subsets) of the Euclidean space $\mathbb{R}^n$ is a
 continuous invariant valuation if: $f$ is continuous for the Hausdorff metric;
 $f(A) + f(B) = f(C) + f(D)$ for all convex bodies $A, B, C, D$ with $A = C \cup D$ and

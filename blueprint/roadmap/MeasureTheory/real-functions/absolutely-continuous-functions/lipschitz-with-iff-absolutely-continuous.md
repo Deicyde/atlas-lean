@@ -1,6 +1,6 @@
 # Lipschitz functions are the absolutely continuous functions with bounded derivative
 
-**Lipschitz functions are the absolutely continuous functions with bounded derivative.** Let
+Let
 $f : \mathbb{R} \to \mathbb{R}$ and let $M \ge 0$ be a real number. Then
 $|f(x) - f(y)| \le M|x - y|$ for all $x, y \in \mathbb{R}$ if and only if $f$ is absolutely
 continuous on every closed bounded interval and $|f'(x)| \le M$ for almost every $x \in \mathbb{R}$

@@ -1,6 +1,6 @@
 # Generating function of Schmidt type $d$-fold partition diamonds
 
-**Generating function of Schmidt type $d$-fold partition diamonds.** Let $d \ge 1$. A Schmidt
+Let $d \ge 1$. A Schmidt
 type $d$-fold partition diamond is a finitely supported sequence $(a_p)_{p \ge 0}$ of natural
 numbers such that $a_{k(d+1)} \ge a_{k(d+1)+f} \ge a_{(k+1)(d+1)}$ for all $k \ge 0$ and all
 $f$ with $1 \le f \le d$; its weight is the sum of its links $a_{k(d+1)}$, $k \ge 0$. Let

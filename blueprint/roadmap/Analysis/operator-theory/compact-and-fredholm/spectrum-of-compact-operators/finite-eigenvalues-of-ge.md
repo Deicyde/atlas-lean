@@ -1,6 +1,6 @@
 # Finiteness of eigenvalues of a compact operator bounded away from zero
 
-**Finiteness of eigenvalues of a compact operator bounded away from zero.** Let $E$ be a normed
+Let $E$ be a normed
 space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $T$ be a compact bounded linear operator
 on $E$, and let $\varepsilon > 0$ be real. Then the set of eigenvalues $\mu \in \mathbb{K}$ of $T$
 with $|\mu| \ge \varepsilon$ is finite.

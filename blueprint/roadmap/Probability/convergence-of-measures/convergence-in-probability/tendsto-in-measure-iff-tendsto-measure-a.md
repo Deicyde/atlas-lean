@@ -1,6 +1,6 @@
 # Convergence in measure in the textbook ε-formulation
 
-**Convergence in measure in the textbook ε-formulation.** Let $\mu$ be a measure on a
+Let $\mu$ be a measure on a
 measurable space $\Omega$, and let $X_n : \Omega \to \mathbb{R}$ ($n \in \mathbb{N}$) and
 $Y : \Omega \to \mathbb{R}$ be functions. Then $X_n$ converges to $Y$ in $\mu$-measure, that is,
 $\mu(\{\omega : |X_n(\omega) - Y(\omega)| \ge \varepsilon\}) \to 0$ as $n \to \infty$ for every

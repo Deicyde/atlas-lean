@@ -1,6 +1,6 @@
 # Asymptotics of type III alternating hyperharmonic numbers
 
-**Asymptotics of type III alternating hyperharmonic numbers.** For real $s$ let
+For real $s$ let
 $\overline{H}_n^{(s)} = \sum_{i=1}^{n} (-1)^{i-1}/i^s$ be the alternating generalized harmonic
 numbers, and let the type III generalized alternating hyperharmonic numbers be
 $H_n^{(s,1,3)} = \overline{H}_n^{(s)}$ and

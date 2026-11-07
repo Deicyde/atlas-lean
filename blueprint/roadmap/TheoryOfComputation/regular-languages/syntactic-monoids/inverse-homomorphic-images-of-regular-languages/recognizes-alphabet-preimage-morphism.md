@@ -1,6 +1,6 @@
 # The alphabet preimage morphism recognizes the alphabet preimage
 
-**The alphabet preimage morphism recognizes the alphabet preimage.** Let
+Let
 $f \colon \Sigma \to \Gamma$ be a map between alphabets and $L$ a language over $\Gamma$. Write
 $f^*(w)$ for the word obtained by applying $f$ to each letter of a word $w$, $[u]_L$ for the
 class of a word $u$ in the syntactic monoid $M(L)$ of $L$, $A_L \subseteq M(L)$ for the

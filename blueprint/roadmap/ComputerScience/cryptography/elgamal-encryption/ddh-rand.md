@@ -1,6 +1,6 @@
 # Random DDH experiment
 
-**Random DDH experiment.** Let $G$ be a finite commutative group, $g \in G$ and $q \ge 1$ a
+Let $G$ be a finite commutative group, $g \in G$ and $q \ge 1$ a
 natural number, and let $D$ be a distinguisher that maps three elements of $G$ and coins in a
 finite nonempty type $S$ to a bit. The random DDH experiment draws $x, y, z \in \mathbb{Z}/q$ and
 coins $s \in S$ independently and uniformly and outputs the distribution of the bit

@@ -1,3 +1,3 @@
 # Rademacher sign on a true coordinate is one
 
-**Rademacher sign on a true coordinate is one.** The sign is `1` on a `true` coordinate.
+The sign is `1` on a `true` coordinate.

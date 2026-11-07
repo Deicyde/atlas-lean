@@ -1,6 +1,6 @@
 # Powers of an absolutely summable sequence are absolutely summable
 
-**Powers of an absolutely summable sequence are absolutely summable.** Let $(a_j)_{j \ge 0}$
+Let $(a_j)_{j \ge 0}$
 be a sequence of complex numbers with $\sum_j |a_j| < \infty$, and let $n \ge 1$ be an integer.
 Then $\sum_j |a_j^n| < \infty$.
 

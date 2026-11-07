@@ -1,6 +1,6 @@
 # Sum of products of Tetranacci terms two and three apart
 
-**Sum of products of Tetranacci terms two and three apart.** Let
+Let
 $Q \colon \mathbb{Z} \to \mathbb{Z}$ satisfy $Q(m+4) = Q(m+3) + Q(m+2) + Q(m+1) + Q(m)$ for every
 integer $m$. Then for every natural number $n$,
 

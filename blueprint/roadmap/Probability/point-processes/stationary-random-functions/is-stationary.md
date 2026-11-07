@@ -1,6 +1,6 @@
 # Stationary random functions (Slutsky–Khinchin)
 
-**Stationary random functions (Slutsky–Khinchin).** Let $\mu$ be a measure on a measurable
+Let $\mu$ be a measure on a measurable
 space $\Omega$, and let $v$ assign to each real $t$ a function $v_t : \Omega \to \mathbb{R}$.
 Then $v$ is stationary if there are a real number $c$ and a function $R : \mathbb{R} \to \mathbb{R}$
 such that for all real $t$ and $h$, $\int v_t \, d\mu = 0$, $\int v_t^2 \, d\mu = c$ and

@@ -1,6 +1,6 @@
 # The zeroth odd harmonic number
 
-**The zeroth odd harmonic number.** The odd harmonic number $O_0$ equals $0$.
+The odd harmonic number $O_0$ equals $0$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Sheared criterion for quadratic packing polynomials
 
-**Sheared criterion for quadratic packing polynomials.** Let $m, n$ be coprime positive
+Let $m, n$ be coprime positive
 integers, let $l = \gcd(m - 1, n)$, and assume that $n/l$ divides $l$. Let $k$ be a positive
 integer with $k \equiv (m - 1)/l \pmod{n/l}$, let $F$ be a real number, and let
 $\hat P(x, y) = \frac{n}{2} x \left(x - \frac{k}{n/l}\right) + x + \frac{k}{n/l} y + F$. Let

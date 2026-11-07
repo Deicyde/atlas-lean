@@ -1,6 +1,6 @@
 # Automorphisms of P(ω)/fin on representatives
 
-**Automorphisms of P(ω)/fin on representatives.** For subsets $A$, $B$ of $\mathbb{N}$, write
+For subsets $A$, $B$ of $\mathbb{N}$, write
 $A =^{\ast} B$ when their symmetric difference is finite. A map $\Phi$ from subsets of
 $\mathbb{N}$ to subsets of $\mathbb{N}$ presents an automorphism of $P(\omega)/\mathrm{fin}$ if for
 all subsets $A$, $B$ of $\mathbb{N}$: it respects $=^{\ast}$ ($A =^{\ast} B$ implies

@@ -1,6 +1,6 @@
 # Determinants of logarithms in a split Thue family
 
-**Determinants of logarithms in a split Thue family.** Let $(d, G, \gamma, \delta)$ be a
+Let $(d, G, \gamma, \delta)$ be a
 split Thue recurrence family, let $\alpha_i(n)$ ($i, n \in \mathbb{N}$) be reals for which there
 is $N$ such that for all $n \ge N$ and $1 \le i \le d$,
 $\prod_{l=1}^{d} (\alpha_i(n) - G_l(n)) = 1$ and $|\alpha_i(n) - G_i(n)| < 1$, and let

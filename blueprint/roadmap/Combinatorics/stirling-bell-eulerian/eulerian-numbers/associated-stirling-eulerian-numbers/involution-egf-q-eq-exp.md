@@ -1,6 +1,6 @@
 # Excedance generating function of involutions
 
-**Excedance generating function of involutions.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra and $x, q \in R$. For a permutation $\sigma$ write $e(\sigma)$ for the number
 of $i$ with $\sigma(i) > i$ and $c(\sigma)$ for its number of cycles, fixed points included.
 Summing over the involutions $\sigma$ of $\{0, \dots, n-1\}$ (permutations all of whose cycles

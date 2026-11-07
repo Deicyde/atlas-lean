@@ -1,6 +1,6 @@
 # Production of the triple grammar for a transition
 
-**Production of the triple grammar for a transition.** Let $p$ and $r$ be states, $\gamma$ a
+Let $p$ and $r$ be states, $\gamma$ a
 stack symbol, $a$ an optional input letter, $\varepsilon_1 \cdots \varepsilon_k$ a list of stack
 symbols and $s_1, \dots, s_m$ a list of states. Write $s_0 = r$ and let $q = s_m$ be the last
 state of the list $s_0, s_1, \dots, s_m$ (so $q = r$ when $m = 0$). The production has

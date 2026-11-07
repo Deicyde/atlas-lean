@@ -1,6 +1,6 @@
 # Asymptotic formula for the third moment of the mean gcd-sum function
 
-**Asymptotic formula for the third moment of the mean gcd-sum function.** For $n \ge 1$ let
+For $n \ge 1$ let
 $A(n) = \frac{1}{n} \sum_{j=1}^{n} \gcd(j, n)$ be the mean gcd-sum function. There are a real
 polynomial $P$ and a real constant $C$ such that, as $x \to \infty$,
 

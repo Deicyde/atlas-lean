@@ -1,6 +1,6 @@
 # Hayman's Problem 8.11: polynomial density under domination
 
-**Hayman's Problem 8.11: polynomial density under domination.** The statement that for all
+The statement that for all
 $f$ and $g$ in the Dirichlet space $\mathcal{D}$: if the polynomial multiples $Pg$ are dense in
 $\mathcal{D}$ in the Dirichlet norm and $|g(z)| \le |f(z)|$ for all $|z| < 1$, then the
 polynomial multiples $Pf$ are also dense in $\mathcal{D}$ in the Dirichlet norm.

@@ -1,6 +1,6 @@
 # $D_4(b) D_4(c)$ modulo $16$
 
-**$D_4(b) D_4(c)$ modulo $16$.** Let
+Let
 $a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$ have sums $b_i$ and alternating sums
 $c_i$, and let $D_4$ be the $4 \times 4$ circulant determinant. If
 $b_0 + b_2 \not\equiv b_1 + b_3 \pmod 2$, then

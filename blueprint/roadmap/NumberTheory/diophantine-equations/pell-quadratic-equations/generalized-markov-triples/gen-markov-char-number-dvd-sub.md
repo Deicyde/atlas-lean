@@ -1,6 +1,6 @@
 # The characteristic number solves $m_r x \equiv m_s \pmod{m_t}$
 
-**The characteristic number solves $m_r x \equiv m_s \pmod{m_t}$.** Let $k \in \mathbb{N}$,
+Let $k \in \mathbb{N}$,
 let $w$ be a finite sequence of left and right moves, let $(r, t, s)$ be the vertex of the
 Farey tree at $w$, and let $(m_r, m_t, m_s)$ be the vertex of the $k$-generalized Markov tree
 $\mathrm{MT}(k)$ at $w$. Write $t = n/d$. If $0 < n < d$ and $u$ is a characteristic number

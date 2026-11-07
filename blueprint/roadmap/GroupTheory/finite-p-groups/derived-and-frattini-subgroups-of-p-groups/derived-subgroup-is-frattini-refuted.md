@@ -1,6 +1,6 @@
 # Derived subgroups of p-groups need not be Frattini subgroups of p-groups
 
-**Derived subgroups of p-groups need not be Frattini subgroups of p-groups.** There exist a prime
+There exist a prime
 $p$ and a finite $p$-group $G$ such that for every finite $p$-group $H$, the Frattini subgroup
 $\Phi(H)$ of $H$ is not isomorphic to the derived subgroup $[G, G]$ of $G$. That is, the conjecture
 of Kourovka Problem 16.11 is false.

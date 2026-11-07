@@ -1,6 +1,6 @@
 # Run tracking from the init obligation
 
-**Run tracking from the init obligation.** Fix an encoding $E$ of a machine $M$ with $K$
+Fix an encoding $E$ of a machine $M$ with $K$
 stacks, window depth $d$ and $N$ situations, lists $x$ and $Y$ of input symbols, natural numbers
 $m$ and $T$, and an assignment $a$, and let $H = m + (T + 1)d + 1$ be the stack cap.
 Suppose $a$ satisfies the transition clause families of the layout of $E$ with tables

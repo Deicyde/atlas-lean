@@ -1,6 +1,6 @@
 # No prime is deficient $F$-perfect
 
-**No prime is deficient $F$-perfect.** If $p$ is a prime, then $p$ is not deficient
+If $p$ is a prime, then $p$ is not deficient
 $F$-perfect.
 
 ## Sources

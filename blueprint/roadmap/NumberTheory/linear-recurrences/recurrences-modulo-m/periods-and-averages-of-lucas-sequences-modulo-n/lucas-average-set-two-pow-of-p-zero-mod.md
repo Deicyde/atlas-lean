@@ -1,6 +1,6 @@
 # Powers of two when $P \equiv 0$ and $-Q \equiv -1 \pmod 4$
 
-**Powers of two when $P \equiv 0$ and $-Q \equiv -1 \pmod 4$.** Let $P$ and $Q \ne 0$ be
+Let $P$ and $Q \ne 0$ be
 integers forming a nondegenerate Lucas pair with $P \equiv 0 \pmod 4$ and $-Q \equiv -1 \pmod 4$,
 and let $U$ be the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and
 $U_{k+2} = P U_{k+1} - Q U_k$. Let $S(U)$ be the set of positive integers $n$ coprime to $Q$ such

@@ -1,6 +1,6 @@
 # $\mathrm{QSAT}_k$ is $\Sigma_k^p$-complete, uniformly in $k$
 
-**$\mathrm{QSAT}_k$ is $\Sigma_k^p$-complete, uniformly in $k$.** For every natural number
+For every natural number
 $k \ge 1$, the decision problem $\mathrm{QSAT}_k$ lies in $\Sigma_k^p$, and every decision problem
 $L$ in $\Sigma_k^p$ reduces to $\mathrm{QSAT}_k$ by a polynomial-time many-one reduction.
 

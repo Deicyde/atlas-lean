@@ -1,6 +1,6 @@
 # Generating function of the $b$-ary binomial coefficients
 
-**Generating function of the $b$-ary binomial coefficients.** Let $R$ be a commutative semiring,
+Let $R$ be a commutative semiring,
 let $x \in R$, let $b \ge 2$, and write $\binom{n}{k}_b$ for the $b$-ary binomial coefficient of
 natural numbers $n$ and $k$. Let $n$ have base-$b$ digits $n_0, \dots, n_{m-1}$, where $m$ is
 the number of base-$b$ digits of $n$ ($m = 0$ for $n = 0$). Then

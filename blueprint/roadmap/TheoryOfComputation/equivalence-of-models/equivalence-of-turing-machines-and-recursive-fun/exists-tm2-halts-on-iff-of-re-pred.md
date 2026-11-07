@@ -1,6 +1,6 @@
 # Every r.e. predicate is the halting set of a multi-stack machine
 
-**Every r.e. predicate is the halting set of a multi-stack machine.** For every recursively
+For every recursively
 enumerable predicate $p$ on $\mathbb{N}$ there are a bundled finite multi-stack Turing machine
 and an identification of its input alphabet with the booleans such that, for every
 $n \in \mathbb{N}$, $p(n)$ holds if and only if the machine halts on the binary digits of $n$

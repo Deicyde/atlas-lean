@@ -1,6 +1,6 @@
 # MA is contained in PH
 
-**MA is contained in PH.** Every decision problem in the class $\mathsf{MA}$ is in the
+Every decision problem in the class $\mathsf{MA}$ is in the
 polynomial hierarchy $\mathsf{PH}$.
 
 ## Sources

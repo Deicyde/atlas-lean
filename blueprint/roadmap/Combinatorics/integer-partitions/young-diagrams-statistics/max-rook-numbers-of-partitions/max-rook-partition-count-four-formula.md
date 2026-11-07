@@ -1,6 +1,6 @@
 # Quasi-polynomial formula for partitions with max-rook number 4
 
-**Quasi-polynomial formula for partitions with max-rook number 4.** Let $R_4(n)$ be the number
+Let $R_4(n)$ be the number
 of partitions of $n$ with max-rook number $4$. For all natural numbers $m$ and $a$ with
 $0 \le a \le 11$ and $12m + a > 16$,
 

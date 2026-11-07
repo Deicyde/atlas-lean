@@ -1,6 +1,6 @@
 # Mertens' theorem in arithmetic progressions
 
-**Mertens' theorem in arithmetic progressions.** Let $q \ge 1$ be an integer, let $b$ be a
+Let $q \ge 1$ be an integer, let $b$ be a
 unit of $\mathbb{Z}/q\mathbb{Z}$, let $\Lambda$ be the von Mangoldt function and let $\varphi$ be
 Euler's totient function. There is a real constant $C$ such that for every real $x \ge 1$,
 

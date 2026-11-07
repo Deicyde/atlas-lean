@@ -1,6 +1,6 @@
 # Squared Fibonacci numbers as weighted sums of squares
 
-**Squared Fibonacci numbers as weighted sums of squares.** Let $F_k$ denote the Fibonacci
+Let $F_k$ denote the Fibonacci
 numbers ($F_0 = 0$, $F_1 = 1$) and let $\xi(m) = m \bmod 2$. For every natural number $n \ge 1$,
 
 $$

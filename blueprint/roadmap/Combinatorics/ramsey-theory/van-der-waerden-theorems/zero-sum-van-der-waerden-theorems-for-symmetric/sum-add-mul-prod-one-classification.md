@@ -1,6 +1,6 @@
 # Classification of vanishing for the sum-plus-product family $F_1$
 
-**Classification of vanishing for the sum-plus-product family $F_1$.** Let $n > 1$ and let
+Let $n > 1$ and let
 $F_1$ be the family over $\mathbb{Z}/n$ given by
 $F_1(b_1, \dots, b_l) = b_1 + \dots + b_l + b_1 \cdots b_l$. If $n \notin \{2, 3, 4, 6, 8\}$,
 then $F_1$ is not $m$-vanishing for any $m > 0$. If $n \in \{2, 3, 4, 8\}$, then $F_1$ is

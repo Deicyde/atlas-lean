@@ -1,6 +1,6 @@
 # Weight of a label path in a chain CRF
 
-**Weight of a label path in a chain CRF.** For a chain conditional random field with weights
+For a chain conditional random field with weights
 in a semiring, unary potentials $u_t(s)$ and transition potentials $\tau_t(s, s')$ given the
 observation stream $x$, the unnormalized weight of a label path $z = (z_0, \dots, z_t)$ is
 

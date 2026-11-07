@@ -1,6 +1,6 @@
 # Infinitely many Riesel repdigits in every base $b > 509203$
 
-**Infinitely many Riesel repdigits in every base $b > 509203$.** Let $b > 509203$ be a
+Let $b > 509203$ be a
 natural number. Then there are infinitely many Riesel numbers of the form $k(b^t - 1)/(b - 1)$ with
 $1 \le k < b$ and $t \ge 1$, that is, $b$-repdigits: the digit $k$ written $t$ times in base $b$.
 

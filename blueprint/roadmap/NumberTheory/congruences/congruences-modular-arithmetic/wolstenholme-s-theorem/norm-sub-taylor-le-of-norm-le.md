@@ -1,6 +1,6 @@
 # Higher $p$-adic mean value theorem
 
-**Higher $p$-adic mean value theorem.** Let $p$ be a prime, let $|\cdot|$ be the $p$-adic
+Let $p$ be a prime, let $|\cdot|$ be the $p$-adic
 absolute value on $\mathbb{Q}_p$, and let $B$ be a normed vector space over $\mathbb{Q}_p$ whose
 norm is ultrametric. Let $N$ and $m$ be natural numbers with $1 \le m \le p$, let
 $f(t) = \sum_{j\lt N} a_j t^j$ be a polynomial with coefficients $a_j \in B$, and let

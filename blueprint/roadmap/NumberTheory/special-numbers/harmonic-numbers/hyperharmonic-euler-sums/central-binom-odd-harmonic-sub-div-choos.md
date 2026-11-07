@@ -1,6 +1,6 @@
 # Odd harmonic central binomial sum over $\binom{n+m}{m} (n + 1/2)^2$
 
-**Odd harmonic central binomial sum over $\binom{n+m}{m} (n + 1/2)^2$.** Let $m \ge 1$ be an
+Let $m \ge 1$ be an
 integer and write $O_j = O_j(1) = \sum_{i=1}^{j} 1/(i - 1/2)$ for the depth-one odd harmonic
 number. Then
 

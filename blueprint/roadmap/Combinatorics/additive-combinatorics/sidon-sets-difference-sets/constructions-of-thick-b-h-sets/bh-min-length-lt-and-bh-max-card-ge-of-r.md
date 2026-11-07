@@ -1,6 +1,6 @@
 # Riemann Hypothesis bounds for $R_h^{-1}(k)$, $k \ge 4$, and $R_h(n)$, $n \ge h + 3$
 
-**Riemann Hypothesis bounds for $R_h^{-1}(k)$, $k \ge 4$, and $R_h(n)$, $n \ge h + 3$.** Assume
+Assume
 the Riemann Hypothesis and let $h \ge 2$. Write $R_h(n)$ for the largest size of a $B_h$-set
 contained in $\{1, \dots, n\}$ and $R_h^{-1}(k)$ for the least $n$ such that $\{1, \dots, n\}$
 contains a $B_h$-set with $k$ elements, and let $\log$ be the natural logarithm. Then every

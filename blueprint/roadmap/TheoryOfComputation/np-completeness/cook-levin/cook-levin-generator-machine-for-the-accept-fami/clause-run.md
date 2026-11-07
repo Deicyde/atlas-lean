@@ -1,6 +1,6 @@
 # One clause of the accept generator
 
-**One clause of the accept generator.** Let $L$ be a layout with $g$ symbol codes, let
+Let $L$ be a layout with $g$ symbol codes, let
 $n_1, a, k_1, e, V \in \mathbb{N}$, and let $c$ be a clause kind of the accept generator (a code
 clause $u < n_1$ or a cell clause $x < g$) with base counter $b(c)$, offset $\mathrm{off}(c)$ and
 polarity $\sigma(c)$ for $a$ and $e$. Let $F$ be counter values of the generator whose scratch

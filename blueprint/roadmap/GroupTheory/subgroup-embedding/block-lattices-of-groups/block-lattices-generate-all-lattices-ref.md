@@ -1,6 +1,6 @@
 # Smirnov's negative answer to Kourovka Problem 11.93
 
-**Smirnov's negative answer to Kourovka Problem 11.93.** The block lattices of finite groups do
+The block lattices of finite groups do
 not generate the variety of all lattices: there are lattice terms $p$ and $q$ such that $p$ and $q$
 take the same value in the block lattice of every finite group $G$ under every assignment of blocks
 of $G$ to the variables, but take different values in some lattice $L$ under some assignment of

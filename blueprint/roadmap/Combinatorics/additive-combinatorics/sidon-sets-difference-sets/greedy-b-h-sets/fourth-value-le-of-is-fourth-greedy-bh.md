@@ -1,6 +1,6 @@
 # Lower bound for the fourth greedy $B_h$ term
 
-**Lower bound for the fourth greedy $B_h$ term.** Let $h$ and $a$ be natural numbers with
+Let $h$ and $a$ be natural numbers with
 $h \ge 2$. If $a$ is the fourth positive element $a_4(h)$ of the greedy $B_h$-set, then
 $a \ge v(h)$, where $v(h) = (h^3 + 3h^2 + 3h + 1)/2$ if $h$ is odd and
 $v(h) = (h^3 + 2h^2 + 3h + 2)/2$ if $h$ is even.

@@ -1,6 +1,6 @@
 # Complementary moment recurrence
 
-**Complementary moment recurrence.** Let $b$ and $d$ be natural numbers, let $d' = b - 1 - d$
+Let $b$ and $d$ be natural numbers, let $d' = b - 1 - d$
 (natural-number subtraction), and let $\gamma'_i$ be the complementary digit power sum for $b$ and
 $d$. A family $(v_{j,m})_{j, m \ge 0}$ of real numbers satisfies the complementary moment
 recurrence when, for every $m \ge 0$,

@@ -1,6 +1,6 @@
 # Strong traces are weak traces
 
-**Strong traces are weak traces.** Let $L$ be a labelled transition system with a silent
+Let $L$ be a labelled transition system with a silent
 label $\tau$. A weak $\tau$-transition is a sequence of zero or more $\tau$-steps, and for
 $\mu \ne \tau$ a weak $\mu$-transition is zero or more $\tau$-steps, one $\mu$-step and zero or
 more $\tau$-steps; the saturation of $L$ is the system on the same states whose

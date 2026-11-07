@@ -1,6 +1,6 @@
 # $F_1$ modulo $9u$ with $u > 0$ is not $m$-vanishing for $m > 0$
 
-**$F_1$ modulo $9u$ with $u > 0$ is not $m$-vanishing for $m > 0$.** Let $u > 0$ be a natural
+Let $u > 0$ be a natural
 number and $n = 9u$. Then for every $m > 0$ the sum-plus-product family $F_1$ over $\mathbb{Z}/n$,
 $F_1(b_1, \dots, b_l) = b_1 + \dots + b_l + b_1 \cdots b_l$, is not $m$-vanishing.
 

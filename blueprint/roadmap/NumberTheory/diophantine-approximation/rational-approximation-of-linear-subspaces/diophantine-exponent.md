@@ -1,6 +1,6 @@
 # Diophantine exponent
 
-**Diophantine exponent.** Let $x$ be a subspace of $\mathbb{R}^d$ and let $k$ be a natural
+Let $x$ be a subspace of $\mathbb{R}^d$ and let $k$ be a natural
 number. For subspaces $v$ of $\mathbb{R}^d$ write $\operatorname{dist}(v, x)$ for the distance
 between the subspaces $v$ and $x$, and for a rational subspace $v$ write $H(v)$ for its height.
 The diophantine exponent $\beta_k(x)$ of $x$ for approximation by $k$-dimensional rational

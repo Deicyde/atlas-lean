@@ -1,6 +1,6 @@
 # Recursion for the Taylor coefficients of the generalized Buchstab function
 
-**Recursion for the Taylor coefficients of the generalized Buchstab function.** Let $K > 0$,
+Let $K > 0$,
 let $\Omega$ be a real function with $\Omega(x) = 1$ for $1 \le x < 2$ and
 $\Omega(x) = 1 + K \int_2^x \frac{\Omega(u-1)}{u-1}\,du$ for $x \ge 2$, and let $c_{n,i}$
 ($n, i \ge 0$) be real numbers such that for every integer $n \ge 1$ and every real $z$ with

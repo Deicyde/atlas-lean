@@ -1,6 +1,6 @@
 # Binet formula for 1-metered parking functions
 
-**Binet formula for 1-metered parking functions.** Let $m, n$ be natural numbers with
+Let $m, n$ be natural numbers with
 $m \le n + 1$ and $n > 2$. Then the number $\mathrm{mpf}_{m,n}(1)$ of $1$-metered
 $(m, n)$-parking functions satisfies, as real numbers,
 

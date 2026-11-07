@@ -1,6 +1,6 @@
 # Weighted convolution sum
 
-**Weighted convolution sum.** Let $F$ be a field, let $\gamma, \alpha, \beta$ be functions from
+Let $F$ be a field, let $\gamma, \alpha, \beta$ be functions from
 $F[T]$ to $\mathbb{C}$, and write $\alpha * \beta$ for the monic Dirichlet convolution of $\alpha$
 and $\beta$. For a natural number $n$, let $M_{\le n}$ be the set of monic polynomials in $F[T]$ of
 degree at most $n$. The weighted convolution sum is

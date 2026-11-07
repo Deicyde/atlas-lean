@@ -1,6 +1,6 @@
 # The residue-field isomorphism intertwines multiplication
 
-**The residue-field isomorphism intertwines multiplication.** Let $R$ be a discrete valuation
+Let $R$ be a discrete valuation
 ring with maximal ideal $\mathfrak{m}$ and residue field $\kappa = R/\mathfrak{m}$, let
 $i \in \mathbb{N}$, and let $e : \kappa \to \mathfrak{m}^i/\mathfrak{m}^{i+1}$ be the
 $\kappa$-linear isomorphism of the residue field with the graded piece. Let $K$ be a field, with

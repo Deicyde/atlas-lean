@@ -1,6 +1,6 @@
 # Twelfth moment of the Riemann zeta function on the line of real part 5/7
 
-**Twelfth moment of the Riemann zeta function on the line of real part 5/7.** For every
+For every
 $\varepsilon > 0$ there is a constant $C$ such that for every real $T \ge 1$,
 
 $$\int_0^T |\zeta(5/7 + it)|^{12} \, dt \le C T^{1+\varepsilon}.$$

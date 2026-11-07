@@ -1,6 +1,6 @@
 # Constituent coefficient for no bishops
 
-**Constituent coefficient for no bishops.** For every complex number $z$, the constituent
+For every complex number $z$, the constituent
 coefficient $c_{0,0}(z)$ of the bishop quasi-polynomials (the case $k = d = 0$) equals $1$.
 
 ## Sources

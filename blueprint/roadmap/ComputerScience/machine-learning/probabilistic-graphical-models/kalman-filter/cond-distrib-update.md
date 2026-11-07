@@ -1,6 +1,6 @@
 # The update step is the exact posterior
 
-**The update step is the exact posterior.** Let $x$ be a measurable random vector in
+Let $x$ be a measurable random vector in
 $\mathbb{R}^n$ and $v$ a measurable random vector in $\mathbb{R}^p$ on a probability space, with
 $x$ independent of $v$. Suppose $x$ has the law $N(m, P)$ of a belief with mean $m$ and positive
 semidefinite covariance $P$, and $v$ has law $N(0, R)$ with $R$ positive semidefinite. Let $H$ be

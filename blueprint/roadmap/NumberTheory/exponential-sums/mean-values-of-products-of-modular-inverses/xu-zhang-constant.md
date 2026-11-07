@@ -1,6 +1,6 @@
 # Xu–Zhang constant
 
-**Xu–Zhang constant.** For a natural number $q$, the Xu–Zhang constant $C_q$ is the product
+For a natural number $q$, the Xu–Zhang constant $C_q$ is the product
 over the prime factors $p$ of $q$, with $p^\alpha$ the exact power of $p$ dividing $q$,
 
 $$C_q = \prod_{p^\alpha \parallel q} \left(1 + \frac{2p^3 + p^2 - 1}{(p^2 + 1)(p^2 + p + 1)} -

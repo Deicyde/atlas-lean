@@ -1,6 +1,6 @@
 # Probability of a Fisher–Yates outcome
 
-**Probability of a Fisher–Yates outcome.** Let $x$ be a vector of length $n$, and consider the
+Let $x$ be a vector of length $n$, and consider the
 draw histories $d$, which assign to each position $i < n$ a number $d_i$ with $0 \le d_i < n - i$.
 For every outcome $o$ (a vector of length $n$ together with a cost pair), the probability that
 the Fisher–Yates output distribution of $x$ assigns to $o$ equals the sum, over all draw histories

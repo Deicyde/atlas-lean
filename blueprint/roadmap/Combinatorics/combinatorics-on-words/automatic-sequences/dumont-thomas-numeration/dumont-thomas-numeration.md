@@ -1,6 +1,6 @@
 # Dumont–Thomas numeration
 
-**Dumont–Thomas numeration.** Let $\eta$ be a substitution on an alphabet $A$, extended
+Let $\eta$ be a substitution on an alphabet $A$, extended
 to finite words by concatenation, and let $u_0 u_1 u_2 \cdots$ be a right-infinite word over
 $A$ that is a fixed point of $\eta$ in the sense that $\eta(u_0 \cdots u_{n-1})$ is a prefix of
 $u_0 u_1 u_2 \cdots$ for every $n$. Suppose that $a = u_0$ is a growing letter, i.e.

@@ -1,6 +1,6 @@
 # Kadane's scan
 
-**Kadane's scan.** Given accumulators $e, b$ in an additive monoid $\alpha$ with a linear
+Given accumulators $e, b$ in an additive monoid $\alpha$ with a linear
 order, the scan over the empty list returns $b$ at cost $0$. Over a list with first element $x$
 and remaining elements $L$, it sets $e' = \max(x, e + x)$ and returns the result of the scan of
 $L$ from the accumulators $e'$ and $\max(b, e')$, at cost $3$ plus the cost of that scan.

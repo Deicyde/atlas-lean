@@ -1,6 +1,6 @@
 # Alternating polynomial identity in $1 - x$ with weights $2^k/(k+1)$
 
-**Alternating polynomial identity in $1 - x$ with weights $2^k/(k+1)$.** For every natural
+For every natural
 number $n$ and every complex number $x$,
 
 $$

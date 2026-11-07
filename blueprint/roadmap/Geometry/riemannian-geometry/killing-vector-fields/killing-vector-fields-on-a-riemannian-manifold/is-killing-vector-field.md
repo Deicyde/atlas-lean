@@ -1,6 +1,6 @@
 # Killing vector field
 
-**Killing vector field.** Let $M$ be a finite-dimensional smooth manifold, possibly with
+Let $M$ be a finite-dimensional smooth manifold, possibly with
 boundary or corners, with a smooth Riemannian metric $g = \langle \cdot, \cdot \rangle$ and its
 Levi-Civita connection $\nabla$. A vector field $X$ on $M$ is a Killing vector field if $X$ is
 smooth and satisfies Killing's equation: for every point $x \in M$ and all tangent vectors

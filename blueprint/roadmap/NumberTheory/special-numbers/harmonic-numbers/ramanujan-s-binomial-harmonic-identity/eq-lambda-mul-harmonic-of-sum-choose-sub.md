@@ -1,6 +1,6 @@
 # Uniqueness of the harmonic solution of the diagonal Ramanujan identity
 
-**Uniqueness of the harmonic solution of the diagonal Ramanujan identity.** Let
+Let
 $K : \mathbb{N} \to \mathbb{C}$ be a sequence such that for every integer $n \ge 2$
 
 $$

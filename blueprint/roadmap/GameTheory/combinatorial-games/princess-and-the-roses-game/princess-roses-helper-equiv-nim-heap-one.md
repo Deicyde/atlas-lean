@@ -1,6 +1,6 @@
 # P&R Helper positions of Sprague–Grundy value 1 on regions U and R
 
-**P&R Helper positions of Sprague–Grundy value 1 on regions U and R.** For natural numbers
+For natural numbers
 $x \le y \le z$ with $z < x + y$ (the union of the regions $U$ and $R$), the P&R Helper game
 started at $[x, y, z]$ is equivalent to the Nim heap of size $1$ (that is, has Sprague–Grundy
 value $1$) if and only if one of the following holds: $(x, y, z) = (1, 1, 1)$; or $y = x$,

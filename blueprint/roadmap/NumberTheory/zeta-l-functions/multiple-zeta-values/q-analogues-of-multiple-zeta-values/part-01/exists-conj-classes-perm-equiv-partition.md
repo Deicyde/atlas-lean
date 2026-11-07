@@ -1,6 +1,6 @@
 # Cycle type classifies conjugacy classes of permutations
 
-**Cycle type classifies conjugacy classes of permutations.** For every natural number $n$,
+For every natural number $n$,
 there is a bijection from the set of conjugacy classes of the symmetric group $S_n$ to the set
 of partitions of $n$ that sends the class of each permutation $\sigma$ to the cycle type of
 $\sigma$: the partition of $n$ formed by the lengths of the cycles of $\sigma$, fixed points

@@ -1,6 +1,6 @@
 # Pulling a store fact out of a separating conjunction
 
-**Pulling a store fact out of a separating conjunction.** Let $p$ be a predicate on
+Let $p$ be a predicate on
 stores and $P$, $R$ heap assertions. Write $A \star B$ for the separating conjunction of heap
 assertions $A$ and $B$ (the heap splits into two disjoint parts satisfying $A$ and $B$,
 respectively, at the same store), and $p \land P$ for the heap assertion that holds at store

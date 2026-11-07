@@ -1,6 +1,6 @@
 # Gibonacci subsequences $G_{2n+m}$ as composition sums
 
-**Gibonacci subsequences $G_{2n+m}$ as composition sums.** Let $y$ and $z$ be non-negative
+Let $y$ and $z$ be non-negative
 integers, not both zero, and let $(G_k)$ be the Gibonacci sequence with $G_0 = y$ and $G_1 = z$.
 Let $m \ge 0$ and $n \ge 1$, and let $F$ be a complex number with
 $F^2 = (-1)^{m+1} (y^2 + yz - z^2)$ such that $m \ge 4$ or $F \ne G_m$. Then

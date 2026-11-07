@@ -1,6 +1,6 @@
 # Generating function of the total symmetric peak height over compositions
 
-**Generating function of the total symmetric peak height over compositions.** For
+For
 $n \ge 0$ let $\mathrm{hsp}(n)$ be the sum, over all compositions $c$ of $n$, of the symmetric
 peak height sum of the sequence of parts of $c$. Then in $\mathbb{Z}[[x]]$
 

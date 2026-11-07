@@ -1,6 +1,6 @@
 # Constant extension preserves the NS property
 
-**Constant extension preserves the NS property.** Let $z \in \mathbb{N}$ and let
+Let $z \in \mathbb{N}$ and let
 $h : \mathbb{N} \to \mathbb{N}$ satisfy $h(a) \le h(b)$ whenever $a \le b \le z$, and
 $\lfloor h(a) / 2^{i-1} \rfloor = \lfloor h(b) / 2^{i-1} \rfloor$ whenever $a, b \le z$,
 $i \ge 1$ and $\lfloor a / 2^i \rfloor = \lfloor b / 2^i \rfloor$. Then the function sending

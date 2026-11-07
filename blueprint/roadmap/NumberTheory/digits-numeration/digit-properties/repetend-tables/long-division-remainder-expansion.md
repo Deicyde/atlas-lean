@@ -1,6 +1,6 @@
 # Long division of a proper fraction
 
-**Long division of a proper fraction.** Let $m < n$ be natural numbers and $b \ge 1$. For
+Let $m < n$ be natural numbers and $b \ge 1$. For
 $j \ge 0$ let $c_j = m b^j \bmod n$ (the remainders of the long division of $m/n$ in base $b$) and
 $r_j = \lfloor b c_j / n \rfloor$ (its digits). Then for every $k \ge 0$
 

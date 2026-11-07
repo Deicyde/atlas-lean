@@ -1,6 +1,6 @@
 # Mazur's Problem 8 has a negative answer
 
-**Mazur's Problem 8 has a negative answer.** There is a convergent sequence
+There is a convergent sequence
 $(z_n)_{n \ge 0}$ of real numbers that cannot be written as
 $z_n = \frac{1}{n+1} \sum_{k=0}^{n} x_k y_{n-k}$ for all $n \ge 0$ with convergent sequences
 $(x_n)_{n \ge 0}$ and $(y_n)_{n \ge 0}$ of real numbers. That is, the claim of Scottish Book

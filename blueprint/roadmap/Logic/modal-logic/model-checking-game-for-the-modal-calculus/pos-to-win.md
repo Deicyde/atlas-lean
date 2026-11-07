@@ -1,6 +1,6 @@
 # Moves to the winning state come from terminal winning positions
 
-**Moves to the winning state come from terminal winning positions.** Let $M$ be a Kripke
+Let $M$ be a Kripke
 model, $\mathrm{env}$ an environment, $\varphi$ a fixpoint-free formula and $w$ a world. If the
 totalized fragment game has a move from the embedded position $(\varphi, w)$ to the absorbing
 winning state, then the game position $(\varphi, w, [])$, with $\varphi$ viewed as a μ-calculus

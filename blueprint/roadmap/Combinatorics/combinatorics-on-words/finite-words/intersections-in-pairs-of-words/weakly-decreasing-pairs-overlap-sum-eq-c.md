@@ -1,6 +1,6 @@
 # Overlap statistic on pairs of weakly decreasing words
 
-**Overlap statistic on pairs of weakly decreasing words.** Fix natural numbers $k$, $n \ge 1$,
+Fix natural numbers $k$, $n \ge 1$,
 $r \ge 1$ and a rational number $q$, and order an alphabet of $k$ letters. For words $u$ and $v$
 over this alphabet, the overlap of $(u, v)$ is the number of positions of $v$ whose letter occurs
 in $u$. Write $[x^m] F$ for the coefficient of $x^m$ in a formal power series $F$ over

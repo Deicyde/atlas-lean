@@ -1,6 +1,6 @@
 # Néron–Ogg–Shafarevich criterion, easy direction
 
-**Néron–Ogg–Shafarevich criterion, easy direction.** Let $R$ be a discrete valuation ring
+Let $R$ be a discrete valuation ring
 with fraction field $k$, and let $E$ be an elliptic curve over $k$ given by a Weierstrass
 equation with good reduction at $R$. Let $n$ be a natural number whose image in the residue
 field of $R$ is nonzero, let $k^{\mathrm{sep}}$ be a separable closure of $k$, and let

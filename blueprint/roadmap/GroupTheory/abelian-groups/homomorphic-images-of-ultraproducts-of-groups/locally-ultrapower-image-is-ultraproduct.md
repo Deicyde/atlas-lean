@@ -1,6 +1,6 @@
 # Bergman's question on images of countable ultraproducts (Kourovka 21.12)
 
-**Bergman's question on images of countable ultraproducts (Kourovka 21.12).** There is a
+There is a
 nonprincipal ultrafilter $U$ on $\mathbb{N}$ such that every group $B$ that is locally an image of
 the ultrapower $\mathbb{Z}^{\mathbb{N}}/U$ (every element of $B$ lies in a subgroup of $B$ that is
 a homomorphic image of $\mathbb{Z}^{\mathbb{N}}/U$) is a homomorphic image of an ultraproduct

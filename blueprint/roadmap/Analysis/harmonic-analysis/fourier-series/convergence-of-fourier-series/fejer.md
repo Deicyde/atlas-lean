@@ -1,6 +1,6 @@
 # Fejér's theorem
 
-**Fejér's theorem.** Let $f \colon \mathbb{R} \to \mathbb{C}$ be continuous and
+Let $f \colon \mathbb{R} \to \mathbb{C}$ be continuous and
 $2\pi$-periodic, and write $S_k(f)$ for the $k$-th symmetric Fourier partial sum of $f$. Then the
 Cesàro means $\sigma_N(f) = (S_0(f) + S_1(f) + \dots + S_N(f)) / (N + 1)$ converge to $f$
 uniformly on $\mathbb{R}$ as $N \to \infty$.

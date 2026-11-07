@@ -1,6 +1,6 @@
 # A quadratic equation in the companion Lucas sequence
 
-**A quadratic equation in the companion Lucas sequence.** Let $x$ be a positive integer,
+Let $x$ be a positive integer,
 let $(V_n)$ be the companion Lucas sequence with parameters $(x, -1)$, given by $V_0 = 2$,
 $V_1 = x$ and $V_{n+2} = x V_{n+1} + V_n$, and let $D = x^2 + 4$. Let $p, q, k$ be natural numbers
 with $p$ odd and $q, k$ positive. If

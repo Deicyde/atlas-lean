@@ -1,6 +1,6 @@
 # Scaling bound for the $g$-difference basis number
 
-**Scaling bound for the $g$-difference basis number.** For natural numbers $g$ and $m$, let
+For natural numbers $g$ and $m$, let
 $\eta_g(m)$ be the least size of a finite set $A \subseteq \mathbb{Z}$ such that every
 $x \in \{1, \dots, m\}$ is the difference $a - a'$ of at least $g$ ordered pairs
 $(a, a') \in A \times A$. If $q$ is a prime and $n$ and $v$ are natural numbers with

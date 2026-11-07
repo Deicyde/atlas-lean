@@ -1,6 +1,6 @@
 # Extended Stirling formula for bishops on a square board
 
-**Extended Stirling formula for bishops on a square board.** For all natural numbers $m$ and
+For all natural numbers $m$ and
 $k$, the number $B_S(m, k)$ of placements of $k$ nonattacking bishops on the $m \times m$ board
 satisfies
 

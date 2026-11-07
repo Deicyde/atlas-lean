@@ -1,6 +1,6 @@
 # The fifth Schur number
 
-**The fifth Schur number.** The Schur number $S(5)$ equals $160$.
+The Schur number $S(5)$ equals $160$.
 
 ## Sources
 

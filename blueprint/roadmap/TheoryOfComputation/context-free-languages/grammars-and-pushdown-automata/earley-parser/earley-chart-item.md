@@ -1,6 +1,6 @@
 # Earley chart as a predicate on items
 
-**Earley chart as a predicate on items.** The chart as a predicate on `EarleyItem`s.
+The chart as a predicate on `EarleyItem`s.
 
 ## Sources
 

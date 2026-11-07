@@ -1,6 +1,6 @@
 # Dirichlet–Jordan theorem on pointwise convergence of Fourier series
 
-**Dirichlet–Jordan theorem on pointwise convergence of Fourier series.** Let
+Let
 $f : \mathbb{R} \to \mathbb{C}$ be $2\pi$-periodic and of bounded variation on $[-\pi, \pi]$,
 and for $n \in \mathbb{Z}$ let $c_n = \frac{1}{2\pi} \int_0^{2\pi} f(t) e^{-int}\,dt$ be its
 Fourier coefficients. Then at every $x \in \mathbb{R}$ the one-sided limits

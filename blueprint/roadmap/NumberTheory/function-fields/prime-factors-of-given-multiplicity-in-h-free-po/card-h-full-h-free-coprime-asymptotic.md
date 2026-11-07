@@ -1,6 +1,6 @@
 # Counting $h$-full, $\ell$-free polynomials coprime to an irreducible
 
-**Counting $h$-full, $\ell$-free polynomials coprime to an irreducible.** Let $F$ be a finite
+Let $F$ be a finite
 field with $q$ elements, let $h$ and $\ell$ be natural numbers with $0 < h < \ell$, let
 $\xi \in \mathbb{C}$ be a primitive $h$-th root of unity, let $P_0$ be a monic irreducible
 polynomial over $F$ and let $\varepsilon > 0$. A monic polynomial $f$ over $F$ is $h$-full if

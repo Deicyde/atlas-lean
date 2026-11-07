@@ -1,6 +1,6 @@
 # Lower bound for the maximal twisted complete exponential sum
 
-**Lower bound for the maximal twisted complete exponential sum.** Let $p$ be a prime, let $f$
+Let $p$ be a prime, let $f$
 be a polynomial with integer coefficients, and write $e_p(t) = e^{2\pi i t / p}$ for integers $t$.
 Then
 

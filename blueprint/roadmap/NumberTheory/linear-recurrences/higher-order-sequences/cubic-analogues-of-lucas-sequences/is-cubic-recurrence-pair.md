@@ -1,6 +1,6 @@
 # Cubic recurrence pair
 
-**Cubic recurrence pair.** Integer sequences $U$ and $W$ form a cubic recurrence pair for
+Integer sequences $U$ and $W$ form a cubic recurrence pair for
 integers $S_1, S_2, R$ when there are pairwise distinct complex numbers $\gamma_1, \gamma_2,
 \gamma_3$, each different from $1$, with $\gamma_1\gamma_2\gamma_3 = 1$, such that each
 $\gamma_i$ satisfies the cubic recurrence root condition for $(S_1, S_2, R)$, $U_0 = 0$,

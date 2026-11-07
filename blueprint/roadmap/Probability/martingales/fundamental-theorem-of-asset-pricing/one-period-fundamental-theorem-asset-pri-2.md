@@ -1,6 +1,6 @@
 # One-period fundamental theorem of asset pricing
 
-**One-period fundamental theorem of asset pricing.** Let $\Omega$ be a nonempty finite set of
+Let $\Omega$ be a nonempty finite set of
 states and $A$ a finite set of assets, and let $g(a, \omega) \in \mathbb{R}$ be the gain of
 asset $a$ in state $\omega$. Call a portfolio $h \colon A \to \mathbb{R}$ an arbitrage if its
 gain $\sum_{a \in A} h(a)\, g(a, \omega)$ is nonnegative in every state $\omega$ and positive

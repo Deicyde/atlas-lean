@@ -1,6 +1,6 @@
 # Power recursion lemma for nonzero integer exponents
 
-**Power recursion lemma for nonzero integer exponents.** Let $K$ be a field of characteristic
+Let $K$ be a field of characteristic
 zero, let $A$ be an invertible formal power series in $K[[X]]$, and let $u$ and $v$ be nonzero
 integers. Write $a_u(k)$ and $a_v(k)$ for the coefficients of $X^k$ in $A^u$ and $A^v$. Then for
 every natural number $n$,

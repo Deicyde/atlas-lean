@@ -1,6 +1,6 @@
 # Admissible lucky sets with two elements
 
-**Admissible lucky sets with two elements.** Let $n$, $h$ and $i$ be natural numbers with
+Let $n$, $h$ and $i$ be natural numbers with
 $h < i \le 2n$. The set $\{h, i\}$ is an $n$-admissible lucky set if and only if $h = 1$ and
 either $i > n$ and $i$ is odd, or $i \le n$.
 

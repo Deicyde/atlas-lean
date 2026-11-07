@@ -1,6 +1,6 @@
 # A series in even powers of $\sin x$ involving $\zeta(3)$
 
-**A series in even powers of $\sin x$ involving $\zeta(3)$.** Let $x$ be a real number with
+Let $x$ be a real number with
 $|x| \le \pi/2$, let $M(x) = \frac{x^2}{2} \log|2\sin x|$ for $x \ne 0$ and $M(0) = 0$, and let
 $\zeta(3) = \sum_{k=1}^{\infty} k^{-3}$. Then $|2\sin x| > 0$ if $x \ne 0$, the series
 $\sum_{k=1}^{\infty} k^{-3}$,

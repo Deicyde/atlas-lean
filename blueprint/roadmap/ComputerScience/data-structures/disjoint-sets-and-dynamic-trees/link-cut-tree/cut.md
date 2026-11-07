@@ -1,6 +1,6 @@
 # Cutting off the subtree at a vertex
 
-**Cutting off the subtree at a vertex.** Cutting at a vertex $x$ resets the preferred edges
+Cutting at a vertex $x$ resets the preferred edges
 of the state to the empty list and changes its forest as follows. If no tree of the forest
 contains $x$, the forest is unchanged. Otherwise let $T$ be the first tree containing $x$ and
 $S$ the first subtree of $T$ rooted at $x$ in preorder. Every tree containing $x$ is removed from

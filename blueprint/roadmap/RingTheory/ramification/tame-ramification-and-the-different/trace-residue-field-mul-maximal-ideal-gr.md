@@ -1,6 +1,6 @@
 # Trace of multiplication on a graded piece
 
-**Trace of multiplication on a graded piece.** Let $R$ be a discrete valuation ring with
+Let $R$ be a discrete valuation ring with
 maximal ideal $\mathfrak{m}$ and residue field $\kappa = R/\mathfrak{m}$, let $i \in \mathbb{N}$,
 and let $K$ be a field, with a $K$-algebra structure on $\kappa$ and a $K$-module structure on
 $\mathfrak{m}^i/\mathfrak{m}^{i+1}$ such that $(c b) x = c (b x)$ for all $c \in K$,

@@ -1,6 +1,6 @@
 # The maximal $L$-block $\theta^{m+1}$
 
-**The maximal $L$-block $\theta^{m+1}$.** Let $L = (e_1, \dots, e_N)$ be a list of natural
+Let $L = (e_1, \dots, e_N)$ be a list of natural
 numbers and $m \in \mathbb N$, with indices of coefficient functions starting at $0$. The maximal
 $L$-block $\theta^{m+1}$ is the finitely supported coefficient function whose entry at each index
 $i < m$ is $e_j$, where $j - 1 = (m - 1 - i) \bmod N$, and whose entries at the indices $i \ge m$

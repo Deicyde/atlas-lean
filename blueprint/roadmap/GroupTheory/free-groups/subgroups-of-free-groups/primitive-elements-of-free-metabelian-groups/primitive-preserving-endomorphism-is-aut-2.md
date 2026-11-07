@@ -1,6 +1,6 @@
 # Primitive-preserving endomorphisms of free metabelian groups are automorphisms
 
-**Primitive-preserving endomorphisms of free metabelian groups are automorphisms.** For every
+For every
 natural number $n$, every endomorphism $\varphi$ of the free metabelian group $M_n$ of rank $n$
 that maps every primitive element of $M_n$ to a primitive element is bijective, hence an
 automorphism of $M_n$. This answers Kourovka Problem 14.85 positively.

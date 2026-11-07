@@ -1,6 +1,6 @@
 # ANY-SEGMENTS-INTERSECT
 
-**ANY-SEGMENTS-INTERSECT.** Let $\Bbbk$ be a linearly ordered field. Given $n$ segments
+Let $\Bbbk$ be a linearly ordered field. Given $n$ segments
 $s_0, \dots, s_{n-1}$ in $\Bbbk^2$, each given by its two endpoints, write $l_t$, the left endpoint
 of $s_t$, for its endpoint with the smaller $x$-coordinate, or for its first given endpoint when
 both $x$-coordinates agree, and $r_t$, the right endpoint, for the other one. The procedure sorts

@@ -1,6 +1,6 @@
 # Erdős Problem 1076 fails as worded
 
-**Erdős Problem 1076 fails as worded.** For $k, n \in \mathbb{N}$ let $\mathcal{F}_k$ be the family
+For $k, n \in \mathbb{N}$ let $\mathcal{F}_k$ be the family
 of $3$-graphs with $k$ vertices and $k - 2$ edges, and let $\mathrm{ex}_3(n, \mathcal{F}_k)$ be the
 largest number of triples in a $3$-uniform hypergraph on $n$ vertices that contains no member of
 $\mathcal{F}_k$, that is, in which no $k$ vertices span $k - 2$ or more triples. It is not true

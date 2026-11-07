@@ -1,6 +1,6 @@
 # Linear sets are semilinear
 
-**Linear sets are semilinear.** Linear sets are semilinear.
+Linear sets are semilinear.
 
 ## Sources
 

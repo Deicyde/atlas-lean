@@ -1,6 +1,6 @@
 # The zeroth Carlitz $q$-polynomial
 
-**The zeroth Carlitz $q$-polynomial.** For all real $q$ and $x$, Carlitz's $q$-polynomial
+For all real $q$ and $x$, Carlitz's $q$-polynomial
 $\eta_0(x)$ equals $1$.
 
 ## Sources

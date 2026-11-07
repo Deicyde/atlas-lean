@@ -1,6 +1,6 @@
 # Bellman-Ford path reconstruction
 
-**Bellman-Ford path reconstruction.** Let the output of a Bellman-Ford run on $n$ vertices
+Let the output of a Bellman-Ford run on $n$ vertices
 have source $s$. The path to a vertex $t$ is built backwards from $t$: at a vertex $v \ne s$, take
 the recorded predecessor edge $e$ of $v$, put it in front of the edges collected so far, and
 continue from the source of $e$. When $s$ is reached within at most $n$ such steps, the result is

@@ -1,6 +1,6 @@
 # Scherk's lower bound for the minimum-overlap constant (statement)
 
-**Scherk's lower bound for the minimum-overlap constant (statement).** The statement that the
+The statement that the
 continuous Erdős minimum-overlap constant $C_{1b}$ satisfies $1 - 1/\sqrt{2} \le C_{1b}$.
 
 ## Sources

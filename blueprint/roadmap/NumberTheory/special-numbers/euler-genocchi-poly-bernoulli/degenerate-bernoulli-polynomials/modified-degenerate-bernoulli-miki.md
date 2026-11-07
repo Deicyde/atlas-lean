@@ -1,6 +1,6 @@
 # Miki-type identity for modified degenerate Bernoulli numbers
 
-**Miki-type identity for modified degenerate Bernoulli numbers.** Let $n \ge 4$, let $\lambda$
+Let $n \ge 4$, let $\lambda$
 be a complex number with $\lambda \ne 0$ and $\lambda \ne -1$, write
 $\mathfrak{B}_{k,\lambda} = \mathfrak{B}_{k,\lambda}(0)$ for the value at $0$ of the modified
 degenerate Bernoulli polynomial $\mathfrak{B}_{k,\lambda}(x)$, and let $H_n = \sum_{k=1}^{n} 1/k$

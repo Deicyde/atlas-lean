@@ -1,6 +1,6 @@
 # Bound on denominator indices of $p$-adic valuation one
 
-**Bound on denominator indices of $p$-adic valuation one.** Let $n \ge 37$ and let $I$ and $J$
+Let $n \ge 37$ and let $I$ and $J$
 be finite multisets of natural numbers, every element of which is at least $3$ and different from
 $6$ and $12$, such that no element of $I$ equals an element of $J$ and
 $n! = \prod_{a \in I} \Phi_a / \prod_{b \in J} \Phi_b$, where $\Phi_m$ is the $m$-th Fibonacci

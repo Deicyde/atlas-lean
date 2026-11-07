@@ -1,6 +1,6 @@
 # Three $2$-Dyck paths of size $2$
 
-**Three $2$-Dyck paths of size $2$.** The number of $2$-Dyck paths of size $2$ is $3$.
+The number of $2$-Dyck paths of size $2$ is $3$.
 
 ## Sources
 

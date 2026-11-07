@@ -1,6 +1,6 @@
 # Smooth functions vanishing on the axes are $O(|x|\,|y|)$ near the origin
 
-**Smooth functions vanishing on the axes are $O(|x|\,|y|)$ near the origin.** Let
+Let
 $f : \mathbb{R}^2 \to \mathbb{R}$ be infinitely differentiable with $f(x,y) = 0$ whenever $xy = 0$.
 Then there is a constant $C > 0$ such that $|f(x,y)| \le C\,|x|\,|y|$ for all real $x$ and $y$ with
 $|x| < 1$ and $|y| < 1$, that is, on the open unit ball of $\mathbb{R}^2$ for the maximum norm.

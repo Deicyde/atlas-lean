@@ -1,6 +1,6 @@
 # Residue symmetries of Ulam words modulo 2 and 3
 
-**Residue symmetries of Ulam words modulo 2 and 3.** For natural numbers $N$ and $n$ and a
+For natural numbers $N$ and $n$ and a
 residue $a \in \mathbb{Z}/N\mathbb{Z}$, let $c_{a,N}(n)$ be the number of Ulam words of length
 $n$ whose value as a binary numeral, most significant letter first, is congruent to $a$ modulo
 $N$. Then for every $n \ge 1$ we have $c_{0,2}(n) = c_{1,2}(n)$, and for every

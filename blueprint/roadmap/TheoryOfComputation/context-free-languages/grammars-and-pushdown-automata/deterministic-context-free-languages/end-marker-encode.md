@@ -1,6 +1,6 @@
 # End-marker encoding of a word
 
-**End-marker encoding of a word.** Encode a word by copying it to the left summand and appending the
+Encode a word by copying it to the left summand and appending the
 end marker `Sum.inr ()`.
 
 ## Sources

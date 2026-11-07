@@ -1,6 +1,6 @@
 # The bar of a coefficient function is a successor of its predecessor
 
-**The bar of a coefficient function is a successor of its predecessor.** Let $E$ be a set of
+Let $E$ be a set of
 finitely supported coefficient functions $\mathbb{N} \to \mathbb{N}$ and $\mu$ a finitely supported
 coefficient function. Call $\nu$ an immediate predecessor of $\mu$ in $E$ if it is a largest
 element of $E$ that is $\lt _a \mu$ in the ascending lexicographic order, and call $\xi$ an immediate

@@ -1,6 +1,6 @@
 # Pólya–Schur characterization of multiplier sequences
 
-**Pólya–Schur characterization of multiplier sequences.** Let $t_0, t_1, \dots$ be
+Let $t_0, t_1, \dots$ be
 non-negative real numbers. Say a real polynomial splits over $\mathbb{R}$ if it is a constant
 times a product of linear factors $x - r$ with $r$ real (the zero polynomial splits). Then the
 following are equivalent: for every real polynomial $\sum_k a_k x^k$ that splits over

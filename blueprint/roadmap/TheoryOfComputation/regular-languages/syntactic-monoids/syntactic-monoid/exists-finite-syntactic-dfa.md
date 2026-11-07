@@ -1,6 +1,6 @@
 # The syntactic DFA of a language with finite syntactic monoid
 
-**The syntactic DFA of a language with finite syntactic monoid.** If the syntactic monoid of a
+If the syntactic monoid of a
 language $L$ is finite, then the syntactic DFA of $L$ has finitely many states and accepts exactly
 $L$.
 

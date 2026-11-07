@@ -1,6 +1,6 @@
 # $\{1\}$ is $2$-sum-free modulo $3$
 
-**$\{1\}$ is $2$-sum-free modulo $3$.** The singleton $\{1\}$ is $2$-sum-free modulo $3$,
+The singleton $\{1\}$ is $2$-sum-free modulo $3$,
 since $1 + 1 \not\equiv 1 \pmod{3}$.
 
 ## Sources

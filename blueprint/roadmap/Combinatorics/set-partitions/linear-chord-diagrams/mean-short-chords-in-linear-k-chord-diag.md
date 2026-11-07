@@ -1,6 +1,6 @@
 # Mean number of short chords in linear $k$-chord diagrams
 
-**Mean number of short chords in linear $k$-chord diagrams.** Let $k \ge 1$ and $n \ge 0$ be
+Let $k \ge 1$ and $n \ge 0$ be
 integers. A linear $k$-chord diagram of length $kn$ is a set of $n$ subsets of
 $\{0, 1, \dots, kn - 1\}$, each with $k$ elements, whose union is $\{0, 1, \dots, kn - 1\}$; it
 is therefore a partition of this set into $n$ blocks of size $k$, its chords. A chord is short

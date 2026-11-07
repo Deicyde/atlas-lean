@@ -1,6 +1,6 @@
 # First weight of a triangular recurrence
 
-**First weight of a triangular recurrence.** For a triangular recurrence with parameters
+For a triangular recurrence with parameters
 $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ and integers $n, k$, the first weight is the
 rational number $\alpha(n + 1) + \beta k + \gamma$.
 

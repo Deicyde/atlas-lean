@@ -1,6 +1,6 @@
 # Rotkiewicz: strong Lucas and Frobenius pseudoprimes with two prime factors
 
-**Rotkiewicz: strong Lucas and Frobenius pseudoprimes with two prime factors.** Let $P$ and
+Let $P$ and
 $Q$ be integers forming a nondegenerate Lucas pair with $Q = \pm 1$. Then infinitely many
 products $N = p_1 p_2$ of two distinct odd primes $p_1$ and $p_2$ are both strong Lucas
 pseudoprimes and Frobenius pseudoprimes with parameters $P$ and $Q$.

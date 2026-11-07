@@ -1,6 +1,6 @@
 # Reflexive polytopes
 
-**Reflexive polytopes.** Let $P \subseteq \mathbb{R}^n$, with coordinates indexed by a finite
+Let $P \subseteq \mathbb{R}^n$, with coordinates indexed by a finite
 set of size $n$, and write $tP = \{t y : y \in P\}$. Then $P$ is reflexive when there is a lattice
 point $c$ in the interior of $P$ such that, for every integer $t \ge 1$, the lattice points in the
 interior of $tP$ are exactly the points $c + y$ with $y$ a lattice point of $(t-1)P$.

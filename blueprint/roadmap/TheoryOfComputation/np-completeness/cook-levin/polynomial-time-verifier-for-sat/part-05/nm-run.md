@@ -1,6 +1,6 @@
 # Reading a name block
 
-**Reading a name block.** Let $u$ and $r$ be bit strings, $\ell$ an optional bit, $v$ a bit,
+Let $u$ and $r$ be bit strings, $\ell$ an optional bit, $v$ a bit,
 $w$, $t$, $b$ symbol stacks and $c$, $l$ natural numbers. Started at label $\mathsf{nm}(\ell)$ with
 internal bit $v$, the bits of the self-delimiting block of $u$ followed by $r$ on the formula stack
 $X$, $w$ on the witness stack $W$, $t$ on the token stack $T$, $b$ on the table stack $B$, clause

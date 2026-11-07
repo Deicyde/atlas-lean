@@ -1,6 +1,6 @@
 # Generalized Rascal numbers as sums of products of binomial coefficients
 
-**Generalized Rascal numbers as sums of products of binomial coefficients.** For all natural
+For all natural
 numbers $j$, $n$ and $k$ with $k \le n$, the generalized Rascal number $R^{(j)}_{n,k}$, the
 number of binary words of length $n$ with exactly $k$ ones and at most $j$ ascents (positions
 where a $0$ is immediately followed by a $1$), equals

@@ -1,6 +1,6 @@
 # Time bound of the accept generator for a concrete machine
 
-**Time bound of the accept generator for a concrete machine.** Let $M$ be a finite
+Let $M$ be a finite
 multi-stack Turing machine with encoding $E$, let $\mathit{acc}$ be a symbol of the output stack
 of $M$, and let $T$, $H$ be natural numbers with $H > 0$. Let $L$ be the layout of $E$, with
 label block size $A$, $K$ stacks and $g$ symbol codes, let $A_0$ be the number of (label, state)

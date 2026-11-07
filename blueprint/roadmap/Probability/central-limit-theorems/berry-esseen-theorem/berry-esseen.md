@@ -1,6 +1,6 @@
 # Berry–Esseen theorem
 
-**Berry–Esseen theorem.** There is a constant $C > 0$ with the following property. Let
+There is a constant $C > 0$ with the following property. Let
 $X_0, X_1, X_2, \dots$ be measurable, mutually independent real random variables on a probability
 space, each with the same distribution as $X_0$, where $X_0$ is integrable and has a finite third
 moment, mean $\mathbb{E}[X_0] = 0$ and variance $\sigma^2 = \operatorname{Var}(X_0) > 0$ with

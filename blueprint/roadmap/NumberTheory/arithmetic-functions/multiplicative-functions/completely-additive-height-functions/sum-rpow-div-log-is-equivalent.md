@@ -1,6 +1,6 @@
 # A logarithmic-integral sum
 
-**A logarithmic-integral sum.** For every real $\beta > 0$,
+For every real $\beta > 0$,
 
 $$\sum_{i=2}^{m} \frac{i^{\beta - 1}}{\log i} \sim \frac{m^\beta}{\beta \log m}$$
 

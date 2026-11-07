@@ -1,6 +1,6 @@
 # Running a counter transfer
 
-**Running a counter transfer.** Let $M$ be a multi-stack machine whose state carries a
+Let $M$ be a multi-stack machine whose state carries a
 flag bit, and suppose that at label $\ell$ it executes the transfer loop that empties stack $k$
 into the targets $p_1, \dots, p_m$ and then goes to label $\ell'$. Here each target $p_i$ is a
 pair of a stack $t_i$ and a symbol $x_i$ of its alphabet, the stacks $t_1, \dots, t_m$ are

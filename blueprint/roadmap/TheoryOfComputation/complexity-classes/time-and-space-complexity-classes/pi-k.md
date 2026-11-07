@@ -1,6 +1,6 @@
 # The universal levels of the polynomial hierarchy
 
-**The universal levels of the polynomial hierarchy.** For a natural number $k$, the class
+For a natural number $k$, the class
 $\Pi_k^p$ consists of the decision problems $L$ for which there are a polynomial $p$ with
 natural-number coefficients and a polynomial-time computable function $R$, taking a bitstring and
 a list of bitstrings to a boolean, such that for every bitstring $x$, $L(x)$ is true if and only

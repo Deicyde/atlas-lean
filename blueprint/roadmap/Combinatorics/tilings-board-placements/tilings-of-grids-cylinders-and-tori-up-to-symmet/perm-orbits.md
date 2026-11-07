@@ -1,6 +1,6 @@
 # Orbits of a permutation
 
-**Orbits of a permutation.** Let $\alpha$ be a finite set and $\varphi$ a permutation of
+Let $\alpha$ be a finite set and $\varphi$ a permutation of
 $\alpha$. For $c \in \alpha$ let $O(c) = \{\varphi^k(c) : k \in \mathbb{N}\}$ be the orbit of $c$
 under $\varphi$. The set of orbits of $\varphi$ is the set $\{O(c) : c \in \alpha\}$ of subsets of
 $\alpha$, in which each orbit occurs once.

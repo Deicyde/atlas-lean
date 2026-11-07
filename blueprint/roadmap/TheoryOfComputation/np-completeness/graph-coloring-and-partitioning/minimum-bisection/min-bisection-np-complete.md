@@ -1,6 +1,6 @@
 # MINIMUM BISECTION is NP-complete
 
-**MINIMUM BISECTION is NP-complete.** The decision problem MINIMUM BISECTION belongs to NP,
+The decision problem MINIMUM BISECTION belongs to NP,
 and every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

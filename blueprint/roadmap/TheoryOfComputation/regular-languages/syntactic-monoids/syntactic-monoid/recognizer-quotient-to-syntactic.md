@@ -1,6 +1,6 @@
 # Canonical map from a recognizer's kernel quotient to the syntactic monoid
 
-**Canonical map from a recognizer's kernel quotient to the syntactic monoid.** Let $L$ be a
+Let $L$ be a
 language over an alphabet $\Sigma$, let $\varphi : \Sigma^* \to M$ be a monoid morphism from the
 free monoid on $\Sigma$ into a monoid $M$, and let $A \subseteq M$ be such that $\varphi$
 recognizes $L$ through $A$. Since the kernel congruence of $\varphi$ (words $x, y$ with

@@ -1,6 +1,6 @@
 # Narayana numbers that are Riesel numbers
 
-**Narayana numbers that are Riesel numbers.** Let $(N_t)$ be Narayana's cows sequence, with
+Let $(N_t)$ be Narayana's cows sequence, with
 $N_0 = 0$ and $N_1 = N_2 = 1$. If $t$ is congruent modulo $718391520$ to one of the $27$ residues
 $3629412$, $13386852$, $73151172$, $96325092$, $101203812$, $119499012$, $175604292$,
 $198778212$, $212194692$, $240247332$, $268299972$, $328064292$, $337821732$, $360995652$,

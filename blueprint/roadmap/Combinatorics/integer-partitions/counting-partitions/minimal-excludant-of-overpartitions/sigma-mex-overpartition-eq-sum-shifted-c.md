@@ -1,6 +1,6 @@
 # The r-mex sum of overpartitions as a sum of overpartition counts
 
-**The r-mex sum of overpartitions as a sum of overpartition counts.** Let $n$ and $r$ be
+Let $n$ and $r$ be
 natural numbers with $r \ge 1$, let $\overline{p}(m)$ be the number of overpartitions of $m$, let
 $T_k = k(k+1)/2$ be the $k$-th triangular number, and let $\sigma_r\overline{\mathrm{mex}}(n)$ be
 the sum over all overpartitions $\pi$ of $n$ of $\overline{\mathrm{mex}}_r(\pi)$, the least

@@ -1,6 +1,6 @@
 # Pentagonal recurrence for overpartitions into odd parts
 
-**Pentagonal recurrence for overpartitions into odd parts.** Let $\mathrm{po}(j)$ be the
+Let $\mathrm{po}(j)$ be the
 number of overpartitions of $j$ into odd parts. For every natural number $n$, the sum
 $\sum_k (-1)^k \, \mathrm{po}(n - k(3k+1)/2)$ over the integers $k$ with $k(3k+1)/2 \le n$
 equals $(-1)^{\lceil m/2 \rceil}$ if $n = m(3m+1)/2$ for some integer $m$, and $0$ otherwise.

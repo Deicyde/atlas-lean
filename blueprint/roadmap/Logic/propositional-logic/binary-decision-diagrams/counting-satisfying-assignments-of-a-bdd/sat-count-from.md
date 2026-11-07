@@ -1,6 +1,6 @@
 # One-pass satisfy-count from a variable
 
-**One-pass satisfy-count from a variable.** For natural numbers $m$ and $n$ and a diagram $t$,
+For natural numbers $m$ and $n$ and a diagram $t$,
 the satisfy-count $c_m(n, t)$ of $t$ from $n$ with bound $m$ is defined by recursion on $t$: a
 leaf $\mathrm{true}$ gives $2^{m - n}$, a leaf $\mathrm{false}$ gives $0$, and a node testing the
 variable $v$ with child $t_0$ for false and child $t_1$ for true gives

@@ -1,6 +1,6 @@
 # The Smith–Waterman recurrence
 
-**The Smith–Waterman recurrence.** Let $\sigma$ be a substitution score and $g$ a gap score,
+Let $\sigma$ be a substitution score and $g$ a gap score,
 and for a sequence $s$ and a letter $c$ write $sc$ for $s$ followed by $c$. For all sequences
 $x$ and $y$ and all letters $a$ and $b$, the terminal Smith–Waterman cell $H$ satisfies
 

@@ -1,6 +1,6 @@
 # Positivity of the resultant product
 
-**Positivity of the resultant product.** For every natural number $n \ge 1$, the resultant
+For every natural number $n \ge 1$, the resultant
 product $\mathcal{P}_n$ is a positive integer.
 
 ## Sources

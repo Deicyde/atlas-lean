@@ -1,6 +1,6 @@
 # The real cyclotomic polynomial is the minimal polynomial of $\zeta + \zeta^{-1}$
 
-**The real cyclotomic polynomial is the minimal polynomial of $\zeta + \zeta^{-1}$.** Let $K$
+Let $K$
 be a field of characteristic zero, let $n > 2$ be a natural number, and let $\zeta \in K$ be a
 primitive $n$-th root of unity. Then the real cyclotomic polynomial $\psi_n$ equals the minimal
 polynomial of $\zeta + \zeta^{-1}$ over $\mathbb{Z}$.

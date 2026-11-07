@@ -1,6 +1,6 @@
 # Completeness of Algorithm W
 
-**Completeness of Algorithm W.** Let $\Gamma$ be a typing context and $n$ a natural number
+Let $\Gamma$ be a typing context and $n$ a natural number
 such that every free type variable of $\Gamma$ is less than $n$. If, for some type substitution
 $u$, an expression $e$ has a monotype $\tau'$ in the context $u(\Gamma)$, then Algorithm W
 succeeds on $\Gamma$ and $e$ with counter $n$, returning a substitution $s$, a monotype $\tau$

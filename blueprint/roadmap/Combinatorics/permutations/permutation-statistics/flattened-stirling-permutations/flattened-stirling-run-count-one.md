@@ -1,6 +1,6 @@
 # Exactly one flattened Stirling permutation has one run
 
-**Exactly one flattened Stirling permutation has one run.** For every natural number
+For every natural number
 $n \ge 1$, exactly one flattened Stirling permutation of order $n$ has exactly one run.
 
 ## Sources

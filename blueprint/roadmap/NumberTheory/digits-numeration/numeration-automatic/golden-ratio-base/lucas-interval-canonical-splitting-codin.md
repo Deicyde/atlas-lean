@@ -1,6 +1,6 @@
 # Dekking's Theorem 4: the coding of the canonical splittings of Lucas intervals
 
-**Dekking's Theorem 4: the coding of the canonical splittings of Lucas intervals.** Write
+Write
 $\Lambda_m = [\ell_m, h_m]$ for the Lucas interval with left end $\ell_m$ and right end $h_m$. For
 every $n \ge 3$, every pair $(k, t)$ in the canonical splitting of $\Lambda_n$ has
 $k \in \{3, 4, 5\}$, and the canonical splitting of $\Lambda_n$ is a Lucas tiling of

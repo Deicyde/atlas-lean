@@ -1,6 +1,6 @@
 # Resolution comparisons preserve multigraded Poincaré coefficients
 
-**Resolution comparisons preserve multigraded Poincaré coefficients.** Let $K$ be a field,
+Let $K$ be a field,
 let $R = K[x_1, \dots, x_n]$, let $M$ be a multigraded $R$-module, and let $D$ and $D'$ be
 base-change data for two multigraded free resolutions of $M$. Given a multigraded resolution
 comparison between $D$ and $D'$, that is, for every $\alpha \in \mathbb{Z}^n$ a chain-homotopy

@@ -1,6 +1,6 @@
 # Sums of (a, b)-Lucas numbers weighted by powers of -b
 
-**Sums of (a, b)-Lucas numbers weighted by powers of -b.** Let $a, b$ be complex numbers
+Let $a, b$ be complex numbers
 with $b \ne 0$, and let $(F_n)$ and $(L_n)$ be the $(a, b)$-Fibonacci and $(a, b)$-Lucas
 numbers. Then for every integer $n \ge 0$,
 

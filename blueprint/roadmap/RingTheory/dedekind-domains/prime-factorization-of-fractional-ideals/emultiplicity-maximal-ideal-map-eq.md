@@ -1,6 +1,6 @@
 # Ideal multiplicity is unchanged by localization at a maximal ideal
 
-**Ideal multiplicity is unchanged by localization at a maximal ideal.** Let $R$ be a
+Let $R$ be a
 Dedekind domain, $\mathfrak p$ a maximal ideal of $R$, and $R_{\mathfrak p}$ a local ring that
 is a localization of $R$ at $\mathfrak p$, with maximal ideal $\mathfrak m$. Then for every
 ideal $I$ of $R$, the multiplicity of $\mathfrak m$ in the extended ideal $I R_{\mathfrak p}$

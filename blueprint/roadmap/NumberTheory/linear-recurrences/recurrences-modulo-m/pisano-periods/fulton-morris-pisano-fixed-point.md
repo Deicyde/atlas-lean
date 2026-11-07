@@ -1,6 +1,6 @@
 # Fulton–Morris theorem on Pisano periods equal to the modulus
 
-**Fulton–Morris theorem on Pisano periods equal to the modulus.** Write $F_t$ for the $t$-th
+Write $F_t$ for the $t$-th
 Fibonacci number. Let $m > 1$ be a natural number and let $\pi$ be a positive integer with
 $F_\pi \equiv 0 \pmod{m}$ and $F_{\pi+1} \equiv 1 \pmod{m}$ such that $\pi \le t$ for every
 positive integer $t$ with $F_t \equiv 0 \pmod{m}$ and $F_{t+1} \equiv 1 \pmod{m}$; that is, $\pi$

@@ -1,6 +1,6 @@
 # Closed forms of eight degenerate second-order recurrences
 
-**Closed forms of eight degenerate second-order recurrences.** For every integer sequence
+For every integer sequence
 $(w_j)_{j \ge 0}$ and every $n \in \mathbb{N}$: if $w_{j+2} = w_j$ for all $j$, then
 $w_{2n} = w_0$ and $w_{2n+1} = w_1$; if $w_{j+2} = -w_j$ for all $j$, then $w_{4n} = w_0$,
 $w_{4n+1} = w_1$, $w_{4n+2} = -w_0$ and $w_{4n+3} = -w_1$; if $w_{j+2} = w_{j+1} - w_j$ for all

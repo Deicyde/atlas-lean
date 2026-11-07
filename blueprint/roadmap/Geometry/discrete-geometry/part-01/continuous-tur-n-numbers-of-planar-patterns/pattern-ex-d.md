@@ -1,6 +1,6 @@
 # Extremal function of a $d$-dimensional pattern
 
-**Extremal function of a $d$-dimensional pattern.** For natural numbers $d$ and $n$ and a set
+For natural numbers $d$ and $n$ and a set
 $P \subseteq \mathbb{R}^d$, say that a set $A$ of cells of $\mathbb{N}^d$ contains $P$ when there
 are maps $f_1, \dots, f_d$ to $\mathbb{N}$, each $f_i$ strictly increasing on the $i$-th
 coordinates of the points of $P$, with $(f_1(p_1), \dots, f_d(p_d)) \in A$ for every $p \in P$.

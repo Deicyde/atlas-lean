@@ -1,6 +1,6 @@
 # Extending a restricted signed sumset bound from the first $h+1$ elements
 
-**Extending a restricted signed sumset bound from the first $h+1$ elements.** Let $h \ge 3$
+Let $h \ge 3$
 and $k \ge h + 1$, let $a_1 < a_2 < \dots < a_k$ be positive integers, and let $t \ge 0$ be an
 integer. Put $A = \{a_1, \dots, a_k\}$ and $A_{h+1} = \{a_1, \dots, a_{h+1}\}$, and write
 $h^{\wedge}_{\pm} B$ for the restricted signed $h$-fold sumset of a finite set $B$. If

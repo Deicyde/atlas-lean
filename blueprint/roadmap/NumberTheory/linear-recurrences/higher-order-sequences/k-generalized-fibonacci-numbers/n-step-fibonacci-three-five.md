@@ -1,6 +1,6 @@
 # The tribonacci number with index 5
 
-**The tribonacci number with index 5.** The $3$-step Fibonacci number $F^{(3)}_5$ equals $7$.
+The $3$-step Fibonacci number $F^{(3)}_5$ equals $7$.
 
 The tribonacci numbers $F^{(3)}_0, \dots, F^{(3)}_5$ are $0, 1, 1, 2, 4, 7$.
 

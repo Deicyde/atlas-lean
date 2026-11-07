@@ -1,6 +1,6 @@
 # Genus of two-block partitions
 
-**Genus of two-block partitions.** Let $\sigma$ be the cyclic permutation
+Let $\sigma$ be the cyclic permutation
 $i \mapsto i + 1 \pmod n$ of $\{0, \dots, n-1\}$, and let $\tau$ be an increasing-cycle permutation
 of $\{0, \dots, n-1\}$ with exactly two cycles, fixed points counted as cycles (so $\tau$ encodes a
 set partition into two blocks). Then $\sigma \circ \tau^{-1}$ has exactly one cycle of length at

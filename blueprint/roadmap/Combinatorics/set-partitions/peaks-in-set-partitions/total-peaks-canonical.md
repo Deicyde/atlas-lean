@@ -1,6 +1,6 @@
 # Total number of peaks over set partitions
 
-**Total number of peaks over set partitions.** For natural numbers $n$ and $k$, call a word
+For natural numbers $n$ and $k$, call a word
 $\pi = \pi_1 \cdots \pi_n$ on the alphabet $\{0, \dots, k-1\}$ a restricted growth word if it uses
 every letter and, for every position $i$, every letter smaller than $\pi_i$ occurs among
 $\pi_1, \dots, \pi_{i-1}$; these words encode the partitions of $[n]$ into $k$ blocks. A peak of

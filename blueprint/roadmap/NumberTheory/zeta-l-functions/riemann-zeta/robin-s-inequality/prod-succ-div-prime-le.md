@@ -1,6 +1,6 @@
 # Mertens-type bound for a product over the first primes with one prime omitted
 
-**Mertens-type bound for a product over the first primes with one prime omitted.** Let
+Let
 $p_\ell$ be the $\ell$-th prime ($p_1 = 2$), $\log$ the natural logarithm and $B \approx 0.2615$
 the Meissel–Mertens constant. For all natural numbers $k$ and $j$ with $1 \le j \le k + 1$,
 

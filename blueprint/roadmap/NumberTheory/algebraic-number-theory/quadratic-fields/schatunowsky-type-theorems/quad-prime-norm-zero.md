@@ -1,6 +1,6 @@
 # The zeroth prime norm is one
 
-**The zeroth prime norm is one.** For every number field $K$, the zeroth prime norm
+For every number field $K$, the zeroth prime norm
 $N(\pi_0)$ of $K$ equals $1$.
 
 ## Sources

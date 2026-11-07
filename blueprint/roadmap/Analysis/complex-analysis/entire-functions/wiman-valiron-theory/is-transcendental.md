@@ -1,6 +1,6 @@
 # Transcendental functions
 
-**Transcendental functions.** A function $f : \mathbb{C} \to \mathbb{C}$ is
+A function $f : \mathbb{C} \to \mathbb{C}$ is
 transcendental when there is no complex polynomial $p$ with $f(z) = p(z)$ for all
 $z \in \mathbb{C}$.
 

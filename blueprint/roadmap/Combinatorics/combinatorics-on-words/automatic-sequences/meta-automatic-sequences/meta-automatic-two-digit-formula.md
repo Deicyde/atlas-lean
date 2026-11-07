@@ -1,6 +1,6 @@
 # Digit formula for $\mathcal{M}_2$
 
-**Digit formula for $\mathcal{M}_2$.** For a natural number $n$ and $k \ge 0$, let
+For a natural number $n$ and $k \ge 0$, let
 $d_k = \lfloor n / 4^k \rfloor \bmod 4$ be the $k$-th base-$4$ digit of $n$, and write
 $d_k = 2 j_k + i_k$ with $i_k, j_k \in \{0, 1\}$. Let $c_k = i_k + j_k$ if $k \equiv 0 \pmod 3$,
 $c_k = j_k$ if $k \equiv 1 \pmod 3$, and $c_k = i_k$ if $k \equiv 2 \pmod 3$. Then the

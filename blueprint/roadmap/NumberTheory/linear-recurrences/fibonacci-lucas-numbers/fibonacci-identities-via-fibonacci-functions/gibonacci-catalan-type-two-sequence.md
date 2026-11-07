@@ -1,6 +1,6 @@
 # Two-sequence Catalan-type identity for gibonacci sequences
 
-**Two-sequence Catalan-type identity for gibonacci sequences.** Let $F_m$ be the Fibonacci
+Let $F_m$ be the Fibonacci
 numbers, extended to all integers $m$ by $F_{m+2} = F_{m+1} + F_m$, and let $G$ and $H$ be
 gibonacci sequences, that is, functions $X : \mathbb{Z} \to \mathbb{R}$ with
 $X_{j+2} = X_{j+1} + X_j$ for every integer $j$. Then for all integers $k$, $r$, $s$, $t$,

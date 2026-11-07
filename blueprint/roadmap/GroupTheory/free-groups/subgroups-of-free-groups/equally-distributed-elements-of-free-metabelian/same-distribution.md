@@ -1,6 +1,6 @@
 # Words with the same distribution
 
-**Words with the same distribution.** Let $n$ be a natural number and $F_n$ the free group on
+Let $n$ be a natural number and $F_n$ the free group on
 generators $x_1, \dots, x_n$. Words $w_1, w_2 \in F_n$ have the same distribution when, for every
 finite metabelian group $G$ (that is, $G'' = 1$) and every $g \in G$, the number of tuples
 $(a_1, \dots, a_n) \in G^n$ with $w_1(a_1, \dots, a_n) = g$ equals the number of tuples with

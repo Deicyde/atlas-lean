@@ -1,6 +1,6 @@
 # Gates of the final level
 
-**Gates of the final level.** Gate $j < 3n$ of the final level of the $n$-bit adder with $K$
+Gate $j < 3n$ of the final level of the $n$-bit adder with $K$
 Kogge-Stone levels serves bit $i = \lfloor j/3 \rfloor$. Write $G_i$ and $P_i$ for the generate and
 propagate gates of bit $i$ after the $K$ levels, $p_i$ for the propagate gate of bit $i$ at level
 $0$, and $c$ for the carry input. If $j \equiv 0 \pmod 3$ the gate computes $P_i \wedge c$; if

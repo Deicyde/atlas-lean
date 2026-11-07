@@ -1,6 +1,6 @@
 # P-positions of slow rotation Nim on a cube
 
-**P-positions of slow rotation Nim on a cube.** Write a position of the cube game as
+Write a position of the cube game as
 $p = (a, b, c, A, B, C)$, the numbers of tokens on the six faces of a cube, where the faces
 carrying $A$, $B$, $C$ are opposite those carrying $a$, $b$, $c$. A slow rotation move is a
 rotation move (removing at least one token in total from the four faces of one rotation, that is

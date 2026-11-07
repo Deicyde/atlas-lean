@@ -1,6 +1,6 @@
 # Digit representations and connected digraphs
 
-**Digit representations and connected digraphs.** Let $d \ge 2$ be a natural number, let
+Let $d \ge 2$ be a natural number, let
 $D$ be an integer with $|D| = d$, and let $a_1, \dots, a_d$ be integers such that for every
 integer $n$ there is exactly one $i$ with $D \mid n - a_i$. Let
 $G = G(Dn + a_1, \dots, Dn + a_d)$. Then every integer $z$ can be written as

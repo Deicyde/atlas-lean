@@ -1,6 +1,6 @@
 # Order of vanishing at a point
 
-**Order of vanishing at a point.** Let $R$ be a commutative semiring, let $F$ be a
+Let $R$ be a commutative semiring, let $F$ be a
 polynomial over $R$ in the variables $(X_i)_{i \in \sigma}$ and let $v \in R^\sigma$. The order
 of vanishing $\operatorname{ord}_v F \in \mathbb{N} \cup \{\infty\}$ of $F$ at $v$ is the order
 at the origin of the Taylor expansion $F(v + X)$, the polynomial obtained from $F$ by

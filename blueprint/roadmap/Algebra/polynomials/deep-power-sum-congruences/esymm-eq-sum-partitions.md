@@ -1,6 +1,6 @@
 # Elementary symmetric polynomials in terms of power sums
 
-**Elementary symmetric polynomials in terms of power sums.** Let $\sigma$ be a finite set of
+Let $\sigma$ be a finite set of
 variables, and in $\mathbb{Q}[x_i : i \in \sigma]$ let $e_n$ be the $n$-th elementary symmetric
 polynomial and $p_k = \sum_{i \in \sigma} x_i^k$ the $k$-th power sum. For a partition $\lambda$
 of $n$ with parts $\lambda_1, \dots, \lambda_\ell$, write

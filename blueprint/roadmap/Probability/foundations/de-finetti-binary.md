@@ -1,6 +1,6 @@
 # De Finetti's theorem for binary sequences
 
-**De Finetti's theorem for binary sequences.** Let $\mu$ be a probability measure on the space
+Let $\mu$ be a probability measure on the space
 $\{0, 1\}^{\mathbb{N}}$ of binary sequences $\omega = (\omega_i)_{i \in \mathbb{N}}$, with $0$ and
 $1$ standing for false and true. Suppose $\mu$ is exchangeable: for every permutation $\pi$ of
 $\mathbb{N}$ that moves only finitely many points, the image of $\mu$ under the map

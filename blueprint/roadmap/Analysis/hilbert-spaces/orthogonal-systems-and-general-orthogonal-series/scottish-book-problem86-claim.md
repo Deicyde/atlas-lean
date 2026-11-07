@@ -1,6 +1,6 @@
 # Scottish Book Problem 86 (Banach)
 
-**Scottish Book Problem 86 (Banach).** The claim that for every real $M > 0$ and every
+The claim that for every real $M > 0$ and every
 sequence $(\varphi_n)_{n \in \mathbb{N}}$ of functions $\mathbb{R} \to \mathbb{R}$ that are
 almost everywhere measurable on $[0, 1]$, orthonormal in $L^2[0, 1]$ (that is,
 $\int_0^1 \varphi_n \varphi_m \, dt$ is $1$ if $n = m$ and $0$ otherwise) and satisfy

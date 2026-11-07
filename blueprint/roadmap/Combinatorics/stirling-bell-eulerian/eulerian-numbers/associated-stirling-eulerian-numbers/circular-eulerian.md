@@ -1,6 +1,6 @@
 # Circular Eulerian numbers
 
-**Circular Eulerian numbers.** For natural numbers $n$ and $m$, the circular Eulerian number
+For natural numbers $n$ and $m$, the circular Eulerian number
 $C_{n,m}$ is the number of permutations $\sigma$ of $\{0, 1, \dots, n-1\}$ such that $n \ge 1$,
 all points lie in a single cycle of $\sigma$ (for any two points $i$ and $j$ there is an integer
 $k$ with $\sigma^k(i) = j$), and $\sigma$ has exactly $m$ excedances, that is, exactly $m$ points

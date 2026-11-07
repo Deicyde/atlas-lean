@@ -1,6 +1,6 @@
 # Stage-$k$ shortest-path weight
 
-**Stage-$k$ shortest-path weight.** Let $w$ assign to each ordered pair of vertices in
+Let $w$ assign to each ordered pair of vertices in
 $\{0, \dots, n-1\}$ a weight in $\mathbb{Z} \cup \{\infty\}$, let $k$ be a natural number, let
 $s$ and $t$ be vertices and let $d \in \mathbb{Z} \cup \{\infty\}$. A weighted path from $s$ to
 $t$ is a nonempty list of vertices that starts at $s$, ends at $t$ and has $w(u, v) \ne \infty$

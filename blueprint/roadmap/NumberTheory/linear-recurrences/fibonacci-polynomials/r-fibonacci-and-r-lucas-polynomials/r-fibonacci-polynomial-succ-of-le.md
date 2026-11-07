@@ -1,6 +1,6 @@
 # Recurrence for the $r$-Fibonacci polynomials
 
-**Recurrence for the $r$-Fibonacci polynomials.** Let $R$ be a commutative semiring, let
+Let $R$ be a commutative semiring, let
 $x, y \in R$, and let $r \le n$ be natural numbers. Then the $r$-Fibonacci polynomials
 $U_m = U^{(r)}_m(x, y)$ satisfy $U_{n+1} = x \, U_n + y \, U_{n-r}$.
 

@@ -1,6 +1,6 @@
 # A double sum of Euler and Lucas numbers equal to two
 
-**A double sum of Euler and Lucas numbers equal to two.** Let $L_n$ be the Lucas numbers and
+Let $L_n$ be the Lucas numbers and
 let $E_k$ be the Euler (secant) numbers, given by $2/(e^t + e^{-t}) = \sum_{k \ge 0} E_k t^k / k!$.
 For every natural number $m$,
 

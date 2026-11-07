@@ -1,3 +1,3 @@
 # Four cells around a lattice vertex
 
-**Four cells around a lattice vertex.** The four cells having `v` as a corner.
+The four cells having `v` as a corner.

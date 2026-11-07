@@ -1,6 +1,6 @@
 # Reading a polarity
 
-**Reading a polarity.** Let $p$, $v$ be bits, $r$, $w$ bit strings, $t$, $b$ symbol stacks and
+Let $p$, $v$ be bits, $r$, $w$ bit strings, $t$, $b$ symbol stacks and
 $c$, $l$ natural numbers. Started at label $\mathsf{pol}$ with internal bit $v$, the bit $p$
 followed by the bits of $r$ on the formula stack $X$, the bits of $w$ on the witness stack $W$, $t$
 on the token stack $T$, $b$ on the table stack $B$, clause counter $c$ and literal counter $l$, the

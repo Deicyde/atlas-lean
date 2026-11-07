@@ -1,6 +1,6 @@
 # The CLIQUE emitter computes Karp's instance in cubic time
 
-**The CLIQUE emitter computes Karp's instance in cubic time.** Let $\varphi$ be a CNF formula
+Let $\varphi$ be a CNF formula
 with token list $\tau$ (in reading order), $o$ a list of Booleans, $v$ a flag, and $S$ stack
 contents in which the token stack $T$ holds $\tau$ reversed (stacks are listed top first), the
 output stack $O$ holds $o$ and every other stack is empty. Started at its start label with flag

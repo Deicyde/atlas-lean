@@ -1,6 +1,6 @@
 # The log path weight is linear in the path's counts
 
-**The log path weight is linear in the path's counts.** Let $S$ and $O$ be finite sets, let
+Let $S$ and $O$ be finite sets, let
 $T$ be a natural number, and let $h$ be a valid hidden Markov model on states $S$ and observations
 $O$, with positive initial probabilities $\pi_s$, transition probabilities $a_{ss'}$ and emission
 probabilities $b_{so}$, each distribution summing to one. For every observation sequence

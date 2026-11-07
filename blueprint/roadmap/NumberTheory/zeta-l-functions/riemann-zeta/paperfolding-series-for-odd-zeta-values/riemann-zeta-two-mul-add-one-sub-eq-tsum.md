@@ -1,6 +1,6 @@
 # Tóth's paperfolding and Thue–Morse series for $\zeta(2k+1)$
 
-**Tóth's paperfolding and Thue–Morse series for $\zeta(2k+1)$.** Let $(f_n)_{n \ge 0}$ be the
+Let $(f_n)_{n \ge 0}$ be the
 regular paperfolding sequence and $(t_n)_{n \ge 0}$ the Thue–Morse sequence, both indexed from
 $0$, and let $E_{2k}$ be the even-index Euler number. For every integer $k \ge 1$,
 

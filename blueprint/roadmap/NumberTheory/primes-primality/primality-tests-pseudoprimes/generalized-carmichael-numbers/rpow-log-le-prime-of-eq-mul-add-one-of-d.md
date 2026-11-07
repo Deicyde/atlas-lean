@@ -1,6 +1,6 @@
 # Size of the auxiliary primes in the construction
 
-**Size of the auxiliary primes in the construction.** For a natural number $z$, let $J$ be the
+For a natural number $z$, let $J$ be the
 product of the primes $r$ with $z/2 \le r \le z$, and write $\omega(g)$ for the number of distinct
 prime factors of $g$. For every real $A$ and all sufficiently large natural numbers $z$ the
 following holds: if $j$, $g$ and $q$ are natural numbers with $1 \le j \le (\log z)^{2A}$,

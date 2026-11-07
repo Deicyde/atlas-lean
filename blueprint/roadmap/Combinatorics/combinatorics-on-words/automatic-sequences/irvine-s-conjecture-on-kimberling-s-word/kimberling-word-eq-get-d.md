@@ -1,6 +1,6 @@
 # Every Kimberling block is a prefix of Kimberling's word
 
-**Every Kimberling block is a prefix of Kimberling's word.** Let $k = k_1 k_2 k_3 \cdots$ be
+Let $k = k_1 k_2 k_3 \cdots$ be
 Kimberling's word and $K_n$ the $n$-th Kimberling block. For all natural numbers $i$ and $n$ with
 $i < |K_n|$, the letter $k_{i+1}$ equals the $(i+1)$-th letter of $K_n$.
 

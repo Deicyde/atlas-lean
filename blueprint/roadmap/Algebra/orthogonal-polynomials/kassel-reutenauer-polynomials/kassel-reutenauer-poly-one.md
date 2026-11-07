@@ -1,6 +1,6 @@
 # The first Kassel–Reutenauer polynomial
 
-**The first Kassel–Reutenauer polynomial.** The Kassel–Reutenauer polynomial $\bar P_1$ is the
+The Kassel–Reutenauer polynomial $\bar P_1$ is the
 constant polynomial $1$.
 
 ## Sources

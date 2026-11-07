@@ -1,6 +1,6 @@
 # Generalized Frobenius numbers of three consecutive triangular numbers
 
-**Generalized Frobenius numbers of three consecutive triangular numbers.** For a natural number
+For a natural number
 $j$ write $t_j = j(j+1)/2$. Let $n$ and $s$ be natural numbers, let $r = \lfloor\sqrt{s}\rfloor$,
 let $\delta_s = 1$ if $s \ge r^2 + r$ and $\delta_s = 0$ otherwise, and put
 $q_s = 2r + 2 + \delta_s$ and $c_s = s - r^2 - \delta_s r$. Suppose that

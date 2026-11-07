@@ -1,6 +1,6 @@
 # Isolated subgroups of free groups need not be $p$-separable
 
-**Isolated subgroups of free groups need not be $p$-separable.** For every prime $p$ there are a
+For every prime $p$ there are a
 set $\alpha$ and a finitely generated $p'$-isolated subgroup of the free group on $\alpha$ that is
 not separable in the class of finite $p$-groups. That is, the statement of Kourovka Problem 15.60
 fails for every prime $p$.

@@ -1,6 +1,6 @@
 # Constant coefficient of $B_{h,N_h}$
 
-**Constant coefficient of $B_{h,N_h}$.** Let $F$ be a finite field with $q$ elements, let $h$
+Let $F$ be a finite field with $q$ elements, let $h$
 be a natural number and let $z$ be a complex number. Then the coefficient $B_z(0)$ of the
 $h$-full series for $F$, $h$ and $z$ equals $1$. For $h \ge 1$, $B_z(0)$ is the constant
 coefficient of $B_{h,N_h}(u, z) = (1 - qu^h)^z \sum_{f \in N_h} z^{\omega_h(f)} u^{\deg f}$,

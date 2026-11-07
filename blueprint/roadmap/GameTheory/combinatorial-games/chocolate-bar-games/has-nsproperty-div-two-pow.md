@@ -1,6 +1,6 @@
 # Halving functions have the NS property
 
-**Halving functions have the NS property.** For every natural number $m \ge 1$, the function
+For every natural number $m \ge 1$, the function
 $x \mapsto \lfloor x / 2^m \rfloor$ on $\mathbb{N}$ has the NS property.
 
 ## Sources

@@ -1,4 +1,4 @@
 # Hermitian matrices have real-rooted characteristic polynomials
 
-**Hermitian matrices have real-rooted characteristic polynomials.** The characteristic
+The characteristic
 polynomial of a Hermitian complex matrix is real-rooted.

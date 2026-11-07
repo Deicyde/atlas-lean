@@ -1,6 +1,6 @@
 # UNBOUNDED KNAPSACK is NP-complete
 
-**UNBOUNDED KNAPSACK is NP-complete.** The unbounded knapsack decision problem belongs to NP,
+The unbounded knapsack decision problem belongs to NP,
 and every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

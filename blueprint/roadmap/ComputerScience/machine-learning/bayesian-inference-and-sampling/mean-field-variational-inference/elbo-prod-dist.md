@@ -1,6 +1,6 @@
 # ELBO of a product distribution
 
-**ELBO of a product distribution.** Let $A$ and $B$ be finite sets, let
+Let $A$ and $B$ be finite sets, let
 $p : A \times B \to \mathbb{R}$ be a joint, and let $q_1$ and $q_2$ be probability distributions
 on $A$ and $B$, with product $(q_1 q_2)(a, b) = q_1(a) q_2(b)$. Then
 

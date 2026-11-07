@@ -1,6 +1,6 @@
 # Convolutions and linear combinations of translates have the same closure
 
-**Convolutions and linear combinations of translates have the same closure.** Let
+Let
 $T = \mathbb{R}/2\pi\mathbb{Z}$ with the measure induced by Lebesgue measure on $[0, 2\pi)$, and
 let $L^1(T)$ be the space of real-valued integrable functions on $T$ modulo equality almost
 everywhere. Fix a real-valued integrable $f$ on $T$. Let $B_f \subseteq L^1(T)$ be the set of

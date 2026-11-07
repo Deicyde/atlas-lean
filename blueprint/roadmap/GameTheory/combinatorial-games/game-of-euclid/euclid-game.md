@@ -1,6 +1,6 @@
 # The game Euclid
 
-**The game Euclid.** Euclid as an impartial game: its positions are the pairs $(a, b)$ of
+Euclid as an impartial game: its positions are the pairs $(a, b)$ of
 natural numbers, its moves from $(a, b)$ are the Euclid moves, the rank of $(a, b)$ is $a + b$,
 and its starting position is $(1, 1)$.
 

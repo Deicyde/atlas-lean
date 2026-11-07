@@ -1,6 +1,6 @@
 # Block index of the empty list
 
-**Block index of the empty list.** The block index of the empty list of pairs is the empty
+The block index of the empty list of pairs is the empty
 index.
 
 ## Sources

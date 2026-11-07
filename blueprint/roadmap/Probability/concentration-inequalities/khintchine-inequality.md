@@ -1,6 +1,6 @@
 # Khintchine inequality
 
-**Khintchine inequality.** For every real $p > 0$ there are constants $A_p > 0$ and $B_p > 0$
+For every real $p > 0$ there are constants $A_p > 0$ and $B_p > 0$
 such that the following holds for every $N \in \mathbb{N}$, all real numbers $a_1, \dots, a_N$
 and every probability space. Let $\varepsilon_1, \dots, \varepsilon_N$ be independent measurable
 random variables, each almost surely equal to $1$ or $-1$ and each with mean $0$, and let

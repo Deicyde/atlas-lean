@@ -1,6 +1,6 @@
 # Normalizing a negated block
 
-**Normalizing a negated block.** Let $x \ge 0$ be an integer, let $t \ge 2$ and let
+Let $x \ge 0$ be an integer, let $t \ge 2$ and let
 $a_1, \dots, a_t$ be integers with $a_i \ge 1$ for every $i$. Then for every finite list of
 integers $b_1, \dots, b_m$ ($m \ge 0$), the finite continued fractions satisfy
 $[b_1, \dots, b_m, x, -a_t, -a_{t-1}, \dots, -a_1] =

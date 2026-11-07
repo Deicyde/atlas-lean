@@ -1,6 +1,6 @@
 # Sylvester–Gallai theorem
 
-**Sylvester–Gallai theorem.** Every finite non-collinear subset of the real Euclidean plane determines an ordinary line: two
+Every finite non-collinear subset of the real Euclidean plane determines an ordinary line: two
 points of the set such that no third point of the set is collinear with them.
 
 ## Sources

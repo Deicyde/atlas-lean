@@ -1,6 +1,6 @@
 # Simple roots of the Padovan–Perrin polynomial for $p = 1$
 
-**Simple roots of the Padovan–Perrin polynomial for $p = 1$.** Let $k_1, k_2, s$ be positive
+Let $k_1, k_2, s$ be positive
 integers with $\left(-\frac{k_2 (s + 1)}{k_1 s}\right)^s \neq \frac{k_1}{s + 1}$. Then the
 polynomial $P(z) = z^{s+1} - k_1 z - k_2$ is separable over $\mathbb{C}$, that is, it has only
 simple roots.

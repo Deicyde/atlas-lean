@@ -1,6 +1,6 @@
 # The path $\psi(T)$ has $2n + 2$ steps
 
-**The path $\psi(T)$ has $2n + 2$ steps.** For every $n \in \mathbb{N}$ and every
+For every $n \in \mathbb{N}$ and every
 semistandard Young tableau $T$ of shape $\theta^{(n)}$, the word $\psi(T)$ has length $2n + 2$.
 
 ## Sources

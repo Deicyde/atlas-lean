@@ -1,6 +1,6 @@
 # Knott expansions of Lucas numbers
 
-**Knott expansions of Lucas numbers.** For every $n \ge 1$, each of the Lucas numbers $L_{2n}$
+For every $n \ge 1$, each of the Lucas numbers $L_{2n}$
 and $L_{2n+1}$ (with $L_0 = 2$, $L_1 = 1$) has exactly $2n + 1$ Knott expansions.
 
 ## Sources

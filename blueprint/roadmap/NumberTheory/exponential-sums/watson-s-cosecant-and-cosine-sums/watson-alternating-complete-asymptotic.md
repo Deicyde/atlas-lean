@@ -1,6 +1,6 @@
 # Complete asymptotic expansion of Watson's alternating cosecant sum
 
-**Complete asymptotic expansion of Watson's alternating cosecant sum.** For natural numbers $N$
+For natural numbers $N$
 and $n$ let $C_n = \sum_{l=1}^{n-1} (-1)^{l+1} / \sin(\pi l / n)$ and
 
 $$

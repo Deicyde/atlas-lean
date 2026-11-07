@@ -1,6 +1,6 @@
 # Kronecker's class-number multiplier
 
-**Kronecker's class-number multiplier.** For an integer $d$ and a natural number $h \ge 1$,
+For an integer $d$ and a natural number $h \ge 1$,
 $\ell(d, h)$ is the product, over the primes $p$ dividing $h$, of
 
 $$\sum_{i=0}^{v} p^i - \left(\frac{d}{p}\right) \sum_{i=0}^{v-1} p^i,$$

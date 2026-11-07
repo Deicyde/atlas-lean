@@ -1,6 +1,6 @@
 # A satisfying choice gives a Hamiltonian path
 
-**A satisfying choice gives a Hamiltonian path.** Let $\varphi$ be a CNF formula with $m$
+Let $\varphi$ be a CNF formula with $m$
 clauses, let $v_0, \dots, v_{k-1}$ be its distinct variables in the order used by the
 construction, let $\sigma$ assign a truth value to every variable, and write
 $t_a = m + a(3m + 2)$ for the top of diamond $a$. Let $c : \mathbb{N} \to \mathbb{N}$ be such

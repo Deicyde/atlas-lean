@@ -1,6 +1,6 @@
 # Height one multiple zeta function
 
-**Height one multiple zeta function.** For a complex number $s$ and an integer $j \ge 0$, the
+For a complex number $s$ and an integer $j \ge 0$, the
 height one multiple zeta function is
 
 $$\zeta(s, \{1\}^j) = \sum_{n \ge 0} (n + 1)^{-s} \sum_{T} \prod_{m \in T} \frac{1}{m},$$

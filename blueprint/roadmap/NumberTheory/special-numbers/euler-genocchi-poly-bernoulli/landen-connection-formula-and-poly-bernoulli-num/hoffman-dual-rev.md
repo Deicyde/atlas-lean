@@ -1,6 +1,6 @@
 # Hoffman dual on reversed lists
 
-**Hoffman dual on reversed lists.** The auxiliary map $R$ on finite lists
+The auxiliary map $R$ on finite lists
 $l = (l_1, \dots, l_m)$ of natural numbers is defined recursively by: $R(()) = ()$; $R(l) = ()$
 if $l_1 = 0$; $R((1)) = (1)$; if $l_1 = 1$ and $m \ge 2$, then $R(l)$ is $R((l_2, \dots, l_m))$
 with its first entry increased by $1$ (unchanged if that list is empty); and if $l_1 \ge 2$, then

@@ -1,6 +1,6 @@
 # No group has countably infinitely many right orders
 
-**No group has countably infinitely many right orders.** For every group $G$, the set of right
+For every group $G$, the set of right
 orders on $G$ (linear orders $\le$ on $G$ such that $a \le b$ implies $ac \le bc$ for all
 $a, b, c \in G$) is either finite or uncountable. That is, Kourovka Problem 16.51 has a negative
 answer.

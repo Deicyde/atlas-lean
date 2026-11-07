@@ -1,6 +1,6 @@
 # Two-parameter Simons-type symmetry
 
-**Two-parameter Simons-type symmetry.** Let $\binom{a}{b}$ denote the generalized binomial
+Let $\binom{a}{b}$ denote the generalized binomial
 coefficient $\Gamma(a+1)/(\Gamma(b+1)\Gamma(a-b+1))$. For every natural number $n$ and all real
 $u > -1$ and $v > -1$,
 

@@ -1,6 +1,6 @@
 # Public-coin interactive-proof game
 
-**Public-coin interactive-proof game.** The game takes a length cap $c$, a number $k$ of
+The game takes a length cap $c$, a number $k$ of
 fresh coins per round, a verifier message function $V_{\mathrm{msg}}$, a verifier decision
 function $V_{\mathrm{dec}}$, a prover $P$ mapping pairs of a coin prefix and a transcript (a list
 of bitstrings) to bitstrings, an input $x$, a coin string $\rho$, a number $j$ of remaining

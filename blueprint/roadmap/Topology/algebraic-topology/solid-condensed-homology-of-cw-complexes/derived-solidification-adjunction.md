@@ -1,6 +1,6 @@
 # Derived solidification is left adjoint to the derived inclusion
 
-**Derived solidification is left adjoint to the derived inclusion.** An adjunction in which
+An adjunction in which
 derived solidification, from the derived category of light condensed abelian groups to the derived
 category of light solid abelian groups, is left adjoint to the derived inclusion $D(\iota)$ induced
 by the inclusion $\iota$ of light solid abelian groups into light condensed abelian groups.

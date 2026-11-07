@@ -1,6 +1,6 @@
 # Recurrence of the bronze numbers
 
-**Recurrence of the bronze numbers.** Let $B_n$ be the bronze numbers, the terms of the Lucas
+Let $B_n$ be the bronze numbers, the terms of the Lucas
 sequence $U(3, -1)$. For every natural number $n$, $B_{n+2} = 3B_{n+1} + B_n$.
 
 ## Sources

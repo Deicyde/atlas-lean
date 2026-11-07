@@ -1,6 +1,6 @@
 # The Gödel encoding of oracle codes is primitive recursive
 
-**The Gödel encoding of oracle codes is primitive recursive.** Regard oracle codes as coded
+Regard oracle codes as coded
 by their Gödel numbers, with the computable decoder as decoding. Then the map sending each oracle
 code to its Gödel number is primitive recursive.
 

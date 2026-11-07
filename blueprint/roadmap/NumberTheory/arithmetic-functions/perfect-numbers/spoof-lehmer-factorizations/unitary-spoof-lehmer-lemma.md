@@ -1,6 +1,6 @@
 # Lehmer's lemma for unitary spoof factorizations
 
-**Lehmer's lemma for unitary spoof factorizations.** Let $F$ be a finite multiset of integers,
+Let $F$ be a finite multiset of integers,
 write $E = \prod_{f \in F} f$ and $P = \prod_{f \in F} (f - 1)$, and let $k$, $\alpha$, $x$ and $y$
 be integers with $\alpha = \pm 1$. If $k P = E + \alpha$ and $k P (x - 1)(y - 1) = E x y - 1$,
 then $(\alpha x - E - \alpha)(\alpha y - E - \alpha) - (E^2 + \alpha E - \alpha) = 0$.

@@ -1,6 +1,6 @@
 # Primorial bound $3.4^m$ below $133$
 
-**Primorial bound $3.4^m$ below $133$.** For a natural number $n$ let $n\#$ be the
+For a natural number $n$ let $n\#$ be the
 primorial, the product of the primes $p \le n$. For every natural number $m < 133$,
 $10^m \cdot m\# \le 34^m$.
 

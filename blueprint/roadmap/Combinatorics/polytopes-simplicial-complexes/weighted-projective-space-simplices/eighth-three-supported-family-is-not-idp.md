@@ -1,6 +1,6 @@
 # Case (viii) of the three-supported classification is reflexive but not IDP
 
-**Case (viii) of the three-supported classification is reflexive but not IDP.** Let
+Let
 $x_1, x_2, x_3$ and $k, s$ be positive integers with $x_3 = skx_2 + s - k + 1$, and put
 $r_1 = 1 + kx_2$, $r_2 = (skx_2 + s + k)(1 + x_1(1 + kx_2))$ and
 $r_3 = (1 + x_1(1 + kx_2))(1 + x_2(skx_2 + s + k))$. Suppose that

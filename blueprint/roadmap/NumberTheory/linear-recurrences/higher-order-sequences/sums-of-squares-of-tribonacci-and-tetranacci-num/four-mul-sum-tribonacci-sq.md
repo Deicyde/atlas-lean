@@ -1,6 +1,6 @@
 # Sum of squares of a Tribonacci sequence
 
-**Sum of squares of a Tribonacci sequence.** Let $T \colon \mathbb{Z} \to \mathbb{Z}$ satisfy
+Let $T \colon \mathbb{Z} \to \mathbb{Z}$ satisfy
 $T(m+3) = T(m+2) + T(m+1) + T(m)$ for every integer $m$. Then for every natural number $n$,
 
 $$4 \sum_{k=1}^{n} T(k)^2 = 4\,T(n)\,T(n+1) - 4\,T(0)\,T(1) -

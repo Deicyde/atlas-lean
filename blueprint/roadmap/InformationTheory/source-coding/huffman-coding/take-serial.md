@@ -1,6 +1,6 @@
 # Removing a work item by serial
 
-**Removing a work item by serial.** Given a serial number $s$ and a table $t$ of optional
+Given a serial number $s$ and a table $t$ of optional
 Huffman work items, look up the entry of $t$ at index $s$. If that entry is a work item whose
 serial number is $s$, the result is its tree together with the table obtained from $t$ by
 emptying the entry at $s$; otherwise (the index is out of bounds, the entry is empty, or it

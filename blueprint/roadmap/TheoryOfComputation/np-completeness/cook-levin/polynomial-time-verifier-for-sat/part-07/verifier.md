@@ -1,6 +1,6 @@
 # The `TM2` SAT verifier
 
-**The `TM2` SAT verifier.** For a flag $\mathit{cap}$, the host machine with that flag computes
+For a flag $\mathit{cap}$, the host machine with that flag computes
 the host's answer in polynomial time. For every pair $(x, w)$ of bit lists, started on the input
 $x \# w$ (the bits of $x$, a separator, then the bits of $w$), it halts with the single bit
 $\mathrm{ans}_{\mathit{cap}}(x, w)$ on its output stack and every other stack empty within $T(n)$

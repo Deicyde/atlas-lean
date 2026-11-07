@@ -1,6 +1,6 @@
 # Exponential generating function of excedances over cyclic permutations
 
-**Exponential generating function of excedances over cyclic permutations.** Let $x \ne 1$ be
+Let $x \ne 1$ be
 a rational number. For $n \ge 1$ let $C_n(x) = \sum_{m=0}^{n} C_{n,m} x^m$, where the circular
 Eulerian number $C_{n,m}$ is the number of permutations $w$ of $\{0, 1, \dots, n-1\}$ whose points
 all lie in a single cycle and which have exactly $m$ excedances, that is, points $i$ with

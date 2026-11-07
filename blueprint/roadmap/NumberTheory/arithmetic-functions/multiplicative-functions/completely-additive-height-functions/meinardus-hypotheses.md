@@ -1,6 +1,6 @@
 # Meinardus' hypotheses
 
-**Meinardus' hypotheses.** Let $b_1, b_2, \dots$ be real weights (the value $b_0$ is unused),
+Let $b_1, b_2, \dots$ be real weights (the value $b_0$ is unused),
 let $\alpha$ and $A$ be reals and let $G : \mathbb{C} \to \mathbb{C}$. The weights satisfy
 Meinardus' hypotheses (M1)–(M3) with exponent $\alpha$, residue $A$ and continuation $G$ if there
 is $C_0$ with $0 < C_0 < 1$ such that: (M1) for $\operatorname{Re} s > \alpha$ the Dirichlet series

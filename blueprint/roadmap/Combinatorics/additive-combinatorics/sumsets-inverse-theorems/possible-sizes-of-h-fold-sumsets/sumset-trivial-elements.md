@@ -1,6 +1,6 @@
 # Trivial elements of an $h$-fold sumset
 
-**Trivial elements of an $h$-fold sumset.** Let $G$ be an additive commutative monoid, let
+Let $G$ be an additive commutative monoid, let
 $h, k \in \mathbb{N}$ and let $a \colon \mathbb{N} \to G$ list the set
 $A = \{a_0, a_1, \dots, a_{k-1}\}$; write $n x$ for the $n$-fold sum $x + \dots + x$. The
 trivial elements of the $h$-fold sumset $hA$ form the finite set that is empty when $k = 0$ and

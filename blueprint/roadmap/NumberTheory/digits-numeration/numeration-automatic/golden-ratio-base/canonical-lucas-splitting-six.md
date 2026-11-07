@@ -1,6 +1,6 @@
 # Canonical splitting of the sixth Lucas interval
 
-**Canonical splitting of the sixth Lucas interval.** The canonical splitting of the Lucas
+The canonical splitting of the Lucas
 interval $\Lambda_6$ is the list $[(4, 11), (3, 18), (4, 18)]$.
 
 The pairs stand for the translates $\Lambda_4 + L_5$, $\Lambda_3 + L_6$ and $\Lambda_4 + L_6$,

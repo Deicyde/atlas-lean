@@ -1,6 +1,6 @@
 # Multigraded Betti number
 
-**Multigraded Betti number.** Let $K$ be a field, let $R = K[x_1, \dots, x_n]$, and
+Let $K$ be a field, let $R = K[x_1, \dots, x_n]$, and
 let $M$ be a $\mathbb{Z}^n$-graded $R$-module with a multigraded free resolution
 $P_\bullet \to M$. Fix multigraded base change data for $P_\bullet$; for each
 $\alpha \in \mathbb{Z}^n$ they supply a chain complex $C^\alpha$ of $K$-vector spaces

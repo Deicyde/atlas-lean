@@ -1,6 +1,6 @@
 # Hadwiger's theorem
 
-**Hadwiger's theorem.** For every natural number $n$, the real vector space of continuous
+For every natural number $n$, the real vector space of continuous
 invariant valuations on the convex bodies of $\mathbb{R}^n$ (continuous, additive, and invariant
 under linear isometries and translations) is finite-dimensional of dimension $n + 1$.
 

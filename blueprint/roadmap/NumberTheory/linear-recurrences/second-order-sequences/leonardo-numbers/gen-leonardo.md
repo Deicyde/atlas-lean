@@ -1,6 +1,6 @@
 # Generalized Leonardo numbers
 
-**Generalized Leonardo numbers.** For an integer $k$, the generalized Leonardo numbers
+For an integer $k$, the generalized Leonardo numbers
 $L_{k,0}, L_{k,1}, L_{k,2}, \ldots$ are the integers defined by $L_{k,0} = L_{k,1} = 1$ and
 $L_{k,n+2} = L_{k,n+1} + L_{k,n} + k$ for all $n \ge 0$.
 

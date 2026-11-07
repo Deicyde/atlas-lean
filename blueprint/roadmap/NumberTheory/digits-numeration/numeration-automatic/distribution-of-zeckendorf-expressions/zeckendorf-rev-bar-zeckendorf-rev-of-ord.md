@@ -1,6 +1,6 @@
 # $\overline{\mathrm{rev}}$ of the reversal of an element of $\tilde E$ (Lemma 12)
 
-**$\overline{\mathrm{rev}}$ of the reversal of an element of $\tilde E$ (Lemma 12).** Let $L$
+Let $L$
 and $\tilde L$ form a periodic Zeckendorf pair, let $E$ and $\tilde E$ be the periodic Zeckendorf
 collections determined by $L$ and $\tilde L$, and index coefficient functions from $0$. Let
 $\mu \in \tilde E$ and $t \ge 1$ be such that $\mu_{t-1} \ne 0$ and $\mu_j = 0$ for all $j \ge t$.

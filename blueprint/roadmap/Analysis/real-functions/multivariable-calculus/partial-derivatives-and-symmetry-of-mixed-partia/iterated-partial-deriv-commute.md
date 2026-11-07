@@ -1,6 +1,6 @@
 # Symmetry of mixed partial derivatives (Clairaut's theorem)
 
-**Symmetry of mixed partial derivatives (Clairaut's theorem).** For a function
+For a function
 $g : \mathbb{R}^n \to \mathbb{R}$, write $\partial_i g$ for its partial derivative along the
 $i$-th coordinate axis. If $f : \mathbb{R}^n \to \mathbb{R}$ is twice continuously
 differentiable, then for all coordinate indices $i, j$ and every point $x \in \mathbb{R}^n$,

@@ -1,6 +1,6 @@
 # Erdős Problem 992 on the discrepancy of fractional parts
 
-**Erdős Problem 992 on the discrepancy of fractional parts.** For a strictly increasing
+For a strictly increasing
 sequence of integers $x_0 < x_1 < \cdots$, a real number $\alpha$ and a natural number $N$, let
 $D(N)$ be the supremum, over rationals $p, q$ with $0 \le p \le q \le 1$, of
 $\lvert A(p, q) - (q - p) N \rvert$, where $A(p, q)$ is the number of indices $n < N$ for which

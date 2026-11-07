@@ -1,6 +1,6 @@
 # New-information zones lie in $\mathrm{CST}_k$
 
-**New-information zones lie in $\mathrm{CST}_k$.** For all $r, k \in \mathbb{N}$, the
+For all $r, k \in \mathbb{N}$, the
 new-information zone $\mathrm{NIZ}_k$ of order $k$ for the shift $r$ is contained in the set
 $\mathrm{CST}_k$ for the shift $r$.
 

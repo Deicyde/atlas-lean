@@ -1,6 +1,6 @@
 # Negabinary representations with digits $1$ and $a$
 
-**Negabinary representations with digits $1$ and $a$.** Let $a \in \mathbb{Z}$. Every integer
+Let $a \in \mathbb{Z}$. Every integer
 $z$ can be written as $z = \sum_{j=0}^{k} b_j (-2)^j$ for some $k \in \mathbb{N}$ and digits
 $b_0, \dots, b_k \in \{1, a\}$ if and only if $a = 1 + 3^m$ or $a = 1 - 3^m$ for some integer
 $m \ge 0$.

@@ -1,6 +1,6 @@
 # The Erdős–Szemerédi sunflower bound for $k \ge 4$
 
-**The Erdős–Szemerédi sunflower bound for $k \ge 4$.** For every natural number $k \ge 4$ there
+For every natural number $k \ge 4$ there
 is a real number $c$ with $0 < c < 2$ such that, for all sufficiently large $n$, every family of
 subsets of $\{0, \dots, n-1\}$ that contains no $k$-sunflower has at most $c^n$ members. Here a
 $k$-sunflower in a family is a choice of $k$ distinct members whose pairwise intersections are

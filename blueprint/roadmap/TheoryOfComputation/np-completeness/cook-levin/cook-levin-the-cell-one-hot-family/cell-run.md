@@ -1,6 +1,6 @@
 # Generator run for one cell
 
-**Generator run for one cell.** Let $L$ be a layout with $g$ symbol codes and let $j < H$, $V$
+Let $L$ be a layout with $g$ symbol codes and let $j < H$, $V$
 and $B$ be natural numbers. Let $F$ be counter values of the one-hot generator with the scratch
 counters $Q$, tmp, md, $c_1$, $c_2$ empty, the counters $CB$ and $P$ zero, $Vc = V$, $Gc = g$,
 $Hs = j$, $j g + KB = B$, and suppose $B + g \le V$. Then for every output $o$ and flag $v$, the

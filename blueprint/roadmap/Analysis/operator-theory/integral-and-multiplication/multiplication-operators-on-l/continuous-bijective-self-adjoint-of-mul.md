@@ -1,6 +1,6 @@
 # Multiplication by $x$ on $L^2((1,2))$ is bounded, bijective and self-adjoint
 
-**Multiplication by $x$ on $L^2([1,2])$ is bounded, bijective and self-adjoint.** Let
+Let
 $L^2([1,2])$ be the real Hilbert space of square-integrable real functions for Lebesgue measure
 on $[1,2]$, with inner product $\langle f, g\rangle = \int_1^2 f(x)g(x)\,dx$. Let
 $T : L^2([1,2]) \to L^2([1,2])$ be a linear map such that for every $f$, $(Tf)(x) = x f(x)$ for

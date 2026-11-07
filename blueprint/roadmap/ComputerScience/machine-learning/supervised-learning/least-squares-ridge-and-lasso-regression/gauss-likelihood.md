@@ -1,6 +1,6 @@
 # Gaussian likelihood of linear regression
 
-**Gaussian likelihood of linear regression.** Let $X$ be a real matrix with $m$ rows and
+Let $X$ be a real matrix with $m$ rows and
 columns indexed by a finite set $\iota$, let $y \in \mathbb{R}^m$ and let $v \ge 0$. The Gaussian
 likelihood with noise variance $v$ is the function of $\theta \in \mathbb{R}^\iota$ given by
 

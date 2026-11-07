@@ -1,6 +1,6 @@
 # Restricted weighted composition count
 
-**Restricted weighted composition count.** Let $R$ be a commutative ring, $S$ a finite set
+Let $R$ be a commutative ring, $S$ a finite set
 of natural numbers and $f \colon \mathbb{N} \to R$ a weight function. For natural numbers $n$
 and $k$, $d_{S,f}(n, k)$ is the sum, over all $k$-tuples $(\pi_1, \dots, \pi_k)$ of natural
 numbers with every $\pi_i \in S$ and $\pi_1 + \dots + \pi_k = n$, of the weight

@@ -1,6 +1,6 @@
 # Integral averages for $U(P, -1)$
 
-**Integral averages for $U(P, -1)$.** Let $U = U(P, Q)$ be a Lucas sequence with $Q = -1$,
+Let $U = U(P, Q)$ be a Lucas sequence with $Q = -1$,
 so that its discriminant is $D = P^2 + 4$, and let $\pi_U(n)$ be the least period of $U$ modulo
 $n$. Call a natural number $n$ good if $n$ lies in the set $S'(U)$ of positive integers $n$
 coprime to $Q$ with $\pi_U(n) \mid n$ and $n \mid U_1 + \dots + U_n$, and every integer sequence

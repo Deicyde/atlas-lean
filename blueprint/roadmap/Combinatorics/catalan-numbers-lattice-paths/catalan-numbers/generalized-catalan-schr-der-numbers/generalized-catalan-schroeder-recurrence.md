@@ -1,6 +1,6 @@
 # Functional equation of the generalized Catalan–Schröder recurrence
 
-**Functional equation of the generalized Catalan–Schröder recurrence.** Let $R$ be a
+Let $R$ be a
 commutative ring, let $s, t, p \in R$, and let $(a_n)_{n \ge 0}$ be a sequence in $R$ with
 $a_0 = 1$, $a_1 = p$ and
 

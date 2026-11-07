@@ -1,6 +1,6 @@
 # Total number of nonattacking anassas on the square board
 
-**Total number of nonattacking anassas on the square board.** For natural numbers $m$ and
+For natural numbers $m$ and
 $k$ and each $p$, let $A_S(m, k, p)$ be the number of nonattacking placements of $k$ anassas on
 the square board $[1, m]^2$ with exactly $p$ of them strictly below the main diagonal, that is,
 the number of $k$-element sets of squares $(i, j) \in [1, m]^2$ in which no two squares have

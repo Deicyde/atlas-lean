@@ -1,6 +1,6 @@
 # No solutions of $x = -1-x-a$ modulo $n$ when $n$ and $a$ are even
 
-**No solutions of $x = -1-x-a$ modulo $n$ when $n$ and $a$ are even.** Let $n$ be a
+Let $n$ be a
 positive even integer and $a \in \mathbb{Z}/n$ whose representative in $\{0, \dots, n-1\}$ is
 even. Then no $x \in \mathbb{Z}/n$ satisfies $x = -1-x-a$.
 

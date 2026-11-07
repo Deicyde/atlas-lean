@@ -1,6 +1,6 @@
 # Small values of the discriminant $d(\alpha, g)$ and the multiplier $\ell(d, h)$
 
-**Small values of the discriminant $d(\alpha, g)$ and the multiplier $\ell(d, h)$.** The
+The
 discriminant attached to $n = 2^\alpha g h^2$ satisfies $d(0, 1) = -4$, $d(0, 3) = -3$ and
 $d(1, 1) = -8$, and Kronecker's class-number multiplier satisfies $\ell(-4, 1) = 1$ and
 $\ell(-4, 3) = 5$.

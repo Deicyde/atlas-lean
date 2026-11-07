@@ -1,6 +1,6 @@
 # A simple group with permuting conjugate subgroups (Kourovka 10.66 refuted)
 
-**A simple group with permuting conjugate subgroups (Kourovka 10.66 refuted).** There exist a
+There exist a
 simple group $G$ and nontrivial subgroups $A$ and $B$ of $G$ such that the product set $AB$ is not
 all of $G$ and $A \cdot gBg^{-1} = gBg^{-1} \cdot A$ for every $g \in G$, where products of
 subgroups are products of subsets of $G$. So the conjecture of Kourovka Problem 10.66 is false.

@@ -1,6 +1,6 @@
 # The $k$-Naples rule on $\mathbb{Z}$
 
-**The $k$-Naples rule on $\mathbb{Z}$.** When the spots in a finite list $O$ of integers are
+When the spots in a finite list $O$ of integers are
 occupied, a car preferring $a \in \mathbb{Z}$ parks in $a$ if $a$ is free; otherwise in the first
 free spot among $a - 1, \dots, a - k$, checked in decreasing order with no lower bound; otherwise
 in the first free spot among $a + 1, \dots, a + |O| + 1$, checked in increasing order (one of

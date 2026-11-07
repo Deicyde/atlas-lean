@@ -1,6 +1,6 @@
 # Linear combination of period vectors
 
-**Linear combination of period vectors.** The linear combination of a list of period vectors with a
+The linear combination of a list of period vectors with a
 coefficient list `c`: pair the two lists position by position and
 sum the scaled periods, and reject mismatched lengths by
 returning `0` (the length guard is checked up front, before the

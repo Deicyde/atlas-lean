@@ -1,6 +1,6 @@
 # Constant functions have the NS property
 
-**Constant functions have the NS property.** For every natural number $c$, the constant
+For every natural number $c$, the constant
 function $\mathbb{N} \to \mathbb{N}$ with value $c$ has the NS property.
 
 ## Sources

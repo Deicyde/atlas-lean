@@ -1,6 +1,6 @@
 # Mex of $\{1, 2, 3, 6\}$
 
-**Mex of $\{1, 2, 3, 6\}$.** The least positive integer not in $\{1, 2, 3, 6\}$ is $4$.
+The least positive integer not in $\{1, 2, 3, 6\}$ is $4$.
 
 ## Sources
 

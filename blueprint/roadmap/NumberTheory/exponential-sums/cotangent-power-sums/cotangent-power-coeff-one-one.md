@@ -1,6 +1,6 @@
 # Girstmair's coefficient at index (1, 1)
 
-**Girstmair's coefficient at index (1, 1).** Girstmair's cotangent power coefficient
+Girstmair's cotangent power coefficient
 $c_{1,1}$ equals $1$, matching the identity $i \cot = i \cot$.
 
 ## Sources

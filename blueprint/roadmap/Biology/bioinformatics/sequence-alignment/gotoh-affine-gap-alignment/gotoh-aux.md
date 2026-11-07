@@ -1,6 +1,6 @@
 # Fuel-bounded Gotoh recursion
 
-**Fuel-bounded Gotoh recursion.** Fix an integer-valued scoring function $\sigma$ on pairs of
+Fix an integer-valued scoring function $\sigma$ on pairs of
 letters and integer gap-open and gap-extend penalties $g_o$ and $g_e$. A gap state records what
 the previous alignment column was: a match ($\mathrm{none}$), a gap in the second sequence
 ($\mathrm{gapX}$) or a gap in the first sequence ($\mathrm{gapY}$). For gap states $p$, $q$ let

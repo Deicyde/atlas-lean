@@ -1,6 +1,6 @@
 # Explicit formula for the moments over h-free polynomials
 
-**Explicit formula for the moments over h-free polynomials.** Let $F$ be a finite field and
+Let $F$ be a finite field and
 let $h, k, j, n$ be natural numbers. Write $M_n$ for the monic polynomials of degree $n$ over
 $F$, $S_h$ for the $h$-free monic polynomials (those divisible by the $h$-th power of no monic
 irreducible polynomial) and $\omega_k(f)$ for the number of distinct monic irreducible factors of

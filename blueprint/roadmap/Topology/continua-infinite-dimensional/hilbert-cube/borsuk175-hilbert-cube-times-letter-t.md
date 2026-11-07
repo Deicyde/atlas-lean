@@ -1,6 +1,6 @@
 # The Hilbert cube absorbs the letter T (Borsuk's Problem 175)
 
-**The Hilbert cube absorbs the letter T (Borsuk's Problem 175).** Let $Q = [0,1]^{\mathbb{N}}$ be
+Let $Q = [0,1]^{\mathbb{N}}$ be
 the Hilbert cube and let $T \subset \mathbb{R}^2$ be the letter-T curve. Both parts of Borsuk's
 Problem 175 from the Scottish Book have affirmative answers: (a) the product $Q \times T$ is
 homeomorphic to $Q$, and (b) the product $T^{\mathbb{N}}$ of countably many copies of $T$ is

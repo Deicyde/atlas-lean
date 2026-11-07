@@ -1,6 +1,6 @@
 # Adding a fresh start symbol preserves Chomsky normal form
 
-**Adding a fresh start symbol preserves Chomsky normal form.** If a context-free grammar
+If a context-free grammar
 $g$ is in Chomsky normal form and no production of $g$ has empty output, then the fresh-start
 grammar of $g$ is in Chomsky normal form.
 

@@ -1,6 +1,6 @@
 # Sums over a subinterval of $(0, p)$ as colored finite multiple zeta values
 
-**Sums over a subinterval of $(0, p)$ as colored finite multiple zeta values.** Let
+Let
 $N \ge 1$, $0 \le j < N$, and let $k = (k_1, \dots, k_r)$ be a tuple of natural numbers of weight
 $w = k_1 + \dots + k_r$. For a prime $p$ and $\alpha \in (\mathbb{Z}/N\mathbb{Z})^r$ let
 $\zeta^{\alpha}_{p,N}(k) \in \mathbb{Z}/p\mathbb{Z}$ be the colored finite multiple harmonic sum,

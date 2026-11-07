@@ -1,6 +1,6 @@
 # Hajnal–Szemerédi theorem in clique-factor and equitable-colouring form
 
-**Hajnal–Szemerédi theorem in clique-factor and equitable-colouring form.** For all integers
+For all integers
 $r \ge 2$ and $m \ge 1$ and every finite simple graph $G$ with exactly $rm$ vertices, (a) if every
 vertex of $G$ has degree at least $m(r - 1)$, then $G$ contains $m$ pairwise disjoint cliques of
 $r$ vertices each, and (b) if every vertex of $G$ has degree at most $m - 1$, then $G$ has a

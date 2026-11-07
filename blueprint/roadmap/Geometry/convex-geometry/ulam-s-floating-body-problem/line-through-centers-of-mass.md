@@ -1,6 +1,6 @@
 # Direction of the line through the centers of mass
 
-**Direction of the line through the centers of mass.** Let $d$ be a natural number, let
+Let $d$ be a natural number, let
 $K \subseteq \mathbb{R}^d$, let $\xi$ be a unit vector in $\mathbb{R}^d$, let
 $\delta \in \mathbb{R}$, and let $H$ be a cutting hyperplane of $K$ in direction $\xi$ at level
 $\delta$, with translation $t$, so that

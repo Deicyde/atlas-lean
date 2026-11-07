@@ -1,6 +1,6 @@
 # The empty set lies in the van der Waerden ideal
 
-**The empty set lies in the van der Waerden ideal.** The empty subset of $\mathbb{N}$ belongs to
+The empty subset of $\mathbb{N}$ belongs to
 the van der Waerden ideal.
 
 ## Sources

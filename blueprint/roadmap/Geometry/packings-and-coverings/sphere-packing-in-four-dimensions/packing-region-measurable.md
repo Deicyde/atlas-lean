@@ -1,6 +1,6 @@
 # The region covered by a packing is measurable
 
-**The region covered by a packing is measurable.** For every packing $P$ in $\mathbb{R}^4$,
+For every packing $P$ in $\mathbb{R}^4$,
 the region covered by $P$, the union of its packed closed balls, is a Borel set; in
 particular it is Lebesgue measurable.
 

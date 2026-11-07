@@ -1,6 +1,6 @@
 # Residues of the Ulam words of length 2 modulo 3
 
-**Residues of the Ulam words of length 2 modulo 3.** Read the Ulam words of length $2$ as
+Read the Ulam words of length $2$ as
 binary numerals, most significant letter first. None of their values is congruent to $0$ modulo
 $3$, exactly one is congruent to $1$, and exactly one is congruent to $2$.
 

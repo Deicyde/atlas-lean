@@ -1,6 +1,6 @@
 # Cartier operator $\Lambda_k$ on Laurent polynomials
 
-**Cartier operator $\Lambda_k$ on Laurent polynomials.** Let $R$ be a semiring and $f$ a
+Let $R$ be a semiring and $f$ a
 Laurent polynomial in $r$ variables with coefficients in $R$. For a natural number $k > 0$,
 $\Lambda_k f$ keeps the terms of $f$ whose exponents are all multiples of $k$ and substitutes
 $x_s^k \mapsto x_s$ for each variable, so that the coefficient of $x^j$ in $\Lambda_k f$ is the

@@ -1,6 +1,6 @@
 # Generator number of almost simple groups (Kourovka 11.27)
 
-**Generator number of almost simple groups (Kourovka 11.27).** Let $S$
+Let $S$
 be a finite non-abelian simple group, identified with its inner automorphism group
 $\mathrm{Inn}(S) \le \mathrm{Aut}(S)$. For every subgroup $G$ of $\mathrm{Aut}(S)$ containing $S$,
 $d(G) = \max(2, d(G / S))$, where $d(G)$ is the minimal number of generators of $G$ and

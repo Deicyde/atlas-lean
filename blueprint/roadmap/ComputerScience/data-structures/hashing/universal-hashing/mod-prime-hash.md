@@ -1,6 +1,6 @@
 # Mod-prime hash function
 
-**Mod-prime hash function.** For natural numbers $p$ and $m$ with $m > 0$ and elements $a, b$
+For natural numbers $p$ and $m$ with $m > 0$ and elements $a, b$
 of $\mathbb{Z}/p\mathbb{Z}$, the mod-prime hash function
 $h_{a,b} \colon \mathbb{Z}/p\mathbb{Z} \to \{0, \dots, m - 1\}$ is
 $h_{a,b}(x) = \operatorname{val}(ax + b) \bmod m$, where $ax + b$ is computed in

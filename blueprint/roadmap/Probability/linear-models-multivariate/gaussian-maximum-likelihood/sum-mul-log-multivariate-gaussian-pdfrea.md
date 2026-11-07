@@ -1,6 +1,6 @@
 # The weighted Gaussian log-likelihood via the scatter matrix
 
-**The weighted Gaussian log-likelihood via the scatter matrix.** Let $I$ be a finite set and
+Let $I$ be a finite set and
 $J$ a finite set with $n$ elements, let $x_i \in \mathbb{R}^J$ ($i \in I$) be points with real
 weights $w_i$ whose sum $W = \sum_{i \in I} w_i$ is nonzero, let $\mu \in \mathbb{R}^J$, let $S$
 be a positive definite real $J \times J$ matrix, and let $C(\mu)$ be the weighted scatter matrix

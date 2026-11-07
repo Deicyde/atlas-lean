@@ -1,6 +1,6 @@
 # Wolstenholme's congruence for odd powers
 
-**Wolstenholme's congruence for odd powers.** Let $\nu \ge 1$ be odd and let $p$ be a prime with
+Let $\nu \ge 1$ be odd and let $p$ be a prime with
 $p \ge \nu + 4$. Then in $\mathbb{Z}/p^2\mathbb{Z}$
 
 $$

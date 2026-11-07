@@ -1,6 +1,6 @@
 # Normalization of Levene's distribution
 
-**Normalization of Levene's distribution.** For `nA ≤ 2N` the probabilities
+For `nA ≤ 2N` the probabilities
 `leveneProb N nA h` over the admissible heterozygote counts `h` sum to one.
 
 ## Sources

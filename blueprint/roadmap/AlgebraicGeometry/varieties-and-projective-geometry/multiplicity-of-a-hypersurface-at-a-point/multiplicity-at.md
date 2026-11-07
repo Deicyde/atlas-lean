@@ -1,6 +1,6 @@
 # Multiplicity of a polynomial at a projective point
 
-**Multiplicity of a polynomial at a projective point.** Let $K$ be a field and $F$ a
+Let $K$ be a field and $F$ a
 polynomial over $K$ in the variables $(X_i)_{i \in \sigma}$. The multiplicity of $F$ at a point
 $p$ of the projective space $\mathbb{P}(K^\sigma)$ is the order of vanishing of $F$ at the chosen
 representative $\bar p \in K^\sigma$ of $p$, as a natural number, with the value $\infty$ read

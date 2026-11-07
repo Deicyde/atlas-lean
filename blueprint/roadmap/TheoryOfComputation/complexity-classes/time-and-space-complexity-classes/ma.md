@@ -1,6 +1,6 @@
 # The class MA (Merlin–Arthur)
 
-**The class MA (Merlin–Arthur).** A decision problem $L$ is in $\mathsf{MA}$ when there are
+A decision problem $L$ is in $\mathsf{MA}$ when there are
 polynomials $p$ and $q$ with natural-number coefficients and a polynomial-time computable
 predicate $R$ on triples $(x, w, r)$ of bitstrings such that, for every bitstring $x$, with
 $N_x(w)$ the number of strings $r$ of length $p(|x|)$ for which $R(x, w, r)$ is true: if $L(x)$

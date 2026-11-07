@@ -1,6 +1,6 @@
 # Nonarchimedean criterion using positive integers
 
-**Nonarchimedean criterion using positive integers.** Let $K$ be a field and $v$ a real-valued
+Let $K$ be a field and $v$ a real-valued
 absolute value on $K$. Then $v$ is nonarchimedean, that is, $v(x + y) \le \max(v(x), v(y))$ for
 all $x, y \in K$, if and only if $v(n) \le 1$ for every positive integer $n$, viewed as the
 element $n \cdot 1$ of $K$.

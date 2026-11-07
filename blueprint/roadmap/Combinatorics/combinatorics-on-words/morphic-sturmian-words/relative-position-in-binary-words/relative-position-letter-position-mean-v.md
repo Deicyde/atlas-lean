@@ -1,6 +1,6 @@
 # Mean values of the position functions
 
-**Mean values of the position functions.** Let $w$ be an infinite word over $\{a, b\}$ in
+Let $w$ be an infinite word over $\{a, b\}$ in
 which both letters occur infinitely often, with letter position functions $p_a$, $p_b$ and
 relative position function $r$, and consider the sequences $r(n)/n$, $p_b(n)/n$ and $p_a(n)/n$
 in the extended reals $[-\infty, \infty]$. If one of the three sequences converges, then so do

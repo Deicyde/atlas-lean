@@ -1,6 +1,6 @@
 # Modular Schur numbers modulo a prime
 
-**Modular Schur numbers modulo a prime.** Let $p$ be a prime and let $l$ be a positive integer
+Let $p$ be a prime and let $l$ be a positive integer
 with $l \ge p - 1$ and $l \not\equiv 1 \pmod p$. Then the generalized Schur number modulo $p$
 satisfies $S_p(k, l) = k$ for every natural number $k$ with $1 \le k \le p - 1$, and
 $S_p(k, l) = p - 1$ for every natural number $k \ge p - 1$.

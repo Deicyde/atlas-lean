@@ -1,6 +1,6 @@
 # Block prefixes of a natural number
 
-**Block prefixes of a natural number.** The blocks of $r \in \mathbb{N}$ are the maximal runs
+The blocks of $r \in \mathbb{N}$ are the maximal runs
 of Zeckendorf indices of $r$ in which consecutive indices differ by exactly $2$, listed from the
 unit digit. For $i \in \mathbb{N}$, the block prefix $r[i]$ is the sum of the Fibonacci numbers
 $F_j$ over the indices $j$ in the first $i$ blocks of $r$, or in all blocks when $i$ exceeds the

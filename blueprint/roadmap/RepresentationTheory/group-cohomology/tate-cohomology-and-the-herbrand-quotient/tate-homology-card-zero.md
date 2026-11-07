@@ -1,6 +1,6 @@
 # Cardinality of Tate homology in degree zero
 
-**Cardinality of Tate homology in degree zero.** Let $G$ be a finite group, $R$ a commutative
+Let $G$ be a finite group, $R$ a commutative
 ring and $M$ an $R$-linear representation of $G$. The cardinality of the degree-$0$ Tate homology
 of $M$ equals the cardinality of the Tate cohomology group $\hat H^{-1}(G, M)$.
 

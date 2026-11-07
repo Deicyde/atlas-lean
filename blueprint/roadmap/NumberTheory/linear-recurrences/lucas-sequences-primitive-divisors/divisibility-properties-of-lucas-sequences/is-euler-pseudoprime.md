@@ -1,6 +1,6 @@
 # Euler pseudoprime
 
-**Euler pseudoprime.** Let $a$ be an integer. A natural number $N$ is an Euler pseudoprime to
+Let $a$ be an integer. A natural number $N$ is an Euler pseudoprime to
 the base $a$ when $N$ is odd and composite, $\gcd(a, N) = 1$, and
 $a^{(N-1)/2} \equiv (a/N) \pmod N$, where $(a/N)$ is the Jacobi symbol.
 

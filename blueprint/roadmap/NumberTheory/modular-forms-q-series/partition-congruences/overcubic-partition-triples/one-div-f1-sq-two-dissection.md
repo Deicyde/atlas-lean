@@ -1,6 +1,6 @@
 # The 2-dissection of $1/f_1^2$
 
-**The 2-dissection of $1/f_1^2$.** For $k \ge 1$ let
+For $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$, an integer power series in $q$. Then
 
 $$f_2^5 f_8 f_{16}^2 = f_1^2 f_8^6 + 2 q f_1^2 f_4^2 f_{16}^4.$$

@@ -1,6 +1,6 @@
 # Literal routine of the transition-clause generator
 
-**Literal routine of the transition-clause generator.** Fix a layout with label/state block
+Fix a layout with label/state block
 size $A$, $K$ stacks, $g$ symbol codes and window depth $d$, tables $\mathrm{la}$, $\mathrm{na}$,
 $\mathrm{wa}$ and a number $N$ of situations, and let $n = Kd + 2$ be the number of literals of a
 clause. For a situation $i < N$ and a literal number $j < n$, this assigns a generator instruction

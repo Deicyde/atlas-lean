@@ -1,6 +1,6 @@
 # Encoding DFA accepts only end-marker encodings
 
-**Encoding DFA accepts only end-marker encodings.** The encoding DFA reaches the accepting state only on encodings.
+The encoding DFA reaches the accepting state only on encodings.
 
 ## Sources
 

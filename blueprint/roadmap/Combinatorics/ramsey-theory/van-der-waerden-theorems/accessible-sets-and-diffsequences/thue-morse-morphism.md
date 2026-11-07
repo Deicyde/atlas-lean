@@ -1,6 +1,6 @@
 # The Thue–Morse morphism $\mu$
 
-**The Thue–Morse morphism $\mu$.** The morphism $\mu$ on binary words sends the letter $0$ to
+The morphism $\mu$ on binary words sends the letter $0$ to
 the word $10$ and the letter $1$ to the word $01$.
 
 ## Sources

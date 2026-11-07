@@ -1,6 +1,6 @@
 # Consecutive cyclic prime labeling of the ladder
 
-**Consecutive cyclic prime labeling of the ladder.** Let $n$ and $s$ be natural numbers.
+Let $n$ and $s$ be natural numbers.
 Number the vertices of the ladder $P_n \times P_2$ along its perimeter by $0, 1, \dots, 2n - 1$,
 with $v_k$ at position $k - 1$ and $u_k$ at position $2n - k$ for $1 \le k \le n$. The offset $s$
 gives a consecutive cyclic prime labeling of the ladder when $n > 0$ and, for all positions

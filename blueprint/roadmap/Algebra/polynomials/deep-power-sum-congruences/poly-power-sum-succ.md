@@ -1,6 +1,6 @@
 # Newton's recurrence for the power sums of a polynomial
 
-**Newton's recurrence for the power sums of a polynomial.** For every polynomial $P$ over a
+For every polynomial $P$ over a
 commutative ring and every $n \ge 0$, writing $e_i = e_i(P)$ and $p_i = p_i(P)$ for the
 elementary symmetric functions and power sums of $P$,
 

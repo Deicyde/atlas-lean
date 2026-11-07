@@ -1,6 +1,6 @@
 # Characters of simple representations of commutative monoids are multiplicative
 
-**Characters of simple representations of commutative monoids are multiplicative.** Let $k$
+Let $k$
 be an algebraically closed field, let $G$ be a commutative monoid, and let $V$ be a
 finite-dimensional representation of $G$ over $k$ that is simple as an object of the category of
 finite-dimensional representations of $G$ over $k$. Let $\chi_V : G \to k$ be the character of

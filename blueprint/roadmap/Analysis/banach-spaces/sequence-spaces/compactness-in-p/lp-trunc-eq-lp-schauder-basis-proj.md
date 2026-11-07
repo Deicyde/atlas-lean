@@ -1,4 +1,4 @@
 # Truncation equals the Schauder basis projection
 
-**Truncation equals the Schauder basis projection.** For finite `p ≥ 1`, coordinate truncation is the canonical bundled
+For finite `p ≥ 1`, coordinate truncation is the canonical bundled
 Schauder-basis projection.

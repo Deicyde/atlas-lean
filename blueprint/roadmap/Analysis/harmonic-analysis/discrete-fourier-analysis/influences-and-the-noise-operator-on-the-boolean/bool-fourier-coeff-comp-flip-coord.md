@@ -1,6 +1,6 @@
 # Flipping a coordinate negates the Fourier coefficients of the sets containing it
 
-**Flipping a coordinate negates the Fourier coefficients of the sets containing it.** Let $f$
+Let $f$
 be a real-valued function on the Boolean cube in $n$ coordinates, let $i$ be a coordinate, and
 let $g(x) = f(x^{\oplus i})$, where $x^{\oplus i}$ is the point $x$ with its $i$-th coordinate
 flipped. Write $\hat f(S)$ and $\hat g(S)$ for the Fourier coefficients of $f$ and $g$ at a set

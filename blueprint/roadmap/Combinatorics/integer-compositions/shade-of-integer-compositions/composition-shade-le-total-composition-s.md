@@ -1,6 +1,6 @@
 # The total shade bounds the shade of each composition
 
-**The total shade bounds the shade of each composition.** For every natural number $n$
+For every natural number $n$
 and every composition $x$ of $n$, the shade of $x$ is at most the total shade $c(n)$ of the
 compositions of $n$.
 

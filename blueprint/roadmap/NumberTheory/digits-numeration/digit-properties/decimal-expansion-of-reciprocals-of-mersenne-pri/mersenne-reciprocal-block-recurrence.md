@@ -1,6 +1,6 @@
 # Doubling recurrence for the blocks of $1/(2^p - 1)$
 
-**Doubling recurrence for the blocks of $1/(2^p - 1)$.** Let $p$ be a natural number such
+Let $p$ be a natural number such
 that $M = 2^p - 1$ is prime, let $L$ be the multiplicative order of $10$ modulo $M$ (the period of
 the decimal expansion of $1/M$), and suppose that $p$ divides $L$. Put $\ell = L/p$ and let
 $N = (10^L - 1)/M$ be the repeating block of $1/M$, read as an $L$-digit integer with leading

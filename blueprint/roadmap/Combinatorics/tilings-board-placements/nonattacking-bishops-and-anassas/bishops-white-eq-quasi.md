@@ -1,6 +1,6 @@
 # Quasi-polynomial formula for bishops on white squares
 
-**Quasi-polynomial formula for bishops on white squares.** Write $R_W(m, k)$ for the number of
+Write $R_W(m, k)$ for the number of
 placements of $k$ nonattacking bishops on the white squares (those $(i, j)$ with $i + j$ even) of
 the $m \times m$ board $[1, m]^2$, $\pi(m) \in \lbrace 0, 1 \rbrace$ for the remainder of $m$
 modulo $2$, and $c_{k,d}(z) \in \mathbb{C}$ for the constituent coefficient of the bishop colour

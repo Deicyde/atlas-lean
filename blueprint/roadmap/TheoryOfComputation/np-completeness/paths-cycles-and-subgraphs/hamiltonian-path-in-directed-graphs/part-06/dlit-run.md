@@ -1,6 +1,6 @@
 # One literal of the detour walk
 
-**One literal of the detour walk.** Let $y \in \mathbb{N}$ have binary encoding
+Let $y \in \mathbb{N}$ have binary encoding
 $\mathrm{bin}(y)$, let $l = (z, b)$ be a literal with token list $\tau$, let $\rho$ and $\nu$ be
 lists of symbols, let $p_+$, $p_-$ and $v$ be bits, and let $s$ be a quiescent state of the
 HAMPATH emitter such that $F$ holds $\tau$ followed by $\rho$, $V$ holds the name of $y$, then

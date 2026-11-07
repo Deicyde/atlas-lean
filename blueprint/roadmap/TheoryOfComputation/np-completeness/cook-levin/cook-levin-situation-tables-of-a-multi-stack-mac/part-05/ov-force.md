@@ -1,6 +1,6 @@
 # Overflow forcing
 
-**Overflow forcing.** Let $L$ be a layout with $K$ stacks, let $\mathrm{sa}$, $\mathrm{pl}$,
+Let $L$ be a layout with $K$ stacks, let $\mathrm{sa}$, $\mathrm{pl}$,
 $\mathrm{cn}$ and $\mathrm{pu}$ be situation tables, and let $a$ be an assignment satisfying the
 cell-shift clause family of $L$ and these tables for bounds $N$, $T$ and $H$. Write $X[t, b]$ and
 $C[t, k, j, x]$ for the label/state and cell variables at height $H$. If $t < T$, $i < N$,

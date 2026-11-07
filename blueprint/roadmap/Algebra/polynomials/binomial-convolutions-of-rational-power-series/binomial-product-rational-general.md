@@ -1,6 +1,6 @@
 # Binomial products of arbitrary rational series
 
-**Binomial products of arbitrary rational series.** Let $K$ be a field of characteristic $0$,
+Let $K$ be a field of characteristic $0$,
 let $\alpha_1, \dots, \alpha_m$ and $\beta_1, \dots, \beta_n$ be nonzero elements of $K$, and let
 $R$, $S$ be polynomials over $K$. Let $A$, $B$ be power series over $K$ with
 $A(x) \prod_{i=1}^m (1 - \alpha_i x) = R(x)$ and $B(x) \prod_{j=1}^n (1 - \beta_j x) = S(x)$.

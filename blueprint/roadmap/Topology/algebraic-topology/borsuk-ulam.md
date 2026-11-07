@@ -1,6 +1,6 @@
 # Borsuk–Ulam theorem
 
-**Borsuk–Ulam theorem.** Let $n$ be a natural number and let $S^n$ be the unit sphere in the
+Let $n$ be a natural number and let $S^n$ be the unit sphere in the
 Euclidean space $\mathbb{R}^{n+1}$. For every continuous map $f \colon S^n \to \mathbb{R}^n$ there
 is a point $x \in S^n$ with $f(x) = f(-x)$.
 

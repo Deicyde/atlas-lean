@@ -1,6 +1,6 @@
 # Variable-count sums of variable words in C-sets
 
-**Variable-count sums of variable words in C-sets.** Let $A_0 \subseteq A_1 \subseteq \cdots$
+Let $A_0 \subseteq A_1 \subseteq \cdots$
 be finite sets with union $A$, and let $S_0$ be the semigroup of nonempty finite words over $A$
 under concatenation. A variable word over $A$ is a nonempty finite word over $A \cup \{v\}$, for a
 variable $v \notin A$, in which $v$ occurs; for $a \in A$, the word $w(a) \in S_0$ is obtained from

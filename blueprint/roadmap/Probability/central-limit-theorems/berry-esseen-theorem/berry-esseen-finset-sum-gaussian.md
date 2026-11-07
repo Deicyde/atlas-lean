@@ -1,6 +1,6 @@
 # Berry–Esseen bound for finite sums
 
-**Berry–Esseen bound for finite sums.** Let $(\xi_j)_{j \in \mathbb{N}}$ be measurable, mutually
+Let $(\xi_j)_{j \in \mathbb{N}}$ be measurable, mutually
 independent real random variables on a probability space, and let $s$ be a finite set of indices
 such that for each $j \in s$ the variable $\xi_j$ has a finite third moment and mean
 $\mathbb{E}[\xi_j] = 0$, and such that $\sum_{j \in s} \mathbb{E}[\xi_j^2] = 1$. Write $\Phi$

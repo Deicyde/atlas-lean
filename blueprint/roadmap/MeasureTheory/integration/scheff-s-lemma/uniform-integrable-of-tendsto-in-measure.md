@@ -1,6 +1,6 @@
 # Convergence in measure with converging L¹ norms implies uniform integrability
 
-**Convergence in measure with converging L¹ norms implies uniform integrability.** Let $\mu$
+Let $\mu$
 be a measure on a measurable space $\alpha$, let $f_n : \alpha \to \mathbb{R}$ ($n \in \mathbb{N}$)
 and $g : \alpha \to \mathbb{R}$ be in $L^1(\mu)$, and write $\|h\|_1 = \int |h| \, d\mu$. If
 $f_n \to g$ in $\mu$-measure (for every $\varepsilon > 0$,

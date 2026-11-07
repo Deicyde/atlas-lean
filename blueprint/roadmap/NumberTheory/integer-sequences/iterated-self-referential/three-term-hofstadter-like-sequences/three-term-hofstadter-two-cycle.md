@@ -1,6 +1,6 @@
 # Two-cycle lemma for the three-term Hofstadter-like recurrence
 
-**Two-cycle lemma for the three-term Hofstadter-like recurrence.** Let $K \ge 1$ be a natural
+Let $K \ge 1$ be a natural
 number, let $M$ be an integer with $M \ge K + 5$, let $a_1, \dots, a_K$ be arbitrary integers,
 and let $B$ be the padded three-term Hofstadter-like sequence with initial conditions
 $a_1, \dots, a_K, 2, M, 2$. Then for every natural number $k$ the term $B(K + 2k + 1)$ is defined

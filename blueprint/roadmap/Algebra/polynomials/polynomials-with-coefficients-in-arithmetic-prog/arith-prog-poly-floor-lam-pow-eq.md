@@ -1,6 +1,6 @@
 # Exact floor at a power of the auxiliary root (single exponent)
 
-**Exact floor at a power of the auxiliary root (single exponent).** Let $m \ge 2$, let $a$,
+Let $m \ge 2$, let $a$,
 $d$ be positive integers, and let $p$ be an integer with $1 \le p \le m - 1$ and
 $p(m - p)d^2 < 2a$. If $\lambda > 0$ is a real number with
 $a \lambda^{m+2} + (a - d) \lambda^{m+1} - (a + (m + 1)d) \lambda - (a + md) = 0$, then

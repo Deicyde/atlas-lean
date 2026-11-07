@@ -1,6 +1,6 @@
 # Excedance generating function of permutations with $k$ cycles
 
-**Excedance generating function of permutations with $k$ cycles.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra and $x \in R$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ let
 $e(\sigma)$ be the number of $i$ with $\sigma(i) > i$ and $c(\sigma)$ the number of cycles of
 $\sigma$, fixed points included. Let

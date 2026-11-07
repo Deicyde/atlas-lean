@@ -1,6 +1,6 @@
 # Quadratic form identity for binary recurrences
 
-**Quadratic form identity for binary recurrences.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $A, B \in R$, and let $(G_n)_{n \ge 0}$ and $(H_n)_{n \ge 0}$ be sequences in $R$ with
 $G_{n+2} = A G_{n+1} + B G_n$ and $H_{n+2} = A H_{n+1} + B H_n$ for all $n \ge 0$. Put
 $C_G = G_1^2 - A G_0 G_1 - B G_0^2$, $C_H = H_1^2 - A H_0 H_1 - B H_0^2$,

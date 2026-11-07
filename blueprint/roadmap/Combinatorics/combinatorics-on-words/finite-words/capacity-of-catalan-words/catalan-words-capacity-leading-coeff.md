@@ -1,6 +1,6 @@
 # Number of Catalan words of maximum capacity
 
-**Number of Catalan words of maximum capacity.** For every $n \ge 4$, let $\mathcal{A}_n$ be
+For every $n \ge 4$, let $\mathcal{A}_n$ be
 the set of Catalan words of length $n$. The leading coefficient of the capacity distribution
 $\sum_{w \in \mathcal{A}_n} q^{\operatorname{cap}(w)}$ is $2$ if $3$ divides $n$ and $1$
 otherwise; equivalently, exactly two Catalan words of length $n$ have the largest capacity when

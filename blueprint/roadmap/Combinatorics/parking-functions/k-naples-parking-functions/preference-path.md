@@ -1,6 +1,6 @@
 # Lattice path of a parking preference
 
-**Lattice path of a parking preference.** Let $\alpha = (a_1, \dots, a_n)$ be a sequence of
+Let $\alpha = (a_1, \dots, a_n)$ be a sequence of
 natural numbers. Its lattice path is the sequence of $2n$ steps, each an Up step $(1, 1)$ or a
 Down step $(1, -1)$, obtained by taking, for each spot $s = 1, \dots, n$ in turn, one Up step
 for every index $i$ with $a_i = s$ followed by one Down step, and then appending Down steps

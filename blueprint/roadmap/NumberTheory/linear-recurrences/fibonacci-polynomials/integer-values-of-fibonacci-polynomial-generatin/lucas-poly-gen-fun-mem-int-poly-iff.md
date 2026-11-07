@@ -1,6 +1,6 @@
 # Integer-polynomial values of the Lucas polynomial generating function
 
-**Integer-polynomial values of the Lucas polynomial generating function.** Let $a$ and $b$ be
+Let $a$ and $b$ be
 positive integers with $b \mid a$, let $F_i(x), L_i(x) \in \mathbb{Z}[x]$ be the polynomials with
 $F_0 = 0$, $F_1 = 1$, $L_0 = 2$, $L_1 = ax$ and $G_{i+2} = ax\,G_{i+1} + b\,G_i$ for $G = F, L$
 and all $i \ge 0$, and let $l(x, t) = (2 - axt) / (1 - axt - bt^2)$. For a rational function

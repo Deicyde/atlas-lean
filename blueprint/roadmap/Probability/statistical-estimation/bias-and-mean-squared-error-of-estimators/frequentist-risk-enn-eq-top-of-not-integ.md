@@ -1,6 +1,6 @@
 # Extended frequentist risk of a measurable non-integrable loss is infinite
 
-**Extended frequentist risk of a measurable non-integrable loss is infinite.** Let $S$ be a
+Let $S$ be a
 measurable space, $\delta : S \to A$ a decision rule, $(P_\theta)_{\theta \in \Theta}$ a family of
 probability measures on $S$, $\ell : \Theta \times A \to [0, \infty)$ a loss, and
 $\theta \in \Theta$. If the function $x \mapsto \ell(\theta, \delta(x))$ is almost everywhere

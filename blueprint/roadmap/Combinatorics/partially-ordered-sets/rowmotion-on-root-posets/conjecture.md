@@ -1,6 +1,6 @@
 # Type-A rowmotion homomesy conjecture
 
-**Type-A rowmotion homomesy conjecture.** The proposition that for every natural number $n$,
+The proposition that for every natural number $n$,
 every finite partially ordered set $P$ that is a type-A root poset of rank $n$ (there is a
 bijection $a \mapsto (i_a, j_a)$ from $P$ onto the set of pairs $(i, j)$ of integers with
 $0 \le i \le j < n$ such that $a \le b$ holds exactly when $i_b \le i_a$ and $j_a \le j_b$), and

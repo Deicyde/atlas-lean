@@ -1,6 +1,6 @@
 # MINIMUM TEST SET is NP-complete
 
-**MINIMUM TEST SET is NP-complete.** The MINIMUM TEST SET decision problem lies in NP, and
+The MINIMUM TEST SET decision problem lies in NP, and
 every decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

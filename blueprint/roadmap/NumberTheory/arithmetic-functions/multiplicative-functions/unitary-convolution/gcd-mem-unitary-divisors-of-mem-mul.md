@@ -1,6 +1,6 @@
 # Gcd with a coprime factor preserves unitary divisors
 
-**Gcd with a coprime factor preserves unitary divisors.** Let $m$ and $n$ be coprime natural
+Let $m$ and $n$ be coprime natural
 numbers. If $d$ is a unitary divisor of $mn$, then $\gcd(d, m)$ is a unitary divisor of $m$.
 
 ## Sources

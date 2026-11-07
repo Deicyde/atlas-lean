@@ -1,6 +1,6 @@
 # Delay of the base-$p$ expansion
 
-**Delay of the base-$p$ expansion.** For a natural number $p$ and a rational number $x$, the
+For a natural number $p$ and a rational number $x$, the
 delay of the base-$p$ expansion of $x$ is $D_x = -v_p(x)$, where $v_p$ is the $p$-adic valuation
 (with $v_p(0) = 0$).
 

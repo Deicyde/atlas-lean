@@ -1,6 +1,6 @@
 # The empty digit string has value zero
 
-**The empty digit string has value zero.** For every natural number $b$, the integer value
+For every natural number $b$, the integer value
 of the empty base-$b$ digit string is $0$.
 
 ## Sources

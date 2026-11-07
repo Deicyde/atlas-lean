@@ -1,6 +1,6 @@
 # The subword $DDU$ in non-decreasing Dyck paths
 
-**The subword $DDU$ in non-decreasing Dyck paths.** Let $F_{DDU}(x, y)$ and $D_{DDU}(x)$ be
+Let $F_{DDU}(x, y)$ and $D_{DDU}(x)$ be
 the bivariate and univariate generating functions of the subword $DDU$ in non-decreasing Dyck
 paths, let $d_{DDU}(n)$ be the total number of occurrences of $DDU$ over all non-decreasing Dyck
 paths of semilength $n$, and let $F_n$ and $L_n$ denote the Fibonacci and Lucas numbers. Then

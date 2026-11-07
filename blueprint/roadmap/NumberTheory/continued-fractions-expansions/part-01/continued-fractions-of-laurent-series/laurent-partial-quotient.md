@@ -1,6 +1,6 @@
 # Partial quotients of a Laurent series
 
-**Partial quotients of a Laurent series.** Let $K$ be a field, $\alpha \in K((x^{-1}))$ and
+Let $K$ be a field, $\alpha \in K((x^{-1}))$ and
 $n \ge 0$. The $n$-th partial quotient of $\alpha$ is $b_n = [\alpha_n]$, the polynomial part of
 the $n$-th complete quotient $\alpha_n$ of $\alpha$.
 

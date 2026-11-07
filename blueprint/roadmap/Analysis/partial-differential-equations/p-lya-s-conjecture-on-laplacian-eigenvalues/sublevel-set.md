@@ -1,6 +1,6 @@
 # Strict sublevel set
 
-**Strict sublevel set.** For a nonnegative discrete spectrum with eigenvalues
+For a nonnegative discrete spectrum with eigenvalues
 $E_0 \le E_1 \le \cdots$ and a real number $\Lambda$, the strict sublevel set at $\Lambda$ is the
 set of indices $\{j \in \mathbb{N} : E_j < \Lambda\}$.
 

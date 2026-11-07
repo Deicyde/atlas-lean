@@ -1,6 +1,6 @@
 # Finite-sum formula for r-Stirling numbers of the second kind
 
-**Finite-sum formula for r-Stirling numbers of the second kind.** For all natural numbers
+For all natural numbers
 $n$, $m$ and $r$, the r-Stirling number of the second kind ${n+r \brace m+r}_r$ satisfies
 
 $${n+r \brace m+r}_r = \sum_{i=0}^{n} \binom{n}{i} {n-i \brace m} r^i,$$

@@ -1,6 +1,6 @@
 # Stirling recursion for derivatives, for arbitrary multiplicities
 
-**Stirling recursion for derivatives, for arbitrary multiplicities.** Let $k$ and $d$ be
+Let $k$ and $d$ be
 natural numbers, let $m \colon \mathbb{N} \to \mathbb{N}$, write $m_i = m(i)$, and let
 $f(y) = \sum_{i=1}^{k} m_i y^i$ for real $y$. Then for every real $x \ne 0$,
 

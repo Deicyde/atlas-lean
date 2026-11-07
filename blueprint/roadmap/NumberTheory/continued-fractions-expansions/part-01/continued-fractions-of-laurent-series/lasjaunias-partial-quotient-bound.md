@@ -1,6 +1,6 @@
 # Lasjaunias's bound on the next partial quotient
 
-**Lasjaunias's bound on the next partial quotient.** Let $\mathbb{F}_q$ be a finite field, let
+Let $\mathbb{F}_q$ be a finite field, let
 $A, B, C, D \in \mathbb{F}_q[x]$ with $\Delta = AD - BC \ne 0$ and $C \ne 0$, and let
 $\alpha \in \mathbb{F}_q((x^{-1}))$ be irrational with $\alpha = (A\alpha^q + B)/(C\alpha^q + D)$.
 Write $|y| = |x|^{\deg y}$ for the absolute value on $\mathbb{F}_q((x^{-1}))$, where $\deg y$ is

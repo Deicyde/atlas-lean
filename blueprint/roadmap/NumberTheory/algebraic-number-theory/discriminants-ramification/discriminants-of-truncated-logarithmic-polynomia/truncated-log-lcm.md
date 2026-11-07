@@ -1,6 +1,6 @@
 # Least common multiple of $1, \dots, n$
 
-**Least common multiple of $1, \dots, n$.** For a natural number $n$, $L_n$ is the least common
+For a natural number $n$, $L_n$ is the least common
 multiple $\operatorname{lcm}(1, 2, \dots, n)$ of the integers from $1$ to $n$; in particular
 $L_0 = 1$.
 

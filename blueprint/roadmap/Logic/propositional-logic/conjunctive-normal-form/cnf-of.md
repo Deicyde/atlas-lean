@@ -1,6 +1,6 @@
 # CNF of a proposition at a polarity
 
-**CNF of a proposition at a polarity.** Let $\iota$ number the atoms by natural numbers. For a
+Let $\iota$ number the atoms by natural numbers. For a
 polarity $p$ and a proposition $\varphi$, the CNF of $\varphi$ at polarity $p$ is the result of the
 accumulating CNF builder at polarity $p$ on $\varphi$ with the empty CNF as accumulator; the atom
 $a$ becomes the variable $\iota(a)$.

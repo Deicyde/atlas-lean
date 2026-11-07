@@ -1,6 +1,6 @@
 # The forward path through the diamonds
 
-**The forward path through the diamonds.** Let $m$ and $k$ be natural numbers, let
+Let $m$ and $k$ be natural numbers, let
 $c : \mathbb{N} \to \mathbb{N}$ be a map and let $d : \mathbb{N} \to \{\mathrm{true},
 \mathrm{false}\}$ give each diamond $i$ a direction $d(i)$. The forward path through the first
 $k$ diamonds is the list obtained by concatenating, for $i = 0, 1, \dots, k - 1$ in this order,

@@ -1,6 +1,6 @@
 # Transfer matrix of a generalized Zykov sum
 
-**Transfer matrix of a generalized Zykov sum.** Let $G$ and $H$ be simple graphs on finite
+Let $G$ and $H$ be simple graphs on finite
 vertex types $V$ and $W$, and let $R$ be a relation between $V$ and $W$. The transfer matrix of
 $G$ and $H$ along $R$ is indexed by pairs $(A, B)$ where $A$ is a finite independent set of $G$
 and $B$ is a finite independent set of $H$. Its entry at $(A, B)$ is the Boolean value that is

@@ -1,6 +1,6 @@
 # Size of a largest minimal element, $\ell(\mathcal F)$
 
-**Size of a largest minimal element, $\ell(\mathcal F)$.** For a family $\mathcal F$ of
+For a family $\mathcal F$ of
 subsets of a set $X$, $\ell(\mathcal F)$ is the largest cardinality of a minimal element of
 $\mathcal F$ (minimal with respect to inclusion), a natural number.
 

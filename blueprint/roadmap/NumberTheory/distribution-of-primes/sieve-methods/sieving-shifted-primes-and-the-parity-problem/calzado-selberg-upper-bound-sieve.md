@@ -1,6 +1,6 @@
 # Selberg's upper bound sieve
 
-**Selberg's upper bound sieve.** For all real numbers $\kappa > 0$ and $C_0$ there is a
+For all real numbers $\kappa > 0$ and $C_0$ there is a
 constant $C$ with the following property. Let $P$ be a set of primes, $\omega$ a non-negative
 multiplicative arithmetic function with $\omega(p) < p$ for $p \in P$, $A$ a finite multiset of
 positive integers, and $X > 0$ and $z \ge 2$ real numbers such that

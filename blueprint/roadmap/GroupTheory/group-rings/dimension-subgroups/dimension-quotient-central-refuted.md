@@ -1,6 +1,6 @@
 # Dimension quotients need not be central
 
-**Dimension quotients need not be central.** There exist a group $G$, an integer $n \ge 1$, an
+There exist a group $G$, an integer $n \ge 1$, an
 element $x$ of the $n$-th dimension subgroup $D_n(G)$ and an element $g \in G$ such that the
 commutator $x g x^{-1} g^{-1}$ does not lie in $\gamma_n(G)$, the $n$-th term of the lower central
 series of $G$ (indexed so that $\gamma_1(G) = G$). That is, the answer to Kourovka Problem 12.22(a)

@@ -1,6 +1,6 @@
 # Counting self-dual monotone functions on $n + 1$ variables
 
-**Counting self-dual monotone functions on $n + 1$ variables.** For every $n \ge 0$, the
+For every $n \ge 0$, the
 number of self-dual monotone Boolean functions on $n + 1$ variables equals the number of
 monotone Boolean functions $b$ on $n$ variables with $b \le b^*$, where $b^*$ is the dual of $b$
 and functions are ordered pointwise. Moreover, for a permutation $\pi$ of the $n$ coordinates

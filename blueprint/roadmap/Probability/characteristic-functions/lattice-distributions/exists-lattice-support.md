@@ -1,6 +1,6 @@
 # Lattice random variables are supported on a lattice
 
-**Lattice random variables are supported on a lattice.** Let $\mu$ be a probability measure
+Let $\mu$ be a probability measure
 on $\mathbb{R}$ that is a lattice random variable. Then there is a real number $h \ne 0$ such
 that $\mu$ gives mass $1$ to the lattice $\{hk : k \in \mathbb{Z}\}$.
 

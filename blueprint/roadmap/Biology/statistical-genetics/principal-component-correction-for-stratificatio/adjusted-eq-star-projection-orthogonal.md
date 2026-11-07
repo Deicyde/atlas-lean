@@ -1,3 +1,3 @@
 # Residual as projection onto the orthogonal complement
 
-**Residual as projection onto the orthogonal complement.** The residual is the orthogonal projection onto `Vᗮ`.
+The residual is the orthogonal projection onto `Vᗮ`.

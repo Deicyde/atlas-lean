@@ -1,6 +1,6 @@
 # Double-factorial sums as derivatives of arcsine quotients
 
-**Double-factorial sums as derivatives of arcsine quotients.** Let $n$ be a natural number.
+Let $n$ be a natural number.
 If $n$ is odd, the $n$th derivative at $0$ of $x \mapsto \arcsin x / (1 - x)$ is
 
 $$n! \sum_{j=0}^{(n-1)/2} \frac{(2j-1)!!}{(2j)!!\,(2j+1)},$$

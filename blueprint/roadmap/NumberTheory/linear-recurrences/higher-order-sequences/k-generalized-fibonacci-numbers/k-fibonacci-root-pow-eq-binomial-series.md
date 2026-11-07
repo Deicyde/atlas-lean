@@ -1,6 +1,6 @@
 # Binomial series for the powers of the dominant $k$-Fibonacci root
 
-**Binomial series for the powers of the dominant $k$-Fibonacci root.** Let $k \ge 2$ and let
+Let $k \ge 2$ and let
 $\rho_k > 0$ be a real number with $\rho_k^k = 1 + \rho_k + \dots + \rho_k^{k-1}$. For integers $a$
 and $j \ge 0$ write $\binom{a}{j} = a(a-1)\cdots(a-j+1)/j!$. Then for every $n \ge 1$ the series
 $S = \sum_{\ell \ge 0} \frac{1}{\ell+1} \binom{k(\ell+1)+\ell-n}{\ell} 2^{-(k+1)\ell}$ converges

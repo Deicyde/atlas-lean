@@ -1,6 +1,6 @@
 # Bounded subset sums as a generalized h-fold sumset when zero is not in the set
 
-**Bounded subset sums as a generalized h-fold sumset when zero is not in the set.** Let $G$
+Let $G$
 be an abelian group and let $A = \{a_1, \dots, a_k\}$ be a set of $k$ distinct nonzero elements
 of $G$. If $\alpha, \beta$ are natural numbers with $\alpha + \beta \le k - 1$, then
 $\Sigma^\beta_\alpha(A)$, the set of sums of subsets $B \subseteq A$ with

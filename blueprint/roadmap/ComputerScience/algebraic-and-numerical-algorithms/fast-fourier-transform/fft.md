@@ -1,6 +1,6 @@
 # Radix-two fast Fourier transform
 
-**Radix-two fast Fourier transform.** For a commutative ring $R$, a natural number $d$, an
+For a commutative ring $R$, a natural number $d$, an
 element $\omega \in R$ and a vector $x \in R^{2^d}$, the FFT of $x$ with root $\omega$ is defined
 by recursion on $d$. For $d = 0$ it returns $x$ at cost $0$. For $d + 1$ it splits $x$ into its
 even- and odd-indexed subvectors $e, o \in R^{2^d}$ (cost $4 \cdot 2^d$), computes $\omega^2$

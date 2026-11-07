@@ -1,6 +1,6 @@
 # Inverse of a Riordan array from its A- and Z-sequences
 
-**Inverse of a Riordan array from its A- and Z-sequences.** Let $K$ be a field, let
+Let $K$ be a field, let
 $g, f, A, Z, \bar f$ be formal power series over $K$, and let $d_{00} \in K$ with $d_{00} \ne 0$.
 Suppose that $g(0) = d_{00}$, $f(0) = 0$, $A(0) \ne 0$ and $\bar f(0) = 0$; that
 $f(\bar f(x)) = x$ and $\bar f(f(x)) = x$, so that $\bar f$ is the compositional inverse of $f$;

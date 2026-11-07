@@ -1,4 +1,4 @@
 # Uniform convergence:
 
-**Uniform convergence:** the Fourier series of a `C¹` periodic function
+The Fourier series of a `C¹` periodic function
 converges uniformly (in `C(AddCircle T, ℂ)`) to `f` on the circle.

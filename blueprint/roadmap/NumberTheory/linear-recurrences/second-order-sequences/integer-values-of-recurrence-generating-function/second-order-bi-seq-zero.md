@@ -1,6 +1,6 @@
 # First initial value of the two-sided sequence
 
-**First initial value of the two-sided sequence.** For all integers $p$, $r$, $s$, the
+For all integers $p$, $r$, $s$, the
 two-sided sequence $(A^{(r,s)}_n)_{n \in \mathbb{Z}}$ for $p$ with initial values $r$ and $s$
 satisfies $A^{(r,s)}_0 = r$.
 

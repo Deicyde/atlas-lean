@@ -1,6 +1,6 @@
 # Least interval length containing distinct multiples
 
-**Least interval length containing distinct multiples.** For natural numbers $n$ and $m$,
+For natural numbers $n$ and $m$,
 $f(n, m)$ is the least natural number $L$ such that the interval $(m, m + L]$ contains distinct
 multiples of $1, \dots, n$.
 

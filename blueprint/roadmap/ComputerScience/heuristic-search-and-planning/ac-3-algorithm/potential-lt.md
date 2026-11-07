@@ -1,6 +1,6 @@
 # A shrinking revision lowers the potential
 
-**A shrinking revision lowers the potential.** Let $P$ be a binary constraint satisfaction
+Let $P$ be a binary constraint satisfaction
 problem with finitely many variables, $\mathrm{dom}$ finite domains for its variables, $x$ and
 $y$ variables and $q$ a queue of arcs. Suppose the revision $R$ of the arc $(x, y)$ with respect
 to $\mathrm{dom}$ differs from $\mathrm{dom}(x)$, and let $\mathrm{dom}'$ agree with

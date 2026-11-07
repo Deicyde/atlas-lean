@@ -1,6 +1,6 @@
 # Compatibly almost opposable graphs
 
-**Compatibly almost opposable graphs.** A graph $G$ is compatibly almost opposable if there
+A graph $G$ is compatibly almost opposable if there
 are a vertex $u$, a set $S$ of vertices with $u \in S \subseteq N[u]$ (the closed neighbourhood
 of $u$), an automorphism $\alpha$ of $G$ with $\alpha(\alpha(v)) = v$ for every vertex $v$, and
 an opposition $f$ of the subgraph $G - S$ induced on the vertices outside $S$, such that

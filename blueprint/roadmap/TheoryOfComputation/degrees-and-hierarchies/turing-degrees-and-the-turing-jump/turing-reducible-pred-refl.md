@@ -1,6 +1,6 @@
 # Turing reducibility is reflexive
 
-**Turing reducibility is reflexive.** Every predicate $P$ on the natural numbers is Turing
+Every predicate $P$ on the natural numbers is Turing
 reducible to itself.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Log-concavity propagates along a linear recurrence
 
-**Log-concavity propagates along a linear recurrence.** Let $k \ge 2$ be an integer, let
+Let $k \ge 2$ be an integer, let
 $c_1, \dots, c_k$ be real numbers with $c_j \ge 0$ for $2 \le j \le k$, and let
 $(z_n)_{n \ge 0}$ be a sequence of positive real numbers with
 

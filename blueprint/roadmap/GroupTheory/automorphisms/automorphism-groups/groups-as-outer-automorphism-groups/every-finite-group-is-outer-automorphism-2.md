@@ -1,6 +1,6 @@
 # Every finite group is the outer automorphism group of a finite group
 
-**Every finite group is the outer automorphism group of a finite group.** For every finite group
+For every finite group
 $K$ there are a finite group $G$ and a surjective homomorphism $\mathrm{Aut}(G) \to K$ whose
 kernel is the group $\mathrm{Inn}(G)$ of inner automorphisms of $G$; equivalently,
 $\mathrm{Out}(G) = \mathrm{Aut}(G) / \mathrm{Inn}(G)$ is isomorphic to $K$. That is, the answer

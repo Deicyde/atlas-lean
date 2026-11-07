@@ -1,6 +1,6 @@
 # The set $\Omega_d$ of attainable canonical-line roots
 
-**The set $\Omega_d$ of attainable canonical-line roots.** For a natural number $d$,
+For a natural number $d$,
 $\Omega_d$ is the set of complex numbers $z$ on the canonical line such that $z$ is a root of
 some CL-polynomial of degree $d$ satisfying $(\diamondsuit)$.
 

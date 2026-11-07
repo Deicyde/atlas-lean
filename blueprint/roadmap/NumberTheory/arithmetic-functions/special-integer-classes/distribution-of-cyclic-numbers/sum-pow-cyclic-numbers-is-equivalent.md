@@ -1,6 +1,6 @@
 # Power sums of cyclic numbers
 
-**Power sums of cyclic numbers.** Let $k \ge 1$ be an integer. Let $c_n$ be the $n$-th cyclic
+Let $k \ge 1$ be an integer. Let $c_n$ be the $n$-th cyclic
 number ($c_1 = 1$), let $C(x)$ be the number of cyclic numbers $m \le x$, and let $\gamma$ be the
 Euler–Mascheroni constant. Then, as $n \to \infty$ through the natural numbers,
 

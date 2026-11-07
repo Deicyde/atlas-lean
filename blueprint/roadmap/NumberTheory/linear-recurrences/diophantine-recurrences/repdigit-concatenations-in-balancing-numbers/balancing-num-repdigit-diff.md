@@ -1,6 +1,6 @@
 # Balancing numbers that are differences of two repdigits
 
-**Balancing numbers that are differences of two repdigits.** Let $k \ge 2$ be a natural
+Let $k \ge 2$ be a natural
 number. If the balancing number $B_k$ is a difference of two repdigits, then $B_k = 6$ or
 $B_k = 35$.
 

@@ -1,6 +1,6 @@
 # Schur–Siegel–Smyth trace constant
 
-**Schur–Siegel–Smyth trace constant.** The Schur–Siegel–Smyth trace constant $C_{86}$ is
+The Schur–Siegel–Smyth trace constant $C_{86}$ is
 the supremum, taken in the extended reals, of the admissible real bounds: the real numbers
 $\rho \ge 0$ such that only finitely many complex numbers that are totally positive algebraic
 integers have absolute trace less than $\rho$.

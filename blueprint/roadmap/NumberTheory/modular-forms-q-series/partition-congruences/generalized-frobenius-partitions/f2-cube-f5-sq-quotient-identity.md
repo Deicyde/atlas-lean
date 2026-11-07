@@ -1,6 +1,6 @@
 # A level-10 Euler-product identity
 
-**A level-10 Euler-product identity.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ in the ring of
+Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ in the ring of
 integer power series in $q$. Then
 $f_2^5 f_5^2 = f_1^5 f_5 f_{10} + 5q f_1^2 f_2 f_{10}^4$.
 

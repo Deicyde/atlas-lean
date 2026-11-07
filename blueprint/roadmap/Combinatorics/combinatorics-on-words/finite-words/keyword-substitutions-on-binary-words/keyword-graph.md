@@ -1,6 +1,6 @@
 # Substitution graph
 
-**Substitution graph.** Let $a$ be a keyword, a binary word of length $m + 1$, and let
+Let $a$ be a keyword, a binary word of length $m + 1$, and let
 $n \ge 0$. The substitution graph $\mathcal{G}_n^{(a)}$ is the simple graph on the binary words of
 length $n$ in which distinct words $u$ and $v$ are adjacent when $\varphi_i(u) = v$ or
 $\varphi_i(v) = u$ for some $i \in \mathbb{N}$, where $\varphi_i$ is the simple map of $a$ at

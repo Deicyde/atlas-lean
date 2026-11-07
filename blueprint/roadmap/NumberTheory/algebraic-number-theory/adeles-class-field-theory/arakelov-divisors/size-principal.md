@@ -1,6 +1,6 @@
 # Principal Arakelov divisors have size one
 
-**Principal Arakelov divisors have size one.** Let $K$ be a number field with ring of
+Let $K$ be a number field with ring of
 integers $\mathcal{O}_K$. For every nonzero $x \in K$, the principal Arakelov divisor of $x$,
 formed by the principal fractional ideal $x\mathcal{O}_K$ and the values $w(x)$ at the infinite
 places $w$ of $K$, has size $1$.

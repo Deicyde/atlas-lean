@@ -1,6 +1,6 @@
 # A topologically slice knot that is not smoothly slice
 
-**A topologically slice knot that is not smoothly slice.** There is a PL knot $K$ (a closed
+There is a PL knot $K$ (a closed
 polyline in $\mathbb{R}^3$ with at least three vertices, not required to be simple) that is
 topologically slice but not smoothly slice. Here $K$ is smoothly (respectively topologically)
 slice when some smooth knot whose image is topologically ambient isotopic to the image of $K$

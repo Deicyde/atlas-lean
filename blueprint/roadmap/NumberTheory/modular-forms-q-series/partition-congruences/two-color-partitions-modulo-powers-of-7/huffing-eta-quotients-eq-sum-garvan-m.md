@@ -1,6 +1,6 @@
 # Huffing identities for three eta quotients
 
-**Huffing identities for three eta quotients.** Let
+Let
 $f_k = \prod_{n \ge 1} (1 - q^{kn})$ in $\mathbb{Q}[[q]]$, let $H$ be the huffing operator
 $H\bigl(\sum_n p_n q^n\bigr) = \sum_n p_{7n} q^{7n}$, and let $m_{i,j}$ be Garvan's matrix. For
 every $i \ge 1$,

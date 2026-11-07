@@ -1,6 +1,6 @@
 # The mean gcd-sum function at $2$
 
-**The mean gcd-sum function at $2$.** The mean gcd-sum function $A$ satisfies $A(2) = 3/2$,
+The mean gcd-sum function $A$ satisfies $A(2) = 3/2$,
 since $A(2) = P(2)/2$, where $P(n) = \sum_{j=1}^{n} \gcd(j, n)$ is Pillai's gcd-sum function
 and $P(2) = \gcd(1, 2) + \gcd(2, 2) = 3$.
 

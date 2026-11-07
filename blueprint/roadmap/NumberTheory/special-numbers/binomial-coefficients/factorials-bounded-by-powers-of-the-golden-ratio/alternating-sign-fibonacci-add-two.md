@@ -1,6 +1,6 @@
 # Recurrence of the alternating-sign Fibonacci sequence
 
-**Recurrence of the alternating-sign Fibonacci sequence.** For every natural number $m$,
+For every natural number $m$,
 the alternating-sign Fibonacci sequence $d$ satisfies $d_{m+2} = d_{m+1} + d_m + (-1)^{m+2}$.
 
 ## Sources

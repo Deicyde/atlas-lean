@@ -1,6 +1,6 @@
 # The deficit is at most $b / d$
 
-**The deficit is at most $b / d$.** In a bipartite graph with right vertices $0, \dots, b-1$,
+In a bipartite graph with right vertices $0, \dots, b-1$,
 let $\mu$ be a valid partner array (partners are neighbours, and no left vertex is the partner of
 two right vertices), let $M$ be any matching of the graph, and let $d \in \mathbb{N}$. Suppose that
 for every $k < d$, no unmatched right vertex is among the right vertices reached within $k + 1$

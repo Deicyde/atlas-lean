@@ -1,6 +1,6 @@
 # Truncated one-sided series
 
-**Truncated one-sided series.** For functions $e : \mathbb{N} \to \mathbb{N}$ and
+For functions $e : \mathbb{N} \to \mathbb{N}$ and
 $w : \mathbb{N} \to \mathbb{Z}$, this is the integer power series whose coefficient of $q^n$ is
 the sum of $w(m)$ over the integers $m$ with $1 \le m \le n$ and $e(m) = n$.
 

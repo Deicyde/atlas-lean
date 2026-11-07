@@ -1,6 +1,6 @@
 # Blackburn–McCourt theorem (Kourovka Problem 17.35)
 
-**Blackburn–McCourt theorem (Kourovka Problem 17.35).** Let $X$ be a finite simplicial 2-sphere in
+Let $X$ be a finite simplicial 2-sphere in
 $\mathbb{R}^3$, and let a colouring assign white or black to every finite set of points of
 $\mathbb{R}^3$ so that any two distinct triangles of $X$ (faces with exactly three vertices) with
 exactly two vertices in common receive different colours. Let $G_W$ be the abelian group generated

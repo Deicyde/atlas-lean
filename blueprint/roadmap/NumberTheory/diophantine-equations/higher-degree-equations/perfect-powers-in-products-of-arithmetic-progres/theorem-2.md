@@ -1,6 +1,6 @@
 # Bennett–Siksek theorem on perfect powers in arithmetic progressions
 
-**Bennett–Siksek theorem on perfect powers in arithmetic progressions.** Let $k_0$ be the
+Let $k_0$ be the
 threshold constant of this module. For every natural number $k \ge k_0$, every natural number
 $l$ that is prime, and all integers $n$, $d$, $y$ with $\gcd(n, d) = 1$ and
 

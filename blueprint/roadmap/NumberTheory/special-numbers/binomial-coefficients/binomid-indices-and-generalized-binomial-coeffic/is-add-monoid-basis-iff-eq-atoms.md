@@ -1,6 +1,6 @@
 # Atoms are the unique basis of an atom-generated submonoid
 
-**Atoms are the unique basis of an atom-generated submonoid.** Let $\iota$ be a type and
+Let $\iota$ be a type and
 let $M$ be a submonoid of $\mathbb{N}^\iota$ under componentwise addition. Let $A$ be the set
 of atoms of $M$: the elements $a \in M$ with $a \ne 0$ such that $y = 0$ or $z = 0$ whenever
 $a = y + z$ with $y, z \in M$. If every element of $M$ is a finite sum of elements of $A$, then

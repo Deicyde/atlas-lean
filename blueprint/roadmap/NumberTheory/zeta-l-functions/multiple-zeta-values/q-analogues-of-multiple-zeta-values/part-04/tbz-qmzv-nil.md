@@ -1,6 +1,6 @@
 # TBZ-qMZV of the empty index
 
-**TBZ-qMZV of the empty index.** The Takeyama–Bradley–Zhao qMZV of the empty index is $1$:
+The Takeyama–Bradley–Zhao qMZV of the empty index is $1$:
 $\zeta_q^{\mathrm{TBZ}}(\varnothing) = 1$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Absolute convergence of the vertex-cover Euler product
 
-**Absolute convergence of the vertex-cover Euler product.** Let $k \ge 2$, let $E$ be a set of
+Let $k \ge 2$, let $E$ be a set of
 pairs $(a, b)$ with $1 \le a < b \le k$, let $G$ be the graph on $\{1, \dots, k\}$ with edge set
 $E$, and let $J$ be a vertex cover of $G$, that is, every edge of $E$ has an endpoint in $J$. For
 $L \subseteq J$ let $N(L)$ be the set of vertices adjacent to some vertex of $L$. For complex

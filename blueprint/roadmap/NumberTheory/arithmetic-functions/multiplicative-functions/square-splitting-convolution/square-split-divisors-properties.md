@@ -1,6 +1,6 @@
 # Basic properties of the square-splitting divisor sets
 
-**Basic properties of the square-splitting divisor sets.** Let
+Let
 $A(n) = \{u_1 v_1^2 : u_1 \mid u(n),\ v_1 \mid v(n)\}$ be the square-splitting divisor set of
 $n$, where $u(n)$ is the squarefree part of $n$ and $n = u(n) v(n)^2$ for $n \ge 1$. Then
 (i) for every $n \ge 1$, both $1$ and $n$ belong to $A(n)$, and every element of $A(n)$ divides

@@ -1,6 +1,6 @@
 # Multiple-zeta index
 
-**Multiple-zeta index.** An index is a finite sequence $(k_1, \ldots, k_r)$ of positive
+An index is a finite sequence $(k_1, \ldots, k_r)$ of positive
 integers with $r \ge 0$, so the empty sequence is allowed. It is represented as a natural
 number $n$ together with a composition of $n$, that is, a sequence of positive integers with
 sum $n$.

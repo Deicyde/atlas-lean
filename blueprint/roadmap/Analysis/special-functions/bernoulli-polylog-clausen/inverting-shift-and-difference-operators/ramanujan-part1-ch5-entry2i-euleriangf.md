@@ -1,6 +1,6 @@
 # Ramanujan's solutions of two central difference equations
 
-**Ramanujan's solutions of two central difference equations.** Let $\varphi$ be a real
+Let $\varphi$ be a real
 polynomial of degree $d$ (with $d = 0$ for $\varphi = 0$). For $n \ge 0$ let
 $F_n(x) = \varphi(x) + \sum_{k=1}^{n} \frac{(-1)^k (n!)^2}{(n+k)!\,(n-k)!}
 \bigl(\varphi(x+k) + \varphi(x-k)\bigr)$, and let

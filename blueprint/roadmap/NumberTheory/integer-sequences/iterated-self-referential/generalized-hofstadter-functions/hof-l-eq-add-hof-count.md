@@ -1,6 +1,6 @@
 # The image length $L_k$ as a letter count
 
-**The image length $L_k$ as a letter count.** Let $k \ge 1$. Let $F_k$ be the generalized
+Let $k \ge 1$. Let $F_k$ be the generalized
 Hofstadter function and $F_k^{k-1}$ its $(k-1)$-fold iterate, let $x_k[0]\,x_k[1] \cdots$ be the
 fixed point, beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every
 other letter $i$ to $i + 1$, let $L_k(n)$ be the length of the word

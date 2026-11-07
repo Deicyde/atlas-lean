@@ -1,6 +1,6 @@
 # Digit of the N-expansion map
 
-**Digit of the N-expansion map.** Let $N$ be a natural number and $\alpha$ a real number, and
+Let $N$ be a natural number and $\alpha$ a real number, and
 write $I_\alpha = [\alpha, \alpha + 1]$. The digit of a real number $x$ is
 $d(x) = \lfloor N/x - \alpha \rfloor$, except that when $N/\alpha - \alpha$ is an integer, the
 digit of $\alpha$ itself is $d(\alpha) = N/\alpha - \alpha - 1$.

@@ -1,6 +1,6 @@
 # Nathanson's bound for restricted sumsets and its inverse
 
-**Nathanson's bound for restricted sumsets and its inverse.** Let $A$ be a nonempty finite
+Let $A$ be a nonempty finite
 set of $k$ integers and let $h$ be a natural number with $1 \le h \le k$. Then the restricted
 sumset $h^{\wedge} A$ has at least $hk - h^2 + 1$ elements. Moreover, if $k \ge 5$ and
 $2 \le h \le k - 2$, then $h^{\wedge} A$ has exactly $hk - h^2 + 1$ elements if and only if there

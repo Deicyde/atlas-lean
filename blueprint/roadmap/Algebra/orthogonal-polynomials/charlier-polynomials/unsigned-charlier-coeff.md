@@ -1,6 +1,6 @@
 # Unsigned Charlier coefficient
 
-**Unsigned Charlier coefficient.** For natural numbers $n$ and $m$, the unsigned Charlier
+For natural numbers $n$ and $m$, the unsigned Charlier
 coefficient is the natural number
 
 $$c(n, m) = \sum_{k=0}^{n} \binom{n}{k}\, [x^m]\, x^{\overline{k}},$$

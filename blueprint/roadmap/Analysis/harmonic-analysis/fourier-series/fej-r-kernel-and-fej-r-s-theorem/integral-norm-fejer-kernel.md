@@ -1,6 +1,6 @@
 # The Fejér kernel has $L^1$ norm one
 
-**The Fejér kernel has $L^1$ norm one.** Let $T > 0$. For every $N \in \mathbb{N}$, the
+Let $T > 0$. For every $N \in \mathbb{N}$, the
 $N$-th Fejér kernel $K_N$ on $\mathbb{R}/T\mathbb{Z}$ satisfies
 
 $$\int_{\mathbb{R}/T\mathbb{Z}} |K_N(t)|\, dt = 1,$$

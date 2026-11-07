@@ -1,6 +1,6 @@
 # A p-group and a proper subgroup with isomorphic automorphism groups (Kourovka 15.27)
 
-**A p-group and a proper subgroup with isomorphic automorphism groups (Kourovka 15.27).** For some
+For some
 prime $p$ there are a finite $p$-group $G$ of order greater than $2$ and a proper subgroup $H < G$
 with $\mathrm{Aut}(G) \cong \mathrm{Aut}(H)$ as groups.
 

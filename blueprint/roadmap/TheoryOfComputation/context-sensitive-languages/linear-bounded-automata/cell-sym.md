@@ -1,3 +1,3 @@
 # Cell symbol of the LBA grammar
 
-**Cell symbol of the LBA grammar.** A grammar symbol for the LBA grammar: a cell as a nonterminal.
+A grammar symbol for the LBA grammar: a cell as a nonterminal.

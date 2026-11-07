@@ -1,6 +1,6 @@
 # Irreducible characters of $p'$-degree
 
-**Irreducible characters of $p'$-degree.** For a group $G$ and a natural number $p$,
+For a group $G$ and a natural number $p$,
 $\mathrm{Irr}_{p'}(G)$ is the set of functions $G \to \mathbb{C}$ that are characters of simple
 finite-dimensional complex representations of $G$ whose dimension is not divisible by $p$.
 

@@ -1,6 +1,6 @@
 # Class numbers of the discriminants $-3$, $-4$ and $-12$
 
-**Class numbers of the discriminants $-3$, $-4$ and $-12$.** The Gauss class numbers satisfy
+The Gauss class numbers satisfy
 $h(-3) = h(-4) = h(-12) = 1$, and the unweighted Hurwitz class number satisfies $H(-12) = 2$.
 
 The two reduced forms of discriminant $-12$ are $x^2 + 3y^2$ and the imprimitive form

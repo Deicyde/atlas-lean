@@ -1,6 +1,6 @@
 # Passing the Z corridor at a given separation
 
-**Passing the Z corridor at a given separation.** For a real number $d$, a set
+For a real number $d$, a set
 $K \subseteq \mathbb{C}$ can pass the Z corridor with corner separation $d$ if there are
 continuous maps $u$ from $[0, 1]$ to the unit circle $\{w \in \mathbb{C} : |w| = 1\}$ and $c$
 from $[0, 1]$ to $\mathbb{C}$ such that, writing $K_t = \{u(t) z + c(t) : z \in K\}$ for the

@@ -1,6 +1,6 @@
 # The origin is a lattice point of every sector
 
-**The origin is a lattice point of every sector.** For every real number $\alpha$, the
+For every real number $\alpha$, the
 origin $(0, 0)$ lies in the set $I(\alpha)$ of lattice points of the sector of slope $\alpha$.
 
 ## Sources

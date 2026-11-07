@@ -1,6 +1,6 @@
 # Recursive lower bound for marriageable singles partitions
 
-**Recursive lower bound for marriageable singles partitions.** For every $n \ge 0$,
+For every $n \ge 0$,
 $C_n + 3M_n \le M_{n+2}$, where $C_n$ is the number of noncrossing partitions of
 $\{0, \dots, n-1\}$ and $M_n$ is the number of those that are marriageable singles partitions.
 

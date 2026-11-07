@@ -1,6 +1,6 @@
 # Finite non-supersoluble groups have uncomplemented maximal subgroups of Sylow subgroups
 
-**Finite non-supersoluble groups have uncomplemented maximal subgroups of Sylow subgroups.** For
+For
 every finite group $G$ that is not supersoluble, there are a prime $p$ and a non-cyclic Sylow
 $p$-subgroup $P$ of $G$ with a maximal subgroup $M$ of $P$ that has no proper complement in $G$:
 there is no subgroup $K \ne G$ with $MK = G$ and $M \cap K = 1$. This answers Kourovka

@@ -1,6 +1,6 @@
 # Bernoulli–Fibonacci double sum with weights $(-2)^n$
 
-**Bernoulli–Fibonacci double sum with weights $(-2)^n$.** Let $B_k$ be the Bernoulli
+Let $B_k$ be the Bernoulli
 numbers, with $B_1 = -1/2$, and let $F_k$ be the Fibonacci numbers ($F_0 = 0$, $F_1 = 1$). For every
 natural number $m$,
 

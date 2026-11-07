@@ -1,6 +1,6 @@
 # Growth of the first column of the Trithoff array
 
-**Growth of the first column of the Trithoff array.** Let $\alpha$ be a real number with
+Let $\alpha$ be a real number with
 $\alpha^3 = \alpha^2 + \alpha + 1$, and let $a_0 < a_1 < a_2 < \cdots$ be the positive integers
 that have a Tribonacci representation with least significant digit $1$, in increasing order
 (the first column of the Trithoff array, OEIS A003265). Then $a_r / (r + 1)$ tends to

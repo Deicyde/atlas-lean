@@ -1,6 +1,6 @@
 # Morphic coding of the Wythoff mex pairs at level two
 
-**Morphic coding of the Wythoff mex pairs at level two.** Let $a_n$ be the least integer
+Let $a_n$ be the least integer
 $m > 2$ that differs from $a_i$ and $b_i$ for every $i < n$, and let $b_n = a_n + n + 3$, so that
 $(a_0, b_0) = (3, 6)$. Let $f_2$ be the morphism on the alphabet $\{0, 1, \dots, 15\}$ given by
 $0 \mapsto 0\,1$, $1 \mapsto 2$, $2 \mapsto 3\,4$, $3 \mapsto 5\,6$, $4 \mapsto 7$,

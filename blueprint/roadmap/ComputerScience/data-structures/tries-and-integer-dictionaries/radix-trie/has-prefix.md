@@ -1,6 +1,6 @@
 # Prefix search in a radix trie
 
-**Prefix search in a radix trie.** For a radix trie $t$ and a pattern $p$ (a list of symbols),
+For a radix trie $t$ and a pattern $p$ (a list of symbols),
 prefix search returns a boolean computed as follows. If $p$ is empty, it is true exactly when
 $t$ stores at least one key. Otherwise let $c$ be the first symbol of $p$ and take the first
 child edge of the root whose label starts with $c$; if there is none, the answer is false. If

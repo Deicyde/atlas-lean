@@ -1,6 +1,6 @@
 # Axler's six-term lower bound for the prime-counting function
 
-**Axler's six-term lower bound for the prime-counting function.** For every real
+For every real
 $x \ge 1751189194177$ (the prime $p_{64497259289}$),
 
 $$

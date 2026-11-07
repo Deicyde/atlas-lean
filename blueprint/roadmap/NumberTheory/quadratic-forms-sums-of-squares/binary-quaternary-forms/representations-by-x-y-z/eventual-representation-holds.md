@@ -1,6 +1,5 @@
 # Every large integer is a bounded value of $x^2 + y^2 - z^2$ (Erdős Problem 1148)
 
-**Every large integer is a bounded value of $x^2 + y^2 - z^2$ (Erdős Problem 1148).**
 For every sufficiently large natural number $n$ there are natural numbers $x, y, z$ with
 $n = x^2 + y^2 - z^2$ and $\max(x^2, y^2, z^2) \le n$.
 

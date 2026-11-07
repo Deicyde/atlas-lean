@@ -1,6 +1,6 @@
 # Literal routine of the accept generator
 
-**Literal routine of the accept generator.** Fix a layout $L$ with $g$ symbol codes and
+Fix a layout $L$ with $g$ symbol codes and
 parameters $n_1$, $\mathrm{ac}$, $\mathrm{ea}$, and a clause kind $c$ with base counter $b(c)$,
 offset $\mathrm{off}(c)$ and polarity $\sigma(c)$. The literal routine of $c$ gives the
 generator's statement at each label $\mathrm{lit}(c, s)$; below, a stage $s$ stands for the label

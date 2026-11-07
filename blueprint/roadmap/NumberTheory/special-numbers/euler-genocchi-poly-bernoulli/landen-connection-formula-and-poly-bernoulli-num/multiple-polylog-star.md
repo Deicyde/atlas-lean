@@ -1,6 +1,6 @@
 # Non-strict multiple polylogarithm
 
-**Non-strict multiple polylogarithm.** For an index $k = (k_1, \dots, k_r)$ of positive
+For an index $k = (k_1, \dots, k_r)$ of positive
 integers with $r \ge 1$, the non-strict multiple polylogarithm is the formal power series
 
 $$\mathrm{Li}^\star_k(z) = \sum_{0\lt m_1\le\cdots\le m_r} \frac{z^{m_r}}{m_1^{k_1} \cdots m_r^{k_r}}$$

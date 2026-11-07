@@ -1,6 +1,6 @@
 # The alternating-bit protocol in a configuration
 
-**The alternating-bit protocol in a configuration.** Consider a configuration with sender
+Consider a configuration with sender
 state $s$, data channel state $d$, receiver state $r$ and acknowledgement channel state $k$.
 Write $\mathrm{Sender}(s)$, $\mathrm{Data}(d)$, $\mathrm{Receiver}(r)$ and $\mathrm{Ack}(k)$
 for the constants of the four agents at these states, and let $L$ be the set of internal

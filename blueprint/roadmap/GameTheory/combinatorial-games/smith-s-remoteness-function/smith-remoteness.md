@@ -1,6 +1,6 @@
 # Smith's remoteness function
 
-**Smith's remoteness function.** For an impartial game $G$, the remoteness $R(p)$ of a
+For an impartial game $G$, the remoteness $R(p)$ of a
 position $p$ of $G$ is defined by well-founded recursion along moves; the options of $p$ are the
 positions reachable from $p$ in one move. If $p$ has no options, then $R(p) = 0$. Otherwise, if
 some option $q$ of $p$ has $R(q)$ even, then $R(p)$ is $1$ plus the least even value of $R(q)$

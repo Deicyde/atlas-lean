@@ -1,6 +1,6 @@
 # Complex conjugation is nowhere complex-differentiable
 
-**Complex conjugation is nowhere complex-differentiable.** Let $f : \mathbb{C} \to \mathbb{C}$
+Let $f : \mathbb{C} \to \mathbb{C}$
 be the function $f(z) = \bar z$. Then $f$ is not complex-differentiable at any point
 $z \in \mathbb{C}$.
 

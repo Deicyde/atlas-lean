@@ -1,6 +1,6 @@
 # Total positivity of hyper $p$-Fibonacci Toeplitz matrices
 
-**Total positivity of hyper $p$-Fibonacci Toeplitz matrices.** Let $p \ge 1$ be an integer
+Let $p \ge 1$ be an integer
 and $r \ge 1$ a natural number, and let $F_{p,n}^{(r)}$ be the hyper $p$-Fibonacci numbers, the
 generalized hyper-Fibonacci numbers $W_{p,n}^{(r)}$ with initial values $a = 0$ and $b = 1$.
 Consider real $(r + 2) \times (r + 2)$ matrices with rows and columns indexed by

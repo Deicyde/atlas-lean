@@ -1,6 +1,6 @@
 # Digit count
 
-**Digit count.** For natural numbers $b$, $d$ and $n$, the digit count of $d$ in $n$ is the
+For natural numbers $b$, $d$ and $n$, the digit count of $d$ in $n$ is the
 number of occurrences of the digit $d$ in the minimal base-$b$ representation of $n$ (its base-$b$
 digits without leading zeros). The representation of $0$ is empty, so $0$ has digit count $0$.
 

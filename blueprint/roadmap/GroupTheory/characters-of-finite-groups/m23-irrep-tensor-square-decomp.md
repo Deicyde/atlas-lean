@@ -1,6 +1,6 @@
 # Four isotypic components in a tensor square for a simple group of order 10200960
 
-**Four isotypic components in a tensor square for a simple group of order 10200960.** There
+There
 exist a finite simple group $G$ of order $10200960$ and an irreducible complex representation
 $\rho$ of $G$ on a vector space $V$ of dimension $22$ such that the tensor square $V \otimes V$,
 regarded as a module over the group algebra $\mathbb{C}[G]$ through the diagonal action

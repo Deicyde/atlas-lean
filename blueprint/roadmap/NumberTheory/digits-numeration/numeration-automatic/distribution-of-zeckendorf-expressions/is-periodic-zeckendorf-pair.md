@@ -1,6 +1,6 @@
 # Periodic Zeckendorf pairs
 
-**Periodic Zeckendorf pairs.** Two lists $L$ and $\tilde L$ of natural numbers form a periodic
+Two lists $L$ and $\tilde L$ of natural numbers form a periodic
 Zeckendorf pair when both have length at least $2$ and a nonzero first entry, and the periodic
 Zeckendorf collection $E$ determined by $L$ is a proper subset of the periodic Zeckendorf
 collection $\tilde E$ determined by $\tilde L$.

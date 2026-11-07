@@ -1,6 +1,6 @@
 # Product rules of CCω
 
-**Product rules of CCω.** The product rules say in which sort $s_3$ a dependent product
+The product rules say in which sort $s_3$ a dependent product
 $\Pi (x : A).\, B$ lives when $A$ lives in the sort $s_1$ and $B$ lives in the sort $s_2$. There
 are exactly three rules: for every sort $s$, a product with domain in $s$ and codomain in
 $\mathrm{Prop}$ lives in $\mathrm{Prop}$ (the impredicativity of $\mathrm{Prop}$); for all natural

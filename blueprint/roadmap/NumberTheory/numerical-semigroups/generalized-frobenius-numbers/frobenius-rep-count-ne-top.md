@@ -1,6 +1,6 @@
 # Finitely many representations for positive generators
 
-**Finitely many representations for positive generators.** If $a_1, \dots, a_k$ are positive
+If $a_1, \dots, a_k$ are positive
 natural numbers, then for every integer $m$ the representation count $d(m; a_1, \dots, a_k)$ is
 finite.
 

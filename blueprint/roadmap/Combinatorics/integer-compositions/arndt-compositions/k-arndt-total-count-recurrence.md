@@ -1,6 +1,6 @@
 # Recurrences for generalized Arndt counts
 
-**Recurrences for generalized Arndt counts.** Let $a(n, k)$ be the number of generalized
+Let $a(n, k)$ be the number of generalized
 Arndt compositions of $n$ with shift $k$, set $a(m, k) = 0$ for $m < 0$, and note that
 $a(0, k) = 1$ counts the empty composition. For every natural number $j$ and every $n \ge 3$,
 

@@ -1,6 +1,6 @@
 # An unsolvable equation over a free group that is solvable in every finite quotient
 
-**An unsolvable equation over a free group that is solvable in every finite quotient.** There are
+There are
 a free group $F$ on some set of generators, a natural number $n$ and an equation $w$ over $F$ in
 the unknowns $x_0, \dots, x_{n-1}$, that is, an element $w$ of the free product of $F$ with the
 free group on $x_0, \dots, x_{n-1}$, such that no $g_0, \dots, g_{n-1} \in F$ satisfy the equation

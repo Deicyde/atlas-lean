@@ -1,6 +1,6 @@
 # Hopcroft–Karp
 
-**Hopcroft–Karp.** Let a bipartite graph have left vertices $0, \dots, a-1$, right
+Let a bipartite graph have left vertices $0, \dots, a-1$, right
 vertices $0, \dots, b-1$ and an adjacency list for each left vertex. Starting from the empty
 matching, the Hopcroft–Karp algorithm runs phases, at most $b + 1$ of them, and stops early at
 the first phase that finds no path: each phase computes the layered search once, collects

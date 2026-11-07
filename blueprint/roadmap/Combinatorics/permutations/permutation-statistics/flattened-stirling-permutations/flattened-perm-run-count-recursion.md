@@ -1,6 +1,6 @@
 # Recursion for flattened partitions by number of runs
 
-**Recursion for flattened partitions by number of runs.** Let $f_{n,k}$ be the number of
+Let $f_{n,k}$ be the number of
 flattened partitions of length $n$ with exactly $k$ runs. For all $n \ge 1$ and $k \ge 2$,
 
 $$

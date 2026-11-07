@@ -1,6 +1,6 @@
 # Terminal states are losing in the Accelerated Zeckendorf Game
 
-**Terminal states are losing in the Accelerated Zeckendorf Game.** Every state of the
+Every state of the
 Accelerated Zeckendorf Game from which no move is possible is a losing state.
 
 ## Sources

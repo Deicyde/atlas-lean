@@ -1,6 +1,6 @@
 # Cascade of selections as a query rewrite
 
-**Cascade of selections as a query rewrite.** Fix a database schema $\mathrm{sch}$
+Fix a database schema $\mathrm{sch}$
 assigning a finite set of attributes to each base relation name. Let $e$ be a well-formed query
 with schema $S$, and let $c$ and $c'$ be selection conditions all of whose attributes lie in
 $S$. Then the query $\sigma_c(\sigma_{c'}(e))$, the selection by $c$ of the selection of $e$ by

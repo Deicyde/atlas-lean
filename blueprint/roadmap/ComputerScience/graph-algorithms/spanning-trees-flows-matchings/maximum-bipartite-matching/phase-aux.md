@@ -1,6 +1,6 @@
 # Phase search over candidates
 
-**Phase search over candidates.** Given a partner assignment $\mathrm{mate}$, a level $k$, a
+Given a partner assignment $\mathrm{mate}$, a level $k$, a
 list of candidate right vertices, a set $U$ of used left vertices and a set $D$ of used or dead
 right vertices, the phase search tries the candidates in order. For a candidate $j$ it runs the
 layered depth-first search from $j$ at level $k$ with used left vertices $U$ and dead set $D$,

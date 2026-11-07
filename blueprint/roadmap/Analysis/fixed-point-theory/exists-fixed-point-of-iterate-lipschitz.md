@@ -1,6 +1,6 @@
 # Fixed points of maps whose iterates have null Lipschitz constants
 
-**Fixed points of maps whose iterates have null Lipschitz constants.** Let $X$ be a nonempty
+Let $X$ be a nonempty
 complete metric space, let $f : X \to X$, and write $f^n$ for the $n$-th iterate of $f$. Let
 $(q_n)_{n \in \mathbb{N}}$ be a sequence of nonnegative real numbers with $q_n \to 0$ such that
 $d(f^n(x), f^n(y)) \le q_n \, d(x, y)$ for every $n \ge 1$ and all $x, y \in X$. Then $f$ has a

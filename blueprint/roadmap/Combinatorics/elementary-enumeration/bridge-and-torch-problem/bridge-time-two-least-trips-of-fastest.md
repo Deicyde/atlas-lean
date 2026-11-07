@@ -1,6 +1,6 @@
 # Fewest crossings of the fastest person in an optimal schedule
 
-**Fewest crossings of the fastest person in an optimal schedule.** For bridge capacity $2$
+For bridge capacity $2$
 and $n \ge 1$ people $1, \dots, n$ (person $i$ has crossing time $i$), the least number $a(n)$
 of crossings that include person $1$, taken over all optimal schedules (complete schedules
 whose total time equals the optimal crossing time $T(n)$), is $a(n) = 2\lceil n/2 \rceil - 1$.

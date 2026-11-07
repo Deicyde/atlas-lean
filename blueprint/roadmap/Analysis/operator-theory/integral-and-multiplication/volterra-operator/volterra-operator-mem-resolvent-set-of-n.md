@@ -1,6 +1,6 @@
 # Nonzero reals lie in the resolvent set of the Volterra operator
 
-**Nonzero reals lie in the resolvent set of the Volterra operator.** For every nonzero real
+For every nonzero real
 $z$, $z$ lies in the real resolvent set of the Volterra operator $V$: the bounded operator
 $z - V$ is invertible.
 

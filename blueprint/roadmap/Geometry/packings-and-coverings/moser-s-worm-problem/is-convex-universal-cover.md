@@ -1,6 +1,6 @@
 # Convex universal covers
 
-**Convex universal covers.** A set $\Omega \subseteq \mathbb{C}$ is a convex universal cover
+A set $\Omega \subseteq \mathbb{C}$ is a convex universal cover
 when it is nonempty, convex (as a subset of the real plane $\mathbb{C} \cong \mathbb{R}^2$), and
 covers every unit arc: for every continuous curve $\gamma : [0, 1] \to \mathbb{C}$ of length
 exactly $1$ there are $\theta \in \mathbb{R}$ and $\tau \in \mathbb{C}$ with

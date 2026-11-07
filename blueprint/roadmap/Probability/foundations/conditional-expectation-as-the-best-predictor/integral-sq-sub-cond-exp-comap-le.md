@@ -1,6 +1,6 @@
 # The regression function is the Bayes-optimal regressor
 
-**The regression function is the Bayes-optimal regressor.** Let $\mu$ be a finite measure
+Let $\mu$ be a finite measure
 on a measurable space $\Omega$, let $X : \Omega \to \mathcal{X}$ be a measurable map into a
 measurable space $\mathcal{X}$, and let $Y : \Omega \to \mathbb{R}$ be square-integrable with
 respect to $\mu$. Write $\mathbb{E}[Y \mid X]$ for the conditional expectation of $Y$ with

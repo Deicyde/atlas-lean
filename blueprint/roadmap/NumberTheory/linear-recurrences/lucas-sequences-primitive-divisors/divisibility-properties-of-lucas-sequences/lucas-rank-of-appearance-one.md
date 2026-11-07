@@ -1,6 +1,6 @@
 # Rank of appearance of $1$
 
-**Rank of appearance of $1$.** For all integers $P, Q$ with $Q \neq 0$, the rank of
+For all integers $P, Q$ with $Q \neq 0$, the rank of
 appearance of $1$ in the Lucas sequence $U(P, Q)$ is $1$.
 
 ## Sources

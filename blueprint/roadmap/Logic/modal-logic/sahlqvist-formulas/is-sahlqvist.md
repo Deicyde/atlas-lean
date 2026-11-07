@@ -1,6 +1,6 @@
 # Sahlqvist formulas
 
-**Sahlqvist formulas.** The Sahlqvist formulas form the smallest class of modal formulas that
+The Sahlqvist formulas form the smallest class of modal formulas that
 contains every Sahlqvist implication, is closed under $\wedge$ and $\Box$, and contains
 $\varphi \vee \psi$ whenever $\varphi$ and $\psi$ are Sahlqvist formulas with no atom in common.
 

@@ -1,4 +1,4 @@
 # First-order limit
 
-**First-order limit**: as both `K₁, K₂ → ∞` the response coefficient tends to `81`, the
+As both `K₁, K₂ → ∞` the response coefficient tends to `81`, the
 value of a Michaelis–Menten response.

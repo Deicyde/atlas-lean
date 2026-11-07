@@ -1,6 +1,6 @@
 # Arndt compositions with a given number of parts as a sum of products
 
-**Arndt compositions with a given number of parts as a sum of products.** For all natural
+For all natural
 numbers $n$ and $\ell$, the number of Arndt compositions of $n$ with $2\ell$ parts is
 
 $$\sum_{(a_1, \dots, a_\ell)} \prod_{i=1}^{\ell} \left\lfloor \frac{a_i - 1}{2} \right\rfloor,$$

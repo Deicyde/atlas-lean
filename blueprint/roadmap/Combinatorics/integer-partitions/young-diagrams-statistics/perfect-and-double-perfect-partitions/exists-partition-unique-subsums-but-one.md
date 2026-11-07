@@ -1,6 +1,6 @@
 # Partitions with unique subsums except one
 
-**Partitions with unique subsums except one.** The partitions of $m$ contained in a
+The partitions of $m$ contained in a
 partition $\lambda$ are the distinct sub-multisets of the parts of $\lambda$ with sum $m$. Let
 $v \ge 1$. There are a natural number $n$ and a partition $\lambda$ of $n$ that contains exactly
 $v$ partitions of some $m$ with $v \le m \le n - v$ and exactly one partition of every positive

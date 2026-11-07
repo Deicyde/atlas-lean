@@ -1,6 +1,6 @@
 # First copy loop of the composite machine
 
-**First copy loop of the composite machine.** Consider the composite program of machines $M_1$
+Consider the composite program of machines $M_1$
 and $M_2$ with symbol translation $\varphi$. Suppose it is at the label that pops $M_1$'s output
 stack, with state $(v_1, v_2, o)$, with $M_1$'s stacks holding $S_1$, $M_2$'s stacks holding $S_2$,
 the scratch stack holding $t$, and $M_1$'s output stack holding the list $y$. Then after exactly

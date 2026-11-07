@@ -1,6 +1,6 @@
 # Power-weighted sums of Lucas numbers
 
-**Power-weighted sums of Lucas numbers.** Let $L_k$ denote the Lucas numbers, so $L_0 = 2$,
+Let $L_k$ denote the Lucas numbers, so $L_0 = 2$,
 $L_1 = 1$ and $L_{k+2} = L_{k+1} + L_k$, and let
 $p_{\ell,m}(x, y) = \sum_{i=0}^{m} (-1)^i \binom{m}{i} (ix + y)^\ell$ be the alternating binomial
 power sum. Then for all natural numbers $\ell$ and $n$, with the convention $0^0 = 1$,

@@ -1,6 +1,6 @@
 # Crossing count of a regular projection
 
-**Crossing count of a regular projection.** For a parametrized link $L$ whose standard
+For a parametrized link $L$ whose standard
 projection is regular, the crossing count of $L$ is the number of crossings of the projection,
 that is, the number of points of its double-point set.
 

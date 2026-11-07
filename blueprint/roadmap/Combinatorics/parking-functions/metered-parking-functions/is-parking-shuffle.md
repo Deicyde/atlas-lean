@@ -1,6 +1,6 @@
 # Parking-function shuffles
 
-**Parking-function shuffles.** Let $m'$, $n$, $k$ be natural numbers and let
+Let $m'$, $n$, $k$ be natural numbers and let
 $\pi : \{0, \dots, m' - 1\} \to \{0, \dots, n - 1\}$, with one-based letters $w_i = \pi(i) + 1$.
 Then $\pi$ is a parking-function shuffle with parameters $(m', n, k)$ when all of the following
 hold: no letter $w_i$ equals $k$; exactly $\max(m' + k - n, 0)$ letters satisfy $w_i < k$;

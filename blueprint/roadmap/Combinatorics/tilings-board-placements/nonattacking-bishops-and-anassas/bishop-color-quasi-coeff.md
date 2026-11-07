@@ -1,6 +1,6 @@
 # Constituent coefficients for bishops on one color
 
-**Constituent coefficients for bishops on one color.** For natural numbers $k$, $d$ and a
+For natural numbers $k$, $d$ and a
 complex number $z$, the constituent coefficient $c_{k,d}(z)$ is
 
 $$c_{k,d}(z) = \sum_{i=d}^{2k} \frac{(-1)^{i-d}}{i!} {i \brack d}

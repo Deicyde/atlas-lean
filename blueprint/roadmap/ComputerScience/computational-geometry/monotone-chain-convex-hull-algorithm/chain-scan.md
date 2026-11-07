@@ -1,6 +1,6 @@
 # Monotone chain scan
 
-**Monotone chain scan.** Let $\Bbbk$ be a field with a linear order. Given a stack $S$ of
+Let $\Bbbk$ be a field with a linear order. Given a stack $S$ of
 points of $\Bbbk^2$, listed top first, and a list of points $p_1, \dots, p_n$ of $\Bbbk^2$, the
 scan processes $p_1, \dots, p_n$ in order: for each point $p = p_i$ it removes the top $a$ of the
 stack as long as the stack has a second element $b$ with

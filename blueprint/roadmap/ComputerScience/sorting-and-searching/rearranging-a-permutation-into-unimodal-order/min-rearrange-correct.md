@@ -1,6 +1,6 @@
 # Correctness of the unimodal rearrangement algorithm
 
-**Correctness of the unimodal rearrangement algorithm.** Let $a$ be an array of length $n$ that
+Let $a$ be an array of length $n$ that
 is a permutation of $1, \dots, n$, and let $m(a)$ be the value that the program
 $\mathrm{minRearrange}$ computes on $a$. Then some unimodal permutation $x$ of
 $1, \dots, n$ differs from $a$ in exactly $m(a)$ positions, and every unimodal permutation of

@@ -1,6 +1,6 @@
 # Compressed subgroups of free groups of finite rank are inert (Kourovka 19.102)
 
-**Compressed subgroups of free groups of finite rank are inert (Kourovka 19.102).** For every
+For every
 $n \in \mathbb{N}$, every compressed subgroup $H$ of the free group $F_n$ on $n$ generators is
 inert.
 

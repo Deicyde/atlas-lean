@@ -1,6 +1,6 @@
 # Branch groups of exponential growth exist (Kourovka 15.14(d))
 
-**Branch groups of exponential growth exist (Kourovka 15.14(d)).** There is a finitely generated
+There is a finitely generated
 branch group of exponential growth.
 
 The Kourovka Archive answers 15.14(d) "Such groups do exist" (Sidki and Wilson); a finitely

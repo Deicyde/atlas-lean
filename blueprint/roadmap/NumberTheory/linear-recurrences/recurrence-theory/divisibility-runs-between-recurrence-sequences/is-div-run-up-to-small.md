@@ -1,6 +1,6 @@
 # Divisibility runs of length one, two and three
 
-**Divisibility runs of length one, two and three.** For integers $x, y, a, b, c$, let $(P_n)$
+For integers $x, y, a, b, c$, let $(P_n)$
 be the Gibonacci sequence with $P_0 = x$, $P_1 = y$ and $(Q_n)$ the generalized Tribonacci sequence
 with $Q_0 = a$, $Q_1 = b$, $Q_2 = c$, and say $(x, y; a, b, c)$ has a divisibility run of length at
 least $L$ when $P_i \ne 0$ and $P_i \mid Q_i$ for every $i < L$. Then there is a run of length at

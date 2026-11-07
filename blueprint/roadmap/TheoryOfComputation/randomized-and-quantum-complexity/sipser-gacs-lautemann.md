@@ -1,6 +1,6 @@
 # Sipser-Gács-Lautemann: BPP is in $\Sigma_2^p$ and $\Pi_2^p$
 
-**Sipser-Gács-Lautemann: BPP is in $\Sigma_2^p$ and $\Pi_2^p$.** Every decision problem in
+Every decision problem in
 BPP lies in $\Sigma_2^p$ and in $\Pi_2^p$, the classes of the polynomial hierarchy defined by two
 alternating blocks of polynomially bounded quantifiers, beginning with $\exists$ and with
 $\forall$ respectively.

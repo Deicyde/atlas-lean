@@ -1,6 +1,6 @@
 # The 2-dissection of $1/(f_1 f_3)$
 
-**The 2-dissection of $1/(f_1 f_3)$.** Write $f_k = (q^k; q^k)_\infty$ for the Euler
+Write $f_k = (q^k; q^k)_\infty$ for the Euler
 products. In the ring of integer power series in $q$,
 
 $$

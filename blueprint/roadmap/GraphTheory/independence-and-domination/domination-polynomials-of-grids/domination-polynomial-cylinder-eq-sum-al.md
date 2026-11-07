@@ -1,6 +1,6 @@
 # Cylinder domination polynomial as a sum of almost dominating polynomials
 
-**Cylinder domination polynomial as a sum of almost dominating polynomials.** For all
+For all
 natural numbers $m$ and $n$, let $C_m$ be the cycle graph on the vertices $0, \dots, m - 1$, in
 which distinct $i$ and $j$ are adjacent when $i - j \equiv \pm 1 \pmod m$, and let $P_{n+1}$ be
 the path on the vertices $0, \dots, n$. Then the domination polynomial of the cylinder

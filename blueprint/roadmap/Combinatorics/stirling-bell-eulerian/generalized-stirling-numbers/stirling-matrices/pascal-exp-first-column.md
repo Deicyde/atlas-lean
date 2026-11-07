@@ -1,6 +1,6 @@
 # First-column sequence for exponentials of Pascal diagonal matrices
 
-**First-column sequence for exponentials of Pascal diagonal matrices.** For $k \ge 0$, the
+For $k \ge 0$, the
 sequence of natural numbers $\alpha^{(k)} = (\alpha^{(k)}_i)_{i \ge 0}$ is defined by
 $\alpha^{(k)}_0 = 0$, $\alpha^{(k)}_1 = 1$ and, for $i \ge 2$,
 $\alpha^{(k)}_i = \binom{i-2}{k-1} \alpha^{(k)}_{i-k}$ if $1 \le k < i$ and $\alpha^{(k)}_i = 0$

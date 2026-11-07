@@ -1,6 +1,6 @@
 # Constant coefficient of the generating function of all permutations
 
-**Constant coefficient of the generating function of all permutations.** Let $R$ be a
+Let $R$ be a
 commutative $\mathbb{Q}$-algebra and let $x, q \in R$. In the excedance and cycle exponential
 generating function of the family of all permutations, the coefficient of $u^0$ is $1$.
 

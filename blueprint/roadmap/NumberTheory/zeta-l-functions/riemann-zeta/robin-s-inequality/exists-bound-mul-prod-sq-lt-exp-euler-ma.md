@@ -1,6 +1,6 @@
 # Eventual bound for $C(k)B(k)$ by an explicit logarithm
 
-**Eventual bound for $C(k)B(k)$ by an explicit logarithm.** Let $p_\ell$ denote the $\ell$-th
+Let $p_\ell$ denote the $\ell$-th
 prime ($p_1 = 2$), $\log$ the natural logarithm, $\gamma$ the Euler–Mascheroni constant and $c_1$
 the Meissel–Mertens constant. For $j \in \{1, 2, 3\}$ and $k \in \mathbb{N}$ put
 $L(k) = (k+1)(\log(k+1) + \log\log(k+1))$, $L^-(k) = (k+1)(\log(k+1) + \log\log(k+1) - 1)$ and

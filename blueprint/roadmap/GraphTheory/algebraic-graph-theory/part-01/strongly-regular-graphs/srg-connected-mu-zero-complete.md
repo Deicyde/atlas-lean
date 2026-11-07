@@ -1,6 +1,6 @@
 # Connected strongly regular graphs with μ = 0 are complete
 
-**Connected strongly regular graphs with μ = 0 are complete.** Let $G$ be a finite strongly
+Let $G$ be a finite strongly
 regular graph with parameters $(n, k, \ell, \mu)$ where $\mu = 0$: $G$ has $n$ vertices, every
 vertex has degree $k$, any two adjacent vertices have exactly $\ell$ common neighbors, and any
 two distinct nonadjacent vertices have no common neighbor. If $G$ is connected, then $G$ is

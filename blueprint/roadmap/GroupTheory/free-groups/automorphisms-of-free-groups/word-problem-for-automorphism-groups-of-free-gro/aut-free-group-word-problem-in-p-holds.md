@@ -1,6 +1,6 @@
 # The word problem for Aut(Fₙ) is solvable in polynomial time
 
-**The word problem for Aut(Fₙ) is solvable in polynomial time.** Let $n \ge 2$ and let $F_n$ be the
+Let $n \ge 2$ and let $F_n$ be the
 free group on $n$ generators. For every natural number $k$ and every family
 $g_0, \dots, g_{k-1}$ of automorphisms of $F_n$ that generates $\operatorname{Aut}(F_n)$, the word
 problem of $\operatorname{Aut}(F_n)$ for this family belongs to the complexity class P. Here a word

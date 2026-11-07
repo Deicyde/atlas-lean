@@ -1,6 +1,6 @@
 # Holt's residue condition for rearranged permutiples
 
-**Holt's residue condition for rearranged permutiples.** Let $n \ge 1$ and $b \ge 2$ be
+Let $n \ge 1$ and $b \ge 2$ be
 natural numbers, let $d_0, \dots, d_k$ be natural numbers, and write $(e_k, \dots, e_0)_b$
 for the base-$b$ numeral $\sum_{j=0}^{k} e_j b^j$. Let $\sigma$, $\pi$ and $\tau$ be
 permutations of $\{0, \dots, k\}$. If $(d_k, \dots, d_0)_b$ is an $(n, b, \sigma)$-permutiple

@@ -1,6 +1,6 @@
 # Left spine length of a binary tree
 
-**Left spine length of a binary tree.** The number of nodes on the left spine of a binary tree: the root, its left child, that
+The number of nodes on the left spine of a binary tree: the root, its left child, that
 child's left child, and so on (`0` for the empty tree).
 
 ## Sources

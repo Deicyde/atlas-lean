@@ -1,6 +1,6 @@
 # Hasse bound
 
-**Hasse bound.** Let $F$ be a finite field with $q$ elements and let $E$ be an elliptic curve over
+Let $F$ be a finite field with $q$ elements and let $E$ be an elliptic curve over
 $F$ given by a Weierstrass equation. If $N$ is the number of points of $E$ with coordinates in $F$,
 including the point at infinity, then $(q + 1 - N)^2 \le 4q$ in $\mathbb{Z}$.
 

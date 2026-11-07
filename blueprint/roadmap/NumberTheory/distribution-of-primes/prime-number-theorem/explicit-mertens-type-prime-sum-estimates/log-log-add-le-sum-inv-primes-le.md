@@ -1,6 +1,6 @@
 # Two-sided explicit Mertens bound
 
-**Two-sided explicit Mertens bound.** For every real $x \ge 2$,
+For every real $x \ge 2$,
 $\log \log x + 0.2614 \le \sum_{p \le x} 1/p \le \log \log x + 0.8666$, where the sum runs over
 the primes $p \le x$.
 

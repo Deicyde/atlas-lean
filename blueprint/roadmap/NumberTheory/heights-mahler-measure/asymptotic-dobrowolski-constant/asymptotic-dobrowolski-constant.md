@@ -1,6 +1,6 @@
 # Asymptotic Dobrowolski constant
 
-**Asymptotic Dobrowolski constant.** The asymptotic Dobrowolski constant is the supremum, in
+The asymptotic Dobrowolski constant is the supremum, in
 the extended real numbers $[-\infty, +\infty]$, of the set of all real asymptotic Dobrowolski
 coefficients.
 

@@ -1,6 +1,6 @@
 # Gale–Shapley theorem
 
-**Gale–Shapley theorem.** Let $M$ and $W$ be finite sets with the same number of elements.
+Let $M$ and $W$ be finite sets with the same number of elements.
 Suppose that each $m \in M$ has a strict total order of preference on $W$ and each $w \in W$ has
 a strict total order of preference on $M$. Then some perfect matching between $M$ and $W$ is
 stable for these preferences.

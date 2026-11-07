@@ -1,6 +1,6 @@
 # The all-minus-one vector is a vertex of the standard reflexive simplex
 
-**The all-minus-one vector is a vertex of the standard reflexive simplex.** For every natural
+For every natural
 number $d$, let $e_1, \dots, e_d$ be the standard basis vectors of $\mathbb{Z}^d$. Then the
 point $-(e_1 + \dots + e_d) = (-1, \dots, -1)$ belongs to the vertex set
 $\{e_1, \dots, e_d, -(e_1 + \dots + e_d)\}$ of the standard reflexive simplex $\Delta^d_{sr}$.

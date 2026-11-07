@@ -1,6 +1,6 @@
 # Odd harmonic central binomial sums with weight $\binom{n}{m}$ at shift $3/4$
 
-**Odd harmonic central binomial sums with weight $\binom{n}{m}$ at shift $3/4$.** Let
+Let
 $k, m \ge 0$ and $p > m$ be integers, let $O_n(k)$ denote the depth-$k$ odd harmonic number, let
 $\beta$ be the Dirichlet beta function, and let
 

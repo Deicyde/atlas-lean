@@ -1,6 +1,6 @@
 # Validity for the coordinator
 
-**Validity for the coordinator.** In every reachable state of the two-phase commit protocol,
+In every reachable state of the two-phase commit protocol,
 if the coordinator has decided commit, then every participant voted yes, that is, every
 participant is prepared or committed.
 

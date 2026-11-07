@@ -1,6 +1,6 @@
 # Solutions of $xu''+2u'+u=0$ have infinitely many zeros
 
-**Solutions of $xu''+2u'+u=0$ have infinitely many zeros.** Let $u : \mathbb{R} \to \mathbb{R}$
+Let $u : \mathbb{R} \to \mathbb{R}$
 be twice continuously differentiable on $(0,\infty)$ and satisfy
 
 $$

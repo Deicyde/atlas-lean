@@ -1,6 +1,6 @@
 # Erdős Problem 481: repetitions under affine expansion
 
-**Erdős Problem 481: repetitions under affine expansion.** The statement that for every
+The statement that for every
 $r \in \mathbb{N}$ and all maps $a, b : \{0, \dots, r - 1\} \to \mathbb{N}$ with $a_i \ge 1$ for
 every $i$ and $\sum_{i < r} 1 / a_i > 1$, if $T$ is the affine expansion of $a$ and $b$, sending a
 finite sequence $(x_1, \dots, x_n)$ of natural numbers to the sequence of all $a_i x_j + b_i$,

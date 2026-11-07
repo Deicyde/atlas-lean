@@ -1,6 +1,6 @@
 # Weighted power-mean bounds for Fibonacci numbers
 
-**Weighted power-mean bounds for Fibonacci numbers.** Let $F_k$ be the $k$-th Fibonacci
+Let $F_k$ be the $k$-th Fibonacci
 number ($F_1 = F_2 = 1$), let $n \ge 1$, let $w_1, \dots, w_n$ be positive reals with sum
 $W = \sum_{k=1}^n w_k$, and let $\alpha$ be a real number with $0 < \alpha < 2$. Then
 

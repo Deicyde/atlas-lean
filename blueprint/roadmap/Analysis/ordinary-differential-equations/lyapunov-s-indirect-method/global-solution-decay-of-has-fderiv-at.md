@@ -1,6 +1,6 @@
 # Lyapunov's indirect method (linearized stability), conditional decay form
 
-**Lyapunov's indirect method (linearized stability), conditional decay form.** Let
+Let
 `f (x⋆) = 0` and let `f` be differentiable at `x⋆` with Jacobian matrix `A`. If `A` is Hurwitz,
 then for some `δ, C, α > 0`, every solution of `x' = f(x)` on `[0, ∞)` with
 `‖x(0) - x⋆‖ < δ` satisfies `‖x(t) - x⋆‖ ≤ C e^{-α t} ‖x(0) - x⋆‖` for all `t ≥ 0`.

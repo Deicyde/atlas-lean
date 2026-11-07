@@ -1,6 +1,6 @@
 # Closed form of the Alzer–Richards binomial sum for odd $m$
 
-**Closed form of the Alzer–Richards binomial sum for odd $m$.** Let $m$ be an odd positive
+Let $m$ be an odd positive
 integer and $x$ a complex number, and write $\binom{z}{k} = z(z-1)\cdots(z-k+1)/k!$ for complex
 $z$. Put
 

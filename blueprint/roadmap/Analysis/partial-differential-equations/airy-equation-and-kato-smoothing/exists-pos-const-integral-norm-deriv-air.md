@@ -1,6 +1,6 @@
 # Kato smoothing identity for the Airy equation
 
-**Kato smoothing identity for the Airy equation.** For $u_0 : \mathbb{R} \to \mathbb{C}$ let
+For $u_0 : \mathbb{R} \to \mathbb{C}$ let
 $\widehat{u_0}(\xi) = (2\pi)^{-1/2} \int_{\mathbb{R}} u_0(y) e^{-iy\xi}\,dy$ be its unitary
 Fourier transform, and let
 $u(t, x) = (2\pi)^{-1/2} \int_{\mathbb{R}} e^{i(t\xi^3 + x\xi)}\, \widehat{u_0}(\xi)\,d\xi$ be

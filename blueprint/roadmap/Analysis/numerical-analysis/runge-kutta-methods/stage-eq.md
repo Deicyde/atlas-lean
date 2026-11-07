@@ -1,6 +1,6 @@
 # The defining equation of the stages
 
-**The defining equation of the stages.** Let $E$ be a real normed vector space and $f(t, y)$
+Let $E$ be a real normed vector space and $f(t, y)$
 a vector field $\mathbb{R} \times E \to E$. For an explicit Runge–Kutta method with tableau $a$
 and nodes $c_i = \sum_j a_{ij}$, a time $t$, a state $y \in E$ and a step size $h$, the
 stages $k_i$ satisfy

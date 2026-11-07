@@ -1,6 +1,6 @@
 # Existence of perfect covers
 
-**Existence of perfect covers.** Every finite abelian group $G$ of order $2^n$ has a perfect
+Every finite abelian group $G$ of order $2^n$ has a perfect
 cover, and every nonzero $x \in G$ lies in some perfect cover of $G$.
 
 ## Sources

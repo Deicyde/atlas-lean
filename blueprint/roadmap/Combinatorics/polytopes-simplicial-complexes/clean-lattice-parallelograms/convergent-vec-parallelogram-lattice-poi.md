@@ -1,6 +1,6 @@
 # Lattice points of the parallelogram of two consecutive convergent vectors
 
-**Lattice points of the parallelogram of two consecutive convergent vectors.** Let
+Let
 $1 \le a < n$ be integers, let $n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction
 of $n / a$, where $m$ is the least index at which it terminates, and let $v_i$ be its convergent
 vectors. For every integer $i$ with $-2 \le i < m$, the lattice points of the parallelogram

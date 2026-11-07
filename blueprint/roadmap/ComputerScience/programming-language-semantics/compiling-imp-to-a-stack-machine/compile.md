@@ -1,6 +1,6 @@
 # Compilation of commands
 
-**Compilation of commands.** The compiled code $C_p(c)$ of an IMP command $c$ at base program
+The compiled code $C_p(c)$ of an IMP command $c$ at base program
 counter $p$ is the list of stack-machine instructions defined by recursion on $c$, where jump
 targets are absolute program counters and $\ell$ denotes instruction counts:
 $C_p(\mathbf{skip})$ is empty; $C_p(x := a)$ is the code of $a$ followed by the instruction

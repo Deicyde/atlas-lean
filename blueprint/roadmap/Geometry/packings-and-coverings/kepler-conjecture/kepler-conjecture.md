@@ -1,6 +1,6 @@
 # Kepler conjecture
 
-**Kepler conjecture.** Let $\Delta(3)$ be the supremum of the densities of all unit sphere
+Let $\Delta(3)$ be the supremum of the densities of all unit sphere
 packings in $\mathbb{R}^3$. Then $\Delta(3) = \pi / \sqrt{18}$.
 
 ## Sources

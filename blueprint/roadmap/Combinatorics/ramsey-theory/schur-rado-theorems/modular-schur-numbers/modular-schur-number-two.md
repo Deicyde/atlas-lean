@@ -1,6 +1,6 @@
 # Modular Schur numbers modulo $2$
 
-**Modular Schur numbers modulo $2$.** For all positive integers $k$ and $l$, the modular
+For all positive integers $k$ and $l$, the modular
 Schur number $S_2(k, l)$ equals $0$ when $l$ is odd and equals $1$ when $l$ is even.
 
 The source quotes this result from its reference [4], Chappelon, Revuelta Marchena and Sanz

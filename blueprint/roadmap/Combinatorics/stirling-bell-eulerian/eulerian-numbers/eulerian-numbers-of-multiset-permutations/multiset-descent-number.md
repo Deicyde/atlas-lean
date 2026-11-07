@@ -1,6 +1,6 @@
 # Descent number of a word
 
-**Descent number of a word.** For a word $w = w_1 \cdots w_K$ of length $K$ over the alphabet
+For a word $w = w_1 \cdots w_K$ of length $K$ over the alphabet
 $\{0, 1, \dots, m-1\}$, the descent number of $w$ is one more than its number of descents:
 $1 + \#\{j : 1 \le j < K,\ w_j > w_{j+1}\}$.
 

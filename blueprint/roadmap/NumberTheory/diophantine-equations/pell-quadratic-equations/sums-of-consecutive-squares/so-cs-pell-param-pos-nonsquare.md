@@ -1,6 +1,6 @@
 # The Pell-type parameter is a positive nonsquare
 
-**The Pell-type parameter is a positive nonsquare.** For every solution $(a, b, c)$ of the
+For every solution $(a, b, c)$ of the
 sum of consecutive squares problem, the integer
 $A = 3(b - c)^2\bigl(12(b - a)^2(c - b)^2 - (a - 2b + c)^4\bigr)$ is positive and is not a
 perfect square.

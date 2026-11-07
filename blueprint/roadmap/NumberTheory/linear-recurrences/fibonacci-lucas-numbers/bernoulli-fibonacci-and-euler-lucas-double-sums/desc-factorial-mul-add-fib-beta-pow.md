@@ -1,6 +1,6 @@
 # Derivatives of the Bernoulli–Fibonacci expansion of $(x + \beta)^m$
 
-**Derivatives of the Bernoulli–Fibonacci expansion of $(x + \beta)^m$.** Let
+Let
 $\beta = (1 - \sqrt{5})/2$, let $B_k$ be the Bernoulli numbers with $B_1 = -1/2$, let $F_k$ be the
 Fibonacci numbers, and write $a^{\underline{s}} = a(a-1)\cdots(a-s+1)$ for the falling factorial.
 Then for all natural numbers $s \le m$ and every real number $x$,

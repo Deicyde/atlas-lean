@@ -1,6 +1,6 @@
 # Generating function of Arndt compositions with parts in a set
 
-**Generating function of Arndt compositions with parts in a set.** An Arndt composition is a
+An Arndt composition is a
 finite sequence $(\sigma_1, \dots, \sigma_k)$ of positive integers such that
 $\sigma_{2i-1} > \sigma_{2i}$ for every $i$ with $2i \le k$. For a set $S$ of natural numbers, let
 $a_S(n, k)$ be the number of Arndt compositions of $n$ with $k$ parts, all in $S$. The bivariate

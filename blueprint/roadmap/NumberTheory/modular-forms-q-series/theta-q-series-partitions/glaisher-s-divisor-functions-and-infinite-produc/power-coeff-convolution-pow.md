@@ -1,6 +1,6 @@
 # Power recursion lemma for positive exponents
 
-**Power recursion lemma for positive exponents.** Let $K$ be a field of characteristic zero,
+Let $K$ be a field of characteristic zero,
 let $A \in K[[X]]$ be a formal power series, and let $u$ and $v$ be positive integers. Write
 $a_u(k)$ and $a_v(k)$ for the coefficients of $X^k$ in $A^u$ and $A^v$. Then for every natural
 number $n$,

@@ -1,6 +1,6 @@
 # Carlitz's block harmonic congruence
 
-**Carlitz's block harmonic congruence.** Let $p \ge 5$ be a prime and let $k \in \mathbb{N}$.
+Let $p \ge 5$ be a prime and let $k \in \mathbb{N}$.
 Then in $\mathbb{Z}/p^2\mathbb{Z}$
 
 $$\sum_{r=1}^{p-1} (kp + r)^{-1} = 0.$$

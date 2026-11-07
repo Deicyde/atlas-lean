@@ -1,6 +1,6 @@
 # Single-symbol errors are detected
 
-**Single-symbol errors are detected.** Let $F$ be a field and $g$ a polynomial over $F$ with
+Let $F$ be a field and $g$ a polynomial over $F$ with
 at least two nonzero coefficients. Then $g$ does not divide $a X^i$ for any nonzero $a \in F$ and
 any natural number $i$.
 

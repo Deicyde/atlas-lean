@@ -1,6 +1,6 @@
 # Product exchange identity for two Horadam sequences
 
-**Product exchange identity for two Horadam sequences.** Let $P$, $Q$ be real numbers with
+Let $P$, $Q$ be real numbers with
 $Q \neq 0$, and let $W, Z \colon \mathbb{Z} \to \mathbb{R}$ satisfy
 $W_{j+2} = P W_{j+1} - Q W_j$ and $Z_{j+2} = P Z_{j+1} - Q Z_j$ for every integer $j$. Then for
 all integers $r$, $k$,

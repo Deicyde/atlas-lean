@@ -1,6 +1,6 @@
 # Labels of the dense-SAT verifier
 
-**Labels of the dense-SAT verifier.** The labels of the verifier's program are
+The labels of the verifier's program are
 $\mathrm{read1}$, $\mathrm{read2}$, $\mathrm{back1}$ and $\mathrm{back2}$; $\mathrm{c0}(f)$ and
 $\mathrm{c1}(f, b)$ for Booleans $f$ and $b$; $\mathrm{adv}(f, o)$ for a Boolean $f$ and an
 optional Boolean $o$; $\mathrm{restore}(f)$ for a Boolean $f$; and $\mathrm{drainI}(a)$,

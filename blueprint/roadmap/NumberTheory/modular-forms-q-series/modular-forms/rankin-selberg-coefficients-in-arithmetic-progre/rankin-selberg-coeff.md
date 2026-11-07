@@ -1,6 +1,6 @@
 # Rankin–Selberg coefficients
 
-**Rankin–Selberg coefficients.** Let $f$ be a cusp form of weight $k \in \mathbb{Z}$ for
+Let $f$ be a cusp form of weight $k \in \mathbb{Z}$ for
 $\mathrm{SL}_2(\mathbb{Z})$, with normalized Fourier coefficients $\lambda_f$. The Rankin–Selberg
 coefficients of $f$ form the arithmetic function $\lambda_{f \times f}$ with
 $\lambda_{f \times f}(0) = 0$ and, for $n \ge 1$,

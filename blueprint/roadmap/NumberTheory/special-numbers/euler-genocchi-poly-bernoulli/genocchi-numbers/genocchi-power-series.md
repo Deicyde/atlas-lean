@@ -1,6 +1,6 @@
 # Generating function of the Genocchi numbers
 
-**Generating function of the Genocchi numbers.** The Genocchi power series is the formal power
+The Genocchi power series is the formal power
 series $\frac{2x}{e^x + 1} = 2x \cdot (e^x + 1)^{-1}$ in $\mathbb{Q}[[x]]$, where
 $e^x = \sum_{n \ge 0} x^n / n!$ is the exponential power series and $(e^x + 1)^{-1}$ is the inverse
 of $e^x + 1$ among formal power series. It is the exponential generating function of the Genocchi

@@ -1,6 +1,6 @@
 # Three-term upper bounds for the prime-counting function (Table 4)
 
-**Three-term upper bounds for the prime-counting function (Table 4).** Let $\pi(x)$ be the
+Let $\pi(x)$ be the
 number of primes $p \le x$. For each of the twelve pairs $(\varepsilon, x_0)$ listed below and
 every real $x \ge x_0$,
 $\pi(x) < \frac{x}{\log x} + \frac{x}{\log^2 x} + \frac{(2 + \varepsilon)\,x}{\log^3 x}$.

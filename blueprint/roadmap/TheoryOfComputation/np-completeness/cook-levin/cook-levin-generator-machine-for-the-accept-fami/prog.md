@@ -1,6 +1,6 @@
 # Generator machine for the accept family
 
-**Generator machine for the accept family.** Fix a layout $L$ with label/state block size
+Fix a layout $L$ with label/state block size
 $A$, $K$ stacks and $g$ symbol codes, and naturals $n_1$, $a$, $k_1$, $e$. The generator is a
 multi-stack machine with a Boolean output stack, the unit counters of the generator, and a
 Boolean internal state. Its precomputation pushes $g$ units on $\mathsf{Gc}$, adds

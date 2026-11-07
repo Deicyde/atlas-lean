@@ -1,6 +1,6 @@
 # Fuel-bounded Needleman–Wunsch recursion
 
-**Fuel-bounded Needleman–Wunsch recursion.** Fix a substitution score
+Fix a substitution score
 $\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$, and write $|x|$ for
 the length of a sequence $x$ and $ax$ for the sequence with first element $a$ followed by $x$.
 For a fuel $n \in \mathbb{N}$ and sequences $x, y$ over $\alpha$, the value

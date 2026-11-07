@@ -1,6 +1,6 @@
 # Touchard's Catalan identity
 
-**Touchard's Catalan identity.** For every natural number $n$, writing
+For every natural number $n$, writing
 $C_k = \binom{2k}{k}/(k+1)$ for the $k$-th Catalan number,
 
 $$C_{n+1} = \sum_{i=0}^{\lfloor n/2 \rfloor} \binom{n}{2i} 2^{n-2i} C_i.$$

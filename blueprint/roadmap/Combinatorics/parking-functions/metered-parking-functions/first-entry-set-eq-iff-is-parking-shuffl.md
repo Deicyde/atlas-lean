@@ -1,6 +1,6 @@
 # Parking-function shuffles and the first entry
 
-**Parking-function shuffles and the first entry.** Let $1 \le m \le n$ and $1 \le k \le n$,
+Let $1 \le m \le n$ and $1 \le k \le n$,
 and let $w = (w_1, \dots, w_{m-1})$ be a word with entries in $\{0, \dots, n-1\}$. Then the set
 of spots $j \in \{0, \dots, n-1\}$ for which $(j, w_1, \dots, w_{m-1})$ is a partial parking
 function with $m$ cars and $n$ spots equals $\{0, \dots, k-1\}$ if and only if $w$ lies in the

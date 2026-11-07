@@ -1,6 +1,6 @@
 # Multiplying a member of $S(U)$ by one of its prime factors
 
-**Multiplying a member of $S(U)$ by one of its prime factors.** Let $P, Q$ be integers with
+Let $P, Q$ be integers with
 $Q \ne 0$, let $U = U(P, Q)$ be their Lucas sequence, write $a = P$ and $b = -Q$, and let $S(U)$ be
 the set of positive integers $n$ coprime to $Q$ whose period $\pi_U(n)$ modulo $n$ divides $n$. If
 $n \in S(U)$ and $\ell$ is a prime dividing $n$, then $\ell n \in S(U)$. If moreover

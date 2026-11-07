@@ -1,6 +1,6 @@
 # The Nerode automaton is the residual-language automaton
 
-**The Nerode automaton is the residual-language automaton.** Let $L$ be a language over an
+Let $L$ be a language over an
 alphabet $\Sigma$, and write $x^{-1}L = \{z : xz \in L\}$ for the left quotient of $L$ by a word
 $x$. Consider the canonical automaton of $L$ as a DFA: its states are the classes $[x]$ of the
 Nerode congruence of $L$, its start state is the class of the empty word, on a letter $a$ it goes

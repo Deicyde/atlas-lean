@@ -1,6 +1,6 @@
 # Accessors implementing the free variables of a term
 
-**Accessors implementing the free variables of a term.** Let $\rho$ be a list of source
+Let $\rho$ be a list of source
 values of length $|\rho|$, $\rho_t$ a list of target values, $\mathrm{acc}$ a map assigning a target
 term to each natural number, and $t$ a raw term. The accessors $\mathrm{acc}$ implement $t$ for
 $\rho$ in $\rho_t$ when, for every free variable $i$ of $t$, $i < |\rho|$ and $\mathrm{acc}(i)$

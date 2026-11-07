@@ -1,4 +1,4 @@
 # Strict and uniform convexity agree in finite dimensions
 
-**Strict and uniform convexity agree in finite dimensions.** In finite dimensions, strict convexity and uniform convexity are
+In finite dimensions, strict convexity and uniform convexity are
 equivalent.

@@ -1,6 +1,6 @@
 # Constant block of a copy site
 
-**Constant block of a copy site.** The list of bits a copy site of the 3-coloring emitter
+The list of bits a copy site of the 3-coloring emitter
 pushes onto the output stack below its counter copy, read top-first and written with $1$ for
 true and $0$ for false: $o_1$: 10, $o_2$: 0, $o_3$: 0110, $o_4$: 10110; $c_1$: 10, $c_2$: 0,
 $c_3$: 0, $c_4$: 10; $d_1$: 0, $d_2$: 0, $d_3$: 10, $d_4$: 10; $r_1$: 110, $r_2$: 0,

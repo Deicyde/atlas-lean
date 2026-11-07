@@ -1,6 +1,6 @@
 # The Bayes risk for the 0-1 loss
 
-**The Bayes risk for the 0-1 loss.** Let the set $C$ of classes be finite and nonempty with
+Let the set $C$ of classes be finite and nonempty with
 measurable singletons, let $P$ be a finite kernel from $C$ to the observation space $\mathcal X$
 and $\pi$ a finite measure on $C$, and let $\ell(c, y)$ be the 0-1 loss ($0$ if $y = c$, $1$
 otherwise). Write $P \circ \pi$ for the marginal measure on $\mathcal X$ and $P^\dagger_\pi$ for

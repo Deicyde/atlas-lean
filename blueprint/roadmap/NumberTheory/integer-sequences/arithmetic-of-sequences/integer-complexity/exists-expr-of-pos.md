@@ -1,6 +1,6 @@
 # Every positive integer is the value of an expression
 
-**Every positive integer is the value of an expression.** For every natural number
+For every natural number
 $n > 0$ there is an expression whose value is $n$.
 
 ## Sources

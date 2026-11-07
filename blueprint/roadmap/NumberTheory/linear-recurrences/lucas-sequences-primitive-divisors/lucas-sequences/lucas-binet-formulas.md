@@ -1,6 +1,6 @@
 # Binet formulas for Lucas sequences
 
-**Binet formulas for Lucas sequences.** Let $P$ and $Q$ be integers with $Q \ne 0$, let
+Let $P$ and $Q$ be integers with $Q \ne 0$, let
 $U_n = U_n(P, Q)$ and $V_n = V_n(P, Q)$ be the associated Lucas sequences, and let $\alpha$ and
 $\beta$ be elements of a field $K$ of characteristic zero with $\alpha + \beta = P$ and
 $\alpha \beta = Q$ in $K$. If $\alpha \ne \beta$, then for every natural number $n$,

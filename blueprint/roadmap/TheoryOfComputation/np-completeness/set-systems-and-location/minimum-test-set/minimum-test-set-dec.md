@@ -1,6 +1,6 @@
 # The MINIMUM TEST SET decision problem
 
-**The MINIMUM TEST SET decision problem.** It accepts a bitstring $x$ exactly when $x$ decodes,
+It accepts a bitstring $x$ exactly when $x$ decodes,
 under the canonical bitstring encoding, to a triple $(n, C, K)$ of a natural number $n$, a list
 $C$ of lists of natural numbers (the tests) and a natural number $K$ with the following
 properties: every test is a list of numbers below $n$ without repeated entries, and some sublist

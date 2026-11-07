@@ -1,6 +1,6 @@
 # Convergence of the log moments of smallest denominators
 
-**Convergence of the log moments of smallest denominators.** Let $0 \le a \le b \le 1$ be
+Let $0 \le a \le b \le 1$ be
 real numbers and let $n \ge 0$ be an integer. For real $x$ and $\delta > 0$ let
 $q_{\min}(x, \delta)$ be the smallest positive integer $q$ such that some rational $p/q$ lies in
 the open interval $(x - \delta/2, x + \delta/2)$, and let $\eta_{\log}$ be the log smallest

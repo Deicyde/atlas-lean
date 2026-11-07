@@ -1,6 +1,6 @@
 # Cleared-denominator form of the linear asymptotic continuation
 
-**Cleared-denominator form of the linear asymptotic continuation.** Let
+Let
 $a : \mathbb{N} \to \mathbb{C}$ and $\rho \in \mathbb{C}$, let $L_{a,\rho}$ be the linear
 asymptotic Dirichlet continuation of $a$ with constant $\rho$, and let $F_{a-\rho}$ be the Abel
 continuation of the sequence $n \mapsto a(n) - \rho$. Let $\zeta_1 : \mathbb{C} \to \mathbb{C}$ be

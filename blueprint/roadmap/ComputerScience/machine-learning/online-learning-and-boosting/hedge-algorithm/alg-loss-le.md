@@ -1,6 +1,6 @@
 # The Hedge loss bound
 
-**The Hedge loss bound.** Let $\eta$ be a real number, and let $\ell_1, \dots, \ell_T$ be loss
+Let $\eta$ be a real number, and let $\ell_1, \dots, \ell_T$ be loss
 vectors in $[0, 1]^n$ for $n$ experts. Run Hedge with learning rate $\eta$ from unit weights, that
 is $w_1(j) = 1$ and $w_{t+1}(j) = w_t(j) e^{-\eta \ell_t(j)}$, and let
 $x_t(j) = w_t(j) / \sum_k w_t(k)$ be the distribution played in round $t$. Then for every

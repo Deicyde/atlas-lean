@@ -1,6 +1,6 @@
 # Scottish Book Problem 144 is false as stated
 
-**Scottish Book Problem 144 is false as stated.** The Scottish Book Problem 144 claim fails: some
+The Scottish Book Problem 144 claim fails: some
 separable real Banach space $E$ admits no injective map $f$ from its unit sphere $K$ to $[0, 1]$
 such that the image under $f$ of every nonempty open subset of $K$ has positive Lebesgue outer
 measure.

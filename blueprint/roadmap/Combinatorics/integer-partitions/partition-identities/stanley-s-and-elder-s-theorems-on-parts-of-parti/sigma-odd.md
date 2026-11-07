@@ -1,6 +1,6 @@
 # Sum of odd divisors
 
-**Sum of odd divisors.** For a natural number $k$, $\sigma_{\mathrm{odd}}(k)$ is the sum of
+For a natural number $k$, $\sigma_{\mathrm{odd}}(k)$ is the sum of
 the odd positive divisors of $k$. By convention $\sigma_{\mathrm{odd}}(0) = 0$.
 
 ## Sources

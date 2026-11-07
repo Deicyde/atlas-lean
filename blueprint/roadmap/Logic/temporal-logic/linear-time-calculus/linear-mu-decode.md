@@ -1,3 +1,3 @@
 # Decoding linear μ-calculus codes
 
-**Decoding linear μ-calculus codes.** Decode a `linearMuCode` number back to the formula it encodes.
+Decode a `linearMuCode` number back to the formula it encodes.

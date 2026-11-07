@@ -1,6 +1,6 @@
 # Rectangle integral of $1/s$ with the pole outside
 
-**Rectangle integral of $1/s$ with the pole outside.** Let $a, b, T$ be real numbers with
+Let $a, b, T$ be real numbers with
 $0 < a \le b$ and $T > 0$. Then
 
 $$\int_a^b \frac{dx}{x - iT} - \int_a^b \frac{dx}{x + iT} +

@@ -1,6 +1,6 @@
 # Primitive prime factors of $a^n + 1$
 
-**Primitive prime factors of $a^n + 1$.** Let $a \ge 2$ and $n \ge 1$ be integers with
+Let $a \ge 2$ and $n \ge 1$ be integers with
 $(a, n) \ne (2, 3)$, and if $n = 1$ suppose that $a + 1$ is not a power of $2$. Then $a^n + 1$
 has a primitive prime factor $p$, that is, a prime $p$ that divides $a^n + 1$ but divides no
 $a^m + 1$ with $1 \le m < n$, such that $p \equiv 1 \pmod{2n}$.

@@ -1,6 +1,6 @@
 # FIFO misses at most `k` times per phase
 
-**FIFO misses at most `k` times per phase.** Let $S$ be a list of at most $k$ distinct pages
+Let $S$ be a list of at most $k$ distinct pages
 (the pages already in the current phase), let $c$ be any list of pages (a FIFO cache, oldest page
 first), and let $L$ be a list of distinct pages, each of them in $S$, that is a suffix of $c$. For
 every request sequence $\sigma$, let $P$ be the phase split off from $\sigma$ given $S$: the

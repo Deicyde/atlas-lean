@@ -1,6 +1,6 @@
 # Completely additive function with prescribed prime values
 
-**Completely additive function with prescribed prime values.** Given a function
+Given a function
 $v : \mathbb{N} \to \mathbb{N}$, this is the function $\mathbb{N} \to \mathbb{N}$ that sends each
 $m \ge 1$ with prime factorization $m = \prod_p p^{a_p}$ to $\sum_p a_p\, v(p)$, and sends $0$
 to $0$. Only the values of $v$ at primes matter.

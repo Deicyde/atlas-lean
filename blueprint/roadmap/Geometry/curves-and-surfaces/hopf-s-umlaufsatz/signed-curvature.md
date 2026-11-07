@@ -1,6 +1,6 @@
 # Signed curvature
 
-**Signed curvature.** For a function $\alpha : \mathbb{R} \to \mathbb{R}$ and
+For a function $\alpha : \mathbb{R} \to \mathbb{R}$ and
 $t \in \mathbb{R}$, the signed curvature of $\alpha$ at $t$ is the derivative $\alpha'(t)$, taken
 to be $0$ where $\alpha$ is not differentiable at $t$.
 

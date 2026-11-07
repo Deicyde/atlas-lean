@@ -1,6 +1,6 @@
 # Toh's 3-dissection of $f_2^3 / f_1^3$
 
-**Toh's 3-dissection of $f_2^3 / f_1^3$.** For $k \ge 1$ let
+For $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ be the Euler product, an integer power series in $q$. Then
 
 $$

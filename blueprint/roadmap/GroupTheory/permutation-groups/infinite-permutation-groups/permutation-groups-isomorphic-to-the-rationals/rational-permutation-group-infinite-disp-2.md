@@ -1,6 +1,5 @@
 # Permutation groups isomorphic to the rationals have infinite displacement (Kourovka 20.98)
 
-**Permutation groups isomorphic to the rationals have infinite displacement (Kourovka 20.98).**
 For every subgroup $G$ of the group of permutations of $\mathbb{N} = \{0, 1, 2, \dots\}$ that is
 isomorphic to the additive group $(\mathbb{Q}, +)$, there is an element $g \in G$ such that the
 set of displacements $\{a - g(a) : a \in \mathbb{N}\}$, computed in $\mathbb{Z}$, is infinite.

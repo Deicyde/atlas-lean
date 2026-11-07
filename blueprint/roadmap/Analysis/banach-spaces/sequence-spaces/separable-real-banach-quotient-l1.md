@@ -1,6 +1,6 @@
 # Separable real Banach spaces are quotients of ℓ¹
 
-**Separable real Banach spaces are quotients of ℓ¹.** For every separable real Banach space $E$
+For every separable real Banach space $E$
 there is a surjective bounded linear operator $T \colon \ell^1(\mathbb{N}, \mathbb{R}) \to E$.
 
 ## Sources

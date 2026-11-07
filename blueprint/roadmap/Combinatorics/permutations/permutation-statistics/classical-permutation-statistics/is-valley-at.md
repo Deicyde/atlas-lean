@@ -1,6 +1,6 @@
 # Valley of a permutation
 
-**Valley of a permutation.** Let $\sigma$ be a permutation of $\{0, 1, \dots, n-1\}$.
+Let $\sigma$ be a permutation of $\{0, 1, \dots, n-1\}$.
 A position $i$ is a valley of $\sigma$ if $i + 2 < n$ and
 $\sigma(i) > \sigma(i+1) < \sigma(i+2)$. Thus the valley entry is $\sigma(i+1)$, and the
 position recorded is $i$, that of the first of the three entries.

@@ -1,6 +1,6 @@
 # Tavaré's formula
 
-**Tavaré's formula.** The transition probabilities of Kingman's block-counting process
+The transition probabilities of Kingman's block-counting process
 from `i` to `j` lineages in time `t`, for `1 ≤ j ≤ i ≤ n`, are given by `tavareProb`.
 
 ## Sources

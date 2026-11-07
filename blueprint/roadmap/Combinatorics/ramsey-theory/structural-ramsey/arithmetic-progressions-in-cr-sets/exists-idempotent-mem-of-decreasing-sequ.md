@@ -1,6 +1,6 @@
 # Decreasing shift-closed sequences give essential sets
 
-**Decreasing shift-closed sequences give essential sets.** Let $S$ be a semigroup and let $F$
+Let $S$ be a semigroup and let $F$
 be a family of subsets of $S$ with the Ramsey property, and write $\beta(F)$ for the set of
 ultrafilters on $S$ all of whose members lie in $F$. For $x \in S$ and $E \subseteq S$ write
 $x^{-1}E = \{y \in S : xy \in E\}$, and multiply ultrafilters on $S$ by the rule that

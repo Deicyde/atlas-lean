@@ -1,6 +1,6 @@
 # Erdős Problem 861, first question: positive answer
 
-**Erdős Problem 861, first question: positive answer.** Let $A(N)$ be the number of Sidon
+Let $A(N)$ be the number of Sidon
 subsets of $\{1, \dots, N\}$, including the empty set and the singletons, and let $f(N)$ be the
 largest size of a Sidon subset of $\{1, \dots, N\}$. Then $A(N) / 2^{f(N)} \to \infty$ as
 $N \to \infty$.

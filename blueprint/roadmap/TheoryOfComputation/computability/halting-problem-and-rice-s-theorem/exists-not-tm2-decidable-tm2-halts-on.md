@@ -1,6 +1,6 @@
 # Some multi-stack machine has an undecidable halting set
 
-**Some multi-stack machine has an undecidable halting set.** There is a multi-stack machine
+There is a multi-stack machine
 $M$, with a bijection between its input alphabet and the Booleans, such that no multi-stack
 machine decides, for $n \in \mathbb{N}$, whether $M$ halts when started on the binary
 representation of $n$ (written in $M$'s input alphabet through the bijection).

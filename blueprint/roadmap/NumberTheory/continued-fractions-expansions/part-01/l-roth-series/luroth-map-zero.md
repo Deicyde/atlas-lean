@@ -1,6 +1,6 @@
 # The Lüroth map fixes 0
 
-**The Lüroth map fixes 0.** The Lüroth map $L$ satisfies $L(0) = 0$.
+The Lüroth map $L$ satisfies $L(0) = 0$.
 
 ## Sources
 

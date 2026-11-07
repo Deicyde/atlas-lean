@@ -1,6 +1,6 @@
 # The Kassel–Reutenauer polynomial $\bar P_2$
 
-**The Kassel–Reutenauer polynomial $\bar P_2$.** The Kassel–Reutenauer polynomial
+The Kassel–Reutenauer polynomial
 $\bar P_2(X) \in \mathbb{Z}[X]$ equals $X + 1$.
 
 ## Sources

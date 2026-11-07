@@ -1,6 +1,5 @@
 # Cycle-weighted derivative formula for $r$-cycle permutations with separated first points
 
-**Cycle-weighted derivative formula for $r$-cycle permutations with separated first points.**
 Let $R$ be a commutative $\mathbb{Q}$-algebra, $x, q \in R$, and let $r, s$ be natural numbers
 with $r \ge 2$. For a permutation $\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$ for its
 number of excedances (indices $i$ with $\sigma(i) > i$) and $c(\sigma)$ for its number of cycles,

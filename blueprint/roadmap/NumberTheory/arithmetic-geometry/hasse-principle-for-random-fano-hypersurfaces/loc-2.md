@@ -1,6 +1,6 @@
 # Local density of everywhere locally soluble hypersurfaces
 
-**Local density of everywhere locally soluble hypersurfaces.** For natural numbers $d$ and
+For natural numbers $d$ and
 $n$ and a real number $A$, let $\mathbb{V}_{d,n}(A)$ be the set of degree-$d$ hypersurfaces in
 $\mathbb{P}^n$ of height at most $A$, and let $\mathbb{V}^{\mathrm{loc}}_{d,n}$ be the set of
 everywhere locally soluble ones. The local density $\rho^{\mathrm{loc}}_{d,n}$ is the limit, as

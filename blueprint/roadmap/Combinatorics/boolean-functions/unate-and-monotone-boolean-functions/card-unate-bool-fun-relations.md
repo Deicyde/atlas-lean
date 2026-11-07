@@ -1,6 +1,6 @@
 # Unate versus monotone Boolean function counts
 
-**Unate versus monotone Boolean function counts.** For $n \ge 0$, write $U_n$ and $M_n$ for
+For $n \ge 0$, write $U_n$ and $M_n$ for
 the numbers of unate and of monotone $n$-variable Boolean functions, $BU_n$ and $BM_n$ for the
 numbers of those that are moreover balanced, that is, twice their weight equals $2^n$, and write
 the prefix $\mathrm{nd}\text{-}$ for the same counts restricted to non-degenerate functions.

@@ -1,6 +1,6 @@
 # Exact formula for the length-three run count
 
-**Exact formula for the length-three run count.** For a natural number $B$, let $A_B(3)$ be
+For a natural number $B$, let $A_B(3)$ be
 the number of integer tuples $(x, y, a, b, c) \in [-B, B]^5$ with $(x, y) \ne (0, 0)$ and
 $(a, b, c) \ne (0, 0, 0)$ that have a divisibility run of length at least $3$, and for integers
 $m \ge 1$ let $d_B(m) = 2\lfloor B/m \rfloor + 1$. Then

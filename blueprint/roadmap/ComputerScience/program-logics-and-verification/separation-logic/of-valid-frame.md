@@ -1,6 +1,6 @@
 # Framed embedding of Hoare validity
 
-**Framed embedding of Hoare validity.** Let $P$ and $Q$ be store assertions, $R$ a heap
+Let $P$ and $Q$ be store assertions, $R$ a heap
 assertion and $c$ a command of plain IMP, and write $\hat c$ for the embedding of $c$ into heap
 IMP. Suppose the partial-correctness Hoare triple with precondition $P$, command $c$ and
 postcondition $Q$ is valid, and suppose that whenever $R$ holds of a store $s$ and a heap $h$, it

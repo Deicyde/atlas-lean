@@ -1,6 +1,6 @@
 # Wintner's mean-value theorem in several variables
 
-**Wintner's mean-value theorem in several variables.** Let $k \ge 1$ and let $f$ be a
+Let $k \ge 1$ and let $f$ be a
 complex-valued function on $k$-tuples of natural numbers. For a $k$-tuple
 $n = (n_1, \dots, n_k)$ of positive integers put
 

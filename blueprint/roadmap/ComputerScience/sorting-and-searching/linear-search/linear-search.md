@@ -1,6 +1,6 @@
 # Linear search
 
-**Linear search.** Given a predicate $p$ on a type $\alpha$ and a list $L$ of elements of
+Given a predicate $p$ on a type $\alpha$ and a list $L$ of elements of
 $\alpha$, linear search scans $L$ from the front and returns the index of the first element of $L$
 that satisfies $p$, or no index if no element does, together with a cost that counts one unit for
 each evaluation of $p$. On the empty list it returns no index at cost $0$. On a list with head $x$

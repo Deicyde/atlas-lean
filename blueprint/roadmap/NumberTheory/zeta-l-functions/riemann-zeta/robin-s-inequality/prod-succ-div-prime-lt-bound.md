@@ -1,6 +1,6 @@
 # Explicit bound for a product over the first primes with one prime omitted
 
-**Explicit bound for a product over the first primes with one prime omitted.** Let $p_\ell$ be
+Let $p_\ell$ be
 the $\ell$-th prime ($p_1 = 2$), $\log$ the natural logarithm and $B$ the Meissel–Mertens constant.
 For natural numbers $k \ge 6$ and $j$ with $1 \le j \le k + 1$, put
 $U = (k+1)(\log(k+1) + \log \log(k+1))$ and $L = (k+1)(\log(k+1) + \log \log(k+1) - 1)$. Then

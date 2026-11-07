@@ -1,6 +1,6 @@
 # The normalized Göbel roots converge to a limit greater than 1
 
-**The normalized Göbel roots converge to a limit greater than 1.** Let $k, l \ge 2$ be natural
+Let $k, l \ge 2$ be natural
 numbers and let $g_{k,l}$ be the $(k, l)$-Göbel sequence. There is a real number $C > 1$ such
 that the real numbers $g_{k,l}(n)^{1/k^n}$ tend to $C$ as $n \to \infty$.
 

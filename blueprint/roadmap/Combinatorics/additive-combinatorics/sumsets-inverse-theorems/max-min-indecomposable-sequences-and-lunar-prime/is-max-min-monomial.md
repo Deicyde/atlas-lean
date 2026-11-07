@@ -1,6 +1,6 @@
 # Monomials over the max-min semiring
 
-**Monomials over the max-min semiring.** A coefficient sequence
+A coefficient sequence
 $g : \mathbb{N} \to \mathbb{N}$ over the max-min semiring is a monomial when exactly one of its
 entries is nonzero, that is, when it is $c x^i$ for some index $i$ and some coefficient $c \neq 0$.
 

@@ -1,4 +1,4 @@
 # Iterated forward shift inserts leading zeroes
 
-**Iterated forward shift inserts leading zeroes.** Iterating the forward-shift function `n` times inserts `n` zeroes
+Iterating the forward-shift function `n` times inserts `n` zeroes
 in front of the sequence.

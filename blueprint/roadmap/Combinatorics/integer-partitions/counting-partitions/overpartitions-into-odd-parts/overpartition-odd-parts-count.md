@@ -1,6 +1,6 @@
 # Overpartitions into odd parts
 
-**Overpartitions into odd parts.** For a natural number $n$, $\mathrm{po}(n)$ is the
+For a natural number $n$, $\mathrm{po}(n)$ is the
 number of overpartitions of $n$ all of whose parts are odd.
 
 ## Sources

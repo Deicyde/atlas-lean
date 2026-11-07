@@ -1,6 +1,6 @@
 # Well-formed locked schedules
 
-**Well-formed locked schedules.** A locked schedule $s$ (a list of reads, writes, lock
+A locked schedule $s$ (a list of reads, writes, lock
 requests and lock releases of transactions) is well formed when its accesses are covered by
 locks and it releases its locks: every read or write in $s$ is preceded by a lock request of its
 own transaction on its item, in a mode covering the access (shared or exclusive for a read,

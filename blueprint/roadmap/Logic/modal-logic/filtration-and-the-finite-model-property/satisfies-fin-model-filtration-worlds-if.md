@@ -1,6 +1,6 @@
 # Filtration lemma
 
-**Filtration lemma.** Let $M$ be a Kripke model, $\varphi$ a modal formula, and for a world
+Let $M$ be a Kripke model, $\varphi$ a modal formula, and for a world
 $w$ let $[w]$, the type of $w$, be the set of subformulas of $\varphi$ true at $w$ in $M$. Let $R$
 be a filtration of $M$ through the subformulas of $\varphi$, and let $M^R$ be the Kripke model
 whose worlds are the types of the worlds of $M$, with accessibility relation $R$ and an atom

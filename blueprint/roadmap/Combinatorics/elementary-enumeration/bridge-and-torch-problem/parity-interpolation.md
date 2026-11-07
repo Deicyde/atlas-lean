@@ -1,6 +1,6 @@
 # Parity interpolation
 
-**Parity interpolation.** Let $f, g, a : \mathbb{N} \to \mathbb{R}$ be sequences with
+Let $f, g, a : \mathbb{N} \to \mathbb{R}$ be sequences with
 $a_{2m} = f(m)$ and $a_{2m+1} = g(m)$ for every $m \in \mathbb{N}$. Then for every
 $n \in \mathbb{N}$,
 

@@ -1,6 +1,6 @@
 # A non-cyclic subgroup of a free group with normal derived subgroup is normal
 
-**A non-cyclic subgroup of a free group with normal derived subgroup is normal.** Let $F$ be a
+Let $F$ be a
 free group on an arbitrary set of generators, and suppose that $F$ is not cyclic. Then every
 subgroup $R$ of $F$ that is not cyclic and whose derived subgroup $[R, R]$ is normal in $F$ is
 itself normal in $F$.

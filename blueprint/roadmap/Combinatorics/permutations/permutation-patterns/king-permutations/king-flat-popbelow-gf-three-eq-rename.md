@@ -1,6 +1,6 @@
 # The generating functions for $P_4$ and $P_1$ differ by a change of variables
 
-**The generating functions for $P_4$ and $P_1$ differ by a change of variables.** For $k = 1$
+For $k = 1$
 and $k = 4$ let $P_k$ be the flat partially ordered pattern of length $4$ whose $k$-th element lies
 below each of the other three, and let $A_{P_k}(x; p, q, u, v)$ be the generating function of king
 permutations avoiding $P_k$, in which $x$ marks length and $p$, $q$, $u$, $v$ mark ascents,

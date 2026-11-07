@@ -1,6 +1,6 @@
 # The largest factorial that is a Fibonacci integer is $36!$
 
-**The largest factorial that is a Fibonacci integer is $36!$.** For every natural number $n$,
+For every natural number $n$,
 the factorial $n!$ lies in the subgroup of the multiplicative group $\mathbb{Q}^\times$ generated
 by the Fibonacci numbers $F_m$ with $m \ge 1$ if and only if $n \le 36$.
 

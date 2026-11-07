@@ -1,6 +1,6 @@
 # Robin's criterion for the Riemann hypothesis
 
-**Robin's criterion for the Riemann hypothesis.** The Riemann hypothesis holds if and only if
+The Riemann hypothesis holds if and only if
 $\sigma(n) < e^{\gamma}\, n \log\log n$ for every natural number $n > 5040$, where $\sigma(n)$ is
 the sum of the positive divisors of $n$, $\gamma$ is the Euler–Mascheroni constant, and
 $\log$ is the natural logarithm.

@@ -1,6 +1,6 @@
 # Monomial graphs of girth eight
 
-**Monomial graphs of girth eight.** Let $p$ be an odd prime, $e$ a natural number, $q = p^e$, and
+Let $p$ be an odd prime, $e$ a natural number, $q = p^e$, and
 $\mathbb{F}$ a field with $q$ elements, and suppose that either $p \ge 5$ and $e = 2^a 3^b$ for
 some natural numbers $a, b$, or $3 \le q \le 10^{10}$. For natural numbers $m_2, n_2, m_3, n_3$,
 let $G$ be the bipartite graph with two copies of $\mathbb{F}^3$ as its parts, in which

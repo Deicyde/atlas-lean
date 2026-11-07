@@ -1,6 +1,6 @@
 # Dusart's bounds for the $n$th prime
 
-**Dusart's bounds for the $n$th prime.** For $n \ge 1$ let $p_n$ denote the $n$th prime, so
+For $n \ge 1$ let $p_n$ denote the $n$th prime, so
 that $p_1 = 2$, and let $\log$ be the natural logarithm. For every natural number $n \ge 2$,
 
 $$

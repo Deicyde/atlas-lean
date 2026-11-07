@@ -1,6 +1,6 @@
 # Generalized Beatty sequences composed with the Wythoff sequences
 
-**Generalized Beatty sequences composed with the Wythoff sequences.** Let $\varphi$ be the
+Let $\varphi$ be the
 golden ratio and, for integers $a$, $b$, $c$ and natural numbers $n$, let
 $V(a, b, c)(n) = a \lfloor n\varphi \rfloor + bn + c$. Let $A(n) = \lfloor n\varphi \rfloor$ and
 $B(n) = \lfloor n\varphi \rfloor + n$ be the lower and upper Wythoff sequences. For all integers

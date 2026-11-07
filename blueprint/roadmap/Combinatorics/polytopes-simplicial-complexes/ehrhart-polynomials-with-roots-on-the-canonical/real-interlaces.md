@@ -1,6 +1,6 @@
 # Real interlacing
 
-**Real interlacing.** Let $f$ and $g$ be real polynomials. Then $f$ interlaces $g$ when $f$ and
+Let $f$ and $g$ be real polynomials. Then $f$ interlaces $g$ when $f$ and
 $g$ are nonzero with $\deg g = \deg f + 1$, the real roots of $f$, listed with multiplicity, are
 exactly $a_1 \le \dots \le a_d$ where $d = \deg f$, the real roots of $g$, listed with
 multiplicity, are exactly $b_1 \le \dots \le b_{d+1}$ (so all roots of $f$ and $g$ are real), and

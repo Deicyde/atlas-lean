@@ -1,6 +1,6 @@
 # Clique emitter: comparing two names
 
-**Clique emitter: comparing two names.** Let $p$, $q$ and $v$ be Booleans, $u$ and $w$ lists
+Let $p$, $q$ and $v$ be Booleans, $u$ and $w$ lists
 of bits, $t$, $e$ and $R$ stack-symbol lists with $R$ empty or not starting with a name bit, $o$
 a list of bits and $c, n \in \mathbb{N}$. Let $b$ be $(p = q)$ if $u = w$ and true otherwise.
 For some flag $v'$, the emitter machine goes in at most $3|w| + 4$ steps from label

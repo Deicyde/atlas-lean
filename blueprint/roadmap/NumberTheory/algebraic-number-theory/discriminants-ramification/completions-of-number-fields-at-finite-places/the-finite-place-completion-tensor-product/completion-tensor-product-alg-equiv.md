@@ -1,6 +1,6 @@
 # Base change to a finite completion as a product of completions
 
-**Base change to a finite completion as a product of completions.** Let $L/K$ be an extension
+Let $L/K$ be an extension
 of number fields, $v$ a finite place of $K$ and $K_v$ the completion of $K$ at $v$; for each finite
 place $w$ of $L$ lying over $v$, let $L_w$ be the completion of $L$ at $w$, a $K_v$-algebra via the
 canonical map $K_v \to L_w$. This is the isomorphism of $K_v$-algebras

@@ -1,6 +1,6 @@
 # Ideal class of a binary quadratic form
 
-**Ideal class of a binary quadratic form.** Let $D$ be a natural number, let
+Let $D$ be a natural number, let
 $K = \mathbb{Q}(i\sqrt{D}) \subseteq \mathbb{C}$ and let $\mathcal{O}_K$ be its ring of
 integers. For integers $a, b, c$ with $a \ne 0$, the ideal class of the triple $(a, b, c)$ is
 the class, in the class group of $\mathcal{O}_K$, of the nonzero fractional ideal of

@@ -1,6 +1,6 @@
 # Garabedian's formula for the Genocchi numbers, including $n = 0$
 
-**Garabedian's formula for the Genocchi numbers, including $n = 0$.** For every natural
+For every natural
 number $n$, the Genocchi number $G_n$, defined by $\sum_{m \ge 0} G_m x^m / m! = 2x/(e^x + 1)$,
 satisfies
 

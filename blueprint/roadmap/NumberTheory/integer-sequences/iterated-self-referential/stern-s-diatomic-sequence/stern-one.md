@@ -1,6 +1,6 @@
 # Stern sequence at one
 
-**Stern sequence at one.** The Stern sequence $s$ satisfies $s(1) = 1$.
+The Stern sequence $s$ satisfies $s(1) = 1$.
 
 ## Sources
 

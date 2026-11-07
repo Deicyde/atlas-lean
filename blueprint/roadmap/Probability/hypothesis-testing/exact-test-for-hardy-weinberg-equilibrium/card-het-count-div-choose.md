@@ -1,6 +1,6 @@
 # Levene's formula is the conditional law under random union of gametes
 
-**Levene's formula is the conditional law under random union of gametes.** Among the
+Among the
 `C(2N, nA)` equally likely placements of the `nA` copies of `A` in the `2N` gamete slots, the
 fraction with exactly `h` heterozygous individuals is `leveneProb N nA h`.
 

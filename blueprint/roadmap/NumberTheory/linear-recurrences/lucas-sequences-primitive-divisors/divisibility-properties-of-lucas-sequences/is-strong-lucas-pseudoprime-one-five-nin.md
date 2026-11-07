@@ -1,6 +1,6 @@
 # $9$ is a strong Lucas pseudoprime for $(P, Q) = (1, 5)$
 
-**$9$ is a strong Lucas pseudoprime for $(P, Q) = (1, 5)$.** The number $9$ is a strong
+The number $9$ is a strong
 Lucas pseudoprime with parameters $P = 1$ and $Q = 5$.
 
 Here $D = P^2 - 4Q = -19$, the Jacobi symbol $(D/9)$ is $1$, $9 - (D/9) = 8 = 2^3 \cdot 1$, and

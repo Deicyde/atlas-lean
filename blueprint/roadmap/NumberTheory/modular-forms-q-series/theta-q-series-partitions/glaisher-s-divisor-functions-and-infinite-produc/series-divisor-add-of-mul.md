@@ -1,6 +1,6 @@
 # Series-divisors add under multiplication
 
-**Series-divisors add under multiplication.** Let $R$ be a commutative ring and let $A$, $B$
+Let $R$ be a commutative ring and let $A$, $B$
 be formal power series over $R$ with coefficients $a(n)$, $b(n)$. Suppose $s_A, s_B$ are maps
 $\mathbb{N} \to R$ with $n\,a(n) = \sum_{i=1}^{n} s_A(i)\,a(n-i)$ and
 $n\,b(n) = \sum_{i=1}^{n} s_B(i)\,b(n-i)$ for every $n \ge 0$ (that is, $s_A$ and $s_B$ are

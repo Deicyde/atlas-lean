@@ -1,6 +1,6 @@
 # Recovering the parent of a comma-child
 
-**Recovering the parent of a comma-child.** Fix a base $b \ge 2$ and a natural number $n$.
+Fix a base $b \ge 2$ and a natural number $n$.
 Call $n$ a comma-child of $k$ if $n = k + b\,(k \bmod b) + y$ for some comma candidate digit $y$
 of $k$ in base $b$. Let $f$ be the most significant base-$b$ digit of $n$ and let
 $x = (n - f) \bmod b$. If $n$ is a comma-child of a positive integer $k$, then

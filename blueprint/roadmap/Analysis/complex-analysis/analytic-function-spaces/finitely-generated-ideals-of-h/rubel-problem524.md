@@ -1,6 +1,6 @@
 # Rubel's problem on intersections of finitely generated ideals in $H^\infty$
 
-**Rubel's problem on intersections of finitely generated ideals in $H^\infty$.** The
+The
 statement that for any two finitely generated ideals $I$ and $J$ of the commutative ring
 $H^\infty$ of bounded holomorphic functions on the open unit disc, the intersection $I \cap J$ is
 finitely generated.

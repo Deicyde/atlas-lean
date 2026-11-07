@@ -1,6 +1,6 @@
 # Erdős Problem 198 is false
 
-**Erdős Problem 198 is false.** It is not the case that the complement of every Sidon set
+It is not the case that the complement of every Sidon set
 $A \subseteq \mathbb{N}$ contains an infinite arithmetic progression: there is a Sidon set
 $A \subseteq \mathbb{N}$ such that for all natural numbers $a$ and $d \ge 1$ some term $a + kd$,
 $k \in \mathbb{N}$, lies in $A$. Here $A$ is Sidon when $w + x = y + z$ with $w, x, y, z \in A$

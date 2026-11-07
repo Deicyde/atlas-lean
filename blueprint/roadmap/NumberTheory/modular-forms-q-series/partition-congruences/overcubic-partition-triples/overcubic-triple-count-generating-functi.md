@@ -1,6 +1,6 @@
 # Generating function for overcubic partition triples
 
-**Generating function for overcubic partition triples.** For $k \ge 1$ let
+For $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$, and let $\mathrm{bt}(n)$, the number of overcubic partition
 triples of $n$, be the coefficient of $q^n$ in $f_4^3/(f_1^6 f_2^3)$. Then, as integer power
 series in $q$,

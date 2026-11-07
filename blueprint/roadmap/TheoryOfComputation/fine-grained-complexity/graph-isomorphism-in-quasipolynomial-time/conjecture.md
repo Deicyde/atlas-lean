@@ -1,6 +1,6 @@
 # The quasipolynomial graph isomorphism statement
 
-**The quasipolynomial graph isomorphism statement.** The proposition that graph isomorphism
+The proposition that graph isomorphism
 is decidable in quasipolynomial time: there are a function $D$ from pairs of graph codes to
 Booleans, an exponent $c \in \mathbb{N}$, and a deterministic multi-stack Turing machine with a
 time function $t : \mathbb{N} \to \mathbb{N}$ that, on the bit encoding of every pair $(G, H)$,

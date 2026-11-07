@@ -1,6 +1,6 @@
 # Generating function identity for generalized cubic partition numbers
 
-**Generating function identity for generalized cubic partition numbers.** Let
+Let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ be the Euler products and $a_c(n)$ the generalized cubic
 partition numbers. For every natural number $c$,
 $f_1 f_2^{c-1} \sum_{n \ge 0} a_c(n) q^n = 1$ as integer power series in $q$, where for

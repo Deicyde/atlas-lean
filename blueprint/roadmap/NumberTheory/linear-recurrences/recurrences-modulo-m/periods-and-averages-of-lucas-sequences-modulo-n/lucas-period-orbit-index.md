@@ -1,6 +1,6 @@
 # The orbit index $\omega(n)$
 
-**The orbit index $\omega(n)$.** For a Lucas sequence $U = U(P, Q)$ and a natural number $n$,
+For a Lucas sequence $U = U(P, Q)$ and a natural number $n$,
 $\omega(n)$ is the least natural number $k$ such that the period orbit of $n$ closes at step $k$,
 and $\omega(n) = 0$ when there is no such $k$. Here $\pi_U(m)$ is the period of $U$ modulo $m$,
 $\pi_U^i$ is its $i$-th iterate with $\pi_U^0(n) = n$, and the orbit of $n$ closes at step $k$

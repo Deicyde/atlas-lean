@@ -1,6 +1,6 @@
 # Total weight of the Weighted Cross
 
-**Total weight of the Weighted Cross.** The weights $w(a, b)$ of the Weighted Cross over the
+The weights $w(a, b)$ of the Weighted Cross over the
 $5 \times 5$ window sum to $26$: $\sum_{a=0}^{4} \sum_{b=0}^{4} w(a, b) = 26$.
 
 ## Sources

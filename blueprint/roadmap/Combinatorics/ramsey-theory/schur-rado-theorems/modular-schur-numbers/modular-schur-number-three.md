@@ -1,6 +1,6 @@
 # Modular Schur numbers modulo 3
 
-**Modular Schur numbers modulo 3.** Let $k$ and $l$ be positive integers and let $S_3(k, l)$
+Let $k$ and $l$ be positive integers and let $S_3(k, l)$
 be the generalized Schur number modulo $3$. If $l \equiv 1 \pmod 3$, then $S_3(k, l) = 0$.
 Otherwise $S_3(1, l) = 1$, and $S_3(k, l) = 2$ for every $k \ge 2$.
 

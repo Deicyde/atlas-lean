@@ -1,6 +1,6 @@
 # 3-MACHINE FLOW SHOP SCHEDULING is NP-complete
 
-**3-MACHINE FLOW SHOP SCHEDULING is NP-complete.** The 3-machine flow shop scheduling
+The 3-machine flow shop scheduling
 decision problem belongs to NP, and every decision problem in NP reduces to it by a
 polynomial-time many-one reduction.
 

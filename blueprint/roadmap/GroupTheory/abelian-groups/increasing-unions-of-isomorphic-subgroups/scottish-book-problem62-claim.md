@@ -1,6 +1,6 @@
 # Claim of Scottish Book Problem 62
 
-**Claim of Scottish Book Problem 62.** The claim that for every abelian group $G$ and
+The claim that for every abelian group $G$ and
 every sequence of subgroups $H_0 \le H_1 \le H_2 \le \cdots$ of $G$ whose union is $G$ and
 each of which is isomorphic to $H_1$, the group $G$ is itself isomorphic to $H_1$.
 

@@ -1,6 +1,6 @@
 # Refined equality of distinct-part and residue counts
 
-**Refined equality of distinct-part and residue counts.** Let $d$, $a$, $m$ and $k$ be natural
+Let $d$, $a$, $m$ and $k$ be natural
 numbers with $d \ge 1$, $1 \le a \le d + 1$, $m \ge 1$ and $k \ge 1$. Write $h_d^{(a)}(m, k)$ for
 the number of partitions into $d$-distinct parts, all at least $a$, with largest part $m$ and $k$
 parts, and $f_d^{(a)}(m, k)$ for the number of partitions into parts congruent to $a$ modulo

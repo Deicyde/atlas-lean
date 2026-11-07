@@ -1,6 +1,6 @@
 # Half-turn fixed points on the rectangular torus, $n$ odd and $m$ even
 
-**Half-turn fixed points on the rectangular torus, $n$ odd and $m$ even.** Let $T$ be a
+Let $T$ be a
 finite set of tile designs, $\sigma$ a permutation of $T$ with $\sigma^2 = 1$, $n$ a positive
 odd integer and $m$ a positive even integer. For a shift
 $(a, b) \in \mathbb{Z}/n \times \mathbb{Z}/m$, count the maps

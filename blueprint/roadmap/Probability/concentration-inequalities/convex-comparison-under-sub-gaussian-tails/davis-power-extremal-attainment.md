@@ -1,6 +1,6 @@
 # Davis–Power extremal variable
 
-**Davis–Power extremal variable.** Let $c_0$ be the Davis–Power constant and $G$ a standard
+Let $c_0$ be the Davis–Power constant and $G$ a standard
 Gaussian, and say that a real random variable $X$ is dominated by $Y$ in the convex order when
 $\mathbb{E} f(X) \le \mathbb{E} f(Y)$ for every convex $f : \mathbb{R} \to \mathbb{R}$ such that
 $f(X)$ and $f(Y)$ are integrable. There is a real random variable $X$ on a probability space that

@@ -1,6 +1,6 @@
 # The Lucas period set contains $1$
 
-**The Lucas period set contains $1$.** For all integers $P, Q$ with $Q \ne 0$, the number $1$
+For all integers $P, Q$ with $Q \ne 0$, the number $1$
 lies in the Lucas period set $S(U)$ of $U = U(P, Q)$: the set of positive integers $n$ coprime to
 $Q$ whose period $\pi_U(n)$ modulo $n$ divides $n$.
 

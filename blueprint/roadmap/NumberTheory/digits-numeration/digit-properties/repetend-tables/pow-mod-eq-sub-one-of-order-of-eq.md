@@ -1,6 +1,6 @@
 # A power of $B$ equal to $B - 1$ modulo $p^i$
 
-**A power of $B$ equal to $B - 1$ modulo $p^i$.** Let $p$ be a prime with $p \equiv 1 \pmod 6$,
+Let $p$ be a prime with $p \equiv 1 \pmod 6$,
 let $i$ and $j$ be natural numbers with $j \ge 1$ and $i \ge 2j$, put $n = p^i$ and $Q = p^j$, and
 let $B < n$ be a natural number whose multiplicative order modulo $n$ is $6Q$. Let $z < 6Q$ be a
 natural number with $z \equiv 2 \pmod 6$ such that $zB \equiv 1 \pmod Q$ or

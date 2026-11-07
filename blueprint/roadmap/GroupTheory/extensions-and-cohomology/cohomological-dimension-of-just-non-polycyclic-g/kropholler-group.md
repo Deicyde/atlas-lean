@@ -1,6 +1,6 @@
 # The Kropholler group
 
-**The Kropholler group.** The Kropholler group $G$ is the group with generators $x, y, t$ whose
+The Kropholler group $G$ is the group with generators $x, y, t$ whose
 relators are the base relators, namely $[[a, b], [c, d]]$ and $[a, b]^2$ for all $a, b, c, d$ in
 the free group $F$ on $x, y$, together with the twist relators $t x t^{-1} y^{-1}$ and
 $t y t^{-1} (x y)^{-1}$.

@@ -1,6 +1,6 @@
 # Good rate function
 
-**Good rate function.** Let $X$ be a topological space. A function $I : X \to [0, \infty]$ is a
+Let $X$ be a topological space. A function $I : X \to [0, \infty]$ is a
 good rate function if it is a rate function and, for every real number $a \ge 0$, the sub-level
 set $\{x \in X : I(x) \le a\}$ is compact.
 

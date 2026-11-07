@@ -1,6 +1,6 @@
 # Denotation of PCF terms
 
-**Denotation of PCF terms.** The denotation of a PCF term $t$ of type $A$ in a context $\Gamma$
+The denotation of a PCF term $t$ of type $A$ in a context $\Gamma$
 is the Scott-continuous map $[\![t]\!]$ from environments for $\Gamma$ to the domain of $A$,
 defined by recursion on $t$: a variable denotes its lookup map; $[\![\lambda t]\!]$ is the
 currying of $[\![t]\!]$; $[\![f\,a]\!]\eta = [\![f]\!]\eta\,([\![a]\!]\eta)$;

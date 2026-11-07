@@ -1,6 +1,6 @@
 # Bernoulli random variable
 
-**Bernoulli random variable.** Let $\mu$ be a measure on a measurable space $\Omega$, let
+Let $\mu$ be a measure on a measurable space $\Omega$, let
 $X : \Omega \to \mathbb{N}$ and let $p$ be a real number. Then $X$ is a Bernoulli random
 variable with parameter $p$ under $\mu$ when $0 \le p \le 1$, $X$ is $\mu$-almost everywhere
 measurable, and the pushforward of $\mu$ along $X$ is the Bernoulli distribution

@@ -1,6 +1,6 @@
 # Landen formula for generalized poly-Bernoulli numbers $C_n$
 
-**Landen formula for generalized poly-Bernoulli numbers $C_n$.** Let
+Let
 $g = (g_0, g_1, \dots, g_s)$ be Landen data whose matrices $g_1, \dots, g_s$ are invertible, where
 $(c_0, d_0)$ is the bottom row of $g_0$. Let $\tilde g$ be the transformed data: $\tilde g_0$ has
 rows $(1, -1)$ and $(-d_0, -c_0)$, and $\tilde g_i = h g_i$ for $1 \le i \le s$, where $h$ is the

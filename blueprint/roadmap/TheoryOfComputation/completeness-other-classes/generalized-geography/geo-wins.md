@@ -1,6 +1,6 @@
 # Winning positions in Geography
 
-**Winning positions in Geography.** Let $E$ be a list of pairs of natural numbers, read as
+Let $E$ be a list of pairs of natural numbers, read as
 directed edges, let $v$ be a natural number (the current vertex) and let $V$ be a list of natural
 numbers (the visited vertices). For a natural number $k$ (the fuel), the predicate
 $\mathrm{GeoWins}(k, E, v, V)$ is defined by recursion on $k$: $\mathrm{GeoWins}(0, E, v, V)$ is

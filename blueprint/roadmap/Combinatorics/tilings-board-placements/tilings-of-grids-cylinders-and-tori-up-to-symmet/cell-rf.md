@@ -1,6 +1,6 @@
 # Cell map of the diagonal reflection rf
 
-**Cell map of the diagonal reflection rf.** For a natural number $n$, the diagonal reflection
+For a natural number $n$, the diagonal reflection
 $rf$ acts on the cells $(x, y) \in \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ of the
 $n \times n$ grid by $(x, y) \mapsto (y, x)$.
 

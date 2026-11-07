@@ -1,6 +1,6 @@
 # The diagonal class lies between the maximal and minimal partitions in majorization
 
-**The diagonal class lies between the maximal and minimal partitions in majorization.** Let
+Let
 $p$ be a partition of $n$, let $q$ be a natural number and $s = (s_k)$ a sequence of natural
 numbers, and suppose that the diagonal sequence of $p$ is $(1, 2, \dots, q, q^{(s_q)},
 (q-1)^{(s_{q-1})}, \dots, 1^{(s_1)})$ followed by zeros, where $v^{(m)}$ denotes $m$ copies of

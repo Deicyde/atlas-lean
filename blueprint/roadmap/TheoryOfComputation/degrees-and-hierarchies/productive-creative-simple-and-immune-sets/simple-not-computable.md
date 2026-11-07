@@ -1,6 +1,6 @@
 # A simple set is not computable
 
-**A simple set is not computable**: its complement would be an infinite
+Its complement would be an infinite
 RE set, contradicting immunity.
 
 ## Sources

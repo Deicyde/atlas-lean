@@ -1,6 +1,6 @@
 # Kourovka Problem 10.37 (statement)
 
-**Kourovka Problem 10.37 (statement).** The statement that every finitely generated
+The statement that every finitely generated
 metabelian group $G$ (that is, one whose second derived subgroup $G''$ is trivial) all of whose
 integral homology groups $H_n(G, \mathbb{Z})$ with trivial coefficients, $n \ge 0$, are finitely
 generated has finite Prüfer rank: there is a natural number $r$ such that every finitely generated

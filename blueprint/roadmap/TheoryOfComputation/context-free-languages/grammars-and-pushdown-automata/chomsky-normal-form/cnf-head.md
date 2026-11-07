@@ -1,6 +1,6 @@
 # Head of a binarized output
 
-**Head of a binarized output.** Let $g$ be a context-free grammar and let
+Let $g$ be a context-free grammar and let
 $a_0, a_1, \dots$ be its list of terminals occurring in production outputs. For a list
 $\sigma$ of basic symbols (each a nonterminal of $g$ or a natural number, a terminal wrapper),
 the head $h(\sigma)$ is the following form over the nonterminals of the binarized grammar

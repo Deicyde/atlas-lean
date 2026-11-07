@@ -1,6 +1,6 @@
 # Layers of the derived set
 
-**Layers of the derived set.** For a set $A \subseteq \mathbb{R}$ and $u \ge 0$, write
+For a set $A \subseteq \mathbb{R}$ and $u \ge 0$, write
 $T_u(A) = A^{(u)} \setminus A^{(u+1)}$ for the $u$-th layer of $A$, where $A^{(u)}$ is the $u$-th
 derived set of $A$. Then for every set $K \subseteq \mathbb{R}$ and every $u \ge 0$,
 $T_{u+1}(K) = T_u(K')$, where $K'$ is the derived set of $K$.

@@ -1,6 +1,6 @@
 # Change of variables for expectation
 
-**Change of variables for expectation.** Let $p$ be a probability mass function on a finite
+Let $p$ be a probability mass function on a finite
 measurable space $\alpha$ in which singletons are measurable, let $\beta$ be a measurable space in
 which singletons are measurable, and let $g : \alpha \to \beta$ and $f : \beta \to \mathbb{R}$.
 Write $g_* p$ for the pushforward of $p$ along $g$, which gives each $b \in \beta$ the mass

@@ -1,6 +1,6 @@
 # Finitely presented elementary amenable groups need not be virtually solvable
 
-**Finitely presented elementary amenable groups need not be virtually solvable.** There is a
+There is a
 finitely presented elementary amenable group $G$ that is not solvable-by-finite: no subgroup of
 finite index in $G$ is solvable. This answers Kourovka Problem 16.52 (P. Linnell, T. Schick) in
 the negative.

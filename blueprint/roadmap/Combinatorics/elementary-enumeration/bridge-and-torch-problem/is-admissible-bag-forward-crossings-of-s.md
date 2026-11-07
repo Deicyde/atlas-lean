@@ -1,6 +1,6 @@
 # Schedules with single-person returns give admissible bags
 
-**Schedules with single-person returns give admissible bags.** Let $n$ be a natural number
+Let $n$ be a natural number
 and let $\sigma$ be a schedule for the people $1, \dots, n$ on a bridge of capacity $3$ in which
 every return carries exactly one person. Let $F(\sigma)$ be the multiset of the forward crossings
 of $\sigma$. Then $F(\sigma)$ is an admissible bag for $n$ people, and the total time of $\sigma$

@@ -1,3 +1,3 @@
 # Mean of the exponential law
 
-**Mean of the exponential law.** The mean of the exponential law of rate `r > 0` is `r⁻¹`.
+The mean of the exponential law of rate `r > 0` is `r⁻¹`.

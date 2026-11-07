@@ -1,6 +1,6 @@
 # Units small away from the diagonal generate a subgroup of finite index
 
-**Units small away from the diagonal generate a subgroup of finite index.** Let $F$ be a
+Let $F$ be a
 number field and let $(u_v)$ be a family of units of the ring of integers of $F$, indexed by
 the infinite places $v$ of $F$. Write $w(x)$ for the absolute value of $x$ at an infinite place
 $w$. If $w(u_v) < 1$ for all infinite places $v$ and $w$ with $w \ne v$, then the subgroup of

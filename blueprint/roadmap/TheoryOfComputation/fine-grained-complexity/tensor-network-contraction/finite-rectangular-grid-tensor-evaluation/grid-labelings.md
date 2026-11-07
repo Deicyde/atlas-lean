@@ -1,3 +1,3 @@
 # Directed labelings of a finite grid
 
-**Directed labelings of a finite grid.** Directed grid labelings with independent finite choices on edges and diagonal entries.
+Directed grid labelings with independent finite choices on edges and diagonal entries.

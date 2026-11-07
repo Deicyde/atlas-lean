@@ -1,6 +1,6 @@
 # Sums of squared parts and the diagonal sequence
 
-**Sums of squared parts and the diagonal sequence.** Let $\alpha$ be a partition of $n$ with
+Let $\alpha$ be a partition of $n$ with
 diagonal sequence $(d_k)_{k \ge 1}$ and conjugate partition $\alpha^*$, and write $s(\gamma)$ for
 the sum of the squares of the parts of a partition $\gamma$. Then
 $s(\alpha) + s(\alpha^*) = 2 \sum_{k=1}^{2n} k \, d_k$. Consequently every partition $\beta$ of

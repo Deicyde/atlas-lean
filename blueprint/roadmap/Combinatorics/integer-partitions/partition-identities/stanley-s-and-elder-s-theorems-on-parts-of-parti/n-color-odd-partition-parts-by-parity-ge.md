@@ -1,6 +1,6 @@
 # Parts of n-color partitions into odd parts, by parity of the number of parts
 
-**Parts of n-color partitions into odd parts, by parity of the number of parts.** For
+For
 $i \ge 0$ let $U_o(i)$ (resp. $U_e(i)$) be the total number of parts, counted with multiplicity,
 over the $n$-color partitions of $i$ into odd parts (every part has odd size) that have an odd
 (resp. even) number of parts. Then in the ring $\mathbb{Q}[[q]]$ of formal power series, with

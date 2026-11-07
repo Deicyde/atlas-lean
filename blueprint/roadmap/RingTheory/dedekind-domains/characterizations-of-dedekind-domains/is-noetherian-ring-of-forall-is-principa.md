@@ -1,6 +1,6 @@
 # Domains with principal quotients are Noetherian
 
-**Domains with principal quotients are Noetherian.** Let $A$ be an integral domain such that
+Let $A$ be an integral domain such that
 for every nonzero ideal $I$ of $A$ the quotient ring $A/I$ is a principal ideal ring. Then $A$ is
 a Noetherian ring.
 

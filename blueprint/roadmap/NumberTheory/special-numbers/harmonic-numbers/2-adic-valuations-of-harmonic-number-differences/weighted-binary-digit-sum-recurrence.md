@@ -1,6 +1,6 @@
 # Recurrence for the weighted binary digit sum
 
-**Recurrence for the weighted binary digit sum.** Let $a(n)$ denote the weighted binary digit
+Let $a(n)$ denote the weighted binary digit
 sum of $n$. For every natural number $n$, $a(2n) = 2a(n) + 2n$ and $a(2n + 1) = a(2n)$.
 
 The source theorem also gives a two-variable generating function, which is not part of this

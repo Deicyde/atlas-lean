@@ -1,6 +1,6 @@
 # Running time of Hierholzer's algorithm
 
-**Running time of Hierholzer's algorithm.** Let $G$ be a directed adjacency graph, read as a
+Let $G$ be a directed adjacency graph, read as a
 multigraph with one edge per adjacency entry, and let $s$ and $t$ be vertices such that $G$ is
 semi-balanced for $s$ and $t$ and the source of every edge of $G$ is reachable from $s$. Then
 Hierholzer's algorithm on $G$ from $s$ costs exactly $|E|$ units, where $|E|$ is the number of

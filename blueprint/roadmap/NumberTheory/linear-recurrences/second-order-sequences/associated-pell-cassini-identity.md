@@ -1,6 +1,6 @@
 # Cassini's identity for associated Pell numbers
 
-**Cassini's identity for associated Pell numbers.** Let $(Q_n)_{n \ge 0}$ be a sequence of
+Let $(Q_n)_{n \ge 0}$ be a sequence of
 integers with $Q_0 = Q_1 = 1$ and $Q_{n+2} = 2Q_{n+1} + Q_n$ for every $n \ge 0$. Then for every
 natural number $k \ge 1$,
 

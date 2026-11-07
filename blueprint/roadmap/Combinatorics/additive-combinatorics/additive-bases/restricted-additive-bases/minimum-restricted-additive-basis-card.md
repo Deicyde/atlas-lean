@@ -1,6 +1,6 @@
 # Minimum size of a restricted additive basis
 
-**Minimum size of a restricted additive basis.** Let $s$ be a natural number. A restricted
+Let $s$ be a natural number. A restricted
 additive basis of $\{0, 1, \dots, s\}$ is a finite set $A$ of natural numbers with $2a \le s$ for
 every $a \in A$ such that every natural number $x \le s$ can be written as $x = a + b$ with
 $a, b \in A$, where $a = b$ is allowed. The minimum restricted additive basis size $k^*(s)$ is

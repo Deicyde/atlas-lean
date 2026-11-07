@@ -1,6 +1,6 @@
 # Fuel-bounded ascent-to-descent rearrangement
 
-**Fuel-bounded ascent-to-descent rearrangement.** For a fuel $N \in \mathbb{N}$ and a word
+For a fuel $N \in \mathbb{N}$ and a word
 $x = x_1 \cdots x_m$ over $\mathbb{N}$, the word $\nu_N(x)$ is defined by recursion on $N$:
 $\nu_0(x) = x$, and $\nu_{N+1}(x) = x$ when $m \le 1$. For $m \ge 2$, let $A$ be the set of
 positions of the least letter of $x$ and $B$ the set of positions of its greatest letter. If

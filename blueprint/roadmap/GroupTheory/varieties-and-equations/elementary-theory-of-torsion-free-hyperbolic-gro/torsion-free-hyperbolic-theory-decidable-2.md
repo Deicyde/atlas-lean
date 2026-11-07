@@ -1,6 +1,6 @@
 # Torsion-free hyperbolic groups have decidable elementary theory
 
-**Torsion-free hyperbolic groups have decidable elementary theory.** For every torsion-free
+For every torsion-free
 word-hyperbolic group $G$ (every element $g \ne 1$ of $G$ has infinite order), the set of prenex
 sentences of the language of groups that hold in $G$ is computable, that is, some algorithm decides
 for each prenex sentence whether it holds in $G$.

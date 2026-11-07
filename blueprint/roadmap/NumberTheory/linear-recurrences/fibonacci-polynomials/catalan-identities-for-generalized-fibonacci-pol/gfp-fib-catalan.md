@@ -1,6 +1,6 @@
 # Catalan identity for Fibonacci-type generalized Fibonacci polynomials
 
-**Catalan identity for Fibonacci-type generalized Fibonacci polynomials.** Let $d$ and $g$ be
+Let $d$ and $g$ be
 polynomials with integer coefficients, and let $F_n$ be the generalized Fibonacci polynomials
 defined by $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = d F_{n+1} + g F_n$. Then for every natural number
 $n$ (for $n = 0$ both sides are $0$),

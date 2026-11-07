@@ -1,6 +1,6 @@
 # Separability of $t^{r+1} - y^{-1} t + x y^{-1}$
 
-**Separability of $t^{r+1} - y^{-1} t + x y^{-1}$.** Let $K$ be a field of characteristic zero,
+Let $K$ be a field of characteristic zero,
 let $r \ge 1$, let $x \in K$ and let $y \in K$ be nonzero with $(r+1)^{r+1} x^r y \ne r^r$. Then
 the polynomial $t^{r+1} - y^{-1} t + x y^{-1} \in K[t]$ is separable, that is, coprime to its
 derivative; equivalently, it has no multiple zeros in an algebraic closure of $K$.

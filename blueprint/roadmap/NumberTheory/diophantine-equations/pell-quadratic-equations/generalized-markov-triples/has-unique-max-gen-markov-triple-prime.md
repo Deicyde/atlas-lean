@@ -1,6 +1,6 @@
 # Generalized Markov numbers $p$ and $2p$ are unique maxima
 
-**Generalized Markov numbers $p$ and $2p$ are unique maxima.** Let $k$ be a natural number
+Let $k$ be a natural number
 and $p$ a prime. If $b$ is a $k$-generalized Markov number with $b = p$ or $b = 2p$, then $b$ is
 the maximum of a unique $k$-generalized Markov triple up to order.
 

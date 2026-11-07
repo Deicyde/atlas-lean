@@ -1,6 +1,6 @@
 # Syndrome decoding corrects every error of weight at most $t$
 
-**Syndrome decoding corrects every error of weight at most $t$.** Let $H$ be a parity-check
+Let $H$ be a parity-check
 matrix over a field $F$, let $C$ be the code with parity-check matrix $H$, let
 $d \in \mathbb{N} \cup \{\infty\}$ be its minimum distance, and let $t \in \mathbb{N}$ with
 $2t < d$. If a syndrome table is correct up to radius $t$ for $H$, then for every codeword

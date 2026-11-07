@@ -1,6 +1,6 @@
 # Generating function for PEND partitions
 
-**Generating function for PEND partitions.** Let $\mathrm{pend}(n)$ be the number of PEND
+Let $\mathrm{pend}(n)$ be the number of PEND
 partitions of $n$, and let $f_k = \prod_{m \ge 1} (1 - q^{km})$. Then, as integer power series
 in $q$, $f_1 f_4 f_6 \sum_{n \ge 0} \mathrm{pend}(n) q^n = f_2 f_{12}$. This is the identity
 $\sum_{n \ge 0} \mathrm{pend}(n) q^n = f_2 f_{12} / (f_1 f_4 f_6)$ with the denominator cleared.

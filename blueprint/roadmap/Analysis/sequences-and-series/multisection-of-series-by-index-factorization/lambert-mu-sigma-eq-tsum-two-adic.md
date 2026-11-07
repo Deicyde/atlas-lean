@@ -1,6 +1,6 @@
 # Two-adic multisection of the power-weighted Lambert series
 
-**Two-adic multisection of the power-weighted Lambert series.** For every integer $\mu \ge 1$
+For every integer $\mu \ge 1$
 and every complex number $q$ with $|q| < 1$, the power-weighted Lambert series
 $f_\mu(q) = \sum_{n \ge 1} n^\mu q^n / (1 - q^n)$ and
 $g_\mu(q) = \sum_{n \ge 1} n^\mu q^n / (1 + q^n)$ satisfy

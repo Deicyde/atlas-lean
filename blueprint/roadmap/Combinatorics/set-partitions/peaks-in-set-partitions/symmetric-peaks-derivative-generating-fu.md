@@ -1,6 +1,6 @@
 # Generating function for the total number of symmetric peaks in set partitions
 
-**Generating function for the total number of symmetric peaks in set partitions.** Fix
+Fix
 $k \in \mathbb{N}$ and, for each $n$, let $P_{n,k}$ be the set of surjective restricted-growth
 strings of length $n$ with letters in $\{0, \dots, k-1\}$; these encode the partitions of
 $\{1, \dots, n\}$ into exactly $k$ blocks. For $w \in P_{n,k}$ let $\operatorname{sp}(w)$ be the

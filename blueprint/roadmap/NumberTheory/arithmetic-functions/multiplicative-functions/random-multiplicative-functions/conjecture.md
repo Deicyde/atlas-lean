@@ -1,6 +1,6 @@
 # Rademacher LIL constant conjecture
 
-**Rademacher LIL constant conjecture.** The statement that there is a real constant $c > 0$
+The statement that there is a real constant $c > 0$
 such that, for every probability space $(\Omega, \mu)$ and every family $(X_p)_p$ of independent,
 measurable random signs indexed by the primes, each uniform on $\{-1, 1\}$, for $\mu$-almost
 every $\omega$ the limit superior as $N \to \infty$ of $S_N(\omega) / \sqrt{N \log \log N}$

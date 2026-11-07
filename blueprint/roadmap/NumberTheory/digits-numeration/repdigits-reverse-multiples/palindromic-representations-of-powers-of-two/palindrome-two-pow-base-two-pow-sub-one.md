@@ -1,6 +1,6 @@
 # Palindromic powers of two in a base one less than a power of two
 
-**Palindromic powers of two in a base one less than a power of two.** Let $x \ge 2$ and
+Let $x \ge 2$ and
 $n \ge 1$ be natural numbers, let $b = 2^x - 1$, and suppose that the base-$b$ representation
 $2^n = (c_k, \dots, c_0)_b$ is a palindrome with $k + 1$ digits. Then (1) $n > k(x - 1)$; and
 (2) if $n = kx + r$ for a natural number $r$, and either $k \le x - r$, or $3 \le k \le x - r + 1$

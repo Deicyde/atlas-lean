@@ -1,6 +1,6 @@
 # Comma candidate digits
 
-**Comma candidate digits.** Let $b$ and $n$ be natural numbers and let $y$ be a digit with
+Let $b$ and $n$ be natural numbers and let $y$ be a digit with
 $0 \le y < b$. Put $m = n + b\,(n \bmod b) + y$, where $n \bmod b$ is the remainder of $n$ on
 division by $b$. Then $y$ is a comma candidate for $n$ in base $b$ if $m > 0$ and the most
 significant base-$b$ digit of $m$ equals $y$.

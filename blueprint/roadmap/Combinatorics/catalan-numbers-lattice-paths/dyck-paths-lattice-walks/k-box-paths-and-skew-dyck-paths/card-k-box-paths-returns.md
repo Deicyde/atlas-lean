@@ -1,6 +1,6 @@
 # Number of $k$-box paths with $j$ returns
 
-**Number of $k$-box paths with $j$ returns.** Let $k \ge 1$ and $1 \le j \le n$, and let
+Let $k \ge 1$ and $1 \le j \le n$, and let
 $r_{k,n,j}$ be the number of $k$-box paths of size $n$ with exactly $j$ returns. Then
 
 $$

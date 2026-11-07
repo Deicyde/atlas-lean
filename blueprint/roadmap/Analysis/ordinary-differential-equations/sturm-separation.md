@@ -1,6 +1,6 @@
 # Sturm separation theorem
 
-**Sturm separation theorem.** Let $p, q, y_1, y_2 : \mathbb{R} \to \mathbb{R}$ and $a < b$,
+Let $p, q, y_1, y_2 : \mathbb{R} \to \mathbb{R}$ and $a < b$,
 and let $J \subseteq \mathbb{R}$ be an open connected set (an open interval, possibly unbounded)
 containing $[a, b]$. Suppose that $p$ and $q$ are continuous on $J$, and that $y_1$ and $y_2$
 are twice differentiable at every point of $J$ and solve $y'' + p(x)\, y' + q(x)\, y = 0$ at

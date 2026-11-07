@@ -1,6 +1,6 @@
 # The longest progression length is at most the modulus
 
-**The longest progression length is at most the modulus.** For every integer $m$ and natural
+For every integer $m$ and natural
 number $n$, $f_m(n) \le n$, where $f_m(n)$ is the length of the longest arithmetic progression
 with positive common difference contained in the set $R_m(n)$ of integers $a$ with
 $m + 1 \le a \le m + n$ and $\gcd(a, n) = 1$.

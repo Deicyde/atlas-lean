@@ -1,6 +1,6 @@
 # Restricted combinations and restricted-overlap tilings
 
-**Restricted combinations and restricted-overlap tilings.** Let $Q$ be a finite set of
+Let $Q$ be a finite set of
 natural numbers and let $q$ be its largest element ($q = 0$ if $Q$ is empty). Write
 $S^Q_{n,k}$ for the number of $k$-subsets of $\{1, \dots, n\}$ in which no two distinct
 elements differ by an element of $Q$, $S^Q_n = \sum_{k=0}^{n} S^Q_{n,k}$, and $B^Q_{m,k}$ for

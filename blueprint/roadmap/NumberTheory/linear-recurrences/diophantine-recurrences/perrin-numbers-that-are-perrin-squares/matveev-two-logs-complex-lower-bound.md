@@ -1,6 +1,6 @@
 # Matveev's lower bound for two logarithms (complex case)
 
-**Matveev's lower bound for two logarithms (complex case).** Let $K$ be a number field of
+Let $K$ be a number field of
 degree $D = [K : \mathbb{Q}]$ with a field embedding $f : K \to \mathbb{C}$, let
 $\eta_1, \eta_2 \in K$ be nonzero, and let $b_1, b_2$ be integers. Let $B$ be a real number with
 $|b_1| \le B$ and $|b_2| \le B$, and let $A_1, A_2$ be real numbers with

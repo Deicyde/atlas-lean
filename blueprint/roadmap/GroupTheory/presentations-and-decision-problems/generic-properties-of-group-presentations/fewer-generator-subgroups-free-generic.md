@@ -1,6 +1,6 @@
 # Olshanskii's genericity problem (Kourovka 11.75)
 
-**Olshanskii's genericity problem (Kourovka 11.75).** This is the proposition, in the form
+This is the proposition, in the form
 proved by Arzhantseva and Olshanskii, that the following holds for all natural numbers $m \ge 2$
 and $n \ge 1$. Let $F_m$ be the free group on $x_1, \dots, x_m$. For each $d$, let $N_d$ be the
 number of $n$-tuples $(r_1, \dots, r_n)$ of elements of $F_m$ whose reduced words are cyclically

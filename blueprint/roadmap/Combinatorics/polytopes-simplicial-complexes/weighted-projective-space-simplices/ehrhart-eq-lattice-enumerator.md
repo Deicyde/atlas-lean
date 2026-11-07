@@ -1,6 +1,6 @@
 # The Ehrhart function agrees with the lattice-point enumerator
 
-**The Ehrhart function agrees with the lattice-point enumerator.** For every subset
+For every subset
 $P \subseteq \mathbb{R}^d$ and every natural number $t$, the Ehrhart function of $P$ at $t$,
 the number of integer vectors $x \in \mathbb{Z}^d$ lying in the dilate $tP$, equals the
 lattice-point enumerator of $P$ at the real dilate $t$, the number of points of

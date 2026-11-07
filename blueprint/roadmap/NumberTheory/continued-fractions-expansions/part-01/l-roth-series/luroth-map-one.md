@@ -1,6 +1,6 @@
 # The Lüroth map fixes 1
 
-**The Lüroth map fixes 1.** The Lüroth map $L$ satisfies $L(1) = 1$.
+The Lüroth map $L$ satisfies $L(1) = 1$.
 
 ## Sources
 

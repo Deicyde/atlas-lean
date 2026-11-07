@@ -1,3 +1,3 @@
 # Positivity of the decay length
 
-**Positivity of the decay length.** The decay length is positive for positive `D` and `k`.
+The decay length is positive for positive `D` and `k`.

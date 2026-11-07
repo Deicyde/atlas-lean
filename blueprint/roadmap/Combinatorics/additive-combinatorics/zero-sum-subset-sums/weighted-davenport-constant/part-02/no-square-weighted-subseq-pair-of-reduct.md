@@ -1,6 +1,6 @@
 # Square-weighted zero-sum free unit pairs lift to odd prime powers
 
-**Square-weighted zero-sum free unit pairs lift to odd prime powers.** Let $p$ be an odd
+Let $p$ be an odd
 prime, let $r \ge 1$, and let $x_1, x_2$ be units of $\mathbb{Z}_{p^r}$. Write $S(m)$ for the set
 of nonzero squares in $\mathbb{Z}_m$, and say that a sequence $(y_i)$ in $\mathbb{Z}_m$ has an
 $A$-weighted zero-sum subsequence when there are a non-empty set $J$ of indices and weights

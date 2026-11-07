@@ -1,6 +1,6 @@
 # Bounded metric $d/(1+d)$ is equivalent to $d$
 
-**Bounded metric $d/(1+d)$ is equivalent to $d$.** Let $(X,d)$ be a metric space and define
+Let $(X,d)$ be a metric space and define
 
 \[
 \delta(x,y):=\frac{d(x,y)}{1+d(x,y)}, \qquad x,y\in X.

@@ -1,6 +1,6 @@
 # One phase-loop iteration of the initial-row generator
 
-**One phase-loop iteration of the initial-row generator.** Let $L$ be a layout with $g$
+Let $L$ be a layout with $g$
 symbol codes, let $ic, k_0 \in \mathbb{N}$, let $ycs$ be a list of $n$ certificate codes, and let
 $p$ be a loop phase with base counter $c_Z(p)$ and loop-count counter $c_N(p)$. Let $F$ give the
 value of each generator counter, with the scratch counters empty ($\mathrm{Rest}(F)$),

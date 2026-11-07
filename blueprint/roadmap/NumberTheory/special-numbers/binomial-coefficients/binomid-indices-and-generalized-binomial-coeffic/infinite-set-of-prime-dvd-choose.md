@@ -1,6 +1,6 @@
 # Primes divide all inner binomial coefficients of infinitely many rows
 
-**Primes divide all inner binomial coefficients of infinitely many rows.** For every prime
+For every prime
 $p$ there are infinitely many natural numbers $n$ such that $p$ divides the binomial coefficient
 $\binom{n}{k}$ for every $k$ with $1 \le k < n$.
 

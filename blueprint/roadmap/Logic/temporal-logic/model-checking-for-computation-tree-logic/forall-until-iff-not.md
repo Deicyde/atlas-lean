@@ -1,6 +1,6 @@
 # Deadlock-correct duality for universal until
 
-**Deadlock-correct duality for universal until.** Let $\varphi$ and $\psi$ be CTL formulas,
+Let $\varphi$ and $\psi$ be CTL formulas,
 and write $s \models \chi$ when the state $s$ of a labelled transition system satisfies the
 formula $\chi$ under a given valuation of the atoms. Then
 $s \models \mathsf{A}[\varphi \mathbin{\mathsf{U}} \psi]$ if and only if neither

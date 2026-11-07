@@ -1,6 +1,6 @@
 # Signed Lah number
 
-**Signed Lah number.** For natural numbers $n$ and $k$, the signed Lah number is the integer
+For natural numbers $n$ and $k$, the signed Lah number is the integer
 $(-1)^{n-k} L(n, k)$ when $k \le n$, where $L(n, k)$ is the unsigned Lah number, and $0$ when
 $k > n$.
 

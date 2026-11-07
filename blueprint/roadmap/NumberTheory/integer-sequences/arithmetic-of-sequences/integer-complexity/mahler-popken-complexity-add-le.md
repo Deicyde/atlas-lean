@@ -1,6 +1,6 @@
 # Subadditivity of the $m$-ary complexity under addition
 
-**Subadditivity of the $m$-ary complexity under addition.** For natural numbers $m \ge 1$,
+For natural numbers $m \ge 1$,
 $a \ge 1$ and $b \ge 1$, the $m$-ary Mahler–Popken complexity $\|\cdot\|_m$ satisfies
 $\|a + b\|_m \le \|a\|_m + \|b\|_m$.
 

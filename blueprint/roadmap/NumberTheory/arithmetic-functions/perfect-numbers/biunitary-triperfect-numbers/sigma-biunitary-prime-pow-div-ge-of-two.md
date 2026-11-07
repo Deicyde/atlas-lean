@@ -1,6 +1,6 @@
 # Comparison bounds for the biunitary divisor sum of a prime power
 
-**Comparison bounds for the biunitary divisor sum of a prime power.** Let $p$ be a prime and
+Let $p$ be a prime and
 let $m \ge 1$ and $e \ge 2m - 1$ be natural numbers, and write $\sigma^{**}$ for the biunitary
 divisor sum. Then, in $\mathbb{Q}$,
 $\sigma^{**}(p^e)/p^e \ge \sigma^{**}(p^{2m})/p^{2m}$, and if moreover $e \ne 2m$, then

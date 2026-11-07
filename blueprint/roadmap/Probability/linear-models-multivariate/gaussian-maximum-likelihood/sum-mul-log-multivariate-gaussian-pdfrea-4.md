@@ -1,6 +1,6 @@
 # The weighted Gaussian MLE for points in general position
 
-**The weighted Gaussian MLE for points in general position.** Let $I$ be a nonempty finite
+Let $I$ be a nonempty finite
 set and $J$ a finite set, and let $x_i \in \mathbb{R}^J$ ($i \in I$) be points with positive
 weights $w_i > 0$ that do not all lie in an affine hyperplane: for every nonzero
 $v \in \mathbb{R}^J$ there are $i, j \in I$ with

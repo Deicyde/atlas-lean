@@ -1,6 +1,6 @@
 # Without monotonicity the Lüroth dimension can vanish
 
-**Without monotonicity the Lüroth dimension can vanish.** For every real number $\tau \ge 0$
+For every real number $\tau \ge 0$
 there is a function $\psi$ from the natural numbers to $(0, 1]$ such that: $\psi$ is not
 non-increasing on $\{q : q \ge N\}$ for any $N$; the lower order at infinity
 $\liminf_{q \to \infty} (-\log \psi(q) / \log q)$ of $1/\psi$ equals $\tau$; and the set

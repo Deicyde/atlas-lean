@@ -1,6 +1,6 @@
 # The edge scan of the Hamiltonian path verifier
 
-**The edge scan of the Hamiltonian path verifier.** For a list $e$ of pairs of natural
+For a list $e$ of pairs of natural
 numbers write $\mathrm{bits}(e)$ for its edge-list encoding, in which each pair $(u, u')$
 contributes $u$ copies of `true`, then `false`, then $u'$ copies of `true`, then `false`. Let
 $a, b$ be natural numbers and $r$, $d$ lists of pairs of natural numbers. Suppose that the

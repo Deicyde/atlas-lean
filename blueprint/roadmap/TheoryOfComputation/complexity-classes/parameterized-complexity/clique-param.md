@@ -1,6 +1,6 @@
 # Parameterized Clique
 
-**Parameterized Clique.** The parameterized $k$-Clique problem answers a bitstring $x$ and
+The parameterized $k$-Clique problem answers a bitstring $x$ and
 a parameter $k \in \mathbb{N}$ as follows. If $x$ decodes, under the canonical bitstring
 encoding, to a pair $(n, E)$ of a natural number $n$ and a list $E$ of pairs of natural numbers,
 the answer is true exactly when there is a list of $k$ distinct natural numbers, each less than

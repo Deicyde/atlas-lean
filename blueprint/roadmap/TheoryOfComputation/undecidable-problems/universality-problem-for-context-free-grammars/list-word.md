@@ -1,6 +1,6 @@
 # List word of an index sequence
 
-**List word of an index sequence.** Let $P = (d_0, \dots, d_{m-1})$ be a list of dominoes over
+Let $P = (d_0, \dots, d_{m-1})$ be a list of dominoes over
 $\alpha$, let $s$ be a function sending each domino to a word over $\alpha$, and set
 $w_i = s(d_i)$ for $i < m$ and $w_i = s(\varepsilon, \varepsilon)$ for $i \ge m$, where
 $(\varepsilon, \varepsilon)$ is the domino with empty top and bottom. The list word of an index

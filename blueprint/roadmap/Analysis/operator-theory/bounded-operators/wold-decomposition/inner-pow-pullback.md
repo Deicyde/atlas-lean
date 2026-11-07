@@ -1,3 +1,3 @@
 # Powers of an isometry preserve inner products
 
-**Powers of an isometry preserve inner products.** Pulling inner products back along powers of an isometry.
+Pulling inner products back along powers of an isometry.

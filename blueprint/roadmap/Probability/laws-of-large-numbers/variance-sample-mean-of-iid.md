@@ -1,6 +1,6 @@
 # Variance of the sample mean of i.i.d. samples
 
-**Variance of the sample mean of i.i.d. samples.** Let $X_0, X_1, X_2, \dots$ be real-valued
+Let $X_0, X_1, X_2, \dots$ be real-valued
 random variables on a measure space $(\Omega, \mu)$ that are mutually independent and each have
 the same distribution as $X_0$, and suppose $X_0$ is square-integrable. Then for every integer
 $n \ge 1$, with variances taken with respect to $\mu$,

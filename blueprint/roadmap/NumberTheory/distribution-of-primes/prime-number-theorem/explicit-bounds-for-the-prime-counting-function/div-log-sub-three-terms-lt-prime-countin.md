@@ -1,6 +1,6 @@
 # Axler's unconditional three-term lower bound for the prime-counting function
 
-**Axler's unconditional three-term lower bound for the prime-counting function.** Let
+Let
 $\pi(x)$ denote the number of primes $p \le x$ and $\log$ the natural logarithm. For every real
 $x \ge 65405887$,
 

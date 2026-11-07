@@ -1,6 +1,6 @@
 # Three-term identity for modified degenerate Bernoulli polynomials
 
-**Three-term identity for modified degenerate Bernoulli polynomials.** Let $n \ge 1$, let
+Let $n \ge 1$, let
 $\lambda$ be a complex number with $\lambda \ne 0$ and $\lambda \ne -1$, write
 $\mathfrak{B}_{k,\lambda}(x)$ for the modified degenerate Bernoulli polynomials, and for complex
 numbers $s, t, x, y$ put

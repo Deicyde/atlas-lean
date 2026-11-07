@@ -1,6 +1,6 @@
 # Two isospectral finite groups do not force infinitely many
 
-**Two isospectral finite groups do not force infinitely many.** There are a set $\Omega$ of
+There are a set $\Omega$ of
 natural numbers and a natural number $k$ such that two non-isomorphic finite groups have set of
 element orders $\Omega$, but there are no $k$ pairwise non-isomorphic finite groups whose set of
 element orders is $\Omega$.

@@ -1,6 +1,6 @@
 # CDF of the normalized sum
 
-**CDF of the normalized sum.** Let $\mu$ be a standardized law on $\mathbb{R}$
+Let $\mu$ be a standardized law on $\mathbb{R}$
 (a probability measure with mean $0$, variance $1$ and finite third absolute moment), let $n$ be
 a positive integer and let $x \in \mathbb{R}$. Then the cumulative distribution function of the
 normalized law of $\mu$ at $n$, evaluated at $x$, equals the probability under the i.i.d. law

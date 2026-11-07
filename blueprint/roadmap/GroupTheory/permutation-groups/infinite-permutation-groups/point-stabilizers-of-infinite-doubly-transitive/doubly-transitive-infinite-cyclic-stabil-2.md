@@ -1,6 +1,6 @@
 # No doubly transitive group has an infinite cyclic point stabilizer (Kourovka 10.63)
 
-**No doubly transitive group has an infinite cyclic point stabilizer (Kourovka 10.63).** If a group
+If a group
 $G$ acts faithfully on a set $X$ such that for any two ordered pairs of distinct points of $X$
 some element of $G$ maps the first to the second, then no point stabilizer of the action is
 isomorphic to the infinite cyclic group $\mathbb{Z}$.

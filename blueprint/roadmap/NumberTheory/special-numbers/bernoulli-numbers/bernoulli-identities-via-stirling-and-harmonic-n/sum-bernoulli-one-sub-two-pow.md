@@ -1,6 +1,6 @@
 # A weighted Bernoulli sum with factors $1 - 2^j$
 
-**A weighted Bernoulli sum with factors $1 - 2^j$.** Let $B_j$ denote the Bernoulli numbers
+Let $B_j$ denote the Bernoulli numbers
 with $B_1 = -\tfrac12$. For every positive integer $n$,
 
 $$\sum_{j=1}^{n} \left(\binom{n}{j} + 1\right) \frac{B_j}{j} \left(1 - 2^j\right) = 1.$$

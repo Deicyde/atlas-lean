@@ -1,6 +1,6 @@
 # Geodesic flow on the unit tangent bundle
 
-**Geodesic flow on the unit tangent bundle.** Let $M$ be a $C^2$ manifold (boundary and
+Let $M$ be a $C^2$ manifold (boundary and
 corners allowed) modeled on a finite-dimensional real space, with a $C^1$ Riemannian metric $g$
 and unit tangent bundle $SM$. A family of maps $\varphi_t : SM \to SM$, $t \in \mathbb{R}$, is a
 geodesic flow on $SM$ when $\varphi_0(v) = v$ for every $v \in SM$,

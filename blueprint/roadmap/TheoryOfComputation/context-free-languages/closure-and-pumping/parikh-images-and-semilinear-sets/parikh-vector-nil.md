@@ -1,6 +1,6 @@
 # Parikh vector of the empty word is zero
 
-**Parikh vector of the empty word is zero.** The Parikh vector of the empty word is zero.
+The Parikh vector of the empty word is zero.
 
 ## Sources
 

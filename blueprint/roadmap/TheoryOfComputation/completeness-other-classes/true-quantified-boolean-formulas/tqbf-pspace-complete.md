@@ -1,6 +1,6 @@
 # TQBF is PSPACE-complete
 
-**TQBF is PSPACE-complete.** The TQBF decision problem, of true quantified Boolean formulas
+The TQBF decision problem, of true quantified Boolean formulas
 with a CNF matrix, lies in the class PSPACE of decision problems, and every decision problem in
 PSPACE has a polynomial-time many-one reduction to it.
 

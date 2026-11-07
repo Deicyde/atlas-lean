@@ -1,6 +1,6 @@
 # Number of arrivals an online matcher matches
 
-**Number of arrivals an online matcher matches.** Let $A$ be an online matcher with $a$ left
+Let $A$ be an online matcher with $a$ left
 vertices, $h$ a history (the neighbour lists of earlier arrivals), $U$ a list of left vertices
 already matched, and $\sigma$ a sequence of arrivals, each given by its list of left neighbours.
 The run of $A$ on $\sigma$ takes the arrivals in order: on an arrival with neighbour list $N$,

@@ -1,6 +1,6 @@
 # $m$-vanishing family
 
-**$m$-vanishing family.** Let $n$ be a natural number and let $F = (f^{(l)})_{l \ge 0}$ be a
+Let $n$ be a natural number and let $F = (f^{(l)})_{l \ge 0}$ be a
 family of functions $f^{(l)} : (\mathbb{Z}/n\mathbb{Z})^l \to M$ into a type $M$ with a zero
 element. For a natural number $m$, $F$ is $m$-vanishing if for every sequence
 $a_0, a_1, a_2, \dots$ of elements of $\mathbb{Z}/n\mathbb{Z}$ there are a length $l > 1$ and a

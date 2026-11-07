@@ -1,6 +1,6 @@
 # Factorization theorem for weighted file placements
 
-**Factorization theorem for weighted file placements.** Let $m \ge 1$ and let $B$ be a Ferrers
+Let $m \ge 1$ and let $B$ be a Ferrers
 board with $n$ columns of weakly increasing heights $b_0 \le b_1 \le \dots \le b_{n-1}$ (columns
 indexed from $0$). Then for every integer $x$,
 

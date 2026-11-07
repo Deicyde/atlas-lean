@@ -1,6 +1,6 @@
 # Bias as an integral
 
-**Bias as an integral.** Let $S$ be a measurable space, $W : S \to \mathbb{R}$ an estimator,
+Let $S$ be a measurable space, $W : S \to \mathbb{R}$ an estimator,
 $\mu$ a probability measure on $S$ for which $W$ is integrable, and $\theta \in \mathbb{R}$ a
 target. Then the bias of $W$ under $\mu$ at $\theta$ equals $\int_S W \, d\mu - \theta$.
 

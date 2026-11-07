@@ -1,6 +1,6 @@
 # Characterization of minimal systems
 
-**Characterization of minimal systems.** Let $X$ be a compact metric space and
+Let $X$ be a compact metric space and
 $T \colon X \to X$ a homeomorphism. Then $T$ is minimal if and only if there is no closed set
 $K \subseteq X$ with $K \ne \emptyset$, $K \ne X$ and $T(K) = K$.
 

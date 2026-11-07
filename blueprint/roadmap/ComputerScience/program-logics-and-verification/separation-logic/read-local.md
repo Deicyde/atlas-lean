@@ -1,6 +1,6 @@
 # Local rule for a heap read
 
-**Local rule for a heap read.** Let $x$ and $y$ be variables, let $a$ and $v$ be natural
+Let $x$ and $y$ be variables, let $a$ and $v$ be natural
 numbers, and let $p$ and $q$ be predicates on stores. Write $s[x := n]$ for the store that agrees
 with $s$ except that it maps $x$ to $n$, and $a \mapsto v$ for the heap assertion that holds when
 the heap is the single cell at address $a$ holding $v$. If every store $s$ satisfying $p$ has

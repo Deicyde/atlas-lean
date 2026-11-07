@@ -1,6 +1,6 @@
 # Crank of the partitions of $0$ and $1$
 
-**Crank of the partitions of $0$ and $1$.** The empty partition of $0$ has crank $0$, and the
+The empty partition of $0$ has crank $0$, and the
 partition $(1)$ of $1$ has crank $0 - 1 = -1$.
 
 Consequently the number of partitions of $0$ with nonnegative crank is $1$, and no partition of

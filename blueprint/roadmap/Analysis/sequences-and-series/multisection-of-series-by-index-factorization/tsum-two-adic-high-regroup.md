@@ -1,6 +1,6 @@
 # Regrouping the multiples of a power of 2 by their 2-adic factorization
 
-**Regrouping the multiples of a power of 2 by their 2-adic factorization.** For every
+For every
 natural number $J$ and every sequence $(c_m)_{m \ge 1}$ of complex numbers,
 
 $$\sum_{j \ge J,\, n \ge 1} c_{(2n-1) 2^j} = \sum_{p \ge 1} c_{p 2^J},$$

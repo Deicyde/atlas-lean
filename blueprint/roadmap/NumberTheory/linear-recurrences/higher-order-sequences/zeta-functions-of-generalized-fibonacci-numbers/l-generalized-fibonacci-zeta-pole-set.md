@@ -1,6 +1,6 @@
 # Set of possible poles of the ℓ-generalized Fibonacci zeta function
 
-**Set of possible poles of the ℓ-generalized Fibonacci zeta function.** For a natural number
+For a natural number
 $\ell$ and a real number $\alpha$, let $R$ be the set of distinct complex roots of the
 characteristic polynomial $X^\ell - \sum_{i=0}^{\ell-1} X^i$ other than $\alpha$. The set $S$ of
 possible poles is the set of all complex numbers $-K + (2n\pi i + L)/\log\alpha$, where $n$ is

@@ -1,6 +1,6 @@
 # Antiderivative of $x^l H(x)$
 
-**Antiderivative of $x^l H(x)$.** Let $l \ge 1$, let $Q_l$ and $C_l$ be Zurita's polynomial and
+Let $l \ge 1$, let $Q_l$ and $C_l$ be Zurita's polynomial and
 constant, and let $H$ be the closed form of the reciprocal central binomial series. Then there
 is a polynomial $P$ with rational coefficients such that $P(0) = 0$ and
 $2(4 - x) P'(x) = 8x^l - Q_l(x)$ as polynomials. Moreover, for every such $P$ and every real

@@ -1,6 +1,6 @@
 # Pólya–Schur transcendental characterization of multiplier sequences
 
-**Pólya–Schur transcendental characterization of multiplier sequences.** Let
+Let
 $t_0, t_1, \dots$ be non-negative real numbers with $t_0 \ne 0$. Say a real polynomial splits
 over $\mathbb{R}$ if it is a constant times a product of linear factors $x - r$ with $r$ real
 (the zero polynomial splits). Then the following are equivalent: for every real polynomial

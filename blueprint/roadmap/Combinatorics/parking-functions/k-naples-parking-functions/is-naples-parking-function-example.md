@@ -1,6 +1,6 @@
 # A $2$-Naples parking function that is not $1$-Naples
 
-**A $2$-Naples parking function that is not $1$-Naples.** The preference
+The preference
 $(6, 6, 6, 5, 5, 2, 1)$ of length $7$ is a $2$-Naples parking function but not a $1$-Naples
 parking function.
 

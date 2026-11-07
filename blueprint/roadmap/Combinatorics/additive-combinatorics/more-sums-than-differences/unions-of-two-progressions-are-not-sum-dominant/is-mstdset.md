@@ -1,6 +1,6 @@
 # MSTD set
 
-**MSTD set.** A finite set $A$ of real numbers is an *MSTD set* (more sums than differences)
+A finite set $A$ of real numbers is an *MSTD set* (more sums than differences)
 when its difference set has fewer elements than its sumset: $|A - A| < |A + A|$, where
 $A + A = \{a + b : a, b \in A\}$ and $A - A = \{a - b : a, b \in A\}$.
 

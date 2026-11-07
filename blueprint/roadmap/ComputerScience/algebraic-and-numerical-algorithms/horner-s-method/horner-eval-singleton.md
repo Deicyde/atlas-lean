@@ -1,6 +1,6 @@
 # Horner evaluation of a constant polynomial
 
-**Horner evaluation of a constant polynomial.** For every commutative semiring $R$,
+For every commutative semiring $R$,
 every $x \in R$ and every single coefficient $a_0 \in R$ ($n = 1$), Horner evaluation of
 $a_0$ at $x$ returns $a_0$ and charges $2$ operations.
 

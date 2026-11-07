@@ -1,6 +1,6 @@
 # Levels of the branches of an arch
 
-**Levels of the branches of an arch.** On numerator–denominator pairs write
+On numerator–denominator pairs write
 $s(x, y) = (x, x + y)$ for the son and $t(x, y) = (x + y, y)$ for the daughter of a vertex of the
 Calkin–Wilf tree. Let $a, b, c, d, k$ be natural numbers with $0 < b < a$ and $0 < c < d$. Then
 $t(s^k(a - b, b))$, the daughter of the $k$-fold son of $(a - b, b)$, has first entry

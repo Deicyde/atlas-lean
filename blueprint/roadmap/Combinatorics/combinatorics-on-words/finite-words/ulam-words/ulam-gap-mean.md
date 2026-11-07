@@ -1,6 +1,6 @@
 # Mean gap of the Ulam values
 
-**Mean gap of the Ulam values.** For $n \in \mathbb{N}$, read each Ulam word of length $n$
+For $n \in \mathbb{N}$, read each Ulam word of length $n$
 as a binary numeral, most significant letter first, and list the resulting values in increasing
 order as $u_1 < u_2 < \dots < u_k$. The mean gap of these values is the rational number
 

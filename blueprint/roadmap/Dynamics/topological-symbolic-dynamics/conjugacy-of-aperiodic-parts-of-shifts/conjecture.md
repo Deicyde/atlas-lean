@@ -1,6 +1,6 @@
 # Hochman's aperiodic conjugacy question
 
-**Hochman's aperiodic conjugacy question.** Let $X$ be the full 2-shift and $Y$ the proper
+Let $X$ be the full 2-shift and $Y$ the proper
 3-colouring shift, write $X \setminus \mathrm{Per}(X)$ and $Y \setminus \mathrm{Per}(Y)$ for
 their aperiodic parts with the subspace topologies, and let $\sigma$ be the left shift
 $(\sigma z)_i = z_{i+1}$ on each. The statement is that there is a homeomorphism

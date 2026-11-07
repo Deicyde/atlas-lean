@@ -1,6 +1,6 @@
 # Bounds for partial Tverberg sums of two integers under rounding half up
 
-**Bounds for partial Tverberg sums of two integers under rounding half up.** Let
+Let
 $r^+(y) = \lfloor y + 1/2 \rfloor$ be rounding to the nearest integer with ties rounded up. For
 integers $a, b, k$ and a natural number $m$, let
 $f(a, b; m, k) = r^+(k/m) - r^+((k + a)/m) - r^+((k + b)/m) + r^+((k + a + b)/m)$ be

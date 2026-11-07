@@ -1,6 +1,5 @@
 # Euler product for the mean value of a multiplicative function of several variables
 
-**Euler product for the mean value of a multiplicative function of several variables.**
 Let $f : \mathbb{N}^k \to \mathbb{C}$ satisfy $f(a_0 b_0, \dots, a_{k-1} b_{k-1}) = f(a) f(b)$
 for all $a, b \in \mathbb{N}^k$ with $\gcd(a_0 \cdots a_{k-1}, b_0 \cdots b_{k-1}) = 1$. Let $\mu$
 be the Möbius function, and for $n \in \mathbb{N}^k$ with every $n_i \ge 1$ put

@@ -1,6 +1,6 @@
 # Unimodality of fixed-point counts for permutations with a given number of cycles
 
-**Unimodality of fixed-point counts for permutations with a given number of cycles.** Write
+Write
 $a(n, k, j)$ for the number of permutations of an $n$-element set with exactly $k$ cycles (fixed
 points counted as cycles of length one) and exactly $j$ fixed points. If $k \le n$, then there is
 an $m \le k$ such that $j \mapsto a(n, k, j)$ is weakly increasing on $\{0, \dots, m\}$ and weakly

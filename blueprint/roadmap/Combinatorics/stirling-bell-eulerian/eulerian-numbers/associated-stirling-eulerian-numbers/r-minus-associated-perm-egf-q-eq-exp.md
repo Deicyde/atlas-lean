@@ -1,6 +1,6 @@
 # Cycle-counting generating function for cycle lengths at most r
 
-**Cycle-counting generating function for cycle lengths at most r.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra, let $x, q \in R$ and let $r \ge 2$. For a permutation $\sigma$ write
 $e(\sigma)$ for its number of excedances (the $i$ with $\sigma(i) > i$) and $c(\sigma)$ for its
 number of cycles, fixed points included, and for $j \ge 1$ let

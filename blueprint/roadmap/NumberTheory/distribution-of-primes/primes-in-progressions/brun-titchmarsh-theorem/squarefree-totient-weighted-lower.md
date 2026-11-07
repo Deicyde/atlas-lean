@@ -1,6 +1,6 @@
 # Weighted lower bound for the squarefree totient sum
 
-**Weighted lower bound for the squarefree totient sum.** For every natural number $z \ge 100$,
+For every natural number $z \ge 100$,
 $\log z + 36/100 < \sum_{q=1}^{z} (1 + q/z)^{-1} \, \mu(q)^2 / \varphi(q)$, where $\mu$ is the
 Möbius function and $\varphi$ is Euler's totient function.
 

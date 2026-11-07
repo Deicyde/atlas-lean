@@ -1,6 +1,6 @@
 # Under abc, finitely many Goormaghtigh numbers have both lengths at least five
 
-**Under abc, finitely many Goormaghtigh numbers have both lengths at least five.** Assume the
+Assume the
 abc conjecture in the following form: for every real $\varepsilon > 0$, there are only finitely
 many triples $(a, b, c)$ of positive integers with $a + b = c$, $\gcd(a, b) = 1$ and
 $\operatorname{rad}(abc)^{1 + \varepsilon} \le c$, where $\operatorname{rad}(k)$ is the product of

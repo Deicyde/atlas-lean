@@ -1,6 +1,6 @@
 # Infinitely many primes avoid $\gamma \alpha^n - \beta$
 
-**Infinitely many primes avoid $\gamma \alpha^n - \beta$.** Let $\alpha, \beta, \gamma$ be
+Let $\alpha, \beta, \gamma$ be
 nonzero integers such that $\beta \ne \gamma \alpha^k$ and $\beta \alpha^k \ne \gamma$ for every
 natural number $k$, that is, $\beta / \gamma$ is not $\alpha^k$ for any integer $k$. Then there
 are infinitely many primes $p$ such that $p$ divides none of the integers $\gamma \alpha^n - \beta$

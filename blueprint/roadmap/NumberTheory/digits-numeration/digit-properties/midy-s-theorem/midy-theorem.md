@@ -1,6 +1,6 @@
 # Midy's theorem
 
-**Midy's theorem.** Let $p \ne 2, 5$ be a prime and $n \ge 1$ an integer such that $p$ divides
+Let $p \ne 2, 5$ be a prime and $n \ge 1$ an integer such that $p$ divides
 $10^{2n} - 1$ and does not divide $10^m - 1$ for any $0 < m < 2n$, that is, the decimal period of
 $1/p$ is $2n$. Let $Q = (10^{2n} - 1)/p$, whose decimal expansion padded with leading zeros to
 $2n$ digits is the repetend of $1/p$, and write $Q = 10^n H + L$ with $0 \le L < 10^n$, so that

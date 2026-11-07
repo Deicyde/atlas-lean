@@ -1,6 +1,6 @@
 # Greedy scan with an independence oracle
 
-**Greedy scan with an independence oracle.** Given an oracle $O$ that accepts or rejects each
+Given an oracle $O$ that accepts or rejects each
 finite subset of a type $\alpha$, a finite set $S \subseteq \alpha$ and a list $e_1, \dots, e_n$ of
 elements of $\alpha$, the greedy scan processes $e_1, \dots, e_n$ in order, starting with $S$ as
 the current set: it replaces the current set $T$ by $T \cup \{e_i\}$ if $O$ accepts

@@ -1,6 +1,6 @@
 # Vanishing of the reduced unicellular hypermonopole counts
 
-**Vanishing of the reduced unicellular hypermonopole counts.** Let $\sigma_n$ be the cyclic
+Let $\sigma_n$ be the cyclic
 permutation $i \mapsto i + 1$ (modulo $n$) of $\{0, 1, \dots, n - 1\}$, write $z(\pi)$ for the
 number of cycles of a permutation $\pi$, fixed points included, and let $r(n, k)$ be the number
 of permutations $\alpha$ of $\{0, 1, \dots, n - 1\}$ with no fixed point such that

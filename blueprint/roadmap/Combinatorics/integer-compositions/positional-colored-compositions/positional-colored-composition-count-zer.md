@@ -1,6 +1,6 @@
 # Colored compositions of zero
 
-**Colored compositions of zero.** For all natural numbers $m$ and $k$, $c_{m,k}(0) = 1$: the
+For all natural numbers $m$ and $k$, $c_{m,k}(0) = 1$: the
 only composition of $0$ is the empty one.
 
 ## Sources

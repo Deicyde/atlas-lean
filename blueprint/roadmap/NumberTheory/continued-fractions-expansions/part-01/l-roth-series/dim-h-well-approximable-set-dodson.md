@@ -1,6 +1,6 @@
 # Dodson's theorem
 
-**Dodson's theorem.** Let $\psi$ be a non-increasing function from the natural numbers to
+Let $\psi$ be a non-increasing function from the natural numbers to
 $(0, 1/2]$, let $W(\psi)$ be the set of $x \in [0, 1)$ such that for infinitely many $q$ there
 is an integer $p$ with $|x - p/q| < \psi(q)/q$, and let
 $\tau_\psi = \liminf_{q \to \infty} (-\log \psi(q) / \log q)$, taken in $[0, \infty]$, be the

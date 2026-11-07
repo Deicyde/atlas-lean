@@ -1,6 +1,6 @@
 # Dominant root of $x^m - a_1 x^{m-1} - \cdots - a_m$ with positive coefficients
 
-**Dominant root of $x^m - a_1 x^{m-1} - \cdots - a_m$ with positive coefficients.** Let
+Let
 $m \ge 2$ and let $a_1, \dots, a_m$ be positive integers. Then the polynomial
 $\varphi(x) = x^m - a_1 x^{m-1} - \cdots - a_m$ has exactly one positive real root $\lambda$,
 this root satisfies $\lambda > 1$, and the complex roots of $\varphi$, counted with

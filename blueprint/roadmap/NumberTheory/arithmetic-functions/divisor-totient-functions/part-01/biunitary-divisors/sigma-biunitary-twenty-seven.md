@@ -1,6 +1,6 @@
 # The biunitary divisor sum of $27$
 
-**The biunitary divisor sum of $27$.** The sum $\sigma^{**}(27)$ of the biunitary divisors of
+The sum $\sigma^{**}(27)$ of the biunitary divisors of
 $27$ equals $1 + 3 + 9 + 27 = 40$.
 
 ## Sources

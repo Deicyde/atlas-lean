@@ -1,6 +1,6 @@
 # The only $0$-descendant of a vertex is itself
 
-**The only $0$-descendant of a vertex is itself.** Let $R$ be a digraph on $\mathbb{Z}$ and let
+Let $R$ be a digraph on $\mathbb{Z}$ and let
 $m, n \in \mathbb{Z}$. Then $n$ is a $0$-descendant of $m$ in $R$ if and only if $n = m$.
 
 ## Sources

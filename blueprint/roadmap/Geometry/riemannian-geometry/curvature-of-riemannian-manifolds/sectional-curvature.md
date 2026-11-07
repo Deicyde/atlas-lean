@@ -1,6 +1,6 @@
 # Sectional curvature
 
-**Sectional curvature.** Let $(M, g)$ be a $C^\infty$ Riemannian manifold modeled on a
+Let $(M, g)$ be a $C^\infty$ Riemannian manifold modeled on a
 finite-dimensional real space (boundary and corners allowed), with Riemann curvature
 endomorphism $R$, and let $x \in M$. The sectional curvature of tangent vectors
 $u, v \in T_x M$ is

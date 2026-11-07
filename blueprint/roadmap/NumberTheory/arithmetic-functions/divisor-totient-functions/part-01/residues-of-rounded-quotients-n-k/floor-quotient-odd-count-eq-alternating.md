@@ -1,6 +1,6 @@
 # The floor parity count as an alternating sum
 
-**The floor parity count as an alternating sum.** Let $\mathcal{F}_n$ be the number of
+Let $\mathcal{F}_n$ be the number of
 integers $k$ with $1 \le k \le n$ for which $\lfloor n/k \rfloor$ is odd. For every natural
 number $n$, $\mathcal{F}_n = \sum_{d=1}^{n} \lfloor n/d \rfloor (-1)^{d+1}$.
 

@@ -1,6 +1,6 @@
 # Chiral knot
 
-**Chiral knot.** Let $K \colon \mathbb{R} \to \mathbb{R}^3$ be an oriented smooth knot, and
+Let $K \colon \mathbb{R} \to \mathbb{R}^3$ be an oriented smooth knot, and
 let $\rho(x, y, z) = (x, y, -z)$ be the reflection of $\mathbb{R}^3$ through the $xy$-plane.
 Call $\sigma \colon \mathbb{R} \to \mathbb{R}$ an orientation-preserving reparametrization of
 the circle if it is a strictly increasing smooth bijection with smooth inverse satisfying

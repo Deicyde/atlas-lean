@@ -1,6 +1,6 @@
 # Well approximable numbers
 
-**Well approximable numbers.** For a function $\psi : \mathbb{N} \to \mathbb{R}$, the set
+For a function $\psi : \mathbb{N} \to \mathbb{R}$, the set
 $W(\psi)$ of $\psi$-well approximable numbers consists of the real numbers $x \in [0, 1)$ such
 that for infinitely many natural numbers $q$ there is an integer $p$ with
 $|x - p/q| < \psi(q)/q$.

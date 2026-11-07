@@ -1,6 +1,6 @@
 # The adversary's guess in the CPA experiment
 
-**The adversary's guess in the CPA experiment.** Let $Y$ be an additive commutative group,
+Let $Y$ be an additive commutative group,
 $f \colon X \to Y$ a function, $q$ a natural number, $\rho \colon \{0, \dots, q - 1\} \to X$ the
 encryption randomness, $r_s \in X$ the challenge randomness and $b$ a bit. Let $c$ be an oracle
 algorithm for the encryption oracle that outputs two messages $(m_0, m_1) \in Y \times Y$ and a

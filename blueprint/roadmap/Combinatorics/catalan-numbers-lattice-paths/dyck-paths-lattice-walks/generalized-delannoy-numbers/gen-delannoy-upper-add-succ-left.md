@@ -1,6 +1,5 @@
 # Vertical sum identity for the upper generalized Delannoy numbers
 
-**Vertical sum identity for the upper generalized Delannoy numbers.**
 For natural numbers $k$, $m$ and $n$, write
 $D^k(m, n) = \sum_{j=0}^{n} \binom{m + n + k - j}{n + k} \binom{n}{j}$ for the upper
 generalized Delannoy numbers. For all natural numbers $k$, $m$ and $n$ with $k \ge 1$,

@@ -1,6 +1,6 @@
 # Large elements of a Schatunowsky set lie in all small prime ideals
 
-**Large elements of a Schatunowsky set lie in all small prime ideals.** Let $K$ be an
+Let $K$ be an
 imaginary quadratic field of class number $1$. For $\alpha \in \mathcal{O}_K$ let $N(\alpha)$ be
 the absolute norm of the ideal $(\alpha)$. Put $N(\pi_0) = 1$ and, for $n \ge 1$, let $N(\pi_n)$
 be the $n$-th smallest number that is the norm of a nonzero prime ideal of $\mathcal{O}_K$. For

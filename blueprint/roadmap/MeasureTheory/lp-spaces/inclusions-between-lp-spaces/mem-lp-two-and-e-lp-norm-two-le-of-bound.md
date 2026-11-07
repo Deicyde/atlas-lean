@@ -1,6 +1,6 @@
 # A bounded integrable function is square integrable
 
-**A bounded integrable function is square integrable.** Let $d$ be a natural number, let
+Let $d$ be a natural number, let
 $M \ge 0$, and let $f \colon \mathbb{R}^d \to \mathbb{R}$ satisfy $|f(x)| \le M$ for every
 $x \in \mathbb{R}^d$. If $f \in L^1(\mathbb{R}^d)$, then $f \in L^2(\mathbb{R}^d)$ and
 

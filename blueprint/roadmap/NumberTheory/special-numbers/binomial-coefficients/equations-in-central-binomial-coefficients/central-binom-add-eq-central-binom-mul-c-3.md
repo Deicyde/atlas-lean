@@ -1,6 +1,6 @@
 # Central binomial products with $x = 1$
 
-**Central binomial products with $x = 1$.** Let $a$ and $b$ be positive integers. Then
+Let $a$ and $b$ be positive integers. Then
 $\binom{2(a+b)}{a+b} = \binom{2a}{a}\binom{1+2b}{b}$ if and only if $a = 1$.
 
 ## Sources

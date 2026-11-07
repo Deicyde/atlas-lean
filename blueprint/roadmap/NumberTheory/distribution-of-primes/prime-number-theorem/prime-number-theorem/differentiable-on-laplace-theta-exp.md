@@ -1,6 +1,6 @@
 # Holomorphy of the Laplace transform of $\theta(e^t)$
 
-**Holomorphy of the Laplace transform of $\theta(e^t)$.** Let
+Let
 $\theta(x) = \sum_{p \le x} \log p$ be Chebyshev's function, the sum running over the primes
 $p \le x$. Then the Laplace transform $F(s) = \int_{(0, \infty)} e^{-st}\,\theta(e^t)\,dt$ of
 $t \mapsto \theta(e^t)$ is complex differentiable at every point of the open half-plane

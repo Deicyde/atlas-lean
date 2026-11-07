@@ -1,6 +1,6 @@
 # Index of a rectilinear cycle
 
-**Index of a rectilinear cycle.** For a rectilinear cycle $\Gamma$ and a point
+For a rectilinear cycle $\Gamma$ and a point
 $w \in \mathbb{C}$, the index of $\Gamma$ about $w$ is
 $\frac{1}{2\pi i}\int_\Gamma \frac{dz}{z - w}$, the contour integral over $\Gamma$ of
 $z \mapsto (z - w)^{-1}$, multiplied by $(2\pi i)^{-1}$.

@@ -1,6 +1,6 @@
 # Golden mean flips connect all expansions to the Bergman expansion
 
-**Golden mean flips connect all expansions to the Bergman expansion.** Let $N$ be a natural
+Let $N$ be a natural
 number, let $S$ be a Bergman expansion of $N$ and let $T$ be any finite base phi expansion of
 $N$ with digits $0$ and $1$. Then $T$ is obtained from $S$ by finitely many (possibly zero)
 golden mean flips $100 \to 011$.

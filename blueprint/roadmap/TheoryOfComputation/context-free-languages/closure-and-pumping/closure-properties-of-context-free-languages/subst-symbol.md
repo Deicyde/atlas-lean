@@ -1,6 +1,6 @@
 # Substituting the symbols of a grammar
 
-**Substituting the symbols of a grammar.** Let $g$ be a context-free grammar over $T$ with
+Let $g$ be a context-free grammar over $T$ with
 nonterminals $N_g$, and let $e$ assign to each letter $a \in T$ an encoded grammar $e(a)$ over
 $T'$. Each symbol of $g$ becomes a nonterminal in $N_g \sqcup (\mathbb{N} \times \mathbb{N})$: a
 nonterminal $B$ of $g$ becomes $B$ in the left part, and a terminal $a$ becomes the pair $(k, n)$,

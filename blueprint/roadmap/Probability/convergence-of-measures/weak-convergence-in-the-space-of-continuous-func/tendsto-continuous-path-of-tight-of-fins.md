@@ -1,6 +1,6 @@
 # Tightness plus finite-dimensional convergence gives weak convergence
 
-**Tightness plus finite-dimensional convergence gives weak convergence.** Let `T > 0`. A tight sequence of probability laws on
+Let `T > 0`. A tight sequence of probability laws on
 `C(Set.Icc 0 T, ℝ)` converges weakly to `μ` in the uniform topology if every
 finite evaluation pushforward converges weakly to the corresponding
 pushforward of `μ`.

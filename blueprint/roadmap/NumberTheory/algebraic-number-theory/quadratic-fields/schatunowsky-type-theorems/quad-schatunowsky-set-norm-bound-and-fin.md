@@ -1,6 +1,6 @@
 # Norm bound and finiteness of the Schatunowsky set
 
-**Norm bound and finiteness of the Schatunowsky set.** Let $K$ be an imaginary quadratic field
+Let $K$ be an imaginary quadratic field
 (a totally complex number field of degree $2$ over $\mathbb{Q}$) with class number $1$ and ring of
 integers $\mathcal{O}_K$, and let $\ell$ and $n_0$ be natural numbers such that
 $N(\pi_{n+1})^{\ell+1} < N(\pi_n\#)$ for every $n \ge n_0$, where $N(\pi_n)$ and $N(\pi_n\#)$ are

@@ -1,6 +1,6 @@
 # Fixed tilings as a product over orbits
 
-**Fixed tilings as a product over orbits.** Let $\alpha$ be a finite set of cells, $T$ a
+Let $\alpha$ be a finite set of cells, $T$ a
 finite set of tile designs, $\varphi$ a permutation of $\alpha$ and $\sigma$ a permutation of
 $T$. The number of tilings $F : \alpha \to T$ with $F(\varphi(c)) = \sigma(F(c))$ for every
 cell $c$ equals $\prod_{\theta} t(|\theta|)$, where $\theta$ runs over the orbits of $\varphi$

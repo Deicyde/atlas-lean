@@ -1,6 +1,6 @@
 # Difference of the squared sums of squares of the $d_i$
 
-**Difference of the squared sums of squares of the $d_i$.** Let
+Let
 $a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$, and let $d_i = a(i, 0) - a(i, 2)$ and
 $d_{i+4} = a(i, 1) - a(i, 3)$ for $0 \le i \le 3$. Then
 

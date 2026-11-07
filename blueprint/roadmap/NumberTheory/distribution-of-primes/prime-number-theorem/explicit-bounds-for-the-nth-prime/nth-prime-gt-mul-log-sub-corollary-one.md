@@ -1,6 +1,6 @@
 # Lower bounds for the $n$-th prime in terms of its logarithm
 
-**Lower bounds for the $n$-th prime in terms of its logarithm.** Let $p_n$ denote the $n$-th
+Let $p_n$ denote the $n$-th
 prime, so that $p_1 = 2$, and put $L = \log p_n$. Then
 $p_n > n\left(L - 1 - \frac{1.109}{L}\right)$ for every integer $n \ge 2621506158680$,
 $p_n > n\left(L - 1 - \frac{1}{L} - \frac{3.48}{L^2}\right)$ for every integer

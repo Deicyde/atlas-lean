@@ -1,6 +1,6 @@
 # The free group on the coprime primes surjects onto the coprime ideals
 
-**The free group on the coprime primes surjects onto the coprime ideals.** Let
+Let
 $\mathfrak m$ be a modulus of a number field $K$, let $P$ be the set of nonzero prime ideals
 of the ring of integers $\mathcal O_K$ that do not divide the finite part of $\mathfrak m$, and
 let $I_K^{\mathfrak m}$ be the group of invertible fractional ideals of $K$ coprime to the

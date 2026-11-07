@@ -1,6 +1,6 @@
 # Even-index against odd-index reciprocal binomial sums
 
-**Even-index against odd-index reciprocal binomial sums.** For every natural number
+For every natural number
 $n \ge 1$,
 
 $$\sum_{k=0}^{\lfloor n/2 \rfloor} \frac{1}{2k+1} \binom{n}{2k} =

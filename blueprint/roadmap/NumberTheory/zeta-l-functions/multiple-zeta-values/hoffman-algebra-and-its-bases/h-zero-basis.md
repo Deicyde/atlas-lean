@@ -1,6 +1,6 @@
 # Hoffman monomial basis of $\mathfrak{H}^0$
 
-**Hoffman monomial basis of $\mathfrak{H}^0$.** Let $\mathbb{Q}\langle x, y\rangle$ be the free
+Let $\mathbb{Q}\langle x, y\rangle$ be the free
 associative $\mathbb{Q}$-algebra on two letters $x$ and $y$, and let $\mathfrak{H}^0$ be its
 subalgebra consisting of the $\mathbb{Q}$-linear combinations of the empty word and of words that
 begin with $x$ and end with $y$. For $k \ge 1$ put $z_k = x^{k-1} y$, and for an index

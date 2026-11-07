@@ -1,6 +1,6 @@
 # The last branch of Axler's error factor is nonincreasing
 
-**The last branch of Axler's error factor is nonincreasing.** Let $R = 5.5666305$ and for
+Let $R = 5.5666305$ and for
 real $y \ge e^{673}$ let
 
 $$

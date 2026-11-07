@@ -1,6 +1,6 @@
 # The Yang–Chen bound
 
-**The Yang–Chen bound.** Let $k, h \in \mathbb{N}$ and $\bar r = (r_0, \dots, r_{k-1})$ with
+Let $k, h \in \mathbb{N}$ and $\bar r = (r_0, \dots, r_{k-1})$ with
 all $r_j \in \mathbb{N}$; all sums below run over indices $j \in \{0, \dots, k-1\}$. Let $\mu$ be
 the largest $m \in \{0, \dots, k\}$ with $\sum_{j < m} r_j \le h$, let $\eta$ be the integer such
 that $\eta + 1$ is the least $m \in \{0, \dots, k\}$ with $\sum_{j \ge m} r_j \le h$ (so

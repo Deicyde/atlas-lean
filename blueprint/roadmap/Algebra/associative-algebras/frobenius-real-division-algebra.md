@@ -1,6 +1,6 @@
 # Frobenius theorem on real division algebras
 
-**Frobenius theorem on real division algebras.** Let $A$ be a finite-dimensional associative
+Let $A$ be a finite-dimensional associative
 unital division algebra over $\mathbb{R}$. Then $A$ is isomorphic as an $\mathbb{R}$-algebra to
 $\mathbb{R}$, to $\mathbb{C}$, or to the algebra $\mathbb{H}$ of real quaternions.
 

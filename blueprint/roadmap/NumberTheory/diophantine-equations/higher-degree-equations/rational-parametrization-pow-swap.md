@@ -1,6 +1,6 @@
 # Rational solutions of $x^y = y^x$
 
-**Rational solutions of $x^y = y^x$.** If $x$ and $y$ are positive rational numbers with
+If $x$ and $y$ are positive rational numbers with
 $y < x$ and $x^y = y^x$ (as real powers), then there is a positive integer $v$ such that
 $x = (1 + 1/v)^{v+1}$ and $y = (1 + 1/v)^{v}$.
 

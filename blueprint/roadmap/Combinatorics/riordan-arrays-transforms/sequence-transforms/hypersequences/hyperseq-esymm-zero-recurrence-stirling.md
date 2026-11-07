@@ -1,6 +1,6 @@
 # Elementary symmetric functions of the first integers via Stirling numbers
 
-**Elementary symmetric functions of the first integers via Stirling numbers.** For
+For
 $j, k \in \mathbb{N}$ let $e_{j,k}$ be the elementary symmetric polynomial of degree $k$ evaluated
 at $1, 2, \dots, j$ (the source's $e_{j,k}(0)$), and let $c(j, i)$ be the unsigned Stirling number
 of the first kind. Then $e_{0,k} = 1$ if $k = 0$ and $e_{0,k} = 0$ otherwise; for all $j, k$,

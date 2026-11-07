@@ -1,6 +1,6 @@
 # Returns and long ascents of an example skew Dyck path
 
-**Returns and long ascents of an example skew Dyck path.** The word $U D U^5 D L^2 D U D L$
+The word $U D U^5 D L^2 D U D L$
 over the skew Dyck steps has exactly two returns and exactly one long ascent.
 
 This is the source's example of a skew Dyck path.

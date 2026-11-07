@@ -1,6 +1,6 @@
 # Augmentation within residual capacities preserves feasibility
 
-**Augmentation within residual capacities preserves feasibility.** Let $c$ be a
+Let $c$ be a
 capacity matrix with natural-number entries on the vertices $\{0, \dots, n-1\}$, let $s$
 and $t$ be vertices, and let $f$ be a flow that is feasible for $c$, $s$, $t$. Let
 $P = (v_0, \dots, v_k)$ be a nonempty list of pairwise distinct vertices with $v_0 = s$ and

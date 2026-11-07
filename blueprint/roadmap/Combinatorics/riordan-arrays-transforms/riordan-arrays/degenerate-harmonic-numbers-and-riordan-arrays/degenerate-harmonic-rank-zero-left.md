@@ -1,6 +1,6 @@
 # Degenerate harmonic numbers of rank vanish at index zero
 
-**Degenerate harmonic numbers of rank vanish at index zero.** For all real $\lambda$ and
+For all real $\lambda$ and
 $\alpha$ and every natural number $r$, the generalized degenerate harmonic number of rank $r$
 satisfies $H_\lambda(0, r, \alpha) = 0$.
 

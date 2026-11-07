@@ -1,6 +1,6 @@
 # Dirichlet series of the square-splitting divisor function
 
-**Dirichlet series of the square-splitting divisor function.** Let $\tau^\star(n) = |A(n)|$ be
+Let $\tau^\star(n) = |A(n)|$ be
 the number of elements of the square-splitting divisor set $A(n)$, and let
 $H(s) = \prod_p (1 - 3p^{-2s} + 2p^{-3s})$, where $p$ runs over the primes. For every complex
 number $s$ with $\operatorname{Re} s > 1$, the series $\sum_{k \ge 0} \tau^\star(p^k) p^{-ks}$

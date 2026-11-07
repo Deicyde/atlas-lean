@@ -1,3 +1,3 @@
 # Partial derivatives commute with coefficient lifting
 
-**Partial derivatives commute with coefficient lifting.** Partial differentiation commutes with canonical coefficient lifting.
+Partial differentiation commutes with canonical coefficient lifting.

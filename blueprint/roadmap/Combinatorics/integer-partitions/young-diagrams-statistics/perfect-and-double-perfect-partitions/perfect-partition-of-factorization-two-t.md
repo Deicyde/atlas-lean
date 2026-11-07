@@ -1,6 +1,6 @@
 # MacMahon's partition of the factorization 2 · 3
 
-**MacMahon's partition of the factorization 2 · 3.** MacMahon's bijection sends the ordered
+MacMahon's bijection sends the ordered
 factorization $6 = 2 \cdot 3$ to the partition $(1, 2^2) = (1, 2, 2)$ of $5$.
 
 ## Sources

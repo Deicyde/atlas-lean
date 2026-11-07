@@ -1,6 +1,6 @@
 # Accessors implementing a source environment
 
-**Accessors implementing a source environment.** Let $\rho$ be a list of source values,
+Let $\rho$ be a list of source values,
 $\rho_t$ a list of target values and $\mathit{acc}$ a family of target terms indexed by the
 natural numbers. The accessors $\mathit{acc}$ implement $\rho$ in $\rho_t$ when, for every index
 $i$ less than the length of $\rho$, there is a target value $w$ such that $\mathit{acc}(i)$

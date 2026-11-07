@@ -1,6 +1,6 @@
 # Entries of the α-Stirling matrix
 
-**Entries of the α-Stirling matrix.** Let $R$ be a commutative ring and let
+Let $R$ be a commutative ring and let
 $\alpha_0, \alpha_1, \alpha_2, \dots$ be a sequence in $R$ ($\alpha_0$ is never used). The
 α-Stirling entries $s_{i,j} \in R$, for $i, j \ge 0$, are defined recursively by
 $s_{i,0} = \alpha_1$ for all $i$, $s_{0,j} = 0$ for $j \ge 1$, and

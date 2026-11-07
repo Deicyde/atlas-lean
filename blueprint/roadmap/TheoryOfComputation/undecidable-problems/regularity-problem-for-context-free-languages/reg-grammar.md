@@ -1,6 +1,6 @@
 # Grammar of the reduction from universality to regularity
 
-**Grammar of the reduction from universality to regularity.** Let $g$ be an encoded
+Let $g$ be an encoded
 context-free grammar over a finite alphabet $T$ with start nonterminal $s$, and write $N_k$ for
 nonterminal $k \in \mathbb{N}$ and $\varepsilon$ for the empty word. The reduction grammar of $g$
 is the encoded grammar over $T \sqcup \{\#, 0, 1\}$ (the letters of $T$, a separator $\#$ and two

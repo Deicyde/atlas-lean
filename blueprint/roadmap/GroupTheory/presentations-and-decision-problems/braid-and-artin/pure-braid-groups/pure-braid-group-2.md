@@ -1,6 +1,6 @@
 # Pure braid group
 
-**Pure braid group.** For $n \in \mathbb{N}$, the pure (coloured) braid group $P_{n+1}$ on
+For $n \in \mathbb{N}$, the pure (coloured) braid group $P_{n+1}$ on
 $n + 1$ strands is the normal closure, in the braid group $B_{n+1}$, of the squares $\sigma_i^2$ of
 the standard generators $\sigma_1, \dots, \sigma_n$ of $B_{n+1}$, where $B_{n+1}$ is the Artin
 group of the Coxeter matrix of type $A_n$.

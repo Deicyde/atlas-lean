@@ -1,6 +1,6 @@
 # Sipser's HAMPATH instance of a CNF formula
 
-**Sipser's HAMPATH instance of a CNF formula.** Let $\varphi$ be a CNF formula with $m$
+Let $\varphi$ be a CNF formula with $m$
 clauses, numbered $0, \dots, m - 1$, and let $x_0, \dots, x_{k-1}$ be its distinct variables,
 in the order of their last occurrences in $\varphi$ (clauses read in order, and the literals of
 each clause in order). Put $T_i = m + i(3m + 2)$ and $R_{i,l} = T_i + 1 + l$. The result is the

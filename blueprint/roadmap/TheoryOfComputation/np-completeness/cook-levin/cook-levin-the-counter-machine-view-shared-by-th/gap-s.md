@@ -1,6 +1,6 @@
 # Gap emission in the counter view
 
-**Gap emission in the counter view.** Let $M$ be a counter machine, let $P, Q, T_1, T_2$ be
+Let $M$ be a counter machine, let $P, Q, T_1, T_2$ be
 pairwise distinct counters, let $y$ be a list of Booleans, let $\mathrm{dec}$, $\mathrm{cmp}$,
 $\mathrm{emit}$, $z$, $\mathrm{next}$ be labels, and let $r$, $r'$, $\mathrm{out}$ assign a label
 to each comparison outcome $\omega$, which is one of $\mathrm{lt}$, $\mathrm{eq}$, $\mathrm{gt}$.

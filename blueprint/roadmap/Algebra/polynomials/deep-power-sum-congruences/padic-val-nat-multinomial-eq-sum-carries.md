@@ -1,6 +1,6 @@
 # Kummer's theorem for multinomial coefficients
 
-**Kummer's theorem for multinomial coefficients.** Let $p$ be a prime and let
+Let $p$ be a prime and let
 $r_1, \dots, r_k$ be natural numbers with sum $m$. For $i \ge 1$ let
 $c_i = \lfloor ((r_1 \bmod p^i) + \dots + (r_k \bmod p^i)) / p^i \rfloor$. Then
 

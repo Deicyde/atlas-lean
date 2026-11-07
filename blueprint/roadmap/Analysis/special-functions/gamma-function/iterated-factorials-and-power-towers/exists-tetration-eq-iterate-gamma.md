@@ -1,6 +1,6 @@
 # Tetrations as iterated Gamma values
 
-**Tetrations as iterated Gamma values.** Let $z > 1$ be a real number with $\Gamma(z) = z$,
+Let $z > 1$ be a real number with $\Gamma(z) = z$,
 and let $b > z$. Let $b \uparrow\uparrow n$ be the $n$-fold iterate of $y \mapsto b^y$ starting
 at $1$, and $\Gamma^n$ the $n$-fold iterate of $\Gamma$. Then there is a convergent sequence
 $(x_n)$ of real numbers, strictly decreasing from some index on, such that

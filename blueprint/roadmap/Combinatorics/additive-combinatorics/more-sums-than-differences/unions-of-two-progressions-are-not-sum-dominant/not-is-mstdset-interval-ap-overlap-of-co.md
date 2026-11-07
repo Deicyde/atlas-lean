@@ -1,6 +1,5 @@
 # An interval and an overlapping progression with incompatible start and step are not MSTD
 
-**An interval and an overlapping progression with incompatible start and step are not MSTD.**
 Let $n \ge 3$ and $m \ge 2$ be natural numbers, and let $x$ and $d$ be real numbers with
 $0 < x < n - 1$. Write $I_n = \{0, 1, \dots, n - 1\}$ and
 $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$. Suppose that one of the following holds:

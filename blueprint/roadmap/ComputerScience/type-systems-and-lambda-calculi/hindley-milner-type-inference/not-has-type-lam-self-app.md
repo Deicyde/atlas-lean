@@ -1,6 +1,6 @@
 # The abstraction $\lambda f.\, f\, f$ has no type
 
-**The abstraction $\lambda f.\, f\, f$ has no type.** For every typing context $\Gamma$,
+For every typing context $\Gamma$,
 every variable name $f$ and every monotype $\tau$, the judgment
 $\Gamma \vdash \lambda f.\, f\, f : \tau$ does not hold.
 

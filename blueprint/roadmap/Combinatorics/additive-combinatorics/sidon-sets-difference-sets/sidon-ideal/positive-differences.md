@@ -1,6 +1,6 @@
 # Positive difference set
 
-**Positive difference set.** For a set $Z \subseteq \mathbb{N}$, the positive difference set
+For a set $Z \subseteq \mathbb{N}$, the positive difference set
 $D(Z)$ is the set of all differences $a - b$ with $a, b \in Z$ and $a > b$.
 
 ## Sources

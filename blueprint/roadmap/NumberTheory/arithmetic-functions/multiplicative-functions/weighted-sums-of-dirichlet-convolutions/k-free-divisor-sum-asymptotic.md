@@ -1,6 +1,6 @@
 # Asymptotic for the divisor function summed over $k$-free integers
 
-**Asymptotic for the divisor function summed over $k$-free integers.** Let $k \ge 2$ be a
+Let $k \ge 2$ be a
 natural number, let $q_k$ be the indicator of $k$-free integers (the indicator of
 $B_\kappa$-free integers for the constant function $\kappa = k$), let $\tau(n)$ be the number of
 positive divisors of $n$, let $\gamma$ be the Euler–Mascheroni constant, let

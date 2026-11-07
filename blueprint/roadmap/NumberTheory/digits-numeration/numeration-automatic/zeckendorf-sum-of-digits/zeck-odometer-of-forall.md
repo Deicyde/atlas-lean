@@ -1,6 +1,6 @@
 # The odometer on sequences without two consecutive zeros
 
-**The odometer on sequences without two consecutive zeros.** Let $T$ be the Zeckendorf
+Let $T$ be the Zeckendorf
 odometer and let $x = (x_k)_{k \in \mathbb{N}}$ be a digit sequence with $x_k \in \{0, 1\}$ such
 that for every $k \ge 2$ we have $x_k = 1$ or $x_{k+1} = 1$. Then $T(x)$ is the zero sequence.
 

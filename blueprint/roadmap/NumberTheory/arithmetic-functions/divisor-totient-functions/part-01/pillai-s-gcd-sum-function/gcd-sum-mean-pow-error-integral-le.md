@@ -1,6 +1,6 @@
 # Integral of the error term for gcd-sum moments under RH
 
-**Integral of the error term for gcd-sum moments under RH.** Let
+Let
 $A(n) = \frac{1}{n} \sum_{m=1}^{n} \gcd(m, n)$ be the mean gcd-sum function. Assume the Riemann
 Hypothesis and let $k \ge 2$ be an integer. Then there is a real polynomial $P$ with the following
 property. Write $E(u) = \sum_{1 \le n \le u} A(n)^k - u P(\log u)$ for real $u$. For every real

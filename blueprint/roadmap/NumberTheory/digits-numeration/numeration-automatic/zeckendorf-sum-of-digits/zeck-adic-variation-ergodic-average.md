@@ -1,6 +1,6 @@
 # Ergodic theorem for the Zeckendorf digit-sum variation
 
-**Ergodic theorem for the Zeckendorf digit-sum variation.** Let $\mu$ be a probability
+Let $\mu$ be a probability
 measure on the digit sequences $x : \mathbb{N} \to \{0, 1\}$ that gives the complement of the
 Zeckendorf-adic integers $\mathbb{X}$ measure zero and is preserved by the odometer $T$. Let
 $r \ge 1$ and let $f : \mathbb{Z} \to \mathbb{C}$ be such that $f \circ \Delta^{(r)}$ is

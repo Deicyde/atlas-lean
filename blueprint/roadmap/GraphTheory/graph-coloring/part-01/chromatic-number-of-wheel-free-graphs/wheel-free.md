@@ -1,6 +1,6 @@
 # Wheel-free graphs
 
-**Wheel-free graphs.** A simple graph $G$ is wheel-free if it has no induced wheel, that
+A simple graph $G$ is wheel-free if it has no induced wheel, that
 is, no induced cycle of length at least four together with a vertex outside the cycle that is
 adjacent to at least three vertices of the cycle.
 

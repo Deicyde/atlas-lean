@@ -1,6 +1,6 @@
 # Letendre's exponent for $\theta^2 < \eta$, $\theta \le 1/2$ and $\theta < 2\eta$
 
-**Letendre's exponent for $\theta^2 < \eta$, $\theta \le 1/2$ and $\theta < 2\eta$.** For all
+For all
 real numbers $\theta$ and $\eta$ with $\theta^2 < \eta$, $\theta \le 1/2$ and $\theta < 2\eta$,
 Letendre's saving exponent satisfies $\xi(\theta, \eta) = 4(\theta - \eta)$.
 

@@ -1,6 +1,6 @@
 # Monotonicity of $m$-vanishing
 
-**Monotonicity of $m$-vanishing.** Let $F$ be a family of functions on blocks over
+Let $F$ be a family of functions on blocks over
 $\mathbb{Z}/n$ with values in a type $M$ with a zero. If $F$ is $m$-vanishing and $m' \le m$,
 then $F$ is $m'$-vanishing.
 

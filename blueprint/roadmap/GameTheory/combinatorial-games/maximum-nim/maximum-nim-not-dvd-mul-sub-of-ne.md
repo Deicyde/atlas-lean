@@ -1,6 +1,6 @@
 # A Maximum Nim non-divisibility lemma for $i \ne h$
 
-**A Maximum Nim non-divisibility lemma for $i \ne h$.** Let $k, n, t, h, i$ be natural numbers
+Let $k, n, t, h, i$ be natural numbers
 with $t \ge 1$, $h \ge 1$, $k = nt + h$ and $h \le n$. If $1 \le i \le n$ and $i \ne h$, then $k$
 does not divide $n(k - t) - i$.
 

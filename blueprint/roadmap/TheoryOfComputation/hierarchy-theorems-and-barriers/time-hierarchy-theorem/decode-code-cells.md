@@ -1,6 +1,6 @@
 # Decoding a code stack
 
-**Decoding a code stack.** For a bit list $x$, the decoding of $x$ as a code is defined as
+For a bit list $x$, the decoding of $x$ as a code is defined as
 follows. Write the cell of a number $n$ for the $n$ bits true followed by one bit false, and the
 cells of a list of numbers for the cells of its numbers in order. If $x$ is the cells of a list
 $l$ of natural numbers (such an $l$ is unique), the length of $l$ is a multiple of $4$, and the

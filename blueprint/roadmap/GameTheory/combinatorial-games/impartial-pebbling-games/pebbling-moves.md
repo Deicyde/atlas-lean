@@ -1,6 +1,6 @@
 # Moves of the $(k+1:k)$-pebbling game
 
-**Moves of the $(k+1:k)$-pebbling game.** Let $G$ be a simple graph on the vertices
+Let $G$ be a simple graph on the vertices
 $0, \dots, n-1$, let $k$ be a natural number and let $a = (a_0, \dots, a_{n-1})$ be a distribution
 of pebbles on the vertices. This is the finite set of distributions reachable from $a$ by one
 $(k+1:k)$-pebbling move on $G$: for adjacent vertices $i$ and $j$ with $a_i \ge k + 1$, remove

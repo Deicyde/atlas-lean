@@ -1,6 +1,6 @@
 # Curvature expression of a covariant derivative on extensions
 
-**Curvature expression of a covariant derivative on extensions.** Let $\nabla$ be a covariant
+Let $\nabla$ be a covariant
 derivative on a vector bundle $V$ over a manifold $M$, let $x \in M$, let $u, v \in T_x M$ and let
 $\sigma \in V_x$. Let $X$ and $Y$ be the vector fields on $M$ whose coordinates in the preferred
 local trivialization of $TM$ at $x$ are constant, equal to those of $u$ and $v$, on the base set

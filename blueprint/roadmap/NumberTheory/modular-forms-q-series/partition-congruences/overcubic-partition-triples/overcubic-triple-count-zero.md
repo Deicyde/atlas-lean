@@ -1,6 +1,6 @@
 # Overcubic partition triples of $0$
 
-**Overcubic partition triples of $0$.** The number $\mathrm{bt}(0)$ of overcubic partition
+The number $\mathrm{bt}(0)$ of overcubic partition
 triples of $0$ equals $1$.
 
 ## Sources

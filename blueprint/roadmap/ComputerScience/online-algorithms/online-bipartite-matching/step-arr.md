@@ -1,6 +1,6 @@
 # Greedy step on an array
 
-**Greedy step on an array.** In a bipartite graph with left vertices $0, \dots, a - 1$ and right
+In a bipartite graph with left vertices $0, \dots, a - 1$ and right
 vertices $0, \dots, b - 1$, take an array whose entry $k$ holds the partner of the right vertex $k$,
 a missing entry meaning no partner. On the arrival of a right vertex $j$, entry $j$ is set to the
 first left neighbour of $j$, in the order $0, \dots, a - 1$, that is free, that is, the partner of

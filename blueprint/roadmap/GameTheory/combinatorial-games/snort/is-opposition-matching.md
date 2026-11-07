@@ -1,6 +1,6 @@
 # Opposition matchings
 
-**Opposition matchings.** Let $K$ be a graph. A subgraph $M$ of $K$ is an opposition matching
+Let $K$ be a graph. A subgraph $M$ of $K$ is an opposition matching
 of $K$ if it is a perfect matching of $K$ and for any two distinct edges $ab$ and $cd$ of $M$,
 $ac \in E(K) \iff bd \in E(K)$ and $ad \in E(K) \iff bc \in E(K)$.
 

@@ -1,6 +1,6 @@
 # The orbit lcms $L(2)$ and $L(3)$
 
-**The orbit lcms $L(2)$ and $L(3)$.** Let $P$ and $Q \ne 0$ be integers, write $a = P$ and
+Let $P$ and $Q \ne 0$ be integers, write $a = P$ and
 $b = -Q$, and let $U$ be the Lucas sequence given by $U_0 = 0$, $U_1 = 1$ and
 $U_{k+2} = P U_{k+1} - Q U_k$. Let $\pi_U(m)$ be the period of $U$ modulo $m$ and $\pi_U^i$ its
 $i$-th iterate, with $\pi_U^0(m) = m$. Say that $L(m)$ exists if the period orbit of $m$ closes at

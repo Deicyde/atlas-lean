@@ -1,6 +1,6 @@
 # Eilenberg's theorem on compact convex absolute retracts
 
-**Eilenberg's theorem on compact convex absolute retracts.** (a) Every nonempty compact
+(a) Every nonempty compact
 convex subset of a complete metrizable locally convex topological vector space over
 $\mathbb{R}$ is an absolute retract. (b) Every nonempty compact subset of a pseudometric
 space that is convex in the sense of Wilson is an absolute retract.

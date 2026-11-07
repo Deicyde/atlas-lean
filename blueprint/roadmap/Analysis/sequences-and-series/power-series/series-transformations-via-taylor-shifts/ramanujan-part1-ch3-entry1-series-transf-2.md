@@ -1,6 +1,6 @@
 # Ramanujan's series transformation (Chapter 3, Entry 1)
 
-**Ramanujan's series transformation (Chapter 3, Entry 1).** Let $R_1 > 1$, let
+Let $R_1 > 1$, let
 $f : \mathbb{C} \to \mathbb{C}$ be analytic on the open disc $|z| < R_1$, and let
 $Q_0, Q_1, Q_2, \ldots$ be complex numbers such that, for some $R_2 > 0$, the power series
 $\sum_n Q_n z^n$ converges absolutely for every complex $z$ with $|z| < R_2$. Suppose that the

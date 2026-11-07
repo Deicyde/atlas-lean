@@ -1,6 +1,6 @@
 # Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/\sqrt{1-x}$
 
-**Zurita's antiderivative of $x^{-n-1/2}\arcsin(\sqrt{x})/\sqrt{1-x}$.** Let $n \ge 1$, let
+Let $n \ge 1$, let
 $d_n$ be Zurita's constant and let $M_{n-1}$ and $N_{n-2}$ be Zurita's polynomials (with
 $N_{-1} = 0$). For every real $x$ with $0 < x < 1$, the function
 

@@ -1,6 +1,6 @@
 # Regular languages are accepted by two-way nondeterministic automata
 
-**Regular languages are accepted by two-way nondeterministic automata.** For every
+For every
 regular language $L$ over an alphabet, there is a nondeterministic two-way automaton with
 finitely many states that accepts exactly the words of $L$.
 

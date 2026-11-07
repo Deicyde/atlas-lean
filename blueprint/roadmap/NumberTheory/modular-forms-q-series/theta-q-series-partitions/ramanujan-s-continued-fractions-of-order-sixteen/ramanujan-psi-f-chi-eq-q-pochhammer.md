@@ -1,6 +1,6 @@
 # Product forms of Ramanujan's theta functions $\psi$, $f$ and $\chi$
 
-**Product forms of Ramanujan's theta functions $\psi$, $f$ and $\chi$.** Write
+Write
 $(a; q)_\infty = \prod_{n \ge 0} (1 - a q^n)$ and $f_k = (q^k; q^k)_\infty$, and let
 $f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's general theta
 function. For every complex number $q$ with $|q| < 1$,

@@ -1,6 +1,6 @@
 # P&R Helper moves decrease the coordinate sum
 
-**P&R Helper moves decrease the coordinate sum.** For all triples $(x, y, z)$ and
+For all triples $(x, y, z)$ and
 $(x', y', z')$ of natural numbers, if $(x', y', z')$ is an option of $(x, y, z)$ in the P&R Helper
 game, then $x' + y' + z' < x + y + z$.
 

@@ -1,6 +1,6 @@
 # Sums of minimal excludants over overpartitions
 
-**Sums of minimal excludants over overpartitions.** For natural numbers $r$ and $n$,
+For natural numbers $r$ and $n$,
 $\sigma_r\overline{\mathrm{mex}}(n)$ is the sum, over all overpartitions $\pi$ of $n$, of
 $\overline{\mathrm{mex}}_r(\pi)$, the least positive integer occurring fewer than $r$ times
 among the non-overlined parts of $\pi$; for $r = 0$ the value $\overline{\mathrm{mex}}_0(\pi)$

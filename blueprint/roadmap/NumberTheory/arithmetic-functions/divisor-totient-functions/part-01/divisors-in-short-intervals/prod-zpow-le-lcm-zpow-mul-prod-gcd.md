@@ -1,6 +1,6 @@
 # Cohen's lcm–gcd inequality
 
-**Cohen's lcm–gcd inequality.** Let $k$ be a natural number, let $d_1, \dots, d_k$ be
+Let $k$ be a natural number, let $d_1, \dots, d_k$ be
 positive integers and let $t$ be an integer. Then, as an inequality of rational numbers,
 
 $$\prod_{i=1}^{k} d_i^{\,t} \le \operatorname{lcm}(d_1, \dots, d_k)^{t(t+1)/2}

@@ -1,6 +1,6 @@
 # The $2 \times 2$ Toeplitz–Hessenberg determinant
 
-**The $2 \times 2$ Toeplitz–Hessenberg determinant.** For every commutative ring $R$ and every
+For every commutative ring $R$ and every
 sequence $a_0, a_1, a_2, \dots$ in $R$, the Toeplitz–Hessenberg determinant of size $2$ built
 from $a$ is $\det A_2 = a_1^2 - a_0 a_2$.
 

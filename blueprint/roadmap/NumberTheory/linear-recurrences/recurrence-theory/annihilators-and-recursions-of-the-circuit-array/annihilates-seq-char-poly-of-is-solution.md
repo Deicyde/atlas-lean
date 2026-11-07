@@ -1,6 +1,6 @@
 # The characteristic polynomial annihilates the solutions of its recurrence
 
-**The characteristic polynomial annihilates the solutions of its recurrence.** Let $K$ be a
+Let $K$ be a
 field, $d \ge 0$ and $a_0, \dots, a_{d-1} \in K$. If a sequence $G \colon \mathbb{N} \to K$
 satisfies $G_{n+d} = \sum_{i=0}^{d-1} a_i G_{n+i}$ for every $n \ge 0$, then the characteristic
 polynomial $X^d - \sum_{i=0}^{d-1} a_i X^i$ of this recurrence annihilates $G$.

@@ -1,6 +1,6 @@
 # Wieferich primes to base $a$ via multiplicative orders
 
-**Wieferich primes to base $a$ via multiplicative orders.** Let $p$ be a prime and $a$ a
+Let $p$ be a prime and $a$ a
 natural number not divisible by $p$. Then $a^{p-1} \equiv 1 \pmod{p^2}$, that is, $p$ is a
 Wieferich prime to base $a$, if and only if the multiplicative order of $a$ modulo $p^2$ equals
 the multiplicative order of $a$ modulo $p$.

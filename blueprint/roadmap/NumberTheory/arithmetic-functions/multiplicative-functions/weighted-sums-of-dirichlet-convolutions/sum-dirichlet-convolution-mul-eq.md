@@ -1,6 +1,6 @@
 # Sums of a Dirichlet convolution over multiples of $r$
 
-**Sums of a Dirichlet convolution over multiples of $r$.** Let $u$ and $v$ be completely
+Let $u$ and $v$ be completely
 multiplicative arithmetic functions with complex values, let $u * v$ be their Dirichlet
 convolution, let $\mu$ be the Möbius function, and for real $y$ put
 $D(y) = \sum_{1 \le j \le y} (u * v)(j)$. Then for every natural number $r$ and every real $x$,

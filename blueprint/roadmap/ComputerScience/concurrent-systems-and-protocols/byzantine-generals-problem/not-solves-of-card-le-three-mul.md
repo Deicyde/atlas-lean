@@ -1,6 +1,6 @@
 # No protocol for $n$ generals tolerates $m$ traitors when $3 \le n \le 3m$
 
-**No protocol for $n$ generals tolerates $m$ traitors when $3 \le n \le 3m$.** Suppose there
+Suppose there
 are at least two possible orders and the set of generals is finite with $n$ elements, where
 $3 \le n \le 3m$. Then for every oral-message protocol, every commander $c$ and every number of
 rounds $T$, the protocol does not solve the Byzantine generals problem with commander $c$ and at

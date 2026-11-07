@@ -1,6 +1,6 @@
 # Admissible lower parameters
 
-**Admissible lower parameters.** A finite multiset $B$ of complex numbers is admissible as
+A finite multiset $B$ of complex numbers is admissible as
 lower parameters if no element of $B$ is $0$ or a negative integer, that is, $-k \notin B$ for
 every natural number $k$.
 

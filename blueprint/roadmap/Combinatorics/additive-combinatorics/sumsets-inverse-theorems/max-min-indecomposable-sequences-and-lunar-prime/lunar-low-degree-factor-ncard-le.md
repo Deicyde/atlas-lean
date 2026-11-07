@@ -1,6 +1,6 @@
 # Decomposable lunar numbers with a low-degree factor
 
-**Decomposable lunar numbers with a low-degree factor.** Let $b \ge 2$ and $n$ be natural
+Let $b \ge 2$ and $n$ be natural
 numbers and let $d > 0$ and $v > 0$ be reals. Count the lunar numbers $h$ of base $b$ and degree at
 most $n$ that lie in $\Sigma_b^n \setminus \mathcal{H}_b^n(d)$ (decomposable but not $d$-Hoeffding
 extremal) and can be written as $h = f \otimes g$, with $\otimes$ the max-min product, where $f$

@@ -1,6 +1,6 @@
 # The composite machine computes the composite function in time
 
-**The composite machine computes the composite function in time.** Let $M_1$ compute
+Let $M_1$ compute
 $f : \alpha \to \beta$ in polynomial time from the encoding $e_\alpha$ to $e_\beta$, and let $M_2$
 compute $g : \beta \to \gamma$ in polynomial time from $e_\beta$ to $e_\gamma$. For every
 $a \in \alpha$, let $n$ be the length of $e_\alpha(a)$ and $T$ the composite time bound. Started on

@@ -1,6 +1,6 @@
 # Block averages of Shakov's sequence
 
-**Block averages of Shakov's sequence.** Let $s$ be Shakov's $2$-regular sequence.
+Let $s$ be Shakov's $2$-regular sequence.
 For every natural number $n$,
 
 $$

@@ -1,6 +1,6 @@
 # The Zerroukhat–Khaldi sum $U(m, k)$
 
-**The Zerroukhat–Khaldi sum $U(m, k)$.** For natural numbers $m$ and $k$, define the rational
+For natural numbers $m$ and $k$, define the rational
 number
 
 $$U(m, k) = \sum_{j=0}^{m} (-1)^{k+j+m} \frac{(k+j-1)!}{2^{k+j-1}} S(m, j),$$

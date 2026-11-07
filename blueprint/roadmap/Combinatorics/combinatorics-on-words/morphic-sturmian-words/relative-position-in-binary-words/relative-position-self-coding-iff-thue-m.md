@@ -1,6 +1,6 @@
 # Characterization of the Thue–Morse word by its relative positions
 
-**Characterization of the Thue–Morse word by its relative positions.** Let
+Let
 $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over $\{a, b\}$ that starts with $a$ and in
 which both letters occur infinitely often, and let $r$ be its relative position function. Then
 $r(n) = 1$ when $\ell_{n-1} = a$ and $r(n) = -1$ when $\ell_{n-1} = b$, for all $n \ge 1$, if and

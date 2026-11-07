@@ -1,6 +1,6 @@
 # Statistic encodings with a unique parking function
 
-**Statistic encodings with a unique parking function.** The statistic encoding of a parking
+The statistic encoding of a parking
 function $(a_1, \dots, a_n)$ is the word $w_1 \cdots w_{n-1}$ over $\{A, D, T\}$ with $w_i = A$ if
 $a_i < a_{i+1}$, $w_i = D$ if $a_i > a_{i+1}$ and $w_i = T$ if $a_i = a_{i+1}$. For every
 $n \in \mathbb{N}$, a word over $\{A, D, T\}$ with one letter for each $1 \le i \le n - 1$ is the

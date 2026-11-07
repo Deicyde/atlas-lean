@@ -1,6 +1,6 @@
 # Constant coefficient of a max-min product
 
-**Constant coefficient of a max-min product.** For all sequences
+For all sequences
 $g, h \colon \mathbb{N} \to \mathbb{N}$, the max-min product satisfies
 $(g \otimes h)_0 = \min(g_0, h_0)$.
 

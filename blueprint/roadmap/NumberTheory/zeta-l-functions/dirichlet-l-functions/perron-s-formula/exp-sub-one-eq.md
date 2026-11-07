@@ -1,6 +1,6 @@
 # Integral formula for $e^w - 1$
 
-**Integral formula for $e^w - 1$.** For every complex number $w$,
+For every complex number $w$,
 
 $$e^w - 1 = w \int_0^1 e^{tw}\,dt,$$
 

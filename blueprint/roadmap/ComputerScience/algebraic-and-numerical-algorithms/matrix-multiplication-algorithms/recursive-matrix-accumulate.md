@@ -1,6 +1,6 @@
 # Recursive matrix multiply-accumulate
 
-**Recursive matrix multiply-accumulate.** Let $\alpha$ be a type with an addition and a
+Let $\alpha$ be a type with an addition and a
 multiplication, let $k$ be a natural number and $n = 2^k$, and let $A$, $B$, $C$ be $n \times n$
 matrices over $\alpha$, stored as vectors of rows. The procedure adds the product of $A$ and $B$
 to the accumulator $C$ by the eight-call recursion of CLRS. When $n = 1$, writing $a$, $b$, $c$

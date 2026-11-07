@@ -1,6 +1,6 @@
 # The Addition-Multiplication Lemma for annihilators
 
-**The Addition-Multiplication Lemma for annihilators.** Let $E$ be the translation operator
+Let $E$ be the translation operator
 $E(G_s) = G_{s+1}$ on sequences. (i) Let $K$ be a field, $I$ a finite index set, and for each
 $i \in I$ let $A_i \in K[X]$, $G_i \colon \mathbb{N} \to K$ and $c_i \in K$. If $A_i(E)$
 annihilates $G_i$ for every $i \in I$, then $\prod_{i \in I} A_i(E)$ annihilates the sequence

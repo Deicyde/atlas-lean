@@ -1,6 +1,6 @@
 # TRAVELING SALESPERSON (SYMMETRIC) is NP-complete
 
-**TRAVELING SALESPERSON (SYMMETRIC) is NP-complete.** The symmetric traveling salesperson
+The symmetric traveling salesperson
 decision problem belongs to NP, and every decision problem in NP reduces to it by a
 polynomial-time many-one reduction.
 

@@ -1,6 +1,6 @@
 # Church–Bicknell convolution over the reals
 
-**Church–Bicknell convolution over the reals.** For every natural number $n$,
+For every natural number $n$,
 
 $$\sum_{k=0}^{n} \binom{n}{k} F_k F_{n-k} = \frac{2^n L_n - 2}{5}$$
 

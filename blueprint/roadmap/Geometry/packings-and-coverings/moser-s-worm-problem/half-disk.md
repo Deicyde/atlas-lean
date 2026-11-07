@@ -1,6 +1,6 @@
 # Disk of radius one half
 
-**Disk of radius one half.** The closed disk $\{z \in \mathbb{C} : |z| \le 1/2\}$ of
+The closed disk $\{z \in \mathbb{C} : |z| \le 1/2\}$ of
 radius $1/2$ centred at $0$.
 
 ## Sources

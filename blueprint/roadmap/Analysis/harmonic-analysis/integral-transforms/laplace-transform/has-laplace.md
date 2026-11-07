@@ -1,6 +1,6 @@
 # Laplace transform with a given value
 
-**Laplace transform with a given value.** Let $E$ be a complex normed space,
+Let $E$ be a complex normed space,
 $f : \mathbb{R} \to E$, $s \in \mathbb{C}$ and $v \in E$. Then $f$ has Laplace transform $v$ at
 $s$ when the Laplace transform of $f$ converges at $s$, that is, $t \mapsto e^{-st} f(t)$ is
 integrable on $(0, \infty)$, and the Bochner integral $\int_{(0, \infty)} e^{-st} f(t)\,dt$

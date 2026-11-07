@@ -1,6 +1,6 @@
 # Sublanguage of a finite set of formulas
 
-**Sublanguage of a finite set of formulas.** For a finite set $F$ of formulas of a
+For a finite set $F$ of formulas of a
 first-order language $L$ with free variables in $\mathbb{N}$, the sublanguage of $L$ on the
 symbols occurring in $F$ has as its $n$-ary function symbols the $n$-ary function symbols of
 $L$ that occur in some formula of $F$, and as its $n$-ary relation symbols the $n$-ary

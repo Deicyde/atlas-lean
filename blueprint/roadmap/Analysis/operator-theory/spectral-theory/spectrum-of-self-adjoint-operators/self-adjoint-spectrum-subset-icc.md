@@ -1,6 +1,6 @@
 # Spectrum bounds over all vectors
 
-**Spectrum bounds over all vectors.** Let $T$ be a self-adjoint bounded linear operator on a
+Let $T$ be a self-adjoint bounded linear operator on a
 nonzero Hilbert space $H$ over $\mathbb{R}$ or $\mathbb{C}$, with Rayleigh quotient
 $R_T(x) = \operatorname{Re}\langle Tx, x\rangle / \|x\|^2$ for $x \ne 0$ and $R_T(0) = 0$. Then
 every $\mu$ in the spectrum of $T$ satisfies

@@ -1,6 +1,6 @@
 # The solvability probability is at most one
 
-**The solvability probability is at most one.** For every simple graph $G$ on a finite
+For every simple graph $G$ on a finite
 vertex set with natural-number edge costs $w$ and every $t \ge 0$, the probability that a
 uniformly random configuration of $t$ pebbles on $G$ is solvable is at most $1$.
 

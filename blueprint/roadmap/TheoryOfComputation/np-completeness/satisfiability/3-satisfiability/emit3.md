@@ -1,6 +1,6 @@
 # The SAT-to-3SAT emitter
 
-**The SAT-to-3SAT emitter.** The emitter whose stacks, stack alphabets, labels, program, start
+The emitter whose stacks, stack alphabets, labels, program, start
 label and exit label are those of the 3SAT emitter machine, with that machine's token stack as its
 token stack and its bit-valued output stack as its output stack. Its output on a CNF formula
 $\varphi$ is the binary encoding of the SAT-to-3SAT translation of $\varphi$, its output on a bit

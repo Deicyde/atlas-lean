@@ -1,3 +1,3 @@
 # Nonnegativity of the Hilbert kernel
 
-**Nonnegativity of the Hilbert kernel.** The Hilbert kernel is nonnegative.
+The Hilbert kernel is nonnegative.

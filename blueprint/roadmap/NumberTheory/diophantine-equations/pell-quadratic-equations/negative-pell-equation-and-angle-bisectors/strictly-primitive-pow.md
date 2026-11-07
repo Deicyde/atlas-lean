@@ -1,6 +1,6 @@
 # Powers of strictly primitive solutions
 
-**Powers of strictly primitive solutions.** Let $d > 1$ be a square-free integer, $p$ an odd
+Let $d > 1$ be a square-free integer, $p$ an odd
 prime, and $m, n > 0$ natural numbers. Write elements of $\mathbb{Z}[\sqrt{d}]$ as $u + v\sqrt{d}$
 with integers $u, v$, and let $N(u + v\sqrt{d}) = u^2 - d v^2$ be the norm. If
 $a = u + v\sqrt{d}$ satisfies $|N(a)| = p^m$ with $u$ and $d v$ coprime, then

@@ -1,6 +1,6 @@
 # Good rationals for a Gibonacci generating function
 
-**Good rationals for a Gibonacci generating function.** Let $a$ and $b$ be integers and let
+Let $a$ and $b$ be integers and let
 $G^{(a,b)}(x) = \frac{(b - a)x + a}{1 - x - x^2}$ be the generating function of the Gibonacci
 sequence with initial terms $a$ and $b$. A rational number $x$ is good for $(a, b)$ when
 $1 - x - x^2 \ne 0$ and $G^{(a,b)}(x)$ is an integer.

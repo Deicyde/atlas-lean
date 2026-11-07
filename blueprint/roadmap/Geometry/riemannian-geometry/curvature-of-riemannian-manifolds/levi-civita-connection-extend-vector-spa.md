@@ -1,6 +1,6 @@
 # The Levi-Civita connection of Euclidean space kills constant vector fields
 
-**The Levi-Civita connection of Euclidean space kills constant vector fields.** Let $F$ be a
+Let $F$ be a
 finite-dimensional real inner product space with the Riemannian metric given by its inner product
 on every tangent space, and let $\nabla$ be its Levi-Civita connection. For every point $x \in F$
 and tangent vector $w \in T_xF$, let $W$ be the extension of $w$ to a vector field on $F$ (built

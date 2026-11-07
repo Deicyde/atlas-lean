@@ -1,6 +1,6 @@
 # Substitution automaton
 
-**Substitution automaton.** Let $\eta$ map each letter of an alphabet $A$ to a finite word
+Let $\eta$ map each letter of an alphabet $A$ to a finite word
 over $A$. The substitution automaton $\mathcal{A}_{\eta,\cdot}$ of $\eta$ is the deterministic
 automaton with output whose states are the letters of $A$ (the alphabet need not be finite):
 reading a digit $i \in \mathbb{N}$ in the state $b$ moves to the letter $\eta(b)_i$ of $\eta(b)$

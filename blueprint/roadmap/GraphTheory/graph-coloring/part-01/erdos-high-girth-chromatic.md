@@ -1,6 +1,6 @@
 # Erdős's theorem on graphs of high girth and high chromatic number
 
-**Erdős's theorem on graphs of high girth and high chromatic number.** For all natural numbers
+For all natural numbers
 $k$ and $g$ with $g \ge 3$, there is a finite simple graph $G$ that has a cycle, whose girth
 (the length of a shortest cycle) is at least $g$, and whose chromatic number is at least $k$.
 

@@ -1,6 +1,6 @@
 # Singular series for twin primes in $F(T)$
 
-**Singular series for twin primes in $F[T]$.** Let $F$ be a finite field with $q$ elements and
+Let $F$ be a finite field with $q$ elements and
 let $h \in F[T]$. The Hardy–Littlewood constant of the prime pair $\{f, f + h\}$ is the infinite
 product over all primes $P$ of $F[T]$ (the monic irreducible polynomials)
 

@@ -1,6 +1,6 @@
 # Odd perfect polynomials over $\mathbb{F}_2$ are squares (Canaday)
 
-**Odd perfect polynomials over $\mathbb{F}_2$ are squares (Canaday).** Let $A$ be a polynomial
+Let $A$ be a polynomial
 over $\mathbb{F}_2$ that is coprime to both $X$ and $X + 1$ (that is, odd: $A$ has no linear
 factor) and that equals the sum of its monic divisors (that is, perfect). Then $A$ is a square:
 $A = B^2$ for some polynomial $B$ over $\mathbb{F}_2$.

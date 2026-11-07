@@ -1,6 +1,6 @@
 # Four forms of even numbers with 2-complexity $m + 2$
 
-**Four forms of even numbers with 2-complexity $m + 2$.** Write $\|n\|_2$ for the
+Write $\|n\|_2$ for the
 2-complexity of $n$. Let $m \ge 3$ and let $n$ be an even natural number with
 $2^m < n \le 2^{m+1}$. Suppose that $n$ has one of the following forms, where all exponents
 are natural numbers:

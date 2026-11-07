@@ -1,6 +1,6 @@
 # Feasible strip packings
 
-**Feasible strip packings.** A strip packing instance $(R, W, H)$ with
+A strip packing instance $(R, W, H)$ with
 $R = ((w_1, h_1), \dots, (w_n, h_n))$ is feasible when there are natural numbers
 $x_1, y_1, \dots, x_n, y_n$ such that $x_j + w_j \le W$ and $y_j + h_j \le H$ for every
 $1 \le j \le n$, and for all $1 \le a < b \le n$ at least one of $x_a + w_a \le x_b$,

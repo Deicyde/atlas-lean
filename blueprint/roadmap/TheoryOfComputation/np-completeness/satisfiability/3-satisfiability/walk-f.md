@@ -1,6 +1,6 @@
 # Output clauses of a walked list of literals
 
-**Output clauses of a walked list of literals.** For a list $L$ of literals of a clause,
+For a list $L$ of literals of a clause,
 Booleans $f$ and $g$, and $z \in \mathbb{N}$, $\mathrm{walkF}(L, f, g, z)$ is the list of output
 clauses of the literals of $L$, in reading order, when $L$ is walked from its last literal with
 counter $z$; $f$ tells whether the last literal of $L$ is the first walked in its clause, and $g$

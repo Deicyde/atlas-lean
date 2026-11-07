@@ -1,6 +1,6 @@
 # At most one hell-couple in a stable matching
 
-**At most one hell-couple in a stable matching.** Let $P$ be a preference profile of $n$
+Let $P$ be a preference profile of $n$
 men and $n$ women, and let $\mu$ be a stable matching for $P$, in which man $i$ marries woman
 $\mu(i)$. Then at most one man $i$ forms a hell-couple with his wife $\mu(i)$.
 

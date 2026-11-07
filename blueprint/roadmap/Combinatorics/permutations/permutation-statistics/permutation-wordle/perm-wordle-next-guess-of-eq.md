@@ -1,6 +1,6 @@
 # Correct positions stay locked
 
-**Correct positions stay locked.** Let $S$ be a strategy, that is, a permutation $S_m$ of
+Let $S$ be a strategy, that is, a permutation $S_m$ of
 $\{0, \dots, m-1\}$ for every $m$, let $\pi$ be a permutation of $\{0, \dots, n-1\}$, and let
 $g$ be a map from $\{0, \dots, n-1\}$ to itself. If $g(i) = \pi(i)$ at a position $i$, then the
 guess that one round of permutation Wordle with strategy $S$ and secret $\pi$ produces from $g$

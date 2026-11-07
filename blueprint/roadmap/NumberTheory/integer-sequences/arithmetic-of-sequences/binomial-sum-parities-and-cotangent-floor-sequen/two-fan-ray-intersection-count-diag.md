@@ -1,6 +1,6 @@
 # Blomberg's conjecture on intersection points of two equal fans
 
-**Blomberg's conjecture on intersection points of two equal fans.** Let $n \ge 1$,
+Let $n \ge 1$,
 $P = (-1, 0)$ and $Q = (1, 0)$. From $P$ draw the $n$ closed rays at angles $\pi - 2\pi s/n$ for
 $0 \le s < n$, and from $Q$ the $n$ closed rays at angles $2\pi t/n$ for $0 \le t < n$. Then the
 number of points that are $P$, $Q$, or a point off the $x$-axis lying on a ray from $P$ and on a

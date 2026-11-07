@@ -1,6 +1,6 @@
 # Asymptotic formula for higher $a$-numbers
 
-**Asymptotic formula for higher $a$-numbers.** Let $p$ be a prime, let $d$ be a natural number
+Let $p$ be a prime, let $d$ be a natural number
 dividing $p - 1$, let $r \ge 1$, and for each natural number $n$ let $A_r(n)$ be the lattice-point
 count for the $r$-th higher $a$-number at level $n$. Let $D_r$ be the prime-to-$p$ part of the
 denominator of $d/((p - 1) r + (p + 1))$, and let

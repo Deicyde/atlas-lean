@@ -1,6 +1,6 @@
 # Products of Pythagorean triples through a cathetus
 
-**Products of Pythagorean triples through a cathetus.** Let $a$ and $b$ be positive natural
+Let $a$ and $b$ be positive natural
 numbers, and let $d_1 \in C(a)$ and $d_2 \in C(b)$, where $C(x)$ is Amato's cathetus parameter
 set. Define the rational numbers $a_1 = a^2/(2 d_1) - d_1/2$, $a_2 = a^2/(2 d_1) + d_1/2$,
 $b_1 = b^2/(2 d_2) - d_2/2$, $b_2 = b^2/(2 d_2) + d_2/2$,

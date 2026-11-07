@@ -1,6 +1,6 @@
 # $r$-accessibility for colorings of the positive integers
 
-**$r$-accessibility for colorings of the positive integers.** Let $r$ be a natural number. A set
+Let $r$ be a natural number. A set
 $D$ of natural numbers is $r$-accessible when every element of $D$ is positive, $r \ge 1$, and for
 every coloring $c$ of the positive integers with the colors $0, 1, \dots, r - 1$ and every natural
 number $k \ge 1$ there are positive integers $x_0, \dots, x_{k-1}$ that are monochromatic for $c$

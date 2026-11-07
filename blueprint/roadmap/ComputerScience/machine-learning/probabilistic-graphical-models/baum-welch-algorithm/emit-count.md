@@ -1,6 +1,6 @@
 # Expected emission counts
 
-**Expected emission counts.** Let $S$ and $O$ be finite sets, let $T$ be a natural number,
+Let $S$ and $O$ be finite sets, let $T$ be a natural number,
 and let $x_1, \dots, x_N$ be sequences $x_n = (x_{n,0}, x_{n,1}, \dots)$ of observations in $O$.
 For a valid hidden Markov model $h$ on states $S$ and observations $O$, a state $s$ and an
 observation $o$, the expected number of emissions of $o$ from $s$ is

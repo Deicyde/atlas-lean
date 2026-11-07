@@ -1,6 +1,6 @@
 # Binomial distribution of a sum of i.i.d. Bernoulli variables
 
-**Binomial distribution of a sum of i.i.d. Bernoulli variables.** Let $\mu$ be a
+Let $\mu$ be a
 probability measure on a measurable space $\Omega$, let $m \in \mathbb{N}$, let $p$ be a real
 number, and let $X_1, \dots, X_m : \Omega \to \mathbb{N}$ be measurable, mutually independent
 random variables, each a Bernoulli random variable with parameter $p$ under $\mu$. Then for

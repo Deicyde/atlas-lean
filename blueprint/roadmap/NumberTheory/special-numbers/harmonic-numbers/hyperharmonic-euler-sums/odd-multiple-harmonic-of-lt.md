@@ -1,6 +1,6 @@
 # Vanishing of odd multiple harmonic numbers of large depth
 
-**Vanishing of odd multiple harmonic numbers of large depth.** For natural numbers $k$ and
+For natural numbers $k$ and
 $n$ with $k > n$, the depth-$k$ odd harmonic number $O_n(k)$ equals $0$.
 
 ## Sources

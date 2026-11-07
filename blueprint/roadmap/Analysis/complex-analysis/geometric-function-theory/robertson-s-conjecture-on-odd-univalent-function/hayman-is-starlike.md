@@ -1,6 +1,6 @@
 # Starlike univalent functions
 
-**Starlike univalent functions.** A function $f : \mathbb{C} \to \mathbb{C}$ is starlike when it
+A function $f : \mathbb{C} \to \mathbb{C}$ is starlike when it
 belongs to the class $S$ (analytic at every point of the open unit disc
 $\mathbb{D} = \{z \in \mathbb{C} : |z| < 1\}$, injective on $\mathbb{D}$, $f(0) = 0$ and
 $f'(0) = 1$) and $\operatorname{Re}\bigl(z f'(z) / f(z)\bigr) > 0$ for every $z \in \mathbb{D}$

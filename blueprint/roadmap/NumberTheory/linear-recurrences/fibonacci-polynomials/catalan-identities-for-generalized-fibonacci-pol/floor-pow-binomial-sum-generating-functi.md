@@ -1,6 +1,6 @@
 # Generating function of the floor-exponent binomial sums
 
-**Generating function of the floor-exponent binomial sums.** Let $R$ be a commutative ring,
+Let $R$ be a commutative ring,
 $t \in R$ and $\ell \ge 1$ an integer, and for $n \ge 0$ let
 $T_\ell(n; t) = \sum_{i=0}^{n} \binom{n}{i} t^{\lfloor i/\ell \rfloor}$. Then in the ring $R[[x]]$
 of formal power series,

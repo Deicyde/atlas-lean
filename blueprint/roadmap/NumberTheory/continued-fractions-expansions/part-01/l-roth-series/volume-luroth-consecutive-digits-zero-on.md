@@ -1,6 +1,6 @@
 # Zero-one law for functions of consecutive Lüroth digits
 
-**Zero-one law for functions of consecutive Lüroth digits.** Let $m \in \mathbb{N}$, let $F$
+Let $m \in \mathbb{N}$, let $F$
 be a real-valued function on $m$-tuples of natural numbers and let $(\Psi(n))_{n \ge 0}$ be a
 real sequence. For $y \in \mathbb{R}$ put
 

@@ -1,6 +1,6 @@
 # Integral averages of all recurrences
 
-**Integral averages of all recurrences.** For integers $P$ and $Q \ne 0$ and a natural number
+For integers $P$ and $Q \ne 0$ and a natural number
 $n$, the property that $n$ has integral averages means that every integer sequence
 $(w_k)_{k \ge 0}$ with $w_{k+2} = P w_{k+1} - Q w_k$ for all $k$ satisfies
 $n \mid w_1 + \dots + w_n$; for $n > 0$ this says that the average

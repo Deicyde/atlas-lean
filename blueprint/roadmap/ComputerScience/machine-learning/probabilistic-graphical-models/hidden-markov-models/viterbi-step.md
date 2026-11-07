@@ -1,6 +1,6 @@
 # One step of the tabulated Viterbi recursion for a hidden Markov model
 
-**One step of the tabulated Viterbi recursion for a hidden Markov model.** Let $h$ be a hidden
+Let $h$ be a hidden
 Markov model with states $\{0, \dots, n - 1\}$, where $n \ge 1$, transition weights $a(s', s)$
 and emission weights $b(s, o)$ in a linearly ordered commutative semiring $R$, and let
 $x_0, x_1, \dots$ be a sequence of observations. Given a vector $v \in R^n$ and

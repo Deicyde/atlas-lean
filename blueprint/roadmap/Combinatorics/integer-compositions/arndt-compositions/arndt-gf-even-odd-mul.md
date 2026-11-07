@@ -1,6 +1,6 @@
 # Generating functions of Arndt compositions with even parts and with odd parts
 
-**Generating functions of Arndt compositions with even parts and with odd parts.** Let
+Let
 $A_E(x, y)$ and $A_O(x, y)$ be the formal power series in $x$ over $\mathbb{Z}[y]$ whose
 coefficient of $x^n y^k$ is the number of Arndt compositions of $n$ with $k$ parts, all even,
 respectively all odd. Then

@@ -1,6 +1,6 @@
 # If P = NP then the polynomial hierarchy collapses to P
 
-**If P = NP then the polynomial hierarchy collapses to P.** If the complexity classes P and NP
+If the complexity classes P and NP
 are equal, then the polynomial hierarchy PH, the union of the classes $\Sigma_k^p$ over all
 natural numbers $k$, is equal to P.
 

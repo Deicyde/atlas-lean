@@ -1,6 +1,6 @@
 # McDiarmid's inequality when the sensitivities are not all zero
 
-**McDiarmid's inequality when the sensitivities are not all zero.** Let $n \in \mathbb{N}$,
+Let $n \in \mathbb{N}$,
 let $\alpha$ be a finite nonempty set with weights $p : \alpha \to \mathbb{R}$ such that
 $p(a) \ge 0$ for all $a$ and $\sum_{a \in \alpha} p(a) = 1$, and give each $x \in \alpha^n$ the
 product weight $P(x) = \prod_{i\lt n} p(x_i)$. Let $f : \alpha^n \to \mathbb{R}$ and let

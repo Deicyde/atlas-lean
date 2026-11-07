@@ -1,6 +1,6 @@
 # First entries of the left diagonal of the multivariable circuit array
 
-**First entries of the left diagonal of the multivariable circuit array.** The multivariable
+The multivariable
 circuit array $C^M$, with values in the field of rational functions over $\mathbb{Q}$ in the
 variables $X_0, X_1, \dots$, satisfies $C^M_{0,1} = X_1$ and $C^M_{2,2} = X_2$.
 

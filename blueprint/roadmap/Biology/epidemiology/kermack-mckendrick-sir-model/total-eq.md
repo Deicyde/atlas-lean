@@ -1,4 +1,4 @@
 # Conservation of the population
 
-**Conservation of the population.** Along a solution, `S + I + R` is constant on
+Along a solution, `S + I + R` is constant on
 `[0, ∞)`.

@@ -1,6 +1,6 @@
 # J-sets in a semigroup
 
-**J-sets in a semigroup.** A set $D$ in a semigroup $S$ is a $J$-set when for every nonempty
+A set $D$ in a semigroup $S$ is a $J$-set when for every nonempty
 finite set $F$ of sequences $f : \mathbb{N} \to S$, where $\mathbb{N} = \{0, 1, 2, \dots\}$,
 there are an integer $m \ge 1$, elements $a_1, \dots, a_{m+1} \in S$ and indices
 $t_1 < \dots < t_m$ in $\mathbb{N}$ such that

@@ -1,6 +1,6 @@
 # Third iterated truncated logarithm
 
-**Third iterated truncated logarithm.** For real $x$, let
+For real $x$, let
 $\operatorname{Log} x = \max(\log x, 1)$ be the truncated logarithm, where $\log$ is the natural
 logarithm extended by $\log x = \log |x|$ for $x < 0$ and $\log 0 = 0$, and let
 $\operatorname{Log}_2 x = \operatorname{Log}(\operatorname{Log} x)$. The third iterated truncated

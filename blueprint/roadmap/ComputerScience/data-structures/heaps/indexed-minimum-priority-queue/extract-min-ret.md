@@ -1,6 +1,6 @@
 # Successful extraction from an indexed min queue
 
-**Successful extraction from an indexed min queue.** Let $q$ be an indexed min queue over a
+Let $q$ be an indexed min queue over a
 linear order $W$ with identities in $\{0, \dots, n-1\}$, and suppose that extracting the
 minimum of $q$ returns the heap entry $e = (k, u)$, with key $k \in W \cup \{\top\}$ and
 identity $u$, together with the queue $q'$. Then binary min-heap extraction on the heap of $q$

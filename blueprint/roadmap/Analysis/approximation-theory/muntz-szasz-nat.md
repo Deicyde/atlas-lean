@@ -1,6 +1,6 @@
 # Müntz–Szász theorem for integer exponents
 
-**Müntz–Szász theorem for integer exponents.** Let $\Lambda : \mathbb{N} \to \mathbb{N}$ be
+Let $\Lambda : \mathbb{N} \to \mathbb{N}$ be
 strictly increasing with $\Lambda(0) = 0$. The real linear span of the monomials
 $x \mapsto x^{\Lambda(n)}$, $n \in \mathbb{N}$, restricted to $[0, 1]$, is dense in
 $C([0, 1], \mathbb{R})$ with the uniform norm if and only if the series

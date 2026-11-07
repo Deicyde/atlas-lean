@@ -1,6 +1,6 @@
 # Ramanujan's congruence modulo 7
 
-**Ramanujan's congruence modulo 7.** For every natural number $m$, the number of partitions
+For every natural number $m$, the number of partitions
 of $7m + 5$ is divisible by $7$.
 
 ## Sources

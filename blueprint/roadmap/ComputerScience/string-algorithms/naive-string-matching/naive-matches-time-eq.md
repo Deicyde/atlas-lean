@@ -1,6 +1,6 @@
 # Exact comparison count of naive matching
 
-**Exact comparison count of naive matching.** Let $p = p_0 \cdots p_{m-1}$ be a pattern and
+Let $p = p_0 \cdots p_{m-1}$ be a pattern and
 $t = t_0 \cdots t_{n-1}$ a text. If $m \le n$, the number of symbol comparisons performed by the
 naive matcher on $p$ and $t$ is
 

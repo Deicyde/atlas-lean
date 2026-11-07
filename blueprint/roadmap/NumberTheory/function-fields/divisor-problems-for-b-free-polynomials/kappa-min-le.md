@@ -1,6 +1,6 @@
 # $\kappa_{\min}$ is a lower bound for $\kappa$
 
-**$\kappa_{\min}$ is a lower bound for $\kappa$.** Let $F$ be a field, let $\kappa$ assign a
+Let $F$ be a field, let $\kappa$ assign a
 natural number to each polynomial in $F[T]$, and let $\kappa_{\min}$ be the minimum of $\kappa(P)$
 over the monic irreducible $P \in F[T]$. Then $\kappa_{\min} \le \kappa(P)$ for every monic
 irreducible $P \in F[T]$.

@@ -1,6 +1,6 @@
 # SZ-qMZVs in the TBZ model
 
-**SZ-qMZVs in the TBZ model.** Let $k = (k_1, \dots, k_r)$ be an index of natural numbers
+Let $k = (k_1, \dots, k_r)$ be an index of natural numbers
 that is empty or has $k_1 \ge 1$. Let $V_{TBZ}(k) = \sum_w c_w\, w$ be the formal
 $\mathbb{Q}$-linear combination of TBZ words (words in the letters $\bar 1$ and $j \ge 1$; write
 $z_a$ for the one-letter word $a$) obtained by replacing each letter $k_i = 0$ by

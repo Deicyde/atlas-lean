@@ -1,6 +1,6 @@
 # Higher $a$-numbers as sums of floors and of $\delta$
 
-**Higher $a$-numbers as sums of floors and of $\delta$.** Let $p$ be a prime, let $d$ be a
+Let $p$ be a prime, let $d$ be a
 natural number dividing $p - 1$, let $r$ and $n$ be natural numbers, let $\tau = (p + 1)/d$ and
 $\gamma = ((p - 1) r + (p + 1))/d$, let $\delta$ be the rounding indicator for $p$ and $d$, and let
 $A_r(n)$ be the lattice-point count for the $r$-th higher $a$-number at level $n$. Put

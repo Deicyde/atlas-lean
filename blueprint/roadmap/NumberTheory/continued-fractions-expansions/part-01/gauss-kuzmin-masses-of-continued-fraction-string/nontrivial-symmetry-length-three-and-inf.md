@@ -1,6 +1,6 @@
 # No nontrivial symmetries in length three, infinitely many from length four
 
-**No nontrivial symmetries in length three, infinitely many from length four.** (i) No string
+(i) No string
 of three positive integers has a nontrivial symmetry. (ii) For every $n \ge 4$ there are infinitely
 many strings of $n$ positive integers that have a nontrivial symmetry.
 

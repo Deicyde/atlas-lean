@@ -1,6 +1,6 @@
 # Cells after deleting a successor
 
-**Cells after deleting a successor.** Fix a capacity $n$, let $s$ be a store assigning to each
+Fix a capacity $n$, let $s$ be a store assigning to each
 identity below $n$ either nothing or a singly linked list node, let $y$ be an identity such that
 $s(y)$ is a node, and let $s'$ be the store obtained from $s$ by deleting the successor of $y$.
 Let $c$ be the node $s(y)$ with its next pointer replaced by the next pointer of $s(m)$ if the

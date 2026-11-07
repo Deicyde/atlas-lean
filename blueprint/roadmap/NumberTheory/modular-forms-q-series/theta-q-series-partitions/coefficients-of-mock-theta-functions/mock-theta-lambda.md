@@ -1,6 +1,6 @@
 # The sixth-order mock theta function $\lambda$
 
-**The sixth-order mock theta function $\lambda$.** With
+With
 $(a; b)_n = \prod_{k=0}^{n-1} (1 - a b^k)$, the mock theta function $\lambda$ is the integer
 power series
 

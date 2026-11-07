@@ -1,6 +1,6 @@
 # Propagation of a congruence along the $(k, l)$-Göbel sequence
 
-**Propagation of a congruence along the $(k, l)$-Göbel sequence.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $k, l, r \ge 2$ be natural numbers, let $g_{k,l}$ be the $(k, l)$-Göbel sequence, and let $a, b$ be
 natural numbers with $1 \le a < p$ and $b < p$. For rational numbers $x, y$ write
 $x \equiv y \pmod{p^r}$ when $x = y$ or $\nu_p(x - y) \ge r$, where $\nu_p$ is the $p$-adic

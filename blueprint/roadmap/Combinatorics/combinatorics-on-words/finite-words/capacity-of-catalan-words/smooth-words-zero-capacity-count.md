@@ -1,6 +1,6 @@
 # Number of smooth words of capacity zero
 
-**Number of smooth words of capacity zero.** Let $r(n, i; q)$ be the capacity distribution of
+Let $r(n, i; q)$ be the capacity distribution of
 the smooth words of length $n$ ending in $i$ and $r(n; q)$ that of all smooth words of length $n$,
 so that $r(n, i; 0)$ and $r(n; 0)$ count the smooth words of capacity $0$. Then $r(1, 1; 0) = 1$
 and $r(n, 1; 0) = 2^{n-2}$ for every $n \ge 2$; moreover $r(1; 0) = 1$, $r(2; 0) = 2$ and

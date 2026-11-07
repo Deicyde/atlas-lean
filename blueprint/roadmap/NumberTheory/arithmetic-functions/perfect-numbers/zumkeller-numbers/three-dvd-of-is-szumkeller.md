@@ -1,6 +1,6 @@
 # Even s-Zumkeller numbers are divisible by 3
 
-**Even s-Zumkeller numbers are divisible by 3.** If $n$ is an even s-Zumkeller number, then
+If $n$ is an even s-Zumkeller number, then
 $3$ divides $n$.
 
 ## Sources

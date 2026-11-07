@@ -1,6 +1,6 @@
 # Every sequence satisfies the zero polynomial
 
-**Every sequence satisfies the zero polynomial.** Every real sequence $(a_n)_{n \ge 0}$
+Every real sequence $(a_n)_{n \ge 0}$
 satisfies the zero polynomial.
 
 ## Sources

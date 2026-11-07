@@ -1,6 +1,6 @@
 # Bound for a truncated sum of reciprocal sines
 
-**Bound for a truncated sum of reciprocal sines.** Let $p$ be a prime, let $a$ be an integer
+Let $p$ be a prime, let $a$ be an integer
 not divisible by $p$, and let $B$ be an integer with $\sqrt{p/\pi} < B < p/2$. Then
 
 $$

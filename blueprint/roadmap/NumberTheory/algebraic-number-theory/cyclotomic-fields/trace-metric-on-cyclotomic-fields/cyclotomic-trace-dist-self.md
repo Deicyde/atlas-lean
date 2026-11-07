@@ -1,6 +1,6 @@
 # Trace distance from a point to itself
 
-**Trace distance from a point to itself.** Let $p$ be a positive integer and let $K$ be a
+Let $p$ be a positive integer and let $K$ be a
 $p$-th cyclotomic extension of $\mathbb{Q}$. For every $\alpha \in K$, the trace distance satisfies
 $d(\alpha, \alpha) = 0$.
 

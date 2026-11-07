@@ -1,6 +1,6 @@
 # Properties of the rank of appearance in a Lucas sequence
 
-**Properties of the rank of appearance in a Lucas sequence.** Let $U = U(P, Q)$ be the Lucas
+Let $U = U(P, Q)$ be the Lucas
 sequence with integer parameters $P$ and $Q \ne 0$, let $D = P^2 - 4Q$, let $\rho(m)$ be the rank
 of appearance of $m$ in $U$, and write $(a/n)$ for the Jacobi symbol. Let $r$ and $s$ range over
 positive integers and $p$ over primes. Then:

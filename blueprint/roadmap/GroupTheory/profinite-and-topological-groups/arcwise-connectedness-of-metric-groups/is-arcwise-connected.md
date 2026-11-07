@@ -1,6 +1,6 @@
 # Arcwise connected space
 
-**Arcwise connected space.** A topological space $G$ is arcwise connected when for any two
+A topological space $G$ is arcwise connected when for any two
 points $x, y \in G$ there is a continuous map $\gamma \colon \mathbb{R} \to G$ with
 $\gamma(0) = x$ and $\gamma(1) = y$.
 

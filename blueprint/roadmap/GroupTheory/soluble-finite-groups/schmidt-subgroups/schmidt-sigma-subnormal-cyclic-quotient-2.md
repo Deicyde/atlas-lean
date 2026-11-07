@@ -1,6 +1,6 @@
 # Finite groups with $\sigma$-subnormal Schmidt subgroups are $\sigma$-nilpotent-by-cyclic
 
-**Finite groups with $\sigma$-subnormal Schmidt subgroups are $\sigma$-nilpotent-by-cyclic.** Let
+Let
 $\sigma$ be a partition of the set of all primes into nonempty pairwise disjoint blocks, and let $G$
 be a finite group in which every Schmidt subgroup is $\sigma$-subnormal. Then $G$ has a normal
 $\sigma$-nilpotent subgroup $N$ such that $G / N$ is cyclic: there is $g \in G$ such that every

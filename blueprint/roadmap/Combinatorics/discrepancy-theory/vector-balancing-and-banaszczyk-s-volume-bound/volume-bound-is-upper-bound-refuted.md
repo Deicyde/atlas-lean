@@ -1,6 +1,6 @@
 # Banaszczyk's volume bound is not an upper bound for vector balancing
 
-**Banaszczyk's volume bound is not an upper bound for vector balancing.** There are no real
+There are no real
 constants $C$ and $c$ such that for every natural number $d \ge 2$, all norms $X$ and $Y$ on
 $\mathbb{R}^d$, every natural number $n$ and all vectors $v_1, \dots, v_n \in \mathbb{R}^d$ with
 $X(v_i) \le 1$ for every $i$, there are signs $\varepsilon_1, \dots, \varepsilon_n \in \{1, -1\}$

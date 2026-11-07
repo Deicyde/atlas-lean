@@ -1,6 +1,6 @@
 # Kimberling's conjecture on the anti-Tribonacci sequence
 
-**Kimberling's conjecture on the anti-Tribonacci sequence.** Let $A_1 = 1$, $B_1 = 2$,
+Let $A_1 = 1$, $B_1 = 2$,
 $C_1 = 3$ and $D_1 = 6$, and for $n \ge 1$ let $A_{n+1} < B_{n+1} < C_{n+1}$ be the three
 smallest positive integers that are not among $A_i, B_i, C_i, D_i$ for $i \le n$, and
 $D_{n+1} = A_{n+1} + B_{n+1} + C_{n+1}$ (the $D_n$ are the anti-Tribonacci numbers). For every

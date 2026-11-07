@@ -1,6 +1,6 @@
 # A singleton multiset has one $k$-vn-arrangement
 
-**A singleton multiset has one $k$-vn-arrangement.** For every natural number $k$ and every
+For every natural number $k$ and every
 integer $a$, the one-element multiset $\{a\}$ has exactly one $k$-vn-arrangement.
 
 ## Sources

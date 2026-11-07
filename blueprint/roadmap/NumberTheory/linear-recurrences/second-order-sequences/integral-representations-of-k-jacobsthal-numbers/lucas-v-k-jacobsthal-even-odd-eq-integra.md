@@ -1,6 +1,6 @@
 # Integral representation of even- and odd-indexed k-Jacobsthal–Lucas numbers
 
-**Integral representation of even- and odd-indexed k-Jacobsthal–Lucas numbers.** Let $k$ and
+Let $k$ and
 $n$ be natural numbers, let $j_{k,n} = V_n(k, -2)$ be the $k$-Jacobsthal–Lucas numbers and let
 $\Delta_k = \sqrt{k^2 + 8}$. Then
 

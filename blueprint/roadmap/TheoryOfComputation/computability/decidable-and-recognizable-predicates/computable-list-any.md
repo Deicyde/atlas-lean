@@ -1,6 +1,6 @@
 # Searching a computable list with a computable test is computable
 
-**Searching a computable list with a computable test is computable.** Let $\gamma$ and
+Let $\gamma$ and
 $\beta$ be types with primitive recursive encodings into $\mathbb{N}$, let $l$ be a computable
 function sending each $x \in \gamma$ to a finite list $l(x)$ of elements of $\beta$, and let $g$
 be a computable Boolean-valued function of $x \in \gamma$ and $b \in \beta$. Then the

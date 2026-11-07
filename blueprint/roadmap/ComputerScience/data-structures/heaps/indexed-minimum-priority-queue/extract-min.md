@@ -1,6 +1,6 @@
 # Extract-min in an indexed minimum queue
 
-**Extract-min in an indexed minimum queue.** Costs are counted as five event counts:
+Costs are counted as five event counts:
 comparisons, swaps, reads of the position vector, writes to the position vector, and entry
 appends, pops or replacements. Given an indexed minimum queue $q$, extract-min fails (returns
 nothing) exactly when the heap of $q$ is empty, at zero cost. Otherwise let $(k, v)$ be the root

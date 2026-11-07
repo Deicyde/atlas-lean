@@ -1,6 +1,6 @@
 # Faulhaber-type summation formula for Bernoulli polynomials
 
-**Faulhaber-type summation formula for Bernoulli polynomials.** Let $B_i$ denote the
+Let $B_i$ denote the
 $i$-th Bernoulli number, with $B_1 = -1/2$, and let
 $B_j(X) = \sum_{i=0}^{j} \binom{j}{i} B_i X^{j-i} \in \mathbb{Q}[X]$ be the $j$-th Bernoulli
 polynomial. For all natural numbers $k$ and $n$, the following identity holds in $\mathbb{Q}[X]$:

@@ -1,6 +1,6 @@
 # Explicit lower bound for the Dickman function
 
-**Explicit lower bound for the Dickman function.** Let $\rho$ be a Dickman–de Bruijn
+Let $\rho$ be a Dickman–de Bruijn
 function. Then $\rho(x) \ge x^{-1.42 x}$ for every real $x \ge 1$.
 
 ## Sources

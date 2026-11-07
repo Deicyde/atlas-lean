@@ -1,6 +1,6 @@
 # Many disjoint geometric progressions among Hurwitz quaternions
 
-**Many disjoint geometric progressions among Hurwitz quaternions.** A Hurwitz quaternion is a
+A Hurwitz quaternion is a
 quaternion whose four rational coordinates are either all integers or all halves of odd integers;
 its norm is the sum of the squares of its coordinates. For a natural number $N$ let $S(N)$ be the
 set of nonzero Hurwitz quaternions of norm at most $N$. Fix a Hurwitz quaternion $R$ of norm $2$,

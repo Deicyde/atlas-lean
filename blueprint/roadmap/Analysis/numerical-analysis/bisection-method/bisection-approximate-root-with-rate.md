@@ -1,6 +1,6 @@
 # Bisection method converges at a linear rate
 
-**Bisection method converges at a linear rate.** Let $f : \mathbb{R} \to \mathbb{R}$ be
+Let $f : \mathbb{R} \to \mathbb{R}$ be
 continuous on $[a, b]$, where $a \le b$ and $f(a) \le 0 \le f(b)$, and let $u, v$ be a bisection
 sequence for $f$ from $a$ to $b$. Then there is $c \in [a, b]$ with $f(c) = 0$ such that the
 midpoints $(u_n + v_n)/2$ converge to $c$ and $|(u_n + v_n)/2 - c| \le (b - a)/2^{n+1}$ for

@@ -1,6 +1,6 @@
 # Long weighted zero-sum free sequences in abelian $p$-groups
 
-**Long weighted zero-sum free sequences in abelian $p$-groups.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $r \ge 1$, let $e_1 \le e_2 \le \dots \le e_r$ be natural numbers and let
 $G = \mathbb{Z}/p^{e_1}\mathbb{Z} \oplus \dots \oplus \mathbb{Z}/p^{e_r}\mathbb{Z}$. Let $c$ be a
 natural number with $1 \le c \le e_1$ and put $\beta = \lceil p^{e_1}/(p^c - 1) \rceil - 1$. Then

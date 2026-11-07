@@ -1,6 +1,6 @@
 # 6174 is fixed by the four-digit Kaprekar map
 
-**6174 is fixed by the four-digit Kaprekar map.** The Kaprekar map with $n = 4$ sends $6174$
+The Kaprekar map with $n = 4$ sends $6174$
 to itself: $7641 - 1467 = 6174$.
 
 ## Sources

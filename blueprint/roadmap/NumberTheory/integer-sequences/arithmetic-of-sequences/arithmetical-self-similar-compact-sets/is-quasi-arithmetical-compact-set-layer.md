@@ -1,6 +1,6 @@
 # The layer index of a quasi-arithmetical compact set is well defined (Proposition 5)
 
-**The layer index of a quasi-arithmetical compact set is well defined (Proposition 5).** Let
+Let
 $K \subseteq \mathbb{R}$ be a quasi-arithmetical compact set of module $\mu$ and ratio $\rho$. For
 each natural number $j$ let $K^{(j)}$ be the $j$-th iterated derived set of $K$ and
 $T_j = K^{(j)} \setminus K^{(j+1)}$ its $j$-th layer. If $n, p, q, v, w$ are natural numbers with

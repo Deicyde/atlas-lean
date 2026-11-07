@@ -1,6 +1,6 @@
 # Generalized Elliott–Halberstam estimate at level $\theta$
 
-**Generalized Elliott–Halberstam estimate at level $\theta$.** For a real number $\theta$,
+For a real number $\theta$,
 the generalized Elliott–Halberstam estimate at level $\theta$ is the following statement. Let
 $\varepsilon > 0$ be real, let $N, M : \mathbb{R} \to \mathbb{R}$, and let
 $(\alpha_x)_{x \in \mathbb{R}}$ and $(\beta_x)_{x \in \mathbb{R}}$ be families of finitely

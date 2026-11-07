@@ -1,6 +1,6 @@
 # Dias da Silva–Hamidoune theorem
 
-**Dias da Silva–Hamidoune theorem.** Let $p$ be a prime, $A$ a nonempty subset of
+Let $p$ be a prime, $A$ a nonempty subset of
 $\mathbb{Z}/p\mathbb{Z}$ with $|A| = k$, and $h$ a natural number with $1 \le h \le k$. Then the
 restricted sumset $h^{\wedge}A$ of sums of $h$ distinct elements of $A$ satisfies
 $|h^{\wedge}A| \ge \min(p,\ hk - h^2 + 1)$.

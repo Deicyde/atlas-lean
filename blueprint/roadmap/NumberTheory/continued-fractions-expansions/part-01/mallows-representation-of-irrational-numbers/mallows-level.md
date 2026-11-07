@@ -1,6 +1,6 @@
 # Mallows levels
 
-**Mallows levels.** Fractions $n/m$ are written as pairs $(n, m)$ of natural numbers. Start
+Fractions $n/m$ are written as pairs $(n, m)$ of natural numbers. Start
 from the list $\langle 0/1, 1/1\rangle$ and refine it repeatedly, each refinement step inserting
 between every two adjacent entries the pair of fractions given by Mallows' insertion rule. For
 $i \ge 1$, $MT_i$ is the list of the fractions inserted at the $i$-th step: the fractions that

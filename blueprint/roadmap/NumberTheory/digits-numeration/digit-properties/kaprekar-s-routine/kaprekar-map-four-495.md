@@ -1,6 +1,6 @@
 # The four-digit Kaprekar map sends 495 to 9081
 
-**The four-digit Kaprekar map sends 495 to 9081.** With $n = 4$, the number $495$ is padded to
+With $n = 4$, the number $495$ is padded to
 the digit string $0495$, and the Kaprekar map sends it to $9540 - 0459 = 9081$.
 
 ## Sources

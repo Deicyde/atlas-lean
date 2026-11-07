@@ -1,6 +1,6 @@
 # Euler–Lagrange equation
 
-**Euler–Lagrange equation.** Let $a < b$ be real numbers, let $L(t, y, v)$ be a real function
+Let $a < b$ be real numbers, let $L(t, y, v)$ be a real function
 of three real variables that is twice continuously differentiable on $\mathbb{R}^3$, and let
 $x : \mathbb{R} \to \mathbb{R}$ be twice continuously differentiable. Write
 $\partial L / \partial y$ and $\partial L / \partial v$ for the partial derivatives of $L$ in its

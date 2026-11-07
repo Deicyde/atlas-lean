@@ -1,6 +1,6 @@
 # The Euclid P-position test is correct
 
-**The Euclid P-position test is correct.** For all natural numbers $a$ and $b$, the Euclid
+For all natural numbers $a$ and $b$, the Euclid
 P-position test returns true at $(a, b)$ if and only if $(a, b)$ is a normal-play P-position of
 the Euclid game.
 

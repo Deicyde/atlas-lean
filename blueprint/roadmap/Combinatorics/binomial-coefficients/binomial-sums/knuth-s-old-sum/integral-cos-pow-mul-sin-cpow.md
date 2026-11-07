@@ -1,6 +1,6 @@
 # Integral of $\cos^m x \, \sin^v x$ over $(0, \pi)$
 
-**Integral of $\cos^m x \, \sin^v x$ over $[0, \pi]$.** For every natural number $m$ and every
+For every natural number $m$ and every
 complex number $v$ with $\operatorname{Re} v > -1$, the integral
 $\int_0^\pi \cos^m x \, \sin(x)^v \, dx$ equals
 $2^{-m-v} \pi \binom{m}{m/2} \binom{v}{v/2} \binom{(m+v)/2}{m/2}^{-1}$ if $m$ is even and $0$

@@ -1,6 +1,6 @@
 # Permutations of length four avoiding $132$ and $321$
 
-**Permutations of length four avoiding $132$ and $321$.** Exactly $7$ permutations of
+Exactly $7$ permutations of
 $\{0, 1, 2, 3\}$ avoid both patterns $132$ and $321$, that is,
 $A_4(132, 321) = 7 = 1 + \binom{4}{2}$.
 

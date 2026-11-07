@@ -1,6 +1,6 @@
 # Duality
 
-**Duality.** Let $M$ be a Kripke model, $\rho$ an environment assigning a set of worlds to
+Let $M$ be a Kripke model, $\rho$ an environment assigning a set of worlds to
 each variable index $n \in \mathbb{N}$, and $\varphi$ a μ-calculus formula. Let $\neg\varphi$ be
 the dual formula of $\varphi$, obtained by swapping atoms with negated atoms, $\bot$ with $\top$,
 $\wedge$ with $\vee$, $\Box$ with $\Diamond$ and $\mu$ with $\nu$, and keeping variables. Write

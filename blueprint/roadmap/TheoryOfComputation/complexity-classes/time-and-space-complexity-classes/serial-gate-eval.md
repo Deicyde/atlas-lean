@@ -1,6 +1,6 @@
 # Evaluating a serialized gate
 
-**Evaluating a serialized gate.** Let $v$ be a list of Boolean values of earlier gates,
+Let $v$ be a list of Boolean values of earlier gates,
 let $a$ assign a Boolean to each of the $n$ inputs $0, \dots, n - 1$, and let $(k, \ell)$ be a
 serialized gate. Write $v_c$ for entry $c$ of $v$, read as false when $c$ is out of range.
 The value of the gate is: $a(i)$ if $(k, \ell) = (0, [i])$ with $i < n$, and false if

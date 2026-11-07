@@ -1,6 +1,6 @@
 # Matveev's lower bound for linear forms in logarithms (real case)
 
-**Matveev's lower bound for linear forms in logarithms (real case).** Let $L$ be a number
+Let $L$ be a number
 field of degree $D = [L : \mathbb{Q}]$ with a field embedding $f : L \to \mathbb{R}$, let $s \ge 1$
 be a natural number, and let $\eta_1, \dots, \eta_s \in L$ satisfy $\eta_i \ne 1$ and
 $f(\eta_i) > 0$ for every $i$. Let $d_1, \dots, d_s$ be nonzero integers and let $B$ be a real

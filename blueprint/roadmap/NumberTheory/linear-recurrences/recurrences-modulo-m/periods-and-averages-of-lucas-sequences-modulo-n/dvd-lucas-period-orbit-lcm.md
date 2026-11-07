@@ -1,6 +1,6 @@
 # $n$ divides $L(n)$
 
-**$n$ divides $L(n)$.** Let $P, Q$ be integers with $Q \ne 0$ and $U$ the Lucas sequence with
+Let $P, Q$ be integers with $Q \ne 0$ and $U$ the Lucas sequence with
 $U_0 = 0$, $U_1 = 1$ and $U_{j+2} = P U_{j+1} - Q U_j$. For $m \in \mathbb{N}$ let $\pi_U(m)$ be
 the least $r \ge 1$ with $U_r \equiv 0$ and $U_{r+1} \equiv 1 \pmod m$, or $0$ if there is none,
 and let $\pi_U^i$ be its $i$-th iterate, so that $\pi_U^0(m) = m$. Let $\omega(n)$ be the least

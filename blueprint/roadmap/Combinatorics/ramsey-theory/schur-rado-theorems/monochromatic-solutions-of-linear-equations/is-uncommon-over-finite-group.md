@@ -1,6 +1,6 @@
 # Uncommon equations over a finite abelian group
 
-**Uncommon equations over a finite abelian group.** Let $G$ be a finite abelian group,
+Let $G$ be a finite abelian group,
 let $a_1, \dots, a_k$ be integers, let $r$ be a natural number, and let $S \subseteq G^k$ be
 the set of solutions of $a_1x_1 + \cdots + a_kx_k = 0$. The equation is $r$-uncommon over
 $G$ when there are functions $w_1, \dots, w_r \colon G \to \mathbb{R}$ with $w_c(x) \ge 0$ for

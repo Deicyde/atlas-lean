@@ -1,6 +1,6 @@
 # Internal congruence modulo 3 for PEND partitions
 
-**Internal congruence modulo 3 for PEND partitions.** Let $\mathrm{pend}(m)$ be the number
+Let $\mathrm{pend}(m)$ be the number
 of PEND partitions of $m$. For every natural number $n$,
 $\mathrm{pend}(27n + 10) \equiv \mathrm{pend}(3n + 1) \pmod{3}$.
 

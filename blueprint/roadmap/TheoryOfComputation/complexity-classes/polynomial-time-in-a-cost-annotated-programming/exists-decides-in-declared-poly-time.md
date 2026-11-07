@@ -1,6 +1,6 @@
 # Every decision problem has a timed decider in declared polynomial time
 
-**Every decision problem has a timed decider in declared polynomial time.** For every decision
+For every decision
 problem $L$ there is a timed function $f$ from lists of Booleans to Booleans that decides in
 declared polynomial time and whose output $f(x)$ equals $L(x)$ for every list $x$ of Booleans.
 

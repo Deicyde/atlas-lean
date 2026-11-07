@@ -1,6 +1,6 @@
 # Odd-divisor sum via distinct $n$-color partitions and signed partition counts
 
-**Odd-divisor sum via distinct $n$-color partitions and signed partition counts.** For
+For
 $r \ge 0$ let $C_o(D, r)$ (resp. $C_e(D, r)$) be the total number of parts over the $n$-color
 partitions of $r$ into an odd (resp. even) number of distinct colored parts, and let
 $C_{e-o}(r) = \sum_\lambda (-1)^{\ell(\lambda)}$, the sum running over all $n$-color partitions

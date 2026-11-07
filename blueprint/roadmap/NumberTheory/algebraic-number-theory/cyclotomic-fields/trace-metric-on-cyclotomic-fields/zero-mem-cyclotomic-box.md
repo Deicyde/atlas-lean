@@ -1,6 +1,6 @@
 # The zero vector lies in every box
 
-**The zero vector lies in every box.** For all natural numbers $p$ and $N$, the zero vector
+For all natural numbers $p$ and $N$, the zero vector
 lies in the box $B(p, N)$, the set of integer vectors $(a_1, \dots, a_{p-1})$ with
 $|a_i| \le N$ for all $i$.
 

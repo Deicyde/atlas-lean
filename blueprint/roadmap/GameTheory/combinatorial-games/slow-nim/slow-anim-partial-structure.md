@@ -1,6 +1,6 @@
 # Partial structure of the P-positions of Slow $A$-Nim
 
-**Partial structure of the P-positions of Slow $A$-Nim.** Let $A \subseteq \{1, \dots, n\}$
+Let $A \subseteq \{1, \dots, n\}$
 and let $p$ be a position of Slow $A$-Nim on $n$ stacks. If every stack height of $p$ is even,
 then $p$ is a P-position. If the number of stacks of $p$ with odd height lies in $A$, then $p$
 is not a P-position.

@@ -1,6 +1,6 @@
 # The expansion 0.11 violates Knott's truncation rule
 
-**The expansion 0.11 violates Knott's truncation rule.** The finite base phi expansion
+The finite base phi expansion
 $0.11$, with digits $1$ at positions $-1$ and $-2$ and no others, ends in the digits $011$, so it
 does not satisfy Knott's truncation rule.
 

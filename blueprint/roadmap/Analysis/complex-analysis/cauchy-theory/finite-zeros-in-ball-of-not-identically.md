@@ -1,6 +1,6 @@
 # A holomorphic function not identically zero has finitely many zeros in a disc
 
-**A holomorphic function not identically zero has finitely many zeros in a disc.** Let
+Let
 $P \in \mathbb{C}$ and $r > 0$, write $D(P,r)$ for the open disc and $\overline{D}(P,r)$ for the
 closed disc of center $P$ and radius $r$, and let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic
 on some open set containing $\overline{D}(P,r)$. If $f$ does not vanish identically on $D(P,r)$,

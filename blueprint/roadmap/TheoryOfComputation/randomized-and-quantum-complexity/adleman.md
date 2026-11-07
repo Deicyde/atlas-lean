@@ -1,6 +1,6 @@
 # Adleman's theorem: BPP is contained in P/poly
 
-**Adleman's theorem: BPP is contained in P/poly.** Every decision problem in BPP lies in
+Every decision problem in BPP lies in
 P/poly.
 
 ## Sources

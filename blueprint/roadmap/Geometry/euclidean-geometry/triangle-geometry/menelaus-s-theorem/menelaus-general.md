@@ -1,6 +1,6 @@
 # Menelaus's theorem, general form
 
-**Menelaus's theorem, general form.** Let $A$, $B$, $C$ be points of the Euclidean plane
+Let $A$, $B$, $C$ be points of the Euclidean plane
 $\mathbb{R}^2$ with $A \ne B$ and $C$ not on the line $AB$. Let $D$, $E$, $F$ be points and
 let $\alpha, \alpha', \beta, \beta', \gamma, \gamma'$ be real numbers with
 $F - A = \alpha (B - A)$, $B - F = \alpha' (B - A)$, $D - B = \beta (C - B)$,

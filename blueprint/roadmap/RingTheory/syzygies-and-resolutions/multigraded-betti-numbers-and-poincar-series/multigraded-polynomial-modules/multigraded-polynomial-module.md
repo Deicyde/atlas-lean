@@ -1,6 +1,6 @@
 # Multigraded modules over a polynomial ring
 
-**Multigraded modules over a polynomial ring.** Let $K$ be a field, $n \in \mathbb{N}$
+Let $K$ be a field, $n \in \mathbb{N}$
 and $R = K[x_1, \dots, x_n]$, and let $M$ be an $R$-module that is also a $K$-vector
 space. A $\mathbb{Z}^n$-grading of $M$ compatible with monomial multiplication consists of
 $K$-subspaces $M_\alpha \subseteq M$, one for each $\alpha \in \mathbb{Z}^n$, such that $M$

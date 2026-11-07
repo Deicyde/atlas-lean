@@ -1,6 +1,6 @@
 # Exponential generating function of a shifted Stirling column
 
-**Exponential generating function of a shifted Stirling column.** Write $S(n,k)$ for the
+Write $S(n,k)$ for the
 Stirling numbers of the second kind. For every natural number $j$ and every real number $x$, the
 series
 

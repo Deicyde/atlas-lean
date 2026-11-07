@@ -1,6 +1,6 @@
 # Ivić's eighth-moment bound on the line $\operatorname{Re} s = 5/8$
 
-**Ivić's eighth-moment bound on the line $\operatorname{Re} s = 5/8$.** There are real
+There are real
 constants $C$ and $T_0$ such that for every real $T \ge T_0$,
 
 $$\int_{T/2}^{T} |\zeta(5/8 + it)|^8 \, dt \le C T (\log T)^{38}.$$

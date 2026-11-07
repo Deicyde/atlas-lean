@@ -1,6 +1,6 @@
 # Analytic core of Poisson convergence
 
-**Analytic core of Poisson convergence.** Let $\lambda \ge 0$ be a real number, let
+Let $\lambda \ge 0$ be a real number, let
 $k : \mathbb{N} \to \mathbb{N}$, and for each $n$ let $p_{n,i}$, $0 \le i < k(n)$, be real
 numbers. Suppose that $p_{n,i} \ge 0$ for all $n$ and $i$, that for every $\varepsilon > 0$
 we have $p_{n,i} < \varepsilon$ for all $i < k(n)$ once $n$ is large enough, and that

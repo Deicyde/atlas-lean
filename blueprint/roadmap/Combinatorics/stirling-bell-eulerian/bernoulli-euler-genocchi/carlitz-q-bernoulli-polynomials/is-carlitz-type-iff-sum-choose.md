@@ -1,6 +1,6 @@
 # Characterization of Carlitz-type sequences
 
-**Characterization of Carlitz-type sequences.** Let $q > 0$ with $q \ne 1$ be real and write
+Let $q > 0$ with $q \ne 1$ be real and write
 $[x] = (q^x - 1)/(q - 1)$. A sequence of functions $T_n : \mathbb{R} \to \mathbb{R}$ is
 Carlitz-type with some associated real sequence $(a_k)$ if and only if for every natural $n$ and
 every real $x$, $T_n(x) = \sum_{k=0}^{n} \binom{n}{k} T_k(0) q^{kx} [x]^{n-k}$.

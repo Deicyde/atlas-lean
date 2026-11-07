@@ -1,6 +1,6 @@
 # Carnot's theorem (inradius and circumradius)
 
-**Carnot's theorem (inradius and circumradius).** Let $A, B, C$ be non-collinear points of a
+Let $A, B, C$ be non-collinear points of a
 Euclidean affine plane lying on the circle with center $O$ and radius $R > 0$, and suppose $O$
 lies in the affine span of $A, B, C$. Take unit vectors $n_a$, $n_b$, $n_c$ normal to the sides
 and pointing toward the opposite vertices: $n_a \perp C - B$ with $\langle A - B, n_a \rangle > 0$,

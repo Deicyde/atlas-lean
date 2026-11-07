@@ -1,6 +1,6 @@
 # Basic moves of the bishop
 
-**Basic moves of the bishop.** The basic moves of the bishop are the two vectors $(1, 1)$
+The basic moves of the bishop are the two vectors $(1, 1)$
 and $(-1, 1)$ in $\mathbb{Z}^2$.
 
 ## Sources

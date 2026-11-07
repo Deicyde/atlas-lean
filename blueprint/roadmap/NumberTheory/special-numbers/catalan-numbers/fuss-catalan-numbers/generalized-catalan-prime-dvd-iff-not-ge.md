@@ -1,6 +1,6 @@
 # Prime divisibility of generalized Catalan numbers
 
-**Prime divisibility of generalized Catalan numbers.** Let $p$ be a prime and $n$ a natural
+Let $p$ be a prime and $n$ a natural
 number. Then $p$ divides the generalized Catalan number $\frac{1}{(p-1)n+1}\binom{pn}{n}$ (an
 integer) if and only if $n$ is not of the form $\frac{p^k-1}{p-1}$ for any natural number $k$.
 

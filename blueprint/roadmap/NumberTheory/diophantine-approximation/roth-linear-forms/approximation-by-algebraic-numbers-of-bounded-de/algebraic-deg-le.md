@@ -1,6 +1,6 @@
 # Real algebraic numbers of bounded degree
 
-**Real algebraic numbers of bounded degree.** For a natural number $n$, this is the type of
+For a natural number $n$, this is the type of
 real numbers $\alpha$ that are algebraic over $\mathbb{Q}$ and whose minimal polynomial over
 $\mathbb{Q}$ has degree at most $n$.
 

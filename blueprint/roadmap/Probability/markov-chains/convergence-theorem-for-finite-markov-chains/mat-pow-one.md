@@ -1,3 +1,3 @@
 # First recursive power of a stochastic matrix
 
-**First recursive power of a stochastic matrix.** One step of the power recursion: `matPow 1` is the matrix itself.
+One step of the power recursion: `matPow 1` is the matrix itself.

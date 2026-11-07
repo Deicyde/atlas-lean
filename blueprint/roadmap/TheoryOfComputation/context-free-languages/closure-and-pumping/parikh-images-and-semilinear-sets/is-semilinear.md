@@ -1,6 +1,6 @@
 # Semilinear set of vectors
 
-**Semilinear set of vectors.** A set of vectors is semilinear when it is a finite union of
+A set of vectors is semilinear when it is a finite union of
 linear sets.
 
 ## Sources

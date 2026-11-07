@@ -1,6 +1,6 @@
 # Time bound of the shift generator on uniform layouts
 
-**Time bound of the shift generator on uniform layouts.** Let $k \ge 1$ and $y \ge 1$ be
+Let $k \ge 1$ and $y \ge 1$ be
 natural numbers and let $L_k$ be the layout with every constant equal to $k$. Then the explicit
 time bound of the shift generator for $L_k$ with $N = k$ situations and $T = H = y$ is at most
 $828\, k^7 y^6$.

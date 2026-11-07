@@ -1,6 +1,6 @@
 # Shearer's entropy inequality for every cover multiplicity
 
-**Shearer's entropy inequality for every cover multiplicity.** Let $\alpha$ be a nonempty
+Let $\alpha$ be a nonempty
 finite set, $n$ a natural number, and $\mu$ a probability mass function on $\alpha^n$, that is,
 $\mu(x) \ge 0$ for all $x \in \alpha^n$ and $\sum_{x \in \alpha^n} \mu(x) = 1$. Write $H(\mu)$
 for the full entropy of $\mu$ and, for a set $S$ of coordinates in $\{0, \dots, n-1\}$, write

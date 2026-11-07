@@ -1,6 +1,6 @@
 # The left endpoint goes to the right endpoint when $N/\alpha - \alpha$ is an integer
 
-**The left endpoint goes to the right endpoint when $N/\alpha - \alpha$ is an integer.** Let
+Let
 $N$ be a natural number and $\alpha$ a real number such that $N/\alpha - \alpha$ is an integer,
 with the convention $N/0 = 0$. Then the $N$-expansion map $T_\alpha$ satisfies
 $T_\alpha(\alpha) = \alpha + 1$.

@@ -1,6 +1,6 @@
 # Stinespring dilation theorem
 
-**Stinespring dilation theorem.** Let $A$ be a unital C*-algebra with its standard order, let $H$
+Let $A$ be a unital C*-algebra with its standard order, let $H$
 be a complex Hilbert space, and let $\varphi : A \to B(H)$ be a completely positive map. Then
 there are a complex Hilbert space $K$, a unital $*$-homomorphism $\pi : A \to B(K)$ and a bounded
 linear map $V : H \to K$ such that $\varphi(a) = V^* \pi(a) V$ for every $a \in A$, where $V^*$

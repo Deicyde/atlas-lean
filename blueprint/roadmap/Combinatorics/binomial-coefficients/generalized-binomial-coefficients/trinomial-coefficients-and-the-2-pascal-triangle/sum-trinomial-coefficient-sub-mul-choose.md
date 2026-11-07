@@ -1,6 +1,6 @@
 # Alternating binomial sum down a trinomial column
 
-**Alternating binomial sum down a trinomial column.** Write $\binom{n}{k}_2$ for the
+Write $\binom{n}{k}_2$ for the
 trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$. For natural numbers $n \le m$,
 $\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{n-k}{m}_2 = \binom{n}{m-n}$.
 

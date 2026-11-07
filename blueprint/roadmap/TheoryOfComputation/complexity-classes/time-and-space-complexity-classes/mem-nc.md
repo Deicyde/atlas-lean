@@ -1,6 +1,6 @@
 # Membership in NC
 
-**Membership in NC.** A decision problem $L$ belongs to $\mathsf{NC}$ if and only if $L$
+A decision problem $L$ belongs to $\mathsf{NC}$ if and only if $L$
 belongs to $\mathsf{NC}^k$ for some natural number $k$.
 
 ## Sources

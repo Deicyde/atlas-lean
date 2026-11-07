@@ -1,6 +1,6 @@
 # Favard's theorem
 
-**Favard's theorem.** Let $R$ be a field and let $(p_n)_{n \ge 0}$ be a family of monic
+Let $R$ be a field and let $(p_n)_{n \ge 0}$ be a family of monic
 polynomials in $R[x]$. Then $(p_n)$ is formally orthogonal if and only if there are sequences
 $(\alpha_n)_{n \ge 0}$ and $(\beta_n)_{n \ge 0}$ in $R$ with $\beta_n \ne 0$ for all $n \ge 1$
 such that $p_0 = 1$, $p_1 = x - \alpha_0$, and

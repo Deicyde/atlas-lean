@@ -1,6 +1,6 @@
 # A surjective, non-injective Rota–Baxter operator on a non-abelian group
 
-**A surjective, non-injective Rota–Baxter operator on a non-abelian group.** There exist a
+There exist a
 non-abelian group $G$ and a Rota–Baxter operator $B$ on $G$ that is surjective but not injective.
 
 For example, van Doorn, Judin, Monticone and Morrison take $G = S_3 \times \mathbb{Z}^{\mathbb{N}}$

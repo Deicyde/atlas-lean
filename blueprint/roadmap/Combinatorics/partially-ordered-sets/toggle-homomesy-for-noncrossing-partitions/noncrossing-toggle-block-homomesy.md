@@ -1,6 +1,6 @@
 # Block-count homomesy claim for toggling noncrossing partitions
 
-**Block-count homomesy claim for toggling noncrossing partitions.** Let $\sigma_n$ be the
+Let $\sigma_n$ be the
 toggle composite on $n$ points and $\sigma_n^k$ its $k$-fold iterate. The claim states that for
 every $n \ge 1$, every noncrossing arc set $P$ on $n$ points and every $L \ge 1$ with
 $\sigma_n^L(P) = P$, twice the sum of the block counts of

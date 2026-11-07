@@ -1,6 +1,6 @@
 # Taylor's theorem with little-o remainder in several variables
 
-**Taylor's theorem with little-o remainder in several variables.** Let $E$ and $F$ be normed
+Let $E$ and $F$ be normed
 vector spaces over $\mathbb{R}$, let $n$ be a natural number, and let $f : E \to F$ be $n$ times
 continuously differentiable on a neighbourhood of a point $x_0 \in E$. Write $D^k f(x_0)$ for the
 $k$-th Fréchet derivative of $f$ at $x_0$, a continuous $k$-linear map from $E^k$ to $F$. Then, as

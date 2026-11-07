@@ -1,6 +1,6 @@
 # The set of admissible coset-cover exponents
 
-**The set of admissible coset-cover exponents.** This is the set of all real numbers $C$
+This is the set of all real numbers $C$
 that are admissible asymptotic coset-cover exponents: for every real $\varepsilon > 0$ there is a
 real $K_0 \ge 1$ such that for every real $K \ge K_0$, every $n \in \mathbb{N}$ and every
 nonempty finite set $A \subseteq \mathbb{F}_2^n$ with $|A + A| \le K|A|$, there are an

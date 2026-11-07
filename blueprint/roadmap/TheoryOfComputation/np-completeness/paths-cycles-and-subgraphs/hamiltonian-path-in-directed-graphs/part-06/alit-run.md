@@ -1,6 +1,6 @@
 # HAMPATH emitter, phase A: one literal
 
-**HAMPATH emitter, phase A: one literal.** For $x \in \mathbb{N}$ write $\mathrm{name}(x)$
+For $x \in \mathbb{N}$ write $\mathrm{name}(x)$
 for the canonical binary encoding of $x$ as name-bit symbols. Let $\ell = (x, p)$ be a literal
 with variable $x$ and polarity $p$: its tokens are $\mathrm{name}(x)$ followed by the polarity
 marker $\mathrm{lit}(p)$, and its reversed tokens $r_\ell$ are $\mathrm{lit}(p)$ followed by the

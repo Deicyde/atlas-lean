@@ -1,6 +1,6 @@
 # Higman embedding theorem for Burnside varieties
 
-**Higman embedding theorem for Burnside varieties.** There is $n_0$ such that for every odd
+There is $n_0$ such that for every odd
 $n \ge n_0$, every group of exponent $n$ given by generators $x_0, x_1, \dots$ and a recursively
 enumerable set of relators embeds in a group finitely presented in the Burnside variety
 $\mathfrak{B}_n$: a group with generators $x_0, \dots, x_{m-1}$ for some $m$ whose relators are a

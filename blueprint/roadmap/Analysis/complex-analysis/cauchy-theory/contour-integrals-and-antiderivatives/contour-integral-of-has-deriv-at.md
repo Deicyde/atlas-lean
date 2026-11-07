@@ -1,6 +1,6 @@
 # Fundamental theorem of contour integration
 
-**Fundamental theorem of contour integration.** Let $U \subseteq \mathbb{C}$ be open and let
+Let $U \subseteq \mathbb{C}$ be open and let
 $F, f : \mathbb{C} \to \mathbb{C}$ be such that $F$ is complex-differentiable at every $z \in U$
 with $F'(z) = f(z)$. Let $\gamma : [0, 1] \to \mathbb{C}$ be a path from $a$ to $b$ whose image
 lies in $U$ and which is continuously differentiable on $[0, 1]$, with derivative $\gamma'$

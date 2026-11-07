@@ -1,6 +1,6 @@
 # Catalan numbers other than $1$ are not perfect powers
 
-**Catalan numbers other than $1$ are not perfect powers.** For every natural number $n \ge 2$, the
+For every natural number $n \ge 2$, the
 $n$-th Catalan number $C_n$ is not a perfect power: there are no natural numbers $m$ and $k$
 with $k \ge 2$ and $C_n = m^k$.
 

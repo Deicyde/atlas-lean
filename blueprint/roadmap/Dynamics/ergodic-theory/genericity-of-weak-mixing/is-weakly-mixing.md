@@ -1,6 +1,6 @@
 # Weakly mixing automorphism
 
-**Weakly mixing automorphism.** Let $(X, m)$ be a measure space. An automorphism $T$ of
+Let $(X, m)$ be a measure space. An automorphism $T$ of
 $(X, m)$ is weakly mixing if for all measurable sets $A, B \subseteq X$,
 
 $$\frac{1}{n} \sum_{k=0}^{n-1} \left| m(T^{-k}(A) \cap B) - m(A) m(B) \right| \to 0$$

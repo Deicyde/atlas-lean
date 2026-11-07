@@ -1,6 +1,6 @@
 # Subsemigroup criterion for β(F)
 
-**Subsemigroup criterion for β(F).** Let $S$ be a semigroup and $\mathcal F$ a family of
+Let $S$ be a semigroup and $\mathcal F$ a family of
 subsets of $S$ with the Ramsey property. For $x \in S$ and $E \subseteq S$ write
 $x^{-1}E = \{y \in S : xy \in E\}$, and multiply ultrafilters on $S$ by $E \in pq$ iff
 $\{x \in S : x^{-1}E \in q\} \in p$. Then $pq \in \beta(\mathcal F)$ for all

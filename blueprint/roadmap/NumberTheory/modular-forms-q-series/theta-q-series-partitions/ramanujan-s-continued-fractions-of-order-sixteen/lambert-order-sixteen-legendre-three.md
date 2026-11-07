@@ -1,6 +1,6 @@
 # Lambert series of order sixteen twisted by the Legendre symbol modulo $3$
 
-**Lambert series of order sixteen twisted by the Legendre symbol modulo $3$.** Write
+Write
 $(a; q)_\infty = \prod_{n \ge 0} (1 - a q^n)$,
 $(a_1, \dots, a_k; q)_\infty = (a_1; q)_\infty \cdots (a_k; q)_\infty$ and
 $f_k = (q^k; q^k)_\infty$, and let $\left(\frac{n}{3}\right)$ be the Legendre symbol modulo $3$.

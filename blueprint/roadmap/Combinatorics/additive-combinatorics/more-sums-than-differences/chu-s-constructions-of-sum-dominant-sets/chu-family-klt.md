@@ -1,6 +1,6 @@
 # Kumar–Mohan–Pandey sets
 
-**Kumar–Mohan–Pandey sets.** For natural numbers $k$, $l$, $t$, let $M^n$ be the block
+For natural numbers $k$, $l$, $t$, let $M^n$ be the block
 $1, 4, \dots, 4, 3$ with $n$ fours, and let $D$ be the sequence made of $t$ copies of the block
 $1, 1, 2, M^k, \dots, M^k$ (with $l$ copies of $M^k$) followed by $1, 1, 2, 1$. The set
 $A_{k,l,t}$ is $(0 \mid D)$, the set of partial sums of $D$ starting from $0$.

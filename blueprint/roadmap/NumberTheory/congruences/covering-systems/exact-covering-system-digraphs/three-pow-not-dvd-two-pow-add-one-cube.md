@@ -1,6 +1,6 @@
 # Bounding the power of $3$ dividing $2^{3k} + 1$
 
-**Bounding the power of $3$ dividing $2^{3k} + 1$.** For all natural numbers $m$ and $k$, if
+For all natural numbers $m$ and $k$, if
 $3^{m+1}$ does not divide $2^k + 1$, then $3^{m+2}$ does not divide $2^{3k} + 1$.
 
 For odd $k$, where $3$ divides $2^k + 1$, this says: if $3^m$ does not divide $(2^k + 1)/3$,

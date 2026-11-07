@@ -1,6 +1,6 @@
 # Multinomial Bernoulli–Fibonacci expansion of $(x + q\beta)^m$
 
-**Multinomial Bernoulli–Fibonacci expansion of $(x + q\beta)^m$.** Let
+Let
 $\beta = (1 - \sqrt{5})/2$, let $B_k$ be the Bernoulli numbers with $B_1 = -1/2$, and let $F_k$ be
 the Fibonacci numbers. For every natural number $q \ge 1$, every natural number $m$ and every real
 number $x$, the power $(x + q\beta)^m$ equals the sum, over $0 \le n \le m$ and over all pairs of

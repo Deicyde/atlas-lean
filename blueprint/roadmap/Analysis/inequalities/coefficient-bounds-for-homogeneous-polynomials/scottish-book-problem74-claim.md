@@ -1,6 +1,6 @@
 # The coefficient bound of Scottish Book Problem 74
 
-**The coefficient bound of Scottish Book Problem 74.** This is the statement that for every
+This is the statement that for every
 $n \ge 1$ and all real coefficients $a_k$ indexed by multi-indices
 $k = (k_1, \dots, k_n) \in \mathbb{N}^n$ the following holds. Let
 $P(t) = \sum_{k_1 + \cdots + k_n = n} a_k \, t_1^{k_1} \cdots t_n^{k_n}$ be the corresponding

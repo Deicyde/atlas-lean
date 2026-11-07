@@ -1,6 +1,6 @@
 # Ostrowski's theorem for $\mathbb{Q}$, indexed by places
 
-**Ostrowski's theorem for $\mathbb{Q}$, indexed by places.** Let $f$ be a real-valued absolute
+Let $f$ be a real-valued absolute
 value on $\mathbb{Q}$ that is nontrivial, that is, $f(x) \ne 1$ for some $x \ne 0$. Then there is
 exactly one place $v$ of $\mathbb{Q}$ such that $f$ is equivalent to the absolute value
 $|\cdot|_v$ attached to $v$ (the ordinary absolute value at the infinite place, the $p$-adic

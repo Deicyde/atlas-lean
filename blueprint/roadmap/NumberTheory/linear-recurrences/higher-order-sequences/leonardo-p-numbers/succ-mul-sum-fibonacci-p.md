@@ -1,6 +1,6 @@
 # Sums of $p+1$ consecutive Fibonacci $p$-numbers
 
-**Sums of $p+1$ consecutive Fibonacci $p$-numbers.** Let $p \ge 1$ and $n \ge 1$ be natural
+Let $p \ge 1$ and $n \ge 1$ be natural
 numbers and let $k$ be a natural number. Let $F_p$ denote the Fibonacci $p$-numbers
 ($F_p(0) = 0$, $F_p(m) = 1$ for $1 \le m \le p$, and $F_p(m) = F_p(m-1) + F_p(m-p-1)$ for
 $m > p$), and let $\mathcal{L}_{p,k}$ denote the generalized Leonardo $p$-numbers

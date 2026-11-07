@@ -1,6 +1,6 @@
 # FPT time
 
-**FPT time.** Let $\beta$ be a type with a canonical bitstring encoding. A function $R$
+Let $\beta$ be a type with a canonical bitstring encoding. A function $R$
 from pairs $(x, k)$ of a bitstring $x$ and a natural number $k$ to $\beta$ is computable in FPT
 time when there are a computable function $f : \mathbb{N} \to \mathbb{N}$ and a
 polynomial-time computable function $A$ from pairs of bitstrings to $\beta$ such that

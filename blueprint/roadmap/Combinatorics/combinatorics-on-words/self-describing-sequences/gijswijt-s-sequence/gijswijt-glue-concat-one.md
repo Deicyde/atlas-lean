@@ -1,6 +1,6 @@
 # The first concatenated glue string is empty
 
-**The first concatenated glue string is empty.** For every natural number $m$, the
+For every natural number $m$, the
 concatenated glue string $T^{(m)}_1$ is the empty string.
 
 ## Sources

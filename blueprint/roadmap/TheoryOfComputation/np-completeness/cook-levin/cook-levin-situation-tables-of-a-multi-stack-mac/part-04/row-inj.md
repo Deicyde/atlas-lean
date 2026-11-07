@@ -1,6 +1,6 @@
 # Good configurations are determined by their row (C1f)
 
-**Good configurations are determined by their row (C1f).** Let $M$ be a finite multi-stack
+Let $M$ be a finite multi-stack
 Turing machine and $E$ an encoding of $M$ with $K$ numbered stacks, let $H \in \mathbb{N}$, and
 for a configuration $c$ write $\mathrm{cell}(c, k, j)$ for the code of the symbol at depth $j$ of
 the stack numbered $k$ ($0$ if there is none). Let $c$ and $c'$ be configurations that are good

@@ -1,6 +1,6 @@
 # Generating series of Schlesinger–Zudilin qMZVs
 
-**Generating series of Schlesinger–Zudilin qMZVs.** For a natural number $r$, the
+For a natural number $r$, the
 generating series of SZ-qMZVs of depth $r$ is the formal power series in the $2r$ variables
 $X_1, \dots, X_r, Y_1, \dots, Y_r$ with coefficients in $\mathbb{Q}[[q]]$
 

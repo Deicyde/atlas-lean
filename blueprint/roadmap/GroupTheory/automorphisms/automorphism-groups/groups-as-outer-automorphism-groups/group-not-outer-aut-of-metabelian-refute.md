@@ -1,6 +1,6 @@
 # Every group is the outer automorphism group of a centreless metabelian group
 
-**Every group is the outer automorphism group of a centreless metabelian group.** For every group
+For every group
 $G$ there is a metabelian group $M$ (one whose second derived subgroup $M''$ is trivial) with
 trivial centre such that the outer automorphism group
 $\operatorname{Out}(M) = \operatorname{Aut}(M)/\operatorname{Inn}(M)$ is isomorphic to $G$. This

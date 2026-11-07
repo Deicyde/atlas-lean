@@ -1,6 +1,6 @@
 # Batcher's bitonic sorter on a block of wires
 
-**Batcher's bitonic sorter on a block of wires.** A comparator $(i, j)$ puts the minimum of
+A comparator $(i, j)$ puts the minimum of
 the values on wires $i$ and $j$ on wire $i$ and the maximum on wire $j$. Batcher's bitonic sorter
 on the block of wires $[b, b + 2^k)$ is the list of comparators defined by recursion on $k$. For
 $k = 0$ it is empty. On the block $[b, b + 2^{k+1})$ it is Batcher's bitonic sorter on

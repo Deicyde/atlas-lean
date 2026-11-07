@@ -1,6 +1,6 @@
 # Density one means containment
 
-**Density one means containment.** For sets $C, M \subseteq \mathbb{N}^t$, the set $C$ is
+For sets $C, M \subseteq \mathbb{N}^t$, the set $C$ is
 $1$-dense in $M$ if and only if $M \subseteq C$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Row sums of the Rascal triangle
 
-**Row sums of the Rascal triangle.** For every natural number
+For every natural number
 $n$, the Rascal numbers $R_{n,k} = k(n-k) + 1$ ($0 \le k \le n$)
 satisfy $\sum_{k=0}^{n} R_{n,k} = \binom{n+1}{3} + n + 1$.
 

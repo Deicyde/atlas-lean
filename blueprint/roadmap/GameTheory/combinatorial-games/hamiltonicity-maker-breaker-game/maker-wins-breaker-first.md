@@ -1,6 +1,6 @@
 # Maker wins the biased game with Breaker moving first
 
-**Maker wins the biased game with Breaker moving first.** For a finite board $X$, a bias
+For a finite board $X$, a bias
 $b \in \mathbb{N}$ and a target property of Maker's claimed set, Maker wins the $(1 : b)$
 Maker-Breaker game on $X$ in which Breaker moves first when, for every set $F \subseteq X$ of
 exactly $\min(b, |X|)$ elements that Breaker may claim in his first move, Maker can force a win

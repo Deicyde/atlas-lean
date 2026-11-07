@@ -1,6 +1,6 @@
 # Brzozowski's automaton is the minimal automaton
 
-**Brzozowski's automaton is the minimal automaton.** Let $M$ be a DFA over a finite alphabet
+Let $M$ be a DFA over a finite alphabet
 with finitely many states, and let $L$ be its language. For a language $K$ and a word $w$, write
 $w^{-1}K = \{v \mid wv \in K\}$ for the left quotient of $K$ by $w$. Every state of Brzozowski's
 automaton of $M$ is reached by some word $w$; rename that state to $w^{-1}L$, which does not

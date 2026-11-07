@@ -1,6 +1,6 @@
 # Recurrence for the alternating stride sum
 
-**Recurrence for the alternating stride sum.** Let $q \ge 1$, $n \ge 1$ and $t \ge 0$ be
+Let $q \ge 1$, $n \ge 1$ and $t \ge 0$ be
 integers and let $S_{q,t}$ denote the alternating stride sum. Then
 $S_{q,t}(n + q) = 1/(n + q)^t - S_{q,t}(n)$.
 

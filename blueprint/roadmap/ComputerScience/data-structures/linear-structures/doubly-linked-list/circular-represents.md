@@ -1,6 +1,6 @@
 # Circular doubly linked list with a sentinel
 
-**Circular doubly linked list with a sentinel.** Let $S$ be a store of $n$ slots indexed by
+Let $S$ be a store of $n$ slots indexed by
 $\{0, \dots, n-1\}$, each either empty or holding a node with a payload and optional next and
 previous indices. The store $S$ represents a circular list with sentinel $s$ and data nodes
 $x_1, \dots, x_k$ (a list of indices) when the $x_i$ are pairwise distinct and all differ from

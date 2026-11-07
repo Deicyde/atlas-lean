@@ -1,6 +1,6 @@
 # Cubed central binomial coefficients as diagonal coefficients
 
-**Cubed central binomial coefficients as diagonal coefficients.** For every natural number $n$,
+For every natural number $n$,
 the coefficient of $x^n y^n z^n$ in the polynomial
 $(1 + x + y + z)^{2n} (1 + x + y - z)^n (1 + x - y + z)^n$ in three variables $x, y, z$ with
 integer coefficients equals $\binom{2n}{n}^3$.

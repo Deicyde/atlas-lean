@@ -1,6 +1,6 @@
 # Edwards–Khadzhiivanov–Nikiforov theorem on edges in many triangles
 
-**Edwards–Khadzhiivanov–Nikiforov theorem on edges in many triangles.** For every natural number
+For every natural number
 $n$, every simple graph $G$ on $n$ vertices with more than $n^2/4$ edges has an edge that lies in
 at least $n/6$ triangles of $G$.
 

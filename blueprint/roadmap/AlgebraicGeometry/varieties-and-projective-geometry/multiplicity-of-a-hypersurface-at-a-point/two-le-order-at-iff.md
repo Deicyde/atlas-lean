@@ -1,6 +1,6 @@
 # Vanishing to order at least two via first partial derivatives
 
-**Vanishing to order at least two via first partial derivatives.** Let $R$ be an integral
+Let $R$ be an integral
 domain of characteristic zero and let $F$ be a multivariate polynomial over $R$ in the
 variables $(X_i)_{i \in \sigma}$. For every point $v \in R^\sigma$, the polynomial $F$ vanishes
 to order at least $2$ at $v$ if and only if $F(v) = 0$ and

@@ -1,6 +1,6 @@
 # The EM inequality
 
-**The EM inequality.** Let $Z$ be a nonempty finite set, let $p_\theta(x, z)$ be real numbers
+Let $Z$ be a nonempty finite set, let $p_\theta(x, z)$ be real numbers
 indexed by parameters $\theta$, observations $x$ and latent values $z \in Z$, with
 $p_\theta(x, z) > 0$ for all $\theta$, $x$, $z$, and let $x_1, \dots, x_N$ be data. Write
 $p_\theta(z \mid x) = p_\theta(x, z) / \sum_{z' \in Z} p_\theta(x, z')$ for the posterior,

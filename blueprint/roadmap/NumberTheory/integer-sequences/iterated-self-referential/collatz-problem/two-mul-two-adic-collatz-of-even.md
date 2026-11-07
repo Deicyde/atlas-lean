@@ -1,6 +1,6 @@
 # Even branch of the $2$-adic $3x+1$ map
 
-**Even branch of the $2$-adic $3x+1$ map.** Let $T : \mathbb{Z}_2 \to \mathbb{Z}_2$ be
+Let $T : \mathbb{Z}_2 \to \mathbb{Z}_2$ be
 the $3x+1$ map on the $2$-adic integers. For every $x \in \mathbb{Z}_2$ whose residue modulo $2$
 is zero, $2\,T(x) = x$.
 

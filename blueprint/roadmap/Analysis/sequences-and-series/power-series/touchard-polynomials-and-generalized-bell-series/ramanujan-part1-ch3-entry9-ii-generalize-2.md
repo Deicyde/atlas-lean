@@ -1,6 +1,6 @@
 # Convergence of the generalized Bell series
 
-**Convergence of the generalized Bell series.** Let $F$ denote Ramanujan's generalized Bell
+Let $F$ denote Ramanujan's generalized Bell
 function. For complex numbers $a$, $b$, $x$ and every natural number $n$, the series
 $\sum_{k=0}^{\infty} (a + b(k + 1))^n x^{k+1} / k!$ converges absolutely and its sum is
 $e^{x} F(a, b, x; n)$.

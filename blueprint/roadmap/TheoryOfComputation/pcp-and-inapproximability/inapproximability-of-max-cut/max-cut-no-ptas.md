@@ -1,6 +1,6 @@
 # MAX-CUT has no PTAS unless P = NP
 
-**MAX-CUT has no PTAS unless P = NP.** If $\mathsf{P} \neq \mathsf{NP}$, then the
+If $\mathsf{P} \neq \mathsf{NP}$, then the
 optimization problem MAX-CUT does not admit a polynomial-time approximation scheme.
 
 ## Sources

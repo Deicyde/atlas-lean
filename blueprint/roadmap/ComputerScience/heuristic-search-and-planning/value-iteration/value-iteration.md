@@ -1,6 +1,6 @@
 # Value iteration
 
-**Value iteration.** Let $M$ be a Markov decision process with finitely many states, a
+Let $M$ be a Markov decision process with finitely many states, a
 nonempty finite set of actions, and rewards and transition probabilities in a field $K$ carrying
 a linear order, let $\gamma \in K$, and let $T$ be the Bellman optimality operator of $M$ with
 discount $\gamma$. For $n \in \mathbb{N}$ and a function $V$ from states to $K$, $n$ steps of

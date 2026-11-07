@@ -1,6 +1,6 @@
 # The least interval length is admissible
 
-**The least interval length is admissible.** For natural numbers $n$ and $m$, let $f(n, m)$
+For natural numbers $n$ and $m$, let $f(n, m)$
 be the least natural number $L$ such that the interval $(m, m + L]$ contains distinct multiples
 of $1, \dots, n$. Then the interval $(m, m + f(n, m)]$ contains distinct multiples of
 $1, \dots, n$.

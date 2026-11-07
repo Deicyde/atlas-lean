@@ -1,6 +1,6 @@
 # A splitting of the sequence defining $P$
 
-**A splitting of the sequence defining $P$.** Write $\mathbb{N} \cup \{\infty\}$ for the
+Write $\mathbb{N} \cup \{\infty\}$ for the
 one-point compactification of $\mathbb{N}$, viewed as a light profinite set, and $\mathbb{Z}[S]$ for
 the free light condensed abelian group on a light profinite set $S$, with $\mathbb{Z}[\infty]$ the
 one on a point. Let $f \colon \mathbb{Z}[\infty] \to \mathbb{Z}[\mathbb{N} \cup \{\infty\}]$ be

@@ -1,6 +1,6 @@
 # Asymptotics of partitions with max-rook number 4
 
-**Asymptotics of partitions with max-rook number 4.** Let $R_4(n)$ be the number of partitions
+Let $R_4(n)$ be the number of partitions
 of $n$ with max-rook number $4$. Then $R_4(n) \sim n^3/9$ as $n \to \infty$.
 
 ## Sources

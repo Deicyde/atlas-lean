@@ -1,6 +1,6 @@
 # Coronado et al.'s count of $D$-nodes in divide-and-conquer trees
 
-**Coronado et al.'s count of $D$-nodes in divide-and-conquer trees.** Every
+Every
 divide-and-conquer tree with $n$ leaves has exactly $\delta(n)$ $D$-nodes, where $\delta$ is the
 function on positive integers given by $\delta(1) = 0$, $\delta(2m) = 2\delta(m)$ and
 $\delta(2m+1) = \delta(m) + \delta(m+1) + 1$ for $m \ge 1$.

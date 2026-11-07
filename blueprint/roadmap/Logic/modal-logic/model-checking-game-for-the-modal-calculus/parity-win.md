@@ -1,6 +1,6 @@
 # Parity winning condition
 
-**Parity winning condition.** For an infinite sequence of game positions $p_0, p_1, \dots$,
+For an infinite sequence of game positions $p_0, p_1, \dots$,
 Verifier wins by the parity condition when there is an even priority $e$ such that infinitely
 many positions $p_n$ have priority $e$, and every priority $e' < e$ is the priority of only
 finitely many positions $p_n$. Equivalently, some priority occurs infinitely often and the least

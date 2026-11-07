@@ -1,6 +1,6 @@
 # Continuous functions holomorphic off the coordinate axes are entire
 
-**Continuous functions holomorphic off the coordinate axes are entire.** Let
+Let
 $f : \mathbb{C} \to \mathbb{C}$ be continuous on all of $\mathbb{C}$ and holomorphic on the
 complement of the coordinate axes. Then $f$ is holomorphic on all of $\mathbb{C}$.
 

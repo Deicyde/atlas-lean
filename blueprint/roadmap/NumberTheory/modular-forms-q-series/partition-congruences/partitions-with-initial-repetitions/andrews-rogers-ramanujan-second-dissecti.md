@@ -1,6 +1,6 @@
 # Andrews' identity for the second Rogers–Ramanujan series
 
-**Andrews' identity for the second Rogers–Ramanujan series.** Let $q$ be a complex number
+Let $q$ be a complex number
 with $|q| < 1$, write $(q;q)_j = \prod_{i=1}^{j} (1 - q^i)$ for $j \ge 0$, and let
 $(q^2;q^2)_\infty = \prod_{n=0}^{\infty} (1 - q^{2n+2})$ be the infinite q-Pochhammer symbol. Then
 

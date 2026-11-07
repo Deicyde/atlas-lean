@@ -1,6 +1,6 @@
 # Weighted Schreier counts for $0 < m < k$
 
-**Weighted Schreier counts for $0 < m < k$.** For natural numbers $k \ge 2$ and $m$ with
+For natural numbers $k \ge 2$ and $m$ with
 $0 < m < k$, the weighted Schreier count satisfies $a_{k,m} = F_{m+1}$, where $F_j$ is the
 $j$-th Fibonacci number ($F_0 = 0$, $F_1 = 1$).
 

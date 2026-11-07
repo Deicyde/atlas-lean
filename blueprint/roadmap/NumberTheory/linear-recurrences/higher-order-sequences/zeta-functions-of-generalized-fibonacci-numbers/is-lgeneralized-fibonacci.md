@@ -1,6 +1,6 @@
 # ℓ-generalized Fibonacci sequence
 
-**ℓ-generalized Fibonacci sequence.** Let $\ell$ be a natural number. A function
+Let $\ell$ be a natural number. A function
 $F : \mathbb{Z} \to \mathbb{Z}$ is an $\ell$-generalized Fibonacci sequence when $F(n) = 0$ for
 every integer $n$ with $2 - \ell \le n \le 0$, $F(1) = 1$, and
 $F(n) = \sum_{i=0}^{\ell-1} F(n-1-i)$ for every integer $n > 1$.

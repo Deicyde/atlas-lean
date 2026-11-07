@@ -1,6 +1,6 @@
 # Trudi's formula when $a_0 = -1$
 
-**Trudi's formula when $a_0 = -1$.** Let $R$ be a commutative ring and let
+Let $R$ be a commutative ring and let
 $a_0, a_1, a_2, \dots$ be elements of $R$ with $a_0 = -1$. For every $n \ge 0$, the
 Toeplitz–Hessenberg determinant $\det A_n$ of size $n$ built from $a$ satisfies
 

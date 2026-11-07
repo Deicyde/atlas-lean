@@ -1,6 +1,6 @@
 # Vasil'ev's abelian section bound (Kourovka 19.101)
 
-**Vasil'ev's abelian section bound (Kourovka 19.101).** The statement that there is a function
+The statement that there is a function
 $f : \mathbb{N} \to \mathbb{N}$ such that for every $k \in \mathbb{N}$ and every locally finite
 group $G$ of $c$-dimension at most $k$ the following holds: if $R$ is a normal locally soluble
 subgroup of $G$ containing every normal locally soluble subgroup of $G$ (the locally soluble

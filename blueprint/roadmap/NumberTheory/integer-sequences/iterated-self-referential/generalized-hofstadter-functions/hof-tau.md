@@ -1,6 +1,6 @@
 # The Hofstadter substitution on letters
 
-**The Hofstadter substitution on letters.** For a natural number $k$, the substitution
+For a natural number $k$, the substitution
 $\tau_k$ sends the letter $k$ to the word $k\,1$ and every other letter $i \in \mathbb{N}$ to the
 one-letter word $i + 1$.
 

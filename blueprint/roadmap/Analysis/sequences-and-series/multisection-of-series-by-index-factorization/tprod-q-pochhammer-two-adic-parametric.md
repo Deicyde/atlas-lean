@@ -1,6 +1,6 @@
 # Parametric 2-adic dissection of the Euler function for real q
 
-**Parametric 2-adic dissection of the Euler function for real q.** Let $q$ and $p$ be real
+Let $q$ and $p$ be real
 numbers with $0 < q < 1$, and write $(a; r)_\infty = \prod_{k \ge 0} (1 - a r^k)$ for real $a$
 and $r$ (an unconditional infinite product). Then, with real exponents $p - 1$ and $p^j$,
 

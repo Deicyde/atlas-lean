@@ -1,6 +1,6 @@
 # Deaconescu's cyclicity conjecture fails (Kourovka 15.43(b))
 
-**Deaconescu's cyclicity conjecture fails (Kourovka 15.43(b)).** Not every finite group $G$ with
+Not every finite group $G$ with
 $|\mathrm{Aut}(G)| = \varphi(|G|)$ is cyclic: there is a non-cyclic finite group $G$ with
 $|\mathrm{Aut}(G)| = \varphi(|G|)$, where $\varphi$ is Euler's totient function and
 $\mathrm{Aut}(G)$ is the group of automorphisms of $G$.

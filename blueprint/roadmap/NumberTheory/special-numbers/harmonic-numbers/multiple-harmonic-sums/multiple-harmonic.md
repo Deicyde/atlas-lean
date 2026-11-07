@@ -1,6 +1,6 @@
 # Multiple harmonic sums
 
-**Multiple harmonic sums.** For natural numbers $p$, $r$ and $n$, the multiple harmonic sum
+For natural numbers $p$, $r$ and $n$, the multiple harmonic sum
 $H_r^{(n)}$ modulo $p$ is the element
 
 $$H_r^{(n)} = \sum_{0 < k_1 < \cdots < k_n \le r} k_1^{-1} \cdots k_n^{-1}$$

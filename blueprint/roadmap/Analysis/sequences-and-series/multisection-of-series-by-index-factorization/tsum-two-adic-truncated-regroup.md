@@ -1,6 +1,6 @@
 # Truncated two-adic regrouping
 
-**Truncated two-adic regrouping.** For every natural number $J$ and all sequences
+For every natural number $J$ and all sequences
 $\varphi, c : \mathbb{N} \to \mathbb{C}$,
 
 $$\sum_{j \ge J,\ n \ge 1} \varphi(j) c_{(2n-1) 2^j}

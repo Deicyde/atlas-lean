@@ -1,6 +1,6 @@
 # Ceiling parity count from the floor parity count
 
-**Ceiling parity count from the floor parity count.** For a natural number $m$, let
+For a natural number $m$, let
 $\mathcal{C}_m$ and $\mathcal{F}_m$ be the numbers of integers $k$ with $1 \le k \le m$ for which
 $\lceil m/k \rceil$, respectively $\lfloor m/k \rfloor$, is odd. Then for every natural number
 $n$, $\mathcal{C}_{n+1} = (n + 1) - \mathcal{F}_n$.

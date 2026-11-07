@@ -1,6 +1,6 @@
 # Dalezman's Schatunowsky theorem for the Gaussian integers
 
-**Dalezman's Schatunowsky theorem for the Gaussian integers.** Let $N(a + bi) = a^2 + b^2$ be
+Let $N(a + bi) = a^2 + b^2$ be
 the norm on the Gaussian integers $\mathbb{Z}[i]$, and let $S$ be the set of
 $\alpha \in \mathbb{Z}[i]$ such that every $\beta \in \mathbb{Z}[i]$ coprime to $\alpha$ with
 $1 < N(\beta) < N(\alpha)$ is a Gaussian prime. Then $5 + 5i \in S$, every element of $S$ has

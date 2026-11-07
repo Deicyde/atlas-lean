@@ -1,6 +1,6 @@
 # Jacobian of a compact Riemann surface
 
-**Jacobian of a compact Riemann surface.** For a compact Riemann surface $X$, that is, a
+For a compact Riemann surface $X$, that is, a
 compact connected Hausdorff space with a complex-analytic atlas modelled on $\mathbb{C}$, the
 Jacobian $J(X)$ of $X$ is a type in the same universe as $X$.
 

@@ -1,6 +1,6 @@
 # Convergence of the Laplace transform under exponential growth
 
-**Convergence of the Laplace transform under exponential growth.** Let $E$ be a complex
+Let $E$ be a complex
 normed space, $a \in \mathbb{R}$, and $f : \mathbb{R} \to E$ locally integrable on $[0, \infty)$
 with $\|f(t)\| = O(e^{a t})$ as $t \to \infty$. Then for every $s \in \mathbb{C}$ with
 $\operatorname{Re} s > a$ the Laplace transform of $f$ converges at $s$, that is,

@@ -1,6 +1,6 @@
 # Partial-fraction bound for the cosecant
 
-**Partial-fraction bound for the cosecant.** For every real number $x$ with $0 < x < 1$,
+For every real number $x$ with $0 < x < 1$,
 
 $$\frac{1}{\sin(\pi x)} < \frac{1}{\pi}\left(\frac{1}{x} + \frac{2x}{1 - x^2}\right).$$
 

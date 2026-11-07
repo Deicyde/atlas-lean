@@ -1,6 +1,6 @@
 # Alternating stride sum series for $\zeta(p + t + 1)$
 
-**Alternating stride sum series for $\zeta(p + t + 1)$.** Let $q \ge 1$ and $t \ge 1$ be
+Let $q \ge 1$ and $t \ge 1$ be
 integers, let $p \ge 0$ be an even integer and let $S_{q,t}$ denote the alternating stride sum.
 Then the partial sums
 

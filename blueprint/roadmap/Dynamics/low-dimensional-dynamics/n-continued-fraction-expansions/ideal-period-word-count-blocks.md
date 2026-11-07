@@ -1,6 +1,6 @@
 # Block counts of the ideal period words
 
-**Block counts of the ideal period words.** For every $n \ge 1$, the ideal period word $d_n$
+For every $n \ge 1$, the ideal period word $d_n$
 contains exactly $2^{n-1}$ blocks $2, 2$, and the number $c_n$ of its blocks $2, 1, 1$ satisfies
 $3 c_n = 2^n - (-1)^n$; that is, $c_n = (2^n + 1)/3$ for odd $n$ and $c_n = (2^n - 1)/3$ for even
 $n$.

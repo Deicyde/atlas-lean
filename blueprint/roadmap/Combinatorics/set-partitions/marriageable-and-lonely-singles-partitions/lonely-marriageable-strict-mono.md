@@ -1,6 +1,6 @@
 # Strict growth of the lonely and marriageable singles counts
 
-**Strict growth of the lonely and marriageable singles counts.** $L_n < L_{n+1}$ for every
+$L_n < L_{n+1}$ for every
 $n \ge 2$, and $M_n < M_{n+1}$ for every $n \ge 3$, where $M_n$ is the number of noncrossing
 partitions of $\{0, \dots, n-1\}$ that are marriageable singles partitions and $L_n$ is the
 number of those that are not.

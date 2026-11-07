@@ -1,6 +1,6 @@
 # The correction term $F_y$ for sums of $\delta_0$
 
-**The correction term $F_y$ for sums of $\delta_0$.** For natural numbers $p$, $d$ and $e$
+For natural numbers $p$, $d$ and $e$
 and a rational number $y$, let $\delta_0$ be the variant of the rounding indicator for $p$ and
 $d$, let $\tau_D$ be the denominator in lowest terms of $\tau = (p + 1)/d$ (with $\tau = 0$ when
 $d = 0$), and let $m = \lfloor y p^e \rfloor \bmod \tau_D p$, where $\lfloor y p^e \rfloor$ is

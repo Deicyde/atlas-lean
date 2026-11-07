@@ -1,6 +1,6 @@
 # Row one of Parisse's matrix $B(n)$
 
-**Row one of Parisse's matrix $B(n)$.** For every integer $n$, the entries $b_{j,k}(n)$ of
+For every integer $n$, the entries $b_{j,k}(n)$ of
 $B(n)$ satisfy $b_{1,0}(n) = n + 1$ and $b_{1,1}(n) = -1$.
 
 ## Sources

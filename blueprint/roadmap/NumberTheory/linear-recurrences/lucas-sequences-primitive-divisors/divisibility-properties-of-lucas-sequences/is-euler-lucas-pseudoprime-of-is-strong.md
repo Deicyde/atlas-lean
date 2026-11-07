@@ -1,6 +1,6 @@
 # Strong Lucas pseudoprimes are Euler–Lucas pseudoprimes
 
-**Strong Lucas pseudoprimes are Euler–Lucas pseudoprimes.** Let $P$ and $Q \ne 0$ be
+Let $P$ and $Q \ne 0$ be
 integers. Every strong Lucas pseudoprime with parameters $P$ and $Q$ is an Euler–Lucas
 pseudoprime with parameters $P$ and $Q$.
 

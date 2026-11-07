@@ -1,6 +1,6 @@
 # Inclusion of derived subgroups does not imply inclusion in free groups
 
-**Inclusion of derived subgroups does not imply inclusion in free groups.** There exist a free
+There exist a free
 group $F$ and non-cyclic subgroups $U$ and $V$ of $F$ such that the commutator subgroup $[U, U]$
 is contained in the commutator subgroup $[V, V]$ but $U$ is not contained in $V$. That is, the
 conjecture of Kourovka Problem 13.62 is false; the Kourovka Archive credits this answer to

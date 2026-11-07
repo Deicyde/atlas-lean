@@ -1,6 +1,6 @@
 # Negative real power of a trinomial as a power series
 
-**Negative real power of a trinomial as a power series.** For real numbers $\lambda$, $c$,
+For real numbers $\lambda$, $c$,
 $\alpha$, $\beta$ and a natural number $m$, this is the formal power series in $t$ with real
 coefficients
 

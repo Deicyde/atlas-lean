@@ -1,6 +1,6 @@
 # A convolution of (a, b)-Lucas and (a, d)-Fibonacci numbers
 
-**A convolution of (a, b)-Lucas and (a, d)-Fibonacci numbers.** Let $a, b, d$ be complex
+Let $a, b, d$ be complex
 numbers with $b \ne d$, and write $L^{a,b}_n$ for the $(a,b)$-Lucas numbers and $F^{a,b}_n$ for
 the $(a,b)$-Fibonacci numbers. Then for every natural number $n$,
 

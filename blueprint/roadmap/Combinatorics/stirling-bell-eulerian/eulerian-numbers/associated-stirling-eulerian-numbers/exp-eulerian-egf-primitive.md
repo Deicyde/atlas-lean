@@ -1,6 +1,6 @@
 # Primitive of the Eulerian generating function
 
-**Primitive of the Eulerian generating function.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra and $x \in R$, and work with formal power series in $u$ over $R$. For a
 permutation $\sigma$ write $e(\sigma)$ for its number of excedances (points $i$ with
 $\sigma(i) > i$), let $S_n$ be the set of permutations of $\{0, \dots, n-1\}$, and let

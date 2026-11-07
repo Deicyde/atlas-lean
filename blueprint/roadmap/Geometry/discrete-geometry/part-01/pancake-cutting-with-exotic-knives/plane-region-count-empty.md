@@ -1,6 +1,6 @@
 # No cuts, one region
 
-**No cuts, one region.** The empty set of cuts divides the plane into exactly one region.
+The empty set of cuts divides the plane into exactly one region.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # The zeroth degenerate Bernoulli number
 
-**The zeroth degenerate Bernoulli number.** For every real number $\lambda$, the degenerate
+For every real number $\lambda$, the degenerate
 Bernoulli number $\beta_{0,\lambda}$ equals $1$.
 
 ## Sources

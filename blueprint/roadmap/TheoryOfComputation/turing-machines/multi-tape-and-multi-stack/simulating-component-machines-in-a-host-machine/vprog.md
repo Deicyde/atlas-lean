@@ -1,6 +1,6 @@
 # Verifier host program
 
-**Verifier host program.** The program of the verifier host for a component machine $c$ with
+The program of the verifier host for a component machine $c$ with
 stacks $c_X$ and $c_W$, encodings $g_X$ and $g_W$ of bits as symbols of $c_X$ and $c_W$, and
 labels $\mathit{start}$, $\mathit{yes}$ and $\mathit{no}$, on the host stacks with the work
 alphabet of the dense-SAT verifier on the input stack. On an input $x \# w$ in the pair encoding,

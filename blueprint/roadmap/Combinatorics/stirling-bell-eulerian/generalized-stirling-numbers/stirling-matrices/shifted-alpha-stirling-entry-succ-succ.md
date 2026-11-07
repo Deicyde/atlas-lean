@@ -1,6 +1,6 @@
 # Recurrence for the shifted α-Stirling entries
 
-**Recurrence for the shifted α-Stirling entries.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $\alpha = (\alpha_j)_{j \ge 1}$ be a sequence in $R$, and write $\mathsf{S}_{i,j}$ for the entries
 of the shifted $\alpha$-Stirling matrix of $\alpha$, indexed from $0$. For all natural numbers $i$
 and $j$,

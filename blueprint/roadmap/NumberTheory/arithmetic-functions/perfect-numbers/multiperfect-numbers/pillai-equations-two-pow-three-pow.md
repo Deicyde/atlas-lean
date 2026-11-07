@@ -1,6 +1,6 @@
 # Two Pillai equations in powers of two and three
 
-**Two Pillai equations in powers of two and three.** For natural numbers $a$ and $b$, the
+For natural numbers $a$ and $b$, the
 integer equation $2^a - 3^b = -1$ holds if and only if $(a, b) = (1, 1)$ or $(a, b) = (3, 2)$.
 For natural numbers $a$, $b$ and $c$, the integer equation $2^a - 3^b = 2^c - 1$ holds if and
 only if $(a, b, c) = (2, 1, 1)$, or $(a, b, c) = (4, 2, 3)$, or $b = 0$ and $c = a$.

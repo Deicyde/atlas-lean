@@ -1,6 +1,6 @@
 # Deciding step of the comparison
 
-**Deciding step of the comparison.** Suppose the program has at label $\ell$ the bit-block
+Suppose the program has at label $\ell$ the bit-block
 comparison statement of stacks $a$ and $b$ (decoders $d_a$, $d_b$; scratch stacks arbitrary) with
 loop label $\ell$, equality label $\ell_=$ and mismatch label $\ell_{\ne}$. From a configuration
 at label $\ell$, with any state, in which the tops of $a$ and $b$ are not the same bit, the

@@ -1,6 +1,6 @@
 # Partial sums of a Dirichlet convolution over monic polynomials
 
-**Partial sums of a Dirichlet convolution over monic polynomials.** Let $F$ be a field, let
+Let $F$ be a field, let
 $\alpha, \beta \colon F[T] \to \mathbb{C}$, and let $\alpha * \beta$ be their Dirichlet
 convolution over monic divisors. For an integer $n$,
 $D[\alpha, \beta](n) = \sum_g (\alpha * \beta)(g)$, the sum over the monic $g \in F[T]$ of degree

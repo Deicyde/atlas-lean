@@ -1,6 +1,6 @@
 # Longest progressions of absolute least residues: neither squarefree nor prime power
 
-**Longest progressions of absolute least residues: neither squarefree nor prime power.** Let
+Let
 $n > 1$ be a natural number that is neither squarefree nor a prime power, let
 $\operatorname{rad}(n)$ be the product of the distinct primes dividing $n$ and $P$ the largest
 prime factor of $n$, and let $g(n)$ be the length of the longest arithmetic progression in the

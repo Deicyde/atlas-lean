@@ -1,6 +1,6 @@
 # At most two solutions of $x^2 + kx + 1 \equiv 0$ modulo an odd prime power
 
-**At most two solutions of $x^2 + kx + 1 \equiv 0$ modulo an odd prime power.** Let $p$
+Let $p$
 be an odd prime, let $m \ge 2$ and let $k \in \mathbb{N}$ with $k^2 - 4 \not\equiv 0 \pmod p$.
 Then at most two integers $x$ with $0 \le x < p^m$ satisfy
 $x^2 + kx + 1 \equiv 0 \pmod{p^m}$.

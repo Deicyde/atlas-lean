@@ -1,6 +1,6 @@
 # Kolmogorov's open map raising dimension
 
-**Kolmogorov's open map raising dimension.** An interior (open) mapping can raise dimension:
+An interior (open) mapping can raise dimension:
 there are compact metrizable spaces $X$ and $Y$, where $X$ has small inductive dimension exactly
 $1$ and $Y$ has small inductive dimension exactly $2$, and a continuous open surjective map
 $f \colon X \to Y$. A space has small inductive dimension exactly $n$ when its small inductive

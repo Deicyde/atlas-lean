@@ -1,6 +1,6 @@
 # Explicit bound for a cosine-weighted sum over primes
 
-**Explicit bound for a cosine-weighted sum over primes.** Let $K$ be a real number with
+Let $K$ be a real number with
 $\frac{1}{2\pi} \int_0^{2\pi} |\cos t - K| \, dt = 1 - K$ (this equation has exactly one real
 solution, $K \approx 0.3286$). Then for every real $\alpha$ with $0 < \alpha \le 1$ and every real
 $\tau$, $\sum_{p \le e^{1/\alpha}} |\cos(\tau \log p) - K|/p \le (1 - K) \log(1/\alpha) +

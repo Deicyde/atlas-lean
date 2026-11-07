@@ -1,6 +1,6 @@
 # Riesel repdigits with digit $101$ in bases $b \equiv 180 \pmod{11184810}$
 
-**Riesel repdigits with digit $101$ in bases $b \equiv 180 \pmod{11184810}$.** Let $b$ and $t$
+Let $b$ and $t$
 be natural numbers with $b \equiv 180 \pmod{11184810}$ and $t \equiv 171 \pmod{240}$. Then the
 $b$-repinteger $101_b^{(t)}$, which is the repdigit $101\,(b^t - 1)/(b - 1)$ because $101 < b$, is
 a Riesel number.

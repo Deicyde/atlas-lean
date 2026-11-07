@@ -1,6 +1,6 @@
 # FEEDBACK ARC SET is NP-complete
 
-**FEEDBACK ARC SET is NP-complete.** The decision problem FEEDBACK ARC SET belongs to NP, and
+The decision problem FEEDBACK ARC SET belongs to NP, and
 every decision problem in NP reduces to FEEDBACK ARC SET by a polynomial-time many-one
 reduction.
 

@@ -1,6 +1,6 @@
 # The empty digit word has Tribonacci value zero
 
-**The empty digit word has Tribonacci value zero.** The Tribonacci value of the empty
+The Tribonacci value of the empty
 digit word is $0$.
 
 ## Sources

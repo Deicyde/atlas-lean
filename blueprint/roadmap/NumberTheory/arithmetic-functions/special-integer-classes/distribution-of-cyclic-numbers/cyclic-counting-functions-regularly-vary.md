@@ -1,6 +1,6 @@
 # The cyclic counting functions vary regularly with index one
 
-**The cyclic counting functions vary regularly with index one.** For real $x$, let $A(x)$ be
+For real $x$, let $A(x)$ be
 the number of cyclic numbers $m$ with $1 \le m \le x$, let $\pi(x)$ be the number of primes
 $p \le x$, and let $cc(x)$ be the number of composite cyclic numbers $m \le x$, that is, cyclic
 numbers $m > 1$ that are not prime. Then for every real $\lambda > 0$, each of

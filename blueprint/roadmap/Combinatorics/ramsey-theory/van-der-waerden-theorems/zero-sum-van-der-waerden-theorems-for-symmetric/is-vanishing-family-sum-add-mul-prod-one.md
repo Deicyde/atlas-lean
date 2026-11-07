@@ -1,6 +1,6 @@
 # The sum-plus-product family is vanishing over $\mathbb{Z}/3\mathbb{Z}$
 
-**The sum-plus-product family is vanishing over $\mathbb{Z}/3\mathbb{Z}$.** Let $F_1$ be the
+Let $F_1$ be the
 family over $\mathbb{Z}/3\mathbb{Z}$ sending a block $(b_1, \dots, b_l)$ to
 $\sum_i b_i + \prod_i b_i$. Then $F_1$ is vanishing.
 

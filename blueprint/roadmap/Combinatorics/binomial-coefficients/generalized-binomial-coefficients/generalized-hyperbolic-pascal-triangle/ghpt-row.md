@@ -1,6 +1,6 @@
 # Rows of the generalized hyperbolic Pascal triangle
 
-**Rows of the generalized hyperbolic Pascal triangle.** Fix $q \in \mathbb{N}$, a type $R$ with
+Fix $q \in \mathbb{N}$, a type $R$ with
 an addition, and leg sequences $\alpha, \beta \colon \mathbb{N} \to R$ (left and right). Row $n$ of
 the generalized hyperbolic Pascal triangle linked to the mosaic $\{4, q\}$ is the list of its
 vertices from left to right, each recorded as a pair (type code, value) as in the interior step,

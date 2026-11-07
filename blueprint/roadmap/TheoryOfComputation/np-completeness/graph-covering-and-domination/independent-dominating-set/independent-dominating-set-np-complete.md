@@ -1,6 +1,6 @@
 # INDEPENDENT DOMINATING SET is NP-complete
 
-**INDEPENDENT DOMINATING SET is NP-complete.** The decision problem INDEPENDENT DOMINATING
+The decision problem INDEPENDENT DOMINATING
 SET belongs to NP, and every decision problem in NP has a polynomial-time many-one reduction to
 it.
 

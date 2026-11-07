@@ -1,6 +1,6 @@
 # Optimization problems
 
-**Optimization problems.** An optimization problem consists of a function $v$ assigning a
+An optimization problem consists of a function $v$ assigning a
 rational value $v(x, s)$ to every instance $x$ and every candidate solution $s$, both bitstrings;
 a feasibility predicate saying whether $s$ is a feasible solution for $x$; and a polynomial $p$
 with natural-number coefficients such that every feasible solution $s$ for $x$ has length at

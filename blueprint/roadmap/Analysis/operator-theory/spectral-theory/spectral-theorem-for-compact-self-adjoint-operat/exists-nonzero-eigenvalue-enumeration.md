@@ -1,6 +1,6 @@
 # Maximum principle for compact self-adjoint operators
 
-**Maximum principle for compact self-adjoint operators.** Let $T$ be a compact self-adjoint
+Let $T$ be a compact self-adjoint
 operator on a Hilbert space $H$ over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$. Then one of the
 following two alternatives holds.
 

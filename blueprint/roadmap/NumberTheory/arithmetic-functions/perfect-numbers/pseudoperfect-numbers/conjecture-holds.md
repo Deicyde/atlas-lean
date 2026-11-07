@@ -1,6 +1,6 @@
 # Reciprocals of primitive pseudoperfect numbers have finite sum
 
-**Reciprocals of primitive pseudoperfect numbers have finite sum.** Call a natural number
+Call a natural number
 $n$ pseudoperfect if $n > 0$ and $n$ is the sum of some set of distinct proper divisors of $n$,
 and primitive pseudoperfect if moreover no proper divisor of $n$ is pseudoperfect. Then the
 family $(1/n)$, indexed by the primitive pseudoperfect numbers $n$, is summable in $\mathbb{R}$,

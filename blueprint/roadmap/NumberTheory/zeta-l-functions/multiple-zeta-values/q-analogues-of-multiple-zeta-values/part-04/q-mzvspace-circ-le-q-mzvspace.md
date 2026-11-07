@@ -1,6 +1,6 @@
 # $\mathcal{Z}^\circ_{q,d}$ is contained in $\mathcal{Z}_{q,d}$
 
-**$\mathcal{Z}^\circ_{q,d}$ is contained in $\mathcal{Z}_{q,d}$.** For every natural number
+For every natural number
 $d$, the space $\mathcal{Z}^\circ_{q,d}$ is a subspace of $\mathcal{Z}_{q,d}$.
 
 ## Sources

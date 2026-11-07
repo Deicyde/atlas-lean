@@ -1,6 +1,6 @@
 # The complete local ring reconstruction conjecture is false
 
-**The complete local ring reconstruction conjecture is false.** There exist commutative
+There exist commutative
 Noetherian local rings $A$ and $B$, with maximal ideals $\mathfrak m_A$ and $\mathfrak m_B$, that
 are complete and Hausdorff for the $\mathfrak m_A$-adic and $\mathfrak m_B$-adic topologies, such
 that $A/\mathfrak m_A^r$ and $B/\mathfrak m_B^r$ are isomorphic as rings for every natural number

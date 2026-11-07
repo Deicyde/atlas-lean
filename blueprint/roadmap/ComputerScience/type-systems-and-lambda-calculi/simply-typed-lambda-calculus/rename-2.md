@@ -1,6 +1,6 @@
 # Renaming a simply typed term
 
-**Renaming a simply typed term.** For a renaming $\rho$ from a context $\Gamma$ to a context
+For a renaming $\rho$ from a context $\Gamma$ to a context
 $\Delta$, the renaming $t[\rho]$ of a term $t$ of type $A$ in context $\Gamma$ is the term of
 type $A$ in context $\Delta$ defined by recursion on $t$: $x[\rho] = \rho(x)$ for a variable
 $x$, $(f\,a)[\rho] = f[\rho]\,a[\rho]$ for an application, and

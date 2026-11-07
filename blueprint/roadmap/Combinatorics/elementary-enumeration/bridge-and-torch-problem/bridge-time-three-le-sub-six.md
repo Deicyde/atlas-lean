@@ -1,6 +1,6 @@
 # Six-step upper bound for capacity three
 
-**Six-step upper bound for capacity three.** Let $T_3(n)$ be the optimal crossing time of
+Let $T_3(n)$ be the optimal crossing time of
 $n$ people with crossing times $1, \dots, n$ on a bridge of capacity $3$ with one torch. For
 every $k \ge 9$, $T_3(k) \le T_3(k - 6) + 2k + 6$.
 

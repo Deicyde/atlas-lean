@@ -1,6 +1,6 @@
 # Robertson's conjecture holds for real-coefficient and close-to-convex functions
 
-**Robertson's conjecture holds for real-coefficient and close-to-convex functions.** Let
+Let
 $\mathbb{D} = \{z \in \mathbb{C} : |z| < 1\}$. For all functions $f, h : \mathbb{C} \to \mathbb{C}$
 such that $f$ belongs to the class $S$ (analytic at every point of $\mathbb{D}$, injective on
 $\mathbb{D}$, $f(0) = 0$ and $f'(0) = 1$), $h$ is a normalized odd square root of $f(z^2)$ (analytic

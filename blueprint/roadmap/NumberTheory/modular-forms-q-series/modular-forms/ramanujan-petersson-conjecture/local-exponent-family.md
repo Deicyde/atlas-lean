@@ -1,6 +1,6 @@
 # Family of local exponents
 
-**Family of local exponents.** A local-exponent family indexed by a type $\iota$ is a function
+A local-exponent family indexed by a type $\iota$ is a function
 $m : \iota \to \mathbb{R}$, the local Langlands exponents, with $0 \le m(i) \le 1/2$ for every
 $i \in \iota$.
 

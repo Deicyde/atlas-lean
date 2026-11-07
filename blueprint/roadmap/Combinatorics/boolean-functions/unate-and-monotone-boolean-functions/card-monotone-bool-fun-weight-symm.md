@@ -1,6 +1,6 @@
 # Weight symmetry of monotone Boolean functions
 
-**Weight symmetry of monotone Boolean functions.** For all $n \ge 0$ and all $w$ with
+For all $n \ge 0$ and all $w$ with
 $0 \le w \le 2^n$, the number of monotone $n$-variable Boolean functions of weight $w$ equals
 the number of monotone $n$-variable Boolean functions of weight $2^n - w$.
 

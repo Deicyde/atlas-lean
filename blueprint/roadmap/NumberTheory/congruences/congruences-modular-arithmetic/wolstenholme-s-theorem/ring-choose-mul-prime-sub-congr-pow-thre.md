@@ -1,6 +1,6 @@
 # The congruence for $\binom{np}{kp}$ modulo $p^3$
 
-**The congruence for $\binom{np}{kp}$ modulo $p^3$.** Let $p \ge 5$ be a prime, let $k$ be a
+Let $p \ge 5$ be a prime, let $k$ be a
 natural number and let $n$ be an integer. For an integer $x$ and a natural number $r$ write
 $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$, and let $v_p$ be the $p$-adic valuation on
 $\mathbb{Q}$. Let

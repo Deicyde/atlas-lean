@@ -1,6 +1,6 @@
 # Symmetric sets of rationals
 
-**Symmetric sets of rationals.** A finite set $S$ of rational numbers is symmetric if it is
+A finite set $S$ of rational numbers is symmetric if it is
 symmetric of some type $(i, j)$ with $i, j < |S|$.
 
 ## Sources

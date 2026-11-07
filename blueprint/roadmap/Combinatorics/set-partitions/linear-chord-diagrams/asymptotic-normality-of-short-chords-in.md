@@ -1,6 +1,6 @@
 # Asymptotic normality of short chords in non-crossing chord diagrams
 
-**Asymptotic normality of short chords in non-crossing chord diagrams.** The short-chord count in a uniformly chosen non-crossing linear `k`-chord diagram is
+The short-chord count in a uniformly chosen non-crossing linear `k`-chord diagram is
 asymptotically normal with the stated mean and variance.
 
 ## Sources

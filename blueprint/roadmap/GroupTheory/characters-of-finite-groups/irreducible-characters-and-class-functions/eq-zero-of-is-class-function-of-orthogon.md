@@ -1,6 +1,6 @@
 # A class function orthogonal to all irreducible characters vanishes
 
-**A class function orthogonal to all irreducible characters vanishes.** Let $G$ be a finite
+Let $G$ be a finite
 group and let $f : G \to \mathbb{C}$ satisfy $f(hgh^{-1}) = f(g)$ for all $g, h \in G$. Suppose
 that for every simple finite-dimensional complex representation $W$ of $G$, with character
 $\chi_W$,

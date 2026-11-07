@@ -1,6 +1,5 @@
 # A two-parameter polynomial identity for generalized central binomial coefficients
 
-**A two-parameter polynomial identity for generalized central binomial coefficients.**
 Write $\binom{a}{b} = \Gamma(a+1)/(\Gamma(b+1)\,\Gamma(a-b+1))$ for the generalized binomial
 coefficient of complex numbers $a, b$. For every natural number $n$ and all complex numbers
 $u, v, x$ with $\operatorname{Re} u > -1$ and $\operatorname{Re} v > -1$,

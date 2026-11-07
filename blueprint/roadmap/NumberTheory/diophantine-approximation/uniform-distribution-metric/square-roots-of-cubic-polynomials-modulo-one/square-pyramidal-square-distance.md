@@ -1,6 +1,6 @@
 # Distance from a square pyramidal number to the nearest square
 
-**Distance from a square pyramidal number to the nearest square.** For a natural number
+For a natural number
 $n$, let $P_n$ be the $n$-th square pyramidal number and $s = \lfloor \sqrt{P_n} \rfloor$. The
 distance from $P_n$ to the nearest square is
 

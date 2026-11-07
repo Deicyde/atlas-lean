@@ -1,6 +1,6 @@
 # Overlap alignment score
 
-**Overlap alignment score.** Given a substitution score $\sigma$ and a gap score $g$, the
+Given a substitution score $\sigma$ and a gap score $g$, the
 overlap score of sequences $s$ and $t$ is the maximum, with floor $0$, of the Needleman–Wunsch
 scores of the overlap pairs of $s$ and $t$: the pairs $(s', t')$ where $s'$ is a suffix of $s$
 and $t'$ a prefix of $t$, or $s'$ is a prefix of $s$ and $t'$ a suffix of $t$.

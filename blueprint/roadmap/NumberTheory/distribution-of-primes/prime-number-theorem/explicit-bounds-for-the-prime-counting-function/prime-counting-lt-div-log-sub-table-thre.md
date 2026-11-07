@@ -1,6 +1,6 @@
 # Axler's Table 3 upper bounds for the prime-counting function
 
-**Axler's Table 3 upper bounds for the prime-counting function.** Let $\pi(x)$ denote the
+Let $\pi(x)$ denote the
 number of primes $p \le x$ and $\log$ the natural logarithm. For each of the three rows
 $(a_3, a_4, a_5, x_0)$ equal to $(14.893, 0, 0, 142464507937911)$, $(12.975666, 79.962, 0, 22)$
 and $(12.975666, 71.048668, 533.594, 32)$, every real $x \ge x_0$ satisfies

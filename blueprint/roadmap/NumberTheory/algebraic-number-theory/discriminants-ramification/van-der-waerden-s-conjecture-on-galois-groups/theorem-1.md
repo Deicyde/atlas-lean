@@ -1,6 +1,6 @@
 # Van der Waerden's conjecture (Bhargava)
 
-**Van der Waerden's conjecture (Bhargava).** For every natural number $n \ge 3$ there is a
+For every natural number $n \ge 3$ there is a
 constant $C$ such that $E_n(H) \le C H^{n-1}$ for all sufficiently large natural numbers $H$,
 where $E_n(H)$ is the number of monic polynomials of degree $n$ with integer coefficients, all
 non-leading coefficients of absolute value at most $H$, whose Galois group over $\mathbb{Q}$

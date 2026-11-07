@@ -1,6 +1,6 @@
 # Pentagonal sum of $s_m$ and positive rank
 
-**Pentagonal sum of $s_m$ and positive rank.** Let $m \ge 1$ and $n$ be natural numbers.
+Let $m \ge 1$ and $n$ be natural numbers.
 Write $s_m(k)$ for the sum of the different parts that appear at least $m$ times in partitions
 of $k$, and $R(k)$ for the number of partitions of $k$ with positive Dyson rank. Then
 

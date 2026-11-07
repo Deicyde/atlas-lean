@@ -1,6 +1,6 @@
 # Subsets of $\{1, 2, 3, 4\}$ with no two consecutive elements
 
-**Subsets of $\{1, 2, 3, 4\}$ with no two consecutive elements.** There are exactly $8$
+There are exactly $8$
 subsets of $\{1, 2, 3, 4\}$ in which no two elements differ by $1$.
 
 This is the case $n = 4$ of the identity $S^{\{1\}}_n = F_{n+2}$, where $S^{\{1\}}_n$ is the

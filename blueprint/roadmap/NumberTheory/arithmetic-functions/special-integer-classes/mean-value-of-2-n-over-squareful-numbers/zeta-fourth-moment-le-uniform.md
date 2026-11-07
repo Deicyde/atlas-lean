@@ -1,6 +1,6 @@
 # Uniform fourth-moment bound for the Riemann zeta function
 
-**Uniform fourth-moment bound for the Riemann zeta function.** There are real constants $C$
+There are real constants $C$
 and $T_0$ such that for every real $\sigma$ with $1/2 \le \sigma \le 1$ and every real
 $T \ge T_0$,
 

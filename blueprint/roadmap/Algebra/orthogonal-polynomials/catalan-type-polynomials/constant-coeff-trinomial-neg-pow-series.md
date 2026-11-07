@@ -1,6 +1,6 @@
 # Constant term of the trinomial series
 
-**Constant term of the trinomial series.** For all real numbers $\lambda, c, \alpha, \beta$
+For all real numbers $\lambda, c, \alpha, \beta$
 and every natural number $m \ne 0$, the negative real power of the trinomial
 $c - \alpha t + \beta t^m$ with exponent $\lambda$ as a power series in $t$, that is, the real
 power $c^{-\lambda}$ times the binomial series $(1 + u)^{-\lambda}$ with

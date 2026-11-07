@@ -1,6 +1,6 @@
 # Standard Young tableau
 
-**Standard Young tableau.** A standard Young tableau of order $n$ is encoded by a map $T$ that
+A standard Young tableau of order $n$ is encoded by a map $T$ that
 assigns to each entry $i \in \{0, \dots, n-1\}$ a cell $T(i) = (r_i, c_i)$ with row and column
 indices in $\{0, \dots, n-1\}$. The map $T$ is a standard Young tableau when it is injective
 and, for every entry $i$ and every cell $(r, c)$ with $r \le r_i$ and $c \le c_i$, there is an

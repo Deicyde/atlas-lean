@@ -1,6 +1,6 @@
 # Counting necklaces with identity product
 
-**Counting necklaces with identity product.** Let $G$ be a finite group and $n \ge 1$. For an
+Let $G$ be a finite group and $n \ge 1$. For an
 $n$-tuple $x = (x_0, \dots, x_{n-1}) \in G^n$ let its necklace be the set of its $n$ cyclic
 rotations $(x_m, x_{m+1}, \dots, x_{m+n-1})$, $0 \le m < n$, with indices taken mod $n$. Then the
 number of necklaces of tuples $x$ with $x_0 x_1 \cdots x_{n-1} = 1$ is

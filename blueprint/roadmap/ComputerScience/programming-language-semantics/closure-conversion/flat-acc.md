@@ -1,6 +1,6 @@
 # Accessors inside flat code
 
-**Accessors inside flat code.** For a list $L$ of natural numbers, the flat accessors for $L$
+For a list $L$ of natural numbers, the flat accessors for $L$
 assign a target term to each variable: variable $0$ is sent to $\mathsf{fst}\,\#0$, and variable
 $j + 1$ is sent to $\mathsf{fst}\,(\mathsf{snd}^k\,(\mathsf{snd}\,\#0))$. Here $\#0$ is target
 variable $0$, $\mathsf{snd}^k$ applies the second projection $k$ times, and $k$ is the index of the

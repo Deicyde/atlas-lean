@@ -1,6 +1,6 @@
 # Shifting a production into the regularity grammar
 
-**Shifting a production into the regularity grammar.** Let $T$ be a finite alphabet with
+Let $T$ be a finite alphabet with
 decidable equality, and consider the alphabet $T \sqcup \{\#, 0, 1\}$ of the letters of $T$, a
 separator $\#$ and two bits $0$ and $1$. An encoded production $(n, \alpha)$ over $T$, with
 left-hand side the nonterminal $n$ and right-hand side $\alpha$, is sent to the encoded production

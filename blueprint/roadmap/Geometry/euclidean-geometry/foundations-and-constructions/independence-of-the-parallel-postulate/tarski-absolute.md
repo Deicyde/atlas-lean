@@ -1,6 +1,6 @@
 # Tarski's absolute plane geometry
 
-**Tarski's absolute plane geometry.** A model of Tarski's absolute plane geometry is a type
+A model of Tarski's absolute plane geometry is a type
 $M$ of points with a betweenness relation $B$ and a congruence relation $C$, where $B(a, b, c)$
 means that $b$ lies between $a$ and $c$ (allowing $b = a$ or $b = c$) and $C(a, b, c, d)$ means
 that the segment $ab$ is congruent to the segment $cd$, satisfying the following axioms, in which

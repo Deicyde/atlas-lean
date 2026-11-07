@@ -1,6 +1,6 @@
 # A prime between $p/2$ and $p$ divides the representation counts of $p$
 
-**A prime between $p/2$ and $p$ divides the representation counts of $p$.** For integers
+For integers
 $k, n \ge 1$, let $r_k(n)$ be the number of representations of $n$ as an ordered sum of $k$ squares
 of integers and $t_k(n)$ the number of representations of $n$ as an ordered sum of $k$ triangular
 numbers $m(m+1)/2$ with $m \ge 0$. Let $p$ be an odd prime and $\ell$ a prime with

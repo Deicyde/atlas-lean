@@ -1,6 +1,6 @@
 # Array binary search membership test agrees with binary search
 
-**Array binary search membership test agrees with binary search.** Let $A$ be an array with
+Let $A$ be an array with
 entries in a type $\alpha$, let $k \in \alpha$, let $\mathrm{lt}$ be any Boolean-valued comparison
 on $\alpha$, and let $\ell$ and $h$ be natural numbers. Lean core's Boolean binary search
 membership test for $k$ in $A$, with comparison $\mathrm{lt}$ and bounds $\ell$ and $h$, returns

@@ -1,6 +1,6 @@
 # NS property of sections and the three-dimensional chocolate bar
 
-**NS property of sections and the three-dimensional chocolate bar.** Let
+Let
 $F : \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ be monotone for the componentwise order. Then
 the sections $x \mapsto F(n, x)$ and $w \mapsto F(w, n)$ have the NS property for every
 $n \in \mathbb{N}$ if and only if, for all natural numbers $w$, $x$, $y$ with $y \le F(w, x)$,

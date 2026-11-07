@@ -1,6 +1,6 @@
 # Denotational correctness of the call-by-name CPS translation
 
-**Denotational correctness of the call-by-name CPS translation.** Fix an answer type $R$ and
+Fix an answer type $R$ and
 an interpretation of the base types; write $D(A)$ for the set of values of a simple type $A$,
 $A^\ast$ for its call-by-name CPS translation, and $\sim_A$ for the call-by-name logical
 relation. Let $t$ be a term of type $A$ in a context $\Gamma$, and let $\eta$ be an environment

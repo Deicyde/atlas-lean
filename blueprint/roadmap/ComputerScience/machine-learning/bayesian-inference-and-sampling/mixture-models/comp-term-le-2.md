@@ -1,6 +1,6 @@
 # The mean and covariance updates maximize each component term
 
-**The mean and covariance updates maximize each component term.** Let
+Let
 $x_1, \dots, x_N \in \mathbb{R}^d$ be data in general position (at least one point, and not all
 in an affine hyperplane), let $\theta$ be valid mixture parameters with responsibilities
 $r_{nk}$, and fix a component $k$. Write $\mathcal{N}(x \mid \mu, S)$ for the multivariate

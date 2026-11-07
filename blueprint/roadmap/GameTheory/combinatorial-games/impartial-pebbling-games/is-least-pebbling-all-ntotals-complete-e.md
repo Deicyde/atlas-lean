@@ -1,6 +1,6 @@
 # All-N threshold of $(2:1)$-pebbling on $K_n$ for even $n$
 
-**All-N threshold of $(2:1)$-pebbling on $K_n$ for even $n$.** For every even $n \ge 6$, the
+For every even $n \ge 6$, the
 least number $m$ such that every $(2:1)$-pebbling game on the complete graph $K_n$ with $m$
 pebbles in total is an N-game, written $m^{(2:1)}(K_n)$, exists and equals $n + 7$.
 

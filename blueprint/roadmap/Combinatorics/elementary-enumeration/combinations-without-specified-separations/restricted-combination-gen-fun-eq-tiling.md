@@ -1,6 +1,6 @@
 # Generating functions of restricted combinations and restricted-overlap tilings
 
-**Generating functions of restricted combinations and restricted-overlap tilings.** Let $Q$
+Let $Q$
 be a finite set of natural numbers and let $q$ be its largest element ($q = 0$ if $Q$ is empty).
 Write $S^Q_{n,k}$ for the number of $k$-subsets of $\{1, \dots, n\}$ in which no two elements
 differ by an element of $Q$, and $B^Q_{n,k}$ for the number of restricted-overlap tilings of an

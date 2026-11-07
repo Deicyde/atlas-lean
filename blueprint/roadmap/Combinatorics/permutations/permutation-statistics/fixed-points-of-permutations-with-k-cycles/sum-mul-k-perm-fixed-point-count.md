@@ -1,6 +1,6 @@
 # Total number of fixed points of permutations with a given number of cycles
 
-**Total number of fixed points of permutations with a given number of cycles.** For natural
+For natural
 numbers $n$, $k$ and $j$, let $a(n, k, j)$ be the number of permutations of an $n$-element set
 with exactly $k$ cycles (fixed points counted as cycles of length one) and exactly $j$ fixed
 points, and let $c(n, k)$ be the unsigned Stirling number of the first kind. Then for every

@@ -1,6 +1,6 @@
 # The Weierstrass function of the Eisenstein lattice
 
-**The Weierstrass function of the Eisenstein lattice.** Let $\rho = e^{2\pi i/3}$, let
+Let $\rho = e^{2\pi i/3}$, let
 $\varpi_1 = \int_0^1 (1 - t^3)^{-2/3}\,dt$, and let $\wp$ be the Weierstrass function of the
 lattice $\Lambda = \varpi_1 \mathbb{Z} + \varpi_1 \rho \mathbb{Z}$, with derivative $\wp'$. Then for
 every $u \in \mathbb{C} \setminus \Lambda$:

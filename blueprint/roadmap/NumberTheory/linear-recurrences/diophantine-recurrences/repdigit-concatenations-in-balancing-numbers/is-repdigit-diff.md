@@ -1,6 +1,6 @@
 # Differences of two repdigits
 
-**Differences of two repdigits.** A natural number $n$ is a difference of two repdigits if
+A natural number $n$ is a difference of two repdigits if
 there are repdigits $a$ and $b$ with $a = n + b$, that is, $n = a - b$.
 
 ## Sources

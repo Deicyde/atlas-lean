@@ -1,6 +1,6 @@
 # Order type of a self-similar compact set
 
-**Order type of a self-similar compact set.** Let $K$ be a self-similar compact set of module
+Let $K$ be a self-similar compact set of module
 $\mu \ge 1$ and ratio $\rho$. Then there is a strictly decreasing map $\alpha \mapsto K[\alpha]$
 from the ordinals $\alpha \le \omega^\omega$ onto $K$ (so $K$ has order type $\omega^\omega + 1$
 under the reverse order) with $K[\omega^\omega] = 0$, $K[0] > 0$ and $K \subseteq [0, K[0]]$.

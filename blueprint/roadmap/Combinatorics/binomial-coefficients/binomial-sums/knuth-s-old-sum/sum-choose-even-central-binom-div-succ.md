@@ -1,6 +1,6 @@
 # Even-index binomial sum of weighted central binomial coefficients
 
-**Even-index binomial sum of weighted central binomial coefficients.** Write
+Write
 $C_m = \binom{2m}{m}/(m+1)$ for the $m$-th Catalan number. For every natural number $n$,
 
 $$\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{1}{(k+1) 2^{2k}} \binom{2k}{k} =

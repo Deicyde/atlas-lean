@@ -1,6 +1,6 @@
 # Functions in the Selberg class
 
-**Functions in the Selberg class.** A function in the Selberg class consists of Dirichlet
+A function in the Selberg class consists of Dirichlet
 coefficients $a \colon \mathbb{N} \to \mathbb{C}$, a function $F \colon \mathbb{C} \to \mathbb{C}$,
 a number $r \in \mathbb{N}$ of Gamma factors, a conductor $Q > 0$, real numbers
 $\lambda_1, \dots, \lambda_r > 0$, complex numbers $\mu_1, \dots, \mu_r$ with

@@ -1,6 +1,6 @@
 # Characterization of the position functions
 
-**Characterization of the position functions.** Let $p$ be a function from the natural
+Let $p$ be a function from the natural
 numbers to the natural numbers. There is an infinite word $w$ over the letters $a$ and $b$ that
 starts with $a$, in which both letters occur infinitely often, and whose position function for
 $a$ satisfies $p_a(n) = p(n)$ for all $n \ge 1$, if and only if $p(n) < p(n+1)$ for all $n \ge 1$,

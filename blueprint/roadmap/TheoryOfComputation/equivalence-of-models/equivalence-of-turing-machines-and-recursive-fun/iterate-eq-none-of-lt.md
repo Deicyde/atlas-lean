@@ -1,6 +1,6 @@
 # A run stays stopped after a configuration without successor
 
-**A run stays stopped after a configuration without successor.** Let
+Let
 $f : \sigma \to \mathrm{Option}\ \sigma$ be a step function and $a, b \in \sigma$, and write
 $f^{(k)}(a) \in \mathrm{Option}\ \sigma$ for the result of $k$ steps from $a$: the $k$-th
 iterate, applied to $\mathrm{some}\ a$, of the map sending $\mathrm{none}$ to $\mathrm{none}$

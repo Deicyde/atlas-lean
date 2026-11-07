@@ -1,3 +1,3 @@
 # Union of two increasing events is increasing
 
-**Union of two increasing events is increasing.** The union of two increasing events is increasing (`IsUpperSet.union`).
+The union of two increasing events is increasing (`IsUpperSet.union`).

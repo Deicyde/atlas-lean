@@ -1,6 +1,6 @@
 # Honsberger identity for Fibonacci p-numbers
 
-**Honsberger identity for Fibonacci p-numbers.** Let $p$, $m$ and $n$ be positive integers
+Let $p$, $m$ and $n$ be positive integers
 with $p \le m + 1$ and $p \le n + 2$, and write $F_p(r)$ for the Fibonacci $p$-numbers. Suppose
 that $F_p(0) = 0$, that $F_p(r) = 1$ for $1 \le r \le p$, and that
 $F_p(r) = F_p(r-1) + F_p(r-p-1)$ for $r > p$ (these hold by definition). Then

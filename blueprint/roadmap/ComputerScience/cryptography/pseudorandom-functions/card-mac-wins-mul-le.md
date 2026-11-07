@@ -1,6 +1,6 @@
 # Counting forgeries against a random function
 
-**Counting forgeries against a random function.** Let $M$ and $T$ be finite sets and let $c$ be
+Let $M$ and $T$ be finite sets and let $c$ be
 an adaptive oracle algorithm that queries messages in $M$, receives tags in $T$ and outputs a pair
 in $M \times T$. Call a function $f \colon M \to T$ a win for $c$ when the run of $c$ with oracle
 $f$ outputs a pair $(m, t)$ with $f(m) = t$ and $m$ not among the messages queried in that run.

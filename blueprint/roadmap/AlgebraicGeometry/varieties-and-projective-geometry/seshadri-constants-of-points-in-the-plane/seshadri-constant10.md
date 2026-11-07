@@ -1,6 +1,6 @@
 # Ten-point Seshadri constant
 
-**Ten-point Seshadri constant.** The ten-point Seshadri constant is the generic
+The ten-point Seshadri constant is the generic
 ten-point Seshadri constant: the supremum, over all configurations of ten pairwise distinct
 points of $\mathbb{C}^2$, of their affine Seshadri constants.
 

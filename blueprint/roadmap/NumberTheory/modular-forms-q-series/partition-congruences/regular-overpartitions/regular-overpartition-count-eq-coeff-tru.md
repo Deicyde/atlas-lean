@@ -1,6 +1,6 @@
 # Truncated generating function for $\ell$-regular overpartitions
 
-**Truncated generating function for $\ell$-regular overpartitions.** Let $\ell \ge 1$, $N$ and
+Let $\ell \ge 1$, $N$ and
 $n \le N$ be natural numbers, and let $A_\ell(n)$ be the number of overpartitions of $n$ with no
 part divisible by $\ell$. Then the coefficient of $X^n$ in the polynomial
 

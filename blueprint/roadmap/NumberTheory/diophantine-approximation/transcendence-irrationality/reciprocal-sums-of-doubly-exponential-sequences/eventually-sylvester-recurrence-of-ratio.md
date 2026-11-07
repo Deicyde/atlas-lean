@@ -1,6 +1,6 @@
 # Erdős–Straus and Badea criterion for the Sylvester recurrence
 
-**Erdős–Straus and Badea criterion for the Sylvester recurrence.** Let $(a_n)_{n \ge 0}$ be a
+Let $(a_n)_{n \ge 0}$ be a
 sequence of positive integers with $a_n^2 / a_{n+1} \to 1$ such that $\sum_n 1 / a_n$ converges
 to a rational number. Suppose that
 $\liminf_n (a_0 \cdots a_{n-1} / a_n)(1 - a_n^2 / a_{n+1}) \ge 0$, that is, for every

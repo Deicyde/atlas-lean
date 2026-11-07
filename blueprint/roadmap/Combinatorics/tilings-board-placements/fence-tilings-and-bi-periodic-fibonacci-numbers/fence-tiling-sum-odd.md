@@ -1,6 +1,6 @@
 # Recurrence for weighted fence tilings of odd boards
 
-**Recurrence for weighted fence tilings of odd boards.** Let $a$ and $b$ be elements of a
+Let $a$ and $b$ be elements of a
 commutative semiring $R$, and let $S_m$ be the weighted number of tilings of an $m$-board, with
 cells numbered $1, \dots, m$, by half-squares and $(1/2, 1/2)$-fences, a half-square weighing $a$
 in an odd cell and $b$ in an even cell. Then for every odd $n \ge 3$,

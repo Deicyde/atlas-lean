@@ -1,6 +1,6 @@
 # Arithmetic term for the gcd in base $5$
 
-**Arithmetic term for the gcd in base $5$.** For all natural numbers $a, b \ge 1$,
+For all natural numbers $a, b \ge 1$,
 
 $$
 \gcd(a, b) + 1 = \left\lfloor \frac{5^{ab(ab+a+b)}}{(5^{a^2 b} - 1)(5^{a b^2} - 1)} \right\rfloor

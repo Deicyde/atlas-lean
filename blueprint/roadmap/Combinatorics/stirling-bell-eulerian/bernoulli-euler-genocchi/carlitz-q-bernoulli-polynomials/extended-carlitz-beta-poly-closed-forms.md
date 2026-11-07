@@ -1,6 +1,6 @@
 # Closed forms for the extended Carlitz $q$-Bernoulli polynomials
 
-**Closed forms for the extended Carlitz $q$-Bernoulli polynomials.** Let $q > 0$ with
+Let $q > 0$ with
 $q \ne 1$ be real, write $[x] = (q^x - 1)/(q - 1)$, let $r$ be a natural number, and let
 $\beta_n^{(r)}(x)$ be the extended Carlitz $q$-Bernoulli polynomials. Put $a_k = (k + r)/[k + r]$
 for natural $k$ with $k + r \ne 0$, and $a_0 = 1$ if $r = 0$. Then:

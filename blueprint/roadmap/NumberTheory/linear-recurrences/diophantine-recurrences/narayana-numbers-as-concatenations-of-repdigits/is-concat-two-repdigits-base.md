@@ -1,6 +1,6 @@
 # Concatenations of two repdigits in a general base
 
-**Concatenations of two repdigits in a general base.** A natural number $n$ is a
+A natural number $n$ is a
 concatenation of two repdigits in base $b$ if there are digits $a_1, a_2$ with
 $1 \le a_1 \le b - 1$, $0 \le a_2 \le b - 1$ and $a_1 \ne a_2$, and block lengths $l, m \ge 1$,
 such that $(b - 1) n = a_1 (b^l - 1) b^m + a_2 (b^m - 1)$. The digit conditions force

@@ -1,6 +1,6 @@
 # Kolmogorov three-series theorem, necessity, first series
 
-**Kolmogorov three-series theorem, necessity, first series.** Let $(X_n)_{n \ge 0}$ be a
+Let $(X_n)_{n \ge 0}$ be a
 sequence of independent measurable real random variables on a probability space
 $(\Omega, \mu)$ whose partial sums converge almost surely: there is a function
 $S : \Omega \to \mathbb{R}$ such that $\sum_{i < n} X_i(\omega) \to S(\omega)$ as $n \to \infty$

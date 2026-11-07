@@ -1,6 +1,6 @@
 # The empty set is not piecewise syndetic in a semigroup
 
-**The empty set is not piecewise syndetic in a semigroup.** In every semigroup $S$, the empty
+In every semigroup $S$, the empty
 subset of $S$ is not piecewise syndetic.
 
 ## Sources

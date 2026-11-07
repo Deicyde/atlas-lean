@@ -1,6 +1,6 @@
 # Encoding data for a finite TM2 machine
 
-**Encoding data for a finite TM2 machine.** An encoding of a finite TM2 machine $M$ consists
+An encoding of a finite TM2 machine $M$ consists
 of a number $K$, a map $\kappa$ from the stacks of $M$ to the naturals below $K$ and a map
 $\kappa'$ from naturals to stacks with $\kappa'(\kappa(k)) = k$ for every stack $k$ and
 $\kappa(\kappa'(n)) = n$ for every $n < K$; a number $A_0$, a map $\lambda$ from pairs (label

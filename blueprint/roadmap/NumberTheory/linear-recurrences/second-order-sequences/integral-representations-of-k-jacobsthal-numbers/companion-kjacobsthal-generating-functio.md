@@ -1,6 +1,6 @@
 # Generating function of the companion $k$-Jacobsthal numbers
 
-**Generating function of the companion $k$-Jacobsthal numbers.** For every natural number $k$
+For every natural number $k$
 and all integers $a, b$, the companion $k$-Jacobsthal numbers $\mathcal{J}_{k,n} =
 \mathcal{J}_{k,n}(a, b)$ satisfy, in the ring $\mathbb{Z}[[x]]$ of formal power series,
 

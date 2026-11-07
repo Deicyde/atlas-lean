@@ -1,6 +1,6 @@
 # Number of coprime pairs
 
-**Number of coprime pairs.** For $n = (n_0, \dots, n_{k-1}) \in \mathbb{N}^k$, the number of
+For $n = (n_0, \dots, n_{k-1}) \in \mathbb{N}^k$, the number of
 coprime pairs of $n$ is the number of index pairs $(i, j)$ with $0 \le i < j < k$ and
 $\gcd(n_i, n_j) = 1$.
 

@@ -1,6 +1,6 @@
 # The unary reader of the Hamiltonian path verifier rejects an unterminated number
 
-**The unary reader of the Hamiltonian path verifier rejects an unterminated number.** Let
+Let
 $\mathsf{src} \ne c$ be stacks and $\ell$, $m$ labels such that the verifier's statement at
 $\ell$ is the unary reader from $\mathsf{src}$ onto $c$ with own label $\ell$ and next label
 $m$. Let $l$ be a bit list from which no unary length can be read (that is, $l$ contains no

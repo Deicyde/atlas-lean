@@ -1,3 +1,3 @@
 # Pulling back a partition along a composite
 
-**Pulling back a partition along a composite.** Pulling back along a composite is pulling back twice.
+Pulling back along a composite is pulling back twice.

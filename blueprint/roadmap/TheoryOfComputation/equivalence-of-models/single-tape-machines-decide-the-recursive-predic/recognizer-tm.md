@@ -1,6 +1,6 @@
 # The recognizer of a multi-stack machine
 
-**The recognizer of a multi-stack machine.** Let $M$ be a finite multi-stack machine all of
+Let $M$ be a finite multi-stack machine all of
 whose stack alphabets are finite, and let $e$ be an identification of the alphabet of its input
 stack with the booleans. The recognizer of $M$ is the single-tape machine, over the non-blank
 cells of the multi-stack-to-single-tape translation of $M$, that first runs the machine

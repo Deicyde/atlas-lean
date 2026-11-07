@@ -1,6 +1,6 @@
 # Overlap statistic on pairs of words
 
-**Overlap statistic on pairs of words.** Fix natural numbers $k$, $n \ge 1$, $r \ge 1$ and a
+Fix natural numbers $k$, $n \ge 1$, $r \ge 1$ and a
 rational number $q$. For words $u$ and $v$ over an alphabet of $k$ letters, the overlap of
 $(u, v)$ is the number of positions of $v$ whose letter occurs in $u$. Write $[x^m] F$ for the
 coefficient of $x^m$ in a formal power series $F$ over $\mathbb{Q}$, $S(m, j)$ for the Stirling

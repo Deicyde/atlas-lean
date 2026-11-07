@@ -1,6 +1,6 @@
 # The $\varphi$-analog of the 5-core counts in terms of the 5-core counts
 
-**The $\varphi$-analog of the 5-core counts in terms of the 5-core counts.** Let
+Let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$, let $c_5(n)$ be the coefficient of $q^n$ in $f_5^5 / f_1$,
 let $\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ and let $\bar a_5(n)$ be the coefficient of
 $q^n$ in $\varphi(-q^5)^5 / \varphi(-q)$. For every natural number $n$,

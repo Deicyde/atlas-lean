@@ -1,6 +1,6 @@
 # Eulerian function of a group (G. E. Wall)
 
-**Eulerian function of a group (G. E. Wall).** Let $G$ be a group and let $f$ be the order
+Let $G$ be a group and let $f$ be the order
 polynomial. A function $\varphi$ from the subgroups of $G$ to the integer polynomial ring
 $\mathbb{Z}[x_0, x_1, \dots]$ is an Eulerian function of $G$ if $\sum_{K \le H} \varphi(K) = f(H)$
 for every subgroup $H$ of $G$, the sum running over the subgroups $K$ of $H$. The value

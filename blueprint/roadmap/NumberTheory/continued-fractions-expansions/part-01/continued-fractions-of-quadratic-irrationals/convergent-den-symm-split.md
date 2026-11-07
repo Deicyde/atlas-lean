@@ -1,6 +1,6 @@
 # Splitting the last convergent denominator of a symmetric sequence
 
-**Splitting the last convergent denominator of a symmetric sequence.** Let $l$ be a
+Let $l$ be a
 natural number and let $a_0, a_1, a_2, \dots$ be natural numbers with convergent denominators
 $q_0, q_1, q_2, \dots$, such that $a_i = a_{l-i}$ for $1 \le i < l$. Then for every $i$ with
 $1 \le i \le l - 2$,

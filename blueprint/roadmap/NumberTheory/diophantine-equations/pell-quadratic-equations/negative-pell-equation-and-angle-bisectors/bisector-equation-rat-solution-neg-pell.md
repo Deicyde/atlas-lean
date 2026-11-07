@@ -1,6 +1,6 @@
 # Rational solutions of the bisector equation for square-free $d > 1$
 
-**Rational solutions of the bisector equation for square-free $d > 1$.** Let $d > 1$ be a
+Let $d > 1$ be a
 square-free integer and let $a, b, c$ be rational numbers with $|a| \ne |b|$ and
 
 $$(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1).$$

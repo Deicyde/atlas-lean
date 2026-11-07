@@ -1,6 +1,6 @@
 # The permutiple string of $87912 = 4 \cdot 21978$
 
-**The permutiple string of $87912 = 4 \cdot 21978$.** The string of inputs
+The string of inputs
 $(2, 8)(1, 7)(9, 9)(7, 1)(8, 2)$ is a $(4, 10)$-permutiple string. It is produced by the
 $(4, 10)$-permutiple $87912 = 4 \cdot 21978$, whose multiplication reverses the digits.
 

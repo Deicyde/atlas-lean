@@ -1,6 +1,6 @@
 # Polynomial functions on partitions characterize $\mathcal{Z}_q$
 
-**Polynomial functions on partitions characterize $\mathcal{Z}_q$.** Let
+Let
 $\mathcal{Z}_q = \mathcal{Z}_{q,0}$ be the space of general qMZVs, and for natural numbers $r$
 and $N$ let $\mathcal{P}_r(N)$ be the set of partitions of $N$ of length $r$ in Stanley
 coordinates. A power series $S = \sum_{N \ge 0} a_N q^N \in \mathbb{Q}[[q]]$ lies in

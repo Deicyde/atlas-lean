@@ -1,6 +1,6 @@
 # Left child of the root of the classical Markov tree
 
-**Left child of the root of the classical Markov tree.** For $k = 0$, the vertex of the
+For $k = 0$, the vertex of the
 Markov tree $MT(0)$ reached from the root by one left step is $(1, 5, 2)$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Alternating binomial identities for generalized Leonardo numbers
 
-**Alternating binomial identities for generalized Leonardo numbers.** Let $k$ be an integer,
+Let $k$ be an integer,
 and let $L_{k,n}$ and $M_{k,n}$ denote the generalized Leonardo numbers and the dual generalized
 Leonardo numbers. For all natural numbers $n \ge 1$ and $r$,
 

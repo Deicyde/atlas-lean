@@ -1,6 +1,6 @@
 # Half-step sine sum for even modulus and even multiplier
 
-**Half-step sine sum for even modulus and even multiplier.** Let $N$ be a positive even
+Let $N$ be a positive even
 natural number and $q$ an even natural number. Then $\sum_{\ell=1}^{N/2} \sin(q \ell \pi / N)$
 equals $0$ if $q \equiv 0 \pmod 4$ and $\cot(q\pi / (2N))$ if $q \equiv 2 \pmod 4$.
 

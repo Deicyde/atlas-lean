@@ -1,6 +1,6 @@
 # Infinitary Hales–Jewett theorem
 
-**Infinitary Hales–Jewett theorem.** Let $A$ be a finite alphabet, and color the finite words
+Let $A$ be a finite alphabet, and color the finite words
 over $A$ with finitely many colors. A variable word over $A$ is a finite word over $A \cup \{v\}$,
 for a variable $v \notin A$, in which $v$ occurs, and $w(a)$ is the word obtained from $w$ by
 replacing every occurrence of $v$ by the letter $a$. Then there are a sequence $w_0, w_1, \dots$ of

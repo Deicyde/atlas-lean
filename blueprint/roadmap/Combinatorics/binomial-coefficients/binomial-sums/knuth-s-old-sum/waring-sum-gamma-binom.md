@@ -1,6 +1,6 @@
 # Waring-type sum of generalized central binomial coefficients
 
-**Waring-type sum of generalized central binomial coefficients.** Write
+Write
 $\binom{a}{b} = \Gamma(a+1)/(\Gamma(b+1)\,\Gamma(a-b+1))$ for the generalized binomial
 coefficient. For every integer $n \ge 1$ and every real number $v > -1$,
 

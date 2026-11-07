@@ -1,6 +1,6 @@
 # The Montgomery–Vaughan weighted Hilbert inequality
 
-**The Montgomery–Vaughan weighted Hilbert inequality.** Let $\iota$ be a finite index set and
+Let $\iota$ be a finite index set and
 for $r \in \iota$ let $x_r$ and $\delta_r > 0$ be real numbers and $z_r$ a complex number. Write
 $\|t\|$ for the distance from a real number $t$ to the nearest integer, and suppose that
 $\delta_r \le \|x_r - x_s\|$ for all $r \ne s$. Then

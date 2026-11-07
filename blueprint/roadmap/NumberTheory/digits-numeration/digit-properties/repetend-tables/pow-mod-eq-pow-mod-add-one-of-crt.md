@@ -1,6 +1,6 @@
 # Powers of $b^y \bmod p^i$ that differ by one
 
-**Powers of $b^y \bmod p^i$ that differ by one.** Let $p$ be a prime with $p \equiv 1 \pmod 6$,
+Let $p$ be a prime with $p \equiv 1 \pmod 6$,
 let $i$ and $j$ be natural numbers with $j \ge 1$ and $i \ge 2j$, put $n = p^i$ and $Q = p^j$, and
 let $b$ be a natural number whose multiplicative order modulo $n$ is $6Q$. Let $f \in \{1, -1\}$,
 let $y$ be a natural number with $y \equiv s \pmod 6$ for some $s \in \{1, -1\}$, and put $e = 1$

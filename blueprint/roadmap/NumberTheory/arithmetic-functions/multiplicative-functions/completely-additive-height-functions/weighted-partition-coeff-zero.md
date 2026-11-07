@@ -1,6 +1,6 @@
 # Zeroth weighted partition coefficient
 
-**Zeroth weighted partition coefficient.** For every sequence of real weights $(b_k)$, the
+For every sequence of real weights $(b_k)$, the
 weighted partition coefficient $a_0$ attached to $(b_k)$ equals $1$.
 
 ## Sources

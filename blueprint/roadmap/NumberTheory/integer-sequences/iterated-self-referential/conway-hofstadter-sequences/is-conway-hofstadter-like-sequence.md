@@ -1,6 +1,6 @@
 # Conway–Hofstadter-like sequence
 
-**Conway–Hofstadter-like sequence.** Let $k$ be a natural number. A sequence
+Let $k$ be a natural number. A sequence
 $c : \mathbb{N} \to \mathbb{N}$ is a Conway–Hofstadter-like sequence of order $k$ when
 $c(1) = c(2) = 1$ and, for every $n \ge 3$,
 

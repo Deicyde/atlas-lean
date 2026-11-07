@@ -1,6 +1,6 @@
 # The cyclotomic box of radius zero
 
-**The cyclotomic box of radius zero.** Let $p$ be a natural number and, for a natural number
+Let $p$ be a natural number and, for a natural number
 $N$, let $B(p, N)$ be the set of integer vectors $a = (a_1, \dots, a_{p-1})$ with
 $-N \le a_i \le N$ for all $i$. Then $B(p, 0) = \{0\}$: the zero vector is the only element of the
 box of radius $0$.

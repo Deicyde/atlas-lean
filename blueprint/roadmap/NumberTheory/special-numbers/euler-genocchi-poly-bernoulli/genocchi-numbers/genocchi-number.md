@@ -1,6 +1,6 @@
 # Genocchi numbers
 
-**Genocchi numbers.** For a natural number $n$, the Genocchi number $G_n \in \mathbb{Q}$ is
+For a natural number $n$, the Genocchi number $G_n \in \mathbb{Q}$ is
 $n!$ times the coefficient of $x^n$ in the Genocchi power series
 $\frac{2x}{e^x + 1} \in \mathbb{Q}[[x]]$, so that
 $\frac{2x}{e^x + 1} = \sum_{n \ge 0} G_n \frac{x^n}{n!}$.

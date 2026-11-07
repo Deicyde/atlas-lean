@@ -1,3 +1,3 @@
 # Positivity of the reference-allele probability
 
-**Positivity of the reference-allele probability.** The reference-allele probability is positive.
+The reference-allele probability is positive.

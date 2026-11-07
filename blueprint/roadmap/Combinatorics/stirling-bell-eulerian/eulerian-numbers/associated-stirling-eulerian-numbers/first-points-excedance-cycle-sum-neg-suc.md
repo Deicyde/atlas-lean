@@ -1,6 +1,5 @@
 # Signed excedance sum with weight $-(s+1)$ over permutations with separated first points
 
-**Signed excedance sum with weight $-(s+1)$ over permutations with separated first points.**
 Let $R$ be a commutative ring, $x \in R$ and $n \ge 1$, $s \ge 0$ integers. For a permutation
 $\sigma$ write $e(\sigma)$ for its number of excedances (points $i$ with $\sigma(i) > i$) and
 $c(\sigma)$ for its number of cycles, fixed points included. Summing over the permutations

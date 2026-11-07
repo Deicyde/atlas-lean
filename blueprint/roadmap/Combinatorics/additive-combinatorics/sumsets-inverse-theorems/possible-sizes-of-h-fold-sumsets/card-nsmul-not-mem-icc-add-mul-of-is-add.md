@@ -1,6 +1,6 @@
 # Rajagopal's family of missing sumset sizes
 
-**Rajagopal's family of missing sumset sizes.** Let $G$ be a torsion-free additive
+Let $G$ be a torsion-free additive
 commutative group and let $h$, $k$ and $\ell$ be natural numbers with $\ell + 3 \le \min(h, k)$.
 For every $k$-element set $A \subseteq G$, the $h$-fold sumset $hA$ (the set of sums of $h$
 elements of $A$) does not satisfy

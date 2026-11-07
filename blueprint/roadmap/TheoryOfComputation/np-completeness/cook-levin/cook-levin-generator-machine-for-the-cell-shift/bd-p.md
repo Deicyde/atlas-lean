@@ -1,6 +1,6 @@
 # Loop body of the cell-shift generator
 
-**Loop body of the cell-shift generator.** For a layout $L$ with $g$ symbol codes and a block
+For a layout $L$ with $g$ symbol codes and a block
 $(i, k)$, the generator's statement at each loop-body stage, with flag $b$ true in the in-range
 loop and false in the overflow loop: add the counter $KB$ to the counter $CB$; when $b$ is true,
 add the product of the counters $U$ and $Gc$ to $CB$; add $CB$ and then the counter $Wc$ to the

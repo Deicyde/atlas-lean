@@ -1,6 +1,6 @@
 # Sets of positive measure contain three-term arithmetic progressions
 
-**Sets of positive measure contain three-term arithmetic progressions.** For every Borel set
+For every Borel set
 $A \subseteq \mathbb{R}$ of positive Lebesgue measure there exist $x \in A$ and $y > 0$ such that
 $x + y \in A$ and $x - y \in A$.
 

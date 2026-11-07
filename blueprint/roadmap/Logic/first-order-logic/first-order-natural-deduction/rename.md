@@ -1,6 +1,6 @@
 # Injective renaming preserves derivability
 
-**Injective renaming preserves derivability.** Let $f \colon \alpha \to \beta$ be an
+Let $f \colon \alpha \to \beta$ be an
 injective map between types of variables. For a formula $\psi$ of a first-order language $L$
 with free variables in $\alpha$, write $f(\psi)$ for the renaming of the free variables of
 $\psi$ by $f$, and for a finite list $\Gamma$ of such formulas write $f(\Gamma)$ for the list

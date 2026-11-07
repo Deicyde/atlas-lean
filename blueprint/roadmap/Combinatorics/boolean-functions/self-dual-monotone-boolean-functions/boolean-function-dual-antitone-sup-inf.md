@@ -1,6 +1,6 @@
 # Duality reverses order and exchanges joins and meets
 
-**Duality reverses order and exchanges joins and meets.** Let $f$ and $g$ be monotone
+Let $f$ and $g$ be monotone
 Boolean functions on $n$ variables, ordered pointwise, with duals $f^*$ and $g^*$. If $f \le g$
 then $g^* \le f^*$. Moreover $(f \lor g)^* = f^* \land g^*$ and $(f \land g)^* = f^* \lor g^*$,
 where $\lor$ and $\land$ are pointwise disjunction and conjunction.

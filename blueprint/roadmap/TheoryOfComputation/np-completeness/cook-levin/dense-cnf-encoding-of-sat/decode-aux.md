@@ -1,6 +1,6 @@
 # Dense decoding with an accumulator
 
-**Dense decoding with an accumulator.** Given a bit string $w$ and the list $c$ of slots read so
+Given a bit string $w$ and the list $c$ of slots read so
 far for the current clause, stored in reverse order, the result is the CNF formula obtained by
 reading $w$ two bits at a time: $00$ outputs the current clause in reading order and continues
 with no slots read; $01$ adds an empty slot to the current clause; and $1s$, for a bit $s$, adds a

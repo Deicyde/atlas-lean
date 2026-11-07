@@ -1,6 +1,6 @@
 # Statement of the Beardwood–Halton–Hammersley theorem
 
-**Statement of the Beardwood–Halton–Hammersley theorem.** The proposition that the
+The proposition that the
 Beardwood–Halton–Hammersley constant $\beta_2$ is a BHH constant for the uniform law on the closed
 unit square $[0,1]^2$, and that every real number $\beta$ that is a BHH constant for this law equals
 $\beta_2$. Here a real number $\beta$ is a BHH constant for a law $\mu$ on the plane when a

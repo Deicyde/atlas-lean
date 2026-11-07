@@ -1,6 +1,6 @@
 # Herman's analytic linearization problem has a positive answer
 
-**Herman's analytic linearization problem has a positive answer.** There is an irrational real
+There is an irrational real
 number $\alpha$ that is not Diophantine such that, for every real-analytic circle diffeomorphism
 whose lift $F$ has rotation number $\alpha$, $F$ is analytically conjugate to the rotation by
 $\alpha$.

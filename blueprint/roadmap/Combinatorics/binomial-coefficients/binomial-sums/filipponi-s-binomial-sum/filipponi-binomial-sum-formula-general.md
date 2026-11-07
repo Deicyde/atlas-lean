@@ -1,6 +1,6 @@
 # Filipponi's binomial-sum formula, without range conditions
 
-**Filipponi's binomial-sum formula, without range conditions.** For natural numbers $r$
+For natural numbers $r$
 and $s$ let $f_r(s) = \sum_{j=0}^{s} \binom{r-j}{j}$, where $\binom{r-j}{j}$ is read as $0$ when
 $j > r$. Then for all natural numbers $n$, $h$ and $k$,
 $f_{n+2h}(k+h) = \sum_{j=0}^{h} \binom{h}{j} f_{n+j}(k+j)$.

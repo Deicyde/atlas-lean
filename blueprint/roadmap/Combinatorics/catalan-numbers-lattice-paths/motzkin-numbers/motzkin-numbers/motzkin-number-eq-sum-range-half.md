@@ -1,6 +1,6 @@
 # Truncated Catalan-weighted sum for Motzkin numbers
 
-**Truncated Catalan-weighted sum for Motzkin numbers.** Let $C_k$ denote the $k$-th Catalan
+Let $C_k$ denote the $k$-th Catalan
 number. For every natural number $n$, the $n$-th Motzkin number $M(n)$ satisfies
 
 $$M(n) = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} C_k.$$

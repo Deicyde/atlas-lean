@@ -1,6 +1,6 @@
 # Admissible ternary strings
 
-**Admissible ternary strings.** For natural numbers $b$ and $n$, the strings $w$ over
+For natural numbers $b$ and $n$, the strings $w$ over
 $\{0, 1, 2\}$ of length $n - 1$ (truncated subtraction, so length $0$ when $n = 0$) such that
 every segment of $w$ obtained by cutting at its zeros (before the first zero, between
 consecutive zeros and after the last zero, empty segments included) either consists only of

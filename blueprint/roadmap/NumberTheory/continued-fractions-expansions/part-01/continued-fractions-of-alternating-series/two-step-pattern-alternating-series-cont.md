@@ -1,6 +1,6 @@
 # Two-step pattern as an alternating series
 
-**Two-step pattern as an alternating series.** Let $\beta$ be a natural number, let
+Let $\beta$ be a natural number, let
 $(\omega_n)_{n \ge 0}$ be positive integers, and let $(q_n)_{n \ge 0}$ be the convergent
 denominators of the two-step pattern for $\beta$ and $(\omega_n)$. Then the series
 $\sum_{i \ge 0} (-1)^i / (q_i q_{i+1})$ converges absolutely, and its sum $x$ has continued

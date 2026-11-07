@@ -1,6 +1,6 @@
 # Variance bound for squared trace distances in the box
 
-**Variance bound for squared trace distances in the box.** There is a real number $C$
+There is a real number $C$
 such that the following holds for every prime $p$, every integer $N \ge 1$ and every $p$-th
 cyclotomic extension $K$ of $\mathbb{Q}$. Let $\omega$ be the chosen primitive $p$-th root of
 unity in $K$, let $d$ be the trace distance on $K$, and let $B(p, N)$ be the set of integer

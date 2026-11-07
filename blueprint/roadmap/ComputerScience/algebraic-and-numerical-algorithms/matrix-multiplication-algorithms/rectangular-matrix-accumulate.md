@@ -1,6 +1,6 @@
 # Rectangular matrix accumulation
 
-**Rectangular matrix accumulation.** Let $\alpha$ be a type with an addition and a
+Let $\alpha$ be a type with an addition and a
 multiplication, and let $A$, $B$, $C$ be $p \times q$, $q \times r$ and $p \times r$ matrices over
 $\alpha$, stored as vectors of rows. Rectangular matrix accumulation adds the product $AB$ to the
 accumulator $C$: for $i < p$, then $j < r$, then $k < q$, each in increasing order, it replaces

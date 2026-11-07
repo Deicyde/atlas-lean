@@ -1,6 +1,6 @@
 # Value of a policy
 
-**Value of a policy.** Let $M$ be a Markov decision process with a finite set of states $S$,
+Let $M$ be a Markov decision process with a finite set of states $S$,
 a set of actions $A$, real rewards $r(s,a)$, and transition probabilities $P(s,a,s')$ that are
 nonnegative and sum to $1$ over $s'$, let $0 \le \gamma < 1$, and let $\pi : S \to A$ be a
 deterministic stationary policy. The value of $\pi$ is the unique function

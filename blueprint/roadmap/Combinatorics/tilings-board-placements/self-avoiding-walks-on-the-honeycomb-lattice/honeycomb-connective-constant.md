@@ -1,6 +1,6 @@
 # The connective constant of the honeycomb lattice
 
-**The connective constant of the honeycomb lattice.** Let $c_n$ be the number of $n$-step
+Let $c_n$ be the number of $n$-step
 self-avoiding walks on the honeycomb lattice starting at the origin. Then
 $c_n^{1/n} \to \sqrt{2 + \sqrt{2}}$ as $n \to \infty$.
 

@@ -1,6 +1,6 @@
 # Validity for participants
 
-**Validity for participants.** In every reachable state of the two-phase commit protocol, if
+In every reachable state of the two-phase commit protocol, if
 some participant has committed, then every participant voted yes, that is, every participant is
 prepared or committed.
 

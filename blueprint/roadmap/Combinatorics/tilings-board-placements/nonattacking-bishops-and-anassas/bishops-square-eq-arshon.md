@@ -1,6 +1,6 @@
 # Arshon's formula for nonattacking bishops (Kotěšovec's form)
 
-**Arshon's formula for nonattacking bishops (Kotěšovec's form).** For all natural numbers $m$
+For all natural numbers $m$
 and $k$, the number $B_S(m, k)$ of placements of $k$ nonattacking bishops on the $m \times m$
 board satisfies
 

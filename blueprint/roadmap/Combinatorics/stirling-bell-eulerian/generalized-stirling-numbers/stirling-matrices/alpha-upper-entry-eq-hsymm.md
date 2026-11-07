@@ -1,6 +1,6 @@
 # α-upper entries are complete homogeneous symmetric polynomials
 
-**α-upper entries are complete homogeneous symmetric polynomials.** Let $R$ be a commutative
+Let $R$ be a commutative
 ring, let $\alpha$ be a sequence in $R$, and let $u_{i,j}$ ($i, j \ge 0$) be the α-upper entries
 of $\alpha$. For all $i \le j$, $u_{i,j} = h_i(\alpha_{i+1}, \alpha_{i+2}, \dots, \alpha_{j+1})$,
 where $h_i$ is the complete homogeneous symmetric polynomial of degree $i$ in $j - i + 1$

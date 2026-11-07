@@ -1,6 +1,6 @@
 # Partitions with non-negative crank
 
-**Partitions with non-negative crank.** For a partition $\lambda$, let $\omega(\lambda)$ be the
+For a partition $\lambda$, let $\omega(\lambda)$ be the
 number of parts equal to $1$. The crank of $\lambda$ is its largest part if $\omega(\lambda) = 0$
 (the largest part of the empty partition being $0$), and otherwise the number of parts greater
 than $\omega(\lambda)$, counted with multiplicity, minus $\omega(\lambda)$. Let $p(k)$ be the

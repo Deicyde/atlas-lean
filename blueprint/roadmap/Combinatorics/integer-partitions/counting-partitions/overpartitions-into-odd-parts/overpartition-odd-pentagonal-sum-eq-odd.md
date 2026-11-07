@@ -1,6 +1,6 @@
 # Overpartitions into odd parts and partitions into distinct odd parts
 
-**Overpartitions into odd parts and partitions into distinct odd parts.** Let
+Let
 $\mathrm{po}(m)$ be the number of overpartitions of $m$ into odd parts and $\mathrm{pdo}(m)$
 the number of partitions of $m$ into distinct odd parts. For every natural number $n$, the
 sum $\sum_k (-1)^k \, \mathrm{po}(n - k(3k+1)/2)$ over the integers $k$ with

@@ -1,6 +1,6 @@
 # The $h$-full moment is an average of $\omega_k^j$
 
-**The $h$-full moment is an average of $\omega_k^j$.** Let $F$ be a finite field and let $h$,
+Let $F$ be a finite field and let $h$,
 $k$, $j$ and $n$ be natural numbers. Let $N_h \cap M_n$ be the finite set of $h$-full monic
 polynomials of degree $n$ over $F$ (monic $f$ such that $P^h$ divides $f$ for every monic
 irreducible $P$ dividing $f$), and let $\omega_k(f)$ be the number of monic irreducible

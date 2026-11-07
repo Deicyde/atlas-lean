@@ -1,6 +1,6 @@
 # Watson's alternating cosecant sum
 
-**Watson's alternating cosecant sum.** For a natural number $n$, the alternating cosecant sum is
+For a natural number $n$, the alternating cosecant sum is
 the real number
 
 $$

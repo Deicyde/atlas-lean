@@ -1,6 +1,6 @@
 # Satisfaction in the modal μ-calculus
 
-**Satisfaction in the modal μ-calculus.** Let $M$ be a Kripke model with accessibility
+Let $M$ be a Kripke model with accessibility
 relation $R$ and valuation $V$, and let $\rho$ be an environment assigning a set of worlds to
 each variable index $n \in \mathbb{N}$. For a set of worlds $S$, write $\rho[0 \mapsto S]$ for the
 environment sending index $0$ to $S$ and index $n + 1$ to $\rho(n)$. The set $[\![\varphi]\!]_\rho$

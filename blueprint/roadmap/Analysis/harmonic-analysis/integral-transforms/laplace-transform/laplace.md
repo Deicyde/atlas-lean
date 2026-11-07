@@ -1,6 +1,6 @@
 # The one-sided Laplace transform
 
-**The one-sided Laplace transform.** Let $E$ be a complex normed space,
+Let $E$ be a complex normed space,
 $f : \mathbb{R} \to E$ and $s \in \mathbb{C}$. The Laplace transform of $f$ at $s$ is the Bochner
 integral $\int_{(0, \infty)} e^{-st} f(t)\,dt \in E$.
 

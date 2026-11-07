@@ -1,6 +1,6 @@
 # Coefficient of the formal-sequence recurrence
 
-**Coefficient of the formal-sequence recurrence.** For elements $a$, $b$, $c$ of a field $F$,
+For elements $a$, $b$, $c$ of a field $F$,
 the coefficient of the formal-sequence recurrence determined by the seed triplet $(a, b, c)$ is
 $\alpha = \frac{ab + bc + ca}{b^2} - 1$.
 

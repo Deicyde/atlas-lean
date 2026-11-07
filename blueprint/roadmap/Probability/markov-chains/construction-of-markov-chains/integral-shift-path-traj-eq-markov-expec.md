@@ -1,6 +1,6 @@
 # Integral of a shifted path functional
 
-**Integral of a shifted path functional.** Let $S$ be a nonempty standard Borel space,
+Let $S$ be a nonempty standard Borel space,
 $\kappa$ a Markov kernel on $S$, and $Y : S^{\mathbb{N}} \to \mathbb{R}$ a bounded function,
 measurable for the product $\sigma$-algebra. Fix $n \in \mathbb{N}$ and a history
 $x = (x_0, \dots, x_n)$ of states in $S$, and let $P_{n,x}$ be the Ionescu–Tulcea trajectory

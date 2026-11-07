@@ -1,6 +1,6 @@
 # Girstmair's coefficient at index (2, 2)
 
-**Girstmair's coefficient at index (2, 2).** Girstmair's cotangent power coefficient
+Girstmair's cotangent power coefficient
 $c_{2,2}$ equals $-1$, matching the identity $(i \cot)^2 = 1 - i^2 \cot'$ with
 $\cot' = -1 - \cot^2$.
 

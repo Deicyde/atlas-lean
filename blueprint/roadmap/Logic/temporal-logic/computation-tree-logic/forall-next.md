@@ -1,6 +1,6 @@
 # The CTL operator $\mathsf{AX}$
 
-**The CTL operator $\mathsf{AX}$.** For a CTL formula $\varphi$, the formula
+For a CTL formula $\varphi$, the formula
 $\mathsf{AX}\,\varphi$ ("on all next states, $\varphi$") is defined as
 $\neg\,\mathsf{EX}\,\neg\varphi$.
 

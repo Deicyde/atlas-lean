@@ -1,6 +1,6 @@
 # Sury's identity for a second-order recurrence starting at 1
 
-**Sury's identity for a second-order recurrence starting at 1.** Let $c_1, c_2$ be rational
+Let $c_1, c_2$ be rational
 numbers with $c_2 \neq 0$, and let $(A_n)_{n \ge 0}$ be a sequence of rational numbers with
 $A_0 = 1$ and $A_{n+2} = c_1 A_{n+1} + c_2 A_n$ for all $n \ge 0$. Put $t = c_1 - A_1$ and
 assume $t \neq 0$. Then for every natural number $n$,

@@ -1,6 +1,6 @@
 # One-step invariant at the stack cap
 
-**One-step invariant at the stack cap.** Fix an encoding $E$ of a machine $M$ with $K$ stacks,
+Fix an encoding $E$ of a machine $M$ with $K$ stacks,
 window depth $d$ and $N$ situations, natural numbers $m$, $T$, $t$ with $t < T$, an assignment
 $a$ and an input list $s$ of length at most $m$. Let $H = m + (T + 1)d + 1$ be the stack cap and
 let $c_t$ be the configuration at time $t$ of the idle-extended run of $M$ from the start

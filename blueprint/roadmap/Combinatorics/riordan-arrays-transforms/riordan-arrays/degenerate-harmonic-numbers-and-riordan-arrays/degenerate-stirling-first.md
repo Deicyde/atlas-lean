@@ -1,6 +1,6 @@
 # Degenerate Stirling numbers of the first kind
 
-**Degenerate Stirling numbers of the first kind.** For a real number $\lambda$, let
+For a real number $\lambda$, let
 $\log_\lambda(1 + t)$ be the formal power series $\sum_{m \ge 1} \binom{\lambda}{m} t^m / \lambda$,
 where $\binom{\lambda}{m} = \lambda(\lambda - 1)\cdots(\lambda - m + 1)/m!$. For natural numbers
 $n$ and $k$, the degenerate Stirling number of the first kind $S_{1,\lambda}(n, k)$ is $n!/k!$

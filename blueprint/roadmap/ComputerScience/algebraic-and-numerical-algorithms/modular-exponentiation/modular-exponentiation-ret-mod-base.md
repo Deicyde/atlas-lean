@@ -1,5 +1,5 @@
 # Modular exponentiation with a reduced base
 
-**Modular exponentiation with a reduced base.** For natural numbers $a$, $b$, $n$ with
+For natural numbers $a$, $b$, $n$ with
 $n > 0$, the value $r$ returned by modular exponentiation on base $a$, exponent $b$ and
 modulus $n$ satisfies $r \bmod n = (a \bmod n)^b \bmod n$.

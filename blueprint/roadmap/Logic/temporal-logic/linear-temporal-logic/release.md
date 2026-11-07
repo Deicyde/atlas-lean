@@ -1,6 +1,6 @@
 # The release operator of LTL
 
-**The release operator of LTL.** For LTL formulas $\varphi$ and $\psi$, the release
+For LTL formulas $\varphi$ and $\psi$, the release
 formula $\varphi \mathbin{\mathbf{R}} \psi$ is defined as
 $\neg(\neg\varphi \mathbin{\mathbf{U}} \neg\psi)$, the dual of until.
 

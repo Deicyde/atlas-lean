@@ -1,6 +1,6 @@
 # Upper bound for the integral of the logarithm of a probability density over a set
 
-**Upper bound for the integral of the logarithm of a probability density over a set.** Let
+Let
 $\mu$ be a measure on a measurable space $X$ and let $f : X \to \mathbb{R}$ be integrable with
 respect to $\mu$, with $f(x) > 0$ for every $x \in X$ and $\int_X f\,d\mu = 1$. Then for every
 measurable set $E \subseteq X$ with $0 < \mu(E) < \infty$ such that $\log f$ is integrable on $E$,

@@ -1,6 +1,5 @@
 # Integral representation of the Jacobsthal-Lucas numbers along arithmetic progressions
 
-**Integral representation of the Jacobsthal-Lucas numbers along arithmetic progressions.**
 Let $J_m = U_m(1, -2)$ be the Jacobsthal numbers and $j_m = V_m(1, -2)$ the Jacobsthal-Lucas
 numbers ($j_0 = 2$, $j_1 = 1$, $j_{m+2} = j_{m+1} + 2j_m$). For all natural numbers $\ell$, $n$
 and $r$, in $\mathbb{R}$,

@@ -1,6 +1,6 @@
 # Generalized cubic partition congruences for primes $p \equiv 5, 7 \pmod 8$
 
-**Generalized cubic partition congruences for primes $p \equiv 5, 7 \pmod 8$.** Let $a_c(n)$
+Let $a_c(n)$
 be the generalized cubic partition numbers, let $p$ be a prime with $p \equiv 5$ or
 $p \equiv 7 \pmod 8$, and let $l$ be a natural number with $p \mid 8l + 3$. Then
 $a_{p-4}(pn + l) \equiv 0 \pmod p$ for every natural number $n$.

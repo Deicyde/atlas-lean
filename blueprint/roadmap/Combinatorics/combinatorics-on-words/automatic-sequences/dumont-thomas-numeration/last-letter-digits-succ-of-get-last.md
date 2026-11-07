@@ -1,6 +1,6 @@
 # Recurrence for the last-letter digit word
 
-**Recurrence for the last-letter digit word.** Let $\eta$ map each letter of an alphabet $A$
+Let $\eta$ map each letter of an alphabet $A$
 to a finite word over $A$. For a natural number $j$ and a letter $e \in A$, the last-letter
 digit word of $j$ steps from $e$ is obtained by repeating the following step $j$ times, starting
 at $e$ and stopping early if the image of the current letter is empty: from the current letter

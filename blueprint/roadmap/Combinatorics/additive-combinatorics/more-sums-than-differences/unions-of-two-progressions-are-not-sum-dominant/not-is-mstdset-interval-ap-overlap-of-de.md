@@ -1,6 +1,6 @@
 # An interval and an overlapping progression with small integer step are not MSTD
 
-**An interval and an overlapping progression with small integer step are not MSTD.** Let
+Let
 $n \ge 3$, $m \ge 2$ and $d$ be natural numbers with $2 \le d \le n - 1$, and let $x$ be a real
 number with $0 < x < n - 1$ such that either $x$ is irrational or $x = s + p/q$ for natural
 numbers $s, p, q$ with $0 < p < q$, $q \ne 2$ and $\gcd(p, q) = 1$. Write

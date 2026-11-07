@@ -1,6 +1,6 @@
 # The alternating polynomial $Y_1$
 
-**The alternating polynomial $Y_1$.** For a natural number $p$, $Y_1$ is the polynomial with
+For a natural number $p$, $Y_1$ is the polynomial with
 integer coefficients
 
 $$

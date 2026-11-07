@@ -1,6 +1,6 @@
 # The two smallest valuations coincide
 
-**The two smallest valuations coincide.** Let $\ell$ be a prime and $a, b, c, d$ natural
+Let $\ell$ be a prime and $a, b, c, d$ natural
 numbers. Put $s_1 = ab + 1$, $s_2 = ac + 1$, $s_3 = ad + 1$, $s_4 = bc + 1$, $s_5 = bd + 1$,
 $s_6 = cd + 1$, and let $v_i$ be the $\ell$-adic valuation of $s_i$. Then in each of the tuples
 $(v_2, v_3, v_4, v_5)$, $(v_1, v_2, v_5, v_6)$ and $(v_1, v_3, v_4, v_6)$ the minimum value occurs

@@ -1,6 +1,6 @@
 # Linking two trees of a link-cut tree state
 
-**Linking two trees of a link-cut tree state.** Given vertices $x$ and $y$ and a state $s$,
+Given vertices $x$ and $y$ and a state $s$,
 the state $\operatorname{link}(x, y, s)$ has no preferred edges (all edges dashed), and its
 forest is defined as follows. If $x$ or $y$ is not a vertex of the forest, the forest is
 unchanged. Otherwise let $t_x$ and $t_y$ be the first represented trees containing $x$ and $y$.

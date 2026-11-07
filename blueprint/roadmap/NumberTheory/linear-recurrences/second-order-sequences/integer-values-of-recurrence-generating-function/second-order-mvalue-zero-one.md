@@ -1,6 +1,6 @@
 # Value of $M$ at $(0, 1)$
 
-**Value of $M$ at $(0, 1)$.** For all integers $a$, $b$, $p$, the quantity
+For all integers $a$, $b$, $p$, the quantity
 $M(r, s) = \frac{br^2 + bs^2 - apr^2 + 2ars}{s^2 - prs - r^2}$ satisfies $M(0, 1) = b$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Layers of the iterated derived sets
 
-**Layers of the iterated derived sets.** For a set $K \subseteq \mathbb{R}$ and a natural
+For a set $K \subseteq \mathbb{R}$ and a natural
 number $u$, let $K^{(u)}$ be the $u$-th derived set of $K$ (the derived set, i.e. the set of
 accumulation points, iterated $u$ times, with $K^{(0)} = K$). The layer of $K$ of index $u$ is
 $T_u = K^{(u)} \setminus K^{(u+1)}$, the set of points of $K^{(u)}$ that are isolated in

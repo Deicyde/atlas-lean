@@ -1,6 +1,6 @@
 # Catalan words of capacity zero
 
-**Catalan words of capacity zero.** Let $F_k$ be the Fibonacci numbers, with $F_0 = 0$ and
+Let $F_k$ be the Fibonacci numbers, with $F_0 = 0$ and
 $F_1 = 1$. For $n \ge 1$, let $a(n, 1; q)$ be the capacity distribution on Catalan words of length
 $n$ ending in $1$, and let $a(n; q) = \sum_{w \in \mathcal{A}_n} q^{\operatorname{cap}(w)}$ be the
 capacity distribution on the set $\mathcal{A}_n$ of all Catalan words of length $n$. Then

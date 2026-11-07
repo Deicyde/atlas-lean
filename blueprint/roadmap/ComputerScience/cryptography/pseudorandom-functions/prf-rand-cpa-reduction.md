@@ -1,6 +1,6 @@
 # The CPA reduction against a random function
 
-**The CPA reduction against a random function.** Let $X$ be a finite nonempty set, $Y$ a
+Let $X$ be a finite nonempty set, $Y$ a
 finite additive commutative group, $q$ a natural number and $A$ a CPA adversary with coins in a
 finite nonempty set. Let $p$ be the probability that the CPA reduction built from $A$ (whose
 encryption oracle answers at most $q$ queries) outputs $1$, that is, that $A$ guesses the

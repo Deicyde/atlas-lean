@@ -1,6 +1,6 @@
 # Reflexivity of keyword equivalence
 
-**Reflexivity of keyword equivalence.** For every binary keyword $a$ and every binary word
+For every binary keyword $a$ and every binary word
 $u$, we have $u \sim_a u$: the empty composition of simple maps sends $u$ to itself.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Fundamental theorem of Riemannian geometry (Levi-Civita)
 
-**Fundamental theorem of Riemannian geometry (Levi-Civita).** Let $M$ be a Hausdorff smooth
+Let $M$ be a Hausdorff smooth
 manifold, possibly with boundary or corners, modelled on a finite-dimensional real normed space,
 whose tangent bundle carries a smooth Riemannian metric. Then there is a smooth covariant
 derivative $\nabla$ on the tangent bundle of $M$ that is torsion-free and compatible with the

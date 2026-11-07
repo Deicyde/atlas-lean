@@ -1,6 +1,6 @@
 # Blocking Wythoff Nim with one or two blocked options has no redundant move
 
-**Blocking Wythoff Nim with one or two blocked options has no redundant move.** Let
+Let
 $\varphi$ be the golden ratio. Let $R_2$ consist of $(0, 0)$ and, for every $n \ge 0$, the
 positions $(n, 2n + 1)$, $(2n + 1, n)$,
 $(2\lfloor n\varphi \rfloor + 2, 2\lfloor n\varphi^2 \rfloor + 2)$ and

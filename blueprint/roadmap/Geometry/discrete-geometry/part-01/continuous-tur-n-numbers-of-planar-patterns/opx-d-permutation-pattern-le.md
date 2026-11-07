@@ -1,6 +1,6 @@
 # Upper bound for higher-dimensional permutation-type patterns
 
-**Upper bound for higher-dimensional permutation-type patterns.** For every $d$ there is a
+For every $d$ there is a
 real number $C$ such that for every real $c > 0$ there is a real number $K$ with the following
 property. Let $P \subseteq \mathbb{R}^d$ be a finite set of $k$ points such that, for each
 coordinate $i$, distinct points of $P$ have distinct $i$-th coordinates and consecutive values of

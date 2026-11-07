@@ -1,6 +1,6 @@
 # Characterization of Frobenius probable primes
 
-**Characterization of Frobenius probable primes.** Let $f \in \mathbb{Z}[x]$ be a polynomial
+Let $f \in \mathbb{Z}[x]$ be a polynomial
 of degree $d$ with discriminant $\Delta$, and let $n$ be a natural number. Then $n$ is a
 Frobenius probable prime with respect to $f$ if and only if $f$ is monic, $n$ is odd, $n > 1$,
 $n$ is coprime to $|f(0)\Delta|$, and there exist polynomials

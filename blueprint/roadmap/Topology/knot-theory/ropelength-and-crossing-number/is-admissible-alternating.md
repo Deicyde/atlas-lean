@@ -1,6 +1,5 @@
 # Admissible constants for the tight alternating knot inequality
 
-**Admissible constants for the tight alternating knot inequality.**
 A real number $c$ is admissible when $c \ge 0$ and, for every $n$ and
 every oriented labeled link type with $n$ components that admits an
 alternating diagram and whose crossing number is a natural number $k$,

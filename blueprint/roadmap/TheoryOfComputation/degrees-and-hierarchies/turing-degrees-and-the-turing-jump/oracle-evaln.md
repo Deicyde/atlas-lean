@@ -1,6 +1,6 @@
 # Fuel-indexed evaluation of oracle codes
 
-**Fuel-indexed evaluation of oracle codes.** Write $\langle a, b \rangle$ for the pairing of
+Write $\langle a, b \rangle$ for the pairing of
 natural numbers. For an oracle $o$ assigning to each natural number a natural number or no
 value, a fuel $k$, an oracle code $c$ and an input $n$, the evaluator $E_k(c, n)$ returns a
 natural number or fails. $E_0(c, n)$ always fails. $E_{k+1}(c, n)$ fails if $n > k$;

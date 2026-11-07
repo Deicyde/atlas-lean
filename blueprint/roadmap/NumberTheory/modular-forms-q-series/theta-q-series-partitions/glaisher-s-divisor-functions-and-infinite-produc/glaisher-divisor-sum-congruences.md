@@ -1,6 +1,6 @@
 # Glaisher's congruences for divisor sums over squares and triangular numbers
 
-**Glaisher's congruences for divisor sums over squares and triangular numbers.** Let
+Let
 $n \ge 1$ be a natural number. Write $\sigma(m)$ for the sum of the positive divisors of $m$
 and $\bar\sigma_3(m) = \sum_{d \mid m,\ m/d \text{ odd}} d^3$, and set
 $\sigma(m) = \bar\sigma_3(m) = 0$ for every integer $m \le 0$. Then the following hold. If

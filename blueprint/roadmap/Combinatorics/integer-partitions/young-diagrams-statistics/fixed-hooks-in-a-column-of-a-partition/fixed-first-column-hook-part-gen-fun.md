@@ -1,6 +1,6 @@
 # Partitions with a fixed first-column hook arising from a part of given size
 
-**Partitions with a fixed first-column hook arising from a part of given size.** Let $n$ and $k$
+Let $n$ and $k$
 be natural numbers with $k \ge 1$ and let $h < k$ be an integer. The number of partitions
 $\lambda$ of $n$ that have an $h$-fixed hook in column $1$ at some row $s$ with $\lambda_s = k$ is
 the coefficient of $q^n$ in

@@ -1,3 +1,3 @@
 # Finite distance between elementary integrands
 
-**Finite distance between elementary integrands.** The `L²(P ⊗ du)` distance between two elementary integrands is finite.
+The `L²(P ⊗ du)` distance between two elementary integrands is finite.

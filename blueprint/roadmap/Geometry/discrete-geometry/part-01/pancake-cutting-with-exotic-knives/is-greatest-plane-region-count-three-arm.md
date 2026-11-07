@@ -1,6 +1,6 @@
 # Maximum region count for three-armed V's
 
-**Maximum region count for three-armed V's.** A long-legged three-armed V is the union of
+A long-legged three-armed V is the union of
 three rays $\{c + s u_j : s \ge 0\}$, $j = 1, 2, 3$, from a common tip $c \in \mathbb{R}^2$, with
 nonzero direction vectors $u_1, u_2, u_3 \in \mathbb{R}^2$ in arbitrary directions. For every
 natural number $n$, the largest number of regions into which the union of $n$ long-legged

@@ -1,6 +1,6 @@
 # Convolution of an integrable and a bounded function is uniformly continuous
 
-**Convolution of an integrable and a bounded function is uniformly continuous.** Let
+Let
 $d \in \mathbb{N}$, let $f : \mathbb{R}^d \to \mathbb{R}$ be Lebesgue integrable, and let
 $g : \mathbb{R}^d \to \mathbb{R}$ be Borel measurable and bounded. Then the convolution
 

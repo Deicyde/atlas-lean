@@ -1,6 +1,6 @@
 # Tails of prime power sums from a Chebyshev bound
 
-**Tails of prime power sums from a Chebyshev bound.** Let $k \ge 1$ be an integer and let
+Let $k \ge 1$ be an integer and let
 $\eta > 0$ and $x_0 > 1$ be reals such that $|\vartheta(y) - y| < \eta y / \log^k y$ for every
 real $y \ge x_0$, where $\vartheta(y) = \sum_{p \le y} \log p$ is Chebyshev's function. Then
 for every integer $n \ge 2$ and every real $x \ge x_0$,

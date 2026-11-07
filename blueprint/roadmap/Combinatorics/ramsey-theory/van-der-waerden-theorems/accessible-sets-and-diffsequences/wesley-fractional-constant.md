@@ -1,6 +1,6 @@
 # Wesley's constants $c_{n,\varepsilon}$
 
-**Wesley's constants $c_{n,\varepsilon}$.** For a natural number $n$ and an integer
+For a natural number $n$ and an integer
 $\varepsilon$, the real number $c_{n,\varepsilon}$ is defined by the residue of $n$ modulo $4$:
 if $n \equiv 0 \pmod 4$, then $c_{n,\varepsilon} = (4 + (2\sqrt5 - 5)\varepsilon)/10$;
 if $n \equiv 1 \pmod 4$, then $c_{n,\varepsilon} = (11 - 4\sqrt5)/5$ when $\varepsilon = -4$ and

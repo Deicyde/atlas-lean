@@ -1,6 +1,6 @@
 # Every number at least the square of the base is a comma-child
 
-**Every number at least the square of the base is a comma-child.** Let $b \ge 2$ and
+Let $b \ge 2$ and
 $n \ge b^2$. Then there are a positive integer $k$ and a comma candidate digit $y$ of $k$ in
 base $b$ with $n = k + b\,(k \bmod b) + y$, that is, $n$ is a comma-child of $k$.
 

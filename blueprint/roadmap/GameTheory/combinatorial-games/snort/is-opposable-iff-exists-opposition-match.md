@@ -1,6 +1,6 @@
 # Oppositions and opposition matchings
 
-**Oppositions and opposition matchings.** A graph $G$ is opposable if and only if its
+A graph $G$ is opposable if and only if its
 complement $\overline{G}$ has an opposition matching.
 
 ## Sources

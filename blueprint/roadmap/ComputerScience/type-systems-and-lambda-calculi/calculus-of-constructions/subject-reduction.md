@@ -1,6 +1,6 @@
 # Subject reduction
 
-**Subject reduction.** Let $\Gamma$ be a context and $t$, $t'$, $A$ terms of the calculus
+Let $\Gamma$ be a context and $t$, $t'$, $A$ terms of the calculus
 of constructions with universes. If $t$ has type $A$ in $\Gamma$, that is
 $\Gamma \vdash t : A$, and $t$ reduces to $t'$ in one step of beta reduction (anywhere
 inside $t$), then $\Gamma \vdash t' : A$.

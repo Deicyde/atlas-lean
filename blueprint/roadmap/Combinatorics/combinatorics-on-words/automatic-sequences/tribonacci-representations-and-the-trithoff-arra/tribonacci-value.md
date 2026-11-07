@@ -1,6 +1,6 @@
 # Tribonacci value of a digit word
 
-**Tribonacci value of a digit word.** Let $T_0 = T_1 = 0$, $T_2 = 1$ and
+Let $T_0 = T_1 = 0$, $T_2 = 1$ and
 $T_{k+3} = T_{k+2} + T_{k+1} + T_k$ be the Tribonacci numbers. The Tribonacci value of a finite
 word $w$ of natural-number digits $w_0, w_1, \dots, w_{\ell-1}$, listed from the least
 significant digit, is $[w]_T = \sum_{i=0}^{\ell-1} w_i T_{i+3}$, so the digits weigh

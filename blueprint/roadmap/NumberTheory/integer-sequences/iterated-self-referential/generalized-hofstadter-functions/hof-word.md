@@ -1,6 +1,6 @@
 # Letters of the Hofstadter fixed-point word
 
-**Letters of the Hofstadter fixed-point word.** For natural numbers $k$ and $n$, let $\tau_k$
+For natural numbers $k$ and $n$, let $\tau_k$
 be the substitution on letters in $\mathbb{N}$ that sends $k$ to the word $k\,1$ and every other
 letter $i$ to $i + 1$, applied to words letter by letter, and let $\tau_k^j(k)$ be the word
 obtained by applying $\tau_k$ $j$ times to the one-letter word $k$. Then $x_k[n]$ is the letter at

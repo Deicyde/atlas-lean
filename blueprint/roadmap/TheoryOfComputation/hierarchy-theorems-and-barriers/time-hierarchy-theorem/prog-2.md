@@ -1,6 +1,6 @@
 # Program of the layout machine
 
-**Program of the layout machine.** Writing $1$ for true and $0$ for false, this is the
+Writing $1$ for true and $0$ for false, this is the
 program of a multi-stack machine whose stacks $X, Z, P, P_2, U, N, A_2, B_2, D, C, T, O$ all hold
 bits. To move a stack $S$ onto a stack $S'$ means to pop the bits of $S$ one at a time, pushing
 each onto $S'$, until $S$ is empty; to transfer $S$ to some stacks means to pop $S$ until it is

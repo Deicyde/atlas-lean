@@ -1,6 +1,6 @@
 # Faulhaber expansion of the odd-case polynomial
 
-**Faulhaber expansion of the odd-case polynomial.** For real numbers $m$ and $x$, let
+For real numbers $m$ and $x$, let
 
 $$\widetilde{P}(m, x) = -2(m + 1) - (9 + 2x) \, \frac{m(m+1)}{2} - 3 \cdot \frac{m(m+1)(2m+1)}{6} +
 (4 + 5x + x^2) \left(\frac{m(m+1)}{2}\right)^2.$$

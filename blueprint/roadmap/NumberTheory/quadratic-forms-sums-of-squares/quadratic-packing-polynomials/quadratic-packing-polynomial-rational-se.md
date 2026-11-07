@@ -1,6 +1,6 @@
 # Stanton's form of a quadratic packing polynomial on a rational sector
 
-**Stanton's form of a quadratic packing polynomial on a rational sector.** Let $m, n$ be
+Let $m, n$ be
 coprime positive integers and let $P$ be a quadratic packing polynomial on the lattice points
 $I(n/m)$ of the sector of slope $n/m$. Then $n$ divides $(m - 1)^2$, and there are integers
 $D, E, F$ such that for all real $x, y$

@@ -1,6 +1,6 @@
 # Weighted forward shift as a linear map
 
-**Weighted forward shift as a linear map.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+Let $\mathbb{K}$ be $\mathbb{R}$ or
 $\mathbb{C}$, and let $w : \mathbb{N} \to \mathbb{K}$ be a weight sequence whose norms
 $\|w_n\|$ are bounded above. The weighted forward shift linear map is the $\mathbb{K}$-linear
 map $\ell^2(\mathbb{N}, \mathbb{K}) \to \ell^2(\mathbb{N}, \mathbb{K})$ underlying the bounded

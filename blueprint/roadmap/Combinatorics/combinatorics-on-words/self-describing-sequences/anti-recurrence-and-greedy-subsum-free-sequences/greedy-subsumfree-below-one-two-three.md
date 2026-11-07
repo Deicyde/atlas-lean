@@ -1,6 +1,6 @@
 # First members of $S_{1,2,3}$
 
-**First members of $S_{1,2,3}$.** The members of the greedy $3$-subsumfree sequence
+The members of the greedy $3$-subsumfree sequence
 $S_{1,2,3}$ below $26$ are exactly $1, 2, 3, 4, 5, 13, 14, 15, 25$.
 
 ## Sources

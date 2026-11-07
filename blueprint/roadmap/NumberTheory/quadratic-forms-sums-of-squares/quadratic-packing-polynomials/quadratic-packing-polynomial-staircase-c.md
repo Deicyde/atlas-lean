@@ -1,6 +1,6 @@
 # Staircase congruence for quadratic packing polynomials
 
-**Staircase congruence for quadratic packing polynomials.** Let $m, n$ be positive coprime
+Let $m, n$ be positive coprime
 integers, let $P$ be a quadratic packing polynomial on the lattice sector $I(n/m)$, and suppose
 that the step difference of $P$ equals a positive integer $k$. Then for every natural number
 $i$, every point $p$ of the staircase $J_i$ and every point $q$ of the staircase $J_{i+k}$, the

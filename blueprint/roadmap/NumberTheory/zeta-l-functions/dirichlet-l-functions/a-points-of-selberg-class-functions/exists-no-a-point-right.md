@@ -1,6 +1,6 @@
 # Lemma 1 (no a-points of derivatives far to the right)
 
-**Lemma 1 (no a-points of derivatives far to the right).** Let $F$ be a function in the
+Let $F$ be a function in the
 Selberg class with Dirichlet coefficients $a(n)$, let $k \ge 1$, and let $a \in \mathbb{C}$ be such
 that $a \ne 0$ or $a(n) \ne 0$ for some $n \ge 2$. Then there is a real number $E_1 \ge 1$ such
 that the $k$-th derivative $F^{(k)}$ satisfies $F^{(k)}(s) \ne a$ for every $s \in \mathbb{C}$

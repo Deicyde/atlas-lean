@@ -1,6 +1,6 @@
 # Enders with largest legal move above 1 are N-positions
 
-**Enders with largest legal move above 1 are N-positions.** Let $M$ be a position of Sylver
+Let $M$ be a position of Sylver
 Coinage whose set of legal moves $L(M)$ has a greatest element $F$ with $F > 1$. If every end of
 $M$ equals $F$ (that is, $M$ is an ender), then $M$ is an N-position.
 

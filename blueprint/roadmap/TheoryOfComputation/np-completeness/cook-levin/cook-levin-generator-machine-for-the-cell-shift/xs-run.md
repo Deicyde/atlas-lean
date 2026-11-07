@@ -1,6 +1,6 @@
 # The in-range chain of the cell-shift generator
 
-**The in-range chain of the cell-shift generator.** Let $L$ be a layout with label block size
+Let $L$ be a layout with label block size
 $A$, $K$ stacks, $g$ symbol codes and window depth $d$, let $H, T \in \mathbb{N}$, let
 $W = A + K H g$ be the row width and $V = (T + 1) W$ the number of variables, and let the tables
 $\mathrm{sa}, \mathrm{pl}, \mathrm{cn}, \mathrm{pu}$ be well formed for $N$ situations and height

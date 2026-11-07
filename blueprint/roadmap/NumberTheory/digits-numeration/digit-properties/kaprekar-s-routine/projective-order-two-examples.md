@@ -1,6 +1,6 @@
 # Values of the projective order of 2
 
-**Values of the projective order of 2.** Writing $\lambda(n)$ for the projective order of $2$
+Writing $\lambda(n)$ for the projective order of $2$
 modulo $n$, we have $\lambda(7) = 3$, $\lambda(9) = 3$, $\lambda(11) = 5$ and $\lambda(17) = 4$.
 
 ## Sources

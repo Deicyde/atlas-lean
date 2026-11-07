@@ -1,6 +1,6 @@
 # Maximum number of equiangular lines
 
-**Maximum number of equiangular lines.** For a real number $\alpha$ and a natural number $d$,
+For a real number $\alpha$ and a natural number $d$,
 $N_\alpha(d)$ is the supremum, taken in $\mathbb{N}$, of the cardinalities of the equiangular
 systems of unit vectors in $\mathbb{R}^d$ with inner product $\pm\alpha$. Here an infinite set
 counts as having cardinality $0$, and a set of natural numbers that is not bounded above has

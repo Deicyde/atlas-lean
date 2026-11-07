@@ -1,6 +1,6 @@
 # Shadow parts equal classical parts when $v = (1, 1, 1)$
 
-**Shadow parts equal classical parts when $v = (1, 1, 1)$.** In the shadow Markoff tree of
+In the shadow Markoff tree of
 $v = (1, 1, 1)$, the tree of the initial triple
 $(1 + \varepsilon, 1 + \varepsilon, 1 + \varepsilon)$ with $\varepsilon^2 = 0$, every solution
 $(x, y)$ has shadow part $y$ equal to its classical part $x$.

@@ -1,6 +1,6 @@
 # The weight statistic
 
-**The weight statistic.** For a list $q = (q_1, \dots, q_n)$ of natural numbers and
+For a list $q = (q_1, \dots, q_n)$ of natural numbers and
 $b \in \mathbb{N}$, the weight statistic is
 $w(q, b) = b - \sum_{i=1}^{n} \left\lfloor \frac{q_i b}{1 + q_1 + \cdots + q_n} \right\rfloor$.
 

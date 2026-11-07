@@ -1,6 +1,6 @@
 # Casey's theorem
 
-**Casey's theorem.** In the Euclidean plane, let a circle have center $O$ and radius $R > 0$,
+In the Euclidean plane, let a circle have center $O$ and radius $R > 0$,
 and let four circles have centers $c_1, c_2, c_3, c_4$ and radii $r_1, r_2, r_3, r_4$ with
 $0 < r_i < R$ and $|c_i O| + r_i = R$ for each $i$, so that each is internally tangent to the
 outer circle. Assume that the four circles lie outside each other, $r_i + r_j < |c_i c_j|$ for

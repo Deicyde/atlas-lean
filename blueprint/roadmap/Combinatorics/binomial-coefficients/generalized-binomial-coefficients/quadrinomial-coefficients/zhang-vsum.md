@@ -1,6 +1,6 @@
 # Zhang's six-parameter binomial sum
 
-**Zhang's six-parameter binomial sum.** For natural numbers $n$, $r_1$, $r_2$, $s$, $t$, $u$,
+For natural numbers $n$, $r_1$, $r_2$, $s$, $t$, $u$,
 Zhang's binomial sum is
 
 $$

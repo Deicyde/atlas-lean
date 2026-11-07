@@ -1,6 +1,6 @@
 # Generalized binomial coefficient of complex arguments
 
-**Generalized binomial coefficient of complex arguments.** For complex numbers $u$ and $v$, the
+For complex numbers $u$ and $v$, the
 generalized binomial coefficient is
 
 $$

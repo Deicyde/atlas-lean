@@ -1,6 +1,6 @@
 # The finite check covers the filtration worlds
 
-**The finite check covers the filtration worlds.** Let $C$ be a condition on pairs $(U, R)$ of
+Let $C$ be a condition on pairs $(U, R)$ of
 a finite set $U$ of sets of formulas and a finite relation $R$ on such sets, and let $\varphi$ be
 a formula that passes the finite check for $C$. Let $M$ be a Kripke model, let $U_\varphi$ be the
 set of types of worlds of $M$ (the sets of subformulas of $\varphi$ satisfied at a world), and

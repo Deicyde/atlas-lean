@@ -1,6 +1,6 @@
 # Odometer partial sums
 
-**Odometer partial sums.** Let $q \in \mathbb{C}$, let $\omega = (\omega_0, \omega_1, \dots)$ be
+Let $q \in \mathbb{C}$, let $\omega = (\omega_0, \omega_1, \dots)$ be
 a dyadic integer written as its binary digit sequence, let $T$ be the dyadic odometer
 $T\omega = \omega + 1$, and let $s_q(\omega) = \sum_{i \ge 0} \omega_i q^{i+1}$, taken to be $0$
 when the series is not absolutely summable. For real $x$ the odometer partial sum is

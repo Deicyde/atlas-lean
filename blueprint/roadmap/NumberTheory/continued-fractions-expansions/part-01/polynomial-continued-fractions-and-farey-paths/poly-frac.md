@@ -1,6 +1,6 @@
 # The fraction of a pair of polynomials
 
-**The fraction of a pair of polynomials.** Let $F$ be a field. The value of a pair $(u, v)$ of
+Let $F$ be a field. The value of a pair $(u, v)$ of
 polynomials in $F[x]$ is the rational function $u / v$ in the field $F(x)$ of rational functions
 over $F$ (it is $0$ when $v = 0$).
 

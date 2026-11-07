@@ -1,6 +1,6 @@
 # Holomorphic dependence of Cauchy coefficients on a parameter
 
-**Holomorphic dependence of Cauchy coefficients on a parameter.** Let $E$ be a
+Let $E$ be a
 finite-dimensional complex normed space, let $z_0 \in E$, $w_0 \in \mathbb{C}$, $A > 0$, $B > 0$
 and $M \in \mathbb{R}$, and let $f(z, w)$ be a complex-valued function of $z \in E$ and
 $w \in \mathbb{C}$ such that $z \mapsto f(z, w)$ is complex differentiable on all of $E$ for every

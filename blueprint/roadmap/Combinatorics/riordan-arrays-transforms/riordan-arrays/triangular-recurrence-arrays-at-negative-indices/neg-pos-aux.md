@@ -1,6 +1,6 @@
 # Negative-positive numbers at negative rows (auxiliary)
 
-**Negative-positive numbers at negative rows (auxiliary).** For integer parameters
+For integer parameters
 $(\alpha, \beta, \gamma; \alpha', \beta', \gamma')$ and $p, k \ge 0$, put $n = -(p + 1)$. The
 rational numbers $c_{p,k}$ are defined by recursion on $p$ and then on $k$ through
 $c_{p,k} = (r - (\alpha'(n+1) + \beta' k + \gamma')\, s) / (\alpha(n+1) + \beta k + \gamma)$,

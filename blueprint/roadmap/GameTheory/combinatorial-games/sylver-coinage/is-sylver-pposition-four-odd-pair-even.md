@@ -1,6 +1,6 @@
 # Four-element P-positions containing 4
 
-**Four-element P-positions containing 4.** Let $x > 1$ be a natural number. If
+Let $x > 1$ be a natural number. If
 $x \equiv 1 \pmod 4$, then $\{4, x, x + 2, 6\}$ is a P-position; if $x \equiv 7 \pmod 8$, then
 $\{4, x, x + 2, 10\}$ is a P-position; if $x \equiv 5 \pmod 8$, then $\{4, x, x + 6, 10\}$ is
 a P-position; and if $x \equiv 1 \pmod 8$, then $\{4, x, x + 6, 14\}$ is a P-position.

@@ -1,6 +1,6 @@
 # Fibonacci numbers in the Lucas intervals
 
-**Fibonacci numbers in the Lucas intervals.** Let $F_k$ be the Fibonacci numbers
+Let $F_k$ be the Fibonacci numbers
 ($F_0 = 0$, $F_1 = 1$) and $L_k$ the Lucas numbers ($L_0 = 2$, $L_1 = 1$). Call
 $\Lambda_{2n} = [L_{2n}, L_{2n+1}]$ the even Lucas interval and
 $\Lambda_{2n+1} = [L_{2n+1} + 1, L_{2n+2} - 1]$ the odd Lucas interval. For every $n \ge 1$,

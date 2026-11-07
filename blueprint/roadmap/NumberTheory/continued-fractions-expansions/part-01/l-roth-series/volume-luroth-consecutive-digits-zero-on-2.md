@@ -1,6 +1,6 @@
 # Integral zero-one law for functions of consecutive Lüroth digits
 
-**Integral zero-one law for functions of consecutive Lüroth digits.** Let $m \in \mathbb{N}$
+Let $m \in \mathbb{N}$
 and let $F : \mathbb{R}^m \to \mathbb{R}$ be a measurable function that is positive on
 $[2, \infty)^m$ and non-decreasing there for the coordinatewise order. Let $M \in \mathbb{R}$
 satisfy $F(x) \le M F(\lfloor x_1 \rfloor, \dots, \lfloor x_m \rfloor)$ for every

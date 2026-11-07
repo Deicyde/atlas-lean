@@ -1,6 +1,6 @@
 # A permutation has at most as many fixed points as cycles
 
-**A permutation has at most as many fixed points as cycles.** Write $a(n, k, j)$ for the number
+Write $a(n, k, j)$ for the number
 of permutations of an $n$-element set with exactly $k$ cycles (fixed points counted as cycles of
 length one) and exactly $j$ fixed points. If $k < j$, then $a(n, k, j) = 0$.
 

@@ -1,6 +1,6 @@
 # $\mathrm{SL}_3(\mathbb{Z})$ is not $(2,3)$-generated
 
-**$\mathrm{SL}_3(\mathbb{Z})$ is not $(2,3)$-generated.** There are no $a, b \in
+There are no $a, b \in
 \mathrm{SL}_3(\mathbb{Z})$ such that $a$ has order $2$, $b$ has order $3$, and $a$ and $b$ generate
 $\mathrm{SL}_3(\mathbb{Z})$. Equivalently, $\mathrm{SL}_3(\mathbb{Z})$ is not a quotient of the
 modular group $\mathrm{PSL}_2(\mathbb{Z}) \cong C_2 \ast C_3$.

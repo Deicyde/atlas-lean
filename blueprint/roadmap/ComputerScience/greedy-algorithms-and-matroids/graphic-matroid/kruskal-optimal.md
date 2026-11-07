@@ -1,6 +1,6 @@
 # Optimality of Kruskal's algorithm
 
-**Optimality of Kruskal's algorithm.** Let $G$ be a simple graph on a finite vertex type
+Let $G$ be a simple graph on a finite vertex type
 $V$, let $w$ assign a natural number to each unordered pair of vertices, and let $L$ be a list
 of unordered pairs of vertices in nonincreasing order of $w$ (each entry weighs at least as much
 as every later one). Let $T$ be the set returned by the matroid greedy algorithm run on $L$ with

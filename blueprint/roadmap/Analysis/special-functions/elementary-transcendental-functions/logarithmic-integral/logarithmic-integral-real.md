@@ -1,6 +1,6 @@
 # Real logarithmic integral extended by zero
 
-**Real logarithmic integral extended by zero.** This is the function $\mathbb{R} \to \mathbb{R}$
+This is the function $\mathbb{R} \to \mathbb{R}$
 whose value at $x$ is the logarithmic integral $\operatorname{li}(x)$ when $0 \le x$ and $x \ne 1$,
 and $0$ when $x < 0$ or $x = 1$.
 

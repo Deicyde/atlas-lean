@@ -1,6 +1,6 @@
 # The fenced machine
 
-**The fenced machine.** For a single-tape machine $M$ over a finite inhabited alphabet $\Sigma$,
+For a single-tape machine $M$ over a finite inhabited alphabet $\Sigma$,
 the fenced machine of $M$ is the single-tape machine over the fenced alphabet of $\Sigma$ whose
 states are the states of the fenced machine for the states of $M$, which starts in the first start
 state and acts on the cell under its head as follows. In the first start state, on a wall it moves

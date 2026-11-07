@@ -1,6 +1,6 @@
 # Block properties decide connectedness of the represented poset
 
-**Block properties decide connectedness of the represented poset.** Let $M$ be a poset matrix
+Let $M$ be a poset matrix
 of order $n$, a Boolean matrix with rows and columns indexed by $0, \dots, n - 1$, that
 represents a partial order $P$: there is a bijection $e$ from $\{0, \dots, n - 1\}$ to $P$ such
 that $e(i) \le e(j)$ if and only if $M_{ij}$ is true. Let $1 \le r < n$. If $M_{ij}$ is true for

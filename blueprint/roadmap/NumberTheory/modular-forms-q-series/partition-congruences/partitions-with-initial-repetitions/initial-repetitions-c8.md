@@ -1,6 +1,6 @@
 # The partition function $c_8$
 
-**The partition function $c_8$.** For $n \ge 0$, $c_8(n)$ is the number of partitions of $n$
+For $n \ge 0$, $c_8(n)$ is the number of partitions of $n$
 such that either (a) all parts are even and distinct, or (b) for some positive integer $j$, the
 largest odd part is $2j - 1$, every positive odd integer $i \le j$ appears once or twice, every
 odd integer $i$ with $j < i \le 2j - 1$ appears exactly once, all even parts are distinct, and

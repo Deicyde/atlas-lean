@@ -1,6 +1,6 @@
 # The 3SAT emitter processes a whole formula
 
-**The 3SAT emitter processes a whole formula.** Let $\varphi = C_1 \cdots C_m$ be a CNF
+Let $\varphi = C_1 \cdots C_m$ be a CNF
 formula, $u = \sum_{i=1}^{m} \max(|C_i| - 1, 0)$ the number of fresh variables its 3SAT
 translation uses, $Z_b \ge u$ a natural number, $R$ a token list that is empty or starts with a
 clause token, $o$ an output bit list and $v$ a flag. Let $T$ be the token list

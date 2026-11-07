@@ -1,6 +1,6 @@
 # Initial value of the $(1,t)$-bonacci polynomials
 
-**Initial value of the $(1,t)$-bonacci polynomials.** For every natural number $s$, the
+For every natural number $s$, the
 $(1,s+1)$-bonacci polynomial of index $0$ is $f^{(s+1)}_0(x) = 1$.
 
 ## Sources

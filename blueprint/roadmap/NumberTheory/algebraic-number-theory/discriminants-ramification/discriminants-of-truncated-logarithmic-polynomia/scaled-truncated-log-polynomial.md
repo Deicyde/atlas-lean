@@ -1,6 +1,6 @@
 # Scaled truncated logarithmic polynomial
 
-**Scaled truncated logarithmic polynomial.** For a natural number $n$, let
+For a natural number $n$, let
 $L_n = \operatorname{lcm}(1, 2, \dots, n)$. The scaled truncated logarithmic polynomial is the
 integer polynomial $\tilde F_n(x) = L_n + \sum_{j=1}^{n} (L_n / j)\, x^j$, where each quotient
 $L_n / j$ is an integer.

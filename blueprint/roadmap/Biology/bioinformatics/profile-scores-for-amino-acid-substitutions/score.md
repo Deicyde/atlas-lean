@@ -1,3 +1,3 @@
 # Naive Bayes score
 
-**Naive Bayes score.** The naive-Bayes score: prior log-odds plus the features' log-likelihood ratios.
+The naive-Bayes score: prior log-odds plus the features' log-likelihood ratios.

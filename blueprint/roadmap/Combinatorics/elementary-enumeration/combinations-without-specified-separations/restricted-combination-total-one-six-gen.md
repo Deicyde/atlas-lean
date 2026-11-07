@@ -1,6 +1,6 @@
 # Generating function for subsets avoiding differences 1 and 6
 
-**Generating function for subsets avoiding differences 1 and 6.** Let $S^{\{1,6\}}_n$ be the
+Let $S^{\{1,6\}}_n$ be the
 number of subsets of $\{1, \dots, n\}$ in which no two elements differ by $1$ or by $6$. Then,
 in the ring $\mathbb{Z}[[x]]$ of formal power series,
 

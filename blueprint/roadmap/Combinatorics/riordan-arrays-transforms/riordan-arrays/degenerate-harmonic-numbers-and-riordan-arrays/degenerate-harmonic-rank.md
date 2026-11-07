@@ -1,6 +1,6 @@
 # Generalized degenerate harmonic numbers of a given rank
 
-**Generalized degenerate harmonic numbers of a given rank.** For real $\lambda$ and $\alpha$,
+For real $\lambda$ and $\alpha$,
 let $\ell_0 = 0$ and $\ell_m = (-1)^{m-1} \binom{\lambda}{m} / (\lambda \alpha^m)$ for $m \ge 1$,
 where $\binom{\lambda}{m}$ is the generalized binomial coefficient and a quotient by $0$ is read
 as $0$, and let $L(t) = \sum_{m \ge 0} \ell_m t^m$ as a formal power series. For

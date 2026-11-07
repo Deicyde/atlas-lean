@@ -1,6 +1,6 @@
 # Adding one term to the weighted central binomial sum
 
-**Adding one term to the weighted central binomial sum.** For every sequence $a$ of rational
+For every sequence $a$ of rational
 numbers and all natural numbers $r$ and $n$, the weighted central binomial sum
 $S_r^a(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r a_k$ (with $0^0 = 1$) satisfies
 

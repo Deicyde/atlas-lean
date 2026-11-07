@@ -1,6 +1,6 @@
 # Geodesic on a set of times
 
-**Geodesic on a set of times.** Let $X$ be a pseudo-extended metric space. A curve
+Let $X$ be a pseudo-extended metric space. A curve
 $\gamma : \mathbb{R} \to X$ is a geodesic on a set of times $s \subseteq \mathbb{R}$ if, for some
 real number $c \ge 0$, it is a geodesic of speed $c$ on $s$.
 

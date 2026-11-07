@@ -1,6 +1,6 @@
 # Connectivity threshold for random $k$-out friendship graphs
 
-**Connectivity threshold for random $k$-out friendship graphs.** For natural numbers $k$ and $N$,
+For natural numbers $k$ and $N$,
 let $P_{kN}$ be the proportion of the assignments giving each of $N$ people exactly $k$ friends
 other than themselves that connect all $N$ people. Then $P_{kN} \to 1$ as $N \to \infty$ for
 every $k \ge 2$, and $P_{1N} \to 0$ as $N \to \infty$.

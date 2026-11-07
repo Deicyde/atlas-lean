@@ -1,6 +1,6 @@
 # Sierpiński number
 
-**Sierpiński number.** A natural number $k$ is a Sierpiński number if $k$ is odd and,
+A natural number $k$ is a Sierpiński number if $k$ is odd and,
 for every integer $n \ge 1$, the number $k \cdot 2^n + 1$ is not prime.
 
 ## Sources

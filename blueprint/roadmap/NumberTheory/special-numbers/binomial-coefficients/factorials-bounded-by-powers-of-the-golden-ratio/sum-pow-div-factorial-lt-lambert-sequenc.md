@@ -1,6 +1,6 @@
 # Partial exponential sums at the Lambert sequence
 
-**Partial exponential sums at the Lambert sequence.** Let $n \ge 5$ and $k$ be natural numbers
+Let $n \ge 5$ and $k$ be natural numbers
 with $k < n - 2$, let $h(y) = y e^y$ be the Lambert map, and let $a$ be a real number with
 $a \ge n - 1$ and
 

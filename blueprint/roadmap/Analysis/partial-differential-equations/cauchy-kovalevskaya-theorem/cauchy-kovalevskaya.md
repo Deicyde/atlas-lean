@@ -1,6 +1,6 @@
 # Cauchy–Kovalevskaya theorem
 
-**Cauchy–Kovalevskaya theorem.** Let $d$ be a natural number, write $\mathbb{R}^d$ for real
+Let $d$ be a natural number, write $\mathbb{R}^d$ for real
 Euclidean $d$-space, and let $F : \mathbb{R}^d \times \mathbb{R} \times \mathbb{R} \to
 \mathbb{R}^d$, $f : \mathbb{R}^d \times \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ and
 $u_0 : \mathbb{R}^d \to \mathbb{R}$ be real analytic at every point. Then for every

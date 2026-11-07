@@ -1,6 +1,6 @@
 # Explicit sum for the companion sequence $V^{(-r)}$
 
-**Explicit sum for the companion sequence $V^{(-r)}$.** Let $K$ be a field of
+Let $K$ be a field of
 characteristic zero, $r \ge 2$ and $n \ge 1$ natural numbers, $x \in K$ and $y$ a unit of
 $K$, and let $V^{(-r)}_n(x, y)$ be the companion sequence of the $(-r)$-Fibonacci
 polynomials. Then

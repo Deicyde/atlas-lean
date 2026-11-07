@@ -1,6 +1,6 @@
 # Elgindi's theorem: finite-time singularity of $C^{1,\alpha}$ Euler flows
 
-**Elgindi's theorem: finite-time singularity of $C^{1,\alpha}$ Euler flows.** There exist a
+There exist a
 real number $\alpha > 0$ and a vector field $u_0 : \mathbb{R}^3 \to \mathbb{R}^3$ that is odd,
 has divergence $0$ at every point and lies in $C^{1,\alpha}(\mathbb{R}^3)$, together with a
 constant $C > 0$ such that its vorticity satisfies

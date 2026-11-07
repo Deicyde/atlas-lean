@@ -1,6 +1,6 @@
 # Santos's expansion of a product of binomial coefficients
 
-**Santos's expansion of a product of binomial coefficients.** For natural numbers $p$, $q$
+For natural numbers $p$, $q$
 and complex numbers $x$, $z$,
 
 $$\binom{2x + z - q}{p} \binom{x}{q} = \sum_{i=0}^{p+q} \beta_i(p, q, z) \binom{2x + z}{i},$$

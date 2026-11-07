@@ -1,6 +1,6 @@
 # Generalized degenerate hyperharmonic numbers
 
-**Generalized degenerate hyperharmonic numbers.** For real numbers $\lambda$ and $\alpha$,
+For real numbers $\lambda$ and $\alpha$,
 the generalized degenerate hyperharmonic numbers $H^r_{n,\lambda}(\alpha)$, indexed by natural
 numbers $r$ (the order) and $n$, are defined by recursion on $r$. At order $0$ they are the
 degenerate harmonic terms: $H^0_{0,\lambda}(\alpha) = 0$ and

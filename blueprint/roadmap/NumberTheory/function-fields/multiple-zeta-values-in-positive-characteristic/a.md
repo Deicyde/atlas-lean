@@ -1,6 +1,6 @@
 # Multiple zeta values in positive characteristic
 
-**Multiple zeta values in positive characteristic.** Let $F$ be a finite field, $A = F[t]$,
+Let $F$ be a finite field, $A = F[t]$,
 and $K_\infty = F((1/t))$ the completion of the rational function field $F(t)$ at the place
 at infinity. For a natural number $r$ and positive integers $s_1, \dots, s_r$, the multiple
 zeta value is

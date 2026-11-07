@@ -1,6 +1,6 @@
 # The complete game on $0$
 
-**The complete game on $0$.** The sequence whose states are all the empty state is a
+The sequence whose states are all the empty state is a
 complete Accelerated Zeckendorf Game on $0$ with $0$ moves.
 
 ## Sources

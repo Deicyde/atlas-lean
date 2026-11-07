@@ -1,6 +1,6 @@
 # Gamma representation of generalized harmonic numbers
 
-**Gamma representation of generalized harmonic numbers.** Let $s > 0$ be real, let
+Let $s > 0$ be real, let
 $H_n^{(s)} = \sum_{k=1}^{n} 1/k^s$ denote the generalized harmonic numbers, and let $X_s$ be a
 random variable with the Gamma distribution $\mathrm{Gamma}(s, 1)$ of shape $s$ and rate $1$. Then
 for every natural number $n$,

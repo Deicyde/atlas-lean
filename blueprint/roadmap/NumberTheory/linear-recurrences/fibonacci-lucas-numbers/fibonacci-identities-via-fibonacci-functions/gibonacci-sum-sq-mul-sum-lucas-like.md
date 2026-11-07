@@ -1,6 +1,6 @@
 # Companion of Melham's sum-of-squares identity for gibonacci sequences
 
-**Companion of Melham's sum-of-squares identity for gibonacci sequences.** Let
+Let
 $G : \mathbb{Z} \to \mathbb{R}$, written $j \mapsto G_j$, satisfy $G_{j+2} = G_{j+1} + G_j$ for
 every integer $j$, and let $F_m$ be the Fibonacci numbers. Then for every natural number $n$ and
 every integer $k$ (the sums below are empty when $n = 0$),

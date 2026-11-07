@@ -1,6 +1,6 @@
 # Two binomial transforms of a row of trinomial coefficients agree
 
-**Two binomial transforms of a row of trinomial coefficients agree.** Write
+Write
 $\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. For all
 $n, m \in \mathbb{N}$
 

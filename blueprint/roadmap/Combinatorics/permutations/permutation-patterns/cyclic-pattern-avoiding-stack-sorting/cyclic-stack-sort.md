@@ -1,6 +1,6 @@
 # Cyclic-pattern-avoiding stack-sorting map
 
-**Cyclic-pattern-avoiding stack-sorting map.** For a finite sequence $\sigma$ of natural
+For a finite sequence $\sigma$ of natural
 numbers, the map $s_{[\sigma]}$ sends a finite sequence $\pi$ of natural numbers to the output of
 the following procedure. Read $\pi$ from left to right, starting with an empty stack. Before
 pushing the next entry $x$, pop the fewest entries from the top of the stack such that the stack

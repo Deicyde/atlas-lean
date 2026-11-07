@@ -1,6 +1,6 @@
 # Mean absolute sum over the unit cube
 
-**Mean absolute sum over the unit cube.** For $n \in \mathbb{N}$ let
+For $n \in \mathbb{N}$ let
 
 $$
 I_n = \int_{[-1/2,\, 1/2]^n} \left| \sum_{i=1}^n x_i \right| dx.

@@ -1,6 +1,6 @@
 # Finite unions of lacunary sets are not 2-large
 
-**Finite unions of lacunary sets are not 2-large.** For every $n \ge 1$ and all lacunary sets
+For every $n \ge 1$ and all lacunary sets
 $D_1, \dots, D_n$, the union $D_1 \cup \dots \cup D_n$ is not 2-large.
 
 ## Sources

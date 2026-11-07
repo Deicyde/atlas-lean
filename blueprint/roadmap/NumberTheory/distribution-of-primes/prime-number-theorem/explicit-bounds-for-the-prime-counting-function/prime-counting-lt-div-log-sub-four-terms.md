@@ -1,6 +1,6 @@
 # Axler's upper bound for the prime-counting function above 29.53
 
-**Axler's upper bound for the prime-counting function above 29.53.** Let $\pi(x)$ denote the
+Let $\pi(x)$ denote the
 number of primes $p \le x$ and $\log$ the natural logarithm. For every real $x \ge 29.53$,
 
 $$

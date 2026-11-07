@@ -1,6 +1,6 @@
 # Convergent denominators as continuants
 
-**Convergent denominators as continuants.** For a sequence of natural numbers
+For a sequence of natural numbers
 $a_0, a_1, a_2, \dots$, its convergent denominators $q_0, q_1, q_2, \dots$ are the natural
 numbers defined by $q_0 = 1$, $q_1 = a_1$ and $q_{i+2} = a_{i+2} q_{i+1} + q_i$ for $i \ge 0$.
 They are the denominators of the convergents of $[a_0; a_1, a_2, \dots]$, and $q_i$ is the

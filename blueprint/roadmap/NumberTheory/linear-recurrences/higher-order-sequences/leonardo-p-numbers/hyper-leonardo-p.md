@@ -1,6 +1,6 @@
 # Hyper Leonardo $p$-numbers
 
-**Hyper Leonardo $p$-numbers.** For natural numbers $p$, $n$ and $k$, the hyper Leonardo
+For natural numbers $p$, $n$ and $k$, the hyper Leonardo
 $p$-number is the integer
 
 $$\mathcal{L}^{(k)}_{p,n} = (p + 1) \sum_{i=0}^{\lfloor n/(p+1) \rfloor}

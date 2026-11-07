@@ -1,6 +1,6 @@
 # CL-interlacing of $p^d_0$ with a perturbation of $p^{d+1}_0$
 
-**CL-interlacing of $p^d_0$ with a perturbation of $p^{d+1}_0$.** For every natural number
+For every natural number
 $d \ge 1$ and every real number $w > 0$, the symmetric basis polynomial $p^d_0$ CL-interlaces
 the polynomial $p^{d+1}_0 + w \, (2X + 1) \, p^d_0$.
 

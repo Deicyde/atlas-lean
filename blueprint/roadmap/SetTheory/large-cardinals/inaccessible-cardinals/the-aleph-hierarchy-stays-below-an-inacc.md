@@ -1,6 +1,6 @@
 # The aleph hierarchy stays below an inaccessible cardinal
 
-**The aleph hierarchy stays below an inaccessible cardinal.** Below an inaccessible `κ`, the aleph hierarchy stays below `κ`: same argument
+Below an inaccessible `κ`, the aleph hierarchy stays below `κ`: same argument
 via `IsInaccessible.aleph_ord`.
 
 ## Sources

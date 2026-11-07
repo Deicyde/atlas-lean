@@ -1,6 +1,6 @@
 # Structure of the pseudo-greedy expansion of a rational
 
-**Structure of the pseudo-greedy expansion of a rational.** Let $p$ and $q$ be positive
+Let $p$ and $q$ be positive
 integers, let $r = p/q$, and let $(x_n)$, $(a_n)$ and $(\varepsilon_n)$ be the remainder
 sequence, the pseudo-greedy expansion and the gap sequence of $r$. Put
 $d_n = q a_0 a_1 \cdots a_{n-1}$ (so $d_0 = q$). Then there are positive integers $c_n$ and

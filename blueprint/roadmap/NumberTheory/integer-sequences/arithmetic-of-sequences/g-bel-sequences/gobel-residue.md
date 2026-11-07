@@ -1,6 +1,6 @@
 # Residue sequence of the $k$-Göbel sequence
 
-**Residue sequence of the $k$-Göbel sequence.** Fix natural numbers $k$, $p$, $r$ and write
+Fix natural numbers $k$, $p$, $r$ and write
 $\nu_p$ for the $p$-adic valuation. The residue sequence $g_{k,p,r}(n)$, meant for $n \ge 1$ with
 $\nu_p(n!) \le r$, takes values in $\mathbb{Z}/p^{r - \nu_p(n!)}\mathbb{Z} \cup \{F\}$, where $F$
 is a failure value; a residue class is represented by its least nonnegative representative. It

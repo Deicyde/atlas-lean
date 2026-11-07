@@ -1,6 +1,6 @@
 # Sums of $m$th powers via Stirling numbers of the second kind
 
-**Sums of $m$th powers via Stirling numbers of the second kind.** For all natural numbers
+For all natural numbers
 $n$ and $m$,
 
 $$\sum_{k=1}^{n} k^m = \sum_{k=0}^{m} (-1)^{m-k}\, k!\, \binom{n + k}{k + 1}\, S(m, k),$$

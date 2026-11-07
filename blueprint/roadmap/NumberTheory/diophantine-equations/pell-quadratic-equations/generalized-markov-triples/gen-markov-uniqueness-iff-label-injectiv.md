@@ -1,6 +1,6 @@
 # Uniqueness of maximal triples and injectivity of the fraction labeling
 
-**Uniqueness of maximal triples and injectivity of the fraction labeling.** For every
+For every
 natural number $k$, the following are equivalent: every $k$-generalized Markov number is the
 maximum of a unique $k$-generalized Markov triple up to order (Conjecture 1.8 for $k$); and the
 fraction labeling of $k$-generalized Markov numbers is injective on $[0, 1]$, that is, whenever

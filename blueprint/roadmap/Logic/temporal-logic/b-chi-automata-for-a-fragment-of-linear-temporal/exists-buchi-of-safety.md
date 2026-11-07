@@ -1,6 +1,6 @@
 # Büchi automata for the restricted safety fragment
 
-**Büchi automata for the restricted safety fragment.** Take as letters the sets of atoms,
+Take as letters the sets of atoms,
 an atom $a$ holding at a letter $s$ iff $a \in s$. For every formula $\psi$ of the restricted
 safety fragment there is a nondeterministic Büchi automaton with finitely many states whose
 ω-language is exactly the set of infinite words satisfying $\psi$, read as an LTL formula.

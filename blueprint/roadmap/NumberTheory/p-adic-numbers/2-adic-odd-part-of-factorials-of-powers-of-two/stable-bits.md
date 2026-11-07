@@ -1,6 +1,6 @@
 # Stable bits of the odd part of a factorial
 
-**Stable bits of the odd part of a factorial.** For natural numbers $s$ and $d$, let
+For natural numbers $s$ and $d$, let
 $\operatorname{stab}(s, d)$ be the number whose binary digits are the digits of
 $\operatorname{od}((2^{s+d-1})!)$ in positions $s, \dots, s + d - 1$ (position $0$ being the
 units digit), where $\operatorname{od}(m)$ is the odd part of $m$ and $s + d - 1$ is truncated

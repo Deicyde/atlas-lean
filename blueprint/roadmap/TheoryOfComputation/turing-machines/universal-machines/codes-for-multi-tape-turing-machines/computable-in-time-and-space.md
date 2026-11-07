@@ -1,6 +1,6 @@
 # Computation by a code is finite-state computation
 
-**Computation by a code is finite-state computation.** Let $c$ be a code with $k$ work tapes,
+Let $c$ be a code with $k$ work tapes,
 let $g : \alpha \to \beta$ be a function, let inputs in $\alpha$ and outputs in $\beta$ be encoded
 by injective maps into binary words, and let $t, s : \alpha \to \mathbb{N}$. If the machine of $c$,
 started on the encoding of any input $x$, halts with the encoding of $g(x)$ as output, halts

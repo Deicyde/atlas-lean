@@ -1,6 +1,6 @@
 # GENERALIZED ASSIGNMENT is NP-complete
 
-**GENERALIZED ASSIGNMENT is NP-complete.** The generalized assignment decision problem
+The generalized assignment decision problem
 belongs to NP, and every decision problem in NP reduces to it by a polynomial-time many-one
 reduction.
 

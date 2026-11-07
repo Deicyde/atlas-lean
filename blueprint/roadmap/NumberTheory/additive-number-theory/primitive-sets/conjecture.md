@@ -1,6 +1,6 @@
 # Asymptotic primitive set bound
 
-**Asymptotic primitive set bound.** The statement that there is a function
+The statement that there is a function
 $o : \mathbb{N} \to \mathbb{R}$ with $o(x) \to 0$ as $x \to \infty$ such that for every natural
 number $x > 0$ and every primitive set $A$ of natural numbers contained in $[x, \infty)$, the
 series $\sum_{a \in A} \frac{1}{a \log a}$ is summable and

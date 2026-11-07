@@ -1,6 +1,6 @@
 # Alternating generalized harmonic numbers of index zero
 
-**Alternating generalized harmonic numbers of index zero.** For every real number $s$, the
+For every real number $s$, the
 alternating generalized harmonic number $\overline{H}_0^{(s)}$ is $0$.
 
 ## Sources

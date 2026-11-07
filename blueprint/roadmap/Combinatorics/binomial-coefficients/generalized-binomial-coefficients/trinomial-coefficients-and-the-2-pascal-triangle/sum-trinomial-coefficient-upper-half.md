@@ -1,6 +1,6 @@
 # Generating sum of the upper half of a trinomial row
 
-**Generating sum of the upper half of a trinomial row.** Write $\binom{n}{k}_2$ for the
+Write $\binom{n}{k}_2$ for the
 trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$. For every natural number $n$
 and every complex number $w$,
 

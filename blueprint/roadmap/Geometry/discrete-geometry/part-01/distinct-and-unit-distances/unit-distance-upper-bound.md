@@ -1,6 +1,6 @@
 # Spencer–Szemerédi–Trotter unit distance bound
 
-**Spencer–Szemerédi–Trotter unit distance bound.** There is a constant $C > 0$ such that every
+There is a constant $C > 0$ such that every
 finite set of $n$ points in the Euclidean plane $\mathbb{R}^2$ has at most $C n^{4/3}$ unordered
 pairs of points at distance exactly $1$.
 

@@ -1,6 +1,6 @@
 # Recurrence for the negative Pell sequences
 
-**Recurrence for the negative Pell sequences.** Let $d$ be a natural number, let $(X, Y)$ be the
+Let $d$ be a natural number, let $(X, Y)$ be the
 solution of $x^2 - d y^2 = -1$ in natural numbers with least positive $Y$ (with $X = Y = 0$ if
 there is none), and define integers $f_n, g_n$ by $(X + Y\sqrt{d})^n = f_n + g_n\sqrt{d}$,
 computed formally with $(\sqrt{d})^2 = d$. Then for every $n \ge 0$,

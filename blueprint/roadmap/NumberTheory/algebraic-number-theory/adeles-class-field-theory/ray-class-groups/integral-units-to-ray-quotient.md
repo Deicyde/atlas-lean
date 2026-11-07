@@ -1,6 +1,6 @@
 # Map from integral units to the ray quotient
 
-**Map from integral units to the ray quotient.** Let $\mathfrak m$ be a modulus of a number
+Let $\mathfrak m$ be a modulus of a number
 field $K$, let $K_{\mathfrak m} \le K^\times$ be the group of ray elements (elements whose principal
 fractional ideal is coprime to the finite part of $\mathfrak m$) and let
 $K_{\mathfrak m,1} \le K_{\mathfrak m}$ be the ray-one subgroup. This is the group homomorphism

@@ -1,6 +1,6 @@
 # Rectangular inner dimension
 
-**Rectangular inner dimension.** For a natural number $n$ and a real aspect $k$, the
+For a natural number $n$ and a real aspect $k$, the
 rectangular inner dimension is $\lceil n^k \rceil$, the least natural number that is at least
 the real power $n^k$.
 

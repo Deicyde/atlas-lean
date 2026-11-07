@@ -1,6 +1,6 @@
 # Vitali's convergence theorem
 
-**Vitali's convergence theorem.** Let $U \subseteq \mathbb{C}$ be open and preconnected, and let
+Let $U \subseteq \mathbb{C}$ be open and preconnected, and let
 $(F_n)_{n \in \mathbb{N}}$ be a sequence of functions $\mathbb{C} \to \mathbb{C}$, each holomorphic
 on $U$, that is locally uniformly bounded on $U$. Let $S \subseteq U$ have an accumulation point
 $x_0 \in U$, and let $g : \mathbb{C} \to \mathbb{C}$ satisfy $F_n(z) \to g(z)$ as $n \to \infty$

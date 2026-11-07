@@ -1,6 +1,6 @@
 # Eventual positivity of the square-root Poisson series
 
-**Eventual positivity of the square-root Poisson series.** For all sufficiently large
+For all sufficiently large
 real $x$, the sum $\sum_{k=1}^{\infty} x^k \sqrt{k} / k!$ is strictly positive.
 
 ## Sources

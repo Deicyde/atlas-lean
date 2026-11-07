@@ -1,6 +1,6 @@
 # Ex falso translates to a CLL theorem
 
-**Ex falso translates to a CLL theorem.** Let $f$ map atoms to CLL propositions and send the
+Let $f$ map atoms to CLL propositions and send the
 atom $\bot$ to the additive unit $0$. Then for every propositional formula $B$, the one-formula
 CLL sequent $\vdash (\bot \to B)^\circ$ is provable, where $(\cdot)^\circ$ is Girard's
 translation with atoms translated by $f$.

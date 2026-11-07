@@ -1,6 +1,6 @@
 # Perfect matching in uniform hypergraphs with a codegree condition
 
-**Perfect matching in uniform hypergraphs with a codegree condition.** For a natural number
+For a natural number
 $k$ and a rational $c$, $\mathrm{PM}(k, c)$ is the decision problem on bitstrings that decodes an
 input as a pair $(n, E)$ of a natural number $n$ and a list $E$ of lists of natural numbers, and
 accepts it iff every list in $E$ consists of $k$ distinct vertices below $n$, $k \mid n$, every

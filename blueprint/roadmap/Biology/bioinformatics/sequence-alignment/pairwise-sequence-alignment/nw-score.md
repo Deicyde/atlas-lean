@@ -1,6 +1,6 @@
 # Needleman–Wunsch score
 
-**Needleman–Wunsch score.** Given a type $\alpha$, a substitution score
+Given a type $\alpha$, a substitution score
 $\sigma : \alpha \to \alpha \to \mathbb{Z}$ and a gap score $g \in \mathbb{Z}$, the
 Needleman–Wunsch score $\mathrm{NW}(xs, ys)$ of two lists over $\alpha$ is defined by recursion
 on their total length: if one of the lists is empty, it is $g$ times the length of the other;

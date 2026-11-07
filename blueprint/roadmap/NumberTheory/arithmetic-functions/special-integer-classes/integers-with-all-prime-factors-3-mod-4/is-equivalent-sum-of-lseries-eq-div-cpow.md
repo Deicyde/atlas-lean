@@ -1,6 +1,6 @@
 # Raikov's Tauberian theorem
 
-**Raikov's Tauberian theorem.** Let $a_1, a_2, \ldots$ be nonnegative real numbers whose
+Let $a_1, a_2, \ldots$ be nonnegative real numbers whose
 Dirichlet series $F(s) = \sum_{n \ge 1} a_n n^{-s}$ converges absolutely for $\mathrm{Re}\, s > 1$,
 and let $\alpha < 1$ be real. Suppose that $H$ is a function holomorphic on an open set containing
 the half-plane $\mathrm{Re}\, s \ge 1$ and nonzero on that half-plane, and that

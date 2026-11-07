@@ -1,6 +1,6 @@
 # Structure of $k$-box paths
 
-**Structure of $k$-box paths.** Let $k \ge 1$ and $n \ge 1$. For a list
+Let $k \ge 1$ and $n \ge 1$. For a list
 $a = (a_1, \dots, a_n)$ of natural numbers write
 $w_k(a) = U^{a_1} D^k L D \cdots U^{a_{n-1}} D^k L D\, U^{a_n} D^k L$. Every $k$-box path of
 size $n$ equals $w_k(a)$ for some list $a$ of $n$ positive integers. Conversely, if $a$ is a

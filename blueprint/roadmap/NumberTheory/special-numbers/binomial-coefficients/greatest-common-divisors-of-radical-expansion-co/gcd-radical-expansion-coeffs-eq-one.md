@@ -1,6 +1,6 @@
 # Coprime coefficients of $(u + v^{1/N})^n$ when $N$ has two distinct prime factors
 
-**Coprime coefficients of $(u + v^{1/N})^n$ when $N$ has two distinct prime factors.** Let
+Let
 $N$ be a natural number with at least two distinct prime divisors, let $u, v$ be coprime positive
 integers such that $x^N - v$ is irreducible over $\mathbb{Q}$, let $\theta = v^{1/N}$ be the
 positive real $N$-th root of $v$, and let $a_{n,i}$ (for natural $n$ and $0 \le i \le N - 1$) be

@@ -1,6 +1,6 @@
 # One $\ell$-regular overpartition of zero
 
-**One $\ell$-regular overpartition of zero.** For every natural number $\ell$, the number
+For every natural number $\ell$, the number
 $A_\ell(0)$ of overpartitions of $0$ with no part divisible by $\ell$ equals $1$: the only one is
 the empty overpartition.
 

@@ -1,6 +1,6 @@
 # Generators of the Suzuki group
 
-**Generators of the Suzuki group.** Let $n$ be a natural number, $q = 2^{2n+1}$,
+Let $n$ be a natural number, $q = 2^{2n+1}$,
 $\theta = 2^{n+1}$ and $F = \mathrm{GF}(q)$. The generating set of $\mathrm{Sz}(q)$ is the set of
 $4 \times 4$ matrices over $F$ of the following three kinds: for $a, b \in F$, the root element
 with rows $(1, a, b, a^{2+\theta} + ab + b^{\theta})$, $(0, 1, a^{\theta}, a^{1+\theta} + b)$,

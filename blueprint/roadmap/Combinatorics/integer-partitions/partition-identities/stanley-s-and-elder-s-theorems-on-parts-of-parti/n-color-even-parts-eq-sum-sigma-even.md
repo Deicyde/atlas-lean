@@ -1,6 +1,6 @@
 # Even divisor sums count the even parts of $n$-color partitions
 
-**Even divisor sums count the even parts of $n$-color partitions.** For $m \ge 1$, let
+For $m \ge 1$, let
 $A_e(m)$ be the total number of parts of even size, counted with multiplicity, over the
 $n$-color partitions of $m$, and for $r \ge 0$ let $C(r)$ be the number of $n$-color partitions
 of $r$. Then

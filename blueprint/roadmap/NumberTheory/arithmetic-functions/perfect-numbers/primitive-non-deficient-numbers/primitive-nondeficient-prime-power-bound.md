@@ -1,6 +1,6 @@
 # Prime-power bound for primitive non-deficient numbers
 
-**Prime-power bound for primitive non-deficient numbers.** Let $\sigma(m)$ denote the sum of the
+Let $\sigma(m)$ denote the sum of the
 divisors of $m$. Let $n$ be a positive integer that is non-deficient, $\sigma(n) \ge 2n$, and
 primitive, meaning that every divisor $m$ of $n$ with $m < n$ is deficient, $\sigma(m) < 2m$.
 Let $k$ be the number of distinct prime factors of $n$ and $R$ their product. Then $n$ has a

@@ -1,6 +1,6 @@
 # Well-formed succinct circuit descriptions
 
-**Well-formed succinct circuit descriptions.** Let $C$ be a list of encoded gates, read as a
+Let $C$ be a list of encoded gates, read as a
 flat Boolean circuit on $n$ inputs that describes a circuit $D$ with $2^n$ gates. For each gate
 $i$ of $D$, let $t_i$, $p_i$ and $q_i$ be its gate type, first predecessor and second
 predecessor, as decoded from the outputs of $C$ on the $n$-bit binary expansion of $i$. The

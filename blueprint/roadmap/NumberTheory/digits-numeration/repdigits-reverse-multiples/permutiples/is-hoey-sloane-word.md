@@ -1,6 +1,6 @@
 # Hoey–Sloane words
 
-**Hoey–Sloane words.** Let $n$ and $b$ be natural numbers. An input string
+Let $n$ and $b$ be natural numbers. An input string
 $(d_0, \hat d_0) \cdots (d_k, \hat d_k)$ of pairs of natural numbers belongs to the language $L$
 of the $(n, b)$-Hoey–Sloane machine when, with $c_0, \dots, c_{k+1}$ the carries of the machine
 on this string, every input $(d_j, \hat d_j)$ is an edge of the $(n, b)$-mother graph, $b$

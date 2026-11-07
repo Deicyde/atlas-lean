@@ -1,6 +1,6 @@
 # The marking algorithm reads the mark of the target
 
-**The marking algorithm reads the mark of the target.** If a bit string $x$ parses as a PATH
+If a bit string $x$ parses as a PATH
 instance with source $s$, target $t$, $n$ vertices and edge list $es$, then the marking algorithm
 on $x$ returns the mark of $t$ in the reach marks of $s$ (the marks after $n$ marking passes over
 $es$, starting from the marks on $0, \dots, n - 1$ with only $s$ marked, and none if $s \ge n$),

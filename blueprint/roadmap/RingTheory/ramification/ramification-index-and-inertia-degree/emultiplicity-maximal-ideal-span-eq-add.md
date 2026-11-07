@@ -1,6 +1,6 @@
 # Multiplicity of the maximal ideal equals the additive valuation
 
-**Multiplicity of the maximal ideal equals the additive valuation.** Let $R$ be a discrete
+Let $R$ be a discrete
 valuation ring with maximal ideal $\mathfrak{m}$ and normalized additive valuation
 $v \colon R \to \mathbb{N} \cup \{\infty\}$. For every $x \in R$, the multiplicity of
 $\mathfrak{m}$ in the principal ideal $(x)$, that is, the supremum in $\mathbb{N} \cup \{\infty\}$

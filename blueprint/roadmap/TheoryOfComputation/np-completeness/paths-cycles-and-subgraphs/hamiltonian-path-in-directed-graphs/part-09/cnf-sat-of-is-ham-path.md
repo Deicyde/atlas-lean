@@ -1,6 +1,6 @@
 # Backward direction of SAT ≤ HAMPATH for paths with normal detours
 
-**Backward direction of SAT ≤ HAMPATH for paths with normal detours.** Let $\varphi$ be a CNF
+Let $\varphi$ be a CNF
 formula with $m$ clauses and $k$ distinct variables. In Sipser's HAMPATH graph for $\varphi$, clause
 $j$ is vertex $j < m$, the top of diamond $i$ is $t_i = m + i(3m + 2)$, and vertex $l \le 3m$ of
 its row is $r_{i,l} = t_i + 1 + l$. If $p$ is a Hamiltonian path of this graph (on the vertices

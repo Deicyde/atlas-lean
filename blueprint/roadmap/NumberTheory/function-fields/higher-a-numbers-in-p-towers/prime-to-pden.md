@@ -1,6 +1,6 @@
 # Prime-to-$p$ part of the denominator
 
-**Prime-to-$p$ part of the denominator.** For a natural number $p$ and a rational number
+For a natural number $p$ and a rational number
 $x$ whose denominator in lowest terms is $b \ge 1$, $x_D$ is the natural number $b / p^k$, where
 $p^k$ is the largest power of $p$ dividing $b$ (with $k = 0$ when $p = 1$).
 

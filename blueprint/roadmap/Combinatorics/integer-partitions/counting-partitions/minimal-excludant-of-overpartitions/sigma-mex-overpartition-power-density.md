@@ -1,6 +1,6 @@
 # Density of overpartition r-mex sums divisible by powers of two
 
-**Density of overpartition r-mex sums divisible by powers of two.** Let $m$, $e$ and $k$ be
+Let $m$, $e$ and $k$ be
 natural numbers with $k \ge 1$, let $r = 2^m 3^e$, and let
 $\sigma_r\overline{\mathrm{mex}}(n)$ be the sum over all overpartitions $\pi$ of $n$ of
 $\overline{\mathrm{mex}}_r(\pi)$, the least positive integer occurring fewer than $r$ times among

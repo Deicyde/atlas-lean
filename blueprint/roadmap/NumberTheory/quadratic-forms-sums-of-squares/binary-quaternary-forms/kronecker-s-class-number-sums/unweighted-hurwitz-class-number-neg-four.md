@@ -1,6 +1,6 @@
 # Unweighted Hurwitz class numbers via Gauss class numbers
 
-**Unweighted Hurwitz class numbers via Gauss class numbers.** Let $n$, $\alpha$, $g$, $h$ be
+Let $n$, $\alpha$, $g$, $h$ be
 natural numbers with $n = 2^\alpha g h^2$, where $g$ and $h$ are odd and $g$ is squarefree. Let
 $d$ be the Kronecker discriminant of $(\alpha, g)$, namely $d = -4g$ if $\alpha$ is even and
 $g \equiv 1 \pmod 4$, $d = -g$ if $\alpha$ is even and $g \equiv 3 \pmod 4$, and $d = -8g$ if

@@ -1,6 +1,6 @@
 # Scaled ternary bound for the first residual estimate
 
-**Scaled ternary bound for the first residual estimate.** Let $n$ and $N$ be natural numbers
+Let $n$ and $N$ be natural numbers
 with $945 \le n$ and $3n \le N \le n^2 + n$. Then
 
 $$

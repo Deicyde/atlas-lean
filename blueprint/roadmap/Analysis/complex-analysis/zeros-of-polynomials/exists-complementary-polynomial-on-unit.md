@@ -1,6 +1,6 @@
 # Complementary polynomial on the unit circle
 
-**Complementary polynomial on the unit circle.** Let $P$ be a complex polynomial with
+Let $P$ be a complex polynomial with
 $|P(z)| \le 1$ for every complex number $z$ with $|z| = 1$. Then there is a complex polynomial $Q$
 with $\deg Q \le \deg P$ such that $|P(z)|^2 + |Q(z)|^2 = 1$ for every $z$ with $|z| = 1$. Here
 the degree of the zero polynomial is taken to be $0$.

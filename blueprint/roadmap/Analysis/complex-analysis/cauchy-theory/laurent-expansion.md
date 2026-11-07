@@ -1,6 +1,6 @@
 # Laurent expansion on an annulus
 
-**Laurent expansion on an annulus.** Let $c \in \mathbb{C}$, let $r$ and $R$ be real numbers, and
+Let $c \in \mathbb{C}$, let $r$ and $R$ be real numbers, and
 let $f : \mathbb{C} \to \mathbb{C}$ be holomorphic on the annulus
 $A = \{z \in \mathbb{C} : r < |z - c| < R\}$. Then there are coefficients $a_n \in \mathbb{C}$
 for $n \in \mathbb{Z}$ such that for every $z \in A$ the series

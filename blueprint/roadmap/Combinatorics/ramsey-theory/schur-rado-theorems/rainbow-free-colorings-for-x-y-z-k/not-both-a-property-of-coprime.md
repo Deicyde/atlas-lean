@@ -1,6 +1,6 @@
 # Coprime numbers of a non-dominant color cannot both have the $A$-property
 
-**Coprime numbers of a non-dominant color cannot both have the $A$-property.** Let $k$ be a
+Let $k$ be a
 natural number, let $n_0 \ge 2$ be an integer, and let $c$ be a coloring of the positive
 integers by three distinct colors $R$, $B$, $G$ with no rainbow solution of $x - y = z^k$: there
 are no positive integers $x, y, z$ with $x = y + z^k$ and $c(x)$, $c(y)$, $c(z)$ pairwise

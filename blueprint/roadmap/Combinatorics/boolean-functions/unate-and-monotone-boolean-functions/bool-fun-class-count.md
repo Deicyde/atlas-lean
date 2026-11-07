@@ -1,6 +1,6 @@
 # Number of classes of Boolean functions
 
-**Number of classes of Boolean functions.** Given a relation $R$ and a property $P$ of
+Given a relation $R$ and a property $P$ of
 $n$-variable Boolean functions, the number of $R$-inequivalent $n$-variable functions with $P$ is
 the number of distinct sets $\{g : P(g) \text{ and } R(f, g)\}$ as $f$ ranges over the functions
 with $P$. When $R$ is an equivalence relation, this is the number of equivalence classes of $R$

@@ -1,6 +1,6 @@
 # Dumont–Thomas complement representations
 
-**Dumont–Thomas complement representations.** Let $\eta$ map each letter of an alphabet $A$
+Let $\eta$ map each letter of an alphabet $A$
 to a finite word over $A$, extended to finite words by concatenation, with iterates $\eta^j$;
 let $u = (u_i)_{i \in \mathbb{Z}}$ be a two-sided word over $A$ and let $p$ be a natural
 number. A finite word $w$ of natural-number digits is a Dumont–Thomas complement

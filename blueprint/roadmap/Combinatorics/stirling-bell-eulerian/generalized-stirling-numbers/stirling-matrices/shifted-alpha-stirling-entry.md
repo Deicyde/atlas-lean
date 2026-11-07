@@ -1,6 +1,6 @@
 # Entries of the shifted α-Stirling matrix
 
-**Entries of the shifted α-Stirling matrix.** Let $R$ be a commutative ring and let
+Let $R$ be a commutative ring and let
 $\alpha = (\alpha_j)_{j \ge 1}$ be a sequence in $R$. The entries $\mathsf{S}_{i,j} \in R$ of the
 shifted $\alpha$-Stirling matrix of $\alpha$, for natural numbers $i$ and $j$ counted from $0$, are
 defined by $\mathsf{S}_{i,0} = \alpha_1$ for all $i$, $\mathsf{S}_{0,j} = \alpha_1$ for all $j$,

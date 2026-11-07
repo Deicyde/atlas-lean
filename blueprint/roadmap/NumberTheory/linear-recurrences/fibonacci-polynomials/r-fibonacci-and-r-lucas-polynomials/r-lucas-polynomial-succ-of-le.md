@@ -1,6 +1,6 @@
 # Recurrence for the $r$-Lucas polynomials
 
-**Recurrence for the $r$-Lucas polynomials.** Let $R$ be a commutative semiring, let $s$ be a
+Let $R$ be a commutative semiring, let $s$ be a
 natural number, let $x, y \in R$, and let $r \le n$ be natural numbers. Then the $r$-Lucas
 polynomials of type $s$, $V_m = V^{(r,s)}_m(x, y)$, satisfy $V_{n+1} = x \, V_n + y \, V_{n-r}$.
 

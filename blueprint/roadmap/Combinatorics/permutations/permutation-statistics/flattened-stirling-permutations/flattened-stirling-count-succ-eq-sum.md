@@ -1,6 +1,6 @@
 # A binomial–Stirling formula for flattened Stirling permutations
 
-**A binomial–Stirling formula for flattened Stirling permutations.** For every natural number
+For every natural number
 $n$, the number of flattened Stirling permutations of order $n + 1$ is
 
 $$

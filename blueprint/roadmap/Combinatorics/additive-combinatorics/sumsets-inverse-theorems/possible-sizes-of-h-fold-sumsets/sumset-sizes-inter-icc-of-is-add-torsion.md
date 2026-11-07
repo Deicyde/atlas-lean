@@ -1,6 +1,6 @@
 # Sumset sizes between $hk - h + 1$ and $hk$
 
-**Sumset sizes between $hk - h + 1$ and $hk$.** Let $G$ be a nontrivial torsion-free
+Let $G$ be a nontrivial torsion-free
 additive commutative group and let $h \ge 1$ and $k \ge 4$ be natural numbers. For a finite
 set $A \subseteq G$ write $hA$ for its $h$-fold sumset, the set of sums of $h$ elements of $A$,
 and write $R_G(h, k)$ for the set of sizes $|hA|$ of $k$-element sets $A \subseteq G$. Then

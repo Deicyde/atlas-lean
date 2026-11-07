@@ -1,6 +1,6 @@
 # Existence and uniqueness of the diagonal normal form
 
-**Existence and uniqueness of the diagonal normal form.** Write $v^{(m)}$ for $m$ copies of
+Write $v^{(m)}$ for $m$ copies of
 $v$. For every partition $\alpha$ of $n \ge 1$ there are an integer $q > 0$ and natural numbers
 $s_1, \dots, s_q$ such that the diagonal sequence of $\alpha$, indexed from $0$, is
 $(0, 1, 2, \dots, q, q^{(s_q)}, (q-1)^{(s_{q-1})}, \dots, 1^{(s_1)}, 0, 0, \dots)$ and

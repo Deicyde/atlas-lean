@@ -1,6 +1,6 @@
 # Number of double descents
 
-**Number of double descents.** For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$,
+For a permutation $\sigma$ of $\{0, 1, \dots, n-1\}$,
 $\mathrm{ddes}(\sigma)$ is the number of positions $i$ that are double descents of $\sigma$.
 
 ## Sources

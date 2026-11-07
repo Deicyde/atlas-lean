@@ -1,6 +1,6 @@
 # Trudi's formula as a generating function
 
-**Trudi's formula as a generating function.** Let $K$ be a field and $a_0, a_1, a_2, \dots$
+Let $K$ be a field and $a_0, a_1, a_2, \dots$
 a sequence in $K$ with $a_0 \ne 0$. For $n \ge 1$ let $A_n$ be the $n \times n$
 Toeplitz–Hessenberg matrix whose $(i, j)$ entry is $a_{i-j+1}$ if $j \le i + 1$ and $0$
 otherwise. In the ring of formal power series over $K$, let $f(x) = \sum_{n \ge 1} \det(A_n) x^n$,

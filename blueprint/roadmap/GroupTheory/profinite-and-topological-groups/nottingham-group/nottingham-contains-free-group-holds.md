@@ -1,6 +1,6 @@
 # The Nottingham group contains a free subgroup of rank 2
 
-**The Nottingham group contains a free subgroup of rank 2.** For every prime $p$ there is an
+For every prime $p$ there is an
 injective group homomorphism $f$ from the free group $F_2$ on two generators to the group of ring
 automorphisms of the power series ring $(\mathbb{Z}/p\mathbb{Z})[[x]]$ such that, for every
 $g \in F_2$, the automorphism $\varphi = f(g)$ satisfies $\varphi(x) - x \in (x^2)$; that is, the

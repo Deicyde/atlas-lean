@@ -1,6 +1,6 @@
 # Products of quarter-shift central binomial odd harmonic sums
 
-**Products of quarter-shift central binomial odd harmonic sums.** Let $O_n(k)$ denote the
+Let $O_n(k)$ denote the
 depth-$k$ odd harmonic number, let $\beta(s) = \sum_{n \ge 0} (-1)^n / (2n+1)^s$ be the Dirichlet
 beta function, and let
 $B = \mathbb{Q}[\log 2, \pi, \zeta(3), \zeta(5), \ldots, \beta(2), \beta(4), \ldots] \subseteq

@@ -1,6 +1,6 @@
 # Closed formula for bifence-free fence tilings
 
-**Closed formula for bifence-free fence tilings.** Let $a$, $b$ be nonzero elements of a field
+Let $a$, $b$ be nonzero elements of a field
 and let $\xi(n) = n \bmod 2$. For every natural number $n$, the weighted number $C_n$ of tilings of
 the $n$-board by half-squares and $(1/2, 1/2)$-fences with no bifence, with half-square weights
 $a$ and $b$, is

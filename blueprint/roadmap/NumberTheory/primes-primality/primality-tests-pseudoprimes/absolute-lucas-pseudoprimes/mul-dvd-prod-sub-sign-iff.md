@@ -1,6 +1,6 @@
 # Ballot's Lemma 2: three divisibilities as one congruence
 
-**Ballot's Lemma 2: three divisibilities as one congruence.** Let
+Let
 $\varepsilon_1, \varepsilon_2, \varepsilon_3 \in \{1, -1\}$, let $c_1, c_2, c_3$ be pairwise coprime
 positive integers, let $g \ne 0$ be an integer, and put
 $n = (c_1 g + \varepsilon_1)(c_2 g + \varepsilon_2)(c_3 g + \varepsilon_3)$ and

@@ -1,6 +1,6 @@
 # Hermite's form of Lagrange inversion as a series identity
 
-**Hermite's form of Lagrange inversion as a series identity.** Let $\varphi$, $g$, $F$ and $\psi$
+Let $\varphi$, $g$, $F$ and $\psi$
 be formal power series over $\mathbb{C}$, write $F'$ for the formal derivative of $F$, and write
 $h(k)$ for the substitution of a power series $k$ into a power series $h$. Suppose that $\varphi$
 has nonzero constant term, that $F\varphi = X$, and that $\psi$ is a two-sided compositional

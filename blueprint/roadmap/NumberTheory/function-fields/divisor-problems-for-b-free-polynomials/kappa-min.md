@@ -1,6 +1,6 @@
 # The minimal exponent $\kappa_{\min}$
 
-**The minimal exponent $\kappa_{\min}$.** Let $F$ be a field and let $\kappa$ be a function
+Let $F$ be a field and let $\kappa$ be a function
 from $F[T]$ to the natural numbers. Then $\kappa_{\min}$ is the minimum of $\kappa(P)$ over all
 monic irreducible polynomials $P \in F[T]$.
 

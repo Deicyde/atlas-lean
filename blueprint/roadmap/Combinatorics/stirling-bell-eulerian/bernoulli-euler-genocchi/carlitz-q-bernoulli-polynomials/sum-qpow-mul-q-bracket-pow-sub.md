@@ -1,6 +1,6 @@
 # Sums of $q^{rk} (k)^{n-d}$ via Carlitz-type sequences
 
-**Sums of $q^{rk} [k]^{n-d}$ via Carlitz-type sequences.** Let $q > 0$ with $q \ne 1$, let
+Let $q > 0$ with $q \ne 1$, let
 $[x] = (q^x - 1)/(q - 1)$, and let $r$, $d$ and $n$ be natural numbers with $r \ge 1$, $d \le r$
 and $d \le n$. Write $(k)_d = k(k-1)\cdots(k-d+1)$ for the falling factorial (with $(k)_0 = 1$).
 Let $T_m(x)$ ($m \in \mathbb{N}$, $x \in \mathbb{R}$) be the Carlitz-type sequence with associated

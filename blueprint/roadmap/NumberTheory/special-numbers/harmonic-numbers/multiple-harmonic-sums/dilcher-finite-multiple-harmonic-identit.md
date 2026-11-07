@@ -1,6 +1,6 @@
 # Dilcher's finite multiple harmonic identity for every exponent
 
-**Dilcher's finite multiple harmonic identity for every exponent.** For every natural number
+For every natural number
 $m$ (including $m = 0$) and every positive integer $n$,
 
 $$

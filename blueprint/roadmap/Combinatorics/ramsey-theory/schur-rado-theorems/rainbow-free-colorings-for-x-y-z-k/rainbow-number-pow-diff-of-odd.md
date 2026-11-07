@@ -1,6 +1,6 @@
 # Rainbow number of the power-difference equation modulo a prime, odd exponent
 
-**Rainbow number of the power-difference equation modulo a prime, odd exponent.** Let $p$ be
+Let $p$ be
 an odd prime and $k \ge 3$ an odd natural number. A coloring of $\mathbb{Z}/p\mathbb{Z}$ with $r$
 colors is exact if it uses every color, and a solution of $x - y = z^k$ in $\mathbb{Z}/p\mathbb{Z}$
 is rainbow if $x$, $y$ and $z$ receive pairwise distinct colors. Then the least $r \ge 3$ such

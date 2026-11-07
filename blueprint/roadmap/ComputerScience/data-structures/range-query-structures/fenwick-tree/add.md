@@ -1,6 +1,6 @@
 # Point update of a Fenwick tree
 
-**Point update of a Fenwick tree.** Let $t$ be a Fenwick tree over a commutative additive
+Let $t$ be a Fenwick tree over a commutative additive
 monoid $\alpha$, let $n$ be its size (the length of its stored array minus one), let $i$ be a
 natural number and let $\delta \in \alpha$. Adding $\delta$ at underlying position $i$ adds
 $\delta$ to the stored entries at the one-indexed positions $j_1 = i + 1$ and

@@ -1,6 +1,6 @@
 # Tail σ-algebra of a sequence of σ-algebras
 
-**Tail σ-algebra of a sequence of σ-algebras.** Given σ-algebras
+Given σ-algebras
 $\mathcal{A}_0, \mathcal{A}_1, \dots$ on $\Omega$, the tail σ-algebra is
 
 $$\mathcal{T} = \bigcap_{n \in \mathbb{N}} \sigma(\mathcal{A}_n, \mathcal{A}_{n+1}, \dots),$$

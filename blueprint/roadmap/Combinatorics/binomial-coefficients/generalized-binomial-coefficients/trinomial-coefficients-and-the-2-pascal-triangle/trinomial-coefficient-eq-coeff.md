@@ -1,6 +1,6 @@
 # Trinomial coefficients as coefficients of a rational series
 
-**Trinomial coefficients as coefficients of a rational series.** Write $\binom{n}{k}_2$ for
+Write $\binom{n}{k}_2$ for
 the trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$, and $[t^m]\,F$ for the
 coefficient of $t^m$ in a formal power series $F$ over $\mathbb{Q}$. For all natural numbers
 $n$ and $k$, $\binom{n}{k}_2 = [t^{2n}]\,(1 - t + t^2)^n (1 - t)^{-1} \left(t/(1-t)\right)^k$.

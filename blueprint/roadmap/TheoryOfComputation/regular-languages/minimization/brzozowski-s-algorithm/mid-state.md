@@ -1,6 +1,6 @@
 # States of the intermediate Brzozowski automaton
 
-**States of the intermediate Brzozowski automaton.** For a deterministic finite automaton $M$
+For a deterministic finite automaton $M$
 over a finite alphabet with finite state set $Q$, the subsets of $Q$ reachable from the start state
 in the subset construction of the reversal of $M$.
 

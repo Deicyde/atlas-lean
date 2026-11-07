@@ -1,6 +1,6 @@
 # Residue-sign map on integral units
 
-**Residue-sign map on integral units.** Let $\mathfrak m$ be a modulus of a number field $K$
+Let $\mathfrak m$ be a modulus of a number field $K$
 with finite part $\mathfrak m_0$ and set of real places $\mathfrak m_\infty$, let
 $K_{\mathfrak m} \le K^\times$ be the group of ray elements and let
 $K_{\mathfrak m,1} \le K_{\mathfrak m}$ be the ray-one subgroup. The residue-sign map on integral

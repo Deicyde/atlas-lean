@@ -1,6 +1,6 @@
 # Strong bisimilarity implies weak bisimilarity
 
-**Strong bisimilarity implies weak bisimilarity.** In a labelled transition system with a
+In a labelled transition system with a
 silent label $\tau$, write $\Rightarrow$ for the reflexive-transitive
 closure of the $\tau$-transition relation. The weak transitions
 $s \stackrel{\mu}{\Longrightarrow} t$ are the trivial ones $s \stackrel{\tau}{\Longrightarrow} s$

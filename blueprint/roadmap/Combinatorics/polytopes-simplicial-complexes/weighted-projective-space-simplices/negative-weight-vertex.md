@@ -1,6 +1,6 @@
 # Negative weight vertex
 
-**Negative weight vertex.** For natural-number weights $q = (q_1, \dots, q_n)$, the negative
+For natural-number weights $q = (q_1, \dots, q_n)$, the negative
 weight vertex is the point $v_0 = -\sum_{i=1}^n q_i e_i$ of $\mathbb{R}^n$, whose $i$th coordinate
 is $-q_i$; here $e_1, \dots, e_n$ is the standard basis of $\mathbb{R}^n$.
 

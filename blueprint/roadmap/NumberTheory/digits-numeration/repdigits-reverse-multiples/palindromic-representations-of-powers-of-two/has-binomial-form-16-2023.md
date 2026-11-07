@@ -1,6 +1,6 @@
 # The binomial form of 2023 in base 16
 
-**The binomial form of 2023 in base 16.** The number $2023$ has a base-$16$ representation in
+The number $2023$ has a base-$16$ representation in
 binomial form: its base-$16$ digits are $7, 14, 7$, that is
 $7\binom{2}{2}, 7\binom{2}{1}, 7\binom{2}{0}$.
 

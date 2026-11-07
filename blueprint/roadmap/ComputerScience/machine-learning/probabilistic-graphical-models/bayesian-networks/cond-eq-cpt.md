@@ -1,6 +1,6 @@
 # The ordered Markov property
 
-**The ordered Markov property.** Let $B$ be a Bayesian network on the nodes
+Let $B$ be a Bayesian network on the nodes
 $0, \dots, n - 1$ with values in a nonempty type $\alpha$, and let $P_m$ be the joint
 distribution of the first $m$ nodes of $B$ viewed as a chain of conditional distributions. For
 a node $k < n$, write $p_k(\cdot \mid z)$ for its conditional probability table at values $z$

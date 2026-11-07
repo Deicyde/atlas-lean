@@ -1,6 +1,6 @@
 # First step value and sheared form of a quadratic packing polynomial
 
-**First step value and sheared form of a quadratic packing polynomial.** Let $m, n$ be
+Let $m, n$ be
 coprime positive integers, let $l = \gcd(m - 1, n)$, and let $P$ be a quadratic packing
 polynomial on the lattice points $I(n/m)$ of the sector of slope $n/m$ whose step difference
 for $m, n$ is a positive integer $k$. Put $F = P(0, 0)$ and

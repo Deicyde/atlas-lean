@@ -1,6 +1,6 @@
 # Catalan's identity for the companion $k$-Jacobsthal numbers
 
-**Catalan's identity for the companion $k$-Jacobsthal numbers.** Let $k$ be a natural number,
+Let $k$ be a natural number,
 $a, b$ integers, $\mathcal{J}_{k,m} = \mathcal{J}_{k,m}(a, b)$ the companion $k$-Jacobsthal numbers
 and $J_{k,m} = U_m(k, -2)$ the $k$-Jacobsthal numbers. For all natural numbers $r \le n$,
 

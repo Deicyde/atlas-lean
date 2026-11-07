@@ -1,6 +1,6 @@
 # Canonical sequential realization of a profile
 
-**Canonical sequential realization of a profile.** Let $(\pi_k)_{k \ge 1}$ be a sequence of
+Let $(\pi_k)_{k \ge 1}$ be a sequence of
 nonnegative integers with partial sums $\Pi_k = \sum_{1 \le j \le k} \pi_j$. For $i \ge 1$ let
 $k(i)$ be the least $k \ge 0$ with $i \le \Pi_k$, or $0$ if there is none, and let
 $p_1 = 2, p_2 = 3, \dots$ be the primes in increasing order. The canonical sequential realization

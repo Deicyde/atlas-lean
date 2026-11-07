@@ -1,6 +1,6 @@
 # Reflection symmetry of generalized Motzkin numbers modulo $p$
 
-**Reflection symmetry of generalized Motzkin numbers modulo $p$.** For integers $a$, $b$ let
+For integers $a$, $b$ let
 $M_r$ be the constant term of $(a x^{-1} + b + a x)^r (1 - x^2)$, the generalized Motzkin number.
 Let $p > 3$ be a prime and $k$ a natural number with $k \le (p - 3)/2$. Then
 

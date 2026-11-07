@@ -1,6 +1,6 @@
 # $(2, 4, 5)$ solves the sum of consecutive squares problem
 
-**$(2, 4, 5)$ solves the sum of consecutive squares problem.** The triple $(2, 4, 5)$ is a
+The triple $(2, 4, 5)$ is a
 solution of the sum of consecutive squares problem: $0 < 3 < 4 < 5$ and $3^2 + 4^2 = 5^2$.
 
 ## Sources

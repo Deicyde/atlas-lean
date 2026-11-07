@@ -1,6 +1,6 @@
 # Shifted central binomial transform of a polynomial identity
 
-**Shifted central binomial transform of a polynomial identity.** Let $s, n, m, r$ be
+Let $s, n, m, r$ be
 natural numbers, $f, g : \mathbb{N} \to \mathbb{C}$ and $p, q : \mathbb{N} \to \mathbb{N}$
 such that $\sum_{k=s}^{n} f(k) (1+t)^{p(k)} = \sum_{k=m}^{r} g(k) t^{q(k)}$ for every
 complex $t$, and let $u, v$ be complex numbers with $\operatorname{Re} v > -1$,

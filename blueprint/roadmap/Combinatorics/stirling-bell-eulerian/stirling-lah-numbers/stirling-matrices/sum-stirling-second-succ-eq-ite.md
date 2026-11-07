@@ -1,6 +1,6 @@
 # Stirling numbers of the second kind from the next row
 
-**Stirling numbers of the second kind from the next row.** Write $S(n, k)$ for the Stirling
+Write $S(n, k)$ for the Stirling
 numbers of the second kind. For all natural numbers $i \ge 1$ and $j$, the rational number
 
 $$\sum_{k=1}^{\min(i+1, j)} (-1)^{j-k} \frac{(k-1)!}{j!} S(i+1, k)$$

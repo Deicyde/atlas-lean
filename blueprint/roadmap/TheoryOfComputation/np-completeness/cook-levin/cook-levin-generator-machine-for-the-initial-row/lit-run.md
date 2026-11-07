@@ -1,6 +1,6 @@
 # Run of one literal routine (initial-row generator)
 
-**Run of one literal routine (initial-row generator).** For a layout and a list of $n$
+For a layout and a list of $n$
 certificate codes, let $c$ be a clause kind with base counter $b$, let $l < n + 2$ be a literal
 index with offset $\mathrm{off}(l)$, and let $F$ be counter values whose scratch counters $Q$,
 $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$ are $0$. Let $\gamma \in \mathbb{N}$, let

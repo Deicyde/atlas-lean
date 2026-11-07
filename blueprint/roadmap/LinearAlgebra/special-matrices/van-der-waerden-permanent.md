@@ -1,6 +1,6 @@
 # The van der Waerden permanent bound
 
-**The van der Waerden permanent bound.** For every integer $n \ge 1$ and every doubly stochastic
+For every integer $n \ge 1$ and every doubly stochastic
 real $n \times n$ matrix $A$ (nonnegative entries, every row and every column summing to $1$), the
 permanent of $A$ is at least $n!/n^n$.
 

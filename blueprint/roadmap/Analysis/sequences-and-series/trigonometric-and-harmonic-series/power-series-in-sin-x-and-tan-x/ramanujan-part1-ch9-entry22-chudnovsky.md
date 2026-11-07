@@ -1,6 +1,6 @@
 # Entry 22 of Chapter 9 of Ramanujan's notebooks
 
-**Entry 22 of Chapter 9 of Ramanujan's notebooks.** For real $u$ and $k \ge 0$ let
+For real $u$ and $k \ge 0$ let
 $T_k(u) = \frac{2^{2k} (k!)^2 \sin^{2k+2} u}{(2k+1)! \, (2k+2)^2}$. Let $x$ be real with
 $0 \le x \le \pi/4$. Then $2 \cos x > 0$, the series $\sum_{j \ge 0} \frac{1}{(2j+1)^3}$,
 $\sum_{k \ge 0} \bigl(T_k(x) + T_k(\pi/2 - x)\bigr)$,

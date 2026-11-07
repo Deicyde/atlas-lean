@@ -1,6 +1,6 @@
 # Homogenized cyclotomic value with second argument one
 
-**Homogenized cyclotomic value with second argument one.** For every natural number $n$
+For every natural number $n$
 and every integer $a$, the homogenized cyclotomic value $\Phi_n(a, 1)$ equals $\Phi_n(a)$, the
 value at $a$ of the $n$-th cyclotomic polynomial with integer coefficients.
 

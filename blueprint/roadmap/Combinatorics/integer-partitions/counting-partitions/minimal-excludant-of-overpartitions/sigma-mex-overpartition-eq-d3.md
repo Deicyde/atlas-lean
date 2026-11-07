@@ -1,6 +1,6 @@
 # The overpartition mex sum counts three-colored distinct-part partitions
 
-**The overpartition mex sum counts three-colored distinct-part partitions.** For an
+For an
 overpartition $\pi$, let $\overline{\mathrm{mex}}(\pi)$ be the least positive integer that does
 not occur among the non-overlined parts of $\pi$, and let $\sigma\overline{\mathrm{mex}}(n)$ be
 the sum of $\overline{\mathrm{mex}}(\pi)$ over all overpartitions $\pi$ of $n$. For every

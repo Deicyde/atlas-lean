@@ -1,6 +1,6 @@
 # Final dimensions of a block
 
-**Final dimensions of a block.** Let $q$ be a natural number,
+Let $q$ be a natural number,
 $(d_0, m_0), \dots, (d_{k-1}, m_{k-1})$ a list of blocks and $C$ a list of chains of branch steps.
 The final dimension list of block $i$ is defined when $C$ has an entry $s_1, \dots, s_r$ at index
 $i$: start from $N_i$ copies of $d_i$, where $N_i$ is the basic multiplicity of block $i$ (the

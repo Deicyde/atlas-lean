@@ -1,6 +1,6 @@
 # Left-perimeter function
 
-**Left-perimeter function.** Let $K$ be a field, let $\Delta(x, y, z) = xy/(x + y + z)$ be the
+Let $K$ be a field, let $\Delta(x, y, z) = xy/(x + y + z)$ be the
 delta-wye resistance function, and for an upright triangle $t$ write $L_t$, $R_t$, $B_t \in K$ for
 the values on its left, right and base edges. For triangles $t$ and $u$, the left-perimeter
 function is $\mathcal{P}(t, u) = \Delta(B_t, L_t, R_t) + \Delta(L_u, R_u, B_u)$, the series

@@ -1,6 +1,5 @@
 # Extensions of a division ring's additive group by units need not split (Kourovka 18.76)
 
-**Extensions of a division ring's additive group by units need not split (Kourovka 18.76).**
 There exist a division ring $A$, a subgroup $G$ of its unit group $A^\times$, a group $E$, an
 injective homomorphism $i$ from the additive group of $A$ to $E$ and a surjective homomorphism
 $\pi : E \to G$ whose kernel is the image of $i$, with $e \, i(a) \, e^{-1} = i(\pi(e) a)$ for all

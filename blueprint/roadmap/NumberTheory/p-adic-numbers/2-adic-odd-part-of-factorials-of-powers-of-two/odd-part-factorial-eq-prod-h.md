@@ -1,6 +1,6 @@
 # Odd part of a dyadic factorial as a product of odd blocks
 
-**Odd part of a dyadic factorial as a product of odd blocks.** For every natural number
+For every natural number
 $e \ge 1$,
 
 $$\mathrm{od}((2^e)!) = \prod_{m=2}^{e} h(m)^{e+1-m},$$

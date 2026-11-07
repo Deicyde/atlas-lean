@@ -1,6 +1,6 @@
 # Josefson–Nissenzweig theorem
 
-**Josefson–Nissenzweig theorem.** Let $E$ be an infinite-dimensional Banach space over
+Let $E$ be an infinite-dimensional Banach space over
 $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$. Then there is a sequence $(\varphi_n)_{n \in \mathbb{N}}$
 of continuous linear functionals on $E$ with $\|\varphi_n\| = 1$ for every $n$ such that
 $\varphi_n(x) \to 0$ for every $x \in E$; that is, the unit sphere of the dual of $E$ contains a

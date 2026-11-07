@@ -1,6 +1,6 @@
 # Terms of the calculus of constructions
 
-**Terms of the calculus of constructions.** A term is a variable $\#i$ with de Bruijn index
+A term is a variable $\#i$ with de Bruijn index
 $i \in \mathbb{N}$, a sort $s$ (either $\mathrm{Prop}$ or $\mathrm{Type}_i$ for some
 $i \in \mathbb{N}$), an application $f\,a$ of a term $f$ to a term $a$, an abstraction
 $\lambda (x : A).\, b$ with domain $A$ and body $b$, or a dependent product

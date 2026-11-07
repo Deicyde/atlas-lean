@@ -1,6 +1,6 @@
 # Kurepa's partial integral
 
-**Kurepa's partial integral.** For a natural number $n$ and a real number $x$, Kurepa's partial
+For a natural number $n$ and a real number $x$, Kurepa's partial
 integral is
 
 $$K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt,$$

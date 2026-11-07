@@ -1,6 +1,6 @@
 # Ulam words of length four: examples
 
-**Ulam words of length four: examples.** The words $0001$ and $1011$ are Ulam words, while
+The words $0001$ and $1011$ are Ulam words, while
 $0011$ and $0110$ are not.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Congruences modulo 27 for (9, 18)-overpartitions from the cubic coefficient vectors
 
-**Congruences modulo 27 for [9, 18]-overpartitions from the cubic coefficient vectors.** Let
+Let
 $\mathrm{ped}_{9,18}(n)$ be the number of $[9, 18]$-overpartitions of $n$ with even parts
 distinct, let $f_k = \prod_{m \ge 1} (1 - q^{km})$, let
 $X_\alpha = (x_{\alpha,1}, x_{\alpha,2}, \dots)$ be the coefficient vectors built from Chan's

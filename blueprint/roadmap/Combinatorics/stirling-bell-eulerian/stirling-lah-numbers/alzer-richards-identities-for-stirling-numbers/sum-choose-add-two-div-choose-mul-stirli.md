@@ -1,6 +1,6 @@
 # Alternating Stirling sums with $\binom{n+1}{k+2}$
 
-**Alternating Stirling sums with $\binom{n+1}{k+2}$.** Write $S(n, k)$ for the Stirling
+Write $S(n, k)$ for the Stirling
 numbers of the second kind and $B_n$ for the Bernoulli numbers, with $B_1 = -1/2$. Let
 $n \ge 1$ be a natural number. Then for every natural number $r$ with $1 \le r \le n$,
 

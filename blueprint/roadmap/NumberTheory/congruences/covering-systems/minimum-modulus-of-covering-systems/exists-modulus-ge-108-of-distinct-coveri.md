@@ -1,6 +1,6 @@
 # Krukenberg's conjecture for minimum modulus five
 
-**Krukenberg's conjecture for minimum modulus five.** Let $C$ be a distinct covering
+Let $C$ be a distinct covering
 system: a finite set of congruences $x \equiv r \pmod m$ with $r \in \mathbb{Z}$ and
 $m \in \mathbb{N}$, no two with the same modulus, such that every integer satisfies at least one
 of them. If every modulus of $C$ is at least $5$ and some modulus equals $5$, then some modulus

@@ -1,6 +1,6 @@
 # The sum-minus-product family is vanishing modulo prime powers
 
-**The sum-minus-product family is vanishing modulo prime powers.** Let $p$ be a prime,
+Let $p$ be a prime,
 $k > 0$ and $n = p^k$, and let $F_{-1}$ be the family over $\mathbb{Z}/n\mathbb{Z}$ sending a
 block $(b_1, \dots, b_l)$ to $\sum_i b_i - \prod_i b_i$. Then $F_{-1}$ is vanishing.
 

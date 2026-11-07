@@ -1,6 +1,6 @@
 # Flow across a cut
 
-**Flow across a cut.** Let $V$ be a finite set, $s, t \in V$, and
+Let $V$ be a finite set, $s, t \in V$, and
 $f : V \times V \to \mathbb{R}$ a function conserved at every vertex $v \ne s, t$, that is,
 $\sum_{u \in V} f(u, v) = \sum_{w \in V} f(v, w)$; no sign or capacity condition is imposed. Then
 for every subset $S \subseteq V$ with $s \in S$ and $t \notin S$, the flow value

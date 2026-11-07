@@ -1,6 +1,6 @@
 # Recurrence for the hyperlucas numbers
 
-**Recurrence for the hyperlucas numbers.** Let $L^{(r)}_n$ denote the hyperlucas numbers,
+Let $L^{(r)}_n$ denote the hyperlucas numbers,
 the hypersequence of generation $r$ of the Lucas numbers. For all natural numbers $r$ and $n$,
 $L^{(r)}_0 = 2$, $L^{(r)}_1 = 2r + 1$, and, in the rational numbers,
 

@@ -1,6 +1,6 @@
 # Reducible pattern sets (Theorem 3)
 
-**Reducible pattern sets (Theorem 3).** For a set $P$ of patterns, let $A_n(P)$ and
+For a set $P$ of patterns, let $A_n(P)$ and
 $WA_n(P)$ be the sets of ascent sequences and of weak ascent sequences of length $n$ that
 avoid every pattern in $P$. For each set $C$ of patterns and each pattern $\tau$ listed below,
 with $B = C \cup \{\tau\}$, we have $A_n(B) = A_n(C)$ and $WA_n(B) = WA_n(C)$ for every

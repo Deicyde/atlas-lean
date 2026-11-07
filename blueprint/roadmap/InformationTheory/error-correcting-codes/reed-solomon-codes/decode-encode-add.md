@@ -1,6 +1,6 @@
 # Berlekamp-Welch corrects every error of weight at most $\lfloor (n-k)/2 \rfloor$
 
-**Berlekamp-Welch corrects every error of weight at most $\lfloor (n-k)/2 \rfloor$.** Let
+Let
 $F$ be a field, let $\alpha_0, \dots, \alpha_{n-1} \in F$ be pairwise distinct, let $k \le n$,
 put $t = \lfloor (n-k)/2 \rfloor$, and let $S$ be a solver for the key equations with error
 budget $t$. For every polynomial $p \in F[X]$ of degree less than $k$ and every error word

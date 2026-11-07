@@ -1,6 +1,6 @@
 # Essential-supremum distance between volume-preserving maps
 
-**Essential-supremum distance between volume-preserving maps.** Let $d$ be a natural
+Let $d$ be a natural
 number and let $T$ and $S$ be measurable, invertible, volume-preserving transformations of the
 torus $\mathbb{T}^d = (\mathbb{R}/\mathbb{Z})^d$. Let $\rho$ be the distance on $\mathbb{T}^d$
 given by the maximum over the coordinates of the distance on the circle $\mathbb{R}/\mathbb{Z}$

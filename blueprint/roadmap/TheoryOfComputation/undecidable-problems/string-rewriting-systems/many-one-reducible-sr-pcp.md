@@ -1,6 +1,6 @@
 # Reachability for rules with nonempty sides many-one reduces to PCP
 
-**Reachability for rules with nonempty sides many-one reduces to PCP.** Let $\alpha$ be an
+Let $\alpha$ be an
 alphabet with a primitive recursive coding, let $\alpha'$ be $\alpha$ extended with two new
 symbols, the star and the end marker, and let $\alpha''$ be $\alpha'$ extended in the same way by
 two further new symbols. There is a computable function $f$ from instances $(R, x, y)$ of the

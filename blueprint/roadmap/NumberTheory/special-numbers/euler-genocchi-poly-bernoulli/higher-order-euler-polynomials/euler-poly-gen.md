@@ -1,6 +1,6 @@
 # Euler polynomials of order α
 
-**Euler polynomials of order α.** For a complex number $\alpha$ and $n \ge 0$, let
+For a complex number $\alpha$ and $n \ge 0$, let
 $E_k^{(\alpha)}(0)$ denote the Euler numbers of order $\alpha$. The Euler polynomial of order
 $\alpha$ is the complex polynomial
 $E_n^{(\alpha)}(x) = \sum_{k=0}^{n} \binom{n}{k} E_k^{(\alpha)}(0) \, x^{n-k}$.

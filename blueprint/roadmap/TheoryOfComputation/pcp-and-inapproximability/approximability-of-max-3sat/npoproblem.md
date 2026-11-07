@@ -1,6 +1,6 @@
 # NPO problems
 
-**NPO problems.** An NPO (NP optimization) problem consists of a rational-valued value
+An NPO (NP optimization) problem consists of a rational-valued value
 function $v$, a Boolean feasibility predicate $F$ and an objective encoding $e$, each taking an
 instance $x$ and a solution $s$ (both bitstrings), together with a polynomial $b$ with
 natural-number coefficients, such that the following hold. $F$ and $e$ are polynomial-time

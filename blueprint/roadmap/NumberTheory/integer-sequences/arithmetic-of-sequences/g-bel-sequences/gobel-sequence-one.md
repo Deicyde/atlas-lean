@@ -1,6 +1,6 @@
 # Initial value of the $(k, l)$-Göbel sequence
 
-**Initial value of the $(k, l)$-Göbel sequence.** For all natural numbers $k$ and $l$, the
+For all natural numbers $k$ and $l$, the
 $(k, l)$-Göbel sequence $g_{k,l}$ satisfies $g_{k,l}(1) = l$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Control labels of the SAT-to-3SAT emitter
 
-**Control labels of the SAT-to-3SAT emitter.** The emitter machine has the labels
+The emitter machine has the labels
 $\mathrm{start}$, $\mathrm{clause}$, $\mathrm{fin}$ and $\mathrm{done}$, and, for Booleans
 $f, p, s, x, e$, the labels $\mathrm{lit}(f)$, $\mathrm{fa}(s, x)$, $\mathrm{fb}(s, x)$,
 $\mathrm{fc}(s, x)$, $\mathrm{fd}(s, x)$, $\mathrm{fe}(s, x)$, $\mathrm{body}(f, p)$,

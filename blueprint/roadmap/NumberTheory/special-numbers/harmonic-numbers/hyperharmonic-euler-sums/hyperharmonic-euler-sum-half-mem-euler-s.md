@@ -1,6 +1,6 @@
 # Hyperharmonic Euler sums with integer parameter and half-integer shift
 
-**Hyperharmonic Euler sums with integer parameter and half-integer shift.** Let $k \ge 0$, $r$
+Let $k \ge 0$, $r$
 and $p$ be integers with $1 \le r < p$, and let $a \in \frac{1}{2} + \mathbb{Z}$. Write
 $H_n^{[r]}(k)$ for the generalized hyperharmonic number. Then the series
 $S(k, r; p; a) = \sum_{n \ge k} H_n^{[r]}(k) / (n + a)^p$ converges absolutely, and its sum lies

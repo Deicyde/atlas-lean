@@ -1,6 +1,6 @@
 # Residues $r$ with $16r + 1$ and $8r + 1$ both non-squares modulo $p$
 
-**Residues $r$ with $16r + 1$ and $8r + 1$ both non-squares modulo $p$.** For every prime $p$,
+For every prime $p$,
 the number of integers $r$ with $1 \le r \le p - 1$ such that neither $16r + 1$ nor $8r + 1$ is a
 square modulo $p$ equals $\lfloor p/4 \rfloor$.
 

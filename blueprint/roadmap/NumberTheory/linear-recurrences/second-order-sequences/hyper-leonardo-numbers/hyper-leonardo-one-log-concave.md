@@ -1,6 +1,6 @@
 # Eventual log-concavity of the hyper-Leonardo numbers of order one
 
-**Eventual log-concavity of the hyper-Leonardo numbers of order one.** For every natural
+For every natural
 number $n \ge 2$, the hyper-Leonardo numbers $Le^{(1)}_n$ of order $1$ satisfy
 $Le^{(1)}_{n-1} Le^{(1)}_{n+1} \le (Le^{(1)}_n)^2$.
 

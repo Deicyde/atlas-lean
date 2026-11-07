@@ -1,6 +1,6 @@
 # The mean and variance updates maximize each component term
 
-**The mean and variance updates maximize each component term.** Let $x_1, \dots, x_N$ be
+Let $x_1, \dots, x_N$ be
 points of $\mathbb{R}^d$ that are not all equal, let $\theta$ be valid parameters of a
 $K$-component isotropic Gaussian mixture, let $k$ be a component, and let $r_{nk}$ be the
 responsibility of component $k$ for $x_n$ under $\theta$. For every $\mu \in \mathbb{R}^d$ and

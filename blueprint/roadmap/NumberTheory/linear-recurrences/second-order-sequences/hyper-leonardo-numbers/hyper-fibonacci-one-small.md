@@ -1,6 +1,6 @@
 # Small values of the hyper-Fibonacci numbers of order one
 
-**Small values of the hyper-Fibonacci numbers of order one.** The hyper-Fibonacci numbers
+The hyper-Fibonacci numbers
 $F^{(1)}_n$ of order $1$ satisfy $F^{(1)}_0 = 0$, $F^{(1)}_1 = 1$, $F^{(1)}_2 = 2$ and
 $F^{(1)}_3 = 4$.
 

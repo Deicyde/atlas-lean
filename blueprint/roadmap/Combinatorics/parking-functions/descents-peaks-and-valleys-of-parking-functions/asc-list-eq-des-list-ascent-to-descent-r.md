@@ -1,6 +1,6 @@
 # Ascents of a word are the descents of its rearrangement
 
-**Ascents of a word are the descents of its rearrangement.** For a word
+For a word
 $x = x_1 \cdots x_m$ over $\mathbb{N}$, let the ascent set $\mathrm{Asc}(x)$ be the set of
 $i \in \{1, \dots, m - 1\}$ with $x_i < x_{i+1}$, and the descent set $\mathrm{Des}(x)$ the set
 of $i \in \{1, \dots, m - 1\}$ with $x_i > x_{i+1}$. Then every word $x$ over $\mathbb{N}$

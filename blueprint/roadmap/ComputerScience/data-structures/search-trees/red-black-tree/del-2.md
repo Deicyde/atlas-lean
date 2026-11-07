@@ -1,6 +1,6 @@
 # Double-black deletion
 
-**Double-black deletion.** For a key $x$ of a linearly ordered type, deleting $x$ from a
+For a key $x$ of a linearly ordered type, deleting $x$ from a
 red-black tree returns a tree whose root may be double black, by recursion on the tree. The
 empty tree gives the empty tree. At a node of color $c$ with left subtree $l$, key $k$ and right
 subtree $r$: if $x < k$, the result is the left reassembly of color $c$, the deletion of $x$

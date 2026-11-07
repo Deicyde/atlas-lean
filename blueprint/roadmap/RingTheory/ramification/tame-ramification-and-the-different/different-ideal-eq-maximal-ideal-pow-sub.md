@@ -1,6 +1,6 @@
 # Different ideal of a tamely ramified extension of DVRs
 
-**Different ideal of a tamely ramified extension of DVRs.** Let $A$ and $B$ be discrete
+Let $A$ and $B$ be discrete
 valuation rings with maximal ideals $\mathfrak{m}_A$ and $\mathfrak{m}_B$, and let $B$ be an
 $A$-algebra that is finite and torsion-free as an $A$-module, such that the extension of
 fraction fields and the extension of residue fields are both separable. Let $e$ be a natural

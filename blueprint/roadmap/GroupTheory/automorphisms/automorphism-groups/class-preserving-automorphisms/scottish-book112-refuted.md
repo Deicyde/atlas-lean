@@ -1,6 +1,6 @@
 # Class-preserving automorphisms need not be inner
 
-**Class-preserving automorphisms need not be inner.** The claim of Scottish Book Problem 112
+The claim of Scottish Book Problem 112
 is false: there are a group $G$ and an automorphism $\alpha$ of $G$ that sends every element
 to a conjugate of itself (for each $x \in G$ there is $g \in G$ with $\alpha(x) = g x g^{-1}$)
 but is not inner (there is no $g \in G$ with $\alpha(x) = g x g^{-1}$ for all $x \in G$).

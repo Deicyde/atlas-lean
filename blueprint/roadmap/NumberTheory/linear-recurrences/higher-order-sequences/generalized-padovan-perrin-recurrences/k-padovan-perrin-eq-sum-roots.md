@@ -1,6 +1,6 @@
 # Root formula for the $k$-Padovan–Perrin numbers
 
-**Root formula for the $k$-Padovan–Perrin numbers.** Let $k \ge 2$ be an integer, let
+Let $k \ge 2$ be an integer, let
 $P(z) = z^3 - z - k$, and let $v \colon \mathbb{N} \to \mathbb{C}$ satisfy
 $v(n + 3) = v(n + 1) + k\,v(n)$ for every $n$, that is, $v$ solves the Padovan–Perrin recurrence
 with $k_1 = 1$, $k_2 = k$, $p = 1$, $s = 2$. Put $A_0 = k\,v(0) + v(1)$, $A_1 = k\,v(1) + v(2)$

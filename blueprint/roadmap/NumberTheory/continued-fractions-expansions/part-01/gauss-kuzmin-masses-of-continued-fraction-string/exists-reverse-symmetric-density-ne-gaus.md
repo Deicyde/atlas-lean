@@ -1,6 +1,6 @@
 # Symmetry up to a fixed length does not force the Gauss–Kuzmin density
 
-**Symmetry up to a fixed length does not force the Gauss–Kuzmin density.** Write $I(a)$ for
+Write $I(a)$ for
 the fundamental interval of a string $a$ and $\overleftarrow{a}$ for the reverse of $a$. For every
 integer $N \ge 1$ there is a real function $f$, continuous and nonnegative on $[0, 1]$ with
 $\int_0^1 f(x)\,dx = 1$, such that $\int_{I(a)} f(x)\,dx = \int_{I(\overleftarrow{a})} f(x)\,dx$

@@ -1,6 +1,6 @@
 # Even-power series over odd-indexed Fibonacci polynomials
 
-**Even-power series over odd-indexed Fibonacci polynomials.** Let $x > 0$ be real, let $f_n$
+Let $x > 0$ be real, let $f_n$
 denote the Fibonacci polynomials evaluated at $x$, given by $f_0 = 0$, $f_1 = 1$ and
 $f_{n+2} = x f_{n+1} + f_n$, and let $k$ and $m$ be positive integers. Put $M = (k + 1)/2$ and
 $t_r = 2r$ if $k$ is odd, and $M = k/2$ and $t_r = 2r - 1$ if $k$ is even. Then

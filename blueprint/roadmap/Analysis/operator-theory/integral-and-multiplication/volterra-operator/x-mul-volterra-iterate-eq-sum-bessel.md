@@ -1,6 +1,6 @@
 # Expansion of $(XV)^n$ in Bessel numbers
 
-**Expansion of $(XV)^n$ in Bessel numbers.** Let $X$ and $V$ be the operators on functions
+Let $X$ and $V$ be the operators on functions
 $\mathbb{R} \to \mathbb{R}$ given by $(Xg)(y) = y \, g(y)$ and $(Vg)(y) = \int_0^y g(t) \, dt$,
 write $(XV)^n$ and $V^m$ for iterated composition, and let $a(m, k)$ be the coefficient of $x^k$
 in the Bessel polynomial $y_m$. For every natural number $n \ge 1$, every continuous function

@@ -1,6 +1,6 @@
 # Call-by-value CPS translation of terms
 
-**Call-by-value CPS translation of terms.** Fix an answer type $R$ and write $\overline{A}$
+Fix an answer type $R$ and write $\overline{A}$
 for the call-by-value CPS translation of a type $A$ and $\overline{\Gamma}$ for the context
 obtained by translating each type of a context $\Gamma$. A term $M$ of type $A$ in context
 $\Gamma$ is sent to a term $\overline{M}$ of type $(\overline{A} \to R) \to R$ in context

@@ -1,6 +1,6 @@
 # The constant in Young's $L^1$–$L^p$ convolution inequality cannot be lowered
 
-**The constant in Young's $L^1$–$L^p$ convolution inequality cannot be lowered.** Let
+Let
 $1 \le p \le \infty$ and $\varepsilon > 0$. Then there exist real-valued functions
 $f \in L^1(\mathbb{R})$ and $g \in L^p(\mathbb{R})$ such that
 

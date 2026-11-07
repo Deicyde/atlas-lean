@@ -1,6 +1,6 @@
 # Eigenvalues are bounded by the operator norm
 
-**Eigenvalues are bounded by the operator norm.** Let $T$ be a bounded linear operator on an
+Let $T$ be a bounded linear operator on an
 inner product space over $\mathbb{R}$ or $\mathbb{C}$. Every eigenvalue $\mu$ of $T$ satisfies
 $|\mu| \le \|T\|$.
 

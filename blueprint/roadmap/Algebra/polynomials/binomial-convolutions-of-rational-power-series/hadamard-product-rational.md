@@ -1,6 +1,6 @@
 # Hadamard products of rational series
 
-**Hadamard products of rational series.** Let $K$ be a field of characteristic $0$, let
+Let $K$ be a field of characteristic $0$, let
 $\alpha_1, \dots, \alpha_m, \beta_1, \dots, \beta_n \in K$, and let $A = \sum_k a_k x^k$ and
 $B = \sum_k b_k x^k$ be power series over $K$ such that $A(x) \prod_{i=1}^m (1 - \alpha_i x)$ and
 $B(x) \prod_{j=1}^n (1 - \beta_j x)$ are polynomials. Then their Hadamard product

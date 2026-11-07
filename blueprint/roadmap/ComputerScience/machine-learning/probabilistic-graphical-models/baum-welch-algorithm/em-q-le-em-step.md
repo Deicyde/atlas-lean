@@ -1,6 +1,6 @@
 # The Baum-Welch update maximizes the EM objective
 
-**The Baum-Welch update maximizes the EM objective.** Let $S$ and $O$ be finite sets, let
+Let $S$ and $O$ be finite sets, let
 $T \ge 1$, and let $x_1, \dots, x_N$ with $N \ge 1$ be sequences $x_n = (x_{n,0}, x_{n,1}, \dots)$
 of observations in $O$ such that every $o \in O$ equals $x_{n,t}$ for some $n$ and some $t \le T$.
 Consider the EM model of a hidden Markov model on states $S$ and observations $O$ whose latent

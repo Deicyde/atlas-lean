@@ -1,6 +1,6 @@
 # Gödel's second incompleteness theorem, abstract Hilbert–Bernays–Löb form
 
-**Gödel's second incompleteness theorem, abstract Hilbert–Bernays–Löb form.** Let $\mathcal{L}$
+Let $\mathcal{L}$
 be a set of sentences with an implication $\to$, a sentence $\bot$, a negation satisfying
 $\neg A = (A \to \bot)$ for all $A$, and a provability operator
 $\Box : \mathcal{L} \to \mathcal{L}$.

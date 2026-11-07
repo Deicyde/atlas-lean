@@ -1,6 +1,6 @@
 # Convolution identities for the series-divisor of an invertible series
 
-**Convolution identities for the series-divisor of an invertible series.** Let $R$ be a
+Let $R$ be a
 commutative ring and let $A$, $B$ be formal power series over $R$ with coefficients $a(k)$,
 $b(k)$ and $AB = 1$. Let $s : \mathbb{N} \to R$ satisfy $s(0) = 0$ and
 $k\,a(k) = \sum_{i=1}^{k} s(i)\,a(k-i)$ for every $k \ge 0$ (that is, $s$ is a series-divisor

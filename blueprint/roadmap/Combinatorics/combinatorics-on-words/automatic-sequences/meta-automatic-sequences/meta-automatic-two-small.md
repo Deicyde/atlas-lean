@@ -1,6 +1,6 @@
 # First sixteen terms of $\mathcal{M}_2$
 
-**First sixteen terms of $\mathcal{M}_2$.** The first sixteen terms
+The first sixteen terms
 $\mathcal{M}_2(0), \mathcal{M}_2(1), \ldots, \mathcal{M}_2(15)$ of the meta-automatic sequence
 $\mathcal{M}_2$ are $0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1$.
 

@@ -1,6 +1,6 @@
 # Alternating binomial transform of second-order harmonic numbers
 
-**Alternating binomial transform of second-order harmonic numbers.** For a natural number
+For a natural number
 $m$ let $H_m = \sum_{j=1}^{m} 1/j$ and $H_m^{(2)} = \sum_{j=1}^{m} 1/j^2$, and for
 $z \in \mathbb{C}$ and a natural number $r$ let $\binom{z}{r} = z(z-1)\cdots(z-r+1)/r!$, the
 empty product for $r = 0$ being $1$. Let $s \in \mathbb{C}$ with $s \ne -m$ for every positive

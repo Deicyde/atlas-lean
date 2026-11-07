@@ -1,6 +1,6 @@
 # No move from the empty state
 
-**No move from the empty state.** No move takes the empty state (no copies of any $F_i$) to
+No move takes the empty state (no copies of any $F_i$) to
 any state.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Ramanujan's sum identity for $1/((4k)^3 - 4k)$, including $n = 0$
 
-**Ramanujan's sum identity for $1/((4k)^3 - 4k)$, including $n = 0$.** For every natural
+For every natural
 number $n$,
 
 $$

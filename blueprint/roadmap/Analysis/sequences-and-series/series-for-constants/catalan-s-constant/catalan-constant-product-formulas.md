@@ -1,6 +1,6 @@
 # Infinite products for exponentials of Catalan's constant
 
-**Infinite products for exponentials of Catalan's constant.** Let $G$ be the sum of the series
+Let $G$ be the sum of the series
 $\sum_{n \ge 0} (-1)^n / (2n+1)^2$ (Catalan's constant). Then, as $m \to \infty$,
 
 $$

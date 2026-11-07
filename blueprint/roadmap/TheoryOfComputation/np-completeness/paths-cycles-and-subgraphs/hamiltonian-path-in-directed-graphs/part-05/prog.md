@@ -1,6 +1,6 @@
 # The HAMPATH emitter machine
 
-**The HAMPATH emitter machine.** The emitter is the multi-stack machine with the emitter's
+The emitter is the multi-stack machine with the emitter's
 stacks (the output stack $O$ holds bits, every other stack holds token symbols), the emitter's
 labels, and a boolean internal state. Below, *moving the bit block* of a stack $A$ onto a stack
 $B$ means popping $A$ while its top is a name bit $\mathrm{bit}(b)$ and pushing each popped bit

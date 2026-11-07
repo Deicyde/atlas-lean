@@ -1,6 +1,6 @@
 # MAJSAT is PP-complete
 
-**MAJSAT is PP-complete.** The MAJSAT language is in PP, and every decision problem in PP has
+The MAJSAT language is in PP, and every decision problem in PP has
 a polynomial-time many-one reduction to MAJSAT.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The composed program
 
-**The composed program.** Let $g, r \in \mathbb{N}$, let $P$ be a program with labels
+Let $g, r \in \mathbb{N}$, let $P$ be a program with labels
 $\Lambda$ and Boolean state over the stacks of the full machine with alphabets $F\Gamma_{g,r}$,
 and let $\mathit{fin} \in \Lambda$. The composed program has as labels the labels of $P$ and the
 drain stages $0, \dots, n$, where $n$ is the number of stacks other than the output stack. At a

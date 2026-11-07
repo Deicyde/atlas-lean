@@ -1,6 +1,6 @@
 # Even pseudoprimes modulo 16
 
-**Even pseudoprimes modulo 16.** Every even pseudoprime $N$ satisfies
+Every even pseudoprime $N$ satisfies
 $N \equiv 2 \pmod{16}$ or $N \equiv 14 \pmod{16}$.
 
 ## Sources

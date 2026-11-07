@@ -1,6 +1,6 @@
 # Value of the Motzkin number at 1
 
-**Value of the Motzkin number at 1.** The first Motzkin number is $M(1) = 1$.
+The first Motzkin number is $M(1) = 1$.
 
 ## Sources
 

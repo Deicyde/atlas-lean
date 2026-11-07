@@ -1,6 +1,6 @@
 # Union in a union-find forest
 
-**Union in a union-find forest.** Let $F$ be a union-find forest on $n$ vertices: each vertex
+Let $F$ be a union-find forest on $n$ vertices: each vertex
 $z$ has a parent $p(z)$, where roots are their own parents, and a depth certificate
 $d(z) \in \mathbb{N}$ with $d(p(z)) < d(z)$ whenever $p(z) \ne z$. Let $x$ and $y$ be vertices,
 and let $r_x$ and $r_y$ be the roots reached from $x$ and $y$ by following parent pointers. If

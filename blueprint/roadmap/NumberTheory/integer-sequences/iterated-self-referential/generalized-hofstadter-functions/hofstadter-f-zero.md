@@ -1,6 +1,6 @@
 # The generalized Hofstadter functions vanish at zero
 
-**The generalized Hofstadter functions vanish at zero.** For every natural number $k$, the
+For every natural number $k$, the
 generalized Hofstadter function $F_k$ satisfies $F_k(0) = 0$.
 
 ## Sources

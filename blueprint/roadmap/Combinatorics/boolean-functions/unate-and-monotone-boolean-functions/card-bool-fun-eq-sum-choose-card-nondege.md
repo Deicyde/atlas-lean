@@ -1,6 +1,6 @@
 # Counting Boolean functions by their non-degenerate restrictions
 
-**Counting Boolean functions by their non-degenerate restrictions.** Let $P$ be a property
+Let $P$ be a property
 of Boolean functions on any number of variables that is invariant under renaming variables
 along injections: for all $m, n$, every injective map $e$ from $\{1, \dots, m\}$ to
 $\{1, \dots, n\}$ and every $m$-variable function $g$, the $n$-variable function

@@ -1,6 +1,6 @@
 # Language of the Hoey–Sloane machine
 
-**Language of the Hoey–Sloane machine.** For natural numbers $n$ and $b$, the language
+For natural numbers $n$ and $b$, the language
 $L$ of the $(n, b)$-Hoey–Sloane machine is the set of strings $s$ of pairs of natural
 numbers such that the machine, reading $s$ from left to right, can go from state $0$ to
 state $0$. In particular the empty string belongs to $L$.

@@ -1,6 +1,6 @@
 # Sulanke array B
 
-**Sulanke array B.** The Sulanke array $B$ assigns a natural number $B(k, i)$ to every pair of
+The Sulanke array $B$ assigns a natural number $B(k, i)$ to every pair of
 natural numbers $k$ and $i$. It is defined by recursion on $k$: $B(0, 0) = 1$, $B(0, i) = 0$ for
 $i \ge 1$, $B(k+1, 0) = B(k, 0)$, and for all $k$ and $i$
 

@@ -1,6 +1,6 @@
 # Bombieri–Vinogradov sum
 
-**Bombieri–Vinogradov sum.** For a natural number $x$ and a real number $A$, the
+For a natural number $x$ and a real number $A$, the
 Bombieri–Vinogradov sum $S(x, A)$ is the sum of the maximal residue-class error
 $E^{\ast\ast}(x; q)$ up to $x$ over the integers $q$ with $1 \le q \le x$ and
 $q \le \sqrt{x} / (\log x)^{A + 5}$.

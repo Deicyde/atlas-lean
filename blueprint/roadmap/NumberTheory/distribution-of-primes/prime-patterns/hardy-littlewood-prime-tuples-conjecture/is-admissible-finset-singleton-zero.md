@@ -1,6 +1,6 @@
 # The set $\{0\}$ is admissible
 
-**The set $\{0\}$ is admissible.** The one-element set $\{0\}$ of integers is admissible:
+The one-element set $\{0\}$ of integers is admissible:
 for every prime $p$ it misses the residue class of $1$ modulo $p$.
 
 ## Sources

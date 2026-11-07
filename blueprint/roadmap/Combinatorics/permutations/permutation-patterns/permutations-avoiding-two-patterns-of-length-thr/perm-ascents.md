@@ -1,6 +1,6 @@
 # Ascent number of a permutation
 
-**Ascent number of a permutation.** For a permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$,
+For a permutation $\sigma$ of $\{0, 1, \dots, n - 1\}$,
 $\operatorname{asc}(\sigma)$ is the number of positions $i$ with $i + 1 < n$ and
 $\sigma(i) < \sigma(i + 1)$.
 

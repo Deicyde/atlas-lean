@@ -1,6 +1,6 @@
 # Cayley's formula
 
-**Cayley's formula.** For every natural number $n \ge 2$, the complete graph on $n$ vertices has
+For every natural number $n \ge 2$, the complete graph on $n$ vertices has
 exactly $n^{n-2}$ spanning trees.
 
 ## Sources

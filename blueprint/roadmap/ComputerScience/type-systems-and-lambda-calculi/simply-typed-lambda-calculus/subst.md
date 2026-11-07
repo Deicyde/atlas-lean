@@ -1,6 +1,6 @@
 # Simultaneous substitution (simply typed lambda calculus)
 
-**Simultaneous substitution (simply typed lambda calculus).** Given a substitution $\sigma$
+Given a substitution $\sigma$
 from a context $\Gamma$ to a context $\Delta$, the result $t[\sigma]$ of applying $\sigma$ to a
 term $t$ of type $A$ in context $\Gamma$ is the term of type $A$ in context $\Delta$ defined by
 recursion on $t$: $x[\sigma] = \sigma(x)$ for a variable $x$,

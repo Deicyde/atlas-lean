@@ -1,6 +1,6 @@
 # Abelian images of ultraproducts are images of abelian ultraproducts
 
-**Abelian images of ultraproducts are images of abelian ultraproducts.** Let $A$ be an abelian
+Let $A$ be an abelian
 group, let $(G_i)_{i \in \mathbb{N}}$ be a sequence of (not necessarily abelian) groups, and let $U$
 be a nonprincipal ultrafilter on $\mathbb{N}$, that is, one containing every cofinite set. If there
 is a surjective homomorphism from the ultraproduct $\left(\prod_i G_i\right)/U$ onto $A$, then there

@@ -1,6 +1,6 @@
 # Chvátal's conjecture
 
-**Chvátal's conjecture.** The statement that for every finite set $X$ and every hereditary
+The statement that for every finite set $X$ and every hereditary
 family $F$ of subsets of $X$ that contains a nonempty set, there is a point $x \in X$ such that
 every intersecting subfamily $G \subseteq F$ has at most as many members as the star
 $\{A \in F : x \in A\}$ of $x$. Here $F$ is hereditary when it contains every subset of each of

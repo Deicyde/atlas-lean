@@ -1,6 +1,6 @@
 # Higher-dimensional continuous Turán numbers are nonnegative
 
-**Higher-dimensional continuous Turán numbers are nonnegative.** For every dimension $d$,
+For every dimension $d$,
 real number $n$ and set $P \subseteq \mathbb{R}^d$, $\mathrm{opx}(n, P, d) \ge 0$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Energy of an Ising configuration
 
-**Energy of an Ising configuration.** For a positive integer $L$, let $\sigma$ be a spin
+For a positive integer $L$, let $\sigma$ be a spin
 configuration on the periodic $L \times L$ square lattice, assigning to each site $p$ a spin
 $\sigma_p \in \{1, -1\}$. Its energy in the zero-field ferromagnetic Ising model with unit
 coupling is

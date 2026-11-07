@@ -1,6 +1,6 @@
 # Permuting the entries of a map along a set of positions
 
-**Permuting the entries of a map along a set of positions.** Let $I$ be a subset of
+Let $I$ be a subset of
 $\{0, \dots, n-1\}$ with $k$ elements, listed in increasing order as
 $i_0 < i_1 < \dots < i_{k-1}$, let $\sigma$ be a permutation of $\{0, \dots, k-1\}$, and let $g$
 be a map from $\{0, \dots, n-1\}$ to itself. Applying $\sigma$ to $g$ along $I$ gives the map that

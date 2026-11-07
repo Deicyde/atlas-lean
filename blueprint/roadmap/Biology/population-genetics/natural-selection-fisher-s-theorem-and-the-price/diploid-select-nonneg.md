@@ -1,3 +1,3 @@
 # Diploid selection preserves nonnegative allele frequencies
 
-**Diploid selection preserves nonnegative allele frequencies.** Diploid viability selection keeps allele frequencies nonnegative.
+Diploid viability selection keeps allele frequencies nonnegative.

@@ -1,6 +1,6 @@
 # The $L^p$ martingale convergence theorem
 
-**The $L^p$ martingale convergence theorem.** Let $(\Omega, \mu)$ be a probability space
+Let $(\Omega, \mu)$ be a probability space
 with a filtration $(\mathcal{F}_n)_{n \in \mathbb{N}}$, write
 $\mathcal{F}_\infty = \bigvee_n \mathcal{F}_n$, let $1 < p < \infty$, and let
 $(f_n)_{n \in \mathbb{N}}$ be a real-valued martingale with respect to $(\mathcal{F}_n)$ and $\mu$

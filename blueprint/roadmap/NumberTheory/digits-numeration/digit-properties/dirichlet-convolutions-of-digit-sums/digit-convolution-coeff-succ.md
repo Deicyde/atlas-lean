@@ -1,6 +1,6 @@
 # Recurrence for the digit-convolution coefficients
 
-**Recurrence for the digit-convolution coefficients.** For every natural number $q$ and
+For every natural number $q$ and
 every integer $k \ge 2$, the base-$q$ digit-convolution coefficients $a(k)$ satisfy
 
 $$a(k + 1) = a(k) \cdot \frac{q - 1}{2 \log q}

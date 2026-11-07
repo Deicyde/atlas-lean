@@ -1,6 +1,6 @@
 # Run of the accept generator's precomputation
 
-**Run of the accept generator's precomputation.** Fix a layout $L$ with label/state block
+Fix a layout $L$ with label/state block
 size $A$, $K$ stacks and $g$ symbol codes, and naturals $n_1$, $a$, $k_1$, $e$. For all
 $T, H \in \mathbb{N}$ and every list $o$ of Booleans, write $W = A + K H g$ for the row width.
 The accept generator, started at its first precomputation label with internal state false,

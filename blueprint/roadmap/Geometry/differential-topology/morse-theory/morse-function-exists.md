@@ -1,6 +1,6 @@
 # Existence of Morse functions
 
-**Existence of Morse functions.** Every Hausdorff, second-countable $C^\infty$ manifold $M$
+Every Hausdorff, second-countable $C^\infty$ manifold $M$
 without boundary, modelled on a finite-dimensional real normed space, admits a Morse function
 $f \colon M \to \mathbb{R}$.
 

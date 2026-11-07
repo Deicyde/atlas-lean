@@ -1,6 +1,6 @@
 # $ac + 1$ does not divide $bc + 1$
 
-**$ac + 1$ does not divide $bc + 1$.** If $a < b < c$ are positive integers, then $ac + 1$
+If $a < b < c$ are positive integers, then $ac + 1$
 does not divide $bc + 1$.
 
 The source states this for $S$-Diophantine triples; that hypothesis is not needed.

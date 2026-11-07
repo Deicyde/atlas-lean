@@ -1,6 +1,6 @@
 # Step estimate for Picard iterates
 
-**Step estimate for Picard iterates.** Let $E$ be a real normed space, let
+Let $E$ be a real normed space, let
 $f : \mathbb{R} \times E \to E$ be continuous, and let $L \ge 0$ be such that $f(t, \cdot)$ is
 $L$-Lipschitz for every $t \in \mathbb{R}$. Fix $t_0 \in \mathbb{R}$ and $x_0 \in E$, and let
 $(u_n)_{n \ge 0}$ be maps $\mathbb{R} \to E$ with $u_0(t) = x_0$ and

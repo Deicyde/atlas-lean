@@ -1,6 +1,6 @@
 # MacMahon's partition of an ordered factorization
 
-**MacMahon's partition of an ordered factorization.** To a finite sequence
+To a finite sequence
 $(a_1, \dots, a_k)$ of natural numbers, read as the ordered factorization $a_1 a_2 \cdots a_k$,
 attach the multiset of parts
 $(1^{a_1-1}, a_1^{a_2-1}, (a_1a_2)^{a_3-1}, \dots, (a_1\cdots a_{k-1})^{a_k-1})$, where $x^e$

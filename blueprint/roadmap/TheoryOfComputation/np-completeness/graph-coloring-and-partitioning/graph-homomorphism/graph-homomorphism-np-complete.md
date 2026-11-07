@@ -1,6 +1,6 @@
 # GRAPH HOMOMORPHISM is NP-complete
 
-**GRAPH HOMOMORPHISM is NP-complete.** The decision problem GRAPH HOMOMORPHISM belongs to NP,
+The decision problem GRAPH HOMOMORPHISM belongs to NP,
 and every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

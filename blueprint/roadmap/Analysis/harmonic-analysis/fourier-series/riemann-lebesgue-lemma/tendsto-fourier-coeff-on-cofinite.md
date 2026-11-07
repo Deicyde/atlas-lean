@@ -1,6 +1,6 @@
 # Riemann–Lebesgue lemma on an interval
 
-**Riemann–Lebesgue lemma on an interval.** Let $a < b$ be real numbers and let
+Let $a < b$ be real numbers and let
 $f : \mathbb{R} \to \mathbb{C}$ be integrable on $[a, b]$. Then the Fourier coefficients of $f$
 on $[a, b]$,
 

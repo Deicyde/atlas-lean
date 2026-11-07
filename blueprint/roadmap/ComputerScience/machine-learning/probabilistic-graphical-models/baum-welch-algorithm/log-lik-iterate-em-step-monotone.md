@@ -1,6 +1,6 @@
 # The log-likelihood is monotone along the Baum-Welch iterates
 
-**The log-likelihood is monotone along the Baum-Welch iterates.** Let $S$ and $O$ be finite
+Let $S$ and $O$ be finite
 sets, let $T \ge 1$, and let $x_1, \dots, x_N$ with $N \ge 1$ be sequences
 $x_n = (x_{n,0}, x_{n,1}, \dots)$ of observations in $O$ such that every $o \in O$ equals $x_{n,t}$
 for some $n$ and some $t \le T$. Let $h_0$ be a valid hidden Markov model on states $S$ and

@@ -1,6 +1,6 @@
 # Recurrence for generalized hyper-Fibonacci numbers
 
-**Recurrence for generalized hyper-Fibonacci numbers.** Let $p, a, b$ be integers and let
+Let $p, a, b$ be integers and let
 $W^{(r)}_{p,n}$ denote the generalized hyper-Fibonacci numbers. For all natural numbers $r \ge 1$
 and $n \ge 1$, $W^{(r)}_{p,n} = p W^{(r)}_{p,n-1} + W^{(r-1)}_{p,n}$.
 

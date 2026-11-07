@@ -1,6 +1,6 @@
 # Holomorphic motions of planar sets extend to the plane
 
-**Holomorphic motions of planar sets extend to the plane.** Let $\mathbb{D}$ be the open unit
+Let $\mathbb{D}$ be the open unit
 disc, $E$ a set of complex numbers and $F$ a function assigning a complex number $F(w, z)$ to
 each pair of complex numbers $w, z$, such that (a) for every $z \in \mathbb{D}$ the map
 $w \mapsto F(w, z)$ is injective on $E$, (b) for every $w \in E$ the map $z \mapsto F(w, z)$ is

@@ -1,6 +1,6 @@
 # Markov chain construction theorem
 
-**Markov chain construction theorem.** Let $S$ be a nonempty standard Borel space, let
+Let $S$ be a nonempty standard Borel space, let
 $\kappa$ be a Markov kernel from $S$ to $S$ and let $\mu$ be a probability measure on $S$. Then
 there is a probability measure $P$ on the path space $S^{\mathbb{N}}$ such that, writing
 $X_n(\omega) = \omega_n$ for the coordinates, the law of $X_0$ under $P$ is $\mu$, and for every

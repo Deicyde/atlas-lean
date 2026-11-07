@@ -1,6 +1,6 @@
 # Cohen's fractal uncertainty principle for line-porous sets
 
-**Cohen's fractal uncertainty principle for line-porous sets.** Let $d$ be a natural number and
+Let $d$ be a natural number and
 $\nu > 0$. Then there are real numbers $\beta > 0$ and $C > 0$ such that for every $h$ with
 $0 < h < 1/100$ and all measurable sets $X, Y$ in the Euclidean space $\mathbb{R}^d$ the following
 holds: if $X \subseteq [-1,1]^d$ is $\nu$-porous on balls from scales $h$ to $1$ and

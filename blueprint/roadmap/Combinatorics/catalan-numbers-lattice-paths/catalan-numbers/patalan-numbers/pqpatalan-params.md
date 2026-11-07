@@ -1,6 +1,6 @@
 # Admissible parameters for the (p,q)-Patalan numbers
 
-**Admissible parameters for the (p,q)-Patalan numbers.** An admissible parameter pair for the
+An admissible parameter pair for the
 $(p,q)$-Patalan numbers is a pair of natural numbers $p$ and $q$ with $p > 1$ and $0 < q < p$.
 
 ## Sources

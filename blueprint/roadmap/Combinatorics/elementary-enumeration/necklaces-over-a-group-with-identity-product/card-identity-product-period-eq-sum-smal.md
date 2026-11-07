@@ -1,6 +1,6 @@
 # Splitting periodic identity-product tuples by smallest period
 
-**Splitting periodic identity-product tuples by smallest period.** Let $G$ be a finite
+Let $G$ be a finite
 group, $n$ a natural number and $k \ge 1$. Say that $x = (x_0, \dots, x_{n-1}) \in G^n$ has
 period $l$ if $x_{i+l} = x_i$ for all $i$, with indices taken mod $n$. Let $A_k$ be the set of
 tuples $x$ with $x_0 x_1 \cdots x_{n-1} = 1$ and period $k$, and for $d \ge 1$ let $P_d$ be the

@@ -1,6 +1,6 @@
 # Iterated factorials as tetrations
 
-**Iterated factorials as tetrations.** Let $k \ge 3$ be a natural number and $F_n(k)$ the
+Let $k \ge 3$ be a natural number and $F_n(k)$ the
 $n$-fold iterated factorial of $k$; for a real number $\beta$ let $\beta \uparrow\uparrow n$ be
 the $n$-fold iterate of $x \mapsto \beta^x$ starting at $1$. Then there is a sequence $(b_n)$ of
 real numbers such that $b_n > e^{1/e}$ and $F_n(k) = b_n \uparrow\uparrow n$ for every

@@ -1,6 +1,6 @@
 # Decidability by multi-tape machines
 
-**Decidability by multi-tape machines.** Let $\alpha$ be a primcodable type (it has an
+Let $\alpha$ be a primcodable type (it has an
 encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is primitive recursive). A
 predicate $p$ on $\alpha$ is decidable by a multi-tape machine when there are a number $k$ and a
 deterministic Turing machine $M$ with finitely many states, a read-only input tape, $k$ work tapes

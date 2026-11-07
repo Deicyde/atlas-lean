@@ -1,6 +1,6 @@
 # Dedekind psi function
 
-**Dedekind psi function.** The Dedekind psi function $\psi$ is the arithmetic function with
+The Dedekind psi function $\psi$ is the arithmetic function with
 values in $\mathbb{N}$ given by $\psi(0) = 0$ and, for $n > 0$,
 
 $$

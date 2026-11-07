@@ -1,6 +1,6 @@
 # Linear asymptotic Dirichlet continuation
 
-**Linear asymptotic Dirichlet continuation.** For $a : \mathbb{N} \to \mathbb{C}$ and
+For $a : \mathbb{N} \to \mathbb{C}$ and
 $\rho \in \mathbb{C}$, the linear asymptotic Dirichlet continuation of $a$ with constant $\rho$ is
 the function $L_{a,\rho} : \mathbb{C} \to \mathbb{C}$ given by
 $L_{a,\rho}(s) = \rho\,\zeta(s) + F_{a-\rho}(s)$, where $\zeta$ is the Riemann zeta function and

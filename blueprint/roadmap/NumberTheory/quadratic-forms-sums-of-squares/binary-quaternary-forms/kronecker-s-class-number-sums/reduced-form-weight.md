@@ -1,6 +1,6 @@
 # Weight of a reduced binary quadratic form
 
-**Weight of a reduced binary quadratic form.** The weight of an integer triple $(a, b, c)$,
+The weight of an integer triple $(a, b, c)$,
 standing for the form $ax^2 + bxy + cy^2$, is $1/2$ if $a = c$ and $b = 0$, $1/3$ if
 $a = b = c \ne 0$, and $1$ otherwise.
 

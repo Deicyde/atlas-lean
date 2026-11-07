@@ -1,6 +1,6 @@
 # Uniqueness of the LU decomposition
 
-**Uniqueness of the LU decomposition.** Let $K$ be a field and $A$ an invertible $n \times n$
+Let $K$ be a field and $A$ an invertible $n \times n$
 matrix over $K$. Suppose $A = L_1 U_1 = L_2 U_2$, where $L_1$ and $L_2$ are lower triangular
 $n \times n$ matrices over $K$ with every diagonal entry equal to $1$, and $U_1$ and $U_2$ are
 upper triangular $n \times n$ matrices over $K$. Then $L_1 = L_2$ and $U_1 = U_2$.

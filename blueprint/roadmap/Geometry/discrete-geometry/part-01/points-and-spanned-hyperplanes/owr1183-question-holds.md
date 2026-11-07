@@ -1,6 +1,6 @@
 # Spanning point sets have injective point-to-hyperplane matchings
 
-**Spanning point sets have injective point-to-hyperplane matchings.** For every $d \ge 1$ and
+For every $d \ge 1$ and
 every set $P \subseteq \mathbb{R}^d$ whose affine span is all of $\mathbb{R}^d$, let $\mathcal{H}$
 be the set of affine hyperplanes of $\mathbb{R}^d$ that equal the affine span of some subset of
 $P$. Then there is an injective map $f \colon P \to \mathcal{H}$ with $p \in f(p)$ for every

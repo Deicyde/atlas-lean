@@ -1,6 +1,6 @@
 # Matrix-free formula for Barry's triangle
 
-**Matrix-free formula for Barry's triangle.** Let $s$ be Barry's triangle recurrence and let
+Let $s$ be Barry's triangle recurrence and let
 $2 \le a \le n$. Then
 
 $$s(0, n, a) = \sum_{p_1 + \dots + p_{a-1} = n - a} \prod_{i=1}^{a-1} \bigl(i(a - i)\bigr)^{p_i},$$

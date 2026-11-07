@@ -1,6 +1,6 @@
 # Solutions of Pell's equation are continued-fraction convergents
 
-**Solutions of Pell's equation are continued-fraction convergents.** Let $d$ be a positive
+Let $d$ be a positive
 squarefree integer and let $x$ and $y$ be positive integers with $x^2 - d y^2 = 1$. Then $x / y$
 is a convergent of the regular continued fraction expansion of $\sqrt{d}$: there is a natural
 number $n$ such that the $n$-th convergent of $\sqrt{d}$ (counting from the $0$-th) equals

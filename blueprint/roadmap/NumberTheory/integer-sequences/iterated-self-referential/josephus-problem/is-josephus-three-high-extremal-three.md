@@ -1,6 +1,6 @@
 # $3$ is a high extremal point but not a fixed point of $J_3$
 
-**$3$ is a high extremal point but not a fixed point of $J_3$.** The number $3$ is a high
+The number $3$ is a high
 extremal point of the Josephus function $J_3$ (elimination step $3$) and is not a fixed point of
 $J_3$; indeed $J_3(3) = 2$.
 

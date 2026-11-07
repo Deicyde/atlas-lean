@@ -1,6 +1,6 @@
 # Nonvanishing and binomial count for parts $\equiv a \pmod{d+1}$
 
-**Nonvanishing and binomial count for parts $\equiv a \pmod{d+1}$.** Let $d$, $a$, $\alpha$
+Let $d$, $a$, $\alpha$
 and $\lambda$ be positive integers with $a \le d + 1$, and let $f_d^{(a)}(\alpha, \lambda)$ be the
 number of partitions into parts congruent to $a$ modulo $d + 1$ with largest part $\alpha$ and
 exactly $\lambda$ parts. Then $f_d^{(a)}(\alpha, \lambda) \ne 0$ if and only if $\alpha \ge a$ and

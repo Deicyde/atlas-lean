@@ -1,6 +1,6 @@
 # Bit-block comparison statement
 
-**Bit-block comparison statement.** Let $a$ and $b$ be stacks with decoders $d_a$ and $d_b$
+Let $a$ and $b$ be stacks with decoders $d_a$ and $d_b$
 that read each symbol either as a bit or as a marker, let $t_a$ and $t_b$ be scratch stacks with
 bit encoders $e_a$ and $e_b$, and let $\ell$, $\ell_=$ and $\ell_{\ne}$ be labels. The comparison
 statement with loop label $\ell$ performs one round of comparison: if the tops of $a$ and $b$ are

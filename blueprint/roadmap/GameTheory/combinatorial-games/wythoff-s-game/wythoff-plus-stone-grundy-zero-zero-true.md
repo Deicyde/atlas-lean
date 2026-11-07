@@ -1,6 +1,6 @@
 # Wythoff's game plus one stone at $(0, 0, 1)$
 
-**Wythoff's game plus one stone at $(0, 0, 1)$.** In the sum of Wythoff's game and a pile of
+In the sum of Wythoff's game and a pile of
 one stone, the position $(0, 0, 1)$ (no Wythoff moves left, the stone present) has Grundy number
 $\mathcal{G}_2(0, 0, 1) = 1$: its only move is to the terminal position $(0, 0, 0)$.
 

@@ -1,6 +1,6 @@
 # Log-balancedness of the n-th roots of generalized Leonardo numbers
 
-**Log-balancedness of the n-th roots of generalized Leonardo numbers.** Let $k \ge 1$ be an
+Let $k \ge 1$ be an
 integer, let $L_{k,n}$ be the generalized Leonardo numbers, and let $n_k$ be an integer with
 $n_k \ge 9$ and $n_k \ge (1 + \sqrt{64k - 7})/4$. Then for every integer $n \ge n_k + 1$,
 

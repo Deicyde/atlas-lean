@@ -1,6 +1,6 @@
 # $3$-adic factorization of the Euler function
 
-**$3$-adic factorization of the Euler function.** Write
+Write
 $(x; y)_\infty = \prod_{k \ge 0} (1 - x y^k)$ for the infinite $q$-Pochhammer symbol, where $x$
 and $y$ are complex and $|y| < 1$. For every complex number $q$ with $|q| < 1$,
 $\prod_{j \ge 0} (q^{3^j}; q^{3^{j+1}})_\infty\, (q^{2 \cdot 3^j}; q^{3^{j+1}})_\infty =

@@ -1,6 +1,6 @@
 # Letendre's bound for divisors in short intervals
 
-**Letendre's bound for divisors in short intervals.** For a natural number $n$ and real numbers
+For a natural number $n$ and real numbers
 $X$, $Y$, let $D_n(X, Y)$ be the number of divisors $d$ of $n$ with $X \le d \le X + Y$, let
 $\tau(n)$ be the number of divisors of $n$, let $V(n)$ be the largest exponent in the prime
 factorization of $n$, and let $\xi(\theta, \eta)$ be Letendre's saving exponent. There is an

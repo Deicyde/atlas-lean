@@ -1,6 +1,6 @@
 # Isolated minimum of the $p$-Lagrange spectrum for primes below 2000
 
-**Isolated minimum of the $p$-Lagrange spectrum for primes below 2000.** For every prime
+For every prime
 $p < 2000$, the $p$-Lagrange spectrum $L_p$ has a least element $\alpha$ with the following
 properties: $\alpha$ is an isolated point of $L_p$, that is, there is $\varepsilon > 0$ such that
 every $\beta \in L_p$ with $|\beta - \alpha| < \varepsilon$ equals $\alpha$; $\alpha$ is

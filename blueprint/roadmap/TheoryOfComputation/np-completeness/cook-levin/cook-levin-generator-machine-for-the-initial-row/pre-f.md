@@ -1,6 +1,6 @@
 # Counters after the precomputation
 
-**Counters after the precomputation.** For a layout $L$ with $A$ label/state variables, $K$
+For a layout $L$ with $A$ label/state variables, $K$
 stacks and $g$ symbol codes, a stack index $k_0$ and numbers $T, n, e, f$, write $H = n + e + f$.
 The counter values after the precomputation are $\mathrm{Tn} = T + 1$, $\mathrm{Xn} = n$,
 $\mathrm{En} = e$, $\mathrm{Fn} = f$, $\mathrm{Gc} = g$, $\mathrm{Mm} = n + e$, $\mathrm{Hs} = H$,

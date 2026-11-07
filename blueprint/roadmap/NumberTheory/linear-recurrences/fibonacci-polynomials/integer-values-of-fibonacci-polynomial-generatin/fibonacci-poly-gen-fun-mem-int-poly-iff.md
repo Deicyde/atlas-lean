@@ -1,6 +1,6 @@
 # Integer-polynomial values of the Fibonacci polynomial generating function
 
-**Integer-polynomial values of the Fibonacci polynomial generating function.** Let $a$ and $b$
+Let $a$ and $b$
 be positive integers with $b \mid a$, let $F_i(x) \in \mathbb{Z}[x]$ be the polynomials with
 $F_0 = 0$, $F_1 = 1$ and $F_{i+2} = ax\,F_{i+1} + b\,F_i$ for all $i \ge 0$, and let
 $f(x, t) = t / (1 - axt - bt^2)$. For a rational function $q(x) \in \mathbb{Q}(x)$, the rational

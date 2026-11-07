@@ -1,6 +1,6 @@
 # Nondeterministic space classes
 
-**Nondeterministic space classes.** For $s : \mathbb{N} \to \mathbb{N}$, $\mathrm{NSPACE}(s)$
+For $s : \mathbb{N} \to \mathbb{N}$, $\mathrm{NSPACE}(s)$
 is the set of languages $L$ of bitstrings for which there are natural numbers $c_1$, $c_2$, $k$
 and a nondeterministic multi-tape Turing machine $M$ over the boolean alphabet with finitely many
 states and $k$ work tapes that decides $L$ in space $c_1 s(n) + c_2$: on every input $x$, every

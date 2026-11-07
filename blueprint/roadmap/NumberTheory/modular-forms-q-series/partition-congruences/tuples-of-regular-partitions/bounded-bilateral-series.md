@@ -1,6 +1,6 @@
 # Bounded bilateral series
 
-**Bounded bilateral series.** Given functions $e, w : \mathbb{Z} \to \mathbb{Z}$, the
+Given functions $e, w : \mathbb{Z} \to \mathbb{Z}$, the
 bounded bilateral series of $e$ and $w$ is the power series over $\mathbb{Z}$ whose
 coefficient of $q^n$, for each natural number $n$, is the sum of $w(m)$ over the integers
 $m$ with $-n-1 \le m \le n+1$ and $e(m) = n$.

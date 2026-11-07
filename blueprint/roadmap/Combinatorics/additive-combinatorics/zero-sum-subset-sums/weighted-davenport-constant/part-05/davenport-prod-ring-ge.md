@@ -1,6 +1,6 @@
 # Weighted Davenport constant of a product with product weights
 
-**Weighted Davenport constant of a product with product weights.** Let $R$ and $R'$ be rings,
+Let $R$ and $R'$ be rings,
 $M$ an $R$-module, $N$ an $R'$-module, $A \subseteq R$ and $B \subseteq R'$. Let $D_A(M)$ be the
 least positive integer $k$, if one exists, such that every sequence $x_1, \dots, x_k$ in $M$ has
 a nonempty set of indices $I$ and weights $a_i \in A$ for $i \in I$ with

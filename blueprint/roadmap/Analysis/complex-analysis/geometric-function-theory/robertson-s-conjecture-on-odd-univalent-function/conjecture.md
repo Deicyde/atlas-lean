@@ -1,6 +1,6 @@
 # Robertson's conjecture for real-coefficient and close-to-convex functions
 
-**Robertson's conjecture for real-coefficient and close-to-convex functions.** Let
+Let
 $\mathbb{D} = \{z \in \mathbb{C} : |z| < 1\}$. The statement that for all functions
 $f, h : \mathbb{C} \to \mathbb{C}$ such that $f$ belongs to the class $S$ (analytic at every point
 of $\mathbb{D}$, injective on $\mathbb{D}$, $f(0) = 0$ and $f'(0) = 1$), $h$ is a normalized odd

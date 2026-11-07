@@ -1,6 +1,6 @@
 # Rooted binary species tree with branch lengths
 
-**Rooted binary species tree with branch lengths.** A rooted binary **species tree** on the species `Fin n` with branch lengths: `leaf i` is
+A rooted binary **species tree** on the species `Fin n` with branch lengths: `leaf i` is
 species `i`, and `node l r t` is the ancestral species of the species below `l` and `r`, where
 `t` is the length, in coalescent units (`2N` generations), of the branch above the node, i.e.
 the time during which the ancestral population of `l` and `r` exists before it merges with a

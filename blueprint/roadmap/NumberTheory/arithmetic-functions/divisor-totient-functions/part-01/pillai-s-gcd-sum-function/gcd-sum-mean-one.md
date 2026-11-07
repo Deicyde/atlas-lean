@@ -1,6 +1,6 @@
 # The mean gcd-sum function at $1$
 
-**The mean gcd-sum function at $1$.** The mean gcd-sum function $A$ satisfies $A(1) = 1$.
+The mean gcd-sum function $A$ satisfies $A(1) = 1$.
 
 ## Sources
 

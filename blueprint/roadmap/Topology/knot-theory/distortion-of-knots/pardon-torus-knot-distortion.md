@@ -1,6 +1,6 @@
 # Pardon's lower bound for the distortion of torus knots
 
-**Pardon's lower bound for the distortion of torus knots.** Let $p$ and $q$ be coprime positive
+Let $p$ and $q$ be coprime positive
 integers, let $T_{p,q}$ be the standard $(p, q)$-torus curve, and let $K$ be a knot with
 parametrization $\gamma$. Suppose there are an ambient isotopy $H$ of $\mathbb{R}^3$, with
 time-one map $H_1$, and a strictly increasing diffeomorphism $\sigma$ of $\mathbb{R}$ with

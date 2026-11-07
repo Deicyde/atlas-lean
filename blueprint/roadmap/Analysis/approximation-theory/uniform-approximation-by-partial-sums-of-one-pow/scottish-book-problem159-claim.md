@@ -1,6 +1,6 @@
 # The claim of Scottish Book Problem 159
 
-**The claim of Scottish Book Problem 159.** There is a sequence of real numbers
+There is a sequence of real numbers
 $a_0, a_1, a_2, \dots$ such that for every $\varepsilon > 0$ there is a natural number $N$ with the
 following property: for every function $f : \mathbb{R} \to \mathbb{R}$ that is continuous on
 $[0, 1]$ and satisfies $f(0) = 0$ and $0 \le f(x) \le 1$ for all $x \in [0, 1]$, there is a natural

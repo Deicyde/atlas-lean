@@ -1,6 +1,6 @@
 # The discriminant commutes with localization
 
-**The discriminant commutes with localization.** Let $A$ be a Dedekind domain with
+Let $A$ be a Dedekind domain with
 fraction field $K$, let $L/K$ be a finite separable extension, and let $B$ be the integral
 closure of $A$ in $L$, a Dedekind domain with fraction field $L$ that is finite and
 torsion-free as an $A$-module. Let $S \subseteq A$ be a multiplicative set of nonzerodivisors,

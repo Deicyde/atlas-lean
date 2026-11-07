@@ -1,6 +1,6 @@
 # Finite multiple zeta value of level $N$ with a color map
 
-**Finite multiple zeta value of level $N$ with a color map.** Let $p$ and $N$ be natural
+Let $p$ and $N$ be natural
 numbers, $k = (k_1, \dots, k_r)$ a tuple of natural numbers, and $c$ a color map, which sends
 each $a \in \mathbb{Z}/N\mathbb{Z}$ either to $\emptyset$ or to a tuple in
 $(\mathbb{Z}/N\mathbb{Z})^r$. The $p$-component

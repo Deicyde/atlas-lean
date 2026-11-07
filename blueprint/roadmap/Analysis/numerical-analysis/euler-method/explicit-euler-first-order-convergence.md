@@ -1,6 +1,6 @@
 # First-order convergence of the explicit Euler method
 
-**First-order convergence of the explicit Euler method.** Let $E$ be a real Banach space,
+Let $E$ be a real Banach space,
 let $t_0 < T$, let $x_0 \in E$ and $L \ge 0$, and let $f : \mathbb{R} \times E \to E$ be $C^2$
 with $f(t, \cdot)$ $L$-Lipschitz for every $t \in [t_0, T]$. Then there are a function
 $x : \mathbb{R} \to E$ with $x(t_0) = x_0$ and $x'(t) = f(t, x(t))$ for every $t \in [t_0, T]$,

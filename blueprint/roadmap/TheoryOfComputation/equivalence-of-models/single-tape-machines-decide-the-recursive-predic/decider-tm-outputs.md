@@ -1,6 +1,6 @@
 # The decider outputs the answer bit
 
-**The decider outputs the answer bit.** Let $M$ be a finite multi-stack machine whose stack
+Let $M$ be a finite multi-stack machine whose stack
 alphabets are all finite, with its input and output stack alphabets identified with the bits, and
 let $w$ be a word of bits. Suppose that $M$, started with the input stack holding the reverse of
 $w$ followed by $\mathrm{true}$, halts with the output stack holding a list $u$ of length at most

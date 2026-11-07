@@ -1,6 +1,6 @@
 # Open patterns have quadratic continuous Turán number
 
-**Open patterns have quadratic continuous Turán number.** For every nonempty open set
+For every nonempty open set
 $P \subseteq \mathbb{R}^2$, $\operatorname{opx}(n, P) = \Theta(n^2)$ as the real number $n$ tends
 to infinity.
 

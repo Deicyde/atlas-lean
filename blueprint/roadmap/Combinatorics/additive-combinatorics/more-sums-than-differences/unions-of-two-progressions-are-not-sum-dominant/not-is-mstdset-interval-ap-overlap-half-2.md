@@ -1,6 +1,5 @@
 # Interval plus progression with half-integer start and odd-denominator step is not MSTD
 
-**Interval plus progression with half-integer start and odd-denominator step is not MSTD.**
 Let $I_n = \{0, 1, \dots, n - 1\}$ and $J(x, m, d) = \{x + id : i = 0, 1, \dots, m\}$, as finite
 sets of reals. Let $n \ge 3$, $m \ge 2$, $s_1$, $s_2$ and $p_2$ be natural numbers and $q_2$ an
 odd natural number, and let $x = s_1 + 1/2$ and $d = s_2 + p_2/q_2$. If $x < n - 1 < d$, then

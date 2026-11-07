@@ -1,6 +1,6 @@
 # Cohn's theorem on square Lucas numbers
 
-**Cohn's theorem on square Lucas numbers.** Let $L_0 = 2$, $L_1 = 1$ and
+Let $L_0 = 2$, $L_1 = 1$ and
 $L_{n+2} = L_{n+1} + L_n$ be the Lucas numbers. If $n \ge 1$ and $L_n = x^2$ for some natural
 number $x$, then $n = 1$ or $n = 3$.
 

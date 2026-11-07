@@ -1,6 +1,6 @@
 # Unique order-preserving lift modulo $p^2$
 
-**Unique order-preserving lift modulo $p^2$.** Let $p$ be an odd prime and let $a$ be
+Let $p$ be an odd prime and let $a$ be
 a natural number coprime to $p$. Writing $\operatorname{ord}_n(b)$ for the multiplicative
 order of $b$ modulo $n$, there is exactly one $m \in \{0, 1, \dots, p - 1\}$ such that
 $\operatorname{ord}_{p^2}(a + mp) = \operatorname{ord}_p(a)$.

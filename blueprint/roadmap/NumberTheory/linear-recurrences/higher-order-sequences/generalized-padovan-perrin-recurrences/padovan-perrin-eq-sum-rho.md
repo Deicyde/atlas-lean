@@ -1,6 +1,6 @@
 # Combinatorial expression of the Padovan–Perrin sequences
 
-**Combinatorial expression of the Padovan–Perrin sequences.** Let $R$ be a commutative ring,
+Let $R$ be a commutative ring,
 let $k_1, k_2 \in R$, let $p, s$ be positive integers, and let $v \colon \mathbb{N} \to R$ satisfy
 $v(n + s + p) = k_1 v(n + p) + k_2 v(n)$ for every $n$. For $0 \le m \le s + p - 1$ put
 $A_m = k_2 v(m) + k_1 v(m + p)$ if $m < s$ and $A_m = k_2 v(m)$ if $m \ge s$. Let $\rho(N, s + p)$

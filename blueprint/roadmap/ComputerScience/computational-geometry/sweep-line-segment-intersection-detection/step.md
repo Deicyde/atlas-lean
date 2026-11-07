@@ -1,6 +1,6 @@
 # One step of the sweep
 
-**One step of the sweep.** A step takes an event and a status list $T$ of segments, ordered
+A step takes an event and a status list $T$ of segments, ordered
 from bottom to top, and returns a new status list, or no result when an intersection is reported.
 At the left endpoint $p$ of segment $i$, split $T$ as $A$ followed by $B$, where $A$ is the longest
 initial part of $T$ whose segments pass strictly below $p$ by the `DIRECTION` test. If

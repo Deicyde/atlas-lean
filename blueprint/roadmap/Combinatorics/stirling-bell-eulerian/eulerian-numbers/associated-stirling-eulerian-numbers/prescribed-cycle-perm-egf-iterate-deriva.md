@@ -1,6 +1,6 @@
 # Derivative formula for prescribed cycle lengths through the first $s$ points
 
-**Derivative formula for prescribed cycle lengths through the first $s$ points.** Let $R$ be
+Let $R$ be
 a commutative $\mathbb{Q}$-algebra, $x \in R$, $s \in \mathbb{N}$ and
 $r : \mathbb{N} \to \mathbb{N}$ with $r(i) \ge 2$ for all $i < s$. For a permutation $\sigma$ of
 $\{0, \dots, n-1\}$ let $e(\sigma)$ be the number of $i$ with $\sigma(i) > i$, and for $m \ge 0$

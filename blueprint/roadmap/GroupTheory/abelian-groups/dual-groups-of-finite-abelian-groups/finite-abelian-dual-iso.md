@@ -1,6 +1,6 @@
 # A finite abelian group is isomorphic to its dual group
 
-**A finite abelian group is isomorphic to its dual group.** Every finite abelian group $A$ is
+Every finite abelian group $A$ is
 isomorphic to its dual group, the group of characters of $A$ under pointwise multiplication,
 where a character of $A$ is a map $\chi : A \to \mathbb{C}$ with $\chi(0) = 1$ and
 $\chi(a + a') = \chi(a)\chi(a')$ for all $a, a' \in A$.

@@ -1,6 +1,6 @@
 # Jacobi theta function, product form
 
-**Jacobi theta function, product form.** For complex numbers $x$ and $q$ with $|q| < 1$,
+For complex numbers $x$ and $q$ with $|q| < 1$,
 
 $$j(x; q) = (x; q)_\infty \, (q/x; q)_\infty \, (q; q)_\infty,$$
 

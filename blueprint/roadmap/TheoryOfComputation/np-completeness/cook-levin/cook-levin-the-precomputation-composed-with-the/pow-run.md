@@ -1,6 +1,6 @@
 # The power loop
 
-**The power loop.** Let $b, k, p, q, a, t$ be pairwise distinct counters of a counter machine
+Let $b, k, p, q, a, t$ be pairwise distinct counters of a counter machine
 $M$, let $\mu$ assign a label to each power-loop stage and let $\nu$ be a label. Suppose that for
 every power-loop stage $s$ the label $\mu(s)$ runs the power-loop program for $b, k, p, q, a, t$
 with stage labels $\mu$ and exit label $\nu$ at stage $s$. Let $j \in \mathbb{N}$, let $F$ be

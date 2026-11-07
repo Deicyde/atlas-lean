@@ -1,6 +1,6 @@
 # Quantifier elimination over the reals
 
-**Quantifier elimination over the reals.** Quantifier elimination is a map sending each formula
+Quantifier elimination is a map sending each formula
 $\varphi$ of the language of ordered rings to a formula $\operatorname{qe}(\varphi)$, subject to
 two requirements: $\operatorname{qe}(\varphi)$ is quantifier free, and for every environment
 $e : \mathbb{N} \to \mathbb{R}$ assigning a real number to each variable,

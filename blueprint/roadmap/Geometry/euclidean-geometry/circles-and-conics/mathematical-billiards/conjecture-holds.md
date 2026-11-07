@@ -1,6 +1,6 @@
 # Bialy–Tabachnikov: $k_{602}$ is invariant
 
-**Bialy–Tabachnikov: $k_{602}$ is invariant.** The elliptic billiard invariant $k_{602}$
+The elliptic billiard invariant $k_{602}$
 conjecture holds. Write $|XY|$ for the distance between points $X$ and $Y$. For every natural
 number $N$, all points $O, f_1, f_2$ of the Euclidean plane and all reals $a, a_c$ with
 $O = \frac{1}{2}(f_1 + f_2)$, $|f_1 f_2| < a$, $|f_1 f_2| < a_c$ and $a_c < a$, there is a real

@@ -1,6 +1,6 @@
 # Representability criterion from a window of counts
 
-**Representability criterion from a window of counts.** For an integer $k$ and $n \ge 0$, let
+For an integer $k$ and $n \ge 0$, let
 $r_k(n)$ and $t_k(n)$ be the coefficients of $q^n$ in $\theta(q)^k$ and $\psi(q)^k$, where $\theta$
 and $\psi$ are the square and triangular theta series (units of $\mathbb{Z}[[q]]$). Let $n \ge 1$,
 let $p$ be an odd prime with $p - 1 \ge n + 1$, and let $s$ be an integer. If $p$ does not divide

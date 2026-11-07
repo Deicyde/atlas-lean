@@ -1,6 +1,6 @@
 # Bottom-left delta-wye arm
 
-**Bottom-left delta-wye arm.** For an upright triangle whose left, right and base edges carry
+For an upright triangle whose left, right and base edges carry
 the values $L$, $R$, $B$ in a field $K$, the bottom-left arm is
 $\Delta(B, L, R) = \frac{BL}{B + L + R}$, where $\Delta$ is the delta-wye resistance function: the
 arm of the equivalent star from the centre of the triangle to its bottom-left vertex.

@@ -1,6 +1,6 @@
 # Saturation function for continuous patterns
 
-**Saturation function for continuous patterns.** For a real number $n$ and a set
+For a real number $n$ and a set
 $P \subseteq \mathbb{R}^2$, call an open set $S \subseteq [0, n]^2$ saturating for $P$ if $S$
 does not contain $P$ but every open set $S' \subseteq [0, n]^2$ properly containing $S$ contains
 $P$ (containment in the sense of point-set pattern containment). The saturation function

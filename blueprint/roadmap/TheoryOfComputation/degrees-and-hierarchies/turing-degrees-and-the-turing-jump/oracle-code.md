@@ -1,6 +1,6 @@
 # Oracle codes
 
-**Oracle codes.** Oracle codes are the finite programs built from the basic codes
+Oracle codes are the finite programs built from the basic codes
 $\mathtt{zero}$, $\mathtt{succ}$, $\mathtt{left}$, $\mathtt{right}$ and $\mathtt{oracle}$ by the
 binary constructors $\mathtt{pair}$, $\mathtt{comp}$ and $\mathtt{prec}$ and the unary constructor
 $\mathtt{rfind}$. They are the codes for partial recursive functions (constant zero, successor,

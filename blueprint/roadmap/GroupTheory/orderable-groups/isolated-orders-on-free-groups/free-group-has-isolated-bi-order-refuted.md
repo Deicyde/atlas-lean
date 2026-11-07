@@ -1,6 +1,6 @@
 # No free group of finite rank at least 2 has an isolated bi-order
 
-**No free group of finite rank at least 2 has an isolated bi-order.** For every natural number
+For every natural number
 $n \ge 2$ and every finite subset $S$ of the free group $F_n$ on $n$ generators, it is not the case
 that exactly one bi-invariant strict total order $<$ on $F_n$ (a strict total order such that
 $a < b$ implies $cad < cbd$ for all $a, b, c, d \in F_n$) satisfies $1 < s$ for every $s \in S$.

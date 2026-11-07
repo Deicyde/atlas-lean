@@ -1,6 +1,6 @@
 # Replacing the units digit of 25011 by 3
 
-**Replacing the units digit of 25011 by 3.** Replacing the base-ten digit of $25011$ at
+Replacing the base-ten digit of $25011$ at
 position $0$, its units digit, by $3$ gives $25013$.
 
 This is a sample computation illustrating the replacement operation of Theorem 1, not a claim

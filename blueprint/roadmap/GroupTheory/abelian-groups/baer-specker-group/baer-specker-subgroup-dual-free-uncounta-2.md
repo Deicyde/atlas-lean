@@ -1,6 +1,6 @@
 # A subgroup of the Baer–Specker group with free dual of uncountable rank
 
-**A subgroup of the Baer–Specker group with free dual of uncountable rank.** The Baer–Specker
+The Baer–Specker
 group $\mathbb{Z}^{\mathbb{N}}$ of all integer sequences has a subgroup $H$ whose dual
 $\operatorname{Hom}(H, \mathbb{Z})$ is a free abelian group of rank greater than $\aleph_0$; this
 answers Kourovka 17.24 positively.

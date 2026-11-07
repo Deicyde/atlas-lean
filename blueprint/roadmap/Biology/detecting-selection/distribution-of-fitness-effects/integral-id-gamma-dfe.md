@@ -1,3 +1,3 @@
 # Mean selection coefficient under the gamma DFE
 
-**Mean selection coefficient under the gamma DFE.** The mean scaled selection coefficient under the gamma DFE is `-a / r`.
+The mean scaled selection coefficient under the gamma DFE is `-a / r`.

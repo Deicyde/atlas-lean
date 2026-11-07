@@ -1,6 +1,6 @@
 # The zero ideal is a divided-power ideal
 
-**The zero ideal is a divided-power ideal.** In every commutative ring, the zero ideal is a
+In every commutative ring, the zero ideal is a
 divided-power ideal.
 
 ## Sources

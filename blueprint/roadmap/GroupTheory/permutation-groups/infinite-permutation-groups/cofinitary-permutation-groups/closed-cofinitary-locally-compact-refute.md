@@ -1,6 +1,6 @@
 # Closed cofinitary permutation groups need not be locally compact
 
-**Closed cofinitary permutation groups need not be locally compact.** The claim of Kourovka
+The claim of Kourovka
 Problem 13.28 is false: there are an infinite set $\Omega$ and a subgroup $G$ of the group of
 permutations of $\Omega$ such that $G$ is cofinitary (every non-identity element of $G$ fixes only
 finitely many points of $\Omega$) and closed in the topology of pointwise convergence, but $G$ is

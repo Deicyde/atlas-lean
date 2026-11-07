@@ -1,6 +1,6 @@
 # The constant sequence $1$ is atomic
 
-**The constant sequence $1$ is atomic.** The constant sequence $(1, 1, 1, \dots)$ is a
+The constant sequence $(1, 1, 1, \dots)$ is a
 nonzero atomic binomid index: it is a nonzero binomid index that is not the sum of two nonzero
 binomid indices.
 

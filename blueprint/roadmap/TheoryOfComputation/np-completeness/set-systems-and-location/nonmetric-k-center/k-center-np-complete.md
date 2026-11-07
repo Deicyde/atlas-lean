@@ -1,6 +1,6 @@
 # k-CENTER (GENERALIZED, NONMETRIC) is NP-complete
 
-**k-CENTER (GENERALIZED, NONMETRIC) is NP-complete.** The decision problem of generalized
+The decision problem of generalized
 nonmetric k-center on bitstrings is NP-complete: it belongs to NP, and every decision problem in
 NP has a polynomial-time many-one reduction to it.
 

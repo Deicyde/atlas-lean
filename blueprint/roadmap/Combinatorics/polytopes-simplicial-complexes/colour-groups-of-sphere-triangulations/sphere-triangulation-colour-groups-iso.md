@@ -1,6 +1,6 @@
 # Kourovka Problem 17.35 (statement)
 
-**Kourovka Problem 17.35 (statement).** The statement that for every finite simplicial
+The statement that for every finite simplicial
 2-sphere $X$ in $\mathbb{R}^3$ and every colouring of the finite sets of points of $\mathbb{R}^3$
 white or black such that any two distinct triangles of $X$ (faces with exactly three vertices)
 with exactly two vertices in common receive different colours, the groups $G_W$ and $G_B$ are

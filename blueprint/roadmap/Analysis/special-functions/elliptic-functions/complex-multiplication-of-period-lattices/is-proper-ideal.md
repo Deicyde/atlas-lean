@@ -1,6 +1,6 @@
 # Lattices that are proper ideals
 
-**Lattices that are proper ideals.** Let $\Lambda$ be the period lattice of a pair of
+Let $\Lambda$ be the period lattice of a pair of
 $\mathbb{R}$-linearly independent complex numbers, and let $\mathcal{O}$ be a subring of
 $\mathbb{C}$. Then $\Lambda$ is a proper ideal of $\mathcal{O}$ when the endomorphism ring of
 $\Lambda$, the subring of all $a \in \mathbb{C}$ with $a z \in \Lambda$ for every $z \in \Lambda$,

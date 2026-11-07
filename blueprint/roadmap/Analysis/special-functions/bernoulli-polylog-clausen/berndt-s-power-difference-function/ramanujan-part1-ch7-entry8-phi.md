@@ -1,6 +1,6 @@
 # Bernoulli and zeta expansions of Berndt's $\varphi_r$ on $(-1, 0)$
 
-**Bernoulli and zeta expansions of Berndt's $\varphi_r$ on $(-1, 0)$.** Let $r$ be a positive
+Let $r$ be a positive
 integer and, for $-1 < x < 0$, let $\varphi_r(x) = \zeta(-r) - \zeta(-r, x + 1)$, where $\zeta$
 is the Riemann zeta function and $\zeta(s, a)$ the Hurwitz zeta function. Then for every
 $-1 < x < 0$,

@@ -1,6 +1,6 @@
 # One iteration of the time loop
 
-**One iteration of the time loop.** Let $t < T$, suppose the tables are well formed at height
+Let $t < T$, suppose the tables are well formed at height
 $H$ for every situation $i < N$, and let $f$ be a counter assignment that satisfies the time-loop
 invariant for $T$ and $H$ and has counter $T_n$ equal to $t$. Then for every output word $o$, the
 generator started at the head label of the time-step multiplication, with state $\mathrm{true}$,

@@ -1,6 +1,6 @@
 # The constant $\gamma$
 
-**The constant $\gamma$.** For natural numbers $p$, $d$ and $r$,
+For natural numbers $p$, $d$ and $r$,
 $\gamma = ((p - 1) r + (p + 1))/d$, a rational number (taken to be $0$ when $d = 0$).
 
 ## Sources

@@ -1,6 +1,6 @@
 # Robust cherry lemma for split systems
 
-**Robust cherry lemma for split systems**: the selection step of Atteson's theorem
+The selection step of Atteson's theorem
 (Atteson 1999), with a proof after Mihaescu, Levy & Pachter (2009, Theorem 16).
 Let `A e` (`e : E`) be a compatible binary system of splits with positive weights `w`,
 containing every trivial split and closed under complement, on at least four taxa, and let

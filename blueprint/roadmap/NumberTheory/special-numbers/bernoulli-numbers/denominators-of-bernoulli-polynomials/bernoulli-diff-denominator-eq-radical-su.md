@@ -1,6 +1,6 @@
 # Indices with $\mathbb{D}_n = \operatorname{rad}(n + 1)$
 
-**Indices with $\mathbb{D}_n = \operatorname{rad}(n + 1)$.** Write $s_p(m)$ for the sum of
+Write $s_p(m)$ for the sum of
 the base-$p$ digits of $m$, let $\mathbb{D}_m$ be the product of the primes $p$ with
 $s_p(m) \ge p$, and let $\mathbb{D}^\perp_m$ be the product of the primes $p$ with $p \nmid m$
 and $s_p(m) \ge p$. Let $\overline{\mathcal{R}}$ be the set of $n \ge 1$ with

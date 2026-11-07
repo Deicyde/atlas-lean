@@ -1,6 +1,6 @@
 # Congruence of normalized odd double factorials
 
-**Congruence of normalized odd double factorials.** For every natural number $e \ge 3$, writing
+For every natural number $e \ge 3$, writing
 $(2^k-1)!!$ for the product of the odd numbers from $1$ to $2^k-1$, the integer $2^e$ divides
 $(2^e-1)!! - 1$, the integer $2^{e+1}$ divides $(2^{e+1}-1)!! - 1$, and
 

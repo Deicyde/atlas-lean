@@ -1,6 +1,6 @@
 # Ricci curvature
 
-**Ricci curvature.** For a point $x$ of a $C^\infty$ Riemannian manifold $(M, g)$ and tangent
+For a point $x$ of a $C^\infty$ Riemannian manifold $(M, g)$ and tangent
 vectors $v, w \in T_x M$, the Ricci curvature is
 $\operatorname{Ric}_x(v, w) = \sum_i e_i^*(R(e_i, v) w)$, where $R$ is the Riemann curvature
 endomorphism of the Levi-Civita connection of $g$, $(e_i)$ is a fixed basis of $T_x M$ and

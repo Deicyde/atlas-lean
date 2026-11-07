@@ -1,6 +1,6 @@
 # Aissen–Schoenberg–Whitney–Edrei theorem
 
-**Aissen–Schoenberg–Whitney–Edrei theorem.** Let $a_0, a_1, \dots$ be non-negative real
+Let $a_0, a_1, \dots$ be non-negative real
 numbers with $a_0 \ne 0$. All minors of the infinite lower-triangular Toeplitz matrix
 $(a_{n-k})_{n,k \ge 0}$, with zeros above the diagonal, are non-negative (that is, the sequence is
 a Pólya frequency sequence) if and only if there are a real $\gamma \ge 0$, non-negative reals

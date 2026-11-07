@@ -1,6 +1,6 @@
 # The fuel-bounded Hofstadter recursion is bounded by its argument
 
-**The fuel-bounded Hofstadter recursion is bounded by its argument.** For all natural numbers
+For all natural numbers
 $k$, $p$ and $n$, the fuel-bounded value $A_k(p, n)$ of the generalized Hofstadter recursion
 satisfies $A_k(p, n) \le n$.
 

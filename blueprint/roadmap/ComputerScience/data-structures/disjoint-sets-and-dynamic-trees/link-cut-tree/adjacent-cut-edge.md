@@ -1,6 +1,6 @@
 # An edge cut keeps every other edge
 
-**An edge cut keeps every other edge.** Let $s$ be a valid link-cut tree state and let $x$ and
+Let $s$ be a valid link-cut tree state and let $x$ and
 $y$ be adjacent in some tree of its represented forest. If $a$ and $b$ are adjacent in some tree
 of the represented forest of $s$, and neither $a = x$ and $b = y$ nor $a = y$ and $b = x$, then
 $a$ and $b$ are adjacent in some tree of the represented forest obtained from $s$ by cutting the

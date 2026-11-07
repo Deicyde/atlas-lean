@@ -1,6 +1,6 @@
 # Base-$b$ digits of a real number
 
-**Base-$b$ digits of a real number.** For natural numbers $b$ and $n$ and a real number $x$, the
+For natural numbers $b$ and $n$ and a real number $x$, the
 $n$-th digit of $x$ in base $b$, counting from $n = 0$ just after the radix point, is
 $\lfloor b^{n+1} \{x\} \rfloor \bmod b$, where $\{x\} = x - \lfloor x \rfloor$ is the fractional
 part of $x$.

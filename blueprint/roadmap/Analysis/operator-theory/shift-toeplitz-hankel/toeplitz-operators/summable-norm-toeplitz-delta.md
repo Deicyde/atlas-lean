@@ -1,3 +1,3 @@
 # Absolute summability of a delta symbol
 
-**Absolute summability of a delta symbol.** A delta symbol is absolutely summable.
+A delta symbol is absolutely summable.

@@ -1,6 +1,6 @@
 # Lower bounds for ratios of consecutive Lucas terms
 
-**Lower bounds for ratios of consecutive Lucas terms.** Let $x$ and $y \neq 0$ be integers
+Let $x$ and $y \neq 0$ be integers
 with $x \geq 1$ and $|y + 1| \leq x$, and let $(U_n)$ be the Lucas sequence with parameters
 $(x, y)$, given by $U_0 = 0$, $U_1 = 1$ and $U_{n+2} = x U_{n+1} - y U_n$. If $y < 0$, then
 $U_n / U_{n-1} \geq x - xy/(x^2 - y)$ for every $n > 2$. If $y > 0$, then

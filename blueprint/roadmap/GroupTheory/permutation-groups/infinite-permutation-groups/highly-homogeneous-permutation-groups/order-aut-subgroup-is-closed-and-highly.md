@@ -1,6 +1,6 @@
 # The order-automorphism group of the rationals is closed and highly homogeneous
 
-**The order-automorphism group of the rationals is closed and highly homogeneous.** The group of
+The group of
 order automorphisms of $\mathbb{Q}$, that is, of the permutations $\sigma$ of $\mathbb{Q}$ such
 that $a < b$ if and only if $\sigma(a) < \sigma(b)$ for all $a, b \in \mathbb{Q}$, is closed in
 the topology of pointwise convergence on the permutations of $\mathbb{Q}$, where $\mathbb{Q}$

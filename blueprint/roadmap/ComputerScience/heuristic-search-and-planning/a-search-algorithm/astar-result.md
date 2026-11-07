@@ -1,6 +1,6 @@
 # Output of A-star search
 
-**Output of A-star search.** An A* result on $n$ vertices consists of a Dijkstra result on $n$
+An A* result on $n$ vertices consists of a Dijkstra result on $n$
 vertices (the underlying search, with its source, final keys and predecessor pointers) and a
 vector that assigns to each vertex $v$ a value $g(v) \in \mathbb{N} \cup \{\infty\}$. In the
 output of A* from a source $s$ with a consistent heuristic $h$, the underlying search runs on the

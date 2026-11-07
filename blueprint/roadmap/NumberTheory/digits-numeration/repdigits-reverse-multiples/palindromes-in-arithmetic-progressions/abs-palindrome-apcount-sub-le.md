@@ -1,6 +1,6 @@
 # Palindromes in residue classes: a logarithmic error bound
 
-**Palindromes in residue classes: a logarithmic error bound.** Let $b \ge 2$ be a natural
+Let $b \ge 2$ be a natural
 number, let $q$ be an odd natural number with $b \equiv 1 \pmod q$, and let $r$ be a natural
 number with $r < q$. For natural numbers $m$, $q'$ and $r'$, write $A_b(m, q', r')$ for the number
 of base-$b$ palindromes $n$ with $1 \le n \le m$ and $n \equiv r' \pmod{q'}$; thus $A_b(m, 1, 0)$

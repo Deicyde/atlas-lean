@@ -1,6 +1,6 @@
 # Rectangle integral of $y^s/s$ around the origin
 
-**Rectangle integral of $y^s/s$ around the origin.** Let $y, U, c, T$ be real numbers with
+Let $y, U, c, T$ be real numbers with
 $y > 0$, $U > 0$, $c > 0$ and $T > 0$, and write $y^s = e^{s \log y}$. Then
 
 $$\int_{-U}^{c} \frac{y^{x - iT}}{x - iT}\,dx - \int_{-U}^{c} \frac{y^{x + iT}}{x + iT}\,dx +

@@ -1,6 +1,6 @@
 # Perfect compositions are permuted perfect partitions
 
-**Perfect compositions are permuted perfect partitions.** Call a list $L$ of positive integers
+Call a list $L$ of positive integers
 perfect for $n$ if for every integer $m$ with $0 < m < n$ there is exactly one list of integers
 that is a sublist of $L$ (its entries taken in order, not necessarily contiguous) and has sum
 $m$. A symbolic part $(a, u)$ with $a, u > 0$ stands for a run of $u$ copies of $a$, and the

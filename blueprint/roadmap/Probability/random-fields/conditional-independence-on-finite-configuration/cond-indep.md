@@ -1,6 +1,6 @@
 # Conditional independence for a finite weight
 
-**Conditional independence for a finite weight.** Let $V$ and $\alpha$ be finite types, let $p$
+Let $V$ and $\alpha$ be finite types, let $p$
 be a real-valued weight on the configurations $x : V \to \alpha$, and for $U \subseteq V$ write
 $p(x_U)$ for the marginal of $p$ on $U$ at $x$, the total weight of the configurations that agree
 with $x$ on $U$. For $A, B, S \subseteq V$, the variables in $A$ and in $B$ are conditionally

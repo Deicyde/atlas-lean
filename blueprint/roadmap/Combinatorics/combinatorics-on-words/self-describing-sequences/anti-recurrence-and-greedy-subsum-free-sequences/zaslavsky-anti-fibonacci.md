@@ -1,6 +1,6 @@
 # Zaslavsky's formulas for the anti-Fibonacci numbers
 
-**Zaslavsky's formulas for the anti-Fibonacci numbers.** Let $A_1 = 1$, $B_1 = 2$,
+Let $A_1 = 1$, $B_1 = 2$,
 $C_1 = 3$, and for $n \ge 1$ let $A_{n+1} < B_{n+1}$ be the two smallest positive integers not
 among $A_1, B_1, C_1, \ldots, A_n, B_n, C_n$ and $C_{n+1} = A_{n+1} + B_{n+1}$. Let
 $\mathrm{PD}[0], \mathrm{PD}[1], \ldots$ be the letters of the period-doubling word, the fixed

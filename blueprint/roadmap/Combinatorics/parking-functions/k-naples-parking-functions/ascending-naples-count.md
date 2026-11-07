@@ -1,6 +1,6 @@
 # Number of ascending $k$-Naples parking functions
 
-**Number of ascending $k$-Naples parking functions.** For natural numbers $n$ and $k$,
+For natural numbers $n$ and $k$,
 $I_{n,k}$ is the number of $k$-Naples parking functions $(a_1, \dots, a_n)$ of length $n$ that
 are weakly increasing, that is, $a_1 \le a_2 \le \dots \le a_n$.
 

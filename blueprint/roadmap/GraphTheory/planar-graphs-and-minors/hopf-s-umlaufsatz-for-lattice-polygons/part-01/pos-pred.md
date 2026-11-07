@@ -1,3 +1,3 @@
 # Backward vertex recursion of a closed lattice walk
 
-**Backward vertex recursion of a closed lattice walk.** Vertex recursion of a closed walk read backwards from vertex `M`.
+Vertex recursion of a closed walk read backwards from vertex `M`.

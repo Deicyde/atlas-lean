@@ -1,6 +1,6 @@
 # The iccanobiF iterates approximate $abf$ and $baf$
 
-**The iccanobiF iterates approximate $abf$ and $baf$.** Let $f = abaab\cdots$ be the
+Let $f = abaab\cdots$ be the
 Fibonacci word, the infinite Fibonacci word with each $0$ written as $a$ and each $1$ as $b$,
 and let $\varrho_F'$ be the iccanobiF substitution $a \mapsto ba$, $b \mapsto a$, extended to
 finite words by concatenation. For every $n \ge 0$, the word $(\varrho_F')^{2n}(a)$ is a prefix

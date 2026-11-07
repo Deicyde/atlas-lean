@@ -1,6 +1,6 @@
 # The set of Lorentzian polynomials
 
-**The set of Lorentzian polynomials.** For natural numbers $n$ and $d$, the set $L^d_n$ of
+For natural numbers $n$ and $d$, the set $L^d_n$ of
 Lorentzian polynomials is a set of homogeneous polynomials of degree $d$ in
 $\mathbb{R}[w_1, \dots, w_n]$, defined by recursion on $d$. For $d \le 2$, $L^d_n = S^d_n$, the set
 of homogeneous stable polynomials of degree $d$ with nonnegative coefficients. For $d \ge 3$,

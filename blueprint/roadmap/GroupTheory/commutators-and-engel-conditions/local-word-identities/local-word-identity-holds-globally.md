@@ -1,6 +1,6 @@
 # Local word identities in connected groups (Kourovka 18.71)
 
-**Local word identities in connected groups (Kourovka 18.71).** The statement that for every
+The statement that for every
 connected Hausdorff topological group $G$ and every word $W(x, y)$ in the free group on two
 generators $x$, $y$, if $W(a, b) = 1$ for all $(a, b)$ in some nonempty open subset of $G \times G$,
 then $W(a, b) = 1$ for all $a, b \in G$.

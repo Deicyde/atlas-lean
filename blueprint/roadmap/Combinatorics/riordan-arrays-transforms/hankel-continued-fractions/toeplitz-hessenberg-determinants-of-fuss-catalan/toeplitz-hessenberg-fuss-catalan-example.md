@@ -1,6 +1,6 @@
 # Small generalized Fuss–Catalan numbers
 
-**Small generalized Fuss–Catalan numbers.** For the generalized Fuss–Catalan numbers
+For the generalized Fuss–Catalan numbers
 $A_n(p, r) = \frac{r}{pn + r} \binom{pn + r}{n}$, one has $A_3(2, 1) = 5$, $A_2(2, 3) = 9$,
 $A_3(3, 1) = 12$ and $A_2(3, 2) = 7$.
 

@@ -1,6 +1,6 @@
 # Arndt compositions of 6 with four parts
 
-**Arndt compositions of 6 with four parts.** There is exactly one Arndt composition of $6$
+There is exactly one Arndt composition of $6$
 with four parts.
 
 It is $(2, 1, 2, 1)$.

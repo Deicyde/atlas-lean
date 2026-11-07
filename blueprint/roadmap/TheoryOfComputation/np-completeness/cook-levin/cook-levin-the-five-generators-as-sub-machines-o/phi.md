@@ -1,6 +1,6 @@
 # The formula emitted by the host
 
-**The formula emitted by the host.** Let $M$ be a finite multi-stack Turing machine with
+Let $M$ be a finite multi-stack Turing machine with
 encoding data $E$, let $x$ and $Y$ be lists of input symbols, let $\mathit{acc}$ be an output
 symbol, and let $m, T \in \mathbb{N}$. Let $H = m + (T + 1) d + 1$ be the stack cap, where $d$ is
 the window depth of $M$. The CNF formula $\Phi(x, Y, \mathit{acc}, m, T)$ is the concatenation, in

@@ -1,6 +1,6 @@
 # Torsion quotients of finitely presented groups need not be finitely presented
 
-**Torsion quotients of finitely presented groups need not be finitely presented.** There exists
+There exists
 a finitely presented group $G$ such that $G / \mathrm{Tor}(G)$ is not finitely presented, where
 $\mathrm{Tor}(G)$ is the normal closure of the set of elements of finite order of $G$.
 

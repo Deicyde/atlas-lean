@@ -1,6 +1,6 @@
 # Recursive structure theorem for base phi expansions, part (A)
 
-**Recursive structure theorem for base phi expansions, part (A).** Let $n \ge 2$ and let $L_j$
+Let $n \ge 2$ and let $L_j$
 be the Lucas numbers; $k$ denotes a natural number, and base phi expansions are given as sets of
 positions of digits $1$.
 (I) If $1 \le k \le L_{2n-2} - 1$, $T$ is a base phi expansion of $L_{2n-1} + k$ and $S$ is a base

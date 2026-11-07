@@ -1,6 +1,6 @@
 # Summand of the increasing multiple-zeta series
 
-**Summand of the increasing multiple-zeta series.** Let $k = (k_0, \dots, k_{d-1})$ be an
+Let $k = (k_0, \dots, k_{d-1})$ be an
 index of depth $d$. To a strictly increasing tuple $m = (m_0, \dots, m_{d-1})$ of positive
 natural numbers it attaches the real number
 

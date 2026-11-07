@@ -1,6 +1,6 @@
 # Finitely many Brocard–Ramanujan solutions of polynomial shape
 
-**Finitely many Brocard–Ramanujan solutions of polynomial shape.** Let $k \ge 2$, $l \ge 2$
+Let $k \ge 2$, $l \ge 2$
 and $m \ge 1$ be natural numbers and let $P \in \mathbb{Z}[X_1, \ldots, X_m]$. Write
 $F_k P_l$ for the set of products $y z$ of a $k$-free number $y$ and a positive integer $z$
 with fewer than $l$ distinct prime divisors. Then there are only finitely many pairs $(n, x)$

@@ -1,3 +1,3 @@
 # Entries of a configuration encoding
 
-**Entries of a configuration encoding.** The `i`-th cell of the encoding.
+The `i`-th cell of the encoding.

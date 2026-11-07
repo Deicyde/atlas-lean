@@ -1,6 +1,6 @@
 # Rao's score test, known information
 
-**Rao's score test, known information.** Under the conditions of
+Under the conditions of
 `tendstoInDistribution_score` and `0 < I(θ₀)`, the score statistic
 `(n^{-1/2} ∑_{i<n} score p θ₀ (X i))² / I(θ₀)` converges in distribution to `χ²₁`.
 

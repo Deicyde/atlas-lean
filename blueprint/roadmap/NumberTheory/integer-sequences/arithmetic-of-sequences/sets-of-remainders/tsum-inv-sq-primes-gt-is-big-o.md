@@ -1,6 +1,6 @@
 # Tail of the sum of inverse prime squares
 
-**Tail of the sum of inverse prime squares.** As the natural number $n$ tends to infinity,
+As the natural number $n$ tends to infinity,
 the sum $\sum_{p > n,\ p \text{ prime}} 1/p^2$ of the inverse squares of the primes greater
 than $n$ is $O(1/(n \log n))$.
 

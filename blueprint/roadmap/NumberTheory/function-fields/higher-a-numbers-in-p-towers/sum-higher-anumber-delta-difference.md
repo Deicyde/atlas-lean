@@ -1,6 +1,6 @@
 # Sum of $\delta$ between the $\gamma$- and $\tau$-cutoffs
 
-**Sum of $\delta$ between the $\gamma$- and $\tau$-cutoffs.** Let $p$ be a prime, let $d$
+Let $p$ be a prime, let $d$
 be a divisor of $p - 1$ and let $r \ge 1$ be an integer. Write $\tau = (p + 1)/d$,
 $\gamma = ((p - 1) r + (p + 1))/d$ and $\tau_D$ for the denominator of $\tau$ in lowest terms;
 let $\delta$ be the rounding indicator, and for a rational $y$ let $L_y$ be the period, $D_y$

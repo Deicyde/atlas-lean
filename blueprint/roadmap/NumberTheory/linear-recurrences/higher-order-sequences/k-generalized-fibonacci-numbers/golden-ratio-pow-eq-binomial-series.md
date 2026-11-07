@@ -1,6 +1,6 @@
 # Binomial series for the powers of the golden ratio
 
-**Binomial series for the powers of the golden ratio.** Let $\varphi = (1 + \sqrt{5})/2$ be
+Let $\varphi = (1 + \sqrt{5})/2$ be
 the golden ratio, and for an integer $x$ and a natural number $j$ let
 $\binom{x}{j} = x(x-1)\cdots(x-j+1)/j!$. For every natural number $n \ge 1$ the series
 $S_n = \sum_{\ell \ge 0} \frac{1}{\ell + 1} \binom{3\ell + 2 - n}{\ell} 2^{-3\ell}$ converges

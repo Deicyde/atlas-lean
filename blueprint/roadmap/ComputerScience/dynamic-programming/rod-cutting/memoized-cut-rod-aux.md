@@ -1,6 +1,6 @@
 # Memoized rod-cutting auxiliary (CLRS MEMOIZED-CUT-ROD-AUX)
 
-**Memoized rod-cutting auxiliary (CLRS MEMOIZED-CUT-ROD-AUX).** Let $\alpha$ be an additive
+Let $\alpha$ be an additive
 commutative monoid with a linear order, let $p = (p_1, \dots, p_n) \in \alpha^n$ be prices, where
 $p_i$ is the price of a piece of length $i$, and let $c = (c_0, \dots, c_n)$ be a cache whose
 entries are each either unknown or a value in $\alpha$. For $j \le n$ the procedure returns a value

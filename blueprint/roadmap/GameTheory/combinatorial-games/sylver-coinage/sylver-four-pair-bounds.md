@@ -1,6 +1,6 @@
 # Conway's bounds for 4-pairs
 
-**Conway's bounds for 4-pairs.** Let $q$ and $x$ be odd natural numbers with $7 < q < x$ such
+Let $q$ and $x$ be odd natural numbers with $7 < q < x$ such
 that $\{4, x\}$ is an N-position and $\{4, x, q\}$ is a P-position of Sylver Coinage. Then
 $2q < x < 3q$.
 

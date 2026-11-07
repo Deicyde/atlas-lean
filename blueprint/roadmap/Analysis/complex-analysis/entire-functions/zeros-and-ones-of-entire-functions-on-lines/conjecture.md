@@ -1,6 +1,6 @@
 # Zeros and ones of an entire function on two distinct lines
 
-**Zeros and ones of an entire function on two distinct lines.** This is the statement that
+This is the statement that
 there exist an entire function $f : \mathbb{C} \to \mathbb{C}$ and two distinct straight lines
 $l \ne m$ in $\mathbb{C}$ such that every zero of $f$ lies on $l$, every solution of $f(z) = 1$
 lies on $m$, and $f$ has infinitely many zeros and infinitely many solutions of $f(z) = 1$. Here

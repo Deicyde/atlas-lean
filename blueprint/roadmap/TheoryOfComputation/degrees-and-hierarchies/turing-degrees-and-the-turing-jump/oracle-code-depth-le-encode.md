@@ -1,6 +1,6 @@
 # Depth is bounded by the code number
 
-**Depth is bounded by the code number.** For every oracle code $c$, the depth of $c$ is at most
+For every oracle code $c$, the depth of $c$ is at most
 the code number of $c$ under the Gödel numbering of oracle codes.
 
 ## Sources

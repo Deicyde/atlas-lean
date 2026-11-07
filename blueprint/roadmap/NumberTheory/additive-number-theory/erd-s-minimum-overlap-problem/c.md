@@ -1,3 +1,3 @@
 # Notation $C_{1b}$
 
-**Notation $C_{1b}$.** We write $C_{1b}$ for the continuous Erdős minimum-overlap constant.
+We write $C_{1b}$ for the continuous Erdős minimum-overlap constant.

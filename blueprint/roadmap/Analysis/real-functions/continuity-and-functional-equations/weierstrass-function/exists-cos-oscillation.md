@@ -1,6 +1,6 @@
 # Cosine oscillation (scaled form)
 
-**Cosine oscillation (scaled form).** For every real number $c$ and every positive integer
+For every real number $c$ and every positive integer
 $K$, there is a real number $y$ with $c + \pi / K < y < c + 3\pi / K$ such that
 $|\cos(Kc) - \cos(Ky)| \ge 1$.
 

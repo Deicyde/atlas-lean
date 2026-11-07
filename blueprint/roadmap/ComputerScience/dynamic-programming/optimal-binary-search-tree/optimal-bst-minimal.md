@@ -1,6 +1,6 @@
 # The optimal BST procedure finds the minimum expected search cost
 
-**The optimal BST procedure finds the minimum expected search cost.** Let $R$ be a linearly
+Let $R$ be a linearly
 ordered additive commutative monoid in which addition is monotone, let $n$ be a natural number,
 and let $p_0, \dots, p_{n-1}, q_0, \dots, q_n \in R$. Let $e$ be the cost table returned by the
 optimal binary search tree procedure on these weights. Then $e[0][n]$ is the least expected

@@ -1,6 +1,6 @@
 # Weighted Schreier count $a_{1,1}$
 
-**Weighted Schreier count $a_{1,1}$.** The weighted Schreier count $a_{1,1}$ equals $2$.
+The weighted Schreier count $a_{1,1}$ equals $2$.
 
 ## Sources
 

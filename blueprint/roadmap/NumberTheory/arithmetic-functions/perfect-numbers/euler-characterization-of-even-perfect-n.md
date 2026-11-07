@@ -1,6 +1,6 @@
 # Euler's theorem on even perfect numbers
 
-**Euler's theorem on even perfect numbers.** Every even perfect number $N$ is of the form
+Every even perfect number $N$ is of the form
 $N = 2^{p-1}(2^p - 1)$ for some natural number $p$ such that $p$ and $2^p - 1$ are both prime.
 
 ## Sources

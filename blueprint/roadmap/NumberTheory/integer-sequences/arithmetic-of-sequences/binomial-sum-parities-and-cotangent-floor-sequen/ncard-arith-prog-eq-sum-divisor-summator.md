@@ -1,6 +1,6 @@
 # Counting arithmetic progressions in $\{1, \dots, n\}$
 
-**Counting arithmetic progressions in $\{1, \dots, n\}$.** For every integer $n \ge 1$, the
+For every integer $n \ge 1$, the
 number of subsets $S \subseteq \{1, \dots, n\}$ with $|S| \ge 2$ that are arithmetic progressions,
 that is, $S = \{a, a + d, \dots, a + (|S| - 1)d\}$ for some natural numbers $a$ and $d \ge 1$,
 equals $\sum_{m=0}^{n-1} D(m)$, where $D(m) = \sum_{k=1}^{m} \lfloor m/k \rfloor$ (A078567,

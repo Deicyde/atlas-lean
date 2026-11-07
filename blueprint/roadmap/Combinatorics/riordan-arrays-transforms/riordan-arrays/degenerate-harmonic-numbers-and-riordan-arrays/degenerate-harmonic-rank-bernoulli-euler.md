@@ -1,6 +1,6 @@
 # Degenerate Bernoulli and Euler sums of higher-rank degenerate harmonic numbers
 
-**Degenerate Bernoulli and Euler sums of higher-rank degenerate harmonic numbers.** Let
+Let
 $\lambda > 0$ and $\alpha > 0$ be real and let $n \ge 1$ be an integer. Write $\beta_{k,\lambda}$
 and $\varepsilon_{k,\lambda}$ for the degenerate Bernoulli and Euler numbers,
 $H_{m,\lambda}(\alpha)$ for the generalized degenerate harmonic numbers, and

@@ -1,6 +1,6 @@
 # Position identities for the extended Pisa substitution
 
-**Position identities for the extended Pisa substitution.** Let $k \ge 1$, $l \ge 0$ and
+Let $k \ge 1$, $l \ge 0$ and
 $m \ge 1$ be natural numbers, let $\sigma$ be the substitution $a \mapsto a^k b a^l$,
 $b \mapsto a^m$, and let $w$ be a one-sided fixed point of $\sigma$ (so $\sigma(w) = w$) that
 begins with $a$. For an infinite word $v$ over $\{a, b\}$ and $n \ge 1$, let $p_a(n)$ and

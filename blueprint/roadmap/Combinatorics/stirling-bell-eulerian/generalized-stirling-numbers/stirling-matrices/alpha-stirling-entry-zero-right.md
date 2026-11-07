@@ -1,6 +1,6 @@
 # First column of the α-Stirling entries
 
-**First column of the α-Stirling entries.** Let $R$ be a commutative ring, let $\alpha$ be a
+Let $R$ be a commutative ring, let $\alpha$ be a
 sequence in $R$, and let $s_{i,j}$ ($i, j \ge 0$) be the α-Stirling entries of $\alpha$. Then
 $s_{i,0} = \alpha_1$ for every $i \ge 0$.
 

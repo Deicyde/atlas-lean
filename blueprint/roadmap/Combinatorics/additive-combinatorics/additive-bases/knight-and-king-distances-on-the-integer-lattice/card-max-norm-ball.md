@@ -1,6 +1,6 @@
 # Number of points in the max-norm ball
 
-**Number of points in the max-norm ball.** For every natural number $h$, the max-norm ball
+For every natural number $h$, the max-norm ball
 $B_h = \{(x, y) \in \mathbb{Z}^2 : \max(|x|, |y|) \le h\}$ has exactly $(2h+1)^2$ points.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Counting Leonardo $p$-tilings
 
-**Counting Leonardo $p$-tilings.** For all natural numbers $p \ge 1$ and $n$, let $K_{p,n}$ be
+For all natural numbers $p \ge 1$ and $n$, let $K_{p,n}$ be
 the set of linear tilings of an $n$-board by squares (length $1$), $p$-minos (length $p + 1$) and
 at most one $p$-tile, which comes in one of $p$ colors, has length at least $p + 1$ and can only
 be the initial piece. Then the number of tilings in $K_{p,n}$ equals the Leonardo $p$-number

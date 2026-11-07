@@ -1,6 +1,6 @@
 # Convergence in the $C^k$ topology on smooth metrics
 
-**Convergence in the $C^k$ topology on smooth metrics.** Let $M$ be a smooth manifold
+Let $M$ be a smooth manifold
 modelled on a real normed space $E$ through a model with corners $I$, let
 $k \in \mathbb{N} \cup \{\infty\}$, let $l$ be a filter on a type $\alpha$, and let $g_a$
 ($a \in \alpha$) and $g_0$ be smooth Riemannian metrics on $M$. For a chart $\varphi$ of the

@@ -1,6 +1,6 @@
 # The dense-to-binary translation on the reversed bit string
 
-**The dense-to-binary translation on the reversed bit string.** The function
+The function
 $\mathrm{conv}(w, \iota, n, k, m, o)$ consumes the bit string $w$ two bits at a time and prepends
 to the output bit string $o$. The truth value $\iota$ records whether a clause is open, $n$ counts
 the literals of the open clause, $k$ counts slots and $m$ counts clauses. Juxtaposition of bit

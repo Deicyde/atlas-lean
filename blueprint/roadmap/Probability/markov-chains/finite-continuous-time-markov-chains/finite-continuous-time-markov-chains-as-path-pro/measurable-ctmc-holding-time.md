@@ -1,3 +1,3 @@
 # Measurability of the holding times
 
-**Measurability of the holding times.** The holding time `S n` is a measurable function of the steps.
+The holding time `S n` is a measurable function of the steps.

@@ -1,6 +1,6 @@
 # Transfer-matrix formula for the domination polynomial of the torus
 
-**Transfer-matrix formula for the domination polynomial of the torus.** For all natural
+For all natural
 numbers $m$ and $n$ with $n \ge 1$, let $C_k$ denote the cycle graph on the vertices
 $0, \dots, k - 1$, in which distinct $i$ and $j$ are adjacent when $i - j \equiv \pm 1 \pmod k$,
 and let $\bar A$ be the domination transfer matrix of the row graph $C_m$. Then the domination

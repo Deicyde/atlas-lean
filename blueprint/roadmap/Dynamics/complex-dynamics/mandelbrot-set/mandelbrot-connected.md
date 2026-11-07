@@ -1,6 +1,6 @@
 # The Mandelbrot set is connected (Douady–Hubbard)
 
-**The Mandelbrot set is connected (Douady–Hubbard).** The Mandelbrot set, the set of all
+The Mandelbrot set, the set of all
 $c \in \mathbb{C}$ for which the sequence $(T_c^n(0))_{n \ge 0}$ of iterates of $0$ under
 $T_c(z) = z^2 + c$ is bounded, is a nonempty connected subset of $\mathbb{C}$.
 

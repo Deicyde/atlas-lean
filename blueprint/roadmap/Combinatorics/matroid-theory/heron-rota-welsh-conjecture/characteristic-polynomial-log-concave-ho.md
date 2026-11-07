@@ -1,6 +1,6 @@
 # Adiprasito–Huh–Katz theorem (Heron–Rota–Welsh conjecture)
 
-**Adiprasito–Huh–Katz theorem (Heron–Rota–Welsh conjecture).** For every finite matroid $M$
+For every finite matroid $M$
 on a ground set $E$ with rank function $r$, let $w_k(M)$ be the absolute value of the coefficient
 of $\lambda^{r(E) - k}$ in the characteristic polynomial
 $\chi_M(\lambda) = \sum_{I \subseteq E} (-1)^{|I|} \lambda^{r(E) - r(I)}$ when $k \le r(E)$, and

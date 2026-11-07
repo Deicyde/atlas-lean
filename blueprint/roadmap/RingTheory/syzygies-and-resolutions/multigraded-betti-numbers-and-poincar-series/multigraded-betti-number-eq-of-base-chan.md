@@ -1,6 +1,6 @@
 # Betti numbers do not depend on the choice of base change data
 
-**Betti numbers do not depend on the choice of base change data.** Let $K$ be a field,
+Let $K$ be a field,
 let $R = K[x_1, \dots, x_n]$, and let $M$ be a $\mathbb{Z}^n$-graded $R$-module with a fixed
 multigraded free resolution $P_\bullet \to M$. Any two choices of multigraded base change
 data for $P_\bullet$ define the same multigraded Betti numbers, in every multidegree

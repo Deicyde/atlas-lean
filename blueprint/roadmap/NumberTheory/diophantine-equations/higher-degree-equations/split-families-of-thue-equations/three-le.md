@@ -1,6 +1,6 @@
 # A split Thue recurrence family has at least three sequences
 
-**A split Thue recurrence family has at least three sequences.** If $(d, G, \gamma, \delta)$
+If $(d, G, \gamma, \delta)$
 is a split Thue recurrence family, then $d \ge 3$.
 
 ## Sources

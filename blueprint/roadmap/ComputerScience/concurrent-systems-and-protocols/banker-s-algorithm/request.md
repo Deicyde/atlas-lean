@@ -1,6 +1,6 @@
 # Resource-request algorithm
 
-**Resource-request algorithm.** Let $S$ be a system of claims and allocations with processes
+Let $S$ be a system of claims and allocations with processes
 $P$ and a finite set $R$ of resource types, let $a : R \to \mathbb{N}$ be the vector of free
 resources, $L$ a list of pending processes, $p$ a process and $r : R \to \mathbb{N}$ the
 resources that $p$ requests. The request is granted when $p$ occurs in $L$, $L$ has no

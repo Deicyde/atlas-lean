@@ -1,6 +1,6 @@
 # The congruence for $\binom{np}{kp}$ modulo $p^4$ via $\binom{2p}{p}$ alone
 
-**The congruence for $\binom{np}{kp}$ modulo $p^4$ via $\binom{2p}{p}$ alone.** Let
+Let
 $p \ge 7$ be a prime, let $k$ be a natural number and let $n$ be an integer. For an integer $x$
 and a natural number $r$ write $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$, and let $v_p$ be the
 $p$-adic valuation on $\mathbb{Q}$, with the convention $v_p(0) = 0$. Let

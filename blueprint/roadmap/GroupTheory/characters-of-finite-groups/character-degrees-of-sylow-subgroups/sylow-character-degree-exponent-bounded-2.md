@@ -1,6 +1,6 @@
 # Character degrees of Sylow subgroups are bounded in terms of those of the group
 
-**Character degrees of Sylow subgroups are bounded in terms of those of the group.** There is a
+There is a
 function $f \colon \mathbb{N} \to \mathbb{N}$ such that for every prime $p$, every finite group
 $G$ and every Sylow $p$-subgroup $P$ of $G$, $e_p(P) \le f(e_p(G))$, where $e_p(H)$ is the
 largest exponent of $p$ dividing an irreducible character degree of $H$.

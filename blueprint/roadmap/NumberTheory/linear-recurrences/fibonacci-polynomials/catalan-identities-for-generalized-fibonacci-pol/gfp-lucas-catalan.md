@@ -1,6 +1,6 @@
 # Catalan identity for Lucas-type generalized Fibonacci polynomials
 
-**Catalan identity for Lucas-type generalized Fibonacci polynomials.** Let $\alpha$ and $p_0$
+Let $\alpha$ and $p_0$
 be integers with $\alpha p_0 = 2$, let $p_1$ and $g$ be polynomials with integer coefficients, and
 put $d = \alpha p_1$. Let $L_n$ be the generalized Fibonacci polynomials defined by $L_0 = p_0$,
 $L_1 = p_1$ and $L_{n+2} = d L_{n+1} + g L_n$. Then for every natural number $n$,

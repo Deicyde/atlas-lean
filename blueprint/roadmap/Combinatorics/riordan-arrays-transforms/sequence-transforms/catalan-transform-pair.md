@@ -1,6 +1,6 @@
 # Barry's Catalan transform and its inverse
 
-**Barry's Catalan transform and its inverse.** Let $a, b \colon \mathbb{N} \to \mathbb{Q}$ be
+Let $a, b \colon \mathbb{N} \to \mathbb{Q}$ be
 sequences such that, for every $n \ge 0$,
 
 $$b_n = \sum_{j=0}^{n} \sum_{k=0}^{n} \frac{2k+1}{n+k+1} (-1)^{k-j}

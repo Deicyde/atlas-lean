@@ -1,6 +1,6 @@
 # Decomposable forms taking the values of a power on recurrence sequences
 
-**Decomposable forms taking the values of a power on recurrence sequences.** Let
+Let
 $\gamma_0, \dots, \gamma_{k-1} \in \mathbb{C}$, let $\chi(x) = x^k - \sum_{i\lt k} \gamma_i x^i$,
 and let $G^{(1)}, \dots, G^{(k)} \colon \mathbb{Z} \to \mathbb{C}$ be $\mathbb{C}$-linearly
 independent sequences, each satisfying $G_{n+k} = \sum_{i\lt k} \gamma_i G_{n+i}$ for every

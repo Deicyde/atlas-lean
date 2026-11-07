@@ -1,6 +1,6 @@
 # A Merkle–Damgård hash collision yields a compression collision
 
-**A Merkle–Damgård hash collision yields a compression collision.** Let
+Let
 $h : S \times B \to S$ be a compression function, $iv \in S$ an initial value and
 $\ell : \mathbb{N} \to B$ a length encoding, and let $H$ be the Merkle–Damgård hash with length
 strengthening they define. Write $|M|$ for the number of blocks of a list of blocks $M$. If $M$

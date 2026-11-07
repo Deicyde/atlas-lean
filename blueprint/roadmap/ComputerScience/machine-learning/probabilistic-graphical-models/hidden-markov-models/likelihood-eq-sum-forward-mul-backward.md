@@ -1,6 +1,6 @@
 # The likelihood from the forward and backward variables
 
-**The likelihood from the forward and backward variables.** Let $h$ be a hidden Markov model
+Let $h$ be a hidden Markov model
 with finite state set $S$ and weights in a semiring, and let $x_0, x_1, \dots$ be observations.
 Write $\alpha_t(s)$ for the forward variable (the weight of $x_0, \dots, x_t$ with the state at
 time $t$ equal to $s$) and $\beta_k(t, s)$ for the backward variable. Then for all

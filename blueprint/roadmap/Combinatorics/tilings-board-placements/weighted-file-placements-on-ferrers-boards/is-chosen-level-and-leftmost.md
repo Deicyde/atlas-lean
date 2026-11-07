@@ -1,6 +1,6 @@
 # The chosen level and its leftmost cell
 
-**The chosen level and its leftmost cell.** Let $m$ be a natural number and $F_0$ a finite set
+Let $m$ be a natural number and $F_0$ a finite set
 of cells $(i, r)$ (column $i$, row $r$), and call the rows $r$ with $\lfloor r/m \rfloor = l$
 level $l$ (for $m = 0$, every row lies in level $0$). A level $l$ and a cell $c_0$ are chosen for
 $F_0$ when level $l$ contains at least two cells of $F_0$; every level $l'$ containing at least

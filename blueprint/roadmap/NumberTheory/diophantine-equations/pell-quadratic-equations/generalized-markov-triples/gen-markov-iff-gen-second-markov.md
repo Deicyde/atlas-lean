@@ -1,6 +1,6 @@
 # The generalized Markov equation and the generalized second Markov equation
 
-**The generalized Markov equation and the generalized second Markov equation.** Let
+Let
 $k \in \mathbb{N}$ and let $a, b, c$ be rational numbers. Put $x = (3 + 3k)a - k$,
 $y = (3 + 3k)b - k$ and $z = (3 + 3k)c - k$. Then
 $a^2 + b^2 + c^2 + k(bc + ca + ab) = (3 + 3k)abc$ if and only if

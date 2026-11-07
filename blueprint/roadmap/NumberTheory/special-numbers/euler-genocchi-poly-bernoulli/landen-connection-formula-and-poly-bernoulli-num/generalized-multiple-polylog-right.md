@@ -1,6 +1,6 @@
 # Recurrence for appending the entry 1
 
-**Recurrence for appending the entry 1.** Let $g = (g_0, g_1, \dots, g_s)$ be Landen data and
+Let $g = (g_0, g_1, \dots, g_s)$ be Landen data and
 let $\beta, \gamma \in \mathbb{R}^s$. For every nonempty list $\mathbf{k} = (k_1, \dots, k_r)$ of
 natural numbers,
 $\mathrm{Li}_{(k_1, \dots, k_r, 1)}(g; (\beta, \gamma); z) =

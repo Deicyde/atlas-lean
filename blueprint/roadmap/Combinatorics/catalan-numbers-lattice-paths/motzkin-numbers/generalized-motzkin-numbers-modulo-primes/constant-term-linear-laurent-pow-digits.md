@@ -1,6 +1,6 @@
 # Lucas property for constant terms of powers of linear Laurent polynomials
 
-**Lucas property for constant terms of powers of linear Laurent polynomials.** Let $p$ be a
+Let $p$ be a
 prime, let $\alpha$, $\beta$, $\gamma$, $a$, $b$ be integers, and let $n$ be a natural number whose
 base-$p$ digits are $d_0, \dots, d_s$ (there are none when $n = 0$, and both products below are
 then $1$). Write $\operatorname{ct}(F)$ for the constant term of a Laurent polynomial $F$ and put

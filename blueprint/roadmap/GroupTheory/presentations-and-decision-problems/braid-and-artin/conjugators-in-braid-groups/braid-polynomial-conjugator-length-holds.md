@@ -1,6 +1,6 @@
 # Braid groups have polynomially short conjugators
 
-**Braid groups have polynomially short conjugators.** For $n \in \mathbb{N}$, let $B_{n+1}$ be
+For $n \in \mathbb{N}$, let $B_{n+1}$ be
 the braid group on $n + 1$ strands, realized as the Artin group of the Coxeter matrix of type
 $A_n$, with standard generators $\sigma_1, \dots, \sigma_n$. A braid word is an element of the
 free group on $\sigma_1, \dots, \sigma_n$, and its length $|u|$ is the length of its freely reduced

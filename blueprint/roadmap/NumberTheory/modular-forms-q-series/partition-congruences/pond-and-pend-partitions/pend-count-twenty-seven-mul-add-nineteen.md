@@ -1,6 +1,6 @@
 # Congruence modulo 3 for PEND partitions of 27n + 19
 
-**Congruence modulo 3 for PEND partitions of 27n + 19.** Let $\mathrm{pend}(m)$ be the
+Let $\mathrm{pend}(m)$ be the
 number of PEND partitions of $m$. For every natural number $n$,
 $\mathrm{pend}(27n + 19) \equiv 0 \pmod{3}$.
 

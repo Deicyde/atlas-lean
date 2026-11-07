@@ -1,6 +1,6 @@
 # Explicit time bound of the one-hot generator
 
-**Explicit time bound of the one-hot generator.** For a layout $L$ and natural numbers $T$ and
+For a layout $L$ and natural numbers $T$ and
 $H$, the explicit time bound of the one-hot generator is $p + (T + 1)(b + 1) + (T + 1) + 2$,
 where $p$ is the cost of its precomputation and $b$ the cost of one iteration of its time loop,
 both for $L$, $T$ and $H$.

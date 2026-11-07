@@ -1,6 +1,6 @@
 # Squaring the square with distinct squares
 
-**Squaring the square with distinct squares.** There are an integer $n > 1$ and real numbers
+There are an integer $n > 1$ and real numbers
 $x_i$, $y_i$ and $s_i > 0$ for $i = 1, \dots, n$, with the $s_i$ pairwise distinct, such that
 the union of the closed squares $[x_i, x_i + s_i] \times [y_i, y_i + s_i]$ is the unit square
 $[0, 1] \times [0, 1]$ and any two of these squares with different indices have disjoint

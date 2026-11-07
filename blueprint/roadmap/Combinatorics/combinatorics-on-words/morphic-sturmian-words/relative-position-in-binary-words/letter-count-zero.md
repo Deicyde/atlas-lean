@@ -1,6 +1,6 @@
 # The letter-counting function at zero
 
-**The letter-counting function at zero.** For every infinite binary word $w$ and every
+For every infinite binary word $w$ and every
 letter $\alpha$, $\#_\alpha(0) = 0$, where $\#_\alpha(m)$ is the number of letters $\alpha$ among
 the first $m$ letters of $w$.
 

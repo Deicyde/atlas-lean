@@ -1,6 +1,6 @@
 # The Wins-guided move at a diamond
 
-**The Wins-guided move at a diamond.** Let $M$ be a Kripke model, $\varphi$ a fixpoint-free
+Let $M$ be a Kripke model, $\varphi$ a fixpoint-free
 formula and $w$ a world in the backward-induction winning region of $\Diamond \varphi$. Then
 there is a successor $v$ of $w$ in $M$ lying in the backward-induction winning region of
 $\varphi$ such that the Wins-guided move at the position made of the embedding of

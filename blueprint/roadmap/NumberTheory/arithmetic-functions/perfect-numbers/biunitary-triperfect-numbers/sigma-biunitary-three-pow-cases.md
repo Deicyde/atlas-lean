@@ -1,6 +1,6 @@
 # Prime factors of the biunitary divisor sum of a power of $3$
 
-**Prime factors of the biunitary divisor sum of a power of $3$.** Let $f$, $t$ and $\eta$ be
+Let $f$, $t$ and $\eta$ be
 natural numbers with $\eta \in \{0, 1\}$ and $f = 2t - 1 - \eta$, suppose $f \ge 5$, and write
 $\sigma^{**}$ for the biunitary divisor sum. Then at least one of the following holds:
 (A) $\eta = 0$ and $\sigma^{**}(3^f)$ has a prime factor $p$ with $5 < p \le (3^t - 1)/2$;

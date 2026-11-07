@@ -1,6 +1,6 @@
 # Bernstein-type bound for the derivative of a band-limited Schwartz function
 
-**Bernstein-type bound for the derivative of a band-limited Schwartz function.** Let
+Let
 $s \in (\tfrac12, 1]$. For a Schwartz function $f : \mathbb{R} \to \mathbb{C}$ write
 $\hat f(\xi) = \int_{\mathbb{R}} f(x) e^{-2\pi i x\xi}\,dx$ for its Fourier transform and
 $\|f\|_{\dot H^s} = \left(\int_{\mathbb{R}} |\xi|^{2s} |\hat f(\xi)|^2\,d\xi\right)^{1/2}$ for

@@ -1,6 +1,6 @@
 # Thick set in a commutative semigroup
 
-**Thick set in a commutative semigroup.** A subset $A$ of a commutative semigroup $(S, +)$ is
+A subset $A$ of a commutative semigroup $(S, +)$ is
 thick when for every finite set $E \subseteq S$ there is an $x \in S$ with $E + x \subseteq A$,
 that is, $e + x \in A$ for every $e \in E$.
 

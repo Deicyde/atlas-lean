@@ -1,6 +1,6 @@
 # The Dumont–Thomas representation is increasing
 
-**The Dumont–Thomas representation is increasing.** Let $\eta$ be a substitution and let $u$
+Let $\eta$ be a substitution and let $u$
 be a two-sided periodic point of $\eta$ with least period $p$ whose seed letters $u_{-1}$ and
 $u_0$ are growing, that is, $|\eta^j(u_{-1})|$ and $|\eta^j(u_0)|$ tend to infinity with $j$.
 Let $n < n'$ be integers, and let $w$ and $w'$ be the Dumont–Thomas complement representations

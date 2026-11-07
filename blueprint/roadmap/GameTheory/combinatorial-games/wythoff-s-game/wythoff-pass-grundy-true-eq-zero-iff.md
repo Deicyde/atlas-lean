@@ -1,6 +1,6 @@
 # Away from the corner, P-positions with a pass are Wythoff's Grundy-one positions
 
-**Away from the corner, P-positions with a pass are Wythoff's Grundy-one positions.** Let
+Let
 $\mathcal{G}_1(x, y, p)$ be the Grundy numbers of Wythoff's game with a pass, where $p = 1$ means
 the pass is still available and $p = 0$ means it has been used, so that $\mathcal{G}_1(x, y, 0)$
 is the Grundy number of $(x, y)$ in classical Wythoff's game. If $x \ge 9$ or $y \ge 9$, then

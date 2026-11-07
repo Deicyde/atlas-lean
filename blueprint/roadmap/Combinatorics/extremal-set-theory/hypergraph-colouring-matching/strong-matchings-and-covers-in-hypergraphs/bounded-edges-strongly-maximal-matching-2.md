@@ -1,6 +1,6 @@
 # Bounded edge size does not guarantee a strongly maximal matching
 
-**Bounded edge size does not guarantee a strongly maximal matching.** There are a vertex set
+There are a vertex set
 $V$, a set $E$ of finite subsets of $V$ and a natural number $k$ such that every edge in $E$ has
 at most $k$ elements, but the hypergraph with edge set $E$ has no strongly maximal matching.
 

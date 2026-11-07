@@ -1,6 +1,5 @@
 # Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ having few prime factors are finite
 
-**Brocard–Ramanujan solutions with $x - 1$ or $x + 1$ having few prime factors are finite.**
 For every natural number $l \ge 2$, there are only finitely many pairs of natural numbers
 $(n, x)$ with $n! + 1 = x^2$ such that $x - 1$ or $x + 1$ has fewer than $l$ distinct prime
 divisors.

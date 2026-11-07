@@ -1,6 +1,6 @@
 # Positive solutions of the Collatz arithmetic differential equation are odd
 
-**Positive solutions of the Collatz arithmetic differential equation are odd.** Let $D$ be
+Let $D$ be
 the arithmetic derivative and $C$ the accelerated Collatz map. Every positive integer $n$ with
 $D(C(n)) = C(D(n))$ is odd.
 

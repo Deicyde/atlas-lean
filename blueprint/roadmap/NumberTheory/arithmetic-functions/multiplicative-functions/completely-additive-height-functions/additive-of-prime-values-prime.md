@@ -1,6 +1,6 @@
 # The completely additive extension at a prime
 
-**The completely additive extension at a prime.** For every function
+For every function
 $v : \mathbb{N} \to \mathbb{N}$ and every prime $p$, the completely additive function with prime
 values $v$ (which sends $m = \prod_q q^{a_q}$ to $\sum_q a_q\, v(q)$) takes the value $v(p)$
 at $p$.

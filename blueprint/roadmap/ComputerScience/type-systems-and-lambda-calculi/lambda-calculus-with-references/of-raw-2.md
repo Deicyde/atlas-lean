@@ -1,6 +1,6 @@
 # Typing is preserved by the embedding of raw STLC terms
 
-**Typing is preserved by the embedding of raw STLC terms.** Fix a type $B$ of base types,
+Fix a type $B$ of base types,
 and write $\iota$ for the embeddings of simple types and of raw terms of the simply typed
 lambda calculus over $B$ into types and terms of the calculus with references over $B$. Let
 $\Gamma$ be a context of simple types, $t$ a raw term and $A$ a simple type such that $t$ has

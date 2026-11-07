@@ -1,6 +1,6 @@
 # Keyed erasure removes exactly the entries with that key
 
-**Keyed erasure removes exactly the entries with that key.** The key of an entry is the pair
+The key of an entry is the pair
 $(\ell, i) \in \mathbb{Z} \times \mathbb{N}$ of its low endpoint $\ell$ and identifier $i$; keys are
 compared lexicographically. Let $T$ be an interval tree whose keys are strictly ordered (every key
 in a left subtree is lexicographically below its node's key and every key in a right subtree is

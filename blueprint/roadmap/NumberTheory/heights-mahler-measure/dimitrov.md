@@ -1,6 +1,6 @@
 # Dimitrov's lower bound for the house of an algebraic integer
 
-**Dimitrov's lower bound for the house of an algebraic integer.** Let $K$ be a number field
+Let $K$ be a number field
 and let $\alpha \in K$ be a nonzero algebraic integer that is not a root of unity. Let $d'$ be
 the number of distinct values of the argument $\arg \sigma(\alpha)$ as $\sigma$ ranges over the
 ring homomorphisms $K \to \mathbb{C}$. Then the house of $\alpha$, the maximum of

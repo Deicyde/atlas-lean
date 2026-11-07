@@ -1,6 +1,6 @@
 # Signed count of the compositions of zero
 
-**Signed count of the compositions of zero.** The only composition of $0$ is the empty one,
+The only composition of $0$ is the empty one,
 which has no parts and so is even. Hence the signed count of all compositions of $0$, the number
 of odd compositions minus the number of even ones, is $-1$.
 

@@ -1,6 +1,6 @@
 # Partial-sum characterization of binomid indices
 
-**Partial-sum characterization of binomid indices.** Let $\eta = (e_1, e_2, \dots)$ be a
+Let $\eta = (e_1, e_2, \dots)$ be a
 sequence of nonnegative integers with partial sums $s_n = e_1 + \dots + e_n$ (so $s_0 = 0$).
 Then $\eta$ is a binomid index if and only if $s_{n-k} + s_k \le s_n$ for all $k$ and $n$ with
 $1 \le k < n$. Moreover, for every $m$, if $\eta$ is the lex-minimal extension of its first $m$

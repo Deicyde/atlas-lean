@@ -1,6 +1,6 @@
 # Convergence in the $L^0$ pseudometric is convergence in measure
 
-**Convergence in the $L^0$ pseudometric is convergence in measure.** Let $f$ and
+Let $f$ and
 $f_0, f_1, f_2, \ldots$ be Borel measurable functions $\mathbb{R} \to \mathbb{R}$, and let $d$ be
 the pseudometric
 

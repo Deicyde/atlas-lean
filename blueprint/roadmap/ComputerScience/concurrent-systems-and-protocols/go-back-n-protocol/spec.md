@@ -1,6 +1,6 @@
 # Recursive CCS specification of go-back-N
 
-**Recursive CCS specification of go-back-N.** The specification assigns to every process
+The specification assigns to every process
 constant the choice, over the transitions listed for its state, of the prefixes $a.K$, where $a$
 is the label of the transition and $K$ is the process constant for its target state; an empty
 list gives the inactive process. The constants are those of the sender, the data channel, the

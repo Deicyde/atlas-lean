@@ -1,6 +1,5 @@
 # Submaximal upper bound for the ten-point Seshadri constant
 
-**Submaximal upper bound for the ten-point Seshadri constant.**
 The generic ten-point Seshadri constant of $\mathbb{P}^2$, in the affine-chart model, is at most
 $1/\sqrt{10}$.
 

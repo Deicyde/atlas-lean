@@ -1,6 +1,6 @@
 # Asymptotics of the $n$-th number with $k$ prime factors
 
-**Asymptotics of the $n$-th number with $k$ prime factors.** Let $k \ge 1$. For $n \ge 1$ let
+Let $k \ge 1$. For $n \ge 1$ let
 $p_{n,k}$ be the $n$-th squarefree natural number with exactly $k$ distinct prime factors, and let
 $q_{n,k}$ be the $n$-th natural number with exactly $k$ prime factors counted with multiplicity
 (that is, $\Omega(q_{n,k}) = k$). Then, as $n \to \infty$,

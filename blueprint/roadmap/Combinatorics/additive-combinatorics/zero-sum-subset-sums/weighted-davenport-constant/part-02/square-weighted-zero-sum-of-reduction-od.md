@@ -1,6 +1,6 @@
 # Square-weighted zero sums lift from $p$ to odd powers $p^r$
 
-**Square-weighted zero sums lift from $p$ to odd powers $p^r$.** Let $p \ge 2$ be a natural
+Let $p \ge 2$ be a natural
 number and $r$ an odd natural number. Write $S(m)$ for the set of nonzero squares in
 $\mathbb{Z}_m$. Let $x_1, \dots, x_k$ be a sequence in $\mathbb{Z}_{p^r}$ whose reduction
 $\bar x_1, \dots, \bar x_k$ modulo $p$ has an $S(p)$-weighted zero sum, that is, there are

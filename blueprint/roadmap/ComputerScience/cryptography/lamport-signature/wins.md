@@ -1,6 +1,6 @@
 # Winning the Lamport one-time forgery game
 
-**Winning the Lamport one-time forgery game.** Let $X$ be a nonempty finite set, $Y$ a set
+Let $X$ be a nonempty finite set, $Y$ a set
 with decidable equality, $f : X \to Y$ a function, and $\ell$ a message length; messages are bit
 strings $m = (m_0, \dots, m_{\ell-1})$. A one-time forger $A$ with random coins from a nonempty
 finite set $R$ wins against a secret key $sk$, which assigns $sk(i, b) \in X$ to each position

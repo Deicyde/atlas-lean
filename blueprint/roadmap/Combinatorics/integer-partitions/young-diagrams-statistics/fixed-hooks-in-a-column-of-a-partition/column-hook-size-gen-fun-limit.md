@@ -1,6 +1,6 @@
 # Limit of the fixed-hook generating functions
 
-**Limit of the fixed-hook generating functions.** Let $m \ge 2$ be a natural number and work
+Let $m \ge 2$ be a natural number and work
 in $\mathbb{Q}[[q]]$. For $j \in \mathbb{N}$ write $(q;q)_j = \prod_{i=1}^{j} (1 - q^i)$ and
 $(q^m;q)_j = \prod_{i=0}^{j-1} (1 - q^{m+i})$. Then for every natural number $n$ there is a $K$
 such that for every $k \ge K$ the coefficient of $q^n$ in

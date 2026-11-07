@@ -1,6 +1,6 @@
 # The golden factorial exponent exceeds the Lambert sequence
 
-**The golden factorial exponent exceeds the Lambert sequence.** Let $n > 4$ be an integer, let
+Let $n > 4$ be an integer, let
 $h(y) = y e^y$ be the Lambert map, and let $a$ be a real number with $a \ge n - 1$ and
 
 $$h\left(-\frac{a}{n-1}\right) = -\frac{1}{n-1}\left(\frac{4}{7}\right)^{1/(n-1)}.$$

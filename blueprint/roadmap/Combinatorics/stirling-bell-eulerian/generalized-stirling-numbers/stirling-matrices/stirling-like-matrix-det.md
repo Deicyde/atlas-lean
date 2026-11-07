@@ -1,6 +1,6 @@
 # Determinant of the Stirling-like matrix
 
-**Determinant of the Stirling-like matrix.** For a sequence
+For a sequence
 $\alpha \colon \mathbb{N} \to \mathbb{Q}$ and $j \ge 1$ let
 $\Omega(\alpha, j) = \sum_{l=0}^{j-1} (j-1)^{\underline{l}} \, \alpha_l$, where
 $m^{\underline{l}} = m(m-1)\cdots(m-l+1)$ is the falling factorial. Then for every

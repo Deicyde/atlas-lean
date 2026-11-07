@@ -1,6 +1,6 @@
 # Moment sequences of signed measures on the cube
 
-**Moment sequences of signed measures on the cube.** A real sequence $a$ indexed by
+A real sequence $a$ indexed by
 $\mathbb{N}^d$ is a moment configuration if there are finite measures $\mu$ and $\nu$ on
 $\mathbb{R}^d$ such that for every multi-index $n \in \mathbb{N}^d$,
 

@@ -1,6 +1,6 @@
 # Output distribution of the Fisher–Yates shuffle
 
-**Output distribution of the Fisher–Yates shuffle.** For a vector $x$ of length $n$, this is
+For a vector $x$ of length $n$, this is
 the probability distribution on outcomes (a vector of length $n$ together with a cost pair in
 $\mathbb{N} \times \mathbb{N}$) obtained by choosing a draw history $d$ uniformly at random among
 all assignments of a number $d_i$ with $0 \le d_i < n - i$ to each position $i < n$, and returning

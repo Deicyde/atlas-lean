@@ -1,6 +1,6 @@
 # Shade of the composition 4
 
-**Shade of the composition 4.** The one-part composition $4$ has shade $6$: its
+The one-part composition $4$ has shade $6$: its
 bargraph has $6$ shaded cells.
 
 ## Sources

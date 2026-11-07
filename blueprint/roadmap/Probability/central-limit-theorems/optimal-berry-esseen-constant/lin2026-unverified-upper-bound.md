@@ -1,6 +1,6 @@
 # Statement of Lin's 2026 Berry–Esseen bound
 
-**Statement of Lin's 2026 Berry–Esseen bound.** Let $C_0$ be the infimum of all
+Let $C_0$ be the infimum of all
 real $C$ such that for every real probability law $\mu$ with mean $0$, variance $1$ and finite
 third absolute moment $\rho = \int |x|^3\,d\mu$, and every integer $n \ge 1$, the distribution
 function $F_n$ of $(X_1 + \dots + X_n)/\sqrt{n}$, for independent $X_1, \dots, X_n$ with law

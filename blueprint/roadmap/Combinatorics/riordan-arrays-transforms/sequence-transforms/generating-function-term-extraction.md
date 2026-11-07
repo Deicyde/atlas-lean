@@ -1,6 +1,6 @@
 # Recovering a sequence term from its generating function
 
-**Recovering a sequence term from its generating function.** Let $t_0, t_1, t_2, \dots$ be
+Let $t_0, t_1, t_2, \dots$ be
 natural numbers and let $c$, $m$, $N$ be natural numbers with $c \ge 2$ and $2 \le m \le N$.
 Suppose that the real series $\sum_{k \ge 0} t_k \, (c^{-N})^k$ is summable and that
 $t_j < c^{j-2}$ for every $j \ge m$. Then

@@ -1,6 +1,6 @@
 # $\mathrm{PD}_2(16n + 12)$ is divisible by 4
 
-**$\mathrm{PD}_2(16n + 12)$ is divisible by 4.** Write $\mathrm{PD}_2(m)$ for the number of
+Write $\mathrm{PD}_2(m)$ for the number of
 partitions of $m$ with designated summands in which every part is odd. For every natural number $n$,
 $\mathrm{PD}_2(16n + 12) \equiv 0 \pmod 4$.
 

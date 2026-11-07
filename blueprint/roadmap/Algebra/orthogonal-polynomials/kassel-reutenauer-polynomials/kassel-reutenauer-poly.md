@@ -1,6 +1,6 @@
 # Kassel–Reutenauer polynomial
 
-**Kassel–Reutenauer polynomial.** For a natural number $n$, the Kassel–Reutenauer polynomial
+For a natural number $n$, the Kassel–Reutenauer polynomial
 $\bar P_n(X) \in \mathbb{Z}[X]$ is defined by
 
 $$

@@ -1,6 +1,6 @@
 # Disproof of Erdős Problem 1 on distinct subset sums
 
-**Disproof of Erdős Problem 1 on distinct subset sums.** There is no real number $C > 0$
+There is no real number $C > 0$
 such that for every natural number $N \ne 0$ and every finite set $A \subseteq \{1, \dots, N\}$
 whose distinct subsets have distinct sums, $C \cdot 2^{|A|} < N$.
 

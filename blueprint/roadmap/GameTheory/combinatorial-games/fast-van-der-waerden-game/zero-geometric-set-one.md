@@ -1,6 +1,6 @@
 # The zero-geometric set $S_2(1, k)$ is $\{0\}$
 
-**The zero-geometric set $S_2(1, k)$ is $\{0\}$.** For every rational number $k$, the
+For every rational number $k$, the
 zero-geometric set $S_2(1, k)$ equals $\{0\}$.
 
 ## Sources

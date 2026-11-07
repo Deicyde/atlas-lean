@@ -1,6 +1,6 @@
 # Scherk's identity with $s$-rising factorials
 
-**Scherk's identity with $s$-rising factorials.** Let $s$ be a real number and let $S(n, k)$
+Let $s$ be a real number and let $S(n, k)$
 be the generalized Stirling numbers of Hsu and Shiue with parameters $(-s, 1, 0)$: a real array
 with $S(0, 0) = 1$, $S(n, 0) = 0$ for $n \ge 1$, $S(n, k) = 0$ for $n < k$, and
 $S(n+1, k+1) = S(n, k) + (k + 1 + ns) \, S(n, k+1)$ for all $n, k \ge 0$. Let $N$ and $r$ be

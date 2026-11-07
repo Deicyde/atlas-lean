@@ -1,6 +1,6 @@
 # Indispensable digits
 
-**Indispensable digits.** Let $x = (x_0, \dots, x_{n-1})$ be a $b$-ary string of length $n$,
+Let $x = (x_0, \dots, x_{n-1})$ be a $b$-ary string of length $n$,
 written from left to right, and extend it by zero on the right, setting $x_j = 0$ for $j \ge n$.
 A position $p < n$ is indispensable in $x$ when there is a natural number $r$ with
 $1 \le r \le n + 1 - p$ such that $x_{p+t} = x_p$ for every $t$ with $1 \le t < r$, and

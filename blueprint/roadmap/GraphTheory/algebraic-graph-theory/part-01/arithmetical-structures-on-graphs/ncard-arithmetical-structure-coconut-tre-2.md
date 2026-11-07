@@ -1,6 +1,6 @@
 # Number of arithmetical structures on coconut trees
 
-**Number of arithmetical structures on coconut trees.** For $p \ge 1$ and $s \ge 2$, the number
+For $p \ge 1$ and $s \ge 2$, the number
 of arithmetical structures on the coconut tree $CT(p, s)$ is
 
 $$\sum_{j=0}^{s} \binom{s}{j} A(p + s - j, s - j),$$

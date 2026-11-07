@@ -1,6 +1,6 @@
 # Double integral of the Trollope–Delange fluctuation
 
-**Double integral of the Trollope–Delange fluctuation.** For a natural number $q$ and a real
+For a natural number $q$ and a real
 number $x$, let $F$ be the Trollope–Delange fluctuation in base $q$. Then $H(x)$ is the real number
 
 $$H(x) = \int_1^x \frac{1}{u} \left( \int_1^u \frac{F(\log v / \log q)}{v} \, dv \right) du,$$

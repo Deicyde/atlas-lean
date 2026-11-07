@@ -1,6 +1,6 @@
 # A value of the lower generalized Delannoy number
 
-**A value of the lower generalized Delannoy number.** The lower generalized Delannoy number
+The lower generalized Delannoy number
 $D_1(2, 2)$ equals $8$.
 
 ## Sources

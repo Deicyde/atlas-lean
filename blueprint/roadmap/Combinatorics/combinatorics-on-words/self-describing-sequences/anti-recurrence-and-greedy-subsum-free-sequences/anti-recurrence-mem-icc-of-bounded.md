@@ -1,6 +1,6 @@
 # Interval location of anti-recurrence numbers for bounded forms
 
-**Interval location of anti-recurrence numbers for bounded forms.** Let
+Let
 $a = (a_1, \dots, a_k)$ be a linear form with positive integer coefficients and $k > 1$, of trace
 $\tau = a_1 + \dots + a_k$, with anti-recurrence numbers $A_1, A_2, \dots$ and non-anti-recurrence
 numbers $B_1, B_2, \dots$, and let $\kappa = k\tau + 1$. Suppose that $a$ is $A_1$-bounded, that

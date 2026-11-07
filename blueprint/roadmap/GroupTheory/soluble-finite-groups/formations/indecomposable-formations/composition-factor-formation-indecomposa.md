@@ -1,6 +1,6 @@
 # Kourovka Problem 12.97 (Shemetkov)
 
-**Kourovka Problem 12.97 (Shemetkov).** For a group $T$, write $\mathfrak{F}_T$ for the class
+For a group $T$, write $\mathfrak{F}_T$ for the class
 of groups having a subnormal series all of whose factors are isomorphic to $T$. This is the
 proposition that, for every finite non-abelian simple group $T$ and all formations $\mathfrak{M}$
 and $\mathfrak{H}$ whose finite members lie in $\mathfrak{F}_T$, each containing a nontrivial

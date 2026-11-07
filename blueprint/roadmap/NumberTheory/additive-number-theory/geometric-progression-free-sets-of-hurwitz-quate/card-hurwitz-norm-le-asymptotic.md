@@ -1,6 +1,6 @@
 # Counting Hurwitz quaternions of bounded norm
 
-**Counting Hurwitz quaternions of bounded norm.** A Hurwitz quaternion is a quaternion whose
+A Hurwitz quaternion is a quaternion whose
 four rational coordinates are either all integers or all halves of odd integers; its norm is the
 sum of the squares of its coordinates. For a natural number $N$ let $S(N)$ be the set of nonzero
 Hurwitz quaternions of norm at most $N$.

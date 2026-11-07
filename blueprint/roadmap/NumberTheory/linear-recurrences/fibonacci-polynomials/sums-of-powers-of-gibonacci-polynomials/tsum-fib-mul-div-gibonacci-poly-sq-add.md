@@ -1,6 +1,6 @@
 # Gibonacci polynomial square sums at even multiples of the index
 
-**Gibonacci polynomial square sums at even multiples of the index.** Let $f_n$ and $l_n$
+Let $f_n$ and $l_n$
 denote the Fibonacci and Lucas polynomials, given by $f_0 = 0$, $f_1 = 1$, $l_0 = 2$, $l_1 = x$
 and $g_{n+2} = x g_{n+1} + g_n$ for $g \in \{f, l\}$, evaluated at a real number $x > 0$, and
 let $\alpha = (x + \sqrt{x^2 + 4})/2$. Let $g$ be $f$ with $(\mu, \nu) = (1, -1)$, or $l$ with

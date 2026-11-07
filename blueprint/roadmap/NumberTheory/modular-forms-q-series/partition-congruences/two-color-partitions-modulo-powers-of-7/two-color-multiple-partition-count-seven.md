@@ -1,6 +1,6 @@
 # Congruences for two-color partitions modulo powers of 7
 
-**Congruences for two-color partitions modulo powers of 7.** For all natural numbers $n$,
+For all natural numbers $n$,
 $\beta$ and $k \ge 1$, the two-color partition count $p_{1,\ell}$ satisfies
 
 $$

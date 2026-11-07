@@ -1,6 +1,6 @@
 # The polynomial hierarchy is contained in PSPACE
 
-**The polynomial hierarchy is contained in PSPACE.** Every decision problem in the polynomial
+Every decision problem in the polynomial
 hierarchy PH belongs to PSPACE.
 
 ## Sources

@@ -1,3 +1,3 @@
 # Action of the positive Wright–Fisher operator
 
-**Action of the positive Wright–Fisher operator.** Bundling the operator as positive leaves its action on continuous functions unchanged.
+Bundling the operator as positive leaves its action on continuous functions unchanged.

@@ -1,6 +1,6 @@
 # Existence of a Golod group with trivial centre
 
-**Existence of a Golod group with trivial centre.** Kourovka 11.101 (A. V. Timofeenko), in the strong form proved: some Golod group has trivial
+Kourovka 11.101 (A. V. Timofeenko), in the strong form proved: some Golod group has trivial
 centre (the problem asks for finite centre). A Golod group (9.76) is
 `⟨1 + x₁ + I, …, 1 + x_r + I⟩ ≤ 1 + F/I` for `r ≥ 2`, `F` the free associative algebra without
 constant term on `x₁, …, x_r` over a field of characteristic `p > 0` and `F/I` a non-nilpotent

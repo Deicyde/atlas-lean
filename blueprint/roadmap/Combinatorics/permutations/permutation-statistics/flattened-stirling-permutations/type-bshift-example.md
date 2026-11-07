@@ -1,6 +1,6 @@
 # An example of the shift map
 
-**An example of the shift map.** For the map $h(S) = \{|i| + 1 : i \in S\}$ on finite sets
+For the map $h(S) = \{|i| + 1 : i \in S\}$ on finite sets
 of integers, $h(\{-2, 0, 1\}) = \{1, 2, 3\}$.
 
 ## Sources

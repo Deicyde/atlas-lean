@@ -1,6 +1,6 @@
 # Number of odd parts in n-color partitions as a divisor sum
 
-**Number of odd parts in n-color partitions as a divisor sum.** For $i \ge 0$ let $A_o(i)$ be
+For $i \ge 0$ let $A_o(i)$ be
 the total number of odd parts (parts of odd size, counted with multiplicity) over the $n$-color
 partitions of $i$, and let $C(i)$ be the number of $n$-color partitions of $i$. Then for every
 $m \ge 1$,

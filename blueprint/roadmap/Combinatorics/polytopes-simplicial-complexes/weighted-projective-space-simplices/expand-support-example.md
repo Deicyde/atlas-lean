@@ -1,6 +1,6 @@
 # Example of support expansion
 
-**Example of support expansion.** Expanding the support values $r = (1, 3)$ with
+Expanding the support values $r = (1, 3)$ with
 multiplicities $x = (2, 1)$, that is, taking $2$ copies of $1$ followed by $1$ copy of $3$,
 gives the list $(1, 1, 3)$; in the notation $(r_1^{x_1}, r_2^{x_2})$ for this expansion,
 $(1^2, 3^1) = (1, 1, 3)$.

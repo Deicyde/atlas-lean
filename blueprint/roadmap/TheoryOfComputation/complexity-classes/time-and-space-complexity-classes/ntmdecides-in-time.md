@@ -1,6 +1,6 @@
 # Nondeterministic decision in bounded time
 
-**Nondeterministic decision in bounded time.** Let $M$ be a nondeterministic multi-tape
+Let $M$ be a nondeterministic multi-tape
 Turing machine over the boolean alphabet, $t : \mathbb{N} \to \mathbb{N}$ and $L$ a set of
 bitstrings. Then $M$ decides $L$ in time $t$ if, for every input $x$, every computation path of
 $M$ on $x$ with at least $t(|x|)$ steps ends in a halted configuration, where $|x|$ is the length

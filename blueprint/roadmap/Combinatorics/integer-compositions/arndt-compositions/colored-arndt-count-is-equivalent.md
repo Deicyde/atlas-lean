@@ -1,6 +1,6 @@
 # Asymptotics of colored Arndt compositions with $k$ parts
 
-**Asymptotics of colored Arndt compositions with $k$ parts.** For every fixed $k \ge 1$, the
+For every fixed $k \ge 1$, the
 number $c(n, k)$ of colored Arndt compositions of $n$ with $k$ parts satisfies
 $c(n, k) \sim \frac{n^{2k-1}}{2^{\lfloor k/2 \rfloor} (2k - 1)!}$ as $n \to \infty$.
 

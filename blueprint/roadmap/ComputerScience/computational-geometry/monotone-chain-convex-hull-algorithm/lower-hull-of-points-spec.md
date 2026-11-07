@@ -1,6 +1,6 @@
 # Correctness of the lower chain for unsorted input
 
-**Correctness of the lower chain for unsorted input.** Let $\Bbbk$ be a linearly ordered
+Let $\Bbbk$ be a linearly ordered
 field, let $P$ be a list of pairwise distinct points of $\Bbbk^2$ in any order, write $\preceq$
 for the lexicographic $(x, y)$ order on $\Bbbk^2$, and let $C = c_0, \dots, c_{m-1}$ be the
 lower chain of the list obtained by sorting $P$ into $\preceq$-increasing order. Write

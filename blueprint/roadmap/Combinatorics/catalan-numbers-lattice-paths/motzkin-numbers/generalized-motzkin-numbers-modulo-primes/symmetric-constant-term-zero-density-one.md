@@ -1,6 +1,6 @@
 # Density one for zeros of shifted combinations of central trinomial coefficients
 
-**Density one for zeros of shifted combinations of central trinomial coefficients.** Let
+Let
 $\alpha$ and $\beta$ be integers with $\alpha \neq 0$, and write $a_r$ for the generalized central
 trinomial coefficient with parameters $\alpha, \beta$, the constant term of
 $(\alpha x^{-1} + \beta + \alpha x)^r$. Let $p$ be a prime, let $h < p$ be a natural number, let

@@ -1,6 +1,6 @@
 # List model of breadth-first search
 
-**List model of breadth-first search.** Given a finite directed graph $G$ with ordered
+Given a finite directed graph $G$ with ordered
 adjacency lists and a source vertex $s$, the list model keeps a list of processed pairs and a
 queue of pairs $(v, d)$ of a vertex and a distance, starting with no processed pairs and the
 queue $[(s, 0)]$. It performs one round per vertex of $G$: if the queue is empty, nothing

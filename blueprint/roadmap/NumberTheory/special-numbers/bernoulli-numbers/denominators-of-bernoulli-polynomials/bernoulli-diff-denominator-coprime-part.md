@@ -1,6 +1,6 @@
 # Kellner's product $\mathbb{D}^\perp_n$ over primes not dividing $n$
 
-**Kellner's product $\mathbb{D}^\perp_n$ over primes not dividing $n$.** For
+For
 $n \in \mathbb{N}$, write $s_p(n)$ for the sum of the base-$p$ digits of $n$. The number
 $\mathbb{D}^\perp_n$ is the product of all primes $p$ with $p \nmid n$ and $s_p(n) \ge p$; every
 such prime satisfies $p \le n$.

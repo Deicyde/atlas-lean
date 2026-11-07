@@ -1,6 +1,6 @@
 # Multiple zeta value in the increasing convention
 
-**Multiple zeta value in the increasing convention.** Let $k = (k_0, \dots, k_{d-1})$ be an
+Let $k = (k_0, \dots, k_{d-1})$ be an
 index of depth $d$ that is admissible in the increasing convention. Its value in the increasing
 convention is the real number
 

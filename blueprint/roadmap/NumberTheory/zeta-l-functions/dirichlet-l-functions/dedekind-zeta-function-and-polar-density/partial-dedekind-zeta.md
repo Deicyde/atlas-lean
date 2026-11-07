@@ -1,6 +1,6 @@
 # Partial Dedekind zeta function
 
-**Partial Dedekind zeta function.** Let $K$ be a number field and $S$ a set of nonzero prime
+Let $K$ be a number field and $S$ a set of nonzero prime
 ideals of its ring of integers $\mathcal{O}_K$. For such a prime $\mathfrak{p}$ let
 $N(\mathfrak{p}) = |\mathcal{O}_K / \mathfrak{p}|$ be its absolute norm. The partial Dedekind zeta
 function of $S$ is the function $\zeta_{K,S} : \mathbb{C} \to \mathbb{C}$ given by the Euler product

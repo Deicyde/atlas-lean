@@ -1,3 +1,3 @@
 # Binomial probabilities sum to one
 
-**Binomial probabilities sum to one.** The binomial law sums to one (the binomial theorem), for every real `p`.
+The binomial law sums to one (the binomial theorem), for every real `p`.

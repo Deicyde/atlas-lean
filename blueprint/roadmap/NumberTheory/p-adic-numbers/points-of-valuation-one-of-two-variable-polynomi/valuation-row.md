@@ -1,6 +1,6 @@
 # Valuation row of a point
 
-**Valuation row of a point.** For $f \in \mathbb{Z}[x, y]$ with partial derivatives $f_x$ and
+For $f \in \mathbb{Z}[x, y]$ with partial derivatives $f_x$ and
 $f_y$, a natural number $p$ and a pair $(r, s)$ of natural numbers, the valuation row at $(r, s)$
 is the vector $(f_x(r, s), f_y(r, s), q)$ reduced modulo $p$, an element of
 $(\mathbb{Z}/p\mathbb{Z})^3$, where $q$ is $f(r, s)/p$ rounded down ($q = 0$ when $p = 0$).

@@ -1,6 +1,6 @@
 # Ramanujan's corollary to Entry 10 of Chapter 7
 
-**Ramanujan's corollary to Entry 10 of Chapter 7.** Call $x \in \mathbb{C}$ admissible if
+Call $x \in \mathbb{C}$ admissible if
 $j + 1 + x \neq 0$ for every natural number $j$. Let
 $\varphi : \mathbb{C} \to \mathbb{C} \to \mathbb{C}$ be such that, for every admissible $x$, the
 function $r \mapsto \varphi(r, x)$ is entire, and, for every $r \in \mathbb{C}$ with

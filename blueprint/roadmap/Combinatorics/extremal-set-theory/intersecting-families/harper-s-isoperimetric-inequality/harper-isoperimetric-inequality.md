@@ -1,6 +1,6 @@
 # Harper's isoperimetric inequality on the Hamming cube
 
-**Harper's isoperimetric inequality on the Hamming cube.** Let $n$ be a natural number. For
+Let $n$ be a natural number. For
 points $x, y \in \{0,1\}^n$, write $d_H(x, y)$ for the Hamming distance between them, the number
 of coordinates in which they differ. For a set $S \subseteq \{0,1\}^n$ and a natural number $t$,
 write $S_t$ for the set of points $x \in \{0,1\}^n$ with $d_H(x, s) \le t$ for some $s \in S$.

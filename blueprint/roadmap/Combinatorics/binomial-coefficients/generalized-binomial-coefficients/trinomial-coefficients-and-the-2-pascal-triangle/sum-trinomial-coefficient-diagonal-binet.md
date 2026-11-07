@@ -1,6 +1,6 @@
 # Binet-type formula for diagonal sums of trinomial coefficients
 
-**Binet-type formula for diagonal sums of trinomial coefficients.** Write $\binom{n}{k}_2$
+Write $\binom{n}{k}_2$
 for the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. Let $z, w \in \mathbb{C}$
 and let $r_1, r_2, r_3 \in \mathbb{C}$ be pairwise distinct with $r_1 + r_2 + r_3 = 2w$,
 $r_1 r_2 + r_1 r_3 + r_2 r_3 = 2w^2$ and $r_1 r_2 r_3 = z + w^3$, that is, let $r_1, r_2, r_3$

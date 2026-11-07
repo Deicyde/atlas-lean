@@ -1,6 +1,6 @@
 # Expansion of class functions in irreducible characters
 
-**Expansion of class functions in irreducible characters.** Let $G$ be a finite group, let
+Let $G$ be a finite group, let
 $f \colon G \to \mathbb{C}$ be a class function, and for each of the finitely many isomorphism
 classes $c$ of simple finite-dimensional complex representations of $G$ let $\chi_c$ be its
 character. Then

@@ -1,6 +1,6 @@
 # Generalized Landen connection formula
 
-**Generalized Landen connection formula.** Let $g = (g_0, g_1, \dots, g_s)$ be Landen data,
+Let $g = (g_0, g_1, \dots, g_s)$ be Landen data,
 where $g_0$ has rows $(1, -1)$ and $(c_0, d_0)$ and each $g_i$ ($1 \le i \le s$) has rows
 $(a_i, b_i)$ and $(c_i, d_i)$ with $a_i d_i - b_i c_i \ne 0$. Let $\tilde g$ be the transformed
 data: $\tilde g_0$ has rows $(1, -1)$ and $(-d_0, -c_0)$, and $\tilde g_i = M g_i$, where $M$ is

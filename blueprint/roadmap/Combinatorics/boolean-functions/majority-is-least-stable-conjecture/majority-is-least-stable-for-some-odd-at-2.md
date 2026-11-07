@@ -1,6 +1,6 @@
 # Majority Is Least Stable fails in every odd dimension at least five
 
-**Majority Is Least Stable fails in every odd dimension at least five.** For every odd natural
+For every odd natural
 number $n \ge 5$, the Majority Is Least Stable conjecture in $n$ variables fails: there are a
 linear threshold function $f : \{-1, 1\}^n \to \mathbb{R}$ and a real number $\rho$ with
 $0 \le \rho \le 1$ such that $\mathrm{Stab}_\rho[f] < \mathrm{Stab}_\rho[\mathrm{Maj}_n]$, where

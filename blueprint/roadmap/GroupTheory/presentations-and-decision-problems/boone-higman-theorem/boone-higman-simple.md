@@ -1,6 +1,6 @@
 # Kuznetsov's theorem on finitely presented simple groups
 
-**Kuznetsov's theorem on finitely presented simple groups.** Let $G$ be a simple group, let
+Let $G$ be a simple group, let
 $F_n$ be the free group on $n$ generators, and let $\varphi \colon F_n \to G$ be a surjective
 homomorphism whose kernel is the normal closure of finitely many elements. Then the word problem
 of $G$ with respect to $\varphi$ is solvable: there is an algorithm that decides, for every word

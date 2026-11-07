@@ -1,6 +1,6 @@
 # Candidate posterior kernel of the normal–normal model
 
-**Candidate posterior kernel of the normal–normal model.** Let $m_0 \in \mathbb{R}$ and
+Let $m_0 \in \mathbb{R}$ and
 $v_0, v \ge 0$, let $s = \frac{v_0 v}{v_0 + v}$ be the posterior variance and, for
 $x \in \mathbb{R}$, let $\mu(x) = \frac{v m_0 + v_0 x}{v_0 + v}$ be the posterior mean (with
 $0 / 0 = 0$). The kernel from $\mathbb{R}$ to $\mathbb{R}$ sends $x$ to the measure with density

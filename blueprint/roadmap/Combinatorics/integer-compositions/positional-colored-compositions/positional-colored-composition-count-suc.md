@@ -1,6 +1,6 @@
 # A recurrence for positional colored compositions
 
-**A recurrence for positional colored compositions.** For natural numbers $m$, $k$ and $\ell$
+For natural numbers $m$, $k$ and $\ell$
 with $m \ge 1$, $m \nmid k$ and $\ell \ge 1$,
 $c_{m,k+1}(\ell + 1) = c_{m,k+1}(\ell) + c_{m,k}(\ell)$.
 

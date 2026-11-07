@@ -1,6 +1,6 @@
 # The first modified degenerate Bernoulli polynomial
 
-**The first modified degenerate Bernoulli polynomial.** For all complex numbers $\lambda$ and
+For all complex numbers $\lambda$ and
 $x$, the modified degenerate Bernoulli polynomial $\mathfrak{B}_{1,\lambda}$ of index $1$ satisfies
 $\mathfrak{B}_{1,\lambda}(x) = x - 1/2$.
 

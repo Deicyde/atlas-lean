@@ -1,6 +1,6 @@
 # Euler's polyhedron formula
 
-**Euler's polyhedron formula.** Let $V$, $E$ and $F$ be finite sets, let
+Let $V$, $E$ and $F$ be finite sets, let
 $\iota : V \to \mathbb{R}^3$ be an injective map into Euclidean space, and let
 $P = \operatorname{conv} \iota(V)$ be the convex hull of its image; assume $P$ has nonempty
 interior $\operatorname{int} P$, and write $\partial P$ for its frontier. Each edge $e \in E$ has an

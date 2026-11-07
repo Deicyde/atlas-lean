@@ -1,6 +1,6 @@
 # Recurrence for incomplete Leonardo p-numbers
 
-**Recurrence for incomplete Leonardo p-numbers.** For natural numbers $p \ge 1$, $n > p$ and
+For natural numbers $p \ge 1$, $n > p$ and
 $k \le \lfloor n/(p+1) \rfloor$, the incomplete Leonardo $p$-numbers $\mathcal{L}_{p,m}(j)$
 satisfy
 

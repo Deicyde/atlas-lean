@@ -1,6 +1,6 @@
 # Members of a greedy $3$-subsumfree sequence below a bound
 
-**Members of a greedy $3$-subsumfree sequence below a bound.** For natural numbers $x$, $y$
+For natural numbers $x$, $y$
 and $z$ (the source takes $x < y < z$), let $S_{x,y,z}$ consist of $x$, $y$, $z$ and every natural
 number $n > z$ that is not a sum $a + b + c$ of members $a < b < c$ of $S_{x,y,z}$ smaller than
 $n$. This definition gives, for each natural number $m$, the finite set of members of $S_{x,y,z}$

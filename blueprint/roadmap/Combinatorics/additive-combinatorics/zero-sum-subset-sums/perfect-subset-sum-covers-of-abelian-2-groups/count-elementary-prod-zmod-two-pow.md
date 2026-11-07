@@ -1,6 +1,6 @@
 # Perfect covers of $(\mathbb{Z}_2)^m \oplus \mathbb{Z}_{2^n}$
 
-**Perfect covers of $(\mathbb{Z}_2)^m \oplus \mathbb{Z}_{2^n}$.** Write $C(K)$ for the number
+Write $C(K)$ for the number
 of perfect covers of a group $K$, and for natural numbers $m$ and $n$ let
 $b_{m,n} = C((\mathbb{Z}_2)^m \oplus \mathbb{Z}_{2^n})$. Then:
 for every $m \ge 0$, $C((\mathbb{Z}_2)^m) \cdot m! = \prod_{i=0}^{m-1} (2^m - 2^i)$;

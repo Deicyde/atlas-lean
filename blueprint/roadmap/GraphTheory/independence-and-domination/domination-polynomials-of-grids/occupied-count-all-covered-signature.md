@@ -1,6 +1,6 @@
 # The all-covered signature has no occupied vertex
 
-**The all-covered signature has no occupied vertex.** For every simple graph $R$ on a finite
+For every simple graph $R$ on a finite
 vertex set, the number of occupied vertices of the all-covered signature of $R$ is $0$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Lucas derivative
 
-**Lucas derivative.** For real numbers $\varphi$ and $\varphi'$, the Lucas derivative
+For real numbers $\varphi$ and $\varphi'$, the Lucas derivative
 $D_{\varphi,\varphi'}$ sends a function $f : \mathbb{R} \to \mathbb{R}$ to the function whose
 value at $x \ne 0$ is $(f(\varphi x) - f(\varphi' x))/((\varphi - \varphi')x)$, read as $0$ when
 $\varphi = \varphi'$, and whose value at $0$ is the derivative $f'(0)$, read as $0$ when $f$ is

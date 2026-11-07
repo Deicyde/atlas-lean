@@ -1,6 +1,6 @@
 # Odd numbers above 3 have a unique odd partner after 4
 
-**Odd numbers above 3 have a unique odd partner after 4.** For every odd natural number
+For every odd natural number
 $q > 3$ there is exactly one odd natural number $x$ such that $\{4, x\}$ is an N-position and
 $\{4, x, q\}$ is a P-position.
 

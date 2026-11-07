@@ -1,6 +1,6 @@
 # Snort on the knight's graph
 
-**Snort on the knight's graph.** For natural numbers $n \ge 1$ and $m \ge 1$, the
+For natural numbers $n \ge 1$ and $m \ge 1$, the
 second player wins Snort on the knight's graph of the $n \times m$ board (the Peaceable
 Knights game) if and only if $n$ is even or $m$ is even.
 

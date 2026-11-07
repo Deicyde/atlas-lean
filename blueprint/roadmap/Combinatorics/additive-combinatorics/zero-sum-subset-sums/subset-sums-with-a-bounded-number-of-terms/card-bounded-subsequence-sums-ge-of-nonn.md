@@ -1,6 +1,6 @@
 # Lower bound for bounded subsequence sums of a nonnegative sequence containing zero
 
-**Lower bound for bounded subsequence sums of a nonnegative sequence containing zero.** Let
+Let
 $m \ge 1$, let $t_0, \dots, t_m$ be positive integers, let $h = t_0 + \dots + t_m$, and let
 $\alpha, \beta$ be natural numbers with $1 \le \alpha$, $\beta \le h - 1$ and
 $\alpha + \beta \le h$. Put $\bar r = (h - \alpha - \beta + t_0, t_1, \dots, t_m)$. For integers

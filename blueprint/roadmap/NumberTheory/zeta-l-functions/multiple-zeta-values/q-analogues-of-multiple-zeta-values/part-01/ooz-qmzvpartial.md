@@ -1,6 +1,6 @@
 # Partial Ohno–Okuda–Zudilin sums
 
-**Partial Ohno–Okuda–Zudilin sums.** For an index $(k_1, \dots, k_r)$ of natural numbers and a
+For an index $(k_1, \dots, k_r)$ of natural numbers and a
 natural number $M$, the partial OOZ sum is the formal power series in $q$ over $\mathbb{Q}$
 
 $$\sum_{M > m_1 > \dots > m_r > 0} \prod_{j=1}^{r} \frac{1}{(1 - q^{m_j})^{k_j}},$$

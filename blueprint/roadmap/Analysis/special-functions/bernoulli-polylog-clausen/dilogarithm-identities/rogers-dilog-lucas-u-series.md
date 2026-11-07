@@ -1,6 +1,6 @@
 # Sanford's Lucas-sequence dilogarithm series for $Q > 0$
 
-**Sanford's Lucas-sequence dilogarithm series for $Q > 0$.** Write
+Write
 $L(x) = \sum_{m \ge 1} x^m/m^2 + \frac{1}{2} \log x \log(1 - x)$ for the Rogers dilogarithm on
 $[0, 1]$ (with $\log 0 = 0$). Let $(P, Q)$ be Lucas sequence parameters with $P > 0$, $Q > 0$ and
 $D = P^2 - 4Q > 0$, let $U = U(P, Q)$ be the Lucas sequence, and put $\alpha = (P + \sqrt{D})/2$.

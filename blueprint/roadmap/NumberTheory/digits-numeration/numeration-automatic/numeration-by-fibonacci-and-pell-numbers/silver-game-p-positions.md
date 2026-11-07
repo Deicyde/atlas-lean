@@ -1,6 +1,6 @@
 # P-positions of the silver game
 
-**P-positions of the silver game.** Let $P_n$ be the Pell numbers and $H_n$ the Pell–Lucas
+Let $P_n$ be the Pell numbers and $H_n$ the Pell–Lucas
 numbers ($H_0 = H_1 = 1$, $H_{n+2} = 2H_{n+1} + H_n$). In the silver game a heap of $n$ tokens
 may be removed entirely when $n = \lfloor k(1 + \sqrt 2) \rfloor$ for some integer $k \ge 1$, and
 $i$ tokens may be removed from a heap of $n > i$ tokens, leaving $n - i$, when

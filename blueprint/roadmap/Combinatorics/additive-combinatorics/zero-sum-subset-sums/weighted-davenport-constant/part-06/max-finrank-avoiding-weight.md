@@ -1,6 +1,6 @@
 # Largest subspaces of $\mathbb{Z}_2^{m+a}$ with no vector of weight $m$
 
-**Largest subspaces of $\mathbb{Z}_2^{m+a}$ with no vector of weight $m$.** Let $a$ and $m$ be
+Let $a$ and $m$ be
 natural numbers with $m$ even and $2^a \le m$, and write $\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$.
 The largest dimension of a subspace of $\mathbb{Z}_2^{m+a}$ containing no vector with exactly $m$
 coordinates equal to $1$ is $m - 1$.

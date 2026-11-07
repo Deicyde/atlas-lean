@@ -1,6 +1,6 @@
 # Influence sets of wires
 
-**Influence sets of wires.** Given a list $ps$ of comparators on wires indexed by $\mathbb{N}$
+Given a list $ps$ of comparators on wires indexed by $\mathbb{N}$
 and an assignment $S$ of a finite set of natural numbers to each wire, the influence sets after
 $ps$ are computed by processing the comparators in order: a comparator $(i, j)$ replaces the
 current sets of both wires $i$ and $j$ by their union, and leaves the sets of all other wires

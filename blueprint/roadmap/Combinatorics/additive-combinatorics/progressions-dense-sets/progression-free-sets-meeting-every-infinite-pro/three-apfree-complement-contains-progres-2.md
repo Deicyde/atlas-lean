@@ -1,6 +1,6 @@
 # Erdős Problem 199 is false
 
-**Erdős Problem 199 is false.** There is a set $A \subseteq \mathbb{R}$ containing no three-term
+There is a set $A \subseteq \mathbb{R}$ containing no three-term
 arithmetic progression (no $x, y, z \in A$ with $x + z = 2y$ and $x \ne y$) such that for all reals
 $a$ and $d \ne 0$ some term $a + nd$, with $n$ a natural number, lies in $A$: the complement
 $\mathbb{R} \setminus A$ contains no infinite arithmetic progression $a, a + d, a + 2d, \dots$

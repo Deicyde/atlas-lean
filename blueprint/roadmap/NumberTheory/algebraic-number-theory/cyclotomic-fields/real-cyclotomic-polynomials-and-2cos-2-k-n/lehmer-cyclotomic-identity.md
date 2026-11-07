@@ -1,6 +1,6 @@
 # Lehmer's identity for the real cyclotomic polynomial
 
-**Lehmer's identity for the real cyclotomic polynomial.** Let $n > 2$ be a natural number, let
+Let $n > 2$ be a natural number, let
 $\psi_n$ be the real cyclotomic polynomial, let $\Phi_n \in \mathbb{Z}[X]$ be the $n$-th
 cyclotomic polynomial, and let $\varphi$ be Euler's totient function. Then in the ring
 $\mathbb{Z}[x, x^{-1}]$ of Laurent polynomials over $\mathbb{Z}$,

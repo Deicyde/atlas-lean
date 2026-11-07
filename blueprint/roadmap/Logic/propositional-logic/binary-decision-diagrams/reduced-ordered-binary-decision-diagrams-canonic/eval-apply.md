@@ -1,6 +1,6 @@
 # Apply computes the operation pointwise
 
-**Apply computes the operation pointwise.** For every binary Boolean operation
+For every binary Boolean operation
 $\mathrm{op}$, all binary decision diagrams $t_1$ and $t_2$, and every assignment $\sigma$ of
 Boolean values to the variables, the value under $\sigma$ of the diagram
 $\mathrm{apply}(\mathrm{op}, t_1, t_2)$ obtained from $t_1$ and $t_2$ by Bryant's apply operation

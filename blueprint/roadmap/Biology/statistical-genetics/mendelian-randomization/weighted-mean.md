@@ -1,3 +1,3 @@
 # Weighted mean
 
-**Weighted mean.** The weighted mean `∑ v_j a_j / ∑ v_j`.
+The weighted mean `∑ v_j a_j / ∑ v_j`.

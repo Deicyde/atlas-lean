@@ -1,6 +1,6 @@
 # Unfolding the reversed elementary symmetric function
 
-**Unfolding the reversed elementary symmetric function.** For every commutative semiring $R$,
+For every commutative semiring $R$,
 natural number $i$ and finite multiset $S$ of elements of $R$ with $n$ elements counted with
 multiplicity, the reversed elementary symmetric function satisfies
 $\hat\sigma_i(S) = \sigma_{n-i}(S)$, the elementary symmetric function of $S$ of degree $n - i$,

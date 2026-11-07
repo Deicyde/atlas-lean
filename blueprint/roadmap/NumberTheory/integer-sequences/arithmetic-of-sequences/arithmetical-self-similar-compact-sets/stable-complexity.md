@@ -1,6 +1,6 @@
 # Stable complexity
 
-**Stable complexity.** For a natural number $n$, let $\lVert m \rVert$ denote the integer
+For a natural number $n$, let $\lVert m \rVert$ denote the integer
 complexity of a positive integer $m$, with $\lVert 0 \rVert = 0$, and let $a$ be the least natural
 number such that $3^a n$ is stable, with $a = 0$ if there is none. The stable complexity of $n$
 is the integer $\lVert n \rVert_{\mathrm{st}} = \lVert 3^a n \rVert - 3a$.

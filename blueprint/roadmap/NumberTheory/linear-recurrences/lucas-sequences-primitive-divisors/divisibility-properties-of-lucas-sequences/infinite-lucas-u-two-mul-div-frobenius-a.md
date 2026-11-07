@@ -1,6 +1,6 @@
 # Frobenius and non-Frobenius pseudoprimes of the form $U_{2m}/P$
 
-**Frobenius and non-Frobenius pseudoprimes of the form $U_{2m}/P$.** Let $P$ and $Q$ be
+Let $P$ and $Q$ be
 integers forming a nondegenerate Lucas pair with $Q = \pm 1$, with $P$ odd if $Q = 1$, and let
 $(U_n)$ be the Lucas sequence $U(P, Q)$. Call $m$ admissible if it is an odd prime or a Lucas
 pseudoprime with parameters $P$ and $Q$. Then infinitely many natural numbers $N = |U_{2m}/P|$

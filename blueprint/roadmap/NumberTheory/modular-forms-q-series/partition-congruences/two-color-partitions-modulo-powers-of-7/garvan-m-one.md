@@ -1,6 +1,6 @@
 # Initial entries of the first row of Garvan's matrix
 
-**Initial entries of the first row of Garvan's matrix.** The first two entries of the first
+The first two entries of the first
 row of Garvan's matrix $(m_{i,j})$ are $m_{1,1} = 7$ and $m_{1,2} = 7^2 = 49$.
 
 ## Sources

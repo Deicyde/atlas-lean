@@ -1,6 +1,6 @@
 # Addition formula $2U_{m+n} = U_m V_n + V_m U_n$ for Lucas sequences
 
-**Addition formula $2U_{m+n} = U_m V_n + V_m U_n$ for Lucas sequences.** For all integers
+For all integers
 $P$ and $Q$ with $Q \neq 0$ and all natural numbers $m$ and $n$, the Lucas sequences
 $U_n = U_n(P, Q)$ and $V_n = V_n(P, Q)$ satisfy $2U_{m+n} = U_m V_n + V_m U_n$.
 

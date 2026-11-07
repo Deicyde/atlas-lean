@@ -1,6 +1,6 @@
 # Regular projections
 
-**Regular projections.** Let $L$ be a parametrized link; a parameter point of $L$ is a
+Let $L$ be a parametrized link; a parameter point of $L$ is a
 component of $L$ together with a parameter in $[0, 2\pi)$. The standard projection of $L$ to the
 plane, which forgets the third coordinate, is regular when the following hold: at every parameter
 point, the projection of the velocity vector of the component curve is nonzero; the double-point

@@ -1,6 +1,6 @@
 # Integrality of the derivative of a Bernoulli polynomial
 
-**Integrality of the derivative of a Bernoulli polynomial.** Let $n \ge 1$, let $B_m(x)$
+Let $n \ge 1$, let $B_m(x)$
 denote the $m$-th Bernoulli polynomial, write $s_p(n)$ for the sum of the base-$p$ digits of $n$,
 and let $\mathbb{D}^\perp_n$ be the product of the primes $p$ with $p \nmid n$ and
 $s_p(n) \ge p$. Then $B_n'(x)$ has integer coefficients if and only if $\mathbb{D}^\perp_n = 1$,

@@ -1,6 +1,6 @@
 # The Takagi function at dyadic rationals counts D-nodes (Coronado et al.)
 
-**The Takagi function at dyadic rationals counts D-nodes (Coronado et al.).** Let $k$ and $r$
+Let $k$ and $r$
 be natural numbers with $r \le 2^k$. Write $\tau(r / 2^k)$ for the Takagi value of the dyadic
 presentation $r / 2^k$, and $\delta(n)$ for the number of $D$-nodes of the divide-and-conquer
 tree on $n$ leaves, given by $\delta(1) = 0$, $\delta(2m) = 2 \delta(m)$ and

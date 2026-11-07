@@ -1,6 +1,6 @@
 # Accept-code clauses
 
-**Accept-code clauses.** Let $E$ be an encoding of a finite stack machine $M$ with $A_0$
+Let $E$ be an encoding of a finite stack machine $M$ with $A_0$
 (label, state) codes, let $c^\ast$ be the code that $E$ assigns to the halted label together with
 the initial state of $M$, and let $T, H \in \mathbb{N}$. In the layout of $E$ at height $H$, let
 $W$ be the row width, $V = (T + 1)W$ the number of variables, and $X[t, u] = tW + u$ the

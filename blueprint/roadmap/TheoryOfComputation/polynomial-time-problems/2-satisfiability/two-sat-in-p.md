@@ -1,6 +1,6 @@
 # 2-SAT is in P
 
-**2-SAT is in P.** The 2-SAT decision problem lies in the complexity class P.
+The 2-SAT decision problem lies in the complexity class P.
 
 ## Sources
 

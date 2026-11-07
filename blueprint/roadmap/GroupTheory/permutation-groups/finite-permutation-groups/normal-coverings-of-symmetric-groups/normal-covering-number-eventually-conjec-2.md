@@ -1,6 +1,6 @@
 # Refutation of the Bubboloni–Praeger–Spiga normal covering conjecture
 
-**Refutation of the Bubboloni–Praeger–Spiga normal covering conjecture.** It is not the case
+It is not the case
 that there is a natural number $N$ such that, for every $n \ge N$, the normal covering number
 $\gamma(S_n)$ of the symmetric group $S_n$ equals the Bubboloni–Praeger–Spiga conjectured value
 of $n$. In other words, the conjecture fails for arbitrarily large $n$.

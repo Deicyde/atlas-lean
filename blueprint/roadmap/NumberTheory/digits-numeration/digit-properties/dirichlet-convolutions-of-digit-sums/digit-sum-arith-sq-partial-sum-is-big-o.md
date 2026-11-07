@@ -1,6 +1,6 @@
 # Partial sums of the second digit-sum convolution
 
-**Partial sums of the second digit-sum convolution.** Let $q \ge 2$ be an integer, let
+Let $q \ge 2$ be an integer, let
 $s_q(n)$ be the sum of the base-$q$ digits of $n$, and let $s_q^{(2)} = s_q * s_q$ be its
 Dirichlet square, so $s_q^{(2)}(n) = \sum_{de = n} s_q(d) \, s_q(e)$. Then
 

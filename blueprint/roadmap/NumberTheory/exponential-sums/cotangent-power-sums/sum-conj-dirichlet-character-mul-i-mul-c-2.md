@@ -1,6 +1,6 @@
 # Girstmair's cotangent power sums, even case
 
-**Girstmair's cotangent power sums, even case.** Let $n \ge 2$, let $r \ge 2$ be even, and let
+Let $n \ge 2$, let $r \ge 2$ be even, and let
 $\chi$ be a complex Dirichlet character modulo $n$ with $\chi(-1) = 1$. Let $f$ be the conductor
 of $\chi$, $\chi_f$ the primitive character modulo $f$ attached to $\chi$, and $c_{r,j}$
 Girstmair's cotangent power coefficients. Write

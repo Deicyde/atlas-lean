@@ -1,6 +1,6 @@
 # A predicate is recognizable iff it one-one reduces to the halting set
 
-**A predicate is recognizable iff it one-one reduces to the halting set.** Let $\alpha$ be a
+Let $\alpha$ be a
 type with a primitive recursive encoding into $\mathbb{N}$ and let $p$ be a predicate on $\alpha$.
 Here the halting set is the set of $n \in \mathbb{N}$ such that the partial recursive function
 with code number $n$ halts on input $0$. Then $p$ is recognizable (recursively enumerable: the

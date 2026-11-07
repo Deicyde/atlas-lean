@@ -1,6 +1,6 @@
 # $k$-generalized Pell–Lucas numbers
 
-**$k$-generalized Pell–Lucas numbers.** For natural numbers $k$ and $n$, the $k$-generalized
+For natural numbers $k$ and $n$, the $k$-generalized
 Pell–Lucas number $Q^{(k)}_n$ is the natural number defined by $Q^{(k)}_0 = Q^{(k)}_1 = 2$ and
 
 $$Q^{(k)}_{n+2} = 2 Q^{(k)}_{n+1} + \sum_{j} Q^{(k)}_{n-j},$$

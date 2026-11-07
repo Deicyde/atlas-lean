@@ -1,6 +1,6 @@
 # Quadratic packing polynomial
 
-**Quadratic packing polynomial.** A real function $P(x, y)$ of two real variables is a
+A real function $P(x, y)$ of two real variables is a
 quadratic packing polynomial (QPP) on a set $S \subseteq \mathbb{R}^2$ if it is a polynomial of
 total degree two, that is, $P(x, y) = a x^2 + b x y + c y^2 + d x + e y + f$ for some real
 $a, b, c, d, e, f$ with $a, b, c$ not all zero, and $P$ maps $S$ bijectively onto the set

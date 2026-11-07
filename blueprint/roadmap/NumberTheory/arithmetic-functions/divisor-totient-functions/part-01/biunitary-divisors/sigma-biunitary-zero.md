@@ -1,6 +1,6 @@
 # The biunitary divisor sum of $0$
 
-**The biunitary divisor sum of $0$.** The sum $\sigma^{**}(0)$ of the biunitary divisors of $0$
+The sum $\sigma^{**}(0)$ of the biunitary divisors of $0$
 equals $0$.
 
 ## Sources

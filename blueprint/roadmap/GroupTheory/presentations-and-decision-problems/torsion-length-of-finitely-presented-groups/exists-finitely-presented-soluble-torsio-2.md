@@ -1,6 +1,6 @@
 # Finitely presented soluble groups of torsion length greater than two
 
-**Finitely presented soluble groups of torsion length greater than two.** Resolved true: the Kourovka Archive answers 19.23 "Yes, such groups exist"; Leary and Minasyan
+Resolved true: the Kourovka Archive answers 19.23 "Yes, such groups exist"; Leary and Minasyan
 (Theorem 2.14) construct polycyclic groups, which are finitely presented and soluble, of every
 torsion length `n ≥ 1`, in particular of torsion length `3`. Source: E. I. Khukhro and V. D. Mazurov
 (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49

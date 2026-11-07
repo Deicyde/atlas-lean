@@ -1,6 +1,6 @@
 # Ramanujan's closed form for $\int_0^x du/(1 + u^5)$ (Chapter 8, Entry 14(v))
 
-**Ramanujan's closed form for $\int_0^x du/(1 + u^5)$ (Chapter 8, Entry 14(v)).** Let $x$ be
+Let $x$ be
 a real number with $-1 < x < 4/(\sqrt5 + 1)$, and put $c_\pm = \sqrt{10 \pm 2\sqrt5}$ and
 
 $$Q(x) = \frac{1 + \tfrac12 x(\sqrt5 - 1) + x^2}{1 - \tfrac12 x(\sqrt5 + 1) + x^2}.$$

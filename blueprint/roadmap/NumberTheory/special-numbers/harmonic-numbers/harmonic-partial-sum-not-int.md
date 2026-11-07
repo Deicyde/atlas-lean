@@ -1,6 +1,6 @@
 # Sums of harmonic numbers starting from the second are not integers
 
-**Sums of harmonic numbers starting from the second are not integers.** For every natural number
+For every natural number
 $n \ge 2$, the sum $\sum_{\nu=2}^{n} H_\nu$ is not an integer, where
 $H_\nu = \sum_{j=1}^{\nu} 1/j$ is the $\nu$-th harmonic number, viewed as a rational number.
 

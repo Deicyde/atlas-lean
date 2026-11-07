@@ -1,6 +1,6 @@
 # Davenport constant of the Jacobi–Legendre weights
 
-**Davenport constant of the Jacobi–Legendre weights.** For a
+For a
 natural number $n$ and $A \subseteq \mathbb{Z}/n\mathbb{Z}$, let $D_A(n)$ denote the least positive
 integer $k$ such that every sequence $(x_1, \dots, x_k)$ in $\mathbb{Z}/n\mathbb{Z}$ has a
 nonempty set $J$ of indices and weights $a_i \in A$ for $i \in J$ with

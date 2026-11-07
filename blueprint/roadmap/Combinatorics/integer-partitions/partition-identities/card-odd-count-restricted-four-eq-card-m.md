@@ -1,6 +1,6 @@
 # Andrews–Lewis identity
 
-**Andrews–Lewis identity.** For every natural number $n$, the number of partitions of $n$ into
+For every natural number $n$, the number of partitions of $n$ into
 odd parts in which each part occurs at most three times equals the number of partitions of $n$
 into parts congruent to $1$ or $3$ modulo $4$ such that for no natural number $j \le n$ are both
 $4j + 1$ and $4j + 3$ parts.

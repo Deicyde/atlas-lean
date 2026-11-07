@@ -1,6 +1,6 @@
 # Product formulas for the sum of divisors
 
-**Product formulas for the sum of divisors.** Let $n \ne 0$ be a natural number, let
+Let $n \ne 0$ be a natural number, let
 $\sigma(n)$ be the sum of the divisors of $n$, and for each prime $p$ dividing $n$ let $k_p$ be
 the exponent of $p$ in $n$. Then, with products over the primes $p$ dividing $n$,
 

@@ -1,6 +1,6 @@
 # Prime ideals stay prime under denominator clearing
 
-**Prime ideals stay prime under denominator clearing.** Let $O$ and $B$ be commutative rings,
+Let $O$ and $B$ be commutative rings,
 let $B$ be an $O$-algebra whose structure map $f \colon O \to B$ is injective, let $\mathfrak p$
 be a prime ideal of $O$, and let $\mathfrak c$ be an ideal of $O$ with
 $\mathfrak c + \mathfrak p = O$ such that $f(x)\,b$ lies in the image of $f$ for every

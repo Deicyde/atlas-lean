@@ -1,6 +1,6 @@
 # Additive valuations scale by the ramification index
 
-**Additive valuations scale by the ramification index.** Let $A$ and $B$ be discrete
+Let $A$ and $B$ be discrete
 valuation rings, and let $B$ be an $A$-algebra that is torsion-free as an $A$-module and whose
 structure map $\varphi \colon A \to B$ is a local homomorphism. Let $v_A$ and $v_B$ be the
 normalized additive valuations of $A$ and $B$, with values in $\mathbb{N} \cup \{\infty\}$, and

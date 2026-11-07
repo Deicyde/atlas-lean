@@ -1,6 +1,6 @@
 # Williams: NEXP is not contained in ACC0
 
-**Williams: NEXP is not contained in ACC0.** Some decision problem lies in NEXP but not in
+Some decision problem lies in NEXP but not in
 $\mathsf{ACC}^0$.
 
 ## Sources

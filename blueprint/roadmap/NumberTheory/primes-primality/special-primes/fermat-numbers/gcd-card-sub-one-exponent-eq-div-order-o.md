@@ -1,6 +1,6 @@
 # The index of a residue and its multiplicative order
 
-**The index of a residue and its multiplicative order.** Let $p$ be a prime, let $g$ be a
+Let $p$ be a prime, let $g$ be a
 primitive root modulo $p$ (an element of $\mathbb{Z}/p\mathbb{Z}$ of multiplicative order
 $p - 1$), and let $a \in \mathbb{Z}/p\mathbb{Z}$. If $g^i = a$ for a natural number $i$, then
 $\gcd(p - 1, i) = (p - 1)/\operatorname{ord}_p(a)$, where $\operatorname{ord}_p(a)$ is the

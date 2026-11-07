@@ -1,6 +1,6 @@
 # CR-set
 
-**CR-set.** A subset $A$ of a commutative semigroup $(S, +)$ is a CR-set (combinatorially rich)
+A subset $A$ of a commutative semigroup $(S, +)$ is a CR-set (combinatorially rich)
 when for every natural number $n$, including $n = 0$, there is a natural number $r$ such that for
 every $r \times n$ matrix $(m_{ij})$ with entries in $S$ there are a nonempty set
 $\alpha \subseteq \{1, \ldots, r\}$ and an element $s \in S$ such that

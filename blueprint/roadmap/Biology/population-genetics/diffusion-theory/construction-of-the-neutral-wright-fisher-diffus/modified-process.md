@@ -1,3 +1,3 @@
 # Continuous modified Wright–Fisher process
 
-**Continuous modified Wright–Fisher process.** The concrete continuous process used by the final realization.
+The concrete continuous process used by the final realization.

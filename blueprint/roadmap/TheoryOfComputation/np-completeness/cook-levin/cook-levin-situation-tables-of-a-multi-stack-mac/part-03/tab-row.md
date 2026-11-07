@@ -1,6 +1,6 @@
 # The table-driven row update
 
-**The table-driven row update.** Fix an encoding $E$ of a finite TM2 machine, a row height $H$,
+Fix an encoding $E$ of a finite TM2 machine, a row height $H$,
 a situation $i$ and an old row $\mathrm{old}$ giving a code for each stack number $k$ and depth
 $j$. For a stack number $k$, write $p$ for the number of symbols situation $i$ leaves pushed on
 stack $k$ and $n$ for the number of original symbols it consumes from stack $k$. The updated row

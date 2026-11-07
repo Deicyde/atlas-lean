@@ -1,6 +1,6 @@
 # Duhamel's formula (variation of constants)
 
-**Duhamel's formula (variation of constants).** Let $E$ be a real Banach space, let
+Let $E$ be a real Banach space, let
 $A : E \to E$ be a bounded linear operator, let $b : \mathbb{R} \to E$ be continuous, and let
 $t_0 \in \mathbb{R}$ and $x_0 \in E$. Write $e^{sA}$ for the operator exponential and define
 $x : \mathbb{R} \to E$ by

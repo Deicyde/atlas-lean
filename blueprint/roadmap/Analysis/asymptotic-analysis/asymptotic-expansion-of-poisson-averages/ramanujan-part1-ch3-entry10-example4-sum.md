@@ -1,6 +1,6 @@
 # Summability of the harmonic Poisson series
 
-**Summability of the harmonic Poisson series.** Let $H_k = \sum_{j=1}^{k} 1/j$ be the $k$-th
+Let $H_k = \sum_{j=1}^{k} 1/j$ be the $k$-th
 harmonic number (so $H_0 = 0$). For every real $x$, the series
 $\sum_{k=0}^{\infty} e^{-x} x^k H_k / k!$ is summable.
 

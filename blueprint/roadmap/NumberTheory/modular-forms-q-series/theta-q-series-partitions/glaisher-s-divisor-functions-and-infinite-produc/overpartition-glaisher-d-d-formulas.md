@@ -1,6 +1,6 @@
 # Overpartition formulas for a divisor sum with odd cofactors
 
-**Overpartition formulas for a divisor sum with odd cofactors.** Let $n$ be a natural number.
+Let $n$ be a natural number.
 Write $\sigma(m)$ for the sum of the positive divisors of $m$, $\sigma(m/2)$ for $\sigma$
 evaluated at $m/2$ when $m$ is even and for $0$ when $m$ is odd, and $d_D(m)$ for the sum of the
 divisors $d$ of $m$ with $m/d$ odd, with $\sigma(0) = d_D(0) = 0$; let $\bar p(m)$ be the number

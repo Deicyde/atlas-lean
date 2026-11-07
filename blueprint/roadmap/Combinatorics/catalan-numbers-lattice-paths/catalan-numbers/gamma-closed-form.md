@@ -1,6 +1,6 @@
 # Closed form of the Eloe–Kublik gamma array
 
-**Closed form of the Eloe–Kublik gamma array.** Let $\gamma_{n,k}$, for natural numbers $n$ and
+Let $\gamma_{n,k}$, for natural numbers $n$ and
 $k$, be real numbers such that $\gamma_{n,0} = 1$ for every $n$, $\gamma_{2n-1,n} = 0$ for every
 $n \ge 1$, and
 

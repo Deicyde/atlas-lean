@@ -1,6 +1,6 @@
 # Length of the padded sequence from $1, \dots, N$
 
-**Length of the padded sequence from $1, \dots, N$.** Let $N$ be a natural number, and let
+Let $N$ be a natural number, and let
 $t = 196, 2087, 3201, 4315, 200, 32478, 118$ and $e = 27, 254, 524, 560, 20, 4547, 9$
 according as $N \equiv 0, 1, 2, 3, 4, 5, 6 \pmod 7$. Let $B$ be the sequence with $B(n) = 0$
 for $n \le 0$ and $B(i) = i$ for $1 \le i \le N$, continued by the recurrence

@@ -1,6 +1,6 @@
 # Block-matching lemma
 
-**Block-matching lemma.** Let $\alpha \in (0, 1)$ be irrational, let $x = \mathrm{SB}(\alpha)$
+Let $\alpha \in (0, 1)$ be irrational, let $x = \mathrm{SB}(\alpha)$
 be its Stern–Brocot representation, let $q = Q(x)$ be the image of $x$ under Hida's map $Q$ to
 sequences over $\{O_L, E_R, O_R, E_L\}$, and let $T(q)$ be the image of $q$ under Hida's map $T$
 to sequences over $\{L, M, R\}$; all sequences are indexed from $0$. Let $o(i)$ be the $i$-th

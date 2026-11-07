@@ -1,6 +1,6 @@
 # Admissible coefficients bound every standardized i.i.d. sequence
 
-**Admissible coefficients bound every standardized i.i.d. sequence.** Let $C$ be an admissible
+Let $C$ be an admissible
 Berry–Esseen coefficient. Let $X_0, X_1, X_2, \dots$ be measurable real random variables on a
 probability space $(\Omega, P)$ that are independent and identically distributed, with
 $\mathbb{E}[X_0] = 0$, $\operatorname{Var}(X_0) = 1$ and $\mathbb{E}|X_0|^3 < \infty$. Then for

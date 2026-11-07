@@ -1,6 +1,6 @@
 # Maximal ideals of a monogenic algebra over a local ring
 
-**Maximal ideals of a monogenic algebra over a local ring.** Let $A$ be a commutative local
+Let $A$ be a commutative local
 ring with maximal ideal $\mathfrak{m}$, and for $f \in A[X]$ write $\bar{f}$ for its image in
 $(A/\mathfrak{m})[X]$. Let $g \in A[X]$ and suppose that $A[X]/(g)$ is integral over $A$. Then an
 ideal $M$ of $A[X]/(g)$ is maximal if and only if there is a polynomial $q \in A[X]$ such that

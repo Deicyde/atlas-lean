@@ -1,6 +1,6 @@
 # Non-decreasing Dyck paths
 
-**Non-decreasing Dyck paths.** A Dyck path is non-decreasing when its valley heights (the
+A Dyck path is non-decreasing when its valley heights (the
 heights reached after the $D$ of each factor $DU$), read from left to right, form a
 non-decreasing sequence.
 

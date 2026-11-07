@@ -1,6 +1,6 @@
 # Large sets of grid cells with no $r \times r$ all-ones submatrix
 
-**Large sets of grid cells with no $r \times r$ all-ones submatrix.** For all natural numbers
+For all natural numbers
 $r \ge 2$ and $n \ge 1$ there is a set $S$ of cells of the $n \times n$ grid
 $\{0, \dots, n - 1\}^2$ with $|S| \ge \frac{1}{2} n^{2 - 2/(r+1)}$ that contains no $r \times r$
 all-ones submatrix: there are no sets $R, C \subseteq \{0, \dots, n - 1\}$ with $|R| = |C| = r$

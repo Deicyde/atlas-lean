@@ -1,6 +1,6 @@
 # A deadlocked set forces circular wait
 
-**A deadlocked set forces circular wait.** In a resource-allocation snapshot with
+In a resource-allocation snapshot with
 finitely many processes, if some set of processes is deadlocked, then the snapshot has circular
 wait: some process waits for itself through a chain of one or more wait-for edges.
 

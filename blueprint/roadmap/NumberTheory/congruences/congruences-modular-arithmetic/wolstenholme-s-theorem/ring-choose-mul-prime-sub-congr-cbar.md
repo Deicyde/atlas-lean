@@ -1,6 +1,6 @@
 # Congruence for $\binom{np}{kp}$ with the coefficients $\bar C_{ji}$
 
-**Congruence for $\binom{np}{kp}$ with the coefficients $\bar C_{ji}$.** Let $p$ be a prime,
+Let $p$ be a prime,
 let $m$ and $k$ be natural numbers with $m + 1 < p$, and let $n$ be an integer. For an integer
 $x$ and a natural number $r$ write $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$, and set
 $\binom{x}{r} = 0$ for negative $r$. Let

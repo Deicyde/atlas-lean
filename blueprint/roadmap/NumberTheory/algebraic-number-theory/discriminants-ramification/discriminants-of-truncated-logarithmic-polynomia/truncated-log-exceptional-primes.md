@@ -1,6 +1,6 @@
 # Exceptional primes for truncated logarithmic discriminants
 
-**Exceptional primes for truncated logarithmic discriminants.** For a natural number $m$, the
+For a natural number $m$, the
 exceptional set $E_m$ is the set of primes $\ell$ with $m\ell \equiv 1 \pmod 4$ such that the
 $\ell$-adic valuation of the auxiliary product $X(m)$ is positive or the $\ell$-adic valuation of
 the harmonic number $Y(m) = H_m = 1 + \frac{1}{2} + \dots + \frac{1}{m}$ is positive.

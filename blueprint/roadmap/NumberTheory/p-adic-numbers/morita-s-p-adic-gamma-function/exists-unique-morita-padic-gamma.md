@@ -1,6 +1,6 @@
 # Existence and uniqueness of Morita's p-adic gamma function
 
-**Existence and uniqueness of Morita's p-adic gamma function.** For every odd prime $p$
+For every odd prime $p$
 there is exactly one continuous function $\Gamma : \mathbb{Z}_p \to \mathbb{Z}_p$ that is a Morita
 $p$-adic gamma function, that is, $\Gamma(0) = 1$,
 $\Gamma(n) = (-1)^n \prod_{0 < j < n,\ p \nmid j} j$ for every positive integer $n$, and

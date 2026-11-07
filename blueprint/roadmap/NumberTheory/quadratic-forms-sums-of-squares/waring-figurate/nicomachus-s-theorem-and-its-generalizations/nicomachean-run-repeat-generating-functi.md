@@ -1,6 +1,6 @@
 # Generating functions for run-and-repeat Nicomachean sequences
 
-**Generating functions for run-and-repeat Nicomachean sequences.** For integers $j, m \ge 1$
+For integers $j, m \ge 1$
 let $\sigma(j, m)$ be the integer sequence $(1, 2, \ldots, j + 1, m, \ldots, m)$ in which $m$ is
 repeated $2j$ times, and let $\nu$ denote the Nicomachean defect. Call $j \ge 1$ admissible if
 $\nu(\sigma(j, m)) = 0$ for some integer $m \ge 1$, let $j_k$ be the $k$-th smallest admissible

@@ -1,6 +1,6 @@
 # The empty set is not thick
 
-**The empty set is not thick.** In a nonempty commutative semigroup, the empty set is not
+In a nonempty commutative semigroup, the empty set is not
 thick.
 
 ## Sources

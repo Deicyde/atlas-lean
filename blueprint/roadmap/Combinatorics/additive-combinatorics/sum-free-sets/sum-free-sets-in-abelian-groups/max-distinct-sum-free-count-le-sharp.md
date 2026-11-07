@@ -1,6 +1,6 @@
 # Sharp upper bound on maximal distinct sum-free sets
 
-**Sharp upper bound on maximal distinct sum-free sets.** Write $f^*_{\max}(G)$ for the number
+Write $f^*_{\max}(G)$ for the number
 of maximal distinct sum-free subsets of an abelian group $G$. There is a natural number $C$ such
 that for every real $\eta > 0$ there is $n_0$ with the following property. Let $r_1, r_2 \ge 0$
 with $r = r_1 + r_2 \ge 1$, let $\alpha_1, \dots, \alpha_{r_1} \ge 2$, let $K$ be a finite

@@ -1,6 +1,6 @@
 # DDH distinguisher from an ElGamal eavesdropper
 
-**DDH distinguisher from an ElGamal eavesdropper.** Let $G$ be a finite commutative group and
+Let $G$ be a finite commutative group and
 let $A$ be an eavesdropping adversary with coins in a finite nonempty type $R$. The distinguisher
 built from $A$ takes three elements $X, Y, Z \in G$ and coins consisting of $r \in R$ and a bit
 $b$. It lets $A$ choose messages $(m_0, m_1)$ from the public key $X$ and the coins $r$, gives $A$

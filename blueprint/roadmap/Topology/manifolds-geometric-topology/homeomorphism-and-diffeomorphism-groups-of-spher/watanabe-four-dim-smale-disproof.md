@@ -1,6 +1,6 @@
 # The four-dimensional Smale conjecture is false (Watanabe)
 
-**The four-dimensional Smale conjecture is false (Watanabe).** Write $S^4$ for the unit sphere
+Write $S^4$ for the unit sphere
 of $\mathbb{R}^5$ and let the orthogonal group $O(5)$ act linearly on it. There are an $n \ge 1$,
 a compact, Hausdorff, second-countable smooth manifold $X$ with boundary modelled on the
 $n$-dimensional half-space, with boundary $\partial X$, smooth maps

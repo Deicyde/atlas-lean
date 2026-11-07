@@ -1,6 +1,6 @@
 # Parity of the biunitary divisor sum
 
-**Parity of the biunitary divisor sum.** For every positive integer $n$, the biunitary divisor
+For every positive integer $n$, the biunitary divisor
 sum $\sigma^{**}(n)$ is odd if and only if $n = 2^k$ for some natural number $k$ (so $n = 1$ is
 included).
 

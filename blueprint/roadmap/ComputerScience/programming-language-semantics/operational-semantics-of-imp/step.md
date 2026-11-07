@@ -1,6 +1,6 @@
 # IMP small-step relation
 
-**IMP small-step relation.** The single-step relation $\to$ on IMP configurations is the
+The single-step relation $\to$ on IMP configurations is the
 smallest relation satisfying the following rules, for all variables $x$, arithmetic expressions
 $a$, Boolean expressions $b$, commands $c, c_1, c_1', c_2$ and states $\sigma, \sigma'$.
 Assignment: $(x := a, \sigma) \to (\mathtt{skip}, \sigma[x \mapsto v])$, where $v$ is the value

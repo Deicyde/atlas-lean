@@ -1,6 +1,6 @@
 # Integer affine maps of the plane
 
-**Integer affine maps of the plane.** For a $2 \times 2$ integer matrix $M$ with entries
+For a $2 \times 2$ integer matrix $M$ with entries
 $m_{ij}$ and an integer vector $u = (u_1, u_2) \in \mathbb{Z}^2$, the map
 $T_{M,u} : \mathbb{R}^2 \to \mathbb{R}^2$ is
 $T_{M,u}(x, y) = (m_{11} x + m_{12} y + u_1, m_{21} x + m_{22} y + u_2)$, that is,

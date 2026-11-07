@@ -1,6 +1,6 @@
 # ML estimate for contour integrals
 
-**ML estimate for contour integrals.** Let $f : \mathbb{C} \to \mathbb{C}$ and let
+Let $f : \mathbb{C} \to \mathbb{C}$ and let
 $\gamma : [0, 1] \to \mathbb{C}$ be a path from $a$ to $b$ which is continuously differentiable
 on $[0, 1]$, with derivative $\gamma'$ (one-sided at the endpoints). Let $M$ and $L$ be real
 numbers with $|f(\gamma(t))| \le M$ and $|\gamma'(t)| \le L$ for every $t \in [0, 1]$. If

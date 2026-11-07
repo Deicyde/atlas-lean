@@ -1,6 +1,6 @@
 # Almost additive functions agree almost everywhere with additive functions
 
-**Almost additive functions agree almost everywhere with additive functions.** Let
+Let
 $f : \mathbb{R} \to \mathbb{R}$ satisfy $f(x + y) = f(x) + f(y)$ for almost every
 $(x, y) \in \mathbb{R}^2$ with respect to Lebesgue measure on $\mathbb{R}^2$. Then there is a
 function $h : \mathbb{R} \to \mathbb{R}$ with $h(x + y) = h(x) + h(y)$ for all

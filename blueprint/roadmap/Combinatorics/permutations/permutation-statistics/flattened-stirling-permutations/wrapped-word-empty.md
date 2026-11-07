@@ -1,6 +1,6 @@
 # Wrapped word of the empty set
 
-**Wrapped word of the empty set.** The wrapped word $g(\emptyset)$ of the empty set is the
+The wrapped word $g(\emptyset)$ of the empty set is the
 empty word.
 
 ## Sources

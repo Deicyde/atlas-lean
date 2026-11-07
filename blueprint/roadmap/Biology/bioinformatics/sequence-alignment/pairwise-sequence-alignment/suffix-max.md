@@ -1,6 +1,6 @@
 # Suffix maximum of Needleman–Wunsch scores
 
-**Suffix maximum of Needleman–Wunsch scores.** Given a substitution score $\sigma$ and an
+Given a substitution score $\sigma$ and an
 integer gap score $g$, the suffix maximum of lists $xs$ and $ys$ is the maximum of the
 Needleman–Wunsch scores of all pairs $(u, v)$ with $u$ a suffix of $xs$ and $v$ a suffix of
 $ys$.

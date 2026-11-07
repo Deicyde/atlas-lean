@@ -1,6 +1,6 @@
 # Period and restricted period of Lucas sequences with $Q = 1$
 
-**Period and restricted period of Lucas sequences with $Q = 1$.** Let $U$ be the Lucas
+Let $U$ be the Lucas
 sequence with integer parameters $P$ and $Q = 1$, where the pair $(P, Q)$ is nondegenerate, and
 write $\pi(m)$ and $\rho(m)$ for the period and the restricted period of $U$ modulo $m$. Let
 $m \ge 2$. Then $\pi(m) = \rho(m)$ or $\pi(m) = 2\rho(m)$, and if $m = \ell^i$ for an odd prime

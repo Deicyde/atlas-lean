@@ -1,6 +1,6 @@
 # Formula products with an opposable first factor
 
-**Formula products with an opposable first factor.** Let $G$ and $H$ be graphs, let
+Let $G$ and $H$ be graphs, let
 $\varphi$ be a Boolean function of four truth values, and let $G \varphi H$ be the formula
 product, in which distinct pairs $(g_1, h_1)$ and $(g_2, h_2)$ are adjacent when $\varphi$ is
 true at the atoms $g_1g_2 \in E(G)$, $h_1h_2 \in E(H)$, $g_1 = g_2$, $h_1 = h_2$. Suppose that

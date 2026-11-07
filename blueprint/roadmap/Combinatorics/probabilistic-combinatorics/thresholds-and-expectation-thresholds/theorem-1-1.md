@@ -1,6 +1,6 @@
 # Thresholds versus fractional expectation-thresholds
 
-**Thresholds versus fractional expectation-thresholds.** Let $K$ be the universal real
+Let $K$ be the universal real
 constant still to be supplied. For every finite set $X$ and every increasing family $\mathcal F$
 of subsets of $X$ (closed under taking supersets) with $\ell(\mathcal F) \ge 2$, where
 $\ell(\mathcal F)$ is the size of a largest minimal element of $\mathcal F$,

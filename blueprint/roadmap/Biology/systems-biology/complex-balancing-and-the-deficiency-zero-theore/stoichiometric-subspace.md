@@ -1,3 +1,3 @@
 # Stoichiometric subspace
 
-**Stoichiometric subspace.** The stoichiometric subspace: the span of the reaction vectors `prod r - src r`.
+The stoichiometric subspace: the span of the reaction vectors `prod r - src r`.

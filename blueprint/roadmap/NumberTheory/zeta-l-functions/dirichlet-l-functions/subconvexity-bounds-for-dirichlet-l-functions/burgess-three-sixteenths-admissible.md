@@ -1,6 +1,6 @@
 # Burgess's bound for Dirichlet central values
 
-**Burgess's bound for Dirichlet central values.** The number $3/16$ is an admissible
+The number $3/16$ is an admissible
 conductor-aspect exponent for primitive Dirichlet characters: for every $\varepsilon > 0$ there are
 a real number $C > 0$ and a natural number $Q$ such that for every positive integer $q \ge Q$ and
 every primitive Dirichlet character $\chi$ modulo $q$, the analytically continued Dirichlet

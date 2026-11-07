@@ -1,6 +1,6 @@
 # Multiple binomial transform
 
-**Multiple binomial transform.** The binomial transform sends an integer sequence
+The binomial transform sends an integer sequence
 $(a_i)_{i \ge 0}$ to the sequence $(b_n)_{n \ge 0}$ given by
 $b_n = \sum_{i=0}^{n} \binom{n}{i} a_i$. For a natural number $r$, the $r$-fold binomial
 transform of $a$ is obtained by applying the binomial transform $r$ times in succession; the

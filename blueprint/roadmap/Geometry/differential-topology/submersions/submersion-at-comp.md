@@ -1,6 +1,6 @@
 # Composition of submersions at a point
 
-**Composition of submersions at a point.** Let $\mathbb{K}$ be a nontrivially normed field, let
+Let $\mathbb{K}$ be a nontrivially normed field, let
 $n \in \mathbb{N} \cup \{\infty, \omega\}$, and let $M$, $N$, $N'$ be $C^n$ manifolds without
 boundary over $\mathbb{K}$ modelled on Banach spaces. If $f : M \to N$ is a $C^n$ submersion at
 $x \in M$ and $g : N \to N'$ is a $C^n$ submersion at $f(x)$, then $g \circ f$ is a $C^n$

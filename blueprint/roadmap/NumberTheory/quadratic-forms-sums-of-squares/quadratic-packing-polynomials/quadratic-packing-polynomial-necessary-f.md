@@ -1,6 +1,6 @@
 # Step-difference form of a quadratic packing polynomial on a rational sector
 
-**Step-difference form of a quadratic packing polynomial on a rational sector.** Let $m, n$
+Let $m, n$
 be coprime positive integers, let $l = \gcd(m - 1, n)$, and let $P$ be a quadratic packing
 polynomial on the lattice points $I(n/m)$ of the sector of slope $n/m$ whose step difference
 for $m, n$ is a positive integer $k$. Then $n/l$ divides $l$, $k \equiv (m - 1)/l \pmod{n/l}$,

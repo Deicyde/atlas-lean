@@ -1,6 +1,6 @@
 # The verifier host embeds the component
 
-**The verifier host embeds the component.** Let $c$ be a component machine with stacks $c_X$
+Let $c$ be a component machine with stacks $c_X$
 and $c_W$, maps $g_X$ and $g_W$ from bits to the alphabets of $c_X$ and $c_W$, and labels
 $\mathit{start}$, $\mathit{yes}$ and $\mathit{no}$, and suppose that the statement of $c$ at
 $\mathit{yes}$ and the statement of $c$ at $\mathit{no}$ are the halt statement. Rename the labels

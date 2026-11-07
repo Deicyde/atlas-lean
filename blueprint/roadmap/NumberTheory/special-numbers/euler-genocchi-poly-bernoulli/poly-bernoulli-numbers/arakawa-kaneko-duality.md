@@ -1,6 +1,6 @@
 # Arakawa–Kaneko duality for poly-Bernoulli numbers
 
-**Arakawa–Kaneko duality for poly-Bernoulli numbers.** Let $S(n, r)$ denote the Stirling
+Let $S(n, r)$ denote the Stirling
 numbers of the second kind. For a natural number $n$ and an integer $k$, let $B_n^{(k)}$ be the
 poly-Bernoulli number given by Kaneko's explicit formula
 

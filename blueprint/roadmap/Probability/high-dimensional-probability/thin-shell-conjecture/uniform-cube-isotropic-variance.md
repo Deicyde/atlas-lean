@@ -1,6 +1,6 @@
 # The isotropic cube has normalized radius variance 4/5
 
-**The isotropic cube has normalized radius variance 4/5.** For every dimension $n \ge 1$, let
+For every dimension $n \ge 1$, let
 $\mu$ be the uniform probability measure on the cube $[-\sqrt{3}, \sqrt{3}]^n \subset \mathbb{R}^n$
 (Lebesgue measure restricted to the cube and divided by its volume). Then $\mu$ is isotropic
 log-concave (a probability measure with a log-concave Lebesgue density, mean $0$ and identity

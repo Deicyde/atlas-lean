@@ -1,6 +1,6 @@
 # Closed form for the total depth of symmetric valleys over compositions
 
-**Closed form for the total depth of symmetric valleys over compositions.** For $n \ge 0$,
+For $n \ge 0$,
 let $\operatorname{dsv}(n)$ be the sum, over all compositions $c$ of $n$, of the total depth of
 the symmetric valleys of the sequence of parts of $c$, and write $\omega_\pm = 1 \pm i\sqrt{3}$.
 Then, as complex numbers,

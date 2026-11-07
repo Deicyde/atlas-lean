@@ -1,6 +1,6 @@
 # Residues that are squares modulo $2^{2k-1}$ but not modulo $2^{2k}$
 
-**Residues that are squares modulo $2^{2k-1}$ but not modulo $2^{2k}$.** Let $k \ge 0$ and let
+Let $k \ge 0$ and let
 $x$ be an integer with $0 \le x < 2^{2k}$, where the exponents $2k - 1$ and $2k - 2$ are truncated
 at $0$. Then $x$ is a square modulo $2^{2k-1}$ but not a square modulo $2^{2k}$ if and only if
 $x = 2^{2k-1}$ or $x = 2^{2k-1} + 2^{2k-2}$.

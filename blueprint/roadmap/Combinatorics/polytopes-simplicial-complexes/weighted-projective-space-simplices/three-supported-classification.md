@@ -1,6 +1,6 @@
 # Classification of three-supported vectors satisfying the necessary condition
 
-**Classification of three-supported vectors satisfying the necessary condition.** For
+For
 $c, k, s \in \mathbb{N}$ and $x \in \mathbb{N}^3$, write $F_c(k, s; x)$ for the support triple of
 case $c$ with parameters $k, s$ in the three-supported classification. Let $r = (r_1, r_2, r_3)$
 and $x = (x_1, x_2, x_3)$ be triples of positive integers with $r_1 < r_2 < r_3$, and suppose that

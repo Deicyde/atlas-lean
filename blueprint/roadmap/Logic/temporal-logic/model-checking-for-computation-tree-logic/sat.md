@@ -1,6 +1,6 @@
 # Finite-state CTL model checking by structural recursion
 
-**Finite-state CTL model checking by structural recursion.** The set of states satisfying a CTL formula in a finite system,
+The set of states satisfying a CTL formula in a finite system,
 computed by structural recursion: atoms by filtering the valuation,
 `EX` by `preExistsFin`, `EU` and `EG` by the finite fixed points
 `eUntilFin` and `eGloballyFin`, and `AU` by complementing the

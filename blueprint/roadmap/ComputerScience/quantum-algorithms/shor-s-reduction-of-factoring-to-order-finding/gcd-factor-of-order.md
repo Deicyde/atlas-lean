@@ -1,6 +1,6 @@
 # Shor's order-to-factor reduction
 
-**Shor's order-to-factor reduction.** Let $N$, $a$ and $r$ be natural numbers with $N > 1$ and
+Let $N$, $a$ and $r$ be natural numbers with $N > 1$ and
 $a \ge 1$. Suppose $a^r \equiv 1 \pmod{N}$, $r$ is even, $a^{r/2} \not\equiv 1 \pmod{N}$ and
 $a^{r/2} \not\equiv -1 \pmod{N}$. Then $d = \gcd(a^{r/2} - 1, N)$, the value computed by the
 classical post-processing, is a nontrivial factor of $N$: $d$ divides $N$ and $1 < d < N$.

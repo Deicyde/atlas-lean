@@ -1,6 +1,6 @@
 # A subspace almost inside $A + A$ (Kelley–Meka)
 
-**A subspace almost inside $A + A$ (Kelley–Meka).** There are real constants $C > 0$ and
+There are real constants $C > 0$ and
 $E > 0$ such that for every $n \in \mathbb{N}$, every set $A \subseteq \mathbb{F}_2^n$ and all real
 numbers $\alpha$ and $\varepsilon$ with $\alpha > 0$, $0 < \varepsilon < 1$ and
 $|A| / 2^n = \alpha$, there is an additive subgroup $V$ of $\mathbb{F}_2^n$ whose codimension

@@ -1,6 +1,6 @@
 # Bipartitions into distinct parts
 
-**Bipartitions into distinct parts.** Let $\operatorname{pd}(m)$ be the number of partitions
+Let $\operatorname{pd}(m)$ be the number of partitions
 of $m$ into distinct parts. For a natural number $n$, $q(n)$ is the number of ordered pairs of
 partitions into distinct parts whose sizes add up to $n$, that is,
 $q(n) = \sum_{k=0}^{n} \operatorname{pd}(k) \operatorname{pd}(n-k)$.

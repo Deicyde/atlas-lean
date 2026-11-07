@@ -1,6 +1,6 @@
 # Exact Boyer–Moore cost when pattern and text repeat the same letter
 
-**Exact Boyer–Moore cost when pattern and text repeat the same letter.** Let $x$ be a letter
+Let $x$ be a letter
 of the alphabet $\{0, \dots, \sigma - 1\}$, let $m$ and $n$ be natural numbers with
 $0 < m \le n$, and write $x^k$ for the word of $k$ copies of $x$. The cost of the Boyer–Moore
 matcher with pattern $x^m$ and text $x^n$ equals $m + n + P + (m + 4)(n - m + 1)$, where $P$ is

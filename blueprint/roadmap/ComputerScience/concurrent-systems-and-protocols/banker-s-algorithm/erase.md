@@ -1,6 +1,6 @@
 # Removing a process from a safe sequence
 
-**Removing a process from a safe sequence.** Let $S$ be a system of processes with maximum
+Let $S$ be a system of processes with maximum
 claims and current allocations, let $w$ be a vector of free resources (a natural number for
 each resource type), and let $\sigma$ be a list of processes that is a safe sequence for $S$
 from $w$. If $p$ occurs in $\sigma$, then the list obtained from $\sigma$ by deleting the first

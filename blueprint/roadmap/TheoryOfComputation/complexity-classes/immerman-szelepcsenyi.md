@@ -1,6 +1,6 @@
 # Immerman-Szelepcsenyi theorem: NL = coNL
 
-**Immerman-Szelepcsenyi theorem: NL = coNL.** The complexity class NL is closed under
+The complexity class NL is closed under
 complementation: a decision problem $L$ belongs to NL if and only if its complement, the decision
 problem that is true exactly on the bitstrings where $L$ is false, belongs to NL.
 

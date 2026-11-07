@@ -1,6 +1,6 @@
 # Egyptian underapproximations with nondecreasing denominators
 
-**Egyptian underapproximations with nondecreasing denominators.** Let $\lambda$ be a real
+Let $\lambda$ be a real
 number and $a = (a_1, \dots, a_n)$ a tuple of natural numbers. Then $a$ is a nondecreasing
 underapproximation of $\lambda$ when $n \ge 1$, $\lambda > 0$, $a$ lies in
 $\mathcal{E}_n^{\le}$ (that is, $2 \le a_1 \le \dots \le a_n$), and

@@ -1,6 +1,6 @@
 # Skew Dyck paths of semilength $m$
 
-**Skew Dyck paths of semilength $m$.** For $m \in \mathbb{N}$, the skew Dyck paths of
+For $m \in \mathbb{N}$, the skew Dyck paths of
 semilength $m$ are the words of length $2m$ over $\{U, D, L\}$ that avoid the factors $UL$ and
 $LU$, have as many $U$s as $D$s and $L$s together, and have no prefix with more $D$s and $L$s
 together than $U$s.

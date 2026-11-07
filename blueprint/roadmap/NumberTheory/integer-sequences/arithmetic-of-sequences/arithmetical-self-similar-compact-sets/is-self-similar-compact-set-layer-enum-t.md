@@ -1,6 +1,6 @@
 # Limits between consecutive layers of a self-similar compact set
 
-**Limits between consecutive layers of a self-similar compact set.** Let $K$ be a
+Let $K$ be a
 self-similar compact set of module $\mu$ and ratio $\rho$, with layers
 $T_u = K^{(u)} \setminus K^{(u+1)}$ for $u \ge 0$, where $K^{(u)}$ is the $u$-th derived set of
 $K$. Suppose that for every $u$, $\alpha \mapsto T_u[\alpha]$ is a strictly decreasing map from

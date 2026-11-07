@@ -1,6 +1,6 @@
 # Correctness of the shift generator on one block
 
-**Correctness of the shift generator on one block.** Let $t < T$, assume the
+Let $t < T$, assume the
 well-formedness conditions for $N$ situations and stack height $H$, let $i < N$ and $k < K$,
 where $K$ is the number of stacks, and let $F$ be counter values satisfying the block-start
 conditions at time $t$. Then for every output $o$ and every Boolean state $v$, the generator,

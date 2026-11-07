@@ -1,6 +1,6 @@
 # Partial residue-field equivalence for complete finite DVR extensions
 
-**Partial residue-field equivalence for complete finite DVR extensions.** Let $A$ be a discrete
+Let $A$ be a discrete
 valuation ring, and write $\kappa(R)$ for the residue field of a local ring $R$. Let $B_1$ and $B_2$
 be discrete valuation rings that are finite $A$-algebras with local structure maps, complete and
 separated for their maximal-ideal-adic topologies, such that for $i = 1, 2$ the field

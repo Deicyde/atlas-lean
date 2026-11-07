@@ -1,6 +1,6 @@
 # Value at zero of the shifted Pell norm function
 
-**Value at zero of the shifted Pell norm function.** Let $D$, $\alpha$, $\beta$, $a$, $b$,
+Let $D$, $\alpha$, $\beta$, $a$, $b$,
 $i$ and $j$ be integers. Put $\varepsilon = \alpha + \beta \sqrt{D}$ and
 $\bar\varepsilon = \alpha - \beta \sqrt{D}$, let
 $u(x) = (\varepsilon^x + \bar\varepsilon^x) / 2$ and

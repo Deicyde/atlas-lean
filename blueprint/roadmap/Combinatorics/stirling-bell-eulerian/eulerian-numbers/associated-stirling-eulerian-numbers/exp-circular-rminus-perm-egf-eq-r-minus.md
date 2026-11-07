@@ -1,6 +1,6 @@
 # Logarithm of the generating function of permutations with short cycles
 
-**Logarithm of the generating function of permutations with short cycles.** Let $R$ be a
+Let $R$ be a
 commutative $\mathbb{Q}$-algebra, $x \in R$ and $r \ge 2$ an integer, and work with formal power
 series in $u$ over $R$. For a permutation $\sigma$ write $e(\sigma)$ for its number of excedances
 (points $i$ with $\sigma(i) > i$). Let

@@ -1,6 +1,6 @@
 # Counting $h$-full, $\ell$-free polynomials
 
-**Counting $h$-full, $\ell$-free polynomials.** Let $F$ be a finite field with $q$ elements,
+Let $F$ be a finite field with $q$ elements,
 let $h$ and $\ell$ be natural numbers with $0 < h < \ell$, let $\xi \in \mathbb{C}$ be a primitive
 $h$-th root of unity and let $\varepsilon > 0$. A monic polynomial $f$ over $F$ is $h$-full if
 $P^h \mid f$ for every monic irreducible $P$ dividing $f$, and $\ell$-free if $P^\ell \nmid f$ for

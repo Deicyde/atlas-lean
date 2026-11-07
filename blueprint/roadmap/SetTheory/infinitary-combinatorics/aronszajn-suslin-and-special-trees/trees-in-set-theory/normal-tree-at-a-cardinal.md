@@ -1,6 +1,6 @@
 # Normal tree at a cardinal
 
-**Normal tree at a cardinal.** Let κ be a cardinal and (α,≤) a well-founded partial order; for x∈α let rank(x) denote the rank
+Let κ be a cardinal and (α,≤) a well-founded partial order; for x∈α let rank(x) denote the rank
 of x in the well-founded relation <. α is a *normal tree at κ* if:
 
 \begin{enumerate}

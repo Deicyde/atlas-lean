@@ -1,6 +1,6 @@
 # Kozar's conjecture on the throwback sequence
 
-**Kozar's conjecture on the throwback sequence.** For a sequence
+For a sequence
 $Y = (Y_0, Y_1, Y_2, \dots)$ of natural numbers, the throwback step produces the sequence $Y'$
 with $Y'_i = Y_{i+1}$ for $i < Y_0$, $Y'_{Y_0} = Y_0$, and $Y'_i = Y_i$ for $i > Y_0$: the
 leading term $Y_0$ moves to index $Y_0$, the terms $Y_1, \dots, Y_{Y_0}$ shift one place to the

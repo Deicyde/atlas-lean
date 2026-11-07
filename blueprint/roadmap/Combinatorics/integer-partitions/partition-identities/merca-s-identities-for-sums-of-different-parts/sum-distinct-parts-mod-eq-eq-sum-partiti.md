@@ -1,6 +1,6 @@
 # Merca's identity for different parts in a residue class
 
-**Merca's identity for different parts in a residue class.** Let $m$, $r$ and $n$ be natural
+Let $m$, $r$ and $n$ be natural
 numbers with $r < m$, let $a_{r,m}(n)$ be the sum, over all partitions of $n$, of the different
 parts congruent to $r$ modulo $m$, each counted once per partition whatever its multiplicity, and
 let $p(k)$ be the number of partitions of $k$. Then

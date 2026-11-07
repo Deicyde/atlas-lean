@@ -1,6 +1,6 @@
 # Generating function of all Arndt compositions
 
-**Generating function of all Arndt compositions.** Let $A(x, y)$ be the formal power series
+Let $A(x, y)$ be the formal power series
 in $x$ over $\mathbb{Z}[y]$ whose coefficient of $x^n y^k$ is the number of Arndt compositions of
 $n$ with $k$ parts. Then
 

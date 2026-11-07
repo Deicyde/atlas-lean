@@ -1,6 +1,6 @@
 # Bennett's continuant identity for all integer indices
 
-**Bennett's continuant identity for all integer indices.** Let $x : \mathbb{Z} \to \mathbb{Z}$
+Let $x : \mathbb{Z} \to \mathbb{Z}$
 be an integer sequence and write $K_a(x)_b$ for its extended continuant of order $a$ with start
 index $b$. For all integers $k$, $\ell$, $m$, $n$,
 

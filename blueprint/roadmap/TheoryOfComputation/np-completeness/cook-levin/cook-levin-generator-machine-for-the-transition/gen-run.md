@@ -1,6 +1,6 @@
 # Correctness of the clause-family generator, with its explicit time bound
 
-**Correctness of the clause-family generator, with its explicit time bound.** Let $L$ be a
+Let $L$ be a
 layout, $\mathit{la}, \mathit{na} : \mathbb{N} \to \mathbb{N}$ and
 $\mathit{wa} : \mathbb{N}^3 \to \mathbb{N}$ tables, and $N, T, H \in \mathbb{N}$, and suppose the
 tables are well formed at height $H$ for every situation $i < N$. Start the generator for $L$,

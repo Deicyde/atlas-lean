@@ -1,6 +1,6 @@
 # Normal basis theorem for finite fields
 
-**Normal basis theorem for finite fields.** Let $K$ be a finite field that is an algebra over
+Let $K$ be a finite field that is an algebra over
 a finite field $F$. Then there is an element $\beta \in K$ whose images $\sigma(\beta)$, as $\sigma$
 ranges over the $F$-algebra automorphisms of $K$, are linearly independent over $F$ (as a family
 indexed by $\sigma$).

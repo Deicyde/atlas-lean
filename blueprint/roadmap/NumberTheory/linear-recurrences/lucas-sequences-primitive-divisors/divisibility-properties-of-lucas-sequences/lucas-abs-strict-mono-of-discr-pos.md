@@ -1,6 +1,6 @@
 # Growth and positivity of Lucas sequences with positive discriminant
 
-**Growth and positivity of Lucas sequences with positive discriminant.** Let $P, Q$ be
+Let $P, Q$ be
 integers with $P \neq 0$, $Q \neq 0$ and $D = P^2 - 4Q > 0$, and let $U = U(P, Q)$ and
 $V = V(P, Q)$ be the Lucas sequences. Then $|U_n| < |U_{n+1}|$ for every $n \ge 2$ and
 $|V_n| < |V_{n+1}|$ for every $n \ge 1$; if $P > 0$, then $U_n > 0$ for every $n \ge 1$ and

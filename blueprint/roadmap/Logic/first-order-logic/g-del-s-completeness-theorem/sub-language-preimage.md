@@ -1,6 +1,6 @@
 # Preimage of a finite set of formulas in its sublanguage
 
-**Preimage of a finite set of formulas in its sublanguage.** Let $L$ be a first-order
+Let $L$ be a first-order
 language. For a finite set $F$ of formulas of $L$ with free variables in $\mathbb{N}$, this is
 the set of those formulas $\psi_0$ of the sublanguage of $L$ on the symbols occurring in $F$,
 with free variables in $\mathbb{N}$, whose image under the inclusion of that sublanguage into

@@ -1,6 +1,6 @@
 # The generating function at $s = 0$
 
-**The generating function at $s = 0$.** Let $\mu$ be a measure on $\Omega$ and let
+Let $\mu$ be a measure on $\Omega$ and let
 $X : \Omega \to \mathbb{N}$ be measurable. Then the probability generating function
 $G_X(s) = \int_\Omega s^{X(\omega)} \, d\mu(\omega)$ of $X$ under $\mu$ satisfies
 $G_X(0) = \mu(\lbrace \omega : X(\omega) = 0 \rbrace)$, where the measure of the event is read as

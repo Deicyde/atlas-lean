@@ -1,6 +1,6 @@
 # Erdős Problem 869 is false (Larsen)
 
-**Erdős Problem 869 is false (Larsen).** There are disjoint sets $A_1$ and $A_2$ of natural
+There are disjoint sets $A_1$ and $A_2$ of natural
 numbers, both additive bases of order $2$, such that no subset of $A_1 \cup A_2$ is a minimal
 additive basis of order $2$.
 

@@ -1,6 +1,6 @@
 # The matrix $S$ of the generalized Cohn triple relation
 
-**The matrix $S$ of the generalized Cohn triple relation.** For a natural number $k$, $S$
+For a natural number $k$, $S$
 is the $2 \times 2$ integer matrix
 
 $$S = \begin{pmatrix} k & 0 \\ 3k^2 + 3k & k \end{pmatrix}.$$

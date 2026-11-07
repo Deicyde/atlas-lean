@@ -1,6 +1,6 @@
 # Outsiders without soulmate pairs
 
-**Outsiders without soulmate pairs.** Let $n$ and $k$ be natural numbers, where $n - k$ is
+Let $n$ and $k$ be natural numbers, where $n - k$ is
 read as $0$ when $k > n$. Consider the $n - k$ men $k, \dots, n - 1$ and the $n - k$ women
 $k, \dots, n - 1$ among $n$ men and $n$ women numbered from $0$, where each of these men ranks all
 $n$ women and each of these women ranks all $n$ men. The number of ways to choose these rankings

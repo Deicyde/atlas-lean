@@ -1,6 +1,6 @@
 # Razborov-Rudich: the natural proofs barrier
 
-**Razborov-Rudich: the natural proofs barrier.** Let $F = (F_n)_{n \in \mathbb{N}}$ be a keyed
+Let $F = (F_n)_{n \in \mathbb{N}}$ be a keyed
 family of Boolean functions, where $F_n(k, x)$ is a Boolean value for every key
 $k \in \{0,1\}^{n^2}$ and every input $x \in \{0,1\}^n$. If $F$ is in P/poly (computed by circuits
 of size polynomial in $n$) and is secure against truth-table distinguishers, then there is no

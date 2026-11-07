@@ -1,6 +1,6 @@
 # Hartogs' lemma for sub-mean-value functions
 
-**Hartogs' lemma for sub-mean-value functions.** Let $n \in \mathbb{N}$, $c \in \mathbb{C}^n$,
+Let $n \in \mathbb{N}$, $c \in \mathbb{C}^n$,
 $R > 0$ and $C \ge 0$. For $\rho \ge 0$ write
 $\overline{P}(c, \rho) = \{x \in \mathbb{C}^n : |x_j - c_j| \le \rho \text{ for all } j\}$ for the
 closed polydisc, and for $x \in \mathbb{C}^n$ and $w \in \mathbb{C}$ write $x_{j \leftarrow w}$

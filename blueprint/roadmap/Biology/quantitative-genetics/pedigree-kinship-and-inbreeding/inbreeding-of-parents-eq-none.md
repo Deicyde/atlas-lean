@@ -1,3 +1,3 @@
 # Founders are not inbred
 
-**Founders are not inbred.** The inbreeding coefficient of a founder is `0`.
+The inbreeding coefficient of a founder is `0`.

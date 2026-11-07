@@ -1,6 +1,6 @@
 # Moves from critical positions with even parameter (Corollary 1 (i))
 
-**Moves from critical positions with even parameter (Corollary 1 (i)).** Let $k \ge 1$, let
+Let $k \ge 1$, let
 $m > 0$ be even, and let $x \in \mathbb{N}^{k+1}$ be an $m$-critical position of Slow$\{k\}$-Nim
 on $k + 1$ stacks. Then the entries of $x$ are either all odd or all even. If they are all even,
 then some entry satisfies $x_i < m$; every option $y$ of $x$ with $y_i < x_i$ for every $i$ such

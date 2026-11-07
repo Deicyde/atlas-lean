@@ -1,6 +1,6 @@
 # One is not in the Schatunowsky set
 
-**One is not in the Schatunowsky set.** For every number field $K$ and every natural number
+For every number field $K$ and every natural number
 $\ell$, the element $1$ of the ring of integers $\mathcal{O}_K$ does not lie in the Schatunowsky
 set $Q_\ell(K)$, because the ideal it generates has norm $1$.
 

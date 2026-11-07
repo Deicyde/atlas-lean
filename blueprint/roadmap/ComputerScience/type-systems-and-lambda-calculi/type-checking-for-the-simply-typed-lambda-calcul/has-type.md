@@ -1,6 +1,6 @@
 # Declarative typing of raw terms
 
-**Declarative typing of raw terms.** For a context $\Gamma$ (a list of simple types), a
+For a context $\Gamma$ (a list of simple types), a
 raw term $t$ and a type $A$, the judgment $\Gamma \vdash t : A$ is the least relation closed
 under three rules. A variable with de Bruijn index $n$ has type $A$ in $\Gamma$ whenever looking
 up $n$ in $\Gamma$ succeeds with the type $A$ and some intrinsic variable of type $A$. If

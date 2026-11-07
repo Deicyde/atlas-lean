@@ -1,6 +1,6 @@
 # Meixner-type characterization of Riordan orthogonal polynomial arrays
 
-**Meixner-type characterization of Riordan orthogonal polynomial arrays.** Let $d$ and $h$ be
+Let $d$ and $h$ be
 real formal power series with $[x^0]\,h = 0$, $[x^1]\,h \ne 0$ and $[x^0]\,d \ne 0$, where
 $[x^n]$ denotes the coefficient of $x^n$, and let $L$ be the Riordan array of $(d, h)$, with
 entries $L_{n,k} = [x^n]\,(d h^k)$ for $n, k \ge 0$. Call $L$ a monic orthogonal coefficient

@@ -1,6 +1,6 @@
 # Sum of the even divisors
 
-**Sum of the even divisors.** For a natural number $k$, $\sigma_{\mathrm{even}}(k)$ is the
+For a natural number $k$, $\sigma_{\mathrm{even}}(k)$ is the
 sum of the even divisors of $k$ (so $\sigma_{\mathrm{even}}(0) = 0$).
 
 ## Sources

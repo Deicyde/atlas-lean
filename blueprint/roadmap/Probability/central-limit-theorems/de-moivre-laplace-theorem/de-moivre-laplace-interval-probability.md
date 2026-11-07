@@ -1,6 +1,6 @@
 # De Moivre–Laplace limit theorem, interval form
 
-**De Moivre–Laplace limit theorem, interval form.** Let $X_0, X_1, \dots$ be independent,
+Let $X_0, X_1, \dots$ be independent,
 identically distributed real random variables on a probability space $(\Omega, P)$, each almost
 surely equal to $0$ or $1$, with mean $p$ for some $0 < p < 1$. Write
 $S_n = X_0 + \dots + X_{n-1}$. Then for all real numbers $a \le b$, the probability

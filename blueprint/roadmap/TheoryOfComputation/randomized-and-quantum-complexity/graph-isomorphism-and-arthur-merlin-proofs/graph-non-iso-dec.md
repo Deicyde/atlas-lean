@@ -1,6 +1,6 @@
 # Directed graph non-isomorphism as a decision problem
 
-**Directed graph non-isomorphism as a decision problem.** The decision problem accepts a
+The decision problem accepts a
 bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of triples
 $(n, E_1, E_2)$ of a natural number and two lists of pairs of natural numbers, to a triple for
 which there is no bijection $f$ from $\{0, \ldots, n - 1\}$ to itself such that, for all

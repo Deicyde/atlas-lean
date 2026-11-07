@@ -1,6 +1,6 @@
 # The four-digit Kaprekar map in difference coordinates
 
-**The four-digit Kaprekar map in difference coordinates.** For a base $B$ and a pair of
+For a base $B$ and a pair of
 natural numbers $(d_1, d_2)$, the map $K_B$ forms the list of four digits
 $[d_1 - 1, B - 1, B - 1, B - d_1]$ if $d_2 = 0$ and $[d_1, d_2 - 1, B - d_2 - 1, B - d_1]$ if
 $d_2 > 0$, sorts it decreasingly as $a_1 \ge a_2 \ge a_3 \ge a_4$, and sets

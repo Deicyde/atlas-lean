@@ -1,6 +1,6 @@
 # Majority is not in AC0
 
-**Majority is not in AC0.** The majority language is not in the class $\mathsf{AC}^0$.
+The majority language is not in the class $\mathsf{AC}^0$.
 
 ## Sources
 

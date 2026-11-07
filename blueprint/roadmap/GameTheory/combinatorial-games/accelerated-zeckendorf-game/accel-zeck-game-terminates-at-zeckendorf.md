@@ -1,6 +1,6 @@
 # The Accelerated Zeckendorf Game terminates at the Zeckendorf decomposition
 
-**The Accelerated Zeckendorf Game terminates at the Zeckendorf decomposition.** Index the
+Index the
 Fibonacci numbers as $F_1 = 1$, $F_2 = 2$, $F_{i+1} = F_i + F_{i-1}$. Let $n$ be a natural
 number, let $Z(n)$ be the number of terms of the Zeckendorf decomposition of $n$, and let $IZ(n)$
 be the sum of the indices $k$ of its terms $F_k$. Then there is no infinite sequence of moves

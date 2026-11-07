@@ -1,6 +1,6 @@
 # Convolution of generalized central binomial coefficients
 
-**Convolution of generalized central binomial coefficients.** For complex numbers $u$ and
+For complex numbers $u$ and
 $w$ write $\binom{u}{w} = \Gamma(u+1)/(\Gamma(w+1)\,\Gamma(u-w+1))$ for the generalized
 binomial coefficient, which is the ordinary binomial coefficient at natural arguments. For
 every natural number $n$ and every real number $v > -1$,

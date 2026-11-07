@@ -1,6 +1,6 @@
 # Sum formula for second-order recurrences
 
-**Sum formula for second-order recurrences.** Let $P, Q$ be integers with $Q \ne 0$ and
+Let $P, Q$ be integers with $Q \ne 0$ and
 $P^2 - 4Q \ne 0$, let $U = U(P, Q)$ be their Lucas sequence, write $a = P$ and $b = -Q$, and let
 $w$ be an integer sequence with $w_{k+2} = a w_{k+1} + b w_k$ for all $k \ge 0$. For $n \ge 0$
 let $B(n) = w_1 + \dots + w_n$, and for $n > 0$ let $\pi_U(n)$ be the period of $U$ modulo $n$:

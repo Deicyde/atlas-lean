@@ -1,6 +1,6 @@
 # Ideles as units of the adele ring
 
-**Ideles as units of the adele ring.** Let $R$ be a Dedekind domain with fraction field $K$,
+Let $R$ be a Dedekind domain with fraction field $K$,
 and let $\mathbb{A}_K$ be the adele ring of $K$ built from the infinite places of $K$ and the
 height-one primes of $R$. For an infinite place $w$ of $K$ write $K_w$ for the completion of $K$
 at $w$, and for a height-one prime $v$ of $R$ write $K_v$ for the $v$-adic completion of $K$.

@@ -1,6 +1,6 @@
 # Explicit Gauss–Kuzmin mass of a string
 
-**Explicit Gauss–Kuzmin mass of a string.** Let $a$ be a string of $n$ positive integers, let
+Let $a$ be a string of $n$ positive integers, let
 $p$, $q'$ and $q$ be the upper-right, lower-left and lower-right entries of its convergent matrix
 $C(a)$, and let $\overleftarrow{a}$ be the reverse of $a$. Then the Gauss–Kuzmin masses satisfy
 $P_{GK}(a) = P_{GK}(\overleftarrow{a})$ and

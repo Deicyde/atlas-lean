@@ -1,6 +1,6 @@
 # Large values of the error in the modular product sum $S_2(n, m)$
 
-**Large values of the error in the modular product sum $S_2(n, m)$.** Let $\varphi$ be Euler's
+Let $\varphi$ be Euler's
 totient function and $S_2(n, m)$ the modular product sum. There are a real number $c > 0$ and a
 natural number $N$ such that every odd natural number $n \ge N$ admits a natural number $m$ with
 $1 \le m \le n$ and $\gcd(m, n) = 1$ for which

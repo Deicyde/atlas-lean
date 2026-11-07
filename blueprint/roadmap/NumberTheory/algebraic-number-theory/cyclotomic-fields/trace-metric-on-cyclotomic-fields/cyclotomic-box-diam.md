@@ -1,6 +1,6 @@
 # Diameter of the cyclotomic box
 
-**Diameter of the cyclotomic box.** Let $p$ be an odd prime, let $N$ be a natural number, and
+Let $p$ be an odd prime, let $N$ be a natural number, and
 let $K$ be a field generated over $\mathbb{Q}$ by a primitive $p$-th root of unity, with fixed
 primitive $p$-th root of unity $\omega \in K$. Let $d(\alpha, \beta) = \lVert \alpha - \beta \rVert$
 be the trace metric on $K$, where $\lVert \gamma \rVert \ge 0$ and

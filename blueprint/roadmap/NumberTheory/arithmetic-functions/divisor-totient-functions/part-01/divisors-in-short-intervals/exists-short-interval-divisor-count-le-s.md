@@ -1,6 +1,6 @@
 # Letendre's square-root bound for divisors in short intervals
 
-**Letendre's square-root bound for divisors in short intervals.** For a natural number $n$
+For a natural number $n$
 and real numbers $X$, $Y$, let $D_n(X, Y)$ be the number of divisors $d$ of $n$ with
 $X \le d \le X + Y$, let $\tau(n)$ be the number of divisors of $n$, and let $\xi(\theta, \eta)$
 be Letendre's saving exponent. There is an absolute constant $C$ such that for all real numbers

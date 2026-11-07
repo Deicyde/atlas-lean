@@ -1,6 +1,6 @@
 # Serial circuits
 
-**Serial circuits.** A serial circuit is a list of pairs $(k, \ell)$, where $k$ is a
+A serial circuit is a list of pairs $(k, \ell)$, where $k$ is a
 natural number (the gate kind) and $\ell$ is a list of natural numbers (the gate's references).
 
 A flat circuit is serialized gate by gate into this form: kind $0$ is an input variable,

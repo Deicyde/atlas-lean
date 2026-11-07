@@ -1,6 +1,6 @@
 # Growth for the ordinary partition profile
 
-**Growth for the ordinary partition profile.** Let $H_{\mathrm{seq}}$ be the canonical
+Let $H_{\mathrm{seq}}$ be the canonical
 sequential realization of the constant profile $\pi_k = 1$ for all $k \ge 1$ (so
 $H_{\mathrm{seq}}(p_i) = i$ for the $i$-th prime $p_i$). Then, as $x \to \infty$ over the reals,
 $\sum_{p \le x} H_{\mathrm{seq}}(p)/p = \Theta\bigl(x / (\log x)^2\bigr)$, the sum running over

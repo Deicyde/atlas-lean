@@ -1,6 +1,6 @@
 # Exponential approximation of the divisibility indicator
 
-**Exponential approximation of the divisibility indicator.** Let $A$ be a real-valued
+Let $A$ be a real-valued
 function of two natural numbers such that $A(k, n) \sin^2(n\pi/k) \ge 1$ for all natural numbers
 $k, n$ with $1 \le k \le n$ and $k \nmid n$. Then for all natural numbers $k, n$ with
 $1 \le k \le n$,

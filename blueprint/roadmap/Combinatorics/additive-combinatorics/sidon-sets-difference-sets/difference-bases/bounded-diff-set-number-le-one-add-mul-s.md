@@ -1,6 +1,6 @@
 # Upper bound for sets with bounded difference multiplicities
 
-**Upper bound for sets with bounded difference multiplicities.** For natural numbers $g$ and
+For natural numbers $g$ and
 $n$, let $\alpha_g(n)$ be the largest size of a set $A \subseteq \{1, \dots, n\}$ such that every
 nonzero integer $x$ is the difference $a - a'$ of at most $g$ ordered pairs
 $(a, a') \in A \times A$. If $g \ge 1$, then for every real $\varepsilon > 0$ we have

@@ -1,6 +1,6 @@
 # Closed unit disk in the plane
 
-**Closed unit disk in the plane.** The closed unit Euclidean disk
+The closed unit Euclidean disk
 $\{(x, y) \in \mathbb{R} \times \mathbb{R} \mid x^2 + y^2 \le 1\}$, the source of the
 parametrization of a slicing disk.
 

@@ -1,6 +1,6 @@
 # Value of the Motzkin number at 0
 
-**Value of the Motzkin number at 0.** The $0$-th Motzkin number is $M(0) = 1$.
+The $0$-th Motzkin number is $M(0) = 1$.
 
 ## Sources
 

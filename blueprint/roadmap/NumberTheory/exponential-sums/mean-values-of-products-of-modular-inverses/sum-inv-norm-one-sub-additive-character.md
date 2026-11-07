@@ -1,6 +1,6 @@
 # Sum of reciprocal distances from roots of unity to 1
 
-**Sum of reciprocal distances from roots of unity to 1.** Let $q \ge 2$ and $\ell \ge 1$ be
+Let $q \ge 2$ and $\ell \ge 1$ be
 integers, let $s \in \{1, -1\}$, and write $e_q(x) = e^{2\pi i x / q}$. Then
 
 $$\sum_{0 \le a < q,\ q \nmid a\ell} \frac{1}{|1 - e_q(s a \ell)|} \le

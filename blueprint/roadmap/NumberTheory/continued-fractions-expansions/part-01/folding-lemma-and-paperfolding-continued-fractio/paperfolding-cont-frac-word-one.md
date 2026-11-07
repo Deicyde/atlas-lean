@@ -1,6 +1,6 @@
 # The second paperfolding continued-fraction word
 
-**The second paperfolding continued-fraction word.** For every sequence $x$ of natural numbers,
+For every sequence $x$ of natural numbers,
 the continued-fraction word $A_1$ defined by $x$ is $(1, 1, \max(x_1 - 1, 0), 2)$.
 
 ## Sources

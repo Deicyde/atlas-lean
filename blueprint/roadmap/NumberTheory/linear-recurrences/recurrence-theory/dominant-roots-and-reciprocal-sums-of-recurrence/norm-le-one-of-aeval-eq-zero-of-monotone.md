@@ -1,6 +1,6 @@
 # Eneström–Kakeya theorem
 
-**Eneström–Kakeya theorem.** Let $a_0 + a_1 x + \cdots + a_n x^n$ be a nonzero real
+Let $a_0 + a_1 x + \cdots + a_n x^n$ be a nonzero real
 polynomial of degree $n$ with $0 \le a_0 \le a_1 \le \cdots \le a_n$. Then every complex root $z$
 of this polynomial satisfies $|z| \le 1$.
 

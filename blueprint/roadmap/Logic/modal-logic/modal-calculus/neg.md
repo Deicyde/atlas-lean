@@ -1,6 +1,6 @@
 # Negation of μ-calculus formulas
 
-**Negation of μ-calculus formulas.** The meta-level negation $\neg\varphi$ of a μ-calculus
+The meta-level negation $\neg\varphi$ of a μ-calculus
 formula $\varphi$ swaps each connective with its dual. It is defined by recursion: an atom $p$
 becomes the negated atom $\overline{p}$ and $\overline{p}$ becomes $p$, each variable $x_n$
 stays $x_n$, $\neg\bot = \top$, $\neg\top = \bot$,

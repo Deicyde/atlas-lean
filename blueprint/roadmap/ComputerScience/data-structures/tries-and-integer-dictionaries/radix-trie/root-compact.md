@@ -1,6 +1,6 @@
 # Path-compressed root
 
-**Path-compressed root.** A radix trie is path-compressed at its root when its root node stores
+A radix trie is path-compressed at its root when its root node stores
 a value or has at least two child edges.
 
 A value-free node with at most one child could be merged into the edge above it, which a radix

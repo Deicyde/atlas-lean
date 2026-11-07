@@ -1,6 +1,6 @@
 # Concatenations of two decimal repdigits
 
-**Concatenations of two decimal repdigits.** A natural number $n$ is a concatenation of two
+A natural number $n$ is a concatenation of two
 repdigits if there are digits $d_1, d_2$ with $1 \le d_1 \le 9$, $0 \le d_2 \le 9$ and
 $d_1 \ne d_2$, and block lengths $m_1, m_2 \ge 1$, such that the decimal expansion of $n$ is
 $m_1$ copies of $d_1$ followed by $m_2$ copies of $d_2$; that is,

@@ -1,6 +1,6 @@
 # A Bernoulli–harmonic power-sum identity
 
-**A Bernoulli–harmonic power-sum identity.** Let $B_j$ denote the Bernoulli numbers with
+Let $B_j$ denote the Bernoulli numbers with
 $B_1 = -\tfrac12$, and let $H_m = \sum_{i=1}^{m} 1/i$ denote the harmonic numbers. For all
 positive integers $n$ and $m$,
 

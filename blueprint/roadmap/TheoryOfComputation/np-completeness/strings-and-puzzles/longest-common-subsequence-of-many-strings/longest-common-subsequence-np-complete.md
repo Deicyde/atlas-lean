@@ -1,6 +1,6 @@
 # LONGEST COMMON SUBSEQUENCE is NP-complete
 
-**LONGEST COMMON SUBSEQUENCE is NP-complete.** The LONGEST COMMON SUBSEQUENCE decision
+The LONGEST COMMON SUBSEQUENCE decision
 problem, over binary strings, belongs to NP, and every decision problem in NP reduces to it by a
 polynomial-time many-one reduction.
 

@@ -1,6 +1,6 @@
 # Bound on level-decomposable lunar numbers that are not Hoeffding extremal
 
-**Bound on level-decomposable lunar numbers that are not Hoeffding extremal.** Let $b \ge 2$
+Let $b \ge 2$
 and $n$ be natural numbers and $d > 0$ a real number. The number of elements of
 $\mathcal{D}_b^n \setminus \mathcal{H}_b^n(d)$ is at most $n^{2d+4} 2^{d/2-n/3} b^{n+1}$, where
 $\mathcal{D}_b^n$ is the set of level-decomposable lunar numbers of base $b$ and degree at most

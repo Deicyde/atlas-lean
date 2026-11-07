@@ -1,6 +1,6 @@
 # Positive solutions of $x^2 - 3y^2 = -2$
 
-**Positive solutions of $x^2 - 3y^2 = -2$.** For integers $x$ and $y$, we have $x > 0$,
+For integers $x$ and $y$, we have $x > 0$,
 $y > 0$ and $x^2 - 3y^2 = -2$ if and only if $x + y\sqrt{3} = (1 + \sqrt{3})(2 + \sqrt{3})^k$
 in $\mathbb{Z}[\sqrt{3}]$ for some integer $k \ge 0$. Writing
 $(1 + \sqrt{3})(2 + \sqrt{3})^k = u_k + v_k \sqrt{3}$ for $k \ge 0$, we have

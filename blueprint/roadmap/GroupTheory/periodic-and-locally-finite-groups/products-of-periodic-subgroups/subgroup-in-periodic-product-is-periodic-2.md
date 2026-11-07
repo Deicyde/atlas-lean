@@ -1,6 +1,6 @@
 # Subgroups inside a product of two periodic subgroups of a soluble group are periodic
 
-**Subgroups inside a product of two periodic subgroups of a soluble group are periodic.** Let $G$
+Let $G$
 be a soluble group and let $A$ and $B$ be subgroups of $G$ in which every element has finite order.
 Then every subgroup $H$ of $G$ contained in the set $AB$ of all products $ab$ with $a \in A$ and
 $b \in B$ is periodic: every element of $H$ has finite order. This answers Kourovka Problem 16.38

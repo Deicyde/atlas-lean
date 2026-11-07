@@ -1,6 +1,6 @@
 # Stewart's integral formula for the Fibonacci numbers
 
-**Stewart's integral formula for the Fibonacci numbers.** For every integer $n \ge 1$, the
+For every integer $n \ge 1$, the
 $n$-th Fibonacci number $F_n$ (with $F_0 = 0$ and $F_1 = 1$) satisfies
 
 $$F_n = \frac{n}{2^n} \int_{-1}^{1} \left(1 + y\sqrt{5}\right)^{n-1} dy.$$

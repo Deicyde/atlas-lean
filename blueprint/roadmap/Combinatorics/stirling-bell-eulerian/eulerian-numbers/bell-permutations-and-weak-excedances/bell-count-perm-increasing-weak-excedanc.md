@@ -1,6 +1,6 @@
 # Bell numbers count permutations with increasing weak excedance letters
 
-**Bell numbers count permutations with increasing weak excedance letters.** A position $i$ is a
+A position $i$ is a
 weak excedance of a permutation $\sigma$ when $i \le \sigma(i)$. For every $n$, the number of
 permutations $\sigma$ of $\{0, 1, \dots, n-1\}$ such that $\sigma(i) < \sigma(j)$ whenever
 $i < j$ are both weak excedances of $\sigma$ is the Bell number $B_n$.

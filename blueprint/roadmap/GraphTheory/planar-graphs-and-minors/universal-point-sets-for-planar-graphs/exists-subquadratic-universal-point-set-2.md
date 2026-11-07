@@ -1,6 +1,6 @@
 # Planar graphs have subquadratic universal point sets
 
-**Planar graphs have subquadratic universal point sets.** There is a function
+There is a function
 $f : \mathbb{N} \to \mathbb{N}$ with $f(n)/n^2 \to 0$ as $n \to \infty$ such that for every $n$
 some finite set $P$ of at most $f(n)$ points of $\mathbb{R}^2$ is a universal point set for
 $n$-vertex planar graphs: every straight-line planar simple graph on the vertex set

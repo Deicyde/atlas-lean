@@ -1,6 +1,6 @@
 # The PEND partition function
 
-**The PEND partition function.** For a natural number $n$, $\mathrm{pend}(n)$ is the number
+For a natural number $n$, $\mathrm{pend}(n)$ is the number
 of PEND partitions of $n$: partitions of $n$ in which every even part that occurs appears at
 least twice (OEIS A265254).
 

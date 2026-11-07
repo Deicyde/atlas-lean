@@ -1,6 +1,6 @@
 # Zhang–Xiong refinement of Mandl's inequality
 
-**Zhang–Xiong refinement of Mandl's inequality.** Let $p_k$ denote the $k$-th prime, so that
+Let $p_k$ denote the $k$-th prime, so that
 $p_1 = 2$, and let $M(n) = \frac{n p_n}{2} - \sum_{k=1}^{n} p_k$. For real $\eta$ let
 
 $$B_\eta(n) = \frac{n^2}{4}\left(1 + \frac{1}{\log n} -

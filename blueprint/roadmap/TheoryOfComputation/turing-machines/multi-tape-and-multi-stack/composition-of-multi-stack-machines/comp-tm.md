@@ -1,6 +1,6 @@
 # The composite machine
 
-**The composite machine.** Let $M_1$ and $M_2$ be finite multi-stack Turing machines, let $X$ be
+Let $M_1$ and $M_2$ be finite multi-stack Turing machines, let $X$ be
 the alphabet of the input stack of $M_2$, and let $\varphi$ map the output alphabet of $M_1$ to $X$.
 The composite machine has the stacks of $M_1$, the stacks of $M_2$ and one scratch stack with
 alphabet $X$; its input stack is that of $M_1$ and its output stack is that of $M_2$. It starts

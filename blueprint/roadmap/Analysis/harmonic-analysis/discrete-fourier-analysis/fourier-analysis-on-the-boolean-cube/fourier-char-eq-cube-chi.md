@@ -1,6 +1,6 @@
 # Subset characters agree with cube characters
 
-**Subset characters agree with cube characters.** Let $E$ be a finite set with $m$ elements,
+Let $E$ be a finite set with $m$ elements,
 listed in a fixed order as $e_0, \dots, e_{m-1}$, and encode a subset $T \subseteq E$ as the point
 $x_T$ of the Boolean cube of dimension $m$ whose $j$-th coordinate is false exactly when
 $e_j \in T$. For all subsets $S, T \subseteq E$,

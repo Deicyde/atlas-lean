@@ -1,6 +1,6 @@
 # Step budget of the counter program
 
-**Step budget of the counter program.** For a polynomial $k$ with natural-number coefficients
+For a polynomial $k$ with natural-number coefficients
 and natural numbers $c, e, d, n$, let $m = n + 1 + k(n)$, $T = (m + c)^e$ and
 $H = m + (T + 1)d + 1$. The step budget of the counter program at $(k, c, e, d, n)$ is
 

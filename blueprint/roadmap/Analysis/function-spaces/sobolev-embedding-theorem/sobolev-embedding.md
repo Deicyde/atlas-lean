@@ -1,6 +1,6 @@
 # Sobolev embedding theorem (Morrey regime)
 
-**Sobolev embedding theorem (Morrey regime).** Let $n, k, r$ be natural numbers and
+Let $n, k, r$ be natural numbers and
 $\alpha, p$ real numbers with $n < p$, $0 < \alpha \le 1$ and $r + \alpha < k - n/p$. Then every
 function $f : \mathbb{R}^n \to \mathbb{R}$ in the Sobolev space $W^{k,p}(\mathbb{R}^n)$ is equal
 almost everywhere, for Lebesgue measure, to some function $g$ in the Hölder space

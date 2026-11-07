@@ -1,6 +1,6 @@
 # Euclidean chain function of 13 and 60
 
-**Euclidean chain function of 13 and 60.** The Euclidean chain function $F$ satisfies
+The Euclidean chain function $F$ satisfies
 $F(13, 60) = 8$.
 
 ## Sources

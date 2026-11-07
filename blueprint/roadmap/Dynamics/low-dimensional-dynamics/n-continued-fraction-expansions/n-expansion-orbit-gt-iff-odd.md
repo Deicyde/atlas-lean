@@ -1,6 +1,6 @@
 # Orbits with the same digits alternate in order
 
-**Orbits with the same digits alternate in order.** Let $N$ be a positive integer and let
+Let $N$ be a positive integer and let
 $0 < \alpha < \alpha'$ be real numbers. Write $T_\alpha$ for the $N$-expansion map and $d_\alpha$
 for the $N$-expansion digit with parameter $\alpha$, and let $m$ be a natural number. If the
 orbits $\alpha_j = T_\alpha^j(\alpha)$ and $\alpha'_j = T_{\alpha'}^j(\alpha')$ satisfy

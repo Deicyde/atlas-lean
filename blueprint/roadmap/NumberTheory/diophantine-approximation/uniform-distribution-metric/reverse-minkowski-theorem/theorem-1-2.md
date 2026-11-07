@@ -1,6 +1,6 @@
 # Reverse Minkowski theorem
 
-**Reverse Minkowski theorem.** Let $\mathcal{L} \subseteq \mathbb{R}^n$ be a full-rank lattice, that
+Let $\mathcal{L} \subseteq \mathbb{R}^n$ be a full-rank lattice, that
 is, a discrete subgroup of $\mathbb{R}^n$ that spans $\mathbb{R}^n$, such that every subgroup
 $\mathcal{L}' \subseteq \mathcal{L}$ (a lattice of possibly lower rank) has determinant
 $\det(\mathcal{L}') \ge 1$. Let $t = 10(\log n + 2)$, where $\log$ is the natural logarithm. Then

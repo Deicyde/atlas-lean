@@ -1,6 +1,6 @@
 # Divisibility of $1 - (-2)^{3k}$ from $1 - (-2)^k$
 
-**Divisibility of $1 - (-2)^{3k}$ from $1 - (-2)^k$.** For every integer $n$ and every
+For every integer $n$ and every
 natural number $k$, if $3n$ divides $1 - (-2)^k$, then $9n$ divides $1 - (-2)^{3k}$.
 
 Since $3$ always divides $1 - (-2)^k$, this is equivalent to: if $n$ divides

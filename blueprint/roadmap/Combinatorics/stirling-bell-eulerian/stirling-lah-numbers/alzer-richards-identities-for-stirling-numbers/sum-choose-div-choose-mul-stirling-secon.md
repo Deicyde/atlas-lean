@@ -1,6 +1,6 @@
 # Alternating Stirling sums with $\binom{n+1}{k+1}$ give Bernoulli numbers
 
-**Alternating Stirling sums with $\binom{n+1}{k+1}$ give Bernoulli numbers.** Write $S(n, k)$
+Write $S(n, k)$
 for the Stirling numbers of the second kind and $B_n$ for the Bernoulli numbers, with
 $B_1 = -1/2$. Let $n$ be a natural number. Then for every natural number $r \le n$,
 

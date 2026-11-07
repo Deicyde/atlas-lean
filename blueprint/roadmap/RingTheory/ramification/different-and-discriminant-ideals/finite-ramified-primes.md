@@ -1,6 +1,6 @@
 # Only finitely many primes of the extension ramify
 
-**Only finitely many primes of the extension ramify.** Let $A$ and $B$ be Dedekind domains,
+Let $A$ and $B$ be Dedekind domains,
 where $B$ is an $A$-algebra that is finitely generated and torsion-free as an $A$-module and the
 field of fractions of $B$ is separable over the field of fractions of $A$. Then only finitely many
 nonzero prime ideals $\mathfrak P$ of $B$ are ramified over $A$. Here $\mathfrak P$ is unramified

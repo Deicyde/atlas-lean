@@ -1,6 +1,6 @@
 # Generating function of $R_3(n)$
 
-**Generating function of $R_3(n)$.** Let $R_3(n)$ be the number of partitions of $n$ with
+Let $R_3(n)$ be the number of partitions of $n$ with
 max-rook number $3$. In the ring $\mathbb{Z}[[q]]$ of formal power series with integer
 coefficients,
 

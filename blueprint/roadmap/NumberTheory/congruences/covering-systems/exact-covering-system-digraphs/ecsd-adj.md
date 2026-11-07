@@ -1,6 +1,6 @@
 # Edge relation of an exact covering system digraph
 
-**Edge relation of an exact covering system digraph.** Let $r \in \mathbb{N}$ and let
+Let $r \in \mathbb{N}$ and let
 $d_1, \dots, d_r$ and $a_1, \dots, a_r$ be integers. The digraph
 $G(d_1 n + a_1, \dots, d_r n + a_r)$ has vertex set $\mathbb{Z}$ and an edge $x \to y$ iff
 $y = d_i x + a_i$ for some $i \in \{1, \dots, r\}$.

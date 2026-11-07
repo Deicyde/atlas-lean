@@ -1,6 +1,6 @@
 # Small values of the Hoffman dual
 
-**Small values of the Hoffman dual.** The Hoffman dual index satisfies $(1)^\vee = (1)$,
+The Hoffman dual index satisfies $(1)^\vee = (1)$,
 $(3)^\vee = (1, 1, 1)$ and $(1, 2)^\vee = (2, 1)$.
 
 ## Sources

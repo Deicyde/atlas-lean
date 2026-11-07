@@ -1,6 +1,6 @@
 # Gaussian elimination as a product of row operations
 
-**Gaussian elimination as a product of row operations.** Let $K$ be a field and let $A$ be a
+Let $K$ be a field and let $A$ be a
 matrix over $K$ whose rows and columns are indexed by finite linearly ordered sets. Then there
 are a permutation $\sigma$ of the row indices and a finite, possibly empty, list
 $M_1, \dots, M_\ell$ of square matrices over $K$ indexed by the row indices, each lower

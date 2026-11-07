@@ -1,6 +1,6 @@
 # Fuel-bounded recurrence for the Euler numbers of order α
 
-**Fuel-bounded recurrence for the Euler numbers of order α.** Let $E_m(x)$ denote the Euler
+Let $E_m(x)$ denote the Euler
 polynomial. For a complex number $\alpha$, the complex numbers $a_\alpha(f, n)$, for natural
 numbers $f$ (the fuel) and $n$, are defined by $a_\alpha(0, n) = 1$, $a_\alpha(f + 1, 0) = 1$
 and $a_\alpha(f + 1, n + 1) = -\alpha \, a_\alpha(f, n) +

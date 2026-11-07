@@ -1,6 +1,6 @@
 # Partial sums of degenerate harmonic numbers of rank as a convolution
 
-**Partial sums of degenerate harmonic numbers of rank as a convolution.** Let $\lambda > 0$
+Let $\lambda > 0$
 and $\alpha > 0$ be real and let $n$ and $r$ be natural numbers. Write $H_\lambda(k, r, \alpha)$
 for the generalized degenerate harmonic numbers of rank $r$ and $H_{m,\lambda}(\alpha)$ for the
 generalized degenerate harmonic numbers. Then

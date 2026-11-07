@@ -1,6 +1,6 @@
 # Signed triangular sum of $s_m$ and nonnegative crank
 
-**Signed triangular sum of $s_m$ and nonnegative crank.** Let $m \ge 1$ and $n$ be natural
+Let $m \ge 1$ and $n$ be natural
 numbers. Write $s_m(k)$ for the sum of the different parts that appear at least $m$ times in
 partitions of $k$, and $C(k)$ for the number of partitions of $k$ with nonnegative crank. Then
 

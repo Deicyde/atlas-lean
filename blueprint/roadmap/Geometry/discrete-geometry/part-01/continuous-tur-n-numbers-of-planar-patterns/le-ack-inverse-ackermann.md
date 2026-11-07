@@ -1,6 +1,6 @@
 # Defining inequality of the inverse Ackermann function
 
-**Defining inequality of the inverse Ackermann function.** For every natural number $n$,
+For every natural number $n$,
 $n \le A(\alpha(n), \alpha(n))$, where $\alpha$ is the inverse Ackermann function and $A$ is the
 two-argument Ackermann function.
 

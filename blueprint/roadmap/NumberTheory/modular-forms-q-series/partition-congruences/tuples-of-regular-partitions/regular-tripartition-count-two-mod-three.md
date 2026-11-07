@@ -1,6 +1,6 @@
 # Congruences modulo 3 and 6 for 2-regular tripartitions
 
-**Congruences modulo 3 and 6 for 2-regular tripartitions.** Let $T_2(m)$ be the number of
+Let $T_2(m)$ be the number of
 $2$-regular tripartitions of $m$. For every natural number $n$, $3 \mid T_2(3n + 1)$ and
 $6 \mid T_2(3n + 2)$.
 

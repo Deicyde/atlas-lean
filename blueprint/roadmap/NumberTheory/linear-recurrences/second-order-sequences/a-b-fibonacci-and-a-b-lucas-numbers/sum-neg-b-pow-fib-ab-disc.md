@@ -1,6 +1,6 @@
 # Sums of (a, b)-Fibonacci numbers weighted by powers of -b, via Lucas numbers
 
-**Sums of (a, b)-Fibonacci numbers weighted by powers of -b, via Lucas numbers.** Let $a, b$
+Let $a, b$
 be complex numbers with $\Delta = a^2 + 4b \ne 0$, and let $(F_n)$ and $(L_n)$ be the
 $(a, b)$-Fibonacci and $(a, b)$-Lucas numbers. Then for every integer $n \ge 0$,
 

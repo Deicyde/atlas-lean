@@ -1,6 +1,6 @@
 # Where $\delta^\ast$ can attain its maximum
 
-**Where $\delta^\ast$ can attain its maximum.** Let $L$ and $\tilde L$ be lists of natural
+Let $L$ and $\tilde L$ be lists of natural
 numbers forming a periodic Zeckendorf pair, let $N$ be the length of $L$, let $E^*$ and
 $\tilde E^*$ be the collections determined by $L$ and $\tilde L$, let $\bar E^*$ be the closure
 of $E^*$, and let $Q$ and $\tilde Q$ be fundamental sequences of $E^*$ and $\tilde E^*$. Let

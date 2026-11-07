@@ -1,6 +1,6 @@
 # Relative extended haplotype homozygosity (REHH)
 
-**Relative extended haplotype homozygosity (REHH).** Relative extended haplotype homozygosity: the core-labelled EHH of the core-allele
+Relative extended haplotype homozygosity: the core-labelled EHH of the core-allele
 carriers `C` divided by the core-labelled EHH of the pooled set `D` of haplotypes carrying
 the other core alleles. The denominator counts only pairs sharing a core allele, so
 cross-core pairs never inflate it. This is the statistic of the long-range haplotype test

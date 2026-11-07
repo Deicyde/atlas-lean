@@ -1,6 +1,6 @@
 # Pompeiu's theorem for a point other than a vertex
 
-**Pompeiu's theorem for a point other than a vertex.** Write $XY$ for the Euclidean distance
+Write $XY$ for the Euclidean distance
 between points $X$ and $Y$ of the Euclidean plane $\mathbb{R}^2$. Let $A$, $B$, $C$ be points of
 the plane with $AB = BC = CA$ and $AB > 0$, so that $ABC$ is an equilateral triangle, and let $P$
 be a point of the plane with $P \ne A$, $P \ne B$ and $P \ne C$. Then $PA \le PB + PC$,

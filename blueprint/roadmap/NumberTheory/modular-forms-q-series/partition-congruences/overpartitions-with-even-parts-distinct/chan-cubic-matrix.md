@@ -1,6 +1,6 @@
 # Chan's matrix
 
-**Chan's matrix.** Chan's matrix $(m_{i,j})_{i,j \ge 1}$ is the integer matrix with first
+Chan's matrix $(m_{i,j})_{i,j \ge 1}$ is the integer matrix with first
 column $m_{1,1} = 3$, $m_{2,1} = 2$, $m_{3,1} = 1$ and $m_{i,1} = 0$ for $i \ge 4$, and with
 $m_{i,j} = 9 m_{i-1,j-1} + 3 m_{i-2,j-1} + m_{i-3,j-1}$ for $i \ge 1$ and $j \ge 2$, where
 entries with row index $\le 0$ are taken to be $0$.

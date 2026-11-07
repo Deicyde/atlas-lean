@@ -1,6 +1,6 @@
 # Correctness of the reduction
 
-**Correctness of the reduction.** Let $V$ be a polynomial-time Turing machine that computes a
+Let $V$ be a polynomial-time Turing machine that computes a
 Boolean function $f$ on pairs of bit strings, reading a pair $(a, y)$ as the bits of $a$, a
 separator, then the bits of $y$, and writing its answer as one bit. Let $p$ be a polynomial with
 natural-number coefficients, $R$ a relation on bit strings with $R(a, y)$ iff $f(a, y)$ is true,

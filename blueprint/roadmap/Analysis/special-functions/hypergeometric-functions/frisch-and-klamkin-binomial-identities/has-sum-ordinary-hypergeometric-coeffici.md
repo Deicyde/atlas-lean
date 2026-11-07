@@ -1,6 +1,6 @@
 # Klamkin's Gauss summation as a convergent series
 
-**Klamkin's Gauss summation as a convergent series.** Let $n \ge 1$ be an integer and let $a$
+Let $n \ge 1$ be an integer and let $a$
 and $b$ be real numbers such that $-a$ and $-b$ are not nonnegative integers, $a + 1 + n < 0$,
 and $a - b + 1$ is not a nonnegative integer. Then the series
 

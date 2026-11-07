@@ -1,6 +1,6 @@
 # Schlesinger–Zudilin duality
 
-**Schlesinger–Zudilin duality.** Let $\zeta_q^{SZ}$ denote the Schlesinger–Zudilin qMZV, let
+Let $\zeta_q^{SZ}$ denote the Schlesinger–Zudilin qMZV, let
 $(k_1, d_1), \dots, (k_r, d_r)$ be pairs of natural numbers with $k_j \ge 1$ and $d_j \ge 1$
 for all $j$, and let $\{0\}^n$ denote $n$ zeros. Then
 

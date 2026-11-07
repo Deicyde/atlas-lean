@@ -1,6 +1,6 @@
 # Submersions at a point are closed under composition
 
-**Submersions at a point are closed under composition.** Let $\mathbb{K}$ be a nontrivially
+Let $\mathbb{K}$ be a nontrivially
 normed field, let $n \in \mathbb{N} \cup \{\infty, \omega\}$, and let $M$, $N$, $N'$ be charted
 spaces modelled, through models with corners, on normed spaces $E$, $E''$, $E'''$ over
 $\mathbb{K}$, where the models of $M$ and $N$ have no boundary. If $f : M \to N$ is a $C^n$

@@ -1,6 +1,6 @@
 # Weight of the improper word $010113$
 
-**Weight of the improper word $010113$.** The word $010113$, written most significant digit
+The word $010113$, written most significant digit
 first, has weight $1 + 1 + 3 = 5$.
 
 ## Sources

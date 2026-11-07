@@ -1,6 +1,6 @@
 # RESOURCE-CONSTRAINED PROJECT SCHEDULING is NP-complete
 
-**RESOURCE-CONSTRAINED PROJECT SCHEDULING is NP-complete.** The decision problem
+The decision problem
 RESOURCE-CONSTRAINED PROJECT SCHEDULING belongs to NP, and every decision problem in NP has a
 polynomial-time many-one reduction to it.
 

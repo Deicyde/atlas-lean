@@ -1,6 +1,6 @@
 # Every recognizable predicate one-one reduces to the halting set
 
-**Every recognizable predicate one-one reduces to the halting set.** Let $\alpha$ be a type
+Let $\alpha$ be a type
 with a primitive recursive encoding into $\mathbb{N}$, and let $p$ be a recognizable (recursively
 enumerable) predicate on $\alpha$, that is, the domain of a partial computable function on
 $\alpha$. Here the halting set is the set of $n \in \mathbb{N}$ such that the partial recursive

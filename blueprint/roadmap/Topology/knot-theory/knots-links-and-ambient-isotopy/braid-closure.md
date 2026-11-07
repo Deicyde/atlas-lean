@@ -1,6 +1,6 @@
 # Polyline closure of a braid word
 
-**Polyline closure of a braid word.** Let $n \in \mathbb{N}$, and let
+Let $n \in \mathbb{N}$, and let
 $w = w_0 w_1 \cdots w_{m-1}$ be a braid word (a list of integers, where $i > 0$ stands for
 $\sigma_i$ and $-i$ for $\sigma_i^{-1}$). If $m = 0$, the value is the junk list $(0, 0, 0)$,
 $(1, 0, 0)$, $(0, 1, 0)$. Otherwise the value is a list of vertices in $\mathbb{R}^3$ tracing the

@@ -1,6 +1,6 @@
 # Smyth's description of the indices $n$ with $n \mid U_n$
 
-**Smyth's description of the indices $n$ with $n \mid U_n$.** Let $P, Q$ be coprime integers
+Let $P, Q$ be coprime integers
 with $Q \ne 0$ such that the Lucas pair $(P, Q)$ is nondegenerate, let $U = U(P, Q)$ be its Lucas
 sequence, write $a = P$, $b = -Q$ (so that $U_{k+2} = a U_{k+1} + b U_k$) and $D = P^2 - 4Q$, and
 let $T(U)$ be the set of positive integers $n$ coprime to $Q$ with $n \mid U_n$. Call $q_0$

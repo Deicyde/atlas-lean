@@ -1,6 +1,6 @@
 # Bounded normal series for soluble groups with an automorphism of order four
 
-**Bounded normal series for soluble groups with an automorphism of order four.** There are a
+There are a
 natural number $h$ and a function $f : \mathbb{N} \to \mathbb{N}$ such that, for every natural
 number $m$, every finite soluble group $G$ and every automorphism $\varphi$ of $G$ of order $4$
 with at most $m$ fixed points, there are normal subgroups $M \le N$ of $G$ with

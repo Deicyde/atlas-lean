@@ -1,6 +1,6 @@
 # Identities for the Eisenstein elliptic functions $\varphi$ and $\psi$
 
-**Identities for the Eisenstein elliptic functions $\varphi$ and $\psi$.** Let
+Let
 $\rho = e^{2\pi i/3}$, let $\varpi_1 = \int_0^1 (1 - t^3)^{-2/3}\,dt$, and let $\wp$ be the
 Weierstrass function of the lattice spanned by $\varpi_1$ and $\varpi_1\rho$. Put
 $\varphi(u) = 6\wp(\varpi_1 u)/(9 + \wp'(\varpi_1 u))$ and

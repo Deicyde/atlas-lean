@@ -1,6 +1,6 @@
 # The map $T$ of the OOZ quasi-shuffle product
 
-**The map $T$ of the OOZ quasi-shuffle product.** Words are finite sequences of letters
+Words are finite sequences of letters
 $z_k$ with $k$ a natural number. The map $T$ sends each word to a finite formal
 $\mathbb{Q}$-linear combination of words: it sends the empty word $\mathbf{1}$ to $\mathbf{1}$,
 and a word $z_n v$ with first letter $z_n$ to $z_n v - z_{n-1} v$, where $n - 1$ is truncated

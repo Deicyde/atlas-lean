@@ -1,6 +1,6 @@
 # Fixed tilings of the even square torus under a three-quarter turn
 
-**Fixed tilings of the even square torus under a three-quarter turn.** Let $n$ be an even
+Let $n$ be an even
 positive integer, $T$ a finite set of tile designs and $\sigma$ a permutation of $T$ with
 $\sigma^4 = 1$, and for $k = 1, 2$ write $t_k$ for the number of designs $d \in T$ with
 $\sigma^k(d) = d$. Let $S$ be the torus shift sum of the three-quarter-turn cell map

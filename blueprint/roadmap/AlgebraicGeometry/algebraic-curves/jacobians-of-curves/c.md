@@ -1,6 +1,6 @@
 # Uniform Mordell–Lang constant
 
-**Uniform Mordell–Lang constant.** For natural numbers $g$ and $d$, $c(g, d)$ is a natural
+For natural numbers $g$ and $d$, $c(g, d)$ is a natural
 number: the constant in the uniform bound on rational points of curves in Theorem 1.1 of
 Dimitrov, Gao and Habegger.
 

@@ -1,6 +1,6 @@
 # Table of depths
 
-**Table of depths.** The list of the depths of tasks $0, \dots, n - 1$ of a computation DAG on
+The list of the depths of tasks $0, \dots, n - 1$ of a computation DAG on
 $n$ tasks, computed once each in topological order: the entry for task $k$ is $1$ plus the largest
 entry at a predecessor of $k$, or $1$ if $k$ has no predecessors.
 

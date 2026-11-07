@@ -1,6 +1,6 @@
 # Evaluation of an oracle machine with adaptive queries
 
-**Evaluation of an oracle machine with adaptive queries.** Let $\alpha$ be a type of
+Let $\alpha$ be a type of
 oracle answers and $\beta$ a type of outputs, and call a list of pairs of a bitstring and an
 element of $\alpha$ a history. Fix a length cap $c \in \mathbb{N}$, a next-query function $N$
 sending an input bitstring and a history to a bitstring, a decision function $F$ sending an

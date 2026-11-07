@@ -1,6 +1,6 @@
 # Transitions of static CCS
 
-**Transitions of static CCS.** The labelled transition relation $P \xrightarrow{\alpha} P'$ on
+The labelled transition relation $P \xrightarrow{\alpha} P'$ on
 static CCS processes, with actions $\alpha$ the CCS labels (silent $\tau$, inputs and outputs), is
 the least relation closed under the following rules, where $\alpha.P$ is the prefix, $P + Q$ the
 choice, $P \mid Q$ the parallel composition, $P \setminus L$ the restriction of $P$ by a finite

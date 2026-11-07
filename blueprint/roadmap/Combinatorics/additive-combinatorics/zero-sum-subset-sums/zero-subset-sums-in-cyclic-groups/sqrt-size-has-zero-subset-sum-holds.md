@@ -1,6 +1,6 @@
 # Zero subset sums of large sets in $\mathbb{Z}/N\mathbb{Z}$ (Erdős Problem 540)
 
-**Zero subset sums of large sets in $\mathbb{Z}/N\mathbb{Z}$ (Erdős Problem 540).** There is a real
+There is a real
 number $C > 0$ such that for every integer $N \ge 1$, every set $A \subseteq \mathbb{Z}/N\mathbb{Z}$
 with $|A| \ge C\sqrt{N}$ has a nonempty subset $S \subseteq A$ whose elements sum to $0$ in
 $\mathbb{Z}/N\mathbb{Z}$.

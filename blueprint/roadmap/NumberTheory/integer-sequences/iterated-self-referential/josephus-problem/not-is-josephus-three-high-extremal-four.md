@@ -1,6 +1,6 @@
 # $4$ is not a high extremal point of $J_3$
 
-**$4$ is not a high extremal point of $J_3$.** The number $4$ is not a high extremal point of
+The number $4$ is not a high extremal point of
 the Josephus function $J_3$ (elimination step $3$).
 
 Indeed $J_3(4) = 1$.

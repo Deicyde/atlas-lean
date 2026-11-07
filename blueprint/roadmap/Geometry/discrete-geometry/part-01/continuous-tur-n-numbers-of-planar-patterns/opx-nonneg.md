@@ -1,6 +1,6 @@
 # Nonnegativity of the continuous Turán number
 
-**Nonnegativity of the continuous Turán number.** For every real number $n$ and every set
+For every real number $n$ and every set
 $P \subseteq \mathbb{R}^2$, $\operatorname{opx}(n, P) \ge 0$.
 
 ## Sources

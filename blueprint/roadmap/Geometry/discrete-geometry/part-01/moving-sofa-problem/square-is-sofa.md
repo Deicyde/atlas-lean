@@ -1,6 +1,6 @@
 # The unit square is a sofa
 
-**The unit square is a sofa.** The unit square $[0,1] \times [0,1]$ in the complex plane is a
+The unit square $[0,1] \times [0,1]$ in the complex plane is a
 sofa: it is null-measurable for Lebesgue measure, connected, and there are continuous maps
 $u \colon [0,1] \to \{w \in \mathbb{C} : |w| = 1\}$ and $v \colon [0,1] \to \mathbb{C}$ such that
 the motion $z \mapsto u(t) z + v(t)$ carries the square into the entrance

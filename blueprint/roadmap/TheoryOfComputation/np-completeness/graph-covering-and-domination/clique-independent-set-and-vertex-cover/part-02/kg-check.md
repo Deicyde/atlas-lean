@@ -1,6 +1,6 @@
 # The verifier for CLIQUE, INDEPENDENT-SET and VERTEX-COVER
 
-**The verifier for CLIQUE, INDEPENDENT-SET and VERTEX-COVER.** For a mode $m$, an input
+For a mode $m$, an input
 $x$ and a witness $w$ (bit lists), the verifier rejects if $x$ does not decode to a triple
 $(k, n, \mathit{bits})$. Otherwise it accepts if and only if $\mathit{bits}$ has one bit per
 pair $(i, j)$ with $i < j < n$, $w$ has at least $n$ bits, exactly $k$ of the first $n$ bits of

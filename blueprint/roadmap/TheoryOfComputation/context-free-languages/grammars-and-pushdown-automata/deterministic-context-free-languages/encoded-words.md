@@ -1,6 +1,6 @@
 # Language of end-marker encoded words
 
-**Language of end-marker encoded words.** The encodings of words over `T`: the words over `T ⊕ Unit`
+The encodings of words over `T`: the words over `T ⊕ Unit`
 consisting of left letters followed by a single end marker.
 
 ## Sources

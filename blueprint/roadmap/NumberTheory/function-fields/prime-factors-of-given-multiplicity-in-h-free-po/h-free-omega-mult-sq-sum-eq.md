@@ -1,6 +1,5 @@
 # Series formula for the squared prime sum for multiplicity $k$ on $h$-free polynomials
 
-**Series formula for the squared prime sum for multiplicity $k$ on $h$-free polynomials.**
 Let $F$ be a finite field with $q$ elements and let $h$, $k$ be natural numbers. For a monic
 irreducible polynomial $P$ over $F$ write $|P| = q^{\deg P}$ and
 $a_P = |P|^{\max(h-k-1,\,0)} (|P| - 1)/(|P|^h - 1)$, read as $0$ when the denominator vanishes

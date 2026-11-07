@@ -1,6 +1,6 @@
 # Run of the literal routines of a clause (one-hot generator)
 
-**Run of the literal routines of a clause (one-hot generator).** Let $L$ be a layout with $g$
+Let $L$ be a layout with $g$
 symbol codes, let $c$ be a well-formed clause kind of a cell with $g$ symbol codes (the
 at-least-one clause, or the at-most-one clause $\mathrm{amo}(x, y)$ with $x < y$) with $n$
 literals, write $\mathrm{off}_c(l)$ for the offset of literal $l$ of $c$ from the cell base, and

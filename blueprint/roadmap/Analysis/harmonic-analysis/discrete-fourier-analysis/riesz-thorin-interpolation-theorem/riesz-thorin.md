@@ -1,6 +1,6 @@
 # Riesz–Thorin interpolation theorem on finite sets
 
-**Riesz–Thorin interpolation theorem on finite sets.** Let $\iota$ and $\kappa$ be finite
+Let $\iota$ and $\kappa$ be finite
 sets, each with a σ-algebra in which singletons are measurable and with the counting measure, and
 write $\|g\|_r \in [0, \infty]$ for the $\ell^r$ norm of $g$ with respect to the counting measure.
 Let $p_0, p_1, p, q_0, q_1, q \in [1, \infty]$ and $\theta \in [0, 1]$ satisfy

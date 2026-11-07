@@ -1,6 +1,6 @@
 # Dining philosophers with a butler
 
-**Dining philosophers with a butler.** The labelled transition system on the states of the
+The labelled transition system on the states of the
 three philosophers, labelled by the philosopher that moves: there is a step labelled $i$ from
 $s$ to $t$ exactly when philosopher $i$ can move in $s$ under the naive protocol, if
 philosopher $i$ is thinking then fewer than two philosophers hold a fork in $s$, and $t$ is $s$

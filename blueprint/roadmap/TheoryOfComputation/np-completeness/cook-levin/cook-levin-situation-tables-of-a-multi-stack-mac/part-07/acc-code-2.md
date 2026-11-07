@@ -1,6 +1,6 @@
 # Accept-code clauses pin the (label, state) code
 
-**Accept-code clauses pin the (label, state) code.** Let $E$ be an encoding of a finite stack
+Let $E$ be an encoding of a finite stack
 machine $M$ with $A_0$ (label, state) codes, let $\alpha$ be a symbol of the output stack of $M$,
 and let $T, H, u \in \mathbb{N}$ with $u < A_0$. In the layout of $E$ at height $H$, let $X[t, w]$
 be the label/state variable $w$ at time $t$, and call a variable $v$ true under an assignment $a$

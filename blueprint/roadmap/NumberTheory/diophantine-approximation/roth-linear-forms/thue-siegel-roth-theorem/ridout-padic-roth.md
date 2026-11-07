@@ -1,6 +1,6 @@
 # Ridout's $p$-adic extension of Roth's theorem
 
-**Ridout's $p$-adic extension of Roth's theorem.** Let $\xi$ be an irrational real algebraic
+Let $\xi$ be an irrational real algebraic
 number, let $\varepsilon > 0$, and let $S$ be a finite set of primes. For a rational number $r$,
 write $r = p/q$ in lowest terms with $p \in \mathbb{Z}$ and $q \ge 1$, and let
 $H(r) = \max(|p|, q)$ be its height. For a prime $\ell$, let $|\cdot|_\ell$ be the $\ell$-adic

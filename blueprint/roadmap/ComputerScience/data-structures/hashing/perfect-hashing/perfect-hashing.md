@@ -1,6 +1,6 @@
 # Two-level perfect hash table
 
-**Two-level perfect hash table.** Fix a type $\alpha$ of keys, a type $\beta$ of values and a
+Fix a type $\alpha$ of keys, a type $\beta$ of values and a
 primary hash function $h : \alpha \to \mathbb{N}$. A two-level (FKS) perfect hash table consists
 of a number $b > 0$ of buckets and, for each bucket $i < b$, a secondary size $m_i \in \mathbb{N}$,
 a secondary hash function $h_i : \alpha \to \mathbb{N}$ and a secondary table of $m_i$ slots, each

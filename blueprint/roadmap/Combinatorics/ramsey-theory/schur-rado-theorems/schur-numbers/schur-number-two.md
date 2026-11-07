@@ -1,6 +1,6 @@
 # The second Schur number
 
-**The second Schur number.** The Schur number $S(2)$ equals $4$.
+The Schur number $S(2)$ equals $4$.
 
 ## Sources
 

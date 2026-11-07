@@ -1,6 +1,6 @@
 # Frisch's alternating reciprocal-binomial identity
 
-**Frisch's alternating reciprocal-binomial identity.** For natural numbers $n$, $b$ and $c$
+For natural numbers $n$, $b$ and $c$
 with $0 < c \le b$, the rational numbers
 $\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{b+k}{c}^{-1}$ and
 $\frac{c}{n+c} \binom{n+b}{b-c}^{-1}$ are equal.

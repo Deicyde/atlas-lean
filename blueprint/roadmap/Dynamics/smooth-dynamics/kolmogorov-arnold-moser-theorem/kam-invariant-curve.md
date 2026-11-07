@@ -1,6 +1,6 @@
 # KAM theorem for twist maps (persistence of an invariant curve)
 
-**KAM theorem for twist maps (persistence of an invariant curve).** Let $\alpha$ be a
+Let $\alpha$ be a
 Diophantine real number and let $f : \mathbb{R} \to \mathbb{R}$ be real-analytic, $1$-periodic and
 not constant, with $\int_0^1 f(x)\,dx = 0$. Then there is $c_0 > 0$ such that for every real $c$
 with $|c| < c_0$ there is a $C^\infty$, strictly increasing function $q : \mathbb{R} \to \mathbb{R}$

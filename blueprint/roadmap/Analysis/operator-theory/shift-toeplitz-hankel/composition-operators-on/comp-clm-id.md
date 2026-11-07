@@ -1,3 +1,3 @@
 # Composition operator of the identity is the identity
 
-**Composition operator of the identity is the identity.** `C_id` is the identity operator.
+`C_id` is the identity operator.

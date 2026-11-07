@@ -1,6 +1,6 @@
 # A prime factor above $9m/5$ in a product of consecutive integers
 
-**A prime factor above $9m/5$ in a product of consecutive integers.** Let $m$ and $n$ be
+Let $m$ and $n$ be
 natural numbers with $2 < m < n$ and $n + m \ge 150$. Then the product $n(n+1)\cdots(n+m-1)$ has
 a prime divisor $p$ with $p > 9m/5$.
 

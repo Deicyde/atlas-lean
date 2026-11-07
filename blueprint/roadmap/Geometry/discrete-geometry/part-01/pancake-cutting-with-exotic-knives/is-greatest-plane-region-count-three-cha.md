@@ -1,6 +1,6 @@
 # Maximum region count for 3-chains
 
-**Maximum region count for 3-chains.** For points $p, q \in \mathbb{R}^2$ and nonzero vectors
+For points $p, q \in \mathbb{R}^2$ and nonzero vectors
 $u, v \in \mathbb{R}^2$, the 3-chain is the union of the ray $\{p + s u : s \ge 0\}$, the segment
 $[p, q]$ and the ray $\{q + s v : s \ge 0\}$; the directions are arbitrary and the 3-chain may
 intersect itself. For every natural number $n$, the largest number of regions into which the

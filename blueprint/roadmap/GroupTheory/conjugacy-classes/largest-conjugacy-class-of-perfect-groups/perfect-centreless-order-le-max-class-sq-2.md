@@ -1,6 +1,5 @@
 # Perfect centreless groups need not have order at most the square of the largest class size
 
-**Perfect centreless groups need not have order at most the square of the largest class size.**
 It is not true that every finite group $G$ that is perfect ($[G, G] = G$) and has trivial centre
 contains an element $x$ with $|G| \le |x^G|^2$, where $x^G$ is the conjugacy class of $x$. That
 is, some perfect centreless finite group $G$ satisfies $|G| > n^2$, where $n$ is the largest size

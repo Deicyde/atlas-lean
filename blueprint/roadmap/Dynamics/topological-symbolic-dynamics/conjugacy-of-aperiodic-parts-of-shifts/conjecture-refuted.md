@@ -1,6 +1,5 @@
 # The aperiodic parts of the full 2-shift and the 3-colouring shift are not conjugate
 
-**The aperiodic parts of the full 2-shift and the 3-colouring shift are not conjugate.**
 Let $X$ be the full 2-shift, $Y$ the proper 3-colouring shift, and $\sigma$ the left shift on
 each. There is no homeomorphism $e$ from the aperiodic part of $X$ onto the aperiodic part of
 $Y$, each with the subspace topology, such that $e(\sigma a) = \sigma(e(a))$ for every $a$ in the

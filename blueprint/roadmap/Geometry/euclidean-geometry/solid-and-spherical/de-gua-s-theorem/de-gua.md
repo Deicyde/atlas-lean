@@ -1,6 +1,6 @@
 # De Gua's theorem
 
-**De Gua's theorem.** Let $u, v, w \in \mathbb{R}^3$ be pairwise orthogonal vectors, so that
+Let $u, v, w \in \mathbb{R}^3$ be pairwise orthogonal vectors, so that
 the tetrahedron with vertices $0, u, v, w$ has a right angle between any two of the edges at $0$.
 Write $|x|$ for the Euclidean norm and $\langle x, y \rangle$ for the inner product. Let
 $A_{uv}, A_{uw}, A_{vw}, A$ be real numbers with $A_{uv} = |u||v|/2$, $A_{uw} = |u||w|/2$,

@@ -1,6 +1,6 @@
 # Binomial polynomial
 
-**Binomial polynomial.** For an integer $n$ and a natural number $d$, the binomial polynomial
+For an integer $n$ and a natural number $d$, the binomial polynomial
 $\binom{X+n}{d}$ is the real polynomial $\frac{1}{d!} \prod_{i=0}^{d-1} (X + n - i)$.
 
 ## Sources

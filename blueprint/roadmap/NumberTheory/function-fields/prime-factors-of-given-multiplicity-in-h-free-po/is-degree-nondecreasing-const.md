@@ -1,6 +1,6 @@
 # Constant functions are degree-nondecreasing
 
-**Constant functions are degree-nondecreasing.** Let $F$ be a field and $U$ a set of
+Let $F$ be a field and $U$ a set of
 polynomials over $F$. For every real number $c$, the constant function with value $c$ is
 degree-nondecreasing on $U$.
 

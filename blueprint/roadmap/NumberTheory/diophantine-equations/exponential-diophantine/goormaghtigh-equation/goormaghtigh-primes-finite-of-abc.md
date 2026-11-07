@@ -1,6 +1,6 @@
 # Under abc, there are only finitely many Goormaghtigh primes
 
-**Under abc, there are only finitely many Goormaghtigh primes.** Assume the abc conjecture in
+Assume the abc conjecture in
 the following form: for every real $\varepsilon > 0$, there are only finitely many triples
 $(a, b, c)$ of positive integers with $a + b = c$, $\gcd(a, b) = 1$ and
 $\operatorname{rad}(abc)^{1 + \varepsilon} \le c$, where $\operatorname{rad}(k)$ is the product of

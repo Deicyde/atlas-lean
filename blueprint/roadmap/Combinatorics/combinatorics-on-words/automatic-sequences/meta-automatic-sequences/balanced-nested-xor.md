@@ -1,6 +1,6 @@
 # Nested indices in balanced binary sequences
 
-**Nested indices in balanced binary sequences.** Let $a : \mathbb{N} \to \{0, 1\}$ satisfy
+Let $a : \mathbb{N} \to \{0, 1\}$ satisfy
 $a(2n) + a(2n+1) = 1$ for every $n \in \mathbb{N}$, and write $\oplus$ for addition modulo $2$.
 Then for every $n \in \mathbb{N}$, $a(2n + a(n)) = a(2n) \oplus a(n)$ and
 $a(2n + 1 - a(n)) = a(2n+1) \oplus a(n)$.

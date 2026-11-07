@@ -1,6 +1,6 @@
 # Genocchi–Lucas coefficients
 
-**Genocchi–Lucas coefficients.** For a natural number $n$, the Genocchi–Lucas coefficient is
+For a natural number $n$, the Genocchi–Lucas coefficient is
 the real number
 
 $$

@@ -1,6 +1,5 @@
 # Representation numbers of the quaternary forms $(1,1,10,10)$ and $(2,2,5,5)$
 
-**Representation numbers of the quaternary forms $(1,1,10,10)$ and $(2,2,5,5)$.**
 For a complex number $q$ write $f_k = \prod_{m \ge 1} (1 - q^{km})$. For
 integers $a, b, c, d$ and $n$, let $N(a,b,c,d;n)$ be the number of $(x_1, x_2, x_3, x_4) \in
 \mathbb{Z}^4$ with $a x_1^2 + b x_2^2 + c x_3^2 + d x_4^2 = n$, and let $\sigma(n/k)$ be the sum

@@ -1,6 +1,6 @@
 # Program of the clique verifier
 
-**Program of the clique verifier.** For a mode $m$ (clique, independent set or vertex
+For a mode $m$ (clique, independent set or vertex
 cover), the verifier program of mode $m$ assigns a statement to each label of the verifier: to
 the label that reads the instance's target size $k$, the unary reader onto the counter $C$ with
 own label this label and next label the label that reads the instance's number $n$ of vertices;

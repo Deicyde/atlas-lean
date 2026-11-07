@@ -1,6 +1,6 @@
 # Parseval / sum-of-squares for characters
 
-**Parseval / sum-of-squares for characters.** If `χ` is a combination
+If `χ` is a combination
 of the characters of pairwise non-equivalent irreducible representations
 with coefficients `n i`, then the self-pairing of `χ` is the sum of the
 squares of the coefficients. In particular, for a single irreducible

@@ -1,3 +1,3 @@
 # Inf-sup condition makes the associated operator injective
 
-**Inf-sup condition makes the associated operator injective.** The inf–sup condition makes `bilinearFormSharp B` injective.
+The inf–sup condition makes `bilinearFormSharp B` injective.

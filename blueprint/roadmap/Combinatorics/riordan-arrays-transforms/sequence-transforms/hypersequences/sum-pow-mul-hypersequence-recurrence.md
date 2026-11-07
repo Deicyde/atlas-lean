@@ -1,6 +1,6 @@
 # Recurrence for power-weighted sums of hypersequences
 
-**Recurrence for power-weighted sums of hypersequences.** Let $a$ be a sequence of complex
+Let $a$ be a sequence of complex
 numbers, let $a^{(r)}_k$ denote its hypersequence of generation $r$, and for natural numbers
 $\ell$, $r$ and $n$ let $t^{(r)}_\ell(n) = \sum_{k=0}^{n} k^\ell a^{(r)}_k$, with the convention
 $0^0 = 1$. Then for all natural numbers $\ell$, $r$ and $n$,

@@ -1,6 +1,6 @@
 # Almost multiplicativity at a primitive sixth root of unity
 
-**Almost multiplicativity at a primitive sixth root of unity.** Let $\omega \in \mathbb{C}$ be a
+Let $\omega \in \mathbb{C}$ be a
 primitive sixth root of unity, and for $n \ge 1$ let $v_n = |\bar P_n(\omega + \omega^{-1})|$,
 where $\bar P_n$ is the Kassel–Reutenauer polynomial. Let $m, n \ge 1$ be coprime. Then
 $v_m v_n = v_{mn}$ if $(m \bmod 3, n \bmod 3)$ is $(0, 1)$, $(1, 1)$ or $(1, 2)$;

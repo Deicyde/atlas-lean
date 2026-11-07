@@ -1,6 +1,6 @@
 # Linear recurrence for INVERT convolution powers via partial Bell polynomials
 
-**Linear recurrence for INVERT convolution powers via partial Bell polynomials.** Let $K$ be a
+Let $K$ be a
 field of characteristic zero, let $(c_m)_{m \ge 0}$ and $(y_n)_{n \ge 0}$ be sequences in $K$, and
 write $B_{n,k}$ for the partial Bell polynomial. Suppose that for every $n \ge 0$
 

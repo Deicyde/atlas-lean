@@ -1,6 +1,6 @@
 # Bound for a Dirichlet series by its prime sum
 
-**Bound for a Dirichlet series by its prime sum.** Let $g$ be a complex-valued completely
+Let $g$ be a complex-valued completely
 multiplicative arithmetic function with $g(1) = 1$ and $|g(n)| \le 1$ for every $n$, and let
 $F(s) = \sum_{n \ge 1} g(n) n^{-s}$ be its Dirichlet series. Let
 $\nu_2 = \sum_p (-\log(1 - 1/p) - 1/p)$, summed over all primes $p$. Then $\nu_2 \le 0.316$, and

@@ -1,6 +1,6 @@
 # Ramanujan's extension of the partial sums of a smooth function
 
-**Ramanujan's extension of the partial sums of a smooth function.** Let
+Let
 $f : \mathbb{R} \to \mathbb{R}$ be infinitely differentiable and let $\rho > 0$. Suppose that for
 every $q \in \mathbb{N}$ and every $x \in \mathbb{R}$ the series
 $\sum_{k \ge 0} f^{(q)}(k + 1 + x)$ converges absolutely, and that for every $q \in \mathbb{N}$

@@ -1,6 +1,6 @@
 # Threshold for good sequences in $\mathbb{Z}/35^k\mathbb{Z}$
 
-**Threshold for good sequences in $\mathbb{Z}/35^k\mathbb{Z}$.** Write $\lg = \log_2$. Let $t$
+Write $\lg = \log_2$. Let $t$
 be a threshold function, in $k$, for the probability that a uniformly random sequence of $s$
 elements of $\mathbb{Z}/35^k\mathbb{Z}$ is good. Then there is a real constant $C$ such that for
 all sufficiently large $k$,

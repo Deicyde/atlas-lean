@@ -1,6 +1,6 @@
 # Lit cells when only the first column is lit
 
-**Lit cells when only the first column is lit.** For a partition $p$ of $n$ with $\ell \ge 1$
+For a partition $p$ of $n$ with $\ell \ge 1$
 parts $x_1 \ge x_2 \ge \cdots \ge x_\ell$, say that only the first column of its weakly
 decreasing bargraph is lit when the number of lit cells of $p$ equals its largest part $x_1$,
 that is, when $x_i + i - 1 \le x_1$ for $1 \le i \le \ell$. Let $F(q) \in \mathbb{Z}[[q]]$ be

@@ -1,6 +1,6 @@
 # Gaps in the first column of the Trithoff array
 
-**Gaps in the first column of the Trithoff array.** Let $f_1 < f_2 < \cdots$ be the positive
+Let $f_1 < f_2 < \cdots$ be the positive
 integers whose Tribonacci representation ends in the digit $1$ (OEIS A003265, the first column
 of the Trithoff array). For every $j \ge 1$ the difference $f_{j+1} - f_j$ is $2$ or $3$, and
 $f_{j+1} - f_j = 3$ exactly when $j = p_a(k) + p_b(k)$ for some $k \ge 1$, where $p_a(k)$ and

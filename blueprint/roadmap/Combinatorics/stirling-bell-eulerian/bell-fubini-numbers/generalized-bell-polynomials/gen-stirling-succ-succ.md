@@ -1,6 +1,6 @@
 # Recurrence for generalized Stirling numbers
 
-**Recurrence for generalized Stirling numbers.** Let $R$ be a commutative ring and
+Let $R$ be a commutative ring and
 $s, h \in R$. The generalized Stirling numbers $\mathfrak{S}_{s;h}(n, k) \in R$ are defined by
 $\mathfrak{S}_{s;h}(0, 0) = 1$, $\mathfrak{S}_{s;h}(0, k + 1) = \mathfrak{S}_{s;h}(n + 1, 0) = 0$
 and the recurrence below. For all natural numbers $n$ and $k$,

@@ -1,6 +1,6 @@
 # Bivariate LD-score model
 
-**Bivariate LD-score model.** The bivariate LD-score model (Bulik-Sullivan et al. 2015b), at the level of the cross
+The bivariate LD-score model (Bulik-Sullivan et al. 2015b), at the level of the cross
 second moments that enter `𝔼[z₁ z₂]`: a pool of `n` genotyped individuals with genotype matrix
 `X`, two GWAS samples `S₁`, `S₂` of the pool (possibly overlapping), effects `β₁`, `β₂` with
 `∫ β₁ k β₂ l = (ρ_g / M) [k = l]` (genetic covariance `ρ_g`), noises `ε₁`, `ε₂` with

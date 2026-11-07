@@ -1,6 +1,6 @@
 # Convergence of a factorial series in a sector, general form
 
-**Convergence of a factorial series in a sector, general form.** Let $a_0, a_1, \ldots$ be
+Let $a_0, a_1, \ldots$ be
 complex numbers, let $\lambda$ be either a real number or $-\infty$, and let $\varepsilon > 0$.
 Suppose that the series
 

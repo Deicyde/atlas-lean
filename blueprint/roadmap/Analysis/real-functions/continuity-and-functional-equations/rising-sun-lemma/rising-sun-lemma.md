@@ -1,6 +1,6 @@
 # Riesz's rising sun lemma
 
-**Riesz's rising sun lemma.** Let $a < b$ be real numbers and let
+Let $a < b$ be real numbers and let
 $f : \mathbb{R} \to \mathbb{R}$ be continuous on $[a, b]$. Then $f$ has the rising sun property
 on $[a, b]$.
 

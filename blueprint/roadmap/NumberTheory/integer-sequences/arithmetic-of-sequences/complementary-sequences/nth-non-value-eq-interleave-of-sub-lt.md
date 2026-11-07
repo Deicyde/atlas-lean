@@ -1,6 +1,6 @@
 # Interleaving formula when $f(m) - \alpha(m) < m$
 
-**Interleaving formula when $f(m) - \alpha(m) < m$.** Let
+Let
 $f : \mathbb{N} \to \mathbb{N}$ satisfy $f(1) \ge 1$ and $f(m + 1) \ge f(m) + m$ for all $m \ge 1$,
 and for $n \ge 1$ let $f_P(n)$ be the $n$-th positive integer that is not a value $f(m)$ with
 $m \ge 1$. Let $\alpha : \mathbb{N} \to \mathbb{R}$ satisfy $f(m - 1) \le \alpha(m) \le f(m)$ for

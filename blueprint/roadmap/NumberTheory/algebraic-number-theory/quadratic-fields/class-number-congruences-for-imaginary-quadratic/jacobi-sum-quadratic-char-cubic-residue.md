@@ -1,6 +1,6 @@
 # Jacobi sums of the quadratic and the cubic residue character
 
-**Jacobi sums of the quadratic and the cubic residue character.** Let $K$ be a number field
+Let $K$ be a number field
 generated over $\mathbb{Q}$ by a primitive cube root of unity, with ring of integers
 $\mathcal{O}_K$. Let $\mu \in \mathcal{O}_K$ with $\mu \equiv 1 \pmod 3$, and let $p$ be a prime
 such that the norm of $\mu$ from $\mathcal{O}_K$ to $\mathbb{Z}$ is $p$. Let

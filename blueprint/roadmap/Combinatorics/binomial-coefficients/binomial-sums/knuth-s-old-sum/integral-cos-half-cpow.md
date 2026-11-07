@@ -1,6 +1,6 @@
 # Integral of a complex power of $\cos(x/2)$ over $(0, \pi)$
 
-**Integral of a complex power of $\cos(x/2)$ over $[0, \pi]$.** For every complex number $u$
+For every complex number $u$
 with $\operatorname{Re} u > -1$,
 
 $$

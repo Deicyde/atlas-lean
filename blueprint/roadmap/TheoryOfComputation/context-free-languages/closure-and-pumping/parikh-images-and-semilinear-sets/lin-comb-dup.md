@@ -1,6 +1,6 @@
 # Duplicate periods get independent coefficients
 
-**Duplicate periods get independent coefficients.** Duplicate periods get independent coefficients: with
+Duplicate periods get independent coefficients: with
 `P = [p, p]`, the coefficients `(1, 0)` give `p`.
 
 ## Sources

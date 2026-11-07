@@ -1,6 +1,6 @@
 # Borel–Cantelli dichotomy for Lüroth cylinder events
 
-**Borel–Cantelli dichotomy for Lüroth cylinder events.** Let $m \in \mathbb{N}$, let
+Let $m \in \mathbb{N}$, let
 $(S_n)_{n \ge 0}$ be a sequence of sets of $m$-tuples of natural numbers, write $d_k(x)$ for
 the $k$-th Lüroth digit of $x$ and $\lambda$ for Lebesgue measure. Put
 $A_n = \{x \in (0, 1] : (d_1(x), \dots, d_m(x)) \in S_n\}$ (a union of cylinders of level $m$)

@@ -1,6 +1,6 @@
 # Inverse FFT by conjugation
 
-**Inverse FFT by conjugation.** Let $R$ be a field that is a star ring, with star operation
+Let $R$ be a field that is a star ring, with star operation
 $z \mapsto \bar z$. For a natural number $d$, an element $\omega \in R$ and a vector
 $x \in R^{2^d}$, the inverse FFT conjugates every entry of $x$, applies the radix-two FFT with
 root $\omega$, conjugates every entry of the result, and multiplies every entry by the inverse

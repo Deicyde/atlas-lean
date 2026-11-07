@@ -1,6 +1,6 @@
 # Fuel-bounded Cartesian tree construction
 
-**Fuel-bounded Cartesian tree construction.** Let $\alpha$ be a linear order. For a natural
+Let $\alpha$ be a linear order. For a natural
 number $n$ (the fuel) and a list $xs$ over $\alpha$, the tree built from $xs$ with fuel $n$ is
 the empty tree if $n = 0$ or $xs$ is empty. Otherwise $n = k + 1$ and $xs$ is nonempty; let $m$
 be the minimum of $xs$, and let $L$ and $R$ be the parts of $xs$ before and after the first

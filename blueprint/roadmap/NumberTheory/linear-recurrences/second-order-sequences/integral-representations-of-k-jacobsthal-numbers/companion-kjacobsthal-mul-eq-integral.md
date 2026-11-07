@@ -1,6 +1,6 @@
 # Integral representation of the companion $k$-Jacobsthal numbers
 
-**Integral representation of the companion $k$-Jacobsthal numbers.** Let $k$, $\ell$, $n$ be
+Let $k$, $\ell$, $n$ be
 natural numbers and $a, b$ integers. Write $\mathcal{J}_{k,m} = \mathcal{J}_{k,m}(a, b)$ for the
 companion $k$-Jacobsthal numbers, $J_{k,m} = U_m(k, -2)$ and $j_{k,m} = V_m(k, -2)$ for the
 $k$-Jacobsthal and $k$-Jacobsthal-Lucas numbers, and $\Delta_k = \sqrt{k^2 + 8}$. Then, in

@@ -1,6 +1,6 @@
 # Signed count of compositions with exactly $m$ parts less than $k$
 
-**Signed count of compositions with exactly $m$ parts less than $k$.** Let $k, n \ge 1$ and
+Let $k, n \ge 1$ and
 $m \ge 0$. Among the compositions of $n + k - 1$ with exactly $m$ parts less than $k$, the number
 with an odd number of parts minus the number with an even number of parts is the sum of
 $(-1)^{i+\ell+1} \binom{i+j-1}{j} \binom{i}{m} \binom{m}{\ell}$ over all $i, j, \ell \ge 0$ with

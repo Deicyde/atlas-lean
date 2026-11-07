@@ -1,6 +1,6 @@
 # The simulation is faithful
 
-**The simulation is faithful.** Let $P$ be an oral-message protocol for a finite set $G$ of
+Let $P$ be an oral-message protocol for a finite set $G$ of
 generals with messages $M$, let $c \in G$, and let $\mathrm{grp} : G \to \{0, 1, 2\}$ and
 $\mathrm{rep} : \{0, 1, 2\} \to G$ with $\mathrm{grp}(c) = 0$. Fix an order $v$, a set
 $S \subseteq \{0, 1, 2\}$ of traitors and a traitor behaviour $a$ for the simulation of $P$

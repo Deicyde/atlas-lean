@@ -1,6 +1,6 @@
 # Latin squares of order zero
 
-**Latin squares of order zero.** There is exactly one Latin square of order $0$, that is,
+There is exactly one Latin square of order $0$, that is,
 $L_0 = 1$.
 
 ## Sources

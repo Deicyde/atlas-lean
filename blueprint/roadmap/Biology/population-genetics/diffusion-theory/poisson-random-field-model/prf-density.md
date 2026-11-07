@@ -1,6 +1,6 @@
 # Sawyer–Hartl Poisson random field density
 
-**Sawyer–Hartl Poisson random field density.** The Sawyer–Hartl (1992) Poisson-random-field density: the expected number of sites per unit
+The Sawyer–Hartl (1992) Poisson-random-field density: the expected number of sites per unit
 frequency at which the derived allele has frequency `x`, for scaled mutation rate `θ = 4Nu`
 and scaled genic selection `σ = 2Ns`:
 `θ · u_σ(1 - x) / (x (1 - x))` with `u_σ = kimuraFixation σ`, i.e.

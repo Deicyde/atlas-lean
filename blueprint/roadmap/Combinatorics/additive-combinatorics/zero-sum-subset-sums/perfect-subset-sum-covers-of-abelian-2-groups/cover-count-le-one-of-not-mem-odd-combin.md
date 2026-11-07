@@ -1,6 +1,6 @@
 # Distinct subset sums from the odd-combination condition
 
-**Distinct subset sums from the odd-combination condition.** Let $G$ be an abelian group,
+Let $G$ be an abelian group,
 and for a finite set $A \subseteq G$ write $\mathcal{T}(A)$ for the set of odd combinations of
 $A$. Let $x = (x_1, \dots, x_m)$ be a family in $G$ such that
 $x_i \notin \mathcal{T}(\{x_1, \dots, x_{i-1}\})$ for every $i$ (for $i = 1$ this says

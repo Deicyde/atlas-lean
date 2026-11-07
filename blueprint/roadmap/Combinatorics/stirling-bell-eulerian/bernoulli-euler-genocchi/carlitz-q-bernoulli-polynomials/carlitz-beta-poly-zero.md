@@ -1,6 +1,6 @@
 # The zeroth Carlitz $q$-Bernoulli polynomial
 
-**The zeroth Carlitz $q$-Bernoulli polynomial.** For real $q \ne 1$ and every real $x$, the
+For real $q \ne 1$ and every real $x$, the
 Carlitz $q$-Bernoulli polynomial $\beta_0(x)$ equals $1$.
 
 ## Sources

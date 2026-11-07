@@ -1,6 +1,6 @@
 # $D$-nodes and $S$-nodes of a full binary tree
 
-**$D$-nodes and $S$-nodes of a full binary tree.** Let $t$ be a full binary tree with $n$
+Let $t$ be a full binary tree with $n$
 leaves and let $a$ be the number of $S$-nodes of $t$. Then the number of $D$-nodes of $t$ is
 $n - 1 - a$ (subtraction of natural numbers, truncated at $0$).
 

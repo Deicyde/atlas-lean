@@ -1,6 +1,6 @@
 # The $k$-Jacobsthal-Lucas number $j_{k,2}$
 
-**The $k$-Jacobsthal-Lucas number $j_{k,2}$.** For every natural number $k$, the
+For every natural number $k$, the
 $k$-Jacobsthal-Lucas numbers $j_{k,n} = V_n(k, -2)$, the Lucas sequence $V$ with parameters
 $(P, Q) = (k, -2)$, satisfy $j_{k,2} = k^2 + 4$.
 

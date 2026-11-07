@@ -1,6 +1,6 @@
 # The pushed-fill chain of the cell-shift generator
 
-**The pushed-fill chain of the cell-shift generator.** Let $L$ be a layout with label block
+Let $L$ be a layout with label block
 size $A$, $K$ stacks and $g$ symbol codes, let $W = A + K H g$ be the row width and
 $V = (T + 1) W$ the number of variables, and let the tables $s_a, p, c, p_u$ be well formed for
 $N$ situations and height $H$. Let $t < T$, $i < N$, $k < K$, and let $F$ be counter values in

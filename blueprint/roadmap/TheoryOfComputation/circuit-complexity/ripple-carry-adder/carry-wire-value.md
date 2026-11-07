@@ -1,6 +1,6 @@
 # Value of the carry wire
 
-**Value of the carry wire.** Let $x$ and $y$ be $n$-bit vectors, $c$ a bit, and $i$ and $g$
+Let $x$ and $y$ be $n$-bit vectors, $c$ a bit, and $i$ and $g$
 natural numbers with $5i \le g$. Suppose the first $g$ gates are given values $v_0, \dots, v_{g-1}$
 with each $v_j$ equal to the specified value of gate $j$ of the adder on $x$, $y$, $c$. Then, on
 the adder input for $x$, $y$, $c$ and with these gate values, the carry wire into bit $i$ carries

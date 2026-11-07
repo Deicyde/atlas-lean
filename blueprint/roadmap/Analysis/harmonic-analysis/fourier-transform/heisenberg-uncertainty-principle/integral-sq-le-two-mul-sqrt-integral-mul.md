@@ -1,6 +1,6 @@
 # Weighted $L^2$ inequality for real Schwartz functions
 
-**Weighted $L^2$ inequality for real Schwartz functions.** For every real-valued Schwartz
+For every real-valued Schwartz
 function $f : \mathbb{R} \to \mathbb{R}$,
 
 $$

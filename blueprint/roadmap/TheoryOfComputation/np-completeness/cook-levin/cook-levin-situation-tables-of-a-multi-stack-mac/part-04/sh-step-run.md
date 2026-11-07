@@ -1,6 +1,6 @@
 # Exact shift step on a real run (L3)
 
-**Exact shift step on a real run (L3).** Let $M$ be a finite multi-stack Turing machine and
+Let $M$ be a finite multi-stack Turing machine and
 $E$ an encoding of $M$ with $K$ numbered stacks, $g$ symbol codes, tables $sa$, $pl$, $cn$, $pu$
 and $N$ situations, let $T, H, t \in \mathbb{N}$ with $t < T$, and let $a$ be an assignment
 satisfying the cell-shift clause family of the layout of $E$ with these tables and bounds $N$,

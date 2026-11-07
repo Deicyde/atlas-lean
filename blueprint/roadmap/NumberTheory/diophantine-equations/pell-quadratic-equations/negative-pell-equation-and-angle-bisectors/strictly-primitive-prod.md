@@ -1,6 +1,6 @@
 # Products of strictly primitive solutions
 
-**Products of strictly primitive solutions.** Let $d > 1$ be a square-free integer. Write
+Let $d > 1$ be a square-free integer. Write
 elements of $\mathbb{Z}[\sqrt{d}]$ as $u + v\sqrt{d}$ with integers $u, v$, and let
 $N(u + v\sqrt{d}) = u^2 - d v^2$ be the norm. Let $p_1, \dots, p_r$ be distinct primes and
 $n_1, \dots, n_r$ natural numbers, and suppose that each $a_i = u_i + v_i\sqrt{d}$ satisfies

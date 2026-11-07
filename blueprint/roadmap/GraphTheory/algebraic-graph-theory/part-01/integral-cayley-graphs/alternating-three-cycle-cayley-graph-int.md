@@ -1,6 +1,6 @@
 # The Kourovka 19.50(b) integrality claim
 
-**The Kourovka 19.50(b) integrality claim.** For $n \ge 3$ let $S$ be the set of $3$-cycles
+For $n \ge 3$ let $S$ be the set of $3$-cycles
 $(1\,2\,k)$ with $3 \le k \le n$ on the points $1, \dots, n$, and let $R = S \cup S^{-1}$, a subset
 of the alternating group $A_n$. This is the proposition that for every $n \ge 3$ the Cayley graph
 $\mathrm{Cay}(A_n, R)$ is integral. Here $\mathrm{Cay}(A_n, R)$ has vertex set $A_n$, distinct $x$

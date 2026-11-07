@@ -1,6 +1,6 @@
 # Negative answer to Scottish Book Problem 167
 
-**Negative answer to Scottish Book Problem 167.** Ulam's claim in Problem 167 is false: there
+Ulam's claim in Problem 167 is false: there
 are an infinite-dimensional real Hilbert space $H$ with unit sphere $S$, a number
 $n \in \mathbb{N}$, continuous functions $f_1, \dots, f_n : S \to \mathbb{R}$ and a continuous map
 $T : S \to S$ such that no point $p_0 \in S$ satisfies $f_i(T(p_0)) = f_i(p_0)$ for every $i$.

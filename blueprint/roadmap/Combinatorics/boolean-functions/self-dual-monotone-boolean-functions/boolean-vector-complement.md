@@ -1,6 +1,6 @@
 # Complement of a Boolean vector
 
-**Complement of a Boolean vector.** The complement of a Boolean vector $x \in \{0,1\}^n$ is
+The complement of a Boolean vector $x \in \{0,1\}^n$ is
 the vector $\bar x \in \{0,1\}^n$ obtained by negating every coordinate: $\bar x_i = \lnot x_i$
 for every $i < n$.
 

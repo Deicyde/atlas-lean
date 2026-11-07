@@ -1,6 +1,6 @@
 # Change of modulus of a congruence subgroup
 
-**Change of modulus of a congruence subgroup.** Let $C_1$ be a congruence subgroup for a
+Let $C_1$ be a congruence subgroup for a
 modulus $\mathfrak m_1$ of a number field $K$, viewed as a subgroup of the group of nonzero
 fractional ideals of $K$, and let $\mathfrak m_2$ be any modulus of $K$. Write
 $I^{\mathfrak m_2}$ for the group of nonzero fractional ideals of $K$ coprime to the finite part

@@ -1,6 +1,6 @@
 # Power-weighted convolution of k-Fibonacci numbers
 
-**Power-weighted convolution of k-Fibonacci numbers.** Let $k$ be a nonzero integer and let
+Let $k$ be a nonzero integer and let
 $F_{k,n}$ be the $k$-Fibonacci numbers, the Lucas sequence $U(k, -1)$: $F_{k,0} = 0$,
 $F_{k,1} = 1$ and $F_{k,n+2} = k F_{k,n+1} + F_{k,n}$. Let $A_k^{(0)} = 1$ and
 $A_k^{(p)} = \frac{2}{k} \sum_{j=1}^{\lceil p/2 \rceil} \binom{p}{2j-1} A_k^{(p-2j+1)}$ for

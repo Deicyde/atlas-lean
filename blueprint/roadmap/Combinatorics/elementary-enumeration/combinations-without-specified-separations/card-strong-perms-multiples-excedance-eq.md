@@ -1,6 +1,6 @@
 # Excedances of strongly restricted permutations with displacements $-m$, $0$, $jm$
 
-**Excedances of strongly restricted permutations with displacements $-m$, $0$, $jm$.** Let
+Let
 $m, j, i, r, k$ be natural numbers with $j \ge 1$ and $r < m$, and let $f_n(x)$ be the
 $(1, j+1)$-bonacci polynomials with natural-number coefficients: $f_0(x) = 1$, and
 $f_{n+1}(x) = f_n(x) + x f_{n-j}(x)$ if $n \ge j$, $f_{n+1}(x) = f_n(x)$ if $n < j$. Then the

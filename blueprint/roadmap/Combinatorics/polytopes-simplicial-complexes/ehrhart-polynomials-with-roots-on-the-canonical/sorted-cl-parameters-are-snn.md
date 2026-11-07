@@ -1,6 +1,6 @@
 # Small sorted CL parameters give an SNN polynomial
 
-**Small sorted CL parameters give an SNN polynomial.** Let $f$ be a complex polynomial of
+Let $f$ be a complex polynomial of
 degree $d$, let $a > 0$ be real, and let $c_0 \le c_1 \le \dots \le c_{m-1}$ be real numbers, each
 at least $1/4$, with $m = \lfloor d/2 \rfloor$, such that $f = a \prod_{k=0}^{m-1} (X^2 + X + c_k)$
 if $d$ is even and $f = a (2X + 1) \prod_{k=0}^{m-1} (X^2 + X + c_k)$ if $d$ is odd. Suppose that

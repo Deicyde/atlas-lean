@@ -1,6 +1,6 @@
 # Failed open-addressing insertion finds every probed slot taken
 
-**Failed open-addressing insertion finds every probed slot taken.** Let $T$ be an
+Let $T$ be an
 open-addressing hash table with $m$ slots and probe sequence $p$. If inserting a binding
 $k \mapsto v$ into $T$ fails, then for every $i < m$ the slot $p(k, i)$ holds a pair
 $(k', v')$ with $k' \neq k$.

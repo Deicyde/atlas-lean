@@ -1,6 +1,6 @@
 # Odd combinations
 
-**Odd combinations.** For a finite subset $A$ of an abelian group $G$, $\mathcal{T}(A)$ is the
+For a finite subset $A$ of an abelian group $G$, $\mathcal{T}(A)$ is the
 set of all sums $\sum_{x \in A} c_x x$ with integer coefficients $c_x$ such that every $c_x$ is
 either $0$ or odd.
 

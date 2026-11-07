@@ -1,6 +1,6 @@
 # Spaces of general qMZVs
 
-**Spaces of general qMZVs.** For a natural number $d$, $\mathcal{Z}_{q,d}$ is the
+For a natural number $d$, $\mathcal{Z}_{q,d}$ is the
 $\mathbb{Q}$-subspace of the formal power series $\mathbb{Q}[[q]]$ spanned by the general qMZVs
 $\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r)$ over all $r \ge 0$, natural numbers $k_1, \dots, k_r$
 and polynomials $Q_1, \dots, Q_r \in \mathbb{Q}[X]$ with $\deg Q_j + d \le k_j$ for every $j$

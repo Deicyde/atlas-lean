@@ -1,6 +1,6 @@
 # Mazur's lemma in the textbook phrasing
 
-**Mazur's lemma in the textbook phrasing.** Let $E$ be a normed space over $\mathbb{K}$,
+Let $E$ be a normed space over $\mathbb{K}$,
 where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, regarded also as a real vector space by
 restricting scalars. Let $(u_n)_{n \in \mathbb{N}}$ be a sequence in $E$ and $x \in E$ such that
 $f(u_n) \to f(x)$ for every continuous $\mathbb{K}$-linear functional $f \colon E \to \mathbb{K}$.

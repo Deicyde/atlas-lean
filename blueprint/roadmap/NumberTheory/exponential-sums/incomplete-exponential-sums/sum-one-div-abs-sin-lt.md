@@ -1,6 +1,6 @@
 # Bound for a sum of reciprocal sines
 
-**Bound for a sum of reciprocal sines.** Let $p$ be a prime, let $a$ be an integer not
+Let $p$ be a prime, let $a$ be an integer not
 divisible by $p$, let $B$ be an integer with $1 \le B < p/2$, and let $\gamma$ be the
 Euler–Mascheroni constant. Then
 

@@ -1,6 +1,6 @@
 # Local quadratic convergence of Newton's method
 
-**Local quadratic convergence of Newton's method.** Let $f : \mathbb{R} \to \mathbb{R}$ be twice
+Let $f : \mathbb{R} \to \mathbb{R}$ be twice
 continuously differentiable and let $c$ be a simple root of $f$: $f(c) = 0$ and $f'(c) \ne 0$.
 Then there exist $\delta > 0$ and a real constant $C$ with the following property. For every
 $x_0 \in (c - \delta, c + \delta)$ and every real sequence $(x_n)$ that starts at $x_0$ and

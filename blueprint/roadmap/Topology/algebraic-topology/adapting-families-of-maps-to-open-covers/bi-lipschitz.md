@@ -1,6 +1,6 @@
 # Morrison–Walker lemma on adapting families of maps, bi-Lipschitz case
 
-**Morrison–Walker lemma on adapting families of maps, bi-Lipschitz case.** Let $X$ be a
+Let $X$ be a
 compact metric space, $T$ a metric space, $P \subseteq \mathbb{R}^k$ a convex linear polyhedron,
 $(U_\alpha)_{\alpha \in \iota}$ a family of open subsets of $X$, and $\rho$ a partition of unity on
 $X$ indexed by $\iota$ and subordinate to $U$. Let $f : P \times X \to T$ be continuous and suppose

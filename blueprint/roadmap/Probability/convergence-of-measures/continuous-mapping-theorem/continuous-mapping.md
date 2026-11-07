@@ -1,6 +1,6 @@
 # Continuous mapping theorem, integral form
 
-**Continuous mapping theorem, integral form.** Let $\mu_n$ ($n \in \mathbb{N}$) and $\mu$ be
+Let $\mu_n$ ($n \in \mathbb{N}$) and $\mu$ be
 probability measures on $\mathbb{R}$, let $g : \mathbb{R} \to \mathbb{R}$ be a measurable function
 whose set of discontinuity points has $\mu$-measure zero, and write $\nu \circ g^{-1}$ for the
 pushforward of a measure $\nu$ on $\mathbb{R}$ under $g$. If $\int f \, d\mu_n \to \int f \, d\mu$

@@ -1,6 +1,6 @@
 # The fraction 1/X in the polynomial Farey series
 
-**The fraction 1/X in the polynomial Farey series.** Let $F$ be a field. For every natural
+Let $F$ be a field. For every natural
 number $n \ge 1$, the pair $(1, X)$, that is, the fraction $1/X$, belongs to the Farey series
 $\mathcal F_n$ of order $n$ over $F$.
 

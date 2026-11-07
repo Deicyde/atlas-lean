@@ -1,6 +1,6 @@
 # Linear bounds for the logarithm and the exponential near zero (Lemma 6)
 
-**Linear bounds for the logarithm and the exponential near zero (Lemma 6).** Let $a$ and $x$
+Let $a$ and $x$
 be real numbers with $0 < a < 1$ and $0 < |x| < a$. Then
 $|\log(1 + x)| < \frac{-\log(1 - a)}{a} |x|$ and $|x| < \frac{a}{1 - e^{-a}} |e^x - 1|$.
 

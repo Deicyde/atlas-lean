@@ -1,6 +1,6 @@
 # Digit-convolution coefficients
 
-**Digit-convolution coefficients.** For a natural number $q$, the base-$q$ digit-convolution
+For a natural number $q$, the base-$q$ digit-convolution
 coefficients are the real numbers $a(k)$, $k \ge 0$, given by $a(0) = a(1) = 0$,
 $a(2) = \frac{(q - 1)^2}{24 \log^2 q}$ and, for every $k \ge 3$,
 

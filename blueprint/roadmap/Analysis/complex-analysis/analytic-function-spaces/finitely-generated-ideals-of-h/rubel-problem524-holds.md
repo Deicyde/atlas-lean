@@ -1,6 +1,6 @@
 # McVoy–Rubel theorem on finitely generated ideals of $H^\infty$
 
-**McVoy–Rubel theorem on finitely generated ideals of $H^\infty$.** For any two finitely
+For any two finitely
 generated ideals $I$ and $J$ of the commutative ring $H^\infty$ of bounded holomorphic functions
 on the open unit disc, the intersection $I \cap J$ is finitely generated. This answers Rubel's
 Problem 5.24 positively.

@@ -1,3 +1,3 @@
 # Hilbert–Schmidt operator on ℓ²
 
-**Hilbert–Schmidt operator on ℓ².** The Hilbert–Schmidt operator of a matrix, as a bounded operator on `ℓ²(ℕ, 𝕜)`.
+The Hilbert–Schmidt operator of a matrix, as a bounded operator on `ℓ²(ℕ, 𝕜)`.

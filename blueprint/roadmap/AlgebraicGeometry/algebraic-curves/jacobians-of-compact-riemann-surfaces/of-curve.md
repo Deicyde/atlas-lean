@@ -1,6 +1,6 @@
 # Abel–Jacobi map
 
-**Abel–Jacobi map.** Let $X$ be a compact Riemann surface with Jacobian $J(X)$. Each point
+Let $X$ be a compact Riemann surface with Jacobian $J(X)$. Each point
 $P \in X$ gives a map $X \to J(X)$, the Abel–Jacobi map based at $P$.
 
 ## Sources

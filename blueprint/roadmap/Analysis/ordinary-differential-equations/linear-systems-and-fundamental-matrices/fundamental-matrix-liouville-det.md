@@ -1,6 +1,6 @@
 # Liouville's formula for the principal matrix solution
 
-**Liouville's formula for the principal matrix solution.** Let $n \in \mathbb{N}$, let
+Let $n \in \mathbb{N}$, let
 $A : \mathbb{R} \to \mathbb{R}^{n \times n}$ be continuous, let $t_0 \in \mathbb{R}$, write $I$ for
 the $n \times n$ identity matrix, and let $\Phi : \mathbb{R} \to \mathbb{R}^{n \times n}$ satisfy
 $\Phi(t_0) = I$ and $\Phi'(t) = A(t) \Phi(t)$ for every $t \in \mathbb{R}$. Then for every

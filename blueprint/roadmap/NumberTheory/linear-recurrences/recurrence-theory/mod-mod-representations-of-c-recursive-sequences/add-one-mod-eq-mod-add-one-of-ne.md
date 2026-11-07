@@ -1,6 +1,6 @@
 # Adding one to a remainder without wrap-around
 
-**Adding one to a remainder without wrap-around.** Let $x$ and $C$ be natural numbers with
+Let $x$ and $C$ be natural numbers with
 $C \ge 2$. If $x \bmod C \ne (C - 1) \bmod C$, that is, if $x$ is not congruent to $C - 1$
 modulo $C$, then $(x + 1) \bmod C = (x \bmod C) + 1$.
 

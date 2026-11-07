@@ -1,6 +1,6 @@
 # The table-driven step along a run
 
-**The table-driven step along a run.** Fix an encoding $E$ of a finite TM2 machine $M$, with
+Fix an encoding $E$ of a finite TM2 machine $M$, with
 $K$ stacks, $N$ situations and window depth $d$, a natural number $H$, an input list $s$ and a
 time $t$. For each time $u$ let $c_u$ be the configuration at time $u$ of the idle-extended run
 of $M$ from the initial configuration of $M$ on input $s$, and let $i$ be the situation index of

@@ -1,6 +1,6 @@
 # Function field Mertens constant
 
-**Function field Mertens constant.** For a finite field $F$ with $q$ elements, the analogue
+For a finite field $F$ with $q$ elements, the analogue
 of the first Mertens constant is
 
 $$B_1 = \gamma + \sum_P \left(\log\left(1 - \frac{1}{|P|}\right) + \frac{1}{|P|}\right),$$

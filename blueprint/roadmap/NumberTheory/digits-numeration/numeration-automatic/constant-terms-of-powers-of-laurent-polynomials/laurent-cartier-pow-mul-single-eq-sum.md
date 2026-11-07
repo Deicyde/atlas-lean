@@ -1,6 +1,6 @@
 # Cartier operator applied to a power times a monomial
 
-**Cartier operator applied to a power times a monomial.** Let $p$ be a prime and $P$ a
+Let $p$ be a prime and $P$ a
 Laurent polynomial in $r$ variables with integer coefficients. Write $\mathrm{coef}_e[F]$ for the
 coefficient of $x^e$ in a Laurent polynomial $F$, $\deg F$ for the largest absolute value of an
 exponent of a variable occurring in $F$, and $\Lambda_p$ for the Cartier operator with

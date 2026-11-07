@@ -1,6 +1,6 @@
 # Congruence modulo 8 for 9-regular cubic partitions with odd parts overlined
 
-**Congruence modulo 8 for 9-regular cubic partitions with odd parts overlined.** For every
+For every
 $n \ge 0$, the number $a_9(4n + 3)$ of $9$-regular cubic partitions of $4n + 3$ with odd parts
 overlined is divisible by $8$.
 

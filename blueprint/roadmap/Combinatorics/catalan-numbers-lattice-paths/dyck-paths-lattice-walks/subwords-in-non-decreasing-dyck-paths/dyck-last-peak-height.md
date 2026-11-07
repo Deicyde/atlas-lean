@@ -1,6 +1,6 @@
 # Height of the last peak
 
-**Height of the last peak.** For a finite sequence $l$ of up steps $U$ and down steps $D$,
+For a finite sequence $l$ of up steps $U$ and down steps $D$,
 the last peak height of $l$ is undefined when $l$ has no factor $UD$. Otherwise it is the
 height of the peak of the rightmost factor $UD$: the number of $U$ steps minus the number of
 $D$ steps in $l$ up to and including the $U$ of that factor, taken to be $0$ when negative.

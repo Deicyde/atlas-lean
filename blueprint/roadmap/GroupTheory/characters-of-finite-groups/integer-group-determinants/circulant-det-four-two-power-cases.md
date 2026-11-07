@@ -1,6 +1,6 @@
 # Powers of $2$ dividing the $C_4$ group determinant at four parity patterns
 
-**Powers of $2$ dividing the $C_4$ group determinant at four parity patterns.** Let
+Let
 $D(x_0, x_1, x_2, x_3)$ be the group determinant of $C_4$, that is the determinant of the
 $4 \times 4$ circulant matrix with $(i, j)$ entry $x_{i - j}$ (indices mod $4$). For integers
 $k, l, m, n$ put $D_1 = D(2k, 2l, 2m, 2n)$, $D_2 = D(2k+1, 2l+1, 2m+1, 2n+1)$,

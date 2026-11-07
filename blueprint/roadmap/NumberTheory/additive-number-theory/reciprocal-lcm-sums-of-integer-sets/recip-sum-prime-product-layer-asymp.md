@@ -1,6 +1,6 @@
 # Harmonic sums over products of distinct primes
 
-**Harmonic sums over products of distinct primes.** There are constants $c > 0$ and $C > 0$
+There are constants $c > 0$ and $C > 0$
 such that the following holds. Let $\mathcal{P}$ be a set of primes, let $k$ be a natural number,
 let $x \ge 1$ be real, and put $S = \sum_{p \in \mathcal{P},\, p \le x} 1/p$,
 $T_k = \sum_{n \in \mathcal{P}^{[k]},\, n \le x} 1/n$ and

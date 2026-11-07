@@ -1,6 +1,6 @@
 # The $k$-box factor
 
-**The $k$-box factor.** For $k \ge 0$, the $k$-box factor is the word $U D^k L$ in the skew
+For $k \ge 0$, the $k$-box factor is the word $U D^k L$ in the skew
 Dyck steps: one step $U$, then $k$ steps $D$, then one step $L$.
 
 ## Sources

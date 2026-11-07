@@ -1,6 +1,6 @@
 # Sylvester's coin theorem
 
-**Sylvester's coin theorem.** Let $a$ and $b$ be coprime natural numbers. Then the number of
+Let $a$ and $b$ be coprime natural numbers. Then the number of
 natural numbers $n$ that cannot be written as $n = ax + by$ with natural numbers $x, y$ is
 $(a - 1)(b - 1)/2$.
 

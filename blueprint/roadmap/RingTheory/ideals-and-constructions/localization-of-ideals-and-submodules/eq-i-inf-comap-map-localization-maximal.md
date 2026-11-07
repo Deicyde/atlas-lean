@@ -1,6 +1,6 @@
 # An ideal is the intersection of its contracted localizations at maximal ideals
 
-**An ideal is the intersection of its contracted localizations at maximal ideals.** Let $A$
+Let $A$
 be a commutative ring and $I$ an ideal of $A$. For a maximal ideal $\mathfrak{m}$ of $A$, let
 $\varphi_{\mathfrak{m}} \colon A \to A_{\mathfrak{m}}$ be the canonical map to the localization
 of $A$ at $\mathfrak{m}$. Then

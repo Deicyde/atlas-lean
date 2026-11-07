@@ -1,6 +1,6 @@
 # Trollope–Delange fluctuation
 
-**Trollope–Delange fluctuation.** Let $q$ be a natural number and let $h$ be Delange's series
+Let $q$ be a natural number and let $h$ be Delange's series
 in base $q$. The Trollope–Delange fluctuation in base $q$ is the function of a real number $x$
 given by $F(x) = \frac{q - 1}{2}(1 + \lfloor x \rfloor - x) +
 q^{1 + \lfloor x \rfloor - x}\, h(q^{x - \lfloor x \rfloor - 1})$, where $\lfloor x \rfloor$ is

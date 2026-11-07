@@ -1,6 +1,6 @@
 # Explicit bounds for the summatory function of $\mu(n)/n$
 
-**Explicit bounds for the summatory function of $\mu(n)/n$.** Let $\mu$ be the Möbius function.
+Let $\mu$ be the Möbius function.
 For every real $x \ge 33$,
 
 $$\Bigl| \sum_{1 \le n \le x} \frac{\mu(n)}{n} \Bigr| < \frac{0.19}{\log x},$$

@@ -1,6 +1,6 @@
 # Second-player win in Snort
 
-**Second-player win in Snort.** Let $G$ be a finite simple graph. In Snort on $G$, two
+Let $G$ be a finite simple graph. In Snort on $G$, two
 players alternately colour a vertex of $G$ that is not yet coloured, each with their own
 colour, and a player may not colour a vertex adjacent to a vertex of the opponent's colour; a
 player with no legal move loses. The second player wins Snort on $G$ if, starting from the

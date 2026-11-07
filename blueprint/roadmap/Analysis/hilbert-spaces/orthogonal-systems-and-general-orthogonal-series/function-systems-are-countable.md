@@ -1,6 +1,6 @@
 # Countability of orthogonal systems of functions
 
-**Countability of orthogonal systems of functions.** Let $\lambda$ be Lebesgue measure on
+Let $\lambda$ be Lebesgue measure on
 $[0, 1]$. This is the statement that every set $S$ of functions $[0, 1] \to \mathbb{R}$ with the
 following three properties is at most countable: no member of $S$ is $\lambda$-almost everywhere
 equal to $0$; any two members of $S$ that are equal $\lambda$-almost everywhere are equal; and

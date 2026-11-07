@@ -1,6 +1,6 @@
 # Support gcd and complementary lcm of reflexive support data
 
-**Support gcd and complementary lcm of reflexive support data.** Let $r = (r_1, \dots, r_d)$
+Let $r = (r_1, \dots, r_d)$
 and $x = (x_1, \dots, x_d)$ be valid support data: $d \ge 1$, the $r_i$ are pairwise distinct
 positive integers, and the $x_i$ are positive integers. Let $q = (r_1^{x_1}, \dots, r_d^{x_d})$
 be the weight vector in which each $r_i$ is repeated $x_i$ times, and suppose that the weighted

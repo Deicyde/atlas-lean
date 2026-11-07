@@ -1,6 +1,6 @@
 # Characterization of the projective order of 2
 
-**Characterization of the projective order of 2.** Let $n$ and $m$ be natural numbers with
+Let $n$ and $m$ be natural numbers with
 $m > 0$. Suppose that $2^m \equiv 1$ or $2^m \equiv -1 \pmod{n}$, and that for every $k$ with
 $0 < k < m$ neither $2^k \equiv 1$ nor $2^k \equiv -1 \pmod{n}$. Then the projective order of $2$
 modulo $n$ is $\lambda(n) = m$.

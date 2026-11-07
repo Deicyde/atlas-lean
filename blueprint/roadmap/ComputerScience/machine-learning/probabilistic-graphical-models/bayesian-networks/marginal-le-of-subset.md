@@ -1,3 +1,3 @@
 # Fixing more variables decreases the marginal
 
-**Fixing more variables decreases the marginal.** Fixing more variables decreases the probability.
+Fixing more variables decreases the probability.

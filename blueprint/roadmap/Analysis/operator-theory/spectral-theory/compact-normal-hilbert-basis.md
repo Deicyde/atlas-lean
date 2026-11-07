@@ -1,6 +1,6 @@
 # Spectral theorem for compact normal operators
 
-**Spectral theorem for compact normal operators.** Let $E$ be a complex Hilbert space and $T$
+Let $E$ be a complex Hilbert space and $T$
 a compact normal operator on $E$. Then there are a Hilbert basis $(b_i)_{i \in I}$ of $E$
 and complex numbers $(\mu_i)_{i \in I}$ such that $T b_i = \mu_i b_i$ for every $i$, and the
 eigenvalues vanish at infinity: for every $\varepsilon > 0$ the set of $i$ with

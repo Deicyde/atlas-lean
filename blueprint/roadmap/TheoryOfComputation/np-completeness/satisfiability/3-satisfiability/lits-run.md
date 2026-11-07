@@ -1,6 +1,6 @@
 # The literals of a clause in the emitter
 
-**The literals of a clause in the emitter.** Write $\langle \ell, w, t, o, z, c\rangle$ for
+Write $\langle \ell, w, t, o, z, c\rangle$ for
 the configuration of the emitter machine at label $\ell$ with internal variable $w$, token stack
 $t$, output stack $o$, fresh counter $z$, output-clause count $c$ and empty scratch stacks. Let
 $Z_b$ be a natural number, $L = (l_1, \dots, l_k)$ a list of literals, $R$ a token stack whose

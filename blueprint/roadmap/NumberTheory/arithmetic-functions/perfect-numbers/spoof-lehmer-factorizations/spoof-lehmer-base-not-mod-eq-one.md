@@ -1,6 +1,6 @@
 # Bases of a spoof Lehmer factorization modulo divisors of its evaluation
 
-**Bases of a spoof Lehmer factorization modulo divisors of its evaluation.** Let
+Let
 $x_1, \dots, x_r$ be natural numbers and let $F = x_1 \cdots x_r$ be the spoof factorization with
 these bases, all with exponent $1$. Suppose $F$ is a nontrivial spoof $k$-Lehmer factorization for
 some integer $k$. If $n$ is an integer with $n \ne \pm 1$ that divides the spoof evaluation

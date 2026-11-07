@@ -1,6 +1,6 @@
 # One EM step for the Bernoulli mixture
 
-**One EM step for the Bernoulli mixture.** Let $x_1, \dots, x_N \in \{0, 1\}^d$ be data with
+Let $x_1, \dots, x_N \in \{0, 1\}^d$ be data with
 $N \ge 1$ in which every coordinate takes both values. For valid parameters $\theta$ of a mixture
 of $K$ products of $d$ Bernoulli distributions, the EM step maps $\theta$ to the parameters with
 mixing weights $\pi'_k = N_k / N$ and success probabilities $p'_{kj} = A_{kj} / N_k$, where

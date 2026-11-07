@@ -1,6 +1,6 @@
 # Units of $\mathrm{LIP}(U)$
 
-**Units of $\mathrm{LIP}(U)$.** For every infinite set $U \subseteq \mathbb{Z}$, the only
+For every infinite set $U \subseteq \mathbb{Z}$, the only
 units of the ring $\mathrm{LIP}(U)$ of locally integer polynomial functions on $U$ are the
 constant functions $1$ and $-1$.
 

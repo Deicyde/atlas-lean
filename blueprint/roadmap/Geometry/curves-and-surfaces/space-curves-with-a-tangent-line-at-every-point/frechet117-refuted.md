@@ -1,6 +1,6 @@
 # Fréchet's Problem 117 has a negative answer
 
-**Fréchet's Problem 117 has a negative answer.** There is a $1$-periodic continuous
+There is a $1$-periodic continuous
 map $\gamma : \mathbb{R} \to \mathbb{R}^3$, injective on $[0, 1)$, that has a tangent
 line at every parameter $t$, such that no $1$-periodic continuous map
 $p : \mathbb{R} \to \mathbb{R}^3$ that is injective on $[0, 1)$ and has the same image

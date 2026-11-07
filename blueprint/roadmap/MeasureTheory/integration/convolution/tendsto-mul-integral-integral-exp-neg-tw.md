@@ -1,6 +1,6 @@
 # Exponential kernel approximate identity
 
-**Exponential kernel approximate identity.** For every function $f : \mathbb{R} \to \mathbb{R}$
+For every function $f : \mathbb{R} \to \mathbb{R}$
 in $L^2(\mathbb{R})$,
 
 $$

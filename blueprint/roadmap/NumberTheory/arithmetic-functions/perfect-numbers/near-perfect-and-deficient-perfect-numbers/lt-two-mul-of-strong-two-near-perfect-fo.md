@@ -1,6 +1,6 @@
 # Prime solutions of $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$ satisfy $k < 2a$
 
-**Prime solutions of $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$ satisfy $k < 2a$.** Let $a \le k$
+Let $a \le k$
 be natural numbers and let $p$ be a prime with $p(1 + 2^{k-a}) = 2^{k+1} - 2^a - 1$, that is,
 $p = (2^{k+1} - 2^a - 1)/(1 + 2^{k-a})$. Then $k < 2a$.
 

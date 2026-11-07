@@ -1,6 +1,6 @@
 # Letter frequencies and the growth of the position functions
 
-**Letter frequencies and the growth of the position functions.** Let $w$ be an infinite
+Let $w$ be an infinite
 binary word over the letters $a$ and $b$ in which both letters occur infinitely often, and let
 $0 < d < 1$. For a letter $\alpha$, let $\#_\alpha(m)$ be the number of letters $\alpha$ among the
 first $m$ letters of $w$, and let $p_\alpha(n)$ be the position (counting from $0$) of the $n$-th

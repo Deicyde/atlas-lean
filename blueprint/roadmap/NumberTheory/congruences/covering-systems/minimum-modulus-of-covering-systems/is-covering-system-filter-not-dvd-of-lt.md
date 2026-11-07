@@ -1,6 +1,6 @@
 # Discarding the classes whose modulus is divisible by a large prime power
 
-**Discarding the classes whose modulus is divisible by a large prime power.** Let $C$ be a
+Let $C$ be a
 distinct covering system: a finite set of congruences $x \equiv r \pmod m$ with
 $r \in \mathbb{Z}$ and $m \in \mathbb{N}$ (where $x \equiv r \pmod 0$ means $x = r$), no two
 with the same modulus, such that every integer satisfies at least one of them. Let

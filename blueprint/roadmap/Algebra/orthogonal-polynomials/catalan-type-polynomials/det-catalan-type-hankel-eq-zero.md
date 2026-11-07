@@ -1,6 +1,6 @@
 # Hankel determinants of recurrent Catalan-type sequences vanish
 
-**Hankel determinants of recurrent Catalan-type sequences vanish.** Let $m, N, r$ be natural
+Let $m, N, r$ be natural
 numbers with $r \le N$, let $\lambda, x$ be real numbers, let $A$ be a polynomial with integer
 coefficients, and let $P_n$ be the coefficient of $t^n$ in
 $(1 + A(x)\, t)(1 - m t + x t^m)^{-\lambda}$, where $(1 - m t + x t^m)^{-\lambda}$ denotes the

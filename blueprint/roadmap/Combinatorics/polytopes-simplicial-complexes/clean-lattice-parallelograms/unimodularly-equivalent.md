@@ -1,6 +1,6 @@
 # Unimodularly equivalent sets
 
-**Unimodularly equivalent sets.** Two sets $P, Q \subseteq \mathbb{R}^2$ are unimodularly
+Two sets $P, Q \subseteq \mathbb{R}^2$ are unimodularly
 equivalent when some affine unimodular map sends $P$ onto $Q$: there are a $2 \times 2$ integer
 matrix $M$ with $\det M = 1$ or $\det M = -1$ and an integer vector $u \in \mathbb{Z}^2$ such that
 $\{M x + u : x \in P\} = Q$.

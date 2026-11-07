@@ -1,3 +1,3 @@
 # Degree of a site in an edge set
 
-**Degree of a site in an edge set.** The number of edges of `E` at the site `v`.
+The number of edges of `E` at the site `v`.

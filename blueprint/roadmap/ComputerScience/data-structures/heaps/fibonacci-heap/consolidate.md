@@ -1,6 +1,6 @@
 # Consolidation of a forest
 
-**Consolidation of a forest.** The consolidation of a list of Fibonacci trees is defined
+The consolidation of a list of Fibonacci trees is defined
 recursively: the consolidation of the empty list is the empty list, and the consolidation of a
 list with first tree $t$ and remaining list $L$ is the insertion of $t$ into the consolidation
 of $L$.

@@ -1,6 +1,5 @@
 # The Hilbert–Schmidt norm of a finite-rank operator is controlled by its operator norm
 
-**The Hilbert–Schmidt norm of a finite-rank operator is controlled by its operator norm.**
 There is a function $C$ from the natural numbers to the positive reals with the following
 property. Let $H$ be an infinite-dimensional separable real Hilbert space, let
 $(u_i)_{i \in \mathbb{N}}$ be a Hilbert basis of $H$, and let $T : H \to H$ be a bounded linear

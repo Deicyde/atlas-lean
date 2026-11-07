@@ -1,6 +1,6 @@
 # Weak bisimilarity is bisimilarity of the saturated system
 
-**Weak bisimilarity is bisimilarity of the saturated system.** In a labelled transition
+In a labelled transition
 system with a silent label $\tau$, write $\Rightarrow$ for the reflexive-transitive
 closure of the $\tau$-transition relation. The weak transitions
 $s \stackrel{\mu}{\Longrightarrow} t$ are the trivial ones $s \stackrel{\tau}{\Longrightarrow} s$

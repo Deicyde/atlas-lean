@@ -1,6 +1,5 @@
 # Nonconstant holomorphic functions of modulus one on the unit circle cover the unit disc
 
-**Nonconstant holomorphic functions of modulus one on the unit circle cover the unit disc.**
 Let $U\subseteq\mathbb{C}$ be a connected open set containing the closed unit disc
 $\{z:|z|\le 1\}$, and let $f:\mathbb{C}\to\mathbb{C}$ be holomorphic on $U$ and non-constant on
 $U$. If $|f(z)|=1$ whenever $|z|=1$, then every $w$ with $|w|<1$ is $f(z)$ for some $z\in U$; that

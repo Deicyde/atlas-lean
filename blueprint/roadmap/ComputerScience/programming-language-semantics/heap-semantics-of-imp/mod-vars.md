@@ -1,6 +1,6 @@
 # Modified variables of a heap command
 
-**Modified variables of a heap command.** The set $\mathrm{mod}(c)$ of variables a heap command
+The set $\mathrm{mod}(c)$ of variables a heap command
 $c$ may assign to is defined by recursion on $c$. It is empty for $\mathbf{skip}$, a heap write
 $[a] := e$ and a deallocation $\mathbf{free}(a)$; it is $\{x\}$ for an assignment $x := a$, a heap
 read $x := [a]$ and an allocation $x := \mathbf{alloc}(e)$; it is $\mathrm{mod}(c_1) \cup

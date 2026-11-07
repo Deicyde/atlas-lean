@@ -1,6 +1,6 @@
 # The generating series for $\mathrm{ped}_{9,18}$
 
-**The generating series for $\mathrm{ped}_{9,18}$.** For $k \ge 1$ let
+For $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$, an integer power series in $q$ with constant coefficient $1$.
 This is the integer power series
 

@@ -1,6 +1,6 @@
 # Bounded-size set systems
 
-**Bounded-size set systems.** Let $w \in \mathbb{N}$ and let $\mathcal{F}$ be a family of
+Let $w \in \mathbb{N}$ and let $\mathcal{F}$ be a family of
 subsets of a type $X$. Then $\mathcal{F}$ is a $w$-set system if every member $A \in \mathcal{F}$
 has at most $w$ elements, where the size of an infinite set is taken to be $0$.
 

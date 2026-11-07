@@ -1,6 +1,6 @@
 # Parity of $(2, p)$-regular partitions in nonresidue progressions
 
-**Parity of $(2, p)$-regular partitions in nonresidue progressions.** Let $p \ge 5$ be a
+Let $p \ge 5$ be a
 prime and let $r$ be a natural number such that $24r + 1$ is not a square modulo $p$ (a quadratic
 nonresidue). Write $b_{2,p}(m)$ for the number of $(2, p)$-regular partitions of $m$, that is,
 partitions of $m$ none of whose parts is divisible by $2$ or by $p$. Then

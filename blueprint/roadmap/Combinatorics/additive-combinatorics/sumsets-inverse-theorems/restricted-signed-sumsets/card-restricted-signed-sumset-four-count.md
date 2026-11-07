@@ -1,6 +1,6 @@
 # The restricted signed 4-fold sumset of $\{0, 1, 2, 4, 6\}$
 
-**The restricted signed 4-fold sumset of $\{0, 1, 2, 4, 6\}$.** The restricted signed 4-fold
+The restricted signed 4-fold
 sumset $4^{\wedge}_{\pm} \{0, 1, 2, 4, 6\}$ has exactly $21 = 8 \cdot 5 - 19$ elements.
 
 This is the extremal value $8k - 19$ at $k = 5$ of the lower bound in Theorem 11 of the source.

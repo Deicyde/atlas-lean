@@ -1,6 +1,6 @@
 # Substitution of a term for variable zero
 
-**Substitution of a term for variable zero.** For terms $t$ and $s$, the instantiation of $t$
+For terms $t$ and $s$, the instantiation of $t$
 by $s$ applies to $t$ the parallel substitution that sends the de Bruijn index $0$ to $s$ and
 each index $x + 1$ to the variable $x$. Thus the free occurrences of variable $0$ in $t$ are
 replaced by $s$, with the free variables of $s$ raised by the number of binders crossed, and

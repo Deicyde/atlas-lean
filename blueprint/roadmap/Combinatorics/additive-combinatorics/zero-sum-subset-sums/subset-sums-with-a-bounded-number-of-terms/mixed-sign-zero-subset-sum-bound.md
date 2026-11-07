@@ -1,6 +1,6 @@
 # Mixed-sign subset-sum bound with zero
 
-**Mixed-sign subset-sum bound with zero.** For natural numbers $n$, $p$, $\alpha$, $\beta$
+For natural numbers $n$, $p$, $\alpha$, $\beta$
 (the numbers of negative and positive elements of a set $A$ that also contains $0$, and the
 bounds on subset sizes), let $\kappa = n + p + 1 - \beta$, computed in the integers,
 $T(x) = x(x+1)/2$, $T_0(x) = x(x-1)/2$ and $S = T(p) + T(n) + 1$. The integer

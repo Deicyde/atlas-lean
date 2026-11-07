@@ -1,6 +1,6 @@
 # The Abel–Jacobi map is holomorphic
 
-**The Abel–Jacobi map is holomorphic.** Let $X$ be a compact Riemann surface of genus $g$,
+Let $X$ be a compact Riemann surface of genus $g$,
 and let $J(X)$ be its Jacobian, a complex manifold modelled on $\mathbb{C}^g$. For every point
 $P \in X$, the Abel–Jacobi map $X \to J(X)$ based at $P$ is holomorphic.
 

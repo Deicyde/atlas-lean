@@ -1,6 +1,6 @@
 # Flat value relation
 
-**Flat value relation.** The flat value relation between source values and target values is
+The flat value relation between source values and target values is
 the least relation with the following property. Let $b$ be a raw term, $\rho$ a list of source
 values of length $|\rho|$, $c = (c_0, \dots, c_{m-1})$ the list of variables captured by
 $\lambda. b$, and $w_0, \dots, w_{m-1}$ target values, as many as there are captured variables. If,

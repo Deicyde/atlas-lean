@@ -1,6 +1,6 @@
 # Recursion for the limiting areas between cosine powers
 
-**Recursion for the limiting areas between cosine powers.** For natural numbers $n$ and $k$,
+For natural numbers $n$ and $k$,
 let $A_n(k) = \int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$. For every natural number $n \ge 3$ there
 are real numbers $L$ and $L'$ such that $A_n(k) \to L$ and $A_{n-2}(k) \to L'$ as $k \to \infty$
 through the natural numbers, and $L = \frac{n-1}{n} L' + \frac{c}{n^2 \pi}$, where $c = 8$ if $n$

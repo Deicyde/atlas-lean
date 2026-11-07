@@ -1,6 +1,6 @@
 # A preperiod bound for lex-minimal extensions
 
-**A preperiod bound for lex-minimal extensions.** Let $m \ge 0$, let
+Let $m \ge 0$, let
 $\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of its first $m$ entries, with averages
 $A_i = (e_1 + \dots + e_i)/i$, and let $1 \le k \le m$ with
 $A_k = \max \{A_i \mid 1 \le i \le m\}$. Then $\eta$ is periodic after position

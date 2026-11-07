@@ -1,6 +1,6 @@
 # Lucas tilings by the empty list
 
-**Lucas tilings by the empty list.** For all natural numbers $a$ and $b$, the empty list is a
+For all natural numbers $a$ and $b$, the empty list is a
 Lucas tiling of $[a, b]$ if and only if $a = b + 1$.
 
 ## Sources

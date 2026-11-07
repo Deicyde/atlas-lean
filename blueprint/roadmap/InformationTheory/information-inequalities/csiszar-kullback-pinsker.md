@@ -1,6 +1,6 @@
 # Csiszár–Kullback–Pinsker inequality for strictly positive distributions
 
-**Csiszár–Kullback–Pinsker inequality for strictly positive distributions.** Let $\alpha$ be a
+Let $\alpha$ be a
 finite nonempty set and let $p, q : \alpha \to \mathbb{R}$ satisfy $p(a) > 0$ and $q(a) > 0$
 for every $a \in \alpha$ and $\sum_a p(a) = \sum_a q(a) = 1$. Then, with the natural logarithm,
 

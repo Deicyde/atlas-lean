@@ -1,6 +1,6 @@
 # Position function of a letter
 
-**Position function of a letter.** For an infinite binary word $w = \ell_0 \ell_1 \cdots$,
+For an infinite binary word $w = \ell_0 \ell_1 \cdots$,
 a letter $\alpha$ and $n \ge 1$, $p_\alpha(n)$ is the position of the $n$-th occurrence of $\alpha$
 in $w$, counting positions from $0$; that is, $p_\alpha(n)$ is the $n$-th smallest index $i$ with
 $\ell_i = \alpha$.

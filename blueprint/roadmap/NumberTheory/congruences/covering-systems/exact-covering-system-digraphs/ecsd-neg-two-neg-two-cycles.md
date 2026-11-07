@@ -1,6 +1,6 @@
 # Cycles of $G(-2n, -2n + a)$
 
-**Cycles of $G(-2n, -2n + a)$.** Let $a$ be an odd natural number and $G = G(-2n, -2n + a)$.
+Let $a$ be an odd natural number and $G = G(-2n, -2n + a)$.
 A cycle of $G$ is a list $(c_1, \dots, c_t)$, $t \ge 1$, of distinct integers with edges
 $c_1 \to c_2, \dots, c_{t-1} \to c_t$ and $c_t \to c_1$; a vertex is cyclic if it lies on a
 cycle. For an integer $x$ let $\hat{x}$ be the representative of $x$ modulo $a$ in the interval

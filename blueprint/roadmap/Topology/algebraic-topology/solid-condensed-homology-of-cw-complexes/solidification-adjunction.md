@@ -1,6 +1,6 @@
 # Solidification adjunction
 
-**Solidification adjunction.** An adjunction exhibiting the solidification functor from light
+An adjunction exhibiting the solidification functor from light
 condensed abelian groups to light solid abelian groups as left adjoint to the inclusion of the full
 subcategory of light solid abelian groups into light condensed abelian groups.
 

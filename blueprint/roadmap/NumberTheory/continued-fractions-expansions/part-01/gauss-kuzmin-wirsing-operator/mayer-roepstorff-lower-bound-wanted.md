@@ -1,6 +1,6 @@
 # Mayer–Roepstorff lower bound for the Wirsing constant
 
-**Mayer–Roepstorff lower bound for the Wirsing constant.** The
+The
 Wirsing constant is at least $0.30366299$.
 
 ## Sources

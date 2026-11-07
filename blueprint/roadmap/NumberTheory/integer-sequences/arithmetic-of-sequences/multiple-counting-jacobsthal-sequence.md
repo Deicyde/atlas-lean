@@ -1,6 +1,6 @@
 # Multiple-counting Jacobsthal sequence
 
-**Multiple-counting Jacobsthal sequence.** For natural numbers $x$, $\rho$ and $n$, the
+For natural numbers $x$, $\rho$ and $n$, the
 multiple-counting Jacobsthal sequence $J_{x,\rho}(n)$ is the number of multiples of $\rho$ strictly
 between $x^n$ and $x^{n+1}$, that is, the number of natural numbers $k$ with $x^n < k < x^{n+1}$
 and $\rho \mid k$.

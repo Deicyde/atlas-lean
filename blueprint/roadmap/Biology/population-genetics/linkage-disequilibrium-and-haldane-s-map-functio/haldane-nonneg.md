@@ -1,3 +1,3 @@
 # Nonnegativity of Haldane's map function
 
-**Nonnegativity of Haldane's map function.** Haldane's map function is nonnegative at nonnegative distances.
+Haldane's map function is nonnegative at nonnegative distances.

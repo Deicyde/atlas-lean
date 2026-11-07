@@ -1,6 +1,6 @@
 # The minuscule polynomial $N_3$
 
-**The minuscule polynomial $N_3$.** The type-A minuscule polynomial $N_3(x)$ equals
+The type-A minuscule polynomial $N_3(x)$ equals
 $8x + 8x^2$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Pair bits of an occurrence list, row by row
 
-**Pair bits of an occurrence list, row by row.** Let $o_0, \dots, o_{m-1}$ be a list of
+Let $o_0, \dots, o_{m-1}$ be a list of
 literal occurrences (clause index, variable, polarity). The list of adjacency bits of $o_i$ and
 $o_j$ over the pairs $(i, j)$ with $i < j < m$ in encoding order (rows $i$ ascending, and $j$
 descending within a row) equals the recursive pair bits of the list, which are empty for the

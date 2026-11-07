@@ -1,6 +1,6 @@
 # Asymptotic expansion of partial sums of powers times logarithms
 
-**Asymptotic expansion of partial sums of powers times logarithms.** Let $r > -1$ be a real
+Let $r > -1$ be a real
 number. For a natural number $n$ write $\varphi_r(n) = \sum_{k=1}^{n} k^r \log k$ and
 $S_r(n) = \sum_{k=1}^{n} k^r$, and for a natural number $m$ let
 $D_m(r) = \sum_{j=0}^{m} \prod_{0 \le q \le m,\ q \ne j} (r - q)$, the derivative of

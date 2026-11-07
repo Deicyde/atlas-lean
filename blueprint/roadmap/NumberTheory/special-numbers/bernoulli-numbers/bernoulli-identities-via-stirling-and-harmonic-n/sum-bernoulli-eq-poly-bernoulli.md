@@ -1,6 +1,6 @@
 # Sums of Bernoulli numbers via poly-Bernoulli polynomials
 
-**Sums of Bernoulli numbers via poly-Bernoulli polynomials.** Let $B_j$ denote the Bernoulli
+Let $B_j$ denote the Bernoulli
 numbers with $B_1 = -\tfrac12$, let $B_n^{(2)}$ denote the poly-Bernoulli numbers of order $2$,
 and let $B_n^{(2)}(x)$ denote the poly-Bernoulli polynomials of order $2$. For every natural
 number $n \ge 2$,

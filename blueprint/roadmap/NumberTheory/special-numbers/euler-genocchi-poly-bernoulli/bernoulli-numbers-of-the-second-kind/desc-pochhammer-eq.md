@@ -1,6 +1,6 @@
 # Falling factorials in the Bernoulli polynomial basis
 
-**Falling factorials in the Bernoulli polynomial basis.** Let $B_m^*$ be the Bernoulli
+Let $B_m^*$ be the Bernoulli
 numbers of the second kind, $B_k(X)$ the Bernoulli polynomials over $\mathbb{Q}$ (so that
 $B_1(X) = X - 1/2$), $s(m, j)$ the signed Stirling numbers of the first kind and
 $X^{\underline{n}} = X(X-1)\cdots(X-n+1)$ the falling factorial. For every natural number

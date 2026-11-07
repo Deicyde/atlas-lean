@@ -1,6 +1,6 @@
 # Keywords with equally many singleton classes
 
-**Keywords with equally many singleton classes.** Let $a$ and $b$ be binary keywords of
+Let $a$ and $b$ be binary keywords of
 length $m + 1$. The relations $\sim_a$ and $\sim_b$ have the same number of one-element
 equivalence classes on binary words of length $n$ for every $n \ge 0$ if and only if, for every
 $i$ with $1 \le i \le m + 1$, the following holds for $a$ exactly when it holds for $b$: the

@@ -1,6 +1,6 @@
 # Carry out of the carry-lookahead adder
 
-**Carry out of the carry-lookahead adder.** Let $n, K \in \mathbb{N}$ with $n \le 2^K$, let
+Let $n, K \in \mathbb{N}$ with $n \le 2^K$, let
 $x, y$ be $n$-bit vectors and let $c$ be a carry-in bit. Evaluate the $n$-bit Kogge-Stone
 carry-lookahead adder with $K$ levels over the Boolean XOR/AND/OR basis on the input that lists
 the bits of $x$ from least to most significant, then those of $y$ in the same order, then $c$.

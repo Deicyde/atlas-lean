@@ -1,6 +1,6 @@
 # Abstract Gödel–Rosser incompleteness theorem
 
-**Abstract Gödel–Rosser incompleteness theorem.** Let $\mathcal{L}$ be a set of formulas with
+Let $\mathcal{L}$ be a set of formulas with
 operations $\neg$ and $\to$, a substitution map sending $A \in \mathcal{L}$ and $n \in \mathbb{N}$
 to $A[n] \in \mathcal{L}$, a coding map $\ulcorner \cdot \urcorner : \mathcal{L} \to \mathbb{N}$,
 a formula $R \in \mathcal{L}$, predicates "provable" (written $\vdash A$), "Rosser provable" and

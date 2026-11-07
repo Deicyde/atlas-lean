@@ -1,6 +1,6 @@
 # Borsuk's conjecture in a given dimension
 
-**Borsuk's conjecture in a given dimension.** For a natural number $n$, Borsuk's conjecture
+For a natural number $n$, Borsuk's conjecture
 in dimension $n$ is the statement that the Borsuk number of the Euclidean space $\mathbb{R}^n$
 is at most $n + 1$.
 

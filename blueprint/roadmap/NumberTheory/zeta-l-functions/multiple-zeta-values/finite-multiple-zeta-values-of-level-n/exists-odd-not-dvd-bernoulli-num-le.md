@@ -1,6 +1,6 @@
 # A small odd $k$ with $p \nmid B_{p-k}$
 
-**A small odd $k$ with $p \nmid B_{p-k}$.** For every prime $p \ge 11$ there is an odd
+For every prime $p \ge 11$ there is an odd
 integer $k \ge 3$ such that $p$ does not divide the numerator of the Bernoulli number $B_{p-k}$
 and $k \le (p-3)/2$ if $p \equiv 1 \pmod 4$, while $k \le (p-5)/2$ if
 $p \equiv 3 \pmod 4$.

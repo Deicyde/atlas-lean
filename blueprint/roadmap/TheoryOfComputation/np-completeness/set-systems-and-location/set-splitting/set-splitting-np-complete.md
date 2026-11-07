@@ -1,6 +1,6 @@
 # SET SPLITTING is NP-complete
 
-**SET SPLITTING is NP-complete.** The SET SPLITTING decision problem belongs to NP, and every
+The SET SPLITTING decision problem belongs to NP, and every
 decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

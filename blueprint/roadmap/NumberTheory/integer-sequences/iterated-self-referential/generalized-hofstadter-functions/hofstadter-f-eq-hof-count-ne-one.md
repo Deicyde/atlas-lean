@@ -1,6 +1,6 @@
 # Generalized Hofstadter function as a letter count
 
-**Generalized Hofstadter function as a letter count.** Let $k > 1$ and $n \ge 0$. Let $F_k$ be
+Let $k > 1$ and $n \ge 0$. Let $F_k$ be
 the generalized Hofstadter function, defined by $F_k(0) = 0$ and $F_k(m) = m - F_k^k(m - 1)$ for
 $m \ge 1$, where $F_k^k$ is the $k$-fold iterate of $F_k$. Let $x_k[0]\,x_k[1] \cdots$ be the
 fixed point, beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and every

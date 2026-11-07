@@ -1,6 +1,6 @@
 # Turán's three-value question
 
-**Turán's three-value question.** The statement that every function
+The statement that every function
 $f : \mathbb{C} \to \mathbb{C}$ with the following properties has bounded value distribution:
 $f$ is meromorphic on $\mathbb{C}$; for every $w \in \mathbb{C}$ there is a point at which
 $f - w$ has finite meromorphic order; and there are three distinct values $w_1, w_2, w_3$ of

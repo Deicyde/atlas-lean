@@ -1,6 +1,6 @@
 # Huffman loop with lookup count
 
-**Huffman loop with lookup count.** For a fuel $n$, a next serial number $s$, a binary min-heap
+For a fuel $n$, a next serial number $s$, a binary min-heap
 $H$ of Huffman priorities and a table $T$ whose cells each hold at most one work item, the Huffman
 loop with lookup count on $(n, s, H, T)$ is the Huffman loop with an accumulated lookup count on
 $(n, s, H, T)$ started with counter $0$. It runs the bounded sequence of Huffman merges and counts

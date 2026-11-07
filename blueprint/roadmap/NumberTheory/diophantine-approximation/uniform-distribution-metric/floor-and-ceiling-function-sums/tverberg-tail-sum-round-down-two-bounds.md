@@ -1,6 +1,6 @@
 # Bounds for two-term tail sums of Tverberg's sum with half-down rounding
 
-**Bounds for two-term tail sums of Tverberg's sum with half-down rounding.** Let
+Let
 $r^-(x) = \lceil x - 1/2 \rceil$. For integers $a, b$ and natural numbers $m, K$, let
 $T(a, b, m, K) = \sum_{k=1}^{K} f^{(r^-)}((a, b), m, k)$, where $f^{(r^-)}$ is Tverberg's sum
 with $F = r^-$. Then $-\lfloor m/2 \rfloor \le T(a, b, m, K) \le \lfloor m/2 \rfloor$ for all

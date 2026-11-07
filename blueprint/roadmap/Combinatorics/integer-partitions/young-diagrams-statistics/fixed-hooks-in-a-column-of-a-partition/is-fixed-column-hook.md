@@ -1,6 +1,6 @@
 # Fixed hooks in a column of a partition
 
-**Fixed hooks in a column of a partition.** Let $\lambda$ be a partition of $n$, let $m$ and $s$
+Let $\lambda$ be a partition of $n$, let $m$ and $s$
 be natural numbers and let $h$ be an integer. The partition $\lambda$ has an $h$-fixed hook in
 column $m$ at row $s$ if the square $(s, m)$ lies in the Young diagram of $\lambda$, that is,
 $s \ge 1$ and $1 \le m \le \lambda_s$, and its hook length is $h_{s,m}(\lambda) = s + h$. In other

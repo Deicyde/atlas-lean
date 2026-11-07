@@ -1,6 +1,6 @@
 # Unique ergodicity of the Zeckendorf odometer
 
-**Unique ergodicity of the Zeckendorf odometer.** Let $\mathbb{X}$ be the set of
+Let $\mathbb{X}$ be the set of
 Zeckendorf-adic integers, a subset of the space $\{0,1\}^{\mathbb{N}}$ of digit sequences with its
 product $\sigma$-algebra, and let $T$ be the Zeckendorf odometer on $\{0,1\}^{\mathbb{N}}$. There
 is exactly one probability measure $\mu$ on $\{0,1\}^{\mathbb{N}}$ such that

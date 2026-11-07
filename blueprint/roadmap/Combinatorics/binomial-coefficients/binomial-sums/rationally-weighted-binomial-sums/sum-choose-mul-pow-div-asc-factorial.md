@@ -1,6 +1,6 @@
 # Binomial sums with rising-factorial denominators
 
-**Binomial sums with rising-factorial denominators.** Write $m^{(i)} = m(m+1)\cdots(m+i-1)$
+Write $m^{(i)} = m(m+1)\cdots(m+i-1)$
 for the rising factorial. For all natural numbers $N$ and $s \ge 1$ and every real number $x$,
 
 $$\sum_{k=0}^{N} \binom{N}{k} \frac{x^{k+s}}{(k+1)^{(s)}} =

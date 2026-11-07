@@ -1,6 +1,6 @@
 # The row-0 init family of an encoding
 
-**The row-0 init family of an encoding.** Let $E$ be an encoding of a machine $M$, let $x$ and
+Let $E$ be an encoding of a machine $M$, let $x$ and
 $Y$ be lists of symbols of the input stack of $M$, and let $m, T, H$ be natural numbers. The init
 family is the CNF formula whose clauses are, in this order, those of the start-code clause at
 $(T, H)$, the empty-stack clauses at $(T, H)$, the input clauses of $x$ at $(T, H)$, the

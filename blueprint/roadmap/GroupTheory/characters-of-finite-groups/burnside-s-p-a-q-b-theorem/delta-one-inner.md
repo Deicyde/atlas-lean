@@ -1,6 +1,6 @@
 # Pairing of the identity indicator with a character
 
-**Pairing of the identity indicator with a character.** Let $G$ be a finite group, let
+Let $G$ be a finite group, let
 $\delta \colon G \to \mathbb{C}$ be the indicator function of the identity, so $\delta(1) = 1$ and
 $\delta(g) = 0$ for $g \neq 1$, and let $\chi_c$ be the character of an isomorphism class $c$ of
 simple finite-dimensional complex representations of $G$. Then

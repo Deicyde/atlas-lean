@@ -1,6 +1,6 @@
 # Closed form and recurrence for maximal $(p, q)$-Schreier sets
 
-**Closed form and recurrence for maximal $(p, q)$-Schreier sets.** Let $p$ and $q$ be positive
+Let $p$ and $q$ be positive
 integers, put $p' = p / \gcd(p, q)$ and $q' = q / \gcd(p, q)$, and for each $n$ let
 $|M^{p/q}_n|$ be the number of maximal $(p, q)$-Schreier sets with maximum $n$, that is, of sets
 $F \subseteq \{1, \dots, n\}$ with $n \in F$ and $q \min F = p |F|$. For each $n$, let $K_n$ be

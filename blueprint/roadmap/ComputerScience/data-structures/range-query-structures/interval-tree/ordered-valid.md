@@ -1,6 +1,6 @@
 # Ordered-and-valid check for interval trees
 
-**Ordered-and-valid check for interval trees.** Keys of entries are pairs (low endpoint,
+Keys of entries are pairs (low endpoint,
 identifier), ordered lexicographically. Given optional lower and upper key bounds $\ell$ and $u$,
 the check accepts the empty tree, and accepts a node with left subtree $L$, entry $e$ and right
 subtree $R$ exactly when the key $k$ of $e$ is strictly greater than $\ell$ if $\ell$ is present

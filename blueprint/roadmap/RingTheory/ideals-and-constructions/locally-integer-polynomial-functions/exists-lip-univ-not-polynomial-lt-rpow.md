@@ -1,6 +1,6 @@
 # Non-polynomial LIP functions on the integers that are small on an infinite set
 
-**Non-polynomial LIP functions on the integers that are small on an infinite set.** Let
+Let
 $\tau : \mathbb{N} \to \mathbb{R}$ with $\tau(n) \to +\infty$ as $n \to \infty$. Write
 $\mathrm{LIP}(\mathbb{Z})$ for the ring of locally integer polynomial functions on $\mathbb{Z}$:
 the functions $\mathbb{Z} \to \mathbb{Z}$ whose restriction to every finite subset of $\mathbb{Z}$

@@ -1,6 +1,6 @@
 # Berkovich's question on normal subgroups of exponent p, for p > n
 
-**Berkovich's question on normal subgroups of exponent p, for p > n.** For every prime $p$
+For every prime $p$
 and every natural number $n < p$, if a finite $p$-group $G$ has a subgroup of order $p^n$ all of
 whose elements $x$ satisfy $x^p = 1$, then $G$ has a normal subgroup of order $p^n$ all of whose
 elements $x$ satisfy $x^p = 1$.

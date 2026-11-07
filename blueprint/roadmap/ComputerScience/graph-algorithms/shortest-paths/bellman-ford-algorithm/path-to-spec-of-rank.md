@@ -1,6 +1,6 @@
 # Predecessor paths realize the distances under a decreasing rank
 
-**Predecessor paths realize the distances under a decreasing rank.** Let $R$ be a
+Let $R$ be a
 distances record on $n$ vertices with source $s$, distance table $d$ (each $d(v)$ is an integer
 or infinite) and predecessor table $p$; let $E$ be a list of weighted edges; and let $r$ assign to
 each vertex $v$ a natural number $r(v) < n$. Suppose that $d(s) = 0$, that every vertex $v$ with

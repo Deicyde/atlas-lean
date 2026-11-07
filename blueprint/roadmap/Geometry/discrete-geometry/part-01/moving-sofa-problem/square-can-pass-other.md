@@ -1,6 +1,6 @@
 # The unit square passes the mirrored corridor
 
-**The unit square passes the mirrored corridor.** Let the mirrored corridor be
+Let the mirrored corridor be
 $L' = \{z \in \mathbb{C} : -1 \le \operatorname{Re} z,\ 0 \le \operatorname{Im} z \le 1\} \cup
 \{z \in \mathbb{C} : -1 \le \operatorname{Re} z \le 0,\ 0 \le \operatorname{Im} z\}$, with entrance
 $E' = \{z \in \mathbb{C} : 0 \le \operatorname{Re} z,\ 0 \le \operatorname{Im} z \le 1\}$ and exit

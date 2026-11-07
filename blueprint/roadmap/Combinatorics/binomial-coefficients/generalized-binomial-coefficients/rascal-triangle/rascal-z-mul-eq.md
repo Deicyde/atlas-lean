@@ -1,6 +1,6 @@
 # Generalized diamond recurrence for Rascal numbers
 
-**Generalized diamond recurrence for Rascal numbers.** For integers $n$, $k$, $\ell$, $u$
+For integers $n$, $k$, $\ell$, $u$
 with $\ell \ge 0$, $u \ge 0$ and $\ell \le k \le n - u$, the Rascal numbers satisfy
 $R_{n,k} R_{n-u-\ell,k-\ell} = R_{n-u,k} R_{n-\ell,k-\ell} + u\ell$.
 

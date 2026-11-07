@@ -1,6 +1,6 @@
 # SINGLE-MACHINE WEIGHTED COMPLETION WITH PRECEDENCE is NP-complete
 
-**SINGLE-MACHINE WEIGHTED COMPLETION WITH PRECEDENCE is NP-complete.** The decision problem
+The decision problem
 SINGLE-MACHINE WEIGHTED COMPLETION WITH PRECEDENCE on bitstrings belongs to NP, and every
 decision problem in NP reduces to it by a polynomial-time many-one reduction.
 

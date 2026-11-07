@@ -1,6 +1,6 @@
 # Nijenhuis tensor
 
-**Nijenhuis tensor.** Let $n$ be a natural number, let $J$ assign to each point
+Let $n$ be a natural number, let $J$ assign to each point
 $y \in \mathbb{R}^{2n}$ a real linear map $J(y) : \mathbb{R}^{2n} \to \mathbb{R}^{2n}$, and let
 $V, W : \mathbb{R}^{2n} \to \mathbb{R}^{2n}$ be vector fields. Write $JV$ for the vector field
 $y \mapsto J(y)V(y)$ and $[V, W]$ for the Lie bracket of vector fields. The Nijenhuis tensor of

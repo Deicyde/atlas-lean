@@ -1,6 +1,6 @@
 # Diagonal entries of the bidiagonal matrix V(n)
 
-**Diagonal entries of the bidiagonal matrix V(n).** For every natural number $n$, let $V(n)$ be
+For every natural number $n$, let $V(n)$ be
 the $n \times n$ rational upper bidiagonal matrix with $V(n)_{i,i} = i$, $V(n)_{i,i+1} = 1$ and
 all other entries $0$, indices running over $1, \dots, n$. Then $V(n)_{i,i} = i$ for every
 $1 \le i \le n$.

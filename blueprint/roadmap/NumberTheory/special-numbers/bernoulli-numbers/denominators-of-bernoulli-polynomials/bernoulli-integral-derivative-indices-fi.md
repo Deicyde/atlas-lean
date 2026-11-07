@@ -1,6 +1,6 @@
 # Finitely many Bernoulli polynomials have an integral $k$-th derivative
 
-**Finitely many Bernoulli polynomials have an integral $k$-th derivative.** For $k \ge 1$ let
+For $k \ge 1$ let
 $\overline{\mathcal{S}}_k$ be the set of $n \ge 1$ such that the $k$-th derivative $B_n^{(k)}(x)$
 of the Bernoulli polynomial $B_n(x)$ has integer coefficients. For every $k \ge 1$ the set
 $\overline{\mathcal{S}}_k$ is finite and

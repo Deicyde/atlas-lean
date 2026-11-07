@@ -1,3 +1,3 @@
 # 4-cycle with a pendant edge
 
-**4-cycle with a pendant edge.** The 4-cycle with a pendant edge, on `Fin 5`.
+The 4-cycle with a pendant edge, on `Fin 5`.

@@ -1,6 +1,6 @@
 # Closed range passes to the Hilbert space adjoint
 
-**Closed range passes to the Hilbert space adjoint.** Let $X$ and $Y$ be complex Hilbert spaces
+Let $X$ and $Y$ be complex Hilbert spaces
 and let $A : X \to Y$ be a bounded linear operator with Hilbert space adjoint $A^* : Y \to X$. If
 the range of $A$ is closed in $Y$, then the range of $A^*$ is closed in $X$.
 

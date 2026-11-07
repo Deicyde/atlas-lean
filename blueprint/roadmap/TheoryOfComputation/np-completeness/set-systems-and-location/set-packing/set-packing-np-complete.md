@@ -1,6 +1,6 @@
 # SET PACKING is NP-complete
 
-**SET PACKING is NP-complete.** The SET PACKING decision problem lies in NP, and every
+The SET PACKING decision problem lies in NP, and every
 decision problem $L$ in NP has a polynomial-time many-one reduction to SET PACKING.
 
 ## Sources

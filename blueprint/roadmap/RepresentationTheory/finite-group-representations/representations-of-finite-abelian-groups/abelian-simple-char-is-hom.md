@@ -1,6 +1,6 @@
 # Characters of simple representations of a finite abelian group are homomorphisms
 
-**Characters of simple representations of a finite abelian group are homomorphisms.** Let $G$
+Let $G$
 be a finite abelian group and let $V$ be a simple finite-dimensional complex representation of
 $G$. Then there is a monoid homomorphism $\varphi : G \to \mathbb{C}$ such that the character of
 $V$ equals $\varphi$.

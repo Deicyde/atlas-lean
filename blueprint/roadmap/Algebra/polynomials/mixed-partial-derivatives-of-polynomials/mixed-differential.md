@@ -1,6 +1,6 @@
 # Mixed differential operator
 
-**Mixed differential operator.** Let $R$ be a commutative ring, let $\sigma$ be an index
+Let $R$ be a commutative ring, let $\sigma$ be an index
 type, and write $\partial_s$ for the partial derivative with respect to $x_s$ on the polynomial
 ring $R[x_s : s \in \sigma]$. For a finite list $(i_1, \dots, i_k)$ of indices in $\sigma$
 (repetitions allowed) and a polynomial $p \in R[x_s : s \in \sigma]$, the mixed differential of

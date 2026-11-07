@@ -1,6 +1,6 @@
 # 3-dissection of $1 / (f_1 f_2)$
 
-**3-dissection of $1 / (f_1 f_2)$.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ denote the
+Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ denote the
 Euler products in $\mathbb{Z}[[q]]$. Then
 $f_3^6 f_6^6 f_9^3 f_{18}^3 = f_1 f_2 f_6^4 f_9^{12} + q f_1 f_2 f_3 f_6^3 f_9^9 f_{18}^3 +
 3 q^2 f_1 f_2 f_3^2 f_6^2 f_9^6 f_{18}^6 - 2 q^3 f_1 f_2 f_3^3 f_6 f_9^3 f_{18}^9 +

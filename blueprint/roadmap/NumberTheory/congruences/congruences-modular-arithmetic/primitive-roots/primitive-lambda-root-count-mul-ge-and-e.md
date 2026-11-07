@@ -1,6 +1,6 @@
 # Supermultiplicativity of the number of primitive λ-roots
 
-**Supermultiplicativity of the number of primitive λ-roots.** Let $R(n)$ be the number of
+Let $R(n)$ be the number of
 primitive λ-roots modulo $n$. For coprime natural numbers $m, n > 1$, we have
 $R(m)\,R(n) \le R(mn)$, and $R(mn) = R(m)\,R(n)$ if and only if $m = 2$ and $n$ is odd, or
 $n = 2$ and $m$ is odd.

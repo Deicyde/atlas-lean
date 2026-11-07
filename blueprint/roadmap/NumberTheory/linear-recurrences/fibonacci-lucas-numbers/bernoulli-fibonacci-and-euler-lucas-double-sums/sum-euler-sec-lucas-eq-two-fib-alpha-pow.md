@@ -1,6 +1,6 @@
 # Powers of the golden ratio from Euler and Lucas numbers
 
-**Powers of the golden ratio from Euler and Lucas numbers.** Let $\alpha = (1 + \sqrt{5})/2$,
+Let $\alpha = (1 + \sqrt{5})/2$,
 let $L_n$ be the Lucas numbers, and let $E_k$ be the Euler (secant) numbers, given by
 $2/(e^t + e^{-t}) = \sum_{k \ge 0} E_k t^k / k!$. For every natural number $m$,
 

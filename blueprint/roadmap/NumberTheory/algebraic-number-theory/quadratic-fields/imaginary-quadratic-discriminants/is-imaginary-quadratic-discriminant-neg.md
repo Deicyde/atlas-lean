@@ -1,4 +1,4 @@
 # Imaginary quadratic discriminants are negative
 
-**Imaginary quadratic discriminants are negative.** Every imaginary quadratic discriminant
+Every imaginary quadratic discriminant
 $D$ satisfies $D < 0$.

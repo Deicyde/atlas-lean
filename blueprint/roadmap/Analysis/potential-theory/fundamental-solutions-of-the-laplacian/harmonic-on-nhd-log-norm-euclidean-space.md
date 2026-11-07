@@ -1,6 +1,6 @@
 # The logarithm of the norm is harmonic on the punctured plane
 
-**The logarithm of the norm is harmonic on the punctured plane.** The function
+The function
 $g(x) = \log|x|$, where $|x|$ is the Euclidean norm of $x \in \mathbb{R}^2$, is harmonic on
 $\mathbb{R}^2 \setminus \{0\}$: near every point $x \ne 0$ it is twice continuously
 differentiable and its Laplacian vanishes.

@@ -1,6 +1,6 @@
 # Sharp bounds for Tverberg's sum with rounding half up
 
-**Sharp bounds for Tverberg's sum with rounding half up.** Let $\ell \ge 2$ and let $F$ be
+Let $\ell \ge 2$ and let $F$ be
 rounding to the nearest integer with ties rounded up, $F(y) = \lfloor y + 1/2 \rfloor$.
 For integers $a_1, \dots, a_\ell$, a natural number $m$ and an integer $k$, let
 $f(a, m, k) =

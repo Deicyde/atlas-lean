@@ -1,6 +1,6 @@
 # An alternating convolution of extended trinomial coefficients
 
-**An alternating convolution of extended trinomial coefficients.** For complex $u$ and
+For complex $u$ and
 $j \in \mathbb{N}$ write $\binom{u}{j}_2$ for the coefficient of $t^j$ in
 $(1 + t + t^2)^u = \sum_{i \ge 0} \binom{u}{i}(t + t^2)^i$ (Comtet's extension), where
 $\binom{u}{i}$ is the generalized binomial coefficient. Then for every complex $x$ and every

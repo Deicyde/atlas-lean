@@ -1,6 +1,6 @@
 # The three-digit $2$-repunit
 
-**The three-digit $2$-repunit.** The $2$-repstring with $k = 1$, $z = 0$ and $t = 3$, that is,
+The $2$-repstring with $k = 1$, $z = 0$ and $t = 3$, that is,
 the $2$-repunit $1_2^{(3)}$ with three digits, equals $7$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Values of $a_{0,\ell}$ and $a_{3,\ell}$ for $\ell = 3, 4, 5$
 
-**Values of $a_{0,\ell}$ and $a_{3,\ell}$ for $\ell = 3, 4, 5$.** For a natural number $\ell$
+For a natural number $\ell$
 let $a_{0,\ell} = 1 + \sum_{i=1}^{\lfloor \ell/2 \rfloor} \binom{\ell}{2i} C_i$, with $C_i$ the
 $i$-th Catalan number, and let $a_{3,\ell}$ be the sum over the integers
 $1 \le i \le \lfloor (\ell - 1)/2 \rfloor$ of $\binom{\ell}{2i+1}$ times the integer part of

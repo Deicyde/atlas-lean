@@ -1,6 +1,6 @@
 # The anti-Fibonacci construction
 
-**The anti-Fibonacci construction.** For each $n \ge 0$, entry $n$ of the construction is the
+For each $n \ge 0$, entry $n$ of the construction is the
 triple $(A_{n+1}, B_{n+1}, C_{n+1})$ of natural numbers together with the finite set $U_{n+1}$ of
 values used so far. Entry $0$ is $(1, 2, 3)$ with $U_1 = \{1, 2, 3\}$. For $n \ge 1$, $A_{n+1}$ is
 the least positive integer not in $U_n$, $B_{n+1}$ is the least positive integer not in

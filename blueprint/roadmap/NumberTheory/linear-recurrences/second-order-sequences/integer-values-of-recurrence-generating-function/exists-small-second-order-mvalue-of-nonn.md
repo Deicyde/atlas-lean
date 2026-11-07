@@ -1,6 +1,6 @@
 # A small value of $M$ in the family of $r/s$ when $abp + a^2 - b^2 \ge 0$
 
-**A small value of $M$ in the family of $r/s$ when $abp + a^2 - b^2 \ge 0$.** Let $a, b, p$
+Let $a, b, p$
 be integers with $p \ne 0$ and $abp + a^2 - b^2 \ge 0$. Let
 $A(x) = \frac{a(1 - px) + bx}{1 - px - x^2}$ for rational $x$, and for integers $u, v$ let
 $M(u, v) = \frac{bu^2 + bv^2 - apu^2 + 2auv}{v^2 - puv - u^2}$, where in both a fraction with

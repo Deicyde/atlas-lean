@@ -1,6 +1,6 @@
 # The discrete Sierpiński triangle
 
-**The discrete Sierpiński triangle.** The discrete Sierpiński triangle is the set
+The discrete Sierpiński triangle is the set
 $\mathcal{S} = \bigcup_{n \ge 0} S_n \subseteq \mathbb{N} \times \mathbb{N}$, the union of all the
 stages $S_n$ of the discrete Sierpiński triangle.
 

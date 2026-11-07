@@ -1,6 +1,6 @@
 # Congruences for overcubic partition triples at arguments congruent to 8 modulo 16
 
-**Congruences for overcubic partition triples at arguments congruent to 8 modulo 16.** Let
+Let
 $\mathrm{bt}(n)$ be the number of overcubic partition triples of $n$. For all natural numbers $n$
 and $\alpha$, each of $\mathrm{bt}(64n+40)$, $\mathrm{bt}(576n+264)$, $\mathrm{bt}(576n+456)$ and
 $\mathrm{bt}(64 \cdot 9^{\alpha+2} n + 264 \cdot 9^{\alpha+1})$ is divisible by $8$.

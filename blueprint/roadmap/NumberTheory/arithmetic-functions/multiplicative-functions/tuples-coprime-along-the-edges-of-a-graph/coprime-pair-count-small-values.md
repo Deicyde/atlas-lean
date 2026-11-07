@@ -1,6 +1,6 @@
 # Number of coprime pairs: examples
 
-**Number of coprime pairs: examples.** The triple $(2, 3, 4)$ has exactly two coprime pairs
+The triple $(2, 3, 4)$ has exactly two coprime pairs
 of components, and the triple $(6, 10, 15)$ has none, that is, its components are pairwise
 non-coprime.
 

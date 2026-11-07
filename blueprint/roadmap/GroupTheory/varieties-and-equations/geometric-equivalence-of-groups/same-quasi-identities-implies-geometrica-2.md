@@ -1,6 +1,6 @@
 # Groups with the same quasi-identities need not be geometrically equivalent
 
-**Groups with the same quasi-identities need not be geometrically equivalent.** The statement
+The statement
 of Kourovka Problem 14.71 is false: there are groups $G$ and $H$ such that every quasi-identity
 holds in $G$ if and only if it holds in $H$, but $G$ and $H$ are not geometrically equivalent.
 

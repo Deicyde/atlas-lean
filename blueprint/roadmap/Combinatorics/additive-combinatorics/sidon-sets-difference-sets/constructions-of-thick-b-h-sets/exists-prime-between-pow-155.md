@@ -1,6 +1,6 @@
 # Cully-Hugill's theorem for 155th powers
 
-**Cully-Hugill's theorem for 155th powers.** For every natural number $n \ge 1$ there is a
+For every natural number $n \ge 1$ there is a
 prime $p$ with $n^{155} < p < (n + 1)^{155}$.
 
 ## Sources

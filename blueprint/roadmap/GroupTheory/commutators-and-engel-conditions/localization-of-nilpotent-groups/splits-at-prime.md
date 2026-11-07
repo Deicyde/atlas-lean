@@ -1,6 +1,6 @@
 # Splitting at a prime
 
-**Splitting at a prime.** Let $p$ be a natural number and $\pi \colon G \to Q$ a homomorphism
+Let $p$ be a natural number and $\pi \colon G \to Q$ a homomorphism
 of groups (in the intended use, the quotient map of an extension). Then $\pi$ splits at $p$ when
 there exist $p$-localizations $e_G \colon G \to G_p$ and $e_Q \colon Q \to Q_p$ and homomorphisms
 $\pi_p \colon G_p \to Q_p$ and $s \colon Q_p \to G_p$ with $\pi_p \circ e_G = e_Q \circ \pi$ and

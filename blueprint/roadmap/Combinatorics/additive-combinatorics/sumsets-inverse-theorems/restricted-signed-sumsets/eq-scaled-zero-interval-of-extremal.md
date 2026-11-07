@@ -1,6 +1,6 @@
 # Inverse theorem for the extremal restricted signed sumset of sets containing zero
 
-**Inverse theorem for the extremal restricted signed sumset of sets containing zero.** Let
+Let
 $h$ and $k$ be natural numbers with $4 \le h \le k - 1$, and let
 $A = \{a_0 < a_1 < \cdots < a_{k-1}\}$ be a set of $k$ nonnegative integers with $a_0 = 0$.
 Write $A_h = \{a_0, \dots, a_h\}$, $A' = \{a_1, \dots, a_{k-1}\}$ and

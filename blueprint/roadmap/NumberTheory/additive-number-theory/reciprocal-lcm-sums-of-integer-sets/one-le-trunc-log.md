@@ -1,6 +1,6 @@
 # The truncated logarithm is at least one
 
-**The truncated logarithm is at least one.** For every real number $x$, the truncated
+For every real number $x$, the truncated
 logarithm $\operatorname{Log} x = \max(\log x, 1)$ satisfies $\operatorname{Log} x \ge 1$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # A Fitting class of supersoluble groups with a non-central minimal normal subgroup
 
-**A Fitting class of supersoluble groups with a non-central minimal normal subgroup.** There
+There
 exist a class $\mathfrak{X}$ of groups that is a Fitting class and all of whose finite members are
 supersoluble, a finite group $G \in \mathfrak{X}$, and a minimal normal subgroup $N$ of $G$ that is
 not contained in the center of $G$.

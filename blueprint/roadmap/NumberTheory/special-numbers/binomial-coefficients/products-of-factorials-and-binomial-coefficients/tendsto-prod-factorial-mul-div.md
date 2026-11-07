@@ -1,6 +1,6 @@
 # Asymptotics of products of factorials of multiples
 
-**Asymptotics of products of factorials of multiples.** Let $k \ge 1$ be a natural number, let
+Let $k \ge 1$ be a natural number, let
 $F_k$ be the $k$-th factorial product constant and $A$ the Glaisher–Kinkelin constant. As
 $n \to \infty$, the ratio of $\prod_{\nu=1}^{n} (k\nu)!$ to
 

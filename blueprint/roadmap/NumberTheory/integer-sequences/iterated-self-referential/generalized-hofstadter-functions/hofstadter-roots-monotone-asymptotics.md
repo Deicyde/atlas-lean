@@ -1,6 +1,6 @@
 # Monotonicity and asymptotics of the Hofstadter constants
 
-**Monotonicity and asymptotics of the Hofstadter constants.** For each integer $k \ge 1$ let
+For each integer $k \ge 1$ let
 $\alpha_k$ be a positive zero of $X^k + X - 1$ and $\beta_k$ a positive zero of
 $X^k - X^{k-1} - 1$. Then for every $k \ge 1$ we have $\alpha_k < \alpha_{k+1}$,
 $\beta_{k+1} < \beta_k$, $1 + 1/k \le \beta_k \le 1 + 1/\sqrt{k}$ and

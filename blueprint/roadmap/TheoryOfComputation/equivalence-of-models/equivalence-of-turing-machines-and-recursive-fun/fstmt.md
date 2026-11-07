@@ -1,6 +1,6 @@
 # Statements of the wrapped machine
 
-**Statements of the wrapped machine.** Let $c$ be a partial recursive code, and let
+Let $c$ be a partial recursive code, and let
 $\mathrm{tr}$ be Mathlib's multi-stack machine that evaluates such codes, with stacks
 $K' = \{\mathrm{main}, \mathrm{rev}, \mathrm{aux}, \mathrm{stack}\}$ and alphabet
 $\Gamma' = \{\mathtt{cons}_l, \mathtt{cons}, \mathtt{bit0}, \mathtt{bit1}\}$. A statement of the

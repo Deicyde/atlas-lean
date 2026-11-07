@@ -1,6 +1,6 @@
 # Critical weighted Sobolev inequality on an annulus
 
-**Critical weighted Sobolev inequality on an annulus.** For $r > 0$ let $B_r$ be the open disc
+For $r > 0$ let $B_r$ be the open disc
 of radius $r$ about the origin in the Euclidean plane $\mathbb{R}^2$, let
 $\Omega_1 = B_3 \setminus \overline{B}_1$ and $\Omega_2 = B_3 \setminus \overline{B}_2$, and let
 $\phi(x) = \max\{|x| - 1, 0\}$, the distance from $x$ to the closed unit disc. Let $1 \le p < 2$

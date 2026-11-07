@@ -1,6 +1,6 @@
 # Height lower bound on $y^2 = x^3 + ax + b$ when $|a|$ is small
 
-**Height lower bound on $y^2 = x^3 + ax + b$ when $|a|$ is small.** Let $a, b \in \mathbb{Z}$
+Let $a, b \in \mathbb{Z}$
 with $ab \ne 0$ and $4a^3 + 27b^2 \ne 0$, let $\lVert p \rVert = \sqrt{2 + a^2 + b^2}$, and suppose
 $1 + |a| < \lVert p \rVert^{1/2}/1.782$. For $u, v \in \mathbb{Q}$ let
 $H(u, v) = \max(|U|, |V|, |W|)$, where $U, V, W$ are coprime integers with

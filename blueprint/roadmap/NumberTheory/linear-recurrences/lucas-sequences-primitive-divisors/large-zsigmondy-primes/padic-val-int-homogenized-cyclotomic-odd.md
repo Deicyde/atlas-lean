@@ -1,6 +1,6 @@
 # $p$-adic valuation of homogenized cyclotomic values at an odd prime
 
-**$p$-adic valuation of homogenized cyclotomic values at an odd prime.** Let $a > b$ be
+Let $a > b$ be
 positive integers, let $p$ be an odd prime dividing neither $a$ nor $b$, and let $k$ be the least
 positive integer such that $p$ divides $a^k - b^k$. Write $v_p$ for the $p$-adic valuation and
 $\Phi_n(a, b)$ for the homogenized cyclotomic value. Then for every positive integer $n$:

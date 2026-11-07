@@ -1,6 +1,6 @@
 # Self-similarity equation
 
-**Self-similarity equation.** If $K \subseteq \mathbb{R}$ is a self-similar compact set of
+If $K \subseteq \mathbb{R}$ is a self-similar compact set of
 module $\mu$ and ratio $\rho$, then $\rho K^{(\mu)} = K$, where $K^{(\mu)}$ is the $\mu$-th derived
 set of $K$ (the set of accumulation points, iterated $\mu$ times) and $\rho K^{(\mu)}$ is its
 image under multiplication by $\rho$.

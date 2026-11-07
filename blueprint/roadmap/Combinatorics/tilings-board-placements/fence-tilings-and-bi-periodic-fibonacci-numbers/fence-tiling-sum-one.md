@@ -1,6 +1,6 @@
 # Weighted fence tilings of the one-cell board
 
-**Weighted fence tilings of the one-cell board.** For elements $a$ and $b$ of a commutative
+For elements $a$ and $b$ of a commutative
 semiring $R$, the weighted number $S_1$ of tilings of a $1$-board by half-squares and
 $(1/2, 1/2)$-fences, a half-square weighing $a$ in an odd cell and $b$ in an even cell, equals
 $a^2$: the only tiling has two half-squares in cell $1$.

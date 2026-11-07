@@ -1,6 +1,6 @@
 # Truncated Perron formula
 
-**Truncated Perron formula.** Let $y > 0$ with $y \ne 1$, and let $c > 0$ and $T > 0$ be real
+Let $y > 0$ with $y \ne 1$, and let $c > 0$ and $T > 0$ be real
 numbers. Let $K(y, c, T) = \frac{1}{2\pi}\int_{-T}^{T} \frac{y^{c+it}}{c+it}\,dt$ be the truncated
 Perron kernel, and let $\delta(y) = 1$ if $y > 1$ and $\delta(y) = 0$ if $y < 1$. Then
 

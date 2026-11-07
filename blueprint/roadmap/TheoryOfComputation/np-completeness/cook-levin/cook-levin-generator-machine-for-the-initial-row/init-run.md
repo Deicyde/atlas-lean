@@ -1,6 +1,6 @@
 # Correctness of the init generator, with its explicit time bound
 
-**Correctness of the init generator, with its explicit time bound.** Let $L$ be a layout with
+Let $L$ be a layout with
 $A$ label/state variables, $K$ stacks and $g > 0$ symbol codes, let $i_c < A$ and $k_0 < K$, and
 let $Y$ be a strictly increasing list of codes with $0 < y < g$ for every $y \in Y$. Let $xs$ be a
 list of codes below $g$ with $n = |xs|$, let $T, e, f$ be natural numbers with $f > 0$, and let

@@ -1,6 +1,6 @@
 # Convex bodies in $\mathbb{R}^n$
 
-**Convex bodies in $\mathbb{R}^n$.** A set $K$ in the $n$-dimensional Euclidean space
+A set $K$ in the $n$-dimensional Euclidean space
 $\mathbb{R}^n$ is a convex body when it is convex, compact and has nonempty interior.
 
 ## Sources

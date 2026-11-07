@@ -1,6 +1,6 @@
 # Factor complexity of almost every Mallows representation
 
-**Factor complexity of almost every Mallows representation.** For almost every irrational
+For almost every irrational
 $\alpha \in (0, 1)$, with respect to Lebesgue measure, the factor complexity of the Mallows
 representation $M(\alpha)$ satisfies $p_{M(\alpha)}(n) = 3^n$ for every $n \ge 0$.
 

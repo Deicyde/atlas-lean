@@ -1,6 +1,6 @@
 # Rödl's question on Ramsey graphs that are locally trees of triangles
 
-**Rödl's question on Ramsey graphs that are locally trees of triangles.** This is the
+This is the
 statement that for every natural number $\ell$ there is a finite graph $G$ with at least $\ell$
 vertices such that $G \to_2 K_3$ (every colouring of the edges of $G$ with two colours contains
 a monochromatic triangle) and $G$ is locally a tree of triangles on $\ell$ vertices: for every

@@ -1,6 +1,6 @@
 # Dropping the largest element keeps nontrivial sums nontrivial
 
-**Dropping the largest element keeps nontrivial sums nontrivial.** Let $G$ be a linearly
+Let $G$ be a linearly
 ordered additive commutative group, let $h$ and $k > 1$ be natural numbers, and let
 $a_0, a_1, \ldots$ be a sequence in $G$ with $a_0 < a_1 < \cdots < a_{k-1}$. Put
 $A = \{a_0, \ldots, a_{k-1}\}$ and $B = \{a_0, \ldots, a_{k-2}\}$, and write $hX$ for the

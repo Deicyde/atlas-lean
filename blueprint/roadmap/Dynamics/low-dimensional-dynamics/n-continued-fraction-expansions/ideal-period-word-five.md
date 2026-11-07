@@ -1,6 +1,6 @@
 # The fifth ideal period word
 
-**The fifth ideal period word.** Writing $a$ for the block $2, 1, 1$ and $b$ for the block
+Writing $a$ for the block $2, 1, 1$ and $b$ for the block
 $2, 2$ of partial quotients, the ideal period word $d_5$ is $d_4$ followed by the blocks
 $abb\,ab\,ab\,abb\,ab\,ab$, in this order.
 

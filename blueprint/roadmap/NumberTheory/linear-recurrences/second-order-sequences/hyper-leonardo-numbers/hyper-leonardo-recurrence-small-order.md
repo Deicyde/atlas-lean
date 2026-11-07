@@ -1,6 +1,6 @@
 # Recurrences for the hyper-Leonardo numbers of orders zero, one and two
 
-**Recurrences for the hyper-Leonardo numbers of orders zero, one and two.** The
+The
 hyper-Leonardo numbers $Le^{(r)}_n$ satisfy $Le^{(0)}_0 = Le^{(0)}_1 = 1$, $Le^{(1)}_0 = 1$,
 $Le^{(1)}_1 = 2$, $Le^{(2)}_0 = 1$ and $Le^{(2)}_1 = 3$, and for every natural number $n \ge 2$,
 

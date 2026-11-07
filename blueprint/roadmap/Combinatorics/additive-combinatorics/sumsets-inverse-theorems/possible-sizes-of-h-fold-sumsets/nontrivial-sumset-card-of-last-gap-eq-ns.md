@@ -1,6 +1,6 @@
 # Many nontrivial sums when the last gap is a proper multiple of the previous one
 
-**Many nontrivial sums when the last gap is a proper multiple of the previous one.** Let $G$
+Let $G$
 be a linearly ordered additive commutative group, let $h$ and $k \ge 4$ be natural numbers, and
 let $a_0, a_1, \ldots$ be a sequence in $G$ with $0 = a_0 < a_1 < \cdots < a_{k-3}$. Suppose
 that $a_{k-2} = a_{k-3} + b$ and $a_{k-1} = a_{k-3} + b + db$, where $b \in G$ satisfies

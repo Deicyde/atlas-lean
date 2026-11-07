@@ -1,6 +1,6 @@
 # Asymptotic formula for the overpartition r-mex sums
 
-**Asymptotic formula for the overpartition r-mex sums.** Let $r$ be a positive integer and let
+Let $r$ be a positive integer and let
 $\sigma_r\overline{\mathrm{mex}}(n)$ be the sum over all overpartitions $\pi$ of $n$ of
 $\overline{\mathrm{mex}}_r(\pi)$, the least positive integer occurring fewer than $r$ times among
 the non-overlined parts of $\pi$. Then

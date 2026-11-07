@@ -1,6 +1,6 @@
 # Rectangular-grid tilings fixed by the half-turn, $nm$ even
 
-**Rectangular-grid tilings fixed by the half-turn, $nm$ even.** Let $n$ and $m$ be positive
+Let $n$ and $m$ be positive
 integers with $nm$ even, let $T$ be a finite set of tiles and let $\sigma$ be a permutation of $T$
 with $\sigma^2 = 1$. Let $r^2$ be the half-turn of $\mathbb{Z}/n \times \mathbb{Z}/m$ given by
 $r^2(x, y) = (-1 - x, -1 - y)$. Then the number of tilings

@@ -1,6 +1,6 @@
 # Multinomial formula for the Möbius–Fermat function
 
-**Multinomial formula for the Möbius–Fermat function.** Let $u_M$ be the Fermat unit function
+Let $u_M$ be the Fermat unit function
 and let $\mu_M$ be an integer-valued arithmetic function with $\mu_M * u_M = \varepsilon$, where
 $*$ is Dirichlet convolution and $\varepsilon$ is its identity, with $\varepsilon(1) = 1$ and
 $\varepsilon(l) = 0$ for $l \ne 1$; thus $\mu_M$ is the Dirichlet inverse of $u_M$, the

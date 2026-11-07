@@ -1,6 +1,6 @@
 # Eventual summability of the square-root Poisson series
 
-**Eventual summability of the square-root Poisson series.** For all sufficiently large
+For all sufficiently large
 real $x$, the series $\sum_{k=1}^{\infty} x^k \sqrt{k} / k!$ is summable.
 
 ## Sources

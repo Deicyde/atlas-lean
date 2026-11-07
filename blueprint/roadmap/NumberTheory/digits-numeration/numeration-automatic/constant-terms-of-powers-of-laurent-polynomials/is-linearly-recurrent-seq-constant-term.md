@@ -1,6 +1,6 @@
 # Linear recurrence of constant terms modulo $p$
 
-**Linear recurrence of constant terms modulo $p$.** Let $p$ be a prime and let $P, Q$ be
+Let $p$ be a prime and let $P, Q$ be
 Laurent polynomials with integer coefficients in $r$ variables; write $\operatorname{ct}[f]$ for
 the constant term of $f$. Suppose $p \nmid \operatorname{ct}[P^n Q]$ for some $n \in \mathbb{N}$.
 Then the sequence $u_n = \operatorname{ct}[P^n Q] \bmod p$ is linearly recurrent if and only if

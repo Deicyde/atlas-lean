@@ -1,6 +1,6 @@
 # Three-digit representations of powers of two with outer digits one
 
-**Three-digit representations of powers of two with outer digits one.** Let $n$ be a natural
+Let $n$ be a natural
 number and $b \ge 2$ a base. There is a digit $c \ne 2$ such that the base-$b$ representation of
 $2^n$ is $(1, c, 1)_b$, that is, $2^n = 1 + cb + b^2$ with $0 \le c < b$, if and only if
 (i) $2^n - 1 = kb$ for some natural number $k$ with $b \le k \le 2b - 1$, and (ii) it is not the

@@ -1,6 +1,6 @@
 # Small bases of order greater than two come in pairs
 
-**Small bases of order greater than two come in pairs.** For every natural number $n$ and
+For every natural number $n$ and
 every $L > 2$, the number of integers $b$ with $1 \le b < n$ and $\gcd(b, n) = 1$ whose
 multiplicative order modulo $n$ is $L$ is even.
 

@@ -1,7 +1,5 @@
 # Kolmogorov continuous-modification theorem for real-valued processes
 
-**Kolmogorov continuous-modification theorem for real-valued processes.**
-
 A real-valued Kolmogorov process on `NNReal` whose time exponent is greater
 than one has one modification with measurable coordinates and continuous paths
 on every sample. The same modification agrees exactly at time zero and

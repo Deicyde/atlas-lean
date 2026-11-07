@@ -1,6 +1,6 @@
 # The Hamiltonicity critical-bias property
 
-**The Hamiltonicity critical-bias property.** This is the statement that the critical bias of
+This is the statement that the critical bias of
 the Hamiltonicity game is $(1 + o(1))\, n / \ln n$. In the $(1 : b)$ Maker-Breaker game on the
 edges of the complete graph $K_n$ with Breaker moving first, Breaker claims $b$ free edges per
 turn (all remaining free edges if fewer than $b$ are left), Maker claims one free edge per turn,

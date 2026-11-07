@@ -1,6 +1,6 @@
 # Prime bound for progressions with a fixed difference
 
-**Prime bound for progressions with a fixed difference.** Let $m$ be an integer, $n > 1$ and
+Let $m$ be an integer, $n > 1$ and
 $d > 0$ natural numbers, and $p$ a prime that divides $n$ but not $d$. Then $f_m(d, n) \le p - 1$,
 where $f_m(d, n)$ is the length of the longest arithmetic progression with common difference $d$
 contained in the set $R_m(n)$ of integers $a$ with $m + 1 \le a \le m + n$ and $\gcd(a, n) = 1$.

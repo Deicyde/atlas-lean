@@ -1,6 +1,6 @@
 # A $2$-Naples parking example on $\mathbb{Z}$
 
-**A $2$-Naples parking example on $\mathbb{Z}$.** Under the $2$-Naples rule on $\mathbb{Z}$,
+Under the $2$-Naples rule on $\mathbb{Z}$,
 the cars with preferences $(4, 2, 2, 2)$, arriving in order with no spot occupied, park in the
 spots $4, 2, 1, 0$ respectively.
 

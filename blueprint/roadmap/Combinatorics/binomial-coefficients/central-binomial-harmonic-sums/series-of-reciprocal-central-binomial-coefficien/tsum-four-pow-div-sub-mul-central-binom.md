@@ -1,6 +1,6 @@
 # Zurita's series $\sum_{k > n} 4^k x^k / ((k - n)\binom{2k}{k})$
 
-**Zurita's series $\sum_{k > n} 4^k x^k / ((k - n)\binom{2k}{k})$.** Let $n \ge 1$, let
+Let $n \ge 1$, let
 $S_n(x) = \sum_{k=0}^n s_k x^k$ and $T_{n-2}$ be Zurita's polynomials (with $T_{-1} = 0$), and
 let $x$ be real with $0 < x < 1$. Then
 

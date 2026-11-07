@@ -1,6 +1,6 @@
 # Smoothly slice (smooth knot version)
 
-**Smoothly slice (smooth knot version).** Let
+Let
 $\Delta = \{(x, y) \in \mathbb{R}^2 : x^2 + y^2 \le 1\}$ be the closed unit disk and
 $C = \{(x, y) \in \mathbb{R}^2 : x^2 + y^2 = 1\}$ its boundary circle. A smooth knot $K$ is
 smoothly slice if there is a smooth ($C^\infty$) map $f : \mathbb{R}^2 \to \mathbb{R}^3 \times

@@ -1,6 +1,6 @@
 # The empty set is not a CR-set
 
-**The empty set is not a CR-set.** In every commutative semigroup, the empty set is not a
+In every commutative semigroup, the empty set is not a
 CR-set.
 
 ## Sources

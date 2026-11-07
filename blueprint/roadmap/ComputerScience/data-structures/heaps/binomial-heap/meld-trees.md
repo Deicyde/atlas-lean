@@ -1,6 +1,6 @@
 # Melding binomial forests
 
-**Melding binomial forests.** Over a linear order, the meld of two lists of binomial trees
+Over a linear order, the meld of two lists of binomial trees
 is defined by recursion on their total length. For every list $L$, the meld of the empty list
 with $L$ is $L$, and the meld of $L$ with the empty list is $L$. For nonempty lists with first
 trees $s$ and $t$ and remaining lists $F$ and $G$: if the rank of $s$ is less than the rank of

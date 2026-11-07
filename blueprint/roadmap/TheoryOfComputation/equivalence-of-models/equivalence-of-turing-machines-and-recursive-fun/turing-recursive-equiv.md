@@ -1,6 +1,6 @@
 # Recursive functions are the Turing-computable functions
 
-**Recursive functions are the Turing-computable functions.** A function
+A function
 $f : \mathbb{N} \to \mathbb{N}$ is computable, that is, total recursive, if and only if some finite
 multi-stack Turing machine computes it on binary representations: there are a machine with
 finitely many stacks, internal states and program labels and bijections from its input and output

@@ -1,6 +1,6 @@
 # Relabeling along $f$ agrees with renaming
 
-**Relabeling along $f$ agrees with renaming.** Let $f : \alpha \to \beta$ and let $\varphi$
+Let $f : \alpha \to \beta$ and let $\varphi$
 be a bounded formula of a first-order language with free variables in $\alpha$ and $k$ bound
 variables. Mathlib's relabeling of $\varphi$ along the map $\alpha \to \beta \sqcup \mathrm{Fin}\,0$
 sending $a$ to the free variable $f(a)$ replaces each free variable $a$ by $f(a)$ and produces a

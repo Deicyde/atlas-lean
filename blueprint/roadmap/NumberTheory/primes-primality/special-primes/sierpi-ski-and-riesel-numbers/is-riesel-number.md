@@ -1,6 +1,6 @@
 # Riesel number
 
-**Riesel number.** A natural number $k$ is a Riesel number if $k$ is odd and, for every
+A natural number $k$ is a Riesel number if $k$ is odd and, for every
 integer $n \ge 1$, the number $k \cdot 2^n - 1$ is not prime.
 
 ## Sources

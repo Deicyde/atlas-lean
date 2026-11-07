@@ -1,6 +1,6 @@
 # The strong Mason conjecture
 
-**The strong Mason conjecture.** Let $M$ be a finite matroid whose ground set has $n$
+Let $M$ be a finite matroid whose ground set has $n$
 elements, and for each $j$ let $I_j$ be the number of independent sets of $M$ with $j$ elements.
 Then for every natural number $k$ with $0 < k < n$,
 

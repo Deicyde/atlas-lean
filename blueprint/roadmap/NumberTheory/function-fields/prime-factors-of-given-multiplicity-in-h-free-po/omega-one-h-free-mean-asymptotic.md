@@ -1,6 +1,6 @@
 # Mean of $\omega_1$ over $h$-free polynomials
 
-**Mean of $\omega_1$ over $h$-free polynomials.** Let $F$ be a finite field with $q$ elements
+Let $F$ be a finite field with $q$ elements
 and let $h \ge 2$. Let $\omega_1(f)$ be the number of monic irreducible $P$ dividing $f$ exactly
 once, write $|P| = q^{\deg P}$, and let $B_1 = \gamma + \sum_P (\log(1 - 1/|P|) + 1/|P|)$ be the
 function field Mertens constant, with $\gamma$ the Euler–Mascheroni constant, and let

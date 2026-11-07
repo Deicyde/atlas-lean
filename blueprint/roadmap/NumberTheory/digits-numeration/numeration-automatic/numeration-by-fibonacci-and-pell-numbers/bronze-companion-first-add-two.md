@@ -1,6 +1,6 @@
 # Recurrence for the companion bronze numbers of the first type
 
-**Recurrence for the companion bronze numbers of the first type.** For every natural number
+For every natural number
 $n$, the companion bronze numbers $C_n$ of the first type satisfy $C_{n+2} = 3C_{n+1} + C_n$.
 
 ## Sources

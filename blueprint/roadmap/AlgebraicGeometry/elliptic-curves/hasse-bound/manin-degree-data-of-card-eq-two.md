@@ -1,6 +1,6 @@
 # Manin degree data over the field with two elements
 
-**Manin degree data over the field with two elements.** Let $F$ be a field with exactly
+Let $F$ be a field with exactly
 two elements, let $W$ be any Weierstrass curve over $F$, and let $N$ be the number of
 nonsingular points of $W$ over $F$, including the point at infinity. Then there is Manin degree
 data for $(2, N)$: a function $d : \mathbb{Z} \to \mathbb{N}$ with $d(0) = 2$, $d(-1) = N$,

@@ -1,6 +1,6 @@
 # The $k$-Pell–Lucas number of index one
 
-**The $k$-Pell–Lucas number of index one.** For every natural number $k$, the $k$-Pell–Lucas
+For every natural number $k$, the $k$-Pell–Lucas
 number $Q^{(k)}_1$ equals $2$.
 
 ## Sources

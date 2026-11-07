@@ -1,6 +1,6 @@
 # Recurrence for central binomial sums with harmonic numbers
 
-**Recurrence for central binomial sums with harmonic numbers.** For a natural number $n$,
+For a natural number $n$,
 let $H_m = \sum_{i=1}^{m} 1/i$ be the harmonic numbers, $c_n = \binom{2n}{n}/4^n$, and for natural
 $r$ let $S_r(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r$ and
 $S_r^H(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r H_k$, with $0^0 = 1$. Then

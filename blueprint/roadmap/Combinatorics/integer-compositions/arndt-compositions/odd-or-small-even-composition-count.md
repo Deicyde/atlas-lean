@@ -1,6 +1,6 @@
 # Compositions into odd or small even parts
 
-**Compositions into odd or small even parts.** For natural numbers $k$ and $n$, $c^{2k}_o(n)$
+For natural numbers $k$ and $n$, $c^{2k}_o(n)$
 is the number of compositions of $n$, with any number of parts, in which every part is odd or at
 most $2k$. For $k = 0$ these are De Morgan's compositions of $n$ into odd parts.
 

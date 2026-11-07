@@ -1,6 +1,6 @@
 # Barry–Hennessy generalized Fibonacci numbers
 
-**Barry–Hennessy generalized Fibonacci numbers.** For a real number $r$ and a natural number
+For a real number $r$ and a natural number
 $n$, the $r$-parameter generalized Fibonacci number is the real number
 
 $$F_r(n) = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n-k}{k} r^k.$$

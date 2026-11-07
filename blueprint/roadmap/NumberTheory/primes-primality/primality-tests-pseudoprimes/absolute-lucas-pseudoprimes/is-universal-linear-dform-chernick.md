@@ -1,6 +1,6 @@
 # Chernick-type universal forms for three prime factors
 
-**Chernick-type universal forms for three prime factors.** Let $D$ be an integer and let
+Let $D$ be an integer and let
 $3 < p_1 < p_2 < p_3$ be primes such that $p_1 p_2 p_3$ is $D$-Carmichael, and write
 $\varepsilon_i = \left(\frac{D}{p_i}\right)$ for the Jacobi symbols. Let $g$ be the greatest common
 divisor of $p_1 - \varepsilon_1$, $p_2 - \varepsilon_2$ and $p_3 - \varepsilon_3$, and let

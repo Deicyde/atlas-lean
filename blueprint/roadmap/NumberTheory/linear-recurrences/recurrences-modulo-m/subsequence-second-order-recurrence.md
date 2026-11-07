@@ -1,6 +1,6 @@
 # Subsequences of a second-order linear recurrence
 
-**Subsequences of a second-order linear recurrence.** Let $(P, Q)$ be Lucas sequence
+Let $(P, Q)$ be Lucas sequence
 parameters (integers with $Q \ne 0$), let $U_n$ and $V_n$ be the terms of the Lucas sequence
 $U(P, Q)$ and of the companion Lucas sequence $V(P, Q)$, and let $(w_n)_{n \ge 0}$ be an integer
 sequence with $w_{n+2} = P w_{n+1} - Q w_n$ for every natural number $n$. Then for all natural

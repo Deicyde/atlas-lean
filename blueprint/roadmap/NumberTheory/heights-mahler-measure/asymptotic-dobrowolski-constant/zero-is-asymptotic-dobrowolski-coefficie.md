@@ -1,6 +1,6 @@
 # Zero is an asymptotic Dobrowolski coefficient
 
-**Zero is an asymptotic Dobrowolski coefficient.** The real number $0$ is an asymptotic
+The real number $0$ is an asymptotic
 Dobrowolski coefficient: for every real $\varepsilon > 0$ there is a natural number $D \ge 3$
 such that every nonzero algebraic number $\alpha \in \mathbb{C}$ that is not a root of unity and
 whose minimal polynomial over $\mathbb{Q}$ has degree $d \ge D$ satisfies

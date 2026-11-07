@@ -1,6 +1,6 @@
 # Lusin's theorem
 
-**Lusin's theorem.** Let $X$ be a locally compact Hausdorff topological space with its Borel
+Let $X$ be a locally compact Hausdorff topological space with its Borel
 $\sigma$-algebra, and let $\mu$ be a finite measure on $X$ that is regular: finite on compact
 sets, outer regular, and inner regular on open sets by compact sets. Let $Y$ be a
 second-countable topological space with its Borel $\sigma$-algebra, and let $f : X \to Y$ be

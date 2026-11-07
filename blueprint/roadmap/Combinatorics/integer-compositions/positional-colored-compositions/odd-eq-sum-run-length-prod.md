@@ -1,6 +1,6 @@
 # Odd colored compositions and runs in binary strings
 
-**Odd colored compositions and runs in binary strings.** For every $k \ge 1$, the number
+For every $k \ge 1$, the number
 $o(k) = c_{2,1}(k)$ of odd colored compositions of $k$, in which only the parts at odd positions
 are colored, equals the sum, over the binary strings of length $k$ whose first letter is $1$, of
 the product of the lengths of the maximal runs of $1$s in the string.

@@ -1,6 +1,6 @@
 # Valid crossing sequences from a state of the bridge and torch problem
 
-**Valid crossing sequences from a state of the bridge and torch problem.** Let $c$ be a
+Let $c$ be a
 natural number and let $P$ and $L$ be finite sets of natural numbers, the people and the left
 bank. Whether a finite sequence $A_1, \dots, A_k$ of finite sets of natural numbers (the
 crossings) is valid from the left bank $L$ with the torch on a given side is defined by recursion

@@ -1,6 +1,6 @@
 # Circuit array of a boundary assignment
 
-**Circuit array of a boundary assignment.** Let $K$ be a field and let $\beta$ assign to each
+Let $K$ be a field and let $\beta$ assign to each
 natural number $m$ either nothing or a value $\beta(m) \in K$. Let $T^0$ be the all-one triangular
 grid and, for $m \ge 1$, let $T^m$ be obtained from $T^{m-1}$ by one row reduction followed, when
 $\beta(m)$ is given, by setting every boundary edge (left edges on diagonal $1$, right edges on

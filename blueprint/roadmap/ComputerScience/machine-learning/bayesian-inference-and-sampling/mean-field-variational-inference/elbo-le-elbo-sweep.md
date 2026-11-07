@@ -1,6 +1,6 @@
 # A sweep of coordinate ascent does not decrease the ELBO
 
-**A sweep of coordinate ascent does not decrease the ELBO.** Let $A$ and $B$ be nonempty
+Let $A$ and $B$ be nonempty
 finite sets, let $p : A \times B \to \mathbb{R}$ be a joint, and let $q_1$ and $q_2$ be probability
 distributions on $A$ and $B$. One sweep replaces $q_1$ by its CAVI update $q_1'$ given $q_2$ and
 then $q_2$ by its CAVI update $q_2'$ given $q_1'$, where

@@ -1,6 +1,6 @@
 # Polynomial-time TM2-computable functions are closed under composition
 
-**Polynomial-time TM2-computable functions are closed under composition.** Let $\alpha$,
+Let $\alpha$,
 $\beta$, $\gamma$ be types encoded as lists over alphabets by $e_\alpha$, $e_\beta$, $e_\gamma$.
 If $f : \alpha \to \beta$ is computable in polynomial time by a multi-stack Turing machine (a
 TM2 machine) with respect to $e_\alpha$ and $e_\beta$, and $g : \beta \to \gamma$ is computable

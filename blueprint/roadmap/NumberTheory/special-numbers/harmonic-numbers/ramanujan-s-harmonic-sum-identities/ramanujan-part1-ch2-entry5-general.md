@@ -1,6 +1,6 @@
 # Ramanujan's sum identity for $1/((6k)^3 - 6k)$, including $n = 0$
 
-**Ramanujan's sum identity for $1/((6k)^3 - 6k)$, including $n = 0$.** For every natural
+For every natural
 number $n$,
 
 $$

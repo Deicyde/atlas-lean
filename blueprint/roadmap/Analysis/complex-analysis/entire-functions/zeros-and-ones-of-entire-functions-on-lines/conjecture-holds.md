@@ -1,6 +1,6 @@
 # Entire functions with zeros and ones on two distinct lines exist
 
-**Entire functions with zeros and ones on two distinct lines exist.** There exist an entire
+There exist an entire
 function $f : \mathbb{C} \to \mathbb{C}$ and two distinct straight lines $l \ne m$ in
 $\mathbb{C}$ such that every zero of $f$ lies on $l$, every solution of $f(z) = 1$ lies on $m$,
 and $f$ has infinitely many zeros and infinitely many solutions of $f(z) = 1$. Here a straight

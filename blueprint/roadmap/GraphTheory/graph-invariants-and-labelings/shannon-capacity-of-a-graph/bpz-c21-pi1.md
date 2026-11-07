@@ -1,6 +1,6 @@
 # Buys–Polak–Zuiddam one-block profile for the 21-cycle
 
-**Buys–Polak–Zuiddam one-block profile for the 21-cycle.** This is the Buys–Polak–Zuiddam
+This is the Buys–Polak–Zuiddam
 (BPZ) profile whose code, pairs, auxiliary and neutral coordinates are $11441$, $10$,
 $11441$ and $11398$.
 

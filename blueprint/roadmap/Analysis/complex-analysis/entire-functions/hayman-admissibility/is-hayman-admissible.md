@@ -1,6 +1,6 @@
 # Hayman-admissible function (finite radius)
 
-**Hayman-admissible function (finite radius).** Let $G : \mathbb{C} \to \mathbb{C}$, let
+Let $G : \mathbb{C} \to \mathbb{C}$, let
 $R_0$ and $\rho$ be real numbers, write $G'$ for the complex derivative of $G$ and $A$, $B$ for
 the Hayman auxiliary functions of $G$, and say that a property holds for $r$ near $\rho$ if there
 is $\eta > 0$ such that it holds for every $r \in (R_0, \rho)$ with $r > \rho - \eta$. Then $G$ is

@@ -1,6 +1,6 @@
 # Oral-message protocol
 
-**Oral-message protocol.** A synchronous oral-message protocol for a set $G$ of generals, with
+A synchronous oral-message protocol for a set $G$ of generals, with
 orders in $V$, local states in $\sigma$ and messages in $M$, consists of an initial state for
 each general in $G$, used by the generals other than the commander; an initial state of the
 commander for each order in $V$; a sending function giving, for each round $r$, each general $j$

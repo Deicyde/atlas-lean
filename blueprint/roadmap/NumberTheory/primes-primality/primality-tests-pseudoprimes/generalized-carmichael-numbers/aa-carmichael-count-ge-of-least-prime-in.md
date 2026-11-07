@@ -1,6 +1,6 @@
 # Conditional lower bound for $(a, a)$-Carmichael numbers with prescribed gcd
 
-**Conditional lower bound for $(a, a)$-Carmichael numbers with prescribed gcd.** Assume
+Assume
 Conjecture 2: there are a real number $A \ge 2$ and a natural number $l_0$ such that for every
 natural number $l \ge l_0$ and every integer $b$ with $\gcd(b, l) = 1$ there is a prime $p$ with
 $p \equiv b \pmod{l}$ and $p < l (\log l)^A$. Let $a$ be an integer and $\nu$ a positive integer

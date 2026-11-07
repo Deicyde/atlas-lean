@@ -1,6 +1,6 @@
 # Cubic series over even-indexed Lucas polynomials
 
-**Cubic series over even-indexed Lucas polynomials.** Let $x > 0$ be real, and let $f_n$ and
+Let $x > 0$ be real, and let $f_n$ and
 $\ell_n$ denote the Fibonacci and Lucas polynomials evaluated at $x$, given by $f_0 = 0$,
 $f_1 = 1$, $\ell_0 = 2$, $\ell_1 = x$ and the recurrence $z_{n+2} = x z_{n+1} + z_n$ for both. Then
 

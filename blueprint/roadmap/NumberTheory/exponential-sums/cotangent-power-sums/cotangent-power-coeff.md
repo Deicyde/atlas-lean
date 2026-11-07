@@ -1,6 +1,6 @@
 # Girstmair's cotangent power coefficients
 
-**Girstmair's cotangent power coefficients.** For natural numbers $r$ and $j$, the rational
+For natural numbers $r$ and $j$, the rational
 number $c_{r,j}$ is
 
 $$c_{r,j} = (-1)^{r-1} \sum_{k=j}^{r} \frac{(-2)^{k-j}}{(k-1)!} \binom{r}{k} S(k, j),$$

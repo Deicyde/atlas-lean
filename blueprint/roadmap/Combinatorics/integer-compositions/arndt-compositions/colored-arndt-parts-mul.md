@@ -1,6 +1,6 @@
 # Generating function of colored Arndt compositions with $k$ parts
 
-**Generating function of colored Arndt compositions with $k$ parts.** For every $k \ge 0$,
+For every $k \ge 0$,
 let $C_k(x) = \sum_{n \ge 0} c(n, k)\, x^n$ in $\mathbb{Z}[[x]]$, where $c(n, k)$ is the number of
 colored Arndt compositions of $n$ with $k$ parts. Then
 $C_k(x)\, (1 - x)^{2k} (1 + x)^{3\lfloor k/2 \rfloor} =

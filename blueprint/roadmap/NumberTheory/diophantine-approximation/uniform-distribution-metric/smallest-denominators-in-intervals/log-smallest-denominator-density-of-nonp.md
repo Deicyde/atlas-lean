@@ -1,6 +1,6 @@
 # The log smallest-denominator density for nonpositive arguments
 
-**The log smallest-denominator density for nonpositive arguments.** For every real $s \le 0$,
+For every real $s \le 0$,
 the density $\eta_{\log}$ of the logarithmic smallest denominator satisfies
 $\eta_{\log}(s) = \frac{6}{\pi^2} e^{2s}$.
 

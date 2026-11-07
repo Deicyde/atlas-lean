@@ -1,6 +1,6 @@
 # Finite-dimensional distribution of a Markov chain
 
-**Finite-dimensional distribution of a Markov chain.** For a measure $\mu$ on a measurable
+For a measure $\mu$ on a measurable
 space $S$, a kernel $\kappa$ from $S$ to $S$, a natural number $n$ and sets
 $A_0, \dots, A_n \subseteq S$, the finite-dimensional distribution
 $\mathrm{FDD}_n(\mu, \kappa; A_0, \dots, A_n) \in [0, \infty]$ is defined by recursion on $n$:

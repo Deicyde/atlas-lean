@@ -1,6 +1,6 @@
 # Sums of Rankin–Selberg convolution powers in arithmetic progressions
 
-**Sums of Rankin–Selberg convolution powers in arithmetic progressions.** Let $f$ be a
+Let $f$ be a
 normalized Hecke eigenform of weight $k \in \mathbb{Z}$ for $\mathrm{SL}_2(\mathbb{Z})$, with
 Rankin–Selberg coefficients $\lambda_{f \times f}$, let $w \ge 2$ be an integer, write
 $\lambda_{w, f \times f}$ for the $w$-fold Dirichlet convolution power of $\lambda_{f \times f}$,

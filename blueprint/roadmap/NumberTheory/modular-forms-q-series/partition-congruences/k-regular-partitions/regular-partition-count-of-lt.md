@@ -1,6 +1,6 @@
 # For small $n$ every partition is $(\ell, k)$-regular
 
-**For small $n$ every partition is $(\ell, k)$-regular.** Let $\ell$, $k$ and $n$ be natural
+Let $\ell$, $k$ and $n$ be natural
 numbers with $n < \ell$ and $n < k$, and write $b_{\ell,k}(n)$ for the number of
 $(\ell, k)$-regular partitions of $n$ (partitions none of whose parts is divisible by $\ell$ or by
 $k$) and $p(n)$ for the number of all partitions of $n$. Then every partition of $n$ is

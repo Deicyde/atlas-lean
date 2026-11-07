@@ -1,6 +1,6 @@
 # The Metropolis–Hastings kernel is reversible
 
-**The Metropolis–Hastings kernel is reversible.** Let $\alpha$ be a finite state space with a
+Let $\alpha$ be a finite state space with a
 measurable structure in which singletons are measurable, $\pi$ a probability distribution on
 $\alpha$ and $Q$ a proposal assigning to each $x \in \alpha$ a probability distribution
 $Q(x, \cdot)$ on $\alpha$. Then the Markov kernel $\kappa$ of the Metropolis–Hastings step for

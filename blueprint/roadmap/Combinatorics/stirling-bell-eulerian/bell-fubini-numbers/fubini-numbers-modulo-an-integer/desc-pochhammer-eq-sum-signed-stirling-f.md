@@ -1,6 +1,6 @@
 # Falling factorial in terms of signed Stirling numbers
 
-**Falling factorial in terms of signed Stirling numbers.** For every natural number $n$, the
+For every natural number $n$, the
 identity of polynomials with integer coefficients
 
 $$x (x - 1) \cdots (x - n + 1) = \sum_{k=0}^{n} s(n, k)\, x^k$$

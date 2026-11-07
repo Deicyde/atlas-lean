@@ -1,6 +1,6 @@
 # Main term for the Oppermann prime counts
 
-**Main term for the Oppermann prime counts.** For a natural number $n$, this is the real
+For a natural number $n$, this is the real
 number $n / (2 \log n)$, where $\log$ is the natural logarithm. It is used as the asymptotic main
 term for the number of primes in each of the intervals $[n^2 - n, n^2]$ and $[n^2, n^2 + n]$.
 

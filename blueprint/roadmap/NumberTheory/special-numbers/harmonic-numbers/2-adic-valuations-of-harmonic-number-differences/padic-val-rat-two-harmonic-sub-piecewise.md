@@ -1,6 +1,6 @@
 # Piecewise formula for the 2-adic valuation of $H_n - H_{n-m}$
 
-**Piecewise formula for the 2-adic valuation of $H_n - H_{n-m}$.** Let
+Let
 $H_k = \sum_{j=1}^{k} 1/j$ be the $k$-th harmonic number and let $\nu_2$ denote the $2$-adic
 valuation on the rational numbers (for a positive integer it is the exponent of $2$ in its
 factorization). Let $m$ and $n$ be natural numbers with $1 \le m \le n$, and put

@@ -1,6 +1,6 @@
 # Cheeger coefficient
 
-**Cheeger coefficient.** For a measure $\mu$ on a pseudometric space $E$ equipped with a
+For a measure $\mu$ on a pseudometric space $E$ equipped with a
 σ-algebra, the Cheeger coefficient of $\mu$ is the infimum in $[0, \infty]$ of
 $\mu^+(A) / \min(\mu(A), 1 - \mu(A))$ over all measurable sets $A \subseteq E$ with
 $0 < \mu(A) < 1$, where

@@ -1,6 +1,6 @@
 # Bernoulli and zeta expansions of $P_r$, and sums of powers
 
-**Bernoulli and zeta expansions of $P_r$, and sums of powers.** Let $r$ be a positive integer
+Let $r$ be a positive integer
 and $P_r(x) = \frac{B_{r+1}(x + 1) - B_{r+1}(1)}{r + 1}$, where $B_{r+1}$ is the Bernoulli
 polynomial of degree $r + 1$. Then for every $x \in \mathbb{C}$,
 $P_r(x) = \frac{1}{r + 1} \sum_{k=0}^{r} \binom{r+1}{k} B_k\, x^{r+1-k} + x^r$, where $B_k$

@@ -1,6 +1,6 @@
 # Shifted right-hand sides generate the images of words
 
-**Shifted right-hand sides generate the images of words.** Let $g$ be an encoded context-free
+Let $g$ be an encoded context-free
 grammar over a finite alphabet $T$, let $G$ be the grammar over $T \sqcup \{\#, 0, 1\}$ that the
 reduction from universality to regularity builds from $g$, and let $L_G(m)$ be the language $G$
 generates from nonterminal $m$. For a word $u$ over $T$ write $\bar u$ for the same word over

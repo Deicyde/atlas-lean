@@ -1,6 +1,6 @@
 # Number of $S$-nodes of a full binary tree
 
-**Number of $S$-nodes of a full binary tree.** An $S$-node of a full binary tree is an
+An $S$-node of a full binary tree is an
 interior node whose two subtrees have the same number of leaves. The number of $S$-nodes of a
 full binary tree is the number of its interior nodes that are $S$-nodes.
 

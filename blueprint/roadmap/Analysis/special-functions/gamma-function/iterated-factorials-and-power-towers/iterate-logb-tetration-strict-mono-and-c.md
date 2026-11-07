@@ -1,6 +1,6 @@
 # Iterated logarithms of power towers increase to a limit
 
-**Iterated logarithms of power towers increase to a limit.** Let $a, b$ be real numbers
+Let $a, b$ be real numbers
 with $e^{1/e} < a < b$. For $n \ge 0$ let $b \uparrow\uparrow n$ be the $n$-fold iterate of
 $x \mapsto b^x$ starting at $1$ (so $b \uparrow\uparrow 0 = 1$ and $b \uparrow\uparrow 1 = b$),
 and let $a_n = \log_a^{(n)}(b \uparrow\uparrow n)$ be its $n$-fold iterated base-$a$

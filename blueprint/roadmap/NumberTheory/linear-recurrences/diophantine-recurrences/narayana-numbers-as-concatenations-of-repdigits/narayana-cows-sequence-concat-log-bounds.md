@@ -1,6 +1,6 @@
 # Logarithmic bounds for Narayana numbers that concatenate two repdigits
 
-**Logarithmic bounds for Narayana numbers that concatenate two repdigits.** Let $(N_n)$ be
+Let $(N_n)$ be
 Narayana's cows sequence and let $\alpha$ be a real number with $\alpha^3 = \alpha^2 + 1$ (so
 $\alpha \approx 1.46557$ is the unique real root of $x^3 - x^2 - 1$). Let $b \ge 2$, $n \ge 1$
 and $l, m \ge 1$ be natural numbers, and let $a_1, a_2$ be digits with $1 \le a_1 \le b - 1$,

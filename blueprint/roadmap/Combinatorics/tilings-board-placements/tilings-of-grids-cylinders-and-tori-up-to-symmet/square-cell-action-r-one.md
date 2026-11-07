@@ -1,6 +1,6 @@
 # The rotation $r$ acts on the square grid as the quarter-turn
 
-**The rotation $r$ acts on the square grid as the quarter-turn.** For every natural
+For every natural
 number $n$, the square cell action of the dihedral group of order $8$ on
 $\mathbb{Z}/n \times \mathbb{Z}/n$ sends the rotation $r$ to the quarter-turn
 $(x, y) \mapsto (-1-y, x)$.

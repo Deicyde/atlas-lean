@@ -1,6 +1,6 @@
 # Congruences modulo 4 and 8 for 8-regular cubic partitions with odd parts overlined
 
-**Congruences modulo 4 and 8 for 8-regular cubic partitions with odd parts overlined.** Write
+Write
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ for the Euler products in the ring of integer power series
 in $q$, and $a_8(n)$ for the $n$th coefficient of $f_2 f_8^2 f_{32} / (f_1^2 f_4 f_{16})$, the
 number of $8$-regular cubic partitions of $n$ with odd parts overlined. Let $p \ge 5$ be a prime

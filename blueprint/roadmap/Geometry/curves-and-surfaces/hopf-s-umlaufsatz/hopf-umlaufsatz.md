@@ -1,6 +1,6 @@
 # Hopf's Umlaufsatz
 
-**Hopf's Umlaufsatz.** Let $r : \mathbb{R} \to \mathbb{R}^2$ be a positively oriented simple
+Let $r : \mathbb{R} \to \mathbb{R}^2$ be a positively oriented simple
 closed unit-speed plane curve: $r$ is continuously differentiable and $2\pi$-periodic, injective
 on $[0, 2\pi)$, satisfies $\lVert r'(t) \rVert = 1$ for all $t$, and has positive signed area
 $\frac{1}{2}\int_0^{2\pi} \det(r(t), r'(t))\,dt > 0$, where $\det(u, v) = u_0 v_1 - u_1 v_0$.

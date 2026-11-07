@@ -1,6 +1,6 @@
 # The maximal partition has the prescribed diagonal normal form
 
-**The maximal partition has the prescribed diagonal normal form.** Let $q > 0$ and let
+Let $q > 0$ and let
 $s_1, \dots, s_q$ be natural numbers with $q(q+1)/2 + \sum_{k=1}^{q} k s_k = n$, and let
 $\bar\alpha = (\bar\alpha_1, \dots, \bar\alpha_q)$ with
 $\bar\alpha_i = q - i + 1 + \sum_{k=i}^{q} s_k$. Then the entries of $\bar\alpha$ are positive,

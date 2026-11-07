@@ -1,6 +1,6 @@
 # Weighted count of primes in the $\ell$-numerical semigroup
 
-**Weighted count of primes in the $\ell$-numerical semigroup.** For every natural number
+For every natural number
 $\ell$ and every $\varepsilon > 0$ there is a natural number $C$ such that the following holds
 for all coprime natural numbers $c$ and $d$ with $C \le c < d$. For a natural number $k$ put
 $g_k(c, d) = (k + 1)cd - c - d$, so that $g_0(c, d) = cd - c - d$, and let $\psi_{\ell,c,d}$ be

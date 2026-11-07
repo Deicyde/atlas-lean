@@ -1,6 +1,6 @@
 # Isosceles trapezoids
 
-**Isosceles trapezoids.** Points $a, b, c, d \in \mathbb{R}^2$ are the vertices, in
+Points $a, b, c, d \in \mathbb{R}^2$ are the vertices, in
 counterclockwise order, of an isosceles trapezoid if they are in strictly convex position and
 listed counterclockwise (for any three of them $p, q, r$, in the order in which they occur in the
 list $a, b, c, d$, the oriented angle $\measuredangle p q r$ at $q$ has sign $-1$), the line

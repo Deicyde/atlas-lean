@@ -1,6 +1,6 @@
 # Morse inequalities
 
-**Morse inequalities.** Let $M$ be a compact Hausdorff smooth manifold without boundary,
+Let $M$ be a compact Hausdorff smooth manifold without boundary,
 modelled on a finite-dimensional real normed space, and let $f : M \to \mathbb{R}$ be a Morse
 function: $f$ is $C^\infty$, has finitely many critical points, and the Hessian of $f$ at each
 critical point, computed in the preferred chart, is a nondegenerate bilinear form. The Morse index

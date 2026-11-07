@@ -1,6 +1,6 @@
 # Prime factors of the biunitary divisor sum of $41^g$
 
-**Prime factors of the biunitary divisor sum of $41^g$.** For every integer $g \ge 1$, the
+For every integer $g \ge 1$, the
 biunitary divisor sum $\sigma^{**}(41^g)$ has a prime factor $q$ with $q \notin \{2, 3, 5, 13\}$.
 
 ## Sources

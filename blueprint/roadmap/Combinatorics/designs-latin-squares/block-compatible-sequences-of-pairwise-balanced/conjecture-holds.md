@@ -1,6 +1,6 @@
 # Many block-compatible sequences (Erdős Problem 732)
 
-**Many block-compatible sequences (Erdős Problem 732).** There are a real number $c > 0$ and a
+There are a real number $c > 0$ and a
 natural number $N$ such that for every $n \ge N$ there is a finite set of at least
 $\exp(c \sqrt{n} \log n)$ distinct finite sequences of natural numbers, each of which is
 block-compatible for $n$. Here $\log$ is the natural logarithm.

@@ -1,6 +1,6 @@
 # Viterbi's MAP path
 
-**Viterbi's MAP path.** Let $h$ be a hidden Markov model with states $\{0, \dots, n - 1\}$,
+Let $h$ be a hidden Markov model with states $\{0, \dots, n - 1\}$,
 where $n \ge 1$, whose weights lie in a linearly ordered commutative semiring $R$, with transition
 weights $a(s', s)$, and let $x$ be a sequence of observations. For $t \in \mathbb{N}$, let
 $T_0, \dots, T_t \in R^n$ be the tabulated Viterbi variables of $h$ on $x$. The Viterbi path of

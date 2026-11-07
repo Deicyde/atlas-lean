@@ -1,6 +1,6 @@
 # Valiant-Vazirani: SAT reduces to UniqueSAT
 
-**Valiant-Vazirani: SAT reduces to UniqueSAT.** There are a polynomial $p$ with
+There are a polynomial $p$ with
 natural-number coefficients and a polynomial-time computable function $R$ from pairs of
 bitstrings to bitstrings such that, for every bitstring $x$ of length $n$: if $x$ is not in SAT,
 then for every bitstring $r$ of length $p(n)$ the bitstring $R(x, r)$ is in neither SAT nor

@@ -1,6 +1,6 @@
 # Constant offset of a literal position
 
-**Constant offset of a literal position.** For a layout with label block size $A$, $K$
+For a layout with label block size $A$, $K$
 stacks, $g$ symbol codes and window depth $d$, and tables $\mathrm{la}, \mathrm{na} : \mathbb{N}
 \to \mathbb{N}$ and $\mathrm{wa} : \mathbb{N} \to \mathbb{N} \to \mathbb{N} \to \mathbb{N}$, the
 constant part of the position of literal $j$ of situation $i$ is $\mathrm{la}(i)$ if $j = 0$, is

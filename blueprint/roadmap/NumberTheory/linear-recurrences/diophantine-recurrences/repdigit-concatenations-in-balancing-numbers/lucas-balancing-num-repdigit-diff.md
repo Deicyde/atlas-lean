@@ -1,6 +1,6 @@
 # Lucas-balancing numbers that are differences of two repdigits
 
-**Lucas-balancing numbers that are differences of two repdigits.** For every natural
+For every natural
 number $k \ge 2$, if the Lucas-balancing number $C_k$ is a difference of two repdigits, then
 $C_k = 3$ or $C_k = 17$.
 

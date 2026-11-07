@@ -1,6 +1,6 @@
 # Reading an index off a word in $p$ and $y$
 
-**Reading an index off a word in $p$ and $y$.** For $c \in \mathbb{N}$ and a word $w$ in the
+For $c \in \mathbb{N}$ and a word $w$ in the
 letters $p$ and $y$, the index $R_c(w)$, a finite sequence of natural numbers, is defined
 recursively by $R_c(\mathbf{1}) = ()$ for the empty word $\mathbf{1}$, $R_c(p w) = R_{c+1}(w)$,
 and $R_c(y w) = (c, R_0(w))$, the index with first entry $c$ followed by the entries of

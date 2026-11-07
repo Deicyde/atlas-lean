@@ -1,6 +1,6 @@
 # Selberg–Delange theorem, $h$-th power version
 
-**Selberg–Delange theorem, $h$-th power version.** Let $q > 1$ and $A > 0$ be real numbers,
+Let $q > 1$ and $A > 0$ be real numbers,
 let $h \ge 1$ be an integer, let $\xi$ be a primitive $h$-th root of unity in $\mathbb{C}$, and
 let $B_z(n)$ and $C_z(n)$ be complex numbers, for $z \in \mathbb{C}$ and integers $n \ge 0$,
 such that for all $z$ and $n$

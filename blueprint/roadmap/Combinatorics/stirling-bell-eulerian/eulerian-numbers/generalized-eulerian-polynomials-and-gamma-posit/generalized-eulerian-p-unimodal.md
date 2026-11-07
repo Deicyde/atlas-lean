@@ -1,6 +1,6 @@
 # Unimodality of the generalized Eulerian polynomials
 
-**Unimodality of the generalized Eulerian polynomials.** Let $P_n(q, t; x, y)$ be the
+Let $P_n(q, t; x, y)$ be the
 generalized Eulerian polynomial. For all natural numbers $q$, $t$ and $n$ there are a polynomial
 $p$ with rational coefficients $p_0, p_1, p_2, \dots$ and an index $m$ such that
 $p(x) = P_n(q, t; x, 1)$ for every rational $x \ne 1$, $p_i \le p_{i+1}$ for every $i < m$, and

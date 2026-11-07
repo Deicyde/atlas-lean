@@ -1,6 +1,6 @@
 # Extending a path by a right step
 
-**Extending a path by a right step.** Let $T$ be a TRIP-Stern tree with right transition $R$.
+Let $T$ be a TRIP-Stern tree with right transition $R$.
 For every binary path $p$, the node of $T$ selected by $p$ followed by one right step equals $R$
 applied to the node of $T$ selected by $p$.
 

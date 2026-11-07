@@ -1,6 +1,6 @@
 # Explicit time bound of the accept generator
 
-**Explicit time bound of the accept generator.** For a layout $L$ with label block size $A$,
+For a layout $L$ with label block size $A$,
 $K$ stacks and $g$ symbol codes, and natural numbers $n_1$, $k_1$, $T$, $H$, let
 $W = A + K H g$ and $V = (T + 1) W$ (the number of variables). The bound is $P + (g + n_1)\,C$,
 where $C = V(3V + 6) + 10V + 13$ is the cost of one clause and the precomputation cost is

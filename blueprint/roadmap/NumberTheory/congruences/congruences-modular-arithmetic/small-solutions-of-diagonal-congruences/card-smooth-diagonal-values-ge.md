@@ -1,6 +1,6 @@
 # Many values of a smooth diagonal form modulo a prime
 
-**Many values of a smooth diagonal form modulo a prime.** For a natural number $B$ and real
+For a natural number $B$ and real
 $\eta > 0$, let $A(B, B^\eta)$ be the set of integers $1 \le x \le B$ all of whose prime factors
 are at most $B^\eta$. There is a real-valued function $g$ on the natural numbers with
 $g(k) = O(\log \log k / \log k)$ as $k \to \infty$ such that for every $k \ge 2$ there is

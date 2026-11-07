@@ -1,6 +1,5 @@
 # Prime- and squarefree-weighted power sums of type II alternating hyperharmonic numbers
 
-**Prime- and squarefree-weighted power sums of type II alternating hyperharmonic numbers.**
 Let $\alpha, m, q, k, r \ge 1$ be integers. Let $p_\ell$ be the $\ell$-th prime ($p_1 = 2$) and
 $p_{\ell,k}$ the $\ell$-th squarefree number with exactly $k$ prime factors. Let
 $H_n^{(q,r,2)}$ be the signed iterated partial sum of order $r$, with constant signs, of the

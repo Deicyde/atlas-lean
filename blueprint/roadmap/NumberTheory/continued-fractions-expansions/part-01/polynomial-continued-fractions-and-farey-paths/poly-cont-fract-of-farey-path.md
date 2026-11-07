@@ -1,6 +1,6 @@
 # Continued fraction along a Farey path of polynomials
 
-**Continued fraction along a Farey path of polynomials.** Let $F$ be a field, let
+Let $F$ be a field, let
 $n \in \mathbb N$, let $u_i, v_i \in F[X]$ for $i \ge 0$, and let $c_i \in F$ for $i \ge 1$.
 Suppose that $v_0 = 1$ and that for $1 \le i \le n$ we have $c_i \ne 0$,
 $\deg v_{i-1} < \deg v_i$ and $u_i v_{i-1} - u_{i-1} v_i = c_i$. Let $a_0, a_1, \ldots \in F[X]$

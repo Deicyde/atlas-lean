@@ -1,6 +1,6 @@
 # Greedy Fibonacci digits
 
-**Greedy Fibonacci digits.** Let $F_0 = 1$, $F_1 = 2$ and $F_{i+2} = F_{i+1} + F_i$. For
+Let $F_0 = 1$, $F_1 = 2$ and $F_{i+2} = F_{i+1} + F_i$. For
 $k, n \in \mathbb{N}$, the greedy digits of $n$ at positions $k - 1, \dots, 0$ are the list of
 $k$ digits, most significant first, computed with a remainder $r$ that starts at $n$: for
 $j = k - 1, \dots, 0$ in turn, the digit at position $j$ is $1$ if $F_j \le r$, in which case

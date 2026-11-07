@@ -1,6 +1,6 @@
 # Grundy numbers of Wythoff's game with an extra move
 
-**Grundy numbers of Wythoff's game with an extra move.** Positions are triples $(x, y, p)$
+Positions are triples $(x, y, p)$
 with $x, y \in \mathbb{N}$ and $p \in \{0, 1\}$. A move from $(x, y, p)$ goes to $(u, y, p)$ with
 $u < x$, to $(x, v, p)$ with $v < y$, or to $(x - t, y - t, p)$ with $1 \le t \le \min(x, y)$
 (the moves of a Queen in Wythoff's game), or, when $p = 1$, it is an extra move to $(x, y, 0)$.

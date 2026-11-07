@@ -1,6 +1,6 @@
 # Endpoints of the Lucas interval $\Lambda_4$
 
-**Endpoints of the Lucas interval $\Lambda_4$.** The Lucas interval $\Lambda_4$ has left end
+The Lucas interval $\Lambda_4$ has left end
 $7$ and right end $11$, that is, $\Lambda_4 = [7, 11]$.
 
 ## Sources

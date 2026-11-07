@@ -1,6 +1,6 @@
 # Zero has no digits
 
-**Zero has no digits.** For all natural numbers $b$ and $d$, the digit $d$ occurs $0$ times in
+For all natural numbers $b$ and $d$, the digit $d$ occurs $0$ times in
 the minimal base-$b$ representation of $0$, which is empty.
 
 ## Sources

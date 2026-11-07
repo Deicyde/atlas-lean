@@ -1,6 +1,6 @@
 # Primes of semiprime index eventually outnumber semiprimes of prime index
 
-**Primes of semiprime index eventually outnumber semiprimes of prime index.** A semiprime is
+A semiprime is
 a product of exactly two primes counted with multiplicity. Let $p_i$ denote the $i$th prime
 ($p_1 = 2$) and $s_i$ the $i$th semiprime ($s_1 = 4$). For real $x$ let $N_{1,2}(x)$ be the number
 of primes $p_i \le x$ whose index $i$ is a semiprime, and $N_{2,1}(x)$ the number of semiprimes

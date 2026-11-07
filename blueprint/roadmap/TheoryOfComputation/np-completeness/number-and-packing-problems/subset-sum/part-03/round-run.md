@@ -1,6 +1,6 @@
 # Subset-sum emitter: one vertex number
 
-**Subset-sum emitter: one vertex number.** Stacks are listed top first. Let $n$ be a natural
+Stacks are listed top first. Let $n$ be a natural
 number, $p_0, \dots, p_{P-1}$ the pairs $(i, j)$ with $i < j < n$ in encoding order (rows $i$
 ascending, within a row $j$ descending), $(\beta_0, \dots, \beta_{P-1})$ a list of $P$ pair bits
 and $w < n$ a vertex. Let $N_w = 4^P + \sum_q 4^q$, the sum over the $q < P$ such that $\beta_q$

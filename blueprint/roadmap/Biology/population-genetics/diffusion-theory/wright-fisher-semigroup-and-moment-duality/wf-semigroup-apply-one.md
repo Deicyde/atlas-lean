@@ -1,3 +1,3 @@
 # Wright–Fisher diffusion semigroup fixes constants
 
-**Wright–Fisher diffusion semigroup fixes constants.** The diffusion semigroup fixes constants (it is Markov: total mass `1`).
+The diffusion semigroup fixes constants (it is Markov: total mass `1`).

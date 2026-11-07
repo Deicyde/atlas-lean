@@ -1,6 +1,6 @@
 # Banach–Alaoglu–Bourbaki theorem
 
-**Banach–Alaoglu–Bourbaki theorem.** Let $E$ be a real locally convex topological vector
+Let $E$ be a real locally convex topological vector
 space and let $U$ be a neighbourhood of $0$ in $E$. Then the weak-star polar of $U$ is compact
 in the weak dual of $E$, that is, in the space of continuous linear functionals on $E$ with the
 weak-star topology.

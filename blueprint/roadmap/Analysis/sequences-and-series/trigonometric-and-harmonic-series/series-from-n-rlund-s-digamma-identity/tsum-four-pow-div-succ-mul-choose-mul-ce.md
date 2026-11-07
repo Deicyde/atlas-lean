@@ -1,6 +1,6 @@
 # Series over $4^n$ with binomial and central binomial denominators
 
-**Series over $4^n$ with binomial and central binomial denominators.** Write
+Write
 $O^{(2)}_k = \sum_{j=1}^{k} 1/(2j-1)^2$. For every positive integer $m$,
 
 $$\sum_{n=0}^{\infty} \frac{4^n}{(n+1) \binom{n+m}{m} \binom{2(n+m)}{n+m}} =

@@ -1,6 +1,6 @@
 # Alternating path
 
-**Alternating path.** Let $\mu$ be a partner array, giving each right vertex at most one left
+Let $\mu$ be a partner array, giving each right vertex at most one left
 vertex as its partner, let $k$ be a natural number and $j$ a right vertex. A list $P$ of pairs
 $(i, j')$ of a left vertex $i$ and a right vertex $j'$ is an alternating path from $j$ within
 round $k$ when all of the following hold: $P$ is nonempty and its first pair has right vertex

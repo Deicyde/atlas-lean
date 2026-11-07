@@ -1,6 +1,6 @@
 # Base-case alignment for Hirschberg
 
-**Base-case alignment for Hirschberg.** Fix a substitution score $\sigma$ assigning an
+Fix a substitution score $\sigma$ assigning an
 integer to each pair of letters and an integer gap score $g$, and write a column as a pair
 whose missing entry, a gap, is marked $\bot$. The base-case alignment of sequences $x$ and $y$
 is the empty alignment if both are empty; the single column $(\bot, b)$ if $x$ is empty and

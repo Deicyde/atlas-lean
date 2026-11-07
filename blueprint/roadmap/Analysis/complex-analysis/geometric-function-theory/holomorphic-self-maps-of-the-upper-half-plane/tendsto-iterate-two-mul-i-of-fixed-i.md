@@ -1,6 +1,6 @@
 # Iterates of a self-map of the upper half-plane fixing $i$
 
-**Iterates of a self-map of the upper half-plane fixing $i$.** Let
+Let
 $\mathbb{H}=\{z\in\mathbb{C} : \mathrm{Im}\,z>0\}$ be the upper half-plane, and let $f$ be a
 complex function that is holomorphic on $\mathbb{H}$, maps $\mathbb{H}$ into $\mathbb{H}$, and
 satisfies $f(i)=i$ and $f(2i)=\frac{15}{8}i$. Then the iterates $f^{\circ n}(2i)$ converge to $i$

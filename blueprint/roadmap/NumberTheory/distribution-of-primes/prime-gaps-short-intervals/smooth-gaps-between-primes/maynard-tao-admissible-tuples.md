@@ -1,6 +1,6 @@
 # Maynard–Tao theorem
 
-**Maynard–Tao theorem.** For every natural number $m \ge 2$ there is a natural number $k$
+For every natural number $m \ge 2$ there is a natural number $k$
 such that for every admissible finite set $H$ of at least $k$ integers there are infinitely many
 integers $n$ for which $n + h$ is a (positive) prime for at least $m$ elements $h \in H$.
 

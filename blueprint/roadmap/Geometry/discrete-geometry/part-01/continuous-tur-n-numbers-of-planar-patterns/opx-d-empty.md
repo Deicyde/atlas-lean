@@ -1,6 +1,6 @@
 # The higher-dimensional continuous Turán number of the empty pattern
 
-**The higher-dimensional continuous Turán number of the empty pattern.** For every dimension
+For every dimension
 $d$ and every real number $n$, $\mathrm{opx}(n, \emptyset, d) = 0$: every set contains the empty
 pattern, so no set is free of it.
 

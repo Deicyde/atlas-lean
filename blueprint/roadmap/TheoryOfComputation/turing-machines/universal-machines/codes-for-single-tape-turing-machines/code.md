@@ -1,6 +1,6 @@
 # Codes for single-tape machines
 
-**Codes for single-tape machines.** A code is a transition table: a finite list of rows, row
+A code is a transition table: a finite list of rows, row
 $q$ belonging to the state $q \in \mathbb{N}$, each a finite list of entries, entry $a$ of a row
 belonging to the symbol $a \in \mathbb{N}$. The entry in row $q$ and column $a$ is either empty,
 meaning that the machine halts, or a pair $(q', s)$ of natural numbers, meaning that the machine

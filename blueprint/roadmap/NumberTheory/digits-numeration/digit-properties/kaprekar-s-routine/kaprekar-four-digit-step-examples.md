@@ -1,6 +1,6 @@
 # Sample values of the four-digit Kaprekar map
 
-**Sample values of the four-digit Kaprekar map.** The four-digit Kaprekar map satisfies
+The four-digit Kaprekar map satisfies
 $K_{11}(5, 1) = (9, 1)$, $K_{11}(6, 0) = (5, 5)$ and $K_{11}(5, 5) = (2, 0)$ in base $11$, and
 $K_7(3, 1) = (5, 1)$, $K_7(5, 1) = (5, 3)$ and $K_7(5, 3) = (3, 1)$ in base $7$.
 

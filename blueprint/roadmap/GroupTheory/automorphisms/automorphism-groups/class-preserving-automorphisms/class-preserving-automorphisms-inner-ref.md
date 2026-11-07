@@ -1,6 +1,6 @@
 # Groups whose automorphisms all preserve conjugacy classes can have outer automorphisms
 
-**Groups whose automorphisms all preserve conjugacy classes can have outer automorphisms.** The
+The
 claim of Kourovka Problem 16.62 is false: there is a group $G$ such that every automorphism of $G$
 sends each element $g \in G$ to a conjugate of $g$, but some automorphism of $G$ is not inner,
 that is, not of the form $x \mapsto h x h^{-1}$ for any $h \in G$.

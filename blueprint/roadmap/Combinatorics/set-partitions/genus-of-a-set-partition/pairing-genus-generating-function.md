@@ -1,6 +1,6 @@
 # Genus generating function of pairings
 
-**Genus generating function of pairings.** Let $g \ge 1$, and for $k \ge 0$ let
+Let $g \ge 1$, and for $k \ge 0$ let
 $C_{2k,[2^k]}^{(g)}$ be the number of genus-$g$ set partitions of $\{0, \dots, 2k-1\}$ into $k$
 blocks of size $2$. There is a polynomial $Q^{(g)}$ with rational coefficients, of degree
 $g - 1$, with $Q^{(g)}(0) = \frac{(4g)!}{2^{2g}\,(2g+1)!}$, such that, as formal power series

@@ -1,6 +1,6 @@
 # Mixed-sign subset-sum bound
 
-**Mixed-sign subset-sum bound.** For natural numbers $n$, $p$, $\alpha$, $\beta$ (the numbers
+For natural numbers $n$, $p$, $\alpha$, $\beta$ (the numbers
 of negative and positive elements of a set $A$, and the bounds on subset sizes), let
 $\kappa = n + p - \beta$, computed in the integers, $T(x) = x(x+1)/2$ and
 $S = T(p) + T(n) + 1$. The integer $L_{n,p}(\alpha, \beta)$, written $L(\alpha, \beta, A)$ in

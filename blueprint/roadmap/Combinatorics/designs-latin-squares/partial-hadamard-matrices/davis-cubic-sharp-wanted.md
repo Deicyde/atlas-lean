@@ -1,6 +1,6 @@
 # No exponent below 3 is admissible for the partial Hadamard leading term
 
-**No exponent below 3 is admissible for the partial Hadamard leading term.** Let $N_{n,m}$ be
+Let $N_{n,m}$ be
 the number of $n \times m$ partial Hadamard matrices and let
 $A_{n,4t} = 2^{4nt + (n-1)^2} (8\pi t)^{-n(n-1)/4}$ be the de Launey–Levin leading term. Then for
 every real number $\alpha < 3$ there are sequences $(n_k)$ and $(t_k)$ of natural numbers with

@@ -1,6 +1,6 @@
 # The value $H_1^{(r)}(0) = r$
 
-**The value $H_1^{[r]}(0) = r$.** For every complex number $r$, the generalized
+For every complex number $r$, the generalized
 hyperharmonic number $H_1^{[r]}(0)$ equals $r$.
 
 ## Sources

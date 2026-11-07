@@ -1,6 +1,6 @@
 # Positional colored compositions
 
-**Positional colored compositions.** For natural numbers $m$, $k$ and $\ell$, $c_{m,k}(\ell)$
+For natural numbers $m$, $k$ and $\ell$, $c_{m,k}(\ell)$
 is the number of $(m, k)$-colored compositions of $\ell$: compositions of $\ell$ in which every
 part whose position, counted from $1$, is congruent to $k$ modulo $m$ gets one of $p$ colors,
 where $p$ is the part, and the other parts are uncolored. Equivalently, $c_{m,k}(\ell)$ is the

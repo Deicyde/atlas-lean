@@ -1,6 +1,6 @@
 # The value of $R(3, 8)$
 
-**The value of $R(3, 8)$.** The classical Ramsey number $R(3, 8)$ equals $28$.
+The classical Ramsey number $R(3, 8)$ equals $28$.
 
 ## Sources
 

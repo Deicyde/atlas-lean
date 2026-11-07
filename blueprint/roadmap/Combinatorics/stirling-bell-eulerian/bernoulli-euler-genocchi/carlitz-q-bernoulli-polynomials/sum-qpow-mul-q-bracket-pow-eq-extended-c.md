@@ -1,6 +1,6 @@
 # Weighted $q$-power sums via the extended Carlitz $q$-Bernoulli polynomials
 
-**Weighted $q$-power sums via the extended Carlitz $q$-Bernoulli polynomials.** Let $q > 0$
+Let $q > 0$
 with $q \ne 1$, let $[x] = (q^x - 1)/(q - 1)$, and let $\beta_n^{(r)}(x)$ be the extended Carlitz
 $q$-Bernoulli polynomials, with $\beta_n^{(r)} = \beta_n^{(r)}(0)$. Then for all natural numbers
 $r$, $n$ and $N$,

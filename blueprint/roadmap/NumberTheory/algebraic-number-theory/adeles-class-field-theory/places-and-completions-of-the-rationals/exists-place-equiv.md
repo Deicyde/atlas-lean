@@ -1,6 +1,6 @@
 # Every nontrivial absolute value on $\mathbb{Q}$ is equivalent to that of a place
 
-**Every nontrivial absolute value on $\mathbb{Q}$ is equivalent to that of a place.** Let $f$
+Let $f$
 be a real-valued absolute value on $\mathbb{Q}$ that is nontrivial, that is, $f(x) \ne 1$ for some
 $x \ne 0$. Then there is a place $v$ of $\mathbb{Q}$ such that $f$ is equivalent to the absolute
 value $|\cdot|_v$ attached to $v$ (the ordinary absolute value at the infinite place, the

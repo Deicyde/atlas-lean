@@ -1,6 +1,6 @@
 # Nim-sum image identity for one NS function
 
-**Nim-sum image identity for one NS function.** Let $g : \mathbb{N} \to \mathbb{N}$ have the
+Let $g : \mathbb{N} \to \mathbb{N}$ have the
 NS property and let $x, z \in \mathbb{N}$ with $x \le g(z)$. Writing $\oplus$ for the nim-sum
 (bitwise exclusive or) of natural numbers, the sets $\{x \oplus w : w < z\}$ and
 $\{\min(g(w), x) \oplus w : w < z\}$ are equal, where $w$ ranges over the natural numbers.

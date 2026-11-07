@@ -1,6 +1,6 @@
 # Two dominoes on a 4-board
 
-**Two dominoes on a 4-board.** For $Q = \{1\}$ the $Q$-comb is a domino, and the number
+For $Q = \{1\}$ the $Q$-comb is a domino, and the number
 $B^{\{1\}}_{4,2}$ of restricted-overlap tilings of a $4$-board with squares and two $Q$-combs is
 $1$.
 

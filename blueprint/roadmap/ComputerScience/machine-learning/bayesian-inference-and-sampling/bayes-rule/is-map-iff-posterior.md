@@ -1,6 +1,6 @@
 # MAP hypotheses through the posterior kernel
 
-**MAP hypotheses through the posterior kernel.** Let $\Theta$ be a nonempty countable standard
+Let $\Theta$ be a nonempty countable standard
 Borel space, $\mathcal X$ a countable measurable space with measurable singletons, $\kappa$ a Markov
 kernel from $\Theta$ to $\mathcal X$, $\mu$ a finite measure on $\Theta$, and $x \in \mathcal X$ an
 observation with $(\kappa \circ \mu)(\{x\}) \neq 0$, where $\kappa \circ \mu$ is the composition of

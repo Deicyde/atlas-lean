@@ -1,6 +1,6 @@
 # Prime-logarithm bound for one level of $G$
 
-**Prime-logarithm bound for one level of $G$.** For real $x \ge 0$ let
+For real $x \ge 0$ let
 $G(x) = \sum_{m \mid 210} \mu(m) (\lfloor 2100x/m \rfloor - \lfloor 1890x/m \rfloor -
 \lfloor 210x/m \rfloor)$, where $\mu$ is the Möbius function. Let $n \ge 1$ be a natural number,
 let $B$ be a finite set of primes $p$ with $p \le 1890n$, let $i \ge 1$ be a natural number, and

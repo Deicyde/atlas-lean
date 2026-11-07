@@ -1,6 +1,6 @@
 # The $5$-adic valuation of Fibonacci numbers
 
-**The $5$-adic valuation of Fibonacci numbers.** Writing $F_n$ for the $n$-th Fibonacci number
+Writing $F_n$ for the $n$-th Fibonacci number
 and $v_5$ for the $5$-adic valuation, $v_5(F_n) = v_5(n)$ for every integer $n \ge 1$.
 
 ## Sources

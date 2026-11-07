@@ -1,6 +1,6 @@
 # Schmidt's bound on the zeros of a linear recurrence
 
-**Schmidt's bound on the zeros of a linear recurrence.** Let $(U_n)_{n \ge 1}$ be a sequence
+Let $(U_n)_{n \ge 1}$ be a sequence
 of complex numbers satisfying $U_{m+k} = c_0 U_m + c_1 U_{m+1} + \dots + c_{k-1} U_{m+k-1}$ for
 all $m \ge 1$, with complex coefficients $c_i$, where the order $k$ of this recurrence is minimal
 among all linear recurrences with complex coefficients satisfied by $(U_n)_{n \ge 1}$, and

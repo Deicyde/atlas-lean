@@ -1,6 +1,6 @@
 # Rational values of the ℓ-generalized Fibonacci zeta function at negative integers
 
-**Rational values of the ℓ-generalized Fibonacci zeta function at negative integers.** Let
+Let
 $\ell \ge 2$, let $F$ be an $\ell$-generalized Fibonacci sequence, let $\alpha > 1$ be a real
 number with $\alpha^\ell = \sum_{i=0}^{\ell-1} \alpha^i$, and let $S$ be the set of possible
 poles determined by $\ell$ and $\alpha$. Let $m$ be a positive integer and let

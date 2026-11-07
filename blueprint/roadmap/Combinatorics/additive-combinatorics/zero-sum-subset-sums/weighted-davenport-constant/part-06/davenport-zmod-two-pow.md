@@ -1,6 +1,6 @@
 # Davenport constant of $\mathbb{Z}_2^a$
 
-**Davenport constant of $\mathbb{Z}_2^a$.** Let $\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$. For
+Let $\mathbb{Z}_2 = \mathbb{Z}/2\mathbb{Z}$. For
 every natural number $a$, the least positive integer $k$ such that every sequence of $k$ elements
 of the group $\mathbb{Z}_2^a$ has a nonempty subsequence with sum zero is $a + 1$; that is, the
 Davenport constant of $\mathbb{Z}_2^a$ is $a + 1$.

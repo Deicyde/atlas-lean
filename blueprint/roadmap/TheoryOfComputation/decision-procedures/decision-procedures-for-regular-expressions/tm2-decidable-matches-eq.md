@@ -1,6 +1,6 @@
 # EQ_REX is decidable
 
-**EQ_REX is decidable.** Let $\alpha$ be a finite alphabet with a primitive recursive
+Let $\alpha$ be a finite alphabet with a primitive recursive
 encoding. Then equivalence of encoded regular expressions over $\alpha$ is decidable by a
 multi-stack machine: some multi-stack machine decides, for a pair $(e_1, e_2)$ of encoded
 regular expressions over $\alpha$, whether the regular expressions that $e_1$ and $e_2$ denote

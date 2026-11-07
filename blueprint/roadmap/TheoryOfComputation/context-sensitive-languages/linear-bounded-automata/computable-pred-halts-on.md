@@ -1,6 +1,6 @@
 # Halting of a machine running in computable space is computable
 
-**Halting of a machine running in computable space is computable.** Let $M$ be a single-tape
+Let $M$ be a single-tape
 machine with state set $Q$ over a finite alphabet $\Sigma$, fix any primitive recursive coding of
 $\Sigma$, and let $s : \mathbb{N} \to \mathbb{N}$ be computable. If $M$ runs in space $s$, then the
 set of input words over $\Sigma$ on which $M$ halts is computable.

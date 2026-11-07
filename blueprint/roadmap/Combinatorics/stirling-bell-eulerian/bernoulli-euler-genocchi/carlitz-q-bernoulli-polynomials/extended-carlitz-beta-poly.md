@@ -1,6 +1,6 @@
 # Extended Carlitz $q$-Bernoulli polynomials
 
-**Extended Carlitz $q$-Bernoulli polynomials.** For real $q$, the extended Carlitz
+For real $q$, the extended Carlitz
 $q$-Bernoulli polynomials $\beta_n^{(r)}(x)$, indexed by natural numbers $r$ and $n$ and evaluated
 at real $x$, are defined by recursion on $r$: $\beta_n^{(0)}(x) = \eta_n(x)$ is Carlitz's
 $q$-polynomial, and

@@ -1,6 +1,6 @@
 # Prefixes of weighted zero-sum free sequences
 
-**Prefixes of weighted zero-sum free sequences.** Let $G$ be an additive commutative monoid
+Let $G$ be an additive commutative monoid
 and $A$ a finite set of natural numbers. If a sequence $s$ over $G$ is $A$-weighted zero-sum
 free, then for every $\ell \in \mathbb{N}$ the prefix of $s$ formed by its first $\ell$ terms
 (all of $s$ when $\ell$ is at least its length) is $A$-weighted zero-sum free.

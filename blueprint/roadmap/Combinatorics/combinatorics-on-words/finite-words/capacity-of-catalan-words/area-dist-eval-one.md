@@ -1,6 +1,6 @@
 # Area distribution at $q = 1$
 
-**Area distribution at $q = 1$.** For every finite set $S$ of words of length $n$ with
+For every finite set $S$ of words of length $n$ with
 letters in the natural numbers, the area distribution of $S$ evaluated at $q = 1$ equals the
 number of words in $S$.
 

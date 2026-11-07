@@ -1,6 +1,6 @@
 # Recurrence for the number of available integers
 
-**Recurrence for the number of available integers.** Let $k \ge 1$, let $p_1, \dots, p_{k+1}$
+Let $k \ge 1$, let $p_1, \dots, p_{k+1}$
 be the first $k + 1$ primes, and let $r_1, \dots, r_{k+1}$ be any natural numbers. For $m = k$ and
 $m = k + 1$, call an integer $n$ free if $n \not\equiv r_i \pmod{p_i}$ for every $i \le m$, and
 available if $n \equiv r_i \pmod{p_i}$ for at most one $i \le m$; let $\mathrm{av}(m)$ and

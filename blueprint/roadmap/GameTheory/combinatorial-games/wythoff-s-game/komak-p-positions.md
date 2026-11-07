@@ -1,6 +1,6 @@
 # Komak's description of the P-positions of $K^2$
 
-**Komak's description of the P-positions of $K^2$.** Let $\varphi$ be the golden ratio
+Let $\varphi$ be the golden ratio
 and $g$ the sequence of Komak et al. Let $S$ be the set of pairs $(x, y)$ of natural numbers
 with $x + y \le 2$, together with the pairs
 $(\lfloor n\varphi \rfloor + g(n) - 1, \lfloor n\varphi^2 \rfloor + g(n))$ and

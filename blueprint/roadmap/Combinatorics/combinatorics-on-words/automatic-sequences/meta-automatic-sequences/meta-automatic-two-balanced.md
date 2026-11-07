@@ -1,6 +1,6 @@
 # $\mathcal{M}_2$ is balanced
 
-**$\mathcal{M}_2$ is balanced.** For every natural number $n$, the meta-automatic sequence
+For every natural number $n$, the meta-automatic sequence
 $\mathcal{M}_2$, read as taking values in $\{0, 1\}$, satisfies
 $\mathcal{M}_2(2n) + \mathcal{M}_2(2n+1) = 1$.
 

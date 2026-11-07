@@ -1,6 +1,6 @@
 # Fibonacci count of parity-preserving permutations avoiding $312$ and $231$
 
-**Fibonacci count of parity-preserving permutations avoiding $312$ and $231$.** For every
+For every
 integer $n \ge 1$, the number of permutations $\pi$ of $\{0, 1, \dots, n-1\}$ such that
 $\pi(i) \equiv i \pmod 2$ for every $i$ and that avoid the patterns $312$ and $231$ equals the
 Fibonacci number $F_n$, where $F_1 = F_2 = 1$. Here $\pi$ contains $312$ if there are

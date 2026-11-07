@@ -1,6 +1,6 @@
 # Greedy run on an array
 
-**Greedy run on an array.** In a bipartite graph with left vertices $0, \dots, a - 1$ and right
+In a bipartite graph with left vertices $0, \dots, a - 1$ and right
 vertices $0, \dots, b - 1$, start from an array whose entry $k$ holds the partner of the right
 vertex $k$, a missing entry meaning no partner, and let the right vertices of a list $L$ arrive one
 after another in the order of $L$. Each arrival performs the greedy step on the array: the entry of

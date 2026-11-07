@@ -1,6 +1,6 @@
 # Powers of a weighted adjacency matrix sum the weights of walks
 
-**Powers of a weighted adjacency matrix sum the weights of walks.** Let $R$ be a commutative
+Let $R$ be a commutative
 semiring, let $k$ and $n$ be natural numbers, and let $A$ be a $k \times k$ matrix over $R$ with
 rows and columns indexed by $\{0, \dots, k-1\}$, viewed as the weighted adjacency matrix of a
 weighted digraph on these $k$ vertices. Then for all vertices $i$ and $j$,

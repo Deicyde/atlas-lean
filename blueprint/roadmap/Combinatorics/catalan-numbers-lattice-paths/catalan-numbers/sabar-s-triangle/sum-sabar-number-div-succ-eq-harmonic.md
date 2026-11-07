@@ -1,6 +1,6 @@
 # The harmonic numbers as an alternating sum of Sabar numbers
 
-**The harmonic numbers as an alternating sum of Sabar numbers.** For every natural number
+For every natural number
 $n \ge 2$, writing $s(m, i)$ for Sabar's triangle and $H_n = \sum_{j=1}^{n} 1/j$ for the $n$-th
 harmonic number, in the rational numbers
 

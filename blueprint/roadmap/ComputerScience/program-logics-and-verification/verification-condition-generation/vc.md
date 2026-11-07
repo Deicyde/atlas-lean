@@ -1,6 +1,6 @@
 # Verification condition of an annotated command
 
-**Verification condition of an annotated command.** For an annotated command $C$ and an
+For an annotated command $C$ and an
 assertion $Q$ (the postcondition), the verification condition $\mathrm{vc}(C, Q)$ is the
 proposition defined as follows, where $\mathrm{pre}$ is the precondition of an annotated
 command: $\mathrm{vc}(\mathrm{skip}, Q)$ and $\mathrm{vc}(x := a, Q)$ are true;

@@ -1,6 +1,6 @@
 # Fence tilings and strongly restricted permutations
 
-**Fence tilings and strongly restricted permutations.** Let $D$ be a finite set of integers
+Let $D$ be a finite set of integers
 and $n$ a natural number. Number the cells of an $n$-board $0, 1, \dots, n-1$ and give cell $i$
 a left slot $2i$ and a right slot $2i + 1$. A fence $(s, g)$, with $s$ and $g$ natural numbers,
 has teeth in slots $s$ and $s + 1 + 2g$. A tiling is a finite set of fences such that every

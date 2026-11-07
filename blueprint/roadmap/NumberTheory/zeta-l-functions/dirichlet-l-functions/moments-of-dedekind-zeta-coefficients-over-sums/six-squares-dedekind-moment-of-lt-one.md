@@ -1,6 +1,6 @@
 # The six-squares moment vanishes below $1$
 
-**The six-squares moment vanishes below $1$.** For every number field $K$, every natural
+For every number field $K$, every natural
 number $\ell$ and every real $x < 1$, the six-squares moment
 $S_\ell(x) = \sum_{1 \le n \le x} r_6(n)\, a_K(n)^\ell$ equals $0$, where $r_6(n)$ is the number
 of representations of $n$ as a sum of six squares of integers and $a_K(n)$ is the number of

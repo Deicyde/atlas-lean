@@ -1,6 +1,6 @@
 # Fixed tilings of the square torus under the anti-diagonal reflection
 
-**Fixed tilings of the square torus under the anti-diagonal reflection.** Let $n$ be a
+Let $n$ be a
 positive integer, $T$ a finite set of tile designs and $\sigma$ a permutation of $T$ with
 $\sigma^2 = 1$; write $t_1$ for the number of designs $d \in T$ with $\sigma(d) = d$, and let
 $\varphi$ be Euler's totient function. Let $S$ be the torus shift sum of the cell map

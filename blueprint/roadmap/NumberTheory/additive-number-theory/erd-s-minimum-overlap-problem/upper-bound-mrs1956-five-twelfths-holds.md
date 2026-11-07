@@ -1,6 +1,6 @@
 # Motzkin–Ralston–Selfridge upper bound $5/12$ for the minimum-overlap constant
 
-**Motzkin–Ralston–Selfridge upper bound $5/12$ for the minimum-overlap constant.** The
+The
 continuous Erdős minimum-overlap constant $C_{1b}$ satisfies $C_{1b} \le 5/12$.
 
 ## Sources

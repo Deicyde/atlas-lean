@@ -1,6 +1,6 @@
 # A minimum spanning tree costs at most any tour
 
-**A minimum spanning tree costs at most any tour.** Let $d$ be a cost function on the
+Let $d$ be a cost function on the
 vertices with values in a linearly ordered additive commutative monoid that is symmetric, zero on
 the diagonal, nonnegative and satisfies the triangle inequality. Let $V$ be a list of distinct
 vertices. Let $T$ be a minimum spanning tree of $V$ for $d$: a rooted tree whose vertices are the

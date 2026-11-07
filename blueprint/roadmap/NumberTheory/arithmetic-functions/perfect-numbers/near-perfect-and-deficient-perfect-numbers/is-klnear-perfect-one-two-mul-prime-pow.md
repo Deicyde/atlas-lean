@@ -1,6 +1,6 @@
 # The only $(1,\ell)$-near-perfect number of the form $2p^a$ is $18$
 
-**The only $[1,\ell]$-near-perfect number of the form $2p^a$ is $18$.** For natural numbers
+For natural numbers
 $\ell$ and $n$, say that $n$ is $[1,\ell]$-near-perfect when some divisor $d$ of $n$ with $d < n$
 satisfies $\sigma(n) = n + d + \ell n$, where $\sigma(n)$ is the sum of the divisors of $n$. Then
 $18$ is $[1,1]$-near-perfect, and for every odd prime $p$ and all natural numbers $a$ and

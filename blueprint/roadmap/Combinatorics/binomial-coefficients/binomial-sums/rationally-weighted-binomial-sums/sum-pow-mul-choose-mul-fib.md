@@ -1,6 +1,6 @@
 # Power-weighted binomial sums of Fibonacci numbers
 
-**Power-weighted binomial sums of Fibonacci numbers.** Let $F_n$ denote the Fibonacci numbers,
+Let $F_n$ denote the Fibonacci numbers,
 $S(r, i)$ the Stirling numbers of the second kind and $(N)_i = N(N-1) \cdots (N-i+1)$ the falling
 factorial, with $(N)_0 = 1$. For all natural numbers $N$ and $r$,
 

@@ -1,6 +1,6 @@
 # Shortest chains avoiding earlier paths contain no dead vertex
 
-**Shortest chains avoiding earlier paths contain no dead vertex.** Let $\mu$ be a partner
+Let $\mu$ be a partner
 array, $U$ a set of left vertices and $D$ a set of right vertices, and let $L$ be a set of left
 vertices and $R$ a set of right vertices such that every vertex of $U$ lies in $L$ and every
 vertex of $D$ lies in $R$ or has no escape avoiding $U$ and $D$. Let $m \in \mathbb{N}$, let $z$ be

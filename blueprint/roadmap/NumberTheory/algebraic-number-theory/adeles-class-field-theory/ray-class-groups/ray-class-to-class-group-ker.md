@@ -1,6 +1,6 @@
 # Kernel of the projection from the ray class group to the class group
 
-**Kernel of the projection from the ray class group to the class group.** Let $K$ be a number
+Let $K$ be a number
 field, $\mathfrak m$ a modulus of $K$ with finite part $\mathfrak m_0$, $I_{\mathfrak m}$ the group
 of nonzero fractional ideals of $\mathcal O_K$ coprime to $\mathfrak m_0$,
 $\mathrm{Cl}_{\mathfrak m}$ the ray class group, $K_{\mathfrak m}$ the group of $x \in K^\times$

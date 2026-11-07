@@ -1,6 +1,6 @@
 # Upper bound for twisted prime sums with real coefficients
 
-**Upper bound for twisted prime sums with real coefficients.** Throughout, sums over $p$ run
+Throughout, sums over $p$ run
 over primes. Let $K$ be a real number with
 $\frac{1}{2\pi} \int_0^{2\pi} |\cos t - K| \, dt = 1 - K$. Let $g$ be a real-valued function on
 the natural numbers with $|g(p)| \le 1$ for every prime $p$, let $\alpha$ be a real number with

@@ -1,6 +1,6 @@
 # Monotone digit maps are lunar homomorphisms
 
-**Monotone digit maps are lunar homomorphisms.** Let $d : \mathbb{N} \to \mathbb{N}$ be
+Let $d : \mathbb{N} \to \mathbb{N}$ be
 nondecreasing, and for a coefficient sequence $f : \mathbb{N} \to \mathbb{N}$ write $d(f)$ for the
 sequence $k \mapsto d(f_k)$. Write $f \oplus g$ for the pointwise maximum and $f \otimes g$ for the
 max-min product of coefficient sequences $f$ and $g$. Then for all $f$ and $g$,

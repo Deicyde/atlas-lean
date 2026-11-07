@@ -1,6 +1,6 @@
 # Two factorizations of the Stirling-like matrix
 
-**Two factorizations of the Stirling-like matrix.** Let
+Let
 $\alpha = (\alpha_0, \alpha_1, \dots)$ be a sequence of rationals. For natural numbers
 $i, j \ge 1$ define $S_{i,j}$ and $U_{i,j}$ by $S_{1,j} = U_{1,j} = \alpha_{j-1}$,
 $S_{i,1} = \alpha_0$ and $U_{i,1} = 0$ for $i \ge 2$, and, for $i, j \ge 2$,

@@ -1,6 +1,6 @@
 # Alternating sums of Fibonacci numbers
 
-**Alternating sums of Fibonacci numbers.** Let $F_k$ denote the $k$-th Fibonacci number,
+Let $F_k$ denote the $k$-th Fibonacci number,
 with $F_0 = 0$ and $F_1 = 1$. For a natural number $n$, the $n$-th alternating Fibonacci sum is
 the integer
 

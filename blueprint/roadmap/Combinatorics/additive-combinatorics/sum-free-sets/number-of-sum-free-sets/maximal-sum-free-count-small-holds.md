@@ -1,6 +1,6 @@
 # Maximal sum-free subsets of $\{1, \dots, n\}$ number $o(2^{n/2})$
 
-**Maximal sum-free subsets of $\{1, \dots, n\}$ number $o(2^{n/2})$.** Let $f_m(n)$ be the
+Let $f_m(n)$ be the
 number of maximal sum-free subsets of $\{1, \dots, n\}$. Then $f_m(n) / 2^{n/2} \to 0$ as
 $n \to \infty$, that is, $f_m(n) = o(2^{n/2})$.
 

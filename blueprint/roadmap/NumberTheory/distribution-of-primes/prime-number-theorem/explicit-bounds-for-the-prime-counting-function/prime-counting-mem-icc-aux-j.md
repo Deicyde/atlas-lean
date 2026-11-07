@@ -1,6 +1,6 @@
 # Prime counting between the auxiliary functions $J$
 
-**Prime counting between the auxiliary functions $J$.** Let $\pi(x)$ be the number of primes
+Let $\pi(x)$ be the number of primes
 $p \le x$ and $\vartheta(x) = \sum_{p \le x} \log p$ Chebyshev's function. Let $k \ge 1$ be an
 integer and let $\eta > 0$ and $x_1 > 1$ be reals with $|\vartheta(y) - y| < \eta y / \log^k y$
 for every real $y \ge x_1$. For reals $e$ and $x \ge x_1$ set

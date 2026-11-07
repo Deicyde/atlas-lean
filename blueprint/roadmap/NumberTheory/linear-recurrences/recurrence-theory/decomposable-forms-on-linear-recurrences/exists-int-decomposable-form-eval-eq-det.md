@@ -1,6 +1,6 @@
 # Integer decomposable forms on integer recurrence sequences
 
-**Integer decomposable forms on integer recurrence sequences.** Let
+Let
 $\gamma_0, \dots, \gamma_{k-1} \in \mathbb{Z}$, let $\chi(x) = x^k - \sum_{i\lt k} \gamma_i x^i$,
 suppose $\chi(0) \neq 0$, and let $G^{(1)}, \dots, G^{(k)} \colon \mathbb{N} \to \mathbb{Z}$ each
 satisfy $G_{n+k} = \sum_{i\lt k} \gamma_i G_{n+i}$ for every $n \ge 0$. Suppose that the

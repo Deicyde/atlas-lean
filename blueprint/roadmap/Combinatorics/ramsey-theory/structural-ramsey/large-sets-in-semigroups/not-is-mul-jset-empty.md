@@ -1,6 +1,6 @@
 # The empty set is not a J-set in a nonempty semigroup
 
-**The empty set is not a J-set in a nonempty semigroup.** If $S$ is a nonempty semigroup, then
+If $S$ is a nonempty semigroup, then
 the empty subset of $S$ is not a $J$-set.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Multiple Hurwitz zeta function
 
-**Multiple Hurwitz zeta function.** For complex numbers $r$ and $s$, the multiple Hurwitz zeta
+For complex numbers $r$ and $s$, the multiple Hurwitz zeta
 function of order $r$, with Hurwitz parameter $a = 1$, is the Dirichlet series
 
 $$\zeta_r(s) = \sum_{m \ge 0} \binom{m + r - 1}{m} (m + 1)^{-s},$$

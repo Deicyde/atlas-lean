@@ -1,6 +1,6 @@
 # Hierholzer's algorithm finds Euler paths in directed multigraphs
 
-**Hierholzer's algorithm finds Euler paths in directed multigraphs.** Let $G$ be a directed
+Let $G$ be a directed
 adjacency graph, read as a multigraph with one edge per adjacency entry, and let $s$ and $t$ be
 vertices such that $G$ is semi-balanced for $s$ and $t$ (at $s$ one more edge occurrence leaves
 than enters, at $t$ one more enters than leaves, and at every other vertex as many leave as enter;

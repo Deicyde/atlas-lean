@@ -1,4 +1,4 @@
 # Unit output
 
-**Unit output.** A sentential form is a unit output when it consists of a single
+A sentential form is a unit output when it consists of a single
 nonterminal.

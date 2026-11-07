@@ -1,6 +1,6 @@
 # Reverse divisor
 
-**Reverse divisor.** A natural number $n$ is a reverse divisor if $n > 0$ and there is a
+A natural number $n$ is a reverse divisor if $n > 0$ and there is a
 natural number $k \ge 2$ such that the decimal reversal of $n$ equals $kn$. Since $n > 0$, such a
 $k$ is unique; it is called the quotient of $n$.
 

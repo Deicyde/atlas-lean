@@ -1,6 +1,6 @@
 # Generating function for lit cells of weakly increasing bargraphs
 
-**Generating function for lit cells of weakly increasing bargraphs.** Let
+Let
 $P(q) = \sum_{n \ge 0} p(n) q^n$ be the partition generating function, and let
 $L(q) \in \mathbb{Z}[[q]]$ be the power series whose coefficient of $q^n$ is the total number of
 lit cells over all partitions of $n$ drawn as weakly increasing bargraphs. Then

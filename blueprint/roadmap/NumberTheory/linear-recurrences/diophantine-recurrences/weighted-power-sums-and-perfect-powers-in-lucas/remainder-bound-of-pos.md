@@ -1,6 +1,6 @@
 # Remainder bound for weighted Lucas power sums when $y = 1$
 
-**Remainder bound for weighted Lucas power sums when $y = 1$.** Let $x$ be a positive integer
+Let $x$ be a positive integer
 with $D = x^2 - 4 > 0$, let $(U_m)$ be the Lucas sequence with parameters $(x, 1)$, given by
 $U_0 = 0$, $U_1 = 1$ and $U_{m+2} = x U_{m+1} - U_m$, let $V_2 = x^2 - 2$ be the term of index $2$
 of the companion Lucas sequence, and let $\alpha = (x + \sqrt{D})/2$. If positive integers $n$,

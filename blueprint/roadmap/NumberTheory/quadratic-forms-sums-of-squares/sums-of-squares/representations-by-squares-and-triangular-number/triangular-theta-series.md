@@ -1,6 +1,6 @@
 # Triangular theta series
 
-**Triangular theta series.** The triangular theta series is the formal power series
+The triangular theta series is the formal power series
 $\psi(q) = \sum_{m \ge 0} q^{m(m+1)/2}$ with integer coefficients: for each natural number $n$,
 its coefficient of $q^n$ is the number of natural numbers $m$ with $m(m+1)/2 = n$.
 

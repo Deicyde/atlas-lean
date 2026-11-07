@@ -1,6 +1,6 @@
 # Continuity of the d-dimensional continuous Turán number
 
-**Continuity of the d-dimensional continuous Turán number.** For every natural number $d$
+For every natural number $d$
 and every $P \subseteq \mathbb{R}^d$, the $d$-dimensional continuous Turán number
 $\mathrm{opx}(n, P, d)$ is a continuous function of $n$ on $(0, \infty)$.
 

@@ -1,6 +1,6 @@
 # Composition of immersions over boundaryless models
 
-**Composition of immersions over boundaryless models.** Let $\mathbb{K}$ be a nontrivially
+Let $\mathbb{K}$ be a nontrivially
 normed field, let $n \in \mathbb{N} \cup \{\infty, \omega\}$, and let $M$, $N$, $N'$ be charted
 spaces modelled through models with corners on normed spaces over $\mathbb{K}$, where the models
 of $N$ and $N'$ are boundaryless. If $f : M \to N$ and $g : N \to N'$ are $C^n$ immersions, then

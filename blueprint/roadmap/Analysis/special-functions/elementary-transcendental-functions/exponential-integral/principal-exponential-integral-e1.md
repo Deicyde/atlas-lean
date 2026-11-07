@@ -1,6 +1,6 @@
 # The principal exponential integral
 
-**The principal exponential integral.** For a nonzero complex number $z$, the principal
+For a nonzero complex number $z$, the principal
 exponential integral is $E_1(z) = \operatorname{Ein}(z) - \operatorname{Log} z - \gamma$, where
 $\operatorname{Ein}(z) = \sum_{j \ge 1} (-1)^{j+1} z^j / (j \cdot j!)$ is the entire exponential
 integral, $\operatorname{Log}$ is the principal branch of the complex logarithm (imaginary part

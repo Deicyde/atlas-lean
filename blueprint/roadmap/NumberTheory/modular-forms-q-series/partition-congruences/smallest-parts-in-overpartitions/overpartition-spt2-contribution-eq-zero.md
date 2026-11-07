@@ -1,6 +1,6 @@
 # Overpartitions with odd smallest part contribute nothing
 
-**Overpartitions with odd smallest part contribute nothing.** If $O$ is an overpartition of
+If $O$ is an overpartition of
 $n$ with at least one part and the smallest part of $O$ is odd, then the smallest-even-part
 contribution of $O$ is $0$.
 

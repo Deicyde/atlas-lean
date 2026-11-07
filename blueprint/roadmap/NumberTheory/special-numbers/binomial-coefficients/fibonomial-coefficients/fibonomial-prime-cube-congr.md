@@ -1,6 +1,6 @@
 # Kimball–Webb congruence for Fibonomial coefficients modulo $p^3$
 
-**Kimball–Webb congruence for Fibonomial coefficients modulo $p^3$.** Let $F_n$ be the
+Let $F_n$ be the
 Fibonacci numbers, with $F_1 = F_2 = 1$, and write $F_n! = F_1 F_2 \cdots F_n$, with $F_0! = 1$.
 Let $p \ge 7$ be a prime and $\varepsilon \in \{1, -1\}$, and suppose that $\rho = p - \varepsilon$
 is the rank of appearance of $p$, that is, $p \mid F_\rho$ and $p \nmid F_m$ for $0 < m < \rho$.

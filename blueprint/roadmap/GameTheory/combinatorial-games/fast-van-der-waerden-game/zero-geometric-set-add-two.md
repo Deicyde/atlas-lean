@@ -1,6 +1,6 @@
 # The zero-geometric set $S_2(n + 2, k)$
 
-**The zero-geometric set $S_2(n + 2, k)$.** For every natural number $n$ and every rational
+For every natural number $n$ and every rational
 $k$, $S_2(n + 2, k) = \{0\} \cup \{k^i : 0 \le i \le n\} = \{0, 1, k, \dots, k^n\}$.
 
 ## Sources

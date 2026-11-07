@@ -1,6 +1,6 @@
 # Structural invariant of a B-tree
 
-**Structural invariant of a B-tree.** For a minimum degree $t$ and a minimum key count $m$
+For a minimum degree $t$ and a minimum key count $m$
 for the top node, the invariant is defined inductively over the height: a leaf with $k$ keys
 satisfies it at height $0$ when $m \le k \le 2t - 1$, and for every natural number $h$, an
 internal node with $k$ keys satisfies it at height $h + 1$ when $m \le k \le 2t - 1$, the

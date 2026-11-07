@@ -1,6 +1,6 @@
 # Disintegration of the Normal–Normal joint law
 
-**Disintegration of the Normal–Normal joint law.** Let $m_0 \in \mathbb{R}$ and $v_0, v > 0$,
+Let $m_0 \in \mathbb{R}$ and $v_0, v > 0$,
 and write $N(\mu, s)$ for the Gaussian law with mean $\mu$ and variance $s$. Let $\pi = N(m_0, v_0)$
 be the prior on the parameter $\theta$, let $K$ be the Gaussian likelihood with noise variance $v$,
 so that $K(\theta) = N(\theta, v)$, and let $Q$ be the normal posterior kernel,

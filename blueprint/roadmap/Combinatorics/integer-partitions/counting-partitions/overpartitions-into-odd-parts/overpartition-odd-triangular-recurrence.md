@@ -1,6 +1,6 @@
 # Triangular recurrence for overpartitions into odd parts
 
-**Triangular recurrence for overpartitions into odd parts.** Write $\mathrm{po}(m)$ for the
+Write $\mathrm{po}(m)$ for the
 number of overpartitions of $m$ into odd parts. For every natural number $n$, the sum
 $\sum_{k \ge 0,\ k(k+1)/2 \le n} (-1)^{\lceil k/2 \rceil} \, \mathrm{po}(n - k(k+1)/2)$ equals
 $1$ if $n = m(m+1)/2$ for some natural number $m$, and equals $0$ otherwise.

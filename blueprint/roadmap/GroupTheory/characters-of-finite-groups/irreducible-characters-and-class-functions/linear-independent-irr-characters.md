@@ -1,6 +1,6 @@
 # Irreducible characters are linearly independent
 
-**Irreducible characters are linearly independent.** Let $G$ be a finite group. The irreducible
+Let $G$ be a finite group. The irreducible
 complex characters of $G$, that is, the functions $G \to \mathbb{C}$ that are the character of
 some simple finite-dimensional complex representation of $G$, are linearly independent over
 $\mathbb{C}$ in the space of functions $G \to \mathbb{C}$.

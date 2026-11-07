@@ -1,6 +1,6 @@
 # The marginal of probabilistic PCA and factor analysis is Gaussian
 
-**The marginal of probabilistic PCA and factor analysis is Gaussian.** Let $Z$ and $E$ be
+Let $Z$ and $E$ be
 independent random vectors on a probability space, with values in $\mathbb{R}^q$ and
 $\mathbb{R}^d$, such that $Z$ has the standard Gaussian law $N(0, I_q)$ and $E$ has law
 $N(0, \Psi)$ for a positive semidefinite real $d \times d$ matrix $\Psi$. Then for every real

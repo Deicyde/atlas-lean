@@ -1,6 +1,6 @@
 # Leading-term counting exponent for partial Hadamard matrices
 
-**Leading-term counting exponent for partial Hadamard matrices.** For natural numbers $n$
+For natural numbers $n$
 and $m$, let $N_{n,m}$ be the number of $n \times m$ partial Hadamard matrices, and for natural
 numbers $n$ and $t$ let $A_{n,4t} = 2^{4nt + (n-1)^2} (8\pi t)^{-n(n-1)/4}$ be the de
 Launey–Levin leading term. Call a real number $\alpha$ admissible when

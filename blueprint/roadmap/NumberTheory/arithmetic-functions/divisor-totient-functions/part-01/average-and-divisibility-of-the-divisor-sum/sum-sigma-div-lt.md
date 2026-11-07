@@ -1,6 +1,6 @@
 # Linear bound for the partial sums of the abundancy index
 
-**Linear bound for the partial sums of the abundancy index.** For a positive integer
+For a positive integer
 $n$ let $\sigma(n)$ denote the sum of the positive divisors of $n$, and let
 $\zeta(2) = \sum_{n=1}^{\infty} 1/n^2$. Then for every real number $x \ge 1$,
 

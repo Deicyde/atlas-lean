@@ -1,6 +1,6 @@
 # Lucas $p$-numbers
 
-**Lucas $p$-numbers.** For a natural number $p$, the Lucas $p$-numbers are the natural numbers
+For a natural number $p$, the Lucas $p$-numbers are the natural numbers
 $L_{p,n}$ given by $L_{p,0} = p + 1$, $L_{p,i} = 1$ for $1 \le i \le p$, and
 $L_{p,n} = L_{p,n-1} + L_{p,n-p-1}$ for $n > p$.
 

@@ -1,4 +1,4 @@
 # A pruned entry stays pruned
 
-**A pruned entry stays pruned**: the multiplicative update maps a zero entry of `H` to
+The multiplicative update maps a zero entry of `H` to
 zero.

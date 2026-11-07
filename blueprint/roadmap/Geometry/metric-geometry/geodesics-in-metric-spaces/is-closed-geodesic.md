@@ -1,6 +1,6 @@
 # Closed geodesic
 
-**Closed geodesic.** Let $X$ be a pseudo-extended metric space. A curve
+Let $X$ be a pseudo-extended metric space. A curve
 $\gamma : \mathbb{R} \to X$ is a closed geodesic if it is a geodesic defined on all of $\mathbb{R}$,
 it is periodic with some period $T > 0$ (that is, $\gamma(t + T) = \gamma(t)$ for all
 $t \in \mathbb{R}$), and it is not constant: $\gamma(t_1) \ne \gamma(t_2)$ for some

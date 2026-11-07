@@ -1,6 +1,6 @@
 # Expansion of $\binom{sp-1}{k}$ modulo $p^3$
 
-**Expansion of $\binom{sp-1}{k}$ modulo $p^3$.** Let $p$ be an odd prime, $s$ an integer
+Let $p$ be an odd prime, $s$ an integer
 and $k$ a natural number with $1 \le k \le p - 1$, and let $H_k = \sum_{i=1}^{k} i^{-1}$ and
 $H_{k,2} = \sum_{i=1}^{k} (i^2)^{-1}$ be the harmonic numbers of orders one and two in
 $\mathbb{Z}/p^3\mathbb{Z}$. Then in $\mathbb{Z}/p^3\mathbb{Z}$

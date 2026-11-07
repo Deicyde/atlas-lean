@@ -1,6 +1,6 @@
 # Closed formula for hook tableau counts
 
-**Closed formula for hook tableau counts.** For natural numbers $n$ and $k$ with
+For natural numbers $n$ and $k$ with
 $k + 2 \le n$, let $\mathrm{SYT}_k(2,1;n)$ be the number of standard Young tableaux of order $n$
 in the $(2,1)$-hook whose first row is longer than its second row by exactly $k$. Then, as an
 identity of rational numbers,

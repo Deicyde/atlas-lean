@@ -1,6 +1,6 @@
 # Generating polynomial of lucky cars
 
-**Generating polynomial of lucky cars.** For $n \in \mathbb{N}$ and $0 \le k \le n$, let $c_k$
+For $n \in \mathbb{N}$ and $0 \le k \le n$, let $c_k$
 be the number of parking functions of length $n$ with exactly $k$ lucky cars. Then in
 $\mathbb{Q}[x]$,
 

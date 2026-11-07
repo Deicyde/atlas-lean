@@ -1,6 +1,6 @@
 # Clause loop of the clause check
 
-**Clause loop of the clause check.** Suppose the lookup sub-program $lk$ with start label
+Suppose the lookup sub-program $lk$ with start label
 $l_0$ meets the lookup contract with constants $a$ and $b$. Let $es$ be a table with table stack
 $B_{es}$, and let $\varphi$ be a CNF formula with clauses $D_1, \dots, D_m$. The stack tokens
 of a clause are its clause marker followed by the stack tokens of its literals, last literal

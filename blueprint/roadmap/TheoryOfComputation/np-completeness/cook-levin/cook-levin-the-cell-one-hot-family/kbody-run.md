@@ -1,6 +1,6 @@
 # One stack iteration of the one-hot generator
 
-**One stack iteration of the one-hot generator.** Let $L$ be a layout with $g$ symbol codes,
+Let $L$ be a layout with $g$ symbol codes,
 $K$ stacks and a label/state block of size $A$, let $T$, $H$, $t$, $k$ be natural numbers with
 $t \le T$ and $k < K$, let $W = A + KHg$ be the row width of $L$ at height $H$, and let
 $V = (T + 1)W$ be the number of variables. For $j < H$ let $B_j = tW + A + (kH + j)g$ be the

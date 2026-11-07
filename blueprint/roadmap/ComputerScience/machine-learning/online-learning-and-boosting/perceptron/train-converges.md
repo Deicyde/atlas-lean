@@ -1,6 +1,6 @@
 # The perceptron converges
 
-**The perceptron converges.** Let $K$ be a linearly ordered commutative ring, let $\iota$ be a
+Let $K$ be a linearly ordered commutative ring, let $\iota$ be a
 finite index type, write $a \cdot b = \sum_{j \in \iota} a_j b_j$ for $a, b \in K^\iota$, and let
 the label sign $s(y)$ be $1$ if the Boolean $y$ is true and $-1$ otherwise. Let $D$ be a finite
 list of examples $(x, y)$ with $x \in K^\iota$ and $y$ a Boolean, and let $u \in K^\iota$ and

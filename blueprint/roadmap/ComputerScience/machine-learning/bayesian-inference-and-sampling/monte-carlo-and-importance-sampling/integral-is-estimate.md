@@ -1,6 +1,6 @@
 # Importance sampling is unbiased
 
-**Importance sampling is unbiased.** Let $\mu$ be a measure on $\Omega$, let $\rho$ be a
+Let $\mu$ be a measure on $\Omega$, let $\rho$ be a
 measure on $\alpha$, let $w : \alpha \to [0, \infty]$ be measurable with $w < \infty$
 $\rho$-almost everywhere, and let $\nu$ be the measure with density $w$ with respect to $\rho$.
 Let $f : \alpha \to \mathbb{R}$ be measurable and integrable with respect to $\nu$. If

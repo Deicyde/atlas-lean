@@ -1,6 +1,6 @@
 # For $Q = \emptyset$, metatiles have at most two combs
 
-**For $Q = \emptyset$, metatiles have at most two combs.** For $Q = \emptyset$, every metatile
+For $Q = \emptyset$, every metatile
 of every restricted-overlap tiling with squares and $Q$-combs contains at most two combs.
 
 Here the $Q$-comb is a single cell, so no tile straddles a cell boundary and every metatile is a

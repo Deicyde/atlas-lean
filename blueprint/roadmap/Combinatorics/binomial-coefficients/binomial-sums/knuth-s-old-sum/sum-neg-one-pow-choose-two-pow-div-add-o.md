@@ -1,6 +1,6 @@
 # Alternating binomial sum of $2^{k+m}/(k+m+1)$
 
-**Alternating binomial sum of $2^{k+m}/(k+m+1)$.** For all natural numbers $m$ and $n$, the
+For all natural numbers $m$ and $n$, the
 rational number $S = \sum_{k=0}^{n} (-1)^k \binom{n}{k} \frac{2^{k+m}}{k+m+1}$ satisfies
 
 $$S = \sum_{k=0}^{\lfloor m/2 \rfloor} \frac{\binom{m}{2k}}{2k+n+1}$$

@@ -1,6 +1,6 @@
 # Embedding of raw STLC terms into the calculus with references
 
-**Embedding of raw STLC terms into the calculus with references.** Fix a type $B$ of base
+Fix a type $B$ of base
 types. The embedding $\iota$ sends a raw (extrinsically typed, binder-annotated) term of the
 simply typed lambda calculus over $B$ to a term of the calculus with references over $B$, by
 recursion: a de Bruijn variable $n$ goes to the variable $n$, an application $f\,a$ goes to

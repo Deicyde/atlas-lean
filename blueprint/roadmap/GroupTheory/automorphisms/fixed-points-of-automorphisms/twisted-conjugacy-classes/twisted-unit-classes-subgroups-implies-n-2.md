@@ -1,6 +1,6 @@
 # Negative answer to the nilpotency assertion of Kourovka Problem 18.14
 
-**Negative answer to the nilpotency assertion of Kourovka Problem 18.14.** There is a group $G$
+There is a group $G$
 that is not nilpotent although, for every automorphism $\varphi$ of $G$, the twisted conjugacy
 class of the identity $[e]_\varphi = \{g^{-1}\varphi(g) : g \in G\}$ is a subgroup of $G$.
 

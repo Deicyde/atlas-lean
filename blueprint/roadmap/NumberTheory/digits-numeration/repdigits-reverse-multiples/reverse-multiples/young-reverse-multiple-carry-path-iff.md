@@ -1,6 +1,6 @@
 # Carry equations for reverse multiples
 
-**Carry equations for reverse multiples.** Let $g, k, n$ be natural numbers with
+Let $g, k, n$ be natural numbers with
 $2 \le k < g$ and $n \ge 1$, and let $a_0, \dots, a_{n-1}$ be natural numbers with $a_i < g$ for
 every $i$, $a_{n-1} \ne 0$ and $a_0 \ne 0$. Then $k \sum_{i\lt n} a_i g^i = \sum_{i\lt n} a_{n-1-i} g^i$,
 that is, $k$ times the number with base-$g$ digits $a_{n-1}, \dots, a_0$ (most significant first)

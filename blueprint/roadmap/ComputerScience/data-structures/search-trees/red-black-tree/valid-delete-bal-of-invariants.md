@@ -1,6 +1,6 @@
 # Double-black deletion yields a valid tree from the structural invariants
 
-**Double-black deletion yields a valid tree from the structural invariants.** Let $\alpha$
+Let $\alpha$
 be a linearly ordered type and $t$ a red-black tree with keys in $\alpha$ that is ordered,
 satisfies the red invariant (no red node has a red child), and is black-height balanced (all
 root-to-leaf paths contain the same number of black nodes). Then for every $x \in \alpha$, the

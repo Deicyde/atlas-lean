@@ -1,6 +1,6 @@
 # 3SAT is in NP
 
-**3SAT is in NP.** The decision problem 3SAT, which accepts exactly the bit strings that
+The decision problem 3SAT, which accepts exactly the bit strings that
 encode a satisfiable CNF formula in which every clause has at most three literals, belongs to the
 class NP.
 

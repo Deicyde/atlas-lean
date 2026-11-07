@@ -1,6 +1,6 @@
 # Generating function of odd designated-summand partitions
 
-**Generating function of odd designated-summand partitions.** For $k \ge 1$ let
+For $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ be the Euler product. This is the integer power series
 $f_4 f_6^2 / (f_1 f_3 f_{12})$ in $q$, where the denominator $f_1 f_3 f_{12}$ is invertible
 because its constant coefficient is $1$. It is the generating function

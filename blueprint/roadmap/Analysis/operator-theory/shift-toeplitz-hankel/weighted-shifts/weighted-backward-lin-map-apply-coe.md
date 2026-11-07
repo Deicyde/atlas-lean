@@ -1,6 +1,6 @@
 # The weighted backward shift linear map agrees with the shift of sequences
 
-**The weighted backward shift linear map agrees with the shift of sequences.** Let
+Let
 $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let $w : \mathbb{N} \to \mathbb{K}$ be weights with
 $\sup_n |w_n| < \infty$. For every $x \in \ell^2(\mathbb{N}, \mathbb{K})$, the image of $x$ under
 the weighted backward shift with weights $w$, regarded as a linear map on

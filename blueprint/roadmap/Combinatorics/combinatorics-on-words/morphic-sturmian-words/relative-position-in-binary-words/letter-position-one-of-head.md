@@ -1,6 +1,6 @@
 # Position of the first occurrence of the initial letter
 
-**Position of the first occurrence of the initial letter.** If an infinite binary word $w$
+If an infinite binary word $w$
 starts with the letter $\alpha$, then the first occurrence of $\alpha$ in $w$ is at position $0$,
 that is, $p_\alpha(1) = 0$.
 

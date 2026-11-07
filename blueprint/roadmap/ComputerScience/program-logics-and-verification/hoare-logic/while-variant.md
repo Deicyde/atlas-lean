@@ -1,6 +1,6 @@
 # Variant rule for while loops
 
-**Variant rule for while loops.** Let $I$ be an assertion (the invariant), $V$ a function
+Let $I$ be an assertion (the invariant), $V$ a function
 from states to natural numbers (the variant), $b$ a Boolean guard and $c$ a command. Suppose
 that for every state $s$ satisfying $I$ in which $b$ evaluates to true, there is a terminating
 big-step execution of $c$ from $s$ ending in a state $s'$ that satisfies $I$ with

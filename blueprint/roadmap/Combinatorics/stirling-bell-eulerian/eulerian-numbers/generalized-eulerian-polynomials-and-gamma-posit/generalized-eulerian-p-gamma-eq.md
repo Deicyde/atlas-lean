@@ -1,6 +1,6 @@
 # The gamma coefficients of the generalized Eulerian polynomials count permutations
 
-**The gamma coefficients of the generalized Eulerian polynomials count permutations.** Fix
+Fix
 $n \ge 0$ and let $P_n(q, t; x, y)$ be the generalized Eulerian polynomial. For a permutation $w$
 of $\{0, 1, \dots, n-1\}$ write $\mathrm{cyc}(w)$ for its number of cycles (fixed points counted
 as cycles), $\mathrm{fix}(w)$ for its number of fixed points, $\mathrm{exc}(w)$ for its number of

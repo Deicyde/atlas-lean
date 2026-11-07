@@ -1,6 +1,6 @@
 # Multinomial formula for the von Mangoldt–Fermat function
 
-**Multinomial formula for the von Mangoldt–Fermat function.** Let $u_M$ be the Fermat unit
+Let $u_M$ be the Fermat unit
 function, and let $\mu$ be an integer-valued arithmetic function with $\mu * u_M = \varepsilon$,
 where $*$ is Dirichlet convolution and $\varepsilon$ is its identity (so $\mu$ is the
 Möbius–Fermat function $\mu_M$). Let $\Lambda_M = \mu * u'_M$, computed with real values, where

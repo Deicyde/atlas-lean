@@ -1,6 +1,6 @@
 # Linear recurrence of constant terms modulo $p^a$
 
-**Linear recurrence of constant terms modulo $p^a$.** Let $p$ be a prime, let $a \ge 1$, and
+Let $p$ be a prime, let $a \ge 1$, and
 let $P, Q$ be Laurent polynomials with integer coefficients in $r$ variables; write
 $\operatorname{ct}[f]$ for the constant term of $f$. Suppose $p^a \nmid \operatorname{ct}[P^n Q]$
 for some $n \in \mathbb{N}$. Then the sequence $u_n = \operatorname{ct}[P^n Q] \bmod p^a$ is

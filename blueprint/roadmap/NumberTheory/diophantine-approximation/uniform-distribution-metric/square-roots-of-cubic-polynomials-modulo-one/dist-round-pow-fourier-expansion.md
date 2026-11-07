@@ -1,6 +1,6 @@
 # Fourier expansion of a power of the distance to the nearest integer
 
-**Fourier expansion of a power of the distance to the nearest integer.** Let $k$ be a
+Let $k$ be a
 positive integer, let $g(u) = |u - \operatorname{round}(u)|^k$ be the $k$-th power of the
 distance from a real $u$ to the nearest integer, let $e(x) = e^{2\pi i x}$, and for every
 integer $m$ let $c(m) = \int_0^1 g(u)\, e(-mu)\, du$. Then $c(0) = 1/(2^k (k + 1))$, the mean of

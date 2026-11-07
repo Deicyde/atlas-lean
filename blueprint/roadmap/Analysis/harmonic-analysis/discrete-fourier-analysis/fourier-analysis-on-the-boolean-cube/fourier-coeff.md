@@ -1,6 +1,6 @@
 # Fourier coefficient on the subsets of a finite set
 
-**Fourier coefficient on the subsets of a finite set.** Let $E$ be a finite subset of a type
+Let $E$ be a finite subset of a type
 $\iota$ and let $f$ be a function from finite subsets of $\iota$ to $\mathbb{R}$. For a finite
 subset $S$ of $\iota$, the Fourier coefficient of $f$ at $S$ over $E$ is
 

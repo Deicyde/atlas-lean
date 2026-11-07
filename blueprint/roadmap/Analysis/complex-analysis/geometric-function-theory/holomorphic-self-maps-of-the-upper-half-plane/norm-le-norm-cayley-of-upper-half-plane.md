@@ -1,6 +1,6 @@
 # Schwarz lemma on the upper half-plane
 
-**Schwarz lemma on the upper half-plane.** Let
+Let
 $\mathbb{H}=\{z\in\mathbb{C} : \mathrm{Im}\,z>0\}$ be the upper half-plane, and let $F$ be a
 complex function that is holomorphic on $\mathbb{H}$, satisfies $|F(z)|\le 1$ for every
 $z\in\mathbb{H}$, and vanishes at $i$. Then for every $z\in\mathbb{H}$,

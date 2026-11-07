@@ -1,6 +1,6 @@
 # Motzkin paths with a marked hump, over all heights
 
-**Motzkin paths with a marked hump, over all heights.** For a natural number $n$, this is
+For a natural number $n$, this is
 the set of triples $(k, P, h)$ where $k$ is a natural number with
 $1 \le k \le \lfloor n/2 \rfloor$, $P$ is a Motzkin path of length $n$ (a word of $n$ steps
 $U = (1,1)$, $F = (1,0)$ and $D = (1,-1)$ that ends at height $0$ and never goes below height

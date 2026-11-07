@@ -1,6 +1,6 @@
 # Ordered insertion into a list
 
-**Ordered insertion into a list.** For an element $x$ of a linearly ordered type, the ordered
+For an element $x$ of a linearly ordered type, the ordered
 insertion of $x$ into the empty list is $[x]$. For a list with head $a$ and tail $\ell$, it is
 $x$ followed by the whole list if $x < a$; it is $a$ followed by the ordered insertion of $x$
 into $\ell$ if $a < x$; and it is the list unchanged if $a = x$.

@@ -1,6 +1,6 @@
 # Productions of a node
 
-**Productions of a node.** For a natural number $k$ and a node $n$, the productions of
+For a natural number $k$ and a node $n$, the productions of
 node $k$ are the following encoded productions, all with left-hand side $k$, where nonterminal
 $i$ stands for node $i$: none if $n$ is the zero node; $k \to \varepsilon$ if $n$ is the
 empty-word node; $k \to a$ if $n$ is the character $a$; if $n$ is a sum with arguments $i$ and

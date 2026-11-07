@@ -1,6 +1,6 @@
 # Esseen's asymptotic lower bound for a two-point law
 
-**Esseen's asymptotic lower bound for a two-point law.** For a probability measure $\mu$ on
+For a probability measure $\mu$ on
 $\mathbb{R}$ and an integer $n \ge 1$, let $F_n$ be the distribution function of
 $(X_1 + \dots + X_n)/\sqrt{n}$ for independent random variables $X_1, X_2, \dots$ each with law
 $\mu$, let $\Delta_n(\mu) = \sup_{x \in \mathbb{R}} |F_n(x) - \Phi(x)|$, where $\Phi$ is the

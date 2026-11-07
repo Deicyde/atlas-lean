@@ -1,6 +1,6 @@
 # Binomial square of the Lucas generating function
 
-**Binomial square of the Lucas generating function.** Let $K$ be a field of characteristic
+Let $K$ be a field of characteristic
 $0$, let $a, b \in K$, and let $g(x) = \sum_{n \ge 0} G_n x^n$ be a power series over $K$ with
 $g(x)(1 - ax - bx^2) = 2 - ax$. Then
 

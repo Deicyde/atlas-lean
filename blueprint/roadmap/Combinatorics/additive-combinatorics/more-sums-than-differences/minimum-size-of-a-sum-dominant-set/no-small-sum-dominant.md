@@ -1,6 +1,6 @@
 # Chu's theorem: sets with fewer than six elements are not sum-dominant
 
-**Chu's theorem: sets with fewer than six elements are not sum-dominant.** Let $A$ be a finite
+Let $A$ be a finite
 set of nonnegative integers with $|A| < 6$. Then $|A + A| \le |A - A|$, where
 $A + A = \{a + b : a, b \in A\}$ is the sumset and $A - A = \{a - b : a, b \in A\}$ is the
 difference set of $A$; that is, $A$ is not sum-dominant.

@@ -1,6 +1,6 @@
 # $(1, 3)$ is a $\{2\}$-Diophantine pair
 
-**$(1, 3)$ is a $\{2\}$-Diophantine pair.** The set $\{1, 3\}$ is a $\{2\}$-Diophantine
+The set $\{1, 3\}$ is a $\{2\}$-Diophantine
 tuple, since $1 \cdot 3 + 1 = 2^2$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Factor complexity of the Thue–Morse Quarto word versus Thue–Morse
 
-**Factor complexity of the Thue–Morse Quarto word versus Thue–Morse.** Let $\mathcal{Q}$ be
+Let $\mathcal{Q}$ be
 the Thue–Morse Quarto sequence and $t$ the Thue–Morse sequence, with factor complexities
 $p_{\mathcal{Q}}$ and $p_t$. For every natural number $n$, let $J_n$ be the set of length-$n$
 factors of $\mathcal{Q}$ that are not factors of $t$. Then $p_{\mathcal{Q}}(n) = p_t(n) + |J_n|$.

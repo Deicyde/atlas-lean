@@ -1,6 +1,6 @@
 # The conditional probabilities sum to $1$
 
-**The conditional probabilities sum to $1$.** Let $c$ be a chain conditional random field
+Let $c$ be a chain conditional random field
 with finitely many states $S$ and weights in a semifield $R$ equipped with a partial order (not
 assumed compatible with the operations), let $x$ be an observation sequence, and let
 $t \in \mathbb{N}$. If the partition function of $c$ at $x$ and time $t$ is positive, then the

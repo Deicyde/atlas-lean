@@ -1,6 +1,6 @@
 # Sift-down with comparison and swap counts
 
-**Sift-down with comparison and swap counts.** For an array $a$ over a linearly ordered
+For an array $a$ over a linearly ordered
 type and an index $i$, timed sift-down returns an array together with a cost pair
 (value comparisons, array swaps), where costs add componentwise. If the left child index
 $2i+1$ is not a valid index of $a$, it returns $a$ at cost $(0, 0)$. Otherwise let $c$ be the

@@ -1,6 +1,6 @@
 # The $n$-th non-value of a sequence
 
-**The $n$-th non-value of a sequence.** For $f : \mathbb{N} \to \mathbb{N}$ and $n \ge 1$, the
+For $f : \mathbb{N} \to \mathbb{N}$ and $n \ge 1$, the
 $n$-th non-value of $f$ is the $n$-th smallest positive integer that is not of the form $f(m)$
 with $m \ge 1$, or $0$ if fewer than $n$ such integers exist. At $n = 0$ it takes the same value
 as at $n = 1$.

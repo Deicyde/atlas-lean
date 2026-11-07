@@ -1,6 +1,6 @@
 # Chu's bound for MPTQ sets with a negative element
 
-**Chu's bound for MPTQ sets with a negative element.** Every MPTQ set of real numbers that
+Every MPTQ set of real numbers that
 contains a negative number has at least $5$ elements.
 
 ## Sources

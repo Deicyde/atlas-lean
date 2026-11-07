@@ -1,6 +1,6 @@
 # Three-term recurrence for generalized Chebyshev polynomials
 
-**Three-term recurrence for generalized Chebyshev polynomials.** For a commutative ring $R$,
+For a commutative ring $R$,
 all $r, s, \lambda, \mu \in R$ and every $n \ge 0$, the generalized Chebyshev polynomials of
 the second kind $Q_n \in R[x]$ with parameters $r, s, \lambda, \mu$ satisfy
 $Q_{n+3} = (x - r) Q_{n+2} - s Q_{n+1}$.

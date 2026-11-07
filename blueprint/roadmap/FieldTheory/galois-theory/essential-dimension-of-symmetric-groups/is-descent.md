@@ -1,6 +1,6 @@
 # Descent of the general polynomial extension
 
-**Descent of the general polynomial extension.** For a natural number $n$, let
+For a natural number $n$, let
 $E = \mathbb{C}(x_1, \dots, x_n)$ be the field of rational functions in $n$ indeterminates and
 let $F = \mathbb{C}(a_1, \dots, a_n) \subseteq E$ be the coefficient field of the general
 polynomial, where $a_k$ is the $k$-th elementary symmetric function of $x_1, \dots, x_n$. A

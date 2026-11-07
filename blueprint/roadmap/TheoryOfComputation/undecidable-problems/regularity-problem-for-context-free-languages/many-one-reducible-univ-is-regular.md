@@ -1,6 +1,6 @@
 # Universality many-one reduces to regularity of context-free languages
 
-**Universality many-one reduces to regularity of context-free languages.** Let $T$ be a
+Let $T$ be a
 finite alphabet with decidable equality and a primitive recursive coding, and let
 $T \sqcup \{\#, 0, 1\}$ extend $T$ by a separator $\#$ and two bits. There is a computable map $f$
 from encoded context-free grammars over $T$ to encoded context-free grammars over

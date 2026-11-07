@@ -1,6 +1,6 @@
 # The subword $DUD$ in non-decreasing Dyck paths
 
-**The subword $DUD$ in non-decreasing Dyck paths.** Let $F_{DUD}(x, y)$ and $D_{DUD}(x)$ be
+Let $F_{DUD}(x, y)$ and $D_{DUD}(x)$ be
 the bivariate and univariate generating functions of the subword $DUD$ in non-decreasing Dyck
 paths, let $d_{DUD}(n)$ be the total number of occurrences of $DUD$ over all non-decreasing Dyck
 paths of semilength $n$, and let $F_n$ and $L_n$ denote the Fibonacci and Lucas numbers. Then

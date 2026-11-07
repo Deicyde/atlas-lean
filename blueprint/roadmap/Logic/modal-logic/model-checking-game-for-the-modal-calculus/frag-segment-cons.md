@@ -1,6 +1,6 @@
 # Splitting off the head of a segment
 
-**Splitting off the head of a segment.** Let $p_0$ be a model-checking game position and $\pi$
+Let $p_0$ be a model-checking game position and $\pi$
 an infinite sequence of positions of the totalized fragment game. For each $i$, let $\hat\pi_i$ be
 $p_0$ if $\pi_i$ is an absorbing state; if $\pi_i$ is the embedded position $(\varphi, w)$ of a
 fixpoint-free formula $\varphi$ and a world $w$, let $\hat\pi_i$ be the game position

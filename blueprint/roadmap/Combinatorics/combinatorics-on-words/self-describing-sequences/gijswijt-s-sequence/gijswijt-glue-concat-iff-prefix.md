@@ -1,6 +1,6 @@
 # Concatenated glue strings are the next-order prefixes with small curling number
 
-**Concatenated glue strings are the next-order prefixes with small curling number.** Let
+Let
 $m \ge 1$. A finite string $P$ of natural numbers is a prefix of the $(m+1)$th order Gijswijt
 sequence $A^{(m+1)}$ with curling number $\mathcal{C}(P) \le m$ if and only if $P = T^{(m)}_t$ for
 some $t \ge 1$, where $T^{(m)}_t$ is the concatenated glue string.

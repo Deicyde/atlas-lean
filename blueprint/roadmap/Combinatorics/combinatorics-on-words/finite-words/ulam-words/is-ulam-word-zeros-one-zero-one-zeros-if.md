@@ -1,6 +1,6 @@
 # Ulam words with one 101 block
 
-**Ulam words with one 101 block.** For natural numbers $a$ and $b$ with $a + b \ge 2$, the
+For natural numbers $a$ and $b$ with $a + b \ge 2$, the
 binary word $0^a 101 0^b$ ($a$ zeros, then the letters $1, 0, 1$, then $b$ zeros) is an Ulam word
 if and only if $a + b$ is odd.
 

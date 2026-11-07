@@ -1,6 +1,6 @@
 # Conway–Schneeberger fifteen theorem
 
-**Conway–Schneeberger fifteen theorem.** Let $Q$ be a positive definite symmetric
+Let $Q$ be a positive definite symmetric
 $n \times n$ matrix with integer entries, with quadratic form $Q(x) = \sum_{i,j} Q_{ij} x_i x_j$
 on $\mathbb{Z}^n$. Then $Q$ is universal, that is, it represents every positive integer, if and
 only if it represents every integer $k$ with $1 \le k \le 15$.

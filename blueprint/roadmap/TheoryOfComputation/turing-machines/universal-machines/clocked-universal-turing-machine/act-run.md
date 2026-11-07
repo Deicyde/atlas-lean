@@ -1,6 +1,6 @@
 # The tape update
 
-**The tape update.** Let $c$ be a code, $k$ a configuration and $t$, $q'$, $s$ natural
+Let $c$ be a code, $k$ a configuration and $t$, $q'$, $s$ natural
 numbers. Started at the label $\mathsf{act0}$, with any value of its internal variable, on the
 stacks holding the code $c$, the clock $t$ and the configuration $k$, with $q'$ on the next-state
 stack, $s$ on the action stack and all other stacks empty, the program of the clocked universal

@@ -1,6 +1,6 @@
 # Brousseau's alternating series of reciprocal Fibonacci squares
 
-**Brousseau's alternating series of reciprocal Fibonacci squares.** Let $F_n$ denote the
+Let $F_n$ denote the
 Fibonacci numbers, with $F_0 = 0$, $F_1 = 1$ and $F_{n+2} = F_{n+1} + F_n$. For every positive
 integer $q$, the real series
 $\sum_{k \ge 1} (-1)^{k-1} \frac{F_{2k+q}}{F_k^2 \, F_{k+q}^2}$ is unconditionally summable,

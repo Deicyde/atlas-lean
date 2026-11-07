@@ -1,6 +1,5 @@
 # The $B_\kappa$-free indicator twisted by the principal character, convolved with $\mu$
 
-**The $B_\kappa$-free indicator twisted by the principal character, convolved with $\mu$.**
 Let $\kappa$ be a function from the natural numbers to the natural numbers with $\kappa(p) \ge 1$
 for every prime $p$, let $\xi$ be a natural number, let $q_{B_\kappa}$ be the indicator of
 $B_\kappa$-free integers and let $\mu$ be the Möbius function. Put $w(d) = q_{B_\kappa}(d)$ if

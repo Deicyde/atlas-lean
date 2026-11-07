@@ -1,6 +1,6 @@
 # Renaming free variables along an arbitrary map preserves derivability
 
-**Renaming free variables along an arbitrary map preserves derivability.** Let $\alpha$ and
+Let $\alpha$ and
 $\beta$ be types of variables with $\beta$ infinite, and let $f : \alpha \to \beta$ be any map.
 If $\varphi$ is derivable from the list of hypotheses $\Gamma$ in natural deduction, then the
 formula obtained from $\varphi$ by renaming each free variable $x$ to $f(x)$ is derivable from

@@ -1,3 +1,3 @@
 # Output reachability gives stable outputs and bounded iterates
 
-**Output reachability gives stable outputs and bounded iterates.** Reachability gives stable outputs after the budget and bounds every iterate.
+Reachability gives stable outputs after the budget and bounds every iterate.

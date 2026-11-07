@@ -1,6 +1,6 @@
 # Walking the layers back
 
-**Walking the layers back.** Given the adjacency lists $\mathrm{adj}$ of a bipartite graph, a
+Given the adjacency lists $\mathrm{adj}$ of a bipartite graph, a
 partner assignment $\mathrm{mate}$, a level $k$ and a right vertex $j$, the walk back from $j$ at
 level $k$ is a list of pairs defined by recursion on $k$. At level $0$ it is $[(i, j)]$ for the
 least unmatched left vertex $i$ with $j \in \mathrm{adj}(i)$ and $\mathrm{mate}(j) \ne i$, and

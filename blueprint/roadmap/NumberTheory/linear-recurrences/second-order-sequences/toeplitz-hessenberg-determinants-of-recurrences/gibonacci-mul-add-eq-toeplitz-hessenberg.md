@@ -1,6 +1,6 @@
 # Multiples of a shifted Gibonacci sequence that are Toeplitz–Hessenberg determinants
 
-**Multiples of a shifted Gibonacci sequence that are Toeplitz–Hessenberg determinants.** Let
+Let
 $y$ and $z$ be non-negative integers, not both zero, and let $(G_k)$ be the Gibonacci sequence
 with $G_0 = y$ and $G_1 = z$. For complex numbers $a, b, c, d$ and $n \ge 1$, let
 $u_n(a, b, c, d)$ be the determinant of the $n \times n$ matrix whose entry in row $i$ and column

@@ -1,3 +1,3 @@
 # Reflexivity of the graph minor relation
 
-**Reflexivity of the graph minor relation.** Every finite graph $G$ is a minor of itself.
+Every finite graph $G$ is a minor of itself.

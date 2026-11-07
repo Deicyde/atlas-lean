@@ -1,6 +1,6 @@
 # Coefficients of Zurita's polynomial $T_{n-2}$
 
-**Coefficients of Zurita's polynomial $T_{n-2}$.** For natural numbers $n$ and $k$,
+For natural numbers $n$ and $k$,
 $t_k = u_{n-2-k}$, where $n - 2 - k$ is truncated at $0$ and $u_0, u_1, \dots$ are the reversed
 coefficients of $T_{n-2}$: with $s_j$ the coefficients of $S_n$ and $c_n = s_n/2 - 1$,
 $u_0 = -s_{n-1}/2 - c_n$ and $u_{i+1} = ((m + 1 - n) u_i + s_m/2)/(m - n)$ for

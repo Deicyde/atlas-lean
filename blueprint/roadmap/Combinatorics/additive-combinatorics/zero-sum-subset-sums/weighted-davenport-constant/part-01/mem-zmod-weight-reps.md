@@ -1,6 +1,6 @@
 # Membership in the weight representatives
 
-**Membership in the weight representatives.** Let $A \subseteq \mathbb{Z}/n\mathbb{Z}$.
+Let $A \subseteq \mathbb{Z}/n\mathbb{Z}$.
 A natural number $a$ lies in the set of weight representatives of $A$ if and only if $a < n$ and
 the residue of $a$ modulo $n$ lies in $A$.
 

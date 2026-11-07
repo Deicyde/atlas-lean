@@ -1,6 +1,6 @@
 # Polynomial identity for reciprocal generalized binomial coefficients
 
-**Polynomial identity for reciprocal generalized binomial coefficients.** For every natural
+For every natural
 number $n$ and all complex numbers $u, v, x$ with $\operatorname{Re} u > -1$ and
 $\operatorname{Re} v > -1$,
 

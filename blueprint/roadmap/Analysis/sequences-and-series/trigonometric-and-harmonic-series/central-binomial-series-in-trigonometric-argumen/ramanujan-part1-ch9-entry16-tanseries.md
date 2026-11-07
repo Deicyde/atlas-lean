@@ -1,6 +1,6 @@
 # The central binomial series in $\cos x$ minus that in $\sin x$
 
-**The central binomial series in $\cos x$ minus that in $\sin x$.** Let $x$ be a real number
+Let $x$ be a real number
 with $0 \le x \le \pi/4$, and for real $y$ let
 $S(y) = \sum_{k=0}^{\infty} \binom{2k}{k} \frac{\sin^{2k+1} y}{2^{2k} (2k+1)^2}$. Then
 $2\cos x > 0$, the series

@@ -1,6 +1,6 @@
 # Prymak's bound for Hadwiger's covering problem in dimension 3
 
-**Prymak's bound for Hadwiger's covering problem in dimension 3.** Every convex body
+Every convex body
 $K \subseteq \mathbb{R}^3$ is covered by $14$ translates of its interior $\operatorname{int} K$,
 repetitions allowed.
 

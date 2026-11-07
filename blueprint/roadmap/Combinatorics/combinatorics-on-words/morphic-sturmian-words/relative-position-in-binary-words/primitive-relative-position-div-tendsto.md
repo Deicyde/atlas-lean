@@ -1,6 +1,6 @@
 # Relative position asymptotic to $n$ and the golden ratio
 
-**Relative position asymptotic to $n$ and the golden ratio.** Let $\varrho$ be a substitution
+Let $\varrho$ be a substitution
 on the letters $a, b$ with substitution matrix $M$, where $M_{11} = |\varrho(a)|_a$,
 $M_{12} = |\varrho(b)|_a$, $M_{21} = |\varrho(a)|_b$ and $M_{22} = |\varrho(b)|_b$ ($|v|_x$ is
 the number of letters $x$ in $v$), and suppose $\varrho$ is primitive (some power of $M$ has all

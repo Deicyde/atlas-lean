@@ -1,6 +1,6 @@
 # Gauss summation at Frisch's specialization
 
-**Gauss summation at Frisch's specialization.** Let $n \ge 1$ be an integer and let $b$ and
+Let $n \ge 1$ be an integer and let $b$ and
 $c$ be real numbers with $c > n$ and $b > -1$. Then
 
 $$

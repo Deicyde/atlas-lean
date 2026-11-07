@@ -1,6 +1,6 @@
 # Lee–Huang–Yang lower bound for dilute Bose gases
 
-**Lee–Huang–Yang lower bound for dilute Bose gases.** There are a real number $\eta$ and a
+There are a real number $\eta$ and a
 function $\mathcal{C}$ of two real variables such that the following holds. Let
 $v : \mathbb{R}^3 \to \mathbb{R}$ be a non-negative, radial, integrable potential that is not
 almost everywhere zero, and let $R > 0$ be such that the closed support of $v$ lies in the open

@@ -1,6 +1,6 @@
 # A RAM step is sticky at halting states
 
-**A RAM step is sticky at halting states.** If the program counter of a state $s$ is at
+If the program counter of a state $s$ is at
 least the length of a program $P$, then one step of $P$ leaves $s$ unchanged.
 
 A halt instruction sets the program counter to the length of the program, so once a halt has

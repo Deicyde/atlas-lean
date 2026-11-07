@@ -1,6 +1,6 @@
 # Euclidean chain function when the first argument divides the second
 
-**Euclidean chain function when the first argument divides the second.** For natural numbers
+For natural numbers
 $x, y \ge 1$ with $x \mid y$, the Euclidean chain function $F$ satisfies $F(x, y) = 1 + y / x$.
 
 ## Sources

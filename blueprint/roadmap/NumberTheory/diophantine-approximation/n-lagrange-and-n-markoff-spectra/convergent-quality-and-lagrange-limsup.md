@@ -1,6 +1,6 @@
 # Convergents and the Lagrange approximability
 
-**Convergents and the Lagrange approximability.** Let $\xi$ be an irrational real number,
+Let $\xi$ be an irrational real number,
 with complete quotients $\xi_0 = \xi$ and $\xi_{k+1} = 1/\{\xi_k\}$, where $\{x\}$ is the
 fractional part of $x$, and digits $a_k = \lfloor \xi_k \rfloor$, so that
 $\xi = [a_0; a_1, a_2, \dots]$. For $k \ge 1$ let

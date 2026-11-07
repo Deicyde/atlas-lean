@@ -1,6 +1,6 @@
 # Weighted summation of Dirichlet convolutions
 
-**Weighted summation of Dirichlet convolutions.** Let $u$ and $v$ be completely
+Let $u$ and $v$ be completely
 multiplicative arithmetic functions with complex values, let $w$ be any arithmetic function with
 complex values, let $*$ denote Dirichlet convolution, let $\mu$ be the Möbius function, put
 $g = w * \mu$, and for real $y$ put $D(y) = \sum_{1 \le j \le y} (u * v)(j)$. Then for every

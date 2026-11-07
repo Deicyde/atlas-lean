@@ -1,3 +1,3 @@
 # One Wright–Fisher generation acting on monomials
 
-**One Wright–Fisher generation acting on monomials.** One generation maps `x ^ n` to `∑_k wfLineageProb M n k x ^ k`.
+One generation maps `x ^ n` to `∑_k wfLineageProb M n k x ^ k`.

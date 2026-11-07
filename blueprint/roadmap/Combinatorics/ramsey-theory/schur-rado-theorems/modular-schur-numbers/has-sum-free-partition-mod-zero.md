@@ -1,6 +1,6 @@
 # The empty range has a sum-free partition
 
-**The empty range has a sum-free partition.** For all natural numbers $m$, $l$ and
+For all natural numbers $m$, $l$ and
 $k \ge 1$, the empty range $\{1, \dots, 0\}$ admits a partition into $k$ classes that are
 $l$-sum-free modulo $m$.
 

@@ -1,6 +1,6 @@
 # Satisfaction depends only on the environment below the closure depth
 
-**Satisfaction depends only on the environment below the closure depth.** Let $M$ be a
+Let $M$ be a
 Kripke model, $\varphi$ a μ-calculus formula and $d$ a natural number such that $\varphi$ is
 closed at depth $d$: every occurrence of a variable with de Bruijn index $n$ lying under $k$
 fixpoint binders of $\varphi$ satisfies $n < d + k$. If two environments $\mathit{env}$ and

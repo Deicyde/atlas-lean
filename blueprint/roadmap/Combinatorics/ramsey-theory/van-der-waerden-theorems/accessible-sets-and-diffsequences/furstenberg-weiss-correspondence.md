@@ -1,6 +1,6 @@
 # Furstenberg–Weiss correspondence for translation-invariant families
 
-**Furstenberg–Weiss correspondence for translation-invariant families.** Let $\mathcal{A}$ be
+Let $\mathcal{A}$ be
 a collection of finite sets of integers that is closed under translation, that is,
 $A + t \in \mathcal{A}$ for all $A \in \mathcal{A}$ and $t \in \mathbb{Z}$, and let $r \ge 1$.
 For a homeomorphism $T$ and an integer $a$, write $T^{-a}(U)$ for the preimage of $U$ under the

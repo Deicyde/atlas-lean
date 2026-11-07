@@ -1,6 +1,6 @@
 # Recurrence for $r$-cycle Stirling Eulerian numbers
 
-**Recurrence for $r$-cycle Stirling Eulerian numbers.** An excedance of a permutation
+An excedance of a permutation
 $\sigma$ of $\{0, \dots, N-1\}$ is an index $i$ with $\sigma(i) > i$. Let $A^{(r)}_{N,M}$ be the
 number of permutations of $\{0, \dots, N-1\}$ with exactly $M$ excedances all of whose cycles,
 fixed points included, have exactly $r$ elements, and let $C_{r,k}$ be the number of permutations

@@ -1,6 +1,6 @@
 # Mazur's Problem 55 has a negative answer
 
-**Mazur's Problem 55 has a negative answer.** The factorisation claim of Scottish Book
+The factorisation claim of Scottish Book
 Problem 55 is false: there are a real Banach space $E$, an unbounded set $R \subseteq E$ and a
 continuous bilinear form $B : E \times E \to \mathbb{R}$ such that for some $\varepsilon > 0$
 the quadratic form $W(x) = B(x, x)$ is bounded on the set of points at distance less than

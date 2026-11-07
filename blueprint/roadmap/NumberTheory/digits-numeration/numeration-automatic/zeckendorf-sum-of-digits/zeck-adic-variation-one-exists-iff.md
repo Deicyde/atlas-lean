@@ -1,6 +1,6 @@
 # When the variation $\Delta^{(1)}$ exists
 
-**When the variation $\Delta^{(1)}$ exists.** Let $x$ be a Zeckendorf-adic integer with digits
+Let $x$ be a Zeckendorf-adic integer with digits
 $x_k$, and let $\Delta_k^{(1)}(x)$ be its truncated variation of order $k$ for $r = 1$. The
 integer sequence $(\Delta_k^{(1)}(x))_k$ is eventually constant (equivalently, the variation
 $\Delta^{(1)}(x) = \lim_{k \to \infty} \Delta_k^{(1)}(x)$ exists) if and only if there is

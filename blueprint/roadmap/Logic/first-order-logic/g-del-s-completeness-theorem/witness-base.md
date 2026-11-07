@@ -1,6 +1,6 @@
 # Witness bases
 
-**Witness bases.** Let $L$ be a first-order language with countably many symbols, let
+Let $L$ be a first-order language with countably many symbols, let
 $\varphi_0, \varphi_1, \dots$ be the fixed surjective enumeration of the $L$-formulas with free
 variables in $\mathbb{N}$ and one variable reserved for a quantifier, and let $b(\varphi)$ be one
 more than the largest free variable of $\varphi$, or $1$ if it has none. The witness bases are

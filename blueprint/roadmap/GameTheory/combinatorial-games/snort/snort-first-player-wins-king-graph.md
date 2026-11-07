@@ -1,6 +1,6 @@
 # First player wins Peaceable Kings
 
-**First player wins Peaceable Kings.** For all natural numbers $n \ge 1$ and $m \ge 1$, the
+For all natural numbers $n \ge 1$ and $m \ge 1$, the
 first player wins Snort on the king's graph of the $n \times m$ board (the Peaceable Kings game).
 
 ## Sources

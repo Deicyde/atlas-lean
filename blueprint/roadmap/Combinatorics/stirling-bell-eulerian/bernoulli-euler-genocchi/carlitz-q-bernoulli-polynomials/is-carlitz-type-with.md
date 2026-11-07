@@ -1,6 +1,6 @@
 # Carlitz-type sequences
 
-**Carlitz-type sequences.** For real $q$, a sequence of functions
+For real $q$, a sequence of functions
 $T_n : \mathbb{R} \to \mathbb{R}$, $n \ge 0$, is Carlitz-type with associated real sequence
 $(a_k)_{k \ge 0}$ if for every natural number $n$ and every real $x$,
 $T_n(x) = (q - 1)^{-n} \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} a_k q^{kx}$.

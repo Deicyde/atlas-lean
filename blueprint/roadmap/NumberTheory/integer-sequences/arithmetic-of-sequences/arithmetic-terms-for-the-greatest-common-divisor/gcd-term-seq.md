@@ -1,6 +1,6 @@
 # The gcd-term sequence
 
-**The gcd-term sequence.** For natural numbers $a$, $b$ and $n$, $s_{a,b}(n)$ is the rational
+For natural numbers $a$, $b$ and $n$, $s_{a,b}(n)$ is the rational
 number that is the coefficient of $z^n$ in the inverse of the formal power series
 $(z^a - 1)(z^b - 1)$ over $\mathbb{Q}$. For $a, b \ge 1$ this series has constant coefficient $1$,
 so $s_{a,b}$ is the coefficient sequence of $f_{a,b}(z) = 1 / ((z^a - 1)(z^b - 1))$. If $a = 0$

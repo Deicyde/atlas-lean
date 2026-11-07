@@ -1,6 +1,6 @@
 # Bernoulli numbers of the second kind via Stirling numbers of the first kind
 
-**Bernoulli numbers of the second kind via Stirling numbers of the first kind.** Let $B_m^*$
+Let $B_m^*$
 be the Bernoulli numbers of the second kind and $s(m, j)$ the signed Stirling numbers of the
 first kind. For every natural number $n$,
 

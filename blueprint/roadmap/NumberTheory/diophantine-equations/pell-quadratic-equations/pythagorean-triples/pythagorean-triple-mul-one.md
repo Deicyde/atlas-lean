@@ -1,6 +1,6 @@
 # Right identity for Amato's product
 
-**Right identity for Amato's product.** For every commutative ring $R$ and every triple
+For every commutative ring $R$ and every triple
 $u \in R^3$, we have $u \star (1, 0, 1) = u$, where $\star$ is Amato's product of triples.
 
 ## Sources

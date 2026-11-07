@@ -1,6 +1,6 @@
 # Martinet's totally real towers
 
-**Martinet's totally real towers.** There is a real constant $C > 0$ such that for every
+There is a real constant $C > 0$ such that for every
 $N \in \mathbb{N}$ there exist a natural number $d \ge N$ and a totally real number field $K$ of
 degree $[K : \mathbb{Q}] = d$ whose discriminant $\Delta_K$ satisfies $|\Delta_K| \le C^d$.
 

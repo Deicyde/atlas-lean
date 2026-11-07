@@ -1,6 +1,6 @@
 # Congruences for overcubic partition triples at multiples of 16
 
-**Congruences for overcubic partition triples at multiples of 16.** Let $\mathrm{bt}(n)$ be the
+Let $\mathrm{bt}(n)$ be the
 number of overcubic partition triples of $n$. For all natural numbers $n$ and $\alpha$, each of
 $\mathrm{bt}(64n+48)$, $\mathrm{bt}(128n+80)$, $\mathrm{bt}(128n+96)$, $\mathrm{bt}(256n+160)$ and
 $\mathrm{bt}(256 \cdot 2^{\alpha} n + 192)$ is divisible by $4$, and

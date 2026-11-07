@@ -1,6 +1,6 @@
 # Trinomial coefficients from an algebraic Riordan array
 
-**Trinomial coefficients from an algebraic Riordan array.** Write $\binom{n}{k}_2$ for the
+Write $\binom{n}{k}_2$ for the
 trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$, and $[t^m]\,F$ for the
 coefficient of $t^m$ in a formal power series $F$ over $\mathbb{Q}$. Let $S$ and $Q$ be power
 series over $\mathbb{Q}$ with $S^2 = 4 - 3t^2$, $S(0) = 2$, $2Q^2 = 2 - t^2 - tS$ and $Q(0) = 1$,

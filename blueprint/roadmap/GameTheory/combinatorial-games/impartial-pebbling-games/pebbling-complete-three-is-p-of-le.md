@@ -1,6 +1,6 @@
 # Pebbling on the triangle: total 6k-2ℓ with no pile above half is a P-position
 
-**Pebbling on the triangle: total 6k-2ℓ with no pile above half is a P-position.** Let $k$ be
+Let $k$ be
 a positive integer and consider the $(k+1:k)$-pebbling game on the complete graph $K_3$, where a
 move removes $k+1$ pebbles from one vertex and adds $k$ pebbles to another. Let $\ell$ be a
 natural number with $\ell \le 2k - 1$. Every position with $6k - 2\ell$ pebbles in total in which

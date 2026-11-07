@@ -1,6 +1,6 @@
 # $9$ is a Lucas pseudoprime for $(P, Q) = (1, 5)$
 
-**$9$ is a Lucas pseudoprime for $(P, Q) = (1, 5)$.** The number $9$ is a Lucas pseudoprime
+The number $9$ is a Lucas pseudoprime
 with parameters $P = 1$ and $Q = 5$.
 
 Here the discriminant is $D = P^2 - 4Q = -19$, the Jacobi symbol $(D/9)$ is $1$, and $9$

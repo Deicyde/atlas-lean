@@ -1,6 +1,6 @@
 # The weak ascent sequence $00203413$
 
-**The weak ascent sequence $00203413$.** The word $00203413$ has five weak ascents and is a
+The word $00203413$ has five weak ascents and is a
 weak ascent sequence.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Labels of the PATH marking machine
 
-**Labels of the PATH marking machine.** For an instance with source $s$, target $t$, $n$
+For an instance with source $s$, target $t$, $n$
 vertices and arcs $(u, v)$, the labels of the PATH marking machine are $\mathsf{rdS}$,
 $\mathsf{rdT}$ and $\mathsf{rdN}$ (read $s$, $t$ and $n$); $\mathsf{val0}$, $\mathsf{valU}$ and
 $\mathsf{valV}$ (validate the edge list: at a pair, inside $u$, inside $v$); $\mathsf{goS}$ and

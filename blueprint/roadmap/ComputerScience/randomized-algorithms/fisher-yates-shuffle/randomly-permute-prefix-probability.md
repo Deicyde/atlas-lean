@@ -1,6 +1,6 @@
 # Prefix probabilities of the Fisher–Yates shuffle
 
-**Prefix probabilities of the Fisher–Yates shuffle.** Let $k \le n$ and let
+Let $k \le n$ and let
 $a_0, \dots, a_{k-1}$ be distinct elements of $\{0, \dots, n - 1\}$. Run the Fisher–Yates
 computation on the vector $(0, 1, \dots, n - 1)$ with every draw history $d$, which assigns to each
 position $i < n$ a number $d_i$ with $0 \le d_i < n - i$, and give each history weight $1/n!$.

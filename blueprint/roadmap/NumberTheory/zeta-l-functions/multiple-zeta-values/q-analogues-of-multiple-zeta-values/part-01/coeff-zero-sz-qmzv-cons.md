@@ -1,6 +1,6 @@
 # Nonempty Schlesinger–Zudilin qMZVs have no constant term
 
-**Nonempty Schlesinger–Zudilin qMZVs have no constant term.** For every nonempty index
+For every nonempty index
 $(k_1, \dots, k_r)$ of natural numbers, the constant term of the Schlesinger–Zudilin qMZV
 $\zeta_q^{\mathrm{SZ}}(k_1, \dots, k_r)$ is $0$.
 

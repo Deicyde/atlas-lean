@@ -1,6 +1,6 @@
 # Generating function of the total subword count in non-decreasing Dyck paths
 
-**Generating function of the total subword count in non-decreasing Dyck paths.** For a word
+For a word
 $w$ in the steps $U$ and $D$, let $d_w(n)$ be the total number of occurrences of $w$ as a
 contiguous subword (overlapping occurrences counted separately) over all non-decreasing Dyck
 paths of semilength $n$. The univariate generating function of $w$ is the integer power series

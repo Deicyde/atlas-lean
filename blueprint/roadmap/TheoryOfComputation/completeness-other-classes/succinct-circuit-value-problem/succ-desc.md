@@ -1,6 +1,6 @@
 # Gate description in a succinct circuit (Succinct Circuit Value)
 
-**Gate description in a succinct circuit (Succinct Circuit Value).** Let $C$ be a list of
+Let $C$ be a list of
 encoded gates and let $n, i \in \mathbb{N}$. Decode each gate of $C$ into a gate of a flat
 Boolean circuit on $n$ inputs and evaluate it with input $j < n$ set to bit $j$ of $i$, least
 significant bit first, that is, true exactly when $\lfloor i / 2^j \rfloor$ is odd. The

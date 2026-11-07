@@ -1,6 +1,6 @@
 # Almost all $3 \cdot 2^\alpha$-regular overpartition counts are divisible by $2^j$
 
-**Almost all $3 \cdot 2^\alpha$-regular overpartition counts are divisible by $2^j$.** Write
+Write
 $A_\ell(m)$ for the number of overpartitions of $m$ none of whose parts is divisible by $\ell$.
 Let $\alpha \ge 1$ and $j \ge \alpha + 1$ be natural numbers. Then the number of natural numbers
 $n$ with $0 \le n \le X$ and $2^j \mid A_{3 \cdot 2^\alpha}(n)$, divided by $X$, tends to $1$ as

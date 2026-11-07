@@ -1,6 +1,6 @@
 # Toeplitz–Hessenberg determinants of ternary Fuss–Catalan numbers
 
-**Toeplitz–Hessenberg determinants of ternary Fuss–Catalan numbers.** Write
+Write
 $\det(a_0; a_1, \dots, a_n)$ for the determinant of the $n \times n$ Toeplitz–Hessenberg matrix
 whose entry in row $i$ and column $j$ is $a_{i+1-j}$ for $j \le i + 1$ and $0$ above the
 superdiagonal, and let $H_n = \frac{1}{3n + 1} \binom{3n + 1}{n}$ and

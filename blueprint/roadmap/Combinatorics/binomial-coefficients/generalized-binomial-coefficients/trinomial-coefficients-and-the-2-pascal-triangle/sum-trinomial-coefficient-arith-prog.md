@@ -1,6 +1,6 @@
 # Roots-of-unity filter for trinomial coefficients
 
-**Roots-of-unity filter for trinomial coefficients.** Write $\binom{n}{k}_2$ for the trinomial
+Write $\binom{n}{k}_2$ for the trinomial
 coefficient, the coefficient of $t^k$ in $(1 + t + t^2)^n$. Let $n$, $x$, $b$ be natural
 numbers with $x < b$, let $z \ne 0$ be a complex number, and let $w = e^{2\pi i/b}$. Then
 

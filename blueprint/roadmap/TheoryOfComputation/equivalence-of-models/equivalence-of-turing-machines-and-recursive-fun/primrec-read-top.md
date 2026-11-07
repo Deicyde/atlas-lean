@@ -1,6 +1,6 @@
 # Updating the state from the top of a coded stack is primitive recursive
 
-**Updating the state from the top of a coded stack is primitive recursive.** Let $k$ be a
+Let $k$ be a
 stack index of a finite multi-stack machine, write $\Gamma_k$ for the alphabet of stack $k$, and
 let $f$ be any function sending an internal state and an optional symbol of $\Gamma_k$ to an
 internal state. Then the map sending an internal state $v$ and coded stacks $S$ (a list $S_j$ of

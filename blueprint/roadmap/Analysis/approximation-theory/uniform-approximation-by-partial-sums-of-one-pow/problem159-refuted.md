@@ -1,6 +1,6 @@
 # Scottish Book Problem 159 has a negative answer
 
-**Scottish Book Problem 159 has a negative answer.** There is no sequence of real numbers
+There is no sequence of real numbers
 $a_0, a_1, a_2, \dots$ with the following property: for every $\varepsilon > 0$ there is a natural
 number $N$ such that for every function $f : \mathbb{R} \to \mathbb{R}$ that is continuous on
 $[0, 1]$ and satisfies $f(0) = 0$ and $0 \le f(x) \le 1$ for all $x \in [0, 1]$, there is a natural

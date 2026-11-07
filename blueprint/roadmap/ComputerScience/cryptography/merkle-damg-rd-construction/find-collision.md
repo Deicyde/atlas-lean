@@ -1,6 +1,6 @@
 # Extracting a compression collision from a Merkle–Damgård collision
 
-**Extracting a compression collision from a Merkle–Damgård collision.** Let
+Let
 $h : S \times B \to S$ be a compression function, $iv \in S$ an initial value and
 $\ell : \mathbb{N} \to B$ a length encoding. Let $M = (x_1, \dots, x_L)$ and
 $M' = (x'_1, \dots, x'_{L'})$ be lists of blocks with chaining values $z_0 = z'_0 = iv$,

@@ -1,6 +1,6 @@
 # Erdős Problem 539: square-root lower bound for the cofactor threshold
 
-**Erdős Problem 539: square-root lower bound for the cofactor threshold.** For a natural number
+For a natural number
 $n$, let $h(n)$ be the largest natural number $m$ such that for every set $A$ of exactly $n$
 positive integers, the set $\{a/\gcd(a,b) : a, b \in A\}$ has at least $m$ elements. Then
 $\sqrt{n} = O(h(n))$ as $n \to \infty$: there are a real constant $C$ and an $n_0$ such that

@@ -1,6 +1,6 @@
 # Transition productions of the triple grammar
 
-**Transition productions of the triple grammar.** Let $M$ be a pushdown automaton with a
+Let $M$ be a pushdown automaton with a
 finite set of states and a finite stack alphabet, and let $T_0$ be a finite set of input
 letters. Let $a$ be either $\varepsilon$ or a letter in $T_0$, and suppose that $M$ has a
 transition from state $p$ on $a$ popping the stack symbol $\gamma$ that moves to state $r$ and

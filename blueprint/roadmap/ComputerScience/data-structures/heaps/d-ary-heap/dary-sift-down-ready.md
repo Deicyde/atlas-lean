@@ -1,6 +1,6 @@
 # Readiness for $d$-ary sift-down
 
-**Readiness for $d$-ary sift-down.** Let $a$ be an array over a type with a relation $\le$,
+Let $a$ be an array over a type with a relation $\le$,
 and let $d$ and $i$ be natural numbers. Write $|a|$ for the size of $a$ and $p(j)$ for the
 $d$-ary parent of an index $j$. The array $a$ is ready for $d$-ary sifting down at $i$ when
 $d \ge 2$, $i < |a|$, every index $j$ with $0 < j < |a|$ and $p(j) \ne i$ satisfies

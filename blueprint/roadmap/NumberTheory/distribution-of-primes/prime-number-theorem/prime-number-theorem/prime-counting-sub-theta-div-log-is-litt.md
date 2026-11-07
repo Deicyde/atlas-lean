@@ -1,6 +1,6 @@
 # Prime counting versus theta over log
 
-**Prime counting versus theta over log.** Let $\pi(x)$ be the number of primes $p \le x$ and
+Let $\pi(x)$ be the number of primes $p \le x$ and
 let $\theta(x) = \sum_{p \le x} \log p$, the sum running over primes. As the real number $x$ tends
 to $+\infty$,
 

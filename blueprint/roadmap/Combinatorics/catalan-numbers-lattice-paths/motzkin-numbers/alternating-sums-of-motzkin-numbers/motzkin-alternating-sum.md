@@ -1,6 +1,6 @@
 # Alternating sums of Motzkin numbers
 
-**Alternating sums of Motzkin numbers.** Let $M_k$ denote the $k$-th Motzkin number. For a
+Let $M_k$ denote the $k$-th Motzkin number. For a
 natural number $n$, the $n$-th alternating Motzkin sum is the integer
 
 $$T_n = \sum_{k=0}^{n} (-1)^{n-k} M_k.$$

@@ -1,6 +1,6 @@
 # Convolution of four consecutive Fibonacci step sequences
 
-**Convolution of four consecutive Fibonacci step sequences.** Write $F^{(s)}_k$ for the
+Write $F^{(s)}_k$ for the
 Fibonacci $s$-step numbers, and write $\sum_{K(4,N)}$ for a sum over all
 $(k_1, k_2, k_3, k_4) \in \mathbb{N}^4$ with $k_1 + k_2 + k_3 + k_4 = N$. For all natural numbers
 $m \ge 1$ and $n \ge 2m + 2$,

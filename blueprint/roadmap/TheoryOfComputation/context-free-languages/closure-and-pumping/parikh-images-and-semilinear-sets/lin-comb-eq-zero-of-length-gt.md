@@ -1,6 +1,6 @@
 # Linear combination with too many coefficients is zero
 
-**Linear combination with too many coefficients is zero.** Mismatched lengths are rejected: a longer coefficient list
+Mismatched lengths are rejected: a longer coefficient list
 does not silently drop coefficients.
 
 ## Sources

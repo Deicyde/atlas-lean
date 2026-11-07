@@ -1,6 +1,6 @@
 # Palindromes in residue classes modulo a divisor of the base minus one
 
-**Palindromes in residue classes modulo a divisor of the base minus one.** Let $b \ge 2$,
+Let $b \ge 2$,
 $m \ge 1$ and $q \ge 1$ be natural numbers with $b \equiv 1 \pmod q$, and let $r$ be a natural
 number with $r < q$. Write $m = (a_k a_{k-1} \cdots a_0)_b$ in base $b$. Write $A_b(m, q, r)$ for
 the number of base-$b$ palindromes $n$ with $1 \le n \le m$ and $n \equiv r \pmod q$, $C_b(m)$

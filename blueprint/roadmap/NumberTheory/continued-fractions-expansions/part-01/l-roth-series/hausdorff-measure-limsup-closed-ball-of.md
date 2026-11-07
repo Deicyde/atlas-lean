@@ -1,6 +1,6 @@
 # Mass transference principle for intervals
 
-**Mass transference principle for intervals.** Let $(c_n)$ and $(r_n)$ be real sequences with
+Let $(c_n)$ and $(r_n)$ be real sequences with
 $r_n \ge 0$ for every $n$ and $r_n \to 0$, and let $I_n = [c_n - r_n, c_n + r_n]$. Assume that
 $I_n \subseteq [0, 1]$ for every $n$, let $0 < s < 1$, and let $I_n^s = [c_n - r_n^s, c_n + r_n^s]$.
 If $[0, 1] \cap \limsup_{n \to \infty} I_n^s$ has Lebesgue measure $1$, then the $s$-dimensional

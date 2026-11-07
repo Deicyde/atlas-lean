@@ -1,6 +1,6 @@
 # Multiplying a member of $S(U)$ by a number with no new prime factors
 
-**Multiplying a member of $S(U)$ by a number with no new prime factors.** Let $P, Q$ be
+Let $P, Q$ be
 integers with $Q \ne 0$, let $U = U(P, Q)$ be their Lucas sequence, write $a = P$ and $b = -Q$, and
 let $S(U)$ be the set of positive integers $n$ coprime to $Q$ whose period $\pi_U(n)$ modulo $n$
 divides $n$. Let $m > 0$ and $n \in S(U)$ be such that every prime divisor of $m$ divides $n$.

@@ -1,6 +1,6 @@
 # The alternating Fibonacci sums are eventually tempered
 
-**The alternating Fibonacci sums are eventually tempered.** Let $F_k$ denote the $k$-th
+Let $F_k$ denote the $k$-th
 Fibonacci number, with $F_0 = 0$ and $F_1 = 1$, and let $W_n = \sum_{k=0}^{n} (-1)^{n-k} F_k$.
 For every natural number $n \ge 12$,
 

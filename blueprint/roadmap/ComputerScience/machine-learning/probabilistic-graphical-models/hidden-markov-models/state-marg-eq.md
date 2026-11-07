@@ -1,6 +1,6 @@
 # Forward-backward identity
 
-**Forward-backward identity.** For a hidden Markov model with a finite set of states $S$ and
+For a hidden Markov model with a finite set of states $S$ and
 weights in a semiring, observations $x_0, x_1, \dots$, times $t, k \in \mathbb{N}$ and a state
 $s \in S$, the joint weight of the observations $x_0, \dots, x_{t+k}$ and the state $s$ at time
 $t$ equals $\alpha_t(s)\,\beta_{k,t}(s)$, the forward variable $\alpha_t(s)$ (the weight of

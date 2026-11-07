@@ -1,6 +1,6 @@
 # The 3SAT filter walks a list of clauses within the cap
 
-**The 3SAT filter walks a list of clauses within the cap.** For a clause $C$ let
+For a clause $C$ let
 $\overline{C}$ be its tokens as they lie on the token stack (the clause marker on top, then the
 literals' tokens, last literal first). Let $C_1, \dots, C_k$ be clauses such that, for each $i$,
 the cap flag is off or $C_i$ has at most three literals. Let $X$ be the concatenation

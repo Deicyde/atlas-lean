@@ -1,6 +1,6 @@
 # Sum of an eventually periodic sequence
 
-**Sum of an eventually periodic sequence.** Let $K$ be a field of characteristic zero, let
+Let $K$ be a field of characteristic zero, let
 $f : \mathbb{N} \to K$, and let $L \ge 1$ and $D \ge 1$ be natural numbers such that
 $f(i + L) = f(i)$ for all $i \ge D$. Let $\bar f = \frac{1}{L} \sum_{k=D}^{D+L-1} f(k)$ be the
 average over one period. Then for every natural number $N \ge D - 1$,

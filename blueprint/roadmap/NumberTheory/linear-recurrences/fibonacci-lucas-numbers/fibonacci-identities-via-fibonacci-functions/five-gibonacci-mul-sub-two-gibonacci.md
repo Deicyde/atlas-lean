@@ -1,6 +1,6 @@
 # An identity for products of two gibonacci sequences
 
-**An identity for products of two gibonacci sequences.** Let
+Let
 $G, H : \mathbb{Z} \to \mathbb{R}$ satisfy $G_{j+2} = G_{j+1} + G_j$ and
 $H_{j+2} = H_{j+1} + H_j$ for every integer $j$. Then for all integers $k$, $r$ and $s$,
 

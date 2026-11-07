@@ -1,6 +1,6 @@
 # Misère P-positions of rotation Nim on a cube
 
-**Misère P-positions of rotation Nim on a cube.** Write positions of the game $C_R$ as tuples
+Write positions of the game $C_R$ as tuples
 $p = (a, b, c, A, B, C)$ of numbers of tokens on the faces $f_a, f_b, f_c, f_A, f_B, f_C$, where
 $f_A$, $f_B$, $f_C$ are opposite $f_a$, $f_b$, $f_c$. Let $\mathcal P$ be any set of positions
 such that a position lies in $\mathcal P$ if and only if it has a rotation move and every

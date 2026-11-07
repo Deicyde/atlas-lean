@@ -1,6 +1,6 @@
 # P&R Helper positions of Sprague–Grundy value 3 on region U
 
-**P&R Helper positions of Sprague–Grundy value 3 on region U.** For natural numbers
+For natural numbers
 $x \le y \le z$ with $z < x + y$ and $y \le 2x + 1$ (the region $U$), write $s = y + z - x$. The
 P&R Helper game started at $[x, y, z]$ is equivalent to the Nim heap of size $3$ (that is, has
 Sprague–Grundy value $3$) if and only if one of the following holds:

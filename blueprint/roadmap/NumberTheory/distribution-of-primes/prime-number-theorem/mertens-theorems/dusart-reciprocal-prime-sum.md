@@ -1,6 +1,6 @@
 # Dusart's explicit Mertens second theorem
 
-**Dusart's explicit Mertens second theorem.** Let $p$ range over the primes, let $\log$ be
+Let $p$ range over the primes, let $\log$ be
 the natural logarithm, and let
 $B = \lim_{n \to \infty} \bigl(\sum_{p \le n} \frac{1}{p} - \log \log n\bigr)$ be the
 Meissel–Mertens constant. For every real number $x \ge 2278383$ there is a real number $E$ with

@@ -1,6 +1,6 @@
 # The partition into singletons has genus zero
 
-**The partition into singletons has genus zero.** For every natural number $n$, the genus of
+For every natural number $n$, the genus of
 the identity permutation of $\{0, \dots, n-1\}$ is $0$; the identity encodes the partition of
 $\{0, \dots, n-1\}$ into singletons.
 

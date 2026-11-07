@@ -1,6 +1,6 @@
 # Odd-power sums with odd-index Lucas polynomial denominators
 
-**Odd-power sums with odd-index Lucas polynomial denominators.** Let $f_n$ and $\ell_n$
+Let $f_n$ and $\ell_n$
 denote the Fibonacci and Lucas polynomials, given by $f_0 = 0$, $f_1 = 1$, $\ell_0 = 2$,
 $\ell_1 = x$ and $g_{n+2} = x g_{n+1} + g_n$ for $g \in \{f, \ell\}$, evaluated at a real number
 $x > 0$, let $k$ be a positive integer and $m$ a natural number, and put $M = (k + 1)/2$ if $k$ is

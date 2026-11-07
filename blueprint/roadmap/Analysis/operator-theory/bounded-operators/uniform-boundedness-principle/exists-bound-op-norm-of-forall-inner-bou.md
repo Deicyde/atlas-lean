@@ -1,6 +1,6 @@
 # Weakly bounded sets of operators are bounded
 
-**Weakly bounded sets of operators are bounded.** Let $\mathbb{K}$ be $\mathbb{R}$ or
+Let $\mathbb{K}$ be $\mathbb{R}$ or
 $\mathbb{C}$, let $H$ and $K$ be Hilbert spaces over $\mathbb{K}$, and let $Q$ be a set of
 bounded linear operators from $H$ to $K$. Suppose $Q$ is weakly bounded: for every $f \in H$
 and $g \in K$ there is a real number $\alpha$ such that $|\langle A f, g \rangle| \le \alpha$

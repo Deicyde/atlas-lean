@@ -1,6 +1,6 @@
 # Three consecutive triangular numbers
 
-**Three consecutive triangular numbers.** For a natural number $n$, the triangular triple of
+For a natural number $n$, the triangular triple of
 $n$ is $(t_n, t_{n+1}, t_{n+2})$, where $t_m = m(m+1)/2$ is the $m$-th triangular number.
 
 ## Sources

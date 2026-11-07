@@ -1,6 +1,6 @@
 # Central binomial transform of a polynomial identity with exponents $k$
 
-**Central binomial transform of a polynomial identity with exponents $k$.** Let
+Let
 $s, n, m, r$ be natural numbers and $f, g : \mathbb{N} \to \mathbb{C}$ such that
 $\sum_{k=s}^{n} f(k) (1+t)^{k} = \sum_{k=m}^{r} g(k) t^{k}$ for every complex $t$. Then for
 every real $v > -1$,

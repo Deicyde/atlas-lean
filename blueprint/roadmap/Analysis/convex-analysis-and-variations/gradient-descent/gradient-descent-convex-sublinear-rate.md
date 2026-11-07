@@ -1,6 +1,6 @@
 # Sublinear rate of gradient descent for smooth convex functions
 
-**Sublinear rate of gradient descent for smooth convex functions.** Let $E$ be a
+Let $E$ be a
 finite-dimensional real inner product space, let $L > 0$, and let $f : E \to \mathbb{R}$ be
 convex and differentiable with $L$-Lipschitz gradient $\nabla f$. Let $x^\star \in E$ be a global
 minimizer of $f$, let $0 < \eta \le 1/L$, and let $(x_k)_{k \ge 0}$ be any sequence in $E$ with

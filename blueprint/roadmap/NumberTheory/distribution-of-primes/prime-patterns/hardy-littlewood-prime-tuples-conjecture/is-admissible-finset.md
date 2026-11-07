@@ -1,6 +1,6 @@
 # Admissible finite sets of integers
 
-**Admissible finite sets of integers.** A finite set $H$ of integers is admissible if
+A finite set $H$ of integers is admissible if
 for every prime $p$ there is a residue class $r$ modulo $p$ that contains no element of $H$.
 
 A tuple of integers is called Hardy–Littlewood admissible when, for every prime $p$, its entries

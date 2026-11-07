@@ -1,6 +1,6 @@
 # The first two mutations in the tree of the vertex $(0:0:1)$
 
-**The first two mutations in the tree of the vertex $(0:0:1)$.** Number the positions
+Number the positions
 $0, 1, 2$ and write a state as $(x \mid y)$, with classical part $x \in \mathbb{Q}^3$ and shadow
 part $y \in \mathbb{Q}^3$. The initial triple $(1, 1, 1 + \varepsilon)$, where
 $\varepsilon^2 = 0$, has shadow part $(0, 0, 1)$ (the paper's vertex $(0:0:1)$) and is the state

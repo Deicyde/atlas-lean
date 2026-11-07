@@ -1,6 +1,6 @@
 # Kourovka Problem 11.21 (Vasil'yev's question on formations of $p$-groups)
 
-**Kourovka Problem 11.21 (Vasil'yev's question on formations of $p$-groups).** The proposition
+The proposition
 that for every prime $p$ and every formation $\mathfrak F$ all of whose members are $p$-groups (a
 subformation of the formation $\mathfrak N_p$ of all finite $p$-groups), there is a set $W$ of laws,
 words in the free group on countably many generators, such that a finite $p$-group lies in

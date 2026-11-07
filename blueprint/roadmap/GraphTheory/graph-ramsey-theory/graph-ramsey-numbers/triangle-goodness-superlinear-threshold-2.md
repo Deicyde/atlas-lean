@@ -1,6 +1,6 @@
 # No superlinear threshold for triangle-good graphs (Erdős Problem 1182)
 
-**No superlinear threshold for triangle-good graphs (Erdős Problem 1182).** It is not true
+It is not true
 that for every real number $C$, for all sufficiently large natural numbers $n$, every connected
 graph $G$ on the vertex set $\{0, \dots, n - 1\}$ with at most $Cn$ edges has
 $R(K_3, G) = 2n - 1$. Equivalently, there is a real number $C$ such that for infinitely many $n$

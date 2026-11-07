@@ -1,6 +1,6 @@
 # Peaks in the non-decreasing Dyck paths of semilength three
 
-**Peaks in the non-decreasing Dyck paths of semilength three.** Let $d_w(n)$ be the total
+Let $d_w(n)$ be the total
 number of occurrences of the subword $w$ over all non-decreasing Dyck paths of semilength $n$.
 Then $d_{UD}(3) = 10$; that is, the non-decreasing Dyck paths of semilength $3$ have $10$ peaks
 $UD$ in total.

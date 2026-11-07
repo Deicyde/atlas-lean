@@ -1,6 +1,6 @@
 # Multivariable circuit array
 
-**Multivariable circuit array.** Reduce the all-one triangular grid row by row as in Section 2,
+Reduce the all-one triangular grid row by row as in Section 2,
 and after the $m$-th reduction, for every $m \ge 1$, set every boundary edge (the left edges on the
 first diagonal and the right edges on the last diagonal) to the variable $X_m$ of the field of
 rational functions over $\mathbb{Q}$ in $X_0, X_1, \dots$. The multivariable circuit array

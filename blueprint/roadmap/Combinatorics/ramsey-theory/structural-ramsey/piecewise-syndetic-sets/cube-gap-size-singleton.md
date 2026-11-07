@@ -1,6 +1,6 @@
 # Gap size of a singleton
 
-**Gap size of a singleton.** For every point $x \in \mathbb{N}^t$, the one-point set
+For every point $x \in \mathbb{N}^t$, the one-point set
 $\lbrace x \rbrace$ has gap size $\operatorname{gs}(\lbrace x \rbrace) = 1$.
 
 ## Sources

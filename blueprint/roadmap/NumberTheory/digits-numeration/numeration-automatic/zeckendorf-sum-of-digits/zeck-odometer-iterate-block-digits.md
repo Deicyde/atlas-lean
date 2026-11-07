@@ -1,6 +1,6 @@
 # Adding $r$ across a window of four zero digits
 
-**Adding $r$ across a window of four zero digits.** Write $F_j$ for the Fibonacci numbers
+Write $F_j$ for the Fibonacci numbers
 ($F_1 = F_2 = 1$). For $r \in \mathbb{N}$ let $Z(r)$ be the set of indices in the Zeckendorf
 representation $r = \sum_{j \in Z(r)} F_j$ (all indices $\ge 2$, no two consecutive), and let
 $r_j = 1$ if $j \in Z(r)$ and $r_j = 0$ otherwise. Let $\mathbb{X} \subseteq \{0,1\}^{\mathbb{N}}$

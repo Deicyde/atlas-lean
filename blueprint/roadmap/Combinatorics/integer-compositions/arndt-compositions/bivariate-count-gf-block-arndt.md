@@ -1,6 +1,6 @@
 # Generating function of block Arndt compositions
 
-**Generating function of block Arndt compositions.** Let $k \ge 1$, let $a^{(k)}(n, m)$ be
+Let $k \ge 1$, let $a^{(k)}(n, m)$ be
 the number of $k$-block Arndt compositions of $n$ with $m$ parts, and let
 $A^{(k)}(x, y) = \sum_{n \ge 0} \sum_{m=0}^{n} a^{(k)}(n, m)\, x^n y^m \in \mathbb{Z}[y][[x]]$.
 Then

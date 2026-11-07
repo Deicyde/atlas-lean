@@ -1,6 +1,6 @@
 # Last peak height of UDUUDD
 
-**Last peak height of UDUUDD.** The last peak of the Dyck path $UDUUDD$ has height $2$.
+The last peak of the Dyck path $UDUUDD$ has height $2$.
 
 ## Sources
 

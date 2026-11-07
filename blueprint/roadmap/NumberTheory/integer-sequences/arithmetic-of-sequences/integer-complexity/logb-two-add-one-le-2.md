@@ -1,6 +1,6 @@
 # A lower bound for the 2-complexity outside sums of two powers of two
 
-**A lower bound for the 2-complexity outside sums of two powers of two.** Write
+Write
 $\|n\|_2$ for the $2$-complexity of $n$. Let $n$ be a positive even integer that cannot be
 written as $2^a + 2^b$ with natural numbers $a \le b$. Then $\log_2 n + 1 \le \|n\|_2$.
 

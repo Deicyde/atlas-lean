@@ -1,6 +1,6 @@
 # Gaps along the Mallows path of a real number
 
-**Gaps along the Mallows path of a real number.** Fractions $n/m$ are written as pairs
+Fractions $n/m$ are written as pairs
 $(n, m)$ of natural numbers. For a gap $(a, b)$ let $\langle p, q\rangle$ be the pair that
 Mallows' insertion rule inserts in $(a, b)$. For a real number $\alpha$, the gaps
 $I_0, I_1, \dots$ are defined by $I_0 = (0/1, 1/1)$ and, if $I_i = (a, b)$, by

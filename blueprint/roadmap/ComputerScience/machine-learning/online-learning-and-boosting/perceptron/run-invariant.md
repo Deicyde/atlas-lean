@@ -1,6 +1,6 @@
 # Invariant of the perceptron run
 
-**Invariant of the perceptron run.** Let $K$ be a linearly ordered commutative ring, $\iota$ a
+Let $K$ be a linearly ordered commutative ring, $\iota$ a
 finite type, $v \cdot w = \sum_{i \in \iota} v_i w_i$ the dot product on $K^\iota$, $u \in K^\iota$
 and $\gamma, R \in K$. Let $L$ be a finite list of labelled examples $(x, y)$ with $x \in K^\iota$
 and $y$ a Boolean, such that every example in $L$ satisfies

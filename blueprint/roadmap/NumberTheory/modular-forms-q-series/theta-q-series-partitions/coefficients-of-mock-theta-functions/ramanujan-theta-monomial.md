@@ -1,6 +1,6 @@
 # Ramanujan's theta function at monomial arguments
 
-**Ramanujan's theta function at monomial arguments.** For an integer $\varepsilon$ and natural
+For an integer $\varepsilon$ and natural
 numbers $a$ and $b$, $f(\varepsilon q^a, \varepsilon q^b)$ is the integer power series in $q$
 whose coefficient of $q^n$ is the sum of $\varepsilon^{m^2}$ over the integers $m$ with
 $|m| \le n + 1$ and $a \cdot m(m+1)/2 + b \cdot m(m-1)/2 = n$.

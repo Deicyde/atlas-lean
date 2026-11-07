@@ -1,6 +1,6 @@
 # Generalized factorial matrices: decomposition, determinant and inverse
 
-**Generalized factorial matrices: decomposition, determinant and inverse.** Let $K$ be
+Let $K$ be
 $\mathbb{R}$ or $\mathbb{C}$, let $p$ be a natural number, let $x_0, \dots, x_{p-1} \in K$ be
 pairwise distinct, and let $\alpha, \beta, \gamma \in \mathbb{R}$. For $y \in K$,
 $a \in \mathbb{R}$ and $n \in \mathbb{N}$ write $(y \mid a)_n = \prod_{j=0}^{n-1} (y - ja)$.

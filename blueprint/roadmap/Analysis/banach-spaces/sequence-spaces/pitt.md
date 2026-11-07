@@ -1,6 +1,6 @@
 # Pitt's theorem
 
-**Pitt's theorem.** Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let
+Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$ and let
 $1 \le q < p < \infty$. Then every bounded linear operator
 $T : \ell^p(\mathbb{N}, \mathbb{K}) \to \ell^q(\mathbb{N}, \mathbb{K})$ is compact.
 

@@ -1,6 +1,6 @@
 # Odd double factorial below a power of two as an odd-range product
 
-**Odd double factorial below a power of two as an odd-range product.** For every natural number
+For every natural number
 $e$, $(2^e-1)!!$ equals the product of the odd natural numbers in the closed interval
 $[1, 2^e-1]$.
 

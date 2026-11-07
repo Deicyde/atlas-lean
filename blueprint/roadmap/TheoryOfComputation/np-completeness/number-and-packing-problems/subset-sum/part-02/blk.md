@@ -1,6 +1,6 @@
 # Output block of a vertex-number digit
 
-**Output block of a vertex-number digit.** For a bit $t$, the block is the four-bit list
+For a bit $t$, the block is the four-bit list
 $(\mathrm{true}, t, \mathrm{true}, \mathrm{false})$.
 
 In the reduction from VERTEX-COVER to SUBSET-SUM, the self-delimiting code of a vertex number

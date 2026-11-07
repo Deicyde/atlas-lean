@@ -1,6 +1,6 @@
 # $a$, $b$, $c$, $d$ divide gcds of reduced differences
 
-**$a$, $b$, $c$, $d$ divide gcds of reduced differences.** Let $a, b, c, d$ be natural numbers
+Let $a, b, c, d$ be natural numbers
 and put $s_1 = ab + 1$, $s_2 = ac + 1$, $s_3 = ad + 1$, $s_4 = bc + 1$, $s_5 = bd + 1$,
 $s_6 = cd + 1$. For indices $i, j$ let $t_{ij}$ be the integer $(s_j - s_i) / \gcd(s_j, s_i)$.
 Then $a \mid \gcd(t_{12}, t_{13}, t_{23})$, $b \mid \gcd(t_{14}, t_{15}, t_{45})$,

@@ -1,6 +1,6 @@
 # Bayes' rule for countably many hypotheses
 
-**Bayes' rule for countably many hypotheses.** Let $\Theta$ be a countable measurable space and
+Let $\Theta$ be a countable measurable space and
 $\mathcal X$ a measurable space, both with measurable singletons, let $\kappa$ be a kernel from
 $\Theta$ to $\mathcal X$ (the likelihood) and $\mu$ a measure on $\Theta$ (the prior). For every
 observation $x \in \mathcal X$ and every $\theta \in \Theta$, the Bayes posterior $\pi_x$ of $\mu$

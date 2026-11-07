@@ -1,6 +1,6 @@
 # Hewitt–Savage zero–one law on a Polish space
 
-**Hewitt–Savage zero–one law on a Polish space.** Let $S$ be a Polish space with its Borel
+Let $S$ be a Polish space with its Borel
 σ-algebra, let $\mu$ be a probability measure on $S$, and let $E \subseteq S^{\mathbb{N}}$ be a set
 that is measurable for the product σ-algebra and invariant under every finitely supported
 permutation $\sigma$ of $\mathbb{N}$, that is, $\{\omega : \omega \circ \sigma \in E\} = E$

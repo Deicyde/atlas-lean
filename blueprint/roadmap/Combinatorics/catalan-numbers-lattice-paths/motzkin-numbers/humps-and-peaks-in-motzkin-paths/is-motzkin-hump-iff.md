@@ -1,6 +1,6 @@
 # Characterization of Motzkin humps
 
-**Characterization of Motzkin humps.** Write a path of length $n$ as a sequence of steps
+Write a path of length $n$ as a sequence of steps
 $p_0, \dots, p_{n-1}$, and let $s(p_r) \in \{-1, 0, 1\}$ be the vertical displacement of the
 step $p_r$ (down, flat or up). For a natural number $k$ and positions $i, j < n$, the pair
 $(i, j)$ is a hump of height $k$ if and only if $i < j$, $s(p_i) = 1$, $s(p_j) = -1$,

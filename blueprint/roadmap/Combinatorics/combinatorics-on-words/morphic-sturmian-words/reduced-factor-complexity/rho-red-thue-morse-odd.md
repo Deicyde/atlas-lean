@@ -1,6 +1,6 @@
 # Reduced complexity of the Thue–Morse word at odd lengths
 
-**Reduced complexity of the Thue–Morse word at odd lengths.** Let $t$ be the Thue–Morse
+Let $t$ be the Thue–Morse
 sequence and $\rho^{\mathrm{red}}_t$ its reduced factor complexity. For every odd natural
 number $n$, $\rho^{\mathrm{red}}_t(n) = \rho^{\mathrm{red}}_t((n+1)/2)$.
 

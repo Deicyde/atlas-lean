@@ -1,6 +1,6 @@
 # Hausdorff positivity criterion
 
-**Hausdorff positivity criterion.** A real sequence $a$ indexed by $\mathbb{N}^d$ is a positive
+A real sequence $a$ indexed by $\mathbb{N}^d$ is a positive
 moment configuration, that is, there is a finite measure $\mu$ on $\mathbb{R}^d$ with
 $a_n = \int_{[0,1]^d} x^n \, d\mu(x)$ for every multi-index $n \in \mathbb{N}^d$, where
 $x^n = \prod_i x_i^{n_i}$, if and only if $(\Delta^k a)_n \ge 0$ for all multi-indices $k, n$ with

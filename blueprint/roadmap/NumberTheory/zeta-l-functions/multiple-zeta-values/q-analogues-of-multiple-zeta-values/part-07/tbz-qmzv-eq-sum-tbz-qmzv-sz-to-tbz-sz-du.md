@@ -1,6 +1,6 @@
 # Duality for TBZ-qMZVs
 
-**Duality for TBZ-qMZVs.** Let $w$ be a TBZ word: each letter is either $\bar 1$ or a natural
+Let $w$ be a TBZ word: each letter is either $\bar 1$ or a natural
 number $k \ge 1$, and the first letter is not the number $1$. Let $U_{TBZ}(w) = \sum_v c_v\, v$ be
 the formal $\mathbb{Q}$-linear combination of SZ indices obtained by replacing each letter $\bar 1$
 by $1$ and each letter $k$ by $k$ or by $k - 1$, summed over all choices. For an SZ index

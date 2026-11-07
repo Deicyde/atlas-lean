@@ -1,6 +1,6 @@
 # One step of the furthest-in-future manager
 
-**One step of the furthest-in-future manager.** Write $x :: L$ for the list $L$ with $x$
+Write $x :: L$ for the list $L$ with $x$
 prepended, $[\,]$ for the empty list, $|L|$ for the length of $L$, and $L \setminus v$ for $L$
 with the first occurrence of $v$ removed. Write $\mathrm{FIF}_k(R, C) = (E, D)$ when the
 furthest-in-future manager with capacity $k$ on the requests $R$ from the initial cache $C$ emits

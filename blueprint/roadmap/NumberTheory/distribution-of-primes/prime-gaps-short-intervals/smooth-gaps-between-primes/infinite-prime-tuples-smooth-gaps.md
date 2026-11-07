@@ -1,6 +1,6 @@
 # Prime $m$-tuples with smooth gaps
 
-**Prime $m$-tuples with smooth gaps.** Let $m \ge 2$ and $k$ be natural numbers such that
+Let $m \ge 2$ and $k$ be natural numbers such that
 every admissible finite set $H$ of at least $k$ integers has infinitely many integers $n$ for
 which $n + h$ is a (positive) prime for at least $m$ elements $h \in H$. Then there are
 infinitely many $m$-tuples of primes $p_1 < p_2 < \dots < p_m$ such that for all $j < i$ every

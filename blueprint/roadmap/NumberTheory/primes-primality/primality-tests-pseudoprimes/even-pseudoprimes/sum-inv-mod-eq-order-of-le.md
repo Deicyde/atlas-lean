@@ -1,6 +1,6 @@
 # Reciprocal sum over a residue class in an exponential window
 
-**Reciprocal sum over a residue class in an exponential window.** Write $\ell_2(p)$ for the
+Write $\ell_2(p)$ for the
 multiplicative order of $2$ modulo a prime $p$. Let $p$ be an odd prime and $k$ a natural
 number, and let $F_p(k)$ be the sum of $1/N$ over the integers $N$ with $e^k < N \le e^{k+1}$,
 $N \equiv p \pmod{p\,\ell_2(p)}$ and $N > p$. Then $F_p(k) \le 2 / (p\,\ell_2(p))$.

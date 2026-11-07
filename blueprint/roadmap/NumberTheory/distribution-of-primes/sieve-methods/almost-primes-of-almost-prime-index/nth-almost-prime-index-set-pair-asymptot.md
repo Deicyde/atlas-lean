@@ -1,6 +1,6 @@
 # Size of the nth almost prime of almost prime index
 
-**Size of the nth almost prime of almost prime index.** Let $j, k \ge 1$ be integers and, for
+Let $j, k \ge 1$ be integers and, for
 $n \ge 1$, let $p_{j,k,n}$ be the $n$th element, in increasing order, of the set $N_{jk}$ of
 $j$-almost primes whose index in the increasing enumeration of the $j$-almost primes, counted
 from $1$, is a $k$-almost prime. Writing

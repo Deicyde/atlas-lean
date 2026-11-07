@@ -1,6 +1,6 @@
 # Multiple polylogarithm
 
-**Multiple polylogarithm.** For a finite sequence $k = (k_1, \dots, k_r)$ of natural numbers
+For a finite sequence $k = (k_1, \dots, k_r)$ of natural numbers
 with $r \ge 1$, the multiple polylogarithm is the formal power series
 
 $$\mathrm{Li}_k(z) = \sum_{0 < m_1 < \cdots < m_r} \frac{z^{m_r}}{m_1^{k_1} \cdots m_r^{k_r}}$$

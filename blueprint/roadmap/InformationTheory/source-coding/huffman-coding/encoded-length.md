@@ -1,6 +1,6 @@
 # Encoded length of a coding tree
 
-**Encoded length of a coding tree.** The encoded length of a leaf of weight $w$ is $w$ (its
+The encoded length of a leaf of weight $w$ is $w$ (its
 lone symbol receives a one-bit codeword). The encoded length of the tree with left subtree $L$
 and right subtree $R$ is $P(L) + P(R) + W(L) + W(R)$, where $P$ is the weighted path length and
 $W$ the total weight; this is the weighted path length of that tree.

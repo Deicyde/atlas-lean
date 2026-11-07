@@ -1,3 +1,3 @@
 # Background likelihoods form a distribution
 
-**Background likelihoods form a distribution.** The background law of independent letters is a distribution on sequences.
+The background law of independent letters is a distribution on sequences.

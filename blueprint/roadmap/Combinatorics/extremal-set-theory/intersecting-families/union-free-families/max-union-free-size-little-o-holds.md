@@ -1,6 +1,6 @@
 # Union-free families have vanishing density (Erdős Problem 447)
 
-**Union-free families have vanishing density (Erdős Problem 447).** The maximum size of a
+The maximum size of a
 union-free family of subsets of $\{0, \dots, n-1\}$ is $o(2^n)$ as $n \to \infty$.
 
 This follows from Kleitman's bound $(1 + o(1))\binom{n}{\lfloor n/2 \rfloor}$; Erdős reported an

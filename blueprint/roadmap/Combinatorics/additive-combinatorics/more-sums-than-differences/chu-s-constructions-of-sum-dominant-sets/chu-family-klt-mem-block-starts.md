@@ -1,6 +1,6 @@
 # Block starting points of the Chu family set
 
-**Block starting points of the Chu family set.** Let $k$, $l$, $t$ be positive integers and
+Let $k$, $l$, $t$ be positive integers and
 let $A \subseteq \mathbb{Z}$ be the Chu family set with parameters $k$, $l$, $t$. Then
 $4 + (4k + 4)i + (4kl + 4l + 4)j \in A$ for all integers $i$, $j$ with $0 \le i \le l$ and
 $0 \le j \le t - 1$.

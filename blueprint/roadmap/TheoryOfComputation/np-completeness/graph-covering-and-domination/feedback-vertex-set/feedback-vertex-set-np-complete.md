@@ -1,6 +1,6 @@
 # FEEDBACK VERTEX SET is NP-complete
 
-**FEEDBACK VERTEX SET is NP-complete.** The decision problem FEEDBACK VERTEX SET belongs to
+The decision problem FEEDBACK VERTEX SET belongs to
 NP, and every decision problem in NP reduces to FEEDBACK VERTEX SET by a polynomial-time
 many-one reduction.
 

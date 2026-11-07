@@ -1,6 +1,6 @@
 # Binomial sum identity for incomplete Lucas-Leonardo p-numbers
 
-**Binomial sum identity for incomplete Lucas-Leonardo p-numbers.** For natural numbers
+For natural numbers
 $p \ge 1$, $n$, $r$ and $k$ with $n \ge p + r$ and $k \le \lfloor (n - p - r)/(p + 1) \rfloor$,
 the incomplete Lucas-Leonardo $p$-numbers $R_{p,m}(j)$ satisfy, as rational numbers,
 

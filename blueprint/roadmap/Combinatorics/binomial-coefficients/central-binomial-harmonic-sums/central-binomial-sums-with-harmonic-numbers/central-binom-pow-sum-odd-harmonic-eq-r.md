@@ -1,6 +1,6 @@
 # Odd harmonic central binomial sums via r-Stirling numbers
 
-**Odd harmonic central binomial sums via r-Stirling numbers.** For natural numbers $n$ and
+For natural numbers $n$ and
 $r$, let $O_m = \sum_{i=1}^{m} 1/(2i-1)$ be the odd harmonic numbers, ${a \brace b}_s$ the
 r-Stirling numbers of the second kind, and $S_r^O(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r O_k$,
 with $0^0 = 1$. Then

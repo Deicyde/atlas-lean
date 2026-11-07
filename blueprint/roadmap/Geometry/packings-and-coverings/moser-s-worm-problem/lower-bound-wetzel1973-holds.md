@@ -1,6 +1,6 @@
 # Wetzel's 1973 lower bound for the convex worm cover constant
 
-**Wetzel's 1973 lower bound for the convex worm cover constant.** Let $\mu$ be the convex
+Let $\mu$ be the convex
 worm cover constant, the infimum of the areas of the nonempty convex sets
 $\Omega \subseteq \mathbb{C}$ such that every continuous curve $\gamma : [0, 1] \to \mathbb{C}$ of
 length exactly $1$ can be moved into $\Omega$ by a rotation followed by a translation. Then

@@ -1,6 +1,6 @@
 # Radial Sobolev embedding outside the unit ball
 
-**Radial Sobolev embedding outside the unit ball.** Let $n \ge 2$, let $B$ be the closed unit
+Let $n \ge 2$, let $B$ be the closed unit
 ball of $\mathbb{R}^n$, and let $1 < p < 2$ and $p \le q \le \infty$. Then there is a constant
 $C > 0$ such that every radial function $f \colon \mathbb{R}^n \to \mathbb{R}$ that has compact
 support, whose closed support is contained in $\mathbb{R}^n \setminus B$, and which is $C^\infty$

@@ -1,6 +1,6 @@
 # Coefficientwise limits preserve real interlacing
 
-**Coefficientwise limits preserve real interlacing.** Let $(f_n)$ and $(g_n)$ be sequences
+Let $(f_n)$ and $(g_n)$ be sequences
 of real polynomials with only real roots, and let $f$ and $g$ be nonzero real polynomials such
 that, for every $k$, the coefficient of $X^k$ in $f_n$ tends to that in $f$ and the coefficient
 of $X^k$ in $g_n$ tends to that in $g$ as $n \to \infty$. Suppose that for all sufficiently

@@ -1,6 +1,6 @@
 # Witt's multigraded value
 
-**Witt's multigraded value.** For natural numbers $n_1, \dots, n_r$, let
+For natural numbers $n_1, \dots, n_r$, let
 $n = n_1 + \dots + n_r$ and $g = \gcd(n_1, \dots, n_r)$. The rational number
 $M(n_1, \dots, n_r)$ is $0$ if $n = 0$, and otherwise
 $M(n_1, \dots, n_r) = \frac{1}{n} \sum_{d \mid g} \mu(d) \binom{n/d}{n_1/d, \ldots, n_r/d}$,

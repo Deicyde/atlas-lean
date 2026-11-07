@@ -1,6 +1,6 @@
 # Morley's trisector theorem
 
-**Morley's trisector theorem.** If points $A$, $B$, $C$, $P$, $Q$, $R$ of the Euclidean plane
+If points $A$, $B$, $C$, $P$, $Q$, $R$ of the Euclidean plane
 form a Morley configuration, so that $ABC$ is a nondegenerate triangle and $P$, $Q$, $R$ are the
 intersections of its adjacent angle trisectors, then $P$, $Q$, $R$ form an equilateral triple:
 writing $d$ for the Euclidean distance, $d(P, Q) = d(Q, R)$ and $d(Q, R) = d(R, P)$.

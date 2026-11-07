@@ -1,6 +1,6 @@
 # Every permutiple has a cycle-preserving digit permutation
 
-**Every permutiple has a cycle-preserving digit permutation.** Let $n$, $b$ and
+Let $n$, $b$ and
 $d_0, \dots, d_k$ be natural numbers and let $\sigma$ be a permutation of $\{0, \dots, k\}$ such
 that $(d_k, \dots, d_0)_b$ is an $(n, b, \sigma)$-permutiple. Then there is a permutation
 $\hat\sigma$ of $\{0, \dots, k\}$ such that $(d_k, \dots, d_0)_b$ is also an

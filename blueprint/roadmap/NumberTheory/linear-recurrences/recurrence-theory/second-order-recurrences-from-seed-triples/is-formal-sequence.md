@@ -1,6 +1,6 @@
 # Formal sequence from a seed triplet
 
-**Formal sequence from a seed triplet.** Let $F$ be a field and $a, b, c \in F$. A sequence
+Let $F$ be a field and $a, b, c \in F$. A sequence
 $u : \mathbb{N} \to F$ is a formal sequence with seed triplet $(a, b, c)$ when $b \neq 0$,
 $u_0 = a$, $u_1 = b$, $u_2 = c$, and for every $n \ge 0$
 

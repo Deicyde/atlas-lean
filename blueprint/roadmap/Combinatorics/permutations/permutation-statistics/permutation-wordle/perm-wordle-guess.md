@@ -1,6 +1,6 @@
 # Guesses of permutation Wordle
 
-**Guesses of permutation Wordle.** Let $S$ be a strategy, that is, a permutation $S_m$ of
+Let $S$ be a strategy, that is, a permutation $S_m$ of
 $\{0, \dots, m-1\}$ for every $m$, and let $\pi$ be a permutation of $\{0, \dots, n-1\}$. The
 guesses $\gamma_1, \gamma_2, \dots$ of permutation Wordle with strategy $S$ and secret $\pi$ are
 the maps from $\{0, \dots, n-1\}$ to itself defined recursively: $\gamma_1$ is the identity, and

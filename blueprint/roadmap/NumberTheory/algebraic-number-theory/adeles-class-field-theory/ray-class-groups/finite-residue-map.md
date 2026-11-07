@@ -1,6 +1,6 @@
 # Finite residue map
 
-**Finite residue map.** Let $K$ be a number field and $\mathfrak m$ a modulus of $K$ with finite
+Let $K$ be a number field and $\mathfrak m$ a modulus of $K$ with finite
 part $\mathfrak m_0$, a nonzero ideal of $\mathcal O_K$. The finite residue map of $\mathfrak m$ is
 the group homomorphism from the ray elements of $\mathfrak m$ to
 $(\mathcal O_K / \mathfrak m_0)^\times$ sending $x$ to $\bar a \bar b^{-1}$, where $x = a / b$ with

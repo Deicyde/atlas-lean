@@ -1,6 +1,6 @@
 # Shifted maximal blocks scale geometrically
 
-**Shifted maximal blocks scale geometrically.** Let $L = (e_1, \dots, e_N)$ and $\tilde L$ be
+Let $L = (e_1, \dots, e_N)$ and $\tilde L$ be
 lists of natural numbers of length at least $2$ with nonzero first entries, and let $\tilde Q$ be
 a strictly decreasing sequence with values in $(0, 1)$ such that
 $\varepsilon \mapsto \sum_k \varepsilon_k \tilde Q_k$ is a bijection from $\tilde E^*$, the

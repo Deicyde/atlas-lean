@@ -1,6 +1,6 @@
 # Margulis–Ruelle inequality (planar case)
 
-**Margulis–Ruelle inequality (planar case).** Let $T$ be a $C^2$ diffeomorphism of the
+Let $T$ be a $C^2$ diffeomorphism of the
 Euclidean plane $\mathbb{R}^2$, that is, a $C^2$ map with a $C^2$ two-sided inverse. Let
 $K \subseteq \mathbb{R}^2$ be a compact set with $T(K) = K$, and let $\mu$ be an ergodic
 $T$-invariant Borel probability measure on $\mathbb{R}^2$ with

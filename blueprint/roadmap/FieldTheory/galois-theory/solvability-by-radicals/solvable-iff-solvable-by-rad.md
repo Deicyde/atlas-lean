@@ -1,6 +1,6 @@
 # Solvable extensions ↔ solvable groups
 
-**Solvable extensions ↔ solvable groups.** Let $F$ be a field of characteristic zero and let
+Let $F$ be a field of characteristic zero and let
 $p \in F[X]$ be a nonzero polynomial. Every root of $p$ in an algebraic closure $\overline{F}$ of
 $F$ is solvable by radicals over $F$ (obtainable from $F$ by field operations and $n$-th roots
 inside $\overline{F}$) if and only if the Galois group of $p$ over $F$ is solvable.

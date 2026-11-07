@@ -1,6 +1,6 @@
 # Kaprekar map
 
-**Kaprekar map.** For natural numbers $n$ and $\alpha$, take the decimal digits of $\alpha$
+For natural numbers $n$ and $\alpha$, take the decimal digits of $\alpha$
 (without leading zeros, and no digits at all for $\alpha = 0$) and, if there are fewer than $n$
 of them, pad them with leading zeros to a string of exactly $n$ digits. The Kaprekar map sends
 $\alpha$ to the Kaprekar difference $\alpha_M - \alpha_L$ of this digit string: the number with

@@ -1,6 +1,6 @@
 # Lemke–Kleitman theorem
 
-**Lemke–Kleitman theorem.** For every positive integer $n$, every sequence
+For every positive integer $n$, every sequence
 $g_1, \dots, g_n$ of $n$ elements of $\mathbb{Z}/n\mathbb{Z}$ has a nonempty zero-sum
 subsequence with cross number at most one: there is a nonempty set $S \subseteq \{1, \dots, n\}$
 of indices with $\sum_{i \in S} g_i = 0$ and $\sum_{i \in S} 1/\operatorname{ord}(g_i) \le 1$,

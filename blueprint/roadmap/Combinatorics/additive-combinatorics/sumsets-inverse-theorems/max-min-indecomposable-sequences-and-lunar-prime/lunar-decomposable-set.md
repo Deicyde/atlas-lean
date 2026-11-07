@@ -1,6 +1,6 @@
 # Decomposable lunar numbers
 
-**Decomposable lunar numbers.** For natural numbers $b$ and $n$, let $\mathcal{L}_b^n$ be the
+For natural numbers $b$ and $n$, let $\mathcal{L}_b^n$ be the
 set of lunar numbers of base $b$ and degree at most $n$, that is, polynomials
 $c_0 \oplus c_1 x \oplus \dots \oplus c_n x^n$ with digits $c_k \in \{0, \dots, b - 1\}$. The set
 $\Sigma_b^n$ of decomposable lunar numbers consists of the $h \in \mathcal{L}_b^n$ that factor as

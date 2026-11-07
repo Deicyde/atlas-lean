@@ -1,6 +1,6 @@
 # Odd powers of Lucas polynomials at $n \pm k$
 
-**Odd powers of Lucas polynomials at $n \pm k$.** Let $f_i$ and $\ell_i$ be the
+Let $f_i$ and $\ell_i$ be the
 Fibonacci and Lucas polynomials in $\mathbb{Z}[x]$, defined by $f_0 = 0$, $f_1 = 1$, $\ell_0 = 2$,
 $\ell_1 = x$ and $g_{i+2} = x g_{i+1} + g_i$ for $g = f, \ell$. Let $k \le n$ and $m$ be natural
 numbers. In $\mathbb{Z}[x]$, if $k$ is odd then

@@ -1,6 +1,6 @@
 # The value $H_1^{(r)}(1) = 1$
 
-**The value $H_1^{[r]}(1) = 1$.** For every complex number $r$, the generalized
+For every complex number $r$, the generalized
 hyperharmonic number $H_1^{[r]}(1)$ equals $1$.
 
 ## Sources

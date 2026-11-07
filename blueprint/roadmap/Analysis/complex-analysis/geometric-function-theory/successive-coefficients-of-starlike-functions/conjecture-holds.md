@@ -1,6 +1,6 @@
 # Leung's theorem on successive coefficients of starlike functions
 
-**Leung's theorem on successive coefficients of starlike functions.** Let
+Let
 $f : \mathbb{C} \to \mathbb{C}$ be analytic on the open unit disc $\mathbb{D} = \{z : |z| < 1\}$,
 with $f(0) = 0$ and $f'(0) = 1$, injective on $\mathbb{D}$, and starlike, meaning that
 $\operatorname{Re}\bigl(z f'(z) / f(z)\bigr) > 0$ for every $z \ne 0$ in $\mathbb{D}$. Let

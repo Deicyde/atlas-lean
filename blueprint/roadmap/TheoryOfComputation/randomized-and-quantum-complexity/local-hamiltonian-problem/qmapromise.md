@@ -1,6 +1,6 @@
 # QMA for promise problems
 
-**QMA for promise problems.** A pair $(\Pi_{\mathrm{yes}}, \Pi_{\mathrm{no}})$ of sets of
+A pair $(\Pi_{\mathrm{yes}}, \Pi_{\mathrm{no}})$ of sets of
 bitstrings is in QMA when there are polynomials $m$, $a$ and $s$ with natural-number coefficients
 and a polynomial-time computable map sending each bitstring $x$ to a list of encoded 2-local
 quantum gates such that, for every bitstring $x$, writing $N = |x| + m(|x|) + a(|x|)$: the list

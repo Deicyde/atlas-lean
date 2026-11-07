@@ -1,6 +1,6 @@
 # Adding a small $r$ leaves the high digits unchanged
 
-**Adding a small $r$ leaves the high digits unchanged.** Write $F_j$ for the Fibonacci
+Write $F_j$ for the Fibonacci
 numbers ($F_1 = F_2 = 1$). Let $\mathbb{X} \subseteq \{0,1\}^{\mathbb{N}}$ be the set of
 Zeckendorf-adic integers (sequences with $x_0 = x_1 = 0$ and no two consecutive ones), and write
 $x + r = T^r(x)$ for the $r$-th iterate of the Zeckendorf odometer $T$. Let $x \in \mathbb{X}$,

@@ -1,6 +1,6 @@
 # Asymptotic formula for the number of remainders
 
-**Asymptotic formula for the number of remainders.** Let $s(n)$ be the number of distinct
+Let $s(n)$ be the number of distinct
 remainders $n \bmod k$ with $1 \le k \le \lfloor n/2 \rfloor$ and let $c$ be the remainder-set
 constant. Then, as $n \to \infty$ over the natural numbers,
 $s(n) - cn = O\bigl(n / (\log n \cdot \log \log n)\bigr)$, and $s(n)/n \to c$.

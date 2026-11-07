@@ -1,6 +1,6 @@
 # Coefficients of Schlesinger–Zudilin qMZVs as sums of binomial products
 
-**Coefficients of Schlesinger–Zudilin qMZVs as sums of binomial products.** Let $r \ge 0$,
+Let $r \ge 0$,
 and let $k_1, \dots, k_r$ and $d_1, \dots, d_r$ be positive integers. For every natural number
 $N$, the coefficient of $q^N$ in the Schlesinger–Zudilin qMZV
 $\zeta_q^{\mathrm{SZ}}(k_1, \{0\}^{d_1 - 1}, \dots, k_r, \{0\}^{d_r - 1})$, whose index lists each

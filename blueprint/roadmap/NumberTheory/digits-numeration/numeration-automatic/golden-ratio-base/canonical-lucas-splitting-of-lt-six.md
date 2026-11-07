@@ -1,6 +1,6 @@
 # Canonical splitting of a short Lucas interval
 
-**Canonical splitting of a short Lucas interval.** For every natural number $m < 6$, the
+For every natural number $m < 6$, the
 canonical splitting of the Lucas interval $\Lambda_m$ is the one-pair list $[(m, 0)]$, that is,
 $\Lambda_m$ itself.
 

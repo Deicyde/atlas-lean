@@ -1,6 +1,6 @@
 # Without primitive $p$-th roots of unity, every $p$-th root of unity is trivial
 
-**Without primitive $p$-th roots of unity, every $p$-th root of unity is trivial.** Let $p$ be a
+Let $p$ be a
 prime and let $L$ be a field containing no primitive $p$-th root of unity. Then every $\eta \in L$
 with $\eta^p = 1$ equals $1$.
 

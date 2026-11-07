@@ -1,6 +1,6 @@
 # One-way permutation families
 
-**One-way permutation families.** Let $\pi$ assign to each $n \in \mathbb{N}$ a map $\pi_n$
+Let $\pi$ assign to each $n \in \mathbb{N}$ a map $\pi_n$
 from $n$-bit strings to $n$-bit strings. The family $\pi$ is a one-way permutation when three
 conditions hold. First, each $\pi_n$ is injective, hence a permutation of the $n$-bit strings.
 Second, it is uniformly computable: some polynomial-time computable function maps the

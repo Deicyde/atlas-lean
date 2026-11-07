@@ -1,6 +1,6 @@
 # High-temperature expansion
 
-**High-temperature expansion.** At zero field, `Z(β) = 2^{|V|} (cosh β)^{|E|} ∑_{F even}
+At zero field, `Z(β) = 2^{|V|} (cosh β)^{|E|} ∑_{F even}
 (tanh β)^{|F|}`.
 
 S. Friedli and Y. Velenik, *Statistical Mechanics of Lattice Systems*, Cambridge University

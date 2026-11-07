@@ -1,6 +1,6 @@
 # Summands of a lex-minimal extension are lex-minimal
 
-**Summands of a lex-minimal extension are lex-minimal.** Let $\eta_1$ and $\eta_2$ be
+Let $\eta_1$ and $\eta_2$ be
 infinite binomid indices and let $k \ge 0$. If the termwise sum $\eta_1 + \eta_2$ is the
 lex-minimal extension of its first $k$ entries, then $\eta_1$ is the lex-minimal extension of
 its first $k$ entries and $\eta_2$ is the lex-minimal extension of its first $k$ entries.

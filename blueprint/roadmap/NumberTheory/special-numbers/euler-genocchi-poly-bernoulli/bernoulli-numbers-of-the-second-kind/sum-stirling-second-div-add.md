@@ -1,6 +1,6 @@
 # Weighted alternating sums of Stirling numbers of the second kind
 
-**Weighted alternating sums of Stirling numbers of the second kind.** For natural numbers
+For natural numbers
 $r \ge 1$ and $n$, write $S(n,k)$ for the Stirling numbers of the second kind, $c(r,j)$ for the
 unsigned Stirling numbers of the first kind, and $B_m$ for the Bernoulli numbers with
 $B_1 = -\tfrac12$. Then, in $\mathbb{Q}$,

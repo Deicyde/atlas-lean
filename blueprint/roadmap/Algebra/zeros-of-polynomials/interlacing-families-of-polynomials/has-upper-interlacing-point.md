@@ -1,6 +1,6 @@
 # Upper interlacing point
 
-**Upper interlacing point.** Let $p$ be a complex polynomial and let
+Let $p$ be a complex polynomial and let
 $\operatorname{maxroot}(p)$ be the largest real part of an element of the multiset of roots of
 $p$, with $\operatorname{maxroot}(p) = 0$ when that multiset is empty (as it is for nonzero
 constants and for $p = 0$). A real number $a$ is an upper interlacing point of $p$ if

@@ -1,6 +1,6 @@
 # The transition clause family
 
-**The transition clause family.** Fix a layout with label block size $A$, $K$ stacks, $g$
+Fix a layout with label block size $A$, $K$ stacks, $g$
 symbol codes and window depth $d$, tables $\mathrm{la}, \mathrm{na} : \mathbb{N} \to \mathbb{N}$
 and $\mathrm{wa} : \mathbb{N} \to \mathbb{N} \to \mathbb{N} \to \mathbb{N}$, and
 $T, H, N \in \mathbb{N}$. Let $W = A + KHg$, let $X[t, a]$ be the variable $tW + a$, and let

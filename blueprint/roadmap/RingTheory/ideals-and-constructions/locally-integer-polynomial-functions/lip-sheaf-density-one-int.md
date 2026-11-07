@@ -1,6 +1,6 @@
 # Locally integer polynomial functions on density one subsets of the integers
 
-**Locally integer polynomial functions on density one subsets of the integers.** Say that
+Say that
 $S \subseteq \mathbb{Z}$ has density one if $\#(S \cap [-x, x]) / (2x + 1) \to 1$ as the natural
 number $x$ tends to infinity, and write $\mathrm{LIP}(S)$ for the ring of locally integer
 polynomial (LIP) functions $S \to \mathbb{Z}$. Let $U \subseteq \mathbb{Z}$ have density one and

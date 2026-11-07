@@ -1,6 +1,5 @@
 # Ramanujan's arctangent identity for $\sum_{k=1}^{2n+1} \arctan(1/(n+k))$, $n \ge 0$
 
-**Ramanujan's arctangent identity for $\sum_{k=1}^{2n+1} \arctan(1/(n+k))$, $n \ge 0$.**
 For every natural number $n$,
 
 $$\sum_{k=1}^{2n+1} \arctan \frac{1}{n+k} = \frac{\pi}{4} +

@@ -1,6 +1,6 @@
 # Congruences modulo 2 for the mock theta function $\sigma$
 
-**Congruences modulo 2 for the mock theta function $\sigma$.** Write
+Write
 $\sigma(q) = \sum_{n \ge 0} P_\sigma(n) q^n$ for the sixth-order mock theta function $\sigma$ and
 let $f_k = \prod_{m \ge 1} (1 - q^{km})$. Let $p \ge 5$ be a prime with Legendre symbol
 $\left(\frac{-2}{p}\right) = -1$ and let $\alpha \ge 0$ be an integer. Then, coefficientwise,

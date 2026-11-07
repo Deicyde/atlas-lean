@@ -1,6 +1,6 @@
 # Periodic groups of unbounded exponent in a proper variety
 
-**Periodic groups of unbounded exponent in a proper variety.** Resolved true: the Kourovka Archive answers 17.79 "Yes, moreover, there is a continuum of such
+Resolved true: the Kourovka Archive answers 17.79 "Yes, moreover, there is a continuum of such
 groups" (Atabekyan, 1986), and records Osin's example: a free group of the variety defined by `xⁿ y
 = y xⁿ` is a central extension of a free Burnside group of exponent `n` with free abelian centre of
 countable rank (Ashmanov-Olshanskii), and adding the relations `xᵢ^i = 1` for a basis `(xᵢ)` of the

@@ -1,6 +1,6 @@
 # The Circuit Value Problem is P-complete
 
-**The Circuit Value Problem is P-complete.** The Circuit Value Problem is in P, and every
+The Circuit Value Problem is in P, and every
 decision problem in P is log-space many-one reducible to the Circuit Value Problem.
 
 ## Sources

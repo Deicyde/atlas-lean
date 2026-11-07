@@ -1,6 +1,6 @@
 # Answer bits of the algebraic extension oracle
 
-**Answer bits of the algebraic extension oracle.** Let $n$ be a natural number, let $p$ be a
+Let $n$ be a natural number, let $p$ be a
 monic irreducible polynomial of degree $n + 1$ over $\mathbb{F}_2 = \mathbb{Z}/2\mathbb{Z}$, let
 $F = \mathbb{F}_2[X]/(p)$ with $\alpha$ the class of $X$, let $B$ be a function from bitstrings to
 booleans, and let $\tilde B_n$ be the multilinear extension over $F$ of the restriction of $B$ to

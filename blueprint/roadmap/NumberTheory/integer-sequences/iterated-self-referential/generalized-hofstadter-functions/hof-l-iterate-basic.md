@@ -1,6 +1,6 @@
 # Basic properties of the iterates of $L_k$
 
-**Basic properties of the iterates of $L_k$.** Let $k \ge 1$, let $x_k$ be the fixed point of
+Let $k \ge 1$, let $x_k$ be the fixed point of
 the substitution $\tau_k$, with letters $x_k[0], x_k[1], \dots$ and prefixes
 $x_k[0:n) = x_k[0] \cdots x_k[n-1]$, let $L_k(n) = |\tau_k(x_k[0:n))|$, and write $f^j$ for the
 $j$-fold iterate of a map $f$ (so $f^0$ is the identity). Then for every $j \ge 0$:

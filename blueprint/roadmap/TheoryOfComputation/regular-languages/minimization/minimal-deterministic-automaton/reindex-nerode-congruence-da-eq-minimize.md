@@ -1,6 +1,6 @@
 # The canonical automaton of a DFA's language is its minimized DFA
 
-**The canonical automaton of a DFA's language is its minimized DFA.** Let $M$ be a DFA over
+Let $M$ be a DFA over
 an alphabet $\Sigma$ accepting the language $L$, and write $x^{-1}L = \{z : xz \in L\}$ for the
 left quotient of $L$ by a word $x$. Consider the canonical automaton of $L$ as a DFA: its states
 are the classes $[x]$ of the Nerode congruence of $L$, its start state is the class of the empty

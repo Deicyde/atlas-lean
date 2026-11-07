@@ -1,6 +1,6 @@
 # Guy's question on non-squarefree base-two pseudoprimes beyond $10^{13}$
 
-**Guy's question on non-squarefree base-two pseudoprimes beyond $10^{13}$.** The statement
+The statement
 that there is a natural number $n > 10^{13}$ that is a Fermat pseudoprime to base $2$ (a
 composite number $n > 1$ with $n \mid 2^{n-1} - 1$) and is not squarefree.
 

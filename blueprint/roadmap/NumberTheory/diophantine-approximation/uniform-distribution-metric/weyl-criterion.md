@@ -1,6 +1,6 @@
 # Weyl's equidistribution criterion
 
-**Weyl's equidistribution criterion.** Let $(x_n)_{n \ge 0}$ be a sequence of real numbers and
+Let $(x_n)_{n \ge 0}$ be a sequence of real numbers and
 write $\operatorname{frac}(t) = t - \lfloor t \rfloor$ for the fractional part of a real number
 $t$. Then the following are equivalent:
 (i) for all real numbers $a < b$ with $0 \le a$ and $b \le 1$,

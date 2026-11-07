@@ -1,6 +1,6 @@
 # Williams' Korselt criterion for $D$-Carmichael numbers
 
-**Williams' Korselt criterion for $D$-Carmichael numbers.** Let $D$ be an integer with
+Let $D$ be an integer with
 $D \equiv 0$ or $1 \pmod 4$, and let $n > 1$ be an odd composite natural number coprime to $D$.
 Then $n$ is a $D$-Carmichael number if and only if $n$ is squarefree and
 $p - \left(\frac{D}{p}\right)$ divides $n - \left(\frac{D}{n}\right)$ for every prime $p \mid n$,

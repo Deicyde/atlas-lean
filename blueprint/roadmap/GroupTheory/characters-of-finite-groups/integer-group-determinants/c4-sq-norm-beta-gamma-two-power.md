@@ -1,6 +1,6 @@
 # The power of $2$ in $\beta\bar\beta\gamma\bar\gamma$
 
-**The power of $2$ in $\beta\bar\beta\gamma\bar\gamma$.** Let
+Let
 $a \colon \mathbb{Z}/4 \times \mathbb{Z}/4 \to \mathbb{Z}$ have sums $b_i$, alternating sums
 $c_i$, differences $d_0, \dots, d_7$ and Gaussian integers $\beta$, $\gamma$, and put
 $N = \beta \bar\beta \gamma \bar\gamma$, the product of the norms of $\beta$ and $\gamma$. If

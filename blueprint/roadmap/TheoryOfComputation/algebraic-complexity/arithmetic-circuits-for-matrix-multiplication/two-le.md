@@ -1,6 +1,6 @@
 # Admissible rectangular circuit exponents are at least two
 
-**Admissible rectangular circuit exponents are at least two.** Let $F$ be a field and let $k$
+Let $F$ be a field and let $k$
 and $w$ be reals. If $w$ is an admissible rectangular circuit exponent for $F$ at aspect $k$, then
 $w \ge 2$.
 

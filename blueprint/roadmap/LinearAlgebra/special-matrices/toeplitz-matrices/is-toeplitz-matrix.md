@@ -1,6 +1,6 @@
 # Toeplitz matrix
 
-**Toeplitz matrix.** A real $(n+1) \times (n+1)$ matrix $A = (a_{ij})$, with rows and columns
+A real $(n+1) \times (n+1)$ matrix $A = (a_{ij})$, with rows and columns
 indexed by $\{0, \dots, n\}$, is Toeplitz if there is a function $c : \mathbb{Z} \to \mathbb{R}$
 such that $a_{ij} = c(i - j)$ for all $i, j$. Equivalently, $A$ is constant along each of its
 diagonals.

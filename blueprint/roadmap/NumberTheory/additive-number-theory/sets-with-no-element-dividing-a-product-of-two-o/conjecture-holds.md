@@ -1,6 +1,6 @@
 # Erdős Problem 793 has a positive answer
 
-**Erdős Problem 793 has a positive answer.** Let $F(n)$ be the largest size of a set
+Let $F(n)$ be the largest size of a set
 $A \subseteq \{1, \dots, n\}$ such that $a \nmid bc$ whenever $a, b, c \in A$ with $a \ne b$ and
 $a \ne c$ ($b = c$ is allowed), and let $\pi(n)$ be the number of primes at most $n$. Then there
 is a real constant $C > 0$ such that $(F(n) - \pi(n)) / (n^{2/3} / (\log n)^2) \to C$ as

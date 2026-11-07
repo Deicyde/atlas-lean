@@ -1,6 +1,6 @@
 # Average longest progression length for non-squarefree moduli
 
-**Average longest progression length for non-squarefree moduli.** Let $n > 1$ be a natural
+Let $n > 1$ be a natural
 number that is not squarefree, $\operatorname{rad}(n)$ the product of its distinct prime factors
 and $\operatorname{gpf}(n)$ its largest prime factor, and suppose that
 $\operatorname{gpf}(n) - 1 \le n / \operatorname{rad}(n)$. For an integer $m$ let $f_m(n)$ be the

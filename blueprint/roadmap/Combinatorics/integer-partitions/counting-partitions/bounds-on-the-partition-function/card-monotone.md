@@ -1,3 +1,3 @@
 # Monotonicity of the partition function
 
-**Monotonicity of the partition function.** The number of integer partitions is monotone in the integer being partitioned.
+The number of integer partitions is monotone in the integer being partitioned.

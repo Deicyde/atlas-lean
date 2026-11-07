@@ -1,6 +1,6 @@
 # Parking functions with a given first entry
 
-**Parking functions with a given first entry.** Let $1 \le m \le n$ and $1 \le j \le n$, and
+Let $1 \le m \le n$ and $1 \le j \le n$, and
 number the spots $1, \dots, n$. Write
 
 $$S(i) = \binom{m-1}{n-i} (n-m+1)\, i^{i+m-n-2} (n-i+1)^{n-i-1}.$$

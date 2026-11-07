@@ -1,6 +1,6 @@
 # Orthogonality of irreducible characters
 
-**Orthogonality of irreducible characters.** Let $G$ be a finite group and let $\chi_i$ and
+Let $G$ be a finite group and let $\chi_i$ and
 $\chi_j$ be the characters of isomorphism classes $i$ and $j$ of simple finite-dimensional
 complex representations of $G$. Then
 

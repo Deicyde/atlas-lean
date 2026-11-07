@@ -1,6 +1,6 @@
 # Tverberg's sum in terms of the inclusion-exclusion-like sum
 
-**Tverberg's sum in terms of the inclusion-exclusion-like sum.** Let $F$ be one of
+Let $F$ be one of
 $\lfloor \cdot \rfloor$, $\lceil \cdot \rceil$, $r^+(y) = \lfloor y + 1/2 \rfloor$ and
 $r^-(y) = \lceil y - 1/2 \rceil$. For real numbers $x_1, \dots, x_n$ let
 $g(x_1, \dots, x_n) =

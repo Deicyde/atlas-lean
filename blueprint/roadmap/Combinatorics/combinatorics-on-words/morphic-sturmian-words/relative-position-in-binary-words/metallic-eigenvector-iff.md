@@ -1,6 +1,6 @@
 # Integer matrices with a metallic-mean eigenvector
 
-**Integer matrices with a metallic-mean eigenvector.** Let $k \ge 1$ be an integer, let
+Let $k \ge 1$ be an integer, let
 $\tau_k = (k + \sqrt{k^2 + 4})/2$ and $\tau_k' = (k - \sqrt{k^2 + 4})/2$, and let $M$ be a
 $2 \times 2$ integer matrix. Then $(\tau_k, 1)^T$ is a right eigenvector of $M$ over $\mathbb{R}$
 if and only if $M$ has rows $(km + n, m)$ and $(m, n)$ for some integers $m, n$. For such $M$ the

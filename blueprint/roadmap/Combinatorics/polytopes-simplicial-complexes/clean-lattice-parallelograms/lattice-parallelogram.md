@@ -1,6 +1,6 @@
 # Parallelogram spanned by two vectors
 
-**Parallelogram spanned by two vectors.** For $u, v \in \mathbb{R}^2$, the parallelogram
+For $u, v \in \mathbb{R}^2$, the parallelogram
 spanned by $u$ and $v$ is the set $\{s u + t v : 0 \le s \le 1,\ 0 \le t \le 1\}$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Non-negative points of a weighted rank-3 matroid are connected by non-negative lines
 
-**Non-negative points of a weighted rank-3 matroid are connected by non-negative lines.** Let $n$
+Let $n$
 be a natural number, let $M$ be a simple matroid of rank $3$ on the ground set $\{0, \dots, n-1\}$
 (every set of at most two points is independent) and let $a_0, \dots, a_{n-1}$ be real weights
 with $a_0 + \dots + a_{n-1} \ge 0$. Then the graph on the points $i$ with $a_i \ge 0$, in which two

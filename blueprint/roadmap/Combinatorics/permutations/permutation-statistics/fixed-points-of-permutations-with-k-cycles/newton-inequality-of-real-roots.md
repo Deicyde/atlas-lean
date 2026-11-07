@@ -1,6 +1,6 @@
 # Newton's inequalities
 
-**Newton's inequalities.** Let $p(x) = \sum_{j=0}^{n} a_j x^j$ be a real polynomial of degree
+Let $p(x) = \sum_{j=0}^{n} a_j x^j$ be a real polynomial of degree
 $n \ge 2$ that splits over $\mathbb{R}$, that is, all $n$ of its zeros, counted with
 multiplicity, are real. Then for every $j$ with $1 \le j \le n - 1$,
 

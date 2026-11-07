@@ -1,6 +1,6 @@
 # Evaluating the zero coefficient function
 
-**Evaluating the zero coefficient function.** For every real sequence $Q$, the evaluation of
+For every real sequence $Q$, the evaluation of
 the zero coefficient function at $Q$ is $0$.
 
 ## Sources

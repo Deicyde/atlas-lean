@@ -1,6 +1,6 @@
 # Invariant of a phase
 
-**Invariant of a phase.** Let $\mathrm{mate}$ be a valid partner assignment, let $j$ be a
+Let $\mathrm{mate}$ be a valid partner assignment, let $j$ be a
 right vertex first reached in round $d + 1$ of the alternating layered search, and let $Q$ be an
 alternating chain from $j$ with $d + 1$ pairs. Let $J$ be a list of right vertices each first
 reached in round $d + 1$, $U$ a set of left vertices, $D$ a set of right vertices and $F$ a list of

@@ -1,6 +1,6 @@
 # Weight of an even table
 
-**Weight of an even table.** Let $M$ be a commutative monoid and $f : \mathbb{N} \to M$. The
+Let $M$ be a commutative monoid and $f : \mathbb{N} \to M$. The
 weight of an even $k \times n$ table $t$ with respect to $f$ is the product of the column weights
 of its $n$ columns with respect to $f$:
 

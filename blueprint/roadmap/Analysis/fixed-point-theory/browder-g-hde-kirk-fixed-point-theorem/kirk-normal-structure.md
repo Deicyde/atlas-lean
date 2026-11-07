@@ -1,6 +1,6 @@
 # Kirk's fixed-point theorem for sets with normal structure
 
-**Kirk's fixed-point theorem for sets with normal structure.** Let $E$ be a reflexive real
+Let $E$ be a reflexive real
 Banach space, meaning that the canonical embedding of $E$ into its double dual is surjective, and
 let $K \subseteq E$ be a nonempty, closed, bounded, convex set with normal structure. Then every
 nonexpansive self-map $T : K \to K$ has a fixed point.

@@ -1,6 +1,6 @@
 # Euclidean circle reparametrizations as Conway-knot ones
 
-**Euclidean circle reparametrizations as Conway-knot ones.** A circle reparametrization in
+A circle reparametrization in
 the sense of parametrized links, given by a smooth strictly increasing map
 $f : \mathbb{R} \to \mathbb{R}$ with smooth two-sided inverse $g$ such that
 $f(t + 2\pi) = f(t) + 2\pi$ and $g(t + 2\pi) = g(t) + 2\pi$ for all $t$, is sent to the

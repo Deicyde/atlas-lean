@@ -1,6 +1,6 @@
 # Exactness at the ray class group
 
-**Exactness at the ray class group.** Let $K$ be a number field, $\mathfrak m$ a modulus of
+Let $K$ be a number field, $\mathfrak m$ a modulus of
 $K$ with finite part $\mathfrak m_0$, $I_{\mathfrak m}$ the group of nonzero fractional ideals of
 $\mathcal O_K$ coprime to $\mathfrak m_0$, $\mathrm{Cl}_{\mathfrak m}$ the ray class group,
 $K_{\mathfrak m}$ the group of $x \in K^\times$ with $x\mathcal O_K \in I_{\mathfrak m}$, and

@@ -1,6 +1,6 @@
 # Turing-computable functions are recursive
 
-**Turing-computable functions are recursive.** Let $f : \mathbb{N} \to \mathbb{N}$ and suppose
+Let $f : \mathbb{N} \to \mathbb{N}$ and suppose
 that some finite multi-stack Turing machine (finitely many stacks, labels and internal states,
 and a finite input alphabet), together with identifications of its input and output stack
 alphabets with the booleans, computes $f$ under the binary encoding of natural numbers (least

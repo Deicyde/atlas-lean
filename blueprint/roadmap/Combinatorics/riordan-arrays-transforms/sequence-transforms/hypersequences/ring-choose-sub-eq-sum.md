@@ -1,6 +1,6 @@
 # Alternating binomial expansion of a shifted binomial coefficient
 
-**Alternating binomial expansion of a shifted binomial coefficient.** For all natural numbers
+For all natural numbers
 $m$, $n$ and $k$,
 
 $$\binom{n+m-k-1}{m} = \sum_{j=0}^{k} (-1)^j \binom{k}{j} \binom{n+m-j-1}{m-j},$$

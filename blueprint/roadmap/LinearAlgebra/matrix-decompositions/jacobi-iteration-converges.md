@@ -1,6 +1,6 @@
 # Convergence of the Jacobi method for strictly diagonally dominant matrices
 
-**Convergence of the Jacobi method for strictly diagonally dominant matrices.** Let $A$ be a
+Let $A$ be a
 real square matrix with rows and columns indexed by a finite type, and let $b$ be a real vector.
 Suppose $A$ is strictly diagonally dominant: $\sum_{j \ne i} |A_{ij}| < |A_{ii}|$ for every $i$.
 Define the Jacobi sweep $J$ by $J(x)_i = \bigl(b_i - \sum_{j \ne i} A_{ij} x_j\bigr) / A_{ii}$.

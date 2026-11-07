@@ -1,6 +1,6 @@
 # Upper bound for the number of $n$ with $\varphi(\sigma(n)) \ge c n$
 
-**Upper bound for the number of $n$ with $\varphi(\sigma(n)) \ge c n$.** Write $\log_k$ for
+Write $\log_k$ for
 the $k$-fold iterated natural logarithm, so $\log_3 x = \log \log \log x$, and let $\varphi$ be
 Euler's totient function and $\sigma$ the sum of divisors. For every real $c > 0$ there is a
 constant $C$ such that for all sufficiently large $x$, the number of integers $n$ with

@@ -1,6 +1,6 @@
 # Davies's theorem on triangle-free wheel-free graphs
 
-**Davies's theorem on triangle-free wheel-free graphs.** For every positive integer $k$
+For every positive integer $k$
 there are a natural number $n$ and a simple graph $G$ on the vertex set $\{0, \dots, n - 1\}$
 such that $G$ contains no triangle, $G$ is wheel-free (it has no induced wheel) and the
 chromatic number of $G$ is at least $k$.

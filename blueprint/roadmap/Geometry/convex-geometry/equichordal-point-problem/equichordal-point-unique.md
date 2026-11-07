@@ -1,6 +1,6 @@
 # Equichordal point theorem
 
-**Equichordal point theorem.** Let $K$ be a compact convex subset of the Euclidean plane
+Let $K$ be a compact convex subset of the Euclidean plane
 with nonempty interior. Then $K$ does not have two distinct equichordal points: there are no
 points $P \ne Q$ of the plane such that both $P$ and $Q$ are equichordal points of $K$.
 

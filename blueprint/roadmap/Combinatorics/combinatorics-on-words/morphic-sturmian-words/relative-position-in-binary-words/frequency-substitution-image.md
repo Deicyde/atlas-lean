@@ -1,6 +1,6 @@
 # Letter frequencies of a substitution image
 
-**Letter frequencies of a substitution image.** Let $\mu$ be a substitution sending the
+Let $\mu$ be a substitution sending the
 letters $a$ and $b$ to nonempty finite words, extended to words by concatenation, such that both
 $a$ and $b$ occur in $\mu(a)\mu(b)$. For a word $x$ and a letter $\alpha$ write $\#_\alpha(x, m)$
 for the number of letters $\alpha$ among the first $m$ letters of $x$; for a finite word $u$

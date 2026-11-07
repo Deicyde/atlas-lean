@@ -1,6 +1,6 @@
 # Transition recurrence of the transitive-closure stages
 
-**Transition recurrence of the transitive-closure stages.** Let $A$ be a Boolean adjacency
+Let $A$ be a Boolean adjacency
 matrix on the vertices $0, \dots, n-1$, and for $m \le n$ let $T^{(m)}$ be the matrix produced by
 the staged transitive-closure computation on $A$ after its first $m$ pivot stages. For every
 $k < n$ and all vertices $i$ and $j$,

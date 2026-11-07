@@ -1,6 +1,6 @@
 # Prefixes of the $m$th order Gijswijt sequence
 
-**Prefixes of the $m$th order Gijswijt sequence.** Let $m$ and $n$ be natural numbers. The
+Let $m$ and $n$ be natural numbers. The
 list of the first $n$ terms of the $m$th order sequence $A^{(m)}$ is defined by recursion on $n$:
 for $n = 0$ it is the empty list, and the list for $n + 1$ is the list $P$ for $n$ followed by
 the term $\max(m, \mathcal{C}(P))$, where $\mathcal{C}(P)$ is the curling number of $P$ (the

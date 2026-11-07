@@ -1,6 +1,6 @@
 # Morphic coding of the Wythoff mex pairs at level three
 
-**Morphic coding of the Wythoff mex pairs at level three.** Let $a_n$ be the least integer
+Let $a_n$ be the least integer
 $m > 3$ that differs from $a_i$ and $b_i$ for every $i < n$, and let $b_n = a_n + n + 4$, so that
 $(a_0, b_0) = (4, 8)$. Let $f_3$ be the morphism on the alphabet $\{0, 1, \dots, 21\}$ given by
 $0 \mapsto 0\,1$, $1 \mapsto 2$, $2 \mapsto 3\,4$, $3 \mapsto 5\,6$, $4 \mapsto 7$,

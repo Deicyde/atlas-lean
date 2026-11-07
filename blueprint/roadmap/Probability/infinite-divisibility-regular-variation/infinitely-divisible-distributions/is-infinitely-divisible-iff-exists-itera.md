@@ -1,6 +1,6 @@
 # Infinite divisibility through iterated convolution
 
-**Infinite divisibility through iterated convolution.** Let $M$ be an additive commutative
+Let $M$ be an additive commutative
 monoid with a measurable structure in which addition is jointly measurable. A measure $\mu$ on
 $M$ is infinitely divisible if and only if for every natural number $n \ne 0$ there is a
 probability measure $\nu$ on $M$ such that $\mu = \nu * (\nu * (\cdots * (\nu * \nu)))$ with $n$

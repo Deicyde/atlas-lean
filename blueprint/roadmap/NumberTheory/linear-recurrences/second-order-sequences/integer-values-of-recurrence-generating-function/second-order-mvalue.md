@@ -1,6 +1,6 @@
 # The quantity $M(r, s)$ for the recurrence $A_{n+1} = pA_n + A_{n-1}$
 
-**The quantity $M(r, s)$ for the recurrence $A_{n+1} = pA_n + A_{n-1}$.** For integers $a$,
+For integers $a$,
 $b$, $p$, $r$, $s$, $M(r, s) = \frac{br^2 + bs^2 - apr^2 + 2ars}{s^2 - prs - r^2}$, a rational
 number, with the convention that a fraction with denominator $0$ is $0$.
 

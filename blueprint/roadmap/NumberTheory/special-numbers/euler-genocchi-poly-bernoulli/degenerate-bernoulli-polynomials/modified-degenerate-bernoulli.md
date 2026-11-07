@@ -1,6 +1,6 @@
 # Modified degenerate Bernoulli polynomials
 
-**Modified degenerate Bernoulli polynomials.** For a complex number $\lambda$, a natural number
+For a complex number $\lambda$, a natural number
 $n$ and a complex number $x$, the modified degenerate Bernoulli polynomial is
 $\mathfrak{B}_{n,\lambda}(x) = c^{n-1} B_n(x)$, where $c = \log(1+\lambda)/\lambda$ with the
 principal branch of the logarithm, $B_n$ is the $n$-th Bernoulli polynomial (with

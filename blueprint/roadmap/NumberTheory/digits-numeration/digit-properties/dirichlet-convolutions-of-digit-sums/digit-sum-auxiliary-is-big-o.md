@@ -1,6 +1,6 @@
 # Size bounds for the Trollope–Delange auxiliary functions
 
-**Size bounds for the Trollope–Delange auxiliary functions.** Let $q \ge 2$ be an integer.
+Let $q \ge 2$ be an integer.
 For base $q$, let $h$ be Delange's series, $F$ the Trollope–Delange fluctuation, $J$ the
 remainder of the Trollope–Delange formula, and
 $G(x) = \int_1^x F(\log u / \log q) \, du/u$,

@@ -1,6 +1,6 @@
 # First term of the Pascal first-column sequence
 
-**First term of the Pascal first-column sequence.** For every $k \ge 0$, the first-column
+For every $k \ge 0$, the first-column
 sequence $\alpha^{(k)}$ satisfies $\alpha^{(k)}_1 = 1$.
 
 ## Sources

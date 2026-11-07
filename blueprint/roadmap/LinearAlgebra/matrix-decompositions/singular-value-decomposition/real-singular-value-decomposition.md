@@ -1,6 +1,6 @@
 # Real singular value decomposition
 
-**Real singular value decomposition.** Let $A$ be a real $m \times n$ matrix. Then there are
+Let $A$ be a real $m \times n$ matrix. Then there are
 orthogonal matrices $U$ of size $m \times m$ and $V$ of size $n \times n$ and real numbers
 $\sigma_1, \dots, \sigma_n \ge 0$ with $\sigma_j = 0$ for every $j > m$, such that
 $A = U \Sigma V^{\mathsf{T}}$, where $\Sigma$ is the $m \times n$ matrix with

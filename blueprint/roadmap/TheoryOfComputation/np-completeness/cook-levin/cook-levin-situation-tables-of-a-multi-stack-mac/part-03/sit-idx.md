@@ -1,6 +1,6 @@
 # Situation index of a configuration
 
-**Situation index of a configuration.** Fix an encoding $E$ of a finite TM2 machine $M$, with
+Fix an encoding $E$ of a finite TM2 machine $M$, with
 $K$ stacks, symbol-code bound $g$ and window depth $d$. The situation index of a configuration $c$
 is the number
 

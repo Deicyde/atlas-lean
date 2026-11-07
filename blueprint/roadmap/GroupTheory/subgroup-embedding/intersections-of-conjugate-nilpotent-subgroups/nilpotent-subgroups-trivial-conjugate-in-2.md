@@ -1,6 +1,6 @@
 # Nilpotent subgroups of a finite simple group have conjugates meeting trivially
 
-**Nilpotent subgroups of a finite simple group have conjugates meeting trivially.** Let $G$ be a
+Let $G$ be a
 finite non-abelian simple group and let $A$ and $B$ be nilpotent subgroups of $G$. Then there is
 $x \in G$ with $A \cap x B x^{-1} = 1$.
 

@@ -1,6 +1,6 @@
 # Sieve bound for integers without small prime factors
 
-**Sieve bound for integers without small prime factors.** Write $p(n)$ for the least prime
+Write $p(n)$ for the least prime
 factor of an integer $n \ge 2$, and set $p(1) = 1$. There is a constant $C$ such that for all real
 $x$ and $y$ with $2 \le y \le x$, the number of integers $1 \le n \le x$ with $p(n) > y$ is at
 most $C x / \log y$.

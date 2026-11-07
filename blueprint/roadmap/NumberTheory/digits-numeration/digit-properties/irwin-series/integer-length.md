@@ -1,6 +1,6 @@
 # Integer length
 
-**Integer length.** For natural numbers $b$ and $n$, the integer length of $n$ in base $b$ is
+For natural numbers $b$ and $n$, the integer length of $n$ in base $b$ is
 the number of digits in the minimal base-$b$ representation of $n$ (its base-$b$ digits without
 leading zeros); in particular $0$ has length $0$.
 

@@ -1,6 +1,6 @@
 # Eigenvalues of the hyperbolic Laplacian on a modular quotient
 
-**Eigenvalues of the hyperbolic Laplacian on a modular quotient.** Let $\Gamma$ be a subgroup
+Let $\Gamma$ be a subgroup
 of $\mathrm{SL}(2, \mathbb{Z})$. A real number $\lambda$ is an eigenvalue of the hyperbolic
 Laplacian $\Delta$ for $\Gamma$ when there is a function $f \colon \mathbb{H} \to \mathbb{C}$ on
 the upper half plane $\mathbb{H}$ such that $f$ is not identically zero, $f$ is the restriction of

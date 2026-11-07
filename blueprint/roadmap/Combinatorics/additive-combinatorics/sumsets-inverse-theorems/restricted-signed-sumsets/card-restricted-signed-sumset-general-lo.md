@@ -1,6 +1,6 @@
 # Lower bounds for restricted signed sumsets of nonnegative integers
 
-**Lower bounds for restricted signed sumsets of nonnegative integers.** Let $h$ and $k$ be
+Let $h$ and $k$ be
 integers with $1 \le h \le k$, let $A$ be a set of $k$ nonnegative integers, and write
 $h^{\wedge}_{\pm} A$ for the restricted signed $h$-fold sumset of $A$. If $0 \notin A$, then
 $2|h^{\wedge}_{\pm} A| \ge 4(hk - h^2) + h(h+1) + 2$; if $0 \in A$, then

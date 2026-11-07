@@ -1,6 +1,6 @@
 # Restricting a Frobenius element to an intermediate field
 
-**Restricting a Frobenius element to an intermediate field.** Let $K \subseteq L \subseteq M$
+Let $K \subseteq L \subseteq M$
 be a tower of number fields with $L/K$ and $M/K$ Galois, and let $\mathcal{O}_K$,
 $\mathcal{O}_L$ and $\mathcal{O}_M$ be their rings of integers. Let $Q_L$ be a prime of
 $\mathcal{O}_L$ at which $\mathcal{O}_L$ is unramified over $\mathcal{O}_K$, let $Q_M$ be a

@@ -1,6 +1,6 @@
 # Broughan–Barnett ratio limit, zero-based form
 
-**Broughan–Barnett ratio limit, zero-based form.** Assume that there are infinitely many primes
+Assume that there are infinitely many primes
 (which always holds). Let $p_0 = 2$, $p_1 = 3$, $p_2 = 5$, $\dots$ be the primes in increasing
 order, indexed from zero, and let $q_n = p_{p_n}$. Then $q_n / q_{n+1} \to 1$ as $n \to \infty$.
 

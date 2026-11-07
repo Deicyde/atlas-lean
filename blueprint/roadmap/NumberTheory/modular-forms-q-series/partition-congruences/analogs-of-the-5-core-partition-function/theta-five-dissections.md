@@ -1,6 +1,6 @@
 # 5-dissections of Ramanujan's theta functions φ and ψ
 
-**5-dissections of Ramanujan's theta functions φ and ψ.** Let
+Let
 $f(a, b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's general theta
 function, $\varphi(q) = f(q, q)$ and $\psi(q) = f(q, q^3)$. As integer power series in $q$,
 $\varphi(q) = \varphi(q^{25}) + 2q f(q^{15}, q^{35}) + 2q^4 f(q^5, q^{45})$ and

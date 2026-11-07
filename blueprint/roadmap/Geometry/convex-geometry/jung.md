@@ -1,6 +1,6 @@
 # Jung's theorem
 
-**Jung's theorem.** Let $n \ge 1$ and let $s$ be a bounded subset of the Euclidean space
+Let $n \ge 1$ and let $s$ be a bounded subset of the Euclidean space
 $\mathbb{R}^n$ with diameter $\operatorname{diam} s$. Then there is a point $c \in \mathbb{R}^n$
 such that $s$ is contained in the closed ball with center $c$ and radius
 $\sqrt{n / (2(n + 1))} \cdot \operatorname{diam} s$.

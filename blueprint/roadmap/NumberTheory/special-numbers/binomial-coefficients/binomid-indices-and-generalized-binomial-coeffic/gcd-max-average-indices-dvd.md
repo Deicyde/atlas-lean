@@ -1,6 +1,6 @@
 # Every index with maximal average is a multiple of the gcd of those up to $m$
 
-**Every index with maximal average is a multiple of the gcd of those up to $m$.** Let
+Let
 $m \ge 0$, let $\eta = (e_1, e_2, \dots)$ be the lex-minimal extension of its first $m$ entries,
 with averages $A_i = (e_1 + \dots + e_i)/i$, let $J$ be the set of indices $1 \le j \le m$ with
 $A_j = \max \{A_{j'} \mid 1 \le j' \le m\}$, and let $g = \gcd J$. Then $g$ divides every

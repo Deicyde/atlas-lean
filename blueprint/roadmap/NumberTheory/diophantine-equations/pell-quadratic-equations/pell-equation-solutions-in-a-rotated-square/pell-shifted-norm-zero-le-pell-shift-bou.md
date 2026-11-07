@@ -1,6 +1,6 @@
 # The shifted Pell norm function at zero is at most the bound
 
-**The shifted Pell norm function at zero is at most the bound.** Let $D$, $\alpha$, $\beta$,
+Let $D$, $\alpha$, $\beta$,
 $a$ and $b$ be integers and let $i, j \in \{1, -1\}$. Put $\varepsilon = \alpha + \beta \sqrt{D}$
 and $\bar\varepsilon = \alpha - \beta \sqrt{D}$, let
 $u(x) = (\varepsilon^x + \bar\varepsilon^x) / 2$ and

@@ -1,6 +1,6 @@
 # Resultant identity for pairwise products
 
-**Resultant identity for pairwise products.** Let $K$ be a field of characteristic $0$, let
+Let $K$ be a field of characteristic $0$, let
 $m, n \ge 0$ be integers, and let $\alpha_1, \dots, \alpha_m$ and $\beta_1, \dots, \beta_n$ be
 elements of $K$. Regard $f(y) = \prod_{i=1}^{m} (1 - \alpha_i y)$ and
 $g(y) = \prod_{j=1}^{n} (y - \beta_j x)$ as polynomials in $y$ with coefficients in $K[x]$,

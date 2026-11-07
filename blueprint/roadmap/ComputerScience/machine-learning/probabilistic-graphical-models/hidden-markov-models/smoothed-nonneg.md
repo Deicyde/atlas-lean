@@ -1,6 +1,6 @@
 # Smoothing weights are nonnegative
 
-**Smoothing weights are nonnegative.** Let $g$ be a hidden Markov model with finite state set
+Let $g$ be a hidden Markov model with finite state set
 $S$ whose initial, transition and emission weights are nonnegative elements of a linearly ordered
 semifield $K$, and let $x_0, x_1, \dots$ be observations. For all $t, k \in \mathbb{N}$ and
 $s \in S$, the smoothing weight $\alpha_t(s)\, \beta_k(t, s) / L_{t+k}$ is nonnegative, where

@@ -1,6 +1,6 @@
 # $k$-Pell–Lucas numbers that are powers of two (Corollary 1)
 
-**$k$-Pell–Lucas numbers that are powers of two (Corollary 1).** Let $k \ge 2$, $n \ge 1$ and
+Let $k \ge 2$, $n \ge 1$ and
 $m \ge 1$ be natural numbers, and let $Q^{(k)}_n$ be the $n$th $k$-Pell–Lucas number. Then
 $Q^{(k)}_n = 2^m$ if and only if either $n = 1$ and $m = 1$, or $n = 3$, $m = 4$ and $k \ge 3$.
 

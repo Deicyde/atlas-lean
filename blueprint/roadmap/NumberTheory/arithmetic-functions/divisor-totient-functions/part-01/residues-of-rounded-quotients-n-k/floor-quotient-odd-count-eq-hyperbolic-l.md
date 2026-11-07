@@ -1,6 +1,6 @@
 # Odd floor quotients as a hyperbolic lattice-point difference
 
-**Odd floor quotients as a hyperbolic lattice-point difference.** For every natural number
+For every natural number
 $n$, the floor sequence parity count $\mathcal{F}_n$ equals the number of integer pairs $(x, y)$
 with $x, y \ge 1$ and $n/2 < xy \le n$ minus the number of integer pairs $(x, y)$ with
 $x, y \ge 1$ and $xy \le n/2$.

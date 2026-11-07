@@ -1,6 +1,6 @@
 # No solutions of the generalized fruit equation with even $x$
 
-**No solutions of the generalized fruit equation with even $x$.** Let $K$ be a number field
+Let $K$ be a number field
 with ring of integers $\mathcal{O}_K$ such that some prime ideal of $\mathcal{O}_K$ lying over $2$
 has ramification index $1$ and inertia degree $1$ over $\mathbb{Z}$. Let $a, b \in \mathcal{O}_K$
 be nonzero, let $r \ge 2$ and $d \ge 3$ be odd natural numbers, and let $c = 2^d b - 3^r$. Then

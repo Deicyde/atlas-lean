@@ -1,6 +1,6 @@
 # Abel's variant of Klamkin's identity
 
-**Abel's variant of Klamkin's identity.** For real numbers $c$ and $d$ write
+For real numbers $c$ and $d$ write
 $\binom{c}{d} = \Gamma(c+1) / (\Gamma(d+1) \, \Gamma(c-d+1))$; for natural numbers this is the
 usual binomial coefficient. Let $a$ and $b$ be real numbers such that $-a$ and $-b$ are not in
 $\{0, 1, 2, \dots\}$ and $a - b$ is not an integer, and let $n \ge 1$ be a natural number with

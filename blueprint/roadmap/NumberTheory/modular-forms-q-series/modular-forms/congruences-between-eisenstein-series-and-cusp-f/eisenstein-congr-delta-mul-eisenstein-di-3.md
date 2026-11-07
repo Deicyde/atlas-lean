@@ -1,6 +1,6 @@
 # Lu's three-term congruence for $G_k$
 
-**Lu's three-term congruence for $G_k$.** Let $k \in \{36, 40, 42, 44, 46, 50\}$.
+Let $k \in \{36, 40, 42, 44, 46, 50\}$.
 For $w, n \in \mathbb{N}$ let $\sigma_{-1}(n)$ be $1$ if $n = 0$ and $0$ otherwise; for $w \ge 1$
 let $\sigma_{w-1}(0) = -B_w/(2w)$, where $B_w$ is the $w$-th Bernoulli number, and
 $\sigma_{w-1}(n) = \sum_{d \mid n} d^{w-1}$ for $n \ge 1$. In $\mathbb{Q}[[q]]$ let

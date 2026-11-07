@@ -1,6 +1,6 @@
 # Prime number theorem
 
-**Prime number theorem.** Let $\pi(n)$ be the number of primes $p \le n$. Then
+Let $\pi(n)$ be the number of primes $p \le n$. Then
 $\pi(n) \sim n / \log n$ as $n \to \infty$ through the natural numbers, that is,
 $\pi(n) - n / \log n = o(n / \log n)$, where $\log$ is the natural logarithm.
 

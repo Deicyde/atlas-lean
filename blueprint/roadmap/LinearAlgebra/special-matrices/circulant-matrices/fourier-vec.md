@@ -1,3 +1,3 @@
 # Fourier vector on the integers modulo n
 
-**Fourier vector on the integers modulo n.** The `j`-th Fourier vector on `ZMod n`, using the canonical positive character.
+The `j`-th Fourier vector on `ZMod n`, using the canonical positive character.

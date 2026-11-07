@@ -1,6 +1,6 @@
 # Integrality of Göbel sequences up to index 7 via finite $p$-adic checks
 
-**Integrality of Göbel sequences up to index 7 via finite $p$-adic checks.** Let $g_{k,l}$ be
+Let $g_{k,l}$ be
 the $(k, l)$-Göbel sequence. For a prime $p$, call a rational number $x$ $p$-integral if
 $x \in \mathbb{Z}_{(p)}$, that is, if $x = 0$ or its $p$-adic valuation $\nu_p(x)$ is
 nonnegative. The following two statements are equivalent.

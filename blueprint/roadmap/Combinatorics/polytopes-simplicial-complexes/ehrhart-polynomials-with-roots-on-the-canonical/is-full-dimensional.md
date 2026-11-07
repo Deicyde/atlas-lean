@@ -1,6 +1,6 @@
 # Full-dimensional sets
 
-**Full-dimensional sets.** A subset $P$ of $\mathbb{R}^d$ is full-dimensional when it is
+A subset $P$ of $\mathbb{R}^d$ is full-dimensional when it is
 nonempty and the direction of its affine span is all of $\mathbb{R}^d$ (equivalently, the affine
 span of $P$ is $\mathbb{R}^d$).
 

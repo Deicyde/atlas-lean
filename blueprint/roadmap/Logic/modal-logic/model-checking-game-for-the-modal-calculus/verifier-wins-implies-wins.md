@@ -1,6 +1,6 @@
 # Game-vs-satisfaction, converse direction
 
-**Game-vs-satisfaction, converse direction.** Let $M$ be a Kripke model, $\mathit{env}$ an
+Let $M$ be a Kripke model, $\mathit{env}$ an
 environment assigning a set of worlds to each variable index, $\varphi$ a fixpoint-free formula
 and $w$ a world. If Verifier has a winning strategy, in environment $\mathit{env}$, in the
 model-checking game on $M$ from the position made of the μ-calculus embedding of $\varphi$, the

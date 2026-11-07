@@ -1,6 +1,6 @@
 # Row lengths of $\theta^{(n)}$
 
-**Row lengths of $\theta^{(n)}$.** For every $n \in \mathbb{N}$, the row lengths of the Young
+For every $n \in \mathbb{N}$, the row lengths of the Young
 diagram $\theta^{(n)}$, from the top row down, are $n + 2$, $2$, and then $1$ repeated $n$ times.
 
 ## Sources

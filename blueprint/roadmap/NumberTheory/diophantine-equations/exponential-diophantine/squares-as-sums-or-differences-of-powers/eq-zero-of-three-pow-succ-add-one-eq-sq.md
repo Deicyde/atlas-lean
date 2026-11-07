@@ -1,6 +1,6 @@
 # Powers of three plus one that are perfect squares
 
-**Powers of three plus one that are perfect squares.** For natural numbers $y$ and $z$, if
+For natural numbers $y$ and $z$, if
 $3^{y+1} + 1 = z^2$, then $y = 0$.
 
 ## Sources

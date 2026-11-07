@@ -1,6 +1,6 @@
 # Relaxed triangle inequality for squared distance
 
-**Relaxed triangle inequality for squared distance.** For all points
+For all points
 $a, b, c \in \mathbb{Z}^d$, writing $\delta(x, y)$ for the squared distance from $x$ to $y$,
 we have $\delta(a, c) \le 2\,(\delta(a, b) + \delta(b, c))$.
 

@@ -1,6 +1,6 @@
 # Partial Bell polynomial
 
-**Partial Bell polynomial.** Let $R$ be a commutative semiring, let $n, k \in \mathbb{N}$
+Let $R$ be a commutative semiring, let $n, k \in \mathbb{N}$
 and let $x_1, x_2, \dots$ be a sequence in $R$. The partial Bell polynomial $B_{n,k}(x)$ is
 the sum, over all tuples $(m_1, \dots, m_{n+1})$ of natural numbers with
 $\sum_j j\, m_j = n$ and $\sum_j m_j = k$, of

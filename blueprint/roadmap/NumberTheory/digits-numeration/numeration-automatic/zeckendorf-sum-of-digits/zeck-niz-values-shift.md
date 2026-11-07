@@ -1,6 +1,6 @@
 # Values of the variation on $\mathrm{NIZ}_{k+2}$ are shifted by $-1$
 
-**Values of the variation on $\mathrm{NIZ}_{k+2}$ are shifted by $-1$.** Let $\ell \ge 2$,
+Let $\ell \ge 2$,
 let $r$ satisfy $F_\ell \le r < F_{\ell+1}$, where $F_1 = F_2 = 1, F_3 = 2, \dots$ are the
 Fibonacci numbers, and let $k \ge \ell + 4$. Write $\Delta^{(r)}$ for the variation of the
 Zeckendorf sum of digits under adding $r$ on the Zeckendorf-adic integers, $\mathrm{NIZ}_m$ for

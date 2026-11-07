@@ -1,6 +1,6 @@
 # Summability of the logarithmic Poisson series
 
-**Summability of the logarithmic Poisson series.** For every real $x$, the series
+For every real $x$, the series
 $\sum_{k=1}^{\infty} e^{-x} x^k \log(k + 1) / k!$ is summable.
 
 ## Sources

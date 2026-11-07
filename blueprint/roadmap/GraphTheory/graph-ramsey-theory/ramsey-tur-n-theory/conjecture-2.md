@@ -1,6 +1,6 @@
 # Ramsey–Turán problem for $K_4$ (Erdős Problem 22)
 
-**Ramsey–Turán problem for $K_4$ (Erdős Problem 22).** For a graph $G$ write $\alpha(G)$ for
+For a graph $G$ write $\alpha(G)$ for
 its independence number and $e(G)$ for its number of edges, and call $G$ $K_4$-free if it has no
 four pairwise adjacent vertices. The statement is the conjunction of the following four
 assertions.

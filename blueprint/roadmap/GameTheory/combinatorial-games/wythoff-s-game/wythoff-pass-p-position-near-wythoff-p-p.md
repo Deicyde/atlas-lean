@@ -1,6 +1,6 @@
 # P-positions with the pass available lie near Wythoff P-positions
 
-**P-positions with the pass available lie near Wythoff P-positions.** Let
+Let
 $\mathcal{G}_1(x, y, p)$ be the Grundy number of Wythoff's game with a one-time pass, where $p = 1$
 means the pass is still available and $p = 0$ gives classical Wythoff's game. For all natural
 numbers $x, y$ with $\mathcal{G}_1(x, y, 1) = 0$ there exist natural numbers $v, w$ with

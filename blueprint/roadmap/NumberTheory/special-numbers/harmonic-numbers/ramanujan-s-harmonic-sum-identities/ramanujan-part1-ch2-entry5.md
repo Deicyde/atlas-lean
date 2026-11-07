@@ -1,6 +1,6 @@
 # Ramanujan's sum identity for $1/((6k)^3 - 6k)$
 
-**Ramanujan's sum identity for $1/((6k)^3 - 6k)$.** For every positive integer $n$,
+For every positive integer $n$,
 
 $$
 1 + 2 \sum_{k=1}^{n} \frac{1}{(6k)^3 - 6k} =

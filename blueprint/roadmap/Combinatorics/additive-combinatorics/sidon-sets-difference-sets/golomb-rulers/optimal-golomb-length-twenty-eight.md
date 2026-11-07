@@ -1,6 +1,6 @@
 # Optimal 28-mark Golomb ruler
 
-**Optimal 28-mark Golomb ruler.** The optimal Golomb ruler length with $28$ marks is $585$.
+The optimal Golomb ruler length with $28$ marks is $585$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Pushed-fill forcing on a real run
 
-**Pushed-fill forcing on a real run.** Let $E$ be an encoding of the machine $M$ with $K$
+Let $E$ be an encoding of the machine $M$ with $K$
 stacks and layout $L$, let $d$ be the window depth of $M$, let $H \in \mathbb{N}$ with $d \le H$,
 let $W$ be the row width of $L$ at height $H$, and write $X[t, x] = tW + x$ for the label/state
 variables and $C[t, k, j, x]$ for the cell variable of row $t$, stack $k$, depth $j$ and symbol

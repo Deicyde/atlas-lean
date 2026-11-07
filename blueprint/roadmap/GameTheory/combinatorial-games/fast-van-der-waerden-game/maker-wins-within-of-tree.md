@@ -1,6 +1,6 @@
 # Tree criterion for fast wins
 
-**Tree criterion for fast wins.** Let $S$ be a finite set of natural numbers and $p$ a
+Let $S$ be a finite set of natural numbers and $p$ a
 natural number. Let $T$ be a finite rooted tree with root $r$ whose vertices are pairwise
 distinct rationals, such that every path from $r$ down to a vertex has at most $p$ vertices and
 some such path has exactly $p$ vertices (so $T$ has height $p - 1$). Suppose that for every leaf

@@ -1,6 +1,6 @@
 # Beck–Kifer reduction by a common factor of all generators but the first
 
-**Beck–Kifer reduction by a common factor of all generators but the first.** Let $K \ge 2$,
+Let $K \ge 2$,
 let $a_1$ and $\ell$ be positive integers, and let $a'_2, \dots, a'_K$ be positive integers with
 $\gcd(a'_2, \dots, a'_K) = 1$ such that $\gcd(a_1, \ell a'_2, \dots, \ell a'_K) = 1$. Let $s$ be a
 natural number. If $g'$ is the generalized Frobenius number $g(a_1, a'_2, \dots, a'_K; s)$, then

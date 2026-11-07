@@ -1,6 +1,6 @@
 # The corollary to Entry 10 in the half-plane $\operatorname{Re} r < -1$
 
-**The corollary to Entry 10 in the half-plane $\operatorname{Re} r < -1$.** Call
+Call
 $x \in \mathbb{C}$ admissible if $j + 1 + x \neq 0$ for every natural number $j$. Let
 $\varphi : \mathbb{C} \to \mathbb{C} \to \mathbb{C}$ be such that, for every $r \in \mathbb{C}$ with
 $\operatorname{Re} r < 0$ and every admissible $x$, the series

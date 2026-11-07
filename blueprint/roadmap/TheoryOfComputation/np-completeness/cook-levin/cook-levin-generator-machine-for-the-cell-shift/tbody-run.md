@@ -1,6 +1,6 @@
 # One iteration of the time loop of the shift generator
 
-**One iteration of the time loop of the shift generator.** Let $L$ be a layout with $g$ symbol
+Let $L$ be a layout with $g$ symbol
 codes, let $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ be situation tables, let
 $N, T, H, t \in \mathbb{N}$ with $t < T$, and suppose the tables are well formed for $N$
 situations at height $H$. Write $W$ for the number of variables per time step at height $H$ and

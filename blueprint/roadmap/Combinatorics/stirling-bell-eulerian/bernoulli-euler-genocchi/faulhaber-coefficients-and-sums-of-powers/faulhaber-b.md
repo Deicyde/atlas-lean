@@ -1,6 +1,6 @@
 # The Faulhaber coefficients $b_{k,r}$
 
-**The Faulhaber coefficients $b_{k,r}$.** For natural numbers $p$ and $q$, let
+For natural numbers $p$ and $q$, let
 $R(p, q) = \sum_{j=0}^{q} (-1)^j \binom{2q}{j} (q - j)^{2p}$, and for natural numbers $q$
 and $s$ let $\mathrm{Ps}_q^{(s)}$ be the Legendre–Stirling number of the first kind, the
 coefficient of $x^s$ in $\prod_{i=0}^{q-1} (x - i(i+1))$. For natural numbers $k$ and $r$,

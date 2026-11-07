@@ -1,6 +1,6 @@
 # $(2,3)$-generation of $\mathrm{SL}_3(\mathbb{Z})$ (Kourovka 14.49)
 
-**$(2,3)$-generation of $\mathrm{SL}_3(\mathbb{Z})$ (Kourovka 14.49).** The statement that
+The statement that
 there are $a, b \in \mathrm{SL}_3(\mathbb{Z})$ such that $a$ has order $2$, $b$ has order $3$, and
 $a$ and $b$ generate $\mathrm{SL}_3(\mathbb{Z})$.
 

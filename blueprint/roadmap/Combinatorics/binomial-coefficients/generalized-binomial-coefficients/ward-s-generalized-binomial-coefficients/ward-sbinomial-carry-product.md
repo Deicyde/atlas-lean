@@ -1,6 +1,6 @@
 # Ward's identity for generalized binomial coefficients
 
-**Ward's identity for generalized binomial coefficients.** Let
+Let
 $s, f : \mathbb{N} \to \mathbb{Z}$ satisfy $s(b) \ne 0$ for every natural number $b$ and
 $f(k) = \prod_{d \mid k} s(d)$ for every natural number $k$, the product running over the
 positive divisors of $k$ (empty for $k = 0$). Write $f!(t) = \prod_{i=1}^{t} f(i)$. Then for all

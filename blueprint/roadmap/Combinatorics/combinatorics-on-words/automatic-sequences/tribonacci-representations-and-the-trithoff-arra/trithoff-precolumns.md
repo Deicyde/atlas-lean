@@ -1,6 +1,6 @@
 # Precolumns of the Trithoff array
 
-**Precolumns of the Trithoff array.** Write $[u]_T$ for the Tribonacci value of a digit
+Write $[u]_T$ for the Tribonacci value of a digit
 word $u$, written most significant digit first. Let $n$ have Tribonacci representation $abc1$,
 where $a$ is a digit word and $b$, $c$ are digits. Let $\mathrm{out}(n) = [abc10]_T$ and
 $\mathrm{out}^2(n) = [abc100]_T$ be the next two entries of the Trithoff row of $n$, and extend

@@ -1,6 +1,6 @@
 # Polynomial counting the lattice points of dilates
 
-**Polynomial counting the lattice points of dilates.** Let $V \subseteq \mathbb{Z}^d$ be a
+Let $V \subseteq \mathbb{Z}^d$ be a
 finite set and let $P \subseteq \mathbb{R}^d$ be the lattice polytope spanned by $V$, its convex
 hull. A complex polynomial $E$ counts the lattice points of $P$ when, for every natural number
 $k$, $E(k)$ equals the ordinary Ehrhart count $|kP \cap \mathbb{Z}^d|$, the number of points of

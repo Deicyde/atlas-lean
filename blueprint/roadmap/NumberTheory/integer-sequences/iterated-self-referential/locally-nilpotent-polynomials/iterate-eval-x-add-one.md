@@ -1,6 +1,6 @@
 # Iterates of $x + 1$
 
-**Iterates of $x + 1$.** Let $u(x) = x + 1 \in \mathbb{Z}[x]$ and write $u^{(m)}$ for its
+Let $u(x) = x + 1 \in \mathbb{Z}[x]$ and write $u^{(m)}$ for its
 $m$-fold iterate as a map $\mathbb{Z} \to \mathbb{Z}$. For every integer $r$ and every natural
 number $m$, $u^{(m)}(r) = r + m$.
 

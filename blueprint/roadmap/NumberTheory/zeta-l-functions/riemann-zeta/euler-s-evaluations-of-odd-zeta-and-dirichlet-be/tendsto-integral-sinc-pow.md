@@ -1,6 +1,6 @@
 # Integrals of powers of $\sin x / x$
 
-**Integrals of powers of $\sin x / x$.** For every natural number $k \ge 1$, the improper
+For every natural number $k \ge 1$, the improper
 integral $\lim_{R \to \infty} \int_0^R (\sin x / x)^k \, dx$ exists and
 
 $$

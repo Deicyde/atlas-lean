@@ -1,6 +1,6 @@
 # Winning Verifier strategies transfer to the fragment game
 
-**Winning Verifier strategies transfer to the fragment game.** Let $M$ be a Kripke model,
+Let $M$ be a Kripke model,
 $\rho$ an environment, $\sigma$ a Verifier strategy of the model-checking game on $M$,
 $\varphi$ a fixpoint-free formula and $w$ a world. If $\sigma$ wins in environment $\rho$ from
 the game position with formula $\varphi$, world $w$ and empty binder stack, then the positional

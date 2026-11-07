@@ -1,6 +1,6 @@
 # Duality formula
 
-**Duality formula.** Let $E \subseteq \tilde E$ be Zeckendorf collections. Let $H$ and
+Let $E \subseteq \tilde E$ be Zeckendorf collections. Let $H$ and
 $\tilde H$ be strictly increasing sequences of positive integers such that
 $\mu \mapsto \sum_k \mu_k H_k$ is a bijection from $E$ onto $\mathbb N$ and
 $\mu \mapsto \sum_k \mu_k \tilde H_k$ is a bijection from $\tilde E$ onto $\mathbb N$. For real

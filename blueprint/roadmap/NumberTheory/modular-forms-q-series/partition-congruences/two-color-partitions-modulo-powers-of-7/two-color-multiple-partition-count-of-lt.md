@@ -1,6 +1,6 @@
 # Two-color partitions below the modulus
 
-**Two-color partitions below the modulus.** Let $p_{1,\ell}(n)$ be the number of 2-color
+Let $p_{1,\ell}(n)$ be the number of 2-color
 partitions of $n$ in which the parts of the second color are multiples of $\ell$, and $p(n)$ the
 number of partitions of $n$. For all natural numbers $\ell$ and $n$ with $n < \ell$, the second
 color is unavailable and $p_{1,\ell}(n) = p(n)$.

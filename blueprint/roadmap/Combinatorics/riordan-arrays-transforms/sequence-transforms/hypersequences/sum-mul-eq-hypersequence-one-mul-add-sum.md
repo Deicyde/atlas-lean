@@ -1,6 +1,6 @@
 # Abel summation by parts
 
-**Abel summation by parts.** Let $a$ and $b$ be sequences of complex numbers and let
+Let $a$ and $b$ be sequences of complex numbers and let
 $a^{(1)}_k = \sum_{i=0}^{k} a_i$ be the first hypersequence (the partial sums) of $a$. Then for
 every natural number $n$,
 

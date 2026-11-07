@@ -1,6 +1,6 @@
 # Generalized Pell numbers count compositions with two-colored ones
 
-**Generalized Pell numbers count compositions with two-colored ones.** Let $k \ge 2$ and
+Let $k \ge 2$ and
 $n \ge 1$ be natural numbers, and let $(P_m)_{m \in \mathbb{Z}}$ be natural numbers with $P_m = 0$
 for $2 - k \le m \le 0$, $P_1 = 1$, and $P_m = 2P_{m-1} + P_{m-2} + \dots + P_{m-k}$ for all
 $m \ge 2$. Then the number of compositions of $n$ into parts from $\{1, \dots, k\}$, where each

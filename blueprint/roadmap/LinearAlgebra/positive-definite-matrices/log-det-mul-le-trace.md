@@ -1,6 +1,6 @@
 # Log-determinant trace inequality
 
-**Log-determinant trace inequality.** Let $A$ and $B$ be positive definite real square
+Let $A$ and $B$ be positive definite real square
 matrices indexed by a finite set with $n$ elements. Then
 $\log(\det A \cdot \det B) \le \operatorname{tr}(AB) - n$.
 

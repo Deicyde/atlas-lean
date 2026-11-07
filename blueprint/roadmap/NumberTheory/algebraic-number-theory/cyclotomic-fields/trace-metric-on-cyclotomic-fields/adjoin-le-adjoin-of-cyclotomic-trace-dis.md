@@ -1,6 +1,6 @@
 # Krasner-type lemma for the cyclotomic trace metric
 
-**Krasner-type lemma for the cyclotomic trace metric.** Let $p$ be a prime and let $K$ be a
+Let $p$ be a prime and let $K$ be a
 field generated over $\mathbb{Q}$ by a primitive $p$-th root of unity, with fixed primitive $p$-th
 root of unity $\omega \in K$. Write $d(\alpha, \beta) = \lVert \alpha - \beta \rVert$ for the trace
 metric on $K$, where $\lVert \gamma \rVert \ge 0$ and

@@ -1,6 +1,6 @@
 # Sets containing zero are not MPTQ sets
 
-**Sets containing zero are not MPTQ sets.** If $A$ is a finite set of real numbers with
+If $A$ is a finite set of real numbers with
 $0 \in A$, then $A$ is not an MPTQ set.
 
 ## Sources

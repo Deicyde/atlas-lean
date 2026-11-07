@@ -1,6 +1,5 @@
 # A $1$-periodic entire function bounded by $C e^{|\operatorname{Im} s|}$ is constant
 
-**A $1$-periodic entire function bounded by $C e^{|\operatorname{Im} s|}$ is constant.**
 Let $f : \mathbb{C} \to \mathbb{C}$ be entire with $f(s + 1) = f(s)$ for all $s \in \mathbb{C}$,
 and suppose there is a real constant $C$ such that $|f(s)| \le C e^{|\operatorname{Im} s|}$ for
 every $s$ with $0 \le \operatorname{Re} s \le 1$. Then $f$ is constant.

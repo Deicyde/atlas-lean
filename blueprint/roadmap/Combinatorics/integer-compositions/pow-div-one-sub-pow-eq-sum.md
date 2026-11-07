@@ -1,6 +1,6 @@
 # Roots-of-unity partial fraction identity
 
-**Roots-of-unity partial fraction identity.** Let $\alpha < \beta$ be natural numbers and
+Let $\alpha < \beta$ be natural numbers and
 let $\zeta = e^{2 \pi i / \beta}$. For every complex number $u$ with $1 - u^\beta \ne 0$,
 
 $$\frac{u^\alpha}{1 - u^\beta} =

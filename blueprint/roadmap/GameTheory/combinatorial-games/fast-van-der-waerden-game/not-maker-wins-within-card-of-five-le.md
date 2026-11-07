@@ -1,6 +1,6 @@
 # Maker cannot win the $S$-game in $|S|$ moves when $|S| \ge 5$
 
-**Maker cannot win the $S$-game in $|S|$ moves when $|S| \ge 5$.** If $S$ is a finite
+If $S$ is a finite
 set of natural numbers with $|S| \ge 5$, then, starting from the position where no number has
 been claimed, Maker does not win the $S$-game within $|S|$ moves.
 

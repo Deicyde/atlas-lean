@@ -1,6 +1,6 @@
 # Reading a unary number
 
-**Reading a unary number.** Let $d$ be a stack other than $X$, let $g$ encode bits as symbols
+Let $d$ be a stack other than $X$, let $g$ encode bits as symbols
 of $d$, and let $ps$ be a list of stack–symbol pairs whose stacks are distinct and differ from $X$
 and $d$. Suppose the instruction of the marking machine at a label $\ell$ is the unary read off
 $X$ onto $d$ through $g$ that pushes $ps$ for each true bit, repeats at $\ell$ and continues at

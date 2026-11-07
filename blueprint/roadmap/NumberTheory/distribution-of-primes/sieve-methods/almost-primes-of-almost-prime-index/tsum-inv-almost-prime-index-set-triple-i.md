@@ -1,6 +1,6 @@
 # Exponential decay of reciprocal sums over triple almost prime index sets
 
-**Exponential decay of reciprocal sums over triple almost prime index sets.** A $k$-almost
+A $k$-almost
 prime is a positive integer with exactly $k$ prime factors counted with multiplicity. For positive
 integers $a$ and $b$ let $N_{ab}$ be the set of $a$-almost primes whose index in the increasing
 enumeration of the $a$-almost primes (starting at $1$) is a $b$-almost prime, and for positive

@@ -1,6 +1,6 @@
 # Invertible non-cyclic functions in the Bergman space $A^2$
 
-**Invertible non-cyclic functions in the Bergman space $A^2$.** Write $\mathbb{D}$ for the open
+Write $\mathbb{D}$ for the open
 unit disc and $dA$ for Lebesgue area measure on it. There is a function
 $f : \mathbb{C} \to \mathbb{C}$ with no zeros in $\mathbb{D}$ such that $f$ and its pointwise
 reciprocal $1/f$ both belong to the Bergman space $A^2$, but the polynomial multiples of $f$ are

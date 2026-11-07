@@ -1,6 +1,6 @@
 # Poincaré–Siegel linearisation theorem
 
-**Poincaré–Siegel linearisation theorem.** Let $\alpha$ be a Diophantine real number and let
+Let $\alpha$ be a Diophantine real number and let
 $\lambda = e^{2\pi i \alpha}$. If $f : \mathbb{C} \to \mathbb{C}$ is analytic at $0$ with
 $f(0) = 0$ and $f'(0) = \lambda$, then there is a function $u : \mathbb{C} \to \mathbb{C}$,
 analytic at $0$ with $u(0) = 0$ and $u'(0) = 1$, such that $f(u(z)) = u(\lambda z)$ for all $z$

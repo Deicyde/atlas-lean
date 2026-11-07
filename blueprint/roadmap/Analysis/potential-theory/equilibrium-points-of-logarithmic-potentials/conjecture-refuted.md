@@ -1,6 +1,6 @@
 # The equilibrium-free logarithmic potential conjecture is false
 
-**The equilibrium-free logarithmic potential conjecture is false.** There is no charge sequence
+There is no charge sequence
 $(z_n)$ whose positions are pairwise distinct, which is summable ($z_n \neq 0$ for every $n$ and
 $\sum_n 1/|z_n| < \infty$), and whose field $\sum_n 1/(z - z_n)$ is nonzero at every point
 $z \in \mathbb{C}$ that is not one of the $z_n$.

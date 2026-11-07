@@ -1,6 +1,6 @@
 # Rankin's bound for reciprocal sums of smooth numbers
 
-**Rankin's bound for reciprocal sums of smooth numbers.** Let $x, y, s$ be real numbers with
+Let $x, y, s$ be real numbers with
 $2 \le y < x$ and $0 < s < 1$. Call a positive integer $y$-smooth if all its prime factors are
 at most $y$ (so $1$ is $y$-smooth). Let $S(x, y)$ be the sum of $1/n$ over the $y$-smooth
 integers $n > x$, and let $\zeta(\sigma, y)$ be the sum of $n^{-\sigma}$ over all $y$-smooth

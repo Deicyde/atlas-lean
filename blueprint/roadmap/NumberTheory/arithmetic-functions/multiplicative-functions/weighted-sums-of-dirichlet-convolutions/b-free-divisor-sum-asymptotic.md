@@ -1,6 +1,6 @@
 # Asymptotic for the divisor function summed over $B_\kappa$-free integers
 
-**Asymptotic for the divisor function summed over $B_\kappa$-free integers.** Let $\kappa$ be
+Let $\kappa$ be
 a function from the natural numbers to the natural numbers and let $K \ge 2$ be the minimum of
 $\kappa(p)$ over the primes $p$: $\kappa(p) \ge K$ for every prime $p$, with equality for some
 prime. Let $q_{B_\kappa}$ be the indicator of $B_\kappa$-free integers, $\tau(n)$ the number of

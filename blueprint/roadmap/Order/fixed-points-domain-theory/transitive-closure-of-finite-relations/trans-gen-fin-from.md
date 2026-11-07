@@ -1,6 +1,6 @@
 # Elements reachable from a finite set of sources
 
-**Elements reachable from a finite set of sources.** Let $\alpha$ be a finite type with
+Let $\alpha$ be a finite type with
 decidable equality, let $r$ be a decidable relation on $\alpha$, and let $A \subseteq \alpha$ be a
 finite set. Write $\mathrm{post}_r(Z)$ for the set of $r$-successors of elements of a finite set
 $Z \subseteq \alpha$, and let $f$ be the step map

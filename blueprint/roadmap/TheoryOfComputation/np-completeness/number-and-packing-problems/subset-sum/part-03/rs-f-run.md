@@ -1,6 +1,6 @@
 # Subset-sum emitter: moving unmarked vertices back to L
 
-**Subset-sum emitter: moving unmarked vertices back to L.** Let $c$ be a natural number,
+Let $c$ be a natural number,
 $\rho = (\rho_1, \dots, \rho_k)$ a list of bits, $v$ a Boolean state and $S$ stack contents whose
 stack $R$ holds, top first, $c$ copies of $\mathrm{val}(\mathrm{false})$ followed by
 $\mathrm{val}(\rho_1), \dots, \mathrm{val}(\rho_k)$. Then $c$ steps of the subset-sum emitter

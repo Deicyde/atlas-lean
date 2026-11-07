@@ -1,6 +1,6 @@
 # Park–Pham theorem on selector processes (Talagrand's selector process conjecture)
 
-**Park–Pham theorem on selector processes (Talagrand's selector process conjecture).** There is
+There is
 a real number $L > 0$ with the following property. Let $0 < p < 1$, let $X$ be a finite type,
 let $\Lambda$ be a set of functions from $X$ to $[0, \infty)$, and let $X_p$ be a binomial random
 subset of $X$ with parameter $p$. Write

@@ -1,6 +1,6 @@
 # Subsequence sums with a bounded number of terms
 
-**Subsequence sums with a bounded number of terms.** For natural numbers $\alpha, \beta$ and a
+For natural numbers $\alpha, \beta$ and a
 finite sequence $\mathcal{A}$ (a multiset) in an additive commutative monoid $G$,
 $\Sigma^\beta_\alpha(\mathcal{A})$ is the finite set of the sums $\sigma(\mathcal{B})$ of the
 terms of the subsequences $\mathcal{B}$ of $\mathcal{A}$ (sub-multisets) with

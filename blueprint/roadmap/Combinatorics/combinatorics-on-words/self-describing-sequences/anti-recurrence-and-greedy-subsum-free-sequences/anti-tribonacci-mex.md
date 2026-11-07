@@ -1,6 +1,6 @@
 # Least positive integer missing from a finite set
 
-**Least positive integer missing from a finite set.** For a finite set $s$ of natural numbers,
+For a finite set $s$ of natural numbers,
 this is the least positive integer not in $s$ (the source's $\mathrm{mex}$ over the positive
 integers, used to build the anti-Tribonacci sequence). It always lies among $1, \dots, |s| + 1$.
 

@@ -1,6 +1,6 @@
 # Deletion preserves lists avoiding the deleted node's neighbors
 
-**Deletion preserves lists avoiding the deleted node's neighbors.** Let $S$ be a store of $n$
+Let $S$ be a store of $n$
 cells, each empty or holding a node (a payload with next and previous pointers, each an index or
 NIL), let $h$ be a header (an index in $\{0, \dots, n-1\}$ or NIL), and let $x$ be an index whose
 cell holds a node $X$ such that the cells at the predecessor $X.\mathrm{prev}$ and the successor

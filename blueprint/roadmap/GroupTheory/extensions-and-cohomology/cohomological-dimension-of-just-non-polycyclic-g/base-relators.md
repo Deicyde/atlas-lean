@@ -1,6 +1,6 @@
 # Base relators of the Kropholler group
 
-**Base relators of the Kropholler group.** Let $F$ be the free group on $x, y$, viewed inside
+Let $F$ be the free group on $x, y$, viewed inside
 the free group on $x, y, t$. The base relators are the elements $[[a, b], [c, d]]$ and $[a, b]^2$
 for all $a, b, c, d \in F$.
 

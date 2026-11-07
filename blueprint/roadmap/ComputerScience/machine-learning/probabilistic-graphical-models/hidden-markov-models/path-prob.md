@@ -1,6 +1,6 @@
 # Joint weight of a state path and the observations
 
-**Joint weight of a state path and the observations.** For a hidden Markov model $h$ with
+For a hidden Markov model $h$ with
 initial weights $\pi$, transition weights $a$ and emission weights $b$ in a semiring, observations
 $x_0, x_1, \dots$ and $t \in \mathbb{N}$, the joint weight of a state path $z = (z_0, \dots, z_t)$
 and $x_0, \dots, x_t$ is the product, taken from left to right,

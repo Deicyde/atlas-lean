@@ -1,6 +1,6 @@
 # Dejean's theorem on repetition thresholds
 
-**Dejean's theorem on repetition thresholds.** For a natural number $n$ and a real number
+For a natural number $n$ and a real number
 $r$, call an infinite word $w = w_0 w_1 w_2 \cdots$ over the alphabet $\{0, \dots, n-1\}$
 *$r^+$-free* if for all natural numbers $s$, $\ell$ and $p$ with $0 < p \le \ell$ such that
 $w_{s+i+p} = w_{s+i}$ for every natural number $i$ with $i + p < \ell$, we have $\ell / p \le r$;

@@ -1,6 +1,6 @@
 # Watson's inverse factorial expansion
 
-**Watson's inverse factorial expansion.** Let $A,B,\rho,\sigma,\alpha,\delta>0$, $\gamma\ge 0$
+Let $A,B,\rho,\sigma,\alpha,\delta>0$, $\gamma\ge 0$
 and $p$ be real numbers with $\alpha+3\delta\lt \pi/2$ and $1\lt p<1+e^{-\pi\cot\alpha}$. Let $S$ be the
 sector $\{z\in\mathbb{C} : |z|>\gamma,\ |\arg z|\le\pi/2+\alpha+3\delta\}$, where $\arg$ is the
 principal argument. Let $f$ be a complex function that is analytic at every point of the

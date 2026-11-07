@@ -1,6 +1,6 @@
 # A seven-parameter family of five and three rationals with square pairwise sums
 
-**A seven-parameter family of five and three rationals with square pairwise sums.** For
+For
 rational numbers $f, g, m, u_1, u_2, v_1, v_2$, put
 $\alpha = m u_1 u_2 (u_1 v_1 - u_2 v_2)$, $\beta = (u_1 v_2 - u_2 v_1)(m^2 u_1 u_2 v_1 v_2 - 1)$,
 $\gamma = m v_1 v_2 (u_1 v_1 - u_2 v_2)$, $\alpha' = m u_1 u_2 (u_1 v_1 + u_2 v_2)$,

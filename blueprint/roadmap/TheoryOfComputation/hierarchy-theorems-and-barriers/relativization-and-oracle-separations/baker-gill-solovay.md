@@ -1,6 +1,6 @@
 # Baker-Gill-Solovay: oracles separate and collapse P vs NP
 
-**Baker-Gill-Solovay: oracles separate and collapse P vs NP.** For an oracle $O$, a function
+For an oracle $O$, a function
 from bitstrings to booleans, write $\mathsf{P}^O$ and $\mathsf{NP}^O$ for the classes of decision
 problems decidable in polynomial time, respectively in nondeterministic polynomial time, by
 machines that may query $O$. There is an oracle $O$ such that $\mathsf{P}^O \ne \mathsf{NP}^O$,

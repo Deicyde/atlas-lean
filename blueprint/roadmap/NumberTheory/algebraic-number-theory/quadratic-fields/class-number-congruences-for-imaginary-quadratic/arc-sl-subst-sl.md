@@ -1,6 +1,6 @@
 # Power series inverse of $\mathrm{Sl}$
 
-**Power series inverse of $\mathrm{Sl}$.** Let $S, C \in \mathbb{Q}[[u]]$ be formal power
+Let $S, C \in \mathbb{Q}[[u]]$ be formal power
 series with $S' = C^2$, $C' = -S^2$, $S(0) = 0$ and $C(0) = 1$. Then
 
 $$\sum_{n \ge 0} (-1)^n \binom{-2/3}{n} \frac{S^{3n+1}}{3n+1} = u$$

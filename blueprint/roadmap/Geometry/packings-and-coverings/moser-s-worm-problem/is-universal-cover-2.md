@@ -1,6 +1,6 @@
 # Convex universal covers are universal covers
 
-**Convex universal covers are universal covers.** Every convex universal cover
+Every convex universal cover
 $\Omega \subseteq \mathbb{C}$ is a universal cover.
 
 ## Sources

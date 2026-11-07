@@ -1,6 +1,6 @@
 # Evaluation of a flat Boolean circuit
 
-**Evaluation of a flat Boolean circuit.** For a circuit on $n$ inputs given as a list of
+For a circuit on $n$ inputs given as a list of
 gates $g_0, \dots, g_{m-1}$ and an assignment $\alpha$ of booleans to the inputs, the list of
 gate values is $(v_0, \dots, v_{m-1})$, where $v_j$ is computed from $v_0, \dots, v_{j-1}$, a
 reference to a gate $a \ge j$ reading as false: an input gate $i$ has value $\alpha(i)$, a

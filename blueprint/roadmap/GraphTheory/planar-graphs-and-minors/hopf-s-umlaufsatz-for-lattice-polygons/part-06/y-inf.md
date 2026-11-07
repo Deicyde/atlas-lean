@@ -1,3 +1,3 @@
 # Minimal height of a walk
 
-**Minimal height of a walk.** The minimal height of a vertex of the walk.
+The minimal height of a vertex of the walk.

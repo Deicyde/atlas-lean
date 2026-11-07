@@ -1,6 +1,6 @@
 # The summed second moments split at any round
 
-**The summed second moments split at any round.** Fix a learning rate $\eta$ and $n$ experts.
+Fix a learning rate $\eta$ and $n$ experts.
 For a finite sequence $\sigma$ of loss vectors in $\mathbb{R}^n$ and weights $w \in \mathbb{R}^n$,
 write $Q(\sigma, w)$ for the sum over the rounds of $\sigma$ of the weighted second moments of the
 losses, started from $w$, and $W(\sigma, w)$ for the weights after the rounds of $\sigma$ started

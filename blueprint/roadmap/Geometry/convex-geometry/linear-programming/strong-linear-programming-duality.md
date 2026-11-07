@@ -1,6 +1,6 @@
 # Strong linear programming duality
 
-**Strong linear programming duality.** Let $A$ be a real $m \times n$ matrix, and let
+Let $A$ be a real $m \times n$ matrix, and let
 $b \in \mathbb{R}^m$ and $c \in \mathbb{R}^n$; inequalities between vectors are componentwise.
 Suppose some $x \in \mathbb{R}^n$ satisfies $x \ge 0$ and $Ax \le b$, and that $c \cdot x$ is
 bounded above over all such $x$. Then there exist $x \in \mathbb{R}^n$ and $y \in \mathbb{R}^m$

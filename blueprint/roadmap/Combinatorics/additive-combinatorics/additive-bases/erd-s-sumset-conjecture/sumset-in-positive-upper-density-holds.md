@@ -1,6 +1,6 @@
 # Moreira–Richter–Robertson theorem (the Erdős sumset conjecture)
 
-**Moreira–Richter–Robertson theorem (the Erdős sumset conjecture).** The upper density of a
+The upper density of a
 set $A \subseteq \mathbb{N}$ is
 $\limsup_{N \to \infty} \lvert A \cap \{0, \dots, N - 1\} \rvert / N$. Every set
 $A \subseteq \mathbb{N}$ of positive upper density contains

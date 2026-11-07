@@ -1,6 +1,6 @@
 # Lower bound for the weight of an admissible bag
 
-**Lower bound for the weight of an admissible bag.** For every natural number $n \ge 7$
+For every natural number $n \ge 7$
 and every admissible bag $F$ for $n$ people, the weight of $F$ is at least
 $\frac{n^2}{6} + 2n - \frac{11}{2}$.
 

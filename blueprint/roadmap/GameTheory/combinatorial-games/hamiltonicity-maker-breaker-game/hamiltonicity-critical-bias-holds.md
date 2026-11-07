@@ -1,6 +1,6 @@
 # The critical bias of the Hamiltonicity game is $(1 + o(1))\, n / \ln n$
 
-**The critical bias of the Hamiltonicity game is $(1 + o(1))\, n / \ln n$.** Consider the
+Consider the
 $(1 : b)$ Maker-Breaker game on the edges of the complete graph $K_n$ in which Breaker moves
 first: Breaker claims $b$ free edges per turn (all remaining free edges if fewer than $b$ are
 left), Maker claims one free edge per turn, and Maker wins if, once every edge is claimed, his

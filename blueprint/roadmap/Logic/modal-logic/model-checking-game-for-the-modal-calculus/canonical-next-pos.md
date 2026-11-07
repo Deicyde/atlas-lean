@@ -1,6 +1,5 @@
 # Verifier's positional strategies make a game move at Verifier positions that have one
 
-**Verifier's positional strategies make a game move at Verifier positions that have one.**
 Let $M$ be a Kripke model, $\mathit{env}$ an environment, and $\sigma$ any positional strategy of
 the even player (Verifier) in the fragment game of $M$ and $\mathit{env}$. Write
 $\langle \psi, v \rangle$ for the game position with the embedding of a fixpoint-free formula

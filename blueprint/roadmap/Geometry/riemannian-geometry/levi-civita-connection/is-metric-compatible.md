@@ -1,6 +1,6 @@
 # Metric-compatible covariant derivative
 
-**Metric-compatible covariant derivative.** Let $M$ be a smooth manifold (possibly with
+Let $M$ be a smooth manifold (possibly with
 corners) modelled on a finite-dimensional real normed space, with a smooth Riemannian metric
 $\langle \cdot, \cdot \rangle$ on its tangent bundle. A covariant derivative $\nabla$ on the
 tangent bundle is compatible with the metric if for all smooth vector fields $Y, Z$ on $M$,

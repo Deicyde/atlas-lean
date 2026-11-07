@@ -1,6 +1,6 @@
 # Relational denotational semantics of IMP
 
-**Relational denotational semantics of IMP.** The denotation of an IMP command is a binary
+The denotation of an IMP command is a binary
 relation on states, defined by recursion on the command. The command $\mathtt{skip}$ relates
 $s$ to $s'$ iff $s' = s$. For a variable identifier $x$ and an arithmetic expression $a$, the
 assignment $x := a$ relates $s$ to $s'$ iff $s'$ is $s$ with $x$ updated to the value of $a$

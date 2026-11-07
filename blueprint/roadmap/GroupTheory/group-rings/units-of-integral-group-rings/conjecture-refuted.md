@@ -1,6 +1,6 @@
 # No exotic units in the integral group ring of $C_2 \times C_2 \times C_2 \times C_6$
 
-**No exotic units in the integral group ring of $C_2 \times C_2 \times C_2 \times C_6$.** Let
+Let
 $G = C_2 \times C_2 \times C_2 \times C_6$. Every unit $u$ of the integral group ring
 $\mathbb{Z}G$ is trivial: $u = g$ or $u = -g$ for some $g \in G$.
 

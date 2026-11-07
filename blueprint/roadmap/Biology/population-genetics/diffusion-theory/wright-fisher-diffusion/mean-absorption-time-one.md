@@ -1,3 +1,3 @@
 # Neutral mean absorption time vanishes at frequency one
 
-**Neutral mean absorption time vanishes at frequency one.** The neutral mean absorption time vanishes at `x = 1`.
+The neutral mean absorption time vanishes at `x = 1`.

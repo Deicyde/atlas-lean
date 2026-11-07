@@ -1,6 +1,6 @@
 # Lu–Wu formula for perfect matchings of the Möbius grid
 
-**Lu–Wu formula for perfect matchings of the Möbius grid.** Let $M \ge 1$ and let $N \ge 1$
+Let $M \ge 1$ and let $N \ge 1$
 be odd. Then the number of perfect matchings of the $2M \times N$ Möbius grid equals
 
 $$

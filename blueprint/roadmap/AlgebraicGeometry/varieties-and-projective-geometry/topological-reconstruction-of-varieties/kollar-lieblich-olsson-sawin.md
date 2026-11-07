@@ -1,6 +1,6 @@
 # Kollár–Lieblich–Olsson–Sawin topological reconstruction theorem
 
-**Kollár–Lieblich–Olsson–Sawin topological reconstruction theorem.** Let $K$ and $L$ be
+Let $K$ and $L$ be
 fields of characteristic zero, and let $X$ and $Y$ be irreducible normal schemes with projective
 morphisms $f : X \to \operatorname{Spec} K$ and $g : Y \to \operatorname{Spec} L$. Suppose that
 the Krull dimension of the underlying topological space of $X$ is at least $4$; or it is at least

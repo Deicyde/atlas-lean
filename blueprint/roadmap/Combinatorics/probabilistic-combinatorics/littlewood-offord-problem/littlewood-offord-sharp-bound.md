@@ -1,6 +1,6 @@
 # Sharp Littlewood–Offord bound
 
-**Sharp Littlewood–Offord bound.** There is a real constant $A \ge 0$ such that for every
+There is a real constant $A \ge 0$ such that for every
 integer $n \ge 1$ and all real numbers $a_0, a_1, \dots, a_n$ with $|a_i| \ge 1$ for every $i$,
 the number of sign vectors $(\varepsilon_1, \dots, \varepsilon_n) \in \{-1, 1\}^n$ with
 $|a_0 + \varepsilon_1 a_1 + \dots + \varepsilon_n a_n| < 1$ is at most $A \cdot 2^n / \sqrt{n}$.

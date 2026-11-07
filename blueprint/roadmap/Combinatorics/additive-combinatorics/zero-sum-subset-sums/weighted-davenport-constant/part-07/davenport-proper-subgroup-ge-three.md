@@ -1,6 +1,6 @@
 # Weighted zero-sum free pairs for a proper subgroup of $F^\times$
 
-**Weighted zero-sum free pairs for a proper subgroup of $F^\times$.** Let $F$ be a field and
+Let $F$ be a field and
 $A$ a proper subgroup of the multiplicative group $F^\times$. Then some sequence $x_1, x_2$ in
 $F$ has no $A$-weighted zero-sum subsequence: there is no nonempty $I \subseteq \{1, 2\}$ with
 weights $a_i \in A$ for $i \in I$ such that $\sum_{i \in I} a_i x_i = 0$.

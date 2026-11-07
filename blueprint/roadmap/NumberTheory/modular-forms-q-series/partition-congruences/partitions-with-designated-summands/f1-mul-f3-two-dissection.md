@@ -1,6 +1,6 @@
 # The 2-dissection of $f_1 f_3$
 
-**The 2-dissection of $f_1 f_3$.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ denote the Euler
+Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ denote the Euler
 products in the ring of integer power series in $q$. Then
 
 $$f_1 f_2 f_3 f_4^2 f_6 f_8^2 f_{12}^2 f_{24}^2 = f_2^2 f_8^4 f_{12}^6 - q f_4^6 f_6^2 f_{24}^4.$$

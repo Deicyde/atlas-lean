@@ -1,6 +1,6 @@
 # Splay operation
 
-**Splay operation.** Let $\alpha$ be a linearly ordered type and write $(k; L, R)$ for the binary
+Let $\alpha$ be a linearly ordered type and write $(k; L, R)$ for the binary
 tree with root key $k$, left subtree $L$ and right subtree $R$. For $x \in \alpha$, the splay
 $S_x(t)$ of a binary tree $t$ with keys in $\alpha$ is defined by recursion on $t$. The empty tree
 splays to itself, and $t = (k; L, R)$ is left unchanged if $x = k$, if $x < k$ and $L$ is empty,

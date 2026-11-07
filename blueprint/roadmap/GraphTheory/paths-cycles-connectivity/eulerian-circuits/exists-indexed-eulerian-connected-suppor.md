@@ -1,6 +1,6 @@
 # Euler circuits in edge-indexed multigraphs whose non-isolated vertices are connected
 
-**Euler circuits in edge-indexed multigraphs whose non-isolated vertices are connected.** Let
+Let
 $M$ be an edge-indexed multigraph with finitely many vertices and finitely many edges. Suppose
 that the subgraph of the underlying simple graph of $M$ induced on its non-isolated vertices is
 connected, and that every vertex of $M$ has even degree. Then there are a vertex $u$ and a closed

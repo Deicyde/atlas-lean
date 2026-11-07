@@ -1,6 +1,6 @@
 # r-Stirling numbers of the second kind for r = 0
 
-**r-Stirling numbers of the second kind for r = 0.** For all natural numbers $n$ and $m$,
+For all natural numbers $n$ and $m$,
 the r-Stirling number of the second kind ${n \brace m}_0$ equals the Stirling number of the
 second kind ${n \brace m}$.
 

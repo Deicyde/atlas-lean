@@ -1,6 +1,6 @@
 # Markoff points in the $p$-Lagrange spectrum
 
-**Markoff points in the $p$-Lagrange spectrum.** Let $x \le y \le z$ be positive integers with
+Let $x \le y \le z$ be positive integers with
 $x^2 + y^2 + z^2 = 3xyz$ (a sorted Markoff triple), let $\lambda_z = \sqrt{9 - 4/z^2}$, let
 $D = 9z^2 - 4$ if $z$ is odd and $D = (9z^2 - 4)/4$ if $z$ is even, and let $p$ be a prime.
 Call $p$ a principal norm if $|u^2 + Duv + \frac{D^2 - D}{4} v^2| = p$ for some integers $u, v$,

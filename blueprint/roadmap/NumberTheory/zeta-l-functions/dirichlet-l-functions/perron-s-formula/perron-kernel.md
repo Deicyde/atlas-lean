@@ -1,6 +1,6 @@
 # Truncated Perron kernel
 
-**Truncated Perron kernel.** For real numbers $y$, $c$ and $T$, the truncated Perron kernel is
+For real numbers $y$, $c$ and $T$, the truncated Perron kernel is
 the complex number
 
 $$K(y, c, T) = \frac{1}{2\pi}\int_{-T}^{T} \frac{y^{c+it}}{c+it}\,dt,$$

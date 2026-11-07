@@ -1,6 +1,6 @@
 # At most one square is the product of the other two
 
-**At most one square is the product of the other two.** Let $a$, $b$, $c$ be pairwise
+Let $a$, $b$, $c$ be pairwise
 distinct positive real numbers. Then at most one of the equations $a^2 = bc$, $b^2 = ac$ and
 $c^2 = ab$ holds; that is, no two of them hold simultaneously.
 

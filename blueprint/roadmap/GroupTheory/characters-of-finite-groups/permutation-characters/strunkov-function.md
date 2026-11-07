@@ -1,6 +1,6 @@
 # Strunkov's class function
 
-**Strunkov's class function.** For elements $a, b$ of a group $G$, Strunkov's function
+For elements $a, b$ of a group $G$, Strunkov's function
 $\varphi : G \to \mathbb{C}$ is
 
 $$\varphi = 1^G - 1_{\langle a \rangle}^G - 1_{\langle b \rangle}^G - 1_{\langle ab \rangle}^G + 2$$

@@ -1,6 +1,6 @@
 # Valuation criterion for the finite residue map to be trivial
 
-**Valuation criterion for the finite residue map to be trivial.** Let $K$ be a number field,
+Let $K$ be a number field,
 $\mathfrak m$ a modulus of $K$ with finite part $\mathfrak m_0$, and $z$ a ray element of
 $\mathfrak m$. Suppose that at every nonzero prime ideal $\mathfrak p$ of $\mathcal O_K$
 containing $\mathfrak m_0$, the multiplicative $\mathfrak p$-adic valuation of $z - 1$ is at most

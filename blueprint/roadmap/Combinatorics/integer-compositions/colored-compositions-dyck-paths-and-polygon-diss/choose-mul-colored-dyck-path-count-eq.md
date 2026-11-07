@@ -1,6 +1,6 @@
 # Colored Dyck paths and colored polygon partitions
 
-**Colored Dyck paths and colored polygon partitions.** Let
+Let
 $\gamma = (\gamma_1, \gamma_2, \dots)$ be a sequence of natural numbers. Let $d_{n,k}(\gamma)$ be
 the number of Dyck paths of semilength $n$ with $k$ peaks in which each block $UD^j$, formed by a
 peak and the maximal run of $D$ steps starting at its $D$, carries one of $\gamma_j$ colors, and

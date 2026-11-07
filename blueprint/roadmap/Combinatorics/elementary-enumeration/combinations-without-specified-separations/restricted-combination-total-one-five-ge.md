@@ -1,6 +1,6 @@
 # Generating function for subsets avoiding differences 1 and 5
 
-**Generating function for subsets avoiding differences 1 and 5.** Let $S^{\{1,5\}}_n$ be the
+Let $S^{\{1,5\}}_n$ be the
 number of subsets of $\{1, \dots, n\}$ in which no two elements differ by $1$ or by $5$. Then,
 in the ring $\mathbb{Z}[[x]]$ of formal power series,
 

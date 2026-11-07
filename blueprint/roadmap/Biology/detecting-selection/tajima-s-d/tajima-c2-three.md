@@ -1,3 +1,3 @@
 # Tajima's $c_2$ vanishes for three genes
 
-**Tajima's $c_2$ vanishes for three genes.** For three genes `c₂ = 0`.
+For three genes `c₂ = 0`.

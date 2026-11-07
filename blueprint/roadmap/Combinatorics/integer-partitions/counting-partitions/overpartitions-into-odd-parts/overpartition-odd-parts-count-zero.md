@@ -1,6 +1,6 @@
 # Overpartitions of zero into odd parts
 
-**Overpartitions of zero into odd parts.** The number $\mathrm{po}(0)$ of overpartitions
+The number $\mathrm{po}(0)$ of overpartitions
 of $0$ into odd parts equals $1$: the empty overpartition is the only one.
 
 ## Sources

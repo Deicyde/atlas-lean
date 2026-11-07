@@ -1,6 +1,6 @@
 # Uniform Mordell–Lang for curves
 
-**Uniform Mordell–Lang for curves.** Let $g \ge 2$ and $d \ge 1$ be natural numbers, let $F$
+Let $g \ge 2$ and $d \ge 1$ be natural numbers, let $F$
 be a number field with $[F : \mathbb{Q}] \le d$, and let $C$ be a proper, smooth, geometrically
 irreducible curve over $F$. If $C$ has genus $g$, then the number of $F$-rational points of $C$,
 possibly infinite, is at most $c(g, d)^{1 + \rho}$, where $c$ is the uniform constant and $\rho$

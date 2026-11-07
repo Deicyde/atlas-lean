@@ -1,6 +1,6 @@
 # Skip-list insertion
 
-**Skip-list insertion.** To insert key $k$ with value $v$ and requested height $h$ into a
+To insert key $k$ with value $v$ and requested height $h$ into a
 skip list, scan its bottom-level nodes in order, keeping every node whose key is less than $k$.
 At the first node whose key is not less than $k$: if its key equals $k$, its value is replaced
 by $v$ and its tower height is kept; if its key is greater than $k$, a new node with key $k$,

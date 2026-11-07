@@ -1,6 +1,6 @@
 # Asymptotics of the roots of a split Thue family
 
-**Asymptotics of the roots of a split Thue family.** Let $(d, G, \gamma, \delta)$ be a split
+Let $(d, G, \gamma, \delta)$ be a split
 Thue recurrence family. Call reals $\alpha_i(n)$ ($i, n \in \mathbb{N}$) an admissible labelling
 if there is $N$ such that for all $n \ge N$ and $1 \le i \le d$,
 $\prod_{k=1}^{d} (\alpha_i(n) - G_k(n)) = 1$ and $|\alpha_i(n) - G_i(n)| < 1$. Then, first,

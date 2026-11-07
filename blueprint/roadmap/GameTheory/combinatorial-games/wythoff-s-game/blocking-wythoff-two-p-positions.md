@@ -1,6 +1,6 @@
 # Larsson's P-positions of Blocking Wythoff Nim with one blocked option
 
-**Larsson's P-positions of Blocking Wythoff Nim with one blocked option.** Let $\varphi$ be
+Let $\varphi$ be
 the golden ratio, and let $R_2$ consist of $(0, 0)$ and, for every $n \ge 0$, the positions
 $(n, 2n + 1)$, $(2n + 1, n)$, $(2\lfloor n\varphi \rfloor + 2, 2\lfloor n\varphi^2 \rfloor + 2)$
 and $(2\lfloor n\varphi^2 \rfloor + 2, 2\lfloor n\varphi \rfloor + 2)$. A Wythoff move from a

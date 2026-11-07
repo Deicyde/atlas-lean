@@ -1,6 +1,6 @@
 # Linear recurrence for convolution powers of an INVERT sequence
 
-**Linear recurrence for convolution powers of an INVERT sequence.** Let $(c_m)_{m \ge 0}$ and
+Let $(c_m)_{m \ge 0}$ and
 $(y_n)_{n \ge 0}$ be real sequences such that for every $n \ge 0$
 
 $$y_n = \sum_{k=0}^{n} k! \sum_{j} \prod_{i=1}^{n+1} \frac{c_i^{j_i}}{j_i!},$$

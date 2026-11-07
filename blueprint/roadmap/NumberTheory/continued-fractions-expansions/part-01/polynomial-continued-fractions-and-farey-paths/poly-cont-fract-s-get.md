@@ -1,6 +1,6 @@
 # Terms of a polynomial continued fraction
 
-**Terms of a polynomial continued fraction.** Let $F$ be a field, let $a_0, a_1, \ldots$ be
+Let $F$ be a field, let $a_0, a_1, \ldots$ be
 polynomials in $F[X]$ and let $n \in \mathbb{N}$. For every $i \in \mathbb{N}$, the term of index
 $i$ (counting from $0$) of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$ is the
 pair with partial numerator $1$ and partial denominator $a_{i+1}$ if $i < n$, and does not exist

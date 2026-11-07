@@ -1,6 +1,6 @@
 # Degenerate harmonic term of index zero
 
-**Degenerate harmonic term of index zero.** For all real $\lambda$ and $\alpha$, the
+For all real $\lambda$ and $\alpha$, the
 degenerate harmonic term of index $0$, $H^0_{0,\lambda}(\alpha)$, is $0$.
 
 ## Sources

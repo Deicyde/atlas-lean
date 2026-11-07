@@ -1,6 +1,6 @@
 # Lattice points in the ellipse $x^2 + 2y^2 \le n$
 
-**Lattice points in the ellipse $x^2 + 2y^2 \le n$.** For a natural number $n$, let $F(n)$ be
+For a natural number $n$, let $F(n)$ be
 the number of pairs $(x, y) \in \mathbb{Z}^2$ with $x^2 + 2y^2 \le n$, and let
 $\mathcal{N}_{N,\alpha,\nu,r,m}$ be the number of $k \in \{1, \dots, N\}$ with
 $\lfloor (N - \nu)/k + \alpha \rfloor \equiv r \pmod m$. Then $F(0) = 1$, $F(1) = 3$,

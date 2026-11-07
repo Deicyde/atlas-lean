@@ -1,6 +1,6 @@
 # Call-by-name reduction step of PCF
 
-**Call-by-name reduction step of PCF.** Write $\underline{n}$ for the numeral
+Write $\underline{n}$ for the numeral
 $\mathrm{succ}^n\,\mathrm{zero}$, and $b[a]$ for the result of substituting the closed term $a$
 for the bound variable of an abstraction body $b$. One-step call-by-name reduction $t \to t'$
 between closed PCF terms of the same type is the least relation closed under these rules:

@@ -1,6 +1,6 @@
 # Sparse table
 
-**Sparse table.** A sparse table over a type $\alpha$ consists of an array of elements of
+A sparse table over a type $\alpha$ consists of an array of elements of
 $\alpha$, called its data, and an array of arrays of elements of $\alpha$, called its levels.
 
 The intended meaning is that level $k$ stores the minima of the length-$2^k$ slices of the data;

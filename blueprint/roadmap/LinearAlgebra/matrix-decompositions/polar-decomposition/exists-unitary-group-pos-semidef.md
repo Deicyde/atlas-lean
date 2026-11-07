@@ -1,6 +1,6 @@
 # Polar decomposition of a complex square matrix
 
-**Polar decomposition of a complex square matrix.** Let $A$ be a square complex matrix indexed by
+Let $A$ be a square complex matrix indexed by
 a finite type, and let $A^*$ be its conjugate transpose. Then there are a unitary matrix $U$ and a
 positive semidefinite matrix $P$ such that $P^2 = A^* A$ and $A = UP$.
 

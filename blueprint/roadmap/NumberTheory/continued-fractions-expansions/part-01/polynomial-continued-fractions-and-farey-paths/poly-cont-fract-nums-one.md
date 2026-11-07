@@ -1,6 +1,6 @@
 # First convergent numerator of a polynomial continued fraction
 
-**First convergent numerator of a polynomial continued fraction.** Let $F$ be a field,
+Let $F$ be a field,
 let $a_0, a_1, \ldots$ be polynomials in $F[X]$ and let $n \ge 1$. The numerator $A_1$ of the
 first convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$ is
 $a_1 a_0 + 1$.

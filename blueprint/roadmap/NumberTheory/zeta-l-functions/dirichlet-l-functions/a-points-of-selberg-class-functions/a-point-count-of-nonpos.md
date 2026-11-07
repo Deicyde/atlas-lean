@@ -1,6 +1,6 @@
 # The a-point count vanishes at nonpositive height
 
-**The a-point count vanishes at nonpositive height.** Let $F$ be a function in the Selberg
+Let $F$ be a function in the Selberg
 class, $k \in \mathbb{N}$, $a \in \mathbb{C}$ and $E_2, E_1 \in \mathbb{R}$. If $T \le 0$, then
 $N_k(a; T, F) = 0$, where $N_k(a; T, F)$ is the number of a-points of the $k$-th derivative
 $F^{(k)}$, counted with multiplicity, in $E_2 < \operatorname{Re} s < E_1$,

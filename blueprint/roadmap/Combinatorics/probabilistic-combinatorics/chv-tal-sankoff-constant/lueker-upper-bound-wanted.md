@@ -1,6 +1,6 @@
 # Lueker's upper bound for the binary Chvátal–Sankoff constant
 
-**Lueker's upper bound for the binary Chvátal–Sankoff constant.** The binary Chvátal–Sankoff
+The binary Chvátal–Sankoff
 constant $C_{31a}$ is at most $0.826280$.
 
 ## Sources

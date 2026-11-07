@@ -1,6 +1,6 @@
 # One part of a union inherits $k$-topological recurrence
 
-**One part of a union inherits $k$-topological recurrence.** Let $k$ be a natural number
+Let $k$ be a natural number
 and let $D_1, D_2 \subseteq \mathbb{N}$. If $D_1 \cup D_2$ is a set of $k$-topological recurrence,
 then $D_1$ or $D_2$ is a set of $k$-topological recurrence.
 

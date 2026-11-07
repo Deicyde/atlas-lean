@@ -1,6 +1,6 @@
 # $F_{\pm 1}$ over $\mathbb{Z}/6$ is not $m$-vanishing for $m > 1$
 
-**$F_{\pm 1}$ over $\mathbb{Z}/6$ is not $m$-vanishing for $m > 1$.** For every $m > 1$,
+For every $m > 1$,
 neither of the sum-plus-product families $F_{-1}$ and $F_1$ over $\mathbb{Z}/6$, where
 $F_c(b_1, \dots, b_l) = b_1 + \dots + b_l + c\, b_1 \cdots b_l$, is $m$-vanishing.
 

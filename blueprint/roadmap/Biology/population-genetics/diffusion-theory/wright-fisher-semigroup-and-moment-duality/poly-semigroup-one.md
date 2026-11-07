@@ -1,3 +1,3 @@
 # Dual semigroup fixes the constant polynomial one
 
-**Dual semigroup fixes the constant polynomial one.** The dual semigroup fixes the constant polynomial `1` (zero lineages stay zero).
+The dual semigroup fixes the constant polynomial `1` (zero lineages stay zero).

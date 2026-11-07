@@ -1,6 +1,6 @@
 # An integral formula for $\log \Gamma(1/N)$
 
-**An integral formula for $\log \Gamma(1/N)$.** For every real number $N > 0$,
+For every real number $N > 0$,
 
 $$
 \int_0^\infty \left( \frac{e^{-x}}{x \left(1 - e^{-N x}\right)} - \frac{1}{N x^2} -

@@ -1,6 +1,6 @@
 # Odd positions of a parity sequence
 
-**Odd positions of a parity sequence.** Let $x = x_0 x_1 x_2 \cdots$ be an infinite sequence
+Let $x = x_0 x_1 x_2 \cdots$ be an infinite sequence
 over the parity alphabet $\{O_L, E_R, O_R, E_L\}$, and call a position $j \ge 0$ odd when
 $x_j \in \{O_L, O_R\}$. For $i \ge 0$, the $i$-th odd position of $x$ is the $(i+1)$-st smallest
 odd position of $x$, and it is $0$ by convention when $x$ has at most $i$ odd positions.

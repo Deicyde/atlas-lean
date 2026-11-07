@@ -1,6 +1,6 @@
 # Smooth coconut structures with prescribed labels
 
-**Smooth coconut structures with prescribed labels.** Let $s \ge 1$ and let $c$ and
+Let $s \ge 1$ and let $c$ and
 $a_1, \dots, a_s$ be natural numbers with $a_i > 0$, $a_i \mid c$ and $a_i < c$ for every $i$, such
 that the only natural number dividing $c$ and all of $a_1, \dots, a_s$ is $1$. Write $CT(p, s)$ for
 the coconut tree with path vertices $v_1, \dots, v_p$ and leaves $\ell_1, \dots, \ell_s$ adjacent

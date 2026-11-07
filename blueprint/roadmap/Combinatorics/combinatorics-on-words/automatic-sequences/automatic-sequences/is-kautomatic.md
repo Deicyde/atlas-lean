@@ -1,6 +1,6 @@
 # $k$-automatic sequence (finite-kernel definition)
 
-**$k$-automatic sequence (finite-kernel definition).** For a natural number $k$, a sequence
+For a natural number $k$, a sequence
 $a$ indexed by $\mathbb{N}$ is $k$-automatic when $k \ge 2$ and the $k$-kernel of $a$ is finite.
 
 ## Sources

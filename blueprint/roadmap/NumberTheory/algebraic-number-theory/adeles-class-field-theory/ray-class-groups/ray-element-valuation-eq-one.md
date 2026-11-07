@@ -1,6 +1,6 @@
 # Ray elements have valuation one at the primes dividing the modulus
 
-**Ray elements have valuation one at the primes dividing the modulus.** Let $m$ be a
+Let $m$ be a
 modulus of a number field $K$ and let $x \in K^\times$ be a ray element of $m$. Then for
 every finite prime $\mathfrak p$ of $K$ dividing the finite part of $m$, the multiplicative
 $\mathfrak p$-adic valuation of $x$ equals $1$.

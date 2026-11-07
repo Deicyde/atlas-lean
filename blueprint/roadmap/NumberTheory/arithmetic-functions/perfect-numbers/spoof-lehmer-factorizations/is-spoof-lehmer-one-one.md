@@ -1,6 +1,6 @@
 # The factorizations $1^a \cdot 1^b$ are Lehmer for every $k$
 
-**The factorizations $1^a \cdot 1^b$ are Lehmer for every $k$.** For all positive integers
+For all positive integers
 $a$ and $b$ and every integer $k$, the spoof factorization $1^a \cdot 1^b$ is a $k$-Lehmer
 factorization.
 

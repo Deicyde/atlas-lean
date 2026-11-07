@@ -1,6 +1,6 @@
 # Rational Pythagorean triples
 
-**Rational Pythagorean triples.** The set $E$ consists of the triples $(x, y, z)$ of rational
+The set $E$ consists of the triples $(x, y, z)$ of rational
 numbers with $x \ne 0$ and $x^2 + y^2 = z^2$.
 
 ## Sources

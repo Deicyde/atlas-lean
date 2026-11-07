@@ -1,6 +1,6 @@
 # Parameterized complexity: FPT and W(1)-completeness of Clique
 
-**Parameterized complexity: FPT and W[1]-completeness of Clique.** Write $W[t]$ for the
+Write $W[t]$ for the
 $t$-th level of the W-hierarchy. The parameterized $k$-Clique problem lies in $W[1]$, and every
 parameterized problem in $W[1]$ has an FPT-reduction to it. Every fixed-parameter tractable
 parameterized problem lies in $W[1]$. For every $t \in \mathbb{N}$, $W[t] \subseteq W[t + 1]$.

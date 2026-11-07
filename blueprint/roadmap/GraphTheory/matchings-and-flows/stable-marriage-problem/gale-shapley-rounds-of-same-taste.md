@@ -1,6 +1,6 @@
 # Gale–Shapley rounds when all men have the same preferences
 
-**Gale–Shapley rounds when all men have the same preferences.** Let $P$ be a preference
+Let $P$ be a preference
 profile for $n$ men and $n$ women in which all men rank the women in the same order. Then the
 men-proposing Gale–Shapley algorithm on $P$ ends in exactly $n$ rounds.
 

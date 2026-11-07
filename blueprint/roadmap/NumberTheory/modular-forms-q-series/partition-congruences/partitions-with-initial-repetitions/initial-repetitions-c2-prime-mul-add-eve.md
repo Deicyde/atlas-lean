@@ -1,6 +1,6 @@
 # Parity of $c_2(pn + r)$ for primes $p \ge 5$
 
-**Parity of $c_2(pn + r)$ for primes $p \ge 5$.** Let $c_2(m)$ be the number of partitions of
+Let $c_2(m)$ be the number of partitions of
 $m$ for which there is an integer $j$ with $1 \le j \le m$ such that $j$ appears exactly $j$
 times, every part other than $j$ is at least $2j + 1$, and every even part that is at least
 $2j + 2$ appears only once. Let $p \ge 5$ be a prime and let $r$ be an integer with

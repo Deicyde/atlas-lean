@@ -1,6 +1,6 @@
 # Block of consecutive primes
 
-**Block of consecutive primes.** A list $l$ of natural numbers is a block of consecutive
+A list $l$ of natural numbers is a block of consecutive
 primes when $l$ is nonempty, every entry of $l$ is prime, $l$ is strictly increasing, and every
 two adjacent entries of $l$ are consecutive primes.
 

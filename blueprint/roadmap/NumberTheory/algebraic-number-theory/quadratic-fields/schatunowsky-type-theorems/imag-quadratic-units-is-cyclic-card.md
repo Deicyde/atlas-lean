@@ -1,6 +1,6 @@
 # Unit groups of imaginary quadratic fields
 
-**Unit groups of imaginary quadratic fields.** Let $K$ be an imaginary quadratic field with
+Let $K$ be an imaginary quadratic field with
 discriminant $d_K$. The unit group of its ring of integers $\mathcal{O}_K$ is cyclic, of order
 $4$ if $d_K = -4$, of order $6$ if $d_K = -3$, and of order $2$ otherwise.
 

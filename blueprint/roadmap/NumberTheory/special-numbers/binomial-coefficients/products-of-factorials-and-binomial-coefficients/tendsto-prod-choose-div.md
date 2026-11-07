@@ -1,6 +1,6 @@
 # Asymptotics of products of binomial coefficients $\binom{an}{bn}$
 
-**Asymptotics of products of binomial coefficients $\binom{an}{bn}$.** Let $a > b \ge 1$ be
+Let $a > b \ge 1$ be
 natural numbers, let $F_k$ denote the factorial product constants and $P_{a,b}$ the binomial
 comparison function, and put $c_{a,b} = F_a / (F_b F_{a-b})$ and
 $C_{a,b} = c_{a,b} (2\pi)^{-1/4}$. Then $\prod_{n=1}^{m} \binom{an}{bn} / P_{a,b}(m) \to C_{a,b}$

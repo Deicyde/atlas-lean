@@ -1,6 +1,6 @@
 # Sum of a periodic sequence
 
-**Sum of a periodic sequence.** Let $K$ be a field of characteristic zero, let
+Let $K$ be a field of characteristic zero, let
 $f : \mathbb{N} \to K$ and let $L \ge 1$ be a natural number such that $f(i + L) = f(i)$ for
 all $i \ge 1$. Let $\bar f = \frac{1}{L} \sum_{k=1}^{L} f(k)$. Then for every natural number $N$,
 

@@ -1,6 +1,6 @@
 # The unstable translation constant equals $-zw$
 
-**The unstable translation constant equals $-zw$.** Write $\operatorname{od}(n)$ for the odd part
+Write $\operatorname{od}(n)$ for the odd part
 of a natural number $n$, $(2^e-1)!!$ for the product of the odd numbers from $1$ to $2^e-1$,
 $\operatorname{uns}(e,d) = \lfloor \operatorname{od}((2^e)!)/2^{e+1} \rfloor \bmod 2^d$ and
 $\operatorname{stab}(e+1,d) = \lfloor \operatorname{od}((2^{e+d})!)/2^{e+1} \rfloor \bmod 2^d$.

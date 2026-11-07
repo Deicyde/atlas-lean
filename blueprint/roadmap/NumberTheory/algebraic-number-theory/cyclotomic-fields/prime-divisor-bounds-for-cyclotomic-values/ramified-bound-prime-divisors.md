@@ -1,6 +1,6 @@
 # Ramified bound on the number of prime divisors of $x^n - 1$
 
-**Ramified bound on the number of prime divisors of $x^n - 1$.** The ramified bound. Let `n = ∏_{i=1}^m p_i^{a_i}` with primes `p_1 < ⋯ < p_m` (the ordering
+The ramified bound. Let `n = ∏_{i=1}^m p_i^{a_i}` with primes `p_1 < ⋯ < p_m` (the ordering
 the source fixes at the start of its Section 5), `x > 1`, `ω_n = ω(x^n - 1)`, and, with
 `p_0 := 1`, let `r_{i,j}` be the `i`-th element (`Nat.nth`, `0`-indexed here) of
 `Π^j = {ρ prime : ρ ≡ 1 (mod p_j), ρ ≢ 1 (mod p_s) for j < s ≤ m}`. Fix a prime factor `p_α` of

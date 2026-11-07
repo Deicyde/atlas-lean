@@ -1,6 +1,6 @@
 # Modular linear equation solver
 
-**Modular linear equation solver.** Given natural numbers $a > 0$ and $n > 0$ and an integer
+Given natural numbers $a > 0$ and $n > 0$ and an integer
 $b$, the solver solves $a x \equiv b \pmod{n}$ following CLRS. Let $d = \gcd(a, n)$ and let $y$ be
 the coefficient of $a$ in the Bézout identity $d = n u + a y$ computed by the extended Euclidean
 algorithm on $(n, a)$. If $d \mid b$, it returns the array $[x_0, x_1, \dots, x_{d-1}]$, where

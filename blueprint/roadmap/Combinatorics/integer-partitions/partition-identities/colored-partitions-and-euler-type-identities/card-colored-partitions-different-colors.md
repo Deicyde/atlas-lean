@@ -1,6 +1,6 @@
 # Colored partitions with distinct colors
 
-**Colored partitions with distinct colors.** A colored part is a pair $(m, j)$ of integers
+A colored part is a pair $(m, j)$ of integers
 with $1 \le j \le m$, read as the part $m$ in color $j$. For every $n \ge 0$, the number of
 nonempty finite sets of colored parts $(m, j)$ with $m \le n$ in which no two colored parts have
 the same color $j$ is $(n + 1)! - 1$.

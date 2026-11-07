@@ -1,6 +1,6 @@
 # $Q$-bonacci and rational-run paths correspond exactly when $s \equiv 1 \pmod r$
 
-**$Q$-bonacci and rational-run paths correspond exactly when $s \equiv 1 \pmod r$.** Let
+Let
 $r, s \ge 1$ be coprime natural numbers and let $t = \lfloor (s - 1)/r \rfloor$, so that
 $t r + 1 \le s \le (t + 1) r$. For $m \in \mathbb{N}$ write $Q_m^{r/s}$ for the set of $Q$-bonacci
 paths of semilength $m$ and $\tilde R_m^{r/s}$ for the set of Dyck paths of semilength $m$ and

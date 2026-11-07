@@ -1,6 +1,6 @@
 # The sum-plus-product family on blocks of length two
 
-**The sum-plus-product family on blocks of length two.** For $c \in \mathbb{Z}/n$ and
+For $c \in \mathbb{Z}/n$ and
 $b_0, b_1 \in \mathbb{Z}/n$, the sum-plus-product family $F_c$ over $\mathbb{Z}/n$ satisfies
 $F_c(b_0, b_1) = b_0 + b_1 + c\, b_0 b_1$.
 

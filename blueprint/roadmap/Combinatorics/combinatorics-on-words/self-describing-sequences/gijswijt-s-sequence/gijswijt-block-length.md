@@ -1,6 +1,6 @@
 # Block lengths of the higher-order Gijswijt sequences
 
-**Block lengths of the higher-order Gijswijt sequences.** For a natural number $m$, write
+For a natural number $m$, write
 $A^{(m)}(k)$ for the $k$th term of the $m$th order sequence. The block lengths $\beta^{(m)}(t)$
 are defined by $\beta^{(m)}(0) = 0$, $\beta^{(m)}(1) = 1$ and, for $t \ge 1$, $\beta^{(m)}(t+1)$
 is the least $k > (m+1)\,\beta^{(m)}(t)$ with $A^{(m)}(k+1) = m$, or $0$ if there is no such $k$.

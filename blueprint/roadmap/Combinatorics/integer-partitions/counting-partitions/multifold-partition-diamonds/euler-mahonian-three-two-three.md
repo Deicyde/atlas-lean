@@ -1,6 +1,6 @@
 # Euler–Mahonian polynomial $E_3$ at $(2, 3)$
 
-**Euler–Mahonian polynomial $E_3$ at $(2, 3)$.** Over the integers, the Euler–Mahonian
+Over the integers, the Euler–Mahonian
 polynomial $E_3$ takes the value $E_3(2, 3) = 157$.
 
 This agrees with $E_3(x, y) = 1 + 2xy + 2xy^2 + x^2y^3$: the six permutations of $S_3$ have

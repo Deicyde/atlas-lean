@@ -1,6 +1,6 @@
 # The Markov triple $(1, 1, 2)$
 
-**The Markov triple $(1, 1, 2)$.** The triple $(1, 1, 2)$ is a $0$-generalized Markov
+The triple $(1, 1, 2)$ is a $0$-generalized Markov
 triple, that is, a classical Markov triple: $1^2 + 1^2 + 2^2 = 3 \cdot 1 \cdot 1 \cdot 2$.
 
 ## Sources

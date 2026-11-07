@@ -1,6 +1,6 @@
 # Burnside count of tilings of the square torus
 
-**Burnside count of tilings of the square torus.** Let $n$ be a positive integer and let $T$
+Let $n$ be a positive integer and let $T$
 be a finite set of tile designs. Let $\rho(x, y) = (-1-y, x)$ and $\phi(x, y) = (-1-x, y)$ on the
 cells $(\mathbb{Z}/n\mathbb{Z})^2$ of the $n \times n$ torus, and let the dihedral group
 $D_8 = \langle r, f \rangle$ of the square act on cells by $r^i \cdot c = \rho^i(c)$ and

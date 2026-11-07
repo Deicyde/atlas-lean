@@ -1,6 +1,6 @@
 # $2$ is a sum of two prime powers
 
-**$2$ is a sum of two prime powers.** The integer $2$ is a sum of two prime powers, since
+The integer $2$ is a sum of two prime powers, since
 $2 = 2^0 + 2^0$.
 
 ## Sources

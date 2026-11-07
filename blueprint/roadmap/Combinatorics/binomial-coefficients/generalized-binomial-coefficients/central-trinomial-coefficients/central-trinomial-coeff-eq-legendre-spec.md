@@ -1,6 +1,6 @@
 # Central trinomial coefficients as Legendre values
 
-**Central trinomial coefficients as Legendre values.** For a natural number $n$, let $c_n$ be the
+For a natural number $n$, let $c_n$ be the
 central trinomial coefficient, the coefficient of $X^n$ in $(1 + X + X^2)^n$, and let $P_n$ be the
 $n$th Legendre polynomial. Then, in the complex numbers,
 

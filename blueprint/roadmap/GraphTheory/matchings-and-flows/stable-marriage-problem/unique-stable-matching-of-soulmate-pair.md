@@ -1,6 +1,6 @@
 # Profiles with $n - 1$ soulmate pairs
 
-**Profiles with $n - 1$ soulmate pairs.** Let $P$ be a preference profile for $n$ men and $n$
+Let $P$ be a preference profile for $n$ men and $n$
 women with exactly $n - 1$ soulmate pairs (read as $0$ when $n = 0$). Then $P$ has exactly one
 stable matching. Moreover, for every stable matching $\mu$ of $P$ and every man $i$ who has no
 soulmate, the men-proposing Gale–Shapley algorithm on $P$ ends after $r + 1$ rounds, where $r$ is

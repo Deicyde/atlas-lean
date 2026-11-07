@@ -1,6 +1,6 @@
 # Legal parallel steps in the star model
 
-**Legal parallel steps in the star model.** Let $\mathcal{S}(k)$ be the star graph with a
+Let $\mathcal{S}(k)$ be the star graph with a
 center and $k$ leaves. Consider a configuration of the star model on $\mathcal{S}(k)$ with $n$
 persons, given by the vertex $\mathrm{pos}(p)$ of each person $p$ and the number $\mathrm{tor}(v)$
 of torches at each vertex $v$. A parallel step, a list of star movements, is legal from this

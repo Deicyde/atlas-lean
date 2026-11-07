@@ -1,6 +1,6 @@
 # Correctness of the shift generator, with its explicit time bound
 
-**Correctness of the shift generator, with its explicit time bound.** Let $L$ be a layout, let
+Let $L$ be a layout, let
 $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$, $\mathrm{pu}$ be situation tables and let
 $N, T, H \in \mathbb{N}$, and suppose the tables are well formed for $N$ situations at height
 $H$. Start the cell-shift generator for $L$, $\mathrm{sa}$, $\mathrm{pl}$, $\mathrm{cn}$,

@@ -1,6 +1,6 @@
 # Polynomial time bound for the shift generator
 
-**Polynomial time bound for the shift generator.** Let $L$ be a layout with label/state block
+Let $L$ be a layout with label/state block
 size $A$, $K$ stacks, $g$ symbol codes and window depth $d$, let $\mathrm{sa}$, $\mathrm{pl}$,
 $\mathrm{cn}$, $\mathrm{pu}$ be situation tables and let $N, T, H \in \mathbb{N}$, and suppose
 the tables are well formed for $N$ situations at height $H$. Start the cell-shift generator for

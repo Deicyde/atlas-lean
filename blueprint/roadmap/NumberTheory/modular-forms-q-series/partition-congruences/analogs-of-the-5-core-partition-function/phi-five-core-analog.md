@@ -1,6 +1,6 @@
 # The φ-analog of the 5-core partition function
 
-**The φ-analog of the 5-core partition function.** Let
+Let
 $\varphi(q) = \sum_{n \in \mathbb{Z}} q^{n^2}$ be Ramanujan's theta function. For a natural
 number $n$, $\bar a_5(n)$ is the coefficient of $q^n$ in the integer power series
 $\varphi^5(-q^5)/\varphi(-q)$ (the denominator has constant term $1$, so the quotient is a power

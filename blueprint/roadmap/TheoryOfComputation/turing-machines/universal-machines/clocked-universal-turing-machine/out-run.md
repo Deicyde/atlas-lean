@@ -1,6 +1,6 @@
 # Writing the output
 
-**Writing the output.** Let $c$ be a code, $t$ a natural number, $k$ a configuration and $v$ a
+Let $c$ be a code, $t$ a natural number, $k$ a configuration and $v$ a
 bit, and let $N$ be the length of the cells of the head symbol of $k$ followed by the symbols to
 its right (a symbol $a$ takes $a + 1$ bits). Started at the label $\mathsf{hlt}$ with state bit $v$
 and the stacks of the code $c$, the clock $t$ and the configuration $k$ with next state and action

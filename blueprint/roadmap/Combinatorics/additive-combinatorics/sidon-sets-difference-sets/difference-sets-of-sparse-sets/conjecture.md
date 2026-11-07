@@ -1,6 +1,6 @@
 # Erdős Problem 899 on difference sets of sparse sets
 
-**Erdős Problem 899 on difference sets of sparse sets.** The proposition asserts the following
+The proposition asserts the following
 for every infinite set $A$ of natural numbers. Write $A(N) = |A \cap \{1, \dots, N\}|$ for its
 counting function and $D(N)$ for the number of integers $d \in \{1, \dots, N\}$ of the form
 $d = a - b$ with $a, b \in A$. If $A(N)/N \to 0$ as $N \to \infty$, then

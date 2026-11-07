@@ -1,6 +1,6 @@
 # A two-minimum merge trace gives a minimum weighted path length
 
-**A two-minimum merge trace gives a minimum weighted path length.** Let $L$ be a list of
+Let $L$ be a list of
 symbol–weight pairs with natural-number weights, and let $t$ and $t'$ be coding trees with
 symbols of the same type. Suppose the weighted path length of $t$, as a real number, is the cost
 of a two-minimum merge trace for the multiset of the weights of $L$, taken as reals (repeatedly

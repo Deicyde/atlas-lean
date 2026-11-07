@@ -1,6 +1,6 @@
 # The $1$-box path of size $1$
 
-**The $1$-box path of size $1$.** The only $1$-box path of size $1$ is $UUDL$.
+The only $1$-box path of size $1$ is $UUDL$.
 
 ## Sources
 

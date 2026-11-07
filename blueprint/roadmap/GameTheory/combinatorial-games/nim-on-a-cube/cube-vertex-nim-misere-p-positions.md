@@ -1,6 +1,6 @@
 # Misère P-positions of vertex Nim on a cube
 
-**Misère P-positions of vertex Nim on a cube.** Write a position of the cube game as
+Write a position of the cube game as
 $p = (a, b, c, A, B, C)$, the numbers of tokens on the six faces of a cube, where the faces
 carrying $A$, $B$, $C$ are opposite those carrying $a$, $b$, $c$; a vertex move removes at
 least one token in total from the three faces at one vertex (one face from each opposite pair).

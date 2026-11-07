@@ -1,6 +1,6 @@
 # Weighted Ladyzhenskaya inequality in the plane
 
-**Weighted Ladyzhenskaya inequality in the plane.** There is a constant $C > 0$ such that
+There is a constant $C > 0$ such that
 for every $C^1$ function $\omega : \mathbb{R}^2 \to \mathbb{R}$ with $\omega(x) > 0$ for all $x$
 and $\|\nabla\omega/\omega\|_{L^\infty(\mathbb{R}^2)} \le 1$, and every smooth compactly supported
 function $u : \mathbb{R}^2 \to \mathbb{R}$,

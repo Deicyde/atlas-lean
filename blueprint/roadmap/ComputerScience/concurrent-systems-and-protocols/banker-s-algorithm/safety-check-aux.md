@@ -1,6 +1,6 @@
 # Banker's safety algorithm with fuel
 
-**Banker's safety algorithm with fuel.** Let $S$ be a system with processes $P$ and a
+Let $S$ be a system with processes $P$ and a
 finite set $R$ of resource types, where process $p$ has maximum claim $\mathrm{claim}(p)$ and
 allocation $\mathrm{alloc}(p)$ in $R \to \mathbb{N}$. Given a fuel $n \in \mathbb{N}$, a free
 resource vector $w : R \to \mathbb{N}$ and a list of pending processes, the algorithm succeeds

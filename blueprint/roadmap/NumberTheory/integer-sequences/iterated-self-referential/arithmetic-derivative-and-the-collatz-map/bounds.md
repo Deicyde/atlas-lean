@@ -1,6 +1,6 @@
 # Bounds on the factors of compatible semiprimes
 
-**Bounds on the factors of compatible semiprimes.** Suppose the semiprimes $pq$ and $rs$ are
+Suppose the semiprimes $pq$ and $rs$ are
 compatible, where $q < p$. Then $r \ge 241$, $s \ge 241$, $3q < r < 3p$ and $3q < s < 3p$.
 
 ## Sources

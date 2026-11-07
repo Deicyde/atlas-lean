@@ -1,6 +1,6 @@
 # Binomial expansion of Mitrinović's numbers in the first parameter
 
-**Binomial expansion of Mitrinović's numbers in the first parameter.** For all complex
+For all complex
 numbers $a, b$ and all $j, k \in \mathbb{N}$, Mitrinović's numbers satisfy
 
 $$R^k_j(a, b) = \sum_{\ell=0}^{j-k} (-1)^\ell \binom{k+\ell}{\ell} a^\ell R^{k+\ell}_j(0, b),$$

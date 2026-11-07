@@ -1,6 +1,6 @@
 # Lifts of a singular point with valuation one
 
-**Lifts of a singular point with valuation one.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $f \in \mathbb{Z}[x, y]$ have partial derivatives $f_x$ and $f_y$, and let $r, s$ be integers in
 $\{0, \dots, p - 1\}$ such that $p$ divides $f(r, s)$, $f_x(r, s)$ and $f_y(r, s)$. Then the
 number of pairs $(k, l)$ with $0 \le k, l < p$, $p \mid f(r + kp, s + lp)$ and

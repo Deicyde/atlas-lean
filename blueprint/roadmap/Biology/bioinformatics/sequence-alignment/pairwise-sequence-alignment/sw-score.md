@@ -1,6 +1,6 @@
 # The Smith–Waterman score
 
-**The Smith–Waterman score.** Given a substitution score $\sigma$ and a gap score $g$, the
+Given a substitution score $\sigma$ and a gap score $g$, the
 Smith–Waterman score of two sequences $x$ and $y$ is the maximum of the terminal Smith–Waterman
 cell $H(p, q)$ over all pairs of a prefix $p$ of $x$ and a prefix $q$ of $y$ (the empty prefixes
 included).

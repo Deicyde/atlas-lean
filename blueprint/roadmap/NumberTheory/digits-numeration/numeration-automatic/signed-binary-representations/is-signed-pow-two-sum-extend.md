@@ -1,6 +1,6 @@
 # Extending a signed power-of-two sum to a longer range
 
-**Extending a signed power-of-two sum to a longer range.** Let $m \ge 1$, $s$, $t$ and $\alpha$
+Let $m \ge 1$, $s$, $t$ and $\alpha$
 be natural numbers, let $\beta = \nu_2(m + 1)$ be the exponent of $2$ in $m + 1$, and suppose that
 $s + \beta \le t + 1$ and $2^\alpha \equiv 1 \pmod{(m + 1)/2^\beta}$. If an integer $n$ can be
 written as $\sum_{j=s}^{t} \lambda_j 2^j$ with every $\lambda_j \in \{-1, m\}$, then $n$ can also be

@@ -1,6 +1,6 @@
 # Kourovka Problem 16.34: conjugacy in finite-state automorphism groups
 
-**Kourovka Problem 16.34: conjugacy in finite-state automorphism groups.** The proposition
+The proposition
 that every finitely generated group of finite-state automorphisms of a regular rooted tree has
 decidable conjugacy problem: for all $d, k \in \mathbb{N}$ and all finite-state automorphisms
 $g_0, \dots, g_{k-1}$ of the $d$-regular rooted tree, some algorithm decides, given two words

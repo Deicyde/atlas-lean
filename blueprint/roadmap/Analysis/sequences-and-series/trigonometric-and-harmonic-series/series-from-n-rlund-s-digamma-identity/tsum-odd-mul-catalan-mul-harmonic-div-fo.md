@@ -1,6 +1,6 @@
 # Adegoke–Frontczak series with odd weights, Catalan numbers and harmonic numbers
 
-**Adegoke–Frontczak series with odd weights, Catalan numbers and harmonic numbers.** Let $z$
+Let $z$
 be a complex number with $\operatorname{Re} z > \frac12$. Write $C_n$ for the $n$-th Catalan
 number, $\psi$ for the digamma function, $\gamma$ for the Euler–Mascheroni constant,
 $H_\alpha = \psi(\alpha + 1) + \gamma$ for complex $\alpha$, and

@@ -1,6 +1,6 @@
 # Unate and monotone functions have equally many NN- and NPN-classes
 
-**Unate and monotone functions have equally many NN- and NPN-classes.** For every $n$, the
+For every $n$, the
 number of NN-inequivalent unate $n$-variable Boolean functions equals the number of
 NN-inequivalent monotone ones, and the number of NPN-inequivalent unate $n$-variable Boolean
 functions equals the number of NPN-inequivalent monotone ones. Here monotone means nondecreasing

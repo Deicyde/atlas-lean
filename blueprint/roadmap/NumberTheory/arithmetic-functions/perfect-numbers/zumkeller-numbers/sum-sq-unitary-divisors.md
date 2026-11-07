@@ -1,6 +1,6 @@
 # Sum of squares of unitary divisors
 
-**Sum of squares of unitary divisors.** For every positive integer $n$, the sum of the
+For every positive integer $n$, the sum of the
 squares of the unitary divisors of $n$ equals $\prod_{p} \left(1 + p^{2k_p}\right)$, where $p$
 ranges over the distinct prime factors of $n$ and $k_p$ is the exponent of $p$ in $n$.
 

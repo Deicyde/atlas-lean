@@ -1,6 +1,6 @@
 # Palindromicity of the refined Eulerian polynomials
 
-**Palindromicity of the refined Eulerian polynomials.** Let $n \ge 1$. For a permutation
+Let $n \ge 1$. For a permutation
 $\sigma$ of $\{1, \dots, n\}$, let $\mathrm{odes}(\sigma)$ (resp. $\mathrm{edes}(\sigma)$) be the
 number of odd (resp. even) positions $i \in \{1, \dots, n-1\}$ with $\sigma(i) > \sigma(i+1)$,
 and let $A_n(p, q) = \sum_{\sigma} p^{\mathrm{odes}(\sigma)} q^{\mathrm{edes}(\sigma)}$, the sum

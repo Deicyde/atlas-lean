@@ -1,6 +1,6 @@
 # Kac's Scottish Book Problem 126
 
-**Kac's Scottish Book Problem 126.** Let $f : \mathbb{R} \to \mathbb{R}$ be a measurable function
+Let $f : \mathbb{R} \to \mathbb{R}$ be a measurable function
 that is integrable on $[0, 1]$ and satisfies $\int_0^1 f(x)\,dx = 0$ and
 $\int_0^1 f(x)^2\,dx = \infty$. Then the complex numbers
 $\left(\int_0^1 \exp\left(i f(x) / \sqrt{n}\right) dx\right)^n$ tend to $0$ as $n \to \infty$

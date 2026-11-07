@@ -1,6 +1,6 @@
 # Turán number of the complete $k$-graph on $k+1$ vertices
 
-**Turán number of the complete $k$-graph on $k+1$ vertices.** For natural numbers $k$ and
+For natural numbers $k$ and
 $n$, let $K_{k+1}^{(k)}$ be the complete $k$-uniform hypergraph on the vertex set
 $\{0, 1, \dots, k\}$, whose edges are all $k$-element subsets of that set. The Turán number
 $\mathrm{ex}(n, K_{k+1}^{(k)})$ is the largest size of a family $E$ of $k$-element subsets of

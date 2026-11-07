@@ -1,6 +1,6 @@
 # Prefix-restricted Irwin sum
 
-**Prefix-restricted Irwin sum.** For natural numbers $b$, $d$, $k$ and $n$, this is the sum of
+For natural numbers $b$, $d$, $k$ and $n$, this is the sum of
 the prefix-restricted reciprocal terms over all natural numbers $m$: the sum of $1/m$ over the
 positive integers $m$ with at least as many base-$b$ digits as $n$, whose leading-digits integer
 keeping as many digits as $n$ has equals $n$, and with exactly $k$ occurrences of $d$ in base

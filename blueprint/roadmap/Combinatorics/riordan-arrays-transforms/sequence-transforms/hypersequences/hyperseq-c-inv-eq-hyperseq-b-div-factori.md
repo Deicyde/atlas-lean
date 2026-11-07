@@ -1,6 +1,6 @@
 # The inverse of Parisse's matrix $C(n)$
 
-**The inverse of Parisse's matrix $C(n)$.** Let $n \in \mathbb{N}$. Let $e_{j,i}(n)$ be the
+Let $n \in \mathbb{N}$. Let $e_{j,i}(n)$ be the
 elementary symmetric polynomial of degree $i$ in $n + 1, \dots, n + j$, let
 $b_{j,k}(n) = (-1)^k e_{j,j-k}(n)$ for $k \le j$ and $b_{j,k}(n) = 0$ for $k > j$, let
 $p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (k x + y)^\ell$ for complex $x, y$, and let

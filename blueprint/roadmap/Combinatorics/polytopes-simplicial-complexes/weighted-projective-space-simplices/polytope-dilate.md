@@ -1,6 +1,6 @@
 # Dilate of a set
 
-**Dilate of a set.** For a natural number $t$ and a set $P \subseteq \mathbb{R}^\iota$ of real
+For a natural number $t$ and a set $P \subseteq \mathbb{R}^\iota$ of real
 vectors indexed by a type $\iota$, the dilate of $P$ by $t$ is the set
 $tP = \{t y : y \in P\} \subseteq \mathbb{R}^\iota$.
 

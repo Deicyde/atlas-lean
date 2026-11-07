@@ -1,6 +1,6 @@
 # The congruence for $\binom{np}{kp}$ with symmetrized coefficients
 
-**The congruence for $\binom{np}{kp}$ with symmetrized coefficients.** Let $p$ be a prime,
+Let $p$ be a prime,
 let $m$ and $k$ be natural numbers with $m + 1 < p$, and let $n$ be an integer. For an integer
 $x$ and a natural number $r$ write $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$, for a rational
 number $x$ write $(x)_r = x(x-1)\cdots(x-r+1)$ for the falling factorial, and let $v_p$ be the

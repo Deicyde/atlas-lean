@@ -1,3 +1,3 @@
 # Open subgraph of a bond configuration
 
-**Open subgraph of a bond configuration.** The spanning subgraph of `G` consisting of the open edges of `ω`.
+The spanning subgraph of `G` consisting of the open edges of `ω`.

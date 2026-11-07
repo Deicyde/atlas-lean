@@ -1,6 +1,6 @@
 # Simplicial boundary matrix
 
-**Simplicial boundary matrix.** For a finite family $K$ of finite subsets of $\mathbb{N}$ and
+For a finite family $K$ of finite subsets of $\mathbb{N}$ and
 $k \in \mathbb{N}$, the boundary matrix $\partial_k$ of $K$ is the matrix over $\mathbb{Q}$ whose
 rows are indexed by the faces of $K$ with $k$ vertices and whose columns are indexed by the faces
 of $K$ with $k + 1$ vertices; its entry at $(\tau, \sigma)$ is $(-1)^i$ when $\tau$ is obtained

@@ -1,6 +1,6 @@
 # Binomial coefficients with upper index $-np$
 
-**Binomial coefficients with upper index $-np$.** Let $p$, $n$ and $k$ be natural numbers
+Let $p$, $n$ and $k$ be natural numbers
 with $p \ge 1$ and $k \ge 1$. For an integer $x$ and a natural number $r$ write
 $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$. Then
 

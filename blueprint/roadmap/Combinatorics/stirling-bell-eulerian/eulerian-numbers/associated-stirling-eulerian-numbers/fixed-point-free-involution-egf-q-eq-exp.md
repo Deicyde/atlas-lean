@@ -1,6 +1,6 @@
 # Excedance generating function of fixed-point-free involutions
 
-**Excedance generating function of fixed-point-free involutions.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra and $x, q \in R$. For a permutation $\sigma$ write $e(\sigma)$ for the number
 of $i$ with $\sigma(i) > i$ and $c(\sigma)$ for its number of cycles, fixed points included.
 Summing over the permutations $\sigma$ of $\{0, \dots, n-1\}$ all of whose cycles have length

@@ -1,6 +1,6 @@
 # Whether two context-free languages intersect is undecidable
 
-**Whether two context-free languages intersect is undecidable.** There is an alphabet $T$,
+There is an alphabet $T$,
 with decidable equality and a primitive recursive encoding into $\mathbb{N}$, such that no
 multi-stack machine decides (in the sense of TM2-decidability), for a pair $(G_1, G_2)$ of
 encoded context-free grammars over $T$, whether some word lies in both $L(G_1)$ and $L(G_2)$,

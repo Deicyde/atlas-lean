@@ -1,6 +1,6 @@
 # Barry's triangle recurrence
 
-**Barry's triangle recurrence.** The function $s(\beta, n, k)$ of natural numbers
+The function $s(\beta, n, k)$ of natural numbers
 $\beta, n, k$, with natural-number values, is defined by $s(\beta, 0, 0) = 1$, by
 $s(\beta, n, k) = 0$ if exactly one of $n, k$ is $0$, and by
 

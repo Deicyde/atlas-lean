@@ -1,6 +1,6 @@
 # Odd part as a quotient by a power of two
 
-**Odd part as a quotient by a power of two.** For every natural number $n$,
+For every natural number $n$,
 $\mathrm{od}(n) = n / 2^{\nu_2(n)}$, where $\mathrm{od}(n)$ is the odd part of $n$ and
 $\nu_2(n)$ is the exponent of $2$ in the prime factorization of $n$, with $\nu_2(0) = 0$.
 

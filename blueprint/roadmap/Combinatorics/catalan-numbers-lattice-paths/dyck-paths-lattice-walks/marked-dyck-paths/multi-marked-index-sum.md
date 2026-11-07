@@ -1,6 +1,6 @@
 # Index sum of a multi-marked step sequence
 
-**Index sum of a multi-marked step sequence.** For a finite sequence $s$ of steps of a
+For a finite sequence $s$ of steps of a
 multi-marked Dyck path, the index sum of $s$ is the sum of the indices $t$ over all occurrences
 of marked steps $N^*_t$ in $s$, each occurrence counted separately; the steps $E$ and $N$
 contribute nothing.

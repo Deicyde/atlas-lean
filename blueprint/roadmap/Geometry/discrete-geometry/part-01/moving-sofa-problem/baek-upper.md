@@ -1,6 +1,6 @@
 # Baek upper bound for the ambidextrous sofa
 
-**Baek upper bound for the ambidextrous sofa.** The supremum of the areas of
+The supremum of the areas of
 ambidextrous sofas, taken in $[0, \infty]$, is at most $22195/10000 = 2.2195$.
 
 ## Sources

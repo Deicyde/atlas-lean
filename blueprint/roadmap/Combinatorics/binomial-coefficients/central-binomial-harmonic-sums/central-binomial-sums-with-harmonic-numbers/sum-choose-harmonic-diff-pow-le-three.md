@@ -1,6 +1,6 @@
 # Power sums of $\binom{t}{k}(H_t - H_{t-k})$ for exponents up to three
 
-**Power sums of $\binom{t}{k}(H_t - H_{t-k})$ for exponents up to three.** Let $n$ be a
+Let $n$ be a
 natural number and $t$ a complex number that is not an integer. For complex $x$ write
 $\binom{x}{k} = x(x-1)\cdots(x-k+1)/k!$, and write $H_x = \psi(x+1) + \gamma$, where $\psi$ is
 the digamma function and $\gamma$ is the Euler–Mascheroni constant (only differences

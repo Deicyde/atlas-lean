@@ -1,6 +1,6 @@
 # The detour walk of a diamond in the HAMPATH emitter
 
-**The detour walk of a diamond in the HAMPATH emitter.** Let $B$, $m$, $i$ and $y$ be natural
+Let $B$, $m$, $i$ and $y$ be natural
 numbers and $\varphi = C_0 \cdots C_{m-1}$ a CNF formula with $m$ clauses. Write
 $\tau = m + i(3m+2)$ for the top vertex of diamond $i$ and $\rho_l = \tau + 1 + l$ for its row
 vertices, encode an arc $(a, b)$ by the bits $1^a 0 1^b 0$, write $\mathrm{toks}(\psi)$ for the

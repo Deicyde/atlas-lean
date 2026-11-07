@@ -1,6 +1,6 @@
 # Completed field at a rational place
 
-**Completed field at a rational place.** For a place $v$ of $\mathbb{Q}$, the completed field
+For a place $v$ of $\mathbb{Q}$, the completed field
 $\mathbb{Q}_v$ is the field $\mathbb{R}$ of real numbers when $v$ is the infinite place and, when
 $v$ is the finite place at a prime $p$, the field $\mathbb{Q}_p$ of $p$-adic numbers.
 

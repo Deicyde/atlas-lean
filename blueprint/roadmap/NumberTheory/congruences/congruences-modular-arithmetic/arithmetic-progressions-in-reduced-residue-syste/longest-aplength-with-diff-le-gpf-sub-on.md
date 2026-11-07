@@ -1,6 +1,6 @@
 # Squarefree bound for progressions with a fixed difference
 
-**Squarefree bound for progressions with a fixed difference.** Let $m$ be an integer, $n > 1$
+Let $m$ be an integer, $n > 1$
 a squarefree natural number with largest prime factor $\operatorname{gpf}(n)$, and $d > 0$ a
 natural number. Then $f_m(d, n) \le \operatorname{gpf}(n) - 1$, where $f_m(d, n)$ is the length of
 the longest arithmetic progression with common difference $d$ contained in the set $R_m(n)$ of

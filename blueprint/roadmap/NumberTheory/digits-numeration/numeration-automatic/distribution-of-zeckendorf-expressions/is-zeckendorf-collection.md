@@ -1,6 +1,6 @@
 # Zeckendorf collections
 
-**Zeckendorf collections.** Index coefficient functions from $1$, let $\beta^n$ be the basis
+Index coefficient functions from $1$, let $\beta^n$ be the basis
 coefficient function with entry $1$ at index $n$, and for a coefficient function $\mu$ let
 $\operatorname{res}_n(\mu)$ keep the entries of $\mu$ at indices $\le n$ and
 $\operatorname{res}^n(\mu)$ keep those at indices $\ge n$, the other entries being $0$. A set $E$

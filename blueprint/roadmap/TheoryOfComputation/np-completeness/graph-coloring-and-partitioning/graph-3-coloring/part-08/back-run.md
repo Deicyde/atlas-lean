@@ -1,6 +1,6 @@
 # Restoring the color stack in the 3-COLOR verifier
 
-**Restoring the color stack in the 3-COLOR verifier.** Let $\mathit{pre}$ and $\mathit{post}$
+Let $\mathit{pre}$ and $\mathit{post}$
 be lists of pairs of bits, let $s$ be a Boolean state, and let $S$ assign to each stack a list of
 symbols. Suppose that in $S$ the stack $P$ holds the bits of the flattening of $\mathit{post}$
 and the stack $T$ holds the bits of the flattening of $\mathit{pre}$ in reverse order (as bit

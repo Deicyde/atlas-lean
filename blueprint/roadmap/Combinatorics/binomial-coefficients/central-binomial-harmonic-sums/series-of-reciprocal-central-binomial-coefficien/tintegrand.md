@@ -1,6 +1,6 @@
 # Integrand of the antiderivative condition
 
-**Integrand of the antiderivative condition.** Let $S$ be a sequence of real polynomials
+Let $S$ be a sequence of real polynomials
 indexed by the natural numbers, with terms $S(l)$. For a natural number $l$ and a real number
 $x$, the integrand is
 

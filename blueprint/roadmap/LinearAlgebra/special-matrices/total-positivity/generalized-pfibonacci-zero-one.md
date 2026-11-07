@@ -1,6 +1,6 @@
 # $p$-Fibonacci numbers as a Lucas sequence
 
-**$p$-Fibonacci numbers as a Lucas sequence.** For every integer $p$, the generalized
+For every integer $p$, the generalized
 Fibonacci sequence $W_{p,n}$ with initial values $a = 0$ and $b = 1$ (the $p$-Fibonacci numbers
 $F_{p,n}$) is the Lucas sequence $U(p, -1)$: $W_{p,n} = U_n(p, -1)$ for every natural number $n$.
 

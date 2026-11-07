@@ -1,6 +1,6 @@
 # Strassen's theorem on a finite poset
 
-**Strassen's theorem on a finite poset.** Let $\alpha$ be a finite partially ordered set and let
+Let $\alpha$ be a finite partially ordered set and let
 $p, q : \alpha \to \mathbb{R}$ be probability mass functions, that is, nonnegative functions with
 $\sum_{x \in \alpha} p(x) = 1$ and $\sum_{x \in \alpha} q(x) = 1$. Then
 $\sum_{x \in U} p(x) \le \sum_{x \in U} q(x)$ for every upper set $U \subseteq \alpha$ if and only

@@ -1,6 +1,6 @@
 # The generalized binomial coefficient at natural arguments
 
-**The generalized binomial coefficient at natural arguments.** For all natural numbers $n$
+For all natural numbers $n$
 and $k$, the generalized binomial coefficient of complex arguments at $(n, k)$, namely
 $\Gamma(n+1)/(\Gamma(k+1)\,\Gamma(n-k+1))$, equals the ordinary binomial coefficient
 $\binom{n}{k}$; in particular it is $0$ when $k > n$.

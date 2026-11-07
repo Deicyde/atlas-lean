@@ -1,6 +1,6 @@
 # Arctangent series at the exceptional point (Entry 7, Example 1)
 
-**Arctangent series at the exceptional point (Entry 7, Example 1).** Let
+Let
 $c = (\sqrt{5} - 1)/2$. The series
 
 $$\sum_{k=0}^{\infty} \arctan \frac{2}{(c + k + 1)^2}$$

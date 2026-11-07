@@ -1,6 +1,6 @@
 # A singleton set of vectors is semilinear
 
-**A singleton set of vectors is semilinear.** A singleton set of vectors is semilinear.
+A singleton set of vectors is semilinear.
 
 ## Sources
 

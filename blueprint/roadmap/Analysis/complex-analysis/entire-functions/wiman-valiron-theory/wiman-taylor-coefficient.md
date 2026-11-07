@@ -1,6 +1,6 @@
 # Wiman Taylor coefficient
 
-**Wiman Taylor coefficient.** For a function $f : \mathbb{C} \to \mathbb{C}$ and
+For a function $f : \mathbb{C} \to \mathbb{C}$ and
 $n \in \mathbb{N}$, the $n$th Taylor coefficient of $f$ at the origin is
 $a_n = f^{(n)}(0) / n!$, where $f^{(n)}$ is the $n$th iterated complex derivative of $f$.
 

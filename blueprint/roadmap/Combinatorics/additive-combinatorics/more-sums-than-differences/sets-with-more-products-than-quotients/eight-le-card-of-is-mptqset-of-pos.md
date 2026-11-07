@@ -1,6 +1,6 @@
 # Chu's bound for MPTQ sets of positive reals
 
-**Chu's bound for MPTQ sets of positive reals.** Every MPTQ set whose elements are all
+Every MPTQ set whose elements are all
 positive real numbers has at least $8$ elements.
 
 ## Sources

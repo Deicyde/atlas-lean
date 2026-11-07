@@ -1,6 +1,6 @@
 # Weakly prime-additive numbers
 
-**Weakly prime-additive numbers.** A natural number $n$ is weakly prime-additive if it has at
+A natural number $n$ is weakly prime-additive if it has at
 least two distinct prime divisors and is a sum $n = \sum_{p \in s} p^{e_p}$ of positive powers
 $p^{e_p}$, $e_p \ge 1$, over some set $s$ of distinct prime divisors of $n$.
 

@@ -1,6 +1,6 @@
 # Euler's family of solutions of $aT^2 - bU^2 = c$
 
-**Euler's family of solutions of $aT^2 - bU^2 = c$.** Let $a$, $b$, $c$ be integers
+Let $a$, $b$, $c$ be integers
 with $ab > 1$, $ab$ not a perfect square and $c \ne 0$, and let $T_1$, $U_1$ be integers with
 $aT_1^2 - bU_1^2 = c$. Let $\varepsilon = x_1 + y_1\sqrt{ab}$ be the fundamental solution of
 $x^2 - ab\,y^2 = 1$ and, for every natural number $j$, write

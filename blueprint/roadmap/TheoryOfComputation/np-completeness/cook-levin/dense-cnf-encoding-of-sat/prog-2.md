@@ -1,6 +1,6 @@
 # The dense-to-binary converter program
 
-**The dense-to-binary converter program.** The program uses an input stack, a stash, an
+The program uses an input stack, a stash, an
 output stack, unary counter stacks $N$, $K$, $M$ and a scratch stack $T$; each label first pops
 one stack and keeps the popped bit (or nothing, if the stack was empty) as its internal state.
 Below, $\iota$ says whether a clause is open, $0$ is false and $1$ is true.

@@ -1,6 +1,6 @@
 # Alternating binomial sum identities
 
-**Alternating binomial sum identities.** For an integer $x$ and a natural number $r$ write
+For an integer $x$ and a natural number $r$ write
 $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$ for the generalized binomial coefficient. Let $m$, $n$
 and $k$ be natural numbers. Then for every natural number $j \le m$,
 

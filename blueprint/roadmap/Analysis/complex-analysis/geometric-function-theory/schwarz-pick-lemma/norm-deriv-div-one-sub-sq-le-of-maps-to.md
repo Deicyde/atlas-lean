@@ -1,6 +1,6 @@
 # Schwarz–Pick lemma, derivative form
 
-**Schwarz–Pick lemma, derivative form.** Let $\mathbb{D}=\{z\in\mathbb{C}:|z|<1\}$ be the open
+Let $\mathbb{D}=\{z\in\mathbb{C}:|z|<1\}$ be the open
 unit disc. If $f:\mathbb{D}\to\mathbb{D}$ is holomorphic, then
 
 \[

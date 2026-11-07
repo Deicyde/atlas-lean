@@ -1,6 +1,6 @@
 # Every finite group has a just finite presentation
 
-**Every finite group has a just finite presentation.** For every finite group $G$ there are a
+For every finite group $G$ there are a
 natural number $n$ and a finite subset $R$ of the free group on $n$ generators $x_1, \dots, x_n$
 such that the group $\langle x_1, \dots, x_n \mid R \rangle$ is isomorphic to $G$ and, for every
 $r \in R$, the group $\langle x_1, \dots, x_n \mid R \setminus \{r\} \rangle$ is infinite. That is,

@@ -1,6 +1,6 @@
 # The index set $S(m, n, q)$
 
-**The index set $S(m, n, q)$.** For natural numbers $m$, $n$ and $q$, the set $S(m, n, q)$
+For natural numbers $m$, $n$ and $q$, the set $S(m, n, q)$
 consists of the natural numbers $k$ such that $2k \equiv n - q \pmod{m}$, where the difference
 $n - q$ is taken in the integers, and $2k < n$.
 

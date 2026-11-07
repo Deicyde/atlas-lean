@@ -1,6 +1,6 @@
 # Alphabet reduction with given constants
 
-**Alphabet reduction with given constants.** Let $S_0, e, d', V$ be natural numbers and
+Let $S_0, e, d', V$ be natural numbers and
 $c', \alpha'$ rationals. A map $T$ from 2CSP instances to 2CSP instances is an alphabet reduction
 with constants $S_0, e, c', \alpha', d', V$ when $S_0 \ge 2$, $e \ge 2$, $0 < c' \le 1$,
 $0 < \alpha' < 1$, $d' \ge 1$, $V \ge 1$, and for every 2CSP instance $I$ with $n$ variables,

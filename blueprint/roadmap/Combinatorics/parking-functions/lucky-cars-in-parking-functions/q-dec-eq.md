@@ -1,6 +1,6 @@
 # Decreasing lucky-car counts (Lemma 22)
 
-**Decreasing lucky-car counts (Lemma 22).** Number the cars and spots $0, \dots, n-1$, and let
+Number the cars and spots $0, \dots, n-1$, and let
 $q^{\mathrm{dec}}_n(i, j)$ be the number of weakly decreasing parking functions of length $n$ in
 which car $i$ prefers spot $j$ and is lucky. For all $i, j \in \{0, \dots, n-1\}$, if $i + j < n$
 then

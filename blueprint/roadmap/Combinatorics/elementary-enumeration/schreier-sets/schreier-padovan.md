@@ -1,6 +1,6 @@
 # Padovan-like sequence for Schreier sets
 
-**Padovan-like sequence for Schreier sets.** For natural numbers $p$ and $q$, the sequence
+For natural numbers $p$ and $q$, the sequence
 $a_{p,q,n}$, $n \ge 0$, is defined as follows. If $q \ge 1$ and $n \ge p + q$, then
 $a_{p,q,n} = a_{p,q,n-q} + a_{p,q,n-p-q}$. Otherwise, if $p \ge q$, then $a_{p,q,n} = 0$ for
 $n < p - q$ and $a_{p,q,n} = 1$ for $n \ge p - q$; and if $p < q$, then $a_{p,q,n} = 1$ for

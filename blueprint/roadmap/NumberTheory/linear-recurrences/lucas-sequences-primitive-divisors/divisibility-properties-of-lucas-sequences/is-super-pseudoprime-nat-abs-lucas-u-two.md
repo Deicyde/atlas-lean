@@ -1,6 +1,6 @@
 # Super Lucas pseudoprimes of the form $|U_{2p}/P|$
 
-**Super Lucas pseudoprimes of the form $|U_{2p}/P|$.** Let $P, Q$ be integers with $Q \neq 0$
+Let $P, Q$ be integers with $Q \neq 0$
 such that the pair $(P, Q)$ is nondegenerate and $\gcd(P, Q) = 1$, let $D = P^2 - 4Q$, and let
 $U = U(P, Q)$ be the Lucas sequence. Let $p \ge 5$ be a prime with $\gcd(p, PQD) = 1$ such that
 $(p, |P|, Q)$ is none of $(5, 1, 2)$, $(5, 1, 3)$, $(5, 2, 3)$, $(5, 12, 55)$ and $(13, 1, 2)$.

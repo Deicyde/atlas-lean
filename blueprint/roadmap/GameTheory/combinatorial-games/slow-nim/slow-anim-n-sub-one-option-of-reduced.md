@@ -1,6 +1,6 @@
 # Options without reduction in Slow {n - 1}-Nim
 
-**Options without reduction in Slow {n - 1}-Nim.** Let $n \ge 2$, $k = n - 1$ and $A = \{k\}$,
+Let $n \ge 2$, $k = n - 1$ and $A = \{k\}$,
 so that a move removes one token from each of exactly $k$ nonempty stacks. Let $p$ be a reduced
 position of Slow$A$-Nim on $n$ stacks, with $s = (p_1 + \dots + p_n) \bmod 2k$ and $o$ odd stacks.
 Let $p'$ be obtained from $p$ by playing on a set $S$ of $k$ stacks, each holding at least one

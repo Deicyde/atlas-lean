@@ -1,6 +1,6 @@
 # Counting necklaces with product in a conjugation-closed set
 
-**Counting necklaces with product in a conjugation-closed set.** Let $G$ be a finite group,
+Let $G$ be a finite group,
 let $K \subseteq G$ be closed under conjugation ($g k g^{-1} \in K$ for all $g \in G$ and
 $k \in K$), and let $n \ge 1$. The number of rotation orbits of $n$-tuples
 $(x_1, \dots, x_n) \in G^n$ with $x_1 x_2 \cdots x_n \in K$ ($K$-product $n$-necklaces) is

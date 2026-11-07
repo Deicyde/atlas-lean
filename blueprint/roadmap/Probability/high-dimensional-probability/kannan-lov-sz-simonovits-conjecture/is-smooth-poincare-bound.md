@@ -1,6 +1,6 @@
 # Smooth Poincaré bounds
 
-**Smooth Poincaré bounds.** Let $\mu$ be a measure on $\mathbb{R}^n$ and let
+Let $\mu$ be a measure on $\mathbb{R}^n$ and let
 $C \in [0, \infty]$. For a differentiable $g : \mathbb{R}^n \to \mathbb{R}$ write
 $\|\nabla g(x)\|$ for the Euclidean norm of the gradient of $g$ at $x$ (equivalently, the
 operator norm of the derivative of $g$ at $x$). Then $C$ is a smooth Poincaré bound for $\mu$

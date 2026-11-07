@@ -1,6 +1,6 @@
 # Infinite family of congruences modulo 3 for PEND partitions
 
-**Infinite family of congruences modulo 3 for PEND partitions.** Let $\mathrm{pend}(m)$ be
+Let $\mathrm{pend}(m)$ be
 the number of PEND partitions of $m$. For all natural numbers $\alpha \ge 1$ and $n$,
 $\mathrm{pend}\left(3^{2\alpha+1} n + (17 \cdot 3^{2\alpha} - 1)/8\right) \equiv 0 \pmod{3}$.
 

@@ -1,6 +1,6 @@
 # Noncentral Whitney numbers of the second kind
 
-**Noncentral Whitney numbers of the second kind.** For elements $m$ and $a$ of a commutative
+For elements $m$ and $a$ of a commutative
 ring $R$, the noncentral Whitney numbers of the second kind $W_{m,a}(n, k) \in R$, for natural
 numbers $n$ and $k$, are defined by $W_{m,a}(0, 0) = 1$, $W_{m,a}(0, k) = 0$ for $k \ge 1$,
 $W_{m,a}(n + 1, 0) = (-a)^{n+1}$, and

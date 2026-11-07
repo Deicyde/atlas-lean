@@ -1,6 +1,6 @@
 # Convergent vectors in the quarters of $P_{a,n}$
 
-**Convergent vectors in the quarters of $P_{a,n}$.** Let $1 \le a < n$ be coprime integers,
+Let $1 \le a < n$ be coprime integers,
 let $n / a = [q_0; q_1, \dots, q_m]$ be the regular continued fraction of $n / a$, where $m$ is
 the least index at which it terminates, and let $v_i$ be its convergent vectors. The lines
 $y = (n / a)(x - 1/2)$ and $y = n / 2$ cut the parallelogram $P_{a,n}$ with vertices $(0, 0)$,

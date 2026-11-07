@@ -1,6 +1,6 @@
 # The first two markers
 
-**The first two markers.** Call a gap index $i$ a marker if $i \ge 10$ and the $i$-th gap
+Call a gap index $i$ a marker if $i \ge 10$ and the $i$-th gap
 between consecutive unsums (counted from zero) equals $2$. The smallest marker is $10$ and
 the second smallest is $12$.
 

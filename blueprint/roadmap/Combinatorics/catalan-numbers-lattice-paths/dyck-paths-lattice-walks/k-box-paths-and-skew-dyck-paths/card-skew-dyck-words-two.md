@@ -1,6 +1,6 @@
 # Three skew Dyck paths of semilength $2$
 
-**Three skew Dyck paths of semilength $2$.** The number of skew Dyck paths of semilength
+The number of skew Dyck paths of semilength
 $2$ is $3$.
 
 They are $UUDD$, $UDUD$ and $UUDL$.

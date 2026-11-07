@@ -1,6 +1,6 @@
 # Closed form of the generating function of colored Arndt compositions
 
-**Closed form of the generating function of colored Arndt compositions.** Let
+Let
 $C(x, y) = \sum_{n, k} c(n, k)\, x^n y^k$ in $\mathbb{Z}[y][[x]]$, where $c(n, k)$ is the number
 of colored Arndt compositions of $n$ with $k$ parts. Then
 $C(x, y) \cdot (1 - x - 3x^2 - x^3(2y^2 - 3) - x^4(y^2 - 3) - x^5(3 + y^2) - x^6 + x^7) =

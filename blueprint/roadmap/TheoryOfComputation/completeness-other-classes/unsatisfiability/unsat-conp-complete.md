@@ -1,6 +1,6 @@
 # UNSAT is coNP-complete
 
-**UNSAT is coNP-complete.** The UNSAT decision problem lies in coNP, and every decision
+The UNSAT decision problem lies in coNP, and every decision
 problem in coNP has a polynomial-time many-one reduction to it.
 
 ## Sources

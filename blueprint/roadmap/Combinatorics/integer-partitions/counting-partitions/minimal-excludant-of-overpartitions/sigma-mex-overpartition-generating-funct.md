@@ -1,6 +1,6 @@
 # Generating function of the overpartition r-mex sums
 
-**Generating function of the overpartition r-mex sums.** Let $r$ be a positive integer and $q$
+Let $r$ be a positive integer and $q$
 a complex number with $|q| < 1$. Write $(a;q)_\infty = \prod_{j \ge 0} (1 - a q^j)$, and let
 $\sigma_r\overline{\mathrm{mex}}(n)$ be the sum over all overpartitions $\pi$ of $n$ of
 $\overline{\mathrm{mex}}_r(\pi)$, the least positive integer occurring fewer than $r$ times among

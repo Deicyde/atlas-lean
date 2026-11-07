@@ -1,6 +1,6 @@
 # Administrative step of the call-by-name translation of an application
 
-**Administrative step of the call-by-name translation of an application.** Let $\Xi$ be a
+Let $\Xi$ be a
 context and $W$, $V$, $Z$ types, and write $t^{\uparrow}$ for the weakening of a term $t$ by one
 new newest variable. Let $F$ be a term of type
 $((W \Rightarrow ((V \Rightarrow Z) \Rightarrow Z)) \Rightarrow Z) \Rightarrow Z$, $N$ a term of

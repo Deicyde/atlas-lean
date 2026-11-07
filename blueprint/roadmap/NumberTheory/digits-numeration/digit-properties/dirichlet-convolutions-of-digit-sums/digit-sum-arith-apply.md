@@ -1,6 +1,6 @@
 # Value of the digit-sum arithmetic function
 
-**Value of the digit-sum arithmetic function.** For natural numbers $q$ and $n$, the
+For natural numbers $q$ and $n$, the
 base-$q$ digit-sum arithmetic function $s_q$ takes at $n$ the value $s_q(n)$, the sum of the
 digits of $n$ in base $q$.
 

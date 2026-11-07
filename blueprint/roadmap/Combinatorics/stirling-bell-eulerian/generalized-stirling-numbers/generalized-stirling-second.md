@@ -1,6 +1,6 @@
 # Generalized Stirling numbers of the second kind
 
-**Generalized Stirling numbers of the second kind.** For natural numbers $n$, $m$ and a real
+For natural numbers $n$, $m$ and a real
 number $x$, the generalized Stirling number of the second kind is
 
 $${n \brace m}_x = \sum_{i=0}^{n-m} \binom{n}{i} {n-i \brace m} x^i,$$

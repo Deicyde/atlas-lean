@@ -1,6 +1,6 @@
 # Edge sums over a parent tree
 
-**Edge sums over a parent tree.** Let $p$ be a parent array on the vertices
+Let $p$ be a parent array on the vertices
 $\{0, \dots, n-1\}$ in which the root $r$ has no parent and every chain of parents reaches
 $r$, and let $w$ assign to each unordered pair $\{u, v\}$ of vertices (possibly $u = v$) a
 value in a commutative additive monoid. Write $\hat p(u)$ for the parent of $u$, or $u$ itself

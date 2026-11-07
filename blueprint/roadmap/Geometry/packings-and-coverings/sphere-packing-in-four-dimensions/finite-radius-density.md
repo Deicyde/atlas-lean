@@ -1,6 +1,6 @@
 # Density of a packing in a ball
 
-**Density of a packing in a ball.** For a packing $P$ of congruent balls in $\mathbb{R}^4$, a
+For a packing $P$ of congruent balls in $\mathbb{R}^4$, a
 point $p \in \mathbb{R}^4$ and a radius $R > 0$, the density of $P$ in the open ball $B(p, R)$ of
 radius $R$ about $p$ is $\operatorname{vol}(U \cap B(p, R)) / \operatorname{vol}(B(p, R))$, where
 $U$ is the union of the closed balls of $P$ and $\operatorname{vol}$ is Lebesgue measure; the

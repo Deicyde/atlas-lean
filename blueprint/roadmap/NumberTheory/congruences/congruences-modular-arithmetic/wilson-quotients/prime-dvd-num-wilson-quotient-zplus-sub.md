@@ -1,6 +1,6 @@
 # A Bernoulli–harmonic congruence for the sign-adjusted Wilson quotient sum
 
-**A Bernoulli–harmonic congruence for the sign-adjusted Wilson quotient sum.** Let $p$ be an
+Let $p$ be an
 odd prime, let $B_m$ denote the Bernoulli numbers, and let $H_k = \sum_{j=1}^{k} 1/j$ denote the
 harmonic numbers, with $H_0 = 0$. Then $p$ divides the numerator, in lowest terms, of the
 rational number

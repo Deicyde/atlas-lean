@@ -1,6 +1,6 @@
 # Larsson's P-positions of Blocking Wythoff Nim with two blocked options
 
-**Larsson's P-positions of Blocking Wythoff Nim with two blocked options.** Let $R_3$
+Let $R_3$
 consist of $(0, 0)$ and, for every $n \ge 0$, the positions $(n, 2n + 1)$, $(2n + 1, n)$,
 $(n, 2n + 2)$ and $(2n + 2, n)$. A Wythoff move from a position of two piles removes a positive
 number of tokens from one pile, or the same positive number from both. Then every position in

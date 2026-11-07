@@ -1,6 +1,6 @@
 # 2-dissection of $f_3^3 / f_1$
 
-**2-dissection of $f_3^3 / f_1$.** Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ denote the
+Let $f_k = \prod_{m \ge 1} (1 - q^{km})$ denote the
 Euler products in $\mathbb{Z}[[q]]$. Then
 $f_2^2 f_3^3 f_4 f_{12} - q f_1 f_2^2 f_{12}^4 = f_1 f_4^4 f_6^2$.
 

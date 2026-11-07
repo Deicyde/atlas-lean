@@ -1,6 +1,6 @@
 # Parity form of Euler's pentagonal recurrence
 
-**Parity form of Euler's pentagonal recurrence.** Write $p(m)$ for the number of partitions
+Write $p(m)$ for the number of partitions
 of $m$. For every positive integer $n$, the sum
 $\sum_{k \in \mathbb{Z},\ k(3k+1)/2 \le n} p(n - k(3k+1)/2)$ is even.
 

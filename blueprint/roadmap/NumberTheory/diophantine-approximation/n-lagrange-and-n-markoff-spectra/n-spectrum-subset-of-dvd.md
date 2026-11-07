@@ -1,6 +1,6 @@
 # Divisibility inclusions of the $n$-Lagrange and $n$-Markoff spectra
 
-**Divisibility inclusions of the $n$-Lagrange and $n$-Markoff spectra.** Let $m$ and $n$
+Let $m$ and $n$
 be natural numbers with $m \ge 1$, $n \ge 1$ and $m \mid n$, and write $L_k$ and $M_k$ for the
 $k$-Lagrange and $k$-Markoff spectra. Then $L_n \subseteq L_m$ and $M_n \subseteq M_m$; in
 particular $L_n \subseteq L_1$ and $M_n \subseteq M_1$, where $L_1$ and $M_1$ are the

@@ -1,6 +1,6 @@
 # Occurrences of UU in UUUDDD
 
-**Occurrences of UU in UUUDDD.** The contiguous subword $UU$ occurs exactly $2$ times in
+The contiguous subword $UU$ occurs exactly $2$ times in
 $UUUDDD$; the two occurrences overlap.
 
 ## Sources

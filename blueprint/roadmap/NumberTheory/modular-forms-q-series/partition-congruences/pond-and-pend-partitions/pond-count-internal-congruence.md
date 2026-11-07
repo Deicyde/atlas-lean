@@ -1,6 +1,6 @@
 # Internal congruence modulo 3 for POND partitions
 
-**Internal congruence modulo 3 for POND partitions.** Let $\mathrm{pond}(m)$ be the number
+Let $\mathrm{pond}(m)$ be the number
 of POND partitions of $m$. For every natural number $n$,
 $\mathrm{pond}(27n + 17) \equiv \mathrm{pond}(3n + 2) \pmod{3}$.
 

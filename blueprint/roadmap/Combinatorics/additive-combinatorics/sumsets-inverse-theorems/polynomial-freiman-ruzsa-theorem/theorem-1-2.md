@@ -1,6 +1,6 @@
 # Polynomial Freiman–Ruzsa theorem over $\mathbb{F}_2$
 
-**Polynomial Freiman–Ruzsa theorem over $\mathbb{F}_2$.** Let $n$ be a natural number, let
+Let $n$ be a natural number, let
 $A$ be a nonempty subset of $\mathbb{F}_2^n$, and let $K$ be a real number such that the sumset
 $A + A = \{a + b : a, b \in A\}$ satisfies $|A + A| \le K |A|$. Then there is a subgroup $H$ of
 $\mathbb{F}_2^n$ with $|H| \le |A|$ such that $A$ is covered by at most $2K^{12}$ cosets of $H$:

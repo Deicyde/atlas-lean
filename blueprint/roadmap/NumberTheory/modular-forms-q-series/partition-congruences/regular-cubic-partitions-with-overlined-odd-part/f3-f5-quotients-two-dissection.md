@@ -1,6 +1,6 @@
 # Four 2-dissections of quotients of Euler products
 
-**Four 2-dissections of quotients of Euler products.** Write
+Write
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ for the Euler products in the ring of integer power series
 in $q$. Then
 

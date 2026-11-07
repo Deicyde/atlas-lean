@@ -1,6 +1,6 @@
 # Fibonacci-automatic sequences
 
-**Fibonacci-automatic sequences.** A sequence $u : \mathbb{N} \to \mathbb{N}$ is
+A sequence $u : \mathbb{N} \to \mathbb{N}$ is
 Fibonacci-automatic if there are a finite set $Q$ of states, a transition function
 $\delta : Q \times \{0, 1\} \to Q$, an initial state $q_0 \in Q$ and an output map
 $\tau : Q \to \mathbb{N}$ such that for every $n$, $u(n) = \tau(q)$, where $q$ is the state

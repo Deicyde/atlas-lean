@@ -1,6 +1,6 @@
 # The Galois action on points is compatible with multiplication
 
-**The Galois action on points is compatible with multiplication.** Let $W$ be a Weierstrass
+Let $W$ be a Weierstrass
 curve over $\mathbb{Q}$ and let $W(\overline{\mathbb{Q}})$ be the group of nonsingular points of
 $W$ with coordinates in the algebraic closure $\overline{\mathbb{Q}}$, together with the point at
 infinity. For $\sigma$ in the absolute Galois group $G_{\mathbb{Q}}$ and

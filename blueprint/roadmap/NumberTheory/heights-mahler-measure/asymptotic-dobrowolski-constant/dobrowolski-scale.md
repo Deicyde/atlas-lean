@@ -1,6 +1,6 @@
 # Dobrowolski scale
 
-**Dobrowolski scale.** For a natural number $d$, the Dobrowolski scale is
+For a natural number $d$, the Dobrowolski scale is
 
 $$\left(\frac{\log \log d}{\log d}\right)^3,$$
 

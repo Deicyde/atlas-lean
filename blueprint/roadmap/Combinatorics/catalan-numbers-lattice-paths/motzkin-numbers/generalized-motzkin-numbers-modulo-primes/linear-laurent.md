@@ -1,6 +1,6 @@
 # Laurent polynomials of degree at most one
 
-**Laurent polynomials of degree at most one.** For integers $\alpha, \beta, \gamma$, this is the
+For integers $\alpha, \beta, \gamma$, this is the
 Laurent polynomial $\alpha x^{-1} + \beta + \gamma x$ with integer coefficients.
 
 ## Sources

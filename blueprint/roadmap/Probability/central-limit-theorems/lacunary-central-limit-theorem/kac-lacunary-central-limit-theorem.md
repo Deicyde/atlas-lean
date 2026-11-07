@@ -1,6 +1,6 @@
 # Kac's lacunary central limit theorem
 
-**Kac's lacunary central limit theorem.** Let $(r_n)_{n \ge 0}$ be a sequence of integers such
+Let $(r_n)_{n \ge 0}$ be a sequence of integers such
 that $r_n - (r_0 + r_1 + \dots + r_{n-1})$ tends to $+\infty$ as $n \to \infty$. Then $(r_n)$
 satisfies the central limit theorem for lacunary sine sums. The sequence $r_n = 2^n$ satisfies
 it as well.

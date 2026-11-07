@@ -1,6 +1,6 @@
 # Derivative formula for $r$-cycle permutations with separated first points
 
-**Derivative formula for $r$-cycle permutations with separated first points.** Let $R$ be
+Let $R$ be
 a commutative $\mathbb{Q}$-algebra, $x \in R$, and let $r, s$ be natural numbers with $r \ge 2$.
 For a permutation $\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$ for its number of excedances
 (indices $i$ with $\sigma(i) > i$), and let $A_j(x) = \sum_{\sigma \in S_j} x^{e(\sigma)}$. Call

@@ -1,6 +1,6 @@
 # An odd harmonic series with binomial and central binomial denominators
 
-**An odd harmonic series with binomial and central binomial denominators.** Let $\zeta$ be
+Let $\zeta$ be
 the Riemann zeta function, let $O^{(r)}_k = \sum_{j=1}^{k} 1/(2j-1)^r$ be the $k$-th odd harmonic
 number of order $r$, and write $O_k = O^{(1)}_k$. For every positive integer $m$,
 

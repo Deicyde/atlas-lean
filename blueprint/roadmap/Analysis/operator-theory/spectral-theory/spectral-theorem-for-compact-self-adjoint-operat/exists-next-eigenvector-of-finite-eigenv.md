@@ -1,6 +1,6 @@
 # Next eigenvalue after a finite family of eigenvectors
 
-**Next eigenvalue after a finite family of eigenvectors.** Let $T$ be a compact self-adjoint
+Let $T$ be a compact self-adjoint
 operator on a Hilbert space $H$ over $\mathbb{R}$ or $\mathbb{C}$, let $u_1, \dots, u_n \in H$ and
 scalars $\mu_1, \dots, \mu_n$ satisfy $T u_i = \mu_i u_i$ for every $i$, and let $S$ be the
 orthogonal complement of the span of $u_1, \dots, u_n$. If $Tz \neq 0$ for some $z \in S$, then

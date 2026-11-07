@@ -1,6 +1,6 @@
 # Solutions of locally Lipschitz ODEs that leave every compact set
 
-**Solutions of locally Lipschitz ODEs that leave every compact set.** Let $E$ be a real
+Let $E$ be a real
 Banach space, let $U \subseteq \mathbb{R} \times E$ be open, let $(t_0, x_0) \in U$, and let
 $f : \mathbb{R} \times E \to E$ be continuous on $U$ and locally Lipschitz in the state variable,
 uniformly in time: every $p \in U$ has a neighbourhood $N$ and a constant $C \ge 0$ such that

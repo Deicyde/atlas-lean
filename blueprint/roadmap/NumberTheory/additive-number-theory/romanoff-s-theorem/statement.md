@@ -1,6 +1,6 @@
 # Erdős Problem 851
 
-**Erdős Problem 851.** The proposition asserts two things. First, the set of natural numbers
+The proposition asserts two things. First, the set of natural numbers
 of the form $2^k + p$, with $k$ a natural number and $p$ prime, has positive lower density
 (Romanoff's theorem). Second, for every real number $\varepsilon > 0$ there is a natural number
 $r$ such that the set of natural numbers of the form $2^k + n$, with $k$ and $n$ natural numbers

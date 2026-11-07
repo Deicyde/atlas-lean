@@ -1,6 +1,6 @@
 # Deleting the first occurrence of a letter
 
-**Deleting the first occurrence of a letter.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be an
+Let $w = \ell_0 \ell_1 \ell_2 \cdots$ be an
 infinite word over the letters $a$ and $b$, let $\alpha$ be a letter, and let $p$ be the position
 (counted from $0$) of the first occurrence of $\alpha$ in $w$, with $p = 0$ if $\alpha$ does not
 occur in $w$. The word $D_\alpha(w)$ has letter $\ell_i$ at each position $i < p$ and letter

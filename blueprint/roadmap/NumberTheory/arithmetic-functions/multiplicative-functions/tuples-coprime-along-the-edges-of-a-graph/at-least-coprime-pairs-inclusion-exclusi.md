@@ -1,6 +1,6 @@
 # Inclusion–exclusion for at least $r$ coprime pairs
 
-**Inclusion–exclusion for at least $r$ coprime pairs.** Let $k \ge 2$ and $r \ge 1$, and let
+Let $k \ge 2$ and $r \ge 1$, and let
 $n = (n_1, \dots, n_k)$ be a tuple of natural numbers (zero allowed). Let $\beta'_r(n)$ be $1$ if
 $\gcd(n_a, n_b) = 1$ for at least $r$ pairs $a < b$, and $0$ otherwise. For a set $E$ of pairs
 $(a, b)$ with $1 \le a < b \le k$, let $\delta_E(n)$ be $1$ if $\gcd(n_a, n_b) = 1$ for every

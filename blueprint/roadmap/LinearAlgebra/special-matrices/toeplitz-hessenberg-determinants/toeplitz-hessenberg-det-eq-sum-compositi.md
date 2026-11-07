@@ -1,6 +1,6 @@
 # Trudi's formula in composition form
 
-**Trudi's formula in composition form.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $a_0, a_1, a_2, \dots$ be elements of $R$ and let $n \ge 0$. The Toeplitz–Hessenberg determinant
 $\det A_n$ of size $n$ built from $a$ satisfies
 

@@ -1,6 +1,6 @@
 # Convergence in probability via subsequential a.s. convergence
 
-**Convergence in probability via subsequential a.s. convergence.** Let $\mu$ be a finite
+Let $\mu$ be a finite
 measure on a measurable space $\Omega$, let $X_n : \Omega \to \mathbb{R}$ ($n \in \mathbb{N}$) be
 $\mu$-almost everywhere strongly measurable functions, and let $Y : \Omega \to \mathbb{R}$ be any
 function. Then $\mu(\{\omega : |X_n(\omega) - Y(\omega)| > \varepsilon\}) \to 0$ as

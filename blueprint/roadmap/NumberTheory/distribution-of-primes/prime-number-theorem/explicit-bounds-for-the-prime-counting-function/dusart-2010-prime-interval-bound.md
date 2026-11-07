@@ -1,6 +1,6 @@
 # Dusart's primes in short intervals
 
-**Dusart's primes in short intervals.** For every real number $x \ge 396738$ there is a
+For every real number $x \ge 396738$ there is a
 prime $p$ with $x < p \le x \bigl(1 + \frac{1}{25 (\log x)^2}\bigr)$, where $\log$ is the natural
 logarithm.
 

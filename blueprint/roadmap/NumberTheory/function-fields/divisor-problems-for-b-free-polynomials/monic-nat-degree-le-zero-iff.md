@@ -1,6 +1,6 @@
 # Monic polynomials of degree zero
 
-**Monic polynomials of degree zero.** Let $F$ be a field. A polynomial $f \in F[T]$ is monic
+Let $F$ be a field. A polynomial $f \in F[T]$ is monic
 of degree at most $0$ if and only if $f = 1$.
 
 ## Sources

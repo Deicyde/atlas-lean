@@ -1,6 +1,6 @@
 # Pollack–Pomerance–Treviño: nonincreasing runs of Euler's function
 
-**Pollack–Pomerance–Treviño: nonincreasing runs of Euler's function.** For real $x$, let
+For real $x$, let
 $G_\varphi(x)$ be the largest natural number $k$ for which there is a natural number $n \ge 0$ with
 $n + k \le x$ and $\varphi(n + 1) \ge \varphi(n + 2) \ge \cdots \ge \varphi(n + k)$ (and $0$ if
 there is no such $k$), where $\varphi$ is Euler's totient function. Then

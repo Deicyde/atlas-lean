@@ -1,6 +1,6 @@
 # Moment generating function as a J-fraction, general form
 
-**Moment generating function as a J-fraction, general form.** Let $p_0, p_1, \dots$ be real
+Let $p_0, p_1, \dots$ be real
 polynomials, let $L$ be an $\mathbb{R}$-linear functional on $\mathbb{R}[x]$, and let
 $(\alpha_n)$, $(\beta_n)$ and $(\mu_k)$ be real sequences such that $p_0 = 1$,
 $p_1 = x - \alpha_0$, $p_{n+1} = (x - \alpha_n) p_n - \beta_n p_{n-1}$ for $n \ge 1$,

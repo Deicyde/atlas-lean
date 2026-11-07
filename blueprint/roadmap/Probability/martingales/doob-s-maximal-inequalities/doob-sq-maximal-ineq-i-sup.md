@@ -1,6 +1,6 @@
 # Doob's L² maximal inequality, infinite horizon
 
-**Doob's L² maximal inequality, infinite horizon.** Let $\mu$ be a probability measure, let
+Let $\mu$ be a probability measure, let
 $(f_n)_{n \in \mathbb{N}}$ be a real-valued martingale with respect to a filtration
 $(\mathcal{F}_n)$ and $\mu$ such that every $f_n$ is in $L^2(\mu)$ and $f_0 = 0$ almost
 everywhere, and let $A_n$ be its predictable quadratic variation. Then

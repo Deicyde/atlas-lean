@@ -1,3 +1,3 @@
 # Lower right corner of a face $f$
 
-**Lower right corner of a face $f$.** The lower right corner of the face `f`.
+The lower right corner of the face `f`.

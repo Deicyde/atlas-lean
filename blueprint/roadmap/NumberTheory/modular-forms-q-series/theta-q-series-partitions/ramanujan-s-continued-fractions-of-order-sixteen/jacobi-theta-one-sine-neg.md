@@ -1,6 +1,6 @@
 # Oddness of the Jacobi theta function $\theta_1$
 
-**Oddness of the Jacobi theta function $\theta_1$.** For all complex numbers $z$ and $\tau$
+For all complex numbers $z$ and $\tau$
 with $\operatorname{Im} \tau > 0$, the Jacobi theta function satisfies
 $\theta_1(-z \mid \tau) = -\theta_1(z \mid \tau)$.
 

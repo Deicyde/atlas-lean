@@ -1,6 +1,6 @@
 # Büthe's bound of the prime-counting function by the logarithmic integral
 
-**Büthe's bound of the prime-counting function by the logarithmic integral.** Let $\pi(x)$
+Let $\pi(x)$
 denote the number of primes $p \le x$, and let $\operatorname{li}(x)$ be the logarithmic integral,
 the principal value $\mathrm{PV}\int_0^x \frac{dt}{\log t}$. For every real $x$ with
 $2 \le x \le 10^{19}$, $\pi(x) \le \operatorname{li}(x)$.

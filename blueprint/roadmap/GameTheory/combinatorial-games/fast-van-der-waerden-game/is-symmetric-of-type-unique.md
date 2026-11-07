@@ -1,6 +1,6 @@
 # Uniqueness of the symmetry type
 
-**Uniqueness of the symmetry type.** A finite set $S$ of rational numbers with at least
+A finite set $S$ of rational numbers with at least
 four elements is symmetric of at most one type: if $S$ is symmetric of types $(i, j)$ and
 $(i', j')$, then $i = i'$ and $j = j'$.
 

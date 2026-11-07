@@ -1,6 +1,6 @@
 # Diagonal of the factorial matrix of a power series
 
-**Diagonal of the factorial matrix of a power series.** Let $K$ be a field of characteristic
+Let $K$ be a field of characteristic
 zero, let $f$ be a formal power series over $K$ and let $n \ge 0$. Every diagonal entry of the
 leading $n \times n$ section of $M(f)$, the lower triangular matrix whose $(a, b)$ entry, with rows
 and columns indexed from $0$, is $\frac{a!}{b!} [t^{a-b}] f$ for $b \le a$ and $0$ for $b > a$,

@@ -1,6 +1,6 @@
 # The correction $A_{x^{-1}}$ vanishes at $x = 1$
 
-**The correction $A_{x^{-1}}$ vanishes at $x = 1$.** For all natural numbers $p$ and $n$, the
+For all natural numbers $p$ and $n$, the
 periodic correction $A_{x^{-1}}(n)$ of Proposition 4 satisfies $A_1(n) = 0$.
 
 ## Sources

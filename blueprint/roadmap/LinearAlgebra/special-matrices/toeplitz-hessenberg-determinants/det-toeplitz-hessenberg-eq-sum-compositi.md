@@ -1,6 +1,6 @@
 # Trudi's formula for Toeplitz–Hessenberg determinants, general case
 
-**Trudi's formula for Toeplitz–Hessenberg determinants, general case.** Let $R$ be a
+Let $R$ be a
 commutative ring, let $n \ge 0$, and let $a_0, a_1, a_2, \dots$ be any elements of $R$. Let $A_n$
 be the $n \times n$ matrix whose entry in row $i$ and column $j$ ($0 \le i, j < n$) is $a_{i+1-j}$
 if $j \le i + 1$ and $0$ otherwise; for $n = 0$ it is the empty matrix, whose determinant is $1$.

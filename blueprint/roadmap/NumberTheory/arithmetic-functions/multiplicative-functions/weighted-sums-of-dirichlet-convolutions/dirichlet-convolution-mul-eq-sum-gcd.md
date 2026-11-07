@@ -1,6 +1,6 @@
 # Gcd expansion of a convolution of completely multiplicative functions at a product
 
-**Gcd expansion of a convolution of completely multiplicative functions at a product.** Let
+Let
 $u$ and $v$ be complex-valued completely multiplicative arithmetic functions, meaning
 $u(mn) = u(m) u(n)$ and $v(mn) = v(m) v(n)$ for all natural numbers $m$ and $n$. Let $u * v$ be
 their Dirichlet convolution and $\mu$ the Möbius function. Then for all natural numbers $r$ and

@@ -1,6 +1,6 @@
 # Elements of order two modulo $n$
 
-**Elements of order two modulo $n$.** For every $n \ge 1$, the number of elements of
+For every $n \ge 1$, the number of elements of
 multiplicative order $2$ in $(\mathbb{Z}/n\mathbb{Z})^\times$ is $2^k - 1$ for some natural
 number $k$.
 

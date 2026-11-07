@@ -1,6 +1,6 @@
 # Variance of $\omega_h$ over $h$-full polynomials
 
-**Variance of $\omega_h$ over $h$-full polynomials.** Let $F$ be a finite field with $q$
+Let $F$ be a finite field with $q$
 elements, let $h \ge 2$, let $\xi \in \mathbb{C}$ be a primitive $h$-th root of unity, and let
 $\varepsilon > 0$. Write $N_h \cap M_n$ for the set of monic polynomials $f$ of degree $n$ over $F$
 that are $h$-full (if a monic irreducible $P$ divides $f$, then so does $P^h$), and $\omega_h(f)$

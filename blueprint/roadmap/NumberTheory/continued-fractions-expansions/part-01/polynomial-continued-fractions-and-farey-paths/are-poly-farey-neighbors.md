@@ -1,6 +1,6 @@
 # Neighbouring fractions in the polynomial Farey series
 
-**Neighbouring fractions in the polynomial Farey series.** Let $F$ be a field and let
+Let $F$ be a field and let
 $n \in \mathbb N$. Two pairs $(u, v)$ and $(h, k)$ of polynomials over $F$, read as the fractions
 $u/v$ and $h/k$, are neighbours in the Farey series $\mathcal F_n$ of order $n$ over $F$ when
 $u/v$ is a $(\deg v)$-neighbour of $h/k$ in $\mathcal F_n$ and $h/k$ is a $(\deg k)$-neighbour of

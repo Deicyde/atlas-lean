@@ -1,6 +1,6 @@
 # Fundamental sequences of Zeckendorf collections
 
-**Fundamental sequences of Zeckendorf collections.** Let $E$ be a Zeckendorf collection and
+Let $E$ be a Zeckendorf collection and
 index coefficient functions and sequences from $0$. Suppose that, for each $m \ge 1$,
 $\theta^{(m)}$ is the immediate predecessor in $E$ of the coefficient function with entry $1$ at
 index $m$ and $0$ elsewhere. For a sequence $H$ write $\mathrm{eval}_H(\mu) = \sum_k \mu_k H_k$.

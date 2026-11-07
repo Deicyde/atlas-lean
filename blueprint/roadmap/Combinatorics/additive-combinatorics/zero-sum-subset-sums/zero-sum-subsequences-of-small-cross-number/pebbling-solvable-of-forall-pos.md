@@ -1,6 +1,6 @@
 # Configurations covering every vertex are solvable
 
-**Configurations covering every vertex are solvable.** Let $G$ be a simple graph with
+Let $G$ be a simple graph with
 natural-number edge costs $w$. Every pebbling configuration $C$ on $G$ with $C(r) \ge 1$ for
 every vertex $r$ is solvable with respect to $G$ and $w$.
 

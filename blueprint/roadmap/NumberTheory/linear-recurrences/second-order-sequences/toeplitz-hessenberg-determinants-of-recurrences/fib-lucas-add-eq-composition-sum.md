@@ -1,6 +1,6 @@
 # Fibonacci and Lucas translates as composition sums
 
-**Fibonacci and Lucas translates as composition sums.** Let $F_k$ be the Fibonacci numbers and
+Let $F_k$ be the Fibonacci numbers and
 $L_k$ the Lucas numbers, let $m \ge 0$ and $n \ge 1$, and write $\sum_c$ for the sum over all
 compositions $c = (c_1, \dots, c_r)$ of $n$ (tuples of positive integers with
 $c_1 + \dots + c_r = n$), where $r$ is the number of parts of $c$. For every complex number

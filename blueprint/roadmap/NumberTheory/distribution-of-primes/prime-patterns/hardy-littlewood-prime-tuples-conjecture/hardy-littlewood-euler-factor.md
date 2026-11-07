@@ -1,6 +1,6 @@
 # Euler factors of the Hardy–Littlewood singular series
 
-**Euler factors of the Hardy–Littlewood singular series.** For an $m$-tuple $b$ of
+For an $m$-tuple $b$ of
 integers and a natural number $p$, the Euler factor of $b$ at $p$ is the real number
 
 $$\left(\frac{p}{p-1}\right)^{m-1} \frac{p - v_p(b)}{p - 1},$$

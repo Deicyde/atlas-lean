@@ -1,6 +1,6 @@
 # Degenerate Bernoulli numbers
 
-**Degenerate Bernoulli numbers.** For a real number $\lambda$, let $(1)_{0,\lambda} = 1$ and
+For a real number $\lambda$, let $(1)_{0,\lambda} = 1$ and
 $(1)_{m,\lambda} = 1 \cdot (1 - \lambda) \cdots (1 - (m - 1)\lambda)$ for $m \ge 1$ (the
 generalized falling factorial of $1$ with increment $\lambda$). For $n \in \mathbb{N}$, the
 degenerate Bernoulli number $\beta_{n,\lambda}$ is $n!$ times the coefficient of $t^n$ in the

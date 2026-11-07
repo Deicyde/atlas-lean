@@ -1,6 +1,6 @@
 # Strictly primitive primes are 2 and the split primes
 
-**Strictly primitive primes are 2 and the split primes.** Let $d > 1$ be a square-free
+Let $d > 1$ be a square-free
 integer, let $K$ be any number field of degree $2$ over $\mathbb{Q}$ containing an element $s$
 with $s^2 = d$, and let $\mathcal{O}_K$ be its ring of integers. Suppose that $d \equiv 5 \pmod 8$
 and that some unit of $\mathcal{O}_K$ does not lie in $\mathbb{Z}[s]$ (equivalently, the

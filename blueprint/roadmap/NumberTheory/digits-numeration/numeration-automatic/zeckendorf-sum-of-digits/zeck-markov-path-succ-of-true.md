@@ -1,6 +1,6 @@
 # After a one, the Zeckendorf Markov chain emits a zero
 
-**After a one, the Zeckendorf Markov chain emits a zero.** For every real sequence
+For every real sequence
 $(u_n)_{n \ge 0}$ and every $j \ge 1$, if the digit $y_j$ of the chain driven by $(u_n)$ is $1$,
 then $y_{j+1} = 0$.
 

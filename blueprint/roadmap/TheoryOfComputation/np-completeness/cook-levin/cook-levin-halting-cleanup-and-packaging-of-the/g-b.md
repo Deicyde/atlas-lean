@@ -1,6 +1,6 @@
 # Step bound of the composed machine
 
-**Step bound of the composed machine.** Fix the verifier data (an encoding $E$ of a stack
+Fix the verifier data (an encoding $E$ of a stack
 machine $M$, a list $Y$ of input symbols, an output symbol $\mathrm{acc}$, a map $\iota$ into
 the input alphabet, a separator $\mathrm{sep}$, a polynomial $k$ and $c, e \in \mathbb{N}$) and an
 input length $n$. Let $B(n)$ be the step bound of the full machine on inputs of length $n$, let

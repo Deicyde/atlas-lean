@@ -1,6 +1,6 @@
 # Triple convolution of two consecutive Fibonacci step sequences with a third
 
-**Triple convolution of two consecutive Fibonacci step sequences with a third.** Write
+Write
 $F^{(s)}_k$ for the Fibonacci $s$-step numbers, and write $\sum_{K(3,N)}$ for a sum over all
 $(k_1, k_2, k_3) \in \mathbb{N}^3$ with $k_1 + k_2 + k_3 = N$. For all natural numbers $m \ge 1$,
 $p \ge 1$ and $n \ge m$,

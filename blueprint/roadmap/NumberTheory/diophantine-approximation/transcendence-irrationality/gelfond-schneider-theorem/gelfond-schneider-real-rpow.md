@@ -1,6 +1,6 @@
 # Gelfond–Schneider theorem for real powers
 
-**Gelfond–Schneider theorem for real powers.** Let $\alpha$ and $\beta$ be real numbers that
+Let $\alpha$ and $\beta$ be real numbers that
 are algebraic over $\mathbb{Q}$, with $\alpha > 0$, $\alpha \neq 1$ and $\beta$ irrational. Then
 the real power $\alpha^\beta$ is transcendental over $\mathbb{Q}$.
 

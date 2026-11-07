@@ -1,6 +1,6 @@
 # Statement of the corrected Steinerberger lower bound
 
-**Statement of the corrected Steinerberger lower bound.** The proposition that the
+The proposition that the
 Beardwood–Halton–Hammersley constant $\beta_2$ satisfies
 $\frac{5}{8} + \frac{19}{10368} \le \beta_2$.
 

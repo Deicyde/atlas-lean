@@ -1,6 +1,6 @@
 # Golden-ratio formula for Wythoff's game with terminal positions up to total 4
 
-**Golden-ratio formula for Wythoff's game with terminal positions up to total 4.** Let
+Let
 $\varphi$ be the golden ratio. Let $a_n$ be the least natural number greater than $4$ that
 differs from $a_i$ and $b_i$ for all $i < n$, and let $b_n = a_n + n + 5$. Then there is a
 Fibonacci-automatic sequence $g_4 : \mathbb{N} \to \mathbb{N}$ with $g_4(n) \le 2$ for all $n$

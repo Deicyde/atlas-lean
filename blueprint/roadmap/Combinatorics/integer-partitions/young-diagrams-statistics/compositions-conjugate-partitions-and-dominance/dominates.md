@@ -1,6 +1,6 @@
 # Dominance order on partitions
 
-**Dominance order on partitions.** Let $n \ge 0$ be an integer. A partition of $n$ is a finite
+Let $n \ge 0$ be an integer. A partition of $n$ is a finite
 multiset of positive integers with sum $n$; write it as the list
 $\lambda = [\lambda_1, \dots, \lambda_m]$ of its parts in weakly decreasing order, so that
 $\lambda_1 \ge \dots \ge \lambda_m \ge 1$ and $\lambda_1 + \dots + \lambda_m = n$, and set

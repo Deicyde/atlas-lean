@@ -1,6 +1,6 @@
 # Base change of a homogeneous element along zero evaluation
 
-**Base change of a homogeneous element along zero evaluation.** Let $K$ be a field,
+Let $K$ be a field,
 $R = K[x_1, \dots, x_n]$, and let $F$ be a multigraded free $R$-module with basis
 $(b_j)_{j \in \iota}$, where each $b_j$ is homogeneous of degree $d_j \in \mathbb{Z}^n$.
 Make $K$ an $R$-algebra through the zero evaluation $R \to K$, which sends every

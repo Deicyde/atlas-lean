@@ -1,6 +1,6 @@
 # Feasible multiple-knapsack instances
 
-**Feasible multiple-knapsack instances.** Let a multiple-knapsack instance have items
+Let a multiple-knapsack instance have items
 $(w_0, v_0), \dots, (w_{k-1}, v_{k-1})$ (weight, value), knapsack capacities
 $c_0, \dots, c_{m-1}$ and target $V$. The instance is feasible when there are
 $a_0, \dots, a_{k-1} \in \{0, \dots, m\}$, where $a_j = b < m$ puts item $j$ in knapsack $b$

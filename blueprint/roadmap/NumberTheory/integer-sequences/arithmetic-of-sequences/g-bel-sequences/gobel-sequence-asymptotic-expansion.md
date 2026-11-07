@@ -1,6 +1,6 @@
 # Asymptotic expansion of the $(k, l)$-Göbel sequence
 
-**Asymptotic expansion of the $(k, l)$-Göbel sequence.** Let $k, l \ge 2$ be natural numbers
+Let $k, l \ge 2$ be natural numbers
 and let $g_{k,l}$ be the $(k, l)$-Göbel sequence. There are a real number $C > 1$ and real numbers
 $a_1, a_2, \dots$ such that for every natural number $R$, as $n \to \infty$,
 

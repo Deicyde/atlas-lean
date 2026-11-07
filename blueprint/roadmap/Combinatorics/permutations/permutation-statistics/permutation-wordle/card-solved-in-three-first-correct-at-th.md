@@ -1,6 +1,6 @@
 # A unique three-guess solve with no early correct position
 
-**A unique three-guess solve with no early correct position.** Let $n \ge 4$ and let $S$ be
+Let $n \ge 4$ and let $S$ be
 a permutation Wordle strategy (a permutation $S[m]$ of $\{0, \dots, m-1\}$ for each $m$) whose
 component $S[n]$ is an $n$-cycle. Exactly one permutation $\pi$ of $\{0, \dots, n-1\}$ is
 guessed by $S$ in exactly three guesses with the third guess being the first guess that has a

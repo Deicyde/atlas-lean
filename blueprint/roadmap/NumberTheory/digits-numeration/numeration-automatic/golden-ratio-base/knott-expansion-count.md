@@ -1,6 +1,6 @@
 # Number of Knott expansions
 
-**Number of Knott expansions.** For a natural number $N$, $\mathrm{Tot}_\kappa(N)$ is the
+For a natural number $N$, $\mathrm{Tot}_\kappa(N)$ is the
 number of Knott expansions of $N$ (OEIS A289749).
 
 ## Sources

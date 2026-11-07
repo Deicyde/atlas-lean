@@ -1,6 +1,6 @@
 # Push order of the superimpose operation
 
-**Push order of the superimpose operation.** For finite sequences $a$ and $b$ of natural
+For finite sequences $a$ and $b$ of natural
 numbers, $\mathrm{push}(a, b)$ is the sequence obtained by taking the first entry of $b$, then the
 next two entries of $a$ (only one if just one is left), and repeating; once one of the two
 sequences is exhausted, the remaining entries of the other follow in order.

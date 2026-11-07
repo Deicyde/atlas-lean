@@ -1,6 +1,6 @@
 # Recurrence for n-color compositions avoiding two consecutive colors
 
-**Recurrence for n-color compositions avoiding two consecutive colors.** Fix a natural number
+Fix a natural number
 $b \ge 1$. For an integer $m$, let $c(m)$ be the number of $n$-color compositions of $m$ in
 which no part has color $b$ or $b+1$ when $m \ge 0$, and $c(m) = 0$ when $m < 0$. Then for
 every integer $n \ge 3$,

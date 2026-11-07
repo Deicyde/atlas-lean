@@ -1,6 +1,6 @@
 # Convolution theorem
 
-**Convolution theorem.** Let $e$ be a continuous additive character from $\mathbb{R}$ to the
+Let $e$ be a continuous additive character from $\mathbb{R}$ to the
 unit circle, and let $\mu$ be a σ-finite measure on $\mathbb{R}$ that is preserved by every
 translation $x \mapsto a + x$. For $\varphi : \mathbb{R} \to \mathbb{C}$ write
 $\hat\varphi(w) = \int e(-xw)\,\varphi(x)\,d\mu(x)$ for its Fourier transform with respect to

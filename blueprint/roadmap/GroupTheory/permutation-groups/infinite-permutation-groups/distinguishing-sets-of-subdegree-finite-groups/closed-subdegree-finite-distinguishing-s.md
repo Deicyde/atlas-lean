@@ -1,6 +1,6 @@
 # Kourovka Problem 19.89: Smith's conjecture on distinguishing sets
 
-**Kourovka Problem 19.89: Smith's conjecture on distinguishing sets.** The statement that for
+The statement that for
 every countably infinite set $\Omega$ and every subgroup $G$ of the symmetric group
 $\mathrm{Sym}(\Omega)$ that is closed in the topology of pointwise convergence and
 subdegree-finite (for all $a, b \in \Omega$ the orbit of $b$ under the stabilizer of $a$ in $G$ is

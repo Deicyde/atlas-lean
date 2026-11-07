@@ -1,6 +1,6 @@
 # Accept-cell clauses
 
-**Accept-cell clauses.** Let $E$ be an encoding of a finite stack machine $M$ with output
+Let $E$ be an encoding of a finite stack machine $M$ with output
 stack $k_1$, $g$ symbol codes and stack numbering $\kappa$, let $\alpha$ be a symbol of stack $k_1$
 with code $e$, and let $T, H \in \mathbb{N}$. In the layout of $E$ at height $H$, let $W$ be the
 row width, $V = (T + 1)W$ the number of variables, and $C[t, k, j, x]$ the variable for stack $k$,

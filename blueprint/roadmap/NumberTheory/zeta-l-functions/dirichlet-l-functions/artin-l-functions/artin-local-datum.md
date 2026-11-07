@@ -1,6 +1,6 @@
 # Artin local datum
 
-**Artin local datum.** For a finite group $G$, an Artin local datum consists of a subgroup
+For a finite group $G$, an Artin local datum consists of a subgroup
 $D \le G$ (the decomposition group), a normal subgroup $I$ of $D$ (the inertia group), and an
 element $\sigma$ of the quotient group $D/I$ (the Frobenius coset).
 

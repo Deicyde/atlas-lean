@@ -1,6 +1,6 @@
 # The relative position function determines the word
 
-**The relative position function determines the word.** Let $w$ and $w'$ be infinite words
+Let $w$ and $w'$ be infinite words
 over the letters $a$ and $b$ in each of which both letters occur infinitely often, and let $r_w$
 and $r_{w'}$ be their relative position functions. Then $w = w'$ if and only if
 $r_w(n) = r_{w'}(n)$ for every $n \ge 1$.

@@ -1,6 +1,6 @@
 # Reflection symmetry of the rounding indicator
 
-**Reflection symmetry of the rounding indicator.** Let $p$ be a prime, let $d$ be a natural
+Let $p$ be a prime, let $d$ be a natural
 number dividing $p - 1$, let $\tau_D$ be the denominator of $(p + 1)/d$ in lowest terms, and let
 $\delta$ be the rounding indicator for $p$ and $d$. For every natural number $i < \tau_D p$ with
 $p \nmid i$: (i) if $\tau_D \nmid i$, then $\delta(i) + \delta(\tau_D p - i) = 1$; (ii) if

@@ -1,6 +1,6 @@
 # Bound on the tail of the prime product of $p^2/(p^2-1)$
 
-**Bound on the tail of the prime product of $p^2/(p^2-1)$.** Let $q$ be an odd prime. Then
+Let $q$ be an odd prime. Then
 $\sum_{p \ge q} \log \frac{p^2}{p^2-1} \le
 \frac{1}{q \log q}\left(1 + \frac{2 \log \log q}{\log q}\right) + \frac{4}{q^3}$,
 where the sum runs over the primes $p \ge q$. Equivalently, $\log E$ is at most this bound,

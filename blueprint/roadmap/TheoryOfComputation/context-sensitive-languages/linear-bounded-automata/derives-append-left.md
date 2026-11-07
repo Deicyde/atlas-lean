@@ -1,3 +1,3 @@
 # Derivations extend by a left context
 
-**Derivations extend by a left context.** A derivation may be appended on the left.
+A derivation may be appended on the left.

@@ -1,6 +1,6 @@
 # Arithmetical compact sets
 
-**Arithmetical compact sets.** Let $K \subseteq \mathbb{R}$ and let $\mu$ and $\rho$ be natural
+Let $K \subseteq \mathbb{R}$ and let $\mu$ and $\rho$ be natural
 numbers. For each natural number $j$ let $K^{(j)}$ be the $j$-th iterated derived set (the set of
 accumulation points, iterated $j$ times) of $K$ and $T_j = K^{(j)} \setminus K^{(j+1)}$ its $j$-th
 layer, and for a natural number $m$ let $\lVert m \rVert_K$ be the stability gauge of $K$ with

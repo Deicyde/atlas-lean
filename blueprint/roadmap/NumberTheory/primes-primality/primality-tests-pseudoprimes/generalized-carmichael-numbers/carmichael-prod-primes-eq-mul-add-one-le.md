@@ -1,6 +1,6 @@
 # The Carmichael function of a product of auxiliary primes is small
 
-**The Carmichael function of a product of auxiliary primes is small.** For a natural number
+For a natural number
 $z$, let $J$ be the product of the primes $r$ with $z/2 \le r \le z$, and write $\omega(g)$ for the
 number of distinct prime factors of $g$. For every real $A$ and all sufficiently large natural
 numbers $z$ the following holds: for every natural number $j$ with $1 \le j \le (\log z)^{2A}$

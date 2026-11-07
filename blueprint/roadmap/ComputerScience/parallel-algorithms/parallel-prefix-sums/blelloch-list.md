@@ -1,6 +1,6 @@
 # Blelloch's scan on lists
 
-**Blelloch's scan on lists.** Let $M$ be a monoid. For a natural number $k$ and a list
+Let $M$ be a monoid. For a natural number $k$ and a list
 $xs = (x_0, x_1, \dots)$ in $M$, the list scan $L_k(xs)$ is defined by recursion on $k$:
 $L_0(xs)$ is the one-element list $(1)$, and $L_{k+1}(xs)$ is obtained from the list scan
 $z = L_k(p)$ of the pair products $p = (x_0 x_1, x_2 x_3, \dots)$ of $xs$ (a trailing unpaired

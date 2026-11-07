@@ -1,3 +1,3 @@
 # Invertible Jukes–Cantor eigenbasis
 
-**Invertible Jukes–Cantor eigenbasis.** The eigenbasis as a unit, with its explicit inverse.
+The eigenbasis as a unit, with its explicit inverse.

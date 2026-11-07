@@ -1,6 +1,6 @@
 # First (a, b)-Lucas number
 
-**First (a, b)-Lucas number.** For all complex numbers $a$ and $b$, the $(a,b)$-Lucas number
+For all complex numbers $a$ and $b$, the $(a,b)$-Lucas number
 $L^{a,b}_1$ equals $a$.
 
 ## Sources

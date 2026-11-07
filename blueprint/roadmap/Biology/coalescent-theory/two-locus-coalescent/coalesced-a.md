@@ -1,3 +1,3 @@
 # Coalescence indicator at locus A
 
-**Coalescence indicator at locus A.** Whether locus `A` has found its most recent common ancestor.
+Whether locus `A` has found its most recent common ancestor.

@@ -1,6 +1,6 @@
 # Harmonic blocks versus the logarithmic integral
 
-**Harmonic blocks versus the logarithmic integral.** Let $(a_n)$ and $(b_n)$ be sequences of
+Let $(a_n)$ and $(b_n)$ be sequences of
 natural numbers with $a_n \le b_n$ for every $n$ and $a_n \to \infty$. Then
 $\sum_{k=a_n}^{b_n} 1/k - \int_{a_n}^{b_n} dt/t \to 0$ as $n \to \infty$.
 

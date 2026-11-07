@@ -1,6 +1,6 @@
 # Row reduction of a labelled triangular grid
 
-**Row reduction of a labelled triangular grid.** Let $K$ be a field and let $T$ be a labelling
+Let $K$ be a field and let $T$ be a labelling
 that assigns a value $T_{r,d,e} \in K$ to the edge $e$ (left $L$, right $R$ or base $B$) of the
 upright triangle in row $r$ (from the top) and diagonal $d$ (from the left); write $T_{r,d}$ for
 that triangle and $\Delta(x, y, z) = xy/(x + y + z)$ for the delta-wye resistance function. The

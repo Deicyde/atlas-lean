@@ -1,6 +1,6 @@
 # Finite simply reducible groups are soluble
 
-**Finite simply reducible groups are soluble.** Every finite simply reducible group is soluble;
+Every finite simply reducible group is soluble;
 that is, the statement of Kourovka Problem 11.94 holds.
 
 This was proved by Kazarin and Chankov; the Kourovka Archive answers 11.94 "Yes, it is".

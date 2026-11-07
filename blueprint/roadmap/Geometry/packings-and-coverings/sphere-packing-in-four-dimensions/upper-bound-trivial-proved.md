@@ -1,6 +1,6 @@
 # The sphere-packing density of $\mathbb{R}^4$ is at most one
 
-**The sphere-packing density of $\mathbb{R}^4$ is at most one.** The trivial upper bound holds:
+The trivial upper bound holds:
 the sphere-packing density of $\mathbb{R}^4$ is at most $1$.
 
 ## Sources

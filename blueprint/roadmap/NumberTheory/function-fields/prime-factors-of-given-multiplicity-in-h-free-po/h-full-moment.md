@@ -1,6 +1,6 @@
 # The $j$-th moment of $\omega_k$ over $h$-full polynomials of degree $n$
 
-**The $j$-th moment of $\omega_k$ over $h$-full polynomials of degree $n$.** Let $F$ be a
+Let $F$ be a
 finite field and let $h$, $k$, $j$ and $n$ be natural numbers. Let $N_h \cap M_n$ be the finite
 set of $h$-full monic polynomials of degree $n$ over $F$ (monic $f$ such that $P^h$ divides $f$
 for every monic irreducible $P$ dividing $f$), and let $\omega_k(f)$ be the number of monic

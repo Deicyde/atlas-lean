@@ -1,6 +1,6 @@
 # Asymptotic expansion of Ramanujan's factorial series
 
-**Asymptotic expansion of Ramanujan's factorial series.** Let
+Let
 $C(x) = \sum_{j \ge 0} (-1)^j / ((x + 1)(x + 2) \cdots (x + j + 1))$ be Ramanujan's factorial
 series and let $B_n$ denote the $n$-th Bell number. For every natural number $N$,
 

@@ -1,6 +1,6 @@
 # Iwata's generalization of Schatunowsky's theorem
 
-**Iwata's generalization of Schatunowsky's theorem.** For every natural number $\ell$, there
+For every natural number $\ell$, there
 are only finitely many natural numbers $a$ such that every natural number $b$ with $1 < b < a$
 and $\gcd(a, b) = 1$ satisfies $\Omega(b) \le \ell$, where $\Omega(b)$ is the number of prime
 factors of $b$ counted with multiplicity.

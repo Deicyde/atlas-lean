@@ -1,6 +1,6 @@
 # Split-returning insertion into a B-tree subtree
 
-**Split-returning insertion into a B-tree subtree.** For minimum degree $t$ and a key $x$,
+For minimum degree $t$ and a key $x$,
 insertion of $x$ into a tree returns an insertion result and is defined by recursion. At a leaf
 with key list $K$, it is leaf insertion of $x$ into $K$. At an internal node, the separator list
 and the child list are scanned together from the left. If $x$ is smaller than the current

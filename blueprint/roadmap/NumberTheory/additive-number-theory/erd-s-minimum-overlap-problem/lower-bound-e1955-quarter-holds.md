@@ -1,6 +1,6 @@
 # Erdős's lower bound $C_{1b} \ge 1/4$
 
-**Erdős's lower bound $C_{1b} \ge 1/4$.** The continuous Erdős minimum-overlap constant
+The continuous Erdős minimum-overlap constant
 $C_{1b}$ satisfies $1/4 \le C_{1b}$.
 
 ## Sources

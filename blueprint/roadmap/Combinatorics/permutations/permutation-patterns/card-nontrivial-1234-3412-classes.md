@@ -1,6 +1,6 @@
 # Nontrivial classes under {1234, 3412}-pattern replacement
 
-**Nontrivial classes under {1234, 3412}-pattern replacement.** Let $n \ge 7$ and let $S_n$ be
+Let $n \ge 7$ and let $S_n$ be
 the group of permutations of $\{0, 1, \dots, n - 1\}$. A move takes $\sigma \in S_n$ with positions
 $i_1 < i_2 < i_3 < i_4$ such that $\sigma(i_1) < \sigma(i_2) < \sigma(i_3) < \sigma(i_4)$ to the
 permutation $\tau$ with $\tau(i_1) = \sigma(i_3)$, $\tau(i_2) = \sigma(i_4)$,

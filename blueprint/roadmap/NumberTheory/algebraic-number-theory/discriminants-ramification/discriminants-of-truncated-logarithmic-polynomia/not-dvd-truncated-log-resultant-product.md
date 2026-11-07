@@ -1,6 +1,6 @@
 # An odd prime $p$ does not divide $\mathcal{P}_{p^{2e}}$
 
-**An odd prime $p$ does not divide $\mathcal{P}_{p^{2e}}$.** Let $p$ be an odd prime, let
+Let $p$ be an odd prime, let
 $e \ge 1$, and let $\mathcal{P}_n$ be the truncated logarithmic resultant product. Then $p$ does
 not divide $\mathcal{P}_{p^{2e}}$.
 

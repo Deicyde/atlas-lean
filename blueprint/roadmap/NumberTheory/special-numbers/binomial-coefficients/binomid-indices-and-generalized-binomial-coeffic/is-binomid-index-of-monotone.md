@@ -1,6 +1,6 @@
 # Monotone sequences are binomid indices
 
-**Monotone sequences are binomid indices.** Every non-decreasing sequence
+Every non-decreasing sequence
 $e_1 \le e_2 \le \cdots$ of nonnegative integers is an infinite binomid index.
 
 ## Sources

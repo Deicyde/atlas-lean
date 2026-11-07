@@ -1,6 +1,6 @@
 # Gap size
 
-**Gap size.** For a set $S \subseteq \mathbb{N}^t$, the gap size $\operatorname{gs}(S)$ is the
+For a set $S \subseteq \mathbb{N}^t$, the gap size $\operatorname{gs}(S)$ is the
 least $d \ge 1$ such that $S$ is $d$-dense in some subcube of $\mathbb{N}^t$ that contains $S$. If
 no such $d$ exists (for instance when $S$ is unbounded, so that no subcube contains it), the value
 is $0$.

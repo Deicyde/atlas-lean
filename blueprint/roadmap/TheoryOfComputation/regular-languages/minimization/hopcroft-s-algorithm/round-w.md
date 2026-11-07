@@ -1,6 +1,6 @@
 # One update of the waiting list
 
-**One update of the waiting list.** For a DFA $M$ with transition function $\delta$, a list $P$
+For a DFA $M$ with transition function $\delta$, a list $P$
 of blocks of states, a list $W$ of pairs of a set of states and a letter, a set $C$ of states and a
 letter $a$, let $S = \{q : \delta(q, a) \in C\}$ be the preimage of $C$ under $a$, and say that $S$
 splits a set $D$ when $D$ meets both $S$ and its complement. The waiting list after the splitter

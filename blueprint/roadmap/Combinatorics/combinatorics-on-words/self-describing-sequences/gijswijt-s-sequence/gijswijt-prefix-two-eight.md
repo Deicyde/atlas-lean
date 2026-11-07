@@ -1,6 +1,6 @@
 # Initial terms of the second-order Gijswijt sequence
 
-**Initial terms of the second-order Gijswijt sequence.** The first eight terms of the
+The first eight terms of the
 second-order sequence $A^{(2)}$ are $2, 2, 2, 3, 2, 2, 2, 3$.
 
 ## Sources

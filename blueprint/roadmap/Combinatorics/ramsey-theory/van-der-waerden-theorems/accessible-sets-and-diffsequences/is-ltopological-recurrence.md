@@ -1,6 +1,6 @@
 # Sets of $\ell$-topological recurrence
 
-**Sets of $\ell$-topological recurrence.** Let $\ell$ be a natural number. A set $D$ of
+Let $\ell$ be a natural number. A set $D$ of
 natural numbers is a set of $\ell$-topological recurrence when every element of $D$ is positive
 and, for every compact metric space $X$, every minimal homeomorphism $T \colon X \to X$ and
 every nonempty open set $U \subseteq X$, there is $d \in D$ such that

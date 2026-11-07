@@ -1,6 +1,5 @@
 # Alternating companion of a generalized-binomial sum from a polynomial identity in $1+t$
 
-**Alternating companion of a generalized-binomial sum from a polynomial identity in $1+t$.**
 Write $\binom{u}{w} = \Gamma(u+1)/(\Gamma(w+1)\,\Gamma(u-w+1))$ for the generalized binomial
 coefficient of complex numbers $u$ and $w$. Let $s, n, m, r$ be natural numbers and let
 $f, g \colon \mathbb{N} \to \mathbb{C}$ satisfy

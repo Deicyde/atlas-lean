@@ -1,6 +1,6 @@
 # Riemann mapping theorem
 
-**Riemann mapping theorem.** Let $U$ be a simply connected open subset of $\mathbb{C}$ with
+Let $U$ be a simply connected open subset of $\mathbb{C}$ with
 $U \ne \mathbb{C}$, and let $z_0 \in U$. Then there is a function $f : \mathbb{C} \to \mathbb{C}$,
 holomorphic on $U$, that maps $U$ bijectively onto the open unit disc $\{w : |w| < 1\}$, with
 $f(z_0) = 0$ and $f'(z_0)$ a positive real number. It is unique on $U$: every function

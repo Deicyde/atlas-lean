@@ -1,6 +1,6 @@
 # Mahaney's theorem: sparse NP-complete sets imply P = NP
 
-**Mahaney's theorem: sparse NP-complete sets imply P = NP.** If some decision problem is both
+If some decision problem is both
 sparse and NP-complete, then the complexity classes $\mathsf{P}$ and $\mathsf{NP}$ are equal.
 
 ## Sources

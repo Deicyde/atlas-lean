@@ -1,6 +1,6 @@
 # Unfolding the local factor $K(P, h, j)$
 
-**Unfolding the local factor $K(P, h, j)$.** Let $F$ be a finite field with $q$ elements, let
+Let $F$ be a finite field with $q$ elements, let
 $h$ and $j$ be natural numbers, let $\xi$ be a complex number and let $P$ be a polynomial over $F$.
 Write $\rho_j = q^{1/h} \xi^j$, where $q^{1/h}$ is the positive real $h$-th root of $q$ (read as
 $1$ when $h = 0$), and read $\rho_j^{-1}$ as $0$ when $\rho_j = 0$; let $|P| = q^{\deg P}$ if

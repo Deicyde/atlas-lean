@@ -1,6 +1,6 @@
 # Snort on the $2 \times 2$ queen's and rook's graphs
 
-**Snort on the $2 \times 2$ queen's and rook's graphs.** The first player wins Snort on
+The first player wins Snort on
 the queen's graph of the $2 \times 2$ board (the Peaceable Queens game), and the second
 player wins Snort on the rook's graph of the $2 \times 2$ board (the Peaceable Rooks game).
 

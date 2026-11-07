@@ -1,6 +1,6 @@
 # Generating function of Catalan–harmonic products
 
-**Generating function of Catalan–harmonic products.** Let $C_n$ be the $n$th Catalan number and
+Let $C_n$ be the $n$th Catalan number and
 $H_n = \sum_{k=1}^{n} 1/k$ the $n$th harmonic number, so that $H_0 = 0$. For every real number
 $x$ with $|x| < 1/4$,
 

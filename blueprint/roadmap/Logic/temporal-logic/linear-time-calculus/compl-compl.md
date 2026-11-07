@@ -1,3 +1,3 @@
 # Double complement of a predicate
 
-**Double complement of a predicate.** Complementing a predicate twice returns it.
+Complementing a predicate twice returns it.

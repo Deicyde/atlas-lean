@@ -1,6 +1,6 @@
 # The zero sequence is decomposable
 
-**The zero sequence is decomposable.** The zero coefficient sequence
+The zero coefficient sequence
 $\mathbb{N} \to \mathbb{N}$ is not indecomposable over the max-min semiring: it factors as
 $0 = 0 \otimes 0$, where $\otimes$ is the max-min product, and the zero sequence is not a
 monomial.

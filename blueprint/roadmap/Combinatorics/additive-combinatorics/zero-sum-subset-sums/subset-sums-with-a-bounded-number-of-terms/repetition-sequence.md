@@ -1,6 +1,6 @@
 # Sequence with prescribed multiplicities
 
-**Sequence with prescribed multiplicities.** Let $G$ be a type, $k \in \mathbb{N}$,
+Let $G$ be a type, $k \in \mathbb{N}$,
 $A = (a_0, \dots, a_{k-1})$ a $k$-tuple of elements of $G$ and $\bar t = (t_0, \dots, t_{k-1})$ a
 $k$-tuple of natural numbers. The sequence $(A, \bar t)$ is the finite multiset of elements of $G$
 obtained by taking $t_i$ copies of $a_i$ for each $i < k$; an element $x \in G$ thus occurs

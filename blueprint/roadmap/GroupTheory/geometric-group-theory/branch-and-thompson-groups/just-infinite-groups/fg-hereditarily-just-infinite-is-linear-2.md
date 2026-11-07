@@ -1,6 +1,6 @@
 # Not every finitely generated hereditarily just infinite group is linear
 
-**Not every finitely generated hereditarily just infinite group is linear.** There is a finitely
+There is a finitely
 generated hereditarily just infinite group $G$ such that for no field $K$ and no natural number
 $n$ is there an injective group homomorphism $G \to \mathrm{GL}_n(K)$.
 

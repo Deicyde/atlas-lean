@@ -1,6 +1,6 @@
 # Composition of immersions
 
-**Composition of immersions.** Let $\mathbb{K}$ be a nontrivially normed field, let
+Let $\mathbb{K}$ be a nontrivially normed field, let
 $n \in \mathbb{N} \cup \{\infty, \omega\}$, and let $M$, $N$, $N'$ be $C^n$ manifolds without
 boundary modeled on Banach spaces over $\mathbb{K}$. If $f : M \to N$ and $g : N \to N'$ are
 $C^n$ immersions, then $g \circ f$ is a $C^n$ immersion.

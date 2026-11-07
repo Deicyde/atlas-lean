@@ -1,6 +1,6 @@
 # Three-term sequences without square-weighted zero-sum subsequences
 
-**Three-term sequences without square-weighted zero-sum subsequences.** Let $p$ be a prime and
+Let $p$ be a prime and
 $r$ a nonzero even natural number, and write $S(m)$ for the set of nonzero squares in
 $\mathbb{Z}/m\mathbb{Z}$. Let $z_1, z_2$ be units of $\mathbb{Z}/p^2\mathbb{Z}$ whose reduction
 $(z_1 \bmod p, z_2 \bmod p)$ is not an $S(p)$-weighted zero-sum sequence. Let $T = (x_1, x_2, y_1)$

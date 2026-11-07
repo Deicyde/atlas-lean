@@ -1,6 +1,6 @@
 # Big-step call-by-name evaluation of PCF
 
-**Big-step call-by-name evaluation of PCF.** Write $\underline{n}$ for the numeral
+Write $\underline{n}$ for the numeral
 $\mathsf{succ}^n\,\mathsf{zero}$. For closed PCF terms $t$ and $v$ of the same type,
 $t \Downarrow v$ ($t$ evaluates to $v$) is the least relation closed under the following rules,
 where all terms are closed and $n$ ranges over natural numbers.

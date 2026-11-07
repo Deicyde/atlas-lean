@@ -1,6 +1,6 @@
 # Upper and lower densities of a letter from its position function
 
-**Upper and lower densities of a letter from its position function.** Let $w$ be an infinite
+Let $w$ be an infinite
 binary word in which both letters occur infinitely often and let $\alpha$ be a letter. Write
 $\#_\alpha(m)$ for the number of occurrences of $\alpha$ among the first $m$ letters of $w$, and
 $p_\alpha(n)$ for the position (counted from $0$) of the $n$-th occurrence of $\alpha$. Then

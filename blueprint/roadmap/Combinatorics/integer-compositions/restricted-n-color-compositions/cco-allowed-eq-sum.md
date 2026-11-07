@@ -1,6 +1,6 @@
 # Double-sum formula for n-color compositions with two consecutive colors
 
-**Double-sum formula for n-color compositions with two consecutive colors.** Let $b \ge 1$
+Let $b \ge 1$
 and $n \ge 1$ be natural numbers, and let $\operatorname{cco}_{b,b+1}(n)$ be the number of
 $n$-color compositions of $n$ in which every part has color $b$ or $b+1$. Then
 

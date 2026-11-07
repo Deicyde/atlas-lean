@@ -1,6 +1,6 @@
 # Decay of bounded harmonic extensions of Schwartz data in a half-space
 
-**Decay of bounded harmonic extensions of Schwartz data in a half-space.** Write a point of
+Write a point of
 $\mathbb{R}^3$ as $(x, z)$ with $x = (x_1, x_2) \in \mathbb{R}^2$ and $z \in \mathbb{R}$. Let
 $\phi : \mathbb{R}^2 \to \mathbb{R}$ be a Schwartz function and let
 $u : \mathbb{R}^3 \to \mathbb{R}$ be harmonic at every point of the open lower half-space

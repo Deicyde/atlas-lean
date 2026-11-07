@@ -1,6 +1,6 @@
 # Initial values of the parent sequence
 
-**Initial values of the parent sequence.** For all natural numbers $u$ and $n$ with $n < 2u$,
+For all natural numbers $u$ and $n$ with $n < 2u$,
 the parent sequence $d_{u,n}$ satisfies $d_{u,n} = 1$.
 
 ## Sources

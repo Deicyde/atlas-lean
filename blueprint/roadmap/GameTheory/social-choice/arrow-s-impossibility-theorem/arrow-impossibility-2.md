@@ -1,6 +1,6 @@
 # Arrow's impossibility theorem for weak preferences
 
-**Arrow's impossibility theorem for weak preferences.** Let $A$ be a type of alternatives
+Let $A$ be a type of alternatives
 containing three distinct elements, and let $E$ be a finite nonempty set of voters. A profile
 $P$ assigns to every voter $v$ a relation $P_v$ on $A$; it is admissible if, for every $v \in E$,
 $P_v$ is a total preorder (reflexive, transitive, and $P_v(x, y)$ or $P_v(y, x)$ for all

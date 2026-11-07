@@ -1,6 +1,6 @@
 # Merging order-statistic trees
 
-**Merging order-statistic trees.** The merge of order-statistic trees $A$ and $B$ is defined by
+The merge of order-statistic trees $A$ and $B$ is defined by
 recursion on $A$. If $A$ is empty, it is $B$. If $A$ has root key $x$, left subtree $L$ and right
 subtree $R$, it is the node with key $x$, left subtree $L$ and right subtree the merge of $R$ and
 $B$, whose cached size is the sum of the cached root sizes of its children plus one, an empty

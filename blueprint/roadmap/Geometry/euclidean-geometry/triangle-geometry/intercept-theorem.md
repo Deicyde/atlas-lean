@@ -1,6 +1,6 @@
 # Intercept theorem
 
-**Intercept theorem.** Let $A, B, C, D, E$ be points of the Euclidean plane $\mathbb{R}^2$,
+Let $A, B, C, D, E$ be points of the Euclidean plane $\mathbb{R}^2$,
 and write $XY$ for the distance between points $X$ and $Y$. Suppose that $C - A$ is not a real
 multiple of $B - A$; that $AD + DB = AB$ with $AD > 0$ and $DB > 0$, so $D$ lies strictly
 between $A$ and $B$; that $AE + EC = AC$ with $AE > 0$ and $EC > 0$, so $E$ lies strictly

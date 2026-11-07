@@ -1,6 +1,6 @@
 # Gluing oppositions of blocks
 
-**Gluing oppositions of blocks.** Let $G$ be a graph, let $p$ be a map from its vertices to
+Let $G$ be a graph, let $p$ be a map from its vertices to
 an index set, with blocks $B_i = \{v : p(v) = i\}$, and let $f$ be a map from the vertices of $G$
 to themselves. Suppose that for every index $i$ there is an opposition of the subgraph of $G$
 induced on $B_i$ that agrees with $f$ on $B_i$, and that for all vertices $u, w$ with

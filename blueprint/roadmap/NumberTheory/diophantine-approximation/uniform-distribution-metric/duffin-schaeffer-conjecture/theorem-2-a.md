@@ -1,6 +1,6 @@
 # Koukoulopoulos–Maynard Theorem 2(a) (Catlin's conjecture, convergent case)
 
-**Koukoulopoulos–Maynard Theorem 2(a) (Catlin's conjecture, convergent case).** Let $\psi$
+Let $\psi$
 be a function from the positive integers to the nonnegative reals, and for each positive integer
 $q$ let $\psi^*(q) = \varphi(q) \cdot \sup \{\psi(n)/n : n \text{ a positive integer with }
 q \mid n\}$, where $\varphi$ is Euler's totient function and the supremum is taken in

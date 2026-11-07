@@ -1,6 +1,6 @@
 # Centralizers of maximal order need not contain normalized nilpotent subgroups
 
-**Centralizers of maximal order need not contain normalized nilpotent subgroups.** For an element
+For an element
 $x$ of a group $G$ write $C_G(x)$ for its centralizer. There exist a finite group $G$, an element
 $a \ne 1$ of $G$ with $|C_G(x)| \le |C_G(a)|$ for every $x \ne 1$ in $G$, and a nilpotent subgroup
 $H$ of $G$ normalized by $C_G(a)$ (that is, $C_G(a)$ is contained in the normalizer of $H$) such

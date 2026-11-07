@@ -1,6 +1,6 @@
 # Composition of substitutions in the lambda calculus with references
 
-**Composition of substitutions in the lambda calculus with references.** For all parallel
+For all parallel
 substitutions $\sigma, \tau$, each sending every de Bruijn index to a term of the simply typed
 lambda calculus with references, and every term $t$, applying $\sigma$ to $t$ and then $\tau$ to
 the result gives the same term as applying to $t$ the substitution that sends each index $x$ to

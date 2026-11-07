@@ -1,6 +1,6 @@
 # Menger's theorem, vertex form
 
-**Menger's theorem, vertex form.** Let $G$ be a simple graph on a finite vertex set and let
+Let $G$ be a simple graph on a finite vertex set and let
 $s$ and $t$ be distinct, nonadjacent vertices of $G$. Then there is a natural number $n$ with
 the following two properties. First, there is a set $C$ of exactly $n$ vertices with
 $s \notin C$ and $t \notin C$ such that every walk from $s$ to $t$ passes through a vertex of

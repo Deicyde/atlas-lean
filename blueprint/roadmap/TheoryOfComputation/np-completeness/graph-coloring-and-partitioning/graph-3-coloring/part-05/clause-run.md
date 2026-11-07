@@ -1,6 +1,6 @@
 # The 3-COLOR emitter processes one clause
 
-**The 3-COLOR emitter processes one clause.** Let $C$ be a CNF clause, $T_C$ its tokens as
+Let $C$ be a CNF clause, $T_C$ its tokens as
 they lie on the token stack, $s$ a construction state that satisfies the size invariant after
 $\tau$ tokens, and $L$ a bound with $\tau + |T_C| \le L$. Let $Y$ be a list of symbols that is
 empty or starts with the clause marker, and $o_0$ a list of bits. For a construction state $t$

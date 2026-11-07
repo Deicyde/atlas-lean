@@ -1,6 +1,6 @@
 # AdaBoost's combined score
 
-**AdaBoost's combined score.** After $T$ rounds, the combined score of training point $i$ is
+After $T$ rounds, the combined score of training point $i$ is
 
 $$F_T(i) = \sum_{t < T} \alpha(\varepsilon_t)\, h_t(i),$$
 

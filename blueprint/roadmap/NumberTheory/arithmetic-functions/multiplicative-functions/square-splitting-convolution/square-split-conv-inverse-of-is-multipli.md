@@ -1,6 +1,6 @@
 # Inverse of a multiplicative function under the square-splitting convolution
 
-**Inverse of a multiplicative function under the square-splitting convolution.** Let $f$ be a
+Let $f$ be a
 multiplicative complex arithmetic function (an arithmetic function $h$ is multiplicative when
 $h(1) = 1$ and $h(mn) = h(m)\, h(n)$ for coprime $m$ and $n$), let $\star$ be the square-splitting
 convolution, and let $\varepsilon$ be the arithmetic function with $\varepsilon(1) = 1$ and

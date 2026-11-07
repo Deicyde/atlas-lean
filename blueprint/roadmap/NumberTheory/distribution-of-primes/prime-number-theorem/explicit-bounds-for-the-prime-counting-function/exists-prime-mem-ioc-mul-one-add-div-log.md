@@ -1,6 +1,6 @@
 # Axler's primes in short intervals
 
-**Axler's primes in short intervals.** Let $\log$ denote the natural logarithm, and put
+Let $\log$ denote the natural logarithm, and put
 $a = 1/(1.42969 \cdot 10^{12} - 1)$ and $b = 1/(1.59753 \cdot 10^{12} - 1)$. For every real
 $x \ge 952527672606693$ there is a prime $p$ with $x < p \le x\,(1 + 43a/\log x)$. Moreover, for
 each of the pairs $(n, X_n)$ equal to $(2, 684943746324434)$, $(3, 543684371469081)$,

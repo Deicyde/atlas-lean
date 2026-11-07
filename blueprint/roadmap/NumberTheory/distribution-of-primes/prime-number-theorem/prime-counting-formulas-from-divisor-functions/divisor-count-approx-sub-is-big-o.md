@@ -1,6 +1,6 @@
 # Exponential approximation of the divisor-counting function
 
-**Exponential approximation of the divisor-counting function.** Let $A$ be a real-valued
+Let $A$ be a real-valued
 function of two natural numbers such that $A(k, n) \sin^2(n\pi/k) \ge 1$ for all natural numbers
 $k, n$ with $1 \le k \le n$ and $k \nmid n$. For a natural number $n$ let $\tau(n)$ be the number
 of positive divisors of $n$ and

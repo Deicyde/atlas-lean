@@ -1,6 +1,6 @@
 # Approximate derivative test for monotonicity (Scottish Book Problem 157)
 
-**Approximate derivative test for monotonicity (Scottish Book Problem 157).** Let
+Let
 $f \colon \mathbb{R} \to \mathbb{R}$ be approximately continuous at every point, and suppose that
 at every point $x$ the upper right-hand approximate derivative of $f$ is positive. Then $f$ is
 monotone nondecreasing.

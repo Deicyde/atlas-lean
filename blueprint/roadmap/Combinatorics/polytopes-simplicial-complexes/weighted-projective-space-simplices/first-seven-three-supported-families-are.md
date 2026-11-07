@@ -1,6 +1,6 @@
 # Cases (i)–(vii) of the three-support family give IDP reflexive simplices
 
-**Cases (i)–(vii) of the three-support family give IDP reflexive simplices.** Let
+Let
 $x = (x_1, x_2, x_3)$ be positive integers, and let $r = (r_1, r_2, r_3)$ be the support triple
 of any one of the first seven cases, (i)–(vii), of the three-support family with parameters $x$.
 Let $q = (r_1^{x_1}, r_2^{x_2}, r_3^{x_3})$ be the list in which each $r_i$ is repeated $x_i$

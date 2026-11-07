@@ -1,6 +1,6 @@
 # Precondition of an annotated command
 
-**Precondition of an annotated command.** For an annotated command $C$ and an assertion $Q$
+For an annotated command $C$ and an assertion $Q$
 (the postcondition), the precondition $\mathrm{pre}(C, Q)$ is the assertion computed backwards
 as follows: $\mathrm{pre}(\mathrm{skip}, Q) = Q$; $\mathrm{pre}(x := a, Q)$ holds in a state $s$
 iff $Q$ holds in the state obtained from $s$ by giving $x$ the value of $a$ in $s$;

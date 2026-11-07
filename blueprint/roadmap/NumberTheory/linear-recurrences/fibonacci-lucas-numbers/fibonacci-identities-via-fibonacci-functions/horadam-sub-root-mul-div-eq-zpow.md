@@ -1,6 +1,6 @@
 # Ratio form of the Binet formula for Horadam sequences
 
-**Ratio form of the Binet formula for Horadam sequences.** Let $P$, $Q$, $\sigma$, $\tau$ be
+Let $P$, $Q$, $\sigma$, $\tau$ be
 real numbers with $Q \neq 0$, $\sigma + \tau = P$ and $\sigma \tau = Q$, and let
 $W \colon \mathbb{Z} \to \mathbb{R}$ satisfy $W_{j+2} = P W_{j+1} - Q W_j$ for every integer $j$.
 Then for every integer $k$: if $W_1 \neq \sigma W_0$, then

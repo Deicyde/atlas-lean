@@ -1,6 +1,6 @@
 # Generating function for $1 \times s$ rectangles in nondecreasing words
 
-**Generating function for $1 \times s$ rectangles in nondecreasing words.** Let $k \ge 1$ and
+Let $k \ge 1$ and
 $s \ge 1$, and let $f_k(n)$ be the total number of $1 \times s$ rectangles over all nondecreasing
 words of length $n$ over $[k] = \{1, \dots, k\}$. Then, as formal power series over $\mathbb{Z}$,
 

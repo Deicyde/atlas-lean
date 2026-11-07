@@ -1,6 +1,6 @@
 # Bloom–Sawin–Schildkraut–Zhelezov numerical upper bound for the real sum-product exponent
 
-**Bloom–Sawin–Schildkraut–Zhelezov numerical upper bound for the real sum-product exponent.** The
+The
 real sum-product exponent $C$ satisfies $C \le 199999913/100000000 = 1.99999913$. Here, for a
 finite set $A \subset \mathbb{R}$, $A + A$ and $A \cdot A$ are the sets of sums $a + b$ and
 products $ab$ with $a, b \in A$, and $M(A) = \max(|A + A|, |A \cdot A|)$; for $n \ge 2$, $m(n)$

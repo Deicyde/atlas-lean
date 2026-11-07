@@ -1,3 +1,3 @@
 # Accumulator-stopped list is a prefix of its source
 
-**Accumulator-stopped list is a prefix of its source.** The accumulator-stopped list is a prefix of its source list.
+The accumulator-stopped list is a prefix of its source list.

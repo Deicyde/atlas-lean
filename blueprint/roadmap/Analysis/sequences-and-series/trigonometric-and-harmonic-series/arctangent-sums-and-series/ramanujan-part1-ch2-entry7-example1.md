@@ -1,6 +1,6 @@
 # Arctangent series over consecutive shifts (Entry 7, Example 1)
 
-**Arctangent series over consecutive shifts (Entry 7, Example 1).** Let $n > 0$ be a real
+Let $n > 0$ be a real
 number with $n \ne (\sqrt{5} - 1)/2$. Then the series
 
 $$\sum_{k=0}^{\infty} \arctan \frac{2}{(n + k + 1)^2}$$

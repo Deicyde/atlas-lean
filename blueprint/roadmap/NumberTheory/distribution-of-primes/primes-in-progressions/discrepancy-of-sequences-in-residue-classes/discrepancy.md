@@ -1,6 +1,6 @@
 # Discrepancy in a residue class
 
-**Discrepancy in a residue class.** Let $K$ be a field of characteristic zero, let
+Let $K$ be a field of characteristic zero, let
 $\alpha : \mathbb{N} \to K$ be finitely supported, let $q$ be a positive integer and let $a$ be a
 natural number. The discrepancy of $\alpha$ in the residue class of $a$ modulo $q$ is
 

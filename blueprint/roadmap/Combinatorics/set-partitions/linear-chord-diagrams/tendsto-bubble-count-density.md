@@ -1,6 +1,6 @@
 # Limiting density of bubble sizes in linear chord diagrams
 
-**Limiting density of bubble sizes in linear chord diagrams.** Let $B_{n,p}$ be the total
+Let $B_{n,p}$ be the total
 number of bubbles of size $p$ over all linear chord diagrams on $2n$ vertices. Let $x$ be a real
 number with $0 < x \le 2$, and let $(p_n)_{n \ge 0}$ be natural numbers with $p_0 = 0$,
 $p_n \le 2n - 2$ for every $n \ge 1$, and $p_n / (n - 1) \to x$ as $n \to \infty$. Then

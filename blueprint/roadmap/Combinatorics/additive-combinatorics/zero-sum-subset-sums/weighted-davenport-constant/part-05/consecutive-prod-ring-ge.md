@@ -1,6 +1,6 @@
 # Consecutive weighted zero-sum constant of a product with product weights
 
-**Consecutive weighted zero-sum constant of a product with product weights.** Let $R$ and
+Let $R$ and
 $R'$ be rings, $M$ an $R$-module, $N$ an $R'$-module, $A \subseteq R$ and $B \subseteq R'$. Let
 $C_A(M)$ be the least positive integer $k$, if one exists, such that every sequence
 $x_1, \dots, x_k$ in $M$ has indices $s \le t$ and weights $a_s, \dots, a_t \in A$ with

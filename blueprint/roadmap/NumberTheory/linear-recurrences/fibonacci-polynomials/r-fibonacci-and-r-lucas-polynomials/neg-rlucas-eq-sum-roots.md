@@ -1,6 +1,6 @@
 # Binet formula for the companion sequence $V^{(-r)}$
 
-**Binet formula for the companion sequence $V^{(-r)}$.** Let $K$ be a field, $r \ge 2$ a
+Let $K$ be a field, $r \ge 2$ a
 natural number, $x \in K$ and $y$ a unit of $K$, and let $V^{(-r)}_n(x, y)$ be the companion
 sequence of the $(-r)$-Fibonacci polynomials. Suppose $\beta_0, \dots, \beta_r \in K$ are
 pairwise distinct and $t^{r+1} - y^{-1} t + x y^{-1} = \prod_{k=0}^{r} (t - \beta_k)$ in the

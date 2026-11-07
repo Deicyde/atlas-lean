@@ -1,6 +1,6 @@
 # Palindromes up to a power of the base in residue classes
 
-**Palindromes up to a power of the base in residue classes.** Let $b \ge 2$, $k \ge 1$ and
+Let $b \ge 2$, $k \ge 1$ and
 $q \ge 1$ be natural numbers and let $r$ be a natural number with $r < q$. Write $A_b(m, q, r)$
 for the number of base-$b$ palindromes $n$ with $1 \le n \le m$ and $n \equiv r \pmod q$, and
 $[r = 0]$ for $1$ if $r = 0$ and $0$ otherwise. If $q \mid b$, then

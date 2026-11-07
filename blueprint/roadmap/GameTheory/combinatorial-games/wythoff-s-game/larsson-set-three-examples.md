@@ -1,6 +1,6 @@
 # Sample positions in Larsson's set $R_3$
 
-**Sample positions in Larsson's set $R_3$.** The positions $(0, 0)$, $(0, 2)$ and
+The positions $(0, 0)$, $(0, 2)$ and
 $(3, 1)$ belong to Larsson's set $R_3$.
 
 ## Sources

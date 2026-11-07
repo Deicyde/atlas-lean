@@ -1,6 +1,6 @@
 # P-positions of Wythoff's game with terminal positions
 
-**P-positions of Wythoff's game with terminal positions.** Let $\ell \ge 1$. Let $a_n$ be the
+Let $\ell \ge 1$. Let $a_n$ be the
 least natural number $m > \ell$ with $m \ne a_i$ and $m \ne b_i$ for all $i < n$, where
 $b_i = a_i + i + \ell + 1$. Let $P$ be the set of positions $(x, y)$ with $x + y \le \ell$,
 together with the pairs $(a_n, b_n)$ and $(b_n, a_n)$ for $n \ge 0$. Then $P$ is stable, meaning

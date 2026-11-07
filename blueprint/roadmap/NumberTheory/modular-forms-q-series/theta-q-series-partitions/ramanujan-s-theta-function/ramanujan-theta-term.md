@@ -1,6 +1,6 @@
 # Summand of Ramanujan's general theta function
 
-**Summand of Ramanujan's general theta function.** For complex numbers $a$, $b$ and an
+For complex numbers $a$, $b$ and an
 integer $n$, this is the term $a^{n(n+1)/2} b^{n(n-1)/2}$ of index $n$ in Ramanujan's general
 theta function $f(a,b) = \sum_{k \in \mathbb{Z}} a^{k(k+1)/2} b^{k(k-1)/2}$.
 

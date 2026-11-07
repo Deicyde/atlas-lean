@@ -1,6 +1,6 @@
 # Deterministic pushdown automaton
 
-**Deterministic pushdown automaton.** A pushdown automaton is deterministic when every transition set
+A pushdown automaton is deterministic when every transition set
 has at most one element, and an available `ε`-transition precludes
 every consuming transition from the same state and stack symbol.
 

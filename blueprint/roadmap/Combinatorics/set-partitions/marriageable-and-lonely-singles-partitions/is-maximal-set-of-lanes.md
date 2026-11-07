@@ -1,6 +1,6 @@
 # Maximal set of lanes
 
-**Maximal set of lanes.** In the standard road intersection of size $n$, the lane $E_iX_j$
+In the standard road intersection of size $n$, the lane $E_iX_j$
 joins the entry $E_i$ to the exit $X_j$, for $i, j \in \{0, \dots, n-1\}$. Given a set $A$ of
 allowed lanes, a set $S$ of lanes is a maximal set of lanes (MSL) among $A$ if $S \subseteq A$,
 no two distinct lanes of $S$ have a common point, and every lane of $A$ not in $S$ has a common

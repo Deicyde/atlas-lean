@@ -1,6 +1,6 @@
 # Residues of the ℓ-generalized Fibonacci zeta function
 
-**Residues of the ℓ-generalized Fibonacci zeta function.** Let $\ell \ge 2$, let $F$ be an
+Let $\ell \ge 2$, let $F$ be an
 $\ell$-generalized Fibonacci sequence, and let $\alpha > 1$ be a real number with
 $\alpha^\ell = \sum_{i\lt \ell} \alpha^i$. Let $R$ be the set of complex roots of
 $X^\ell - \sum_{i\lt \ell} X^i$ other than $\alpha$, let $s_{\kappa,n}$ be the possible pole and

@@ -1,6 +1,6 @@
 # Language homomorphisms commute with instantiation in formulas
 
-**Language homomorphisms commute with instantiation in formulas.** Let $h \colon L \to L'$ be
+Let $h \colon L \to L'$ be
 a homomorphism of first-order languages. For an $L$-term or bounded $L$-formula $x$, write $h(x)$
 for the term or bounded formula of $L'$ obtained by replacing every symbol by its image under
 $h$. Let $t$ be an $L$-term with free variables in $\alpha$ and $\varphi$ a bounded $L$-formula

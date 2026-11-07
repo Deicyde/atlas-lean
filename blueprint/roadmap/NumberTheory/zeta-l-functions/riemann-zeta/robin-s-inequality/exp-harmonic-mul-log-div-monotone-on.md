@@ -1,6 +1,6 @@
 # Monotonicity of $e^{H_n} \log H_n / n$
 
-**Monotonicity of $e^{H_n} \log H_n / n$.** With $H_n = \sum_{i=1}^n 1/i$ the $n$-th harmonic
+With $H_n = \sum_{i=1}^n 1/i$ the $n$-th harmonic
 number and $\log$ the natural logarithm, the sequence $e^{H_n} \log H_n / n$ is non-decreasing
 for $n \ge 1$: its value at $m$ is at most its value at $n$ whenever $1 \le m \le n$.
 

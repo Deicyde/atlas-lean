@@ -1,6 +1,6 @@
 # Control labels of the one-hot generator
 
-**Control labels of the one-hot generator.** For a natural number $g$, the labels are: a
+For a natural number $g$, the labels are: a
 precomputation label for each precomputation stage; for the time loop, a head, a rest label, a
 multiplication label for each multiplication stage, and an end label; for the stack loop, a
 head, a rest label, an emission label, two copy labels, a multiplication label for each

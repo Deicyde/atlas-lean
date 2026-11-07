@@ -1,6 +1,6 @@
 # BIN PACKING is NP-complete
 
-**BIN PACKING is NP-complete.** The bin packing decision problem belongs to NP, and every
+The bin packing decision problem belongs to NP, and every
 decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

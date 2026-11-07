@@ -1,6 +1,6 @@
 # The expected transitions from forward-backward
 
-**The expected transitions from forward-backward.** Let $h$ be a valid hidden Markov model
+Let $h$ be a valid hidden Markov model
 with finite state set $S$, finite observation set $O$, transition weights $a$ and emission
 weights $b$, let $T \in \mathbb{N}$, and let $x_0, \dots, x_{N-1}$ be observation sequences. For a
 sequence $x_n$ write $\alpha^n_t(s)$ for its forward variable at time $t$ and state $s$,

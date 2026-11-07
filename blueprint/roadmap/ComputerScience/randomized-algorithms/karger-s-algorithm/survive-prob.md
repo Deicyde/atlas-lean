@@ -1,6 +1,6 @@
 # Probability that a run outputs a given cut
 
-**Probability that a run outputs a given cut.** For a map $X$ from vertices to booleans, a
+For a map $X$ from vertices to booleans, a
 fuel bound $f$ and a multigraph $G$, this is the probability that the contraction process on $G$
 (contract an edge chosen uniformly at random, counted with multiplicity, while more than two
 vertices and at least one edge remain, making at most $f$ contractions) never contracts an edge

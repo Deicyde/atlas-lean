@@ -1,6 +1,6 @@
 # Corollary pole of the ℓ-generalized Fibonacci zeta function
 
-**Corollary pole of the ℓ-generalized Fibonacci zeta function.** For natural numbers $\ell$
+For natural numbers $\ell$
 and $k$, a real number $\alpha$ and an integer $n$, let $q$ be the quotient of $k$ by $\ell - 1$
 in natural-number division, with $q = 0$ when $\ell \le 1$ (so $q = k/(\ell - 1)$ when
 $\ell \ge 2$ and $\ell - 1$ divides $k$). The corollary pole is the complex number

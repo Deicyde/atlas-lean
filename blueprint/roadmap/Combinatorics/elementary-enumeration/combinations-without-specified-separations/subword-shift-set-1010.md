@@ -1,6 +1,6 @@
 # Shift set of the subword 1010
 
-**Shift set of the subword 1010.** The shift set of the binary subword $1010$ of length $4$
+The shift set of the binary subword $1010$ of length $4$
 (the number $10$) is $\{1, 3\}$.
 
 ## Sources

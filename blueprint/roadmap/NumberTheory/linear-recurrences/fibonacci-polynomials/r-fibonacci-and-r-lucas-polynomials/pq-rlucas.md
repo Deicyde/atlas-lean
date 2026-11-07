@@ -1,6 +1,6 @@
 # First-kind (p, q)-Lucas polynomials
 
-**First-kind (p, q)-Lucas polynomials.** Let $R$ be a commutative semiring, let $r$, $s$ and
+Let $R$ be a commutative semiring, let $r$, $s$ and
 $m$ be natural numbers, let $x, y, p, q \in R$, and write $[a, b]_{p,q}$ for the
 $(p, q)$-binomial coefficients. The first-kind $(p, q)$-analogue $V^{(r,s)}_n(x, y, p, q, m)$ of
 the $r$-Lucas polynomial of type $s$, written $V_n$, is defined by $V_0 = s + 1$ and, for

@@ -1,6 +1,6 @@
 # The Schur–Siegel–Smyth constant $\lambda_{\mathrm{SSS}}$
 
-**The Schur–Siegel–Smyth constant $\lambda_{\mathrm{SSS}}$.** Let $\lambda_{\mathrm{SSS}}$ be
+Let $\lambda_{\mathrm{SSS}}$ be
 the supremum in $\mathbb{R}$ of the set of real numbers $\lambda$ such that, for every
 $\varepsilon > 0$, only finitely many complex numbers $\alpha$ are totally positive algebraic
 integers with $\operatorname{tr}(\alpha) < (\lambda - \varepsilon) \deg(\alpha)$, where

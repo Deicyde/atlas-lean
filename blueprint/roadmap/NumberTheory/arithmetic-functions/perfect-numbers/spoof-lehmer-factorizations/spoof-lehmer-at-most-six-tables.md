@@ -1,6 +1,6 @@
 # Spoof Lehmer factorizations with at most six factors
 
-**Spoof Lehmer factorizations with at most six factors.** Let $F$ be a finite multiset of pairs
+Let $F$ be a finite multiset of pairs
 (base, exponent) of natural numbers with at most $6$ elements. Then $F$ is a nontrivial odd spoof
 $k$-Lehmer factorization for some integer $k$ if and only if every exponent of $F$ is $1$ and the
 multiset of bases of $F$ is one of the following $31$, written as tuples: $(3, 3)$, $(3, 5, 15)$,

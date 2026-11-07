@@ -1,6 +1,6 @@
 # Scottish Book Problem 7 fails: closed convex sets need not be homeomorphic
 
-**Scottish Book Problem 7 fails: closed convex sets need not be homeomorphic.** The Scottish Book
+The Scottish Book
 Problem 7 claim is false: there are a real Banach space $E$ and closed convex subsets
 $A, B \subseteq E$, each with infinite-dimensional linear span, that are not homeomorphic.
 

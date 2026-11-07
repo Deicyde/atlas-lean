@@ -1,6 +1,6 @@
 # Lehmer's central binomial series for arcsin
 
-**Lehmer's central binomial series for arcsin.** For every real number $x$ with $|x| < 1$, the
+For every real number $x$ with $|x| < 1$, the
 series
 
 $$\sum_{m=1}^{\infty} \frac{(2x)^{2m}}{m \binom{2m}{m}}$$

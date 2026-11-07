@@ -1,6 +1,6 @@
 # Continuous semilinear representation
 
-**Continuous semilinear representation.** Let $G$ be a topological group, $R$ a topological
+Let $G$ be a topological group, $R$ a topological
 ring and $M$ a topological abelian group that is a finite free $R$-module. Suppose that $G$ acts
 on $R$ by ring automorphisms and on $M$ by additive automorphisms, and that the actions of $G$ on
 $R$, of $G$ on $M$ and of $R$ on $M$ are jointly continuous. This is a continuous semilinear

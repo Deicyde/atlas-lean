@@ -1,6 +1,6 @@
 # A singleton is not an MPTQ set
 
-**A singleton is not an MPTQ set.** For every real number $a$, the one-element set $\{a\}$
+For every real number $a$, the one-element set $\{a\}$
 is not an MPTQ set.
 
 ## Sources

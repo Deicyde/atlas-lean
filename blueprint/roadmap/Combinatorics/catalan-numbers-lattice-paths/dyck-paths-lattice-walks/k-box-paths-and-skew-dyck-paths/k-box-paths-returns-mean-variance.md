@@ -1,6 +1,6 @@
 # Mean and variance of the number of returns of $k$-box paths
 
-**Mean and variance of the number of returns of $k$-box paths.** Let $k \ge 1$ and $n \ge 1$,
+Let $k \ge 1$ and $n \ge 1$,
 and let $R(\mu)$ be the number of returns (steps ending on the $x$-axis) of a path $\mu$. The
 average of $R$ over the $k$-box paths of size $n$ is
 

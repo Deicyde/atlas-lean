@@ -1,6 +1,6 @@
 # Multiplying unary counters
 
-**Multiplying unary counters.** Let $M$ be a multi-stack machine whose states carry a flag
+Let $M$ be a multi-stack machine whose states carry a flag
 bit, with $\mathrm{tag}(\mathrm{false})$ the state storing the bit false; write $(\ell, v, S)$ for
 the configuration at label $\ell$ with state $v$ and stack contents $S$, and $u^m$ for a stack
 holding exactly $m$ copies of the symbol $u$. Let $a, a', b, c, t$ be pairwise distinct stacks

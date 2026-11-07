@@ -1,6 +1,6 @@
 # PR-witnesses of the finite sums family
 
-**PR-witnesses of the finite sums family.** Let $\beta\mathbb{N}^+$ be the space of
+Let $\beta\mathbb{N}^+$ be the space of
 ultrafilters on the positive integers $\mathbb{N}^+$, with the Stone–Čech topology and the sum
 for which $A \in U + V$ if and only if $\{n : \{m : n + m \in A\} \in V\} \in U$. For
 $X \subseteq \mathbb{N}^+$ let $\mathrm{FS}(X)$ be the set of sums of nonempty finite subsets of

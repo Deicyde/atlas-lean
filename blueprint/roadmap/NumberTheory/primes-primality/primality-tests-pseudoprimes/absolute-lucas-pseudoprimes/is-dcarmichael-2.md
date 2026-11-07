@@ -1,6 +1,6 @@
 # Primary $D$-Carmichael numbers are $D$-Carmichael
 
-**Primary $D$-Carmichael numbers are $D$-Carmichael.** For every integer $D$ and natural
+For every integer $D$ and natural
 number $n$, if $n$ is a primary $D$-Carmichael number, then $n$ is a $D$-Carmichael number.
 
 ## Sources

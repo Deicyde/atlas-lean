@@ -1,6 +1,6 @@
 # 0-1 INTEGER PROGRAMMING FEASIBILITY is NP-complete
 
-**0-1 INTEGER PROGRAMMING FEASIBILITY is NP-complete.** The decision problem 0-1 INTEGER
+The decision problem 0-1 INTEGER
 PROGRAMMING FEASIBILITY belongs to NP, and every decision problem in NP has a polynomial-time
 many-one reduction to it.
 

@@ -1,6 +1,6 @@
 # $\mathsf{A}(\varphi\,\mathsf{U}\,\psi)$ at a deadlocked state
 
-**$\mathsf{A}[\varphi\,\mathsf{U}\,\psi]$ at a deadlocked state.** Let $s$ be a state of a
+Let $s$ be a state of a
 labelled transition system with an atom valuation, and suppose that $s$ is deadlocked: there is
 no transition from $s$ under any label. Then for all CTL formulas $\varphi$ and $\psi$, $s$
 satisfies $\mathsf{A}[\varphi\,\mathsf{U}\,\psi]$ if and only if $s$ satisfies $\psi$.

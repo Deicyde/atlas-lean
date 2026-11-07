@@ -1,6 +1,6 @@
 # Ref-symmetric squares from the Strachey construction
 
-**Ref-symmetric squares from the Strachey construction.** Let $m$ be a natural number, let
+Let $m$ be a natural number, let
 $q = (2m+1)^2$, and let $A_0$, $A_1$ and $M$ be $(2m+1) \times (2m+1)$ arrays of natural
 numbers, with rows and columns indexed by $0, 1, \dots, 2m$; write $\bar\imath = 2m - i$ and
 $\bar\jmath = 2m - j$. Suppose that every entry of $A_0$ is $0$ or $3$, every row of $A_0$ has

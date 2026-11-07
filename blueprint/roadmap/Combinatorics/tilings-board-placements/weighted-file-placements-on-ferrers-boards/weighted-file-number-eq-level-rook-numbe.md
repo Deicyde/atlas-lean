@@ -1,6 +1,6 @@
 # Weighted file numbers equal level rook numbers on singleton boards
 
-**Weighted file numbers equal level rook numbers on singleton boards.** Let $m \ge 1$ and let
+Let $m \ge 1$ and let
 $B$ be a singleton board for $m$. Then for every $k \in \mathbb{N}$ the $k$-th $m$-weighted file
 placement number of $B$ equals its $k$-th $m$-level rook number: $f_{k,m}(B) = r_{k,m}(B)$.
 

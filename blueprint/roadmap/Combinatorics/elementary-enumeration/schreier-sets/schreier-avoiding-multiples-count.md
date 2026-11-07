@@ -1,6 +1,6 @@
 # Schreier sets avoiding multiples
 
-**Schreier sets avoiding multiples.** For natural numbers $u$ and $n$, let $G_{u,n}$ be the
+For natural numbers $u$ and $n$, let $G_{u,n}$ be the
 set of the first $n$ positive integers not divisible by $u$ (taken to be empty when $u = 0$), and
 call a finite set $F$ of natural numbers Schreier when every element of $F$ is at least $|F|$.
 Then $|D_{u,n}|$ is the number of Schreier sets $F \subseteq G_{u,n}$ with

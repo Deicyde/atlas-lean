@@ -1,6 +1,6 @@
 # Rectangular-grid tilings fixed by the reflection $r^2 f$, $m$ even
 
-**Rectangular-grid tilings fixed by the reflection $r^2 f$, $m$ even.** Let $n$ and $m$ be
+Let $n$ and $m$ be
 positive integers with $m$ even, let $T$ be a finite set of tiles and let $\sigma$ be a
 permutation of $T$ with $\sigma^2 = 1$. Let $g$ be the reflection $r^2 f$ of
 $\mathbb{Z}/n \times \mathbb{Z}/m$, given by $g(x, y) = (x, -1 - y)$. Then the number of tilings

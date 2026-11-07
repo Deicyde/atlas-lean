@@ -1,6 +1,6 @@
 # Schur's theorem on diagonals of self-adjoint operators
 
-**Schur's theorem on diagonals of self-adjoint operators.** Let $E$ be a complex inner product
+Let $E$ be a complex inner product
 space of finite dimension $n$, let $T : E \to E$ be a linear operator that is symmetric, that is,
 $\langle T x, y \rangle = \langle x, T y \rangle$ for all $x, y \in E$, let
 $\lambda_1, \dots, \lambda_n$ be the eigenvalues of $T$ listed with multiplicity, and let

@@ -1,6 +1,6 @@
 # A timed decider with polynomial-time output function gives membership in P
 
-**A timed decider with polynomial-time output function gives membership in P.** Let $L$ be
+Let $L$ be
 a decision problem and let $f$ assign to each bit string $x$ a timed computation, that is, a
 Boolean return value together with a declared time in $\mathbb{N}$, whose return value equals
 $L(x)$ for every $x$. If the function sending $x$ to the return value of $f(x)$ is

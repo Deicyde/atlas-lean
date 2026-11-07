@@ -1,6 +1,6 @@
 # Self-convolution of higher-order Fibonacci numbers
 
-**Self-convolution of higher-order Fibonacci numbers.** Let $m \ge 1$ and let
+Let $m \ge 1$ and let
 $(F_n)_{n \in \mathbb{Z}}$ be a sequence of rational numbers with
 $F_n = F_{n-1} + \dots + F_{n-m}$ for every integer $n$, $F_i = 0$ for $0 \le i < m - 1$ and
 $F_{m-1} = 1$. For $p \ge 0$ let $w_p = \sum_{j=0}^{p} F_{j+m-1} F_{p-j+m-1}$; for integers

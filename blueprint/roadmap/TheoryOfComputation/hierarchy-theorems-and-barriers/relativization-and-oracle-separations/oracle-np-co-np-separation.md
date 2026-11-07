@@ -1,6 +1,6 @@
 # An oracle separates NP from coNP
 
-**An oracle separates NP from coNP.** There is an oracle $O$, a function from bitstrings to
+There is an oracle $O$, a function from bitstrings to
 booleans, such that $\mathrm{NP}^O$ differs from the class $\mathrm{coNP}^O$ of decision problems
 $L$ whose complement, the decision problem that accepts exactly the bitstrings that $L$ rejects,
 belongs to $\mathrm{NP}^O$.

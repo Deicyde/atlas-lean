@@ -1,6 +1,6 @@
 # The read loop
 
-**The read loop.** Given a code map $c_f$ from the raw alphabet $\mathrm{Fin}\,r$ to the code
+Given a code map $c_f$ from the raw alphabet $\mathrm{Fin}\,r$ to the code
 alphabet $\mathrm{Fin}\,g$, a separator code $c_s$ and a list $L$ of raw symbols, the read-loop
 statement tests the symbols $i$ of $L$ in order against the top of the raw input stack. At the
 first $i$ found on top, it pops it, pushes $c_f(i)$ on the host input stack and one unit on the

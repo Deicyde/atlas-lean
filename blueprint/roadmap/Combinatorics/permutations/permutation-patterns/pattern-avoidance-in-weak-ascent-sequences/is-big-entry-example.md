@@ -1,6 +1,6 @@
 # Big entries of $00203413$
 
-**Big entries of $00203413$.** In the word $w = 00203413$, with positions numbered from $1$,
+In the word $w = 00203413$, with positions numbered from $1$,
 the entries $w_3 = 2$ and $w_6 = 4$ are big entries and the entry $w_7 = 1$ is not.
 
 ## Sources

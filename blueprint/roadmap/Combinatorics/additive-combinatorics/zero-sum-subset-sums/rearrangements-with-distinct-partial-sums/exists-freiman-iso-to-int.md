@@ -1,6 +1,6 @@
 # Lev's rectification principle
 
-**Lev's rectification principle.** Let $\ell \ge 2$ be a natural number, $p$ a prime and
+Let $\ell \ge 2$ be a natural number, $p$ a prime and
 $A$ a subset of $\mathbb{Z}/p\mathbb{Z}$ with $|A| \le \lceil \log p / \log \ell \rceil$. Then
 there are a finite set $B$ of integers and a map $f \colon \mathbb{Z}/p\mathbb{Z} \to \mathbb{Z}$
 that is a Freiman isomorphism of order $\ell$ from $A$ to $B$: $f$ maps $A$ bijectively onto

@@ -1,6 +1,6 @@
 # Marginals of a product
 
-**Marginals of a product.** Let $V$ and $\alpha$ be finite types, let $f$ and $g$ be real-valued
+Let $V$ and $\alpha$ be finite types, let $f$ and $g$ be real-valued
 weights on the configurations $x : V \to \alpha$, and let $P, Q, U \subseteq V$ with
 $P \cup Q = V$ and $P \cap Q \subseteq U$, such that $f(x)$ depends only on the values of $x$ on
 $P$ and $g(x)$ only on its values on $Q$. Write $fg$ for the pointwise product, $P^c$ and $Q^c$

@@ -1,6 +1,6 @@
 # The EM evidence lower bound is a sum of per-point ELBOs
 
-**The EM evidence lower bound is a sum of per-point ELBOs.** Let $Z$ be a finite set, let
+Let $Z$ be a finite set, let
 $p_\theta(x, z)$ be real numbers indexed by parameters $\theta$, observations $x$ and latent values
 $z \in Z$, let $x_1, \dots, x_N$ be data, let $\theta$ be a parameter and let
 $q_1, \dots, q_N : Z \to \mathbb{R}$. Then the evidence lower bound of expectation-maximization,

@@ -1,6 +1,6 @@
 # The init family
 
-**The init family.** Let $L$ be a layout, let $i_c$ be a label/state code, let $k_0$ be a
+Let $L$ be a layout, let $i_c$ be a label/state code, let $k_0$ be a
 stack, let $y$ be a list of natural numbers, let $x$ be a list of symbol codes of $L$ of length
 $\ell$, and let $m, T, H$ be natural numbers. The init family is the CNF formula obtained by
 concatenating, in this order: the start-code clause of the initial row for $i_c$, $T$, $H$ (I1);

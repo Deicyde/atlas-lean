@@ -1,6 +1,6 @@
 # Characterization of $L^p$ membership via truncated integrals
 
-**Characterization of $L^p$ membership via truncated integrals.** Let $\lambda$ be Lebesgue
+Let $\lambda$ be Lebesgue
 measure on $\mathbb{R}$, let $F$ be a second-countable normed additive commutative group with its
 Borel $\sigma$-algebra, let $0 < p < \infty$, let $S \subseteq \mathbb{R}$ be measurable, and let
 $f : \mathbb{R} \to F$ be measurable. Then $f$ belongs to $L^p$ of $\lambda$ restricted to $S$ if

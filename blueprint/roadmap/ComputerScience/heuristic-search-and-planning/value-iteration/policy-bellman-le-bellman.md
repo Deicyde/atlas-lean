@@ -1,6 +1,6 @@
 # A policy's Bellman update is at most the optimal one
 
-**A policy's Bellman update is at most the optimal one.** Let $M$ be a Markov decision
+Let $M$ be a Markov decision
 process with a finite set of states $S$, a finite nonempty set of actions $A$, and rewards
 $r(s,a)$ and transition probabilities $P(s,a,s')$ in a field $K$ with a linear order, let
 $\gamma \in K$, and let $\pi : S \to A$ be a deterministic stationary policy. For every

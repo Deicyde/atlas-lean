@@ -1,6 +1,6 @@
 # Positivity of the factorial-product constants
 
-**Positivity of the factorial-product constants.** For every natural number $k$, the
+For every natural number $k$, the
 factorial-product constant $F_k$ is positive.
 
 ## Sources

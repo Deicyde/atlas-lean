@@ -1,6 +1,6 @@
 # Super pseudoprime
 
-**Super pseudoprime.** Let $P, Q$ be integers with $Q \neq 0$, let $D = P^2 - 4Q$, and let $S$
+Let $P, Q$ be integers with $Q \neq 0$, let $D = P^2 - 4Q$, and let $S$
 be a property of natural numbers. A natural number $N$ is a super pseudoprime of type $S$ with
 parameters $(P, Q)$ when $N$ is odd, $N > 1$, $N$ is not prime, $\gcd(N, QD) = 1$, and every
 divisor $d > 1$ of $N$ is prime or has property $S$.

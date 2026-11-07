@@ -1,6 +1,6 @@
 # Prime norm powers eventually fall below the quadratic primorial
 
-**Prime norm powers eventually fall below the quadratic primorial.** Let $K$ be an imaginary
+Let $K$ be an imaginary
 quadratic field. Put $N(\pi_0) = 1$ and, for $n \ge 1$, let $N(\pi_n)$ be the $n$-th smallest
 number that is the norm of a nonzero prime ideal of $\mathcal{O}_K$; let $N(\pi_n\#)$ be the
 product of the norms of the nonzero prime ideals of $\mathcal{O}_K$ of norm at most $N(\pi_n)$.

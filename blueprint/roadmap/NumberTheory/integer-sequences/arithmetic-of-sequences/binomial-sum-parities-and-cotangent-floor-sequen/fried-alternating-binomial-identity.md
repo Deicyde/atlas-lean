@@ -1,6 +1,6 @@
 # Fried's alternating binomial identity
 
-**Fried's alternating binomial identity.** For integers $a$ and $b$ let $\binom{a}{b}$ be the
+For integers $a$ and $b$ let $\binom{a}{b}$ be the
 binomial coefficient when $a, b \ge 0$ (so $0$ when $b > a$), and $0$ when $a < 0$ or $b < 0$.
 For natural numbers $n$, $r$, $s$ with $r \le n$ and $s \le 2r$, with all arguments computed in
 the integers,

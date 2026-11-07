@@ -1,6 +1,6 @@
 # Reflection symmetry of descent sets of parking functions
 
-**Reflection symmetry of descent sets of parking functions.** Write a parking function $f$ of
+Write a parking function $f$ of
 length $n$ as the sequence $(a_1, \dots, a_n)$ with $a_j = f(j-1) + 1$. Its descent set is the set
 of $j \in \{1, \dots, n-1\}$ with $a_j > a_{j+1}$. For every $n$ and every
 $I \subseteq \{1, \dots, n-1\}$, let $J = \{n - i : i \in I\}$. Then the number of parking

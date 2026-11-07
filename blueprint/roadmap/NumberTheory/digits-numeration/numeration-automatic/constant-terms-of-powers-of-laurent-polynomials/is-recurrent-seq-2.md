@@ -1,6 +1,6 @@
 # Uniformly recurrent sequences are recurrent
 
-**Uniformly recurrent sequences are recurrent.** Every uniformly recurrent sequence
+Every uniformly recurrent sequence
 $s : \mathbb{N} \to \alpha$, with values in any type $\alpha$, is recurrent.
 
 ## Sources

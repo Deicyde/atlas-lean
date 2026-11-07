@@ -1,6 +1,6 @@
 # Polynomial time bound of the accept generator
 
-**Polynomial time bound of the accept generator.** Let $L$ be a layout with label block size
+Let $L$ be a layout with label block size
 $A$, $K$ stacks and $g$ symbol codes, let $n_1, a, k_1, e, T, H$ be natural numbers with
 $n_1 \le A$, $k_1 < K$ and $H > 0$, and let $c = 314\,(A + K + g + n_1 + k_1 + 1)^5$. Start the
 accept generator for $L$, $n_1$, $a$, $k_1$, $e$ at its start label, with internal state false,

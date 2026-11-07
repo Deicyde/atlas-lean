@@ -1,3 +1,3 @@
 # Wright–Fisher step is the Bernstein operator
 
-**Wright–Fisher step is the Bernstein operator.** `wfStep M` is the Bernstein approximation operator.
+`wfStep M` is the Bernstein approximation operator.

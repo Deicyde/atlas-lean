@@ -1,6 +1,6 @@
 # A value of the alternating binomial power sum
 
-**A value of the alternating binomial power sum.** The alternating binomial power sum
+The alternating binomial power sum
 $p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (kx + y)^\ell$ satisfies
 $p_{1,1}(1, 1) = 1 - 2 = -1$.
 

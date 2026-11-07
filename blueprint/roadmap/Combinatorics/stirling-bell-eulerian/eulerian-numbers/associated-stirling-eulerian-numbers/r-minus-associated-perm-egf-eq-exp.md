@@ -1,6 +1,6 @@
 # Exponential generating function of permutations with cycle lengths at most $r$
 
-**Exponential generating function of permutations with cycle lengths at most $r$.** Let $R$
+Let $R$
 be a commutative $\mathbb{Q}$-algebra, $x \in R$, and let $r \ge 2$ be a natural number. For a
 permutation $\sigma$ of $\{0, \dots, n-1\}$ write $e(\sigma)$ for its number of excedances
 (indices $i$ with $\sigma(i) > i$), and let $A_j(x) = \sum_{\sigma \in S_j} x^{e(\sigma)}$. Let

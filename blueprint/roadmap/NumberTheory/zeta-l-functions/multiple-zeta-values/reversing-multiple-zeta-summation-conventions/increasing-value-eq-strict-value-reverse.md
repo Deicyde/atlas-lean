@@ -1,6 +1,6 @@
 # Increasing values agree with strict values of the reverse
 
-**Increasing values agree with strict values of the reverse.** Let
+Let
 $k = (k_0, \dots, k_{d-1})$ be an index of depth $d$ that is admissible in the increasing
 convention, so that its reverse $(k_{d-1}, \dots, k_0)$ is admissible. Then the value of $k$ in
 the increasing convention equals the strict multiple zeta value of the reverse of $k$:

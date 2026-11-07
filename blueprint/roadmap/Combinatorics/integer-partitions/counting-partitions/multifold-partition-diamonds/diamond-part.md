@@ -1,6 +1,6 @@
 # Extending a part vector by zero
 
-**Extending a part vector by zero.** Let $c = d_1 + \dots + d_M + M + 1$ be the number of
+Let $c = d_1 + \dots + d_M + M + 1$ be the number of
 parts of the multifold partition diamond whose diamonds have $d_1, \dots, d_M$ folds, and let
 $n$ be a natural number. A vector $(a_0, \dots, a_{c-1})$ with entries in $\{0, \dots, n - 1\}$
 is read as the function $\mathbb{N} \to \mathbb{N}$ that sends $p$ to $a_p$ for $p < c$ and to

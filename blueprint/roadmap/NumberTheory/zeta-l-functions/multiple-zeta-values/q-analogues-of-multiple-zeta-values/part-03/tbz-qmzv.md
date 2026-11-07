@@ -1,6 +1,6 @@
 # Takeyama–Bradley–Zhao qMZVs
 
-**Takeyama–Bradley–Zhao qMZVs.** For an index $(k_1, \dots, k_r)$ whose entries are the symbol
+For an index $(k_1, \dots, k_r)$ whose entries are the symbol
 $\bar 1$ or natural numbers, the TBZ-qMZV is the general qMZV of the data obtained by replacing
 each entry by its pair in the Takeyama–Bradley–Zhao letter encoding. When every natural-number
 entry is at least $1$ and $k_1 \ne 1$, this is

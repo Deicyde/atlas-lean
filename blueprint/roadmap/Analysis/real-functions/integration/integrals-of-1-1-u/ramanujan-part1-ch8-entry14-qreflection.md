@@ -1,6 +1,6 @@
 # Ramanujan's closed form for $\int_0^x du/(1 + u^{10})$ (Chapter 8, Entry 14)
 
-**Ramanujan's closed form for $\int_0^x du/(1 + u^{10})$ (Chapter 8, Entry 14).** Put
+Put
 $a_\pm = \sqrt{6 \pm 2\sqrt5}$ and $b_\pm = \sqrt{10 \pm 2\sqrt5}$. For every real $x$ with
 $0 \le x < 1$,
 

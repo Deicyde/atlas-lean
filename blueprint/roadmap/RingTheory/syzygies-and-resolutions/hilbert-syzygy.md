@@ -1,6 +1,6 @@
 # Hilbert's syzygy theorem
 
-**Hilbert's syzygy theorem.** Let $k$ be a field, let $n$ be a natural number, and let $M$ be a
+Let $k$ be a field, let $n$ be a natural number, and let $M$ be a
 finitely generated module over the polynomial ring $k[X_1, \dots, X_n]$ in $n$ variables. Then
 $M$ has projective dimension at most $n$ in the category of $k[X_1, \dots, X_n]$-modules.
 

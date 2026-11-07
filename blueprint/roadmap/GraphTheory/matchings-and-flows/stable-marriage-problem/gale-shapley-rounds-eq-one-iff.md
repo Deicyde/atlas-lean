@@ -1,6 +1,6 @@
 # When the Gale–Shapley algorithm ends in one round
 
-**When the Gale–Shapley algorithm ends in one round.** Let $n \ge 1$ and let $P$ be a
+Let $n \ge 1$ and let $P$ be a
 preference profile for $n$ men and $n$ women. The men-proposing Gale–Shapley algorithm on $P$ ends
 in exactly one round if and only if every woman is the first choice of exactly one man.
 

@@ -1,6 +1,6 @@
 # Taylor's law, asymptotic form
 
-**Taylor's law, asymptotic form.** A sequence $a : \mathbb{N} \to \mathbb{N}$, indexed from
+A sequence $a : \mathbb{N} \to \mathbb{N}$, indexed from
 $1$ (its value at $0$ is ignored), satisfies Taylor's law asymptotically when it is admissible
 for Taylor's law and, writing $m(a, n)$ and $v(a, n)$ for its initial-segment mean and
 initial-segment sample variance, there are real numbers $c > 0$ and $b$ such that

@@ -1,6 +1,6 @@
 # Generalized Markov numbers divisible by $4$
 
-**Generalized Markov numbers divisible by $4$.** Let $k$ be a natural number. If some
+Let $k$ be a natural number. If some
 $k$-generalized Markov number is divisible by $4$, then $k \equiv 2 \pmod{4}$.
 
 ## Sources

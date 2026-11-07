@@ -1,6 +1,6 @@
 # One-way permutations are one-way functions
 
-**One-way permutations are one-way functions.** Let $\pi$ be a one-way permutation family, so
+Let $\pi$ be a one-way permutation family, so
 that each $\pi_n$ maps $n$-bit strings to $n$-bit strings. Then the family that sends an $n$-bit
 string $x$ to the bitstring $\pi_n(x)$ is a one-way function family.
 

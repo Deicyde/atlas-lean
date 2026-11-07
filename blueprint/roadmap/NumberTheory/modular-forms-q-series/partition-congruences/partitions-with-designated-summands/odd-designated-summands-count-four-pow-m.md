@@ -1,6 +1,6 @@
 # $PD_2(4^\alpha (6n+5))$ is divisible by 4
 
-**$PD_2(4^\alpha (6n+5))$ is divisible by 4.** Let $PD_2(n)$ be the number of partitions of $n$
+Let $PD_2(n)$ be the number of partitions of $n$
 with designated summands in which every part is odd. For all $\alpha \ge 0$ and $n \ge 0$,
 $PD_2(4^\alpha (6n + 5)) \equiv 0 \pmod 4$.
 

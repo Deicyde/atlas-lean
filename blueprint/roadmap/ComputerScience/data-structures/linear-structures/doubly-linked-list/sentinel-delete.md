@@ -1,6 +1,6 @@
 # Deletion from a circular list with a sentinel
 
-**Deletion from a circular list with a sentinel.** Let $S$ be a node store with $c$ cells,
+Let $S$ be a node store with $c$ cells,
 each either empty or holding a node (a payload, an optional next address and an optional
 previous address in $\{0, \dots, c-1\}$). Let $x$ be an address whose cell holds a node $\nu$
 with previous address $p$ and next address $n$, where the cells at $p$ and $n$ are nonempty.

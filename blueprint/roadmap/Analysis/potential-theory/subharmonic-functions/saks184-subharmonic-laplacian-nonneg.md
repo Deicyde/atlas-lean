@@ -1,6 +1,6 @@
 # Subharmonic functions with second partial derivatives have nonnegative Laplacian
 
-**Subharmonic functions with second partial derivatives have nonnegative Laplacian.** Let
+Let
 $\varphi : \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ be subharmonic, and suppose that its
 partial derivatives $\varphi_x$, $\varphi_{xx}$, $\varphi_y$ and $\varphi_{yy}$ exist at every
 point of the plane. Then $\varphi_{xx}(p) + \varphi_{yy}(p) \ge 0$ for every point $p$ of the

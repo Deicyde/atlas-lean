@@ -1,6 +1,6 @@
 # The $q$-analogue for cycles longer than $r$ is a $q$-th power
 
-**The $q$-analogue for cycles longer than $r$ is a $q$-th power.** Let $R$ be a commutative
+Let $R$ be a commutative
 $\mathbb{Q}$-algebra, $x, q \in R$ and $r$ a natural number. For a permutation $\sigma$ of
 $\{0, \dots, n-1\}$ let $\operatorname{exc}(\sigma)$ be the number of points $i$ with
 $\sigma(i) > i$ and $\operatorname{cyc}(\sigma)$ its number of cycles (fixed points counted as

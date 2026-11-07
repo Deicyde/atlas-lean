@@ -1,6 +1,6 @@
 # Power-weighted sums of hypersequences
 
-**Power-weighted sums of hypersequences.** Let $a$ be a sequence of complex numbers, let
+Let $a$ be a sequence of complex numbers, let
 $a^{(r)}_n$ denote its hypersequence of generation $r$, let
 $p_{\ell,m}(x, y) = \sum_{i=0}^{m} (-1)^i \binom{m}{i} (ix + y)^\ell$ be the alternating binomial
 power sum, and let $S(j, m)$ denote the Stirling numbers of the second kind. Then for all

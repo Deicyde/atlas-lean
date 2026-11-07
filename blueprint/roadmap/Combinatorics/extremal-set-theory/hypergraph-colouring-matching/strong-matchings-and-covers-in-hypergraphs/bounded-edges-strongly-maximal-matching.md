@@ -1,6 +1,6 @@
 # Strongly maximal matchings in hypergraphs with bounded edges
 
-**Strongly maximal matchings in hypergraphs with bounded edges.** The statement that for
+The statement that for
 every vertex set $V$ and every set $E$ of finite subsets of $V$ such that some natural number $k$
 bounds the number of elements of every edge in $E$, the hypergraph with edge set $E$ has a
 strongly maximal matching.

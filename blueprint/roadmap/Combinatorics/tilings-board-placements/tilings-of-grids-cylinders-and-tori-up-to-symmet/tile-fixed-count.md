@@ -1,6 +1,6 @@
 # Tile designs fixed by a power of a permutation
 
-**Tile designs fixed by a power of a permutation.** For a finite set $T$ of tile designs, a
+For a finite set $T$ of tile designs, a
 permutation $\sigma$ of $T$ and a natural number $k$, this is the number of designs $d \in T$ with
 $\sigma^k(d) = d$.
 

@@ -1,6 +1,5 @@
 # Units modulo a prime divisor lift to units where the Jacobi and Legendre symbols agree
 
-**Units modulo a prime divisor lift to units where the Jacobi and Legendre symbols agree.**
 Let $n$ be odd and let $p'$ be a prime dividing $n$ such that $p'$ is coprime to $n/p'$. Write
 $L(n;p')$ for the set of units $x$ of $\mathbb{Z}/n\mathbb{Z}$ whose least nonnegative
 representative $v$ satisfies $\left(\frac{v}{n}\right) = \left(\frac{v}{p'}\right)$, where both

@@ -1,6 +1,6 @@
 # Factor complexity and right-special factors of the Thue–Morse Quarto word
 
-**Factor complexity and right-special factors of the Thue–Morse Quarto word.** Let
+Let
 $\mathcal{Q}$ be the Thue–Morse Quarto sequence, $p_{\mathcal{Q}}$ its factor complexity and
 $\mathrm{RS}_{\mathcal{Q}}(n)$ its set of right-special factors of length $n$. Let $n \ge 16$ and
 $k = \lfloor \log_2 n \rfloor$, so that $2^k \le n < 2^{k+1}$. Then

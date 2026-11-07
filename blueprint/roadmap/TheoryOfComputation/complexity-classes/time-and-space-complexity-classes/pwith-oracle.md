@@ -1,6 +1,6 @@
 # Polynomial time with an oracle
 
-**Polynomial time with an oracle.** For a Boolean oracle $O$ on bitstrings, the class
+For a Boolean oracle $O$ on bitstrings, the class
 $\mathsf{P}^O$ consists of the decision problems $L$ for which there are polynomials $p$ and $q$
 and polynomial-time functions $\mathrm{next}$ and $\mathrm{final}$ such that, for every
 bitstring $x$, $L(x)$ is true exactly when the following oracle machine outputs true on $x$.

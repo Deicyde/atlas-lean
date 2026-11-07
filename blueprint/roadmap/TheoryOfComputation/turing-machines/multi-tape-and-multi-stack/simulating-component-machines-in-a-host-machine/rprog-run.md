@@ -1,6 +1,6 @@
 # The reduction host's run
 
-**The reduction host's run.** Let $c$ be a component with stacks $c_X$ and $c_O$, an encoding
+Let $c$ be a component with stacks $c_X$ and $c_O$, an encoding
 $g_X$ of bits as symbols of $c_X$, an identification $e_O$ of the alphabet of $c_O$ with the bits,
 and labels $\mathit{start}$ and $\mathit{done}$, where the component halts at $\mathit{done}$. Let
 $f$ be a function from bit lists to bit lists and $p$ a polynomial with natural-number

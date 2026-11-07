@@ -1,6 +1,6 @@
 # Unsums of upper Wythoff numbers
 
-**Unsums of upper Wythoff numbers.** A positive integer $p$ is an *upper Wythoff number* when
+A positive integer $p$ is an *upper Wythoff number* when
 the letter at index $p - 1$ (indices start at $0$) of the infinite Fibonacci word
 $0100101001001\ldots$ is $1$; that is, the upper Wythoff numbers are the positions of the letter
 $1$ in the Fibonacci word counted from one. A positive integer $x$ is an *unsum* (OEIS A260317)

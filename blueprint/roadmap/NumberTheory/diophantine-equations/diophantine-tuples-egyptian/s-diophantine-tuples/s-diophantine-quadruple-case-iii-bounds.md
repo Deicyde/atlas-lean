@@ -1,6 +1,6 @@
 # Bounds in Case III for $\{p, q\}$-Diophantine quadruples
 
-**Bounds in Case III for $\{p, q\}$-Diophantine quadruples.** Let $p$ and $q$ be primes with
+Let $p$ and $q$ be primes with
 $p \equiv 3 \pmod 4$, $p \ge 7$ and $q \equiv 1 \pmod 4$, and let $a < b < c < d$ be natural
 numbers such that $\{a, b, c, d\}$ is a $\{p, q\}$-Diophantine tuple. Put $s_1 = ab + 1$,
 $s_2 = ac + 1$, $s_3 = ad + 1$, $s_4 = bc + 1$, $s_5 = bd + 1$, $s_6 = cd + 1$, and let

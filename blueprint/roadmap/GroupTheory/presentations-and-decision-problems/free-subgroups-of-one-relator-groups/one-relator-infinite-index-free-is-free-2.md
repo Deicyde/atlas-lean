@@ -1,6 +1,6 @@
 # Kourovka Problem 20.41 has a positive answer
 
-**Kourovka Problem 20.41 has a positive answer.** Let $G$ be a non-cyclic residually finite group
+Let $G$ be a non-cyclic residually finite group
 such that every subgroup of finite index in $G$ (including $G$ itself) is isomorphic to a
 one-relator group $\langle x_0, \dots, x_{n-1} \mid r \rangle$ for some natural number $n$ and
 some element $r$ of the free group on $x_0, \dots, x_{n-1}$, and every subgroup of infinite index

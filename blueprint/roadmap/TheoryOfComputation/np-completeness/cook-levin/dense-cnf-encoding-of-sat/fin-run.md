@@ -1,6 +1,6 @@
 # The converter's final phase
 
-**The converter's final phase.** Write $0$ for false, $1$ for true and $1^j$ for $j$ copies
+Write $0$ for false, $1$ for true and $1^j$ for $j$ copies
 of $1$. Let $o$ be a bit string, $\iota$ a flag saying whether a clause is open, and $n, k, m$
 natural numbers with $n = 0$ if no clause is open; let $c = n + 1$ if a clause is open and $c = 0$
 otherwise. Started at the label that clears the slot counter at the end, for the flag $\iota$, with

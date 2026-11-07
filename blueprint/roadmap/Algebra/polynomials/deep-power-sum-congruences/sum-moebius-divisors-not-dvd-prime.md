@@ -1,6 +1,6 @@
 # Möbius sum over the divisors prime to a given prime
 
-**Möbius sum over the divisors prime to a given prime.** Let $p$ be a prime, $\mu$ the Möbius
+Let $p$ be a prime, $\mu$ the Möbius
 function and $n \ge 1$. The sum of $\mu(d)$ over the divisors $d$ of $n$ with $p \nmid d$ is $1$ if
 $n$ is a power of $p$ (including $n = 1 = p^0$) and $0$ otherwise.
 

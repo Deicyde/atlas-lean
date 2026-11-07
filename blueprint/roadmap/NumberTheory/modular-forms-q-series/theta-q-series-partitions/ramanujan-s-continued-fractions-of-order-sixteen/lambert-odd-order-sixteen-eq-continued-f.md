@@ -1,6 +1,6 @@
 # Odd Lambert series for Ramanujan's continued fractions of order sixteen
 
-**Odd Lambert series for Ramanujan's continued fractions of order sixteen.** Write
+Write
 $(a; q)_\infty = \prod_{n \ge 0} (1 - a q^n)$ and $(a, b; q)_\infty = (a; q)_\infty (b; q)_\infty$.
 For a complex number $q$ with $|q| < 1$, put
 $S(a, b) = \sum_{k \ge 0} (q^{a(2k+1)} + q^{b(2k+1)}) / (1 - q^{16(2k+1)})$, a sum over the odd

@@ -1,6 +1,6 @@
 # Scottish Book Problem 116(b), measurable-set form
 
-**Scottish Book Problem 116(b), measurable-set form.** The claim is the following. Let $G$ be
+The claim is the following. Let $G$ be
 any compact Hausdorff topological group with its Borel $\sigma$-algebra, and let $\mu$ be a Haar
 measure on $G$ that is a probability measure. For $\varphi, \psi \in G$ and a Boolean sequence
 $c : \mathbb{N} \to \{\mathrm{false}, \mathrm{true}\}$, let $f_{n+1} = \varphi$ if

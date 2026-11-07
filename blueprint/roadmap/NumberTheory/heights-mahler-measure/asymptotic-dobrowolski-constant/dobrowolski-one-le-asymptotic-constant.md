@@ -1,6 +1,6 @@
 # Dobrowolski's lower bound for the asymptotic Dobrowolski constant
 
-**Dobrowolski's lower bound for the asymptotic Dobrowolski constant.** The asymptotic
+The asymptotic
 Dobrowolski constant is at least $1$, as an extended real number.
 
 ## Sources

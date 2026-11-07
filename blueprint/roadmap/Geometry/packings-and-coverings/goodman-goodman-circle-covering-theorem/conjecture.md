@@ -1,6 +1,6 @@
 # Erdős Problem 1121 (circle covering)
 
-**Erdős Problem 1121 (circle covering).** Write $B(c, r)$ for the closed ball with centre
+Write $B(c, r)$ for the closed ball with centre
 $c$ and radius $r$ in Euclidean space $\mathbb{R}^d$. Call balls $B(c_1, r_1), \dots,
 B(c_n, r_n)$ in $\mathbb{R}^d$ *nonseparable* if for every nonzero vector $v$ and every real
 $t$ such that no point $p$ of any of the balls satisfies $\langle v, p \rangle = t$, either

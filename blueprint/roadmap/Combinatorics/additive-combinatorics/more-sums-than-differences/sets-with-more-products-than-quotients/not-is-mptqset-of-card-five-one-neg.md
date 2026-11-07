@@ -1,6 +1,6 @@
 # Five-element sets with one negative element are not MPTQ sets
 
-**Five-element sets with one negative element are not MPTQ sets.** If $A$ is a set of five
+If $A$ is a set of five
 real numbers exactly one of which is negative, then $A$ is not an MPTQ set.
 
 The source assumes the elements are nonzero; this is not needed, since a set containing $0$ is

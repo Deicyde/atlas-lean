@@ -1,6 +1,6 @@
 # Triple convolution of the Fibonacci 2-, 3- and 5-step numbers
 
-**Triple convolution of the Fibonacci 2-, 3- and 5-step numbers.** Let $F_j$, $T_j$ and $P_j$
+Let $F_j$, $T_j$ and $P_j$
 be the Fibonacci $2$-, $3$- and $5$-step numbers, where the Fibonacci $k$-step numbers start
 $0, 1$ and each later term is the sum of the $k$ terms before it (terms of negative index being
 $0$). For every natural number $n \ge 5$,

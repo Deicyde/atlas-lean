@@ -1,6 +1,6 @@
 # SZ-star qMZVs
 
-**SZ-star qMZVs.** For an index $k = (k_1, \dots, k_r)$ of natural numbers, the SZ-star qMZV
+For an index $k = (k_1, \dots, k_r)$ of natural numbers, the SZ-star qMZV
 $\zeta_q^{SZ,\star}(k)$ is the formal power series in $q$ over $\mathbb{Q}$
 
 $$

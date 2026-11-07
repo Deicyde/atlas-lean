@@ -1,6 +1,6 @@
 # Factor complexity of $\mathcal{M}_2$
 
-**Factor complexity of $\mathcal{M}_2$.** Let $p(n)$ be the factor complexity of the
+Let $p(n)$ be the factor complexity of the
 meta-automatic sequence $\mathcal{M}_2$. Then $p(1) = 2$, and for every $n \ge 2$, writing
 $k = \lfloor \log_2 n \rfloor$ (so that $2^k \le n < 2^{k+1}$), the following hold.
 If $k \equiv 0 \pmod 3$, then $p(n) = 2n + 2^{k-1} - 2$ when $n \le 2^k + 1$,

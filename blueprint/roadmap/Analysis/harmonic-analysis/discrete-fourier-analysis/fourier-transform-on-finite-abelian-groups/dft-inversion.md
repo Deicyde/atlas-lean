@@ -1,6 +1,6 @@
 # Fourier inversion on a finite abelian group
 
-**Fourier inversion on a finite abelian group.** Let $G$ be a finite abelian group with $|G|$
+Let $G$ be a finite abelian group with $|G|$
 elements, let $f : G \to \mathbb{C}$, and write $\hat f(\psi) = \sum_{y \in G} \psi(y) f(y)$ for
 the discrete Fourier transform of $f$ at an additive character $\psi$ of $G$ with values in
 $\mathbb{C}$. Then for every $x \in G$,

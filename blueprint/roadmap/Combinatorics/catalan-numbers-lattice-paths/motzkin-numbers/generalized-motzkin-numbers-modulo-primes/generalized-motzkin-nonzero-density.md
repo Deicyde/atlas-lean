@@ -1,6 +1,6 @@
 # Density of each nonzero residue among generalized Motzkin numbers modulo $p$
 
-**Density of each nonzero residue among generalized Motzkin numbers modulo $p$.** For integers
+For integers
 $a$, $b$ let $T_r$ and $M_r$ be the constant terms of $(a x^{-1} + b + a x)^r$ and of
 $(a x^{-1} + b + a x)^r (1 - x^2)$, the generalized central trinomial coefficients and generalized
 Motzkin numbers. Let $p > 2$ be a prime with $a \not\equiv 0 \pmod p$ such that

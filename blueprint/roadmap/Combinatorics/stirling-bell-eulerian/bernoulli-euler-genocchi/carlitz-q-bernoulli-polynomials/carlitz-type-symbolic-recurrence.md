@@ -1,6 +1,6 @@
 # Symbolic recurrence for Carlitz-type sequences
 
-**Symbolic recurrence for Carlitz-type sequences.** Let $q > 0$ with $q \ne 1$, write
+Let $q > 0$ with $q \ne 1$, write
 $[x] = (q^x - 1)/(q - 1)$, let $r$ be a natural number, let $P$ be a real polynomial and let
 $(a_k)$ be a real sequence with $[k + r]\, a_k = P(k)$ for every natural number $k$. If $(T_n)$ is
 a Carlitz-type sequence with associated sequence $(a_k)$ and $t_n = T_n(0)$, then for every natural

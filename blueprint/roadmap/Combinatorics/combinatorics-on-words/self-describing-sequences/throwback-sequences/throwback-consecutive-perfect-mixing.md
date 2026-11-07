@@ -1,6 +1,6 @@
 # Perfect mixing for consecutive integers
 
-**Perfect mixing for consecutive integers.** Let $m \ge 1$ and $n \ge 0$, let
+Let $m \ge 1$ and $n \ge 0$, let
 $X = (m, m + 1, m + 2, \dots)$, and let $\tau$ be the throwback. Then the positions of the terms
 $m, m + 1, \dots, m + n$ in $\tau^k(X)$ are different for different $k$ with
 $0 \le k < (m + 1)^{n + 1}$: for $0 \le k < l < (m + 1)^{n + 1}$, some $m + i$ with $i \le n$

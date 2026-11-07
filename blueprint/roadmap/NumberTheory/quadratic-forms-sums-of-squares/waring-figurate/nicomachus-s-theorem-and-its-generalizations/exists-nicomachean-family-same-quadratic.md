@@ -1,6 +1,6 @@
 # Nicomachean families sharing a quadratic factor
 
-**Nicomachean families sharing a quadratic factor.** Write
+Write
 $\nu(a_1, \dots, a_n) = (a_1 + \dots + a_n)^2 - (a_1^3 + \dots + a_n^3)$ for the Nicomachean defect
 of a finite sequence. For every natural number $N$ there are finite sequences
 $\sigma_1, \dots, \sigma_N$ of positive integers, pairwise distinct as multisets, and an integer

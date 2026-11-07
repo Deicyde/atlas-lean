@@ -1,6 +1,6 @@
 # Divisors of a factorial bounded by their number of prime factors
 
-**Divisors of a factorial bounded by their number of prime factors.** Let $n \ge 1$ and let
+Let $n \ge 1$ and let
 $x$ be a positive integer dividing $n!$, and write $\omega(x)$ for the number of distinct prime
 divisors of $x$. Then for every positive integer $a$,
 $x \le n^{n/a} (a \, \omega(x) + 1)^{n \, \omega(x)}$, where $n^{n/a}$ is a real power.

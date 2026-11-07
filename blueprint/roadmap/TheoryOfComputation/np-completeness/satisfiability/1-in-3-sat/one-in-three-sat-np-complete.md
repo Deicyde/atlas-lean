@@ -1,6 +1,6 @@
 # 1-IN-3-SAT is NP-complete
 
-**1-IN-3-SAT is NP-complete.** The 1-in-3-SAT decision problem belongs to NP, and every
+The 1-in-3-SAT decision problem belongs to NP, and every
 decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

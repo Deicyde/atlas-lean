@@ -1,6 +1,6 @@
 # Component term of the EM objective for full-covariance Gaussian mixtures
 
-**Component term of the EM objective for full-covariance Gaussian mixtures.** Given points
+Given points
 $x_1, \dots, x_N$ of $\mathbb{R}^d$, valid parameters $\theta$ of a $K$-component
 full-covariance Gaussian mixture, a component $k$, a mean $\mu \in \mathbb{R}^d$ and a real
 $d \times d$ matrix $S$, the component term is

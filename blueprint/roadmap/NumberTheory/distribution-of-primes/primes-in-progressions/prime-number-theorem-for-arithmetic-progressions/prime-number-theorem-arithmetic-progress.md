@@ -1,6 +1,6 @@
 # Prime number theorem in arithmetic progressions
 
-**Prime number theorem in arithmetic progressions.** Let $q \ge 2$ and $a$ be natural numbers
+Let $q \ge 2$ and $a$ be natural numbers
 with $\gcd(a, q) = 1$, and for each natural number $n$ let $N(n)$ be the number of primes
 $p \le n$ with $p \equiv a \pmod q$. Then $N(n) \log n / n \to 1 / \varphi(q)$ as $n \to \infty$,
 where $\varphi$ is Euler's totient function and $\log$ is the natural logarithm.

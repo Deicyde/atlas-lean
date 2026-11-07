@@ -1,6 +1,6 @@
 # Edge-number phase (SUBSET-SUM reduction machine)
 
-**Edge-number phase (SUBSET-SUM reduction machine).** Let $d$ be a list of bits (in the
+Let $d$ be a list of bits (in the
 machine, the pair bits listed from the last pair down), $v$ a value of the machine's Boolean flag
 and $S$ an assignment of contents to the stacks, and write $\mathrm{val}(d)$ for the list of the
 symbols $\mathrm{val}(b)$ for the entries $b$ of $d$, in order. Suppose stack $Y$ holds

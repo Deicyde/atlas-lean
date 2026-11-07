@@ -1,6 +1,6 @@
 # Vitali's theorem
 
-**Vitali's theorem.** There exists a subset of $\mathbb{R}$ that is not Lebesgue measurable.
+There exists a subset of $\mathbb{R}$ that is not Lebesgue measurable.
 
 ## Sources
 

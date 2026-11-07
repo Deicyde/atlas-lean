@@ -1,3 +1,3 @@
 # Critical count meets the false-positive bound
 
-**Critical count meets the false-positive bound.** The critical count meets the false-positive bound: `P(k) ≤ FPR` (for `FPR ≥ 0`).
+The critical count meets the false-positive bound: `P(k) ≤ FPR` (for `FPR ≥ 0`).

@@ -1,6 +1,6 @@
 # Kohen's linear representation step modulo $p^a$
 
-**Kohen's linear representation step modulo $p^a$.** Let $p$ be a prime, let $a$ be a natural
+Let $p$ be a prime, let $a$ be a natural
 number, and let $\tilde P$ be a Laurent polynomial in $r$ variables with integer coefficients such
 that $\tilde P^p \equiv \tilde P(x^p) \pmod{p^a}$ coefficientwise, where $\tilde P(x^p)$ is
 obtained from $\tilde P$ by replacing each monomial $x^e$ with $x^{pe}$. Write $\deg \tilde P$ for

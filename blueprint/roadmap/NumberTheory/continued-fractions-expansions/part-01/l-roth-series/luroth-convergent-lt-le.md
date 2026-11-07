@@ -1,6 +1,6 @@
 # Lüroth convergents approximate from below
 
-**Lüroth convergents approximate from below.** Let $x \in (0, 1]$ have Lüroth digits
+Let $x \in (0, 1]$ have Lüroth digits
 $d_0, d_1, d_2, \dots$ (numbered from $0$), Lüroth denominators $Q_0, Q_1, Q_2, \dots$ and Lüroth
 convergents $x_0, x_1, x_2, \dots$. Then for every $n \ge 0$,
 

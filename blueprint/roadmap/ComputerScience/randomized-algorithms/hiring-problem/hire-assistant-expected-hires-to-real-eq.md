@@ -1,6 +1,6 @@
 # Expected number of hires is the harmonic number
 
-**Expected number of hires is the harmonic number.** Let $x$ be a list of $n$ pairwise
+Let $x$ be a list of $n$ pairwise
 distinct elements of a linearly ordered type, and rearrange its entries by a uniformly random
 permutation of the indices. The expected number of hires that the hire-assistant procedure
 (interview the entries in order, hiring each one strictly better than every earlier one) makes

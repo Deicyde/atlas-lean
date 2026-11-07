@@ -1,6 +1,6 @@
 # The reduction host embeds the component
 
-**The reduction host embeds the component.** Let $c$ be a component machine with stacks
+Let $c$ be a component machine with stacks
 $c_X$ and $c_O$, a map $g_X$ from bits to the alphabet of $c_X$, and labels $s$ and $d$,
 and suppose that $c$ halts at $d$. Rename the labels of $c$ by sending $d$ to the cleanup label
 with answer false and every other label $l$ to the host's copy of $l$, and embed the stacks of

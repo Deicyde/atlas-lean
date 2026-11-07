@@ -1,3 +1,3 @@
 # Entropy of a pushforward is invariant under relabeling
 
-**Entropy of a pushforward is invariant under relabeling.** Relabeling the image of a map by a bijection preserves entropy.
+Relabeling the image of a map by a bijection preserves entropy.

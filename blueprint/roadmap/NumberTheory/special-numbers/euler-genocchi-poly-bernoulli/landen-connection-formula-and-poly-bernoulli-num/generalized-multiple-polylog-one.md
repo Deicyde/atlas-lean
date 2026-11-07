@@ -1,6 +1,6 @@
 # Initial value of the generalized multiple polylogarithm
 
-**Initial value of the generalized multiple polylogarithm.** Let
+Let
 $g = (g_0, g_1, \dots, g_s)$ be Landen data, where $g_0$ has rows $(1, -1)$ and $(c_0, d_0)$,
 and let $\beta, \gamma \in \mathbb{R}^s$. Then
 $\mathrm{Li}_{(1)}(g; (\beta, \gamma); z) = \int_0^z G_{g_0}(u)\,du$, where

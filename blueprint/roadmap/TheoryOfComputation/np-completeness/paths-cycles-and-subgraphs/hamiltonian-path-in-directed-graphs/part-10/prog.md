@@ -1,6 +1,6 @@
 # The Hamiltonian path verifier machine
 
-**The Hamiltonian path verifier machine.** The verifier is the program of the multi-stack
+The verifier is the program of the multi-stack
 machine with the stacks and labels of the Hamiltonian path verifier, every stack over the
 alphabet $\mathrm{Sym}$, and a Boolean internal variable, given below label by label. Write
 $\mathrm{bit}(x)$ for the bit symbol of a boolean $x$. Write $(a, n)$, $(a, s)$, $(c, n)$ and

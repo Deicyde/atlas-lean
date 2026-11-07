@@ -1,4 +1,4 @@
 # Children of a valid Fibonacci tree are valid
 
-**Children of a valid Fibonacci tree are valid.** Every child of a valid Fibonacci tree is
+Every child of a valid Fibonacci tree is
 itself a valid Fibonacci tree.

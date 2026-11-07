@@ -1,6 +1,6 @@
 # $4$ is not a signature Carmichael number
 
-**$4$ is not a signature Carmichael number.** For every finite sequence $\sigma$ of integers,
+For every finite sequence $\sigma$ of integers,
 $4$ is not a $\sigma$-Carmichael number, because $4$ is not squarefree.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Twelfth moment of the Riemann zeta function on the critical line
 
-**Twelfth moment of the Riemann zeta function on the critical line.** For every
+For every
 $\varepsilon > 0$ there is a constant $C$ such that for every real $T \ge 1$,
 
 $$\int_1^T |\zeta(1/2 + it)|^{12} \, dt \le C T^{2+\varepsilon}.$$

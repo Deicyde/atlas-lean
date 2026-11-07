@@ -1,6 +1,6 @@
 # Dusart's bound for $\vartheta$ and $\psi$ from a zero-free region
 
-**Dusart's bound for $\vartheta$ and $\psi$ from a zero-free region.** Let $R = 5.69693$, let
+Let $R = 5.69693$, let
 $\log$ be the natural logarithm, and let $\vartheta(x) = \sum_{p \le x} \log p$ (over primes $p$)
 and $\psi(x) = \sum_{n \le x} \Lambda(n)$, with $\Lambda$ the von Mangoldt function, be
 Chebyshev's functions. Suppose the Riemann zeta function has no zero $s$ with

@@ -1,6 +1,6 @@
 # Complete Young graphs
 
-**Complete Young graphs.** For natural numbers $g$, $k$ and $m$, the Young graph $Y(g, k)$ of
+For natural numbers $g$, $k$ and $m$, the Young graph $Y(g, k)$ of
 the $k$-reverse multiples in base $g$ is complete on $m$ nodes: the nodes other than its
 distinguished starting node form the complete directed graph on $m$ nodes, so $Y(g, k)$ has
 $m + 1$ nodes in all; the node $[0, 0]$ is one of these $m$ nodes, and the starting node has an

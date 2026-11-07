@@ -1,6 +1,6 @@
 # First Lüroth digit of 1
 
-**First Lüroth digit of 1.** The first Lüroth digit of $1$ is $d_1(1) = 2$.
+The first Lüroth digit of $1$ is $d_1(1) = 2$.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # Arithmetic large sieve for primes in a progression
 
-**Arithmetic large sieve for primes in a progression.** Let $N$, $z$, $q$ and $a$ be natural
+Let $N$, $z$, $q$ and $a$ be natural
 numbers with $z > 0$ and $q > 0$, and let $S$ be a finite set of natural numbers less than $N$
 such that for every $n \in S$ the number $qn + a$ is prime and greater than $z$. Write $\mu$ for
 the Möbius function and $\varphi$ for Euler's totient function. Then

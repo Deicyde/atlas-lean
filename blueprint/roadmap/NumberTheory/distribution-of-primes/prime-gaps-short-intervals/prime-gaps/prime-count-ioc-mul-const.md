@@ -1,6 +1,6 @@
 # Primes in a window of $C$ maximal prime gaps
 
-**Primes in a window of $C$ maximal prime gaps.** Let $p_0 = 2 < p_1 = 3 < p_2 = 5 < \dots$
+Let $p_0 = 2 < p_1 = 3 < p_2 = 5 < \dots$
 be the primes in increasing order, let $\pi$ be the prime-counting function, and for real $x$
 let $d(x)$ be the largest prime gap $p_{n+1} - p_n$ over all $n$ with $p_n < x$, with
 $d(x) = 0$ when no prime is less than $x$. For a real number $C$, this is the function on pairs

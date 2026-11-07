@@ -1,6 +1,6 @@
 # Exponential generating function of Ramanujan's Bell-type series (Entry 4)
 
-**Exponential generating function of Ramanujan's Bell-type series (Entry 4).** Let $F$ be
+Let $F$ be
 Ramanujan's generalized Bell function. For all complex numbers $a$ and $x$, let
 $f(x, n) = F(0, 1, x; n) = e^{-x} \sum_{j=0}^{\infty} \frac{(j+1)^n x^{j+1}}{j!}$ for natural
 numbers $n$, and set $f(x, -1) = 1$. Then the series

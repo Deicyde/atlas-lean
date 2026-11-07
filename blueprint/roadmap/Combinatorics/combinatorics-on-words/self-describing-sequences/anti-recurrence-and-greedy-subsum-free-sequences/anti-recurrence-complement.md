@@ -1,6 +1,6 @@
 # Non-anti-recurrence numbers
 
-**Non-anti-recurrence numbers.** Let $a = (a_1, \dots, a_k)$ be a linear form with natural
+Let $a = (a_1, \dots, a_k)$ be a linear form with natural
 number coefficients. Its non-anti-recurrence numbers $B_1, B_2, \dots$ are produced in blocks of
 $k$ by the mex rule: for $n \ge 1$, each of $B_{(n-1)k+1}, \dots, B_{nk}$ in turn is the least
 positive integer not among $B_1, \dots, B_{(n-1)k}$, the anti-recurrence numbers

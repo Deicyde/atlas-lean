@@ -1,6 +1,6 @@
 # Double ascents, double descents, peaks and valleys in length three
 
-**Double ascents, double descents, peaks and valleys in length three.** Writing permutations
+Writing permutations
 of $\{0, 1, 2\}$ in one-based one-line notation, and $\operatorname{dasc}$,
 $\operatorname{ddes}$, $\operatorname{pk}$ and $\operatorname{vl}$ for the numbers of double
 ascents, double descents, peaks and valleys, $\operatorname{dasc}(123) = 1$,

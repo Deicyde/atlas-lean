@@ -1,6 +1,6 @@
 # The zero-extended binomial coefficient vanishes at $(-1, 0)$
 
-**The zero-extended binomial coefficient vanishes at $(-1, 0)$.** Extend the binomial
+Extend the binomial
 coefficient $\binom{a}{b}$ to all integers $a$, $b$ by setting it to $0$ when $a < 0$ or $b < 0$.
 Under this convention $\binom{-1}{0} = 0$.
 

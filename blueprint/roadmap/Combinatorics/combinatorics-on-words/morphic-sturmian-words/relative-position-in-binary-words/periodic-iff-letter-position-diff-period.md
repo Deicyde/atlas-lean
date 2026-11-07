@@ -1,6 +1,6 @@
 # Periodicity of a word and of the gaps between occurrences of its letters
 
-**Periodicity of a word and of the gaps between occurrences of its letters.** Let
+Let
 $w = w_0 w_1 w_2 \cdots$ be an infinite binary word over $\{a, b\}$ that starts with $a$ and in
 which both letters occur infinitely often. Let $p_\alpha(n)$ be the position (counted from $0$)
 of the $n$-th occurrence of the letter $\alpha$ in $w$, and $\Delta p_\alpha(n) =

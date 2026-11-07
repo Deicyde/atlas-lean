@@ -1,6 +1,6 @@
 # Inertness is decidable in free groups of finite rank (Kourovka Problem 19.104)
 
-**Inertness is decidable in free groups of finite rank (Kourovka Problem 19.104).** For every
+For every
 natural number $n$, let $F_n$ be the free group on generators $x_0, \dots, x_{n-1}$, and give a
 finitely generated subgroup of $F_n$ by a finite list of generating words in the letters
 $x_i^{\pm 1}$. Then there is an algorithm deciding, for such a list, whether the subgroup $H$ it

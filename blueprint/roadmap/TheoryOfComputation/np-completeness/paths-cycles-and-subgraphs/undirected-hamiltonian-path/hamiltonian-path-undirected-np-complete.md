@@ -1,6 +1,6 @@
 # HAMILTONIAN PATH (UNDIRECTED) is NP-complete
 
-**HAMILTONIAN PATH (UNDIRECTED) is NP-complete.** The decision problem HAMILTONIAN PATH
+The decision problem HAMILTONIAN PATH
 (UNDIRECTED) belongs to NP, and every decision problem in NP reduces to it by a polynomial-time
 many-one reduction.
 

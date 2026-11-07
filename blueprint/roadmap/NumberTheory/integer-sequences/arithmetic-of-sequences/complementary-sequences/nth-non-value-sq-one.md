@@ -1,6 +1,6 @@
 # The first non-square
 
-**The first non-square.** The smallest positive integer that is not the square of a positive
+The smallest positive integer that is not the square of a positive
 integer is $2$; that is, the first non-value of $m \mapsto m^2$ is $2$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Tefera–Zeleke identity with binomial quotients
 
-**Tefera–Zeleke identity with binomial quotients.** Let $n$ and $j$ be natural numbers, let
+Let $n$ and $j$ be natural numbers, let
 $N = n + 2j + 1$, and let $w(m) = (4^m + 2^m)/2$ be the weight in Knuth's old sum. Then, in the
 rational numbers,
 

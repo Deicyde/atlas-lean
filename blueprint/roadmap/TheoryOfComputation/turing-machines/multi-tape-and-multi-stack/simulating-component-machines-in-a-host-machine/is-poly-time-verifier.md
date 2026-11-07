@@ -1,6 +1,6 @@
 # Verifier host, canonical form
 
-**Verifier host, canonical form.** Let $c$ be a component machine with distinct stacks $c_X$
+Let $c$ be a component machine with distinct stacks $c_X$
 and $c_W$ and labels $\mathit{start}$, $\mathit{yes}$ and $\mathit{no}$, where
 $\mathit{yes} \ne \mathit{no}$ and the statements at $\mathit{yes}$ and $\mathit{no}$ are the
 halting statement. Let $g_X$ and $g_W$ map bits to symbols of $c_X$ and $c_W$, let $f$ assign a

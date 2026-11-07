@@ -1,6 +1,6 @@
 # The first block
 
-**The first block.** For every $m \ge 1$, the first block $B_1^{(m)}$ of the $m$th order
+For every $m \ge 1$, the first block $B_1^{(m)}$ of the $m$th order
 Gijswijt sequence is the one-term string $m$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Renaming target terms
 
-**Renaming target terms.** For $r : \mathbb{N} \to \mathbb{N}$, the renaming $t[r]$ of a target
+For $r : \mathbb{N} \to \mathbb{N}$, the renaming $t[r]$ of a target
 term $t$ replaces each variable $i$ by $r(i)$, leaves code $\mathsf{code}\,b$ unchanged (its body
 $b$ is not renamed), fixes $\mathsf{unit}$, commutes with application, pairing and the two
 projections, and sends $\mathsf{let}\ e\ \mathsf{in}\ b$ to

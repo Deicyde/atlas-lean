@@ -1,6 +1,6 @@
 # Associativity of PCF context composition
 
-**Associativity of PCF context composition.** For one-hole contexts $C$ and $D$ such that the
+For one-hole contexts $C$ and $D$ such that the
 hole of $C$ takes terms of the type and typing context that $D$ produces, write $C \circ D$ for
 the context obtained from $C$ by replacing its hole by $D$. For PCF one-hole contexts $C_1$, $C_2$
 and $C_3$ such that the hole of $C_1$ takes terms of the type and typing context that $C_2$

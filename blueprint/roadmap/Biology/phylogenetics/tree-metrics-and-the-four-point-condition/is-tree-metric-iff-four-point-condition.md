@@ -1,6 +1,6 @@
 # Buneman's four-point theorem
 
-**Buneman's four-point theorem.** A symmetric dissimilarity on a finite set that vanishes on
+A symmetric dissimilarity on a finite set that vanishes on
 the diagonal is a tree metric if and only if it satisfies the four-point condition.
 
 ## Sources

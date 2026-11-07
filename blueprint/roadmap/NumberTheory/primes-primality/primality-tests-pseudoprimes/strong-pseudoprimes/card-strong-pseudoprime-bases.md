@@ -1,6 +1,6 @@
 # Monier's formula for the number of strong pseudoprime bases
 
-**Monier's formula for the number of strong pseudoprime bases.** Let $n$ be an odd composite
+Let $n$ be an odd composite
 natural number, let $r$ be the number of distinct prime divisors of $n$, and let $v$ be the least
 of the $2$-adic valuations of $p - 1$ over the prime divisors $p$ of $n$. Write $d$ for the odd
 part of $n - 1$ and $d_p$ for the odd part of $p - 1$. Then the number of integers $b$ with

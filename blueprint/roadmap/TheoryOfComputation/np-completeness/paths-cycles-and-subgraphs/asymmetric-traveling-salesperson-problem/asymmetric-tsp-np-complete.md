@@ -1,6 +1,6 @@
 # TRAVELING SALESPERSON (ASYMMETRIC) is NP-complete
 
-**TRAVELING SALESPERSON (ASYMMETRIC) is NP-complete.** The asymmetric traveling salesperson
+The asymmetric traveling salesperson
 decision problem belongs to NP, and every decision problem in NP reduces to it by a
 polynomial-time many-one reduction.
 

@@ -1,6 +1,6 @@
 # Alternating lists of equal length
 
-**Alternating lists of equal length.** Let $r$ be a binary relation on a type $\alpha$ and
+Let $r$ be a binary relation on a type $\alpha$ and
 let $n \ge 0$. A list $(a_1, \dots, a_n)$ alternates with a list $(b_1, \dots, b_n)$ with
 respect to $r$ when
 $a_1 \mathrel{r} b_1 \mathrel{r} a_2 \mathrel{r} \cdots \mathrel{r} a_n \mathrel{r} b_n$,

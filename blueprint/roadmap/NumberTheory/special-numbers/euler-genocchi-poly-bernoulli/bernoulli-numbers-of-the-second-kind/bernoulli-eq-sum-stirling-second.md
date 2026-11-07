@@ -1,6 +1,6 @@
 # Bernoulli numbers via Stirling numbers of the second kind
 
-**Bernoulli numbers via Stirling numbers of the second kind.** Let $B_m$ be the Bernoulli
+Let $B_m$ be the Bernoulli
 numbers (with $B_1 = -1/2$) and $S(m, j)$ the Stirling numbers of the second kind. For every
 natural number $n$,
 

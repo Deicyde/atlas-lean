@@ -1,6 +1,6 @@
 # Ramanujan's closed form for $\int_0^x du/(1 + u^6)$ (Chapter 8, Entry 14(vi))
 
-**Ramanujan's closed form for $\int_0^x du/(1 + u^6)$ (Chapter 8, Entry 14(vi)).** For every
+For every
 real number $x$, the function $u \mapsto 1/(1 + u^6)$ is integrable on the interval between $0$
 and $x$, $1 + \sqrt3\,x + x^2 > 0$, $1 - \sqrt3\,x + x^2 > 0$, and
 

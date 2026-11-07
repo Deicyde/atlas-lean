@@ -1,6 +1,6 @@
 # Intended languages of the substitution grammar
 
-**Intended languages of the substitution grammar.** Let $g$ be a context-free grammar over
+Let $g$ be a context-free grammar over
 $T$ with nonterminals $N_g$, let $e$ assign to each letter $a \in T$ an encoded grammar $e(a)$
 over $T'$, and let $s$ assign to each letter $a \in T$ a language $s(a)$ over $T'$. Each element
 of $N_g \sqcup (\mathbb{N} \times \mathbb{N})$, the nonterminals of the substitution grammar, is

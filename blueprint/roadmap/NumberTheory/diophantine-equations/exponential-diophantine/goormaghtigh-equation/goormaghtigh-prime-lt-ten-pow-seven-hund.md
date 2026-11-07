@@ -1,6 +1,6 @@
 # No Goormaghtigh primes below $10^{700}$ besides $31$ and $8191$
 
-**No Goormaghtigh primes below $10^{700}$ besides $31$ and $8191$.** Let $p$ be a prime with
+Let $p$ be a prime with
 $p < 10^{700}$, and let $x, y, m, n$ be natural numbers with $2 \le x < y$ and $n \ge 3$ such that
 
 $$p = \sum_{i=0}^{m-1} x^i = \sum_{i=0}^{n-1} y^i,$$

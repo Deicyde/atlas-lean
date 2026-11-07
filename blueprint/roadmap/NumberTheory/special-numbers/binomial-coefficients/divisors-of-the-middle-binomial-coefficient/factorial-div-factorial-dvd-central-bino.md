@@ -1,6 +1,6 @@
 # Products of consecutive integers dividing the middle binomial coefficient
 
-**Products of consecutive integers dividing the middle binomial coefficient.** Let $\eta$ be
+Let $\eta$ be
 a real number with $\eta < 1 / \log 4$. The set of natural numbers $m$ such that
 $(m+k)!/m! = (m+1)(m+2) \cdots (m+k)$ divides $\binom{2m}{m}$ for every integer $k$ with
 $1 \le k \le \eta \log m$ has natural density $1$.

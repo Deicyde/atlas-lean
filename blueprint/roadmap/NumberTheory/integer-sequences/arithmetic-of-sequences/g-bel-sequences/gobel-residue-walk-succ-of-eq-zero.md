@@ -1,6 +1,6 @@
 # The residue walk stays at $0$
 
-**The residue walk stays at $0$.** Let $p$, $l$ and $n$ be natural numbers with $n \ge 1$,
+Let $p$, $l$ and $n$ be natural numbers with $n \ge 1$,
 and write $\tilde g_l$ for the residue walk of $p$ starting at $l$. If $\tilde g_l(n) = 0$, then
 $\tilde g_l(n+1) = 0$.
 

@@ -1,6 +1,6 @@
 # Eventual log-concavity of hyper $p$-Fibonacci and hyper $p$-Lucas numbers
 
-**Eventual log-concavity of hyper $p$-Fibonacci and hyper $p$-Lucas numbers.** Let
+Let
 $p \ge 1$ be an integer and $r \ge 1$ a natural number, and let $F_{p,n}^{(r)}$ and
 $L_{p,n}^{(r)}$ be the generalized hyper-Fibonacci numbers $W_{p,n}^{(r)}$ with initial values
 $(a, b) = (0, 1)$ and $(a, b) = (2, p)$ respectively (the hyper $p$-Fibonacci and hyper

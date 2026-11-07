@@ -1,6 +1,6 @@
 # The one-block partition has genus zero
 
-**The one-block partition has genus zero.** For every natural number $n$, the genus of the
+For every natural number $n$, the genus of the
 cyclic permutation $i \mapsto i + 1 \pmod n$ of $\{0, \dots, n-1\}$ is $0$.
 
 For $n \ge 1$ its only cycle is all of $\{0, \dots, n-1\}$, so this says that the partition with a

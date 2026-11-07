@@ -1,6 +1,6 @@
 # Explicit lower bound in Mandl's inequality
 
-**Explicit lower bound in Mandl's inequality.** Let $p_k$ denote the $k$-th prime, so that
+Let $p_k$ denote the $k$-th prime, so that
 $p_1 = 2$. For every integer $n \ge 4605081012945$, put $\ell = \log n$, $L = \log p_n$,
 $M(n) = \frac{n p_n}{2} - \sum_{k=1}^{n} p_k$ and
 

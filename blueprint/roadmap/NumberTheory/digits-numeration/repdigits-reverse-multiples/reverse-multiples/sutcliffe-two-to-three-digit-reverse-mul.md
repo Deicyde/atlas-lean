@@ -1,6 +1,6 @@
 # Sutcliffe's theorem on two- and three-digit reverse multiples
 
-**Sutcliffe's theorem on two- and three-digit reverse multiples.** Let $g$ and $k$ be
+Let $g$ and $k$ be
 integers with $2 \le k < g$, and let $a$ and $b$ be base-$g$ digits, $0 \le a, b < g$, with
 $a \ne 0$, such that $(a\,b)_g$ is a $(g, k)$ reverse multiple, that is,
 $k (a g + b) = b g + a$. Then $a + b < g$, so $a + b$ is a base-$g$ digit, and

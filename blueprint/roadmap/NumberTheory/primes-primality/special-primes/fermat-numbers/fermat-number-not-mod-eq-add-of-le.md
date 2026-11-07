@@ -1,6 +1,6 @@
 # Non-congruence of Fermat numbers passes to smaller indices
 
-**Non-congruence of Fermat numbers passes to smaller indices.** Write $F_n = 2^{2^n} + 1$ for
+Write $F_n = 2^{2^n} + 1$ for
 the $n$-th Fermat number. Let $m$ be a natural number and let $i \le j$. If
 $F_j \not\equiv F_{j+t} \pmod{m}$ for every $t \ge 1$, then $F_i \not\equiv F_{i+t} \pmod{m}$
 for every $t \ge 1$.

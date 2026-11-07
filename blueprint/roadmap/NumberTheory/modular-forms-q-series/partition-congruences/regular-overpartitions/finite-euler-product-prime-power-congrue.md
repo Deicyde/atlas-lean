@@ -1,6 +1,6 @@
 # Prime-power congruence for truncated Euler products
 
-**Prime-power congruence for truncated Euler products.** Let $s$ and $t$ be positive integers,
+Let $s$ and $t$ be positive integers,
 let $p$ be a prime and let $N$ be a natural number. Then every coefficient of the polynomial
 
 $$\Big(\prod_{m=1}^{N} (1 - X^{sm})\Big)^{p^t} - \Big(\prod_{m=1}^{N} (1 - X^{spm})\Big)^{p^{t-1}}$$

@@ -1,6 +1,6 @@
 # Duality of multi-poly-Bernoulli-star numbers
 
-**Duality of multi-poly-Bernoulli-star numbers.** This duality is due to Imatomi. Let $k$
+This duality is due to Imatomi. Let $k$
 be an index (a composition of a natural number $m$), let $k^\vee$ be its Hoffman dual, and let
 $\mathrm{Li}^\star_k$ be the non-strict multiple polylogarithm. Let $F, G \in \mathbb{R}[[t]]$
 satisfy $(e^t - 1) F = \mathrm{Li}^\star_k(1 - e^{-t})$ and

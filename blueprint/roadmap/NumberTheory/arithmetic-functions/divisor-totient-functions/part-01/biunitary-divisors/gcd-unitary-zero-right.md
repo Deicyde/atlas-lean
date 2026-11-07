@@ -1,6 +1,6 @@
 # Greatest common unitary divisor with zero on the right
 
-**Greatest common unitary divisor with zero on the right.** For every natural number $a$,
+For every natural number $a$,
 the greatest common unitary divisor satisfies $\gcd_1(a, 0) = 0$, since $0$ has no unitary
 divisors.
 

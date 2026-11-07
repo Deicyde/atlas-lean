@@ -1,6 +1,6 @@
 # The EM objective of an isotropic Gaussian mixture splits by component
 
-**The EM objective of an isotropic Gaussian mixture splits by component.** Let
+Let
 $x_1, \dots, x_N$ be points of $\mathbb{R}^d$, and let $\theta'$ and $\theta$ be valid parameters
 of a $K$-component isotropic Gaussian mixture, where $\theta'$ has weights $\pi_k'$, means
 $\mu_k'$ and variances $v_k'$. Then the EM objective of the mixture's joint density satisfies

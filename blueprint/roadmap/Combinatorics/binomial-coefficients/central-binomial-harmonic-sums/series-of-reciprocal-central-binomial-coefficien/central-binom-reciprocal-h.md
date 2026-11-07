@@ -1,6 +1,6 @@
 # Closed form of the reciprocal central binomial series
 
-**Closed form of the reciprocal central binomial series.** For every real number $x$, let
+For every real number $x$, let
 
 $$
 H(x) = \frac{4\sqrt{x}\,\arcsin(\sqrt{x}/2)}{(4 - x)\sqrt{4 - x}} + \frac{4}{4 - x}.

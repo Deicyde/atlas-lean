@@ -1,6 +1,6 @@
 # Successor in an x-fast trie
 
-**Successor in an x-fast trie.** For an x-fast trie $t$ over $w$-bit keys and a key
+For an x-fast trie $t$ over $w$-bit keys and a key
 $x \in \{0, \dots, 2^w - 1\}$, the successor of $x$ in $t$ is the least stored key of $t$ that is
 greater than $x$ when some stored key is greater than $x$; otherwise $x$ has no successor in $t$.
 

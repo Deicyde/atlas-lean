@@ -1,6 +1,6 @@
 # Larsson's set $R_3$
 
-**Larsson's set $R_3$.** Larsson's set $R_3 \subseteq \mathbb{N} \times \mathbb{N}$
+Larsson's set $R_3 \subseteq \mathbb{N} \times \mathbb{N}$
 consists of $(0, 0)$ together with the pairs $(n, 2n + 1)$, $(2n + 1, n)$, $(n, 2n + 2)$ and
 $(2n + 2, n)$ for all $n \ge 0$.
 

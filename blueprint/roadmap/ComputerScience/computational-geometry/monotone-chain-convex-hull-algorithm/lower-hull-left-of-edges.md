@@ -1,6 +1,6 @@
 # Every input point lies on or left of each lower-chain edge
 
-**Every input point lies on or left of each lower-chain edge.** Let $\Bbbk$ be a linearly
+Let $\Bbbk$ be a linearly
 ordered field and let $p_1, \dots, p_n$ be points of $\Bbbk^2$ that are strictly increasing in
 lexicographic $(x, y)$ order, and write $\operatorname{cross}(u, v) = u_x v_y - v_x u_y$. For
 every $s \in \{p_1, \dots, p_n\}$ and every pair of consecutive vertices $a, b$ of the lower chain

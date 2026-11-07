@@ -1,6 +1,6 @@
 # Power identity at the roots of an arithmetic-progression polynomial
 
-**Power identity at the roots of an arithmetic-progression polynomial.** Let $m$ and $a$
+Let $m$ and $a$
 be natural numbers, let $d$ be a positive integer, and let
 $A_m(x) = a x^m + (a + d) x^{m-1} + \cdots + (a + md)$, that is,
 $A_m(x) = \sum_{i=0}^{m} (a + id) x^{m-i} \in \mathbb{Z}[x]$. If $z \in \mathbb{C}$ is a root of

@@ -1,6 +1,6 @@
 # First moment of bubble sizes in linear chord diagrams
 
-**First moment of bubble sizes in linear chord diagrams.** For every natural number
+For every natural number
 $n \ge 2$, let $B_{n,p}$ be the total number of bubbles of size $p$ over all linear chord diagrams
 on $2n$ vertices. Then
 

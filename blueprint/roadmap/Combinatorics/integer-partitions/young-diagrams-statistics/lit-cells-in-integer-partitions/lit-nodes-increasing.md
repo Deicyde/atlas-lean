@@ -1,6 +1,6 @@
 # Lit nodes of a partition
 
-**Lit nodes of a partition.** The number of lit nodes of a partition $p$, drawn as a weakly
+The number of lit nodes of a partition $p$, drawn as a weakly
 increasing Ferrers diagram of nodes, is defined as the largest part of $p$ plus the number of
 parts of $p$ minus one; for the empty partition it is $0$.
 

@@ -1,6 +1,6 @@
 # Ulam words with a block of four ones
 
-**Ulam words with a block of four ones.** For natural numbers $a$ and $b$ with $a + b \ge 1$,
+For natural numbers $a$ and $b$ with $a + b \ge 1$,
 the binary word $0^a 1111 0^b$ ($a$ zeros, then four ones, then $b$ zeros) is an Ulam word if
 and only if $a + b \equiv 1 \pmod 4$.
 

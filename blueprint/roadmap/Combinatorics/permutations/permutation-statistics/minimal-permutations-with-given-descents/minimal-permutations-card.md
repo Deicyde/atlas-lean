@@ -1,6 +1,6 @@
 # Minimal permutations of length two more than their number of descents
 
-**Minimal permutations of length two more than their number of descents.** For every natural
+For every natural
 number $d$, the number of permutations $\sigma$ of $\{0, 1, \dots, d + 1\}$ such that $\sigma$ has
 exactly $d$ descents (positions $0 \le i \le d$ with $\sigma(i) > \sigma(i + 1)$) and, for every
 position $j$, deleting the entry at position $j$ leaves a sequence of $d + 1$ entries with fewer

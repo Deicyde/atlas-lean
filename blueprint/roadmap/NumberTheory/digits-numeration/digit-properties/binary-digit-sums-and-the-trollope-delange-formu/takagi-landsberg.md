@@ -1,6 +1,6 @@
 # The Takagi–Landsberg function
 
-**The Takagi–Landsberg function.** For a real or complex parameter $a$ and a real number $x$,
+For a real or complex parameter $a$ and a real number $x$,
 let $\tau(y)$ denote the distance from a real number $y$ to the nearest integer. The
 Takagi–Landsberg function is $\mathcal{T}_a(x) = \sum_{n \ge 0} a^n \tau(2^n x)$, where the
 value is taken to be $0$ when the series does not converge absolutely. The series converges for

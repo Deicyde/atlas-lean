@@ -1,6 +1,6 @@
 # Small values of the three-step pattern denominators
 
-**Small values of the three-step pattern denominators.** For $\beta = 1$ and $\omega_n = 1$
+For $\beta = 1$ and $\omega_n = 1$
 for all $n$, the convergent denominators $q_0, \dots, q_7$ of the three-step pattern are
 $1, 1, 2, 3, 8, 11, 19, 220$.
 

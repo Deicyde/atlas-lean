@@ -1,6 +1,6 @@
 # Increment bound for the d-dimensional continuous Turán number
 
-**Increment bound for the d-dimensional continuous Turán number.** Let $d \ge 2$ be a
+Let $d \ge 2$ be a
 natural number, let $P \subseteq \mathbb{R}^d$, and let $n, \varepsilon$ be real numbers with
 $n > 0$ and $0 < \varepsilon < n$. Then the $d$-dimensional continuous Turán number
 $\mathrm{opx}$ satisfies $\mathrm{opx}(n, P, d) \le \mathrm{opx}(n + \varepsilon, P, d)$ and

@@ -1,6 +1,6 @@
 # Differentiability of Campbell's interpolation
 
-**Differentiability of Campbell's interpolation.** Campbell's interpolation $f$ is
+Campbell's interpolation $f$ is
 differentiable at every real $x > 0$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Generating function for lit nodes of weakly increasing diagrams
 
-**Generating function for lit nodes of weakly increasing diagrams.** Let
+Let
 $P(q) = \sum_{n \ge 0} p(n) q^n$ be the partition generating function, and let
 $N(q) \in \mathbb{Z}[[q]]$ be the power series whose coefficient of $q^n$ is the total number of
 lit nodes over all partitions of $n$ drawn as weakly increasing Ferrers diagrams of nodes. Then

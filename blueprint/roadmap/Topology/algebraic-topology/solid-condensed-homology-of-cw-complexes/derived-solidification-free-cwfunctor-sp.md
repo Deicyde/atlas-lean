@@ -1,6 +1,6 @@
 # Natural isomorphism specifying derived solidification on CW complexes
 
-**Natural isomorphism specifying derived solidification on CW complexes.** A natural
+A natural
 isomorphism between the derived solidification functor on CW complexes and the composite functor
 that sends a topological space $X$ admitting a CW complex structure to the free light condensed
 abelian group $\mathbb{Z}[X]$, views it as a complex concentrated in degree $0$ in the derived

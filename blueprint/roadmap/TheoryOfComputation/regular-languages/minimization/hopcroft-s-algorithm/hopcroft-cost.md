@@ -1,6 +1,6 @@
 # Predecessor cost of a Hopcroft splitter trace
 
-**Predecessor cost of a Hopcroft splitter trace.** The predecessor cost of a splitter trace: for each popped splitter `(C, a)`, one
+The predecessor cost of a splitter trace: for each popped splitter `(C, a)`, one
 predecessor visit per state in the preimage `preimage M C a`, plus `1` per-splitter
 overhead. This is the quantity the total-work bound, not proved here, constrains
 to `O(|Σ| n log n)`. Charging splitter size `C.card` instead

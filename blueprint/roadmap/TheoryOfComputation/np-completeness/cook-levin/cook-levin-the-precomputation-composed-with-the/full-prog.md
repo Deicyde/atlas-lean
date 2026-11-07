@@ -1,6 +1,6 @@
 # The full program on the real generators
 
-**The full program on the real generators.** For an encoding $E$ of a machine $M$, a list
+For an encoding $E$ of a machine $M$, a list
 $Y$ of symbols of the input stack alphabet of $M$, a symbol $a$ of the output stack alphabet of
 $M$, a map $\iota$ from the raw symbols $\mathrm{Fin}\,r$ to input stack symbols of $M$, an input
 stack symbol $\sigma$ of $M$ (the separator), a polynomial $k$ with natural-number coefficients

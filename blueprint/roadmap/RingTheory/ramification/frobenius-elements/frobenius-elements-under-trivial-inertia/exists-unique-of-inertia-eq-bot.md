@@ -1,6 +1,6 @@
 # Existence and uniqueness of the Frobenius element under trivial inertia
 
-**Existence and uniqueness of the Frobenius element under trivial inertia.** Let $R$ and $S$
+Let $R$ and $S$
 be commutative rings with $S$ an $R$-algebra, and let a finite group $G$ act on $S$ by
 $R$-algebra automorphisms such that every element of $S$ fixed by $G$ is the image of an element
 of $R$. Let $Q$ be a prime ideal of $S$ with $S/Q$ finite, write $P$ for the preimage of $Q$ in

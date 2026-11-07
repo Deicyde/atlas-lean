@@ -1,6 +1,6 @@
 # Fortunate numbers
 
-**Fortunate numbers.** Write $q\#$ for the primorial of a natural number $q$, the product of
+Write $q\#$ for the primorial of a natural number $q$, the product of
 all primes $p \le q$. For natural numbers $q$ and $m$, $m$ is the Fortunate number of $q$ when
 $q$ is prime, $m > 1$, $q\# + m$ is prime, and $q\# + k$ is not prime for any $k$ with
 $1 < k < m$.

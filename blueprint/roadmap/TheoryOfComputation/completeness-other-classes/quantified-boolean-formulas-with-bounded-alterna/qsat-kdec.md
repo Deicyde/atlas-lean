@@ -1,6 +1,6 @@
 # The decision problem $\mathrm{QSAT}_k$
 
-**The decision problem $\mathrm{QSAT}_k$.** For a natural number $k$, $\mathrm{QSAT}_k$ accepts
+For a natural number $k$, $\mathrm{QSAT}_k$ accepts
 a bitstring $x$ exactly when $x$ decodes, under the standard bitstring encoding, to a pair
 $(P, \varphi)$ of a quantifier prefix $P = (q_1, v_1), \dots, (q_n, v_n)$, where each $q_i$ is
 $\exists$ (true) or $\forall$ (false) and each $v_i$ is a natural number, and a matrix circuit

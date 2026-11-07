@@ -1,6 +1,6 @@
 # Alternating chain to an unmatched left vertex
 
-**Alternating chain to an unmatched left vertex.** In a bipartite graph, let each right vertex
+In a bipartite graph, let each right vertex
 have at most one partner, a left vertex (the partners need not form a matching), and let $z$ be a
 right vertex. A list $Q$ of pairs (left vertex, right vertex) is an alternating chain from $z$
 when its first pair has right vertex $z$, each of its pairs $(i, j)$ is an edge with $i$ not the

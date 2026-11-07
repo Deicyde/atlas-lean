@@ -1,6 +1,6 @@
 # $p$-regular orbits for every prime do not force a regular orbit
 
-**$p$-regular orbits for every prime do not force a regular orbit.** There exist a finite field $F$,
+There exist a finite field $F$,
 a nonzero finite-dimensional vector space $V$ over $F$ and a finite group $G$ acting faithfully on
 $V$ by $F$-linear maps such that the only $G$-invariant subspaces of $V$ are $0$ and $V$ and, for
 every prime $p$, some vector of $V$ has a stabilizer in $G$ of order prime to $p$, but no vector of

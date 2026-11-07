@@ -1,6 +1,6 @@
 # Weak ascent Wilf equivalence, class 99
 
-**Weak ascent Wilf equivalence, class 99.** Write $\mathrm{WA}_n(P)$ for the set of weak
+Write $\mathrm{WA}_n(P)$ for the set of weak
 ascent sequences of length $n$ avoiding every pattern in $P$, with patterns written as words (for
 example $011$). The pattern sets $\{011, 100, 102, 201\}$ and $\{011, 100, 120, 201\}$ are WA-Wilf
 equivalent: for every $n \ge 0$,

@@ -1,6 +1,6 @@
 # Number of unitary divisors
 
-**Number of unitary divisors.** A positive integer $n$ with $m$ distinct prime factors has
+A positive integer $n$ with $m$ distinct prime factors has
 exactly $2^m$ unitary divisors.
 
 ## Sources

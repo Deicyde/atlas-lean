@@ -1,6 +1,6 @@
 # The third Schur number
 
-**The third Schur number.** The Schur number $S(3)$ equals $13$.
+The Schur number $S(3)$ equals $13$.
 
 ## Sources
 

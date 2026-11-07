@@ -1,6 +1,6 @@
 # Eventual vanishing of the pseudo-greedy gaps of a rational number
 
-**Eventual vanishing of the pseudo-greedy gaps of a rational number.** Let $r$ be a positive
+Let $r$ be a positive
 rational number and let $(\varepsilon_n)_{n \ge 0}$ be the gap sequence of the pseudo-greedy
 expansion of $r$. Suppose that $\liminf_n \varepsilon_n \prod_{k\lt n} (1 - \varepsilon_k) \ge 0$,
 that is, for every $\delta > 0$ we have $\varepsilon_n \prod_{k\lt n} (1 - \varepsilon_k) \ge -\delta$

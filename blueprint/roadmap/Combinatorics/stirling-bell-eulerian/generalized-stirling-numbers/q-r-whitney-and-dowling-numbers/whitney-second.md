@@ -1,6 +1,6 @@
 # (q, r)-Whitney numbers of the second kind
 
-**(q, r)-Whitney numbers of the second kind.** For complex numbers $m$, $r$, $q$, the
+For complex numbers $m$, $r$, $q$, the
 $(q, r)$-Whitney numbers of the second kind $W_{m,r,q}(n, k)$, indexed by natural numbers $n$
 and $k$, are defined by $W_{m,r,q}(0, 0) = 1$, $W_{m,r,q}(0, k + 1) = 0$,
 $W_{m,r,q}(n + 1, 0) = r \, W_{m,r,q}(n, 0)$ and

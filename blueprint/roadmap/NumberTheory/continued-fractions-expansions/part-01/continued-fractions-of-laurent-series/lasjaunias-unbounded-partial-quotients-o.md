@@ -1,6 +1,6 @@
 # Small roots of a hyperquadratic equation have unbounded partial quotients
 
-**Small roots of a hyperquadratic equation have unbounded partial quotients.** Let
+Let
 $\mathbb{F}_q$ be a finite field, let $\ell \ge 1$ and let $D \in \mathbb{F}_q[x]$ with
 $D(0) \ne 0$. Write $|y| = |x|^{\deg y}$ for the absolute value on $\mathbb{F}_q((x^{-1}))$, where
 $\deg y$ is the largest exponent of $x$ occurring in $y \ne 0$. If

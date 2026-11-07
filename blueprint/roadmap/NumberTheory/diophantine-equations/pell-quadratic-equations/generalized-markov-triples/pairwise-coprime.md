@@ -1,6 +1,6 @@
 # Generalized Markov triples are pairwise coprime
 
-**Generalized Markov triples are pairwise coprime.** If $(a, b, c)$ is a $k$-generalized
+If $(a, b, c)$ is a $k$-generalized
 Markov triple, then $\gcd(a, b) = \gcd(b, c) = \gcd(a, c) = 1$.
 
 ## Sources
