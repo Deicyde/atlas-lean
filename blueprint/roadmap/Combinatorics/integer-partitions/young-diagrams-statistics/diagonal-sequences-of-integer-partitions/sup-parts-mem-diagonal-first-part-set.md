@@ -1,6 +1,6 @@
 # The largest part of a partition with given diagonal sequence
 
-**The largest part of a partition with given diagonal sequence.** Let $\alpha$ be a partition
+Let $\alpha$ be a partition
 of $n$, let $q$ and $s_1, s_2, \dots$ be natural numbers, and suppose the diagonal sequence of
 $\alpha$ is $(1, 2, \dots, q, q^{(s_q)}, (q-1)^{(s_{q-1})}, \dots, 1^{(s_1)})$ followed by zeros,
 where $v^{(m)}$ denotes $m$ copies of $v$. Then the largest part of $\alpha$ (taken to be $0$ if

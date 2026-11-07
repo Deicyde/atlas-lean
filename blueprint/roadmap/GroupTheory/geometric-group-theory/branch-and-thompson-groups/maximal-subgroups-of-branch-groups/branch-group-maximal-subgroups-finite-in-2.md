@@ -1,6 +1,6 @@
 # A finitely generated branch group with a maximal subgroup of infinite index
 
-**A finitely generated branch group with a maximal subgroup of infinite index.** The
+The
 Kourovka 15.15 statement that every maximal subgroup of a finitely generated branch group has
 finite index is false: some finitely generated branch group has a maximal subgroup of infinite
 index.

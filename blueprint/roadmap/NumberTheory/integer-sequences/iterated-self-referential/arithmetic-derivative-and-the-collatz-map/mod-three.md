@@ -1,6 +1,6 @@
 # Compatible semiprimes modulo 3
 
-**Compatible semiprimes modulo 3.** Let $p, q, r, s$ be primes with $2(r + s) = p + q$ and
+Let $p, q, r, s$ be primes with $2(r + s) = p + q$ and
 $2rs = 3pq + 1$, so that the semiprimes $pq$ and $rs$ are compatible. Then
 $pq \equiv rs \equiv 2 \pmod 3$; moreover one of $p, q$ is congruent to $1$ and the other to $2$
 modulo $3$, and likewise one of $r, s$ is congruent to $1$ and the other to $2$ modulo $3$.

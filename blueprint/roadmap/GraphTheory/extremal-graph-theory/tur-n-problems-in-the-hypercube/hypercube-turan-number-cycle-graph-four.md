@@ -1,6 +1,6 @@
 # Four-cycle-free subgraphs of the hypercubes of dimensions one to six
 
-**Four-cycle-free subgraphs of the hypercubes of dimensions one to six.** For a natural
+For a natural
 number $n$, let $Q_n$ be the $n$-dimensional hypercube, let $C_4$ be the cycle on four vertices,
 and let $\mathrm{ex}(Q_n, C_4)$ be the largest number of edges of a subgraph of $Q_n$ that
 contains no copy of $C_4$. Then for $n = 1, 2, 3, 4, 5, 6$ the value of $\mathrm{ex}(Q_n, C_4)$

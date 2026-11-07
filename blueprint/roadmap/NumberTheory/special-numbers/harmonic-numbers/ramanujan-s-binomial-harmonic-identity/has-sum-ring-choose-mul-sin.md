@@ -1,6 +1,6 @@
 # Ramanujan's binomial sine series
 
-**Ramanujan's binomial sine series.** Let $a$, $N$ and $\theta$ be real numbers with
+Let $a$, $N$ and $\theta$ be real numbers with
 $N \ge 0$ and $|\theta| \le \pi / 2$. Then the series
 $\sum_{\nu=0}^{\infty} \binom{N}{\nu} \sin((a + 2\nu)\theta)$ converges unconditionally to
 $2^N (\cos \theta)^N \sin((a + N)\theta)$. Here $\binom{N}{\nu} = N(N-1)\cdots(N-\nu+1)/\nu!$

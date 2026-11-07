@@ -1,6 +1,6 @@
 # Hausdorff–Hildebrandt–Schoenberg moment theorem
 
-**Hausdorff–Hildebrandt–Schoenberg moment theorem.** A real sequence $a$ indexed by
+A real sequence $a$ indexed by
 $\mathbb{N}^d$ is a moment configuration, that is, there are finite measures $\mu$ and $\nu$ on
 $\mathbb{R}^d$ with $a_n = \int_{[0,1]^d} x^n \, d\mu(x) - \int_{[0,1]^d} x^n \, d\nu(x)$ for every
 multi-index $n \in \mathbb{N}^d$, where $x^n = \prod_i x_i^{n_i}$, if and only if $a$ is Hausdorff

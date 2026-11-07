@@ -1,6 +1,6 @@
 # Linear recurrence for INVERT convolution powers in characteristic zero
 
-**Linear recurrence for INVERT convolution powers in characteristic zero.** Let $K$ be a
+Let $K$ be a
 field of characteristic zero and let $(c_m)_{m \ge 0}$ and $(y_n)_{n \ge 0}$ be sequences in $K$
 such that for every $n \ge 0$
 

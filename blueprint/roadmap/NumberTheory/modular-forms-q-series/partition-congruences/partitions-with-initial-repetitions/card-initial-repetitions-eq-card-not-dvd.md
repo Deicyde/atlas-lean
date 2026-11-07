@@ -1,6 +1,6 @@
 # Andrews' theorem on partitions with initial repetitions
 
-**Andrews' theorem on partitions with initial repetitions.** Let $k \ge 1$ and $n \ge 0$ be
+Let $k \ge 1$ and $n \ge 0$ be
 integers. Say that a partition has initial $k$-repetitions if, whenever a part $j$ appears at
 least $k$ times, every integer $i$ with $1 \le i < j$ appears at least $k$ times. Then the number
 of partitions of $n$ with initial $k$-repetitions equals the number of partitions of $n$ into parts

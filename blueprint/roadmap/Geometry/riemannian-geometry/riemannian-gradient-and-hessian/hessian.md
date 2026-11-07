@@ -1,6 +1,6 @@
 # Covariant Hessian
 
-**Covariant Hessian.** Let $M$ be a smooth manifold modelled on a finite-dimensional real
+Let $M$ be a smooth manifold modelled on a finite-dimensional real
 normed space, with a smooth Riemannian metric and its Levi-Civita connection $\nabla$. For
 $f : M \to \mathbb{R}$, a point $x \in M$ and tangent vectors $u, v \in T_xM$, let $V$ be the
 extension of $v$ to a vector field with constant coordinates in the preferred chart at $x$, so

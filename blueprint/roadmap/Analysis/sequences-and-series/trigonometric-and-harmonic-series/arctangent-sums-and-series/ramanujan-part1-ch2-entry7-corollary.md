@@ -1,6 +1,6 @@
 # Ramanujan's infinite arctangent series (corollary to Entry 7)
 
-**Ramanujan's infinite arctangent series (corollary to Entry 7).** For every real number
+For every real number
 $n > 0$, the series
 
 $$\sum_{k=0}^{\infty} \arctan \frac{2}{(n + 2k + 1)^2}$$

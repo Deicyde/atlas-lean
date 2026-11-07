@@ -1,6 +1,6 @@
 # Load step of the CLIQUE verifier
 
-**Load step of the CLIQUE verifier.** The statement run at the load label. If the counter
+The statement run at the load label. If the counter
 $N$ is nonempty, it takes a unit off $N$, rejects if the witness stack $W$ is empty, and
 otherwise pops the top of $W$ and pushes its bit (false for a non-bit symbol) onto the vertex
 stack $V$; if that bit is set it also takes a unit off the counter $C$, rejecting if $C$ is

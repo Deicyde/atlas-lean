@@ -1,6 +1,6 @@
 # Integral sums of $\cos qkx - \cos qx$ for odd $q$ and odd $k$
 
-**Integral sums of $\cos qkx - \cos qx$ for odd $q$ and odd $k$.** Let $q$ be an odd natural
+Let $q$ be an odd natural
 number, and for each natural number $m$ put $k = 2m + 1$. Then, as $m \to \infty$,
 
 $$\sum_{\ell=1}^{m} \int_{2\pi\ell/(k+1)}^{2\pi\ell/(k-1)} \bigl(\cos(qkx) - \cos(qx)\bigr)\,dx

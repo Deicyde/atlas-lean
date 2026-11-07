@@ -1,6 +1,6 @@
 # Tikhomirov's Theorem A: smallest singular value of shifted Bernoulli matrices
 
-**Tikhomirov's Theorem A: smallest singular value of shifted Bernoulli matrices.** Let
+Let
 $0 < p \le 1/2$ and $\varepsilon > 0$, and write $\sigma_{\min}(A)$ for the smallest singular value
 of a real square matrix $A$. There exist a natural number $N > 0$ and a real number $C > 0$ such
 that for every $n \ge N$ the following holds. Let $B$ be a random $n \times n$ real matrix on a

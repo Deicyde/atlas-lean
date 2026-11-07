@@ -1,6 +1,6 @@
 # Single-tape co-recognizable predicates are those with an r.e. complement
 
-**Single-tape co-recognizable predicates are those with an r.e. complement.** Let $\alpha$ be a
+Let $\alpha$ be a
 primcodable type (it has an encoding $\mathrm{encode} : \alpha \to \mathbb{N}$ whose decoding is
 primitive recursive). A predicate $p$ on $\alpha$ is co-recognizable by a single-tape machine if
 and only if its complement $\neg p$ is recursively enumerable, that is, the partial function on

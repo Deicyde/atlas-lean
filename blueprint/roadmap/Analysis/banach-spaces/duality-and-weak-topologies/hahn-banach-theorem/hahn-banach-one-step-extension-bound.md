@@ -1,6 +1,6 @@
 # One-step Hahn–Banach extension
 
-**One-step Hahn–Banach extension.** Let $E$ be a seminormed space over
+Let $E$ be a seminormed space over
 $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $M$ be a subspace of $E$, let $C \ge 0$ be a real
 number, and let $f \colon M \to \mathbb{K}$ be a continuous linear functional with
 $\|f(m)\| \le C\|m\|$ for all $m \in M$. If $x_0 \in E$ does not lie in $M$, then $M$ is strictly

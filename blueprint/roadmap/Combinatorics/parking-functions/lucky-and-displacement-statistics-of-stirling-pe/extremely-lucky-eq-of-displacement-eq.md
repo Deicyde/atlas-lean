@@ -1,6 +1,6 @@
 # Extremely lucky Stirling permutations are determined by their displacements
 
-**Extremely lucky Stirling permutations are determined by their displacements.** Let $w$ and
+Let $w$ and
 $w'$ be Stirling permutations of order $n$, and suppose that $w$ is extremely lucky, that is, its
 set $\mathrm{Lucky}(w)$ of lucky cars has exactly $n$ elements. If every car has the same
 displacement in $w'$ as in $w$ (that is, $\mathrm{dis}(w') = \mathrm{dis}(w)$), then $w' = w$.

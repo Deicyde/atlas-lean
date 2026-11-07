@@ -1,6 +1,6 @@
 # A soluble right-orderable group with insoluble word problem (Kourovka 17.28)
 
-**A soluble right-orderable group with insoluble word problem (Kourovka 17.28).** There exist a
+There exist a
 soluble group $G$ that admits a right order, a natural number $k$ and elements
 $g_0, \dots, g_{k-1}$ generating $G$ such that, for the homomorphism $\varphi$ from the free group
 on $k$ generators to $G$ sending the $i$-th generator to $g_i$, the group $G$ is recursively

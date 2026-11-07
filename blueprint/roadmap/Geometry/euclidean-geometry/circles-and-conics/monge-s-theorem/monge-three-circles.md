@@ -1,6 +1,6 @@
 # Monge's three-circle theorem
 
-**Monge's three-circle theorem.** Let $c_1, c_2, c_3$ be points of the Euclidean plane
+Let $c_1, c_2, c_3$ be points of the Euclidean plane
 $\mathbb{R}^2$ and let $r_1, r_2, r_3$ be pairwise distinct positive real numbers such that the
 closed disks of radius $r_i$ centered at $c_i$ are pairwise disjoint. Then the external homothety
 centers $(r_1 - r_2)^{-1}(r_1 c_2 - r_2 c_1)$, $(r_2 - r_3)^{-1}(r_2 c_3 - r_3 c_2)$ and

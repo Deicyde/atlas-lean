@@ -1,6 +1,6 @@
 # Normalizer of a boosting round
 
-**Normalizer of a boosting round.** For labels $y$, weights $D$ and predictions $h$ on $m$
+For labels $y$, weights $D$ and predictions $h$ on $m$
 training points, let $\varepsilon$ be the weighted training error of $h$ under $D$ and
 $\alpha = \alpha(\varepsilon)$ the hypothesis weight. The normalizer of the round is
 

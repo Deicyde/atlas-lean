@@ -1,6 +1,6 @@
 # Sendov's conjecture holds
 
-**Sendov's conjecture holds.** Sendov's conjecture is true: the Sendov radius is at most $1$.
+Sendov's conjecture is true: the Sendov radius is at most $1$.
 
 Sendov's conjecture was resolved in 2026 by Lech Mazur's computer-assisted proof.
 

@@ -1,6 +1,6 @@
 # The weighted convolution sum at degree zero
 
-**The weighted convolution sum at degree zero.** Let $F$ be a field and let
+Let $F$ be a field and let
 $\gamma, \alpha, \beta$ be functions from $F[T]$ to $\mathbb{C}$, and write $\alpha * \beta$ for
 the monic Dirichlet convolution. The weighted convolution sum $D(\gamma, \alpha, \beta; 0)$, the
 sum of $\gamma(f)\,(\alpha * \beta)(f)$ over the monic $f \in F[T]$ of degree at most $0$, equals

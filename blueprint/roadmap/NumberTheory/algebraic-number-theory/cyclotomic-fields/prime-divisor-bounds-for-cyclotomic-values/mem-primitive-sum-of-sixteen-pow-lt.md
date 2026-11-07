@@ -1,6 +1,6 @@
 # Liao–Li–Pu criterion for primitive element sums
 
-**Liao–Li–Pu criterion for primitive element sums.** Let $q$ and $n$ be coprime natural numbers
+Let $q$ and $n$ be coprime natural numbers
 with $q^n > 2$, and let $\omega$ be the number of distinct prime factors of $q^n - 1$. If
 $16^\omega < q^n$, that is $q^{n/2} > 2^{2\omega}$, then every finite field $L$ with $q^n$ elements
 contains an element $\alpha$ such that both $\alpha$ and $\alpha + \alpha^{-1}$ generate the

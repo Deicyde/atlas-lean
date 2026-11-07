@@ -1,6 +1,6 @@
 # Primitive characters at divisor levels correspond to unit-group characters
 
-**Primitive characters at divisor levels correspond to unit-group characters.** Let $R$ be a
+Let $R$ be a
 commutative monoid with zero and $m \ge 1$ a natural number. This is the bijection from primitive
 inducers of modulus $m$ with values in $R$ to monoid homomorphisms
 $(\mathbb{Z}/m\mathbb{Z})^\times \to R^\times$ that sends a primitive character $\psi$ of level

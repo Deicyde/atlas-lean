@@ -1,6 +1,6 @@
 # Distribution of the canonical mesh-pattern statistic
 
-**Distribution of the canonical mesh-pattern statistic.** Let $2 \le k \le n$ and let $j$ be a
+Let $2 \le k \le n$ and let $j$ be a
 natural number. For a permutation $\sigma$ of $\{1, \dots, n\}$ with positions numbered
 $1, \dots, n$, let $p$ be the position of its largest value, and let $N_k(\sigma)$ be the
 canonical mesh-pattern statistic: the number of positions $i$ such that $\sigma(t) < \sigma(i)$

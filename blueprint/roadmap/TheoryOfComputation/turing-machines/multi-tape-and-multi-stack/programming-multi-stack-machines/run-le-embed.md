@@ -1,6 +1,6 @@
 # Run embedding for bounded runs
 
-**Run embedding for bounded runs.** Let $E$ be a stack embedding with stack renaming $e$, let
+Let $E$ be a stack embedding with stack renaming $e$, let
 $\varphi$ map the labels of a machine $M$ to those of a host machine $M'$, and suppose $M$ embeds
 in $M'$ along $E$ and $\varphi$. Suppose $M$ goes in at most $B$ steps from label $\ell$, state $v$
 and stacks $S$ to label $\ell'$, state $v'$ and stacks $T$, and host stacks $S'$ agree with $S$.

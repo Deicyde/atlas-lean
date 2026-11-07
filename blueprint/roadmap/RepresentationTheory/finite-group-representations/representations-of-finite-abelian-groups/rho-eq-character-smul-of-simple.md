@@ -1,6 +1,6 @@
 # Simple representations of commutative monoids act by scalars
 
-**Simple representations of commutative monoids act by scalars.** Let $k$ be an
+Let $k$ be an
 algebraically closed field, $G$ a monoid with commutative multiplication, and $V$ a simple
 finite-dimensional representation of $G$ over $k$ (a simple object of the category of
 finite-dimensional representations), with action $\rho$ and character

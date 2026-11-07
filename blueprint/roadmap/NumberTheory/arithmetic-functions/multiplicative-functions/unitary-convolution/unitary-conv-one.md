@@ -1,6 +1,6 @@
 # Unitary convolution at $1$
 
-**Unitary convolution at $1$.** Let $R$ be a semiring and let $f$ and $g$ be arithmetic
+Let $R$ be a semiring and let $f$ and $g$ be arithmetic
 functions with values in $R$. Their unitary convolution $f \sqcup g$, defined by
 $(f \sqcup g)(n) = \sum_{d \parallel n} f(d)\, g(n/d)$ over the unitary divisors $d$ of $n$,
 satisfies $(f \sqcup g)(1) = f(1)\, g(1)$.

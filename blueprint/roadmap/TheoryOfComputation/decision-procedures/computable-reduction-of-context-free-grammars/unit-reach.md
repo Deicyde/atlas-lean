@@ -1,6 +1,6 @@
 # Nonterminals reachable by unit productions in an encoded grammar
 
-**Nonterminals reachable by unit productions in an encoded grammar.** For an encoded
+For an encoded
 context-free grammar $g$ and a natural number $A$, let $n$ be the number of distinct nonterminals
 mentioned in $g$ (the start, the left-hand sides, and the nonterminals on right-hand sides). The
 list is obtained from the empty list by applying one round of unit reachability from $A$

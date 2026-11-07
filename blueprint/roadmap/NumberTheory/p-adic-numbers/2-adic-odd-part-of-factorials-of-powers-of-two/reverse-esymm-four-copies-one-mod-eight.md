@@ -1,6 +1,6 @@
 # $\hat\sigma_1$ of four copies of the numbers $1 \bmod 8$ below $2^e$
 
-**$\hat\sigma_1$ of four copies of the numbers $1 \bmod 8$ below $2^e$.** Let $e \ge 3$ and let
+Let $e \ge 3$ and let
 $M_e$ be the multiset of integers containing each natural number $n < 2^e$ with
 $n \equiv 1 \pmod 8$ (that is, $1, 9, \dots, 2^e - 7$) exactly four times, let $N$ be the
 number of elements of $M_e$ counted with multiplicity, and write $\sigma_k$ for the elementary

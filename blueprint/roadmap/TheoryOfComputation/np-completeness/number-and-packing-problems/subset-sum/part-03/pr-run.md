@@ -1,6 +1,6 @@
 # Subset-sum emitter: one row of the pair walk
 
-**Subset-sum emitter: one row of the pair walk.** Stacks are listed top first. Let $a$ be a
+Stacks are listed top first. Let $a$ be a
 bit, $\ell$ a list of symbols, $(m_1, \dots, m_p)$ and $(b_1, \dots, b_p)$ two lists of bits of
 the same length $p$, $y$ a list of symbols, $v$ a Boolean state and $S$ stack contents such that
 $S(R)$ is $\mathrm{val}(m_1), \dots, \mathrm{val}(m_p)$, $S(L)$ is $\mathrm{val}(a)$ followed by

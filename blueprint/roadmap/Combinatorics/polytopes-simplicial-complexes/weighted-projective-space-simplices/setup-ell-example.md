@@ -1,6 +1,6 @@
 # The integer $\ell$ for the weights $(1^7, 3^4, 5^5)$
 
-**The integer $\ell$ for the weights $(1^7, 3^4, 5^5)$.** For the support values
+For the support values
 $r = (1, 3, 5)$ with multiplicities $x = (7, 4, 5)$, that is, for the weight vector
 $q = (1^7, 3^4, 5^5)$, the integer
 $\ell(r, x) = \lfloor (1 + \sum_i x_i r_i) / \operatorname{lcm}(r_1, r_2, r_3) \rfloor$ equals $3$.

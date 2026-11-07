@@ -1,6 +1,6 @@
 # Limiting area between cosine powers via double factorials
 
-**Limiting area between cosine powers via double factorials.** For natural numbers $n$ and
+For natural numbers $n$ and
 $k$, let $A_n(k) = \int_0^\pi |\cos^n x - \cos^n(kx)|\,dx$. As $k \to \infty$ through the natural
 numbers: if $n$ is odd, then
 

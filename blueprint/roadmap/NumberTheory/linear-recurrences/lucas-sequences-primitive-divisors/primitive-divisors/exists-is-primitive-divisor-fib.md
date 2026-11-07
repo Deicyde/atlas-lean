@@ -1,6 +1,6 @@
 # Primitive divisors of Fibonacci numbers
 
-**Primitive divisors of Fibonacci numbers.** Write $F_j$ for the $j$-th Fibonacci number.
+Write $F_j$ for the $j$-th Fibonacci number.
 For every natural number $n \ge 7$ with $n \ne 12$, $F_n$ has a primitive divisor with respect
 to the discriminant $5$: there is a prime $p$ that divides $F_n$ but does not divide
 $5 F_1 F_2 \cdots F_{n-1}$.

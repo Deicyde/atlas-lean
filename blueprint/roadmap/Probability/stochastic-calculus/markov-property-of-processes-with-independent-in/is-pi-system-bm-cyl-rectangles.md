@@ -1,6 +1,6 @@
 # Rectangles of a Borel set and a path cylinder form a π-system
 
-**Rectangles of a Borel set and a path cylinder form a π-system.** Consider the subsets of
+Consider the subsets of
 $\mathbb{R} \times \mathbb{R}^{\mathbb{R}_{\ge 0}}$ of the form
 $U \times \bigcap_{t \in S} \{f \in \mathbb{R}^{\mathbb{R}_{\ge 0}} : f(t) \in V_t\}$, where
 $U \subseteq \mathbb{R}$ is Borel, $S \subseteq \mathbb{R}_{\ge 0}$ is finite and every

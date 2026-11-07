@@ -1,6 +1,6 @@
 # Crank of a partition
 
-**Crank of a partition.** Let $\mu$ be a partition of $n$ and let $\omega(\mu)$ be the number
+Let $\mu$ be a partition of $n$ and let $\omega(\mu)$ be the number
 of parts of $\mu$ equal to $1$. The crank of $\mu$ (Andrews and Garvan) is the integer defined as
 follows: if $\omega(\mu) = 0$, it is the largest part of $\mu$, where the largest part of the
 empty partition is taken to be $0$; if $\omega(\mu) > 0$, it is the number of parts of $\mu$

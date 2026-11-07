@@ -1,6 +1,6 @@
 # Compositeness criteria for $|U_p|$
 
-**Compositeness criteria for $|U_p|$.** Let $P$ and $Q$ be coprime integers such that the
+Let $P$ and $Q$ be coprime integers such that the
 Lucas pair $(P, Q)$ is nondegenerate, let $U_n$ be the Lucas sequence $U(P, Q)$, let
 $D = P^2 - 4Q$, and write $\left(\frac{a}{b}\right)$ for the Jacobi symbol. Call a prime $p$
 admissible if $p \ge 5$ and $\gcd(p, PQD) = 1$. Then the following hold.

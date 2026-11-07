@@ -1,6 +1,6 @@
 # Lucas sequences with $P = -Q - 1$
 
-**Lucas sequences with $P = -Q - 1$.** Let $U$ be the Lucas sequence with integer parameters
+Let $U$ be the Lucas sequence with integer parameters
 $P$ and $Q$, where $P = -Q - 1$, $Q \neq \pm 1$ and the pair $(P, Q)$ is nondegenerate, and write
 $\pi(n)$ and $\rho(n)$ for the period and the restricted period of $U$ modulo $n$. Then
 $P^2 - 4Q = (Q - 1)^2$, and for every natural number $n$,

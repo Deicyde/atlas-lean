@@ -1,6 +1,6 @@
 # Frankl–Rödl forbidden intersection theorem
 
-**Frankl–Rödl forbidden intersection theorem.** For every $\varepsilon > 0$ there is $\delta > 0$
+For every $\varepsilon > 0$ there is $\delta > 0$
 such that for all natural numbers $n$ and $r$ with $\varepsilon n < r < (1/2 - \varepsilon) n$,
 every family $\mathcal{F}$ of subsets of $\{1, \dots, n\}$ with $|A \cap B| \ne r$ for all
 $A, B \in \mathcal{F}$ (including $A = B$) has $|\mathcal{F}| < (2 - \delta)^n$. This answers the

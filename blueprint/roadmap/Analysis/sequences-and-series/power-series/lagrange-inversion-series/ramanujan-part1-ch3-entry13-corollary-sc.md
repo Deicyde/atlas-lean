@@ -1,6 +1,6 @@
 # Schröder's exponential series
 
-**Schröder's exponential series.** Let $z$ and $w$ be complex numbers with
+Let $z$ and $w$ be complex numbers with
 $|w| \le |e^{w-1}|$ and $|w| \le 1$. Then the series
 
 $$1 + \sum_{k=1}^{\infty} \frac{z (z + k w)^{k-1} e^{-k w}}{k!}$$

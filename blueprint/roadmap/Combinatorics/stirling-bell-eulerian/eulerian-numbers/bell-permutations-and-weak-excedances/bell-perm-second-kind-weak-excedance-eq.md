@@ -1,6 +1,6 @@
 # Weak excedances of Bell permutations of the second kind
 
-**Weak excedances of Bell permutations of the second kind.** Let $n \ge 1$ and $k$ be natural
+Let $n \ge 1$ and $k$ be natural
 numbers, and write $[n] = \{0, \dots, n-1\}$. A function $f : [n] \to [n]$ is a restricted
 growth function if for every $i$, every $j < f(i)$ equals $f(i_0)$ for some $i_0 < i$. Its Bell
 permutation is the product of transpositions $(0\ f(0))(1\ f(1)) \cdots (n-1\ f(n-1))$, composed

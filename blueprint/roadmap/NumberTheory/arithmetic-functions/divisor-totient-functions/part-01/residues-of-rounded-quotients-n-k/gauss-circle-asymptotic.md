@@ -1,6 +1,6 @@
 # Gauss's bound for lattice points in a disc
 
-**Gauss's bound for lattice points in a disc.** There is a constant $C$ such that for every
+There is a constant $C$ such that for every
 real $x \ge 1$, the number $N(x)$ of integer pairs $(a, b)$ with $a^2 + b^2 \le x$ satisfies
 $|N(x) - \pi x| \le C \sqrt{x}$.
 

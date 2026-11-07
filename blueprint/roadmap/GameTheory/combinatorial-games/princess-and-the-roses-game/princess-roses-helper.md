@@ -1,6 +1,6 @@
 # The P&R Helper game
 
-**The P&R Helper game.** For a triple $p$ of natural numbers, P&R Helper started at $p$ is
+For a triple $p$ of natural numbers, P&R Helper started at $p$ is
 the impartial game whose positions are the triples $(x, y, z)$ of natural numbers, whose options
 from $(x, y, z)$ are the triples $(x - u, y - v, z - w)$ for $(u, v, w)$ among $(1, 1, 1)$,
 $(1, 0, 0)$, $(1, 2, 1)$, $(1, 1, 2)$, $(0, 1, 0)$, $(0, 1, 1)$ and $(0, 0, 1)$ with $u \le x$,

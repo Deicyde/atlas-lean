@@ -1,6 +1,6 @@
 # $2$-near perfect numbers of the form $2^k p$
 
-**$2$-near perfect numbers of the form $2^k p$.** Let $k \ge 1$, let $p$ be a prime and let
+Let $k \ge 1$, let $p$ be a prime and let
 $n = 2^k p$. Suppose $d_1 \ne d_2$ are divisors of $n$ with $\sigma(n) = 2n + d_1 + d_2$, where
 $\sigma$ is the sum-of-divisors function (that is, $n$ is $2$-near perfect with omitted divisors
 $d_1, d_2$). Then, after possibly swapping $d_1$ and $d_2$, one of the following holds, where

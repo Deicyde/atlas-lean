@@ -1,6 +1,6 @@
 # Ferrers board of a partition
 
-**Ferrers board of a partition.** Let $p$ be a partition of $n$, and number rows and columns
+Let $p$ be a partition of $n$, and number rows and columns
 from $0$. The Ferrers board of $p$ is the finite set of cells
 $(i, j) \in \mathbb{N} \times \mathbb{N}$ such that the $(i+1)$-st largest part of $p$ exceeds $j$,
 that is, such that more than $i$ parts of $p$, counted with multiplicity, exceed $j$.

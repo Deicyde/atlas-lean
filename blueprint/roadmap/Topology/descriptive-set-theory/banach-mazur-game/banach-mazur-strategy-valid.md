@@ -1,6 +1,6 @@
 # Valid strategies in the Banach–Mazur game
 
-**Valid strategies in the Banach–Mazur game.** A strategy in the Banach–Mazur game is a map
+A strategy in the Banach–Mazur game is a map
 $\sigma \colon \mathbb{R} \times \mathbb{R} \to \mathbb{R} \times \mathbb{R}$, a pair $(a, b)$
 standing for the open interval $(a, b)$. It is valid if for all reals $a < b$ the pair
 $(c, d) = \sigma(a, b)$ satisfies $a \le c < d \le b$, so that it answers each nonempty open

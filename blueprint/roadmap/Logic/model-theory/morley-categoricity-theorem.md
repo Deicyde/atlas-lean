@@ -1,6 +1,6 @@
 # Morley's categoricity theorem
 
-**Morley's categoricity theorem.** Let $L$ be a first-order language with at most countably
+Let $L$ be a first-order language with at most countably
 many symbols, and let $T$ be a complete $L$-theory all of whose models are infinite. Call $T$
 $\kappa$-categorical if any two models of $T$ of cardinality $\kappa$ are isomorphic. If $T$ is
 $\kappa$-categorical for some uncountable cardinal $\kappa$, then $T$ is $\mu$-categorical for

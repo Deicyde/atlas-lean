@@ -1,6 +1,6 @@
 # Ordered red-black tree
 
-**Ordered red-black tree.** Let $\alpha$ be a type with a relation $<$. A red-black tree with
+Let $\alpha$ be a type with a relation $<$. A red-black tree with
 keys in $\alpha$ is ordered when, at every node with key $k$, every key $y$ in the left subtree
 satisfies $y < k$ and every key $z$ in the right subtree satisfies $k < z$.
 

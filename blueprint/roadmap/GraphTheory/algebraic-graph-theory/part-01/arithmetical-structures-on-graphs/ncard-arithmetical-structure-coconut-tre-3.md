@@ -1,6 +1,6 @@
 # Number of arithmetical structures on coconut trees with two leaves
 
-**Number of arithmetical structures on coconut trees with two leaves.** For $p \ge 2$, the
+For $p \ge 2$, the
 number of arithmetical structures on the coconut tree $CT(p, 2)$ is
 
 $$2 C_p - C_{p-1} + \sum_{i=3}^{p+2} B(p - 1, p + 2 - i)\, N(i - 2),$$

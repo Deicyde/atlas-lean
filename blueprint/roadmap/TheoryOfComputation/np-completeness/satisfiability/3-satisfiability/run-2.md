@@ -1,6 +1,6 @@
 # Correctness of the clause-length filter
 
-**Correctness of the clause-length filter.** Let $c$ be a Boolean (whether the filter is
+Let $c$ be a Boolean (whether the filter is
 capped), $\varphi$ a CNF formula and $v$ an internal state, and let $S$ be stacks holding the
 reversed token list of $\varphi$ on the token stack $T$ and nothing on the side stack $U$. Let $b$
 be the condition that $c$ is false or every clause of $\varphi$ has at most three literals, and

@@ -1,6 +1,6 @@
 # Golden factorial exponent
 
-**Golden factorial exponent.** For a natural number $n$, the golden factorial exponent
+For a natural number $n$, the golden factorial exponent
 $\alpha(n)$ is the least positive integer $m$ with $n! \le \varphi^m$, where $\varphi$ is the golden
 ratio. This is the sequence OEIS A214048.
 

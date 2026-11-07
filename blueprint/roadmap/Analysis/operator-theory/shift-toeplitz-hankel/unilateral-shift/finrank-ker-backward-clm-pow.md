@@ -1,3 +1,3 @@
 # Dimension of the kernel of a backward shift power
 
-**Dimension of the kernel of a backward shift power.** The kernel of `B ^ n` has dimension `n`.
+The kernel of `B ^ n` has dimension `n`.

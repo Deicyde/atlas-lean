@@ -1,6 +1,6 @@
 # Series over a family of Lucas polynomial squares
 
-**Series over a family of Lucas polynomial squares.** Let $x > 0$ be real, let
+Let $x > 0$ be real, let
 $\Delta = \sqrt{x^2 + 4}$ and $\alpha = (x + \Delta)/2$, and let $f_n$ and $l_n$ be the
 Fibonacci and Lucas polynomials evaluated at $x$, given by $f_0 = 0$, $f_1 = 1$, $l_0 = 2$,
 $l_1 = x$ and the recurrence $z_{n+2} = x z_{n+1} + z_n$ for both. Let $k$, $r$, $t$ be positive

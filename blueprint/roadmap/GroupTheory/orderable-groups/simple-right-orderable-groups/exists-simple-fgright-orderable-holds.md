@@ -1,6 +1,6 @@
 # Finitely generated simple right-orderable groups exist
 
-**Finitely generated simple right-orderable groups exist.** There is a finitely generated simple
+There is a finitely generated simple
 group $G$ that admits a right order, that is, a linear order $\le$ on $G$ such that $a \le b$
 implies $ac \le bc$ for all $a, b, c \in G$. This answers Kourovka Problem 16.50 positively.
 

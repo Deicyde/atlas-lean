@@ -1,6 +1,6 @@
 # Row numbers of divisible extraTribs
 
-**Row numbers of divisible extraTribs.** Let $S$ be an extraTrib and let $n$ be a natural
+Let $S$ be an extraTrib and let $n$ be a natural
 number dividing every term $S(k)$, $k \in \mathbb{Z}$. Let $f_0 < f_1 < f_2 < \dots$ be the
 positive integers whose Tribonacci representation has least significant digit $1$ (the first
 column of the Trithoff array), let $r$ be a natural number, and let $w$ be a Tribonacci

@@ -1,6 +1,6 @@
 # Maker wins within $p$ moves
 
-**Maker wins within $p$ moves.** Let $S$ be a finite set of natural numbers. In the
+Let $S$ be a finite set of natural numbers. In the
 $S$-game, Maker and Breaker alternately claim unclaimed natural numbers, and Maker wins once the
 numbers Maker has claimed contain a copy $aS + b = \{as + b : s \in S\}$ of $S$, where $a$ is a
 positive integer and $b$ is an integer. Let $M$ and $B$ be finite sets of natural numbers

@@ -1,6 +1,6 @@
 # Bayes' theorem for a linear-Gaussian observation
 
-**Bayes' theorem for a linear-Gaussian observation.** Let $n$ and $p$ be finite index sets,
+Let $n$ and $p$ be finite index sets,
 and let $x$ and $v$ be independent measurable random vectors in $\mathbb{R}^n$ and $\mathbb{R}^p$
 on a probability space, with $x \sim N(m, S)$ and $v \sim N(0, R)$ for positive semidefinite
 matrices $S$ and $R$. Let $H$ be a real $p \times n$ matrix such that $H S H^\top + R$ is

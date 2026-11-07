@@ -1,6 +1,6 @@
 # Square of an incomplete quadratic exponential sum
 
-**Square of an incomplete quadratic exponential sum.** Let $p$ be a prime, write
+Let $p$ be a prime, write
 $e_p(t) = e^{2\pi i t/p}$, let $a, b, c$ be integers with $p \nmid a$, let $B$ be an integer with
 $\sqrt{p} < B < p/2$, and put $S = \sum_{x=1}^{B} e_p(a x^2 + b x + c)$ and
 $R = \frac{2pB(B+1)}{\pi(p^2 - B^2)}$. Then $|S|^2$ is at most the minimum of

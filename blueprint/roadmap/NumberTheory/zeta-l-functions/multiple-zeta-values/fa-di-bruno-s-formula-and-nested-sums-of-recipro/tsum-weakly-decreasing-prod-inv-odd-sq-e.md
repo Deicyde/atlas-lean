@@ -1,6 +1,6 @@
 # Nested sums of reciprocal odd squares
 
-**Nested sums of reciprocal odd squares.** For every natural number $k$,
+For every natural number $k$,
 
 $$\sum_{i_1 \ge i_2 \ge \cdots \ge i_k \ge 1} \prod_{j=1}^{k} \frac{1}{(2 i_j - 1)^2} =
 \frac{(\pi/2)^{2k} E^*_{2k}}{(2k)!},$$

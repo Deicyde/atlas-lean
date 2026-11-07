@@ -1,6 +1,6 @@
 # First anti-Fibonacci and non-anti-Fibonacci numbers
 
-**First anti-Fibonacci and non-anti-Fibonacci numbers.** In the anti-Fibonacci construction
+In the anti-Fibonacci construction
 with triples $(A_n, B_n, C_n)$, the first four anti-Fibonacci numbers are $C_1 = 3$, $C_2 = 9$,
 $C_3 = 13$ and $C_4 = 18$, and $(A_1, B_1) = (1, 2)$, $(A_2, B_2) = (4, 5)$,
 $(A_3, B_3) = (6, 7)$ and $(A_4, B_4) = (8, 10)$.

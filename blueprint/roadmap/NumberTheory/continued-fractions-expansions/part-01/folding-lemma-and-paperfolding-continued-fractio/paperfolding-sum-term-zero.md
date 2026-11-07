@@ -1,6 +1,6 @@
 # First term of the paperfolding sums
 
-**First term of the paperfolding sums.** For every sequence $x$ of natural numbers, the term
+For every sequence $x$ of natural numbers, the term
 $s_0$ of the paperfolding sum terms defined by $x$ equals $1$.
 
 ## Sources

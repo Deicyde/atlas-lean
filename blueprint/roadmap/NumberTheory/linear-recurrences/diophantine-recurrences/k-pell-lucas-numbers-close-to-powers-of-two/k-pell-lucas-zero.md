@@ -1,6 +1,6 @@
 # Initial value of the generalized Pell–Lucas numbers
 
-**Initial value of the generalized Pell–Lucas numbers.** For every natural number $k$, the
+For every natural number $k$, the
 $k$-generalized Pell–Lucas number $Q^{(k)}_0$ equals $2$.
 
 ## Sources

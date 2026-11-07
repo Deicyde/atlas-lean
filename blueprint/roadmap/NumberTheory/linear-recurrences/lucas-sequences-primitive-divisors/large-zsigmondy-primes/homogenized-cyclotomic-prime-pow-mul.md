@@ -1,6 +1,6 @@
 # Homogenized cyclotomic values at $p^\beta k$
 
-**Homogenized cyclotomic values at $p^\beta k$.** Let $p$ be a prime, let $\beta \ge 1$ and
+Let $p$ be a prime, let $\beta \ge 1$ and
 $k \ge 1$ be integers with $p \nmid k$, and let $a, b$ be integers; write $\Phi_m(a, b)$ for the
 homogenized cyclotomic value. Then
 $\Phi_{p^\beta k}(a, b) = \Phi_{pk}(a^{p^{\beta - 1}}, b^{p^{\beta - 1}})$ and

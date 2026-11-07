@@ -1,6 +1,6 @@
 # Cyclic sum formula for multiple zeta-star values
 
-**Cyclic sum formula for multiple zeta-star values.** Let $l \ge 1$ and let $k_0, \dots, k_{l-1}$
+Let $l \ge 1$ and let $k_0, \dots, k_{l-1}$
 be positive integers, not all equal to $1$, with subscripts read modulo $l$, and put
 $K = k_0 + \cdots + k_{l-1}$. Write $\zeta^\star$ for the multiple zeta-star value and $\zeta$ for
 the strict multiple zeta value. Suppose that for each $0 \le j \le l - 1$ and each natural number

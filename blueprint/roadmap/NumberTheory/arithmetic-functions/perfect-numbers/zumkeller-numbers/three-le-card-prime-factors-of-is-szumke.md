@@ -1,6 +1,6 @@
 # Even s-Zumkeller numbers have at least three prime factors
 
-**Even s-Zumkeller numbers have at least three prime factors.** If $n$ is an even
+If $n$ is an even
 s-Zumkeller number, then $n$ has at least $3$ distinct prime factors.
 
 ## Sources

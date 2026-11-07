@@ -1,6 +1,6 @@
 # Under GCH, weakly inaccessible cardinals are inaccessible
 
-**Under GCH, weakly inaccessible cardinals are inaccessible.** Under (local) GCH, weakly inaccessible implies strongly inaccessible: for
+Under (local) GCH, weakly inaccessible implies strongly inaccessible: for
 infinite `μ < κ`, `2 ^ μ = succ μ < κ` by the limit property, and the finite
 case is `power_lt_aleph0`.
 

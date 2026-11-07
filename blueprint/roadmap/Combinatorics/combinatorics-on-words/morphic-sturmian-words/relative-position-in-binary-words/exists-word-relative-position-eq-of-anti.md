@@ -1,6 +1,6 @@
 # Non-increasing functions as relative position functions
 
-**Non-increasing functions as relative position functions.** Let $r$ be a function from the
+Let $r$ be a function from the
 natural numbers to the integers with $r(1) < 0$ and $r(n+1) \le r(n)$ for every $n \ge 1$. Then
 there is an infinite word $w$ over the letters $a$ and $b$ that starts with $b$, in which both
 letters occur infinitely often, and whose relative position function satisfies $r_w(n) = r(n)$

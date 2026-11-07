@@ -1,6 +1,6 @@
 # Number of ordered factorizations
 
-**Number of ordered factorizations.** For $n \ge 2$, $f(n)$ is the number of ordered
+For $n \ge 2$, $f(n)$ is the number of ordered
 factorizations $n = a_1 a_2 \cdots a_k$ of $n$ into factors $a_i > 1$ (OEIS A074206); moreover
 $f(0) = 0$ and $f(1) = 1$.
 

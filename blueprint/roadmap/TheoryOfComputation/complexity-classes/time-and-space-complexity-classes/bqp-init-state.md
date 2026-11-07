@@ -1,6 +1,6 @@
 # Initial state of a BQP computation
 
-**Initial state of a BQP computation.** For a bitstring $x = (x_0, \dots, x_{n-1})$, with
+For a bitstring $x = (x_0, \dots, x_{n-1})$, with
 true read as $1$ and false as $0$, and a number $a$ of ancilla qubits, the initial state is the
 tensor product of the computational basis state of $x$ and the all-zero state on $a$ qubits: the
 vector on $\{0, \dots, 2^{n+a} - 1\}$ whose value at $s$ is the value of the basis state of $x$ at

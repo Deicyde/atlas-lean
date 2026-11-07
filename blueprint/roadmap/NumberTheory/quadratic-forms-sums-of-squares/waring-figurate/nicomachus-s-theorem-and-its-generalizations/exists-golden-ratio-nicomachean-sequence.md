@@ -1,6 +1,6 @@
 # Golden-ratio sequences with vanishing Nicomachean defect
 
-**Golden-ratio sequences with vanishing Nicomachean defect.** Let $\varphi = (1 + \sqrt 5)/2$
+Let $\varphi = (1 + \sqrt 5)/2$
 be the golden ratio and write
 $\nu(a_1, \dots, a_k) = (a_1 + \dots + a_k)^2 - (a_1^3 + \dots + a_k^3)$ for the Nicomachean defect
 of a finite sequence of real numbers. For every natural number $N$ there is a finite sequence

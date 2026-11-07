@@ -1,6 +1,6 @@
 # Odd integer group determinants of $C_4 \times C_4$
 
-**Odd integer group determinants of $C_4 \times C_4$.** Let $C_4$ be the cyclic group of
+Let $C_4$ be the cyclic group of
 order $4$, $S(C_4^2)$ the set of integer group determinants of $C_4 \times C_4$ and $P$ the set
 of positive primes $p \equiv -3 \pmod 8$, and let $A$ be the set of products
 $(8k-3)(8l-3)(8m-3)(8n-3)$ with $k, l, m, n \in \mathbb{Z}$, $8l-3, 8m-3, 8n-3 \in P$ and

@@ -1,6 +1,6 @@
 # The empty string has no nontrivial symmetry
 
-**The empty string has no nontrivial symmetry.** The empty string has no nontrivial symmetry.
+The empty string has no nontrivial symmetry.
 
 ## Sources
 

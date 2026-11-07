@@ -1,6 +1,6 @@
 # Consecutive primes
 
-**Consecutive primes.** Natural numbers $p$ and $q$ are consecutive primes when $p$ and $q$
+Natural numbers $p$ and $q$ are consecutive primes when $p$ and $q$
 are prime, $p < q$, and every prime $r$ satisfies $r \le p$ or $q \le r$; that is, no prime
 lies strictly between $p$ and $q$.
 

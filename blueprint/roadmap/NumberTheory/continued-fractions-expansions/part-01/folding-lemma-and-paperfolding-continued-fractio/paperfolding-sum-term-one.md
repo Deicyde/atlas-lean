@@ -1,6 +1,6 @@
 # Second term of the paperfolding sums
 
-**Second term of the paperfolding sums.** For every sequence $x$ of natural numbers with
+For every sequence $x$ of natural numbers with
 $x_0 = 2$, the term $s_1$ of the paperfolding sum terms defined by $x$ equals $1/2$.
 
 ## Sources

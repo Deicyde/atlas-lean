@@ -1,6 +1,6 @@
 # General optional stopping, expectation inequality
 
-**General optional stopping, expectation inequality.** Let $\mu$ be a probability measure,
+Let $\mu$ be a probability measure,
 let $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration and let $(f_n)_{n \in \mathbb{N}}$ be a
 real-valued submartingale with respect to $(\mathcal{F}_n)$ that is uniformly integrable. Let
 $f_\infty$ be the limit process of $f$ (its almost-everywhere limit, by the martingale

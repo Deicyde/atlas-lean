@@ -1,6 +1,6 @@
 # The sets $V_{n,j}$
 
-**The sets $V_{n,j}$.** Let $W_n = WA_n(011, 100, 201, 210)$ be the set of weak ascent
+Let $W_n = WA_n(011, 100, 201, 210)$ be the set of weak ascent
 sequences of length $n$ that avoid each of the patterns $011$, $100$, $201$ and $210$. For
 natural numbers $n$ and $j$, $V_{n,j}$ is the set of sequences $w = w_1 w_2 \cdots w_n$ in
 $W_n$ such that the last descent top of $w$ is at position $n - 2$, $w_n \le n - 3$,

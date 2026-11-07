@@ -1,6 +1,6 @@
 # A three-circles inequality for circles tangent at the origin
 
-**A three-circles inequality for circles tangent at the origin.** Let
+Let
 $f:\mathbb{C}\to\mathbb{C}$ be an entire function and, for $r>0$, let
 \[
 A(r)=\sup\{\lvert f(z)\rvert:\lvert z-r\rvert=r\}.

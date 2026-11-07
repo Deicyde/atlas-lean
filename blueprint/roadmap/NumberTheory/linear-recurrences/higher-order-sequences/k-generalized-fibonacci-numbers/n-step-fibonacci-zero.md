@@ -1,6 +1,6 @@
 # Zeroth N-step Fibonacci number
 
-**Zeroth N-step Fibonacci number.** For every natural number $N$, the $N$-step Fibonacci
+For every natural number $N$, the $N$-step Fibonacci
 number $F^{(N)}_0$ equals $0$.
 
 ## Sources

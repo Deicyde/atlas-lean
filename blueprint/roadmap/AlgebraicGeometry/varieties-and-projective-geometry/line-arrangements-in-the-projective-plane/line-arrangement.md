@@ -1,6 +1,6 @@
 # Line arrangement
 
-**Line arrangement.** A line arrangement in the projective plane over a field $K$ is a finite
+A line arrangement in the projective plane over a field $K$ is a finite
 set of at least two lines, each line recorded by its coordinate vector, a point of the dual
 projective plane $\mathbb{P}(K^3)$.
 

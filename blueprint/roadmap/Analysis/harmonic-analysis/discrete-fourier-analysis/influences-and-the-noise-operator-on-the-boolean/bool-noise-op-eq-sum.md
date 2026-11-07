@@ -1,6 +1,6 @@
 # Fourier expansion of the noise operator
 
-**Fourier expansion of the noise operator.** For every real number $\rho$, every function $f$
+For every real number $\rho$, every function $f$
 from the Boolean cube $\{-1, 1\}^n$ to $\mathbb{R}$ and every point $x$ of the cube,
 
 $$T_\rho f(x) = \sum_{S \subseteq \{0, \dots, n-1\}} \rho^{|S|} \, \hat f(S) \, \chi_S(x),$$

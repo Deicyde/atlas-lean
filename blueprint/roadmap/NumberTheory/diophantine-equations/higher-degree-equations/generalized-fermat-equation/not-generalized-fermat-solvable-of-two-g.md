@@ -1,6 +1,6 @@
 # Generalized Fermat equations with two non-coprime pairs of exponents
 
-**Generalized Fermat equations with two non-coprime pairs of exponents.** Let
+Let
 $m, n, r \ge 2$ be integers with $\gcd(m, n, r) = 1$ such that at least two of $\gcd(m, n)$,
 $\gcd(m, r)$ and $\gcd(n, r)$ are greater than $1$. Suppose there are no natural numbers
 $s, t, w$ that are pairwise coprime, with $s$ odd and $3 \nmid w$, such that $(m, n, r)$ is one

@@ -1,6 +1,6 @@
 # Snort on the rook's graph
 
-**Snort on the rook's graph.** For natural numbers $n \ge 1$ and $m \ge 1$, the
+For natural numbers $n \ge 1$ and $m \ge 1$, the
 second player wins Snort on the rook's graph of the $n \times m$ board (the Peaceable
 Rooks game) if and only if $n$ and $m$ are both even.
 

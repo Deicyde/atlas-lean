@@ -1,6 +1,6 @@
 # A recursion for binomial sums of odd-indexed Fibonacci numbers
 
-**A recursion for binomial sums of odd-indexed Fibonacci numbers.** Let $F_k$ be the Fibonacci
+Let $F_k$ be the Fibonacci
 numbers, with the convention $F_{-1} = 1$. For all integers $n \ge 1$ and $2 \le i \le n + 1$,
 
 $$\sum_{m=0}^{n-i+1} \binom{n-m-1}{i-2} F_{2m-1} =

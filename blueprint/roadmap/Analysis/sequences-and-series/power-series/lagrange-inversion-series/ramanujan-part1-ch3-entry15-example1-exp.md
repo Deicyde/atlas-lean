@@ -1,6 +1,6 @@
 # Ramanujan's exponential series for powers of two
 
-**Ramanujan's exponential series for powers of two.** Let $m$ and $n$ be real numbers with
+Let $m$ and $n$ be real numbers with
 $0 < n \le 2$. Then the series
 
 $$1 + \sum_{k=1}^{\infty} \frac{m}{2^{k n} \, k!} \prod_{j=1}^{k-1} (m + k n - j)$$

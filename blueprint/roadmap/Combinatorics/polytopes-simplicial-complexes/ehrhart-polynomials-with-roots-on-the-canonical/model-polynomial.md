@@ -1,6 +1,6 @@
 # Model polynomial
 
-**Model polynomial.** For a natural number $d$, the model polynomial is the complex
+For a natural number $d$, the model polynomial is the complex
 polynomial $M_d = \binom{X+d}{d} + \binom{X}{d}$, where for an integer $n$ the binomial
 polynomial $\binom{X+n}{d}$ is $\frac{1}{d!}\prod_{i=0}^{d-1} (X + n - i)$.
 

@@ -1,6 +1,6 @@
 # Lower bound for the logarithm of the $n$-th prime
 
-**Lower bound for the logarithm of the $n$-th prime.** Let $p_n$ denote the $n$-th prime, so
+Let $p_n$ denote the $n$-th prime, so
 that $p_1 = 2$. For every integer $n \ge 3$,
 
 $$\log p_n \ge \log n + \log\log n + \log\left(1 + \frac{\log\log n - 1}{\log n}\right).$$

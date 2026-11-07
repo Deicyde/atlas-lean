@@ -1,6 +1,6 @@
 # Linear partition of a graph
 
-**Linear partition of a graph.** Let $G$ be a simple graph on a vertex type $V$ and let $k$
+Let $G$ be a simple graph on a vertex type $V$ and let $k$
 be a natural number. A $k$-linear partition of $G$ is a set of exactly $k$ blocks, each block a
 nonempty finite sequence of pairwise distinct vertices, such that every vertex of $G$ lies in
 exactly one block and any two consecutive vertices of a block are nonadjacent in $G$. The

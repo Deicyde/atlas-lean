@@ -1,6 +1,6 @@
 # Integral of the squared sinc function over the half-line
 
-**Integral of the squared sinc function over the half-line.** The integral of
+The integral of
 $(\sin x / x)^2$ over $(0, \infty)$ is $\pi/2$:
 
 $$\int_0^\infty \left(\frac{\sin x}{x}\right)^2 dx = \frac{\pi}{2}.$$

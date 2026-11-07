@@ -1,6 +1,6 @@
 # Lucas sequences modulo 2
 
-**Lucas sequences modulo 2.** Let $U = U(P, Q)$ be the Lucas sequence with integer parameters
+Let $U = U(P, Q)$ be the Lucas sequence with integer parameters
 $P$ and $Q \ne 0$, let $D = P^2 - 4Q$, and suppose $2 \nmid \gcd(P, Q)$. Then $U$ is periodic
 modulo $2$ from index $1$ on: there is $k > 0$ with $U_{n+k} \equiv U_n \pmod 2$ for every
 $n \ge 1$. If $P$ is odd and $Q$ is even, then $U_n$ is odd for every $n \ge 1$. If $P$ is even

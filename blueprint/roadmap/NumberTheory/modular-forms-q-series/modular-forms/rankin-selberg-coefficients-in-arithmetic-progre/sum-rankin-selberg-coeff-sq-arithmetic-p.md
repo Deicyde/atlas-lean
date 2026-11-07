@@ -1,6 +1,6 @@
 # Hua's theorem on squared Rankin–Selberg coefficients in arithmetic progressions
 
-**Hua's theorem on squared Rankin–Selberg coefficients in arithmetic progressions.** Let $f$
+Let $f$
 be a level-one cusp form of weight $k$ that is a normalized Hecke eigenform, let
 $\lambda_{f\times f}$ be its Rankin–Selberg coefficients, let $\varphi$ be Euler's totient
 function, and put $\eta = 23/261$. There are real polynomials $P_q$, one for each prime $q$, each

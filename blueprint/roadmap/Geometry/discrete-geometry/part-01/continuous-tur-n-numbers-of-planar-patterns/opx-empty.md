@@ -1,6 +1,6 @@
 # Continuous Turán number of the empty pattern
 
-**Continuous Turán number of the empty pattern.** For every real number $n$,
+For every real number $n$,
 $\mathrm{opx}(n, \emptyset) = 0$: every set contains the empty pattern, so no set avoids it.
 
 ## Sources

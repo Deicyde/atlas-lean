@@ -1,6 +1,6 @@
 # Fixed points and the $2$-cycle of the $q$-Collatz map
 
-**Fixed points and the $2$-cycle of the $q$-Collatz map.** Let $A, B \in \mathbb{F}_2[[q]]$ be
+Let $A, B \in \mathbb{F}_2[[q]]$ be
 odd (constant term $1$) and let $T_{A,B}$ be the $q$-analog of the $3x+1$ map. For every
 $x \in \mathbb{F}_2[[q]]$, $T_{A,B}(x) = x$ holds exactly when $x = 0$ or $x = B/(A+q)$. Moreover,
 for every $x \in \mathbb{F}_2[[q]]$, $T_{A,B}(T_{A,B}(x)) = x$ and $T_{A,B}(x) \ne x$ hold together

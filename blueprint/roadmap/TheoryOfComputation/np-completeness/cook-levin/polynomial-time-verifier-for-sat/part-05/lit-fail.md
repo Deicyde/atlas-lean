@@ -1,6 +1,6 @@
 # Tokenizer rejects an undecodable literal
 
-**Tokenizer rejects an undecodable literal.** A configuration
+A configuration
 $\langle \ell, v \mid x, w, t, b, i, j\rangle$ of the SAT tokenizer has label $\ell$, internal bit
 $v$, stacks $X$, $W$, $T$, $B$ holding $x$, $w$, $t$, $b$ (top first; a bit string stands for its
 list of bit symbols), and $i$ and $j$ marks on the clause and literal counters. Let $r$ be a bit

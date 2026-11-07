@@ -1,6 +1,6 @@
 # Sentinel deletion preserves disjoint circular lists
 
-**Sentinel deletion preserves disjoint circular lists.** Let $S$ be a node store and $x$ an
+Let $S$ be a node store and $x$ an
 address whose cell holds a node with previous address $p$ and next address $n$, where the cells
 at $p$ and $n$ are nonempty. Suppose $S$ represents a circular doubly linked list with sentinel
 $s$ and data addresses $\ell$, with $x$ in $\ell$, and also one with sentinel $t$ and data

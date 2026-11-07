@@ -1,6 +1,6 @@
 # Power sums under a larger exponent
 
-**Power sums under a larger exponent.** Let $x_1, \dots, x_N$ be $N \ge 1$ positive real
+Let $x_1, \dots, x_N$ be $N \ge 1$ positive real
 numbers, and for real $p$ write $S^{[p]} = \sum_{k=1}^{N} x_k^p$. If $\alpha$ and $\beta$ are
 real numbers with $0 < \beta \le \alpha$, then $S^{[\alpha]} \le (S^{[\beta]})^{\alpha/\beta}$.
 

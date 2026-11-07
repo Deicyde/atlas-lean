@@ -1,6 +1,6 @@
 # Nilpotent extensions that split at every prime need not split
 
-**Nilpotent extensions that split at every prime need not split.** It is not true that every
+It is not true that every
 extension of nilpotent groups with finitely generated quotient that splits at every prime splits:
 there are nilpotent groups $N$, $G$ and $Q$ with $Q$ finitely generated, an injective homomorphism
 $i \colon N \to G$ and a surjective homomorphism $\pi \colon G \to Q$ with $\operatorname{im} i =

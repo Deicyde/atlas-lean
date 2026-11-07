@@ -1,6 +1,6 @@
 # Reading pair descriptions
 
-**Reading pair descriptions.** Write a binary string $s$ as $1^n s'$, where $n$ is the number
+Write a binary string $s$ as $1^n s'$, where $n$ is the number
 of leading $1$s, and let $r$ be $s'$ without its first letter ($r$ is empty when $s'$ is). Let
 $r_1$ be the first $\min(n, |r|)$ letters of $r$ and $r_2$ the remaining ones. The pair reader
 maps $s$ to the concatenation $U(r_1)\,U(r_2)$, where $U$ is the universal description method,

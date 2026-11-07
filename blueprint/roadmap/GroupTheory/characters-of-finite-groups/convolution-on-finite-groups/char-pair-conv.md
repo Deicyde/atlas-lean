@@ -1,6 +1,6 @@
 # Convolution theorem for one-dimensional characters
 
-**Convolution theorem for one-dimensional characters.** Let $G$ be a finite group, let
+Let $G$ be a finite group, let
 $\varphi : G \to \mathbb{C}$ satisfy $\varphi(1) = 1$ and $\varphi(xy) = \varphi(x)\varphi(y)$
 for all $x, y \in G$ (a one-dimensional character), and let $f, g : G \to \mathbb{C}$. Writing
 $f \ast g$ for the convolution $(f \ast g)(x) = \sum_{y \in G} f(y)\, g(y^{-1} x)$, we have

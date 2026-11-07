@@ -1,6 +1,6 @@
 # No step past the end of the program
 
-**No step past the end of the program.** Let $P$ be a program, that is a list of instructions,
+Let $P$ be a program, that is a list of instructions,
 and let $(pc, \sigma, s)$ be a configuration with $|P| \le pc$. Then the stack machine running $P$
 has no step from $(pc, \sigma, s)$ to any configuration, since there is no instruction at
 position $pc$ to fetch.

@@ -1,6 +1,6 @@
 # Bourgain's polynomial ergodic theorem
 
-**Bourgain's polynomial ergodic theorem.** Let $(X, \mu)$ be a probability space, let
+Let $(X, \mu)$ be a probability space, let
 $T : X \to X$ be a measure-preserving map, let $a : \mathbb{N} \to \mathbb{N}$ be an integer
 polynomial sequence, and let $f : X \to \mathbb{R}$ be a function in $L^p(\mu)$ for some
 $p$ with $1 < p < \infty$. Then there is a function $F : X \to \mathbb{R}$ such that for

@@ -1,6 +1,6 @@
 # Finite arithmetic progression
 
-**Finite arithmetic progression.** For a real number $x$, a natural number $m$ and a real
+For a real number $x$, a natural number $m$ and a real
 number $d$, $J(x, m, d)$ is the finite set of real numbers
 $\{x + i d : i = 0, 1, \ldots, m\}$, that is, $x, x + d, \ldots, x + m d$.
 

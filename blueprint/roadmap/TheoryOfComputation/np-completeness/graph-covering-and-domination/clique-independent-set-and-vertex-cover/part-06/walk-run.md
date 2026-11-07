@@ -1,6 +1,6 @@
 # Walk over the occurrence stack in the CLIQUE emitter
 
-**Walk over the occurrence stack in the CLIQUE emitter.** Let $l = (x, p)$ be a literal
+Let $l = (x, p)$ be a literal
 occurrence, $ds$ a list of items (literal occurrences or clause markers), $f$ and $v$ Booleans,
 $t$ a token stack, $o$ an output stack of bits, $e$ a stack of token symbols and
 $c, n \in \mathbb{N}$. Let $D$ be the concatenation of the tokens of the items of $ds$: a clause

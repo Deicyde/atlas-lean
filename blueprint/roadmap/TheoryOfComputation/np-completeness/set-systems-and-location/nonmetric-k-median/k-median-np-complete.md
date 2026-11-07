@@ -1,6 +1,6 @@
 # k-MEDIAN (GENERALIZED, NONMETRIC) is NP-complete
 
-**k-MEDIAN (GENERALIZED, NONMETRIC) is NP-complete.** The k-MEDIAN decision problem is in NP,
+The k-MEDIAN decision problem is in NP,
 and every decision problem in NP has a polynomial-time many-one reduction to it.
 
 ## Sources

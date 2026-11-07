@@ -1,6 +1,6 @@
 # Linnell's twisted right ideal question (Kourovka 12.46)
 
-**Linnell's twisted right ideal question (Kourovka 12.46).** Let $F$ be the free group on
+Let $F$ be the free group on
 $x, y$, let $\mathbb{C}F$ be its complex group algebra, and for nonzero complex numbers $a, b$ let
 $\vartheta_{a,b}$ be the twisting automorphism of $\mathbb{C}F$ with $\vartheta_{a,b}(x) = a x$ and
 $\vartheta_{a,b}(y) = b y$. The assertion is that for every nonzero $\alpha \in \mathbb{C}F$ there

@@ -1,6 +1,6 @@
 # No finite $(0,2)$-graph has chromatic number three
 
-**No finite $(0,2)$-graph has chromatic number three.** For every natural number $n$ and
+For every natural number $n$ and
 every simple graph $G$ on the vertex set $\{0, \dots, n-1\}$ in which every two distinct vertices
 have either zero or two common neighbors, the chromatic number of $G$ is not $3$. In particular,
 the three-chromatic $(0,2)$-graph conjecture is false.

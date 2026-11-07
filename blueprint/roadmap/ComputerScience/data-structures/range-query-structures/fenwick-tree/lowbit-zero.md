@@ -1,3 +1,3 @@
 # Lowbit of zero
 
-**Lowbit of zero.** By convention, $\operatorname{lowbit}(0) = 0$.
+By convention, $\operatorname{lowbit}(0) = 0$.

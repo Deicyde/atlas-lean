@@ -1,6 +1,6 @@
 # Number of marriageable singles partitions
 
-**Number of marriageable singles partitions.** For $n \ge 0$, $M_n$ is the number of
+For $n \ge 0$, $M_n$ is the number of
 noncrossing partitions of $\{0, \dots, n-1\}$ that are marriageable singles partitions.
 
 ## Sources

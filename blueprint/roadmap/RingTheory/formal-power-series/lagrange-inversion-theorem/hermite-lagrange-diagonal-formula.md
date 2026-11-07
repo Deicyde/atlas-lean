@@ -1,6 +1,6 @@
 # Hermite's diagonal form of Lagrange inversion
 
-**Hermite's diagonal form of Lagrange inversion.** Let $R$ be a commutative ring, let $F$,
+Let $R$ be a commutative ring, let $F$,
 $\varphi$, $w$ and $G$ be formal power series over $R$, and write $[X^n]H$ for the coefficient
 of $X^n$ in a power series $H$. Write $\varphi'$ for the formal derivative of $\varphi$, and
 $\varphi(w)$, $\varphi'(w)$, $F(w)$ for the substitution of $w$ into $\varphi$, $\varphi'$, $F$.

@@ -1,6 +1,6 @@
 # Accessible sets
 
-**Accessible sets.** A set $D$ of natural numbers is accessible if it is $r$-accessible for
+A set $D$ of natural numbers is accessible if it is $r$-accessible for
 every natural number $r \ge 1$.
 
 ## Sources

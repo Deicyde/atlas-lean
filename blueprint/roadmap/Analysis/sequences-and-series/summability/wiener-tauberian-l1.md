@@ -1,6 +1,6 @@
 # Wiener's Tauberian theorem on $L^1(\mathbb{R})$
 
-**Wiener's Tauberian theorem on $L^1(\mathbb{R})$.** Let $f : \mathbb{R} \to \mathbb{C}$ be
+Let $f : \mathbb{R} \to \mathbb{C}$ be
 Lebesgue integrable, and suppose that its Fourier transform
 $\hat f(w) = \int_{\mathbb{R}} e^{-2\pi i x w} f(x)\,dx$ vanishes at no real $w$. Then for every
 Lebesgue integrable $g : \mathbb{R} \to \mathbb{C}$ and every $\varepsilon > 0$ there are a finite

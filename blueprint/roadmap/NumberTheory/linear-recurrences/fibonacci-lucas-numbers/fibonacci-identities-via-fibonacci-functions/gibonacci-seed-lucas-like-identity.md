@@ -1,6 +1,6 @@
 # Seed form of a Lucas-type product identity for two gibonacci sequences
 
-**Seed form of a Lucas-type product identity for two gibonacci sequences.** Let
+Let
 $G, H : \mathbb{Z} \to \mathbb{R}$, written $j \mapsto G_j$ and $j \mapsto H_j$, satisfy
 $G_{j+2} = G_{j+1} + G_j$ and $H_{j+2} = H_{j+1} + H_j$ for every integer $j$. Then for all
 integers $k$ and $r$,

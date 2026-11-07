@@ -1,6 +1,6 @@
 # Valuation of a product of consecutive integers
 
-**Valuation of a product of consecutive integers.** Let $m$ and $k$ be natural numbers and
+Let $m$ and $k$ be natural numbers and
 $p$ a prime, and write $v_p(n)$ for the exponent of $p$ in a positive integer $n$. Then
 $v_p\bigl((m+k)!/m!\bigr) \le v_p(k!) + \max \{ v_p(m + i) : 1 \le i \le k \}$, where the
 maximum is $0$ when $k = 0$.

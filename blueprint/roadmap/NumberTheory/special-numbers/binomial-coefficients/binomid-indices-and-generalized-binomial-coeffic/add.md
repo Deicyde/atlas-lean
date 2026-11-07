@@ -1,6 +1,6 @@
 # Lex-minimal extensions are closed under addition
 
-**Lex-minimal extensions are closed under addition.** If $\eta_1$ and $\eta_2$ are
+If $\eta_1$ and $\eta_2$ are
 lex-minimal extensions, then their componentwise sum $\eta_1 + \eta_2$ is a lex-minimal
 extension.
 

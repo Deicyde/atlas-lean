@@ -1,6 +1,6 @@
 # The additive-noise kernel
 
-**The additive-noise kernel.** Let $E$ be an additive commutative group with a measurable
+Let $E$ be an additive commutative group with a measurable
 structure for which addition $E \times E \to E$ is measurable, let $F$ be a measurable space, let
 $f \colon F \to E$ be a measurable map and let $\nu$ be a measure on $E$. If $\nu$ is s-finite,
 the additive-noise kernel from $F$ to $E$ sends $y \in F$ to the image of the product measure

@@ -1,6 +1,6 @@
 # Valid perfect hash table
 
-**Valid perfect hash table.** Let $T$ be a two-level perfect hash table with primary hash $h$,
+Let $T$ be a two-level perfect hash table with primary hash $h$,
 $b$ buckets, secondary table sizes $m_i$ and secondary hashes $g_i$. Then $T$ is valid when two
 conditions hold. Placement: whenever slot $j$ of bucket $i$ holds a binding $(k, v)$, we have
 $i = h(k) \bmod b$ and $j = g_i(k) \bmod m_i$. Injectivity: for every bucket $i$, if keys $k_1$

@@ -1,6 +1,6 @@
 # Characterization of complete Young graphs
 
-**Characterization of complete Young graphs.** Let $g$, $k$ and $m$ be natural numbers with
+Let $g$, $k$ and $m$ be natural numbers with
 $2 \le k < g$ and $m \ge 2$. Then the Young graph $Y(g, k)$ is complete on $m$ nodes if and only
 if
 

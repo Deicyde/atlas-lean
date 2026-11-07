@@ -1,6 +1,6 @@
 # The 3SAT emitter processes one clause
 
-**The 3SAT emitter processes one clause.** Let $C$ be a clause, $Z_b$, $z$ and $c$ natural
+Let $C$ be a clause, $Z_b$, $z$ and $c$ natural
 numbers with $z + \mathrm{used}(C) \le Z_b$, where $\mathrm{used}(C) = \max(|C| - 1, 0)$, let $R$
 be a token list that is empty or starts with a clause token, $o$ an output bit list and $v$ a
 flag. Let $\mathrm{clRev}(C)$ be the tokens of $C$ as they lie on the token stack (a clause token,

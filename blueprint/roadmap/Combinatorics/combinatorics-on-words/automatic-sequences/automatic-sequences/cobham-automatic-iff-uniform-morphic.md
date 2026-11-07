@@ -1,6 +1,6 @@
 # Cobham's characterization of automatic sequences
 
-**Cobham's characterization of automatic sequences.** Let $k \ge 2$ and let $B$ be a finite
+Let $k \ge 2$ and let $B$ be a finite
 alphabet. A sequence $w : \mathbb{N} \to B$ is $k$-automatic if and only if it is a coding of a
 prolongable $k$-uniform fixed point.
 

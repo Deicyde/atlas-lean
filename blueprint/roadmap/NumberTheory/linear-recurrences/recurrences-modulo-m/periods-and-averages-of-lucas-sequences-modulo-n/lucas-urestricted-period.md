@@ -1,6 +1,6 @@
 # Restricted period of a Lucas sequence modulo $m$
 
-**Restricted period of a Lucas sequence modulo $m$.** For a Lucas sequence $U = U(P, Q)$ and
+For a Lucas sequence $U = U(P, Q)$ and
 a natural number $m$, the least restricted period $\rho_U(m)$ of $U$ modulo $m$ is the least
 $s > 0$ such that $m \mid U_s$ and $U_{s+1}$ is coprime to $m$, and $0$ if there is no such $s$.
 

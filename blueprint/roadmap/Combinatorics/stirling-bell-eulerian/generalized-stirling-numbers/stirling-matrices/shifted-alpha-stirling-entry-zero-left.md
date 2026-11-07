@@ -1,6 +1,6 @@
 # First row of the shifted α-Stirling matrix
 
-**First row of the shifted α-Stirling matrix.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $\alpha = (\alpha_j)_{j \ge 1}$ be a sequence in $R$, and write $\mathsf{S}_{i,j}$ for the entries
 of the shifted $\alpha$-Stirling matrix of $\alpha$, indexed from $0$. For every natural number
 $j$, $\mathsf{S}_{0,j} = \alpha_1$; that is, the first row is constant, equal to $\alpha_1$.

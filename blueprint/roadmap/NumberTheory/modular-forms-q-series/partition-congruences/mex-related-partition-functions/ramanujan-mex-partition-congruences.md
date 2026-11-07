@@ -1,6 +1,6 @@
 # Ramanujan congruences for mex-related partition functions
 
-**Ramanujan congruences for mex-related partition functions.** For a positive integer $A$, a
+For a positive integer $A$, a
 natural number $a$ and a partition $\lambda$, let $\operatorname{mex}_{A,a}(\lambda)$ be the
 smallest positive integer congruent to $a$ modulo $A$ that is not a part of $\lambda$; let
 $p_{A,a}(N)$ be the number of partitions $\lambda$ of $N$ with

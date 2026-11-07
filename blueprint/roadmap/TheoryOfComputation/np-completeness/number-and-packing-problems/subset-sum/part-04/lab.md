@@ -1,6 +1,6 @@
 # Labels of the SUBSET-SUM verifier
 
-**Labels of the SUBSET-SUM verifier.** The verifier has the labels $\mathrm{tgt}(z)$, reading
+The verifier has the labels $\mathrm{tgt}(z)$, reading
 the target; $\mathrm{next}$, starting the next number; $\mathrm{add}(c, z)$, adding a chosen
 number with carry $c$; $\mathrm{skip}(z)$, skipping an unchosen number; $\mathrm{fin}(c)$,
 carrying $c$ through the rest of the sum; $\mathrm{back}$, moving the new sum back;

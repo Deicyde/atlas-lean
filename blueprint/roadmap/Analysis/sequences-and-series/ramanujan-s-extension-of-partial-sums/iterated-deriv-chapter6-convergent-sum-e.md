@@ -1,6 +1,6 @@
 # Derivatives of Ramanujan's extension at the origin
 
-**Derivatives of Ramanujan's extension at the origin.** Let $f : \mathbb{R} \to \mathbb{R}$ be
+Let $f : \mathbb{R} \to \mathbb{R}$ be
 infinitely differentiable and let $\rho > 0$. Write $c_q = \sum_{k \ge 1} f^{(q)}(k)$ and
 $F(x) = c_0 - \sum_{k \ge 1} f(k + x)$, where a series that is not summable is given the value
 $0$. Suppose that the series $\sum_{k \ge 1} f^{(q)}(k)$ is summable for every $q \ge 0$, and

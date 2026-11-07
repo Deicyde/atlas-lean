@@ -1,6 +1,6 @@
 # The total zero is never an all-N total
 
-**The total zero is never an all-N total.** For every simple graph $G$ on the vertex set
+For every simple graph $G$ on the vertex set
 $\{0, \dots, n-1\}$ and every $k \in \mathbb{N}$, the number $0$ does not belong to the set of
 totals $m$ such that every $(k+1:k)$-pebbling game on $G$ with $m$ pebbles is an N-game. Indeed,
 the empty position admits no move, so it is a P-game.

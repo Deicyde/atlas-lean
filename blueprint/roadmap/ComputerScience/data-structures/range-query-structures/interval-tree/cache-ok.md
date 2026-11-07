@@ -1,6 +1,6 @@
 # Executable cache check for interval trees
 
-**Executable cache check for interval trees.** The Boolean cache check returns true on the
+The Boolean cache check returns true on the
 empty tree. On a node with stored height $h$, stored size $s$, stored maximum $m$, left subtree
 $L$, entry $e$ and right subtree $R$ it returns true exactly when
 $h = \max(\operatorname{height} L, \operatorname{height} R) + 1$,

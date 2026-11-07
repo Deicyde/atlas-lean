@@ -1,6 +1,6 @@
 # A weaker ramified bound for $n = 2^a$
 
-**A weaker ramified bound for $n = 2^a$.** Let $a \ge 1$, let $n = 2^a$, let $x > 1$ be a
+Let $a \ge 1$, let $n = 2^a$, let $x > 1$ be a
 natural number, let $\omega_n$ be the number of distinct prime factors of $x^n - 1$, and let
 $s_1 = 2 < s_2 = 3 < s_3 = 5 < \cdots$ be the primes in increasing order. Then
 

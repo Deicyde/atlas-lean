@@ -1,6 +1,6 @@
 # Legal cache transitions
 
-**Legal cache transitions.** For a capacity $k \in \mathbb{N}$, this is the labelled
+For a capacity $k \in \mathbb{N}$, this is the labelled
 transition system whose states are lists of blocks (the cache contents, in any order) and whose
 labels are cache events. Write $|C|$ for the length of a list $C$, $x :: C$ for $C$ with $x$
 prepended, and $C \setminus v$ for $C$ with the first occurrence of $v$ removed. There is a

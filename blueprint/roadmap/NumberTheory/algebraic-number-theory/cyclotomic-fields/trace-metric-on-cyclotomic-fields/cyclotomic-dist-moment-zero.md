@@ -1,6 +1,6 @@
 # The zeroth moment of the trace distance is one
 
-**The zeroth moment of the trace distance is one.** Let $p \ge 1$ and $N$ be natural numbers,
+Let $p \ge 1$ and $N$ be natural numbers,
 and let $K$ be a field generated over $\mathbb{Q}$ by a primitive $p$-th root of unity, with fixed
 primitive $p$-th root of unity $\omega \in K$. Let $d$ be the trace metric on $K$, given by
 $d(\alpha, \beta) \ge 0$ and

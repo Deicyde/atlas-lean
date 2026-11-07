@@ -1,6 +1,6 @@
 # Splitting of a separable extension over a separably closed field
 
-**Splitting of a separable extension over a separably closed field.** Let $L/K$ be a
+Let $L/K$ be a
 finite separable field extension, let $\Omega$ be a separably closed field that is a
 $K$-algebra, and write $\mathrm{Hom}_K(L, \Omega)$ for the set of $K$-algebra homomorphisms
 $L \to \Omega$. The splitting isomorphism is the isomorphism of $\Omega$-algebras from

@@ -1,6 +1,6 @@
 # Event exchangeable with respect to a sequence
 
-**Event exchangeable with respect to a sequence.** Let $\Omega$ and $S$ be measurable spaces
+Let $\Omega$ and $S$ be measurable spaces
 and let $X_0, X_1, \ldots : \Omega \to S$ be a sequence of maps. An event $E \subseteq \Omega$ is
 exchangeable with respect to $(X_n)$ if there is an exchangeable event $A \subseteq S^{\mathbb{N}}$
 such that $E = \{\omega \in \Omega : (X_n(\omega))_{n \in \mathbb{N}} \in A\}$.

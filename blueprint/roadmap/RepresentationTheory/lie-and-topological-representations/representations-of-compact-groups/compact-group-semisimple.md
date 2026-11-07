@@ -1,6 +1,6 @@
 # Representations of compact groups are semisimple
 
-**Representations of compact groups are semisimple.** Let $G$ be a compact topological group
+Let $G$ be a compact topological group
 and let $\rho$ be a representation of $G$ on a finite-dimensional real normed space $V$ such that
 the action map $G \times V \to V$, $(g, v) \mapsto \rho(g)(v)$, is continuous. Then $\rho$ is
 semisimple: every subrepresentation of $\rho$ has a complementary subrepresentation.

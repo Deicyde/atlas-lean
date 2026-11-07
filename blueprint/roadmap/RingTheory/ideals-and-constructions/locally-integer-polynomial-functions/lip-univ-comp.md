@@ -1,6 +1,6 @@
 # $\mathrm{LIP}(\mathbb{Z})$ is closed under composition
 
-**$\mathrm{LIP}(\mathbb{Z})$ is closed under composition.** If $f$ and $g$ lie in
+If $f$ and $g$ lie in
 $\mathrm{LIP}(\mathbb{Z})$, the ring of locally integer polynomial functions
 $\mathbb{Z} \to \mathbb{Z}$, then so does the composite $x \mapsto f(g(x))$.
 

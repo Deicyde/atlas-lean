@@ -1,6 +1,6 @@
 # Walking over a literal advances the literal count
 
-**Walking over a literal advances the literal count.** Let $\mathrm{cap}$ be a Boolean and
+Let $\mathrm{cap}$ be a Boolean and
 $n \in \mathbb{N}$ with $\mathrm{cap}$ false or $n < 3$; stacks are lists written top first,
 $w_m$ is the walking label after $m$ literals, $\mathrm{bit}(b)$ is the name-bit symbol carrying
 the Boolean $b$ and $\mathrm{lit}(p)$ is the polarity marker of polarity $p$. Let $l = (i, p)$ be

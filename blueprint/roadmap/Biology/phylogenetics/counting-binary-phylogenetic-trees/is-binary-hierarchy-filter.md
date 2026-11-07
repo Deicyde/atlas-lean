@@ -1,3 +1,3 @@
 # Binary hierarchy restricted below a member is a binary hierarchy
 
-**Binary hierarchy restricted below a member is a binary hierarchy.** The members of a binary hierarchy below a member form a binary hierarchy.
+The members of a binary hierarchy below a member form a binary hierarchy.

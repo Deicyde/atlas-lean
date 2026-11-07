@@ -1,6 +1,6 @@
 # Osgood's lemma at the origin
 
-**Osgood's lemma at the origin.** Let $E$ be a complex normed space and let $f(z, w)$ be a
+Let $E$ be a complex normed space and let $f(z, w)$ be a
 complex-valued function of $z \in E$ and $w \in \mathbb{C}$ such that $z \mapsto f(z, w)$ is
 complex differentiable on all of $E$ for every $w \in \mathbb{C}$ and $w \mapsto f(z, w)$ is
 complex differentiable on all of $\mathbb{C}$ for every $z \in E$. If there is a real number $M$

@@ -1,6 +1,6 @@
 # Lagrange inversion formula
 
-**Lagrange inversion formula.** Let $f, g : \mathbb{C} \to \mathbb{C}$ be analytic at $z_0$.
+Let $f, g : \mathbb{C} \to \mathbb{C}$ be analytic at $z_0$.
 There are $\varepsilon > 0$ and $\delta > 0$ such that for every $\alpha \in \mathbb{C}$ with
 $|\alpha| < \delta$ the equation $w = z_0 + \alpha f(w)$ has exactly one solution $w$ with
 $|w - z_0| < \varepsilon$, and for this solution the series

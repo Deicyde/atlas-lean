@@ -1,6 +1,6 @@
 # Bezout identity for polynomials without a common zero
 
-**Bezout identity for polynomials without a common zero.** Let $E$ be a complex Banach space
+Let $E$ be a complex Banach space
 and let $F, G : E \to \mathbb{C}$ be continuous polynomial functions with no common zero, that
 is, $G(x) \neq 0$ whenever $F(x) = 0$. Then there are continuous polynomial functions
 $\varphi, \psi : E \to \mathbb{C}$ such that $F(x) \varphi(x) + G(x) \psi(x) = 1$ for every

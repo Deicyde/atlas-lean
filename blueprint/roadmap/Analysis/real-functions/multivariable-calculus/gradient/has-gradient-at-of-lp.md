@@ -1,6 +1,6 @@
 # A Fréchet derivative given by a dot product is a gradient
 
-**A Fréchet derivative given by a dot product is a gradient.** Let $\iota$ be a finite type,
+Let $\iota$ be a finite type,
 let $f : \mathbb{R}^\iota \to \mathbb{R}$ and $g, z \in \mathbb{R}^\iota$, and suppose that, for the
 sup norm on $\mathbb{R}^\iota$, $f$ is Fréchet differentiable at $z$ with derivative
 $v \mapsto v \cdot g$. Then $f$, viewed as a function on the Euclidean space $\mathbb{R}^\iota$ with

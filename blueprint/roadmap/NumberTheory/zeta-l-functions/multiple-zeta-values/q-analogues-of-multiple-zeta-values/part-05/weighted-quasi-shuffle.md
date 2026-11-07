@@ -1,6 +1,6 @@
 # Weighted quasi-shuffle product
 
-**Weighted quasi-shuffle product.** Let $A$ be an alphabet and let $d$ assign to any two
+Let $A$ be an alphabet and let $d$ assign to any two
 letters $a, b \in A$ a finite formal $\mathbb{Q}$-linear combination
 $d(a, b) = \sum_c d(a, b)_c \, c$ of letters. The weighted quasi-shuffle product $u \ast v$ of
 two words over $A$ is the finite formal $\mathbb{Q}$-linear combination of words defined by

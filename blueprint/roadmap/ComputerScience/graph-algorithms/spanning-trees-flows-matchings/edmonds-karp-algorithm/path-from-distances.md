@@ -1,6 +1,6 @@
 # Distance-guided path reconstruction
 
-**Distance-guided path reconstruction.** Let $G$ be a directed graph with ordered adjacency
+Let $G$ be a directed graph with ordered adjacency
 lists, $d$ a partial labelling of its vertices by natural numbers, $t$ a vertex, and $\equiv$ a
 given Boolean test on pairs of vertices (not required to be equality). The reconstruction from
 a vertex $u$ with $k$ steps left returns the one-element list $[u]$ when $k = 0$ and $u \equiv t$

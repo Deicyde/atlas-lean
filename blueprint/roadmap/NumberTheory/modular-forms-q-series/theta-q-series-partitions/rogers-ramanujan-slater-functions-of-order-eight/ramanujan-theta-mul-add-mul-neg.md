@@ -1,6 +1,6 @@
 # Ramanujan's theta function: sum of products when $ab = cd$
 
-**Ramanujan's theta function: sum of products when $ab = cd$.** Let
+Let
 $f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta function. For
 complex numbers $a, b, c, d$ with $ab = cd$ and $|ab| < 1$,
 $f(a,b) f(c,d) + f(-a,-b) f(-c,-d) = 2 f(ac,bd) f(ad,bc)$.

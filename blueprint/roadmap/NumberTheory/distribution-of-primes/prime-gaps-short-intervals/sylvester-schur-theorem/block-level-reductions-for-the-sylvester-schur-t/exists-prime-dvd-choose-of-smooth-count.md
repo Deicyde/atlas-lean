@@ -1,6 +1,5 @@
 # Large prime divisor of the block binomial coefficient from the smooth-number count
 
-**Large prime divisor of the block binomial coefficient from the smooth-number count.**
 Let $n$ and $k$ be natural numbers, let $\pi(n)$ be the number of primes at most $n$, and let
 $\lfloor\sqrt{k+n-1}\rfloor$ be the integer square root. If
 $2^{\pi(n)} \lfloor\sqrt{k+n-1}\rfloor < n$, then some prime $p > n$ divides

@@ -1,6 +1,5 @@
 # $p$-soluble supplements of maximal subgroups of a Sylow subgroup force $p$-solubility
 
-**$p$-soluble supplements of maximal subgroups of a Sylow subgroup force $p$-solubility.**
 Let $p$ be a prime, $G$ a finite group whose order is divisible by $p$, and $P$ a Sylow
 $p$-subgroup of $G$. If every maximal subgroup $M$ of $P$ has a $p$-soluble supplement in $G$,
 that is, a $p$-soluble subgroup $K$ of $G$ with $MK = G$, then $G$ is $p$-soluble.

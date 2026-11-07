@@ -1,6 +1,6 @@
 # The sum of consecutive squares equation
 
-**The sum of consecutive squares equation.** Integers $a$, $b$, $c$ satisfy the sum of
+Integers $a$, $b$, $c$ satisfy the sum of
 consecutive squares (SoCS) equation when $2\,b(b+1)(2b+1) = a(a+1)(2a+1) + c(c+1)(2c+1)$.
 
 With $P_n = n(n+1)(2n+1)/6$ this is $P_a + P_c = 2P_b$ multiplied by $6$. For $a < b < c$ it is

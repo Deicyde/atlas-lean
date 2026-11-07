@@ -1,6 +1,6 @@
 # The sweep order holds weakly at the leftmost intersection
 
-**The sweep order holds weakly at the leftmost intersection.** Let finitely many segments in
+Let finitely many segments in
 the plane over a linearly ordered field be given, where a point $z$ has coordinates $(z_1, z_2)$
 and segment $j$ has left endpoint $l_j$ and right endpoint $r_j$ with $(l_j)_1 < (r_j)_1$. Write
 $y_j(t)$ for the height at abscissa $t$ of the line through $l_j$ and $r_j$. Let $p_x$ be such

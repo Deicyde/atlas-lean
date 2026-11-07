@@ -1,6 +1,6 @@
 # Data-channel transitions of the alternating-bit protocol with data
 
-**Data-channel transitions of the alternating-bit protocol with data.** The data channel is a
+The data channel is a
 lossy one-place channel whose content is either empty or a pair $(b, d)$ of a sequence bit $b$
 and a data bit $d$. Its transitions, as a list of pairs of a label and a successor content: the
 empty channel inputs on $\mathsf{send}(b, d)$ and then holds $(b, d)$, for the four pairs $(b, d)$

@@ -1,6 +1,6 @@
 # Singer's construction of $B_h$-sets
 
-**Singer's construction of $B_h$-sets.** Let $h \ge 2$, let $F$ be a finite field with $q$
+Let $h \ge 2$, let $F$ be a finite field with $q$
 elements, let $K$ be a field extension of $F$ of degree $h + 1$, let $\theta$ be a generator of
 the multiplicative group $K^\times$, and let $b$ be a natural number such that $\theta^b$ has
 degree $h + 1$ over $F$. Then the generalized Singer set $\mathrm{Singer}_h(q, b)$, a subset of

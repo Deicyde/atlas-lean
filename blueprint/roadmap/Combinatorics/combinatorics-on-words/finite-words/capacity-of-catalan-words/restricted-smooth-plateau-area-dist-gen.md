@@ -1,6 +1,6 @@
 # Continued fraction for the area series of restricted smooth words
 
-**Continued fraction for the area series of restricted smooth words.** For $j \ge 1$, let
+For $j \ge 1$, let
 $t^*(m, j; q) = \sum_w q^{w_1 + \cdots + w_m}$, the sum over the words $w = w_1 \cdots w_m$ over
 $\{1, \dots, j\}$ with $w_1 = w_m = j$ (there are none for $m = 0$), consecutive letters
 differing by at most $1$ and no two adjacent letters equal to $1$, and let

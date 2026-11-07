@@ -1,6 +1,6 @@
 # Exponential lower bound for Ulam word counts along a subsequence
 
-**Exponential lower bound for Ulam word counts along a subsequence.** Let $\#U_n$ be the
+Let $\#U_n$ be the
 number of Ulam words of length $n$ and $\alpha_0 = (\#U_{30} / (2 \cdot 31))^{1/30}$. For every
 real $\alpha$ with $1 < \alpha < \alpha_0$, every real $C$ and every natural number $N$, there
 is some $n \ge N$ with $C \alpha^n \le \#U_n$; that is,

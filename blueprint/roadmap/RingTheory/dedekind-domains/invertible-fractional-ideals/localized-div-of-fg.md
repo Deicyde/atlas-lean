@@ -1,6 +1,6 @@
 # Localization commutes with division by a finitely generated submodule
 
-**Localization commutes with division by a finitely generated submodule.** Let $R$, $S$ and $K$
+Let $R$, $S$ and $K$
 be commutative rings with algebra maps $R \to S \to K$ forming a scalar tower, let $p$ be a
 submonoid of $R$ such that $S$ is the localization of $R$ at $p$, and suppose the identity map of
 $K$ is a localization of the $R$-module $K$ at $p$. For an $R$-submodule $M$ of $K$ write

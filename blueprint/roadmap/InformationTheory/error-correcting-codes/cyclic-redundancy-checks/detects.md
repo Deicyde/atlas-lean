@@ -1,6 +1,6 @@
 # CRC error-detection guarantee
 
-**CRC error-detection guarantee.** Let $F$ be a field, let $g$ be a polynomial over $F$ with
+Let $F$ be a field, let $g$ be a polynomial over $F$ with
 at least two nonzero coefficients that is not divisible by $X$, let $m$ be a polynomial over $F$,
 and let $c$ be the CRC encoding of $m$ with generator $g$. Then $g$ does not divide $c + aX^i$ for
 any nonzero $a \in F$ and any natural number $i$, and $g$ does not divide $c + e$ for any

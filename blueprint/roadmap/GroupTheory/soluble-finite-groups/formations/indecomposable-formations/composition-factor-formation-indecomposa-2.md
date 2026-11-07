@@ -1,6 +1,6 @@
 # Mel'nikov's theorem on Kourovka Problem 12.97
 
-**Mel'nikov's theorem on Kourovka Problem 12.97.** Let $T$ be a finite non-abelian simple group,
+Let $T$ be a finite non-abelian simple group,
 and write $\mathfrak{F}_T$ for the class of groups having a subnormal series all of whose factors
 are isomorphic to $T$. Let $\mathfrak{M}$ and $\mathfrak{H}$ be formations whose finite members
 lie in $\mathfrak{F}_T$, each containing a nontrivial finite group and each missing some finite

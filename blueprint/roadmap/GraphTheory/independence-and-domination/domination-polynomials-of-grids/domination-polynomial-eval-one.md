@@ -1,6 +1,6 @@
 # The domination polynomial at one counts dominating sets
 
-**The domination polynomial at one counts dominating sets.** For every finite graph $G$, the
+For every finite graph $G$, the
 value at $1$ of the domination polynomial of $G$ equals the number of dominating sets of $G$.
 
 ## Sources

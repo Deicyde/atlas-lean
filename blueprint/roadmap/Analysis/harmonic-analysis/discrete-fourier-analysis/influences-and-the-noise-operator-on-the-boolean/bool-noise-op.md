@@ -1,6 +1,6 @@
 # Noise operator on the Boolean cube
 
-**Noise operator on the Boolean cube.** For a real number $\rho$ and a function $f$ from the
+For a real number $\rho$ and a function $f$ from the
 Boolean cube $\{-1, 1\}^n$ to $\mathbb{R}$, the noise operator $T_\rho$ sends $f$ to the function
 
 $$T_\rho f(x) = \sum_y \Bigl(\prod_{i < n} \frac{1 + \rho \sigma(x_i) \sigma(y_i)}{2}\Bigr) f(y),$$

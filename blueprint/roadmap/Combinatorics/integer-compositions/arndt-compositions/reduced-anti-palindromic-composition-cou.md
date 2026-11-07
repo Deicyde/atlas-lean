@@ -1,6 +1,6 @@
 # Reduced anti-palindromic compositions
 
-**Reduced anti-palindromic compositions.** For natural numbers $n$ and $m$, this is the number
+For natural numbers $n$ and $m$, this is the number
 of compositions $(\sigma_1, \ldots, \sigma_m)$ of $n$ into $m$ positive parts such that
 $\sigma_i > \sigma_{m+1-i}$ for every $i$ with $2i < m + 1$.
 

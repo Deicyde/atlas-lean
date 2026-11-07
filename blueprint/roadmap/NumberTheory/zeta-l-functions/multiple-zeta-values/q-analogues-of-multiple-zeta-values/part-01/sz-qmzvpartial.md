@@ -1,6 +1,6 @@
 # Partial sums of Schlesinger–Zudilin qMZVs
 
-**Partial sums of Schlesinger–Zudilin qMZVs.** For an index $(k_1, \dots, k_r)$ of natural
+For an index $(k_1, \dots, k_r)$ of natural
 numbers and a natural number $M$, the partial sum is the formal power series in $q$ over
 $\mathbb{Q}$
 

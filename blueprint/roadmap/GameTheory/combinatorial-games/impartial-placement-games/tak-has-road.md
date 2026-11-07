@@ -1,6 +1,6 @@
 # Roads in Impartial Tak
 
-**Roads in Impartial Tak.** Write the cells of the $n \times n$ board as pairs (row, column)
+Write the cells of the $n \times n$ board as pairs (row, column)
 in $\{0, \dots, n-1\}^2$. Impartial Tak has ended at a set $S$ of occupied cells when the tokens
 contain an orthogonal path from an edge of the board to the opposite edge: there are a token
 $a \in S$ and a cell $b$ joined by a sequence $a = p_0, p_1, \dots, p_k = b$ with $k \ge 0$, in

@@ -1,6 +1,6 @@
 # Global remainder bound for the Laurent expansion of $1/(e^v - 1)$
 
-**Global remainder bound for the Laurent expansion of $1/(e^v - 1)$.** For every natural
+For every natural
 number $N$ there is a constant $C \ge 0$ such that for every real number $v \neq 0$,
 
 $$

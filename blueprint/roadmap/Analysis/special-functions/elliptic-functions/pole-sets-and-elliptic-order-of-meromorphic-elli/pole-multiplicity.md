@@ -1,6 +1,6 @@
 # Pole multiplicity
 
-**Pole multiplicity.** For a function $f : \mathbb{C} \to \mathbb{C}$ and a point
+For a function $f : \mathbb{C} \to \mathbb{C}$ and a point
 $z \in \mathbb{C}$, let $\operatorname{ord}_z f \in \mathbb{Z} \cup \{\infty\}$ be the meromorphic
 order of $f$ at $z$, which by convention is $0$ when $f$ is not meromorphic at $z$. The pole
 multiplicity of $f$ at $z$ is the natural number $\max(0, -\operatorname{ord}_z f)$ when

@@ -1,6 +1,6 @@
 # Reading the target block
 
-**Reading the target block.** Let $p$ and $s$ be lists of bits, and write $\mathrm{delimit}(p)$
+Let $p$ and $s$ be lists of bits, and write $\mathrm{delimit}(p)$
 for the self-delimiting encoding of $p$ (each bit $b$ written as true followed by $b$, then a
 terminating false). Suppose the SUBSET-SUM verifier machine is in its target-reading state, with
 flag $z$ recording whether the bits read so far end in false and any value of its local Boolean

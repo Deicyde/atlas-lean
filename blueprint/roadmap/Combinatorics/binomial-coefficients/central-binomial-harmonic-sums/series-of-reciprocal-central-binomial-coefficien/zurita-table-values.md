@@ -1,6 +1,6 @@
 # Values from Zurita's Tables 1-4
 
-**Values from Zurita's Tables 1-4.** For $n = 2$ the coefficients $s_0, s_1, s_2$ of $S_2$ are
+For $n = 2$ the coefficients $s_0, s_1, s_2$ of $S_2$ are
 $-2/3$, $-8/3$ and $16/3$, and the constants $c_2$ and $c_4$ equal $5/3$ and $93/35$. For $n = 3$
 the coefficients $t_0, t_1$ of $T_1$ are $-1/10$ and $-3/5$, the coefficients $m_0, m_1, m_2$ of
 $M_2$ are $2/5$, $8/15$ and $16/15$, the constant $d_3$ equals $8/15$, and the coefficients of

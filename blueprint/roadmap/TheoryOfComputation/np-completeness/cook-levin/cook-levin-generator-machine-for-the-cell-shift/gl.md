@@ -1,6 +1,6 @@
 # Labels of the cell-shift generator
 
-**Labels of the cell-shift generator.** For natural numbers $N$, $K$, $g$ and $d$, a label is
+For natural numbers $N$, $K$, $g$ and $d$, a label is
 one of: a precomputation stage $\mathrm{pre}(s)$; a time-loop label $\mathrm{tHead}$,
 $\mathrm{tRest}$, $\mathrm{tw}(s)$ for a multiplication stage $s$, $\mathrm{t1a}$,
 $\mathrm{t1b}$, $\mathrm{t1c}$, $\mathrm{t1d}$, $\mathrm{tEnd}$ or $\mathrm{tEnd2}$; a setup or

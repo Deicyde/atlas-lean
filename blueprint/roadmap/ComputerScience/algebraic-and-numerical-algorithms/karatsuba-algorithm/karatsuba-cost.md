@@ -1,6 +1,6 @@
 # Karatsuba cost recurrence
 
-**Karatsuba cost recurrence.** The function $T$ on natural numbers defined by $T(n) = 1$ for
+The function $T$ on natural numbers defined by $T(n) = 1$ for
 $n \le 1$ and $T(n) = 3\,T(\lceil n/2 \rceil) + n$ for $n \ge 2$.
 
 It is the cost of Karatsuba multiplication on $n$ digits: one unit for a product of single

@@ -1,6 +1,6 @@
 # Exact acceptance probability of repeated trials on the sharp Freivalds example
 
-**Exact acceptance probability of repeated trials on the sharp Freivalds example.** Let
+Let
 $A = B = (1)$ and $C = (0)$ be $1 \times 1$ matrices over $\mathbb{Z}/2\mathbb{Z}$, and let $k$
 be a natural number. Run $k$ Freivalds trials on $A$, $B$, $C$ with seeds drawn independently and
 uniformly from $(\mathbb{Z}/2\mathbb{Z})^1$, accepting exactly when every trial accepts. Then the

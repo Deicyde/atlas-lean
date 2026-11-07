@@ -1,6 +1,6 @@
 # A split of the second sequence scores at most the Needleman–Wunsch optimum
 
-**A split of the second sequence scores at most the Needleman–Wunsch optimum.** Let
+Let
 $\sigma$ be an integer-valued substitution score on an alphabet, let $g$ be an integer gap
 score, and write $\mathrm{NW}(x, y)$ for the optimal Needleman–Wunsch global alignment score
 of sequences $x$ and $y$ under $\sigma$ and $g$. For sequences $x$, $y$ and natural numbers

@@ -1,6 +1,6 @@
 # Derivations survive language homomorphisms
 
-**Derivations survive language homomorphisms.** Let $h : L \to L'$ be a homomorphism of
+Let $h : L \to L'$ be a homomorphism of
 first-order languages, and write $h(\varphi)$ for the formula of $L'$ obtained from a formula
 $\varphi$ of $L$ by replacing each symbol by its image under $h$. Let $\Gamma$ be a finite list of
 formulas of $L$ with free variables in $\alpha$, and let $\varphi$ be a formula of $L$ with free

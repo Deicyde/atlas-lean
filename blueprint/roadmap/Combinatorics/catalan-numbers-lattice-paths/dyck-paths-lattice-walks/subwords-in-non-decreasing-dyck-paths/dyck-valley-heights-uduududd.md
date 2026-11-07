@@ -1,6 +1,6 @@
 # Valley heights of UDUUDUDD
 
-**Valley heights of UDUUDUDD.** The Dyck path $UDUUDUDD$ has exactly two valleys, of heights
+The Dyck path $UDUUDUDD$ has exactly two valleys, of heights
 $0$ and $1$ from left to right.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The abc conjecture
 
-**The abc conjecture.** For every real $\varepsilon > 0$ there is a real $C_\varepsilon > 0$
+For every real $\varepsilon > 0$ there is a real $C_\varepsilon > 0$
 such that for all integers $a$, $b$, $c$ with $a + b = c$ and $\gcd(a, b) = 1$,
 
 $$\max(|a|, |b|, |c|) \le C_\varepsilon \operatorname{rad}(abc)^{1 + \varepsilon},$$

@@ -1,6 +1,6 @@
 # 3-COLOR emitter: moving the walk side back
 
-**3-COLOR emitter: moving the walk side back.** Let $L$ be a list of token symbols each of
+Let $L$ be a list of token symbols each of
 which is a walk token (a name bit, a literal marker or the clause symbol), let $m$ be a quiescent
 state of the 3-COLOR emitter whose stack $E$ (the walk's other side) holds $L$, and let $v$ be a
 Boolean. Then there is a Boolean $v'$ such that the emitter runs in exactly $|L| + 1$ steps from

@@ -1,4 +1,4 @@
 # Strong continuity
 
-**Strong continuity.** `wfSemigroup t f → f` uniformly as `t → 0⁺`, for every continuous
+`wfSemigroup t f → f` uniformly as `t → 0⁺`, for every continuous
 `f`.

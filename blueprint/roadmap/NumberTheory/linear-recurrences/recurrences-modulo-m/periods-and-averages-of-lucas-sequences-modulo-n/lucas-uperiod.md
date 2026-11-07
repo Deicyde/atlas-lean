@@ -1,6 +1,6 @@
 # Period of a Lucas sequence modulo $m$
 
-**Period of a Lucas sequence modulo $m$.** For a Lucas sequence $U = U(P, Q)$ and a natural
+For a Lucas sequence $U = U(P, Q)$ and a natural
 number $m$, the least period $\pi_U(m)$ of $U$ modulo $m$ is the minimal period of the pair
 $(0, 1)$ under the map $(x, y) \mapsto (y, P y - Q x)$ on pairs of residues modulo $m$, that is,
 the least $r > 0$ with $U_r \equiv 0 \pmod m$ and $U_{r+1} \equiv 1 \pmod m$, and $0$ if there

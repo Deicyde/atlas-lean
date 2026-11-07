@@ -1,6 +1,6 @@
 # Quickselect
 
-**Quickselect.** Deterministic quickselect takes a list $L$ over a linear order and a
+Deterministic quickselect takes a list $L$ over a linear order and a
 zero-based rank $k$ and returns an element or no element, together with its cost, the number
 of element comparisons it makes. If $k \ge |L|$, it returns no element at no cost. Otherwise
 it runs the following recursion, starting from the list $L$ and the rank $k$. On an empty list

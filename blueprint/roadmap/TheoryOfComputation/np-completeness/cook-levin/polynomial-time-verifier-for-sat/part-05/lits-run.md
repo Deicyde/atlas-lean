@@ -1,6 +1,6 @@
 # Reading the literals of a clause
 
-**Reading the literals of a clause.** Let $C$ be a clause with literals
+Let $C$ be a clause with literals
 $(n_1, p_1), \dots, (n_k, p_k)$, let $u$ be the concatenation of their literal codes, and let $r$,
 $w$ be bit strings, $t$, $b$ stacks of symbols, $c$ a natural number and $v$ a bit. Started at
 label $\mathsf{lits}$ with internal bit $v$, the bits of $u$ followed by $r$ on the formula stack

@@ -1,6 +1,6 @@
 # Every term recurs in the throwback sequence
 
-**Every term recurs in the throwback sequence.** Let $X = (x_0, x_1, \dots)$ be a sequence of
+Let $X = (x_0, x_1, \dots)$ be a sequence of
 pairwise distinct positive integers, and let $T(X) = (t_0, t_1, \dots)$ be its throwback
 sequence. Then every term $x_j$ of $X$ appears infinitely often in $T(X)$: there are infinitely
 many $k$ with $t_k = x_j$.

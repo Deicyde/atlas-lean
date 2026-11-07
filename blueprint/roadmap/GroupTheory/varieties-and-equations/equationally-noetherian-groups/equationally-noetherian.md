@@ -1,6 +1,6 @@
 # Equationally Noetherian groups (Kourovka 14.20)
 
-**Equationally Noetherian groups (Kourovka 14.20).** A group $G$ is equationally Noetherian
+A group $G$ is equationally Noetherian
 (has the Noetherian Equation Property) if for every $n \in \mathbb{N}$ and every set $S$ of
 equations over $G$ in the unknowns $t_0, \dots, t_{n-1}$, that is, every subset $S$ of the free
 product $G * F_n$ of $G$ with the free group $F_n$ on $t_0, \dots, t_{n-1}$, there is a finite

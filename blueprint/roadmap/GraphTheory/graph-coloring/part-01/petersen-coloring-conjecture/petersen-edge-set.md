@@ -1,6 +1,6 @@
 # Edges of the Petersen graph
 
-**Edges of the Petersen graph.** The edge set of the Petersen graph on
+The edge set of the Petersen graph on
 $\mathbb{Z}/5\mathbb{Z} \times \{\mathrm{false}, \mathrm{true}\}$ consists of the unordered
 pairs $\{(i, \mathrm{false}), (i + 1, \mathrm{false})\}$ (the outer 5-cycle),
 $\{(i, \mathrm{false}), (i, \mathrm{true})\}$ (the spokes) and

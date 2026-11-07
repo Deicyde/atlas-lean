@@ -1,6 +1,6 @@
 # Itty–Rosin–Carstensen–Reichman code of dimension 10 for the 7-cycle
 
-**Itty–Rosin–Carstensen–Reichman code of dimension 10 for the 7-cycle.** There is a finite
+There is a finite
 set $A$ of words of length $10$ over $\mathbb{Z}/7\mathbb{Z}$ that is an independent code for the
 $7$-cycle and has exactly $134753$ elements.
 

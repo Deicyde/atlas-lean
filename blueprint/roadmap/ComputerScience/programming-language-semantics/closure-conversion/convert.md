@@ -1,6 +1,6 @@
 # Closure conversion with accessors
 
-**Closure conversion with accessors.** Let $\mathit{acc}$ be a family of target terms indexed
+Let $\mathit{acc}$ be a family of target terms indexed
 by the natural numbers (accessor $i$ fetches source variable $i$) and $n$ a natural number (the
 number of source variables in scope). The conversion $\mathcal{C}(\mathit{acc}, n, t)$ of a
 source term $t$ is defined by recursion on $t$. A variable $i$ converts to $\mathit{acc}(i)$. A

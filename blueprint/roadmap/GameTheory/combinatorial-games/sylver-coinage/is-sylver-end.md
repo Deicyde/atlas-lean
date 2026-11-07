@@ -1,6 +1,6 @@
 # Ends of a Sylver Coinage position
 
-**Ends of a Sylver Coinage position.** Let $M$ be a position of Sylver Coinage with set of
+Let $M$ be a position of Sylver Coinage with set of
 legal moves $L(M)$. A natural number $x$ is an end of $M$ if $x \in L(M)$ and every
 $y \in L(M)$ with $y \ne x$ is still a legal move of the position $M \cup \{x\}$; that is,
 naming $x$ eliminates no other legal move.

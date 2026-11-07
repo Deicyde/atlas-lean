@@ -1,6 +1,6 @@
 # The Robin exceptional set is empty up to $7!$
 
-**The Robin exceptional set is empty up to $7!$.** For every real $x \le 7! = 5040$, the
+For every real $x \le 7! = 5040$, the
 Robin exceptional set up to $x$ is empty; that is, its cardinality $N_R(x)$ is $0$.
 
 ## Sources

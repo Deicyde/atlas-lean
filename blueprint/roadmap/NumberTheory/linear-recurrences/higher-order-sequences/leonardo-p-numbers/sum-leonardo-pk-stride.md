@@ -1,6 +1,6 @@
 # Stride sums of the generalized Leonardo $p$-numbers
 
-**Stride sums of the generalized Leonardo $p$-numbers.** Let $p \ge 1$ and $k \ge 1$ be
+Let $p \ge 1$ and $k \ge 1$ be
 natural numbers, and let $\mathcal{L}_{p,k}$ denote the generalized Leonardo $p$-numbers
 ($\mathcal{L}_{p,k}(j) = 1$ for $0 \le j \le p$ and
 $\mathcal{L}_{p,k}(j) = \mathcal{L}_{p,k}(j-1) + \mathcal{L}_{p,k}(j-p-1) + k$ for $j > p$).

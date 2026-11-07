@@ -1,6 +1,6 @@
 # The chosen Frobenius is an arithmetic Frobenius at an unramified prime
 
-**The chosen Frobenius is an arithmetic Frobenius at an unramified prime.** Let $m$ be
+Let $m$ be
 a modulus of a number field $K$, let $L / K$ be a Galois extension of number fields that is
 unramified outside $m$, and let $\mathfrak p$ be a finite prime of $K$ not dividing the
 finite part of $m$, with chosen Frobenius element $\sigma \in \mathrm{Gal}(L/K)$. Then there

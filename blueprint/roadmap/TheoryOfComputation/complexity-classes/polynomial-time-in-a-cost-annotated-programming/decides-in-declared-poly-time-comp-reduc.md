@@ -1,6 +1,6 @@
 # Declared polynomial time is preserved under precomposition with a reduction
 
-**Declared polynomial time is preserved under precomposition with a reduction.** Let $L_1$ and
+Let $L_1$ and
 $L_2$ be decision problems, let $f$ be a declared-time many-one reduction from $L_1$ to $L_2$, and
 let $g$ be a timed function from lists of Booleans to Booleans that decides in declared polynomial
 time. Then the timed function that on input $x$ returns $g(f(x))$, with declared time the declared

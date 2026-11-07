@@ -1,6 +1,6 @@
 # Shadowing property
 
-**Shadowing property.** Let $T : \mathbb{R}^d \to \mathbb{R}^d$ be a map, write $T^n$ for its
+Let $T : \mathbb{R}^d \to \mathbb{R}^d$ be a map, write $T^n$ for its
 $n$-fold iterate, and let $K \subseteq \mathbb{R}^d$. The set $K$ has the shadowing property for
 $T$ if there is an open set $U \subseteq \mathbb{R}^d$ containing $K$ such that for every
 $\delta > 0$ there is $\varepsilon > 0$ with the following property: for every $\varepsilon$-pseudo

@@ -1,6 +1,6 @@
 # Building from a nonempty list with group bound zero gives an invalid trie
 
-**Building from a nonempty list with group bound zero gives an invalid trie.** For every
+For every
 natural number $w$ and every nonempty list $l$ of $w$-bit keys, the grouped y-fast trie with
 group bound $B = 0$ built from $l$ is not valid.
 

@@ -1,6 +1,6 @@
 # Inverse Cheeger constant of the standard Gaussian
 
-**Inverse Cheeger constant of the standard Gaussian.** For every $n \ge 1$, the standard
+For every $n \ge 1$, the standard
 Gaussian measure on $\mathbb{R}^n$ has inverse Cheeger constant exactly $\sqrt{\pi/2}$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # The map $V$ on lists
 
-**The map $V$ on lists.** The map $V$ sends a list $(c_1, c_2, \dots)$ of natural
+The map $V$ sends a list $(c_1, c_2, \dots)$ of natural
 numbers to the concatenation of the images of its consecutive pairs $(c_1, c_2)$, $(c_3, c_4)$,
 and so on, where $1^j$ denotes $j$ parts equal to $1$: a pair $(a, b)$ with $b \le a$ goes to
 $(1^{a - b}, 2b)$; a pair $(a, b)$ with $b > a$ goes to $(1^{a + b - 2k - 1}, 2k + 1)$, where

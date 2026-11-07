@@ -1,6 +1,6 @@
 # A common generating function for three sets of eight patterns
 
-**A common generating function for three sets of eight patterns.** Let
+Let
 $B_1 = \{000, 010, 100, 101, 102, 120, 201, 210\}$,
 $B_2 = \{000, 010, 100, 102, 110, 120, 201, 210\}$ and
 $B_3 = \{000, 010, 101, 102, 110, 120, 201, 210\}$, where a pattern is written as a digit string

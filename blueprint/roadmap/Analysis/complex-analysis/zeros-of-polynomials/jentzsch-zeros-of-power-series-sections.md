@@ -1,6 +1,6 @@
 # Jentzsch's theorem
 
-**Jentzsch's theorem.** Let $(a_k)_{k \ge 0}$ be complex numbers such that the power series
+Let $(a_k)_{k \ge 0}$ be complex numbers such that the power series
 $\sum_{k \ge 0} a_k z^k$ has radius of convergence $1$, and for $n \ge 0$ let
 $s_n(z) = \sum_{k=0}^{n} a_k z^k$ be its $n$-th partial sum. Then for every complex $z$ with
 $|z| = 1$, every real $\varepsilon > 0$ and every natural number $N$, there are $n \ge N$ and a

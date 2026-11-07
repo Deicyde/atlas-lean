@@ -1,6 +1,6 @@
 # The Artin–Hasse exponential as a product
 
-**The Artin–Hasse exponential as a product.** Let $p$ be a prime, let $\mu$ be the Möbius
+Let $p$ be a prime, let $\mu$ be the Möbius
 function and let $F(z) = \exp\big(\sum_{j \ge 0} z^{p^j} / p^j\big) \in \mathbb{Q}[[z]]$ be the
 Artin–Hasse exponential. For $d \ge 1$ and $a \in \mathbb{Q}$ write
 $(1 - z^d)^a = \exp\big(a \log(1 - z^d)\big)$, where $\log(1 - z^d) = -\sum_{k \ge 1} z^{dk}/k$.

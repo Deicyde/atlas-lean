@@ -1,6 +1,6 @@
 # Vertices of the generalized Cohn tree are Cohn triples over the Markov tree
 
-**Vertices of the generalized Cohn tree are Cohn triples over the Markov tree.** For every
+For every
 natural number $k$, every integer $\ell$ and every path $w$ (a finite sequence of left and
 right steps), the vertex $(P, Q, R)$ of the $k$-generalized Cohn tree $\mathrm{GCT}(k, \ell)$
 at $w$ is a $k$-generalized Cohn triple associated with the vertex $(a, b, c)$ of the

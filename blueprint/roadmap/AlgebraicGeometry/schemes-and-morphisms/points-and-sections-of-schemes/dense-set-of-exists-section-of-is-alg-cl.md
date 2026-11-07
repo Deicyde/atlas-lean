@@ -1,3 +1,3 @@
 # Density of rational points over an algebraically closed field
 
-**Density of rational points over an algebraically closed field.** Rational points over an algebraically closed field are dense.
+Rational points over an algebraically closed field are dense.

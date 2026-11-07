@@ -1,6 +1,6 @@
 # Local shape of a position in a permutation
 
-**Local shape of a position in a permutation.** Let $\sigma$ be a permutation of
+Let $\sigma$ be a permutation of
 $\{0, 1, \dots, n-1\}$ and let $i$ be a position. If $i + 2 < n$, then $i$ is exactly one of a
 double ascent, a double descent, a peak or a valley of $\sigma$; otherwise $i$ is none of them.
 That is, the number of these four properties that $i$ has is $1$ when $i + 2 < n$ and $0$

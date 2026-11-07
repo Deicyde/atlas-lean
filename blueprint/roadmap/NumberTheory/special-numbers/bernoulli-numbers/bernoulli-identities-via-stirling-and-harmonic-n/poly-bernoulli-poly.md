@@ -1,6 +1,6 @@
 # Poly-Bernoulli polynomials
 
-**Poly-Bernoulli polynomials.** For a natural number $n$, an integer $k$ and a rational number
+For a natural number $n$, an integer $k$ and a rational number
 $x$, the poly-Bernoulli polynomial of degree $n$ and order $k$ at $x$ is the rational number
 
 $$B_n^{(k)}(x) = \sum_{i=0}^{n} \binom{n}{i} B_i^{(k)} x^{n-i},$$

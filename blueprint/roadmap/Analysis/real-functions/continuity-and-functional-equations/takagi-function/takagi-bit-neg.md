@@ -1,6 +1,6 @@
 # Binary digits at negative positions vanish
 
-**Binary digits at negative positions vanish.** For every natural number $n$ and every
+For every natural number $n$ and every
 integer $i < 0$, the binary digit $n_i$ of $n$ is $0$.
 
 ## Sources

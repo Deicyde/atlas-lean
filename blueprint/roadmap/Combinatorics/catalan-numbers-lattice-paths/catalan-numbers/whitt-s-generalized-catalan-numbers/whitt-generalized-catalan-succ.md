@@ -1,6 +1,6 @@
 # Whitt's generalized Catalan numbers in the source's indexing
 
-**Whitt's generalized Catalan numbers in the source's indexing.** For every rational number
+For every rational number
 $\alpha$ and every natural number $n$, Whitt's generalized Catalan number $C(\alpha, n + 1)$ is
 
 $$C(\alpha, n + 1) = \sum_{k=0}^{n} \left(1 - \frac{k}{n+1}\right) \binom{n+k}{k} \alpha^k.$$

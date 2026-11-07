@@ -1,6 +1,6 @@
 # Existence of an inaccessible with no inaccessibles below it
 
-**Existence of an inaccessible with no inaccessibles below it.** If any inaccessible exists, some inaccessible has no inaccessibles below it:
+If any inaccessible exists, some inaccessible has no inaccessibles below it:
 minimize over the initial ordinals of inaccessible cardinals
 (`WellFounded.has_min`), and any member of `inaccessibleBelow` would give a
 smaller one.

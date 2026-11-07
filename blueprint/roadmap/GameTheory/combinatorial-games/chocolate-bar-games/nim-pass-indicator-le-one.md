@@ -1,6 +1,6 @@
 # The Nim pass indicator is at most one
 
-**The Nim pass indicator is at most one.** For every $s \in \mathbb{N}$ and all
+For every $s \in \mathbb{N}$ and all
 $m, x \in \mathbb{N}^s$, the pass indicator of $m$ at $x$ is at most $1$; that is, it takes values
 in $\{0, 1\}$.
 

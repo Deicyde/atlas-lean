@@ -1,6 +1,6 @@
 # The inverse of the matrix $R_\alpha(n)$
 
-**The inverse of the matrix $R_\alpha(n)$.** For a sequence
+For a sequence
 $\alpha = (\alpha_0, \alpha_1, \dots)$ of rationals, let
 $\Psi_\alpha(k) = \sum_{l=0}^{k-1} \frac{\alpha_l}{(k-1-l)!}$ and
 $\Omega(\alpha, j) = \sum_{l=0}^{j-1} (j-1)^{\underline{l}} \, \alpha_l$, where

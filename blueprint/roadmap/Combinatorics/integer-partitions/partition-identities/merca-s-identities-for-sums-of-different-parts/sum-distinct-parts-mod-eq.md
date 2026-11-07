@@ -1,6 +1,6 @@
 # Sum of different parts congruent to $r$ modulo $m$
 
-**Sum of different parts congruent to $r$ modulo $m$.** For natural numbers $m$, $r$, $n$,
+For natural numbers $m$, $r$, $n$,
 $a_{r,m}(n)$ is the sum, over all partitions $\mu$ of $n$, of the different parts $x$ of $\mu$
 with $x \bmod m = r$; a part contributes $x$ once regardless of its multiplicity. It is used
 with $0 \le r < m$, where $x \bmod m = r$ means $x \equiv r \pmod m$.

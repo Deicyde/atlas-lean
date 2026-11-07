@@ -1,6 +1,6 @@
 # Internal congruence $\mathrm{PD}_2(16n) \equiv \mathrm{PD}_2(4n) \pmod 8$
 
-**Internal congruence $\mathrm{PD}_2(16n) \equiv \mathrm{PD}_2(4n) \pmod 8$.** Write
+Write
 $\mathrm{PD}_2(m)$ for the number of partitions of $m$ with designated summands in which every part
 is odd. For every natural number $n$, $\mathrm{PD}_2(16n) \equiv \mathrm{PD}_2(4n) \pmod 8$.
 

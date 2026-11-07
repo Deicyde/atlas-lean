@@ -1,6 +1,6 @@
 # Zero-one law for weighted products of consecutive Lüroth digits
 
-**Zero-one law for weighted products of consecutive Lüroth digits.** Let $m \ge 1$, let
+Let $m \ge 1$, let
 $t_0, \dots, t_{m-1}$ be positive reals, let $T = \max_i t_i$ and let $\ell$ be the number of
 indices $j$ with $t_j = T$. Let $(\Psi(n))_{n \ge 0}$ be a sequence of positive reals for which
 there is $c > 1$ with $\Psi(n) \ge c$ for all sufficiently large $n$ (equivalently,

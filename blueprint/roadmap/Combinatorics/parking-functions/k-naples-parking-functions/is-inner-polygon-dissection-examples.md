@@ -1,6 +1,6 @@
 # Examples of $r$-in-$s$ dissections
 
-**Examples of $r$-in-$s$ dissections.** For the convex polygons with vertices
+For the convex polygons with vertices
 $0, 1, \dots, s - 1$: the square ($s = 4$) with no diagonals is a $4$-in-$4$ dissection whose
 quadrilateral has all four vertices; the pentagon ($s = 5$) with the single diagonal $(0, 2)$
 is a $4$-in-$5$ dissection with quadrilateral on the vertices $0, 2, 3, 4$, but not with

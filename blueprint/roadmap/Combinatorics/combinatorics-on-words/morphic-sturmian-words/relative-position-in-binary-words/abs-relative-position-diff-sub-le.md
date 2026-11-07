@@ -1,6 +1,6 @@
 # Relative position increments without long runs of b
 
-**Relative position increments without long runs of b.** Let $w = \ell_0 \ell_1 \ell_2 \cdots$
+Let $w = \ell_0 \ell_1 \ell_2 \cdots$
 be an infinite word over the letters $a$ and $b$ in which both letters occur infinitely often and
 whose first letter $\ell_0$ is $a$. Let $p_b$ be its position function for the letter $b$, let $r$
 be its relative position function, and write $\Delta s(n) = s(n+1) - s(n)$. Let $k$ be a natural

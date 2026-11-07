@@ -1,6 +1,6 @@
 # Elements of $H^\infty$
 
-**Elements of $H^\infty$.** The space whose points are the members of the subring $H^\infty$
+The space whose points are the members of the subring $H^\infty$
 of complex-valued functions on the open unit disc $\mathbb{D}$, that is, the bounded functions
 on $\mathbb{D}$ that agree on $\mathbb{D}$ with a function complex differentiable there.
 

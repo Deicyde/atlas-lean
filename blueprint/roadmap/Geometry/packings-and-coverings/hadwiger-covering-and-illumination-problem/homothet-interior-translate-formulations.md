@@ -1,6 +1,6 @@
 # Two equivalent formulations of Hadwiger's covering conjecture
 
-**Two equivalent formulations of Hadwiger's covering conjecture.** The following statements
+The following statements
 are equivalent: for every $n \ge 1$, every convex body $K \subseteq \mathbb{R}^n$ is covered by at
 most $2^n$ homothets $v_i + r_i K$ with $v_i \in \mathbb{R}^n$ and $0 < r_i < 1$; and for every
 $n \ge 1$, every convex body $K \subseteq \mathbb{R}^n$ is covered by $2^n$ translates of its

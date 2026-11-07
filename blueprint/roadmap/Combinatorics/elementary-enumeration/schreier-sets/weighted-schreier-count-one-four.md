@@ -1,6 +1,6 @@
 # Weighted Schreier count $a_{1,4}$
 
-**Weighted Schreier count $a_{1,4}$.** The weighted Schreier count $a_{1,4}$ equals $6$.
+The weighted Schreier count $a_{1,4}$ equals $6$.
 
 ## Sources
 

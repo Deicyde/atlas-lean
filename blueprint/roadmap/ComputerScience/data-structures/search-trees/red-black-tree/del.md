@@ -1,6 +1,6 @@
 # Unbalanced red-black tree deletion
 
-**Unbalanced red-black tree deletion.** For a key $x$ of a linearly ordered type, unbalanced
+For a key $x$ of a linearly ordered type, unbalanced
 deletion of $x$ from a red-black tree is defined by recursion on the tree. The empty tree stays
 empty. At a node with color $c$, left subtree $l$, key $k$ and right subtree $r$: if $x < k$, the
 result is the node with color $c$, left subtree the unbalanced deletion of $x$ from $l$, key $k$

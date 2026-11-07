@@ -1,6 +1,5 @@
 # Expansion of the logarithmic derivative of the k-th derivative (Lemma 6, zeros case)
 
-**Expansion of the logarithmic derivative of the k-th derivative (Lemma 6, zeros case).**
 Let $F$ be a function in the Selberg class with Dirichlet coefficients $a(n)$, write $F^{(k)}$ for
 the $k$-th derivative of $F$, let $k \ge 1$, and let $\ell \ge 2$ be such that $a(\ell) \ne 0$
 and $a(n) = 0$ for $2 \le n < \ell$. Then there is a real number $E$ such that for every

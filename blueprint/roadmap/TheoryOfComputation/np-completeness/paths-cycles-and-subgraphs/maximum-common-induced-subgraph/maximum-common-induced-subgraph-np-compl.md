@@ -1,6 +1,6 @@
 # MAXIMUM COMMON INDUCED SUBGRAPH is NP-complete
 
-**MAXIMUM COMMON INDUCED SUBGRAPH is NP-complete.** The decision problem MAXIMUM COMMON
+The decision problem MAXIMUM COMMON
 INDUCED SUBGRAPH belongs to NP, and every decision problem in NP reduces to it by a
 polynomial-time many-one reduction.
 

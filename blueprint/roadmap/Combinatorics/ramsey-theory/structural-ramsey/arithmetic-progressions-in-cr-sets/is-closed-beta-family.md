@@ -1,6 +1,6 @@
 # Ultrafilters inside a Ramsey family form a closed set
 
-**Ultrafilters inside a Ramsey family form a closed set.** Let $F$ be a family of subsets of a
+Let $F$ be a family of subsets of a
 set $S$ with the Ramsey property. Then the set $\beta(F)$ of ultrafilters on $S$ all of whose
 members lie in $F$ is closed in the space $\beta S$ of all ultrafilters on $S$.
 

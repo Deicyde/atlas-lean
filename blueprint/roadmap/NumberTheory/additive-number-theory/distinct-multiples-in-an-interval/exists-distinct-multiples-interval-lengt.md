@@ -1,6 +1,6 @@
 # Shifting the interval can greatly increase the least length
 
-**Shifting the interval can greatly increase the least length.** For natural numbers $n$ and
+For natural numbers $n$ and
 $m$, let $f(n, m)$ be the least natural number $L$ such that the interval $(m, m + L]$ contains
 distinct multiples of $1, \dots, n$. For all sufficiently large natural numbers $n$ there is a
 positive integer $m$ with

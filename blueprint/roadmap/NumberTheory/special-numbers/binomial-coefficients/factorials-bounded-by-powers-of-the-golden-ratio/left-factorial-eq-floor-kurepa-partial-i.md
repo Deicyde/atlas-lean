@@ -1,6 +1,6 @@
 # Floor formulas for the left factorial
 
-**Floor formulas for the left factorial.** Let $!n = \sum_{k=0}^{n-1} k!$ be the left
+Let $!n = \sum_{k=0}^{n-1} k!$ be the left
 factorial, let $K_n(x) = \int_0^x e^{-t} \sum_{k=0}^{n-1} t^k \, dt$ be Kurepa's partial integral,
 let $h(y) = y e^y$ be the Lambert map, and let $\alpha(n)$ be the least positive integer $m$ with
 $n! \le \varphi^m$, where $\varphi$ is the golden ratio. Then the following hold.

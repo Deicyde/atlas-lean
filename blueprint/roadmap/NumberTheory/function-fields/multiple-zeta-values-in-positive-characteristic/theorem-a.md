@@ -1,6 +1,6 @@
 # Brown's theorem in positive characteristic
 
-**Brown's theorem in positive characteristic.** Let $F$ be a finite field with $q$ elements,
+Let $F$ be a finite field with $q$ elements,
 $K = F(t)$, and $w$ a positive integer. Let $\mathcal{Z}_w$ be the $K$-vector space spanned by
 the multiple zeta values over $F$ of weight $w$, and let $\mathcal{T}_w$ be the set of multiple
 zeta values $\zeta_A(s_1, \dots, s_r)$ with $r \ge 1$, positive integers $s_1, \dots, s_r$ with

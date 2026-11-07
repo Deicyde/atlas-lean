@@ -1,6 +1,6 @@
 # Inverse theorem for bounded subsequence sums of positive sequences
 
-**Inverse theorem for bounded subsequence sums of positive sequences.** Let $k \ge 2$, let
+Let $k \ge 2$, let
 $a_1 < \dots < a_k$ be positive integers and $A = \{a_1, \dots, a_k\}$, let $t_1, \dots, t_k$ be
 positive integers, let $\mathcal{A}$ be the sequence in which each $a_i$ occurs $t_i$ times, and
 let $h = t_1 + \dots + t_k$. Let $\alpha, \beta$ be natural numbers with

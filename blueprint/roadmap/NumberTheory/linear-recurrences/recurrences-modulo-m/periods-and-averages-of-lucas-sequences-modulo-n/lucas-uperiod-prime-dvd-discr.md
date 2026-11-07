@@ -1,6 +1,6 @@
 # Primes dividing the discriminant when $Q = \pm 1$
 
-**Primes dividing the discriminant when $Q = \pm 1$.** Let $U = U(P, Q)$ be a Lucas sequence
+Let $U = U(P, Q)$ be a Lucas sequence
 and let $\ell$ be a prime dividing its discriminant $D = P^2 - 4Q$. Write $\pi_U(m)$ and
 $\rho_U(m)$ for the least period and the least restricted period of $U$ modulo $m$. If $Q = -1$,
 then $\ell = 2$ or $\ell \equiv 1 \pmod 4$. If $Q = 1$, then $P \equiv 2 \pmod \ell$ or

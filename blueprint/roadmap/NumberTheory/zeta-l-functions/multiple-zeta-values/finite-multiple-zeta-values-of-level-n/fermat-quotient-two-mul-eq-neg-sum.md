@@ -1,6 +1,6 @@
 # Skula–Dobson–Ichimura congruence for the Fermat quotient of $2$
 
-**Skula–Dobson–Ichimura congruence for the Fermat quotient of $2$.** Let $p$ be an odd prime
+Let $p$ be an odd prime
 and $N$ a positive integer with $p \nmid N$. Write $q_p(2) = (2^{p-1} - 1)/p$ for the Fermat
 quotient of $2$, and for integers $i \ge 0$ and $M \ge 1$ let $s_p(i, M) \in \mathbb{Z}/p\mathbb{Z}$
 be the sum of $m^{-1}$ over the integers $m$ with $0 < m < p$ and $ip/M < m < (i+1)p/M$. Then

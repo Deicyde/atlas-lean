@@ -1,6 +1,6 @@
 # Hyperlucas numbers in terms of Lucas numbers
 
-**Hyperlucas numbers in terms of Lucas numbers.** Let $L_n$ denote the Lucas numbers and
+Let $L_n$ denote the Lucas numbers and
 let $L^{(r)}_n$ denote the hyperlucas numbers, the hypersequence of generation $r$ of $(L_n)$.
 For all natural numbers $r$ and $n$, in the integers,
 

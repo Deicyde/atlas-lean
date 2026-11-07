@@ -1,6 +1,6 @@
 # Subharmonic functions on the plane
 
-**Subharmonic functions on the plane.** A function
+A function
 $\varphi : \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ is subharmonic if it is upper semicontinuous
 and, for every point $(a, b)$ of the plane and every radius $r > 0$,
 

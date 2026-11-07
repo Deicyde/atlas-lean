@@ -1,6 +1,6 @@
 # Partition-sum expansion of $\binom{nm}{l}$
 
-**Partition-sum expansion of $\binom{nm}{l}$.** Let $n$ and $m$ be positive natural numbers and
+Let $n$ and $m$ be positive natural numbers and
 let $l$ be a natural number with $1 \le l \le nm$. Let $P$ be the set of tuples
 $s = (s_1, \dots, s_m)$ of natural numbers with $\sum_{j=1}^{m} j\,s_j = l$, and for $s \in P$
 write $T_j(s) = s_{j+1} + \dots + s_m$. Then

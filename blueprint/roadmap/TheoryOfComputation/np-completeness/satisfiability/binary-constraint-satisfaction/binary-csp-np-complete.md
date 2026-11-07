@@ -1,6 +1,6 @@
 # BINARY CONSTRAINT SATISFACTION is NP-complete
 
-**BINARY CONSTRAINT SATISFACTION is NP-complete.** The decision problem BINARY CONSTRAINT
+The decision problem BINARY CONSTRAINT
 SATISFACTION over bitstrings belongs to NP, and every decision problem in NP has a
 polynomial-time many-one reduction to it.
 

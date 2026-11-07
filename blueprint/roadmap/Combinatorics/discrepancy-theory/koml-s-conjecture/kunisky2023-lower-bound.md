@@ -1,6 +1,6 @@
 # Kunisky's lower bound for the Komlós constant (statement)
 
-**Kunisky's lower bound for the Komlós constant (statement).** The statement that the Komlós
+The statement that the Komlós
 constant is at least $1 + \sqrt{2}$.
 
 The bound concerns the supremum over all dimensions; it does not assert that any single

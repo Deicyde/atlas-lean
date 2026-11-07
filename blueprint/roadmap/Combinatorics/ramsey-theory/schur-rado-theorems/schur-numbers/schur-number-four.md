@@ -1,6 +1,6 @@
 # The fourth Schur number
 
-**The fourth Schur number.** The Schur number $S(4)$ equals $44$.
+The Schur number $S(4)$ equals $44$.
 
 ## Sources
 

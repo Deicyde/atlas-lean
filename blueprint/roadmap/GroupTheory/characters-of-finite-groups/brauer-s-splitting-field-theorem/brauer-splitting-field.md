@@ -1,6 +1,6 @@
 # Brauer's splitting field theorem
 
-**Brauer's splitting field theorem.** Let $G$ be a finite group of exponent $n$, let
+Let $G$ be a finite group of exponent $n$, let
 $K = \mathbb{Q}(\zeta_n)$ be the $n$-th cyclotomic field, and let $\rho$ be a representation of
 $G$ on a finite-dimensional complex vector space $V$. Then there are a ring homomorphism
 $\varphi \colon K \to \mathbb{C}$, a $K$-vector space $W$ with a representation $\sigma$ of $G$

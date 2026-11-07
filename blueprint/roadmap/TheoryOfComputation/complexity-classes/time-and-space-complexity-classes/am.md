@@ -1,6 +1,6 @@
 # The class $\mathsf{AM}$ (Arthur–Merlin)
 
-**The class $\mathsf{AM}$ (Arthur–Merlin).** A decision problem $L$ on bitstrings is in
+A decision problem $L$ on bitstrings is in
 $\mathsf{AM}$ when there are polynomials $p$ and $q$ with natural-number coefficients and a
 polynomial-time computable Boolean function $R(x, r, w)$ of three bitstrings such that, for every
 bitstring $x$, writing $A_x$ for the set of strings $r \in \{0,1\}^{p(|x|)}$ for which some

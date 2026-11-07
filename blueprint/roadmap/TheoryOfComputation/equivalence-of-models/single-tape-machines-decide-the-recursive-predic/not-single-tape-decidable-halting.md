@@ -1,6 +1,5 @@
 # The halting problem for partial recursive codes is undecidable on single-tape machines
 
-**The halting problem for partial recursive codes is undecidable on single-tape machines.**
 For every $n \in \mathbb{N}$, no single-tape machine decides whether a partial recursive code halts
 on input $n$.
 

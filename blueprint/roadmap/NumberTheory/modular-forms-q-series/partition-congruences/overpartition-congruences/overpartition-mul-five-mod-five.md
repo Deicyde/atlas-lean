@@ -1,6 +1,6 @@
 # Overpartitions of $5n$ modulo $5$, explicit form
 
-**Overpartitions of $5n$ modulo $5$, explicit form.** For every integer $n \ge 1$, the number of
+For every integer $n \ge 1$, the number of
 pairs $(P, S)$, where $P$ is a finite multiset of positive integers with sum $5n$ and $S$ is a
 finite set of natural numbers each belonging to $P$, is congruent modulo $5$ to $(-1)^n$ times the
 number of ordered triples $(x, y, z)$ of integers with $x^2 + y^2 + z^2 = n$.

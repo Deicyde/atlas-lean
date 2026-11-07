@@ -1,6 +1,6 @@
 # Dirichlet beta at odd positive integers
 
-**Dirichlet beta at odd positive integers.** Let $\beta$ be the Dirichlet $L$-function of the
+Let $\beta$ be the Dirichlet $L$-function of the
 nontrivial character modulo $4$, which for $\operatorname{Re} s > 1$ is the series
 $\beta(s) = \sum_{n \ge 1} (-1)^{n-1}/(2n-1)^s$, and let $E_0 = 1, E_2 = -1, E_4 = 5,
 E_6 = -61, \dots$ be the even-index Euler numbers. Then for every natural number $m$,

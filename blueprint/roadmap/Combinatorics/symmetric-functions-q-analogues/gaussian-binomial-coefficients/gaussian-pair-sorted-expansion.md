@@ -1,6 +1,6 @@
 # Ehrenborg–Readdy expansion of the Gaussian coefficient
 
-**Ehrenborg–Readdy expansion of the Gaussian coefficient.** Let $n$ and $k$ be natural numbers
+Let $n$ and $k$ be natural numbers
 and let $W$ be the set of words $v = v_0 v_1 \cdots v_{n-1}$ over the alphabet $\{0, 1\}$ with
 exactly $k$ letters equal to $1$. For a word $v$, let $\operatorname{inv}(v)$ be the number of
 pairs $i < j$ with $v_i > v_j$; call $v$ pair-sorted when $v_{2i} \le v_{2i+1}$ for every $i$

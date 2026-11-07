@@ -1,6 +1,6 @@
 # Wall, seed and pre-seed of the Trithoff array via the Tribonacci word
 
-**Wall, seed and pre-seed of the Trithoff array via the Tribonacci word.** Let
+Let
 $f_1 < f_2 < \cdots$ be the positive integers whose Tribonacci representation ends in $1$ (the
 first column of the Trithoff array). For each row $r \ge 1$ let $\mathrm{out}(f_r)$ and
 $\mathrm{out}^2(f_r)$ be the Tribonacci values of the Tribonacci representation of $f_r$,

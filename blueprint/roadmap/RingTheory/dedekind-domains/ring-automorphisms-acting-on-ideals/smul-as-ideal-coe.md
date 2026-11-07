@@ -1,6 +1,6 @@
 # Viewing prime ideals as fractional ideals commutes with the group action
 
-**Viewing prime ideals as fractional ideals commutes with the group action.** Let a group $G$
+Let a group $G$
 act on an integral domain $R$ by ring automorphisms, let $K$ be a fraction field of $R$, and let
 $G$ act on the fractional ideals of $R$ in $K$ through the extension of each automorphism of $R$
 to $K$. For $g \in G$ and a prime ideal $\mathfrak p$ of $R$, write

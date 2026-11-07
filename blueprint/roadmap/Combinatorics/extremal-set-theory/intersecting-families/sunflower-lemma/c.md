@@ -1,6 +1,6 @@
 # Sunflower constant
 
-**Sunflower constant.** An unspecified real number $C$, the absolute constant in the
+An unspecified real number $C$, the absolute constant in the
 Alweiss–Lovett–Wu–Zhang sunflower bound (Theorem 1.4); it does not depend on $r$ or $w$.
 
 ## Sources

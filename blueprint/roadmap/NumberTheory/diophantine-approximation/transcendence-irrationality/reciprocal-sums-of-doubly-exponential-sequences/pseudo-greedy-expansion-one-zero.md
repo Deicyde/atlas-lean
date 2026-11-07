@@ -1,6 +1,6 @@
 # The pseudo-greedy expansion of 1 starts with 2
 
-**The pseudo-greedy expansion of 1 starts with 2.** The first term $a_0$ of the
+The first term $a_0$ of the
 pseudo-greedy expansion of $1$ equals $2$, the first Sylvester number.
 
 ## Sources

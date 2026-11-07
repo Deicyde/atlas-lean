@@ -1,6 +1,6 @@
 # Series of arctangents of 1/(1 + k√2)² (Entry 7, Example 6)
 
-**Series of arctangents of 1/(1 + k√2)² (Entry 7, Example 6).** The series
+The series
 
 $$\sum_{k=0}^{\infty} \arctan \frac{1}{\bigl(1 + \sqrt{2}\,(k + 1)\bigr)^2}$$
 

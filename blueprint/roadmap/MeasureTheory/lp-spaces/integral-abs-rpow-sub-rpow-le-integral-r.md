@@ -1,6 +1,6 @@
 # An integral inequality for $p$-th powers with $0 < p < 1$
 
-**An integral inequality for $p$-th powers with $0 < p < 1$.** Let $\mu$ be a measure on a
+Let $\mu$ be a measure on a
 measurable space and let $0 < p < 1$. Then for all real-valued $f, g \in L^p(\mu)$,
 
 $$\int \bigl||f|^p - |g|^p\bigr|\,d\mu \le \int |f - g|^p\,d\mu.$$

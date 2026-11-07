@@ -1,6 +1,6 @@
 # Perfect matchings of the Aztec dragon graph (Ciucu, Wieland)
 
-**Perfect matchings of the Aztec dragon graph (Ciucu, Wieland).** For every natural number $n$,
+For every natural number $n$,
 the dragon graph of order $n$ (the spanning subgraph of the Aztec diamond graph $AD_{2n}$ that
 keeps exactly the edges of weight $1$ under Ciucu's periodic weight $\mathrm{wt}_A$) has exactly
 $2^{n(n+1)}$ perfect matchings.

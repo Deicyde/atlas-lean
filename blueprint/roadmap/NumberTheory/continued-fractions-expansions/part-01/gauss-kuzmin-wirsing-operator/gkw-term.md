@@ -1,6 +1,6 @@
 # Terms of the Gauss–Kuzmin–Wirsing series
 
-**Terms of the Gauss–Kuzmin–Wirsing series.** For a function $f : \mathbb{R} \to \mathbb{R}$,
+For a function $f : \mathbb{R} \to \mathbb{R}$,
 a real number $x$ and a natural number $k$, the $k$-th term of the Gauss–Kuzmin–Wirsing series
 of $f$ at $x$ is $\frac{1}{(x+k+1)^2} f\left(\frac{1}{x+k+1}\right)$, with the convention
 $1/0 = 0$.

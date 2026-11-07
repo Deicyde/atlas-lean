@@ -1,6 +1,6 @@
 # Fenwick tree representing a list
 
-**Fenwick tree representing a list.** A Fenwick tree $t$ over an additive commutative monoid
+A Fenwick tree $t$ over an additive commutative monoid
 represents a list $a$ of length $n$ when its stored array has length $n + 1$ (a dummy entry at
 index $0$ plus one entry per element of $a$) and, for every $j$ with $1 \le j \le n$, the stored
 entry at index $j$ equals the block sum of $a$ at $j$: the sum of the $\operatorname{lowbit}(j)$

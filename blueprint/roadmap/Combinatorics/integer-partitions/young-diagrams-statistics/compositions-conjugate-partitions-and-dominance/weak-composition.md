@@ -1,6 +1,6 @@
 # Weak composition
 
-**Weak composition.** Let n,k∈ℕ. A weak composition of n into
+Let n,k∈ℕ. A weak composition of n into
 k parts is a function
 
 a:{i∈ℕ∣ i<k}→ℕ

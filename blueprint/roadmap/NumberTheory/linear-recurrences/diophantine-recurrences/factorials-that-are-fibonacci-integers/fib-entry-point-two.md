@@ -1,6 +1,6 @@
 # Fibonacci entry point of $2$
 
-**Fibonacci entry point of $2$.** The least $m > 0$ such that $2$ divides the Fibonacci number
+The least $m > 0$ such that $2$ divides the Fibonacci number
 $F_m$ is $3$, that is, the Fibonacci entry point of $2$ is $z(2) = 3$.
 
 ## Sources

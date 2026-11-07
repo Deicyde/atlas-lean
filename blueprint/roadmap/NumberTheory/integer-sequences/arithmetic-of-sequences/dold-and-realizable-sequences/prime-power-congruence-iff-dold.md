@@ -1,6 +1,6 @@
 # Dold congruences via prime-power congruences
 
-**Dold congruences via prime-power congruences.** Let $(V(n))_{n \ge 1}$ be a sequence of
+Let $(V(n))_{n \ge 1}$ be a sequence of
 integers and let $\mu$ denote the Möbius function. Then
 $V(n p^m) \equiv V(n p^{m-1}) \pmod{p^m}$ holds for all integers $n, m \ge 1$ and all primes $p$
 if and only if $n$ divides $\sum_{d \mid n} \mu(n/d) V(d)$ for every integer $n \ge 1$.

@@ -1,6 +1,6 @@
 # Lévy's downward theorem, almost sure convergence
 
-**Lévy's downward theorem, almost sure convergence.** Let $(\Omega, \mathcal F, \mu)$ be a
+Let $(\Omega, \mathcal F, \mu)$ be a
 probability space, let $\mathcal F_0 \supseteq \mathcal F_1 \supseteq \cdots$ be a decreasing
 sequence of sub-σ-algebras of $\mathcal F$, and let $\mathcal F_\infty = \bigcap_n \mathcal F_n$.
 For every function $g : \Omega \to \mathbb R$, the conditional expectations

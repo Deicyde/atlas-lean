@@ -1,6 +1,6 @@
 # Steinhaus's disc frequencies exist
 
-**Steinhaus's disc frequencies exist.** Let $w = (w_1, w_2) \in \mathbb{R}^2$ be such that
+Let $w = (w_1, w_2) \in \mathbb{R}^2$ be such that
 $w_1$, $w_2$ and $w_1 / w_2$ are all irrational, and for each natural number $n$ let $c(n)$ be the
 disc lattice count of $w$ and $n$, the number of integer lattice points in the closed disc of
 radius $1$ centred at $n w$. Then for each $m$ equal to $2$, $3$ or $4$, the proportion of the

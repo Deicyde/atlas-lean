@@ -1,6 +1,6 @@
 # Weak ascent Wilf equivalence and generating function, class 93
 
-**Weak ascent Wilf equivalence and generating function, class 93.** Write $\mathrm{WA}_n(P)$
+Write $\mathrm{WA}_n(P)$
 for the set of weak ascent sequences of length $n$ avoiding every pattern in $P$, with patterns
 written as words (for example $011$). The pattern sets $P = \{011, 102, 120, 201\}$ and
 $\{011, 102, 120, 210\}$ are WA-Wilf equivalent, that is,

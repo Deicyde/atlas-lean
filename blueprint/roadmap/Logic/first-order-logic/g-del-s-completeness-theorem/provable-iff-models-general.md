@@ -1,6 +1,6 @@
 # Soundness and completeness for arbitrary languages
 
-**Soundness and completeness for arbitrary languages.** Let $L$ be a first-order language,
+Let $L$ be a first-order language,
 with no countability hypothesis, $T$ a theory of $L$ (a set of sentences), and $\varphi$ an
 $L$-formula with free variables in $\mathbb{N}$. Then $\varphi$ is provable from the sentences of
 $T$, each regarded as a formula with free variables in $\mathbb{N}$, if and only if $\varphi$

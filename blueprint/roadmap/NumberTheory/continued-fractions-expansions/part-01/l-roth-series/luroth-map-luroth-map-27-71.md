@@ -1,6 +1,6 @@
 # The Lüroth orbit of $27/71$ has period two
 
-**The Lüroth orbit of $27/71$ has period two.** The Lüroth map $T$ sends $27/71$ to $20/71$
+The Lüroth map $T$ sends $27/71$ to $20/71$
 and sends $20/71$ to $27/71$; in particular $T(T(27/71)) = 27/71$.
 
 ## Sources

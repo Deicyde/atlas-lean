@@ -1,6 +1,6 @@
 # Linear Laurent coefficient of the height one multiple zeta function
 
-**Linear Laurent coefficient of the height one multiple zeta function.** Let $j \ge 1$ be an
+Let $j \ge 1$ be an
 integer, write $\zeta(s, \{1\}^{j-1})$ for the height one multiple zeta function and $\zeta_r(s)$
 for the multiple Hurwitz zeta function of order $r$. There are complex numbers
 $c_0, \dots, c_{j-1}$ and a function $F$ analytic at $s = 1$ such that

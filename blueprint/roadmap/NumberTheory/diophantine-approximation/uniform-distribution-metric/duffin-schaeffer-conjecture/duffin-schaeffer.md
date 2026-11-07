@@ -1,6 +1,6 @@
 # Duffin–Schaeffer conjecture on the unit circle
 
-**Duffin–Schaeffer conjecture on the unit circle.** Let $(\delta_n)_{n \in \mathbb{N}}$ be a
+Let $(\delta_n)_{n \in \mathbb{N}}$ be a
 sequence of nonnegative real numbers. Let $W$ be the set of points $x$ of the circle
 $\mathbb{R}/\mathbb{Z}$ such that, for infinitely many positive integers $n$, the distance from $x$
 to some point of additive order exactly $n$ is less than $\delta_n$. Then $W$ has measure $1$ for

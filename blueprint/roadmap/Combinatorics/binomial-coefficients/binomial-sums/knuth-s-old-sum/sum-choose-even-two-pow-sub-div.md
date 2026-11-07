@@ -1,6 +1,6 @@
 # Even-index and odd-index binomial sums weighted by powers of $2$
 
-**Even-index and odd-index binomial sums weighted by powers of $2$.** For every natural
+For every natural
 number $n$,
 
 $$\sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{2k} \frac{2^{n-2k+1} - 2^{2k+1}}{2k+1} =

@@ -1,6 +1,6 @@
 # The central lozenge lies in one third of the tilings
 
-**The central lozenge lies in one third of the tilings.** Let $e_1 = (1, 0)$ and
+Let $e_1 = (1, 0)$ and
 $e_2 = (1/2, \sqrt{3}/2)$, write $p(i, j) = i e_1 + j e_2$, and call the triangles with vertices
 $p(i, j), p(i + 1, j), p(i, j + 1)$ and $p(i + 1, j), p(i, j + 1), p(i + 1, j + 1)$ the upward and
 the downward unit triangle $(i, j)$. For every integer $n \ge 1$, let $a = c = 2n - 1$ and

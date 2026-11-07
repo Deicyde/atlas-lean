@@ -1,6 +1,6 @@
 # Mazur's Problem 66 has a negative answer
 
-**Mazur's Problem 66 has a negative answer.** Mazur's mixed partial derivatives claim is false:
+Mazur's mixed partial derivatives claim is false:
 there is a function $f : \mathbb{R}^2 \to \mathbb{R}$ such that, at every point $(x, y)$ of the
 open unit square $Q = (0, 1) \times (0, 1)$, the functions $s \mapsto f(s, y)$ and
 $s \mapsto f(x, s)$ are differentiable at $x$ and at $y$ respectively, and their derivatives

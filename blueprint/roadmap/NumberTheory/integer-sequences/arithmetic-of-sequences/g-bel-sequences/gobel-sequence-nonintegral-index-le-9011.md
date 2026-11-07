@@ -1,6 +1,6 @@
 # A non-integral term of $g_{k,2}$ by index $9011$ for $2 \le k \le 10^7$
 
-**A non-integral term of $g_{k,2}$ by index $9011$ for $2 \le k \le 10^7$.** Let $g_{k,l}$
+Let $g_{k,l}$
 denote the $(k, l)$-Göbel sequence. For every natural number $k$ with $2 \le k \le 10^7$, there
 is a natural number $n$ with $1 \le n \le 9011$ such that the rational number $g_{k,2}(n)$ is
 not an integer.

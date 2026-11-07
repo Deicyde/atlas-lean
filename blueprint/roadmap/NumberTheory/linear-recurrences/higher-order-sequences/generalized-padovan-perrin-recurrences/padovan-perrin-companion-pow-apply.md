@@ -1,6 +1,6 @@
 # Powers of the Padovan–Perrin companion matrix
 
-**Powers of the Padovan–Perrin companion matrix.** Let $R$ be a commutative ring, let
+Let $R$ be a commutative ring, let
 $k_1, k_2 \in R$, let $p, s$ be positive integers, and write $r = s + p$. Let $A$ be the
 $r \times r$ matrix over $R$, with rows and columns indexed by $0, \dots, r - 1$, whose row $0$ has
 $k_1$ in column $s - 1$, $k_2$ in column $r - 1$ and $0$ elsewhere, and whose entry in row

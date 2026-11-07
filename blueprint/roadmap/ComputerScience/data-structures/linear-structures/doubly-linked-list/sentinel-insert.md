@@ -1,6 +1,6 @@
 # Sentinel list insertion (LIST-INSERT′)
 
-**Sentinel list insertion (LIST-INSERT′).** Let $S$ be a store of $n$ cells, each empty or
+Let $S$ be a store of $n$ cells, each empty or
 holding a node, in which the cells $x$ and $y$ are allocated, the next pointer of $y$ is not
 NIL, and the cell $w$ it points to is allocated. Sentinel insertion of $x$ after $y$ performs four
 pointer assignments in order, each costing one time unit, and returns the resulting store: set

@@ -1,4 +1,4 @@
 # Variational solution is the unique solution
 
-**Variational solution is the unique solution.** The variational solution is the unique solution of the variational
+The variational solution is the unique solution of the variational
 equation.

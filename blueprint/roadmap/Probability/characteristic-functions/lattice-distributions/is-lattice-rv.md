@@ -1,6 +1,6 @@
 # Lattice random variable
 
-**Lattice random variable.** A measure $\mu$ on $\mathbb{R}$ with characteristic function
+A measure $\mu$ on $\mathbb{R}$ with characteristic function
 $\varphi(t) = \int e^{itx} \, d\mu(x)$ is a lattice random variable if $\varphi(l) = 1$ for some
 real $l \ne 0$ and $\varphi(t) \ne 1$ for some real $t$.
 

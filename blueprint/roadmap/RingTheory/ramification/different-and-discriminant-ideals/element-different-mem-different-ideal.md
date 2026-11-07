@@ -1,6 +1,6 @@
 # The element different lies in the different
 
-**The element different lies in the different.** Let $A$ be an integrally closed domain with
+Let $A$ be an integrally closed domain with
 fraction field $K$, let $L$ be a finite separable extension of $K$, and let $B$ be the integral
 closure of $A$ in $L$, assumed to be a Dedekind domain with fraction field $L$ that is
 torsion-free as an $A$-module, with compatible algebra maps $A \to K \to L$ and

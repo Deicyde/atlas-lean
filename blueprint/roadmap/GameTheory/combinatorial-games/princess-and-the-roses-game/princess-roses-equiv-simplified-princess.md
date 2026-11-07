@@ -1,6 +1,6 @@
 # Four-pile P&R is equivalent to simplified P&R
 
-**Four-pile P&R is equivalent to simplified P&R.** For natural numbers $a \ge b \ge c \ge d$
+For natural numbers $a \ge b \ge c \ge d$
 and every natural number $n$, the Princess and the Roses position $(a, b, c, d)$ is equivalent to
 the simplified P&R position $[a + n, b + n, c + n, d]$; that is, the two have the same
 Sprague–Grundy value.

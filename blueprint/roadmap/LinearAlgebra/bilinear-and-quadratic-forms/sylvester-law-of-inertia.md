@@ -1,6 +1,6 @@
 # Sylvester's law of inertia
 
-**Sylvester's law of inertia.** Let $A$ and $B$ be real symmetric square matrices with rows
+Let $A$ and $B$ be real symmetric square matrices with rows
 and columns indexed by a finite set $n$, and suppose $B = P^{\mathsf T} A P$ for some invertible
 real matrix $P$ indexed by $n$. Then $A$ and $B$ have the same number of positive eigenvalues, the
 same number of negative eigenvalues and the same number of zero eigenvalues, each counted with

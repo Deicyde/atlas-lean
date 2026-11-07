@@ -1,6 +1,6 @@
 # Completing an incomplete exponential sum
 
-**Completing an incomplete exponential sum.** Let $p$ be a prime, write
+Let $p$ be a prime, write
 $e_p(t) = e^{2\pi i t/p}$, let $f$ be a polynomial with integer coefficients, and let $B$ be an
 integer with $1 \le B \le p$. Put
 $T_p(B) = \frac{1}{p} \sum_{y=1}^{p-1} \left|\frac{\sin(\pi B y/p)}{\sin(\pi y/p)}\right|$ and

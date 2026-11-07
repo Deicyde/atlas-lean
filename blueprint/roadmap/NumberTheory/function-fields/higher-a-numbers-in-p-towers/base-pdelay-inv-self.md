@@ -1,6 +1,6 @@
 # The delay of $1/p$ is $1$
 
-**The delay of $1/p$ is $1$.** For every prime $p$, the delay of the base-$p$ expansion of
+For every prime $p$, the delay of the base-$p$ expansion of
 $1/p$ is $D_{1/p} = -v_p(1/p) = 1$, where $v_p$ is the $p$-adic valuation.
 
 ## Sources

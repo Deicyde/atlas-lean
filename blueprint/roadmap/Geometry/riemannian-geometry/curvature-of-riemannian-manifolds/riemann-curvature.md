@@ -1,6 +1,6 @@
 # Riemann curvature endomorphism
 
-**Riemann curvature endomorphism.** For a point $x$ of a $C^\infty$ Riemannian manifold $(M, g)$
+For a point $x$ of a $C^\infty$ Riemannian manifold $(M, g)$
 with Levi-Civita connection $\nabla$, and tangent vectors $u, v, w \in T_x M$,
 
 $$R(u, v) w = (\nabla_X \nabla_Y W - \nabla_Y \nabla_X W - \nabla_{[X, Y]} W)(x),$$

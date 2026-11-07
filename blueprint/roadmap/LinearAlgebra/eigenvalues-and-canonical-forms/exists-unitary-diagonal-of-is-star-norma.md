@@ -1,6 +1,6 @@
 # Spectral theorem for normal matrices
 
-**Spectral theorem for normal matrices.** Let $M$ be a complex square matrix whose rows and
+Let $M$ be a complex square matrix whose rows and
 columns are indexed by a finite set $n$, and write $M^*$ for its conjugate transpose. If $M$ is
 normal, that is, $M^* M = M M^*$, then there exist a unitary matrix $P$ indexed by $n$ (so
 $P^* P = P P^* = I$) and a family of complex numbers $(d_i)_{i \in n}$ such that $P^* M P$ is

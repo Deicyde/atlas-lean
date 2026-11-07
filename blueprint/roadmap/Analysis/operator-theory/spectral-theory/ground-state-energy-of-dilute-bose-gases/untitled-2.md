@@ -1,6 +1,6 @@
 # Lee–Huang–Yang error exponent
 
-**Lee–Huang–Yang error exponent.** $\eta$ is a real constant, not given explicitly, that
+$\eta$ is a real constant, not given explicitly, that
 serves as the exponent in the error term $(\rho a^3)^{1/2 + \eta}$ of the Lee–Huang–Yang lower
 bound (Theorem 1.2), where $\rho$ is the density and $a$ the scattering length of the
 potential; that theorem asserts $\eta > 0$.

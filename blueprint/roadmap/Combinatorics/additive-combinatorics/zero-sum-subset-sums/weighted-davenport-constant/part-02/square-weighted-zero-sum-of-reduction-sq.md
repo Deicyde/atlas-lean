@@ -1,6 +1,6 @@
 # Lifting weighted zero sums from p² to an even power of p
 
-**Lifting weighted zero sums from p² to an even power of p.** Let $p \ge 2$, $r \ne 0$
+Let $p \ge 2$, $r \ne 0$
 and $k$ be natural numbers with $r$ even, and let $t_1, \dots, t_k$ be elements of
 $\mathbb{Z}/p^r\mathbb{Z}$, with reductions $\bar t_1, \dots, \bar t_k$ modulo $p^2$. Write
 $U(p^2)^2$ for the set of squares of units of $\mathbb{Z}/p^2\mathbb{Z}$ and $S(p^r)$ for the

@@ -1,6 +1,6 @@
 # Stage segments of a restricted Gaussian partition
 
-**Stage segments of a restricted Gaussian partition.** Let $q$ be a natural number, let
+Let $q$ be a natural number, let
 $(d_0, m_0), \dots, (d_{\ell-1}, m_{\ell-1})$ be blocks, let $C_0, C_1, \dots$ be chains of
 branch steps, let $F_0, F_1, \dots$ be lists of natural numbers, and let $i$ and $k$ be natural
 numbers; blocks, chains and lists are indexed from $0$. With $p_h = \sum_{g < h} m_g d_g$, the

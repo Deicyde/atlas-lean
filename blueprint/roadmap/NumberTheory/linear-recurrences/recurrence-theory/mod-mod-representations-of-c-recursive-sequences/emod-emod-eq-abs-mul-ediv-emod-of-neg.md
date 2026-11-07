@@ -1,6 +1,6 @@
 # Remainder of a remainder, negative residue case
 
-**Remainder of a remainder, negative residue case.** Let $a$, $A$, $B$ and $C$ be integers with
+Let $a$, $A$, $B$ and $C$ be integers with
 $A > 0$, $B > 0$ and $C \ge 2$ such that $C$ divides $A$, $B$ does not divide $A$, $a < 0$ and
 $B \equiv a \pmod C$. Write $\lfloor A/B \rfloor$ for the floor of $A/B$ and $X \bmod M$ for the
 remainder of $X$ modulo $M$ in $\{0, 1, \dots, M - 1\}$. If

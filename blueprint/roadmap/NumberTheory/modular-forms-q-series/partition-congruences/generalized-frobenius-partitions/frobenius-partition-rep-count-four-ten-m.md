@@ -1,6 +1,6 @@
 # $\varphi_4(10n+6)$ is divisible by $5$
 
-**$\varphi_4(10n+6)$ is divisible by $5$.** Let $\varphi_4(n)$ be the number of generalized
+Let $\varphi_4(n)$ be the number of generalized
 Frobenius partitions of $n$ in which each integer appears at most $4$ times in each row. For every
 natural number $n$, $\varphi_4(10n + 6) \equiv 0 \pmod 5$.
 

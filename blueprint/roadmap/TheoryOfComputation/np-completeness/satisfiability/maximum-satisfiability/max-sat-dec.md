@@ -1,6 +1,6 @@
 # MAXIMUM SATISFIABILITY as a decision problem
 
-**MAXIMUM SATISFIABILITY as a decision problem.** The decision problem MAXIMUM SATISFIABILITY
+The decision problem MAXIMUM SATISFIABILITY
 accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding of
 MAX-SAT instances, to an instance $(n, \varphi, K)$ that is well formed (every literal of
 $\varphi$ has variable index less than $n$) and feasible (some assignment of truth values to the

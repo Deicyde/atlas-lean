@@ -1,6 +1,6 @@
 # Binet-type identities for k-Jacobsthal numbers
 
-**Binet-type identities for k-Jacobsthal numbers.** Let $k$ and $n$ be natural numbers, let
+Let $k$ and $n$ be natural numbers, let
 $J_{k,n} = U_n(k, -2)$ and $j_{k,n} = V_n(k, -2)$ be the $k$-Jacobsthal and
 $k$-Jacobsthal–Lucas numbers, and let $\Delta_k = \sqrt{k^2 + 8}$ and $\sigma_k = (k + \Delta_k)/2$.
 Then, in $\mathbb{R}$, $j_{k,n} + \Delta_k J_{k,n} = 2\sigma_k^n$ and

@@ -1,6 +1,6 @@
 # Asymptotic expansion of Ramanujan's product series
 
-**Asymptotic expansion of Ramanujan's product series.** Let $a, b, x \in \mathbb{C}$ with
+Let $a, b, x \in \mathbb{C}$ with
 $b \neq 0$, let $0 < \varepsilon < \pi$, and let $n$ be a natural number. Write $F(a, b, x; k)$
 for Ramanujan's generalized Bell function and $P(a, b, x; z)$ for Ramanujan's product series.
 Then

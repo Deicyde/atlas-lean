@@ -1,6 +1,6 @@
 # A crude exponential bound
 
-**A crude exponential bound.** For every natural number $k > 1$ and every $m \in \mathbb{N}$,
+For every natural number $k > 1$ and every $m \in \mathbb{N}$,
 we have $m < k^{m+1}$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Generating function of the modified degenerate Bernoulli polynomials
 
-**Generating function of the modified degenerate Bernoulli polynomials.** Let $\lambda$ and $x$
+Let $\lambda$ and $x$
 be complex numbers such that $c = \log(1+\lambda)/\lambda$ (principal branch) is nonzero, and write
 $\mathfrak{B}_{n,\lambda}(x)$ for the modified degenerate Bernoulli polynomials. Then, as formal
 power series in $t$ over $\mathbb{C}$,

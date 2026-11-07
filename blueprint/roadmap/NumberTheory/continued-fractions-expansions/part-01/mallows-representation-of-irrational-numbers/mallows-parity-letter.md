@@ -1,6 +1,6 @@
 # The parity alphabet
 
-**The parity alphabet.** The parity alphabet consists of the four letters $O_L$, $E_R$, $O_R$
+The parity alphabet consists of the four letters $O_L$, $E_R$, $O_R$
 and $E_L$. The intermediate set $I$ linking the Stern–Brocot and Mallows representations is a set
 of infinite sequences over this alphabet.
 

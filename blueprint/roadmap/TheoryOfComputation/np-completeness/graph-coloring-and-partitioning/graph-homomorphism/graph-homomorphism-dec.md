@@ -1,6 +1,6 @@
 # GRAPH HOMOMORPHISM as a decision problem
 
-**GRAPH HOMOMORPHISM as a decision problem.** The decision problem GRAPH HOMOMORPHISM accepts
+The decision problem GRAPH HOMOMORPHISM accepts
 a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding, to a
 graph-homomorphism instance $(n, E, m, F)$ that is well formed (neither $E$ nor $F$ has repeated
 entries, every pair $(u, v)$ in $E$ has $u < n$, $v < n$, $u \ne v$ and $(v, u) \notin E$, and

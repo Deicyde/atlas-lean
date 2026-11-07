@@ -1,6 +1,6 @@
 # Run of the transition-family generator on one clause
 
-**Run of the transition-family generator on one clause.** Let $L$ be a layout with tables
+Let $L$ be a layout with tables
 $la$, $na$, $wa$, let $N$ be the number of situations, let $T$, $H$, $t$ be natural numbers with
 $t < T$, and let $i < N$ be a situation whose tables are well formed at height $H$. Let $F$ be
 counter values at rest in the time loop at time $t$ (for $T$ and $H$) with $F(\mathrm{P}) = 0$,

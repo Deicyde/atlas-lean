@@ -1,6 +1,6 @@
 # Proper dimension
 
-**Proper dimension.** The proper dimension of a finite set $S$ of lattice cells in
+The proper dimension of a finite set $S$ of lattice cells in
 $\mathbb{Z}^d$ is the number of axes $k$ on which $S$ varies, that is, for which there are
 cells $x, y \in S$ with $x_k \ne y_k$.
 

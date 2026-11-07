@@ -1,6 +1,6 @@
 # Breadth-first search
 
-**Breadth-first search.** Given a finite directed graph $G$ with ordered adjacency lists and a
+Given a finite directed graph $G$ with ordered adjacency lists and a
 source vertex $s$, breadth-first search keeps a FIFO queue of pairs $(v, d)$ of a vertex and a
 distance and a table of discovered vertices with their distances, starting with the queue
 $[(s, 0)]$ and $s$ discovered at distance $0$. It performs one round per vertex of $G$: if the

@@ -1,6 +1,6 @@
 # Adjoined Nicomachean sequences are eventually arithmetic progressions
 
-**Adjoined Nicomachean sequences are eventually arithmetic progressions.** Write
+Write
 $\nu(a_1, \dots, a_n) = (a_1 + \dots + a_n)^2 - (a_1^3 + \dots + a_n^3)$ for the Nicomachean defect
 of a finite sequence. Let $(a_1, \dots, a_n)$ be a finite, possibly empty, sequence of real numbers
 and let $x_1, x_2, x_3, \dots$ be nonzero real numbers with $x_{j+1} \ne -x_j$ for every $j \ge 1$.

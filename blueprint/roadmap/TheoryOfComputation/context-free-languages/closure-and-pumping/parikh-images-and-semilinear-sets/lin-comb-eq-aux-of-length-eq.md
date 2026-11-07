@@ -1,6 +1,6 @@
 # Unguarded linear combination agrees on equal lengths
 
-**Unguarded linear combination agrees on equal lengths.** The unguarded recursion agrees with `linComb` on equal-length
+The unguarded recursion agrees with `linComb` on equal-length
 inputs.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Characterization of the permutations sorted by the consecutive $321$-cyclic stack
 
-**Characterization of the permutations sorted by the consecutive $321$-cyclic stack.** Let
+Let
 $n \ge 2$ and let $\pi = \pi_1 \pi_2 \cdots \pi_n$ be a permutation of $[n] = \{1, \ldots, n\}$.
 The consecutive-cyclic-pattern-avoiding stack-sorting map $s^{[321]}$ sends $\pi$ to the identity
 $12 \cdots n$ (that is, $\pi \in \mathrm{Sort}_n(s^{[321]})$) if and only if $\pi_1 = n$ and

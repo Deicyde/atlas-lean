@@ -1,6 +1,6 @@
 # Output phase of the KG-map machine
 
-**Output phase of the KG-map machine.** Let $m$ be a mode, $r$ a list of bits and $n$ and
+Let $m$ be a mode, $r$ a list of bits and $n$ and
 $c$ natural numbers. Consider a configuration of the KG-map machine $M_m$ at the label output
 pair bits, with any internal bit, in which stack $Y$ holds the symbols $\mathrm{val}(b)$ for the
 bits $b$ of $r$ in reverse order (the last bit of $r$ on top), stack $B$ holds $n$ copies of the

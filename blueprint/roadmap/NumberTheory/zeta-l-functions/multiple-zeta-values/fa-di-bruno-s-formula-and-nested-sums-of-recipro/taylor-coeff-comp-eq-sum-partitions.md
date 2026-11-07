@@ -1,6 +1,6 @@
 # Faà di Bruno's formula for Taylor coefficients
 
-**Faà di Bruno's formula for Taylor coefficients.** Let $f, g : \mathbb{R} \to \mathbb{R}$,
+Let $f, g : \mathbb{R} \to \mathbb{R}$,
 let $a \in \mathbb{R}$ and let $n$ be a natural number. Suppose that $g$ is $n$ times continuously
 differentiable on a neighbourhood of $a$ and that $f$ is $n$ times continuously differentiable on a
 neighbourhood of $g(a)$. For a partition $\pi$ of $n$, let $m_i(\pi)$ be the number of parts of

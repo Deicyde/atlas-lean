@@ -1,6 +1,6 @@
 # Khukhro's theorem on automorphisms of prime order with centralizer of finite rank
 
-**Khukhro's theorem on automorphisms of prime order with centralizer of finite rank.** There are
+There are
 functions $f \colon \mathbb{N} \to \mathbb{N}$ and $g \colon \mathbb{N} \times \mathbb{N} \to
 \mathbb{N}$ with the following property. Let $G$ be a nilpotent group in which every element has
 finite order, let $\varphi$ be an automorphism of $G$ of prime order $p$, and let $r$ be a natural

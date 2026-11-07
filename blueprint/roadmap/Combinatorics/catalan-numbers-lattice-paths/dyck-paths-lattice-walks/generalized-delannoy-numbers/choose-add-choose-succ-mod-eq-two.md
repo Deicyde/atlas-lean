@@ -1,6 +1,6 @@
 # Parity of a sum of adjacent binomial coefficients
 
-**Parity of a sum of adjacent binomial coefficients.** For all natural numbers $n$ and $k$
+For all natural numbers $n$ and $k$
 with $k \ge 1$, $\binom{n}{k} + \binom{n+1}{k} \equiv \binom{n}{k-1} \pmod 2$.
 
 ## Sources

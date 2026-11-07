@@ -1,6 +1,6 @@
 # The emulation's final tape
 
-**The emulation's final tape.** Let $M$ be a multi-stack machine with finitely many stacks,
+Let $M$ be a multi-stack machine with finitely many stacks,
 labels and internal states and a finite input alphabet, let $L$ be a list of symbols of its input
 stack, and suppose that $M$, started with $L$ on its input stack and every other stack empty,
 halts at the configuration $c$. Then its plain single-tape emulation, started on the tape that

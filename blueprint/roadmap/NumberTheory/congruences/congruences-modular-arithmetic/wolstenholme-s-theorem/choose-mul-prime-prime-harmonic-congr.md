@@ -1,6 +1,6 @@
 # Congruences for $\binom{tp}{p}$ modulo $p^5$, $p^6$ and $p^7$
 
-**Congruences for $\binom{tp}{p}$ modulo $p^5$, $p^6$ and $p^7$.** Let $p \ge 11$ be a prime
+Let $p \ge 11$ be a prime
 and $t$ a natural number. Write $H_{p-1}^{(r)} = \sum_{j=1}^{p-1} 1/j^r$ for the harmonic number of
 order $r$ and $H_{p-1}(1, 1) = \sum_{1 \le i < j \le p-1} 1/(ij)$. For rational numbers $x$, $y$
 and a natural number $s$, write $x \equiv y \pmod{p^s}$ when $x = y$ or $v_p(x - y) \ge s$, where

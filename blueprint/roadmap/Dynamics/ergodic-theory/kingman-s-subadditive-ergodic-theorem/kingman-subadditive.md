@@ -1,6 +1,6 @@
 # Kingman's subadditive ergodic theorem (nonnegative case)
 
-**Kingman's subadditive ergodic theorem (nonnegative case).** Let $\mu$ be a probability measure
+Let $\mu$ be a probability measure
 on a measurable space $\alpha$ and let $T : \alpha \to \alpha$ preserve $\mu$. Let
 $(f_n)_{n \in \mathbb{N}}$ be functions $\alpha \to \mathbb{R}$, each measurable and
 $\mu$-integrable, such that for every $n$ the inequality $f_n \ge 0$ holds $\mu$-almost

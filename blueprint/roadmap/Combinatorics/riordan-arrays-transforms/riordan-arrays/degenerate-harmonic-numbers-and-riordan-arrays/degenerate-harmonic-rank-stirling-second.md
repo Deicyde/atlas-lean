@@ -1,6 +1,5 @@
 # Degenerate harmonic numbers of rank and degenerate Stirling numbers of the second kind
 
-**Degenerate harmonic numbers of rank and degenerate Stirling numbers of the second kind.**
 Let $\lambda > 0$ and $\alpha > 0$ be real and let $m$ and $n$ be natural numbers with
 $1 \le m \le n$. Write $S_{2,\lambda}(k, m)$ for the degenerate Stirling numbers of the second kind
 and $H_\lambda(n, r, \alpha)$ for the generalized degenerate harmonic numbers of rank $r$. Then

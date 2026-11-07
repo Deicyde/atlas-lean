@@ -1,6 +1,6 @@
 # Three large conjugacy classes multiply to the whole alternating group
 
-**Three large conjugacy classes multiply to the whole alternating group.** There are a real number
+There are a real number
 $\delta$ with $0 < \delta < 1$ and a natural number $N$ such that for every $n \ge N$ and all
 conjugacy classes $A$, $B$, $C$ of the alternating group $\mathrm{Alt}(n)$, each of size at least
 $|\mathrm{Alt}(n)|^{\delta}$, the product set $ABC$ is all of $\mathrm{Alt}(n)$. This is the

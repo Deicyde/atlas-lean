@@ -1,6 +1,6 @@
 # Special values of alternating binomial power sums
 
-**Special values of alternating binomial power sums.** Let
+Let
 $p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (kx + y)^\ell$, with $0^0 = 1$, and let
 $S(j, m)$ denote the Stirling numbers of the second kind. For all complex numbers $x, y$ and
 natural numbers $\ell, m$:

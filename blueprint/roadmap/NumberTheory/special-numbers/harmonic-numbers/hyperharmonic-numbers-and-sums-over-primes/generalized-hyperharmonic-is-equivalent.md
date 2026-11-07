@@ -1,6 +1,6 @@
 # Asymptotic of generalized hyperharmonic numbers
 
-**Asymptotic of generalized hyperharmonic numbers.** For a natural number $p$ let
+For a natural number $p$ let
 $H_n^{(p)} = \sum_{i=1}^{n} 1/i^p$ be the generalized harmonic numbers, and let the generalized
 hyperharmonic numbers be $H_n^{(p,1)} = H_n^{(p)}$ and $H_n^{(p,r+1)} = \sum_{k=1}^{n} H_k^{(p,r)}$.
 Then for all natural numbers $p \ge 2$ and $r \ge 1$, $H_n^{(p,r)} \sim n^{r-1} \zeta(p) / (r-1)!$

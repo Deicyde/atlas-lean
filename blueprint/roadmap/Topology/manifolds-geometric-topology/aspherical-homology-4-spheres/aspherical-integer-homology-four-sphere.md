@@ -1,6 +1,6 @@
 # Existence of an aspherical integer homology 4-sphere
 
-**Existence of an aspherical integer homology 4-sphere.** There is a closed connected
+There is a closed connected
 topological 4-manifold $M$ that is aspherical, meaning that for every $k \ge 2$ and every point
 $x \in M$ the homotopy group $\pi_k(M, x)$ is trivial, and that is an integer homology 4-sphere,
 meaning that for every $k \ge 0$ the integral singular homology $H_k(M; \mathbb{Z})$ is isomorphic

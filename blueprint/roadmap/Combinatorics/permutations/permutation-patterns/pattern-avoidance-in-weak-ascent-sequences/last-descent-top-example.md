@@ -1,6 +1,6 @@
 # Examples of the last descent top
 
-**Examples of the last descent top.** Each of the sequences $0010$, $0020$, $0021$ and
+Each of the sequences $0010$, $0020$, $0021$ and
 $0120$ has its last descent top at position $3$, and the sequence $012$, which has no
 descent, has last descent top position $0$.
 

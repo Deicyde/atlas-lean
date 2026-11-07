@@ -1,6 +1,6 @@
 # Heisenberg uncertainty principle
 
-**Heisenberg uncertainty principle.** Denote by $\mathcal{S}(\mathbb{R})$ the Schwartz space on $\mathbb{R}$ consisting of all
+Denote by $\mathcal{S}(\mathbb{R})$ the Schwartz space on $\mathbb{R}$ consisting of all
 complex-valued $C^\infty$ functions $f(x)$ on $\mathbb{R}$ such that
 \[
 \sup_{x\in\mathbb{R}} |x|^k \left|\frac{d^\ell f}{dx^\ell}(x)\right| < \infty

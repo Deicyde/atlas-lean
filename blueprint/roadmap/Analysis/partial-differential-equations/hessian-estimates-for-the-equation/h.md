@@ -1,6 +1,6 @@
 # Hessian operator within a set
 
-**Hessian operator within a set.** Let $E$ be a real Hilbert space, let $f : E \to \mathbb{R}$,
+Let $E$ be a real Hilbert space, let $f : E \to \mathbb{R}$,
 let $s \subseteq E$ and let $x \in E$. Write $D^2 f(x)$ for the second Fréchet derivative of $f$
 within $s$ at $x$, that is, the derivative within $s$ at $x$ of the map sending $y$ to the
 derivative of $f$ within $s$ at $y$; it is a continuous bilinear form on $E$. The Hessian

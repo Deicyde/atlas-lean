@@ -1,6 +1,6 @@
 # Depth-first search of a Hopcroft–Karp phase
 
-**Depth-first search of a Hopcroft–Karp phase.** Fix a partner array $\mu$ assigning each right
+Fix a partner array $\mu$ assigning each right
 vertex at most one left partner, and a set $U$ of used left vertices. Write $L_n$ and $R_n$ for
 the left and right vertices reached within $n$ rounds of the alternating breadth-first layers of
 $\mu$ (so $R_0 = \emptyset$). A left vertex $i$ is unmatched if no right vertex has partner $i$;

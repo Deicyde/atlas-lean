@@ -1,6 +1,6 @@
 # Frame function on projections
 
-**Frame function on projections.** Let $H$ be a complex Hilbert space. A frame function on
+Let $H$ be a complex Hilbert space. A frame function on
 the projection lattice of $H$ is a function $\mu$ from the continuous linear operators on $H$ to
 $\mathbb{R}$ such that $\mu(P) \ge 0$ for every orthogonal projection $P$ on $H$,
 $\mu(P + Q) = \mu(P) + \mu(Q)$ for all orthogonal projections $P$ and $Q$ on $H$ with $PQ = 0$,

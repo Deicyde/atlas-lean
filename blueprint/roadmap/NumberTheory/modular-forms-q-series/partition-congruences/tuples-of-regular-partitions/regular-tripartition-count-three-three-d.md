@@ -1,6 +1,6 @@
 # The 3-dissection of the generating function of 3-regular tripartitions
 
-**The 3-dissection of the generating function of 3-regular tripartitions.** Let $T_3(n)$ be
+Let $T_3(n)$ be
 the number of $3$-regular tripartitions of $n$, and for $k \ge 1$ let
 $f_k = \prod_{m \ge 1} (1 - q^{km})$ be the Euler product. Then, as integer power series in $q$,
 

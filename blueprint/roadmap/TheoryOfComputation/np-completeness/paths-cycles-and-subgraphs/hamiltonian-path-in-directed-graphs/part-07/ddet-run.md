@@ -1,6 +1,6 @@
 # The detours of a diamond
 
-**The detours of a diamond.** Let $B, i, y \in \mathbb{N}$, let $\varphi$ be a CNF formula
+Let $B, i, y \in \mathbb{N}$, let $\varphi$ be a CNF formula
 with $m$ clauses and token list $\mathrm{toks}(\varphi)$, let $\nu$ be a list of symbols and $b$
 a state bit, and let $s$ be a quiescent state of the emitter such that $F$ holds
 $\mathrm{toks}(\varphi)$, $T$ and the scratch stack $X$ are empty, $V$ holds the name of $y$, then

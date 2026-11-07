@@ -1,6 +1,6 @@
 # Lunar unit
 
-**Lunar unit.** For a natural number $b$, the lunar unit of base $b$ is the coefficient sequence
+For a natural number $b$, the lunar unit of base $b$ is the coefficient sequence
 $\mathbb{N} \to \mathbb{N}$ whose constant term is $b - 1$ and whose other terms are all $0$, that
 is, the constant polynomial $b - 1$ over the max-min semiring. The subtraction is truncated, so
 the lunar unit of base $0$ is the zero sequence.

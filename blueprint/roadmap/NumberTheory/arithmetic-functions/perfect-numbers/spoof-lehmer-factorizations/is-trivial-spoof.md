@@ -1,6 +1,6 @@
 # Trivial spoof factorizations
 
-**Trivial spoof factorizations.** A finite multiset $F$ of pairs $(x, a)$ of natural numbers,
+A finite multiset $F$ of pairs $(x, a)$ of natural numbers,
 read as a spoof factorization with bases $x$ and exponents $a$, is trivial if every base $x$
 occurring in $F$ equals $1$.
 

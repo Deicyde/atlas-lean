@@ -1,6 +1,6 @@
 # Derivatives at $z = 1$ of uniform approximations
 
-**Derivatives at $z = 1$ of uniform approximations.** Let $r > 0$, let $D$ be the open disk of
+Let $r > 0$, let $D$ be the open disk of
 radius $r$ centred at $1$ in $\mathbb{C}$, and let $f$ and $G_n$ ($n \in \mathbb{N}$) be complex
 functions analytic on $D$. Suppose there is a real constant $C$ such that
 $|G_n(z) - f(z)\, n^{z-1}| \le C\, n^{\operatorname{Re} z - 2}$ for all $n \ge 1$ and all

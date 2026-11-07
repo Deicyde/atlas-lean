@@ -1,6 +1,6 @@
 # Prepending an equilibrious word shifts the position functions
 
-**Prepending an equilibrious word shifts the position functions.** Let $u$ be a finite word
+Let $u$ be a finite word
 over $\{a, b\}$ of length $2k$ that is equilibrious (it contains as many letters $a$ as letters
 $b$), and let $w$ be an infinite binary word in which both letters occur infinitely often. For a
 word $v$, write $p_{\alpha,v}(n)$ for the position (counted from $0$) of the $n$-th occurrence of

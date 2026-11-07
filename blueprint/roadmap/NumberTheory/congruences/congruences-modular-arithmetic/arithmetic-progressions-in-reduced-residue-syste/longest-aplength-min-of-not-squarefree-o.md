@@ -1,6 +1,6 @@
 # Minimum longest progression length when $n$ is neither squarefree nor a prime power
 
-**Minimum longest progression length when $n$ is neither squarefree nor a prime power.** Let
+Let
 $n > 1$ be a natural number that is neither squarefree nor a prime power, $\operatorname{rad}(n)$
 the product of its distinct prime factors and $\operatorname{gpf}(n)$ its largest prime factor.
 For an integer $m$ let $f_m(n)$ be the length of the longest arithmetic progression with positive

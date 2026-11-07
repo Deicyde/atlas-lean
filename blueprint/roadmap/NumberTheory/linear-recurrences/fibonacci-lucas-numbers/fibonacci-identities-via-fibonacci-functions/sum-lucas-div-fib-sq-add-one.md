@@ -1,6 +1,6 @@
 # Telescoping sums of Lucas numbers over Fibonacci squares plus one
 
-**Telescoping sums of Lucas numbers over Fibonacci squares plus one.** Let $F_m$ denote the
+Let $F_m$ denote the
 Fibonacci numbers and $L_m$ the Lucas numbers ($L_0 = 2$, $L_1 = 1$, $L_{m+2} = L_{m+1} + L_m$).
 For every natural number $n$,
 

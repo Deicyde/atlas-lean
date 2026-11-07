@@ -1,6 +1,6 @@
 # Super strong Lucas pseudoprimes from composed Lucas pairs
 
-**Super strong Lucas pseudoprimes from composed Lucas pairs.** Let $P_1, Q_1$ be integers
+Let $P_1, Q_1$ be integers
 with $\gcd(P_1, Q_1) = 1$ such that the Lucas pair $(P_1, Q_1)$ is nondegenerate, with Lucas
 sequences $U_n(P_1, Q_1)$, $V_n(P_1, Q_1)$ and discriminant $D_1 = P_1^2 - 4Q_1$. Let $k \ge 2$
 with $\gcd(D_1, k) = 1$, let $\varepsilon = \pm 1$, and let $P = \varepsilon V_k(P_1, Q_1)$,

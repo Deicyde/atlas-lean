@@ -1,6 +1,6 @@
 # Complex Hessian
 
-**Complex Hessian.** Let $u : \mathbb{C}^n \to \mathbb{R}$ and $z \in \mathbb{C}^n$, write
+Let $u : \mathbb{C}^n \to \mathbb{R}$ and $z \in \mathbb{C}^n$, write
 $e_1, \dots, e_n$ for the standard basis of $\mathbb{C}^n$, write $i$ for the imaginary unit, and
 for $a, b \in \mathbb{C}^n$ write $D^2u(z)(a, b)$ for the real Hessian of $u$ at $z$. The complex
 Hessian of $u$ at $z$ is the $n \times n$ complex matrix whose $(j, k)$ entry is

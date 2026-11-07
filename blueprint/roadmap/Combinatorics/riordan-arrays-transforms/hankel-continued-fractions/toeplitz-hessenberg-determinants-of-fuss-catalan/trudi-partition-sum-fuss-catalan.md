@@ -1,6 +1,6 @@
 # Trudi multi-sums of Fuss–Catalan numbers
 
-**Trudi multi-sums of Fuss–Catalan numbers.** For $s \in \mathbb{Q}$ and rational numbers
+For $s \in \mathbb{Q}$ and rational numbers
 $a_1, \dots, a_n$ let $T_s(a_1, \dots, a_n)$ be the sum of
 $s^{|\alpha|} \binom{|\alpha|}{\alpha_1, \dots, \alpha_n} a_1^{\alpha_1} \cdots a_n^{\alpha_n}$
 over all $(\alpha_1, \dots, \alpha_n) \in \mathbb{N}^n$ with

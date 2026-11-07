@@ -1,6 +1,6 @@
 # Composing a Pell-type solution with a norm-one unit
 
-**Composing a Pell-type solution with a norm-one unit.** Let $a, b, c, T, U, x, y$ be integers
+Let $a, b, c, T, U, x, y$ be integers
 with $a T^2 - b U^2 = c$ and $x^2 - ab y^2 = 1$. Then the pair $(T x + b U y, a T y + U x)$ is
 again a solution: $a (T x + b U y)^2 - b (a T y + U x)^2 = c$.
 

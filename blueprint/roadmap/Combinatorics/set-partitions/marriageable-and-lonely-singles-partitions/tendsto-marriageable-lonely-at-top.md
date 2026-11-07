@@ -1,6 +1,6 @@
 # The marriageable and lonely singles counts tend to infinity
 
-**The marriageable and lonely singles counts tend to infinity.** Let $M_n$ and $L_n$ be the
+Let $M_n$ and $L_n$ be the
 numbers of noncrossing partitions of $\{0, \dots, n-1\}$ that are marriageable singles partitions
 and lonely singles partitions, respectively. Then $M_n \to \infty$ and $L_n \to \infty$ as
 $n \to \infty$.

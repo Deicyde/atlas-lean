@@ -1,6 +1,6 @@
 # The set $\{1, \dots, q\}$ is well based
 
-**The set $\{1, \dots, q\}$ is well based.** For every natural number $q$, the set
+For every natural number $q$, the set
 $\{1, 2, \dots, q\}$ is well based.
 
 ## Sources

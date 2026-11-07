@@ -1,6 +1,6 @@
 # The companion sequence in terms of the $(-r)$-Fibonacci polynomials
 
-**The companion sequence in terms of the $(-r)$-Fibonacci polynomials.** Let $A$ be a
+Let $A$ be a
 commutative ring, $r \ge 2$ a natural number, $x \in A$ and $y$ a unit of $A$, and let
 $U^{(-r)}_n(x, y)$ be the $(-r)$-Fibonacci polynomials and $V^{(-r)}_n(x, y)$ their companion
 sequence. For every natural number $n \ge r$,

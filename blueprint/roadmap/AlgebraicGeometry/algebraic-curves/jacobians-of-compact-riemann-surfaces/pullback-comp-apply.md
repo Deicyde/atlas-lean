@@ -1,6 +1,6 @@
 # Pullback on Jacobians is compatible with composition
 
-**Pullback on Jacobians is compatible with composition.** Let $X$, $Y$ and $Z$ be compact
+Let $X$, $Y$ and $Z$ be compact
 Riemann surfaces, and for a holomorphic map $h$ between compact Riemann surfaces write $h^*$ for
 the induced pullback map on Jacobians. For all holomorphic maps $f : X \to Y$ and $g : Y \to Z$
 and every point $P$ of the Jacobian $J(Z)$, we have $(g \circ f)^*(P) = f^*(g^*(P))$.

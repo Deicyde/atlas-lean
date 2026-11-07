@@ -1,6 +1,6 @@
 # Weinstein conjecture in dimension three (Taubes)
 
-**Weinstein conjecture in dimension three (Taubes).** Let $M$ be a nonempty compact Hausdorff
+Let $M$ be a nonempty compact Hausdorff
 smooth manifold without boundary, modelled on a real vector space of dimension $3$. Let $\alpha$
 be a smooth one-form and $d\alpha$ a smooth two-form on $M$ satisfying the contact condition:
 $d\alpha$ is the exterior derivative of $\alpha$ and, at every point $x$, $\alpha_x \ne 0$ and

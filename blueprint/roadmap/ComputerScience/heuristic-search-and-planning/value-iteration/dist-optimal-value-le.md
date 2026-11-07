@@ -1,6 +1,6 @@
 # Stopping test
 
-**Stopping test.** Let $M$ be a Markov decision process with finitely many states,
+Let $M$ be a Markov decision process with finitely many states,
 a nonempty finite set of actions, real rewards and stochastic transition probabilities, let
 $0 \le \gamma < 1$, and let $T$ be the Bellman optimality operator and $V^*$ the optimal value of
 $M$ with discount $\gamma$. For every real-valued function $V$ on the states,

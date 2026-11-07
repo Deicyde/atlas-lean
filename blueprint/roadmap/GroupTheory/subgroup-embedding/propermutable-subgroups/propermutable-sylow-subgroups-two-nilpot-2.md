@@ -1,6 +1,6 @@
 # Propermutable subgroups of a non-abelian Sylow 2-subgroup force 2-nilpotency
 
-**Propermutable subgroups of a non-abelian Sylow 2-subgroup force 2-nilpotency.** Let $G$
+Let $G$
 be a finite group and $P$ a non-abelian Sylow $2$-subgroup of $G$, with $|P| = 2^n$, and let $k$
 be a natural number with $1 \le k < n$. If every subgroup of $P$ of order $2^k$ is propermutable
 in $G$, and, when $k = 1$, every cyclic subgroup of $P$ of order $4$ is propermutable in $G$, then

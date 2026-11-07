@@ -1,6 +1,5 @@
 # Permutations of eight variables fixing no self-dual monotone function (Corollary 16)
 
-**Permutations of eight variables fixing no self-dual monotone function (Corollary 16).**
 Let $\pi$ be one of the permutations $(0\,1\,2\,3\,4\,5\,6\,7)$, $(0\,1)(2\,3\,4\,5\,6\,7)$,
 $(0\,1\,2\,3)(4\,5\,6\,7)$, $(0\,1)(2\,3)(4\,5\,6\,7)$ and $(0\,1)(2\,3)(4\,5)(6\,7)$ of
 $\{0, \dots, 7\}$, in cycle notation. Let $f : \{0,1\}^8 \to \{0,1\}$ be self-dual monotone,

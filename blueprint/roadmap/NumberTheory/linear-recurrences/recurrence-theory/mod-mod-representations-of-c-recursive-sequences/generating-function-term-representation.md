@@ -1,6 +1,6 @@
 # Term extraction from the generating function persists in larger bases
 
-**Term extraction from the generating function persists in larger bases.** Let
+Let
 $t_0, t_1, t_2, \dots$ be natural numbers and let $c$, $m$ and $r$ be natural numbers with
 $c \ge 2$, $m \ge 2$ and $c \le r$. Suppose that for every $n \ge m$ the real series
 $\sum_{k \ge 0} t_k \, (c^{-n})^k$ is summable and

@@ -1,6 +1,6 @@
 # The line problem for quintic extensions
 
-**The line problem for quintic extensions.** Let $E_5$ be the set of $647$ prime powers listed
+Let $E_5$ be the set of $647$ prime powers listed
 in the appendix of arXiv:2412.00010, the smallest being $2$ and the largest $62791$. Let $q$ be a
 natural number not in $E_5$. Then for all finite fields $K$ and $L$ with $L$ an extension of $K$,
 $|K| = q$ and $[L : K] = 5$, and all nonzero $\gamma_1, \gamma_2 \in L$ with

@@ -1,3 +1,3 @@
 # Symmetry of transpositions
 
-**Symmetry of transpositions.** Transpositions are symmetric.
+Transpositions are symmetric.

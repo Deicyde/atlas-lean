@@ -1,6 +1,6 @@
 # Max-min product
 
-**Max-min product.** The max-min product of sequences $g, h \colon \mathbb{N} \to \mathbb{N}$
+The max-min product of sequences $g, h \colon \mathbb{N} \to \mathbb{N}$
 is the sequence $g \otimes h$ with $(g \otimes h)_k = \max_{i + j = k} \min(g_i, h_j)$ for every
 $k \in \mathbb{N}$, the maximum running over pairs of natural numbers $(i, j)$. This is the product
 of the max-min semiring $(\mathbb{N}, \max, \min)$ on coefficient sequences.

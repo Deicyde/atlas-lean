@@ -1,6 +1,6 @@
 # Excedance generating function of permutations with all cycles of length $r$
 
-**Excedance generating function of permutations with all cycles of length $r$.** Let $R$ be
+Let $R$ be
 a commutative $\mathbb{Q}$-algebra, $x \in R$ and $r \ge 2$. For a permutation $\sigma$ of
 $\{0, \dots, n-1\}$ let $\operatorname{exc}(\sigma)$ be the number of points $i$ with
 $\sigma(i) > i$, and let $A_{r-1}(x) = \sum_{\sigma} x^{\operatorname{exc}(\sigma)}$, summed

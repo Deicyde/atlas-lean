@@ -1,6 +1,6 @@
 # No continuous function agrees a.e. with the indicator of $(0,1)$
 
-**No continuous function agrees a.e. with the indicator of $[0,1]$.** Let $\chi_{[0,1]}$ be
+Let $\chi_{[0,1]}$ be
 the characteristic function of $[0,1]$. There is no continuous function
 $f : \mathbb{R} \to \mathbb{R}$ such that $f(x) = \chi_{[0,1]}(x)$ for almost every
 $x \in \mathbb{R}$ with respect to Lebesgue measure.

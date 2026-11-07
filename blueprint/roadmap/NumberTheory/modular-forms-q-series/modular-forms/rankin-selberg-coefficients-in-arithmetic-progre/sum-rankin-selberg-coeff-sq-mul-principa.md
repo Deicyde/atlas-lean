@@ -1,6 +1,6 @@
 # Sums of squared Rankin–Selberg coefficients twisted by the principal character
 
-**Sums of squared Rankin–Selberg coefficients twisted by the principal character.** Let $f$ be
+Let $f$ be
 a level-one cusp form of weight $k$ that is a normalized Hecke eigenform, let
 $\lambda_{f\times f}$ be its Rankin–Selberg coefficients, and for a prime $q$ let $\chi_0$ be the
 principal Dirichlet character modulo $q$. There are real polynomials $P_q$, one for each prime

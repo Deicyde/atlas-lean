@@ -1,6 +1,6 @@
 # Odd harmonic central binomial sums for powers one to three
 
-**Odd harmonic central binomial sums for powers one to three.** For every natural number $n$,
+For every natural number $n$,
 let $O_m = \sum_{i=1}^{m} 1/(2i-1)$ be the odd harmonic numbers, $c_n = \binom{2n}{n}/4^n$, and
 $S_r^O(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r O_k$. Then
 

@@ -1,6 +1,6 @@
 # Failure of the Baer–Suzuki theorem for periodic groups at the prime 2
 
-**Failure of the Baer–Suzuki theorem for periodic groups at the prime 2.** There is a group $G$
+There is a group $G$
 in which every element has finite order, together with an element $a \in G$ such that any two
 conjugates of $a$ generate a finite $2$-subgroup, but no normal $2$-subgroup of $G$ contains $a$.
 Here a $2$-subgroup is a subgroup in which every element has order a power of $2$.

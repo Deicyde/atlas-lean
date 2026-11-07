@@ -1,6 +1,6 @@
 # Fibonacci cyclotomic values
 
-**Fibonacci cyclotomic values.** For a natural number $m$, $\Phi_m$ is the rational number
+For a natural number $m$, $\Phi_m$ is the rational number
 $\prod_{d \mid m} F_{m/d}^{\mu(d)}$, where $d$ runs over the positive divisors of $m$, $F_k$ is the
 $k$-th Fibonacci number and $\mu$ is the Möbius function. For $m > 1$ this is the value
 $\Phi_m(\alpha, \beta)$ of the homogenized $m$-th cyclotomic polynomial at the roots

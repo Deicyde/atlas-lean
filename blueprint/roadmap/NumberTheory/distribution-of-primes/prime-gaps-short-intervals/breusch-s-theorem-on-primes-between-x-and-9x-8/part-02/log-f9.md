@@ -1,6 +1,6 @@
 # Logarithm of Breusch's product $F_9(n)$
 
-**Logarithm of Breusch's product $F_9(n)$.** Let $w_9$ be the table of divisors $d$ of
+Let $w_9$ be the table of divisors $d$ of
 $Q_9 = 210$ paired with their Möbius values $\varepsilon$. For a natural number $n$, writing
 $k_d = 210/d$,
 

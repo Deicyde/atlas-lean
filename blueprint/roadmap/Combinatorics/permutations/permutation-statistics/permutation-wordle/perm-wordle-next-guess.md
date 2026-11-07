@@ -1,6 +1,6 @@
 # One round of permutation Wordle
 
-**One round of permutation Wordle.** Let $S$ be a strategy, that is, a permutation $S_m$ of
+Let $S$ be a strategy, that is, a permutation $S_m$ of
 $\{0, \dots, m-1\}$ for every $m$, let $\pi$ be a permutation of $\{0, \dots, n-1\}$ (the
 secret), and let $g$ be a map from $\{0, \dots, n-1\}$ to itself (the current guess). Let $I$ be
 the set of incorrect positions, the $k$ with $g(k) \ne \pi(k)$, and let $m$ be the number of

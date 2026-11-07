@@ -1,6 +1,6 @@
 # The Dirichlet subconvexity exponent is at most 3/16
 
-**The Dirichlet subconvexity exponent is at most 3/16.** The conductor-aspect Dirichlet
+The conductor-aspect Dirichlet
 subconvexity exponent, an extended real number, is at most $3/16$.
 
 ## Sources

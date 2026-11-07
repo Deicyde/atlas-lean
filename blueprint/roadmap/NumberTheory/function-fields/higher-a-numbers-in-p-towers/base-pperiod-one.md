@@ -1,6 +1,6 @@
 # The base-$p$ expansion of $1$ has period $1$
 
-**The base-$p$ expansion of $1$ has period $1$.** For every natural number $p$, the period
+For every natural number $p$, the period
 $L_1$ of the base-$p$ expansion of $1$ equals $1$.
 
 ## Sources

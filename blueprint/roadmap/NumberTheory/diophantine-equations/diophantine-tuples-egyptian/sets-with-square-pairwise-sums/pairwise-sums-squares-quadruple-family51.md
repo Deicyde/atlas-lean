@@ -1,6 +1,6 @@
 # A four-parameter family of integer quadruples with square pairwise sums
 
-**A four-parameter family of integer quadruples with square pairwise sums.** For integers
+For integers
 $u_1, u_2, v_1, v_2$, put $w = v_1^4 - 6 v_1^2 v_2^2 + v_2^4$, $s = v_1^2 + v_2^2$ and
 $d = v_1^2 - v_2^2$, and let
 $a_1 = w^2 d^2 (u_1^2 + u_2^2)^2$, $a_2 = w^2 s^2 (u_1^2 - u_2^2)^2$,

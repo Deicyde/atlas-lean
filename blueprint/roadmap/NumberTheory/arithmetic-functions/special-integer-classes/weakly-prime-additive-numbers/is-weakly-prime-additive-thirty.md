@@ -1,6 +1,6 @@
 # Thirty is weakly prime-additive
 
-**Thirty is weakly prime-additive.** The number $30$ is weakly prime-additive.
+The number $30$ is weakly prime-additive.
 
 Indeed, $30$ has the distinct prime divisors $2$, $3$, $5$ and $30 = 2 + 3 + 5^2$.
 

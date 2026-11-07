@@ -1,6 +1,6 @@
 # Isogeny volcano
 
-**Isogeny volcano.** Let $\ell$ be a prime. An $\ell$-isogeny volcano consists of a finite
+Let $\ell$ be a prime. An $\ell$-isogeny volcano consists of a finite
 vertex set $V$, a multigraph on $V$ with edge multiplicities $m(v, w)$, a depth $d \in \mathbb{N}$,
 a surjective level map $\mathrm{lev} : V \to \{0, 1, \dots, d\}$ and a surface degree
 $s \in \mathbb{N}$ with $s \le 2$, subject to the following conditions, where the surface is the

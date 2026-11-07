@@ -1,6 +1,6 @@
 # Residue theorem on a disc
 
-**Residue theorem on a disc.** Let $c\in\mathbb{C}$ and $R>0$, and let $S$ be a finite set of
+Let $c\in\mathbb{C}$ and $R>0$, and let $S$ be a finite set of
 points of the open disc $\{z:|z-c|\lt R\}$. For each $s\in S$ let $r_s>0$ be such that the closed
 disc $\{z:|z-s|\le r_s\}$ lies in $\{z:|z-c|\lt R\}$ and contains no point of $S$ other than $s$.
 Let $f:\mathbb{C}\to\mathbb{C}$ be complex differentiable on $\{z:|z-c|\le R\}\setminus S$ and

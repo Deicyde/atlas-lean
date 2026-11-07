@@ -1,6 +1,6 @@
 # Dedekind psi function as a product over prime powers
 
-**Dedekind psi function as a product over prime powers.** For every natural number $n \ne 0$,
+For every natural number $n \ne 0$,
 the Dedekind psi function $\psi$ satisfies
 
 $$

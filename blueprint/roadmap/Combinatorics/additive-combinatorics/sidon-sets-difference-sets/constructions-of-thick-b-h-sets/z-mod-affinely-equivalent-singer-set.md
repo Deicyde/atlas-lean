@@ -1,6 +1,6 @@
 # Affine equivalences between Singer sets
 
-**Affine equivalences between Singer sets.** Let $F$ be a finite field with $q$ elements and
+Let $F$ be a finite field with $q$ elements and
 characteristic $p$, let $h \ge 2$, let $K$ be a field extension of $F$ of degree $h + 1$, and
 let $\theta \in K$ have order $|K| - 1$, that is, generate $K^\times$. Put
 $M = (q^{h+1} - 1)/(q - 1)$. Let $b$ and $e$ be natural numbers such that the minimal

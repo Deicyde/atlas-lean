@@ -1,6 +1,6 @@
 # Groups acting freely on abelian groups need not embed in skew-fields (Kourovka 16.54)
 
-**Groups acting freely on abelian groups need not embed in skew-fields (Kourovka 16.54).** There
+There
 is a group $G$ with an action by automorphisms on a nontrivial abelian group $V$ such that
 $g \cdot v \ne v$ for all $g \ne 1$ in $G$ and all $v \ne 0$ in $V$, but with no injective
 homomorphism into the multiplicative group of any division ring. This answers Kourovka

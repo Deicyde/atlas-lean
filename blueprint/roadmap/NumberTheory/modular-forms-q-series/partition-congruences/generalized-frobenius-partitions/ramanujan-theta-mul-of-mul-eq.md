@@ -1,6 +1,6 @@
 # Ramanujan's theta product identity for $ab = cd$
 
-**Ramanujan's theta product identity for $ab = cd$.** Let
+Let
 $f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's general theta
 function. If $a, b, c, d$ are complex numbers with $a \ne 0$, $|ab| < 1$ and $ab = cd$, then
 

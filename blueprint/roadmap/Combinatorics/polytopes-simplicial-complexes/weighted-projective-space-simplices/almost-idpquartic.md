@@ -1,6 +1,6 @@
 # The quartic $1 + 7z + 14z^2 + 7z^3 + z^4$
 
-**The quartic $1 + 7z + 14z^2 + 7z^3 + z^4$.** The polynomial $1 + 7z + 14z^2 + 7z^3 + z^4$ with
+The polynomial $1 + 7z + 14z^2 + 7z^3 + z^4$ with
 integer coefficients, the quartic factor from Theorem 13.
 
 ## Sources

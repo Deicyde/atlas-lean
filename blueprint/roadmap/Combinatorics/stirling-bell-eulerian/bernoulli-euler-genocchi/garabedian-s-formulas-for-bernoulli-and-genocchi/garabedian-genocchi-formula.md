@@ -1,6 +1,6 @@
 # Garabedian's formula for the Bernoulli numbers
 
-**Garabedian's formula for the Bernoulli numbers.** For every natural number $n \ge 1$,
+For every natural number $n \ge 1$,
 
 $$2(1 - 2^n) B_n = n \sum_{k=1}^{n} \frac{(-1)^{n-k} (k-1)!\, S(n, k)}{2^{k-1}},$$
 

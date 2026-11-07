@@ -1,6 +1,6 @@
 # Step difference
 
-**Step difference.** For natural numbers $m, n$ and a real function $P(x, y)$ of two real
+For natural numbers $m, n$ and a real function $P(x, y)$ of two real
 variables, let $l = \gcd(m \mathbin{\dot-} 1, n)$, where $m \mathbin{\dot-} 1$ is subtraction
 truncated at $0$ (so $l = n$ when $m = 0$). The step difference of $P$ for the sector of slope
 $n/m$ is $k = P((m - 1)/l, n/l) - P(0, 0)$, with $m - 1$ here the real difference and division

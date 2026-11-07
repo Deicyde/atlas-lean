@@ -1,6 +1,6 @@
 # Product of quadratic canonical-line factors
 
-**Product of quadratic canonical-line factors.** For a finite list $c_1, \dots, c_m$ of real
+For a finite list $c_1, \dots, c_m$ of real
 numbers, this is the monic complex polynomial $\prod_{k=1}^{m} (X^2 + X + c_k)$; the empty list
 gives the constant polynomial $1$.
 

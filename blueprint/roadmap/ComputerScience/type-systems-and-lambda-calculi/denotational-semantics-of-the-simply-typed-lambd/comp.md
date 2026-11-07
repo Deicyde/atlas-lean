@@ -1,6 +1,6 @@
 # Composition of STLC contexts
 
-**Composition of STLC contexts.** Let $E_2$ be a typed one-hole context whose hole has
+Let $E_2$ be a typed one-hole context whose hole has
 type $B$ in variable context $\Delta$ and which produces a term of type $C$ in context
 $\Theta$, and let $E_1$ be one whose hole has type $A$ in context $\Gamma$ and which produces
 a term of type $B$ in $\Delta$. The composite $E_2 \circ E_1$, with hole of type $A$ in

@@ -1,6 +1,6 @@
 # Core identity behind Casey's theorem in cyclic order
 
-**Core identity behind Casey's theorem in cyclic order.** In the Euclidean plane, write
+In the Euclidean plane, write
 $d(p, q)$ for the distance between points $p$ and $q$. Let $O, c_1, c_2, c_3, c_4$ be points and
 $R, r_1, r_2, r_3, r_4$ real numbers with $r_i < R$ and $d(c_i, O) + r_i = R$ for each $i$.
 Suppose $c_i - O = d(c_i, O)(\cos\theta_i, \sin\theta_i)$ for real numbers

@@ -1,6 +1,6 @@
 # Stirling permutations with $n$ nonzero displacements
 
-**Stirling permutations with $n$ nonzero displacements.** For every natural number $n$, the
+For every natural number $n$, the
 number of Stirling permutations $w$ of order $n$ in which exactly $n$ cars have nonzero
 displacement (equivalently, whose displacement composition $\mathrm{dis}(w)$ has exactly $n$
 nonzero parts) is the Catalan number $C_n$.

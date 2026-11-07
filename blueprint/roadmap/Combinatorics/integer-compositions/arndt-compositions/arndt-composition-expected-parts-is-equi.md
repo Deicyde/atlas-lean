@@ -1,6 +1,6 @@
 # Expected number of parts of an Arndt composition
 
-**Expected number of parts of an Arndt composition.** Let $a(n, m)$ be the number of Arndt
+Let $a(n, m)$ be the number of Arndt
 compositions of $n$ with $m$ parts, and $F_n$ the $n$-th Fibonacci number ($F_0 = 0$, $F_1 = 1$).
 Then
 

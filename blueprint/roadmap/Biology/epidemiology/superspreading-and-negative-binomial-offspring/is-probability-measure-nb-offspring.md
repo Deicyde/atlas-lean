@@ -1,3 +1,3 @@
 # Negative-binomial offspring law is a probability measure
 
-**Negative-binomial offspring law is a probability measure.** The negative-binomial offspring law is a probability measure (`k > 0`, `R ≥ 0`).
+The negative-binomial offspring law is a probability measure (`k > 0`, `R ≥ 0`).

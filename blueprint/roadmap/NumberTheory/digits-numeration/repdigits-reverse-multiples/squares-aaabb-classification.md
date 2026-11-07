@@ -1,6 +1,6 @@
 # Squares with two blocks of repeated digits
 
-**Squares with two blocks of repeated digits.** Let $n$ be a perfect square whose decimal
+Let $n$ be a perfect square whose decimal
 representation, read from the most significant digit, consists of $r \ge 1$ copies of a digit
 $a$ with $1 \le a \le 9$ followed by $s \ge 1$ copies of a digit $b$ with $0 \le b \le 9$. Then
 $n$ is one of $16$, $25$, $36$, $49$, $64$, $81$, $144$, $225$, $441$, $1444$ and $7744$, or

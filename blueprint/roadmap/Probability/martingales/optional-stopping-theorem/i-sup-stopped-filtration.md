@@ -1,6 +1,6 @@
 # The stopped filtration generates the stopping-time σ-algebra
 
-**The stopped filtration generates the stopping-time σ-algebra.** Let
+Let
 $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration on a measurable space $\Omega$ and let $\tau$
 be a stopping time for it with values in $\mathbb{N} \cup \{\infty\}$. For each $n$, let
 $\mathcal{F}_{\tau \wedge n}$ be the σ-algebra of the stopping time $\tau \wedge n$, the $n$-th

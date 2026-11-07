@@ -1,6 +1,6 @@
 # Isotopy of parametrized links
 
-**Isotopy of parametrized links.** Two parametrized links in $\mathbb{R}^3$ with $n$
+Two parametrized links in $\mathbb{R}^3$ with $n$
 components $\gamma^1_i$ and $\gamma^2_i$ ($i < n$) are isotopic (oriented, labeled ambient
 isotopy) if there are a single smooth ambient isotopy of $\mathbb{R}^3$ with forward family
 $H_t$ and, for each $i < n$, an orientation-preserving reparametrization of the circle with

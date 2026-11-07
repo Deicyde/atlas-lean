@@ -1,6 +1,6 @@
 # The Komak sequence $g$ is Fibonacci-automatic
 
-**The Komak sequence $g$ is Fibonacci-automatic.** The sequence $g$ of Komak et al. is
+The sequence $g$ of Komak et al. is
 Fibonacci-automatic.
 
 Only the existence of an automaton is asserted; the explicit automaton that the source draws

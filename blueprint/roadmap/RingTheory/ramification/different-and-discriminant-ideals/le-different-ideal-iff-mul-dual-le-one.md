@@ -1,6 +1,6 @@
 # Ideals below the different
 
-**Ideals below the different.** Let $A$ be an integrally closed domain with fraction field
+Let $A$ be an integrally closed domain with fraction field
 $K$, let $L/K$ be a finite separable extension, and let $B$ be the integral closure of $A$ in $L$;
 assume that $B$ is a Dedekind domain with fraction field $L$ and is torsion-free as an
 $A$-module. Write $B^\vee = \{x \in L : \operatorname{Tr}_{L/K}(xB) \subseteq A\}$ for the trace

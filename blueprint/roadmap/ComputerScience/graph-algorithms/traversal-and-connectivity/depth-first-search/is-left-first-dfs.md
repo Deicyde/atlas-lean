@@ -1,6 +1,6 @@
 # Left-first depth-first traversals
 
-**Left-first depth-first traversals.** Let $G$ be a finite directed graph given by ordered
+Let $G$ be a finite directed graph given by ordered
 adjacency lists and let $r = (r_1, \dots, r_k)$ be a list of root vertices. A traversal $T$ is a
 left-first DFS of $G$ from $r$ when some finite run of the following machine ends with an empty
 work list and with recorded preorder, postorder and (child, parent) list equal to those of $T$.

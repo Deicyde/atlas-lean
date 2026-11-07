@@ -1,6 +1,6 @@
 # Negative answer to the matching cut and girth question
 
-**Negative answer to the matching cut and girth question.** It is not the case that for
+It is not the case that for
 every real number $d$ there is a natural number $g$ such that every simple graph on a finite
 vertex set with at least two vertices, average degree less than $d$ and girth at least $g$ has a
 matching cut. That is, there is a real number $d$ such that for every natural number $g$ some

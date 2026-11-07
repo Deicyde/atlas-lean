@@ -1,6 +1,6 @@
 # Plagne's theorem on the smallest iterated sumsets in cyclic groups
 
-**Plagne's theorem on the smallest iterated sumsets in cyclic groups.** Let $m$, $k$ and $h$
+Let $m$, $k$ and $h$
 be natural numbers with $1 \le k \le m$ and $h \ge 1$. For a subset $A$ of
 $\mathbb{Z}_m = \mathbb{Z}/m\mathbb{Z}$ let $hA = \{a_1 + \dots + a_h : a_1, \dots, a_h \in A\}$
 be its $h$-fold sumset. Then the minimum of $|hA|$ over all $k$-element subsets

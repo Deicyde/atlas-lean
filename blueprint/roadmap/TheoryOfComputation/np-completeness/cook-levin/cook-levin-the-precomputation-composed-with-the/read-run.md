@@ -1,6 +1,6 @@
 # The read loop's run
 
-**The read loop's run.** Let $M$ be a program of the full machine whose read-loop label carries
+Let $M$ be a program of the full machine whose read-loop label carries
 the read loop over all of $\mathrm{Fin}\,r$, with code map $c_f$ and separator code $c_s$, and let
 $o$ be a list of booleans. For every raw input $s = s_1 \cdots s_\ell$, list of codes $w$,
 $n \in \mathbb{N}$ and flag $v$: started at the read-loop label with flag $v$, raw input stack $s$,

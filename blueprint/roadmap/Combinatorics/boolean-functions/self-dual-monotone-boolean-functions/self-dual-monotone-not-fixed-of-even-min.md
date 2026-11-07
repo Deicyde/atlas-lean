@@ -1,6 +1,6 @@
 # Permutations with only even cycles fix no self-dual monotone function (Lemma 15)
 
-**Permutations with only even cycles fix no self-dual monotone function (Lemma 15).** Let
+Let
 $\pi$ be a permutation of $\{0, \dots, n-1\}$ all of whose cycles have even length, that is,
 every point has an orbit of even size under $\pi$. Let $f : \{0,1\}^n \to \{0,1\}$ be self-dual
 monotone, that is, monotone for the coordinatewise order with $0 < 1$ and such that

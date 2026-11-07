@@ -1,6 +1,6 @@
 # The Lüroth map shifts the digits
 
-**The Lüroth map shifts the digits.** For every real number $x$ and every $n \ge 1$, the
+For every real number $x$ and every $n \ge 1$, the
 $n$-th Lüroth digit of $L(x)$, where $L$ is the Lüroth map, is the $(n+1)$-st Lüroth digit of
 $x$: $d_n(L(x)) = d_{n+1}(x)$.
 

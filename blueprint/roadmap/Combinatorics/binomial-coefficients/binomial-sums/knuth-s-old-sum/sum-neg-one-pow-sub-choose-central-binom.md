@@ -1,6 +1,6 @@
 # Alternating sum of $\binom{n}{k} \binom{2k}{k}$
 
-**Alternating sum of $\binom{n}{k} \binom{2k}{k}$.** For every natural number $n$,
+For every natural number $n$,
 
 $$\sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} \binom{2k}{k}
 = \sum_{k=0}^{\lfloor n/2 \rfloor} \binom{n}{k} \binom{n-k}{k}$$

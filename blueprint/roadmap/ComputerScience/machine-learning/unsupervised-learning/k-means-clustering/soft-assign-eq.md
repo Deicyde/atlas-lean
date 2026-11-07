@@ -1,6 +1,6 @@
 # Common-variance responsibilities relative to a fixed component
 
-**Common-variance responsibilities relative to a fixed component.** For weights
+For weights
 $w_1, \dots, w_K \in \mathbb{R}$, means $\mu_1, \dots, \mu_K \in \mathbb{R}^d$, a real $v > 0$,
 a point $x \in \mathbb{R}^d$ and components $j$ and $k$, the common-variance responsibility
 $r_v(x, k)$ of component $k$ at $x$ for these weights and means satisfies

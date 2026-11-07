@@ -1,6 +1,6 @@
 # The canonical rule sequence along an index sequence
 
-**The canonical rule sequence along an index sequence.** Let $P$ be a list of dominoes over
+Let $P$ be a list of dominoes over
 $\alpha$, let $\sigma$ assign a word over $\alpha$ to each domino, let $A$ be a natural number,
 and for $i \in \mathbb{N}$ write $w_i$ for $\sigma$ applied to the $i$-th domino of $P$ (the domino
 with both words empty when $i$ is past the end of $P$). For a sequence $i_1, \dots, i_n$ of

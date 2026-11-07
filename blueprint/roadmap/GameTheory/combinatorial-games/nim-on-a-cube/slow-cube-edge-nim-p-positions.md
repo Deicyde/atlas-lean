@@ -1,6 +1,6 @@
 # P-positions of slow edge Nim on a cube
 
-**P-positions of slow edge Nim on a cube.** Write a position of the cube game as
+Write a position of the cube game as
 $p = (a, b, c, A, B, C)$, the numbers of tokens on the six faces of a cube, where the faces
 carrying $A$, $B$, $C$ are opposite those carrying $a$, $b$, $c$. A slow edge move is an edge
 move (removing at least one token in total from two faces in different opposite pairs) in which

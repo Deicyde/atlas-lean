@@ -1,6 +1,6 @@
 # Coppersmith's 1997 bound on the dual exponent
 
-**Coppersmith's 1997 bound on the dual exponent.** For every field $F$, the dual matrix
+For every field $F$, the dual matrix
 multiplication exponent $\alpha(F)$ of the arithmetic-circuit model satisfies
 $\alpha(F) > 0.29462$.
 

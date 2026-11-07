@@ -1,6 +1,6 @@
 # Three Hall π-subgroups need not meet in the π-core
 
-**Three Hall π-subgroups need not meet in the π-core.** It is not the case that for every set
+It is not the case that for every set
 $\pi$ of natural numbers every finite $D_\pi$-group $G$ has Hall $\pi$-subgroups $H_1$, $H_2$,
 $H_3$ with $H_1 \cap H_2 \cap H_3 = O_\pi(G)$, the $\pi$-core of $G$: the answer to
 Kourovka 18.31 is negative.

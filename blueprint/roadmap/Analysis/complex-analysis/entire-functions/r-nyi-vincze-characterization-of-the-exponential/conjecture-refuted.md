@@ -1,6 +1,6 @@
 # No non-exponential solution of the Rényi–Vincze conditions
 
-**No non-exponential solution of the Rényi–Vincze conditions.** There are no function
+There are no function
 $f : \mathbb{C} \to \mathbb{C}$ and real numbers $a_0, a_1, a_2, \dots$ such that $f$ is not the
 function $z \mapsto c\,e^z$ for any real $c > 0$; $a_n \ge 0$ for every $n$; $a_n \ne 0$ for
 infinitely many $n$; for every $z \in \mathbb{C}$ the series $\sum_{n \ge 0} a_n z^n$ has sum

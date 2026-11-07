@@ -1,6 +1,6 @@
 # The $m$-falling factorial
 
-**The $m$-falling factorial.** For an integer $x$ and natural numbers $k$ and $m$, the
+For an integer $x$ and natural numbers $k$ and $m$, the
 $m$-falling factorial is the integer
 $x\downarrow_{k,m} = \prod_{i=0}^{k-1} (x - mi) = x(x-m)\cdots(x-(k-1)m)$, which is $1$ for $k = 0$.
 

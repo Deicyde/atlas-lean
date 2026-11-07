@@ -1,6 +1,6 @@
 # Concatenation at the all-false input
 
-**Concatenation at the all-false input.** For natural numbers $n$ and $k$ and a finite list
+For natural numbers $n$ and $k$ and a finite list
 $W = (W_0, \dots, W_{m-1})$ of Boolean functions on $n$ variables, the concatenation of $W$ on
 $n + k$ variables takes the value $W_0(\mathrm{false}, \dots, \mathrm{false})$ at the all-false
 input when $W$ is nonempty, and the value false when $W$ is empty.

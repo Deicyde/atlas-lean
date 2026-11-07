@@ -1,6 +1,6 @@
 # SUDOKU is NP-complete
 
-**SUDOKU is NP-complete.** The decision problem SUDOKU lies in NP, and every decision problem
+The decision problem SUDOKU lies in NP, and every decision problem
 in NP has a polynomial-time many-one reduction to SUDOKU.
 
 ## Sources

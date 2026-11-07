@@ -1,6 +1,6 @@
 # Power-of-five congruence modulo 24 for partitions with distinct even parts
 
-**Power-of-five congruence modulo 24 for partitions with distinct even parts.** Write
+Write
 $\mathrm{ped}(m)$ for the number of partitions of $m$ in which the even parts are distinct (odd
 parts may repeat). For all natural numbers $k \ge 1$ and $n$,
 

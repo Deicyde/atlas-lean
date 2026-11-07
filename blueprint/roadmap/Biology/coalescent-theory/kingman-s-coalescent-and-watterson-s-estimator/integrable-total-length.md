@@ -1,3 +1,3 @@
 # Integrability of the total branch length
 
-**Integrability of the total branch length.** The total branch length is integrable.
+The total branch length is integrable.

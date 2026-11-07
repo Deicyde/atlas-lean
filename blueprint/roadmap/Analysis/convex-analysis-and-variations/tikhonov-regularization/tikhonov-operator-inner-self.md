@@ -1,3 +1,3 @@
 # Inner product of the Tikhonov normal operator with its argument
 
-**Inner product of the Tikhonov normal operator with its argument.** The inner product of the normal operator applied to `x` with `x` itself.
+The inner product of the normal operator applied to `x` with `x` itself.

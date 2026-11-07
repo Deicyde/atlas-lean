@@ -1,6 +1,6 @@
 # Mex rule for Sprague–Grundy values
 
-**Mex rule for Sprague–Grundy values.** Let $G$ be a finite impartial game and $n$ a natural
+Let $G$ be a finite impartial game and $n$ a natural
 number such that $G$ is equivalent to the Nim heap $*n$, that is, $G$ has Sprague–Grundy value
 $n$. For a move from the start position of $G$ to a position $q$, write $G_q$ for the game $G$
 started at $q$. Then no $G_q$ is equivalent to $*n$, and for every natural number $m < n$ some

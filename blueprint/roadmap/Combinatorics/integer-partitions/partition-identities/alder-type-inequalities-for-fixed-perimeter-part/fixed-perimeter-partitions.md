@@ -1,6 +1,6 @@
 # Partitions with fixed perimeter
 
-**Partitions with fixed perimeter.** The perimeter of a partition is its largest part plus its
+The perimeter of a partition is its largest part plus its
 number of parts minus $1$. For a natural number $n$, the partitions with perimeter $n$ form the
 finite set of all finite multisets $s$ of positive integers whose largest element plus number of
 elements (counted with multiplicity) equals $n + 1$.

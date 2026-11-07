@@ -1,6 +1,6 @@
 # Counting SAT is #P-complete
 
-**Counting SAT is #P-complete.** The function counting the satisfying assignments of a CNF
+The function counting the satisfying assignments of a CNF
 formula is $\#P$-complete: it lies in $\#P$, and every function in $\#P$ is computed from it by
 a polynomial-time oracle machine.
 

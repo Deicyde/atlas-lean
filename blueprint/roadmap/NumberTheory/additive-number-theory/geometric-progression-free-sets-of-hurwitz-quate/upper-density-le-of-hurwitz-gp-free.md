@@ -1,6 +1,6 @@
 # Upper bound for geometric-progression-free Hurwitz sets
 
-**Upper bound for geometric-progression-free Hurwitz sets.** Let $Q_{\mathrm{Hur}}$ be the
+Let $Q_{\mathrm{Hur}}$ be the
 set of Hurwitz quaternions, the rational quaternions whose four coordinates are all integers or
 all lie in $\mathbb{Z} + \tfrac12$, and let $\mathrm{Nm}(q)$ be the sum of the squares of the
 coordinates of $q$. For $N \in \mathbb{N}$ let $S(N)$ be the set of nonzero

@@ -1,6 +1,6 @@
 # Valid solutions of the Davis–Power system
 
-**Valid solutions of the Davis–Power system.** Let $\varphi(t) = e^{-t^2/2}/\sqrt{2\pi}$ be
+Let $\varphi(t) = e^{-t^2/2}/\sqrt{2\pi}$ be
 the standard Gaussian density, $Q(x) = \int_x^\infty \varphi(t)\,dt$ its upper tail,
 $t_0 = \sqrt{2\log 2}$ with $\log$ the natural logarithm,
 $B = \frac{1}{2}\int_0^\infty \min(1, 2e^{-t^2/2})\,dt$ and

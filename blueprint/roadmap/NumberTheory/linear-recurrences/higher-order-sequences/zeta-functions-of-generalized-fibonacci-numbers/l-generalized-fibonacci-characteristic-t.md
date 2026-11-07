@@ -1,6 +1,6 @@
 # The ℓ-generalized Fibonacci characteristic polynomial for ℓ = 2
 
-**The ℓ-generalized Fibonacci characteristic polynomial for ℓ = 2.** For $\ell = 2$ the
+For $\ell = 2$ the
 characteristic polynomial $\varphi_2$ of the $\ell$-generalized Fibonacci recurrence is the
 Fibonacci polynomial $X^2 - X - 1$ in $\mathbb{C}[X]$.
 

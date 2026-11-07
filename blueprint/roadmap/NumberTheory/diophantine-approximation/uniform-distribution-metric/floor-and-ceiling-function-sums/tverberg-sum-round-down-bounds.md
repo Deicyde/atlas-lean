@@ -1,6 +1,6 @@
 # Sharp bounds for Tverberg's sum with rounding half down
 
-**Sharp bounds for Tverberg's sum with rounding half down.** Let $\ell \ge 2$ and let $F$ be
+Let $\ell \ge 2$ and let $F$ be
 rounding to the nearest integer with ties rounded down, $F(y) = \lceil y - 1/2 \rceil$.
 For integers $a_1, \dots, a_\ell$, a natural number $m$ and an integer $k$, let
 $f(a, m, k) =

@@ -1,6 +1,6 @@
 # Regular languages over a finite alphabet are context-free
 
-**Regular languages over a finite alphabet are context-free.** Over a finite alphabet,
+Over a finite alphabet,
 every regular language is context-free.
 
 Finiteness of the alphabet is necessary: a grammar has finitely many

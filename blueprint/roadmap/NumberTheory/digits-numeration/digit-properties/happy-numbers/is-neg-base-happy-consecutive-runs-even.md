@@ -1,6 +1,6 @@
 # Arbitrarily long runs of consecutive happy numbers in even bases at most $-4$
 
-**Arbitrarily long runs of consecutive happy numbers in even bases at most $-4$.** Let
+Let
 $b \le -4$ be an even integer. For every natural number $N$ there is an integer $n$ such that
 $n + i$ is $b$-happy for every $0 \le i < N$.
 

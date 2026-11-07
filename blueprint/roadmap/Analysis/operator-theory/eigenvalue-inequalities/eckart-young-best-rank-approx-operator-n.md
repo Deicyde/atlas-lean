@@ -1,6 +1,6 @@
 # Eckart–Young theorem in operator norm
 
-**Eckart–Young theorem in operator norm.** Let $E$ and $F$ be finite-dimensional inner product
+Let $E$ and $F$ be finite-dimensional inner product
 spaces over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, let $T : E \to F$ be a linear map and let
 $k \ge 0$ be an integer. The infimum of the operator norms $\|T - S\|$ over all linear maps
 $S : E \to F$ whose range has dimension at most $k$ equals $\sigma_k(T)$, where

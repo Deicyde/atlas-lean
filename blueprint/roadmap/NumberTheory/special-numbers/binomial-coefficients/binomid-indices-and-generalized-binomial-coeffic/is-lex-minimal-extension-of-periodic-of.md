@@ -1,6 +1,6 @@
 # Monotone finite binomid indices extend periodically
 
-**Monotone finite binomid indices extend periodically.** Let $m \ge 1$ and let
+Let $m \ge 1$ and let
 $e_1 \le e_2 \le \cdots \le e_m$ be nonnegative integers. Then the periodic sequence
 $(e_1, \dots, e_m, e_1, \dots, e_m, \dots)$ is the lex-minimal extension of $(e_1, \dots, e_m)$.
 

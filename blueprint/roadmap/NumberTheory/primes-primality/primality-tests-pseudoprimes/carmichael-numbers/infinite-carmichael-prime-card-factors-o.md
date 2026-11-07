@@ -1,6 +1,5 @@
 # Infinitely many Carmichael numbers with a prime number of prime factors (conditional)
 
-**Infinitely many Carmichael numbers with a prime number of prime factors (conditional).**
 Suppose there is a real constant $C$ such that for every natural number $d \ge 2$ and every
 natural number $c$ coprime to $d$ there is a prime $p \equiv c \pmod{d}$ with
 $p \le C d (\log d)^2$ (Heath-Brown's conjecture on the least prime in an arithmetic

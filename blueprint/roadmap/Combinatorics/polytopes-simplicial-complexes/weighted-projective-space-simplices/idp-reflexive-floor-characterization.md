@@ -1,6 +1,6 @@
 # Floor criterion for IDP of reflexive weighted simplices
 
-**Floor criterion for IDP of reflexive weighted simplices.** Let $q = (q_1, \dots, q_n)$ be
+Let $q = (q_1, \dots, q_n)$ be
 positive integers such that the weighted simplex
 $\Delta_{(1,q)} = \operatorname{conv}(e_1, \dots, e_n, -\sum_i q_i e_i) \subseteq \mathbb{R}^n$ is
 reflexive, and for each $j$ write $S_j = \sum_{i \ne j} q_i$. Then $\Delta_{(1,q)}$ has the

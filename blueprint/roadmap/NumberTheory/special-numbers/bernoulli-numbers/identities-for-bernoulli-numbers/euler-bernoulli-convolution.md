@@ -1,6 +1,6 @@
 # Euler's convolution identity for Bernoulli numbers
 
-**Euler's convolution identity for Bernoulli numbers.** Let $B_j$ denote the $j$-th
+Let $B_j$ denote the $j$-th
 Bernoulli number, with $B_1 = -1/2$. For every natural number $n \ge 1$,
 
 $$\sum_{i=0}^{n} \binom{n}{i} B_i B_{n-i} = -n B_{n-1} - (n-1) B_n.$$

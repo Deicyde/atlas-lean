@@ -1,6 +1,6 @@
 # Vertex-cover Euler product for the coprimality density
 
-**Vertex-cover Euler product for the coprimality density.** Let $k \ge 2$, let $E$ be a set of
+Let $k \ge 2$, let $E$ be a set of
 pairs $(a, b)$ with $1 \le a < b \le k$, let $G$ be the graph on $\{1, \dots, k\}$ with edge set
 $E$, and let $A_G$ be its coprimality density. Let $J \subseteq \{1, \dots, k\}$ be a vertex cover
 of $G$, that is, every edge of $E$ has an endpoint in $J$. For $L \subseteq J$ let $N(L)$ be the

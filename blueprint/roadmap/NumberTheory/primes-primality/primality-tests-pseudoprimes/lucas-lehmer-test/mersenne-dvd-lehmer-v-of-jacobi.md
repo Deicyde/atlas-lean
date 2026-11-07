@@ -1,6 +1,6 @@
 # Divisibility of Lehmer's companion sequence by a Mersenne prime
 
-**Divisibility of Lehmer's companion sequence by a Mersenne prime.** Let $n \ge 3$ be an odd
+Let $n \ge 3$ be an odd
 natural number such that $M_n = 2^n - 1$ is prime, let $R$ and $Q$ be integers, let
 $\bar V_k(R, Q)$ denote Lehmer's companion sequence, and put $D = R - 4Q$. If the Jacobi symbols
 $\left(\frac{DR}{M_n}\right)$ and $\left(\frac{QR}{M_n}\right)$ are both $-1$, then $M_n$

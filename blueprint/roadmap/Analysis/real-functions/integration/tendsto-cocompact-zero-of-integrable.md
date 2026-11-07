@@ -1,6 +1,6 @@
 # Uniformly continuous integrable functions vanish at infinity
 
-**Uniformly continuous integrable functions vanish at infinity.** Let
+Let
 $f : \mathbb{R} \to \mathbb{R}$ be uniformly continuous and Lebesgue integrable on $\mathbb{R}$.
 Then $f(x) \to 0$ as $|x| \to \infty$.
 

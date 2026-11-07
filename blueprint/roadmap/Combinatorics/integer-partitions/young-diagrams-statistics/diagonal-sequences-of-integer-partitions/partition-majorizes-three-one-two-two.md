@@ -1,6 +1,6 @@
 # Majorization of $(2, 2)$ by $(3, 1)$
 
-**Majorization of $(2, 2)$ by $(3, 1)$.** The partition $(3, 1)$ majorizes the partition
+The partition $(3, 1)$ majorizes the partition
 $(2, 2)$: $3 \ge 2$ and $3 + 1 \ge 2 + 2$.
 
 ## Sources

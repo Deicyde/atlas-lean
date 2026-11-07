@@ -1,6 +1,6 @@
 # Alternating sums of even-indexed k-Lucas numbers
 
-**Alternating sums of even-indexed k-Lucas numbers.** Let $k$ be a complex number, and let
+Let $k$ be a complex number, and let
 $(F_{k,n})$ and $(L_{k,n})$ be the $k$-Fibonacci and $k$-Lucas numbers, that is, the
 $(k, 1)$-Fibonacci and $(k, 1)$-Lucas numbers. Then for all integers $m \ge 1$ and $n \ge 0$,
 

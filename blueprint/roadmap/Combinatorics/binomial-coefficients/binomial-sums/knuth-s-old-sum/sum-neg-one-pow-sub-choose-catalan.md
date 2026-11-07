@@ -1,6 +1,6 @@
 # Alternating sum of $\binom{n}{k} \frac{2(2k+1)}{k+2} C_k$
 
-**Alternating sum of $\binom{n}{k} \frac{2(2k+1)}{k+2} C_k$.** Let
+Let
 $C_k = \frac{1}{k+1}\binom{2k}{k}$ denote the $k$-th Catalan number. For every natural number
 $n$, the following identity holds in $\mathbb{Q}$:
 

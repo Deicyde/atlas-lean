@@ -1,6 +1,6 @@
 # Sums of six and of eight nonzero squares
 
-**Sums of six and of eight nonzero squares.** Every integer $n \ge 20$ is a sum of $6$
+Every integer $n \ge 20$ is a sum of $6$
 squares of positive integers, and every integer $n \ge 22$ is a sum of $8$ squares of positive
 integers.
 

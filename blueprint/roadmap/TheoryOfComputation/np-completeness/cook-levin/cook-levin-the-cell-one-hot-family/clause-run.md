@@ -1,6 +1,6 @@
 # One clause of the one-hot generator
 
-**One clause of the one-hot generator.** Let $L$ be a layout with $g$ symbol codes, let $c$
+Let $L$ be a layout with $g$ symbol codes, let $c$
 be a well-formed clause kind of a cell (the pair of an at-most-one kind is increasing), and let
 $B$ and $V$ be natural numbers with $B + g \le V$. Let $F$ be counter values whose scratch
 counters $Q$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$ are zero, whose cell-base counter

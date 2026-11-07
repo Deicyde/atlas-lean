@@ -1,6 +1,6 @@
 # Support triples of the three-supported classification
 
-**Support triples of the three-supported classification.** For a case index $c \in \mathbb{N}$,
+For a case index $c \in \mathbb{N}$,
 natural numbers $k, s$ and a triple $x = (x_1, x_2, x_3)$ of natural numbers, the support triple
 $F_c(k, s; x) \in \mathbb{N}^3$ is defined case by case, and $k, s$ enter only when $c \ge 7$.
 For $c = 0$ it is $(1, 1 + x_1, (1 + x_1)(1 + x_2))$. For $c = 1$ it is

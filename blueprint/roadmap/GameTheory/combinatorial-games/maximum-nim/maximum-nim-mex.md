@@ -1,6 +1,6 @@
 # Minimum excludant of a finite set
 
-**Minimum excludant of a finite set.** For a finite set $s$ of natural numbers,
+For a finite set $s$ of natural numbers,
 $\operatorname{mex}(s)$ is the least natural number that does not belong to $s$.
 
 ## Sources

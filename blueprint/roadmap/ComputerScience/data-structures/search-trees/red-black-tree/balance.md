@@ -1,6 +1,6 @@
 # Okasaki's rebalancing
 
-**Okasaki's rebalancing.** Given a color $c$, red-black trees $l$ and $r$, and a key $k$,
+Given a color $c$, red-black trees $l$ and $r$, and a key $k$,
 rebalancing produces a tree as follows. Suppose $c$ is black and one of these configurations
 occurs, taking the first that applies: $l$ is a red node with a red left child; $l$ is a red node
 with a red right child; $r$ is a red node with a red left child; $r$ is a red node with a red

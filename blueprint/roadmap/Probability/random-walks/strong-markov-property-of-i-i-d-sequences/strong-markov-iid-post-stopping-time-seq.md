@@ -1,6 +1,5 @@
 # Strong Markov property for i.i.d. sequences: the post-stopping-time sequence is i.i.d
 
-**Strong Markov property for i.i.d. sequences: the post-stopping-time sequence is i.i.d.**
 Let $\mu$ be a probability measure on a measurable space $\Omega$, let
 $(\mathcal{F}_n)_{n \in \mathbb{N}}$ be a filtration on $\Omega$, and let
 $X_0, X_1, X_2, \dots$ be measurable maps from $\Omega$ to a measurable space $S$ that are

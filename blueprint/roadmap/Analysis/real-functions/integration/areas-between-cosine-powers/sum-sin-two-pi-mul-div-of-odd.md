@@ -1,6 +1,6 @@
 # Half-period sine sum for odd modulus
 
-**Half-period sine sum for odd modulus.** Let $N$ be an odd natural number. For every
+Let $N$ be an odd natural number. For every
 natural number $q$, $\sum_{\ell=1}^{(N-1)/2} \sin(2\pi q \ell / N)$ equals
 $-\frac{1}{2} \tan\frac{q\pi}{2N}$ if $q$ is even and $\frac{1}{2} \cot\frac{q\pi}{2N}$ if $q$ is
 odd.

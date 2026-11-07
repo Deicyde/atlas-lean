@@ -1,6 +1,6 @@
 # One step of a single-tape machine on coded configurations
 
-**One step of a single-tape machine on coded configurations.** Let $M$ be a single-tape Turing
+Let $M$ be a single-tape Turing
 machine with transition function $\delta$, and write $\bot$ both for the halting state and for the
 blank. For a finite list $l$ of cells, let $\mathrm{hd}(l)$ be the first entry of $l$, the blank
 $\bot$ when $l$ is empty; let $\mathrm{tl}(l)$ be $l$ without its first entry, the empty list when

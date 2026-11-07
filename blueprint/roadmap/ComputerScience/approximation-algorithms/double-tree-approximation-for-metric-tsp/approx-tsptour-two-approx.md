@@ -1,6 +1,6 @@
 # APPROX-TSP-TOUR on a given minimum spanning tree costs at most twice any tour
 
-**APPROX-TSP-TOUR on a given minimum spanning tree costs at most twice any tour.** Let $d$ be a
+Let $d$ be a
 cost function on vertices with values in a linearly ordered additive commutative monoid that is
 symmetric, zero on the diagonal, nonnegative and satisfies the triangle inequality. Let $V$ be a
 list of vertices, let the tree with root $r$ and subtree forest $F$ be a minimum spanning tree of

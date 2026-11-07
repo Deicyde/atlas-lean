@@ -1,6 +1,6 @@
 # The MAC forgery experiment
 
-**The MAC forgery experiment.** Let $K$ and $R$ be finite nonempty types, let
+Let $K$ and $R$ be finite nonempty types, let
 $F \colon K \to M \to T$ be a keyed function, and let $A$ be a forger: for coins $r \in R$,
 $A(r)$ is an adaptive oracle algorithm with queries in $M$, answers in $T$ and output in
 $M \times T$. The existential-forgery experiment under an adaptive chosen-message attack for the

@@ -1,6 +1,6 @@
 # Stirling matrix of the second kind times $V(n) - I_n$
 
-**Stirling matrix of the second kind times $V(n) - I_n$.** Let $n$ be a natural number. Let
+Let $n$ be a natural number. Let
 $S(n)$ be the $n \times n$ Stirling matrix of the second kind, with entries the Stirling numbers
 of the second kind $S(i, j)$ for $1 \le i, j \le n$; let $V(n)$ be the $n \times n$ upper
 bidiagonal matrix with $V(n)_{i,i} = i$, $V(n)_{i,i+1} = 1$ and all other entries $0$; let

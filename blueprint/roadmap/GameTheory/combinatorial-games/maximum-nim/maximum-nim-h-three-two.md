@@ -1,6 +1,6 @@
 # The value $h_3(2) = 4$ of the Maximum Nim map
 
-**The value $h_3(2) = 4$ of the Maximum Nim map.** For the map
+For the map
 $h_k(x) = x + \lfloor x/(k-1) \rfloor + 1$ on the natural numbers, we have $h_3(2) = 4$.
 
 ## Sources

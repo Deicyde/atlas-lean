@@ -1,6 +1,6 @@
 # A signed Euler product identity
 
-**A signed Euler product identity.** Write $f_k = \prod_{i \ge 1} (1 - q^{ki})$ for the Euler
+Write $f_k = \prod_{i \ge 1} (1 - q^{ki})$ for the Euler
 products, as integer power series in $q$, and let $(-q;-q)_\infty = \prod_{i \ge 1} (1 - (-q)^i)$
 be $f_1$ with $q$ replaced by $-q$. Then
 

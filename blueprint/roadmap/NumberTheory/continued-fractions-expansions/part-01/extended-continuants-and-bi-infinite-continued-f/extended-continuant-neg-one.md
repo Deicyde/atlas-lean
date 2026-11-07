@@ -1,6 +1,6 @@
 # Extended continuant of order $-1$
 
-**Extended continuant of order $-1$.** For every integer sequence
+For every integer sequence
 $x : \mathbb{Z} \to \mathbb{Z}$ and every integer $b$, the extended continuant of $x$ of order
 $-1$ with start index $b$ equals $1$, that is, $K_{-1}(x)_b = 1$.
 

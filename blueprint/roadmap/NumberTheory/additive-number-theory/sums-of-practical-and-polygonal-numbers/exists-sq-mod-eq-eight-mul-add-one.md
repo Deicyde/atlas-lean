@@ -1,6 +1,6 @@
 # Square roots modulo powers of two
 
-**Square roots modulo powers of two.** For all natural numbers $m > 0$ and $n > 0$ there is
+For all natural numbers $m > 0$ and $n > 0$ there is
 a natural number $x$ with $1 \le x \le 2^m - 1$ and $x^2 \equiv 8n + 1 \pmod{2^{m+2}}$.
 
 ## Sources

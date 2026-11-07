@@ -1,6 +1,6 @@
 # Powers of two dividing the biunitary divisor sum of an odd number
 
-**Powers of two dividing the biunitary divisor sum of an odd number.** For every odd natural
+For every odd natural
 number $n$, $2^{\omega(n)}$ divides $\sigma^{**}(n)$, where $\omega(n)$ is the number of distinct
 prime factors of $n$ and $\sigma^{**}$ is the biunitary divisor sum.
 

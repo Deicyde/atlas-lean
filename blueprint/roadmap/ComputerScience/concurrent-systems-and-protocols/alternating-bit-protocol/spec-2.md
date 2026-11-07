@@ -1,6 +1,6 @@
 # Recursive specification of the alternating-bit protocol with data
 
-**Recursive specification of the alternating-bit protocol with data.** There is a separate
+There is a separate
 process constant $X_s$ for each state $s$ of each of five components: the sender, the lossy data
 channel, the receiver, the lossy acknowledgement channel and the one-place buffer of bits. If
 $(a_1, s_1), \dots, (a_n, s_n)$ are the listed transitions of $s$ in its component, then the body

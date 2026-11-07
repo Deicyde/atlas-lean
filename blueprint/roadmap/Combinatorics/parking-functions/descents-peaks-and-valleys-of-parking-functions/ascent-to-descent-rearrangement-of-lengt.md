@@ -1,6 +1,6 @@
 # Words of length at most one are fixed by the ascent-to-descent rearrangement
 
-**Words of length at most one are fixed by the ascent-to-descent rearrangement.** Every word
+Every word
 $x$ over $\mathbb{N}$ of length at most $1$ satisfies $\nu(x) = x$, where $\nu$ is the
 ascent-to-descent rearrangement.
 

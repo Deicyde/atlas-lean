@@ -1,6 +1,6 @@
 # HAMPATH-verifier unary comparison with the counter restored
 
-**HAMPATH-verifier unary comparison with the counter restored.** Let $\mathit{src}$,
+Let $\mathit{src}$,
 $\mathit{sv}$, $c$ and the scratch stack $R$ be four distinct stacks of the HAMPATH verifier, and
 let $\mathrm{cb}$, $\mathrm{rs}$ and $\mathrm{nx}$ be families of labels indexed by booleans such
 that for every boolean $\mathit{ok}$ the instruction at $\mathrm{cb}(\mathit{ok})$ is the unary

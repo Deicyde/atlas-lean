@@ -1,6 +1,6 @@
 # Zero has no biunitary divisors
 
-**Zero has no biunitary divisors.** The set of biunitary divisors of $0$ is empty.
+The set of biunitary divisors of $0$ is empty.
 
 ## Sources
 

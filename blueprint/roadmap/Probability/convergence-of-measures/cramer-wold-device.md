@@ -1,6 +1,6 @@
 # Cramér–Wold device
 
-**Cramér–Wold device.** Let $d$ be a natural number, let $(\Omega, \mu)$ and $(\Omega', \mu')$
+Let $d$ be a natural number, let $(\Omega, \mu)$ and $(\Omega', \mu')$
 be probability spaces, and let $X_n : \Omega \to \mathbb{R}^d$ for $n \in \mathbb{N}$ and
 $Z : \Omega' \to \mathbb{R}^d$ be maps, where $\mathbb{R}^d$ carries the Euclidean inner product.
 If for every $t \in \mathbb{R}^d$ the real-valued maps $\langle t, X_n \rangle$ converge in

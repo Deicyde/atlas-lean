@@ -1,6 +1,6 @@
 # Gluing $C^n$ functions on adjacent closed intervals
 
-**Gluing $C^n$ functions on adjacent closed intervals.** Let $E$ be a real normed space, let
+Let $E$ be a real normed space, let
 $n \in \mathbb{N} \cup \{\infty\}$ and let $a \le b \le c$ be real numbers. Let
 $f, g : \mathbb{R} \to E$ be such that $f$ is $C^n$ on $[a, b]$ and $g$ is $C^n$ on $[b, c]$, and
 suppose that for every natural number $k \le n$ the $k$-th derivative of $f$ within $[a, b]$ and

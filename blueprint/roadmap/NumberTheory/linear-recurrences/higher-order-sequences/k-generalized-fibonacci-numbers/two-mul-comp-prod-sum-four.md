@@ -1,6 +1,5 @@
 # Four-fold convolution of the Fibonacci, tribonacci, tetranacci and pentanacci numbers
 
-**Four-fold convolution of the Fibonacci, tribonacci, tetranacci and pentanacci numbers.**
 Write $F_n$, $T_n$, $Q_n$ and $P_n$ for the Fibonacci $m$-step numbers $F^{(m)}_n$ with
 $m = 2, 3, 4, 5$ respectively. For every integer $n \ge 5$,
 $2 \sum F_{k_1} T_{k_2} Q_{k_3} P_{k_4} = P_{n+4} - P_{n+3} + P_{n+2} + T_{n+3} + T_{n+1} -

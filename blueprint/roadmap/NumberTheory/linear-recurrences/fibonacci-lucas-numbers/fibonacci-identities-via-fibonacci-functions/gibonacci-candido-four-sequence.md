@@ -1,6 +1,6 @@
 # Four-sequence Candido-type identity for gibonacci sequences
 
-**Four-sequence Candido-type identity for gibonacci sequences.** Let $G$, $H$, $M$, $N$ be
+Let $G$, $H$, $M$, $N$ be
 gibonacci sequences, that is, functions $X : \mathbb{Z} \to \mathbb{R}$ with
 $X_{j+2} = X_{j+1} + X_j$ for every integer $j$. For two such sequences $X$, $Y$ and integers
 $x$, $y$ write $T(X, x; Y, y) = X_x Y_y + X_{x+1} Y_{y+1} + X_{x+2} Y_{y+2}$. Then for all

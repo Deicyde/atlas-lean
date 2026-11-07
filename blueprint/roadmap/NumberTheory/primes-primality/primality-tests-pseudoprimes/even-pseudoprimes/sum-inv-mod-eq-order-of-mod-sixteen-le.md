@@ -1,6 +1,6 @@
 # Reciprocal sum over a residue class restricted modulo 16
 
-**Reciprocal sum over a residue class restricted modulo 16.** Write $\ell_2(p)$ for the
+Write $\ell_2(p)$ for the
 multiplicative order of $2$ modulo a prime $p$. Let $p$ be an odd prime with $\ell_2(p)$ odd,
 let $k$ be a natural number, and let $S$ be the sum of $1/N$ over the integers $N$ with
 $e^k < N \le e^{k+1}$, $N \equiv p \pmod{p\,\ell_2(p)}$ and $N \equiv \pm 2 \pmod{16}$. Then

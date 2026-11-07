@@ -1,6 +1,6 @@
 # A multinomial sum of Bernoulli and Fibonacci numbers equal to one
 
-**A multinomial sum of Bernoulli and Fibonacci numbers equal to one.** Let $F_n$ be the
+Let $F_n$ be the
 Fibonacci numbers and let $B_k$ be the Bernoulli numbers, with $B_1 = -\tfrac{1}{2}$. For every
 natural number $m$,
 

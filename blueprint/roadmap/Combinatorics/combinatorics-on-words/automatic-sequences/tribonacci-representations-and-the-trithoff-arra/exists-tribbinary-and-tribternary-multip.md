@@ -1,6 +1,6 @@
 # Tribbinary and Tribternary multiples
 
-**Tribbinary and Tribternary multiples.** Every positive integer $n$ has a positive
+Every positive integer $n$ has a positive
 multiple whose binary digits contain no three consecutive $1$s (a Tribbinary number), and a
 positive multiple whose base-$3$ digits are all $0$ or $1$ with no three consecutive $1$s (a
 Tribternary number).

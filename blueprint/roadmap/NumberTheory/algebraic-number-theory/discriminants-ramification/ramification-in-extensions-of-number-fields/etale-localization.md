@@ -1,6 +1,6 @@
 # Localizing the ring of integers at an unramified prime gives an étale algebra
 
-**Localizing the ring of integers at an unramified prime gives an étale algebra.** Let $K$ be
+Let $K$ be
 a number field with ring of integers $\mathcal{O}_K$, and let $p$ be a prime ideal of $\mathbb{Z}$
 that is unramified in $\mathcal{O}_K$, that is, every prime ideal of $\mathcal{O}_K$ lying over $p$
 is unramified over $\mathbb{Z}$. Let $S$ be the localization of $\mathcal{O}_K$ at the image of

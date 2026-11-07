@@ -1,6 +1,5 @@
 # Generating functions and closed form for the subword $UD$ in non-decreasing Dyck paths
 
-**Generating functions and closed form for the subword $UD$ in non-decreasing Dyck paths.**
 For $n \ge 0$ let $\mathcal{D}_n$ be the set of non-decreasing Dyck paths of semilength $n$, let
 $\#_{UD}(P)$ be the number of occurrences of the subword $UD$ in a path $P$, and let
 $d_{UD}(n) = \sum_{P \in \mathcal{D}_n} \#_{UD}(P)$. Let

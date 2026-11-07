@@ -1,6 +1,6 @@
 # The congruence for $\binom{np}{kp}$ modulo $p^5$
 
-**The congruence for $\binom{np}{kp}$ modulo $p^5$.** Let $p \ge 11$ be a prime, let $k$ be a
+Let $p \ge 11$ be a prime, let $k$ be a
 natural number and let $n$ be an integer. For an integer $x$ and a natural number $r$ write
 $\binom{x}{r} = x(x-1)\cdots(x-r+1)/r!$, and let $v_p$ be the $p$-adic valuation on
 $\mathbb{Q}$. Put $C_{00} = -(k^2 - kn + 2n^2 - 15n + 35)/6$, $C_{21} = (n-4)(n-3)/2$,

@@ -1,6 +1,6 @@
 # Totient-weighted divisor sum identity
 
-**Totient-weighted divisor sum identity.** Let $f$ and $g$ be functions from the natural
+Let $f$ and $g$ be functions from the natural
 numbers to the rational numbers such that $g(k) = \sum_{d \mid k} f(d)$ for every positive
 integer $k$, where sums over $d \mid k$ run over the positive divisors $d$ of $k$. Then for
 every positive integer $k$,

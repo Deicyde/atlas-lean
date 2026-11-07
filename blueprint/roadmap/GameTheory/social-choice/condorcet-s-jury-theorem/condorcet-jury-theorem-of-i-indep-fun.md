@@ -1,6 +1,6 @@
 # Condorcet's jury theorem for mutually independent votes
 
-**Condorcet's jury theorem for mutually independent votes.** Let $\mu$ be a probability measure
+Let $\mu$ be a probability measure
 on a measurable space $\Omega$, let $X_0, X_1, \dots$ be measurable maps from $\Omega$ to
 $\{\text{true}, \text{false}\}$ (the votes, true meaning a correct vote) that are mutually
 independent random variables under $\mu$, and let $p$ be a number with $1/2 < p < 1$. Suppose that

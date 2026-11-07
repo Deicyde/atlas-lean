@@ -1,6 +1,6 @@
 # Generating function of partitions with max-rook number 5
 
-**Generating function of partitions with max-rook number 5.** Let $R_5(n)$ be the number of
+Let $R_5(n)$ be the number of
 partitions of $n$ with max-rook number $5$. In the ring of formal power series in $q$ with integer
 coefficients,
 

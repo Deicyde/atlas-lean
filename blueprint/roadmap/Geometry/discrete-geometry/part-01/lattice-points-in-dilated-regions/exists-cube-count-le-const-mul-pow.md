@@ -1,6 +1,6 @@
 # Dilated Lipschitz images meet $O(t^d)$ integer cubes
 
-**Dilated Lipschitz images meet $O(t^d)$ integer cubes.** Let $d$ and $n$ be natural numbers,
+Let $d$ and $n$ be natural numbers,
 let $K \ge 0$, and let $f$ be a $K$-Lipschitz map from the unit cube $[0, 1]^d$ to $\mathbb{R}^n$,
 both carrying the sup distance. Then there is a real number $C > 0$ such that for every real
 $t \ge 1$, the cardinality of the integer cube set of $f$ at scale $t$, taken as a natural number,

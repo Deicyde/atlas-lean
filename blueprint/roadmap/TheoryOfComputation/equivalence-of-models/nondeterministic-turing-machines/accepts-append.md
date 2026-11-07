@@ -1,6 +1,6 @@
 # Acceptance is closed under extension on the right
 
-**Acceptance is closed under extension on the right.** If a single-tape nondeterministic
+If a single-tape nondeterministic
 Turing machine $m$ accepts a word $x$ over its tape alphabet, then $m$ accepts $xy$ for every word
 $y$ over that alphabet.
 

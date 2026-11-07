@@ -1,6 +1,6 @@
 # Even s-Zumkeller numbers are divisible by 6
 
-**Even s-Zumkeller numbers are divisible by 6.** Every even s-Zumkeller number is divisible
+Every even s-Zumkeller number is divisible
 by $6$.
 
 ## Sources

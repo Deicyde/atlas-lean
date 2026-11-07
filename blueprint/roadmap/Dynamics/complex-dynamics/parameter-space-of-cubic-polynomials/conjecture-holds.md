@@ -1,6 +1,6 @@
 # Roesch's theorem on the boundaries of cubic parameter components
 
-**Roesch's theorem on the boundaries of cubic parameter components.** For the cubic family
+For the cubic family
 $f_\lambda(z) = \lambda z^2 + z^3$ with $\lambda \in \mathbb{C}$, the boundary of every parameter
 component is a Jordan curve. Here a parameter component is a connected component of the set of
 $\lambda$ for which every critical point of $f_\lambda$ lies in the immediate basin of zero of

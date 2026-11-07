@@ -1,6 +1,6 @@
 # Abel–Hurwitz–Bernoulli multinomial identity
 
-**Abel–Hurwitz–Bernoulli multinomial identity.** Let $B_k(t)$ denote the $k$-th Bernoulli
+Let $B_k(t)$ denote the $k$-th Bernoulli
 polynomial. Let $m \ge 2$ and $n$ be natural numbers, let $x_1, \dots, x_m$ be rational numbers,
 and let $r$ be an index with $1 \le r \le m$. Then
 

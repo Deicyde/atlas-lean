@@ -1,6 +1,6 @@
 # Injectivity of the end-marker encoding
 
-**Injectivity of the end-marker encoding.** Encoding is injective.
+Encoding is injective.
 
 ## Sources
 

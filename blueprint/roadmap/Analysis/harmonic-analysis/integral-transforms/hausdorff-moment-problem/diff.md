@@ -1,6 +1,6 @@
 # Iterated backward difference of a multi-sequence
 
-**Iterated backward difference of a multi-sequence.** For a function
+For a function
 $a : \mathbb{N}^d \to \mathbb{R}$ and multi-indices $k, n \in \mathbb{N}^d$,
 
 $$(\Delta^k a)_n = \sum_{j \le k} (-1)^{|k| - |j|} \binom{k}{j} \, a_{n - j},$$

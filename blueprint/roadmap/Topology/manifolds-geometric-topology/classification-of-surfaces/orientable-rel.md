@@ -1,6 +1,6 @@
 # Gluing relation for the orientable normal form
 
-**Gluing relation for the orientable normal form.** For natural numbers $p$ and $n$, put
+For natural numbers $p$ and $n$, put
 $N = 4p + 3n$ and write $e(t) = e^{2\pi i t}$ for the boundary point of the closed unit disc at
 the real parameter $t$. This is the relation on the closed unit disc under which, for every
 $x \in [0, 1]$ and every natural number $k < p$, the point $e((4k + x)/N)$ is related to

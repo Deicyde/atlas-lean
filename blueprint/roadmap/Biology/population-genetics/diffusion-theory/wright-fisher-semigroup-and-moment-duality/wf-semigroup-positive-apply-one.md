@@ -1,3 +1,3 @@
 # Positive Wright–Fisher operator fixes constants
 
-**Positive Wright–Fisher operator fixes constants.** The positive Wright–Fisher operator fixes the constant function `1`.
+The positive Wright–Fisher operator fixes the constant function `1`.

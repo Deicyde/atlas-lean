@@ -1,6 +1,6 @@
 # Average number of prime factors of h-free integers
 
-**Average number of prime factors of h-free integers.** Let $h \ge 2$ be an integer. Call a
+Let $h \ge 2$ be an integer. Call a
 positive integer $n$ $h$-free if every prime occurs in the factorization of $n$ with exponent less
 than $h$, and write $\Omega(n)$ for the number of prime factors of $n$ counted with multiplicity
 and $\zeta$ for the Riemann zeta function. Then, as the real number $x$ tends to infinity,

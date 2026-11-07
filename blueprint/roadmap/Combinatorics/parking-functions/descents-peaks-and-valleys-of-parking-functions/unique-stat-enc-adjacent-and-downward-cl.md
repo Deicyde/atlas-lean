@@ -1,6 +1,6 @@
 # Uniquely encoded parking functions have steps of at most one and no gaps
 
-**Uniquely encoded parking functions have steps of at most one and no gaps.** The statistic
+The statistic
 encoding of $f : \{0, \dots, n-1\} \to \{0, \dots, n-1\}$ is the word over $\{A, D, T\}$ whose
 letter at each position $0 \le i \le n - 2$ is $A$, $D$ or $T$ according as $f(i) < f(i+1)$,
 $f(i) > f(i+1)$ or $f(i) = f(i+1)$. Let $f$ be a parking function of length $n$ such that every

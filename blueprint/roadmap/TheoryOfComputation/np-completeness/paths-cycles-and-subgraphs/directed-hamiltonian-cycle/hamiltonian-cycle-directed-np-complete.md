@@ -1,6 +1,6 @@
 # HAMILTONIAN CYCLE (DIRECTED) is NP-complete
 
-**HAMILTONIAN CYCLE (DIRECTED) is NP-complete.** The decision problem HAMILTONIAN CYCLE
+The decision problem HAMILTONIAN CYCLE
 (DIRECTED) belongs to NP, and every decision problem $L$ in NP has a polynomial-time many-one
 reduction to it.
 

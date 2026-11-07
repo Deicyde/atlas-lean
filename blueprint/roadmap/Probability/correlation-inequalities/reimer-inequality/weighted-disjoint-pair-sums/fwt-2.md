@@ -1,3 +1,3 @@
 # Product weight of a finset off one coordinate
 
-**Product weight of a finset off one coordinate.** The product weight of `S` over all coordinates except `i`.
+The product weight of `S` over all coordinates except `i`.

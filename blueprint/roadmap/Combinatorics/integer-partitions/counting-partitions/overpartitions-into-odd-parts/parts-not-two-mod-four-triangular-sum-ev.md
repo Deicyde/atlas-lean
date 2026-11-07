@@ -1,6 +1,6 @@
 # Parity of a triangular sum of partitions with no part congruent to 2 modulo 4
 
-**Parity of a triangular sum of partitions with no part congruent to 2 modulo 4.** Write
+Write
 $P_2(m)$ for the number of partitions of $m$ with no part congruent to $2$ modulo $4$. For every
 positive integer $n$, the sum $\sum_{k \ge 0,\ k(k+1)/2 \le n} P_2(n - k(k+1)/2)$ is even.
 

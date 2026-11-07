@@ -1,6 +1,6 @@
 # Copying a counter in the HAMPATH emitter
 
-**Copying a counter in the HAMPATH emitter.** Let $a$, $c$ and $Z$ be three distinct stacks of
+Let $a$, $c$ and $Z$ be three distinct stacks of
 the emitter machine (with $Z$ its copy scratch stack), $u$ a symbol of $a$ and $x$ a symbol of $c$.
 Suppose the machine at label $l_1$ pops $a$ until it is empty, pushing $x$ onto $c$ and the
 clause separator $\mathrm{cl}$ onto $Z$ for each popped symbol, and then continues at $l_2$; and

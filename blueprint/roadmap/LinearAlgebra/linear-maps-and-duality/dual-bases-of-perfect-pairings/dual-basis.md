@@ -1,6 +1,6 @@
 # Dual basis with respect to a perfect pairing
 
-**Dual basis with respect to a perfect pairing.** Let $A$ be a commutative ring, let $M$
+Let $A$ be a commutative ring, let $M$
 and $N$ be $A$-modules, and let $B : M \times N \to A$ be a perfect pairing, that is, an
 $A$-bilinear map such that $x \mapsto B(x, \cdot)$ is a linear isomorphism $M \to N^*$ and
 $y \mapsto B(\cdot, y)$ is a linear isomorphism $N \to M^*$. Let $b = (b_i)_{i \in \iota}$ be

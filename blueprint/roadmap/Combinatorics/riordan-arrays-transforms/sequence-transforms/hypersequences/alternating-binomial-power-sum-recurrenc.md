@@ -1,6 +1,6 @@
 # Recurrences for alternating binomial power sums
 
-**Recurrences for alternating binomial power sums.** Let
+Let
 $p_{\ell,m}(x, y) = \sum_{k=0}^{m} (-1)^k \binom{m}{k} (kx + y)^\ell$. For all complex numbers
 $x, y$ and natural numbers $\ell, m$ (sums over an empty range are $0$, and $m - 1$ means $0$ when
 $m = 0$):

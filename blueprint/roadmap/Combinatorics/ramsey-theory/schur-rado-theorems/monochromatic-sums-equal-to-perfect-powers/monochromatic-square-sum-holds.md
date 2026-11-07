@@ -1,6 +1,6 @@
 # Erdős Problem 439 for squares is true
 
-**Erdős Problem 439 for squares is true.** For every colouring of the positive integers with
+For every colouring of the positive integers with
 finitely many colours there are distinct positive integers $x$ and $y$ of the same colour such
 that $x + y$ is a perfect square.
 

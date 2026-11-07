@@ -1,6 +1,6 @@
 # The unstable bits for $e = 4$ and $d = 2$
 
-**The unstable bits for $e = 4$ and $d = 2$.** The unstable bits $\operatorname{uns}(4,2)$ equal
+The unstable bits $\operatorname{uns}(4,2)$ equal
 $3$; that is, $\lfloor \operatorname{od}(16!) / 2^5 \rfloor \bmod 2^2 = 3$, where
 $\operatorname{od}(16!)$ is the odd part of $16!$.
 

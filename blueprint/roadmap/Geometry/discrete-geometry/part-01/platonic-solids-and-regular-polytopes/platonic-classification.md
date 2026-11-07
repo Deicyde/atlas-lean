@@ -1,6 +1,6 @@
 # Classification of the Platonic polytopes
 
-**Classification of the Platonic polytopes.** For $d \in \mathbb{N}$ let $p_d \in
+For $d \in \mathbb{N}$ let $p_d \in
 \mathbb{N} \cup \{\infty\}$ be the number of regular convex polytopes in $\mathbb{R}^d$ up to
 similarity. Then $p_2 = \infty$, $p_3 = 5$, $p_4 = 6$, and $p_d = 3$ for every $d \ge 5$.
 

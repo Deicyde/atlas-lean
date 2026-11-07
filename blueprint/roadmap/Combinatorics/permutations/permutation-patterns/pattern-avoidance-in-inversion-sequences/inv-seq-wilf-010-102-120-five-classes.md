@@ -1,6 +1,6 @@
 # I-Wilf equivalences among five-pattern sets containing $010$, $102$ and $120$
 
-**I-Wilf equivalences among five-pattern sets containing $010$, $102$ and $120$.** Write
+Write
 length-3 patterns as digit strings ($101$ is the pattern $(1, 0, 1)$) and let $|I_n(B)|$ be the
 number of inversion sequences of length $n$ that avoid every pattern in the set $B$. For a pattern
 $\tau$ let $A_\tau = \{010, \tau, 102, 120, 201\}$ and $A'_\tau = \{010, \tau, 102, 120, 210\}$,

@@ -1,3 +1,3 @@
 # Transition probabilities of the uniform chain
 
-**Transition probabilities of the uniform chain.** The uniform chain has constant transition probabilities `1 / (M + 1)`.
+The uniform chain has constant transition probabilities `1 / (M + 1)`.

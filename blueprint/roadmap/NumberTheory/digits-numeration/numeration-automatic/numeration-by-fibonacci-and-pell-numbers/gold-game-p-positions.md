@@ -1,6 +1,6 @@
 # P-positions of the gold game
 
-**P-positions of the gold game.** Let $\varphi$ be the golden ratio and $F_n$ the Fibonacci
+Let $\varphi$ be the golden ratio and $F_n$ the Fibonacci
 numbers ($F_1 = F_2 = 1$). In the gold game a heap of $n$ tokens may be removed entirely when
 $n = \lfloor k\varphi \rfloor$ for some integer $k \ge 1$, and $i$ tokens may be removed from a
 heap of $n > i$ tokens, leaving $n - i$, when $i = \lfloor k(1 + \varphi) \rfloor$ for some

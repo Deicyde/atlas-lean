@@ -1,6 +1,6 @@
 # $\mathcal{M}_1$ as a coding of a uniform morphism fixed point
 
-**$\mathcal{M}_1$ as a coding of a uniform morphism fixed point.** Let $\sigma$ be the
+Let $\sigma$ be the
 $4$-uniform morphism on $\{0, 1, 2, 3\}$ with $\sigma(0) = 0112$, $\sigma(1) = 1230$,
 $\sigma(2) = 2301$ and $\sigma(3) = 3023$, and write $\sigma(c)_r$ for the letter of $\sigma(c)$
 at position $r$, counted from $0$. There is a sequence $w : \mathbb{N} \to \mathbb{N}$ with

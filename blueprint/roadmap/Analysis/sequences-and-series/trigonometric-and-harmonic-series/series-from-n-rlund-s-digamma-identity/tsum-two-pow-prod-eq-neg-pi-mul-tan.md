@@ -1,6 +1,6 @@
 # Adegoke–Frontczak series for the tangent
 
-**Adegoke–Frontczak series for the tangent.** For every complex number $z$ with
+For every complex number $z$ with
 $-\frac12 < \operatorname{Re} z < \frac12$,
 
 $$

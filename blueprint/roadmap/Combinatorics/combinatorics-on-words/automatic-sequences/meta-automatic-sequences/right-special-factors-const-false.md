@@ -1,6 +1,6 @@
 # The all-zero word has no right-special factors
 
-**The all-zero word has no right-special factors.** For every natural number $n$, the
+For every natural number $n$, the
 infinite binary word $000\cdots$ has no right-special factors of length $n$.
 
 ## Sources

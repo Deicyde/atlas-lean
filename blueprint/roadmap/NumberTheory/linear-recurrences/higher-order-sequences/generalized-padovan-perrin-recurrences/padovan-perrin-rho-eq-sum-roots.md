@@ -1,6 +1,6 @@
 # Root formula for the generalized Padovan–Perrin coefficients ρ
 
-**Root formula for the generalized Padovan–Perrin coefficients ρ.** Let $k_1, k_2$ be complex
+Let $k_1, k_2$ be complex
 numbers with $k_2 \neq 0$, let $p, s \ge 1$, and let $P(z) = z^{s+p} - k_1 z^p - k_2$. If $P$ is
 separable, that is, has $s + p$ distinct roots $\lambda_1, \dots, \lambda_{s+p}$ in $\mathbb{C}$,
 then for every $n \ge s + p$ the Padovan–Perrin coefficient satisfies

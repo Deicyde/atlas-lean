@@ -1,6 +1,6 @@
 # Removing the last element of a perfect $2^j$-cover
 
-**Removing the last element of a perfect $2^j$-cover.** Let $G$ be an abelian group, let
+Let $G$ be an abelian group, let
 $s = (x_1, \dots, x_{k+1})$ be a family in $G$ that is a perfect $2^j$-cover of $G$, and let
 $S_1 = (x_1, \dots, x_k)$. For every $a \in G$, if $S_1$ covers $a$ exactly $c$ times, then
 $S_1$ covers $a + x_{k+1}$ exactly $2^j - c$ times.

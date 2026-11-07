@@ -1,6 +1,6 @@
 # The OOZ-qMZV of the empty index
 
-**The OOZ-qMZV of the empty index.** The Ohno–Okuda–Zudilin qMZV of the empty index is $1$:
+The Ohno–Okuda–Zudilin qMZV of the empty index is $1$:
 $\zeta_q^{\mathrm{OOZ}}(\varnothing) = 1$.
 
 ## Sources

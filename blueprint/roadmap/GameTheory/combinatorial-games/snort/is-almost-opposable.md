@@ -1,6 +1,6 @@
 # Almost opposable graph
 
-**Almost opposable graph.** A graph $G$ is almost opposable if there are a vertex $u$ and a
+A graph $G$ is almost opposable if there are a vertex $u$ and a
 set $S$ of vertices with $u \in S \subseteq N[u]$, where $N[u]$ is the closed neighbourhood of $u$
 ($u$ together with its neighbours), such that the subgraph $G - S$ induced on the vertices
 outside $S$ is opposable.

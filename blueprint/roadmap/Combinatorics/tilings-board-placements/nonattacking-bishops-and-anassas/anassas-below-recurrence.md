@@ -1,6 +1,6 @@
 # Recurrence for anassas below the diagonal
 
-**Recurrence for anassas below the diagonal.** Let $A(m, k, p)$ be the number of
+Let $A(m, k, p)$ be the number of
 nonattacking placements of $k$ anassas on the square board $\{1, \dots, m\}^2$ with exactly $p$
 of them strictly below the main diagonal, let ${n \brace j}$ be Knuth's extended Stirling
 numbers of the second kind, and let $\delta$ be the Kronecker delta. For $m \ge 1$, $k \ge 2$

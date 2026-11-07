@@ -1,6 +1,6 @@
 # Offset step extension of Sury's identity, Fibonacci form
 
-**Offset step extension of Sury's identity, Fibonacci form.** Let $F_n$ be the Fibonacci
+Let $F_n$ be the Fibonacci
 numbers at integer indices. For all natural numbers $j$ and $n$ and every integer $k$ with
 $0 < |k| < j$,
 

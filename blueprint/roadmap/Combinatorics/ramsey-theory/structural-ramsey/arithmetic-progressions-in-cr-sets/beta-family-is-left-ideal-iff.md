@@ -1,6 +1,6 @@
 # Left-ideal criterion for β(F)
 
-**Left-ideal criterion for β(F).** Let $S$ be a semigroup and $\mathcal F$ a family of subsets
+Let $S$ be a semigroup and $\mathcal F$ a family of subsets
 of $S$ with the Ramsey property. Multiply ultrafilters on $S$ by $E \in pq$ iff
 $\{x \in S : \{y \in S : xy \in E\} \in q\} \in p$. Then $pq \in \beta(\mathcal F)$ for every
 ultrafilter $p$ on $S$ and every $q \in \beta(\mathcal F)$ (that is, $\beta(\mathcal F)$ is a

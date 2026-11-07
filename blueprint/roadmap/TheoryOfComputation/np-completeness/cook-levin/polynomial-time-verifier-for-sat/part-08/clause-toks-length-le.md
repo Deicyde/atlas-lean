@@ -1,3 +1,3 @@
 # Clause token length bound for the SAT verifier (moved alias)
 
-**Clause token length bound for the SAT verifier (moved alias).** Moved to `SatVerifier.clauseToks_length_le` (`SatVerifierSpec`).
+Moved to `SatVerifier.clauseToks_length_le` (`SatVerifierSpec`).

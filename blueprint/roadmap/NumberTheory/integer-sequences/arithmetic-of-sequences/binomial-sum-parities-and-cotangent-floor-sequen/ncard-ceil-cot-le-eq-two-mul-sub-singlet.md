@@ -1,6 +1,6 @@
 # Counting $m$ with $\lceil \cot(\pi/(2m)) \rceil \le r$
 
-**Counting $m$ with $\lceil \cot(\pi/(2m)) \rceil \le r$.** Let
+Let
 $g(m) = \lceil \cot(\pi / (2m)) \rceil$ for integers $m \ge 1$, and call an integer $j$ a
 singleton if exactly one integer $m \ge 1$ satisfies $g(m) = j$. For an integer $r \ge 1$, let
 $s(r)$ be the number of singletons in $\{1, \dots, r\}$. Then the number of integers $m \ge 2$

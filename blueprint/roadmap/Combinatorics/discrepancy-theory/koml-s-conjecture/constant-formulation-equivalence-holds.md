@@ -1,6 +1,6 @@
 # The square and rectangular Komlós formulations are equivalent
 
-**The square and rectangular Komlós formulations are equivalent.** The following two
+The following two
 conditions are equivalent. (a) There is a real constant $C > 0$ such that for all natural numbers
 $n$ and $d$ and all vectors $v_1, \dots, v_n \in \mathbb{R}^d$ of Euclidean norm at most $1$,
 writing $v_{ij}$ for the $j$-th coordinate of $v_i$, there are signs

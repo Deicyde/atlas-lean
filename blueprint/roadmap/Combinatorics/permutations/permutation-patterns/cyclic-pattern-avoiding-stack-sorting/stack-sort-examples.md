@@ -1,6 +1,6 @@
 # Stack-sorting examples
 
-**Stack-sorting examples.** Let $s$ be West's stack-sorting map, $s_{[123]}$ the
+Let $s$ be West's stack-sorting map, $s_{[123]}$ the
 cyclic-pattern-avoiding stack-sorting map for $123$, $s^{[123]}$ the
 consecutive-cyclic-pattern-avoiding stack-sorting map for $123$, and
 $SC_{[123]} = s \circ s_{[123]}$ the cyclic sorting machine for $123$. Then $s(3124) = 1234$,

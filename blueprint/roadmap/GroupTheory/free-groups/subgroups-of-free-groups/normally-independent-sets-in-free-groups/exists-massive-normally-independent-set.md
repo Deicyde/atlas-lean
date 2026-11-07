@@ -1,6 +1,6 @@
 # Grigorchuk's problem on massive independent sets in the free group of rank two
 
-**Grigorchuk's problem on massive independent sets in the free group of rank two.** The
+The
 statement that some subset $E$ of the free group $F_2$ on two generators is normally independent
 (no $w \in E$ lies in the normal closure of $E \setminus \{w\}$) and massive: for every real number
 $c$ with $0 < c < 3$ and every natural number $N$ there is $n \ge N$ such that the set $E_n$ of

@@ -1,6 +1,6 @@
 # Parts in a residue class over n-color partitions as a divisor sum
 
-**Parts in a residue class over n-color partitions as a divisor sum.** Let $r$ and $k$ be
+Let $r$ and $k$ be
 natural numbers with $0 < k < r$. For $i \ge 0$ let $C(k \bmod r, i)$ be the total number of
 parts of size congruent to $k$ modulo $r$, counted with multiplicity, over the $n$-color
 partitions of $i$, and let $C(i)$ be the number of $n$-color partitions of $i$. Then for every

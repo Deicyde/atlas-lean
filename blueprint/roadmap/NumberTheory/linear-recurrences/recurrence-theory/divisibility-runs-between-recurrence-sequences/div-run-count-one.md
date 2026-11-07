@@ -1,6 +1,6 @@
 # Exact formula for the length-one run count
 
-**Exact formula for the length-one run count.** For every natural number $B$, let
+For every natural number $B$, let
 $D(B) = \sum_{m=1}^{B} \lfloor B/m \rfloor$ and let $A_B(1)$ be the number of integer tuples
 $(x, y, a, b, c) \in [-B, B]^5$ with $(x, y) \ne (0, 0)$ and $(a, b, c) \ne (0, 0, 0)$ that have
 a divisibility run of length at least $1$. Then

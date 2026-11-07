@@ -1,6 +1,6 @@
 # Heisenberg uncertainty inequality with shifted moments
 
-**Heisenberg uncertainty inequality with shifted moments.** For a complex-valued Schwartz
+For a complex-valued Schwartz
 function $f$ on $\mathbb{R}$, write
 $\hat{f}(\xi) = \int_{\mathbb{R}} f(x) e^{-2\pi i x \xi}\, dx$ for its Fourier transform. There is
 a constant $C > 0$ such that for all real numbers $c$ and $d$ and every complex-valued Schwartz

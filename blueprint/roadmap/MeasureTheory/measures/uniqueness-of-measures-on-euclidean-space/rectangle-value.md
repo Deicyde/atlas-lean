@@ -1,6 +1,6 @@
 # Rectangle value of a function
 
-**Rectangle value of a function.** For $F : \mathbb{R}^d \to \mathbb{R}$ and arbitrary
+For $F : \mathbb{R}^d \to \mathbb{R}$ and arbitrary
 $a, b \in \mathbb{R}^d$, the rectangle value of $F$ at $a, b$ is
 
 $$\Delta_{a,b} F = \sum_{S \subseteq \{1, \dots, d\}} (-1)^{|S|} F(v_S),$$

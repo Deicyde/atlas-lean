@@ -1,6 +1,6 @@
 # Incomplete Leonardo p-numbers at zero
 
-**Incomplete Leonardo p-numbers at zero.** For all natural numbers $p$ and $n$, the
+For all natural numbers $p$ and $n$, the
 incomplete Leonardo $p$-number $\mathcal{L}_{p,n}(0)$ equals $1$.
 
 ## Sources

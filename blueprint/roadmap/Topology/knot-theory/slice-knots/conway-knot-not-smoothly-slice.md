@@ -1,6 +1,6 @@
 # The Conway knot is not smoothly slice (Piccirillo)
 
-**The Conway knot is not smoothly slice (Piccirillo).** Let $K$ be the Conway knot $11n34$,
+Let $K$ be the Conway knot $11n34$,
 realized as a closed polyline in $\mathbb{R}^3$. There is no smooth knot $J$, that is, a smooth
 $2\pi$-periodic map $\mathbb{R} \to \mathbb{R}^3$ with nowhere vanishing derivative that is
 injective on $[0, 2\pi)$, with both of the following properties: some topological ambient isotopy

@@ -1,6 +1,6 @@
 # Negative answer to Scottish Book Problem 173
 
-**Negative answer to Scottish Book Problem 173.** Eidelheit's claim in Problem 173 is false:
+Eidelheit's claim in Problem 173 is false:
 there is a real Banach space $E$ in which the bounded linear operators $E \to E$ that have a
 bounded linear two-sided inverse are not dense, for the operator norm, in the space of all
 bounded linear operators on $E$.

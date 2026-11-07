@@ -1,6 +1,6 @@
 # Odd-to-even ratio of $k$-full, $l$-free numbers
 
-**Odd-to-even ratio of $k$-full, $l$-free numbers.** Let $2 \le k < l$. Call a natural number
+Let $2 \le k < l$. Call a natural number
 $n$ a $[k, l]$-integer if it is $k$-full and $l$-free, that is, $n \ge 1$ and every prime $p$
 dividing $n$ satisfies $p^k \mid n$ and $p^l \nmid n$. For a natural number $N$ let $O_{k,l}(N)$
 and $E_{k,l}(N)$ be the numbers of odd and of even $[k, l]$-integers $n \le N$. Then

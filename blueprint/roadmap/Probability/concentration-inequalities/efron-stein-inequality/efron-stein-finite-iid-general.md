@@ -1,6 +1,6 @@
 # Efron–Stein inequality for a finite product weight
 
-**Efron–Stein inequality for a finite product weight.** Let $\alpha$ be a finite nonempty set,
+Let $\alpha$ be a finite nonempty set,
 let $p : \alpha \to \mathbb{R}$ satisfy $p(a) \ge 0$ for every $a \in \alpha$ and
 $\sum_{a \in \alpha} p(a) = 1$, let $n \in \mathbb{N}$ and let $f : \alpha^n \to \mathbb{R}$. For
 $x = (x_1, \dots, x_n) \in \alpha^n$ write $w(x) = \prod_{j=1}^{n} p(x_j)$, and for a coordinate

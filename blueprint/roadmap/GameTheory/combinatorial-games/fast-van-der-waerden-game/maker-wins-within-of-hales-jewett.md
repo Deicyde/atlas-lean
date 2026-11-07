@@ -1,6 +1,6 @@
 # Hales–Jewett bound for the $S$-game
 
-**Hales–Jewett bound for the $S$-game.** Let $S$ be a finite set of natural numbers with
+Let $S$ be a finite set of natural numbers with
 $|S| = n$, and let $N$ be a natural number such that every 2-coloring of $S^N$ has a
 monochromatic combinatorial line. Then, starting from the position where no number has been
 claimed, Maker wins the $S$-game within $\lceil n^N / 2 \rceil$ moves.

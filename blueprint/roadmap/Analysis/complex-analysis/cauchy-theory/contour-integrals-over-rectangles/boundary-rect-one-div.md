@@ -1,6 +1,6 @@
 # Rectangle integral of $1/s$ around the origin
 
-**Rectangle integral of $1/s$ around the origin.** Let $a, b, T$ be real numbers with
+Let $a, b, T$ be real numbers with
 $a < 0 < b$ and $T > 0$. Then
 
 $$\int_a^b \frac{dx}{x - iT} - \int_a^b \frac{dx}{x + iT} +

@@ -1,6 +1,6 @@
 # Disjoining CNF builder
 
-**Disjoining CNF builder.** Let $\iota$ number the atoms by natural numbers, read a literal
+Let $\iota$ number the atoms by natural numbers, read a literal
 $(n, p)$ as variable $n$ with polarity $p$, and write $1$ and $0$ for the polarities true and
 false. For a polarity $p$, a proposition $\varphi$ and a CNF $S$, the CNF
 $\mathcal{O}_p(\varphi, S)$ is defined by recursion on $\varphi$, together with the accumulating

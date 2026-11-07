@@ -1,6 +1,6 @@
 # Realizable span of a nondegenerate binary recurrence
 
-**Realizable span of a nondegenerate binary recurrence.** Let $B$ and $C$ be integers with
+Let $B$ and $C$ be integers with
 $C \neq 0$, and suppose the recurrence is nondegenerate: whenever $\alpha \neq \beta$ are
 complex roots of $x^2 - Bx + C$, we have $(\alpha/\beta)^n \neq 1$ for every integer $n \geq 1$.
 Put $\Delta = B^2 - 4C$. Let $R$ be the set of complex sequences $(u_n)_{n \geq 0}$ coming from

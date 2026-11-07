@@ -1,6 +1,6 @@
 # Halved perfect partitions are double-perfect but not of Type A
 
-**Halved perfect partitions are double-perfect but not of Type A.** For integers
+For integers
 $a_1, \dots, a_k \ge 2$ write $P(a_1, \dots, a_k)$ for the perfect partition
 $(1^{a_1-1}, a_1^{a_2-1}, (a_1a_2)^{a_3-1}, \dots, (a_1 \cdots a_{k-1})^{a_k-1})$. Let $N$ and
 $r \ge 1$ be natural numbers, let $a_1, \dots, a_k \ge 2$ and $1 < j < k$ with

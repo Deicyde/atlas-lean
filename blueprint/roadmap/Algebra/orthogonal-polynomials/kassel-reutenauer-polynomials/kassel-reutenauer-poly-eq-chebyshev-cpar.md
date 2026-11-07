@@ -1,6 +1,6 @@
 # $\bar P_n$ equals $F_{n-1}$ exactly for powers of two
 
-**$\bar P_n$ equals $F_{n-1}$ exactly for powers of two.** Let $n \ge 1$, let $\bar P_n$ be the
+Let $n \ge 1$, let $\bar P_n$ be the
 Kassel–Reutenauer polynomial, and let $F_{n-1} = 1 + \sum_{k=1}^{n-1} \bar T_k$ be the partial
 sum of the monic Chebyshev polynomials. Then $\bar P_n = F_{n-1}$ if and only if $n = 2^k$ for
 some natural number $k$.

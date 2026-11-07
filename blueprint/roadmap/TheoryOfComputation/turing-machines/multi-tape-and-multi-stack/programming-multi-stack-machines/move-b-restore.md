@@ -1,6 +1,6 @@
 # Restoring a stack after a comparison
 
-**Restoring a stack after a comparison.** Let $t \ne a$ be stacks with decoders $d_t$ and
+Let $t \ne a$ be stacks with decoders $d_t$ and
 $d_a$ that read each symbol either as a bit or as a marker. Let $e_t$ be a bit encoder for $t$
 that $d_t$ reads back ($d_t$ reads $e_t(x)$ as the bit $x$), and let $g_a$ be a bit encoder for
 $a$ that inverts $d_a$ ($g_a(x) = s$ whenever $d_a$ reads the symbol $s$ as the bit $x$). Suppose

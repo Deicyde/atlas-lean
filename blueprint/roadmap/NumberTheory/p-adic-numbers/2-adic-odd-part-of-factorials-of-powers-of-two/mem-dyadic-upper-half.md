@@ -1,6 +1,6 @@
 # Membership in the dyadic upper half
 
-**Membership in the dyadic upper half.** For natural numbers $e$ and $i$, $i$ belongs to the
+For natural numbers $e$ and $i$, $i$ belongs to the
 dyadic upper half $I_e$ if and only if $2^{e-1} < i$ and $i \le 2^e$, where $e - 1$ is truncated
 subtraction.
 

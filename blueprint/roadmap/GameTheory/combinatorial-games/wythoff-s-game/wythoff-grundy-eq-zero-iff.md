@@ -1,6 +1,6 @@
 # Wythoff's theorem
 
-**Wythoff's theorem.** Let $\mathcal{G}_1(x, y, 0)$ be the Grundy number of the position
+Let $\mathcal{G}_1(x, y, 0)$ be the Grundy number of the position
 $(x, y, 0)$ of Wythoff's game with a pass, in which the pass has been used; this is the Grundy
 number of $(x, y)$ in classical Wythoff's game. Then $\mathcal{G}_1(x, y, 0) = 0$ (that is,
 $(x, y)$ is a P-position) if and only if there is $n \in \mathbb{N}$ with

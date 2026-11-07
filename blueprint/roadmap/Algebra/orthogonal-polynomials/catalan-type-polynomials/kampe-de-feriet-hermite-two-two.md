@@ -1,6 +1,6 @@
 # The second Kampé de Fériet polynomial
 
-**The second Kampé de Fériet polynomial.** For all real numbers $x$ and $y$,
+For all real numbers $x$ and $y$,
 $H^2_2(x, y) = x^2 + 2y$.
 
 ## Sources

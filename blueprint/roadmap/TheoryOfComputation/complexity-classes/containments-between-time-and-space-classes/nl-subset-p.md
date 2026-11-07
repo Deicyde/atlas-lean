@@ -1,6 +1,6 @@
 # NL is contained in P
 
-**NL is contained in P.** Every decision problem in NL, the class of nondeterministic
+Every decision problem in NL, the class of nondeterministic
 logarithmic space, also belongs to P, the class of decision problems computable in deterministic
 polynomial time.
 

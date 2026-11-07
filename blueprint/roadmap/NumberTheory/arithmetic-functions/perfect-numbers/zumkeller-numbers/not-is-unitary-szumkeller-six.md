@@ -1,6 +1,6 @@
 # The number 6 is not unitary s-Zumkeller
 
-**The number 6 is not unitary s-Zumkeller.** The number $6$ is not a unitary s-Zumkeller
+The number $6$ is not a unitary s-Zumkeller
 number.
 
 ## Sources

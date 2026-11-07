@@ -1,6 +1,6 @@
 # The Zeckendorf Markov chain
 
-**The Zeckendorf Markov chain.** Let $\varphi$ be the golden ratio, and let $\psi(0, t) = 1$
+Let $\varphi$ be the golden ratio, and let $\psi(0, t) = 1$
 if $t < 1/\varphi^2$, $\psi(0, t) = 0$ otherwise, and $\psi(1, t) = 0$. For a real sequence
 $(u_n)_{n \ge 0}$, written $u_n = U_{n+2}$, the chain $(y_j)_{j \in \mathbb{N}}$ is the sequence in
 $\{0, 1\}$ with $y_0 = y_1 = 0$ and $y_j = \psi(y_{j-1}, U_j)$ for $j \ge 2$; that is,

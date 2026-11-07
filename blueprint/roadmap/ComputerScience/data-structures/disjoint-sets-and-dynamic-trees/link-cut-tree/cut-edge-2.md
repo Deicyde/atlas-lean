@@ -1,6 +1,6 @@
 # Edge cutting preserves validity
 
-**Edge cutting preserves validity.** If $s$ is a valid link-cut tree state, then for all
+If $s$ is a valid link-cut tree state, then for all
 vertices $x$ and $y$ the state obtained from $s$ by cutting the edge between $x$ and $y$ is
 again valid.
 

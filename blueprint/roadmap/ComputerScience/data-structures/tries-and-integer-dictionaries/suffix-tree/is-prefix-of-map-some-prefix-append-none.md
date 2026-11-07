@@ -1,6 +1,6 @@
 # A tagged pattern cannot reach past the terminator
 
-**A tagged pattern cannot reach past the terminator.** For lists $p$ and $q$ over $\alpha$,
+For lists $p$ and $q$ over $\alpha$,
 view their symbols in $\alpha$ extended by a fresh terminator symbol. If $p$ is a prefix of $q$
 followed by the terminator, then $p$ is a prefix of $q$.
 

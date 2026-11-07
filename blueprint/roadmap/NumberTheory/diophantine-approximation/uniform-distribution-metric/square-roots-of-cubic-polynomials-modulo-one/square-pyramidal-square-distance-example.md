@@ -1,6 +1,6 @@
 # Small square pyramidal numbers and their distances to squares
 
-**Small square pyramidal numbers and their distances to squares.** Let $P_n$ be the $n$-th
+Let $P_n$ be the $n$-th
 square pyramidal number and $a_n$ the distance from $P_n$ to the nearest square. Then
 $P_1, P_2, P_3, P_4$ are $1, 5, 14, 30$; $a_2 = 1$ (since $P_2 = 5$ and the nearest square is
 $4$); $P_{24} = 4900 = 70^2$; and $a_{24} = 0$ (the cannonball solution).

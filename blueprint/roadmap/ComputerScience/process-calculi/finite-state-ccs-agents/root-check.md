@@ -1,6 +1,6 @@
 # Direct check of the root condition
 
-**Direct check of the root condition.** Given code-level transition functions $s$ on codes
+Given code-level transition functions $s$ on codes
 $\alpha$ and $t$ on codes $\beta$, each listing labelled steps to codes, a relation $R$ given as
 a list of code pairs, and codes $x$ and $y$, the root check succeeds exactly when every listed
 step $(a, x')$ of $s(x)$ is matched by some listed step $(a, y')$ of $t(y)$ with the same label

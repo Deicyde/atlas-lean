@@ -1,6 +1,6 @@
 # Axler's explicit Mertens first theorem
 
-**Axler's explicit Mertens first theorem.** For every real $x \ge 1757126630797$,
+For every real $x \ge 1757126630797$,
 
 $$
 \Big|\sum_{p \le x} \frac{\log p}{p} - \log x - E\Big| \le

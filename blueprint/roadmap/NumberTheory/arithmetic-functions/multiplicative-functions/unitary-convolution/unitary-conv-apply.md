@@ -1,6 +1,6 @@
 # Unitary convolution as a sum over unitary divisors
 
-**Unitary convolution as a sum over unitary divisors.** Let $R$ be a semiring and let $f$ and
+Let $R$ be a semiring and let $f$ and
 $g$ be arithmetic functions with values in $R$. For every natural number $n$, their unitary
 convolution $f \sqcup g$ satisfies $(f \sqcup g)(n) = \sum_{d \parallel n} f(d)\, g(n/d)$, where the
 sum runs over the unitary divisors $d$ of $n$: for $n \ge 1$ these are the divisors $d$ of $n$

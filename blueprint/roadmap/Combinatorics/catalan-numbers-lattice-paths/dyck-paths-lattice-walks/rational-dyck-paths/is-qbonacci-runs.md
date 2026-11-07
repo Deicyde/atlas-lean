@@ -1,6 +1,6 @@
 # The $Q$-bonacci run condition
 
-**The $Q$-bonacci run condition.** Let $r, s \in \mathbb{N}$ and let $R$ be a list of runs,
+Let $r, s \in \mathbb{N}$ and let $R$ be a list of runs,
 each a pair (letter, length) with a Boolean letter. For the run at position $i$, let $v_i$ be the
 length of the run at position $i + 1$ if that run exists and has letter false, and $v_i = 0$
 otherwise. Then $R$ satisfies the $Q$-bonacci run condition for $q = r/s$ when every run of

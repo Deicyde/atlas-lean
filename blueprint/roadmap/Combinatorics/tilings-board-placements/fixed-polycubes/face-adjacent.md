@@ -1,6 +1,6 @@
 # Face adjacency of lattice cells
 
-**Face adjacency of lattice cells.** Two lattice cells $x, y \in \mathbb{Z}^d$ are face
+Two lattice cells $x, y \in \mathbb{Z}^d$ are face
 adjacent when there is an axis $k$ such that $x_j = y_j$ for every axis $j \ne k$ and
 $|x_k - y_k| = 1$.
 

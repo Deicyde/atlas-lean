@@ -1,6 +1,6 @@
 # Annulus theorem in dimensions at least five
 
-**Annulus theorem in dimensions at least five.** Let $n \ge 5$ and let $f$ and $g$ be locally
+Let $n \ge 5$ and let $f$ and $g$ be locally
 flat embedded $(n-1)$-spheres in $\mathbb{R}^n$, that is, continuous injective locally flat maps
 $S^{n-1} \to \mathbb{R}^n$ from the unit sphere. Suppose that the images of $f$ and $g$ are
 disjoint and that the image of $g$ lies in the inside of the image of $f$, the set of points off

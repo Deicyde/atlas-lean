@@ -1,6 +1,6 @@
 # Reciprocal binomial sums from Sabar's triangle
 
-**Reciprocal binomial sums from Sabar's triangle.** For every natural number $n \ge 2$, the
+For every natural number $n \ge 2$, the
 entries $s(n-1, i)$ of Sabar's triangle satisfy
 
 $$\frac{1}{n+1} \sum_{i=0}^{n} \binom{n}{i}^{-1} =

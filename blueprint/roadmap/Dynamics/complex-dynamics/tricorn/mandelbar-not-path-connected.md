@@ -1,6 +1,6 @@
 # The Mandelbar set is not path-connected
 
-**The Mandelbar set is not path-connected.** The Mandelbar set (tricorn), the set of
+The Mandelbar set (tricorn), the set of
 $c \in \mathbb{C}$ for which the orbit of $0$ under $z \mapsto \bar z^2 + c$ is bounded, is not
 path-connected.
 

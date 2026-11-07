@@ -1,6 +1,6 @@
 # Successive products along a coin sequence
 
-**Successive products along a coin sequence.** Let $G$ be a group, let $\varphi, \psi \in G$,
+Let $G$ be a group, let $\varphi, \psi \in G$,
 and let $c : \mathbb{N} \to \{\mathrm{false}, \mathrm{true}\}$. For $i \ge 1$ let $f_i$ be the
 generator chosen at index $i - 1$: $f_i = \varphi$ if $c(i - 1) = \mathrm{false}$ and
 $f_i = \psi$ if $c(i - 1) = \mathrm{true}$. The successive products are defined by $P_0 = 1$

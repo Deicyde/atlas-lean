@@ -1,6 +1,6 @@
 # $k$-m-perfect numbers with $k$ a positive multiple of $4$ are super-m-Zumkeller
 
-**$k$-m-perfect numbers with $k$ a positive multiple of $4$ are super-m-Zumkeller.** Let
+Let
 $k \ge 2$ be a natural number with $k \equiv 0 \pmod 4$. Then every natural number that is
 $k$-m-perfect is super-m-Zumkeller.
 

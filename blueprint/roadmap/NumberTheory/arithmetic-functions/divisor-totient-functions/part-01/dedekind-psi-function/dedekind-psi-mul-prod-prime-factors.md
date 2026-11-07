@@ -1,6 +1,6 @@
 # Cleared-denominator product formula for the Dedekind psi function
 
-**Cleared-denominator product formula for the Dedekind psi function.** For every natural
+For every natural
 number $n \ne 0$, the Dedekind psi function $\psi$ satisfies
 
 $$

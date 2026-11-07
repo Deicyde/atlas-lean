@@ -1,6 +1,6 @@
 # Hadamard bound for zero-one determinants
 
-**Hadamard bound for zero-one determinants.** Let $n \ge 1$ and let $B$ be an $n \times n$
+Let $n \ge 1$ and let $B$ be an $n \times n$
 real matrix each of whose entries is $0$ or $1$. Then
 
 $$|\det B| \le 2^{-n} (n+1)^{(n+1)/2}.$$

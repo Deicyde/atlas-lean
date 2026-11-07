@@ -1,6 +1,6 @@
 # LONGEST CYCLE is NP-complete
 
-**LONGEST CYCLE is NP-complete.** The decision problem LONGEST CYCLE belongs to NP, and every
+The decision problem LONGEST CYCLE belongs to NP, and every
 decision problem in NP has a polynomial-time many-one reduction to LONGEST CYCLE.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Polynomial time bound for the one-hot generator
 
-**Polynomial time bound for the one-hot generator.** Fix a layout with label/state block size
+Fix a layout with label/state block size
 $A$, $K$ stacks and $g$ symbol codes, natural numbers $T$ and $H$, and a bit string $o$, and let
 $c = 668\,(A + K + g + 1)^7$. Start the one-hot generator at its first precomputation label, with
 internal state false, the output stack holding $o$, the time counter holding $T$ and the height

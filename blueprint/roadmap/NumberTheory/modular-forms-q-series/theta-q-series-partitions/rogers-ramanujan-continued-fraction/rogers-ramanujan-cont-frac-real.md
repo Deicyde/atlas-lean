@@ -1,6 +1,6 @@
 # The real Rogers–Ramanujan continued fraction
 
-**The real Rogers–Ramanujan continued fraction.** For a real number $x$,
+For a real number $x$,
 
 $$
 R(x) = x^{1/5} \prod_{n \ge 0}

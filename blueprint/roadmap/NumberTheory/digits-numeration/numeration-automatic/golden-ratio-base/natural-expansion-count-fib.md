@@ -1,6 +1,6 @@
 # Natural expansions of Fibonacci numbers
 
-**Natural expansions of Fibonacci numbers.** Write $\mathrm{Tot}_\nu(N)$ for the number of
+Write $\mathrm{Tot}_\nu(N)$ for the number of
 natural base phi expansions of a natural number $N$ and $F_k$ for the $k$-th Fibonacci number.
 Then for every $n \ge 0$, $\mathrm{Tot}_\nu(F_{2n+2}) = F_{2n+1}$ and
 $\mathrm{Tot}_\nu(F_{2n+3}) = F_{2n+3}$.

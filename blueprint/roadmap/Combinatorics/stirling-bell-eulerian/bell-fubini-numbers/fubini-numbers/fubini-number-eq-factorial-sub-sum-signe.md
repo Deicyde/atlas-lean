@@ -1,6 +1,6 @@
 # Alternating recurrence for the Fubini numbers
 
-**Alternating recurrence for the Fubini numbers.** For every natural number $n$, the Fubini
+For every natural number $n$, the Fubini
 number $F(n)$ satisfies
 
 $$F(n) = n! - \sum_{j=1}^{n} s(n, n-j)\, F(n-j),$$

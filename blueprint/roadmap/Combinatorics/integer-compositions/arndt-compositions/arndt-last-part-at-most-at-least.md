@@ -1,6 +1,6 @@
 # Arndt compositions with last part at most or at least $k$
 
-**Arndt compositions with last part at most or at least $k$.** Let $F_n$ be the $n$-th
+Let $F_n$ be the $n$-th
 Fibonacci number ($F_0 = 0$, $F_1 = 1$) and $b(n, j)$ the number of Arndt compositions of $n$
 with last part $j$. For all integers $k \ge 1$ and $n \ge 2k + 2$, the number of Arndt
 compositions of $n$ with last part at most $k$ is

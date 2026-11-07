@@ -1,6 +1,6 @@
 # Canonical Markov chain measure
 
-**Canonical Markov chain measure.** Let $\kappa$ be a Markov kernel from a measurable space
+Let $\kappa$ be a Markov kernel from a measurable space
 $S$ to itself and let $\mu$ be a measure on $S$. The canonical Markov chain measure $P_\mu$ is the
 measure on the path space $S^{\mathbb{N}}$ given by the Ionescu–Tulcea theorem for the initial
 measure $\mu$ and, at each time $n$, the kernel sending a history $(x_0, \dots, x_n)$ to

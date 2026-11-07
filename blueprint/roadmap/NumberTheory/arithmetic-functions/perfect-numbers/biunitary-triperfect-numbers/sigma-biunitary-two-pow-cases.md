@@ -1,6 +1,6 @@
 # Prime factors of the biunitary divisor sum of a power of $2$
 
-**Prime factors of the biunitary divisor sum of a power of $2$.** Let $e$, $s$ and $\delta$
+Let $e$, $s$ and $\delta$
 be natural numbers with $\delta \in \{0, 1\}$ and $e = 2s - 1 - \delta$, suppose $e \ge 6$ and
 $e \notin \{8, 12\}$, and write $\sigma^{**}$ for the biunitary divisor sum. Then at least one of
 the following holds:

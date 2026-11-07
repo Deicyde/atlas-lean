@@ -1,6 +1,6 @@
 # Diagonal classes whose multiplicities are at least two
 
-**Diagonal classes whose multiplicities are at least two.** Let $q \ge 1$, let
+Let $q \ge 1$, let
 $s = (s_1, s_2, \dots)$ be a sequence of natural numbers, and let $\alpha$ be a partition of $n$
 whose diagonal sequence $\delta(\alpha) = (d_i)_{i \ge 1}$ is
 $(1, 2, \dots, q, q^{(s_q)}, (q-1)^{(s_{q-1})}, \dots, 1^{(s_1)})$ followed by zeros, where

@@ -1,6 +1,6 @@
 # EDGE DOMINATING SET is NP-complete
 
-**EDGE DOMINATING SET is NP-complete.** The EDGE DOMINATING SET decision problem belongs to
+The EDGE DOMINATING SET decision problem belongs to
 NP, and every decision problem in NP reduces to it by a polynomial-time many-one reduction.
 
 ## Sources

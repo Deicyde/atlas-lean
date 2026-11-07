@@ -1,6 +1,6 @@
 # Kolmogorov error
 
-**Kolmogorov error.** For a measure $\mu$ on $\mathbb{R}$ and a positive integer $n$, the
+For a measure $\mu$ on $\mathbb{R}$ and a positive integer $n$, the
 Kolmogorov error of $\mu$ at $n$ is the real supremum
 $\sup_{x \in \mathbb{R}} |F_{\mu,n}(x) - \Phi(x)|$, where $\Phi$ is the standard normal
 cumulative distribution function and $F_{\mu,n}$ is Mathlib's cumulative distribution function

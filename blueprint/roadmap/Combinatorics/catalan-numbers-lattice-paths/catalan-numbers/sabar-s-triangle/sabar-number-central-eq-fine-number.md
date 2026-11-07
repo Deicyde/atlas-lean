@@ -1,6 +1,6 @@
 # Central entries of Sabar's triangle and Fine numbers
 
-**Central entries of Sabar's triangle and Fine numbers.** Let $F(m)$ denote the Fine numbers
+Let $F(m)$ denote the Fine numbers
 and $C_m$ the Catalan numbers. For every natural number $n \ge 1$, the entries of Sabar's
 triangle $s$ satisfy
 

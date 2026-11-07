@@ -1,6 +1,6 @@
 # Signed iterated partial sums
 
-**Signed iterated partial sums.** Let $(b_n)_{n \ge 0}$ be a real sequence and fix a choice of
+Let $(b_n)_{n \ge 0}$ be a real sequence and fix a choice of
 signs, either alternating, $\varepsilon_k = (-1)^{k-1}$, or constant, $\varepsilon_k = 1$. The
 signed iterated partial sums $S^{(r)}_n$ of $b$, for orders $r \in \mathbb{N}$ and
 $n \in \mathbb{N}$, are defined by $S^{(0)}_n = 0$, $S^{(1)}_n = b_n$ and, for $r \ge 1$,

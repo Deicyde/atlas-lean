@@ -1,6 +1,6 @@
 # Leonardo $p$-tilings
 
-**Leonardo $p$-tilings.** For natural numbers $p$ and $n$, the tiling set $K_{p,n}$ consists
+For natural numbers $p$ and $n$, the tiling set $K_{p,n}$ consists
 of the linear tilings of an $n$-board by squares (length $1$), $p$-minos (length $p + 1$) and at
 most one $p$-tile, which comes in one of $p$ colors, has length at least $p + 1$, and can only be
 the initial piece. A tiling is recorded as its initial $p$-tile, given by its color and length,

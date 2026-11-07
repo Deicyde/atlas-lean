@@ -1,6 +1,6 @@
 # Scottish Book Problem 180 (Kampé de Fériet's claim)
 
-**Scottish Book Problem 180 (Kampé de Fériet's claim).** The claim that for every probability
+The claim that for every probability
 space $(\Omega, \mu)$ that carries a measurable random variable $U : \Omega \to \mathbb{R}$
 uniformly distributed on $[0, 1]$, and every stationary random function $v$ on $\Omega$ (in the
 sense of Slutsky and Khinchin) such that each $v_t : \Omega \to \mathbb{R}$ is measurable, there

@@ -1,4 +1,4 @@
 # Primitive polynomials are monic
 
-**Primitive polynomials are monic.** Every primitive polynomial over a finite field is
+Every primitive polynomial over a finite field is
 monic.

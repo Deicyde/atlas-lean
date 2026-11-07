@@ -1,6 +1,6 @@
 # The first recurrence value of Garvan's matrix
 
-**The first recurrence value of Garvan's matrix.** The entry of Garvan's matrix
+The entry of Garvan's matrix
 $(m_{i,j})$ in row $8$ and column $3$, the first entry computed by the recurrence rather than
 read from the tables, is $m_{8,3} = 2464$.
 

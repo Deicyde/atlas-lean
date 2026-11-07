@@ -1,6 +1,6 @@
 # The balancing number $B_3$ is $35$
 
-**The balancing number $B_3$ is $35$.** The balancing number $B_3$ equals $35$.
+The balancing number $B_3$ equals $35$.
 
 ## Sources
 

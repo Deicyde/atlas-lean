@@ -1,6 +1,6 @@
 # Rectangle integral of $y^s/s$ with the pole outside
 
-**Rectangle integral of $y^s/s$ with the pole outside.** Let $y, U, c, T$ be real numbers with
+Let $y, U, c, T$ be real numbers with
 $y > 0$, $0 < c < U$ and $T > 0$, and write $y^s = e^{s \log y}$. Then
 
 $$\int_{c}^{U} \frac{y^{x - iT}}{x - iT}\,dx - \int_{c}^{U} \frac{y^{x + iT}}{x + iT}\,dx +

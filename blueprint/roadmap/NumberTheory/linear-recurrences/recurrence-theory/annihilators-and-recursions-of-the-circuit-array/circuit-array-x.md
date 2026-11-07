@@ -1,6 +1,6 @@
 # One-variable circuit array
 
-**One-variable circuit array.** The one-variable circuit array $C^X_{i,j}$, with entries in
+The one-variable circuit array $C^X_{i,j}$, with entries in
 the field $\mathbb{Q}(X)$ of rational functions in one variable over $\mathbb{Q}$, is the circuit
 array of the reductions of the all-one triangular grid in which, after the first reduction, every
 boundary edge is set to $(X - 3)/X$, and no boundary edge is replaced after any later reduction.

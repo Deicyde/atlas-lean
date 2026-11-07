@@ -1,6 +1,6 @@
 # Zero-extended binomial coefficient
 
-**Zero-extended binomial coefficient.** For integers $a$ and $b$, the zero-extended binomial
+For integers $a$ and $b$, the zero-extended binomial
 coefficient $\binom{a}{b}$ is the usual binomial coefficient of $a$ and $b$ when $a \ge 0$ and
 $b \ge 0$, and $0$ otherwise.
 

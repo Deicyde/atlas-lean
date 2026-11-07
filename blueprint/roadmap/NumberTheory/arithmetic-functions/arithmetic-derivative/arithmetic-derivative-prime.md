@@ -1,6 +1,6 @@
 # Arithmetic derivative of a prime
 
-**Arithmetic derivative of a prime.** For every prime $p$, the arithmetic derivative of $p$
+For every prime $p$, the arithmetic derivative of $p$
 is $1$: $D(p) = 1$.
 
 ## Sources

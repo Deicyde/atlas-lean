@@ -1,6 +1,6 @@
 # Ordinary Ehrhart count
 
-**Ordinary Ehrhart count.** For a natural number $d$, a set $P \subseteq \mathbb{Q}^d$ and a
+For a natural number $d$, a set $P \subseteq \mathbb{Q}^d$ and a
 natural number $m$, the ordinary Ehrhart count is the number $|mP \cap \mathbb{Z}^d|$ of integer
 points in the dilate $mP = \{m x : x \in P\}$, where $\mathbb{Z}^d$ is viewed inside
 $\mathbb{Q}^d$; it is $0$ when $mP \cap \mathbb{Z}^d$ is infinite.

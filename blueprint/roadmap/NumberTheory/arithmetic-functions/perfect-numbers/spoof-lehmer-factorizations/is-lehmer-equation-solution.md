@@ -1,6 +1,6 @@
 # Solutions of the Lehmer equation
 
-**Solutions of the Lehmer equation.** A finite multiset $x$ of natural numbers solves
+A finite multiset $x$ of natural numbers solves
 Equation (1) if every element $x_j$ of $x$ satisfies $x_j \ge 2$ and there is a positive integer
 $k$ with $k \prod_j (x_j - 1) = \prod_j x_j - 1$, where the products run over the elements of $x$
 with multiplicity and are computed in $\mathbb{Z}$.

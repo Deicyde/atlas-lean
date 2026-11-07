@@ -1,6 +1,6 @@
 # The EKG sequence
 
-**The EKG sequence.** A sequence $a_0, a_1, a_2, \dots$ of natural numbers is an EKG
+A sequence $a_0, a_1, a_2, \dots$ of natural numbers is an EKG
 sequence when $a_0 = 1$, $a_1 = 2$, and for every $n \ge 0$ the term $a_{n+2}$ is positive,
 differs from each of $a_0, \dots, a_{n+1}$, satisfies $\gcd(a_{n+1}, a_{n+2}) > 1$, and
 satisfies $a_{n+2} \le m$ for every positive integer $m$ that differs from each of

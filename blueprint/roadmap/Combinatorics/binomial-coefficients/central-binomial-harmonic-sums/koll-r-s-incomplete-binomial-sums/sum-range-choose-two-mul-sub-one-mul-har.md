@@ -1,6 +1,6 @@
 # Half-range binomial sum of harmonic numbers with top index $2n-1$
 
-**Half-range binomial sum of harmonic numbers with top index $2n-1$.** Let $H_i$ denote
+Let $H_i$ denote
 the $i$-th harmonic number (with $H_0 = 0$), and let Kollár's auxiliary sums be
 $C_n = \sum_{k=1}^{n} \frac{1}{k \, 2^k}$ and
 $D_n = \sum_{k=1}^{n} \frac{\binom{2k}{k}}{2k \cdot 2^{2k}}$.

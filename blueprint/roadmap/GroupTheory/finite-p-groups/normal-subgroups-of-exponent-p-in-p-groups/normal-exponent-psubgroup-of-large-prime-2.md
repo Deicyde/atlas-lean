@@ -1,6 +1,6 @@
 # Normal subgroups of exponent p in p-groups when p > n
 
-**Normal subgroups of exponent p in p-groups when p > n.** For every prime $p$ and every natural
+For every prime $p$ and every natural
 number $n < p$, if a finite $p$-group $G$ has a subgroup $H$ of order $p^n$ with $x^p = 1$ for all
 $x \in H$, then $G$ has a normal subgroup $N$ of order $p^n$ with $x^p = 1$ for all $x \in N$.
 

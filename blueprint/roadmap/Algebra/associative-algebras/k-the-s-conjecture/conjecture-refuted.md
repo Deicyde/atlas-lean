@@ -1,6 +1,6 @@
 # Köthe's conjecture is false
 
-**Köthe's conjecture is false.** There exist a ring $R$ (associative, with identity) and nil left
+There exist a ring $R$ (associative, with identity) and nil left
 ideals $I$ and $J$ of $R$ (left ideals all of whose elements are nilpotent) such that the sum
 $I + J$ is not nil.
 

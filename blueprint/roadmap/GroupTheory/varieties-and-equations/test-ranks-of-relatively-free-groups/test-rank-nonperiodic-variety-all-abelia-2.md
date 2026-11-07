@@ -1,6 +1,6 @@
 # Non-periodic varieties with full test rank need not be abelian
 
-**Non-periodic varieties with full test rank need not be abelian.** Resolved false: the same variety (`[[x, y], z] = 1`, `[x, y]^p = 1`, `p` prime) is not periodic
+Resolved false: the same variety (`[[x, y], z] = 1`, `[x, y]^p = 1`, `p` prime) is not periodic
 since it contains `ℤ`, its free groups of every rank `r ≥ 1` have test rank `r` (Kinyon-Urban,
 Proposition 3.9), and it is not the variety of all abelian groups since it contains the non-abelian
 group `UT₃(𝔽_p)`. The Kourovka Notebook (21st issue) answers 16.87(b) "No" (AI solution confirmed by

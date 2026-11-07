@@ -1,6 +1,6 @@
 # LINEAR ORDERING (TOURNAMENTS) is NP-complete
 
-**LINEAR ORDERING (TOURNAMENTS) is NP-complete.** The decision problem LINEAR ORDERING
+The decision problem LINEAR ORDERING
 (TOURNAMENTS) on bitstrings lies in NP, and every decision problem in NP reduces to it by a
 polynomial-time many-one reduction.
 

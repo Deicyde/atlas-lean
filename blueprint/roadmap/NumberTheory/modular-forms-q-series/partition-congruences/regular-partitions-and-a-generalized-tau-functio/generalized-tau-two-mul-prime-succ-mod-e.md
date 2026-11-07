@@ -1,6 +1,6 @@
 # Generalized tau function $\tau_{2p}$ modulo $p$
 
-**Generalized tau function $\tau_{2p}$ modulo $p$.** Let $p$ be an odd prime, let $\tau_k$ be
+Let $p$ be an odd prime, let $\tau_k$ be
 the generalized tau function, and for an integer $r$ let $P(r) = r(3r - 1)/2$ be the generalized
 pentagonal number. For every integer $n \ge 0$,
 

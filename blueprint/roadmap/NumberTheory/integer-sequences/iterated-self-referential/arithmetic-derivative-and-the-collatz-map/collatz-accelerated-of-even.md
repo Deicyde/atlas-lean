@@ -1,6 +1,6 @@
 # The accelerated Collatz map on even numbers
 
-**The accelerated Collatz map on even numbers.** Let $C$ be the accelerated Collatz map and
+Let $C$ be the accelerated Collatz map and
 $T$ the Collatz map. For every even natural number $n$, $C(n) = T(n)$.
 
 ## Sources

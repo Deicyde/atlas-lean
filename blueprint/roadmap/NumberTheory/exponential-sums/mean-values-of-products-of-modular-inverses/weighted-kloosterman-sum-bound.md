@@ -1,6 +1,6 @@
 # Bound for a weighted Kloosterman-type sum
 
-**Bound for a weighted Kloosterman-type sum.** Let $n \ge 1$ and $k \ge 1$ be integers and let
+Let $n \ge 1$ and $k \ge 1$ be integers and let
 $m$ be a natural number coprime to $n$. Write $e_n(x) = e^{2\pi i x / n}$, and for $a$ coprime to
 $n$ let $\bar a \in \{0, \dots, n - 1\}$ be the inverse of $a$ modulo $n$. Then
 

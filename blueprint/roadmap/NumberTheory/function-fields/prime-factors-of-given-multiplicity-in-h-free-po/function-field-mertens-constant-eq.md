@@ -1,6 +1,6 @@
 # Series for the function field Mertens constant
 
-**Series for the function field Mertens constant.** For a finite field $F$ with $q$ elements,
+For a finite field $F$ with $q$ elements,
 the function field Mertens constant $B_1$ of $F$ equals
 
 $$\gamma + \sum_P \left(\log\left(1 - \frac{1}{|P|}\right) + \frac{1}{|P|}\right),$$

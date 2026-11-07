@@ -1,6 +1,6 @@
 # Generating function for the adjusted $(2,1)$-hook tableau counts
 
-**Generating function for the adjusted $(2,1)$-hook tableau counts.** Let $k$ be a natural
+Let $k$ be a natural
 number, and let $\mathrm{SYT}_k(2,1;n)$ be the number of standard Young tableaux with $n$ cells
 in the $(2,1)$-hook whose first two rows differ in length by $k$. Set
 $T_{n,k} = \mathrm{SYT}_k(2,1;n) + (-1)^{n+k+1}$ for $n \ge k$ and $T_{n,k} = 0$ for $n < k$, and

@@ -1,6 +1,6 @@
 # Embedding of base phi expansions into Zeckendorf expansions
 
-**Embedding of base phi expansions into Zeckendorf expansions.** Let $\varphi$ be the golden
+Let $\varphi$ be the golden
 ratio and let $F_j$ be the Fibonacci numbers, $F_0 = 0$, $F_1 = F_2 = 1$. For a natural number $M$
 let $Z(M)$ be the set of indices $i \ge 0$ such that $F_{i+2}$ occurs in the Zeckendorf
 representation of $M$, so that $M = \sum_{i \in Z(M)} F_{i+2}$. Let $N$ be a natural number, let

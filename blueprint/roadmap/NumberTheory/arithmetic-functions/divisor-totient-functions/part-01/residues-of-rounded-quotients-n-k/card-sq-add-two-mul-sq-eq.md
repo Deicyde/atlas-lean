@@ -1,6 +1,6 @@
 # Dickson's divisor formula for $x^2 + 2y^2$
 
-**Dickson's divisor formula for $x^2 + 2y^2$.** For every integer $n \ge 1$, the number of
+For every integer $n \ge 1$, the number of
 pairs $(x, y) \in \mathbb{Z}^2$ with $x^2 + 2y^2 = n$ equals
 $2\,(d_1(n) + d_3(n) - d_5(n) - d_7(n))$, where $d_r(n)$ denotes the number of positive divisors
 $d$ of $n$ with $d \equiv r \pmod 8$.

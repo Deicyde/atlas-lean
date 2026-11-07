@@ -1,6 +1,6 @@
 # Non-cyclotomic polynomial
 
-**Non-cyclotomic polynomial.** A polynomial $f \in \mathbb{Z}[x]$ is *non-cyclotomic* if
+A polynomial $f \in \mathbb{Z}[x]$ is *non-cyclotomic* if
 $f \ne \Phi_n$ for every positive integer $n$, where $\Phi_n$ denotes the $n$-th cyclotomic
 polynomial.
 

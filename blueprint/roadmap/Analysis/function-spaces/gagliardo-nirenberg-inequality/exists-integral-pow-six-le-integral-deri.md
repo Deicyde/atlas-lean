@@ -1,6 +1,6 @@
 # Sixth-power integral bounded by the Dirichlet energy under $L^2$ normalization
 
-**Sixth-power integral bounded by the Dirichlet energy under $L^2$ normalization.** There is
+There is
 a constant $C_2 > 0$ such that every infinitely differentiable, compactly supported function
 $u : \mathbb{R} \to \mathbb{R}$ with $\int_{\mathbb{R}} u(t)^2 \, dt = 1$ satisfies
 

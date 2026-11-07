@@ -1,6 +1,6 @@
 # Glue strings of a Gijswijt sequence
 
-**Glue strings of a Gijswijt sequence.** For natural numbers $m$ and $t$, the glue string
+For natural numbers $m$ and $t$, the glue string
 $S^{(m)}_t$ is the block $B^{(m)}_{t+1}$ of the $m$th order Gijswijt sequence with its first
 $(m+1)\,\beta^{(m)}(t)$ elements removed, where $\beta^{(m)}(t)$ is the length of the block
 $B^{(m)}_t$.

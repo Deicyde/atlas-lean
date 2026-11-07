@@ -1,6 +1,6 @@
 # Recursion for the coefficients of an S-polynomial
 
-**Recursion for the coefficients of an S-polynomial.** Write $s_k = s_{l,k}$ for the
+Write $s_k = s_{l,k}$ for the
 coefficient of $x^k$ in Zurita's polynomial $S_l$. For all natural numbers $k$ and $l$ with
 $k < l$,
 

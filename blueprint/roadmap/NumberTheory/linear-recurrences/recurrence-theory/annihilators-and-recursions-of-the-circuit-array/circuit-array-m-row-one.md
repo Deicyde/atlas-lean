@@ -1,6 +1,6 @@
 # Row 1 of the multivariable circuit array
 
-**Row 1 of the multivariable circuit array.** Let $C^M$ be the multivariable circuit array, with
+Let $C^M$ be the multivariable circuit array, with
 values in the field of rational functions over $\mathbb{Q}$ in the variables $X_0, X_1, \dots$.
 For every integer $s \ge 2$,
 $C^M_{1,s} = (9^{s-1} - 1 + X_1)/\bigl(3(X_1 + 3 \cdot 9^{s-2} - 1)\bigr)$.

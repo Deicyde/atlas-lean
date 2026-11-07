@@ -1,6 +1,6 @@
 # Excedance and cycle generating function of a permutation family
 
-**Excedance and cycle generating function of a permutation family.** Let $R$ be a
+Let $R$ be a
 commutative $\mathbb{Q}$-algebra, let $x, q \in R$, and for each $n$ let $P_n$ be a set of
 permutations of $\{0, 1, \dots, n-1\}$. The excedance and cycle exponential generating function
 of the family $(P_n)$ is the formal power series in $u$ over $R$

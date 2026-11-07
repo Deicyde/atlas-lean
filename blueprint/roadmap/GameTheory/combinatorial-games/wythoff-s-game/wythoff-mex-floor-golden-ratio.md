@@ -1,6 +1,6 @@
 # Golden-ratio formula for the mex sequences
 
-**Golden-ratio formula for the mex sequences.** Let $\ell \ge 1$, let $\varphi$ be the golden
+Let $\ell \ge 1$, let $\varphi$ be the golden
 ratio, let $K^\ell$ be Wythoff's game in which the positions $(x, y)$ with $x + y \le \ell$ are
 terminal, and let $(a_n)$ be the mex sequence of $K^\ell$ and $(b_n)$ its companion sequence.
 Then there are integers $\lambda_n$ for $n \ge 0$ and an integer $C$ with $|\lambda_n| \le C$

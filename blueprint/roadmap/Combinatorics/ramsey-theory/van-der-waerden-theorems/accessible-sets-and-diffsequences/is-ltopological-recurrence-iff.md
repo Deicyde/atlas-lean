@@ -1,6 +1,6 @@
 # Characterization of $\ell$-topological recurrence
 
-**Characterization of $\ell$-topological recurrence.** Let $\ell$ be a natural number and $D$
+Let $\ell$ be a natural number and $D$
 a set of natural numbers. Then $D$ is a set of $\ell$-topological recurrence if and only if every
 element of $D$ is positive and, for every compact metric space $X$, every minimal homeomorphism
 $T \colon X \to X$ and every nonempty open set $U \subseteq X$, there is $d \in D$ such that

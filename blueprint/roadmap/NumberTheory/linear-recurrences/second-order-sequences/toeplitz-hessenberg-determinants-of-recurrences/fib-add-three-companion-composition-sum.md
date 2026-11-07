@@ -1,6 +1,6 @@
 # Companion composition-sum formula for $F_{n+3}$
 
-**Companion composition-sum formula for $F_{n+3}$.** Let $F_k$ be the Fibonacci numbers. For
+Let $F_k$ be the Fibonacci numbers. For
 every $n \ge 1$,
 
 $$\frac{5}{9} F_{n+3} = \left(-\frac{1}{3}\right)^n \sum \prod_{i=1}^{r} (5 c_i - 10),$$

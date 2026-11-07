@@ -1,6 +1,6 @@
 # Uniqueness of the even-power shift in Catalan asymptotics
 
-**Uniqueness of the even-power shift in Catalan asymptotics.** Let
+Let
 $C_n = \binom{2n}{n} / (n + 1)$ be the $n$-th Catalan number. For a real number $\alpha$, there is
 a real sequence $(a_k)_{k \ge 0}$ with $a_{2k+1} = 0$ for every $k$ such that, for every
 $N \ge 0$, the difference

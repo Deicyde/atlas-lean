@@ -1,6 +1,6 @@
 # Routh's theorem
 
-**Routh's theorem.** Let $A, B, C$ be points of the Euclidean plane $\mathbb{R}^2$ whose
+Let $A, B, C$ be points of the Euclidean plane $\mathbb{R}^2$ whose
 triangle (the convex hull of $\{A, B, C\}$) has nonzero area, and let $x, y, z$ be positive
 reals with $xyz \ne 1$. Let $D = \frac{x}{x+1} B + \frac{1}{x+1} C$,
 $E = \frac{1}{y+1} A + \frac{y}{y+1} C$ and $F = \frac{z}{z+1} A + \frac{1}{z+1} B$, the

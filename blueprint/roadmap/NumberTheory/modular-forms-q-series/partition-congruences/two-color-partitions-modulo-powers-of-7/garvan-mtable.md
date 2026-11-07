@@ -1,6 +1,6 @@
 # Tabulated rows of Garvan's matrix
 
-**Tabulated rows of Garvan's matrix.** For $1 \le i \le 7$ and $j \ge 1$, the value at
+For $1 \le i \le 7$ and $j \ge 1$, the value at
 $(i, j)$ is the $j$-th entry of row $i$ in the list below, and $0$ if row $i$ has fewer than
 $j$ entries (row $i$ has $2i$ entries). The value is $0$ if $i = 0$, $j = 0$ or $i > 7$.
 

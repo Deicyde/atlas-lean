@@ -1,6 +1,6 @@
 # Prim's algorithm with an indexed binary heap
 
-**Prim's algorithm with an indexed binary heap.** Let $W$ be a linearly ordered type with a
+Let $W$ be a linearly ordered type with a
 zero element, let $W \cup \{\top\}$ be $W$ with a new greatest element $\top$ adjoined, let $D$
 be a directed adjacency structure on the vertices $0, \dots, n-1$, with vertex list $L$ and
 adjacency lists $A(u)$, let $w$ assign a weight $w(\{u, v\}) \in W$ to every unordered pair

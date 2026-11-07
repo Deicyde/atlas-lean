@@ -1,6 +1,6 @@
 # The literal routines of one clause of the cell-shift generator
 
-**The literal routines of one clause of the cell-shift generator.** Fix $V \in \mathbb{N}$, a
+Fix $V \in \mathbb{N}$, a
 situation $i < N$, a stack $k < K$, a clause kind $c$ with $n$ literals, positions
 $p : \mathbb{N} \to \mathbb{N}$, counter values $F$ whose scratch counters are $0$, and an output
 $o$. Suppose that for every $l$ the position $p(l)$ is the value under $F$ of the base counter of

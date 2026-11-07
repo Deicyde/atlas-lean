@@ -1,6 +1,6 @@
 # Induced wheels
 
-**Induced wheels.** A simple graph $G$ has an induced wheel if there are a natural
+A simple graph $G$ has an induced wheel if there are a natural
 number $\ell \ge 4$, distinct vertices $r_0, \dots, r_{\ell-1}$ of $G$ (the rim) and a vertex
 $h$ of $G$ (the hub) with $h \ne r_i$ for every $i$, such that for all $i, j < \ell$ the
 vertices $r_i$ and $r_j$ are adjacent in $G$ exactly when $i - j \equiv \pm 1 \pmod{\ell}$,

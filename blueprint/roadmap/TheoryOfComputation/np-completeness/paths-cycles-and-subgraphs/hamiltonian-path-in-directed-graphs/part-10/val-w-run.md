@@ -1,6 +1,6 @@
 # The witness check of the Hamiltonian-path verifier
 
-**The witness check of the Hamiltonian-path verifier.** Let $w$ and $acc$ be bit lists, and
+Let $w$ and $acc$ be bit lists, and
 let the stacks $St$ hold $w$ on the witness stack $W$ and the reverse of $acc$ on the save stack
 $Z$. Started at the label $\mathsf{vW}$ with any flag value, the verifier reaches within at most
 $2|w| + 1$ steps the label $\mathsf{vWb}$ if $w$ decodes as a vertex list (a sequence of unary

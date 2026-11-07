@@ -1,6 +1,6 @@
 # Some non-abelian one-relator group is an automorphism group
 
-**Some non-abelian one-relator group is an automorphism group.** There exist a natural number $n$
+There exist a natural number $n$
 and an element $r$ of the free group on generators $x_0, \dots, x_{n-1}$ such that the one-relator
 group $\langle x_0, \dots, x_{n-1} \mid r \rangle$ is non-abelian and is isomorphic to the
 automorphism group $\operatorname{Aut}(H)$ of some group $H$. This answers Kourovka Problem 16.75

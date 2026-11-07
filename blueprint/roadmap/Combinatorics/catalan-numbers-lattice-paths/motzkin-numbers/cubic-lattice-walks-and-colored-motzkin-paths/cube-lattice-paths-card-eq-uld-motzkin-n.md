@@ -1,6 +1,6 @@
 # Cubic lattice walks counted by a colored Motzkin number
 
-**Cubic lattice walks counted by a colored Motzkin number.** Let $n$ and $k$ be natural numbers,
+Let $n$ and $k$ be natural numbers,
 and let $e_0, \dots, e_n$ be the standard basis vectors of $\mathbb{Z}^{n+1}$. The number of walks
 of $k$ steps in the cubic lattice $\mathbb{Z}^{n+1}$ that start at the origin, each step being
 $+e_i$ or $-e_i$ for some $i \in \{0, \dots, n\}$, such that, counting only the steps in the last

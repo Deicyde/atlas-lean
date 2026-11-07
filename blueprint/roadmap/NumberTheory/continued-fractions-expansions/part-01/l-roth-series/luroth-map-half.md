@@ -1,6 +1,6 @@
 # The Lüroth map at 1/2
 
-**The Lüroth map at 1/2.** The Lüroth map $L$ sends $1/2$ to $1$: $L(1/2) = 1$.
+The Lüroth map $L$ sends $1/2$ to $1$: $L(1/2) = 1$.
 
 ## Sources
 

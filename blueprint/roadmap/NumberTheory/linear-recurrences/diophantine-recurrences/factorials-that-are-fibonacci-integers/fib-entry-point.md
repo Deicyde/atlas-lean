@@ -1,6 +1,6 @@
 # Entry point in the Fibonacci sequence
 
-**Entry point in the Fibonacci sequence.** The entry point (rank of apparition) $z(k)$ of a
+The entry point (rank of apparition) $z(k)$ of a
 natural number $k$ is the least $m > 0$ such that $k$ divides the Fibonacci number $F_m$, and
 $z(k) = 0$ if there is no such $m$.
 

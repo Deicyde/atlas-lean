@@ -1,6 +1,6 @@
 # Lebesgue integrals over truncations of a set
 
-**Lebesgue integrals over truncations of a set.** Let $\lambda$ be Lebesgue measure on
+Let $\lambda$ be Lebesgue measure on
 $\mathbb{R}$, let $S \subseteq \mathbb{R}$ be measurable, and let $g : \mathbb{R} \to [0, \infty]$
 be measurable. Then
 

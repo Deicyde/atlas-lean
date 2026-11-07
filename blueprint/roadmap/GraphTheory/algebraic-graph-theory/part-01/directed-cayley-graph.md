@@ -1,6 +1,6 @@
 # Cayley digraph
 
-**Cayley digraph.** Let $G$ be a set with a binary operation written as multiplication,
+Let $G$ be a set with a binary operation written as multiplication,
 and let $C \subseteq G$. The *Cayley digraph* $X(G, C)$ is the directed graph whose vertices
 are the elements of $G$, with an arc $u \to v$ exactly when $v = uc$ for some $c \in C$.
 

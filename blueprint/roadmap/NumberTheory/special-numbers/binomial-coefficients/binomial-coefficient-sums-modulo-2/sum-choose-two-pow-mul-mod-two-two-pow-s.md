@@ -1,6 +1,6 @@
 # Binomial parity sums at one less than a power of two
 
-**Binomial parity sums at one less than a power of two.** For all natural numbers $m$ and
+For all natural numbers $m$ and
 $\ell$, with $n = 2^\ell - 1$, the sum
 
 $$\sum_{k=0}^{n} \left( \binom{2^m k}{n + k} \binom{n}{k} \bmod 2 \right)$$

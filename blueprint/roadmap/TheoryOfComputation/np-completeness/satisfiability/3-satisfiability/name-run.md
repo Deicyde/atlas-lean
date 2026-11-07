@@ -1,6 +1,6 @@
 # Copying a renamed name
 
-**Copying a renamed name.** Write $\langle \ell, w, t, o, z, c\rangle$ for the configuration
+Write $\langle \ell, w, t, o, z, c\rangle$ for the configuration
 of the emitter machine at label $\ell$ with internal variable $w$, token stack $t$, output stack
 $o$, fresh counter $z$, output-clause count $c$ and empty scratch stacks. Let $l = (n, b)$ be a
 literal, $f$ and $v$ Booleans, $R$ a token stack whose top, if any, is not a bit symbol, $o$ an

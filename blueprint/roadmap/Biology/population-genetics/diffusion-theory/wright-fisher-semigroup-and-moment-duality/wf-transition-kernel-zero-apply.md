@@ -1,3 +1,3 @@
 # Wright–Fisher transitions at time zero are Dirac masses
 
-**Wright–Fisher transitions at time zero are Dirac masses.** Pointwise identity law for the transition kernel at time zero.
+Pointwise identity law for the transition kernel at time zero.

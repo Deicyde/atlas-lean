@@ -1,6 +1,6 @@
 # Second polygonal numbers count box paths with two long ascents
 
-**Second polygonal numbers count box paths with two long ascents.** Let $K \ge 4$ and
+Let $K \ge 4$ and
 $n \ge 1$. Then $n\bigl((K-2)n + (K-4)\bigr)$ is twice the number of $(K-3)$-box paths of size
 $n + 1$ with exactly two long ascents (maximal runs of at least two $U$ steps). Equivalently,
 the $n$th second $K$-gonal number $n\bigl((K-2)n + (K-4)\bigr)/2$, the $K$-gonal formula

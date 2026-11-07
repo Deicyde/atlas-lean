@@ -1,6 +1,6 @@
 # Removing the leftmost entry, with its cost
 
-**Removing the leftmost entry, with its cost.** Removing the leftmost entry of an interval
+Removing the leftmost entry of an interval
 tree $T$ returns nothing when $T$ is empty. When the root's left subtree is empty, it returns the
 root entry, the right subtree, and a cost of one node visit. Otherwise it removes the leftmost
 entry $m$ of the left subtree recursively (returning nothing if that fails), rebuilds the root

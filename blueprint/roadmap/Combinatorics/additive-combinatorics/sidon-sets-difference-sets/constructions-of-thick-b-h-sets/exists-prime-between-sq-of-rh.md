@@ -1,6 +1,6 @@
 # Dudek–Grenié–Molteni theorem
 
-**Dudek–Grenié–Molteni theorem.** Assume the Riemann Hypothesis. Then for every natural
+Assume the Riemann Hypothesis. Then for every natural
 number $n \ge 2$ there is a prime $p$ with
 $n^2 < p < \bigl(n + (1 + 1/\log n)^2 \log n\bigr)^2$, where $\log$ is the natural logarithm.
 

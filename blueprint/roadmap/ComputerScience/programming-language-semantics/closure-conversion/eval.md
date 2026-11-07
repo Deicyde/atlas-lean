@@ -1,6 +1,6 @@
 # Big-step semantics of the closure-conversion source
 
-**Big-step semantics of the closure-conversion source.** Evaluation
+Evaluation
 $\rho \vdash t \Downarrow v$ of a raw term $t$ to a source value $v$ in an environment $\rho$ (a
 list of source values, where variable $n$ refers to the entry of $\rho$ at index $n$, counting
 from $0$) is the least relation closed under the following rules, a call-by-value environment

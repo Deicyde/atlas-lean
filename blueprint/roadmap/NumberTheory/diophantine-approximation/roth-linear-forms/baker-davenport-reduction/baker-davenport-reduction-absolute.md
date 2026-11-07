@@ -1,6 +1,6 @@
 # Baker–Davenport reduction lemma, absolute-value form
 
-**Baker–Davenport reduction lemma, absolute-value form.** For a real number $x$ write
+For a real number $x$ write
 $\lVert x \rVert = |x - \operatorname{round}(x)|$ for the distance from $x$ to a nearest integer.
 Let $M$ be a positive integer and $\kappa$ an irrational real number, and let $q$ be the
 denominator of the $j$-th convergent of the continued fraction of $\kappa$ for some natural number

@@ -1,6 +1,6 @@
 # The binomial array at $(4, 2)$
 
-**The binomial array at $(4, 2)$.** For the parameters
+For the parameters
 $(\alpha, \beta, \gamma; \alpha', \beta', \gamma') = (0, 0, 1; 0, 0, 1)$ of the binomial
 coefficients (Table 1), the triangular array $a$ satisfies $a_{4,2} = 6$.
 

@@ -1,6 +1,6 @@
 # Fixed tilings of the odd square torus under a three-quarter turn
 
-**Fixed tilings of the odd square torus under a three-quarter turn.** Let $n$ be an odd
+Let $n$ be an odd
 positive integer, $T$ a finite set of tile designs and $\sigma$ a permutation of $T$ with
 $\sigma^4 = 1$, and write $t_1$ for the number of designs $d \in T$ with $\sigma(d) = d$. Let $S$
 be the torus shift sum of the three-quarter-turn cell map $r^3(x, y) = (y, -1-x)$ on

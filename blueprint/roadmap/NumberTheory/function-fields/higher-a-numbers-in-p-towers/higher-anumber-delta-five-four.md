@@ -1,6 +1,6 @@
 # Two values of $\delta$ for $p = 5$ and $d = 4$
 
-**Two values of $\delta$ for $p = 5$ and $d = 4$.** For $p = 5$ and $d = 4$, so that
+For $p = 5$ and $d = 4$, so that
 $\tau = (p + 1)/d = 3/2$, the rounding indicator satisfies $\delta(1) = 1$ and $\delta(2) = 0$.
 
 ## Sources

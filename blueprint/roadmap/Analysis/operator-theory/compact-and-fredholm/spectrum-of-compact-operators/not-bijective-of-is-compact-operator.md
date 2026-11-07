@@ -1,6 +1,6 @@
 # A compact operator on an infinite-dimensional Banach space is not bijective
 
-**A compact operator on an infinite-dimensional Banach space is not bijective.** Let $E$ be an
+Let $E$ be an
 infinite-dimensional Banach space over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $T$ be a
 compact bounded linear operator on $E$. Then $T$ is not bijective.
 

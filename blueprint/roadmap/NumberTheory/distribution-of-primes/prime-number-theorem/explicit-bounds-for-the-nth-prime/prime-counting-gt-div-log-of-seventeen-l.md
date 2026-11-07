@@ -1,6 +1,6 @@
 # The Rosser–Schoenfeld lower bound $x / \log x$ for the prime-counting function
 
-**The Rosser–Schoenfeld lower bound $x / \log x$ for the prime-counting function.** For every
+For every
 real number $x \ge 17$, the number $\pi(x)$ of primes at most $x$ satisfies
 $x / \log x < \pi(x)$.
 

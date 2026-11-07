@@ -1,6 +1,6 @@
 # Square-weighted zero-sum free unit triples modulo even powers of two
 
-**Square-weighted zero-sum free unit triples modulo even powers of two.** Let $r$ be a nonzero
+Let $r$ be a nonzero
 even natural number, and let $x_1, x_2, x_3$ be units of $\mathbb{Z}_{2^r}$ that are each
 congruent to $1$ modulo $4$. Write $S(2^r)$ for the set of nonzero squares in $\mathbb{Z}_{2^r}$.
 Then $(x_1, x_2, x_3)$ has no $S(2^r)$-weighted zero-sum subsequence: there are no non-empty set

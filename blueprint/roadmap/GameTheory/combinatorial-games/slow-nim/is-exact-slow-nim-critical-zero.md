@@ -1,6 +1,6 @@
 # The empty position is $0$-critical
 
-**The empty position is $0$-critical.** Let $k$ be a natural number and let
+Let $k$ be a natural number and let
 $\mathrm{NIM}(k + 1, k)$ be Slow$A$-Nim on $k + 1$ piles with $A = \{k\}$, in which a move
 chooses a nonempty set of exactly $k$ nonempty piles and removes one stone from each. The
 position $x$ of $\mathrm{NIM}(k + 1, k)$ in which all $k + 1$ piles are empty is $0$-critical:

@@ -1,6 +1,6 @@
 # Hyper-Fibonacci numbers as partial sums
 
-**Hyper-Fibonacci numbers as partial sums.** For all natural numbers $r$ and $n$, the
+For all natural numbers $r$ and $n$, the
 hyper-Fibonacci numbers $F^{(r)}_n$ satisfy $F^{(r+1)}_n = \sum_{k=0}^{n} F^{(r)}_k$.
 
 ## Sources

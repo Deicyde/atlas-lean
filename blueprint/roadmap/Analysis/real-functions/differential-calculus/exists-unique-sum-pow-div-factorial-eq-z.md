@@ -1,6 +1,6 @@
 # Odd Taylor polynomials of the exponential have exactly one real zero
 
-**Odd Taylor polynomials of the exponential have exactly one real zero.** For every odd
+For every odd
 positive integer $n$, the polynomial $1+x+x^2/2!+\cdots+x^n/n!$ has exactly one real zero.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Permutiple strings
 
-**Permutiple strings.** Let $n$ and $b$ be natural numbers, and for natural numbers
+Let $n$ and $b$ be natural numbers, and for natural numbers
 $a_0, \dots, a_k$ write $(a_k, \dots, a_0)_b = \sum_{j=0}^{k} a_j b^j$. A string $s$ of inputs
 (pairs of natural numbers) is an $(n, b)$-permutiple string when it belongs to the language $L$ of
 the $(n, b)$-Hoey-Sloane machine and there are a natural number $k$, natural numbers

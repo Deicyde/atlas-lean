@@ -1,6 +1,6 @@
 # Density in the Dirichlet norm
 
-**Density in the Dirichlet norm.** A set $S$ of elements of the Dirichlet space $\mathcal{D}$
+A set $S$ of elements of the Dirichlet space $\mathcal{D}$
 is dense in the Dirichlet norm when for every $u \in \mathcal{D}$ and every real $\varepsilon > 0$
 there is $h \in S$ with
 

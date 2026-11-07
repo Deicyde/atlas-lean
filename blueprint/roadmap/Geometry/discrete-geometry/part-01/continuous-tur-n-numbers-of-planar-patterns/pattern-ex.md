@@ -1,6 +1,6 @@
 # 0-1 matrix extremal function of a point pattern
 
-**0-1 matrix extremal function of a point pattern.** For a natural number $n$ and a set
+For a natural number $n$ and a set
 $P \subseteq \mathbb{R}^2$, $\mathrm{ex}(n, M_P)$ is the largest number of cells of the
 $n \times n$ grid $\{0, \dots, n - 1\}^2$ forming a set that does not contain $P$ (cells contain
 $P$ when there are strictly increasing maps from the $x$-coordinates of $P$ to columns and from the

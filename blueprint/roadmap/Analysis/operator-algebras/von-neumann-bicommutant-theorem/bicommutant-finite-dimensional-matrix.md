@@ -1,6 +1,6 @@
 # Finite-dimensional bicommutant theorem
 
-**Finite-dimensional bicommutant theorem.** Let $n$ be a natural number and let $S$ be a
+Let $n$ be a natural number and let $S$ be a
 unital $*$-subalgebra of the algebra $M_n(\mathbb{C})$ of complex $n \times n$ matrices. Then the
 commutant of the commutant of $S$ equals $S$: a matrix commutes with every matrix that commutes
 with all elements of $S$ if and only if it lies in $S$.

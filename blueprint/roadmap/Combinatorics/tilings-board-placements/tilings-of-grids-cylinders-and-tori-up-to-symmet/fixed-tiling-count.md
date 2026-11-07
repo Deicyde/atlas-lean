@@ -1,6 +1,6 @@
 # Number of fixed tilings
 
-**Number of fixed tilings.** Let $\alpha$ (the cells) and $T$ (the tile designs) be finite sets,
+Let $\alpha$ (the cells) and $T$ (the tile designs) be finite sets,
 let $\varphi : \alpha \to \alpha$ be a map and let $\sigma$ be a permutation of $T$. The number of
 tilings fixed by $(\varphi, \sigma)$ is the number of maps $F : \alpha \to T$ such that
 $F(\varphi(c)) = \sigma(F(c))$ for every $c \in \alpha$.

@@ -1,6 +1,6 @@
 # The pointwise derived comparison is the component of the natural one
 
-**The pointwise derived comparison is the component of the natural one.** Let $X$ be a
+Let $X$ be a
 topological space with a CW complex structure on all of $X$, regarded as an object of the category
 of spaces admitting a CW structure, and let $\mathbb{Z}[X]$ be the free light condensed abelian
 group on $X$. Let $F$ be the derived solidification functor on spaces admitting a CW structure,

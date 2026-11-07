@@ -1,6 +1,6 @@
 # Lidskii–Last theorem
 
-**Lidskii–Last theorem.** Let $A$ and $B$ be Hermitian complex square matrices indexed by a
+Let $A$ and $B$ be Hermitian complex square matrices indexed by a
 finite set with $N$ elements, and list the eigenvalues of $A$ and of $B$, each with multiplicity
 and in decreasing order, as $\alpha_1 \ge \dots \ge \alpha_N$ and $\beta_1 \ge \dots \ge \beta_N$.
 Then

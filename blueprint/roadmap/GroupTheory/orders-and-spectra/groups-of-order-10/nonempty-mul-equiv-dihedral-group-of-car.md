@@ -1,6 +1,6 @@
 # Noncyclic groups of order 10 are dihedral
 
-**Noncyclic groups of order 10 are dihedral.** Every finite group of order $10$ that is not
+Every finite group of order $10$ that is not
 cyclic is isomorphic to the dihedral group $D_5$ of order $10$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Gleason's theorem for separable Hilbert spaces
 
-**Gleason's theorem for separable Hilbert spaces.** Let $H$ be a separable complex Hilbert
+Let $H$ be a separable complex Hilbert
 space whose dimension over $\mathbb{C}$ is at least $3$, and let $f$ be a frame function on the
 unit sphere of $H$. Then there is a positive continuous linear operator $\rho$ on $H$ such that
 $f(x) = \operatorname{Re} \langle x, \rho x \rangle$ for every unit vector $x$ in $H$.

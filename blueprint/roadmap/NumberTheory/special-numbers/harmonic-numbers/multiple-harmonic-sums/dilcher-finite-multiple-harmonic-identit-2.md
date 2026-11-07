@@ -1,6 +1,6 @@
 # Dilcher's finite multiple harmonic identity
 
-**Dilcher's finite multiple harmonic identity.** For all positive integers $m$ and $n$,
+For all positive integers $m$ and $n$,
 
 $$
 \sum_{k=1}^{n} \frac{(-1)^{k-1} \binom{n}{k}}{k^m}

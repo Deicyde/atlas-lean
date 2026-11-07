@@ -1,6 +1,6 @@
 # Real quadratic irrationals
 
-**Real quadratic irrationals.** A real number $x$ is a real quadratic irrational if it is
+A real number $x$ is a real quadratic irrational if it is
 integral (equivalently, algebraic) over $\mathbb{Q}$ and its minimal polynomial over $\mathbb{Q}$
 has degree $2$.
 

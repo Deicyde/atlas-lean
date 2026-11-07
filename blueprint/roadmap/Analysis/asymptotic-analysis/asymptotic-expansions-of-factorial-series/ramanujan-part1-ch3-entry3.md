@@ -1,6 +1,6 @@
 # Ramanujan's asymptotic expansion of a factorial series
 
-**Ramanujan's asymptotic expansion of a factorial series.** Let $x$ be a nonzero complex
+Let $x$ be a nonzero complex
 number. For natural numbers $j$ let
 $f(x, j) = e^{-x} \sum_{k=0}^{\infty} \frac{(k+1)^j x^{k+1}}{k!}$, and for complex $z$ let
 $\psi(x, z) = \sum_{j=0}^{\infty} t_j$, where

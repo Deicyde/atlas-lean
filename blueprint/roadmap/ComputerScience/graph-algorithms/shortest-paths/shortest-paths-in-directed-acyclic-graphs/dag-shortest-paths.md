@@ -1,6 +1,6 @@
 # Shortest paths in a DAG with a topology check
 
-**Shortest paths in a DAG with a topology check.** Given a list $E$ of integer-weighted edges
+Given a list $E$ of integer-weighted edges
 on the vertices $0, \dots, n-1$ and a source $s$, run Kahn's topological sort on the directed graph
 obtained from $E$ by forgetting weights. If it succeeds with order $\sigma$, start from distance
 $0$ at $s$ and $\infty$ elsewhere, relax the outgoing edge occurrences of each vertex in the order

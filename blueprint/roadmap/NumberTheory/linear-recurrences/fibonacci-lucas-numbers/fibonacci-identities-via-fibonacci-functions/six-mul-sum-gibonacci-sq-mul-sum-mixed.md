@@ -1,6 +1,6 @@
 # Mixed Melham-type sum for two gibonacci sequences
 
-**Mixed Melham-type sum for two gibonacci sequences.** Let $F_m$ be the Fibonacci numbers
+Let $F_m$ be the Fibonacci numbers
 ($F_0 = 0$, $F_1 = 1$, $F_{m+2} = F_{m+1} + F_m$), and let $G, H \colon \mathbb{Z} \to \mathbb{R}$
 satisfy $G_{j+2} = G_{j+1} + G_j$ and $H_{j+2} = H_{j+1} + H_j$ for every integer $j$. Then for
 every natural number $n$ and all integers $k$, $r$,

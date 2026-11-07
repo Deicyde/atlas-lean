@@ -1,6 +1,6 @@
 # Genocchi numbers via Stirling numbers of the second kind
 
-**Genocchi numbers via Stirling numbers of the second kind.** For every natural number
+For every natural number
 $n \ge 1$, the Genocchi number $G_n$ satisfies, in $\mathbb{Q}$,
 
 $$

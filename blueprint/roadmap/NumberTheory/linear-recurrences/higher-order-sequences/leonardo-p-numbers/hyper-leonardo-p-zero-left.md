@@ -1,6 +1,6 @@
 # Hyper Leonardo $p$-numbers at $n = 0$
 
-**Hyper Leonardo $p$-numbers at $n = 0$.** For all natural numbers $p$ and $k$, the hyper
+For all natural numbers $p$ and $k$, the hyper
 Leonardo $p$-number $\mathcal{L}^{(k)}_{p,0}$ equals $1$.
 
 ## Sources

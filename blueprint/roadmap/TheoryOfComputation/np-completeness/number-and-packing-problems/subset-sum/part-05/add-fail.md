@@ -1,6 +1,6 @@
 # The verifier rejects an unterminated chosen block
 
-**The verifier rejects an unterminated chosen block.** Let $r$ be a bit list from whose front no
+Let $r$ be a bit list from whose front no
 complete self-delimiting block can be parsed, let $c$ and $z$ be bits, and let $u$ be a bit list.
 Start the SUBSET-SUM verifier machine at the label that adds a chosen number with carry $c$ and
 flag $z$ (the flag records whether the bits of the block read so far end in false), with any value

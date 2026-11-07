@@ -1,6 +1,6 @@
 # Unique boundary pair for Göbel sequences when $p \equiv 1 \pmod 4$
 
-**Unique boundary pair for Göbel sequences when $p \equiv 1 \pmod 4$.** Let $g_{k,l}$ denote
+Let $g_{k,l}$ denote
 the $(k, l)$-Göbel sequence and let $p \ge 13$ be a prime with $p \equiv 1 \pmod 4$. Then there
 is exactly one pair $(l_L, l_R)$ of even natural numbers with $2 \le l_L < l_R \le p-1$ such
 that, for every even natural number $l < p$, the $p$-adic valuation of $g_{(p-1)/2,\,l}(p)$ is

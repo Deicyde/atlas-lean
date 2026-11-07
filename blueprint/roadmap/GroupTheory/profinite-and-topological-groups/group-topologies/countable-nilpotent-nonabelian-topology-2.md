@@ -1,6 +1,6 @@
 # A countable nilpotent group with modular lattice of group topologies
 
-**A countable nilpotent group with modular lattice of group topologies.** It is not the case that
+It is not the case that
 for every countably infinite non-abelian nilpotent group $G$ the lattice of all (not necessarily
 Hausdorff) group topologies on $G$ is not modular; that is, some countably infinite non-abelian
 nilpotent group has a modular lattice of group topologies.

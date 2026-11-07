@@ -1,6 +1,6 @@
 # The periodic sign sequence $b_{l,s}$
 
-**The periodic sign sequence $b_{l,s}$.** For natural numbers $l$ and $s$, a function
+For natural numbers $l$ and $s$, a function
 $b : \mathbb{Z} \to \mathbb{Z}$ is a $b_{l,s}$-sequence when all of the following hold:
 $b(n) \in \{1, -1\}$ for every integer $n$; $b(n + l + 1) = b(n)$ for every integer $n$;
 $b(1) = 1$; $b(n) = -b(l+1-n)$ for every integer $n$ not divisible by $l+1$; and

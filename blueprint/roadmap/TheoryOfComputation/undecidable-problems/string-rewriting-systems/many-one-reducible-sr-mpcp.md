@@ -1,6 +1,6 @@
 # Reachability with nonempty sides many-one reduces to MPCP with nonempty words
 
-**Reachability with nonempty sides many-one reduces to MPCP with nonempty words.** Let
+Let
 $\alpha$ be an alphabet with a primitive recursive coding, and let $\alpha'$ be $\alpha$ extended
 with two new symbols, the star and the end marker. There is a computable function $f$ from
 instances $(R, x, y)$ of the reachability problem over $\alpha$, where $R$ is a list of rewriting

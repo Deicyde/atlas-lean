@@ -1,6 +1,6 @@
 # Run of the code-clause chain of the accept generator
 
-**Run of the code-clause chain of the accept generator.** Let $F$ assign values to the
+Let $F$ assign values to the
 counters of the accept generator (for layout $L$ and parameters $n_1$, $\mathrm{ac}$, $k_1$,
 $\mathrm{ea}$) such that the scratch counters $Q$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$
 are $0$, $F(\mathrm{Vc}) = V$, $F(P) = 0$ and $F(\mathrm{TW}) + n_1 \le V$. Then for every

@@ -1,6 +1,6 @@
 # Binomial sum formula for Fibonacci p-numbers
 
-**Binomial sum formula for Fibonacci p-numbers.** For all natural numbers $p \ge 1$ and $n$,
+For all natural numbers $p \ge 1$ and $n$,
 the Fibonacci $p$-numbers $F_p$ satisfy
 
 $$F_p(n+1) = \sum_{i=0}^{\lfloor n/(p+1) \rfloor} \binom{n-ip}{i}.$$

@@ -1,6 +1,6 @@
 # Skolem–Noether theorem
 
-**Skolem–Noether theorem.** Let $k$ be a field and let $A$ be a finite-dimensional central
+Let $k$ be a field and let $A$ be a finite-dimensional central
 simple algebra over $k$. Then every $k$-algebra automorphism $\sigma$ of $A$ is inner: there is
 a unit $u \in A^\times$ such that $\sigma(x) = u x u^{-1}$ for all $x \in A$.
 

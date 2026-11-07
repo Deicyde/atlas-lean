@@ -1,6 +1,6 @@
 # A multiplicative function with prescribed prime-power values
 
-**A multiplicative function with prescribed prime-power values.** Let $R$ be a
+Let $R$ be a
 commutative monoid with zero, let $g : \mathbb{N} \to R$, and let $f$ be a multiplicative
 arithmetic function with values in $R$. If $f(p^m) = g(m)$ for every prime $p$ and every
 $m \ge 1$, then $f$ is the multiplicative function with prime-power values $g$, that is, the

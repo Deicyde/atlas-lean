@@ -1,6 +1,6 @@
 # Fixed points of a Moebius dual branch
 
-**Fixed points of a Moebius dual branch.** Let $\beta, \gamma, \eta$ be real numbers with
+Let $\beta, \gamma, \eta$ be real numbers with
 $\beta \ne 2$ and $3 - 2\beta + (2 - \beta)\eta \ne 0$. Then
 $(-2 + 2\beta + \gamma + (-1 + \beta + \gamma)\eta)/(3 - 2\beta + (2 - \beta)\eta) = \eta$
 if and only if $\eta = -1$ or $\eta = (-2 + 2\beta + \gamma)/(2 - \beta)$.

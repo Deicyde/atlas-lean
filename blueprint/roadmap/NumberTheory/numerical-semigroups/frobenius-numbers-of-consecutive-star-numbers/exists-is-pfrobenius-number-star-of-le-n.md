@@ -1,6 +1,6 @@
 # Frobenius numbers of three consecutive star numbers for $6 \le n \le 9$
 
-**Frobenius numbers of three consecutive star numbers for $6 \le n \le 9$.** Write $S_m$ for
+Write $S_m$ for
 the $m$-th star number $6m(m-1)+1$. For natural numbers $n$ and $p$ with $6 \le n \le 9$ and
 $p \in \{0, 1, 2\}$, there is a natural number $g$ such that at most $p$ triples $(x, y, z)$ of
 natural numbers satisfy $x S_n + y S_{n+1} + z S_{n+2} = g$, every natural number larger than

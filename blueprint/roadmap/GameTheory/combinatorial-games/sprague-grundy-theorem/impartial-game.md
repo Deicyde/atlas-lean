@@ -1,6 +1,6 @@
 # Impartial game
 
-**Impartial game.** An impartial game consists of a type of positions, a starting position,
+An impartial game consists of a type of positions, a starting position,
 for each position $p$ a finite set of positions reachable from $p$ in one move, and a rank
 function assigning a natural number to each position such that every move strictly decreases the
 rank: if $q$ is reachable from $p$ in one move, then $\mathrm{rank}(q) < \mathrm{rank}(p)$.

@@ -1,6 +1,6 @@
 # Toeplitz–Hessenberg determinant
 
-**Toeplitz–Hessenberg determinant.** Let $R$ be a commutative ring, let $a_0, a_1, a_2, \dots$
+Let $R$ be a commutative ring, let $a_0, a_1, a_2, \dots$
 be elements of $R$ and let $n \ge 0$. The Toeplitz–Hessenberg determinant $\det A_n$ is the
 determinant of the $n \times n$ matrix $A_n = A_n(a_0; a_1, \dots, a_n)$ whose entry in row $i$
 and column $j$ ($0 \le i, j < n$) is $a_{i+1-j}$ if $j \le i + 1$ and $0$ otherwise. Thus $a_0$

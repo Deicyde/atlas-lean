@@ -1,6 +1,6 @@
 # Jacobi theta product with vanishing first argument
 
-**Jacobi theta product with vanishing first argument.** Write
+Write
 $(a; q)_\infty = \prod_{n \ge 0} (1 - a q^n)$ for the infinite $q$-Pochhammer symbol and
 $j(x; q) = (x; q)_\infty \, (q/x; q)_\infty \, (q; q)_\infty$ for the product-form Jacobi theta
 function. For every complex number $q$ with $|q| < 1$, $j(0; q) = (q; q)_\infty$.

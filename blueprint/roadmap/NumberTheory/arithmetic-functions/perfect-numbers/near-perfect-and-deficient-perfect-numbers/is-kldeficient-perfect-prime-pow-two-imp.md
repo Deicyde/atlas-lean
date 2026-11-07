@@ -1,6 +1,6 @@
 # $(2,\ell)$-deficient-perfect prime powers (corrected)
 
-**$[2,\ell]$-deficient-perfect prime powers (corrected).** Let $p$ be a prime and let $a$ and
+Let $p$ be a prime and let $a$ and
 $\ell$ be natural numbers. If $p^a$ is $[2,\ell]$-deficient-perfect, then $\ell = 1$, and either
 $a = 2$, or $p = 2$ and $a = 1$.
 

@@ -1,6 +1,6 @@
 # Sum of squared digits in a negative base
 
-**Sum of squared digits in a negative base.** Let $b \le -2$ be an integer. Every integer $a$
+Let $b \le -2$ be an integer. Every integer $a$
 has an expansion $a = \sum_{i=0}^{n} a_i b^i$ with digits $0 \le a_i \le |b| - 1$, unique up to
 leading zero digits, and $S_{2,b}(a) = \sum_{i=0}^{n} a_i^2$ is the sum of the squares of these
 digits. The digits are produced from the least significant one by taking $a_0 = a \bmod b$ and

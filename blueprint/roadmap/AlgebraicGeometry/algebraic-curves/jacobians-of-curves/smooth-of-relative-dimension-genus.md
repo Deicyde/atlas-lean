@@ -1,6 +1,6 @@
 # The Jacobian has dimension equal to the genus
 
-**The Jacobian has dimension equal to the genus.** Let $C$ be a proper, smooth, geometrically
+Let $C$ be a proper, smooth, geometrically
 irreducible curve over a field $k$. The Jacobian $J(C)$ is smooth of relative dimension $g$ over
 $k$, where $g$ is the genus of $C$.
 

@@ -1,6 +1,6 @@
 # Membership in the positive Fibonacci set
 
-**Membership in the positive Fibonacci set.** Write $F_n$ for the $n$-th Fibonacci number,
+Write $F_n$ for the $n$-th Fibonacci number,
 with $F_0 = 0$ and $F_1 = 1$. A natural number $d$ belongs to the positive Fibonacci set if and
 only if $d = F_n$ for some natural number $n \ge 2$.
 

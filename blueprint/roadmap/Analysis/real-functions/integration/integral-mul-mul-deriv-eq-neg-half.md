@@ -1,6 +1,6 @@
 # The integral of $x f(x) f'(x)$ equals $-1/2$
 
-**The integral of $x f(x) f'(x)$ equals $-1/2$.** Let $a\lt b$ and let
+Let $a\lt b$ and let
 $f : \mathbb{R} \to \mathbb{R}$ be continuously differentiable on $[a,b]$ with $f(a)=f(b)=0$ and
 
 $$

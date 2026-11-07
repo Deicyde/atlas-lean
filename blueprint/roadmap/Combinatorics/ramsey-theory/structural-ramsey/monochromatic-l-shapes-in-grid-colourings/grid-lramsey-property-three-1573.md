@@ -1,6 +1,6 @@
 # Three-coloring the 1573 × 1573 grid forces a monochromatic L
 
-**Three-coloring the 1573 × 1573 grid forces a monochromatic L.** Write
+Write
 $[n] = \{1, \dots, n\}$. Every coloring of the grid $[1573] \times [1573]$ with $3$ colors contains
 a monochromatic L: positive integers $x$, $y$, $d$ with $x + d \le 1573$ and $y + d \le 1573$ such
 that the points $(x, y)$, $(x + d, y)$ and $(x + d, y + d)$ have the same color. Equivalently,

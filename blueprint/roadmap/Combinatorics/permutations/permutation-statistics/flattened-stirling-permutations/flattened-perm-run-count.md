@@ -1,6 +1,6 @@
 # Flattened partitions counted by runs
 
-**Flattened partitions counted by runs.** For natural numbers $n$ and $k$, $f_{n,k}$ is the
+For natural numbers $n$ and $k$, $f_{n,k}$ is the
 number of permutations $\sigma$ of $\{0, 1, \dots, n - 1\}$ such that the word
 $\sigma(0) \sigma(1) \cdots \sigma(n - 1)$ is flattened (the leading letters of its runs, read
 left to right, are weakly increasing) and has exactly $k$ runs, where a run is a maximal

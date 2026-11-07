@@ -1,6 +1,6 @@
 # Divisibility by $2$ from the residue modulo $2$
 
-**Divisibility by $2$ from the residue modulo $2$.** If the residue modulo $2$ of a $2$-adic
+If the residue modulo $2$ of a $2$-adic
 integer $y \in \mathbb{Z}_2$ is zero, then $2$ divides $y$ in $\mathbb{Z}_2$.
 
 ## Sources

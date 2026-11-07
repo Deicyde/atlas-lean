@@ -1,6 +1,6 @@
 # Recurrence for permutations counted by cycles and fixed points
 
-**Recurrence for permutations counted by cycles and fixed points.** Write $a(n, k, j)$ for the
+Write $a(n, k, j)$ for the
 number of permutations of an $n$-element set with exactly $k$ cycles (fixed points counted as
 cycles of length one) and exactly $j$ fixed points. For all natural numbers $n$, $k$ and $j$
 with $1 \le j \le k$, $j \, a(n, k, j) = n \, a(n - 1, k - 1, j - 1)$, where $n - 1$ is read as

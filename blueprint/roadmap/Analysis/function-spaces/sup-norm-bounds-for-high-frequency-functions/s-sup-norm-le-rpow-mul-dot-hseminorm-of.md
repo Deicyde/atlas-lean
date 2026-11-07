@@ -1,6 +1,6 @@
 # Sup bound for Schwartz functions with high-frequency Fourier support
 
-**Sup bound for Schwartz functions with high-frequency Fourier support.** Let
+Let
 $s \in (\tfrac12, 1]$, and for a Schwartz function $f : \mathbb{R} \to \mathbb{C}$ with Fourier
 transform $\hat f$ let
 $\|f\|_{\dot H^s} = \left( \int_{\mathbb{R}} |\xi|^{2s} |\hat f(\xi)|^2 \, d\xi \right)^{1/2}$

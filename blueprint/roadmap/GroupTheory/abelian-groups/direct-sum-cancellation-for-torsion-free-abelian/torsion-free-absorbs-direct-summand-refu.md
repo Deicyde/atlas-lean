@@ -1,6 +1,6 @@
 # Failure of direct-summand absorption for torsion-free abelian groups
 
-**Failure of direct-summand absorption for torsion-free abelian groups.** There exist torsion-free
+There exist torsion-free
 abelian groups $A$, $B$, $C$ with $A \cong A \oplus B \oplus C$ but $A \not\cong A \oplus B$; thus
 the answer to Kourovka Problem 17.21(a) is negative.
 

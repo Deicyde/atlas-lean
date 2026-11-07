@@ -1,6 +1,6 @@
 # Restricted period of a Lucas sequence modulo 1
 
-**Restricted period of a Lucas sequence modulo 1.** For every Lucas sequence $U = U(P, Q)$,
+For every Lucas sequence $U = U(P, Q)$,
 the least restricted period $\rho_U(1)$ of $U$ modulo $1$ equals $1$.
 
 ## Sources

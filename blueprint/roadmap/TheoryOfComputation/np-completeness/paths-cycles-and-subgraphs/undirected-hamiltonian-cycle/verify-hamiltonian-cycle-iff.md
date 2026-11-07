@@ -1,6 +1,6 @@
 # Acceptance condition of the Hamiltonian-cycle verifier
 
-**Acceptance condition of the Hamiltonian-cycle verifier.** Let $x$ and $y$ be bit strings,
+Let $x$ and $y$ be bit strings,
 $m = \lfloor \sqrt{|x|} \rfloor$, and $w$ the least natural number with $m \le 2^w$. For each $i$
 let $d_i$ be the number whose binary digits, least significant first, are the bits of $y$ at
 positions $iw, \dots, iw + w - 1$ (counting from $0$; positions past the end of $y$ are

@@ -1,6 +1,6 @@
 # Translation and reflection identities for $b_{l,s}$
 
-**Translation and reflection identities for $b_{l,s}$.** Let $l \ge 2$ be an even natural
+Let $l \ge 2$ be an even natural
 number and $s \le l$ a natural number such that $2s + 1$ and $l + 1$ are coprime, let
 $b : \mathbb{Z} \to \mathbb{Z}$ satisfy the defining conditions of $b_{l,s}$, and write
 $t = l/2 - s$. Then the following hold. (a) For every integer $n$ such that neither $n$ nor

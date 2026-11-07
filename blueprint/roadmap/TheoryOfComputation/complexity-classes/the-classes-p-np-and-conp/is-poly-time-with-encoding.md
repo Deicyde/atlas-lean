@@ -1,6 +1,6 @@
 # Polynomial-time computability under given encodings
 
-**Polynomial-time computability under given encodings.** Let $e_\alpha$ encode $\alpha$ as
+Let $e_\alpha$ encode $\alpha$ as
 words over an alphabet $\Gamma_\alpha$ and $e_\beta$ encode $\beta$ as words over $\Gamma_\beta$. A
 function $f : \alpha \to \beta$ is polynomial-time computable with respect to $e_\alpha$ and
 $e_\beta$ when there are a multi-stack Turing machine with finitely many stacks, function labels

@@ -1,6 +1,6 @@
 # The zeroth (-r)-Fibonacci polynomial
 
-**The zeroth (-r)-Fibonacci polynomial.** For every commutative ring $A$, natural number
+For every commutative ring $A$, natural number
 $r$, $x \in A$ and unit $y$ of $A$, the $(-r)$-Fibonacci polynomial satisfies
 $U^{(-r)}_0(x, y) = 0$.
 

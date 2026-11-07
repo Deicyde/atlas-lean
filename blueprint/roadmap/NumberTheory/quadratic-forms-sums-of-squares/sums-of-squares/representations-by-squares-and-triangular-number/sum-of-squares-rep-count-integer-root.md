@@ -1,6 +1,6 @@
 # Integer zeros of the sums-of-squares counting polynomial
 
-**Integer zeros of the sums-of-squares counting polynomial.** For an integer $k$ and $n \ge 0$,
+For an integer $k$ and $n \ge 0$,
 let $r_k(n)$ be the coefficient of $q^n$ in $\theta(q)^k$, where $\theta$ is the square theta
 series. For every $n \ge 0$ there is a polynomial $P(z) = \sum_i c_i z^i$ with integer
 coefficients such that $P(z) = n! \, r_z(n)$ for every integer $z$, and every nonzero integer $k$

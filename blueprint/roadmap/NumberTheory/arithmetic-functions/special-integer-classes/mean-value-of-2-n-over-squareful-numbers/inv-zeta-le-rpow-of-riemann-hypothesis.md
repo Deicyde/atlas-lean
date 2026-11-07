@@ -1,6 +1,6 @@
 # Bound for $1/\zeta$ from the Riemann hypothesis
 
-**Bound for $1/\zeta$ from the Riemann hypothesis.** Assume the Riemann hypothesis, and let
+Assume the Riemann hypothesis, and let
 $1/2 < \sigma \le 1$ and $\varepsilon > 0$ be real. Then there are real constants $C$ and $t_0$,
 depending on $\sigma$ and $\varepsilon$, such that $|1/\zeta(\sigma + it)| \le C |t|^{\varepsilon}$
 for every real $t$ with $|t| \ge t_0$.

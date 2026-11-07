@@ -1,6 +1,6 @@
 # Arity of quasi-full rooted trees
 
-**Arity of quasi-full rooted trees.** Let $P$ be a finite partial order with $n \ge 3$
+Let $P$ be a finite partial order with $n \ge 3$
 elements that is a rooted tree: $P$ has a least element and, for every $x \in P$, the elements
 below $x$ form a chain. For a natural number $t$, call $P$ quasi-full $t$-ary when every $x \in P$
 is covered by exactly $\min(|U_x| - 1, t)$ elements of $P$, where $U_x = \{y \in P : x \le y\}$.

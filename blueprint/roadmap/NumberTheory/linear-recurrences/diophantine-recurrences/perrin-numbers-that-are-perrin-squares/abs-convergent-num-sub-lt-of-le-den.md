@@ -1,6 +1,6 @@
 # Convergents minimize $|p - qx|$ up to their denominator
 
-**Convergents minimize $|p - qx|$ up to their denominator.** Let $x$ be an irrational real
+Let $x$ be an irrational real
 number with continued fraction convergents $p_k / q_k$, where $p_0 / q_0 = \lfloor x \rfloor / 1$.
 If $n > 1$ is a natural number and $p, q$ are integers with $0 < q \le q_n$ and
 $p / q \ne p_n / q_n$, then $|p_n - q_n x| < |p - q x|$.

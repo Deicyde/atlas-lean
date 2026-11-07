@@ -1,6 +1,6 @@
 # Absolute maximal sets of lanes are counted by lonely singles partitions
 
-**Absolute maximal sets of lanes are counted by lonely singles partitions.** For every
+For every
 $n \ge 0$, the number of absolute maximal sets of lanes of the standard road intersection of
 size $n$ equals $L_n$, the number of noncrossing partitions of $\{0, \dots, n-1\}$ that are not
 marriageable singles partitions.

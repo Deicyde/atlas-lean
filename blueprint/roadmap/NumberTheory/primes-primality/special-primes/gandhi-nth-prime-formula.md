@@ -1,6 +1,6 @@
 # Gandhi's formula for the $n$th prime
 
-**Gandhi's formula for the $n$th prime.** For $i \ge 1$ let $p_i$ be the $i$th prime, so that
+For $i \ge 1$ let $p_i$ be the $i$th prime, so that
 $p_1 = 2$, and for $n \ge 1$ let $P_{n-1} = p_1 p_2 \cdots p_{n-1}$, the empty product $1$ when
 $n = 1$. Let $\mu$ be the Möbius function. Then for every $n \ge 1$,
 

@@ -1,6 +1,6 @@
 # Explicit formula for the entries of $U_\alpha$
 
-**Explicit formula for the entries of $U_\alpha$.** Let
+Let
 $\alpha \colon \mathbb{N} \to \mathbb{Q}$ and let $U_\alpha = (U_{i,j})_{i \ge 1, j \ge 0}$ be
 given by $U_{i,0} = 0$, $U_{1,j} = \alpha_{j-1}$ for $j \ge 1$, $U_{i,1} = 0$ for $i \ge 2$, and
 $U_{i,j} = U_{i-1,j-1} + (j-i+1) \, U_{i-1,j}$ for $i, j \ge 2$. For $k_1 \le k_2$ let

@@ -1,6 +1,6 @@
 # Non-abelian simple groups can have nontrivial Engel elements (Kourovka 16.17)
 
-**Non-abelian simple groups can have nontrivial Engel elements (Kourovka 16.17).** There is a
+There is a
 non-abelian simple group $G$ (one with elements $a$, $b$ such that $ab \ne ba$) that contains
 an Engel element $g \ne 1$. Here $g$ is an Engel element if for every $h \in G$ some iterated
 commutator $[h, g, \dots, g]$ is trivial, where $[x, g] = x^{-1} g^{-1} x g$.

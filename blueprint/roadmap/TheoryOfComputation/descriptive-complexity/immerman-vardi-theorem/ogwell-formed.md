@@ -1,6 +1,6 @@
 # Well-formed FO + LFP formulas
 
-**Well-formed FO + LFP formulas.** Let $e$ assign to each relation symbol (a natural number)
+Let $e$ assign to each relation symbol (a natural number)
 either an arity or nothing. Whether a first-order formula with least fixed points over ordered
 graphs is well-formed relative to $e$ is defined by recursion on the formula. An equality of two
 variables is well-formed. An atomic formula $R(x_1, \dots, x_k)$ is well-formed when $k = a$ if

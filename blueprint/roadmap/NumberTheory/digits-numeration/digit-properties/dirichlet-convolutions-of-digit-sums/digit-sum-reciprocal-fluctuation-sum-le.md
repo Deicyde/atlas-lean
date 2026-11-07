@@ -1,6 +1,6 @@
 # Bound for a weighted sum of the fluctuation
 
-**Bound for a weighted sum of the fluctuation.** Let $q \ge 2$ be an integer, let $s_q(n)$
+Let $q \ge 2$ be an integer, let $s_q(n)$
 denote the sum of the base-$q$ digits of $n$, let $F$ be the Trollope–Delange fluctuation in base
 $q$, and let $F_M = \sup_{t \in \mathbb{R}} |F(t)|$ (taken to be $0$ if $|F|$ is unbounded). For
 all real numbers $x > 0$ and $y$,

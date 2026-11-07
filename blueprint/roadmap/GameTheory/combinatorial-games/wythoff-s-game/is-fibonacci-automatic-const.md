@@ -1,6 +1,6 @@
 # Constant sequences are Fibonacci-automatic
 
-**Constant sequences are Fibonacci-automatic.** For every $c \in \mathbb{N}$, the constant
+For every $c \in \mathbb{N}$, the constant
 sequence $n \mapsto c$ is Fibonacci-automatic.
 
 ## Sources

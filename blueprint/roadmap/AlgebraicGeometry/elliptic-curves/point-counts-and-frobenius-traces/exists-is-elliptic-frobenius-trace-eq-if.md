@@ -1,6 +1,6 @@
 # Waterhouse's theorem on Frobenius traces
 
-**Waterhouse's theorem on Frobenius traces.** Let $p$ be a prime, let $a \ge 1$, and let $F$
+Let $p$ be a prime, let $a \ge 1$, and let $F$
 be a finite field with $q = p^a$ elements. An integer $\beta$ is the Frobenius trace
 $q + 1 - \#E(F)$ of some elliptic curve $E$ over $F$ if and only if $\beta^2 \le 4q$ and one of
 the following holds:

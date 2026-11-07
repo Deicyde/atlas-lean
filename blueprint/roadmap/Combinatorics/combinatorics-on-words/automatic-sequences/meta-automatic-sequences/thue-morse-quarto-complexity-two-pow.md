@@ -1,6 +1,6 @@
 # Factor complexity of the Thue–Morse Quarto word at powers of two
 
-**Factor complexity of the Thue–Morse Quarto word at powers of two.** Let $\mathcal{Q}$ be
+Let $\mathcal{Q}$ be
 the Thue–Morse Quarto sequence and $t$ the Thue–Morse sequence, with factor complexities
 $p_{\mathcal{Q}}$ and $p_t$, and for a natural number $n$ let $J_n$ be the set of length-$n$
 factors of $\mathcal{Q}$ that are not factors of $t$. Then for every natural number $k \ge 4$,

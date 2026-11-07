@@ -1,6 +1,6 @@
 # The odd-case square $R_{m,o}(x)$
 
-**The odd-case square $R_{m,o}(x)$.** For a natural number $m$ and a real number $x$,
+For a natural number $m$ and a real number $x$,
 
 $$R_{m,o}(x) = \bigl(T_{2m-1} + (1 + T_{m-1})\,x\bigr)^2,$$
 

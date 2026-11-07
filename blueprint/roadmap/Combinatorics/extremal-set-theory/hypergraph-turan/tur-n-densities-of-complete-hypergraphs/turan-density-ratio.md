@@ -1,6 +1,6 @@
 # Turán density ratio
 
-**Turán density ratio.** For natural numbers $k$ and $n$, the Turán density ratio is the
+For natural numbers $k$ and $n$, the Turán density ratio is the
 real number $\mathrm{ex}(n, K_{k+1}^{(k)}) / \binom{n}{k}$, where
 $\mathrm{ex}(n, K_{k+1}^{(k)})$ is the Turán number of the complete $k$-uniform hypergraph
 $K_{k+1}^{(k)}$ on $k+1$ vertices, the largest number of $k$-element subsets of an $n$-element

@@ -1,6 +1,6 @@
 # The edge loop of a pass
 
-**The edge loop of a pass.** Let $n$ be a natural number, $es$ a list of arcs $(u, w)$ of
+Let $n$ be a natural number, $es$ a list of arcs $(u, w)$ of
 natural numbers and $m$ a list of $n$ Boolean marks. Encode an arc $(u, w)$ by $u$ ones, a zero,
 $w$ ones and a zero, and $es$ by the concatenation of the codes of its arcs; let $\ell$ be the
 length of this code. Suppose the marking machine is at the edge-loop label, in any internal state,

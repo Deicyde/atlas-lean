@@ -1,6 +1,6 @@
 # Spivey's Bell number formula
 
-**Spivey's Bell number formula.** For all natural numbers $m$ and $n$,
+For all natural numbers $m$ and $n$,
 
 $$B_{n+m} = \sum_{j=0}^{m} \sum_{k=0}^{n} j^{n-k} \, S(m, j) \binom{n}{k} B_k,$$
 

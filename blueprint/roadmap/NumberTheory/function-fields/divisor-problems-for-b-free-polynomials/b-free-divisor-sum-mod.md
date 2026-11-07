@@ -1,6 +1,6 @@
 # B-free divisor sum in an arithmetic progression
 
-**B-free divisor sum in an arithmetic progression.** For a field $F$, a function
+For a field $F$, a function
 $\kappa : F[T] \to \mathbb{N}$, natural numbers $h$ and $N$, and $a, m \in F[T]$, the natural
 number $\tilde D_{\kappa,h}(N, a, m)$ is the sum of $d_h(f)$ over the monic $B_\kappa$-free
 $f \in F[T]$ of degree at most $N$ with $f \equiv a \pmod m$, that is, with $m$ dividing $f - a$.

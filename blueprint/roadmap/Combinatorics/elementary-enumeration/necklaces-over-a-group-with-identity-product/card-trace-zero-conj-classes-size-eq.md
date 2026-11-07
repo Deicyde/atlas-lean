@@ -1,6 +1,6 @@
 # Trace-zero Galois orbits of full size and aperiodic zero-sum necklaces
 
-**Trace-zero Galois orbits of full size and aperiodic zero-sum necklaces.** Let $K$ be a
+Let $K$ be a
 finite field extension of a finite field $F$ and $n = [K : F]$. For $z \in K$ let its Galois
 orbit be the set of all $\sigma(z)$ with $\sigma$ an automorphism of $K$ fixing $F$, and for
 $a = (a_0, \dots, a_{n-1}) \in F^n$ let its rotation orbit be the set of its cyclic rotations

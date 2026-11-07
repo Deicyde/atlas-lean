@@ -1,3 +1,3 @@
 # Unit cell as a one-site set
 
-**Unit cell as a one-site set.** The one-site set `{(0, 0)}`.
+The one-site set `{(0, 0)}`.

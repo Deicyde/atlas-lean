@@ -1,6 +1,6 @@
 # Beatty-sequence descriptions of the words $F_\infty$, $S$ and $T$
 
-**Beatty-sequence descriptions of the words $F_\infty$, $S$ and $T$.** Let
+Let
 $\varphi = (1 + \sqrt{5})/2$ be the golden ratio and $F_\infty = 010010100\cdots$ the infinite
 Fibonacci word. Let $S = \mu(F_\infty)$ be its image under the morphism $\mu$ with $\mu(0) = 10$
 and $\mu(1) = 01$, and $T = \nu(F_\infty)$ its image under the morphism $\nu$ with $\nu(0) = 1$

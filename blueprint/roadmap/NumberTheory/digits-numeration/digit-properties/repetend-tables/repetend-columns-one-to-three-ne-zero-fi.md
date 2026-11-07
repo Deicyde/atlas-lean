@@ -1,6 +1,6 @@
 # Columns $1$, $2$, $3$ of the order-$6$ repetend table differ from columns $0$ and $5$
 
-**Columns $1$, $2$, $3$ of the order-$6$ repetend table differ from columns $0$ and $5$.** Let
+Let
 $p \equiv 1 \pmod 6$ be prime, $k \ge 1$, $t \in \{1, 2\}$ and $n = t p^k$, and let $B$ be the set
 of integers $b$ with $1 \le b < n$, $\gcd(b, n) = 1$ and multiplicative order $6$ modulo $n$. For
 $c \ge 0$ let column $c$ be the multiset of the digits $\lfloor b^{c+1}/n \rfloor \bmod b$ over

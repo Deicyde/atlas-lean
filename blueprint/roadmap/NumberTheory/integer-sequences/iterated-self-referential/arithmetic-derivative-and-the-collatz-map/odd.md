@@ -1,6 +1,6 @@
 # Compatible semiprimes have odd prime factors
 
-**Compatible semiprimes have odd prime factors.** Let $p, q, r, s$ be primes with
+Let $p, q, r, s$ be primes with
 $2(r + s) = p + q$ and $2rs = 3pq + 1$, so that the semiprimes $pq$ and $rs$ are compatible.
 Then $p$, $q$, $r$ and $s$ are all odd.
 

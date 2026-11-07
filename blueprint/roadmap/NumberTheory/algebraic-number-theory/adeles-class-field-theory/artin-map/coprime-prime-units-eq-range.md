@@ -1,6 +1,6 @@
 # The prime coprime units are the image of the coprime primes
 
-**The prime coprime units are the image of the coprime primes.** Let $\mathfrak m$ be a
+Let $\mathfrak m$ be a
 modulus of a number field $K$, let $I_K^{\mathfrak m}$ be the group of invertible fractional
 ideals of $K$ coprime to the finite part of $\mathfrak m$, and let $P$ be the set of nonzero
 prime ideals of the ring of integers $\mathcal O_K$ that do not divide the finite part of

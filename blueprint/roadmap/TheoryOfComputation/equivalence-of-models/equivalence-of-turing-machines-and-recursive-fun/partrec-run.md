@@ -1,6 +1,6 @@
 # Running a primitive recursive machine is partial recursive
 
-**Running a primitive recursive machine is partial recursive.** Let $\alpha$, $\sigma$ and
+Let $\alpha$, $\sigma$ and
 $\beta$ be primitive recursively encodable types, and let $\mathrm{init} : \alpha \to \sigma$,
 $\mathrm{step} : \sigma \to \sigma$, $\mathrm{halted} : \sigma \to \mathrm{Bool}$ and
 $\mathrm{out} : \sigma \to \beta$ be primitive recursive. Then the partial function sending $a$

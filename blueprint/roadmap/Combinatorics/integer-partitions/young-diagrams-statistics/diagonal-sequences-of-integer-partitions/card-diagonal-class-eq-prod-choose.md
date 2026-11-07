@@ -1,6 +1,6 @@
 # Number of partitions with a given diagonal sequence
 
-**Number of partitions with a given diagonal sequence.** Let $\alpha$ be a partition of $n$
+Let $\alpha$ be a partition of $n$
 with diagonal sequence $\delta(\alpha) = (d_j)_{j \ge 1}$, set $d_0 = 0$, and let $q, L \ge 0$ be
 integers with $d_j = j$ for all $1 \le j \le q$, $d_{q+1} \ne q + 1$, $d_L \ne 0$ and
 $d_{L+1} = 0$. Put $b_i = \max(d_i - d_{i+1}, 0)$. Then the number of partitions of $n$ whose

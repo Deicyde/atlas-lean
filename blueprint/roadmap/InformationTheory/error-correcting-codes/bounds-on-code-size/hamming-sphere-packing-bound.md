@@ -1,6 +1,6 @@
 # Hamming bound
 
-**Hamming bound.** Let $\alpha$ be a finite alphabet with $q \ge 2$ letters, and let $n$ and
+Let $\alpha$ be a finite alphabet with $q \ge 2$ letters, and let $n$ and
 $t$ be natural numbers. If $C$ is a set of words of length $n$ over $\alpha$ in which any two
 distinct words are at Hamming distance at least $2t + 1$, then
 

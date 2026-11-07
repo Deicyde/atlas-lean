@@ -1,6 +1,6 @@
 # Leftmost derivations from $A$ and $B$ follow an index sequence
 
-**Leftmost derivations from $A$ and $B$ follow an index sequence.** Let
+Let
 $P = [(t_0, b_0), \dots, (t_{m-1}, b_{m-1})]$ be a list of dominoes, let $A$, $B$ be the
 nonterminals of the ambiguity grammar of $P$ for its top and bottom words, and let $u$, $v$ be
 words of terminals. Every leftmost derivation of a word $w$ from the sentential form $u\,A\,v$ is

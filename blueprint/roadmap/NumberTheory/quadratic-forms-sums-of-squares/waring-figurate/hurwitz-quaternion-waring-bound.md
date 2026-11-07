@@ -1,6 +1,6 @@
 # Waring's problem for Hurwitz quaternion integers
 
-**Waring's problem for Hurwitz quaternion integers.** Call a rational quaternion a Hurwitz
+Call a rational quaternion a Hurwitz
 integer if its four coordinates are either all integers or all of the form $a + \tfrac12$ with
 $a$ an integer. For every positive integer $\ell$ with $\ell \equiv 1$ or $\ell \equiv 2 \pmod 3$
 there is a natural number $g$ such that every Hurwitz integer is a sum of at most $g$ $\ell$-th

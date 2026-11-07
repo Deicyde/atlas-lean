@@ -1,6 +1,6 @@
 # Group law on the rational points of the Jacobian
 
-**Group law on the rational points of the Jacobian.** Let $C$ be a proper, smooth,
+Let $C$ be a proper, smooth,
 geometrically irreducible curve over a field $k$. The commutative group structure on the set of
 $k$-rational points of the Jacobian $J(C)$ is the one induced by its commutative group scheme
 structure: the product of two $k$-points $x$ and $y$ is $\mu \circ (x, y)$, where $\mu$ is the

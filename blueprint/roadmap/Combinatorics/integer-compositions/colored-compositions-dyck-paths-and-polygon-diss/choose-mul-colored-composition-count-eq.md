@@ -1,6 +1,6 @@
 # Colored compositions and colored Dyck paths
 
-**Colored compositions and colored Dyck paths.** Let $\gamma = (\gamma_1, \gamma_2, \dots)$
+Let $\gamma = (\gamma_1, \gamma_2, \dots)$
 be a sequence of natural numbers. Let $c_{n,k}(\gamma)$ be the number of compositions of $n$ with
 $k$ parts in which each part $j$ carries one of $\gamma_j$ colors, and let $d_{n,k}(\gamma)$ be the
 number of Dyck paths of semilength $n$ with $k$ peaks in which each block $UD^j$, formed by a peak

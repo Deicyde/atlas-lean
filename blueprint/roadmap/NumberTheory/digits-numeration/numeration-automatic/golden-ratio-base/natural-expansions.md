@@ -1,6 +1,6 @@
 # Natural base phi expansions
 
-**Natural base phi expansions.** Let $\varphi$ be the golden ratio and $N$ a natural number.
+Let $\varphi$ be the golden ratio and $N$ a natural number.
 Encode a finite base phi expansion with digits $0$ and $1$ by the finite set
 $S \subseteq \mathbb{Z}$ of the positions of its digits $1$. The natural expansions of $N$ are the
 Knott expansions $S$ of $N$ for which there is a Bergman expansion $T$ with

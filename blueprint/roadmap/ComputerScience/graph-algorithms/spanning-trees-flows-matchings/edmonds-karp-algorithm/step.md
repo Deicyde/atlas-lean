@@ -1,6 +1,6 @@
 # One augmenting-path step
 
-**One augmenting-path step.** Let $c$ be a capacity matrix with natural-number entries on the
+Let $c$ be a capacity matrix with natural-number entries on the
 vertices $\{0, \dots, n - 1\}$, let $s$ be a source and $t$ a sink, and let $f$ be a flow (an
 integer-valued matrix on pairs of vertices). Run the breadth-first shortest-path search from $s$ to
 $t$ in the residual graph of $f$ with respect to $c$. If it finds no path, the step returns $f$. If

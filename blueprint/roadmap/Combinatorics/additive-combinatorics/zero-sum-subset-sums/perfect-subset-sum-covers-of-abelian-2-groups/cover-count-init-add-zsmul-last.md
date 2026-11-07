@@ -1,6 +1,6 @@
 # Shifting by multiples of the last element of a perfect $2^j$-cover
 
-**Shifting by multiples of the last element of a perfect $2^j$-cover.** Let $G$ be an
+Let $G$ be an
 abelian group, let $s = (x_1, \dots, x_{k+1})$ be a family in $G$ that is a perfect $2^j$-cover
 of $G$, and let $S_1 = (x_1, \dots, x_k)$. For every $b \in G$, if $S_1$ covers $b$ exactly $c$
 times, then for every integer $t$ it covers $b + 2t\,x_{k+1}$ exactly $c$ times and

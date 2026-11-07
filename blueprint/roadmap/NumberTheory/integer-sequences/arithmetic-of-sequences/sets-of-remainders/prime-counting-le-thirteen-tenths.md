@@ -1,6 +1,6 @@
 # Upper bound $1.3\, n / \log n$ for the prime-counting function
 
-**Upper bound $1.3\, n / \log n$ for the prime-counting function.** For every natural
+For every natural
 number $n \ge 2$, the number $\pi(n)$ of primes at most $n$ satisfies
 $\pi(n) \le 1.3\, n / \log n$, where $\log$ is the natural logarithm.
 

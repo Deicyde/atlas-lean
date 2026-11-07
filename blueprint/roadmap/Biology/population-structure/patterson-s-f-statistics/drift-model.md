@@ -1,6 +1,6 @@
 # Admixture-graph drift model
 
-**Admixture-graph drift model.** The admixture-graph drift model, stated at the level of second moments.
+The admixture-graph drift model, stated at the level of second moments.
 
 The allele frequency of population `X` is `root + ∑ e, weight X e * incr e` (see
 `DriftModel.freq`), where `E` is the (finite) set of edges of the graph.

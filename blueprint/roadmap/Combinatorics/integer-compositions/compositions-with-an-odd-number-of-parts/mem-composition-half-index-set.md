@@ -1,6 +1,6 @@
 # Membership in $S(m, n, q)$
 
-**Membership in $S(m, n, q)$.** For natural numbers $m$, $n$, $q$ and $k$, the number $k$
+For natural numbers $m$, $n$, $q$ and $k$, the number $k$
 lies in the index set $S(m, n, q)$ if and only if $2k \equiv n - q \pmod{m}$, with the difference
 taken in the integers, and $2k < n$.
 

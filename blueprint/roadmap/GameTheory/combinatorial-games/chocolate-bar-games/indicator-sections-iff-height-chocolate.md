@@ -1,6 +1,6 @@
 # Height-one chocolate bars with nim-sum Grundy numbers
 
-**Height-one chocolate bars with nim-sum Grundy numbers.** Let $s \in \mathbb{N}$ and let
+Let $s \in \mathbb{N}$ and let
 $F : \mathbb{N}^s \to \mathbb{N}$ be monotone for the coordinatewise order, with $F(x) \le 1$ for
 all $x$. For $x \in \mathbb{N}^s$, $i < s$ and $t \in \mathbb{N}$ write $x[i \mapsto t]$ for $x$
 with its $i$-th coordinate replaced by $t$, and suppose that for all $x$ and $i$ there is a $t$

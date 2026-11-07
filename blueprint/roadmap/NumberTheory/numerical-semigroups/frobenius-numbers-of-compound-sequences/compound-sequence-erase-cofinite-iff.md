@@ -1,6 +1,6 @@
 # When deleting a term of a compound sequence leaves a numerical semigroup
 
-**When deleting a term of a compound sequence leaves a numerical semigroup.** Let $n \ge 1$
+Let $n \ge 1$
 and let $a_1, \dots, a_n$ and $b_1, \dots, b_n$ be natural numbers with $0 < a_i < b_i$ for
 $1 \le i \le n$ and $\gcd(a_i, b_j) = 1$ whenever $1 \le j \le i \le n$; let $c_0, \dots, c_n$
 be their compound sequence. For $0 \le j \le n$, the additive submonoid of $\mathbb{N}$

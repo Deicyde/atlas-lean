@@ -1,6 +1,6 @@
 # Birkhoff–Kakutani metrization theorem
 
-**Birkhoff–Kakutani metrization theorem.** Every Hausdorff first-countable topological group is
+Every Hausdorff first-countable topological group is
 metrizable.
 
 ## Sources

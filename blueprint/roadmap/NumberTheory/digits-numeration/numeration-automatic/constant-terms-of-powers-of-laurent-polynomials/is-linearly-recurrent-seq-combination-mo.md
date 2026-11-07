@@ -1,6 +1,6 @@
 # Linear recurrence of combinations of constant terms modulo $p$
 
-**Linear recurrence of combinations of constant terms modulo $p$.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $P, Q_1, \dots, Q_\ell$ be Laurent polynomials with integer coefficients in $r$ variables, let
 $k_1, \dots, k_\ell \in \mathbb{N}$, and let $F \colon (\mathbb{Z}/p\mathbb{Z})^\ell \to X$ be a
 map to a set $X$. Write $\operatorname{ct}[f]$ for the constant term of $f$ and, for

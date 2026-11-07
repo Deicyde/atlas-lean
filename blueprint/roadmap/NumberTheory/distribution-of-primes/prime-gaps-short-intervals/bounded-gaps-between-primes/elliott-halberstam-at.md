@@ -1,6 +1,6 @@
 # Elliott–Halberstam estimate at level $\theta$
 
-**Elliott–Halberstam estimate at level $\theta$.** For a real number $\theta$, the
+For a real number $\theta$, the
 Elliott–Halberstam estimate at level $\theta$ is the following statement. Let
 $Q : \mathbb{R} \to \mathbb{N}$ be such that $Q(x) = O(x^{\delta} x^{\theta})$ as $x \to \infty$
 for every real $\delta > 0$, and let $A \ge 1$ be real. Then there is a real number $C > 0$ such

@@ -1,6 +1,6 @@
 # Lehmer bounds at the initial segments of a spoof Lehmer factorization
 
-**Lehmer bounds at the initial segments of a spoof Lehmer factorization.** Let
+Let
 $x_1 \le \dots \le x_r$ be natural numbers and let $F = x_1 \cdots x_r$ be the spoof factorization
 with these bases, all with exponent $1$. Suppose $F$ is a nontrivial spoof $k$-Lehmer factorization
 for an integer $k$. For a list $t = (t_1, \dots, t_s)$ of real numbers, let $L(t; r)$ and $U(t; r)$

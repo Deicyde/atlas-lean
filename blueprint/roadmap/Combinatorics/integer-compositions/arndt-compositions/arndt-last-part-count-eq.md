@@ -1,6 +1,6 @@
 # Closed formula for Arndt compositions by last part
 
-**Closed formula for Arndt compositions by last part.** Let $F_r$ be the $r$-th Fibonacci
+Let $F_r$ be the $r$-th Fibonacci
 number ($F_0 = 0$, $F_1 = 1$) and $b(n, m)$ the number of Arndt compositions of $n$ with last
 part $m$. Define $t_1, t_2 : \mathbb{N} \to \mathbb{N}$ by $t_1(0) = 1$, $t_1(1) = 0$,
 $t_1(r) = F_{r-2}$ and $t_2(0) = 0$, $t_2(1) = 1$, $t_2(r) = F_{r-1}$ for $r \ge 2$. Then for all

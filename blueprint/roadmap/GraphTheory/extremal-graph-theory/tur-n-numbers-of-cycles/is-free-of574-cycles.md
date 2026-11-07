@@ -1,6 +1,6 @@
 # Graphs without cycles of lengths $2k-1$ and $2k$
 
-**Graphs without cycles of lengths $2k-1$ and $2k$.** For a natural number $k$, a simple
+For a natural number $k$, a simple
 graph $G$ is free of the cycle lengths $2k-1$ and $2k$ when it contains no copy of the cycle
 graph $C_{2k-1}$ and no copy of the cycle graph $C_{2k}$, where a copy is an injective graph
 homomorphism, that is, a subgraph that need not be induced.

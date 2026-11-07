@@ -1,6 +1,6 @@
 # Generating function of A265233
 
-**Generating function of A265233.** Let $(a_n)_{n \ge 0}$ be the sequence A265233 and let
+Let $(a_n)_{n \ge 0}$ be the sequence A265233 and let
 ${}_2F_1$ be the Gauss hypergeometric function. For every real number $x$ with $|x| < 1/12$ and
 $|27x(1 - 4x)^2| < 1$,
 

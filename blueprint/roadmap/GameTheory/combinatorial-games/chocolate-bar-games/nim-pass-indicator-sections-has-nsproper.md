@@ -1,6 +1,6 @@
 # Sections of the Nim pass indicator with the NS property
 
-**Sections of the Nim pass indicator with the NS property.** Let $s \in \mathbb{N}$ and
+Let $s \in \mathbb{N}$ and
 $m \in \mathbb{N}^s$ with $m_i > 0$ for every $i < s$, and let $F : \mathbb{N}^s \to \mathbb{N}$ be
 the pass indicator of $m$: $F(x) = 1$ if $m_j \le x_j$ for some $j$, and $F(x) = 0$ otherwise.
 For $x \in \mathbb{N}^s$, $i < s$ and $t \in \mathbb{N}$ write $x[i \mapsto t]$ for $x$ with its

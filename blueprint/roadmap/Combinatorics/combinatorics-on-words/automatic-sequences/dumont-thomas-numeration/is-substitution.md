@@ -1,6 +1,6 @@
 # Substitutions in the sense of Labbé and Lepšová
 
-**Substitutions in the sense of Labbé and Lepšová.** A substitution is a map $\eta$ sending
+A substitution is a map $\eta$ sending
 each letter of an alphabet $A$ to a finite word over $A$, extended to finite words by
 concatenation, such that $\eta$ is non-erasing (the word $\eta(a)$ is nonempty for every letter
 $a \in A$) and some letter $a \in A$ is growing, that is, $|\eta^k(a)| \to \infty$ as

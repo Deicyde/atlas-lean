@@ -1,6 +1,6 @@
 # Multiplicity bounds for IDP reflexive weighted simplices
 
-**Multiplicity bounds for IDP reflexive weighted simplices.** Let $r_1 < r_2 < \dots < r_d$
+Let $r_1 < r_2 < \dots < r_d$
 be positive integers, let $x_1, \dots, x_d$ be positive integers, and let
 $q = (r_1^{x_1}, \dots, r_d^{x_d})$ be the weight vector in which each $r_i$ is repeated $x_i$
 times. Suppose the weighted projective space simplex $\Delta_{(1,q)}$ is reflexive and has the

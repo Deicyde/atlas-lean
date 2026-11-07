@@ -1,6 +1,6 @@
 # Recurrence for central binomial sums with odd harmonic numbers
 
-**Recurrence for central binomial sums with odd harmonic numbers.** For a natural number $n$,
+For a natural number $n$,
 let $O_m = \sum_{i=1}^{m} 1/(2i-1)$ be the odd harmonic numbers, $c_n = \binom{2n}{n}/4^n$, and
 for natural $r$ let $S_r(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r$ and
 $S_r^O(n) = \sum_{k=0}^{n} \binom{2k}{k} 4^{-k} k^r O_k$, with $0^0 = 1$. Then

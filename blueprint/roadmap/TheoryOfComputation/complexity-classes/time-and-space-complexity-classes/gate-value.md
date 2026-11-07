@@ -1,6 +1,6 @@
 # Value of a gate
 
-**Value of a gate.** Let $v$ be a list of Boolean values of earlier gates, where an index
+Let $v$ be a list of Boolean values of earlier gates, where an index
 outside $v$ reads as false, and let $\sigma$ assign a Boolean value to each of the $n$ inputs.
 Given $v$ and $\sigma$, the value of the input variable $x_i$ is $\sigma(i)$; the value of the
 constant $b$ is $b$; the value of the negation of gate $a$ is the negation of $v_a$; the value

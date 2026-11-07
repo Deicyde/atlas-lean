@@ -1,6 +1,6 @@
 # End-marker encodings form a regular language
 
-**End-marker encodings form a regular language.** The encodings of words form a regular language.
+The encodings of words form a regular language.
 
 ## Sources
 

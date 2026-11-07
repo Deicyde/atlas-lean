@@ -1,6 +1,6 @@
 # Formations of finite groups
 
-**Formations of finite groups.** A class $\mathfrak F$ of groups is a formation when every group
+A class $\mathfrak F$ of groups is a formation when every group
 in $\mathfrak F$ is finite, $\mathfrak F$ contains at least one group, $\mathfrak F$ is closed under
 isomorphism, $\mathfrak F$ is closed under quotients (if $G \in \mathfrak F$ and $N$ is a normal
 subgroup of $G$, then $G/N \in \mathfrak F$), and $\mathfrak F$ is closed under subdirect products:

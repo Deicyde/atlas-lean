@@ -1,6 +1,6 @@
 # Literals of a pushed-fill clause
 
-**Literals of a pushed-fill clause.** For a layout $L$ with label block size $A$, $K$ stacks
+For a layout $L$ with label block size $A$, $K$ stacks
 and $g$ symbol codes, row width $W = A + K H g$, situation offsets $s_a$, pushed codes $p_u$ and
 numbers $H, t, i, k, j$, write $S[t, i] = (t + 1) W + s_a(i)$ for the situation variable (the
 label/state variable $s_a(i)$ of row $t + 1$), and

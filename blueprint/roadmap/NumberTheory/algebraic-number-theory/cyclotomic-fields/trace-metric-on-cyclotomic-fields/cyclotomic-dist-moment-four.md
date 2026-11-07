@@ -1,6 +1,6 @@
 # Fourth moment of the trace distance on the cyclotomic box
 
-**Fourth moment of the trace distance on the cyclotomic box.** Let $p$ be a prime, let $N$ be
+Let $p$ be a prime, let $N$ be
 a natural number, and let $K$ be a field generated over $\mathbb{Q}$ by a primitive $p$-th root of
 unity, with fixed primitive $p$-th root of unity $\omega \in K$. Let $M_4(p, N)$ be the fourth
 moment of the trace metric $d$ of $K$ over the box $B(p, N)$: the average of

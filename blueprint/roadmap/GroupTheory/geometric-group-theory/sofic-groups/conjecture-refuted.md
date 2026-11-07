@@ -1,6 +1,6 @@
 # Not every group is sofic
 
-**Not every group is sofic.** The soficity problem (Kourovka Notebook Problem 21.86) has a
+The soficity problem (Kourovka Notebook Problem 21.86) has a
 negative answer: there exists a group that is not sofic.
 
 OpenAI announced the first example, the unit group of the binary Leavitt algebra. G. Kun and

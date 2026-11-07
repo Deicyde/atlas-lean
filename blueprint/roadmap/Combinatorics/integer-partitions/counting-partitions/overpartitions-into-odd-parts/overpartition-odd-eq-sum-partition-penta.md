@@ -1,6 +1,6 @@
 # Overpartitions into odd parts from partitions and pentagonal numbers
 
-**Overpartitions into odd parts from partitions and pentagonal numbers.** Let
+Let
 $\mathrm{po}(m)$ be the number of overpartitions of $m$ into odd parts and $p(m)$ the number
 of partitions of $m$. For every natural number $n$,
 $\mathrm{po}(n) = \sum_k (-1)^{\lceil k/2 \rceil} p(n - k(3k+1)/2)$, the sum running over

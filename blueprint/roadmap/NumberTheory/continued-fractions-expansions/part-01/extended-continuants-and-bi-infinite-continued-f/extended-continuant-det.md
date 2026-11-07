@@ -1,6 +1,6 @@
 # Determinant identity for extended continuants
 
-**Determinant identity for extended continuants.** Let $x : \mathbb{Z} \to \mathbb{Z}$ be an
+Let $x : \mathbb{Z} \to \mathbb{Z}$ be an
 integer sequence and write $K_a(x)_b$ for its extended continuant of order $a$ with start index
 $b$. For every integer $n$,
 

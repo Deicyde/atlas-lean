@@ -1,6 +1,6 @@
 # Kantorovich duality on compact metric spaces
 
-**Kantorovich duality on compact metric spaces.** Let $X$ and $Y$ be nonempty compact metric
+Let $X$ and $Y$ be nonempty compact metric
 spaces, each carrying its Borel $\sigma$-algebra, let $\mu$ and $\nu$ be probability measures on
 $X$ and $Y$, and let $c : X \times Y \to \mathbb{R}$ be continuous. Then the infimum of
 $\int c \, d\pi$ over all couplings $\pi$ of $\mu$ and $\nu$ equals the supremum of

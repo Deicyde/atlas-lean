@@ -1,6 +1,6 @@
 # Successor under a transition function
 
-**Successor under a transition function.** Let $\delta$ be a transition function of a
+Let $\delta$ be a transition function of a
 multi-tape Turing machine with $k$ work tapes, assigning an action to each state, input symbol
 and tuple of $k$ work tape symbols, where a symbol may be blank. The successor of a configuration
 $c$ under $\delta$ is $c$ itself if $c$ is halted, and otherwise the configuration obtained by

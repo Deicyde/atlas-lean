@@ -1,6 +1,6 @@
 # Indices of maximal average
 
-**Indices of maximal average.** For a sequence $\eta = (e_1, e_2, \dots)$ of nonnegative
+For a sequence $\eta = (e_1, e_2, \dots)$ of nonnegative
 integers and $m \ge 0$, let $A_i = (e_1 + \dots + e_i)/i$ be the average of the first $i$
 entries of $\eta$. The set of maximal-average indices of $\eta$ up to $m$ is the set of all $i$
 with $1 \le i \le m$ such that $A_j \le A_i$ for every $j$ with $1 \le j \le m$; for

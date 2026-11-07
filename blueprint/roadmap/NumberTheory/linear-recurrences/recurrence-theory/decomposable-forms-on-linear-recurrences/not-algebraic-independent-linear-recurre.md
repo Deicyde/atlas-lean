@@ -1,6 +1,6 @@
 # Algebraic dependence of recurrence sequences and a power sequence
 
-**Algebraic dependence of recurrence sequences and a power sequence.** Let $k$ be a natural
+Let $k$ be a natural
 number, let $\gamma_0, \dots, \gamma_{k-1} \in \mathbb{C}$ and let
 $\chi(x) = x^k - \sum_{i\lt k} \gamma_i x^i$. Let
 $G^{(1)}, \dots, G^{(k)} \colon \mathbb{Z} \to \mathbb{C}$ be sequences such that

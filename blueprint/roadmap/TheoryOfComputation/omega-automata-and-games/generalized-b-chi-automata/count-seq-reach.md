@@ -1,6 +1,6 @@
 # The degeneralization counter reaches every higher value
 
-**The degeneralization counter reaches every higher value.** Let $g$ be a generalized Büchi
+Let $g$ be a generalized Büchi
 automaton with acceptance sets $F_0, \dots, F_{k-1}$, and let $s$ be an infinite sequence of
 states that visits every $F_j$ infinitely often, with counter sequence $c_0, c_1, \dots$. Then
 for every time $n$ and every $j$ with $c_n \le j \le k$ there is a time $m \ge n$ with $c_m = j$.

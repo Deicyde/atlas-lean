@@ -1,6 +1,6 @@
 # Weights of monotone Boolean functions and their duals (Lemma 8)
 
-**Weights of monotone Boolean functions and their duals (Lemma 8).** Order $\{0,1\}$ by
+Order $\{0,1\}$ by
 $0 < 1$, inputs in $\{0,1\}^n$ coordinatewise and Boolean functions on $\{0,1\}^n$ pointwise. For
 such a function $f$, let $f^*(x) = \lnot f(\bar x)$ be its dual, where $\bar x$ is the
 coordinatewise complement of $x$, and let $\ell(f)$ be the number of $x \in \{0,1\}^n$ with

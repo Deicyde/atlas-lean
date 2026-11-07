@@ -1,6 +1,6 @@
 # Maximum principle for linear programming
 
-**Maximum principle for linear programming.** Consider a linear program with $m$ variables
+Consider a linear program with $m$ variables
 and objective vector $c \in \mathbb{R}^m$, let $P \subseteq \mathbb{R}^m$ be its feasible region
 and $f(x) = c \cdot x$ its objective function, and let $x \in P$ be a local maximiser of $f$ on
 $P$, that is, $f(y) \le f(x)$ for all $y \in P$ in some neighbourhood of $x$. Then $x$ is a

@@ -1,6 +1,6 @@
 # The map $x \mapsto e^{x-1} - e^{1-x}$ has a unique fixed point
 
-**The map $x \mapsto e^{x-1} - e^{1-x}$ has a unique fixed point.** There is exactly one
+There is exactly one
 real number $x$ such that $e^{x-1} - e^{1-x} = x$.
 
 ## Sources

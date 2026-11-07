@@ -1,6 +1,6 @@
 # Alternating binomial sum of trinomial coefficients over even rows
 
-**Alternating binomial sum of trinomial coefficients over even rows.** Write
+Write
 $\binom{n}{k}_2$ for the trinomial coefficient, the coefficient of $x^k$ in $(1+x+x^2)^n$. For
 every natural number $n$, $\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{2n-2k}{n}_2 = 2^n$.
 

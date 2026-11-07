@@ -1,6 +1,6 @@
 # Generating function for the capacity of Catalan words ending in their largest letter
 
-**Generating function for the capacity of Catalan words ending in their largest letter.** For
+For
 natural numbers $n$ and $i$, let $b(n, i; q)$ be the capacity distribution of the Catalan words of
 length $n$ that end in $i$ and have all letters at most $i$, viewed in $\mathbb{Z}[q, q^{-1}]$.
 Let the formal power series $d_k(x; q)$ in $x$ over $\mathbb{Z}[q]$ be defined by $d_0 = 1$,

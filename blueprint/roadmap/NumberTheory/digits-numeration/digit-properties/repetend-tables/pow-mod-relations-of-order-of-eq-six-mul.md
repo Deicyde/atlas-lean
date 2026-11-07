@@ -1,6 +1,6 @@
 # Relations among the powers $B^{zp^j} \bmod p^i$ for a base of order $6p^j$
 
-**Relations among the powers $B^{zp^j} \bmod p^i$ for a base of order $6p^j$.** Let $p$ be a
+Let $p$ be a
 prime with $p \equiv 1 \pmod 6$, let $i$ and $j$ be natural numbers, put $n = p^i$ and $Q = p^j$,
 and let $B$ be a natural number whose multiplicative order modulo $n$ is $6Q$. Write
 $B_z = B^z \bmod n$. Then $B_{2Q} = B_Q - 1$, $B_{4Q} = B_{5Q} - 1$, $B_Q + B_{5Q} = n + 1$ and

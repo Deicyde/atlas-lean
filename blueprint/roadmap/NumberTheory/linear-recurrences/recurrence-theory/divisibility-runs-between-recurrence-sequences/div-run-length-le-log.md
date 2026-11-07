@@ -1,6 +1,6 @@
 # Divisibility runs have logarithmic length
 
-**Divisibility runs have logarithmic length.** There is a real constant $C > 0$ such that for
+There is a real constant $C > 0$ such that for
 every natural number $B \ge 2$, all integers $x, y, a, b, c \in [-B, B]$ with $(x, y) \ne (0, 0)$
 and $(a, b, c) \ne (0, 0, 0)$, and every natural number $L$ such that $(x, y, a, b, c)$ has a
 divisibility run of length at least $L$, we have $L \le C \log B$. Here a divisibility run of

@@ -1,6 +1,6 @@
 # Morgado's characterization of regular integers
 
-**Morgado's characterization of regular integers.** Let $n$ be a positive integer and $m$
+Let $n$ be a positive integer and $m$
 an integer, and write $\gcd$ for the nonnegative greatest common divisor. The congruence
 $m^2 x \equiv m \pmod{n}$ has a solution $x \in \mathbb{Z}$ if and only if
 $\gcd(m^2, n) = \gcd(m, n)$, and $\gcd(m^2, n) = \gcd(m, n)$ holds if and only if $\gcd(m, n)$

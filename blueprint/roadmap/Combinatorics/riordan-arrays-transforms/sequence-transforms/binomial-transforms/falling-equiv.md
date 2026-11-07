@@ -1,6 +1,6 @@
 # The k-fold binomial transform is the falling k-binomial transform
 
-**The k-fold binomial transform is the falling k-binomial transform.** For every integer
+For every integer
 sequence $a$ and every integer $k$: if $k \ge 0$, applying the binomial transform $k$ times to
 $a$ gives the falling $k$-binomial transform of $a$; if $k < 0$, applying the inverse binomial
 transform (the falling $(-1)$-binomial transform) $-k$ times to $a$ gives the falling

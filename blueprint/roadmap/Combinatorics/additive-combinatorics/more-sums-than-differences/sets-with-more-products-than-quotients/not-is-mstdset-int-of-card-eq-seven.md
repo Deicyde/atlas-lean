@@ -1,6 +1,6 @@
 # Hegarty: no seven-element MSTD set of integers
 
-**Hegarty: no seven-element MSTD set of integers.** No set of seven integers, viewed as a set
+No set of seven integers, viewed as a set
 of real numbers, is an MSTD set.
 
 ## Sources

@@ -1,3 +1,3 @@
 # Conjugate reproducing property of the Dirichlet kernel
 
-**Conjugate reproducing property of the Dirichlet kernel.** The reproducing property in the other order: `⟪a, k_z⟫ = conj (f(z))`.
+The reproducing property in the other order: `⟪a, k_z⟫ = conj (f(z))`.

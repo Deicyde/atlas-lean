@@ -1,6 +1,6 @@
 # Lattice cube
 
-**Lattice cube.** For $t, m \in \mathbb{N}$ and $a \in \mathbb{N}^t$, the lattice cube
+For $t, m \in \mathbb{N}$ and $a \in \mathbb{N}^t$, the lattice cube
 with least corner $a$ and side $m$ is the set of points $x \in \mathbb{N}^t$ such that
 $a_i \le x_i < a_i + m$ for every coordinate $i$; it is a subcube of size $m^t$.
 

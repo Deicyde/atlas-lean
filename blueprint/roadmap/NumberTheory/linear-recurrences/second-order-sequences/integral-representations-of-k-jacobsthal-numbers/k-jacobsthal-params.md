@@ -1,6 +1,6 @@
 # Lucas parameters of the k-Jacobsthal numbers
 
-**Lucas parameters of the k-Jacobsthal numbers.** For a natural number $k$, the Lucas-sequence
+For a natural number $k$, the Lucas-sequence
 parameters $(P, Q) = (k, -2)$. The Lucas sequences $J_{k,n} = U_n(k, -2)$ and
 $j_{k,n} = V_n(k, -2)$ with these parameters are the $k$-Jacobsthal numbers ($J_{k,0} = 0$,
 $J_{k,1} = 1$) and the $k$-Jacobsthal–Lucas numbers ($j_{k,0} = 2$, $j_{k,1} = k$); both satisfy

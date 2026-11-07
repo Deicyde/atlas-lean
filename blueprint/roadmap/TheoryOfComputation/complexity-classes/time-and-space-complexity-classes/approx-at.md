@@ -1,6 +1,6 @@
 # Approximation ratio at a precision
 
-**Approximation ratio at a precision.** Let $P$ be a maximization problem with objective
+Let $P$ be a maximization problem with objective
 value $\mathrm{val}(x, s)$ for instance $x$ and solution $s$, let $A$ be an algorithm taking a
 pair of bitstrings, let $k$ be a natural number and let $\rho$ be a rational number. Then $A$
 achieves ratio $\rho$ on $P$ at precision $k$ when, for every instance $x$ and every feasible

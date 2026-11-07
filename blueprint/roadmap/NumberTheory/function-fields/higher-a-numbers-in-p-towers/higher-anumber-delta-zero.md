@@ -1,6 +1,6 @@
 # The variant $\delta_0$ of the rounding indicator
 
-**The variant $\delta_0$ of the rounding indicator.** For natural numbers $p$, $d$ and $i$, with
+For natural numbers $p$, $d$ and $i$, with
 $\delta$ the rounding indicator for $p$ and $d$, the value $\delta_0(i)$ is $0$ if $p \mid i$, and
 $\delta(i)$ otherwise.
 

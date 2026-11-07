@@ -1,6 +1,6 @@
 # Conjugacy of the Fibonacci and iccanobiF iterates of $b$
 
-**Conjugacy of the Fibonacci and iccanobiF iterates of $b$.** Let $\varrho_F'$ be the
+Let $\varrho_F'$ be the
 iccanobiF substitution $a \mapsto ba$, $b \mapsto a$, extended to finite words by concatenation,
 and for each $k$ let $g_k$ be the finite Fibonacci word $f_k$ with each $0$ written as $a$ and
 each $1$ as $b$. For every $n \ge 1$,

@@ -1,6 +1,6 @@
 # Solutions of $3^x = y^2 + 2$
 
-**Solutions of $3^x = y^2 + 2$.** For natural numbers $x, y$, we have $3^x = y^2 + 2$ if and
+For natural numbers $x, y$, we have $3^x = y^2 + 2$ if and
 only if $(x, y)$ is $(1, 1)$ or $(3, 5)$.
 
 ## Sources

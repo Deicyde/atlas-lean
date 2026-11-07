@@ -1,6 +1,6 @@
 # Inverse theorem for subset sums of nonnegative sets
 
-**Inverse theorem for subset sums of nonnegative sets.** Let $k \ge 3$ and let $\alpha, \beta$
+Let $k \ge 3$ and let $\alpha, \beta$
 be natural numbers with $1 \le \alpha \le k - 2$, $\beta \le k - 2$ and $\alpha + \beta \le k - 1$.
 Let $A$ be a set of $k$ integers, and let $\Sigma^{\beta}_{\alpha}(A)$ be the set of sums of
 subsets $B \subseteq A$ with $\alpha \le |B| \le k - \beta$. If all elements of $A$ are positive

@@ -1,6 +1,6 @@
 # A lex-minimal extension periodic from its second entry is periodic
 
-**A lex-minimal extension periodic from its second entry is periodic.** Let
+Let
 $\eta = (e_1, e_2, \dots)$ be a lex-minimal extension and let $p \ge 1$. If $e_{i+p} = e_i$
 for every $i \ge 2$, then $e_{1+p} = e_1$, so the whole sequence $\eta$ is periodic with
 period $p$.

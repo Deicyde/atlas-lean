@@ -1,6 +1,6 @@
 # Polynomial triangle removal in $\mathbb{F}_2^n$
 
-**Polynomial triangle removal in $\mathbb{F}_2^n$.** This is the statement that there are
+This is the statement that there are
 real constants $c > 0$ and $C > 0$ such that for every $n$, every $A \subseteq \mathbb{F}_2^n$
 and every real $\varepsilon$ with $0 < \varepsilon \le 1$: if every triangle-free $B \subseteq A$
 misses at least $\varepsilon 2^n$ elements of $A$, then the triangle count of $A$ is at least

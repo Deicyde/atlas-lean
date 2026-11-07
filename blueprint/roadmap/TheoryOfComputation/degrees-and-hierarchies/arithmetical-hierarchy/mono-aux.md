@@ -1,6 +1,6 @@
 # Monotonicity of the hierarchy
 
-**Monotonicity of the hierarchy.** For every natural number $n$, writing $\Sigma_n$ and $\Pi_n$
+For every natural number $n$, writing $\Sigma_n$ and $\Pi_n$
 for the classes of the arithmetical hierarchy, every $\Sigma_n$ set of natural numbers is in
 $\Sigma_{n+1}$ and every $\Pi_n$ set of natural numbers is in $\Pi_{n+1}$.
 

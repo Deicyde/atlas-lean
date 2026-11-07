@@ -1,6 +1,6 @@
 # The Viterbi variables of a hidden Markov model
 
-**The Viterbi variables of a hidden Markov model.** Let $h$ be a hidden Markov model with a
+Let $h$ be a hidden Markov model with a
 finite nonempty set of states $S$, initial weights $\pi(s)$, transition weights $a(s', s)$ and
 emission weights $b(s, o)$ in a linearly ordered commutative semiring $R$, and let
 $x_0, x_1, \dots$ be a sequence of observations. The Viterbi variables $V_t(s)$, for

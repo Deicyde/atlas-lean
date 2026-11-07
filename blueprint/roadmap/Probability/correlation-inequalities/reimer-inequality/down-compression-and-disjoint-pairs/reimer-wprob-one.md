@@ -1,3 +1,3 @@
 # Reimer's inequality on one coordinate
 
-**Reimer's inequality on one coordinate.** Reimer's inequality on one coordinate, for all events.
+Reimer's inequality on one coordinate, for all events.

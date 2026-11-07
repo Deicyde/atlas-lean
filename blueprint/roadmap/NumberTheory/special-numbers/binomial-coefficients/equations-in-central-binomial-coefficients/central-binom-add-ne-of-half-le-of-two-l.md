@@ -1,6 +1,6 @@
 # Central binomial products with $x \ge 2$ and $a \ge b$
 
-**Central binomial products with $x \ge 2$ and $a \ge b$.** Let $x$, $a$, $b$ be natural
+Let $x$, $a$, $b$ be natural
 numbers with $x \ge 2$ and $1 \le b \le a$. Then
 $\binom{2(a+b)}{a+b} \ne \binom{2a}{a}\binom{x+2b}{b}$.
 

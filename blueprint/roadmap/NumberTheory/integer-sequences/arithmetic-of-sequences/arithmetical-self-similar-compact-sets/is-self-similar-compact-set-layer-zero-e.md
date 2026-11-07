@@ -1,6 +1,6 @@
 # Enumerating the isolated points of a self-similar compact set
 
-**Enumerating the isolated points of a self-similar compact set.** Let $K$ be a self-similar
+Let $K$ be a self-similar
 compact set of module $\mu$ and ratio $\rho$, and let $T_0 = K \setminus K'$ be the set of
 isolated points of $K$, where $K'$ is the derived set of $K$. Let $\alpha \mapsto K[\alpha]$ be a
 strictly decreasing map from the ordinals $\alpha \le \omega^\omega$ onto $K$, and

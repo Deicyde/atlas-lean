@@ -1,3 +1,3 @@
 # Integer-valued corner weight
 
-**Integer-valued corner weight.** The vertex weight `cornerWeight` extended to integers.
+The vertex weight `cornerWeight` extended to integers.

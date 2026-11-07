@@ -1,6 +1,6 @@
 # Counting binary matrices up to cyclic rotations
 
-**Counting binary matrices up to cyclic rotations.** Let $m, n \ge 1$. For an $m \times n$
+Let $m, n \ge 1$. For an $m \times n$
 matrix $x$ with entries $x_{r,s} \in \{0, 1\}$, rows indexed by $0 \le r < m$ and columns by
 $0 \le s < n$, put $N(x) = \sum_{r=0}^{m-1} \sum_{s=0}^{n-1} x_{r,s} \, 2^{rn+s}$, and for
 $0 \le i < m$, $0 \le j < n$ let $x^{(i,j)}$ be the rotated matrix with entries

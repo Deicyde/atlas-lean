@@ -1,6 +1,6 @@
 # Run of one literal routine (transition-clause generator)
 
-**Run of one literal routine (transition-clause generator).** Let $i < N$ be a situation, $j$
+Let $i < N$ be a situation, $j$
 less than the number of literals, and $F$ a counter assignment whose scratch counters $Q$,
 $\mathrm{Ka}$, $\mathrm{tmp}$, $\mathrm{md}$, $c_1$, $c_2$ are $0$. Let
 $q = F(\mathrm{TW}) + k_A(j) F(\mathrm{HG}) + k_B(j) F(\mathrm{Wc}) + c_i(j)$, where $k_A$, $k_B$

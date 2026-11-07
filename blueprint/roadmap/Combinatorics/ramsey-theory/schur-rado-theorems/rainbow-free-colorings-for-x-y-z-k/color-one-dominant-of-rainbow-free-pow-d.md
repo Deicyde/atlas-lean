@@ -1,6 +1,6 @@
 # The color of one dominates bichromatic strings
 
-**The color of one dominates bichromatic strings.** Let $r$ and $k$ be natural numbers and let
+Let $r$ and $k$ be natural numbers and let
 $c$ be a coloring of the positive integers with $r$ colors that uses every color on some positive
 integer and is rainbow-free for $x - y = z^k$: no positive integers $x, y, z$ with $x = y + z^k$
 have $c(x), c(y), c(z)$ pairwise distinct. Then for every positive integer $i$ and every natural

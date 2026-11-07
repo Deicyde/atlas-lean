@@ -1,6 +1,6 @@
 # Normal ideal on a cardinal
 
-**Normal ideal on a cardinal.** Let κ be a cardinal, identified with
+Let κ be a cardinal, identified with
 κ = Iio(κ.ord) = {α : Ordinal ∣ α < κ.ord},
 and let I⊆𝒫(κ).
 

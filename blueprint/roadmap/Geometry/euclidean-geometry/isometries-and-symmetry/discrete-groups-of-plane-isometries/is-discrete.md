@@ -1,6 +1,6 @@
 # Separation criterion for groups of plane isometries
 
-**Separation criterion for groups of plane isometries.** A group $G$ of affine isometries of
+A group $G$ of affine isometries of
 the Euclidean plane satisfies the separation criterion if there is $\varepsilon > 0$ such that
 every element $f \ne \mathrm{id}$ of $G$ whose linear part is the identity satisfies
 $\|f(0)\| \ge \varepsilon$, and every element $f$ of $G$ whose linear part $A$ is not the

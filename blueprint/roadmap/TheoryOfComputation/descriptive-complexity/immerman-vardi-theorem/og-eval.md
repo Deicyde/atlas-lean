@@ -1,6 +1,6 @@
 # Evaluation of FO + LFP formulas in an ordered graph
 
-**Evaluation of FO + LFP formulas in an ordered graph.** Let $G$ be an ordered graph with
+Let $G$ be an ordered graph with
 vertex set $V = \{0, \dots, n - 1\}$, let $\rho$ assign a vertex to each variable
 $0, 1, 2, \dots$, and let $S$ assign to each relation symbol $i$ a predicate $S_i$ on lists of
 vertices. The truth of a formula is defined by recursion: $x_a = x_b$ holds when

@@ -1,6 +1,6 @@
 # Perfect covers containing a perfect cover of a subgroup
 
-**Perfect covers containing a perfect cover of a subgroup.** Let $G$ be an abelian group of
+Let $G$ be an abelian group of
 order $2^n$ and $H$ a subgroup of order $2^m$. Then the number of perfect covers of $G$ that
 contain a perfect cover of $H$ is $2^{m(n-m)} \cdot C(G/H) \cdot C(H)$, where $C(K)$ denotes the
 number of perfect covers of a group $K$.

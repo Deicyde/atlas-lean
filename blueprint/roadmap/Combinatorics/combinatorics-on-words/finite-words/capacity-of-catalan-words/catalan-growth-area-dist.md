@@ -1,6 +1,6 @@
 # Area distribution of words with unit-bounded rises, by first letter
 
-**Area distribution of words with unit-bounded rises, by first letter.** For natural numbers
+For natural numbers
 $m$, $j$ and $\ell$, let $\mathcal{C}_{m,j}$ be the set of words of length $m$ with letters in
 $\{1, \dots, j\}$, each letter at most one more than the letter before it, and last letter $j$.
 Then $c(m, j, \ell; q) \in \mathbb{Z}[q]$ is the area distribution of the words in

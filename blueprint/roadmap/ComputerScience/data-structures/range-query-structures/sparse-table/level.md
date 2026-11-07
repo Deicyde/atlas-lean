@@ -1,6 +1,6 @@
 # Levels of a sparse table
 
-**Levels of a sparse table.** For a list $a$ over a type with a minimum operation $\min$, the
+For a list $a$ over a type with a minimum operation $\min$, the
 levels of $a$ are defined recursively: level $0$ is $a$, and if level $k$ is
 $\ell = (\ell_0, \dots, \ell_{m-1})$, then level $k + 1$ is the list of the values
 $\min(\ell_i, \ell_{i+2^k})$ for $0 \le i < m - 2^k$ (empty when $m \le 2^k$).

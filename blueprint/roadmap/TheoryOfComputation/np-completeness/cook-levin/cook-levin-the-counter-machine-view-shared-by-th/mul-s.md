@@ -1,6 +1,6 @@
 # The multiplication routine of a counter machine
 
-**The multiplication routine of a counter machine.** Let $a, a_d, b, c, t$ be
+Let $a, a_d, b, c, t$ be
 counters, let $\mathrm{mk}$ assign a label to each stage of the multiplication routine, and let
 $\mathrm{next}$ be a label. The routine assigns to each stage the following counter-machine
 instruction. At head: pop a unit from $a$, then push a unit onto $a_d$ and go to

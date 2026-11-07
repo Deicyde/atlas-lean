@@ -1,6 +1,6 @@
 # The class IP
 
-**The class IP.** A decision problem $L$ is in $\mathsf{IP}$ when there are polynomials $s$,
+A decision problem $L$ is in $\mathsf{IP}$ when there are polynomials $s$,
 $r$ and $q$ with natural-number coefficients and polynomial-time functions $V_{\mathrm{msg}}$
 (the verifier's message function) and $V_{\mathrm{dec}}$ (its decision function) with the
 following property. For a bitstring $x$, a prover $P$ (an arbitrary function from transcripts

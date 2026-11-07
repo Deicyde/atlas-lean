@@ -1,6 +1,6 @@
 # Cramér–Rao inequality, multiplicative form
 
-**Cramér–Rao inequality, multiplicative form**: under the hypotheses of `cramerRao_general`,
+Under the hypotheses of `cramerRao_general`,
 `g'(θ)² ≤ I(θ) · Var_θ T`. Unlike the quotient form, this is informative when `I(θ) = 0`: it then
 says `g'(θ) = 0`.
 

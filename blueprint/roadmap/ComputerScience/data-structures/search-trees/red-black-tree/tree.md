@@ -1,6 +1,6 @@
 # Red-black tree data type
 
-**Red-black tree data type.** A red-black tree with keys in a type $\alpha$ is either empty or
+A red-black tree with keys in a type $\alpha$ is either empty or
 a node consisting of a color (red or black), a left subtree, a key in $\alpha$, and a right
 subtree.
 

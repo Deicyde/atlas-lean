@@ -1,6 +1,6 @@
 # $k$-divisible Lucas super Catalan numbers have non-negative coefficients
 
-**$k$-divisible Lucas super Catalan numbers have non-negative coefficients.** Let $\{j\}$ be
+Let $\{j\}$ be
 the Lucas polynomials in $s$ and $t$ ($\{0\} = 0$, $\{1\} = 1$, $\{j+2\} = s\{j+1\} + t\{j\}$)
 and let $\{n : k\}! = \{k\}\{2k\} \cdots \{nk\}$ be the $k$-divisible Lucas factorial. For all
 natural numbers $k$, $m$ and $n$ with $k \ge 1$ there is a polynomial $p \in \mathbb{Z}[s, t]$

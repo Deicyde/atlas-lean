@@ -1,6 +1,6 @@
 # Cache invariant of an interval tree
 
-**Cache invariant of an interval tree.** An interval tree satisfies the cache invariant when
+An interval tree satisfies the cache invariant when
 every cached field is exact, recursively. The empty tree satisfies it. A node with stored height
 $h$, stored size $s$, stored maximum $m$, left subtree $L$, entry $e$ and right subtree $R$
 satisfies it when $L$ and $R$ satisfy it, $m$ is at least the high endpoint of every entry of

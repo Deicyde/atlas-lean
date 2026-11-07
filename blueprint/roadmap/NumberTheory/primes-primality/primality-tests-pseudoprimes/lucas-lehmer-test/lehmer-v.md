@@ -1,6 +1,6 @@
 # Lehmer's companion sequence
 
-**Lehmer's companion sequence.** For integers $R$ and $Q$, Lehmer's companion sequence
+For integers $R$ and $Q$, Lehmer's companion sequence
 $\bar V_k(R, Q)$, $k = 0, 1, 2, \ldots$, is the integer sequence with $\bar V_0 = 2$,
 $\bar V_1 = 1$, $\bar V_2 = R - 2Q$, $\bar V_3 = R - 3Q$ and
 $\bar V_{k+4} = (R - 2Q)\,\bar V_{k+2} - Q^2\,\bar V_k$ for every $k \ge 0$.

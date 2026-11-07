@@ -1,6 +1,6 @@
 # Periodicity of $R_3(n)$ modulo $p$
 
-**Periodicity of $R_3(n)$ modulo $p$.** Let $R_3(n)$ be the number of partitions of $n$
+Let $R_3(n)$ be the number of partitions of $n$
 with max-rook number $3$. For all natural numbers $p \ge 2$ and $n > 9$,
 $R_3(n + 3p) \equiv R_3(n) \pmod{p}$.
 

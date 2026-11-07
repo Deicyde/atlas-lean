@@ -1,6 +1,6 @@
 # Computations inside a closed set lift to the restriction
 
-**Computations inside a closed set lift to the restriction.** Let $M$ be a pushdown automaton
+Let $M$ be a pushdown automaton
 and let $\Gamma_0$ be a finite set of stack symbols that contains the initial stack symbol of $M$
 and is closed for $M$. Suppose $M$ can compute from a configuration with state $q$, remaining
 input $w$ and stack $s$ to a configuration with state $q'$, remaining input $w'$ and stack $s'$,

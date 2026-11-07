@@ -1,6 +1,6 @@
 # Signs of an extraTrib to the left
 
-**Signs of an extraTrib to the left.** Let $S$ be an extraTrib. Then $S(k) < 0$ for some
+Let $S$ be an extraTrib. Then $S(k) < 0$ for some
 integer $k$, and whenever $S(k) < 0$, for every integer $n$ with $n + 2 < k$ the three terms
 $S(n)$, $S(n+1)$, $S(n+2)$ are neither all positive nor all negative.
 

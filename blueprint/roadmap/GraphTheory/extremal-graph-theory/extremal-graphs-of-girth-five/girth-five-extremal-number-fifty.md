@@ -1,6 +1,6 @@
 # Girth-five extremal number on fifty vertices
 
-**Girth-five extremal number on fifty vertices.** The girth-five extremal number
+The girth-five extremal number
 $\mathrm{ex}(50; \{C_3, C_4\})$, the largest number of edges of a simple graph on $50$
 vertices that contains no triangle and no four-cycle, equals $175$.
 

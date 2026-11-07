@@ -1,6 +1,6 @@
 # Thue–Siegel–Roth theorem
 
-**Thue–Siegel–Roth theorem.** Let $\alpha$ be an irrational real number that is algebraic over
+Let $\alpha$ be an irrational real number that is algebraic over
 $\mathbb{Q}$, and let $\varepsilon > 0$ be real. Then only finitely many rational numbers $q$
 satisfy $|\alpha - q| < 1 / b^{2 + \varepsilon}$, where $b$ is the denominator of $q$ in lowest
 terms.

@@ -1,6 +1,6 @@
 # Interlacing on the canonical line
 
-**Interlacing on the canonical line.** A complex polynomial $f$ CL-interlaces a complex
+A complex polynomial $f$ CL-interlaces a complex
 polynomial $g$ when $f$ and $g$ are nonzero, $\deg g = \deg f + 1$, all roots of $f$ and of $g$
 lie on the canonical line, and, writing $d = \deg f$ and listing the roots with multiplicity as
 $a_1, \dots, a_d$ for $f$ and $b_1, \dots, b_{d+1}$ for $g$, each list sorted by increasing

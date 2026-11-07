@@ -1,6 +1,6 @@
 # Normal form of Type 2 exact covering system digraphs
 
-**Normal form of Type 2 exact covering system digraphs.** Let $a_1, a_2 \in \mathbb{Z}$ with
+Let $a_1, a_2 \in \mathbb{Z}$ with
 $a_1 - a_2$ odd, and write $G(2n + a_1, -2n + a_2)$ for the exact covering system digraph on
 $\mathbb{Z}$ with an edge $m \to n$ exactly when $n = 2m + a_1$ or $n = -2m + a_2$. Then there is
 an odd natural number $a$ such that $G(2n + a_1, -2n + a_2)$ is isomorphic as a digraph to

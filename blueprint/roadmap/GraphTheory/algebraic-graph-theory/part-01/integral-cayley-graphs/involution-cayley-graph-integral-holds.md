@@ -1,6 +1,6 @@
 # Cayley graphs on normal sets of involutions are integral
 
-**Cayley graphs on normal sets of involutions are integral.** Let $G$ be a finite group and let
+Let $G$ be a finite group and let
 $R \subseteq G$ be a set of involutions ($r^2 = 1$ and $r \ne 1$ for every $r \in R$) that is
 closed under conjugation ($g r g^{-1} \in R$ for all $r \in R$ and $g \in G$) and generates $G$.
 Then the Cayley graph $\mathrm{Cay}(G, R)$, whose vertices are the elements of $G$ with distinct

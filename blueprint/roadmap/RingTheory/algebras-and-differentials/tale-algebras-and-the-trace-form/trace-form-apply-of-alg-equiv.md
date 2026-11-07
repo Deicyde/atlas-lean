@@ -1,6 +1,6 @@
 # The trace form is invariant under algebra isomorphisms
 
-**The trace form is invariant under algebra isomorphisms.** For a commutative algebra $A$
+For a commutative algebra $A$
 over a field $K$ and $z \in A$, write $\operatorname{Tr}_{A/K}(z)$ for the trace of the $K$-linear
 map given by multiplication by $z$, taken to be $0$ when $A$ is infinite-dimensional over $K$. Let
 $R$ and $S$ be commutative algebras over $K$ and let $e : R \to S$ be an isomorphism of

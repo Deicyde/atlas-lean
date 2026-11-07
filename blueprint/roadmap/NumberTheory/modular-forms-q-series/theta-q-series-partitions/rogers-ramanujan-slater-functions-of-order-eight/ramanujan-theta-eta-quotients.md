@@ -1,6 +1,6 @@
 # Eta-quotients of Ramanujan's theta functions
 
-**Eta-quotients of Ramanujan's theta functions.** Let $q$ be a complex number with
+Let $q$ be a complex number with
 $|q| < 1$. Write $(a;q)_\infty = \prod_{n \ge 0} (1 - a q^n)$ and $f_k = (q^k;q^k)_\infty$, and
 let $f(a,b) = \sum_{n \in \mathbb{Z}} a^{n(n+1)/2} b^{n(n-1)/2}$ be Ramanujan's theta function.
 Then $f(q,q) f_1^2 f_4^2 = f_2^5$, $f(q,q^3) f_1 = f_2^2$, $f(-q,-q) f_2 = f_1^2$,

@@ -1,6 +1,6 @@
 # Linear coefficient of a max-min product
 
-**Linear coefficient of a max-min product.** For all sequences
+For all sequences
 $g, h \colon \mathbb{N} \to \mathbb{N}$, the max-min product satisfies
 $(g \otimes h)_1 = \max(\min(g_0, h_1), \min(g_1, h_0))$.
 

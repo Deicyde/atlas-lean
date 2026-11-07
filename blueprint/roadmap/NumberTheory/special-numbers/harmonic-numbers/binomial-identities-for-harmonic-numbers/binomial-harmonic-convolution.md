@@ -1,6 +1,6 @@
 # Binomial-harmonic convolution identity
 
-**Binomial-harmonic convolution identity.** Let $H_m = \sum_{i=1}^{m} 1/i$ denote the $m$-th
+Let $H_m = \sum_{i=1}^{m} 1/i$ denote the $m$-th
 harmonic number. For natural numbers $k$ and $n$ with $1 \le k \le n$,
 
 $$\sum_{\nu=1}^{n} \left(\binom{n+k-\nu-1}{n-1} - \binom{n+k-\nu-1}{k-1}\right) H_\nu =

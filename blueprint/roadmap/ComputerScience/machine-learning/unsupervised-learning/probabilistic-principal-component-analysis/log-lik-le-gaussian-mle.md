@@ -1,6 +1,6 @@
 # The probabilistic PCA likelihood is at most the unconstrained Gaussian maximum
 
-**The probabilistic PCA likelihood is at most the unconstrained Gaussian maximum.** Let
+Let
 $x_1, \dots, x_N \in \mathbb{R}^d$ be data whose sample covariance $S$ is positive definite, and
 let $\bar{x}$ be their sample mean. Then for every $\mu \in \mathbb{R}^d$, every real
 $d \times q$ matrix $W$ and every real $\sigma^2 > 0$, the probabilistic PCA log-likelihood of the

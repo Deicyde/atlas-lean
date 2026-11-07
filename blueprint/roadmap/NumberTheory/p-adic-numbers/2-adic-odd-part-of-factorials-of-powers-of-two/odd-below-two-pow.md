@@ -1,6 +1,6 @@
 # Odd numbers below a power of two
 
-**Odd numbers below a power of two.** For a natural number $e$, $S_e$ is the finite set of odd
+For a natural number $e$, $S_e$ is the finite set of odd
 natural numbers $i$ with $1 \le i < 2^e$.
 
 ## Sources

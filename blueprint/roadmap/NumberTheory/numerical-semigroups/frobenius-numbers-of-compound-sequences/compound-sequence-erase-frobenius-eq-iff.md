@@ -1,6 +1,6 @@
 # Deletions from a compound sequence that keep the Frobenius number
 
-**Deletions from a compound sequence that keep the Frobenius number.** Let $n$ be a natural
+Let $n$ be a natural
 number and let $(a_i)_{i \ge 0}$ and $(b_i)_{i \ge 0}$ be sequences of natural numbers with
 $0 < a_i < b_i$ for $1 \le i \le n$ and $\gcd(a_i, b_j) = 1$ whenever $1 \le j \le i \le n$; let
 $c_0, \dots, c_n$ be their compound sequence. Let $0 \le j \le n$ and suppose that the terms

@@ -1,6 +1,6 @@
 # An $L^p$ bound for Hilbert's integral operator
 
-**An $L^p$ bound for Hilbert's integral operator.** Let $p$ be a real number with
+Let $p$ be a real number with
 $p > 1$ and let $T$ be the operator on functions $g : \mathbb{R} \to \mathbb{R}$ given by
 
 $$Tg(x) = \int_0^\infty \frac{g(y)}{x+y}\,dy \qquad (x \in \mathbb{R}).$$

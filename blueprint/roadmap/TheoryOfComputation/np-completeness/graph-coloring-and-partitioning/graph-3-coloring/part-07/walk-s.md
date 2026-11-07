@@ -1,6 +1,6 @@
 # One step of the joint walk of the 3-COLOR verifier
 
-**One step of the joint walk of the 3-COLOR verifier.** The statement pops the top symbol of
+The statement pops the top symbol of
 each of the endpoint counters $U$ and $V$ (a pop from an empty counter leaves it empty) and then
 moves the next color code $(a, b)$ from the color stack $P$ onto the scratch stack $T$, rejecting
 if $P$ is empty. It continues at the joint walk again if both counters were nonempty; at the walk

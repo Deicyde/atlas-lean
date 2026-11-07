@@ -1,6 +1,6 @@
 # Valid sparse table
 
-**Valid sparse table.** A sparse table over a type with a minimum operation, whose data is a
+A sparse table over a type with a minimum operation, whose data is a
 list $a$ of length $n$, is valid when it has exactly $m + 1$ levels, where
 $m = \lfloor \log_2 n \rfloor$ for $n \ge 1$ and $m = 0$ for $n = 0$, and for each $k \le m$ its
 level $k$ is the list $L_k$ defined by $L_0 = a$ and, for $x = L_j$, $L_{j+1}$ is the list of

@@ -1,6 +1,6 @@
 # An alternating sum of floors of square roots
 
-**An alternating sum of floors of square roots.** For every odd positive integer $n$,
+For every odd positive integer $n$,
 $\sum_{j=1}^{n} (-1)^{j+1} \lfloor \sqrt{jn} \rfloor = (n+1)/2$.
 
 ## Sources

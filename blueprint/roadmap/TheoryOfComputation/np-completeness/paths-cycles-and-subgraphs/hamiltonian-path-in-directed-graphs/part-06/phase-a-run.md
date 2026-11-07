@@ -1,6 +1,6 @@
 # Phase A of the HAMPATH emitter
 
-**Phase A of the HAMPATH emitter.** Let $\varphi$ be a CNF formula with $m$ clauses whose token
+Let $\varphi$ be a CNF formula with $m$ clauses whose token
 list has length $L$, let $o$ be a list of bits and let $v$ be a bit. Started at label
 $\mathrm{a0}$ with internal state $v$ and the stacks of the initial emitter state of $\varphi$ and
 $o$ (the token stack holding the tokens of $\varphi$ reversed, the output stack holding $o$, and

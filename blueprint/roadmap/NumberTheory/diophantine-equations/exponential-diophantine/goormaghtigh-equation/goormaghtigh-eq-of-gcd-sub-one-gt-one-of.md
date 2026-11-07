@@ -1,6 +1,6 @@
 # Goormaghtigh solutions with $\gcd(m - 1, n - 1) > 1$ and $m \le 50$
 
-**Goormaghtigh solutions with $\gcd(m - 1, n - 1) > 1$ and $m \le 50$.** Let $x, y, m, n$ be
+Let $x, y, m, n$ be
 natural numbers with $2 \le x < y$, $n > 2$, $m \le 50$ and $\gcd(m - 1, n - 1) > 1$, and suppose
 
 $$N = \sum_{i=0}^{m-1} x^i = \sum_{i=0}^{n-1} y^i,$$

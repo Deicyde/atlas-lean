@@ -1,6 +1,6 @@
 # Weighted convolution sums as sums of shifted sums
 
-**Weighted convolution sums as sums of shifted sums.** Let $F$ be a finite field and let
+Let $F$ be a finite field and let
 $\gamma, \alpha, \beta$ be functions from $F[T]$ to $\mathbb{C}$. Write $\alpha * \beta$ for the
 monic Dirichlet convolution, $\mu$ for the Möbius function of $F[T]$, and $\lambda = \gamma * \mu$.
 For a natural number $n$ let $M_{\le n}$ be the set of monic polynomials in $F[T]$ of degree at

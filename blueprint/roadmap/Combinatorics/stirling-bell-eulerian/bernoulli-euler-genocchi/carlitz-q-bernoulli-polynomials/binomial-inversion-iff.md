@@ -1,6 +1,6 @@
 # Binomial inversion
 
-**Binomial inversion.** For real sequences $(u_n)$ and $(v_n)$, the identities
+For real sequences $(u_n)$ and $(v_n)$, the identities
 $u_n = \sum_{k=0}^{n} \binom{n}{k} v_k$ hold for all natural numbers $n$ if and only if the
 identities $v_n = \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} u_k$ hold for all natural numbers $n$.
 

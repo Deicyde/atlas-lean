@@ -1,6 +1,6 @@
 # Discriminants of tuples from $B$ lie in the extension discriminant
 
-**Discriminants of tuples from $B$ lie in the extension discriminant.** Let $A$ and $B$ be
+Let $A$ and $B$ be
 commutative rings and $K$ and $L$ fields with $L$ finite-dimensional over $K$, with algebra maps
 forming scalar towers $A \to K \to L$ and $A \to B \to L$, and let $n = [L : K]$. If
 $b_1, \dots, b_n \in L$ all lie in the image of $B$ in $L$, then their discriminant

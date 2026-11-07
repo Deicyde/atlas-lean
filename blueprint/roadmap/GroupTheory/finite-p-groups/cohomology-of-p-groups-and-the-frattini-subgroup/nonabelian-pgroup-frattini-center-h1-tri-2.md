@@ -1,6 +1,6 @@
 # A non-abelian $p$-group with $H^1(G/\Phi(G), Z(\Phi(G))) = 0$ (Kourovka 17.2)
 
-**A non-abelian $p$-group with $H^1(G/\Phi(G), Z(\Phi(G))) = 0$ (Kourovka 17.2).** There exist a
+There exist a
 prime $p$ and a finite non-abelian $p$-group $G$ such that, writing $\Phi(G)$ for the Frattini
 subgroup of $G$ and $Z(\Phi(G))$ for its centre, the first cohomology group
 $H^1(G/\Phi(G), Z(\Phi(G)))$ for the conjugation action of $G/\Phi(G)$ on $Z(\Phi(G))$ is trivial.

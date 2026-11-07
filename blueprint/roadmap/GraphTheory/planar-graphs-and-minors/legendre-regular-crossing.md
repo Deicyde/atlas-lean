@@ -1,6 +1,6 @@
 # Crossing points of the regular drawing of the complete bipartite graph
 
-**Crossing points of the regular drawing of the complete bipartite graph.** Let $n$ be a
+Let $n$ be a
 natural number. In the regular drawing of $K_{n,n}$ in $\mathbb{Q}^2$, the left vertices are the
 points $(0, i)$ and the right vertices are the points $(1, j)$ for $0 \le i, j < n$, and each edge
 is the straight segment from $(0, i)$ to $(1, j)$. For $i < i'$ and $j' < j$, the edges from

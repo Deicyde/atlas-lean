@@ -1,6 +1,6 @@
 # Odd-index binomial sum with odd reciprocal weights
 
-**Odd-index binomial sum with odd reciprocal weights.** For every natural number $n$,
+For every natural number $n$,
 
 $$\sum_{k=1}^{\lceil n/2 \rceil} \frac{1}{2k+1} \binom{n}{2k-1} =
 \frac{2^{n+1}}{n+2} - \frac{2^n}{n+1}.$$

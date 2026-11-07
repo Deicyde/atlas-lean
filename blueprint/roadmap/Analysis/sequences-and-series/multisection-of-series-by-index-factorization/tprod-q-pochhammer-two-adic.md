@@ -1,6 +1,6 @@
 # 2-adic dissection of the Euler function
 
-**2-adic dissection of the Euler function.** For every complex number $q$ with $|q| < 1$,
+For every complex number $q$ with $|q| < 1$,
 with the infinite q-Pochhammer symbol $(a; r)_\infty = \prod_{k \ge 0} (1 - a r^k)$, the
 unconditional infinite product over $j \ge 0$ satisfies
 

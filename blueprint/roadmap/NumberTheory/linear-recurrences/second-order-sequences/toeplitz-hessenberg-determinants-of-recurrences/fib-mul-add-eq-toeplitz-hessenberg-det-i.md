@@ -1,6 +1,6 @@
 # Fibonacci subsequences $F_{\ell n + m}$ that are Toeplitz–Hessenberg determinants
 
-**Fibonacci subsequences $F_{\ell n + m}$ that are Toeplitz–Hessenberg determinants.** For
+For
 complex numbers $a, b, c, d$ and $n \ge 1$, let $u_n(a, b, c, d)$ be the determinant of the
 $n \times n$ matrix whose entry in row $i$ and column $j$ is $a$ if $j = i + 1$, is
 $(bp + c) d^p$ with $p = i - j + 1$ if $j \le i$, and is $0$ if $j > i + 1$. Let $F_k$ be the

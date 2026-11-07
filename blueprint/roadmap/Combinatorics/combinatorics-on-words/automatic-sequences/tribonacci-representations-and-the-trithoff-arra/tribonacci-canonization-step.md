@@ -1,6 +1,6 @@
 # One step of Tribonacci canonization
 
-**One step of Tribonacci canonization.** Let $w$ be a word of natural-number digits, written
+Let $w$ be a word of natural-number digits, written
 most significant digit first, and let $v = 0w$ be $w$ padded with a $0$ on the left, with
 positions numbered from $0$. If leftmost carrying applies to $v$, the step returns its result
 (Step 1). Otherwise let $p$ be the position of the leftmost digit $\ge 2$ of $v$ (the improper

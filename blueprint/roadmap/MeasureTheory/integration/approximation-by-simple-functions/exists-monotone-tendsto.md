@@ -1,6 +1,6 @@
 # Approximation of nonnegative measurable functions by simple functions
 
-**Approximation of nonnegative measurable functions by simple functions.** Let $\alpha$ be a
+Let $\alpha$ be a
 measurable space and $f : \alpha \to [0, \infty]$ a measurable function. There is a sequence of
 simple functions $\varphi_n : \alpha \to [0, \infty]$ ($n \in \mathbb{N}$) such that:
 (a) $\varphi_0 \le \varphi_1 \le \cdots \le f$ pointwise; (b) $\varphi_n(a) \to f(a)$ for every

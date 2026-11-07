@@ -1,6 +1,6 @@
 # Positivity of q-Fuss-Catalan numbers of Coxeter groups
 
-**Positivity of q-Fuss-Catalan numbers of Coxeter groups.** Let $T$ be one of the types $A_n$
+Let $T$ be one of the types $A_n$
 ($n \ge 1$), $B_n$ ($n \ge 2$), $D_n$ ($n \ge 4$), $E_6$, $E_7$, $E_8$, $F_4$, $H_3$, $H_4$ or
 $I_2(m)$ ($m \ge 3$) of irreducible finite Coxeter groups, with degrees $d_1, \dots, d_r$ and
 Coxeter number $h$ (the largest degree), and let $k \ge 1$ be an integer. With the $q$-integers

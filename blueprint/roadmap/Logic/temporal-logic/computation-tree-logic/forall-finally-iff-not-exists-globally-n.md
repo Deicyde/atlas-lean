@@ -1,6 +1,6 @@
 # On serial systems $\mathrm{AF}$ is $\neg\mathrm{EG}\,\neg$
 
-**On serial systems $\mathrm{AF}$ is $\neg\mathrm{EG}\,\neg$.** Let $\varphi$ be a CTL
+Let $\varphi$ be a CTL
 formula and $s$ a state of a serial labelled transition system with a valuation of the atoms.
 Then $s$ satisfies $\mathrm{AF}\,\varphi$ if and only if $s$ does not satisfy
 $\mathrm{EG}\,\neg\varphi$.

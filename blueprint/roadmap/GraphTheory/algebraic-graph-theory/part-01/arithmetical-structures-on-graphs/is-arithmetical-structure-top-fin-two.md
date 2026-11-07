@@ -1,6 +1,6 @@
 # The all-ones structure on a single edge
 
-**The all-ones structure on a single edge.** On the graph with two vertices joined by an edge,
+On the graph with two vertices joined by an edge,
 the labelings $d = (1, 1)$ and $r = (1, 1)$ form an arithmetical structure.
 
 ## Sources

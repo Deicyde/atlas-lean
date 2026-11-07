@@ -1,6 +1,6 @@
 # Factorization of the Dirichlet series of powers of the mean gcd-sum function
 
-**Factorization of the Dirichlet series of powers of the mean gcd-sum function.** Let $k$ be a
+Let $k$ be a
 natural number and let $A$ be the mean gcd-sum function. There are functions
 $g, h \colon \mathbb{N} \to \mathbb{C}$ such that the Dirichlet series
 $G_k(s) = \sum_{n \ge 1} g(n) n^{-s}$ converges absolutely for every complex $s$ with

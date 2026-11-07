@@ -1,6 +1,6 @@
 # Predicates recognizable by a single-tape nondeterministic machine
 
-**Predicates recognizable by a single-tape nondeterministic machine.** Let $\alpha$ be a type
+Let $\alpha$ be a type
 with a primitive recursive encoding into $\mathbb{N}$. A predicate $p$ on $\alpha$ is recognizable
 by a single-tape nondeterministic machine when there are a finite set of states, a finite tape
 alphabet $\Sigma$ with decidable equality, an injective map $\iota$ from the bits $\{0, 1\}$ to

@@ -1,6 +1,6 @@
 # Bradley–Zhao duality for q-multiple zeta values
 
-**Bradley–Zhao duality for q-multiple zeta values.** For every $r \ge 0$ and all natural
+For every $r \ge 0$ and all natural
 numbers $a_1, b_1, \dots, a_r, b_r \ge 1$, the Bradley–Zhao q-multiple zeta values satisfy
 
 $$\zeta_q^{BZ}(a_1 + 1, \{1\}^{b_1 - 1}, \dots, a_r + 1, \{1\}^{b_r - 1}) =

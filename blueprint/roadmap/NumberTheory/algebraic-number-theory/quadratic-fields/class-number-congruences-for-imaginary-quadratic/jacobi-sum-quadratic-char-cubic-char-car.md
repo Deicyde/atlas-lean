@@ -1,6 +1,6 @@
 # The Jacobi sum of the quadratic and a cubic character of a field with $q^2$ elements
 
-**The Jacobi sum of the quadratic and a cubic character of a field with $q^2$ elements.** Let
+Let
 $q$ be an odd prime with $q \equiv 2 \pmod 3$, let $F$ be a finite field with $q^2$ elements, let
 $\phi$ be the quadratic character of $F$, and let $\chi : F \to \mathbb{C}$ be a multiplicative
 character of order $3$, that is, $\chi^3 = 1$ and $\chi \ne 1$ (characters take the value $0$ at

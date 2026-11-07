@@ -1,6 +1,6 @@
 # Generalized cubic partitions of zero
 
-**Generalized cubic partitions of zero.** For every natural number $c$, the generalized
+For every natural number $c$, the generalized
 cubic partition number $a_c(0)$ equals $1$.
 
 ## Sources

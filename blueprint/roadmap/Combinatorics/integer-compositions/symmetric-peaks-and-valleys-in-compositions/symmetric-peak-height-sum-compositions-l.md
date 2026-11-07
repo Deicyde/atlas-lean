@@ -1,6 +1,6 @@
 # Total symmetric peak height over compositions with a fixed number of parts
 
-**Total symmetric peak height over compositions with a fixed number of parts.** For
+For
 $n, k \ge 0$ let $\mathrm{hsp}(n, k)$ be the sum, over all compositions $c$ of $n$ with exactly
 $k$ parts, of the symmetric peak height sum of the sequence of parts of $c$. If $k > 3$, then
 for every $n \ge 0$

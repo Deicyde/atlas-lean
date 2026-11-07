@@ -1,6 +1,6 @@
 # Symbols of a formula
 
-**Symbols of a formula.** The set of function and relation symbols of a first-order
+The set of function and relation symbols of a first-order
 language $L$ that occur in a formula $\varphi$ (with free variables and possibly bound
 variables), defined by recursion on $\varphi$: falsum $\bot$ contributes no symbols, an
 equation $t_1 = t_2$ contributes the symbols of the terms $t_1$ and $t_2$, an atomic formula

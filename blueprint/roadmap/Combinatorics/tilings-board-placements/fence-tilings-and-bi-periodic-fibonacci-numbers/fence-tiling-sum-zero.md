@@ -1,6 +1,6 @@
 # Weighted fence tilings of the empty board
 
-**Weighted fence tilings of the empty board.** For elements $a$ and $b$ of a commutative
+For elements $a$ and $b$ of a commutative
 semiring $R$, the weighted number $S_0$ of tilings of the $0$-board by half-squares and
 $(1/2, 1/2)$-fences equals $1$: the only tiling is the empty one.
 

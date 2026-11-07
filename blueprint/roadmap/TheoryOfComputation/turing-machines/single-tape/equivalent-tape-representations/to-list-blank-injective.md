@@ -1,6 +1,6 @@
 # Distinct stack tapes of non-blank symbols read as distinct half-tapes
 
-**Distinct stack tapes of non-blank symbols read as distinct half-tapes.** For an alphabet
+For an alphabet
 $\Gamma_0$ with blank symbol $b$, two stack tapes over the non-blank symbols of $\Gamma_0$ that read
 as the same half-tape over $\Gamma_0$ are equal.
 

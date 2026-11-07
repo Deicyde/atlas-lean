@@ -1,6 +1,6 @@
 # Motzkin generating function
 
-**Motzkin generating function.** The Motzkin series is the formal power series
+The Motzkin series is the formal power series
 $M(x) = \sum_{n \ge 0} m_n x^n$ in $\mathbb{Z}[[x]]$, where $m_n$ is the $n$-th Motzkin number.
 
 ## Sources

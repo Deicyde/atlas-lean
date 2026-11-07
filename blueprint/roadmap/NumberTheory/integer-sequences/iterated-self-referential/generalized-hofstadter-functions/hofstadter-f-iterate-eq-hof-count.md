@@ -1,6 +1,6 @@
 # Iterated Hofstadter functions as letter counts
 
-**Iterated Hofstadter functions as letter counts.** Let $k \ge 1$ and $n \ge 0$. Let $F_k$ be
+Let $k \ge 1$ and $n \ge 0$. Let $F_k$ be
 the generalized Hofstadter function and $F_k^j$ its $j$-fold iterate, let $x_k[0]\,x_k[1] \cdots$
 be the fixed point, beginning with $k$, of the substitution $\tau_k$ that sends $k$ to $k\,1$ and
 every other letter $i$ to $i + 1$, and for a property $P$ of letters let $C_k^{(P)}(m)$ be the

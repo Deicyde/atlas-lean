@@ -1,6 +1,6 @@
 # Maximum principle as a sequence in infinite dimension
 
-**Maximum principle as a sequence in infinite dimension.** Let $T$ be a compact self-adjoint
+Let $T$ be a compact self-adjoint
 operator on an infinite-dimensional Hilbert space $H$ over $\mathbb{K} = \mathbb{R}$ or
 $\mathbb{C}$. Then there are real numbers $s_0, s_1, s_2, \dots$ and an orthonormal sequence
 $u_0, u_1, u_2, \dots$ in $H$ such that $T u_n = s_n u_n$ and $|s_{n+1}| \le |s_n|$ for every

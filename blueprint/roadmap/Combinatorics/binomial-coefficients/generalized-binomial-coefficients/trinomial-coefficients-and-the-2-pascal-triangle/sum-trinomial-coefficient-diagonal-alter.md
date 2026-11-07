@@ -1,6 +1,6 @@
 # Alternating weighted diagonal sum of trinomial coefficients
 
-**Alternating weighted diagonal sum of trinomial coefficients.** Write $\binom{n}{k}_2$ for
+Write $\binom{n}{k}_2$ for
 the trinomial coefficient, the coefficient of $t^k$ in $(1+t+t^2)^n$. For every integer $n > 0$
 let $S_n = \sum_{k=0}^{\lfloor 2n/3 \rfloor} \binom{n-k}{k}_2 \frac{n}{n-k} (-1)^k$, a rational
 number. Then $S_n = 1$ if $n \equiv 1$ or $n \equiv 3 \pmod 4$, $S_n = -1$ if

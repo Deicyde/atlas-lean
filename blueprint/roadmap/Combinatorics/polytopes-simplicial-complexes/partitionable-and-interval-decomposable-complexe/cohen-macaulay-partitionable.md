@@ -1,6 +1,6 @@
 # Stanley–Garsia partitionability conjecture
 
-**Stanley–Garsia partitionability conjecture.** Every finite simplicial complex on the vertex
+Every finite simplicial complex on the vertex
 set $\mathbb{N}$ that is pure and Cohen–Macaulay over $\mathbb{Q}$ is partitionable.
 
 ## Sources

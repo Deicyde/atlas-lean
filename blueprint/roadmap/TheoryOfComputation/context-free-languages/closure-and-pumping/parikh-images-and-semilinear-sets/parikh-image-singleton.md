@@ -1,6 +1,6 @@
 # Parikh image of a singleton language
 
-**Parikh image of a singleton language.** The Parikh image of a singleton language is the singleton of the
+The Parikh image of a singleton language is the singleton of the
 Parikh vector.
 
 ## Sources

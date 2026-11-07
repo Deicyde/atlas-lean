@@ -1,6 +1,6 @@
 # General q-multiple zeta values
 
-**General q-multiple zeta values.** For natural numbers $k_1, \dots, k_r$ and polynomials
+For natural numbers $k_1, \dots, k_r$ and polynomials
 $Q_1, \dots, Q_r \in \mathbb{Q}[X]$, the general qMZV $\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r)$
 is the formal power series in $q$ over $\mathbb{Q}$ whose coefficient of $q^N$, for every $N$, is
 the coefficient of $q^N$ in the finite sum

@@ -1,6 +1,6 @@
 # A weighted $L^6$ bound with a slowly varying weight
 
-**A weighted $L^6$ bound with a slowly varying weight.** There is a constant $C > 0$ with the
+There is a constant $C > 0$ with the
 following property. Let $\theta : \mathbb{R} \to \mathbb{R}$ be continuously differentiable, with
 $\theta(x) > 0$ for every $x$ and $\|\theta'/\theta\|_{L^\infty(\mathbb{R})} \le 1$, and let
 $u : \mathbb{R} \to \mathbb{R}$ be smooth with compact support. Then

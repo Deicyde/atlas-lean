@@ -1,6 +1,6 @@
 # Continuous Turán number of a dilated finite pattern
 
-**Continuous Turán number of a dilated finite pattern.** Let $P \subseteq \mathbb{R}^2$ be
+Let $P \subseteq \mathbb{R}^2$ be
 finite, and let $c > 0$ and $d$ be real numbers such that any two consecutive distinct
 $x$-coordinates of points of $P$ differ by at least $c$ and at most $d$, and likewise for
 $y$-coordinates. Let $q > 1$ and $qP = \{qp : p \in P\}$. Then for every real $n > 0$,

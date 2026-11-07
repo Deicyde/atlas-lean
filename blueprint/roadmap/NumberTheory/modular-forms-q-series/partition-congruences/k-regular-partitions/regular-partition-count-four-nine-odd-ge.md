@@ -1,6 +1,6 @@
 # Generating function of $b_{4,9}$ at odd arguments
 
-**Generating function of $b_{4,9}$ at odd arguments.** Let $b_{4,9}(n)$ be the number of
+Let $b_{4,9}(n)$ be the number of
 partitions of $n$ with no part divisible by $4$ or by $9$, and write $f_k = (q^k; q^k)_\infty$
 for the Euler products. In the ring of integer power series in $q$,
 

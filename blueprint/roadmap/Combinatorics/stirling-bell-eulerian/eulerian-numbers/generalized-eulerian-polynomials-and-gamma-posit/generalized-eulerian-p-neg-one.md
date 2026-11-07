@@ -1,6 +1,6 @@
 # Generalized Eulerian polynomials at $x = -1$, $y = 1$
 
-**Generalized Eulerian polynomials at $x = -1$, $y = 1$.** Let $P_m(q, t; x, y)$ be the
+Let $P_m(q, t; x, y)$ be the
 generalized Eulerian polynomial. For a permutation $w$ write $\mathrm{cyc}(w)$ for its number of
 cycles (fixed points counted as cycles), $\mathrm{exc}(w)$ for its number of excedances (points
 $i$ with $w(i) > i$) and $\mathrm{dexc}(w)$ for its number of double excedances, and let $D_{2n}$

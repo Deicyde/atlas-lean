@@ -1,6 +1,6 @@
 # Hajdu–Tijdeman–Varga theorem on $(x-1)^c (x+1)^d$ modulo $3$
 
-**Hajdu–Tijdeman–Varga theorem on $(x-1)^c (x+1)^d$ modulo $3$.** Let $c$ and $d$ be natural
+Let $c$ and $d$ be natural
 numbers. If none of the coefficients of $x^0, x^1, \dots, x^{c+d}$ in the integer polynomial
 $(x-1)^c (x+1)^d$ is divisible by $3$, then there are natural numbers $i > j$ such that $c + d + 1$
 equals $3^j$, $2 \cdot 3^j$, $3^i + 3^j$ or $2 \cdot 3^i + 3^j$.

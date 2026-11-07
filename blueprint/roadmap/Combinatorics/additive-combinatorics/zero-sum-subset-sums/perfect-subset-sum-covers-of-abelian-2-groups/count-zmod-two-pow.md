@@ -1,6 +1,6 @@
 # Number of perfect covers of a cyclic 2-group
 
-**Number of perfect covers of a cyclic 2-group.** For every $n \ge 0$, the cyclic group
+For every $n \ge 0$, the cyclic group
 $\mathbb{Z}_{2^n}$ has exactly $2^{n(n-1)/2}$ perfect covers.
 
 ## Sources

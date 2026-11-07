@@ -1,6 +1,6 @@
 # Cyclic cube exchange
 
-**Cyclic cube exchange.** Let $n$ and $d$ be natural numbers. For an index
+Let $n$ and $d$ be natural numbers. For an index
 $k \in \{0, \dots, n-1\}^d$, the grid cube with index $k$ is the set of points of the torus
 $\mathbb{T}^d = (\mathbb{R}/\mathbb{Z})^d$ whose $i$-th coordinate is the class of a real
 number in $[k_i/n, (k_i + 1)/n)$ for every $i < d$. A measurable, invertible,

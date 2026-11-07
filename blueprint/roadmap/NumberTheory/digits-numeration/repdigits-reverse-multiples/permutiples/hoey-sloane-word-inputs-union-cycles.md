@@ -1,6 +1,6 @@
 # Hoey–Sloane words with permuted digits are unions of cycles
 
-**Hoey–Sloane words with permuted digits are unions of cycles.** Let $n \ge 1$ and $b \ge 2$
+Let $n \ge 1$ and $b \ge 2$
 be natural numbers, and let $s = (d_0, \hat d_0) \cdots (d_k, \hat d_k)$ be an input string in
 the language $L$ of the $(n, b)$-Hoey–Sloane machine such that $\hat d_j = d_{\sigma(j)}$ for all
 $j$, for some permutation $\sigma$ of $\{0, \dots, k\}$. Let

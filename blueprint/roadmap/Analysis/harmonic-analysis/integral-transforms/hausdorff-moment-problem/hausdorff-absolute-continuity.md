@@ -1,6 +1,6 @@
 # Hausdorff's absolute continuity criterion
 
-**Hausdorff's absolute continuity criterion.** Let $\mu$ be a probability measure on
+Let $\mu$ be a probability measure on
 $\mathbb{R}^d$ with $\mu(\mathbb{R}^d \setminus I^d) = 0$, where $I^d = [0,1]^d$ is the closed
 unit cube, and let $\lambda$ be Lebesgue measure restricted to $I^d$. For a measure $\rho$ write
 $m_\rho(n) = \int_{I^d} x^n \, d\rho(x)$ for its moments, indexed by multi-indices

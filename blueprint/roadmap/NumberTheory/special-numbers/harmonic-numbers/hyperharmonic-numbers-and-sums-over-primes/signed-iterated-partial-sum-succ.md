@@ -1,6 +1,6 @@
 # Recursion for the signed iterated partial sums
 
-**Recursion for the signed iterated partial sums.** Let $(b_n)_{n \ge 0}$ be a real sequence,
+Let $(b_n)_{n \ge 0}$ be a real sequence,
 fix a choice of signs, either $\varepsilon_k = (-1)^{k-1}$ for all $k$ or $\varepsilon_k = 1$ for
 all $k$, and let $S^{(r)}_n$ denote the signed iterated partial sum of $b$ of order $r$ at $n$ for
 this choice. Then for every $r \ge 1$ and every $n \in \mathbb{N}$,

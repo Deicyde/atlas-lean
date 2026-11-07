@@ -1,6 +1,6 @@
 # Frucht's theorem
 
-**Frucht's theorem.** Every finite group is isomorphic to the automorphism group of a finite simple
+Every finite group is isomorphic to the automorphism group of a finite simple
 graph.
 
 ## Sources

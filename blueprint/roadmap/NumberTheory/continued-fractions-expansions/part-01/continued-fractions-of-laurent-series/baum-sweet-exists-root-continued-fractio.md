@@ -1,6 +1,6 @@
 # Baum–Sweet: explicit continued fractions of roots
 
-**Baum–Sweet: explicit continued fractions of roots.** Let $n \ge 0$ and let
+Let $n \ge 0$ and let
 $P, Q \in \mathbb{F}_2[x]$ with $P + Q^{2^n} \ne 0$ and $P + Q^{2^n} \ne 1$. Then some
 $f \in \mathbb{F}_2((x^{-1}))$ satisfies $f^{2^n+1} + Q f^{2^n} + P f + QP + 1 = 0$ and has partial
 quotients $b_0 = Q$ and $b_k = P^{2^{(k-1)n}} + Q^{2^{kn}}$ for all $k \ge 1$, that is,

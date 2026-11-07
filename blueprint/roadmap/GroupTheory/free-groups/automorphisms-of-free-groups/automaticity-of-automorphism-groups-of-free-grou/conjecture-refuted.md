@@ -1,6 +1,6 @@
 # Negative answer to Farb's Question 7.3
 
-**Negative answer to Farb's Question 7.3.** It is not the case that for every natural number
+It is not the case that for every natural number
 $n > 3$ the automorphism group $\mathrm{Aut}(F_n)$ of the free group on $n$ generators is
 automatic.
 

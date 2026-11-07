@@ -1,6 +1,6 @@
 # The matrix $R_{1;\ell}$
 
-**The matrix $R_{1;\ell}$.** For a natural number $k$ and an integer $\ell$, $R_{1;\ell}$ is
+For a natural number $k$ and an integer $\ell$, $R_{1;\ell}$ is
 the $2 \times 2$ integer matrix
 
 $$\begin{pmatrix} 2k + \ell + 2 & 1 \\ -\ell^2 - 2k\ell + 2k - \ell + 1 & -\ell + 1 \end{pmatrix}.$$

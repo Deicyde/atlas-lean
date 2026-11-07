@@ -1,6 +1,6 @@
 # Multiplicity equals the dimension of the intertwining space
 
-**Multiplicity equals the dimension of the intertwining space.** Let $G$ be a finite group,
+Let $G$ be a finite group,
 $k$ an algebraically closed field, and $(\rho_i)_{i \in I}$ a family, indexed by a finite set $I$,
 of irreducible representations of $G$ on finite-dimensional $k$-vector spaces that are pairwise
 non-equivalent: $\rho_i$ and $\rho_j$ are not equivalent whenever $i \ne j$. Let $\sigma$ be a

@@ -1,6 +1,6 @@
 # Triangular $q$-binomial coefficients with no parts
 
-**Triangular $q$-binomial coefficients with no parts.** For every natural number $r$, the
+For every natural number $r$, the
 triangular $q$-binomial coefficient satisfies $t[r, 0] = 1$: only the empty partition has no
 parts.
 

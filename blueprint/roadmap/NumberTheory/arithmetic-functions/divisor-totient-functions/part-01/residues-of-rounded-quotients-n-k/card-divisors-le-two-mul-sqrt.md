@@ -1,6 +1,6 @@
 # Square-root bound for the number of divisors
 
-**Square-root bound for the number of divisors.** For every natural number $n$, the number
+For every natural number $n$, the number
 of positive divisors of $n$ is at most $2\sqrt{n}$. For $n = 0$ the set of divisors is taken to
 be empty, so the bound holds trivially.
 

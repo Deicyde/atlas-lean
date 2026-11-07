@@ -1,6 +1,6 @@
 # The linear coefficient of Proposition 5 vanishes at $\tau$
 
-**The linear coefficient of Proposition 5 vanishes at $\tau$.** Let $p$ be a prime and $d$ a
+Let $p$ be a prime and $d$ a
 divisor of $p - 1$, let $\tau = (p + 1)/d$, and let $\tau_D$ be the denominator of $\tau$ in
 lowest terms. Let $L$ be the order of $p$ modulo the prime-to-$p$ part of the denominator of
 $\tau^{-1}$ (the period of the base-$p$ expansion of $\tau^{-1}$), and let $\overline{\tau^{-1}}$

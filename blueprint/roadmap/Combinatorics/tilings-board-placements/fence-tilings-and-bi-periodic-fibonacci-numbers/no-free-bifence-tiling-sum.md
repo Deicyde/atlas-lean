@@ -1,6 +1,6 @@
 # Weighted tilings with no free bifence
 
-**Weighted tilings with no free bifence.** For elements $a$, $b$ of a commutative semiring
+For elements $a$, $b$ of a commutative semiring
 and $n \ge 0$, number the cells of an $n$-board $1, \dots, n$ and its $2n$ half-cells
 $0, \dots, 2n - 1$, half-cell $h$ lying in cell $\lfloor h/2 \rfloor + 1$. A
 $(1/2, 1/2)$-fence at position $k$ has its posts on half-cells $k$ and $k + 2$. Then $R_n$ is

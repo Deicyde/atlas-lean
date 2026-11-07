@@ -1,6 +1,6 @@
 # Schreier counts as Padovan-like sequences
 
-**Schreier counts as Padovan-like sequences.** Write $a_{p,q,k}$ and $a^{(m)}_{p,q,k}$ for the
+Write $a_{p,q,k}$ and $a^{(m)}_{p,q,k}$ for the
 Padovan-like sequences for Schreier sets and for maximal Schreier sets. For positive integers $p$,
 $q$ and $n$, the number $|S^{p/q}_n|$ of $(p, q)$-Schreier sets with maximum $n$ equals
 $a_{p,q,(n-1)q}$, and the number $|M^{p/q}_n|$ of maximal $(p, q)$-Schreier sets with maximum $n$

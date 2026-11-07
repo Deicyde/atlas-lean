@@ -1,6 +1,6 @@
 # Parametric Sard theorem for real analytic families
 
-**Parametric Sard theorem for real analytic families.** Let $p, m, n$ be natural numbers, let
+Let $p, m, n$ be natural numbers, let
 $F \colon \mathbb{R}^p \times \mathbb{R}^m \to \mathbb{R}^n$ be a real analytic ($C^\omega$) map
 and let $y \in \mathbb{R}^n$. Suppose that the derivative of $F$ is surjective at every point
 $(a, x)$ with $F(a, x) = y$. Then the bad parameter set of $F$ at $y$, the set of

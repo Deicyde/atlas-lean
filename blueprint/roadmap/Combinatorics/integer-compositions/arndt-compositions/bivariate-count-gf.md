@@ -1,6 +1,6 @@
 # Bivariate generating function of a two-index count
 
-**Bivariate generating function of a two-index count.** For a function $a$ assigning a natural
+For a function $a$ assigning a natural
 number $a(n, m)$ to every pair of natural numbers $n, m$, its bivariate generating function is the
 power series $\sum_{n \ge 0} \bigl(\sum_{m = 0}^{n} a(n, m)\, y^m\bigr) x^n$ in
 $\mathbb{Z}[y][[x]]$, where $x$ marks the first index (the weight) and $y$ the second. Only the

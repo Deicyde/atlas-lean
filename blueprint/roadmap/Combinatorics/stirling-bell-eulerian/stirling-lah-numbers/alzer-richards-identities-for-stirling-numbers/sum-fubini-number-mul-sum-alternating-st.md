@@ -1,6 +1,6 @@
 # Alzer–Richards identity for Fubini numbers
 
-**Alzer–Richards identity for Fubini numbers.** Let $n \ge 1$ be an integer, let $a(k)$ be
+Let $n \ge 1$ be an integer, let $a(k)$ be
 the $k$-th Fubini (ordered Bell) number and $S(r, j)$ the Stirling numbers of the second kind,
 and for integers $r, k \ge 0$ let
 $A(r, k) = \sum_{j=0}^{k} (-1)^j \binom{k}{j} j! \, S(r, j)$. Then

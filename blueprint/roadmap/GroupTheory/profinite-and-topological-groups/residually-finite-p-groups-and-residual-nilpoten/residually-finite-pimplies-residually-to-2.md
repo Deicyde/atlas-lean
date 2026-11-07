@@ -1,6 +1,6 @@
 # Residual $p$-finiteness for all $p$ does not imply residual torsion-free nilpotence
 
-**Residual $p$-finiteness for all $p$ does not imply residual torsion-free nilpotence.** It is not
+It is not
 the case that every finitely generated group that is residually a finite $p$-group for every prime
 $p$ is residually torsion-free nilpotent. Here a group $G$ is residually a finite $p$-group when
 every element $g \ne 1$ lies outside some normal subgroup $N$ such that $G/N$ is a finite

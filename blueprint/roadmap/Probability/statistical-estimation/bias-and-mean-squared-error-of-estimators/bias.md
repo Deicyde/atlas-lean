@@ -1,6 +1,6 @@
 # Bias of an estimator
 
-**Bias of an estimator.** Let $S$ be a measurable space, $W : S \to \mathbb{R}$ an estimator,
+Let $S$ be a measurable space, $W : S \to \mathbb{R}$ an estimator,
 $\mu$ a probability measure on $S$ for which $W$ is integrable, and $\theta \in \mathbb{R}$ a
 target. The bias of $W$ under $\mu$ at $\theta$ is $\int_S W \, d\mu - \theta$, the expected value
 of $W$ under $\mu$ minus $\theta$.

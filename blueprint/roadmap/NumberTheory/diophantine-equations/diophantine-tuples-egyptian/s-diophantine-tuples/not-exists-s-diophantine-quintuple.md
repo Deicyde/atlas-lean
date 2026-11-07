@@ -1,6 +1,6 @@
 # There is no $\{p, q\}$-Diophantine quintuple
 
-**There is no $\{p, q\}$-Diophantine quintuple.** Let $p < q$ be primes. Then no five-element
+Let $p < q$ be primes. Then no five-element
 set of natural numbers is a $\{p, q\}$-Diophantine tuple; that is, there is no
 $\{p, q\}$-Diophantine quintuple.
 

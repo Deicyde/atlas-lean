@@ -1,6 +1,6 @@
 # A congruence class of non-integral Göbel sequences
 
-**A congruence class of non-integral Göbel sequences.** Let $g_{k,l}$ denote the
+Let $g_{k,l}$ denote the
 $(k, l)$-Göbel sequence, let $p \ge 13$ be a prime with $p \equiv 1 \pmod 4$, and let
 $k = \frac{p-1}{2} q$ for a positive odd natural number $q$. Then there is an even natural number
 $l$ with $2 \le l \le p-3$ such that for every positive natural number $l'$ with

@@ -1,6 +1,6 @@
 # Direction of three points
 
-**Direction of three points.** For points $p_i, p_j, p_k \in K^2$, where $K$ is a linearly
+For points $p_i, p_j, p_k \in K^2$, where $K$ is a linearly
 ordered field, CLRS's DIRECTION$(p_i, p_j, p_k)$ is the cross product
 $(p_k - p_i) \times (p_j - p_i)$.
 

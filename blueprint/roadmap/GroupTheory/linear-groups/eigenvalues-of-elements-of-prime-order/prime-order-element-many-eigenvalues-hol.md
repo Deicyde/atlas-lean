@@ -1,6 +1,6 @@
 # Robinson's theorem on eigenvalues of elements of prime order
 
-**Robinson's theorem on eigenvalues of elements of prime order.** For every $n$, if $H$ is a finite
+For every $n$, if $H$ is a finite
 subgroup of $\mathrm{GL}_n(\mathbb{C})$ and $h \in H$ has prime order $p$ and lies in no abelian
 normal subgroup of $H$, then $h$ has at least $(p - 1)/2$ distinct eigenvalues, that is,
 $p - 1 \le 2k$ where $k$ is the number of distinct roots of the characteristic polynomial of $h$.

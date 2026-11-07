@@ -1,6 +1,6 @@
 # Every partition lies in its diagonal class
 
-**Every partition lies in its diagonal class.** For every partition $p$ of $n$, $p$ belongs
+For every partition $p$ of $n$, $p$ belongs
 to the diagonal class of $p$, the set of partitions of $n$ whose diagonal sequence equals that
 of $p$.
 

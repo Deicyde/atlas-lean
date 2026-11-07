@@ -1,6 +1,6 @@
 # ℓ-regular cubic partitions with odd parts overlined
 
-**ℓ-regular cubic partitions with odd parts overlined.** For natural numbers $\ell$ and $n$,
+For natural numbers $\ell$ and $n$,
 $a_\ell(n)$ is the coefficient of $q^n$ in the integer power series
 
 $$\frac{f_2 f_\ell^2 f_{4\ell}}{f_1^2 f_4 f_{2\ell}}, \qquad f_k = \prod_{m \ge 1} (1 - q^{km}).$$

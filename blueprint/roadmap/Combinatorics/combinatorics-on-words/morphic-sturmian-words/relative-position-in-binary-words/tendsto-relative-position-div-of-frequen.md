@@ -1,6 +1,6 @@
 # Relative position of a word with given letter frequency
 
-**Relative position of a word with given letter frequency.** Let
+Let
 $w = \ell_0 \ell_1 \ell_2 \cdots$ be an infinite word over the letters $a$ and $b$. Let $\#_b(m)$
 be the number of letters $b$ among $\ell_0, \ldots, \ell_{m-1}$, and for $n \ge 1$ let
 $r(n) = p_b(n) - p_a(n)$, where $p_\alpha(n)$ is the position of the $n$-th occurrence of the

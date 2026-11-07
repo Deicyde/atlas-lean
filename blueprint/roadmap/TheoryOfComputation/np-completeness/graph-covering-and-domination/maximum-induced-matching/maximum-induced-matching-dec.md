@@ -1,6 +1,6 @@
 # The MAXIMUM INDUCED MATCHING decision problem
 
-**The MAXIMUM INDUCED MATCHING decision problem.** MAXIMUM INDUCED MATCHING is the decision
+MAXIMUM INDUCED MATCHING is the decision
 problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonical bitstring
 encoding, to a maximum-induced-matching instance $(n, E, K)$ that is well formed and feasible:
 the edge list $E$ has no repeated entries, every pair $(u, v)$ in $E$ satisfies $u < n$, $v < n$

@@ -1,6 +1,6 @@
 # Unbiased estimator
 
-**Unbiased estimator.** Let $(P_\theta)_{\theta \in \Theta}$ be a family of probability measures
+Let $(P_\theta)_{\theta \in \Theta}$ be a family of probability measures
 on a measurable space $S$ and $\tau : \Theta \to \mathbb{R}$ a target function. An estimator
 $W : S \to \mathbb{R}$ is unbiased for $\tau$ if for every $\theta \in \Theta$ the function $W$ is
 $P_\theta$-integrable and $\int_S W \, dP_\theta = \tau(\theta)$.

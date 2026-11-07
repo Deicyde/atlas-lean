@@ -1,6 +1,6 @@
 # Li's coefficient $d_1(0, 0)$
 
-**Li's coefficient $d_1(0, 0)$.** Li's coefficient $d_1(0, 0)$ equals $\frac{1}{2}$.
+Li's coefficient $d_1(0, 0)$ equals $\frac{1}{2}$.
 
 ## Sources
 

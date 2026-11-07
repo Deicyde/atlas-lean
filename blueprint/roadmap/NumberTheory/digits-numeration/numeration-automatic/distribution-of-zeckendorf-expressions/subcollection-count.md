@@ -1,6 +1,6 @@
 # Counting function of a subcollection
 
-**Counting function of a subcollection.** For a set $E$ of finitely supported coefficient
+For a set $E$ of finitely supported coefficient
 functions $\mu : \mathbb{N} \to \mathbb{N}$, a sequence $H : \mathbb{N} \to \mathbb{N}$ and a
 real number $x$, $z(x)$ is the number of natural numbers $n < x$ of the form
 $n = \sum_k \mu_k H_k$ for some $\mu \in E$.

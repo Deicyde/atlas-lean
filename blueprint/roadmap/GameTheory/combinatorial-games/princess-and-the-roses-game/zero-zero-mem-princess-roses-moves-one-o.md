@@ -1,6 +1,6 @@
 # In two-pile Princess and the Roses, $(1, 1)$ moves to $(0, 0)$
 
-**In two-pile Princess and the Roses, $(1, 1)$ moves to $(0, 0)$.** In the Princess and the
+In the Princess and the
 Roses game on two piles, $(0, 0)$ is an option of the position $(1, 1)$: one may take one object
 from each pile.
 

@@ -1,6 +1,6 @@
 # Continuously differentiable functions with Hölder derivative on a set
 
-**Continuously differentiable functions with Hölder derivative on a set.** Let $\mathbb{k}$
+Let $\mathbb{k}$
 be a nontrivially normed field, $E$ and $F$ normed spaces over $\mathbb{k}$, $s \subseteq E$ and
 $\alpha \ge 0$ a real number. A function $f : E \to F$ is in $C^{1,\alpha}(s)$ if $f$ is
 continuously differentiable on $s$ over $\mathbb{k}$ and its derivative within $s$, a map from

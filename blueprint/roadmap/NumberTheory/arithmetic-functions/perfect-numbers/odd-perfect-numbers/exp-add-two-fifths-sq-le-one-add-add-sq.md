@@ -1,6 +1,6 @@
 # Exponential lower bound for $1 + x + x^2$ on $(0, 1/11)$
 
-**Exponential lower bound for $1 + x + x^2$ on $[0, 1/11]$.** For every real $x$ with
+For every real $x$ with
 $0 \le x \le 1/11$, $\exp(x + 2x^2/5) \le 1 + x + x^2$, with equality if and only if $x = 0$.
 
 ## Sources

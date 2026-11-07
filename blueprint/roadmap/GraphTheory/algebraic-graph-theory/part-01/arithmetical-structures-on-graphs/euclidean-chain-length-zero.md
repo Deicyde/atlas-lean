@@ -1,6 +1,6 @@
 # Euclidean chain function with second argument zero
 
-**Euclidean chain function with second argument zero.** For every natural number $x$, the
+For every natural number $x$, the
 Euclidean chain function $F$ satisfies $F(x, 0) = 1$.
 
 For $x = 0$ this is the value given by the recursive definition of $F$, not a count of positive

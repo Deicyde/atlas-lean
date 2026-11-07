@@ -1,6 +1,6 @@
 # Evaluated Lagrange basis polynomial
 
-**Evaluated Lagrange basis polynomial.** For real nodes $x_0, \dots, x_{n-1}$, an index
+For real nodes $x_0, \dots, x_{n-1}$, an index
 $k < n$ and a real number $t$, the value at $t$ of the $k$-th Lagrange basis polynomial is
 $\ell_k(t) = \prod_{j \ne k} (x_k - x_j)^{-1} (t - x_j)$, the product running over the indices
 $j < n$ with $j \ne k$.

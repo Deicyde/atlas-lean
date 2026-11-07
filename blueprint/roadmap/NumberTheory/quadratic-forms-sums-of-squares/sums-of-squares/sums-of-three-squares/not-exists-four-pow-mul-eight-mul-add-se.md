@@ -1,6 +1,6 @@
 # Converse of Legendre's three-square theorem
 
-**Converse of Legendre's three-square theorem.** If a natural number $n$ is a sum of three
+If a natural number $n$ is a sum of three
 squares of natural numbers, then $n$ is not of the form $4^a (8b + 7)$ with natural numbers $a, b$.
 
 ## Sources

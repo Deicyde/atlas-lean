@@ -1,6 +1,6 @@
 # Small inductive and covering dimension can differ for compact Hausdorff spaces
 
-**Small inductive and covering dimension can differ for compact Hausdorff spaces.** Scottish
+Scottish
 Book Problem 187, part (2), has a negative answer: it is not the case that for every compact
 Hausdorff space $X$ and every $n \in \mathbb{N}$, $X$ has small inductive dimension at most $n$
 if and only if $X$ has covering dimension at most $n$.

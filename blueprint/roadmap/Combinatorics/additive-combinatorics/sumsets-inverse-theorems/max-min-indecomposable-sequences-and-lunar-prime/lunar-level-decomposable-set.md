@@ -1,6 +1,6 @@
 # Level-decomposable lunar numbers
 
-**Level-decomposable lunar numbers.** Let $b$ and $n$ be natural numbers and
+Let $b$ and $n$ be natural numbers and
 $a = \lfloor b/2 \rfloor$. For a lunar number $f$ of base $b$ and degree at most $n$, given by its
 digits $f_0, \dots, f_n \in \{0, \dots, b - 1\}$, write $|f_a|$ for the number of indices $k \le n$
 with $f_k \ge a$. The set $\mathcal{D}_b^n$ consists of the lunar numbers $h$ of base $b$ and

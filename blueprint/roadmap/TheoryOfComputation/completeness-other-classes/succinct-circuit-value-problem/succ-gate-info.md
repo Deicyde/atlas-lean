@@ -1,6 +1,6 @@
 # Decoded gate description (Succinct Circuit Value)
 
-**Decoded gate description (Succinct Circuit Value).** Let $C$ be a list of encoded gates,
+Let $C$ be a list of encoded gates,
 let $n, i \in \mathbb{N}$, and let $d$ be the description of gate $i$ of the circuit succinctly
 described by $C$: decode each gate of $C$ into a gate of a flat Boolean circuit on $n$ inputs,
 evaluate the decoded circuit with input $j < n$ set to bit $j$ of $i$ (true exactly when

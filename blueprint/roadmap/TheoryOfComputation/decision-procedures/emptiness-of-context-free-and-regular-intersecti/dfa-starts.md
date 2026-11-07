@@ -1,6 +1,6 @@
 # Start states of a right-hand side in a DFA
 
-**Start states of a right-hand side in a DFA.** Let $D$ be an encoded DFA, $R$ a list of
+Let $D$ be an encoded DFA, $R$ a list of
 natural numbers (the items found so far) and $q \in \mathbb{N}$. The start states of a right-hand
 side $\beta$, a list of grammar symbols, for $q$ given $R$ are defined by recursion on $\beta$: for
 the empty right-hand side they are the one-element list $[q]$, and for a symbol $X$ followed by

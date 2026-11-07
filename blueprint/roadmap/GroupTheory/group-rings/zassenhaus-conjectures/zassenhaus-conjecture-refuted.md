@@ -1,6 +1,6 @@
 # Counterexample to the first Zassenhaus conjecture (Kourovka 17.67)
 
-**Counterexample to the first Zassenhaus conjecture (Kourovka 17.67).** There exist a finite
+There exist a finite
 group $G$ and a unit $u$ of finite order of the integral group ring $\mathbb{Z}G$ such that for
 every unit $v$ of the rational group ring $\mathbb{Q}G$, every $g \in G$ and every sign
 $\varepsilon \in \{1, -1\}$, the conjugate $v u v^{-1}$, computed in $\mathbb{Q}G$, is not equal

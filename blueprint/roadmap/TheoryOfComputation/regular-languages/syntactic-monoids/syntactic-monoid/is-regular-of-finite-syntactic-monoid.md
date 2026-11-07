@@ -1,4 +1,4 @@
 # Finite syntactic monoid implies regularity
 
-**Finite syntactic monoid implies regularity.** Every language whose syntactic monoid is
+Every language whose syntactic monoid is
 finite is regular.

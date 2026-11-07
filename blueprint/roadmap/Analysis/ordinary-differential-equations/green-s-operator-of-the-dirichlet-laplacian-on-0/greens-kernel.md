@@ -1,6 +1,6 @@
 # Green's kernel of the Dirichlet Laplacian on $(0, 1)$
 
-**Green's kernel of the Dirichlet Laplacian on $[0, 1]$.** For real numbers $x$ and $t$, set
+For real numbers $x$ and $t$, set
 $G(x, t) = \min(x, t)\,(1 - \max(x, t))$.
 
 On $[0, 1]$ this is the Green's kernel of $-\frac{d^2}{dx^2}$ with boundary conditions

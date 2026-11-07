@@ -1,6 +1,6 @@
 # The Farey tree
 
-**The Farey tree.** Write a fraction $n/d$, with $n$ and $d$ natural numbers, for the pair
+Write a fraction $n/d$, with $n$ and $d$ natural numbers, for the pair
 $(n, d)$, so that $1/0$ stands for $\infty$. The Farey tree $\mathrm{FT}$ is the infinite binary
 tree of triples of fractions with root $(0/1, 1/1, 1/0)$ in which a vertex $(a/b, c/d, e/f)$
 has left child $(a/b, (a+c)/(b+d), c/d)$ and right child $(c/d, (c+e)/(d+f), e/f)$. For a path

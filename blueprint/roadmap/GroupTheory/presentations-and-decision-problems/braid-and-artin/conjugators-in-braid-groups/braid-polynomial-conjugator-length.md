@@ -1,6 +1,6 @@
 # Polynomially short conjugators in braid groups
 
-**Polynomially short conjugators in braid groups.** The proposition (the stronger question of
+The proposition (the stronger question of
 Kourovka Problem 19.81, V. Shpilrain) that for every $n \in \mathbb{N}$ there are natural numbers
 $C$ and $d$ with the following property. Let $B_{n+1}$ be the braid group on $n + 1$ strands,
 realized as the Artin group of the Coxeter matrix of type $A_n$, with standard generators

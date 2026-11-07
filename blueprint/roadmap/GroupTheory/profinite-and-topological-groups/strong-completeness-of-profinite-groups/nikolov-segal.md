@@ -1,6 +1,6 @@
 # Nikolov–Segal strong completeness theorem
 
-**Nikolov–Segal strong completeness theorem.** Every finite-index subgroup of a
+Every finite-index subgroup of a
 topologically finitely generated profinite group is open.
 
 ## Sources

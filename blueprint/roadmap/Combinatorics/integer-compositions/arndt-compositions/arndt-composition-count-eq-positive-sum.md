@@ -1,6 +1,6 @@
 # Positive sum for Arndt compositions
 
-**Positive sum for Arndt compositions.** Let $a(n, m)$ be the number of Arndt compositions of
+Let $a(n, m)$ be the number of Arndt compositions of
 $n$ with $m$ parts, and write $h = \lfloor m/2 \rfloor$. For all $n \ge 0$ and $m \ge 1$: if
 $m + h \le n$, then
 

@@ -1,6 +1,6 @@
 # Recursive functions are Turing-computable
 
-**Recursive functions are Turing-computable.** Every computable function
+Every computable function
 $f : \mathbb{N} \to \mathbb{N}$ is computed by a finite multi-stack Turing machine (finitely
 many stacks, labels and internal states) whose input and output alphabets are identified with
 the booleans, under the binary encoding of natural numbers (least significant bit first, with

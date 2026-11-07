@@ -1,6 +1,6 @@
 # Floor-sum formulas for the shifted floor residue counts
 
-**Floor-sum formulas for the shifted floor residue counts.** Let $n$ and $m$ be natural
+Let $n$ and $m$ be natural
 numbers with $m \ge 2$, and let $\alpha$ and $\nu$ be real numbers with $0 \le \alpha < 1$,
 $0 \le \nu < 1$ and $\nu \le n\alpha$. For an integer $r$ let $\mathcal N_{n,\alpha,\nu,r,m}$ be
 the number of integers $k$ with $1 \le k \le n$ such that

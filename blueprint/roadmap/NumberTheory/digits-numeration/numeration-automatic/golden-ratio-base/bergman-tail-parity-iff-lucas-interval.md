@@ -1,6 +1,6 @@
 # Lucas interval of $N$ from the gap between its two lowest Bergman digits
 
-**Lucas interval of $N$ from the gap between its two lowest Bergman digits.** Let $N \ge 2$
+Let $N \ge 2$
 be a natural number, let $S$ be a finite set of integers with no two consecutive elements (a
 Bergman expansion) whose base phi value is $N$, and let $a$ be an integer and $s$ a natural number
 such that the elements of $S$ that are at most $a + s + 1$ are exactly $a$ and $a + s + 1$ (so the

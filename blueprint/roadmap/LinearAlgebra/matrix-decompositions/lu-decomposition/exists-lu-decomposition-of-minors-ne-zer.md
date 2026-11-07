@@ -1,6 +1,6 @@
 # LU decomposition without pivoting
 
-**LU decomposition without pivoting.** Let $K$ be a field and $A$ an $n \times n$ matrix over
+Let $K$ be a field and $A$ an $n \times n$ matrix over
 $K$ whose leading principal minors are all nonzero: for every $k \le n$, the determinant of the
 upper-left $k \times k$ block of $A$ is nonzero. Then $A = LU$ for some $n \times n$ matrices
 $L$ and $U$ over $K$ such that $L$ is lower triangular with every diagonal entry equal to $1$ and

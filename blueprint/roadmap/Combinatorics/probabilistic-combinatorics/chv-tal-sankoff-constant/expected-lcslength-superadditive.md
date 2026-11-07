@@ -1,6 +1,6 @@
 # Superadditivity of the expected LCS length
 
-**Superadditivity of the expected LCS length.** Let $E_n$ be the expected length of a longest
+Let $E_n$ be the expected length of a longest
 common subsequence of two independent uniformly random binary strings of length $n$. Then for all
 natural numbers $m$ and $n$, $E_m + E_n \le E_{m+n}$.
 

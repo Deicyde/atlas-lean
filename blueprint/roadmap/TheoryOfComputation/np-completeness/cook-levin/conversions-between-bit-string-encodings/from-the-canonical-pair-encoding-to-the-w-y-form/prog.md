@@ -1,6 +1,6 @@
 # Program of the pair-encoding converter
 
-**Program of the pair-encoding converter.** The program over the converter's four stacks,
+The program over the converter's four stacks,
 five labels and states (a bit or nothing). Each pop either stores the popped bit in the state
 (nothing if the stack is empty) or leaves the state unchanged, and each push of the stored bit
 uses false when the state holds nothing.

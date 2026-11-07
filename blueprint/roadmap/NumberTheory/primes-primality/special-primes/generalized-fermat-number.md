@@ -1,6 +1,6 @@
 # Generalized Fermat number
 
-**Generalized Fermat number.** For an even natural number $b$ and a positive integer $n$,
+For an even natural number $b$ and a positive integer $n$,
 the generalized Fermat number is $F_n(b) = b^{2^n} + 1$ (also written $F_{b,n}$).
 
 Source statement IDs: `jis_4d4fccc58f4ac8e97335289f` and

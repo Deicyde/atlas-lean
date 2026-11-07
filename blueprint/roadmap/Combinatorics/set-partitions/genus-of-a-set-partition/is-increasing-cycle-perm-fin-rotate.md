@@ -1,6 +1,6 @@
 # The cyclic rotation is an increasing-cycle permutation
 
-**The cyclic rotation is an increasing-cycle permutation.** For every natural number $n$,
+For every natural number $n$,
 the cyclic permutation $i \mapsto i + 1 \pmod n$ of $\{0, \dots, n-1\}$ is an increasing-cycle
 permutation.
 

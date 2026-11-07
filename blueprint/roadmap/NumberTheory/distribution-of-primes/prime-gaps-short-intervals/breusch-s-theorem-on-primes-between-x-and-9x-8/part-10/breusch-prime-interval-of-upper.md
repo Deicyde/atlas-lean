@@ -1,6 +1,6 @@
 # Breusch's theorem from the upper bound
 
-**Breusch's theorem from the upper bound.** For a natural number $n$ write
+For a natural number $n$ write
 $L(n) = \sum_{m \mid 210} \mu(m) \log \binom{2100n/m}{210n/m}$, where $\mu$ is the Möbius function.
 Let $x \ge 48$ be a real number, and suppose that every natural number $n \ge 1$ such that no
 prime $p$ satisfies $1890n < p \le 2100n$ also satisfies

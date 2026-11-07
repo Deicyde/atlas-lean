@@ -1,6 +1,6 @@
 # Perfect powers with all decimal digits equal but one (Kihel–Luca)
 
-**Perfect powers with all decimal digits equal but one (Kihel–Luca).** Fix a natural number
+Fix a natural number
 $l \ge 3$. There are only finitely many perfect $l$-th powers $y = x^l$ ($x \in \mathbb{N}$) whose
 decimal digits are all equal but one, that is, some digit $c$ occurs in the decimal
 representation of $y$ and exactly one digit position of $y$ holds a digit other than $c$, apart

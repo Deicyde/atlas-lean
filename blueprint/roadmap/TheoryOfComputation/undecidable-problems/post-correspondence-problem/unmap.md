@@ -1,6 +1,6 @@
 # Erasing the markers from a domino
 
-**Erasing the markers from a domino.** For a domino $(t, b)$ over the extended alphabet, its
+For a domino $(t, b)$ over the extended alphabet, its
 unmapping is the domino over $\alpha$ obtained by deleting every star $\star$ and every end marker
 $\diamond$ from both $t$ and $b$, keeping the letters of $\alpha$ in order.
 

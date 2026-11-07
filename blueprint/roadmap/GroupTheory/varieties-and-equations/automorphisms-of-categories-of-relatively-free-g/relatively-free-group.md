@@ -1,6 +1,6 @@
 # Free group of a variety on a finite set
 
-**Free group of a variety on a finite set.** Let $W$ be a set of words in the free group
+Let $W$ be a set of words in the free group
 $F(\mathbb{N})$ on $x_0, x_1, \ldots$, defining a variety $\Theta$, and let $X \subseteq \mathbb{N}$
 be finite. The free group $F_\Theta(X)$ of $\Theta$ on $X$ is the quotient of the free group $F(X)$
 on $X$ by its verbal subgroup, the normal closure of the set of values $\varphi(w)$ with $w \in W$

@@ -1,6 +1,6 @@
 # Overcubic partition triples of $192n+8$ modulo $4$
 
-**Overcubic partition triples of $192n+8$ modulo $4$.** For $k \ge 1$ let
+For $k \ge 1$ let
 $f_k = \prod_{j \ge 1} (1 - q^{kj})$, and let $\mathrm{bt}(m)$ be the number of overcubic
 partition triples of $m$, the coefficient of $q^m$ in $f_4^3 / (f_1^6 f_2^3)$. For every natural
 number $n$, $\mathrm{bt}(192n+8) \equiv 2 c_n \pmod 4$, where $c_n$ is the coefficient of $q^n$

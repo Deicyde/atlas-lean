@@ -1,6 +1,6 @@
 # Conlon–Lim theorem: Stanchescu's difference set bound holds
 
-**Conlon–Lim theorem: Stanchescu's difference set bound holds.** For every integer $d \ge 2$ there
+For every integer $d \ge 2$ there
 is a natural number $N$ such that every finite set $A \subseteq \mathbb{Z}^d$ with $|A| \ge N$ that
 is not contained in an affine hyperplane (no nonzero real linear functional is constant on $A$)
 satisfies $|A - A| \ge \left(2d - 2 + \frac{1}{d - 1}\right)|A| - (2d^2 - 4d + 3)$, where

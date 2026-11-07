@@ -1,6 +1,6 @@
 # Toeplitz–Hausdorff theorem
 
-**Toeplitz–Hausdorff theorem.** The numerical range of a bounded linear operator on a complex
+The numerical range of a bounded linear operator on a complex
 Hilbert space is convex.
 
 ## Sources

@@ -1,6 +1,6 @@
 # $g_\lambda$ is $p$-integral
 
-**$g_\lambda$ is $p$-integral.** Let $p$ be a prime, $\sigma$ a finite set of variables and
+Let $p$ be a prime, $\sigma$ a finite set of variables and
 $\lambda$ a partition of $n$. Every coefficient of the $p$-equivalence class sum $g_\lambda$ in
 $\mathbb{Q}[x_i : i \in \sigma]$ is a rational number whose denominator in lowest terms is not
 divisible by $p$.

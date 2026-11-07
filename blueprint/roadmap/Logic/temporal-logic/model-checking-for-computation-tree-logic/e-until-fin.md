@@ -1,6 +1,6 @@
 # Finite existential-until set
 
-**Finite existential-until set.** Let $\mathcal{T}$ be a labelled transition system with
+Let $\mathcal{T}$ be a labelled transition system with
 finitely many states and finitely many labels, decidable transitions and decidable equality of
 states, and let $A$ and $B$ be sets of states. For a set $Z$ of states write
 $\mathrm{Pre}_\exists(Z)$ for the set of states having a transition into $Z$. The

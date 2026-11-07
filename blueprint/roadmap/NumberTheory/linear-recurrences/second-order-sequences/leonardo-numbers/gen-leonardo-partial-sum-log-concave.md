@@ -1,6 +1,6 @@
 # Log-concavity of partial sums of generalized Leonardo numbers
 
-**Log-concavity of partial sums of generalized Leonardo numbers.** Let $k \ge 1$ be an
+Let $k \ge 1$ be an
 integer, let $L_{k,n}$ be the generalized Leonardo numbers, and let
 $R_n = \sum_{i=0}^{n} L_{k,i}$. Then $R_{n-1} R_{n+1} \le R_n^2$ for every integer $n \ge 2$.
 

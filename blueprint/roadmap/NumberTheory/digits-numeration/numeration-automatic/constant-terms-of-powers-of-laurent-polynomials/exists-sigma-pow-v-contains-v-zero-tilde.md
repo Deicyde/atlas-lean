@@ -1,6 +1,6 @@
 # Return to the initial coefficient vector modulo $p^a$
 
-**Return to the initial coefficient vector modulo $p^a$.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $a, m \in \mathbb{N}$, and let $\tilde P$ be a Laurent polynomial with integer coefficients in
 variables $x_1, \dots, x_r$ such that for every $j \in \mathbb{Z}^r$ the coefficients of $x^j$ in
 $\tilde P(x_1, \dots, x_r)^p$ and in $\tilde P(x_1^p, \dots, x_r^p)$ are congruent modulo $p^a$.

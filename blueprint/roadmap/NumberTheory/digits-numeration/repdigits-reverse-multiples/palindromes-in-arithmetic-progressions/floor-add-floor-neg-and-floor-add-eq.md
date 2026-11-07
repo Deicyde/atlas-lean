@@ -1,6 +1,6 @@
 # Two floor-function identities
 
-**Two floor-function identities.** For every real number $x$, the sum
+For every real number $x$, the sum
 $\lfloor x \rfloor + \lfloor -x \rfloor$ equals $0$ if $x$ is an integer and $-1$ otherwise.
 For all real numbers $x$ and $y$, $\lfloor x + y \rfloor = \lfloor x \rfloor + \lfloor y \rfloor$ if
 $(x - \lfloor x \rfloor) + (y - \lfloor y \rfloor) < 1$, and

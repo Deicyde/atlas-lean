@@ -1,6 +1,6 @@
 # Continued fraction of length one
 
-**Continued fraction of length one.** For every integer $a$, the finite continued fraction
+For every integer $a$, the finite continued fraction
 $[a]$ has value $a$.
 
 ## Sources

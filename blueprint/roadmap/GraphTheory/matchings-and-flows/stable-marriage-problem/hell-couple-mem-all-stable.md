@@ -1,6 +1,6 @@
 # A hell-couple belongs to every stable matching
 
-**A hell-couple belongs to every stable matching.** Let $P$ be a preference profile for $n$
+Let $P$ be a preference profile for $n$
 men and $n$ women and let $\mu$ and $\nu$ be stable matchings for $P$. If man $i$ and his wife
 $\mu(i)$ form a hell-couple in $\mu$ (each ranks the other last), then $\nu(i) = \mu(i)$.
 

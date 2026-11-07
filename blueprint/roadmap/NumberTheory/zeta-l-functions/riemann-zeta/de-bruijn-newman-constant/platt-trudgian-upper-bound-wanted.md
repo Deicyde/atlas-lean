@@ -1,6 +1,6 @@
 # All zeros of the de Bruijn–Newman deformation are real at time 1/5
 
-**All zeros of the de Bruijn–Newman deformation are real at time 1/5.** Every zero of the
+Every zero of the
 de Bruijn–Newman deformation $H_{1/5}$ is real: every complex $z$ with $H_{1/5}(z) = 0$ has
 imaginary part $0$.
 

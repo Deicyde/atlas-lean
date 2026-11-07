@@ -1,6 +1,6 @@
 # The first maximal Matula number
 
-**The first maximal Matula number.** The Gutman–Ivić maximal Matula number $P(4)$ equals
+The Gutman–Ivić maximal Matula number $P(4)$ equals
 $p_8$, the eighth prime.
 
 ## Sources

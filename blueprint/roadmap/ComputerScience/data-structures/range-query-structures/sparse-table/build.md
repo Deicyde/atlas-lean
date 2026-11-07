@@ -1,6 +1,6 @@
 # Building a sparse table
 
-**Building a sparse table.** For a list $a$ of length $n$ over a type with a minimum
+For a list $a$ of length $n$ over a type with a minimum
 operation $\min$, the sparse table built from $a$ has data $a$ and
 $\lfloor \log_2 n \rfloor + 1$ stored rows, where $\lfloor \log_2 0 \rfloor$ is taken to be $0$.
 The rows are produced by iterating the build step for $k = 0, 1, \dots, \lfloor \log_2 n \rfloor$,

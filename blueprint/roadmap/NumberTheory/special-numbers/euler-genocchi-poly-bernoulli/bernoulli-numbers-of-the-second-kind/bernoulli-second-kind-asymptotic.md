@@ -1,6 +1,6 @@
 # Asymptotic expansion of the Bernoulli numbers of the second kind
 
-**Asymptotic expansion of the Bernoulli numbers of the second kind.** For a natural number
+For a natural number
 $n$ let $b_n = \frac{1}{n!} \int_0^1 x (x - 1) \cdots (x - n + 1) dx$, and for a natural
 number $k$ let $\beta_k$ be $(-1)^k$ times the $(k + 1)$-th derivative of $1 / \Gamma$ at $0$.
 Then for every natural number $m$, as $n \to \infty$,

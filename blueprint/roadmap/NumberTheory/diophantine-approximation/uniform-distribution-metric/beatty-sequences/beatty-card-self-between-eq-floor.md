@@ -1,6 +1,5 @@
 # Counting $\alpha$-Beatty terms between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$
 
-**Counting $\alpha$-Beatty terms between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$.**
 Let $\alpha$ be an irrational number with $1 < \alpha < 2$, let $\beta$ be a real number with
 $\alpha^{-1} + \beta^{-1} = 1$, and let $A$ be the set of the numbers $\lfloor k\alpha\rfloor$ for
 positive integers $k$. Then for every positive integer $n$, the number of elements of $A$ in the

@@ -1,6 +1,6 @@
 # Analytic properties of general qMZVs
 
-**Analytic properties of general qMZVs.** Let $(k_1, Q_1), \dots, (k_r, Q_r)$ be pairs of an
+Let $(k_1, Q_1), \dots, (k_r, Q_r)$ be pairs of an
 integer $k_j \ge 1$ and a polynomial $Q_j \in \mathbb{Q}[X]$ with $\deg Q_j \le k_j$ for every
 $j$ and $Q_1(0) = 0$, and write the general qMZV as
 $\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r) = \sum_{n \ge 0} c_n q^n$. Then (i) for every complex

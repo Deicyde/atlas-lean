@@ -1,6 +1,6 @@
 # Correctness of doubly-linked list prepend
 
-**Correctness of doubly-linked list prepend.** Fix a capacity $n$ and let $s$ be a store
+Fix a capacity $n$ and let $s$ be a store
 assigning to each identity $i < n$ either a node or nothing, let $\mathrm{head}$ be NIL or an
 identity, and let $x$ be an identity such that $s(x)$ is a node and, when $\mathrm{head}$ is an
 identity, $s(\mathrm{head})$ is a node. Suppose moreover that $s$ with head $\mathrm{head}$

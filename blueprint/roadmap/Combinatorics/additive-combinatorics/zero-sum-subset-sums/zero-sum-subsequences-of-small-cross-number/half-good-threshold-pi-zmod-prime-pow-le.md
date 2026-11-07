@@ -1,6 +1,6 @@
 # Threshold version of Geroldinger's theorem
 
-**Threshold version of Geroldinger's theorem.** Let $d \ge 0$, let $p_1, \dots, p_d$ be
+Let $d \ge 0$, let $p_1, \dots, p_d$ be
 primes, not necessarily distinct, and for each $k$ let
 $\Gamma_k = \prod_{i=1}^d \mathbb{Z}/p_i^k\mathbb{Z}$, and let $P_{1/2}(\Gamma_k)$ be its
 half-good threshold. Write $\lg = \log_2$. Then there is a real constant $C$ such that for all

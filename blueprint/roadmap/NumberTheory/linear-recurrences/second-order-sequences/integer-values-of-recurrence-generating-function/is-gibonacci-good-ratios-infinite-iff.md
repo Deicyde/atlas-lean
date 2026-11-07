@@ -1,6 +1,6 @@
 # Good consecutive ratios of a Gibonacci sequence
 
-**Good consecutive ratios of a Gibonacci sequence.** Let $p$ and $q$ be coprime integers,
+Let $p$ and $q$ be coprime integers,
 let $(H_n)_{n \ge 0}$ be the Gibonacci sequence with $H_0 = p$ and $H_1 = q$, and put
 $m = |q^2 - pq - p^2|$. Call a pair of integers $(a, b)$ admissible when $H_n / H_{n+1}$ is
 good for $(a, b)$ for every natural number $n$ with $H_{n+1} \ne 0$. Then there are infinitely

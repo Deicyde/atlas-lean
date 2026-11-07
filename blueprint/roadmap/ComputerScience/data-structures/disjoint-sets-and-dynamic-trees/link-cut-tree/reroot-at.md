@@ -1,6 +1,6 @@
 # Rerooting a tree at a vertex
 
-**Rerooting a tree at a vertex.** For a vertex $x$ and a rooted ordered tree $T$ with root $r$,
+For a vertex $x$ and a rooted ordered tree $T$ with root $r$,
 rerooting $T$ at $x$ is defined recursively. If $r = x$, the result is $T$ itself. Otherwise let
 $C$ be the first child subtree of $r$ that contains $x$, let $p$ be the root of $C$, and let $C'$
 be $C$ rerooted at $x$. The result is $C'$ with the tree formed by $r$ and its remaining

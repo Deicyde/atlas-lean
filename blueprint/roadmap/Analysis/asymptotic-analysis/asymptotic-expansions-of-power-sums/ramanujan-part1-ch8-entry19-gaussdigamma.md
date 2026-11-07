@@ -1,6 +1,6 @@
 # Ramanujan's asymptotic expansion of a binomial combination of log-power sums
 
-**Ramanujan's asymptotic expansion of a binomial combination of log-power sums.** For natural
+For natural
 numbers $m$ and $x$ let $S_m(x) = \sum_{k=1}^{x} (\log k)^m$, let $c_m = (-1)^m \zeta^{(m)}(0)$,
 where $\zeta^{(m)}(0)$ is the $m$-th derivative at $0$ of the real function
 $s \mapsto \operatorname{Re} \zeta(s)$, and let $\psi_m(x) = S_m(x) - c_m$. Let $n$ be a natural

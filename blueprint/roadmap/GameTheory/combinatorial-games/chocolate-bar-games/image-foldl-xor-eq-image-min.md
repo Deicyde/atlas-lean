@@ -1,6 +1,6 @@
 # Nim-sum sets under clamping by functions with the NS property
 
-**Nim-sum sets under clamping by functions with the NS property.** Let $m \in \mathbb{N}$,
+Let $m \in \mathbb{N}$,
 let $f_0, \dots, f_{m-1} : \mathbb{N} \to \mathbb{N}$ have the NS property, and let
 $x_0, \dots, x_{m-1}, z \in \mathbb{N}$ satisfy $x_t \le f_t(z)$ for every $t < m$. Then
 

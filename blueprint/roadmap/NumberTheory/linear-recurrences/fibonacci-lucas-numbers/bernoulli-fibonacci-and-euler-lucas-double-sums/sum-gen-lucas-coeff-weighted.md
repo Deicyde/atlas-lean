@@ -1,6 +1,6 @@
 # A weighted sum of the corrected Genocchi–Lucas coefficients
 
-**A weighted sum of the corrected Genocchi–Lucas coefficients.** Let $G_k$ be the Genocchi
+Let $G_k$ be the Genocchi
 numbers and $L_n$ the Lucas numbers, and for each natural number $n$ let
 
 $$c_n = \sum_{k=0}^{n} \sqrt{5}^{\,k} \binom{n}{k} G_k \frac{L_{n-k+1}}{n-k+1} +

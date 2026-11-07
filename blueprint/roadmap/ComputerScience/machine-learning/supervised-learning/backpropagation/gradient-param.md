@@ -1,6 +1,6 @@
 # Backpropagation computes the parameter gradients
 
-**Backpropagation computes the parameter gradients.** Let $P$ be a network with parameters
+Let $P$ be a network with parameters
 whose layer $i$ is a map $g_i : \mathbb{R}^{p_i} \times \mathbb{R}^{d_i} \to \mathbb{R}^{d_{i+1}}$
 of the parameters and the input (all spaces Euclidean). Fix parameters $\theta = (\theta_i)_i$
 with $\theta_i \in \mathbb{R}^{p_i}$, let $N$ be the network with layers

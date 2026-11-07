@@ -1,6 +1,6 @@
 # Bradley's inequality between the $\alpha$- and $\varphi$-mixing coefficients
 
-**Bradley's inequality between the $\alpha$- and $\varphi$-mixing coefficients.** Let
+Let
 $(X_j)_{j \ge 1}$ be random variables on a probability space $(\Omega, \mathbb{P})$ with values in
 a measurable space, and let $k \ge 1$. Suppose a real number $c$ bounds every term defining the
 $\varphi$-mixing coefficient $\varphi(k)$: for every $p \ge 1$, every event

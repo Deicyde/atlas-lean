@@ -1,6 +1,6 @@
 # Multiplying a binomial polynomial by a quadratic
 
-**Multiplying a binomial polynomial by a quadratic.** For an integer $n$ and a natural number
+For an integer $n$ and a natural number
 $k$, write $\binom{X+n}{k} = \frac{1}{k!} \prod_{i=0}^{k-1} (X + n - i)$ for the real binomial
 polynomial. Let $d$ and $j$ be natural numbers with $0 < d$ and $j \le d$, and let $c$ be a real
 number. Then

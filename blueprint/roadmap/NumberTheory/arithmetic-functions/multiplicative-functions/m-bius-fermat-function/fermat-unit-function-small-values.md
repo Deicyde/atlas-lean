@@ -1,6 +1,6 @@
 # Small values of the Fermat unit function
 
-**Small values of the Fermat unit function.** The Fermat unit function $u_M$ satisfies
+The Fermat unit function $u_M$ satisfies
 $u_M(1) = u_M(3) = u_M(7) = u_M(63) = 1$ and $u_M(2) = u_M(9) = 0$.
 
 ## Sources

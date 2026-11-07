@@ -1,6 +1,6 @@
 # Products regrouped by the values of a function
 
-**Products regrouped by the values of a function.** Let $\beta$ and $\gamma$ be finite types,
+Let $\beta$ and $\gamma$ be finite types,
 let $M$ be a commutative monoid, and let $g : \beta \to \gamma$ and $f : \gamma \to M$. Then
 
 $$\prod_{b \in \beta} f(g(b)) = \prod_{c \in \gamma} f(c)^{\#\{b \in \beta \mid g(b) = c\}},$$

@@ -1,6 +1,6 @@
 # Collision bound for the mod-prime hash functions
 
-**Collision bound for the mod-prime hash functions.** Let $p$ be a prime and $m > 0$, and
+Let $p$ be a prime and $m > 0$, and
 for $a, b \in \mathbb{Z}/p\mathbb{Z}$ with $a \ne 0$ let
 $h_{a,b}(x) = ((ax + b) \bmod p) \bmod m$ be the mod-prime hash function. For distinct keys
 $x \ne y$ in $\mathbb{Z}/p\mathbb{Z}$, the number of index pairs $(a, b)$ with $a \ne 0$ and

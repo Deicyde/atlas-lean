@@ -1,6 +1,6 @@
 # Representation counts above a shifted two-generator Frobenius number
 
-**Representation counts above a shifted two-generator Frobenius number.** Let $a < b$ be
+Let $a < b$ be
 coprime positive integers, let $s$ and $k$ be natural numbers, let $g$ be the generalized Frobenius
 number $g(a, b; s)$, and for an integer $m$ let $d(m; a, b)$ be the number of representations of
 $m$ by $(a, b)$. If $m$ is an integer with $m > g + ka$, then for every natural number $j$,

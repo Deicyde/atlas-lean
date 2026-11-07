@@ -1,6 +1,6 @@
 # Uncommonness of odd-length equations over the integers
 
-**Uncommonness of odd-length equations over the integers.** Let $m \ge 1$ and let
+Let $m \ge 1$ and let
 $a_1, \dots, a_{2m+1}$ be nonzero integers, at least one negative and at least one positive.
 Then for every $r \ge 3$ the equation $a_1x_1 + \cdots + a_{2m+1}x_{2m+1} = 0$ is
 $r$-uncommon over the integers.

@@ -1,6 +1,6 @@
 # The empty board has no Tak road
 
-**The empty board has no Tak road.** For every $n$, the empty $n \times n$ board contains no
+For every $n$, the empty $n \times n$ board contains no
 road of Impartial Tak.
 
 ## Sources

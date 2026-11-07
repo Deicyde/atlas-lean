@@ -1,6 +1,6 @@
 # Series formula and bound for the Göbel error
 
-**Series formula and bound for the Göbel error.** Let $k, l \ge 2$ be natural numbers, let
+Let $k, l \ge 2$ be natural numbers, let
 $g_{k,l}$ be the $(k, l)$-Göbel sequence, and let $C$ be a real number such that the real numbers
 $C_{k,l}(n) = g_{k,l}(n)^{1/k^n}$ tend to $C$ as $n \to \infty$. Then for every natural number
 $n \ge 1$ the error

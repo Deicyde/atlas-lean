@@ -1,6 +1,6 @@
 # Selberg–Delange theorem for function fields
 
-**Selberg–Delange theorem for function fields.** Let $q > 1$ and $A > 0$ be real numbers,
+Let $q > 1$ and $A > 0$ be real numbers,
 and let $B_z(n)$ and $C_z(n)$ be complex numbers, for $z \in \mathbb{C}$ and integers $n \ge 0$,
 such that for all $z$ and $n$
 

@@ -1,6 +1,6 @@
 # Cohn steps reach every classical Cohn triple whose middle entry is largest
 
-**Cohn steps reach every classical Cohn triple whose middle entry is largest.** Call a
+Call a
 $0$-generalized Cohn triple a Cohn triple; for $k = 0$ the matrix $S$ of the generalized Cohn
 relation is zero, so the relation reads $Q = PR$. Call $(P, Q, R) \mapsto (P, PQ, Q)$ the left
 step and $(P, Q, R) \mapsto (Q, QR, R)$ the right step. First, if $(P, Q, R)$ is a Cohn triple

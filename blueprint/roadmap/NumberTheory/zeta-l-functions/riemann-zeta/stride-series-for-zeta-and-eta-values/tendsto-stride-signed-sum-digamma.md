@@ -1,6 +1,6 @@
 # Digamma series for the signed stride sum
 
-**Digamma series for the signed stride sum.** Let $q \ge 1$ and $t \ge 1$ be integers, let
+Let $q \ge 1$ and $t \ge 1$ be integers, let
 $a$ be a real number with $-1 \le a < 1$, let $T_{q,t}$ denote the signed stride sum and $\psi$
 the digamma function. As $N \to \infty$, the partial sums
 

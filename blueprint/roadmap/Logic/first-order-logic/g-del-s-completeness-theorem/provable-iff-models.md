@@ -1,6 +1,6 @@
 # Soundness and completeness of first-order natural deduction
 
-**Soundness and completeness of first-order natural deduction.** Let $L$ be a language with
+Let $L$ be a language with
 countably many function and relation symbols, whose function symbols live in universe $u$ and
 relation symbols in universe $v$. For every theory $T$ of $L$ and every formula $\varphi$ of $L$
 with free variables in $\mathbb{N}$, $\varphi$ is provable from the sentences of $T$, viewed as

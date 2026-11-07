@@ -1,6 +1,6 @@
 # Excedance generating function of circular permutations of $r$ objects
 
-**Excedance generating function of circular permutations of $r$ objects.** Let $R$ be a
+Let $R$ be a
 commutative $\mathbb{Q}$-algebra, $x \in R$ and $r \ge 2$. For a permutation $\sigma$ let
 $e(\sigma)$ be its number of excedances (indices $i$ with $\sigma(i) > i$), and for $j \ge 0$ let
 $A_j(x) = \sum_{\sigma} x^{e(\sigma)}$, summed over all permutations $\sigma$ of $j$ objects. Then

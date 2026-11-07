@@ -1,6 +1,6 @@
 # A reciprocal-sum identity for generalized binomial coefficients
 
-**A reciprocal-sum identity for generalized binomial coefficients.** For a complex number $w$
+For a complex number $w$
 and a natural number $j$ write $\binom{w}{j} = w(w-1)\cdots(w-j+1)/j!$. Let $p \ge 1$ be a
 natural number and let $z$ be a complex number with $z \ne k$ for every natural number $k < p$.
 Then

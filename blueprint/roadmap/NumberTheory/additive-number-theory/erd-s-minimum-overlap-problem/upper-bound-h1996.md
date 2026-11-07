@@ -1,6 +1,6 @@
 # Statement of Haugland's 1996 upper bound for the minimum-overlap constant
 
-**Statement of Haugland's 1996 upper bound for the minimum-overlap constant.** The
+The
 proposition that the continuous Erdős minimum-overlap constant $C_{1b}$ satisfies
 $C_{1b} \le 0.382002$.
 

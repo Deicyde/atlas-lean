@@ -1,6 +1,6 @@
 # Stride series for the Dirichlet eta function
 
-**Stride series for the Dirichlet eta function.** Let $q, t \ge 1$ be integers and let
+Let $q, t \ge 1$ be integers and let
 $T_{q,t}(n)$ denote the signed stride sum. Then the partial sums
 
 $$\sum_{n=1}^{N} (-1)^{n+1} \frac{2n+q}{n(n+q)} T_{q,t}(n)$$

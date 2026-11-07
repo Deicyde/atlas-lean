@@ -1,6 +1,6 @@
 # Mex step for chocolate bars with many functions
 
-**Mex step for chocolate bars with many functions.** Let $m$ be a natural number, let
+Let $m$ be a natural number, let
 $f_1, \dots, f_m : \mathbb{N} \to \mathbb{N}$ have the NS property, and let
 $x_1, \dots, x_m, z, c$ be natural numbers with $x_t \le f_t(z)$ for all $t$ and
 $c < x_1 \oplus \cdots \oplus x_m \oplus z$, where $\oplus$ is nim-sum (bitwise exclusive or).

@@ -1,6 +1,6 @@
 # $(a, a)$-Carmichael numbers
 
-**$(a, a)$-Carmichael numbers.** Let $a$ be an integer. A natural number $n$ is an
+Let $a$ be an integer. A natural number $n$ is an
 $(a, a)$-Carmichael number if $n$ is squarefree and $p - a$ divides $n - a$ in $\mathbb{Z}$ for
 every prime $p$ dividing $n$.
 

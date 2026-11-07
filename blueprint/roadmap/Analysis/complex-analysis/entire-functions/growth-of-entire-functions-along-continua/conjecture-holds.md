@@ -1,6 +1,6 @@
 # Hayman–Kjellberg theorem on continua receding to infinity
 
-**Hayman–Kjellberg theorem on continua receding to infinity.** Write $M(f, r)$ for the Wiman
+Write $M(f, r)$ for the Wiman
 maximum modulus of a function $f : \mathbb{C} \to \mathbb{C}$ at radius $r$. For every entire,
 transcendental function $f$ and every closed, connected, unbounded set
 $\Gamma \subseteq \mathbb{C}$, the limit superior, as $|z| \to \infty$ with $z \in \Gamma$, of the

@@ -1,6 +1,6 @@
 # Group laws for Amato's product on rational Pythagorean triples
 
-**Group laws for Amato's product on rational Pythagorean triples.** Let $E$ be the set of
+Let $E$ be the set of
 rational triples $(x, y, z)$ with $x \ne 0$ and $x^2 + y^2 = z^2$, and let $\star$ be Amato's
 product of triples. Then $(1, 0, 1) \in E$; $(u \star v) \star w = u \star (v \star w)$ for all
 $u, v, w \in E$; $u \star v = v \star u$ for all $u, v \in E$; $u \star (1, 0, 1) = u$ for every

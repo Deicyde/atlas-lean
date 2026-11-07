@@ -1,6 +1,6 @@
 # Ochem–Rao lower bound for odd perfect numbers
 
-**Ochem–Rao lower bound for odd perfect numbers.** Every odd perfect number exceeds $10^{1500}$.
+Every odd perfect number exceeds $10^{1500}$.
 
 ## Sources
 

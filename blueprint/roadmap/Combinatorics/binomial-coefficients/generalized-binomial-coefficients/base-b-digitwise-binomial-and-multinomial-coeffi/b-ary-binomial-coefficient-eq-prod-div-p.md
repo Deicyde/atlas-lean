@@ -1,6 +1,6 @@
 # Digit-product formula for $b$-ary binomial coefficients
 
-**Digit-product formula for $b$-ary binomial coefficients.** Let $b \ge 2$ and let $n$, $k$
+Let $b \ge 2$ and let $n$, $k$
 and $L$ be natural numbers with $n < b^L$ and $k < b^L$. Then the $b$-ary binomial coefficient
 $\binom{n}{k}_b$ equals
 

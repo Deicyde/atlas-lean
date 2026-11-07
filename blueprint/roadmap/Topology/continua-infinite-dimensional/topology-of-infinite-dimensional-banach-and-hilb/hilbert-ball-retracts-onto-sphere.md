@@ -1,6 +1,6 @@
 # Retraction onto the unit sphere of Hilbert space
 
-**Retraction onto the unit sphere of Hilbert space.** Let $E$ be an infinite-dimensional real
+Let $E$ be an infinite-dimensional real
 Hilbert space and let $S = \{x \in E : \|x\| = 1\}$ be its unit sphere. Then there is a
 continuous map $f : E \to E$ such that $f(x) \in S$ for every $x \in E$ and $f(x) = x$ for every
 $x \in S$.

@@ -1,6 +1,6 @@
 # CAPACITATED VEHICLE ROUTING is NP-complete
 
-**CAPACITATED VEHICLE ROUTING is NP-complete.** The decision problem CAPACITATED VEHICLE
+The decision problem CAPACITATED VEHICLE
 ROUTING lies in NP, and every decision problem in NP has a polynomial-time many-one reduction to
 it.
 

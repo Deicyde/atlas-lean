@@ -1,6 +1,6 @@
 # Ramanujan's functional equation for $\varphi$ at rationals with odd denominator
 
-**Ramanujan's functional equation for $\varphi$ at rationals with odd denominator.** For
+For
 $-1 < x < 0$ and $r \in \mathbb{C}$ let $\varphi_r(x) = \zeta(-r) - \zeta(-r, x + 1)$, where
 $\zeta$ is the Riemann zeta function and $\zeta(s, a)$ the Hurwitz zeta function. Let $p$ and $q$
 be natural numbers with $0 < p < q$ and $q$ odd, and for $r \in \mathbb{C}$ put

@@ -1,6 +1,6 @@
 # Frobenius criterion for Lucas pseudoprimes that are not strong
 
-**Frobenius criterion for Lucas pseudoprimes that are not strong.** Let $U$ be the Lucas
+Let $U$ be the Lucas
 sequence with parameters $P$ and $Q$, where $Q = 1$ or $Q = -1$, and let $D = P^2 - 4Q$. Let $N$
 be a Lucas pseudoprime with parameters $P, Q$ such that $\gcd(N, D) = 1$ and $N$ is not a strong
 Lucas pseudoprime, let $\rho(N)$ be the rank of appearance of $N$ in $U$, and let $k$ be a natural

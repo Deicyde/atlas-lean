@@ -1,6 +1,6 @@
 # Almost-everywhere convergent conditional expectations converge in L¹
 
-**Almost-everywhere convergent conditional expectations converge in L¹.** Let $\mu$ be a finite
+Let $\mu$ be a finite
 measure on a measurable space $(\Omega, \mathcal{F})$, let $(\mathcal{G}_n)_{n \in \mathbb{N}}$ be
 a sequence of sub-σ-algebras of $\mathcal{F}$, let $g : \Omega \to \mathbb{R}$ be integrable,
 and write $\mu[g \mid \mathcal{G}_n]$ for the conditional expectation of $g$ given

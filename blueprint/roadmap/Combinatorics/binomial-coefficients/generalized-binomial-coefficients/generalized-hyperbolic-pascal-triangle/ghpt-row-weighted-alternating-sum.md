@@ -1,6 +1,6 @@
 # Weighted alternating row sums of the generalized hyperbolic Pascal triangle
 
-**Weighted alternating row sums of the generalized hyperbolic Pascal triangle.** Let
+Let
 $q, n \in \mathbb{N}$, let $\alpha, \beta \colon \mathbb{N} \to \mathbb{C}$ and let
 $v, w \in \mathbb{C}$. Let $x_0, x_1, \dots, x_{\ell - 1}$ be the values of the entries of row $n$
 of the generalized hyperbolic Pascal triangle linked to $\{4, q\}$ with legs $\alpha$ and $\beta$,

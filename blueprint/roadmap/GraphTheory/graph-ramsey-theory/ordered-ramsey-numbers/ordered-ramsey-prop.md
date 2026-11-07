@@ -1,6 +1,6 @@
 # Ordered Ramsey property
 
-**Ordered Ramsey property.** Let $H$ be a simple graph on $\{0, \dots, n - 1\}$ with a strict
+Let $H$ be a simple graph on $\{0, \dots, n - 1\}$ with a strict
 total order $\lt _H$ on its vertices. A natural number $N$ has the ordered Ramsey property for
 $(H, \lt _H)$ when every simple graph $G$ on $\{0, \dots, N - 1\}$ contains a red ordered copy of
 $(H, \lt _H)$ or admits a blue ordered copy of $(H, \lt _H)$. Equivalently, every red/blue colouring of

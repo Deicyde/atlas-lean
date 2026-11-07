@@ -1,6 +1,6 @@
 # Runs in a word whose even-position letters alternate
 
-**Runs in a word whose even-position letters alternate.** Let $n$ be a natural number and let
+Let $n$ be a natural number and let
 $w = w_0 w_1 \cdots w_{2n}$ be a binary word of length $2n + 1$ with $w_{2i} \ne w_{2i+2}$ for
 every $i < n$, so that its even positions read $abab\cdots$ with $a \ne b$ and its odd positions
 are arbitrary. Then the reduction of $w$, the word obtained by collapsing each maximal run of

@@ -1,6 +1,6 @@
 # Wilf-equivalence and count for {0̄0̄, 0̄0, 01̄} (Lemma 2)
 
-**Wilf-equivalence and count for {0̄0̄, 0̄0, 01̄} (Lemma 2).** Write a length-2 signed pattern
+Write a length-2 signed pattern
 as $\tau_1\tau_2$, where $00$, $01$ and $10$ record whether $|\tau_1|$ is equal to, smaller than
 or larger than $|\tau_2|$ and a bar marks a barred letter, and write $|\bar I_n(B)|$ for the
 number of signed inversion sequences of length $n$ avoiding every pattern of a set $B$ of such

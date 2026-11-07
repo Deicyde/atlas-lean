@@ -1,6 +1,6 @@
 # Letter frequencies and mean positions of primitive fixed points
 
-**Letter frequencies and mean positions of primitive fixed points.** Let $\varrho$ be a
+Let $\varrho$ be a
 substitution on the letters $a, b$ with substitution matrix $M$, where $M_{11} = |\varrho(a)|_a$,
 $M_{12} = |\varrho(b)|_a$, $M_{21} = |\varrho(a)|_b$ and $M_{22} = |\varrho(b)|_b$ ($|v|_x$ is
 the number of letters $x$ in $v$). Suppose $\varrho$ is primitive (some power of $M$ has all

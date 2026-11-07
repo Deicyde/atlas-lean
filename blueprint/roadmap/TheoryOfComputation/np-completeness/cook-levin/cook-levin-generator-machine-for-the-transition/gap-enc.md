@@ -1,6 +1,6 @@
 # Gap encoding of a dense clause
 
-**Gap encoding of a dense clause.** For a starting slot $m$, a list $\ell$ of literals
+For a starting slot $m$, a list $\ell$ of literals
 $(p, b)$ (variable index $p$, sign $b$) and a number of variables $V$, the gap encoding of $\ell$
 from slot $m$ to $V$ is defined by recursion on $\ell$. For the empty list it is $V - m$ copies of
 the absent-slot block $01$. For a list whose first literal is $(p, b)$ and whose remaining literals

@@ -1,6 +1,6 @@
 # The reciprocals of $\sum_{k=0}^{n} (a_k + 1/a_k)$ tend to zero
 
-**The reciprocals of $\sum_{k=0}^{n} (a_k + 1/a_k)$ tend to zero.** Let
+Let
 $(a_n)_{n \in \mathbb{N}}$ be a sequence of positive real numbers, and for $n \in \mathbb{N}$ let
 $x_n = \sum_{k=0}^{n} (a_k + 1/a_k)$. Then $1/x_n \to 0$ as $n \to \infty$.
 

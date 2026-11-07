@@ -1,6 +1,6 @@
 # Sums of Rankin–Selberg convolution powers twisted by the principal character
 
-**Sums of Rankin–Selberg convolution powers twisted by the principal character.** Let $f$ be a
+Let $f$ be a
 level-one cusp form of weight $k$ that is a normalized Hecke eigenform, let $\lambda_{f\times f}$
 be its Rankin–Selberg coefficients, let $w \ge 2$, let $\lambda_{w,f\times f}$ be the $w$-th
 power of $\lambda_{f\times f}$ under Dirichlet convolution, and for a prime $q$ let $\chi_0$ be

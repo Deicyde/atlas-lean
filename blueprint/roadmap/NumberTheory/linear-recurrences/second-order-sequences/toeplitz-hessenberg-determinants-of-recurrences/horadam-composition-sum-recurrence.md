@@ -1,6 +1,6 @@
 # Horadam composition sums satisfy the Horadam recurrence
 
-**Horadam composition sums satisfy the Horadam recurrence.** Let $p, q, r, s$ be complex
+Let $p, q, r, s$ be complex
 numbers with $(q - r)^2 = 4s(p - 1)$ and $4s(p - 1) \ne 0$, put $e = 2ps/(r - q)$, and for every
 natural number $m$ let
 

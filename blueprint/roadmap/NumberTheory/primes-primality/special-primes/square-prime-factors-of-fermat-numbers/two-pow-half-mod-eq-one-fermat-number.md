@@ -1,6 +1,6 @@
 # Warren–Bray congruence for prime divisors of Fermat numbers
 
-**Warren–Bray congruence for prime divisors of Fermat numbers.** Let $F_n = 2^{2^n} + 1$ be
+Let $F_n = 2^{2^n} + 1$ be
 the $n$-th Fermat number. For every $n \ge 2$ and every odd prime $p$ dividing $F_n$, we have
 $2^{(p-1)/2} \equiv 1 \pmod{F_n}$. This result is due to Warren and Bray (1967).
 

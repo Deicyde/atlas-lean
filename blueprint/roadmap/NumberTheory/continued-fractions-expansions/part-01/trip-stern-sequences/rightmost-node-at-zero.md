@@ -1,6 +1,6 @@
 # Rightmost node at depth zero
 
-**Rightmost node at depth zero.** For every TRIP-Stern tree $T$, the rightmost node of $T$ at
+For every TRIP-Stern tree $T$, the rightmost node of $T$ at
 depth $0$ is the seed of $T$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # Kernel value
 
-**Kernel value.** Let $\pi(t) = \max(0, \min(1, t))$ be the projection of $\mathbb{R}$ onto
+Let $\pi(t) = \max(0, \min(1, t))$ be the projection of $\mathbb{R}$ onto
 $[0, 1]$. For a continuous kernel $k$ on $[0, 1] \times [0, 1]$, a function
 $f \in C([0, 1], \mathbb{R})$ and a point $x \in [0, 1]$, the kernel value is the real number
 

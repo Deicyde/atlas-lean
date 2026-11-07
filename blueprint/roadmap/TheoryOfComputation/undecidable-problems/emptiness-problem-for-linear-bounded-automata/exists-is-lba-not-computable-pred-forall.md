@@ -1,6 +1,6 @@
 # Emptiness of a linear bounded automaton on computable input slices is undecidable
 
-**Emptiness of a linear bounded automaton on computable input slices is undecidable.** There
+There
 exist a finite inhabited alphabet $\Gamma$ with a primitive recursive encoding, a linear bounded
 automaton $F$ over the fenced alphabet of $\Gamma$, and a primitive recursive map $e$ from codes of
 partial recursive functions to words over $\Gamma$, such that the set of codes $c$ for which $F$

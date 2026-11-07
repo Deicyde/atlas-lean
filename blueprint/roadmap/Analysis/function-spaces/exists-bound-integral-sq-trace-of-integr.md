@@ -1,6 +1,6 @@
 # Sobolev trace bound on the plane $z = 0$ in $\mathbb{R}^3$
 
-**Sobolev trace bound on the plane $z = 0$ in $\mathbb{R}^3$.** Let $(f_n)_{n \in \mathbb{N}}$
+Let $(f_n)_{n \in \mathbb{N}}$
 be a sequence of continuously differentiable functions $\mathbb{R}^3 \to \mathbb{R}$, where
 $\mathbb{R}^3$ has coordinates $(x, y, z)$ and the max norm. For $p \in \mathbb{R}^3$ write
 $\|Df_n(p)\|$ for the operator norm of the derivative of $f_n$ at $p$, which equals

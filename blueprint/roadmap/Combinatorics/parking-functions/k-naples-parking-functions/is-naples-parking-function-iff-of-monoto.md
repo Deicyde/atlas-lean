@@ -1,6 +1,6 @@
 # Lattice-path criterion for ascending $k$-Naples parking functions
 
-**Lattice-path criterion for ascending $k$-Naples parking functions.** Let
+Let
 $\alpha = (a_1, \dots, a_n)$ be a weakly increasing preference with $1 \le a_i \le n$ for every
 $i$, and let $h_j$ be the height after the first $j$ steps of the lattice path of $\alpha$, which
 has $2n$ steps. Then $\alpha$ is a $k$-Naples parking function if and only if for every $j$

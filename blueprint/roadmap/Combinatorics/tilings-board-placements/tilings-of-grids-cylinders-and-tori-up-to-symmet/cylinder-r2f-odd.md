@@ -1,6 +1,6 @@
 # Cylinder fixed-tiling count for the reflection $r^2 f$ when $m$ is odd
 
-**Cylinder fixed-tiling count for the reflection $r^2 f$ when $m$ is odd.** Let $T$ be a
+Let $T$ be a
 finite set of tile designs, let $n, m \ge 1$ with $m$ odd, and let $\sigma$ be a permutation of
 $T$ with $\sigma^2 = 1$. Let $r^2 f$ be the cell map $(x, y) \mapsto (x, -1 - y)$ of
 $\mathbb{Z}/n \times \mathbb{Z}/m$, and for $k \ge 0$ let $t_k$ be the number of designs fixed

@@ -1,6 +1,6 @@
 # King moves
 
-**King moves.** The king's move set $K \subset \mathbb{Z}^2$ consists of the eight unit
+The king's move set $K \subset \mathbb{Z}^2$ consists of the eight unit
 horizontal, vertical and diagonal steps:
 
 $$K = \{(1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1), (0, -1), (1, -1)\}.$$

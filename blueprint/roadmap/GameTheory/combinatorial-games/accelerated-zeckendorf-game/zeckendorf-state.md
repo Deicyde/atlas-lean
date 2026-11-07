@@ -1,6 +1,6 @@
 # Zeckendorf decomposition as a game state
 
-**Zeckendorf decomposition as a game state.** Index the Fibonacci numbers as $F_1 = 1$,
+Index the Fibonacci numbers as $F_1 = 1$,
 $F_2 = 2$ and $F_{i+1} = F_i + F_{i-1}$, and record a game state as a finitely supported
 function $s : \mathbb{N} \to \mathbb{N}$, where $s(i)$ is the number of copies of $F_i$. Every
 $n \in \mathbb{N}$ has a unique Zeckendorf decomposition $n = F_{i_1} + \cdots + F_{i_r}$ with

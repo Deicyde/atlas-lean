@@ -1,6 +1,6 @@
 # The variation $\Delta^{(1)}$ on the cylinder $C_{00(10)^d}$
 
-**The variation $\Delta^{(1)}$ on the cylinder $C_{00(10)^d}$.** Let $d \ge 0$ and let $x$ be a
+Let $d \ge 0$ and let $x$ be a
 Zeckendorf-adic integer in the cylinder $C_{00(10)^d}$, that is, one whose digits satisfy
 $x_{2d+3} = x_{2d+2} = 0$ and $x_{2i+1} = 1$, $x_{2i} = 0$ for $1 \le i \le d$. Write
 $\Delta_k^{(1)}(x)$ for the truncated variation of order $k$ and $\Delta^{(1)}(x)$ for the

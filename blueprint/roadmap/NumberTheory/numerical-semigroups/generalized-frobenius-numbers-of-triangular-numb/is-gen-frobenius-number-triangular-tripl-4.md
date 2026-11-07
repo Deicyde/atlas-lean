@@ -1,6 +1,6 @@
 # Explicit generalized Frobenius numbers of triangular triples at levels 11 to 20
 
-**Explicit generalized Frobenius numbers of triangular triples at levels 11 to 20.** For a
+For a
 natural number $r$ write $t_r = r(r+1)/2$. For a natural number $n$, a natural number $s$ and an
 integer $L$, say that $s$ has value $L$ when the generalized Frobenius number $g$ of
 $(t_n, t_{n+1}, t_{n+2})$ at $s$ exists and satisfies $4(g + 1) = (n+1)(n+2)L$. Then for every

@@ -1,6 +1,6 @@
 # Erdős Problem 1216 is false
 
-**Erdős Problem 1216 is false.** It is not the case that $f(n) = \lfloor \log_2 n \rfloor + 1$ for
+It is not the case that $f(n) = \lfloor \log_2 n \rfloor + 1$ for
 every $n \ge 1$, where $f(n)$ is the largest $m$ such that every tournament on $n$ vertices
 contains a transitive subtournament on $m$ vertices.
 

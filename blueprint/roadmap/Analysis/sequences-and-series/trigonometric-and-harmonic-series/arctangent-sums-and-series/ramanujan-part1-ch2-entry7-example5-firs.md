@@ -1,6 +1,6 @@
 # Series of arctangents of 1/(2k²) (Entry 7, Example 5)
 
-**Series of arctangents of 1/(2k²) (Entry 7, Example 5).** The series
+The series
 
 $$\sum_{n=0}^{\infty} \arctan \frac{1}{2(n + 1)^2}$$
 

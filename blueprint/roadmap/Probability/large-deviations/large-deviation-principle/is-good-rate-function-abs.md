@@ -1,6 +1,6 @@
 # The absolute value is a good rate function
 
-**The absolute value is a good rate function.** The function $x \mapsto |x|$, viewed as a map
+The function $x \mapsto |x|$, viewed as a map
 $\mathbb{R} \to [0, \infty]$, is a good rate function on $\mathbb{R}$.
 
 It is continuous, hence lower semicontinuous, and its sub-level sets at finite levels are closed

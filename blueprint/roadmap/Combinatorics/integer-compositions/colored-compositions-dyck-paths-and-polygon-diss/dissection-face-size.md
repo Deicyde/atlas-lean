@@ -1,6 +1,6 @@
 # Size of the polygon under a chord
 
-**Size of the polygon under a chord.** Let $D$ be a finite set of pairs of natural numbers
+Let $D$ be a finite set of pairs of natural numbers
 and let $e = (a, b)$ be a pair of natural numbers. The face size of $e$ in $D$ is $2$ plus the
 number of natural numbers $v$ with $a < v < b$ for which there is no pair $(c, d) \in D$ other
 than $e$ with $a \le c < v < d \le b$. When $D$ is a noncrossing set of diagonals of the convex

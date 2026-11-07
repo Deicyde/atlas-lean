@@ -1,6 +1,6 @@
 # The lattice boundary $\mu$
 
-**The lattice boundary $\mu$.** Let $p$, $d$ and $i$ be natural numbers and let
+Let $p$, $d$ and $i$ be natural numbers and let
 $\tau = (p + 1)/d$, taken to be $0$ when $d = 0$. For a rational $x$ and an integer $k$, write
 $[p^k](x)$ for the residue of $\lfloor x/p^k \rfloor$ modulo $p$, the $k$-th base-$p$ digit
 of $x$. Then $\mu(i)$ is $\lfloor \tau i \rfloor$ if the integer-part digit sequence

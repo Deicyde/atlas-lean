@@ -1,6 +1,6 @@
 # A sharp radius of convexity for starlike functions of order 1/2 exists
 
-**A sharp radius of convexity for starlike functions of order 1/2 exists.** Let $\mathbb{D}$ be
+Let $\mathbb{D}$ be
 the open unit disc in $\mathbb{C}$. Call $f : \mathbb{C} \to \mathbb{C}$ a normalized starlike
 function of order $1/2$ if $f$ is holomorphic and injective on $\mathbb{D}$, $f(0) = 0$,
 $f'(0) = 1$, and $\operatorname{Re}(z f'(z)/f(z)) \ge 1/2$ for every $z \in \mathbb{D}$ with

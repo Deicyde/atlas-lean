@@ -1,6 +1,6 @@
 # Equal line sums from two orthogonal diagonal Latin squares
 
-**Equal line sums from two orthogonal diagonal Latin squares.** Let $n \ge 1$, let
+Let $n \ge 1$, let
 $a, b : \{0, \dots, n-1\} \to \mathbb{N}$, and let $L$ and $R$ be $n \times n$ arrays with entries
 $L_{ij}, R_{ij} \in \{0, \dots, n-1\}$ (rows $i$ and columns $j$ indexed by $\{0, \dots, n-1\}$)
 such that, in each of $L$ and $R$, every row, every column, the main diagonal (entries $(i, i)$)

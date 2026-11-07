@@ -1,6 +1,6 @@
 # Ramanujan's function $k$ at $q$ and $q^2$ as an eta quotient
 
-**Ramanujan's function $k$ at $q$ and $q^2$ as an eta quotient.** For every complex number
+For every complex number
 $q$ with $0 < |q| < 1$, Ramanujan's function $k$ satisfies
 
 $$

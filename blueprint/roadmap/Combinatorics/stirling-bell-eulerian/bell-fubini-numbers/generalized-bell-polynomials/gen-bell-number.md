@@ -1,6 +1,6 @@
 # Generalized Bell numbers
 
-**Generalized Bell numbers.** For a commutative ring $R$, elements $s, h \in R$ and a natural
+For a commutative ring $R$, elements $s, h \in R$ and a natural
 number $n$, the generalized Bell number is
 
 $$\mathfrak{B}_{s;h}(n) = \sum_{k=0}^{n} \mathfrak{S}_{s;h}(n, k),$$

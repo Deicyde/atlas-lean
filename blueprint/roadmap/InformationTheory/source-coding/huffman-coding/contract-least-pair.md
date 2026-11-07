@@ -1,6 +1,6 @@
 # Contracting the two least weights
 
-**Contracting the two least weights.** Let $T$ be a weight tree, let $a$ and $b$ be real
+Let $T$ be a weight tree, let $a$ and $b$ be real
 numbers and let $M$ be a multiset of real numbers such that the multiset of leaf weights of $T$ is
 $\{a, b\} + M$, $a \le b$, and $b \le w$ for every $w \in M$. Then there is a weight tree $T'$
 whose multiset of leaf weights is $\{a + b\} + M$ and whose path cost satisfies

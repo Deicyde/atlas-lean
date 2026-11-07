@@ -1,6 +1,6 @@
 # Basic moves of the anassa
 
-**Basic moves of the anassa.** The basic moves of the anassa are the two vectors $(0, 1)$
+The basic moves of the anassa are the two vectors $(0, 1)$
 and $(1, 1)$ in $\mathbb{Z}^2$.
 
 ## Sources

@@ -1,6 +1,6 @@
 # A word in the $(4, 10)$-Hoey-Sloane language
 
-**A word in the $(4, 10)$-Hoey-Sloane language.** The input string
+The input string
 $(2, 8)(1, 7)(9, 9)(7, 1)(8, 2)$ belongs to the language of the $(4, 10)$-Hoey-Sloane machine:
 reading it from left to right, the machine can go from state $0$ to state $0$.
 

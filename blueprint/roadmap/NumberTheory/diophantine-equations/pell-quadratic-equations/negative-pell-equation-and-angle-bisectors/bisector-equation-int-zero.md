@@ -1,6 +1,6 @@
 # No nontrivial integer solutions of the bisector equation with $a = 0$ or $b = 0$
 
-**No nontrivial integer solutions of the bisector equation with $a = 0$ or $b = 0$.** Let
+Let
 $a, b, c$ be integers with $a = 0$ or $b = 0$ and
 $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$. Then $|a| = |b|$.
 

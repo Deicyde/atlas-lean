@@ -1,6 +1,6 @@
 # Three unit-square cosets sum to every residue modulo an odd prime power
 
-**Three unit-square cosets sum to every residue modulo an odd prime power.** Let $p$ be an
+Let $p$ be an
 odd prime, let $r \ge 1$, and let $A = U(p^r)^2$ be the set of squares of units of
 $\mathbb{Z}/p^r\mathbb{Z}$; for $y \in \mathbb{Z}/p^r\mathbb{Z}$ write $Ay = \{ay : a \in A\}$.
 For all units $y_1, y_2, y_3$ of $\mathbb{Z}/p^r\mathbb{Z}$, every element of

@@ -1,6 +1,6 @@
 # Freshness invariants of Algorithm W
 
-**Freshness invariants of Algorithm W.** Let $\Gamma$ be a typing context and $n$ a
+Let $\Gamma$ be a typing context and $n$ a
 natural number such that every free type variable of $\Gamma$ is less than $n$. If Algorithm W
 succeeds on $\Gamma$ and an expression $e$ with counter $n$, returning a substitution $s$, a
 monotype $\tau$ and a new counter $n'$, then $n \le n'$, every type variable of $\tau$ is less

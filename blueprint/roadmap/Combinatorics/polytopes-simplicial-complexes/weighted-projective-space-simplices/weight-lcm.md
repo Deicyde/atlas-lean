@@ -1,6 +1,6 @@
 # Least common multiple of a list of weights
 
-**Least common multiple of a list of weights.** For a finite list $q = (q_1, \dots, q_n)$ of
+For a finite list $q = (q_1, \dots, q_n)$ of
 natural numbers, $\operatorname{lcm}(q)$ is
 $\operatorname{lcm}(\cdots\operatorname{lcm}(\operatorname{lcm}(1, q_1), q_2)\cdots, q_n)$, the
 usual least common multiple of $q_1, \dots, q_n$; in particular the empty list has least common

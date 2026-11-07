@@ -1,6 +1,6 @@
 # Alternating sum of reciprocal generalized binomial coefficients
 
-**Alternating sum of reciprocal generalized binomial coefficients.** For every natural
+For every natural
 number $n$ and all complex numbers $u, v$ with $\operatorname{Re} u > -1$ and
 $\operatorname{Re} v > -1$,
 

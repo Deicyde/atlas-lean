@@ -1,6 +1,6 @@
 # Motzkin prefixes whose first non-up step is down
 
-**Motzkin prefixes whose first non-up step is down.** Use the steps $U = (1,1)$,
+Use the steps $U = (1,1)$,
 $F = (1,0)$ and $D = (1,-1)$, and call a word in these steps a Motzkin prefix if none of its
 initial segments ends below height $0$. For a natural number $n$, this is the set of pairs
 $(k, p)$ where $k$ is a natural number with $k \le n - 2$ and $p$ is a Motzkin prefix of length

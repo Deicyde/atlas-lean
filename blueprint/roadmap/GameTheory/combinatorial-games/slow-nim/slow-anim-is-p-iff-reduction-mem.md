@@ -1,6 +1,6 @@
 # P-positions of Slow $A$-Nim via the playable game graph
 
-**P-positions of Slow $A$-Nim via the playable game graph.** Let $n \in \mathbb{N}$ and
+Let $n \in \mathbb{N}$ and
 $A \subseteq \{1, \dots, n\}$. Let $\tilde P$ be a set of P-positions for the moves of the
 playable game graph of Slow$A$-Nim $\mathrm{SN}(n, A)$, whose positions are the reduced
 positions: no position in $\tilde P$ has a move to a position in $\tilde P$, and every reduced

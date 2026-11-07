@@ -1,6 +1,6 @@
 # Torus fixed-tiling sum for the reflection $f$, $n$ even
 
-**Torus fixed-tiling sum for the reflection $f$, $n$ even.** Let $n$ and $m$ be positive
+Let $n$ and $m$ be positive
 integers with $n$ even, let $T$ be a finite set of tiles, let $\sigma$ be a permutation of $T$ with
 $\sigma^2 = 1$, and for $k \ge 0$ let $t_k$ be the number of tiles $d \in T$ with
 $\sigma^k(d) = d$. Let $f(x, y) = (-1 - x, y)$ on $\mathbb{Z}/n \times \mathbb{Z}/m$, and for

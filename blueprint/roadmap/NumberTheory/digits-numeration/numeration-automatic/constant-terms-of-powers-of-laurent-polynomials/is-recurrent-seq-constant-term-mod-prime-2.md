@@ -1,6 +1,6 @@
 # Recurrence of constant-term sequences modulo a prime power
 
-**Recurrence of constant-term sequences modulo a prime power.** Let $p$ be a prime, let
+Let $p$ be a prime, let
 $a \ge 1$, and let $P$ and $Q$ be Laurent polynomials in $r$ variables with integer coefficients;
 write $\mathrm{ct}[F]$ for the constant term of a Laurent polynomial $F$. If
 $p \nmid \mathrm{ct}[P^{n_0}]$ for some $n_0 > 0$, then the sequence of residues

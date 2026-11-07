@@ -1,6 +1,6 @@
 # First Betti number of a group
 
-**First Betti number of a group.** The first Betti number of a group $G$ is the rank, as a
+The first Betti number of a group $G$ is the rank, as a
 cardinal, of its abelianization $G^{\mathrm{ab}}$ viewed as a $\mathbb{Z}$-module.
 
 ## Sources

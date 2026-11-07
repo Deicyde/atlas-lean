@@ -1,6 +1,6 @@
 # Dominating sets have no uncovered vertex
 
-**Dominating sets have no uncovered vertex.** Let $G$ be a simple graph and $S$ a finite set
+Let $G$ be a simple graph and $S$ a finite set
 of vertices of $G$. Then $S$ dominates $G$ if and only if no vertex of $G$ has domination state
 uncovered relative to $S$ in $G$.
 

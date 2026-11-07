@@ -1,6 +1,6 @@
 # The value $A_k^{(2)} = 8/k^2$
 
-**The value $A_k^{(2)} = 8/k^2$.** For every rational number $k$, the number $A_k^{(2)}$ for
+For every rational number $k$, the number $A_k^{(2)}$ for
 $k$-Fibonacci Brousseau sums equals $8/k^2$, where $8/0$ is read as $0$.
 
 ## Sources

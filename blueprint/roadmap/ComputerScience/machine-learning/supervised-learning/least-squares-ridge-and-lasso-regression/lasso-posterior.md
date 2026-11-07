@@ -1,6 +1,6 @@
 # Lasso posterior kernel
 
-**Lasso posterior kernel.** Let $X$ be a real matrix with $m$ rows and columns indexed by a
+Let $X$ be a real matrix with $m$ rows and columns indexed by a
 finite set $\iota$, let $y \in \mathbb{R}^m$, and let $v \ge 0$ and $b \ge 0$. The lasso posterior
 kernel at $\theta \in \mathbb{R}^\iota$ is
 

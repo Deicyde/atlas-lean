@@ -1,6 +1,6 @@
 # One pass of the braid closure
 
-**One pass of the braid closure.** Let $w$ be a braid word (a list of integers) of length $m$.
+Let $w$ be a braid word (a list of integers) of length $m$.
 Starting from a traversal state, one pass applies the letters of $w$ in order as crossings, the
 $k$-th letter (counting from $0$) occupying the slab $-(k+1) \le z \le -k$; this moves the state
 to a strand position $p$ and appends the crossing vertices. It then appends the closure arc: the

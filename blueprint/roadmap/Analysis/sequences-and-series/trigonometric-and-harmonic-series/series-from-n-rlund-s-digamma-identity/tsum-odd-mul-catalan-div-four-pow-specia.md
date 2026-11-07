@@ -1,6 +1,6 @@
 # Catalan series over powers of $4$ equal to $4\ln 2$ and $4\ln 2 - 2$
 
-**Catalan series over powers of $4$ equal to $4\ln 2$ and $4\ln 2 - 2$.** Let $C_n$ be the
+Let $C_n$ be the
 $n$-th Catalan number. Then
 
 $$\sum_{n=0}^{\infty} \frac{2n+1}{n+1} \cdot \frac{C_n}{4^n} = 4\ln 2$$

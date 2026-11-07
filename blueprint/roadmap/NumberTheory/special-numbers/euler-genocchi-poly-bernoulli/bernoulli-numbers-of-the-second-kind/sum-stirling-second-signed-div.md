@@ -1,6 +1,6 @@
 # Shifted Stirling convolution formula for Bernoulli numbers
 
-**Shifted Stirling convolution formula for Bernoulli numbers.** For natural numbers $k$ and $n$
+For natural numbers $k$ and $n$
 with $1 \le k \le n$, write $S(m,j)$ for the Stirling numbers of the second kind, $s(m,j)$ for
 the signed Stirling numbers of the first kind, and $B_m$ for the Bernoulli numbers with
 $B_1 = -\tfrac12$. Then, in $\mathbb{Q}$,

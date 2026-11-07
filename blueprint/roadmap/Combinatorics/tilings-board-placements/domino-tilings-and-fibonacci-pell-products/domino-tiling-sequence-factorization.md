@@ -1,6 +1,6 @@
 # Factorization of the domino tiling sequence
 
-**Factorization of the domino tiling sequence.** Let $d$ and $g$ be sequences of natural
+Let $d$ and $g$ be sequences of natural
 numbers with $d_1 = 1$, $d_2 = 8$, $d_3 = 95$, $d_4 = 1183$ and
 $d_{n+4} + 32 d_{n+2} + d_n = 15 d_{n+3} + 15 d_{n+1}$ for all $n \ge 1$, and with $g_1 = 1$,
 $g_2 = 4$ and $g_{n+2} + g_n = 5 g_{n+1}$ for all $n \ge 1$. Then $d_n = g_n F_{2n-1}$ for every

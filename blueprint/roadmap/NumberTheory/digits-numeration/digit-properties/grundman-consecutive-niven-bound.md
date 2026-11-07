@@ -1,6 +1,6 @@
 # Grundman's bound on consecutive Niven numbers
 
-**Grundman's bound on consecutive Niven numbers.** Let $b \ge 2$ and $a \ge 1$ be integers.
+Let $b \ge 2$ and $a \ge 1$ be integers.
 Then for some $i$ with $0 \le i \le 2b$, the integer $a + i$ is not divisible by the sum of its
 base-$b$ digits. Equivalently, the $2b + 1$ consecutive integers $a, a + 1, \dots, a + 2b$ are not
 all $b$-Niven numbers, where a $b$-Niven number is a positive integer divisible by the sum of its

@@ -1,6 +1,6 @@
 # Hypersequences as binomial sums
 
-**Hypersequences as binomial sums.** Let $(a_n)$ be a sequence of complex numbers and let
+Let $(a_n)$ be a sequence of complex numbers and let
 $a^{(r)}_n$ denote its hypersequence of generation $r$. For every $r \ge 1$ and every natural
 number $n$,
 

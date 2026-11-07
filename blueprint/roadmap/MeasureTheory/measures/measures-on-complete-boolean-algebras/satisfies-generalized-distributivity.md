@@ -1,6 +1,6 @@
 # Von Neumann's generalized distributivity law
 
-**Von Neumann's generalized distributivity law.** A complete Boolean algebra $B$ satisfies
+A complete Boolean algebra $B$ satisfies
 the generalized distributivity law (von Neumann's condition (6)) when, for every double sequence
 $(a_{i,j})_{i, j \in \mathbb{N}}$ of elements of $B$ that is increasing in $j$ for each fixed $i$
 (that is, $a_{i,0} \le a_{i,1} \le \cdots$ for every $i$),

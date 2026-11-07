@@ -1,6 +1,6 @@
 # Binet formula for the $r$-Lucas polynomials (one double zero)
 
-**Binet formula for the $r$-Lucas polynomials (one double zero).** Let $K$ be a field of
+Let $K$ be a field of
 characteristic zero, let $r \ge 1$ and $s$ be natural numbers, and let $x, y, \alpha \in K$ with
 $\alpha \ne 0$. Suppose that $t^{r+1} - x t^r - y = (t - \alpha)^2 \tilde P(t)$ in $K[t]$, where
 $\tilde P(t) = \prod_{k=1}^{r-1} (t - \beta_k)$ for pairwise distinct

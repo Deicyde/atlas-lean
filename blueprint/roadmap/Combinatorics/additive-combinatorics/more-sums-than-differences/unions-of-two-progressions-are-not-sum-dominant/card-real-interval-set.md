@@ -1,6 +1,6 @@
 # Size of the interval $I_n$
 
-**Size of the interval $I_n$.** For every natural number $n$, the set
+For every natural number $n$, the set
 $I_n = \{0, 1, \dots, n - 1\}$ of real numbers has exactly $n$ elements.
 
 ## Sources

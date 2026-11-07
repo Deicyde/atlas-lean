@@ -1,6 +1,6 @@
 # Solutions of a linear congruence
 
-**Solutions of a linear congruence.** Let $a$ and $b$ be integers, let $m$ be a positive
+Let $a$ and $b$ be integers, let $m$ be a positive
 integer, and let $d = \gcd(a, m)$. The congruence $a x \equiv b \pmod{m}$ has an integer
 solution if and only if $d \mid b$. If $d \mid b$, then exactly $d$ of the numbers
 $x \in \{0, 1, \dots, m - 1\}$ are solutions. Moreover, if $x_0$ is a solution, then an integer
