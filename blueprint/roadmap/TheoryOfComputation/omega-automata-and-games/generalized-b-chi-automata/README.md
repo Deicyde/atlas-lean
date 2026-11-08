@@ -1,11 +1,8 @@
 # Generalized Büchi automata
 
-## NA
+## Generalized Büchi automata and degeneralization
 
 - [Generalized Büchi automaton](gen-buchi.md)
-
-## Gen Buchi
-
 - [Language of a generalized Büchi automaton](mem-language-iff.md)
 - [Counter update for degeneralization](next-count.md)
 - [The degeneralization counter stays when the awaited set is missed](next-count-eq-self.md)

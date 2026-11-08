@@ -1,11 +1,8 @@
 # Van Emde Boas tree
 
-## Lean
-
-- [Two-level van Emde Boas tree](van-emde-boas.md)
-
 ## Van Emde Boas
 
+- [Two-level van Emde Boas tree](van-emde-boas.md)
 - [Empty van Emde Boas tree](empty.md)
 - [Membership in a van Emde Boas tree](member.md)
 - [Insertion into a van Emde Boas tree](insert.md)

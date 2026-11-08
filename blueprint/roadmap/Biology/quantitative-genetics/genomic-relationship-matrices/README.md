@@ -4,7 +4,7 @@
 
 - [Malécot's identity-by-descent model](ibdmodel.md)
 
-## IBDModel
+## Identity by descent
 
 - [Genotype of an individual at a biallelic locus](genotype.md)
 - [Kinship coefficient](kinship.md)

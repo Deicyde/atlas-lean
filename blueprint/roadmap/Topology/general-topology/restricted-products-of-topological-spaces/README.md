@@ -1,6 +1,6 @@
 # Restricted products of topological spaces
 
-## XSDefinitions
+## Pieces of a restricted product
 
 - [Piece of a restricted product supported in a finite set](xs.md)
 - [The pieces grow with the finite set](xs-mono.md)

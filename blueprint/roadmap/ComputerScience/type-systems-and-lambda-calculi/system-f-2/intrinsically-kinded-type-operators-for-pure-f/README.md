@@ -1,20 +1,20 @@
 # Intrinsically kinded type operators for pure Fω
 
-## FOmega
+## Kinds and type variables
 
 - [Kinds of pure Fω](kind.md)
 - [Kinded type variables of Fω](kvar.md)
 - [Kind-preserving renamings of type variables](kren.md)
 
-## KRen
+## Renamings
 
 - [Lifting a renaming under a type binder](lift.md)
 
-## FOmega
+## Type operators
 
 - [Intrinsically kinded Fω type operators](ty.md)
 
-## Ty
+## Renaming and substitution of type operators
 
 - [Renaming of Fω type operators](rename.md)
 - [Kind-preserving simultaneous type substitutions](sub.md)

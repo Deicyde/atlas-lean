@@ -9,4 +9,4 @@ $\left(\int_{\mathbb{D}} |p f - g|^2 \, dA\right)^{1/2} < \varepsilon$.
 
 ## Sources
 
-- record `AMR-022-8010`; the record's generalization to other spaces is not formalized.
+- record `AMR-022-8010`; the record's generalization to other spaces is not part of this statement.

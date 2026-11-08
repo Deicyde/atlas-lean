@@ -14,7 +14,7 @@
 - [Reindexing commutes with images of lines](reindex-comp-line.md)
 - [Images of lines under composite subspaces](comp-comp-line.md)
 
-## Density Hales Jewett Wanted
+## Density Hales–Jewett theorem
 
 - [Graham–Rothschild theorem for combinatorial lines](exists-lines-mono-in-high-dimension-fin.md)
 - [Density Hales–Jewett theorem](density-hales-jewett.md)

@@ -1,11 +1,8 @@
 # Cuckoo hashing
 
-## Lean
-
-- [Cuckoo hash table](cuckoo-hashing.md)
-
 ## Cuckoo Hashing
 
+- [Cuckoo hash table](cuckoo-hashing.md)
 - [Empty cuckoo hash table](empty.md)
 - [Placement invariant of a cuckoo hash table](valid.md)
 - [Binding stored in a cuckoo hash table](stored.md)

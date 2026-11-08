@@ -1,6 +1,6 @@
 # Linear mixed models and BLUP
 
-## MME
+## Mixed-model equations
 
 - [Phenotypic covariance of a linear mixed model](phen-cov.md)
 - [Solution of Henderson's mixed-model equations](is-mmesolution.md)

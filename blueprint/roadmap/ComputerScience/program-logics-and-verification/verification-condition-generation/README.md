@@ -4,7 +4,7 @@
 
 - [Annotated commands](acmd.md)
 
-## ACmd
+## Annotated commands and verification conditions
 
 - [Erasing annotations](strip.md)
 - [Precondition of an annotated command](pre.md)

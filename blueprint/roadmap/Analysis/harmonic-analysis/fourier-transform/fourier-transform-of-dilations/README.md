@@ -1,6 +1,6 @@
 # Fourier transform of dilations
 
-## Real
+## Dilations
 
 - [Fourier transform of a dilation](fourier-comp-mul-left.md)
 - [Fourier transform of a dilation by a positive factor](fourier-comp-mul-left-of-pos.md)

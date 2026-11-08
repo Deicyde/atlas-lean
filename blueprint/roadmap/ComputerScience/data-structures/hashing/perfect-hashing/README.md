@@ -1,11 +1,8 @@
 # Perfect hashing
 
-## Lean
-
-- [Two-level perfect hash table](perfect-hashing.md)
-
 ## Perfect Hashing
 
+- [Two-level perfect hash table](perfect-hashing.md)
 - [Lookup in a perfect hash table](lookup.md)
 - [Empty perfect hash table](empty.md)
 - [Bindings stored in a perfect hash table](stored.md)

@@ -1,12 +1,12 @@
 # Cook-Levin: generator machine for the accept family
 
-## [FAM] The family (pure specification)
+## The family (pure specification)
 
 - [Literals of an accept code clause](code-lits.md)
 - [Literals of an accept cell clause](cell-lits.md)
 - [The accept family of a layout](acc-fam.md)
 
-## [FAM] The generator machine
+## The generator machine
 
 - [Counters of the accept generator](ck.md)
 - [Clause kinds of the accept generator](ak.md)
@@ -25,14 +25,14 @@
 - [Generator machine for the accept family](prog.md)
 - [The accept generator as a finite multi-stack machine](acc-tm.md)
 
-## [FAM] Correctness: one clause
+## Correctness: one clause
 
 - [Empty scratch counters of the accept generator](rest.md)
 - [Run of the literal routine of the accept generator](lit-run.md)
 - [Step bound for one accept clause](clause-b.md)
 - [One clause of the accept generator](clause-run.md)
 
-## [FAM] Correctness: the two label chains and the whole generator
+## Correctness: the two label chains and the whole generator
 
 - [Run of the code-clause chain of the accept generator](codes-run.md)
 - [Run of the accept cell chain](cells-run.md)
@@ -43,13 +43,13 @@
 - [Run of the accept generator's precomputation](pre-run.md)
 - [Correctness of the accept generator, with its explicit time bound](acc-run.md)
 
-## [BOUND] The time bound is polynomial: `accBound ≤ accC · (T + H + 1)^4`
+## The time bound is polynomial
 
 - [The accept generator's time bound on the uniform layout](acc-bound-uni.md)
 - [Constant of the accept generator's time bound](acc-c.md)
 - [Polynomial time bound of the accept generator](acc-time.md)
 
-## [FAM] Link to the semantic family `Situation.Enc.accFamily`
+## Link to the semantic accept family
 
 - [The concrete accept family is a layout-level accept family](acc-family-eq.md)
 - [Time bound of the accept generator for a concrete machine](acc-gen-time.md)

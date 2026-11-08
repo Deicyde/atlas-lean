@@ -45,7 +45,7 @@
 - [Proposer-optimality](gs-matching-proposer-optimal.md)
 - [Receiver-pessimality](gs-matching-receiver-pessimal.md)
 
-## Every MathlibExt preference on `Fin n` is a ranking
+## Strict total orders as rankings
 
 - [Rank under a strict total order](order-rank.md)
 - [Every strict total order on $\{0, \dots, n-1\}$ is given by a ranking](exists-to-order-eq.md)

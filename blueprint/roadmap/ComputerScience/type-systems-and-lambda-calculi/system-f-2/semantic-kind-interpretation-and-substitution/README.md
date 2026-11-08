@@ -1,13 +1,13 @@
 # Semantic kind interpretation and substitution
 
-## FOmega
+## Semantic interpretation of kinds
 
 - [Semantic interpretation of kinds](sem.md)
 - [Kinded semantic environment](kenv.md)
 - [Extension of a kinded semantic environment](extend.md)
 - [Kind algebra of arrow and universal type constructors](kind-algebra.md)
 
-## Ty
+## Evaluation of type operators
 
 - [Semantic evaluation of kinded type operators](eval.md)
 - [Evaluation depends only on the environment pointwise](eval-congr.md)

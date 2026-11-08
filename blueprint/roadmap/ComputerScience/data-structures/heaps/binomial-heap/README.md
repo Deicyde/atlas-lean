@@ -1,11 +1,8 @@
 # Binomial heap
 
-## Lean
-
-- [Binomial tree](binomial-tree.md)
-
 ## Binomial Tree
 
+- [Binomial tree](binomial-tree.md)
 - [Rank of a binomial tree](rank.md)
 - [Root of a binomial tree](root.md)
 - [Children of a binomial tree](children.md)
@@ -23,12 +20,9 @@
 - [The root of a valid binomial tree is a lower bound](root-le.md)
 - [Linking preserves binomial-tree validity](link-2.md)
 
-## Lean
-
-- [Valid binomial forest](valid-2.md)
-
 ## Binomial Forest
 
+- [Valid binomial forest](valid-2.md)
 - [Elements of a binomial forest](elements-2.md)
 - [Rank lower bound for a forest](ranks-at-least.md)
 - [The empty forest is valid](valid-nil.md)
@@ -44,12 +38,9 @@
 - [Removing a minimum-root tree](remove-min-tree-spec.md)
 - [Reversed children of a valid binomial tree form a valid forest](valid-reverse-children.md)
 
-## Lean
-
-- [Binomial heap](binomial-heap.md)
-
 ## Binomial Heap
 
+- [Binomial heap](binomial-heap.md)
 - [Elements of a binomial heap](elements-3.md)
 - [Tree ranks in a binomial heap are logarithmic](rank-le-log2-card-2.md)
 - [A binomial heap has logarithmically many trees](length-le-log2-card-succ-2.md)

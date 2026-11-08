@@ -1,21 +1,15 @@
 # Rabin and Streett automata
 
-## NA
-
-- [Rabin automaton](rabin.md)
-
 ## Rabin
 
+- [Rabin automaton](rabin.md)
 - [Membership in the language of a Rabin automaton](mem-language-iff.md)
 - [Muller presentation of a Rabin automaton](to-muller.md)
 - [Rabin-to-Muller conversion preserves the language](language-to-muller.md)
 
-## NA
-
-- [Streett automaton](streett.md)
-
 ## Streett
 
+- [Streett automaton](streett.md)
 - [Membership in the language of a Streett automaton](mem-language-iff-2.md)
 - [Muller presentation of a Streett automaton](to-muller-2.md)
 - [Streett-to-Muller conversion preserves the language](language-to-muller-2.md)

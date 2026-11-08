@@ -1,6 +1,3 @@
-# Power difference term alias for the corollary of Entry 10
+# Power difference term in the corollary of Entry 10
 
-Compatibility alias for the former `Entry10Zetaviabernoulli.chapter7PowerDifferenceTerm`.
-
-For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceTerm`
-directly.
+The power-difference term of the corollary of Ramanujan's Entry 10 is [the $j$-th term of the power-difference series](chapter7-power-difference-term-4.md), $(j + 1)^r - (j + 1 + x)^r$.

@@ -1,11 +1,11 @@
 # Scoped pure Fω terms
 
-## FOmega
+## Terms and contexts
 
 - [Scoped pure Fω terms](tm.md)
 - [Term contexts of pure Fω](ctx.md)
 
-## Tm
+## Renaming and substitution in terms
 
 - [Type substitution in Fω terms](ty-subst.md)
 - [Type-variable renaming in Fω terms](ty-rename.md)

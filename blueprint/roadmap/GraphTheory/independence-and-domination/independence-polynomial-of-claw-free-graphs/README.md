@@ -1,6 +1,6 @@
 # Independence polynomial of claw-free graphs
 
-## Meta Mathlib Ext
+## Claw-free graphs and independence polynomials
 
 - [Claw-free finite graph](claw-free.md)
 - [Chudnovsky–Seymour theorem](independence-poly-of-claw-free-splits.md)
@@ -15,6 +15,6 @@
 - [Claw-free graph](is-claw-free.md)
 - [Claw-free graphs have no induced claw](is-claw-free-iff-not-is-ind-contained.md)
 
-## Meta Mathlib Ext
+## Equivalence of the definitions
 
 - [The two definitions of claw-free agree](claw-free-iff-is-claw-free.md)

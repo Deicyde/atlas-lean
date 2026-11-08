@@ -1,6 +1,6 @@
 # Motzkin triangle
 
-## Meta Mathlib Ext
+## Motzkin discriminant and Riordan pairs
 
 - [Motzkin discriminant](motzkin-discriminant.md)
 - [Square roots of the Motzkin discriminant](is-motzkin-square-root.md)
@@ -14,7 +14,7 @@
 
 - [Entries of a Motzkin Riordan array](entry.md)
 
-## Meta Mathlib Ext
+## Motzkin triangle
 
 - [The canonical Motzkin Riordan pair](motzkin-riordan-pair-2.md)
 - [Motzkin triangle](motzkin-triangle.md)

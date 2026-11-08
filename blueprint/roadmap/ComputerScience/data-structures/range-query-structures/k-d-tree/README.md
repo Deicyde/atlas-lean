@@ -1,11 +1,8 @@
 # k-d tree
 
-## Lean
+## k-d tree
 
 - [Kd-trees](kd-tree.md)
-
-## Kd Tree
-
 - [Kd-tree point traversal with an accumulator](to-list-aux.md)
 - [Point list of a kd-tree](to-list.md)
 - [Accumulator traversal of a kd-tree](to-list-aux-eq.md)

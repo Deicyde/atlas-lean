@@ -1,11 +1,8 @@
 # Open addressing
 
-## Lean
-
-- [Open-addressing hash table](open-addressing.md)
-
 ## Open Addressing
 
+- [Open-addressing hash table](open-addressing.md)
 - [Linear-probing probe sequence](linear-probe.md)
 - [Double-hashing probe sequence](double-hash-probe.md)
 - [Empty open-addressing table](empty.md)

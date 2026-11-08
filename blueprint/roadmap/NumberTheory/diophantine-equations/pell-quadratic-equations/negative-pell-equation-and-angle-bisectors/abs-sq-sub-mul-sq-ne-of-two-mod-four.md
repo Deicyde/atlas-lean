@@ -6,5 +6,5 @@ and $y$.
 
 ## Sources
 
-- the source's hypothesis $z > 1$ is not needed. The second sentence of part (a) (on $S(d)$ and $l_2$) is not formalized.
+- the source's hypothesis $z > 1$ is not needed. The second sentence of part (a) (on $S(d)$ and $l_2$) is not stated here.
 - Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Lemma 1(a), first sentence (`integers-2024-A111-lem-1`).

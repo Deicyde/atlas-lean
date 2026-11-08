@@ -1,10 +1,10 @@
 # Möbius algebras and flag vectors
 
-## Informal statement of `moebiusAlgebraMul`
+## The Möbius algebra
 
 - [Möbius algebra product](moebius-algebra-mul.md)
 
-## Informal statement of `flagFVector`
+## Flag vectors
 
 - [Flag $f$-vector](flag-fvector.md)
 - [Flag $h$-vector](flag-hvector.md)

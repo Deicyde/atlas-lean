@@ -6,5 +6,4 @@ eigenvalue of the hyperbolic Laplacian on $L^2(\Gamma \backslash \mathbb{H})$ wi
 $0 < \lambda < 1/4$.
 
 Morally, these pairs index archimedean local components over $\mathbb{Q}$; their
-identification with genuine cuspidal automorphic local components is a modelling assumption
-and is not formalized here.
+identification with genuine cuspidal automorphic local components is a modelling assumption.

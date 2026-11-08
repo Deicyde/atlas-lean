@@ -7,7 +7,7 @@
 - [The while-loop functional as a monotone map](while-order-hom.md)
 - [Relational denotational semantics of IMP](denote.md)
 
-## Denote
+## Denotations and big-step semantics
 
 - [The while denotation is a fixed point](while-eq.md)
 - [Unfolding equation for the while denotation](while-iff.md)

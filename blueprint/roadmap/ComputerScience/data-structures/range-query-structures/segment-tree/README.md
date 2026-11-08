@@ -1,11 +1,8 @@
 # Segment tree
 
-## Lean
-
-- [Segment tree](segment-tree.md)
-
 ## Segment Tree
 
+- [Segment tree](segment-tree.md)
 - [Aggregate of a segment tree](agg.md)
 - [Size of a segment tree](size.md)
 - [Accumulator traversal of a segment tree](to-list-aux.md)

@@ -9,8 +9,7 @@ applies here unchanged.
 
 Sign convention `Δf = tr_g ∇²f`, the convention `Δ = div ∘ grad` under which `Δ` is the
 sum `∑ ∂²/∂x_i²` on Euclidean space and `Δ(‖x‖²) = 2n`; the operator `-Δ` is then the
-nonnegative one, and the opposite sign convention is also common. The identity
-`Δ = div ∘ grad` is not proved here since no divergence is defined. Reference with the
+nonnegative one, and the opposite sign convention is also common. Reference with the
 same conventions: Lee, Introduction to Riemannian Manifolds (2nd ed., GTM 176).
 
 Mathlib's flat Laplacian is `Laplacian.laplacian` (instance

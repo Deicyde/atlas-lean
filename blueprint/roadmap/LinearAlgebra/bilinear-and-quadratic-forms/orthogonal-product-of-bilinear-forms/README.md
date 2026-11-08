@@ -1,6 +1,6 @@
 # Orthogonal product of bilinear forms
 
-## Prod
+## Orthogonal products
 
 - [Orthogonal product of bilinear forms](prod.md)
 - [Evaluation of an orthogonal product](prod-apply.md)

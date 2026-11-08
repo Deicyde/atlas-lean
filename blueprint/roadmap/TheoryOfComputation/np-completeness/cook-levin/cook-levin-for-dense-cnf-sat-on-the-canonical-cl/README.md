@@ -1,6 +1,6 @@
 # Cook-Levin for dense CNF-SAT on the canonical classes
 
-## [ENC] An encoding whose output alphabet contains a chosen accept symbol
+## An encoding whose output alphabet contains a chosen accept symbol
 
 - [Effective alphabets with an adjoined accept symbol](sym-set-x.md)
 - [Tableau encoding with a chosen accept symbol](enc-x.md)

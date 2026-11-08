@@ -32,7 +32,7 @@
 - [Evaluating a form with one nonterminal](mem-eval-form-one.md)
 - [Evaluating a form with two nonterminals](mem-eval-form-two.md)
 
-## Upper bounds: every production is sound for `univVal`
+## Upper bounds: every production is sound for the intended valuation
 
 - [The intended languages form a valuation of the universality grammar](is-valuation-univ-val.md)
 

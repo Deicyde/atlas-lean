@@ -1,11 +1,8 @@
 # Hash table with separate chaining
 
-## Lean
-
-- [Hash table with separate chaining](hash-table.md)
-
 ## Hash Table
 
+- [Hash table with separate chaining](hash-table.md)
 - [Empty hash table](empty.md)
 - [Hash table lookup](lookup.md)
 - [Insertion into a hash table](insert.md)

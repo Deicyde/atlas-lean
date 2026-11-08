@@ -1,11 +1,8 @@
 # X-fast trie
 
-## Lean
+## X-fast trie
 
 - [x-fast trie](xfast-trie.md)
-
-## XFast Trie
-
 - [Bit prefix of a key](prefix-of.md)
 - [The empty prefix is zero](prefix-of-zero.md)
 - [The full-length prefix of a key is the key](prefix-of-full.md)
@@ -28,12 +25,9 @@
 - [Characterization of the x-fast trie predecessor](predecessor-eq-some-iff.md)
 - [When an x-fast trie has no predecessor](predecessor-eq-none-iff.md)
 
-## Lean
+## Y-fast trie
 
 - [y-fast trie skeleton](yfast-trie.md)
-
-## YFast Trie
-
 - [Keys of a y-fast trie](contents.md)
 - [Membership in a y-fast trie via representatives' buckets](mem-contents-iff.md)
 - [Valid y-fast trie skeleton](valid-2.md)

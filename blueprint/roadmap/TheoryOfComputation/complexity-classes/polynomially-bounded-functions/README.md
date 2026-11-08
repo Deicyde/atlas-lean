@@ -1,11 +1,8 @@
 # Polynomially bounded functions
 
-## Cslib
-
-- [Polynomial bounds with equal coefficient and exponent](polynomially-bounded-iff-le-mul-pow-self.md)
-
 ## Polynomially Bounded
 
+- [Polynomial bounds with equal coefficient and exponent](polynomially-bounded-iff-le-mul-pow-self.md)
 - [Constant functions are polynomially bounded](const.md)
 - [The identity function is polynomially bounded](id.md)
 - [Sums of polynomially bounded functions are polynomially bounded](add.md)

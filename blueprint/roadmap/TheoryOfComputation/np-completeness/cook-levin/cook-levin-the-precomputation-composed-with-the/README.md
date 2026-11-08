@@ -1,6 +1,6 @@
 # Cook-Levin: the precomputation, composed with the assembled generator
 
-## [LIB] Counter-view additions: decrement, multi-target transfer, the power loop
+## Counter-view additions: decrement, multi-target transfer, the power loop
 
 - [Unit targets of a multi-target transfer](tg.md)
 - [Counters after a multi-target transfer](xf.md)
@@ -23,7 +23,7 @@
 - [Coefficient list of a polynomial](coeffs.md)
 - [Horner's rule](horn-val-coeffs.md)
 
-## [CNT] The precomputation's counter program
+## The precomputation's counter program
 
 - [Scratch counters of the counter program](ps.md)
 - [Target counters of the counter program](pt.md)
@@ -42,7 +42,7 @@
 - [Step budget of the counter program](c-b.md)
 - [The counter program's run](cprog-run.md)
 
-## [FULL] The full machine: read loop, counter program, host
+## The full machine: read loop, counter program, host
 
 - [Stacks of the full machine](fk.md)
 - [Alphabets of the full machine](f.md)
@@ -55,12 +55,12 @@
 - [Stacks during the read loop](fst.md)
 - [The read loop's run](read-run.md)
 
-## [COMP] The full program and its run
+## The full program and its run
 
 - [The full program](fprog.md)
 - [The precomputation](pre-run.md)
 
-## [REAL] The full machine on the real generators: raw input to emitted formula
+## The full machine on the real generators: raw input to emitted formula
 
 - [The full program on the real generators](full-prog.md)
 - [Step bound of the full machine](full-b.md)
@@ -68,7 +68,7 @@
 - [The full machine as a finite multi-stack Turing machine](full-tm.md)
 - [Initial configuration of the full machine](init-list-full.md)
 
-## [POLY] The step bound is a polynomial in `|s|`
+## The step bound is a polynomial in `|s|`
 
 - [Polynomial functions on the naturals](is-poly.md)
 - [The Horner step count is polynomial](horn-t-2.md)

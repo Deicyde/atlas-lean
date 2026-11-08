@@ -1,6 +1,6 @@
 # Signed LD profile regression
 
-## Signed LDProfile
+## Signed LD profiles
 
 - [In-sample LD matrix](ld-matrix.md)
 - [First-moment phenotype model of SLDP regression](model.md)

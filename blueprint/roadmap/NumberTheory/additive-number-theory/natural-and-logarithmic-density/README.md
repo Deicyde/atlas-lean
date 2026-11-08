@@ -1,6 +1,6 @@
 # Natural and logarithmic density
 
-## Set
+## Densities
 
 - [Partial density](partial-density.md)
 - [Upper density](upper-density.md)
@@ -14,7 +14,7 @@
 
 - [The whole order has density one](univ.md)
 
-## Nat
+## Basic properties of natural density
 
 - [Natural density of the even numbers](has-density-even.md)
 - [Finite sets have natural density zero](has-density-zero-of-finite.md)

@@ -10,7 +10,7 @@ some finite group. That is, the decidability part of Kourovka Problem 21.32 has 
 Kalithasan and Thomas bound the order of some integral of an integrable finite group $G$ (their
 Theorem 3.3 and its Corollary), which makes the problem decidable; the 21st issue of the Kourovka
 Notebook marks 21.32 solved ("Yes, it is decidable, in nondeterministic quasi-polynomial time").
-The complexity bound is not formalized.
+The complexity bound is not part of this statement.
 
 ## Sources
 

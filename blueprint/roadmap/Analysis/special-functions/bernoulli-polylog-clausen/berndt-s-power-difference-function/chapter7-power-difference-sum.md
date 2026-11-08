@@ -1,6 +1,3 @@
-# Power difference sum alias for Ramanujan's Entry 9
+# Power difference sum in Ramanujan's Entry 9
 
-Compatibility alias for the former `Entry9Bernoulligrowth.chapter7PowerDifferenceSum`.
-
-For new code, use `MathlibExt.Analysis.Ramanujan.Part1Ch7.chapter7PowerDifferenceSum`
-directly.
+The power-difference sum of Ramanujan's Entry 9 is [the power-difference series](chapter7-power-difference-sum-2.md) $\varphi_r(x)$.

@@ -28,6 +28,6 @@
 - [The encoding of a grammar generates the same language](language-of-cfg.md)
 - [A language is context-free exactly when an encoded grammar generates it](is-context-free-iff.md)
 
-## Primcodable
+## Encoding as pairs
 
 - [Encoded grammars as pairs](equiv-prod.md)

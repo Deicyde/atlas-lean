@@ -1,11 +1,8 @@
 # Radix trie
 
-## Lean
-
-- [Radix trie](radix-trie.md)
-
 ## Radix Trie
 
+- [Radix trie](radix-trie.md)
 - [Empty radix trie](empty.md)
 - [Longest common prefix](common-prefix.md)
 - [Longest common prefix of a list with itself](common-prefix-self.md)

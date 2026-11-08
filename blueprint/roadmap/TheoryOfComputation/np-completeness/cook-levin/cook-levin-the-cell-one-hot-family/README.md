@@ -1,6 +1,6 @@
 # Cook-Levin: the cell one-hot family
 
-## [FAM] The family (pure specification)
+## The family (pure specification)
 
 - [At-least-one literals of a cell](alo-lits.md)
 - [At-most-one literals for a pair](amo-lits.md)
@@ -8,7 +8,7 @@
 - [One-hot clauses of a cell](cell-cnf.md)
 - [The one-hot cell family](oh-family.md)
 
-## [FAM] The generator machine
+## The generator machine
 
 - [Counters of the one-hot generator](ck.md)
 - [Clause kinds of a one-hot cell](cl.md)
@@ -28,12 +28,12 @@
 - [The one-hot generator](prog.md)
 - [The one-hot generator as a finite multi-stack machine](oh-tm.md)
 
-## [FAM] Clause kinds: literal positions
+## Clause kinds: literal positions
 
 - [Literals of a one-hot clause kind](clits.md)
 - [Boundary before a literal of a cell clause](bnd.md)
 
-## [FAM] Correctness: one literal, one clause
+## Correctness: one literal, one clause
 
 - [Empty scratch counters of the one-hot generator](rest.md)
 - [Run of one literal routine (one-hot generator)](lit-run.md)
@@ -42,14 +42,14 @@
 - [Run of the literal routines of a clause (one-hot generator)](lits-run.md)
 - [One clause of the one-hot generator](clause-run.md)
 
-## [FAM] Correctness: the clauses of one cell (a 2-D label chain)
+## Correctness: the clauses of one cell (a 2-D label chain)
 
 - [Generator run over one row of at-most-one clauses](row-run.md)
 - [Generator run over the first rows and the at-least-one clause](rows-run.md)
 - [Step bound for one cell](cell-b.md)
 - [Generator run for one cell](cell-run.md)
 
-## [FAM] Correctness: the three nested runtime loops and the whole generator
+## Correctness: the three nested runtime loops and the whole generator
 
 - [Encoded one-hot clauses of one stack at one time step](blk-k.md)
 - [Encoded one-hot clauses of one time step](blk-t.md)
@@ -63,7 +63,7 @@
 - [Explicit time bound of the one-hot generator](oh-bound.md)
 - [Correctness of the one-hot generator, with its explicit time bound](oh-run.md)
 
-## [BOUND] The time bound is polynomial: `ohBound ≤ ohC · (T + H + 1)^6`
+## The time bound is polynomial
 
 - [Time bound of the one-hot generator on a uniform layout](oh-bound-uni.md)
 - [Constant of the one-hot time bound](oh-c.md)

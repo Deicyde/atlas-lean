@@ -14,7 +14,7 @@
 - [Elements of a finite set are odd combinations of it](mem-odd-combinations-of-mem.md)
 - [Odd combinations of the empty set](odd-combinations-empty.md)
 
-## Meta Mathlib Ext
+## Perfect covers
 
 - [Existence of perfect covers](exists-is-perfect-cover-mem.md)
 - [Number of perfect covers of a cyclic 2-group](count-zmod-two-pow.md)

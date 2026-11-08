@@ -7,7 +7,7 @@
 - [Lifted renaming fixes the newly bound variable](lift-ren-zero.md)
 - [Lifted renaming shifts each renamed old variable](lift-ren-succ.md)
 
-## Ty
+## Type renaming and substitution
 
 - [Type-variable renaming in System F types](rename.md)
 - [Lifting a type substitution under a type binder](lift-sub.md)
@@ -21,7 +21,7 @@
 - [Scoped terms of pure System F](tm.md)
 - [Term variable contexts of System F](ctx.md)
 
-## Tm
+## Term renaming and substitution
 
 - [Type substitution in System F terms](ty-subst.md)
 - [Term-variable renaming in System F terms](rename-2.md)

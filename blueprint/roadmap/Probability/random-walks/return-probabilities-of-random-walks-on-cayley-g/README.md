@@ -7,6 +7,6 @@
 - [Return probability](return-prob.md)
 - [Uniform return-probability gap](return-prob-uniform-gap.md)
 
-## AMR11 Problem33 Wanted
+## Uniform return-probability gap
 
 - [Uniform return-probability gap for transient Cayley graphs](return-prob-uniform-gap-holds.md)

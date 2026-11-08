@@ -5,7 +5,7 @@
 - [Lifted identity renaming is the identity](lift-ren-id.md)
 - [Lifting preserves composition of renamings](lift-ren-comp.md)
 
-## Ty
+## Renaming and substitution laws
 
 - [Identity renaming fixes every type](rename-id.md)
 - [Successive type renamings fuse into their composition](rename-comp.md)

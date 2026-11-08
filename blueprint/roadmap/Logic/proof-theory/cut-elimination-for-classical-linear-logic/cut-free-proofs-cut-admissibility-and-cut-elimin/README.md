@@ -8,7 +8,7 @@
 - [Conclusion transport preserves cut-freeness](is-cut-free-rw-conclusion.md)
 - [Cut-free fragment of classical linear logic](cf.md)
 
-## CF
+## Cut-free proofs
 
 - [Proofs of the cut-free inference system](proof.md)
 - [Rewriting the conclusion of a cut-free proof](rw-conclusion.md)

@@ -1,6 +1,6 @@
 # Cayley transform
 
-## Basic
+## Scalar operators and the Cayley transform
 
 - [Nonzero scalar operators are units](is-unit-smul-one.md)
 - [Inverse of a scalar operator](ring-inverse-smul-one.md)

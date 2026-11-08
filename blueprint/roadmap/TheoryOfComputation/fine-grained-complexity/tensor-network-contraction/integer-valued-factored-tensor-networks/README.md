@@ -10,7 +10,7 @@
 - [Edge labels incident to a vertex](incident-labels.md)
 - [Integer-valued complete-graph tensor instance](instance.md)
 
-## Instance
+## Complete-graph instances
 
 - [Value of a complete-graph tensor instance](value.md)
 

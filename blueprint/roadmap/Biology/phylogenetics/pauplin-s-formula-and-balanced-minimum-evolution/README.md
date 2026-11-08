@@ -6,14 +6,14 @@
 - [Unrooted binary tree with edge lengths](utree.md)
 - [Pauplin coefficient of a pair of leaves](pauplin-coeff.md)
 
-## RTree
+## Rooted binary trees
 
 - [Total edge length of a rooted binary tree](length.md)
 - [Leaves of a rooted binary tree with root distances](leaves.md)
 - [Leaf pairs of a rooted binary tree with path lengths](pairs.md)
 - [Kraft's equality](kraft.md)
 
-## UTree
+## Unrooted binary trees and Pauplin's formula
 
 - [Total edge length of an unrooted binary tree](length-2.md)
 - [Leaf labels of an unrooted binary tree](labels.md)

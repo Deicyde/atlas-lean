@@ -6,7 +6,7 @@
 - [Lifting a raw erasure environment under a binder](lift-raw.md)
 - [Shifting leaves locally closed terms unchanged](shift-at-closed.md)
 
-## Tm
+## Type erasure and closing
 
 - [Type erasure under an untyped environment](erase-with.md)
 - [Type erasure of System F terms to untyped terms](erase.md)

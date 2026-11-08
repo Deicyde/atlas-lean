@@ -1,11 +1,8 @@
 # Overpartitions
 
-## Nat
-
-- [Overpartition](overpartition.md)
-
 ## Overpartition
 
+- [Overpartition](overpartition.md)
 - [Overlined part size](is-overlined.md)
 - [Characterization of overlined sizes](is-overlined-iff.md)
 - [Overlined sizes are parts](is-overlined-mem-parts.md)

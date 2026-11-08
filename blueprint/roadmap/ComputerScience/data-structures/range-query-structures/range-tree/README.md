@@ -1,11 +1,8 @@
 # Range tree
 
-## Lean
-
-- [Range tree](range-tree.md)
-
 ## Range Tree
 
+- [Range tree](range-tree.md)
 - [Leaf traversal of a range tree with an accumulator](to-list-aux.md)
 - [Leaf list of a range tree](to-list.md)
 - [Range-tree leaf traversal appends to its accumulator](to-list-aux-eq.md)

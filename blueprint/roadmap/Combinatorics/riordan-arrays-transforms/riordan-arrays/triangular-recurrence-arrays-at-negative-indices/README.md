@@ -1,6 +1,6 @@
 # Triangular recurrence arrays at negative indices
 
-## Meta Mathlib Ext
+## Triangular recurrences
 
 - [Triangular recurrence](triangular-recurrence.md)
 
@@ -21,7 +21,7 @@
 - [Reflected triangular recurrence](reflect.md)
 - [Reflection of triangular recurrences is an involution](reflect-reflect.md)
 
-## Meta Mathlib Ext
+## Linear Diophantine equations and Knuth-type duality
 
 - [Linear Diophantine equations](linear-diophantine-solutions.md)
 - [Knuth-type duality](neg-neg-duality.md)
