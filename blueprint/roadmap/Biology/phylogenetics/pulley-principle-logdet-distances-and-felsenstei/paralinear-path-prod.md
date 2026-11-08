@@ -7,4 +7,4 @@ between the ends is the sum of the distances of consecutive vertices. The joint 
 `v₀, v_n` is `Π_{v₀} M 0 ⋯ M (n - 1)`, and that of `v_i, v_{i+1}` is `Π_{v_i} M i`, where `v_i`
 has distribution `p M 0 ⋯ M (i - 1)`. Under the general Markov model on a tree with positive
 marginals and nonsingular matrices, the states along any path form such a chain once the model
-is rooted at one end of the path (this rerooting is not formalized here).
+is rooted at one end of the path.

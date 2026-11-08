@@ -16,7 +16,6 @@ they give.
 Sipser's $E_{\mathrm{LBA}}$ is a language of machine descriptions, the LBAs with empty language;
 without a type of codes for machines, this is the form available. Each slice, the set of fenced
 inputs of $e(c)$ over all paddings, is regular because of its shape: a wall, any number of left
-padding cells, the word $e(c)$, any number of right padding cells and a wall. Informally, and not
-proved here: with codes of machines, the LBA that checks that its input lies in the slice of $c$
+padding cells, the word $e(c)$, any number of right padding cells and a wall. Informally: with codes of machines, the LBA that checks that its input lies in the slice of $c$
 and then runs $F$ has empty language iff $F$ halts on no input of the slice, and
 $E_{\mathrm{LBA}}$ is undecidable by the same reduction.

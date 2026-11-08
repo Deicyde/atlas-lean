@@ -1,11 +1,8 @@
 # Sparse table
 
-## Lean
-
-- [Sparse table](sparse-table.md)
-
 ## Sparse Table
 
+- [Sparse table](sparse-table.md)
 - [Option minimum](omin.md)
 - [Idempotence of the option minimum](omin-self.md)
 - [Levels of a sparse table](level.md)

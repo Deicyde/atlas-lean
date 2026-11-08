@@ -11,7 +11,7 @@ A curve $x : \mathbb{R} \to E^N$ is a solution of the $N$-body problem with mass
 $C^2$ on $(0, \infty)$, $x$ is continuous at $0$, and $x''(t) = \nabla_m U(x(t))$ for every
 $t > 0$.
 
-In the formalization $0^{-1} = 0$, so a collision term contributes $0$ to $U$ and a zero mass
+By convention $0^{-1} = 0$ here, so a collision term contributes $0$ to $U$ and a zero mass
 gives a zero component of $\nabla_m f$. Moreover $\nabla f(y) = 0$ at every point $y$ where $f$
 is not differentiable; for instance, a curve that stays at a collision with $x'' = 0$ can be a
 solution in this sense.

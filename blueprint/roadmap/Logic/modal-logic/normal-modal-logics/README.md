@@ -17,7 +17,7 @@
 - [Self-implication is a theorem](imp-self.md)
 - [Monotonicity of theorems in the extra axioms](mono.md)
 
-## Deduces
+## Local consequence
 
 - [Monotonicity of local consequence in the hypotheses](mono-2.md)
 - [Transitivity of local consequence](trans.md)

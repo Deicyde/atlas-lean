@@ -1,11 +1,11 @@
 # The star/forall System F fragment inside pure Fω
 
-## FOmega
+## Type translation
 
 - [Lifting System F type-variable images under a star binder](lift-types.md)
 - [Translation of System F types into Fω](from-system-f.md)
 
-## Ty
+## Properties of the type translation
 
 - [Type translation depends only on variable images](from-system-f-congr.md)
 - [Type translation commutes with target renaming](from-system-f-target-rename.md)
@@ -14,7 +14,7 @@
 - [Type translation of a source substitution](from-system-f-source-subst.md)
 - [Type translation commutes with type-binder instantiation](from-system-f-instantiate.md)
 
-## FOmega
+## Term translation
 
 - [Translation of System F terms into Fω](from-system-f-2.md)
 - [Term translation preserves System F typing](from-system-f-typing.md)

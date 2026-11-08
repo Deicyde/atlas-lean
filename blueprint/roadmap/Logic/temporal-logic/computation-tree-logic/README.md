@@ -22,7 +22,7 @@
 - [Serial transition systems](serial.md)
 - [Finite runs extend to infinite runs in serial systems](exists-omega-run-extending-of-serial.md)
 
-## Satisfies
+## Satisfaction
 
 - [$\mathsf{EF}$ via finite runs](exists-finally-iff.md)
 - [One-step expansion of $\mathrm{EU}$](exists-until-expansion.md)

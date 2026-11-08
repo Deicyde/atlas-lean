@@ -1,11 +1,8 @@
 # Double-ended queue
 
-## Lean
-
-- [Two-list deque](deque.md)
-
 ## Deque
 
+- [Two-list deque](deque.md)
 - [Represented sequence of a deque](contents.md)
 - [The empty deque](empty.md)
 - [Emptiness test for a deque](is-empty.md)

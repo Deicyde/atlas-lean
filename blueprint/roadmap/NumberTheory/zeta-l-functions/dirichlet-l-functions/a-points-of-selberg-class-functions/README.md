@@ -1,6 +1,6 @@
 # a-points of Selberg class functions
 
-## Meta Mathlib Ext
+## The Selberg class
 
 - [Functions in the Selberg class](selberg-class-function.md)
 
@@ -12,7 +12,7 @@
 - [Counting function of a-points of derivatives](a-point-count.md)
 - [The a-point count vanishes at nonpositive height](a-point-count-of-nonpos.md)
 
-## Meta Mathlib Ext
+## a-points of derivatives
 
 - [Lemma 1 (no a-points of derivatives far to the right)](exists-no-a-point-right.md)
 - [Asymptotics of the derivatives of the reflected function (Lemma 2)](iterated-deriv-reflected-asymptotic.md)

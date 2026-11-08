@@ -5,7 +5,7 @@
 - [Greatest common monic divisor](is-greatest-common-monic-divisor.md)
 - [Unfolding the greatest common monic divisor](unfold.md)
 
-## Nat
+## Frobenius probable primes and pseudoprimes
 
 - [Frobenius probable prime](is-frobenius-probable-prime.md)
 - [Frobenius pseudoprime](is-frobenius-pseudoprime.md)

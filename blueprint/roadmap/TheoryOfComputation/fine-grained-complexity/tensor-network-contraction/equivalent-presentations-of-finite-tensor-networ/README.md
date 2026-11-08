@@ -5,7 +5,7 @@
 - [Complete-graph instance of a factored network](to-instance.md)
 - [Converting a factored network to an instance preserves value](value-to-instance.md)
 
-## Instance
+## Half-edge presentations
 
 - [Half-edge factored presentation of a tensor instance](to-factored.md)
 - [Half-edge presentation preserves instance value](value-to-factored.md)

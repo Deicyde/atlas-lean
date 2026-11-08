@@ -8,7 +8,7 @@ $\mathrm{Stab}_\rho$ is the noise stability and $\mathrm{Maj}_n$ is the majority
 
 Biswas and Sarkar exhibit, for every odd $n \ge 5$, a linear threshold function $g_n$ with
 $\mathrm{Stab}_\rho[g_n] < \mathrm{Stab}_\rho[\mathrm{Maj}_n]$ for all small $\rho > 0$. The
-conjecture holds for $n = 1$ and $n = 3$; those cases are not formalized here.
+conjecture holds for $n = 1$ and $n = 3$.
 
 ## Sources
 

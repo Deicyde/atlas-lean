@@ -1,6 +1,6 @@
 # Birkhoff–James orthogonality
 
-## Normed
+## Birkhoff–James orthogonality
 
 - [Birkhoff–James orthogonality](birkhoff-james-orthogonal.md)
 - [Zero is Birkhoff–James orthogonal to every vector](birkhoff-james-orthogonal-zero-left.md)

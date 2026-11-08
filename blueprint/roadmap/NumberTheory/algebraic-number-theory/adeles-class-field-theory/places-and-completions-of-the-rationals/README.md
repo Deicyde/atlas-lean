@@ -1,11 +1,8 @@
 # Places and completions of the rationals
 
-## Rat
-
-- [Places of $\mathbb{Q}$](place.md)
-
 ## Place
 
+- [Places of $\mathbb{Q}$](place.md)
 - [Absolute value at a rational place](absolute-value.md)
 - [Bundled complete normed field](completed-field-bundle.md)
 - [Bundled completed field at a rational place](bundle.md)

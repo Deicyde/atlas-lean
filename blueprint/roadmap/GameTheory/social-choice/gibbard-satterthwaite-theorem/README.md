@@ -1,6 +1,6 @@
 # Gibbard–Satterthwaite theorem
 
-## Gibbard Satterthwaite Wanted
+## Strict preference orders
 
 - [Strict preference orders for the Gibbard–Satterthwaite theorem](strict-total-order.md)
 
@@ -12,7 +12,7 @@
 - [Transitivity of strict preferences in the Gibbard–Satterthwaite setting](trans.md)
 - [Strict preferences in the Gibbard–Satterthwaite setting are total](total.md)
 
-## Gibbard Satterthwaite Wanted
+## Social choice functions and the Gibbard–Satterthwaite theorem
 
 - [Preference profiles for the Gibbard–Satterthwaite theorem](profile.md)
 - [Social choice functions](social-choice-function.md)

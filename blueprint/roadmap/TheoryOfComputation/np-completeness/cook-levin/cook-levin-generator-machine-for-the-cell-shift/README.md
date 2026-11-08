@@ -1,6 +1,6 @@
 # Cook-Levin: generator machine for the cell-shift family
 
-## [FAM] The family (pure specification)
+## The family (pure specification)
 
 - [Literals of an in-range shift clause](sh-lits.md)
 - [Literals of an overflow clause](ov-lits.md)
@@ -11,7 +11,7 @@
 - [Coverage of target depths](depth-cover.md)
 - [Bounds on in-range and overflow target depths](depth-disjoint.md)
 
-## [FAM] The generator machine
+## The generator machine
 
 - [Counters of the cell-shift generator](ck.md)
 - [Base counters of literal positions](bs.md)
@@ -42,13 +42,13 @@
 - [The cell-shift generator](prog.md)
 - [The cell-shift generator as a finite stack machine](sh-tm.md)
 
-## [FAM] Clause kinds: literal positions
+## Clause kinds: literal positions
 
 - [Literals of a clause kind at given positions](clits.md)
 - [Increasing literal positions below a bound](mono.md)
 - [Boundary before a literal](bnd.md)
 
-## [FAM] Correctness: one literal, one clause
+## Correctness: one literal, one clause
 
 - [Empty scratch counters of the shift generator](rest.md)
 - [One literal routine of the cell-shift generator](lit-run.md)
@@ -57,7 +57,7 @@
 - [The literal routines of one clause of the cell-shift generator](lits-run.md)
 - [One clause of the cell-shift generator](clause-run.md)
 
-## [FAM] The shift and overflow clauses; the `x` chain; the decrement chain
+## The shift and overflow clauses; the `x` chain; the decrement chain
 
 - [First cell variable of a block](kbv.md)
 - [Literal positions of an in-range shift clause](sh-pos.md)
@@ -68,14 +68,14 @@
 - [The pushed-fill chain of the cell-shift generator](pf-run.md)
 - [The decrement chain takes $n$ steps](sb-run.md)
 
-## [FAM] Correctness: the two runtime loop bodies
+## Correctness: the two runtime loop bodies
 
 - [Step bound for one in-range loop iteration](s-body-b.md)
 - [Step budget of one overflow iteration of the cell-shift generator](o-body-b.md)
 - [One iteration of the in-range loop of the cell-shift generator](sbody-run.md)
 - [One iteration of the overflow loop of the cell-shift generator](obody-run.md)
 
-## [FAM] Correctness: one `(i, k)` block, the label chains, the time loop, the generator
+## Correctness: one `(i, k)` block, the label chains, the time loop, the generator
 
 - [Counter state at the start of a block](blk.md)
 - [Step budget for one block of the shift generator](ik-b.md)
@@ -92,7 +92,7 @@
 - [Explicit time bound of the shift generator](sh-bound.md)
 - [Correctness of the shift generator, with its explicit time bound](sh-run.md)
 
-## [BOUND] The time bound is polynomial: `shBound ≤ shC · (T + H + 1)^6`
+## The time bound is polynomial
 
 - [Time bound of the shift generator on uniform layouts](sh-bound-uni.md)
 - [Constant of the shift-generator time bound](sh-c.md)

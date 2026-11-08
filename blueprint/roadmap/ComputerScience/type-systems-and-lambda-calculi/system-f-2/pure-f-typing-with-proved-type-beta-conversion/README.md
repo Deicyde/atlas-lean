@@ -1,6 +1,6 @@
 # Pure Fω typing with proved type-beta conversion
 
-## FOmega
+## Typing rules
 
 - [Typing rules of pure Fω](typing.md)
 

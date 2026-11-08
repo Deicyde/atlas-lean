@@ -1,11 +1,8 @@
 # Fenwick tree
 
-## Lean
-
-- [Fenwick tree](fenwick-tree.md)
-
 ## Fenwick Tree
 
+- [Fenwick tree](fenwick-tree.md)
 - [Lowest set bit](lowbit.md)
 - [Lowbit of zero](lowbit-zero.md)
 - [The lowest set bit of a positive number is positive](lowbit-pos.md)

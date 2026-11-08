@@ -1,13 +1,13 @@
 # Compactness in ℓ^p
 
-## Defs
+## Restriction and zero extension
 
 - [Restriction of an $\ell^p$ sequence to its first coordinates](lp-restrict.md)
 - [Pointwise action of the $\ell^p$ restriction](lp-restrict-apply.md)
 - [Zero extension of a finite coordinate vector](lp-extend.md)
 - [Pointwise action of the zero extension](lp-extend-apply.md)
 
-## Basic
+## Lifts and truncations
 
 - [Lift of a coordinate function to a truncated $\ell^p$ sequence](lp-lift.md)
 - [Truncation of an $\ell^p$ sequence, zeroing all but its first coordinates](lp-trunc.md)

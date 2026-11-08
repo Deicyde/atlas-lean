@@ -1,6 +1,6 @@
 # Cook-Levin: the five generators as sub-machines of one host
 
-## [HOST] Host stacks and the five embeddings
+## Host stacks and the five embeddings
 
 - [Stacks of the Cook–Levin host machine](hk.md)
 - [Alphabets of the Cook–Levin host machine](h.md)
@@ -15,7 +15,7 @@
 - [Embedding of the accept generator into the host](emb-a.md)
 - [Embedding of the init generator into the host](emb-i.md)
 
-## [SEQ] The host program and the sequencing theorem
+## The host program and the sequencing theorem
 
 - [Labels of the Cook–Levin host machine](hl.md)
 - [Chaining step of the host program](chain.md)
@@ -23,7 +23,7 @@
 - [The host as a finite multi-stack Turing machine](host-tm.md)
 - [Sequencing](seq-run.md)
 
-## [REAL] The host on the five real generators of a machine `M`, linked to `five_iff`
+## The host on the five real generators of a machine
 
 - [The host on the real generators of a machine](real-prog.md)
 - [The formula emitted by the host](phi.md)

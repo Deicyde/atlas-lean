@@ -6,11 +6,11 @@
 - [Self-conjugate partition](is-self-conjugate.md)
 - [Number of partitions in a box](partitions-in-box.md)
 
-## Informal statement of `Nat.VPartition`
+## V-partitions
 
 - [V-partition](vpartition.md)
 
-## Informal statement of `List.IsUnimodal`
+## Unimodal sequences and dominance
 
 - [Unimodal sequence](is-unimodal.md)
 - [Dominance order on partitions](dominates.md)

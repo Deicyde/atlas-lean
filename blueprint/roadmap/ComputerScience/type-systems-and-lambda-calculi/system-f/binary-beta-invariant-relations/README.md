@@ -4,7 +4,7 @@
 
 - [Beta-invariant binary relations on the term model](rel.md)
 
-## Rel
+## Operations on beta-invariant relations
 
 - [Extensionality of beta-invariant relations](ext.md)
 - [Function-space relation of beta-invariant relations](arrow.md)

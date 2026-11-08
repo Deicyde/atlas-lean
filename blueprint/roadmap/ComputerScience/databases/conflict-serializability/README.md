@@ -5,7 +5,7 @@
 - [Read or write access](access.md)
 - [Operation of a schedule](op.md)
 
-## Op
+## Conflicting operations
 
 - [Conflicting operations](conflicts.md)
 - [Operations whose relative order matters](order-matters.md)

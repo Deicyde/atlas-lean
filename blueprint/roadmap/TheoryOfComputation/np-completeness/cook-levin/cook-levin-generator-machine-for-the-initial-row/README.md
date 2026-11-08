@@ -1,6 +1,6 @@
 # Cook-Levin: generator machine for the initial-row family
 
-## [PRIM] An input stack beside a counter machine
+## An input stack beside a counter machine
 
 - [Stacks of a counter machine with an input stack](ik.md)
 - [Alphabets of a counter machine with an input stack](i.md)
@@ -8,12 +8,12 @@
 - [The counter stacks inside the generator's stacks](lift-e.md)
 - [Run lifting](run-lift.md)
 
-## [PRIM] Reading one input symbol into the label
+## Reading one input symbol into the label
 
 - [Read test for one code](rd-s.md)
 - [The read chain](read-run.md)
 
-## [FAM] The family (pure specification)
+## The family (pure specification)
 
 - [Empty-cell variable of the initial row](z-b.md)
 - [Start-code clause of the initial row (I1)](i-code.md)
@@ -24,7 +24,7 @@
 - [Row-0 tail clauses](i-tail.md)
 - [The init family](init-fam.md)
 
-## [FAM] The generator machine
+## The generator machine
 
 - [Counters of the initial-row generator](ck.md)
 - [Loop phases of the initial-row generator](ph.md)
@@ -51,14 +51,14 @@
 - [The initial-row generator](iprog.md)
 - [The init generator as a finite multi-stack machine](init-tm.md)
 
-## [FAM] Clause kinds: literal positions
+## Clause kinds: literal positions
 
 - [Literals of a clause kind](clits.md)
 - [Well-formed init-family clause kinds](wf.md)
 - [Boundary before a literal (initial-row generator)](bnd.md)
 - [Literals of a clause kind in range](in-r.md)
 
-## [FAM] Correctness: one literal, one clause (in the counter part)
+## Correctness: one literal, one clause (in the counter part)
 
 - [Empty scratch counters](rest.md)
 - [Run of one literal routine (initial-row generator)](lit-run.md)
@@ -67,23 +67,23 @@
 - [Run of the literal routines of a clause (initial-row generator)](lits-run.md)
 - [Run of one clause (initial-row generator)](clause-run.md)
 
-## [FAM] Correctness: the five phase loops (counter part)
+## Correctness: the five phase loops (counter part)
 
 - [Step bound for one loop iteration (initial-row generator)](body-b.md)
 - [One phase-loop iteration of the initial-row generator](body-run.md)
 - [One phase loop](phase-run.md)
 - [Counter part of one I3 iteration](i3pre-run.md)
 
-## [FAM] Correctness: the I3 loop (reads the input; in the extended machine)
+## Correctness: the I3 loop (reads the input; in the extended machine)
 
 - [The I3 loop](i3-run.md)
 
-## [FAM] Positions, and the machine's blocks are the family's clauses
+## Positions, and the machine's blocks are the family's clauses
 
 - [Row-0 cells fit in the variable range](qpos.md)
 - [Concatenating consecutive blocks of indices](flat-blocks.md)
 
-## [FAM] Precomputation and the whole generator
+## Precomputation and the whole generator
 
 - [Initial counters of the init generator](init-f.md)
 - [Counters after the precomputation](pre-f.md)
@@ -91,19 +91,19 @@
 - [Run of the precomputation (initial-row generator)](pre-run.md)
 - [The I3 loop on the whole input](i3-full.md)
 
-## [FAM] The whole generator
+## The whole generator
 
 - [Step bound of one phase loop (initial-row generator)](loop-b.md)
 - [Time bound of the init generator](init-bound.md)
 - [Correctness of the init generator, with its explicit time bound](init-run.md)
 
-## [BOUND] The time bound is polynomial: `initBound ≤ initC · (T + H + 1)^5`
+## The time bound is polynomial
 
 - [Time bound of the init generator at uniform parameters](init-bound-uni.md)
 - [Constant of the init generator's time bound](init-c.md)
 - [Polynomial time bound for the init generator](init-time.md)
 
-## [FAM] Link to the semantic family `Situation.Enc.initFamily` (I4 sorted and deduplicated)
+## Link to the semantic initial-row family (I4 sorted and deduplicated)
 
 - [Lookup in an all-positive literal list](lookup-pos.md)
 - [Dense clauses of positive literals depend only on their positions](dense-clause-congr.md)

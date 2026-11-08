@@ -15,4 +15,4 @@ $C$ at which to localize in order to recover the local factor $T$.
 
 ## Sources
 
-- prerequisite stage for `cyclotomic_ramIdx_eq_of_unramified` and `baseChange_ramificationIdx_eq_one` in the primary Lean source for ATLAS `NumberTheoryI` target N390, Proposition 19.14; the identification of this localization with the local factor $T$, compositum unramifiedness and the maximality theorem are not proved here.
+- prerequisite stage for `cyclotomic_ramIdx_eq_of_unramified` and `baseChange_ramificationIdx_eq_one` in the primary Lean source for ATLAS `NumberTheoryI` target N390, Proposition 19.14.

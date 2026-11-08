@@ -1,6 +1,6 @@
 # Landen connection formula and poly-Bernoulli numbers
 
-## Meta Mathlib Ext
+## Pole series and Landen data
 
 - [Linear fractional pole series](linear-fractional-pole-series.md)
 - [The linear fractional pole series solves its defining equation](linear-fractional-pole-series-spec.md)
@@ -17,7 +17,7 @@
 - [Weighted form series](form-series.md)
 - [Reversed recursion for Kamano's generalized multiple polylogarithm](polylog-rev.md)
 
-## Meta Mathlib Ext
+## Multiple polylogarithms
 
 - [Kamano's generalized multiple polylogarithm](generalized-multiple-polylog.md)
 - [Initial value of the generalized multiple polylogarithm](generalized-multiple-polylog-one.md)

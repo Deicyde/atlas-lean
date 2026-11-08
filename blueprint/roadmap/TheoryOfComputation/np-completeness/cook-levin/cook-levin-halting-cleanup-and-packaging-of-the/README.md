@@ -1,13 +1,13 @@
 # Cook-Levin: halting cleanup and packaging of the reduction machine
 
-## [DRAIN] A generic drain phase
+## A generic drain phase
 
 - [Draining a stack with the transfer loop](xfer-drain.md)
 - [The drain program](drain-s.md)
 - [Drain step count](drain-b.md)
 - [The drain](drain-run.md)
 
-## [GLUE] The composed machine: full machine, then the drain
+## The composed machine: full machine, then the drain
 
 - [Labels of the composed machine](dl.md)
 - [Drain-stage label](dlab.md)
@@ -18,14 +18,14 @@
 - [Running a program, then the drain](g-run-gen.md)
 - [Step bound for draining bounded stacks](drain-b-le.md)
 
-## [REAL] The composed machine on the real generators
+## The composed machine on the real generators
 
 - [The reduction machine](g-tm.md)
 - [The formula emitted on a raw input](phi-of.md)
 - [Step bound of the composed machine](g-b.md)
 - [The reduction machine halts with the emitted formula](g-run.md)
 
-## [PKG] `TM2OutputsInTime` and `TM2ComputableInPolyTime`
+## Output in time and polynomial-time computability
 
 - [A bounded halting run certifies the output](outputs-of-run-le.md)
 - [A bounded halting run certifies the output, up to an equal output](outputs-of-run-le-2.md)

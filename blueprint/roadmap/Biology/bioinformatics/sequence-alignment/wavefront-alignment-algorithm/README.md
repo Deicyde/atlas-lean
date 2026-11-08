@@ -1,11 +1,8 @@
 # Wavefront alignment algorithm
 
-## Lean
-
-- [Linear gap penalties](linear-penalties.md)
-
 ## Linear Penalties
 
+- [Linear gap penalties](linear-penalties.md)
 - [Cost of an alignment column under linear gap penalties](column-cost.md)
 - [Cost of an alignment under linear gap penalties](cost.md)
 

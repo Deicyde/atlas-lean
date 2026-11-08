@@ -14,4 +14,4 @@ in the textbook definition.
 
 ## Sources
 
-- Burns and Matveev (2021), §10.2, for motivation: a Killing field $V$ gives the linear first integral $\xi \mapsto g(V, \xi)$ of geodesic flow, not formalized here. That the flow of a Killing field consists of isometries is not proved here.
+- Burns and Matveev (2021), §10.2, for motivation: a Killing field $V$ gives the linear first integral $\xi \mapsto g(V, \xi)$ of geodesic flow.

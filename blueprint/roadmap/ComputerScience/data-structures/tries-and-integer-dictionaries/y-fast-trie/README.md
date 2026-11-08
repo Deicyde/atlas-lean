@@ -1,11 +1,8 @@
 # Y-fast trie
 
-## Lean
+## Grouped y-fast trie
 
 - [Grouped y-fast trie](grouped-yfast-trie.md)
-
-## Grouped YFast Trie
-
 - [Keys of a grouped y-fast trie](contents.md)
 - [Stored keys are the keys of the groups](mem-contents-iff.md)
 - [Ordered list of groups](group-ordered.md)

@@ -1,11 +1,8 @@
 # Parity automata
 
-## NA
-
-- [Nondeterministic parity automaton](parity.md)
-
 ## Parity
 
+- [Nondeterministic parity automaton](parity.md)
 - [Every state sequence of a finite parity automaton has a parity winner](run-parity-even-or-parity-odd.md)
 
 ## Buchi

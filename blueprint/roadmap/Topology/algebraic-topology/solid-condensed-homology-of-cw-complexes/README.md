@@ -45,7 +45,7 @@
 - [Spaces admitting a CW complex structure](is-cwtop-cat.md)
 - [The category of spaces admitting a CW structure](cwtop-cat.md)
 
-## CWTop Cat
+## CW complexes as topological spaces
 
 - [Inclusion of CW spaces into topological spaces](to-top-cat.md)
 

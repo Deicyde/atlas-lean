@@ -1,6 +1,6 @@
 # Bisection method
 
-## Meta Mathlib Ext
+## Bisection sequences
 
 - [Bisection sequence](is-bisection-sequence.md)
 
@@ -11,7 +11,7 @@
 - [Bisection intervals are nested](nested.md)
 - [Length of the bisection intervals](sub-eq.md)
 
-## Meta Mathlib Ext
+## Existence and convergence of bisection sequences
 
 - [Existence of bisection sequences](exists-is-bisection-sequence.md)
 - [Nested bisection intervals from a sign bracket](exists-is-bisection-sequence-nested.md)

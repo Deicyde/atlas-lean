@@ -1,11 +1,8 @@
 # Ball tree
 
-## Lean
-
-- [Ball tree](ball-tree.md)
-
 ## Ball Tree
 
+- [Ball tree](ball-tree.md)
 - [Accumulating traversal of a ball tree](to-list-aux.md)
 - [Point list of a ball tree](to-list.md)
 - [Size of a ball tree](size.md)

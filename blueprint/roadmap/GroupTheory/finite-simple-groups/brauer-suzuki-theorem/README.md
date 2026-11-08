@@ -1,6 +1,6 @@
 # Brauer–Suzuki theorem
 
-## Defs
+## Definitions
 
 - [Odd core of a group](odd-core.md)
 

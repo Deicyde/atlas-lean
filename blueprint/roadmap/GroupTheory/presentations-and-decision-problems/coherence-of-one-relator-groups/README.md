@@ -1,6 +1,6 @@
 # Coherence of one-relator groups
 
-## On Coherence Of One Relator Groups Wanted
+## Coherent groups and rings
 
 - [Coherent group](coherent.md)
 - [Coherent ring](coherent-2.md)

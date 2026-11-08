@@ -1,6 +1,6 @@
 # Transposition of finite grid tensor evaluations
 
-## Instance
+## Transposition
 
 - [Transpose of a grid tensor instance](transpose.md)
 - [Transposing a grid tensor instance is an involution](transpose-transpose.md)

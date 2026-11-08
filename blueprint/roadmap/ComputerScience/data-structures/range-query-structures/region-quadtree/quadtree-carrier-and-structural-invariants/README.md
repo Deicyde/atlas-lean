@@ -1,11 +1,8 @@
 # Quadtree carrier and structural invariants
 
-## Lean
+## Quadtrees
 
 - [Region quadtree](qtree.md)
-
-## QTree
-
 - [Height of a quadtree](height.md)
 - [Compressed quadtree](compressed.md)
 - [Quadrant selection by coordinate flags](select-tree.md)

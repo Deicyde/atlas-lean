@@ -6,7 +6,7 @@
 - [Product of a distributionally convergent and a vanishing sequence](mul-tendsto-in-measure-zero.md)
 - [Convergence to zero in probability by domination on likely events](tendsto-in-measure-zero-of-abs-le.md)
 
-## MLEAsymptotic Normality
+## Asymptotic normality of the MLE
 
 - [Score function](score.md)
 - [Fisher information is the second moment of the score](integral-score-sq.md)

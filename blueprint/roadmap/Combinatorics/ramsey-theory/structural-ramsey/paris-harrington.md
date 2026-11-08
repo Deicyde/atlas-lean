@@ -8,4 +8,4 @@ some color $t$ satisfies $f(S) = t$ for every $k$-element subset $S \subseteq H$
 
 ## Sources
 
-- J. Paris and L. Harrington, Handbook of Mathematical Logic, ed. Barwise (1977); Graham-Rothschild-Spencer, Ramsey Theory; Lean states finite combinatorial form with largeness condition, PA-independence not formalized.
+- J. Paris and L. Harrington, Handbook of Mathematical Logic, ed. Barwise (1977); Graham-Rothschild-Spencer, Ramsey Theory. The statement is the finite combinatorial form with the largeness condition; its independence from PA is not part of it.

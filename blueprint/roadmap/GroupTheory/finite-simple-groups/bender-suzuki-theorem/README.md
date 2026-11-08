@@ -1,6 +1,6 @@
 # Bender–Suzuki theorem
 
-## Defs
+## Definitions
 
 - [Strongly embedded subgroups](is-strongly-embedded.md)
 - [The group $\mathrm{PSL}(2, 2^n)$](psl2-model.md)

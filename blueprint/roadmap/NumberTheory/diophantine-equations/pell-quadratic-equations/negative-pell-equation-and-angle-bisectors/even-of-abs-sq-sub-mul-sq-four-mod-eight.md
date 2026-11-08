@@ -5,7 +5,7 @@ integers with $d \equiv 1 \pmod 8$ and $z \equiv 4 \pmod 8$. If integers $x$ and
 $|x^2 - dy^2| = z$, then $x$ and $y$ are both even.
 
 The paper also assumes $z > 1$; this is not needed. The second sentence of part (c) of the
-paper's lemma, on the fundamental unit, is not formalized.
+paper's lemma, on the fundamental unit, is not stated here.
 
 ## Sources
 

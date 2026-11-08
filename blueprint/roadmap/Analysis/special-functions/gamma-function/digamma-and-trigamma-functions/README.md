@@ -1,6 +1,6 @@
 # Digamma and trigamma functions
 
-## Real
+## Digamma and trigamma series on the reals
 
 - [Summability of the Basel series](summable-one-div-add-nat-succ-sq.md)
 - [Digamma series on the positive reals](has-sum-digamma-series.md)
@@ -8,7 +8,7 @@
 - [Trigamma series](deriv-deriv-log-gamma-add-one.md)
 - [Logarithmic derivative of the real Gamma function](deriv-log-gamma.md)
 
-## Complex
+## Analyticity and the complex digamma series
 
 - [Analyticity of the Gamma function](analytic-at-gamma.md)
 - [Analyticity of the digamma function](analytic-at-digamma.md)

@@ -1,6 +1,6 @@
 # Wold decomposition
 
-## Basic
+## Wandering subspaces
 
 - [Wandering subspace of an isometry](wandering-sub.md)
 - [Powers of an isometry preserve inner products](inner-pow-pullback.md)

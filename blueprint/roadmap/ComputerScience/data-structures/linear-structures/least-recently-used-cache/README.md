@@ -1,11 +1,8 @@
 # Least-recently-used cache
 
-## Lean
+## LRU cache
 
 - [Least-recently-used cache](lru-cache.md)
-
-## Lru Cache
-
 - [Extensionality of LRU caches](ext.md)
 - [Erasing a key from a list of entries](erase-key.md)
 - [Empty LRU cache](empty.md)

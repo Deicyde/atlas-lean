@@ -6,15 +6,15 @@
 - [Motzkin number sequence](motzkin.md)
 - [Delannoy numbers](delannoy.md)
 
-## Informal statement of `SoutheastPath`
+## Southeast paths
 
 - [Southeast paths](southeast-path.md)
 - [Weight of a southeast path](weight.md)
 
-## Informal statement of `IsNonintersectingPathFamily`
+## Nonintersecting path families
 
 - [Nonintersecting families of southeast paths](is-nonintersecting-path-family.md)
 
-## Informal statement of `nonintersectingPathWeightSum`
+## Weighted sums over nonintersecting families
 
 - [Weighted sum over nonintersecting path families](nonintersecting-path-weight-sum.md)

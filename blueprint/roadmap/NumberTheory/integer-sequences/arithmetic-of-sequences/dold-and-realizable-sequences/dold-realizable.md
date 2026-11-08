@@ -9,4 +9,4 @@ The divisibility condition alone is the classical Dold condition.
 
 ## Sources
 
-- the repository's trace-side characterization is `MetaMathlibExt.IsDoldSequence` (Wójcik, Lemma 3). The equivalence between the two forms is not formalized here.
+- Wójcik, Lemma 3, for an equivalent form of the Dold condition.

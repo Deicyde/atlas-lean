@@ -1,6 +1,6 @@
 # Singularity formation for the Euler equations
 
-## Finite Time Singularity Wanted
+## Bounded and Hölder continuous functions
 
 - [Functions bounded on a set](is-bounded-fun-on.md)
 - [Bounded functions](is-bounded-fun.md)

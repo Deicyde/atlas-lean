@@ -1,13 +1,13 @@
 # McDonald–Kreitman test
 
-## Mc Donald Kreitman
+## The McDonald–Kreitman test
 
 - [Smith–Eyre-Walker estimator of adaptive substitutions](alpha-hat.md)
 - [Neutrality index](neutrality-index.md)
 - [Adaptive proportion estimator equals one minus the neutrality index](alpha-hat-eq-one-sub-neutrality-index.md)
 - [Expected-count model of the McDonald–Kreitman table](mkmodel.md)
 
-## MKModel
+## Expected counts and the adaptive proportion
 
 - [Expected synonymous polymorphisms](eps.md)
 - [Expected nonsynonymous polymorphisms](epn.md)

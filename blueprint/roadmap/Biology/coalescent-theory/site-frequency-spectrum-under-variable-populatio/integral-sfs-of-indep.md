@@ -6,5 +6,4 @@ Kimmel 2003). Let the genealogy of a sample of `n` copies consist of holding tim
 with the random-joining law. If, given the genealogy, the count `ξ i` is integrable with
 conditional mean `(θ / 2) L_i`, then `E ξ_i = (θ / 2) ∑_k k C(n-i-1,k-2)/C(n-1,k-1) E T_k`
 for `1 ≤ i ≤ n - 1`. Independence of the holding times and the topology holds for the
-time-changed Kingman coalescent of any deterministic population-size history (a standard
-property of that model, not proved here; it is a hypothesis of this theorem).
+time-changed Kingman coalescent of any deterministic population-size history (a standard property of that model; here it is a hypothesis).

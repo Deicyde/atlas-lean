@@ -1,6 +1,6 @@
 # CTL*: state and path formulas
 
-## CTLStar
+## State and path formulas
 
 - [State formulas of CTL$^{\ast}$](state-formula.md)
 - [Path formulas of CTL$^{\ast}$](path-formula.md)
@@ -10,7 +10,7 @@
 - [Always operator on CTL$^{\ast}$ path formulas](always-path.md)
 - [Eventually operator on CTL$^{\ast}$ path formulas](eventually-path.md)
 
-## CTLStar
+## Satisfaction
 
 - [Satisfaction of CTL$^{\ast}$ state formulas](state-sat.md)
 - [Satisfaction of CTL$^{\ast}$ path formulas on infinite runs](path-sat.md)

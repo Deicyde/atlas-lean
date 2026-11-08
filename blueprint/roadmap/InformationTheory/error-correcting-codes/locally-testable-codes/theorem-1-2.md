@@ -6,7 +6,7 @@ $n_i \in \mathbb{N}$ and binary codes $C_i$ of length $n_i$ for $i \in \mathbb{N
 family $(C_i)_{i \in \mathbb{N}}$ is good and, for every $i$, the code $C_i$ is $\kappa$-locally
 testable with $q$ queries and has rate at least $\rho$.
 
-The source's theorem also asserts that the codes are explicit; explicitness is not formalized.
+The source's theorem also asserts that the codes are explicit; explicitness is not part of this statement.
 
 ## Sources
 

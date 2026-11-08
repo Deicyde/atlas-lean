@@ -19,7 +19,7 @@
 - [Cost of non-tail-recursive adjacent merging](t-merge-adj.md)
 - [Cost of tail-recursive adjacent merging](t-merge-adj2.md)
 
-## merge_all variants using fuel to avoid complex termination proofs
+## Merging all heaps
 
 - [Fuel-based merging of all heaps with tail-recursive passes](merge-all2-aux.md)
 - [Singleton leftist heap](singleton.md)

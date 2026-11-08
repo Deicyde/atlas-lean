@@ -1,6 +1,6 @@
 # The classes P, NP and coNP
 
-## Meta Mathlib Ext
+## Bitstring encodings
 
 - [Bitstring encodings](bitstring-encoding.md)
 

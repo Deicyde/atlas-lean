@@ -8,7 +8,7 @@
 - [Characterization of directed grid labelings](mem-grid-labelings.md)
 - [Finite grid tensor evaluation](grid-value.md)
 
-## Instance
+## Transport to a grid
 
 - [Transporting a tensor instance to a grid](on-grid.md)
 

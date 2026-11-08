@@ -1,11 +1,8 @@
 # Adjacency matrix
 
-## Lean
-
-- [Adjacency matrix](adjacency-matrix.md)
-
 ## Adjacency Matrix
 
+- [Adjacency matrix](adjacency-matrix.md)
 - [Empty adjacency matrix](empty.md)
 - [Edge query of an adjacency matrix](has-edge.md)
 - [The empty adjacency matrix has no edges](has-edge-empty.md)
