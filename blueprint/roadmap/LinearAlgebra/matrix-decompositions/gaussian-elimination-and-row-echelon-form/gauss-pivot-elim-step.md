@@ -1,7 +1,8 @@
 # One pivot step of Gaussian elimination
 
 Let $K$ be a field and let $A$ be a matrix over $K$
-whose rows and columns are indexed by finite linearly ordered sets. Let $r$ and $i_0$ be row
+whose rows are indexed by a finite linearly ordered set and whose columns are indexed by any
+set. Let $r$ and $i_0$ be row
 indices and $j$ a column index with $A_{i_0 j} \ne 0$, and let $A'$ be the matrix obtained from
 $A$ by exchanging rows $r$ and $i_0$. Then there is a square matrix $P$ over $K$ indexed by the
 row indices, lower triangular with every diagonal entry equal to $1$, such that
