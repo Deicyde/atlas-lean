@@ -1,5 +1,6 @@
 # Dart of the square lattice
 
 An oriented edge of the square lattice: a pair of nearest-neighbour sites. This is the same data
-as Mathlib's `SimpleGraph.Dart` of `hypercubicLattice 2`; see
-`StatMech.Lattice.Dart.equivSimpleGraphDart`.
+as a dart (an ordered pair of adjacent vertices) of the square lattice `ℤ^2` viewed as a simple
+graph whose edges join nearest neighbours; see
+[Lattice darts agree with graph darts of the square lattice](equiv-simple-graph-dart.md).

@@ -2,9 +2,10 @@
 
 The ramified bound. Let `n = ∏_{i=1}^m p_i^{a_i}` with primes `p_1 < ⋯ < p_m` (the ordering
 the source fixes at the start of its Section 5), `x > 1`, `ω_n = ω(x^n - 1)`, and, with
-`p_0 := 1`, let `r_{i,j}` be the `i`-th element (`Nat.nth`, `0`-indexed here) of
+`p_0 := 1`, let `r_{i,j}` be the `i`-th smallest element (counting from `0` here) of
 `Π^j = {ρ prime : ρ ≡ 1 (mod p_j), ρ ≢ 1 (mod p_s) for j < s ≤ m}`. Fix a prime factor `p_α` of
-`n` and write `p_α = r_{b,τ}` with `τ ≤ m`. As in `hybrid_bound_prime_divisors`, the source's
+`n` and write `p_α = r_{b,τ}` with `τ ≤ m`. As in the
+[Hybrid bound for prime divisors of $x^n - 1$](hybrid-bound-prime-divisors.md), the source's
 `x ≥ min_{k_0 + ⋯ + k_m = ω_n} max_t (1 + ∏_{j ≤ t} δ_α(j) ∏_{i ≤ k_j} r_{i,j})^{T(t)}` is stated
 as the existence of a composition `k` (parts in `ℕ`, not `ℤ⁺`) meeting every bound after raising
 to the power `∏_{s ≤ t} p_s^{a_s}`. The factors `δ_α(j)` are applied to the block products: if
