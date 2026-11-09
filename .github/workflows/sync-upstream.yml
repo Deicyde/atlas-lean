@@ -1,0 +1,445 @@
+name: Sync upstream main
+
+# Once a day, merges facebookresearch/atlas-lean's main into this fork's wiki
+# branch and publishes the wiki, as long as the merge is clean and the merged
+# wiki still builds.
+#
+# - check merges and builds the wiki without Lean, with a read-only token. It
+#   also writes the report of .github/upstream-sync/statement_changes.py: the
+#   linked declarations whose statements upstream changed.
+# - push holds the write token and runs no project code. It redoes the merge,
+#   checks that it gives the tree check built, and pushes it.
+# - published starts the wiki build when the workflow token pushed, and waits
+#   until a Blueprint Pages run deploys the merge.
+# - articles fails when the report lists articles to edit, so that someone is
+#   told: the wiki should state what the Lean proves. It also fails when the
+#   script finds a linked declaration in no Lean file, since it can't report
+#   changes to that one.
+#
+# The workflow token may not push a merge that changes .github/workflows, and
+# upstream changes its workflows on about a third of the days it commits. For
+# those, add a fine-grained token with Contents and Workflows write access to
+# this repository as the SYNC_TOKEN secret, or push the merge by hand. Disable
+# this workflow to hold the wiki at its current upstream commit.
+
+on:
+  schedule:
+    - cron: "41 5 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+env:
+  UPSTREAM: https://github.com/facebookresearch/atlas-lean.git
+  AUTOFORM_SOURCE: "https://github.com/facebookresearch/autoform-bot.git"
+  # The branch to sync, and the one whose Blueprint Pages runs hold the edges:
+  # the default branch, which Pages deploys. A scheduled run's event carries no
+  # repository, but such a run is always on the default branch.
+  WIKI_BRANCH: ${{ github.event.repository.default_branch || github.ref_name }}
+  EDGES_BRANCH: ${{ github.event.repository.default_branch || github.ref_name }}
+  PUBLISH: "true"
+  GIT_AUTHOR_NAME: github-actions[bot]
+  GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+  GIT_COMMITTER_NAME: github-actions[bot]
+  GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+
+jobs:
+  check:
+    # Only the fork syncs; upstream has nothing to merge from itself.
+    if: github.repository == 'Deicyde/atlas-lean'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      todo: ${{ steps.merge.outputs.todo }}
+      base: ${{ steps.merge.outputs.base }}
+      upstream: ${{ steps.merge.outputs.upstream }}
+      tree: ${{ steps.merge.outputs.tree }}
+      workflows: ${{ steps.merge.outputs.workflows }}
+    steps:
+      - name: Check out the wiki branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ env.WIKI_BRANCH }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Merge upstream main
+        id: merge
+        run: |
+          set -euo pipefail
+          git fetch --quiet "$UPSTREAM" main
+          upstream=$(git rev-parse FETCH_HEAD)
+          base=$(git rev-parse HEAD)
+          echo "base=$base" >> "$GITHUB_OUTPUT"
+          echo "upstream=$upstream" >> "$GITHUB_OUTPUT"
+          if git merge-base --is-ancestor "$upstream" "$base"; then
+            echo "todo=none" >> "$GITHUB_OUTPUT"
+            echo "$WIKI_BRANCH already has upstream main ${upstream:0:10}." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if ! git merge --quiet --no-ff --no-edit \
+              -m "Merge upstream main (${upstream:0:10}) into the wiki" "$upstream"; then
+            {
+              echo "### Upstream main ${upstream:0:10} doesn't merge cleanly"
+              echo
+              echo "Conflicting files:"
+              echo
+              git diff --name-only --diff-filter=U | sed 's/^/- /'
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::error::Upstream main ${upstream:0:10} conflicts with $WIKI_BRANCH; merge it by hand."
+            exit 1
+          fi
+          echo "tree=$(git rev-parse 'HEAD^{tree}')" >> "$GITHUB_OUTPUT"
+          # Every upstream commit that changes .github/workflows counts, not just
+          # the net change, in case GitHub checks each pushed commit.
+          if [ -n "$(git log --full-history --format=%H 'HEAD^1..HEAD^2' -- .github/workflows)" ]; then
+            echo "workflows=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "workflows=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "todo=merge" >> "$GITHUB_OUTPUT"
+
+      - name: List the statements upstream changed
+        if: steps.merge.outputs.todo == 'merge'
+        env:
+          BASE: ${{ steps.merge.outputs.base }}
+          UPSTREAM_SHA: ${{ steps.merge.outputs.upstream }}
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s .github/upstream-sync
+          python3 .github/upstream-sync/statement_changes.py \
+            "$(git merge-base "$BASE" "$UPSTREAM_SHA")" "$UPSTREAM_SHA" \
+            --links blueprint/links --seen-at HEAD \
+            --markdown "$RUNNER_TEMP/statements.md" --json "$RUNNER_TEMP/statements.json"
+          cat "$RUNNER_TEMP/statements.md" >> "$GITHUB_STEP_SUMMARY"
+          removed=$(jq '.removed | length' "$RUNNER_TEMP/statements.json")
+          if [ "$removed" -gt 0 ]; then
+            echo "::warning::Upstream removed or renamed $removed linked declarations. The merged wiki can't build until their articles are relinked, so merge upstream by hand and relink them in the merge. The list is in this run's summary."
+          fi
+
+      - name: Keep the report for the later jobs
+        if: steps.merge.outputs.todo == 'merge'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: upstream-statements
+          path: |
+            ${{ runner.temp }}/statements.md
+            ${{ runner.temp }}/statements.json
+          if-no-files-found: error
+          retention-days: 90
+
+      # The rest mirrors the build job of blueprint-pages.yml, with the edges of
+      # the last Blueprint Pages run that built them, so no Lean build is needed.
+      # It catches what upstream most often breaks: an article tied to a
+      # declaration upstream removed or renamed.
+      # Only this repository's own runs on the branch count: a pull request
+      # from a fork's branch of the same name runs code this repository
+      # hasn't reviewed.
+      - name: Find the last wiki build's edges
+        if: steps.merge.outputs.todo == 'merge'
+        id: edges
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          runs=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/blueprint-pages.yml/runs?branch=$EDGES_BRANCH&status=success&per_page=50" \
+            --jq ".workflow_runs[] | select(.head_repository.full_name == \"$GITHUB_REPOSITORY\" and (.event == \"push\" or .event == \"workflow_dispatch\" or .event == \"schedule\")) | .id")
+          for run in $runs; do
+            artifacts=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run/artifacts" \
+              --jq '.artifacts[] | select(.name == "lean-dependencies" and (.expired | not)) | .name')
+            if [ -n "$artifacts" ]; then
+              echo "run=$run" >> "$GITHUB_OUTPUT"
+              echo "Edges from Blueprint Pages run $run."
+              exit 0
+            fi
+          done
+          echo "::error::No Blueprint Pages run on $EDGES_BRANCH has unexpired edges. Run Blueprint Pages, then this workflow."
+          exit 1
+
+      # Unpacked apart from the checkout; the next steps take only the edges file.
+      - name: Fetch the edges
+        if: steps.merge.outputs.todo == 'merge'
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: lean-dependencies
+          path: ${{ runner.temp }}/edges
+          run-id: ${{ steps.edges.outputs.run }}
+          github-token: ${{ github.token }}
+          repository: ${{ github.repository }}
+
+      # Autoform indexes every Lean file under --lean-root, and the archived v1
+      # release and Atlas/ declare the v2 names again; the Pages build leaves
+      # them out of its checkout. Nothing is committed from here on.
+      - name: Leave out what the wiki doesn't index
+        if: steps.merge.outputs.todo == 'merge'
+        run: |
+          rm -rf v1 Atlas
+          echo "AUTOFORM_REF=$(cat .github/autoform-ref)" >> "$GITHUB_ENV"
+
+      - name: Install uv
+        if: steps.merge.outputs.todo == 'merge'
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Test the wiki scripts
+        if: steps.merge.outputs.todo == 'merge'
+        run: >-
+          uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
+          python -m unittest
+          scripts.test_generate_wiki_navigation
+          scripts.test_generate_wiki_docstrings
+          scripts.test_sync_wiki
+          scripts.test_extract_v2_lean_dependencies
+          scripts.test_check_blueprint_site_navigation
+
+      - name: Add the Lean-owned parts to the articles
+        if: steps.merge.outputs.todo == 'merge'
+        run: |
+          edges=$RUNNER_TEMP/edges/build/lean-dependencies.json
+          [ -s "$edges" ] || { echo "::error::The edges artifact has no build/lean-dependencies.json."; exit 1; }
+          mkdir -p build
+          cp "$edges" build/lean-dependencies.json
+          uv run --no-project --with "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}" \
+            python scripts/sync_wiki.py lean-facts build/lean-dependencies.json
+
+      - name: Validate the theorem DAG and its declarations
+        if: steps.merge.outputs.todo == 'merge'
+        run: >-
+          uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
+          autoform check blueprint --lean-root .
+
+      - name: Render the blueprint
+        if: steps.merge.outputs.todo == 'merge'
+        run: >-
+          uvx --from "git+${AUTOFORM_SOURCE}@${AUTOFORM_REF}"
+          autoform render blueprint
+          --output site-src
+          --lean-root .
+          --require-declarations
+
+      - name: Build the Markdown site
+        if: steps.merge.outputs.todo == 'merge'
+        run: >-
+          uvx --from mkdocs==1.6.1
+          --with mkdocs-material==9.8.0
+          --with mkdocs-literate-nav==0.6.2
+          --with pymdown-extensions==11.0.1
+          --with markdown==3.10.3
+          mkdocs build --strict
+
+      - name: Check published routes, anchors, and article cards
+        if: steps.merge.outputs.todo == 'merge'
+        run: python scripts/check_blueprint_site.py site-src site
+
+  push:
+    needs: check
+    if: needs.check.outputs.todo == 'merge'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      actions: read
+    outputs:
+      merge: ${{ steps.push.outputs.merge }}
+      last_run: ${{ steps.push.outputs.last_run }}
+    steps:
+      - name: Check out the commit check merged into
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.check.outputs.base }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Fetch the report
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: upstream-statements
+          path: ${{ runner.temp }}/report
+
+      # Only git, gh and jq run here, never code from the repository. A push that
+      # finds the branch moved since check is refused, and tomorrow's run merges
+      # again on top of the new head.
+      - name: Redo the merge and push it
+        id: push
+        env:
+          BASE: ${{ needs.check.outputs.base }}
+          UPSTREAM_SHA: ${{ needs.check.outputs.upstream }}
+          TREE: ${{ needs.check.outputs.tree }}
+          WORKFLOWS: ${{ needs.check.outputs.workflows }}
+          SYNC_TOKEN: ${{ secrets.SYNC_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ "$WORKFLOWS" = true ] && [ -z "$SYNC_TOKEN" ]; then
+            echo "::error::Upstream main ${UPSTREAM_SHA:0:10} changes .github/workflows, which the workflow token may not push. Add the SYNC_TOKEN secret, or push the merge by hand."
+            exit 1
+          fi
+          git fetch --quiet "$UPSTREAM" "$UPSTREAM_SHA"
+          {
+            echo "Merge upstream main (${UPSTREAM_SHA:0:10}) into the wiki"
+            echo
+            jq -r '
+              "Linked statements upstream changed: \(.changed | length); removed or renamed: \(.removed | length); section variables or notation changed: \(.variables | length); decidability only: \(.decidable | length).",
+              (([.removed[], .changed[], .variables[]] | map(.articles[]) | unique) as $articles
+               | if ($articles | length) > 0 then
+                   "", "Articles to check:", ($articles[:40][] | "- " + .),
+                   (if ($articles | length) > 40 then "- and \($articles | length - 40) more" else empty end)
+                 else empty end)
+            ' "$RUNNER_TEMP/report/statements.json"
+          } > "$RUNNER_TEMP/message"
+          git merge --quiet --no-ff --no-edit -F "$RUNNER_TEMP/message" "$UPSTREAM_SHA"
+          if [ "$(git rev-parse 'HEAD^{tree}')" != "$TREE" ]; then
+            echo "::error::Redoing the merge gave a different tree from the one check built."
+            exit 1
+          fi
+          # Pages runs on the branch with a higher id than this one, but for one
+          # started on BASE just before the push, build the merge or a later
+          # commit. published waits for one of them.
+          last_run=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow blueprint-pages.yml \
+            --limit 1 --json databaseId --jq '.[0].databaseId // 0')
+          echo "last_run=$last_run" >> "$GITHUB_OUTPUT"
+          token=${SYNC_TOKEN:-$GH_TOKEN}
+          git push --quiet "https://x-access-token:${token}@github.com/${GITHUB_REPOSITORY}.git" \
+            "HEAD:refs/heads/${WIKI_BRANCH}"
+          echo "merge=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "Pushed $(git rev-parse --short HEAD) to $WIKI_BRANCH." >> "$GITHUB_STEP_SUMMARY"
+
+  published:
+    needs: [check, push]
+    if: needs.push.result == 'success' && needs.push.outputs.merge != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions:
+      actions: write
+    steps:
+      # Every push or dispatch run on the branch newer than push's last_run,
+      # but for one started on BASE just before the push, builds the merge or
+      # a later commit, so any of them that deploys publishes the merge. A
+      # newer run in Pages' shared publish group replaces one still waiting;
+      # when the newest run here was replaced by a run on another branch, or
+      # by a daily run that deploys nothing, the build is started again.
+      - name: Wait until a Blueprint Pages run deploys the merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE: ${{ needs.check.outputs.base }}
+          MERGE: ${{ needs.push.outputs.merge }}
+          LAST_RUN: ${{ needs.push.outputs.last_run }}
+          # A push made with the workflow token starts no workflow, so the wiki
+          # build is started here. A push made with SYNC_TOKEN starts one when
+          # the merge changes what the build reads, and one is started here if
+          # none has after ten minutes.
+          START: ${{ secrets.SYNC_TOKEN == '' }}
+        run: |
+          set -euo pipefail
+          if [ "$PUBLISH" != true ]; then
+            echo "Publishing is off for this run."
+            exit 0
+          fi
+          case $LAST_RUN in
+            '' | *[!0-9]*)
+              echo "::error::push passed no Blueprint Pages run id to wait from."
+              exit 1
+              ;;
+          esac
+          unpublished() {
+            echo "::error::$1, so ${MERGE:0:10} is on $WIKI_BRANCH but not published."
+            exit 1
+          }
+          starts=0 failures=0 checked=" " started=$SECONDS
+          start() {
+            gh workflow run blueprint-pages.yml --repo "$GITHUB_REPOSITORY" --ref "$WIKI_BRANCH"
+            starts=$((starts + 1)) started=$SECONDS
+          }
+          if [ "$START" = true ]; then
+            start
+          fi
+          # Stops short of the job's 360-minute timeout.
+          while [ "$SECONDS" -lt $((345 * 60)) ]; do
+            sleep 60
+            if ! runs=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow blueprint-pages.yml \
+                --branch "$WIKI_BRANCH" --limit 20 --json databaseId,event,headSha,status,conclusion \
+                --jq "[.[] | select(.databaseId > $LAST_RUN and (.event == \"push\" or .event == \"workflow_dispatch\") and .headSha != \"$BASE\")]"); then
+              failures=$((failures + 1))
+              [ "$failures" -lt 15 ] || unpublished "gh run list failed 15 times in a row"
+              continue
+            fi
+            failures=0
+            for run in $(jq -r '.[] | select(.conclusion == "success") | .databaseId' <<< "$runs"); do
+              case $checked in *" $run "*) continue ;; esac
+              deploy=$(gh run view "$run" --repo "$GITHUB_REPOSITORY" --json jobs \
+                --jq '[.jobs[] | select(.name == "deploy")][0].conclusion // ""') || continue
+              if [ "$deploy" = success ]; then
+                echo "Blueprint Pages run $run deployed ${MERGE:0:10}." >> "$GITHUB_STEP_SUMMARY"
+                exit 0
+              fi
+              checked="$checked$run "
+            done
+            if jq -e 'any(.[]; .status != "completed")' <<< "$runs" > /dev/null; then
+              continue
+            fi
+            run=$(jq -r '.[0].databaseId // ""' <<< "$runs")
+            conclusion=$(jq -r '.[0].conclusion // ""' <<< "$runs")
+            if [ -z "$run" ]; then
+              if [ $((SECONDS - started)) -ge 600 ]; then
+                [ "$starts" -lt 3 ] || unpublished "No Blueprint Pages run started"
+                start
+              fi
+              continue
+            fi
+            case $conclusion in
+              success)
+                case $checked in *" $run "*) unpublished "Blueprint Pages run $run passed without deploying" ;; esac
+                ;;
+              cancelled)
+                if [ $((SECONDS - started)) -ge 120 ]; then
+                  [ "$starts" -lt 3 ] || unpublished "The Blueprint Pages runs keep being cancelled"
+                  start
+                fi
+                ;;
+              *)
+                unpublished "Blueprint Pages run $run ended $conclusion"
+                ;;
+            esac
+          done
+          active=$(jq -r '[.[] | select(.status != "completed") | .databaseId | tostring] | join(", ")' <<< "${runs:-[]}")
+          echo "::error::${MERGE:0:10} is on $WIKI_BRANCH but not published after $((SECONDS / 60)) minutes${active:+; Blueprint Pages run $active may still publish it}."
+          exit 1
+
+  articles:
+    needs: [check, push]
+    if: needs.push.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions: {}
+    steps:
+      - name: Fetch the report
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: upstream-statements
+          path: ${{ runner.temp }}/report
+
+      - name: Fail when articles need editing
+        run: |
+          set -euo pipefail
+          report=$RUNNER_TEMP/report/statements.json
+          edits=$(jq '[.removed[], .changed[], .variables[]] | length' "$report")
+          unseen=$(jq '.unseen | length' "$report")
+          cat "$RUNNER_TEMP/report/statements.md" >> "$GITHUB_STEP_SUMMARY"
+          status=0
+          if [ "$edits" -gt 0 ]; then
+            echo "::error::Upstream changed $edits linked declarations; their articles should state what the Lean now proves. The list is in this run's summary."
+            status=1
+          fi
+          if [ "$unseen" -gt 0 ]; then
+            echo "::error::statement_changes.py finds $unseen linked declarations in no Lean file, so it can't report changes to them. Its parser needs fixing; the names are in this run's summary."
+            status=1
+          fi
+          exit "$status"
