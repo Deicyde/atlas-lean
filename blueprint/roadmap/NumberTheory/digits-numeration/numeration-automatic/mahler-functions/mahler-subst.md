@@ -8,4 +8,4 @@ $i \ge 1$), it is the constant series equal to the constant term of $F$.
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex (concept `jis_sem_5181d154d12c87e1c5d03365`, defining statement `jis_e5b3733b8ba6a96c630ed094`).
+- https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex.

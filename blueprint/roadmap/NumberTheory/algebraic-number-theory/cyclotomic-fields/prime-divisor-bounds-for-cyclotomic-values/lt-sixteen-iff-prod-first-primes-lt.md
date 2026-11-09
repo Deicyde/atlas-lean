@@ -5,4 +5,4 @@ only if the product $p_1 p_2 \cdots p_w$ of the first $w$ primes is less than $1
 
 ## Sources
 
-- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 10 (`integers-2026-A95-prop-10`).
+- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 10.

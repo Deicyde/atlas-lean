@@ -8,4 +8,4 @@ $D_A(\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}) = 2m - 1$.
 
 ## Sources
 
-- Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Corollary 2 (`integers-2026-A89-cor-2`).
+- Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Corollary 2.

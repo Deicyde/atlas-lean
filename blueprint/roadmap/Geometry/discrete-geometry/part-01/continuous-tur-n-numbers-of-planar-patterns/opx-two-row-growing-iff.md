@@ -12,4 +12,4 @@ $s(n) = \Omega(n^{1 - o(1)})$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Proposition 6.4 (`integers-2024-A1-prop-6-4`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Proposition 6.4.

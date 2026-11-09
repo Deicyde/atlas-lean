@@ -9,4 +9,4 @@ The odd-rank hypothesis stands for the parity conjecture for $E$.
 
 ## Sources
 
-- Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Theorem 1 (iii) (`integers-2026-A51-thm-1`).
+- Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Theorem 1 (iii).

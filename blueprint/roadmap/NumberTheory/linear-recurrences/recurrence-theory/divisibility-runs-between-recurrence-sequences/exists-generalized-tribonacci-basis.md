@@ -9,4 +9,4 @@ Tribonacci sequence with initial values $a, b, c$ equals $u_n a + v_n b + w_n c$
 
 ## Sources
 
-- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 2 (`integers-2026-A122-prop-2`).
+- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 2.

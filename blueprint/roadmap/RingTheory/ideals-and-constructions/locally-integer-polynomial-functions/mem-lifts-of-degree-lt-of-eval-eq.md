@@ -7,4 +7,4 @@ $\mathbb{Q}[x]$ of a polynomial in $\mathbb{Z}[x]$.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 2 (`integers-2025-A41-lem-2`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 2.

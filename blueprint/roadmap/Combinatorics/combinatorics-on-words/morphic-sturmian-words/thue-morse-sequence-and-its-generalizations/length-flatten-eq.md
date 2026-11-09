@@ -6,4 +6,4 @@ lists in $l$ has length $n \cdot m$, where $n$ is the number of lists in $l$.
 
 ## Sources
 
-- JIS Definition 2.2 (concept `jis_sem_12ac243c6e8826ae73e194e0`, statement `jis_099e0392547ec836b0b913d1`).
+- JIS Definition 2.2.

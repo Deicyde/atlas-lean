@@ -6,4 +6,4 @@ $F_c(b_1, \dots, b_l) = b_1 + \dots + b_l + c\, b_1 \cdots b_l$, is $m$-vanishin
 
 ## Sources
 
-- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 4 (`integers-2026-A25-lem-4`).
+- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 4.

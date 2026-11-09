@@ -35,4 +35,4 @@ $f_1 f_2^2 f_8 f_{12} f_{16} f_{24} f_{48}$.
 
 ## Sources
 
-- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Lemma 3, eqs. (9), (10), (13), (14) (`integers-2024-A101-lem-3`).
+- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Lemma 3, eqs. (9), (10), (13), (14).

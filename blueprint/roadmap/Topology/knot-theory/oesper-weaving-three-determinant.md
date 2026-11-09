@@ -14,4 +14,4 @@ nonnegative knot determinant.
 
 ## Sources
 
-- Seong Ju Kim, Ryan Stees, and Laura Taalman, "Sequences of Spiral Knot Determinants", Journal of Integer Sequences 19 (2016), Article 16.1.4, lines 409-412: https://cs.uwaterloo.ca/journals/JIS/VOL19/Stees/stees4.tex The formula is attributed to L. Oesper, "p-colorings of weaving knots" (preprint). Proves `Wanted` entry `oesper_weaving_three_determinant`.
+- Seong Ju Kim, Ryan Stees, and Laura Taalman, "Sequences of Spiral Knot Determinants", Journal of Integer Sequences 19 (2016), Article 16.1.4, lines 409-412: https://cs.uwaterloo.ca/journals/JIS/VOL19/Stees/stees4.tex The formula is attributed to L. Oesper, "p-colorings of weaving knots" (preprint).

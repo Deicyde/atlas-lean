@@ -17,4 +17,4 @@ The factor $d$ is then the least positive element of $A$.
 
 ## Sources
 
-- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 10 (`integers-2024-A116-thm-10`).
+- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 10.

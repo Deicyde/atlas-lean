@@ -11,4 +11,4 @@ integers $t$ and $s$, then $Q \equiv 2 \pmod 4$.
 
 ## Sources
 
-- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 17 (`integers-2024-A30-lem-17`).
+- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 17.

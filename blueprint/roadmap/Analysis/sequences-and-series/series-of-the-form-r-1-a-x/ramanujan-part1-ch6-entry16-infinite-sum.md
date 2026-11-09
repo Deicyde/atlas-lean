@@ -11,4 +11,4 @@ equals the sum of the other two.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6. The infinite form of `Entry16FiniteSum.ramanujan_part1_ch6_entry16_finite_sum`. Proves `Wanted` entry `ramanujan_part1_ch6_entry9_centralbinomialasymptotic`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6. The infinite form of `Entry16FiniteSum.ramanujan_part1_ch6_entry16_finite_sum`.

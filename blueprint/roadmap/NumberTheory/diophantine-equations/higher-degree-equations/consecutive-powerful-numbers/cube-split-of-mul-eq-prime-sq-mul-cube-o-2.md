@@ -8,4 +8,4 @@ $R = g p^2 C_1^3$ and $S = g^2 C_2^3$; or $S = g p^2 C_1^3$ and $R = g^2 C_2^3$.
 
 ## Sources
 
-- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Lemma 1 (`integers-2025-A103-lem-1`).
+- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Lemma 1.

@@ -17,4 +17,4 @@ irreducibility hypothesis the paper does not state; it is assumed directly here.
 
 ## Sources
 
-- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Corollary 5 (`integers-2026-A82-cor-5`), under the standing assumption of Section 3.
+- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Corollary 5, under the standing assumption of Section 3.

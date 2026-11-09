@@ -8,4 +8,4 @@ $\operatorname{opx}(n, P) = O(n)$ as the real number $n$ tends to infinity.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.10 (`integers-2024-A1-thm-4-10`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.10.

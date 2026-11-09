@@ -10,4 +10,4 @@ assumed: they follow from the hypotheses (positivity for all large $n$).
 
 ## Sources
 
-- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Lemma 9 (`integers-2024-A37-lem-9`).
+- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Lemma 9.

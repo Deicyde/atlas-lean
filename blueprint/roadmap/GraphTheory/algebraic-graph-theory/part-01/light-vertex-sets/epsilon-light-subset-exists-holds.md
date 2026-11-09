@@ -12,4 +12,4 @@ Appendix B.6 of the source proves this, with $c = 1/42$, as Lemma B.1 (stated fo
 
 ## Sources
 
-- First Proof authors, arXiv:2602.05192v2, Appendix B.6 (Lemma B.1), https://arxiv.org/html/2602.05192v2. Moved from `OpenConjectures/Combinatorics/EpsilonLightSubset`.
+- First Proof authors, arXiv:2602.05192v2, Appendix B.6 (Lemma B.1), https://arxiv.org/html/2602.05192v2.

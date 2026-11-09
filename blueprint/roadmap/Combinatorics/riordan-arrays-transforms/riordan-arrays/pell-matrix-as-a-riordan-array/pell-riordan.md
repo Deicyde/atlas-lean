@@ -12,4 +12,4 @@ $\left(\frac{1}{1-x}, \frac{x(1 + x + \dots + x^k)}{1-x}\right)$.
 
 ## Sources
 
-- Jhon J. Bravo, Jose L. Herrera, and José L. Ramírez, "Combinatorial Interpretation of Generalized Pell Numbers," Journal of Integer Sequences 23 (2020), Article 20.2.1, Theorem (label Riordan), lines 269–272, https://cs.uwaterloo.ca/journals/JIS/VOL23/Bravo/bravo4.tex It follows from `pell_riordan_general`; the hypothesis `hk` is unused and keeps the source's shape. Proves `Wanted` entry `pell_riordan`.
+- Jhon J. Bravo, Jose L. Herrera, and José L. Ramírez, "Combinatorial Interpretation of Generalized Pell Numbers," Journal of Integer Sequences 23 (2020), Article 20.2.1, Theorem, lines 269–272, https://cs.uwaterloo.ca/journals/JIS/VOL23/Bravo/bravo4.tex It follows from `pell_riordan_general`; the hypothesis `hk` is unused and keeps the source's shape.

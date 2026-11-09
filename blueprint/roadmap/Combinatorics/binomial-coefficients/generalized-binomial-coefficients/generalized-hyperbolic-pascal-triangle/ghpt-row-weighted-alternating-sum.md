@@ -13,4 +13,4 @@ The identities do not use the structure of the rows; they hold for every $q$ and
 
 ## Sources
 
-- Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Corollary 2 (`integers-2024-A84-cor-2`).
+- Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Corollary 2.

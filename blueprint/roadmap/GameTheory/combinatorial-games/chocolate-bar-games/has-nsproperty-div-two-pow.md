@@ -5,4 +5,4 @@ $x \mapsto \lfloor x / 2^m \rfloor$ on $\mathbb{N}$ has the NS property.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 7 (`integers-2025-G3-lem-7`).
+- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 7.

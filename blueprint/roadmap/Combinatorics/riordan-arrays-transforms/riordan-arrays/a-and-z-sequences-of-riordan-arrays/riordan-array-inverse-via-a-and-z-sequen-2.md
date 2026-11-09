@@ -16,4 +16,4 @@ $\bar f(f(x)) = x$ is not needed for the conclusion; it is kept to match the sou
 
 ## Sources
 
-- Paul Barry and Aoife Hennessy, "Meixner-Type Results for Riordan Arrays and Associated Integer Sequences," Journal of Integer Sequences 13 (2010), Article 10.9.4, Lemma (label `Lemma`), lines 280-283, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Barry5/barry96s.tex>. The paper attributes this formula to Luzon.
+- Paul Barry and Aoife Hennessy, "Meixner-Type Results for Riordan Arrays and Associated Integer Sequences," Journal of Integer Sequences 13 (2010), Article 10.9.4, Lemma, lines 280-283, <https://cs.uwaterloo.ca/journals/JIS/VOL13/Barry5/barry96s.tex>. The paper attributes this formula to Luzon.

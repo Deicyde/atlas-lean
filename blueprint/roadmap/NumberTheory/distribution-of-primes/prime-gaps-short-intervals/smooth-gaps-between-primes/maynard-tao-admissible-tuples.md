@@ -6,4 +6,4 @@ integers $n$ for which $n + h$ is a (positive) prime for at least $m$ elements $
 
 ## Sources
 
-- Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 2 (`integers-2025-A44-thm-2`), citing J. Maynard, *Small gaps between primes*, Ann. of Math. 181 (2015).
+- Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 2, citing J. Maynard, *Small gaps between primes*, Ann. of Math. 181 (2015).

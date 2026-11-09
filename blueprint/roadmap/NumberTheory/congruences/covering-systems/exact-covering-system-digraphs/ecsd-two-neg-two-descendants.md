@@ -11,4 +11,4 @@ covering system digraph.
 
 ## Sources
 
-- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Proposition 1 (`integers-2026-A107-prop-1`).
+- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Proposition 1.

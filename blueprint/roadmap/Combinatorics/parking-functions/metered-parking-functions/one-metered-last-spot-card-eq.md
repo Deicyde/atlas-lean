@@ -6,4 +6,4 @@ last car parks in spot $j$ equals the number of those whose last car parks in sp
 
 ## Sources
 
-- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Lemma 2 (`integers-2025-A73-lem-2`).
+- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Lemma 2.

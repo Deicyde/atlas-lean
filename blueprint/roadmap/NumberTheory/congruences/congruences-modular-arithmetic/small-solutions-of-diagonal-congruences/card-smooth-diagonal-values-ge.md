@@ -13,4 +13,4 @@ elements.
 
 ## Sources
 
-- Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Lemma 1 (`integers-2026-A14-lem-1`).
+- Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Lemma 1.

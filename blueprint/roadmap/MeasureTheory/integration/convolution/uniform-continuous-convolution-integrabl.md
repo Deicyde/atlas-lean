@@ -12,4 +12,4 @@ is uniformly continuous on $\mathbb{R}^d$.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Linear function spaces and their duals), `benchmark/level1/ma_proofbench_l1_15.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l1_15`.

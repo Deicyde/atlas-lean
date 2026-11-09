@@ -10,4 +10,4 @@ quadratic forms; it is read here as the primitive (Gauss) class number.
 
 ## Sources
 
-- Kalyan Chakraborty and Meenu Sharma, *A Note on Terai's Conjecture Related to Exponential Diophantine Equations*, INTEGERS 26 (2026), Article A67, Theorem 3 (`integers-2026-A67-thm-3`).
+- Kalyan Chakraborty and Meenu Sharma, *A Note on Terai's Conjecture Related to Exponential Diophantine Equations*, INTEGERS 26 (2026), Article A67, Theorem 3.

@@ -30,4 +30,4 @@ coefficient below $q^{n+1}$.
 
 ## Sources
 
-- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 5 (`integers-2025-A28-thm-5`).
+- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 5.

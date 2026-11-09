@@ -8,4 +8,4 @@ as the natural number $n$ tends to infinity, with constants depending on $P$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 5.11 (`integers-2024-A1-thm-5-11`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 5.11.

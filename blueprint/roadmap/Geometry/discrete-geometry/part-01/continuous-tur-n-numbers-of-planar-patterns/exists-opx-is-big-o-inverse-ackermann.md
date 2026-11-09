@@ -8,4 +8,4 @@ number and $\alpha$ is the inverse Ackermann function.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.8 (`integers-2024-A1-cor-3-8`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.8.

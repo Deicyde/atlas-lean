@@ -10,4 +10,4 @@ $f(4k^2 + 1) = (4k^2 + 1)^2$.
 
 ## Sources
 
-- Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 3 (`integers-2024-A108-lem-3`).
+- Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 3.

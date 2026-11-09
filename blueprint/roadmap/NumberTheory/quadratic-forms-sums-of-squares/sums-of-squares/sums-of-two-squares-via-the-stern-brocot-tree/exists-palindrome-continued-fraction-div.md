@@ -11,4 +11,4 @@ number of terms and is palindromic.
 
 ## Sources
 
-- Hongshen Chua, *Binary Trees and Sum of Two Squares*, INTEGERS 26 (2026), Article A76, Lemma 1 (Perron) (`integers-2026-A76-lem-1`).
+- Hongshen Chua, *Binary Trees and Sum of Two Squares*, INTEGERS 26 (2026), Article A76, Lemma 1 (Perron).

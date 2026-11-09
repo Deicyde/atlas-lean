@@ -9,4 +9,4 @@ The paper indexes the sequence from $1$ and states this for $n \ge 3$.
 
 ## Sources
 
-- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 2 (`integers-2026-A122-lem-2`).
+- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Lemma 2.

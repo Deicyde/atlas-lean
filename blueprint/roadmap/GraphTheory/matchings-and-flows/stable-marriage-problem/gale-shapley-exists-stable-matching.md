@@ -7,4 +7,4 @@ stable for these preferences.
 
 ## Sources
 
-- D. Gale and L. S. Shapley, "College Admissions and the Stability of Marriage", American Mathematical Monthly 69 (1962), 9–15, DOI 10.2307/2312726. It follows from `gale_shapley_exists_stable_matching_general`; the instances `[DecidableEq M]` and `[DecidableEq W]` are unused and keep the source's shape. Proves `Wanted` entry `gale_shapley_exists_stable_matching`.
+- D. Gale and L. S. Shapley, "College Admissions and the Stability of Marriage", American Mathematical Monthly 69 (1962), 9–15, DOI 10.2307/2312726. It follows from `gale_shapley_exists_stable_matching_general`; the instances `[DecidableEq M]` and `[DecidableEq W]` are unused and keep the source's shape.

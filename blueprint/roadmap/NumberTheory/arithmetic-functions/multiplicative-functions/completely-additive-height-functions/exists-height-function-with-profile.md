@@ -6,4 +6,4 @@ height function $H$ such that for every $k \ge 1$ exactly $\pi_k$ primes $p$ sat
 
 ## Sources
 
-- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 2 (`integers-2026-A116-prop-2`).
+- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 2.

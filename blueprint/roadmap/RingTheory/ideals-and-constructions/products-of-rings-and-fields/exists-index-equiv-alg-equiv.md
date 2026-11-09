@@ -8,4 +8,4 @@ $G_{\sigma(i)}$ as a $K$-algebra for every $i \in I$.
 
 ## Sources
 
-- ATLAS N83, Corollary 4.33. This is the multiplicity-preserving correction of `EtaleAlgebra.etale_decomposition_unique` from the primary Lean source.
+- ATLAS N83, Corollary 4.33.

@@ -10,4 +10,4 @@ $2^{(1/4 - \varepsilon) n} \le f^*_{\max}(G) \le 2^{(1/4 + \varepsilon) n}$.
 
 ## Sources
 
-- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 4 (`integers-2026-A97-thm-4`).
+- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 4.

@@ -19,4 +19,4 @@ $p^{p v_p(h) + w - 1}$ respectively.
 
 ## Sources
 
-- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 2 (`integers-2026-A32-thm-2`).
+- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 2.

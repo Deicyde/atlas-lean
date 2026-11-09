@@ -12,4 +12,4 @@ are $206$ and $205$.
 
 ## Sources
 
-- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 10 (`integers-2024-A76-thm-10`).
+- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 10.

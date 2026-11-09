@@ -12,4 +12,4 @@ coefficient written as $\binom{-k}{j} = (-1)^j \binom{k+j-1}{j}$.
 
 ## Sources
 
-- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 8 (TeX label `thm:dwdwf`).
+- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 8.

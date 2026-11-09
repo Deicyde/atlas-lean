@@ -12,4 +12,4 @@ $$\frac{e^{-1/(8n)}}{\sqrt{2\pi}\,\sqrt{n}}\, B < \binom{mn}{rn} <
 
 ## Sources
 
-- Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*, INTEGERS 26 (2026), Article A26, Lemma 6 (`integers-2026-A26-lem-6`), quoting Stănică.
+- Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*, INTEGERS 26 (2026), Article A26, Lemma 6, quoting Stănică.

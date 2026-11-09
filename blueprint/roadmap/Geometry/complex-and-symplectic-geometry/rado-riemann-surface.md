@@ -7,4 +7,4 @@ second countable.
 
 ## Sources
 
-- John Hamal Hubbard, *Teichmüller theory and applications to geometry, topology, and dynamics. Vol. 1*, §1.3. Via leanprover/lean-eval@38361be, problem `rado_riemannSurface`.
+- John Hamal Hubbard, *Teichmüller theory and applications to geometry, topology, and dynamics. Vol. 1*, §1.3. Problem `rado_riemannSurface` of the lean-eval benchmark.

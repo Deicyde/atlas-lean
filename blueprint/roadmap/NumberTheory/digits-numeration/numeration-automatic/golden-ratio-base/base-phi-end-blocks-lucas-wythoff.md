@@ -19,4 +19,4 @@ $V_0(L_{2m+1}, L_{2m}, 0)$ and $V(L_{2m}, L_{2m-1}, 1)$ are disjoint.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 7 (`integers-2024-A24-thm-7`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 7.

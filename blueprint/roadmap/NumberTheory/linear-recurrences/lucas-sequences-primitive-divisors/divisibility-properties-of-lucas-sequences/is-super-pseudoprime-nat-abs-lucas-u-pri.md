@@ -8,4 +8,4 @@ $P, Q$, and if $Q = \pm 1$ it is also a super Frobenius pseudoprime with paramet
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 5.1, first two sentences (`integers-2025-A107-thm-5-1`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 5.1, first two sentences.

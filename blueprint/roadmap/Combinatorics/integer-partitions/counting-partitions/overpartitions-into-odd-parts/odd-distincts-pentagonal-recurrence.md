@@ -7,4 +7,4 @@ equals $(-1)^{\lceil m/2 \rceil}$ if $n = m(3m+1)/2$ for some integer $m$, and $
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Corollary 4 (`integers-2026-A60-cor-4`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Corollary 4.

@@ -11,4 +11,4 @@ $\mathrm{opx}(n, P, 1) \le 1$, since a $P$-free open set $S$ has Lebesgue measur
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.8 (`integers-2024-A1-cor-5-8`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.8.

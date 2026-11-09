@@ -14,4 +14,4 @@ ordering; for $d = 100$ this exceeds $n^{1+c}$ for any $c < 49/100$ and all larg
 
 ## Sources
 
-- M. Balko, V. Jelínek and P. Valtr, On ordered Ramsey numbers of bounded-degree graphs, arXiv:1606.05628, https://arxiv.org/abs/1606.05628. Moved from `OpenConjectures/Combinatorics/OrderRobustOrderedRamsey`.
+- M. Balko, V. Jelínek and P. Valtr, On ordered Ramsey numbers of bounded-degree graphs, arXiv:1606.05628, https://arxiv.org/abs/1606.05628.

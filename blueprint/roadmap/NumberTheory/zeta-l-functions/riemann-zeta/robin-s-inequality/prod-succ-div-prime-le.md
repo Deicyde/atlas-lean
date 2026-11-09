@@ -11,4 +11,4 @@ In the source this constant is called $c_1$, cited there from Tenenbaum's Theore
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 2 (`integers-2026-A86-lem-2`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 2.

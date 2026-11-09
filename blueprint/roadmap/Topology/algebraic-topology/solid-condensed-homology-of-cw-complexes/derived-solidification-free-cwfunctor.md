@@ -10,4 +10,4 @@ $\mathbb{Z}[X]$, viewed as a complex concentrated in degree $0$.
 
 ## Sources
 
-- https://github.com/dagurtomas/LeanCondensed (LeanCondensed/Projects/DerivedSolidCWHomology.lean); D. Clausen and P. Scholze, lectures on analytic stacks and light condensed mathematics.; P. Scholze, Lectures on Condensed Mathematics, https://arxiv.org/pdf/2605.03658 Via leanprover/lean-eval@38361be, problem `derived_solidification_free_CW_homology`.
+- https://github.com/dagurtomas/LeanCondensed; D. Clausen and P. Scholze, lectures on analytic stacks and light condensed mathematics.; P. Scholze, Lectures on Condensed Mathematics, https://arxiv.org/pdf/2605.03658. Problem `derived_solidification_free_CW_homology` of the lean-eval benchmark.

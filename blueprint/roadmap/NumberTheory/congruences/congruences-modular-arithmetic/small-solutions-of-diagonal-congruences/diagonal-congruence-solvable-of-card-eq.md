@@ -9,4 +9,4 @@ congruence in $n$ variables is solvable; extra variables can be set to $0$.
 
 ## Sources
 
-- Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Lemma 2 (`integers-2026-A14-lem-2`).
+- Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Lemma 2.

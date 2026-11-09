@@ -14,4 +14,4 @@ SZ-admissible indices.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (ii) (after Ebrahimi-Fard, Manchon and Singer) (`integers-2024-A6-thm-17`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (ii) (after Ebrahimi-Fard, Manchon and Singer).

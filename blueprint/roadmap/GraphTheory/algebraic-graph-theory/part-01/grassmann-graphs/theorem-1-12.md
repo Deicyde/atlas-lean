@@ -13,4 +13,4 @@ $|S \cap \mathrm{Gr}(k, \ell)[A, B]| / |\mathrm{Gr}(k, \ell)[A, B]| \ge \varepsi
 
 ## Sources
 
-- S. Khot, D. Minzer, and M. Safra, `Pseudorandom sets in Grassmann graph have near-perfect expansion`, Annals of Math, 198 (1) 2023. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2023-198-1-PseudorandomGrassmann.lean Via leanprover/lean-eval@38361be, problem `annals_pseudorandom_grassmann`.
+- S. Khot, D. Minzer, and M. Safra, `Pseudorandom sets in Grassmann graph have near-perfect expansion`, Annals of Math, 198 (1) 2023. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_pseudorandom_grassmann` of the lean-eval benchmark.

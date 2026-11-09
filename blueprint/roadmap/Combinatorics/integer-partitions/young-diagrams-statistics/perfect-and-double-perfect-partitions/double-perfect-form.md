@@ -15,4 +15,4 @@ but has no part $2$.
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Proposition 1 (Lee), display (3) (`integers-2025-A109-prop-1`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Proposition 1 (Lee), display (3).

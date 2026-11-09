@@ -7,4 +7,4 @@ $\sum_{i=1}^{q} a_i^{q-1} = -1$, where $0^0 = 1$.
 
 ## Sources
 
-- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Lemma 3 (`integers-2024-A12-lem-3`).
+- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Lemma 3.

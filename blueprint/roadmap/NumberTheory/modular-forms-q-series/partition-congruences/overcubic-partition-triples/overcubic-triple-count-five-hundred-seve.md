@@ -9,4 +9,4 @@ This is the $\alpha = 0$ case of the paper's statement.
 
 ## Sources
 
-- S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 6, eq. (25), case `α = 0` (`integers-2024-A80-thm-6`).
+- S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 6, eq. (25), case `α = 0`.

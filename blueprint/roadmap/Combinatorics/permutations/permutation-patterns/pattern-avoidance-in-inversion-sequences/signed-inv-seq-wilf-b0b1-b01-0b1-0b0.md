@@ -11,4 +11,4 @@ The generating function printed in the paper, $1/(1 - x)^2 + \sum_{j \ge 0} j!\,
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C21) (`integers-2026-A74-thm-3`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C21).

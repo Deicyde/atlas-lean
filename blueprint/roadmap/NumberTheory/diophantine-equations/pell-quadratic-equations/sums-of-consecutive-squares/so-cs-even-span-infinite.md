@@ -5,4 +5,4 @@ $(a, b, c)$ of the sum of consecutive squares problem with $c - a$ even.
 
 ## Sources
 
-- Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Theorem 3 (`integers-2026-A1-thm-3`).
+- Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Theorem 3.

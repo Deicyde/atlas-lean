@@ -10,4 +10,4 @@ Frantzikinakis–Host–Kra recurrence theorem along shifted primes.
 
 ## Sources
 
-- Oscar Quester, The Primes are 2-Accessible, arXiv preprint (2026), arXiv:2606.00410, https://arxiv.org/abs/2606.00410; Nikos Frantzikinakis, Bernard Host, Bryna Kra, The polynomial multidimensional Szemeredi theorem along shifted primes, Israel J. Math. 194 (2013), 331-348, arXiv:1009.1484, https://arxiv.org/abs/1009.1484. Moved from `OpenConjectures/Combinatorics/PrimeTwoAccessibility`.
+- Oscar Quester, The Primes are 2-Accessible, arXiv preprint (2026), arXiv:2606.00410, https://arxiv.org/abs/2606.00410; Nikos Frantzikinakis, Bernard Host, Bryna Kra, The polynomial multidimensional Szemeredi theorem along shifted primes, Israel J. Math. 194 (2013), 331-348, arXiv:1009.1484, https://arxiv.org/abs/1009.1484.

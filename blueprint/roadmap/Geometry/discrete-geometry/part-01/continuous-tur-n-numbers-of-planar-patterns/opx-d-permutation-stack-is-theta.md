@@ -13,4 +13,4 @@ $\mathrm{opx}(n, P_2, 3) \le n^2$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.15 (`integers-2024-A1-cor-5-15`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.15.

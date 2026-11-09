@@ -7,4 +7,4 @@ is a constant $C'$ such that $\sigma(n)/n \le C' \log\log n$ for every integer $
 
 ## Sources
 
-- Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 1 (`fq-2024-luca09162024rev2-lem-1`), quoted from Hardy and Wright, Theorems 323, 328 and 329.
+- Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Lemma 1, quoted from Hardy and Wright, Theorems 323, 328 and 329.

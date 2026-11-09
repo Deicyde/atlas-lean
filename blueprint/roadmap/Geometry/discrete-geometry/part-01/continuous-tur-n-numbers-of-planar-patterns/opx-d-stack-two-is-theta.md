@@ -8,4 +8,4 @@ $\mathrm{opx}(n, Q_{P,2,c}, 3) = \Theta(n^{5/2})$ as the real number $n$ tends t
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.17 (`integers-2024-A1-cor-5-17`), first sentence.
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.17, first sentence.

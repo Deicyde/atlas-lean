@@ -8,4 +8,4 @@ $R_9(2 \cdot 4^{s-1} + N_s) \equiv 0 \pmod 3$.
 
 ## Sources
 
-- S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 5 (`integers-2024-A39-cor-5`).
+- S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 5.

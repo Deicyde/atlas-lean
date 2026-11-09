@@ -8,4 +8,4 @@ $T = S \cup \{2n, -2n\}$.
 
 ## Sources
 
-- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 5.2 I, quoting F. M. Dekking, *How to add two numbers in base phi* (`fq-2024-dekking11102023-thm-5.2`).
+- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 5.2 I, quoting F. M. Dekking, *How to add two numbers in base phi*.

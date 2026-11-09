@@ -11,4 +11,4 @@ as the natural number $x$ tends to infinity.
 
 ## Sources
 
-- Hùng Việt Chu, Nathan McNew, Steven J. Miller, Victor Xu, and Sean Zhang, *When Sets Can and Cannot Have Sum-Dominant Subsets*, <https://cs.uwaterloo.ca/journals/JIS/VOL21/Miller/miller8.tex>. Concept `jis_sem_c814202d5e6a0edd6fed8bb5`; statement `jis_43e1aedfa0e84467b1f1765e`.
+- Hùng Việt Chu, Nathan McNew, Steven J. Miller, Victor Xu, and Sean Zhang, *When Sets Can and Cannot Have Sum-Dominant Subsets*, <https://cs.uwaterloo.ca/journals/JIS/VOL21/Miller/miller8.tex>.

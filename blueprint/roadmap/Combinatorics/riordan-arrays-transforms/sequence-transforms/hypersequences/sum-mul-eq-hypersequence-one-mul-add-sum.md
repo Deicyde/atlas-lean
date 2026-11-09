@@ -8,4 +8,4 @@ $$\sum_{k=0}^{n} a_k b_k = a^{(1)}_n b_{n+1} + \sum_{k=0}^{n} a^{(1)}_k (b_k - b
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 7 (`integers-2024-A70-thm-7`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 7.

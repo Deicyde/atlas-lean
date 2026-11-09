@@ -7,4 +7,4 @@ $C^M_{1,s} = (9^{s-1} - 1 + X_1)/\bigl(3(X_1 + 3 \cdot 9^{s-2} - 1)\bigr)$.
 
 ## Sources
 
-- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Corollary 4.10 (`fq-2024-hendel08232024rev2-cor-4.10`).
+- Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Corollary 4.10.

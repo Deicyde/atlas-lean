@@ -14,4 +14,4 @@ so $p \ge 5$ is assumed. The paper's unused quantifier $\beta$ is dropped.
 
 ## Sources
 
-- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 6 (`integers-2026-A118-thm-6`).
+- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 6.

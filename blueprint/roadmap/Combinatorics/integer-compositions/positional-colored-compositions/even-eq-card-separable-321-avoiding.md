@@ -10,4 +10,4 @@ At $k = 0$ both sides equal $1$.
 
 ## Sources
 
-- Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 7 (`integers-2026-A49-thm-7`).
+- Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 7.

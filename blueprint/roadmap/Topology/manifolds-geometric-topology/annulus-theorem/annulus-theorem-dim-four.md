@@ -10,4 +10,4 @@ $S^3 \times [0, 1]$.
 
 ## Sources
 
-- F. Quinn, *Ends of maps III: dimensions 4 and 5*, J. Differential Geom. 17 (1982), building on M. H. Freedman, *The topology of four-dimensional manifolds*, J. Differential Geom. 17 (1982). Via leanprover/lean-eval@38361be, problem `annulus_theorem_dim_four`.
+- F. Quinn, *Ends of maps III: dimensions 4 and 5*, J. Differential Geom. 17 (1982), building on M. H. Freedman, *The topology of four-dimensional manifolds*, J. Differential Geom. 17 (1982). Problem `annulus_theorem_dim_four` of the lean-eval benchmark.

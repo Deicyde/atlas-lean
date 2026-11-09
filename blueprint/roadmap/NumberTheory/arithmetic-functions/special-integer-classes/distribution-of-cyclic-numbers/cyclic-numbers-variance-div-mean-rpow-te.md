@@ -9,4 +9,4 @@ and to $0$ if $b > 2$.
 
 ## Sources
 
-- John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Theorem 1 (`integers-2025-A23-thm-1`).
+- John M. Campbell and Joel E. Cohen, *Cyclic Numbers and Gaps*, INTEGERS 25 (2025), Article A23, Theorem 1.

@@ -7,4 +7,4 @@ $(L_{k,n}^{1/n})^2 \le L_{k,n-1}^{1/(n-1)} L_{k,n+1}^{1/(n+1)}$ for every intege
 
 ## Sources
 
-- Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 3 (`integers-2024-A82-thm-3`).
+- Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 3.

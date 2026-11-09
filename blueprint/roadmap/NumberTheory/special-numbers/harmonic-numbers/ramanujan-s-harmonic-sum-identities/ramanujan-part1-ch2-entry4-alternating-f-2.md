@@ -10,4 +10,4 @@ $$
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, Entry 4, formula (4.1), printed p. 28 / PDF p. 38. Proves `Wanted` entry `ramanujan_part1_ch2_entry4_alternating_form`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, Entry 4, formula (4.1), printed p. 28 / PDF p. 38.

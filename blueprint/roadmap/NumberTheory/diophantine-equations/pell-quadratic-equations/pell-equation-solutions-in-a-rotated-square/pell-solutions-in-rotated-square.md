@@ -15,4 +15,4 @@ $2 + 4\lfloor t \rfloor$ elements.
 
 ## Sources
 
-- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Theorem 2.1 (`integers-2025-A112-thm-2-1`).
+- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Theorem 2.1.

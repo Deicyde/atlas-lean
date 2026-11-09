@@ -5,4 +5,4 @@ the complex plane whose length, the total variation of $\gamma$ on $[0, 1]$, equ
 
 ## Sources
 
-- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.
+- Optimization Problems, constant 13a; source-specific interval-arc adaptation.

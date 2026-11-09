@@ -15,4 +15,4 @@ where the differences $k - 1$, $n - 1$ and $n - k$ of natural numbers are trunca
 
 ## Sources
 
-- Walaa Asakly and Noor Kezil, *Counting Symmetric and Non-Symmetric Peaks in a Set Partition*, INTEGERS 26 (2026), Article A8, Corollary 2 (`integers-2026-A8-cor-2`).
+- Walaa Asakly and Noor Kezil, *Counting Symmetric and Non-Symmetric Peaks in a Set Partition*, INTEGERS 26 (2026), Article A8, Corollary 2.

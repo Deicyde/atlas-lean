@@ -6,4 +6,4 @@ $(\sum_{k=1}^{n} x_k^\alpha)^{1/\alpha} \le (\sum_{k=1}^{n} x_k^\beta)^{1/\beta}
 
 ## Sources
 
-- Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Proposition 1 (`integers-2026-A101-prop-1`).
+- Sanja Kovač and Josip Pečarić, *Power Sum Inequalities for Monotone Sequences with Applications to Fibonacci Numbers*, INTEGERS 26 (2026), Article A101, Proposition 1.

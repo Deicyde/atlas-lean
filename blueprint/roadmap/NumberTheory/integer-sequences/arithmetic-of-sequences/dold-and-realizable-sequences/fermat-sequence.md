@@ -10,4 +10,4 @@ summing over the empty set of divisors of $0$.
 
 ## Sources
 
-- B.-S. Du, S.-S. Huang, and M.-C. Li, *Newton, Fermat, and Exactly Realizable Sequences*, Journal of Integer Sequences 8 (2005), lines 181–190, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Huang/huang11.tex>. Source SHA-256: `e280997f941eb46d98b411cb2d2ff593d284837371b6565cd4efdb1cdaabffdb`. Concept `jis_term_a7b36e26421828cebf9c3d39`; semantic ID `jis_sem_2f7e63717e4d696b6c09cf8f`.
+- B.-S. Du, S.-S. Huang, and M.-C. Li, *Newton, Fermat, and Exactly Realizable Sequences*, Journal of Integer Sequences 8 (2005), lines 181–190, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Huang/huang11.tex>.

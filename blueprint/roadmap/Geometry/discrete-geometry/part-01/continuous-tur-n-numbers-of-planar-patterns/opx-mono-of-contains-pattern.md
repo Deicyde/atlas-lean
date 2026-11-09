@@ -6,4 +6,4 @@ point sets, then $\operatorname{opx}(n, P) \le \operatorname{opx}(n, Q)$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.3 (`integers-2024-A1-lem-2-3`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.3.

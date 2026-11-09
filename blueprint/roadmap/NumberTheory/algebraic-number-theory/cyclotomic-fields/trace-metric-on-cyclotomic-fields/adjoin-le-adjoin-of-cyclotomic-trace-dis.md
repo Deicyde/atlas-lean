@@ -14,4 +14,4 @@ conjugates of $\alpha$ over $\mathbb{Q}$ other than $\alpha$ itself.
 
 ## Sources
 
-- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 4 (`integers-2025-A10-thm-4`).
+- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 4.

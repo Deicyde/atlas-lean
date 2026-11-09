@@ -9,4 +9,4 @@ The source assumes $m$, $a$, $d$ positive.
 
 ## Sources
 
-- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Lemma 1 (`integers-2026-A92-lem-1`).
+- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Lemma 1.

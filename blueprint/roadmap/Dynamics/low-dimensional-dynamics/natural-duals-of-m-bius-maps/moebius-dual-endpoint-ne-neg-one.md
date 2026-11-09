@@ -10,4 +10,4 @@ Equality would force $\delta = -1$.
 
 ## Sources
 
-- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 2 (`integers-2024-A17-lem-2`).
+- Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 2.

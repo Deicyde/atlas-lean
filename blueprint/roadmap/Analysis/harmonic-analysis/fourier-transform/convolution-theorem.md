@@ -13,4 +13,4 @@ $\mu$ and multiplicativity of $e$, following Stein--Shakarchi, Ch. 5, Prop. 1.11
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Convolution_theorem (statement `convolution-theorem-s1`).
+- https://en.wikipedia.org/wiki/Convolution_theorem.

@@ -9,4 +9,4 @@ $j_{k,n}^2 - (k^2 + 8) J_{k,n}^2 = (-2)^{n+2}$.
 
 ## Sources
 
-- Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Lemma 1 (`integers-2025-A74-lem-1`).
+- Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Lemma 1.

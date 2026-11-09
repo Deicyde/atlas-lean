@@ -7,4 +7,4 @@ measure on $\mathbb{T}$.
 
 ## Sources
 
-- W. Rudin, Real and Complex Analysis; N. K. Nikolski, Operators, Functions, and Systems: An Easy Reading, Volume I: Hardy, Hankel, and Toeplitz. Via leanprover/lean-eval@38361be, problem `riesz_brothers_theorem`.
+- W. Rudin, Real and Complex Analysis; N. K. Nikolski, Operators, Functions, and Systems: An Easy Reading, Volume I: Hardy, Hankel, and Toeplitz. Problem `riesz_brothers_theorem` of the lean-eval benchmark.

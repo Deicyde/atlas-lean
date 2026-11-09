@@ -14,4 +14,4 @@ $$\frac{h_{n+p}(j+1)}{h_{n+p}(j)} \le \frac{h_n(p+j+1)}{h_n(p+j)} \cdot \frac{h_
 
 ## Sources
 
-- René Gy, *On Certain Products of Three Stirling Numbers*, INTEGERS 26 (2026), Article A108, Theorem 3.1 (`integers-2026-A108-thm-3-1`).
+- René Gy, *On Certain Products of Three Stirling Numbers*, INTEGERS 26 (2026), Article A108, Theorem 3.1.

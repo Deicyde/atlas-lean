@@ -9,4 +9,4 @@ where $N(t)$ is the number of smooth arithmetical structures on the star $CT(1, 
 
 ## Sources
 
-- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 3 (`integers-2025-A82-cor-3`).
+- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 3.

@@ -6,4 +6,4 @@ $2^a < p \le 2^{a+1} - 1$.
 
 ## Sources
 
-- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma (label `Classificationofprimitivenondeficientwhenkis2`), first part.
+- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma, first part.

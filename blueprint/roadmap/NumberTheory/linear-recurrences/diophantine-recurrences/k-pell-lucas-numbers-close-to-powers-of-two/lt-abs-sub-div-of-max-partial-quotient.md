@@ -12,4 +12,4 @@ for all integers $x$ and $y$ with $0 < x < M$.
 
 ## Sources
 
-- Mohamadou Bachabi, Bakary Kourouma, and Alain Togbé, *On k-Pell-Lucas Numbers Close to a Power of 2*, INTEGERS 25 (2025), Article A67, Lemma 5 (`integers-2025-A67-lem-5`).
+- Mohamadou Bachabi, Bakary Kourouma, and Alain Togbé, *On k-Pell-Lucas Numbers Close to a Power of 2*, INTEGERS 25 (2025), Article A67, Lemma 5.

@@ -7,4 +7,4 @@ $P$ and $Q$ are both odd. Then $U_m$ and $U_{2m}/P$ are odd, and each of them is
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 4.10 (`integers-2025-A107-lem-4-10`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 4.10.

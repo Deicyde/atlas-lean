@@ -8,4 +8,4 @@ set $E \subseteq \{1, \dots, n-2\}$ equals $0$.
 
 ## Sources
 
-- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Proposition 3.1 (`fq-2024-chu08302024rev-prop-3.1`).
+- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Proposition 3.1.

@@ -10,4 +10,4 @@ or $p = 8191$.
 
 ## Sources
 
-- Jon Grantham, *No New Goormaghtigh Primes up to 10^700*, INTEGERS 24 (2024), Article A98, Section 2, discussion following Theorem 1 (`integers-2024-A98-thm-1`).
+- Jon Grantham, *No New Goormaghtigh Primes up to 10^700*, INTEGERS 24 (2024), Article A98, Section 2, discussion following Theorem 1.

@@ -13,4 +13,4 @@ $$
 
 ## Sources
 
-- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Proposition 3.1 (`integers-2024-A3-prop-3-1`).
+- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Proposition 3.1.

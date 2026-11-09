@@ -10,4 +10,4 @@ $(241\, n \log\log k / \log k,\ n]$.
 
 ## Sources
 
-- H. M. Bui, S. Naprienko, K. Pratt, A. Zaharescu, Binomial coefficients with divisors avoiding an interval, arXiv preprint (2026), arXiv:2605.21221, https://arxiv.org/abs/2605.21221. Moved from `OpenConjectures/NumberTheory/BinomialMidrangeDivisor`.
+- H. M. Bui, S. Naprienko, K. Pratt, A. Zaharescu, Binomial coefficients with divisors avoiding an interval, arXiv preprint (2026), arXiv:2605.21221, https://arxiv.org/abs/2605.21221.

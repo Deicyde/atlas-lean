@@ -7,4 +7,4 @@ $S$, that is, $ua + vb + wc \ne t$ for every plane in $S$.
 
 ## Sources
 
-- Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Corollary 2 (`integers-2026-A1-cor-2`); the proof text appended to the extracted statement is not part of the claim.
+- Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Corollary 2; the proof text appended to the extracted statement is not part of the claim.

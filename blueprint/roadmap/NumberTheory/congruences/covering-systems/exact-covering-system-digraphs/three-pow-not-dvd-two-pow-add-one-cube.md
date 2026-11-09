@@ -9,4 +9,4 @@ does not divide $2^{3k} + 1$.
 
 ## Sources
 
-- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Lemma 3 (`integers-2026-A107-lem-3`).
+- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Lemma 3.

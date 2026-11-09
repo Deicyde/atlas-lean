@@ -10,4 +10,4 @@ proves the nesting, sign, and exact halving invariants from Burden and Faires, S
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Numerical Analysis` / `Iterative methods of solving systems of real and vector-valued equations`, entry `bisection method` (unmapped); R. L. Burden and J. D. Faires, Numerical Analysis, 10th ed., Section 2.1; stable ref https://en.wikipedia.org/wiki/Bisection_method.
+- R. L. Burden and J. D. Faires, Numerical Analysis, 10th ed., Section 2.1; stable ref https://en.wikipedia.org/wiki/Bisection_method.

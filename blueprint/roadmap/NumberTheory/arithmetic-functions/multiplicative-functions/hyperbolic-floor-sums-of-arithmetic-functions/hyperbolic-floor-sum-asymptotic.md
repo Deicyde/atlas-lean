@@ -21,4 +21,4 @@ which controls it only for nonnegative $f$.
 
 ## Sources
 
-- Meselem Karras and Mihoub Bouderbala, *Hyperbolic Summation Involving Certain Arithmetic Functions and the Integer Part Function*, INTEGERS 26 (2026), Article A37, Theorem 1 (`integers-2026-A37-thm-1`).
+- Meselem Karras and Mihoub Bouderbala, *Hyperbolic Summation Involving Certain Arithmetic Functions and the Integer Part Function*, INTEGERS 26 (2026), Article A37, Theorem 1.

@@ -7,4 +7,4 @@ $A_j = \max \{A_i \mid 1 \le i \le m\}$, then $A_i \le A_j$ for every $i \ge 1$.
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 1 (`integers-2026-A113-lem-1`).
+- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 1.

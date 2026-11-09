@@ -15,4 +15,4 @@ so each entry of the two products is the finite sum above.
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Theorem 2 (`integers-2026-A36-thm-2`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Theorem 2.

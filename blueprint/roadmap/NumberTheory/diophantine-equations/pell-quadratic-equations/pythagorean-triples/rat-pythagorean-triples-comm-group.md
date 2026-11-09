@@ -11,4 +11,4 @@ commutative group under $\star$ with identity $(1, 0, 1)$.
 
 ## Sources
 
-- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 3 (`integers-2024-A5-thm-3`).
+- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 3.

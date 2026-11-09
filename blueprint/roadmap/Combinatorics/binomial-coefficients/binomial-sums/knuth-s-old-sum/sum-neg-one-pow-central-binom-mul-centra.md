@@ -6,4 +6,4 @@ $2^n \binom{n}{n/2}$ when $n$ is even and $0$ when $n$ is odd.
 
 ## Sources
 
-- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 3 (`integers-2026-A19-thm-3`).
+- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 3.

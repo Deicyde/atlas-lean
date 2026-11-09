@@ -10,4 +10,4 @@ $3B = 2^{l/2 - 1} - (-1)^{l/2 - 1}$.
 
 ## Sources
 
-- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 4 (`integers-2026-A69-thm-4`).
+- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 4.

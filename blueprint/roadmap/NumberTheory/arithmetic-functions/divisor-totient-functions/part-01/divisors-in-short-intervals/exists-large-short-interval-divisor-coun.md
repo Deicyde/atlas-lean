@@ -10,4 +10,4 @@ for all $n \ge 1$ is at least $1$; that weaker statement already follows from $n
 
 ## Sources
 
-- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 4 (`integers-2026-A115-prop-4`).
+- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 4.

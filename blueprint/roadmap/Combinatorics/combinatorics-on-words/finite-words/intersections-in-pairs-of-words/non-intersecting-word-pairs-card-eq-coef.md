@@ -14,4 +14,4 @@ $N = \sum_{j=1}^{k-1} \binom{k}{j} \, j! \, S(n, j) \,
 
 ## Sources
 
-- Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Theorem 1 (`integers-2024-A107-thm-1`).
+- Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Theorem 1.

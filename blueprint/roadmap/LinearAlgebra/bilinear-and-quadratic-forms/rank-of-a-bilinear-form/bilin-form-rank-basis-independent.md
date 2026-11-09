@@ -12,4 +12,4 @@ rank is at most the other, hence they are equal.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Bilinear and Quadratic Forms Over a Vector Space / Bilinear forms / rank of a bilinear form; N. Bourbaki, Algebra I, Chapters 1-3, Springer (1989), Chapter III.
+- N. Bourbaki, Algebra I, Chapters 1-3, Springer (1989), Chapter III.

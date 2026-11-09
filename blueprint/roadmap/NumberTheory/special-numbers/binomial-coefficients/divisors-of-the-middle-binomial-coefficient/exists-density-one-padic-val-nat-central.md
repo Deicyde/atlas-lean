@@ -10,4 +10,4 @@ $3 < p < 2 \log m$.
 
 ## Sources
 
-- Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 1 (`integers-2026-A47-lem-1`).
+- Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 1.

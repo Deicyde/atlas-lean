@@ -8,4 +8,4 @@ $$\int_\alpha^s \Bigl(\int_\alpha^t f(\tau)\,d\tau\Bigr)\,dt = \int_\alpha^s (s 
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), `benchmark/level1/ma_proofbench_l1_44.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_44`.

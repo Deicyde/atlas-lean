@@ -10,4 +10,4 @@ with $c = \min(x_1, f_1(w)) \oplus \cdots \oplus \min(x_m, f_m(w)) \oplus w$.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 4 (`integers-2025-G3-lem-4`).
+- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 4.

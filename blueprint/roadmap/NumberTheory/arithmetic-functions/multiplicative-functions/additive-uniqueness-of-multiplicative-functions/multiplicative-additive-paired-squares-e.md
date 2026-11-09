@@ -11,4 +11,4 @@ integer $n$.
 
 ## Sources
 
-- Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Theorem 1 (`integers-2026-A121-thm-1`).
+- Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Theorem 1.

@@ -7,4 +7,4 @@ $C x (\log \log x / \log x)^{1/(p-1)}$.
 
 ## Sources
 
-- Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Lemma 3 (`integers-2024-A65-lem-3`).
+- Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Lemma 3.

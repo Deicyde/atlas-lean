@@ -14,4 +14,4 @@ $\varphi$.
 
 ## Sources
 
-- A. Baker, G. Wüstholz, Logarithmic forms and group varieties, J. reine angew. Math. 442 (1993), 19-62. Via leanprover/lean-eval@38361be, problem `bakerWustholz_linearForms_logs`.
+- A. Baker, G. Wüstholz, Logarithmic forms and group varieties, J. reine angew. Math. 442 (1993), 19-62. Problem `bakerWustholz_linearForms_logs` of the lean-eval benchmark.

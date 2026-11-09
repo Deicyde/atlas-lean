@@ -8,4 +8,4 @@ the integers $k$ with $k(3k+1)/2 \le n$.
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 7 (`integers-2026-A60-thm-7`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 7.

@@ -16,4 +16,4 @@ $1 - O_{-1} = 0$, so it is dropped here.
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 7 (`integers-2026-A109-prop-7`).
+- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 7.

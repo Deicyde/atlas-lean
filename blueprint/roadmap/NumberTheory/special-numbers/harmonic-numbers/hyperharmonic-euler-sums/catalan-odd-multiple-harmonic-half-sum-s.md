@@ -13,4 +13,4 @@ The terms with $n < k$ vanish, since $O_n(k) = 0$ for $n < k$.
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 8 (`integers-2026-A81-cor-8`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 8.

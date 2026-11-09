@@ -9,4 +9,4 @@ This is Theorem 182 of Hardy and Wright.
 
 ## Sources
 
-- Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 10 (`integers-2025-A70-thm-10`).
+- Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Theorem 10.

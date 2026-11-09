@@ -12,4 +12,4 @@ with both sides computed in the integers.
 
 ## Sources
 
-- B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 1 (`integers-2024-A88-thm-1`), quoting Holt's earlier paper; restated as Theorem 1 of Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13 (`integers-2025-A13-thm-1`).
+- B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 1, quoting Holt's earlier paper; restated as Theorem 1 of Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13.

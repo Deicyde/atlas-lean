@@ -17,4 +17,4 @@ Both recurrences fail at $n = 2$.
 
 ## Sources
 
-- Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Corollary 1 (`integers-2026-A64-cor-1`).
+- Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Corollary 1.

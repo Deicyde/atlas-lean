@@ -8,4 +8,4 @@ support intervals all lie in $[0, b]$, one of which has support interval $[a, b]
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 9 (`integers-2025-A25-lem-9`; arXiv:2308.12872v1, Section 3.3).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 9 (arXiv:2308.12872v1, Section 3.3).

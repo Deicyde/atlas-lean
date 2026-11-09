@@ -17,4 +17,4 @@ $$
 
 ## Sources
 
-- Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Lemma 1 (`integers-2025-A52-lem-1`).
+- Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Lemma 1.

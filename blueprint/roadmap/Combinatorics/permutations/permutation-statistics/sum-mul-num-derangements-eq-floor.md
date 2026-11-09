@@ -6,4 +6,4 @@ derangements of $n$ objects.
 
 ## Sources
 
-- Jean-Christophe Pain, *A Sum Rule for Derangements*, INTEGERS 25 (2025), Article A84, Theorem 1 (`integers-2025-A84-thm-1`).
+- Jean-Christophe Pain, *A Sum Rule for Derangements*, INTEGERS 25 (2025), Article A84, Theorem 1.

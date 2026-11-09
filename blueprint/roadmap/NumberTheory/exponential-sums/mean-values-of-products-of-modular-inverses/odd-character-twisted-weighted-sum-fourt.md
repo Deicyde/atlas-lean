@@ -12,4 +12,4 @@ where $\chi$ runs over the complex Dirichlet characters modulo $q$ with $\chi(-1
 
 ## Sources
 
-- O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Lemma 1 (`integers-2024-A33-lem-1`, journal PDF p. 4), quoting Z. Xu and W. Zhang, *Fourth power mean of character sums*, Acta Arith. 135 (2008), Lemma 9.
+- O. Bordellès and L. Tóth, *Mean Values of the Product of an Integer and Its Modular Inverse*, INTEGERS 24 (2024), Article A33, Lemma 1 (journal PDF p. 4), quoting Z. Xu and W. Zhang, *Fourth power mean of character sums*, Acta Arith. 135 (2008), Lemma 9.

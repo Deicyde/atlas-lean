@@ -11,4 +11,4 @@ $n \ge 234057667276344608$, and $M(n) < B_\beta(n)$ for every integer $n \ge 644
 
 ## Sources
 
-- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Theorem 1 (`integers-2025-A58-thm-1`).
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Theorem 1.

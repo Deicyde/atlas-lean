@@ -9,4 +9,4 @@ positive integers $n$ with $\gcd(n, Q) = 1$ and $n \mid U_n$.
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 4.2 (`integers-2024-A36-thm-4-2`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 4.2.

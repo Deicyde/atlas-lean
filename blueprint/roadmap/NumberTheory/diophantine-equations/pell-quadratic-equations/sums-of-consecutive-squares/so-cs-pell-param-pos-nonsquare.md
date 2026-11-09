@@ -7,4 +7,4 @@ perfect square.
 
 ## Sources
 
-- Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Corollary 1 (`integers-2026-A1-cor-1`), verified against arXiv:2411.08398 (the formula is garbled in the statement extraction).
+- Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Corollary 1, verified against arXiv:2411.08398 (the formula is garbled in the statement extraction).

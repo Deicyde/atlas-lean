@@ -6,4 +6,4 @@ many strings of $n$ positive integers that have a nontrivial symmetry.
 
 ## Sources
 
-- Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Theorem 3 (`integers-2025-A89-thm-3`).
+- Shreyas Singh, Zhuo Zhang and AJ Hildebrand, *An Elementary Characterization of the Gauss-Kuzmin Measure in the Theory of Continued Fractions*, INTEGERS 25 (2025), Article A89, Theorem 3.

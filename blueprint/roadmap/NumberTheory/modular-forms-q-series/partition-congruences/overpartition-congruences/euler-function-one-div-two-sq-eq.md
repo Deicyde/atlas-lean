@@ -11,4 +11,4 @@ $$
 
 ## Sources
 
-- Xue Liang, *Congruences Modulo 512 for the Overpartition Function*, INTEGERS 25 (2025), Article A76, Lemma 1, identity (11) (`integers-2025-A76-lem-1`).
+- Xue Liang, *Congruences Modulo 512 for the Overpartition Function*, INTEGERS 25 (2025), Article A76, Lemma 1, identity (11).

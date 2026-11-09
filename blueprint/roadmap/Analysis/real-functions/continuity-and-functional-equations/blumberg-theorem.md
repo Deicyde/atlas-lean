@@ -5,4 +5,4 @@ set $D \subseteq \mathbb{R}$ such that the restriction of $f$ to $D$ is continuo
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Blumberg_theorem, statement blumberg-s1.
+- https://en.wikipedia.org/wiki/Blumberg_theorem.

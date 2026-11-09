@@ -29,4 +29,4 @@ followed by the arctangent power series, evaluate it in terms of $G$.
 
 ## Sources
 
-- Yasuyuki Kachi and Pavlos Tzermias, "Infinite Products Involving ζ(3) and Catalan's Constant," Journal of Integer Sequences 15 (2012), Article 12.9.4, Proposition (label catalan), equations (labels catalani, catalanii, catalaniii), lines 147–165, https://cs.uwaterloo.ca/journals/JIS/VOL15/Tzermias/tzermias2.tex
+- Yasuyuki Kachi and Pavlos Tzermias, "Infinite Products Involving ζ(3) and Catalan's Constant," Journal of Integer Sequences 15 (2012), Article 12.9.4, Proposition, equations, lines 147–165, https://cs.uwaterloo.ca/journals/JIS/VOL15/Tzermias/tzermias2.tex

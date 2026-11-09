@@ -9,4 +9,4 @@ $\operatorname{ord}(g_i)$ is the order of $g_i$.
 
 ## Sources
 
-- Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 3 (`integers-2024-A93-thm-3`).
+- Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 3.

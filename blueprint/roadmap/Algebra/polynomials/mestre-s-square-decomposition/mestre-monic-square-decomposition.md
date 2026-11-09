@@ -7,4 +7,4 @@ most $d$ (possibly $R = 0$), and the pair $(Q, R)$ is unique.
 
 ## Sources
 
-- Arvind Suresh, "Constructing curves of high rank via composite polynomials", arXiv:2102.02113v2, <https://arxiv.org/abs/2102.02113>, TeX lines 1158-1179, Lemma `lem:sqroot`; there coefficient comparison induces a `k`-algebra isomorphism. Follows from `mestre_monic_square_decomposition_general`; the hypothesis `hd` is unused and keeps the source's shape. Proves `Wanted` entry `mestre_monic_square_decomposition`.
+- Arvind Suresh, "Constructing curves of high rank via composite polynomials", arXiv:2102.02113v2, <https://arxiv.org/abs/2102.02113>, TeX lines 1158-1179, Lemma `lem:sqroot`; there coefficient comparison induces a `k`-algebra isomorphism. Follows from `mestre_monic_square_decomposition_general`; the hypothesis `hd` is unused and keeps the source's shape.

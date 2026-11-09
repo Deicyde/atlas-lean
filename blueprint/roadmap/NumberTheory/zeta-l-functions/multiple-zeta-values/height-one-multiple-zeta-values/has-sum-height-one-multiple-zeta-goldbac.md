@@ -12,4 +12,4 @@ sum $\frac{H_{k,k}}{k} - \frac{1}{2 \, k! \, k}$.
 
 ## Sources
 
-- Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Theorem 2 (`integers-2024-A43-thm-2`).
+- Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Theorem 2.

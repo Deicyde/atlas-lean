@@ -13,4 +13,4 @@ two one-sided bounds, as the two-sided bound requires.
 
 ## Sources
 
-- Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Theorem 2 (`integers-2026-A46-thm-2`).
+- Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Theorem 2.

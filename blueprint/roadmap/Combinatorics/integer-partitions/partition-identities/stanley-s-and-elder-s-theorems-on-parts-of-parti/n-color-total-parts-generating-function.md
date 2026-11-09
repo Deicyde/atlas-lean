@@ -15,4 +15,4 @@ $$\sum_{m \ge 1} \frac{m q^m}{1 + q^m} =
 
 ## Sources
 
-- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 3 (`integers-2025-A94-thm-3`).
+- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 3.

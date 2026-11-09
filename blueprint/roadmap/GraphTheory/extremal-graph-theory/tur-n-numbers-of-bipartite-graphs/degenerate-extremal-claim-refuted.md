@@ -12,4 +12,4 @@ $\varepsilon > 0$; erdosproblems.com/146 records the conjecture as disproved.
 
 ## Sources
 
-- T. F. Bloom, Erdős Problem #146, erdosproblems.com (live page, LaTeX source and forum threads read 2026-10-22), https://www.erdosproblems.com/146; OpenAI, Ten proofs (section disproving the Erdős degeneracy conjecture), 2026, https://cdn.openai.com/pdf/ten-proofs-oai.pdf. Moved from `OpenConjectures/Combinatorics/ErdosProblem146`.
+- T. F. Bloom, Erdős Problem #146, erdosproblems.com (live page, LaTeX source and forum threads read 2026-10-22), https://www.erdosproblems.com/146; OpenAI, Ten proofs (section disproving the Erdős degeneracy conjecture), 2026, https://cdn.openai.com/pdf/ten-proofs-oai.pdf.

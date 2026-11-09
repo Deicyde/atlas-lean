@@ -10,4 +10,4 @@ $z = p(x + x^2/d)/(4x - p)$.
 
 ## Sources
 
-- Kyle Bradford, *Elementary Patterns from the Erdős-Straus Conjecture*, INTEGERS 25 (2025), Article A54, Proposition 4 (`integers-2025-A54-prop-4`).
+- Kyle Bradford, *Elementary Patterns from the Erdős-Straus Conjecture*, INTEGERS 25 (2025), Article A54, Proposition 4.

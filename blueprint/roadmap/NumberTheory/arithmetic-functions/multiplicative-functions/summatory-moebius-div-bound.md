@@ -14,4 +14,4 @@ equation (e4).
 
 ## Sources
 
-- Olivier Bordellès, "Some Explicit Estimates for the Möbius Function," Journal of Integer Sequences 18 (2015), Article 15.11.1, Theorem (label t1), items (a) and (b), lines 118–127, https://cs.uwaterloo.ca/journals/JIS/VOL18/Bordelles2/bordelles21.tex
+- Olivier Bordellès, "Some Explicit Estimates for the Möbius Function," Journal of Integer Sequences 18 (2015), Article 15.11.1, Theorem, items (a) and (b), lines 118–127, https://cs.uwaterloo.ca/journals/JIS/VOL18/Bordelles2/bordelles21.tex

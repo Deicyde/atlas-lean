@@ -16,4 +16,4 @@ admitted `k = 0` fails under any reading (with `R^0_{-1} := 1` the second bound 
 
 ## Sources
 
-- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 3 (`integers-2026-A95-prop-3`).
+- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 3.

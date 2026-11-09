@@ -10,4 +10,4 @@ $f^*_{\max}(G) \ge 2^{\mu(G)/2}$.
 
 ## Sources
 
-- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Proposition 1 (`integers-2026-A97-prop-1`).
+- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Proposition 1.

@@ -21,4 +21,4 @@ $|x(\varepsilon') - x(\varepsilon)| < \delta$. Indices start at $0$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 13 (`integers-2025-A25-lem-13`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 13.

@@ -7,4 +7,4 @@ packing polynomial on $\hat I(12/7)$.
 
 ## Sources
 
-- Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Example 10 and Figure 3 (`integers-2025-A81-thm-3`).
+- Brandt and Gjaldbæk, *Classification of Quadratic Packing Polynomials on Sectors of R^2*, INTEGERS 25 (2025), Article A81, Example 10 and Figure 3.

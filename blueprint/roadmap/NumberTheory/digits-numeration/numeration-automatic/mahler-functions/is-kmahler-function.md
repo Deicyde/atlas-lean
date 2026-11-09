@@ -9,4 +9,4 @@ $$\sum_{i=0}^{d} a_i(z)\, F\bigl(z^{k^i}\bigr) = 0.$$
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex (concept `jis_sem_5181d154d12c87e1c5d03365`, required clause from statement `jis_e5b3733b8ba6a96c630ed094`).
+- https://cs.uwaterloo.ca/journals/JIS/VOL16/Bell/bell2.tex.

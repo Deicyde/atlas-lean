@@ -12,4 +12,4 @@ $k = 1$ the series converges only conditionally.
 
 ## Sources
 
-- Jan W. H. Swanepoel, *A Short Simple Probabilistic Proof of a Well Known Identity and the Derivation of Related New Identities Involving the Bernoulli Numbers and the Euler Numbers*, INTEGERS 25 (2025), Article A50, Proposition 4 (`integers-2025-A50-prop-4`), quoting its reference [18].
+- Jan W. H. Swanepoel, *A Short Simple Probabilistic Proof of a Well Known Identity and the Derivation of Related New Identities Involving the Bernoulli Numbers and the Euler Numbers*, INTEGERS 25 (2025), Article A50, Proposition 4, quoting its reference [18].

@@ -9,4 +9,4 @@ If $p \equiv 3 \pmod 4$, then $f(p + 2) = (p + 2)^2$ and $f((p + 2)^2) = (p + 2)
 
 ## Sources
 
-- Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 2 (`integers-2024-A108-lem-2`).
+- Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 2.

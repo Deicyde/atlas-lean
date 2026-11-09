@@ -18,4 +18,4 @@ $s \neq 1$, assumed in the paper, follows from the representation through $H$.
 
 ## Sources
 
-- Jones and Zvonkin, *A Number-Theoretic Problem Concerning Pseudo-Real Riemann Surfaces*, INTEGERS 25 (2025), Article A75, Theorem 1 (`integers-2025-A75-thm-1`).
+- Jones and Zvonkin, *A Number-Theoretic Problem Concerning Pseudo-Real Riemann Surfaces*, INTEGERS 25 (2025), Article A75, Theorem 1.

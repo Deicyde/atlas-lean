@@ -6,4 +6,4 @@ modulo $m$ equals $1$ if and only if $l = 2$ or $2l \ge m + 1$.
 
 ## Sources
 
-- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 5 (`integers-2025-A62-thm-5`).
+- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 5.

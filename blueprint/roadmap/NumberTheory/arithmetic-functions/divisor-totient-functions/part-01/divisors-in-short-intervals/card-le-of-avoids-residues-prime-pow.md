@@ -14,4 +14,4 @@ $p \in S$ and $p^{\beta_p}$ exactly divides $q$, and $h_p(q) = 0$ otherwise (so 
 
 ## Sources
 
-- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Lemma 3 (`integers-2026-A115-lem-3`).
+- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Lemma 3.

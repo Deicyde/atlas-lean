@@ -14,4 +14,4 @@ first.
 
 ## Sources
 
-- Antonio Greco and Andrea Loi, Radial balanced metrics on the unit disk, arXiv:0803.3711 (2008), https://arxiv.org/abs/0803.3711. Moved from `OpenConjectures/Analysis/HaymanProblem232`.
+- Antonio Greco and Andrea Loi, Radial balanced metrics on the unit disk, arXiv:0803.3711 (2008), https://arxiv.org/abs/0803.3711.

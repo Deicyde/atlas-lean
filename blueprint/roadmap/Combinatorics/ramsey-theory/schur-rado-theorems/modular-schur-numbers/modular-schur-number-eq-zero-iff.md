@@ -7,4 +7,4 @@ $l \equiv 1 \pmod{m}$.
 
 ## Sources
 
-- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 2 (`integers-2025-A62-cor-2`).
+- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 2.

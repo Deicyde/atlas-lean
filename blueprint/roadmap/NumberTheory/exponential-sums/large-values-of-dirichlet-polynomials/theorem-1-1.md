@@ -17,4 +17,4 @@ be false at $T = 1$.
 
 ## Sources
 
-- L. Guth and J. Maynard, `New large value estimates for Dirichlet polynomials`, Annals of Math, 203 (2) 2026. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2026-203-2-LargeValueEstimates.lean Via leanprover/lean-eval@38361be, problem `annals_large_value_estimates`.
+- L. Guth and J. Maynard, `New large value estimates for Dirichlet polynomials`, Annals of Math, 203 (2) 2026. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_large_value_estimates` of the lean-eval benchmark.

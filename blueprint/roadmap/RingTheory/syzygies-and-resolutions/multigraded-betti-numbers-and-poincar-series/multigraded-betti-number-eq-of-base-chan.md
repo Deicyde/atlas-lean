@@ -8,4 +8,4 @@ $\alpha \in \mathbb{Z}^n$ and every homological index $i \in \mathbb{N}$.
 
 ## Sources
 
-- Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), `https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex`, exact lines 866--874. This covers only the fixed-resolution coherence step; independence across resolutions, finite support, Poincaré polynomiality, and Hilbert syzygy are deliberately not claimed here.
+- Benjamin Braun and Brian Davis, “Antichain Simplices,” Journal of Integer Sequences 23 (2020), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Braun/braun4.tex>, exact lines 866--874. This covers only the fixed-resolution coherence step; independence across resolutions, finite support, Poincaré polynomiality, and Hilbert syzygy are deliberately not claimed here.

@@ -13,4 +13,4 @@ $A_m = A_{m-1} + 2A_{m-2}$ for $m \ge 3$.
 
 ## Sources
 
-- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 3 (`integers-2026-A69-thm-3`).
+- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 3.

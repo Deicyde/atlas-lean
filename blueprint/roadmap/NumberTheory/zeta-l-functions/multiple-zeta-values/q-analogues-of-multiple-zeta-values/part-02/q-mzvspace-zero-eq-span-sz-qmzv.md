@@ -10,4 +10,4 @@ $f'$ is the formal derivative of $f$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 3 (`integers-2024-A6-prop-3`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 3.

@@ -19,4 +19,4 @@ them to be polynomials.
 
 ## Sources
 
-- Zakhar Kabluchko, Alexander Marynych, and Henning Sulzbach, "Mode and Edgeworth Expansion for the Ewens Distribution and the Stirling Numbers," Journal of Integer Sequences 19 (2016), Article 16.8.8, Theorem (label `theo:stirling_edgeworth`), lines 207–226 (Ewens probability mass function at lines 143–146), https://cs.uwaterloo.ca/journals/JIS/VOL19/Kabluchko/kabl2.tex
+- Zakhar Kabluchko, Alexander Marynych, and Henning Sulzbach, "Mode and Edgeworth Expansion for the Ewens Distribution and the Stirling Numbers," Journal of Integer Sequences 19 (2016), Article 16.8.8, Theorem, lines 207–226 (Ewens probability mass function at lines 143–146), https://cs.uwaterloo.ca/journals/JIS/VOL19/Kabluchko/kabl2.tex

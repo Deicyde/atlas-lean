@@ -14,4 +14,4 @@ polynomials $p \in S$ with $m_p = 0$ or zero numerators $g_{p,k}$.
 
 ## Sources
 
-- Field theory / `ℂ(X)`-partial fraction decomposition in `docs/undergrad.yaml`; S. Lang, Algebra, rev. 3rd ed., Springer, 2002, Ch. IV, §5 (Partial fractions), p. 187; https://en.wikipedia.org/wiki/Partial_fraction_decomposition#Statement
+- S. Lang, Algebra, rev. 3rd ed., Springer, 2002, Ch. IV, §5 (Partial fractions), p. 187; https://en.wikipedia.org/wiki/Partial_fraction_decomposition#Statement

@@ -6,4 +6,4 @@ $p \equiv c \pmod{d}$ with $p \le C d^{5.2}$.
 
 ## Sources
 
-- Thomas Wright, *Carmichael Numbers with a Prime Number of Prime Factors*, INTEGERS 24 (2024), Article A97, Theorem 4 (`integers-2024-A97-thm-4`), quoting Xylouris.
+- Thomas Wright, *Carmichael Numbers with a Prime Number of Prime Factors*, INTEGERS 24 (2024), Article A97, Theorem 4, quoting Xylouris.

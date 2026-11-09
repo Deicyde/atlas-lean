@@ -6,4 +6,4 @@ $x, y, z$ is $(x, y, z) = (1, 1, 2)$.
 
 ## Sources
 
-- Kalyan Chakraborty and Meenu Sharma, *A Note on Terai's Conjecture Related to Exponential Diophantine Equations*, INTEGERS 26 (2026), Article A67, Theorem 2 (`integers-2026-A67-thm-2`).
+- Kalyan Chakraborty and Meenu Sharma, *A Note on Terai's Conjecture Related to Exponential Diophantine Equations*, INTEGERS 26 (2026), Article A67, Theorem 2.

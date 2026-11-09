@@ -10,4 +10,4 @@ $O$-term.
 
 ## Sources
 
-- Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Corollary 1 (`integers-2024-A65-cor-1`).
+- Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Corollary 1.

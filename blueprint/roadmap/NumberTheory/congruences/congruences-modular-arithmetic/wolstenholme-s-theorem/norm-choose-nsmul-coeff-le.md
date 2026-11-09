@@ -13,4 +13,4 @@ the Tate algebra $B\{t\}$ with the sup norm.
 
 ## Sources
 
-- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Lemma 1 (`integers-2026-A32-lem-1`).
+- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Lemma 1.

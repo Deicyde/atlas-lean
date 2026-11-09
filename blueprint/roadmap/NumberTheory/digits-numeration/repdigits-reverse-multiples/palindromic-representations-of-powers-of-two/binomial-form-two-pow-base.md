@@ -7,4 +7,4 @@ $b = 2^x - 1$ for some natural number $x \le n$, and $\alpha = 2^i$ for some nat
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Lemma 2 (`integers-2024-A69-lem-2`).
+- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Lemma 2.

@@ -14,4 +14,4 @@ $0 \le k \le p - 1$ and $k \ne (p-1)/2$.
 
 ## Sources
 
-- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Lemma 3 (`integers-2025-A72-lem-3`).
+- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Lemma 3.

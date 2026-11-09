@@ -8,4 +8,4 @@ $g \in \mathrm{PO}(n,1)$ such that $f(\gamma) = g \gamma g^{-1}$ for all $\gamma
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Mostow_rigidity_theorem#Algebraic_form and Gopal Prasad, *Strong rigidity of ℚ-rank 1 lattices*, Invent. Math. 21 (1973), 255–286. Via leanprover/lean-eval@38361be, problem `mostow_rigidity`.
+- https://en.wikipedia.org/wiki/Mostow_rigidity_theorem#Algebraic_form and Gopal Prasad, *Strong rigidity of ℚ-rank 1 lattices*, Invent. Math. 21 (1973), 255–286. Problem `mostow_rigidity` of the lean-eval benchmark.

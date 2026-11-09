@@ -20,4 +20,4 @@ coefficient.
 
 ## Sources
 
-- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 11 (`integers-2025-A28-thm-11`).
+- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 11.

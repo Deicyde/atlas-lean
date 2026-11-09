@@ -11,4 +11,4 @@ $$\sum_{n=0}^{\infty} \frac{C_n H_{n+1}}{4^n (n+1)} = 8 - \frac{2\pi^2}{3}.$$
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 4, identities (8) and (9) (`integers-2025-A18-thm-4`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 4, identities (8) and (9).

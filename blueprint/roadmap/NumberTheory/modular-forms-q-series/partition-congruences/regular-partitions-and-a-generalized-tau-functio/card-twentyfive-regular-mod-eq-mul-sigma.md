@@ -7,4 +7,4 @@ $R_{25}(n) \equiv (n + 1) \, \sigma(n + 1) \pmod 5$.
 
 ## Sources
 
-- S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 3 (`integers-2024-A39-cor-3`).
+- S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Corollary 3.

@@ -10,4 +10,4 @@ $$n e_n = \sum_{k=1}^{n} (-1)^{k-1} p_k e_{n-k}.$$
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Corollary to Entry 11, printed p. 66 / PDF p. 76. Proves `Wanted` entry `ramanujan_part1_ch3_entry11_corollary_newton_girard`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Corollary to Entry 11, printed p. 66 / PDF p. 76.

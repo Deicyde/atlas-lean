@@ -14,4 +14,4 @@ For example, $T^*_1 = qx$ and $T^*_2 = q^2 x / (1 - q^2 x - q^3 x^2)$.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 10 (`integers-2025-A5-lem-10`).
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 10.

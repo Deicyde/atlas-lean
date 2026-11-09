@@ -25,4 +25,4 @@ polynomials, and $\kappa$ stands for $\kappa(P)$.
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 5, case `h = 2` (`integers-2026-A80-thm-5`).
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 5, case `h = 2`.

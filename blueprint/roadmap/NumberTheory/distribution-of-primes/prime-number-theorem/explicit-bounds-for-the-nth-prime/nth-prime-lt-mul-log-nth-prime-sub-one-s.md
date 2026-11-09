@@ -9,4 +9,4 @@ Here $39071 = \pi(468049)$, where $\pi(x)$ denotes the number of primes at most 
 
 ## Sources
 
-- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 4, inequality (5) (`integers-2025-A58-lem-4`).
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 4, inequality (5).

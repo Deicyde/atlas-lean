@@ -16,4 +16,4 @@ Both sides also vanish for $x < 1$; the source assumes $r \ge 1$ and $x \ge 1$.
 
 ## Sources
 
-- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 3, Equation (20) (`integers-2024-A75-lem-3`).
+- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 3, Equation (20).

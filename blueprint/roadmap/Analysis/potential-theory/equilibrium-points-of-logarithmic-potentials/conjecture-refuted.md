@@ -10,4 +10,4 @@ zeros.
 
 ## Sources
 
-- J. Clunie, A. Eremenko and J. Rossi, On equilibrium points of logarithmic and Newtonian potentials, J. London Math. Soc. (2) 47 (1993), 309-320. Moved from `OpenConjectures/Analysis/LogarithmicPotentialEquilibriumFree`.
+- J. Clunie, A. Eremenko and J. Rossi, On equilibrium points of logarithmic and Newtonian potentials, J. London Math. Soc. (2) 47 (1993), 309-320.

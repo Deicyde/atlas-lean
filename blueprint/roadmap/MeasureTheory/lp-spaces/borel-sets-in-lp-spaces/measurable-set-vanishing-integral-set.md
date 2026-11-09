@@ -7,4 +7,4 @@ $L^p(\mathbb{R})$.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Set functions, measures and integrals with values in abstract spaces), `benchmark/level2/ma_proofbench_l2_25.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Set functions, measures and integrals with values in abstract spaces), problem `ma_proofbench_l2_25`.

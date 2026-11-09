@@ -8,4 +8,4 @@ permutation polynomial of $\mathbb{F}_p$.
 
 ## Sources
 
-- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Corollary 3 (`integers-2024-A12-cor-3`).
+- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Corollary 3.

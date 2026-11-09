@@ -12,4 +12,4 @@ for all $x \in A^{\mathbb{Z}}$ and $k \in \mathbb{Z}$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Curtis%E2%80%93Hedlund%E2%80%93Lyndon_theorem (statement id `curtis-hedlund-s1`). Proves `Wanted` entry `curtis_hedlund_lyndon`.
+- https://en.wikipedia.org/wiki/Curtis%E2%80%93Hedlund%E2%80%93Lyndon_theorem (statement id `curtis-hedlund-s1`).

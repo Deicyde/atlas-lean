@@ -10,4 +10,4 @@ and $c_0 = \gamma$, where $\gamma$ is Euler's constant.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 13. Proves `Wanted` entry `ramanujan_part1_ch7_entry13_bernoullipolyadd`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 13.

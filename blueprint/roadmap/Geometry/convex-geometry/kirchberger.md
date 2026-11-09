@@ -12,5 +12,5 @@ dimension, following the route of Rademacher and Schoenberg (1950) from Kirchber
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Kirchberger%27s_theorem, statement `kirchberger-s1`.
+- https://en.wikipedia.org/wiki/Kirchberger%27s_theorem.
 - Paul Kirchberger, "Über Tchebychefsche Annäherungsmethoden," Mathematische Annalen 57 (1903), 509–540, DOI 10.1007/BF01445182, https://doi.org/10.1007/BF01445182.

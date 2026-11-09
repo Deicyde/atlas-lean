@@ -9,4 +9,4 @@ $A_L(n) \sim A(n)$, $C_R(n) \sim A_R(n)$ and $A_R(n) \sim A(n)$.
 
 ## Sources
 
-- J. E. Cohen, *Conjectures about Primes and Cyclic Numbers*, J. Integer Seq. 28 (2025), Article 25.4.1. Stable source identifiers: concept `jis_sem_804f8a678da69b6636b615f6`; statement `jis_b6b3211114727e0910c9b5bb`, conjecture `conj:Oppermann` and equations `eq:CyclicsInSquaresUsingPollackLeft` and `eq:CyclicsInSquaresUsingPollackRight`.
+- J. E. Cohen, *Conjectures about Primes and Cyclic Numbers*, J. Integer Seq. 28 (2025), Article 25.4.1.

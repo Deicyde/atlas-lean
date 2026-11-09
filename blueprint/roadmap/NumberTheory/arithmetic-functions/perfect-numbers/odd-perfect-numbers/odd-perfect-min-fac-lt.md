@@ -6,4 +6,4 @@ satisfies $p_1 < 3m/7 + 3$.
 
 ## Sources
 
-- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 6 (`integers-2024-A114-lem-6`).
+- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 6.

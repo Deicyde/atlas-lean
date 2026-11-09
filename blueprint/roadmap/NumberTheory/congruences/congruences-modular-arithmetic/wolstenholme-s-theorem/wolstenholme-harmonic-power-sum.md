@@ -14,4 +14,4 @@ Hardy and Wright and was first studied by Leudesdorf.
 
 ## Sources
 
-- Christian Ballot, "On a Congruence of Kimball and Webb Involving Lucas Sequences," Journal of Integer Sequences 17 (2014), Article 14.1.3, Theorem (label thm:L), lines 94–99, https://cs.uwaterloo.ca/journals/JIS/VOL17/Ballot/ballot7.tex
+- Christian Ballot, "On a Congruence of Kimball and Webb Involving Lucas Sequences," Journal of Integer Sequences 17 (2014), Article 14.1.3, Theorem, lines 94–99, https://cs.uwaterloo.ca/journals/JIS/VOL17/Ballot/ballot7.tex

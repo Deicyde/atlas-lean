@@ -7,4 +7,4 @@ $n \equiv i \pmod 2$, $\alpha = 2^i$ and $b = 2^{(n - i)/2} - 1$.
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Theorem 3 (`integers-2024-A69-thm-3`).
+- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Theorem 3.

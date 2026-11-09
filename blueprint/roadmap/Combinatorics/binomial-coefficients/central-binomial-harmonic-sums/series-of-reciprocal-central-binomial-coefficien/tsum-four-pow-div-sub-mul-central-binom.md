@@ -17,4 +17,4 @@ $\binom{2k}{k} \le 4^k$, the series diverges for $x \ge 1$.
 
 ## Sources
 
-- Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Corollary 1 (`integers-2026-A2-cor-1`).
+- Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Corollary 1.

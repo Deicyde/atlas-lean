@@ -13,4 +13,4 @@ $\left(\frac{1}{1 - x}, \frac{x}{(1 - x)^2}\right)$, OEIS A085478.
 
 ## Sources
 
-- statement `jis_9df126595a4035315bd915ac`, concept `jis_sem_455f7ec0e8ec92a0f271843b` (OEIS A085478).
+- OEIS A085478.

@@ -7,4 +7,4 @@ equivalently, the Sophie Germain primes are exactly the primes outside $A$.
 
 ## Sources
 
-- Takashi Agoh, *A Note on Sophie Germain Primes*, INTEGERS 25 (2025), Article A83, Theorem 2.1 (`integers-2025-A83-thm-2-1`).
+- Takashi Agoh, *A Note on Sophie Germain Primes*, INTEGERS 25 (2025), Article A83, Theorem 2.1.

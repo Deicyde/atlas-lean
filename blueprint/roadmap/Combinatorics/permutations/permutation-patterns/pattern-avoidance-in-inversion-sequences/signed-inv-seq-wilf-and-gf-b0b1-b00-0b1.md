@@ -13,4 +13,4 @@ $(1 - x)^2 (1 - 3x + x^2)\,F_{B_1}(x) = 1 - 3x + 2x^2 - x^3$.
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C16) (`integers-2026-A74-thm-3`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C16).

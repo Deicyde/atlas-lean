@@ -8,4 +8,4 @@ $\ell$ and some $i \ge 1$ and $\rho(m)$ is even, then $\pi(m) = 2\rho(m)$.
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 3.2 (`integers-2024-A36-cor-3-2`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 3.2.

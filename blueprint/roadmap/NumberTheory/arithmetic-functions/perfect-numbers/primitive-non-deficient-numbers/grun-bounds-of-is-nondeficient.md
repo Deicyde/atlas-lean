@@ -6,4 +6,4 @@ $p_1 \ge 5$ then $p_1 + 2 \le k$.
 
 ## Sources
 
-- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma (label `Grun`).
+- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma.

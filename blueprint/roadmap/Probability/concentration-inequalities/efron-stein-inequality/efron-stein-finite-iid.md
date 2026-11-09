@@ -17,4 +17,4 @@ differences under independent resampling of each coordinate.
 
 ## Sources
 
-- B. Efron and C. Stein, "The Jackknife Estimate of Variance", Annals of Statistics 9 (1981), DOI 10.1214/aos/1176345462. It follows from `efron_stein_finite_iid_general`; the instance `[DecidableEq α]` is unused and keeps the source's shape. Proves `Wanted` entry `efron_stein_finite_iid`.
+- B. Efron and C. Stein, "The Jackknife Estimate of Variance", Annals of Statistics 9 (1981), DOI 10.1214/aos/1176345462. It follows from `efron_stein_finite_iid_general`; the instance `[DecidableEq α]` is unused and keeps the source's shape.

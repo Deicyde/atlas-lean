@@ -10,4 +10,4 @@ $\sum_{r \ge 1} \zeta_q^{SZ}(\{1\}^r) = \sum_{N \ge 1} p(N) q^N$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Lemma 3 (`integers-2024-A6-lem-3`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Lemma 3.

@@ -9,4 +9,4 @@ The reciprocal is formal; no convergence is assumed.
 
 ## Sources
 
-- László Tóth, *Alternating Sums Concerning Multiplicative Arithmetic Functions*, Journal of Integer Sequences 20, Lemma `lemma_Kaluza`, `https://cs.uwaterloo.ca/journals/JIS/VOL20/Toth/toth25.tex`, lines 553–562, file sha256 `e225aae50ee869db4df08f1a24bf6448ea544ca356369d5a0c4c7321d92607d8`, span sha256 `2ad887082f5786fc8ff64b75c3a7ddb63bc0a456290eee9cb6a85acf3c868d0f`. Tóth attributes the nonpositivity of `bₙ` to T. Kaluza, Satz 3. Proves `Wanted` entry `kaluza_coeff_inv_bounds`.
+- László Tóth, *Alternating Sums Concerning Multiplicative Arithmetic Functions*, Journal of Integer Sequences 20, the lemma at lines 553–562 of <https://cs.uwaterloo.ca/journals/JIS/VOL20/Toth/toth25.tex>. Tóth attributes the nonpositivity of `bₙ` to T. Kaluza, Satz 3.

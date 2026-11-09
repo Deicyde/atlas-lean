@@ -8,4 +8,4 @@ and $Z(r) = B(r)$ for all $r \in \mathbb{C}$ outside a closed discrete subset of
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 10. Proves `Wanted` entry `ramanujan_part1_ch7_entry10_zeta4`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 10.

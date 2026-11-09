@@ -12,4 +12,4 @@ the mesh-pattern counting polynomial.
 
 ## Sources
 
-- Matt Davis, "Quadrant Marked Mesh Patterns and the r-Stirling Numbers," Journal of Integer Sequences 18 (2015), Article 15.10.1, Corollary (label cor:genfunc), line 194, with the recurrence and base value from Theorem (label thm:main), line 175, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davis/davis3.tex>.
+- Matt Davis, "Quadrant Marked Mesh Patterns and the r-Stirling Numbers," Journal of Integer Sequences 18 (2015), Article 15.10.1, Corollary, line 194, with the recurrence and base value from Theorem, line 175, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Davis/davis3.tex>.

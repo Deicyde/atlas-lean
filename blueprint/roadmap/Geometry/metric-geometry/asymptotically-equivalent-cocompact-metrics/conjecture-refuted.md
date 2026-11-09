@@ -12,4 +12,4 @@ yet their difference is unbounded.
 
 ## Sources
 
-- E. Le Donne, L. Nalon, S. Nicolussi Golo, S.-Y. Ryoo, Asymptotics of Riemannian Lie groups with nilpotency step 2, arXiv preprint (2025), arXiv:2503.00560, https://arxiv.org/abs/2503.00560. Moved from `OpenConjectures/Geometry/CocompactAsymptoticallyEquivalentMetrics`.
+- E. Le Donne, L. Nalon, S. Nicolussi Golo, S.-Y. Ryoo, Asymptotics of Riemannian Lie groups with nilpotency step 2, arXiv preprint (2025), arXiv:2503.00560, https://arxiv.org/abs/2503.00560.

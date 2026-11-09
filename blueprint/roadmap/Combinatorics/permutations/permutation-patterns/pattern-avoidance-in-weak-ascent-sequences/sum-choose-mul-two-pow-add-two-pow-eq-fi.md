@@ -16,4 +16,4 @@ computation confirms the identity for $4 \le n \le 500$.
 
 ## Sources
 
-- David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Proposition 3 (`integers-2025-A80-prop-3`), with the sum of Proposition 2(i).
+- David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Proposition 3, with the sum of Proposition 2(i).

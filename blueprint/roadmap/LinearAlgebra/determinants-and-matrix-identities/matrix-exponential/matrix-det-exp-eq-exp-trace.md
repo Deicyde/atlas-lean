@@ -13,4 +13,4 @@ $\operatorname{tr} N = 0$.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Linear algebra / Exponential / matrix exponential; B. C. Hall, Lie Groups, Lie Algebras, and Representations, 2nd ed., Springer (2015), Proposition 2.23.
+- B. C. Hall, Lie Groups, Lie Algebras, and Representations, 2nd ed., Springer (2015), Proposition 2.23.

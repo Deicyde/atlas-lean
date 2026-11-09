@@ -9,4 +9,4 @@ unit disc. If $f:\mathbb{D}\to\mathbb{D}$ is holomorphic, then
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; Geometric function theory), `benchmark/level1/ma_proofbench_l1_86.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; Geometric function theory), problem `ma_proofbench_l1_86`.

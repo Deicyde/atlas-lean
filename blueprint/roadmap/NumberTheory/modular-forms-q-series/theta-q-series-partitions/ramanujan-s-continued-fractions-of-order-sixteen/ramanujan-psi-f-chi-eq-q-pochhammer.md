@@ -13,4 +13,4 @@ $f(q) = f_2^3 / (f_1 f_4)$, $\chi(q) = f_2^2 / (f_1 f_4)$ and $\chi(-q) = f_1 / 
 
 ## Sources
 
-- A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Lemma 1 (`integers-2025-A16-lem-1`).
+- A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Lemma 1.

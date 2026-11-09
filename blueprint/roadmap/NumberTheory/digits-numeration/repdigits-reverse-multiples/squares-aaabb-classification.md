@@ -9,4 +9,4 @@ $n = 9 \cdot 10^{2i}$.
 
 ## Sources
 
-- Omar Kihel and Florian Luca, "Perfect Powers With All Equal Digits But One," Journal of Integer Sequences 8 (2005), Article 05.5.7, Theorem (label thm:3), lines 273–279, https://cs.uwaterloo.ca/journals/JIS/VOL8/Kihel/kihel7.tex
+- Omar Kihel and Florian Luca, "Perfect Powers With All Equal Digits But One," Journal of Integer Sequences 8 (2005), Article 05.5.7, Theorem, lines 273–279, https://cs.uwaterloo.ca/journals/JIS/VOL8/Kihel/kihel7.tex

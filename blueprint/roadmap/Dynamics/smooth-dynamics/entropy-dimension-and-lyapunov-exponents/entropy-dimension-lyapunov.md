@@ -16,4 +16,4 @@ and $-\lambda_2$, taken to be $0$ when $\lambda_1 = \lambda_2$.
 
 ## Sources
 
-- L.-S. Young, *Dimension, entropy and Lyapunov exponents*, Ergodic Theory Dynam. Systems 2 (1982), 109–124. Knill, *Some fundamental theorems in mathematics*, §103. Via leanprover/lean-eval@38361be, problem `entropy_dimension_lyapunov`.
+- L.-S. Young, *Dimension, entropy and Lyapunov exponents*, Ergodic Theory Dynam. Systems 2 (1982), 109–124. Knill, *Some fundamental theorems in mathematics*, §103. Problem `entropy_dimension_lyapunov` of the lean-eval benchmark.

@@ -7,4 +7,4 @@ of the ratios $a_k / a_{k+1}$ for $0 \le k \le n - 1$.
 
 ## Sources
 
-- Karl Dilcher and Larry Ericksen, "Polynomials Whose Coefficients Are Stern Numbers," Journal of Integer Sequences 24 (2021), Article 21.10.3, Theorem 4.1 (quoted there as the classical Eneström–Kakeya theorem). Public TeX URL: `https://cs.uwaterloo.ca/journals/JIS/VOL24/Dilcher/dilcher51.tex` Retrieved TeX SHA-256: `72f3e8444cd0fd6b5f55e89d6427f130b294841131d89c994fe3bb2971dbb19e` Proves `Wanted` entry `enestrom_kakeya_zero_localization`.
+- Karl Dilcher and Larry Ericksen, "Polynomials Whose Coefficients Are Stern Numbers," Journal of Integer Sequences 24 (2021), Article 21.10.3, Theorem 4.1 (quoted there as the classical Eneström–Kakeya theorem). <https://cs.uwaterloo.ca/journals/JIS/VOL24/Dilcher/dilcher51.tex>

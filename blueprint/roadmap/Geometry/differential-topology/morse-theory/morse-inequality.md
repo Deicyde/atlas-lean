@@ -13,4 +13,4 @@ $$\sum_{j=0}^{k} (-1)^{k-j} b_j \le \sum_{j=0}^{k} (-1)^{k-j} c_j.$$
 
 ## Sources
 
-- M. Morse, The Calculus of Variations in the Large, AMS Colloq. Publ. 18 (1934). Listed as §40 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Via leanprover/lean-eval@38361be, problem `morse_inequality`.
+- M. Morse, The Calculus of Variations in the Large, AMS Colloq. Publ. 18 (1934). Listed as §40 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `morse_inequality` of the lean-eval benchmark.

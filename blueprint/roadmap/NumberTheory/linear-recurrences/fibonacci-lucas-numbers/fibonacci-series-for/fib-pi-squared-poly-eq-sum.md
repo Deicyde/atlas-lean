@@ -10,4 +10,4 @@ $$p_n(x) = \sum_{j=0}^{n-1} (-1)^j \binom{n-1}{j} \Bigl(\prod_{k=2j+3}^{2n} (2x 
 
 ## Sources
 
-- Joseph Tonien, *Fibonacci and Pi Squared*, The Fibonacci Quarterly 62 (2024), no. 1, Lemma 2.4 (`fq-2024-tonien10292023-lem-2.4`).
+- Joseph Tonien, *Fibonacci and Pi Squared*, The Fibonacci Quarterly 62 (2024), no. 1, Lemma 2.4.

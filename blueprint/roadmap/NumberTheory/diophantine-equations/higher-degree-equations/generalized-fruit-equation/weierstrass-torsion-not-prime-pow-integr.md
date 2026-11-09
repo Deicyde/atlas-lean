@@ -8,4 +8,4 @@ $\mathcal{O}_K$.
 
 ## Sources
 
-- Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 5 (`integers-2026-A21-thm-5`), quoted from Silverman, *The Arithmetic of Elliptic Curves*.
+- Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 5, quoted from Silverman, *The Arithmetic of Elliptic Curves*.

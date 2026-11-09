@@ -6,4 +6,4 @@ is not a perfect square, $c_8(N)$ is even.
 
 ## Sources
 
-- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 11 (`integers-2025-A32-thm-11`).
+- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 11.

@@ -11,4 +11,4 @@ although the source states it for $B < \sqrt{p/12}$.
 
 ## Sources
 
-- Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Theorem 1.4 (`integers-2025-A48-thm-1-4`).
+- Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Theorem 1.4.

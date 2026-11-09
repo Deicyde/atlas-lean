@@ -11,4 +11,4 @@ Positivity of $s, t, w$ is automatic from $m, n, r \ge 2$.
 
 ## Sources
 
-- Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Theorem 1 (`integers-2024-A48-thm-1`).
+- Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Theorem 1.

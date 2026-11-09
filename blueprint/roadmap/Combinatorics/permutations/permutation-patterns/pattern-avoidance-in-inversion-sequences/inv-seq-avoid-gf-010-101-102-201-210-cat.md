@@ -15,4 +15,4 @@ this says $F_B(x) = F_{B'}(x) = x / ((1 - x)(2 - (1 - \sqrt{1 - 4x})/(2x)))$.
 
 ## Sources
 
-- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 3 (`integers-2024-A76-thm-3`).
+- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 3.

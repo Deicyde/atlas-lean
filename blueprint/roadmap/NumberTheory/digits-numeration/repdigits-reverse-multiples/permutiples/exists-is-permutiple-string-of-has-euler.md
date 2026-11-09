@@ -8,4 +8,4 @@ multiset of entries is $C_I$.
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 7 (`integers-2025-A111-thm-7`).
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 7.

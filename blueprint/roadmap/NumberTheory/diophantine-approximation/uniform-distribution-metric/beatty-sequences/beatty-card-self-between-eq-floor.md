@@ -10,4 +10,4 @@ By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then compl
 
 ## Sources
 
-- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Theorem 4 (`integers-2025-A104-thm-4`).
+- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Theorem 4.

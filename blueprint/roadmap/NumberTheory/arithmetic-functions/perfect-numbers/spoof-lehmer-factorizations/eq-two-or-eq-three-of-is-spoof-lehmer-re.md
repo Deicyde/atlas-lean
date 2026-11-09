@@ -12,4 +12,4 @@ treats only $x = 2$, $x = 3$ and $x \ge 4$. When $x \ge 2$, the hypothesis force
 
 ## Sources
 
-- Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Theorem 2 (`integers-2026-A100-thm-2`).
+- Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Theorem 2.

@@ -17,4 +17,4 @@ then $a_n = c_n$ for every $n \ge 0$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5. Proves `Wanted` entry `ramanujan_part1_ch5_entry3`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5.

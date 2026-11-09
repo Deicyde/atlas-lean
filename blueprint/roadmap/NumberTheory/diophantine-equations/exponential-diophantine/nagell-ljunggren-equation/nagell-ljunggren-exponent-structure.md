@@ -11,4 +11,4 @@ The source attributes the result to Bugeaud and Mihăilescu and to its reference
 
 ## Sources
 
-- Tran Duc Son, *On the Nagell--Ljunggren Equation \frac{x^{5}-1}{x-1}=y^{3}*, INTEGERS 26 (2026), Article A44, Theorem 2 (`integers-2026-A44-thm-2`).
+- Tran Duc Son, *On the Nagell--Ljunggren Equation \frac{x^{5}-1}{x-1}=y^{3}*, INTEGERS 26 (2026), Article A44, Theorem 2.

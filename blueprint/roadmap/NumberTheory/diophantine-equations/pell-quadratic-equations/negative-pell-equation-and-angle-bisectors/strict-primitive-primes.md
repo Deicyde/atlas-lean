@@ -6,4 +6,4 @@ primitive integral solution, that is, integers $x, y$ with $x$ and $d y$ coprime
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2 (`integers-2024-A111-thm-8`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2.

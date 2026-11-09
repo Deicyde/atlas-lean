@@ -8,4 +8,4 @@ $\alpha \to (\alpha, 3)^2$.
 
 ## Sources
 
-- Schipperus [Sc10] and Darby, independently, per erdosproblems.com/591, https://www.erdosproblems.com/591. Moved from `OpenConjectures/Combinatorics/ErdosProblem591`.
+- Schipperus [Sc10] and Darby, independently, per erdosproblems.com/591, https://www.erdosproblems.com/591.

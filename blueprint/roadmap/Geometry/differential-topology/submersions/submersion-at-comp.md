@@ -14,4 +14,4 @@ compose the two projection normal forms and use the product of their complements
 
 ## Sources
 
-- Mathlib `Mathlib/Geometry/Manifold/Submersion.lean` TODO (`IsSubmersionAt.comp`); J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.
+- J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4.

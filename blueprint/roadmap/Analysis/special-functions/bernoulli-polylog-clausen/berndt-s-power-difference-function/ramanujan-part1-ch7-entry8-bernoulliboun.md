@@ -12,4 +12,4 @@ natural number $n$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8. Proves `Wanted` entry `ramanujan_part1_ch7_entry8_bernoullibound`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8.

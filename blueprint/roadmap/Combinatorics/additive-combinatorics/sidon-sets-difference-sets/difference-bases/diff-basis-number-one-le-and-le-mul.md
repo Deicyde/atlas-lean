@@ -8,4 +8,4 @@ $\eta_1(n) \le \eta_g(n) \le g\,\eta_1(n)$.
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Corollary 2 (`integers-2025-A77-cor-2`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Corollary 2.

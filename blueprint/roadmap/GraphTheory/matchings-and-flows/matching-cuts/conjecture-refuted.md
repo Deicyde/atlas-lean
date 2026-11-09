@@ -12,4 +12,4 @@ bipartite graph of girth at least $g$ with no matching cut; these graphs give $d
 
 ## Sources
 
-- C. Feghali, F. Lucke, D. Paulusma and B. Ries, Matching Cuts in Graphs of High Girth and H-Free Graphs, ISAAC 2023, arXiv:2212.12317, https://arxiv.org/abs/2212.12317. Moved from `OpenConjectures/Combinatorics/MatchingCutGirth`.
+- C. Feghali, F. Lucke, D. Paulusma and B. Ries, Matching Cuts in Graphs of High Girth and H-Free Graphs, ISAAC 2023, arXiv:2212.12317, https://arxiv.org/abs/2212.12317.

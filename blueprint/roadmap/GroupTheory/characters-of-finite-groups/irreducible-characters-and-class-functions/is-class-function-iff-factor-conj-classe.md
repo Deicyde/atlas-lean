@@ -12,4 +12,4 @@ $h g h^{-1}$ and $g$ are conjugate.
 
 ## Sources
 
-- `undergrad.yaml`, section "Representation theory of finite groups", entry "class function over a group"; J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2 (class functions as functions on conjugacy classes).
+- J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2 (class functions as functions on conjugacy classes).

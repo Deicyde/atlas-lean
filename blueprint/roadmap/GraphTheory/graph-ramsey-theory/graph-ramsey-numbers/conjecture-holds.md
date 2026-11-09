@@ -7,4 +7,4 @@ $2m + \lfloor (k-1)/2 \rfloor$.
 
 ## Sources
 
-- S. Cambie, A. Freschi, P. Morawski, K. Petrova, A. Pokrovskiy, Ramsey number of a cycle versus a graph of a given size, arXiv:2601.10238 (2026), https://arxiv.org/abs/2601.10238. Moved from `OpenConjectures/Combinatorics/ErdosProblem570`.
+- S. Cambie, A. Freschi, P. Morawski, K. Petrova, A. Pokrovskiy, Ramsey number of a cycle versus a graph of a given size, arXiv:2601.10238 (2026), https://arxiv.org/abs/2601.10238.

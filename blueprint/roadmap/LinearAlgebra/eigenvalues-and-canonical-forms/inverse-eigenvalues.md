@@ -8,4 +8,4 @@ eigenvalue $\mu^{-1}$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix, statement `inveig-s1`.
+- https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix.

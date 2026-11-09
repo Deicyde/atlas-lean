@@ -10,4 +10,4 @@ $\int_\gamma f(z)\,dz = \int_0^1 f(\gamma(t))\,\gamma'(t)\,dt$.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Functions on one complex variable", entry "contour integrals of continuous functions in ℂ"; L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 4, §1.1 to §1.3 (line integrals).
+- L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 4, §1.1 to §1.3 (line integrals).

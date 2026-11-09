@@ -19,4 +19,4 @@ such a radius $r$. The statement above does not assert the value of $r$.
 
 ## Sources
 
-- B. Bhowmik and S. Biswas, Radius of convexity of certain classes of functions defined by convolution, preprint (2026), arXiv:2606.20872, https://arxiv.org/abs/2606.20872. Moved from `OpenConjectures/Analysis/HaymanProblem622`.
+- B. Bhowmik and S. Biswas, Radius of convexity of certain classes of functions defined by convolution, preprint (2026), arXiv:2606.20872, https://arxiv.org/abs/2606.20872.

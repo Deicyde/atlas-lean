@@ -13,4 +13,4 @@ $p_i$) and requires $b_i = p_i^{\kappa_i} > 1$, which is the hypothesis $\kappa(
 
 ## Sources
 
-- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 5, Equation (22) (`integers-2024-A75-lem-5`).
+- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 5, Equation (22).

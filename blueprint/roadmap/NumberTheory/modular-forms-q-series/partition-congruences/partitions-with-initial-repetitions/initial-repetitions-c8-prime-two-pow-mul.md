@@ -12,4 +12,4 @@ These $r$ are the paper's least nonnegative residues $r'_{k,1}$, $r'_{k,2}$, $r'
 
 ## Sources
 
-- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Corollary 3 (`integers-2025-A32-cor-3`).
+- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Corollary 3.

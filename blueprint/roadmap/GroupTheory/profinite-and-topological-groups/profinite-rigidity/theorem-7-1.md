@@ -11,4 +11,4 @@ This is Theorem 7.1 of the source.
 
 ## Sources
 
-- M. R. Bridson, D. B. McReynolds, A. W. Reid, and R. Spitler, `Absolute profinite rigidity and hyperbolic geometry`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2020-192-3-AbsoluteProfiniteRigidity.lean Via leanprover/lean-eval@38361be, problem `annals_absolute_profinite_rigidity`.
+- M. R. Bridson, D. B. McReynolds, A. W. Reid, and R. Spitler, `Absolute profinite rigidity and hyperbolic geometry`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_absolute_profinite_rigidity` of the lean-eval benchmark.

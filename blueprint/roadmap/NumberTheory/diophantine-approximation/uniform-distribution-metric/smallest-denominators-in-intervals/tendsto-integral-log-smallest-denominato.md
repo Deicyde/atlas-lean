@@ -18,4 +18,4 @@ the correct limit $1$.
 
 ## Sources
 
-- Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Proposition 2 (`integers-2024-A55-prop-2`).
+- Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Proposition 2.

@@ -8,4 +8,4 @@ OEIS A158358 gives the witness $n = 10063351640161 = 73 \cdot 257 \cdot 449 \cdo
 
 ## Sources
 
-- OEIS A158358, nonsquarefree Poulet numbers, https://oeis.org/A158358. Moved from `OpenConjectures/NumberTheory/NonSquarefreeBaseTwoPseudoprime`.
+- OEIS A158358, nonsquarefree Poulet numbers, https://oeis.org/A158358.

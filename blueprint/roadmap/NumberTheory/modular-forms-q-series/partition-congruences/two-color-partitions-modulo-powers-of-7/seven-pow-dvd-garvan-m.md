@@ -12,4 +12,4 @@ ceiling reading fails, since $m_{2,1} = 10$ is not divisible by $7^{\lceil 2/4 \
 
 ## Sources
 
-- D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Lemma 3 (`integers-2026-A94-lem-3`).
+- D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Lemma 3.

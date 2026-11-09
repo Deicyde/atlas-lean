@@ -8,4 +8,4 @@ $a_1, \dots, a_k$ of $\mathbb{Z}/n\mathbb{Z}$ with $a_1 x_1 + \dots + a_k x_k = 
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 3.5 (`integers-2024-A38-lem-3-5`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 3.5.

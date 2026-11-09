@@ -22,4 +22,4 @@ with the $13$-form of Theorem 9) fix it as $5$.
 
 ## Sources
 
-- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 10 (`integers-2026-A102-thm-10`).
+- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 10.

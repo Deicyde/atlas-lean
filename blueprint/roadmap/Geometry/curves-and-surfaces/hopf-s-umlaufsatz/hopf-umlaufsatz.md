@@ -10,4 +10,4 @@ curvature over one period is $2\pi$: $\int_0^{2\pi} \alpha'(t)\,dt = 2\pi$.
 
 ## Sources
 
-- H. Hopf, *Über die Drehung der Tangenten...*, Compositio Math. 2 (1935). Knill, §170. Via leanprover/lean-eval@38361be, problem `hopf_umlaufsatz`.
+- H. Hopf, *Über die Drehung der Tangenten...*, Compositio Math. 2 (1935). Knill, §170. Problem `hopf_umlaufsatz` of the lean-eval benchmark.

@@ -7,4 +7,4 @@ least $n^2/5 - Cn$ tokens; that is, every penult has at least $n^2/5 + O(n)$ tok
 
 ## Sources
 
-- Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 9 (`integers-2025-G1-prop-9`).
+- Boris Alexeev, Paul Ellis, Michael Richter, and Thotsaporn Aek Thanatipanonda, *The Penults of Tak: Adventures in Impartial, Normal-Play, Positional Games*, INTEGERS 25 (2025), Article G1, Proposition 9.

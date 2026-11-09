@@ -8,4 +8,4 @@ $|\sigma(\alpha)|$ over these $\sigma$, is at least $2^{1/(4d')}$.
 
 ## Sources
 
-- James McKee and Chris Smyth, Around the Unit Circle, Chapter 4, Theorem 4.1; Vesselin Dimitrov (2019). Via leanprover/lean-eval@38361be, problem `dimitrov`.
+- James McKee and Chris Smyth, Around the Unit Circle, Chapter 4, Theorem 4.1; Vesselin Dimitrov (2019). Problem `dimitrov` of the lean-eval benchmark.

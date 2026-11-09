@@ -8,4 +8,4 @@ $U_n / U_{n-1} \geq (x + \sqrt{x^2 - 4y})/2$ for every $n \geq 2$.
 
 ## Sources
 
-- Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.3 (`fq-2024-earplynch07182024-lem-2.3`).
+- Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.3.

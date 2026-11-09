@@ -25,4 +25,4 @@ the weight is $(n+1)^{2A+2}$ rather than $n^{2A+2}$, so that $B_z(0)$ is bounded
 
 ## Sources
 
-- Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 11 (`integers-2025-A9-thm-11`).
+- Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 11.

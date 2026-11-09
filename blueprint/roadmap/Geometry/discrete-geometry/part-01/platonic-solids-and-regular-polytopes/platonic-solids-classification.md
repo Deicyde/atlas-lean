@@ -40,4 +40,4 @@ give $1/p + 1/q > 1/2$, which leaves the five tuples; explicit coordinates reali
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Platonic_solid (statement `platonic-solids-s1`); proves `Wanted` entry `platonic_solids_classification`.
+- https://en.wikipedia.org/wiki/Platonic_solid.

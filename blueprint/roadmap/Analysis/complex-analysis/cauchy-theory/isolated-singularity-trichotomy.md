@@ -11,4 +11,4 @@ Casorati–Weierstrass).
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Functions on one complex variable", entry "isolated singularities"; L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 4, §3.1 and §3.2 (removable singularities; zeros, poles and the Casorati-Weierstrass theorem).
+- L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 4, §3.1 and §3.2 (removable singularities; zeros, poles and the Casorati-Weierstrass theorem).

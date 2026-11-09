@@ -6,4 +6,4 @@ $\lfloor \min(a, c) / 2^k \rfloor = \lfloor \min(b, c) / 2^k \rfloor$.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 2 (i) (`integers-2025-G3-lem-2`).
+- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 2 (i).

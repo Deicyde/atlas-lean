@@ -14,4 +14,4 @@ $r_3(n) = 0$; and if $\alpha$ is odd, then $r_3(n) = 12L$.
 
 ## Sources
 
-- Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Theorem 1 (`integers-2026-A29-thm-1`).
+- Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Theorem 1.

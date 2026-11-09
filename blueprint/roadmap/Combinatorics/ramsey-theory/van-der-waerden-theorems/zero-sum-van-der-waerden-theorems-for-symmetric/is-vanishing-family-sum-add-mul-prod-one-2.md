@@ -7,4 +7,4 @@ $F_1$ is vanishing.
 
 ## Sources
 
-- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 2 (`integers-2026-A25-lem-2`).
+- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Lemma 2.

@@ -19,4 +19,4 @@ coefficient of complex numbers $a, b$.
 
 ## Sources
 
-- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 8 (`integers-2026-A19-thm-8`).
+- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Theorem 8.

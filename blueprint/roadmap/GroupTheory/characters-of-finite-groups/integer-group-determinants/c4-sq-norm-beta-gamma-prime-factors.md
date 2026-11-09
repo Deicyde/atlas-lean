@@ -12,4 +12,4 @@ with $j \not\equiv m + n \pmod 2$ in place of $j \equiv m + n \pmod 2$.
 
 ## Sources
 
-- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 13 (`integers-2024-A30-lem-13`).
+- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 13.

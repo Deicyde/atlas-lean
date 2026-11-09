@@ -7,4 +7,4 @@ $\delta_0$ is the Dirac delta at the origin.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Distribution calculus" / "Applications" / entry "fundamental solution of the Laplacian"; L. Evans, *Partial Differential Equations*, §2.2.
+- L. Evans, *Partial Differential Equations*, §2.2.

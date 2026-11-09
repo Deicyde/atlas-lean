@@ -17,4 +17,4 @@ and the bound would read $0 \le -1$.
 
 ## Sources
 
-- B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 3 (`integers-2024-A88-thm-3`).
+- B. V. Holt, *A Method for Finding All Permutiples with a Fixed Set of Digits from a Single Known Example*, INTEGERS 24 (2024), Article A88, Theorem 3.

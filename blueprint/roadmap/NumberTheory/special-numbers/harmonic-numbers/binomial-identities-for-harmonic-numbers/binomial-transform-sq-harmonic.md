@@ -14,4 +14,4 @@ $$
 
 ## Sources
 
-- Necdet Batır, "Finite Binomial Sum Identities with Harmonic Numbers," Journal of Integer Sequences 24 (2021), Article 21.4.3, Theorem 7 (label `Theorem7`), equation (2.12), lines 287–293, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir2/batir13.tex
+- Necdet Batır, "Finite Binomial Sum Identities with Harmonic Numbers," Journal of Integer Sequences 24 (2021), Article 21.4.3, Theorem 7, equation (2.12), lines 287–293, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir2/batir13.tex

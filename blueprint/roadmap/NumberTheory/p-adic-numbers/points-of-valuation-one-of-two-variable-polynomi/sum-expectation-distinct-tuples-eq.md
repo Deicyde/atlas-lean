@@ -24,4 +24,4 @@ proof uses it to rule out rank $0$.
 
 ## Sources
 
-- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 6, eq. (15) (`integers-2026-A82-prop-6`).
+- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 6, eq. (15).

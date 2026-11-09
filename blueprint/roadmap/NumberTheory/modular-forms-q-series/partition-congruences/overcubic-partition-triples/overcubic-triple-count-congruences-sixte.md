@@ -8,4 +8,4 @@ $\mathrm{bt}(256n+32) \equiv \mathrm{bt}(128n+16) \pmod 4$.
 
 ## Sources
 
-- S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 11, eqs. (33)-(38) (`integers-2024-A80-thm-11`).
+- S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 11, eqs. (33)-(38).

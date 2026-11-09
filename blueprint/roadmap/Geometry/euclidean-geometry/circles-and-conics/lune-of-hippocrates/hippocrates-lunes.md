@@ -7,4 +7,4 @@ measure of the triangle, that is, of the convex hull of $A$, $B$ and $C$.
 
 ## Sources
 
-- Hippocrates of Chios (c. 440 BC). Knill, §166. Via leanprover/lean-eval@38361be, problem `hippocrates_lunes`.
+- Hippocrates of Chios (c. 440 BC). Knill, §166. Problem `hippocrates_lunes` of the lean-eval benchmark.

@@ -12,4 +12,4 @@ omitted.
 
 ## Sources
 
-- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Proposition 3 (ii) (`integers-2026-A69-prop-3`).
+- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Proposition 3 (ii).

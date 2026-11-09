@@ -6,4 +6,4 @@ for every $i < n$.
 
 ## Sources
 
-- JIS VOL28/Pawelski, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Pawelski/pawelski22.tex>, lines 72–81 (concept `jis_term_d4ca78498f0fce5b71d05655`).
+- JIS VOL28/Pawelski, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Pawelski/pawelski22.tex>, lines 72–81.

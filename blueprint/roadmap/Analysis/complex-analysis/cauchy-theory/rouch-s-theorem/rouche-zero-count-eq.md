@@ -9,4 +9,4 @@ the disk of the positive part of the order of $f + g$ equals the same sum for $f
 
 ## Sources
 
-- E. Rouché, *Mémoire sur la série de Lagrange*, J. École Polytechnique 22 (1862) (Rouché's theorem). Via leanprover/lean-eval@38361be, problem `rouche`.
+- E. Rouché, *Mémoire sur la série de Lagrange*, J. École Polytechnique 22 (1862) (Rouché's theorem). Problem `rouche` of the lean-eval benchmark.

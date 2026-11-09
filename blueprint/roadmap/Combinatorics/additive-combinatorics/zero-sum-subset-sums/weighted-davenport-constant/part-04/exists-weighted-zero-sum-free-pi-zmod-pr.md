@@ -13,4 +13,4 @@ $1 + \sum_{i=1}^{r} (\lceil p^{e_i}/\beta \rceil - 1)$.
 
 ## Sources
 
-- Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Lemma 3 (`integers-2026-A89-lem-3`).
+- Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Lemma 3.

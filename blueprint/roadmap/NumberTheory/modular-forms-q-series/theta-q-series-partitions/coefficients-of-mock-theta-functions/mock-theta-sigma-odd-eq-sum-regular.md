@@ -8,4 +8,4 @@ $P_\sigma(2n+1) = \sum_{m \ge 0,\ (3m^2+3m)/2 \le n} b_2^2\bigl(n - (3m^2+3m)/2\
 
 ## Sources
 
-- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 7 (`integers-2025-A72-thm-7`).
+- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Theorem 7.

@@ -8,4 +8,4 @@ the trace of $\rho(g)$ lies in the image of $\varphi$.
 
 ## Sources
 
-- R. Brauer, On the representation of a group of order g in the field of g-th roots of unity, Amer. J. Math. 67 (1945). Via leanprover/lean-eval@38361be, problem `brauer_character_in_cyclotomic`.
+- R. Brauer, On the representation of a group of order g in the field of g-th roots of unity, Amer. J. Math. 67 (1945). Problem `brauer_character_in_cyclotomic` of the lean-eval benchmark.

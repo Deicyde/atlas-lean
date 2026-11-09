@@ -19,4 +19,4 @@ The constant $A$ depends only on $\varepsilon$; it is not claimed to be effectiv
 
 ## Sources
 
-- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 1 (`integers-2025-A10-thm-1`).
+- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 1.

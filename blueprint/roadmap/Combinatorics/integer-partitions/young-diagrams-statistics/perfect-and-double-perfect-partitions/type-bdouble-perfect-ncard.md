@@ -10,4 +10,4 @@ $N \equiv -1 \pmod M$, and $0$ otherwise.
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 6, display (27) (`integers-2025-A109-thm-6`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 6, display (27).

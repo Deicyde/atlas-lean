@@ -9,4 +9,4 @@ $\sum_k a_{nk} x_k \to L$ as $n \to \infty$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Silverman%E2%80%93Toeplitz_theorem (statement silverman-toeplitz-s1). Proves `Wanted` entry `silverman_toeplitz`.
+- https://en.wikipedia.org/wiki/Silverman%E2%80%93Toeplitz_theorem.

@@ -11,4 +11,4 @@ by symmetry this is taken to be $g$, and zeros at $0$ are allowed.
 
 ## Sources
 
-- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Theorem 2 (Schur) (`integers-2024-A54-thm-2`).
+- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Theorem 2 (Schur).

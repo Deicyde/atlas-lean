@@ -9,4 +9,4 @@ $f_m(n)$ over all integers $m$ is $\max(n / \operatorname{rad}(n), \operatorname
 
 ## Sources
 
-- Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 2 (`integers-2026-A6-thm-2`).
+- Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Theorem 2.

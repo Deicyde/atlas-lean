@@ -11,4 +11,4 @@ $U_{2m}/P$ is an integer because $P \mid U_{2m}$.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Corollary 4.2 (`integers-2025-A107-cor-4-2`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Corollary 4.2.

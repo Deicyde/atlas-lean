@@ -11,4 +11,4 @@ order $1$.
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 4 (`integers-2025-A109-thm-4`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 4.

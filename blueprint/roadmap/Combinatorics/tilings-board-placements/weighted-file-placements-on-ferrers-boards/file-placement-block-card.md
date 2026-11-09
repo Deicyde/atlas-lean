@@ -8,4 +8,4 @@ determined by $l$ and $c_0$ has exactly $m^{n-1}$ members.
 
 ## Sources
 
-- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Lemma 7 (`integers-2024-A58-lem-7`).
+- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Lemma 7.

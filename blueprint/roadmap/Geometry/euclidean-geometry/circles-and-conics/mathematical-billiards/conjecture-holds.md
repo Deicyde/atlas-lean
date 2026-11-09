@@ -16,4 +16,4 @@ semi-minor axis $b$ the two focal distances multiply to $b^2$, so the common val
 
 ## Sources
 
-- M. Bialy, S. Tabachnikov, Dan Reznik's identities and more, European Journal of Mathematics (2020), arXiv:2001.08469, https://arxiv.org/abs/2001.08469. Moved from `OpenConjectures/Geometry/EllipticBilliard602`.
+- M. Bialy, S. Tabachnikov, Dan Reznik's identities and more, European Journal of Mathematics (2020), arXiv:2001.08469, https://arxiv.org/abs/2001.08469.

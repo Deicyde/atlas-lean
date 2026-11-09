@@ -7,4 +7,4 @@ $E_n / n$ as $n \to \infty$. Then $0.788071 \le C$.
 
 ## Sources
 
-- Lueker (2009), catalogue computer-assisted lower bound `0.788071`. Known literature result; its proof and certificate are not supplied here.
+- Lueker (2009), catalogue computer-assisted lower bound `0.788071`.

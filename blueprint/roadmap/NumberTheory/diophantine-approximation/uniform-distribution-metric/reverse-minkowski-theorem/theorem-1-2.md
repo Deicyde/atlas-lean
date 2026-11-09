@@ -10,4 +10,4 @@ $\|y\|$ is the Euclidean norm.
 
 ## Sources
 
-- O. Regev, N. Stephens-Davidowitz, `A reverse Minkowski theorem`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2024-199-1-ReverseMinkowski.lean Via leanprover/lean-eval@38361be, problem `annals_reverse_minkowski`.
+- O. Regev, N. Stephens-Davidowitz, `A reverse Minkowski theorem`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_reverse_minkowski` of the lean-eval benchmark.

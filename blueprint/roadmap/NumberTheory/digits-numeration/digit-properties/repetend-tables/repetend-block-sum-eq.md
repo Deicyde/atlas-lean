@@ -9,4 +9,4 @@ $SN = R(B^k - 1)$, and if $B^k - 1$ is coprime to $N$, then $B^k - 1$ divides $S
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 9 (`integers-2025-A26-thm-9`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 9.

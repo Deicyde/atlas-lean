@@ -11,4 +11,4 @@ halved interval length gives the midpoint error bound, following Burden and Fair
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Numerical Analysis` / `Iterative methods of solving systems of real and vector-valued equations`, entries `bisection method` and `rate of convergence and estimation of error` (unmapped); R. L. Burden and J. D. Faires, Numerical Analysis, 10th ed., Theorem 2.1.
+- R. L. Burden and J. D. Faires, Numerical Analysis, 10th ed., Theorem 2.1.

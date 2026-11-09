@@ -11,4 +11,4 @@ The paper quotes this result from Diananda–Yap and Green–Ruzsa.
 
 ## Sources
 
-- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 1 (`integers-2026-A97-thm-1`), with Definition 1.
+- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 1, with Definition 1.

@@ -11,4 +11,4 @@ $k$-uniform hypergraph; the case $k = 1$ is elementary.
 
 ## Sources
 
-- Stefan Glock, Felix Joos, Daniela Kühn, Deryk Osthus, Euler tours in hypergraphs, Combinatorica 40 (2020), 679-690; arXiv:1808.07720, https://arxiv.org/abs/1808.07720. Moved from `OpenConjectures/Combinatorics/UniversalCycleSubsets`.
+- Stefan Glock, Felix Joos, Daniela Kühn, Deryk Osthus, Euler tours in hypergraphs, Combinatorica 40 (2020), 679-690; arXiv:1808.07720, https://arxiv.org/abs/1808.07720.

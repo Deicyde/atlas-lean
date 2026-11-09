@@ -15,4 +15,4 @@ this result as part of Theorem 4 of Bennett, Garbuz and Marten (2020).
 
 ## Sources
 
-- Jon Grantham, *No New Goormaghtigh Primes up to 10^700*, INTEGERS 24 (2024), Article A98, Theorem 1 (`integers-2024-A98-thm-1`).
+- Jon Grantham, *No New Goormaghtigh Primes up to 10^700*, INTEGERS 24 (2024), Article A98, Theorem 1.

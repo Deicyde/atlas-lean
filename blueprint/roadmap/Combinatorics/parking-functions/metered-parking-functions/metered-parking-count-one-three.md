@@ -5,4 +5,4 @@ number of $1$-metered $(3, n)$-parking functions is $\mathrm{mpf}_{3,n}(1) = n^3
 
 ## Sources
 
-- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 7 (`integers-2025-A73-prop-7`).
+- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 7.

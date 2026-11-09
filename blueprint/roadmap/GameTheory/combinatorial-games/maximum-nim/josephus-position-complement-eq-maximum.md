@@ -8,4 +8,4 @@ function $f(y) = \lfloor y/k \rfloor$. Then $n - o_n(m) = G(nk - m)$.
 
 ## Sources
 
-- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Theorem 2 (`integers-2024-G5-thm-2`).
+- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Theorem 2.

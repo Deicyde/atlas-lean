@@ -17,4 +17,4 @@ $-(p-1)/2 \le t \le (p-1)/2$ and $t \ne c$.
 
 ## Sources
 
-- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Lemma 2 (`integers-2025-A72-lem-2`).
+- Sabi Biswas and Nipen Saikia, *Arithmetic Properties of the Coefficients of Some Mock Theta Functions*, INTEGERS 25 (2025), Article A72, Lemma 2.

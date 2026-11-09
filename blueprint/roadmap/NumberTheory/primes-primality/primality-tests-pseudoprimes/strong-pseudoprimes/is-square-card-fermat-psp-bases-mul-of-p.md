@@ -7,4 +7,4 @@ square.
 
 ## Sources
 
-- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 1 (`integers-2024-A23-cor-1`).
+- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 1.

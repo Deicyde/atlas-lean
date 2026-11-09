@@ -6,4 +6,4 @@ $\mathrm{PD}_2(16n + 14) \equiv 0 \pmod 8$.
 
 ## Sources
 
-- James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 10 (`integers-2024-A16-thm-10`).
+- James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Theorem 10.

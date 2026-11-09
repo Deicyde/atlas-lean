@@ -13,4 +13,4 @@ fractional part of $t$, and $\Phi$ is differentiable at almost every point of $(
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 2 (`integers-2025-A25-thm-2`; arXiv:2308.12872v1, Section 1).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 2 (arXiv:2308.12872v1, Section 1).

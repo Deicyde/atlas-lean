@@ -10,4 +10,4 @@ $a_{n+1} = a_n^2 - a_n + 1$ for all sufficiently large $n$.
 
 ## Sources
 
-- Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Corollary 4 (`integers-2026-A28-cor-4`).
+- Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Corollary 4.

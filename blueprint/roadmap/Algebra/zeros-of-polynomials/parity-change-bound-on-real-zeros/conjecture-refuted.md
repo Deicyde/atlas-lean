@@ -14,4 +14,4 @@ zeros and $v = 21$.
 
 ## Sources
 
-- Olga Katkova, Boris Shapiro and Anna Vishnyakova, In search of Newton-type inequalities, arXiv:2403.12200 (2024), https://arxiv.org/abs/2403.12200. Moved from `OpenConjectures/Algebra/RealZerosParityChangeBound`.
+- Olga Katkova, Boris Shapiro and Anna Vishnyakova, In search of Newton-type inequalities, arXiv:2403.12200 (2024), https://arxiv.org/abs/2403.12200.

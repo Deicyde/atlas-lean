@@ -8,4 +8,4 @@ $\chi(q) = (-q;q^2)_\infty$ and $\psi(q) = f(q,q^3)$.
 
 ## Sources
 
-- A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Lemma 3, Equation (9) (`integers-2024-A103-lem-3`).
+- A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Lemma 3, Equation (9).

@@ -8,4 +8,4 @@ The source quotes this result from Archer et al.
 
 ## Sources
 
-- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 6 (`integers-2025-A82-prop-6`).
+- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 6.

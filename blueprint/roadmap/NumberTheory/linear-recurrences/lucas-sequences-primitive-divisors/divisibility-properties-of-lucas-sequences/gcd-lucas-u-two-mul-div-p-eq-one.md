@@ -6,4 +6,4 @@ integer with $\gcd(n, P) = 1$, then $\gcd(U_{2n}/P, P) = 1$.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 2.6, "in particular" claim (`integers-2025-A107-lem-2-6`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Lemma 2.6, "in particular" claim.

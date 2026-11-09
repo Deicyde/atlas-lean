@@ -18,4 +18,4 @@ $\sum \prod_j (1 + X_j)^{n_j - 1} (1 + Y_j)^{m_j - m_{j+1} - 1} q^{m_j n_j}$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 4 (`integers-2024-A6-thm-4`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 4.

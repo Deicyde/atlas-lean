@@ -17,4 +17,4 @@ at index $t$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 12 (`integers-2025-A25-lem-12`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 12.

@@ -8,4 +8,4 @@ argument $r$.
 
 ## Sources
 
-- Thomas M. Richardson, "The Super Patalan Numbers," Journal of Integer Sequences 18 (2015), Article 15.3.3; concept `jis_sem_6d22b6520f5edbfe81e62b58`, statement `jis_a9d7ecad34cde5accbc27d08`.
+- Thomas M. Richardson, "The Super Patalan Numbers," Journal of Integer Sequences 18 (2015), Article 15.3.3.

@@ -10,4 +10,4 @@ $w_9 = 35$, $w_{10} = 21$, $w_{11} = 10$, $w_{12} = 4$ and $w_{13} = 1$.
 
 ## Sources
 
-- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 1 (`integers-2024-A76-thm-1`).
+- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 1.

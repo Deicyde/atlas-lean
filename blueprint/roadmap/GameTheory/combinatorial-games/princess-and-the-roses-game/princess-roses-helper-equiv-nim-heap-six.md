@@ -8,4 +8,4 @@ the Nim heap of size $7$.
 
 ## Sources
 
-- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13 (`integers-2026-G4-thm-13`), values `6` and `7` on `U`.
+- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 13, values `6` and `7` on `U`.

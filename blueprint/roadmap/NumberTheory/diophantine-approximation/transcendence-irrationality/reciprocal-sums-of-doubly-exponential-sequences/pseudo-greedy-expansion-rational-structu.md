@@ -11,4 +11,4 @@ $n \to \infty$, $c_n = O(a_0 \cdots a_{n-1} / a_n)$ and $c_n = O(1.5^n)$.
 
 ## Sources
 
-- Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Lemma 4 (`integers-2026-A28-lem-4`).
+- Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Lemma 4.

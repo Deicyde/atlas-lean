@@ -10,4 +10,4 @@ $a_1 b_2 a_3 b_1 a_2 b_3$. Then $p$, $q$ and $r$ are collinear: $p \cdot (q \tim
 
 ## Sources
 
-- B. Pascal, *Essay pour les coniques* (1640). Knill, *Some fundamental theorems in mathematics*, §146. Via leanprover/lean-eval@38361be, problem `pascal`.
+- B. Pascal, *Essay pour les coniques* (1640). Knill, *Some fundamental theorems in mathematics*, §146. Problem `pascal` of the lean-eval benchmark.

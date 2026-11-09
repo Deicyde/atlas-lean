@@ -8,4 +8,4 @@ $$\binom{n}{2k+1} = \sum_{i=k}^{\lfloor (n-1)/2 \rfloor} (-1)^{i-k} \, 2^{n-2i-1
 
 ## Sources
 
-- Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Lemma 3.2 (2) (`fq-2024-florez11012023-lem-3.2`).
+- Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Lemma 3.2 (2).

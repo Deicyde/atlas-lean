@@ -19,4 +19,4 @@ with Euler's constant $\gamma$, so $-F'(1) = \gamma_1$.
 
 ## Sources
 
-- Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Corollary 3 (`integers-2024-A43-cor-3`).
+- Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Corollary 3.

@@ -8,4 +8,4 @@ $f : X \to Y$, the pushforward $f_* : J(X) \to J(Y)$ is holomorphic.
 
 ## Sources
 
-- https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge Via leanprover/lean-eval@38361be, problem `jacobian_challenge_diffgeo`.
+- https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.

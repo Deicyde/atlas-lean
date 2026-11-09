@@ -11,4 +11,4 @@ of the binary expansion of $n$; that refinement is not part of this statement.
 
 ## Sources
 
-- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 3 (`integers-2024-A27-thm-3`): writing `n = ∑_{i=1}^{t} 2^{aᵢ}` in binary, among the values `ν₂(H_n - H_m)` for `m = 0, 1, …, n - 1` exactly `2^{aᵢ}` are equal to `-aᵢ`, for each exponent `aᵢ` occurring in the expansion.
+- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 3: writing `n = ∑_{i=1}^{t} 2^{aᵢ}` in binary, among the values `ν₂(H_n - H_m)` for `m = 0, 1, …, n - 1` exactly `2^{aᵢ}` are equal to `-aᵢ`, for each exponent `aᵢ` occurring in the expansion.

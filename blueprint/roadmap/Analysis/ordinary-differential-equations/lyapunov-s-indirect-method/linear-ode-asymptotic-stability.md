@@ -9,4 +9,4 @@ $t \to \infty$, where $\|\cdot\|$ is the sup norm on $\mathbb{R}^n$.
 
 ## Sources
 
-- Classical linear stability theory; Hirsch-Smale-Devaney. Via leanprover/lean-eval@38361be, problem `linear_ode_asymptotic_stability`.
+- Classical linear stability theory; Hirsch-Smale-Devaney. Problem `linear_ode_asymptotic_stability` of the lean-eval benchmark.

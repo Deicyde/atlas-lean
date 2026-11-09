@@ -6,4 +6,4 @@ number $n \ge 1$, $\nu_2(H_{2n} - H_n) = -\lfloor \log_2(2n) \rfloor$.
 
 ## Sources
 
-- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Lemma 1 (`integers-2024-A27-lem-1`): for `n ≥ 1`, `ν₂(H_{2n} - H_n) = -⌊log₂(2n)⌋`.
+- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Lemma 1: for `n ≥ 1`, `ν₂(H_{2n} - H_n) = -⌊log₂(2n)⌋`.

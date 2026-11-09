@@ -7,4 +7,4 @@ satisfiable tends to $1$ as $n \to \infty$.
 
 ## Sources
 
-- Hajiaghayi and Sorkin, *The satisfiability threshold of random 3-SAT is at least 3.52* (2003), and Kaporis, Kirousis, and Lalas (2003), catalogue lower bound `3.52`. Known literature result; its proof is not supplied here.
+- Hajiaghayi and Sorkin, *The satisfiability threshold of random 3-SAT is at least 3.52* (2003), and Kaporis, Kirousis, and Lalas (2003), catalogue lower bound `3.52`.

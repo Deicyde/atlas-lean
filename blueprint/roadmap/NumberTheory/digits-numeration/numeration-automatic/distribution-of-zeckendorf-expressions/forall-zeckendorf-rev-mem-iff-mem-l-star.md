@@ -18,4 +18,4 @@ since $\mathrm{rev}_n(\bar\beta^1)$ is the maximal $L$-block $\theta^{n+1}$, whi
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 3 (`integers-2025-A25-lem-3`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 3.

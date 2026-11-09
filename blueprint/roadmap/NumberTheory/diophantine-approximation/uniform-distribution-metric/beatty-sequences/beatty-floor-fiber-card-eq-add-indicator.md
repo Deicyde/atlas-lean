@@ -9,4 +9,4 @@ and for exactly $k$ positive integers $n$ if $t \notin D$.
 
 ## Sources
 
-- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Corollary 2 (`integers-2025-A104-cor-2`).
+- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Corollary 2.

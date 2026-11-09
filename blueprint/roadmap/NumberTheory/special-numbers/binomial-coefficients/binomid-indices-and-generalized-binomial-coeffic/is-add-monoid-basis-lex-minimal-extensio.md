@@ -7,4 +7,4 @@ of nonzero atomic binomid indices that belong to $L$. Hence that set is the uniq
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Proposition 5 (`integers-2026-A113-prop-5`).
+- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Proposition 5.

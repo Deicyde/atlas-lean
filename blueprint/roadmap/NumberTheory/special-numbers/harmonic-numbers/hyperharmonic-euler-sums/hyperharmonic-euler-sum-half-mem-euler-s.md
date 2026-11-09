@@ -13,4 +13,4 @@ exponent $p + 1$ for $r \le p$; so $r < p$ is assumed.
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 2, first part (`integers-2026-A81-cor-2`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 2, first part.

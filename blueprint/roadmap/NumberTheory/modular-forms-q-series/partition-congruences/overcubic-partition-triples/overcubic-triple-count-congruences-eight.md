@@ -7,4 +7,4 @@ $\mathrm{bt}(64 \cdot 9^{\alpha+2} n + 264 \cdot 9^{\alpha+1})$ is divisible by 
 
 ## Sources
 
-- S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 8, eqs. (27)-(30) (`integers-2024-A80-thm-8`).
+- S. Shivaprasada Nayaka, B. N. Dharmendra, and M. C. Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Theorem 8, eqs. (27)-(30).

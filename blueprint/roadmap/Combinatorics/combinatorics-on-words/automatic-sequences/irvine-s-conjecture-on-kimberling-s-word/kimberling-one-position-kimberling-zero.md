@@ -9,4 +9,4 @@ This answers a problem of Fokkink, Ortega and Rust.
 
 ## Sources
 
-- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 3 (`integers-2024-A51-thm-3`).
+- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 3.

@@ -14,4 +14,4 @@ $\varepsilon \in E^*$ satisfies $\sum_k \varepsilon_k Q_k = \sum_k \inf(\varepsi
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 4 (`integers-2025-A25-lem-4`; arXiv:2308.12872v1, Section 2.3).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 4 (arXiv:2308.12872v1, Section 2.3).

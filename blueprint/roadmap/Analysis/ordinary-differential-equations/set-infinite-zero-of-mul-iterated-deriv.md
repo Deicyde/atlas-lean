@@ -11,4 +11,4 @@ If $u(x) \ne 0$ for some $x>0$, then $u$ has infinitely many zeros in $(1,\infty
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Ordinary differential operators), `benchmark/level2/ma_proofbench_l2_83.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; Ordinary differential operators), problem `ma_proofbench_l2_83`.

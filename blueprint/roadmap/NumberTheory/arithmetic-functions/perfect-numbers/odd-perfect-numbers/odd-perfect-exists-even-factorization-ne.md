@@ -5,4 +5,4 @@ a prime divisor whose exponent in the prime factorization of $N$ is even and dif
 
 ## Sources
 
-- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 1 (iv) (`integers-2024-A114-lem-1`).
+- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 1 (iv).

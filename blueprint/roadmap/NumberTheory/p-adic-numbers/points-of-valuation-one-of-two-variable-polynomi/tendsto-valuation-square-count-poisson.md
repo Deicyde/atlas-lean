@@ -24,4 +24,4 @@ assumed directly, as in the companion statement about sums over distinct tuples.
 
 ## Sources
 
-- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Theorem 1 (`integers-2026-A82-thm-1`).
+- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Theorem 1.

@@ -7,4 +7,4 @@ here), then $B$ is complete with respect to its maximal ideal.
 
 ## Sources
 
-- ATLAS `Atlas/NumberTheoryI/code/LocalExtensions.lean`, `integral_closure_isAdicComplete` (lines 1184--1259), obtained here from the general completeness theorem for finite local extensions.
+- ATLAS `integral_closure_isAdicComplete`, obtained here from the general completeness theorem for finite local extensions.

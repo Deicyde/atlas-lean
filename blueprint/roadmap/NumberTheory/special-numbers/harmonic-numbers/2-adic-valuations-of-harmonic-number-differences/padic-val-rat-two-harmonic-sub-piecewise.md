@@ -10,4 +10,4 @@ $2^M (j + 1) \le n \le 2^M (j + 1) + m - 1$, then $\nu_2(H_n - H_{n-m}) = -M - \
 
 ## Sources
 
-- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 6, formula (3.1) (`integers-2024-A27-thm-6`): let `M = ⌈log₂(m + 1)⌉` and `j = ⌊(n - m) / 2^M⌋`, where `1 ≤ m ≤ n`. Then `ν₂(H_n - H_{n-m}) = -M + 1` when `2^M * j + m ≤ n ≤ 2^M * (j + 1) - 1`, and `ν₂(H_n - H_{n-m}) = -M - ν₂(j + 1)` when `2^M * (j + 1) ≤ n ≤ 2^M * (j + 1) + m - 1`.
+- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 6, formula (3.1): let `M = ⌈log₂(m + 1)⌉` and `j = ⌊(n - m) / 2^M⌋`, where `1 ≤ m ≤ n`. Then `ν₂(H_n - H_{n-m}) = -M + 1` when `2^M * j + m ≤ n ≤ 2^M * (j + 1) - 1`, and `ν₂(H_n - H_{n-m}) = -M - ν₂(j + 1)` when `2^M * (j + 1) ≤ n ≤ 2^M * (j + 1) + m - 1`.

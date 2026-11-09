@@ -10,4 +10,4 @@ $b$ lie in a common $l$-sum-free set modulo $p^i$.
 
 ## Sources
 
-- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Lemma 2, part 1 (`integers-2025-A62-lem-2`).
+- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Lemma 2, part 1.

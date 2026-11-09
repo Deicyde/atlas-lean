@@ -20,4 +20,4 @@ $L(\emptyset; 0) = \kappa_0 = 0$.
 
 ## Sources
 
-- Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Lemma 1 (`integers-2026-A33-lem-1`).
+- Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Lemma 1.

@@ -14,4 +14,4 @@ convergent of $\alpha$ in lowest terms; the identities do not need these hypothe
 
 ## Sources
 
-- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 6 (`integers-2026-A57-lem-6`).
+- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 6.

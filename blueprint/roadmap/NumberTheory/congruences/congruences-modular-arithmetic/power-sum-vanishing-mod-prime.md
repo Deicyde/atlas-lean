@@ -8,4 +8,4 @@ hypothesis forces $e = 0$.
 
 ## Sources
 
-- Christian Ballot, "On a Congruence of Kimball and Webb Involving Lucas Sequences," Journal of Integer Sequences 17 (2014), Article 14.1.3, Lemma (label lem:char), lines 223–225, https://cs.uwaterloo.ca/journals/JIS/VOL17/Ballot/ballot7.tex Proves `Wanted` entry `powerSum_vanishing_mod_prime`.
+- Christian Ballot, "On a Congruence of Kimball and Webb Involving Lucas Sequences," Journal of Integer Sequences 17 (2014), Article 14.1.3, Lemma, lines 223–225, https://cs.uwaterloo.ca/journals/JIS/VOL17/Ballot/ballot7.tex

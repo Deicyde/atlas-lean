@@ -12,4 +12,4 @@ where the product runs over the distinct prime divisors $p$ of $n$.
 
 ## Sources
 
-- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 3, Formula (5) (`integers-2024-A23-thm-3`).
+- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 3, Formula (5).

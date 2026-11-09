@@ -6,4 +6,4 @@ $n^{-\lambda} f(nx) \to 0$ as $n \to \infty$ through the positive integers.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), `benchmark/level2/ma_proofbench_l2_37.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_37`.

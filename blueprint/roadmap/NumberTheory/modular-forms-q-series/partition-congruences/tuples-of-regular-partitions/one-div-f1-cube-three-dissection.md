@@ -24,4 +24,4 @@ $f_1^3 f_3^{12}$ and by $f_1^3 f_3^{14} f_6^4 f_9^3 f_{18}^6$ respectively.
 
 ## Sources
 
-- Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Lemma 3, eq. (6) (`integers-2024-A86-lem-3`).
+- Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Lemma 3, eq. (6).

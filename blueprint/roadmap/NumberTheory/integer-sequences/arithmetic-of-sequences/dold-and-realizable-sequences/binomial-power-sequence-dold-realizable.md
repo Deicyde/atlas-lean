@@ -8,4 +8,4 @@ the Möbius function, is non-negative and divisible by $n$.
 
 ## Sources
 
-- Zhang 2024, J. Integer Seq. 27, Article 24.3.3, Theorem 1.13. Proves `Wanted` entry `binomial_power_sequence_dold_realizable`.
+- Zhang 2024, J. Integer Seq. 27, Article 24.3.3, Theorem 1.13.

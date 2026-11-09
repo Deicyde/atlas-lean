@@ -8,4 +8,4 @@ $$\int_\alpha^\beta |f(x) f'(x)|\,dx \le \frac{\beta - \alpha}{2} \int_\alpha^\b
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Inequalities in real analysis), `benchmark/level1/ma_proofbench_l1_76.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Inequalities in real analysis), problem `ma_proofbench_l1_76`.

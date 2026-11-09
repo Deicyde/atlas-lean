@@ -6,4 +6,4 @@ the central trinomial coefficient: the coefficient of $X^{n-1}$ in $(1 + X + X^2
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 11 (`integers-2025-A5-thm-11`).
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 11.

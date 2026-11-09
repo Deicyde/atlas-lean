@@ -13,4 +13,4 @@ powers, so this form implies the paper's.
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 6 (quoting its reference [4, Corollary 3.5]) (`integers-2024-A111-thm-6`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 6 (quoting its reference [4, Corollary 3.5]).

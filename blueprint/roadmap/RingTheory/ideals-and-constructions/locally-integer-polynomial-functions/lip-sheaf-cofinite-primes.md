@@ -13,4 +13,4 @@ open set $U$ is LIP on $U$.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 5 (`integers-2025-A41-cor-5`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 5.

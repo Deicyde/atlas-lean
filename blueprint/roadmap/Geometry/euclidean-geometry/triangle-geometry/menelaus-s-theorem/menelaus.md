@@ -17,4 +17,4 @@ other hypotheses or are not needed; they keep the shape of the classical stateme
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Menelaus%27s_theorem (statement menelaus-s1).
+- https://en.wikipedia.org/wiki/Menelaus%27s_theorem.

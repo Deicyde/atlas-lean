@@ -9,4 +9,4 @@ error exponent, so its constant depends only on $\mathcal{R}(v)$ and $R/a$.
 
 ## Sources
 
-- S. Fournais and J. P. Solovej, `The energy of dilute Bose gases`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2020-192-3-BoseGases.lean Via leanprover/lean-eval@38361be, problem `annals_bose_gases`.
+- S. Fournais and J. P. Solovej, `The energy of dilute Bose gases`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_bose_gases` of the lean-eval benchmark.

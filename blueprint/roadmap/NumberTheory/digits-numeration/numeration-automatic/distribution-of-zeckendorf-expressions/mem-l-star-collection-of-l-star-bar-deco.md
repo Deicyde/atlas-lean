@@ -16,4 +16,4 @@ $\mu \in \tilde E^*$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Corollary 2 (`integers-2025-A25-cor-2`; arXiv:2308.12872v1, Section 3.3).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Corollary 2 (arXiv:2308.12872v1, Section 3.3).

@@ -16,4 +16,4 @@ not part of this statement.
 
 ## Sources
 
-- Somer and Křížek, *Generalization of a Theorem of Vélez on Uniform Distribution in Second-Order Linear Recurrences*, INTEGERS 25 (2025), Article A1, Theorem 2.4 (`integers-2025-A1-thm-2-4`).
+- Somer and Křížek, *Generalization of a Theorem of Vélez on Uniform Distribution in Second-Order Linear Recurrences*, INTEGERS 25 (2025), Article A1, Theorem 2.4.

@@ -9,4 +9,4 @@ The statement was resolved in the affirmative by Barreto and Leeham.
 
 ## Sources
 
-- External Lean proof of Erdős Problem 729, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos729.lean. Moved from `OpenConjectures/NumberTheory/ErdosProblem729`.
+- External Lean proof of Erdős Problem 729, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/v4.29.1/ErdosProblems/Erdos729.lean.

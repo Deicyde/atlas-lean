@@ -7,4 +7,4 @@ The source states this for $S$-Diophantine triples; that hypothesis is not neede
 
 ## Sources
 
-- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 1, quoting Szalay and Ziegler (2013), Lemma 2.1 (`integers-2025-A92-lem-1`).
+- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 1, quoting Szalay and Ziegler (2013), Lemma 2.1.

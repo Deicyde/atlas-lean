@@ -10,4 +10,4 @@ same set $E$.
 
 ## Sources
 
-- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Lemma 1 (`integers-2024-A5-lem-1`).
+- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Lemma 1.

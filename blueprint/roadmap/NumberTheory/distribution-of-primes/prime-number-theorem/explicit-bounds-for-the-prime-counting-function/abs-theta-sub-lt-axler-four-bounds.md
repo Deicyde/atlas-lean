@@ -12,4 +12,4 @@ These bounds are re-established after the correction of Faber and Kadiri's bound
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 3 (`integers-2024-A34-prop-3`), inequalities (25)-(28).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Proposition 3, inequalities (25)-(28).

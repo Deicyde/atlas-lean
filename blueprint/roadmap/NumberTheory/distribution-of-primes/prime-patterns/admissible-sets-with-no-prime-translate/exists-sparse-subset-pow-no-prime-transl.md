@@ -12,4 +12,4 @@ which meet both residue classes modulo $2$.
 
 ## Sources
 
-- Desmond Weisenberg, *Sparse Admissible Sets and a Problem of Erdős and Graham*, INTEGERS 24 (2024), Article A89, Theorem 1 (`integers-2024-A89-thm-1`).
+- Desmond Weisenberg, *Sparse Admissible Sets and a Problem of Erdős and Graham*, INTEGERS 24 (2024), Article A89, Theorem 1.

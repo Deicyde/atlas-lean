@@ -7,4 +7,4 @@ unit group of $\mathbb{Z}/F_k\mathbb{Z}$ (in which $2$ is a unit because $F_k$ i
 
 ## Sources
 
-- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 5 (`integers-2024-A23-cor-5`).
+- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 5.

@@ -16,4 +16,4 @@ one has $p^2 \mid F_1(k, l)$ and $p^2 \mid F_2(k, l)$.
 
 ## Sources
 
-- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 3 (`integers-2026-A82-prop-3`).
+- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 3.

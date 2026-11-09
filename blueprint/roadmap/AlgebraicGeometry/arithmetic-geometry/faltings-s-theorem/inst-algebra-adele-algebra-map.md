@@ -7,4 +7,4 @@ principal adele map $F \to \mathcal{A}_F$.
 
 ## Sources
 
-- see manifest Via leanprover/lean-eval@38361be, problem `faltings`.
+-. Problem `faltings` of the lean-eval benchmark.

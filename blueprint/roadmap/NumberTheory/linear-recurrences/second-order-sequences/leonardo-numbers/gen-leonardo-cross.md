@@ -8,4 +8,4 @@ $$L_{k,n} M_{k,n+1} - L_{k,n+1} M_{k,n-1} = (k+1) L_{k,2n} - k L_{k,n} + k.$$
 
 ## Sources
 
-- Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 2.3 (`fq-2024-kuhapatanakul05292024-thm-2.3`).
+- Kuhapatanakul, *Note on the Generalized Leonardo Numbers*, Fibonacci Quarterly (2024), Theorem 2.3.

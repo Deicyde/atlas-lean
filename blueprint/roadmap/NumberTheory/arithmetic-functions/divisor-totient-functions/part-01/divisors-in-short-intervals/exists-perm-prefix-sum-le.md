@@ -9,4 +9,4 @@ No positivity of the $x_i$ or $y_i$ is assumed.
 
 ## Sources
 
-- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Lemma 2 (`integers-2026-A115-lem-2`).
+- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Lemma 2.

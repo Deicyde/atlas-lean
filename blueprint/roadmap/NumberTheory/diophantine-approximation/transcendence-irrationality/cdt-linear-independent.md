@@ -12,4 +12,4 @@ over $\mathbb{Q}$.
 
 ## Sources
 
-- https://arxiv.org/abs/2408.15403 Via leanprover/lean-eval@38361be, problem `cdt_linearIndependent`.
+- https://arxiv.org/abs/2408.15403. Problem `cdt_linearIndependent` of the lean-eval benchmark.

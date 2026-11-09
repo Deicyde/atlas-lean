@@ -13,4 +13,4 @@ $z_3 = w_3 - e$ and $z_4 = w_4 - 2e$.
 
 ## Sources
 
-- Kálmán Liptai, László Németh, Tamás Szakács and László Szalay, *On Certain Fibonacci Representations*, Fibonacci Quarterly 62 (2024), no. 4, Theorem 2.3 (`fq-2024-szakacs06212024rev-thm-2.3`).
+- Kálmán Liptai, László Németh, Tamás Szakács and László Szalay, *On Certain Fibonacci Representations*, Fibonacci Quarterly 62 (2024), no. 4, Theorem 2.3.

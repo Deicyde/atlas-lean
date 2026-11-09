@@ -11,4 +11,4 @@ The hypothesis includes $N = 0$, as in the paper's proof.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 2 (a) (`integers-2024-A24-lem-2`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 2 (a).

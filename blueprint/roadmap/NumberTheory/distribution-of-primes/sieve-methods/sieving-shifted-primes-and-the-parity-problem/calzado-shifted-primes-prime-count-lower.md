@@ -12,4 +12,4 @@ $x^{1/5} < p \le x^{1/2} (\log x)^{-B}$.
 
 ## Sources
 
-- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Theorem 2 (`integers-2026-A117-thm-2`).
+- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Theorem 2.

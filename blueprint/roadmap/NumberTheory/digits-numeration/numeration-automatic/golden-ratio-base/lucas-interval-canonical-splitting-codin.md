@@ -13,4 +13,4 @@ $n$-fold iterate of $\kappa$ applied to the one-letter word.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 4 (`integers-2024-A24-thm-4`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 4.

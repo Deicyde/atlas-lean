@@ -12,4 +12,4 @@ $$
 
 ## Sources
 
-- Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Corollary 1 (`integers-2025-A52-cor-1`).
+- Chance Sanford, *A Dilogarithm Series and a Generalization of a Theorem of Bridgeman*, INTEGERS 25 (2025), Article A52, Corollary 1.

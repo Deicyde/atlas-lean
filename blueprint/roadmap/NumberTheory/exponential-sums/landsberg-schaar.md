@@ -9,4 +9,4 @@ $$
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Landsberg%E2%80%93Schaar_relation (landsberg-schaar-s1); proves `Wanted` entry `landsberg_schaar`.
+- https://en.wikipedia.org/wiki/Landsberg%E2%80%93Schaar_relation.

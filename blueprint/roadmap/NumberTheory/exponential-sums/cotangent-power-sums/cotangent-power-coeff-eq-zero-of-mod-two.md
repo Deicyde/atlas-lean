@@ -9,4 +9,4 @@ $i^j \cot^{(j-1)}$.
 
 ## Sources
 
-- Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, Proposition 1, the sentence that follows it (`integers-2025-A63-prop-1`).
+- Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, Proposition 1, the sentence that follows it.

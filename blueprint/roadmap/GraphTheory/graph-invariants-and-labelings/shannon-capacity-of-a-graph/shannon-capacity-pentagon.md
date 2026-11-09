@@ -7,4 +7,4 @@ as $k \to \infty$.
 
 ## Sources
 
-- Knill, *Some fundamental theorems in mathematics*, §238. Via leanprover/lean-eval@38361be, problem `shannon_capacity_pentagon`.
+- Knill, *Some fundamental theorems in mathematics*, §238. Problem `shannon_capacity_pentagon` of the lean-eval benchmark.

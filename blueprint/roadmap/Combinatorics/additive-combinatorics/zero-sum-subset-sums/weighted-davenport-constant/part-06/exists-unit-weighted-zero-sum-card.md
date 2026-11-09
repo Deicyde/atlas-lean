@@ -9,4 +9,4 @@ $\mathbb{Z}_n$ for $i \in I$ such that $\sum_{i \in I} a_i x_i = 0$.
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 5.5 (`integers-2024-A38-thm-5-5`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 5.5.

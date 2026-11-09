@@ -13,4 +13,4 @@ Problem 21.38 solved (AI solution confirmed by S. Corson).
 
 ## Sources
 
-- Nilradical, A group of spread one (note of 17 September 2026, Kourovka Notebook site), https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/09/nilradical-kourovka-21-38.pdf; E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (20 October 2026), Problem 21.38, https://arxiv.org/abs/1401.0300v49. Moved from `OpenConjectures/GroupTheory/Kourovka21Problem38`.
+- Nilradical, A group of spread one (note of 17 September 2026, Kourovka Notebook site), https://kourovkanotebookorg.wordpress.com/wp-content/uploads/2026/09/nilradical-kourovka-21-38.pdf; E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (20 October 2026), Problem 21.38, https://arxiv.org/abs/1401.0300v49.

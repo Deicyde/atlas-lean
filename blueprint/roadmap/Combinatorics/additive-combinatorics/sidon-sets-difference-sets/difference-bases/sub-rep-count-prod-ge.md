@@ -9,4 +9,4 @@ $(z, z') \in (A_1 \times A_2) \times (A_1 \times A_2)$.
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 5 (`integers-2025-A77-lem-5`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 5.

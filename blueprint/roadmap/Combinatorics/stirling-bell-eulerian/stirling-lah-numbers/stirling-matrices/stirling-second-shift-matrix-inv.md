@@ -11,4 +11,4 @@ The paper assumes $m \ge 1$; the case $m = 0$, which reads $S^{[0]}(n)^{-1} = s(
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 3 (`integers-2025-A27-thm-3`).
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 3.

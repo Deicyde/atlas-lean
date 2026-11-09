@@ -9,4 +9,4 @@ where $S(i, j)$ denotes the Stirling numbers of the second kind.
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Lemma 2, Equation (4.11) (`integers-2024-A70-lem-2`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Lemma 2, Equation (4.11).

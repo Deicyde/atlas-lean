@@ -9,4 +9,4 @@ equals $\sum_{e \mid n} e \, \varphi(n/e)$.
 
 ## Sources
 
-- Kevin A. Broughan, "The Gcd-Sum Function," Journal of Integer Sequences 4 (2001), Article 01.2.2, Theorem 2.3 (equation label 6), lines 220–226, https://cs.uwaterloo.ca/journals/JIS/VOL4/BROUGHAN/gcdsum.tex
+- Kevin A. Broughan, "The Gcd-Sum Function," Journal of Integer Sequences 4 (2001), Article 01.2.2, Theorem 2.3, lines 220–226, https://cs.uwaterloo.ca/journals/JIS/VOL4/BROUGHAN/gcdsum.tex

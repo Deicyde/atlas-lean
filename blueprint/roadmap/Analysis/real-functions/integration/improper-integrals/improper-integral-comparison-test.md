@@ -7,4 +7,4 @@ $b \to \infty$, then $\int_a^b f(x)\,dx$ also converges to a real limit as $b \t
 
 ## Sources
 
-- - Mathlib `docs/undergrad.yaml`, section "Single Variable Real Analysis / Integration", entry "comparison test for improper integrals" (currently missing). - https://mathbooks.unl.edu/Calculus/sec-5-11-comparison.html
+- https://mathbooks.unl.edu/Calculus/sec-5-11-comparison.html

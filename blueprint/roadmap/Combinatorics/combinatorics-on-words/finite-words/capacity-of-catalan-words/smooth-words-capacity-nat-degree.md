@@ -10,4 +10,4 @@ $4m + p$ (Mansour and Shattuck's Theorem 5).
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 5 (`integers-2025-A5-thm-5`).
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 5.

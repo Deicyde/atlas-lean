@@ -10,4 +10,4 @@ $$\sum_{n=0}^{\infty} \frac{n\,C_n}{4^n \binom{n+z}{n}} =
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Corollary 1 (`integers-2025-A18-cor-1`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Corollary 1.

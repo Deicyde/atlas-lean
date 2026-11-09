@@ -15,4 +15,4 @@ article *Lemme des noyaux*, <https://fr.wikipedia.org/wiki/Lemme_des_noyaux>.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Linear algebra / Structure theory of endomorphisms / diagonalization; R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 1.3.12.
+- R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 1.3.12.

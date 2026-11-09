@@ -7,4 +7,4 @@ $\liminf \rho(n)/n = (3 + \sqrt{3})/4$.
 
 ## Sources
 
-- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Corollary 1 (`integers-2024-A51-cor-1`).
+- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Corollary 1.

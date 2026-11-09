@@ -17,4 +17,4 @@ or zero.
 
 ## Sources
 
-- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 6 (`integers-2025-A104-lem-6`).
+- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 6.

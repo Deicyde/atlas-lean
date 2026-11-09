@@ -8,4 +8,4 @@ if $-(a - 1)/3 < m < 2a/3$.
 
 ## Sources
 
-- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 11 (`integers-2026-A107-thm-11`).
+- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 11.

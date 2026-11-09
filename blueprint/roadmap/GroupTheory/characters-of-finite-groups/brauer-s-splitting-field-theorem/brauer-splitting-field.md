@@ -11,4 +11,4 @@ $x \in \mathbb{C} \otimes_K W$.
 
 ## Sources
 
-- R. Brauer, On the representation of a group of order g in the field of g-th roots of unity, Amer. J. Math. 67 (1945), 461–471. Via leanprover/lean-eval@38361be, problem `brauer_splitting_field`.
+- R. Brauer, On the representation of a group of order g in the field of g-th roots of unity, Amer. J. Math. 67 (1945), 461–471. Problem `brauer_splitting_field` of the lean-eval benchmark.

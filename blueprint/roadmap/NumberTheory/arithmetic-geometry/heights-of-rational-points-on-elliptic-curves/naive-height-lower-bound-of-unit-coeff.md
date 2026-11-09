@@ -11,4 +11,4 @@ $(0, 1)$ or $(0, -1)$.
 
 ## Sources
 
-- Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Theorem 2 (`integers-2025-A66-thm-2`).
+- Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Theorem 2.

@@ -8,4 +8,4 @@ $f(2^{2k-1}) = 2^{2k-1}$ for every positive integer $k$ with $2k \le N - 2$.
 
 ## Sources
 
-- Mingyu Kim and Poo-Sung Park, *An Additive Uniqueness Pair of Sets for Multiplicative Functions: Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A103, Lemma 3 (`integers-2026-A103-lem-3`).
+- Mingyu Kim and Poo-Sung Park, *An Additive Uniqueness Pair of Sets for Multiplicative Functions: Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A103, Lemma 3.

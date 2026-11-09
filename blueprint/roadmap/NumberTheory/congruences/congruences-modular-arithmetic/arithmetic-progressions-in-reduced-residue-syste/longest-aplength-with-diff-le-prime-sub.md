@@ -7,4 +7,4 @@ contained in the set $R_m(n)$ of integers $a$ with $m + 1 \le a \le m + n$ and $
 
 ## Sources
 
-- Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Lemma 1(i) (`integers-2026-A6-lem-1`).
+- Chaninat Phothila, Natthakan Thoket and Narakorn Rompurk Kanasri, *Length of the Longest Arithmetic Progressions in a Certain Reduced Residue System*, INTEGERS 26 (2026), Article A6, Lemma 1(i).

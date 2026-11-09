@@ -6,4 +6,4 @@ $Y \subseteq \{1, \dots, m\}$ such that $|Y \cap X_i|$ is even for every $i$.
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 4.3 (`integers-2024-A38-lem-4-3`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 4.3.

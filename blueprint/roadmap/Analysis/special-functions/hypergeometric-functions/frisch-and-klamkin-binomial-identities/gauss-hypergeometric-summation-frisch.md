@@ -16,4 +16,4 @@ side is $0$ when $b - n + 1$ is a nonpositive integer.
 
 ## Sources
 
-- Ulrich Abel, "A Short Proof of the Binomial Identities of Frisch and Klamkin," Journal of Integer Sequences 23 (2020), Article 20.7.1, displayed Frisch specialization at source lines 200-205 of the official TeX `https://cs.uwaterloo.ca/journals/JIS/VOL23/Abel/abel12.tex`.
+- Ulrich Abel, "A Short Proof of the Binomial Identities of Frisch and Klamkin," Journal of Integer Sequences 23 (2020), Article 20.7.1, displayed Frisch specialization at source lines 200-205 of the official TeX <https://cs.uwaterloo.ca/journals/JIS/VOL23/Abel/abel12.tex>.

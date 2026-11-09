@@ -9,4 +9,4 @@ $x_1, \dots, x_k$, then $f(n) = n$ for every natural number $n$.
 
 ## Sources
 
-- Elchin Hasanalizade, *On the k-Additive Uniqueness of Sums of Consecutive Squares for Multiplicative Functions*, INTEGERS 25 (2025), Article A40, Theorem 2 (`integers-2025-A40-thm-2`).
+- Elchin Hasanalizade, *On the k-Additive Uniqueness of Sums of Consecutive Squares for Multiplicative Functions*, INTEGERS 25 (2025), Article A40, Theorem 2.

@@ -9,4 +9,4 @@ positive integer is $1$-full.
 
 ## Sources
 
-- Sunanta Srisopha and Teerapat Srichan, *The Odd/Even Dichotomy for the Set of Numbers That Are Both k-Full and l-Free*, INTEGERS 24 (2024), Article A106, Corollary 1 (`integers-2024-A106-cor-1`).
+- Sunanta Srisopha and Teerapat Srichan, *The Odd/Even Dichotomy for the Set of Numbers That Are Both k-Full and l-Free*, INTEGERS 24 (2024), Article A106, Corollary 1.

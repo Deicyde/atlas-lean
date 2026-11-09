@@ -8,4 +8,4 @@ $n \in \{-9, -8, -7, -5, -3, -2, 1, 2, 3, 4, 7\}$.
 
 ## Sources
 
-- Adel Alahmadi and Florian Luca, "On Tribonacci Numbers that are Products of Factorials", Journal of Integer Sequences 26 (2023), Article 23.2.2, Theorem 2 (label `thm:2`), lines 121-127, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Luca/luca52.tex>.
+- Adel Alahmadi and Florian Luca, "On Tribonacci Numbers that are Products of Factorials", Journal of Integer Sequences 26 (2023), Article 23.2.2, Theorem 2, lines 121-127, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Luca/luca52.tex>.

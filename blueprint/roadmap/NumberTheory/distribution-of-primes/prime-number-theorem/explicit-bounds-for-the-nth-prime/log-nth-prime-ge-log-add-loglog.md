@@ -11,4 +11,4 @@ $-0.9715$), so $n \ge 3$ is assumed.
 
 ## Sources
 
-- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 8, inequality (17) (`integers-2025-A58-lem-8`).
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Lemma 8, inequality (17).

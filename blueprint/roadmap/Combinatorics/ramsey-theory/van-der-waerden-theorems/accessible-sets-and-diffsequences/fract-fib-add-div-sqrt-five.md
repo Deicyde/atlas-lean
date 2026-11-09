@@ -17,4 +17,4 @@ The paper prints $+2(-\varphi)^{-n}/5$ in (i). The sign $-$ is the one its proof
 
 ## Sources
 
-- William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Lemma 5 (`integers-2025-A29-lem-5`).
+- William J. Wesley, *Improved Ramsey-Type Theorems for Fibonacci Numbers and Other Sequences*, INTEGERS 25 (2025), Article A29, Lemma 5.

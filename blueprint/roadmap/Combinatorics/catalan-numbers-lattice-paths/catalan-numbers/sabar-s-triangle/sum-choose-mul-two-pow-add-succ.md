@@ -6,4 +6,4 @@ $V_n(2) + V_{n+1}(2) = 3 \cdot 2^n \binom{2n+2}{n+1}$.
 
 ## Sources
 
-- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Lemma 1 (`integers-2026-A27-lem-1`).
+- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Lemma 1.

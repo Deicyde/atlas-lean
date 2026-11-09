@@ -8,4 +8,4 @@ $r = 3q + 2\gamma$ if $\gamma = -\alpha\beta$, and $2r = 3q + \gamma$ if $\gamma
 
 ## Sources
 
-- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Lemma 4 (`integers-2026-A102-lem-4`).
+- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Lemma 4.

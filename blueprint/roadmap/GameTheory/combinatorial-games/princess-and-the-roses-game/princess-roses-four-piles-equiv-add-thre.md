@@ -7,4 +7,4 @@ Sprague–Grundy value.
 
 ## Sources
 
-- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Lemma 9 (`integers-2026-G4-lem-9`).
+- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Lemma 9.

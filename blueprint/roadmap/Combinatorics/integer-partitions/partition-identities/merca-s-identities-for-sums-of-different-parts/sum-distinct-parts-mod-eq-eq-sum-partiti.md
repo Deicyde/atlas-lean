@@ -9,4 +9,4 @@ $$a_{r,m}(n) = \sum_{j \ge 0,\ mj + r \le n} (mj + r)\, p(n - mj - r).$$
 
 ## Sources
 
-- Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 1 (i) (`integers-2024-A15-thm-1`).
+- Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 1 (i).

@@ -10,4 +10,4 @@ has one. Then $|\xi - \xi'| \le 2^{1-k}$.
 
 ## Sources
 
-- Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Lemma 5 (`integers-2025-A47-lem-5`), quoted from Cusick and Flahive, Lemma 1.
+- Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Lemma 5, quoted from Cusick and Flahive, Lemma 1.

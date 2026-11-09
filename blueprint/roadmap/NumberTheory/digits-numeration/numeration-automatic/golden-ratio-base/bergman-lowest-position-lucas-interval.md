@@ -8,4 +8,4 @@ then $-R = 2n + 2$.
 
 ## Sources
 
-- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Proposition 5.1(b) (`fq-2024-dekking11102023-prop-5.1`).
+- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Proposition 5.1(b).

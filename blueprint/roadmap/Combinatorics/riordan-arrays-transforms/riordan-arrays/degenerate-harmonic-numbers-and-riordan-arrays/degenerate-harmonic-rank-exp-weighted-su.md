@@ -12,4 +12,4 @@ H_{n+1,\lambda}(\alpha) - \frac{H_{n,\lambda}(\alpha)}{\alpha}.$$
 
 ## Sources
 
-- Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 3 (`integers-2024-A41-thm-3`).
+- Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 3.

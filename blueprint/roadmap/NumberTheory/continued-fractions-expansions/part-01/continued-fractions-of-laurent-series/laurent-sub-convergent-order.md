@@ -9,4 +9,4 @@ $|\alpha - P_0/Q_0| = |\alpha|$ and $|\alpha - P_n/Q_n| < |\alpha|$ for all $n \
 
 ## Sources
 
-- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 4 (`integers-2026-A57-lem-4`).
+- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 4.

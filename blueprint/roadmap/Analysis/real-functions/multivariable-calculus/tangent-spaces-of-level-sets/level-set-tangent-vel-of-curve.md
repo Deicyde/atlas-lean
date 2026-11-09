@@ -10,4 +10,4 @@ function determined by the level-set equation.
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Submanifolds of R^n`, entry `tangent space` (unmapped); J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Theorem 5.12; stable ref https://en.wikipedia.org/wiki/Tangent_space.
+- J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Theorem 5.12; https://en.wikipedia.org/wiki/Tangent_space.

@@ -8,4 +8,4 @@ the denominator cleared, where $\varphi(q) = f(q,q)$ and $\chi(-q) = (q;q^2)_\in
 
 ## Sources
 
-- A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Lemma 5, Equation (11) (`integers-2024-A103-lem-5`).
+- A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Lemma 5, Equation (11).

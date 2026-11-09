@@ -13,4 +13,4 @@ independently by D. H. Hamilton.
 
 ## Sources
 
-- Moduli difference of initial inverse logarithmic coefficients for starlike and convex functions (2026), arXiv:2603.17600, https://arxiv.org/abs/2603.17600. Moved from `OpenConjectures/Analysis/StarlikeCoefficientSuccessiveDifference`.
+- Moduli difference of initial inverse logarithmic coefficients for starlike and convex functions (2026), arXiv:2603.17600, https://arxiv.org/abs/2603.17600.

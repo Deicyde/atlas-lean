@@ -9,4 +9,4 @@ $$t_k(n + 1) = \sum_{j=0}^{n} \frac{k (j + 1)\, b_{j+1}}{n + 1}\, t_k(n - j).$$
 
 ## Sources
 
-- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Corollary 1, second recurrence (`integers-2026-A93-cor-1`).
+- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Corollary 1, second recurrence.

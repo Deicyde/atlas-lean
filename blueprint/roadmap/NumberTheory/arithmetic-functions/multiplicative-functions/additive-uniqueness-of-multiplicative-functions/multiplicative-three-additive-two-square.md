@@ -8,4 +8,4 @@ $f(3) = 3$ and $f(5) = 5$.
 
 ## Sources
 
-- Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Lemma 2 (`integers-2026-A121-lem-2`).
+- Jewel Mahajan, *Multiplicative Functions Additive on Partitions of 2k Nonzero Squares*, INTEGERS 26 (2026), Article A121, Lemma 2.

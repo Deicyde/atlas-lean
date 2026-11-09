@@ -7,4 +7,4 @@ $\frac{1}{2} \log m < k < \log m$ and every prime $p \le 2k$ has natural density
 
 ## Sources
 
-- Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 2 (`integers-2026-A47-lem-2`).
+- Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Lemma 2.

@@ -6,4 +6,4 @@ $S$-game within $5$ moves.
 
 ## Sources
 
-- Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Theorem 7 (`integers-2026-A40-thm-7`).
+- Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Theorem 7.

@@ -23,4 +23,4 @@ $n_2 = 1378$, while $\pi_U(1378) = 78 \nmid 1378$.
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 4.3 (`integers-2024-A36-thm-4-3`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 4.3.

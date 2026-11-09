@@ -14,4 +14,4 @@ $b = 0$ both sides of the closed form are $\delta_{j,k}$.
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 5 (`integers-2026-A36-cor-5`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 5.

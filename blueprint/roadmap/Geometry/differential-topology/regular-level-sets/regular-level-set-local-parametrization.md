@@ -13,4 +13,4 @@ to extend the local graphing function globally. A shear chart makes its graph ma
 
 ## Sources
 
-- undergrad.yaml `Submanifolds of R^n / local parameterization` (missing); J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4 (rank theorem).
+- J. Lee, Introduction to Smooth Manifolds, 2nd ed., Ch. 4 (rank theorem).

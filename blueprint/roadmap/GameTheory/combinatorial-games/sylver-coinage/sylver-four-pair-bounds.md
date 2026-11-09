@@ -8,4 +8,4 @@ By the characterization of Proposition 7, such pairs $(q, x)$ are the 4-pairs of
 
 ## Sources
 
-- Morgan Boyers, Natalie Burton, Jeff Rushall, James Warner and Tara Zurick, *On Winning Strategies in Sylver Coinage When 4 Has Been Chosen*, INTEGERS 24 (2024), Article G2, Theorem 4 (`integers-2024-G2-thm-4`).
+- Morgan Boyers, Natalie Burton, Jeff Rushall, James Warner and Tara Zurick, *On Winning Strategies in Sylver Coinage When 4 Has Been Chosen*, INTEGERS 24 (2024), Article G2, Theorem 4.

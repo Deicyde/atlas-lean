@@ -9,4 +9,4 @@ Since $|2A| \ge 2k - 1$ always, taking $b$ to be a natural number loses nothing.
 
 ## Sources
 
-- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 5 (Freiman's `3k - 4` theorem) (`integers-2025-A12-thm-5`).
+- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 5 (Freiman's `3k - 4` theorem).

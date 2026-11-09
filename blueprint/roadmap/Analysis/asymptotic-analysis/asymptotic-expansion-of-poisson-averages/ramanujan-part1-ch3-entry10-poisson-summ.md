@@ -9,4 +9,4 @@ $j \notin F$ is summable.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 10, printed pp. 57-58 / PDF pp. 67-68. Proves `Wanted` entry `ramanujan_part1_ch3_entry10_poisson_summable`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 10, printed pp. 57-58 / PDF pp. 67-68.

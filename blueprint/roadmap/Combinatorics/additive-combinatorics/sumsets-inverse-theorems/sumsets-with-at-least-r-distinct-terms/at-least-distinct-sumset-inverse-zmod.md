@@ -9,4 +9,4 @@ an arithmetic progression of length $k$.
 
 ## Sources
 
-- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 11 (`integers-2025-A12-thm-11`).
+- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 11.

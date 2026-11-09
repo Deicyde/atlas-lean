@@ -11,4 +11,4 @@ In particular $\mathrm{LIP}(U)$ is not Noetherian.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 4 (`integers-2025-A41-thm-4`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 4.

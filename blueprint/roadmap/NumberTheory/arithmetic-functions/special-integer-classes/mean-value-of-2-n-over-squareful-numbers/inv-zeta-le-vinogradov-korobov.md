@@ -7,4 +7,4 @@ $\sigma \ge 1 - C / g(T)$, we have $\zeta(s) \ne 0$ and $|1/\zeta(s)| \le K g(T)
 
 ## Sources
 
-- Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 5 (`integers-2024-A110-lem-5`).
+- Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 5.

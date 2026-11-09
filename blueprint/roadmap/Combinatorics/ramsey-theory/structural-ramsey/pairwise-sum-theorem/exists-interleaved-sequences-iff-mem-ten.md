@@ -11,4 +11,4 @@ $X \in V_1 \otimes V_2$ and $X \in V_2 \otimes V_1$.
 
 ## Sources
 
-- Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Lemma 2.1 (`integers-2025-A105-lem-2-1`).
+- Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Lemma 2.1.

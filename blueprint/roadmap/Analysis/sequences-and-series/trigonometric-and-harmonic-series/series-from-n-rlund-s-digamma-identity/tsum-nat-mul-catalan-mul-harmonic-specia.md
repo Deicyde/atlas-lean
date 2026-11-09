@@ -13,4 +13,4 @@ $$\sum_{n=0}^{\infty} \frac{n\,O_{n+2}}{(n+1)(2n+1)(2n+3)} =
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 7, particular cases and identity (16) (`integers-2025-A18-thm-7`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 7, particular cases and identity (16).

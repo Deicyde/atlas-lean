@@ -26,4 +26,4 @@ These are the cases of Table 2 of the source.
 
 ## Sources
 
-- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Proposition 1 and Table 2 (`integers-2025-A92-prop-1`).
+- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Proposition 1 and Table 2.

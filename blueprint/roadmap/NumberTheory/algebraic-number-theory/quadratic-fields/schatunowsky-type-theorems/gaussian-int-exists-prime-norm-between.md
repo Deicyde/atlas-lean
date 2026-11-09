@@ -7,4 +7,4 @@ of $\mathbb{Z}[i]$ with $N(\pi) < N(\rho) \le 2N(\pi)$.
 
 ## Sources
 
-- Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Lemma 2 (`integers-2026-A110-lem-2`).
+- Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Lemma 2.

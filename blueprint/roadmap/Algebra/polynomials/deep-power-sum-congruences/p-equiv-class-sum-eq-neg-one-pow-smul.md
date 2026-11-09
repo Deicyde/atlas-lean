@@ -13,4 +13,4 @@ distinct parts $a$ of $\mu$, with $r_a$ the number of parts of $\mu$ equal to $a
 
 ## Sources
 
-- S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Lemma 35 (`integers-2024-A46-lem-35`).
+- S. Anni, A. Ghitza and A. Medvedovsky, *Elementary Symmetric Functions and Deep Power-Sum Congruences*, INTEGERS 24 (2024), Article A46, Lemma 35.

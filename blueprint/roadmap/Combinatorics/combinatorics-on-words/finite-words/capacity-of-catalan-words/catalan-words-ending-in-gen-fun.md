@@ -7,4 +7,4 @@ integer coefficients, $\sum_{n \ge 0} a_{n,i} x^n = x^i C(x)^i$.
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Corollary 3 (`integers-2025-A5-cor-3`).
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Corollary 3.

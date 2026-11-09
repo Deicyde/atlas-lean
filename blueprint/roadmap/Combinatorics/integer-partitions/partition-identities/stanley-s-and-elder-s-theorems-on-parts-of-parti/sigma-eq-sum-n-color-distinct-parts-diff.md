@@ -11,4 +11,4 @@ where $\sigma(m)$ is the sum of the divisors of $m$.
 
 ## Sources
 
-- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 8 (`integers-2025-A94-cor-8`).
+- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 8.

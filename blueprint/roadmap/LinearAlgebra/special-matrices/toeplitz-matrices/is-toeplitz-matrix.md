@@ -8,8 +8,6 @@ diagonals.
 Only the values $c(k)$ with $-n \le k \le n$ enter the condition, so this is the same as asking
 for real coefficients $c_{-n}, \dots, c_n$.
 
-Concept id: `jis_term_af166143477154e55b2be88d`.
-
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL18/Felsner/felsner2.tex Source SHA-256: `f9b167508df14b8b3fa97556d04b3fd2fca3fc7939a1c23904e576e73f0a58c2`. Definition block SHA-256: `17bf8967c8c4965db527869b4efe74d630e63681258d740ad2f98a54e2ed8008`.
+- https://cs.uwaterloo.ca/journals/JIS/VOL18/Felsner/felsner2.tex

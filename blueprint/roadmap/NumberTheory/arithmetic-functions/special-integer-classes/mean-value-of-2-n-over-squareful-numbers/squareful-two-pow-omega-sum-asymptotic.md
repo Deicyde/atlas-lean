@@ -21,4 +21,4 @@ stays bounded away from $0$ and the statement is one existential $c > 0$.
 
 ## Sources
 
-- Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Theorem 1 (`integers-2024-A110-thm-1`).
+- Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Theorem 1.

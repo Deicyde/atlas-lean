@@ -10,4 +10,4 @@ divisible by $k$.
 
 ## Sources
 
-- `https://cs.uwaterloo.ca/journals/JIS/VOL28/Klaska/klaska22.tex`, Theorem `thm:5`, lines 593--606 of `56ede62e8bb2abc2c9097317bce881d696be23082f48fa2822d297f0f11e65af.tex` (source SHA-256 `56ede62e8bb2abc2c9097317bce881d696be23082f48fa2822d297f0f11e65af`, excerpt SHA-256 `e4893c51946a5353f9ac51df8a431d7a4374170b122bfcb5befb12ae3d342bd7`). Concept `jis_dep_f3be3eca42e403215ccd3864` (grounded `jis_grounded_b5fc700e81e8282d5e992c5d`); accounting: 7 mentions / 3 papers / 2 proof uses. This is the complete selected theorem statement, not a prerequisite stage. Proves `Wanted` entry `fermatNumber_mod_prime_exact_preperiod_period`.
+- <https://cs.uwaterloo.ca/journals/JIS/VOL28/Klaska/klaska22.tex>, Theorem, lines 593--606. This is the complete selected theorem statement, not a prerequisite stage.

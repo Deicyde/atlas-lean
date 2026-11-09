@@ -13,4 +13,4 @@ has derivative $x^{-n-1/2} \arcsin(\sqrt{x}) / (1 - x)^{3/2}$ at $x$.
 
 ## Sources
 
-- Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Lemma 1 (`integers-2026-A2-lem-1`).
+- Rimer Zurita, *Power Series Associated with Reciprocals of Generalized Central Binomial Coefficients*, INTEGERS 26 (2026), Article A2, Lemma 1.

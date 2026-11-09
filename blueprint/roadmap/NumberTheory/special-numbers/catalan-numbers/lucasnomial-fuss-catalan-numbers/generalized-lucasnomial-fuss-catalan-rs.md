@@ -15,4 +15,4 @@ $U_{(r-1)t+s} = 0$.
 
 ## Sources
 
-- Ballot, JIS Vol. 24. Concept `jis_sem_17c3c7bf3e94f23255e5a2a1`; source SHA-256 `de2518f50026ac96429ae9113e738d224b1c1b732eec121bd4da5e8d60207f1c`.
+- Ballot, JIS Vol. 24.

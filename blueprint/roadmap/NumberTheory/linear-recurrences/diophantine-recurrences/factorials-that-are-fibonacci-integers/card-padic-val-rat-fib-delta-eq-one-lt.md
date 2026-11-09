@@ -11,4 +11,4 @@ number $F_m$. Then $N_p < \frac{2n}{z(p)\, p\, (p - 2)}$.
 
 ## Sources
 
-- Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Lemma 2 (`integers-2024-A72-lem-2`).
+- Florian Luca, *`F_4 F_5^6 F_7 F_8^4 F_9 F_{10}^2 F_{12}^5 F_{14} F_{15}^{-1} F_{18} F_{24} F_{30} = 36!`*, INTEGERS 24 (2024), Article A72, Lemma 2.

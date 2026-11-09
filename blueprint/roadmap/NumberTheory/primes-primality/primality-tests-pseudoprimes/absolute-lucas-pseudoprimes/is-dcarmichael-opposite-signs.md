@@ -11,4 +11,4 @@ signature $\sigma$ and $D'$-Carmichael with signature $\sigma'$.
 
 ## Sources
 
-- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 12 (`integers-2026-A102-thm-12`).
+- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 12.

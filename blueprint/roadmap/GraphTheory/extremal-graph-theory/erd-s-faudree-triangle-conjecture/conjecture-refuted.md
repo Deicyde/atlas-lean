@@ -7,4 +7,4 @@ $(1/2 - \varepsilon)n$ vertices, each adjacent to two distinct vertices of $T$.
 
 ## Sources
 
-- Ma and Tang (disproof with upper bound (2-√(5/2)+o(1))n; K₄-free sketch with (2√3-3+o(1))n), per erdosproblems.com/1034, https://www.erdosproblems.com/1034. Moved from `OpenConjectures/GraphTheory/ErdosProblem1034`.
+- Ma and Tang (disproof with upper bound (2-√(5/2)+o(1))n; K₄-free sketch with (2√3-3+o(1))n), per erdosproblems.com/1034, https://www.erdosproblems.com/1034.

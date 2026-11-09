@@ -10,4 +10,4 @@ K \left(\mathrm{opx}(n, P, d)^{1/t} \, n^{d + 1 - d/t} + n^d\right)$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 5.16 (`integers-2024-A1-thm-5-16`); `Q_{P,t,c}` as defined before it.
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 5.16; `Q_{P,t,c}` as defined before it.

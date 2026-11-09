@@ -10,4 +10,4 @@ $\frac{1 - t + t^2}{(1 - 2t + t^3)(1 - t)^2}$.
 
 ## Sources
 
-- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Corollary 3 (`integers-2026-A48-cor-3`).
+- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Corollary 3.

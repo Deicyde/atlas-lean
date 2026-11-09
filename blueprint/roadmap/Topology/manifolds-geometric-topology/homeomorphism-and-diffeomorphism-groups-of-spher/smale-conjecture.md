@@ -18,4 +18,4 @@ diffeomorphisms, relative to $\partial X$, from the family $F$ to the linear fam
 
 ## Sources
 
-- A. Hatcher, A proof of the Smale conjecture, Diff(S3) = O(4), Ann. of Math. 117 (1983). Via leanprover/lean-eval@38361be, problem `smale_conjecture`.
+- A. Hatcher, A proof of the Smale conjecture, Diff(S3) = O(4), Ann. of Math. 117 (1983). Problem `smale_conjecture` of the lean-eval benchmark.

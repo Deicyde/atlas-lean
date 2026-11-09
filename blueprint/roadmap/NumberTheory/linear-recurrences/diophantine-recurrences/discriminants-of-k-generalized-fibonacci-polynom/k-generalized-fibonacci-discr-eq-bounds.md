@@ -11,4 +11,4 @@ The equation is the paper's equation (7) multiplied by $(k-1)^2$.
 
 ## Sources
 
-- Florian Luca, *On the Discriminant of the k-Generalized Fibonacci Polynomial, II*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2 (`fq-2024-luca02082024-lem-2`). Equation (7) is written after multiplying by `(k-1)^2`, as in `kGeneralizedFibonacci_discr_eq_index_bounds`; by Theorem 1 the hypotheses are never met.
+- Florian Luca, *On the Discriminant of the k-Generalized Fibonacci Polynomial, II*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2. Equation (7) is written after multiplying by `(k-1)^2`, as in `kGeneralizedFibonacci_discr_eq_index_bounds`; by Theorem 1 the hypotheses are never met.

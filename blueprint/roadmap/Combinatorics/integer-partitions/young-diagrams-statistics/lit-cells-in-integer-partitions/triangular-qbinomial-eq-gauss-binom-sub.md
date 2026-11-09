@@ -15,4 +15,4 @@ one has $t[r, s] = 0$.
 
 ## Sources
 
-- Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 4, eq. (12) (`integers-2024-A56-prop-4`).
+- Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 4, eq. (12).

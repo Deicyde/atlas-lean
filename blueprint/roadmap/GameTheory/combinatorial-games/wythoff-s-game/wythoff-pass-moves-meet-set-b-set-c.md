@@ -17,4 +17,4 @@ with the third coordinate dropped.
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Lemma 2 (`integers-2025-G4-lem-2`).
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Lemma 2.

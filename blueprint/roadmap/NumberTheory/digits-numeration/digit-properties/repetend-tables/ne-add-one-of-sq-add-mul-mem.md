@@ -7,4 +7,4 @@ The paper states this for a small base $b$; here $b$ is any natural number.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 31 (`integers-2025-A26-lem-31`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 31.

@@ -15,4 +15,4 @@ required only for nonzero $a_i$.
 
 ## Sources
 
-- Randell Heyman, *On the Number of Polynomials of Bounded Height that Satisfy the Dumas Criterion*, Journal of Integer Sequences 17 (2014), Article 14.2.4, Dumas criterion statement (label `f(x)`), lines 96–102, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Heyman/heyman2.tex>. Exact algebraic form: Martin Juras, arXiv:1505.07633v1, lines 67–100. Proves `Wanted` entry `irreducible_of_dumas_padic_criterion`.
+- Randell Heyman, *On the Number of Polynomials of Bounded Height that Satisfy the Dumas Criterion*, Journal of Integer Sequences 17 (2014), Article 14.2.4, Dumas criterion statement, lines 96–102, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Heyman/heyman2.tex>. Exact algebraic form: Martin Juras, arXiv:1505.07633v1, lines 67–100.

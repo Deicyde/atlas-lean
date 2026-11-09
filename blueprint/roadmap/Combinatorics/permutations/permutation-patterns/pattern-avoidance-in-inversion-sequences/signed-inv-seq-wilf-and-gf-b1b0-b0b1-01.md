@@ -17,4 +17,4 @@ $F_B(x) = 1 + \frac{x(1 - x)^2}{(1 - 2x)(1 - 3x + x^2)} + \frac{x(1 - x + x^2)}{
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 5 (`integers-2026-A74-lem-5`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 5.

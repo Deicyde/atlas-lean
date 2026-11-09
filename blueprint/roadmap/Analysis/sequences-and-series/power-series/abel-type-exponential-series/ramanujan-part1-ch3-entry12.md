@@ -13,4 +13,4 @@ $$F_{r+1}(n) = n F_r(n) + \frac{1}{a} F_{r+1}(n+1).$$
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) and Entry 12, printed pp. 66-67 / PDF pp. 76-77. Proves `Wanted` entry `ramanujan_part1_ch3_entry12`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, definition (12.1) and Entry 12, printed pp. 66-67 / PDF pp. 76-77.

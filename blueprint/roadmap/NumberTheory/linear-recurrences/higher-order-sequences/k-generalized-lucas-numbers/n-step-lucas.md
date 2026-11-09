@@ -9,4 +9,4 @@ The source defines $L^{(n)}_m$ only for $m \ge 1$; the value $L^{(n)}_0 = 0$ is 
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL14/Saito/saito22.tex> (source `jis_1628603e2683fb05481e5bfb`, concept `jis_sem_4e0294575601a2b8a5f0d3d7`).
+- <https://cs.uwaterloo.ca/journals/JIS/VOL14/Saito/saito22.tex>.

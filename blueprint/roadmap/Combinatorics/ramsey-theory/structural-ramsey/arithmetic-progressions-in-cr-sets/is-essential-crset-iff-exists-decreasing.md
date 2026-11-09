@@ -10,4 +10,4 @@ The sequence is indexed from $0$ rather than $1$.
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 7 (`integers-2025-A4-thm-7`).
+- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 7.

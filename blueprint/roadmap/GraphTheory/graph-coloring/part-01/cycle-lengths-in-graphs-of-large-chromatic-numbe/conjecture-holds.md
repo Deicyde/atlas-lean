@@ -7,4 +7,4 @@ contains a cycle of length $\ell$), is not summable; that is, $\sum_\ell 1/\ell 
 
 ## Sources
 
-- Hong Liu and Richard Montgomery, A solution to Erdős and Hajnal's odd cycle problem, arXiv:2010.15802 (J. Amer. Math. Soc., doi:10.1090/jams/1018), https://arxiv.org/abs/2010.15802. Moved from `OpenConjectures/GraphTheory/ErdosProblem57`.
+- Hong Liu and Richard Montgomery, A solution to Erdős and Hajnal's odd cycle problem, arXiv:2010.15802 (J. Amer. Math. Soc., doi:10.1090/jams/1018), https://arxiv.org/abs/2010.15802.

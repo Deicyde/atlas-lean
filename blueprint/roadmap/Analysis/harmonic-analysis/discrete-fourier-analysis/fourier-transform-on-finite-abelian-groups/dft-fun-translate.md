@@ -10,4 +10,4 @@ Proof: reindex the finite sum by $x \mapsto x + t$ and use $\psi(x + t) = \psi(x
 
 ## Sources
 
-- `undergrad.yaml`, section "Fourier transform", entry "discrete Fourier transform on a finite abelian group"; A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2 (translation and modulation).
+- A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2 (translation and modulation).

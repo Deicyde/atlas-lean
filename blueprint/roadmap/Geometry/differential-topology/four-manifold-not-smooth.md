@@ -7,4 +7,4 @@ makes $M$ a smooth ($C^\infty$) manifold.
 
 ## Sources
 
-- see manifest Via leanprover/lean-eval@38361be, problem `four_manifold_not_smooth`.
+-. Problem `four_manifold_not_smooth` of the lean-eval benchmark.

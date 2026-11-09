@@ -11,4 +11,4 @@ are $0$, since $O_n(k) = 0$ for $n < k$, so this is also the sum over $n \ge k$.
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 7, second part (`integers-2026-A81-cor-7`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 7, second part.

@@ -23,4 +23,4 @@ Here $g^{(d)}_{(2m-1) 2n} / g^{(d)}_{2m-1}$ is the integer quotient; the divisio
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 3 (`integers-2024-A111-thm-3`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Theorem 3.

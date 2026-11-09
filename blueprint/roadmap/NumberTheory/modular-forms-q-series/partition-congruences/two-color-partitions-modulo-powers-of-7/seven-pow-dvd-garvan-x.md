@@ -7,4 +7,4 @@ $x_{2k+1,j}$ and $7^{k + 1 + \lfloor (7j-6)/4 \rfloor}$ divides $x_{2k,j}$.
 
 ## Sources
 
-- D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Lemma 4 (`integers-2026-A94-lem-4`).
+- D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Lemma 4.

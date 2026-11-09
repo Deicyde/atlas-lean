@@ -12,4 +12,4 @@ time-frequency configuration $\{(0,0),(a,0),(b,0),(0,1)\}$ with $a = 1$ and $b =
 
 ## Sources
 
-- Ciprian Demeter, Linear independence of time frequency translates for special configurations, Math. Res. Lett. 17 (2010) 761-779, arXiv:1006.0732, https://arxiv.org/abs/1006.0732; Wencai Liu, Proof of the HRT conjecture for almost every (1,3) configuration, J. Fourier Anal. Appl. (2019), arXiv:1609.08230, https://arxiv.org/abs/1609.08230. Moved from `OpenConjectures/Analysis/FourFunctionHRT`.
+- Ciprian Demeter, Linear independence of time frequency translates for special configurations, Math. Res. Lett. 17 (2010) 761-779, arXiv:1006.0732, https://arxiv.org/abs/1006.0732; Wencai Liu, Proof of the HRT conjecture for almost every (1,3) configuration, J. Fourier Anal. Appl. (2019), arXiv:1609.08230, https://arxiv.org/abs/1609.08230.

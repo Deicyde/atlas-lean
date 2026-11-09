@@ -12,4 +12,4 @@ The dimension is the finite rank, taken to be $0$ if the quotient is infinite-di
 
 ## Sources
 
-- see manifest Via leanprover/lean-eval@38361be, problem `faltings`.
+-. Problem `faltings` of the lean-eval benchmark.

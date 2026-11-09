@@ -13,4 +13,4 @@ orthonormality of irreducible characters in Wikipedia, “Character theory”.
 
 ## Sources
 
-- `undergrad.yaml`, section "Representation theory of finite groups", entry "representations of abelian groups"; J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.8 (characters determine representations of abelian groups).
+- J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.8 (characters determine representations of abelian groups).

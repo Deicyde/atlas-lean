@@ -12,4 +12,4 @@ $$
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 2 and Table 3 (`integers-2024-A34-cor-2`).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 2 and Table 3.

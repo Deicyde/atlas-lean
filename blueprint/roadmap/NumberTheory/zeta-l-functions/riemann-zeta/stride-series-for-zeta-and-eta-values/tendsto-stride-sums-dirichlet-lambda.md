@@ -16,4 +16,4 @@ $\lambda(2) = \pi^2/8 \approx 1.234$).
 
 ## Sources
 
-- Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 3, equation (28) (`integers-2024-A45-thm-3`).
+- Anthony Sofo and Junesang Choi, *New Series Representations for the Riemann Zeta Function and Its Associated Functions*, INTEGERS 24 (2024), Article A45, Theorem 3, equation (28).

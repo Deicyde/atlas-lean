@@ -8,4 +8,4 @@ $x$ real; here $\log$ is the natural logarithm.
 
 ## Sources
 
-- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 5 (ii) (`integers-2024-A37-thm-5`).
+- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 5 (ii).

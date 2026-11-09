@@ -9,4 +9,4 @@ the Fibonacci sequence with $F_0 = 0$ and $F_1 = 1$.
 
 ## Sources
 
-- Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Proposition 2 (`integers-2026-A64-prop-2`).
+- Brian Hopkins and Aram Tangboonduangjit, *Arndt and De Morgan Compositions*, INTEGERS 26 (2026), Article A64, Proposition 2.

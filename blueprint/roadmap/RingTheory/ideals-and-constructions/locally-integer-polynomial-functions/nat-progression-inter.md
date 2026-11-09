@@ -9,4 +9,4 @@ $a_3 \in \mathbb{N}$.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 8 (`integers-2025-A41-lem-8`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 8.

@@ -9,4 +9,4 @@ $|I_n(A_{201})| = |I_n(A_{210})| = |I_n(B_{201})| = |I_n(B_{210})| = |I_n(C)|$.
 
 ## Sources
 
-- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 13 (`integers-2024-A76-thm-13`).
+- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 13.

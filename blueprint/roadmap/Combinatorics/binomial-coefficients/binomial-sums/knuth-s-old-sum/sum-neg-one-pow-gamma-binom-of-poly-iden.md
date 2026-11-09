@@ -14,4 +14,4 @@ $$\sum_{k=m}^{r} g(k)\, \frac{(-1)^k}{2^k} \binom{2k+v}{(2k+v)/2} \binom{k+v}{v/
 
 ## Sources
 
-- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 3 (`integers-2026-A19-cor-3`).
+- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 3.

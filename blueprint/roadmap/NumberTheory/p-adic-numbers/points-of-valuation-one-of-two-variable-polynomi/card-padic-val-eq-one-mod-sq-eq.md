@@ -12,4 +12,4 @@ has $m = 5$, but only $24$ pairs, not $30$, have valuation $1$.
 
 ## Sources
 
-- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Corollary 2 (`integers-2026-A82-cor-2`).
+- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Corollary 2.

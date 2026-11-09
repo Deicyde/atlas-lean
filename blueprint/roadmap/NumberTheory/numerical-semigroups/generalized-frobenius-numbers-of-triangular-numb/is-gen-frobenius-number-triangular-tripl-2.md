@@ -13,4 +13,4 @@ $4(g_{s+1} - g_s) = (n - 6k + 3)P$ when $s + 1 = k(k+1)$.
 
 ## Sources
 
-- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Theorem 2 (`integers-2026-A63-thm-2`).
+- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Theorem 2.

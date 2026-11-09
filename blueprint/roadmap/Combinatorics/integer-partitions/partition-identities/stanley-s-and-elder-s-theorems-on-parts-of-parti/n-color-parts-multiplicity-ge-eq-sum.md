@@ -11,4 +11,4 @@ $$
 
 ## Sources
 
-- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 5 (`integers-2025-A94-cor-5`).
+- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 5.

@@ -6,4 +6,4 @@ an integral solution with $x$ and $2 y$ coprime exists and equals $1$.
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2 (`integers-2024-A111-cor-1`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Notation 2.

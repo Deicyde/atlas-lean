@@ -8,4 +8,4 @@ the series $\sum_n 1 / b_n$ does not converge to a rational number.
 
 ## Sources
 
-- Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Theorem 2 and the definition of Type 2 irrationality sequences preceding it (`integers-2026-A28-thm-2`).
+- Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Theorem 2 and the definition of Type 2 irrationality sequences preceding it.

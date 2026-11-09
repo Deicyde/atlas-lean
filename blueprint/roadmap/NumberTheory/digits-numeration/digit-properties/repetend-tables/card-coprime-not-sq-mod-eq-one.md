@@ -9,4 +9,4 @@ In the paper these $j$ index the Class A columns of a repetend table.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 2 (`integers-2025-A26-thm-2`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Theorem 2.

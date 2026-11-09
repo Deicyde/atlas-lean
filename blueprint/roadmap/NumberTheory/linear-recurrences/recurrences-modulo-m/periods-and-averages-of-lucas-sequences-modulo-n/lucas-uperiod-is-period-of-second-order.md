@@ -9,4 +9,4 @@ $w_{n + \rho(m)} \equiv U_{\rho(m) + 1} w_n \pmod m$ for every natural number $n
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.1 (`integers-2024-A36-thm-1-1`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.1.

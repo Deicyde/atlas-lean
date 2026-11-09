@@ -10,4 +10,4 @@ Chojecki (2026, Theorem 1.1) proves this with $C = 27/2$.
 
 ## Sources
 
-- P. Chojecki, The Second Term for Strongly 2-Primitive Sets, arXiv preprint (2026), arXiv:2607.15306, https://arxiv.org/abs/2607.15306. Moved from `OpenConjectures/NumberTheory/ErdosDivisibilityFamilyGrowth`.
+- P. Chojecki, The Second Term for Strongly 2-Primitive Sets, arXiv preprint (2026), arXiv:2607.15306, https://arxiv.org/abs/2607.15306.

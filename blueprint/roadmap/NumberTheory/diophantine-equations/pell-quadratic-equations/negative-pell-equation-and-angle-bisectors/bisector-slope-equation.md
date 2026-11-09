@@ -16,4 +16,4 @@ is equidistant from both lines, that is, when $|a - s| / \sqrt{a^2 + 1} = |b - s
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 1(a) (`integers-2024-A111-prop-1`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 1(a).

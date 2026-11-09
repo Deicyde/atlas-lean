@@ -8,4 +8,4 @@ $1 \le n \le 11$.
 
 ## Sources
 
-- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Lemma 1 (`integers-2025-A99-lem-1`).
+- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Lemma 1.

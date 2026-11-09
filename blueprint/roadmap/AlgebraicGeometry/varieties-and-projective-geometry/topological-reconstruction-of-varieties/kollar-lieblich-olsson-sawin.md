@@ -10,4 +10,4 @@ of schemes $X \cong Y$ whose underlying map is $h$.
 
 ## Sources
 
-- János Kollár, Max Lieblich, Martin Olsson, and Will Sawin. The Zariski topology, linear systems, and algebraic varieties. Via leanprover/lean-eval@38361be, problem `kollar_lieblich_olsson_sawin`.
+- János Kollár, Max Lieblich, Martin Olsson, and Will Sawin. The Zariski topology, linear systems, and algebraic varieties. Problem `kollar_lieblich_olsson_sawin` of the lean-eval benchmark.

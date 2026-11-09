@@ -23,4 +23,4 @@ with $2p + 1$ in each; the third claim above is that bound.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 5.1 (i)–(iii) (`integers-2025-A107-thm-5-1`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 5.1 (i)–(iii).

@@ -21,4 +21,4 @@ the right side $1.01645\ldots$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Corollary 3 (`integers-2025-A25-cor-3`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Corollary 3.

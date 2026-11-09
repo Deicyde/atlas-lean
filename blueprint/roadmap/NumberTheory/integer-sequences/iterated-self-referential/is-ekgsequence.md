@@ -13,4 +13,4 @@ The sequence begins $1, 2, 4, 6, 3, 9, 12, 8, 10, 5, \dots$
 
 ## Sources
 
-- JIS source `hofman1.tex`, lines 99–100, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Hofman/hofman1.tex> (SHA-256 `1aa5911c072e187d31e51d722d7b2dbad3cf7e147ce4e01658e21a09105a2089`; SHA-256 `a0fe543083e8c48473cd3fa58df152f49aa99d5132f657fd7b0feb3f77c04243`); first terms at lines 104–112; concept `jis_term_4d5aa413ec3ba8694ef806b3`.
+- JIS source `hofman1.tex`, lines 99–100, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Hofman/hofman1.tex>; first terms at lines 104–112.

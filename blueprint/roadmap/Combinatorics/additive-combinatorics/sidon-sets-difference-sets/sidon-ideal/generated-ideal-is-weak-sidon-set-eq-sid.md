@@ -5,4 +5,4 @@ Sidon sets equals the Sidon ideal.
 
 ## Sources
 
-- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Corollary 1 (`integers-2025-A91-cor-1`).
+- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Corollary 1.

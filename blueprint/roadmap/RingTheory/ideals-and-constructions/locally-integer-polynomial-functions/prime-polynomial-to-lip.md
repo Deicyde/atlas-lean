@@ -7,4 +7,4 @@ the evaluation map $\mathbb{Z}[x] \to \mathrm{LIP}(U)$, is a prime element of $\
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 2 (`integers-2025-A41-cor-2`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Corollary 2.

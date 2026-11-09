@@ -6,4 +6,4 @@ function if and only if it is a partial parking function with $m$ cars and $n$ s
 
 ## Sources
 
-- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 3 (`integers-2025-A73-prop-3`).
+- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 3.

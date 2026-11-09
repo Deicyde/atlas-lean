@@ -11,4 +11,4 @@ edges, which holds when the digraph has a single component.
 
 ## Sources
 
-- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 16 (`integers-2026-A107-thm-16`).
+- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 16.

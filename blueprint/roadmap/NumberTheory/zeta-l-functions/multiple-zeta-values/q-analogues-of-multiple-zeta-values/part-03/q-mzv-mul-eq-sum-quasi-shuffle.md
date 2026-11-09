@@ -11,4 +11,4 @@ and is extended linearly to formal sums of words.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 2 (`integers-2024-A6-prop-2`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 2.

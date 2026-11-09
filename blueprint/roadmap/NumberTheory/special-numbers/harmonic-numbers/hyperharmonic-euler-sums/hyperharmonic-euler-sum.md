@@ -8,4 +8,4 @@ and $S(k, r; p; a) = 0$ when the series is not summable.
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 1 display (`integers-2026-A81-cor-1`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 1 display.

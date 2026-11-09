@@ -13,4 +13,4 @@ lines $v_2 v_3$ and $v_5 v_0$, then $q_1$, $q_2$, $q_3$ are collinear.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Pascal%27s_theorem. Proves `Wanted` entry `pascal_theorem`.
+- https://en.wikipedia.org/wiki/Pascal%27s_theorem.

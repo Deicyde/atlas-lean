@@ -8,4 +8,4 @@ $$118.676119576 \, n^2 (\log p_n)^3 + 709.7856 \, n \, p_n (\log p_n)^2
 
 ## Sources
 
-- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Proposition 1 (`integers-2025-A58-prop-1`).
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Proposition 1.

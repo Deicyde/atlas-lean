@@ -7,4 +7,4 @@ $A$. If $|h^{\wedge} A| = hk - h^2 + 1$, then $A$ is an arithmetic progression o
 
 ## Sources
 
-- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 4 (Nathanson) (`integers-2025-A12-thm-4`).
+- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 4 (Nathanson).

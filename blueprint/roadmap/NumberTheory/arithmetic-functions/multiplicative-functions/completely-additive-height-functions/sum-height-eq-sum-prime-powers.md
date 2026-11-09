@@ -12,4 +12,4 @@ The paper states this for real $x \ge 2$; both sides depend on $x$ only through 
 
 ## Sources
 
-- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 7 (`integers-2026-A116-prop-7`), Equation (6).
+- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Proposition 7, Equation (6).

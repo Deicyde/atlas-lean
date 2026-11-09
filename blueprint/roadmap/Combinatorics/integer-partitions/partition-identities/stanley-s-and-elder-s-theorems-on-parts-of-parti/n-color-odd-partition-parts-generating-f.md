@@ -12,4 +12,4 @@ $$
 
 ## Sources
 
-- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 9 (`integers-2025-A94-thm-9`).
+- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 9.

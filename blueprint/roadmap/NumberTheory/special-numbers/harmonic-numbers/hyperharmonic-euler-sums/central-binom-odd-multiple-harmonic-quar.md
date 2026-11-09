@@ -15,4 +15,4 @@ The terms with $n < k_i$ vanish, since $O_n(k_i) = 0$ for $n < k_i$.
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 11, second part (`integers-2026-A81-cor-11`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 11, second part.

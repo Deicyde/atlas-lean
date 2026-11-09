@@ -9,4 +9,4 @@ $\mathcal{P}_{p^e}$ is not a square in $\mathbb{Q}$.
 
 ## Sources
 
-- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Corollary 1 (`integers-2025-A39-cor-1`).
+- Cullinan and Gajek-Leonard, *On the Discriminants of Truncated Logarithmic Polynomials*, INTEGERS 25 (2025), Article A39, Corollary 1.

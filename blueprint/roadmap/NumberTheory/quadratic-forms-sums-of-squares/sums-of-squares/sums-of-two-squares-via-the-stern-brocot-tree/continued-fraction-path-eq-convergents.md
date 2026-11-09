@@ -16,4 +16,4 @@ the paper's case split; the identity holds for all $q_i \ge 0$.
 
 ## Sources
 
-- Hongshen Chua, *Binary Trees and Sum of Two Squares*, INTEGERS 26 (2026), Article A76, Theorem 1 (`integers-2026-A76-thm-1`).
+- Hongshen Chua, *Binary Trees and Sum of Two Squares*, INTEGERS 26 (2026), Article A76, Theorem 1.

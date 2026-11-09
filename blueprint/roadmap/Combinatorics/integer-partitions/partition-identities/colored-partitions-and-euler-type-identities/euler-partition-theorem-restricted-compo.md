@@ -9,4 +9,4 @@ even part is colored by a composition whose summands are all even.
 
 ## Sources
 
-- Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Corollary 3 (`integers-2026-A20-cor-3`).
+- Beimar J. Naranjo and José L. Ramírez, *On Colored Partitions and Euler-Type Identities*, INTEGERS 26 (2026), Article A20, Corollary 3.

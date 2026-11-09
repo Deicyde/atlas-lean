@@ -23,4 +23,4 @@ under the assumption $R_w \ne \emptyset$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 8 (`integers-2024-A24-thm-8`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 8.

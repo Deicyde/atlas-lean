@@ -11,4 +11,4 @@ $x\downarrow_{j,m} = \prod_{i\lt j} (x - mi)$ is the $m$-falling factorial.
 
 ## Sources
 
-- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 5 (Barrese, Loehr, Remmel and Sagan) (`integers-2024-A58-thm-5`).
+- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 5 (Barrese, Loehr, Remmel and Sagan).

@@ -6,4 +6,4 @@ $|a_{n-1}| > 1 + \sum_{i=0}^{n-2} |a_i|$. Then $f$ is irreducible in $\mathbb{Z}
 
 ## Sources
 
-- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Theorem 1 (Perron's criterion, quoted from the paper's reference [6]) (`integers-2026-A92-thm-1`).
+- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Theorem 1 (Perron's criterion, quoted from the paper's reference [6]).

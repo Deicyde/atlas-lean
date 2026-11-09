@@ -19,4 +19,4 @@ Theorem Th1 and equations (Eq48a), (Eq48).
 
 ## Sources
 
-- Benoit Cloitre, N. J. A. Sloane, and Matthew J. Vandermast, "Numerical Analogues of Aronson's Sequence," Journal of Integer Sequences 6 (2003), Article 03.2.2, Theorem (label Th1), equations (Eq48a) and (Eq48), lines 584–603, https://cs.uwaterloo.ca/journals/JIS/VOL6/Cloitre/cloitre2.tex
+- Benoit Cloitre, N. J. A. Sloane, and Matthew J. Vandermast, "Numerical Analogues of Aronson's Sequence," Journal of Integer Sequences 6 (2003), Article 03.2.2, Theorem, equations, lines 584–603, https://cs.uwaterloo.ca/journals/JIS/VOL6/Cloitre/cloitre2.tex

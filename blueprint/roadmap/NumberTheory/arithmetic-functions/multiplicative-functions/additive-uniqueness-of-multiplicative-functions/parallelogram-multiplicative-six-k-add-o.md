@@ -10,4 +10,4 @@ then $f(6k + 1) = (6k + 1)^2$.
 
 ## Sources
 
-- Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 5 (`integers-2024-A108-lem-5`).
+- Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Lemma 5.

@@ -14,4 +14,4 @@ exact formula.
 
 ## Sources
 
-- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 4 (`integers-2025-A10-lem-4`).
+- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 4.

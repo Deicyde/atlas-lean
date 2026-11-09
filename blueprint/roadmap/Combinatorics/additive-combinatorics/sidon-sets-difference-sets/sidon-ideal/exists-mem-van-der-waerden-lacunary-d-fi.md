@@ -7,4 +7,4 @@ is not contained in any finite union of Sidon sets.
 
 ## Sources
 
-- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Theorem 5 (`integers-2025-A91-thm-5`).
+- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Theorem 5.

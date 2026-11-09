@@ -15,4 +15,4 @@ $m$ are not needed for the conclusion.
 
 ## Sources
 
-- Hacène Belbachir and Celia Salhi, "The Generalized Bi-Periodic Fibonacci Sequence Modulo m," Journal of Integer Sequences 24 (2021), Article 21.9.4, Theorem (label TH2), lines 445–448, https://cs.uwaterloo.ca/journals/JIS/VOL24/Salhi/salhi4.tex
+- Hacène Belbachir and Celia Salhi, "The Generalized Bi-Periodic Fibonacci Sequence Modulo m," Journal of Integer Sequences 24 (2021), Article 21.9.4, Theorem, lines 445–448, https://cs.uwaterloo.ca/journals/JIS/VOL24/Salhi/salhi4.tex

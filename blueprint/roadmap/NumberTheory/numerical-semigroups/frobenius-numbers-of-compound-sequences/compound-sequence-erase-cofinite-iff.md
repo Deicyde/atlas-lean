@@ -10,4 +10,4 @@ $\gcd(a_j, b_{j+1}) = 1$, or $j = n$ and $a_n = 1$.
 
 ## Sources
 
-- Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Proposition 3 (`integers-2025-A6-prop-3`).
+- Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Proposition 3.

@@ -25,4 +25,4 @@ sum is empty for $x \notin \mathbb{Z}$ is immediate from the condition on the $n
 
 ## Sources
 
-- M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Theorem 2 (`integers-2024-A11-thm-2`).
+- M. P. Chaudhary, Salem Guiben, Kamel Mazhouda and Mohammed Mekkaoui, *On the a-Points of the kth Derivative of an L-Function in the Selberg Class*, INTEGERS 24 (2024), Article A11, Theorem 2.

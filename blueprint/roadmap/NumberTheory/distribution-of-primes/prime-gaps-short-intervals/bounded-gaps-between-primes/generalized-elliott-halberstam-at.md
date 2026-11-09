@@ -19,4 +19,4 @@ convolution $\alpha_x \star \beta_x$ up to $Q(x)$ is at most $C x / (\log x)^A$.
 
 ## Sources
 
-- Polymath8b v4, Claim 2.6, TeX labels `ab-div`, `sig`, and `qq-gen`.
+- Polymath8b v4, Claim 2.6.

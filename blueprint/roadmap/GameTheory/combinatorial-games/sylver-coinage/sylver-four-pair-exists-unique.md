@@ -8,4 +8,4 @@ When $q < x_q$, the pair $(q, x_q)$ is a 4-pair.
 
 ## Sources
 
-- Morgan Boyers, Natalie Burton, Jeff Rushall, James Warner and Tara Zurick, *On Winning Strategies in Sylver Coinage When 4 Has Been Chosen*, INTEGERS 24 (2024), Article G2, Corollary 1 (`integers-2024-G2-cor-1`).
+- Morgan Boyers, Natalie Burton, Jeff Rushall, James Warner and Tara Zurick, *On Winning Strategies in Sylver Coinage When 4 Has Been Chosen*, INTEGERS 24 (2024), Article G2, Corollary 1.

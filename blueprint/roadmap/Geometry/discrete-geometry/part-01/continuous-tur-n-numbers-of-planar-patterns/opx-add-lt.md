@@ -7,4 +7,4 @@ $\mathrm{opx}(n + \delta, P) < \mathrm{opx}(n, P) + 3 n \delta$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.6 (`integers-2024-A1-lem-2-6`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.6.

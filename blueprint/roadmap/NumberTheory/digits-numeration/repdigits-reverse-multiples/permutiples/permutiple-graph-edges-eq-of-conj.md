@@ -16,4 +16,4 @@ permutiple $(d_k, \dots, d_0)_b$; these hypotheses are not needed.
 
 ## Sources
 
-- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Theorem 4 (`integers-2025-A13-thm-4`).
+- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Theorem 4.

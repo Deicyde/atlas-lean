@@ -58,4 +58,4 @@ is the value from (12)); with $f_{54}$ the relation checks exactly through $q^{1
 
 ## Sources
 
-- A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Theorem 1, Equations (12)-(18) (`integers-2024-A103-thm-1`).
+- A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Theorem 1, Equations (12)-(18).

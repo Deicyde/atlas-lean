@@ -16,4 +16,4 @@ $\sum_{n \ge h} \binom{2(n-h)}{n-h} O_{n-h} /
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 9, identity (22) (`integers-2025-A18-thm-9`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 9, identity (22).

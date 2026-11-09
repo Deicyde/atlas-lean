@@ -9,4 +9,4 @@ satisfies $p \le n^\varepsilon$.
 ## Sources
 
 - Balog-Wooley 1998; Bober-Fretwell-Martin-Wooley 2020.
-- Lean proof of EP-369 location variant (plby/lean-proofs), https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos369.lean. Moved from `OpenConjectures/NumberTheory/SmoothConsecutiveIntegers`.
+- Lean proof of EP-369 location variant (plby/lean-proofs), https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos369.lean.

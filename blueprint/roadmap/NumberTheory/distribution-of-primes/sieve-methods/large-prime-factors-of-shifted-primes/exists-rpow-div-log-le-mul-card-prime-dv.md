@@ -8,4 +8,4 @@ The condition $q \le x$ is automatic, since $q \mid p - 1$ with $p \le x$ forces
 
 ## Sources
 
-- Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Lemma 2 (`integers-2024-A91-lem-2`).
+- Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Lemma 2.

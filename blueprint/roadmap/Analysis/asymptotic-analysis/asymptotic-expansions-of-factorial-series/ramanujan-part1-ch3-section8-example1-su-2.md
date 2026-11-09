@@ -15,4 +15,4 @@ $|\arg z| \le \pi - \varepsilon$ when $\lambda = -\infty$.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Section 8, Example 1, formula (8.1), printed p. 50 / PDF p. 60. Proves `Wanted` entry `ramanujan_part1_ch3_section8_example1_summable`. It follows from `ramanujan_part1_ch3_section8_example1_summable_general`; the upper bound `heps_lt` is unused and keeps the source's shape.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Section 8, Example 1, formula (8.1), printed p. 50 / PDF p. 60. It follows from `ramanujan_part1_ch3_section8_example1_summable_general`; the upper bound `heps_lt` is unused and keeps the source's shape.

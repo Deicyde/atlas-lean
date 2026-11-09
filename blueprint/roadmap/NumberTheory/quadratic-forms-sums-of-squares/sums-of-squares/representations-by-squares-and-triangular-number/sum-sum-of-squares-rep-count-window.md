@@ -7,4 +7,4 @@ $\sum_{i=0}^{p-1} r_{s-i}(n)$.
 
 ## Sources
 
-- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 5 (`integers-2026-A93-thm-5`).
+- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 5.

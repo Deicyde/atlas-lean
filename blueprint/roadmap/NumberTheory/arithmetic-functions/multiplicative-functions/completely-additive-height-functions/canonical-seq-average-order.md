@@ -12,4 +12,4 @@ $f = O(g)$ and $g = O(f)$.
 
 ## Sources
 
-- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Corollary 2 (`integers-2026-A116-cor-2`), statement read from the journal PDF (the corpus record carries the prose of Section 7.6 that follows it).
+- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Corollary 2, statement read from the journal PDF (the corpus record carries the prose of Section 7.6 that follows it).

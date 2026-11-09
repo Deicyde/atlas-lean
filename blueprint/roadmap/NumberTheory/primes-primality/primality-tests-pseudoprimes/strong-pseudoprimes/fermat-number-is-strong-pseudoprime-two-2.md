@@ -7,4 +7,4 @@ $2^{2^{k-1}+t} - 2^t$, computed modulo $F_k$.
 
 ## Sources
 
-- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 7 (`integers-2024-A23-thm-7`).
+- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 7.

@@ -20,4 +20,4 @@ short chords.
 
 ## Sources
 
-- Donovan Young, "Linear k-Chord Diagrams," Journal of Integer Sequences 23 (2020), Article 20.9.1, Theorem (label Thmmean), lines 208–214, https://cs.uwaterloo.ca/journals/JIS/VOL23/Young/young5.tex
+- Donovan Young, "Linear k-Chord Diagrams," Journal of Integer Sequences 23 (2020), Article 20.9.1, Theorem, lines 208–214, https://cs.uwaterloo.ca/journals/JIS/VOL23/Young/young5.tex

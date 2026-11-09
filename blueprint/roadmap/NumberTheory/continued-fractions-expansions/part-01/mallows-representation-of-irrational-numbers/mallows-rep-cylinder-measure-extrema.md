@@ -12,4 +12,4 @@ For $\ell = 0$ both values equal $1$.
 
 ## Sources
 
-- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 8 (`integers-2025-A78-thm-8`).
+- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Theorem 8.

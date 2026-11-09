@@ -9,4 +9,4 @@ For polytopes the intersection is finite.
 
 ## Sources
 
-- Ryuichi Sakamoto, "The h*-Polynomial of the Cut Polytope of K_{2,m} in the Lattice Spanned by its Vertices," Journal of Integer Sequences 23 (2020), Article 20.7.5; concept `jis_sem_91fece955b8d30a79b80296c`, statement `jis_52595824a0e5a66cf10405d1`.
+- Ryuichi Sakamoto, "The h*-Polynomial of the Cut Polytope of K_{2,m} in the Lattice Spanned by its Vertices," Journal of Integer Sequences 23 (2020), Article 20.7.5.

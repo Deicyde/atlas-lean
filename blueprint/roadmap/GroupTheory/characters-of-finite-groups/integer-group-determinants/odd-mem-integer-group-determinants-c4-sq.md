@@ -9,4 +9,4 @@ integer $m$ or lies in $A$.
 
 ## Sources
 
-- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 8 (`integers-2024-A30-lem-8`).
+- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 8.

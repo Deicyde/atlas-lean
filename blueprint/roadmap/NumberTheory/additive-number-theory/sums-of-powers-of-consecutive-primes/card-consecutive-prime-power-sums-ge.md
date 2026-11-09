@@ -10,4 +10,4 @@ $(1 - \varepsilon) (k + 1)^2 x^{2/(k+1)} / \bigl(2 (\log x)^{2k/(k+1)}\bigr) \le
 
 ## Sources
 
-- Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Theorem 2 (`integers-2024-A4-thm-2`).
+- Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Theorem 2.

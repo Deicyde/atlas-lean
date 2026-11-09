@@ -11,4 +11,4 @@ dividing by the greatest common divisor with $m$ removes the intrinsic prime fac
 
 ## Sources
 
-- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 5 (`integers-2024-A23-thm-5`).
+- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 5.

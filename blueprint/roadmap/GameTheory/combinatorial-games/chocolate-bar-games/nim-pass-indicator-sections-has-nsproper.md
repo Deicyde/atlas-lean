@@ -10,4 +10,4 @@ $x \in \mathbb{N}^s$ and $i < s$, the function $t \mapsto F(x[i \mapsto t])$ has
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 10 (`integers-2025-G3-lem-10`).
+- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 10.

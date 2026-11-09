@@ -10,4 +10,4 @@ The case $a = 1$, where the maximum would be over an empty set, is excluded.
 
 ## Sources
 
-- Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Lemma 1 (`integers-2025-A6-lem-1`), quoting Brauer and Shockley.
+- Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Lemma 1, quoting Brauer and Shockley.

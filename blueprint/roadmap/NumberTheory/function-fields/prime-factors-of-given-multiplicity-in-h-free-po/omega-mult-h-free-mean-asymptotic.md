@@ -11,4 +11,4 @@ $S_h \cap M_n$ is $S_{h,k} + O(q^{n/k - n + \varepsilon n})$.
 
 ## Sources
 
-- Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3, Equation (6) (`integers-2025-A9-thm-3`).
+- Juan Arévalo Gómez and Matilde Lalín, *Prime Factors with Given Multiplicity in h-Free and h-Full Polynomials over Function Fields*, INTEGERS 25 (2025), Article A9, Theorem 3, Equation (6).

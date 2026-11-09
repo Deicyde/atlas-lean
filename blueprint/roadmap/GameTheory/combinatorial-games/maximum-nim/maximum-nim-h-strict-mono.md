@@ -6,4 +6,4 @@ natural numbers $x$ and $x'$ with $x < x'$, we have $h_k(x) < h_k(x')$.
 
 ## Sources
 
-- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 6(i) (`integers-2024-G5-lem-6`).
+- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 6(i).

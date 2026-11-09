@@ -8,4 +8,4 @@ $f(m^2) = m^2$ for every integer $m$ with $1 \le m \le N - 2$.
 
 ## Sources
 
-- Mingyu Kim and Poo-Sung Park, *An Additive Uniqueness Pair of Sets for Multiplicative Functions: Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A103, Lemma 2 (`integers-2026-A103-lem-2`).
+- Mingyu Kim and Poo-Sung Park, *An Additive Uniqueness Pair of Sets for Multiplicative Functions: Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A103, Lemma 2.

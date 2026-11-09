@@ -11,4 +11,4 @@ $$\mathrm{mpf}_{m,n}(1) = \frac{n(n + \sqrt{n^2-4}) - 2}{n(n + \sqrt{n^2-4}) - 4
 
 ## Sources
 
-- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 5 (`integers-2025-A73-cor-5`).
+- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 5.

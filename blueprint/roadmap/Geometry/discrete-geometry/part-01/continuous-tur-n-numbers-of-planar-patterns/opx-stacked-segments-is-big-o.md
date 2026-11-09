@@ -10,4 +10,4 @@ Since $s$ is fixed, the factor $s^{1/t}$ only changes the implied constant.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.9 (`integers-2024-A1-thm-4-9`); `P_{s,t,c}` as defined before Theorem 4.7.
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.9; `P_{s,t,c}` as defined before Theorem 4.7.

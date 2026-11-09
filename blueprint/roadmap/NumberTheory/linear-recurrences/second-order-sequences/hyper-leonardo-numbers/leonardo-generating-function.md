@@ -10,4 +10,4 @@ identities above are this equality with the denominators cleared.
 
 ## Sources
 
-- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Corollary 2 (`integers-2026-A48-cor-2`).
+- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Corollary 2.

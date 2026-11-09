@@ -17,4 +17,4 @@ effectively computable; only its existence is stated here.
 
 ## Sources
 
-- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 5 (`integers-2025-A10-thm-5`).
+- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Theorem 5.

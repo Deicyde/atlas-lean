@@ -12,4 +12,4 @@ $\sum_S p_n^{|S|} (1-p_n)^{|G_n|-|S|}$ over the subsets $S \subseteq G_n$ with t
 
 ## Sources
 
-- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 2 (`integers-2026-A97-thm-2`).
+- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 2.

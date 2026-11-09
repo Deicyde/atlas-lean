@@ -6,4 +6,4 @@ $x - \lfloor x/k \rfloor - 1 = \lfloor (k-1)x/k \rfloor$.
 
 ## Sources
 
-- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 2 (`integers-2024-G5-lem-2`).
+- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 2.

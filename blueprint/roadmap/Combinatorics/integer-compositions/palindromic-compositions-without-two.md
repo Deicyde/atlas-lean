@@ -13,4 +13,4 @@ denominators.
 
 ## Sources
 
-- Phyllis Chinn and Silvia Heubach, "Integer Sequences Related to Compositions without 2's," Journal of Integer Sequences 6 (2003), Article 03.2.3, Theorem 10 (label `palnums`), lines 462–471, <https://cs.uwaterloo.ca/journals/JIS/VOL6/Heubach/heubach5.tex>.
+- Phyllis Chinn and Silvia Heubach, "Integer Sequences Related to Compositions without 2's," Journal of Integer Sequences 6 (2003), Article 03.2.3, Theorem 10, lines 462–471, <https://cs.uwaterloo.ca/journals/JIS/VOL6/Heubach/heubach5.tex>.

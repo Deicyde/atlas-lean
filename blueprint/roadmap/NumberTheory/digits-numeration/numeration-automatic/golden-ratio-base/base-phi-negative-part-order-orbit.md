@@ -14,4 +14,4 @@ negative positions), and the merged runs are its tridents.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 11 (`integers-2024-A24-thm-11`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 11.

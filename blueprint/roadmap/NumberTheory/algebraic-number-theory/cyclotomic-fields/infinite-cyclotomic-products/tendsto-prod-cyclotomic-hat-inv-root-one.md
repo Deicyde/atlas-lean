@@ -15,4 +15,4 @@ claim is $P(z) \equiv 1$.
 
 ## Sources
 
-- Hartosh Singh Bal, *Constancy of an Infinite Cyclotomic Product via Ramanujan Sums*, INTEGERS 25 (2025), Article A96, Theorem 1 (`integers-2025-A96-thm-1`).
+- Hartosh Singh Bal, *Constancy of an Infinite Cyclotomic Product via Ramanujan Sums*, INTEGERS 25 (2025), Article A96, Theorem 1.

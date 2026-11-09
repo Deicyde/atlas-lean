@@ -12,4 +12,4 @@ with the quotient topology.
 
 ## Sources
 
-- Jean Gallier & Dianna Xu, *A Guide to the Classification Theorem for Compact Surfaces*, https://www.cis.upenn.edu/~jean/surfclassif-root.pdf Via leanprover/lean-eval@38361be, problem `topological_classification_of_surfaces`.
+- Jean Gallier & Dianna Xu, *A Guide to the Classification Theorem for Compact Surfaces*, https://www.cis.upenn.edu/~jean/surfclassif-root.pdf. Problem `topological_classification_of_surfaces` of the lean-eval benchmark.

@@ -20,4 +20,4 @@ $m = 1$ the printed argument is $12715$, and $\mathrm{bped}_{3,3}(12715) \equiv 
 
 ## Sources
 
-- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 4 (`integers-2026-A118-thm-4`).
+- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 4.

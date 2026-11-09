@@ -6,4 +6,4 @@ $n$ coprime to $Q$, $n \mid U_1 + \cdots + U_n$ if and only if $U_{n+2} \equiv 1
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.6 (`integers-2024-A36-thm-2-6`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 2.6.

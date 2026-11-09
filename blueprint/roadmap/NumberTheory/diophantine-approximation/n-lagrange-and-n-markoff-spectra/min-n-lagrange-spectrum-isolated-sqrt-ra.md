@@ -10,4 +10,4 @@ This is Conjecture 1 of the source for primes below 2000.
 
 ## Sources
 
-- Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Theorem 2 (`integers-2025-A47-thm-2`), with Conjecture 1.
+- Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Theorem 2, with Conjecture 1.

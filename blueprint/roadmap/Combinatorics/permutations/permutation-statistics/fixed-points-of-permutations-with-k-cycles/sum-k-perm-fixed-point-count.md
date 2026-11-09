@@ -13,4 +13,4 @@ The paper assumes $n \ge k \ge 1$; the identity is stated for all $n$ and $k$.
 
 ## Sources
 
-- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Proposition 3 (iv) (`integers-2024-A54-prop-3`).
+- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Proposition 3 (iv).

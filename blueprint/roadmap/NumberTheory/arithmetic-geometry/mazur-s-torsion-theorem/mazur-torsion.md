@@ -8,4 +8,4 @@ some $m \in \{1, 2, 3, 4\}$.
 
 ## Sources
 
-- B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHÉS 47 (1977). Knill, *Some fundamental theorems in mathematics*, §139. Via leanprover/lean-eval@38361be, problem `mazur_torsion`.
+- B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHÉS 47 (1977). Knill, *Some fundamental theorems in mathematics*, §139. Problem `mazur_torsion` of the lean-eval benchmark.

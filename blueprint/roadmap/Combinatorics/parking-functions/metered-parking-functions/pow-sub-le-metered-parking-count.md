@@ -6,4 +6,4 @@ $m$ and $n$, $\mathrm{mpf}_{m,n}(t) \ge (n - t)^m$, where $n - t$ is truncated s
 
 ## Sources
 
-- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 1 (`integers-2025-A73-cor-1`).
+- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 1.

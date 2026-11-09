@@ -8,4 +8,4 @@ $p \ge n + 1$. If $p$ divides $r_k(n)$, then $p$ divides $r_{k+jp}(n)$ for every
 
 ## Sources
 
-- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 3 (`integers-2026-A93-thm-3`).
+- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 3.

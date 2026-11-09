@@ -10,4 +10,4 @@ x F\left(\frac{\log x}{\log q}\right) - h(x) +
 
 ## Sources
 
-- Ka Lun Wong and Erdenebileg Erdenebat, *Asymptotics of Partial Sums of Dirichlet Convolutions of Digital Sum Functions in Arbitrary Bases*, INTEGERS 26 (2026), Article A43, Theorem 1 (`integers-2026-A43-thm-1`), equation (1).
+- Ka Lun Wong and Erdenebileg Erdenebat, *Asymptotics of Partial Sums of Dirichlet Convolutions of Digital Sum Functions in Arbitrary Bases*, INTEGERS 26 (2026), Article A43, Theorem 1, equation (1).

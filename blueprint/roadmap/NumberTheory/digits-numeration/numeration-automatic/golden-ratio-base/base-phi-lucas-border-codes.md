@@ -20,4 +20,4 @@ $C(L_{2n+1}+1) = F_{2n+2} - 1$ and $C(L_{2n+2}-1) = 0$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 10 (`integers-2024-A24-lem-10`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 10.

@@ -16,4 +16,4 @@ $0.1 \log n$ points, so no constant $C$ works for $c \le 0.4$.
 
 ## Sources
 
-- N. Alon, On designs and partial designs, extended abstract in Oberwolfach Report 42/2025 (Combinatorics, Probability and Computing), pp. 2249-2250, Theorem 3, https://doi.org/10.4171/owr/2025/42; N. Alon, Blocking partial designs and block-compatible sequences, note, Theorem 2.1, https://web.math.princeton.edu/~nalon/PDFS/remark191.pdf; T. F. Bloom, Erdős Problem #664, erdosproblems.com (status DISPROVED), https://www.erdosproblems.com/664. Moved from `OpenConjectures/Combinatorics/ErdosBlockDesignHittingSet`.
+- N. Alon, On designs and partial designs, extended abstract in Oberwolfach Report 42/2025 (Combinatorics, Probability and Computing), pp. 2249-2250, Theorem 3, https://doi.org/10.4171/owr/2025/42; N. Alon, Blocking partial designs and block-compatible sequences, note, Theorem 2.1, https://web.math.princeton.edu/~nalon/PDFS/remark191.pdf; T. F. Bloom, Erdős Problem #664, erdosproblems.com (status DISPROVED), https://www.erdosproblems.com/664.

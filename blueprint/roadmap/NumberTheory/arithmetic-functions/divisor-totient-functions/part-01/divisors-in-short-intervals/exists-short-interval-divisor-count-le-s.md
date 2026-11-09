@@ -10,4 +10,4 @@ $D_n(n^\theta, n^\eta) \le C \tau(n)^{1 - \xi(\theta, \eta)/2}
 
 ## Sources
 
-- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Corollary 1 (`integers-2026-A115-cor-1`, journal version).
+- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Corollary 1 (journal version).

@@ -9,4 +9,4 @@ entries after it.
 
 ## Sources
 
-- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Corollary 2 (`integers-2026-A15-cor-2`).
+- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Corollary 2.

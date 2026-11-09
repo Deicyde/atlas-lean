@@ -20,4 +20,4 @@ $T = \{b, b + 3, b + (t - a) + 4, b + (t - a) + 7\} \cup (S' + (b - a + 4))$.
 
 ## Sources
 
-- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 5.2 II, quoting F. M. Dekking, *How to add two numbers in base phi* (`fq-2024-dekking11102023-thm-5.2`).
+- Michel Dekking and Ad van Loon, *Counting Base Phi Representations*, Fibonacci Quarterly 62 (2024), Article 62-2/dekking11102023, Theorem 5.2 II, quoting F. M. Dekking, *How to add two numbers in base phi*.

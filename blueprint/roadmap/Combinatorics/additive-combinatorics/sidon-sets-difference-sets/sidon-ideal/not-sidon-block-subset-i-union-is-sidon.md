@@ -7,4 +7,4 @@ contained in the union of any $n - 1$ Sidon subsets of $\mathbb{N}$.
 
 ## Sources
 
-- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Lemma 3 (`integers-2025-A91-lem-3`).
+- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Lemma 3.

@@ -9,4 +9,4 @@ are meromorphic on $\mathbb{C}$ and agree outside a closed discrete subset of $\
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 20. Proves `Wanted` entry `ramanujan_part1_ch7_entry20_generalizedbernoullisum`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 20.

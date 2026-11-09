@@ -8,4 +8,4 @@ in the paper; for even $n$ it never holds, since $3$ does not divide $2^n + 1$.
 
 ## Sources
 
-- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Lemma 4 (`integers-2026-A107-lem-4`), quoting [3].
+- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Lemma 4, quoting [3].

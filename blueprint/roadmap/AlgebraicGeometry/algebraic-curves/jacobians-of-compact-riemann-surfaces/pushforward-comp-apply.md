@@ -7,4 +7,4 @@ $P \in J(X)$, the pushforwards satisfy $(g \circ f)_*(P) = g_*(f_*(P))$.
 
 ## Sources
 
-- https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge Via leanprover/lean-eval@38361be, problem `jacobian_challenge_diffgeo`.
+- https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.

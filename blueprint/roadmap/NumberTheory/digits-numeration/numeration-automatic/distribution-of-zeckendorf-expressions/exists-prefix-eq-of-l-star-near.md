@@ -16,4 +16,4 @@ satisfies $\varepsilon'_i = \inf(\varepsilon)_i$ for all $i \le n$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 5 (`integers-2025-A25-lem-5`; arXiv:2308.12872v1, Section 2.3).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 5 (arXiv:2308.12872v1, Section 2.3).

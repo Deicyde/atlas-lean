@@ -6,4 +6,4 @@ $0$ and $1$. Then $g_n = k_1 + \dots + k_n$ for every $n \ge 0$ (the empty sum w
 
 ## Sources
 
-- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 1 (`integers-2024-A51-thm-1`).
+- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 1.

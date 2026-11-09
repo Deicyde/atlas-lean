@@ -15,4 +15,4 @@ after the last $y$ dropped.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 3 (Singer) (`integers-2024-A6-thm-3`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 3 (Singer).

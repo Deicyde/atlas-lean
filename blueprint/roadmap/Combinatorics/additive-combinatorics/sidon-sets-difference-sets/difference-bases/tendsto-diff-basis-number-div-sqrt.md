@@ -9,4 +9,4 @@ $n \to \infty$.
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Theorem 1 (`integers-2025-A77-thm-1`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Theorem 1.

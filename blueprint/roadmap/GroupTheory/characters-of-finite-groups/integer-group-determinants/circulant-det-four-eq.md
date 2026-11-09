@@ -8,4 +8,4 @@ $$D_4(x_0, x_1, x_2, x_3) =
 
 ## Sources
 
-- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Corollary 1 (`integers-2024-A30-cor-1`).
+- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Corollary 1.

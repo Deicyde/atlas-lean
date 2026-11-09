@@ -10,4 +10,4 @@ $$e_{j,k} = \sum_{\ell=0}^{k} \binom{j-k+\ell}{\ell}\, c(j, j-k+\ell) = c(j + 1,
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 3 (`integers-2026-A36-cor-3`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums II*, INTEGERS 26 (2026), Article A36, Corollary 3.

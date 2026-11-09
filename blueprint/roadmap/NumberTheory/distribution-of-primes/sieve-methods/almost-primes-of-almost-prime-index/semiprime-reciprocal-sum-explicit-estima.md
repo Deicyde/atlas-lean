@@ -21,4 +21,4 @@ satisfies $|E(x)| < (\log x)^{-3/2}$.
 
 ## Sources
 
-- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Lemma 2 (quoting Bayless et al.) (`integers-2024-A99-lem-2`).
+- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Lemma 2 (quoting Bayless et al.).

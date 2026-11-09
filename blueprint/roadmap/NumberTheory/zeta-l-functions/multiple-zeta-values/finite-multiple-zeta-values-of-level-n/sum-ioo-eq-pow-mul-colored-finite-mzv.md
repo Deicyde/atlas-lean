@@ -15,4 +15,4 @@ The entries of $k$ may be $0$; the paper's indices have positive entries.
 
 ## Sources
 
-- Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Lemma 1 (`integers-2024-A22-lem-1`).
+- Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Lemma 1.

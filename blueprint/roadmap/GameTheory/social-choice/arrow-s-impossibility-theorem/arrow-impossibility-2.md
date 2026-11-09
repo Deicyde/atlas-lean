@@ -17,4 +17,4 @@ $b$ but $F(P)$ does not.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem (statement `arrow-impossibility-s1`). Proves `Wanted` entry `arrowImpossibility`.
+- https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem.

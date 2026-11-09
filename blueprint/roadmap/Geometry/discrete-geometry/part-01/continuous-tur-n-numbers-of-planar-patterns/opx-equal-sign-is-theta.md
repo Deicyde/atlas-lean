@@ -7,4 +7,4 @@ $c$ fixed, $\operatorname{opx}(n, P_{s,2,c}) = \Theta(s^{1/2} n^{3/2})$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.7 (`integers-2024-A1-thm-4-7`); `P_{s,t,c}` as defined before it.
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.7; `P_{s,t,c}` as defined before it.

@@ -29,4 +29,4 @@ is stated here and implies the printed bound because $\log x \ge 1$.
 
 ## Sources
 
-- Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Theorem 1 and its proof (`integers-2026-A84-thm-1`), with `c_k, A, B, C, E, F, U` from Section 2.
+- Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Theorem 1 and its proof, with `c_k, A, B, C, E, F, U` from Section 2.

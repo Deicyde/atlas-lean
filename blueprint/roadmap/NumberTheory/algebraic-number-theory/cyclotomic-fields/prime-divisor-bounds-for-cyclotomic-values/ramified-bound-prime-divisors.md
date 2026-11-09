@@ -18,4 +18,4 @@ the divisible case the composition also has `k_τ > 0` (the source's `δ_α(τ)`
 
 ## Sources
 
-- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Theorem 2 (`integers-2026-A95-thm-2`).
+- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Theorem 2.

@@ -7,4 +7,4 @@ $\mu$-measure $0$ and the barycenter $\int y \, d\mu(y)$ (a Bochner integral) eq
 
 ## Sources
 
-- G. Choquet, *Existence et unicité des représentations intégrales au moyen des points extrémaux dans les cônes convexes*, Séminaire Bourbaki (1956). Knill, *Some fundamental theorems in mathematics*, §88. Via leanprover/lean-eval@38361be, problem `choquet_representation_theorem`.
+- G. Choquet, *Existence et unicité des représentations intégrales au moyen des points extrémaux dans les cônes convexes*, Séminaire Bourbaki (1956). Knill, *Some fundamental theorems in mathematics*, §88. Problem `choquet_representation_theorem` of the lean-eval benchmark.

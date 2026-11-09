@@ -13,4 +13,4 @@ first derivative negative just right of the critical point, so the function decr
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential calculus`, entry `Hessian matrix` (unmapped); W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.
+- W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.

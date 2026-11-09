@@ -8,4 +8,4 @@ all $x,y\in\mathbb{R}$.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of several variables), `benchmark/level1/ma_proofbench_l1_56.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of several variables), problem `ma_proofbench_l1_56`.

@@ -9,4 +9,4 @@ integer $n$.
 
 ## Sources
 
-- Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Lemma 1 (`integers-2026-A61-lem-1`), quoting Girgensohn, *Digital Sums and Functional Equations*, Lemma 1.
+- Aleksei Minabutdinov, *A q-Weighted Analogue of the Trollope-Delange Formula*, INTEGERS 26 (2026), Article A61, Lemma 1, quoting Girgensohn, *Digital Sums and Functional Equations*, Lemma 1.

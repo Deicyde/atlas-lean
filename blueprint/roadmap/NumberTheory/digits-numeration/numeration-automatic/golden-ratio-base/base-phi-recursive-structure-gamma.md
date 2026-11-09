@@ -21,4 +21,4 @@ $N = 10$ give $\gamma^-(6)\,01 = 0001$ while $\gamma^-(10) = 01$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 10 (`integers-2024-A24-thm-10`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 10.

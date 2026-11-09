@@ -13,4 +13,4 @@ $$(1 - 2qx - pqx^2 + q^2x^2)\, G = 1 + x - 2qx + px^2 - qx^2 - pqx^2 + q^2x^2.$$
 
 ## Sources
 
-- Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Corollary 1 (`integers-2026-A18-cor-1`).
+- Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Corollary 1.

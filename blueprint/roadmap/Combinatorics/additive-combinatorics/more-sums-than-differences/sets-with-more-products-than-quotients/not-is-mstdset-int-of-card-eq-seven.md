@@ -5,4 +5,4 @@ of real numbers, is an MSTD set.
 
 ## Sources
 
-- Anupriya Shetty and B. R. Shankar, *On The Minimum Cardinality of MPTQ Sets*, INTEGERS 24 (2024), Article A96, Theorem 1 (`integers-2024-A96-thm-1`).
+- Anupriya Shetty and B. R. Shankar, *On The Minimum Cardinality of MPTQ Sets*, INTEGERS 24 (2024), Article A96, Theorem 1.

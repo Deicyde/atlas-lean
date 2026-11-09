@@ -6,4 +6,4 @@ identities $v_n = \sum_{k=0}^{n} (-1)^{n-k} \binom{n}{k} u_k$ hold for all natur
 
 ## Sources
 
-- Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Lemma 2.2 (`integers-2026-A85-lem-2-2`).
+- Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Lemma 2.2.

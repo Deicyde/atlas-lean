@@ -7,4 +7,4 @@ $r_{v_p} < \sum_{j=1}^{s} r_{\ell_j}$.
 
 ## Sources
 
-- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 8 (`integers-2025-A82-prop-8`).
+- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 8.

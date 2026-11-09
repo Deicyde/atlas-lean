@@ -12,4 +12,4 @@ prove this, confirming the conjecture of Fox, Grinshpun, Liebenau, Person and Sz
 
 ## Sources
 
-- H. Guo and L. Warnke, Packing nearly optimal Ramsey R(3,t) graphs, arXiv:1711.05877, https://arxiv.org/abs/1711.05877. Moved from `OpenConjectures/Combinatorics/TriangleRamseyMinimalTheta`.
+- H. Guo and L. Warnke, Packing nearly optimal Ramsey R(3,t) graphs, arXiv:1711.05877, https://arxiv.org/abs/1711.05877.

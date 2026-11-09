@@ -8,4 +8,4 @@ of natural numbers.
 
 ## Sources
 
-- Christian Reiher, Vojtěch Rödl, and Marcelo Sales, Colouring versus density in integers and Hales–Jewett cubes, Journal of the London Mathematical Society (2024), e12987, https://doi.org/10.1112/jlms.12987. Moved from `OpenConjectures/NumberTheory/ErdosProblem847`.
+- Christian Reiher, Vojtěch Rödl, and Marcelo Sales, Colouring versus density in integers and Hales–Jewett cubes, Journal of the London Mathematical Society (2024), e12987, https://doi.org/10.1112/jlms.12987.

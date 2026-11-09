@@ -11,4 +11,4 @@ of $2$ modulo $p$ is $2^{n+1}$.
 
 ## Sources
 
-- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 5, Equation (11) (`integers-2026-A77-thm-5`).
+- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 5, Equation (11).

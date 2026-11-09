@@ -11,4 +11,4 @@ $D(x) \cap P(x)$ with $P(x) = \{2^s l : l \mid x^2,\ s \in \{1, \dots, n - 1\}\}
 
 ## Sources
 
-- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 1 (quoting [1]) (`integers-2024-A5-thm-1`).
+- Roberto Amato, *Groups and Monoid in the Set of Pythagorean Triples*, INTEGERS 24 (2024), Article A5, Theorem 1 (quoting [1]).

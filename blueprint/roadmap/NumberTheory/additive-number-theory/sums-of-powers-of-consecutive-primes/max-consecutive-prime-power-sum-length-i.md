@@ -8,4 +8,4 @@ through the natural numbers.
 
 ## Sources
 
-- Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Lemma 2 (`integers-2024-A4-lem-2`).
+- Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Lemma 2.

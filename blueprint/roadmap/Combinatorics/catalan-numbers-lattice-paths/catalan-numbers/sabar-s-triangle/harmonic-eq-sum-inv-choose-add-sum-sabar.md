@@ -8,4 +8,4 @@ $$H_n = \frac{1}{n} \sum_{i=0}^{n-1} \binom{n-1}{i}^{-1} +
 
 ## Sources
 
-- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Theorem 2 (`integers-2026-A27-thm-2`).
+- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Theorem 2.

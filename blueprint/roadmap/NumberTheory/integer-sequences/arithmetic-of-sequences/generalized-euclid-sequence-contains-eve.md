@@ -19,4 +19,4 @@ density bound and Jacobi-sum character-sum bounds in place of the Hasse and Weil
 
 ## Sources
 
-- Andrew R. Booker, "A Variant of the Euclid-Mullin Sequence Containing Every Prime," Journal of Integer Sequences 19 (2016), Article 16.6.4, Theorem (label t:main), lines 132–136, https://cs.uwaterloo.ca/journals/JIS/VOL19/Booker/book3.tex
+- Andrew R. Booker, "A Variant of the Euclid-Mullin Sequence Containing Every Prime," Journal of Integer Sequences 19 (2016), Article 16.6.4, Theorem, lines 132–136, https://cs.uwaterloo.ca/journals/JIS/VOL19/Booker/book3.tex

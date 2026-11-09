@@ -40,4 +40,4 @@ $n \in \mathbb{Z}_p$; only integers $n$ are covered here.
 
 ## Sources
 
-- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Proposition 6 (`integers-2026-A32-prop-6`).
+- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Proposition 6.

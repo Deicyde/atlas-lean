@@ -18,4 +18,4 @@ prefix sum remains a multiple of $a$.
 
 ## Sources
 
-- Rupam Barman and Ajit Singh, "Mex-Related Partition Functions of Andrews and Newman," Journal of Integer Sequences 24 (2021), Article 21.6.3, Theorem (label thm2), lines 172–182, https://cs.uwaterloo.ca/journals/JIS/VOL24/Barman/barman3.tex
+- Rupam Barman and Ajit Singh, "Mex-Related Partition Functions of Andrews and Newman," Journal of Integer Sequences 24 (2021), Article 21.6.3, Theorem, lines 172–182, https://cs.uwaterloo.ca/journals/JIS/VOL24/Barman/barman3.tex

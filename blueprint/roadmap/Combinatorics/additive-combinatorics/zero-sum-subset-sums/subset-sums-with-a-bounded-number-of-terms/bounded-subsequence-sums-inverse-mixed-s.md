@@ -20,4 +20,4 @@ $|\Sigma^1_1(\mathcal{A})| = |\{-2, 5, 7, 14\}| = 4 = L((1, 1, 2), 2)$.
 
 ## Sources
 
-- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 19 (`integers-2024-A116-thm-19`).
+- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Theorem 19.

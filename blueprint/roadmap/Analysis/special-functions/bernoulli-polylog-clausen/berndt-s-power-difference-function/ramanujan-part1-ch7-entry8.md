@@ -7,4 +7,4 @@ Bernoulli polynomial and $B_k$ are the Bernoulli numbers with $B_1 = -\tfrac12$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8. Proves `Wanted` entry `ramanujan_part1_ch7_entry8`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 8.

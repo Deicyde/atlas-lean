@@ -14,4 +14,4 @@ $n \ge 22$; $20$ has value $11n$ for even $n \ge 18$ and $11n - 3$ for odd $n \g
 
 ## Sources
 
-- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Corollary 1 (`integers-2026-A63-cor-1`).
+- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Corollary 1.

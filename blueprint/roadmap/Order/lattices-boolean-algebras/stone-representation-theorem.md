@@ -9,4 +9,4 @@ Such a map automatically preserves complements: $f(a^c) = X \setminus f(a)$ for 
 
 ## Sources
 
-- M. H. Stone, The Theory of Representation for Boolean Algebras, Trans. Amer. Math. Soc. 40 (1936), 37–111, DOI 10.2307/1989664. Proves `Wanted` entry `stone_representation_theorem`.
+- M. H. Stone, The Theory of Representation for Boolean Algebras, Trans. Amer. Math. Soc. 40 (1936), 37–111, DOI 10.2307/1989664.

@@ -11,4 +11,4 @@ $$\sum_{k=0}^{n-1} \frac{4^k}{2(n-k)-1} \binom{2(n-k)}{n-k} k^r (1 - O_{n-k-1}) 
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 5 (`integers-2026-A109-prop-5`).
+- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Proposition 5.

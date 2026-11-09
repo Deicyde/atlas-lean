@@ -7,4 +7,4 @@ for every complex-valued Schwartz function $g$ on $\mathbb{R}$.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Distribution calculus" / "Tempered distributions" / entry "Dirac comb"; <https://en.wikipedia.org/wiki/Dirac_comb>.
+- <https://en.wikipedia.org/wiki/Dirac_comb>.

@@ -17,4 +17,4 @@ rank-$r$ part is open (their Open Problem 3.2).
 
 ## Sources
 
-- K. A. Adiprasito, A. Björner, Filtered geometric lattices and Lefschetz section theorems over the tropical semiring, arXiv:1401.7301, https://arxiv.org/abs/1401.7301. Moved from `OpenConjectures/Combinatorics/WeightedMatroidNonnegativeLinesConnected`.
+- K. A. Adiprasito, A. Björner, Filtered geometric lattices and Lefschetz section theorems over the tropical semiring, arXiv:1401.7301, https://arxiv.org/abs/1401.7301.

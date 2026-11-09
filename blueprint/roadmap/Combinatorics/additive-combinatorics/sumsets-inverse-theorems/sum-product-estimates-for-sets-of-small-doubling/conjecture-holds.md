@@ -9,4 +9,4 @@ József Solymosi proved a stronger bound, with a single logarithm in the denomin
 
 ## Sources
 
-- József Solymosi, Bounding multiplicative energy by the sumset, Advances in Mathematics 222 (2009), 402–408, https://doi.org/10.1016/j.aim.2009.04.006. Moved from `OpenConjectures/NumberTheory/ErdosProblem818`.
+- József Solymosi, Bounding multiplicative energy by the sumset, Advances in Mathematics 222 (2009), 402–408, https://doi.org/10.1016/j.aim.2009.04.006.

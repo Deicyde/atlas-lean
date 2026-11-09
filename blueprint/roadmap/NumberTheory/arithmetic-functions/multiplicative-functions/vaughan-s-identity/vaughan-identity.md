@@ -18,4 +18,4 @@ function, the hypotheses hold and this is the classical Vaughan identity.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Vaughan%27s_identity It follows from `vaughan_identity_general`; the hypotheses `hU` and `hV` are unused and keep the source's shape. Proves `Wanted` entry `vaughan_identity`.
+- https://en.wikipedia.org/wiki/Vaughan%27s_identity It follows from `vaughan_identity_general`; the hypotheses `hU` and `hV` are unused and keep the source's shape.

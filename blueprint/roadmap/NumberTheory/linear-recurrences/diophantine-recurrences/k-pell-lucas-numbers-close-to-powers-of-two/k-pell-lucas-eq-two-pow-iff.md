@@ -6,4 +6,4 @@ $Q^{(k)}_n = 2^m$ if and only if either $n = 1$ and $m = 1$, or $n = 3$, $m = 4$
 
 ## Sources
 
-- Mohamadou Bachabi, Bakary Kourouma, and Alain Togbé, *On k-Pell-Lucas Numbers Close to a Power of 2*, INTEGERS 25 (2025), Article A67, Corollary 1 (`integers-2025-A67-cor-1`).
+- Mohamadou Bachabi, Bakary Kourouma, and Alain Togbé, *On k-Pell-Lucas Numbers Close to a Power of 2*, INTEGERS 25 (2025), Article A67, Corollary 1.

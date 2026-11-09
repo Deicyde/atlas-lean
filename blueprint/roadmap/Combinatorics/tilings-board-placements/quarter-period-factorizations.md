@@ -23,5 +23,4 @@ the number of tilings of a triangular strip.
 
 ## Sources
 
-- Mark Shattuck, "Combinatorial Proofs of Some Formulas for Triangular Tilings," Journal of Integer Sequences 17 (2014), Article 14.5.5, Theorem (label thm2, due to Bodeen et al.), lines 103–112, https://cs.uwaterloo.ca/journals/JIS/VOL17/Shattuck/shattuck8.tex
-- the recurrence and initial values are equation (rec) at lines 122–125.
+- Mark Shattuck, "Combinatorial Proofs of Some Formulas for Triangular Tilings," Journal of Integer Sequences 17 (2014), Article 14.5.5, Theorem (due to Bodeen et al.), lines 103–112, https://cs.uwaterloo.ca/journals/JIS/VOL17/Shattuck/shattuck8.tex

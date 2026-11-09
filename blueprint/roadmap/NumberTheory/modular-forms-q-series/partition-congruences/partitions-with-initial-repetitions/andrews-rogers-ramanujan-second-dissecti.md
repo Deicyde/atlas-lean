@@ -12,4 +12,4 @@ All exponents on the right are nonnegative for integer $\lambda$.
 
 ## Sources
 
-- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 12 (`integers-2025-A32-thm-12`), quoting Andrews.
+- John Greene and James A. Sellers, *Extending Recent Parity Results of Nyirenda and Mugwangwavari for Partitions with Initial Repetitions*, INTEGERS 25 (2025), Article A32, Theorem 12, quoting Andrews.

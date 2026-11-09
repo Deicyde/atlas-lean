@@ -29,4 +29,4 @@ $P_1 Q_1 R_1 = \chi(-q) f_{18}^3 / (\chi(-q^3) f_6^3)$ with $\chi(-q) = (q;q^2)_
 
 ## Sources
 
-- A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Theorem 2, Equations (21)-(27) (`integers-2024-A103-thm-2`).
+- A. Vanitha, M. P. Chaudhary, and Madiha Khanum, *Modular Relations for the Rogers-Ramanujan-Slater Type Functions of Order Eighteen with Applications to Partitions*, INTEGERS 24 (2024), Article A103, Theorem 2, Equations (21)-(27).

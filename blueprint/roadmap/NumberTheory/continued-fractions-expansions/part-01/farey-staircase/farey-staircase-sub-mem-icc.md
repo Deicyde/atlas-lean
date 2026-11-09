@@ -6,4 +6,4 @@ $0 \le A_n(x) - A_{n-1}(x) \le \frac{\log n}{n(n-1)}$, where $\log$ is the natur
 
 ## Sources
 
-- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Lemma 8 (b) (`integers-2024-A37-lem-8`).
+- David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Lemma 8 (b).

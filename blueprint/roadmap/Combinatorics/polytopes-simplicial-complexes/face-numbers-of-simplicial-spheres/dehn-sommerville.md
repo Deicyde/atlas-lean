@@ -8,4 +8,4 @@ where $f_{-1} = 1$ and $f_k$ is the number of $k$-dimensional faces of $X$.
 
 ## Sources
 
-- M. Dehn (1905); D. M. Y. Sommerville (1927); see Stanley, *Combinatorics and Commutative Algebra*. Knill, *Some fundamental theorems in mathematics*, §142. Via leanprover/lean-eval@38361be, problem `dehn_sommerville`.
+- M. Dehn (1905); D. M. Y. Sommerville (1927); see Stanley, *Combinatorics and Commutative Algebra*. Knill, *Some fundamental theorems in mathematics*, §142. Problem `dehn_sommerville` of the lean-eval benchmark.

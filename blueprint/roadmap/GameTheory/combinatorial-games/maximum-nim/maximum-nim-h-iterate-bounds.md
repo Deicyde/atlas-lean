@@ -10,4 +10,4 @@ $h_k^-(x) \le h_k(x) \le h_k^+(x)$.
 
 ## Sources
 
-- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 7 (`integers-2024-G5-lem-7`).
+- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 7.

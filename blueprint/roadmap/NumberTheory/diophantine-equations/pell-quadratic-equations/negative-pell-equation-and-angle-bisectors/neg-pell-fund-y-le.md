@@ -6,4 +6,4 @@ integer such that $x^2 - d y^2 = -1$ for some natural number $x$, then $Y \le y$
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (24) (`integers-2024-A111-prop-5`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (24).

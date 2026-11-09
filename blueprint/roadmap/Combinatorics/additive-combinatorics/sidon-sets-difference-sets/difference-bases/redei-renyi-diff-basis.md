@@ -6,4 +6,4 @@ and every $x \in \{1, \dots, n\}$ is a difference $b - b'$ of two elements of $B
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 2 (`integers-2025-A77-lem-2`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 2.

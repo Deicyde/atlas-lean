@@ -8,4 +8,4 @@ $1 \le d \le n_0 - 1$ such that $j$ and $j + d$ both lie in $S$ for arbitrarily 
 
 ## Sources
 
-- Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 3 (`integers-2024-A105-lem-3`).
+- Katie Ansaldi, Gabriel Cowley, Eric Green, Kihyun Kim and JT Rapp, *Rainbow-Free Colorings and Rainbow Numbers for x-y=z^k*, INTEGERS 24 (2024), Article A105, Lemma 3.

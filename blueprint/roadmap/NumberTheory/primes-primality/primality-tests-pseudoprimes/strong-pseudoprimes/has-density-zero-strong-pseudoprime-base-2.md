@@ -12,4 +12,4 @@ numbers $n$ for which at least one of (a)–(d) fails has natural density $0$.
 
 ## Sources
 
-- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 3 (`integers-2024-A23-cor-3`).
+- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 3.

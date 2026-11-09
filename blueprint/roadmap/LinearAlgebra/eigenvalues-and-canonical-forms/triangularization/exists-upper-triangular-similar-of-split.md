@@ -11,4 +11,4 @@ by the change-of-basis matrix from the standard basis to the triangularizing bas
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Linear algebra / Structure theory of endomorphisms / triangularization; R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 2.3.1.
+- R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 2.3.1.

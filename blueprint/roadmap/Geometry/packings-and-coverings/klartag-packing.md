@@ -9,4 +9,4 @@ The map $\varphi$ is not required to be invertible; a degenerate $\varphi$ would
 
 ## Sources
 
-- see manifest Via leanprover/lean-eval@38361be, problem `klartag_packing`.
+-. Problem `klartag_packing` of the lean-eval benchmark.

@@ -8,4 +8,4 @@ structure on $CT(p, s)$.
 
 ## Sources
 
-- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 3.3 (`integers-2025-A82-prop-1`) and Proposition 3.6 for `i = 1` (`integers-2025-A82-prop-2`).
+- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 3.3 and Proposition 3.6 for `i = 1`.

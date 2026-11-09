@@ -11,4 +11,4 @@ independent refutation.
 
 ## Sources
 
-- Tom Adamczewski, Bernhard Böhmler and René Marczinzik, A counterexample to Köthe's conjecture and a question of Rowen, arXiv:2609.07996 (2026), https://arxiv.org/abs/2609.07996; Be'eri Greenfeld, G. King and Leandro Vendramin, The Köthe conjecture via point modules, arXiv:2609.15080 (2026), https://arxiv.org/abs/2609.15080. Moved from `OpenConjectures/Algebra/KoetheNilLeftIdeals`.
+- Tom Adamczewski, Bernhard Böhmler and René Marczinzik, A counterexample to Köthe's conjecture and a question of Rowen, arXiv:2609.07996 (2026), https://arxiv.org/abs/2609.07996; Be'eri Greenfeld, G. King and Leandro Vendramin, The Köthe conjecture via point modules, arXiv:2609.15080 (2026), https://arxiv.org/abs/2609.15080.

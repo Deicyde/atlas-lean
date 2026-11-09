@@ -19,4 +19,4 @@ $\ell = 0$, symmetric in the two positions, and trivial for equal positions.
 
 ## Sources
 
-- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Lemma 2 (`integers-2025-A78-lem-2`).
+- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Lemma 2.

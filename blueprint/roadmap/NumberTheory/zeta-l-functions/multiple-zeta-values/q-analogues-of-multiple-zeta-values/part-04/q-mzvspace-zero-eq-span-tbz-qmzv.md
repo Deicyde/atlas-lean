@@ -8,4 +8,4 @@ $k_1, \dots, k_r \in \overline{\mathbb{N}}$ with $k_1 \ne 1$ when $r \ge 1$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 6 (`integers-2024-A6-prop-6`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 6.

@@ -10,4 +10,4 @@ in positive integers and for which the proportion of monochromatic solutions is 
 
 ## Sources
 
-- Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Corollary 1 (`integers-2025-A88-cor-1`).
+- Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Corollary 1.

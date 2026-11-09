@@ -9,4 +9,4 @@ Van Doorn and Everts obtain a counterexample with $C = 6$.
 
 ## Sources
 
-- Wouter van Doorn and Anneroos R. F. Everts, Smooth sums with small spacings, arXiv:2511.04585v1 (2025), https://arxiv.org/abs/2511.04585v1. Moved from `OpenConjectures/NumberTheory/ErdosProblem845`.
+- Wouter van Doorn and Anneroos R. F. Everts, Smooth sums with small spacings, arXiv:2511.04585v1 (2025), https://arxiv.org/abs/2511.04585v1.

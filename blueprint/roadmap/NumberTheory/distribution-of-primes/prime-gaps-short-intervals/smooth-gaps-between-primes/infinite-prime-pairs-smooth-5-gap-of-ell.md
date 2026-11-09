@@ -6,4 +6,4 @@ that every prime factor of $p - q$ is at most $5$.
 
 ## Sources
 
-- Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 4 (`integers-2025-A44-thm-4`).
+- Carol Wu, *On Smooth Gaps between Primes Using the Maynard-Tao Sieve*, INTEGERS 25 (2025), Article A44, Theorem 4.

@@ -9,4 +9,4 @@ The paper prints the non-strict form; Büthe's original bound is strict.
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 2 (Büthe) (`integers-2024-A34-lem-2`).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 2 (Büthe).

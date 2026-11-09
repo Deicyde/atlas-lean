@@ -9,4 +9,4 @@ form in which Parisse quotes this result of Cristea, Martinjak and Urbiha.
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 4, Equation (2.9) (`integers-2024-A70-thm-4`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 4, Equation (2.9).

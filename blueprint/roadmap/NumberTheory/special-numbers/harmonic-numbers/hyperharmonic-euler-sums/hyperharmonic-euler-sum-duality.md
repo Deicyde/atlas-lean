@@ -9,4 +9,4 @@ and $S(k, r; p + 1; 1 - t) = S(p, t; k + 1; 1 - r)$.
 
 ## Sources
 
-- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 1 (`integers-2026-A81-cor-1`).
+- Paul Thomas Young, *Parametric Euler Sums of Generalized Hyperharmonic Numbers*, INTEGERS 26 (2026), Article A81, Corollary 1.

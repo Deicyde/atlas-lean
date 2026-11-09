@@ -9,4 +9,4 @@ following the finite group-algebra argument in Terras, Ch. 1.
 
 ## Sources
 
-- `undergrad.yaml`, section "Representation theory of finite groups", entry "convolution"; A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 1 (the group algebra).
+- A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 1 (the group algebra).

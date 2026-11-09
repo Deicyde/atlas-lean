@@ -10,4 +10,4 @@ $$\min\{(h \lceil k/d \rceil - h + 1)\, d : d \text{ a positive divisor of } m\}
 
 ## Sources
 
-- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 6 (Plagne) (`integers-2025-A12-thm-6`).
+- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 6 (Plagne).

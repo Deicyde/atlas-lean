@@ -19,4 +19,4 @@ The second bound is the form (3.1) of the first, obtained from $\log(K + 1) < \l
 
 ## Sources
 
-- Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 3.4 (quoted from [3, Lemma 2.1]) and inequality (3.1) (`integers-2025-A48-lem-3-4`).
+- Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 3.4 (quoted from [3, Lemma 2.1]) and inequality (3.1).

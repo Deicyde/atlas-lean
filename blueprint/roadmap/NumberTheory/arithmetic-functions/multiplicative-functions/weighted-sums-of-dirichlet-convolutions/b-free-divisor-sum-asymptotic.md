@@ -19,4 +19,4 @@ $\Delta(x) = O(x^\eta)$, $E(x) = O(x^{\eta + \varepsilon})$ for every $\varepsil
 
 ## Sources
 
-- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Corollary 2 (`integers-2024-A75-cor-2`).
+- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Corollary 2.

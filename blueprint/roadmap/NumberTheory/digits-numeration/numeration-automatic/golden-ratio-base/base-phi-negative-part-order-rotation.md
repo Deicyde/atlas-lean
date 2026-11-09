@@ -18,4 +18,4 @@ the paper's worked case $n = 3$, where $\Pi^\beta_6 = 7\,2\,5\,0\,3\,6\,1\,4$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 12 (`integers-2024-A24-thm-12`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Theorem 12.

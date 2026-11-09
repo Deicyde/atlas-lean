@@ -14,4 +14,4 @@ $hk - h + 1$.
 
 ## Sources
 
-- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Corollary 1 (`integers-2026-A31-cor-1`).
+- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Corollary 1.

@@ -12,4 +12,4 @@ $(O, E, O)$.
 
 ## Sources
 
-- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Corollary 10 (`integers-2026-G4-cor-10`).
+- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Corollary 10.

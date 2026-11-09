@@ -5,4 +5,4 @@ inclusion $[0, 1] \to \mathbb{R}$, $t \mapsto t$, over the whole interval $[0, 1
 
 ## Sources
 
-- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.
+- Optimization Problems, constant 13a; source-specific interval-arc adaptation.

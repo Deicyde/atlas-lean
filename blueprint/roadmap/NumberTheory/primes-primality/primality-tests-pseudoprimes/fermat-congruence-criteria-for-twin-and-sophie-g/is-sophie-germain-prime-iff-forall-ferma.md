@@ -8,4 +8,4 @@ $p(2p + 1)$.
 
 ## Sources
 
-- Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Theorem 3.3, Congruences (3.5) (`integers-2025-A31-thm-3-3`).
+- Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Theorem 3.3, Congruences (3.5).

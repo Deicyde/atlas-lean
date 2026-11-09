@@ -10,4 +10,4 @@ $\lfloor m\delta\rfloor$ for positive integers $m$.
 
 ## Sources
 
-- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Corollary 1 (`integers-2025-A104-cor-1`).
+- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Corollary 1.

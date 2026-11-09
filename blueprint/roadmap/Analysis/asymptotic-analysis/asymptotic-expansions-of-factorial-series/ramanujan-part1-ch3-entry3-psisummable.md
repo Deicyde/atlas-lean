@@ -11,4 +11,4 @@ match the source.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 3, printed p. 47 / PDF p. 57. Proves `Wanted` entry `ramanujan_part1_ch3_entry3_psisummable`. It follows from `ramanujan_part1_ch3_entry3_psisummable_general`; the hypotheses `x ≠ 0` and `ε < π` are unused and keep the source's shape.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 3, printed p. 47 / PDF p. 57. It follows from `ramanujan_part1_ch3_entry3_psisummable_general`; the hypotheses `x ≠ 0` and `ε < π` are unused and keep the source's shape.

@@ -8,4 +8,4 @@ This includes $n = 0$, where $a_{k,0} = 1 = F_1$; the source takes $n$ positive.
 
 ## Sources
 
-- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Proposition 3.5 (`fq-2024-chu08302024rev-prop-3.5`).
+- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Proposition 3.5.

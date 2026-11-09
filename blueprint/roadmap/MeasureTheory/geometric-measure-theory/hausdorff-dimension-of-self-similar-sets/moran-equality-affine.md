@@ -9,4 +9,4 @@ $$\dim_H S = -\frac{\log n}{\log \lambda}.$$
 
 ## Sources
 
-- P. A. P. Moran, *Additive functions of intervals and Hausdorff measure*, Proc. Cambridge Philos. Soc. 42 (1946); J. E. Hutchinson, *Fractals and self similarity*, Indiana Univ. Math. J. 30 (1981). Knill, *Some fundamental theorems in mathematics*, §105. Via leanprover/lean-eval@38361be, problem `moran_equality_affine`.
+- P. A. P. Moran, *Additive functions of intervals and Hausdorff measure*, Proc. Cambridge Philos. Soc. 42 (1946); J. E. Hutchinson, *Fractals and self similarity*, Indiana Univ. Math. J. 30 (1981). Knill, *Some fundamental theorems in mathematics*, §105. Problem `moran_equality_affine` of the lean-eval benchmark.

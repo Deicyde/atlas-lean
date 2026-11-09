@@ -10,4 +10,4 @@ where the exponent $t(t+1)/2$ is an integer.
 
 ## Sources
 
-- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Lemma 1 (`integers-2026-A115-lem-1`).
+- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Lemma 1.

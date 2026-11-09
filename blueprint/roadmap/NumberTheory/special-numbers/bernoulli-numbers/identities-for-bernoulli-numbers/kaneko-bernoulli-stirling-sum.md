@@ -12,4 +12,4 @@ $B_n^{(1)}$ come from the generating series $t/(1 - e^{-t})$).
 
 ## Sources
 
-- Y. Hamahata and H. Masubuchi, "Special Multi-Poly-Bernoulli Numbers," Journal of Integer Sequences 10 (2007), Article 07.4.1, Theorem [Kaneko1] (label 1), lines 144–152, https://cs.uwaterloo.ca/journals/JIS/VOL10/Hamahata/hamahata3.tex citing M. Kaneko, "Poly-Bernoulli numbers," Journal de Théorie des Nombres de Bordeaux 9 (1997), 221–228.
+- Y. Hamahata and H. Masubuchi, "Special Multi-Poly-Bernoulli Numbers," Journal of Integer Sequences 10 (2007), Article 07.4.1, Theorem [Kaneko1], lines 144–152, https://cs.uwaterloo.ca/journals/JIS/VOL10/Hamahata/hamahata3.tex citing M. Kaneko, "Poly-Bernoulli numbers," Journal de Théorie des Nombres de Bordeaux 9 (1997), 221–228.

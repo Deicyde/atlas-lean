@@ -18,4 +18,4 @@ is a homotopy equivalence, the analogue of Hatcher's theorem for $S^3$, does not
 
 ## Sources
 
-- T. Watanabe, *Some exotic nontrivial elements of the rational homotopy groups of Diff(S⁴)*, arXiv:1812.02448 (2018). Pairs with the positive S³ statement of Hatcher (Ann. of Math. 117, 1983) in SmaleConjecture.lean. Via leanprover/lean-eval@38361be, problem `watanabe_four_dim_smale_disproof`.
+- T. Watanabe, *Some exotic nontrivial elements of the rational homotopy groups of Diff(S⁴)*, arXiv:1812.02448 (2018). Pairs with the positive S³ statement of Hatcher (Ann. of Math. 117, 1983). Problem `watanabe_four_dim_smale_disproof` of the lean-eval benchmark.

@@ -7,4 +7,4 @@ subsequence of two independent uniformly random binary strings of length $n$.
 
 ## Sources
 
-- Dančík (1994), catalogue computer-assisted lower bound `0.773911`. Known literature result; its proof and certificate are not supplied here.
+- Dančík (1994), catalogue computer-assisted lower bound `0.773911`.

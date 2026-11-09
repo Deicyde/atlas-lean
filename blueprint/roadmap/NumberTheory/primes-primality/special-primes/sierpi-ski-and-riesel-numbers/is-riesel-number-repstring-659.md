@@ -7,4 +7,4 @@ of $659$ (ten binary digits) written $t$ times with two zeros between consecutiv
 
 ## Sources
 
-- Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 4.4 (`integers-2026-A12-thm-4-4`).
+- Bispels, Cohen, Harrington, Lowrance, Pontes, Schaumann and Wong, *On Sierpiński and Riesel Repdigits and Repintegers*, INTEGERS 26 (2026), Article A12, Theorem 4.4.

@@ -9,4 +9,4 @@ holds, but $X^0 = 1$ is constant.
 
 ## Sources
 
-- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Lemma 2 (`integers-2024-A12-lem-2`).
+- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Lemma 2.

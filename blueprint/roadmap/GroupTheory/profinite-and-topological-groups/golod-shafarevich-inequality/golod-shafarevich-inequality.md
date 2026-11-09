@@ -7,4 +7,4 @@ cohomology group $H^2(Q, \mathbb{F}_p)$ with trivial coefficients, satisfy $d(Q)
 
 ## Sources
 
-- NSW (J. Neukirch, A. Schmidt, K. Wingberg, *Cohomology of Number Fields*, 2nd ed., Grundlehren 323, Springer 2008), Theorem 3.9.7; J.-P. Serre, *Galois Cohomology*, Chapter I, Appendix 2, Theorem 1. Lean hypothesis: https://github.com/logical-intelligence/erdos-unit-distance (Hyp_GolodShafarevichInequality). Via leanprover/lean-eval@38361be, problem `golod_shafarevich_inequality`.
+- NSW (J. Neukirch, A. Schmidt, K. Wingberg, *Cohomology of Number Fields*, 2nd ed., Grundlehren 323, Springer 2008), Theorem 3.9.7; J.-P. Serre, *Galois Cohomology*, Chapter I, Appendix 2, Theorem 1. Lean hypothesis: https://github.com/logical-intelligence/erdos-unit-distance (Hyp_GolodShafarevichInequality). Problem `golod_shafarevich_inequality` of the lean-eval benchmark.

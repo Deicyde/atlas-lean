@@ -8,4 +8,4 @@ dividing $n$, then $2^{a+1} < R$.
 
 ## Sources
 
-- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Proposition (label `evenprimitivenondeficientshaveatightbound`).
+- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Proposition.

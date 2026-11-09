@@ -11,4 +11,4 @@ so the edge $(d_j, d_{\sigma(j)})$ lies on a directed cycle of that graph.
 
 ## Sources
 
-- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 4 (`integers-2025-A111-thm-4`), quoting Holt, *Finding Permutiples of a Known Base and Multiplier*.
+- Benjamin V. Holt, *A Multigraph Characterization of Permutiple Strings*, INTEGERS 25 (2025), Article A111, Theorem 4, quoting Holt, *Finding Permutiples of a Known Base and Multiplier*.

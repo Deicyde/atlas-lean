@@ -8,4 +8,4 @@ interior $\operatorname{int} K$, repetitions allowed.
 
 ## Sources
 
-- Bezdek and Khan, arXiv:1602.06040v2, introduction; Arman, Kaire and Prymak, arXiv:2510.25968v3, introduction. The left side is the explicit closed formulation, not an assumed OpenConjectures declaration.
+- Bezdek and Khan, arXiv:1602.06040v2, introduction; Arman, Kaire and Prymak, arXiv:2510.25968v3, introduction.

@@ -9,4 +9,4 @@ The constant $1 / \log 4$ is the threshold imposed by the prime $2$.
 
 ## Sources
 
-- Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Theorem 1 (`integers-2026-A47-thm-1`).
+- Carl Pomerance, *Remarks on the Middle Binomial Coefficient*, INTEGERS 26 (2026), Article A47, Theorem 1.

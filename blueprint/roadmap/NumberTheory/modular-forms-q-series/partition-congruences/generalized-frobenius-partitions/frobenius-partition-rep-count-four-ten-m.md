@@ -6,4 +6,4 @@ natural number $n$, $\varphi_4(10n + 6) \equiv 0 \pmod 5$.
 
 ## Sources
 
-- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Theorem 5 (`integers-2025-A17-thm-5`).
+- Bipul Kumar Sarmah and Satyajit Gayan, *Congruences for F-partitions with 4 Repetitions*, INTEGERS 25 (2025), Article A17, Theorem 5.

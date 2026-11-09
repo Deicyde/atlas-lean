@@ -9,4 +9,4 @@ $B(x, y)\,(1 - x - x^2)(1 - xy)(1 - x^2y) =
 
 ## Sources
 
-- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 8 (`integers-2024-A35-thm-8`).
+- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 8.

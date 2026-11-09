@@ -16,4 +16,4 @@ formula fails, giving $t_1(2) = 1$ although $t_1(2) = 0$.
 
 ## Sources
 
-- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 2 (`integers-2026-A93-thm-2`).
+- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 2.

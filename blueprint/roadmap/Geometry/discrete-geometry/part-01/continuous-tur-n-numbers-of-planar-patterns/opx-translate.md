@@ -7,4 +7,4 @@ $\operatorname{opx}(n, P + v) = \operatorname{opx}(n, P)$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.2 (`integers-2024-A1-lem-2-2`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.2.

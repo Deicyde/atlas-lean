@@ -17,4 +17,4 @@ fail, since $44$ is not a Fibonacci number.
 
 ## Sources
 
-- Florian Luca, *On the Discriminant of the k-Generalized Fibonacci Polynomial, II*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 1 (`fq-2024-luca02082024-thm-1`).
+- Florian Luca, *On the Discriminant of the k-Generalized Fibonacci Polynomial, II*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 1.

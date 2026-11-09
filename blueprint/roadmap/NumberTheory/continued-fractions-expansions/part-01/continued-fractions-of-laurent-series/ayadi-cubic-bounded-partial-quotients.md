@@ -9,4 +9,4 @@ $x^\ell \alpha^3 + A \alpha^2 + 1 = 0$, then $\alpha$ has bounded partial quotie
 
 ## Sources
 
-- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Corollary 1 (`integers-2026-A57-cor-1`).
+- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Corollary 1.

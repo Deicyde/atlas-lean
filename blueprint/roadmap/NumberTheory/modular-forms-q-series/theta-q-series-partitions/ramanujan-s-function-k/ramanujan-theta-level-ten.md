@@ -19,4 +19,4 @@ $$
 
 ## Sources
 
-- Russelle Guadalupe, *New Proofs of Certain Theta Function Identities via Ramanujan's Function*, INTEGERS 26 (2026), Article A41, Theorem 1, Equations (3) and (4) (`integers-2026-A41-thm-1`).
+- Russelle Guadalupe, *New Proofs of Certain Theta Function Identities via Ramanujan's Function*, INTEGERS 26 (2026), Article A41, Theorem 1, Equations (3) and (4).

@@ -20,4 +20,4 @@ converge unconditionally to the same sum.
 
 ## Sources
 
-- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 1, printed p. 45 / PDF p. 55. Proves `Wanted` entry `ramanujan_part1_ch3_entry1_series_transformation`.
+- Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 1, printed p. 45 / PDF p. 55.

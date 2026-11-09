@@ -8,4 +8,4 @@ The two definitions are the same function.
 
 ## Sources
 
-- Ballot, JIS Vol. 21 and Vol. 24. Concept `jis_sem_17c3c7bf3e94f23255e5a2a1`.
+- Ballot, JIS Vol. 21 and Vol. 24.

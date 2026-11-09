@@ -15,4 +15,4 @@ $\varepsilon < 1/2$.
 
 ## Sources
 
-- C. Aistleitner, I. Berkes, R. Tichy, Lacunary sequences in analysis, probability and number theory, arXiv preprint (2023), arXiv:2301.05561 (reporting I. Berkes, W. Philipp, J. London Math. Soc. (2) 50 (1994), 454-464), https://arxiv.org/abs/2301.05561. Moved from `OpenConjectures/NumberTheory/ErdosSequenceDiscrepancy`.
+- C. Aistleitner, I. Berkes, R. Tichy, Lacunary sequences in analysis, probability and number theory, arXiv preprint (2023), arXiv:2301.05561 (reporting I. Berkes, W. Philipp, J. London Math. Soc. (2) 50 (1994), 454-464), https://arxiv.org/abs/2301.05561.

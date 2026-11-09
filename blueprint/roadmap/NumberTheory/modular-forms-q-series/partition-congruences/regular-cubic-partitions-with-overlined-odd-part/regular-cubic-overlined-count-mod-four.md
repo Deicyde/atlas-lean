@@ -11,4 +11,4 @@ $k > 0$, then $4$ divides $a_{4k+1}(4n + 3)$.
 
 ## Sources
 
-- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Theorem 5, eqs. (17)–(20) (`integers-2024-A101-thm-5`).
+- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Theorem 5, eqs. (17)–(20).

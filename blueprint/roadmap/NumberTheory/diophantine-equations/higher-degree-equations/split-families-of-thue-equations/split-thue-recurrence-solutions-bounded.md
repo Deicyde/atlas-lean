@@ -10,4 +10,4 @@ we have $\log |x| \le \kappa$, $\log |y| \le \kappa$ and $n \le \kappa$ (where $
 
 ## Sources
 
-- Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Theorem 1 (`integers-2025-A35-thm-1`). The computability of `κ` is not recorded.
+- Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Theorem 1. The computability of `κ` is not recorded.

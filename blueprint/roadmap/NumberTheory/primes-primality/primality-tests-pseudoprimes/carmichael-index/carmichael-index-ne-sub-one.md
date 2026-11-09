@@ -6,4 +6,4 @@ $a^n \equiv a \pmod{n}$, is not equal to $n - 1$.
 
 ## Sources
 
-- Yamagami and Inaba, *On a Formula and Some Properties of Carmichael Indices*, INTEGERS 24 (2024), Article A40, Theorem 2 (`integers-2024-A40-thm-2`).
+- Yamagami and Inaba, *On a Formula and Some Properties of Carmichael Indices*, INTEGERS 24 (2024), Article A40, Theorem 2.

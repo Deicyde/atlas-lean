@@ -8,4 +8,4 @@ $\int_0^{\pi/2} \cos^n x \sin(nx)\,dx = \frac{1}{2^{n+1}} \sum_{k=1}^{n} \frac{2
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9. Proves `Wanted` entry `ramanujan_part1_ch9_entry33_zeta3integral`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.

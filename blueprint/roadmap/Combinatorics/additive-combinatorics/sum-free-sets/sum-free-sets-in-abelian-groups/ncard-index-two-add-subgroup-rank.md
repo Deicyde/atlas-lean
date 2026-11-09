@@ -9,4 +9,4 @@ of a group is the minimal number of its generators.
 
 ## Sources
 
-- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 4 (`integers-2026-A97-lem-4`).
+- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 4.

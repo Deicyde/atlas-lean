@@ -10,4 +10,4 @@ The paper leaves $h$ unquantified; $h \ge 1$ is needed, since $|0A| = 1$.
 
 ## Sources
 
-- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 5 (`integers-2026-A31-thm-5`).
+- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Theorem 5.

@@ -17,4 +17,4 @@ stated here. The printed form contradicts the upper bound for $s_k(x)$ for large
 
 ## Sources
 
-- Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Theorem 2 and its proof (`integers-2026-A84-thm-2`), with `D`, `L` from Section 2.
+- Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Theorem 2 and its proof, with `D`, `L` from Section 2.

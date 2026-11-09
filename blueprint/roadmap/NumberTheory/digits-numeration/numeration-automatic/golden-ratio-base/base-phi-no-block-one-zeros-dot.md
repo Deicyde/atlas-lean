@@ -7,4 +7,4 @@ $d_{2m+1} \cdots d_0 \cdot d_{-1} = 10^{2m+1} \cdot 0$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 1 (`integers-2024-A24-lem-1`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 1.

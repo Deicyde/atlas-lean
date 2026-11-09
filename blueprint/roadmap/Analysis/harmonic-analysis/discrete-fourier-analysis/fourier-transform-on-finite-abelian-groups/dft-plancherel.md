@@ -13,4 +13,4 @@ Section 4, proves the same identity by checking it on characters.
 
 ## Sources
 
-- `undergrad.yaml`, section "Fourier transform", entry "discrete Fourier transform on a finite abelian group"; A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2, Plancherel formula.
+- A. Terras, Fourier Analysis on Finite Groups and Applications, Ch. 2, Plancherel formula.

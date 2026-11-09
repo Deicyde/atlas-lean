@@ -11,4 +11,4 @@ Equivalently, $|k| < 2 R_n$ with $R_n = \max_{0 \le i \le n-1} |c_i|^{1/(n-i)}$.
 
 ## Sources
 
-- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 9 (`integers-2026-A93-thm-9`).
+- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 9.

@@ -12,4 +12,4 @@ $\sum_{k=1}^{n} (-1)^{k+1} \varepsilon_{k,\lambda} H_\lambda(n, k - 1, \alpha) /
 
 ## Sources
 
-- Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 8 (`integers-2024-A41-thm-8`).
+- Ömer Duran, Neşe Ömür and Sibel Koparal, *Generalized Degenerate Harmonic Numbers and Their Applications with Riordan Arrays*, INTEGERS 24 (2024), Article A41, Theorem 8.

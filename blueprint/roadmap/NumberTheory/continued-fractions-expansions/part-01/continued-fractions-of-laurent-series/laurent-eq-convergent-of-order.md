@@ -16,4 +16,4 @@ its conclusion $|b_{n+1}| = |x|^s$; the hypothesis of (ii) reads $|Q \alpha - P|
 
 ## Sources
 
-- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 3 (generalizing Baum and Sweet, Lemma 1) (`integers-2026-A57-lem-3`).
+- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 3 (generalizing Baum and Sweet, Lemma 1).

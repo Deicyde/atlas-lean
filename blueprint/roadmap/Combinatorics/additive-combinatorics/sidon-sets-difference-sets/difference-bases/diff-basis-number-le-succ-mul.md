@@ -11,4 +11,4 @@ prints the factor $q$, obtained from the misprinted Lemma 4; its proof gives $q 
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Corollary 3 (`integers-2025-A77-cor-3`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Corollary 3.

@@ -23,4 +23,4 @@ The paper states this for every $h \ge 1$, but its main term is not correct for 
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 4, cases `h = 1, 2` (`integers-2026-A80-thm-4`); `Φ` as defined after Theorem 3.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Theorem 4, cases `h = 1, 2`; `Φ` as defined after Theorem 3.

@@ -16,4 +16,4 @@ equivalent one.
 
 ## Sources
 
-- Jon Grantham, *No New Goormaghtigh Primes up to 10^700*, INTEGERS 24 (2024), Article A98, Theorem 2 (`integers-2024-A98-thm-2`).
+- Jon Grantham, *No New Goormaghtigh Primes up to 10^700*, INTEGERS 24 (2024), Article A98, Theorem 2.

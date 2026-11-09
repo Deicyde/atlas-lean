@@ -8,4 +8,4 @@ converges, and its sum is $\frac{\log 3 - 1}{2}$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 2, printed p. 27 / PDF p. 37. Proves `Wanted` entry `ramanujan_part1_ch2_entry2_corollary`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 2, printed p. 27 / PDF p. 37.

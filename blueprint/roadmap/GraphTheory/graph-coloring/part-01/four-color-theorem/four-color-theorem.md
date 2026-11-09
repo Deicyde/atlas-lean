@@ -11,4 +11,4 @@ conclusion fails: $K_5$ needs five colors.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Four_color_theorem (statement four-color-s1).
+- https://en.wikipedia.org/wiki/Four_color_theorem.

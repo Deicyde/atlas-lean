@@ -8,4 +8,4 @@ $\binom{p}{2}$ colors.
 
 ## Sources
 
-- Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 2 (`integers-2026-A49-thm-2`).
+- Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 2.

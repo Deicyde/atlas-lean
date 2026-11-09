@@ -7,4 +7,4 @@ $$\int_{10}^{T} \frac{|\zeta(1/2 + it)|^4}{|\zeta(1 + 2it)|} \, dt \le C T (\log
 
 ## Sources
 
-- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 5 (`integers-2026-A70-lem-5`).
+- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 5.

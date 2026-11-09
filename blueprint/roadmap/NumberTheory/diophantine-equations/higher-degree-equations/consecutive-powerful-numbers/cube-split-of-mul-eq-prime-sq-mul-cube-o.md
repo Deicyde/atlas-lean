@@ -6,4 +6,4 @@ $C_2$ such that either $R = C_1^3$ and $S = p^2 C_2^3$, or $R = p^2 C_1^3$ and $
 
 ## Sources
 
-- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Lemma 1 (`integers-2025-A103-lem-1`).
+- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Lemma 1.

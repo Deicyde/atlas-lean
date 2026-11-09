@@ -11,4 +11,4 @@ When it holds, the last identity is a representation of $w$ as a sum of four squ
 
 ## Sources
 
-- Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Theorem 1 (`integers-2024-A25-thm-1`).
+- Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Theorem 1.

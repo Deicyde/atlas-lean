@@ -7,4 +7,4 @@ of $q^m$ in $q \prod_{j \ge 1} (1 - q^j)^k$. Then $R_{2^s}(n) \equiv \tau_{2^s -
 
 ## Sources
 
-- S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 5 (`integers-2024-A39-thm-5`).
+- S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 5.

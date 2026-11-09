@@ -10,4 +10,4 @@ $k = 3$.
 
 ## Sources
 
-- Safia Seffah, Salah Eddine Rihane, and Alain Togbé, *On an Equation Involving Repdigits and Products of Two k-Fibonacci Numbers*, INTEGERS 25 (2025), Article A55, Theorem 1 (`integers-2025-A55-thm-1`).
+- Safia Seffah, Salah Eddine Rihane, and Alain Togbé, *On an Equation Involving Repdigits and Products of Two k-Fibonacci Numbers*, INTEGERS 25 (2025), Article A55, Theorem 1.

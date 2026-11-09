@@ -17,4 +17,4 @@ This is the form of Theorem 8 established in its proof in the source.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 8 (`integers-2025-A41-thm-8`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 8.

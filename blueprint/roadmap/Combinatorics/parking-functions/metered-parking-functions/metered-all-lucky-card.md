@@ -11,4 +11,4 @@ $(t-1)!\,(n-m+1)\,t^{m-t}$ gives $-1$).
 
 ## Sources
 
-- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 8, Equation (13) (`integers-2025-A73-prop-8`).
+- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 8, Equation (13).

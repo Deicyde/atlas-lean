@@ -9,4 +9,4 @@ $M$ is the minimal system of generators of $S$.
 
 ## Sources
 
-- Morgan Boyers, Natalie Burton, Jeff Rushall, James Warner and Tara Zurick, *On Winning Strategies in Sylver Coinage When 4 Has Been Chosen*, INTEGERS 24 (2024), Article G2, Proposition 4, part 1 (`integers-2024-G2-prop-4`).
+- Morgan Boyers, Natalie Burton, Jeff Rushall, James Warner and Tara Zurick, *On Winning Strategies in Sylver Coinage When 4 Has Been Chosen*, INTEGERS 24 (2024), Article G2, Proposition 4, part 1.

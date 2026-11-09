@@ -8,4 +8,4 @@ $$\sum_{i=0}^{2n-2} \frac{(-1)^i \, s(2n-1, i)}{i+1} = H_n.$$
 
 ## Sources
 
-- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Theorem 3 (`integers-2026-A27-thm-3`).
+- Sabar Taoufik, *A New Triangle of Numbers: Properties and Observations*, INTEGERS 26 (2026), Article A27, Theorem 3.

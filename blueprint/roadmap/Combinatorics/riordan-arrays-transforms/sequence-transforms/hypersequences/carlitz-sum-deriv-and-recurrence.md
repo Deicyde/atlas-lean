@@ -10,4 +10,4 @@ The variable $n$ is complex here because the paper differentiates in $n$.
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Corollary 4, Equation (3.38) (`integers-2024-A70-cor-4`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Corollary 4, Equation (3.38).

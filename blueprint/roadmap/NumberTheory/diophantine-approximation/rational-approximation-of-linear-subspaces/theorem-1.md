@@ -9,4 +9,4 @@ $\mathbb{R}^d$ satisfies $\beta_k(x) = \frac{d}{k(d - l)}$.
 
 ## Sources
 
-- N. de Saxcé, `Rational approximations to linear subspaces`, Annals of Math, 203 (3) 2026. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2026-203-3-LinearSubspaces.lean Via leanprover/lean-eval@38361be, problem `annals_linear_subspaces`.
+- N. de Saxcé, `Rational approximations to linear subspaces`, Annals of Math, 203 (3) 2026. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_linear_subspaces` of the lean-eval benchmark.

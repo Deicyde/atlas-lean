@@ -13,4 +13,4 @@ elements.
 
 ## Sources
 
-- plby/lean-proofs, src/latest/ErdosProblems/Erdos750.lean (theorem erdos_750_independence), pinned revision 8822f7ddef30fadbd92e1c6ab4ed897af356af5e, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos750.lean#L41. Moved from `OpenConjectures/Combinatorics/ErdosProblem750`.
+- plby/lean-proofs, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos750.lean#L41.

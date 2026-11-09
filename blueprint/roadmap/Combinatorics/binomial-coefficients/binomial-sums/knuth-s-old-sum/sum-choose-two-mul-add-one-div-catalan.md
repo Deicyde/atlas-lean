@@ -8,4 +8,4 @@ $$\sum_{k=0}^{n} \binom{n}{k} \frac{2k+1}{k+2} \cdot \frac{2}{2^k} C_k =
 
 ## Sources
 
-- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 5 (`integers-2026-A19-prop-5`).
+- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Proposition 5.

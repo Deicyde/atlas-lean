@@ -10,4 +10,4 @@ $n \le 2$, $r^{\ast}(3) = 3$ and $r^{\ast}(n) = (n + 2)\, 2^{n-4}$ for $n \ge 4$
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 10 (`integers-2025-A5-thm-10`).
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Theorem 10.

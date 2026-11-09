@@ -8,4 +8,4 @@ $6$, then the least common multiple of the moduli of $C$ is at least $5040$.
 
 ## Sources
 
-- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 4 (`integers-2026-A38-thm-4`).
+- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 4.

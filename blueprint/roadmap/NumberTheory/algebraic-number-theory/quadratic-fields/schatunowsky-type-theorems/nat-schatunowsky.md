@@ -7,4 +7,4 @@ The numbers $a = 0$ and $a = 1$, for which no such $b$ exists, are excluded.
 
 ## Sources
 
-- Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 1, quoting Schatunowsky (`integers-2026-A110-thm-1`).
+- Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 1, quoting Schatunowsky.

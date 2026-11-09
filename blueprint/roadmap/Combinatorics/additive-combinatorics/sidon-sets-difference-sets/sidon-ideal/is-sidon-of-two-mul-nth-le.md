@@ -10,4 +10,4 @@ is infinite is not needed.
 
 ## Sources
 
-- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Lemma 1 (`integers-2025-A91-lem-1`).
+- Andrzej Nowik, *On the Sidon Ideal*, INTEGERS 25 (2025), Article A91, Lemma 1.

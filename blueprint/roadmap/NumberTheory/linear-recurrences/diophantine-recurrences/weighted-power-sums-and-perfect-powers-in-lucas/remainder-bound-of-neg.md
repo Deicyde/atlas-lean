@@ -9,4 +9,4 @@ $D^{q/2} |R_2| < k (D + 1/x)^{q+1} \alpha^{kp - 2k/q + 1}$.
 
 ## Sources
 
-- Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 4.2 (`fq-2024-earplynch07182024-lem-4.2`).
+- Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 4.2.

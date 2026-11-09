@@ -8,4 +8,4 @@ integers, so that $n - 2k$ may be negative.
 
 ## Sources
 
-- René Gy, *On Certain Products of Three Stirling Numbers*, INTEGERS 26 (2026), Article A108, Lemma 2.1 (`integers-2026-A108-lem-2-1`).
+- René Gy, *On Certain Products of Three Stirling Numbers*, INTEGERS 26 (2026), Article A108, Lemma 2.1.

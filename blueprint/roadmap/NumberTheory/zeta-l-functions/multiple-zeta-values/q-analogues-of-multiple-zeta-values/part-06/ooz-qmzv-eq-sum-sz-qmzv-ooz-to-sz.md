@@ -9,4 +9,4 @@ $\zeta_q^{\mathrm{OOZ}}(k) = \sum_w c_w \, \zeta_q^{\mathrm{SZ}}(w)$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (ii) (`integers-2024-A6-prop-12`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (ii).

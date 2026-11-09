@@ -15,4 +15,4 @@ Lehmer (1930) and Roettger-Williams (2025).
 
 ## Sources
 
-- E. L. Roettger and H. C. Williams, "Some Remarks Concerning the Lucas-Lehmer Primality Test," Journal of Integer Sequences 28 (2025), Article 25.2.5, Theorem (label acceptableseed), lines 814–819; Assertion A (label assertionA) at lines 187–190, https://cs.uwaterloo.ca/journals/JIS/VOL28/Roettger/roettger15.tex
+- E. L. Roettger and H. C. Williams, "Some Remarks Concerning the Lucas-Lehmer Primality Test," Journal of Integer Sequences 28 (2025), Article 25.2.5, Theorem, lines 814–819; Assertion A at lines 187–190, https://cs.uwaterloo.ca/journals/JIS/VOL28/Roettger/roettger15.tex

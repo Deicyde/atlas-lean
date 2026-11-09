@@ -12,4 +12,4 @@ $i \ge 1$.
 
 ## Sources
 
-- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, notation of Proposition 2 (`integers-2026-A69-prop-2`).
+- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, notation of Proposition 2.

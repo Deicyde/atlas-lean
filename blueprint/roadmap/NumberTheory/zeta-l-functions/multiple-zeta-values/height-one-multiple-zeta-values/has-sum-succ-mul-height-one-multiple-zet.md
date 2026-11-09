@@ -10,4 +10,4 @@ summable with sum the hyperharmonic zeta function $\sigma(r, s) = \sum_{m \ge 1}
 
 ## Sources
 
-- Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Theorem 3, second equality (`integers-2024-A43-thm-3`).
+- Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Theorem 3, second equality.

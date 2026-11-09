@@ -9,4 +9,4 @@ $\{\bar1\bar0, \bar0\bar1, \bar00, \bar01, 1\bar0\} \sim
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 13 (`integers-2026-A74-thm-13`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 13.

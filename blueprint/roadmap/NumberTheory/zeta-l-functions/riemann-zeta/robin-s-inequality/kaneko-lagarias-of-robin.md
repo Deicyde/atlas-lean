@@ -8,4 +8,4 @@ Kaneko–Lagarias inequality $\sigma(n) < e^{H_n} \log H_n$.
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 10 (`integers-2026-A86-thm-10`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 10.

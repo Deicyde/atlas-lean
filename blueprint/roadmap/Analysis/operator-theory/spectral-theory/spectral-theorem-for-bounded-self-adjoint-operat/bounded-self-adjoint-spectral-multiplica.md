@@ -12,4 +12,4 @@ measure, where the spectral coordinate acts by multiplication.
 
 ## Sources
 
-- Mathlib `Mathlib/Analysis/InnerProductSpace/Spectrum.lean` TODO (spectral theory for bounded self-adjoint operators); W. Rudin, Functional Analysis, 2nd ed., Ch. 12.
+- W. Rudin, Functional Analysis, 2nd ed., Ch. 12.

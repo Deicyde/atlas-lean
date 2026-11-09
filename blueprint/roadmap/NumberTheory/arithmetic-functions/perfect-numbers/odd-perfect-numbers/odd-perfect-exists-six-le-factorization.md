@@ -6,4 +6,4 @@ factorization of $N$ is at least $6$.
 
 ## Sources
 
-- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 1 (v) (`integers-2024-A114-lem-1`).
+- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 1 (v).

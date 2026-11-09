@@ -8,4 +8,4 @@ then $M_{ik}$ is true.
 
 ## Sources
 
-- JIS `mohammad3.tex`, lines 171–176, SHA-256 `839f29b85b01af033998ae2ca01fb12acb8b055b72ed095859474eb3f746a2b8`.
+- JIS `mohammad3.tex`, lines 171–176.

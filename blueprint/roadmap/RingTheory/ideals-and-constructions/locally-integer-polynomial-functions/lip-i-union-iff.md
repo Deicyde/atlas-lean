@@ -11,4 +11,4 @@ restriction of $f$ to $V_i$ lies in $\mathrm{LIP}(V_i)$.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 9 (`integers-2025-A41-thm-9`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 9.

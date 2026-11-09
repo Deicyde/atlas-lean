@@ -13,4 +13,4 @@ generating function of the central binomial coefficients.
 
 ## Sources
 
-- Khristo N. Boyadzhiev, "Series with Central Binomial Coefficients, Catalan Numbers, and Harmonic Numbers," Journal of Integer Sequences 15 (2012), Article 12.1.7, Theorem (label t3, equation 8), lines 155–160, https://cs.uwaterloo.ca/journals/JIS/VOL15/Boyadzhiev/boyadzhiev6.tex
+- Khristo N. Boyadzhiev, "Series with Central Binomial Coefficients, Catalan Numbers, and Harmonic Numbers," Journal of Integer Sequences 15 (2012), Article 12.1.7, Theorem (equation 8), lines 155–160, https://cs.uwaterloo.ca/journals/JIS/VOL15/Boyadzhiev/boyadzhiev6.tex

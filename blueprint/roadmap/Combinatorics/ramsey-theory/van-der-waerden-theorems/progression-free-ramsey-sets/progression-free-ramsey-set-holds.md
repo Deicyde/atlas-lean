@@ -8,4 +8,4 @@ $c(x) = i$ for every $x \in t$.
 
 ## Sources
 
-- T. F. Bloom, Erdős Problems, Problem #966, https://www.erdosproblems.com/966 (status PROVED (LEAN)); resolution: formal proof linked from erdosproblems.com/966 (found with Aristotle, posted in the comment thread); P. Erdős, Problems and results in combinatorial number theory (1975), 295-310, reports that Spencer had shown that such a sequence exists, erdosproblems.com/966 status 'proved (Lean)'; formal proof cited by formal-conjectures ErdosProblems/966.lean, https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos966.lean.
+- T. F. Bloom, Erdős Problems, Problem #966, https://www.erdosproblems.com/966 (status PROVED (LEAN)); resolution: formal proof linked from erdosproblems.com/966 (found with Aristotle, posted in the comment thread); P. Erdős, Problems and results in combinatorial number theory (1975), 295-310, reports that Spencer had shown that such a sequence exists, erdosproblems.com/966 status 'proved (Lean)'; formal proof cited by formal-conjectures, https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos966.lean.

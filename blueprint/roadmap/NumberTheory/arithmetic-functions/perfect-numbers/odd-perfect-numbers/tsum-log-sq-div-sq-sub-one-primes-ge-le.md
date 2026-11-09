@@ -8,4 +8,4 @@ where $E = \prod_{p \ge q} \frac{p^2}{p^2-1}$ is the product over the primes $p 
 
 ## Sources
 
-- Joshua Zelinsky, *The Sum of the Reciprocals of the Prime Divisors of an Odd Perfect or Odd Primitive Non-deficient Number*, INTEGERS 25 (2025), Article A59, Lemma 7 (`integers-2025-A59-lem-7`).
+- Joshua Zelinsky, *The Sum of the Reciprocals of the Prime Divisors of an Odd Perfect or Odd Primitive Non-deficient Number*, INTEGERS 25 (2025), Article A59, Lemma 7.

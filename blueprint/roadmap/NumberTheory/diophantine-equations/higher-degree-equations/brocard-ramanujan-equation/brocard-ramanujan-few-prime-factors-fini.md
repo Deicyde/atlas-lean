@@ -6,4 +6,4 @@ divisors.
 
 ## Sources
 
-- Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Theorem 1(ii), first sentence (`integers-2025-A71-thm-1`).
+- Abderrahim Makki Naciri, *On the Brocard-Ramanujan Equation with 7-Free Integers and Prime Powers*, INTEGERS 25 (2025), Article A71, Theorem 1(ii), first sentence.

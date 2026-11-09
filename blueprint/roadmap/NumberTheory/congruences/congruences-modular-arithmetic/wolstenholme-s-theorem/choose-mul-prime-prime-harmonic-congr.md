@@ -23,4 +23,4 @@ congruences agree modulo $p^6$.
 
 ## Sources
 
-- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 10 (`integers-2026-A32-thm-10`).
+- Walid Kehila, *An Extension of Wolstenholme's Theorem by Binomial Coefficients*, INTEGERS 26 (2026), Article A32, Theorem 10.

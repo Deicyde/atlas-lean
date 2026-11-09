@@ -15,4 +15,4 @@ grows, the two forms are equivalent.
 
 ## Sources
 
-- Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Lemma 3 (`integers-2025-A70-lem-3`).
+- Karen J. Sacanamboy, Eric F. Bravo, and Jhon J. Bravo, *Perrin Squares Which Are Again Perrin*, INTEGERS 25 (2025), Article A70, Lemma 3.

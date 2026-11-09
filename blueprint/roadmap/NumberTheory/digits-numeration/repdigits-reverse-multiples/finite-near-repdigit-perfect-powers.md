@@ -9,4 +9,4 @@ from the powers $10^{ln}$ ($n \in \mathbb{N}$) and, when $l = 3$, the cubes $8 \
 
 ## Sources
 
-- Omar Kihel and Florian Luca, "Perfect Powers with All Equal Digits but One," Journal of Integer Sequences 8 (2005), Article 05.5.7, Theorem 1 (label thm:1), lines 134–140, https://cs.uwaterloo.ca/journals/JIS/VOL8/Kihel/kihel7.tex.
+- Omar Kihel and Florian Luca, "Perfect Powers with All Equal Digits but One," Journal of Integer Sequences 8 (2005), Article 05.5.7, Theorem 1, lines 134–140, https://cs.uwaterloo.ca/journals/JIS/VOL8/Kihel/kihel7.tex.

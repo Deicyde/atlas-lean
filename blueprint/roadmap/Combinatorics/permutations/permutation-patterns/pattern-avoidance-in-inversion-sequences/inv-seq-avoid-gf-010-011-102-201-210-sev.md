@@ -14,4 +14,4 @@ $F_{B_j}(x) = x/(1 - x) + x^2(1 - x)/(1 - 2x)^2$.
 
 ## Sources
 
-- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 16 (`integers-2024-A76-thm-16`).
+- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 16.

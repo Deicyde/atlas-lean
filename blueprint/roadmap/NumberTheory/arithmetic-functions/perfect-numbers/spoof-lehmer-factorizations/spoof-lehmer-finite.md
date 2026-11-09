@@ -10,4 +10,4 @@ claim is not part of this statement.
 
 ## Sources
 
-- Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 6 (`integers-2026-A33-thm-6`).
+- Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 6.

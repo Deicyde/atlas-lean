@@ -15,4 +15,4 @@ $U_{(a-1)n+r} = 0$.
 
 ## Sources
 
-- Ballot, JIS Vol. 21. Concept `jis_sem_17c3c7bf3e94f23255e5a2a1`; source SHA-256 `ca51d34e717a237b02bca4bfa28c57dfc15c81f1276c7634d5abe998d1c48b89`.
+- Ballot, JIS Vol. 21.

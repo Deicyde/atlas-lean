@@ -10,4 +10,4 @@ $0.260437$.
 
 ## Sources
 
-- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.
+- Optimization Problems, constant 13a; source-specific interval-arc adaptation.

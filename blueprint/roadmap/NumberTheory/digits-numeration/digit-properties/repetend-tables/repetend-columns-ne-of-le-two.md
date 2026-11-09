@@ -8,4 +8,4 @@ distinct $i, j < L$ columns $i$ and $j$ are different.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 26 (`integers-2025-A26-lem-26`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 26.

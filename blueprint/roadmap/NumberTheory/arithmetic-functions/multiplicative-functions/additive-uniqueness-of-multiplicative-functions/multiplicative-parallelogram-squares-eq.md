@@ -7,4 +7,4 @@ $m > n \ge 1$, and suppose $f(4) \ne 0$. Then $f(n) = n^2$ for every natural num
 
 ## Sources
 
-- Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Theorem 1 (`integers-2024-A108-thm-1`).
+- Poo-Sung Park, *On the Parallelogram Uniqueness of Square Numbers for Multiplicative Functions*, INTEGERS 24 (2024), Article A108, Theorem 1.

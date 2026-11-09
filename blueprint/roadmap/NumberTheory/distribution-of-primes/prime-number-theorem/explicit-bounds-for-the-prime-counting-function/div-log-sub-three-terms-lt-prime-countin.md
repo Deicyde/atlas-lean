@@ -14,4 +14,4 @@ $x \ge 65405887$ under the Riemann hypothesis.
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 4 (`integers-2024-A34-thm-4`), inequality (14).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Theorem 4, inequality (14).

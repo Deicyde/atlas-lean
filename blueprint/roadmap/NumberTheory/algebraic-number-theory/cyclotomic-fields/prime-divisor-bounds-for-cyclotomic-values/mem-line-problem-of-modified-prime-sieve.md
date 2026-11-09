@@ -18,4 +18,4 @@ such that $a\gamma_2 + \gamma_1$ generates the multiplicative group $L^\times$.
 
 ## Sources
 
-- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 6 (`integers-2026-A95-prop-6`), quoting S. D. Cohen, Proposition 6.3.
+- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 6, quoting S. D. Cohen, Proposition 6.3.

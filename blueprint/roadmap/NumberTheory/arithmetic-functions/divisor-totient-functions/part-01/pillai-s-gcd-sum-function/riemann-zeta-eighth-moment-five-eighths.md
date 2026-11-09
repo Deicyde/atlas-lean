@@ -7,4 +7,4 @@ $$\int_{T/2}^{T} |\zeta(5/8 + it)|^8 \, dt \le C T (\log T)^{38}.$$
 
 ## Sources
 
-- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 2 (`integers-2026-A70-lem-2`).
+- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 2.

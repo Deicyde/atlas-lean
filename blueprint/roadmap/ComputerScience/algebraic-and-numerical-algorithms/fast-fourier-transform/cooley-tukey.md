@@ -18,4 +18,4 @@ section "The radix-2 DIT case" of Wikipedia, "Cooley–Tukey FFT algorithm".
 
 ## Sources
 
-- `undergrad.yaml`, section "Fourier transform", entry "fast Fourier transform"; J. W. Cooley and J. W. Tukey, Math. Comp. 19 (1965) (decimation in time).
+- J. W. Cooley and J. W. Tukey, Math. Comp. 19 (1965) (decimation in time).

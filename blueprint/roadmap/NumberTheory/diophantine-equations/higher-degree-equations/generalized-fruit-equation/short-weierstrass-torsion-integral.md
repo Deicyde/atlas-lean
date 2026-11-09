@@ -6,4 +6,4 @@ $m \ge 2$ has $x, y \in \mathbb{Z}$.
 
 ## Sources
 
-- Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 6 (`integers-2026-A21-thm-6`), quoted from Silverman, *The Arithmetic of Elliptic Curves*.
+- Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Theorem 6, quoted from Silverman, *The Arithmetic of Elliptic Curves*.

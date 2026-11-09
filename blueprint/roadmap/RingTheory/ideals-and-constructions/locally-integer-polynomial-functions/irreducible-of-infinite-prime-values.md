@@ -8,4 +8,4 @@ prime number for infinitely many $x \in U$, then $f$ is irreducible in the ring 
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 2 (`integers-2025-A41-thm-2`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 2.

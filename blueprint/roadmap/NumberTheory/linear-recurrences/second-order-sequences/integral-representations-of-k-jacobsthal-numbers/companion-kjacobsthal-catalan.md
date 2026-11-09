@@ -16,4 +16,4 @@ $(2b - ak + a\Delta_k)(ak - 2b + a\Delta_k)$, the form in which the source state
 
 ## Sources
 
-- Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 11 (`integers-2025-A74-thm-11`).
+- Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 11.

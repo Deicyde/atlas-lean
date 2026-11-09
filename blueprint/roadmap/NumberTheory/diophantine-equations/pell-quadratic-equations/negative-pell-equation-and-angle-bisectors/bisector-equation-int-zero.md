@@ -6,4 +6,4 @@ $(a - c)^2 (b^2 + 1) = (b - c)^2 (a^2 + 1)$. Then $|a| = |b|$.
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 2(b) (`integers-2024-A111-prop-2`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 2(b).

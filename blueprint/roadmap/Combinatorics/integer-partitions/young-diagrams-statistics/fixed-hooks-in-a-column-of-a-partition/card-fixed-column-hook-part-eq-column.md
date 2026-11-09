@@ -15,4 +15,4 @@ number is $0$.
 
 ## Sources
 
-- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 2 (`integers-2025-A28-thm-2`).
+- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 2.

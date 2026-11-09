@@ -9,4 +9,4 @@ ratio $N_{n_k, 4t_k} / A_{n_k, 4t_k}$ does not tend to $1$.
 
 ## Sources
 
-- Davis (2026), same paper: a nonvanishing correction at `t = Θ n³` for large fixed `Θ` blocks every smaller exponent for the leading term alone. Known literature result (preprint); its proof is not supplied here.
+- Davis (2026), same paper: a nonvanishing correction at `t = Θ n³` for large fixed `Θ` blocks every smaller exponent for the leading term alone.

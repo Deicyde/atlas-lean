@@ -12,4 +12,4 @@ $\liminf_{r \to \infty} n(f, r)/A(f, r) \ge 80/79$, and Hinkkanen and Miles (arX
 
 ## Sources
 
-- A. Hinkkanen and J. Miles, Maximum and Average Valence of Meromorphic Functions, arXiv preprint (2024), arXiv:2401.13808, https://arxiv.org/abs/2401.13808. Moved from `OpenConjectures/Analysis/HaymanSphericalAreaRatio`.
+- A. Hinkkanen and J. Miles, Maximum and Average Valence of Meromorphic Functions, arXiv preprint (2024), arXiv:2401.13808, https://arxiv.org/abs/2401.13808.

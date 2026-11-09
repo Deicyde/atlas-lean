@@ -12,4 +12,4 @@ $z\left(\sum_k \mu_k \tilde H_k\right) = \sum_k \bar\mu_k H_k$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 8 (`integers-2025-A25-thm-8`; arXiv:2308.12872v1, Section 3.2).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 8 (arXiv:2308.12872v1, Section 3.2).

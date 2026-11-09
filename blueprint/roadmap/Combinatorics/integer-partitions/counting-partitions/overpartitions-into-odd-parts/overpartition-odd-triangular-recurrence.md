@@ -7,4 +7,4 @@ $1$ if $n = m(m+1)/2$ for some natural number $m$, and equals $0$ otherwise.
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 4 (`integers-2026-A60-thm-4`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 4.

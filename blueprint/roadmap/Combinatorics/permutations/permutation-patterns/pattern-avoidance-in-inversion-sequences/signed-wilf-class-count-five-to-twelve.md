@@ -7,4 +7,4 @@ $\mathrm{sw}_9 = 22$, $\mathrm{sw}_{10} = 8$, $\mathrm{sw}_{11} = 3$ and $\mathr
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 11 (`integers-2026-A74-thm-11`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 11.

@@ -6,4 +6,4 @@ positive integer $n$, the sum $\sum_{k \ge 0,\ k(k+1)/2 \le n} P_2(n - k(k+1)/2)
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Corollary 3 (`integers-2026-A60-cor-3`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Corollary 3.

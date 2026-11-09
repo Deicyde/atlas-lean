@@ -12,4 +12,4 @@ where the maximum over the empty range (for $n = 1$) is taken to be $0$.
 
 ## Sources
 
-- Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Lemma 1 (`integers-2024-A53-lem-1`).
+- Caalim and Tanaka, *Lexicographically Minimal Extension of a Finite Binomid Index*, INTEGERS 24 (2024), Article A53, Lemma 1.

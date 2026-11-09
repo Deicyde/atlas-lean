@@ -8,4 +8,4 @@ $$\sum_{k=1}^{2n+1} \arctan \frac{1}{n+k} = \frac{\pi}{4} +
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, Entry 3, formula (3.1), printed p. 27 / PDF p. 37. Proves `Wanted` entry `ramanujan_part1_ch2_entry3`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, Entry 3, formula (3.1), printed p. 27 / PDF p. 37.

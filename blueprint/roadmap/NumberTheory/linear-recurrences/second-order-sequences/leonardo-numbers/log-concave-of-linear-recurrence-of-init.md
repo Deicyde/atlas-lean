@@ -16,4 +16,4 @@ the recurrence at $n = k$ forces $c_1 > 0$.
 
 ## Sources
 
-- Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Lemma 1 (quoted from the paper's reference [17]) (`integers-2024-A82-lem-1`).
+- Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Lemma 1 (quoted from the paper's reference [17]).

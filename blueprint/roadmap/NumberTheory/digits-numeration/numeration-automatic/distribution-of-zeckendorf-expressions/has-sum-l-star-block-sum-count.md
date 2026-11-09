@@ -10,4 +10,4 @@ sum $(1 - x^N) / f(x)$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 5 (`integers-2025-A25-prop-5`; arXiv:2308.12872v1, Section 4.1).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 5 (arXiv:2308.12872v1, Section 4.1).

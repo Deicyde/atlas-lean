@@ -11,4 +11,4 @@ The right side is $\Phi(f) / q^{\deg f}$, where $\Phi$ is Euler's totient functi
 
 ## Sources
 
-- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 6 (`integers-2026-A80-lem-6`); `Φ` as defined after Theorem 3.
+- Habib Jaber and Matilde Lalín, *Dirichlet Convolutions and Divisor Problems over B-Free Polynomials over Function Fields*, INTEGERS 26 (2026), Article A80, Lemma 6; `Φ` as defined after Theorem 3.

@@ -9,4 +9,4 @@ $$\sum_{l=0}^{N} (-1)^{N-l} \binom{N}{l} S(i+l, j) =
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 5 (`integers-2025-A27-thm-5`).
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 5.

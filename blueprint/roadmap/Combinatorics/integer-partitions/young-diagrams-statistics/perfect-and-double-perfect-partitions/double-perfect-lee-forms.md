@@ -13,4 +13,4 @@ double-perfect partition of $3$ of order $1$ of neither form.
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Corollary 1 with displays (5), (6) (`integers-2025-A109-cor-1`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Corollary 1 with displays (5), (6).

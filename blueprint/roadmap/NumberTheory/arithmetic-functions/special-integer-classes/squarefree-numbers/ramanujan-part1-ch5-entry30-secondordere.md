@@ -17,4 +17,4 @@ $\zeta(s)(\zeta(2s) - 1)/\zeta(2s)$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5, Entry 30, pp. 131–132. Proves `Wanted` entry `ramanujan_part1_ch5_entry30_secondordereulerian`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5, Entry 30, pp. 131–132.

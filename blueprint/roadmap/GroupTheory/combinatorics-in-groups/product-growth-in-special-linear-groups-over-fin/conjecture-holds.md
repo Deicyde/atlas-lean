@@ -13,4 +13,4 @@ additive-combinatorics Problem 3.4 (Green, after Venkatesh).
 
 ## Sources
 
-- N. Nikolov and L. Pyber, Product decompositions of quasirandom groups and a Jordan type theorem, arXiv:math/0703343, https://arxiv.org/abs/math/0703343. Moved from `OpenConjectures/Combinatorics/SL2TwoStepProductGrowth`.
+- N. Nikolov and L. Pyber, Product decompositions of quasirandom groups and a Jordan type theorem, arXiv:math/0703343, https://arxiv.org/abs/math/0703343.

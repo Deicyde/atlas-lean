@@ -12,4 +12,4 @@ and records that the positive solution follows from the positive solution of Pro
 
 ## Sources
 
-- plby/lean-proofs, src/latest/Util/PolynomialEgyptianSums.lean (theorem corollary_7_pos_leading, used by src/latest/ErdosProblems/Erdos351.lean), pinned revision 8822f7ddef30fadbd92e1c6ab4ed897af356af5e, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/Util/PolynomialEgyptianSums.lean#L10266. Moved from `OpenConjectures/NumberTheory/ErdosProblem351`.
+- plby/lean-proofs, https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/Util/PolynomialEgyptianSums.lean#L10266.

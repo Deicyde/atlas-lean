@@ -11,4 +11,4 @@ $$2^n F_n(\pi/2 - x) = \sum_{k=0}^{n} (-1)^k \binom{n}{k} \pi^{n-k}
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9. Proves `Wanted` entry `ramanujan_part1_ch9_entry15_xcot`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 9.

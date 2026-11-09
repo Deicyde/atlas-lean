@@ -9,4 +9,4 @@ $$\sum_{k=1}^{p-1} H_{k-1}^{(n-1)} k^{-1} x^k = (-1)^{n-1} \sum_{k=1}^{p-1} (k^{
 
 ## Sources
 
-- `https://cs.uwaterloo.ca/journals/JIS/VOL13/Tauraso/tauraso22.tex`, Lemma `Gg`, semantic concept `jis_sem_1e299eb15a144f108cb2fe31`, statement `jis_9e5865a09e42b4fb025d838d`.
+- <https://cs.uwaterloo.ca/journals/JIS/VOL13/Tauraso/tauraso22.tex>, Lemma `Gg`.

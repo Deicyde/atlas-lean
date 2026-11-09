@@ -19,4 +19,4 @@ paper's $\sum \chi_{x,y}(\alpha, \beta, \gamma)$.
 
 ## Sources
 
-- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 7 (`integers-2026-A122-prop-7`).
+- Smirnov, *Finite Divisibility Runs Between Generalized Fibonacci and Tribonacci Sequences*, INTEGERS 26 (2026), Article A122, Proposition 7.

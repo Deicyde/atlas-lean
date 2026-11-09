@@ -6,4 +6,4 @@ with $c - a = N$.
 
 ## Sources
 
-- Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Theorem 5 (`integers-2026-A1-thm-5`).
+- Anderson, Woodall and Zaharescu, *Arithmetic Polygons and Sums of Consecutive Squares*, INTEGERS 26 (2026), Article A1, Theorem 5.

@@ -10,4 +10,4 @@ With the partition function $p$ in place of $\overline{p}$ the identity fails at
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 9 (`integers-2026-A60-thm-9`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 9.

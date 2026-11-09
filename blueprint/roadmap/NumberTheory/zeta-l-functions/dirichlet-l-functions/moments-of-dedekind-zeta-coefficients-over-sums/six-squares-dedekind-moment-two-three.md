@@ -14,4 +14,4 @@ A cubic field of negative discriminant is not normal over $\mathbb{Q}$.
 
 ## Sources
 
-- Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Theorem 1 (`integers-2025-A101-thm-1`).
+- Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Theorem 1.

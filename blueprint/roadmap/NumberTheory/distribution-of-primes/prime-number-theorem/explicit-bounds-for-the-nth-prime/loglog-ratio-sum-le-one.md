@@ -8,4 +8,4 @@ $$\frac{4.151332(\log L - 2)}{L} + \frac{3.151332(\log L - 1)}{L} +
 
 ## Sources
 
-- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Proposition 3, inequality (25) (`integers-2025-A58-prop-3`).
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Proposition 3, inequality (25).

@@ -13,4 +13,4 @@ By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then compl
 
 ## Sources
 
-- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 5 (`integers-2025-A104-lem-5`).
+- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 5.

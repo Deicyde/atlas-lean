@@ -6,4 +6,4 @@ $g(x) = e^{-\|x\|^2}$ for every $x \in E$.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Distribution calculus" / "Spaces S(R^d)" / entry "Gaussian functions"; <https://en.wikipedia.org/wiki/Schwartz_space>.
+- <https://en.wikipedia.org/wiki/Schwartz_space>.

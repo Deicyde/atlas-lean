@@ -7,4 +7,4 @@ $g t g^{-1} t^{-1} \in N$ for every $g \in G$.
 
 ## Sources
 
-- G. Glauberman, Central elements in core-free groups, J. Algebra 4 (1966). Via leanprover/lean-eval@38361be, problem `glauberman_zStar`.
+- G. Glauberman, Central elements in core-free groups, J. Algebra 4 (1966). Problem `glauberman_zStar` of the lean-eval benchmark.

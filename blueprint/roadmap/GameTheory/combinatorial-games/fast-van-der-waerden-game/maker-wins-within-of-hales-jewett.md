@@ -7,4 +7,4 @@ claimed, Maker wins the $S$-game within $\lceil n^N / 2 \rceil$ moves.
 
 ## Sources
 
-- Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Theorem 4 (`integers-2026-A40-thm-4`).
+- Alpert, Barham, Freidin, Tan, and Weiner, *Fast Winning Strategies in a Generalized van der Waerden Game*, INTEGERS 26 (2026), Article A40, Theorem 4.

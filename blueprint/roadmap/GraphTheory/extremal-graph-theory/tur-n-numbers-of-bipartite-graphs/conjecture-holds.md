@@ -14,4 +14,4 @@ This was proved by Janzer (Bull. London Math. Soc. 53 (2021) 108–118, Theorem 
 
 ## Sources
 
-- O. Janzer, The extremal number of longer subdivisions, Bull. London Math. Soc. 53 (2021) 108-118, arXiv:1905.08001, https://doi.org/10.1112/blms.12404. Moved from `OpenConjectures/Combinatorics/ConlonLeeSubdivisionConjecture`.
+- O. Janzer, The extremal number of longer subdivisions, Bull. London Math. Soc. 53 (2021) 108-118, arXiv:1905.08001, https://doi.org/10.1112/blms.12404.

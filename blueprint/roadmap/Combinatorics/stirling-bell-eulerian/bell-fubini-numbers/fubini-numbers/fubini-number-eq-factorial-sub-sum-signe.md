@@ -9,4 +9,4 @@ where $s(n, k)$ is the signed Stirling number of the first kind.
 
 ## Sources
 
-- Benjamin Schreyer, "Rigged Horse Numbers and their Modular Periodicity," Journal of Integer Sequences 28 (2025), Article 25.4.1, Corollary (label cor:auseful), lines 253–257, https://cs.uwaterloo.ca/journals/JIS/VOL28/Schreyer/schreyer7.tex
+- Benjamin Schreyer, "Rigged Horse Numbers and their Modular Periodicity," Journal of Integer Sequences 28 (2025), Article 25.4.1, Corollary, lines 253–257, https://cs.uwaterloo.ca/journals/JIS/VOL28/Schreyer/schreyer7.tex

@@ -16,4 +16,4 @@ of Teschl, Theorem 2.5 (Section 2.3).
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Numerical Analysis` / `Iterative methods of solving systems of real and vector-valued equations`, entries `Picard method` and `rate of convergence and estimation of error` (unmapped); G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.3.
+- G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.3.

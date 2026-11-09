@@ -16,4 +16,4 @@ d_{m-1}(q^j x; 1/q)\Bigr)^{-1}.$$
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 4 (`integers-2025-A5-lem-4`).
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Lemma 4.

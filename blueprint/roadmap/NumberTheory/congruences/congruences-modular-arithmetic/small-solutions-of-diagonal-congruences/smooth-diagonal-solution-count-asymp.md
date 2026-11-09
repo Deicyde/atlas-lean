@@ -13,4 +13,4 @@ $c_1 x_1^k + \dots + c_s x_s^k = 0$ is at least $C_1 N^{s-k}$ and at most $C_2 N
 
 ## Sources
 
-- Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Theorem 2 (`integers-2026-A14-thm-2`), quoting Chow, Lindqvist and Prendiville, *Rado's criterion over squares and higher powers*, J. Eur. Math. Soc. 23 (2021), Theorem B.1.
+- Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Theorem 2, quoting Chow, Lindqvist and Prendiville, *Rado's criterion over squares and higher powers*, J. Eur. Math. Soc. 23 (2021), Theorem B.1.

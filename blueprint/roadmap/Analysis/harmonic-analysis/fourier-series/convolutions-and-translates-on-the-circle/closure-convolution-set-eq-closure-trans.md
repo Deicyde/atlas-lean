@@ -12,4 +12,4 @@ and $B_f$ have the same closure in $L^1(T)$.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Commutative Banach algebras and commutative topological algebras), `benchmark/level2/ma_proofbench_l2_12.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Commutative Banach algebras and commutative topological algebras), problem `ma_proofbench_l2_12`.

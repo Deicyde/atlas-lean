@@ -7,4 +7,4 @@ for $k \ge n + 1$. For $n = 0$ every term is $0$.
 
 ## Sources
 
-- <https://cs.uwaterloo.ca/journals/JIS/VOL14/Saito/saito22.tex> (source `jis_1628603e2683fb05481e5bfb`, concept `jis_sem_4e0294575601a2b8a5f0d3d7`).
+- <https://cs.uwaterloo.ca/journals/JIS/VOL14/Saito/saito22.tex>.

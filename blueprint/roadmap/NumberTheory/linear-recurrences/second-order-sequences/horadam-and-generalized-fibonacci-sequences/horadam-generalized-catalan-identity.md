@@ -14,4 +14,4 @@ version is not claimed.
 
 ## Sources
 
-- Aram Tangboonduangjit and Thotsaporn Thanatipanonda, "Determinants Containing Powers of Generalized Fibonacci Numbers," Journal of Integer Sequences 19 (2016), Article 16.7.1, Proposition "Generalized Catalan Identity," lines 111–126 of `https://cs.uwaterloo.ca/journals/JIS/VOL19/Tangboonduangjit/aram5.tex`. Proves `Wanted` entry `horadam_generalized_catalan_identity`.
+- Aram Tangboonduangjit and Thotsaporn Thanatipanonda, "Determinants Containing Powers of Generalized Fibonacci Numbers," Journal of Integer Sequences 19 (2016), Article 16.7.1, Proposition "Generalized Catalan Identity," lines 111–126 of <https://cs.uwaterloo.ca/journals/JIS/VOL19/Tangboonduangjit/aram5.tex>.

@@ -13,4 +13,4 @@ $$(1 - px)^3\, G = 1 + x - 3px - 2px^2 + 3p^2x^2 + qx^2 + p^2x^3 - p^3x^3.$$
 
 ## Sources
 
-- Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Corollary 2 (`integers-2026-A18-cor-2`).
+- Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Corollary 2.

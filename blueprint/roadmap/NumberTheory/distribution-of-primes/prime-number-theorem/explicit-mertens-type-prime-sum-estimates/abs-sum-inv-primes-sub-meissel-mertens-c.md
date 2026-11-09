@@ -7,4 +7,4 @@ primes $p \le x$.
 
 ## Sources
 
-- Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Proposition 1 (`integers-2024-A66-prop-1`).
+- Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Proposition 1.

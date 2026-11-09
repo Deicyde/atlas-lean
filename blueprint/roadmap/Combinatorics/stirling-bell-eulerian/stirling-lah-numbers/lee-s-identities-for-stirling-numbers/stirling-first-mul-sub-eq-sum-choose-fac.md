@@ -11,4 +11,4 @@ This is Lee's Theorem 11 with the denominator $n - k$ cleared.
 
 ## Sources
 
-- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 11 (TeX label `thm:mdkda`).
+- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 11.

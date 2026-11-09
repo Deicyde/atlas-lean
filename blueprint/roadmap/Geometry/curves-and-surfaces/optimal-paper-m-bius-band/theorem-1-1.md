@@ -7,4 +7,4 @@ than $\sqrt{3}$.
 
 ## Sources
 
-- R. E. Schwartz, `The optimal paper Moebius band`, Annals of Math, 201 (1) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2025-201-1-OptimalMoebius.lean Via leanprover/lean-eval@38361be, problem `annals_optimal_moebius`.
+- R. E. Schwartz, `The optimal paper Moebius band`, Annals of Math, 201 (1) 2025. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_optimal_moebius` of the lean-eval benchmark.

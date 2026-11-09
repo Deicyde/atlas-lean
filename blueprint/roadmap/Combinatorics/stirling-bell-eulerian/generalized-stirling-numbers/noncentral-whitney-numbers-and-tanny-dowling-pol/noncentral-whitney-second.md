@@ -9,4 +9,4 @@ $$W_{m,a}(n + 1, k + 1) = W_{m,a}(n, k) + ((k + 1) m - a) \, W_{m,a}(n, k + 1).$
 
 ## Sources
 
-- concept `jis_term_6c385244500b53dde9d3f070`, source `https://cs.uwaterloo.ca/journals/JIS/VOL24/Mangontarum/mang13.tex`, SHA-256 `e08f5454236c4aeb678d73ad15de5b19ce88cfbffc855ad2a25e45309b533cc5`, recurrence underlying the Tanny-Dowling polynomial in equation (6).
+- <https://cs.uwaterloo.ca/journals/JIS/VOL24/Mangontarum/mang13.tex>, recurrence underlying the Tanny-Dowling polynomial in equation (6).

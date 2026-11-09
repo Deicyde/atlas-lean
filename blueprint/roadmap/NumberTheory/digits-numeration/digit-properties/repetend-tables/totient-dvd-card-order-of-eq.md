@@ -6,4 +6,4 @@ $(\mathbb{Z}/n\mathbb{Z})^\times$ is divisible by Euler's totient $\varphi(L)$.
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Corollary 4 (`integers-2025-A26-cor-4`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Corollary 4.

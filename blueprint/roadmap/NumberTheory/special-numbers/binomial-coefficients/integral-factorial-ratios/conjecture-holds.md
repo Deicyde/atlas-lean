@@ -9,4 +9,4 @@ The statement was resolved in the affirmative by Barreto and ChatGPT-5.2.
 
 ## Sources
 
-- N. Sothanaphan, Resolution of Erdős Problem #728: a writeup of Aristotle's Lean proof, arXiv:2601.07421 (2026), https://arxiv.org/abs/2601.07421. Moved from `OpenConjectures/NumberTheory/ErdosProblem728`.
+- N. Sothanaphan, Resolution of Erdős Problem #728: a writeup of Aristotle's Lean proof, arXiv:2601.07421 (2026), https://arxiv.org/abs/2601.07421.

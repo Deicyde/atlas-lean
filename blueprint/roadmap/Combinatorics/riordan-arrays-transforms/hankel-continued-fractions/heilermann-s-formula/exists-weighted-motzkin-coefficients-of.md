@@ -11,4 +11,4 @@ $a_n = \mu_0 M_{n,0}$ for every $n \ge 0$.
 
 ## Sources
 
-- Paul Barry, *From Fibonacci to Robbins: Series Reversion and Hankel Transforms*, Journal of Integer Sequences 24 (2021), Article 21.10.2, lines 110–117, https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex. Source SHA-256 `9cd9826f06a6786a792c651fa1f84a8e2bb5b365fb8b57234a78b87714935f51`. Normalized line-span SHA-256 `a838e5996f223ba9e45347f17ad864912efc392f5c3d56ea749bcf62d3289825`. Concept `jis_dep_heilermann_049f63eb`. Grounded `jis_grounded_049f63eb8aadf7377777a597`. Barry does not explicitly state this auxiliary tableau lemma; it is a coefficientwise bridge for the displayed fraction.
+- Paul Barry, *From Fibonacci to Robbins: Series Reversion and Hankel Transforms*, Journal of Integer Sequences 24 (2021), Article 21.10.2, lines 110–117, https://cs.uwaterloo.ca/journals/JIS/VOL24/Barry2/barry461.tex. Barry does not explicitly state this auxiliary tableau lemma; it is a coefficientwise bridge for the displayed fraction.

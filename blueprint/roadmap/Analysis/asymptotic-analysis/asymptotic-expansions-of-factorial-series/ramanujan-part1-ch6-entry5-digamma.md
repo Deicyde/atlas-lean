@@ -10,4 +10,4 @@ $$C(x) - \sum_{j=0}^{N-1} \frac{(-1)^j B_{j+1}}{x^{j+1}} = O\left(\frac{1}{x^{N+
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6. Proves `Wanted` entry `ramanujan_part1_ch6_entry5_digamma`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6.

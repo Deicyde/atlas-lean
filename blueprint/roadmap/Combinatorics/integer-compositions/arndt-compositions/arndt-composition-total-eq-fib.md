@@ -11,4 +11,4 @@ and $a(n) = F_n$ for every $n \ge 1$.
 
 ## Sources
 
-- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 2 (`integers-2024-A35-cor-2`).
+- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 2.

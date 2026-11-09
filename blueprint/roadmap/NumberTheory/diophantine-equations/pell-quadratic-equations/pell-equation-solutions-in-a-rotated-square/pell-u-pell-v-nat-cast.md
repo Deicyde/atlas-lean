@@ -11,4 +11,4 @@ $v(n) = v_n$ for every natural number $n$.
 
 ## Sources
 
-- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Proposition 1.2 (`integers-2025-A112-prop-1-2`).
+- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Proposition 1.2.

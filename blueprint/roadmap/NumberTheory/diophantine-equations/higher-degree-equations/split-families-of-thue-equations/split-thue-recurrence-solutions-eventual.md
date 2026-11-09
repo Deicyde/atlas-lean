@@ -11,4 +11,4 @@ $(x, y) = (G_i(n), 1)$ or $(x, y) = (-G_i(n), -1)$.
 
 ## Sources
 
-- Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Corollary 1 (`integers-2025-A35-cor-1`). The computability of `n₀` is not recorded.
+- Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Corollary 1. The computability of `n₀` is not recorded.

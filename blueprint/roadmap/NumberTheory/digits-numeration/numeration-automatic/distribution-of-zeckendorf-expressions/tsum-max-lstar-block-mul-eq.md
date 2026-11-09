@@ -15,4 +15,4 @@ $\tilde Q_1 = \tilde\omega$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 16 (`integers-2025-A25-lem-16`; arXiv:2308.12872v1, Section 4.1).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 16 (arXiv:2308.12872v1, Section 4.1).

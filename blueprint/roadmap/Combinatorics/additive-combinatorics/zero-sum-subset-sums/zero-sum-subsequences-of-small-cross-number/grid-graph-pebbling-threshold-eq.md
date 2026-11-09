@@ -26,4 +26,4 @@ tends to infinity. Likewise $d \ge 1$ excludes $d = 0$, where the grid is a sing
 
 ## Sources
 
-- Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 9 (quoting Bushaw and Kettle, `integers-2024-A93-thm-9`).
+- Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 9 (quoting Bushaw and Kettle).

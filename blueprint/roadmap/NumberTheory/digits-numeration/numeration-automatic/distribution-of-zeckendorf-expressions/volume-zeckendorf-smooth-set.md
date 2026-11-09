@@ -8,4 +8,4 @@ $\varepsilon \mapsto \sum_k \varepsilon_k \tilde Q_k$. Then $U$ has Lebesgue mea
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 11 (`integers-2025-A25-thm-11`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 11.

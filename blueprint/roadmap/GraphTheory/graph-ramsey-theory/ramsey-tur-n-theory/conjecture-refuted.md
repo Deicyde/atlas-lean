@@ -13,4 +13,4 @@ triangle-free set has $o(n)$ vertices, refuting $\delta = 1/24$.
 
 ## Sources
 
-- Hong Liu, Christian Reiher, Maryam Sharifzadeh and Katherine Staden, Geometric constructions for Ramsey–Turán theory, J. Eur. Math. Soc. 28 (2026), arXiv:2103.10423, https://arxiv.org/abs/2103.10423. Moved from `OpenConjectures/Combinatorics/K5FreeTriangleFreeSubset`.
+- Hong Liu, Christian Reiher, Maryam Sharifzadeh and Katherine Staden, Geometric constructions for Ramsey–Turán theory, J. Eur. Math. Soc. 28 (2026), arXiv:2103.10423, https://arxiv.org/abs/2103.10423.

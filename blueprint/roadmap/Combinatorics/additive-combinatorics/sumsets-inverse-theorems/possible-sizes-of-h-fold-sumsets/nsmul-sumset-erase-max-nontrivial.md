@@ -13,4 +13,4 @@ nontrivial elements).
 
 ## Sources
 
-- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Lemma 1 (`integers-2026-A31-lem-1`; arXiv:2505.07679v2, Lemma 3.2).
+- Vincent Schinina, *On the Sumset of Sets of Size k*, INTEGERS 26 (2026), Article A31, Lemma 1 (arXiv:2505.07679v2, Lemma 3.2).

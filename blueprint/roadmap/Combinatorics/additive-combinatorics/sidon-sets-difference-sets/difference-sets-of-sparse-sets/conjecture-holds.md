@@ -10,4 +10,4 @@ This answers Erdős Problem 899 affirmatively.
 
 ## Sources
 
-- I. Z. Ruzsa, On the cardinality of A+A and A-A (1978), 933–938, https://mathscinet.ams.org/mathscinet-getitem?mr=519317. Moved from `OpenConjectures/Combinatorics/ErdosProblem899`.
+- I. Z. Ruzsa, On the cardinality of A+A and A-A (1978), 933–938, https://mathscinet.ams.org/mathscinet-getitem?mr=519317.

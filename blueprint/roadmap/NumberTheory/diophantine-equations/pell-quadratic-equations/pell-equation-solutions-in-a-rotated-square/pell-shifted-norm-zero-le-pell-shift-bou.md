@@ -13,4 +13,4 @@ further condition is placed on the integers.
 
 ## Sources
 
-- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Lemma 3.5 (`integers-2025-A112-lem-3-5`).
+- Kun Yi Ong and Eddie Shahril Bin Ismail, *Integer Solutions of Pell Equation in a Closed Rotated Square Region*, INTEGERS 25 (2025), Article A112, Lemma 3.5.

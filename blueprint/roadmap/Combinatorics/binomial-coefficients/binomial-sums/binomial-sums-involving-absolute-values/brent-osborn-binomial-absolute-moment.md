@@ -11,4 +11,4 @@ the sum running over all integers $k, \ell$, since the binomial coefficients van
 
 ## Sources
 
-- Richard P. Brent, Hideyuki Ohtsuka, Judy-anne H. Osborn, and Helmut Prodinger, "Some Binomial Sums Involving Absolute Values," Journal of Integer Sequences 19 (2016), Article 16.3.7, Theorem [Brent and Osborn] (label thm:S12), lines 377–383 (with the `W_β` definition at lines 345–349), https://cs.uwaterloo.ca/journals/JIS/VOL19/Brent/brent9.tex
+- Richard P. Brent, Hideyuki Ohtsuka, Judy-anne H. Osborn, and Helmut Prodinger, "Some Binomial Sums Involving Absolute Values," Journal of Integer Sequences 19 (2016), Article 16.3.7, Theorem [Brent and Osborn], lines 377–383 (with the `W_β` definition at lines 345–349), https://cs.uwaterloo.ca/journals/JIS/VOL19/Brent/brent9.tex

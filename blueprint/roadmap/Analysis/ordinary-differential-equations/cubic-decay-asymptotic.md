@@ -6,4 +6,4 @@ and such that $y(0) = 1$. Then $y(t) \sqrt{t} \to 1/\sqrt{2}$ as $t \to \infty$.
 
 ## Sources
 
-- Standard ODE textbook exercise. Via leanprover/lean-eval@38361be, problem `cubic_decay_asymptotic`.
+- Standard ODE textbook exercise. Problem `cubic_decay_asymptotic` of the lean-eval benchmark.

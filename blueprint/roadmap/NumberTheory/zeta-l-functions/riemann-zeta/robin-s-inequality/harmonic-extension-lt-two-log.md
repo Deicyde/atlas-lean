@@ -7,4 +7,4 @@ $$H(x) < \frac{2 \log x}{1 + 6/(\pi^2 x)}.$$
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 7 (`integers-2026-A86-lem-7`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 7.

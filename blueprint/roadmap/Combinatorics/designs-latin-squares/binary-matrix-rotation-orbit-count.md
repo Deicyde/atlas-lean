@@ -18,4 +18,4 @@ lemma the division is exact (the Pólya enumeration formula).
 
 ## Sources
 
-- S. N. Ethier, "Counting Toroidal Binary Arrays," Journal of Integer Sequences 16 (2013), Article 13.4.7, Theorem (label rotations-thm), lines 172–176, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Ethier/ethier2.tex>.
+- S. N. Ethier, "Counting Toroidal Binary Arrays," Journal of Integer Sequences 16 (2013), Article 13.4.7, Theorem, lines 172–176, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Ethier/ethier2.tex>.

@@ -7,4 +7,4 @@ $\sum_{n \in N_{1k}} 1/n = 1 + O(e^{-k/2})$ as $k \to \infty$.
 
 ## Sources
 
-- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 7 (`integers-2024-A99-thm-7`).
+- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 7.

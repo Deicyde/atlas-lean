@@ -10,4 +10,4 @@ $\Psi_n(p)/(p+1)^{n+1} = \sum_{k=0}^{\infty} (k+1)^n (-p)^k$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5, Entry 4, p. 113. Proves `Wanted` entry `ramanujan_part1_ch5_entry4`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5, Entry 4, p. 113.

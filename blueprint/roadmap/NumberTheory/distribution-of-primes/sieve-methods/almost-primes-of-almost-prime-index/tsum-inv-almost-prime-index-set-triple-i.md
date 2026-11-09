@@ -20,4 +20,4 @@ printed bound fails for $m = 3$.
 
 ## Sources
 
-- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 9, case `m = 2` (`integers-2024-A99-thm-9`).
+- Paul Kinlaw, Megan Triplett, and William Tripp, *Almost Primes of Almost Prime Index*, INTEGERS 24 (2024), Article A99, Theorem 9, case `m = 2`.

@@ -16,4 +16,4 @@ where the power $n - 1$ is an integer power (for $n = 0$ it is the reciprocal).
 
 ## Sources
 
-- Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 12 (`integers-2025-A74-thm-12`).
+- Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Theorem 12.

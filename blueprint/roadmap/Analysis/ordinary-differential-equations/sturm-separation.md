@@ -10,4 +10,4 @@ has exactly one zero in the open interval $(a, b)$.
 
 ## Sources
 
-- C. Sturm, Mémoire sur les équations différentielles linéaires du second ordre, 1836. Via leanprover/lean-eval@38361be, problem `sturm_separation`.
+- C. Sturm, Mémoire sur les équations différentielles linéaires du second ordre, 1836. Problem `sturm_separation` of the lean-eval benchmark.

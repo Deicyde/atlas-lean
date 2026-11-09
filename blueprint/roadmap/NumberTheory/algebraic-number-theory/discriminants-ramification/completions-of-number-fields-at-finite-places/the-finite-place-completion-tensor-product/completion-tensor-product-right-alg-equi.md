@@ -9,4 +9,4 @@ to $(y x)_w$, where $y \in L$ and $x \in K_v$ are mapped into each $L_w$.
 
 ## Sources
 
-- ATLAS N265, Theorem 13.5, the finite-place $K_v$-algebra form for number fields (`theorem_13_5_finite_place_Kv` in the primary Lean source).
+- ATLAS N265, Theorem 13.5, the finite-place $K_v$-algebra form for number fields.

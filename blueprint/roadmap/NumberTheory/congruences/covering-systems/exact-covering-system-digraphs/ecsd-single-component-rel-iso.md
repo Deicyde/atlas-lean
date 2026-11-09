@@ -9,4 +9,4 @@ $G(-2n + 1, -2n + a)$ for some integer $a$ with $a = 0$, $a = 2$ or $a \equiv 1 
 
 ## Sources
 
-- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Proposition 2 (`integers-2026-A107-prop-2`).
+- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Proposition 2.

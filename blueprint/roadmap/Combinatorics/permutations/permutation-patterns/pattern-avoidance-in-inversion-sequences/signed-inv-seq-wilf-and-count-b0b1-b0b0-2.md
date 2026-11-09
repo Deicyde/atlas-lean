@@ -11,4 +11,4 @@ $n \ge 0$, $|\bar I_n(\{\bar 0\bar 1, \bar 0\bar 0, \bar 0 1\})| =
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 4 (`integers-2026-A74-lem-4`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Lemma 4.

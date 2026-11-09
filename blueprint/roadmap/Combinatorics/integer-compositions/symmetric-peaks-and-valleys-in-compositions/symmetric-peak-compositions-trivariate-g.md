@@ -19,4 +19,4 @@ over $a$ is restricted to $1 \le a \le n$ (the terms with $a > n$ do not contrib
 
 ## Sources
 
-- Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Theorem 1 (`integers-2026-A65-thm-1`).
+- Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Theorem 1.

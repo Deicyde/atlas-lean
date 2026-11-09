@@ -15,4 +15,4 @@ $g(x) = 0$, the recurrence at $m = -1$ forces $F_1(x) = d(x) F_0(x) = 0$.
 
 ## Sources
 
-- Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Proposition 5.2 (`fq-2024-florez11012023-prop-5.2`).
+- Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Proposition 5.2.

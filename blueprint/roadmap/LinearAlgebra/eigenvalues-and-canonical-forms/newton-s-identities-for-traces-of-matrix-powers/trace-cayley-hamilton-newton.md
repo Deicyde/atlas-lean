@@ -12,4 +12,4 @@ where $k$ is read as an element of $R$.
 
 ## Sources
 
-- Knill, *Some fundamental theorems in mathematics*, §220. Via leanprover/lean-eval@38361be, problem `trace_cayley_hamilton_newton`.
+- Knill, *Some fundamental theorems in mathematics*, §220. Problem `trace_cayley_hamilton_newton` of the lean-eval benchmark.

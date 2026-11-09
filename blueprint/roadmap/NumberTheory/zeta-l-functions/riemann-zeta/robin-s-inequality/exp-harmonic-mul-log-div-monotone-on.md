@@ -6,4 +6,4 @@ for $n \ge 1$: its value at $m$ is at most its value at $n$ whenever $1 \le m \l
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Corollary 3 (`integers-2026-A86-cor-3`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Corollary 3.

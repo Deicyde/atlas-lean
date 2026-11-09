@@ -13,4 +13,4 @@ from $2$, as in the source, rather than as the principal value from $0$.
 
 ## Sources
 
-- A. Guo, *Exceptional sets for compositions involving Euler's function, the divisor-sum function and Dedekind's function*, arXiv:2608.19972v1, Lemma `siegel`, `main.tex` lines 289–295. The official arXiv source file has SHA-256 `b4996cf07cc79703901e7313202c5a795b6e5313745490e0224d3589ff2a2d07`.
+- A. Guo, *Exceptional sets for compositions involving Euler's function, the divisor-sum function and Dedekind's function*, arXiv:2608.19972v1, Lemma `siegel`, `main.tex` lines 289–295.

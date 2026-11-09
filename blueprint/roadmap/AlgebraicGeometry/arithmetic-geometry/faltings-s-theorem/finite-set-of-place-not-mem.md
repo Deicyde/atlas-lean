@@ -7,4 +7,4 @@ $x$ has only finitely many poles. See [Stichtenoth, Corollary 1.3.4].
 
 ## Sources
 
-- see manifest Via leanprover/lean-eval@38361be, problem `faltings`.
+-. Problem `faltings` of the lean-eval benchmark.

@@ -18,4 +18,4 @@ $F_{B_1}(x) = 1 + 2\sum_{k \ge 1} x^k / \prod_{i=1}^{k} (1 - ix)$.
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C2) (`integers-2026-A74-thm-3`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C2).

@@ -6,4 +6,4 @@ $(u, v) = (1, 0)$ or $(u, v) = (0, -1)$.
 
 ## Sources
 
-- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Lemma 5 (`integers-2025-A103-lem-5`).
+- Jialai She, *Nonexistence of Consecutive Powerful Triplets Around Cubes with Prime-Square Factors*, INTEGERS 25 (2025), Article A103, Lemma 5.

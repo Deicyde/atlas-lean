@@ -9,4 +9,4 @@ $\det S^{[m+1]}(n) = n! \cdot \det S^{[m]}(n)$.
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Corollary 2 (`integers-2025-A27-cor-2`).
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Corollary 2.

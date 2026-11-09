@@ -17,4 +17,4 @@ $v(S_2 \alpha - R_2) = \deg S_2 - \deg \Delta - q \, v(b_{n+1})$.
 
 ## Sources
 
-- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 7, (3.7) and (3.8) (`integers-2026-A57-lem-7`).
+- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 7, (3.7) and (3.8).

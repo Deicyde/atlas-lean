@@ -11,4 +11,4 @@ over all indices of length $r \ge 0$ with every $k_i \ge 2$.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 16 (`integers-2024-A6-prop-16`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 16.

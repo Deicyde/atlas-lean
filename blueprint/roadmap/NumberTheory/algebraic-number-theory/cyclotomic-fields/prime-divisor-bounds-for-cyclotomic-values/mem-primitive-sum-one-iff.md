@@ -7,4 +7,4 @@ the multiplicative group $L^\times$.
 
 ## Sources
 
-- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 11 (`integers-2026-A95-prop-11`), quoting Cohen, Oliveira e Silva, Sutherland and Trudgian, Corollary 2.
+- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 11, quoting Cohen, Oliveira e Silva, Sutherland and Trudgian, Corollary 2.

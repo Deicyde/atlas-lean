@@ -12,4 +12,4 @@ $4 \le k \le 20$; for example $d_4(13) = 31/5005 > d_4(17) = 206/36465 < d_4(19)
 
 ## Sources
 
-- S. Cambie, Resolution of Erdős' problems about unimodularity, arXiv preprint (2025), arXiv:2501.10333, https://arxiv.org/abs/2501.10333. Moved from `OpenConjectures/NumberTheory/ErdosProblem690`.
+- S. Cambie, Resolution of Erdős' problems about unimodularity, arXiv preprint (2025), arXiv:2501.10333, https://arxiv.org/abs/2501.10333.

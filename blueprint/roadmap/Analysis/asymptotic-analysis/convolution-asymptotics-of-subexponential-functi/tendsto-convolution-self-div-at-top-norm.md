@@ -8,4 +8,4 @@ $$\lim_{\|a\| \to \infty} \frac{(f * f)(a)}{f(a)} = 2 \int_{\mathbb{R}^2} f(x)\,
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Measures, integration, derivative, holomorphy), `benchmark/level2/ma_proofbench_l2_90.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Measures, integration, derivative, holomorphy), problem `ma_proofbench_l2_90`.

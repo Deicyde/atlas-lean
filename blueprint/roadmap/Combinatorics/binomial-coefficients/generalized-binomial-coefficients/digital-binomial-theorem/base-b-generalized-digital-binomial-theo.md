@@ -13,4 +13,4 @@ where the sum runs over the natural numbers $m \le n$ with $m_i \le n_i$ for eve
 
 ## Sources
 
-- Hieu D. Nguyen, "A Generalization of the Digital Binomial Theorem," Journal of Integer Sequences 18 (2015), Article 15.5.7, Theorem (label th:digital-binomial-theorem-non-binary), equation (eq:digital-binomial-theorem-non-binary), lines 122–127, https://cs.uwaterloo.ca/journals/JIS/VOL18/Nguyen/nguyen6.tex
+- Hieu D. Nguyen, "A Generalization of the Digital Binomial Theorem," Journal of Integer Sequences 18 (2015), Article 15.5.7, Theorem, equation (eq:digital-binomial-theorem-non-binary), lines 122–127, https://cs.uwaterloo.ca/journals/JIS/VOL18/Nguyen/nguyen6.tex

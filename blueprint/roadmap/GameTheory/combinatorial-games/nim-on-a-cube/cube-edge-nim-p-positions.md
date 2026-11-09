@@ -13,4 +13,4 @@ P-positions (second-player wins) under normal play.
 
 ## Sources
 
-- Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 3 (`integers-2025-G2-thm-3`).
+- Balaji R. Kadam and A. J. Shaiju, *Variations of the Nim Game Played on a Cube*, INTEGERS 25 (2025), Article G2, Theorem 3.

@@ -7,4 +7,4 @@ over the integers for every $r \ge 3$.
 
 ## Sources
 
-- Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Theorem 2 (`integers-2025-A88-thm-2`).
+- Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Theorem 2.

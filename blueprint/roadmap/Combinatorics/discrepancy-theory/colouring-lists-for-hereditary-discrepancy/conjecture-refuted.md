@@ -14,4 +14,4 @@ discrepancy above $C$ under every listed colouring.
 
 ## Sources
 
-- AIM Problem Lists, Hereditary discrepancy and factorization norms, Problem 1.85 (Polysize list of colorings), https://aimpl.org/hereddiscrep/1/. Moved from `OpenConjectures/Combinatorics/PolysizeColoringList`.
+- AIM Problem Lists, Hereditary discrepancy and factorization norms, Problem 1.85 (Polysize list of colorings), https://aimpl.org/hereddiscrep/1/.

@@ -5,4 +5,4 @@ if the balancing number $B_k$ is a concatenation of two repdigits, then $B_k = 3
 
 ## Sources
 
-- Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemma 3 (`integers-2025-A15-lem-3`).
+- Mohapatra, Bhoi and Panda, *Balancing and Lucas-Balancing Numbers as the Difference of Two Repdigits*, INTEGERS 25 (2025), Article A15, Lemma 3.

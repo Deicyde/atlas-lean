@@ -9,4 +9,4 @@ $f_{\max}(\mathbb{Z}_3^k)/3^{n/9} - (n-3)(n-1)/3 \to 0$.
 
 ## Sources
 
-- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 3 (`integers-2026-A97-thm-3`).
+- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 3.

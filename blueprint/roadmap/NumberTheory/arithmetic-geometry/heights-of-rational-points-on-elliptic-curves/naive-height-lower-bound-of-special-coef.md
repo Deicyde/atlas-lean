@@ -14,4 +14,4 @@ three: for $a = 5$, doubling $(1, 1)$ gives $(14, -53)$.
 
 ## Sources
 
-- Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Theorem 3 (`integers-2025-A66-thm-3`).
+- Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Theorem 3.

@@ -13,4 +13,4 @@ Each integral on the right is $2\pi i$ times the residue of $f$ at $s$.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Functions on one complex variable", entry "residue theorem"; L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 4, §5.1 (the residue theorem).
+- L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 4, §5.1 (the residue theorem).

@@ -7,4 +7,4 @@ $\prod_p \gcd(n - 1, p - 1)$, where $p$ runs over the distinct prime divisors of
 
 ## Sources
 
-- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 2 (`integers-2024-A23-thm-2`).
+- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Theorem 2.

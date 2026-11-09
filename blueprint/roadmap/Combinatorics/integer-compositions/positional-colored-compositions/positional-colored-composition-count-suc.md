@@ -12,4 +12,4 @@ $m \nmid k$.
 
 ## Sources
 
-- Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 6 (`integers-2026-A49-thm-6`).
+- Andrew Li and Hua Wang, *Combinatorics of Positional Colored Compositions*, INTEGERS 26 (2026), Article A49, Theorem 6.

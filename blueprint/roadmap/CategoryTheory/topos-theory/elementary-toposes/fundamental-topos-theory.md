@@ -5,4 +5,4 @@ of $E$, then the slice category $E/X$ of objects of $E$ over $X$ is again an ele
 
 ## Sources
 
-- F. W. Lawvere & M. Tierney (elementary topos, 1970); see S. Mac Lane & I. Moerdijk, *Sheaves in Geometry and Logic*, IV.7. Knill, *Some fundamental theorems in mathematics*, §54. Via leanprover/lean-eval@38361be, problem `fundamental_topos_theory`.
+- F. W. Lawvere & M. Tierney (elementary topos, 1970); see S. Mac Lane & I. Moerdijk, *Sheaves in Geometry and Logic*, IV.7. Knill, *Some fundamental theorems in mathematics*, §54. Problem `fundamental_topos_theory` of the lean-eval benchmark.

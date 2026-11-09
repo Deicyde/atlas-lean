@@ -7,4 +7,4 @@ $\mathrm{opx}(n, P) = O(\mathrm{ex}(n, M_P))$ as $n \to \infty$ through the natu
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 3.3 (`integers-2024-A1-thm-3-3`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 3.3.

@@ -14,4 +14,4 @@ The source assumes $s > m + 1$; the identity holds for every $s > 0$.
 
 ## Sources
 
-- Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Corollary 1, Equation (8) (`integers-2026-A124-cor-1`).
+- Toshio Nakata, *A Probabilistic Representation of Generalized Harmonic Numbers and an Identity for Their Sums*, INTEGERS 26 (2026), Article A124, Corollary 1, Equation (8).

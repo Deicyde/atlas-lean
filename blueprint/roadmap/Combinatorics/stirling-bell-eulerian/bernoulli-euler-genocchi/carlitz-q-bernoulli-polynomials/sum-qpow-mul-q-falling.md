@@ -9,4 +9,4 @@ $$\sum_{i=0}^{N-1} q^{ir} [i]_k = \left(\sum_{\ell=0}^{r-1}
 
 ## Sources
 
-- Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.14 (`integers-2026-A85-prop-2-14`).
+- Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.14.

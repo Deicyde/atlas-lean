@@ -11,4 +11,4 @@ $a$ needs $a \ge 2$).
 
 ## Sources
 
-- Takashi Agoh, *A Note on Sophie Germain Primes*, INTEGERS 25 (2025), Article A83, Theorem 5.3 (`integers-2025-A83-thm-5-3`).
+- Takashi Agoh, *A Note on Sophie Germain Primes*, INTEGERS 25 (2025), Article A83, Theorem 5.3.

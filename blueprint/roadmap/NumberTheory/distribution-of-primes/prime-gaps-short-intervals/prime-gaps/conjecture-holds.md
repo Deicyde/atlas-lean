@@ -8,4 +8,4 @@ This was proved by Banks, Freiberg and Turnage-Butterbaugh using the Maynard–T
 
 ## Sources
 
-- William D. Banks, Tristan Freiberg, and Caroline L. Turnage-Butterbaugh, Consecutive primes in tuples, Acta Arith. 167 (2015), 261-266; arXiv:1311.7003, https://arxiv.org/abs/1311.7003. Moved from `OpenConjectures/NumberTheory/ErdosProblem6`.
+- William D. Banks, Tristan Freiberg, and Caroline L. Turnage-Butterbaugh, Consecutive primes in tuples, Acta Arith. 167 (2015), 261-266; arXiv:1311.7003, https://arxiv.org/abs/1311.7003.

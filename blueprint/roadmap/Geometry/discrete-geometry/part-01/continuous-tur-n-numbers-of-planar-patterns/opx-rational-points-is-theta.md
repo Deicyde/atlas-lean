@@ -10,4 +10,4 @@ $Q_\emptyset = \emptyset$ and $\operatorname{opx}(n, \emptyset) = 0$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.6 (`integers-2024-A1-thm-4-6`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Theorem 4.6.

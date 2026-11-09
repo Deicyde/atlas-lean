@@ -18,4 +18,4 @@ $\varepsilon$.
 
 ## Sources
 
-- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Theorem 1.3 (`integers-2024-A3-thm-1-3`).
+- Guodong Hua, *The General Divisor Problem of Cusp Form Coefficients over Arithmetic Progressions*, INTEGERS 24 (2024), Article A3, Theorem 1.3.

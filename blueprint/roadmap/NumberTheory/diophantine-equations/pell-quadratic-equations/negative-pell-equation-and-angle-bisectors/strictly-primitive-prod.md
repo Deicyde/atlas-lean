@@ -12,4 +12,4 @@ The sign $\pm$ in the source's equation (13) is dropped; negation preserves both
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 3(a) (`integers-2024-A111-prop-3`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 3(a).

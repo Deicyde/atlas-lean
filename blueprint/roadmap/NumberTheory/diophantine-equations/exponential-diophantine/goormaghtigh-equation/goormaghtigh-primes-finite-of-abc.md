@@ -11,4 +11,4 @@ $$p = \sum_{i=0}^{m-1} x^i = \sum_{i=0}^{n-1} y^i.$$
 
 ## Sources
 
-- Jon Grantham, *No New Goormaghtigh Primes up to 10^700*, INTEGERS 24 (2024), Article A98, Corollary 1 (`integers-2024-A98-cor-1`).
+- Jon Grantham, *No New Goormaghtigh Primes up to 10^700*, INTEGERS 24 (2024), Article A98, Corollary 1.

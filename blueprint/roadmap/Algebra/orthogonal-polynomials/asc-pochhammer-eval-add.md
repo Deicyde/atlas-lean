@@ -7,4 +7,4 @@ $$(a+b)^{\overline{n}} = \sum_{k=0}^{n} \binom{n}{k}\, a^{\overline{k}}\, b^{\ov
 
 ## Sources
 
-- Paul Eloe and Catherine Kublik, "When Numerical Analysis Crosses Paths with Catalan and Generalized Motzkin Numbers," Journal of Integer Sequences 21 (2018), Article 18.8.4, Theorem (label binomthm_risingpoly), equation (label `binomial theorem`), lines 156–161, https://cs.uwaterloo.ca/journals/JIS/VOL21/Kublik/kublik2.tex
+- Paul Eloe and Catherine Kublik, "When Numerical Analysis Crosses Paths with Catalan and Generalized Motzkin Numbers," Journal of Integer Sequences 21 (2018), Article 18.8.4, Theorem, equation, lines 156–161, https://cs.uwaterloo.ca/journals/JIS/VOL21/Kublik/kublik2.tex

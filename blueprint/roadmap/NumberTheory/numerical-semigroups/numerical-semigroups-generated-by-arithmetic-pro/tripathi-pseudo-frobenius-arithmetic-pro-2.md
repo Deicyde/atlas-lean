@@ -16,4 +16,4 @@ $k \ge a$, these numbers are exactly $(h - 1)a + dx$ for $1 \le x \le a - 1$.
 
 ## Sources
 
-- Amitabha Tripathi, "The Frobenius Problem for Modified Arithmetic Progressions," Journal of Integer Sequences 16 (2013), Article 13.7.4, Theorem (label S*formula), lines 235–238, https://cs.uwaterloo.ca/journals/JIS/VOL16/Tripathi/trip22.tex It follows from `tripathi_pseudo_frobenius_arithmetic_progression_general`; the hypothesis `hd` is unused and keeps the source's shape. Proves `Wanted` entry `tripathi_pseudo_frobenius_arithmetic_progression`.
+- Amitabha Tripathi, "The Frobenius Problem for Modified Arithmetic Progressions," Journal of Integer Sequences 16 (2013), Article 13.7.4, Theorem, lines 235–238, https://cs.uwaterloo.ca/journals/JIS/VOL16/Tripathi/trip22.tex It follows from `tripathi_pseudo_frobenius_arithmetic_progression_general`; the hypothesis `hd` is unused and keeps the source's shape.

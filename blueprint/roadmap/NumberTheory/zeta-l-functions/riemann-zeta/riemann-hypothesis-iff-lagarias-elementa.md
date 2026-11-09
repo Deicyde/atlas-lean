@@ -11,4 +11,4 @@ the $n$-th harmonic number.
 
 ## Sources
 
-- https://arxiv.org/abs/math/0008177 Via leanprover/lean-eval@38361be, problem `riemann_hypothesis_iff_lagarias_elementary_criterion`.
+- https://arxiv.org/abs/math/0008177. Problem `riemann_hypothesis_iff_lagarias_elementary_criterion` of the lean-eval benchmark.

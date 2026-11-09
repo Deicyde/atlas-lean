@@ -7,4 +7,4 @@ $n$, or $f(n) = 0$ for every natural number $n \notin \{1, 3, 5\}$ and $f(3) f(5
 
 ## Sources
 
-- Poo-Sung Park, "Multiplicative Functions Additive on the Sums of Two Positive Triangular Numbers", Theorem 1 (TeX label `thm1`).
+- Poo-Sung Park, "Multiplicative Functions Additive on the Sums of Two Positive Triangular Numbers", Theorem 1.

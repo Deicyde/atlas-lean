@@ -19,4 +19,4 @@ $X V(z) (f(s) - C e^{-s} (\log y)^{-1/3}) - R \le S$.
 
 ## Sources
 
-- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 5 (`integers-2026-A117-lem-5`).
+- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 5.

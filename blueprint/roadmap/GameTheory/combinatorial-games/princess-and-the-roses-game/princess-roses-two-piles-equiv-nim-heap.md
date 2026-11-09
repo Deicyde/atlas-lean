@@ -7,4 +7,4 @@ $b$ is even, $n = 2$ if $a$ and $b$ are both odd, and $n = 3$ if $a$ is even and
 
 ## Sources
 
-- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 8 (`integers-2026-G4-thm-8`).
+- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 8.

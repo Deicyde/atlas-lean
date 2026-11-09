@@ -13,4 +13,4 @@ The interval is taken closed; its endpoints do not affect the measures.
 
 ## Sources
 
-- Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Proposition 1 (`integers-2024-A55-prop-1`).
+- Jens Marklof, *The Log Moments of Smallest Denominators*, INTEGERS 24 (2024), Article A55, Proposition 1.

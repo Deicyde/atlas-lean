@@ -13,4 +13,4 @@ $\mathbb{Q}$-linearly.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 9 (ii) (`integers-2024-A6-prop-9`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 9 (ii).

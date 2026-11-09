@@ -11,4 +11,4 @@ $\mathrm{po}(1) = 2$ but $p(1) = 1$.
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 8 (`integers-2026-A60-thm-8`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 8.

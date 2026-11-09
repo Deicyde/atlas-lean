@@ -12,4 +12,4 @@ $A(j, k) = \pi^2 j^2 / 2$.
 
 ## Sources
 
-- Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Theorem 1 (`integers-2026-A46-thm-1`).
+- Carlos M. Alberto and Mavacala N. Saidi, *A New Asymptotic Formula for π(n) with the Divisor Counting Function*, INTEGERS 26 (2026), Article A46, Theorem 1.

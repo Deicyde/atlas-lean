@@ -9,4 +9,4 @@ where $A(x, y)$ is the coconut count term.
 
 ## Sources
 
-- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Theorem 1 (`integers-2025-A82-thm-1`).
+- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Theorem 1.

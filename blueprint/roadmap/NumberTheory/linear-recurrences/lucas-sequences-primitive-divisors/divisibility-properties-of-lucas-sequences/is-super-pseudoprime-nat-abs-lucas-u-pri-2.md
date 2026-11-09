@@ -20,4 +20,4 @@ $D = 1300$ and $5 \mid U_5(\pm 36, -1)$.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 5.1 (iv) (`integers-2025-A107-thm-5-1`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 5.1 (iv).

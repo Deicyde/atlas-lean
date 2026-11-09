@@ -9,4 +9,4 @@ $\ell : L^p([0,1]) \to \mathbb{R}$, then $f(x) \ge 0$ for almost every $x \in [0
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Normed linear spaces and Banach spaces; Banach lattices), `benchmark/level2/ma_proofbench_l2_16.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Normed linear spaces and Banach spaces; Banach lattices), problem `ma_proofbench_l2_16`.

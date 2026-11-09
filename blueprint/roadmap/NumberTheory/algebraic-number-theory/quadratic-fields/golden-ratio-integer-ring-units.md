@@ -7,4 +7,4 @@ integer $n$.
 
 ## Sources
 
-- Bahar Demirtürk and Refik Keskin, "Integer Solutions of Some Diophantine Equations via Fibonacci and Lucas Numbers," Journal of Integer Sequences 12 (2009), Article 09.8.7, Theorem 1.1 (label t:1.1), lines 160–167, https://cs.uwaterloo.ca/journals/JIS/VOL12/Demirturk/demirturk3.tex Proves `Wanted` entry `golden_ratio_integer_ring_units`.
+- Bahar Demirtürk and Refik Keskin, "Integer Solutions of Some Diophantine Equations via Fibonacci and Lucas Numbers," Journal of Integer Sequences 12 (2009), Article 09.8.7, Theorem 1.1, lines 160–167, https://cs.uwaterloo.ca/journals/JIS/VOL12/Demirturk/demirturk3.tex

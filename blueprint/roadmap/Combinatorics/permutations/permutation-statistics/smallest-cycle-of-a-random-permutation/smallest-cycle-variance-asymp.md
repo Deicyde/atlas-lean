@@ -11,4 +11,4 @@ $$\left| \operatorname{Var}(X_n) - 2n \int_1^\infty \frac{\omega(x)}{x^2}\,dx \r
 
 ## Sources
 
-- Claude Gravel and Daniel Panario, *Evaluating the Generalized Buchstab Function and Revisiting the Variance of the Distribution of the Smallest Components of Combinatorial Objects*, INTEGERS 24 (2024), Article A7, Theorem 2 (`integers-2024-A7-thm-2`).
+- Claude Gravel and Daniel Panario, *Evaluating the Generalized Buchstab Function and Revisiting the Variance of the Distribution of the Smallest Components of Combinatorial Objects*, INTEGERS 24 (2024), Article A7, Theorem 2.

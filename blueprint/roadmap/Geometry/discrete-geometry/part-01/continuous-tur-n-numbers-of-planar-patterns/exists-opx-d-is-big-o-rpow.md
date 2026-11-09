@@ -7,4 +7,4 @@ $\mathrm{opx}(n, P, d) = O(n^{d - \varepsilon})$ as the natural number $n$ tends
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.14 (`integers-2024-A1-cor-5-14`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.14.

@@ -7,4 +7,4 @@ infinity.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.7 (`integers-2024-A1-cor-3-7`), first sentence.
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 3.7, first sentence.

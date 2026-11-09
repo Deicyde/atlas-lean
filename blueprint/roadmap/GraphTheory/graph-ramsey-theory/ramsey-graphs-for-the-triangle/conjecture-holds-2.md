@@ -13,4 +13,4 @@ trees of triangles ($2$-trees).
 
 ## Sources
 
-- C. Reiher and V. Rödl, The girth Ramsey theorem, arXiv:2308.15589, https://arxiv.org/abs/2308.15589. Moved from `OpenConjectures/Combinatorics/TriangleTreeLocalRamsey`.
+- C. Reiher and V. Rödl, The girth Ramsey theorem, arXiv:2308.15589, https://arxiv.org/abs/2308.15589.

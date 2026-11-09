@@ -10,4 +10,4 @@ $\delta^*$ has neither a local minimum nor a local maximum at $\sum_k \varepsilo
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 7 (`integers-2025-A25-prop-7`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 7.

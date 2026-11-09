@@ -11,4 +11,4 @@ exactly the P-positions, is Bouton's theorem.
 
 ## Sources
 
-- Tanya Khovanova and Joshua Xiong, "Nim Fractals," Journal of Integer Sequences 17 (2014), Article 14.7.8, Corollary (label thm:ppos), lines 163–165, https://cs.uwaterloo.ca/journals/JIS/VOL17/Khovanova/khova6.tex Proves `Wanted` entry `nim_ppos_iff_last_eq_xor_fold`, renamed because it states no P-position predicate.
+- Tanya Khovanova and Joshua Xiong, "Nim Fractals," Journal of Integer Sequences 17 (2014), Article 14.7.8, Corollary, lines 163–165, https://cs.uwaterloo.ca/journals/JIS/VOL17/Khovanova/khova6.tex

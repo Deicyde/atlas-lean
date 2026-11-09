@@ -9,4 +9,4 @@ points at odd integer distance.
 
 ## Sources
 
-- James Davies, Odd distances in colourings of the plane, Geometric and Functional Analysis 34 (2024) 19-31, arXiv:2209.15598, https://arxiv.org/abs/2209.15598. Moved from `OpenConjectures/GraphTheory/OddDistanceGraphInfiniteChromatic`.
+- James Davies, Odd distances in colourings of the plane, Geometric and Functional Analysis 34 (2024) 19-31, arXiv:2209.15598, https://arxiv.org/abs/2209.15598.

@@ -14,4 +14,4 @@ one has $D = 12$ and $P \equiv 2 \pmod 2$, but $\pi_U(4) = 4$ and $\rho_U(4) = 2
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 3.2 (`integers-2024-A36-thm-3-2`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 3.2.

@@ -15,4 +15,4 @@ coefficient is $B_j^{(-n)}(-1)$.
 
 ## Sources
 
-- Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Corollary 1 (`integers-2024-A43-cor-1`).
+- Paul Thomas Young, *Series of Height One Multiple Zeta Functions*, INTEGERS 24 (2024), Article A43, Corollary 1.

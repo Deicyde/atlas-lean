@@ -11,4 +11,4 @@ where the sum converges coefficientwise.
 
 ## Sources
 
-- Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 2, eq. (7) (`integers-2024-A56-prop-2`).
+- Aubrey Blecher, Arnold Knopfmacher, and Michael Mays, *Casting Light on Integer Partitions*, INTEGERS 24 (2024), Article A56, Proposition 2, eq. (7).

@@ -7,4 +7,4 @@ $m$: there is a set $I$ of exactly $m$ indices with $\sum_{i \in I} x_i = 0$.
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 5.2 (`integers-2024-A38-thm-5-2`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 5.2.

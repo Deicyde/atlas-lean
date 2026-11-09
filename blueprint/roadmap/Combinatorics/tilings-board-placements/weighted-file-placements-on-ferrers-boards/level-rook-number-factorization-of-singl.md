@@ -12,4 +12,4 @@ $x\downarrow_{k,m} = x(x-m)\cdots(x-(k-1)m)$ is the $m$-falling factorial.
 
 ## Sources
 
-- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 2 (Briggs and Remmel) (`integers-2024-A58-thm-2`).
+- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 2 (Briggs and Remmel).

@@ -18,4 +18,4 @@ $$S_3^H(n) = \frac{1}{7} (2n+1)\, c_n \Big(\frac{n}{15} (15n^2 + 18n + 2) H_n -
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Corollary 2 (`integers-2026-A109-cor-2`).
+- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Corollary 2.

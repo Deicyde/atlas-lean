@@ -7,4 +7,4 @@ one of them, whose moduli all lie between $6$ and $168$ and include both $6$ and
 
 ## Sources
 
-- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 2 (`integers-2026-A38-thm-2`); the paper's witness is due to Ognian Trifonov.
+- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Theorem 2; the paper's witness is due to Ognian Trifonov.

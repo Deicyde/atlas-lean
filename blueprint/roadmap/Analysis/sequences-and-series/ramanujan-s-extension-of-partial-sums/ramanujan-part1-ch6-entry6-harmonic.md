@@ -16,4 +16,4 @@ $\sum_{j \ge 0} -c_{j+1} x^{j+1} / (j + 1)!$ converges absolutely with sum $F(x)
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6. Proves `Wanted` entry `ramanujan_part1_ch6_entry6_harmonic`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 6.

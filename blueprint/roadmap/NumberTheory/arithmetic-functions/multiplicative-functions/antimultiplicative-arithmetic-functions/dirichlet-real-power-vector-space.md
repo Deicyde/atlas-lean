@@ -15,4 +15,4 @@ multiplication.
 
 ## Sources
 
-- Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Theorem 1 (`integers-2025-A33-thm-1`).
+- Pentti Haukkanen and Timo Tossavainen, *Some Perpendicularities of Arithmetical Functions*, INTEGERS 25 (2025), Article A33, Theorem 1.

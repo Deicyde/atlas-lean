@@ -11,4 +11,4 @@ where $\sigma_{\mathrm{even}}(k)$ is the sum of the even divisors of $k$.
 
 ## Sources
 
-- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 3 (`integers-2025-A94-cor-3`).
+- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Corollary 3.

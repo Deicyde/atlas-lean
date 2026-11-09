@@ -18,4 +18,4 @@ outward version is Van Aubel's theorem with squares on the right.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Van_Aubel%27s_theorem (statement `vanaubel-s1`).
+- https://en.wikipedia.org/wiki/Van_Aubel%27s_theorem.

@@ -6,4 +6,4 @@ $2^{p-1} \equiv 1 \pmod{p^2}$.
 
 ## Sources
 
-- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 3 (`integers-2026-A77-thm-3`), citing Křížek, Luca, and Somer.
+- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Theorem 3, citing Křížek, Luca, and Somer.

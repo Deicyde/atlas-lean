@@ -12,4 +12,4 @@ The paper assumes $j \ge 1$; for $j = 0$ both sides vanish.
 
 ## Sources
 
-- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 11 (`integers-2025-A94-thm-11`).
+- Shruti Sharma and Amandeep Kaur, *Enumerating Parts of n-Color Partitions*, INTEGERS 25 (2025), Article A94, Theorem 11.

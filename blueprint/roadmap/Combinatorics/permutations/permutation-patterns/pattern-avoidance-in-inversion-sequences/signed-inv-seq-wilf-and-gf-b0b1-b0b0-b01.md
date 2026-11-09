@@ -13,4 +13,4 @@ $|\bar I_n(B_1)| = |\bar I_n(B_2)| = |\bar I_n(B_3)| = \sum_{i=0}^{n} i!$.
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C3) (`integers-2026-A74-thm-3`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 3 (C3).

@@ -7,4 +7,4 @@ $$\hat C(k) = \exp\Bigl(\frac{5}{\log L^-(k)}\Bigr) < 1.525.$$
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 5 (`integers-2026-A86-lem-5`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 5.

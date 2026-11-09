@@ -7,4 +7,4 @@ $\nu_2(H_{2^a} - H_{2^a - m}) = -a$.
 
 ## Sources
 
-- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Corollary 1 (`integers-2024-A27-cor-1`): if `n = 2^a` is a power of `2` then `ν₂(H_n - H_{n-m}) = -a` for every `1 ≤ m ≤ n`.
+- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Corollary 1: if `n = 2^a` is a power of `2` then `ν₂(H_n - H_{n-m}) = -a` for every `1 ≤ m ≤ n`.

@@ -8,4 +8,4 @@ for every natural number $n < 7^r$, then $f(7^r) = 7^r$.
 
 ## Sources
 
-- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 4 (`integers-2025-A99-thm-4`).
+- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 4.

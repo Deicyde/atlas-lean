@@ -6,4 +6,4 @@ numbers is a $\{p, q\}$-Diophantine tuple; that is, there is no $\{p, q\}$-Dioph
 
 ## Sources
 
-- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Theorem 1 (`integers-2025-A92-thm-1`).
+- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Theorem 1.

@@ -14,4 +14,4 @@ $(B_q - B_q) \cap H = \{0\}$.
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 9 (`integers-2025-A77-lem-9`), quoting Bose–Chowla and Brandão–Debarre–Tait / Gómez–Trujillo–Tait.
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 9, quoting Bose–Chowla and Brandão–Debarre–Tait / Gómez–Trujillo–Tait.

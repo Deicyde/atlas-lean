@@ -12,4 +12,4 @@ The paper's conjecture on the constant term, stated after this theorem, is not i
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 11, Equation (4.9) (`integers-2024-A70-thm-11`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Theorem 11, Equation (4.9).

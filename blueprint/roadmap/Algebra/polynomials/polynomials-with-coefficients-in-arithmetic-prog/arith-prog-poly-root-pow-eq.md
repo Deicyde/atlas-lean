@@ -13,4 +13,4 @@ $z^{m+1} = (a_{m+2} z - a_{m+1}) / (a_1 z - a_0)$. The denominator does not vani
 
 ## Sources
 
-- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Lemma 1, equation (2) (`integers-2026-A92-lem-1`).
+- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Lemma 1, equation (2).

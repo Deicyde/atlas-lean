@@ -13,4 +13,4 @@ index $-1$ is allowed and $\binom{-1}{k} = (-1)^k$.
 
 ## Sources
 
-- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 2 (`integers-2024-A35-thm-2`).
+- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Theorem 2.

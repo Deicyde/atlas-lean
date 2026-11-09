@@ -7,4 +7,4 @@ $S^3 = \{x \in \mathbb{R}^4 : \|x\| = 1\}$.
 
 ## Sources
 
-- G. Perelman, The entropy formula for the Ricci flow and its geometric applications (arXiv:math/0211159, 2002); Ricci flow with surgery on three-manifolds (arXiv:math/0303109, 2003); Finite extinction time for the solutions to the Ricci flow on certain three-manifolds (arXiv:math/0307245, 2003). Recorded as a `proof_wanted` in Mathlib/Geometry/Manifold/PoincareConjecture.lean. Originally conjectured by Henri Poincaré in 1904. Via leanprover/lean-eval@38361be, problem `poincare_3d_topological`.
+- G. Perelman, The entropy formula for the Ricci flow and its geometric applications (arXiv:math/0211159, 2002); Ricci flow with surgery on three-manifolds (arXiv:math/0303109, 2003); Finite extinction time for the solutions to the Ricci flow on certain three-manifolds (arXiv:math/0307245, 2003). Originally conjectured by Henri Poincaré in 1904. Problem `poincare_3d_topological` of the lean-eval benchmark.

@@ -7,4 +7,4 @@ the degree of the zero polynomial is taken to be $0$.
 
 ## Sources
 
-- https://link.springer.com/article/10.1007/s00220-025-05302-9 Via leanprover/lean-eval@38361be, problem `exists_complementary_polynomial_on_unit_circle`.
+- https://link.springer.com/article/10.1007/s00220-025-05302-9. Problem `exists_complementary_polynomial_on_unit_circle` of the lean-eval benchmark.

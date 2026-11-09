@@ -8,4 +8,4 @@ subgroup of $G$.
 
 ## Sources
 
-- G. Frobenius, Über auflösbare Gruppen IV, Sitzungsber. Akad. Wiss. Berlin (1901). Via leanprover/lean-eval@38361be, problem `frobenius_kernel_isNormal`.
+- G. Frobenius, Über auflösbare Gruppen IV, Sitzungsber. Akad. Wiss. Berlin (1901). Problem `frobenius_kernel_isNormal` of the lean-eval benchmark.

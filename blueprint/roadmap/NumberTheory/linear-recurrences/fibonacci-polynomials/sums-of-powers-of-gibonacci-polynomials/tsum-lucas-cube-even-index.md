@@ -12,4 +12,4 @@ $$\sum_{n=2}^{\infty} \frac{8F_{6n} + 3F_{2n}}{(L_{2n}^2 + 5)^3} = \frac{74}{926
 
 ## Sources
 
-- Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.6 (`fq-2024-linzhou02172024-cor-4.6`).
+- Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.6.

@@ -11,4 +11,4 @@ with $0 \le s_j \le r_j$ for all $j$ and $\sum_j s_j = k - \beta$.
 
 ## Sources
 
-- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Lemma 1 (`integers-2024-A116-lem-1`).
+- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Lemma 1.

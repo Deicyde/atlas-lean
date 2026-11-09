@@ -9,4 +9,4 @@ to $BC$. Then $AD / DB = AE / EC$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Intercept_theorem (statement intercept-s1).
+- https://en.wikipedia.org/wiki/Intercept_theorem.

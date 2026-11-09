@@ -7,4 +7,4 @@ $$a(n, m) \sim \frac{n^{m-1}}{2^{\lfloor m/2 \rfloor} (m-1)!} \quad (n \to \inft
 
 ## Sources
 
-- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 1 (`integers-2024-A35-cor-1`).
+- Daniel F. Checa and José L. Ramírez, *Arndt Compositions: A Generating Functions Approach*, INTEGERS 24 (2024), Article A35, Corollary 1.

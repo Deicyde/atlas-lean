@@ -14,4 +14,4 @@ $$C(k)\,B(k) < e^{\gamma} \log\bigl(L^-(k) \log 2.51 - \log p_j\bigr).$$
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Proposition 1 (`integers-2026-A86-prop-1`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Proposition 1.

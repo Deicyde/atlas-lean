@@ -12,4 +12,4 @@ $\mathcal{H}$ that is not Diophantine has the required property.
 
 ## Sources
 
-- H. Eliasson, B. Fayad and R. Krikorian, Jean-Christophe Yoccoz and the theory of circle diffeomorphisms (2018), arXiv:1810.07107 (account of J.-C. Yoccoz, Analytic linearization of circle diffeomorphisms, Lecture Notes in Math. 1784, Springer (2002), 125-173), https://arxiv.org/abs/1810.07107. Moved from `OpenConjectures/Analysis/HermanProblem290`.
+- H. Eliasson, B. Fayad and R. Krikorian, Jean-Christophe Yoccoz and the theory of circle diffeomorphisms (2018), arXiv:1810.07107 (account of J.-C. Yoccoz, Analytic linearization of circle diffeomorphisms, Lecture Notes in Math. 1784, Springer (2002), 125-173), https://arxiv.org/abs/1810.07107.

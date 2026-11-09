@@ -10,4 +10,4 @@ $$D_n\bigl(x_0, \sqrt{i x_0 / b}\bigr) \le C \min\bigl(i, \; i/w + w (\log w)^2\
 
 ## Sources
 
-- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 5 (`integers-2026-A115-prop-5`, journal version).
+- Patrick Letendre, *Divisors of an Integer in a Short Interval*, INTEGERS 26 (2026), Article A115, Proposition 5 (journal version).

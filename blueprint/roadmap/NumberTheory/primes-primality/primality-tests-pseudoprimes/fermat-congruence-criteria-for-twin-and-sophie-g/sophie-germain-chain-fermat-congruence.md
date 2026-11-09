@@ -9,4 +9,4 @@ $q'\,a^{q-1} \equiv q\,a^{q'-1} + q + 1 \pmod{qq'}$.
 
 ## Sources
 
-- Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Corollary 3.4, Congruences (3.8) (`integers-2025-A31-cor-3-4`).
+- Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Corollary 3.4, Congruences (3.8).

@@ -7,4 +7,4 @@ admits a partition into $k$ classes that are $l$-sum-free modulo $m$, equals $m 
 
 ## Sources
 
-- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 5 (`integers-2025-A62-cor-5`).
+- Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 5.

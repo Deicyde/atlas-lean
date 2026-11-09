@@ -9,4 +9,4 @@ $\frac{6 e^{\gamma}}{\pi^2} \exp\left(-f(x) - \frac{1.02}{(x - 1) \log x}\right)
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 7 (`integers-2024-A34-cor-7`).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Corollary 7.

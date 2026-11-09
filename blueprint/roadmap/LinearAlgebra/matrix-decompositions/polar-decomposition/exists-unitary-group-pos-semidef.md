@@ -6,4 +6,4 @@ positive semidefinite matrix $P$ such that $P^2 = A^* A$ and $A = UP$.
 
 ## Sources
 
-- R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013). Proves `Wanted` entry `polar_decomposition`, restated over `Matrix.unitaryGroup` in place of the entry's `IsUnitaryMatrix`.
+- R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013).

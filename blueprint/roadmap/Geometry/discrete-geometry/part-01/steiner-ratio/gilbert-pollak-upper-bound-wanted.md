@@ -7,4 +7,4 @@ $\sqrt{3}/2$.
 
 ## Sources
 
-- Gilbert and Pollak, *Steiner minimal trees* (1968): the equilateral triangle gives the upper bound `√3 / 2`. Known literature result; the triangle computation is not supplied here.
+- Gilbert and Pollak, *Steiner minimal trees* (1968): the equilateral triangle gives the upper bound `√3 / 2`.

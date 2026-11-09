@@ -8,4 +8,4 @@ $$\sum_{k=0}^{n} (-1)^{n-k} 2^{-2k} \binom{n}{k} C_{k+1} (1-x)^{n-k} =
 
 ## Sources
 
-- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 5 (`integers-2026-A19-cor-5`).
+- Kunle Adegoke, *A Short Proof of Knuth's Old Sum, Generalizations and Related Sums*, INTEGERS 26 (2026), Article A19, Corollary 5.

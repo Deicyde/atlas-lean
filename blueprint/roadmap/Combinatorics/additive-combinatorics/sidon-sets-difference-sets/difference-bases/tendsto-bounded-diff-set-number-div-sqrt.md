@@ -9,4 +9,4 @@ $\alpha_g(n) = (1 + o_g(1)) \sqrt{gn}$.
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Theorem 3 (`integers-2025-A77-thm-3`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Theorem 3.

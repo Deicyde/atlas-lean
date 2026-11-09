@@ -7,4 +7,4 @@ $2j_{k,m+n} = j_{k,m} j_{k,n} + (k^2 + 8) J_{k,m} J_{k,n}$.
 
 ## Sources
 
-- Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Lemma 2 (`integers-2025-A74-lem-2`).
+- Weerayuth Nilsrakoo and Achariya Nilsrakoo, *An Integral Representation of k-Jacobsthal and k-Jacobsthal-Lucas Numbers*, INTEGERS 25 (2025), Article A74, Lemma 2.

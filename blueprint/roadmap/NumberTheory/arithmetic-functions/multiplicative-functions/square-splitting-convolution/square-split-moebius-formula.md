@@ -15,4 +15,4 @@ $$\sum_{n \ge 1} \frac{\mu_\star(n)}{n^s} = \prod_p \left(1 - p^{-s} - p^{-2s} +
 
 ## Sources
 
-- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 3 (`integers-2026-A56-thm-3`).
+- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 3.

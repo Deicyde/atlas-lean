@@ -7,4 +7,4 @@ polynomials of degree $2$ in $\mathbb{Z}[x]$.
 
 ## Sources
 
-- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Theorem 4 (`integers-2026-A92-thm-4`).
+- Hiroaki Kakuma, *Irreducibility of Polynomials with Coefficients in a Positive Arithmetic Progression*, INTEGERS 26 (2026), Article A92, Theorem 4.

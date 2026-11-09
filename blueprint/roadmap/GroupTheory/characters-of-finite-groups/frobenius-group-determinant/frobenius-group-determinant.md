@@ -8,4 +8,4 @@ $\deg p_j$ is the total degree of $p_j$.
 
 ## Sources
 
-- Knill, *Some fundamental theorems in mathematics*, §171. Via leanprover/lean-eval@38361be, problem `frobenius_group_determinant`.
+- Knill, *Some fundamental theorems in mathematics*, §171. Problem `frobenius_group_determinant` of the lean-eval benchmark.

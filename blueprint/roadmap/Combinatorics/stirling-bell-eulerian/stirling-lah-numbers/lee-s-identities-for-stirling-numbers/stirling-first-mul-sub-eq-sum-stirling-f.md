@@ -11,4 +11,4 @@ This is Lee's Theorem 14 with the denominator $n - k$ cleared.
 
 ## Sources
 
-- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 14 (TeX label `thm:dwfmc`).
+- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 14.

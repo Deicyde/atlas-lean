@@ -7,4 +7,4 @@ the lower limit taken over natural numbers $n$, has Hausdorff dimension $0$ in $
 
 ## Sources
 
-- see manifest Via leanprover/lean-eval@38361be, problem `einsiedler_katok_lindenstrauss`.
+-. Problem `einsiedler_katok_lindenstrauss` of the lean-eval benchmark.

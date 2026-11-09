@@ -13,4 +13,4 @@ and $\lVert \alpha \rVert_E^2 \le \lVert \alpha \rVert^2$.
 
 ## Sources
 
-- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 1 (`integers-2025-A10-lem-1`).
+- Saettone, Zaharescu and Zhang, *On a Special Metric in Cyclotomic Fields*, INTEGERS 25 (2025), Article A10, Lemma 1.

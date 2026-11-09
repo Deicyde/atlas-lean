@@ -12,4 +12,4 @@ interval, and apply the mean value inequality twice.
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Numerical Analysis` / `Ordinary differential equations`, entry `consistency` (unmapped); E. Hairer, S. P. Nørsett and G. Wanner, Solving Ordinary Differential Equations I, 2nd ed., Section I.7.
+- E. Hairer, S. P. Nørsett and G. Wanner, Solving Ordinary Differential Equations I, 2nd ed., Section I.7.

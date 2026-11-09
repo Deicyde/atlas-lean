@@ -10,4 +10,4 @@ alphabet, $u$ of length $n$ and $v$ of length $r$, such that no letter occurs in
 
 ## Sources
 
-- Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Corollary 4 (`integers-2024-A107-cor-4`).
+- Aubrey Blecher and Arnold Knopfmacher, *Intersections in Pairs of Words*, INTEGERS 24 (2024), Article A107, Corollary 4.

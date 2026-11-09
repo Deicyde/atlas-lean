@@ -12,4 +12,4 @@ two distinct cyclic integers that are congruent modulo $|a - 1|$ are $\ell$ and 
 
 ## Sources
 
-- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 13 (`integers-2026-A107-thm-13`).
+- Dana Neidmann, *Exact Covering System Digraphs of Degree 2 and Non-Standard Binary Representations of Integers*, INTEGERS 26 (2026), Article A107, Theorem 13.

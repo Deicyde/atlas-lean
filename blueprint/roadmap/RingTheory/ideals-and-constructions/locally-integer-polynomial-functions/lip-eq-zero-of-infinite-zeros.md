@@ -7,4 +7,4 @@ $f(x) = 0$ for every $x \in U$.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 3 (`integers-2025-A41-lem-3`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Lemma 3.

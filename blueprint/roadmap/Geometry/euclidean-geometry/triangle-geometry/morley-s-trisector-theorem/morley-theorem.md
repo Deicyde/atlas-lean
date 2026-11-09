@@ -7,4 +7,4 @@ writing $d$ for the Euclidean distance, $d(P, Q) = d(Q, R)$ and $d(Q, R) = d(R, 
 
 ## Sources
 
-- F. Morley (c. 1899). Knill, §162. Via leanprover/lean-eval@38361be, problem `morley_theorem`.
+- F. Morley (c. 1899). Knill, §162. Problem `morley_theorem` of the lean-eval benchmark.

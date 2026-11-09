@@ -16,4 +16,4 @@ in $L^2(\mu)$ satisfies, so its statement was vacuous.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), `benchmark/level2/ma_proofbench_l2_04.lean` at openbmb/ma-proofbench@31bab4c, with the change above.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_04`, with the change above.

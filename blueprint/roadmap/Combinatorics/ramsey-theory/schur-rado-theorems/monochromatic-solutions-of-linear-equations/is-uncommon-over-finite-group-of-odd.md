@@ -9,4 +9,4 @@ Since $|G| \ge 2$, coprimality forces every $a_i$ to be nonzero.
 
 ## Sources
 
-- Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Theorem 1 (`integers-2025-A88-thm-1`).
+- Laurence P. Wijaya, *On Monochromatic Solutions of Linear Equations Using at Least Three Colors*, INTEGERS 25 (2025), Article A88, Theorem 1.

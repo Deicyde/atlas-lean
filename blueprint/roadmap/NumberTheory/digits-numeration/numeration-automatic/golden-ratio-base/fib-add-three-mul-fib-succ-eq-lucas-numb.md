@@ -6,4 +6,4 @@ $L_j$ is the $j$-th Lucas number ($L_0 = 2$, $L_1 = 1$).
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 9 (`integers-2024-A24-lem-9`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 9.

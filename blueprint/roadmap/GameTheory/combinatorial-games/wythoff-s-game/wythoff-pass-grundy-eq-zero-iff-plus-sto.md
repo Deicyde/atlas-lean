@@ -9,4 +9,4 @@ available pass has the same P-positions as Wythoff's game plus a pile of one sto
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Theorem 4 (`integers-2025-G4-thm-4`).
+- Ryohei Miyadera, Hikaru Manabe, and Masanori Fukui, *Wythoff's Game with a Pass*, INTEGERS 25 (2025), Article G4, Theorem 4.

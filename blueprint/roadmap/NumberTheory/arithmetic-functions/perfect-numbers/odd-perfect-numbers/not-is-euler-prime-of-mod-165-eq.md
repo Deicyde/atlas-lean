@@ -6,4 +6,4 @@ prime $q \equiv -1 \pmod{165}$ is the Euler prime of an odd perfect number.
 
 ## Sources
 
-- Joshua Zelinsky, *The Sum of the Reciprocals of the Prime Divisors of an Odd Perfect or Odd Primitive Non-deficient Number*, INTEGERS 25 (2025), Article A59, Proposition 9 (`integers-2025-A59-prop-9`).
+- Joshua Zelinsky, *The Sum of the Reciprocals of the Prime Divisors of an Odd Perfect or Odd Primitive Non-deficient Number*, INTEGERS 25 (2025), Article A59, Proposition 9.

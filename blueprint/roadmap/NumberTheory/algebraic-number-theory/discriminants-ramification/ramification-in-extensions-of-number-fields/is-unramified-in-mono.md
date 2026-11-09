@@ -8,4 +8,4 @@ unramified in $\mathcal{O}_E$.
 
 ## Sources
 
-- generic form of `isUnramifiedAtPrime_of_le` in the primary Lean source for ATLAS `NumberTheoryI` target N390, Proposition 19.14.
+- ATLAS N390, Proposition 19.14.

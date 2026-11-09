@@ -8,4 +8,4 @@ $$a_{n+1} = \frac{a_n^2}{1 - \varepsilon_n} - a_n + (1 - \varepsilon_{n+1}).$$
 
 ## Sources
 
-- Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Lemma 2 (`integers-2026-A28-lem-2`).
+- Junnosuke Koizumi, *Irrationality of the Reciprocal Sum of Doubly Exponential Sequences*, INTEGERS 26 (2026), Article A28, Lemma 2.

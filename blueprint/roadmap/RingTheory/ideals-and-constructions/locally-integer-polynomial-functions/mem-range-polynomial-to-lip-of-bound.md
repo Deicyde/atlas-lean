@@ -7,4 +7,4 @@ polynomial $p \in \mathbb{Z}[x]$ with $f(x) = p(x)$ for all $x \in U$.
 
 ## Sources
 
-- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 3 (`integers-2025-A41-thm-3`).
+- Alexander Borisov, *Locally Integer Polynomial Functions*, INTEGERS 25 (2025), Article A41, Theorem 3.

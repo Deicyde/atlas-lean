@@ -9,4 +9,4 @@ Euler's totient function.
 
 ## Sources
 
-- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 4 (`integers-2026-A117-lem-4`).
+- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 4.

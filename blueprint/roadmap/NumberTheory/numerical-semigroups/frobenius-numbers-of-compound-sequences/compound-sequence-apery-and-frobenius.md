@@ -15,4 +15,4 @@ $$F(S) = \sum_{i=1}^{n} (a_i - 1) c_i - c_0.$$
 
 ## Sources
 
-- Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Theorem 2, eq. (2) (`integers-2025-A6-thm-2`), quoting Kiers, O'Neill, and Ponomarenko.
+- Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Theorem 2, eq. (2), quoting Kiers, O'Neill, and Ponomarenko.

@@ -8,4 +8,4 @@ The paper's hypothesis $0 \le r < m$ forces $m \ge 1$; for $m = 0$ the right sid
 
 ## Sources
 
-- Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 1 (ii) (`integers-2024-A15-thm-1`).
+- Cristina Ballantine, *Combinatorial Proofs of Merca's Identities Involving the Sum of Different Parts Congruent to r Modulo m in All Partitions of n*, INTEGERS 24 (2024), Article A15, Theorem 1 (ii).

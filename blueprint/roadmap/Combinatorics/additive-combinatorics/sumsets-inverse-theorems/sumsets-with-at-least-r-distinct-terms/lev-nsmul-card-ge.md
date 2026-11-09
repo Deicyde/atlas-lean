@@ -9,4 +9,4 @@ $$|hA| \ge |(h - 1)A| + \min\{\max A,\ h(k - 2) + 1\}.$$
 
 ## Sources
 
-- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 13 (Lev) (`integers-2025-A12-thm-13`).
+- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 13 (Lev).

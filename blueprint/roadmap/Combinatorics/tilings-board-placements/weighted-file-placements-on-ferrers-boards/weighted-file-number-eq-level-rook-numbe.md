@@ -12,4 +12,4 @@ paper derives it from this cancellation for each $k$.
 
 ## Sources
 
-- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Corollary 6 and the sentence before it (`integers-2024-A58-cor-6`).
+- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Corollary 6 and the sentence before it.

@@ -7,4 +7,4 @@ $|z - P_k / Q_k| \le 1 / |Q_k|^2$.
 
 ## Sources
 
-- Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Lemma 2 (`integers-2024-A25-lem-2`).
+- Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Lemma 2.

@@ -10,4 +10,4 @@ $q_{l-1}$ are both odd, or $a_{l/2}$ is even.
 
 ## Sources
 
-- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 1 (ii) (`integers-2026-A69-thm-1`).
+- Jun Ho Lee, *Nonexistence of the Continued Fraction of a Quadratic Irrational Number with a Given Sequence*, INTEGERS 26 (2026), Article A69, Theorem 1 (ii).

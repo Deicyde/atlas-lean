@@ -20,4 +20,4 @@ $t = 2^{\alpha/2}$. Then Kronecker's sums $F_o$ and $F_e$ satisfy:
 
 ## Sources
 
-- Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Theorem 2 (`integers-2026-A29-thm-2`).
+- Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Theorem 2.

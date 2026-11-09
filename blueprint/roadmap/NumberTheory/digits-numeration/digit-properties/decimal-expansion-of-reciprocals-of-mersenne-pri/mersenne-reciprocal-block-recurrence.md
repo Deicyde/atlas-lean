@@ -20,4 +20,4 @@ $B_{k+1} = 2B_k + 1$ if $k = p - 1$, and $B_{k+1} = 2B_k$ otherwise;
 
 ## Sources
 
-- Amitabha Tripathi, *A Note on the Decimal Expansion of Reciprocals of Mersenne Primes*, INTEGERS 24 (2024), Article A14, Theorem 1 (`integers-2024-A14-thm-1`).
+- Amitabha Tripathi, *A Note on the Decimal Expansion of Reciprocals of Mersenne Primes*, INTEGERS 24 (2024), Article A14, Theorem 1.

@@ -7,4 +7,4 @@ $1$, this says that $(x^n - 1)/(x - 1) = y^3$ has no such integer solution.
 
 ## Sources
 
-- Tran Duc Son, *A Note on the Nagell–Ljunggren Equation (xⁿ - 1)/(x - 1) = y³*, INTEGERS 26 (2026), Article A104, Theorem 2 (`integers-2026-A104-thm-2`).
+- Tran Duc Son, *A Note on the Nagell–Ljunggren Equation (xⁿ - 1)/(x - 1) = y³*, INTEGERS 26 (2026), Article A104, Theorem 2.

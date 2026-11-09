@@ -12,4 +12,4 @@ $$|B^{(s)}_{p,n}| = \sum_{i=0}^{s} \binom{s}{i} \, |B^{(s)}_{p,n-1-ip}|.$$
 
 ## Sources
 
-- Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Theorem 2 (`integers-2026-A53-thm-2`).
+- Hùng Việt Chu, Yubo Geng, Julian King, Steven J. Miller, Garrett Tresch and Zachary Louis Vasseur, *Linear Recurrences from Counting Schreier-Type Multisets*, INTEGERS 26 (2026), Article A53, Theorem 2.

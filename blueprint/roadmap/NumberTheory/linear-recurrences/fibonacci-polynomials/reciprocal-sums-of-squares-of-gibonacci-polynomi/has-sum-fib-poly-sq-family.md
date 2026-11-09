@@ -14,4 +14,4 @@ integer; the statement is made for real $x > 0$, which contains the positive int
 
 ## Sources
 
-- Thomas Koshy, *Sums Involving a Family of Gibonacci Polynomial Squares: Generalizations*, The Fibonacci Quarterly 62 (2024), Article koshy11112023, Theorem 3.1 (`fq-2024-koshy11112023-thm-3.1`).
+- Thomas Koshy, *Sums Involving a Family of Gibonacci Polynomial Squares: Generalizations*, The Fibonacci Quarterly 62 (2024), Article koshy11112023, Theorem 3.1.

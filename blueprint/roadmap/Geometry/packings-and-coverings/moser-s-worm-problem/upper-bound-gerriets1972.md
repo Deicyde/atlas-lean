@@ -6,4 +6,4 @@ rotated and translated copy of every planar curve of length $1$, is at most $0.3
 
 ## Sources
 
-- Optimization Problems, constant 13a (frozen 2c1968cd); source-specific interval-arc adaptation.
+- Optimization Problems, constant 13a; source-specific interval-arc adaptation.

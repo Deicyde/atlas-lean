@@ -11,4 +11,4 @@ digit first) stops in a state $t$ with $\tau(t) = w(n)$.
 
 ## Sources
 
-- Sunic Definition 3, lines 556-560 of `cubefree.tex`, span SHA-256 `fd6739cecadd7bfc1b66a49c39db59b2a267e85abb0abf5556bac6b533f3330b`. The universal clause over all representing words enforces tolerance of trailing high-order zeros.
+- Sunic Definition 3, lines 556-560 of `cubefree.tex`. The universal clause over all representing words enforces tolerance of trailing high-order zeros.

@@ -10,4 +10,4 @@ $$\sum_{j=1}^N |\alpha_j - \beta_j|^p \le \sum_{j=1}^N |\gamma_j|^p.$$
 
 ## Sources
 
-- V. B. Lidskii, On the proper values of a sum and product of symmetric matrices, Dokl. Akad. Nauk SSSR 75 (1950), 769-772. Listed as an additional statement of §99 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Via leanprover/lean-eval@38361be, problem `lidskii_inequality`.
+- V. B. Lidskii, On the proper values of a sum and product of symmetric matrices, Dokl. Akad. Nauk SSSR 75 (1950), 769-772. Listed as an additional statement of §99 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `lidskii_inequality` of the lean-eval benchmark.

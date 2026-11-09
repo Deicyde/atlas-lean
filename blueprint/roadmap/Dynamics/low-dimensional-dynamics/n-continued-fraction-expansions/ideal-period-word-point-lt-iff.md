@@ -14,4 +14,4 @@ makes $T_\alpha$ expanding, so that a digit sequence determines its point.
 
 ## Sources
 
-- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 4 (`integers-2026-A75-lem-4`).
+- Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 4.

@@ -9,4 +9,4 @@ $F \in \mathcal{F}$ is of the form $A \cup B$ with $A$ sum-free and $|B| \le \de
 
 ## Sources
 
-- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 1 (`integers-2026-A97-lem-1`).
+- Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 1.

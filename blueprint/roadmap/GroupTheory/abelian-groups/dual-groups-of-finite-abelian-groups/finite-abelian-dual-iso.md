@@ -12,4 +12,4 @@ case, then products of cyclic groups.
 
 ## Sources
 
-- `undergrad.yaml`, section "Representation theory of finite groups", entry "dual groups"; K. Conrad, Characters of finite abelian groups, https://kconrad.math.uconn.edu/blurbs/grouptheory/charthy.pdf, Theorem 3.13.
+- K. Conrad, Characters of finite abelian groups, https://kconrad.math.uconn.edu/blurbs/grouptheory/charthy.pdf, Theorem 3.13.

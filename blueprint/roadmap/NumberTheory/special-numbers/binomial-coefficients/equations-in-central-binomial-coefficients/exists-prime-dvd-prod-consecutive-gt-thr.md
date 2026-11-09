@@ -7,4 +7,4 @@ with $p > 3m/2$ if and only if $(n, m)$ is none of the pairs $(3, 2)$, $(8, 2)$ 
 
 ## Sources
 
-- Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*, INTEGERS 26 (2026), Article A26, Lemma 5 (`integers-2026-A26-lem-5`), quoting Hanson.
+- Meaghan Allen, *Solvability of $\binom{2k}{k} = \binom{2a}{a}\binom{x+2b}{b}$*, INTEGERS 26 (2026), Article A26, Lemma 5, quoting Hanson.

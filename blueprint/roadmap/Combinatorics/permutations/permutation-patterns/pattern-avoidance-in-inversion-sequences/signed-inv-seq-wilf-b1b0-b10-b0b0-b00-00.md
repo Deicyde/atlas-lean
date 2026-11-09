@@ -12,4 +12,4 @@ for the number of Wilf classes of five-pattern sets to be exactly $239$.
 
 ## Sources
 
-- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 1, closing remark (`integers-2026-A74-thm-1`).
+- Toufik Mansour and Amir Safadi, *Signed Inversion Sequences Avoiding a Set of Length-2 Signed Patterns*, INTEGERS 26 (2026), Article A74, Theorem 1, closing remark.

@@ -7,4 +7,4 @@ $f(n) = n$ for every natural number $n$.
 
 ## Sources
 
-- Mingyu Kim and Poo-Sung Park, *An Additive Uniqueness Pair of Sets for Multiplicative Functions: Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A103, Theorem 1 (`integers-2026-A103-thm-1`).
+- Mingyu Kim and Poo-Sung Park, *An Additive Uniqueness Pair of Sets for Multiplicative Functions: Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A103, Theorem 1.

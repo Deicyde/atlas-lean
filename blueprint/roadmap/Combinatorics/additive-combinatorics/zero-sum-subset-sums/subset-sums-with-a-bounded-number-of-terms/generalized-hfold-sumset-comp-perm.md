@@ -13,4 +13,4 @@ here.
 
 ## Sources
 
-- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Lemma 3 (`integers-2024-A116-lem-3`).
+- Raj Kumar Mistri, *Subset and Subsequence Sums with Bounded Numbers of Terms*, INTEGERS 24 (2024), Article A116, Lemma 3.

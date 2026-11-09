@@ -8,4 +8,4 @@ $3 \mid v$, and $(u, v) \ne (3, 2)$, the equation has no solution in nonzero int
 
 ## Sources
 
-- Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Lemma 2 (`integers-2024-A48-lem-2`).
+- Richard F. Ryan, *Under What Conditions on the Exponents Does `x^m + y^n = z^r` Have Solutions?*, INTEGERS 24 (2024), Article A48, Lemma 2.

@@ -14,9 +14,6 @@ irrational and that $q$ is a convergent denominator, and the positivity of $r$, 
 $|r\kappa - s + \mu|$, are not needed: the statement follows from the version for an arbitrary
 positive denominator.
 
-Concept `baker_davenport_reduction_absolute`, semantic id
-`jis_grounded_3d649f47290c78b9a73677c9`.
-
 ## Sources
 
-- Eric F. Bravo, Carlos A. Gomez, and Florian Luca, "Product of Consecutive Tribonacci Numbers With Only One Distinct Digit," Journal of Integer Sequences 22 (2019), Article 19.6.3, Lemma `bd`, lines 285–292. Source URL `https://cs.uwaterloo.ca/journals/JIS/VOL22/Gomez/gomez3.tex`. Source-file SHA-256 `06ab2807874c97cf44007c561d48576611214b0fa0ab6ed55c61470d8ba7c0e6`; exact-span SHA-256 `cc488ea946e7229300ad0b1a00befe1e523c8a5b97331a1d79e04c8f40429fe4`.
+- Eric F. Bravo, Carlos A. Gomez, and Florian Luca, "Product of Consecutive Tribonacci Numbers With Only One Distinct Digit," Journal of Integer Sequences 22 (2019), Article 19.6.3, Lemma `bd`, lines 285–292. Source URL <https://cs.uwaterloo.ca/journals/JIS/VOL22/Gomez/gomez3.tex>.

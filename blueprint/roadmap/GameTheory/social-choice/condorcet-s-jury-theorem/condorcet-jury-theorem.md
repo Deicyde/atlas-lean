@@ -12,4 +12,4 @@ $\mu(M_n) \to 1$ as $n \to \infty$, and $\mu(M_n) > p$ for every odd $n > 1$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Condorcet%27s_jury_theorem. Proves `Wanted` entry `condorcet_jury_theorem`.
+- https://en.wikipedia.org/wiki/Condorcet%27s_jury_theorem.

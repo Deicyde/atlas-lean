@@ -16,4 +16,4 @@ the set of primes $p > k$ with $p \mid \operatorname{num}(B_{p-k})$.
 
 ## Sources
 
-- Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Lemma 4 (`integers-2024-A22-lem-4`).
+- Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Lemma 4.

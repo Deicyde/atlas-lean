@@ -6,4 +6,4 @@ sum is taken to be $0$ if the series is not summable.
 
 ## Sources
 
-- Gerhold, concept `jis_sem_e9cabece6d32bf6b52d62673`, source `jis_f199df27bfb37c3d9b045e32`.
+- Gerhold.

@@ -9,4 +9,4 @@ convergence on $H$.
 
 ## Sources
 
-- J. von Neumann, *Zur Algebra der Funktionaloperationen und Theorie der normalen Operatoren*, Math. Ann. 102 (1929) (double commutant theorem). Via leanprover/lean-eval@38361be, problem `vonneumann_double_commutant`.
+- J. von Neumann, *Zur Algebra der Funktionaloperationen und Theorie der normalen Operatoren*, Math. Ann. 102 (1929) (double commutant theorem). Problem `vonneumann_double_commutant` of the lean-eval benchmark.

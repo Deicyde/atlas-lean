@@ -9,4 +9,4 @@ $k \mapsto 4k + 1$.
 
 ## Sources
 
-- Concept `jis_sem_21a46571c2d8f3f53edb5728` (`odd Lichtenberg numbers`); required clause from stable statement `jis_e2a7cb75f919d56e388fa0b1` in `https://cs.uwaterloo.ca/journals/JIS/VOL25/Hinz/hinz5.tex`.
+- <https://cs.uwaterloo.ca/journals/JIS/VOL25/Hinz/hinz5.tex>.

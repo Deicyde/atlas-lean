@@ -20,4 +20,4 @@ $\prod_{n \ge 1} \hat\Phi_n(z)^{-1/n}$, while the left side does not.
 
 ## Sources
 
-- Hartosh Singh Bal, *Constancy of an Infinite Cyclotomic Product via Ramanujan Sums*, INTEGERS 25 (2025), Article A96, Theorem 2 (`integers-2025-A96-thm-2`).
+- Hartosh Singh Bal, *Constancy of an Infinite Cyclotomic Product via Ramanujan Sums*, INTEGERS 25 (2025), Article A96, Theorem 2.

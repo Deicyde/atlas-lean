@@ -10,4 +10,4 @@ $4|u| \le 7p$; that is, every factor of $\varphi^n(2)$ has exponent at most $7/4
 
 ## Sources
 
-- Serina Camungol and Narad Rampersad, "Concerning Kurosaki's Squarefree Word," Journal of Integer Sequences 16 (2013), Article 13.9.4, Theorem (label 7/4powerfree), lines 184–188, with the σ/ρ/φ definitions at lines 116–124, https://cs.uwaterloo.ca/journals/JIS/VOL16/Camungol/ramper4.tex
+- Serina Camungol and Narad Rampersad, "Concerning Kurosaki's Squarefree Word," Journal of Integer Sequences 16 (2013), Article 13.9.4, Theorem, lines 184–188, with the σ/ρ/φ definitions at lines 116–124, https://cs.uwaterloo.ca/journals/JIS/VOL16/Camungol/ramper4.tex

@@ -8,4 +8,4 @@ $c = (a b_2 + a_2 b) / (a_2 + b_2)$, or $b_2 - a_2 \ne 0$ and $c = (a b_2 - a_2 
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 1(b) (`integers-2024-A111-prop-1`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 1(b).

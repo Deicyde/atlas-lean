@@ -6,4 +6,4 @@ $n \ge N$ such that $G$ contains a cycle of length $2^n$.
 
 ## Sources
 
-- Liu–Montgomery [LiMo20], per erdosproblems.com/63, https://www.erdosproblems.com/63. Moved from `OpenConjectures/GraphTheory/ErdosProblem63`.
+- Liu–Montgomery [LiMo20], per erdosproblems.com/63, https://www.erdosproblems.com/63.

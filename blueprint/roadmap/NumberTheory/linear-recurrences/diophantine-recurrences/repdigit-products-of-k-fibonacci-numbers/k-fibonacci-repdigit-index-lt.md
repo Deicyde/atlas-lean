@@ -9,4 +9,4 @@ $n < 1.64 \cdot 10^{29} k^8 (\log k)^5$, where $\log$ is the natural logarithm.
 
 ## Sources
 
-- Safia Seffah, Salah Eddine Rihane, and Alain Togbé, *On an Equation Involving Repdigits and Products of Two k-Fibonacci Numbers*, INTEGERS 25 (2025), Article A55, Lemma 5 (`integers-2025-A55-lem-5`).
+- Safia Seffah, Salah Eddine Rihane, and Alain Togbé, *On an Equation Involving Repdigits and Products of Two k-Fibonacci Numbers*, INTEGERS 25 (2025), Article A55, Lemma 5.

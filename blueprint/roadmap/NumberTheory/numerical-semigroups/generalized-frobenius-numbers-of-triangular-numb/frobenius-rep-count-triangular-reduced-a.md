@@ -12,4 +12,4 @@ $g(a, b; x_s)$, then the number of representations of $g + y_s t_n$ by $(t_n, a,
 
 ## Sources
 
-- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Lemma 5 (`integers-2026-A63-lem-5`).
+- Kittipong Subwattanachai, *Formulas for the Generalized Frobenius Number of Triangular Numbers*, INTEGERS 26 (2026), Article A63, Lemma 5.

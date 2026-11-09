@@ -7,4 +7,4 @@ and $b = 1$.
 
 ## Sources
 
-- https://cs.uwaterloo.ca/journals/JIS/VOL25/Almeida/almeida9.tex, lines 210-219, text SHA cfc728d5cbd8ccc703d9bfda34db0857b0ba43251881d2ba3a73b45503209f75, file SHA 47d90eedae7bb76cfb0845e93958ce17dff96d5d9a65ca310917738a33a1eea6.
+- https://cs.uwaterloo.ca/journals/JIS/VOL25/Almeida/almeida9.tex, lines 210-219.

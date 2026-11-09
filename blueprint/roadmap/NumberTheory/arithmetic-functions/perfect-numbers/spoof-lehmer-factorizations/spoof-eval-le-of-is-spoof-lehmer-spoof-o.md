@@ -10,4 +10,4 @@ evaluation to be $1$.
 
 ## Sources
 
-- Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Theorem 1 (`integers-2026-A100-thm-1`).
+- Elchin Hasanalizade, *Some Remarks on a Paper of Molnar and Singh*, INTEGERS 26 (2026), Article A100, Theorem 1.

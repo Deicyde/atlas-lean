@@ -15,4 +15,4 @@ stated in the source.
 
 ## Sources
 
-- Wouter van Doorn, *On the Length of an Interval That Contains Distinct Multiples of the First n Positive Integers*, INTEGERS 26 (2026), Article A7, Theorem 1 (`integers-2026-A7-thm-1`).
+- Wouter van Doorn, *On the Length of an Interval That Contains Distinct Multiples of the First n Positive Integers*, INTEGERS 26 (2026), Article A7, Theorem 1.

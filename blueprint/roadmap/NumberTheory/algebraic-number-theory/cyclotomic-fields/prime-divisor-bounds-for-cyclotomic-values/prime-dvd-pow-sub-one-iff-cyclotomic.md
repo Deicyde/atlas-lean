@@ -7,4 +7,4 @@ $p \mid x^r - 1$ and $p \mid \Phi_p(x^{rp^{i-1}})$ for every $i \in \{1, \dots, 
 
 ## Sources
 
-- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Lemma 4 (`integers-2026-A95-lem-4`).
+- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Lemma 4.

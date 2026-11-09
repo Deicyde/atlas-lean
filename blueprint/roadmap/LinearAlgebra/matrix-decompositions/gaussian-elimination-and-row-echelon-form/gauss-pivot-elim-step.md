@@ -16,4 +16,4 @@ https://en.wikipedia.org/wiki/Gaussian_elimination).
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Numerical Analysis / Solving systems of linear inequalities / Gauss's pivot; L. N. Trefethen and D. Bau, Numerical Linear Algebra, SIAM (1997), Lectures 20-21.
+- L. N. Trefethen and D. Bau, Numerical Linear Algebra, SIAM (1997), Lectures 20-21.

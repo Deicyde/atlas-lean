@@ -22,4 +22,4 @@ rank is $2$, and $(n_1, n_2, n_3) = (6, 3, 0)$ rather than $(3, 3, 0)$.
 
 ## Sources
 
-- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 4 (`integers-2026-A82-prop-4`).
+- Krishnan Rajkumar and Shubham, *On the Distribution of Points of Valuation 1 for a Polynomial in Two Variables*, INTEGERS 26 (2026), Article A82, Proposition 4.

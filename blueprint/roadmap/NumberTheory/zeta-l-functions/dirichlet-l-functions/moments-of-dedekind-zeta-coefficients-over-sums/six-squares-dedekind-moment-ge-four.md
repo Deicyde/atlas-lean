@@ -17,4 +17,4 @@ and $Q_\ell$ for odd $\ell$ in the source.
 
 ## Sources
 
-- Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Theorem 2 (`integers-2025-A101-thm-2`).
+- Naveen K. Godara and Prashant Tiwari, *The Higher Power Moments of the Coefficients of the Dedekind Zeta Function over a Polynomial in Six Variables*, INTEGERS 25 (2025), Article A101, Theorem 2.

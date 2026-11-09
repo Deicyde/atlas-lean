@@ -17,4 +17,4 @@ $10x + 9$ both prime.
 
 ## Sources
 
-- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 4 (`integers-2026-A102-thm-4`).
+- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 4.

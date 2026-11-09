@@ -10,4 +10,4 @@ $Q_\ell(K)$, and $Q_\ell(K)$ is finite.
 
 ## Sources
 
-- Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 4 (`integers-2026-A110-thm-4`).
+- Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Theorem 4.

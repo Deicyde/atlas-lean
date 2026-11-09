@@ -8,4 +8,4 @@ $k$ positive integers $n$.
 
 ## Sources
 
-- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 2 (`integers-2025-A104-lem-2`).
+- Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 2.

@@ -13,4 +13,4 @@ onto the parameter component.
 
 ## Sources
 
-- Pascale Roesch, Hyperbolic components of polynomials with a fixed critical point of maximal order, Ann. Sci. Ecole Norm. Sup. (4) 40 (2007), arXiv:math/0612172, https://arxiv.org/abs/math/0612172. Moved from `OpenConjectures/Dynamics/CubicParameterJordanBoundary`.
+- Pascale Roesch, Hyperbolic components of polynomials with a fixed critical point of maximal order, Ann. Sci. Ecole Norm. Sup. (4) 40 (2007), arXiv:math/0612172, https://arxiv.org/abs/math/0612172.

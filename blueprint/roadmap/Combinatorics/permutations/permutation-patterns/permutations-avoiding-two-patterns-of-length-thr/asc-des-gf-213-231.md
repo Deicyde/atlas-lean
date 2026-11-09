@@ -16,4 +16,4 @@ both classes have this distribution of ascents and descents.
 
 ## Sources
 
-- Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Corollary 4 (`integers-2026-A18-cor-4`).
+- Han, *Joint Distributions of 10 Classical Statistics over Permutations Avoiding Two Patterns of Length 3*, INTEGERS 26 (2026), Article A18, Corollary 4.

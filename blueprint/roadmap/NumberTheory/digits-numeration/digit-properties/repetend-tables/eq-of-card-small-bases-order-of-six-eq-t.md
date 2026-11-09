@@ -7,4 +7,4 @@ $n = p^k t$ for some prime $p \equiv 1 \pmod 6$, some $k \ge 1$ and some $t \in 
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 33 (`integers-2025-A26-lem-33`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 33.

@@ -10,4 +10,4 @@ x^j y^{\ell-j}$, where the sum is empty (hence $0$) when $\ell < m$;
 
 ## Sources
 
-- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Proposition 1 (`integers-2024-A70-prop-1`).
+- Daniele Parisse, *On Hypersequences of an Arbitrary Sequence and Their Weighted Sums*, INTEGERS 24 (2024), Article A70, Proposition 1.

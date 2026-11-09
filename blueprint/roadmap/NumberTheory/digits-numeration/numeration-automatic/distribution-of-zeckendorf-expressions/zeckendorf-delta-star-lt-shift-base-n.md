@@ -23,4 +23,4 @@ and $\varepsilon' = \beta^3$ give the value $1$ on both sides.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 19 (`integers-2025-A25-lem-19`).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Lemma 19.

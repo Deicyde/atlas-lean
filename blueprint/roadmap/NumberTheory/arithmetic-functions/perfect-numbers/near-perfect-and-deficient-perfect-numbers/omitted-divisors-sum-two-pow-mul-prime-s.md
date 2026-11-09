@@ -7,4 +7,4 @@ $d_1 + d_2 = -p^2 + (2^{k+1} - 1) p + (2^{k+1} - 1)$, and $d_1$ and $d_2$ have o
 
 ## Sources
 
-- Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 5 (`integers-2024-A61-lem-5`).
+- Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Lemma 5.

@@ -8,4 +8,4 @@ integer.
 
 ## Sources
 
-- Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 3 (`integers-2024-A32-lem-3`).
+- Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 3.

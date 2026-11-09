@@ -7,4 +7,4 @@ not divide $\sum_{i=1}^{p-1} t_{s-i}(n)$, then $t_s(n) \ne 0$.
 
 ## Sources
 
-- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 8 (`integers-2026-A93-thm-8`).
+- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 8.

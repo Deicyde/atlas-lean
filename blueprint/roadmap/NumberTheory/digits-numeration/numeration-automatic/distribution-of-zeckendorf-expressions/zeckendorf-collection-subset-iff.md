@@ -9,4 +9,4 @@ $\hat\beta^n \in \tilde E$ for all $n \ge 2$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 1 (`integers-2025-A25-prop-1`; arXiv:2308.12872v1, Section 2.2).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Proposition 1 (arXiv:2308.12872v1, Section 2.2).

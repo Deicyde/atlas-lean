@@ -12,4 +12,4 @@ if and only if $\mathrm{eval}_H(\mu) < \mathrm{eval}_H(\nu)$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 5 (`integers-2025-A25-thm-5`; arXiv:2308.12872v1, Section 2.2, quoting Chang 2021).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 5 (arXiv:2308.12872v1, Section 2.2, quoting Chang 2021).

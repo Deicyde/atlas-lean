@@ -18,4 +18,4 @@ is well defined, and $\zeta_q^{\mathrm{OOZ}}$ is multiplicative for it.
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 16 (after Castillo Medina, Ebrahimi-Fard and Manchon) (`integers-2024-A6-thm-16`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 16 (after Castillo Medina, Ebrahimi-Fard and Manchon).

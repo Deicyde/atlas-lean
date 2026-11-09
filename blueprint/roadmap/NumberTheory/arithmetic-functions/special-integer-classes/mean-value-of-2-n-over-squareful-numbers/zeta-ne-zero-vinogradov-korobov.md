@@ -6,4 +6,4 @@ $\sigma \ge 1 - C / \bigl((\log |t|)^{2/3} (\log \log |t|)^{1/3}\bigr)$.
 
 ## Sources
 
-- Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 6 (`integers-2024-A110-lem-6`).
+- Kampamolla Venkatasubbareddy and Ayyadurai Sankaranarayanan, *On the Distribution of the Restricted Sequence of Integers 2^{ω(n)}*, INTEGERS 24 (2024), Article A110, Lemma 6.

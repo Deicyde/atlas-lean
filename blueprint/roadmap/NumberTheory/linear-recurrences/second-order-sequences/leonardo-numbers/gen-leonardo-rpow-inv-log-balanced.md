@@ -21,4 +21,4 @@ $n = 9$ on).
 
 ## Sources
 
-- Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 4 (`integers-2024-A82-thm-4`).
+- Feng-Zhen Zhao, *The Log-Behavior of Some Sequences Related to the Generalized Leonardo Numbers*, INTEGERS 24 (2024), Article A82, Theorem 4.

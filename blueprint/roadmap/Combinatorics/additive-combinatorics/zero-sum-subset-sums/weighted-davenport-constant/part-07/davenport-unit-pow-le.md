@@ -11,4 +11,4 @@ $\ell$ elements of $\mathbb{Z}_p$ has an $A$-weighted zero-sum subsequence.
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 7.5 (`integers-2024-A38-thm-7-5`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 7.5.

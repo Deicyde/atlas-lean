@@ -8,4 +8,4 @@ such that $e_{i+q} = e_i$ for all sufficiently large $i$, then $g$ divides $p$.
 
 ## Sources
 
-- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 3 (`integers-2026-A113-lem-3`).
+- Caalim and Tanaka, *Generalized Binomial Coefficients and the Monoid of Lexicographically Minimal Extensions*, INTEGERS 26 (2026), Article A113, Lemma 3.

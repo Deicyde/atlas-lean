@@ -14,4 +14,4 @@ $a^{m-1} \equiv \frac{a^{m-n} - 1}{m - n}\,n + a^{m-n} \equiv \frac{a^{m-n} - 1}
 
 ## Sources
 
-- Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Theorem 1.1 (a) (`integers-2025-A31-thm-1-1`).
+- Takashi Agoh, *A Note on Fermat's Congruence*, INTEGERS 25 (2025), Article A31, Theorem 1.1 (a).

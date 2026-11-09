@@ -6,4 +6,4 @@ Then $2^n$ has a base-$(2^x - 1)$ representation in binomial form.
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Corollary 1 (`integers-2024-A69-cor-1`).
+- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Corollary 1.

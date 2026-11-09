@@ -14,4 +14,4 @@ and $m \in \mathbb{Z}$ with $D_4(b) D_4(c) \beta\bar\beta \gamma\bar\gamma = 2^{
 
 ## Sources
 
-- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 19 (`integers-2024-A30-lem-19`).
+- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 19.

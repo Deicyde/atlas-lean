@@ -9,4 +9,4 @@ converges absolutely and its sum is $\arctan(1/n)$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 7, formula (7.3), printed p. 36 / PDF p. 46. Proves `Wanted` entry `ramanujan_part1_ch2_entry7_corollary`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I (Springer, 1985), Chapter 2, corollary to Entry 7, formula (7.3), printed p. 36 / PDF p. 46.

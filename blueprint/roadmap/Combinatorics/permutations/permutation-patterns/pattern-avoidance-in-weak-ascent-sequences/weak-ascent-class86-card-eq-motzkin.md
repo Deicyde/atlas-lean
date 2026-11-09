@@ -8,4 +8,4 @@ each equal to $M_n + M_{n-2}$.
 
 ## Sources
 
-- David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 4 (`integers-2025-A80-thm-4`).
+- David Callan and Toufik Mansour, *Ascent Sequences and Weak Ascent Sequences Avoiding a Quadruple of Length-3 Patterns*, INTEGERS 25 (2025), Article A80, Theorem 4.

@@ -13,4 +13,4 @@ $n + k \le x$.
 
 ## Sources
 
-- Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Theorem 1 (`integers-2024-A91-thm-1`), quoted there from Pollack, Pomerance, and Treviño.
+- Noah Lebowitz-Lockard and J.C. Saunders, *Runs of Integers with Constant Values of the Carmichael Function*, INTEGERS 24 (2024), Article A91, Theorem 1, quoted there from Pollack, Pomerance, and Treviño.

@@ -11,4 +11,4 @@ $\mathbb{Q}$.
 
 ## Sources
 
-- T. F. Bloom, Erdős Problems, Problem #199, https://www.erdosproblems.com/199 (status DISPROVED (LEAN)); resolution: J. E. Baumgartner, Partitioning vector spaces, J. Combin. Theory Ser. A 18 (1975), 231-233; formal proof plby/lean-proofs, src/v4.29.1/ErdosProblems/Erdos199.lean, erdosproblems.com/199: answered no by Baumgartner (construction using a Hamel basis), https://doi.org/10.1016/0097-3165(75)90011-8.
+- T. F. Bloom, Erdős Problems, Problem #199, https://www.erdosproblems.com/199 (status DISPROVED (LEAN)); resolution: J. E. Baumgartner, Partitioning vector spaces, J. Combin. Theory Ser. A 18 (1975), 231-233; formal proof plby/lean-proofs, erdosproblems.com/199: answered no by Baumgartner (construction using a Hamel basis), https://doi.org/10.1016/0097-3165(75)90011-8.

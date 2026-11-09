@@ -18,4 +18,4 @@ formula fails ($m = 1$, $B = (2)$).
 
 ## Sources
 
-- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 4 (Barrese, Loehr, Remmel and Sagan) (`integers-2024-A58-thm-4`).
+- Kenny Barrese, *Weighted File Placements on Singleton Boards*, INTEGERS 24 (2024), Article A58, Theorem 4 (Barrese, Loehr, Remmel and Sagan).

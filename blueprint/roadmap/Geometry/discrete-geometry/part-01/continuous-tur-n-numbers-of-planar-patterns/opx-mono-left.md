@@ -8,4 +8,4 @@ The paper assumes $0 < m$. This is not needed, since $\operatorname{opx}(m, P) =
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.4 (`integers-2024-A1-lem-2-4`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.4.

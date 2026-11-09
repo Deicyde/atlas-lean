@@ -12,4 +12,4 @@ $3$ of order $1$, but $(1^4)$ is not a double-perfect partition of $4$ of order 
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Corollary 3 (`integers-2025-A109-cor-3`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Corollary 3.

@@ -8,4 +8,4 @@ $|G| = n!/2$, or $n = 12$ and $|G| = 95040$, or $n = 24$ and $|G| = 244823040$.
 
 ## Sources
 
-- Folklore via CFSG; classical work of Mathieu, Jordan; modern accounts in P. Cameron, Permutation Groups (1999). Via leanprover/lean-eval@38361be, problem `five_transitive_card_classification`.
+- Folklore via CFSG; classical work of Mathieu, Jordan; modern accounts in P. Cameron, Permutation Groups (1999). Problem `five_transitive_card_classification` of the lean-eval benchmark.

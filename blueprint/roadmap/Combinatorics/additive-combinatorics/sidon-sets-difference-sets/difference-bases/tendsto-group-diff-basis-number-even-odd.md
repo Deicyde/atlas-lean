@@ -11,4 +11,4 @@ group of $n$-tuples over the field $\mathbb{F}_p$ with $p$ elements.
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Theorem 2 (`integers-2025-A77-thm-2`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Theorem 2.

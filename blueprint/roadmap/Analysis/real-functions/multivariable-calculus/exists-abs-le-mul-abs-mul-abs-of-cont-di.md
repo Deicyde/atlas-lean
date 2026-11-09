@@ -7,4 +7,4 @@ $|x| < 1$ and $|y| < 1$, that is, on the open unit ball of $\mathbb{R}^2$ for th
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Functions of several variables), `benchmark/level2/ma_proofbench_l2_01.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Functions of several variables), problem `ma_proofbench_l2_01`.

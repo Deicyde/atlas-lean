@@ -15,4 +15,4 @@ contains $1$, while $f_0$ has order $1$ and $f_1$ has order $0$.
 
 ## Sources
 
-- J. Fernández de Bobadilla and T. Pełka, `Symplectic monodromy at radius zero and equimultiplicity of μ-constant families`, Annals of Math, 200 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2024-200-1-SymplecticMonodromy.lean Via leanprover/lean-eval@38361be, problem `annals_symplectic_monodromy`.
+- J. Fernández de Bobadilla and T. Pełka, `Symplectic monodromy at radius zero and equimultiplicity of μ-constant families`, Annals of Math, 200 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_symplectic_monodromy` of the lean-eval benchmark.

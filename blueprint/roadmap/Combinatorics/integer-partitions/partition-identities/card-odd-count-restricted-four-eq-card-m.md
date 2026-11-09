@@ -7,4 +7,4 @@ $4j + 1$ and $4j + 3$ parts.
 
 ## Sources
 
-- the Andrews–Lewis identity (G. E. Andrews and R. P. Lewis, "An algebraic identity of F. H. Jackson and its implications for partitions," Discrete Math. 232 (2001), 77–83) as quoted in Michael D. Hirschhorn and James A. Sellers, "A Congruence Modulo 3 for Partitions into Distinct Non-Multiples of Four," Journal of Integer Sequences 17 (2014), Article 14.9.6, Theorem (label W-identity), lines 99–102. `https://cs.uwaterloo.ca/journals/JIS/VOL17/Sellers/sellers32.tex`
+- the Andrews–Lewis identity (G. E. Andrews and R. P. Lewis, "An algebraic identity of F. H. Jackson and its implications for partitions," Discrete Math. 232 (2001), 77–83) as quoted in Michael D. Hirschhorn and James A. Sellers, "A Congruence Modulo 3 for Partitions into Distinct Non-Multiples of Four," Journal of Integer Sequences 17 (2014), Article 14.9.6, Theorem, lines 99–102. <https://cs.uwaterloo.ca/journals/JIS/VOL17/Sellers/sellers32.tex>

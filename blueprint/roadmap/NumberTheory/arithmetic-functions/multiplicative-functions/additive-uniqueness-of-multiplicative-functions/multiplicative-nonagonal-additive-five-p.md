@@ -8,4 +8,4 @@ $\beta(x) = x/4$. If $f(n) = n$ for every natural number $n \le \beta(5^r)$, the
 
 ## Sources
 
-- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 3 (`integers-2025-A99-thm-3`).
+- Poo-Sung Park, *On the Additive Uniqueness of Generalized Nonagonal Numbers for Multiplicative Functions*, INTEGERS 25 (2025), Article A99, Theorem 3.

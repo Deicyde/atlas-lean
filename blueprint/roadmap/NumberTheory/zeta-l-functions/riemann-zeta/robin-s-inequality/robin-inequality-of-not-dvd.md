@@ -10,4 +10,4 @@ $n$; the standard form, which the paper uses in Section 2, is formalized.
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 4 (`integers-2026-A86-thm-4`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 4.

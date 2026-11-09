@@ -8,4 +8,4 @@ universal enveloping algebra of $\mathfrak{g}_2$, has exactly $14$ isotypic comp
 
 ## Sources
 
-- Classical: representation theory of the exceptional Lie algebra g₂. Via leanprover/lean-eval@38361be, problem `g2_irrep_tensor_square_decomp`.
+- Classical: representation theory of the exceptional Lie algebra g₂. Problem `g2_irrep_tensor_square_decomp` of the lean-eval benchmark.

@@ -12,4 +12,4 @@ Meissel–Mertens constant; the prime series above is the form of $\nu_2$ used i
 
 ## Sources
 
-- Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Lemma 9 (`integers-2024-A66-lem-9`).
+- Matteo Bordignon and Forrest J. Francis, *Explicit Improvements to the Burgess Bound via Pólya--Vinogradov*, INTEGERS 24 (2024), Article A66, Lemma 9.

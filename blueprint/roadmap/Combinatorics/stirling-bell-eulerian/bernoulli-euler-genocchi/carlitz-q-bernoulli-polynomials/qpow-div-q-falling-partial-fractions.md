@@ -10,4 +10,4 @@ $$\frac{q^{kx}}{[x][x-1]\cdots[x-k]} = \frac{1}{[k]!} \sum_{i=0}^{k} (-1)^{k-i} 
 
 ## Sources
 
-- Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.16 (`integers-2026-A85-prop-2-16`).
+- Bakir Farhi, *q-Analogues of Sums of Consecutive Powers of Natural Numbers and Extended Carlitz q-Bernoulli Numbers and Polynomials*, INTEGERS 26 (2026), Article A85, Proposition 2.16.

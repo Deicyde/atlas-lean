@@ -7,4 +7,4 @@ subsequence of two independent uniformly random binary strings of length $n$.
 
 ## Sources
 
-- Dančík--Paterson (1995), catalogue upper bound `0.837623`. Known literature result; its proof is not supplied here.
+- Dančík--Paterson (1995), catalogue upper bound `0.837623`.

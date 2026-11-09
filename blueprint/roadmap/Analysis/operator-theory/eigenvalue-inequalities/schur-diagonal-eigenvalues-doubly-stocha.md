@@ -10,4 +10,4 @@ $n \times n$ matrix $D$ such that $\operatorname{Re} \langle b_i, T b_i \rangle 
 
 ## Sources
 
-- I. Schur, 1923, Über eine Klasse von Mittelbildungen mit Anwendungen auf die Determinantentheorie; A. Horn, Doubly Stochastic Matrices and the Diagonal of a Rotation Matrix, Amer. J. Math. 76 (1954), 620–630, DOI 10.2307/2372705. Proves `Wanted` entry `schur_diagonal_eigenvalues_doublyStochastic`.
+- I. Schur, 1923, Über eine Klasse von Mittelbildungen mit Anwendungen auf die Determinantentheorie; A. Horn, Doubly Stochastic Matrices and the Diagonal of a Rotation Matrix, Amer. J. Math. 76 (1954), 620–630, DOI 10.2307/2372705.

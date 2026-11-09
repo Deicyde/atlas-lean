@@ -6,4 +6,4 @@ pseudoprime to the base $b$ do not form a subgroup of the unit group has natural
 
 ## Sources
 
-- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 2 (`integers-2024-A23-cor-2`).
+- Samuel S. Wagstaff, Jr., *Pseudoprimes and Fermat Numbers*, INTEGERS 24 (2024), Article A23, Corollary 2.

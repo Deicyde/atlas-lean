@@ -17,4 +17,4 @@ P^{1.0;\lambda,0}_{n,m}(x)$; the kernel is the paper's for $c > 0$.
 
 ## Sources
 
-- M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Theorem 6 (`integers-2026-A105-thm-6`).
+- M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Theorem 6.

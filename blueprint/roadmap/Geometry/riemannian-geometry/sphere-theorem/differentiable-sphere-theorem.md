@@ -9,4 +9,4 @@ $S^d \subset \mathbb{R}^{d+1}$ with its standard smooth structure.
 
 ## Sources
 
-- S. Brendle & R. Schoen, *Manifolds with 1/4-pinched curvature are space forms*, J. AMS 22 (2009). Knill, *Some fundamental theorems in mathematics*, §121. Via leanprover/lean-eval@38361be, problem `sphere_theorem_differentiable`.
+- S. Brendle & R. Schoen, *Manifolds with 1/4-pinched curvature are space forms*, J. AMS 22 (2009). Knill, *Some fundamental theorems in mathematics*, §121. Problem `sphere_theorem_differentiable` of the lean-eval benchmark.

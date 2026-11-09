@@ -8,4 +8,4 @@ $$c(n + 1, m + 1) = \sum_{k=m}^{n} (-1)^{n-k} \binom{k}{m}\, n^{k-m}\, c(n, k).$
 
 ## Sources
 
-- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 1 (TeX label `thm:cksdd`).
+- Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 1.

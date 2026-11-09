@@ -13,4 +13,4 @@ $\gcd(4, 4) = 4$.
 
 ## Sources
 
-- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Proposition 1 (`integers-2026-A77-prop-1`).
+- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Proposition 1.

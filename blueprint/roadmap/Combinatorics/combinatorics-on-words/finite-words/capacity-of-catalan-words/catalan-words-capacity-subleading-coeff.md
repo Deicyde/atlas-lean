@@ -8,4 +8,4 @@ $d_n = 2m$ if $n = 3m$, $d_n = m + 1$ if $n = 3m + 1$ and $d_n = m + 2$ if $n = 
 
 ## Sources
 
-- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Corollary 4 (`integers-2025-A5-cor-4`).
+- Toufik Mansour and Mark Shattuck, *Enumeration of Catalan and Smooth Words According to Capacity*, INTEGERS 25 (2025), Article A5, Corollary 4.

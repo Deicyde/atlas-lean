@@ -8,4 +8,4 @@ degree $1$ is nonempty if and only if $t \equiv 1 \pmod{8}$.
 
 ## Sources
 
-- Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Corollary 1 (`integers-2026-A21-cor-1`).
+- Satyabrat Sahoo and Shanta Laishram, *Generalized Fruit Diophantine Equation over Number Fields*, INTEGERS 26 (2026), Article A21, Corollary 1.

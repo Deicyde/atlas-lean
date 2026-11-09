@@ -10,4 +10,4 @@ of length $k$ in $F$ has an $A$-weighted zero-sum subsequence, is at least $3$ w
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Corollary 7.7 (`integers-2024-A38-cor-7-7`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Corollary 7.7.

@@ -11,4 +11,4 @@ with $v(n) = V(a - b, 2b - a, r')(n)$ for every $n \ge 1$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 5 (`integers-2024-A24-lem-5`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Lemma 5.

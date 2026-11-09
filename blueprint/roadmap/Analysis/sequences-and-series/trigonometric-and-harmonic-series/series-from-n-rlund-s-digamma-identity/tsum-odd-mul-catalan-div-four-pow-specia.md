@@ -11,4 +11,4 @@ $$\sum_{n=0}^{\infty} \frac{2n+1}{(n+1)(n+2)} \cdot \frac{C_n}{4^n} = 4\ln 2 - 2
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 5, first two identities (`integers-2025-A18-thm-5`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 5, first two identities.

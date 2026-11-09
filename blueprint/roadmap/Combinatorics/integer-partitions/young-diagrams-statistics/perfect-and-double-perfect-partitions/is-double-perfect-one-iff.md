@@ -8,4 +8,4 @@ $\lambda$ is $\beta$ with one more part equal to $2$.
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Proposition 2 (`integers-2025-A109-prop-2`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Proposition 2.

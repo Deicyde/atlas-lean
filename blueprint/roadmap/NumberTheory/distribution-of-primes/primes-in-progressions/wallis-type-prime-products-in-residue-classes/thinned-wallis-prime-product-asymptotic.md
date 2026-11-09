@@ -12,4 +12,4 @@ $P_S(x) / \left(K (\log x)^{-2\mu(S)/\varphi(q)}\right) \to 1$ as $x \to \infty$
 
 ## Sources
 
-- Mike Winkler, *Thinned Wallis-Type Prime Products in Residue Classes Modulo 2^m*, INTEGERS 26 (2026), Article A90, Theorem 1 (`integers-2026-A90-thm-1`).
+- Mike Winkler, *Thinned Wallis-Type Prime Products in Residue Classes Modulo 2^m*, INTEGERS 26 (2026), Article A90, Theorem 1.

@@ -12,4 +12,4 @@ $$c_1 c_2 c_3 \mid g (\varepsilon_3 c_1 c_2 + \varepsilon_2 c_1 c_3 + \varepsilo
 
 ## Sources
 
-- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Lemma 2 (`integers-2026-A102-lem-2`).
+- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Lemma 2.

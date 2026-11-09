@@ -15,4 +15,4 @@ The fraction $x / y$ is the label of the path $M^{\mathsf T}$ in the Stern–Bro
 
 ## Sources
 
-- Hongshen Chua, *Binary Trees and Sum of Two Squares*, INTEGERS 26 (2026), Article A76, Theorem 3 (`integers-2026-A76-thm-3`).
+- Hongshen Chua, *Binary Trees and Sum of Two Squares*, INTEGERS 26 (2026), Article A76, Theorem 3.

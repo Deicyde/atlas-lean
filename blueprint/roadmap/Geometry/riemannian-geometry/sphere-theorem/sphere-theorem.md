@@ -9,4 +9,4 @@ $S^d \subset \mathbb{R}^{d+1}$.
 
 ## Sources
 
-- M. Berger; W. Klingenberg; H. E. Rauch (topological sphere theorem, 1951–1961). Knill, *Some fundamental theorems in mathematics*, §121. Via leanprover/lean-eval@38361be, problem `sphere_theorem_topological`.
+- M. Berger; W. Klingenberg; H. E. Rauch (topological sphere theorem, 1951–1961). Knill, *Some fundamental theorems in mathematics*, §121. Problem `sphere_theorem_topological` of the lean-eval benchmark.

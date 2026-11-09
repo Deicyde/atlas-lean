@@ -14,4 +14,4 @@ concentration but no microscopic weighting.
 
 ## Sources
 
-- Kenta Kitamura, microscopic-weighting-counterexample, Lean formalization of the 10-point counterexample, https://github.com/KitaKen1/microscopic-weighting-counterexample/blob/eff8979/lean/MicroscopicWeightingCounterexampleFC.lean#L886-L894. Moved from `OpenConjectures/Analysis/MicroscopicWeighting`.
+- Kenta Kitamura, microscopic-weighting-counterexample, Lean formalization of the 10-point counterexample, https://github.com/KitaKen1/microscopic-weighting-counterexample/blob/eff8979/lean/MicroscopicWeightingCounterexampleFC.lean#L886-L894.

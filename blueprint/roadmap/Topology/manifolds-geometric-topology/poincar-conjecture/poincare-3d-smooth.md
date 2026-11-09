@@ -7,4 +7,4 @@ $S^3 = \{x \in \mathbb{R}^4 : \|x\| = 1\}$ with its standard smooth structure.
 
 ## Sources
 
-- G. Perelman, three arXiv preprints 2002-2003 (math/0211159, math/0303109, math/0307245). Recorded as a `proof_wanted` in Mathlib/Geometry/Manifold/PoincareConjecture.lean. In dim 3, Smooth ⇔ PL ⇔ Topological via Moise (1952) / Bing (1959). Via leanprover/lean-eval@38361be, problem `poincare_3d_smooth`.
+- G. Perelman, three arXiv preprints 2002-2003 (math/0211159, math/0303109, math/0307245). In dim 3, Smooth ⇔ PL ⇔ Topological via Moise (1952) / Bing (1959). Problem `poincare_3d_smooth` of the lean-eval benchmark.

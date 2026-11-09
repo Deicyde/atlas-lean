@@ -5,4 +5,4 @@ continuous Turán number $\mathrm{opx}(n, P)$ is a continuous function of $n$ on
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Proposition 2.7 (`integers-2024-A1-prop-2-7`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Proposition 2.7.

@@ -7,4 +7,4 @@ then $N$ is a strong Lucas pseudoprime with parameters $P, Q$.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Corollary 3.15 (`integers-2025-A107-cor-3-15`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Corollary 3.15.

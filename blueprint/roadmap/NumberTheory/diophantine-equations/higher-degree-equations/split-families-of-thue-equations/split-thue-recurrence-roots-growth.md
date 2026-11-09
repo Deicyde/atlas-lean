@@ -11,4 +11,4 @@ otherwise.
 
 ## Sources
 
-- Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Lemma 2 (`integers-2025-A35-lem-2`), including its last sentence (the same bounds with `α⁽ʲ⁾` replaced by `G j n`). `Ω` is the paper's lower bound `|f n| ≥ c * g n` for large `n`.
+- Tobias Hilgart, *On Split Families of Thue Equations with Linear Recurrence Sequences as Factors*, INTEGERS 25 (2025), Article A35, Lemma 2, including its last sentence (the same bounds with `α⁽ʲ⁾` replaced by `G j n`). `Ω` is the paper's lower bound `|f n| ≥ c * g n` for large `n`.

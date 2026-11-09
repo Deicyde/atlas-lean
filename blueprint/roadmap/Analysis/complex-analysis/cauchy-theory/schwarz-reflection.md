@@ -8,4 +8,4 @@ $g(\bar z) = \overline{g(z)}$ for every $z \in \mathbb{C}$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Schwarz_reflection_principle, statement `schwarz-refl-s1`.
+- https://en.wikipedia.org/wiki/Schwarz_reflection_principle.

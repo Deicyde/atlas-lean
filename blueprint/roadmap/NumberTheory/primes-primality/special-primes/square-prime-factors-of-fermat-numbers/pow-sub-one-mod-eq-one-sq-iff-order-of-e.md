@@ -10,4 +10,4 @@ The source assumes $a \ge 2$; both sides also hold for $a = 1$.
 
 ## Sources
 
-- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Lemma 1 (iii) (`integers-2026-A77-lem-1`).
+- Klaška, *Several Notes on Jakóbczyk's Hypothesis on Fermat Numbers*, INTEGERS 26 (2026), Article A77, Lemma 1 (iii).

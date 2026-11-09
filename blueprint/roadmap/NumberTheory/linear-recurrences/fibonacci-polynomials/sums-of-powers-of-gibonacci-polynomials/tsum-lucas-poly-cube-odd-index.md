@@ -14,4 +14,4 @@ $$\sum_{n \ge 1} \frac{x (x^4 + 4x^2 + 3) f_{6n+3} - 3x f_{2n+1}}{(\ell_{2n+1}^2
 
 ## Sources
 
-- Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.9 (`fq-2024-linzhou02172024-cor-4.9`).
+- Yinqi Lin and Bo Zhou, *Infinite Sums Involving Powers of Gibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article linzhou02172024, Corollary 4.9.

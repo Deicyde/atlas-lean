@@ -12,4 +12,4 @@ $\beta(r) = \cos(\pi r/2)\, (\pi/2)^{r-1}\, \Gamma(1 - r)\, \beta(1 - r)$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7. Proves `Wanted` entry `ramanujan_part1_ch7_entry18_bernoullidiff`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7.

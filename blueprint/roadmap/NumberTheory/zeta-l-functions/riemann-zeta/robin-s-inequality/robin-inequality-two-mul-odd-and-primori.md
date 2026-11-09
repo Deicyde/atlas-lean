@@ -9,4 +9,4 @@ $\sigma(m\#) < e^{\gamma} \, m\# \log \log (m\#)$ holds.
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Corollary 2 (`integers-2026-A86-cor-2`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Corollary 2.

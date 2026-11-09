@@ -11,4 +11,4 @@ The hypothesis that $n$ is odd is added: the statement as printed fails at $n = 
 
 ## Sources
 
-- Joshua Zelinsky, *The Sum of the Reciprocals of the Prime Divisors of an Odd Perfect or Odd Primitive Non-deficient Number*, INTEGERS 25 (2025), Article A59, Proposition 7 (`integers-2025-A59-prop-7`).
+- Joshua Zelinsky, *The Sum of the Reciprocals of the Prime Divisors of an Odd Perfect or Odd Primitive Non-deficient Number*, INTEGERS 25 (2025), Article A59, Proposition 7.

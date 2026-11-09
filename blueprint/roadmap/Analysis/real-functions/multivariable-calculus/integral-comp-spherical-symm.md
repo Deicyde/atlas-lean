@@ -13,4 +13,5 @@ change of variables.
 
 ## Sources
 
-- - Mathlib `docs/undergrad.yaml`, section "Measures and integral calculus / Integration", entry "change of variables to spherical co-ordinates" (currently missing: empty entry, no Mathlib declaration). - W. Rudin, *Real and Complex Analysis*, 3rd ed., Ch. 8, Exercise 4 (spherical coordinates in `ℝ³`). - https://en.wikipedia.org/wiki/Spherical_coordinate_system#Integration_and_differentiation_in_spherical_coordinates
+- W. Rudin, *Real and Complex Analysis*, 3rd ed., Ch. 8, Exercise 4 (spherical coordinates in `ℝ³`).
+- https://en.wikipedia.org/wiki/Spherical_coordinate_system#Integration_and_differentiation_in_spherical_coordinates

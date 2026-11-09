@@ -8,4 +8,4 @@ vanishing. If $n = 6$, then $F_1$ is $1$-vanishing but not $m$-vanishing for any
 
 ## Sources
 
-- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 3 (`integers-2026-A25-thm-3`).
+- Arie Bialostocki and Vladyslav Oles, *On Generalizing the Van Der Waerden Theorem to Some Symmetric Functions*, INTEGERS 26 (2026), Article A25, Theorem 3.

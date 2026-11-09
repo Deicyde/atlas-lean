@@ -10,7 +10,3 @@ The proof puts $T = \lceil t \rceil$, partitions the cube into $T^d$ cells with 
 representatives, bounds every floor-coordinate offset from the representative by
 $L = \lceil K \sqrt{d} \rceil$, and encodes each met integer cube injectively by its cell and an
 offset in $\{0, \dots, 2L + 2\}^n$.
-
-## Sources
-
-- v1 AnalyticClassNumber.lean, lines 114–222.

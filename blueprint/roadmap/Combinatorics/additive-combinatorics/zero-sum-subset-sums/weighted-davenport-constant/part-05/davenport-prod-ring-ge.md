@@ -12,4 +12,4 @@ three constants exist, then $D_{A \times B}(M \times N) \ge D_A(M) + D_B(N) - 1$
 
 ## Sources
 
-- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 2.1 (`integers-2024-A38-thm-2-1`).
+- Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 2.1.

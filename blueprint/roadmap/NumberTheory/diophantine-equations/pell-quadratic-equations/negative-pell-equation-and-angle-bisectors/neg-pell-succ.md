@@ -9,4 +9,4 @@ $$f_{n+1} = f_n X + d g_n Y, \qquad g_{n+1} = f_n Y + g_n X.$$
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23) (`integers-2024-A111-prop-5`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23).

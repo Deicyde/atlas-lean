@@ -11,4 +11,4 @@ $\beta^2$ and $-1$, where $\alpha$ and $\beta$ are the roots of $x^2 - x - 1$.
 
 ## Sources
 
-- Thomas Koshy, "A Graph-Theoretic Model for a Generalized Fibonacci Gem," Journal of Integer Sequences 22 (2019), Article 19.4.1, Theorem 2 (label theorem02, equation equation02), lines 149–153, https://cs.uwaterloo.ca/journals/JIS/VOL22/Koshy/koshy7.tex
+- Thomas Koshy, "A Graph-Theoretic Model for a Generalized Fibonacci Gem," Journal of Integer Sequences 22 (2019), Article 19.4.1, Theorem 2, lines 149–153, https://cs.uwaterloo.ca/journals/JIS/VOL22/Koshy/koshy7.tex

@@ -38,4 +38,4 @@ are the diagonal of the source's multi-parameter limit, so they converge to the 
 
 ## Sources
 
-- László Tóth, "On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components," Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem (unlabeled; multiplicative-function form following label Th_Wintner_gen), equation (label Euler_product), lines 314–326, https://cs.uwaterloo.ca/journals/JIS/VOL27/Toth/toth27.tex
+- László Tóth, "On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components," Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem (unlabeled; multiplicative-function form), equation, lines 314–326, https://cs.uwaterloo.ca/journals/JIS/VOL27/Toth/toth27.tex

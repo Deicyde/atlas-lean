@@ -12,4 +12,4 @@ $\sum_{n \ge 0} a_{n,K} q^n = \sum_{r \ge 0} (c - 1)^r \zeta_q^{\mathrm{OOZ}}(\{
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 20 (`integers-2024-A6-thm-20`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 20.

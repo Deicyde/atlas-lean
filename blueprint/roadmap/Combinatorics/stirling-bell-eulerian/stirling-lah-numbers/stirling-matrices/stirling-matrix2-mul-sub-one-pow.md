@@ -13,4 +13,4 @@ $$S(n)\,(V(n) - I_n)^N = E(n)\,Q^{[N]}(n).$$
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 1 (`integers-2025-A27-thm-1`).
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Theorem 1.

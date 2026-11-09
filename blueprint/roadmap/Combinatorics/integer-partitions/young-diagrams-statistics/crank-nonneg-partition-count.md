@@ -14,4 +14,4 @@ crank. The source notes this result is originally due to Uncu.
 
 ## Sources
 
-- George E. Andrews and David Newman, "The Minimal Excludant in Integer Partitions," Journal of Integer Sequences 23 (2020), Article 20.2.3, Theorem (label Theorem1, equation 1.11), lines 161–165, https://cs.uwaterloo.ca/journals/JIS/VOL23/Andrews/andrews5.tex
+- George E. Andrews and David Newman, "The Minimal Excludant in Integer Partitions," Journal of Integer Sequences 23 (2020), Article 20.2.3, Theorem (equation 1.11), lines 161–165, https://cs.uwaterloo.ca/journals/JIS/VOL23/Andrews/andrews5.tex

@@ -15,4 +15,4 @@ The hypothesis $C \ne 0$, which makes $A/C$ meaningful, is implicit in the paper
 
 ## Sources
 
-- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 5 (quoting Lasjaunias, Lemma 1) (`integers-2026-A57-lem-5`).
+- Tuangrat Chaichana, Natthaphong Chitmung, and Vichian Laohakosol, *Certain Algebraic Formal Laurent Series with Bounded Partial Quotients*, INTEGERS 26 (2026), Article A57, Lemma 5 (quoting Lasjaunias, Lemma 1).

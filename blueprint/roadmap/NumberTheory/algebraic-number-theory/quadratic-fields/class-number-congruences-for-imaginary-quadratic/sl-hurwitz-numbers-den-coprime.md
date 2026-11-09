@@ -15,4 +15,4 @@ at $0$ of the Eisenstein elliptic functions of the source.
 
 ## Sources
 
-- Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Theorem 3 (`integers-2026-A112-thm-3`), first sentence.
+- Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Theorem 3, first sentence.

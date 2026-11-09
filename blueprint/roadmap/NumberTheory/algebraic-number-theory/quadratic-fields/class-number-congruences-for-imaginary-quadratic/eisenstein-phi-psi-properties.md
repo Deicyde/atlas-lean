@@ -16,4 +16,4 @@ $\wp(\varpi_1 u) \ne 0$, then $\varphi(u)^{-1} + \varphi(-u)^{-1} = 3/\wp(\varpi
 
 ## Sources
 
-- Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 3 (`integers-2026-A112-lem-3`), parts (d)-(g).
+- Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 3, parts (d)-(g).

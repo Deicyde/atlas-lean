@@ -7,4 +7,4 @@ most $\pi(\lfloor (x/m)^{1/k} \rfloor)$, the number of primes up to $(x/m)^{1/k}
 
 ## Sources
 
-- Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Lemma 1 (quoted from [6]) (`integers-2024-A4-lem-1`).
+- Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Lemma 1 (quoted from [6]).

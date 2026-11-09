@@ -9,4 +9,4 @@ $|I_n(B_1)| = |I_n(B_2)| = |I_n(B_3)|$.
 
 ## Sources
 
-- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 5 (`integers-2024-A76-thm-5`).
+- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 5.

@@ -11,4 +11,4 @@ generalizes the source's real or complex sequences to any field of characteristi
 
 ## Sources
 
-- Necdet Batır and Anthony Sofo, "A Unified Treatment of Certain Classes of Combinatorial Identities," Journal of Integer Sequences 24 (2021), Article 21.3.2, Lemma A (label LemmaA), lines 150–156, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir/batir7.tex
+- Necdet Batır and Anthony Sofo, "A Unified Treatment of Certain Classes of Combinatorial Identities," Journal of Integer Sequences 24 (2021), Article 21.3.2, Lemma A, lines 150–156, https://cs.uwaterloo.ca/journals/JIS/VOL24/Batir/batir7.tex

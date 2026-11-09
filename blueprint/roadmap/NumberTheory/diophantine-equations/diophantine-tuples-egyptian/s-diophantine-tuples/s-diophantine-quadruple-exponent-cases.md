@@ -18,4 +18,4 @@ These are the four cases of Table 1 of the source.
 
 ## Sources
 
-- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 5 and Table 1, quoting Ziegler, Glas. Mat. 54 (2019), Proposition 5.1 (`integers-2025-A92-lem-5`).
+- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 5 and Table 1, quoting Ziegler, Glas. Mat. 54 (2019), Proposition 5.1.

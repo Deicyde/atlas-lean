@@ -16,4 +16,4 @@ need not be an equality). The case $d = 0$, where $\Gamma_k$ is trivial, is incl
 
 ## Sources
 
-- Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 4 (`integers-2024-A93-thm-4`).
+- Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 4.

@@ -9,4 +9,4 @@ $D_i = D_j$ or $D_i = -D_j$, and the sum of the elements of $C_i$ equals that of
 
 ## Sources
 
-- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 28 (`integers-2025-A26-lem-28`).
+- R. J. Booth and D. J. Horton, *Matched Column Sets in Repetend Tables*, INTEGERS 25 (2025), Article A26, Lemma 28.

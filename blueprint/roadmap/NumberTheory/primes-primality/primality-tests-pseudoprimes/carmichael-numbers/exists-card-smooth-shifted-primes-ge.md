@@ -7,4 +7,4 @@ is at least $\gamma y^\theta / \log(y^\theta)$.
 
 ## Sources
 
-- Thomas Wright, *Carmichael Numbers with a Prime Number of Prime Factors*, INTEGERS 24 (2024), Article A97, Lemma 1 (`integers-2024-A97-lem-1`), quoting Lemma 5.1 of Matomäki and Lemma 2.1 of Wright.
+- Thomas Wright, *Carmichael Numbers with a Prime Number of Prime Factors*, INTEGERS 24 (2024), Article A97, Lemma 1, quoting Lemma 5.1 of Matomäki and Lemma 2.1 of Wright.

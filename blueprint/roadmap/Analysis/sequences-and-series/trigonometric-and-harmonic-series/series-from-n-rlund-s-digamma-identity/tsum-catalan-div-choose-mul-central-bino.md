@@ -9,4 +9,4 @@ $$\sum_{n=0}^{\infty} \frac{C_n}{\binom{n+m}{n} \binom{2(n+m)}{n+m}} =
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 12, identity (28) (`integers-2025-A18-thm-12`).
+- Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 12, identity (28).

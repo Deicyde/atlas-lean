@@ -18,4 +18,4 @@ $$M(n) < \frac{n^2}{4} + \frac{n^2}{4\ell} - \frac{n^2 \log \ell}{4\ell^2} +
 
 ## Sources
 
-- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Proposition 4 (`integers-2025-A58-prop-4`).
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Proposition 4.

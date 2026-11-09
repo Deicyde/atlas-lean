@@ -8,4 +8,4 @@ equality if and only if $z_i = y_i$ for all $i$.
 
 ## Sources
 
-- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 2 (`integers-2024-A114-lem-2`), citing its reference [4].
+- Andrew Stone, *Improved Upper Bounds for Odd Perfect Numbers -- Part I*, INTEGERS 24 (2024), Article A114, Lemma 2, citing its reference [4].

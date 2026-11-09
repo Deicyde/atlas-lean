@@ -12,4 +12,4 @@ of the plane.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Pompeiu%27s_theorem (statement_id `pompeiu-s1`, proves `Wanted` entry `pompeiu`); the vertex exclusion keeps the `Wanted` statement's shape.
+- https://en.wikipedia.org/wiki/Pompeiu%27s_theorem.

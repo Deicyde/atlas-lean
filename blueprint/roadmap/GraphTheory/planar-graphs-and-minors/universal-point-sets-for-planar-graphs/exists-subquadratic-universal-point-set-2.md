@@ -12,4 +12,4 @@ reduction of Bannister, Cheng, Devanny and Eppstein.
 
 ## Sources
 
-- Taylor Gordon, Almost Linear Universal Point Sets for Planar Graphs, arXiv preprint (2026), arXiv:2609.10916, https://arxiv.org/abs/2609.10916; Michael J. Bannister, Zhanpeng Cheng, William E. Devanny and David Eppstein, Superpatterns and Universal Point Sets, arXiv:1308.0403, https://arxiv.org/abs/1308.0403. Moved from `OpenConjectures/GraphTheory/UniversalPointSetsSubquadratic`.
+- Taylor Gordon, Almost Linear Universal Point Sets for Planar Graphs, arXiv preprint (2026), arXiv:2609.10916, https://arxiv.org/abs/2609.10916; Michael J. Bannister, Zhanpeng Cheng, William E. Devanny and David Eppstein, Superpatterns and Universal Point Sets, arXiv:1308.0403, https://arxiv.org/abs/1308.0403.

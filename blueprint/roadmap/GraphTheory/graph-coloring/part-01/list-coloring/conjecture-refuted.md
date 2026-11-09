@@ -12,4 +12,4 @@ colored, so the conjectured bound $|S| \ge tn/q$ fails at $q = 3$, $t = 2$.
 
 ## Sources
 
-- Jonathan A. Noel, The Partial List Colouring Conjecture is False, arXiv preprint (2026), arXiv:2609.23291, https://arxiv.org/abs/2609.23291. Moved from `OpenConjectures/Combinatorics/PartialListColoringProportionalBound`.
+- Jonathan A. Noel, The Partial List Colouring Conjecture is False, arXiv preprint (2026), arXiv:2609.23291, https://arxiv.org/abs/2609.23291.

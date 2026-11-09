@@ -11,4 +11,4 @@ $16^0 < 2$ holds, but the only generator of $\mathbb{F}_2^\times$ is $1$, and $1
 
 ## Sources
 
-- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 9 (`integers-2026-A95-prop-9`), quoting Liao, Li and Pu, Theorem 1.3.
+- Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 9, quoting Liao, Li and Pu, Theorem 1.3.

@@ -10,4 +10,4 @@ is homeomorphic to $S^{n-1} \times [0, 1]$.
 
 ## Sources
 
-- R. C. Kirby, *Stable homeomorphisms and the annulus conjecture*, Ann. of Math. 89 (1969). Via leanprover/lean-eval@38361be, problem `annulus_theorem_high_dim`.
+- R. C. Kirby, *Stable homeomorphisms and the annulus conjecture*, Ann. of Math. 89 (1969). Problem `annulus_theorem_high_dim` of the lean-eval benchmark.

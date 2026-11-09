@@ -12,4 +12,4 @@ $(v_i, v_{i+1}) \in E$ for every $0 \le i \le m$ and $e = (v_i, v_{i+1})$ for so
 
 ## Sources
 
-- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Theorem 6 (`integers-2025-A13-thm-6`), with Definition 6 (permutiple classes and their graphs).
+- B. V. Holt, *Finding Permutiples of a Known Base and Multiplier*, INTEGERS 25 (2025), Article A13, Theorem 6, with Definition 6 (permutiple classes and their graphs).

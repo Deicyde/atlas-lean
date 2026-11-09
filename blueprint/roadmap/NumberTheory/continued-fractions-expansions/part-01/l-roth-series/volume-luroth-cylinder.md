@@ -8,4 +8,4 @@ sides vanish when some $c_j < 2$.
 
 ## Sources
 
-- Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Proposition 1, (10) (`integers-2024-A67-prop-1`).
+- Dmitry Kleinbock and Yuqing Zhang, *Metrical Properties of Functions of Consecutive Digits in Lüroth Series*, INTEGERS 24 (2024), Article A67, Proposition 1, (10).

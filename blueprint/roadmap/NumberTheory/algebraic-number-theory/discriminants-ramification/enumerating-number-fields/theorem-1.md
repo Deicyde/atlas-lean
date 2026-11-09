@@ -14,4 +14,4 @@ no other irreducible component, is isomorphic to $\operatorname{Spec} K$.
 
 ## Sources
 
-- J.-M. Couveignes, `Enumerating number fields`, Annals of Math, 192 (2) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2020-192-2-EnumeratingNumberFields.lean Via leanprover/lean-eval@38361be, problem `annals_enumerating_number_fields`.
+- J.-M. Couveignes, `Enumerating number fields`, Annals of Math, 192 (2) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_enumerating_number_fields` of the lean-eval benchmark.

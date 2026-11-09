@@ -15,4 +15,4 @@ $M(\alpha) = M R^{e'_1} M L^{e'_2} M R^{e'_3} M \cdots$ with all $e'_i \ge 0$.
 
 ## Sources
 
-- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 13 (`integers-2025-A78-prop-13`).
+- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 13.

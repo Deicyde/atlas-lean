@@ -7,4 +7,4 @@ smooth structure.
 
 ## Sources
 
-- J. Milnor, On manifolds homeomorphic to the 7-sphere, Ann. of Math. 64 (1956), 399-405. Recorded as a `proof_wanted` in Mathlib/Geometry/Manifold/PoincareConjecture.lean at rev 5450b53e5ddc. Via leanprover/lean-eval@38361be, problem `milnor_exotic_sphere_seven`.
+- J. Milnor, On manifolds homeomorphic to the 7-sphere, Ann. of Math. 64 (1956), 399-405. Problem `milnor_exotic_sphere_seven` of the lean-eval benchmark.

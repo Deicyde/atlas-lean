@@ -16,4 +16,4 @@ second congruence is $53319$, and $\mathrm{bped}_{3,3}(53319) \equiv 4 \pmod{8}$
 
 ## Sources
 
-- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 1 (`integers-2026-A118-thm-1`).
+- Adam Paksok and Nipen Saikia, *New Congruences for `[j, k]`-Overpartition Pairs with Even Parts Distinct*, INTEGERS 26 (2026), Article A118, Theorem 1.

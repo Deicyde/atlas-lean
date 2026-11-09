@@ -11,4 +11,4 @@ $\exp(\exp(\exp(3k \log k)))$ such $n$.
 
 ## Sources
 
-- Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Theorem 3 (`fq-2024-luca09162024rev2-thm-3`), quoted from Schmidt.
+- Florian Luca and Makoko Campbell Manape, *On the Euler Function of Linearly Recurrence Sequences*, Fibonacci Quarterly 62 (2024), Article 62-4/luca09162024rev2, Theorem 3, quoted from Schmidt.

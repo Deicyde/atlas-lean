@@ -10,4 +10,4 @@ This is Lemma 10 of Matsuhira, Matsusaka, and Tsuchida.
 
 ## Sources
 
-- Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Lemma 2 (`integers-2026-A23-lem-2`).
+- Yuh Kobayashi and Shin-ichiro Seki, *On the Length over Which k-Göbel Sequences Remain Integers*, INTEGERS 26 (2026), Article A23, Lemma 2.

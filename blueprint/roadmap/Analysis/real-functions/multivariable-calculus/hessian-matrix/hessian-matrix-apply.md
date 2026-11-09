@@ -8,4 +8,4 @@ differentiate first along $e_j$, then along $e_i$.
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential calculus`, entry `Hessian matrix` (unmapped); W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.
+- W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.

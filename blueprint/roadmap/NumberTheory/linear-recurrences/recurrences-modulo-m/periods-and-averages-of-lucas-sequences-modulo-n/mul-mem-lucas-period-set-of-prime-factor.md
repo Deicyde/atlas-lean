@@ -11,4 +11,4 @@ $w$ with $w_{k+2} = a w_{k+1} + b w_k$ for all $k \ge 0$.
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 2.3 (`integers-2024-A36-cor-2-3`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Corollary 2.3.

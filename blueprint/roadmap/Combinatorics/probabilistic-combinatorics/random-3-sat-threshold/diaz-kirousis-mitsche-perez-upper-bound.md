@@ -7,4 +7,4 @@ to $0$ as $n \to \infty$.
 
 ## Sources
 
-- Díaz, Kirousis, Mitsche, and Pérez-Giménez, *On the satisfiability threshold of formulas with three literals per clause* (2009), catalogue upper bound `4.490`. Known literature result; its proof is not supplied here.
+- Díaz, Kirousis, Mitsche, and Pérez-Giménez, *On the satisfiability threshold of formulas with three literals per clause* (2009), catalogue upper bound `4.490`.

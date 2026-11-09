@@ -15,4 +15,4 @@ The bound is only claimed for large $x$ since it needs $\log_4 x > 0$, that is, 
 
 ## Sources
 
-- Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Theorem 1 (`integers-2024-A65-thm-1`).
+- Anup B. Dixit and Saunak Bhattacharjee, *On the Distribution of φ(σ(n))*, INTEGERS 24 (2024), Article A65, Theorem 1.

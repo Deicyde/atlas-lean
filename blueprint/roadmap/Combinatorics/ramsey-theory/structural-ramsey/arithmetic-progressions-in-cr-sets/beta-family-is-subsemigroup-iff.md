@@ -12,4 +12,4 @@ The source's intersection $\bigcap_{q \in H} x^{-1}E$ is read as $\bigcap_{x \in
 
 ## Sources
 
-- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 5 (`integers-2025-A4-thm-5`).
+- De and Debnath, *Abundance of Arithmetic Progressions in CR-Sets*, INTEGERS 25 (2025), Article A4, Theorem 5.

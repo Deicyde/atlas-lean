@@ -8,4 +8,4 @@ morphism $0 \mapsto 01$, $1 \mapsto 0010$, and the word is OEIS A284772.
 
 ## Sources
 
-- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 4 (`integers-2024-A51-thm-4`).
+- Jeffrey Shallit, *Proof of Irvine's Conjecture via Mechanized Guessing*, INTEGERS 24 (2024), Article A51, Theorem 4.

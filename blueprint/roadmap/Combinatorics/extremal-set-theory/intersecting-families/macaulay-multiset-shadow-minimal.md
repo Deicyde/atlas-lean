@@ -15,4 +15,4 @@ inequality and induction on coordinate slices (their route from Theorem 1 to The
 
 ## Sources
 
-- Bernardo M. Ábrego, Silvia Fernández-Merchant, and Bernardo Llano, "An Inequality for Macaulay Functions," Journal of Integer Sequences 14 (2011), Theorem M, lines 215–223. Source: <https://cs.uwaterloo.ca/journals/JIS/VOL14/Abrego/abrego2.tex>. Full-source SHA-256 `0a56d8b3c040a0fb5bb57262e0605376eddfdc967da9d2fd58b37f3e4bad64ed`. Theorem-span SHA-256 `4e9a68f171676aeb3dd5c8c605faa0e677f46e831861a5ccb74de985dd6ffa87`.
+- Bernardo M. Ábrego, Silvia Fernández-Merchant, and Bernardo Llano, "An Inequality for Macaulay Functions," Journal of Integer Sequences 14 (2011), Theorem M, lines 215–223. Source: <https://cs.uwaterloo.ca/journals/JIS/VOL14/Abrego/abrego2.tex>.

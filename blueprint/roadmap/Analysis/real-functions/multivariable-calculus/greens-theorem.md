@@ -18,4 +18,4 @@ $$
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Green%27s_theorem (greens-theorem-s1).
+- https://en.wikipedia.org/wiki/Green%27s_theorem.

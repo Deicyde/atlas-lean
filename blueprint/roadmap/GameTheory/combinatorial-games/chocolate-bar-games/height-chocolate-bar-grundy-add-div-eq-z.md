@@ -8,4 +8,4 @@ $w \oplus x \oplus y = 0$, where $\oplus$ denotes nim-sum (bitwise exclusive or)
 
 ## Sources
 
-- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Theorem 8 (`integers-2025-G3-thm-8`).
+- Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Theorem 8.

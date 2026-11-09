@@ -9,4 +9,4 @@ $p_i - \varepsilon_i \mid n - \varepsilon_\sigma$ for every $i$.
 
 ## Sources
 
-- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 3 (`integers-2026-A102-thm-3`).
+- Christian Ballot, *On Absolute Lucas Pseudoprimes*, INTEGERS 26 (2026), Article A102, Theorem 3.

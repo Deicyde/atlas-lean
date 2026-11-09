@@ -7,4 +7,4 @@ $t(d) = O\left(n / (\lg \lg n)^{1-\varepsilon}\right)$ as $d \to \infty$.
 
 ## Sources
 
-- Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 11 (`integers-2024-A93-thm-11`).
+- Neal Bushaw and Glenn Hurlbert, *Thresholds for Zero-Sums with Small Cross Numbers in Abelian Groups*, INTEGERS 24 (2024), Article A93, Theorem 11.

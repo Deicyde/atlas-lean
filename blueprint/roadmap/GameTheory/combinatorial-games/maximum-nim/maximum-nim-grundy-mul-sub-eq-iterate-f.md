@@ -10,4 +10,4 @@ $$G(nk - i) = G(F^t(nk - i)) = G(n(k - t) - i).$$
 
 ## Sources
 
-- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 5(ii.2) (`integers-2024-G5-lem-5`).
+- Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 5(ii.2).

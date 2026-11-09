@@ -10,4 +10,4 @@ $G$ to $k$, whose dimension is the number of conjugacy classes.
 
 ## Sources
 
-- `undergrad.yaml`, section "Representation theory of finite groups", entry "class function over a group"; J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.7, Theorem 6 (dimension count for class functions).
+- J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.7, Theorem 6 (dimension count for class functions).

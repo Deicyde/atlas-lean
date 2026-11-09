@@ -10,4 +10,4 @@ automorphism of $(X, m)$ is ergodic for $m$.
 
 ## Sources
 
-- P.R. Halmos, 'In general a measure-preserving transformation is mixing', Ann. of Math. (2) 45 (1944) 786–792, and *Lectures on Ergodic Theory*, Chelsea, 1956. Related Baire-category genericity results in ergodic theory: A. Katok and A. Stepin (1967); J.R. Choksi (1965). Listed as §90 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Via leanprover/lean-eval@38361be, problem `halmos_generic_weak_mixing`.
+- P.R. Halmos, 'In general a measure-preserving transformation is mixing', Ann. of Math. (2) 45 (1944) 786–792, and *Lectures on Ergodic Theory*, Chelsea, 1956. Related Baire-category genericity results in ergodic theory: A. Katok and A. Stepin (1967); J.R. Choksi (1965). Listed as §90 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `halmos_generic_weak_mixing` of the lean-eval benchmark.

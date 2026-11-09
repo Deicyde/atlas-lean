@@ -11,4 +11,4 @@ $(a, b) \mapsto b$ and under the sum map $(a, b) \mapsto a + b$ all equal $U$.
 
 ## Sources
 
-- Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Proposition 3.6 (`integers-2025-A105-prop-3-6`).
+- Mauro Di Nasso and Renling Jin, *From Schur's Theorem to the Pairwise Sum Theorem*, INTEGERS 25 (2025), Article A105, Proposition 3.6.

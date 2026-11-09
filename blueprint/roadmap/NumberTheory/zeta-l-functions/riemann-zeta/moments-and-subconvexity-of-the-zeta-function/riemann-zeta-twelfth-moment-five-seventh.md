@@ -7,4 +7,4 @@ $$\int_0^T |\zeta(5/7 + it)|^{12} \, dt \le C T^{1+\varepsilon}.$$
 
 ## Sources
 
-- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 1 (`integers-2026-A70-lem-1`).
+- M. S. Datt, Ekta Soni, and A. Sankaranarayanan, *On the Asymptotic Formula for the Gcd-Sum Function*, INTEGERS 26 (2026), Article A70, Lemma 1.

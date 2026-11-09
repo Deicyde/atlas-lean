@@ -7,4 +7,4 @@ almost every $t \in [0,1]$.
 
 ## Sources
 
-- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Operator theory; General theory of linear operators), `benchmark/level1/ma_proofbench_l1_31.lean` at openbmb/ma-proofbench@31bab4c.
+- MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Operator theory; General theory of linear operators), problem `ma_proofbench_l1_31`.

@@ -21,4 +21,4 @@ The case $K = 3$ is not covered by the paper's statement and is excluded.
 
 ## Sources
 
-- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Corollary 3, Equation (15) (`integers-2024-A75-cor-3`).
+- André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Corollary 3, Equation (15).

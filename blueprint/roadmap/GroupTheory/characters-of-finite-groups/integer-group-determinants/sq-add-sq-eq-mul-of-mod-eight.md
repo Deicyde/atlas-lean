@@ -6,4 +6,4 @@ the set $P$ of positive primes congruent to $5$ modulo $8$, and $a^2 + b^2 = (8k
 
 ## Sources
 
-- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Corollary 3 (`integers-2024-A30-cor-3`).
+- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Corollary 3.

@@ -15,4 +15,4 @@ for $p = 3$, $k = 7$, $s = 2$ the sum is $400 \equiv 1 \pmod{3}$.
 
 ## Sources
 
-- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Corollary 2 (`integers-2024-A12-cor-2`).
+- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Corollary 2.

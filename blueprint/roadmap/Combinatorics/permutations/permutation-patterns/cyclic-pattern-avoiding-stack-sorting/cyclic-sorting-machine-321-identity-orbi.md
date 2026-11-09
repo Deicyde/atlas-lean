@@ -10,4 +10,4 @@ $\lceil (n-1-c)/2 \rceil = \lfloor (n-c)/2 \rfloor$.
 
 ## Sources
 
-- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Theorem 2 (`integers-2026-A15-thm-2`).
+- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Theorem 2.

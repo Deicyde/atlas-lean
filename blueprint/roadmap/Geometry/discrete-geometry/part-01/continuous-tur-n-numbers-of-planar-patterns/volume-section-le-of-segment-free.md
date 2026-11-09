@@ -8,4 +8,4 @@ one-dimensional Lebesgue measure at most $c$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.8 (`integers-2024-A1-lem-2-8`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Lemma 2.8.

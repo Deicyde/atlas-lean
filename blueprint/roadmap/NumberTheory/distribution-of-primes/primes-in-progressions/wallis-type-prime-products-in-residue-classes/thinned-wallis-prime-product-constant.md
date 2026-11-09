@@ -24,4 +24,4 @@ $\mu(S) = 0$ then $P_S(x) \to K$ as $x \to \infty$.
 
 ## Sources
 
-- Mike Winkler, *Thinned Wallis-Type Prime Products in Residue Classes Modulo 2^m*, INTEGERS 26 (2026), Article A90, Theorem 2 (`integers-2026-A90-thm-2`).
+- Mike Winkler, *Thinned Wallis-Type Prime Products in Residue Classes Modulo 2^m*, INTEGERS 26 (2026), Article A90, Theorem 2.

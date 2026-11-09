@@ -18,4 +18,4 @@ valuation of $P^2 - Q$ is $d \ge 2$, then $\rho(3^i) = 3^{\max(i + 1 - d, 1)}$ f
 
 ## Sources
 
-- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.5 (`integers-2024-A36-thm-1-5`).
+- Michal Křížek and Lawrence Somer, *Period Lengths Modulo n and Average of Terms of Second Order Linear Recurrences*, INTEGERS 24 (2024), Article A36, Theorem 1.5.

@@ -9,4 +9,4 @@ is superabundant: $\sigma(m)/m < \sigma(n_0)/n_0$ for every natural number $m$ w
 
 ## Sources
 
-- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 9 (`integers-2026-A86-thm-9`).
+- Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 9.

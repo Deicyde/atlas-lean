@@ -10,4 +10,4 @@ $x_0 \le d$ and $y_0 \le c$.
 
 ## Sources
 
-- Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Lemma 3 (`integers-2025-A51-lem-3`), with `g_ℓ(c, d)` from equation (1).
+- Yuchen Ding and Takao Komatsu, *On a Conjecture of Ramírez Alfonsín and Skałba, III*, INTEGERS 25 (2025), Article A51, Lemma 3, with `g_ℓ(c, d)` from equation (1).

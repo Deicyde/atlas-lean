@@ -6,4 +6,4 @@ $x, y, z$ with $p \nmid xyz$ and $x^p + y^p = z^p$.
 
 ## Sources
 
-- Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Theorem 2 (`integers-2024-A22-thm-2`).
+- Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Theorem 2.

@@ -6,4 +6,4 @@ $\{p, q\}$-Diophantine quintuple.
 
 ## Sources
 
-- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Theorem 2 (`integers-2025-A92-thm-2`).
+- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Theorem 2.

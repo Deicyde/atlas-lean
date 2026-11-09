@@ -12,4 +12,4 @@ between $1$ and $n$.
 
 ## Sources
 
-- Khristo N. Boyadzhiev, "Harmonic Number Identities Via Euler's Transform", Journal of Integer Sequences 12 (2009), Article 09.6.1, `https://cs.uwaterloo.ca/journals/JIS/VOL12/Boyadzhiev/boyadzhiev3.tex`, controlling statement equation (26), lines 323–331. Boyadzhiev attributes the identity to Karl Dilcher, "Some q-series identities related to divisor functions", Discrete Mathematics 145 (1995), 83–93, DOI 10.1016/0012-365X(95)00092-B (the JIS bibliography prints "divisor factors").
+- Khristo N. Boyadzhiev, "Harmonic Number Identities Via Euler's Transform", Journal of Integer Sequences 12 (2009), Article 09.6.1, <https://cs.uwaterloo.ca/journals/JIS/VOL12/Boyadzhiev/boyadzhiev3.tex>, controlling statement equation (26), lines 323–331. Boyadzhiev attributes the identity to Karl Dilcher, "Some q-series identities related to divisor functions", Discrete Mathematics 145 (1995), 83–93, DOI 10.1016/0012-365X(95)00092-B (the JIS bibliography prints "divisor factors").

@@ -6,4 +6,4 @@ $k (\log k + \log \log k - 1) \le p_k \le k (\log k + \log \log k)$.
 
 ## Sources
 
-- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Lemma 1 (`integers-2026-A116-lem-1`), quoting Rosser and Schoenfeld.
+- Hartosh Singh Bal, *Completely Additive Height Functions: Profile Laws, Matula Bounds, and Inverse Growth*, INTEGERS 26 (2026), Article A116, Lemma 1, quoting Rosser and Schoenfeld.

@@ -7,4 +7,4 @@ $H_1(X; \mathbb{Z})$ of $X$.
 
 ## Sources
 
-- W. Hurewicz (1935); see Hatcher, *Algebraic Topology*, Theorem 2A.1. Knill, *Some fundamental theorems in mathematics*, §153. Via leanprover/lean-eval@38361be, problem `hurewicz_h1_abelianization`.
+- W. Hurewicz (1935); see Hatcher, *Algebraic Topology*, Theorem 2A.1. Knill, *Some fundamental theorems in mathematics*, §153. Problem `hurewicz_h1_abelianization` of the lean-eval benchmark.

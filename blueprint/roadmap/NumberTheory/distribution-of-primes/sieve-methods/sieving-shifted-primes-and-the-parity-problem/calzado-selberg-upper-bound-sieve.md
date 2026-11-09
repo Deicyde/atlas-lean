@@ -14,4 +14,4 @@ where $\gamma$ is the Euler–Mascheroni constant.
 
 ## Sources
 
-- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 2 (`integers-2026-A117-lem-2`).
+- Angel Calzado, *A Bombieri-Vinogradov Result to Address the Parity Problem*, INTEGERS 26 (2026), Article A117, Lemma 2.

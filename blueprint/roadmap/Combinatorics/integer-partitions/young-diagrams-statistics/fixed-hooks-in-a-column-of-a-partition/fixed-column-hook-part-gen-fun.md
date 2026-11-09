@@ -31,4 +31,4 @@ whose lower limit $k - h - m + 1$ is a positive row index.
 
 ## Sources
 
-- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 7 (`integers-2025-A28-thm-7`).
+- Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 7.

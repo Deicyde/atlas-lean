@@ -16,4 +16,4 @@ by preimages and adding kernel vectors, as in Wikipedia, "Jordan normal form", s
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, Linear algebra / Structure theory of endomorphisms / Jordan normal form; R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 3.4.1.
+- R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 3.4.1.

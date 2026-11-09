@@ -18,4 +18,4 @@ $s = 1$, $t = 2$ the left side is $x/(1-x)$ and the right side is $0$.
 
 ## Sources
 
-- Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Theorem 4.5 (`fq-2024-florez11012023-thm-4.5`).
+- Maribel Diaz Noguera, Rigoberto Flórez, José L. Ramírez, and Martha Romero Rojas, *Catalan Identities for Generalized Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article florez11012023, Theorem 4.5.

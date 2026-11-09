@@ -17,4 +17,4 @@ The divisions by $2$ are exact.
 
 ## Sources
 
-- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Theorem 14, eq. (119) and the unnumbered congruence after it (`integers-2024-A101-thm-14`).
+- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Theorem 14, eq. (119) and the unnumbered congruence after it.

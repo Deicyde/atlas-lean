@@ -11,4 +11,4 @@ with parameters $P, Q$ if and only if $N \equiv (D/N) \pmod{2^{k+1}}$.
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.9 (`integers-2025-A107-thm-6-9`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.9.

@@ -12,4 +12,4 @@ $p_n > n\left(L - 1 - \frac{1}{L} - \frac{3.024334}{L^2} - \frac{12.975666}{L^3}
 
 ## Sources
 
-- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Corollary 1 (`integers-2025-A58-cor-1`).
+- Qianxi Zhang and Xinhua Xiong, *New Refinements of Mandl's Inequality*, INTEGERS 25 (2025), Article A58, Corollary 1.

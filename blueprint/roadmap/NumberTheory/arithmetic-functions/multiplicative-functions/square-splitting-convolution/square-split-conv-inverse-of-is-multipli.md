@@ -16,4 +16,4 @@ Multiplicativity includes $f(1) = 1$, so the source's hypothesis $f(1) \ne 0$ ho
 
 ## Sources
 
-- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 5 (`integers-2026-A56-thm-5`).
+- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 5.

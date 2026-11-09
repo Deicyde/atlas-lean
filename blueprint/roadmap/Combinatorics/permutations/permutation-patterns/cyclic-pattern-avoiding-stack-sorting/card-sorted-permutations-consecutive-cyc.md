@@ -8,4 +8,4 @@ $|\mathrm{Sort}_n(s^{[321]})| = 2^{n-2}$.
 
 ## Sources
 
-- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Theorem 4 (`integers-2026-A15-thm-4`).
+- Alex Zhan and Stella Bie, *Cyclic-Pattern-Avoiding Stacks*, INTEGERS 26 (2026), Article A15, Theorem 4.

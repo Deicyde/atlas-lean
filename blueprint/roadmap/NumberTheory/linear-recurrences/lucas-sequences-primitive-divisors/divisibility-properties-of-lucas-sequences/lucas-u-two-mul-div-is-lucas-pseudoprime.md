@@ -9,4 +9,4 @@ is odd, or $P$ is even and $Q = -1$, then $|N_2|$ is a Lucas pseudoprime for $(P
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.6 (`integers-2025-A107-thm-6-6`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 6.6.

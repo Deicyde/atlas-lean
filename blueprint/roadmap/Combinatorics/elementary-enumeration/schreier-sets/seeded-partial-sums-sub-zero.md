@@ -9,4 +9,4 @@ are read as elements of $R$.
 
 ## Sources
 
-- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Lemma 3.2 (`fq-2024-chu08302024rev-lem-3.2`).
+- Hùng Việt Chu and Zachary Louis Vasseur, *Weighted Schreier-type Sets and the Fibonacci Sequence*, The Fibonacci Quarterly 62 (2024), no. 4, Lemma 3.2.

@@ -17,4 +17,4 @@ The divisions by $3$ are exact.
 
 ## Sources
 
-- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Theorem 13, eq. (110) and the unnumbered congruence after it (`integers-2024-A101-thm-13`).
+- Pujashree Buragohain and Nipen Saikia, *Some New Congruences for l-Regular Cubic Partitions with Odd Parts Overlined*, INTEGERS 24 (2024), Article A101, Theorem 13, eq. (110) and the unnumbered congruence after it.

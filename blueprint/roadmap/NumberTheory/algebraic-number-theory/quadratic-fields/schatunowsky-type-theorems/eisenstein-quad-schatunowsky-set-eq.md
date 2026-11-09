@@ -22,4 +22,4 @@ $N(\alpha) \le N(182\pi)$, with $\alpha$ an associate of $182\pi$ in case of equ
 
 ## Sources
 
-- Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Corollary 2 (`integers-2026-A110-cor-2`).
+- Hirofumi Nakai, Ken Sasaki and Konoka Yoshida, *Schatunowsky-type Theorems for Imaginary Quadratic Integer Rings of Class Number One*, INTEGERS 26 (2026), Article A110, Corollary 2.

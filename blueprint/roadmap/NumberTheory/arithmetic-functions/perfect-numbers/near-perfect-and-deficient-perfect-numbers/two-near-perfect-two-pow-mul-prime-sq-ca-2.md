@@ -7,4 +7,4 @@ $2$-near perfect with omitted divisors $1$ and $2^b p^2$), then $n = 36$ and $2^
 
 ## Sources
 
-- Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Proposition 3 (`integers-2024-A61-prop-3`).
+- Vedant Aryan, Dev Madhavani, Savan Parikh, Ingrid Slattery and Joshua Zelinsky, *On 2-Near Perfect Numbers*, INTEGERS 24 (2024), Article A61, Proposition 3.

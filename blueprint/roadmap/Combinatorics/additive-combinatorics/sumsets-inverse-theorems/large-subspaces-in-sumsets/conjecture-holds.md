@@ -18,4 +18,4 @@ Theorem 3).
 
 ## Sources
 
-- Zander Kelley and Raghu Meka, Strong bounds for 3-progressions, FOCS 2023, arXiv:2302.05537, https://arxiv.org/abs/2302.05537. Moved from `OpenConjectures/Combinatorics/AlmostSubspaceInSumset`.
+- Zander Kelley and Raghu Meka, Strong bounds for 3-progressions, FOCS 2023, arXiv:2302.05537, https://arxiv.org/abs/2302.05537.

@@ -6,4 +6,4 @@ $g_n$ be the integers with $(X + Y\sqrt 2)^n = f_n + g_n \sqrt 2$. Then $f_1 = g
 
 ## Sources
 
-- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23) (`integers-2024-A111-prop-5`).
+- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Proposition 5, (23).

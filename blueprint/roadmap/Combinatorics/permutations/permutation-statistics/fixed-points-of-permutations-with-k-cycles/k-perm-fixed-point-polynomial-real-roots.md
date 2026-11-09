@@ -7,4 +7,4 @@ $P(x) = \sum_{j=0}^{k} a(n, k, j) x^j$ has only real zeros.
 
 ## Sources
 
-- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Theorem 4 (`integers-2024-A54-thm-4`).
+- Moussa Benoumhani, *The Distribution of the Number of Fixed Points in k-Permutations*, INTEGERS 24 (2024), Article A54, Theorem 4.

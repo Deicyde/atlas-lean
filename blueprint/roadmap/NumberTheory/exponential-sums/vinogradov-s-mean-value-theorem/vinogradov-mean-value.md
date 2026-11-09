@@ -9,4 +9,4 @@ $x_1^j + \dots + x_s^j = y_1^j + \dots + y_s^j$ for every natural number $j \le 
 
 ## Sources
 
-- J. Bourgain, C. Demeter, and L. Guth, `Proof of the main conjecture in Vinogradov's Mean Value Theorem for degrees higher than three`, Ann. of Math. 184 (2) 2016, 633–682; T. D. Wooley, `Nested efficient congruencing and relatives of Vinogradov's mean value theorem`, Proc. London Math. Soc. 118 (4) 2019, 942–1016. Via leanprover/lean-eval@38361be, problem `vinogradov_mean_value`.
+- J. Bourgain, C. Demeter, and L. Guth, `Proof of the main conjecture in Vinogradov's Mean Value Theorem for degrees higher than three`, Ann. of Math. 184 (2) 2016, 633–682; T. D. Wooley, `Nested efficient congruencing and relatives of Vinogradov's mean value theorem`, Proc. London Math. Soc. 118 (4) 2019, 942–1016. Problem `vinogradov_mean_value` of the lean-eval benchmark.

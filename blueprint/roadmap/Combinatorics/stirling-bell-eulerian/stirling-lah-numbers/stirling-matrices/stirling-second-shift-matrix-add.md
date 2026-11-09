@@ -9,4 +9,4 @@ $S^{[m_1 + m_2]}(n) = S^{[m_1]}(n)\, s(n)\, S^{[m_2]}(n)$.
 
 ## Sources
 
-- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Corollary 3 (`integers-2025-A27-cor-3`).
+- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Navid Salehy and Nima Salehy, *On Matrices Whose Entries Are Stirling Numbers of the Second Kind (I)*, INTEGERS 25 (2025), Article A27, Corollary 3.

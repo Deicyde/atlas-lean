@@ -13,4 +13,4 @@ spanned by subsets of $P$.
 
 ## Sources
 
-- J. D. Farley, A question of Björner from 1981: infinite geometric lattices of finite rank have matchings, Australasian Journal of Combinatorics 82 (2022) 228-235, arXiv:2004.11972, https://arxiv.org/abs/2004.11972. Moved from `OpenConjectures/Geometry/InfiniteTransversalsSpannedHyperplanes`.
+- J. D. Farley, A question of Björner from 1981: infinite geometric lattices of finite rank have matchings, Australasian Journal of Combinatorics 82 (2022) 228-235, arXiv:2004.11972, https://arxiv.org/abs/2004.11972.

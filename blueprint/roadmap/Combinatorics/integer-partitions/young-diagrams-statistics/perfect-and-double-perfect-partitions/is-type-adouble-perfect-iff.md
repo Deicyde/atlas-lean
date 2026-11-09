@@ -15,4 +15,4 @@ part (ia), and it matches the set $W(2)$ of Proposition 2.
 
 ## Sources
 
-- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 2, display (13) (`integers-2025-A109-thm-2`).
+- Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 2, display (13).

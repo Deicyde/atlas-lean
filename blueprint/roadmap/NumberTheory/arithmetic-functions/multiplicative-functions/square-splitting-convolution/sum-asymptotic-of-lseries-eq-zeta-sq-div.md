@@ -20,4 +20,4 @@ The hypothesis $G(1) \ne 0$ is added so that the quotient $G'(1)/G(1)$ is meanin
 
 ## Sources
 
-- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Lemma 1 (`integers-2026-A56-lem-1`).
+- Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Lemma 1.

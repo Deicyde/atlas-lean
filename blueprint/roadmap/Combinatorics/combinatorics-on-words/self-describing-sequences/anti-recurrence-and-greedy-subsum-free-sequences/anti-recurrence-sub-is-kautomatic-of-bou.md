@@ -12,4 +12,4 @@ paper's definition by a finite automaton with output.
 
 ## Sources
 
-- Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Theorem 4 (`integers-2026-A24-thm-4`).
+- Robbert Fokkink and Gandhar Joshi, *Anti-Recurrence Sequences*, INTEGERS 26 (2026), Article A24, Theorem 4.

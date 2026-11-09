@@ -11,4 +11,4 @@ approximability $\lambda_1(\xi)$ equals $\limsup_{k \to \infty} c_k$, taken in t
 
 ## Sources
 
-- Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 4 (`integers-2025-A47-prop-4`), parts (a) and (c), quoted from Cusick and Flahive, Appendix 1.
+- Brandon Dong, Soren Dupont, Evan M. O'Dorney and W. Theo Waitkus, *Raney Transducers and the Lowest Point of the n-Lagrange Spectrum*, INTEGERS 25 (2025), Article A47, Proposition 4, parts (a) and (c), quoted from Cusick and Flahive, Appendix 1.

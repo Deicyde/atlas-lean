@@ -13,4 +13,4 @@ the inner sums count multiplicities.
 
 ## Sources
 
-- P. Deligne, 'La conjecture de Weil. I', Publications Mathématiques de l'Institut des Hautes Études Scientifiques, Volume 43, pages 273–307 (1974), https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf. See also references in the Lean file. Via leanprover/lean-eval@38361be, problem `weil_conjectures`.
+- P. Deligne, 'La conjecture de Weil. I', Publications Mathématiques de l'Institut des Hautes Études Scientifiques, Volume 43, pages 273–307 (1974), https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf. See also references in the Lean file. Problem `weil_conjectures` of the lean-eval benchmark.

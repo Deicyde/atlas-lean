@@ -15,4 +15,4 @@ the constant in front of $x / \sqrt{\ln x}$ is $0.48651\ldots$.
 
 ## Sources
 
-- Jones and Zvonkin, *A Number-Theoretic Problem Concerning Pseudo-Real Riemann Surfaces*, INTEGERS 25 (2025), Article A75, Theorem 2 (`integers-2025-A75-thm-2`).
+- Jones and Zvonkin, *A Number-Theoretic Problem Concerning Pseudo-Real Riemann Surfaces*, INTEGERS 25 (2025), Article A75, Theorem 2.

@@ -12,4 +12,4 @@ $\sum_{j=1}^k j U_j^p = U_n^q$.
 
 ## Sources
 
-- Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 1.1 (`fq-2024-earplynch07182024-thm-1.1`) and Proposition 3.1 (`fq-2024-earplynch07182024-prop-3.1`).
+- Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 1.1 and Proposition 3.1.

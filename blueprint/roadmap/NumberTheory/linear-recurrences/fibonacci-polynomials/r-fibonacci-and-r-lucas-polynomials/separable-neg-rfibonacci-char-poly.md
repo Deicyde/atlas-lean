@@ -13,4 +13,4 @@ that is, $(r+1)^{r+1} x^r y = r^r$, which is the branch-free condition used here
 
 ## Sources
 
-- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Lemma 1 (`integers-2025-A38-lem-1`).
+- Abbad and Belbachir, *The r-Fibonacci Polynomial and Its Companion Sequences Linked with Some Classical Sequences*, INTEGERS 25 (2025), Article A38, Lemma 1.

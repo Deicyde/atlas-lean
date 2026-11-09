@@ -13,4 +13,4 @@ $$
 ## Sources
 
 - the constants are read from the paper text (arXiv:2601.16972, same paper, Lemma 3), since the record's are garbled; they agree with the record's `√2e > 1.21` remark (`2/√e ≈ 1.213`).
-- Wouter van Doorn, *On the Length of an Interval That Contains Distinct Multiples of the First n Positive Integers*, INTEGERS 26 (2026), Article A7, Lemma 3 (`integers-2026-A7-lem-3`), quoting Erdős and Pomerance.
+- Wouter van Doorn, *On the Length of an Interval That Contains Distinct Multiples of the First n Positive Integers*, INTEGERS 26 (2026), Article A7, Lemma 3, quoting Erdős and Pomerance.

@@ -8,4 +8,4 @@ $a_i \mid a_{i+1}$ whenever $i + 1 < n$.
 
 ## Sources
 
-- H. J. S. Smith, Phil. Trans. R. Soc. Lond. 151 (1861), 293-326, DOI 10.1098/RSTL.1861.0016. It is `Submodule.exists_smith_normal_form_dvd_chain`, kept under the source's name. Proves `Wanted` entry `smithNormalForm`.
+- H. J. S. Smith, Phil. Trans. R. Soc. Lond. 151 (1861), 293-326, DOI 10.1098/RSTL.1861.0016. It is `Submodule.exists_smith_normal_form_dvd_chain`, kept under the source's name.

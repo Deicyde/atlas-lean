@@ -8,4 +8,4 @@ every uncountable cardinal $\mu$.
 
 ## Sources
 
-- M. Ramsey, *Morley's Categoricity Theorem* (UChicago VIGRE REU 2010), Corollary 7.3. https://www.math.uchicago.edu/~may/VIGRE/VIGRE2010/REUPapers/RamseyN.pdf Via leanprover/lean-eval@38361be, problem `morley_categoricity_theorem`.
+- M. Ramsey, *Morley's Categoricity Theorem* (UChicago VIGRE REU 2010), Corollary 7.3. https://www.math.uchicago.edu/~may/VIGRE/VIGRE2010/REUPapers/RamseyN.pdf. Problem `morley_categoricity_theorem` of the lean-eval benchmark.

@@ -8,4 +8,4 @@ The source states $v \in \mathbb{N}$; the reciprocal $1/v$ forces $v \ge 1$.
 
 ## Sources
 
-- Hirotaka Kobayashi, Kota Saito, and Wataru Takeda, "Transcendence of Values of the Iterated Exponential Function at Algebraic Points," Journal of Integer Sequences 26 (2023), Article 23.3.3, Lemma (label x^y=y^x), lines 579–589, https://cs.uwaterloo.ca/journals/JIS/VOL26/Takeda/tak6.tex quoting Hurwitz. Proves `Wanted` entry `rational_parametrization_pow_swap`.
+- Hirotaka Kobayashi, Kota Saito, and Wataru Takeda, "Transcendence of Values of the Iterated Exponential Function at Algebraic Points," Journal of Integer Sequences 26 (2023), Article 23.3.3, Lemma, lines 579–589, https://cs.uwaterloo.ca/journals/JIS/VOL26/Takeda/tak6.tex quoting Hurwitz.

@@ -11,4 +11,4 @@ This is the forward implication of Sutcliffe's theorem; the converse is not incl
 
 ## Sources
 
-- L. H. Kendrick, *Young Graphs: 1089 et al.*, Journal of Integer Sequences 18 (2015), Article 15.9.7, Remark `rem:truncate` (quoting Sutcliffe's Theorem 3), lines 203–205, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Kendrick/ken1.tex>. Proves `Wanted` entry `sutcliffe_two_to_three_digit_reverse_multiple`.
+- L. H. Kendrick, *Young Graphs: 1089 et al.*, Journal of Integer Sequences 18 (2015), Article 15.9.7, Remark `rem:truncate` (quoting Sutcliffe's Theorem 3), lines 203–205, <https://cs.uwaterloo.ca/journals/JIS/VOL18/Kendrick/ken1.tex>.

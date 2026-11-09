@@ -9,4 +9,4 @@ $\alpha_g(n) \le (1 + o(1))\sqrt{gn}$.
 
 ## Sources
 
-- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Proposition 1 (`integers-2025-A77-prop-1`).
+- Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Proposition 1.

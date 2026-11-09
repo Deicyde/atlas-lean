@@ -5,4 +5,4 @@ $\mathbb{R}^3$ that are not ambient-isotopic.
 
 ## Sources
 
-- Classical; see https://en.wikipedia.org/wiki/Knot_invariant. Via leanprover/lean-eval@38361be, problem `exists_nonisotopic_knots`.
+- Classical; see https://en.wikipedia.org/wiki/Knot_invariant. Problem `exists_nonisotopic_knots` of the lean-eval benchmark.

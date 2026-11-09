@@ -10,4 +10,4 @@ $q_{l-1}$ is odd, or $q_{l-1}$ and $r_{l-2}$ are even and $q_{l-2}$ is odd.
 
 ## Sources
 
-- Jun Ho Lee, *Classification for Existence of the Continued Fraction Expansions of √D and (1 + √D)/2*, INTEGERS 24 (2024), Article A50, Proposition 1 (`integers-2024-A50-prop-1`).
+- Jun Ho Lee, *Classification for Existence of the Continued Fraction Expansions of √D and (1 + √D)/2*, INTEGERS 24 (2024), Article A50, Proposition 1.

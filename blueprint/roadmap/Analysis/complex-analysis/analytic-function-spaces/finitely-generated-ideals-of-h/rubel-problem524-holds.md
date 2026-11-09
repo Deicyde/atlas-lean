@@ -11,4 +11,4 @@ Update 5.24.
 
 ## Sources
 
-- R. Mortini, Noncoherent uniform algebras in C^n (2016), arXiv:1606.05568, https://arxiv.org/abs/1606.05568. Moved from `OpenConjectures/Analysis/RubelHInfinityCoherence`.
+- R. Mortini, Noncoherent uniform algebras in C^n (2016), arXiv:1606.05568, https://arxiv.org/abs/1606.05568.

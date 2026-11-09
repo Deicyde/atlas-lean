@@ -12,4 +12,4 @@ the affirmative.
 
 ## Sources
 
-- T. F. Bloom, Erdős Problem #625, erdosproblems.com (live page, LaTeX source and forum threads read 2026-10-22), https://www.erdosproblems.com/625; S. Petkov (with GPT-5.6), proof for Erdős Problem #625, https://github.com/SamPetkov/Erdos/blob/main/625/arxiv_625.pdf. Moved from `OpenConjectures/Combinatorics/ErdosProblem625`.
+- T. F. Bloom, Erdős Problem #625, erdosproblems.com (live page, LaTeX source and forum threads read 2026-10-22), https://www.erdosproblems.com/625; S. Petkov (with GPT-5.6), proof for Erdős Problem #625, https://github.com/SamPetkov/Erdos/blob/main/625/arxiv_625.pdf.

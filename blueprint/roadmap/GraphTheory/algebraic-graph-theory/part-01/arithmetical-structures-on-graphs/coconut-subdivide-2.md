@@ -7,4 +7,4 @@ just before $v_k$) gives an arithmetical structure on $CT(p + 1, s)$.
 
 ## Sources
 
-- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 3.11 (`integers-2025-A82-prop-3`).
+- Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 3.11.

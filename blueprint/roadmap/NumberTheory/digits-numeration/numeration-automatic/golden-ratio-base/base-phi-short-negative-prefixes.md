@@ -24,4 +24,4 @@ $1010 \cdot 0001$, and contains $12$, whose expansion is $100000 \cdot 101001$.
 
 ## Sources
 
-- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Proposition 3 (`integers-2024-A24-prop-3`).
+- F. Michel Dekking, *The Structure of Base Phi Expansions*, INTEGERS 24 (2024), Article A24, Proposition 3.

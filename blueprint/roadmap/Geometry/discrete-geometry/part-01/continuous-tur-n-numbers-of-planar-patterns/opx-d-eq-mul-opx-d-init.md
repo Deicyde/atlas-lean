@@ -7,4 +7,4 @@ $n$, $\mathrm{opx}(n, P, d + 1) = n \cdot \mathrm{opx}(n, \mathrm{Pr}(P), d)$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Proposition 5.6 (`integers-2024-A1-prop-5-6`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Proposition 5.6.

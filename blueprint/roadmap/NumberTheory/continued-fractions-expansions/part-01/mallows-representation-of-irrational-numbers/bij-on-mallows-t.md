@@ -10,4 +10,4 @@ $x \in I$ with $T(x) = M(\alpha)$.
 
 ## Sources
 
-- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 8 (`integers-2025-A78-prop-8`).
+- Takanori Hida, *The Mallows Representation of the Irrational Numbers*, INTEGERS 25 (2025), Article A78, Proposition 8.

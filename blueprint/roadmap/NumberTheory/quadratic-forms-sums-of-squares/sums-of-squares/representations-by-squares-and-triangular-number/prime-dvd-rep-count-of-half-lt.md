@@ -8,4 +8,4 @@ $p/2 < \ell < p$. Then $\ell$ divides both $r_\ell(p)$ and $t_\ell(p)$.
 
 ## Sources
 
-- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 11 (`integers-2026-A93-thm-11`).
+- Alegri and Christopher, *On Formulas, Recurrences, and Congruences for Representations of Integers as Sums of Squares and Triangular Numbers*, INTEGERS 26 (2026), Article A93, Theorem 11.

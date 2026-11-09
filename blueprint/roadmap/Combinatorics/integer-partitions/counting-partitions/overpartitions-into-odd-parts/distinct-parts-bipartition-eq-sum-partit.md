@@ -9,4 +9,4 @@ The source states this for $n > 0$; it also holds at $n = 0$, where both sides e
 
 ## Sources
 
-- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 12 (`integers-2026-A60-thm-12`).
+- Deepthi G. and S. Chandankumar, *Linear Relations for Overpartitions into Odd Parts*, INTEGERS 26 (2026), Article A60, Theorem 12.

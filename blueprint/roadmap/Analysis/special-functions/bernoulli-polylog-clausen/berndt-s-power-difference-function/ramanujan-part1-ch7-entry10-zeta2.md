@@ -15,4 +15,4 @@ $0^r = 0$ for $r \ne 0$.
 
 ## Sources
 
-- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 10. Proves `Wanted` entry `ramanujan_part1_ch7_entry10_zeta2`.
+- Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7, Entry 10.

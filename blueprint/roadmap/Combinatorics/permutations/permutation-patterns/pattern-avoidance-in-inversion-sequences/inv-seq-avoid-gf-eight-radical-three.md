@@ -16,4 +16,4 @@ with the denominator cleared, $s$ standing for $\sqrt{1 - 2x - 3x^2}$.
 
 ## Sources
 
-- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 18 (`integers-2024-A76-thm-18`).
+- Toufik Mansour, *Inversion Sequences Avoiding a Set of Length-3 Patterns*, INTEGERS 24 (2024), Article A76, Theorem 18.

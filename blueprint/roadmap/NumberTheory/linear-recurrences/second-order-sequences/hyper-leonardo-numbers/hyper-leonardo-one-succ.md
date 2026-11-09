@@ -11,4 +11,4 @@ $Le^{(1)}_2 = 5$ but $Le_1 + Le_2 = 4$.
 
 ## Sources
 
-- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Corollary 1, Equation (5) (`integers-2026-A48-cor-1`).
+- Elen Viviani Pereira Spreafico and Paula Maria Machado Cruz Catarino, *A Note on Hyper-Leonardo Numbers*, INTEGERS 26 (2026), Article A48, Corollary 1, Equation (5).

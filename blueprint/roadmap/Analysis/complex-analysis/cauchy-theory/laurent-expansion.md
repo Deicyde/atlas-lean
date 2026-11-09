@@ -9,4 +9,4 @@ $0^n = 0$ for $n < 0$, which matters only at $z = c$ when $r < 0$.
 
 ## Sources
 
-- Mathlib `docs/undergrad.yaml`, section "Functions on one complex variable", entry "Laurent series"; L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 5, §1.3 (the Laurent series).
+- L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 5, §1.3 (the Laurent series).

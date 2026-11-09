@@ -12,4 +12,4 @@ multiplicative character.
 
 ## Sources
 
-- `undergrad.yaml`, section "Representation theory of finite groups", entry "representations of abelian groups"; J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.8 (degree-one characters of abelian groups).
+- J.-P. Serre, Linear Representations of Finite Groups, GTM 42, §2.8 (degree-one characters of abelian groups).

@@ -8,4 +8,4 @@ where $\operatorname{adj}$ denotes the adjugate matrix and $A'(t)$ the derivativ
 
 ## Sources
 
-- Mathlib repository, `docs/undergrad.yaml` (the undergraduate curriculum list), section "Multivariable calculus" / "differentials"; R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge Univ. Press, 2013, §0.8.10; https://en.wikipedia.org/wiki/Jacobi%27s_formula
+- R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge Univ. Press, 2013, §0.8.10; https://en.wikipedia.org/wiki/Jacobi%27s_formula

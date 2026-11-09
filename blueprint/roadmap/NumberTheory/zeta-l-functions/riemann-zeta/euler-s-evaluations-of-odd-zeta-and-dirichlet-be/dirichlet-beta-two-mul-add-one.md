@@ -14,4 +14,4 @@ converges only conditionally, and its sum is the value of the $L$-function there
 
 ## Sources
 
-- Jan W. H. Swanepoel, *A Short Simple Probabilistic Proof of a Well Known Identity and the Derivation of Related New Identities Involving the Bernoulli Numbers and the Euler Numbers*, INTEGERS 25 (2025), Article A50, Proposition 3, Equation (12) (`integers-2025-A50-prop-3`), citing its references [3], [6].
+- Jan W. H. Swanepoel, *A Short Simple Probabilistic Proof of a Well Known Identity and the Derivation of Related New Identities Involving the Bernoulli Numbers and the Euler Numbers*, INTEGERS 25 (2025), Article A50, Proposition 3, Equation (12), citing its references [3], [6].

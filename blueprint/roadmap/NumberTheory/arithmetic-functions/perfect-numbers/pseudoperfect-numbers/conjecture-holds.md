@@ -10,4 +10,4 @@ This is Erdős Problem 469, resolved true.
 
 ## Sources
 
-- plby/lean-proofs, Erdos469.lean, commit 68da20b96673899166e94638f5a7fffeb7231d35 (2026), https://github.com/plby/lean-proofs/blob/68da20b96673899166e94638f5a7fffeb7231d35/src/latest/ErdosProblems/Erdos469.lean. Moved from `OpenConjectures/NumberTheory/DivisorSumReciprocalConvergence`.
+- plby/lean-proofs (2026), https://github.com/plby/lean-proofs/blob/68da20b96673899166e94638f5a7fffeb7231d35/src/latest/ErdosProblems/Erdos469.lean.

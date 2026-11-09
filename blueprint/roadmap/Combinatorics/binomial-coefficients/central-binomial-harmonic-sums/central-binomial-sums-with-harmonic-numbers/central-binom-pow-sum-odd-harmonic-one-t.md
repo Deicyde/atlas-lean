@@ -17,4 +17,4 @@ $$S_3^O(n) = (2n+1)\, c_n \frac{n}{105} \Big((15n^2 + 18n + 2) O_{n+1} -
 
 ## Sources
 
-- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Corollary 1 (`integers-2026-A109-cor-1`).
+- Kunle Adegoke and Robert Frontczak, *Three Classes of Combinatorial Sums Involving Central Binomial Coefficients and Harmonic Numbers*, INTEGERS 26 (2026), Article A109, Corollary 1.

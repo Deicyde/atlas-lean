@@ -8,4 +8,4 @@ $\frac{a_n}{b_n} \to L$ as $n \to \infty$.
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Stolz%E2%80%93Ces%C3%A0ro_theorem. Proves `Wanted` entry `stolz_cesaro`.
+- https://en.wikipedia.org/wiki/Stolz%E2%80%93Ces%C3%A0ro_theorem.

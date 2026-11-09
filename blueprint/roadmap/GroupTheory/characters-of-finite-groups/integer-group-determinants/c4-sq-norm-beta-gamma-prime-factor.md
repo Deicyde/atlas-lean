@@ -11,4 +11,4 @@ $\beta\bar\beta\gamma\bar\gamma = 2^4 p(2m + 1)$ for some $p \in P$ and some int
 
 ## Sources
 
-- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 18 (`integers-2024-A30-lem-18`).
+- Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 18.

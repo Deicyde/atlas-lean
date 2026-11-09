@@ -9,4 +9,4 @@ Together with $K_5$, this is one of the two forbidden minors for planarity (Wagn
 
 ## Sources
 
-- https://en.wikipedia.org/wiki/Four_color_theorem (statement four-color-s1).
+- https://en.wikipedia.org/wiki/Four_color_theorem.

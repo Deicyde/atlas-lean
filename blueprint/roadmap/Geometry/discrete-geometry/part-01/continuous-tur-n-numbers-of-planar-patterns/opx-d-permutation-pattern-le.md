@@ -10,4 +10,4 @@ $n^{d-1}$ means $1$ when $d = 0$.
 
 ## Sources
 
-- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.12 (`integers-2024-A1-cor-5-12`).
+- Jesse Geneson, *Continuous Turán Numbers*, INTEGERS 24 (2024), Article A1, Corollary 5.12.

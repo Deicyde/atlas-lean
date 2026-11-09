@@ -15,4 +15,4 @@ $k = 1$, $s = 2$, $t = 1$ the sum is $1$.
 
 ## Sources
 
-- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Theorem 1 (`integers-2024-A12-thm-1`).
+- Chandan Kumar Vishwakarma and Rajesh P. Singh, *A Congruence Identity on Ordered Partitions Using Permutation Polynomials*, INTEGERS 24 (2024), Article A12, Theorem 1.

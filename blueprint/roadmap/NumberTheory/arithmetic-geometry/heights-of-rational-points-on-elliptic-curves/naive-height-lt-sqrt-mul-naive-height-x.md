@@ -9,4 +9,4 @@ $v^2 = u^3 + au - b$ satisfies $H(u, v) < \sqrt{1 + |a|}\, H(u)^{3/2}$.
 
 ## Sources
 
-- Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Lemma 4 (`integers-2025-A66-lem-4`).
+- Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Lemma 4.

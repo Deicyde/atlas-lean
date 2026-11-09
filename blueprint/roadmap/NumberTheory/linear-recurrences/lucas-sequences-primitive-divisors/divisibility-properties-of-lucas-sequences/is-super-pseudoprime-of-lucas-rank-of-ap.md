@@ -10,4 +10,4 @@ $(P, Q)$, and if $Q = \pm 1$ it is also a super Frobenius pseudoprime with param
 
 ## Sources
 
-- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.17 (`integers-2025-A107-thm-3-17`).
+- Lawrence Somer and Michal Křížek, *On Lucas and Frobenius Pseudoprimes*, INTEGERS 25 (2025), Article A107, Theorem 3.17.

@@ -8,4 +8,4 @@ otherwise it is $0$.
 
 ## Sources
 
-- Milan Janjić, "On a Class of Polynomials with Integer Coefficients", Journal of Integer Sequences 11 (2008), Article 08.5.2, Corollary lines 441-446, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Janjic/janjic19.tex>. Proves `Wanted` entry `chebyshevU_coeff_eq_binomial_sum`.
+- Milan Janjić, "On a Class of Polynomials with Integer Coefficients", Journal of Integer Sequences 11 (2008), Article 08.5.2, Corollary lines 441-446, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Janjic/janjic19.tex>.

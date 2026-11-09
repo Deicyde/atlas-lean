@@ -14,4 +14,4 @@ where $\operatorname{li}$ is the logarithmic integral and the sums run over prim
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 6 (`integers-2024-A34-lem-6`).
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 6.

@@ -12,4 +12,4 @@ where $(a;x)_\infty = \prod_{n \ge 0} (1 - a x^n)$ is the infinite q-Pochhammer 
 
 ## Sources
 
-- Russelle Guadalupe, *New Proofs of Certain Theta Function Identities via Ramanujan's Function*, INTEGERS 26 (2026), Article A41, Lemma 3 (`integers-2026-A41-lem-3`).
+- Russelle Guadalupe, *New Proofs of Certain Theta Function Identities via Ramanujan's Function*, INTEGERS 26 (2026), Article A41, Lemma 3.

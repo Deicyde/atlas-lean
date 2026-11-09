@@ -6,4 +6,4 @@ SZ-star qMZV of the SZ dual index $k^\dagger$: $\zeta_q^{OOZ}(k) = \zeta_q^{SZ,\
 
 ## Sources
 
-- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (iii) (after Ebrahimi-Fard, Manchon and Singer) (`integers-2024-A6-thm-17`).
+- Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (iii) (after Ebrahimi-Fard, Manchon and Singer).

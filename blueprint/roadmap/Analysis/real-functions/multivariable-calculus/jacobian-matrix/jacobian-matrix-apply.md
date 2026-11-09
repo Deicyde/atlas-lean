@@ -9,4 +9,4 @@ not exist.
 
 ## Sources
 
-- `Mathlib/docs/undergrad.yaml`, section `Multivariable calculus` / `Differential calculus`, entry `Jacobian matrix` (unmapped); W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.
+- W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.

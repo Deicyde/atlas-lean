@@ -10,4 +10,4 @@ Solutions are counted as multisets, that is, up to the order of the $x_i$, as in
 
 ## Sources
 
-- Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 2 (`integers-2026-A33-thm-2`).
+- Grant Molnar and Guntas Singh, *Spoof Lehmer Factorizations*, INTEGERS 26 (2026), Article A33, Theorem 2.

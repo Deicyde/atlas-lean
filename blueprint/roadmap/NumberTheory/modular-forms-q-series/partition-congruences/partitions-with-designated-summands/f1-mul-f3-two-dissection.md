@@ -12,4 +12,4 @@ through by $f_2 f_4^2 f_6 f_8^2 f_{12}^2 f_{24}^2$.
 
 ## Sources
 
-- James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Lemma 3 (`integers-2024-A16-lem-3`).
+- James A. Sellers, *New Infinite Families of Congruences Modulo Powers of 2 for 2-Regular Partitions with Designated Summands*, INTEGERS 24 (2024), Article A16, Lemma 3.

@@ -12,4 +12,4 @@ For $k = 1$ the integral converges only conditionally, hence the limit over $R$.
 
 ## Sources
 
-- Jan W. H. Swanepoel, *A Short Simple Probabilistic Proof of a Well Known Identity and the Derivation of Related New Identities Involving the Bernoulli Numbers and the Euler Numbers*, INTEGERS 25 (2025), Article A50, Theorem 1 (`integers-2025-A50-thm-1`).
+- Jan W. H. Swanepoel, *A Short Simple Probabilistic Proof of a Well Known Identity and the Derivation of Related New Identities Involving the Bernoulli Numbers and the Euler Numbers*, INTEGERS 25 (2025), Article A50, Theorem 1.

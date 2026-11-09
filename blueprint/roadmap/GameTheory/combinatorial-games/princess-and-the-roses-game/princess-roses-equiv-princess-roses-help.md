@@ -6,4 +6,4 @@ $[d, b - c + d, a - c + d]$; that is, the two have the same Sprague–Grundy val
 
 ## Sources
 
-- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 12 (`integers-2026-G4-thm-12`).
+- Zev Friedman, *Sprague-Grundy Values for 4-Pile Princess and the Roses*, INTEGERS 26 (2026), Article G4, Theorem 12.

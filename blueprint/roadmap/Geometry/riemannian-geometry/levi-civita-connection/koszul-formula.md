@@ -16,4 +16,4 @@ $X \langle Y, Z \rangle$ at $x$ is the derivative of the function $y \mapsto \la
 
 ## Sources
 
-- J.-L. Koszul (course notes, 1950s); cf. do Carmo, Riemannian Geometry. Listed as §38 additional statement in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Via leanprover/lean-eval@38361be, problem `koszul_formula`.
+- J.-L. Koszul (course notes, 1950s); cf. do Carmo, Riemannian Geometry. Listed as §38 additional statement in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `koszul_formula` of the lean-eval benchmark.

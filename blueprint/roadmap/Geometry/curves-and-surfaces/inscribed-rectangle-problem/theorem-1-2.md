@@ -14,4 +14,4 @@ four vertices of $R(z', w', \theta')$ lie on $\gamma$.
 
 ## Sources
 
-- J. E. Greene and A. Lobb, `The rectangular peg problem`, Annals of Math, 194 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge (v1.0.0, e32eb14), AnnalsChallenge/AnnalsOfMathematics/2021-194-2-RectangularPegProblem.lean Via leanprover/lean-eval@38361be, problem `annals_rectangular_peg_problem`.
+- J. E. Greene and A. Lobb, `The rectangular peg problem`, Annals of Math, 194 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_rectangular_peg_problem` of the lean-eval benchmark.

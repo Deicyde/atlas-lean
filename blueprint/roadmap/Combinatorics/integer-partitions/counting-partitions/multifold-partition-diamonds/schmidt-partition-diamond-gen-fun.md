@@ -14,4 +14,4 @@ statement for all $N$ is equivalent to $S_d(q) = \prod_{m \ge 1} E_d(q^m, 1)/(1 
 
 ## Sources
 
-- Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Corollary 1 (`integers-2026-A13-cor-1`), quoting Dockery-Jameson-Sellers-Wilson.
+- Matthias Beck and Kobe Wijesekera, *MacMahon's Double Vision: Partition Diamonds Revisited*, INTEGERS 26 (2026), Article A13, Corollary 1, quoting Dockery-Jameson-Sellers-Wilson.

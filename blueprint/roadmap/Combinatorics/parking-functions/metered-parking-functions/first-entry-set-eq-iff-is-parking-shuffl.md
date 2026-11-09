@@ -8,4 +8,4 @@ set $\mathrm{Sh}_m(k - 1, n - k)$ of $(m, n)$-parking-function shuffles with par
 
 ## Sources
 
-- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Theorem 3 (`integers-2025-A73-thm-3`), with Definition 6 (the sets `A^n`).
+- Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Theorem 3, with Definition 6 (the sets `A^n`).

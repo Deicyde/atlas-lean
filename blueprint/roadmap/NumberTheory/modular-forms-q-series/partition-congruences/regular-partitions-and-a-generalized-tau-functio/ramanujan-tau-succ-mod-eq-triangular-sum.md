@@ -7,4 +7,4 @@ pairs of integers $m, r \ge 0$ with $m(m + 1)/2 + 7r(r + 1)/2 = n$.
 
 ## Sources
 
-- S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 8 (`integers-2024-A39-thm-8`).
+- S. Sriram and A. David Christopher, *Congruences Relating Regular Partition Functions, a Generalized Tau Function, and Partition Function Weighted Composition Sums*, INTEGERS 24 (2024), Article A39, Theorem 8.

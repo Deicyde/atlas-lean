@@ -10,4 +10,4 @@ cover every integer.
 
 ## Sources
 
-- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 1 (`integers-2026-A38-lem-1`), quoting Krukenberg, Corollary 2.3, and Dalton–Trifonov, Corollary 8.
+- Jonah Klein, *On a Conjecture of Krukenberg and a Problem of Dalton and Trifonov*, INTEGERS 26 (2026), Article A38, Lemma 1, quoting Krukenberg, Corollary 2.3, and Dalton–Trifonov, Corollary 8.

@@ -12,4 +12,4 @@ $D_A(G) = 1 + \sum_{i=1}^{r} (\lceil p^{e_i}/\beta \rceil - 1)$.
 
 ## Sources
 
-- Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 7(ii) (`integers-2026-A89-thm-7`).
+- Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 7(ii).

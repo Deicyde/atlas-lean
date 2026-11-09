@@ -16,4 +16,4 @@ $a(t) \le a(x_1)$ show that $a_n$ is a typo for $a$.
 
 ## Sources
 
-- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 5 (`integers-2024-A34-lem-5`), with the function `a` defined at the start of Section 6.
+- Christian Axler, *Effective Estimates for Some Functions Defined over Primes*, INTEGERS 24 (2024), Article A34, Lemma 5, with the function `a` defined at the start of Section 6.

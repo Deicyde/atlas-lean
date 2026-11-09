@@ -7,4 +7,4 @@ index and $\sigma(m)$ is the sum of the positive divisors of $m$.
 
 ## Sources
 
-- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma (label `correctedPAlemma`).
+- Joshua Zelinsky, "Must a Primitive Non-Deficient Number Always Have a Small Component?", Lemma.

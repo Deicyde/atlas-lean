@@ -10,4 +10,4 @@ The excluded digit $c = 2$ gives the binomial form $(1, 2, 1)_b = (b + 1)^2$.
 
 ## Sources
 
-- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Theorem 4 (`integers-2024-A69-thm-4`).
+- D. L. Kreher and D. R. Stinson, *On Minimum-Base Palindromic Representations of Powers of 2*, INTEGERS 24 (2024), Article A69, Theorem 4.

@@ -7,4 +7,4 @@ subsets $B \subseteq X$ that meet every member of $F$ and contain none of them.
 
 ## Sources
 
-- T. F. Bloom, Erdős Problems, Problem #1027, https://www.erdosproblems.com/1027 (status PROVED); resolution: K. Chan, proof in the erdosproblems.com/1027 comments; formal proof plby/lean-proofs, src/latest/ErdosProblems/Erdos1027.lean, erdosproblems.com/1027: 'This is true, and a proof was given in the comment section by Koishi Chan', https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1027.lean#L209.
+- T. F. Bloom, Erdős Problems, Problem #1027, https://www.erdosproblems.com/1027 (status PROVED); resolution: K. Chan, proof in the erdosproblems.com/1027 comments; formal proof plby/lean-proofs, erdosproblems.com/1027: 'This is true, and a proof was given in the comment section by Koishi Chan', https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos1027.lean#L209.

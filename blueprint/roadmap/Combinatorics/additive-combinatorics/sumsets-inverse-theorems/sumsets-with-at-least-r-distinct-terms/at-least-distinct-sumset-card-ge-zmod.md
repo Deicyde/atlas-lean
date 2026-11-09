@@ -11,4 +11,4 @@ $|A| = k$ and $|h^{(\ge r)}A| = h(k - 1) - r(r - 1) + 1$.
 
 ## Sources
 
-- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 9, equation (6) (`integers-2025-A12-thm-9`).
+- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Theorem 9, equation (6).

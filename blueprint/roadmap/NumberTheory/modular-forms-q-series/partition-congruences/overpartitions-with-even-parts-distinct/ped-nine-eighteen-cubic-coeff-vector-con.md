@@ -19,4 +19,4 @@ The quotient $f_3 f_6 / (f_1 f_2)$ is the generating function of 3-regular cubic
 
 ## Sources
 
-- Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 8 (`integers-2025-A69-thm-8`).
+- Harishkumar T, Shruthi Menezes, and M. S. Mahadeva Naika, *On [j, k]-Overpartitions with Even Parts Distinct*, INTEGERS 25 (2025), Article A69, Theorem 8.

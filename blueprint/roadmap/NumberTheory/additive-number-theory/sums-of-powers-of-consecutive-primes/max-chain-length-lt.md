@@ -12,4 +12,4 @@ $$M < 4^{1/(k+1)} \cdot \frac{(k+1)\, x^{1/(k+1)}}{(\log x)^{k/(k+1)}} \cdot C.$
 
 ## Sources
 
-- Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Lemma 1 (`integers-2026-A84-lem-1`), with `B`, `C` from Section 2.
+- Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Lemma 1, with `B`, `C` from Section 2.

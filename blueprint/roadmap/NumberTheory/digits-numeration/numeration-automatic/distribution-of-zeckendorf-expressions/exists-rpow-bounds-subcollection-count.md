@@ -11,4 +11,4 @@ such that $a < z(x) / x^\gamma < b$ for all sufficiently large real $x$.
 
 ## Sources
 
-- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 1 (`integers-2025-A25-thm-1`; arXiv:2308.12872v1, Section 1, with the standing assumption of Section 3 that `E` is a proper subcollection).
+- Sungkon Chang, *Distribution of Zeckendorf Expressions*, INTEGERS 25 (2025), Article A25, Theorem 1 (arXiv:2308.12872v1, Section 1, with the standing assumption of Section 3 that `E` is a proper subcollection).
